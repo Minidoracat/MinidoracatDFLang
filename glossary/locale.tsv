@@ -1,0 +1,66 @@
+lang	avoid	use	level	note
+zh-Hant	默認	預設	error	
+zh-Hant	信息	資訊|訊息	error	資料義用資訊；message 義用訊息
+zh-Hant	加載	載入	error	
+zh-Hant	菜單	選單	error	餐飲語境除外
+zh-Hant	界面	介面	error	
+zh-Hant	兼容	相容	error	
+zh-Hant	反饋	回饋	error	
+zh-Hant	交互	互動	error	
+zh-Hant	創建	建立	error	
+zh-Hant	登錄	登入	error	
+zh-Hant	圖標	圖示	error	
+zh-Hant	窗口	視窗	error	
+zh-Hant	鼠標	滑鼠	error	
+zh-Hant	光標	游標	error	
+zh-Hant	屏幕	螢幕	error	
+zh-Hant	全屏	全螢幕	error	
+zh-Hant	分辨率	解析度	error	
+zh-Hant	視頻	影片	error	
+zh-Hant	音頻	音訊|音效	error	
+zh-Hant	軟件	軟體	error	
+zh-Hant	硬件	硬體	error	
+zh-Hant	網絡	網路	error	
+zh-Hant	鏈接	連結	error	
+zh-Hant	搜索	搜尋	error	
+zh-Hant	自定義	自訂	error	
+zh-Hant	調試	除錯	error	
+zh-Hant	用戶	使用者|玩家	error	
+zh-Hant	教程	教學	error	
+zh-Hant	只讀	唯讀	error	
+zh-Hant	賬	帳	error	
+zh-Hant	設置	設定	warn	設定值、選單義用設定；架設、設立等動詞義可保留
+zh-Hant	質量	品質	warn	物品品質義；物理質量（mass）保留
+zh-Hant	列表	清單	warn	
+zh-Hant	當前	目前	warn	
+zh-Hant	文件	檔案|文件	warn	電腦檔案義用檔案；書面文件義保留
+zh-Hant	程序	程式|程序	warn	電腦程式義用程式；步驟程序義保留
+zh-Hant	優先級	優先順序	warn	
+zh-Hans	预设	默认	warn	预设值义用默认；“预设方案”义可保留
+zh-Hans	资讯	信息	error	
+zh-Hans	载入	加载	warn	
+zh-Hans	选单	菜单	error	
+zh-Hans	介面	界面	error	
+zh-Hans	回馈	反馈	error	
+zh-Hans	登入	登录	error	
+zh-Hans	图示	图标	error	
+zh-Hans	视窗	窗口	error	
+zh-Hans	滑鼠	鼠标	error	
+zh-Hans	游标	光标	error	
+zh-Hans	萤幕	屏幕	error	
+zh-Hans	全萤幕	全屏	error	
+zh-Hans	解析度	分辨率	error	
+zh-Hans	影片	视频	error	
+zh-Hans	软体	软件	error	
+zh-Hans	硬体	硬件	error	
+zh-Hans	网路	网络	error	
+zh-Hans	连结	链接	warn	动词“连结”义可保留
+zh-Hans	搜寻	搜索	error	
+zh-Hans	自订	自定义	error	
+zh-Hans	除错	调试	error	
+zh-Hans	使用者	用户|玩家	error	
+zh-Hans	教学	教程	warn	“教学”作教育义可保留
+zh-Hans	唯读	只读	error	
+zh-Hans	档案	文件	error	
+zh-Hans	程式	程序	error	
+zh-Hans	存档	保存|存档	warn	动作用保存；名词“存档”大陆游戏圈也通用

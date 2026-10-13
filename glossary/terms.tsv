@@ -1,0 +1,20 @@
+en	zh-Hant	zh-Hans	category	status	ref	note
+Dwarf Fortress	矮人要塞	矮人要塞	game	approved		遊戲名稱；兩岸通用
+fortress	要塞	要塞	game	approved		玩家經營的據點、要塞模式
+world	世界	世界	game	draft		Real-world extinct creatures 這類句子不必含「世界」，不全域強制
+arena	競技場	竞技场	game	draft		單獨的 arena 只有 5 格，放不下「競技場」
+mod	模組	模组	ui	draft		BP Mod、Color Mod 不是遊戲模組，不全域強制
+settings	設定	设置	ui	approved		台灣「設定」、大陸「设置」
+quit	離開|結束	退出	ui	draft		性格描述 Quits easily、never quit 是放棄義，不全域強制
+save	存檔|儲存	保存|存档	ui	draft		遊戲進度存檔；Save me!、Workers save… 是救援、保留義，不全域強制
+title menu	標題畫面	主菜单	ui	approved		暫停選單「回到標題畫面／返回主菜单」
+fullscreen	全螢幕	全屏	ui	approved		
+windowed	視窗模式	窗口模式	ui	approved		
+resolution	解析度	分辨率	ui	approved		螢幕解析度；53.16 的遊戲字串只有顯示解析度一種用法
+interface	介面	界面	ui	draft		dungeon-tower interface 指結構接合處，不全域強制
+keybindings	按鍵設定	按键设置	ui	approved		
+announcements	通知	通知	ui	approved	dfzh-wiki	遊戲事件通知；設定分頁名
+range	範圍	范围	ui	draft		Archery range 是射箭場、聲音的 range 是音域，不全域強制
+default	預設	默认	ui	draft		default Wagon、default cultural value 不是設定值，不全域強制
+automatic	自動	自动	ui	approved		
+forgotten beast	遺忘巨獸	遗忘巨兽	creature	approved	dfzh-wiki	隨機生成的地底巨獸

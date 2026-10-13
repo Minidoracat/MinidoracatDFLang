@@ -1,0 +1,20 @@
+[package]
+name = "dflang"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+fontdue = "0.9"
+parking_lot = "0.12"
+png = "0.18"
+retour = "0.3"
+
+[profile.release]
+# hook 在遊戲執行緒裡跑，panic 不能跨 FFI 回捲；直接中止比未定義行為好查
+panic = "abort"
+lto = true
+codegen-units = 1

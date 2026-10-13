@@ -1,0 +1,27 @@
+en	zh-Hant	zh-Hans	align	note
+Done	完成	完成	c	設定畫面右上角按鈕
+Video	畫面	画面		設定分頁
+Audio	音訊	音频		設定分頁；含音樂、環境音、音效，繁中不用「音效」
+Game	遊戲	游戏		設定分頁
+Keybindings	按鍵設定	按键设置		設定分頁
+Announcements	通知	通知		設定分頁；遊戲事件通知的顯示與暫停方式
+Windowed	視窗模式	窗口模式		畫面設定
+Fullscreen	全螢幕	全屏		畫面設定
+Resolution:	解析度：	分辨率：		畫面設定
+Detect	偵測	检测		畫面設定；解析度自動偵測，原文 6 格
+Yes	是	是		設定值
+No	否	否		設定值
+Automatic	自動	自动		設定值
+Scale interface to fit grid height/width	依目標格數自動縮放介面	按目标行列数自动缩放界面		畫面設定；YES 時放大介面直到接近下面兩項的目標格數
+Range: 	範圍：	范围：		設定說明；後面接數字，再接 " to "
+ to 	 至 	 至 		接在 "Range: 數字" 後面，前後各留一格空白
+ Desired grid width for scaling (default = 170)	 縮放目標欄數（預設 170）	 缩放目标列数（默认 170）		畫面設定；開頭空白是縮排；整體網格的欄數（台灣欄、大陸列）
+ Desired grid height for scaling (default = 64)	 縮放目標列數（預設 64）	 缩放目标行数（默认 64）		畫面設定；開頭空白是縮排；整體網格的列數（台灣列、大陸行）
+ Interface scaling percentage if not fitting width	 不依格數縮放時的介面縮放百分比	 不按行列数缩放时的界面缩放百分比		畫面設定；開頭空白是縮排；上面選 NO 時的固定縮放百分比
+Initial window width (if windowed)	初始視窗寬度（視窗模式）	初始窗口宽度（窗口模式）		畫面設定
+Initial window height (if windowed)	初始視窗高度（視窗模式）	初始窗口高度（窗口模式）		畫面設定
+Window is resizable (takes effect on restart)	可調整視窗大小（重新啟動後生效）	窗口大小可调整（重启后生效）		畫面設定
+Maximum interface percentage (not counting minimap/elevation)	介面最大寬度百分比（不含小地圖與高度列）	界面最大宽度百分比（不含小地图和高度栏）		畫面設定；寬螢幕時介面畫面最多占總寬度的百分比；高度列＝右側 Z 軸高度條
+Graphical FPS cap (default 50)	畫面 FPS 上限（預設 50）	画面 FPS 上限（默认 50）		畫面設定
+Use Classic ASCII glyphs	使用經典 ASCII 字形	使用经典 ASCII 字形		畫面設定；glyph 是字形（顯示外觀），不是字元
+Scaling mode	縮放模式	缩放模式		畫面設定；貼圖縮放方式

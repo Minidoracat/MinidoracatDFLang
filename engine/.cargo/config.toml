@@ -1,0 +1,3 @@
+# 靜態連結 C 執行階段，DLL 不另外依賴玩家電腦上的 VC++ 可轉散發套件版本
+[target.x86_64-pc-windows-msvc]
+rustflags = ["-C", "target-feature=+crt-static"]

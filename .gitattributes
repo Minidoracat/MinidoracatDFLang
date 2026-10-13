@@ -1,0 +1,5 @@
+# 文字檔一律 LF：TSV 與 info.txt 由遊戲端逐位元組讀取，CRLF 會讓 \r 黏進譯文
+* text=auto eol=lf
+*.png binary
+*.otf binary
+*.dll binary
