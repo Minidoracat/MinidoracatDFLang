@@ -17,6 +17,8 @@ local GPS_FIELDS = {'screenx', 'screeny', 'dimx', 'dimy', 'clipx', 'clipy', 'scr
 local CONFIG_FILE = 'dfhack-config/dflang.json'
 -- 每次啟動依當下格子大小重畫的字圖集（相對於遊戲目錄）；可直接打開檢查字形
 local ATLAS_FILE = 'dfhack-config/dflang-atlas-%s.png'
+-- dflang misses on 之後每次啟動都把畫面上沒翻到的字串記到這裡（dflang.lua 共用同一個路徑）
+local MISSES_FILE = 'dfhack-config/dflang-misses.tsv'
 
 local json = require('json')
 local scriptmanager = require('script-manager')
@@ -153,11 +155,20 @@ local function start()
     if bad > 0 or missing_glyphs > 0 then
         fail('字典有 %d 條原文無法比對、%d 個字沒有字圖', bad, missing_glyphs)
     end
+    local rules, bad_rules, missing_rule_glyphs = engine.load_rules(dir .. 'rules.tsv')
+    if not rules then return fail('%s', bad_rules) end
+    if bad_rules > 0 or missing_rule_glyphs > 0 then
+        fail('句型有 %d 條寫法不對、%d 個字沒有字圖', bad_rules, missing_rule_glyphs)
+    end
 
     ok, err = attach_hooks(engine, dir)
     if not ok then return fail('%s', err) end
     ok, err = engine.enable()
     if not ok then return fail('%s', err) end
+    if json.open(CONFIG_FILE).data.misses then
+        ok, err = engine.log_misses(MISSES_FILE)
+        if not ok then fail('無法記錄未翻譯字串：%s', err) end
+    end
 
     local first = dfhack.textures.getTexposByHandle(handles[1])
     dfhack.BASE_G.DFLANG = {engine = engine, lang = LANG, dir = dir, config = CONFIG_FILE}
@@ -169,7 +180,7 @@ local function start()
         first = now
         engine.update_texpos(resolve(handles))
     end
-    log('已啟用：%d 條譯文、%d 個字圖', loaded, glyphs)
+    log('已啟用：%d 條譯文、%d 條句型、%d 個字圖', loaded, rules, glyphs)
 end
 
 local ok, err = pcall(start)

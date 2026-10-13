@@ -7,11 +7,15 @@
   uv run scripts/dev_game.py up [--lang zh-Hant|zh-Hans|both]   掛包、遮蔽 DFI18n、啟動，等到 DFHack 回應
   uv run scripts/dev_game.py run dflang status                 轉給 dfhack-run
   uv run scripts/dev_game.py click X Y                         以文字格座標模擬滑鼠左鍵（不動真滑鼠、不搶焦點）
-  uv run scripts/dev_game.py down                              關遊戲、拆掛載、移除遮蔽與 dflang 設定檔
+  uv run scripts/dev_game.py down                              關遊戲、拆掛載、移除遮蔽，還原 dflang 設定檔
 
 遮蔽 DFI18n：在 mods/ 放一個 ID 也是 dfi18n、版本 999、沒有腳本的空 MOD。DFHack 每個 ID 只載入最高版本，
 真的 DFI18n 腳本就不會執行；down 會把它刪掉。掛載位置是 %APPDATA%/Bay 12 Games/Dwarf Fortress/mods
 （非 Portable Mode 的預設）。
+
+遊戲目錄 dfhack-config/ 裡原有的 dflang* 檔（玩家自己的語言設定、未翻譯紀錄）在 up 時移到
+temp/dfhack-config-backup/，down 時放回；測試期間的未翻譯紀錄（dflang misses on）在 down 時另存到
+temp/misses/<時間>.tsv，給 scripts/inventory.py 用。
 """
 import json
 import os
@@ -26,6 +30,9 @@ from dfpaths import DF, DFHACK
 ROOT = Path(__file__).resolve().parents[1]
 MODS = Path(os.environ["APPDATA"]) / "Bay 12 Games/Dwarf Fortress/mods"
 SHADOW = MODS / "dflang-test-shadow-dfi18n"
+CONFIG_DIR = DF / "dfhack-config"
+BACKUP = ROOT / "temp/dfhack-config-backup"
+MISSES_ARCHIVE = ROOT / "temp/misses"
 DFHACK_RUN = DFHACK / "hack/dfhack-run.exe"
 ITEMS = json.loads((ROOT / "scripts/workshop.json").read_text(encoding="utf-8"))["items"]
 
@@ -45,6 +52,11 @@ def kill_game() -> None:
 
 def up(langs: list[str]) -> int:
     kill_game()
+    user_files = list(CONFIG_DIR.glob("dflang*"))
+    if user_files and not BACKUP.exists():  # 備份已存在表示上次沒有 down，現在這些是測試留下的檔
+        BACKUP.mkdir(parents=True)
+        for f in user_files:
+            shutil.move(f, BACKUP / f.name)
     SHADOW.mkdir(parents=True, exist_ok=True)
     (SHADOW / "info.txt").write_text(
         "[ID:dfi18n]\n[NUMERIC_VERSION:999]\n[DISPLAYED_VERSION:test-shadow]\n"
@@ -78,8 +90,16 @@ def down() -> int:
         if os.path.isjunction(link):
             os.rmdir(link)  # 只移除連結，不動 dist/
     shutil.rmtree(SHADOW, ignore_errors=True)
-    for f in (DF / "dfhack-config").glob("dflang*"):
+    misses = CONFIG_DIR / "dflang-misses.tsv"
+    if misses.is_file() and misses.stat().st_size:
+        MISSES_ARCHIVE.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(misses, MISSES_ARCHIVE / time.strftime("%Y%m%d-%H%M%S.tsv"))
+    for f in CONFIG_DIR.glob("dflang*"):
         f.unlink()
+    if BACKUP.is_dir():
+        for f in BACKUP.iterdir():
+            shutil.move(f, CONFIG_DIR / f.name)
+        BACKUP.rmdir()
     print("已還原：", sorted(p.name for p in MODS.iterdir()))
     return 0
 

@@ -184,7 +184,7 @@ unsafe fn paint(gps: *mut u8, layer: &Layer, x0: i32, y: i32, glyphs: &[(usize, 
     }
 }
 
-/// 共用流程：查字典，命中就讓 `write` 寫替身字串，再貼字圖。回傳 false 表示要照原樣呼叫原函式。
+/// 共用流程：查字典（整句、再句型規則），命中就讓 `write` 寫替身字串，再貼字圖。回傳 false 表示要照原樣呼叫原函式。
 unsafe fn translate_call(gps: *mut u8, kind: &str, key: &[u8], space: i32, layer: fn(&Layout) -> Layer,
                          write: impl FnOnce(&[u8])) -> bool {
     let dict = DICT.load(Ordering::Acquire);
@@ -193,9 +193,19 @@ unsafe fn translate_call(gps: *mut u8, kind: &str, key: &[u8], space: i32, layer
         return false;
     }
     let dict = unsafe { &*dict };
-    let Some(entry) = dict.entries.get(key) else {
-        note_miss(kind, key);
-        return false;
+    let from_rule;
+    let entry = match dict.entries.get(key) {
+        Some(entry) => entry,
+        None => match dict.rule_entry(key) {
+            Some(entry) => {
+                from_rule = entry;
+                &*from_rule
+            }
+            None => {
+                note_miss(kind, key);
+                return false;
+            }
+        },
     };
     HITS.fetch_add(1, Ordering::Relaxed);
     let (cells, glyphs) = entry.fit(space);

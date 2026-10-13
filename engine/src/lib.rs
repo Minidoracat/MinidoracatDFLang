@@ -33,6 +33,7 @@ pub unsafe extern "C" fn luaopen_dflang(l: lua::State) -> c_int {
         lua::set_fn(l, c"render_atlas", render_atlas);
         lua::set_fn(l, c"set_glyphs", set_glyphs);
         lua::set_fn(l, c"load", load);
+        lua::set_fn(l, c"load_rules", load_rules);
         lua::set_fn(l, c"scan", scan);
         lua::set_fn(l, c"attach", attach);
         lua::set_fn(l, c"enable", enable);
@@ -154,17 +155,26 @@ unsafe extern "C" fn set_glyphs(l: lua::State) -> c_int {
 
 /// load(路徑) → 載入條數, 原文無法用 CP437 表示的條數, 缺字圖的字數
 unsafe extern "C" fn load(l: lua::State) -> c_int {
+    unsafe { load_with(l, "load", Dict::load_tsv) }
+}
+
+/// load_rules(路徑) → 載入條數, 寫法不合規定的條數, 缺字圖的字數（句型規則）
+unsafe extern "C" fn load_rules(l: lua::State) -> c_int {
+    unsafe { load_with(l, "load_rules", Dict::load_rules_tsv) }
+}
+
+unsafe fn load_with(l: lua::State, name: &str, parse: fn(&mut Dict, &str) -> dict::LoadReport) -> c_int {
     unsafe {
-        let Some(path) = lua::arg_str(l, 1) else { return fail(l, "load: path must be a string") };
+        let Some(path) = lua::arg_str(l, 1) else { return fail(l, &format!("{name}: path must be a string")) };
         let content = match std::fs::read_to_string(path) {
             Ok(c) => c,
-            Err(e) => return fail(l, &format!("load {path}: {e}")),
+            Err(e) => return fail(l, &format!("{name} {path}: {e}")),
         };
         let mut staging = STAGING.lock();
         let Some(dict) = staging.as_mut().filter(|d| !d.glyph_of.is_empty()) else {
-            return fail(l, "load: call set_glyphs first");
+            return fail(l, &format!("{name}: call set_glyphs first"));
         };
-        let report = dict.load_tsv(&content);
+        let report = parse(dict, &content);
         lua::push_int(l, report.loaded as i64);
         lua::push_int(l, report.bad_source as i64);
         lua::push_int(l, report.missing_glyphs as i64);
@@ -227,17 +237,19 @@ unsafe extern "C" fn disable(l: lua::State) -> c_int {
     }
 }
 
-/// status() → {enabled, hooks, entries, glyphs, hits, misses}
+/// status() → {enabled, hooks, entries, rules, glyphs, hits, misses}
 unsafe extern "C" fn status(l: lua::State) -> c_int {
     unsafe {
         let dict = hooks::DICT.load(Ordering::Acquire);
-        let (entries, glyphs) = if dict.is_null() { (0, 0) } else { ((*dict).entries.len(), (*dict).glyph_of.len()) };
+        let (entries, rules, glyphs) =
+            if dict.is_null() { (0, 0, 0) } else { ((*dict).entries.len(), (*dict).rules.len(), (*dict).glyph_of.len()) };
         lua::new_table(l);
         lua::push_bool(l, hooks::ENABLED.load(Ordering::Acquire));
         lua::set_field(l, c"enabled");
         for (name, v) in [
             (c"hooks", hooks::hook_count() as i64),
             (c"entries", entries as i64),
+            (c"rules", rules as i64),
             (c"glyphs", glyphs as i64),
             (c"hits", hooks::HITS.load(Ordering::Relaxed) as i64),
             (c"misses", hooks::MISSES.load(Ordering::Relaxed) as i64),
@@ -249,16 +261,16 @@ unsafe extern "C" fn status(l: lua::State) -> c_int {
     }
 }
 
-/// translate(英文原文) → 譯文或 nil（查已啟用的字典）
+/// translate(英文原文) → 譯文或 nil（查已啟用的字典：整句、再句型規則）
 unsafe extern "C" fn translate(l: lua::State) -> c_int {
     unsafe {
         let dict = hooks::DICT.load(Ordering::Acquire);
         let text = lua::arg_str(l, 1)
             .and_then(cp437::encode)
             .filter(|_| !dict.is_null())
-            .and_then(|key| (*dict).entries.get(&key));
+            .and_then(|key| (*dict).translate_text(&key));
         match text {
-            Some(entry) => lua::push_str(l, &entry.text),
+            Some(t) => lua::push_str(l, &t),
             None => lua::push_nil(l),
         }
         1

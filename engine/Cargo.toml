@@ -8,10 +8,11 @@ publish = false
 crate-type = ["cdylib"]
 
 [dependencies]
-fontdue = "0.9"
 parking_lot = "0.12"
 png = "0.18"
 retour = "0.3"
+skrifa = "0.48"
+zeno = "0.3"
 
 [profile.release]
 # hook 在遊戲執行緒裡跑，panic 不能跨 FFI 回捲；直接中止比未定義行為好查

@@ -6,13 +6,17 @@
     "earliest_compatible_numeric": 1,
     "earliest_compatible_displayed": "0.1.0"
   },
+  "font_sources": {
+    "NotoSansCJKtc-Medium.otf": "https://raw.githubusercontent.com/notofonts/noto-cjk/main/Sans/OTF/TraditionalChinese/NotoSansCJKtc-Medium.otf",
+    "NotoSansCJKsc-Medium.otf": "https://raw.githubusercontent.com/notofonts/noto-cjk/main/Sans/OTF/SimplifiedChinese/NotoSansCJKsc-Medium.otf"
+  },
   "items": [
     {
       "lang": "zh-Hant",
       "id": "cat_df_lang_zh_hant",
       "folder": "MinidoracatDFLang-zh-Hant",
-      "font": "NotoSansMonoCJKtc-Regular.otf",
-      "fallback_fonts": ["NotoSansMonoCJKsc-Regular.otf"],
+      "font": "NotoSansCJKtc-Medium.otf",
+      "fallback_fonts": ["NotoSansCJKsc-Medium.otf"],
       "name": "Minidoracat DF Chinese - Traditional (zh-Hant)",
       "description": "Traditional Chinese translation for Dwarf Fortress. Requires DFHack.",
       "steam_title": "矮人要塞 繁體中文化 Dwarf Fortress Traditional Chinese by Minidoracat",
@@ -25,8 +29,8 @@
       "lang": "zh-Hans",
       "id": "cat_df_lang_zh_hans",
       "folder": "MinidoracatDFLang-zh-Hans",
-      "font": "NotoSansMonoCJKsc-Regular.otf",
-      "fallback_fonts": ["NotoSansMonoCJKtc-Regular.otf"],
+      "font": "NotoSansCJKsc-Medium.otf",
+      "fallback_fonts": ["NotoSansCJKtc-Medium.otf"],
       "name": "Minidoracat DF Chinese - Simplified (zh-Hans)",
       "description": "Simplified Chinese translation for Dwarf Fortress. Requires DFHack.",
       "steam_title": "矮人要塞 简体中文化 Dwarf Fortress Simplified Chinese by Minidoracat",

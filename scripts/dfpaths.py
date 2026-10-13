@@ -47,3 +47,11 @@ if DF is None:
 DFHACK = _app_dir(DFHACK_APPID, "DFHACK_PATH", "DFHack") or DF.parent / "DFHack"
 STEAMAPPS = DF.parent.parent
 WORKSHOP = STEAMAPPS / "workshop/content" / str(DF_APPID)
+# 反編譯快照（scripts/df_snapshot.py 產生）：repo 旁的 df-decompiled-reference/snapshots/<版本>-<YYYYMMDD>/
+SNAPSHOTS = Path(__file__).resolve().parents[2] / "df-decompiled-reference/snapshots"
+
+
+def latest_snapshot() -> Path | None:
+    """日期最新、且有 exe 字串表的快照；沒有快照時回傳 None。"""
+    snaps = [p for p in SNAPSHOTS.glob("*-*") if (p / "exe/strings.tsv").is_file()] if SNAPSHOTS.is_dir() else []
+    return max(snaps, key=lambda p: p.name.rsplit("-", 1)[1], default=None)

@@ -5,7 +5,7 @@
 ## 現況
 
 - 遊戲版本：Dwarf Fortress 53.16＋DFHack 53.16-r2。
-- 已翻譯：標題選單、暫停選單、設定畫面的「畫面」分頁（各 40 條，繁簡分開翻）。
+- 已翻譯：標題選單與副標題、暫停選單、設定畫面的「畫面」分頁（整句 57 條、句型 1 條，繁簡分開翻）。
 - 尚未發布到 Steam 工作坊。
 
 ## 玩家安裝（發布後）
@@ -24,19 +24,21 @@ flowchart LR
   B --> C[package.loadlib dflang/dflang.dll]
   B --> D[用字型依目前文字格大小畫字圖集<br>註冊成遊戲貼圖]
   C --> E[特徵碼找到 DF 的四個畫字函式並 hook]
-  E --> F{整句在字典裡？}
+  E --> F{整句字典或句型規則有這句？}
   F -->|是| G[讓遊戲畫等寬空白<br>再把中文字圖放進那些格子]
   F -->|否| H[照原樣畫英文]
 ```
 
 - DF 本身不載入 MOD 的原生程式；DFHack 會執行每個已安裝 MOD 的 `scripts_modinstalled/`，引擎就從這裡以 Lua `package.loadlib` 載入，只用 Lua C API，不綁 DFHack 版本。
-- 中文字由遊戲自己的繪圖流程畫出：每個中文字佔兩格，字圖在遊戲啟動時依當下的文字格大小從思源黑體畫成，縮放不會糊。
+- 中文字由遊戲自己的繪圖流程畫出：每個中文字佔兩格，字圖在遊戲啟動時依當下的文字格大小從思源黑體（Noto Sans CJK Medium）畫成，套用字型的 hinting，縮放不會糊。
+- 遊戲執行時拼出的句子（名字、數字、隨機字詞）用句型規則翻譯，例如 `Histories of {1} and {2}` →「{1}與{2}的歷史」。
 - 函式位置用 `engine/patterns.tsv` 的特徵碼尋找，由 `scripts/make_patterns.py` 從遊戲執行檔產生；遊戲改版時重產即可。
 
 ## 目錄
 
 ```
-data/strings/*.tsv         譯文：en, zh-Hant, zh-Hans, align, note（規則見 docs/translation-guide.md）
+data/strings/*.tsv         整句譯文：en, zh-Hant, zh-Hans, align, note（規則見 docs/translation-guide.md）
+data/rules/*.tsv           句型規則：同上，en 含 {1}～{9} 佔位
 glossary/terms.tsv         術語表；locale.tsv 兩岸用語規則
 engine/                    Rust 引擎（cdylib dflang.dll）與特徵碼 patterns.tsv
 lua/                       DFHack 載入器範本與 dflang 指令
@@ -45,6 +47,7 @@ scripts/
   verify_mod.py            發版前驗證閘門
   terms.py                 術語一致與兩岸用語檢查
   lookup.py                查一句原文的現有譯文、術語、參考譯名與遊戲字串
+  inventory.py             全文盤點：分類全部遊戲文字、對照實機紀錄，排出待翻清單（temp/inventory/）
   dev_game.py              本機實機測試：掛包、啟動、下指令、還原
   publish_workshop.py      兩包各自上傳工作坊（預設只檢查）
   make_patterns.py         產生／驗證特徵碼
@@ -63,6 +66,8 @@ uv run scripts/build.py --fetch-fonts         # 首次：下載思源黑體到 t
 uv run scripts/build.py                       # 建置兩包（遊戲要先關：執行中會鎖住 DLL）
 uv run scripts/verify_mod.py                  # 必須全部 PASS
 uv run scripts/terms.py check                 # 術語與兩岸用語
+cargo test --manifest-path engine/Cargo.toml --lib   # 句型比對的單元測試
+uv run scripts/inventory.py                   # 待翻清單（需要反編譯快照）
 uv run scripts/dev_game.py up --lang both     # 掛進遊戲並啟動
 uv run scripts/dev_game.py run dflang status
 uv run scripts/dev_game.py down               # 關遊戲、還原 mods/ 與設定
@@ -74,5 +79,5 @@ uv run scripts/dev_game.py down               # 關遊戲、還原 mods/ 與設�
 
 - 譯文與術語表（`data/`、`glossary/`）：[CC BY 4.0](LICENSE-CC-BY-4.0.txt)。轉載或改作請註明出處。
 - 其餘程式與文件：[MIT](LICENSE)。
-- 字型：思源黑體（Noto Sans Mono CJK），SIL Open Font License 1.1，工作坊包內附授權全文。
+- 字型：思源黑體（Noto Sans CJK TC／SC Medium），SIL Open Font License 1.1，工作坊包內附授權全文。
 - 致謝與參考來源見 [CREDITS.md](CREDITS.md)。

@@ -30,9 +30,10 @@ def read_tsv(path: Path) -> list[dict]:
 
 
 def strings() -> list[dict]:
+    """整句字典與句型規則的所有列；file 欄是 strings/xxx.tsv 或 rules/xxx.tsv。"""
     rows = []
-    for path in sorted((ROOT / "data/strings").glob("*.tsv")):
-        rows += [{**r, "file": path.name} for r in read_tsv(path)]
+    for path in sorted((ROOT / "data").glob("*/*.tsv")):
+        rows += [{**r, "file": f"{path.parent.name}/{path.name}"} for r in read_tsv(path)]
     return rows
 
 

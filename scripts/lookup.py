@@ -19,7 +19,6 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 REFERENCE = ROOT / "translation-reference"
-SNAPSHOTS = ROOT.parent / "df-decompiled-reference/snapshots"
 # 工作坊項目 → 參考資料子目錄
 REFERENCE_SOURCES = {
     "3635900931/dfi18n-data": "dfzh-wiki-zh-hans",   # DFI18n Data - 简体中文（維基翻譯組）
@@ -66,14 +65,15 @@ def reference_pairs() -> list[tuple[str, str, str]]:
 
 
 def game_strings(text: str) -> list[str]:
-    snaps = sorted(p for p in SNAPSHOTS.glob("*") if (p / "exe/strings.tsv").is_file()) if SNAPSHOTS.is_dir() else []
-    if not snaps:
+    from dfpaths import latest_snapshot
+    snap = latest_snapshot()
+    if snap is None:
         return ["（沒有反編譯快照）"]
     found = []
-    for line in (snaps[-1] / "exe/strings.tsv").read_text(encoding="utf-8").splitlines():
+    for line in (snap / "exe/strings.tsv").read_text(encoding="utf-8").splitlines():
         if line.endswith("\t" + text):
             found.append(f"exe {line.split(chr(9))[0]}")
-    for line in (snaps[-1] / "raws_text.tsv").read_text(encoding="utf-8").splitlines():
+    for line in (snap / "raws_text.tsv").read_text(encoding="utf-8").splitlines():
         if text in line.split("\t")[-1].split(":"):
             found.append("raws " + line.split("\t")[0])
             break

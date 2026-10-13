@@ -4,28 +4,35 @@
 # ///
 """發版前驗證閘門（repo 根目錄：uv run scripts/verify_mod.py），任一 FAIL 即 exit 1。
 
-1. data/strings/*.tsv：欄位 en, zh-Hant, zh-Hans, align, note；原文能用 CP437 表示（遊戲只會畫 CP437），全庫不重複；align 只能是空、c、r
-2. 繁簡同步：同一條兩欄同時有譯文或同時留空（繁簡分開翻，但兩包要涵蓋同一批句子）
-3. 開頭空白：譯文開頭的空白數與原文相同（那是遊戲的縮排）
-4. 寬度：譯文格數不超過原文（CP437 字一格，其他字兩格），超出會蓋到旁邊的介面
-5. 文字檔 UTF-8、無 BOM、LF（遊戲端逐位元組讀，BOM 與 \\r 會黏進原文或譯文）
-6. 字型：每種語言譯文用到的非 CP437 字，主字型或補字字型（temp/fonts/）至少一份有
-7. scripts/workshop.json：繁、簡各一項；ID、名稱、說明只用 ASCII（DF 以 CP437 讀 info.txt）
-8. engine/patterns.tsv 有引擎要 hook 的四個函式
-9. dist/ 已建置時：每包檔案齊全、沒有雜檔，且字典與 data/ 一致（沒建置則略過）
+1. data/strings/*.tsv（整句）與 data/rules/*.tsv（句型）：欄位 en, zh-Hant, zh-Hans, align, note；
+   原文能用 CP437 表示（遊戲只會畫 CP437），同一類不重複；align 只能是空、c、r
+2. 句型佔位：原文至少一個 {1}～{9}、每個只出現一次、不能相鄰，樣板要有固定的英文字（否則會套到幾乎所有字串）；
+   兩種譯文用的佔位和原文一致、各一次
+3. 繁簡同步：同一條兩欄同時有譯文或同時留空（繁簡分開翻，但兩包要涵蓋同一批句子）
+4. 開頭空白：譯文開頭的空白數與原文相同（那是遊戲的縮排）
+5. 寬度：譯文格數不超過原文（CP437 字一格，其他字兩格），超出會蓋到旁邊的介面；句型只算樣板本身，
+   佔位填入後超寬的情況由引擎在執行時退回英文
+6. 文字檔 UTF-8、無 BOM、LF（遊戲端逐位元組讀，BOM 與 \\r 會黏進原文或譯文）
+7. 字型：每種語言譯文用到的非 CP437 字，主字型或補字字型（temp/fonts/）至少一份有
+8. scripts/workshop.json：繁、簡各一項；ID、名稱、說明只用 ASCII（DF 以 CP437 讀 info.txt）
+9. engine/patterns.tsv 有引擎要 hook 的四個函式
+10. dist/ 已建置時：每包檔案齊全、沒有雜檔，且字典、句型與 data/ 一致（沒建置則略過）
 """
+import re
 import sys
 from pathlib import Path
 
 from fontTools.ttLib import TTFont
 
-from build import DIST, FONTS, load_config, read_strings
+from build import DIST, FONTS, load_config, read_rows
 from cp437 import BYTE_OF, cells, encodable
 
 ROOT = Path(__file__).resolve().parents[1]
 HEADER = ["en", "zh-Hant", "zh-Hans", "align", "note"]
 HOOKS = ("addst", "addst_flag", "top_addst", "addcoloredst")
 PACKAGE_SUFFIXES = {".txt", ".tsv", ".lua", ".dll", ".otf", ".md"}
+PLACEHOLDER = re.compile(r"\{[1-9]\}")
+KINDS = ("strings", "rules")
 
 results: list[tuple[bool, str]] = []
 
@@ -39,39 +46,63 @@ def leading_spaces(s: str) -> int:
     return len(s) - len(s.lstrip(" "))
 
 
+def template(s: str) -> str:
+    """句型去掉佔位後的樣板本身。"""
+    return PLACEHOLDER.sub("", s)
+
+
+def placeholder_problem(r: dict, langs: list[str]) -> str | None:
+    en = PLACEHOLDER.findall(r["en"])
+    if not en:
+        return "原文沒有佔位"
+    if len(set(en)) != len(en):
+        return "原文佔位重複"
+    if re.search(r"\{[1-9]\}\{[1-9]\}", r["en"]):
+        return "原文佔位相鄰"
+    if not re.search(r"[A-Za-z]", template(r["en"])):
+        return "原文樣板沒有固定的英文字，會套到幾乎所有字串"
+    for lang in langs:
+        if r[lang] and sorted(PLACEHOLDER.findall(r[lang])) != sorted(en):
+            return f"{lang} 佔位和原文不一致"
+    return None
+
+
 def main() -> int:
     config = load_config()
     langs = [item["lang"] for item in config["items"]]
-    files = sorted((ROOT / "data/strings").glob("*.tsv"))
-    rows = read_strings()
+    data: dict[str, list[dict]] = {}
+    for kind in KINDS:
+        files = sorted((ROOT / "data" / kind).glob("*.tsv"))
+        headers = [f"{kind}/{f.name}" for f in files if f.read_text(encoding="utf-8").split("\n", 1)[0].split("\t") != HEADER]
+        rows = [r for r in read_rows(kind) if f"{kind}/{r['file']}" not in headers]  # 欄名錯的檔案（含 BOM）其餘檢查無從判斷
+        bad_cols = [f"{kind}/{r['file']}: {r.get('en')!r}" for r in rows if None in r.values() or None in r]
+        check(not headers and not bad_cols, f"{kind} 欄位（{len(files)} 檔、{len(rows)} 條）", headers + bad_cols)
+        data[kind] = [{**r, "file": f"{kind}/{r['file']}"} for r in rows if None not in r.values() and None not in r]
+    rows = data["strings"] + data["rules"]
 
-    headers = [f.name for f in files if f.read_text(encoding="utf-8").split("\n", 1)[0].split("\t") != HEADER]
-    rows = [r for r in rows if r["file"] not in headers]  # 欄名錯的檔案（含 BOM）其餘檢查無從判斷
-    seen, dupes, bad_src, bad_align, bad_cols = set(), [], [], [], []
+    seen, dupes, bad_src, bad_align = set(), [], [], []
     for r in rows:
-        if None in r.values() or None in r:
-            bad_cols.append(f"{r['file']}: {r.get('en')!r}")
-            continue
-        if r["en"] in seen:
+        key = (r["file"].split("/")[0], r["en"])
+        if key in seen:
             dupes.append(f"{r['file']}: {r['en']!r}")
-        seen.add(r["en"])
+        seen.add(key)
         if not r["en"] or not encodable(r["en"]):
             bad_src.append(f"{r['file']}: {r['en']!r}")
         if r["align"] not in ("", "c", "r"):
             bad_align.append(f"{r['file']}: {r['en']!r} align={r['align']!r}")
-    check(not headers and not bad_cols, f"字串檔欄位（{len(files)} 檔、{len(rows)} 條）", headers + bad_cols)
     check(not dupes, "原文不重複", dupes)
     check(not bad_src, "原文能用 CP437 表示", bad_src)
     check(not bad_align, "align 只能是空、c、r", bad_align)
+    bad_ph = [f"{r['file']}: {r['en']!r} {p}" for r in data["rules"] if (p := placeholder_problem(r, langs))]
+    check(not bad_ph, f"句型佔位寫法（{len(data['rules'])} 條）", bad_ph)
 
-    rows = [r for r in rows if None not in r.values()]
     unpaired = [f"{r['file']}: {r['en']!r}" for r in rows if bool(r["zh-Hant"].strip()) != bool(r["zh-Hans"].strip())]
     check(not unpaired, "繁簡兩欄同時有譯文或同時留空", unpaired)
     indent = [f"{r['file']}: {r['en']!r} [{lang}]" for r in rows for lang in langs
               if r[lang] and leading_spaces(r[lang]) != leading_spaces(r["en"])]
     check(not indent, "譯文開頭空白與原文相同", indent)
-    wide = [f"{r['file']}: {r['en']!r} [{lang}] {cells(r[lang])}>{cells(r['en'])}" for r in rows for lang in langs
-            if r[lang] and cells(r[lang]) > cells(r["en"])]
+    wide = [f"{r['file']}: {r['en']!r} [{lang}] {cells(template(r[lang]))}>{cells(template(r['en']))}"
+            for r in rows for lang in langs if r[lang] and cells(template(r[lang])) > cells(template(r["en"]))]
     check(not wide, "譯文格數不超過原文", wide)
 
     text_files = [*(ROOT / "data").rglob("*.tsv"), *(ROOT / "glossary").glob("*.tsv"), *(ROOT / "lua").glob("*.lua"),
@@ -112,15 +143,18 @@ def main() -> int:
             continue
         suffix = item["lang"].lower().replace("-", "_")
         required = ["info.txt", f"scripts_modinstalled/dflang_{suffix}.lua", "scripts_modinstalled/dflang.lua",
-                    "dflang/dflang.dll", "dflang/strings.tsv", "dflang/glyphs.txt", "dflang/patterns.tsv",
+                    "dflang/dflang.dll", "dflang/strings.tsv", "dflang/rules.tsv", "dflang/glyphs.txt", "dflang/patterns.tsv",
                     "dflang/LICENSE.txt", "dflang/LICENSE-fonts.txt", "dflang/CREDITS.md"]
         lacking = [p for p in required if not (out / p).is_file()] + ([] if list((out / "dflang/fonts").glob("*.otf")) else ["dflang/fonts/*.otf"])
         stray = [p.relative_to(out).as_posix() for p in out.rglob("*") if p.is_file() and p.suffix not in PACKAGE_SUFFIXES]
-        expected = "".join(f"{r['en']}\t{r[item['lang']]}\t{r['align']}\n" for r in rows if r[item["lang"]].strip())
-        stale = (out / "dflang/strings.tsv").is_file() and (out / "dflang/strings.tsv").read_text(encoding="utf-8") != expected
-        check(not lacking and not stray and not stale,
-              f"{item['lang']} dist 檔案齊全、無雜檔、字典與 data/ 一致" + ("（字典過期，重跑 build.py）" if stale else ""),
-              lacking + stray)
+        stale = []
+        for kind in KINDS:
+            built = out / f"dflang/{kind}.tsv"
+            expected = "".join(f"{r['en']}\t{r[item['lang']]}\t{r['align']}\n" for r in data[kind] if r[item["lang"]].strip())
+            if built.is_file() and built.read_text(encoding="utf-8") != expected:
+                stale.append(f"dflang/{kind}.tsv 過期，重跑 build.py")
+        check(not lacking and not stray and not stale, f"{item['lang']} dist 檔案齊全、無雜檔、字典與句型和 data/ 一致",
+              lacking + stray + stale)
 
     for ok, msg in results:
         print(("PASS " if ok else "FAIL ") + msg)
