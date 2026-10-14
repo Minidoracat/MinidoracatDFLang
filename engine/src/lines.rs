@@ -1,9 +1,9 @@
-//! 自動換行的提示文字（工具列按鈕的提示框等）。
+//! 自動換行的提示文字（工具列按鈕的提示框、訪客說明、人物頁的近期想法等）。
 //!
 //! 遊戲用 wrap_text 把一句英文依寬度切成好幾行（vector<string*>），再一行一行畫，整句比對只看得到片段。
-//! 這裡在切好之後整句查字典：有譯文就依中文規則重新換行，第 k 行中文交給第 k 行英文（載體）畫，
-//! 多出來的英文行不畫；中文行比英文多時掛在最後一行下面。沒有譯文的行登記成「照畫英文」，不拿片段查字典。
-//! 和段落一樣只在畫字時換（見 mtb.rs），遊戲資料不改。
+//! 這裡在切好之後整段查字典（查不到就逐句查，見 Dict::translate_sentences）：有譯文就依中文規則重新換行，
+//! 第 k 行中文交給第 k 行英文（載體）畫，多出來的英文行不畫；中文行比英文多時掛在最後一行下面。
+//! 沒有譯文的行登記成「照畫英文」，不拿片段查字典。和段落一樣只在畫字時換（見 mtb.rs），遊戲資料不改。
 //! 大部分提示在遊戲啟動時（靜態初始化，早於本引擎載入）就切好了：enable 時從呼叫 wrap_text 的程式碼找出來補做。
 
 use std::collections::HashMap;
@@ -61,7 +61,7 @@ pub unsafe fn vec_len(v: usize) -> usize {
 
 /// 一句切成 n 行時每行的計畫；沒有譯文或缺字圖時回傳 None。
 fn compute(text: &[u8], width: i32, n: usize, dict: &Dict) -> Option<Arc<[Plan]>> {
-    let translation = dict.translate_text(text)?;
+    let translation: String = dict.translate_sentences(text).ok()?.into_iter().map(|(t, _)| t).collect();
     // 提示文字沒有換色；顏色沿用遊戲畫這一行時的顏色
     let segments = crate::mtb::wrap(&translation, width.max(1) as usize, [0; 3], |c| c);
     let mut pieces: Vec<Vec<Piece>> = (0..n).map(|_| Vec::new()).collect();

@@ -1,0 +1,70 @@
+en	zh-Hant	zh-Hans	align	note
+after being unable to pray to {1} for too long	太久無法向{1}祈禱後	太久无法向{1}祈祷后		fn_thought_composer 0xb4 子種類 2；須先於 sentences_needs 的 after being unable to pray to {1}，否則 {1} 會吞掉 for too long
+after communing with {1} in a dedicated temple	在專屬神殿與{1}交流後	在专属神殿与{1}交流后		fn_thought_composer 0x117；須先於 sentences_needs 的 after communing with {1}
+after {1} was given away	在{1}被送走後	在{1}被送走后		fn_thought_composer 0xef；{1} 神器名，須排在 {1} was given away 前
+after your {@1} was expelled	在你的{1}被驅逐後	在你的{1}被驱逐后		fn_thought_composer 0xf2 冒險模式
+after {@1} {@2} was expelled	在{2}被驅逐後	在{2}被驱逐后		fn_thought_composer 0xf2；{1} 是本人的所有格代名詞，譯文省略
+after the forces of {1} were defeated at {2}	在{1}的軍隊於{2}被擊敗後	在{1}的军队于{2}被击败后		fn_thought_composer 0x118
+after the acceptance of a petition for a temple for {1}	在為{1}興建神殿的請願獲准後	在为{1}兴建神殿的请愿获准后		fn_thought_composer 0xfc/0x102
+after the establishment of a temple for {1}	在為{1}設立神殿後	在为{1}设立神殿后		fn_thought_composer 0xfd/0x103
+after the rejection of a petition for a temple for {1}	在為{1}興建神殿的請願遭拒後	在为{1}兴建神殿的请愿被拒后		fn_thought_composer 0xfe/0x104
+after a petition for a temple for {1} was ignored	在為{1}興建神殿的請願遭到忽視後	在为{1}兴建神殿的请愿被忽视后		fn_thought_composer 0xff/0x105
+after an agreement to construct a temple for {1} was abandoned	在為{1}興建神殿的協議遭到放棄後	在为{1}兴建神殿的协议被放弃后		fn_thought_composer 0x100/0x106
+after the acceptance of a petition for a guildhall for {1}	在為{1}興建公會大廳的請願獲准後	在为{1}兴建公会大厅的请愿获准后		fn_thought_composer 0xfc/0x102
+after the establishment of a guildhall for {1}	在為{1}設立公會大廳後	在为{1}设立公会大厅后		fn_thought_composer 0xfd/0x103
+after the rejection of a petition for a guildhall for {1}	在為{1}興建公會大廳的請願遭拒後	在为{1}兴建公会大厅的请愿被拒后		fn_thought_composer 0xfe/0x104
+after a petition for a guildhall for {1} was ignored	在為{1}興建公會大廳的請願遭到忽視後	在为{1}兴建公会大厅的请愿被忽视后		fn_thought_composer 0xff/0x105
+after an agreement to construct a guildhall for {1} was abandoned	在為{1}興建公會大廳的協議遭到放棄後	在为{1}兴建公会大厅的协议被放弃后		fn_thought_composer 0x100/0x106
+being unable to pray to {1} for too long	太久無法向{1}祈禱	太久无法向{1}祈祷		fn_thought_composer 0xb4 子種類 2：{1} 神名
+communing with {1} in a dedicated temple	在專屬神殿與{1}交流	在专属神殿与{1}交流		fn_thought_composer 0x117：{1} 神名；須排在 communing with {1} 前
+communing with {1}	與{1}交流	与{1}交流		fn_thought_composer 0xb5：{1} 神名
+being near to a {@1} in a cage	靠近籠子裡的{1}	靠近笼子里的{1}		fn_thought_composer 0x91/0x92：生物名單數
+making a breakthrough concerning {%1}	在{1}方面取得突破	在{1}方面取得突破		fn_thought_composer 0xb7：{1} 知識主題長名
+being unable to advance the study of {%1}	無法推進{1}的研究	无法推进{1}的研究		fn_thought_composer 0xb8：{1} 知識主題短名
+pondering {%1}	思索{1}	思索{1}		fn_thought_composer 0xb9：{1} 知識主題短名
+giving birth to a {@1}	生下{1}	生下{1}		fn_thought_composer 0x9f：raws 嬰兒名單數
+giving birth to {%1}	生下{1}	生下{1}		fn_thought_composer 0x9f：a girl、twins 等
+becoming a parent of {%1}	成為{1}的父母	成为{1}的父母		fn_thought_composer 0xa0 子種類 0xc：多胞胎
+discussing your problems with {@1}	和{1}討論你的問題	和{1}讨论你的问题		fn_thought_composer 0x112：冒險模式玩家本人
+discussing {@1} problems with {@2}	和{2}討論自己的問題	和{2}讨论自己的问题		fn_thought_composer 0x112：{1} his/her/its，{2} the spouse、a friend 等；{1} 是本人的所有格代名詞，譯文省略
+discussing {%1}	討論{1}	讨论{1}		fn_thought_composer 0xba：{1} 知識主題短名；須排在 discussing … problems 後
+learning about {%1}	學習{1}	学习{1}		fn_thought_composer 0xbf/0xc0：知識主題長名或小寫技能名
+teaching {%1}	教授{1}	教授{1}		fn_thought_composer 0xc6/0xc7：知識主題長名或小寫技能名
+improving {%1}	提升{1}技能	提升{1}技能		fn_thought_composer 0xd7（upon）：小寫技能名
+learning {1}	學習{1}	学习{1}		fn_thought_composer 0xc1–0xc5：書名、秘密名、詩歌／樂曲／舞蹈形式名（專名照抄）；須排在 learning about 後
+reading {1}	閱讀{1}	阅读{1}		fn_thought_composer 0xc8：書名
+writing {1}	撰寫{1}	撰写{1}		fn_thought_composer 0xc9：書名
+playing with a {@1}	玩{1}	玩{1}		fn_thought_composer 0xd0：玩具名
+realizing the worthlessness of {@1}	領悟到{1}毫無價值	领悟到{1}毫无价值		fn_thought_composer 0xd9：FUN_140ee0380 價值觀
+realizing nuances of {@1}	領悟到{1}的微妙之處	领悟到{1}的微妙之处		fn_thought_composer 0xd9
+realizing the value of {@1}	領悟到{1}的價值	领悟到{1}的价值		fn_thought_composer 0xd9
+during {1}	在{1}期間	在{1}期间		fn_thought_composer 0xe9：事件名（專名）。ThoughtFrames 的 during {%1} 收不到專名，這條補上
+viewing {1} in a personal museum	在私人博物館欣賞{1}	在私人博物馆欣赏{1}		fn_thought_composer 0xea：神器名或物品描述
+viewing {1} on display	欣賞展示中的{1}	欣赏展出的{1}		fn_thought_composer 0xeb
+acquiring {1}	取得{1}	获得{1}		fn_thought_composer 0xec：神器名
+{1} was given away	{1}被送走	{1}被送走		fn_thought_composer 0xef：神器名
+seeing the {@1} {2}'s dead body	看到{1}{2}的屍體	看到{1}{2}的尸体		fn_thought_composer 0xf0：不同種族的人物
+seeing a {@1}'s dead body	看到一具{1}的屍體	看到一具{1}的尸体		fn_thought_composer 0xf0：只知種族
+seeing {1}'s dead body	看到{1}的屍體	看到{1}的尸体		fn_thought_composer 0xf0：人物名
+your {@1} was expelled	你的{1}被驅逐	你的{1}被驱逐		fn_thought_composer 0xf2：冒險模式；{1} 親屬名（sentences_causes_a）
+{@1} {@2} was expelled	{2}被驅逐	{2}被驱逐		fn_thought_composer 0xf2：{1} his/her/its，{2} 親屬名；{1} 是本人的所有格代名詞，譯文省略
+a scholarly lecture in {1}	在{1}的學術講座	在{1}的学术讲座		fn_thought_composer 0xf5：地點名
+a performance in {1}	在{1}的演出	在{1}的演出		fn_thought_composer 0xf6：地點名
+the acceptance of a petition for a temple for {1}	為{1}興建神殿的請願獲准	为{1}兴建神殿的请愿获准		fn_thought_composer 0xfc/0x102：{1} 宗教或公會名
+the establishment of a temple for {1}	為{1}設立神殿	为{1}设立神殿		fn_thought_composer 0xfd/0x103
+the rejection of a petition for a temple for {1}	為{1}興建神殿的請願遭拒	为{1}兴建神殿的请愿被拒		fn_thought_composer 0xfe/0x104
+a petition for a temple for {1} being ignored	為{1}興建神殿的請願遭到忽視	为{1}兴建神殿的请愿被忽视		fn_thought_composer 0xff/0x105（無介系詞）
+a petition for a temple for {1} was ignored	為{1}興建神殿的請願遭到忽視	为{1}兴建神殿的请愿被忽视		fn_thought_composer 0xff/0x105（after）
+an agreement to construct a temple for {1} being abandoned	為{1}興建神殿的協議遭到放棄	为{1}兴建神殿的协议被放弃		fn_thought_composer 0x100/0x106（無介系詞）
+an agreement to construct a temple for {1} was abandoned	為{1}興建神殿的協議遭到放棄	为{1}兴建神殿的协议被放弃		fn_thought_composer 0x100/0x106（after）
+the acceptance of a petition for a guildhall for {1}	為{1}興建公會大廳的請願獲准	为{1}兴建公会大厅的请愿获准		fn_thought_composer 0xfc/0x102：{1} 宗教或公會名
+the establishment of a guildhall for {1}	為{1}設立公會大廳	为{1}设立公会大厅		fn_thought_composer 0xfd/0x103
+the rejection of a petition for a guildhall for {1}	為{1}興建公會大廳的請願遭拒	为{1}兴建公会大厅的请愿被拒		fn_thought_composer 0xfe/0x104
+a petition for a guildhall for {1} being ignored	為{1}興建公會大廳的請願遭到忽視	为{1}兴建公会大厅的请愿被忽视		fn_thought_composer 0xff/0x105（無介系詞）
+a petition for a guildhall for {1} was ignored	為{1}興建公會大廳的請願遭到忽視	为{1}兴建公会大厅的请愿被忽视		fn_thought_composer 0xff/0x105（after）
+an agreement to construct a guildhall for {1} being abandoned	為{1}興建公會大廳的協議遭到放棄	为{1}兴建公会大厅的协议被放弃		fn_thought_composer 0x100/0x106（無介系詞）
+an agreement to construct a guildhall for {1} was abandoned	為{1}興建公會大廳的協議遭到放棄	为{1}兴建公会大厅的协议被放弃		fn_thought_composer 0x100/0x106（after）
+performing the rites of {1} in a dedicated temple	在專屬神殿舉行{1}的儀式	在专属神殿举行{1}的仪式		fn_thought_composer 0x114：{1} 宗教名
+incompletely performing the rites of {1} in an improperly dedicated temple	在供奉對象不符的神殿裡未能完整舉行{1}的儀式	在供奉对象不符的神殿里未能完整举行{1}的仪式		fn_thought_composer 0x115
+incompletely performing the rites of {1} in an undedicated temple	在未指定供奉對象的神殿裡未能完整舉行{1}的儀式	在未指定供奉对象的神殿里未能完整举行{1}的仪式		fn_thought_composer 0x116
+the forces of {1} were defeated at {2}	{1}的軍隊在{2}被擊敗	{1}的军队在{2}被击败		fn_thought_composer 0x118：{1} 勢力名，{2} 地點名

@@ -1,0 +1,645 @@
+en	zh-Hant	zh-Hans	align	note
+beauty	美麗	美丽		偏好：CREATURE:TOAD PREFSTRING
+wriggling	蠕動	蠕动		偏好：CREATURE:WORM PREFSTRING
+coloration	羽色	羽色		偏好：CREATURE:BIRD_BLUEJAY PREFSTRING
+raucous calls	刺耳的叫聲	刺耳的叫声		偏好：CREATURE:BIRD_GRACKLE PREFSTRING
+waddling gait	搖搖擺擺的步態	摇摇摆摆的步态		偏好：CREATURE:BIRD_PENGUIN PREFSTRING
+way of flying through the water	在水中飛翔的姿態	在水中飞翔的姿态		偏好：CREATURE:BIRD_PENGUIN PREFSTRING
+small size	小巧的體型	小巧的体型		偏好：CREATURE:BIRD_PENGUIN_LITTLE PREFSTRING
+large size	龐大的體型	庞大的体型		偏好：CREATURE:BIRD_PENGUIN_EMPEROR PREFSTRING
+enormous size	巨大的體型	巨大的体型		偏好：CREATURE:BIRD_PENGUIN_GIANT PREFSTRING
+ability to dive through the air	凌空俯衝的能力	凌空俯冲的能力		偏好：CREATURE:BIRD_FALCON_PEREGRINE PREFSTRING
+long beaks	長喙	长喙		偏好：CREATURE:BIRD_KIWI PREFSTRING
+great size	碩大的體型	硕大的体型		偏好：CREATURE:BIRD_KIWI_GIANT PREFSTRING
+long necks	長脖子	长脖子		偏好：CREATURE:BIRD_OSTRICH PREFSTRING
+giant eggs	巨大的蛋	巨大的蛋		偏好：CREATURE:BIRD_OSTRICH PREFSTRING
+intelligence	聰慧	聪慧		偏好：CREATURE:BIRD_CROW PREFSTRING
+casques	盔	盔		偏好：CREATURE:BIRD_CASSOWARY PREFSTRING
+curiosity	好奇心	好奇心		偏好：CREATURE:BIRD_KEA PREFSTRING
+yellow eyes	黃色眼睛	黄色眼睛		偏好：CREATURE:BIRD_OWL_SNOWY PREFSTRING
+lovely songs	動聽的歌聲	动听的歌声		偏好：CREATURE:SPARROW PREFSTRING
+dust baths	沙浴	沙浴		偏好：CREATURE:SPARROW PREFSTRING
+long legs	長腿	长腿		偏好：CREATURE:BIRD_STORK_WHITE PREFSTRING
+long bills	長嘴	长嘴		偏好：CREATURE:BIRD_STORK_WHITE PREFSTRING
+haunting call	縈繞不去的鳴叫	萦绕不去的鸣叫		偏好：CREATURE:BIRD_LOON PREFSTRING
+ability to speak	說話能力	说话能力		偏好：CREATURE:BIRD_PARAKEET PREFSTRING
+longevity	長壽	长寿		偏好：CREATURE:BIRD_KAKAPO PREFSTRING
+flightlessness	不會飛行的特性	不会飞行的特性		偏好：CREATURE:BIRD_KAKAPO PREFSTRING
+booming calls	低沉轟鳴的叫聲	低沉轰鸣的叫声		偏好：CREATURE:BIRD_KAKAPO PREFSTRING
+social nature	合群的天性	合群的天性		偏好：CREATURE:BIRD_PARROT_GREY PREFSTRING
+colorful beaks	色彩繽紛的喙	色彩缤纷的喙		偏好：CREATURE:BIRD_PUFFIN PREFSTRING
+bright coloration	鮮豔的色彩	鲜艳的色彩		偏好：CREATURE:BIRD_LORIKEET PREFSTRING
+playful personalities	愛玩的個性	爱玩的个性		偏好：CREATURE:BIRD_LORIKEET PREFSTRING
+intricate songs	婉轉繁複的歌聲	婉转繁复的歌声		偏好：CREATURE:BIRD_WREN PREFSTRING
+fishing ability	捕魚本領	捕鱼本领		偏好：CREATURE:BIRD_OSPREY PREFSTRING
+size	體型	体型		偏好：CREATURE:BIRD_EMU PREFSTRING
+inquisitive nature	好奇的天性	好奇的天性		偏好：CREATURE:BIRD_EMU PREFSTRING
+crests	羽冠	羽冠		偏好：CREATURE:BIRD_COCKATIEL PREFSTRING
+loving nature	深情的天性	深情的天性		偏好：CREATURE:BIRD_LOVEBIRD_PEACH-FACED PREFSTRING
+fondness of shiny objects	對閃亮物品的喜愛	对闪亮物品的喜爱		偏好：CREATURE:BIRD_MAGPIE PREFSTRING
+hunting prowess	高超的狩獵本領	高超的狩猎本领		偏好：CREATURE:BIRD_KESTREL PREFSTRING
+large wings	巨大的翅膀	巨大的翅膀		偏好：CREATURE:BIRD_ALBATROSS PREFSTRING
+piercing yellow eyes	銳利的黃色眼睛	锐利的黄色眼睛		偏好：CREATURE:BIRD_OWL_GREAT_HORNED PREFSTRING
+ear tufts	耳羽簇	耳羽簇		偏好：CREATURE:BIRD_OWL_GREAT_HORNED PREFSTRING
+high soaring	高空翱翔	高空翱翔		偏好：CREATURE:BIRD_EAGLE PREFSTRING
+great bills	巨大的喙	巨大的喙		偏好：CREATURE:BIRD_HORNBILL PREFSTRING
+twittering groups	成群吱喳的鳴叫	成群叽喳的鸣叫		偏好：CREATURE:BIRD_BUSHTIT PREFSTRING
+somewhat great size	還算碩大的體型	还算硕大的体型		偏好：CREATURE:GIANT_BUSHTIT PREFSTRING
+chirping	唧唧叫聲	唧唧叫声		偏好：CREATURE:GRASSHOPPER PREFSTRING
+great leaps	驚人的跳躍	惊人的跳跃		偏好：CREATURE:GRASSHOPPER PREFSTRING
+pincers	大螯	大螯		偏好：CREATURE:BARK_SCORPION PREFSTRING
+stinging tail	帶毒刺的尾巴	带毒刺的尾巴		偏好：CREATURE:BARK_SCORPION PREFSTRING
+predatory nature	掠食天性	捕食天性		偏好：CREATURE:MANTIS PREFSTRING
+grasping legs	捕捉足	捕捉足		偏好：CREATURE:MANTIS PREFSTRING
+ability to expand	膨脹的能力	膨胀的能力		偏好：CREATURE:TICK PREFSTRING
+ability to infest	大肆滋生的能力	大肆滋生的能力		偏好：CREATURE:LOUSE PREFSTRING
+prolific breeding	驚人的繁殖力	惊人的繁殖力		偏好：CREATURE:THRIPS PREFSTRING
+slime trails	黏液痕跡	黏液痕迹		偏好：CREATURE:SLUG PREFSTRING
+high-pitched buzz	尖細的嗡嗡聲	尖细的嗡嗡声		偏好：CREATURE:MOSQUITO PREFSTRING
+ability to feast on blood	飽吸鮮血的本事	饱吸鲜血的本事		偏好：CREATURE:MOSQUITO PREFSTRING
+striking appearance	醒目的外表	醒目的外表		偏好：CREATURE:SPIDER_JUMPING PREFSTRING
+ability to leap	跳躍能力	跳跃能力		偏好：CREATURE:SPIDER_JUMPING PREFSTRING
+industrious nature	勤奮的天性	勤奋的天性		偏好：CREATURE:TERMITE PREFSTRING
+ability to devour wood	啃食木頭的能力	啃食木头的能力		偏好：CREATURE:TERMITE PREFSTRING
+striking coloration	醒目的色彩	醒目的色彩		偏好：CREATURE:MOON_SNAIL PREFSTRING
+venomous bite	毒咬	毒咬		偏好：CREATURE:SPIDER_BROWN_RECLUSE PREFSTRING
+loyalty	忠誠	忠诚		偏好：CREATURE:DOG PREFSTRING
+aloofness	高冷	高冷		偏好：CREATURE:CAT PREFSTRING
+stubborness	倔強	倔强		偏好：CREATURE:MULE PREFSTRING
+strength	力量	力量		偏好：CREATURE:HORSE PREFSTRING
+haunting moos	縈繞耳際的哞叫	萦绕耳际的哞叫		偏好：CREATURE:COW PREFSTRING
+tendency to flock	成群聚集的習性	成群聚集的习性		偏好：CREATURE:SHEEP PREFSTRING
+snorts	哼哼聲	哼哼声		偏好：CREATURE:PIG PREFSTRING
+sense of smell	嗅覺	嗅觉		偏好：CREATURE:PIG PREFSTRING
+eating habits	飲食習慣	饮食习惯		偏好：CREATURE:GOAT PREFSTRING
+clucking	咯咯叫聲	咯咯叫声		偏好：CREATURE:BIRD_CHICKEN PREFSTRING
+scratching	扒地覓食	刨地觅食		偏好：CREATURE:BIRD_CHICKEN PREFSTRING
+three toes	三根腳趾	三根脚趾		偏好：CREATURE:CAVY PREFSTRING
+adorable call	可愛的叫聲	可爱的叫声		偏好：CREATURE:CAVY PREFSTRING
+quacks	呱呱叫聲	呱呱叫声		偏好：CREATURE:BIRD_DUCK PREFSTRING
+water wallowing	在水裡打滾	在水里打滚		偏好：CREATURE:WATER_BUFFALO PREFSTRING
+large herds	浩浩蕩蕩的大群	浩浩荡荡的大群		偏好：CREATURE:REINDEER PREFSTRING
+formation flying	編隊飛行	编队飞行		偏好：CREATURE:BIRD_GOOSE PREFSTRING
+shaggy hair	蓬亂長毛	蓬乱长毛		偏好：CREATURE:YAK PREFSTRING
+jutting teeth	突出的牙齒	突出的牙齿		偏好：CREATURE:LLAMA PREFSTRING
+resemblance to a miniature llama	迷你駱馬般的外貌	迷你大羊驼般的外貌		偏好：CREATURE:ALPACA PREFSTRING
+enormous fan tails	巨大的扇形尾屏	巨大的扇形尾屏		偏好：CREATURE:BIRD_PEAFOWL_BLUE PREFSTRING
+wattle	頸部肉垂	颈部肉垂		偏好：CREATURE:BIRD_TURKEY PREFSTRING
+snood	喙上肉垂	喙上肉垂		偏好：CREATURE:BIRD_TURKEY PREFSTRING
+gobble	咕嚕咕嚕的叫聲	咕噜咕噜的叫声		偏好：CREATURE:BIRD_TURKEY PREFSTRING
+ability to burrow	打洞本領	打洞本领		偏好：CREATURE:RABBIT PREFSTRING
+terrifying features	駭人的樣貌	骇人的样貌		偏好：CREATURE:CHIMERA PREFSTRING
+ability to annoy	惹人厭煩的本事	惹人厌烦的本事		偏好：CREATURE:FLY PREFSTRING
+ability to disgust	令人作噁的本事	令人恶心的本事		偏好：CREATURE:ROACH_LARGE PREFSTRING
+protective shells	護身甲殼	护身甲壳		偏好：CREATURE:BEETLE PREFSTRING
+propensity to dig	愛挖掘的習性	爱挖掘的习性		偏好：CREATURE:ANT PREFSTRING
+enchanting glow	迷人的微光	迷人的微光		偏好：CREATURE:FIREFLY PREFSTRING
+faceted eyes	複眼	复眼		偏好：CREATURE:DRAGONFLY PREFSTRING
+busy nature	忙碌的天性	忙碌的天性		偏好：CREATURE:HONEY_BEE PREFSTRING
+buzzing	嗡嗡聲	嗡嗡声		偏好：CREATURE:HONEY_BEE PREFSTRING
+ability to organize	組織能力	组织能力		偏好：CREATURE:HONEY_BEE PREFSTRING
+woolly appearance	毛茸茸的外表	毛茸茸的外表		偏好：CREATURE:BUMBLEBEE PREFSTRING
+beards	鬍子	胡子		偏好：CREATURE:GOAT_MOUNTAIN PREFSTRING
+long horns	長角	长角		偏好：CREATURE:GOAT_MOUNTAIN PREFSTRING
+surefootedness	穩健的步伐	稳健的步伐		偏好：CREATURE:GOAT_MOUNTAIN PREFSTRING
+whistles	口哨般的叫聲	口哨般的叫声		偏好：CREATURE:MARMOT_HOARY PREFSTRING
+ability to hold liquor	酒量	酒量		偏好：CREATURE:GNOME_MOUNTAIN PREFSTRING
+tusks	長牙	长牙		偏好：CREATURE:WALRUS PREFSTRING
+whiskers	鬍鬚	胡须		偏好：CREATURE:WALRUS PREFSTRING
+suckers	吸盤	吸盘		偏好：CREATURE:FISH_LAMPREY_SEA PREFSTRING
+ability to make one afraid to go into the water	讓人不敢下水的本事	让人不敢下水的本事		偏好：CREATURE:SHARK_GREAT_WHITE PREFSTRING
+needle teeth	針狀牙齒	针状牙齿		偏好：CREATURE:SHARK_FRILL PREFSTRING
+frilled gill slits	皺褶鰓裂	褶皱鳃裂		偏好：CREATURE:SHARK_FRILL PREFSTRING
+dorsal spines	背鰭棘	背鳍棘		偏好：CREATURE:SHARK_SPINY_DOGFISH PREFSTRING
+gentle nature	溫和的天性	温和的天性		偏好：CREATURE:SHARK_WHALE PREFSTRING
+giant open mouths	大張的巨口	大张的巨口		偏好：CREATURE:SHARK_BASKING PREFSTRING
+tenacity	堅韌	坚韧		偏好：CREATURE:SHARK_NURSE PREFSTRING；術語 Tenacity
+speed	速度	速度		偏好：CREATURE:SHARK_MAKO_SHORTFIN PREFSTRING
+stripes	條紋	条纹		偏好：CREATURE:SHARK_TIGER PREFSTRING
+aggressive nature	好鬥的天性	好斗的天性		偏好：CREATURE:SHARK_BULL PREFSTRING
+distinctive dorsal fin	獨特的背鰭	独特的背鳍		偏好：CREATURE:SHARK_REEF_BLACKTIP PREFSTRING
+oddly-shaped heads	古怪的頭型	古怪的头型		偏好：CREATURE:SHARK_HAMMERHEAD PREFSTRING
+ability to conceal themselves	隱匿身形的本領	隐匿身形的本领		偏好：CREATURE:SHARK_ANGEL PREFSTRING
+flat bodies	扁平的身體	扁平的身体		偏好：CREATURE:FISH_SKATE_COMMON PREFSTRING
+majesty	雄偉	雄伟		偏好：CREATURE:FISH_RAY_MANTA PREFSTRING
+tail spines	尾刺	尾刺		偏好：CREATURE:FISH_STINGRAY PREFSTRING
+bony scutes	骨板	骨板		偏好：CREATURE:FISH_STURGEON PREFSTRING
+long bodies	修長的身體	修长的身体		偏好：CREATURE:FISH_CONGER_EEL PREFSTRING
+silvery bodies	銀亮的身體	银亮的身体		偏好：CREATURE:FISH_MILKFISH PREFSTRING
+fins	魚鰭	鱼鳍		偏好：CREATURE:FISH_COD PREFSTRING
+strange fins	奇特的鰭	奇特的鳍		偏好：CREATURE:FISH_SUNFISH_OCEAN PREFSTRING
+sharp snout	尖銳的長吻	尖锐的长吻		偏好：CREATURE:FISH_SWORDFISH PREFSTRING
+finlets	小鰭	小鳍		偏好：CREATURE:FISH_TUNA_BLUEFIN PREFSTRING
+horns	長角	长角		偏好：CREATURE:NARWHAL PREFSTRING
+long noses	長吻	长吻		偏好：CREATURE:FISH_GAR_LONGNOSE PREFSTRING
+protruding mouths	突出的嘴	突出的嘴		偏好：CREATURE:FISH_CARP PREFSTRING
+spirit	鬥志	斗志		偏好：CREATURE:FISH_TIGERFISH PREFSTRING
+distinct markings	鮮明的斑紋	鲜明的斑纹		偏好：CREATURE:FISH_PIKE PREFSTRING
+bizarre appearance	古怪的外貌	古怪的外貌		偏好：CREATURE:PLATYPUS PREFSTRING
+venomous spurs	腳上的毒刺	脚上的毒刺		偏好：CREATURE:PLATYPUS PREFSTRING
+flat tails	扁平的尾巴	扁平的尾巴		偏好：CREATURE:PLATYPUS PREFSTRING
+large bills	寬大的喙	宽大的喙		偏好：CREATURE:PLATYPUS PREFSTRING
+grace	優雅	优雅		偏好：CREATURE:DEER PREFSTRING
+cunning	狡黠	狡黠		偏好：CREATURE:FOX PREFSTRING
+mischief	調皮搗蛋	调皮捣蛋		偏好：CREATURE:RACCOON PREFSTRING
+striking red face	醒目的紅臉	醒目的红脸		偏好：CREATURE:BIRD_BUZZARD PREFSTRING
+big fluffy heads and bellies	毛茸茸的大腦袋和大肚子	毛茸茸的大脑袋和大肚子		偏好：CREATURE:PANDA PREFSTRING
+lazy nature	慵懶的天性	慵懒的天性		偏好：CREATURE:PANDA PREFSTRING
+gigantic fluffy heads and bellies	毛茸茸的巨大腦袋和肚子	毛茸茸的巨大脑袋和肚子		偏好：CREATURE:PANDA, GIGANTIC PREFSTRING
+enormous rodentness	超大號的齧齒類本色	超大号的啮齿类本色		偏好：CREATURE:CAPYBARA PREFSTRING
+graceful swimming	優雅的泳姿	优雅的泳姿		偏好：CREATURE:CAPYBARA PREFSTRING
+resonant barking	洪亮的吠叫	洪亮的吠叫		偏好：CREATURE:CAPYBARA PREFSTRING
+beyond enormous rodentness	超乎想像的巨型齧齒類本色	超乎想象的巨型啮齿类本色		偏好：CREATURE:CAPYBARA, GIANT PREFSTRING
+underground communities	地底聚落	地下聚落		偏好：CREATURE:BADGER PREFSTRING
+striped faces	帶條紋的臉	带条纹的脸		偏好：CREATURE:BADGER PREFSTRING
+broad antlers	寬大的鹿角	宽大的鹿角		偏好：CREATURE:MOOSE PREFSTRING
+large striped tails	帶條紋的大尾巴	带条纹的大尾巴		偏好：CREATURE:RED PANDA PREFSTRING
+amazing trunks	神奇的長鼻	神奇的长鼻		偏好：CREATURE:ELEPHANT PREFSTRING
+calves' spirited antics	幼象們活潑嬉鬧的舉動	幼象们活泼嬉闹的举动		偏好：CREATURE:ELEPHANT PREFSTRING
+great weight	驚人的體重	惊人的体重		偏好：CREATURE:ELEPHANT PREFSTRING
+social behavior	群居行為	群居行为		偏好：CREATURE:ELEPHANT PREFSTRING
+flappy ears	搧動的大耳朵	扇动的大耳朵		偏好：CREATURE:ELEPHANT PREFSTRING
+uprooting of trees	把樹連根拔起的本事	把树连根拔起的本事		偏好：CREATURE:ELEPHANT PREFSTRING
+aggressive sparring	激烈的角力	激烈的角力		偏好：CREATURE:ELEPHANT PREFSTRING
+trumpeting	號角般的鳴叫	号角般的鸣叫		偏好：CREATURE:ELEPHANT PREFSTRING
+tool use	使用工具的能力	使用工具的能力		偏好：CREATURE:ELEPHANT PREFSTRING
+self-awareness	自我意識	自我意识		偏好：CREATURE:ELEPHANT PREFSTRING
+short tempers	暴躁脾氣	暴躁脾气		偏好：CREATURE:WARTHOG PREFSTRING
+roars	怒吼	怒吼		偏好：CREATURE:LION PREFSTRING
+spotted coats	斑點毛皮	斑点毛皮		偏好：CREATURE:LEOPARD PREFSTRING
+stripes, of course	條紋，那還用說	条纹，那还用说		偏好：CREATURE:TIGER PREFSTRING
+large stripes, of course	大條紋，那還用說	大条纹，那还用说		偏好：CREATURE:GIANT_TIGER PREFSTRING
+colorful faces	色彩鮮豔的臉	色彩鲜艳的脸		偏好：CREATURE:MANDRILL PREFSTRING
+antics	逗趣的舉動	逗趣的举动		偏好：CREATURE:CHIMPANZEE PREFSTRING
+colorful hair	鮮豔的毛色	鲜艳的毛色		偏好：CREATURE:ORANGUTAN PREFSTRING
+long arms	長長的手臂	长长的手臂		偏好：CREATURE:ORANGUTAN PREFSTRING
+loud calls	響亮的叫聲	响亮的叫声		偏好：CREATURE:GIBBON_SIAMANG PREFSTRING
+ability to swing through the trees	在林間擺盪的本領	在林间悠荡的本领		偏好：CREATURE:GIBBON_SIAMANG PREFSTRING
+white head rings	頭上的白色環紋	头上的白色环纹		偏好：CREATURE:GIBBON_PILEATED PREFSTRING
+beautiful songs	優美的歌聲	优美的歌声		偏好：CREATURE:GIBBON_BILOU PREFSTRING
+mask-like facial coloration	面具般的臉部花紋	面具般的脸部花纹		偏好：CREATURE:GIBBON_WHITE_BROWED PREFSTRING
+humps	駝峰	驼峰		偏好：CREATURE:CAMEL_2_HUMP PREFSTRING
+patience	耐心	耐心		偏好：CREATURE:BIRD_VULTURE PREFSTRING
+fearlessness	天不怕地不怕的膽量	天不怕地不怕的胆量		偏好：CREATURE:HONEY BADGER PREFSTRING
+thick, bony armor plates	厚實的骨質甲片	厚实的骨质甲片		偏好：CREATURE:ARMADILLO PREFSTRING
+fur	毛皮	皮毛		偏好：CREATURE:CHINCHILLA PREFSTRING
+freakish appearance	怪誕的模樣	怪诞的模样		偏好：CREATURE:FLOATING_GUTS PREFSTRING
+manes	鬃毛	鬃毛		偏好：CREATURE:DRUNIAN PREFSTRING
+unnerving stare	令人發毛的凝視	令人发毛的凝视		偏好：CREATURE:CREEPING_EYE PREFSTRING
+scary mouths	嚇人的大嘴	吓人的大嘴		偏好：CREATURE:VORACIOUS_CAVE_CRAWLER PREFSTRING
+echoing howls	迴盪的嚎叫	回荡的嚎叫		偏好：CREATURE:BLIND_CAVE_OGRE PREFSTRING
+swinging antics	盪來盪去的滑稽模樣	荡来荡去的滑稽模样		偏好：CREATURE:CAP_HOPPER PREFSTRING
+chittering	吱吱聲	吱吱声		偏好：CREATURE:MAGMA_CRAB PREFSTRING
+nervous energy	神經兮兮的活力	神经兮兮的活力		偏好：CREATURE:CRUNDLE PREFSTRING
+calming roundness	令人安心的圓潤	令人安心的圆润		偏好：CREATURE:FLESH_BALL PREFSTRING
+warmth	溫暖	温暖		偏好：CREATURE:FLESH_BALL PREFSTRING
+elegant horns	優雅的角	优雅的角		偏好：CREATURE:ELK_BIRD PREFSTRING
+impressive heads	氣派的頭部	气派的头部		偏好：CREATURE:HELMET_SNAKE PREFSTRING
+enormous tails	巨大的尾巴	巨大的尾巴		偏好：CREATURE:RUTHERER PREFSTRING
+freakish wriggling	詭異的蠕動	诡异的蠕动		偏好：CREATURE:CREEPY_CRAWLER PREFSTRING
+lustrous manes	光亮的鬃毛	光亮的鬃毛		偏好：CREATURE:DRALTHA PREFSTRING
+awesome presence	震撼的存在感	震撼的存在感		偏好：CREATURE:GIANT_EARTHWORM PREFSTRING
+gruesomeness	猙獰可怖	狰狞可怖		偏好：CREATURE:BLOOD_MAN PREFSTRING
+freakish insect heads	怪誕的昆蟲頭	怪诞的昆虫头		偏好：CREATURE:BUGBAT PREFSTRING
+frightening beaks	嚇人的喙	吓人的喙		偏好：CREATURE:JABBERER PREFSTRING
+drooping ears	下垂的耳朵	下垂的耳朵		偏好：CREATURE:BLIND_CAVE_BEAR PREFSTRING
+impressive teeth	驚人的利齒	惊人的利齿		偏好：CREATURE:CAVE_DRAGON PREFSTRING
+large eyes	大眼睛	大眼睛		偏好：CREATURE:CAVE_DRAGON PREFSTRING
+sinister nature	陰險的本性	阴险的本性		偏好：CREATURE:REACHER PREFSTRING
+rockiness	岩石般的質地	岩石般的质地		偏好：CREATURE:ELEMENTMAN_GABBRO PREFSTRING
+impressive tusks	驚人的獠牙	惊人的獠牙		偏好：CREATURE:GORLAK PREFSTRING
+stimulating conversation	啟發人心的談吐	启发人心的谈吐		偏好：CREATURE:GORLAK PREFSTRING
+helpful guidance	熱心的指點	热心的指点		偏好：CREATURE:GORLAK PREFSTRING
+graceful drifting	優雅的飄浮	优雅的飘浮		偏好：CREATURE:CAVE_FLOATER PREFSTRING
+similarity with food	酷似食物的外表	酷似食物的外表		偏好：CREATURE:PLUMP_HELMET_MAN PREFSTRING
+bright orange color	鮮豔的橘色	鲜艳的橙色		偏好：CREATURE:CAVE_BLOB PREFSTRING
+many arms	眾多觸腕	众多触腕		偏好：CREATURE:OCTOPUS PREFSTRING
+sideways walk	橫著走路的模樣	横着走路的样子		偏好：CREATURE:CRAB PREFSTRING
+fierce nature	兇猛的天性	凶猛的天性		偏好：CREATURE:LEOPARD_SEAL PREFSTRING
+ability to change color	變色能力	变色能力		偏好：CREATURE:CUTTLEFISH PREFSTRING
+distinctive pupils	獨特的瞳孔	独特的瞳孔		偏好：CREATURE:CUTTLEFISH PREFSTRING
+great jumps	壯觀的躍身	壮观的跃身		偏好：CREATURE:ORCA PREFSTRING
+squishy texture	軟綿綿的觸感	软绵绵的触感		偏好：CREATURE:SPONGE PREFSTRING
+ability to hide in sand	躲進沙裡的本領	躲进沙里的本领		偏好：CREATURE:HORSESHOE_CRAB PREFSTRING
+vengeful nature	記仇的天性	记仇的天性		偏好：CREATURE:SPERM_WHALE PREFSTRING
+large floppy noses	鬆垮的大鼻子	松垮的大鼻子		偏好：CREATURE:ELEPHANT_SEAL PREFSTRING
+adorable pups	可愛的幼仔	可爱的幼崽		偏好：CREATURE:HARP_SEAL PREFSTRING
+many tentacles	眾多觸手	众多触手		偏好：CREATURE:NAUTILUS PREFSTRING
+round tummies	圓滾滾的肚子	圆滚滚的肚子		偏好：CREATURE:MOGHOPPER PREFSTRING
+insidious nature	狡詐的本性	狡诈的本性		偏好：CREATURE:RAT_DEMON PREFSTRING
+diabolical hunger for the food of others	覬覦別人食物的邪惡食慾	觊觎别人食物的邪恶食欲		偏好：CREATURE:RAT_DEMON PREFSTRING
+warm heart	溫暖的心	温暖的心		偏好：CREATURE:WAMBLER_FLUFFY PREFSTRING
+stumble bumbling	跌跌撞撞的模樣	跌跌撞撞的样子		偏好：CREATURE:WAMBLER_FLUFFY PREFSTRING
+knobs and angles	疙瘩與稜角	疙瘩与棱角		偏好：CREATURE:WORM_KNUCKLE PREFSTRING
+crackles and pops	喀啦劈啪的聲響	咔啦噼啪的声响		偏好：CREATURE:WORM_KNUCKLE PREFSTRING
+translucence	半透明的身軀	半透明的身躯		偏好：CREATURE:SPIDER_PHANTOM PREFSTRING
+creepiness	陰森詭異	阴森诡异		偏好：CREATURE:SPIDER_PHANTOM PREFSTRING
+deafening buzz	震耳欲聾的嗡嗡聲	震耳欲聋的嗡嗡声		偏好：CREATURE:FLY_ACORN PREFSTRING
+thirst for blood	對鮮血的渴望	对鲜血的渴望		偏好：CREATURE:GNAT_BLOOD PREFSTRING
+pulsating lumpy bodies	不斷搏動的疙瘩身軀	不断搏动的疙瘩身躯		偏好：CREATURE:GNAT_BLOOD PREFSTRING
+colorful tongues	色彩鮮豔的舌頭	色彩鲜艳的舌头		偏好：CREATURE:SKINK PREFSTRING
+dewlaps	喉扇	喉扇		偏好：CREATURE:ANOLE PREFSTRING
+head bobs	上下點頭的動作	上下点头的动作		偏好：CREATURE:IGUANA PREFSTRING
+playfulness	頑皮	顽皮		偏好：CREATURE:RIVER OTTER PREFSTRING
+fluffy faces	毛茸茸的臉	毛茸茸的脸		偏好：CREATURE:RIVER OTTER PREFSTRING
+simple tool use	使用簡單工具的本事	使用简单工具的本事		偏好：CREATURE:SEA OTTER PREFSTRING
+big fluffy faces	毛茸茸的大臉	毛茸茸的大脸		偏好：CREATURE:GIANT_OTTER PREFSTRING
+powerful bites	強勁的咬合力	强劲的咬合力		偏好：CREATURE:SNAPPING TURTLE PREFSTRING
+vicious bites	兇狠的撕咬	凶狠的撕咬		偏好：CREATURE:ALLIGATOR SNAPPING TURTLE PREFSTRING
+dams	水壩	水坝		偏好：CREATURE:BEAVER PREFSTRING
+tree-felling habits	啃倒樹木的習性	啃倒树木的习性		偏好：CREATURE:BEAVER PREFSTRING
+feeding habits	進食習性	进食习性		偏好：CREATURE:LEECH PREFSTRING
+gills	鰓	鳃		偏好：CREATURE:AXOLOTL PREFSTRING
+puffy cheeks	鼓鼓的臉頰	鼓鼓的脸颊		偏好：CREATURE:HAMSTER PREFSTRING
+many spines	滿身的棘刺	满身的棘刺		偏好：CREATURE:HEDGEHOG PREFSTRING
+gliding	滑翔	滑翔		偏好：CREATURE:SQUIRREL_FLYING PREFSTRING
+friendliness	友善	友善		偏好：CREATURE:RAT PREFSTRING
+tails	尾巴	尾巴		偏好：CREATURE:SQUIRREL_GRAY PREFSTRING
+slime	黏液	黏液		偏好：CREATURE:FISH_HAGFISH PREFSTRING
+ability to tie themselves in knots	把自己打成結的本領	把自己打成结的本领		偏好：CREATURE:FISH_HAGFISH PREFSTRING
+shape	外形	外形		偏好：CREATURE:FISH_RAY_BAT PREFSTRING
+back spines	背棘	背棘		偏好：CREATURE:FISH_RAY_THORNBACK PREFSTRING
+massive schools	龐大魚群	庞大鱼群		偏好：CREATURE:FISH_HERRING PREFSTRING
+distinct snout	獨特的吻部	独特的吻部		偏好：CREATURE:FISH_ANCHOVY PREFSTRING
+notched fins	有缺刻的魚鰭	有缺刻的鱼鳍		偏好：CREATURE:FISH_HAKE PREFSTRING
+unusual shape	奇特的外形	奇特的外形		偏好：CREATURE:FISH_SEAHORSE PREFSTRING
+ability to inflate	鼓脹身體的能力	鼓胀身体的能力		偏好：CREATURE:FISH_PUFFER_WHITE_SPOTTED PREFSTRING
+strange eyes	奇特的眼睛	奇特的眼睛		偏好：CREATURE:FISH_FLOUNDER PREFSTRING
+ability to spray ink	噴墨能力	喷墨能力		偏好：CREATURE:SQUID PREFSTRING
+gulping	大口吞氣	大口吞气		偏好：CREATURE:FISH_LUNGFISH PREFSTRING
+rippling fin	波動的魚鰭	波动的鱼鳍		偏好：CREATURE:FISH_KNIFEFISH_BANDED PREFSTRING
+wide dorsal fins	寬大的背鰭	宽大的背鳍		偏好：CREATURE:FISH_MOLLY_SAILFIN PREFSTRING
+stature	身形	身形		偏好：CREATURE:HUMAN PREFSTRING
+low howls	低沉的嚎叫	低沉的嚎叫		偏好：CREATURE:OGRE PREFSTRING
+terrible majesty	可怖的威嚴	可怖的威严		偏好：CREATURE:DRAGON PREFSTRING
+woolly legs	毛茸茸的腿	毛茸茸的腿		偏好：CREATURE:SATYR PREFSTRING
+height	高度	高度		偏好：CREATURE:COLOSSUS_BRONZE PREFSTRING
+single eye	獨眼	独眼		偏好：CREATURE:CYCLOPS PREFSTRING
+arguing heads	互相爭吵的頭	互相争吵的头		偏好：CREATURE:ETTIN PREFSTRING
+white fur	白色毛皮	白色毛皮		偏好：CREATURE:YETI PREFSTRING
+reclusive nature	離群索居的天性	离群索居的天性		偏好：CREATURE:SASQUATCH PREFSTRING
+translucent skin	半透明的皮膚	半透明的皮肤		偏好：CREATURE:BLIZZARD_MAN PREFSTRING
+icicle teeth	冰柱般的牙齒	冰柱般的牙齿		偏好：CREATURE:BLIZZARD_MAN PREFSTRING
+glowing red eyes	發光的紅眼	发光的红眼		偏好：CREATURE:BLIZZARD_MAN PREFSTRING
+pointy ears	尖耳朵	尖耳朵		偏好：CREATURE:BLIZZARD_MAN PREFSTRING
+piercing howls	刺耳的嚎叫	刺耳的嚎叫		偏好：CREATURE:WOLF_ICE PREFSTRING
+babylike giggles	嬰兒般的咯咯笑聲	婴儿般的咯咯笑声		偏好：CREATURE:FAIRY PREFSTRING
+lacy wings	蕾絲般的翅膀	蕾丝般的翅膀		偏好：CREATURE:FAIRY PREFSTRING
+shifting colors	變幻的色彩	变幻的色彩		偏好：CREATURE:PIXIE PREFSTRING
+intricate aerial dances	繁複的空中舞蹈	繁复的空中舞蹈		偏好：CREATURE:PIXIE PREFSTRING
+chatters and clicks	吱喳聲與喀噠聲	叽喳声与咔哒声		偏好：CREATURE:BEAK_DOG PREFSTRING
+hunched backs	拱起的背	拱起的背		偏好：CREATURE:BEAK_DOG PREFSTRING
+large beaks	巨大的喙	巨大的喙		偏好：CREATURE:BEAK_DOG PREFSTRING
+slithering nature	蜿蜒滑行的習性	蜿蜒滑行的习性		偏好：CREATURE:GRIMELING PREFSTRING
+weedy bodies	雜草般的身體	杂草般的身体		偏好：CREATURE:GRIMELING PREFSTRING
+goat heads	山羊頭	山羊头		偏好：CREATURE:BLENDEC_FOUL PREFSTRING
+goat legs	山羊腿	山羊腿		偏好：CREATURE:BLENDEC_FOUL PREFSTRING
+rotten eye sockets	腐爛的眼窩	腐烂的眼窝		偏好：CREATURE:BLENDEC_FOUL PREFSTRING
+resounding hoots	響亮的嗚嗚叫聲	响亮的呜呜叫声		偏好：CREATURE:STRANGLER PREFSTRING
+graceful leaps	優雅的跳躍	优雅的跳跃		偏好：CREATURE:STRANGLER PREFSTRING
+three eyes	三隻眼睛	三只眼睛		偏好：CREATURE:STRANGLER PREFSTRING
+toothy maw	滿是利齒的大嘴	满是利齿的大嘴		偏好：CREATURE:STRANGLER PREFSTRING
+jackal heads	胡狼頭	胡狼头		偏好：CREATURE:NIGHTWING PREFSTRING
+bat wings	蝙蝠般的翅膀	蝙蝠般的翅膀		偏好：CREATURE:NIGHTWING PREFSTRING
+long tails	長尾巴	长尾巴		偏好：CREATURE:NIGHTWING PREFSTRING
+fangs	獠牙	獠牙		偏好：CREATURE:NIGHTWING PREFSTRING
+ability to suck blood	吸血能力	吸血能力		偏好：CREATURE:NIGHTWING PREFSTRING
+tightly-stretched skin	緊繃的皮膚	紧绷的皮肤		偏好：CREATURE:NIGHTWING PREFSTRING
+needle-like horns	針狀的角	针状的角		偏好：CREATURE:NIGHTWING PREFSTRING
+feathery wings	長滿羽毛的翅膀	长满羽毛的翅膀		偏好：CREATURE:HARPY PREFSTRING
+fearsome talons	可怕的利爪	可怕的利爪		偏好：CREATURE:HARPY PREFSTRING
+seven heads	七顆頭	七个头		偏好：CREATURE:HYDRA PREFSTRING
+horrifying freakish appearance	駭人的畸形外貌	骇人的畸形外貌		偏好：CREATURE:SEA_MONSTER PREFSTRING
+awe-inspiring size	令人敬畏的體型	令人敬畏的体型		偏好：CREATURE:BIRD_ROC PREFSTRING
+dedication to their young	育雛熱忱	育雏热忱		偏好：CREATURE:BIRD_ROC PREFSTRING
+wrinkly skin	皺巴巴的皮膚	皱巴巴的皮肤		偏好：CREATURE:MOLE_DOG_NAKED PREFSTRING
+grunts	咕噥聲	咕哝声		偏好：CREATURE:TROGLODYTE PREFSTRING
+noses	鼻子	鼻子		偏好：CREATURE:MOLE_GIANT PREFSTRING
+mystery	神秘感	神秘感		偏好：CREATURE:SPIDER_CAVE_GIANT PREFSTRING
+haunting cries	縈繞不去的叫聲	萦绕不去的叫声		偏好：CREATURE:BAT PREFSTRING
+comforting whirs	令人安心的呼嚕聲	令人安心的呼噜声		偏好：CREATURE:MAGGOT_PURRING PREFSTRING
+licks of fire	吞吐的火舌	吞吐的火舌		偏好：CREATURE:ELEMENTMAN_FIRE PREFSTRING
+flowing movement	流動的身姿	流动的身姿		偏好：CREATURE:ELEMENTMAN_MAGMA PREFSTRING
+stern appearance	嚴峻的外表	严峻的外表		偏好：CREATURE:ELEMENTMAN_IRON PREFSTRING
+peculiar smell	古怪的氣味	古怪的气味		偏好：CREATURE:ELEMENTMAN_MUD PREFSTRING
+impressive tails	雄偉的尾巴	雄伟的尾巴		偏好：CREATURE:SERPENT_MAN PREFSTRING
+ferocious charges	兇猛的衝鋒	凶猛的冲锋		偏好：CREATURE:WILD_BOAR PREFSTRING
+howling	嚎叫	嚎叫		偏好：CREATURE:COYOTE PREFSTRING
+pouches	育兒袋	育儿袋		偏好：CREATURE:KANGAROO PREFSTRING
+adorable appearance	可愛的模樣	可爱的模样		偏好：CREATURE:KOALA PREFSTRING
+warning hisses	示警的嘶嘶聲	示警的嘶嘶声		偏好：CREATURE:ADDER PREFSTRING
+spines	棘刺	棘刺		偏好：CREATURE:ECHIDNA PREFSTRING
+egg-laying	卵生習性	卵生习性		偏好：CREATURE:ECHIDNA PREFSTRING
+quills	長刺	长刺		偏好：CREATURE:PORCUPINE PREFSTRING
+habit of eating other snakes	吃其他蛇類的習性	吃其他蛇类的习性		偏好：CREATURE:KINGSNAKE PREFSTRING
+vocalizations	叫聲	叫声		偏好：CREATURE:GRAY_LANGUR PREFSTRING
+short tails	短尾巴	短尾巴		偏好：CREATURE:BOBCAT PREFSTRING
+distinctive striping	獨特的條紋	独特的条纹		偏好：CREATURE:SKUNK PREFSTRING
+foul smell	惡臭	恶臭		偏好：CREATURE:SKUNK PREFSTRING
+distinct mating call	獨特的求偶叫聲	独特的求偶叫声		偏好：CREATURE:GREEN_TREE_FROG PREFSTRING
+long ears	長耳朵	长耳朵		偏好：CREATURE:HARE PREFSTRING
+fluffy tails	蓬鬆的尾巴	蓬松的尾巴		偏好：CREATURE:HARE PREFSTRING
+warning rattle	示警的響尾聲	示警的响尾声		偏好：CREATURE:RATTLESNAKE PREFSTRING
+short legs	短腿	短腿		偏好：CREATURE:WEASEL PREFSTRING
+attractive scale patterns	美麗的鱗片花紋	美丽的鳞片花纹		偏好：CREATURE:COPPERHEAD_SNAKE PREFSTRING
+waddle	搖搖擺擺的步伐	摇摇摆摆的步伐		偏好：CREATURE:WOMBAT PREFSTRING
+ability to play dead	裝死的本領	装死的本领		偏好：CREATURE:OPOSSUM PREFSTRING
+agility	敏捷	敏捷		偏好：CREATURE:MONGOOSE PREFSTRING
+distinctive laugh	獨特的笑聲	独特的笑声		偏好：CREATURE:HYENA PREFSTRING
+coordinated hunting	協同狩獵	协同狩猎		偏好：CREATURE:HYENA PREFSTRING
+charming hood	迷人的頸褶	迷人的颈褶		偏好：CREATURE:KING_COBRA PREFSTRING
+coat patterns	毛皮花紋	毛皮花纹		偏好：CREATURE:OCELOT PREFSTRING
+resourceful nature	機靈的天性	机灵的天性		偏好：CREATURE:JACKAL PREFSTRING
+slow movement	緩慢的動作	缓慢的动作		偏好：CREATURE:SLOTH PREFSTRING
+long limbs	修長的四肢	修长的四肢		偏好：CREATURE:SPIDER_MONKEY PREFSTRING
+prehensile tails	能抓握的尾巴	能抓握的尾巴		偏好：CREATURE:SPIDER_MONKEY PREFSTRING
+overlapping scales	層疊的鱗片	层叠的鳞片		偏好：CREATURE:PANGOLIN PREFSTRING
+aggression	攻擊性	攻击性		偏好：CREATURE:BLACK_MAMBA PREFSTRING
+deadly bite	致命的咬擊	致命的咬击		偏好：CREATURE:BLACK_MAMBA PREFSTRING
+large floppy ears	鬆垂的大耳朵	松垂的大耳朵		偏好：CREATURE:BEAR_SLOTH PREFSTRING
+interesting fingers	奇特的手指	奇特的手指		偏好：CREATURE:AYE-AYE PREFSTRING
+floppy noses	軟垂的鼻子	软垂的鼻子		偏好：CREATURE:TAPIR PREFSTRING
+mighty leaps	矯健的跳躍	矫健的跳跃		偏好：CREATURE:IMPALA PREFSTRING
+ability to take down large prey	撲殺大型獵物的能力	扑杀大型猎物的能力		偏好：CREATURE:STOAT PREFSTRING
+lobopods	葉足	叶足		偏好：CREATURE:CAMBRIAN_HALLUCIGENIA PREFSTRING
+extra eyes	額外的眼睛	额外的眼睛		偏好：CREATURE:CAMBRIAN_HAIKOUICHTHYS PREFSTRING
+grasping proboscis	能抓握的吻管	能抓握的吻管		偏好：CREATURE:CAMBRIAN_OPABINIA PREFSTRING
+frontal appendages	前附肢	前附肢		偏好：CREATURE:CAMBRIAN_ANOMALOCARIS PREFSTRING
+slithering	蜿蜒爬行	蜿蜒爬行		偏好：CREATURE:CARBONIFEROUS_OESTOCEPHALUS PREFSTRING
+jawed proboscis	帶顎的長吻	带颚的长吻		偏好：CREATURE:CARBONIFEROUS_TULLIMONSTRUM PREFSTRING
+disturbing size	令人不安的體型	令人不安的体型		偏好：CREATURE:CARBONIFEROUS_MEGANEURA PREFSTRING
+backward-curving tusks	向後彎曲的獠牙	向后弯曲的獠牙		偏好：CREATURE:CENOZOIC_DEINOTHERIUM PREFSTRING
+gigantic eye teeth	巨大的犬齒	巨大的犬齿		偏好：CREATURE:CENOZOIC_SMILODON PREFSTRING
+spots	斑點	斑点		偏好：CREATURE:CENOZOIC_SMILODON PREFSTRING
+hairy heads	毛茸茸的頭	毛茸茸的头		偏好：CREATURE:CENOZOIC_MAMMOTH_PYGMY PREFSTRING
+long tongues	長舌頭	长舌头		偏好：CREATURE:CENOZOIC_MEGATHERIUM PREFSTRING
+small trunk	小小的象鼻	小小的象鼻		偏好：CREATURE:CENOZOIC_PARACERATHERIUM PREFSTRING
+terrifying beaks	駭人的喙	骇人的喙		偏好：CREATURE:CENOZOIC_KELENKEN PREFSTRING
+shovel-like lower tusks	鏟狀的下長牙	铲状的下长牙		偏好：CREATURE:CENOZOIC_PLATYBELODON PREFSTRING
+snouts	吻部	吻部		偏好：CREATURE:CENOZOIC_ENTELODON PREFSTRING
+forked horns	分叉的角	分叉的角		偏好：CREATURE:CENOZOIC_MEGACEROPS PREFSTRING
+scything claws	鐮刀般的爪	镰刀般的爪		偏好：CREATURE:CRETACEOUS_VELOCIRAPTOR PREFSTRING
+single claws	單爪	单爪		偏好：CREATURE:CRETACEOUS_MONONYKUS PREFSTRING
+flippers	鰭狀肢	鳍状肢		偏好：CREATURE:CRETACEOUS_MOSASAURUS PREFSTRING
+thumb spikes	拇指尖刺	拇指尖刺		偏好：CREATURE:CRETACEOUS_IGUANODON PREFSTRING
+three horns	三支角	三只角		偏好：CREATURE:CRETACEOUS_TRICERATOPS PREFSTRING
+armored carapace	裝甲般的背甲	装甲般的背甲		偏好：CREATURE:CRETACEOUS_ANKYLOSAURUS PREFSTRING
+dome	圓頂頭骨	圆顶头骨		偏好：CREATURE:CRETACEOUS_PACHYCEPHALOSAURUS PREFSTRING
+wingspan	翼展	翼展		偏好：CREATURE:CRETACEOUS_QUETZALCOATLUS PREFSTRING
+giant claws	巨爪	巨爪		偏好：CREATURE:CRETACEOUS_THERIZINOSAURUS PREFSTRING
+eye horns	眼上角	眼上角		偏好：CREATURE:CRETACEOUS_CARNOTAURUS PREFSTRING
+jaws	巨顎	巨颚		偏好：CREATURE:CRETACEOUS_TYRANNOSAURUS PREFSTRING
+tiny arms	小短手	小短手		偏好：CREATURE:CRETACEOUS_TYRANNOSAURUS PREFSTRING
+sails	背帆	背帆		偏好：CREATURE:CRETACEOUS_AMARGASAURUS PREFSTRING
+beaks	喙	喙		偏好：CREATURE:CRETACEOUS_OVIRAPTOR PREFSTRING
+parenting	育幼方式	育幼方式		偏好：CREATURE:CRETACEOUS_OVIRAPTOR PREFSTRING
+wings	雙翼	双翼		偏好：CREATURE:CRETACEOUS_SINOPTERUS PREFSTRING
+affinity for land	親近陸地的天性	亲近陆地的天性		偏好：CREATURE:DEVONIAN_TIKTAALIK PREFSTRING
+broad heads	寬大的頭部	宽大的头部		偏好：CREATURE:DEVONIAN_HIBBERTOPTERUS_SCOULERI PREFSTRING
+tilted walk	傾斜的步態	倾斜的步态		偏好：CREATURE:DEVONIAN_MIMETASTER PREFSTRING
+elongated snout	細長的吻部	细长的吻部		偏好：CREATURE:JURASSIC_ICHTHYOSAURUS PREFSTRING
+ferocious bite	兇猛的咬合	凶猛的咬合		偏好：CREATURE:JURASSIC_TORVOSAURUS PREFSTRING
+short arms	短小的前肢	短小的前肢		偏好：CREATURE:JURASSIC_TORVOSAURUS PREFSTRING
+back plates	背部骨板	背部骨板		偏好：CREATURE:JURASSIC_STEGOSAURUS PREFSTRING
+tail spikes	尾刺	尾刺		偏好：CREATURE:JURASSIC_STEGOSAURUS PREFSTRING
+menacing spikes	嚇人的尖刺	吓人的尖刺		偏好：CREATURE:JURASSIC_KENTROSAURUS PREFSTRING
+graceful flight	優雅的飛姿	优雅的飞姿		偏好：CREATURE:JURASSIC_PTERODACTYLUS PREFSTRING
+round heads	圓圓的腦袋	圆圆的脑袋		偏好：CREATURE:JURASSIC_JEHOLOPTERUS PREFSTRING
+head crests	頭冠	头冠		偏好：CREATURE:JURASSIC_DILOPHOSAURUS PREFSTRING
+graceful movement	優雅的動作	优雅的动作		偏好：CREATURE:JURASSIC_AFROVENATOR PREFSTRING
+ferocious jaws	兇猛的大顎	凶猛的大颚		偏好：CREATURE:JURASSIC_RHAMPHORHYNCHUS PREFSTRING
+scuttling	碎步疾行	碎步疾行		偏好：CREATURE:JURASSIC_OSTENOCARIS PREFSTRING
+bold head sclerites	醒目的頭部骨片	醒目的头部骨片		偏好：CREATURE:ORDOVICIAN_AEGIROCASSIS PREFSTRING
+wedge-shaped heads	楔形的頭部	楔形的头部		偏好：CREATURE:PERMIAN_DIPLOCAULUS PREFSTRING
+stout bodies	粗壯的身軀	粗壮的身躯		偏好：CREATURE:PERMIAN_DIADECTES PREFSTRING
+two teeth	兩顆牙	两颗牙		偏好：CREATURE:PERMIAN_LYSTROSAURUS PREFSTRING
+flatness	扁平的身形	扁平的身形		偏好：CREATURE:TRIASSIC_GERROTHORAX PREFSTRING
+double carapace	雙層甲殼	双层甲壳		偏好：CREATURE:TRIASSIC_PSEPHODERMA PREFSTRING
+lively nature	活潑的天性	活泼的天性		偏好：CREATURE:TRIASSIC_PROCOMPSOGNATHUS PREFSTRING
+giant second foredigit claws	前肢第二指的巨爪	前肢第二指的巨爪		偏好：CREATURE:TRIASSIC_DREPANOSAURUS PREFSTRING
+beer	啤酒	啤酒		偏好：PLANT:SINGLE-GRAIN_WHEAT PREFSTRING
+wine	酒	酒		偏好：PLANT:BARLEY PREFSTRING
+sprouts	嫩芽	嫩芽		偏好：PLANT:ALFALFA PREFSTRING
+grain	穀粒	谷粒		偏好：PLANT:RICE PREFSTRING
+popped kernels	爆米花	爆米花		偏好：PLANT:MAIZE PREFSTRING
+striking color	醒目的色彩	醒目的色彩		偏好：PLANT:PENDANT_AMARANTH PREFSTRING
+leaves	葉子	叶子		偏好：PLANT:RED_SPINACH PREFSTRING
+leaf coloration	葉色	叶色		偏好：PLANT:ELEPHANT-HEAD_AMARANTH PREFSTRING
+flowers	花朵	花朵		偏好：PLANT:FLAX PREFSTRING
+fibrous stems	富含纖維的莖	富含纤维的茎		偏好：PLANT:JUTE PREFSTRING
+useful stems	實用的莖稈	实用的茎秆		偏好：PLANT:RAMIE PREFSTRING
+yummy hearts	美味的芯	美味的芯		偏好：PLANT:ARTICHOKE PREFSTRING
+delicious shoots	美味的嫩莖	美味的嫩茎		偏好：PLANT:ASPARAGUS PREFSTRING
+edible nuts	可食用的堅果	可食用的坚果		偏好：PLANT:BAMBARA_GROUNDNUT PREFSTRING
+pods	豆莢	豆荚		偏好：PLANT:STRING_BEAN PREFSTRING
+edible roots	可食用的根	可食用的根		偏好：PLANT:BEET PREFSTRING
+taste	滋味	滋味		偏好：PLANT:BITTER_MELON PREFSTRING
+buds and berries	花苞與漿果	花苞与浆果		偏好：PLANT:CAPER PREFSTRING
+roots	根	根		偏好：PLANT:CASSAVA PREFSTRING
+cloves	蒜瓣	蒜瓣		偏好：PLANT:GARLIC PREFSTRING
+lens-shaped seeds	透鏡狀的種子	透镜状的种子		偏好：PLANT:LENTIL PREFSTRING
+bulbs	鱗莖	鳞茎		偏好：PLANT:ONION PREFSTRING
+edible tubers	可食用的塊莖	可食用的块茎		偏好：PLANT:POTATO PREFSTRING
+tubers	塊莖	块茎		偏好：PLANT:LESSER_YAM PREFSTRING
+fruit and nuts	果實與堅果	果实与坚果		偏好：PLANT:CASHEW PREFSTRING
+yummy cherries	美味的咖啡櫻桃	美味的咖啡樱桃		偏好：PLANT:COFFEE PREFSTRING
+fragrant fruit	香氣濃郁的果實	香气浓郁的果实		偏好：PLANT:DURIAN PREFSTRING
+nut-filled pots	裝滿堅果的果罐	装满坚果的果罐		偏好：PLANT:PARADISE_NUT PREFSTRING
+nuts	堅果	坚果		偏好：PLANT:MACADAMIA PREFSTRING
+oil-giving fruit	能榨油的果實	能榨油的果实		偏好：PLANT:OLIVE PREFSTRING
+waxy berries	蠟質漿果	蜡质浆果		偏好：PLANT:BAYBERRY PREFSTRING
+blossoms	繁花	繁花		偏好：PLANT:CHERRY PREFSTRING
+rounded tops	圓圓的菌蓋	圆圆的菌盖		偏好：PLANT:MUSHROOM_HELMET_PLUMP PREFSTRING
+twisting stalks	扭曲的莖稈	扭曲的茎秆		偏好：PLANT:GRASS_TAIL_PIG PREFSTRING
+stalks	莖稈	茎秆		偏好：PLANT:GRASS_WHEAT_CAVE PREFSTRING
+round shape	圓圓的外形	圆圆的外形		偏好：PLANT:POD_SWEET PREFSTRING
+gray leaves	灰色的葉子	灰色的叶子		偏好：PLANT:BUSH_QUARRY PREFSTRING
+twisting shape	扭曲的外形	扭曲的外形		偏好：PLANT:ROOT_MUCK PREFSTRING
+stout shape	粗短的外形	粗短的外形		偏好：PLANT:TUBER_BLOATED PREFSTRING
+shrouded history	隱晦的來歷	隐晦的来历		偏好：PLANT:BULB_KOBOLD PREFSTRING
+precise thorns	精巧的尖刺	精巧的尖刺		偏好：PLANT:BERRIES_PRICKLE PREFSTRING
+vivid red color	鮮紅的色澤	鲜红的色泽		偏好：PLANT:BERRIES_STRAW PREFSTRING
+sweeping stalks	舒展的長莖	舒展的长茎		偏好：PLANT:GRASS_LONGLAND PREFSTRING
+tiny leaves	細小的葉子	细小的叶子		偏好：PLANT:HERB_VALLEY PREFSTRING
+soothing fragrance	舒心的香氣	舒心的香气		偏好：PLANT:HERB_VALLEY PREFSTRING
+hanging leaves	垂掛的葉子	垂挂的叶子		偏好：PLANT:WEED_RAT PREFSTRING
+precise lines	規整的線條	规整的线条		偏好：PLANT:REED_ROPE PREFSTRING
+soothing color	柔和的色彩	柔和的色彩		偏好：PLANT:MUSHROOM_CUP_DIMPLE PREFSTRING
+stiff, triangular leaves	堅挺的三角形葉片	坚挺的三角形叶片		偏好：PLANT:WEED_BLADE PREFSTRING
+fuzzy projections	毛茸茸的突起	毛茸茸的突起		偏好：PLANT:ROOT_HIDE PREFSTRING
+wicked thorns	兇險的尖刺	凶险的尖刺		偏好：PLANT:SLIVER_BARB PREFSTRING
+inner light	內蘊的光芒	内蕴的光芒		偏好：PLANT:BERRY_SUN PREFSTRING
+length	長度	长度		偏好：PLANT:VINE_WHIP PREFSTRING
+amazing arms	奇妙的側枝	奇妙的侧枝		偏好：PLANT:SAGUARO PREFSTRING
+cones	毬果	球果		偏好：PLANT:PINE PREFSTRING
+needles	針葉	针叶		偏好：PLANT:PINE PREFSTRING
+autumn coloration	秋季的葉色	秋季的叶色		偏好：PLANT:OAK PREFSTRING
+loose inflorescences	疏鬆的花序	疏松的花序		偏好：PLANT:MAHOGANY PREFSTRING
+thorns	棘刺	棘刺		偏好：PLANT:ACACIA PREFSTRING
+buttresses	板根	板根		偏好：PLANT:KAPOK PREFSTRING
+sad appearance	憂傷的模樣	忧伤的模样		偏好：PLANT:WILLOW PREFSTRING
+fluffy catkins	蓬鬆的葇荑花序	蓬松的柔荑花序		偏好：PLANT:WILLOW PREFSTRING
+gloomy appeal	陰鬱的魅力	阴郁的魅力		偏好：PLANT:BLACK_CAP PREFSTRING
+coldness to the touch	冰涼的觸感	冰凉的触感		偏好：PLANT:NETHER_CAP PREFSTRING
+stunning color	驚豔的色彩	惊艳的色彩		偏好：PLANT:GOBLIN_CAP PREFSTRING
+fine grain	細緻的木紋	细致的木纹		偏好：PLANT:FUNGIWOOD PREFSTRING
+curving trunk	彎曲的樹幹	弯曲的树干		偏好：PLANT:TUNNEL_TUBE PREFSTRING
+raining spores	如雨落下的孢子	如雨落下的孢子		偏好：PLANT:SPORE_TREE PREFSTRING
+sickening appearance	令人作嘔的外觀	令人作呕的外观		偏好：PLANT:BLOOD_THORN PREFSTRING
+living shadows	有生命的陰影	有生命的阴影		偏好：PLANT:GLUMPRONG PREFSTRING
+feathery leaves	羽毛般的葉子	羽毛般的叶子		偏好：PLANT:FEATHER PREFSTRING
+magnificence	宏偉	宏伟		偏好：PLANT:HIGHWOOD PREFSTRING
+smelly catkins	氣味難聞的葇荑花序	气味难闻的柔荑花序		偏好：PLANT:CHESTNUT PREFSTRING
+spiny pods	多刺的殼斗	多刺的壳斗		偏好：PLANT:CHESTNUT PREFSTRING
+catkins	葇荑花序	柔荑花序		偏好：PLANT:ALDER PREFSTRING
+silver bark	銀色樹皮	银色树皮		偏好：PLANT:BIRCH PREFSTRING
+flying keys	會飛的翅果	会飞的翅果		偏好：PLANT:ASH PREFSTRING
+sweet-smelling flowers	香甜的花朵	香甜的花朵		偏好：PLANT:MANGO PREFSTRING
+branch shedding	落枝習性	落枝习性		偏好：PLANT:RUBBER PREFSTRING
+the color amber	琥珀色	琥珀色		FUN_14047f680 偏好清單：顏色（COLOR:AMBER）
+the color amethyst	紫水晶色	紫水晶色		FUN_14047f680 偏好清單：顏色（COLOR:AMETHYST）
+the color aqua	水藍色	水蓝色		FUN_14047f680 偏好清單：顏色（COLOR:AQUA）
+the color aquamarine	海藍寶石色	海蓝宝石色		FUN_14047f680 偏好清單：顏色（COLOR:AQUAMARINE）
+the color ash gray	灰白色	灰白色		FUN_14047f680 偏好清單：顏色（COLOR:ASH_GRAY）
+the color auburn	紅棕色	红棕色		FUN_14047f680 偏好清單：顏色（COLOR:AUBURN）
+the color azure	天藍色	天蓝色		FUN_14047f680 偏好清單：顏色（COLOR:AZURE）
+the color beige	米色	米色		FUN_14047f680 偏好清單：顏色（COLOR:BEIGE）
+the color black	黑色	黑色		FUN_14047f680 偏好清單：顏色（COLOR:BLACK）
+the color blue	藍色	蓝色		FUN_14047f680 偏好清單：顏色（COLOR:BLUE）
+the color brass	黃銅色	黄铜色		FUN_14047f680 偏好清單：顏色（COLOR:BRASS）
+the color bronze	青銅色	青铜色		FUN_14047f680 偏好清單：顏色（COLOR:BRONZE）
+the color brown	棕色	棕色		FUN_14047f680 偏好清單：顏色（COLOR:BROWN）
+the color buff	淺黃褐色	浅黄褐色		FUN_14047f680 偏好清單：顏色（COLOR:BUFF）
+the color burnt sienna	焦赭色	焦赭色		FUN_14047f680 偏好清單：顏色（COLOR:BURNT_SIENNA）
+the color burnt umber	焦褐色	焦褐色		FUN_14047f680 偏好清單：顏色（COLOR:BURNT_UMBER）
+the color cardinal	北美紅雀色	北美红雀色		FUN_14047f680 偏好清單：顏色（COLOR:CARDINAL）
+the color carmine	胭脂紅色	胭脂红色		FUN_14047f680 偏好清單：顏色（COLOR:CARMINE）
+the color cerulean	蔚藍色	蔚蓝色		FUN_14047f680 偏好清單：顏色（COLOR:CERULEAN）
+the color charcoal	炭灰色	炭灰色		FUN_14047f680 偏好清單：顏色（COLOR:CHARCOAL）
+the color chartreuse	查特酒綠色	查特酒绿色		FUN_14047f680 偏好清單：顏色（COLOR:CHARTREUSE）
+the color chestnut	栗子色	栗子色		FUN_14047f680 偏好清單：顏色（COLOR:CHESTNUT）
+the color chocolate	巧克力色	巧克力色		FUN_14047f680 偏好清單：顏色（COLOR:CHOCOLATE）
+the color cinnamon	肉桂色	肉桂色		FUN_14047f680 偏好清單：顏色（COLOR:CINNAMON）
+the color clear	透明色	透明色		FUN_14047f680 偏好清單：顏色（COLOR:CLEAR）
+the color cobalt	鈷藍色	钴蓝色		FUN_14047f680 偏好清單：顏色（COLOR:COBALT）
+the color copper	銅色	铜色		FUN_14047f680 偏好清單：顏色（COLOR:COPPER）
+the color cream	奶油色	奶油色		FUN_14047f680 偏好清單：顏色（COLOR:CREAM）
+the color crimson	緋紅色	绯红色		FUN_14047f680 偏好清單：顏色（COLOR:CRIMSON）
+the color dark blue	深藍色	深蓝色		FUN_14047f680 偏好清單：顏色（COLOR:DARK_BLUE）
+the color dark brown	深棕色	深棕色		FUN_14047f680 偏好清單：顏色（COLOR:DARK_BROWN）
+the color dark chestnut	深栗色	深栗色		FUN_14047f680 偏好清單：顏色（COLOR:DARK_CHESTNUT）
+the color dark green	深綠色	深绿色		FUN_14047f680 偏好清單：顏色（COLOR:DARK_GREEN）
+the color dark indigo	深靛藍色	深靛蓝色		FUN_14047f680 偏好清單：顏色（COLOR:DARK_INDIGO）
+the color dark olive	深橄欖色	深橄榄色		FUN_14047f680 偏好清單：顏色（COLOR:DARK_OLIVE）
+the color dark peach	深桃色	深桃色		FUN_14047f680 偏好清單：顏色（COLOR:DARK_PEACH）
+the color dark pink	深粉紅色	深粉红色		FUN_14047f680 偏好清單：顏色（COLOR:DARK_PINK）
+the color dark scarlet	深猩紅色	深猩红色		FUN_14047f680 偏好清單：顏色（COLOR:DARK_SCARLET）
+the color dark tan	深黃褐色	深黄褐色		FUN_14047f680 偏好清單：顏色（COLOR:DARK_TAN）
+the color dark violet	深紫羅蘭色	深紫罗兰色		FUN_14047f680 偏好清單：顏色（COLOR:DARK_VIOLET）
+the color ecru	米白色	米白色		FUN_14047f680 偏好清單：顏色（COLOR:ECRU）
+the color eggplant	茄子色	茄子色		FUN_14047f680 偏好清單：顏色（COLOR:EGGPLANT）
+the color emerald	祖母綠色	祖母绿色		FUN_14047f680 偏好清單：顏色（COLOR:EMERALD）
+the color fern green	蕨綠色	蕨绿色		FUN_14047f680 偏好清單：顏色（COLOR:FERN_GREEN）
+the color flax	亞麻色	亚麻色		FUN_14047f680 偏好清單：顏色（COLOR:FLAX）
+the color fuchsia	紫紅色	紫红色		FUN_14047f680 偏好清單：顏色（COLOR:FUCHSIA）
+the color gold	金色	金色		FUN_14047f680 偏好清單：顏色（COLOR:GOLD）
+the color golden yellow	金黃色	金黄色		FUN_14047f680 偏好清單：顏色（COLOR:GOLDEN_YELLOW）
+the color goldenrod	金菊黃色	金菊黄色		FUN_14047f680 偏好清單：顏色（COLOR:GOLDENROD）
+the color gray	灰色	灰色		FUN_14047f680 偏好清單：顏色（COLOR:GRAY）
+the color green	綠色	绿色		FUN_14047f680 偏好清單：顏色（COLOR:GREEN）
+the color green-yellow	綠黃色	绿黄色		FUN_14047f680 偏好清單：顏色（COLOR:GREEN-YELLOW）
+the color heliotrope	天芥菜紫色	天芥菜紫色		FUN_14047f680 偏好清單：顏色（COLOR:HELIOTROPE）
+the color indigo	靛藍色	靛蓝色		FUN_14047f680 偏好清單：顏色（COLOR:INDIGO）
+the color ivory	象牙色	象牙色		FUN_14047f680 偏好清單：顏色（COLOR:IVORY）
+the color jade	翡翠色	翡翠色		FUN_14047f680 偏好清單：顏色（COLOR:JADE）
+the color lavender	薰衣草色	薰衣草色		FUN_14047f680 偏好清單：顏色（COLOR:LAVENDER）
+the color lavender blush	薰衣草粉色	薰衣草粉色		FUN_14047f680 偏好清單：顏色（COLOR:LAVENDER_BLUSH）
+the color lemon	檸檬黃色	柠檬黄色		FUN_14047f680 偏好清單：顏色（COLOR:LEMON）
+the color light blue	淺藍色	浅蓝色		FUN_14047f680 偏好清單：顏色（COLOR:LIGHT_BLUE）
+the color light brown	淺棕色	浅棕色		FUN_14047f680 偏好清單：顏色（COLOR:LIGHT_BROWN）
+the color lilac	丁香紫色	丁香紫色		FUN_14047f680 偏好清單：顏色（COLOR:LILAC）
+the color lime	萊姆色	青柠色		FUN_14047f680 偏好清單：顏色（COLOR:LIME）
+the color mahogany	桃花心木色	桃花心木色		FUN_14047f680 偏好清單：顏色（COLOR:MAHOGANY）
+the color maroon	褐紅色	褐红色		FUN_14047f680 偏好清單：顏色（COLOR:MAROON）
+the color mauve	藕荷色	藕荷色		FUN_14047f680 偏好清單：顏色（COLOR:MAUVE）
+the color mauve taupe	藕荷灰褐色	藕荷灰褐色		FUN_14047f680 偏好清單：顏色（COLOR:MAUVE_TAUPE）
+the color midnight blue	午夜藍色	午夜蓝色		FUN_14047f680 偏好清單：顏色（COLOR:MIDNIGHT_BLUE）
+the color mint green	薄荷綠色	薄荷绿色		FUN_14047f680 偏好清單：顏色（COLOR:MINT_GREEN）
+the color moss green	苔綠色	苔绿色		FUN_14047f680 偏好清單：顏色（COLOR:MOSS_GREEN）
+the color ochre	赭黃色	赭黄色		FUN_14047f680 偏好清單：顏色（COLOR:OCHRE）
+the color olive	橄欖色	橄榄色		FUN_14047f680 偏好清單：顏色（COLOR:OLIVE）
+the color orange	柳橙色	橙色		FUN_14047f680 偏好清單：顏色（COLOR:ORANGE）
+the color pale blue	淡藍色	淡蓝色		FUN_14047f680 偏好清單：顏色（COLOR:PALE_BLUE）
+the color pale brown	淡棕色	淡棕色		FUN_14047f680 偏好清單：顏色（COLOR:PALE_BROWN）
+the color pale chestnut	淡栗色	淡栗色		FUN_14047f680 偏好清單：顏色（COLOR:PALE_CHESTNUT）
+the color pale pink	淡粉紅色	淡粉红色		FUN_14047f680 偏好清單：顏色（COLOR:PALE_PINK）
+the color peach	桃子色	桃子色		FUN_14047f680 偏好清單：顏色（COLOR:PEACH）
+the color pearl	珍珠色	珍珠色		FUN_14047f680 偏好清單：顏色（COLOR:PEARL）
+the color periwinkle	長春花藍色	长春花蓝色		FUN_14047f680 偏好清單：顏色（COLOR:PERIWINKLE）
+the color pine green	松綠色	松绿色		FUN_14047f680 偏好清單：顏色（COLOR:PINE_GREEN）
+the color pink	粉紅色	粉红色		FUN_14047f680 偏好清單：顏色（COLOR:PINK）
+the color plum	李子色	李子色		FUN_14047f680 偏好清單：顏色（COLOR:PLUM）
+the color puce	紫褐色	紫褐色		FUN_14047f680 偏好清單：顏色（COLOR:PUCE）
+the color pumpkin	南瓜色	南瓜色		FUN_14047f680 偏好清單：顏色（COLOR:PUMPKIN）
+the color purple	紫色	紫色		FUN_14047f680 偏好清單：顏色（COLOR:PURPLE）
+the color raw umber	生褐色	生褐色		FUN_14047f680 偏好清單：顏色（COLOR:RAW_UMBER）
+the color red	紅色	红色		FUN_14047f680 偏好清單：顏色（COLOR:RED）
+the color red-purple	紅紫色	红紫色		FUN_14047f680 偏好清單：顏色（COLOR:RED_PURPLE）
+the color rose	玫瑰色	玫瑰色		FUN_14047f680 偏好清單：顏色（COLOR:ROSE）
+the color russet	赤褐色	赤褐色		FUN_14047f680 偏好清單：顏色（COLOR:RUSSET）
+the color rust	鐵鏽色	铁锈色		FUN_14047f680 偏好清單：顏色（COLOR:RUST）
+the color saffron	番紅花色	藏红花色		FUN_14047f680 偏好清單：顏色（COLOR:SAFFRON）
+the color scarlet	猩紅色	猩红色		FUN_14047f680 偏好清單：顏色（COLOR:SCARLET）
+the color sea green	海綠色	海绿色		FUN_14047f680 偏好清單：顏色（COLOR:SEA_GREEN）
+the color sepia	深褐色	深褐色		FUN_14047f680 偏好清單：顏色（COLOR:SEPIA）
+the color silver	銀色	银色		FUN_14047f680 偏好清單：顏色（COLOR:SILVER）
+the color sky blue	天空藍色	天空蓝色		FUN_14047f680 偏好清單：顏色（COLOR:SKY_BLUE）
+the color slate gray	板岩灰色	板岩灰色		FUN_14047f680 偏好清單：顏色（COLOR:SLATE_GRAY）
+the color spring green	春綠色	春绿色		FUN_14047f680 偏好清單：顏色（COLOR:SPRING_GREEN）
+the color tan	黃褐色	黄褐色		FUN_14047f680 偏好清單：顏色（COLOR:TAN）
+the color dark taupe	深灰褐色	深灰褐色		FUN_14047f680 偏好清單：顏色（COLOR:TAUPE_DARK）
+the color taupe gray	灰褐色	灰褐色		FUN_14047f680 偏好清單：顏色（COLOR:TAUPE_GRAY）
+the color taupe	灰褐色	灰褐色		FUN_14047f680 偏好清單：顏色（COLOR:TAUPE_MEDIUM）
+the color purple taupe	紫灰褐色	紫灰褐色		FUN_14047f680 偏好清單：顏色（COLOR:TAUPE_PURPLE）
+the color pale taupe	淡灰褐色	淡灰褐色		FUN_14047f680 偏好清單：顏色（COLOR:TAUPE_PALE）
+the color rose taupe	玫瑰灰褐色	玫瑰灰褐色		FUN_14047f680 偏好清單：顏色（COLOR:TAUPE_ROSE）
+the color sandy taupe	沙灰褐色	沙灰褐色		FUN_14047f680 偏好清單：顏色（COLOR:TAUPE_SANDY）
+the color teal	藍綠色	蓝绿色		FUN_14047f680 偏好清單：顏色（COLOR:TEAL）
+the color turquoise	綠松石色	绿松石色		FUN_14047f680 偏好清單：顏色（COLOR:TURQUOISE）
+the color vermilion	朱紅色	朱红色		FUN_14047f680 偏好清單：顏色（COLOR:VERMILION）
+the color violet	紫羅蘭色	紫罗兰色		FUN_14047f680 偏好清單：顏色（COLOR:VIOLET）
+the color white	白色	白色		FUN_14047f680 偏好清單：顏色（COLOR:WHITE）
+the color yellow	黃色	黄色		FUN_14047f680 偏好清單：顏色（COLOR:YELLOW）
+the color yellow-green	黃綠色	黄绿色		FUN_14047f680 偏好清單：顏色（COLOR:YELLOW_GREEN）
+the color blue-gray	藍灰色	蓝灰色		FUN_14047f680 偏好清單：顏色（COLOR:BLUE-GRAY）
+the color apple green	蘋果綠色	苹果绿色		FUN_14047f680 偏好清單：顏色（COLOR:APPLE_GREEN）
+the color bright green	亮綠色	亮绿色		FUN_14047f680 偏好清單：顏色（COLOR:BRIGHT_GREEN）
+the color leaf green	葉綠色	叶绿色		FUN_14047f680 偏好清單：顏色（COLOR:LEAF_GREEN）
+the color zesty green	鮮綠色	鲜绿色		FUN_14047f680 偏好清單：顏色（COLOR:ZESTY_GREEN）
+the color woodland green	林地綠色	林地绿色		FUN_14047f680 偏好清單：顏色（COLOR:WOODLAND_GREEN）
+the color grass green	草綠色	草绿色		FUN_14047f680 偏好清單：顏色（COLOR:GRASS_GREEN）
+the color vibrant green	亮翠綠色	亮翠绿色		FUN_14047f680 偏好清單：顏色（COLOR:VIBRANT_GREEN）
+the color eucalyptus	尤加利綠色	桉树绿色		FUN_14047f680 偏好清單：顏色（COLOR:EUCALYPTUS）
+the color sea foam	海沫綠色	海沫绿色		FUN_14047f680 偏好清單：顏色（COLOR:SEA_FOAM）
+the color glacier blue	冰河藍色	冰川蓝色		FUN_14047f680 偏好清單：顏色（COLOR:GLACIER_BLUE）
+the color river blue	河水藍色	河水蓝色		FUN_14047f680 偏好清單：顏色（COLOR:RIVER_BLUE）
+the color cornflower	矢車菊藍色	矢车菊蓝色		FUN_14047f680 偏好清單：顏色（COLOR:CORNFLOWER）
+the color deep sea blue	深海藍色	深海蓝色		FUN_14047f680 偏好清單：顏色（COLOR:DEEP_SEA_BLUE）
+the color dark azure	深天藍色	深天蓝色		FUN_14047f680 偏好清單：顏色（COLOR:DARK_AZURE）
+the color ultramarine	群青色	群青色		FUN_14047f680 偏好清單：顏色（COLOR:ULTRAMARINE）
+the color sapphire	藍寶石色	蓝宝石色		FUN_14047f680 偏好清單：顏色（COLOR:SAPPHIRE）
+the color crocus purple	番紅花紫色	番红花紫色		FUN_14047f680 偏好清單：顏色（COLOR:CROCUS_PURPLE）
+the color foxglove	毛地黃紫色	毛地黄紫色		FUN_14047f680 偏好清單：顏色（COLOR:FOXGLOVE）
+the color orchid pink	蘭花粉色	兰花粉色		FUN_14047f680 偏好清單：顏色（COLOR:ORCHID_PINK）
+the color raspberry pink	覆盆子粉色	树莓粉色		FUN_14047f680 偏好清單：顏色（COLOR:RASPBERRY_PINK）
+unknown meat	不明的肉	不明的肉		FUN_14047f680 偏好清單：食物名稱查不到時的替代字
+unknown fish	不明的魚	不明的鱼		FUN_14047f680 偏好清單：食物名稱查不到時的替代字
+unknown item	不明物品	不明物品		FUN_14047f680 偏好清單：食物名稱查不到時的替代字
+unknown seeds	不明的種子	不明的种子		FUN_14047f680 偏好清單：食物名稱查不到時的替代字
+unknown plants	不明的植物	不明的植物		FUN_14047f680 偏好清單：食物名稱查不到時的替代字
+unknown leaves	不明的葉子	不明的叶子		FUN_14047f680 偏好清單：食物名稱查不到時的替代字
+unknown drink	不明的飲料	不明的饮料		FUN_14047f680 偏好清單：食物名稱查不到時的替代字
+unknown powder	不明的粉末	不明的粉末		FUN_14047f680 偏好清單：食物名稱查不到時的替代字
+unknown cheese	不明的乳酪	不明的奶酪		FUN_14047f680 偏好清單：食物名稱查不到時的替代字
+unknown liquid	不明的液體	不明的液体		FUN_14047f680 偏好清單：食物名稱查不到時的替代字
+crystal glass	水晶玻璃	水晶玻璃		玻璃種類（材料名，偏好清單）

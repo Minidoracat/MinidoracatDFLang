@@ -1,0 +1,30 @@
+en	zh-Hant	zh-Hans	align	note
+This visitor has come {%1} and {%2}.	這位訪客來{1}，也來{2}。	这位访客来{1}，也来{2}。		訪客資訊（FUN_1401a5b70，整段交給 wrap_text）：來訪目的清單，三項以上前面由 lists.tsv 接成「、」；目的帶地點時是「到X祈禱」，接成「來到X祈禱」
+This visitor has come {%1}.	這位訪客來{1}。	这位访客来{1}。		訪客資訊：只有一個來訪目的
+to pray at {1}	到{1}祈禱	到{1}祈祷		來訪目的＋地點（{1} 是地點名稱，照原文）
+to study at {1}	到{1}做研究	到{1}做研究		同上
+to relax at {1}	到{1}放鬆	到{1}放松		同上
+to perform at {1}	到{1}表演	到{1}表演		同上
+to slay beasts at {1}	到{1}獵殺野獸	到{1}猎杀野兽		同上
+seeking work as a performer at {1}	到{1}謀求表演者職位	到{1}谋求表演者职位		同上
+seeking work as a mercenary at {1}	到{1}謀求傭兵職位	到{1}谋求雇佣兵职位		同上
+seeking work as a scholar at {1}	到{1}謀求學者職位	到{1}谋求学者职位		同上
+for diplomacy at {1}	到{1}進行外交	到{1}进行外交		同上
+seeking sanctuary at {1}	到{1}尋求庇護	到{1}寻求庇护		同上
+asking questions at {1}	到{1}打聽消息	到{1}打听消息		同上
+{@1} heard this was a good place to search for monsters.	{1}聽說這裡很適合搜尋怪物。	{1}听说这里很适合寻找怪物。		訪客資訊第二句：代名詞＋聽到的傳聞
+{@1} heard this was the place for those seeking danger.	{1}聽說這裡適合尋求危險的人。	{1}听说这里适合寻求危险的人。		同上
+{@1} heard {2} was the place to entertain people.	{1}聽說{2}是表演娛樂大眾的好地方。	{1}听说{2}是表演娱乐大众的好地方。		同上；{2} 是 this（這裡）或地點名稱（照原文）
+{@1} heard {2} was the place to perform research.	{1}聽說{2}是做研究的好地方。	{1}听说{2}是做研究的好地方。		同上
+{@1} heard {2} would make a good base for a mercenary.	{1}聽說{2}適合當傭兵的據點。	{1}听说{2}适合当雇佣兵的据点。		同上
+{@1} heard {2} was the place to look for long-term work.	{1}聽說{2}是找長期工作的好地方。	{1}听说{2}是找长期工作的好地方。		同上
+{@1} heard {2} was the place for long-term scholarship.	{1}聽說{2}是長期治學的好地方。	{1}听说{2}是长期治学的好地方。		同上
+{@1} heard {2} was the place for a good drink.	{1}聽說{2}是好好喝一杯的好地方。	{1}听说{2}是好好喝一杯的好地方。		同上
+{@1} heard {2} was the place to admire fine architecture.	{1}聽說{2}是欣賞精美建築的好地方。	{1}听说{2}是欣赏精美建筑的好地方。		同上
+{@1} heard {2} was the place for prayer.	{1}聽說{2}是祈禱的好地方。	{1}听说{2}是祈祷的好地方。		同上
+{@1} heard {2} was the place to enjoy oneself.	{1}聽說{2}是享樂的好地方。	{1}听说{2}是享乐的好地方。		同上
+{@1} was curious about {2}.	{1}對{2}很好奇。	{1}对{2}很好奇。		同上；{2} 是人或地點名稱
+{@1} went on this journey out of curiosity.	{1}出於好奇而踏上這趟旅程。	{1}出于好奇踏上了这趟旅程。		同上
+{@1} is seeking information about the location of {2}.	{1}正在打聽{2}的下落。	{1}正在打听{2}的下落。		同上；{2} 是要找的人或物（名稱照原文）
+{@1} is seeking information.	{1}正在打聽消息。	{1}正在打听消息。		同上
+{@1} believes {2} would be a safe place to stay.	{1}認為{2}是個安全的落腳處。	{1}认为{2}是个安全的落脚处。		同上

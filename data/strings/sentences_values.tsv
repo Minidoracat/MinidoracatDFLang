@@ -1,0 +1,251 @@
+en	zh-Hant	zh-Hans	align	note
+is an absolute believer in the rule of law	堅信法治至上	坚信法治至上		FUN_140e248a0 case 0（law）最高（>40）；價值觀清單子句
+has a great deal of respect for the law	非常尊重法律	非常尊重法律		FUN_140e248a0 case 0（law）強（26～40）；價值觀清單子句
+respects the law	尊重法律	尊重法律		FUN_140e248a0 case 0（law）中（11～25）；價值觀清單子句
+doesn't feel strongly about the law	對法律沒什麼特別的感覺	对法律没什么特别的感觉		FUN_140e248a0 case 0（law）中立（-10～10）；價值觀清單子句
+does not respect the law	不尊重法律	不尊重法律		FUN_140e248a0 case 0（law）弱反感（-25～-11）；價值觀清單子句
+disdains the law	蔑視法律	蔑视法律		FUN_140e248a0 case 0（law）強反感（-40～-26）；價值觀清單子句
+finds the idea of laws abhorrent	痛恨法律這種東西	痛恨法律这种东西		FUN_140e248a0 case 0（law）最反感（<-40）；價值觀清單子句
+has the highest regard for loyalty	將忠誠視為至高無上	将忠诚视为至高无上		FUN_140e248a0 case 1（loyalty）最高（>40）；價值觀清單子句
+greatly prizes loyalty	非常珍視忠誠	非常珍视忠诚		FUN_140e248a0 case 1（loyalty）強（26～40）；價值觀清單子句
+values loyalty	重視忠誠	重视忠诚		FUN_140e248a0 case 1（loyalty）中（11～25）；價值觀清單子句
+doesn't particularly value loyalty	不怎麼重視忠誠	不怎么重视忠诚		FUN_140e248a0 case 1（loyalty）中立（-10～10）；價值觀清單子句
+views loyalty unfavorably	對忠誠沒有好感	对忠诚没有好感		FUN_140e248a0 case 1（loyalty）弱反感（-25～-11）；價值觀清單子句
+disdains loyalty	蔑視忠誠	蔑视忠诚		FUN_140e248a0 case 1（loyalty）強反感（-40～-26）；價值觀清單子句
+is disgusted by the idea of loyalty	對忠誠這種觀念深感厭惡	对忠诚这种观念深感厌恶		FUN_140e248a0 case 1（loyalty）最反感（<-40）；價值觀清單子句
+sees family as one of the most important things in life	認為家庭是人生中最重要的事之一	认为家庭是人生中最重要的事之一		FUN_140e248a0 case 2（family）最高（>40）；價值觀清單子句
+values family greatly	非常重視家庭	非常重视家庭		FUN_140e248a0 case 2（family）強（26～40）；價值觀清單子句
+values family	重視家庭	重视家庭		FUN_140e248a0 case 2（family）中（11～25）；價值觀清單子句
+does not care about family one way or the other	對家庭無所謂	对家庭无所谓		FUN_140e248a0 case 2（family）中立（-10～10）；價值觀清單子句
+is put off by family	對家庭有些反感	对家庭有些反感		FUN_140e248a0 case 2（family）弱反感（-25～-11）；價值觀清單子句
+lacks any respect for family	毫不尊重家庭	毫不尊重家庭		FUN_140e248a0 case 2（family）強反感（-40～-26）；價值觀清單子句
+finds the idea of family loathsome	憎惡家庭這種東西	憎恶家庭这种东西		FUN_140e248a0 case 2（family）最反感（<-40）；價值觀清單子句
+believes friendship is a key to the ideal life	相信友誼是理想人生的關鍵	相信友谊是理想人生的关键		FUN_140e248a0 case 3（friendship）最高（>40）；價值觀清單子句
+sees friendship as one of the finer things in life	認為友誼是人生中的美好事物之一	认为友谊是人生中的美好事物之一		FUN_140e248a0 case 3（friendship）強（26～40）；價值觀清單子句
+thinks friendship is important	認為友誼很重要	认为友谊很重要		FUN_140e248a0 case 3（friendship）中（11～25）；價值觀清單子句
+does not care about friendship	不在乎友誼	不在乎友谊		FUN_140e248a0 case 3（friendship）中立（-10～10）；價值觀清單子句
+finds friendship burdensome	覺得友誼是種負擔	觉得友谊是种负担		FUN_140e248a0 case 3（friendship）弱反感（-25～-11）；價值觀清單子句
+is completely put off by the idea of friends	對交朋友這種事極為反感	对交朋友这种事极为反感		FUN_140e248a0 case 3（friendship）強反感（-40～-26）；價值觀清單子句
+finds the whole idea of friendship disgusting	覺得友誼這整件事令人作嘔	觉得友谊这整件事令人作呕		FUN_140e248a0 case 3（friendship）最反感（<-40）；價值觀清單子句
+believes that the acquisition of power over others is the ideal goal in life and worthy of the highest respect	認為凌駕他人的權力是人生最值得追求與尊敬的目標	认为凌驾他人的权力是人生最值得追求与尊敬的目标		FUN_140e248a0 case 4（power）最高（>40）；價值觀清單子句
+sees power over others as something to strive for	認為凌駕他人的權力值得追求	认为凌驾他人的权力值得追求		FUN_140e248a0 case 4（power）強（26～40）；價值觀清單子句
+respects power	尊重權力	尊重权力		FUN_140e248a0 case 4（power）中（11～25）；價值觀清單子句
+doesn't find power particularly praiseworthy	不覺得權力有什麼值得稱道	不觉得权力有什么值得称道		FUN_140e248a0 case 4（power）中立（-10～10）；價值觀清單子句
+has a negative view of those who exercise power over others	對支配他人的人觀感不佳	对支配他人的人观感不佳		FUN_140e248a0 case 4（power）弱反感（-25～-11）；價值觀清單子句
+hates those who wield power over others	痛恨掌權支配他人的人	痛恨掌权支配他人的人		FUN_140e248a0 case 4（power）強反感（-40～-26）；價值觀清單子句
+finds the acquisition and use of power abhorrent and would have all masters toppled	憎惡權力的取得與行使並巴不得推翻一切掌權者	憎恶权力的获取与行使并巴不得推翻一切掌权者		FUN_140e248a0 case 4（power）最反感（<-40）；價值觀清單子句
+believes the truth is inviolable regardless of the cost	認為無論付出什麼代價都不能違背真理	认为无论付出什么代价都不能违背真理		FUN_140e248a0 case 5（truth）最高（>40）；價值觀清單子句
+believes that honesty is a high ideal	認為誠實是崇高的理想	认为诚实是崇高的理想		FUN_140e248a0 case 5（truth）強（26～40）；價值觀清單子句
+values honesty	重視誠實	重视诚实		FUN_140e248a0 case 5（truth）中（11～25）；價值觀清單子句
+does not particularly value the truth	不怎麼看重說真話	不怎么看重说真话		FUN_140e248a0 case 5（truth）中立（-10～10）；價值觀清單子句
+finds blind honesty foolish	覺得一味誠實很愚蠢	觉得一味诚实很愚蠢		FUN_140e248a0 case 5（truth）弱反感（-25～-11）；價值觀清單子句
+sees lying as an important means to an end	認為說謊是達成目的的重要手段	认为说谎是达成目的的重要手段		FUN_140e248a0 case 5（truth）強反感（-40～-26）；價值觀清單子句
+is repelled by the idea of honesty and lies without compunction	厭惡誠實這種觀念並毫無愧疚地說謊	厌恶诚实这种观念并毫无愧疚地说谎		FUN_140e248a0 case 5（truth）最反感（<-40）；價值觀清單子句
+holds well-laid plans and shrewd deceptions in the highest regard	極為推崇周密的計謀與高明的騙術	极为推崇周密的计谋与高明的骗术		FUN_140e248a0 case 6（cunning）最高（>40）；價值觀清單子句
+greatly respects the shrewd and guileful	非常敬佩精明狡詐的人	非常敬佩精明狡诈的人		FUN_140e248a0 case 6（cunning）強（26～40）；價值觀清單子句
+values cunning	重視謀略	重视谋略		FUN_140e248a0 case 6（cunning）中（11～25）；價值觀清單子句
+does not really value cunning and guile	不太看重狡詐與謀略	不太看重狡诈与谋略		FUN_140e248a0 case 6（cunning）中立（-10～10）；價值觀清單子句
+sees guile and cunning as indirect and somewhat worthless	認為狡詐與計謀拐彎抹角又沒什麼價值	认为狡诈与计谋拐弯抹角又没什么价值		FUN_140e248a0 case 6（cunning）弱反感（-25～-11）；價值觀清單子句
+holds shrewd and crafty individuals in the lowest esteem	極度瞧不起精明狡猾的人	极度瞧不起精明狡猾的人		FUN_140e248a0 case 6（cunning）強反感（-40～-26）；價值觀清單子句
+is utterly disgusted by guile and cunning	對狡詐與計謀深惡痛絕	对狡诈与计谋深恶痛绝		FUN_140e248a0 case 6（cunning）最反感（<-40）；價值觀清單子句
+believes that artful speech and eloquent expression are of the highest ideals	認為巧妙的言辭與雄辯的表達是最崇高的理想	认为巧妙的言辞与雄辩的表达是最崇高的理想		FUN_140e248a0 case 7（eloquence）最高（>40）；價值觀清單子句
+deeply respects eloquent speakers	深深敬佩能言善道的人	深深敬佩能言善辩的人		FUN_140e248a0 case 7（eloquence）強（26～40）；價值觀清單子句
+values eloquence	重視口才	重视口才		FUN_140e248a0 case 7（eloquence）中（11～25）；價值觀清單子句
+doesn't value eloquence so much	不太看重口才	不太看重口才		FUN_140e248a0 case 7（eloquence）中立（-10～10）；價值觀清單子句
+finds eloquence and artful speech off-putting	對雄辯與花言巧語感到反感	对雄辩与花言巧语感到反感		FUN_140e248a0 case 7（eloquence）弱反感（-25～-11）；價值觀清單子句
+finds himself somewhat disgusted with eloquent speakers	對能言善道的人頗為嫌惡	对能言善辩的人颇为嫌恶		FUN_140e248a0 case 7（eloquence）強反感（-40～-26）；價值觀清單子句；三種代名詞各一條，中文不用代名詞
+finds herself somewhat disgusted with eloquent speakers	對能言善道的人頗為嫌惡	对能言善辩的人颇为嫌恶		FUN_140e248a0 case 7（eloquence）強反感（-40～-26）；價值觀清單子句；三種代名詞各一條，中文不用代名詞
+finds itself somewhat disgusted with eloquent speakers	對能言善道的人頗為嫌惡	对能言善辩的人颇为嫌恶		FUN_140e248a0 case 7（eloquence）強反感（-40～-26）；價值觀清單子句；三種代名詞各一條，中文不用代名詞
+sees artful speech and eloquence as a wasteful form of deliberate deception and treats it as such	把巧言雄辯視為白費工夫的蓄意欺騙並如此對待	把巧言雄辩视为白费工夫的蓄意欺骗并如此对待		FUN_140e248a0 case 7（eloquence）最反感（<-40）；價值觀清單子句
+holds fairness as one of the highest ideals and despises cheating of any kind	將公平視為最崇高的理想之一並鄙視任何形式的欺詐	将公平视为最崇高的理想之一并鄙视任何形式的欺诈		FUN_140e248a0 case 8（fairness）最高（>40）；價值觀清單子句
+has great respect for fairness	非常尊重公平	非常尊重公平		FUN_140e248a0 case 8（fairness）強（26～40）；價值觀清單子句
+respects fair-dealing and fair-play	尊重公平交易與公平競爭	尊重公平交易与公平竞争		FUN_140e248a0 case 8（fairness）中（11～25）；價值觀清單子句
+does not care about fairness	不在乎公不公平	不在乎公不公平		FUN_140e248a0 case 8（fairness）中立（-10～10）；價值觀清單子句
+sees life as unfair and doesn't mind it that way	認為人生本來就不公平也不以為意	认为人生本来就不公平也不以为意		FUN_140e248a0 case 8（fairness）弱反感（-25～-11）；價值觀清單子句
+finds the idea of fair-dealing foolish and cheats when he finds it profitable	覺得公平交易很蠢並會在有利可圖時耍詐	觉得公平交易很蠢并会在有利可图时耍诈		FUN_140e248a0 case 8（fairness）強反感（-40～-26）；價值觀清單子句；三種代名詞各一條，中文不用代名詞
+finds the idea of fair-dealing foolish and cheats when she finds it profitable	覺得公平交易很蠢並會在有利可圖時耍詐	觉得公平交易很蠢并会在有利可图时耍诈		FUN_140e248a0 case 8（fairness）強反感（-40～-26）；價值觀清單子句；三種代名詞各一條，中文不用代名詞
+finds the idea of fair-dealing foolish and cheats when it finds it profitable	覺得公平交易很蠢並會在有利可圖時耍詐	觉得公平交易很蠢并会在有利可图时耍诈		FUN_140e248a0 case 8（fairness）強反感（-40～-26）；價值觀清單子句；三種代名詞各一條，中文不用代名詞
+is disgusted by the idea of fairness and will freely cheat anybody at any time	厭惡公平這種觀念並隨時會毫無顧忌地欺騙任何人	厌恶公平这种观念并随时会毫无顾忌地欺骗任何人		FUN_140e248a0 case 8（fairness）最反感（<-40）；價值觀清單子句
+views decorum as a high ideal and is deeply offended by those that fail to maintain it	視禮節為崇高理想並對失禮的人深感冒犯	视礼节为崇高理想并对失礼的人深感冒犯		FUN_140e248a0 case 9（decorum）最高（>40）；價值觀清單子句
+greatly respects those that observe decorum and maintain their dignity	非常敬重恪守禮節並保持尊嚴的人	非常敬重恪守礼节并保持尊严的人		FUN_140e248a0 case 9（decorum）強（26～40）；價值觀清單子句
+values decorum, dignity and proper behavior	重視禮節與尊嚴並講究舉止得體	重视礼节与尊严并讲究举止得体		FUN_140e248a0 case 9（decorum）中（11～25）；價值觀清單子句
+doesn't care very much about decorum	不太在乎禮節	不太在乎礼节		FUN_140e248a0 case 9（decorum）中立（-10～10）；價值觀清單子句
+finds maintaining decorum a silly, fumbling waste of time	覺得講究禮節是愚蠢笨拙又浪費時間的事	觉得讲究礼节是愚蠢笨拙又浪费时间的事		FUN_140e248a0 case 9（decorum）弱反感（-25～-11）；價值觀清單子句
+sees those that attempt to maintain dignified and proper behavior as vain and offensive	認為刻意保持端莊得體的人既虛榮又討厭	认为刻意保持端庄得体的人既虚荣又讨厌		FUN_140e248a0 case 9（decorum）強反感（-40～-26）；價值觀清單子句
+is affronted by the whole notion of maintaining decorum and finds so-called dignified people disgusting	對講究禮節這套觀念深感冒犯並厭惡所謂端莊的人	对讲究礼节这套观念深感冒犯并厌恶所谓端庄的人		FUN_140e248a0 case 9（decorum）最反感（<-40）；價值觀清單子句
+holds the maintenance of tradition as one of the highest ideals	將維護傳統視為最崇高的理想之一	将维护传统视为最崇高的理想之一		FUN_140e248a0 case 10（tradition）最高（>40）；價值觀清單子句
+is a firm believer in the value of tradition	堅信傳統的價值	坚信传统的价值		FUN_140e248a0 case 10（tradition）強（26～40）；價值觀清單子句
+values tradition	重視傳統	重视传统		FUN_140e248a0 case 10（tradition）中（11～25）；價值觀清單子句
+doesn't have any strong feelings about tradition	對傳統沒有什麼強烈的看法	对传统没有什么强烈的看法		FUN_140e248a0 case 10（tradition）中立（-10～10）；價值觀清單子句
+disregards tradition	漠視傳統	漠视传统		FUN_140e248a0 case 10（tradition）弱反感（-25～-11）；價值觀清單子句
+finds the following of tradition foolish and limiting	覺得遵循傳統既愚蠢又綁手綁腳	觉得遵循传统既愚蠢又束手束脚		FUN_140e248a0 case 10（tradition）強反感（-40～-26）；價值觀清單子句
+is disgusted by tradition and would flout any he encounters if given a chance	厭惡傳統並一有機會就違背遇到的任何傳統	厌恶传统并一有机会就违背遇到的任何传统		FUN_140e248a0 case 10（tradition）最反感（<-40）；價值觀清單子句；三種代名詞各一條，中文不用代名詞
+is disgusted by tradition and would flout any she encounters if given a chance	厭惡傳統並一有機會就違背遇到的任何傳統	厌恶传统并一有机会就违背遇到的任何传统		FUN_140e248a0 case 10（tradition）最反感（<-40）；價值觀清單子句；三種代名詞各一條，中文不用代名詞
+is disgusted by tradition and would flout any it encounters if given a chance	厭惡傳統並一有機會就違背遇到的任何傳統	厌恶传统并一有机会就违背遇到的任何传统		FUN_140e248a0 case 10（tradition）最反感（<-40）；價值觀清單子句；三種代名詞各一條，中文不用代名詞
+believes that the creation and appreciation of artwork is one of the highest ideals	認為創作與欣賞藝術是最崇高的理想之一	认为创作与欣赏艺术是最崇高的理想之一		FUN_140e248a0 case 11（art）最高（>40）；價值觀清單子句
+greatly respects artists and their works	非常敬重藝術家及其作品	非常敬重艺术家及其作品		FUN_140e248a0 case 11（art）強（26～40）；價值觀清單子句
+values artwork	重視藝術	重视艺术		FUN_140e248a0 case 11（art）中（11～25）；價值觀清單子句
+doesn't care about art one way or another	對藝術無所謂	对艺术无所谓		FUN_140e248a0 case 11（art）中立（-10～10）；價值觀清單子句
+finds artwork boring	覺得藝術很無聊	觉得艺术很无聊		FUN_140e248a0 case 11（art）弱反感（-25～-11）；價值觀清單子句
+sees the whole pursuit of art as silly	認為追求藝術這件事很可笑	认为追求艺术这件事很可笑		FUN_140e248a0 case 11（art）強反感（-40～-26）；價值觀清單子句
+finds art offensive and would have it destroyed whenever possible	厭惡藝術並一有機會就想把它毀掉	厌恶艺术并一有机会就想把它毁掉		FUN_140e248a0 case 11（art）最反感（<-40）；價值觀清單子句
+places cooperation as one of the highest ideals	將合作視為最崇高的理想之一	将合作视为最崇高的理想之一		FUN_140e248a0 case 12（cooperation）最高（>40）；價值觀清單子句
+sees cooperation as very important in life	認為合作是人生中非常重要的事	认为合作是人生中非常重要的事		FUN_140e248a0 case 12（cooperation）強（26～40）；價值觀清單子句
+values cooperation	重視合作	重视合作		FUN_140e248a0 case 12（cooperation）中（11～25）；價值觀清單子句
+doesn't see cooperation as valuable	不覺得合作有什麼價值	不觉得合作有什么价值		FUN_140e248a0 case 12（cooperation）中立（-10～10）；價值觀清單子句
+dislikes cooperation	不喜歡合作	不喜欢合作		FUN_140e248a0 case 12（cooperation）弱反感（-25～-11）；價值觀清單子句
+views cooperation as a low ideal not worthy of any respect	認為合作是不值得任何尊重的低下理念	认为合作是不值得任何尊重的低下理念		FUN_140e248a0 case 12（cooperation）強反感（-40～-26）；價值觀清單子句
+is thoroughly disgusted by cooperation	對合作深惡痛絕	对合作深恶痛绝		FUN_140e248a0 case 12（cooperation）最反感（<-40）；價值觀清單子句
+believes that freedom and independence are completely non-negotiable and would fight to defend them	認為自由與獨立絕無妥協餘地並願為捍衛它們而戰	认为自由与独立绝无妥协余地并愿为捍卫它们而战		FUN_140e248a0 case 13（independence）最高（>40）；價值觀清單子句
+treasures independence	珍視獨立	珍视独立		FUN_140e248a0 case 13（independence）強（26～40）；價值觀清單子句
+values independence	重視獨立	重视独立		FUN_140e248a0 case 13（independence）中（11～25）；價值觀清單子句
+doesn't really value independence one way or another	對獨立無所謂	对独立无所谓		FUN_140e248a0 case 13（independence）中立（-10～10）；價值觀清單子句
+finds the ideas of independence and freedom somewhat foolish	覺得獨立與自由的理念有點愚蠢	觉得独立与自由的理念有点愚蠢		FUN_140e248a0 case 13（independence）弱反感（-25～-11）；價值觀清單子句
+sees freedom and independence as completely worthless	認為自由與獨立毫無價值	认为自由与独立毫无价值		FUN_140e248a0 case 13（independence）強反感（-40～-26）；價值觀清單子句
+hates freedom and would crush the independent spirit wherever it is found	痛恨自由並想粉碎所見的一切獨立精神	痛恨自由并想粉碎所见的一切独立精神		FUN_140e248a0 case 13（independence）最反感（<-40）；價值觀清單子句
+views any show of emotion as offensive	認為任何情緒外露都令人反感	认为任何情绪外露都令人反感		FUN_140e248a0 case 14（stoicism）最高（>40）；價值觀清單子句
+thinks it is of the utmost importance to present a bold face and never grouse, complain or even show emotion	認為務必保持堅毅神色並絕不抱怨甚至流露情緒	认为务必保持坚毅神色并绝不抱怨甚至流露情绪		FUN_140e248a0 case 14（stoicism）強（26～40）；價值觀清單子句
+believes it is important to conceal emotions and refrain from complaining	認為隱藏情緒並且不抱怨很重要	认为隐藏情绪并且不抱怨很重要		FUN_140e248a0 case 14（stoicism）中（11～25）；價值觀清單子句
+doesn't see much value in being stoic	不覺得內斂有多大價值	不觉得内敛有多大价值		FUN_140e248a0 case 14（stoicism）中立（-10～10）；價值觀清單子句
+sees no value in holding back complaints and concealing emotions	認為忍住抱怨與隱藏情緒毫無意義	认为忍住抱怨与隐藏情绪毫无意义		FUN_140e248a0 case 14（stoicism）弱反感（-25～-11）；價值觀清單子句
+feels that those who attempt to conceal their emotions are vain and foolish	認為刻意隱藏情緒的人既虛榮又愚蠢	认为刻意隐藏情绪的人既虚荣又愚蠢		FUN_140e248a0 case 14（stoicism）強反感（-40～-26）；價值觀清單子句
+sees concealment of emotions as a betrayal and tries his best never to associate with such secretive fools	把隱藏情緒視為背叛並盡量不和這種遮遮掩掩的蠢人來往	把隐藏情绪视为背叛并尽量不和这种遮遮掩掩的蠢人来往		FUN_140e248a0 case 14（stoicism）最反感（<-40）；價值觀清單子句；三種代名詞各一條，中文不用代名詞
+sees concealment of emotions as a betrayal and tries her best never to associate with such secretive fools	把隱藏情緒視為背叛並盡量不和這種遮遮掩掩的蠢人來往	把隐藏情绪视为背叛并尽量不和这种遮遮掩掩的蠢人来往		FUN_140e248a0 case 14（stoicism）最反感（<-40）；價值觀清單子句；三種代名詞各一條，中文不用代名詞
+sees concealment of emotions as a betrayal and tries its best never to associate with such secretive fools	把隱藏情緒視為背叛並盡量不和這種遮遮掩掩的蠢人來往	把隐藏情绪视为背叛并尽量不和这种遮遮掩掩的蠢人来往		FUN_140e248a0 case 14（stoicism）最反感（<-40）；價值觀清單子句；三種代名詞各一條，中文不用代名詞
+feels that introspection and all forms of self-examination are the keys to a good life and worthy of respect	認為內省與各種自我審視是美好人生的關鍵並值得尊敬	认为内省与各种自我审视是美好人生的关键并值得尊敬		FUN_140e248a0 case 15（introspection）最高（>40）；價值觀清單子句
+deeply values introspection	非常重視內省	非常重视内省		FUN_140e248a0 case 15（introspection）強（26～40）；價值觀清單子句
+sees introspection as important	認為內省很重要	认为内省很重要		FUN_140e248a0 case 15（introspection）中（11～25）；價值觀清單子句
+doesn't really see the value in self-examination	不太明白自我審視有什麼價值	不太明白自我审视有什么价值		FUN_140e248a0 case 15（introspection）中立（-10～10）；價值觀清單子句
+finds introspection to be a waste of time	覺得內省是浪費時間	觉得内省是浪费时间		FUN_140e248a0 case 15（introspection）弱反感（-25～-11）；價值觀清單子句
+thinks that introspection is valueless and those that waste time in self-examination are deluded fools	認為內省毫無價值而浪費時間自我審視的人都是執迷不悟的蠢蛋	认为内省毫无价值而浪费时间自我审视的人都是执迷不悟的蠢蛋		FUN_140e248a0 case 15（introspection）強反感（-40～-26）；價值觀清單子句
+finds the whole idea of introspection completely offensive and contrary to the ideals of a life well-lived	覺得內省這整件事令人極度反感並違背美好人生的理想	觉得内省这整件事令人极度反感并违背美好人生的理想		FUN_140e248a0 case 15（introspection）最反感（<-40）；價值觀清單子句
+believes that self-mastery and the denial of impulses are of the highest ideals	認為自我克制與壓抑衝動是最崇高的理想	认为自我克制与压抑冲动是最崇高的理想		FUN_140e248a0 case 16（self-control）最高（>40）；價值觀清單子句
+finds moderation and self-control to be very important	認為節制與自制非常重要	认为节制与自制非常重要		FUN_140e248a0 case 16（self-control）強（26～40）；價值觀清單子句
+values self-control	重視自制	重视自制		FUN_140e248a0 case 16（self-control）中（11～25）；價值觀清單子句
+doesn't particularly value self-control	不怎麼重視自制	不怎么重视自制		FUN_140e248a0 case 16（self-control）中立（-10～10）；價值觀清單子句
+finds those that deny their impulses somewhat stiff	覺得壓抑衝動的人有點古板	觉得压抑冲动的人有点古板		FUN_140e248a0 case 16（self-control）弱反感（-25～-11）；價值觀清單子句
+sees the denial of impulses as a vain and foolish pursuit	認為壓抑衝動是徒勞又愚蠢的事	认为压抑冲动是徒劳又愚蠢的事		FUN_140e248a0 case 16（self-control）強反感（-40～-26）；價值觀清單子句
+has abandoned any attempt at self-control and finds the whole concept deeply offensive	已放棄任何自制並對這整個觀念深感反感	已放弃任何自制并对这整个观念深感反感		FUN_140e248a0 case 16（self-control）最反感（<-40）；價值觀清單子句
+views tranquility as one of the highest ideals	將寧靜視為最崇高的理想之一	将宁静视为最崇高的理想之一		FUN_140e248a0 case 17（tranquility）最高（>40）；價值觀清單子句
+strongly values tranquility and quiet	非常重視平靜安寧	非常重视平静安宁		FUN_140e248a0 case 17（tranquility）強（26～40）；價值觀清單子句
+values tranquility and a peaceful day	重視寧靜平和的日子	重视宁静平和的日子		FUN_140e248a0 case 17（tranquility）中（11～25）；價值觀清單子句
+doesn't have a preference between tranquility and tumult	對寧靜或喧鬧沒有偏好	对宁静或喧闹没有偏好		FUN_140e248a0 case 17（tranquility）中立（-10～10）；價值觀清單子句
+prefers a noisy, bustling life to boring days without activity	偏好熱鬧喧騰的生活而不是無所事事的無聊日子	偏好热闹喧腾的生活而不是无所事事的无聊日子		FUN_140e248a0 case 17（tranquility）弱反感（-25～-11）；價值觀清單子句
+is greatly disturbed by quiet and a peaceful existence	對安靜平和的生活極為不安	对安静平和的生活极为不安		FUN_140e248a0 case 17（tranquility）強反感（-40～-26）；價值觀清單子句
+is disgusted by tranquility and would that the world would constantly churn with noise and activity	厭惡寧靜並巴不得世界永遠喧鬧不休	厌恶宁静并巴不得世界永远喧闹不休		FUN_140e248a0 case 17（tranquility）最反感（<-40）；價值觀清單子句
+would have the world operate in complete harmony without the least bit of strife or disorder	希望世界完全和諧運作而沒有一絲紛爭或混亂	希望世界完全和谐运转而没有一丝纷争或混乱		FUN_140e248a0 case 18（harmony）最高（>40）；價值觀清單子句
+strongly believes that a peaceful and ordered society without dissent is best	堅信沒有異議的和平有序社會是最好的	坚信没有异议的和平有序社会是最好的		FUN_140e248a0 case 18（harmony）強（26～40）；價值觀清單子句
+values a harmonious existence	重視和諧的生活	重视和谐的生活		FUN_140e248a0 case 18（harmony）中（11～25）；價值觀清單子句
+sees equal parts of harmony and discord as part of life	認為和諧與紛爭各半本來就是人生的一部分	认为和谐与纷争各半本来就是人生的一部分		FUN_140e248a0 case 18（harmony）中立（-10～10）；價值觀清單子句
+doesn't respect a society that has settled into harmony without debate and strife	不尊重沒有辯論與衝突而安於和諧的社會	不尊重没有辩论与冲突而安于和谐的社会		FUN_140e248a0 case 18（harmony）弱反感（-25～-11）；價值觀清單子句
+can't fathom why anyone would want to live in an orderly and harmonious society	無法理解為何有人想活在井然有序的和諧社會	无法理解为何有人想活在井然有序的和谐社会		FUN_140e248a0 case 18（harmony）強反感（-40～-26）；價值觀清單子句
+believes deeply that chaos and disorder are the truest expressions of life and would disrupt harmony wherever it is found	深信混亂與無序才是生命最真實的展現並會破壞所見的一切和諧	深信混乱与无序才是生命最真实的体现并会破坏所见的一切和谐		FUN_140e248a0 case 18（harmony）最反感（<-40）；價值觀清單子句
+believes that little is better in life than a good party	認為人生中沒什麼比一場好派對更棒	认为人生中没什么比一场好派对更棒		FUN_140e248a0 case 19（merriment）最高（>40）；價值觀清單子句
+truly values merrymaking and parties	非常重視歡樂與派對	非常重视欢乐与派对		FUN_140e248a0 case 19（merriment）強（26～40）；價值觀清單子句
+finds merrymaking and partying worthwhile activities	認為歡聚作樂很有意義	认为欢聚作乐很有意义		FUN_140e248a0 case 19（merriment）中（11～25）；價值觀清單子句
+doesn't really value merrymaking	不太看重歡樂	不太看重欢乐		FUN_140e248a0 case 19（merriment）中立（-10～10）；價值觀清單子句
+sees merrymaking as a waste	認為歡聚作樂是浪費時間	认为欢聚作乐是浪费时间		FUN_140e248a0 case 19（merriment）弱反感（-25～-11）；價值觀清單子句
+is disgusted by merrymakers	厭惡尋歡作樂的人	厌恶寻欢作乐的人		FUN_140e248a0 case 19（merriment）強反感（-40～-26）；價值觀清單子句
+is appalled by merrymaking, parties and other such worthless activities	對作樂與派對之類毫無價值的活動深感反感	对作乐与派对之类毫无价值的活动深感反感		FUN_140e248a0 case 19（merriment）最反感（<-40）；價值觀清單子句
+holds craftsdwarfship to be of the highest ideals and celebrates talented artisans and their masterworks	視工藝為最崇高的理想並讚揚出色的工匠及其傑作	视工艺为最崇高的理想并赞扬出色的工匠及其杰作		FUN_140e248a0 case 20（craftsmanship）最高（>40）；價值觀清單子句；craftsdwarfship 是矮人的 PROFESSION_NAME CRAFTSMAN＋ship，其他種族 craftsmanship
+holds craftsmanship to be of the highest ideals and celebrates talented artisans and their masterworks	視工藝為最崇高的理想並讚揚出色的工匠及其傑作	视工艺为最崇高的理想并赞扬出色的工匠及其杰作		FUN_140e248a0 case 20（craftsmanship）最高（>40）；價值觀清單子句；craftsdwarfship 是矮人的 PROFESSION_NAME CRAFTSMAN＋ship，其他種族 craftsmanship
+has a great deal of respect for worthy craftsdwarfship	非常尊重精良的工藝	非常尊重精良的工艺		FUN_140e248a0 case 20（craftsmanship）強（26～40）；價值觀清單子句；craftsdwarfship 是矮人的 PROFESSION_NAME CRAFTSMAN＋ship，其他種族 craftsmanship
+has a great deal of respect for worthy craftsmanship	非常尊重精良的工藝	非常尊重精良的工艺		FUN_140e248a0 case 20（craftsmanship）強（26～40）；價值觀清單子句；craftsdwarfship 是矮人的 PROFESSION_NAME CRAFTSMAN＋ship，其他種族 craftsmanship
+values good craftsdwarfship	重視優良工藝	重视优良工艺		FUN_140e248a0 case 20（craftsmanship）中（11～25）；價值觀清單子句；craftsdwarfship 是矮人的 PROFESSION_NAME CRAFTSMAN＋ship，其他種族 craftsmanship
+values good craftsmanship	重視優良工藝	重视优良工艺		FUN_140e248a0 case 20（craftsmanship）中（11～25）；價值觀清單子句；craftsdwarfship 是矮人的 PROFESSION_NAME CRAFTSMAN＋ship，其他種族 craftsmanship
+doesn't particularly care about craftsdwarfship	不怎麼在乎工藝	不怎么在乎工艺		FUN_140e248a0 case 20（craftsmanship）中立（-10～10）；價值觀清單子句；craftsdwarfship 是矮人的 PROFESSION_NAME CRAFTSMAN＋ship，其他種族 craftsmanship
+doesn't particularly care about craftsmanship	不怎麼在乎工藝	不怎么在乎工艺		FUN_140e248a0 case 20（craftsmanship）中立（-10～10）；價值觀清單子句；craftsdwarfship 是矮人的 PROFESSION_NAME CRAFTSMAN＋ship，其他種族 craftsmanship
+considers craftsdwarfship to be relatively worthless	認為工藝沒什麼價值	认为工艺没什么价值		FUN_140e248a0 case 20（craftsmanship）弱反感（-25～-11）；價值觀清單子句；craftsdwarfship 是矮人的 PROFESSION_NAME CRAFTSMAN＋ship，其他種族 craftsmanship
+considers craftsmanship to be relatively worthless	認為工藝沒什麼價值	认为工艺没什么价值		FUN_140e248a0 case 20（craftsmanship）弱反感（-25～-11）；價值觀清單子句；craftsdwarfship 是矮人的 PROFESSION_NAME CRAFTSMAN＋ship，其他種族 craftsmanship
+sees the pursuit of good craftsdwarfship as a total waste	認為追求優良工藝完全是浪費	认为追求优良工艺完全是浪费		FUN_140e248a0 case 20（craftsmanship）強反感（-40～-26）；價值觀清單子句；craftsdwarfship 是矮人的 PROFESSION_NAME CRAFTSMAN＋ship，其他種族 craftsmanship
+sees the pursuit of good craftsmanship as a total waste	認為追求優良工藝完全是浪費	认为追求优良工艺完全是浪费		FUN_140e248a0 case 20（craftsmanship）強反感（-40～-26）；價值觀清單子句；craftsdwarfship 是矮人的 PROFESSION_NAME CRAFTSMAN＋ship，其他種族 craftsmanship
+views craftsdwarfship with disgust and would desecrate a so-called masterwork or two if he could get away with it	厭惡工藝並會在能逃過懲罰時糟蹋一兩件所謂的傑作	厌恶工艺并会在能逃过惩罚时糟蹋一两件所谓的杰作		FUN_140e248a0 case 20（craftsmanship）最反感（<-40）；價值觀清單子句；craftsdwarfship 是矮人的 PROFESSION_NAME CRAFTSMAN＋ship，其他種族 craftsmanship；三種代名詞各一條，中文不用代名詞
+views craftsdwarfship with disgust and would desecrate a so-called masterwork or two if she could get away with it	厭惡工藝並會在能逃過懲罰時糟蹋一兩件所謂的傑作	厌恶工艺并会在能逃过惩罚时糟蹋一两件所谓的杰作		FUN_140e248a0 case 20（craftsmanship）最反感（<-40）；價值觀清單子句；craftsdwarfship 是矮人的 PROFESSION_NAME CRAFTSMAN＋ship，其他種族 craftsmanship；三種代名詞各一條，中文不用代名詞
+views craftsdwarfship with disgust and would desecrate a so-called masterwork or two if it could get away with it	厭惡工藝並會在能逃過懲罰時糟蹋一兩件所謂的傑作	厌恶工艺并会在能逃过惩罚时糟蹋一两件所谓的杰作		FUN_140e248a0 case 20（craftsmanship）最反感（<-40）；價值觀清單子句；craftsdwarfship 是矮人的 PROFESSION_NAME CRAFTSMAN＋ship，其他種族 craftsmanship；三種代名詞各一條，中文不用代名詞
+views craftsmanship with disgust and would desecrate a so-called masterwork or two if he could get away with it	厭惡工藝並會在能逃過懲罰時糟蹋一兩件所謂的傑作	厌恶工艺并会在能逃过惩罚时糟蹋一两件所谓的杰作		FUN_140e248a0 case 20（craftsmanship）最反感（<-40）；價值觀清單子句；craftsdwarfship 是矮人的 PROFESSION_NAME CRAFTSMAN＋ship，其他種族 craftsmanship；三種代名詞各一條，中文不用代名詞
+views craftsmanship with disgust and would desecrate a so-called masterwork or two if she could get away with it	厭惡工藝並會在能逃過懲罰時糟蹋一兩件所謂的傑作	厌恶工艺并会在能逃过惩罚时糟蹋一两件所谓的杰作		FUN_140e248a0 case 20（craftsmanship）最反感（<-40）；價值觀清單子句；craftsdwarfship 是矮人的 PROFESSION_NAME CRAFTSMAN＋ship，其他種族 craftsmanship；三種代名詞各一條，中文不用代名詞
+views craftsmanship with disgust and would desecrate a so-called masterwork or two if it could get away with it	厭惡工藝並會在能逃過懲罰時糟蹋一兩件所謂的傑作	厌恶工艺并会在能逃过惩罚时糟蹋一两件所谓的杰作		FUN_140e248a0 case 20（craftsmanship）最反感（<-40）；價值觀清單子句；craftsdwarfship 是矮人的 PROFESSION_NAME CRAFTSMAN＋ship，其他種族 craftsmanship；三種代名詞各一條，中文不用代名詞
+believes that martial prowess defines the good character of an individual	認為武藝決定了一個人的品格	认为武艺决定了一个人的品格		FUN_140e248a0 case 21（martial prowess）最高（>40）；價值觀清單子句
+deeply respects skill at arms	深深敬重武藝	深深敬重武艺		FUN_140e248a0 case 21（martial prowess）強（26～40）；價值觀清單子句
+values martial prowess	重視武藝	重视武艺		FUN_140e248a0 case 21（martial prowess）中（11～25）；價值觀清單子句
+does not really value skills related to fighting	不太看重戰鬥相關的技能	不太看重战斗相关的技能		FUN_140e248a0 case 21（martial prowess）中立（-10～10）；價值觀清單子句
+finds those that develop skill with weapons and fighting distasteful	厭惡鑽研兵器與格鬥技巧的人	厌恶钻研兵器与格斗技巧的人		FUN_140e248a0 case 21（martial prowess）弱反感（-25～-11）；價值觀清單子句
+thinks that the pursuit of the skills of warfare and fighting is a low pursuit indeed	認為追求戰爭與格鬥技巧實在是很低下的事	认为追求战争与格斗技巧实在是很低下的事		FUN_140e248a0 case 21（martial prowess）強反感（-40～-26）；價值觀清單子句
+abhors those that pursue the mastery of weapons and skill with fighting	痛恨鑽研兵器與精通格鬥的人	痛恨钻研兵器与精通格斗的人		FUN_140e248a0 case 21（martial prowess）最反感（<-40）；價值觀清單子句
+believes that the mastery of a skill is one of the highest pursuits	認為精通一門技藝是最崇高的追求之一	认为精通一门技艺是最崇高的追求之一		FUN_140e248a0 case 22（skill）最高（>40）；價值觀清單子句
+really respects those that take the time to master a skill	非常敬重花時間精通技藝的人	非常敬重花时间精通技艺的人		FUN_140e248a0 case 22（skill）強（26～40）；價值觀清單子句
+respects the development of skill	尊重技藝的磨練	尊重技艺的磨练		FUN_140e248a0 case 22（skill）中（11～25）；價值觀清單子句
+doesn't care if others take the time to master skills	不在乎別人是否花時間精通技藝	不在乎别人是否花时间精通技艺		FUN_140e248a0 case 22（skill）中立（-10～10）；價值觀清單子句
+finds the pursuit of skill mastery off-putting	對追求精通技藝感到反感	对追求精通技艺感到反感		FUN_140e248a0 case 22（skill）弱反感（-25～-11）；價值觀清單子句
+believes that the time taken to master a skill is a horrible waste	認為花時間精通技藝是可怕的浪費	认为花时间精通技艺是可怕的浪费		FUN_140e248a0 case 22（skill）強反感（-40～-26）；價值觀清單子句
+sees the whole idea of taking time to master a skill as appalling	覺得花時間精通技藝這整件事令人厭惡	觉得花时间精通技艺这整件事令人厌恶		FUN_140e248a0 case 22（skill）最反感（<-40）；價值觀清單子句
+believes that hard work is one of the highest ideals and a key to the good life	認為勤奮是最崇高的理想之一並且是美好人生的關鍵	认为勤奋是最崇高的理想之一并且是美好人生的关键		FUN_140e248a0 case 23（hard work）最高（>40）；價值觀清單子句
+deeply respects those that work hard at their labors	深深敬重勤奮工作的人	深深敬重勤奋工作的人		FUN_140e248a0 case 23（hard work）強（26～40）；價值觀清單子句
+values hard work	重視勤勞	重视勤劳		FUN_140e248a0 case 23（hard work）中（11～25）；價值觀清單子句
+doesn't really see the point of working hard	不太明白努力工作有什麼意義	不太明白努力工作有什么意义		FUN_140e248a0 case 23（hard work）中立（-10～10）；價值觀清單子句
+sees working hard as a foolish waste of time	認為努力工作是愚蠢又浪費時間的事	认为努力工作是愚蠢又浪费时间的事		FUN_140e248a0 case 23（hard work）弱反感（-25～-11）；價值觀清單子句
+thinks working hard is an abject idiocy	認為努力工作蠢到極點	认为努力工作蠢到极点		FUN_140e248a0 case 23（hard work）強反感（-40～-26）；價值觀清單子句
+finds the proposition that one should work hard in life utterly abhorrent	對「人生就該努力工作」這種主張深惡痛絕	对“人生就该努力工作”这种主张深恶痛绝		FUN_140e248a0 case 23（hard work）最反感（<-40）；價值觀清單子句
+finds sacrifice to be one of the highest ideals	認為犧牲奉獻是最崇高的理想之一	认为牺牲奉献是最崇高的理想之一		FUN_140e248a0 case 24（sacrifice）最高（>40）；價值觀清單子句
+believes that those who sacrifice for others should be deeply respected	認為為他人犧牲的人應受到深深的敬重	认为为他人牺牲的人应受到深深的敬重		FUN_140e248a0 case 24（sacrifice）強（26～40）；價值觀清單子句
+values sacrifice	重視犧牲奉獻	重视牺牲奉献		FUN_140e248a0 case 24（sacrifice）中（11～25）；價值觀清單子句
+doesn't particularly respect sacrifice as a virtue	不怎麼把犧牲當成美德	不怎么把牺牲当成美德		FUN_140e248a0 case 24（sacrifice）中立（-10～10）；價值觀清單子句
+sees sacrifice as wasteful and foolish	認為犧牲既浪費又愚蠢	认为牺牲既浪费又愚蠢		FUN_140e248a0 case 24（sacrifice）弱反感（-25～-11）；價值觀清單子句
+finds sacrifice to be the height of folly	覺得犧牲是愚蠢至極的事	觉得牺牲是愚蠢至极的事		FUN_140e248a0 case 24（sacrifice）強反感（-40～-26）；價值觀清單子句
+thinks that the entire concept of sacrifice for others is truly disgusting	認為為他人犧牲這整個觀念實在令人作嘔	认为为他人牺牲这整个观念实在令人作呕		FUN_140e248a0 case 24（sacrifice）最反感（<-40）；價值觀清單子句
+holds the idea of competition among the most important and would encourage it wherever possible	將競爭視為最重要的事之一並會盡可能鼓勵競爭	将竞争视为最重要的事之一并会尽可能鼓励竞争		FUN_140e248a0 case 25（competition）最高（>40）；價值觀清單子句
+views competition as a crucial driving force in the world	認為競爭是推動世界的關鍵力量	认为竞争是推动世界的关键力量		FUN_140e248a0 case 25（competition）強（26～40）；價值觀清單子句
+sees competition as reasonably important	認為競爭還算重要	认为竞争还算重要		FUN_140e248a0 case 25（competition）中（11～25）；價值觀清單子句
+doesn't have strong views on competition	對競爭沒有什麼強烈的看法	对竞争没有什么强烈的看法		FUN_140e248a0 case 25（competition）中立（-10～10）；價值觀清單子句
+sees competition as wasteful and silly	認為競爭既浪費又可笑	认为竞争既浪费又可笑		FUN_140e248a0 case 25（competition）弱反感（-25～-11）；價值觀清單子句
+deeply dislikes competition	非常討厭競爭	非常讨厌竞争		FUN_140e248a0 case 25（competition）強反感（-40～-26）；價值觀清單子句
+finds the very idea of competition obscene	覺得光是競爭這個念頭就令人作嘔	觉得光是竞争这个念头就令人作呕		FUN_140e248a0 case 25（competition）最反感（<-40）；價值觀清單子句
+believes that perseverance is one of the greatest qualities somebody can have	認為毅力是一個人所能擁有的最佳特質之一	认为毅力是一个人所能拥有的最佳品质之一		FUN_140e248a0 case 26（perseverance）最高（>40）；價值觀清單子句
+greatly respects individuals that persevere through their trials and labors	非常敬重在考驗與辛勞中堅持不懈的人	非常敬重在考验与辛劳中坚持不懈的人		FUN_140e248a0 case 26（perseverance）強（26～40）；價值觀清單子句
+respects perseverance	尊重毅力	尊重毅力		FUN_140e248a0 case 26（perseverance）中（11～25）；價值觀清單子句
+doesn't think much about the idea of perseverance	不太在意毅力這回事	不太在意毅力这回事		FUN_140e248a0 case 26（perseverance）中立（-10～10）；價值觀清單子句
+sees perseverance in the face of adversity as bull-headed and foolish	認為在逆境中展現毅力是固執又愚蠢的事	认为在逆境中展现毅力是固执又愚蠢的事		FUN_140e248a0 case 26（perseverance）弱反感（-25～-11）；價值觀清單子句
+thinks there is something deeply wrong with people that persevere through adversity	認為在逆境中堅持不懈的人有很大的問題	认为在逆境中坚持不懈的人有很大的问题		FUN_140e248a0 case 26（perseverance）強反感（-40～-26）；價值觀清單子句
+finds the notion that one would persevere through adversity completely abhorrent	對「在逆境中堅持不懈」這種想法深惡痛絕	对“在逆境中坚持不懈”这种想法深恶痛绝		FUN_140e248a0 case 26（perseverance）最反感（<-40）；價值觀清單子句
+believes that it would be a fine thing if all time were leisure time	認為要是所有時間都是閒暇就太好了	认为要是所有时间都是闲暇就太好了		FUN_140e248a0 case 27（leisure）最高（>40）；價值觀清單子句
+treasures leisure time and thinks it is very important in life	珍惜閒暇並認為那是人生中非常重要的事	珍惜闲暇并认为那是人生中非常重要的事		FUN_140e248a0 case 27（leisure）強（26～40）；價值觀清單子句
+values leisure time	重視閒暇	重视闲暇		FUN_140e248a0 case 27（leisure）中（11～25）；價值觀清單子句
+doesn't think one way or the other about leisure time	對閒暇無所謂	对闲暇无所谓		FUN_140e248a0 case 27（leisure）中立（-10～10）；價值觀清單子句
+finds leisure time wasteful	覺得閒暇是浪費時間	觉得闲暇是浪费时间		FUN_140e248a0 case 27（leisure）弱反感（-25～-11）；價值觀清單子句
+is offended by leisure time and leisurely living	對閒暇與悠閒度日感到反感	对闲暇与悠闲度日感到反感		FUN_140e248a0 case 27（leisure）強反感（-40～-26）；價值觀清單子句
+believes that those that take leisure time are evil and finds the whole idea disgusting	認為享受閒暇的人是邪惡的並覺得這整個想法令人作嘔	认为享受闲暇的人是邪恶的并觉得这整个想法令人作呕		FUN_140e248a0 case 27（leisure）最反感（<-40）；價值觀清單子句
+sees engaging in commerce as a high ideal in life	認為從事商業是人生的崇高理想	认为从事商业是人生的崇高理想		FUN_140e248a0 case 28（commerce）最高（>40）；價值觀清單子句
+really respects commerce and those that engage in trade	非常尊重商業與從事貿易的人	非常尊重商业与从事贸易的人		FUN_140e248a0 case 28（commerce）強（26～40）；價值觀清單子句
+respects commerce	尊重商業	尊重商业		FUN_140e248a0 case 28（commerce）中（11～25）；價值觀清單子句
+doesn't particularly respect commerce	不怎麼尊重商業	不怎么尊重商业		FUN_140e248a0 case 28（commerce）中立（-10～10）；價值觀清單子句
+is somewhat put off by trade and commerce	對貿易與商業有些反感	对贸易与商业有些反感		FUN_140e248a0 case 28（commerce）弱反感（-25～-11）；價值觀清單子句
+finds those that engage in trade and commerce to be fairly disgusting	覺得從事貿易與商業的人相當令人作嘔	觉得从事贸易与商业的人相当令人作呕		FUN_140e248a0 case 28（commerce）強反感（-40～-26）；價值觀清單子句
+holds the view that commerce is a vile obscenity	認為商業是卑劣下流的勾當	认为商业是卑劣下流的勾当		FUN_140e248a0 case 28（commerce）最反感（<-40）；價值觀清單子句
+sees romance as one of the highest ideals	將浪漫愛情視為最崇高的理想之一	将浪漫爱情视为最崇高的理想之一		FUN_140e248a0 case 29（romance）最高（>40）；價值觀清單子句
+thinks romance is very important in life	認為浪漫愛情是人生中非常重要的事	认为浪漫爱情是人生中非常重要的事		FUN_140e248a0 case 29（romance）強（26～40）；價值觀清單子句
+values romance	重視浪漫	重视浪漫		FUN_140e248a0 case 29（romance）中（11～25）；價值觀清單子句
+doesn't care one way or the other about romance	對浪漫愛情無所謂	对浪漫爱情无所谓		FUN_140e248a0 case 29（romance）中立（-10～10）；價值觀清單子句
+finds romance distasteful	覺得浪漫愛情令人反感	觉得浪漫爱情令人反感		FUN_140e248a0 case 29（romance）弱反感（-25～-11）；價值觀清單子句
+is somewhat disgusted by romance	對浪漫愛情有些嫌惡	对浪漫爱情有些嫌恶		FUN_140e248a0 case 29（romance）強反感（-40～-26）；價值觀清單子句
+finds even the abstract idea of romance repellent	連浪漫愛情的概念都覺得噁心	连浪漫爱情的概念都觉得恶心		FUN_140e248a0 case 29（romance）最反感（<-40）；價值觀清單子句
+holds nature to be of greater value than most aspects of civilization	認為自然比文明的大多數事物更有價值	认为自然比文明的大多数事物更有价值		FUN_140e248a0 case 30（nature）最高（>40）；價值觀清單子句
+has a deep respect for animals, plants and the natural world	深深敬重動植物與大自然	深深敬重动植物与大自然		FUN_140e248a0 case 30（nature）強（26～40）；價值觀清單子句
+values nature	重視自然	重视自然		FUN_140e248a0 case 30（nature）中（11～25）；價值觀清單子句
+doesn't care about nature one way or another	對大自然無所謂	对大自然无所谓		FUN_140e248a0 case 30（nature）中立（-10～10）；價值觀清單子句
+finds nature somewhat disturbing	覺得大自然有點令人不安	觉得大自然有点令人不安		FUN_140e248a0 case 30（nature）弱反感（-25～-11）；價值觀清單子句
+has a deep dislike of the natural world	非常討厭大自然	非常讨厌大自然		FUN_140e248a0 case 30（nature）強反感（-40～-26）；價值觀清單子句
+would just as soon have nature and the great outdoors burned to ashes and converted into a great mining pit	巴不得把大自然燒成灰燼再改成一座大礦坑	巴不得把大自然烧成灰烬再改成一座大矿坑		FUN_140e248a0 case 30（nature）最反感（<-40）；價值觀清單子句
+believes the idea of war is utterly repellent and would have peace at all costs	對戰爭極為反感並不惜一切代價追求和平	对战争极为反感并不惜一切代价追求和平		FUN_140e248a0 case 31（peace）最高（>40）；價值觀清單子句
+believes that peace is always preferable to war	認為和平永遠勝過戰爭	认为和平永远胜过战争		FUN_140e248a0 case 31（peace）強（26～40）；價值觀清單子句
+values peace over war	重視和平勝於戰爭	重视和平胜于战争		FUN_140e248a0 case 31（peace）中（11～25）；價值觀清單子句
+doesn't particularly care between war and peace	不太在乎戰爭或和平	不太在乎战争或和平		FUN_140e248a0 case 31（peace）中立（-10～10）；價值觀清單子句
+sees war as a useful means to an end	認為戰爭是達成目的的有效手段	认为战争是达成目的的有效手段		FUN_140e248a0 case 31（peace）弱反感（-25～-11）；價值觀清單子句
+believes war is preferable to peace in general	認為戰爭大致上比和平好	认为战争总体上比和平好		FUN_140e248a0 case 31（peace）強反感（-40～-26）；價值觀清單子句
+thinks that the world should be engaged in perpetual warfare	認為世界應該永遠處於戰爭之中	认为世界应该永远处于战争之中		FUN_140e248a0 case 31（peace）最反感（<-40）；價值觀清單子句
+finds the quest for knowledge to be of the very highest value	認為追求知識具有最高的價值	认为追求知识具有最高的价值		FUN_140e248a0 case 32（knowledge）最高（>40）；價值觀清單子句
+views the pursuit of knowledge as deeply important	認為追求知識非常重要	认为追求知识非常重要		FUN_140e248a0 case 32（knowledge）強（26～40）；價值觀清單子句
+values knowledge	重視知識	重视知识		FUN_140e248a0 case 32（knowledge）中（11～25）；價值觀清單子句
+doesn't see the attainment of knowledge as important	不覺得獲取知識有多重要	不觉得获取知识有多重要		FUN_140e248a0 case 32（knowledge）中立（-10～10）；價值觀清單子句
+finds the pursuit of knowledge to be a waste of effort	覺得追求知識是白費力氣	觉得追求知识是白费力气		FUN_140e248a0 case 32（knowledge）弱反感（-25～-11）；價值觀清單子句
+thinks the quest for knowledge is a delusional fantasy	認為追求知識是不切實際的妄想	认为追求知识是不切实际的妄想		FUN_140e248a0 case 32（knowledge）強反感（-40～-26）；價值觀清單子句
+sees the attainment and preservation of knowledge as an offensive enterprise engaged in by arrogant fools	認為獲取與保存知識是自大蠢人才會做的可憎勾當	认为获取与保存知识是自大蠢人才会做的可憎勾当		FUN_140e248a0 case 32（knowledge）最反感（<-40）；價值觀清單子句

@@ -30,7 +30,7 @@ from dfpaths import DF, latest_snapshot
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "temp/inventory"
-PLACEHOLDER = re.compile(r"\\\{(\\\#|@)?([1-9])\\\}")  # 已經 re.escape 過的 {1}／{#1}／{@1}
+PLACEHOLDER = re.compile(r"\\\{(\\\#|@|%)?([1-9])\\\}")  # 已經 re.escape 過的 {1}／{#1}／{@1}／{%1}（{%1} 盤點時當任意片段）
 CODE = re.compile(r"::|%[-+ #0-9.]*[sdifxXcpul]|\\|/|\.(txt|png|lua|dll|ttf|otf|wav|ogg|mp3|json|ini|exe|bmp)\b|\b0x|\(\)"
                   r"|^[A-Za-z]+_[A-Za-z0-9_]+$|^[a-z]+[A-Z][A-Za-z]*$|^[A-Z][a-z]+[A-Z][A-Za-z]*$")
 # 執行期錯誤、除錯訊息：玩家幾乎看不到，排最後

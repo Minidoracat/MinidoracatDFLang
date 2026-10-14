@@ -62,9 +62,12 @@ def screen_of(file: str) -> str:
 
 
 def dict_lines(kind: str, rows: list[dict], lang: str) -> str:
-    """dist 的 dflang/<kind>.tsv：原文<TAB>譯文<TAB>對齊，screens 前面多一欄畫面；沒有譯文的列不放。"""
-    return "".join(f"{screen_of(r['file']) + chr(9) if kind == 'screens' else ''}{r['en']}\t{r[lang]}\t{r['align']}\n"
-                   for r in rows if r[lang].strip())
+    """dist 的 dflang/<kind>.tsv：原文<TAB>譯文<TAB>對齊；screens 前面多一欄畫面、後面多一欄限定列。沒有譯文的列不放。"""
+    def line(r: dict) -> str:
+        if kind == "screens":
+            return f"{screen_of(r['file'])}\t{r['en']}\t{r[lang]}\t{r['align']}\t{r['row']}\n"
+        return f"{r['en']}\t{r[lang]}\t{r['align']}\n"
+    return "".join(line(r) for r in rows if r[lang].strip())
 
 
 def fetch_fonts(sources: dict[str, str]) -> None:

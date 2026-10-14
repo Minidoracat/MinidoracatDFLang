@@ -2,12 +2,14 @@
 //!
 //! DFHack 的 Lua 以 `package.loadlib(dll, "luaopen_dflang")` 載入，回傳一張函式表；
 //! 不連結 dfhack.dll，所以不綁 DFHack 版本，也不依賴其他 MOD。載入順序（見 lua/loader.lua）：
-//! set_layout／set_mtb_layout／set_fonts → render_atlas → set_glyphs → load／load_rules／load_screens → scan/attach → enable
-//! （enable 時補登記遊戲啟動時就切好的提示文字，見 lines.rs）；之後每幀 set_focus（依畫面套用的譯文用）。
+//! set_layout／set_mtb_layout／set_ctb_layout／set_fonts → render_atlas → set_glyphs → load／load_rules／load_screens
+//! → scan/attach → enable（enable 時補登記遊戲啟動時就切好的提示文字，見 lines.rs）；之後每幀 set_focus（依畫面套用的譯文用）。
+//! dict、ctb 也給 examples/t.rs（離線查譯文）用。
 
 mod atlas;
-mod cp437;
-mod dict;
+pub mod cp437;
+pub mod ctb;
+pub mod dict;
 mod hooks;
 mod image;
 mod lines;
@@ -37,6 +39,7 @@ pub unsafe extern "C" fn luaopen_dflang(l: lua::State) -> c_int {
         lua::new_table(l);
         lua::set_fn(l, c"set_layout", set_layout);
         lua::set_fn(l, c"set_mtb_layout", set_mtb_layout);
+        lua::set_fn(l, c"set_ctb_layout", set_ctb_layout);
         lua::set_fn(l, c"render_atlas", render_atlas);
         lua::set_fn(l, c"render_mascot", render_mascot);
         lua::set_fn(l, c"set_glyphs", set_glyphs);
@@ -138,6 +141,23 @@ unsafe extern "C" fn set_mtb_layout(l: lua::State) -> c_int {
                 ok(l)
             }
             None => fail(l, "set_mtb_layout: missing or non-integer field"),
+        }
+    }
+}
+
+/// set_ctb_layout{width = color_text_boxst.width 位移, color = color_text_linest.color 位移}（彩色文字框，見 ctb.rs）
+unsafe extern "C" fn set_ctb_layout(l: lua::State) -> c_int {
+    unsafe {
+        if lua::arg_type(l, 1) != lua::TTABLE {
+            return fail(l, "set_ctb_layout expects a table");
+        }
+        let f = |name: &CStr| lua::field_int(l, 1, name).map(|v| v as usize);
+        match (f(c"width"), f(c"color")) {
+            (Some(width), Some(color)) => {
+                let _ = ctb::CTB_LAYOUT.set(ctb::CtbLayout { width, color });
+                ok(l)
+            }
+            _ => fail(l, "set_ctb_layout: missing or non-integer field"),
         }
     }
 }
@@ -376,14 +396,17 @@ unsafe extern "C" fn status(l: lua::State) -> c_int {
     }
 }
 
-/// translate(英文原文) → 譯文或 nil（查已啟用的字典：整句、再句型規則）
+/// translate(英文原文) → 譯文或 nil（查已啟用的字典：整句、句型，再逐句；可含換色標記，照彩色文字框處理）
 unsafe extern "C" fn translate(l: lua::State) -> c_int {
     unsafe {
         let dict = hooks::DICT.load(Ordering::Acquire);
         let text = lua::arg_str(l, 1)
-            .and_then(cp437::encode)
+            .and_then(|s| Some((s.contains("[C:"), cp437::encode(s)?)))
             .filter(|_| !dict.is_null())
-            .and_then(|key| (*dict).translate_text(&key));
+            .and_then(|(colored, key)| {
+                let zh = ctb::translate(&key, 7, &*dict).ok()?;
+                Some(if colored { zh } else { ctb::strip_colors(&zh) })
+            });
         match text {
             Some(t) => lua::push_str(l, &t),
             None => lua::push_nil(l),

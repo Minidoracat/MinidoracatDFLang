@@ -1,0 +1,41 @@
+en	zh-Hant	zh-Hans	align	note
+being tormented in nightmares by {%1}	在噩夢中受{1}折磨	在噩梦中受{1}折磨		fn_thought_composer case 0x27；前接 after；{1} 是 a dead spouse、his own dead mother 等
+being haunted by {%1}	被{1}糾纏	被{1}纠缠		fn_thought_composer case 0x28；前接 after；亡者作祟的四個等級；{1} 同 case 0x27
+being tormented by {%1}	受{1}折磨	受{1}折磨		fn_thought_composer case 0x28；前接 after；亡者作祟的四個等級；{1} 同 case 0x27
+being possessed by {%1}	被{1}附身	被{1}附身		fn_thought_composer case 0x28；前接 after；亡者作祟的四個等級；{1} 同 case 0x27
+being tortured by {%1}	受{1}凌虐	受{1}虐待		fn_thought_composer case 0x28；前接 after；亡者作祟的四個等級；{1} 同 case 0x27
+being attacked by {%1}	遭{1}攻擊	遭{1}攻击		fn_thought_composer case 0x86；前接 after；{1} 是 the dead 或 his own dead <親屬>
+his own dead {@1}	自己已故的{1}	自己已故的{1}		fn_thought_composer case 0x27/0x28/0x86；{1} 是親屬稱謂（mother、eldest son…）；代名詞所有格中文省略（冒險模式為 your）
+her own dead {@1}	自己已故的{1}	自己已故的{1}		fn_thought_composer case 0x27/0x28/0x86；{1} 是親屬稱謂（mother、eldest son…）；代名詞所有格中文省略（冒險模式為 your）
+its own dead {@1}	自己已故的{1}	自己已故的{1}		fn_thought_composer case 0x27/0x28/0x86；{1} 是親屬稱謂（mother、eldest son…）；代名詞所有格中文省略（冒險模式為 your）
+your own dead {@1}	自己已故的{1}	自己已故的{1}		fn_thought_composer case 0x27/0x28/0x86；{1} 是親屬稱謂（mother、eldest son…）；代名詞所有格中文省略（冒險模式為 your）
+his own {%1}	自己{1}	自己{1}		fn_thought_composer case 0x1c/0x1e；his own fine Bed 這類；代名詞所有格中文省略（冒險模式為 your）；{1} 由品質句型翻出（精緻的床）
+her own {%1}	自己{1}	自己{1}		fn_thought_composer case 0x1c/0x1e；his own fine Bed 這類；代名詞所有格中文省略（冒險模式為 your）；{1} 由品質句型翻出（精緻的床）
+its own {%1}	自己{1}	自己{1}		fn_thought_composer case 0x1c/0x1e；his own fine Bed 這類；代名詞所有格中文省略（冒險模式為 your）；{1} 由品質句型翻出（精緻的床）
+your own {%1}	自己{1}	自己{1}		fn_thought_composer case 0x1c/0x1e；his own fine Bed 這類；代名詞所有格中文省略（冒險模式為 your）；{1} 由品質句型翻出（精緻的床）
+a fine tastefully arranged {@1}	精緻且布置雅緻的{1}	精致且布置雅致的{1}		fn_thought_composer case 0x1d/0x1e；前接 near；{1} 是建築種類名（Bed、Seat、Table…，首字大寫）
+a fine {@1}	精緻的{1}	精致的{1}		fn_thought_composer case 0x1b；前接 near；{1} 是建築種類名
+fine tastefully arranged {@1}	精緻且布置雅緻的{1}	精致且布置雅致的{1}		fn_thought_composer case 0x1e；接在 his own 之後；{1} 是建築種類名
+fine {@1}	精緻的{1}	精致的{1}		fn_thought_composer case 0x1c；接在 his own 之後；{1} 是建築種類名
+a very fine tastefully arranged {@1}	十分精緻且布置雅緻的{1}	十分精致且布置雅致的{1}		fn_thought_composer case 0x1d/0x1e；前接 near；{1} 是建築種類名（Bed、Seat、Table…，首字大寫）
+a very fine {@1}	十分精緻的{1}	十分精致的{1}		fn_thought_composer case 0x1b；前接 near；{1} 是建築種類名
+very fine tastefully arranged {@1}	十分精緻且布置雅緻的{1}	十分精致且布置雅致的{1}		fn_thought_composer case 0x1e；接在 his own 之後；{1} 是建築種類名
+very fine {@1}	十分精緻的{1}	十分精致的{1}		fn_thought_composer case 0x1c；接在 his own 之後；{1} 是建築種類名
+a splendid tastefully arranged {@1}	華麗且布置雅緻的{1}	华丽且布置雅致的{1}		fn_thought_composer case 0x1d/0x1e；前接 near；{1} 是建築種類名（Bed、Seat、Table…，首字大寫）
+a splendid {@1}	華麗的{1}	华丽的{1}		fn_thought_composer case 0x1b；前接 near；{1} 是建築種類名
+splendid tastefully arranged {@1}	華麗且布置雅緻的{1}	华丽且布置雅致的{1}		fn_thought_composer case 0x1e；接在 his own 之後；{1} 是建築種類名
+splendid {@1}	華麗的{1}	华丽的{1}		fn_thought_composer case 0x1c；接在 his own 之後；{1} 是建築種類名
+a wonderful tastefully arranged {@1}	極其出色且布置雅緻的{1}	极其出色且布置雅致的{1}		fn_thought_composer case 0x1d/0x1e；前接 near；{1} 是建築種類名（Bed、Seat、Table…，首字大寫）
+a wonderful {@1}	極其出色的{1}	极其出色的{1}		fn_thought_composer case 0x1b；前接 near；{1} 是建築種類名
+wonderful tastefully arranged {@1}	極其出色且布置雅緻的{1}	极其出色且布置雅致的{1}		fn_thought_composer case 0x1e；接在 his own 之後；{1} 是建築種類名
+wonderful {@1}	極其出色的{1}	极其出色的{1}		fn_thought_composer case 0x1c；接在 his own 之後；{1} 是建築種類名
+a completely sublime tastefully arranged {@1}	美輪美奐且布置雅緻的{1}	美轮美奂且布置雅致的{1}		fn_thought_composer case 0x1d/0x1e；前接 near；{1} 是建築種類名（Bed、Seat、Table…，首字大寫）
+a completely sublime {@1}	美輪美奐的{1}	美轮美奂的{1}		fn_thought_composer case 0x1b；前接 near；{1} 是建築種類名
+completely sublime tastefully arranged {@1}	美輪美奐且布置雅緻的{1}	美轮美奂且布置雅致的{1}		fn_thought_composer case 0x1e；接在 his own 之後；{1} 是建築種類名
+completely sublime {@1}	美輪美奐的{1}	美轮美奂的{1}		fn_thought_composer case 0x1c；接在 his own 之後；{1} 是建築種類名
+seeing a {%1} die	目睹{1}死去	目睹{1}死去		fn_thought_composer case 0x2；前接 after；{1} 是生物名（單數，遊戲固定加 a）
+seeing the {@1} {2} die	目睹{1}{2}死去	目睹{1}{2}死去		fn_thought_composer case 0x2；前接 after；死者種族與本人不同：{1} 種族名、{2} 人名（照原文）
+seeing {1} die	目睹{1}死去	目睹{1}死去		fn_thought_composer case 0x2；前接 after；{1} 是人名（照原文）
+being accosted by {%1}	遭{1}襲擾	遭{1}袭扰		fn_thought_composer case 0x7c；前接 after；{1} 是生物名複數
+being near {%1}	待在{1}附近	待在{1}附近		fn_thought_composer case 0x7d；前接 after；{1} 是生物名複數
+being pestered by {%1}	被{1}糾纏不休	被{1}纠缠不休		fn_thought_composer case 0x7e；前接 after；{1} 是生物名複數

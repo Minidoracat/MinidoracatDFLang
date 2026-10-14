@@ -129,6 +129,14 @@ local function mtb_layout()
     return ok and layout or nil
 end
 
+-- 彩色文字框（人物頁的想法、記憶、性格）用的結構位移；這版 DFHack 沒有這些定義就回傳 nil，這些文字維持英文
+local function ctb_layout()
+    local ok, layout = pcall(function()
+        return {width = df.color_text_boxst._fields.width.offset, color = df.color_text_linest._fields.color.offset}
+    end)
+    return ok and layout or nil
+end
+
 local function attach_hooks(engine, dir, hooks)
     local patterns = {}
     for name, pattern in (read_file(dir .. 'patterns.tsv') or ''):gmatch('([%w_]+)\t([^\t\n]+)') do
@@ -199,6 +207,9 @@ local function start()
     else
         fail('這版 DFHack 沒有段落結構定義，教學與說明文字維持英文')
     end
+    local ctb = ctb_layout()
+    local ctb_ok = ctb and engine.set_ctb_layout(ctb)
+    if not ctb_ok then fail('這版 DFHack 沒有彩色文字框的結構定義，人物頁的想法與性格維持英文') end
 
     local handles, glyphs = load_glyphs(engine, dir)
     if not handles then return fail('%s', glyphs) end
@@ -223,6 +234,11 @@ local function start()
     -- 提示框等自動換行的文字（enable 時也補做遊戲啟動時就切好的提示）；找不到只有這些維持英文
     ok, err = attach_hooks(engine, dir, {'wrap_text'})
     if not ok then fail('%s；提示框文字維持英文', err) end
+    -- 彩色文字框（人物頁的想法、記憶、性格）；找不到只有這些維持英文
+    if ctb_ok then
+        ok, err = attach_hooks(engine, dir, {'ctb_add_string'})
+        if not ok then fail('%s；人物頁的想法與性格維持英文', err) end
+    end
     ok, err = engine.enable()
     if not ok then return fail('%s', err) end
     -- 依畫面套用的譯文要知道現在在哪個畫面：每幀把 DFHack 的焦點字串告訴引擎（'frames' 計時器在世界卸載後也繼續）

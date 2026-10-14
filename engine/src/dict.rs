@@ -5,6 +5,8 @@
 //!
 //! 句型規則處理遊戲執行時拼出來的句子：原文含 {1}～{9} 佔位，整句比對；佔位抓到的片段先查整句字典、
 //! 再遞迴套規則，都沒有就照抄英文。結果不能比原文寬，換算成替身字串後存進快取，下一幀直接用。
+//!
+//! 人物頁、訪客說明這類遊戲拼成一整段的文字句與句之間空兩格：整段查不到時逐句查（translate_sentences）。
 
 use std::collections::HashMap;
 use std::sync::Arc;
@@ -15,8 +17,24 @@ use crate::cp437;
 
 /// 句型結果快取的上限，滿了整個清空。ponytail: 全清最簡單；畫面上同時出現的句子遠少於此，命中率有問題再換 LRU
 const CACHE_LIMIT: usize = 50_000;
-/// 佔位片段遞迴套規則的層數上限
-const MAX_DEPTH: usize = 3;
+/// 佔位片段遞迴套規則的層數上限：只防堆疊過深。清單句型（`{%1}, {%2}`）每一項遞迴一層，價值觀的清單最長三十多項
+const MAX_DEPTH: usize = 64;
+
+/// 譯文片段：(文字, 原文位置)。句型的固定字記比對範圍的開頭，佔位的譯文記佔位片段的開頭（遞迴下去也一樣），
+/// 彩色文字框依原文那個位置的顏色替譯文上色（見 ctb.rs）。
+pub type Pieces = Vec<(String, usize)>;
+
+/// 片段的譯文與「乾淨」與否。乾淨：整句字典的條目，或句型本身有中文字或英文字，或每個佔位都乾淨地翻出來。
+/// `{1}, {@2}` 這種只有標點的外框把 `{1}` 照抄英文時不乾淨；`{%n}` 只收乾淨的，清單裡翻不出來的一項才不會變成半中半英。
+type Found = (Pieces, bool);
+
+/// 一次翻譯裡算過的片段：原文片段 → 譯文片段（位置從片段開頭算）。
+/// 清單句型的佔位會回頭試很多種切法，同一段反覆出現，不記住會變成指數時間。
+type Memo = HashMap<Vec<u8>, Option<Found>>;
+
+fn concat(pieces: Pieces) -> String {
+    pieces.into_iter().map(|(t, _)| t).collect()
+}
 
 #[derive(Clone)]
 pub struct Entry {
@@ -51,12 +69,14 @@ impl Entry {
     }
 }
 
-/// 佔位能收的片段：任意、只收數字（`{#1}`）、只收字典裡有整句條目的字詞（`{@1}`，例如月份名）。
+/// 佔位能收的片段：任意、只收數字（`{#1}`）、只收字典裡有整句條目的字詞（`{@1}`，例如月份名）、
+/// 只收翻得出來的片段（`{%1}`：整句字典或句型都行，翻不出來這條句型就不算命中；子句、清單用，免得半中半英）。
 #[derive(Clone, Copy, PartialEq)]
 enum Kind {
     Any,
     Number,
     Term,
+    Full,
 }
 
 enum Seg {
@@ -64,10 +84,14 @@ enum Seg {
     Cap(usize, Kind),
 }
 
+/// 譯文的一段：固定字，或佔位（編號, 補字）。補字見 `{n+時}`。
 enum Out {
     Text(String),
-    Cap(usize),
+    Cap(usize, String),
 }
+
+/// 時間、原因助詞：佔位譯文已經以這些字結尾時，`{n+時}` 不再補字（介系詞片語「經歷創傷後」「在衝突中」「因…而」本身就帶）。
+const PARTICLES: &str = "時时後后中而間间前際际近地";
 
 pub struct Rule {
     pattern: Vec<Seg>,
@@ -80,12 +104,19 @@ pub struct Rule {
     suffix: Vec<u8>,
     /// 樣板的固定字含英文字母。沒有英文字的樣板（`{1}, {@2}`、`{@1} {@2}`）能套的字串太多，排在最後比對
     specific: bool,
+    /// 清單句型：佔位全是 `{%n}`、固定字沒有英文字（`{%1}, {%2}`）。每一項都要翻得出來才命中，所以排在最前面：
+    /// 項目句型若尾端是任意佔位（`to pray at {1}`），先比就會把後面的「, 下一項」也吞進去。只用在佔位裡，不套整句
+    list: bool,
+    /// 開頭就是任意佔位（`{1} was given away`）：開頭沒有限制，同一類裡排在後面，
+    /// 免得把外框句的前半（「He feels sad after 神器名」）整個吞進 {1}
+    loose: bool,
 }
 
-/// 一個佔位：編號與能收的片段。
-struct Placeholder(usize, Kind);
+/// 一個佔位：編號、能收的片段、譯文裡的補字（`{3+時}`，原文不能有）。
+struct Placeholder(usize, Kind, String);
 
-/// 拆出 `{1}`～`{9}`、`{#1}`～`{#9}`、`{@1}`～`{@9}`；其餘依 `text` 轉換（原文轉 CP437 位元組、譯文保留字串）。
+/// 拆出 `{1}`～`{9}`、`{#1}`～`{#9}`、`{@1}`～`{@9}`、`{%1}`～`{%9}`，以及帶補字的 `{1+時}`；
+/// 其餘依 `text` 轉換（原文轉 CP437 位元組、譯文保留字串）。
 fn split_placeholders<T>(s: &str, mut text: impl FnMut(&str) -> Option<T>) -> Option<Vec<Result<T, Placeholder>>> {
     let mut parts = Vec::new();
     let mut rest = s;
@@ -94,18 +125,27 @@ fn split_placeholders<T>(s: &str, mut text: impl FnMut(&str) -> Option<T>) -> Op
         let kind = match b.get(i + 1) {
             Some(b'#') => Kind::Number,
             Some(b'@') => Kind::Term,
+            Some(b'%') => Kind::Full,
             _ => Kind::Any,
         };
         let d = i + 1 + usize::from(kind != Kind::Any);
-        if d + 1 < b.len() && (b'1'..=b'9').contains(&b[d]) && b[d + 1] == b'}' {
-            if i > 0 {
-                parts.push(Ok(text(&rest[..i])?));
+        let close = match (b.get(d), b.get(d + 1)) {
+            (Some(b'1'..=b'9'), Some(b'}')) => Some((d + 1, "")),
+            (Some(b'1'..=b'9'), Some(b'+')) => rest[d + 2..].find('}').map(|k| (d + 2 + k, &rest[d + 2..d + 2 + k])),
+            _ => None,
+        };
+        match close.filter(|(_, extra)| !extra.contains('{')) {
+            Some((end, extra)) => {
+                if i > 0 {
+                    parts.push(Ok(text(&rest[..i])?));
+                }
+                parts.push(Err(Placeholder((b[d] - b'1') as usize, kind, extra.to_owned())));
+                rest = &rest[end + 1..];
             }
-            parts.push(Err(Placeholder((b[d] - b'1') as usize, kind)));
-            rest = &rest[d + 2..];
-        } else {
-            parts.push(Ok(text(&rest[..=i])?));
-            rest = &rest[i + 1..];
+            None => {
+                parts.push(Ok(text(&rest[..=i])?));
+                rest = &rest[i + 1..];
+            }
         }
     }
     if !rest.is_empty() {
@@ -137,8 +177,10 @@ fn lookup_name<'a>(entries: &'a HashMap<Vec<u8>, Entry>, key: &[u8]) -> Option<&
 }
 
 impl Rule {
-    /// 原文樣板必須能轉成 CP437、每個佔位只出現一次、佔位不能相鄰（相鄰時切點不唯一）；
-    /// 譯文用到的佔位要和原文一致（譯文裡的 `#`、`@` 寫不寫都可以）。
+    /// 原文樣板必須能轉成 CP437、每個佔位只出現一次、佔位不能相鄰（相鄰時切點不唯一），也不能帶補字；
+    /// 譯文每個佔位最多用一次，而且都要是原文有的；原文的佔位除了 `{@n}` 都要用到（譯文裡的 `#`、`@`、`%` 寫不寫都可以）。
+    /// `{@n}` 可以不寫：中文常省略重複的主詞（「他深受感動，卻因不喜歡大自然而困擾」不必再寫一次「他」）。
+    /// 譯文的 `{n+時}`：佔位譯文後面補「時」，但譯文已經以時間、原因助詞（PARTICLES）結尾就不補。
     fn parse(en: &str, zh: &str, align: &str) -> Option<Rule> {
         let mut pattern: Vec<Seg> = Vec::new();
         for part in split_placeholders(en, cp437::encode)? {
@@ -146,21 +188,26 @@ impl Rule {
                 (Ok(bytes), Some(Seg::Lit(lit))) => lit.extend(bytes),
                 (Ok(bytes), _) => pattern.push(Seg::Lit(bytes)),
                 (Err(_), Some(Seg::Cap(..))) => return None,
-                (Err(Placeholder(i, kind)), _) => pattern.push(Seg::Cap(i, kind)),
+                (Err(Placeholder(_, _, extra)), _) if !extra.is_empty() => return None,
+                (Err(Placeholder(i, kind, _)), _) => pattern.push(Seg::Cap(i, kind)),
             }
         }
         let output: Vec<Out> = split_placeholders(zh, |t| Some(t.to_owned()))?
             .into_iter()
-            .map(|p| p.map_or_else(|Placeholder(i, _)| Out::Cap(i), Out::Text))
+            .map(|p| p.map_or_else(|Placeholder(i, _, extra)| Out::Cap(i, extra), Out::Text))
             .collect();
-        let caps = |it: &mut dyn Iterator<Item = usize>| {
-            let mut v: Vec<usize> = it.collect();
-            v.sort_unstable();
-            v
+        let en_caps: Vec<(usize, Kind)> = pattern.iter().filter_map(|s| if let Seg::Cap(i, k) = s { Some((*i, *k)) } else { None }).collect();
+        let zh_caps: Vec<usize> = output.iter().filter_map(|o| if let Out::Cap(i, _) = o { Some(*i) } else { None }).collect();
+        let unique = |v: &[usize]| {
+            let mut seen = [false; 9];
+            v.iter().all(|&i| !std::mem::replace(&mut seen[i], true))
         };
-        let en_caps = caps(&mut pattern.iter().filter_map(|s| if let Seg::Cap(i, _) = s { Some(*i) } else { None }));
-        let zh_caps = caps(&mut output.iter().filter_map(|o| if let Out::Cap(i) = o { Some(*i) } else { None }));
-        if en_caps.is_empty() || en_caps != zh_caps || en_caps.windows(2).any(|w| w[0] == w[1]) {
+        if en_caps.is_empty()
+            || !unique(&en_caps.iter().map(|c| c.0).collect::<Vec<_>>())
+            || !unique(&zh_caps)
+            || !zh_caps.iter().all(|i| en_caps.iter().any(|c| c.0 == *i))
+            || !en_caps.iter().all(|(i, k)| *k == Kind::Term || zh_caps.contains(i))
+        {
             return None;
         }
         let lit = |s: Option<&Seg>| match s {
@@ -172,43 +219,46 @@ impl Rule {
             suffix: lit(pattern.last()),
             has_cjk: output.iter().any(|o| matches!(o, Out::Text(t) if t.chars().any(|c| c.is_alphabetic() && cp437::byte_of(c).is_none()))),
             specific: pattern.iter().any(|s| matches!(s, Seg::Lit(l) if l.iter().any(u8::is_ascii_alphabetic))),
+            list: pattern.iter().all(|s| match s {
+                Seg::Cap(_, kind) => *kind == Kind::Full,
+                Seg::Lit(l) => !l.iter().any(u8::is_ascii_alphabetic),
+            }),
+            loose: matches!(pattern.first(), Some(Seg::Cap(_, Kind::Any))),
             pattern,
             output,
             align: align.to_owned(),
         })
     }
 
-    /// 整句比對；佔位取最短的可行片段（至少一個字）。成功時回傳每個佔位的 (起, 迄)。`terms` 給 `{@n}` 查字詞。
-    fn matches(&self, text: &[u8], terms: &HashMap<Vec<u8>, Entry>) -> Option<[(usize, usize); 9]> {
+    /// 整句比對；佔位取最短的可行片段（至少一個字）。成功時回傳每個佔位的 (起, 迄)。
+    /// `fits` 判斷限定佔位（`{#n}`、`{@n}`、`{%n}`）能不能收這段。
+    fn matches(&self, text: &[u8], fits: &mut dyn FnMut(Kind, &[u8]) -> bool) -> Option<[(usize, usize); 9]> {
         if text.len() < self.prefix.len() + self.suffix.len() || !text.starts_with(&self.prefix) || !text.ends_with(&self.suffix) {
             return None;
         }
         let mut caps = [(0, 0); 9];
-        match_at(&self.pattern, text, 0, &mut caps, terms).then_some(caps)
+        match_at(&self.pattern, text, 0, &mut caps, fits).then_some(caps)
     }
 }
 
-fn match_at(segs: &[Seg], text: &[u8], pos: usize, caps: &mut [(usize, usize); 9], terms: &HashMap<Vec<u8>, Entry>) -> bool {
+fn match_at(segs: &[Seg], text: &[u8], pos: usize, caps: &mut [(usize, usize); 9], fits: &mut dyn FnMut(Kind, &[u8]) -> bool) -> bool {
     let Some((first, rest)) = segs.split_first() else { return pos == text.len() };
     match first {
-        Seg::Lit(lit) => text[pos..].starts_with(lit) && match_at(rest, text, pos + lit.len(), caps, terms),
+        Seg::Lit(lit) => text[pos..].starts_with(lit) && match_at(rest, text, pos + lit.len(), caps, fits),
         Seg::Cap(i, kind) => {
-            let fits = |end: usize| match kind {
-                Kind::Any => true,
-                Kind::Number => is_number(&text[pos..end]),
-                Kind::Term => lookup_name(terms, &text[pos..end]).is_some(),
-            };
+            // 佔位不跨句：抓的片段不能含句界（人名、清單項目都不會跨句；跨了就是把下一句也吞進來）
+            let stop = (pos + 1..text.len()).find(|&k| is_boundary(text, k)).unwrap_or(text.len());
             match rest.first() {
                 None => {
                     caps[*i] = (pos, text.len());
-                    pos < text.len() && fits(text.len())
+                    pos < stop && stop == text.len() && (*kind == Kind::Any || fits(*kind, &text[pos..]))
                 }
                 Some(Seg::Lit(next)) => {
                     let mut end = pos + 1;
-                    while end + next.len() <= text.len() {
-                        if text[end..].starts_with(next) && fits(end) {
+                    while end <= stop && end + next.len() <= text.len() {
+                        if text[end..].starts_with(next) && (*kind == Kind::Any || fits(*kind, &text[pos..end])) {
                             caps[*i] = (pos, end);
-                            if match_at(rest, text, end, caps, terms) {
+                            if match_at(rest, text, end, caps, fits) {
                                 return true;
                             }
                         }
@@ -222,11 +272,16 @@ fn match_at(segs: &[Seg], text: &[u8], pos: usize, caps: &mut [(usize, usize); 9
     }
 }
 
+/// 句界：句末標點（. ! ? "）後面連續兩個空白，k 是第一個空白。遊戲拼段落時句間空兩格。
+fn is_boundary(text: &[u8], k: usize) -> bool {
+    k > 0 && text[k] == b' ' && text.get(k + 1) == Some(&b' ') && b".!?\"".contains(&text[k - 1])
+}
+
 #[derive(Default)]
 pub struct Dict {
     pub entries: HashMap<Vec<u8>, Entry>,
-    /// 只在某些畫面套用的整句：原文 → [(畫面, 譯文)]。同一個英文在不同畫面意思不同時用（見 screen_entry）。
-    pub screens: HashMap<Vec<u8>, Vec<(String, Entry)>>,
+    /// 只在某些畫面套用的整句：原文 → [(畫面, 限定列, 譯文)]。同一個英文在不同畫面（或同畫面不同列）意思不同時用（見 screen_entry）。
+    pub screens: HashMap<Vec<u8>, Vec<(String, Option<i32>, Entry)>>,
     pub rules: Vec<Rule>,
     /// 原文 → 句型規則的結果（None 表示沒有規則命中，也要記住，免得每幀重比）
     cache: Mutex<HashMap<Vec<u8>, Option<Arc<Entry>>>>,
@@ -319,35 +374,49 @@ impl Dict {
         report
     }
 
-    /// 依畫面套用的整句：`畫面<TAB>原文<TAB>譯文[<TAB>對齊]`，畫面是 DFHack 焦點字串的開頭（如 dwarfmode）。
+    /// 依畫面套用的整句：`畫面<TAB>原文<TAB>譯文<TAB>對齊<TAB>限定列`，畫面是 DFHack 焦點字串的開頭（如 dwarfmode），
+    /// 限定列空白表示任何一列。
     pub fn load_screens_tsv(&mut self, content: &str) -> LoadReport {
         let mut report = LoadReport { loaded: 0, bad_source: 0, missing_glyphs: 0 };
-        for (screen, rest) in content.lines().filter_map(|line| line.split_once('\t')) {
-            for (en, zh, align) in Self::read_tsv(rest) {
-                let Some(key) = cp437::encode(en) else {
-                    report.bad_source += 1;
-                    continue;
-                };
-                let (entry, missing) = self.entry(key.len(), zh, align);
-                report.missing_glyphs += missing;
-                self.screens.entry(key).or_default().push((screen.to_owned(), entry));
-                report.loaded += 1;
-            }
+        for line in content.lines().filter(|l| !l.is_empty() && !l.starts_with('#')) {
+            let mut cols = line.split('\t');
+            let (Some(screen), Some(en), Some(zh)) = (cols.next(), cols.next(), cols.next()) else { continue };
+            let align = cols.next().unwrap_or("");
+            let row = match cols.next().unwrap_or("") {
+                "" => None,
+                r => match r.parse::<i32>() {
+                    Ok(r) => Some(r),
+                    Err(_) => {
+                        report.bad_source += 1;
+                        continue;
+                    }
+                },
+            };
+            let Some(key) = cp437::encode(en) else {
+                report.bad_source += 1;
+                continue;
+            };
+            let (entry, missing) = self.entry(key.len(), zh, align);
+            report.missing_glyphs += missing;
+            self.screens.entry(key).or_default().push((screen.to_owned(), row, entry));
+            report.loaded += 1;
         }
         report
     }
 
     /// 目前畫面專用的譯文。focus 是 DFHack 的焦點字串（可能有好幾個，以換行分隔）；
-    /// 畫面要是其中一個的開頭，而且剛好在 / 或結尾切開（dwarfmode 符合 dwarfmode/Default，不符合 dwarfmodeX）。
-    pub fn screen_entry<'a>(&'a self, key: &[u8], focus: &str) -> Option<&'a Entry> {
+    /// 畫面要是其中一個的開頭，而且剛好在 / 或結尾切開（dwarfmode 符合 dwarfmode/Default，不符合 dwarfmodeX）；
+    /// 條目限定了列時，字串也要畫在那一列（y）。
+    pub fn screen_entry<'a>(&'a self, key: &[u8], focus: &str, y: i32) -> Option<&'a Entry> {
         let list = self.screens.get(key)?;
         let on = |screen: &str| {
             focus.lines().any(|f| f.strip_prefix(screen).is_some_and(|rest| rest.is_empty() || rest.starts_with('/')))
         };
-        list.iter().find(|(screen, _)| on(screen)).map(|(_, entry)| entry)
+        list.iter().find(|(screen, row, _)| row.is_none_or(|r| r == y) && on(screen)).map(|(_, _, entry)| entry)
     }
 
-    /// 句型規則檔，格式同 load_tsv；依檔案順序比對，先寫的優先，但沒有英文字的樣板一律排在有英文字的後面。
+    /// 句型規則檔，格式同 load_tsv；依檔案順序比對，先寫的優先，但清單句型一律最先，沒有英文字的樣板一律排在有英文字的後面，
+    /// 同一類裡開頭就是任意佔位的排在後面。
     pub fn load_rules_tsv(&mut self, content: &str) -> LoadReport {
         let mut report = LoadReport { loaded: 0, bad_source: 0, missing_glyphs: 0 };
         for (en, zh, align) in Self::read_tsv(content) {
@@ -358,7 +427,9 @@ impl Dict {
             report.missing_glyphs += rule
                 .output
                 .iter()
-                .filter_map(|o| if let Out::Text(t) = o { Some(t) } else { None })
+                .filter_map(|o| match o {
+                    Out::Text(t) | Out::Cap(_, t) => Some(t),
+                })
                 .flat_map(|t| t.chars())
                 .filter(|c| cp437::byte_of(*c).is_none() && !self.glyph_of.contains_key(c))
                 .count();
@@ -366,36 +437,92 @@ impl Dict {
             report.loaded += 1;
         }
         // 穩定排序：同一類維持檔案順序
-        self.rules.sort_by_key(|r| !r.specific);
+        self.rules.sort_by_key(|r| (!r.list, !r.specific, r.loose));
         self.cache.lock().clear();
         report
     }
 
     /// 一段原文的譯文（不含對齊）：整句字典優先（含首字大寫的名稱），再套句型規則。
     pub fn translate_text(&self, key: &[u8]) -> Option<String> {
-        lookup_name(&self.entries, key).map(|e| e.text.clone()).or_else(|| self.apply_rules(key, 0).map(|(t, _)| t))
+        self.piece(key, 0, &mut Memo::new()).map(|(p, _)| concat(p))
     }
 
-    fn apply_rules(&self, key: &[u8], depth: usize) -> Option<(String, &Rule)> {
-        for rule in &self.rules {
-            let Some(caps) = rule.matches(key, &self.entries) else { continue };
-            let mut out = String::new();
+    /// 遊戲拼成一整段的文字：整段查不到時，在句末標點後的兩個以上空白切開逐句查（遊戲拼段落時句間空兩格），
+    /// 每句都有譯文才算，句間不留空白。成功回傳譯文片段（位置是整段原文的位置），否則回傳查不到的句子。
+    pub fn translate_sentences(&self, text: &[u8]) -> Result<Pieces, Vec<Vec<u8>>> {
+        let mut memo = Memo::new();
+        if let Some((p, _)) = self.piece(text, 0, &mut memo) {
+            return Ok(p);
+        }
+        let mut out = Pieces::new();
+        let mut missing = Vec::new();
+        for (start, end) in sentence_spans(text) {
+            match self.piece(&text[start..end], 0, &mut memo) {
+                Some((p, _)) => out.extend(p.into_iter().map(|(t, at)| (t, at + start))),
+                None => missing.push(text[start..end].to_vec()),
+            }
+        }
+        if missing.is_empty() && !out.is_empty() { Ok(out) } else { Err(missing) }
+    }
+
+    /// 一個片段的譯文：整句字典（含大寫退回小寫），再套句型。
+    fn piece(&self, key: &[u8], depth: usize, memo: &mut Memo) -> Option<Found> {
+        if let Some(e) = lookup_name(&self.entries, key) {
+            return Some((vec![(e.text.clone(), 0)], true));
+        }
+        if depth > MAX_DEPTH {
+            return None;
+        }
+        if let Some(hit) = memo.get(key) {
+            return hit.clone();
+        }
+        // 先記成翻不出來：佔位抓到整段（`{%1}.` 這類）又遞迴回同一段時就此打住
+        memo.insert(key.to_vec(), None);
+        let found = self.apply_rules(key, depth, memo).map(|(p, _, clean)| (p, clean));
+        memo.insert(key.to_vec(), found.clone());
+        found
+    }
+
+    /// 第一條命中的句型：(譯文片段, 句型, 乾淨與否)。
+    fn apply_rules(&self, key: &[u8], depth: usize, memo: &mut Memo) -> Option<(Pieces, &Rule, bool)> {
+        // 清單只會是句子的一部分：最外層（整句）不套清單句型，免得把「人名 likes 甲, 乙」當成一項
+        for rule in self.rules.iter().filter(|r| depth > 0 || !r.list) {
+            let mut fits = |kind: Kind, piece: &[u8]| match kind {
+                Kind::Any => true,
+                Kind::Number => is_number(piece),
+                Kind::Term => lookup_name(&self.entries, piece).is_some(),
+                Kind::Full => matches!(self.piece(piece, depth + 1, memo), Some((_, true))),
+            };
+            let Some(caps) = rule.matches(key, &mut fits) else { continue };
+            let mut out = Pieces::new();
             let mut translated = false;
+            let mut all_clean = true;
             for part in &rule.output {
                 match part {
-                    Out::Text(t) => out.push_str(t),
-                    Out::Cap(i) => {
-                        let piece = &key[caps[*i].0..caps[*i].1];
-                        let sub = lookup_name(&self.entries, piece).map(|e| e.text.clone()).or_else(|| {
-                            (depth < MAX_DEPTH).then(|| self.apply_rules(piece, depth + 1).map(|(t, _)| t)).flatten()
-                        });
-                        translated |= sub.is_some();
-                        out.push_str(&sub.unwrap_or_else(|| cp437::decode(piece)));
+                    Out::Text(t) => out.push((t.clone(), 0)),
+                    Out::Cap(i, extra) => {
+                        let (start, end) = caps[*i];
+                        let from = out.len();
+                        match self.piece(&key[start..end], depth + 1, memo) {
+                            Some((sub, clean)) => {
+                                translated = true;
+                                all_clean &= clean;
+                                out.extend(sub.into_iter().map(|(t, at)| (t, at + start)));
+                            }
+                            None => {
+                                all_clean = false;
+                                out.push((cp437::decode(&key[start..end]), start));
+                            }
+                        }
+                        let last = out[from..].iter().rev().find_map(|(t, _)| t.chars().last());
+                        if !extra.is_empty() && !last.is_some_and(|c| PARTICLES.contains(c)) {
+                            out.push((extra.clone(), start));
+                        }
                     }
                 }
             }
             if rule.has_cjk || translated {
-                return Some((out, rule));
+                return Some((out, rule, rule.has_cjk || rule.specific || all_clean));
             }
         }
         None
@@ -409,8 +536,8 @@ impl Dict {
         }
         // 小寫寫法的原文和 key 等長，替身字串與對齊都能照用
         let entry = lookup_name(&self.entries, key).map(|e| Arc::new(e.clone())).or_else(|| {
-            self.apply_rules(key, 0).and_then(|(text, rule)| {
-                let (entry, missing) = self.entry(key.len(), &text, &rule.align);
+            self.apply_rules(key, 0, &mut Memo::new()).and_then(|(pieces, rule, _)| {
+                let (entry, missing) = self.entry(key.len(), &concat(pieces), &rule.align);
                 (missing == 0 && entry.shadow().len() <= key.len()).then(|| Arc::new(entry))
             })
         });
@@ -420,6 +547,34 @@ impl Dict {
         cache.insert(key.to_vec(), entry.clone());
         entry
     }
+}
+
+/// 句子的 (起, 迄)：在 . ! ? " 後面連續兩個以上空白處切開，去掉頭尾空白，略過空句。
+fn sentence_spans(text: &[u8]) -> Vec<(usize, usize)> {
+    let mut spans = Vec::new();
+    let mut start = 0;
+    let mut i = 0;
+    while i < text.len() {
+        if is_boundary(text, i) {
+            spans.push((start, i));
+            while text.get(i) == Some(&b' ') {
+                i += 1;
+            }
+            start = i;
+        } else {
+            i += 1;
+        }
+    }
+    spans.push((start, text.len()));
+    spans
+        .into_iter()
+        .map(|(s, e)| {
+            let s = s + text[s..e].iter().take_while(|&&c| c == b' ').count();
+            let e = e - text[s..e].iter().rev().take_while(|&&c| c == b' ').count();
+            (s, e)
+        })
+        .filter(|(s, e)| s < e)
+        .collect()
 }
 
 #[cfg(test)]
@@ -509,19 +664,98 @@ mod tests {
     }
 
     #[test]
-    fn screen_entries_only_apply_on_their_screen() {
+    fn screen_entries_only_apply_on_their_screen_and_row() {
         let mut d = dict("");
-        d.load_screens_tsv("dwarfmode\tDrink\t勞動\nchoose_start_site\tTemperate\t貪婪\n");
-        assert!(d.screen_entry(b"Drink", "dwarfmode/Default").is_some());
-        assert!(d.screen_entry(b"Drink", "dwarfmode").is_some());
-        assert!(d.screen_entry(b"Drink", "dwarfmodeX/Default").is_none(), "要在 / 切開");
-        assert!(d.screen_entry(b"Drink", "dungeonmode/Default").is_none());
-        assert!(d.screen_entry(b"Temperate", "title/Default\nchoose_start_site").is_some(), "焦點有好幾個時任一個符合即可");
+        d.load_screens_tsv("dwarfmode\tDrink\t勞動\t\t0\nchoose_start_site\tTemperate\t貪婪\n");
+        assert!(d.screen_entry(b"Drink", "dwarfmode/Default", 0).is_some());
+        assert!(d.screen_entry(b"Drink", "dwarfmode", 0).is_some());
+        assert!(d.screen_entry(b"Drink", "dwarfmode/Default", 9).is_none(), "限定第 0 列，畫在別列不套");
+        assert!(d.screen_entry(b"Drink", "dwarfmodeX/Default", 0).is_none(), "要在 / 切開");
+        assert!(d.screen_entry(b"Drink", "dungeonmode/Default", 0).is_none());
+        assert!(d.screen_entry(b"Temperate", "title/Default\nchoose_start_site", 7).is_some(), "焦點有好幾個時任一個符合即可；沒限定列");
+    }
+
+    #[test]
+    fn full_placeholder_rejects_untranslatable_pieces() {
+        let d = dict("{1} sang {%2}.\t{1}唱了{2}。\nof {@1}\t{1}的歷史\n");
+        assert_eq!(d.translate_text(b"Urist sang of Labor.").as_deref(), Some("Urist唱了勞動的歷史。"), "句型翻得出來的片段可收");
+        assert_eq!(d.translate_text(b"Urist sang Cupidity.").as_deref(), Some("Urist唱了貪婪。"), "整句字典的片段可收");
+        assert_eq!(d.translate_text(b"Urist sang badly."), None, "翻不出來就不算命中，不留半句英文");
+    }
+
+    #[test]
+    fn lists_recurse_one_item_per_level_and_backtrack() {
+        let mut d = dict("{1} likes {%2} and {%3}.\t{1}喜歡{2}和{3}。\n{%1}, {%2}\t{1}、{2}\n");
+        d.load_tsv("greed\t貪婪\nlabor and toil\t勞動\n");
+        let items: Vec<&str> = std::iter::repeat_n("Labor", 30).collect();
+        let long = format!("Urist likes {} and Cupidity.", items.join(", "));
+        let zh = d.translate_text(long.as_bytes()).expect("三十項清單");
+        assert!(zh.starts_with("Urist喜歡勞動、勞動") && zh.ends_with("勞動和貪婪。"), "{zh}");
+        assert_eq!(d.translate_text(b"Urist likes greed, labor and toil and Labor.").as_deref(), Some("Urist喜歡貪婪、勞動和勞動。"),
+                   "項目本身含 and：在 and 處切開翻不出來就往後找");
+        let bad = format!("Urist likes {}, Zzz and Cupidity.", items.join(", "));
+        assert_eq!(d.translate_text(bad.as_bytes()), None, "其中一項翻不出來：回頭試遍切法也要很快結束");
+    }
+
+    #[test]
+    fn sentences_translate_one_by_one_with_source_positions() {
+        let mut d = dict("{1} is visiting.\t{1}來訪了。\n");
+        d.load_tsv("Labor ends.\t勞動結束。\n");
+        let text = b"Urist is visiting.  Labor ends.  ";
+        let pieces = d.translate_sentences(text).expect("兩句都有譯文");
+        assert_eq!(pieces, vec![("Urist".into(), 0), ("來訪了。".into(), 0), ("勞動結束。".into(), 20)]);
+        assert_eq!(d.translate_sentences(b"Labor ends.  Greed went home."), Err(vec![b"Greed went home.".to_vec()]), "缺一句就整段不翻，回傳缺的句子");
+        assert_eq!(sentence_spans(b"A b.  C, d  e!  "), vec![(0, 4), (6, 14)], "只在句末標點後切");
+    }
+
+    #[test]
+    fn placeholders_never_swallow_the_next_sentence() {
+        let mut d = dict("{1} is visiting.\t{1}來訪了。\n");
+        d.load_tsv("Labor ends.\t勞動結束。\n");
+        let text = b"Urist is visiting.  Labor ends.";
+        assert_eq!(d.translate_text(text), None, "整段比對時 {{1}} 不能抓到「Urist is visiting.  Labor ends」");
+        assert_eq!(d.translate_sentences(text).map(|p| p.into_iter().map(|(t, _)| t).collect::<String>()), Ok("Urist來訪了。勞動結束。".into()));
+        assert!(d.translate_text(b"Dr. Urist is visiting.").is_some(), "句點後只有一個空白不算句界");
+    }
+
+    #[test]
+    fn list_rules_split_before_item_rules_but_only_inside_placeholders() {
+        let d = dict("Labor at {1}\t到{1}勞動\n{%1}, {%2}\t{1}、{2}\n{1} likes {%2}.\t{1}喜歡{2}。\n{1}, {@2}\t{1}，{2}\n");
+        assert_eq!(d.translate_text(b"Urist likes Labor at The Hall, Cupidity.").as_deref(), Some("Urist喜歡到The Hall勞動、貪婪。"),
+                   "清單句型先切，項目句型的 {{1}} 才不會吞掉「, Cupidity」");
+        assert_eq!(d.translate_text(b"Urist likes Labor at Bob, Zzz.").as_deref(), Some("Urist喜歡到Bob, Zzz勞動。"), "有一項翻不出來時清單不成立，照項目句型");
+        assert_eq!(d.translate_text(b"Urist likes Zzz, Labor.").as_deref(), None,
+                   "{{%2}} 不收「Zzz，勞動」：只有標點的外框 {{1}}, {{@2}} 照抄英文不算翻得出來，整句照英文");
+        assert_eq!(d.translate_text(b"Urist, Labor").as_deref(), Some("Urist，勞動"), "整句的「人名, 職業」照舊");
     }
 
     #[test]
     fn rejects_bad_placeholder_layouts() {
-        let r = dict("").load_rules_tsv("{1}{2}\t{1}{2}\n{1} x\t{2}\n{1} y\t{1}{1}\nno placeholder\t沒有\n");
-        assert_eq!((r.loaded, r.bad_source), (0, 4));
+        let r = dict("").load_rules_tsv("{1}{2}\t{1}{2}\n{1} x\t{2}\n{1} y\t{1}{1}\nno placeholder\t沒有\n{1} z {@2}\t{2}\n{1+x} w\t{1}\n");
+        assert_eq!((r.loaded, r.bad_source), (0, 6), "倒數第二條漏了任意佔位 {{1}}；最後一條原文帶補字");
+    }
+
+    #[test]
+    fn suffix_is_added_only_when_the_capture_lacks_a_particle() {
+        let mut d = dict("{@1} feels {%2}.\t{1}{2+時}感到喜悅。\nafter {%1}\t{1}後\n");
+        d.load_tsv("he\t他\ntalking with Labor\t和勞動交談\nwhen Labor came\t勞動來時\n");
+        assert_eq!(d.translate_text(b"He feels talking with Labor.").as_deref(), Some("他和勞動交談時感到喜悅。"), "沒有介系詞的片語補「時」");
+        assert_eq!(d.translate_text(b"He feels after talking with Labor.").as_deref(), Some("他和勞動交談後感到喜悅。"), "「後」結尾不補");
+        assert_eq!(d.translate_text(b"He feels when Labor came.").as_deref(), Some("他勞動來時感到喜悅。"), "已經有「時」不重複");
+    }
+
+    #[test]
+    fn rules_starting_with_a_free_placeholder_are_tried_after_constrained_ones() {
+        let mut d = dict("{1} was given away\t{1}被送走\n{@1} feels {%2}.\t{1}{2+時}感到喜悅。\nafter {1} was given away\t在{1}被送走後\n");
+        d.load_tsv("he\t他\n");
+        assert_eq!(d.translate_text(b"He feels after The Gem was given away.").as_deref(), Some("他在The Gem被送走後感到喜悅。"),
+                   "寫在前面的 {{1}} was given away 不能把「He feels after The Gem」吞進 {{1}}");
+    }
+
+    #[test]
+    fn term_placeholders_may_be_left_out_of_the_translation() {
+        let d = dict("{@1} loves {%2}, and {@3} hates {%4}.\t{1}熱愛{2}，卻討厭{4}。\n");
+        assert_eq!(d.translate_text(b"Labor loves Cupidity, and Labor hates Labor.").as_deref(), Some("勞動熱愛貪婪，卻討厭勞動。"),
+                   "{{@3}}（重複的主詞）可以省略");
     }
 }

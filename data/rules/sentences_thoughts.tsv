@@ -1,0 +1,74 @@
+en	zh-Hant	zh-Hans	align	note
+{%1}, and mulling over the recurring memory allowed {@2} to rethink {@3} intellectual values and changed {@4} personal tendencies.	{1}；反覆思索這段揮之不去的記憶，讓{2}重新審視了自己的價值觀，性格傾向也隨之改變。	{1}；反复思索这段挥之不去的记忆，让{2}重新审视了自己的价值观，性格倾向也随之改变。		FUN_1401a5b70：想法句後接記憶改變價值觀與性格；{1} 是不含句點的外框
+{%1}, and mulling over the recurring memory allowed {@2} to rethink {@3} intellectual values.	{1}；反覆思索這段揮之不去的記憶，讓{2}重新審視了自己的價值觀。	{1}；反复思索这段挥之不去的记忆，让{2}重新审视了自己的价值观。		FUN_1401a5b70：同上，只改變價值觀
+{%1}, and mulling over the recurring memory changed {@2} personal tendencies.	{1}；反覆思索這段揮之不去的記憶，改變了{2}的性格傾向。	{1}；反复思索这段挥之不去的记忆，改变了{2}的性格倾向。		FUN_1401a5b70：同上，只改變性格
+{@1} feels {@2} {%3}.	{1}{3+時}感到{2}。	{1}{3+时}感到{2}。		FUN_1401a5b70：想法句外框，現在式；{3} 是介系詞＋原因或 remembering 等記憶片語，中文放在情緒前
+{@1} felt {@2} {%3}.	{1}先前{3+時}感到{2}。	{1}之前{3+时}感到{2}。		FUN_1401a5b70：想法句外框，過去式（較早的想法，灰字）
+{@1} is in {@2} {%3}.	{1}{3+時}深感{2}。	{1}{3+时}深感{2}。		FUN_1401a5b70：想法句外框，is in agony／despair／doubt／awe／anguish／existential crisis
+{@1} was in {@2} {%3}.	{1}先前{3+時}深感{2}。	{1}之前{3+时}深感{2}。		FUN_1401a5b70：想法句外框，過去式
+{@1} is {@2} {%3}.	{1}{3+時}感到{2}。	{1}{3+时}感到{2}。		FUN_1401a5b70：想法句外框，is satisfied 等形容詞情緒
+{@1} was {@2} {%3}.	{1}先前{3+時}感到{2}。	{1}之前{3+时}感到{2}。		FUN_1401a5b70：想法句外框，過去式
+{@1} doesn't feel {@2} {%3}.	{1}{3+時}沒有{2}。	{1}{3+时}没有{2}。		FUN_1401a5b70：想法句外框，情緒詞固定是 anything（任何感受）
+{@1} didn't feel {@2} {%3}.	{1}先前{3+時}沒有{2}。	{1}之前{3+时}没有{2}。		FUN_1401a5b70：想法句外框，過去式
+{@1} grieves {%2}.	{1}{2+時}悲痛不已。	{1}{2+时}悲痛不已。		FUN_1401a5b70：想法句外框，無動詞情緒；情緒字寫死，顏色跟句首
+{@1} grieved {%2}.	{1}先前{2+時}悲痛不已。	{1}之前{2+时}悲痛不已。		FUN_1401a5b70：想法句外框，過去式
+{@1} rages {%2}.	{1}{2+時}勃然大怒。	{1}{2+时}勃然大怒。		FUN_1401a5b70：想法句外框，無動詞情緒；情緒字寫死，顏色跟句首
+{@1} raged {%2}.	{1}先前{2+時}勃然大怒。	{1}之前{2+时}勃然大怒。		FUN_1401a5b70：想法句外框，過去式
+{@1} panics {%2}.	{1}{2+時}驚慌失措。	{1}{2+时}惊慌失措。		FUN_1401a5b70：想法句外框，無動詞情緒；情緒字寫死，顏色跟句首
+{@1} panicked {%2}.	{1}先前{2+時}驚慌失措。	{1}之前{2+时}惊慌失措。		FUN_1401a5b70：想法句外框，過去式
+{@1} feels {@2} {%3}	{1}{3+時}感到{2}	{1}{3+时}感到{2}		FUN_1401a5b70：同上不含句點，供 and mulling over… 句型的 {1}
+{@1} felt {@2} {%3}	{1}先前{3+時}感到{2}	{1}之前{3+时}感到{2}		FUN_1401a5b70：同上不含句點，供 and mulling over… 句型的 {1}
+{@1} is in {@2} {%3}	{1}{3+時}深感{2}	{1}{3+时}深感{2}		FUN_1401a5b70：同上不含句點，供 and mulling over… 句型的 {1}
+{@1} was in {@2} {%3}	{1}先前{3+時}深感{2}	{1}之前{3+时}深感{2}		FUN_1401a5b70：同上不含句點，供 and mulling over… 句型的 {1}
+{@1} is {@2} {%3}	{1}{3+時}感到{2}	{1}{3+时}感到{2}		FUN_1401a5b70：同上不含句點，供 and mulling over… 句型的 {1}
+{@1} was {@2} {%3}	{1}先前{3+時}感到{2}	{1}之前{3+时}感到{2}		FUN_1401a5b70：同上不含句點，供 and mulling over… 句型的 {1}
+{@1} doesn't feel {@2} {%3}	{1}{3+時}沒有{2}	{1}{3+时}没有{2}		FUN_1401a5b70：同上不含句點，供 and mulling over… 句型的 {1}
+{@1} didn't feel {@2} {%3}	{1}先前{3+時}沒有{2}	{1}之前{3+时}没有{2}		FUN_1401a5b70：同上不含句點，供 and mulling over… 句型的 {1}
+{@1} grieves {%2}	{1}{2+時}悲痛不已	{1}{2+时}悲痛不已		FUN_1401a5b70：同上不含句點，供 and mulling over… 句型的 {1}
+{@1} grieved {%2}	{1}先前{2+時}悲痛不已	{1}之前{2+时}悲痛不已		FUN_1401a5b70：同上不含句點，供 and mulling over… 句型的 {1}
+{@1} rages {%2}	{1}{2+時}勃然大怒	{1}{2+时}勃然大怒		FUN_1401a5b70：同上不含句點，供 and mulling over… 句型的 {1}
+{@1} raged {%2}	{1}先前{2+時}勃然大怒	{1}之前{2+时}勃然大怒		FUN_1401a5b70：同上不含句點，供 and mulling over… 句型的 {1}
+{@1} panics {%2}	{1}{2+時}驚慌失措	{1}{2+时}惊慌失措		FUN_1401a5b70：同上不含句點，供 and mulling over… 句型的 {1}
+{@1} panicked {%2}	{1}先前{2+時}驚慌失措	{1}之前{2+时}惊慌失措		FUN_1401a5b70：同上不含句點，供 and mulling over… 句型的 {1}
+remembering that {%1}	回想起{1+時}	回想起{1+时}		FUN_1401a5b70：記憶片語；that 開頭的原因（composer case 0x40、0x46 一律帶 that）不套「因…而」
+dwelling upon that {%1}	反覆想著{1+時}	反复想着{1+时}		FUN_1401a5b70：記憶片語；that 開頭的原因（composer case 0x40、0x46 一律帶 that）不套「因…而」
+reliving that {%1}	腦海中重現{1+時}	脑海中重现{1+时}		FUN_1401a5b70：記憶片語；that 開頭的原因（composer case 0x40、0x46 一律帶 that）不套「因…而」
+remembering {%1}	回想起{1+時}	回想起{1+时}		FUN_1401a5b70：記憶片語，接在情緒詞後；正面情緒 remembering、負面 dwelling upon、驚懼類 reliving
+dwelling upon {%1}	反覆想著{1+時}	反复想着{1+时}		FUN_1401a5b70：記憶片語，接在情緒詞後；正面情緒 remembering、負面 dwelling upon、驚懼類 reliving
+reliving {%1}	腦海中重現{1+時}	脑海中重现{1+时}		FUN_1401a5b70：記憶片語，接在情緒詞後；正面情緒 remembering、負面 dwelling upon、驚懼類 reliving
+Anything remembering {%1}.	回想起{1+時}毫無感受。	回想起{1+时}毫无感受。		FUN_140481f00：記憶清單，情緒 -1
+Anxious dwelling upon {%1}.	反覆想著{1+時}感到焦慮。	反复想着{1+时}感到焦虑。		FUN_140481f00：記憶清單；句首大寫的 Anxious 在別檔另有譯名，這裡寫死（顏色跟句首）
+Hateful dwelling upon {%1}.	反覆想著{1+時}感到憎恨。	反复想着{1+时}感到憎恨。		FUN_140481f00：記憶清單；句首大寫的 Hateful 在別檔另有譯名，這裡寫死（顏色跟句首）
+Isolated dwelling upon {%1}.	反覆想著{1+時}感到孤立。	反复想着{1+时}感到孤立。		FUN_140481f00：記憶清單；句首大寫的 Isolated 在別檔另有譯名，這裡寫死（顏色跟句首）
+Vengeful dwelling upon {%1}.	反覆想著{1+時}感到復仇心切。	反复想着{1+时}感到复仇心切。		FUN_140481f00：記憶清單；句首大寫的 Vengeful 在別檔另有譯名，這裡寫死（顏色跟句首）
+Lustful remembering {%1}.	回想起{1+時}感到情慾高漲。	回想起{1+时}感到情欲高涨。		FUN_140481f00：記憶清單；句首大寫的 Lustful 在別檔另有譯名，這裡寫死（顏色跟句首）
+Proud remembering {%1}.	回想起{1+時}感到自豪。	回想起{1+时}感到自豪。		FUN_140481f00：記憶清單；句首大寫的 Proud 在別檔另有譯名，這裡寫死（顏色跟句首）
+Patient remembering {%1}.	回想起{1+時}感到心平氣和。	回想起{1+时}感到心平气和。		FUN_140481f00：記憶清單；句首大寫的 Patient 在別檔另有譯名，這裡寫死（顏色跟句首）
+{@1} remembering that {%2}.	回想起{2+時}感到{1}。	回想起{2+时}感到{1}。		FUN_140481f00：記憶清單，that 開頭的原因
+{@1} dwelling upon that {%2}.	反覆想著{2+時}感到{1}。	反复想着{2+时}感到{1}。		FUN_140481f00：記憶清單，that 開頭的原因
+{@1} reliving that {%2}.	腦海中重現{2+時}感到{1}。	脑海中重现{2+时}感到{1}。		FUN_140481f00：記憶清單，that 開頭的原因
+{@1} remembering {%2}.	回想起{2+時}感到{1}。	回想起{2+时}感到{1}。		FUN_140481f00：記憶清單，句首是首字大寫的情緒詞
+{@1} dwelling upon {%2}.	反覆想著{2+時}感到{1}。	反复想着{2+时}感到{1}。		FUN_140481f00：記憶清單，句首是首字大寫的情緒詞
+{@1} reliving {%2}.	腦海中重現{2+時}感到{1}。	脑海中重现{2+时}感到{1}。		FUN_140481f00：記憶清單，句首是首字大寫的情緒詞
+Became {%1} and learned to {%2}.	變得{1}，也學會了{2}。	变得{1}，也学会了{2}。		FUN_140481f00：記憶改變性格與價值觀（接在記憶句後）
+Became {%1}.	變得{1}。	变得{1}。		FUN_140481f00：記憶改變性格
+Learned to {%1}.	學會了{1}。	学会了{1}。		FUN_140481f00：記憶改變價值觀（value／disdain X）
+Spring {#1}	{1} 年春季	{1} 年春季		FUN_140481f00：記憶清單的季節分段標題
+Summer {#1}	{1} 年夏季	{1} 年夏季		FUN_140481f00：記憶清單的季節分段標題
+Autumn {#1}	{1} 年秋季	{1} 年秋季		FUN_140481f00：記憶清單的季節分段標題
+Winter {#1}	{1} 年冬季	{1} 年冬季		FUN_140481f00：記憶清單的季節分段標題
+while in {%1}	在{1}中	在{1}中		fn_thought_composer：原因前的介系詞，譯成放在「感到」前的狀語；本體由 sentences_causes_* 提供
+after {%1}	{1}後	{1}后		fn_thought_composer：原因前的介系詞，譯成放在「感到」前的狀語；本體由 sentences_causes_* 提供
+while {%1}	{1}時	{1}时		fn_thought_composer：原因前的介系詞，譯成放在「感到」前的狀語；本體由 sentences_causes_* 提供
+when {%1}	{1}時	{1}时		fn_thought_composer：原因前的介系詞，譯成放在「感到」前的狀語；本體由 sentences_causes_* 提供
+upon {%1}	{1}時	{1}时		fn_thought_composer：原因前的介系詞，譯成放在「感到」前的狀語；本體由 sentences_causes_* 提供
+during {%1}	{1}期間	{1}期间		fn_thought_composer：原因前的介系詞，譯成放在「感到」前的狀語；本體由 sentences_causes_* 提供
+near {%1}	在{1}附近	在{1}附近		fn_thought_composer：原因前的介系詞，譯成放在「感到」前的狀語；本體由 sentences_causes_* 提供
+at {%1}	因{1}而	因{1}而		fn_thought_composer：原因前的介系詞，譯成放在「感到」前的狀語；本體由 sentences_causes_* 提供
+by {%1}	因{1}而	因{1}而		fn_thought_composer：原因前的介系詞，譯成放在「感到」前的狀語；本體由 sentences_causes_* 提供
+considering {%1}	因{1}而	因{1}而		fn_thought_composer：原因前的介系詞，譯成放在「感到」前的狀語；本體由 sentences_causes_* 提供
+that {%1}	因{1}而	因{1}而		fn_thought_composer：原因前的介系詞，譯成放在「感到」前的狀語；本體由 sentences_causes_* 提供
+to be {%1}	因{1}而	因{1}而		fn_thought_composer：原因前的介系詞，譯成放在「感到」前的狀語；本體由 sentences_causes_* 提供
+to have {%1}	因{1}而	因{1}而		fn_thought_composer：原因前的介系詞，譯成放在「感到」前的狀語；本體由 sentences_causes_* 提供
+about {%1}	因{1}而	因{1}而		fn_thought_composer：原因前的介系詞，譯成放在「感到」前的狀語；本體由 sentences_causes_* 提供
+due to {%1}	因{1}而	因{1}而		fn_thought_composer：原因前的介系詞，譯成放在「感到」前的狀語；本體由 sentences_causes_* 提供

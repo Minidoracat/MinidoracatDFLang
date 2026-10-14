@@ -1,0 +1,527 @@
+en	zh-Hant	zh-Hans	align	note
+is not the type to fall in love or even develop positive feelings	不是那種會墜入愛河、甚至對事物產生好感的人	不是那种会坠入爱河、甚至对事物产生好感的人		性格特質句本體：FUN_140e26ca0 case 0x0 LOVE_PROPENSITY；接在句型 {@1} {%2}. 的 {2}
+never falls in love or develops positive feelings toward anything	從不墜入愛河，也從不對任何事物產生好感	从不坠入爱河，也从不对任何事物产生好感		性格特質句本體：FUN_140e26ca0 case 0x0 LOVE_PROPENSITY；接在句型 {@1} {%2}. 的 {2}
+does not easily fall in love and rarely develops positive sentiments	不容易墜入愛河，也很少對事物產生好感	不容易坠入爱河，也很少对事物产生好感		性格特質句本體：FUN_140e26ca0 case 0x0 LOVE_PROPENSITY；接在句型 {@1} {%2}. 的 {2}
+can easily fall in love or develop positive sentiments	很容易墜入愛河或對事物產生好感	很容易坠入爱河或对事物产生好感		性格特質句本體：FUN_140e26ca0 case 0x0 LOVE_PROPENSITY；接在句型 {@1} {%2}. 的 {2}
+very easily falls into love and develops positive feelings	非常容易墜入愛河，也很容易對事物產生好感	非常容易坠入爱河，也很容易对事物产生好感		性格特質句本體：FUN_140e26ca0 case 0x0 LOVE_PROPENSITY；接在句型 {@1} {%2}. 的 {2}
+is always in love with somebody and easily develops positive feelings	總是愛著某個人，也很容易對事物產生好感	总是爱着某个人，也很容易对事物产生好感		性格特質句本體：FUN_140e26ca0 case 0x0 LOVE_PROPENSITY；接在句型 {@1} {%2}. 的 {2}
+very rarely develops negative feelings toward things	極少對事物產生負面情緒	极少对事物产生负面情绪		性格特質句本體：FUN_140e26ca0 case 0x1 HATE_PROPENSITY；接在句型 {@1} {%2}. 的 {2}
+never feels hatred toward anyone or anything	從不憎恨任何人或任何事物	从不憎恨任何人或任何事物		性格特質句本體：FUN_140e26ca0 case 0x1 HATE_PROPENSITY；接在句型 {@1} {%2}. 的 {2}
+does not easily hate or develop negative feelings	不容易產生恨意或負面情緒	不容易产生恨意或负面情绪		性格特質句本體：FUN_140e26ca0 case 0x1 HATE_PROPENSITY；接在句型 {@1} {%2}. 的 {2}
+is quick to form negative views about things	很快就會對事物產生負面看法	很快就会对事物产生负面看法		性格特質句本體：FUN_140e26ca0 case 0x1 HATE_PROPENSITY；接在句型 {@1} {%2}. 的 {2}
+is prone to hatreds and often develops negative feelings	容易心生怨恨，常對事物產生負面情緒	容易心生怨恨，常对事物产生负面情绪		性格特質句本體：FUN_140e26ca0 case 0x1 HATE_PROPENSITY；接在句型 {@1} {%2}. 的 {2}
+is often inflamed by hatred and easily develops hatred toward things	常被仇恨沖昏頭，很容易對事物心生恨意	常被仇恨冲昏头脑，很容易对事物心生恨意		性格特質句本體：FUN_140e26ca0 case 0x1 HATE_PROPENSITY；接在句型 {@1} {%2}. 的 {2}
+is rarely jealous	很少嫉妒別人	很少嫉妒别人		性格特質句本體：FUN_140e26ca0 case 0x2 ENVY_PROPENSITY；接在句型 {@1} {%2}. 的 {2}
+never envies others their status, situation or possessions	從不羨慕別人的地位、處境或財物	从不羡慕别人的地位、处境或财物		性格特質句本體：FUN_140e26ca0 case 0x2 ENVY_PROPENSITY；接在句型 {@1} {%2}. 的 {2}
+doesn't often feel envious of others	不常羨慕別人	不常羡慕别人		性格特質句本體：FUN_140e26ca0 case 0x2 ENVY_PROPENSITY；接在句型 {@1} {%2}. 的 {2}
+often feels envious of others	常常羨慕別人	常常羡慕别人		性格特質句本體：FUN_140e26ca0 case 0x2 ENVY_PROPENSITY；接在句型 {@1} {%2}. 的 {2}
+is prone to strong feelings of jealousy	容易產生強烈的嫉妒心	容易产生强烈的嫉妒心		性格特質句本體：FUN_140e26ca0 case 0x2 ENVY_PROPENSITY；接在句型 {@1} {%2}. 的 {2}
+is consumed by overpowering feelings of jealousy	被壓倒一切的嫉妒心吞噬	被压倒一切的嫉妒心吞噬		性格特質句本體：FUN_140e26ca0 case 0x2 ENVY_PROPENSITY；接在句型 {@1} {%2}. 的 {2}
+is dour as a rule	平常總是板著臉	平常总是板着脸		性格特質句本體：FUN_140e26ca0 case 0x3 CHEER_PROPENSITY；接在句型 {@1} {%2}. 的 {2}
+is never the slightest bit cheerful about anything	從不為任何事開心，一絲一毫也沒有	从不为任何事开心，一丝一毫也没有		性格特質句本體：FUN_140e26ca0 case 0x3 CHEER_PROPENSITY；接在句型 {@1} {%2}. 的 {2}
+is rarely happy or enthusiastic	很少感到快樂或熱衷	很少感到快乐或热衷		性格特質句本體：FUN_140e26ca0 case 0x3 CHEER_PROPENSITY；接在句型 {@1} {%2}. 的 {2}
+is often cheerful	常常很開朗	常常很开朗		性格特質句本體：FUN_140e26ca0 case 0x3 CHEER_PROPENSITY；接在句型 {@1} {%2}. 的 {2}
+can be very happy and optimistic	可以非常快樂又樂觀	可以非常快乐又乐观		性格特質句本體：FUN_140e26ca0 case 0x3 CHEER_PROPENSITY；接在句型 {@1} {%2}. 的 {2}
+often feels filled with joy	常常滿心喜悅	常常满心喜悦		性格特質句本體：FUN_140e26ca0 case 0x3 CHEER_PROPENSITY；接在句型 {@1} {%2}. 的 {2}
+almost never feels discouraged	幾乎從不灰心	几乎从不灰心		性格特質句本體：FUN_140e26ca0 case 0x4 DEPRESSION_PROPENSITY；接在句型 {@1} {%2}. 的 {2}
+never feels discouraged	從不灰心	从不灰心		性格特質句本體：FUN_140e26ca0 case 0x4 DEPRESSION_PROPENSITY；接在句型 {@1} {%2}. 的 {2}
+rarely feels discouraged	很少灰心	很少灰心		性格特質句本體：FUN_140e26ca0 case 0x4 DEPRESSION_PROPENSITY；接在句型 {@1} {%2}. 的 {2}
+often feels discouraged	常常灰心喪志	常常灰心丧气		性格特質句本體：FUN_140e26ca0 case 0x4 DEPRESSION_PROPENSITY；接在句型 {@1} {%2}. 的 {2}
+is often sad and dejected	常常悲傷沮喪	常常悲伤沮丧		性格特質句本體：FUN_140e26ca0 case 0x4 DEPRESSION_PROPENSITY；接在句型 {@1} {%2}. 的 {2}
+is frequently depressed	經常消沉抑鬱	经常消沉抑郁		性格特質句本體：FUN_140e26ca0 case 0x4 DEPRESSION_PROPENSITY；接在句型 {@1} {%2}. 的 {2}
+is very slow to anger	非常不容易動怒	非常不容易动怒		性格特質句本體：FUN_140e26ca0 case 0x5 ANGER_PROPENSITY；接在句型 {@1} {%2}. 的 {2}
+never becomes angry	從不生氣	从不生气		性格特質句本體：FUN_140e26ca0 case 0x5 ANGER_PROPENSITY；接在句型 {@1} {%2}. 的 {2}
+is slow to anger	不容易動怒	不容易动怒		性格特質句本體：FUN_140e26ca0 case 0x5 ANGER_PROPENSITY；接在句型 {@1} {%2}. 的 {2}
+is quick to anger	很容易動怒	很容易动怒		性格特質句本體：FUN_140e26ca0 case 0x5 ANGER_PROPENSITY；接在句型 {@1} {%2}. 的 {2}
+is very quick to anger	非常容易動怒	非常容易动怒		性格特質句本體：FUN_140e26ca0 case 0x5 ANGER_PROPENSITY；接在句型 {@1} {%2}. 的 {2}
+is in a constant state of internal rage	內心一直怒火中燒	内心一直怒火中烧		性格特質句本體：FUN_140e26ca0 case 0x5 ANGER_PROPENSITY；接在句型 {@1} {%2}. 的 {2}
+has a very calm demeanor	舉止非常沉著	举止非常沉着		性格特質句本體：FUN_140e26ca0 case 0x6 ANXIETY_PROPENSITY；接在句型 {@1} {%2}. 的 {2}
+has an incredibly calm demeanor	舉止沉著得驚人	举止沉着得惊人		性格特質句本體：FUN_140e26ca0 case 0x6 ANXIETY_PROPENSITY；接在句型 {@1} {%2}. 的 {2}
+has a calm demeanor	舉止沉著	举止沉着		性格特質句本體：FUN_140e26ca0 case 0x6 ANXIETY_PROPENSITY；接在句型 {@1} {%2}. 的 {2}
+is often nervous	常常緊張	常常紧张		性格特質句本體：FUN_140e26ca0 case 0x6 ANXIETY_PROPENSITY；接在句型 {@1} {%2}. 的 {2}
+is always tense and jittery	總是緊繃又心神不寧	总是紧绷又心神不宁		性格特質句本體：FUN_140e26ca0 case 0x6 ANXIETY_PROPENSITY；接在句型 {@1} {%2}. 的 {2}
+is a nervous wreck	緊張到快要崩潰	紧张得快要崩溃		性格特質句本體：FUN_140e26ca0 case 0x6 ANXIETY_PROPENSITY；接在句型 {@1} {%2}. 的 {2}
+rarely looks on others with lust	很少用情慾的眼光看人	很少用情欲的眼光看人		性格特質句本體：FUN_140e26ca0 case 0x7 LUST_PROPENSITY；接在句型 {@1} {%2}. 的 {2}
+never feels lustful passions	從不產生情慾	从不产生情欲		性格特質句本體：FUN_140e26ca0 case 0x7 LUST_PROPENSITY；接在句型 {@1} {%2}. 的 {2}
+does not often feel lustful	不常產生情慾	不常产生情欲		性格特質句本體：FUN_140e26ca0 case 0x7 LUST_PROPENSITY；接在句型 {@1} {%2}. 的 {2}
+often feels lustful	常常情慾高漲	常常情欲高涨		性格特質句本體：FUN_140e26ca0 case 0x7 LUST_PROPENSITY；接在句型 {@1} {%2}. 的 {2}
+is prone to strong feelings of lust	容易產生強烈的情慾	容易产生强烈的情欲		性格特質句本體：FUN_140e26ca0 case 0x7 LUST_PROPENSITY；接在句型 {@1} {%2}. 的 {2}
+is constantly ablaze with feelings of lust	總是慾火焚身	总是欲火焚身		性格特質句本體：FUN_140e26ca0 case 0x7 LUST_PROPENSITY；接在句型 {@1} {%2}. 的 {2}
+is confident under pressure	在壓力下依然從容	在压力下依然从容		性格特質句本體：FUN_140e26ca0 case 0x8 STRESS_VULNERABILITY；接在句型 {@1} {%2}. 的 {2}
+is impervious to the effects of stress	完全不受壓力影響	完全不受压力影响		性格特質句本體：FUN_140e26ca0 case 0x8 STRESS_VULNERABILITY；接在句型 {@1} {%2}. 的 {2}
+can handle stress	應付得了壓力	应付得了压力		性格特質句本體：FUN_140e26ca0 case 0x8 STRESS_VULNERABILITY；接在句型 {@1} {%2}. 的 {2}
+doesn't handle stress well	不太能應付壓力	不太能应付压力		性格特質句本體：FUN_140e26ca0 case 0x8 STRESS_VULNERABILITY；接在句型 {@1} {%2}. 的 {2}
+cracks easily under pressure	一有壓力就容易崩潰	一有压力就容易崩溃		性格特質句本體：FUN_140e26ca0 case 0x8 STRESS_VULNERABILITY；接在句型 {@1} {%2}. 的 {2}
+becomes completely helpless in stressful situations	一遇到壓力就完全手足無措	一遇到压力就完全手足无措		性格特質句本體：FUN_140e26ca0 case 0x8 STRESS_VULNERABILITY；接在句型 {@1} {%2}. 的 {2}
+often neglects his own wellbeing, having no interest in material goods	常常不顧自己的身心狀況，對物質毫無興趣	常常不顾自己的身心状况，对物质毫无兴趣		性格特質句本體：FUN_140e26ca0 case 0x9 GREED；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+often neglects her own wellbeing, having no interest in material goods	常常不顧自己的身心狀況，對物質毫無興趣	常常不顾自己的身心状况，对物质毫无兴趣		性格特質句本體：FUN_140e26ca0 case 0x9 GREED；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+often neglects its own wellbeing, having no interest in material goods	常常不顧自己的身心狀況，對物質毫無興趣	常常不顾自己的身心状况，对物质毫无兴趣		性格特質句本體：FUN_140e26ca0 case 0x9 GREED；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+desires little for himself in the way of possessions	很少為自己求取財物	很少为自己求取财物		性格特質句本體：FUN_140e26ca0 case 0x9 GREED；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+desires little for herself in the way of possessions	很少為自己求取財物	很少为自己求取财物		性格特質句本體：FUN_140e26ca0 case 0x9 GREED；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+desires little for itself in the way of possessions	很少為自己求取財物	很少为自己求取财物		性格特質句本體：FUN_140e26ca0 case 0x9 GREED；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+doesn't focus on material goods	不太在意物質	不太在意物质		性格特質句本體：FUN_140e26ca0 case 0x9 GREED；接在句型 {@1} {%2}. 的 {2}
+has a greedy streak	有點貪心	有点贪心		性格特質句本體：FUN_140e26ca0 case 0x9 GREED；接在句型 {@1} {%2}. 的 {2}
+is very greedy	非常貪婪	非常贪婪		性格特質句本體：FUN_140e26ca0 case 0x9 GREED；接在句型 {@1} {%2}. 的 {2}
+is as avaricious as they come, obsessed with acquiring wealth	貪得無厭到了極點，滿腦子只想斂財	贪得无厌到了极点，满脑子只想敛财		性格特質句本體：FUN_140e26ca0 case 0x9 GREED；接在句型 {@1} {%2}. 的 {2}
+only rarely feels strong cravings or urges	很少有強烈的渴望或衝動	很少有强烈的渴望或冲动		性格特質句本體：FUN_140e26ca0 case 0xa IMMODERATION；接在句型 {@1} {%2}. 的 {2}
+never feels tempted to overindulge in anything	從不受誘惑而沉溺於任何事物	从不受诱惑而沉溺于任何事物		性格特質句本體：FUN_140e26ca0 case 0xa IMMODERATION；接在句型 {@1} {%2}. 的 {2}
+doesn't often experience strong cravings or urges	不常有強烈的渴望或衝動	不常有强烈的渴望或冲动		性格特質句本體：FUN_140e26ca0 case 0xa IMMODERATION；接在句型 {@1} {%2}. 的 {2}
+occasionally overindulges	偶爾會放縱過度	偶尔会放纵过度		性格特質句本體：FUN_140e26ca0 case 0xa IMMODERATION；接在句型 {@1} {%2}. 的 {2}
+feels strong urges and seeks short-term rewards	衝動強烈，只求眼前的滿足	冲动强烈，只求眼前的满足		性格特質句本體：FUN_140e26ca0 case 0xa IMMODERATION；接在句型 {@1} {%2}. 的 {2}
+is ruled by irresistible cravings and urges	被無法抗拒的渴望與衝動支配	被无法抗拒的渴望与冲动支配		性格特質句本體：FUN_140e26ca0 case 0xa IMMODERATION；接在句型 {@1} {%2}. 的 {2}
+does not enjoy participating in physical confrontations	不喜歡跟人動手	不喜欢跟人动手		性格特質句本體：FUN_140e26ca0 case 0xb VIOLENT；接在句型 {@1} {%2}. 的 {2}
+would flee even the most necessary battle to avoid any form of physical confrontation	為了避免任何肢體衝突，連非打不可的仗都會逃避	为了避免任何肢体冲突，连非打不可的仗都会逃避		性格特質句本體：FUN_140e26ca0 case 0xb VIOLENT；接在句型 {@1} {%2}. 的 {2}
+tends to avoid any physical confrontations	往往避免任何肢體衝突	往往避免任何肢体冲突		性格特質句本體：FUN_140e26ca0 case 0xb VIOLENT；接在句型 {@1} {%2}. 的 {2}
+likes to brawl	喜歡打架	喜欢打架		性格特質句本體：FUN_140e26ca0 case 0xb VIOLENT；接在句型 {@1} {%2}. 的 {2}
+would never pass up a chance for a good fistfight	絕不錯過好好打一架的機會	绝不错过好好打一架的机会		性格特質句本體：FUN_140e26ca0 case 0xb VIOLENT；接在句型 {@1} {%2}. 的 {2}
+is given to rough-and-tumble brawling, even to the point of starting fights for no reason	動不動就跟人扭打，甚至會無緣無故挑起鬥毆	动不动就跟人扭打，甚至会无缘无故挑起斗殴		性格特質句本體：FUN_140e26ca0 case 0xb VIOLENT；接在句型 {@1} {%2}. 的 {2}
+drops any activity at the slightest hint of difficulty or even the suggestion of effort being required	只要稍有困難，甚至只是看起來要費點力氣，就會放下手邊的事	只要稍有困难，甚至只是看起来要费点力气，就会放下手头的事		性格特質句本體：FUN_140e26ca0 case 0xc PERSEVERANCE；接在句型 {@1} {%2}. 的 {2}
+doesn't stick with things if even minor difficulties arise	一遇到小困難就半途而廢	一遇到小困难就半途而废		性格特質句本體：FUN_140e26ca0 case 0xc PERSEVERANCE；接在句型 {@1} {%2}. 的 {2}
+has a noticeable lack of perseverance	明顯缺乏毅力	明显缺乏毅力		性格特質句本體：FUN_140e26ca0 case 0xc PERSEVERANCE；接在句型 {@1} {%2}. 的 {2}
+is stubborn	很頑強，不輕言放棄	很顽强，不轻言放弃		性格特質句本體：FUN_140e26ca0 case 0xc PERSEVERANCE；接在句型 {@1} {%2}. 的 {2}
+is very stubborn	非常頑強，絕不輕言放棄	非常顽强，绝不轻言放弃		性格特質句本體：FUN_140e26ca0 case 0xc PERSEVERANCE；接在句型 {@1} {%2}. 的 {2}
+is unbelievably stubborn and will stick with even the most futile action once his mind is made up	頑強得難以置信，一旦下定決心，再徒勞的事也會堅持到底	顽强得难以置信，一旦下定决心，再徒劳的事也会坚持到底		性格特質句本體：FUN_140e26ca0 case 0xc PERSEVERANCE；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+is unbelievably stubborn and will stick with even the most futile action once her mind is made up	頑強得難以置信，一旦下定決心，再徒勞的事也會堅持到底	顽强得难以置信，一旦下定决心，再徒劳的事也会坚持到底		性格特質句本體：FUN_140e26ca0 case 0xc PERSEVERANCE；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+is unbelievably stubborn and will stick with even the most futile action once its mind is made up	頑強得難以置信，一旦下定決心，再徒勞的事也會堅持到底	顽强得难以置信，一旦下定决心，再徒劳的事也会坚持到底		性格特質句本體：FUN_140e26ca0 case 0xc PERSEVERANCE；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+is stingy with resources on projects and refuses to expend any extra effort	做事時捨不得用資源，也不肯多花一分力氣	干活时舍不得用资源，也不肯多花一分力气		性格特質句本體：FUN_140e26ca0 case 0xd WASTEFULNESS；接在句型 {@1} {%2}. 的 {2}
+cuts any corners possible when working on a project, regardless of the consequences, rather than wasting effort or resources	做事時能省則省，寧可偷工減料也不浪費力氣或資源，後果在所不惜	干活时能省则省，宁可偷工减料也不浪费力气或资源，后果在所不惜		性格特質句本體：FUN_140e26ca0 case 0xd WASTEFULNESS；接在句型 {@1} {%2}. 的 {2}
+tends to be a little tight with resources when working on projects	做事時用起資源有點小氣	干活时用起资源有点抠门		性格特質句本體：FUN_140e26ca0 case 0xd WASTEFULNESS；接在句型 {@1} {%2}. 的 {2}
+tends to be a little wasteful when working on projects	做事時有點浪費	干活时有点浪费		性格特質句本體：FUN_140e26ca0 case 0xd WASTEFULNESS；接在句型 {@1} {%2}. 的 {2}
+is not careful with resources when working on projects and often spends unnecessary effort	做事時不愛惜資源，常常白費力氣	干活时不爱惜资源，常常白费力气		性格特質句本體：FUN_140e26ca0 case 0xd WASTEFULNESS；接在句型 {@1} {%2}. 的 {2}
+is completely careless with resources when completing projects and invariable wastes a lot of time and effort	做事時完全不顧惜資源，總是浪費大量時間和力氣	干活时完全不顾惜资源，总是浪费大量时间和力气		性格特質句本體：FUN_140e26ca0 case 0xd WASTEFULNESS；接在句型 {@1} {%2}. 的 {2}
+would be deeply satisfied if everyone could live as one in complete harmony	衷心盼望大家能和睦相處、親如一家	衷心盼望大家能和睦相处、亲如一家		性格特質句本體：FUN_140e26ca0 case 0xe DISCORD；接在句型 {@1} {%2}. 的 {2}
+feels best when everyone gets along without any strife or contention	在大家相處融洽、沒有任何紛爭時最自在	在大家相处融洽、没有任何纷争时最自在		性格特質句本體：FUN_140e26ca0 case 0xe DISCORD；接在句型 {@1} {%2}. 的 {2}
+prefers that everyone live as harmoniously as possible	希望大家盡可能和睦相處	希望大家尽可能和睦相处		性格特質句本體：FUN_140e26ca0 case 0xe DISCORD；接在句型 {@1} {%2}. 的 {2}
+doesn't mind a little tumult and discord in day-to-day living	不介意日常生活中有點吵鬧和不和	不介意日常生活中有点吵闹和不和		性格特質句本體：FUN_140e26ca0 case 0xe DISCORD；接在句型 {@1} {%2}. 的 {2}
+finds a chaotic mess preferable to the boredom of harmonious living	寧可一團混亂，也不要和睦卻無聊的生活	宁可一团混乱，也不要和睦却无聊的生活		性格特質句本體：FUN_140e26ca0 case 0xe DISCORD；接在句型 {@1} {%2}. 的 {2}
+revels in chaos and discord, and he encourages it whenever possible	樂於混亂與紛爭，一有機會就推波助瀾	乐于混乱与纷争，一有机会就推波助澜		性格特質句本體：FUN_140e26ca0 case 0xe DISCORD；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+revels in chaos and discord, and she encourages it whenever possible	樂於混亂與紛爭，一有機會就推波助瀾	乐于混乱与纷争，一有机会就推波助澜		性格特質句本體：FUN_140e26ca0 case 0xe DISCORD；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+revels in chaos and discord, and it encourages it whenever possible	樂於混亂與紛爭，一有機會就推波助瀾	乐于混乱与纷争，一有机会就推波助澜		性格特質句本體：FUN_140e26ca0 case 0xe DISCORD；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+is unfriendly and disagreeable	不友善又難相處	不友善又难相处		性格特質句本體：FUN_140e26ca0 case 0xf FRIENDLINESS；接在句型 {@1} {%2}. 的 {2}
+is a dyed-in-the-wool quarreler, never missing a chance to lash out in verbal hostility	生性愛吵架，從不放過惡言相向的機會	生性爱吵架，从不放过恶语相向的机会		性格特質句本體：FUN_140e26ca0 case 0xf FRIENDLINESS；接在句型 {@1} {%2}. 的 {2}；dyed-in-the-wool 是成語（徹頭徹尾），不是羊毛，approved 術語 wool 在此不適用
+is somewhat quarrelsome	有點愛吵架	有点爱吵架		性格特質句本體：FUN_140e26ca0 case 0xf FRIENDLINESS；接在句型 {@1} {%2}. 的 {2}
+is a friendly individual	為人友善	为人友善		性格特質句本體：FUN_140e26ca0 case 0xf FRIENDLINESS；接在句型 {@1} {%2}. 的 {2}
+is very friendly and always tries to say nice things to others	非常友善，總是盡量對人說好話	非常友善，总是尽量对人说好话		性格特質句本體：FUN_140e26ca0 case 0xf FRIENDLINESS；接在句型 {@1} {%2}. 的 {2}
+is quite a bold flatterer, extremely friendly but just a little insufferable	很敢奉承人，極為友善卻有點讓人受不了	很敢奉承人，极为友善却有点让人受不了		性格特質句本體：FUN_140e26ca0 case 0xf FRIENDLINESS；接在句型 {@1} {%2}. 的 {2}
+is very impolite and inconsiderate of propriety	非常無禮，不顧禮節	非常无礼，不顾礼节		性格特質句本體：FUN_140e26ca0 case 0x10 POLITENESS；接在句型 {@1} {%2}. 的 {2}
+is a vulgar being who does not care a lick for even the most basic rules of civilized living	粗俗不堪，連文明生活最基本的規矩都毫不在乎	粗俗不堪，连文明生活最基本的规矩都毫不在乎		性格特質句本體：FUN_140e26ca0 case 0x10 POLITENESS；接在句型 {@1} {%2}. 的 {2}
+could be considered rude	可以說是沒禮貌	可以说是没礼貌		性格特質句本體：FUN_140e26ca0 case 0x10 POLITENESS；接在句型 {@1} {%2}. 的 {2}
+is quite polite	相當有禮貌	相当有礼貌		性格特質句本體：FUN_140e26ca0 case 0x10 POLITENESS；接在句型 {@1} {%2}. 的 {2}
+is very polite and observes appropriate rules of decorum when possible	非常有禮貌，盡可能遵守應有的禮節	非常有礼貌，尽可能遵守应有的礼节		性格特質句本體：FUN_140e26ca0 case 0x10 POLITENESS；接在句型 {@1} {%2}. 的 {2}
+exhibits a refined politeness and is determined to keep the guiding rules of etiquette and decorum as if life itself depended on it	彬彬有禮，把禮儀規矩看得跟性命一樣重要	彬彬有礼，把礼仪规矩看得跟性命一样重要		性格特質句本體：FUN_140e26ca0 case 0x10 POLITENESS；接在句型 {@1} {%2}. 的 {2}
+is unable to make decisions without a great deal of input from others	沒有別人提供大量意見就做不了決定	没有别人提供大量意见就做不了决定		性格特質句本體：FUN_140e26ca0 case 0x11 DISDAIN_ADVICE；接在句型 {@1} {%2}. 的 {2}
+relies on the advice of others during decision making	做決定時依賴別人的建議	做决定时依赖别人的建议		性格特質句本體：FUN_140e26ca0 case 0x11 DISDAIN_ADVICE；接在句型 {@1} {%2}. 的 {2}
+tends to ask others for help with difficult decisions	遇到難以決定的事往往會找人幫忙	遇到难以决定的事往往会找人帮忙		性格特質句本體：FUN_140e26ca0 case 0x11 DISDAIN_ADVICE；接在句型 {@1} {%2}. 的 {2}
+has a tendency to go it alone, without considering the advice of others	傾向獨斷獨行，不考慮別人的建議	倾向独断独行，不考虑别人的建议		性格特質句本體：FUN_140e26ca0 case 0x11 DISDAIN_ADVICE；接在句型 {@1} {%2}. 的 {2}
+dislikes receiving advice, preferring to keep his own counsel	不喜歡聽人建議，寧可自己拿主意	不喜欢听人建议，宁可自己拿主意		性格特質句本體：FUN_140e26ca0 case 0x11 DISDAIN_ADVICE；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+dislikes receiving advice, preferring to keep her own counsel	不喜歡聽人建議，寧可自己拿主意	不喜欢听人建议，宁可自己拿主意		性格特質句本體：FUN_140e26ca0 case 0x11 DISDAIN_ADVICE；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+dislikes receiving advice, preferring to keep its own counsel	不喜歡聽人建議，寧可自己拿主意	不喜欢听人建议，宁可自己拿主意		性格特質句本體：FUN_140e26ca0 case 0x11 DISDAIN_ADVICE；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+disdains even the best advice of associates and family, relying strictly on his own counsel	連同伴和家人最好的建議都不屑一顧，凡事只靠自己判斷	连同伴和家人最好的建议都不屑一顾，凡事只靠自己判断		性格特質句本體：FUN_140e26ca0 case 0x11 DISDAIN_ADVICE；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+disdains even the best advice of associates and family, relying strictly on her own counsel	連同伴和家人最好的建議都不屑一顧，凡事只靠自己判斷	连同伴和家人最好的建议都不屑一顾，凡事只靠自己判断		性格特質句本體：FUN_140e26ca0 case 0x11 DISDAIN_ADVICE；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+disdains even the best advice of associates and family, relying strictly on its own counsel	連同伴和家人最好的建議都不屑一顧，凡事只靠自己判斷	连同伴和家人最好的建议都不屑一顾，凡事只靠自己判断		性格特質句本體：FUN_140e26ca0 case 0x11 DISDAIN_ADVICE；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+is a coward, completely overwhelmed by fear when confronted with danger	是個膽小鬼，一遇到危險就被恐懼完全壓倒	是个胆小鬼，一遇到危险就被恐惧完全压倒		性格特質句本體：FUN_140e26ca0 case 0x12 BRAVERY；接在句型 {@1} {%2}. 的 {2}
+has great trouble mastering fear when confronted by danger	遇到危險時很難克服恐懼	遇到危险时很难克服恐惧		性格特質句本體：FUN_140e26ca0 case 0x12 BRAVERY；接在句型 {@1} {%2}. 的 {2}
+is somewhat fearful in the face of imminent danger	面對迫在眉睫的危險時有些害怕	面对迫在眉睫的危险时有些害怕		性格特質句本體：FUN_140e26ca0 case 0x12 BRAVERY；接在句型 {@1} {%2}. 的 {2}
+is brave in the face of imminent danger	面對迫在眉睫的危險時很勇敢	面对迫在眉睫的危险时很勇敢		性格特質句本體：FUN_140e26ca0 case 0x12 BRAVERY；接在句型 {@1} {%2}. 的 {2}
+is incredibly brave in the face of looming danger, perhaps a bit foolhardy	面對逼近的危險時勇敢得驚人，或許有點有勇無謀	面对逼近的危险时勇敢得惊人，或许有点有勇无谋		性格特質句本體：FUN_140e26ca0 case 0x12 BRAVERY；接在句型 {@1} {%2}. 的 {2}
+is utterly fearless when confronted with danger, to the point of lacking common sense	遇到危險時毫無畏懼，甚至到了缺乏常識的地步	遇到危险时毫无畏惧，甚至到了缺乏常识的地步		性格特質句本體：FUN_140e26ca0 case 0x12 BRAVERY；接在句型 {@1} {%2}. 的 {2}
+has no confidence at all in his talent and abilities	對自己的天分與能力毫無信心	对自己的天分与能力毫无信心		性格特質句本體：FUN_140e26ca0 case 0x13 CONFIDENCE；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+has no confidence at all in her talent and abilities	對自己的天分與能力毫無信心	对自己的天分与能力毫无信心		性格特質句本體：FUN_140e26ca0 case 0x13 CONFIDENCE；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+has no confidence at all in its talent and abilities	對自己的天分與能力毫無信心	对自己的天分与能力毫无信心		性格特質句本體：FUN_140e26ca0 case 0x13 CONFIDENCE；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+lacks confidence in his abilities	對自己的能力缺乏信心	对自己的能力缺乏信心		性格特質句本體：FUN_140e26ca0 case 0x13 CONFIDENCE；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+lacks confidence in her abilities	對自己的能力缺乏信心	对自己的能力缺乏信心		性格特質句本體：FUN_140e26ca0 case 0x13 CONFIDENCE；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+lacks confidence in its abilities	對自己的能力缺乏信心	对自己的能力缺乏信心		性格特質句本體：FUN_140e26ca0 case 0x13 CONFIDENCE；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+sometimes acts with little determination and confidence	有時做事缺乏決心與自信	有时做事缺乏决心与自信		性格特質句本體：FUN_140e26ca0 case 0x13 CONFIDENCE；接在句型 {@1} {%2}. 的 {2}
+is generally quite confident of his abilities when undertaking specific ventures	做特定的事時，通常對自己的能力相當有信心	做特定的事时，通常对自己的能力相当有信心		性格特質句本體：FUN_140e26ca0 case 0x13 CONFIDENCE；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+is generally quite confident of her abilities when undertaking specific ventures	做特定的事時，通常對自己的能力相當有信心	做特定的事时，通常对自己的能力相当有信心		性格特質句本體：FUN_140e26ca0 case 0x13 CONFIDENCE；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+is generally quite confident of its abilities when undertaking specific ventures	做特定的事時，通常對自己的能力相當有信心	做特定的事时，通常对自己的能力相当有信心		性格特質句本體：FUN_140e26ca0 case 0x13 CONFIDENCE；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+is extremely confident of himself in situations requiring his skills	在需要發揮本領的場合對自己極有信心	在需要发挥本领的场合对自己极有信心		性格特質句本體：FUN_140e26ca0 case 0x13 CONFIDENCE；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+is extremely confident of herself in situations requiring her skills	在需要發揮本領的場合對自己極有信心	在需要发挥本领的场合对自己极有信心		性格特質句本體：FUN_140e26ca0 case 0x13 CONFIDENCE；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+is extremely confident of itself in situations requiring its skills	在需要發揮本領的場合對自己極有信心	在需要发挥本领的场合对自己极有信心		性格特質句本體：FUN_140e26ca0 case 0x13 CONFIDENCE；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+presupposes success in any venture requiring his skills with what could be called blind overconfidence	只要是用得上自己本領的事，都認定一定會成功，簡直是盲目自信	只要是用得上自己本领的事，都认定一定会成功，简直是盲目自信		性格特質句本體：FUN_140e26ca0 case 0x13 CONFIDENCE；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+presupposes success in any venture requiring her skills with what could be called blind overconfidence	只要是用得上自己本領的事，都認定一定會成功，簡直是盲目自信	只要是用得上自己本领的事，都认定一定会成功，简直是盲目自信		性格特質句本體：FUN_140e26ca0 case 0x13 CONFIDENCE；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+presupposes success in any venture requiring its skills with what could be called blind overconfidence	只要是用得上自己本領的事，都認定一定會成功，簡直是盲目自信	只要是用得上自己本领的事，都认定一定会成功，简直是盲目自信		性格特質句本體：FUN_140e26ca0 case 0x13 CONFIDENCE；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+could not care less about his appearance, talents or other personal vanities	對自己的外表、才能或其他虛榮之事毫不在乎	对自己的外表、才能或其他虚荣之事毫不在乎		性格特質句本體：FUN_140e26ca0 case 0x14 VANITY；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+could not care less about her appearance, talents or other personal vanities	對自己的外表、才能或其他虛榮之事毫不在乎	对自己的外表、才能或其他虚荣之事毫不在乎		性格特質句本體：FUN_140e26ca0 case 0x14 VANITY；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+could not care less about its appearance, talents or other personal vanities	對自己的外表、才能或其他虛榮之事毫不在乎	对自己的外表、才能或其他虚荣之事毫不在乎		性格特質句本體：FUN_140e26ca0 case 0x14 VANITY；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+takes no pleasure in his talents and appearance	不會因自己的才能和外表而自得	不会因自己的才能和外表而自得		性格特質句本體：FUN_140e26ca0 case 0x14 VANITY；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+takes no pleasure in her talents and appearance	不會因自己的才能和外表而自得	不会因自己的才能和外表而自得		性格特質句本體：FUN_140e26ca0 case 0x14 VANITY；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+takes no pleasure in its talents and appearance	不會因自己的才能和外表而自得	不会因自己的才能和外表而自得		性格特質句本體：FUN_140e26ca0 case 0x14 VANITY；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+is not inherently proud of his talents and accomplishments	不會特別以自己的才能和成就為傲	不会特别以自己的才能和成就为傲		性格特質句本體：FUN_140e26ca0 case 0x14 VANITY；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+is not inherently proud of her talents and accomplishments	不會特別以自己的才能和成就為傲	不会特别以自己的才能和成就为傲		性格特質句本體：FUN_140e26ca0 case 0x14 VANITY；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+is not inherently proud of its talents and accomplishments	不會特別以自己的才能和成就為傲	不会特别以自己的才能和成就为傲		性格特質句本體：FUN_140e26ca0 case 0x14 VANITY；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+is pleased by his own appearance and talents	對自己的外表和才能感到滿意	对自己的外表和才能感到满意		性格特質句本體：FUN_140e26ca0 case 0x14 VANITY；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+is pleased by her own appearance and talents	對自己的外表和才能感到滿意	对自己的外表和才能感到满意		性格特質句本體：FUN_140e26ca0 case 0x14 VANITY；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+is pleased by its own appearance and talents	對自己的外表和才能感到滿意	对自己的外表和才能感到满意		性格特質句本體：FUN_140e26ca0 case 0x14 VANITY；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+is greatly pleased by his own looks and accomplishments	對自己的長相和成就非常得意	对自己的长相和成就非常得意		性格特質句本體：FUN_140e26ca0 case 0x14 VANITY；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+is greatly pleased by her own looks and accomplishments	對自己的長相和成就非常得意	对自己的长相和成就非常得意		性格特質句本體：FUN_140e26ca0 case 0x14 VANITY；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+is greatly pleased by its own looks and accomplishments	對自己的長相和成就非常得意	对自己的长相和成就非常得意		性格特質句本體：FUN_140e26ca0 case 0x14 VANITY；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+is completely wrapped up in his own appearance, abilities and other personal matters	滿腦子都是自己的外表、能力和其他私事	满脑子都是自己的外表、能力和其他私事		性格特質句本體：FUN_140e26ca0 case 0x14 VANITY；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+is completely wrapped up in her own appearance, abilities and other personal matters	滿腦子都是自己的外表、能力和其他私事	满脑子都是自己的外表、能力和其他私事		性格特質句本體：FUN_140e26ca0 case 0x14 VANITY；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+is completely wrapped up in its own appearance, abilities and other personal matters	滿腦子都是自己的外表、能力和其他私事	满脑子都是自己的外表、能力和其他私事		性格特質句本體：FUN_140e26ca0 case 0x14 VANITY；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+has no ambition whatsoever	毫無野心	毫无野心		性格特質句本體：FUN_140e26ca0 case 0x15 AMBITION；接在句型 {@1} {%2}. 的 {2}
+is not driven and rarely feels the need to pursue even a modest success	沒有上進心，連小小的成功都很少想去追求	没有上进心，连小小的成功都很少想去追求		性格特質句本體：FUN_140e26ca0 case 0x15 AMBITION；接在句型 {@1} {%2}. 的 {2}
+isn't particularly ambitious	沒什麼野心	没什么野心		性格特質句本體：FUN_140e26ca0 case 0x15 AMBITION；接在句型 {@1} {%2}. 的 {2}
+is quite ambitious	相當有野心	相当有野心		性格特質句本體：FUN_140e26ca0 case 0x15 AMBITION；接在句型 {@1} {%2}. 的 {2}
+is very ambitious, always looking for a way to better his situation	非常有野心，總在找機會改善自己的處境	非常有野心，总在找机会改善自己的处境		性格特質句本體：FUN_140e26ca0 case 0x15 AMBITION；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+is very ambitious, always looking for a way to better her situation	非常有野心，總在找機會改善自己的處境	非常有野心，总在找机会改善自己的处境		性格特質句本體：FUN_140e26ca0 case 0x15 AMBITION；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+is very ambitious, always looking for a way to better its situation	非常有野心，總在找機會改善自己的處境	非常有野心，总在找机会改善自己的处境		性格特質句本體：FUN_140e26ca0 case 0x15 AMBITION；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+has a relentless drive, completely consumed by ambition	有著無盡的衝勁，完全被野心吞噬	有着无尽的冲劲，完全被野心吞噬		性格特質句本體：FUN_140e26ca0 case 0x15 AMBITION；接在句型 {@1} {%2}. 的 {2}
+does not feel the slightest need to reciprocate favors that others do for him, no matter how major the help or how much he needed it	絲毫不覺得需要回報別人的恩惠，不論那份幫助多重大、他當時多需要	丝毫不觉得需要回报别人的恩惠，不论那份帮助多重大、他当时多需要		性格特質句本體：FUN_140e26ca0 case 0x16 GRATITUDE；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+does not feel the slightest need to reciprocate favors that others do for her, no matter how major the help or how much she needed it	絲毫不覺得需要回報別人的恩惠，不論那份幫助多重大、她當時多需要	丝毫不觉得需要回报别人的恩惠，不论那份帮助多重大、她当时多需要		性格特質句本體：FUN_140e26ca0 case 0x16 GRATITUDE；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+does not feel the slightest need to reciprocate favors that others do for it, no matter how major the help or how much it needed it	絲毫不覺得需要回報別人的恩惠，不論那份幫助多重大、牠當時多需要	丝毫不觉得需要回报别人的恩惠，不论那份帮助多重大、它当时多需要		性格特質句本體：FUN_140e26ca0 case 0x16 GRATITUDE；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+accepts favors without developing a sense of obligation, preferring to act as the current situation demands	接受恩惠也不覺得欠人情，寧可視當下情況行事	接受恩惠也不觉得欠人情，宁可视当下情况行事		性格特質句本體：FUN_140e26ca0 case 0x16 GRATITUDE；接在句型 {@1} {%2}. 的 {2}
+takes offered help and gifts without feeling particularly grateful	接受別人的幫助和禮物時不怎麼感激	接受别人的帮助和礼物时不怎么感激		性格特質句本體：FUN_140e26ca0 case 0x16 GRATITUDE；接在句型 {@1} {%2}. 的 {2}
+is grateful when others help him out and tries to return favors	在別人幫忙時會心存感激，並設法回報	在别人帮忙时会心存感激，并设法回报		性格特質句本體：FUN_140e26ca0 case 0x16 GRATITUDE；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+is grateful when others help her out and tries to return favors	在別人幫忙時會心存感激，並設法回報	在别人帮忙时会心存感激，并设法回报		性格特質句本體：FUN_140e26ca0 case 0x16 GRATITUDE；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+is grateful when others help it out and tries to return favors	在別人幫忙時會心存感激，並設法回報	在别人帮忙时会心存感激，并设法回报		性格特質句本體：FUN_140e26ca0 case 0x16 GRATITUDE；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+feels a strong need to reciprocate any favor done for him	受人任何恩惠都覺得非回報不可	受人任何恩惠都觉得非回报不可		性格特質句本體：FUN_140e26ca0 case 0x16 GRATITUDE；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+feels a strong need to reciprocate any favor done for her	受人任何恩惠都覺得非回報不可	受人任何恩惠都觉得非回报不可		性格特質句本體：FUN_140e26ca0 case 0x16 GRATITUDE；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+feels a strong need to reciprocate any favor done for it	受人任何恩惠都覺得非回報不可	受人任何恩惠都觉得非回报不可		性格特質句本體：FUN_140e26ca0 case 0x16 GRATITUDE；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+unerringly returns favors and has a profound sense of gratitude for the kind actions of others	有恩必報，對別人的善行深懷感激	有恩必报，对别人的善行深怀感激		性格特質句本體：FUN_140e26ca0 case 0x16 GRATITUDE；接在句型 {@1} {%2}. 的 {2}
+cleaves to an austere lifestyle, disdaining even minor immodesties in appearance	堅守樸素的生活，連外表上一點點的張揚都看不慣	坚守朴素的生活，连外表上一点点的张扬都看不惯		性格特質句本體：FUN_140e26ca0 case 0x17 IMMODESTY；接在句型 {@1} {%2}. 的 {2}
+presents himself modestly and frowns on any flashy accoutrements	打扮樸素，看不慣任何花俏的裝飾	打扮朴素，看不惯任何花哨的装饰		性格特質句本體：FUN_140e26ca0 case 0x17 IMMODESTY；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+presents herself modestly and frowns on any flashy accoutrements	打扮樸素，看不慣任何花俏的裝飾	打扮朴素，看不惯任何花哨的装饰		性格特質句本體：FUN_140e26ca0 case 0x17 IMMODESTY；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+presents itself modestly and frowns on any flashy accoutrements	打扮樸素，看不慣任何花俏的裝飾	打扮朴素，看不惯任何花哨的装饰		性格特質句本體：FUN_140e26ca0 case 0x17 IMMODESTY；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+prefers to present himself modestly	喜歡打扮得樸素	喜欢打扮得朴素		性格特質句本體：FUN_140e26ca0 case 0x17 IMMODESTY；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+prefers to present herself modestly	喜歡打扮得樸素	喜欢打扮得朴素		性格特質句本體：FUN_140e26ca0 case 0x17 IMMODESTY；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+prefers to present itself modestly	喜歡打扮得樸素	喜欢打扮得朴素		性格特質句本體：FUN_140e26ca0 case 0x17 IMMODESTY；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+doesn't mind wearing something special now and again	不介意偶爾穿戴些特別的東西	不介意偶尔穿戴些特别的东西		性格特質句本體：FUN_140e26ca0 case 0x17 IMMODESTY；接在句型 {@1} {%2}. 的 {2}
+likes to present himself boldly, even if it would offend an average sense of modesty	喜歡大膽打扮，即使有違一般人的保守觀念也無妨	喜欢大胆打扮，即使有违一般人的保守观念也无妨		性格特質句本體：FUN_140e26ca0 case 0x17 IMMODESTY；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+likes to present herself boldly, even if it would offend an average sense of modesty	喜歡大膽打扮，即使有違一般人的保守觀念也無妨	喜欢大胆打扮，即使有违一般人的保守观念也无妨		性格特質句本體：FUN_140e26ca0 case 0x17 IMMODESTY；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+likes to present itself boldly, even if it would offend an average sense of modesty	喜歡大膽打扮，即使有違一般人的保守觀念也無妨	喜欢大胆打扮，即使有违一般人的保守观念也无妨		性格特質句本體：FUN_140e26ca0 case 0x17 IMMODESTY；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+always presents himself as extravagantly as possible, displaying a magnificent image to the world	總是盡可能打扮得奢華張揚，向世人展現華麗的形象	总是尽可能打扮得奢华张扬，向世人展现华丽的形象		性格特質句本體：FUN_140e26ca0 case 0x17 IMMODESTY；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+always presents herself as extravagantly as possible, displaying a magnificent image to the world	總是盡可能打扮得奢華張揚，向世人展現華麗的形象	总是尽可能打扮得奢华张扬，向世人展现华丽的形象		性格特質句本體：FUN_140e26ca0 case 0x17 IMMODESTY；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+always presents itself as extravagantly as possible, displaying a magnificent image to the world	總是盡可能打扮得奢華張揚，向世人展現華麗的形象	总是尽可能打扮得奢华张扬，向世人展现华丽的形象		性格特質句本體：FUN_140e26ca0 case 0x17 IMMODESTY；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+is utterly humorless	完全沒有幽默感	完全没有幽默感		性格特質句本體：FUN_140e26ca0 case 0x18 HUMOR；接在句型 {@1} {%2}. 的 {2}
+does not find most jokes humorous	覺得大部分笑話都不好笑	觉得大部分笑话都不好笑		性格特質句本體：FUN_140e26ca0 case 0x18 HUMOR；接在句型 {@1} {%2}. 的 {2}
+has little interest in joking around	對開玩笑沒什麼興趣	对开玩笑没什么兴趣		性格特質句本體：FUN_140e26ca0 case 0x18 HUMOR；接在句型 {@1} {%2}. 的 {2}
+has an active sense of humor	很有幽默感	很有幽默感		性格特質句本體：FUN_140e26ca0 case 0x18 HUMOR；接在句型 {@1} {%2}. 的 {2}
+finds the humor in most situations	在大多數情況下都能找到笑點	在大多数情况下都能找到笑点		性格特質句本體：FUN_140e26ca0 case 0x18 HUMOR；接在句型 {@1} {%2}. 的 {2}
+finds something humorous in everything, no matter how serious or inappropriate	什麼事都能找到笑點，不管多嚴肅或多不合時宜	什么事都能找到笑点，不管多严肃或多不合时宜		性格特質句本體：FUN_140e26ca0 case 0x18 HUMOR；接在句型 {@1} {%2}. 的 {2}
+has no sense of vengeance or retribution	完全沒有報復的念頭	完全没有报复的念头		性格特質句本體：FUN_140e26ca0 case 0x19 VENGEFUL；接在句型 {@1} {%2}. 的 {2}
+does not generally seek retribution for past wrongs	通常不會為過去受的委屈尋求報復	通常不会为过去受的委屈寻求报复		性格特質句本體：FUN_140e26ca0 case 0x19 VENGEFUL；接在句型 {@1} {%2}. 的 {2}
+doesn't tend to hold on to grievances	不太會記仇	不太会记仇		性格特質句本體：FUN_140e26ca0 case 0x19 VENGEFUL；接在句型 {@1} {%2}. 的 {2}
+tends to hang on to grievances	容易記仇	容易记仇		性格特質句本體：FUN_140e26ca0 case 0x19 VENGEFUL；接在句型 {@1} {%2}. 的 {2}
+has little time for forgiveness and will generally seek retribution	不太願意原諒，通常會尋求報復	不太愿意原谅，通常会寻求报复		性格特質句本體：FUN_140e26ca0 case 0x19 VENGEFUL；接在句型 {@1} {%2}. 的 {2}
+is vengeful and never forgets or forgives past grievances	有仇必報，過去的怨恨永不遺忘、永不原諒	有仇必报，过去的怨恨永不遗忘、永不原谅		性格特質句本體：FUN_140e26ca0 case 0x19 VENGEFUL；接在句型 {@1} {%2}. 的 {2}
+is completely convinced of his own worthlessness	深信自己一文不值	深信自己一文不值		性格特質句本體：FUN_140e26ca0 case 0x1a PRIDE；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+is completely convinced of her own worthlessness	深信自己一文不值	深信自己一文不值		性格特質句本體：FUN_140e26ca0 case 0x1a PRIDE；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+is completely convinced of its own worthlessness	深信自己一文不值	深信自己一文不值		性格特質句本體：FUN_140e26ca0 case 0x1a PRIDE；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+has a low sense of self-esteem	很自卑	很自卑		性格特質句本體：FUN_140e26ca0 case 0x1a PRIDE；接在句型 {@1} {%2}. 的 {2}
+is very humble	非常謙虛	非常谦虚		性格特質句本體：FUN_140e26ca0 case 0x1a PRIDE；接在句型 {@1} {%2}. 的 {2}
+thinks he is fairly important in the grand scheme of things	認為自己在大局中相當重要	认为自己在大局中相当重要		性格特質句本體：FUN_140e26ca0 case 0x1a PRIDE；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+thinks she is fairly important in the grand scheme of things	認為自己在大局中相當重要	认为自己在大局中相当重要		性格特質句本體：FUN_140e26ca0 case 0x1a PRIDE；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+thinks it is fairly important in the grand scheme of things	認為自己在大局中相當重要	认为自己在大局中相当重要		性格特質句本體：FUN_140e26ca0 case 0x1a PRIDE；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+has an overinflated sense of self-worth	自視過高	自视过高		性格特質句本體：FUN_140e26ca0 case 0x1a PRIDE；接在句型 {@1} {%2}. 的 {2}
+is absorbed in delusions of self-importance	沉浸在自以為了不起的妄想中	沉浸在自以为了不起的妄想中		性格特質句本體：FUN_140e26ca0 case 0x1a PRIDE；接在句型 {@1} {%2}. 的 {2}
+always acts with mercy and compassion at the forefront of his considerations	做事總是把仁慈與同情放在第一位	做事总是把仁慈与同情放在第一位		性格特質句本體：FUN_140e26ca0 case 0x1b CRUELTY；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+always acts with mercy and compassion at the forefront of her considerations	做事總是把仁慈與同情放在第一位	做事总是把仁慈与同情放在第一位		性格特質句本體：FUN_140e26ca0 case 0x1b CRUELTY；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+always acts with mercy and compassion at the forefront of its considerations	做事總是把仁慈與同情放在第一位	做事总是把仁慈与同情放在第一位		性格特質句本體：FUN_140e26ca0 case 0x1b CRUELTY；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+is easily moved to mercy	很容易心軟	很容易心软		性格特質句本體：FUN_140e26ca0 case 0x1b CRUELTY；接在句型 {@1} {%2}. 的 {2}
+often acts with compassion	常常表現出同情心	常常表现出同情心		性格特質句本體：FUN_140e26ca0 case 0x1b CRUELTY；接在句型 {@1} {%2}. 的 {2}
+generally acts impartially and is rarely moved to mercy	通常就事論事，很少心軟	通常就事论事，很少心软		性格特質句本體：FUN_140e26ca0 case 0x1b CRUELTY；接在句型 {@1} {%2}. 的 {2}
+is sometimes cruel	有時很殘忍	有时很残忍		性格特質句本體：FUN_140e26ca0 case 0x1b CRUELTY；接在句型 {@1} {%2}. 的 {2}
+is deliberately cruel to those unfortunate enough to be subject to his sadism	會刻意折磨不幸落入自己手中的人	会刻意折磨不幸落入自己手中的人		性格特質句本體：FUN_140e26ca0 case 0x1b CRUELTY；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+is deliberately cruel to those unfortunate enough to be subject to her sadism	會刻意折磨不幸落入自己手中的人	会刻意折磨不幸落入自己手中的人		性格特質句本體：FUN_140e26ca0 case 0x1b CRUELTY；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+is deliberately cruel to those unfortunate enough to be subject to its sadism	會刻意折磨不幸落入自己手中的人	会刻意折磨不幸落入自己手中的人		性格特質句本體：FUN_140e26ca0 case 0x1b CRUELTY；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+is a complete scatterbrain, unable to focus on a single matter for more than a passing moment	完全心不在焉，做任何事都專心不了片刻	完全心不在焉，做任何事都专心不了片刻		性格特質句本體：FUN_140e26ca0 case 0x1c SINGLEMINDED；接在句型 {@1} {%2}. 的 {2}
+is somewhat scatterbrained	有點心不在焉	有点心不在焉		性格特質句本體：FUN_140e26ca0 case 0x1c SINGLEMINDED；接在句型 {@1} {%2}. 的 {2}
+can occasionally lose focus on the matter at hand	偶爾會對手邊的事分心	偶尔会对手头的事分心		性格特質句本體：FUN_140e26ca0 case 0x1c SINGLEMINDED；接在句型 {@1} {%2}. 的 {2}
+generally acts with a narrow focus on the current activity	做事通常只專注於眼前的事	做事通常只专注于眼前的事		性格特質句本體：FUN_140e26ca0 case 0x1c SINGLEMINDED；接在句型 {@1} {%2}. 的 {2}
+can be very single-minded	可以非常專心一意	可以非常专心致志		性格特質句本體：FUN_140e26ca0 case 0x1c SINGLEMINDED；接在句型 {@1} {%2}. 的 {2}
+pursues matters with a single-minded focus, often overlooking other matters	做事一心一意，常常忽略其他事情	做事一心一意，常常忽略其他事情		性格特質句本體：FUN_140e26ca0 case 0x1c SINGLEMINDED；接在句型 {@1} {%2}. 的 {2}
+despairs of anything positive happening in the future and lives without feelings of hope	對未來不抱任何期望，活得毫無希望	对未来不抱任何期望，活得毫无希望		性格特質句本體：FUN_140e26ca0 case 0x1d HOPEFUL；接在句型 {@1} {%2}. 的 {2}
+is a pessimist	是個悲觀的人	是个悲观的人		性格特質句本體：FUN_140e26ca0 case 0x1d HOPEFUL；接在句型 {@1} {%2}. 的 {2}
+tends to assume the worst of two outcomes will be the one that comes to pass	總認為兩種結果中比較糟的那個會成真	总认为两种结果中比较糟的那个会成真		性格特質句本體：FUN_140e26ca0 case 0x1d HOPEFUL；接在句型 {@1} {%2}. 的 {2}
+generally finds himself quite hopeful about the future	大致對未來抱持相當的希望	大致对未来抱有相当的希望		性格特質句本體：FUN_140e26ca0 case 0x1d HOPEFUL；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+generally finds herself quite hopeful about the future	大致對未來抱持相當的希望	大致对未来抱有相当的希望		性格特質句本體：FUN_140e26ca0 case 0x1d HOPEFUL；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+generally finds itself quite hopeful about the future	大致對未來抱持相當的希望	大致对未来抱有相当的希望		性格特質句本體：FUN_140e26ca0 case 0x1d HOPEFUL；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+is an optimist	是個樂觀的人	是个乐观的人		性格特質句本體：FUN_140e26ca0 case 0x1d HOPEFUL；接在句型 {@1} {%2}. 的 {2}
+has such a developed sense of optimism that he always assumes the best outcome will eventually occur, no matter what	樂觀到了極點，不管發生什麼，總認為最好的結果終究會到來	乐观到了极点，不管发生什么，总认为最好的结果终究会到来		性格特質句本體：FUN_140e26ca0 case 0x1d HOPEFUL；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+has such a developed sense of optimism that she always assumes the best outcome will eventually occur, no matter what	樂觀到了極點，不管發生什麼，總認為最好的結果終究會到來	乐观到了极点，不管发生什么，总认为最好的结果终究会到来		性格特質句本體：FUN_140e26ca0 case 0x1d HOPEFUL；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+has such a developed sense of optimism that it always assumes the best outcome will eventually occur, no matter what	樂觀到了極點，不管發生什麼，總認為最好的結果終究會到來	乐观到了极点，不管发生什么，总认为最好的结果终究会到来		性格特質句本體：FUN_140e26ca0 case 0x1d HOPEFUL；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+is incurious and never seeks out knowledge or information to satisfy himself	不好奇，從不為了滿足自己去追尋知識或資訊	不好奇，从不为了满足自己去追寻知识或信息		性格特質句本體：FUN_140e26ca0 case 0x1e CURIOUS；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+is incurious and never seeks out knowledge or information to satisfy herself	不好奇，從不為了滿足自己去追尋知識或資訊	不好奇，从不为了满足自己去追寻知识或信息		性格特質句本體：FUN_140e26ca0 case 0x1e CURIOUS；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+is incurious and never seeks out knowledge or information to satisfy itself	不好奇，從不為了滿足自己去追尋知識或資訊	不好奇，从不为了满足自己去追寻知识或信息		性格特質句本體：FUN_140e26ca0 case 0x1e CURIOUS；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+is very rarely moved by curiosity	極少產生好奇心	极少产生好奇心		性格特質句本體：FUN_140e26ca0 case 0x1e CURIOUS；接在句型 {@1} {%2}. 的 {2}
+isn't particularly curious about the world	對世界沒什麼好奇心	对世界没什么好奇心		性格特質句本體：FUN_140e26ca0 case 0x1e CURIOUS；接在句型 {@1} {%2}. 的 {2}
+is curious and eager to learn	好奇又好學	好奇又好学		性格特質句本體：FUN_140e26ca0 case 0x1e CURIOUS；接在句型 {@1} {%2}. 的 {2}
+is very curious, sometimes to his detriment	非常好奇，有時反而害了自己	非常好奇，有时反而害了自己		性格特質句本體：FUN_140e26ca0 case 0x1e CURIOUS；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+is very curious, sometimes to her detriment	非常好奇，有時反而害了自己	非常好奇，有时反而害了自己		性格特質句本體：FUN_140e26ca0 case 0x1e CURIOUS；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+is very curious, sometimes to its detriment	非常好奇，有時反而害了自己	非常好奇，有时反而害了自己		性格特質句本體：FUN_140e26ca0 case 0x1e CURIOUS；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+is implacably curious, without any respect for propriety or privacy	好奇心永不滿足，完全不顧禮節或隱私	好奇心永不满足，完全不顾礼节或隐私		性格特質句本體：FUN_140e26ca0 case 0x1e CURIOUS；接在句型 {@1} {%2}. 的 {2}
+is shameless, absolutely unfazed by the thoughts of others	臉皮很厚，完全不在乎別人的想法	脸皮很厚，完全不在乎别人的想法		性格特質句本體：FUN_140e26ca0 case 0x1f BASHFUL；接在句型 {@1} {%2}. 的 {2}
+is generally unhindered by the thoughts of others concerning his actions	做事通常不受別人的想法影響	做事通常不受别人的想法影响		性格特質句本體：FUN_140e26ca0 case 0x1f BASHFUL；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+is generally unhindered by the thoughts of others concerning her actions	做事通常不受別人的想法影響	做事通常不受别人的想法影响		性格特質句本體：FUN_140e26ca0 case 0x1f BASHFUL；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+is generally unhindered by the thoughts of others concerning its actions	做事通常不受別人的想法影響	做事通常不受别人的想法影响		性格特質句本體：FUN_140e26ca0 case 0x1f BASHFUL；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+is not particularly interested in what others think of him	不太在意別人對自己的看法	不太在意别人对自己的看法		性格特質句本體：FUN_140e26ca0 case 0x1f BASHFUL；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+is not particularly interested in what others think of her	不太在意別人對自己的看法	不太在意别人对自己的看法		性格特質句本體：FUN_140e26ca0 case 0x1f BASHFUL；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+is not particularly interested in what others think of it	不太在意別人對自己的看法	不太在意别人对自己的看法		性格特質句本體：FUN_140e26ca0 case 0x1f BASHFUL；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+tends to consider what others think of him	往往會在意別人對自己的看法	往往会在意别人对自己的看法		性格特質句本體：FUN_140e26ca0 case 0x1f BASHFUL；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+tends to consider what others think of her	往往會在意別人對自己的看法	往往会在意别人对自己的看法		性格特質句本體：FUN_140e26ca0 case 0x1f BASHFUL；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+tends to consider what others think of it	往往會在意別人對自己的看法	往往会在意别人对自己的看法		性格特質句本體：FUN_140e26ca0 case 0x1f BASHFUL；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+is bashful	很害羞	很害羞		性格特質句本體：FUN_140e26ca0 case 0x1f BASHFUL；接在句型 {@1} {%2}. 的 {2}
+is gripped by a crippling shyness	被嚴重的害羞束縛得動彈不得	被严重的害羞束缚得动弹不得		性格特質句本體：FUN_140e26ca0 case 0x1f BASHFUL；接在句型 {@1} {%2}. 的 {2}
+shares intimate details of his life without sparing a thought to repercussions or propriety	會說出自己生活中的私密細節，完全不考慮後果或是否得體	会说出自己生活中的私密细节，完全不考虑后果或是否得体		性格特質句本體：FUN_140e26ca0 case 0x20 PRIVACY；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+shares intimate details of her life without sparing a thought to repercussions or propriety	會說出自己生活中的私密細節，完全不考慮後果或是否得體	会说出自己生活中的私密细节，完全不考虑后果或是否得体		性格特質句本體：FUN_140e26ca0 case 0x20 PRIVACY；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+shares intimate details of its life without sparing a thought to repercussions or propriety	會說出自己生活中的私密細節，完全不考慮後果或是否得體	会说出自己生活中的私密细节，完全不考虑后果或是否得体		性格特質句本體：FUN_140e26ca0 case 0x20 PRIVACY；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+is not a private person and freely shares details of his life	不注重隱私，會隨意分享自己的生活細節	不注重隐私，会随意分享自己的生活细节		性格特質句本體：FUN_140e26ca0 case 0x20 PRIVACY；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+is not a private person and freely shares details of her life	不注重隱私，會隨意分享自己的生活細節	不注重隐私，会随意分享自己的生活细节		性格特質句本體：FUN_140e26ca0 case 0x20 PRIVACY；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+is not a private person and freely shares details of its life	不注重隱私，會隨意分享自己的生活細節	不注重隐私，会随意分享自己的生活细节		性格特質句本體：FUN_140e26ca0 case 0x20 PRIVACY；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+tends to share his own experiences and thoughts with others	往往會跟別人分享自己的經歷和想法	往往会跟别人分享自己的经历和想法		性格特質句本體：FUN_140e26ca0 case 0x20 PRIVACY；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+tends to share her own experiences and thoughts with others	往往會跟別人分享自己的經歷和想法	往往会跟别人分享自己的经历和想法		性格特質句本體：FUN_140e26ca0 case 0x20 PRIVACY；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+tends to share its own experiences and thoughts with others	往往會跟別人分享自己的經歷和想法	往往会跟别人分享自己的经历和想法		性格特質句本體：FUN_140e26ca0 case 0x20 PRIVACY；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+tends not to reveal personal information	往往不透露自己的私事	往往不透露自己的私事		性格特質句本體：FUN_140e26ca0 case 0x20 PRIVACY；接在句型 {@1} {%2}. 的 {2}
+has a strong tendency toward privacy	非常注重隱私	非常注重隐私		性格特質句本體：FUN_140e26ca0 case 0x20 PRIVACY；接在句型 {@1} {%2}. 的 {2}
+is private to the point of paranoia, unwilling to reveal even basic information about himself	重視隱私到了偏執的地步，連自己的基本資料都不願透露	重视隐私到了偏执的地步，连自己的基本情况都不愿透露		性格特質句本體：FUN_140e26ca0 case 0x20 PRIVACY；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+is private to the point of paranoia, unwilling to reveal even basic information about herself	重視隱私到了偏執的地步，連自己的基本資料都不願透露	重视隐私到了偏执的地步，连自己的基本情况都不愿透露		性格特質句本體：FUN_140e26ca0 case 0x20 PRIVACY；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+is private to the point of paranoia, unwilling to reveal even basic information about itself	重視隱私到了偏執的地步，連自己的基本資料都不願透露	重视隐私到了偏执的地步，连自己的基本情况都不愿透露		性格特質句本體：FUN_140e26ca0 case 0x20 PRIVACY；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+is frustratingly sloppy and careless with every task he sets to carry out	做什麼事都馬虎粗心，讓人氣結	做什么事都马虎粗心，让人恼火		性格特質句本體：FUN_140e26ca0 case 0x21 PERFECTIONIST；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+is frustratingly sloppy and careless with every task she sets to carry out	做什麼事都馬虎粗心，讓人氣結	做什么事都马虎粗心，让人恼火		性格特質句本體：FUN_140e26ca0 case 0x21 PERFECTIONIST；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+is frustratingly sloppy and careless with every task it sets to carry out	做什麼事都馬虎粗心，讓人氣結	做什么事都马虎粗心，让人恼火		性格特質句本體：FUN_140e26ca0 case 0x21 PERFECTIONIST；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+is inattentive to detail in his own work	工作時不注重細節	工作时不注重细节		性格特質句本體：FUN_140e26ca0 case 0x21 PERFECTIONIST；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+is inattentive to detail in her own work	工作時不注重細節	工作时不注重细节		性格特質句本體：FUN_140e26ca0 case 0x21 PERFECTIONIST；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+is inattentive to detail in its own work	工作時不注重細節	工作时不注重细节		性格特質句本體：FUN_140e26ca0 case 0x21 PERFECTIONIST；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+doesn't try to get things done perfectly	做事不求完美	做事不求完美		性格特質句本體：FUN_140e26ca0 case 0x21 PERFECTIONIST；接在句型 {@1} {%2}. 的 {2}
+tries to do things correctly each time	每次都力求把事情做對	每次都力求把事情做对		性格特質句本體：FUN_140e26ca0 case 0x21 PERFECTIONIST；接在句型 {@1} {%2}. 的 {2}
+is a perfectionist	是個完美主義者	是个完美主义者		性格特質句本體：FUN_140e26ca0 case 0x21 PERFECTIONIST；接在句型 {@1} {%2}. 的 {2}
+is obsessed with details and will often take a great deal of extra time to make sure things are done the right way	對細節近乎執迷，常會多花大量時間確保事情做得正確	对细节近乎执迷，常会多花大量时间确保事情做得正确		性格特質句本體：FUN_140e26ca0 case 0x21 PERFECTIONIST；接在句型 {@1} {%2}. 的 {2}
+easily changes his mind and will generally go with the prevailing view on anything	很容易改變主意，凡事大多順著主流意見	很容易改变主意，凡事大多随大流		性格特質句本體：FUN_140e26ca0 case 0x22 CLOSEMINDED；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+easily changes her mind and will generally go with the prevailing view on anything	很容易改變主意，凡事大多順著主流意見	很容易改变主意，凡事大多随大流		性格特質句本體：FUN_140e26ca0 case 0x22 CLOSEMINDED；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+easily changes its mind and will generally go with the prevailing view on anything	很容易改變主意，凡事大多順著主流意見	很容易改变主意，凡事大多随大流		性格特質句本體：FUN_140e26ca0 case 0x22 CLOSEMINDED；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+often finds himself changing his mind to agree with somebody else	常常改變主意去附和別人	常常改变主意去附和别人		性格特質句本體：FUN_140e26ca0 case 0x22 CLOSEMINDED；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+often finds herself changing her mind to agree with somebody else	常常改變主意去附和別人	常常改变主意去附和别人		性格特質句本體：FUN_140e26ca0 case 0x22 CLOSEMINDED；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+often finds itself changing its mind to agree with somebody else	常常改變主意去附和別人	常常改变主意去附和别人		性格特質句本體：FUN_140e26ca0 case 0x22 CLOSEMINDED；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+doesn't cling tightly to ideas and is open to changing his mind	不會死守想法，願意改變主意	不会死守想法，愿意改变主意		性格特質句本體：FUN_140e26ca0 case 0x22 CLOSEMINDED；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+doesn't cling tightly to ideas and is open to changing her mind	不會死守想法，願意改變主意	不会死守想法，愿意改变主意		性格特質句本體：FUN_140e26ca0 case 0x22 CLOSEMINDED；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+doesn't cling tightly to ideas and is open to changing its mind	不會死守想法，願意改變主意	不会死守想法，愿意改变主意		性格特質句本體：FUN_140e26ca0 case 0x22 CLOSEMINDED；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+tends to be a bit stubborn in changing his mind about things	對事情的看法有點固執，不太改變主意	对事情的看法有点固执，不太改变主意		性格特質句本體：FUN_140e26ca0 case 0x22 CLOSEMINDED；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+tends to be a bit stubborn in changing her mind about things	對事情的看法有點固執，不太改變主意	对事情的看法有点固执，不太改变主意		性格特質句本體：FUN_140e26ca0 case 0x22 CLOSEMINDED；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+tends to be a bit stubborn in changing its mind about things	對事情的看法有點固執，不太改變主意	对事情的看法有点固执，不太改变主意		性格特質句本體：FUN_140e26ca0 case 0x22 CLOSEMINDED；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+is intellectually stubborn, rarely changing his mind during a debate regardless of the merits	思想固執，辯論時不論對方多有道理都很少改變主意	思想固执，辩论时不论对方多有道理都很少改变主意		性格特質句本體：FUN_140e26ca0 case 0x22 CLOSEMINDED；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+is intellectually stubborn, rarely changing her mind during a debate regardless of the merits	思想固執，辯論時不論對方多有道理都很少改變主意	思想固执，辩论时不论对方多有道理都很少改变主意		性格特質句本體：FUN_140e26ca0 case 0x22 CLOSEMINDED；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+is intellectually stubborn, rarely changing its mind during a debate regardless of the merits	思想固執，辯論時不論對方多有道理都很少改變主意	思想固执，辩论时不论对方多有道理都很少改变主意		性格特質句本體：FUN_140e26ca0 case 0x22 CLOSEMINDED；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+is completely closed-minded and never changes his mind after forming an initial idea	完全固執己見，一旦有了想法就絕不改變	完全固执己见，一旦有了想法就绝不改变		性格特質句本體：FUN_140e26ca0 case 0x22 CLOSEMINDED；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+is completely closed-minded and never changes her mind after forming an initial idea	完全固執己見，一旦有了想法就絕不改變	完全固执己见，一旦有了想法就绝不改变		性格特質句本體：FUN_140e26ca0 case 0x22 CLOSEMINDED；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+is completely closed-minded and never changes its mind after forming an initial idea	完全固執己見，一旦有了想法就絕不改變	完全固执己见，一旦有了想法就绝不改变		性格特質句本體：FUN_140e26ca0 case 0x22 CLOSEMINDED；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+cannot tolerate differences in culture, lifestyle or appearance	無法容忍文化、生活方式或外表上的差異	无法容忍文化、生活方式或外表上的差异		性格特質句本體：FUN_140e26ca0 case 0x23 TOLERANT；接在句型 {@1} {%2}. 的 {2}
+is made deeply uncomfortable by differences in culture or appearance	對文化或外表上的差異深感不自在	对文化或外表上的差异深感不自在		性格特質句本體：FUN_140e26ca0 case 0x23 TOLERANT；接在句型 {@1} {%2}. 的 {2}
+is somewhat uncomfortable around those that appear unusual or live differently from himself	跟外表異於常人或生活方式和自己不同的人相處時有些不自在	跟外表异于常人或生活方式和自己不同的人相处时有些不自在		性格特質句本體：FUN_140e26ca0 case 0x23 TOLERANT；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+is somewhat uncomfortable around those that appear unusual or live differently from herself	跟外表異於常人或生活方式和自己不同的人相處時有些不自在	跟外表异于常人或生活方式和自己不同的人相处时有些不自在		性格特質句本體：FUN_140e26ca0 case 0x23 TOLERANT；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+is somewhat uncomfortable around those that appear unusual or live differently from itself	跟外表異於常人或生活方式和自己不同的人相處時有些不自在	跟外表异于常人或生活方式和自己不同的人相处时有些不自在		性格特質句本體：FUN_140e26ca0 case 0x23 TOLERANT；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+is quite comfortable with others that have a different appearance or culture	跟外表或文化不同的人相處相當自在	跟外表或文化不同的人相处相当自在		性格特質句本體：FUN_140e26ca0 case 0x23 TOLERANT；接在句型 {@1} {%2}. 的 {2}
+is very comfortable around others that are different from himself	跟和自己不同的人相處非常自在	跟和自己不同的人相处非常自在		性格特質句本體：FUN_140e26ca0 case 0x23 TOLERANT；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+is very comfortable around others that are different from herself	跟和自己不同的人相處非常自在	跟和自己不同的人相处非常自在		性格特質句本體：FUN_140e26ca0 case 0x23 TOLERANT；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+is very comfortable around others that are different from itself	跟和自己不同的人相處非常自在	跟和自己不同的人相处非常自在		性格特質句本體：FUN_140e26ca0 case 0x23 TOLERANT；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+is not bothered in the slightest by deviations from the norm or even extreme differences in lifestyle or appearance	完全不在意異於常規的事，就算生活方式或外表差異極大也一樣	完全不在意异于常规的事，就算生活方式或外表差异极大也一样		性格特質句本體：FUN_140e26ca0 case 0x23 TOLERANT；接在句型 {@1} {%2}. 的 {2}
+does not have feelings of emotional attachment and has never felt even a moment's connection with another being	沒有情感上的依戀，從未與任何人有過片刻的心靈相通	没有情感上的依恋，从未与任何人有过片刻的心灵相通		性格特質句本體：FUN_140e26ca0 case 0x24 EMOTIONALLY_OBSESSIVE；接在句型 {@1} {%2}. 的 {2}
+forms only fleeting and rare emotional bonds with others	很少與人建立情感連結，即使有也很短暫	很少与人建立情感联系，即使有也很短暂		性格特質句本體：FUN_140e26ca0 case 0x24 EMOTIONALLY_OBSESSIVE；接在句型 {@1} {%2}. 的 {2}
+tends to form only tenuous emotional bonds with others	往往只與人建立淡薄的情感連結	往往只与人建立淡薄的情感联系		性格特質句本體：FUN_140e26ca0 case 0x24 EMOTIONALLY_OBSESSIVE；接在句型 {@1} {%2}. 的 {2}
+has a tendency toward forming deep emotional bonds with others	傾向與人建立深厚的情感連結	倾向与人建立深厚的情感联系		性格特質句本體：FUN_140e26ca0 case 0x24 EMOTIONALLY_OBSESSIVE；接在句型 {@1} {%2}. 的 {2}
+forms strong emotional bonds with others, at times to his detriment	會與人建立強烈的情感連結，有時反而害了自己	会与人建立强烈的情感联系，有时反而害了自己		性格特質句本體：FUN_140e26ca0 case 0x24 EMOTIONALLY_OBSESSIVE；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+forms strong emotional bonds with others, at times to her detriment	會與人建立強烈的情感連結，有時反而害了自己	会与人建立强烈的情感联系，有时反而害了自己		性格特質句本體：FUN_140e26ca0 case 0x24 EMOTIONALLY_OBSESSIVE；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+forms strong emotional bonds with others, at times to its detriment	會與人建立強烈的情感連結，有時反而害了自己	会与人建立强烈的情感联系，有时反而害了自己		性格特質句本體：FUN_140e26ca0 case 0x24 EMOTIONALLY_OBSESSIVE；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+is emotionally obsessive, forming life-long attachments even if they aren't reciprocated	感情執著，即使得不到回應也會依戀一輩子	感情执着，即使得不到回应也会依恋一辈子		性格特質句本體：FUN_140e26ca0 case 0x24 EMOTIONALLY_OBSESSIVE；接在句型 {@1} {%2}. 的 {2}
+is never moved by the emotions of others	從不受別人的情緒打動	从不受别人的情绪打动		性格特質句本體：FUN_140e26ca0 case 0x25 SWAYED_BY_EMOTIONS；接在句型 {@1} {%2}. 的 {2}
+does not generally respond to emotional appeals	通常不吃動之以情那一套	通常不吃动之以情那一套		性格特質句本體：FUN_140e26ca0 case 0x25 SWAYED_BY_EMOTIONS；接在句型 {@1} {%2}. 的 {2}
+tends not to be swayed by emotional appeals	往往不會被動之以情所左右	往往不会被动之以情所左右		性格特質句本體：FUN_140e26ca0 case 0x25 SWAYED_BY_EMOTIONS；接在句型 {@1} {%2}. 的 {2}
+tends to be swayed by the emotions of others	往往會被別人的情緒左右	往往会被别人的情绪左右		性格特質句本體：FUN_140e26ca0 case 0x25 SWAYED_BY_EMOTIONS；接在句型 {@1} {%2}. 的 {2}
+is swayed by emotional appeals	容易被動之以情所左右	容易被动之以情所左右		性格特質句本體：FUN_140e26ca0 case 0x25 SWAYED_BY_EMOTIONS；接在句型 {@1} {%2}. 的 {2}
+is buffeted by others' emotions and can't help but to respond to them	被別人的情緒牽著走，忍不住就會有所回應	被别人的情绪牵着走，忍不住就会有所回应		性格特質句本體：FUN_140e26ca0 case 0x25 SWAYED_BY_EMOTIONS；接在句型 {@1} {%2}. 的 {2}
+dislikes helping others	不喜歡幫助別人	不喜欢帮助别人		性格特質句本體：FUN_140e26ca0 case 0x26 ALTRUISM；接在句型 {@1} {%2}. 的 {2}
+feels helping others is an imposition on his time	覺得幫助別人是在佔用自己的時間	觉得帮助别人是在占用自己的时间		性格特質句本體：FUN_140e26ca0 case 0x26 ALTRUISM；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+feels helping others is an imposition on her time	覺得幫助別人是在佔用自己的時間	觉得帮助别人是在占用自己的时间		性格特質句本體：FUN_140e26ca0 case 0x26 ALTRUISM；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+feels helping others is an imposition on its time	覺得幫助別人是在佔用自己的時間	觉得帮助别人是在占用自己的时间		性格特質句本體：FUN_140e26ca0 case 0x26 ALTRUISM；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+does not go out of his way to help others	不會特地去幫助別人	不会特地去帮助别人		性格特質句本體：FUN_140e26ca0 case 0x26 ALTRUISM；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+does not go out of her way to help others	不會特地去幫助別人	不会特地去帮助别人		性格特質句本體：FUN_140e26ca0 case 0x26 ALTRUISM；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+does not go out of its way to help others	不會特地去幫助別人	不会特地去帮助别人		性格特質句本體：FUN_140e26ca0 case 0x26 ALTRUISM；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+finds helping others emotionally rewarding	覺得幫助別人能帶來心靈上的滿足	觉得帮助别人能带来心灵上的满足		性格特質句本體：FUN_140e26ca0 case 0x26 ALTRUISM；接在句型 {@1} {%2}. 的 {2}
+finds helping others very emotionally rewarding	覺得幫助別人能帶來極大的心靈滿足	觉得帮助别人能带来极大的心灵满足		性格特質句本體：FUN_140e26ca0 case 0x26 ALTRUISM；接在句型 {@1} {%2}. 的 {2}
+is truly fulfilled by assisting those in need	幫助有需要的人時打從心底感到充實	帮助有需要的人时打心底感到充实		性格特質句本體：FUN_140e26ca0 case 0x26 ALTRUISM；接在句型 {@1} {%2}. 的 {2}
+hates vows, obligations, promises and other binding elements that could restrict his life	痛恨誓言、義務、承諾等任何可能束縛自己生活的東西	痛恨誓言、义务、承诺等任何可能束缚自己生活的东西		性格特質句本體：FUN_140e26ca0 case 0x27 DUTIFULNESS；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+hates vows, obligations, promises and other binding elements that could restrict her life	痛恨誓言、義務、承諾等任何可能束縛自己生活的東西	痛恨誓言、义务、承诺等任何可能束缚自己生活的东西		性格特質句本體：FUN_140e26ca0 case 0x27 DUTIFULNESS；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+hates vows, obligations, promises and other binding elements that could restrict its life	痛恨誓言、義務、承諾等任何可能束縛自己生活的東西	痛恨誓言、义务、承诺等任何可能束缚自己生活的东西		性格特質句本體：FUN_140e26ca0 case 0x27 DUTIFULNESS；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+dislikes obligations and will try to avoid being bound by them	不喜歡義務，會盡量避免受其約束	不喜欢义务，会尽量避免受其约束		性格特質句本體：FUN_140e26ca0 case 0x27 DUTIFULNESS；接在句型 {@1} {%2}. 的 {2}
+finds obligations confining	覺得義務是種束縛	觉得义务是种束缚		性格特質句本體：FUN_140e26ca0 case 0x27 DUTIFULNESS；接在句型 {@1} {%2}. 的 {2}
+has a sense of duty	有責任感	有责任感		性格特質句本體：FUN_140e26ca0 case 0x27 DUTIFULNESS；接在句型 {@1} {%2}. 的 {2}
+has a strong sense of duty	責任感很強	责任感很强		性格特質句本體：FUN_140e26ca0 case 0x27 DUTIFULNESS；接在句型 {@1} {%2}. 的 {2}
+has a profound sense of duty and obligation	有極強的責任感與義務感	有极强的责任感与义务感		性格特質句本體：FUN_140e26ca0 case 0x27 DUTIFULNESS；接在句型 {@1} {%2}. 的 {2}
+never acts without prolonged deliberation, even to his own detriment and the harm of those around him	不經過長時間深思熟慮絕不行動，即使害了自己、連累身邊的人也一樣	不经过长时间深思熟虑绝不行动，即使害了自己、连累身边的人也一样		性格特質句本體：FUN_140e26ca0 case 0x28 THOUGHTLESSNESS；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+never acts without prolonged deliberation, even to her own detriment and the harm of those around her	不經過長時間深思熟慮絕不行動，即使害了自己、連累身邊的人也一樣	不经过长时间深思熟虑绝不行动，即使害了自己、连累身边的人也一样		性格特質句本體：FUN_140e26ca0 case 0x28 THOUGHTLESSNESS；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+never acts without prolonged deliberation, even to its own detriment and the harm of those around it	不經過長時間深思熟慮絕不行動，即使害了自己、連累身邊的人也一樣	不经过长时间深思熟虑绝不行动，即使害了自己、连累身边的人也一样		性格特質句本體：FUN_140e26ca0 case 0x28 THOUGHTLESSNESS；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+can get caught up in internal deliberations when action is necessary	該行動時可能還陷在內心的盤算裡	该行动时可能还陷在内心的盘算里		性格特質句本體：FUN_140e26ca0 case 0x28 THOUGHTLESSNESS；接在句型 {@1} {%2}. 的 {2}
+tends to think before acting	往往三思而後行	往往三思而后行		性格特質句本體：FUN_140e26ca0 case 0x28 THOUGHTLESSNESS；接在句型 {@1} {%2}. 的 {2}
+can sometimes act without deliberation	有時會不假思索就行動	有时会不假思索就行动		性格特質句本體：FUN_140e26ca0 case 0x28 THOUGHTLESSNESS；接在句型 {@1} {%2}. 的 {2}
+doesn't generally think before acting	通常想都不想就行動	通常想都不想就行动		性格特質句本體：FUN_140e26ca0 case 0x28 THOUGHTLESSNESS；接在句型 {@1} {%2}. 的 {2}
+never deliberates before acting, to the point of being considered thoughtless	行動前從不考慮，甚至被認為是魯莽	行动前从不考虑，甚至被认为是鲁莽		性格特質句本體：FUN_140e26ca0 case 0x28 THOUGHTLESSNESS；接在句型 {@1} {%2}. 的 {2}
+is completely oblivious to any conception of neatness and will just leave things strewn about without a care	完全沒有整潔的概念，東西隨手亂丟也毫不在意	完全没有整洁的概念，东西随手乱丢也毫不在意		性格特質句本體：FUN_140e26ca0 case 0x29 ORDERLINESS；接在句型 {@1} {%2}. 的 {2}
+is sloppy with his living space	把自己的住處弄得很邋遢	把自己的住处弄得很邋遢		性格特質句本體：FUN_140e26ca0 case 0x29 ORDERLINESS；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+is sloppy with her living space	把自己的住處弄得很邋遢	把自己的住处弄得很邋遢		性格特質句本體：FUN_140e26ca0 case 0x29 ORDERLINESS；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+is sloppy with its living space	把自己的住處弄得很邋遢	把自己的住处弄得很邋遢		性格特質句本體：FUN_140e26ca0 case 0x29 ORDERLINESS；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+tends to make a small mess with his own possessions	往往把自己的東西弄得有點亂	往往把自己的东西弄得有点乱		性格特質句本體：FUN_140e26ca0 case 0x29 ORDERLINESS；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+tends to make a small mess with her own possessions	往往把自己的東西弄得有點亂	往往把自己的东西弄得有点乱		性格特質句本體：FUN_140e26ca0 case 0x29 ORDERLINESS；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+tends to make a small mess with its own possessions	往往把自己的東西弄得有點亂	往往把自己的东西弄得有点乱		性格特質句本體：FUN_140e26ca0 case 0x29 ORDERLINESS；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+tries to keep his things orderly	盡量把自己的東西整理得井井有條	尽量把自己的东西整理得井井有条		性格特質句本體：FUN_140e26ca0 case 0x29 ORDERLINESS；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+tries to keep her things orderly	盡量把自己的東西整理得井井有條	尽量把自己的东西整理得井井有条		性格特質句本體：FUN_140e26ca0 case 0x29 ORDERLINESS；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+tries to keep its things orderly	盡量把自己的東西整理得井井有條	尽量把自己的东西整理得井井有条		性格特質句本體：FUN_140e26ca0 case 0x29 ORDERLINESS；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+lives an orderly life, organized and neat	生活有條不紊，整齊有序	生活有条不紊，整齐有序		性格特質句本體：FUN_140e26ca0 case 0x29 ORDERLINESS；接在句型 {@1} {%2}. 的 {2}
+is obsessed with order and structure in his own life, with everything kept in its proper place	對生活中的秩序和條理近乎執迷，每樣東西都得放在該放的位置	对生活中的秩序和条理近乎执迷，每样东西都得放在该放的位置		性格特質句本體：FUN_140e26ca0 case 0x29 ORDERLINESS；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+is obsessed with order and structure in her own life, with everything kept in its proper place	對生活中的秩序和條理近乎執迷，每樣東西都得放在該放的位置	对生活中的秩序和条理近乎执迷，每样东西都得放在该放的位置		性格特質句本體：FUN_140e26ca0 case 0x29 ORDERLINESS；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+is obsessed with order and structure in its own life, with everything kept in its proper place	對生活中的秩序和條理近乎執迷，每樣東西都得放在該放的位置	对生活中的秩序和条理近乎执迷，每样东西都得放在该放的位置		性格特質句本體：FUN_140e26ca0 case 0x29 ORDERLINESS；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+sees others as selfish and conniving	認為別人都自私又狡詐	认为别人都自私又狡诈		性格特質句本體：FUN_140e26ca0 case 0x2a TRUST；接在句型 {@1} {%2}. 的 {2}
+does not trust others	不信任別人	不信任别人		性格特質句本體：FUN_140e26ca0 case 0x2a TRUST；接在句型 {@1} {%2}. 的 {2}
+is slow to trust others	不輕易信任別人	不轻易信任别人		性格特質句本體：FUN_140e26ca0 case 0x2a TRUST；接在句型 {@1} {%2}. 的 {2}
+is trusting	容易信任別人	容易信任别人		性格特質句本體：FUN_140e26ca0 case 0x2a TRUST；接在句型 {@1} {%2}. 的 {2}
+is very trusting	非常容易信任別人	非常容易信任别人		性格特質句本體：FUN_140e26ca0 case 0x2a TRUST；接在句型 {@1} {%2}. 的 {2}
+is naturally trustful of everybody	天生對每個人都很信任	天生对每个人都很信任		性格特質句本體：FUN_140e26ca0 case 0x2a TRUST；接在句型 {@1} {%2}. 的 {2}
+considers spending time alone much more important than associating with others	認為獨處遠比與人交往重要	认为独处远比与人交往重要		性格特質句本體：FUN_140e26ca0 case 0x2b GREGARIOUSNESS；接在句型 {@1} {%2}. 的 {2}
+prefers to be alone	喜歡獨處	喜欢独处		性格特質句本體：FUN_140e26ca0 case 0x2b GREGARIOUSNESS；接在句型 {@1} {%2}. 的 {2}
+tends to avoid crowds	往往避開人群	往往避开人群		性格特質句本體：FUN_140e26ca0 case 0x2b GREGARIOUSNESS；接在句型 {@1} {%2}. 的 {2}
+enjoys the company of others	喜歡有人作伴	喜欢有人作伴		性格特質句本體：FUN_140e26ca0 case 0x2b GREGARIOUSNESS；接在句型 {@1} {%2}. 的 {2}
+enjoys being in crowds	喜歡待在人群中	喜欢待在人群中		性格特質句本體：FUN_140e26ca0 case 0x2b GREGARIOUSNESS；接在句型 {@1} {%2}. 的 {2}
+truly treasures the company of others	非常珍惜與人相處的時光	非常珍惜与人相处的时光		性格特質句本體：FUN_140e26ca0 case 0x2b GREGARIOUSNESS；接在句型 {@1} {%2}. 的 {2}
+would never under any circumstances speak up or otherwise put forth his point of view in a discussion	討論時無論如何都不會開口或提出自己的觀點	讨论时无论如何都不会开口或提出自己的观点		性格特質句本體：FUN_140e26ca0 case 0x2c ASSERTIVENESS；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+would never under any circumstances speak up or otherwise put forth her point of view in a discussion	討論時無論如何都不會開口或提出自己的觀點	讨论时无论如何都不会开口或提出自己的观点		性格特質句本體：FUN_140e26ca0 case 0x2c ASSERTIVENESS；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+would never under any circumstances speak up or otherwise put forth its point of view in a discussion	討論時無論如何都不會開口或提出自己的觀點	讨论时无论如何都不会开口或提出自己的观点		性格特質句本體：FUN_140e26ca0 case 0x2c ASSERTIVENESS；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+only rarely tries to assert himself in conversation	交談時很少表達自己的主張	交谈时很少表达自己的主张		性格特質句本體：FUN_140e26ca0 case 0x2c ASSERTIVENESS；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+only rarely tries to assert herself in conversation	交談時很少表達自己的主張	交谈时很少表达自己的主张		性格特質句本體：FUN_140e26ca0 case 0x2c ASSERTIVENESS；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+only rarely tries to assert itself in conversation	交談時很少表達自己的主張	交谈时很少表达自己的主张		性格特質句本體：FUN_140e26ca0 case 0x2c ASSERTIVENESS；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+tends to be passive in discussions	討論時往往很被動	讨论时往往很被动		性格特質句本體：FUN_140e26ca0 case 0x2c ASSERTIVENESS；接在句型 {@1} {%2}. 的 {2}
+is assertive	敢於表達主張	敢于表达主张		性格特質句本體：FUN_140e26ca0 case 0x2c ASSERTIVENESS；接在句型 {@1} {%2}. 的 {2}
+has an overbearing personality	性格強勢	性格强势		性格特質句本體：FUN_140e26ca0 case 0x2c ASSERTIVENESS；接在句型 {@1} {%2}. 的 {2}
+is assertive to the point of aggression, unwilling to let others get a word in edgewise when he has something to say	強勢到咄咄逼人，自己有話要說時根本不讓別人插嘴	强势到咄咄逼人，自己有话要说时根本不让别人插嘴		性格特質句本體：FUN_140e26ca0 case 0x2c ASSERTIVENESS；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+is assertive to the point of aggression, unwilling to let others get a word in edgewise when she has something to say	強勢到咄咄逼人，自己有話要說時根本不讓別人插嘴	强势到咄咄逼人，自己有话要说时根本不让别人插嘴		性格特質句本體：FUN_140e26ca0 case 0x2c ASSERTIVENESS；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+is assertive to the point of aggression, unwilling to let others get a word in edgewise when it has something to say	強勢到咄咄逼人，自己有話要說時根本不讓別人插嘴	强势到咄咄逼人，自己有话要说时根本不让别人插嘴		性格特質句本體：FUN_140e26ca0 case 0x2c ASSERTIVENESS；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+has an utterly languid pace of easy living, calm and slow	生活步調極為悠閒，平靜又緩慢	生活节奏极为悠闲，平静又缓慢		性格特質句本體：FUN_140e26ca0 case 0x2d ACTIVITY_LEVEL；接在句型 {@1} {%2}. 的 {2}
+lives at a slow-going and leisurely pace	生活步調緩慢悠閒	生活节奏缓慢悠闲		性格特質句本體：FUN_140e26ca0 case 0x2d ACTIVITY_LEVEL；接在句型 {@1} {%2}. 的 {2}
+likes to take it easy	喜歡放輕鬆	喜欢放松		性格特質句本體：FUN_140e26ca0 case 0x2d ACTIVITY_LEVEL；接在句型 {@1} {%2}. 的 {2}
+lives a fast-paced life	過著快節奏的生活	过着快节奏的生活		性格特質句本體：FUN_140e26ca0 case 0x2d ACTIVITY_LEVEL；接在句型 {@1} {%2}. 的 {2}
+lives at a high-energy kinetic pace	生活步調充滿活力、動個不停	生活节奏充满活力、动个不停		性格特質句本體：FUN_140e26ca0 case 0x2d ACTIVITY_LEVEL；接在句型 {@1} {%2}. 的 {2}
+is driven by a bouncing frenetic energy	渾身是勁，一刻也閒不下來	浑身是劲，一刻也闲不下来		性格特質句本體：FUN_140e26ca0 case 0x2d ACTIVITY_LEVEL；接在句型 {@1} {%2}. 的 {2}
+does everything in his power to avoid excitement and stress	竭盡所能避開刺激和壓力	竭尽所能避开刺激和压力		性格特質句本體：FUN_140e26ca0 case 0x2e EXCITEMENT_SEEKING；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 he
+does everything in her power to avoid excitement and stress	竭盡所能避開刺激和壓力	竭尽所能避开刺激和压力		性格特質句本體：FUN_140e26ca0 case 0x2e EXCITEMENT_SEEKING；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 she
+does everything in its power to avoid excitement and stress	竭盡所能避開刺激和壓力	竭尽所能避开刺激和压力		性格特質句本體：FUN_140e26ca0 case 0x2e EXCITEMENT_SEEKING；接在句型 {@1} {%2}. 的 {2}；原文代名詞依性別有 he/she/it 三種寫法，此為 it
+actively avoids exciting or stressful situations	刻意避開刺激或有壓力的場合	刻意避开刺激或有压力的场合		性格特質句本體：FUN_140e26ca0 case 0x2e EXCITEMENT_SEEKING；接在句型 {@1} {%2}. 的 {2}
+doesn't seek out excitement	不追求刺激	不追求刺激		性格特質句本體：FUN_140e26ca0 case 0x2e EXCITEMENT_SEEKING；接在句型 {@1} {%2}. 的 {2}
+likes a little excitement now and then	偶爾喜歡來點刺激	偶尔喜欢来点刺激		性格特質句本體：FUN_140e26ca0 case 0x2e EXCITEMENT_SEEKING；接在句型 {@1} {%2}. 的 {2}
+seeks out exciting and adventurous situations	追求刺激和冒險	追求刺激和冒险		性格特質句本體：FUN_140e26ca0 case 0x2e EXCITEMENT_SEEKING；接在句型 {@1} {%2}. 的 {2}
+never fails to seek out the most stressful and even dangerous situations	總是去找壓力最大、甚至最危險的處境	总是去找压力最大、甚至最危险的处境		性格特質句本體：FUN_140e26ca0 case 0x2e EXCITEMENT_SEEKING；接在句型 {@1} {%2}. 的 {2}
+is interested only in facts and the real world	只對事實和現實世界感興趣	只对事实和现实世界感兴趣		性格特質句本體：FUN_140e26ca0 case 0x2f IMAGINATION；接在句型 {@1} {%2}. 的 {2}
+is grounded in reality	腳踏實地	脚踏实地		性格特質句本體：FUN_140e26ca0 case 0x2f IMAGINATION；接在句型 {@1} {%2}. 的 {2}
+isn't given to flights of fancy	不愛胡思亂想	不爱胡思乱想		性格特質句本體：FUN_140e26ca0 case 0x2f IMAGINATION；接在句型 {@1} {%2}. 的 {2}
+has an active imagination	想像力豐富	想象力丰富		性格特質句本體：FUN_140e26ca0 case 0x2f IMAGINATION；接在句型 {@1} {%2}. 的 {2}
+is given to flights of fancy to the point of distraction	愛天馬行空到了分心的地步	爱天马行空到了分心的地步		性格特質句本體：FUN_140e26ca0 case 0x2f IMAGINATION；接在句型 {@1} {%2}. 的 {2}
+is bored by reality and would rather disappear utterly and forever into a world of made-up fantasy	對現實感到厭倦，寧願永遠沉浸在虛構的幻想世界裡	对现实感到厌倦，宁愿永远沉浸在虚构的幻想世界里		性格特質句本體：FUN_140e26ca0 case 0x2f IMAGINATION；接在句型 {@1} {%2}. 的 {2}
+is concerned only with matters practical to the situation at hand, with absolutely no inclination toward abstract discussion	只關心眼前情況的實際問題，對抽象討論毫無興趣	只关心眼前情况的实际问题，对抽象讨论毫无兴趣		性格特質句本體：FUN_140e26ca0 case 0x30 ABSTRACT_INCLINED；接在句型 {@1} {%2}. 的 {2}
+dislikes abstract discussions and would much rather focus on practical examples	不喜歡抽象討論，寧可專注於實際的例子	不喜欢抽象讨论，宁可专注于实际的例子		性格特質句本體：FUN_140e26ca0 case 0x30 ABSTRACT_INCLINED；接在句型 {@1} {%2}. 的 {2}
+likes to keep things practical, without delving too deeply into the abstract	喜歡務實，不太深究抽象的東西	喜欢务实，不太深究抽象的东西		性格特質句本體：FUN_140e26ca0 case 0x30 ABSTRACT_INCLINED；接在句型 {@1} {%2}. 的 {2}
+has a tendency to consider ideas and abstractions over practical applications	比起實際應用，更傾向思考理念和抽象概念	比起实际应用，更倾向思考理念和抽象概念		性格特質句本體：FUN_140e26ca0 case 0x30 ABSTRACT_INCLINED；接在句型 {@1} {%2}. 的 {2}
+strongly prefers discussions of ideas and abstract concepts over handling specific practical issues	比起處理具體的實際問題，更喜歡討論理念和抽象概念	比起处理具体的实际问题，更喜欢讨论理念和抽象概念		性格特質句本體：FUN_140e26ca0 case 0x30 ABSTRACT_INCLINED；接在句型 {@1} {%2}. 的 {2}
+eschews practical concerns for philosophical discussion, puzzles, riddles and the world of ideas	不理會實際問題，一心投入哲學討論、謎題和思想的世界	不理会实际问题，一心投入哲学讨论、谜题和思想的世界		性格特質句本體：FUN_140e26ca0 case 0x30 ABSTRACT_INCLINED；接在句型 {@1} {%2}. 的 {2}
+is completely unmoved by art or the beauty of nature	完全不為藝術或自然之美所動	完全不为艺术或自然之美所动		性格特質句本體：FUN_140e26ca0 case 0x31 ART_INCLINED；接在句型 {@1} {%2}. 的 {2}
+is not readily moved by art or natural beauty	不太容易被藝術或自然之美打動	不太容易被艺术或自然之美打动		性格特質句本體：FUN_140e26ca0 case 0x31 ART_INCLINED；接在句型 {@1} {%2}. 的 {2}
+does not have a great aesthetic sensitivity	審美感受力不高	审美感受力不高		性格特質句本體：FUN_140e26ca0 case 0x31 ART_INCLINED；接在句型 {@1} {%2}. 的 {2}
+is moved by art and natural beauty	會被藝術和自然之美打動	会被艺术和自然之美打动		性格特質句本體：FUN_140e26ca0 case 0x31 ART_INCLINED；接在句型 {@1} {%2}. 的 {2}
+is greatly moved by art and natural beauty	深受藝術和自然之美感動	深受艺术和自然之美感动		性格特質句本體：FUN_140e26ca0 case 0x31 ART_INCLINED；接在句型 {@1} {%2}. 的 {2}
+can easily become absorbed in art and the beauty of the natural world	很容易沉醉在藝術和大自然之美中	很容易沉醉在艺术和大自然之美中		性格特質句本體：FUN_140e26ca0 case 0x31 ART_INCLINED；接在句型 {@1} {%2}. 的 {2}
+more love-prone	更容易動情	更容易动情		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+less love-prone	較不容易動情	不那么容易动情		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more hate-prone	更容易心生恨意	更容易心生恨意		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+less hate-prone	較不容易心生恨意	不那么容易心生恨意		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more envy-prone	更容易嫉妒	更容易嫉妒		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+less envy-prone	較不容易嫉妒	不那么容易嫉妒		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more prone to cheerfulness	更容易開朗起來	更容易开朗起来		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+less prone to cheerfulness	較不容易開朗起來	不那么容易开朗起来		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more depression-prone	更容易消沉	更容易消沉		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+less depression-prone	較不容易消沉	不那么容易消沉		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more anger-prone	更容易動怒	更容易动怒		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+less anger-prone	較不容易動怒	不那么容易动怒		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more anxiety-prone	更容易焦慮	更容易焦虑		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+less anxiety-prone	較不容易焦慮	不那么容易焦虑		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more lust-prone	更容易產生情慾	更容易产生情欲		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+less lust-prone	較不容易產生情慾	不那么容易产生情欲		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more vulnerable	更承受不住壓力	更承受不住压力		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+less vulnerable	更能承受壓力	更能承受压力		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more greedy	更貪婪	更贪婪		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+less greedy	較不貪婪	不那么贪婪		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more intemperant	更放縱	更放纵		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+less intemperant	較為節制	更加节制		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more violent	更好鬥	更好斗		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+less violent	較不好鬥	不那么好斗		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more stubborn	更頑強	更顽强		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+less stubborn	較不頑強	不那么顽强		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more wasteful	更浪費	更浪费		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+less wasteful	較不浪費	不那么浪费		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more discordant	更愛紛爭	更爱纷争		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more harmonious	更愛和睦	更爱和睦		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more friendly	更友善	更友善		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more quarrelsome	更愛吵架	更爱吵架		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more polite	更有禮貌	更有礼貌		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more rude	更無禮	更无礼		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more disdainful	更不聽勸	更不听劝		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more prudent	更肯聽取別人的建議	更肯听取别人的建议		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more fearless	更無畏	更无畏		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more fearful	更膽小	更胆小		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more confident	更有自信	更有自信		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+less confident	較沒自信	不那么自信		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more vain	更虛榮	更虚荣		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+less vain	較不虛榮	不那么虚荣		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more ambitious	更有野心	更有野心		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+less ambitious	較沒野心	不那么有野心		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more grateful	更懂得感恩	更懂得感恩		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+less grateful	較不懂得感恩	不那么懂得感恩		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more extravagant	更愛張揚	更爱张扬		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more austere	更樸素	更朴素		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more zany	更愛搞笑	更爱搞笑		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more humorless	更不苟言笑	更不苟言笑		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more vengeful	更愛記仇	更爱记仇		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+less vengeful	較不記仇	不那么记仇		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more proud	更驕傲	更骄傲		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more humble	更謙虛	更谦虚		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more cruel	更殘忍	更残忍		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more merciful	更仁慈	更仁慈		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more singleminded	更心無旁騖	更心无旁骛		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more scatterbrained	更心不在焉	更心不在焉		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more presumptious	更自負	更自负		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more despairing	更悲觀	更悲观		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more curious	更好奇	更好奇		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+less curious	較不好奇	不那么好奇		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more bashful	更害羞	更害羞		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more shameless	臉皮更厚	脸皮更厚		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more private	更重隱私	更注重隐私		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+less private	較不重隱私	不那么注重隐私		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more attentive	更注重細節	更注重细节		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+less attentive	較不注重細節	不那么注重细节		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+less open-minded	更固執己見	更固执己见		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more acquiescing	更容易被說服	更容易被说服		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more tolerant	更寬容	更宽容		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+less tolerant	較不寬容	不那么宽容		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more obsessive	感情更執著	感情更执着		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+less obsessive	感情較不執著	感情不那么执着		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more sensitive	更容易受情緒左右	更容易受情绪左右		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+less sensitive	較不受情緒左右	不那么受情绪左右		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more altruistic	更熱心助人	更热心助人		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+less altruistic	較不熱心助人	不那么热心助人		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more dutiful	更盡責	更尽责		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+less dutiful	較不盡責	不那么尽责		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more thoughtless	更魯莽	更鲁莽		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more deliberate	更謹慎	更谨慎		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more orderly	更有條理	更有条理		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more sloppy	更邋遢	更邋遢		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more trusting	更信任別人	更信任别人		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more distrustful	更多疑	更多疑		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more gregarious	更愛交際	更爱交际		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more of a loner	更孤僻	更孤僻		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more overbearing	更強勢	更强势		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+less assertive	較不強勢	不那么强势		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more frenetic	更閒不下來	更闲不下来		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more leisurely	更從容	更从容		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more of a thrill seeker	更愛追求刺激	更爱追求刺激		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+less of a thrill seeker	較不愛追求刺激	不那么爱追求刺激		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more prone to flights of fancy	更愛天馬行空	更爱天马行空		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more fact-oriented	更實事求是	更实事求是		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more inclined to the abstract	更偏好抽象思考	更偏好抽象思考		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more inclined to the practical	更務實	更务实		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+more inclined to create	更愛藝術創作	更爱艺术创作		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面
+less inclined to create	較不愛藝術創作	不那么爱艺术创作		性格特質近期變化：FUN_140e26ca0 第二個 switch（2126727 起），接在句型 {@1} is currently {%2}. 的 {2}；譯文接在「目前變得」後面

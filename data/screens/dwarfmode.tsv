@@ -1,2 +1,2 @@
-en	zh-Hant	zh-Hans	align	note
-Drink	酒類	酒水		要塞上方資訊列：存量標題，矮人的飲料是酒；冒險模式的 Drink 是動作「喝」，所以只在要塞模式套用
+en	zh-Hant	zh-Hans	align	row	note
+Drink	酒類	酒水		0	要塞上方資訊列（畫在第 0 列）的存量標題，矮人的飲料是酒；同一個字的工作名稱（喝東西，jobs.tsv 譯「喝」）畫在別列，所以限定第 0 列

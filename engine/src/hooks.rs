@@ -88,10 +88,12 @@ type SetWidthFn = unsafe extern "C" fn(*mut u8, i32);
 type AnchoredFn = unsafe extern "C" fn(*mut u8, i32, i32, i32, i32, i32, u8);
 /// (切好的行要接在後面的 vector<string*>, 原文, 寬幾格)
 type WrapFn = unsafe extern "C" fn(*mut u8, *const StdString, i32);
+/// (color_text_boxst：開頭是 vector<color_text_linest*>, 含換色標記的原文)
+type CtbAddFn = unsafe extern "C" fn(*mut u8, *const StdString);
 
-pub const HOOKS: [&str; 7] =
-    ["addst", "addst_flag", "top_addst", "addcoloredst", "mtb_set_width", "add_anchored_tile", "wrap_text"];
-static TRAMPOLINES: [AtomicUsize; 7] = [const { AtomicUsize::new(0) }; 7];
+pub const HOOKS: [&str; 8] =
+    ["addst", "addst_flag", "top_addst", "addcoloredst", "mtb_set_width", "add_anchored_tile", "wrap_text", "ctb_add_string"];
+static TRAMPOLINES: [AtomicUsize; 8] = [const { AtomicUsize::new(0) }; 8];
 /// wrap_text 的位址：enable 時從呼叫它的程式碼找出遊戲啟動時就切好的提示（見 lines.rs）
 pub static WRAP_TEXT: OnceLock<usize> = OnceLock::new();
 
@@ -109,7 +111,8 @@ pub fn attach(name: &str, target: usize) -> Result<(), String> {
         3 => hook_addcoloredst as *const (),
         4 => hook_mtb_set_width as *const (),
         5 => hook_add_anchored_tile as *const (),
-        _ => hook_wrap_text as *const (),
+        6 => hook_wrap_text as *const (),
+        _ => hook_ctb_add_string as *const (),
     };
     let detour = unsafe { RawDetour::new(target as *const (), hook) }.map_err(|e| e.to_string())?;
     TRAMPOLINES[index].store(detour.trampoline() as *const () as usize, Ordering::Release);
@@ -229,8 +232,8 @@ impl std::ops::Deref for Found<'_> {
     }
 }
 
-fn lookup<'a>(dict: &'a Dict, key: &[u8]) -> Option<Found<'a>> {
-    let screen = if dict.screens.is_empty() { None } else { dict.screen_entry(key, &FOCUS.lock()) };
+fn lookup<'a>(dict: &'a Dict, key: &[u8], y: i32) -> Option<Found<'a>> {
+    let screen = if dict.screens.is_empty() { None } else { dict.screen_entry(key, &FOCUS.lock(), y) };
     if let Some(entry) = screen.or_else(|| dict.entries.get(key)) {
         return Some(Found::Fixed(entry));
     }
@@ -247,15 +250,14 @@ unsafe fn translate_call(gps: *mut u8, kind: &str, key: &[u8], space: i32, layer
         return false;
     }
     let dict = unsafe { &*dict };
-    let Some(entry) = lookup(dict, key) else {
+    let (x0, y): (i32, i32) = unsafe { (read(gps, layout.screenx), read(gps, layout.screeny)) };
+    let Some(entry) = lookup(dict, key, y) else {
         note_miss(kind, key);
         return false;
     };
     HITS.fetch_add(1, Ordering::Relaxed);
     let (cells, glyphs) = entry.fit(space);
     unsafe {
-        let x0: i32 = read(gps, layout.screenx);
-        let y: i32 = read(gps, layout.screeny);
         write(&entry.shadow()[..cells]);
         paint(gps, &layer(layout), x0, y, &entry.glyphs[..glyphs], &dict.texpos);
     }
@@ -354,6 +356,9 @@ unsafe extern "C" fn hook_top_addst(gps: *mut u8, s: *const StdString, just: i32
 
 unsafe extern "C" fn hook_addcoloredst(gps: *mut u8, s: *const u8, colors: *const u8) {
     let orig: ColoredFn = unsafe { std::mem::transmute(TRAMPOLINES[3].load(Ordering::Acquire)) };
+    if unsafe { colored_line(gps, s, |t, c| orig(gps, t, c)) } {
+        return;
+    }
     let key = unsafe { CStr::from_ptr(s.cast()).to_bytes() };
     let done = unsafe {
         translate_call(gps, "addcoloredst", key, 0, main_layer, |b| {
@@ -369,6 +374,41 @@ unsafe extern "C" fn hook_addcoloredst(gps: *mut u8, s: *const u8, colors: *cons
     if !done {
         unsafe { orig(gps, s, colors) }
     }
+}
+
+/// 彩色文字框的一行（見 ctb.rs）：照畫英文、不畫，或在這行的座標上畫幾段中文。回傳 false 表示不是框裡的行。
+/// `draw` 用遊戲原本的 addcoloredst 畫（文字, 每字顏色）。
+unsafe fn colored_line(gps: *mut u8, s: *const u8, draw: impl Fn(*const u8, *const u8)) -> bool {
+    let Some(plan) = (unsafe { crate::ctb::line_plan(s as usize) }) else { return false };
+    flush_label();
+    let pieces = match plan {
+        crate::ctb::Plan::English => {
+            let color = crate::ctb::CTB_LAYOUT.get().map_or(0, |l| l.color);
+            draw(s, unsafe { s.add(color) });
+            return true;
+        }
+        crate::ctb::Plan::Skip => return true,
+        crate::ctb::Plan::Draw(pieces) => pieces,
+    };
+    let dict = DICT.load(Ordering::Acquire);
+    let Some(layout) = LAYOUT.get().filter(|_| !dict.is_null()) else { return true };
+    let dict = unsafe { &*dict };
+    HITS.fetch_add(1, Ordering::Relaxed);
+    unsafe {
+        let (x, y): (i32, i32) = (read(gps, layout.screenx), read(gps, layout.screeny));
+        for p in pieces.iter() {
+            write(gps, layout.screenx, x + p.dx);
+            write(gps, layout.screeny, y + p.dy);
+            let shadow = p.entry.shadow();
+            let text: Vec<u8> = shadow.iter().copied().chain([0]).collect();
+            let cols: Vec<u8> = std::iter::repeat_n(p.color, shadow.len()).chain([0]).collect();
+            draw(text.as_ptr(), cols.as_ptr());
+            paint(gps, &layout.main, x + p.dx, y + p.dy, &p.entry.glyphs, &dict.texpos);
+        }
+        write(gps, layout.screenx, x);
+        write(gps, layout.screeny, y);
+    }
+    true
 }
 
 /// 段落排版：原函式依寬度排完英文單字後，整段有譯文就訂好每個單字的畫字計畫（見 mtb.rs）。
@@ -394,6 +434,25 @@ unsafe extern "C" fn hook_wrap_text(out: *mut u8, text: *const StdString, width:
     unsafe {
         let lines = crate::lines::vec_items(out as usize);
         crate::lines::plan(&lines[before.min(lines.len())..], (*text).bytes(), width, &*dict, false);
+    }
+}
+
+/// 彩色文字框：原函式把含換色標記的一段切成好幾行、接在框的行清單後面；整段有譯文就替這幾行訂畫字計畫（見 ctb.rs）。
+unsafe extern "C" fn hook_ctb_add_string(boxp: *mut u8, raw: *const StdString) {
+    let orig: CtbAddFn = unsafe { std::mem::transmute(TRAMPOLINES[7].load(Ordering::Acquire)) };
+    let before = unsafe { crate::lines::vec_len(boxp as usize) };
+    unsafe { orig(boxp, raw) };
+    let dict = DICT.load(Ordering::Acquire);
+    let Some(layout) = crate::ctb::CTB_LAYOUT.get() else { return };
+    if dict.is_null() || !ENABLED.load(Ordering::Relaxed) {
+        return;
+    }
+    unsafe {
+        let lines = crate::lines::vec_items(boxp as usize);
+        let width: i32 = read(boxp, layout.width);
+        for sentence in crate::ctb::plan(&lines[before.min(lines.len())..], (*raw).bytes(), width, &*dict) {
+            note_miss("ctb", &sentence);
+        }
     }
 }
 
@@ -469,7 +528,7 @@ unsafe fn finish_label(label: Label) {
         return;
     }
     let dict = unsafe { &*dict };
-    let Some(entry) = lookup(dict, &label.text) else {
+    let Some(entry) = lookup(dict, &label.text, label.y) else {
         note_miss("add_anchored_tile", &label.text);
         return;
     };

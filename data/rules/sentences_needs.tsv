@@ -1,0 +1,27 @@
+en	zh-Hant	zh-Hans	align	note
+Overall, {@1} is very focused with satisfied needs.	整體而言，{1}的需求都已滿足，非常專注。	总体而言，{1}的需求都已满足，非常专注。		FUN_14047f680 需求分頁開頭的整體專注度
+Overall, {@1} is quite focused with satisfied needs.	整體而言，{1}的需求都已滿足，相當專注。	总体而言，{1}的需求都已满足，相当专注。		FUN_14047f680 需求分頁開頭的整體專注度
+Overall, {@1} is somewhat focused with satisfied needs.	整體而言，{1}的需求都已滿足，還算專注。	总体而言，{1}的需求都已满足，还算专注。		FUN_14047f680 需求分頁開頭的整體專注度
+Overall, {@1} is untroubled by unmet needs.	整體而言，{1}並未受到未滿足的需求困擾。	总体而言，{1}并未受到未满足的需求困扰。		FUN_14047f680 需求分頁開頭的整體專注度
+Overall, {@1} is unfocused by unmet needs.	整體而言，{1}因需求未滿足而有點不專心。	总体而言，{1}因需求未满足而有点不专心。		FUN_14047f680 需求分頁開頭的整體專注度
+Overall, {@1} is distracted by unmet needs.	整體而言，{1}因需求未滿足而分心。	总体而言，{1}因需求未满足而分心。		FUN_14047f680 需求分頁開頭的整體專注度
+Overall, {@1} is badly distracted by unmet needs.	整體而言，{1}因需求未滿足而嚴重分心。	总体而言，{1}因需求未满足而严重分心。		FUN_14047f680 需求分頁開頭的整體專注度
+{@1} is unfettered {%2}.	{1}{2}，感到無拘無束。	{1}{2}，感到无拘无束。		FUN_14047f680 各需求的專注度（+3）；{2} 是 after… 原因（sentences_needs 整句條目）
+{@1} is level-headed {%2}.	{1}{2}，頭腦清醒。	{1}{2}，头脑清醒。		FUN_14047f680 各需求的專注度（+2）；{2} 是 after… 原因（sentences_needs 整句條目）
+{@1} is untroubled {%2}.	{1}{2}，心情安穩。	{1}{2}，心情安稳。		FUN_14047f680 各需求的專注度（+1）；{2} 是 after… 原因（sentences_needs 整句條目）
+{@1} is not distracted {%2}.	{1}{2}，但並未分心。	{1}{2}，但并未分心。		FUN_14047f680 各需求的專注度（0，原因一定是未滿足的寫法）；{2} 是 after… 原因（sentences_needs 整句條目）
+{@1} is unfocused {%2}.	{1}{2}，有點不專心。	{1}{2}，有点不专心。		FUN_14047f680 各需求的專注度（-1）；{2} 是 after… 原因（sentences_needs 整句條目）
+{@1} is distracted {%2}.	{1}{2}，因而分心。	{1}{2}，因而分心。		FUN_14047f680 各需求的專注度（-2）；{2} 是 after… 原因（sentences_needs 整句條目）
+{@1} is badly distracted {%2}.	{1}{2}，因而嚴重分心。	{1}{2}，因而严重分心。		FUN_14047f680 各需求的專注度（-3）；{2} 是 after… 原因（sentences_needs 整句條目）
+after being unable to pray to {1}	好一陣子無法向{1}祈禱	好一阵子无法向{1}祈祷		FUN_14047f680 需求（祈禱）未滿足；{1} 神名照原文
+after communing with {1}	與{1}交流過後	与{1}交流过后		FUN_14047f680 需求（祈禱）滿足；{1} 神名照原文
+{@1} needs alcohol to get through the working day.	{1}需要酒精才撐得過一天的工作。	{1}需要酒精才撑得过一天的工作。		FUN_14047f680 酒精依賴（性格分頁）
+{@1} needs alcohol to get through the working day and is starting to work slowly due to its scarcity.	{1}需要酒精才撐得過一天的工作，因為缺酒，已經開始放慢工作。	{1}需要酒精才撑得过一天的工作，因为缺酒，已经开始放慢工作。		FUN_14047f680 同上：缺酒程度 1
+{@1} needs alcohol to get through the working day and really wants a drink.	{1}需要酒精才撐得過一天的工作，現在非常想喝一杯。	{1}需要酒精才撑得过一天的工作，现在非常想喝一杯。		FUN_14047f680 同上：缺酒程度 2
+{@1} needs alcohol to get through the working day and has gone without a drink for far, far too long.	{1}需要酒精才撐得過一天的工作，已經太久太久沒喝到酒了。	{1}需要酒精才撑得过一天的工作，已经太久太久没喝到酒了。		FUN_14047f680 同上：缺酒程度 3
+{@1} needs alcohol to get through the working day and can't even remember the last time {@2} had some.	{1}需要酒精才撐得過一天的工作，甚至想不起{2}上次喝酒是什麼時候。	{1}需要酒精才撑得过一天的工作，甚至想不起{2}上次喝酒是什么时候。		FUN_14047f680 同上：缺酒程度 4
+{@1} does not mind being outdoors, at least for a time.	{1}不介意待在戶外，至少一陣子還行。	{1}不介意待在户外，至少一阵子还行。		FUN_14047f680 習慣戶外程度 1
+{@1} likes working outdoors and grumbles only mildly at inclement weather.	{1}喜歡在戶外工作，遇上惡劣天氣也只是稍微抱怨。	{1}喜欢在户外工作，遇上恶劣天气也只是稍微抱怨。		FUN_14047f680 習慣戶外程度 2
+{@1} doesn't really care about anything anymore.	{1}已經對什麼都不在乎了。	{1}已经对什么都不在乎了。		FUN_14047f680 創傷累積（最高）
+{@1} is a hardened individual.	{1}已經心如鐵石。	{1}已经心如铁石。		FUN_14047f680 創傷累積（高）
+{@1} is getting used to tragedy.	{1}漸漸習慣了悲劇。	{1}渐渐习惯了悲剧。		FUN_14047f680 創傷累積（中）

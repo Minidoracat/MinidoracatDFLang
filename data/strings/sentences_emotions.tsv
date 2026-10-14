@@ -1,0 +1,134 @@
+en	zh-Hant	zh-Hans	align	note
+accepting	坦然	坦然		情緒詞，接「感到」
+admiration	欽佩	钦佩		情緒詞，接「感到」
+adoration	愛慕	爱慕		情緒詞，接「感到」
+affection	溫情	温情		情緒詞，接「感到」
+afraid	害怕	害怕		情緒詞，接「感到」
+aggravated	氣惱	气恼		情緒詞，接「感到」
+agitated	焦躁	焦躁		情緒詞，接「感到」
+agony	痛苦	痛苦		情緒詞，接「感到」；is in 外框接「深感」
+alarmed	驚慌	惊慌		情緒詞，接「感到」
+alienated	疏離	疏离		情緒詞，接「感到」
+amazed	驚奇	惊奇		情緒詞，接「感到」
+ambivalent	矛盾	矛盾		情緒詞，接「感到」
+amused	好笑	好笑		情緒詞，接「感到」
+angry	憤怒	愤怒		情緒詞，接「感到」
+anguish	揪心	揪心		情緒詞，接「感到」；is in 外框接「深感」
+annoyed	心煩	心烦		情緒詞，接「感到」
+anxious	焦慮	焦虑		情緒詞，接「感到」；記憶清單句首大寫會先命中別檔，rules 另有外框
+anything	任何感受	任何感受		He doesn't feel anything …：外框「{1}{3}沒有{2}」（FUN_1401a5b70 情緒 -1）
+apathetic	冷漠	冷漠		情緒詞，接「感到」
+aroused	動情	动情		情緒詞，接「感到」
+ashamed	羞愧	羞愧		情緒詞，接「感到」
+astonished	驚訝	惊讶		情緒詞，接「感到」
+aversion	反感	反感		情緒詞，接「感到」
+awe	敬畏	敬畏		情緒詞，接「感到」；is in 外框接「深感」
+bitter	苦澀	苦涩		情緒詞，接「感到」
+blissful	幸福	幸福		情緒詞，接「感到」
+bored	無聊	无聊		情緒詞，接「感到」
+caring	憐惜	怜惜		情緒詞，接「感到」
+confused	困惑	困惑		情緒詞，接「感到」
+contemptuous	輕蔑	轻蔑		情緒詞，接「感到」
+content	滿足	满足		情緒詞，接「感到」
+defeated	被擊垮	被击垮		情緒詞，接「感到」
+dejected	沮喪	沮丧		情緒詞，接「感到」
+delighted	欣喜	欣喜		情緒詞，接「感到」
+despair	絕望	绝望		情緒詞，接「感到」；is in 外框接「深感」
+disappointed	失望	失望		情緒詞，接「感到」
+disgusted	厭惡	厌恶		情緒詞，接「感到」
+disillusioned	幻滅	幻灭		情緒詞，接「感到」
+dislike	厭煩	厌烦		情緒詞，接「感到」
+dismayed	驚惶	惊惶		情緒詞，接「感到」
+displeasure	不悅	不悦		情緒詞，接「感到」
+distressed	苦惱	苦恼		情緒詞，接「感到」
+doubt	懷疑	怀疑		情緒詞，接「感到」；is in 外框接「深感」
+eager	渴望	渴望		情緒詞，接「感到」
+elated	高興	高兴		情緒詞，接「感到」
+embarrassed	尷尬	尴尬		情緒詞，接「感到」
+empathy	共鳴	共鸣		情緒詞，接「感到」
+empty	空虛	空虚		情緒詞，接「感到」
+enjoyment	樂趣	乐趣		情緒詞，接「感到」
+enraptured	陶醉	陶醉		情緒詞，接「感到」
+enthusiastic	熱切	热切		情緒詞，接「感到」
+euphoric	狂喜	狂喜		情緒詞，接「感到」
+exasperated	惱怒	恼怒		情緒詞，接「感到」
+excited	興奮	兴奋		情緒詞，接「感到」
+exhilarated	振奮	振奋		情緒詞，接「感到」
+existential crisis	存在危機	存在危机		情緒詞，接「感到」；is in 外框接「深感」
+expectant	期待	期待		情緒詞，接「感到」
+ferocity	兇性大發	凶性大发		情緒詞，接「感到」
+fondness	喜愛	喜爱		情緒詞，接「感到」
+free	自由	自由		情緒詞，接「感到」
+frightened	驚恐	惊恐		情緒詞，接「感到」
+frustrated	挫折	挫败		情緒詞，接「感到」；台灣說感到挫折，大陸說感到挫败
+gaiety	歡快	欢快		情緒詞，接「感到」
+gleeful	雀躍	雀跃		情緒詞，接「感到」
+gloomy	陰鬱	阴郁		情緒詞，接「感到」
+glum	鬱悶	郁闷		情緒詞，接「感到」
+gratitude	感激	感激		情緒詞，接「感到」
+grieves	悲痛	悲痛		記憶清單（FUN_140481f00）的 Grieves … 用，接「感到」；有主詞的 He grieves … 由 rules 外框寫死「悲痛不已」
+grim satisfaction	冷酷的快意	冷酷的快意		情緒詞，接「感到」
+grouchy	煩躁	烦躁		情緒詞，接「感到」
+grumpy	不爽	不爽		情緒詞，接「感到」
+guilty	內疚	内疚		情緒詞，接「感到」
+happy	開心	开心		情緒詞，接「感到」
+hateful	憎恨	憎恨		情緒詞，接「感到」；記憶清單句首大寫會先命中別檔，rules 另有外框
+hope	希望	希望		情緒詞，接「感到」
+hopeless	無望	无望		情緒詞，接「感到」；despair 用絕望，這裡區隔
+horrified	驚駭	惊骇		情緒詞，接「感到」
+humiliated	屈辱	屈辱		情緒詞，接「感到」
+indignant	憤慨	愤慨		情緒詞，接「感到」
+insulted	受辱	受辱		情緒詞，接「感到」
+interested	有興趣	有兴趣		情緒詞，接「感到」
+irritated	惱火	恼火		情緒詞，接「感到」
+isolated	孤立	孤立		情緒詞，接「感到」；記憶清單句首大寫會先命中別檔，rules 另有外框
+jolly	快活	快活		情緒詞，接「感到」
+jovial	開朗	开朗		情緒詞，接「感到」
+joy	喜悅	喜悦		情緒詞，接「感到」
+jubilant	歡欣	欢欣		情緒詞，接「感到」
+loathing	憎惡	憎恶		情緒詞，接「感到」
+lonely	孤單	孤独		情緒詞，接「感到」
+love	愛意	爱意		情緒詞，接「感到」
+lustful	情慾高漲	情欲高涨		情緒詞，接「感到」；記憶清單句首大寫會先命中別檔，rules 另有外框
+miserable	悲慘	悲惨		情緒詞，接「感到」
+mortified	羞愧難當	羞愧难当		情緒詞，接「感到」
+nervous	緊張	紧张		情緒詞，接「感到」
+nostalgic	懷舊	怀旧		情緒詞，接「感到」
+optimistic	樂觀	乐观		情緒詞，接「感到」
+outraged	怒不可遏	怒不可遏		情緒詞，接「感到」
+panics	恐慌	恐慌		記憶清單的 Panics … 用，接「感到」；有主詞的 He panics … 由 rules 外框寫死「驚慌失措」
+passionate	熱情	热情		情緒詞，接「感到」
+patient	心平氣和	心平气和		情緒詞，接「感到」；記憶清單句首大寫 Patient 會先命中 unit.tsv，另有外框
+pessimistic	悲觀	悲观		情緒詞，接「感到」
+pleasure	愉悅	愉悦		情緒詞，接「感到」
+proud	自豪	自豪		情緒詞，接「感到」；記憶清單句首大寫會先命中別檔，rules 另有外框
+rages	暴怒	暴怒		記憶清單的 Rages … 用，接「感到」；有主詞的 He rages … 由 rules 外框寫死「勃然大怒」
+regretful	後悔	后悔		情緒詞，接「感到」
+rejected	被拒絕	被拒绝		情緒詞，接「感到」
+relieved	如釋重負	如释重负		情緒詞，接「感到」
+remorseful	悔恨	悔恨		情緒詞，接「感到」
+repentant	懊悔	懊悔		情緒詞，接「感到」
+resentful	怨恨	怨恨		情緒詞，接「感到」
+restless	坐立不安	坐立不安		情緒詞，接「感到」
+sad	悲傷	悲伤		情緒詞，接「感到」
+satisfied	滿意	满意		情緒詞，接「感到」
+self-pity	自憐	自怜		情緒詞，接「感到」
+servile	卑微	卑微		情緒詞，接「感到」
+shaken	心驚	心惊		情緒詞，接「感到」
+shocked	震驚	震惊		情緒詞，接「感到」
+suspicious	不對勁	不对劲		情緒詞，接「感到」；不用「起疑」，doubt 已用懷疑
+sympathy	同情	同情		情緒詞，接「感到」
+tenderness	柔情	柔情		情緒詞，接「感到」
+terrified	極度恐懼	极度恐惧		情緒詞，接「感到」
+thrilled	激動	激动		情緒詞，接「感到」
+triumph	勝利的喜悅	胜利的喜悦		情緒詞，接「感到」
+uneasy	不安	不安		情緒詞，接「感到」
+unhappy	不快樂	不开心		情緒詞，接「感到」
+vengeful	復仇心切	复仇心切		情緒詞，接「感到」；記憶清單句首大寫會先命中別檔，rules 另有外框
+wonder	驚嘆	惊叹		情緒詞，接「感到」
+worried	擔心	担心		情緒詞，接「感到」
+wrathful	狂怒	狂怒		情緒詞，接「感到」
+zealous	狂熱	狂热		情緒詞，接「感到」
+panicked	驚慌失措	惊慌失措		單獨畫出時用（冒險模式交談畫面的 General Mood: Panicked）；想法句的 panics／panicked 外框另寫在 rules/sentences_thoughts.tsv
+grieved	悲痛	悲痛		同上（grieves／grieved）
+raged	暴怒	暴怒		同上（rages／raged）

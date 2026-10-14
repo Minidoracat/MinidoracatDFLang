@@ -150,6 +150,7 @@ Load stone trap	裝填落石陷阱	装填落石陷阱		與 Stone-fall 落石陷�
 Load weapon trap	裝填武器陷阱	装填武器陷阱		術語 weapon trap
 Dig	挖	挖		工作名稱；原文 3 格只放得下一個字
 Eat	吃	吃		工作名稱；原文 3 格只放得下一個字
+Drink	喝	喝		工作名稱（喝東西，不一定是酒）；和「吃」同樣寫一個字。要塞上方資訊列的存量標題 Drink 另由 data/screens/dwarfmode.tsv 限定第 0 列譯「酒類」；冒險模式的動作 Drink 也是「喝」
 Clean	清潔	清洁		工作名稱：清理身體或環境
 Rest	休息	休息		工作名稱：受傷後臥床休息
 Strange mood	奇異心境	奇异心境		工作名稱：矮人進入奇異心境；術語 strange mood
@@ -165,3 +166,4 @@ Pit/pond a large animal	把大型動物丟進坑／池塘	把大型动物扔进�
 Pen/pasture a large animal	把大型動物關進畜欄／牧場	把大型动物关进畜栏/牧场		工作名稱；區域名畜欄／牧場
 Surgery	手術	手术		工作名稱：醫療
 Engrave memorial slab	雕刻紀念石板	雕刻纪念石板		工作名稱
+No patient	沒有病人	没有病人		工作取消原因（Diagnose Patient 等醫療工作找不到病人）；不寫整句時會被 {@1} {@2} 接成「否有耐心」

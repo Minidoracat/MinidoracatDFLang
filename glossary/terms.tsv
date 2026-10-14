@@ -165,7 +165,7 @@ named object	命名物品	命名物品	game	approved
 written content	著作	著作	game	approved		
 object	物品	物品	game	draft		「Object testing arena」物件、「Cleaning game objects」遊戲物件、tutorial「interact with objects」物體
 location	場所	场所	game	draft		「embark location」出發地點、「Inaccessible mission location」；提示框「the announcement's location」地點、「Recenter on this location」「recenter hotkey locations」位置
-burrow	活動區	活动区	game	approved	dfzh-wiki	
+burrow	活動區	活动区	game	draft	dfzh-wiki	動詞不是活動區：偏好「ability to burrow」打洞本領
 farm plot	農田	农田	game	approved		教學段落的 Farmplot 寫成一個字，整詞比對抓不到；要涵蓋就另加 farmplot 一列
 siege engine	攻城器械	攻城器械	game	approved		
 trade depot	貿易站	贸易站	game	approved	dfzh-wiki	
@@ -203,7 +203,7 @@ metal bar	金屬錠	金属锭	game	approved		en 寫單數，同時涵蓋 metal b
 smelter	冶煉爐	冶炼炉	game	approved		
 furnace	熔爐	熔炉	game	draft		Wood Furnace 定案為「燒炭爐」，不含「熔爐」
 well	水井	水井	game	draft		副詞：「as well」「well-suited to the hunt」
-lever	拉桿	拉杆	game	approved		
+lever	拉桿	拉杆	game	draft		建築是拉桿；知識主題「the lever」「the reasons why the lever is effective」是力學的槓桿
 pressure plate	壓力板	压力板	game	approved		
 cage	籠子	笼子	game	approved		
 track	軌道	轨道	game	draft		音樂「Track playing:」「Last track:」是曲目；「Toggle track view」「Freshest track」是生物足跡
@@ -238,7 +238,7 @@ alert	警報	警报	ui	approved		先把 settings.tsv「Alert」繁中的「警�
 tutorial	教學	教程	ui	approved		
 guide	指南	指南	ui	draft		「Saving flow guides」譯流體導引；「agreed to guide」「as a guide」是嚮導
 hotkey	快捷鍵	快捷键	ui	approved		
-intelligence	情報	情报	game	approved		遊戲字串只有司法情報一種用法
+intelligence	情報	情报	game	draft		司法情報；生物偏好（烏鴉等）的 intelligence 是聰慧
 case	案件	案件	game	draft		popups.tsv 活動區說明「in case of intruders」
 crime	罪行	罪行	game	approved		
 conspiracy	陰謀	阴谋	game	approved		複數 conspiracies 要另列
@@ -266,14 +266,14 @@ Traction bench	牽引床	牵引床	game	approved
 Ashery	製灰工坊|製灰坊	制灰工坊|制灰坊	game	approved		標籤放不下全名時用「製灰坊」
 Dabbling	入門	入门	skill	approved		技能等級 0；「等級＋技能名詞」見 rules/professions.tsv，例：Dabbling Miner 入門礦工
 Novice	新手	新手	skill	approved		技能等級 1
-Adequate	合格	合格	skill	approved		技能等級 2
+Adequate	合格	合格	skill	draft		技能等級 2；想法句「not having adequate protection」是「足夠的保護」
 Competent	稱職	称职	skill	approved		技能等級 3
 Skilled	熟練	熟练	skill	approved		技能等級 4
 Proficient	純熟	纯熟	skill	approved		技能等級 5
 Talented	出色	出色	skill	approved		技能等級 6
 Adept	老練	老练	skill	approved		技能等級 7
 Expert	專家	专家	skill	approved		技能等級 8
-Professional	資深	资深	skill	approved		技能等級 9
+Professional	資深	资深	skill	draft		技能等級 9；知識主題「the use of professional hospital staff」是「專業」醫院人員
 Accomplished	傑出	杰出	skill	approved		技能等級 10；比 Great「卓越」低一級
 Great	卓越	卓越	skill	draft		技能等級 11；「great beast」巨獸等一般形容詞不用
 Master	大師	大师	skill	draft		技能等級 12；「Master Volume」主音量、「Master Thief」神偷不用
@@ -321,7 +321,7 @@ elf	精靈	精灵	creature	approved
 human	人類	人类	creature	approved		
 giant	巨型	巨型	creature	draft		派生名稱 giant X 譯「巨型X」；真實物種名裡的 giant（giant grouper 龍膽石斑、giant tortoise 象龜）不用
 stray	流浪	流浪	game	approved		沒有主人的家畜（Stray Cat 流浪貓）
-wool	羊毛	羊毛	game	approved		
+wool	羊毛	羊毛	game	draft		材料是羊毛；性格句的成語 dyed-in-the-wool 是「生性、徹頭徹尾」
 silk	絲	丝	game	approved		
 parchment	羊皮紙	羊皮纸	game	approved		
 tallow	獸脂	兽脂	game	approved		煉過的動物脂肪；生的 fat 是「脂肪」

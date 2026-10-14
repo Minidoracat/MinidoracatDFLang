@@ -1,0 +1,457 @@
+en	zh-Hant	zh-Hans	align	note
+conflict	衝突	冲突		fn_thought_composer case 0；前接 while in
+experiencing trauma	經歷創傷	经历创伤		fn_thought_composer case 1；前接 after
+seeing somebody die	目睹某人死去	目睹某人死去		fn_thought_composer case 2；前接 after
+the unexpected death of somebody	某人意外死亡	某人意外死亡		fn_thought_composer case 3；前接 at
+somebody's death	某人的死	某人的死		fn_thought_composer case 4；前接 at
+killing somebody	殺死某人	杀死某人		fn_thought_composer case 5；前接 while
+being reunited with a loved one	與所愛之人重聚	与所爱之人重聚		fn_thought_composer case 7；前接 after
+joining an existing conflict	加入進行中的衝突	加入进行中的冲突		fn_thought_composer case 8；前接 when
+producing a masterwork	做出傑作	做出杰作		fn_thought_composer case 9；前接 after
+creating an artifact	打造出神器	打造出神器		fn_thought_composer case 0xa；前接 after
+as he was caught up in a new romance	陷入新戀情時	陷入新恋情时		fn_thought_composer case 0xc；無介系詞；含介系詞與代名詞的整句（as＋代名詞＋was caught up in）；中文省略代名詞，主詞由外框提供
+as she was caught up in a new romance	陷入新戀情時	陷入新恋情时		fn_thought_composer case 0xc；無介系詞；含介系詞與代名詞的整句（as＋代名詞＋was caught up in）；中文省略代名詞，主詞由外框提供
+as it was caught up in a new romance	陷入新戀情時	陷入新恋情时		fn_thought_composer case 0xc；無介系詞；含介系詞與代名詞的整句（as＋代名詞＋was caught up in）；中文省略代名詞，主詞由外框提供
+as you were caught up in a new romance	陷入新戀情時	陷入新恋情时		fn_thought_composer case 0xc；無介系詞；冒險模式玩家本人；含介系詞的整句
+a new romance	一段新戀情	一段新恋情		fn_thought_composer case 0xc；無介系詞；無介系詞形（記憶句 remembering 之後）
+becoming a parent	為人父母	为人父母		fn_thought_composer case 0xd；前接 after
+being near to a conflict	身處衝突附近	身处冲突附近		fn_thought_composer case 0xe；無介系詞；一律無介系詞，直接接在情緒後當狀語
+an agreement was cancelled	協議被取消	协议被取消		fn_thought_composer case 0xf；前接 after
+joining a traveling group	加入旅行隊伍	加入旅行队伍		fn_thought_composer case 0x10；前接 upon
+a site was controlled	某處據點遭到控制	某处据点遭到控制		fn_thought_composer case 0x11；前接 after
+a tribute cancellation	進貢被取消	进贡被取消		fn_thought_composer case 0x12；前接 after
+an incident	一起事件	一起事件		fn_thought_composer case 0x13；前接 after（整句條目 after an incident 另寫）；無介系詞形接在 remembering 後
+after an incident	事件發生後	事件发生后		fn_thought_composer case 0x13；含介系詞的整句條目：通用 after {1} 會變成「一起事件後」，不通順
+hearing a rumor	聽到傳聞	听到传闻		fn_thought_composer case 0x14；前接 after
+being removed from a military group	被移出軍事編組	被移出军事编组		fn_thought_composer case 0x15；前接 after
+when a stranger advanced with a weapon	陌生人持武器逼近時	陌生人持武器逼近时		fn_thought_composer case 0x16；無介系詞；一律含 when，整句條目
+seeing a stranger sneaking around	看見陌生人鬼鬼祟祟	看见陌生人鬼鬼祟祟		fn_thought_composer case 0x17；前接 after
+witnessing a night creature drinking blood	目睹夜行生物吸血	目睹夜行生物吸血		fn_thought_composer case 0x18；前接 after
+bringing up job scarcity in a meeting	在會面時提出工作短缺	在会面时提出工作短缺		fn_thought_composer case 0x19/0x19；前接 after
+making suggestions about work allocations	對工作分配提出建議	对工作分配提出建议		fn_thought_composer case 0x19/0x1a；前接 after
+requesting weapon production	要求生產武器	要求生产武器		fn_thought_composer case 0x19/0x1b；前接 after
+yelling at somebody in charge	對主事者大吼	对管事的人大吼		fn_thought_composer case 0x19/0x1c；前接 while
+crying on somebody in charge	向主事者哭訴	向管事的人哭诉		fn_thought_composer case 0x19/0x1d；前接 while
+petitioning for citizenship	請願成為公民	请愿成为公民		fn_thought_composer case 0x19/0x30；前接 after
+telling somebody about being trapped here	向人訴說自己被困在這裡	向人诉说自己被困在这里		fn_thought_composer case 0x19/0x35；前接 after
+yelling at a priest	對祭司大吼	对祭司大吼		fn_thought_composer case 0x19/0x5c；前接 while
+crying on a priest	向祭司哭訴	向祭司哭诉		fn_thought_composer case 0x19/0x5d；前接 while
+being yelled at by an unhappy citizen	被不滿的公民大吼	被不满的公民大吼		fn_thought_composer case 0x1a/0x1c；前接 while
+being cried on by an unhappy citizen	聽不滿的公民哭訴	听不满的公民哭诉		fn_thought_composer case 0x1a/0x1d；前接 while
+hearing somebody was being prevented from leaving	聽說有人被阻止離開	听说有人被阻止离开		fn_thought_composer case 0x1a/0x35；前接 after
+being yelled at by an unhappy worshipper	被不滿的信徒大吼	被不满的信徒大吼		fn_thought_composer case 0x1a/0x5c；前接 while
+being cried on by an unhappy worshipper	聽不滿的信徒哭訴	听不满的信徒哭诉		fn_thought_composer case 0x1a/0x5d；前接 while
+losing a pet	失去寵物	失去宠物		fn_thought_composer case 0x1f；前接 after
+throwing something	扔東西	扔东西		fn_thought_composer case 0x20；前接 after
+being released from confinement	從監禁中獲釋	从监禁中获释		fn_thought_composer case 0x21；前接 after
+a miscarriage	流產	流产		fn_thought_composer case 0x22；前接 after
+his spouse's miscarriage	配偶流產	配偶流产		fn_thought_composer case 0x23；前接 after；代名詞所有格（冒險模式為 your）；中文省略
+her spouse's miscarriage	配偶流產	配偶流产		fn_thought_composer case 0x23；前接 after；代名詞所有格（冒險模式為 your）；中文省略
+its spouse's miscarriage	配偶流產	配偶流产		fn_thought_composer case 0x23；前接 after；代名詞所有格（冒險模式為 your）；中文省略
+your spouse's miscarriage	配偶流產	配偶流产		fn_thought_composer case 0x23；前接 after；代名詞所有格（冒險模式為 your）；中文省略
+wearing old clothing	穿著舊衣服	穿着旧衣服		fn_thought_composer case 0x24；前接 to be
+wearing tattered clothing	穿著破爛的衣服	穿着破烂的衣服		fn_thought_composer case 0x25；前接 to be
+clothes rot off of his body	衣服從身上爛掉	衣服从身上烂掉		fn_thought_composer case 0x26；前接 to have；代名詞所有格（冒險模式為 your）；中文省略
+clothes rot off of her body	衣服從身上爛掉	衣服从身上烂掉		fn_thought_composer case 0x26；前接 to have；代名詞所有格（冒險模式為 your）；中文省略
+clothes rot off of its body	衣服從身上爛掉	衣服从身上烂掉		fn_thought_composer case 0x26；前接 to have；代名詞所有格（冒險模式為 your）；中文省略
+clothes rot off of your body	衣服從身上爛掉	衣服从身上烂掉		fn_thought_composer case 0x26；前接 to have；代名詞所有格（冒險模式為 your）；中文省略
+a dead spouse	已故的配偶	已故的配偶		fn_thought_composer case 0x27/0x28/0x86；被 being tormented in nightmares by／being haunted by 等句型抓成 {1}
+the dead	亡者	亡者		fn_thought_composer case 0x27/0x28/0x86；被 being tormented in nightmares by／being haunted by 等句型抓成 {1}
+a dead lover	已故的戀人	已故的恋人		fn_thought_composer case 0x27/0x28/0x86；被 being tormented in nightmares by／being haunted by 等句型抓成 {1}
+a dead sibling	已故的手足	已故的兄弟姐妹		fn_thought_composer case 0x27/0x28/0x86；被 being tormented in nightmares by／being haunted by 等句型抓成 {1}
+a dead friend	已故的朋友	已故的朋友		fn_thought_composer case 0x27/0x28/0x86；被 being tormented in nightmares by／being haunted by 等句型抓成 {1}
+a dead and still annoying acquaintance	已故卻依然惹人厭的熟人	已故却依然惹人厌的熟人		fn_thought_composer case 0x27/0x28/0x86；被 being tormented in nightmares by／being haunted by 等句型抓成 {1}
+a dead animal training partner	已故的動物訓練夥伴	已故的动物训练伙伴		fn_thought_composer case 0x27/0x28/0x86；被 being tormented in nightmares by／being haunted by 等句型抓成 {1}
+a dead pet	已故的寵物	已故的宠物		fn_thought_composer case 0x27/0x28/0x86；被 being tormented in nightmares by／being haunted by 等句型抓成 {1}
+Seat	椅子	椅子		建築種類名（building_type 名稱函式 FUN_14054d320，首字大寫）；fn_thought_composer case 0x1b-0x1e 欣賞家具時抓成 {1}；通用詞
+Burial Receptacle	棺材	棺材		建築種類名（building_type 名稱函式 FUN_14054d320，首字大寫）；fn_thought_composer case 0x1b-0x1e 欣賞家具時抓成 {1}；通用詞
+Container	箱子	箱子		建築種類名（building_type 名稱函式 FUN_14054d320，首字大寫）；fn_thought_composer case 0x1b-0x1e 欣賞家具時抓成 {1}；通用詞
+Glass Window	玻璃窗	玻璃窗		建築種類名（building_type 名稱函式 FUN_14054d320，首字大寫）；fn_thought_composer case 0x1b-0x1e 欣賞家具時抓成 {1}；通用詞
+Gem Window	寶石窗	宝石窗		建築種類名（building_type 名稱函式 FUN_14054d320，首字大寫）；fn_thought_composer case 0x1b-0x1e 欣賞家具時抓成 {1}；通用詞
+Floor Hatch	地板活蓋	地板活盖		建築種類名（building_type 名稱函式 FUN_14054d320，首字大寫）；fn_thought_composer case 0x1b-0x1e 欣賞家具時抓成 {1}；通用詞
+Wall Grate	牆格柵	墙格栅		建築種類名（building_type 名稱函式 FUN_14054d320，首字大寫）；fn_thought_composer case 0x1b-0x1e 欣賞家具時抓成 {1}；通用詞
+Floor Grate	地板格柵	地板格栅		建築種類名（building_type 名稱函式 FUN_14054d320，首字大寫）；fn_thought_composer case 0x1b-0x1e 欣賞家具時抓成 {1}；通用詞
+Vertical Bars	直立柵欄	竖直栅栏		建築種類名（building_type 名稱函式 FUN_14054d320，首字大寫）；fn_thought_composer case 0x1b-0x1e 欣賞家具時抓成 {1}；通用詞
+Floor Bars	地板柵欄	地板栅栏		建築種類名（building_type 名稱函式 FUN_14054d320，首字大寫）；fn_thought_composer case 0x1b-0x1e 欣賞家具時抓成 {1}；通用詞
+Display Furniture	展示家具	展示家具		建築種類名（building_type 名稱函式 FUN_14054d320，首字大寫）；fn_thought_composer case 0x1b-0x1e 欣賞家具時抓成 {1}；通用詞
+Offering Place	供奉處	供奉处		建築種類名（building_type 名稱函式 FUN_14054d320，首字大寫）；fn_thought_composer case 0x1b-0x1e 欣賞家具時抓成 {1}；通用詞
+Archery Target	箭靶	箭靶		建築種類名（building_type 名稱函式 FUN_14054d320，首字大寫）；fn_thought_composer case 0x1b-0x1e 欣賞家具時抓成 {1}；通用詞
+mother	母親	母亲		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+father	父親	父亲		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+parent	父母	父母		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+husband	丈夫	丈夫		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+wife	妻子	妻子		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+spouse	配偶	配偶		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+eldest son	長子	长子		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+second eldest son	次子	次子		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+third eldest son	三子	三子		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+fourth eldest son	四子	四子		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+fifth eldest son	五子	五子		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+sixth eldest son	六子	六子		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+seventh eldest son	七子	七子		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+eighth eldest son	八子	八子		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+ninth eldest son	九子	九子		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+tenth eldest son	十子	十子		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+son	兒子	儿子		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+youngest son	最小的兒子	最小的儿子		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+only son	獨子	独子		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+eldest daughter	長女	长女		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+second eldest daughter	次女	次女		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+third eldest daughter	三女	三女		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+fourth eldest daughter	四女	四女		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+fifth eldest daughter	五女	五女		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+sixth eldest daughter	六女	六女		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+seventh eldest daughter	七女	七女		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+eighth eldest daughter	八女	八女		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+ninth eldest daughter	九女	九女		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+tenth eldest daughter	十女	十女		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+daughter	女兒	女儿		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+only daughter	獨生女	独生女		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+youngest daughter	最小的女兒	最小的女儿		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+eldest child	老大	老大		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+second eldest child	老二	老二		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+third eldest child	老三	老三		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+fourth eldest child	老四	老四		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+fifth eldest child	老五	老五		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+sixth eldest child	老六	老六		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+seventh eldest child	老七	老七		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+eighth eldest child	老八	老八		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+ninth eldest child	老九	老九		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+tenth eldest child	老十	老十		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+child	孩子	孩子		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+youngest child	老么	老幺		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+only child	獨生子女	独生子女		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+paternal grandmother	祖母	奶奶		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+paternal grandfather	祖父	爷爷		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+maternal grandmother	外婆	外婆		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+maternal grandfather	外公	外公		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+grandmother	祖母	祖母		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+grandfather	祖父	祖父		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+grandparent	祖父母	祖父母		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+older brother	哥哥	哥哥		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+older sister	姊姊	姐姐		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+older sibling	兄姊	哥哥姐姐		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+younger brother	弟弟	弟弟		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+younger sister	妹妹	妹妹		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+younger sibling	弟弟妹妹	弟弟妹妹		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+cousin	堂表親	堂表亲		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+aunt	阿姨	阿姨		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+uncle	叔叔	叔叔		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+niece	姪女	侄女		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+nephew	姪子	侄子		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+sibling	手足	兄弟姐妹		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+grandchild	孫兒	孙辈		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+older half-brother	同父異母或同母異父的哥哥	同父异母或同母异父的哥哥		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+older half-sister	同父異母或同母異父的姊姊	同父异母或同母异父的姐姐		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+older half-sibling	同父異母或同母異父的兄姊	同父异母或同母异父的哥哥姐姐		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+younger half-brother	同父異母或同母異父的弟弟	同父异母或同母异父的弟弟		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+younger half-sister	同父異母或同母異父的妹妹	同父异母或同母异父的妹妹		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+younger half-sibling	同父異母或同母異父的弟弟妹妹	同父异母或同母异父的弟弟妹妹		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+half-sibling	同父異母或同母異父的手足	同父异母或同母异父的兄弟姐妹		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
+a sparring session	對練	对练		fn_thought_composer case 0x29；前接 after；譯成動詞，接「後」
+being unable to find somebody to complain to about job scarcity	找不到人抱怨工作短缺	找不到人抱怨工作短缺		fn_thought_composer case 0x2a/0x19；前接 after
+being unable to make suggestions about work allocations	無法對工作分配提出建議	无法对工作分配提出建议		fn_thought_composer case 0x2a/0x1a；前接 after
+being unable to request weapon production	無法要求生產武器	无法要求生产武器		fn_thought_composer case 0x2a/0x1b；前接 after
+being unable to find somebody in charge to yell at	找不到主事者可以大吼	找不到管事的人可以大吼		fn_thought_composer case 0x2a/0x1c；前接 after
+being unable to find somebody in charge to cry on	找不到主事者可以哭訴	找不到管事的人可以哭诉		fn_thought_composer case 0x2a/0x1d；前接 after
+being unable to petition for citizenship	無法請願成為公民	无法请愿成为公民		fn_thought_composer case 0x2a/0x30；前接 after
+being unable to find a priest to complain to	找不到祭司可以抱怨	找不到祭司可以抱怨		fn_thought_composer case 0x2a/0x5c；前接 after
+being unable to find a priest to cry on	找不到祭司可以哭訴	找不到祭司可以哭诉		fn_thought_composer case 0x2a/0x5d；前接 after
+long patrol duty	長時間巡邏	长时间巡逻		fn_thought_composer case 0x2b；前接 during
+being nauseated by the sun	被陽光曬得反胃	被阳光晒得反胃		fn_thought_composer case 0x2c；前接 after
+being out in the sunshine again	再次沐浴在陽光下	再次沐浴在阳光下		fn_thought_composer case 0x2d；前接 at
+drowsy	昏昏欲睡	昏昏欲睡		fn_thought_composer case 0x2e；前接 when；有介系詞時是 when＋本體
+being drowsy	昏昏欲睡	昏昏欲睡		fn_thought_composer case 0x2e；無介系詞；無介系詞時遊戲改寫 being＋本體
+utterly sleep-deprived	嚴重缺乏睡眠	严重缺乏睡眠		fn_thought_composer case 0x2f；前接 when；有介系詞時是 when＋本體
+being utterly sleep-deprived	嚴重缺乏睡眠	严重缺乏睡眠		fn_thought_composer case 0x2f；無介系詞；無介系詞時遊戲改寫 being＋本體
+thirsty	口渴	口渴		fn_thought_composer case 0x30；前接 when；有介系詞時是 when＋本體
+being thirsty	口渴	口渴		fn_thought_composer case 0x30；無介系詞；無介系詞時遊戲改寫 being＋本體
+dehydrated	脫水	脱水		fn_thought_composer case 0x31；前接 when；有介系詞時是 when＋本體
+being dehydrated	脫水	脱水		fn_thought_composer case 0x31；無介系詞；無介系詞時遊戲改寫 being＋本體
+hungry	飢餓	饥饿		fn_thought_composer case 0x32；前接 when；有介系詞時是 when＋本體
+being hungry	飢餓	饥饿		fn_thought_composer case 0x32；無介系詞；無介系詞時遊戲改寫 being＋本體
+starving	飢腸轆轆	饥肠辘辘		fn_thought_composer case 0x33；前接 when；有介系詞時是 when＋本體
+being starving	飢腸轆轆	饥肠辘辘		fn_thought_composer case 0x33；無介系詞；無介系詞時遊戲改寫 being＋本體
+suffering a major injury	受了重傷	受了重伤		fn_thought_composer case 0x34；前接 after
+suffering a minor injury	受了輕傷	受了轻伤		fn_thought_composer case 0x35；前接 after
+sleeping uneasily due to noise	因噪音睡不安穩	因噪音睡不安稳		fn_thought_composer case 0x36/1；前接 after
+being disturbed during sleep by loud noises	睡覺時被巨大噪音吵醒	睡觉时被巨大噪音吵醒		fn_thought_composer case 0x36/2；前接 after
+loud noises made it impossible to sleep	巨大噪音吵得無法入睡	巨大噪音吵得无法入睡		fn_thought_composer case 0x36/3；前接 after
+being able to rest and recuperate	得以休養	得以休养		fn_thought_composer case 0x37；前接 after
+caught in freakish weather	遇上怪異的天氣	遇上怪异的天气		fn_thought_composer case 0x38；前接 when；有介系詞時是 when＋本體
+being caught in freakish weather	遇上怪異的天氣	遇上怪异的天气		fn_thought_composer case 0x38；無介系詞；無介系詞時遊戲改寫 being＋本體
+caught in the rain	淋雨	淋雨		fn_thought_composer case 0x39；前接 when；有介系詞時是 when＋本體
+being caught in the rain	淋雨	淋雨		fn_thought_composer case 0x39；無介系詞；無介系詞時遊戲改寫 being＋本體
+caught in a snow storm	遇上暴風雪	遇上暴风雪		fn_thought_composer case 0x3a；前接 when；有介系詞時是 when＋本體
+being caught in a snow storm	遇上暴風雪	遇上暴风雪		fn_thought_composer case 0x3a；無介系詞；無介系詞時遊戲改寫 being＋本體
+retching on a miasma	被瘴氣燻得作嘔	被瘴气熏得作呕		fn_thought_composer case 0x3b；前接 after
+choking on smoke underground	在地底被煙嗆到	在地下被烟呛到		fn_thought_composer case 0x3c；前接 after
+being near to a waterfall	身處瀑布附近	身处瀑布附近		fn_thought_composer case 0x3d；無介系詞；一律無介系詞，直接接在情緒後當狀語
+choking on dust underground	在地底被粉塵嗆到	在地下被粉尘呛到		fn_thought_composer case 0x3e；前接 after
+the state of demands	各項要求的狀況	各项要求的状况		fn_thought_composer case 0x3f；前接 considering
+a criminal could not be properly punished	罪犯未能受到應有的懲罰	罪犯未能受到应有的惩罚		fn_thought_composer case 0x40；前接 that；遊戲一律寫 that＋本體（無 param_6 判斷）；有 that 的外框由 ThoughtFrames 處理
+his punishment reduced	刑罰獲得減輕	刑罚获得减轻		fn_thought_composer case 0x41；前接 to have；代名詞所有格中文省略（冒險模式為 your）
+havinghis punishment reduced	刑罰獲得減輕	刑罚获得减轻		fn_thought_composer case 0x41；無介系詞；無介系詞形；遊戲原文 having 後面少一個空白，照原文
+her punishment reduced	刑罰獲得減輕	刑罚获得减轻		fn_thought_composer case 0x41；前接 to have；代名詞所有格中文省略（冒險模式為 your）
+havingher punishment reduced	刑罰獲得減輕	刑罚获得减轻		fn_thought_composer case 0x41；無介系詞；無介系詞形；遊戲原文 having 後面少一個空白，照原文
+its punishment reduced	刑罰獲得減輕	刑罚获得减轻		fn_thought_composer case 0x41；前接 to have；代名詞所有格中文省略（冒險模式為 your）
+havingits punishment reduced	刑罰獲得減輕	刑罚获得减轻		fn_thought_composer case 0x41；無介系詞；無介系詞形；遊戲原文 having 後面少一個空白，照原文
+your punishment reduced	刑罰獲得減輕	刑罚获得减轻		fn_thought_composer case 0x41；前接 to have；代名詞所有格中文省略（冒險模式為 your）
+havingyour punishment reduced	刑罰獲得減輕	刑罚获得减轻		fn_thought_composer case 0x41；無介系詞；無介系詞形；遊戲原文 having 後面少一個空白，照原文
+elected	當選	当选		fn_thought_composer case 0x42；前接 to be
+being elected	當選	当选		fn_thought_composer case 0x42；無介系詞；無介系詞形
+re-elected	連任	连任		fn_thought_composer case 0x43；前接 to be
+being re-elected	連任	连任		fn_thought_composer case 0x43；無介系詞；無介系詞形
+having a request approved	請求獲准	请求获准		fn_thought_composer case 0x44；無介系詞；一律無介系詞
+having a request ignored	請求遭到忽視	请求遭到忽视		fn_thought_composer case 0x45；無介系詞；一律無介系詞
+nobody could be punished for a failure	沒有人為失職受罰	没有人为失职受罚		fn_thought_composer case 0x46；前接 that；遊戲一律寫 that＋本體；有 that 的外框由 ThoughtFrames 處理
+his punishment delayed	刑罰被延後	刑罚被推迟		fn_thought_composer case 0x47；前接 to have；代名詞所有格中文省略（冒險模式為 your）
+having his punishment delayed	刑罰被延後	刑罚被推迟		fn_thought_composer case 0x47；無介系詞；無介系詞形
+her punishment delayed	刑罰被延後	刑罚被推迟		fn_thought_composer case 0x47；前接 to have；代名詞所有格中文省略（冒險模式為 your）
+having her punishment delayed	刑罰被延後	刑罚被推迟		fn_thought_composer case 0x47；無介系詞；無介系詞形
+its punishment delayed	刑罰被延後	刑罚被推迟		fn_thought_composer case 0x47；前接 to have；代名詞所有格中文省略（冒險模式為 your）
+having its punishment delayed	刑罰被延後	刑罚被推迟		fn_thought_composer case 0x47；無介系詞；無介系詞形
+your punishment delayed	刑罰被延後	刑罚被推迟		fn_thought_composer case 0x47；前接 to have；代名詞所有格中文省略（冒險模式為 your）
+having your punishment delayed	刑罰被延後	刑罚被推迟		fn_thought_composer case 0x47；無介系詞；無介系詞形
+the delayed punishment of a criminal	罪犯的刑罰被推遲	罪犯的刑罚被推迟		fn_thought_composer case 0x48；前接 after
+the scarcity of cages and chains	籠子和鎖鏈短缺	笼子和锁链短缺		fn_thought_composer case 0x49；前接 considering
+having a mandate ignored	命令遭到忽視	命令遭到忽视		fn_thought_composer case 0x4a；無介系詞；一律無介系詞；mandate 是貴族的命令
+having a mandate deadline missed	命令未能如期完成	命令未能如期完成		fn_thought_composer case 0x4b；無介系詞；一律無介系詞
+the lack of work last season	上一季沒有工作	上一季没有工作		fn_thought_composer case 0x4c；前接 after
+smashing up a building	砸毀建築	砸毁建筑		fn_thought_composer case 0x4d；前接 after
+toppling something over	推倒東西	推倒东西		fn_thought_composer case 0x4e；前接 after
+receiving a higher rank of nobility	獲得更高的爵位	获得更高的爵位		fn_thought_composer case 0x4f；前接 after
+entering the nobility	躋身貴族	跻身贵族		fn_thought_composer case 0x50；前接 after
+being knocked out during a cave-in	在坍方中被砸昏	在塌方中被砸昏		fn_thought_composer case 0x51；前接 after
+a mandate deadline met	命令如期完成	命令如期完成		fn_thought_composer case 0x52；前接 to have
+having a mandate deadline met	命令如期完成	命令如期完成		fn_thought_composer case 0x52；無介系詞；無介系詞形
+uncovered	沒穿衣服	没穿衣服		fn_thought_composer case 0x53；前接 when
+being uncovered	沒穿衣服	没穿衣服		fn_thought_composer case 0x53；無介系詞；無介系詞形
+no shirt	沒穿上衣	没穿上衣		fn_thought_composer case 0x54；前接 to have
+having no shirt	沒穿上衣	没穿上衣		fn_thought_composer case 0x54；無介系詞；無介系詞形
+no shoes	沒穿鞋	没穿鞋		fn_thought_composer case 0x55；前接 to have
+having no shoes	沒穿鞋	没穿鞋		fn_thought_composer case 0x55；無介系詞；無介系詞形
+being forced to eat a treasured pet to survive	為了活命被迫吃掉心愛的寵物	为了活命被迫吃掉心爱的宠物		fn_thought_composer case 0x56；前接 after
+being forced to eat a beloved creature to survive	為了活命被迫吃掉心愛的生物	为了活命被迫吃掉心爱的生物		fn_thought_composer case 0x57；前接 after
+being forced to eat vermin to survive	為了活命被迫吃害蟲	为了活命被迫吃害虫		fn_thought_composer case 0x58；前接 after
+starting a fist fight	挑起鬥毆	挑起斗殴		fn_thought_composer case 0x59；前接 after
+punishing somebody with a beating	以毆打懲罰某人	以殴打惩罚某人		fn_thought_composer case 0x5a；前接 after
+being beaten	遭到毆打	遭到殴打		fn_thought_composer case 0x5b；前接 after
+beating somebody with a hammer	用錘子痛打某人	用锤子痛打某人		fn_thought_composer case 0x5c；前接 after
+being beaten with a hammer	遭到錘子痛打	遭到锤子痛打		fn_thought_composer case 0x5d；前接 after
+being unable to find a hammer	找不到錘子	找不到锤子		fn_thought_composer case 0x5e；前接 after
+eating the same old food	吃著一成不變的食物	吃着一成不变的食物		fn_thought_composer case 0x5f；無介系詞；一律無介系詞
+eating rotten food	吃了腐爛的食物	吃了腐烂的食物		fn_thought_composer case 0x60；前接 after
+eating a pretty decent meal	吃了還不錯的一餐	吃了还不错的一餐		fn_thought_composer case 0x61；前接 after
+eating a fine dish	吃了精緻的料理	吃了精致的菜肴		fn_thought_composer case 0x61；前接 after
+eating a wonderful dish	吃了美妙的料理	吃了美妙的菜肴		fn_thought_composer case 0x61；前接 after
+eating a truly decadent dish	吃了極盡奢華的料理	吃了极尽奢华的菜肴		fn_thought_composer case 0x61；前接 after
+eating a legendary meal	吃了傳奇的一餐	吃了传奇的一餐		fn_thought_composer case 0x61；前接 after
+having a drink	喝了一杯酒	喝了一杯酒		fn_thought_composer case 0x62；前接 after
+having a pretty decent drink	喝了一杯還不錯的酒	喝了一杯还不错的酒		fn_thought_composer case 0x62；前接 after
+having a fine drink	喝了一杯好酒	喝了一杯好酒		fn_thought_composer case 0x62；前接 after
+having a wonderful drink	喝了一杯美妙的酒	喝了一杯美妙的酒		fn_thought_composer case 0x62；前接 after
+having a truly decadent drink	喝了一杯極盡奢華的酒	喝了一杯极尽奢华的酒		fn_thought_composer case 0x62；前接 after
+having a legendary drink	喝了一杯傳奇的酒	喝了一杯传奇的酒		fn_thought_composer case 0x62；前接 after
+not having enough chests	箱子不夠	箱子不够		fn_thought_composer case 99；無介系詞；一律無介系詞
+not having enough cabinets	櫥櫃不夠	橱柜不够		fn_thought_composer case 100；無介系詞；一律無介系詞
+not having enough weapon racks	武器架不夠	武器架不够		fn_thought_composer case 0x65；無介系詞；一律無介系詞
+not having enough armor stands	盔甲架不夠	盔甲架不够		fn_thought_composer case 0x66；無介系詞；一律無介系詞
+a lesser's pretentious office arrangements	地位較低者自命不凡的辦公室布置	地位较低者自命不凡的办公室布置		fn_thought_composer case 0x67；前接 by
+a lesser's pretentious sleeping arrangements	地位較低者自命不凡的臥房布置	地位较低者自命不凡的卧房布置		fn_thought_composer case 0x67；前接 by
+a lesser's pretentious dining arrangements	地位較低者自命不凡的用餐處布置	地位较低者自命不凡的用餐处布置		fn_thought_composer case 0x67；前接 by
+a lesser's pretentious burial arrangements	地位較低者自命不凡的墓葬布置	地位较低者自命不凡的墓葬布置		fn_thought_composer case 0x67；前接 by
+the lack of dining tables	缺少餐桌	缺少餐桌		fn_thought_composer case 0x68；前接 at
+eating at a crowded table	在擁擠的餐桌用餐	在拥挤的餐桌用餐		fn_thought_composer case 0x69；無介系詞；一律無介系詞
+dining in a good dining room	在不錯的餐廳用餐	在不错的餐厅用餐		fn_thought_composer case 0x6a；無介系詞；一律無介系詞
+dining in a very good dining room	在很好的餐廳用餐	在很好的餐厅用餐		fn_thought_composer case 0x6a；無介系詞；一律無介系詞
+dining in a great dining room	在出色的餐廳用餐	在出色的餐厅用餐		fn_thought_composer case 0x6a；無介系詞；一律無介系詞
+dining in a fantastic dining room	在極好的餐廳用餐	在极好的餐厅用餐		fn_thought_composer case 0x6a；無介系詞；一律無介系詞
+dining in a legendary dining room	在傳奇的餐廳用餐	在传奇的餐厅用餐		fn_thought_composer case 0x6a；無介系詞；一律無介系詞
+dining in a horribly substandard dining room	在糟糕至極的餐廳用餐	在糟糕至极的餐厅用餐		fn_thought_composer case 0x6a；無介系詞；一律無介系詞
+dining in a horrible dining room	在糟糕的餐廳用餐	在糟糕的餐厅用餐		fn_thought_composer case 0x6a；無介系詞；一律無介系詞
+dining in an awful dining room	在很差的餐廳用餐	在很差的餐厅用餐		fn_thought_composer case 0x6a；無介系詞；一律無介系詞
+dining in a very poor dining room	在相當簡陋的餐廳用餐	在相当简陋的餐厅用餐		fn_thought_composer case 0x6a；無介系詞；一律無介系詞
+dining in a poor dining room	在簡陋的餐廳用餐	在简陋的餐厅用餐		fn_thought_composer case 0x6a；無介系詞；一律無介系詞
+eating without a proper dining room	沒有像樣的餐廳可用餐	没有像样的餐厅可用餐		fn_thought_composer case 0x6b；無介系詞；一律無介系詞
+the lack of chairs	缺少椅子	缺少椅子		fn_thought_composer case 0x6c；前接 at
+forming a bond with an animal training partner	與動物訓練夥伴建立情誼	与动物训练伙伴建立感情		fn_thought_composer case 0x6d；前接 after
+being rescued	獲救	获救		fn_thought_composer case 0x6e；前接 after
+bringing somebody to rest in bed	把某人送到床上休息	把某人送到床上休息		fn_thought_composer case 0x6f；前接 after
+felling a tree	砍倒一棵樹	砍倒一棵树		fn_thought_composer case 0x70/0xb；前接 after
+work	工作	工作		fn_thought_composer case 0x70/default；前接 at；at work：因工作而
+slaughtering an animal	屠宰動物	屠宰动物		fn_thought_composer case 0x70/0x68；前接 after
+chaining up a creature	用鎖鏈拴住生物	用锁链拴住生物		fn_thought_composer case 0x70/0x9a；前接 after
+caging a creature	把生物關進籠子	把生物关进笼子		fn_thought_composer case 0x70/0xa0-0xa3；前接 after
+gelding a creature	閹割生物	阉割生物		fn_thought_composer case 0x70/0xe5；前接 after
+putting a piece on display	展出一件作品	展出一件作品		fn_thought_composer case 0x70/0xee；前接 after
+losing property to the tax collector's escorts	財產被稅務官的護衛奪走	财产被税务官的护卫夺走		fn_thought_composer case 0x71；前接 after
+being taxed	被課稅	被征税		fn_thought_composer case 0x72；前接 after
+not having adequate protection	沒有足夠的保護	没有足够的保护		fn_thought_composer case 0x73；無介系詞；一律無介系詞
+being unable to reach a room for tax collection	無法前往收稅的房間	无法前往收税的房间		fn_thought_composer case 0x74；前接 after
+being misinformed about a room for tax collection	收到關於收稅房間的錯誤資訊	收到关于收税房间的错误信息		fn_thought_composer case 0x75；前接 after
+having pleased a noble	取悅了貴族	取悦了贵族		fn_thought_composer case 0x76；無介系詞；一律無介系詞
+the tax collection went smoothly	收稅進行得很順利	收税进行得很顺利		fn_thought_composer case 0x77；前接 that
+having disappointed a noble	讓貴族失望	让贵族失望		fn_thought_composer case 0x78；無介系詞；一律無介系詞
+the tax collection didn't go smoothly	收稅進行得不順利	收税进行得不顺利		fn_thought_composer case 0x79；前接 that
+making a friend	交到朋友	交到朋友		fn_thought_composer case 0x7a；前接 after
+forming a grudge	結下仇怨	结下仇怨		fn_thought_composer case 0x7b；前接 after
+a satisfying acquisition	購得稱心的物品	购得称心的物品		fn_thought_composer case 0x7f；前接 after
+adopting a new pet	領養新寵物	领养新宠物		fn_thought_composer case 0x80；前接 after
+being confined	被監禁	被监禁		fn_thought_composer case 0x81；前接 after
+a bath	洗澡	洗澡		fn_thought_composer case 0x82；前接 after
+a soapy bath	用肥皂洗澡	用肥皂洗澡		fn_thought_composer case 0x83；前接 after
+killing somebody by accident while sparring	對練時失手殺死某人	对练时失手杀死某人		fn_thought_composer case 0x84；前接 after
+being attacked	遭到攻擊	遭到攻击		fn_thought_composer case 0x85；前接 after
+drinking the same old booze	喝著一成不變的酒	喝着一成不变的酒		fn_thought_composer case 0x87；無介系詞；一律無介系詞
+forced to drink bloody water	被迫喝血水	被迫喝血水		fn_thought_composer case 0x88；前接 while；有介系詞時是 while＋本體
+being forced to drink bloody water	被迫喝血水	被迫喝血水		fn_thought_composer case 0x88；無介系詞；無介系詞時遊戲改寫 being＋本體
+forced to drink slime	被迫喝黏液	被迫喝黏液		fn_thought_composer case 0x89；前接 while；有介系詞時是 while＋本體
+being forced to drink slime	被迫喝黏液	被迫喝黏液		fn_thought_composer case 0x89；無介系詞；無介系詞時遊戲改寫 being＋本體
+forced to drink vomit	被迫喝嘔吐物	被迫喝呕吐物		fn_thought_composer case 0x8a；前接 while；有介系詞時是 while＋本體
+being forced to drink vomit	被迫喝嘔吐物	被迫喝呕吐物		fn_thought_composer case 0x8a；無介系詞；無介系詞時遊戲改寫 being＋本體
+forced to drink gooey water	被迫喝黏稠的水	被迫喝黏稠的水		fn_thought_composer case 0x8b；前接 while；有介系詞時是 while＋本體
+being forced to drink gooey water	被迫喝黏稠的水	被迫喝黏稠的水		fn_thought_composer case 0x8b；無介系詞；無介系詞時遊戲改寫 being＋本體
+forced to drink ichorous water	被迫喝混著體液的水	被迫喝混着体液的水		fn_thought_composer case 0x8c；前接 while；有介系詞時是 while＋本體
+being forced to drink ichorous water	被迫喝混著體液的水	被迫喝混着体液的水		fn_thought_composer case 0x8c；無介系詞；無介系詞時遊戲改寫 being＋本體
+forced to drink purulent water	被迫喝混著膿液的水	被迫喝混着脓液的水		fn_thought_composer case 0x8d；前接 while；有介系詞時是 while＋本體
+being forced to drink purulent water	被迫喝混著膿液的水	被迫喝混着脓液的水		fn_thought_composer case 0x8d；無介系詞；無介系詞時遊戲改寫 being＋本體
+drinking nasty water	喝髒水	喝脏水		fn_thought_composer case 0x8e；無介系詞；一律無介系詞
+drinking something spoiled	喝了變質的東西	喝了变质的东西		fn_thought_composer case 0x8f；前接 after
+mastering mining	精通挖掘	精通挖掘		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering woodcutting	精通伐木	精通伐木		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering carpentry	精通木工	精通木工		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering engraving	精通雕刻	精通雕刻		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering masonry	精通石工	精通石工		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering animal training	精通動物訓練	精通动物训练		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering animal caretaking	精通動物照護	精通动物护理		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering fish dissection	精通魚類解剖	精通鱼类解剖		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering animal dissection	精通動物解剖	精通动物解剖		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering fish cleaning	精通剖魚	精通剖鱼		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering butchery	精通屠宰	精通屠宰		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering trapping	精通設陷捕獵	精通设陷捕猎		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering tanning	精通鞣皮	精通鞣皮		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering weaving	精通織布	精通织布		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering brewing	精通釀酒	精通酿酒		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering clothes making	精通製衣	精通制衣		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering milling	精通碾磨	精通碾磨		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering threshing	精通脫粒	精通脱粒		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering cheesemaking	精通製作乳酪	精通制作奶酪		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering milking	精通擠奶	精通挤奶		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering cooking	精通烹飪	精通烹饪		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering growing	精通種植	精通种植		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering herbalism	精通草藥採集	精通草药采集		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering fishing	精通釣魚	精通钓鱼		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering furnace operation	精通熔爐操作	精通熔炉操作		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering strand extraction	精通抽絲	精通抽丝		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering weaponsmithing	精通武器鍛造	精通武器锻造		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering armorsmithing	精通盔甲鍛造	精通盔甲锻造		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering metalsmithing	精通金屬鍛造	精通金属锻造		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering gem cutting	精通寶石切割	精通宝石切割		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering gem setting	精通寶石鑲嵌	精通宝石镶嵌		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering woodcrafting	精通木製工藝	精通木制工艺		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering stone crafting	精通石製工藝	精通石制工艺		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering metal crafting	精通金屬工藝	精通金属工艺		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering glassmaking	精通玻璃製作	精通玻璃制作		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering leatherworking	精通皮革加工	精通皮革加工		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering bone carving	精通骨雕	精通骨雕		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering axe	精通斧術	精通斧术		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering sword	精通劍術	精通剑术		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering knife	精通刀術	精通刀术		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering mace	精通釘錘術	精通钉锤术		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering hammer	精通錘術	精通锤术		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering spear	精通矛術	精通矛术		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering crossbow	精通弩術	精通弩术		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering shield	精通盾術	精通盾术		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering armor	精通著甲作戰	精通着甲作战		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering siege engineering	精通攻城器械工程	精通攻城器械工程		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering siege operation	精通攻城器械操作	精通攻城器械操作		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering bowmaking	精通製弓	精通制弓		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering pike	精通長槍術	精通长枪术		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering lash	精通鞭術	精通鞭术		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering bow	精通弓術	精通弓术		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering blowgun	精通吹箭術	精通吹箭术		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering throwing	精通投擲	精通投掷		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering machinery	精通機械	精通机械		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering nature	精通自然知識	精通自然知识		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering ambush	精通伏擊	精通伏击		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering wound dressing	精通傷口包紮	精通伤口包扎		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering diagnostics	精通診斷	精通诊断		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering surgery	精通手術	精通手术		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering bone setting	精通接骨	精通接骨		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering suturing	精通縫合	精通缝合		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering crutch-walking	精通拄拐行走	精通拄拐行走		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering wood burning	精通燒炭	精通烧炭		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering lye making	精通製鹼液	精通制碱液		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering soap making	精通製皂	精通制皂		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering potash making	精通製鉀鹼	精通制钾碱		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering dyeing	精通染色	精通染色		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering pump operation	精通抽水機操作	精通水泵操作		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering swimming	精通游泳	精通游泳		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering persuasion	精通說服	精通说服		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering negotiation	精通談判	精通谈判		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering judging intent	精通察言觀色	精通察言观色		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering appraisal	精通鑑定	精通鉴定		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering organization	精通組織	精通组织		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering record keeping	精通記帳	精通记账		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering lying	精通說謊	精通说谎		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering intimidation	精通威嚇	精通威吓		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering conversation	精通交談	精通交谈		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering comedy	精通幽默	精通幽默		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering flattery	精通奉承	精通奉承		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering consoling	精通安慰	精通安慰		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering pacification	精通調解	精通调解		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering tracking	精通追蹤	精通追踪		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering studying	精通研讀	精通研读		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering concentration	精通專注	精通专注		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering discipline	精通紀律	精通纪律		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering observation	精通觀察	精通观察		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering writing	精通寫作	精通写作		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering prose	精通散文	精通散文		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering poetry	精通詩歌	精通诗歌		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering reading	精通閱讀	精通阅读		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering speaking	精通演說	精通演说		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering coordination	精通協調性	精通协调性		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering balance	精通平衡感	精通平衡感		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering leadership	精通領導	精通领导		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering teaching	精通教學	精通教学		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering fighting	精通格鬥	精通格斗		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering archery	精通射箭	精通射箭		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering wrestling	精通摔角	精通摔跤		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering biting	精通啃咬	精通啃咬		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering striking	精通打擊	精通打击		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering kicking	精通踢擊	精通踢击		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering dodging	精通閃避	精通闪避		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering misc. object	精通雜物運用	精通杂物运用		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering knapping	精通打製石器	精通打制石器		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering military tactics	精通軍事戰術	精通军事战术		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering shearing	精通剪毛	精通剪毛		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering spinning	精通紡紗	精通纺纱		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering pottery	精通製陶	精通制陶		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering glazing	精通上釉	精通上釉		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering pressing	精通壓榨	精通压榨		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering beekeeping	精通養蜂	精通养蜂		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering wax working	精通蠟加工	精通蜡加工		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering climbing	精通攀爬	精通攀爬		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering gelding	精通閹割	精通阉割		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering dance	精通舞蹈	精通舞蹈		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering music	精通音樂	精通音乐		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering singing	精通歌唱	精通歌唱		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering keyboard instrument	精通鍵盤樂器	精通键盘乐器		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering stringed instrument	精通弦樂器	精通弦乐器		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering wind instrument	精通管樂器	精通管乐器		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering percussion instrument	精通打擊樂器	精通打击乐器		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering critical thinking	精通批判性思考	精通批判性思维		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering logic	精通邏輯	精通逻辑		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering mathematics	精通數學	精通数学		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering astronomy	精通天文學	精通天文学		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering chemistry	精通化學	精通化学		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering geography	精通地理學	精通地理学		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering optics engineer	精通光學工程	精通光学工程		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering fluid engineer	精通流體工程	精通流体工程		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering papermaking	精通造紙	精通造纸		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering bookbinding	精通裝訂	精通装订		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering intrigue	精通權謀	精通权谋		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering riding	精通騎術	精通骑术		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering stonecutting	精通石材切割	精通石材切割		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫
+mastering stone carving	精通石雕	精通石雕		fn_thought_composer case 0xb；前接 upon；技能名由 FUN_140773990 取得後轉小寫

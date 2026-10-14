@@ -196,9 +196,6 @@ No seeds	無種子	无种子		農田
 Leave fallow	休耕	休耕		農田
 (now)	當季	当季		農田：標示目前季節；「（現在）」超過 5 格
 Trap Baited:	陷阱誘餌：	陷阱诱饵：		建築資訊頁：陷阱
-heard this was the place for those seeking danger.	聽說這裡適合尋求危險的人。	听说这里适合寻求危险的人。		訪客資訊：前接名字
-heard this was a good place to search for monsters.	聽說這裡很適合搜尋怪物。	听说这里很适合寻找怪物。		訪客資訊：前接名字
- at 	 於 	 于 		訪客資訊：「<活動> at <地點>」片段（推斷）
 asking questions	打聽消息	打听消息		訪客資訊：來訪目的；前接「This visitor has come」
 seeking sanctuary	尋求庇護	寻求庇护		訪客資訊：來訪目的
 for diplomacy	進行外交	进行外交		訪客資訊：來訪目的
@@ -210,32 +207,6 @@ to perform	表演	表演		訪客資訊：來訪目的
 to relax	放鬆	放松		訪客資訊：來訪目的
 to study	做研究	做研究		訪客資訊：來訪目的
 to pray	祈禱	祈祷		訪客資訊：來訪目的
-This visitor has come 	此訪客前來	这位访客前来		訪客資訊：後接來訪目的（中文），不留結尾空白
-This visitor is ready to leave.	此訪客準備離開了。	这位访客准备离开了。		訪客資訊
-is seeking information	正在打聽消息	正在打听消息		訪客資訊：前接名字，後接「 about the location of 」
- would be a safe place to stay.	 是個安全的落腳處。	 是个安全的落脚处。		訪客資訊：前接「heard／believes <地點>」
-believes 	認為 	认为 		訪客資訊：前接名字，後接地點，結尾空白保留
- was the place to look for long-term work.	 是找長期工作的好地方。	 是找长期工作的好地方。		訪客資訊：前接「heard／believes <地點>」
- would make a good base for a mercenary.	 適合當傭兵的據點。	 适合当雇佣兵的据点。		訪客資訊：前接「heard／believes <地點>」
- was the place for long-term scholarship.	 是長期治學的好地方。	 是长期治学的好地方。		訪客資訊：前接「heard／believes <地點>」
- was the place to perform research.	 是做研究的好地方。	 是做研究的好地方。		訪客資訊：前接「heard／believes <地點>」
- was the place to entertain people.	 是表演娛樂大眾的好地方。	 是表演娱乐大众的好地方。		訪客資訊：前接「heard／believes <地點>」
- was the place to enjoy oneself.	 是享樂的好地方。	 是享乐的好地方。		訪客資訊：前接「heard／believes <地點>」
- was the place to admire fine architecture.	 是欣賞精美建築的好地方。	 是欣赏精美建筑的好地方。		訪客資訊：前接「heard／believes <地點>」
- was the place for a good drink.	 是好好喝一杯的好地方。	 是好好喝一杯的好地方。		訪客資訊：前接「heard／believes <地點>」
-was curious about 	想了解 	想了解 		訪客資訊：前接名字，後接對象，結尾空白保留
-went on this journey out of curiosity.	出於好奇而踏上這趟旅程。	出于好奇踏上了这趟旅程。		訪客資訊：前接名字
- was the place for prayer.	 是祈禱的好地方。	 是祈祷的好地方。		訪客資訊：前接「heard／believes <地點>」
+This visitor is ready to leave.	這位訪客準備離開了。	这位访客准备离开了。		訪客資訊（整段交給 wrap_text；其他訪客句型在 rules/sentences_visitors.tsv）
 this	這裡	这里		訪客資訊：「heard this was …」的地點代詞（推斷）；單獨畫出的 this 全域套用
-heard 	聽說 	听说 		訪客資訊：前接名字，後接地點，結尾空白保留
-doesn't feel 	不覺得 	不觉得 		訪客資訊：後接感受（推斷），結尾空白保留
-didn't feel 	當時不覺得 	当时不觉得 		訪客資訊：後接感受（推斷），結尾空白保留
-is in 	處於 	处于 		訪客資訊：後接狀態（推斷），結尾空白保留
-was in 	曾處於 	曾处于 		訪客資訊：後接狀態（推斷），結尾空白保留
-feels 	感到 	感到 		訪客資訊：後接感受（推斷），結尾空白保留
-felt 	感到 	感到 		訪客資訊：後接感受（推斷）；「曾感到」超過 5 格
-is 	是 	是 		訪客資訊：片段（推斷），結尾空白保留
-was 	是 	是 		訪客資訊：片段（推斷）；「曾是」超過 4 格
-You can learn more about this visitor after they chat with a local.	此訪客與本地人聊過之後，就能得知更多資訊。	这位访客与本地人聊过之后，就能了解更多信息。		訪客資訊
- about the location of 	 要找下落的是：	 要找下落的是：		訪客資訊：接在「is seeking information」之後，再接人或物的名稱
-triumph	勝利	胜利		位置接在訪客資訊之後，語境不明（推斷為感受名詞）
+You can learn more about this visitor after they chat with a local.	等這位訪客和本地人聊過，就能得知更多資訊。	等这位访客和本地人聊过，就能了解更多信息。		訪客資訊

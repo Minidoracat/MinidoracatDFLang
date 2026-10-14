@@ -1,0 +1,33 @@
+en	zh-Hant	zh-Hans	align	note
+Like others in {@1} culture, {@2} {%3} and {%4}.	和{1}所屬文化的其他人一樣，{2}{3}，也{4}。	和{1}所属文化的其他人一样，{2}{3}，也{4}。		FUN_140e248a0 文化共有的價值觀（[C:7:0:0]）：{1} his/her/its、{2} he/she/it、{3} 逗號清單（lists.tsv）、{4} 最後一項；子句見 strings/sentences_values.tsv
+Like others in {@1} culture, {@2} {%3}.	和{1}所屬文化的其他人一樣，{2}{3}。	和{1}所属文化的其他人一样，{2}{3}。		FUN_140e248a0 同上，只有一項
+{@1} personally {%2} and {%3}.	{1}個人{2}，也{3}。	{1}个人{2}，也{3}。		FUN_140e248a0 個人價值觀（[C:3:0:1]，和文化不同的項目）；最後一項前的 and 譯「，也」
+{@1} personally {%2}.	{1}個人{2}。	{1}个人{2}。		FUN_140e248a0 同上，只有一項
+{%1} (a strengthening after {%2} in {#3})	{1}（{3} 年{2}後變得更強烈）	{1}（{3} 年{2}后变得更强烈）		FUN_140e248a0 個人價值觀項目後的變化註記（[C:5:0:1]）：同方向加強；{2} 是 fn_thought_composer 的原因本體（不含介系詞），{3} 年份
+{%1} (less extreme after {%2} in {#3})	{1}（{3} 年{2}後趨於緩和）	{1}（{3} 年{2}后趋于缓和）		FUN_140e248a0 同上：同方向減弱
+{%1} (a turn-around after {%2} in {#3})	{1}（{3} 年{2}後完全改觀）	{1}（{3} 年{2}后完全改观）		FUN_140e248a0 同上：正負反轉
+{%1} (due to {%2} in {#3})	{1}（源於 {3} 年{2}）	{1}（源于 {3} 年{2}）		FUN_140e248a0 同上：從中立形成或程度不變
+{@1} dreams of raising a family.	{1}夢想成家育兒。	{1}梦想成家育儿。		FUN_140e248a0 夢想（[C:6:0:1]，goal case 2）
+{@1} dreams of ruling the world.	{1}夢想統治世界。	{1}梦想统治世界。		FUN_140e248a0 夢想（[C:6:0:1]，goal case 3）
+{@1} dreams of creating a great work of art.	{1}夢想創作一件偉大的藝術作品。	{1}梦想创作一件伟大的艺术作品。		FUN_140e248a0 夢想（[C:6:0:1]，goal case 4）
+{@1} dreams of crafting a masterwork someday.	{1}夢想有朝一日打造出一件傑作。	{1}梦想有朝一日打造出一件杰作。		FUN_140e248a0 夢想（[C:6:0:1]，goal case 5）
+{@1} dreams of bringing lasting peace to the world.	{1}夢想為世界帶來永久的和平。	{1}梦想为世界带来永久的和平。		FUN_140e248a0 夢想（[C:6:0:1]，goal case 6）
+{@1} dreams of becoming a legendary warrior.	{1}夢想成為傳奇戰士。	{1}梦想成为传奇战士。		FUN_140e248a0 夢想（[C:6:0:1]，goal case 7）
+{@1} dreams of mastering a skill.	{1}夢想精通一門技藝。	{1}梦想精通一门技艺。		FUN_140e248a0 夢想（[C:6:0:1]，goal case 8）
+{@1} dreams of falling in love.	{1}夢想墜入愛河。	{1}梦想坠入爱河。		FUN_140e248a0 夢想（[C:6:0:1]，goal case 9）
+{@1} dreams of seeing the great natural places of the world.	{1}夢想遊歷世界上壯麗的自然勝地。	{1}梦想游历世界上壮丽的自然胜地。		FUN_140e248a0 夢想（[C:6:0:1]，goal case 10）
+{@1} dreams of making a great discovery.	{1}夢想做出重大發現。	{1}梦想做出重大发现。		FUN_140e248a0 夢想（[C:6:0:1]，goal case 12）
+{@1} dreams of attaining rank in society.	{1}夢想在社會上取得地位。	{1}梦想在社会上取得地位。		FUN_140e248a0 夢想（[C:6:0:1]，goal case 13）
+{@1} dreams of bathing the world in chaos.	{1}夢想讓世界陷入混亂。	{1}梦想让世界陷入混乱。		FUN_140e248a0 夢想（[C:6:0:1]，goal case 14）
+{@1} dreams of raising a family, and this dream was realized.	{1}曾夢想成家育兒，而這個夢想已經實現了。	{1}曾梦想成家育儿，而这个梦想已经实现了。		FUN_140e248a0 夢想已實現（goal case 2）
+{@1} dreams of ruling the world, and this dream was realized.	{1}曾夢想統治世界，而這個夢想已經實現了。	{1}曾梦想统治世界，而这个梦想已经实现了。		FUN_140e248a0 夢想已實現（goal case 3）
+{@1} dreams of creating a great work of art, and this dream was realized.	{1}曾夢想創作一件偉大的藝術作品，而這個夢想已經實現了。	{1}曾梦想创作一件伟大的艺术作品，而这个梦想已经实现了。		FUN_140e248a0 夢想已實現（goal case 4）
+{@1} dreams of crafting a masterwork someday, and this dream was realized.	{1}曾夢想有朝一日打造出一件傑作，而這個夢想已經實現了。	{1}曾梦想有朝一日打造出一件杰作，而这个梦想已经实现了。		FUN_140e248a0 夢想已實現（goal case 5）
+{@1} dreams of bringing lasting peace to the world, and this dream was realized.	{1}曾夢想為世界帶來永久的和平，而這個夢想已經實現了。	{1}曾梦想为世界带来永久的和平，而这个梦想已经实现了。		FUN_140e248a0 夢想已實現（goal case 6）
+{@1} dreams of becoming a legendary warrior, and this dream was realized.	{1}曾夢想成為傳奇戰士，而這個夢想已經實現了。	{1}曾梦想成为传奇战士，而这个梦想已经实现了。		FUN_140e248a0 夢想已實現（goal case 7）
+{@1} dreams of mastering a skill, and this dream was realized.	{1}曾夢想精通一門技藝，而這個夢想已經實現了。	{1}曾梦想精通一门技艺，而这个梦想已经实现了。		FUN_140e248a0 夢想已實現（goal case 8）
+{@1} dreams of falling in love, and this dream was realized.	{1}曾夢想墜入愛河，而這個夢想已經實現了。	{1}曾梦想坠入爱河，而这个梦想已经实现了。		FUN_140e248a0 夢想已實現（goal case 9）
+{@1} dreams of seeing the great natural places of the world, and this dream was realized.	{1}曾夢想遊歷世界上壯麗的自然勝地，而這個夢想已經實現了。	{1}曾梦想游历世界上壮丽的自然胜地，而这个梦想已经实现了。		FUN_140e248a0 夢想已實現（goal case 10）
+{@1} dreams of making a great discovery, and this dream was realized.	{1}曾夢想做出重大發現，而這個夢想已經實現了。	{1}曾梦想做出重大发现，而这个梦想已经实现了。		FUN_140e248a0 夢想已實現（goal case 12）
+{@1} dreams of attaining rank in society, and this dream was realized.	{1}曾夢想在社會上取得地位，而這個夢想已經實現了。	{1}曾梦想在社会上取得地位，而这个梦想已经实现了。		FUN_140e248a0 夢想已實現（goal case 13）
+{@1} dreams of bathing the world in chaos, and this dream was realized.	{1}曾夢想讓世界陷入混亂，而這個夢想已經實現了。	{1}曾梦想让世界陷入混乱，而这个梦想已经实现了。		FUN_140e248a0 夢想已實現（goal case 14）

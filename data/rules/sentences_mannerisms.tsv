@@ -1,0 +1,270 @@
+en	zh-Hant	zh-Hans	align	note
+{@1} begins to talk in a hushed whisper when {@2} is angry.	{1}生氣時會壓低嗓音說話。	{1}生气时会压低嗓音说话。		習慣動作：FUN_1410e3280 case 0x0／0x0
+{@1} starts to whisper when {@2} is trying to remember something.	{1}努力回想事情時會開始小聲低語。	{1}努力回想事情时会开始小声低语。		習慣動作：FUN_1410e3280 case 0x0／0x1
+{@1} whispers when {@2}'s nervous.	{1}緊張時會小聲低語。	{1}紧张时会小声低语。		習慣動作：FUN_1410e3280 case 0x0／0x2
+{@1} whispers when {@2} is thinking hard about something.	{1}苦思事情時會小聲低語。	{1}苦思事情时会小声低语。		習慣動作：FUN_1410e3280 case 0x0／0x5
+{@1} usually speaks in a whisper.	{1}說話通常輕聲細語。	{1}说话通常轻声细语。		習慣動作：FUN_1410e3280 case 0x0／其他
+{@1} talks very quietly when {@2} is angry.	{1}生氣時說話很小聲。	{1}生气时说话很小声。		習慣動作：FUN_1410e3280 case 0x1／0x0
+{@1} keeps {@2} voice very quiet when {@3} is nervous.	{1}緊張時會把聲音壓得很低。	{1}紧张时会把声音压得很低。		習慣動作：FUN_1410e3280 case 0x1／0x2
+{@1} speaks very quietly.	{1}說話很小聲。	{1}说话很小声。		習慣動作：FUN_1410e3280 case 0x1／其他
+{@1} starts yelling whenever {@2} gets angry.	{1}一生氣就會開始大吼大叫。	{1}一生气就会开始大吼大叫。		習慣動作：FUN_1410e3280 case 0x2／0x0
+{@1} speaks very loudly.	{1}說話很大聲。	{1}说话很大声。		習慣動作：FUN_1410e3280 case 0x2／其他
+{@1} begins to talk louder when {@2} is nervous.	{1}緊張時說話會變大聲。	{1}紧张时说话会变大声。		習慣動作：FUN_1410e3280 case 0x2／0x2
+{@1} talks very loudly when {@2} is excited.	{1}興奮時說話很大聲。	{1}兴奋时说话很大声。		習慣動作：FUN_1410e3280 case 0x2／0x3
+{@1} shouts when {@2} is {@3} surprised.	{1}吃驚時會大叫。	{1}吃惊时会大叫。		習慣動作：FUN_1410e3280 case 0x2／0x4；遊戲原文就是「he is he surprised」（多拼一次代名詞）
+{@1} talks very loudly whenever {@2} is exasperated.	{1}惱火時說話總是很大聲。	{1}恼火时说话总是很大声。		習慣動作：FUN_1410e3280 case 0x2／0x6
+{@1} greets others very loudly.	{1}跟人打招呼很大聲。	{1}跟人打招呼很大声。		習慣動作：FUN_1410e3280 case 0x2／0xa
+{@1} talks very loudly whenever {@2} is annoyed.	{1}心煩時說話總是很大聲。	{1}心烦时说话总是很大声。		習慣動作：FUN_1410e3280 case 0x2／0xc
+{@1} begins speaking in a monotone whenever {@2} is angered.	{1}一被惹怒，說話就變得平板單調。	{1}一被惹怒，说话就变得平板单调。		習慣動作：FUN_1410e3280 case 0x3／0x0
+{@1} starts to drone when {@2} is exasperated.	{1}惱怒時會開始單調地說個不停。	{1}恼怒时会开始单调地说个不停。		習慣動作：FUN_1410e3280 case 0x3／0x6
+{@1} begins to talk in a monotone when {@2} is bored.	{1}無聊時說話會變得平板單調。	{1}无聊时说话会变得平板单调。		習慣動作：FUN_1410e3280 case 0x3／0xb
+{@1} speaks in a monotone when {@2} is annoyed.	{1}心煩時說話語調平板單調。	{1}心烦时说话语调平板单调。		習慣動作：FUN_1410e3280 case 0x3／0xc
+{@1} has a very monotonous way of speaking.	{1}說話的語調非常平板單調。	{1}说话的语调非常平板单调。		習慣動作：FUN_1410e3280 case 0x3／其他
+{@1} voice trails off whenever {@2} tries to remember something.	{1}一回想事情，說話聲就越來越小。	{1}一回想事情，说话声就越来越小。		習慣動作：FUN_1410e3280 case 0x4／0x1；His／Her voice 開頭，{1} 取所有格當主詞
+{@1} voice trails off when {@2} is thinking about something.	{1}思考事情時，說話聲會越來越小。	{1}思考事情时，说话声会越来越小。		習慣動作：FUN_1410e3280 case 0x4／0x5
+{@1} voice has a tendency to trail off when {@2}'s speaking.	{1}說話時聲音常常越說越小。	{1}说话时声音常常越说越小。		習慣動作：FUN_1410e3280 case 0x4／其他
+{@1} begins to talk more slowly when {@2}'s angry.	{1}生氣時說話會變慢。	{1}生气时说话会变慢。		習慣動作：FUN_1410e3280 case 0x5／0x0
+When {@1}'s annoyed, {@2} starts to talk slowly.	{1}心煩時，說話就會慢下來。	{1}心烦时，说话就会慢下来。		習慣動作：FUN_1410e3280 case 0x5／0xc
+{@1}  generally speaks very slowly.	{1}說話通常很慢。	{1}说话通常很慢。		習慣動作：FUN_1410e3280 case 0x5／其他；遊戲原文主詞後兩個空白
+{@1} begins to talk much more slowly when {@2}'s exasperated.	{1}惱怒時說話會變得慢很多。	{1}恼怒时说话会变得慢很多。		習慣動作：FUN_1410e3280 case 0x5／0x6
+{@1} begins to talk rapidly when {@2} gets angry.	{1}一生氣說話就變得飛快。	{1}一生气说话就变得飞快。		習慣動作：FUN_1410e3280 case 0x6／0x0
+{@1} talks very quickly when {@2}'s nervous.	{1}緊張時說話非常快。	{1}紧张时说话非常快。		習慣動作：FUN_1410e3280 case 0x6／0x2
+{@1} speaks rapidly when {@2}'s excited.	{1}興奮時說話很快。	{1}兴奋时说话很快。		習慣動作：FUN_1410e3280 case 0x6／0x3
+{@1}  usually talks very quickly.	{1}說話通常非常快。	{1}说话通常非常快。		習慣動作：FUN_1410e3280 case 0x6／其他；遊戲原文主詞後兩個空白
+{@1} talks very rapidly after {@2}'s been surprised.	{1}吃驚過後說話會非常快。	{1}吃惊过后说话会非常快。		習慣動作：FUN_1410e3280 case 0x6／0x4
+{@1} speaks very deliberately when {@2}'s angry.	{1}生氣時說話會一字一頓。	{1}生气时说话会一字一顿。		習慣動作：FUN_1410e3280 case 0x7／0x0
+{@1} speaks very deliberately when {@2}'s annoyed.	{1}心煩時說話會一字一頓。	{1}心烦时说话会一字一顿。		習慣動作：FUN_1410e3280 case 0x7／0xc
+{@1} tends to speak very deliberately.	{1}說話往往一字一頓。	{1}说话往往一字一顿。		習慣動作：FUN_1410e3280 case 0x7／其他
+When {@1} becomes exasperated, {@2} begins to speak very deliberately.	{1}惱怒起來時，說話會開始一字一頓。	{1}恼怒起来时，说话会开始一字一顿。		習慣動作：FUN_1410e3280 case 0x7／0x6
+{@1} mutters under {@2} breath when {@3}'s angry.	{1}生氣時會低聲嘀咕。	{1}生气时会低声嘀咕。		習慣動作：FUN_1410e3280 case 0x8／0x0
+{@1} mutters under {@2} breath when {@3}'s trying to remember something.	{1}努力回想事情時會低聲嘀咕。	{1}努力回想事情时会低声嘀咕。		習慣動作：FUN_1410e3280 case 0x8／0x1
+{@1} mutters under {@2} breath when {@3}'s nervous.	{1}緊張時會低聲嘀咕。	{1}紧张时会低声嘀咕。		習慣動作：FUN_1410e3280 case 0x8／0x2
+{@1} starts to mutter under {@2} breath when {@3} gets excited.	{1}一興奮就會開始低聲嘀咕。	{1}一兴奋就会开始低声嘀咕。		習慣動作：FUN_1410e3280 case 0x8／0x3
+{@1} constantly mutters under {@2} breath.	{1}老是低聲嘀咕。	{1}老是低声嘀咕。		習慣動作：FUN_1410e3280 case 0x8／其他
+{@1} mutters under {@2} breath when {@3}'s thinking.	{1}思考時會低聲嘀咕。	{1}思考时会低声嘀咕。		習慣動作：FUN_1410e3280 case 0x8／0x5
+When {@1} becomes exasperated, {@2} starts to mutter under {@3} breath.	{1}惱怒起來時，會開始低聲嘀咕。	{1}恼怒起来时，会开始低声嘀咕。		習慣動作：FUN_1410e3280 case 0x8／0x6
+Whenever there's a pause in a conversation, {@1} starts to mutter under {@2} breath.	每當對話冷場，{1}就會開始低聲嘀咕。	每当对话冷场，{1}就会开始低声嘀咕。		習慣動作：FUN_1410e3280 case 0x8／0x7
+{@1} mutters under {@2} breath when {@3}'s bored.	{1}無聊時會低聲嘀咕。	{1}无聊时会低声嘀咕。		習慣動作：FUN_1410e3280 case 0x8／0xb
+{@1} mutters under {@2} breath when {@3}'s annoyed.	{1}心煩時會低聲嘀咕。	{1}心烦时会低声嘀咕。		習慣動作：FUN_1410e3280 case 0x8／0xc
+{@1} starts to stutter when {@2} gets angry.	{1}一生氣就會開始結巴。	{1}一生气就会开始结巴。		習慣動作：FUN_1410e3280 case 0x9／0x0
+{@1} stutters occasionally.	{1}偶爾會結巴。	{1}偶尔会结巴。		習慣動作：FUN_1410e3280 case 0x9／其他
+{@1} always stutters when {@2}'s nervous.	{1}緊張時總是會結巴。	{1}紧张时总是会结巴。		習慣動作：FUN_1410e3280 case 0x9／0x2
+{@1} stammers when {@2}'s excited.	{1}興奮時會結結巴巴。	{1}兴奋时会结结巴巴。		習慣動作：FUN_1410e3280 case 0x9／0x3
+{@1} starts to stutter when {@2}'s surprised.	{1}吃驚時會開始結巴。	{1}吃惊时会开始结巴。		習慣動作：FUN_1410e3280 case 0x9／0x4
+{@1} begins to stammer when {@2} becomes exasperated.	{1}惱怒起來時會開始結結巴巴。	{1}恼怒起来时会开始结结巴巴。		習慣動作：FUN_1410e3280 case 0x9／0x6
+{@1} stammers when {@2}'s annoyed.	{1}心煩時會結結巴巴。	{1}心烦时会结结巴巴。		習慣動作：FUN_1410e3280 case 0x9／0xc
+{@1} talks to inanimate objects when {@2}'s trying to remember something.	{1}努力回想事情時會對著無生命的物體說話。	{1}努力回想事情时会对着无生命的物体说话。		習慣動作：FUN_1410e3280 case 0xa／0x1
+{@1} often talks to inanimate objects when {@2}'s nervous.	{1}緊張時常常對著無生命的物體說話。	{1}紧张时常常对着无生命的物体说话。		習慣動作：FUN_1410e3280 case 0xa／0x2
+{@1} talks to inanimate objects when {@2}'s thinking.	{1}思考時會對著無生命的物體說話。	{1}思考时会对着无生命的物体说话。		習慣動作：FUN_1410e3280 case 0xa／0x5
+{@1}  talks to inanimate objects when there is a lull in the conversation.	{1}在對話冷場時會對著無生命的物體說話。	{1}在对话冷场时会对着无生命的物体说话。		習慣動作：FUN_1410e3280 case 0xa／0x7；遊戲原文主詞後兩個空白
+When {@1} gets bored, {@2} starts talking to inanimate objects.	{1}一無聊就會開始對著無生命的物體說話。	{1}一无聊就会开始对着无生命的物体说话。		習慣動作：FUN_1410e3280 case 0xa／0xb
+{@1} has a tendency to talk to inanimate objects.	{1}常會對著無生命的物體說話。	{1}常会对着无生命的物体说话。		習慣動作：FUN_1410e3280 case 0xa／其他
+{@1} talks to {@2} when {@3}'s angry.	{1}生氣時會自言自語。	{1}生气时会自言自语。		習慣動作：FUN_1410e3280 case 0xb／0x0
+{@1} talks to {@2} when {@3}'s trying to remember something.	{1}努力回想事情時會自言自語。	{1}努力回想事情时会自言自语。		習慣動作：FUN_1410e3280 case 0xb／0x1
+{@1} talks to {@2} when {@3}'s nervous.	{1}緊張時會自言自語。	{1}紧张时会自言自语。		習慣動作：FUN_1410e3280 case 0xb／0x2
+When {@1} gets excited, {@2} often starts talking to {@3}.	{1}一興奮就常常開始自言自語。	{1}一兴奋就常常开始自言自语。		習慣動作：FUN_1410e3280 case 0xb／0x3
+{@1} talks to {@2} all of the time.	{1}老是在自言自語。	{1}老是在自言自语。		習慣動作：FUN_1410e3280 case 0xb／其他
+{@1} talks to {@2} when {@3}'s thinking.	{1}思考時會自言自語。	{1}思考时会自言自语。		習慣動作：FUN_1410e3280 case 0xb／0x5
+{@1} starts talking to {@2} when {@3} becomes exasperated.	{1}惱怒起來時會開始自言自語。	{1}恼怒起来时会开始自言自语。		習慣動作：FUN_1410e3280 case 0xb／0x6
+When there's a pause in a conversation, {@1} often starts talking to {@2}.	對話冷場時，{1}常常會開始自言自語。	对话冷场时，{1}常常会开始自言自语。		習慣動作：FUN_1410e3280 case 0xb／0x7
+{@1} talks to {@2} whenever {@3} gets bored.	{1}一無聊就會自言自語。	{1}一无聊就会自言自语。		習慣動作：FUN_1410e3280 case 0xb／0xb
+{@1} talks to {@2} when {@3}'s annoyed.	{1}心煩時會自言自語。	{1}心烦时会自言自语。		習慣動作：FUN_1410e3280 case 0xb／0xc
+{@1} gets distracted from conversations easily when {@2}'s angry.	{1}生氣時很容易在對話中分心。	{1}生气时很容易在对话中分心。		習慣動作：FUN_1410e3280 case 0xc／0x0
+{@1} is distracted from conversations easily when {@2}'s trying to remember something.	{1}努力回想事情時，很容易在對話中分心。	{1}努力回想事情时，很容易在对话中分心。		習慣動作：FUN_1410e3280 case 0xc／0x1
+{@1} gets distracted during conversations when {@2}'s nervous.	{1}緊張時會在對話中分心。	{1}紧张时会在对话中分心。		習慣動作：FUN_1410e3280 case 0xc／0x2
+{@1} gets distracted during conversations when {@2}'s excited.	{1}興奮時會在對話中分心。	{1}兴奋时会在对话中分心。		習慣動作：FUN_1410e3280 case 0xc／0x3
+{@1} tends to be easily distracted during conversations.	{1}在對話中往往很容易分心。	{1}在对话中往往很容易分心。		習慣動作：FUN_1410e3280 case 0xc／其他
+{@1} gets distracted during conversations when {@2}'s exasperated.	{1}惱怒時會在對話中分心。	{1}恼怒时会在对话中分心。		習慣動作：FUN_1410e3280 case 0xc／0x6
+{@1} is easily distracted during conversations when {@2}'s bored.	{1}無聊時很容易在對話中分心。	{1}无聊时很容易在对话中分心。		習慣動作：FUN_1410e3280 case 0xc／0xb
+{@1} gets easily distracted during conversations when {@2}'s annoyed.	{1}心煩時很容易在對話中分心。	{1}心烦时很容易在对话中分心。		習慣動作：FUN_1410e3280 case 0xc／0xc
+{@1} often tells pointless stories when {@2}'s nervous.	{1}緊張時常常講些沒有重點的故事。	{1}紧张时常常讲些没有重点的故事。		習慣動作：FUN_1410e3280 case 0xd／0x2
+When {@1} gets excited, {@2} often tells stories without any real point.	{1}一興奮就常常講些沒什麼重點的故事。	{1}一兴奋就常常讲些没什么重点的故事。		習慣動作：FUN_1410e3280 case 0xd／0x3
+{@1} quite often tells pointless stories when {@2}'s bored.	{1}無聊時很常講些沒有重點的故事。	{1}无聊时经常讲些没有重点的故事。		習慣動作：FUN_1410e3280 case 0xd／0xb
+{@1} will frequently ramble on with stories that don't have any point or even conclusion.	{1}常常滔滔不絕地講些沒有重點、甚至沒有結局的故事。	{1}常常滔滔不绝地讲些没有重点、甚至没有结局的故事。		習慣動作：FUN_1410e3280 case 0xd／其他
+{@1} becomes very focused during conversations when {@2}'s angry.	{1}生氣時會在對話中變得非常專注。	{1}生气时会在对话中变得非常专注。		習慣動作：FUN_1410e3280 case 0xe／0x0
+{@1} becomes very focused during conversations when {@2}'s trying to remember something.	{1}努力回想事情時會在對話中變得非常專注。	{1}努力回想事情时会在对话中变得非常专注。		習慣動作：FUN_1410e3280 case 0xe／0x1
+{@1} tends to be very focused during conversations.	{1}在對話中往往非常專注。	{1}在对话中往往非常专注。		習慣動作：FUN_1410e3280 case 0xe／其他
+{@1} will often pause in conversation to look for the right word.	{1}說話時常常停下來斟酌用詞。	{1}说话时常常停下来斟酌用词。		習慣動作：FUN_1410e3280 case 0xf
+{@1} often touches others during conversations when {@2}'s nervous.	{1}緊張時常在對話中觸碰別人。	{1}紧张时常在对话中触碰别人。		習慣動作：FUN_1410e3280 case 0x10／0x2
+{@1} often touches others during conversations when {@2}'s excited.	{1}興奮時常在對話中觸碰別人。	{1}兴奋时常在对话中触碰别人。		習慣動作：FUN_1410e3280 case 0x10／0x3
+{@1} will often touch others when greeting them.	{1}跟人打招呼時常會碰碰對方。	{1}跟人打招呼时常会碰碰对方。		習慣動作：FUN_1410e3280 case 0x10／0xa
+{@1} often touches those to whom {@2} is speaking.	{1}常常觸碰說話的對象。	{1}常常触碰说话的对象。		習慣動作：FUN_1410e3280 case 0x10／其他
+{@1} has a way of arguing with those that are in agreement with {@2}.	{1}總有辦法跟意見相同的人吵起來。	{1}总有办法跟意见相同的人吵起来。		習慣動作：FUN_1410e3280 case 0x11；句末 him／her 是受格，譯文不寫
+When {@1} is nervous, {@2} never allows pauses to occur in conversation.	{1}緊張時，絕不讓對話出現冷場。	{1}紧张时，绝不让对话出现冷场。		習慣動作：FUN_1410e3280 case 0x12／0x2
+{@1} can't stand quiet pauses in conversations and always finds something to say.	{1}受不了對話冷場，總會找些話來說。	{1}受不了对话冷场，总会找些话来说。		習慣動作：FUN_1410e3280 case 0x12／其他
+{@1} pauses before speaking.	{1}說話前會先停頓一下。	{1}说话前会先停顿一下。		習慣動作：FUN_1410e3280 case 0x13
+{@1} talks about others behind their backs.	{1}會在背後議論別人。	{1}会在背后议论别人。		習慣動作：FUN_1410e3280 case 0x14
+{@1} interrupts others during conversations when {@2} is angry.	{1}生氣時會在對話中打斷別人。	{1}生气时会在对话中打断别人。		習慣動作：FUN_1410e3280 case 0x15／0x0
+{@1} tends to interrupts others during conversations when {@2} is trying to remember something.	{1}努力回想事情時往往會在對話中打斷別人。	{1}努力回想事情时往往会在对话中打断别人。		習慣動作：FUN_1410e3280 case 0x15／0x1；遊戲原文 tends to interrupts（文法錯誤照抄）
+When {@1} is nervous, {@2} often interrupts others during conversations.	{1}緊張時常在對話中打斷別人。	{1}紧张时常在对话中打断别人。		習慣動作：FUN_1410e3280 case 0x15／0x2
+When {@1} is excited during conversations, {@2} often can't help interrupting others.	{1}在對話中興奮起來時，常常忍不住打斷別人。	{1}在对话中兴奋起来时，常常忍不住打断别人。		習慣動作：FUN_1410e3280 case 0x15／0x3
+{@1} has a habit of interrupting speakers.	{1}有打斷別人說話的習慣。	{1}有打断别人说话的习惯。		習慣動作：FUN_1410e3280 case 0x15／其他
+{@1} interrupts others during conversations when {@2} is exasperated.	{1}惱怒時會在對話中打斷別人。	{1}恼怒时会在对话中打断别人。		習慣動作：FUN_1410e3280 case 0x15／0x6
+{@1} interrupts others during conversations when {@2} is annoyed.	{1}心煩時會在對話中打斷別人。	{1}心烦时会在对话中打断别人。		習慣動作：FUN_1410e3280 case 0x15／0xc
+{@1} gives incredibly vague answers to questions.	{1}回答問題時總是含糊得不得了。	{1}回答问题时总是含糊得不得了。		習慣動作：FUN_1410e3280 case 0x16
+{@1} will without fail turn any conversation to {@2}.	{1}總會把任何話題都扯到自己身上。	{1}总会把任何话题都扯到自己身上。		習慣動作：FUN_1410e3280 case 0x17
+{@1} rarely speaks when {@2}'s angry.	{1}生氣時很少說話。	{1}生气时很少说话。		習慣動作：FUN_1410e3280 case 0x18／0x0
+When {@1}'s nervous, {@2} rarely talks.	{1}緊張時很少開口。	{1}紧张时很少开口。		習慣動作：FUN_1410e3280 case 0x18／0x2
+{@1} has trouble speaking when {@2}'s excited.	{1}興奮時會說不出話來。	{1}兴奋时会说不出话来。		習慣動作：FUN_1410e3280 case 0x18／0x3
+{@1} rarely speaks when {@2}'s exasperated.	{1}惱怒時很少說話。	{1}恼怒时很少说话。		習慣動作：FUN_1410e3280 case 0x18／0x6
+{@1} rarely speaks when {@2}'s annoyed.	{1}心煩時很少說話。	{1}心烦时很少说话。		習慣動作：FUN_1410e3280 case 0x18／0xc
+{@1} rarely speaks.	{1}很少說話。	{1}很少说话。		習慣動作：FUN_1410e3280 case 0x18／其他
+{@1} rarely starts conversations.	{1}很少主動開啟話題。	{1}很少主动开启话题。		習慣動作：FUN_1410e3280 case 0x19
+{@1} has the habit of answering questions with questions.	{1}習慣用問題回答問題。	{1}习惯用问题回答问题。		習慣動作：FUN_1410e3280 case 0x1a
+{@1} repeatedly snaps {@2} fingers when {@3} is trying to remember something.	{1}努力回想事情時會一再彈手指。	{1}努力回想事情时会一再打响指。		習慣動作：FUN_1410e3280 case 0x1b／0x1
+{@1} often snaps {@2} fingers when {@3}'s nervous.	{1}緊張時常常彈手指。	{1}紧张时常常打响指。		習慣動作：FUN_1410e3280 case 0x1b／0x2
+{@1} snaps {@2} fingers repeatedly when {@3}'s excited.	{1}興奮時會一直彈手指。	{1}兴奋时会一直打响指。		習慣動作：FUN_1410e3280 case 0x1b／0x3
+{@1} always snaps {@2} fingers when {@3}'s greeting somebody.	{1}跟人打招呼時總會彈一下手指。	{1}跟人打招呼时总会打一下响指。		習慣動作：FUN_1410e3280 case 0x1b／0xa
+{@1} often snaps {@2} fingers when {@3}'s bored.	{1}無聊時常常彈手指。	{1}无聊时常常打响指。		習慣動作：FUN_1410e3280 case 0x1b／0xb
+{@1} has a habit of snapping {@2} fingers.	{1}有彈手指的習慣。	{1}有打响指的习惯。		習慣動作：FUN_1410e3280 case 0x1b／其他
+{@1} drums {@2} fingers when {@3}'s trying to remember something.	{1}努力回想事情時會用手指輕敲。	{1}努力回想事情时会用手指轻敲。		習慣動作：FUN_1410e3280 case 0x1c／0x1
+When {@1}'s nervous, {@2} often drums {@3} fingers.	{1}緊張時常常用手指輕敲。	{1}紧张时常常用手指轻敲。		習慣動作：FUN_1410e3280 case 0x1c／0x2
+When {@1} gets excited, it's easy to tell because {@2} drums {@3} fingers.	{1}一興奮就很容易看得出來，因為會用手指輕敲。	{1}一兴奋就很容易看得出来，因为会用手指轻敲。		習慣動作：FUN_1410e3280 case 0x1c／0x3
+{@1} drums {@2} fingers when {@3}'s thinking.	{1}思考時會用手指輕敲。	{1}思考时会用手指轻敲。		習慣動作：FUN_1410e3280 case 0x1c／0x5
+{@1} drums {@2} fingers whenever {@3}'s sitting down.	{1}一坐下就會用手指輕敲。	{1}一坐下就会用手指轻敲。		習慣動作：FUN_1410e3280 case 0x1c／0xd
+{@1} has a habit of drumming {@2} fingers.	{1}有用手指輕敲的習慣。	{1}有用手指轻敲的习惯。		習慣動作：FUN_1410e3280 case 0x1c／其他
+{@1} scratches {@2} nose when {@3}'s trying to remember something.	{1}努力回想事情時會搔鼻子。	{1}努力回想事情时会挠鼻子。		習慣動作：FUN_1410e3280 case 0x1d／0x1
+{@1} scratches {@2} nose when {@3}'s nervous.	{1}緊張時會搔鼻子。	{1}紧张时会挠鼻子。		習慣動作：FUN_1410e3280 case 0x1d／0x2
+{@1} scratches {@2} nose when {@3}'s thinking.	{1}思考時會搔鼻子。	{1}思考时会挠鼻子。		習慣動作：FUN_1410e3280 case 0x1d／0x5
+When {@1}'s bored, {@2} often scratches {@3} nose.	{1}無聊時常常搔鼻子。	{1}无聊时常常挠鼻子。		習慣動作：FUN_1410e3280 case 0x1d／0xb
+{@1} has a habit of scratching {@2} nose.	{1}有搔鼻子的習慣。	{1}有挠鼻子的习惯。		習慣動作：FUN_1410e3280 case 0x1d／其他
+{@1} scratches {@2} ear when {@3}'s trying to remember something.	{1}努力回想事情時會搔耳朵。	{1}努力回想事情时会挠耳朵。		習慣動作：FUN_1410e3280 case 0x1e／0x1
+{@1} scratches {@2} ear when {@3}'s nervous.	{1}緊張時會搔耳朵。	{1}紧张时会挠耳朵。		習慣動作：FUN_1410e3280 case 0x1e／0x2
+{@1} scratches {@2} ear when {@3}'s thinking.	{1}思考時會搔耳朵。	{1}思考时会挠耳朵。		習慣動作：FUN_1410e3280 case 0x1e／0x5
+{@1} scratches {@2} ear whenever {@3}'s bored.	{1}一無聊就會搔耳朵。	{1}一无聊就会挠耳朵。		習慣動作：FUN_1410e3280 case 0x1e／0xb
+{@1} tends to scratch {@2} ear quite often.	{1}很常搔耳朵。	{1}经常挠耳朵。		習慣動作：FUN_1410e3280 case 0x1e／其他
+{@1} always scratches {@2} head when {@3}'s trying to remember something.	{1}努力回想事情時總會搔頭。	{1}努力回想事情时总会挠头。		習慣動作：FUN_1410e3280 case 0x1f／0x1
+{@1} scratches {@2} head when {@3}'s nervous.	{1}緊張時會搔頭。	{1}紧张时会挠头。		習慣動作：FUN_1410e3280 case 0x1f／0x2
+{@1} scratches {@2} head when {@3}'s thinking.	{1}思考時會搔頭。	{1}思考时会挠头。		習慣動作：FUN_1410e3280 case 0x1f／0x5
+{@1} scratches {@2} head when {@3}'s bored.	{1}無聊時會搔頭。	{1}无聊时会挠头。		習慣動作：FUN_1410e3280 case 0x1f／0xb
+{@1} tends to scratch {@2} head a lot.	{1}常常搔頭。	{1}常常挠头。		習慣動作：FUN_1410e3280 case 0x1f／其他
+{@1} often rubs {@2} eyes.	{1}常常揉眼睛。	{1}常常揉眼睛。		習慣動作：FUN_1410e3280 case 0x20
+{@1} points and shakes {@2} finger when {@3}'s angry.	{1}生氣時會指著人搖手指。	{1}生气时会指着人摇手指。		習慣動作：FUN_1410e3280 case 0x21／0x0
+{@1} shakes {@2} finger up and down when {@3}'s trying to remember something.	{1}努力回想事情時會上下晃動手指。	{1}努力回想事情时会上下晃动手指。		習慣動作：FUN_1410e3280 case 0x21／0x1
+{@1} shakes {@2} finger up and down when {@3}'s excited.	{1}興奮時會上下晃動手指。	{1}兴奋时会上下晃动手指。		習慣動作：FUN_1410e3280 case 0x21／0x3
+When {@1} gets exasperated, {@2} often points and shakes {@3} finger.	{1}惱怒起來時，常常指著人搖手指。	{1}恼怒起来时，常常指着人摇手指。		習慣動作：FUN_1410e3280 case 0x21／0x6
+{@1}  always points at others when greeting them.	{1}跟人打招呼時總會用手指著對方。	{1}跟人打招呼时总会用手指着对方。		習慣動作：FUN_1410e3280 case 0x21／0xa；遊戲原文主詞後兩個空白
+{@1} runs {@2} fingers through {@3} hair when {@4}'s trying to remember something.	{1}努力回想事情時會用手指撥弄頭髮。	{1}努力回想事情时会用手指拨弄头发。		習慣動作：FUN_1410e3280 case 0x22／0x1
+{@1} runs {@2} fingers through {@3} hair when {@4}'s nervous.	{1}緊張時會用手指撥弄頭髮。	{1}紧张时会用手指拨弄头发。		習慣動作：FUN_1410e3280 case 0x22／0x2
+{@1} runs {@2} fingers through {@3} hair when {@4}'s thinking.	{1}思考時會用手指撥弄頭髮。	{1}思考时会用手指拨弄头发。		習慣動作：FUN_1410e3280 case 0x22／0x5
+{@1} runs {@2} fingers through {@3} hair when {@4} becomes exasperated.	{1}惱怒起來時會用手指撥弄頭髮。	{1}恼怒起来时会用手指拨弄头发。		習慣動作：FUN_1410e3280 case 0x22／0x6
+{@1} runs {@2} fingers through {@3} hair when {@4}'s bored.	{1}無聊時會用手指撥弄頭髮。	{1}无聊时会用手指拨弄头发。		習慣動作：FUN_1410e3280 case 0x22／0xb
+{@1} runs {@2} fingers through {@3} hair when {@4}'s annoyed.	{1}心煩時會用手指撥弄頭髮。	{1}心烦时会用手指拨弄头发。		習慣動作：FUN_1410e3280 case 0x22／0xc
+{@1} has a habit of running {@2} fingers through {@3} hair.	{1}有用手指撥弄頭髮的習慣。	{1}有用手指拨弄头发的习惯。		習慣動作：FUN_1410e3280 case 0x22／其他
+{@1} cracks {@2} knuckles when {@3}'s angry.	{1}生氣時會扳指關節。	{1}生气时会掰指关节。		習慣動作：FUN_1410e3280 case 0x23／0x0
+When {@1}'s nervous, {@2} sometimes cracks {@3} knuckles.	{1}緊張時有時會扳指關節。	{1}紧张时有时会掰指关节。		習慣動作：FUN_1410e3280 case 0x23／0x2
+{@1} often gives {@2} knuckles a good crack when {@3}'s thinking hard.	{1}苦思時常常把指關節扳得喀喀響。	{1}苦思时常常把指关节掰得咔咔响。		習慣動作：FUN_1410e3280 case 0x23／0x5
+{@1} cracks {@2} knuckles when {@3}'s bored.	{1}無聊時會扳指關節。	{1}无聊时会掰指关节。		習慣動作：FUN_1410e3280 case 0x23／0xb
+{@1} occasionally cracks {@2} knuckles.	{1}偶爾會扳指關節。	{1}偶尔会掰指关节。		習慣動作：FUN_1410e3280 case 0x23／其他
+{@1} laughs in a unique way when {@2}'s nervous.	{1}緊張時的笑法很獨特。	{1}紧张时的笑法很独特。		習慣動作：FUN_1410e3280 case 0x24／0x2
+{@1} has a very distinct laugh for when {@2}'s excited.	{1}興奮時有一種很特別的笑聲。	{1}兴奋时有一种很特别的笑声。		習慣動作：FUN_1410e3280 case 0x24／0x3
+When {@1}'s surprised, {@2} has a very unique laugh.	{1}吃驚時的笑聲非常獨特。	{1}吃惊时的笑声非常独特。		習慣動作：FUN_1410e3280 case 0x24／0x4
+{@1} laughs in a distinct fashion when {@2}'s exasperated.	{1}惱怒時的笑法很特別。	{1}恼怒时的笑法很特别。		習慣動作：FUN_1410e3280 case 0x24／0x6
+{@1} laughs in a unique way whenever {@2}'s annoyed.	{1}心煩時的笑法總是很獨特。	{1}心烦时的笑法总是很独特。		習慣動作：FUN_1410e3280 case 0x24／0xc
+{@1} has a very distinct laugh.	{1}的笑聲非常特別。	{1}的笑声非常特别。		習慣動作：FUN_1410e3280 case 0x24／其他
+{@1}  cackles when {@2}'s nervous.	{1}緊張時會咯咯怪笑。	{1}紧张时会咯咯怪笑。		習慣動作：FUN_1410e3280 case 0x25／0x2；遊戲原文主詞後兩個空白
+{@1}  has more a cackle than a laugh.	{1}的笑聲比較像咯咯怪笑。	{1}的笑声比较像咯咯怪笑。		習慣動作：FUN_1410e3280 case 0x25／其他；遊戲原文主詞後兩個空白
+{@1}  laughs very loudly whenever {@2}'s nervous.	{1}一緊張就會放聲大笑。	{1}一紧张就会放声大笑。		習慣動作：FUN_1410e3280 case 0x26／0x2；遊戲原文主詞後兩個空白
+{@1}  laughs loudly when {@2}'s excited.	{1}興奮時笑得很大聲。	{1}兴奋时笑得很大声。		習慣動作：FUN_1410e3280 case 0x26／0x3；遊戲原文主詞後兩個空白
+{@1}  laughs very loudly whenever {@2}'s surprised.	{1}一吃驚就會放聲大笑。	{1}一吃惊就会放声大笑。		習慣動作：FUN_1410e3280 case 0x26／0x4；遊戲原文主詞後兩個空白
+{@1}  laughs very loudly.	{1}笑得非常大聲。	{1}笑得非常大声。		習慣動作：FUN_1410e3280 case 0x26／其他；遊戲原文主詞後兩個空白
+{@1} laughs silently.	{1}笑起來不出聲。	{1}笑起来不出声。		習慣動作：FUN_1410e3280 case 0x27
+{@1} has a nervous laugh.	{1}的笑聲帶點緊張。	{1}的笑声带点紧张。		習慣動作：FUN_1410e3280 case 0x28
+{@1} laughs at {@2} own jokes.	{1}會被自己的笑話逗笑。	{1}会被自己的笑话逗笑。		習慣動作：FUN_1410e3280 case 0x29
+{@1} walks as if in a terrible hurry whenever {@2} goes anywhere.	{1}不管去哪裡，走路都像在趕時間似的。	{1}不管去哪里，走路都像在赶时间似的。		習慣動作：FUN_1410e3280 case 0x2a
+{@1} skips around when {@2}'s excited.	{1}興奮時會蹦蹦跳跳。	{1}兴奋时会蹦蹦跳跳。		習慣動作：FUN_1410e3280 case 0x2b／0x3
+{@1} skips over to others when {@2} meets them.	{1}遇到別人時會蹦蹦跳跳地走過去。	{1}遇到别人时会蹦蹦跳跳地走过去。		習慣動作：FUN_1410e3280 case 0x2b／0xa
+{@1} skips wherever {@2} goes.	{1}走到哪裡都蹦蹦跳跳。	{1}走到哪里都蹦蹦跳跳。		習慣動作：FUN_1410e3280 case 0x2b／其他
+{@1} walks with a confident stride.	{1}走起路來步伐自信。	{1}走起路来步伐自信。		習慣動作：FUN_1410e3280 case 0x2c
+{@1}  becomes very rigid when {@2}'s angry.	{1}生氣時身體會變得非常僵硬。	{1}生气时身体会变得非常僵硬。		習慣動作：FUN_1410e3280 case 0x2d／0x0；遊戲原文主詞後兩個空白
+{@1}  tenses up when {@2}'s nervous.	{1}緊張時全身會緊繃起來。	{1}紧张时全身会紧绷起来。		習慣動作：FUN_1410e3280 case 0x2d／0x2；遊戲原文主詞後兩個空白
+{@1}  stiffens up when {@2}'s surprised.	{1}吃驚時身體會僵住。	{1}吃惊时身体会僵住。		習慣動作：FUN_1410e3280 case 0x2d／0x4；遊戲原文主詞後兩個空白
+When {@1}'s thinking, {@2} body becomes very still.	{1}思考時身體會一動也不動。	{1}思考时身体会一动也不动。		習慣動作：FUN_1410e3280 case 0x2d／0x5
+{@1} holds {@2} in a rigid posture.	{1}總是保持僵硬的姿勢。	{1}总是保持僵硬的姿势。		習慣動作：FUN_1410e3280 case 0x2d／其他
+{@1} slouches when {@2}'s bored.	{1}無聊時會彎腰駝背。	{1}无聊时会弯腰驼背。		習慣動作：FUN_1410e3280 case 0x2e／0xb
+{@1}  has a slouching posture.	{1}總是彎腰駝背。	{1}总是弯腰驼背。		習慣動作：FUN_1410e3280 case 0x2e／其他；遊戲原文主詞後兩個空白
+{@1} chews {@2} lips when {@3}'s angry.	{1}生氣時會咬嘴唇。	{1}生气时会咬嘴唇。		習慣動作：FUN_1410e3280 case 0x2f／0x0
+When {@1}'s trying to remember something, {@2} often starts chewing on {@3} lips.	{1}努力回想事情時，常常會開始咬嘴唇。	{1}努力回想事情时，常常会开始咬嘴唇。		習慣動作：FUN_1410e3280 case 0x2f／0x1
+{@1} chews {@2} lips when {@3}'s nervous.	{1}緊張時會咬嘴唇。	{1}紧张时会咬嘴唇。		習慣動作：FUN_1410e3280 case 0x2f／0x2
+{@1} chews {@2} lips when {@3} gets excited.	{1}一興奮就會咬嘴唇。	{1}一兴奋就会咬嘴唇。		習慣動作：FUN_1410e3280 case 0x2f／0x3
+{@1} tends to chew {@2} lips.	{1}常常咬嘴唇。	{1}常常咬嘴唇。		習慣動作：FUN_1410e3280 case 0x2f／其他
+{@1} chews {@2} lips intently when {@3}'s thinking.	{1}思考時會專注地咬著嘴唇。	{1}思考时会专注地咬着嘴唇。		習慣動作：FUN_1410e3280 case 0x2f／0x5
+{@1} idly chews {@2} lips when {@3}'s bored.	{1}無聊時會下意識地咬嘴唇。	{1}无聊时会下意识地咬嘴唇。		習慣動作：FUN_1410e3280 case 0x2f／0xb
+{@1} gnaws {@2} lips when {@3}'s annoyed.	{1}心煩時會啃咬嘴唇。	{1}心烦时会啃咬嘴唇。		習慣動作：FUN_1410e3280 case 0x2f／0xc
+{@1} chews {@2} cheek when {@3}'s angry.	{1}生氣時會咬臉頰內側。	{1}生气时会咬脸颊内侧。		習慣動作：FUN_1410e3280 case 0x30／0x0
+When {@1}'s nervous, {@2} tends to chew on {@3} cheek.	{1}緊張時往往會咬臉頰內側。	{1}紧张时往往会咬脸颊内侧。		習慣動作：FUN_1410e3280 case 0x30／0x1
+When {@1}'s nervous, {@2} has a habit of chewing on {@3} cheek.	{1}緊張時有咬臉頰內側的習慣。	{1}紧张时有咬脸颊内侧的习惯。		習慣動作：FUN_1410e3280 case 0x30／0x2
+{@1} gnaws on {@2} cheek when {@3}'s excited.	{1}興奮時會啃咬臉頰內側。	{1}兴奋时会啃咬脸颊内侧。		習慣動作：FUN_1410e3280 case 0x30／0x3
+{@1} has a habit of chewing on {@2} cheek.	{1}有咬臉頰內側的習慣。	{1}有咬脸颊内侧的习惯。		習慣動作：FUN_1410e3280 case 0x30／其他
+When {@1}'s thinking, {@2} has a tendency to chew on {@3} cheek.	{1}思考時常會咬臉頰內側。	{1}思考时常会咬脸颊内侧。		習慣動作：FUN_1410e3280 case 0x30／0x5
+{@1} chews {@2} cheek when {@3}'s bored.	{1}無聊時會咬臉頰內側。	{1}无聊时会咬脸颊内侧。		習慣動作：FUN_1410e3280 case 0x30／0xb
+{@1} gnaws {@2} cheek when {@3} is annoyed.	{1}心煩時會啃咬臉頰內側。	{1}心烦时会啃咬脸颊内侧。		習慣動作：FUN_1410e3280 case 0x30／0xc
+{@1} often bites {@2} nails when {@3}'s trying to remember something.	{1}努力回想事情時常常咬指甲。	{1}努力回想事情时常常咬指甲。		習慣動作：FUN_1410e3280 case 0x31／0x1
+{@1} bites {@2} nails when {@3}'s nervous.	{1}緊張時會咬指甲。	{1}紧张时会咬指甲。		習慣動作：FUN_1410e3280 case 0x31／0x2
+{@1} chews {@2} nails when {@3}'s thinking.	{1}思考時會啃指甲。	{1}思考时会啃指甲。		習慣動作：FUN_1410e3280 case 0x31／0x5
+{@1} bites {@2} nails when {@3} gets bored.	{1}一無聊就會咬指甲。	{1}一无聊就会咬指甲。		習慣動作：FUN_1410e3280 case 0x31／0xb
+{@1} bites {@2} nails when {@3}'s annoyed.	{1}心煩時會咬指甲。	{1}心烦时会咬指甲。		習慣動作：FUN_1410e3280 case 0x31／0xc
+{@1} bites {@2} nails.	{1}會咬指甲。	{1}会咬指甲。		習慣動作：FUN_1410e3280 case 0x31／其他
+{@1}  often greets others with a hug.	{1}常常用擁抱跟人打招呼。	{1}常常用拥抱跟人打招呼。		習慣動作：FUN_1410e3280 case 0x32／0xa；遊戲原文主詞後兩個空白
+{@1} gives hugs out freely.	{1}動不動就給人擁抱。	{1}动不动就给人拥抱。		習慣動作：FUN_1410e3280 case 0x32／其他
+When greeting others, {@1} always smiles nervously.	{1}跟人打招呼時總是笑得很緊張。	{1}跟人打招呼时总是笑得很紧张。		習慣動作：FUN_1410e3280 case 0x33／0xa
+{@1} has a nervous smile.	{1}的笑容帶點緊張。	{1}的笑容带点紧张。		習慣動作：FUN_1410e3280 case 0x33／其他
+{@1} hands become animated when {@2} gets angry.	{1}一生氣，雙手就比手畫腳個不停。	{1}一生气，双手就比划个不停。		習慣動作：FUN_1410e3280 case 0x34／0x0；His／Her hands 開頭，{1} 取所有格當主詞
+{@1} hands move frantically when {@2}'s trying to remember something.	{1}努力回想事情時，雙手會慌亂地動個不停。	{1}努力回想事情时，双手会慌乱地动个不停。		習慣動作：FUN_1410e3280 case 0x34／0x1
+{@1} hands jump all over the place when {@2}'s excited.	{1}興奮時，雙手會四處揮舞。	{1}兴奋时，双手会四处挥舞。		習慣動作：FUN_1410e3280 case 0x34／0x3
+{@1} hands are animated when {@2}'s surprised.	{1}吃驚時會比手畫腳。	{1}吃惊时会比比划划。		習慣動作：FUN_1410e3280 case 0x34／0x4
+{@1} hands begin moving when {@2} becomes exasperated.	{1}惱怒起來時，雙手會開始動來動去。	{1}恼怒起来时，双手会开始动来动去。		習慣動作：FUN_1410e3280 case 0x34／0x6
+{@1} hands are animated when {@2} speaks.	{1}說話時會比手畫腳。	{1}说话时会比比划划。		習慣動作：FUN_1410e3280 case 0x34／0x9
+{@1} stomps {@2} feet repeatedly when {@3}'s angry.	{1}生氣時會一直跺腳。	{1}生气时会一直跺脚。		習慣動作：FUN_1410e3280 case 0x35／0x0
+When {@1}'s trying to remember something, {@2} usually starts tapping {@3} feet.	{1}努力回想事情時，通常會開始用腳點地。	{1}努力回想事情时，通常会开始用脚点地。		習慣動作：FUN_1410e3280 case 0x35／0x1
+{@1} taps {@2} feet constantly when {@3}'s nervous.	{1}緊張時會不停用腳點地。	{1}紧张时会不停用脚点地。		習慣動作：FUN_1410e3280 case 0x35／0x2
+{@1} has a habit of tapping {@2} feet.	{1}有用腳點地的習慣。	{1}有用脚点地的习惯。		習慣動作：FUN_1410e3280 case 0x35／其他
+{@1} taps {@2} feet when there's a lull in conversation.	{1}對話冷場時會用腳點地。	{1}对话冷场时会用脚点地。		習慣動作：FUN_1410e3280 case 0x35／0x7
+{@1} taps {@2} feet when {@3}'s annoyed.	{1}煩躁時會用腳點地。	{1}烦躁时会用脚点地。		習慣動作：FUN_1410e3280 case 0x35／0xc
+{@1} taps {@2} feet whenever {@3}'s sitting down.	{1}一坐下就會用腳點地。	{1}一坐下就会用脚点地。		習慣動作：FUN_1410e3280 case 0x35／0xd
+{@1} lowers {@2} eyes when {@3}'s angry.	{1}生氣時會垂下目光。	{1}生气时会垂下目光。		習慣動作：FUN_1410e3280 case 0x36／0x0
+{@1} lowers {@2} eyes when {@3}'s trying to remember something.	{1}努力回想事情時會垂下目光。	{1}努力回想事情时会垂下目光。		習慣動作：FUN_1410e3280 case 0x36／0x1
+{@1} lowers {@2} eyes when {@3}'s nervous.	{1}緊張時會垂下目光。	{1}紧张时会垂下目光。		習慣動作：FUN_1410e3280 case 0x36／0x2
+{@1} often has {@2} eyes lowered to the ground.	{1}常常低垂著目光看地面。	{1}常常低垂著目光看地面。		習慣動作：FUN_1410e3280 case 0x36／其他
+{@1} often lowers {@2} eyes when {@3}'s thinking.	{1}思考時常常垂下目光。	{1}思考时常常垂下目光。		習慣動作：FUN_1410e3280 case 0x36／0x5
+When {@1} is speaking, {@2} usually lowers {@3} eyes.	{1}說話時通常會垂下目光。	{1}说话时通常会垂下目光。		習慣動作：FUN_1410e3280 case 0x36／0x9
+{@1} lowers {@2} eyes when {@3}'s annoyed.	{1}心煩時會垂下目光。	{1}心烦时会垂下目光。		習慣動作：FUN_1410e3280 case 0x36／0xc
+{@1} has a menacing stare when {@2}'s angry.	{1}生氣時目光會變得很兇狠。	{1}生气时目光会变得很凶狠。		習慣動作：FUN_1410e3280 case 0x37／0x0
+{@1} stares intently when {@2}'s thinking.	{1}思考時會專注地凝視。	{1}思考时会专注地凝视。		習慣動作：FUN_1410e3280 case 0x37／0x5
+{@1} tends to stare unwaveringly when {@2}'s speaking to somebody.	{1}跟人說話時往往會目不轉睛地盯著對方。	{1}跟人说话时往往会目不转睛地盯着对方。		習慣動作：FUN_1410e3280 case 0x37／0x9
+{@1} has a certain stare for when {@2} gets annoyed.	{1}心煩時會露出一種特有的眼神。	{1}心烦时会露出一种特有的眼神。		習慣動作：FUN_1410e3280 case 0x37／0xc
+{@1} has a habit of staring at others.	{1}有盯著別人看的習慣。	{1}有盯着别人看的习惯。		習慣動作：FUN_1410e3280 case 0x37／其他
+{@1} winks when {@2} is nervous.	{1}緊張時會眨眼示意。	{1}紧张时会眨眼示意。		習慣動作：FUN_1410e3280 case 0x38／0x2
+{@1} winks during conversations.	{1}對話時會眨眼示意。	{1}对话时会眨眼示意。		習慣動作：FUN_1410e3280 case 0x38／0x9
+{@1} commonly winks as a form of greeting.	{1}常用眨眼來打招呼。	{1}常用眨眼来打招呼。		習慣動作：FUN_1410e3280 case 0x38／0xa
+{@1} is quick to wink at others.	{1}動不動就對人眨眼。	{1}动不动就对人眨眼。		習慣動作：FUN_1410e3280 case 0x38／其他
+{@1}  rolls {@2} eyes when {@3}'s exasperated.	{1}惱怒時會翻白眼。	{1}恼怒时会翻白眼。		習慣動作：FUN_1410e3280 case 0x39／0x6；遊戲原文主詞後兩個空白
+When {@1}'s bored, {@2}  constantly rolls {@3} eyes.	{1}無聊時會不停翻白眼。	{1}无聊时会不停翻白眼。		習慣動作：FUN_1410e3280 case 0x39／0xb；遊戲原文主詞後兩個空白；遊戲把句首大寫的 He 加空白接在逗號後（He  constantly），照抄
+{@1}  rolls {@2} eyes when {@3}'s annoyed.	{1}心煩時會翻白眼。	{1}心烦时会翻白眼。		習慣動作：FUN_1410e3280 case 0x39／0xc；遊戲原文主詞後兩個空白
+{@1}  has a habit of rolling {@2} eyes.	{1}有翻白眼的習慣。	{1}有翻白眼的习惯。		習慣動作：FUN_1410e3280 case 0x39／其他；遊戲原文主詞後兩個空白
+{@1} exhales sharply when {@2} gets angry.	{1}一生氣就會重重地吐氣。	{1}一生气就会重重地吐气。		習慣動作：FUN_1410e3280 case 0x3a／0x0
+{@1} exhales sharply when {@2} becomes exasperated.	{1}惱怒起來時會重重地吐氣。	{1}恼怒起来时会重重地吐气。		習慣動作：FUN_1410e3280 case 0x3a／0x6
+{@1} exhales slowly and deliberately when {@2} starts getting bored.	{1}開始覺得無聊時，會刻意慢慢地吐氣。	{1}开始觉得无聊时，会刻意慢慢地吐气。		習慣動作：FUN_1410e3280 case 0x3a／0xb
+{@1} blows {@2} breath out when {@3}'s annoyed.	{1}心煩時會用力呼氣。	{1}心烦时会用力呼气。		習慣動作：FUN_1410e3280 case 0x3a／0xc
+{@1} inhales sharply when {@2} is angry.	{1}生氣時會猛吸一口氣。	{1}生气时会猛吸一口气。		習慣動作：FUN_1410e3280 case 0x3b／0x0
+{@1} holds {@2} breath when {@3}'s nervous.	{1}緊張時會屏住呼吸。	{1}紧张时会屏住呼吸。		習慣動作：FUN_1410e3280 case 0x3b／0x2
+{@1} always takes a deep breath whenever {@2} is surprised.	{1}一吃驚總會深吸一口氣。	{1}一吃惊总会深吸一口气。		習慣動作：FUN_1410e3280 case 0x3b／0x4
+{@1} clicks {@2} tongue constantly when {@3}'s trying to remember something.	{1}努力回想事情時會不停咂嘴。	{1}努力回想事情时会不停咂嘴。		習慣動作：FUN_1410e3280 case 0x3c／0x1
+When {@1} is nervous, {@2} clicks {@3} tongue.	{1}緊張時會咂嘴。	{1}紧张时会咂嘴。		習慣動作：FUN_1410e3280 case 0x3c／0x2
+{@1} has a habit of clicking {@2} tongue.	{1}有咂嘴的習慣。	{1}有咂嘴的习惯。		習慣動作：FUN_1410e3280 case 0x3c／其他
+When {@1}'s thinking, {@2} clicks {@3} tongue repeatedly.	{1}思考時會一直咂嘴。	{1}思考时会一直咂嘴。		習慣動作：FUN_1410e3280 case 0x3c／0x5
+When {@1} becomes exasperated, {@2} clicks {@3} tongue.	{1}惱怒起來時會咂嘴。	{1}恼怒起来时会咂嘴。		習慣動作：FUN_1410e3280 case 0x3c／0x6
+{@1} clicks {@2} tongue occasionally when {@3}'s bored.	{1}無聊時偶爾會咂嘴。	{1}无聊时偶尔会咂嘴。		習慣動作：FUN_1410e3280 case 0x3c／0xb
+{@1} clicks {@2} tongue repeatedly when {@3}'s annoyed.	{1}心煩時會一直咂嘴。	{1}心烦时会一直咂嘴。		習慣動作：FUN_1410e3280 case 0x3c／0xc
+{@1} tongue sticks out when {@2}'s trying to remember something.	{1}努力回想事情時會吐出舌頭。	{1}努力回想事情时会吐出舌头。		習慣動作：FUN_1410e3280 case 0x3d／0x1；His／Her tongue 開頭
+{@1}  sticks out {@2} tongue when {@3}'s thinking hard.	{1}苦思時會吐出舌頭。	{1}苦思时会吐出舌头。		習慣動作：FUN_1410e3280 case 0x3d／0x5；遊戲原文主詞後兩個空白
+{@1} licks {@2} lips when {@3}'s nervous.	{1}緊張時會舔嘴唇。	{1}紧张时会舔嘴唇。		習慣動作：FUN_1410e3280 case 0x3e／0x2
+When {@1}'s thinking hard, {@2} has a habit of licking {@3} lips.	{1}苦思時有舔嘴唇的習慣。	{1}苦思时有舔嘴唇的习惯。		習慣動作：FUN_1410e3280 case 0x3e／0x5
+{@1} licks {@2} lips frequently.	{1}常常舔嘴唇。	{1}常常舔嘴唇。		習慣動作：FUN_1410e3280 case 0x3e／其他
+When {@1}'s nervous, {@2} tends to stretch {@3} body.	{1}緊張時往往會伸展身體。	{1}紧张时往往会伸展身体。		習慣動作：FUN_1410e3280 case 0x3f／0x2
+{@1} tends to stretch {@2} body when {@3}'s thinking.	{1}思考時往往會伸展身體。	{1}思考时往往会伸展身体。		習慣動作：FUN_1410e3280 case 0x3f／0x5
+{@1} has a habit of stretching {@2} body during pauses in conversation.	{1}習慣在對話停頓時伸展身體。	{1}习惯在对话停顿时伸展身体。		習慣動作：FUN_1410e3280 case 0x3f／0x7
+{@1} tends to stretch out when {@2}'s bored.	{1}無聊時往往會伸個懶腰。	{1}无聊时往往会伸个懒腰。		習慣動作：FUN_1410e3280 case 0x3f／0xb
+{@1} tends to stretch {@2} body after {@3} stands up.	{1}站起來後往往會伸展身體。	{1}站起来后往往会伸展身体。		習慣動作：FUN_1410e3280 case 0x3f／0xe
+{@1} likes to stretch {@2} out frequently.	{1}喜歡時常伸伸懶腰。	{1}喜欢时常伸伸懒腰。		習慣動作：FUN_1410e3280 case 0x3f／其他
+{@1} bounces {@2} leg whenever {@3} is sitting down.	{1}一坐下就會抖腳。	{1}一坐下就会抖腿。		習慣動作：FUN_1410e3280 case 0x40
