@@ -1,0 +1,167 @@
+en	zh-Hant	zh-Hans	align	note
+Recover wounded	救援傷患	救援伤员		醫院：把傷患送到醫院（Recovering Wounded 勞動）
+Diagnose patient	診斷病患	诊断病人		醫院：醫師工作
+Immobilize break	固定骨折	固定骨折		醫院：醫師工作
+Apply cast	套上固定具	打上固定具		醫院：醫師工作；cast 物品名「固定具」（names_items_exe）
+Bring crutch	送來拐杖	送来拐杖		醫院：醫師工作
+Dress wound	包紮傷口	包扎伤口		醫院：醫師工作
+Clean patient	清洗病患	清洗病人		醫院：醫師工作
+Suture	縫合	缝合		醫院：醫師工作
+Set bone	接骨	接骨		醫院：醫師工作
+Place in traction	牽引治療	牵引治疗		醫院：把病患放上牽引床
+Put item on display	展示物品	展示物品		擺進展示櫃
+Cage small animal	把小動物關進籠子	把小动物关进笼子		動物：術語 cage
+Pit/pond small animal	把小動物丟進坑／池塘	把小动物丢进坑/池塘		動物：與區域名「坑／池塘」一致
+Pen/pasture small animal	把小動物關進畜欄／牧場	把小动物关进畜栏/牧场		動物：與區域名「畜欄／牧場」一致
+Drain aquarium	排空水族箱	排空水族箱		玻璃籠子當水族箱
+Fill aquarium	水族箱注水	水族箱注水		玻璃籠子當水族箱
+Fill pond	池塘注水	池塘注水		坑／池塘區域用水桶注水
+Give water	餵水	喂水		醫院／監禁：給病患或囚犯喝水
+Give food	餵食	喂食		醫院／監禁：給病患或囚犯送餐
+Manage work orders	管理工作指令	管理工作订单		管理者工作；術語 work order
+Update stockpile records	更新倉儲區紀錄	更新储物区记录		簿記員工作；術語 stockpile
+Trade at depot	在貿易站交易	在贸易站交易		交易員工作
+Put in chains	用鎖鏈拴住	用锁链拴住		動物／司法：與「以鎖鏈拴住」一致
+Unchain	鬆綁	松绑		解開鎖鏈；原文 7 格
+Tame a small animal	馴服小動物	驯服小动物		術語 tame
+Cut gems	切割寶石	切割宝石		寶石工坊
+Cut raw glass into gems	把玻璃原石切成寶石	把玻璃原石切成宝石		寶石工坊；raw 譯「原石」，與物品名一致
+Polish stones	拋光石材	抛光石材		寶石工坊
+finished goods	成品	成品		片段：寶石鑲嵌工作的對象（推斷 Encrust finished goods with …）
+furniture	家具	家具		片段：寶石鑲嵌工作的對象；同 Furniture
+cut glass	刻面玻璃	刻面玻璃		片段：寶石鑲嵌用的材料；cut 譯「刻面」
+polished stones	拋光石材	抛光石材		片段：寶石鑲嵌用的材料
+Collect sand	收集沙子	收集沙子		取沙區
+Collect clay	收集黏土	收集黏土		取黏土區
+Install colony in hive	把蜂群移入蜂箱	将蜂群安置进蜂箱		養蜂
+Collect hive products	收集蜂箱產物	收集蜂箱产物		養蜂：蜂蜜、蜂蠟
+Stop Bleeding	止血	止血		醫院：手術
+Repair Compound Fracture	治療開放性骨折	治疗开放性骨折		醫院：手術
+Remove Rotten Tissue	切除壞死組織	切除坏死组织		醫院：手術
+Construct building	建造建築	建造建筑		建築工作
+Destroy building	拆除建築	拆除建筑		與「拆除此建築」一致
+Butcher an animal	屠宰動物	屠宰动物		屠宰場
+Catch live fish	捕捉活魚	捕捉活鱼		捕獸／釣魚
+Catch live land animal	捕捉活的陸地動物	捕捉活的陆地动物		捕獸
+Prepare a raw fish	處理生魚	处理生鱼		漁場；與「自動處理漁獲」一致
+Mill plants	研磨植物	研磨植物		石磨／磨坊
+Process plants	加工植物	加工植物		農場工坊
+Spin thread	紡線	纺线		農場工坊
+Make cheese	製作起司	制作奶酪		農場工坊；兩岸用語不同
+Process plants (vial)	加工植物（小瓶）	加工植物（小瓶）		農場工坊：產物裝小瓶
+Process plants (barrel)	加工植物（桶）	加工植物（桶）		農場工坊：產物裝桶；術語 barrel
+Make lye	製作鹼液	制作碱液		製灰工坊
+Make potash from lye	用鹼液製作鉀鹼	用碱液制作钾碱		製灰工坊
+Make potash from ash	用木灰製作鉀鹼	用木灰制作钾碱		製灰工坊；ash 是木灰（同 Ash），不是梣樹
+Prepare easy meal	烹煮簡易餐點	烹饪简易餐食		廚房
+Prepare fine meal	烹煮精緻餐點	烹饪精致餐食		廚房
+Prepare lavish meal	烹煮豪華餐點	烹饪豪华餐食		廚房
+Extract from plants	從植物萃取	从植物提取		農場工坊；與物品 extract 萃取液／提取液一致
+Extract from raw fish	從生魚萃取	从生鱼提取		漁場
+Extract from land animal	從陸地動物萃取	从陆地动物提取		屠宰場
+a large animal	大型動物	大型动物		片段：推斷接在工作名後代替具體動物名
+Unchain pet	為寵物鬆綁	给宠物松绑		術語 pet；原文 11 格
+Release pet	放出寵物	放出宠物		從籠子放出；術語 pet
+Release small creature	放出小型生物	放出小型生物		術語 creature
+Handle small creature	搬運小型生物	搬运小型生物		動物搬運：搬運被捕獲的小型生物（vermin）
+Recover pet	帶回寵物	带回宠物		術語 pet
+Melt a metal object	熔化金屬物品	熔化金属物品		冶煉爐；與「熔化標記」一致
+Extract metal strands	抽取金屬絲	抽取金属丝		精金絲（adamantine strands）
+Dye thread	染線	染线		染色
+Dye cloth	染布	染布		染色
+Dye leather	染皮革	染皮革		染色
+Collect webs	收集蛛網	收集蛛网		與物品名 web 蛛網一致
+Weave metal cloth	織金屬布	织金属布		織布機
+Weave thread into silk	把線織成絲布	把线织成丝布		織布機；術語 silk
+Weave yarn into cloth	把毛線織成布	把毛线织成布		織布機
+Weave thread into cloth	把線織成布	把线织成布		織布機
+Harvest plants	收穫植物	收获植物		農田
+Plant seeds	播種	播种		農田
+Fertilize field	為農田施肥	给农田施肥		農田
+Pull the lever	拉動拉桿	拉动拉杆		術語 lever
+Link a building to trigger	將建築連結到觸發器	将建筑关联到触发器		拉桿／壓力板連結建築
+Carve fortification	鑿出射擊孔牆	凿出射击孔墙		與建造選單 Fortification 射擊孔牆一致
+Smooth wall	磨平牆壁	磨平墙壁		與磨平工具一致
+Smooth floor	磨平地板	磨平地板		與磨平工具一致
+Detail wall	雕刻牆壁	雕刻墙壁		detail 即雕刻（術語 engrave）
+Detail floor	雕刻地板	雕刻地板		detail 即雕刻（術語 engrave）
+Carve track	鑿出軌道	凿出轨道		與軌道工具一致
+Remove stairs/ramps	移除樓梯／斜坡	移除楼梯/斜坡		術語 stair、ramp
+Remove construction	拆除建築結構	拆除建筑结构		與 Constructions 建築結構一致
+Carve upward staircase	鑿出上行樓梯	凿出上行楼梯		挖掘
+Carve downward staircase	鑿出下行樓梯	凿出下行楼梯		挖掘
+Carve up/down staircase	鑿出上下樓梯	凿出上下楼梯		挖掘
+Carve ramp	鑿出斜坡	凿出斜坡		挖掘；術語 ramp
+Dig channel	挖槽	挖槽		術語 channel
+Fell tree	砍伐樹木	砍伐树木		與伐木工具一致
+Gather plants	採集植物	采集植物		與採集命令一致
+Bring item to shop	搬運物品到工坊	搬运物品到工坊		把材料搬進工坊
+Bring item to depot	搬運物品到貿易站	搬运物品到贸易站		與術語 Bring Goods to Depot 一致
+Get provisions	領取補給	领取补给		出發遠行前
+Clean self	清洗身體	清洗身体		日常
+Fill waterskin	裝滿水袋	灌满水囊		水袋／水囊與物品名一致
+Sleep	睡覺	睡觉		日常
+Kidnap	綁架	绑架		入侵者／訪客
+No activity	無活動	无活动		與 No job 無工作同類
+Report crime	舉報罪行	举报罪行		司法；術語 crime
+Hunt	狩獵	狩猎		獵人
+Starting fist fight	挑起鬥毆	挑起斗殴		鬥毆
+Beat criminal	毆打罪犯	殴打罪犯		司法：懲罰
+Place track vehicle	放置礦車	放置矿车		礦車；vehicle 與「指派的車輛」一致
+Push track vehicle	推動礦車	推动矿车		礦車
+Execute criminal	處決罪犯	处决罪犯		司法：懲罰
+Hunt for small creature	獵捕小型生物	猎捕小型生物		術語 creature
+Collect taxes	收稅	收税		收稅官工作
+Guard tax collector	護衛收稅官	护卫收税官		收稅官的護衛
+Return kill	帶回獵物	带回猎物		狩獵後把獵物帶回；kill 在此是獵物，不是擊殺
+Go shopping	去購物	去购物		日常
+Seek artifact	尋找神器	寻找神器		術語 artifact（draft）
+Seek infant	尋找嬰兒	寻找婴儿		與 Baby 嬰兒一致
+Make traction bench	製作牽引床	制作牵引床		術語 Traction bench
+Make totem	製作圖騰	制作图腾		與物品名 totem 一致
+Make	製作	制作		工作名開頭的動詞，單獨畫出時用；Make 材料 物品 整句另由句型處理
+hunting animal	狩獵動物	狩猎动物		片段：與 Hunting Animal 一致
+war animal	戰鬥動物	战斗动物		片段：與 War Animal 一致
+Make charcoal	製作木炭	制作木炭		燒炭爐
+Make ash	製作木灰	制作木灰		燒炭爐；ash 是木灰（同 Ash）
+Reaction	反應	反应		自訂反應（reaction）工作的通用名
+Store owned item	存放私人物品	存放个人物品		搬運：把自己的物品收進房間
+Place item in tomb	把物品放進墓室	把物品放入墓室		搬運；術語 tomb（draft）
+Store item in stockpile	存放物品到倉儲區	存放物品到储物区		搬運；術語 stockpile
+Store item in bag	把物品裝進袋子	把物品装进袋子		搬運；術語 bag
+Store item in barrel	把物品裝進桶	把物品装进桶		搬運；術語 barrel
+Store item in bin	把物品裝進貨箱	把物品装进货箱		搬運；術語 bin
+Store item in vehicle	把物品裝上車輛	把物品装上车辆		搬運：礦車、手推車
+Store weapon	存放武器	存放武器		搬運
+Store armor	存放盔甲	存放盔甲		搬運；與 Armor 盔甲一致
+Store item in location	存放物品到場所	存放物品到场所		搬運：酒館、神殿等場所；術語 location（draft）
+Store squad equipment	存放小隊裝備	存放小队装备		術語 squad、equipment
+Dump item	傾倒物品	倾倒物品		與傾倒標記一致
+Clean trap	清理陷阱	清理陷阱		陷阱
+Load catapult	裝填投石機	装填投石机		攻城器械
+Load ballista	裝填弩砲	装填弩炮		攻城器械
+Load bolt thrower	裝填弩箭機	装填弩箭机		攻城器械
+Fire catapult	發射投石機	发射投石机		攻城器械
+Fire ballista	發射弩砲	发射弩炮		攻城器械
+Fire bolt thrower	發射弩箭機	发射弩箭机		攻城器械
+Operate pump	操作螺旋泵	操作螺旋泵		與建造選單 Screw pump 一致
+Load cage trap	裝填籠子陷阱	装填笼子陷阱		術語 cage trap
+Load stone trap	裝填落石陷阱	装填落石陷阱		與 Stone-fall 落石陷阱一致
+Load weapon trap	裝填武器陷阱	装填武器陷阱		術語 weapon trap
+Dig	挖	挖		工作名稱；原文 3 格只放得下一個字
+Eat	吃	吃		工作名稱；原文 3 格只放得下一個字
+Clean	清潔	清洁		工作名稱：清理身體或環境
+Rest	休息	休息		工作名稱：受傷後臥床休息
+Strange mood	奇異心境	奇异心境		工作名稱：矮人進入奇異心境；術語 strange mood
+Train hunting animal	訓練狩獵動物	训练狩猎动物		工作名稱
+Train war animal	訓練戰鬥動物	训练战斗动物		工作名稱
+Train animal	訓練動物	训练动物		工作名稱
+Milk animal	擠奶	挤奶		工作名稱
+Shear animal	剪毛	剪毛		工作名稱
+Tame a large animal	馴服大型動物	驯服大型动物		工作名稱；術語 tame
+Release a large animal	釋放大型動物	释放大型动物		工作名稱
+Handle a large animal	照料大型動物	照料大型动物		工作名稱
+Pit/pond a large animal	把大型動物丟進坑／池塘	把大型动物扔进坑/池塘		工作名稱；區域名坑／池塘
+Pen/pasture a large animal	把大型動物關進畜欄／牧場	把大型动物关进畜栏/牧场		工作名稱；區域名畜欄／牧場
+Surgery	手術	手术		工作名稱：醫療
+Engrave memorial slab	雕刻紀念石板	雕刻纪念石板		工作名稱

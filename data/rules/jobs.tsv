@@ -1,0 +1,47 @@
+en	zh-Hant	zh-Hans	align	note
+Make giant {@1} axe blade	製作巨型{1}斧刃	制作巨型{1}斧刃		工作名稱：材料插在 giant axe blade 中間（Make giant oaken axe blade）；要排在三段名稱前，免得 giant 被當成巨人
+Forge giant {@1} axe blade	鍛造巨型{1}斧刃	锻造巨型{1}斧刃		工作名稱：Forge giant iron axe blade
+Make three {@1} {@2} {@3}	製作 3 個{1}{2}{3}	制作 3 个{1}{2}{3}		工作名稱：材料是兩段（yak leather）時
+Make five {@1} {@2} {@3}	製作 5 支{1}{2}{3}	制作 5 支{1}{2}{3}		工作名稱
+Make twenty-five {@1} {@2} {@3}	製作 25 支{1}{2}{3}	制作 25 支{1}{2}{3}		工作名稱
+Make pair of {@1} {@2} {@3}	製作一雙{1}{2}{3}	制作一双{1}{2}{3}		工作名稱：Make pair of yak leather gauntlets
+Make four {@1} {@2}	製作 4 個{1}{2}	制作 4 个{1}{2}		工作名稱：Make four granite blocks（材料夠好時一次做 4 塊）；限定佔位只收字典裡的名稱，免得套到 Make sure… 這類句子
+Make three {@1} {@2}	製作 3 個{1}{2}	制作 3 个{1}{2}		工作名稱：Make three wooden cups
+Forge three {@1} {@2}	鍛造 3 個{1}{2}	锻造 3 个{1}{2}		工作名稱：Forge three iron goblets
+Make five {@1} {@2}	製作 5 支{1}{2}	制作 5 支{1}{2}		工作名稱：彈藥一次做 5 支
+Forge five {@1} {@2}	鍛造 5 支{1}{2}	锻造 5 支{1}{2}		工作名稱：彈藥一次做 5 支
+Make twenty-five {@1} {@2}	製作 25 支{1}{2}	制作 25 支{1}{2}		工作名稱：彈藥一次做 25 支
+Forge twenty-five {@1} {@2}	鍛造 25 支{1}{2}	锻造 25 支{1}{2}		工作名稱：Forge twenty-five iron bolts
+Make pair of {@1} {@2}	製作一雙{1}{2}	制作一双{1}{2}		工作名稱：手套、鞋子成對
+Forge pair of {@1} {@2}	鍛造一雙{1}{2}	锻造一双{1}{2}		工作名稱：Forge pair of iron gauntlets
+Make large {@1} {@2}	製作大型{1}{2}	制作大型{1}{2}		工作名稱
+Make {@1} {@2}	製作{1}{2}	制作{1}{2}		工作名稱：Make 材料＋物品（Make rock table）
+Make {@1} {@2} {@3}	製作{1}{2}{3}	制作{1}{2}{3}		工作名稱：三段名稱（Make giant cave spider silk shirt）
+Make {@1}	製作{1}	制作{1}		工作名稱：只有一段名稱（Make raw green glass）
+Forge {@1} {@2}	鍛造{1}{2}	锻造{1}{2}		工作名稱：Forge 材料＋物品（Forge iron anvil）
+Forge {@1} {@2} {@3}	鍛造{1}{2}{3}	锻造{1}{2}{3}		工作名稱
+Assemble {@1} {@2}	組裝{1}{2}	组装{1}{2}		工作名稱
+Assemble {@1} {@2} {@3}	組裝{1}{2}{3}	组装{1}{2}{3}		工作名稱
+Sew {@1} image	縫製{1}圖案	缝制{1}图案		工作名稱：Sew yak leather image
+Sew {@1} {@2} image	縫製{1}{2}圖案	缝制{1}{2}图案		工作名稱
+Process {@1} (vial)	加工{1}（小瓶）	加工{1}（小瓶）		工作名稱：裝進小瓶；同整句 Process plants (vial)
+Process {@1} (barrel)	加工{1}（桶）	加工{1}（桶）		工作名稱：裝進桶
+Mint {@1} coins	鑄造{1}幣	铸造{1}币		工作名稱：Mint gold coins；coin 單獨仍譯「錢幣／硬币」；接材料的 coins 句型改用「幣／币」
+Smelt {@1} ore	冶煉{1}	冶炼{1}		工作名稱：hematite 已譯為礦物名，省略重複的 ore；單獨 ore 仍用「礦石／矿石」
+Cut {@1}	切割{1}	切割{1}		工作名稱：切割寶石或玻璃
+Polish {@1}	拋光{1}	抛光{1}		工作名稱
+Encrust {@1} with {@2}	用{2}鑲嵌{1}	用{2}镶嵌{1}		工作名稱：Encrust finished goods with amethyst
+Decorate with {@1}	用{1}裝飾	用{1}装饰		工作名稱
+Stud with {@1}	用{1}鑲釘	用{1}镶钉		工作名稱
+Train {1} to hunt	訓練{1}狩獵	训练{1}狩猎		工作名稱：訓練動物
+Train {1} for war	訓練{1}作戰	训练{1}作战		工作名稱：訓練動物
+Slaughter {1}	屠宰{1}	屠宰{1}		工作名稱；後面可能是動物的稱呼或名字
+Geld {1}	閹割{1}	阉割{1}		工作名稱
+Chain {1}	鎖住{1}	锁住{1}		工作名稱
+Interrogate {1}	審訊{1}	审讯{1}		工作名稱；術語 interrogation
+Milk {@1}	擠{1}奶	挤{1}奶		工作名稱：Milk cow 擠牛奶
+Shear {@1}	剪{1}毛	剪{1}毛		工作名稱
+Mill {@1}	研磨{1}	研磨{1}		工作名稱
+Process {@1}	加工{1}	加工{1}		工作名稱
+Extract from {@1}	從{1}萃取	从{1}提取		工作名稱
+Bait trap with {@1}	用{1}當陷阱誘餌	用{1}做陷阱诱饵		工作名稱

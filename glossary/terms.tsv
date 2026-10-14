@@ -198,7 +198,7 @@ bag	袋子	袋子	game	approved
 barrel	桶	桶	game	approved		
 chest	箱子	箱子	game	approved		raws 裡只有家具 chest（BOX）；身體部位叫 upper body
 cabinet	櫥櫃	橱柜	game	approved		
-ore	礦石	矿石	game	approved		
+ore	礦石	矿石	game	draft		工作名稱「Smelt hematite ore」譯「冶煉赤鐵礦」：礦物名本身已有「礦」，不再接「礦石」
 metal bar	金屬錠	金属锭	game	approved		en 寫單數，同時涵蓋 metal bars
 smelter	冶煉爐	冶炼炉	game	approved		
 furnace	熔爐	熔炉	game	draft		Wood Furnace 定案為「燒炭爐」，不含「熔爐」
@@ -328,3 +328,8 @@ tallow	獸脂	兽脂	game	approved		煉過的動物脂肪；生的 fat 是「脂
 pebbles	卵石	卵石	game	approved		地形說明（chert Pebbles 燧石卵石）
 logs	原木	原木	game	approved		
 anvil	砧台	砧台	game	approved		不用「鐵砧」：材料會接在前面（iron anvil 鐵砧台）
+Upward Stairway	上行樓梯	上行楼梯	game	approved		地圖游標與建造；材料＋地形會接成「花崗岩上行樓梯」
+Downward Stairway	下行樓梯	下行楼梯	game	approved		
+Up/Down Stairway	上下樓梯	上下楼梯	game	approved		
+Upward Slope	上坡	上坡	game	approved		地圖游標（silt Upward Slope 粉砂上坡）
+Downward Slope	下坡	下坡	game	approved		

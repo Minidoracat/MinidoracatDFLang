@@ -1,0 +1,133 @@
+en	zh-Hant	zh-Hans	align	note
+Track (N)	軌道(北)	轨道(北)		地圖游標：礦車軌道（方向）
+Ice Track (N)	冰軌道(北)	冰轨道(北)		地圖游標：礦車軌道（方向）
+Track (S)	軌道(南)	轨道(南)		地圖游標：礦車軌道（方向）
+Ice Track (W)	冰軌道(西)	冰轨道(西)		地圖游標：礦車軌道（方向）
+Track (NS)	軌道(南北)	轨道(南北)		地圖游標：礦車軌道（方向）
+Ice Track (NS)	冰軌道(南北)	冰轨道(南北)		地圖游標：礦車軌道（方向）
+Track (NE)	軌道(東北)	轨道(东北)		地圖游標：礦車軌道（方向）
+Ice Track (S)	冰軌道(南)	冰轨道(南)		地圖游標：礦車軌道（方向）
+Track (E)	軌道(東)	轨道(东)		地圖游標：礦車軌道（方向）
+Ice Track (E)	冰軌道(東)	冰轨道(东)		地圖游標：礦車軌道（方向）
+Track (W)	軌道(西)	轨道(西)		地圖游標：礦車軌道（方向）
+Ice Track (SE)	冰軌道(東南)	冰轨道(东南)		地圖游標：礦車軌道（方向）
+Track (SW)	軌道(西南)	轨道(西南)		地圖游標：礦車軌道（方向）
+Ice Track (SW)	冰軌道(西南)	冰轨道(西南)		地圖游標：礦車軌道（方向）
+Track (EW)	軌道(東西)	轨道(东西)		地圖游標：礦車軌道（方向）
+Ice Track (NE)	冰軌道(東北)	冰轨道(东北)		地圖游標：礦車軌道（方向）
+Track (NW)	軌道(西北)	轨道(西北)		地圖游標：礦車軌道（方向）
+Ice Track (NW)	冰軌道(西北)	冰轨道(西北)		地圖游標：礦車軌道（方向）
+Track (SE)	軌道(東南)	轨道(东南)		地圖游標：礦車軌道（方向）
+Ice Track (NSW)	冰軌道(北南西)	冰轨道(北南西)		地圖游標：礦車軌道（方向）
+Track (NEW)	軌(北東西)	轨(北东西)		地圖游標：礦車軌道（方向）；三向交會寬度放不下「軌道」，寫「軌」
+Ice Track (NEW)	冰軌道(北東西)	冰轨道(北东西)		地圖游標：礦車軌道（方向）
+Track (SEW)	軌(南東西)	轨(南东西)		地圖游標：礦車軌道（方向）；三向交會寬度放不下「軌道」，寫「軌」
+Ice Track (EW)	冰軌道(東西)	冰轨道(东西)		地圖游標：礦車軌道（方向）
+Track (NSE)	軌(北南東)	轨(北南东)		地圖游標：礦車軌道（方向）；三向交會寬度放不下「軌道」，寫「軌」
+Ice Track (NSE)	冰軌道(北南東)	冰轨道(北南东)		地圖游標：礦車軌道（方向）
+Track (NSW)	軌(北南西)	轨(北南西)		地圖游標：礦車軌道（方向）；三向交會寬度放不下「軌道」，寫「軌」
+Upward Track (SEW)	上坡軌道(南東西)	上坡轨道(南东西)		地圖游標：礦車軌道（方向）
+Ice Upward Track (SEW)	冰上坡軌道(南東西)	冰上坡轨道(南东西)		地圖游標：礦車軌道（方向）
+Upward Track (NSEW)	上坡軌道(十字)	上坡轨道(十字)		地圖游標：礦車軌道（方向）
+Ice Upward Track (NSEW)	冰上坡軌道(十字)	冰上坡轨道(十字)		地圖游標：礦車軌道（方向）
+Upward Track (NSW)	上坡軌道(北南西)	上坡轨道(北南西)		地圖游標：礦車軌道（方向）
+Ice Upward Track (NSW)	冰上坡軌道(北南西)	冰上坡轨道(北南西)		地圖游標：礦車軌道（方向）
+Upward Track (NEW)	上坡軌道(北東西)	上坡轨道(北东西)		地圖游標：礦車軌道（方向）
+Ice Upward Track (NEW)	冰上坡軌道(北東西)	冰上坡轨道(北东西)		地圖游標：礦車軌道（方向）
+Downward Track (N)	下坡軌道(北)	下坡轨道(北)		地圖游標：礦車軌道（方向）
+Ice Downward Track (N)	冰下坡軌道(北)	冰下坡轨道(北)		地圖游標：礦車軌道（方向）
+Downward Track (S)	下坡軌道(南)	下坡轨道(南)		地圖游標：礦車軌道（方向）
+Ice Downward Track (W)	冰下坡軌道(西)	冰下坡轨道(西)		地圖游標：礦車軌道（方向）
+Downward Track (NS)	下坡軌道(南北)	下坡轨道(南北)		地圖游標：礦車軌道（方向）
+Ice Downward Track (NS)	冰下坡軌道(南北)	冰下坡轨道(南北)		地圖游標：礦車軌道（方向）
+Downward Track (NE)	下坡軌道(東北)	下坡轨道(东北)		地圖游標：礦車軌道（方向）
+Ice Downward Track (S)	冰下坡軌道(南)	冰下坡轨道(南)		地圖游標：礦車軌道（方向）
+Downward Track (E)	下坡軌道(東)	下坡轨道(东)		地圖游標：礦車軌道（方向）
+Ice Downward Track (E)	冰下坡軌道(東)	冰下坡轨道(东)		地圖游標：礦車軌道（方向）
+Downward Track (W)	下坡軌道(西)	下坡轨道(西)		地圖游標：礦車軌道（方向）
+Ice Downward Track (SE)	冰下坡軌道(東南)	冰下坡轨道(东南)		地圖游標：礦車軌道（方向）
+Downward Track (SW)	下坡軌道(西南)	下坡轨道(西南)		地圖游標：礦車軌道（方向）
+Ice Downward Track (SW)	冰下坡軌道(西南)	冰下坡轨道(西南)		地圖游標：礦車軌道（方向）
+Downward Track (EW)	下坡軌道(東西)	下坡轨道(东西)		地圖游標：礦車軌道（方向）
+Ice Downward Track (NE)	冰下坡軌道(東北)	冰下坡轨道(东北)		地圖游標：礦車軌道（方向）
+Downward Track (NW)	下坡軌道(西北)	下坡轨道(西北)		地圖游標：礦車軌道（方向）
+Ice Downward Track (NW)	冰下坡軌道(西北)	冰下坡轨道(西北)		地圖游標：礦車軌道（方向）
+Downward Track (SE)	下坡軌道(東南)	下坡轨道(东南)		地圖游標：礦車軌道（方向）
+Ice Downward Track (NSW)	冰下坡軌道(北南西)	冰下坡轨道(北南西)		地圖游標：礦車軌道（方向）
+Downward Track (NEW)	下坡軌道(北東西)	下坡轨道(北东西)		地圖游標：礦車軌道（方向）
+Ice Downward Track (NEW)	冰下坡軌道(北東西)	冰下坡轨道(北东西)		地圖游標：礦車軌道（方向）
+Downward Track (SEW)	下坡軌道(南東西)	下坡轨道(南东西)		地圖游標：礦車軌道（方向）
+Ice Downward Track (EW)	冰下坡軌道(東西)	冰下坡轨道(东西)		地圖游標：礦車軌道（方向）
+Downward Track (NSE)	下坡軌道(北南東)	下坡轨道(北南东)		地圖游標：礦車軌道（方向）
+Ice Downward Track (NSE)	冰下坡軌道(北南東)	冰下坡轨道(北南东)		地圖游標：礦車軌道（方向）
+Downward Track (NSW)	下坡軌道(北南西)	下坡轨道(北南西)		地圖游標：礦車軌道（方向）
+Ice Downward Track (SEW)	冰下坡軌道(南東西)	冰下坡轨道(南东西)		地圖游標：礦車軌道（方向）
+Downward Track (NSEW)	下坡軌道(十字)	下坡轨道(十字)		地圖游標：礦車軌道（方向）
+Ice Downward Track (NSEW)	冰下坡軌道(十字)	冰下坡轨道(十字)		地圖游標：礦車軌道（方向）
+Ice Track (SEW)	冰軌道(南東西)	冰轨道(南东西)		地圖游標：礦車軌道（方向）
+Track (NSEW)	軌道(十字)	轨道(十字)		地圖游標：礦車軌道（方向）
+Ice Track (NSEW)	冰軌道(十字)	冰轨道(十字)		地圖游標：礦車軌道（方向）
+Upward Track (S)	上坡軌道(南)	上坡轨道(南)		地圖游標：礦車軌道（方向）
+Ice Upward Track (S)	冰上坡軌道(南)	冰上坡轨道(南)		地圖游標：礦車軌道（方向）
+Upward Track (E)	上坡軌道(東)	上坡轨道(东)		地圖游標：礦車軌道（方向）
+Ice Upward Track (E)	冰上坡軌道(東)	冰上坡轨道(东)		地圖游標：礦車軌道（方向）
+Upward Track (N)	上坡軌道(北)	上坡轨道(北)		地圖游標：礦車軌道（方向）
+Ice Upward Track (N)	冰上坡軌道(北)	冰上坡轨道(北)		地圖游標：礦車軌道（方向）
+Upward Track (NE)	上坡軌道(東北)	上坡轨道(东北)		地圖游標：礦車軌道（方向）
+Ice Upward Track (NE)	冰上坡軌道(東北)	冰上坡轨道(东北)		地圖游標：礦車軌道（方向）
+Upward Track (NW)	上坡軌道(西北)	上坡轨道(西北)		地圖游標：礦車軌道（方向）
+Ice Upward Track (NW)	冰上坡軌道(西北)	冰上坡轨道(西北)		地圖游標：礦車軌道（方向）
+Upward Track (W)	上坡軌道(西)	上坡轨道(西)		地圖游標：礦車軌道（方向）
+Ice Upward Track (W)	冰上坡軌道(西)	冰上坡轨道(西)		地圖游標：礦車軌道（方向）
+Upward Track (NS)	上坡軌道(南北)	上坡轨道(南北)		地圖游標：礦車軌道（方向）
+Ice Upward Track (NS)	冰上坡軌道(南北)	冰上坡轨道(南北)		地圖游標：礦車軌道（方向）
+Upward Track (EW)	上坡軌道(東西)	上坡轨道(东西)		地圖游標：礦車軌道（方向）
+Ice Upward Track (EW)	冰上坡軌道(東西)	冰上坡轨道(东西)		地圖游標：礦車軌道（方向）
+Upward Track (NSE)	上坡軌道(北南東)	上坡轨道(北南东)		地圖游標：礦車軌道（方向）
+Ice Upward Track (NSE)	冰上坡軌道(北南東)	冰上坡轨道(北南东)		地圖游標：礦車軌道（方向）
+Upward Track (SE)	上坡軌道(東南)	上坡轨道(东南)		地圖游標：礦車軌道（方向）
+Ice Upward Track (SE)	冰上坡軌道(東南)	冰上坡轨道(东南)		地圖游標：礦車軌道（方向）
+Upward Track (SW)	上坡軌道(西南)	上坡轨道(西南)		地圖游標：礦車軌道（方向）
+Ice Upward Track (SW)	冰上坡軌道(西南)	冰上坡轨道(西南)		地圖游標：礦車軌道（方向）
+Ice Floor	冰面	冰面		地圖游標：結冰的地面
+Cavern Floor	洞穴地面	洞穴地面		地圖游標：材料＋ Cavern Floor
+Sapling	樹苗	树苗		地圖游標：樹名＋ Sapling，或單獨顯示
+Upward Slope	上坡	上坡		地圖游標：材料＋ Upward Slope（silt Upward Slope 粉砂上坡）
+Downward Slope	下坡	下坡		地圖游標：材料＋ Downward Slope，或單獨顯示
+Upward Stairway	上行樓梯	上行楼梯		地圖游標：材料＋ Upward Stairway
+Downward Stairway	下行樓梯	下行楼梯		地圖游標：材料＋ Downward Stairway
+Up/Down Stairway	上下樓梯	上下楼梯		地圖游標：材料＋ Up/Down Stairway
+Grass	草地	草地		地圖游標
+Dry Grass	乾草地	干草地		地圖游標
+Dead Grass	枯草地	枯草地		地圖游標
+Grassy Upward Slope	草地上坡	草地上坡		地圖游標
+Grassy Downward Slope	草地下坡	草地下坡		地圖游標
+Dry Grass Upward Slope	乾草地上坡	干草地上坡		地圖游標
+Dry Grass Downward Slope	乾草地下坡	干草地下坡		地圖游標
+Dead Grass Upward Slope	枯草地上坡	枯草地上坡		地圖游標
+Dead Grass Downward Slope	枯草地下坡	枯草地下坡		地圖游標
+Glacial Upward Slope	冰河上坡	冰川上坡		地圖游標
+Glacial Downward Slope	冰河下坡	冰川下坡		地圖游標
+Grassy Upward Stairway	草地上行樓梯	草地上行楼梯		地圖游標
+Grassy Downward Stairway	草地下行樓梯	草地下行楼梯		地圖游標
+Grassy Up/Down Stairway	草地上下樓梯	草地上下楼梯		地圖游標
+Ice Upward Stairway	冰上行樓梯	冰上行楼梯		地圖游標
+Ice Downward Stairway	冰下行樓梯	冰下行楼梯		地圖游標
+Ice Up/Down Stairway	冰上下樓梯	冰上下楼梯		地圖游標
+Pillar	柱子	柱子		地圖游標：鑿出來的石柱
+Driftwood	漂流木	漂流木		地圖游標
+Waterfall	瀑布	瀑布		地圖游標
+River Source	河源	河源		地圖游標
+Shrub	灌木	灌木		地圖游標
+Semi-molten Rock	半熔岩石	半熔岩石		地圖游標：地底熔岩海附近
+Lava Flow	熔岩流	熔岩流		地圖游標
+Magma Flow	熔岩流	熔岩流		地圖游標；術語 magma 熔岩
+Murky Pool	混濁水池	浑浊水池		地圖游標
+Murky Pool Slope	混濁水池斜坡	浑浊水池斜坡		地圖游標
+Chasm	裂谷	裂谷		地圖游標
+Eerie Glowing Pit	詭異的發光坑	诡异的发光坑		地圖游標
+Glowing Floor	發光地面	发光地面		地圖游標
+Glowing Barrier	發光屏障	发光屏障		地圖游標
+River	河流	河流		地圖游標
+Brook	溪流	溪流		地圖游標
+Underworld Gate	冥界之門	冥界之门		地圖游標

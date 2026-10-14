@@ -452,3 +452,6 @@ walnut leaf	核桃葉	核桃叶		PLANT:WALNUT GROWTH_NAME
 walnut leaves	核桃葉	核桃叶		PLANT:WALNUT GROWTH_NAME
 walnut pollen catkin	核桃雄花序	核桃雄花序		PLANT:WALNUT GROWTH_NAME
 walnut flower cluster	核桃花簇	核桃花簇		PLANT:WALNUT GROWTH_NAME
+oaken	橡木	橡木		PLANT:OAK ADJ；木材當材料前綴（Make oaken table 製作橡木桌子）
+birchen	樺木	桦木		PLANT:BIRCH ADJ；木材當材料前綴
+ashen	梣木	梣木		PLANT:ASH ADJ；木材當材料前綴

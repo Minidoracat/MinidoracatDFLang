@@ -1,0 +1,241 @@
+en	zh-Hant	zh-Hans	align	note
+Waiting for construction...	等待建造……	等待建造……		建築資訊頁：建造狀態
+Trap Occupied:	陷阱已捕獲：	陷阱已捕获：		建築資訊頁：陷阱；後接捕獲的生物或狀態（推斷）
+Cancel removal	取消拆除	取消拆除		建築資訊頁：拆除狀態按鈕
+Removal inactive.	拆除未進行。	拆除未进行。		建築資訊頁：拆除狀態
+Removal suspended.	拆除已暫停。	拆除已暂停。		建築資訊頁：拆除狀態
+Slated for removal	預定拆除	待拆除		建築資訊頁：拆除狀態
+*** Forbidden ***	*** 已禁用 ***	*** 已禁用 ***		建築資訊頁：建築被禁用時的標示
+No orders	無任務	无任务		建築資訊頁：工坊沒有任務（推斷）
+"Yes.  I need 	"沒錯，我需要	"没错，我需要		奇異心境：工坊裡喃喃要材料的開頭；後接材料，結尾引號由遊戲另畫，故開頭引號保留半形
+broods	沉吟	沉吟		奇異心境：「<名字> broods "…"」的動詞（推斷）
+works with menacing fury!	帶著駭人的狂怒工作！	带着骇人的狂怒工作！		奇異心境（凶邪）：工坊裡的狀態，前接名字
+works, darkly brooding...	陰鬱地埋頭工作……	阴郁地埋头工作……		奇異心境（陰森）：工坊裡的狀態，前接名字
+works secretly...	暗中工作……	暗中工作……		奇異心境（隱密）：工坊裡的狀態，前接名字
+keeps muttering	不停喃喃自語	不停喃喃自语		奇異心境：喃喃要材料的動詞
+works furiously!	狂熱地工作！	狂热地工作！		奇異心境（癡迷）：工坊裡的狀態，前接名字
+been claimed by	的佔用者：	的占用者：		建築資訊頁：接在「This building has」之後，再接名字（奇異心境佔用工坊）
+This building has	此建築	该建筑		建築資訊頁：後接「been claimed by」與名字
+Remove building	拆除建築	拆除建筑		建築資訊頁按鈕
+Cancel construction	取消建造	取消建造		建築資訊頁按鈕
+Suspend construction	暫停建造	暂停建造		建築資訊頁按鈕
+Resume construction	恢復建造	恢复建造		建築資訊頁按鈕
+Construction inactive.	建造未進行。	建造未进行。		建築資訊頁：建造狀態
+Construction suspended.	建造已暫停。	建造已暂停。		建築資訊頁：建造狀態
+Construction nearly done.	建造即將完成。	建造即将完成。		建築資訊頁：建造狀態
+rough... color	原石……色彩	原石……色彩		奇異心境：喃喃要的材料（原石），保留斷續語氣
+raw... crystal	原料……水晶	原料……水晶		奇異心境：喃喃要的材料（生水晶玻璃），保留斷續語氣
+raw... clear	原料……透明	原料……透明		奇異心境：喃喃要的材料（生透明玻璃），保留斷續語氣
+raw... green	原料……綠色	原料……绿色		奇異心境：喃喃要的材料（生綠玻璃），保留斷續語氣
+tree... life	樹……生命	树……生命		奇異心境：喃喃要的材料（木材），保留斷續語氣
+a corpse	屍體	尸体		奇異心境：要的材料
+a shell	貝殼	贝壳		奇異心境：要的材料
+bones...  yes	骨頭……沒錯	骨头……没错		奇異心境：喃喃要的材料（骨頭），保留斷續語氣
+ needs	 需要	 需要		奇異心境：「<名字> needs <材料>」片段
+mutters	喃喃道	喃喃道		奇異心境：喃喃要材料的動詞
+"I must have 	"我必須得到	"我必须得到		奇異心境：要材料的開頭；結尾引號由遊戲另畫，開頭引號保留半形
+screams	尖叫道	尖叫道		奇異心境：要材料的動詞
+things...  certain things	東西……某些東西	东西……某些东西		奇異心境（隱密）：不說明要什麼材料，保留斷續語氣
+"Leave me.  I need... 	"別管我。我需要……	"别管我。我需要……		奇異心境：要材料的開頭；結尾引號由遊戲另畫，開頭引號保留半形
+rough gems	原石	原石		奇異心境：要的材料
+rough gems and glass	原石與玻璃	原石和玻璃		奇異心境：要的材料
+glass and burning wood	玻璃與燃燒的木頭	玻璃和燃烧的木头		奇異心境：要的材料
+a forest	森林	森林		奇異心境：要的材料（木材）
+shells	貝殼	贝壳		奇異心境：要的材料
+skeletons	骨骸	骨骸		奇異心境：要的材料
+pictures of 	圖畫：	图画：		奇異心境：要的材料片段，後接畫的內容；中文語序寫成「圖畫：X」
+sketches	素描	素描		奇異心境：要的材料
+cloth... thread	布……線	布……线		奇異心境：喃喃要的材料（布），保留斷續語氣
+leather... skin	皮革……獸皮	皮革……兽皮		奇異心境：喃喃要的材料（皮革），保留斷續語氣
+blocks... bricks...	磚塊……方磚……	砖块……方砖……		奇異心境：喃喃要的材料（磚塊），保留斷續語氣
+gems... shining	寶石……閃亮	宝石……闪亮		奇異心境：喃喃要的材料（寶石），保留斷續語氣
+bars... metal	錠……金屬	锭……金属		奇異心境：喃喃要的材料（金屬錠），保留斷續語氣
+stone... rock	石頭……岩石	石头……岩石		奇異心境：喃喃要的材料（石頭），保留斷續語氣
+Add new task	新增任務	新建任务		建築資訊頁：工坊任務按鈕
+Link plate	連結壓力板	连接压力板		建築資訊頁：拉桿／壓力板連結按鈕
+Pull lever	拉動拉桿	拉动拉杆		建築資訊頁：拉桿
+Link lever	連結拉桿	连接拉杆		建築資訊頁：拉桿連結按鈕
+Need accessible mechanisms.	需要可取用的機械裝置。	需要可取用的机械装置。		建築資訊頁：連結拉桿缺機械裝置
+Workers	工人	工人		建築資訊頁：工坊工人分頁
+stacked cloth	成疊的布	成叠的布		奇異心境：要的材料
+stacked leather	成疊的皮革	成叠的皮革		奇異心境：要的材料
+square blocks	方正的磚塊	方正的砖块		奇異心境：要的材料
+cut gems	切割寶石	切割宝石		奇異心境：要的材料
+of metal	金屬錠	金属锭		奇異心境：要的材料片段（推斷）
+shining bars	閃亮的	闪亮的		奇異心境：要的材料
+a quarry	採石場	采石场		奇異心境：要的材料（石頭）
+Active	運作中	运作中		建築資訊頁：水井狀態（推斷）
+Frozen Elsewhere	別處結冰	别处结冰		建築資訊頁：水井水源在別處結冰
+Frozen Here	此處結冰	此处结冰		建築資訊頁：水井水源在此處結冰
+The well is dry.	水井已乾涸。	水井已干涸。		建築資訊頁：水井
+The well is operational.	水井可正常使用。	水井可以正常使用。		建築資訊頁：水井
+The bucket is full.	水桶已滿。	水桶已满。		建築資訊頁：水井
+There is no bucket.	沒有水桶。	没有水桶。		建築資訊頁：水井
+General work orders allowed: 	允許一般工作指令： 	允许一般工作订单： 		建築資訊頁：工坊設定；後接是否，結尾空白保留
+Work orders can be added specifically for this shop.	可為此工坊專門新增工作指令。	可以为该工坊专门添加工作订单。		建築資訊頁：工坊
+A manager is required to add work orders to the shop.	需要經理才能為工坊新增工作指令。	需要经理才能为工坊添加工作订单。		建築資訊頁：工坊
+Work orders cannot be assigned to this building.	此建築無法指派工作指令。	该建筑无法分配工作订单。		建築資訊頁：工坊
+will do available tasks anywhere	會在任何地方執行可用任務	会在任何地方执行可用任务		建築資訊頁：工坊工人；前接工人名字
+will only do assigned tasks	只做指派的任務	只做分配的任务		建築資訊頁：工坊工人；前接工人名字
+Only one master may be assigned to each workshop.	每座工坊只能指派一位師傅。	每个工坊只能分配一位师傅。		建築資訊頁：工坊工人；master 是工坊專屬師傅，不是技能等級的大師
+This workshop is free for anybody to use.	此工坊開放任何人使用。	该工坊对所有人开放使用。		建築資訊頁：工坊工人
+Workers cannot be assigned to this building.	此建築無法指派工人。	该建筑无法分配工人。		建築資訊頁：工坊工人
+Install colony when ready	準備好時安置蜂群	准备好后安置蜂群		建築資訊頁：蜂箱
+Assign new display items	指派新的展示品	分配新的展示品		建築資訊頁：展示櫃／基座
+Assigned	已指派	已分配		建築資訊頁：展示品分頁
+On display	展示中	展示中		建築資訊頁：展示品分頁
+This is a memorial to	紀念對象：	纪念对象：		建築資訊頁：紀念碑；後接名字
+Pumps from the west	從西側抽水	从西侧抽水		建築資訊頁：螺旋泵方向
+Pumps from the south	從南側抽水	从南侧抽水		建築資訊頁：螺旋泵方向
+Pumps from the east	從東側抽水	从东侧抽水		建築資訊頁：螺旋泵方向
+Pumps from the north	從北側抽水	从北侧抽水		建築資訊頁：螺旋泵方向
+Start Pump Manually	開始手動抽水	开始手动抽水		建築資訊頁：螺旋泵
+Stop Pumping Manually	停止手動抽水	停止手动抽水		建築資訊頁：螺旋泵
+Hanging	懸空	悬空		建築資訊頁：機械結構支撐狀態
+Stable Foundation	地基穩固	地基稳固		建築資訊頁：機械結構支撐狀態
+Total Power Needed: 	總需求動力： 	所需总动力： 		建築資訊頁：動力機械；後接數字，結尾空白保留
+Total Power: 	總動力： 	总动力： 		建築資訊頁：動力機械；後接數字，結尾空白保留
+Inactive	未運作	未运作		建築資訊頁：機械／建築狀態
+Occupant	佔用者	占用者		建築資訊頁：籠子／鎖鏈／房間的佔用者（推斷）
+* Output restricted	* 產出受限	* 产出受限		建築資訊頁：附註
+* No output	* 無產出	* 无产出		建築資訊頁：附註
+Too many hives	蜂箱過多	蜂箱过多		建築資訊頁：蜂箱
+Not ready to be split	尚不能分蜂	尚不能分蜂		建築資訊頁：蜂箱；分蜂是把蜂群分出新巢
+Ready to be split	可以分蜂	可以分蜂		建築資訊頁：蜂箱
+No outdoor access	無法通往戶外	无法通往户外		建築資訊頁：蜂箱
+Outdoor access	可通往戶外	可通往户外		建築資訊頁：蜂箱
+   * Saves colony for split	   * 保留蜂群以供分蜂	   * 保留蜂群以便分蜂		建築資訊頁：蜂箱選項附註；開頭三格縮排保留
+Do not gather products	不採收產物	不采收产物		建築資訊頁：蜂箱選項
+   * Requires a jug	   * 需要一個壺	   * 需要一个壶		建築資訊頁：蜂箱選項附註；開頭三格縮排保留
+   * Destroys colony	   * 會毀掉蜂群	   * 会毁掉蜂群		建築資訊頁：蜂箱選項附註；開頭三格縮排保留
+Gather any products	採收任何產物	采收任意产物		建築資訊頁：蜂箱選項
+Do not install colony	不安置蜂群	不安置蜂群		建築資訊頁：蜂箱選項
+   * Existing hive	   * 現有蜂箱	   * 现有蜂箱		建築資訊頁：蜂箱選項附註，可能接在「需要野生蜂群或」下一行（推斷）
+   * Requires wild colony or	   * 需要野生蜂群或	   * 需要野生蜂群或		建築資訊頁：蜂箱選項附註；後接另一來源（推斷）
+Unnamed zoo	無名動物園	无名动物园		區域／場所名稱預設值；「未命名動物園」12 格超過原文 11 格，改用「無名」
+Unnamed sculpture garden	未命名雕塑園	未命名雕塑园		區域／場所名稱預設值
+Unnamed memorial hall	未命名紀念堂	未命名纪念堂		區域／場所名稱預設值
+Unnamed fishing area	未命名釣魚區	未命名钓鱼区		區域名稱預設值
+Unnamed sand collection area	未命名採沙區	未命名采沙区		區域名稱預設值
+Unnamed dump	未命名垃圾場	未命名垃圾场		區域名稱預設值（垃圾場）
+Unnamed water source	未命名水源	未命名水源		區域名稱預設值
+This furniture is a part of	此家具屬於	该家具属于		建築資訊頁：家具所屬房間；後接房間名稱
+This furniture is a part of multiple rooms.	此家具屬於多個房間。	该家具属于多个房间。		建築資訊頁：家具所屬房間
+be used for imprisonment.	用於關押犯人。	用于关押犯人。		建築資訊頁：鎖鏈／籠子；三行依序「You must designate a dungeon / before this restraint will / be used for imprisonment.」
+before this restraint will	此束縛具才會	此束缚具才会		建築資訊頁：鎖鏈／籠子；見上
+You must designate a dungeon	必須先劃設地牢，	必须先划定地牢，		建築資訊頁：鎖鏈／籠子；見上
+Aquarium	水族箱	水族箱		建築資訊頁：籠子類型（推斷）
+Unassigned occupant	未指派佔用者	未分配占用者		建築資訊頁：鎖鏈／籠子
+Assigned and chained	已指派並拴住	已分配并拴住		建築資訊頁：鎖鏈
+Unnamed zone	未命名區域	未命名区域		區域名稱預設值
+Unnamed tomb	未命名墓室	未命名墓室		區域名稱預設值
+Unnamed dining hall	未命名餐廳	未命名餐厅		區域名稱預設值
+Unnamed dormitory	未命名宿舍	未命名宿舍		區域名稱預設值
+Unnamed dungeon	未命名地牢	未命名地牢		區域名稱預設值
+Unnamed barracks	未命名營房	未命名营房		區域名稱預設值
+Unnamed archery range	未命名射箭場	未命名射箭场		區域名稱預設值
+Unnamed office	未命名辦公室	未命名办公室		區域名稱預設值
+Unnamed bedroom	未命名臥室	未命名卧室		區域名稱預設值
+Unnamed plant gathering area	未命名植物採集區	未命名植物采集区		區域名稱預設值
+Unnamed animal training area	未命名動物訓練區	未命名动物训练区		區域名稱預設值
+Unnamed clay collection area	未命名採黏土區	未命名采黏土区		區域名稱預設值
+Unnamed meeting hall	未命名集會廳	未命名集会厅		區域名稱預設值
+Unnamed museum	未命名博物館	未命名博物馆		區域／場所名稱預設值
+Operated by Mechanisms	由機械裝置操作	由机械装置操作		建築資訊頁：門／活蓋等由拉桿操作
+Practice fire	練習射擊	练习射击		建築資訊頁：弩砲／弩箭機狀態
+Bolts nearby but assigned to hunters: 	附近有弩箭但已分配給獵人： 	附近有弩箭但已分配给猎人： 		建築資訊頁：弩箭機；後接數字，結尾空白保留
+Bolts nearby but assigned to squads: 	附近有弩箭但已分配給小隊： 	附近有弩箭但已分配给小队： 		建築資訊頁：弩箭機；後接數字，結尾空白保留
+Bolts nearby and available: 	附近可用的弩箭： 	附近可用的弩箭： 		建築資訊頁：弩箭機；後接數字，結尾空白保留
+Bolts loaded: 	已裝填弩箭： 	已装填弩箭： 		建築資訊頁：弩箭機；後接數字，結尾空白保留
+Resting orientation	待命朝向	待命朝向		建築資訊頁：弩砲／弩箭機
+* Place archery targets for better training	* 放置箭靶以提升訓練效果	* 放置箭靶以提高训练效果		建築資訊頁：攻城器械練習射擊附註
+* Will also target enemies	* 也會瞄準敵人	* 也会瞄准敌人		建築資訊頁：攻城器械練習射擊附註
+Not in use	未使用	未使用		建築資訊頁：攻城器械模式
+Keep loaded but do not stand ready	保持裝填但不待命	保持装填但不待命		建築資訊頁：攻城器械模式
+Stand ready but do not fire	待命但不開火	待命但不开火		建築資訊頁：攻城器械模式
+Practice fire (uses many bolts!)	練習射擊（耗用大量弩箭！）	练习射击（消耗大量弩箭！）		建築資訊頁：攻城器械模式
+Fire at enemies	向敵人開火	向敌人开火		建築資訊頁：攻城器械模式
+Chained	已拴住	已拴住		建築資訊頁：鎖鏈
+Nest box unclaimed	巢箱未被佔用	巢箱未被占用		建築資訊頁：巢箱
+Nest box claimed by	巢箱佔用者：	巢箱占用者：		建築資訊頁：巢箱；後接動物名稱
+Deceased	已故	已故		建築資訊頁：棺材／紀念碑
+This is the resting place of	安息於此者：	安息于此者：		建築資訊頁：棺材；後接名字
+be used for burial.	用於下葬。	用于下葬。		建築資訊頁：棺材；三行依序「You must designate a tomb / before this coffin will / be used for burial.」
+before this coffin will	這具棺材才會	这具棺材才会		建築資訊頁：棺材；見上
+You must designate a tomb	必須先劃設墓室，	必须先划定墓室，		建築資訊頁：棺材；見上
+Retake hatch to forbid it.	奪回此活蓋才能將其禁用。	夺回此活盖才能将其禁用。		建築資訊頁：活蓋
+Open	開啟	打开		建築資訊頁：門／活蓋狀態
+Retake door to forbid it.	奪回此門才能將其禁用。	夺回此门才能将其禁用。		建築資訊頁：門
+Passable	可通行	可通行		建築資訊頁：門／活蓋狀態
+Forbidden	已禁用	已禁用		建築資訊頁：門／活蓋狀態（禁止通行）
+Large gem	大寶石	大宝石		建築資訊頁：陷阱誘餌選項（推斷）
+Nothing	無	无		建築資訊頁：選項值
+Desired bait: 	指定誘餌： 	指定诱饵： 		建築資訊頁：陷阱；結尾空白保留
+You do not have a broker.	目前沒有交易員。	目前没有交易员。		貿易站
+Broker cannot access depot	交易員無法抵達貿易站	交易员无法到达贸易站		貿易站
+Broker can access depot	交易員可抵達貿易站	交易员可到达贸易站		貿易站
+Broker: 	交易員：	交易员：		貿易站；後接名字；「交易員： 」9 格超過原文 8 格，不留結尾空白
+No trader needed at depot	不需貿易商前往貿易站	不需贸易商前往贸易站		貿易站：交易人員選項
+Anyone requested at depot	任何人前往貿易站皆可	任何人前往贸易站均可		貿易站：交易人員選項
+Broker requested at depot	要求交易員前往貿易站	要求交易员前往贸易站		貿易站：交易人員選項
+There are no merchants trading right now.	目前沒有商人在交易。	目前没有商人在交易。		貿易站
+ items	 件	 件		貿易站：前接數字；「 件物品」7 格超過原文 6 格，只寫量詞
+Awaiting 	等待 	等待 		貿易站：後接數字或物品（推斷），結尾空白保留
+Show items	顯示物品	显示物品		建築資訊頁按鈕
+Show linked buildings	顯示連結的建築	显示关联的建筑		建築資訊頁按鈕：拉桿／壓力板
+Disengaged	脫開	脱开		建築資訊頁：齒輪組狀態
+is best)	最佳）	最佳）		農田：接在「(Cavern soil」之後
+(Cavern soil	（洞穴土壤	（洞穴土壤		農田：土壤提示「(Cavern soil is best)」前半
+Poor soil	土壤貧瘠	土壤贫瘠		農田
+every season	每季	每季		農田
+Fertilize	施肥	施肥		農田
+Current amount: 	目前數量： 	当前数量： 		農田：施肥量；後接數字，結尾空白保留
+Set to fertilize	設為施肥	设为施肥		農田
+Not set to fertilize	未設為施肥	未设为施肥		農田
+No seeds	無種子	无种子		農田
+Leave fallow	休耕	休耕		農田
+(now)	當季	当季		農田：標示目前季節；「（現在）」超過 5 格
+Trap Baited:	陷阱誘餌：	陷阱诱饵：		建築資訊頁：陷阱
+heard this was the place for those seeking danger.	聽說這裡適合尋求危險的人。	听说这里适合寻求危险的人。		訪客資訊：前接名字
+heard this was a good place to search for monsters.	聽說這裡很適合搜尋怪物。	听说这里很适合寻找怪物。		訪客資訊：前接名字
+ at 	 於 	 于 		訪客資訊：「<活動> at <地點>」片段（推斷）
+asking questions	打聽消息	打听消息		訪客資訊：來訪目的；前接「This visitor has come」
+seeking sanctuary	尋求庇護	寻求庇护		訪客資訊：來訪目的
+for diplomacy	進行外交	进行外交		訪客資訊：來訪目的
+seeking work as a scholar	謀求學者職位	谋求学者职位		訪客資訊：來訪目的
+seeking work as a mercenary	謀求傭兵職位	谋求雇佣兵职位		訪客資訊：來訪目的
+seeking work as a performer	謀求表演者職位	谋求表演者职位		訪客資訊：來訪目的
+to slay beasts	獵殺野獸	猎杀野兽		訪客資訊：來訪目的
+to perform	表演	表演		訪客資訊：來訪目的
+to relax	放鬆	放松		訪客資訊：來訪目的
+to study	做研究	做研究		訪客資訊：來訪目的
+to pray	祈禱	祈祷		訪客資訊：來訪目的
+This visitor has come 	此訪客前來	这位访客前来		訪客資訊：後接來訪目的（中文），不留結尾空白
+This visitor is ready to leave.	此訪客準備離開了。	这位访客准备离开了。		訪客資訊
+is seeking information	正在打聽消息	正在打听消息		訪客資訊：前接名字，後接「 about the location of 」
+ would be a safe place to stay.	 是個安全的落腳處。	 是个安全的落脚处。		訪客資訊：前接「heard／believes <地點>」
+believes 	認為 	认为 		訪客資訊：前接名字，後接地點，結尾空白保留
+ was the place to look for long-term work.	 是找長期工作的好地方。	 是找长期工作的好地方。		訪客資訊：前接「heard／believes <地點>」
+ would make a good base for a mercenary.	 適合當傭兵的據點。	 适合当雇佣兵的据点。		訪客資訊：前接「heard／believes <地點>」
+ was the place for long-term scholarship.	 是長期治學的好地方。	 是长期治学的好地方。		訪客資訊：前接「heard／believes <地點>」
+ was the place to perform research.	 是做研究的好地方。	 是做研究的好地方。		訪客資訊：前接「heard／believes <地點>」
+ was the place to entertain people.	 是表演娛樂大眾的好地方。	 是表演娱乐大众的好地方。		訪客資訊：前接「heard／believes <地點>」
+ was the place to enjoy oneself.	 是享樂的好地方。	 是享乐的好地方。		訪客資訊：前接「heard／believes <地點>」
+ was the place to admire fine architecture.	 是欣賞精美建築的好地方。	 是欣赏精美建筑的好地方。		訪客資訊：前接「heard／believes <地點>」
+ was the place for a good drink.	 是好好喝一杯的好地方。	 是好好喝一杯的好地方。		訪客資訊：前接「heard／believes <地點>」
+was curious about 	想了解 	想了解 		訪客資訊：前接名字，後接對象，結尾空白保留
+went on this journey out of curiosity.	出於好奇而踏上這趟旅程。	出于好奇踏上了这趟旅程。		訪客資訊：前接名字
+ was the place for prayer.	 是祈禱的好地方。	 是祈祷的好地方。		訪客資訊：前接「heard／believes <地點>」
+this	這裡	这里		訪客資訊：「heard this was …」的地點代詞（推斷）；單獨畫出的 this 全域套用
+heard 	聽說 	听说 		訪客資訊：前接名字，後接地點，結尾空白保留
+doesn't feel 	不覺得 	不觉得 		訪客資訊：後接感受（推斷），結尾空白保留
+didn't feel 	當時不覺得 	当时不觉得 		訪客資訊：後接感受（推斷），結尾空白保留
+is in 	處於 	处于 		訪客資訊：後接狀態（推斷），結尾空白保留
+was in 	曾處於 	曾处于 		訪客資訊：後接狀態（推斷），結尾空白保留
+feels 	感到 	感到 		訪客資訊：後接感受（推斷），結尾空白保留
+felt 	感到 	感到 		訪客資訊：後接感受（推斷）；「曾感到」超過 5 格
+is 	是 	是 		訪客資訊：片段（推斷），結尾空白保留
+was 	是 	是 		訪客資訊：片段（推斷）；「曾是」超過 4 格
+You can learn more about this visitor after they chat with a local.	此訪客與本地人聊過之後，就能得知更多資訊。	这位访客与本地人聊过之后，就能了解更多信息。		訪客資訊
+ about the location of 	 要找下落的是：	 要找下落的是：		訪客資訊：接在「is seeking information」之後，再接人或物的名稱
+triumph	勝利	胜利		位置接在訪客資訊之後，語境不明（推斷為感受名詞）

@@ -42,3 +42,4 @@ Zones can be added using the zone menu at the bottom of the screen.	可從畫面
 Back	返回	返回		建築資訊頁的返回鈕（拉桿連結機關後）；整句寫出來，免得引擎把大寫查不到的字退回小寫，套到同字的 raws 名稱（back 身體部位「後部」）
 Clear	清除	清除		命名介面的清除鈕；整句寫出來，免得引擎把大寫查不到的字退回小寫，套到同字的 raws 名稱（clear 顏色「透明」）
 Fly	飛	飞		生物移動方式（爬、走、飛）；整句寫出來，免得引擎把大寫查不到的字退回小寫，套到同字的 raws 名稱（fly 蒼蠅）
+Play	玩耍	玩耍		活動名稱；整句寫出來，免得大寫退回小寫套到著作形式 play「劇本」

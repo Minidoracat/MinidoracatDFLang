@@ -1,0 +1,20 @@
+en	zh-Hant	zh-Hans	align	note
+dye	染料	染料		工作名裡的物品名（染色工作）；原文 3 格，放名稱檔才放得下「染料」
+bed	床	床		工作名裡的物品名（Make 材料 bed）；同 beds
+cabinet	櫥櫃	橱柜		工作名裡的物品名；術語 cabinet
+chair	椅子	椅子		工作名裡的物品名；同 chairs
+chest	箱子	箱子		工作名裡的物品名；術語 chest
+coffin	棺材	棺材		工作名裡的物品名；同 coffins
+coins	錢幣	硬币		工作名裡的物品名（鑄幣）；同 coin
+cups	杯子	杯子		工作名裡的物品名；同 cup
+goblets	高腳杯	高脚杯		工作名裡的物品名；與教學一致
+image	圖案	图案		工作名裡的物品名（推斷 Sew 材料 image：縫上布或皮革圖案）
+mugs	馬克杯	马克杯		工作名裡的物品名；與教學一致
+ore	礦石	矿石		工作名裡的物品名；術語 ore
+sarcophagus	棺材	棺材		工作名裡的物品名；石材材料由前綴提供，避免 Make stone sarcophagus 接成「石石棺」
+table	桌子	桌子		工作名裡的物品名（Make rock table）；同 tables
+toy	玩具	玩具		工作名裡的物品名
+vials	小瓶	小瓶		工作名裡的物品名；同 vial
+waterskins	水袋	水囊		工作名裡的物品名；同 waterskin，兩岸用語不同
+crafts	工藝品	工艺品		工作名稱：Make 材料＋crafts（Make rock crafts 製作岩石工藝品）；同 Crafts
+flasks	水壺	水壶		工作名稱：Make three 材料＋flasks；同 flask
