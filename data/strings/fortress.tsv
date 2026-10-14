@@ -1,0 +1,42 @@
+en	zh-Hant	zh-Hans	align	note
+Preparing map...	正在準備地圖……	正在准备地图……		進入要塞前的載入提示
+Outpost	前哨站	前哨站		左上要塞名稱列第三行：要塞等級（最低一級）
+Pop	人	人		上方資訊列：人口（後接各心情人數）；原文 3 格放不下「人口」
+Food	食物	食物		上方資訊列：存量標題，下方接數字
+Drink	酒類	酒水		上方資訊列：存量標題；矮人的飲料是酒。同一個執行檔字串也是動作／工作名（喝），要依畫面分開翻；引擎還不能分畫面，先用資訊列的譯法
+Meat	肉類	肉类		上方資訊列：存量標題
+Fish	魚類	鱼类		上方資訊列：存量標題
+Plant	植物	植物		上方資訊列：存量標題
+None	無	无		上方資訊列：沒有該項存量；也用於其他「無」的設定值
+Stocks	庫存	库存	c	上方資訊列按鈕：開啟庫存畫面
+Spring	春季	春季		季節名；也填入抵達段落「現在還是{2}」
+Summer	夏季	夏季		季節名；也填入抵達段落「現在還是{2}」
+Autumn	秋季	秋季		季節名；也填入抵達段落「現在還是{2}」
+Winter	冬季	冬季		季節名；也填入抵達段落「現在還是{2}」
+Early Spring	初春	初春		右上日期：季節前後段（遊戲以 Early /Mid-/Late 加季節名組成）
+Mid-Spring	仲春	仲春		右上日期：季節前後段（遊戲以 Early /Mid-/Late 加季節名組成）
+Late Spring	晚春	晚春		右上日期：季節前後段（遊戲以 Early /Mid-/Late 加季節名組成）
+Early Summer	初夏	初夏		右上日期：季節前後段（遊戲以 Early /Mid-/Late 加季節名組成）
+Mid-Summer	仲夏	仲夏		右上日期：季節前後段（遊戲以 Early /Mid-/Late 加季節名組成）
+Late Summer	晚夏	晚夏		右上日期：季節前後段（遊戲以 Early /Mid-/Late 加季節名組成）
+Early Autumn	初秋	初秋		右上日期：季節前後段（遊戲以 Early /Mid-/Late 加季節名組成）
+Mid-Autumn	仲秋	仲秋		右上日期：季節前後段（遊戲以 Early /Mid-/Late 加季節名組成）
+Late Autumn	晚秋	晚秋		右上日期：季節前後段（遊戲以 Early /Mid-/Late 加季節名組成）
+Early Winter	初冬	初冬		右上日期：季節前後段（遊戲以 Early /Mid-/Late 加季節名組成）
+Mid-Winter	仲冬	仲冬		右上日期：季節前後段（遊戲以 Early /Mid-/Late 加季節名組成）
+Late Winter	晚冬	晚冬		右上日期：季節前後段（遊戲以 Early /Mid-/Late 加季節名組成）
+Creatures	生物	生物		資訊面板分頁
+Tasks	任務	任务		資訊面板分頁
+Places	設施	设施		資訊面板分頁：內含區域、場所、倉儲區、工坊、農田、攻城器械
+Work orders	工作指令	工作订单		資訊面板分頁
+Nobles and administrators	貴族與管理者	贵族与管理人员		資訊面板分頁
+Objects	物品	物品		資訊面板分頁
+Justice	司法	司法		資訊面板分頁
+Zones	區域	区域		設施子分頁：劃設的區域（會議區、牧場等）
+Locations	場所	场所		設施子分頁：酒館、神殿、圖書館等指定給區域的場所
+Stockpiles	倉儲區	储物区		設施子分頁
+Workshops	工坊	工坊		設施子分頁
+Farm plots	農田	农田		設施子分頁
+Siege engines	攻城器械	攻城器械		設施子分頁
+You do not have any zones.	目前沒有任何區域。	你还没有划定任何区域。		設施 > 區域 空清單提示
+Zones can be added using the zone menu at the bottom of the screen.	可從畫面下方的區域選單新增區域。	可通过屏幕底部的区域菜单添加区域。		設施 > 區域 空清單提示第二句

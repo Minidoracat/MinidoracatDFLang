@@ -1,0 +1,20 @@
+en	zh-Hant	zh-Hans	align	note
+Nearest site: {1} NE	最近據點：往東北{1}	最近据点：向东北{1}		地點資訊：鄰近文明的最近據點；{1} 是 A day's travel 等距離（strings）
+Nearest site: {1} NW	最近據點：往西北{1}	最近据点：向西北{1}		同上
+Nearest site: {1} SE	最近據點：往東南{1}	最近据点：向东南{1}		同上
+Nearest site: {1} SW	最近據點：往西南{1}	最近据点：向西南{1}		同上
+Nearest site: {1} north	最近據點：往北{1}	最近据点：向北{1}		同上；正方位用完整英文字
+Nearest site: {1} south	最近據點：往南{1}	最近据点：向南{1}		同上
+Nearest site: {1} east	最近據點：往東{1}	最近据点：向东{1}		同上
+Nearest site: {1} west	最近據點：往西{1}	最近据点：向西{1}		同上
+Nearest site: {1}	最近據點：{1}	最近据点：{1}		同上，沒有方位時
+{#1} days' travel	{1} 天路程	{1} 天路程		距離（數天）
+Hostile, {1}	敵對，{1}	敌对，{1}		鄰近文明人數前加敵對；{1} 是 a hundred 等（strings，小寫）
+  Prepare for the Journey to {1}  	  準備前往{1}的旅程  	  准备前往{1}的旅程  	c	謹慎準備畫面標題；{1} 是地區名
+  Prepare for the Expedition to {1}  	  準備遠征{1}  	  准备远征{1}  	c	同上，收復要塞時
+{1}, Peasant	{1}，平民	{1}，平民		矮人分頁：名字加職業
+Skills ({#1})	技能（{1}）	技能（{1}）	c	矮人列的按鈕，括號內是技能點數
+{#1} pts	{1} 點	{1} 点	r	物品／動物的點數
+  {#1} points remain!	  剩餘 {1} 點！	  剩余 {1} 点！		Are you sure? 後面的提醒：點數沒用完
+  {#1} unpicked skills!	  {1} 點技能尚未分配！	  {1} 点技能尚未分配！		同上：技能點沒用完
+  {#1} unpicked skill!	  {1} 點技能未分配！	  {1} 点技能未分配！		同上，單數；原文少一格，放不下「尚」

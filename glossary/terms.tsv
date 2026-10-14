@@ -18,3 +18,111 @@ range	範圍	范围	ui	draft		Archery range 是射箭場、聲音的 range 是�
 default	預設	默认	ui	draft		default Wagon、default cultural value 不是設定值，不全域強制
 automatic	自動	自动	ui	approved		
 forgotten beast	遺忘巨獸	遗忘巨兽	creature	approved	dfzh-wiki	隨機生成的地底巨獸
+Mountainhome	山之家	山之家	game	approved	dfzh-wiki	矮人文明的首都；要塞發展的最終目標
+outpost	前哨站	前哨站	game	approved		要塞的初始等級；歡迎段落、抵達段落都用「前哨站」
+aquifer	含水層	含水层	game	approved		Light／Heavy／Varied aquifer＝輕度／重度／混合含水層
+stockpile	倉儲區	储物区	game	approved		玩家劃設的物資存放區
+workshop	工坊	工坊	game	approved		製作物品的建築
+work order	工作指令	工作订单	game	approved		工坊的自動化工作；兩岸用語不同
+Strike the earth!	開鑿大地！	开凿大地！	game	approved		抵達要塞段落結尾的招牌口號
+Untamed wilds	未開化荒野|未開化的荒野	未开化荒野|未开化的荒野	game	approved		世界生成與出發地點的周遭環境選項
+autosave	自動存檔	自动存档	ui	approved		簡中名詞用「存档」
+strange mood	奇異心境	奇异心境	game	draft		矮人著魔打造神器；設定的 artifact moods 也用這個譯名
+embark	出發	出发	game	draft		帶隊出發建立要塞；「不能在其他據點上建立要塞」這類句子不必含「出發」
+site	據點	据点	game	draft		世界上的城鎮、要塞、洞穴等地點；embark site 是「出發地點」
+zone	區域	区域	game	draft		要塞的活動區域；個別區域名可能只用「區」
+elevation	高度	高度	game	draft		要塞的 Z 軸層數；世界地圖的 Show elevation 是「海拔」
+Granite	花崗岩	花岗岩	calendar	approved		矮人曆第 1 個月，也是岩石名；月名不加「月」
+Slate	板岩	板岩	calendar	approved		矮人曆第 2 個月，也是岩石名
+Felsite	霏細岩	霏细岩	calendar	approved		矮人曆第 3 個月，也是岩石名
+Hematite	赤鐵礦	赤铁矿	calendar	approved		矮人曆第 4 個月，也是礦物名
+Malachite	孔雀石	孔雀石	calendar	approved		矮人曆第 5 個月，也是礦物名
+Galena	方鉛礦	方铅矿	calendar	approved		矮人曆第 6 個月，也是礦物名
+Limestone	石灰岩	石灰岩	calendar	approved		矮人曆第 7 個月，也是岩石名
+Sandstone	砂岩	砂岩	calendar	approved		矮人曆第 8 個月，也是岩石名
+Timber	木材	木材	calendar	approved		矮人曆第 9 個月；timber 是木材，不是林木
+Moonstone	月光石	月光石	calendar	approved		矮人曆第 10 個月，也是礦物名
+Opal	歐泊	欧泊	calendar	approved		矮人曆第 11 個月，也是寶石名；原文只有 4 格，不用「蛋白石」
+Obsidian	黑曜石	黑曜石	calendar	approved		矮人曆第 12 個月，也是岩石名
+Greed	貪婪	贪婪	title	approved		標題副標題前詞
+Avarice	貪財	贪财	title	approved		標題副標題前詞
+Jealousy	嫉妒	嫉妒	title	approved		標題副標題前詞
+Cupidity	貪欲	贪欲	title	approved		標題副標題前詞
+Gluttony	暴食	暴食	title	approved		標題副標題前詞
+Industry	勤勉	勤勉	title	draft		標題副標題後詞；產業義另譯
+Enterprise	進取	进取	title	draft		標題副標題後詞；企業、事業義另譯
+Resourcefulness	機智	机智	title	draft		標題副標題後詞；其他語境可依應變能力另譯
+Determination	決心	决心	title	draft		標題副標題後詞；判定、決定義另譯
+Mettle	氣魄	气魄	title	approved		標題副標題後詞
+Dynamism	活力	活力	title	draft		標題副標題後詞；動力、動態義另看語境
+Labor	勞動	劳动	title	draft		標題副標題後詞；勞動選單、工作分配（labors）另看語境
+Toil	辛勞	辛劳	title	draft		標題副標題後詞；動詞 toil 不套用
+Diligence	勤奮	勤奋	title	approved		標題副標題後詞
+Exertion	努力	努力	title	draft		標題副標題後詞；戰鬥中的體力消耗另譯
+Tenacity	堅韌	坚韧	title	approved		標題副標題後詞
+Perseverance	毅力	毅力	title	approved		標題副標題後詞；人格價值觀也用
+Peasant	平民	平民	skill	draft	dfzh-wiki	沒有專長的矮人
+Miner	礦工	矿工	skill	draft		技能／職業名
+Woodcutter	伐木工	伐木工	skill	draft		技能／職業名
+Carpenter	木匠	木匠	skill	draft		技能／職業名
+Mason	石匠	石匠	skill	draft		技能／職業名
+Weaponsmith	武器匠	武器匠	skill	draft		技能／職業名
+Bowyer	弓弩匠	弓弩匠	skill	draft		技能／職業名：製作弓與弩
+Armorsmith	盔甲匠	盔甲匠	skill	draft		技能／職業名
+Blacksmith	鐵匠	铁匠	skill	draft		技能／職業名
+Furnace Operator	熔爐工	熔炉工	skill	draft		技能／職業名：操作熔爐冶煉
+Wood Burner	燒炭工	烧炭工	skill	draft		技能／職業名
+Fisherdwarf	漁夫	渔夫	skill	draft		技能／職業名
+Butcher	屠夫	屠夫	skill	draft		技能／職業名；動詞「屠宰」另譯
+Planter	播種者	播种者	skill	draft		技能／職業名：播種作物
+Brewer	釀酒師	酿酒师	skill	draft		技能／職業名
+Gem Cutter	寶石切割師	宝石切割师	skill	draft		技能／職業名
+Gem Setter	寶石鑲嵌師	宝石镶嵌师	skill	draft		技能／職業名
+Mechanic	機械師	机械师	skill	draft		技能／職業名
+Potter	陶藝師	陶艺师	skill	draft		技能／職業名
+Glazer	上釉工	上釉工	skill	draft		技能／職業名
+Papermaker	造紙工	造纸工	skill	draft		技能／職業名
+Bookbinder	裝訂工	装订工	skill	draft		技能／職業名
+Wax Worker	蠟工	蜡工	skill	draft		技能／職業名
+Miller	磨坊工	磨坊工	skill	draft		技能／職業名
+Thresher	脫粒工	脱粒工	skill	draft		技能／職業名
+Herbalist	草藥師	草药师	skill	draft		技能／職業名：採集植物
+Cook	廚師	厨师	skill	draft		技能／職業名；動詞「烹煮」另譯
+Weaver	織工	织工	skill	draft		技能／職業名
+Clothier	裁縫	裁缝	skill	draft		技能／職業名
+Dyer	染工	染工	skill	draft		技能／職業名
+Trapper	捕獸人	捕兽人	skill	draft		技能／職業名
+Ambusher	伏擊者	伏击者	skill	draft		技能／職業名
+Tanner	製革工	制革工	skill	draft		技能／職業名
+Axedwarf	斧手	斧手	skill	draft		戰鬥技能職業名
+Swordsdwarf	劍士	剑士	skill	draft		戰鬥技能職業名
+Macedwarf	釘錘手	钉锤手	skill	draft		戰鬥技能職業名
+Hammerdwarf	戰錘手	战锤手	skill	draft		戰鬥技能職業名
+Speardwarf	矛手	矛手	skill	draft		戰鬥技能職業名
+Marksdwarf	弩手	弩手	skill	draft		戰鬥技能職業名
+Shield User	盾牌手	盾牌手	skill	draft		戰鬥技能職業名
+Armor User	披甲者	披甲者	skill	draft		戰鬥技能職業名
+Fighter	戰士	战士	skill	draft		戰鬥技能職業名
+Archer	射手	射手	skill	draft		戰鬥技能職業名
+Wrestler	摔角手	摔跤手	skill	draft		戰鬥技能職業名；兩岸用語不同
+Striker	打擊手	打击手	skill	draft		戰鬥技能職業名：徒手打擊，不限拳擊
+Kicker	踢擊手	踢击手	skill	draft		戰鬥技能職業名
+Biter	撕咬	撕咬	skill	draft		戰鬥技能職業名；原文 5 格只放得下兩字
+Dodger	閃避者	闪避者	skill	draft		戰鬥技能職業名
+Siege Engineer	攻城器械師	攻城器械师	skill	draft		技能／職業名
+Swimmer	游泳者	游泳者	skill	draft		技能／職業名
+Wound Dresser	包紮師	包扎师	skill	draft		醫療技能職業名
+Diagnostician	診斷醫師	诊断医师	skill	draft		醫療技能職業名
+Surgeon	外科醫	外科医	skill	draft		醫療技能職業名；原文 7 格放不下「外科醫師」
+Bone Doctor	骨科醫師	骨科医师	skill	draft		醫療技能職業名
+Suturer	縫合師	缝合师	skill	draft		醫療技能職業名
+Crutch-walker	拄拐者	拄拐者	skill	draft		技能／職業名
+Persuader	說服者	说服者	skill	draft		社交技能職業名
+Negotiator	談判者	谈判者	skill	draft		社交技能職業名
+Liar	騙子	骗子	skill	draft		社交技能職業名
+Intimidator	威嚇者	威吓者	skill	draft		社交技能職業名
+Judge of Intent	察言觀色者	察言观色者	skill	draft		社交技能職業名：判讀他人意圖
+Appraiser	估價師	估价师	skill	draft		技能／職業名
+Organizer	組織者	组织者	skill	draft		技能／職業名
+Record Keeper	記錄員	记录员	skill	draft		技能／職業名
+Conversationalist	健談者	健谈者	skill	draft		社交技能職業名

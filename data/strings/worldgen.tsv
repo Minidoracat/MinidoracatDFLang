@@ -1,0 +1,127 @@
+en	zh-Hant	zh-Hans	align	note
+Prepare to guide your stout charges to fortune in a world fraught with many perils. You'll begin by creating your world and watching the region's history unfold. Once this process is complete, you can prepare a group and send them out to seek wealth deep in the mountains. As you dig deeper and more citizens take up residence in your outpost, your doings will attract attention, both wanted and unwanted. Deal with challenges as they arise, and you might one day find that your humble settlement has grown to become a Mountainhome, the center of your civilization.	準備帶領你那群矮壯的部下，在險象環生的世界裡追尋財富。一開始要先建立世界，看著這片地區的歷史逐步展開。完成之後，就能組一支隊伍，派他們深入山中尋找財富。隨著你越挖越深，越來越多居民在前哨站定居，你的一舉一動也會引來各方注意，有歡迎的，也有不請自來的。挑戰出現時見招拆招，或許有一天你會發現，當初簡陋的聚落已經成長為山之家，成為整個文明的中心。	准备带领你那群矮壮的部下，在危机四伏的世界里追寻财富。一开始要先创建世界，看着这片地区的历史逐步展开。完成之后，就能组建一支队伍，派他们深入山中寻找财富。随着你越挖越深，越来越多的居民在前哨站定居，你的一举一动也会引来各方关注，有受欢迎的，也有不请自来的。挑战出现时见招拆招，也许有一天你会发现，当初简陋的定居点已经成长为山之家，成为整个文明的中心。		建立世界畫面第一次開啟時的「歡迎來到矮人要塞」視窗內文（自動換行段落，原文是引擎把單字接回的整段）
+Loading...	載入中……	加载中……		
+Create world	建立世界	创建世界	c	世界生成參數底部按鈕
+Detailed mode	詳細模式	详细模式	c	世界生成參數底部按鈕；進入進階參數
+Back to main menu	回到主選單	返回主菜单	c	世界生成參數底部按鈕
+World map size	世界地圖大小	世界地图大小		世界生成參數
+Pocket	迷你	袖珍		世界生成參數：世界大小選項
+Smaller	較小	较小		世界生成參數：世界大小選項
+Small	小	小		世界生成參數：世界大小選項
+Medium	中等	中等		世界生成參數：大小、數量的中間選項
+Large	大	大		世界生成參數：世界大小選項
+History length	歷史長度	历史长度		世界生成參數
+5 years	5 年	5 年		世界生成參數：歷史長度選項
+50 years	50 年	50 年		世界生成參數：歷史長度選項
+100 years	100 年	100 年		世界生成參數：歷史長度選項
+250 years	250 年	250 年		世界生成參數：歷史長度選項
+500 years	500 年	500 年		世界生成參數：歷史長度選項
+Number of civilizations	文明數量	文明数量		世界生成參數
+Very low	極低	极低		世界生成參數：數量選項
+Low	低	低		世界生成參數：數量選項
+High	高	高		世界生成參數：數量選項
+Very high	極高	极高		世界生成參數：數量選項
+Maximum number of sites	據點數量上限	据点数量上限		世界生成參數；site 指城鎮、要塞、洞穴等地點
+Number of beasts	巨獸數量	巨兽数量		世界生成參數；beasts 指泰坦、巨像等巨獸與半巨獸，故不譯「野獸」
+Natural savagery	自然野性	自然野性		世界生成參數；地區野性程度，影響野生動物與邪惡地區
+Real world extinct creatures	現實世界中已滅絕的生物	现实世界中已灭绝的生物		世界生成參數；猛獁象等現實已滅絕物種
+They are only found in the untamed wilds.	牠們只出現在未開化的荒野。	它们只出现在未开化的荒野中。		世界生成參數：已滅絕生物選 Untamed wilds 時的說明；繁中動物用「牠」
+Extinct	已滅絕	已灭绝		世界生成參數：已滅絕生物選項
+Isolated	零星分布	零星分布		世界生成參數：已滅絕生物選項；只在孤立的地方出現
+Untamed wilds	未開化荒野	未开化荒野		世界生成參數：已滅絕生物選項
+Any wilderness	所有荒野	所有荒野		世界生成參數：已滅絕生物選項
+Domesticated	已馴化	已驯化		世界生成參數：已滅絕生物選項；可當家畜飼養
+Mineral occurrence	礦物分布	矿物分布		世界生成參數
+Very rare	極稀少	极稀少		世界生成參數：礦物分布選項
+Rare	稀少	稀少		世界生成參數：礦物分布選項
+Sparse	稀疏	稀疏		世界生成參數：礦物分布選項
+Frequent	常見	常见		世界生成參數：礦物分布選項
+Everywhere	隨處可見	随处可见		世界生成參數：礦物分布選項
+Okay	確定	确定	c	彈出視窗按鈕
+Created By	遊戲製作	游戏制作	c	關於畫面職稱；下一行是 Tarn and Zach Adams（人名不翻）
+Artwork	美術	美术	c	關於畫面職稱
+Audio Director	音效總監	音频总监	c	關於畫面職稱
+Music By	音樂製作	音乐制作	c	關於畫面職稱
+In such a young world certain game elements will not be available.	世界如此年輕，部分遊戲內容將無法使用。	世界尚且年轻，部分游戏内容将无法使用。		歷史長度選 5 年等新世界時的提示
+Loading data needed to create new world	正在載入建立新世界所需的資料	正在加载创建新世界所需的数据		載入畫面
+Initializing music load...	正在初始化音樂載入……	正在初始化音乐加载……		載入畫面
+Loading object files...  	正在載入物件檔……  	正在加载对象文件……  		載入畫面；後接模組名稱，結尾兩個空白保留
+Vanilla Text	原版文字	原版文本		載入畫面：內建模組名稱
+Vanilla Languages	原版語言	原版语言		載入畫面：內建模組名稱
+Vanilla Descriptors	原版描述詞	原版描述词		載入畫面：內建模組名稱；顏色、形狀等描述用語
+Vanilla Materials	原版材料	原版材料		載入畫面：內建模組名稱
+Vanilla Environment	原版環境	原版环境		載入畫面：內建模組名稱
+Vanilla Plants	原版植物	原版植物		載入畫面：內建模組名稱
+Vanilla Items	原版物品	原版物品		載入畫面：內建模組名稱
+Vanilla Buildings	原版建築	原版建筑		載入畫面：內建模組名稱
+Vanilla Bodies	原版身體結構	原版身体结构		載入畫面：內建模組名稱
+Vanilla Creatures	原版生物	原版生物		載入畫面：內建模組名稱
+Vanilla Extinct Creatures	原版已滅絕生物	原版已灭绝生物		載入畫面：內建模組名稱
+Vanilla Entities	原版實體	原版实体		載入畫面：內建模組名稱；entity 是文明種族定義
+Vanilla Reactions	原版反應	原版反应		載入畫面：內建模組名稱；工坊配方
+Vanilla Interactions	原版互動	原版交互		載入畫面：內建模組名稱；法術、吸血鬼等互動效果
+Vanilla Descriptors Graphics	原版描述詞圖形	原版描述词图形		載入畫面：內建模組名稱
+Vanilla Plants Graphics	原版植物圖形	原版植物图形		載入畫面：內建模組名稱
+Vanilla Items Graphics	原版物品圖形	原版物品图形		載入畫面：內建模組名稱
+Vanilla Buildings Graphics	原版建築圖形	原版建筑图形		載入畫面：內建模組名稱
+Vanilla Creatures Graphics	原版生物圖形	原版生物图形		載入畫面：內建模組名稱
+Vanilla Extinct Creatures Graphics	原版已滅絕生物圖形	原版已灭绝生物图形		載入畫面：內建模組名稱
+Vanilla Interactions Graphics	原版互動圖形	原版交互图形		載入畫面：內建模組名稱
+Vanilla World Map	原版世界地圖	原版世界地图		載入畫面：內建模組名稱
+Vanilla Interface	原版介面	原版界面		載入畫面：內建模組名稱
+Vanilla Music	原版音樂	原版音乐		載入畫面：內建模組名稱
+Vanilla Procedural Objects	原版程序化生成物件	原版程序化生成物		載入畫面：內建模組名稱；程序化生成的生物、互動等（procedural 不是隨機）
+Processing inorganics...	正在處理無機物……	正在处理无机物……		載入畫面
+Processing items...	正在處理物品……	正在处理物品……		載入畫面
+Processing entities...	正在處理實體……	正在处理实体……		載入畫面
+Processing interactions...	正在處理互動……	正在处理交互……		載入畫面
+Finalizing descriptors...	正在完成描述詞……	正在完成描述词……		載入畫面
+Finalizing entities...	正在完成實體……	正在完成实体……		載入畫面
+Finalizing reactions...	正在完成反應……	正在完成反应……		載入畫面
+Preparing graphics...  	正在準備圖形……  	正在准备图形……  		載入畫面；結尾兩個空白保留
+Finalizing...	即將完成……	即将完成……		載入畫面
+Creating 	正在建立 	正在创建 		世界生成畫面首行片段，後接世界名稱
+Preparing elevation...	正在準備地勢高度……	正在准备地势高度……		世界生成畫面
+Setting temperature...	正在設定氣溫……	正在设置气温……		世界生成畫面
+ rejected)	 個被捨棄)	 个被舍弃)		世界生成畫面首行結尾：(45 rejected) 是不符參數被捨棄的世界數；左括號由遊戲畫成半形，右括號跟著用半形
+Running rivers...	正在形成河流……	正在生成河流……		世界生成畫面
+Growing vegetation...	正在生長植被……	正在生长植被……		世界生成畫面
+Verifying terrain...	正在驗證地形……	正在验证地形……		世界生成畫面
+Recounting legends...	正在講述傳說……	正在讲述传说……		世界生成畫面：歷史模擬開始前
+Making cave pops...	生成洞穴生物群……	生成洞穴生物群……		世界生成畫面；pops = populations；寬度不夠放「正在」
+Historical figures: 	歷史人物： 	历史人物： 		世界生成畫面；後接數字，結尾空白保留
+   Events: 	   事件： 	   事件： 		世界生成畫面；後接數字，開頭三格縮排與結尾空白保留
+Finalizing civ mats... (	正在完成文明材料…… (	正在完成文明材料…… (		世界生成畫面；後接進度數字與右括號
+Finalizing art... (	正在完成藝術…… (	正在完成艺术…… (		世界生成畫面；後接進度數字與右括號；art 含藝術形式與藝術品
+Finalizing uniforms... (	正在完成制服…… (	正在完成制服…… (		世界生成畫面；後接進度數字與右括號
+Finalizing sites... (	正在完成據點…… (	正在完成据点…… (		世界生成畫面；後接進度數字與右括號
+Play now	開始遊戲	开始游戏	c	世界生成畫面完成後按鈕
+Keep world and return to main menu	保留世界並回到主選單	保留世界并返回主菜单	c	世界生成畫面完成後按鈕
+To recenter, press 	要重新置中，請按 	要重新居中，请按 		世界生成畫面底部提示；後接按鍵 wasd
+ or hold+drag the middle mouse button.	 或按住滑鼠中鍵拖曳。	 或按住鼠标中键拖动。		世界生成畫面底部提示；接在按鍵 wasd 之後
+Saving world	正在儲存世界	正在保存世界		存檔畫面
+Preliminary cleaning...	正在進行初步清理……	正在进行初步清理……		存檔畫面
+Offloading units... 	正在移出單位…… 	正在卸载单位…… 		存檔畫面：把單位資料移出記憶體；繁中不用「卸載」（台灣軟體語境會讀成解除安裝）；結尾空白保留
+Opening file...	開啟檔案……	打开文件……		存檔畫面；寬度不夠放「正在」
+Sorting world information...	正在整理世界資訊……	正在整理世界信息……		存檔畫面
+Saving coin information...	正在儲存錢幣資訊……	正在保存货币信息……		存檔畫面
+Saving civilized populations...	正在儲存文明人口……	正在保存文明人口……		存檔畫面
+Saving parameters...	正在儲存參數……	正在保存参数……		存檔畫面
+Saving occupations...	正在儲存職業……	正在保存职业……		存檔畫面
+Select a game type to begin!	請選擇遊戲模式！	请选择游戏模式！	c	選擇遊戲類型畫面標題
+Adventurer	冒險者	冒险者	c	選擇遊戲類型：冒險者模式
+Legends	傳說	传说	c	選擇遊戲類型：傳說模式
+Back to title menu	回到標題畫面	返回主菜单	c	選擇遊戲類型畫面按鈕；title menu 用術語表譯名
+Passing a few weeks to get things ready...	正在度過幾週，讓一切就緒……	正在度过几周，让一切就绪……		進入新世界前的準備畫面
+Granite	花崗岩	花岗岩		矮人曆第 1 個月，也是岩石名；月名一律用完整岩石／礦物名、不加「月」（Slate、Opal 原文只有 4～5 格）
+Slate	板岩	板岩		矮人曆第 2 個月，也是岩石名；月名一律用完整岩石／礦物名、不加「月」
+Felsite	霏細岩	霏细岩		矮人曆第 3 個月，也是岩石名；月名一律用完整岩石／礦物名、不加「月」
+Hematite	赤鐵礦	赤铁矿		矮人曆第 4 個月，也是礦物名；月名一律用完整岩石／礦物名、不加「月」
+Malachite	孔雀石	孔雀石		矮人曆第 5 個月，也是礦物名；月名一律用完整岩石／礦物名、不加「月」
+Galena	方鉛礦	方铅矿		矮人曆第 6 個月，也是礦物名；月名一律用完整岩石／礦物名、不加「月」
+Limestone	石灰岩	石灰岩		矮人曆第 7 個月，也是岩石名；月名一律用完整岩石／礦物名、不加「月」
+Sandstone	砂岩	砂岩		矮人曆第 8 個月，也是岩石名；月名一律用完整岩石／礦物名、不加「月」
+Timber	木材	木材		矮人曆第 9 個月；timber 是木材，不是林木
+Moonstone	月光石	月光石		矮人曆第 10 個月，也是礦物名；月名一律用完整岩石／礦物名、不加「月」
+Opal	歐泊	欧泊		矮人曆第 11 個月，也是寶石名；原文只有 4 格，用兩字音譯，不用「蛋白石」
+Obsidian	黑曜石	黑曜石		矮人曆第 12 個月，也是岩石名；月名一律用完整岩石／礦物名、不加「月」

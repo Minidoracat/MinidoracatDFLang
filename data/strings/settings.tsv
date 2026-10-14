@@ -25,3 +25,75 @@ Maximum interface percentage (not counting minimap/elevation)	介面最大寬度
 Graphical FPS cap (default 50)	畫面 FPS 上限（預設 50）	画面 FPS 上限（默认 50）		畫面設定
 Use Classic ASCII glyphs	使用經典 ASCII 字形	使用经典 ASCII 字形		畫面設定；glyph 是字形（顯示外觀），不是字元
 Scaling mode	縮放模式	缩放模式		畫面設定；貼圖縮放方式
+Display all errorlogs on screen	在畫面上顯示所有錯誤記錄	在屏幕上显示所有错误日志		遊戲設定
+Portable mode	可攜模式	便携模式		遊戲設定；存檔與設定放在遊戲資料夾
+Autosave frequency	自動存檔頻率	自动存档频率		遊戲設定
+Semiannual	每半年	每半年		遊戲設定值；自動存檔頻率
+Autosave the game after embark	出發後自動存檔	出发后自动存档		遊戲設定；embark＝帶隊出發建立要塞
+Pause after every autosave	每次自動存檔後暫停	每次自动存档后暂停		遊戲設定
+Pause after loading	載入後暫停	加载后暂停		遊戲設定
+Confirmation window for all embarks	每次出發都顯示確認視窗	每次出发都显示确认窗口		遊戲設定
+Prepare carefully embark confirmation	「謹慎準備」出發確認	“精心准备”出发确认		遊戲設定；出發準備畫面選 Prepare carefully 時是否確認
+If points remain	尚有剩餘點數時	尚有剩余点数时		遊戲設定值；謹慎準備還有點數沒花完時才確認
+Show tunnels on world map	在世界地圖上顯示隧道	在世界地图上显示隧道		遊戲設定
+In site finder	僅限選址工具	仅限选址工具		遊戲設定值；只在出發選址的搜尋工具中顯示隧道
+Enable temperature	啟用溫度	启用温度		遊戲設定
+Enable weather	啟用天氣	启用天气		遊戲設定
+Enable caveins	啟用坍方	启用塌方		遊戲設定；cave-in 地道坍塌
+Enable artifact moods	啟用奇異心境	启用奇异心境		遊戲設定；strange mood，矮人著魔打造神器；譯名參考 dfzh-wiki
+Enable testing arena (on next title)	啟用測試競技場（回標題畫面後生效）	启用测试竞技场（返回主菜单后生效）		遊戲設定；下次回到標題畫面才出現競技場模式
+Walking spreads spatter (fort mode)	行走時散播汙漬（要塞模式）	行走时扩散污渍（要塞模式）		遊戲設定；血跡、嘔吐物等汙漬被踩著帶走
+Walking spreads spatter (adv mode)	行走時散播汙漬（冒險模式）	行走时扩散污渍（冒险模式）		遊戲設定
+Keyboard cursor enabled	啟用鍵盤游標	启用键盘光标		遊戲設定
+Log world generation map rejects	記錄世界生成時捨棄的地圖	记录世界生成时舍弃的地图		遊戲設定；生成世界時不合格被重來的地圖寫進記錄檔
+Enable multithreading	啟用多執行緒	启用多线程		遊戲設定
+General	一般	通用		按鍵設定分類
+Fortress	要塞	要塞		按鍵設定分類
+Building	建築	建筑		按鍵設定分類；建造建築時的按鍵
+Text entry	文字輸入	文本输入		按鍵設定分類
+Macros	巨集	宏		按鍵設定分類
+Select	選擇	选择		按鍵設定動作
+Add	加	加		按鍵設定；為動作新增一組按鍵的按鈕；原文 3 格只放得下一個字
+Don't repeat	不重複	不重复		按鍵設定；按住按鍵時不連發
+Secondary Select	次要選擇	次要选择		按鍵設定動作
+Deselect	取消選擇	取消选择		按鍵設定動作
+Select all	全選	全选		按鍵設定動作
+Leave screen	離開畫面	离开界面		按鍵設定動作；關閉目前畫面
+Close mega announcement	關閉重大通知	关闭重大通知		按鍵設定動作；mega announcement 是蓋住畫面的大型通知視窗
+Main menu	主選單	主菜单		按鍵設定動作；開啟遊戲中的主選單（存檔、設定、離開）
+Toggle Fullscreen	切換全螢幕	切换全屏		按鍵設定動作
+Zoom In	放大	放大		按鍵設定動作
+Delayed repeat	延遲重複	延迟重复		按鍵設定；按住一陣子後才連發
+Zoom Out	縮小	缩小		按鍵設定動作
+Increase FPS limit	提高 FPS 上限	提高 FPS 上限		按鍵設定動作
+Decrease FPS limit	降低 FPS 上限	降低 FPS 上限		按鍵設定動作
+Change tab or highlight selection	切換分頁或標示選取項目	切换标签页或高亮选中项		按鍵設定動作；Tab 鍵
+Restore defaults	恢復預設值	恢复默认值		按鍵設定按鈕
+Name	名稱	名称		通知設定欄名
+Popup	彈出	弹窗		通知設定欄名；跳出通知視窗
+Pause	暫停	暂停		通知設定欄名
+Recenter	視角置中	镜头居中		通知設定欄名；畫面移到事件位置
+Adv	冒	冒		通知設定欄名；冒險模式，欄寬只有 3 格
+Fort	要塞	要塞		通知設定欄名；要塞模式
+Report	報告	报告		通知設定欄名；加入單位的戰鬥報告
+Report 	報告 	报告 		通知設定欄名 Report (Active) 換行後的上半段，結尾空白保留
+(Active)	（交戰）	（交战）		通知設定欄名 Report (Active) 換行後的下半段；單位已在交戰中才加入報告
+Report (Active)	報告（交戰中）	报告（交战中）		通知設定欄名未換行時；單位已在交戰中才加入戰鬥報告
+Alert	警示	警报		通知設定欄名；畫面左側的警示圖示
+Weapon twist	武器扭轉	武器扭转		戰鬥通知類型；扭轉卡在傷口裡的武器（事件名，主謂式）
+Drop item	物品脫手	物品脱手		戰鬥通知類型；被打到手上物品掉落
+Charge	衝鋒	冲锋		戰鬥通知類型
+Surprised	遭偷襲	遭偷袭		戰鬥通知類型；被沒察覺的對手攻擊
+Jump-dodge (proj)	跳閃（投射物）	跳闪（投射物）		戰鬥通知類型；跳開閃避投射物
+Jump-dodge (strike)	跳閃（近戰）	跳闪（近战）		戰鬥通知類型；跳開閃避近戰攻擊
+Dodge	閃避	闪避		戰鬥通知類型
+Counterstrike	反擊	反击		戰鬥通知類型
+Block	格擋	格挡		戰鬥通知類型；用盾牌等擋下
+Parry	招架	招架		戰鬥通知類型；用武器架開
+(Charge) Collision	（衝鋒）碰撞	（冲锋）碰撞		戰鬥通知類型
+(Charge) (D) Tumble	（衝鋒）守方翻滾	（冲锋）守方翻滚		戰鬥通知類型；(D)＝防守方（被衝撞的一方）
+(Charge) (D) Knocked over	（衝鋒）守方被撞倒	（冲锋）守方被撞倒		戰鬥通知類型；(D)＝防守方
+Combat	戰鬥	战斗		通知設定分類篩選
+Adventure	冒險	冒险		通知設定分類篩選；冒險模式的通知
+Other	其他	其他		通知設定分類篩選
+All	全	全		通知設定分類篩選；原文 3 格只放得下一個字

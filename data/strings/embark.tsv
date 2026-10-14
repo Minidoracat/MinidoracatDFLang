@@ -1,0 +1,214 @@
+en	zh-Hant	zh-Hans	align	note
+Find embark location	尋找出發地點	寻找出发地点	c	出發地點地圖畫面右下按鈕
+Choose origin civilization	選擇出身文明	选择出身文明	c	同上；選擇隊伍所屬的文明
+Click the map to zoom in and choose your embark location.	點一下地圖放大，再選擇出發地點。	点击地图放大，然后选择出发地点。		出發地點地圖下方提示框
+On your own!	自力更生！	全靠你自己！	c	首次選地點的提示視窗標題（沒有教學引導）
+If this is your first time playing, please heed the embark warnings about aquifers, saltwater, and other hazards. Some locations are challenging even for experienced players, and it will be a very short game indeed if you don't know how to deal with them! [B] After you embark, help is available by pressing the help button in the top right corner, including all of the tutorials.	如果這是你第一次玩，請留意出發時關於含水層、鹽水和其他危險的警告。有些地點連老手都覺得棘手，要是不知道怎麼應付，這局很快就會結束！[B]出發之後，按右上角的說明按鈕就能取得協助，所有教學也都在那裡。	如果这是你第一次玩，请留意出发时关于含水层、咸水和其他危险的警告。有些地点连老玩家都觉得棘手，如果不知道如何应对，这局游戏很快就会结束！[B]出发后，点击右上角的帮助按钮即可获得帮助，所有教程也都在那里。		同上視窗內文（段落，執行檔兩句接成一段）
+Click "Embark" to place your fortress.  Right click to zoom out.	點一下「出發」來建立要塞。按右鍵縮小地圖。	点击“出发”放置要塞。右键单击缩小地图。		放大後的地圖提示框
+Embark	出發	出发	c	地圖右下按鈕
+Show elevation	顯示海拔	显示海拔	c	地圖右下按鈕；切換海拔高度著色
+Abort	取消	取消	c	選擇範圍時的按鈕、出發警告框的紅色按鈕
+Click on the map to embark!  Right click to abort.	在地圖上點一下即可出發！按右鍵取消。	点击地图即可出发！右键单击取消。		選擇出發範圍的提示框
+Recommended size.	建議大小。	推荐大小。		選擇出發範圍的提示框；前面是 4 x 4
+Cannot embark entirely on water or mountains.	出發範圍不能全是水域或山脈。	出发范围不能全是水域或山脉。		選擇出發範圍的錯誤提示
+Cannot embark on another site.	不能在其他據點上建立要塞。	不能在其他据点上建立要塞。		選擇出發範圍的錯誤提示（同組字串，未實機看到）
+Temperate Savanna	溫帶稀樹草原	温带稀树草原		地點資訊：生態群系
+Temperature: 	氣溫： 	气温： 		地點資訊；後接 Temperate 等氣溫值
+Temperate	溫和	温和		地點資訊的氣溫值（不是溫帶）。同一個執行檔字串也是人格特質標籤（節制），要依畫面分開翻；引擎還不能分畫面，先用出發畫面的譯法
+Warm	溫暖	温暖		地點資訊的氣溫值（同組，未實機看到）
+Hot	熱	热		地點資訊的氣溫值；原文 3 格只放得下一字
+Scorching	酷熱	酷热		地點資訊的氣溫值
+Cold	寒冷	寒冷		地點資訊的氣溫值
+Freezing	嚴寒	严寒		地點資訊的氣溫值
+Trees: 	樹木： 	树木： 		地點資訊；後接 Sparse（strings/worldgen.tsv 已有）等
+Heavily Forested	森林茂密	森林茂密		地點資訊的樹木值（同組，未實機看到）
+Woodland	林地	林地		地點資訊的樹木值
+Other Vegetation: 	其他植被： 	其他植被： 		地點資訊；後接 Moderate 等
+Thick	茂密	茂密		地點資訊的植被值
+Moderate	中等	中等		地點資訊的植被值
+Scarce	稀少	稀少		地點資訊的植被值
+Surroundings: 	周遭環境： 	周边环境： 		地點資訊；後接 Untamed Wilds 等（善良、中立、邪惡三類各三級）
+Serene	寧靜	宁静		周遭環境：善良
+Mirthful	歡樂	欢乐		周遭環境：善良
+Joyous Wilds	歡愉荒野	欢愉荒野		周遭環境：善良且野性
+Calm	平靜	平静		周遭環境：中立
+Wilderness	荒野	荒野		周遭環境：中立
+Untamed Wilds	未開化荒野	未开化荒野		周遭環境：中立且野性；與 worldgen 的 Untamed wilds 同譯
+Sinister	陰森	阴森		周遭環境：邪惡
+Haunted	鬧鬼	闹鬼		周遭環境：邪惡
+Terrifying	恐怖	恐怖		周遭環境：邪惡且野性
+Little soil	土層極淺	土层极浅		地點資訊的土壤深度，由淺到深：Little、Some、Deep、Very deep、Extremely deep
+Some soil	土層淺	土层浅		同上
+Deep soil	土層深	土层深		同上
+Very deep soil	土層很深	土层很深		同上
+Extremely deep soil	土層極深	土层极深		同上
+Shallow Sand	淺層沙土	浅层沙土		地點資訊的土壤
+Shallow Clay	淺層黏土	浅层黏土		地點資訊的土壤
+Light aquifer	輕度含水層	轻度含水层		地點資訊；含水層：挖到會滲水的岩層
+Heavy aquifer	重度含水層	重度含水层		同上；滲水快，難以挖穿
+Varied aquifer	混合含水層	混合含水层		同上；輕重度含水層都有
+Iron	鐵	铁		地點資訊的金屬礦清單（每個金屬名分開畫）
+Gold	金	金		同上
+Silver	銀	银		同上
+Copper	銅	铜		同上
+Nickel	鎳	镍		同上
+Zinc	鋅	锌		同上
+Platinum	鉑	铂		同上
+Tin	錫	锡		同上
+Lead	鉛	铅		同上
+Flux stone layer	熔劑石層	熔剂石层		地點資訊；有可當熔劑的石灰岩等（煉鋼要用）
+Neighbors:	鄰近文明：	邻近文明：		地點資訊；下面列各族群、人數與最近據點
+Elves	精靈	精灵		鄰近文明的族群
+Humans	人類	人类		同上
+Goblins	哥布林	哥布林		同上
+Few	少	少		鄰近文明的人數（句首大寫）；原文 3 格只放得下一字
+Few dozen	二三十	二三十		鄰近文明的人數
+Some dozens	數十	数十		同上
+A hundred	約一百	约一百		同上
+Over a hundred	超過一百	超过一百		同上
+A few hundred	數百	数百		同上
+Hostile, few	敵對，少數	敌对，少数		鄰近文明人數前加敵對；few 單獨只有 3 格，整句另列
+few dozen	二三十	二三十		rules 的 Hostile, {1} 填入的人數（小寫）
+some dozens	數十	数十		同上
+a hundred	約一百	约一百		同上
+over a hundred	超過一百	超过一百		同上
+a few hundred	數百	数百		同上
+A day's travel	一天路程	一天路程		rules 的 Nearest site: {1} 填入的距離
+1/2 day's travel	半天路程	半天路程		同上
+A short trip	一小段路	一小段路		同上
+Nearly a day's travel	將近一天路程	将近一天路程		同上
+More than a day's travel	超過一天路程	超过一天路程		同上
+A half day's travel	半天路程	半天路程		同上（同組字串，未實機看到）
+You have selected an area with salt water.	你選的地區有鹽水。	你选择的区域有咸水。		出發警告
+It might be very difficult to survive here.	在這裡可能很難生存。	在这里可能很难生存。		出發警告
+You have selected an area with a light aquifer.	你選的地區有輕度含水層。	你选择的区域有轻度含水层。		出發警告
+You have selected an area with a heavy aquifer.	你選的地區有重度含水層。	你选择的区域有重度含水层。		出發警告（同組，未實機看到）
+Water might need to be pumped out or carried away.	可能需要抽水或排水。	可能需要抽水或排水。		出發警告；接在含水層警告後
+It might be very difficult to obtain stone here.	在這裡可能很難取得石材。	在这里可能很难获取石料。		出發警告
+You have selected a savage area.	你選的是野性地區。	你选择的是野性区域。		出發警告；savage＝野性（野生動物兇猛）
+The wildlife might be very dangerous here.	這裡的野生動物可能非常危險。	这里的野生动物可能非常危险。		出發警告
+You have selected an evil area.	你選的是邪惡地區。	你选择的是邪恶区域。		出發警告
+You may find very unpleasant environs here.	這裡的環境可能非常險惡。	这里的环境可能非常险恶。		出發警告
+You have selected an area near a necromancer's tower.	你選的地區靠近死靈法師的高塔。	你选择的区域靠近死灵法师的高塔。		出發警告
+You may be invaded very early by powerful foes.	你可能很早就會遭到強敵入侵。	你可能很早就会遭到强敌入侵。		出發警告
+Your selected civilization is dead or dying.	你選的文明已經滅亡或瀕臨滅亡。	你选择的文明已经灭亡或濒临灭亡。		出發警告
+Your dwarves might assume important positions.	你的矮人可能會擔任重要職位。	你的矮人可能会担任重要职位。		出發警告；接在文明滅亡警告後
+You have selected a narrow area.	你選的範圍很狹長。	你选择的范围很狭长。		出發警告（範圍大小）
+It might be difficult to find resources.	可能很難找到資源。	可能很难找到资源。		出發警告
+You have selected the smallest possible area.	你選的是最小的範圍。	你选择的是最小的范围。		出發警告
+You have selected a large area.	你選的範圍很大。	你选择的范围很大。		出發警告
+You have selected a very large area.	你選的範圍非常大。	你选择的范围非常大。		出發警告
+You have selected the largest possible area.	你選的是最大的範圍。	你选择的是最大的范围。		出發警告
+Choose a smaller area if you experience lag.	如果遊戲卡頓，請選小一點的範圍。	如果游戏卡顿，请选择小一点的范围。		出發警告；接在範圍過大警告後
+Confirm	確認	确认	c	出發警告框的綠色按鈕
+Play now!	立即開始	立即开始	c	出發準備選擇畫面按鈕：跳過自訂、用預設配置出發；原文 9 格放不下驚嘆號
+Start immediately with the default skills, equipment, and animals.	使用預設的技能、裝備和動物立即出發。	使用默认的技能、装备和动物立即出发。		同上按鈕說明
+Prepare for the journey carefully	謹慎準備旅程	精心准备旅程	c	出發準備選擇畫面按鈕；與 settings 的 Prepare carefully 一致
+Choose your own skills, equipment, and animals.	自行挑選技能、裝備和動物。	自行选择技能、装备和动物。		同上按鈕說明
+Enemies:	敵人：	敌人：		出發準備選擇畫面的難度選項
+Off	關	关	c	敵人難度按鈕
+Normal	普通	普通	c	敵人／經濟難度按鈕
+Hard	困難	困难	c	同上
+Economy:	經濟：	经济：		出發準備選擇畫面的難度選項
+Custom settings	自訂設定	自定义设置	c	出發準備選擇畫面按鈕
+Fortress Name	要塞名稱	要塞名称	c	謹慎準備畫面下方按鈕
+Group Name	隊伍名稱	队伍名称	c	同上；出發隊伍的團體名
+Group Symbol	隊伍標誌	队伍标志	c	同上
+Problems	問題	问题	c	同上；有問題時才能按
+Save Profile	儲存設定檔	保存配置	c	同上；把這次的準備存成出發設定檔
+Embark!	出發！	出发！	c	同上
+Your Citizens	你的居民	你的居民	c	謹慎準備：矮人分頁左欄標題
+Available Skills	可選技能	可选技能		同上右欄標題
+skill picks left	可分配技能點	可分配技能点		同上右上，前面接數字（10 skill picks left）
+skill pick left	可分配技能點	可分配技能点		同上，單數
+View	檢視	查看	c	矮人列的按鈕
+Not	非	非		技能等級：不會；後面接職業名（Not Miner＝非 礦工）；原文 3 格只放得下一字
+Miner	礦工	矿工		技能職業名
+Woodcutter	伐木工	伐木工		技能職業名
+Carpenter	木匠	木匠		技能職業名
+Mason	石匠	石匠		技能職業名
+Weaponsmith	武器匠	武器匠		技能職業名
+Bowyer	弓弩匠	弓弩匠		技能職業名；製作弓與弩
+Armorsmith	盔甲匠	盔甲匠		技能職業名
+Blacksmith	鐵匠	铁匠		技能職業名
+Furnace Operator	熔爐工	熔炉工		技能職業名；熔煉礦石
+Wood Burner	燒炭工	烧炭工		技能職業名
+Fisherdwarf	漁夫	渔夫		技能職業名（矮人版的 Fisherman）
+Butcher	屠夫	屠夫		技能職業名
+Planter	播種者	播种者		技能職業名：播種作物
+Brewer	釀酒師	酿酒师		技能職業名
+Gem Cutter	寶石切割師	宝石切割师		技能職業名
+Gem Setter	寶石鑲嵌師	宝石镶嵌师		技能職業名
+Mechanic	機械師	机械师		技能職業名
+Potter	陶藝師	陶艺师		技能職業名
+Glazer	上釉工	上釉工		技能職業名
+Papermaker	造紙工	造纸工		技能職業名
+Bookbinder	裝訂工	装订工		技能職業名
+Wax Worker	蠟工	蜡工		技能職業名
+Miller	磨坊工	磨坊工		技能職業名
+Thresher	脫粒工	脱粒工		技能職業名
+Herbalist	草藥師	草药师		技能職業名
+Cook	廚師	厨师		技能職業名
+Weaver	織工	织工		技能職業名
+Clothier	裁縫	裁缝		技能職業名
+Dyer	染工	染工		技能職業名
+Trapper	捕獸人	捕兽人		技能職業名；設陷阱捕捉動物
+Ambusher	伏擊者	伏击者		技能職業名
+Tanner	製革工	制革工		技能職業名
+Axedwarf	斧手	斧手		戰鬥技能職業名（矮人版 Axeman；執行時以族名拼出，矮人只有這個寫法）
+Swordsdwarf	劍士	剑士		同上（Swordsman）
+Macedwarf	釘錘手	钉锤手		同上（Maceman）
+Hammerdwarf	戰錘手	战锤手		同上（Hammerman）
+Speardwarf	矛手	矛手		同上（Spearman）
+Marksdwarf	弩手	弩手		同上（Crossbowman）
+Shield User	盾牌手	盾牌手		戰鬥技能職業名；避開冗長的「使用者」
+Armor User	披甲者	披甲者		戰鬥技能職業名；避開冗長的「使用者」
+Fighter	戰士	战士		戰鬥技能職業名
+Archer	射手	射手		戰鬥技能職業名（弓弩射擊）
+Wrestler	摔角手	摔跤手		戰鬥技能職業名
+Striker	打擊手	打击手		戰鬥技能職業名（徒手打擊，不限拳擊）
+Kicker	踢擊手	踢击手		戰鬥技能職業名
+Biter	撕咬	撕咬		戰鬥技能職業名；原文 5 格只放得下兩字
+Dodger	閃避者	闪避者		戰鬥技能職業名
+Siege Engineer	攻城器械師	攻城器械师		技能職業名
+Swimmer	游泳者	游泳者		技能職業名
+Wound Dresser	包紮師	包扎师		醫療技能職業名
+Diagnostician	診斷醫師	诊断医师		醫療技能職業名
+Surgeon	外科醫	外科医		醫療技能職業名；原文 7 格放不下「外科醫師」
+Bone Doctor	骨科醫師	骨科医师		醫療技能職業名
+Suturer	縫合師	缝合师		醫療技能職業名
+Crutch-walker	拄拐者	拄拐者		技能職業名（拄拐杖行走）
+Persuader	說服者	说服者		社交技能職業名
+Negotiator	談判者	谈判者		社交技能職業名
+Liar	騙子	骗子		社交技能職業名
+Intimidator	威嚇者	威吓者		社交技能職業名
+Judge of Intent	察言觀色者	察言观色者		社交技能職業名（判讀他人意圖）
+Appraiser	估價師	估价师		技能職業名
+Organizer	組織者	组织者		技能職業名
+Record Keeper	記錄員	记录员		技能職業名
+Conversationalist	健談者	健谈者		社交技能職業名
+Your Items	你的物品	你的物品		謹慎準備：物品分頁左欄標題
+Points Left: 	剩餘點數： 	剩余点数： 		同上，後接點數
+Available Items	可選物品	可选物品	c	物品分頁右欄標題
+Leather	皮革	皮革		物品類別
+Cloth (Plant)	布料（植物）	布料（植物）		物品類別
+Cloth (Silk)	布料（絲）	布料（丝）		物品類別
+Crafts	工藝品	工艺品		物品類別
+Wood	木材	木材		物品類別
+Metal Bars	金屬錠	金属锭		物品類別
+Small Cut Gems	已切割小寶石	已切割小宝石		物品類別
+Large Cut Gems	已切割大寶石	已切割大宝石		物品類別
+Stone Blocks	石磚	石砖		物品類別；建築用的方塊石材
+Seeds	種子	种子		物品類別
+Anvils	鐵砧	铁砧		物品類別
+Weapons	武器	武器		物品類別
+Training Weapons	訓練用武器	训练用武器		物品類別
+Ammo	彈藥	弹药		物品類別
+Trap Components	陷阱零件	陷阱部件		物品類別
+Digging Implements	挖掘工具	挖掘工具		物品類別（鎬、斧等）
+Drinks	酒類	酒类		物品類別；遊戲裡的飲料都是酒
+Your Animals	你的動物	你的动物		謹慎準備：動物分頁左欄標題
+Available Animals	可選動物	可选动物	c	動物分頁右欄標題
+Are you sure?	確定嗎？	确定吗？		按出發後還有點數或技能沒用完時的確認
+I am ready!	準備好了！	准备好了！	c	同上按鈕
+Go back	返回	返回	c	同上按鈕
