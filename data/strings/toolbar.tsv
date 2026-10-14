@@ -1,0 +1,148 @@
+en	zh-Hant	zh-Hans	align	note
+Open Space	懸空處	悬空处		滑鼠指到空中格子（沒有地板）時的地形說明
+Hotkey: 	快捷鍵：	快捷键：		所有提示框共用的標籤，後接按鍵
+Regular mining	一般挖掘	常规挖掘		挖掘工具的模式名（左上提示）
+Chopping trees	砍伐樹木	砍伐树木		伐木工具的模式名（左上提示）
+Gathering fruit and leaves	採集果實與葉子	采集果实和叶子		採集工具的模式名（左上提示）
+Smoothing rough floors and walls	磨平粗糙的地板與牆壁	磨平粗糙的地板和墙壁		磨平工具的模式名（左上提示）
+Furniture	家具	家具		建造選單分類
+Constructions	建築結構	建筑结构		建造選單分類：牆、地板、樓梯等
+Traps	陷阱	陷阱		建造選單分類
+Military	軍事	军事		建造選單分類
+Trade depot	貿易站	贸易站		建造選單分類（直接建造貿易站）
+Click in the play area	在遊戲畫面上點選	在游戏画面上点击		倉儲區提示第 1 行，接下行「以劃設倉儲區。」
+to paint the stockpile.	以劃設倉儲區。	以划定储物区。		倉儲區提示第 2 行
+Accept	接受	接受	c	倉儲區提示旁的按鈕
+Select a type below to add a zone.	在下方選擇類型以新增區域。	在下方选择类型以添加区域。		區域面板上方說明
+Click an icon to add a new zone.	點選圖示以新增區域。	点击图标以添加新区域。		區域面板清單上方說明
+Water Source	水源	水源		區域類型
+Fishing	釣魚	钓鱼		區域類型（釣魚區）；也適用勞動、活動名
+Gather Fruit	採集果實	采集果实		區域類型
+Garbage Dump	垃圾場	垃圾场		區域類型
+Sand	沙子	沙子		區域類型（取沙區）；也適用材料名
+Clay	黏土	黏土		區域類型（取黏土區）；也適用材料名
+Meeting Area	集會區	集会区		區域類型
+Animal Training	動物訓練	动物训练		區域類型
+Bedroom	臥室	卧室		區域類型
+Dining Hall	餐廳	餐厅		區域類型
+Office	辦公室	办公室		區域類型
+Archery Range	射箭場	射箭场		區域類型
+Barracks	營房	营房		區域類型
+Dormitory	宿舍	宿舍		區域類型
+Dungeon	地牢	地牢		區域類型
+Tomb	墓室	墓室		區域類型
+Assigned residents will only	已指派的居民只會在	被分配的居民只会在		活動區面板說明第 1 行，三行連讀
+perform tasks in any of their	其任一啟用中的指派	其任意一个已启用的		活動區面板說明第 2 行
+active assigned burrows.	活動區內執行工作。	所属活动区内执行任务。		活動區面板說明第 3 行
+Add new burrow	新增活動區	新建活动区	c	活動區面板按鈕
+Burrows	活動區	活动区	c	活動區說明視窗標題
+Add new route	新增路線	新建路线	c	礦車路線面板按鈕
+Designating high traffic area	劃設高通行區	划定高通行区		交通工具的模式名（左上提示）
+Claiming forbidden items and buildings	認領禁用的物品與建築	认领被禁用的物品和建筑		解除禁用工具的模式名（左上提示）
+Clothing and leather	衣物與皮革	衣物与皮革		建造選單：工坊子分類
+Farming	農業	农业		建造選單：工坊子分類；農田選單共用同一條（定案取代共用術語表的「耕作」）
+Furnaces	熔爐	熔炉		建造選單：工坊子分類
+Ashery	製灰坊	制灰坊		建造選單：工坊（製灰工坊），6 格放不下全名
+Jeweler	珠寶匠	珠宝匠		建造選單：工坊標籤沿用職業名（同 Mechanic 機械師、Carpenter 木匠）
+Magma forge	熔岩鍛爐	熔岩锻炉		建造選單：工坊
+Metalsmith	金屬匠	金属匠		建造選單：工坊標籤沿用職業名
+Screw Press	螺旋壓榨機	螺旋压榨机		建造選單：工坊
+Siege	攻城	攻城		建造選單：工坊子分類（攻城器械工坊）
+Soap Maker's Workshop	製皂工坊	制皂工坊		建造選單：工坊
+Stoneworker	石工	石工		建造選單：工坊標籤沿用職業名（石材加工）
+Bed	床	床		建造選單：家具
+Chair	椅子	椅子		建造選單：家具
+Table	桌子	桌子		建造選單：家具
+Chest	箱子	箱子		建造選單：家具
+Cabinet	櫥櫃	橱柜		建造選單：家具
+Burial	喪葬	丧葬		建造選單：家具子分類（棺材等）
+Slab	石板	石板		建造選單：家具（紀念石板）
+Statue	雕像	雕像		建造選單：家具
+Traction bench	牽引床	牵引床		建造選單：家具（醫療用）
+Bookcase	書架	书架		建造選單：家具
+Display	展示	展示		建造選單：家具子分類（展示台、展示櫃）
+Offering place	供奉處	供奉处		建造選單：家具
+Instrument	樂器	乐器		建造選單：家具
+Door	門	门		建造選單：門／活蓋
+Hatch	活蓋	活盖		建造選單：門／活蓋（地面掀蓋門），5 格放不下「活板門」
+Wall	牆壁	墙壁		建造選單：建築結構
+Reinforced Wall	強化牆壁	加固墙壁		建造選單：建築結構
+Floor	地板	地板		建造選單：建築結構
+Ramp	斜坡	斜坡		建造選單：建築結構
+Stairs	樓梯	楼梯		建造選單：建築結構
+Bridge	橋	桥		建造選單：建築結構
+Paved road	鋪砌道路	铺砌道路		建造選單：建築結構
+Dirt road	泥土路	土路		建造選單：建築結構
+Fortification	射擊孔牆	射击孔墙		建造選單：建築結構（開有射擊孔、可讓投射物與液體穿過的牆）
+Wall grate	牆格柵	墙格栅		建造選單：建築結構
+Floor grate	地板格柵	地板格栅		建造選單：建築結構
+Vertical bars	直立柵欄	竖直栅栏		建造選單：建築結構
+Floor bars	地板柵欄	地板栅栏		建造選單：建築結構
+Glass window	玻璃窗	玻璃窗		建造選單：建築結構
+Gem window	寶石窗	宝石窗		建造選單：建築結構
+Support	支撐柱	支撑柱		建造選單：建築結構
+Track	軌道	轨道		建造選單：建築結構（礦車軌道）
+Track stop	軌道停靠站	轨道停靠站		建造選單：建築結構；礦車路線的停靠點（也可設定傾倒），與礦車說明彈窗一致；10 格剛好等於原文
+Lever	拉桿	拉杆		建造選單：機械／流體
+Well	水井	水井		建造選單：機械／流體
+Floodgate	水閘	水闸		建造選單：機械／流體
+Screw pump	螺旋泵	螺旋泵		建造選單：機械／流體
+Water wheel	水車	水车		建造選單：機械／流體
+Windmill	風車	风车		建造選單：機械／流體
+Gear assembly	齒輪組	齿轮组		建造選單：機械／流體
+Horizontal axle	水平傳動軸	水平传动轴		建造選單：機械／流體
+Vertical axle	垂直傳動軸	垂直传动轴		建造選單：機械／流體
+Millstone	石磨	石磨		建造選單：機械／流體
+Rollers	滾輪	滚轮		建造選單：機械／流體（推動礦車的滾輪）
+Cage	籠子	笼子		建造選單：籠子／束縛具與陷阱；陷阱類是籠子陷阱，4 格只放得下「籠子」
+Animal trap	捕獸器	捕兽器		建造選單：籠子／束縛具
+Pressure plate	壓力板	压力板		建造選單：陷阱
+Stone-fall	落石陷阱	落石陷阱		建造選單：陷阱
+Weapon	武器	武器		建造選單：陷阱類是武器陷阱，6 格放不下「武器陷阱」
+Archery target	箭靶	箭靶		建造選單：軍事
+Weapon rack	武器架	武器架		建造選單：軍事
+Armor stand	盔甲架	盔甲架		建造選單：軍事
+Ballista	弩砲	弩炮		建造選單：軍事（攻城器械）
+Catapult	投石機	投石机		建造選單：軍事（攻城器械）
+Bolt thrower	弩箭機	弩箭机		建造選單：軍事（攻城器械）
+Open the objects menu.	開啟物品選單。	打开物品菜单。		物品清單按鈕提示
+Ammunition	彈藥	弹药		物品清單（庫存）分類
+Amulets	護身符	护身符		物品清單（庫存）分類
+Animal traps	捕獸器	捕兽器		物品清單（庫存）分類
+Armor	盔甲	盔甲		物品清單（庫存）分類
+Armor stands	盔甲架	盔甲架		物品清單（庫存）分類
+Backpacks	背包	背包		物品清單（庫存）分類
+Bags	袋子	袋子		物品清單（庫存）分類
+Ballista arrow heads	弩砲箭頭	弩炮箭头		物品清單（庫存）分類
+Ballista parts	弩砲零件	弩炮零件		物品清單（庫存）分類
+Barrels	桶	桶		物品清單（庫存）分類
+Bars	錠材	锭材		物品清單（庫存）分類：金屬錠、肥皂、燃料等條狀物
+Beds	床	床		物品清單（庫存）分類
+Bins	貨箱	货箱		物品清單（庫存）分類
+Blocks	磚塊	砖块		物品清單（庫存）分類
+Body parts	身體部位	身体部位		物品清單（庫存）分類
+Bolt thrower parts	弩箭機零件	弩箭机零件		物品清單（庫存）分類
+Boulders	石塊	石块		物品清單（庫存）分類：未加工的大石頭
+You must appoint a	你必須先任命一位	你必须先任命一位		小隊面板提示第 1 行，三行連讀
+militia commander	民兵指揮官	民兵指挥官		小隊面板提示第 2 行
+to create a squad.	才能建立小隊。	才能创建小队。		小隊面板提示第 3 行
+Select a squad or squad	選擇小隊或小隊成員	选择小队或小队成员		小隊面板提示第 1 行，四行連讀
+member to give orders,	即可下達命令、	即可下达命令、		小隊面板提示第 2 行
+change equipment, and	更換裝備以及	更换装备以及		小隊面板提示第 3 行
+assign schedules.	指派排程。	安排日程。		小隊面板提示第 4 行
+Center on fort	移至要塞	定位到要塞	c	世界畫面按鈕：畫面移到自己的要塞
+Missions	派遣	派遣	c	世界畫面按鈕
+News and rumors	新聞與傳聞	新闻与传闻	c	世界畫面按鈕
+Civilizations	文明	文明	c	世界畫面按鈕
+Missing citizens	失蹤公民	失踪公民	c	世界畫面按鈕
+Reports	報告	报告	c	世界畫面按鈕
+Peace	和平	和平		世界畫面文明清單：外交狀態
+Your site government	你的據點政府	你的据点政府		世界畫面文明清單：與本要塞的關係
+Removing mining/chopping/gathering/smoothing orders	移除挖掘／伐木／採集／磨平命令	移除挖掘/伐木/采集/磨平命令		移除命令工具的模式名（左上提示）
+Doors/hatches	門／活蓋	门/活盖		建造選單：子分類
+Machines/fluids	機械／流體	机械/流体		建造選單：子分類
+Cages/restraints	籠子／束縛具	笼子/束缚具		建造選單：子分類
+Rope/chain	繩索／鎖鏈	绳索/锁链		建造選單：籠子／束縛具子分類；10 格剛好等於原文
+Upright weapon/spike	直立武器／尖刺	直立武器/尖刺		建造選單：陷阱子分類
+Pen/Pasture	畜欄／牧場	畜栏/牧场		區域類型
+Pit/Pond	坑／池塘	坑/池塘		區域類型：可把生物丟進坑裡，或注水成池塘

@@ -1,0 +1,133 @@
+en	zh-Hant	zh-Hans	align	note
+Residents	居民	居民	c	生物面板子分頁：居民（creatures_residents.png）
+Prof	職業	职业		生物清單排序鈕：Profession 縮寫；原文 4 格
+Pickup equipment	領取裝備	领取装备		生物清單工作欄：正在領取裝備
+expedition leader	遠征隊長	远征队长		生物清單名字下方的職位（小寫）
+No job	無工作	无工作		生物清單工作欄：沒有工作；原文 6 格
+A manager is required to coordinate	需要一位經理才能協調	需要一名经理才能协调		工作指令面板左下提示第一行，下接 work orders.
+work orders.	工作指令。	工作订单。		工作指令面板左下提示第二行；原文 12 格
+Expedition leader	遠征隊長	远征队长		貴族與管理者：職位名
+Militia commander	民兵指揮官	民兵指挥官		貴族與管理者：職位名
+VACANT	空缺	空缺		貴族與管理者：職位無人擔任
+Hammerer	錘刑官	锤刑官		貴族與管理者：職位名
+Chief medical dwarf	首席醫師	首席医师		貴族與管理者：職位名
+Messenger	信使	信使		貴族與管理者：職位名
+NEW	新	新		貴族與管理者：信使列，可新增一位；原文 3 格
+Members of the nobility have required rooms and can make demands. They cannot be reassigned.	貴族需要特定房間，也會提出要求。貴族無法改派他人。	贵族需要特定房间，还会提出要求。贵族不能改派他人。		貴族與管理者面板頂端說明第一行
+Administrators handle various aspects of your fortress and can be reassigned. Many administrators also require rooms.	管理者負責要塞的各項事務，可以改派他人。許多管理者也需要房間。	管理人员负责要塞的各项事务，可以改派他人。许多管理人员也需要房间。		貴族與管理者面板頂端說明第二行
+Open cases	未結案件	未结案件	c	司法子分頁
+Closed cases	已結案件	已结案件	c	司法子分頁
+Cold cases	懸案	悬案	c	司法子分頁
+Fortress guard	要塞衛隊	要塞卫队	c	司法子分頁
+Convicts	罪犯	罪犯	c	司法子分頁
+Intelligence	情報	情报	c	司法子分頁：陰謀情報
+Grazer: requires pasture	食草動物：需要牧場	食草动物：需要牧场		寵物／牲畜清單名字下方
+Unavailable as pet	不能當寵物	不能当宠物		寵物／牲畜清單：無法收養為寵物
+Overall Training	整體訓練	整体训练	c	寵物／牲畜右下按鈕
+Work Details	工作分組	工作分组	c	勞動子分頁
+Standing orders	常規命令	常规命令	c	勞動子分頁
+Kitchen	廚房	厨房	c	勞動子分頁；建造選單的廚房工坊同名
+Stone use	石材用途	石材用途	c	勞動子分頁
+Add new work detail	新增工作分組	新建工作分组	c	工作分組左上按鈕
+Miners	礦工	矿工		工作分組名
+Woodcutters	伐木工	伐木工		工作分組名
+Hunters	獵人	猎人		工作分組名
+Planters	播種者	播种者		工作分組名；照 glossary Planter
+Fisherdwarves	漁夫	渔夫		工作分組名；照 glossary Fisherdwarf
+Plant gatherers	植物採集者	植物采集者		工作分組名：採集植物
+Stonecutters	鑿石工	凿石工		工作分組名：磨平石面、鑿射擊孔與軌道（v50 Stonecutting）
+Engravers	雕刻工	雕刻工		工作分組名
+Haulers	搬運工	搬运工		工作分組名
+Orderlies	護工	护工		工作分組名：醫院勤務
+Siege operators	攻城器械操作員	攻城器械操作员		工作分組名
+Everybody does this	所有人都做	所有人都做	c	工作分組模式按鈕
+Only selected do this	只有選定者做	仅选定者做	c	工作分組模式按鈕
+Nobody does this	沒有人做	没有人做	c	工作分組模式按鈕
+Sheriff	治安官	治安官		貴族與管理者：職位名
+Manager	經理	经理		貴族與管理者：職位名
+Broker	交易員	交易员		貴族與管理者：職位名
+Bookkeeper	簿記員	簿记员		貴族與管理者：職位名
+Artifacts	神器	神器	c	物品子分頁
+Symbols	象徵物	象征物	c	物品子分頁：職位象徵物
+Named objects	命名物品	命名物品	c	物品子分頁
+Written content	著作	著作	c	物品子分頁
+There aren't any crafted artifacts here.	這裡沒有任何打造出來的神器。	这里没有任何打造出来的神器。		物品／神器空清單說明第一行
+Your workers will rarely make them on their own.	工人很少會自行打造神器。	工人很少会自行打造神器。		物品／神器空清單說明第二行
+You may also send a squad to obtain one.	你也可以派小隊去取得神器。	你也可以派小队去夺取神器。		物品／神器空清單說明第三行
+You do not have any locations.	你還沒有任何場所。	你还没有任何场所。		設施／場所空清單說明第一行
+Locations can be created from zones.	場所可從區域建立。	场所可以从区域创建。		設施／場所空清單說明第二行
+You do not have any stockpiles	你還沒有任何倉儲區	你还没有任何储物区		設施／倉儲區空清單說明第一行（原文無句點）
+Stockpiles can be placed using the stockpile menu at the bottom of the screen.	可用畫面底部的倉儲區選單劃設倉儲區。	可通过屏幕底部的储物区菜单放置储物区。		設施／倉儲區空清單說明第二行
+You do not have any workshops.	你還沒有任何工坊。	你还没有任何工坊。		設施／工坊空清單說明第一行
+Workshops are placed using the building menu at the bottom of the screen.	工坊用畫面底部的建造選單放置。	工坊通过屏幕底部的建造菜单放置。		設施／工坊空清單說明第二行
+You do not have any farm plots.	你還沒有任何農田。	你还没有任何农田。		設施／農田空清單說明第一行
+Farm plots are placed using the building menu at the bottom of the screen.	農田用畫面底部的建造選單放置。	农田通过屏幕底部的建造菜单放置。		設施／農田空清單說明第二行
+You do not have any siege engines.	你還沒有任何攻城器械。	你还没有任何攻城器械。		設施／攻城器械空清單說明第一行
+Siege engines are placed using the building menu at the bottom of the screen.	攻城器械用畫面底部的建造選單放置。	攻城器械通过屏幕底部的建造菜单放置。		設施／攻城器械空清單說明第二行
+Hauling	搬運	搬运	c	常規命令分頁
+Refuse	垃圾	垃圾	c	常規命令分頁；倉儲區類別同名
+Forbidding	禁用	禁用	c	常規命令分頁
+Petitions	請願	请愿	c	常規命令分頁
+Chores	雜務	杂务	c	常規命令分頁
+Automatically weave all thread	自動把所有線材織成布	自动把所有线材织成布		常規命令／工坊：切換鈕
+Use any cloth	使用任何布料	使用任何布料		常規命令／工坊：裁縫用布切換鈕
+Automatically collect webs	自動收集蛛網	自动收集蛛网		常規命令／工坊：切換鈕
+Slaughter any marked animal	屠宰所有已標記的動物	屠宰所有已标记的动物		常規命令／工坊：切換鈕
+Automatically butcher carcasses	自動屠宰動物屍體	自动屠宰动物尸体		常規命令／工坊：切換鈕
+Automatically clean fish	自動處理漁獲	自动处理渔获		常規命令／工坊：切換鈕
+Automate kitchen	自動化廚房	自动化厨房		常規命令／工坊：切換鈕（廚房自動提煉油脂）
+Automate tannery	自動化製革工坊	自动化制革工坊		常規命令／工坊：切換鈕（tannery＝Tanner's Shop）
+ All	 全	 全		勞動／廚房：類別選擇器；原文含開頭空白共 4 格，放不下「全部」
+Type	類型	类型		勞動／廚房：排序鈕
+Economic stone	經濟石材	经济石材	c	石材用途子分頁
+Other stone	其他石材	其他石材	c	石材用途子分頁
+Stone type	石材種類	石材种类		石材用途欄位標題
+Magma-safe	耐熔岩	耐熔岩		石材用途欄位標題
+Economic uses	經濟用途	经济用途		石材用途欄位標題
+Select to use in non-economic jobs.	勾選後可用於非經濟用途的工作。	勾选后可用于非经济用途的工作。	r	石材用途右上說明；靠右
+You haven't named any position symbols yet.	你還沒有命名任何職位象徵物。	你还没有命名任何职位象征物。		物品／象徵物空清單說明第一行
+You can do this from the Nobles and Administrators menu.	可在「貴族與管理者」選單中進行。	可在“贵族与管理人员”菜单中进行。		物品／象徵物空清單說明第二行
+There are no named objects here.	這裡沒有任何命名物品。	这里没有任何命名物品。		物品／命名物品空清單說明第一行
+Citizens, especially soldiers, will rarely name items.	居民偶爾會為物品命名，士兵尤其如此。	居民偶尔会为物品命名，士兵尤其如此。		物品／命名物品空清單說明第二行
+There is no written content here.	這裡沒有任何著作。	这里没有任何著作。		物品／著作空清單說明第一行
+Prepare writing material and assign scholars to a library.	準備書寫材料，並指派學者到圖書館。	准备书写材料，并把学者分配到图书馆。		物品／著作空清單說明第二行
+Writing materials include paper and parchment sheets.	書寫材料包括紙張與羊皮紙。	书写材料包括纸张和羊皮纸。		物品／著作空清單說明第三行
+Use these to make scrolls and quires.	用它們製作卷軸與書帖。	用它们制作卷轴和书帖。		物品／著作空清單說明第四行
+Libraries are a location that can be created at a zone.	圖書館是一種場所，可在區域上建立。	图书馆是一种场所，可以在区域上创建。		物品／著作空清單說明第五行
+There is no intelligence information yet.	目前還沒有任何情報。	目前还没有任何情报。		司法／情報空清單說明第一行
+If a crime involves a conspiracy, an interrogation may reveal the plot.	若罪行涉及陰謀，審訊可能揭露其計畫。	如果罪行涉及阴谋，审讯可能会揭露其计划。		司法／情報空清單說明第二行
+Workers gather animals	工人收集動物	工人收集动物		常規命令／搬運：切換鈕
+Workers gather food	工人收集食物	工人收集食物		常規命令／搬運：切換鈕
+Workers gather furniture	工人收集家具	工人收集家具		常規命令／搬運：切換鈕
+Workers gather bodies	工人收集屍體	工人收集尸体		常規命令／搬運：切換鈕
+Workers gather minerals	工人收集礦物	工人收集矿物		常規命令／搬運：切換鈕
+Workers gather wood	工人收集木材	工人收集木材		常規命令／搬運：切換鈕
+Workers gather refuse	工人收集垃圾	工人收集垃圾		常規命令／垃圾：切換鈕
+Workers ignore outdoor refuse	工人忽略戶外垃圾	工人忽略户外垃圾		常規命令／垃圾：切換鈕
+Workers ignore outdoor vermin remains	工人忽略戶外害蟲殘骸	工人忽略户外害虫残骸		常規命令／垃圾：切換鈕
+Workers save corpses	工人保留屍體	工人保留尸体		常規命令／垃圾：切換鈕
+Workers save skulls	工人保留頭骨	工人保留头骨		常規命令／垃圾：切換鈕
+Workers save bones	工人保留骨頭	工人保留骨头		常規命令／垃圾：切換鈕
+Workers save shells	工人保留貝殼	工人保留贝壳		常規命令／垃圾：切換鈕
+Workers save skins	工人保留生皮	工人保留生皮		常規命令／垃圾：切換鈕
+Workers save hair and wool	工人保留毛髮和羊毛	工人保留毛发和羊毛		常規命令／垃圾：切換鈕
+Workers save other objects	工人保留其他物品	工人保留其他物品		常規命令／垃圾：切換鈕
+Forbid used ammunition	禁用射出的彈藥	禁用射出的弹药		常規命令／禁用：切換鈕
+Claim your dead	認領己方遺體	认领己方遗体		常規命令／禁用：切換鈕
+Claim your death items	認領己方遺物	认领己方遗物		常規命令／禁用：切換鈕
+Claim other dead	認領外人遺體	认领外人遗体		常規命令／禁用：切換鈕；other＝非己方
+Forbid other death items	禁用外人遺物	禁用外人遗物		常規命令／禁用：切換鈕；other＝非己方
+Forbid trap cleaning during sieges	圍攻時禁止清理陷阱	围攻时禁止清理陷阱		常規命令／禁用：切換鈕；動作用「禁止」，物品用「禁用」
+Forbid trap rearming during sieges	圍攻時禁止重設陷阱	围攻时禁止重置陷阱		常規命令／禁用：切換鈕
+Forbid cages from sprung traps during sieges	圍攻時禁用已觸發陷阱的籠子	围攻时禁用已触发陷阱的笼子		常規命令／禁用：切換鈕
+Forbid toppled building items during sieges	圍攻時禁用被推倒建築的物品	围攻时禁用被推倒建筑的物品		常規命令／禁用：切換鈕
+Forbidding of death objects occurs at time of death.	死者遺物在死亡當下就會禁用。	死者遗物在死亡时即被禁用。		常規命令／禁用：底部說明
+Citizenship petitions: prompt	公民身分請願：詢問	公民身份请愿：询问		常規命令／請願：切換鈕；prompt＝每次詢問玩家
+Performer petitions: prompt	表演者請願：詢問	表演者请愿：询问		常規命令／請願：切換鈕
+Monster slayer petitions: prompt	怪物獵人請願：詢問	怪物猎人请愿：询问		常規命令／請願：切換鈕
+Mercenary petitions: prompt	傭兵請願：詢問	佣兵请愿：询问		常規命令／請願：切換鈕
+Scholar petitions: prompt	學者請願：詢問	学者请愿：询问		常規命令／請願：切換鈕
+Sanctuary petitions: prompt	庇護請願：詢問	庇护请愿：询问		常規命令／請願：切換鈕
+Pets/Livestock	寵物／牲畜	宠物/牲畜	c	生物面板子分頁
+Dead/Missing	死亡／失蹤	死亡/失踪	c	生物面板子分頁
+Forbid floor/wall cleaning during sieges	圍攻時禁止清理地板與牆壁	围攻时禁止清理地板和墙壁		常規命令／禁用：切換鈕

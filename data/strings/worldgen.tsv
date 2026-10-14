@@ -125,3 +125,18 @@ Timber	木材	木材		矮人曆第 9 個月；timber 是木材，不是林木
 Moonstone	月光石	月光石		矮人曆第 10 個月，也是礦物名；月名一律用完整岩石／礦物名、不加「月」
 Opal	歐泊	欧泊		矮人曆第 11 個月，也是寶石名；原文只有 4 格，用兩字音譯，不用「蛋白石」
 Obsidian	黑曜石	黑曜石		矮人曆第 12 個月，也是岩石名；月名一律用完整岩石／礦物名、不加「月」
+Generating inorganics...	正在生成無機物……	正在生成无机物……		世界生成／載入畫面：程序化生成物件
+Generating plants...	正在生成植物……	正在生成植物……		世界生成／載入畫面：程序化生成物件
+Generating creatures...	正在生成生物……	正在生成生物……		世界生成／載入畫面：程序化生成物件
+Generating entities...	正在生成實體……	正在生成实体……		世界生成／載入畫面：程序化生成物件
+Generating interactions...	正在生成互動……	正在生成交互……		世界生成／載入畫面：程序化生成物件
+Forming lakes	正在形成湖泊	正在形成湖泊	r	世界生成畫面；後接 and minerals...；靠右讓中文貼齊後段
+ and minerals...	 與礦物……	 与矿物……		世界生成畫面：接在 Forming lakes 後；開頭空白保留
+Importing wildlife...	正在引入野生動物……	正在引入野生动物……		世界生成畫面
+Prehistory init...	史前時期初始化……	史前时期初始化……		世界生成畫面：初始化史前時期
+Placing megabeasts...	正在安置巨獸……	正在安置巨兽……		世界生成畫面；megabeast 指泰坦、巨龍等巨獸
+An abridged chronicle (	本世界的編年史節錄（	本世界的编年史节选（	r	世界生成完成畫面：後接 {#1} events total):（rules/worldgen.tsv）；靠右讓中文貼齊數字段
+Mountain	山地	山地		世界地圖區域類型
+Brook: 	溪流： 	溪流： 		世界地圖：後接溪流名稱，結尾空白保留
+Temperate Shrubland	溫帶灌木叢	温带灌木丛		世界地圖區域類型（生態群系）
+Rocky Wasteland	岩石荒地	岩石荒地		世界地圖區域類型

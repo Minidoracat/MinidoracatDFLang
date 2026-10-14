@@ -92,19 +92,14 @@ def main() -> int:
     def translated(text: str) -> bool:
         return text in done or any(rule.match(text) for rule in rules)
 
-    # 實機紀錄：依時間順序保留第一次看到的樣子（同一畫面的字串會相鄰）。沒翻譯的段落會整段記一筆（mtb），
-    # 同時遊戲還會把段落裡的單字一個個畫出來、各記一筆；這些單字只是段落的碎片，不列入
+    # 實機紀錄：依時間順序保留第一次看到的樣子（同一畫面的字串會相鄰）。沒翻譯的段落整段記一筆（mtb），
+    # 段落裡的單字由引擎照畫英文、不記
     logs = [log for log in [*sorted((ROOT / "temp/misses").glob("*.tsv")), DF / "dfhack-config/dflang-misses.tsv"] if log.is_file()]
-    sessions = [[line.split("\t", 1) for line in log.read_text(encoding="utf-8").splitlines() if "\t" in line] for log in logs]
-    paragraph_words = {word for rows in sessions for fn, text in rows if fn == "mtb"
-                       for word in re.sub(r"\[C:\d+:\d+:\d+\]", " ", text).split()}
     seen: Counter[str] = Counter()
     order: dict[str, str] = {}  # 原文 → 第一次攔到的函式
-    for rows in sessions:
+    for log in logs:
         session = set()
-        for fn, text in rows:
-            if fn != "mtb" and " " not in text.strip() and text.strip() in paragraph_words:
-                continue
+        for fn, text in (line.split("\t", 1) for line in log.read_text(encoding="utf-8").splitlines() if "\t" in line):
             order.setdefault(text, fn)
             session.add(text)
         seen.update(session)
@@ -130,7 +125,8 @@ def main() -> int:
         if translated(text):
             st["done"] += 1
             continue
-        if kind in ("noise", "code"):
+        # 程式字串的判斷會誤抓 Pets/Livestock 這類含斜線的標籤；實機畫出來過的就是顯示文字，照樣列入
+        if kind == "noise" or (kind == "code" and text not in seen):
             continue
         priority = 0 if text in seen else PRIORITY.get(kind, 6)
         todo.append((priority, kind, int(text in seen), text, context))
@@ -148,7 +144,7 @@ def main() -> int:
     with (OUT / "seen.tsv").open("w", encoding="utf-8", newline="\n") as fh:
         fh.write("function\tsource\ttext\n")
         fh.writelines(f"{fn}\t{'exe/raws' if t in items else 'composed'}\t{t}\n"
-                      for t, fn in order.items() if not translated(t) and items.get(t, ("",))[0] not in ("noise", "code"))
+                      for t, fn in order.items() if not translated(t) and items.get(t, ("",))[0] != "noise")
     lines = [f"快照 {snap.name}；實機紀錄 {len(logs)} 份、{len(seen)} 種字串",
              f"{'分類':<12}{'總數':>8}{'已翻':>8}{'實機看過':>10}"]
     for kind, st in sorted(stats.items(), key=lambda kv: -kv[1]["total"]):

@@ -1,0 +1,71 @@
+en	zh-Hant	zh-Hans	align	note
+Overview	概況	概况	c	人物資訊頁第二列分頁：概況
+Health	健康	健康	c	人物資訊頁分頁
+Skills	技能	技能	c	人物資訊頁分頁
+Rooms	房間	房间	c	人物資訊頁分頁：指派的房間
+Relations	人際關係	人际关系	c	人物資訊頁第一列分頁
+Groups	團體	团体	c	人物資訊頁分頁：所屬文明、據點政府等團體
+Thoughts	想法	想法	c	人物資訊頁分頁
+Personality	性格	性格	c	人物資訊頁分頁
+Disdains decorum	不拘禮節	不拘礼节		概況頁性格摘要標籤（價值觀：輕視禮節）
+Patient	有耐心	有耐心		概況頁性格摘要標籤（特質）；醫療的 patient 只出現在較長字串（Seek Patient for …），單獨的 Patient 只有這個
+Vengeful	記仇	记仇		概況頁性格摘要標籤（特質）
+Wasteful	浪費	浪费		概況頁性格摘要標籤：使用資源不節省
+Frail	體弱	体弱		概況頁性格摘要標籤（體質）
+Values stoicism	重視內斂	重视内敛		概況頁性格摘要標籤：價值觀 stoicism＝不輕易流露情緒
+Healthy	健康	健康		概況頁健康狀況
+Citizen	公民	公民		概況頁身分；團體分頁的身分
+No official position	無官職	无官职		概況頁：未擔任貴族或管理職位
+Squad: 	小隊：	小队：		概況頁；後面接小隊名或「無」
+No unmet needs	需求皆已滿足	需求均已满足		概況頁需求欄
+Deity	神祇	神祇		人際關係頁：與此人有關係的神祇
+Close friend	摯友	挚友		人際關係種類
+Friend	朋友	朋友		人際關係種類
+Long-term acquaintance	多年舊識	老相识		人際關係種類
+Civilization	文明	文明	r	團體分頁：團體種類，靠右
+Site government	據點政府	据点政府	r	團體分頁：團體種類，靠右
+Member	成員	成员		團體分頁：在團體中的身分
+Squad	小隊	小队	c	軍事分頁的子分頁
+Uniform	制服	制服	c	軍事分頁的子分頁
+Kills	擊殺	击杀	c	軍事分頁的子分頁：擊殺紀錄
+No squad assigned	未編入小隊	未编入小队		軍事分頁：沒有所屬小隊
+Recent thoughts	近期想法	近期想法	c	想法分頁的子分頁
+Memories	記憶	记忆	c	想法分頁的子分頁
+Traits	特質	特质	c	性格分頁的子分頁
+Values	價值觀	价值观	c	性格分頁的子分頁
+Preferences	偏好	偏好	c	性格分頁的子分頁
+Needs	需求	需求	c	性格分頁的子分頁
+Status	狀態	状态	c	健康分頁的子分頁
+Wounds	傷勢	伤势	c	健康分頁的子分頁
+Treatment	治療	治疗	c	健康分頁的子分頁
+History	歷史	历史	c	健康分頁的子分頁：病史（治療紀錄）；用「歷史」以免別處的 History 被譯成病史
+Description	描述	描述	c	健康分頁的子分頁：身體外觀描述
+No health problems	沒有健康問題	没有健康问题		健康分頁「狀態」
+Social	社交	社交	c	技能分頁的子分頁：社交技能
+Other skills	其他技能	其他技能	c	技能分頁的子分頁
+Knowledge	知識	知识	c	技能分頁的子分頁：學術知識
+No Study	無書房	无书房		房間分頁
+No Quarters	無住處	无住处		房間分頁
+No Dining Room	無餐廳	无餐厅		房間分頁
+No Tomb	無墓室	无墓室		房間分頁
+Work details	工作分組	工作分组	c	勞動分頁的子分頁
+Work animals	工作動物	工作动物	c	勞動分頁的子分頁：指派給此人的狩獵犬、戰犬等
+Will do available tasks anywhere	任何地方的工作都會做	任何地方的工作都会做		勞動分頁：沒有限定工作地點（未指定專職）
+Resists sickness	不易生病	不易生病		概況頁性格摘要標籤（體質）
+Good intuition	直覺敏銳	直觉敏锐		概況頁性格摘要標籤（心智能力）
+Disdains artwork	輕視藝術	轻视艺术		概況頁性格摘要標籤（價值觀）
+Cheerless	鬱鬱寡歡	郁郁寡欢		概況頁性格摘要標籤（特質）
+Low willpower	意志薄弱	意志薄弱		概況頁性格摘要標籤（心智能力）
+Good with language	擅長語言	擅长语言		概況頁性格摘要標籤（心智能力）
+No dedicated workshop assignments	未指派專屬工坊	未分配专属工坊		勞動分頁「工坊」子分頁
+No location assignments	未指派場所	未分配场所		勞動分頁「場所」子分頁
+"I feel well."	「感覺很好。」	“感觉很好。”		概況頁下方的近期想法（遊戲依寬度自動換行，見 engine/src/lines.rs）；14 格剛好等於原文
+"Everybody has their own way of life."	「每個人都有自己的生活方式。」	“每个人都有自己的生活方式。”		同上：近期想法（價值觀相關的台詞）
+"How can someone be so consumed by hate?"	「怎麼會有人被仇恨吞噬成這樣？」	“怎么会有人被仇恨吞噬成这样？”		同上：近期想法（價值觀相關的台詞）
+"I've been alright."	「我一直都還好。」	“我一直都还好。”		同上：近期想法
+"People should listen to what I have to say."	「大家應該聽聽我要說的話。」	“大家应该听听我要说的话。”		同上：近期想法（價值觀相關的台詞）
+"Be happy!"	「快樂！」	“快乐！”		同上：近期想法；原文 11 格，放不下「要快樂！」
+"Family is the true bond that keeps society thriving."	「家庭才是維繫社會繁榮的真正紐帶。」	“家庭才是维系社会繁荣的真正纽带。”		同上：近期想法（價值觀相關的台詞）
+"I feel alright."	「我還好。」	“我还好。”		同上：近期想法
+"I feel good."	「感覺不錯。」	“感觉不错。”		同上：近期想法；14 格剛好等於原文
+"I'm at my best under pressure."	「壓力越大，我表現越好。」	“压力越大，我表现越好。”		同上：近期想法（性格相關的台詞）

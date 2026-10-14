@@ -126,3 +126,141 @@ Appraiser	估價師	估价师	skill	draft		技能／職業名
 Organizer	組織者	组织者	skill	draft		技能／職業名
 Record Keeper	記錄員	记录员	skill	draft		技能／職業名
 Conversationalist	健談者	健谈者	skill	draft		社交技能職業名
+citizen	公民	公民	title	draft		embark.tsv 的 Citizens／Your Citizens、tutorial 的 Citizens 按鈕和多段說明都譯「居民」
+resident	居民	居民	title	approved		Resident(s) 都指要塞居民；現有條目繁簡全部相符
+administrator	管理者	管理人员	title	approved		只有職位一種意思；現有條目繁簡全部相符
+noble	貴族	贵族	title	draft		形容詞：「this noble quest」「such a noble pursuit」是高尚的意思
+manager	經理	经理	title	approved		只有職位一種意思
+bookkeeper	簿記員	簿记员	title	approved	dfzh-wiki	
+broker	交易員	交易员	title	approved		
+sheriff	治安官	治安官	title	approved	dfzh-wiki	
+captain of the guard	衛隊長	卫队长	title	approved		
+militia commander	民兵指揮官	民兵指挥官	title	approved		
+militia captain	民兵隊長	民兵队长	title	approved		
+expedition leader	遠征隊長	远征队长	title	approved		
+chief medical dwarf	首席醫師	首席医师	title	approved		
+hammerer	錘刑官	锤刑官	title	approved	dfzh-wiki	
+messenger	信使	信使	title	approved		含「No messengers available」
+fortress guard	要塞衛隊	要塞卫队	game	approved		
+convict	罪犯	罪犯	title	draft		動詞：popups.tsv 司法說明「choose whom to convict」是定罪
+squad	小隊	小队	game	approved		
+uniform	制服	制服	game	approved		
+schedule	排程	日程	game	approved		唯一的動詞用法「Fail to schedule the chore!」是除錯訊息，不會翻
+equipment	裝備	装备	game	approved		
+work detail	工作分組	工作分组	game	approved		en 寫單數，整詞比對才能同時涵蓋 work detail 和 work details
+standing orders	常規命令	常规命令	game	approved		
+hauling	搬運	搬运	game	approved		
+refuse	垃圾	垃圾	game	draft		動詞：「refuses to expend any extra effort」「refused to listen」
+forbid	禁用|禁止	禁用|禁止	game	draft		物品用「禁用」、動作用「禁止」；同字根的「forbidding wilderness」在 fortress.tsv 譯「險惡」
+claim	認領	认领	game	draft		「a female bird will claim the box」、傳說「claim to」是佔據或主張
+petition	請願	请愿	game	approved		
+chores	雜務	杂务	game	approved		
+kitchen	廚房	厨房	game	approved		勞動子分頁與廚房工坊同義
+stone use	石材用途	石材用途	game	approved		
+economic stone	經濟石材	经济石材	game	approved		
+magma-safe	耐熔岩	耐熔岩	game	approved		
+artifact	神器	神器	game	draft		settings.tsv「Enable artifact moods」譯「啟用奇異心境」，不含「神器」
+symbol	象徵物	象征物	game	draft		embark.tsv「Group Symbol」譯「隊伍標誌」；「is the symbol of」「symbols of office」是象徵
+named object	命名物品	命名物品	game	approved		
+written content	著作	著作	game	approved		
+object	物品	物品	game	draft		「Object testing arena」物件、「Cleaning game objects」遊戲物件、tutorial「interact with objects」物體
+location	場所	场所	game	draft		「embark location」出發地點、「Inaccessible mission location」
+burrow	活動區	活动区	game	approved	dfzh-wiki	
+farm plot	農田	农田	game	approved		教學段落的 Farmplot 寫成一個字，整詞比對抓不到；要涵蓋就另加 farmplot 一列
+siege engine	攻城器械	攻城器械	game	approved		
+trade depot	貿易站	贸易站	game	approved	dfzh-wiki	
+meeting area	集會區	集会区	game	approved	dfzh-wiki	
+tavern	酒館	酒馆	game	approved		
+temple	神殿	神殿	game	approved		
+hospital	醫院	医院	game	approved		
+library	圖書館	图书馆	game	approved		複數 libraries 不符 (e?s) 規則，要另列
+guildhall	公會大廳	公会大厅	game	approved		
+dormitory	宿舍	宿舍	game	approved		複數 dormitories 要另列
+barracks	營房	营房	game	approved		
+dining hall	餐廳	餐厅	game	approved		
+dining room	餐廳	餐厅	game	approved		
+office	辦公室	办公室	game	draft		「seven mythical symbols of office」指官職
+bedroom	臥室	卧室	game	approved		
+quarters	住處	住处	game	approved		Meager／Modest／Noble quarters 都是房間等級，沒有別的意思
+study	書房	书房	game	draft		動詞「to study」「moved to study in」、「the anatomical study of creatures」
+tomb	墓室	墓室	game	draft		世界據點「a tomb」「There is a tomb」是陵墓；「it may be their tomb」是葬身之地
+dungeon	地牢	地牢	game	approved		世界據點「a dungeon」「mythical dungeon」譯地牢也通
+pen	畜欄	畜栏	game	approved		
+pasture	牧場	牧场	game	approved		
+archery range	射箭場	射箭场	game	approved		
+water source	水源	水源	game	approved		
+garbage dump	垃圾場	垃圾场	game	approved		
+caravan	商隊	商队	game	approved		
+wagon	篷車	篷车	game	approved		
+migrant	移民	移民	game	approved		en 寫單數，同時涵蓋 migrants
+bin	貨箱	货箱	game	approved		
+bag	袋子	袋子	game	approved		
+barrel	桶	桶	game	approved		
+chest	箱子	箱子	game	approved		raws 裡只有家具 chest（BOX）；身體部位叫 upper body
+cabinet	櫥櫃	橱柜	game	approved		
+ore	礦石	矿石	game	approved		
+metal bar	金屬錠	金属锭	game	approved		en 寫單數，同時涵蓋 metal bars
+smelter	冶煉爐	冶炼炉	game	approved		
+furnace	熔爐	熔炉	game	draft		Wood Furnace 定案為「燒炭爐」，不含「熔爐」
+well	水井	水井	game	draft		副詞：「as well」「well-suited to the hunt」
+lever	拉桿	拉杆	game	approved		
+pressure plate	壓力板	压力板	game	approved		
+cage	籠子	笼子	game	approved		
+track	軌道	轨道	game	draft		音樂「Track playing:」「Last track:」是曲目
+minecart	礦車	矿车	game	approved		
+route	路線	路线	game	approved		
+floodgate	水閘	水闸	game	approved		
+ramp	斜坡	斜坡	game	approved		
+stair	樓梯	楼梯	game	approved		en 寫單數，同時涵蓋 stair 和 stairs
+stairwell	樓梯井	楼梯井	game	approved		
+channel	挖槽	挖槽	game	approved		其他意思只出現在 FMOD 除錯訊息，不會翻
+smooth	磨平	磨平	game	draft		形容詞：程序化生物外皮「sleek and smooth」、smooth pebble
+engrave	雕刻	雕刻	game	approved		
+high traffic area	高通行區	高通行区	game	approved		
+creature	生物	生物	game	approved		
+pet	寵物	宠物	game	approved		
+livestock	牲畜	牲畜	game	approved		
+grazer	食草動物	食草动物	game	approved		
+tame	馴服	驯服	game	approved		訓練等級 Tame、名字後的 (Tame)、Tame a small animal 都是馴服；Domesticated 另譯「已馴化」
+thoughts	想法	想法	game	approved		
+memories	記憶	记忆	game	approved		
+traits	特質	特质	game	approved		
+values	價值觀	价值观	game	draft		「Values stoicism」譯「重視內斂」、「values tradition」「the value of art」
+preferences	偏好	偏好	game	approved		
+needs	需求	需求	game	draft		動詞：「needs 3 tokens」、醫院段落「needs to have Beds」
+personality	性格	性格	game	approved		
+relations	人際關係	人际关系	game	draft		「trade relations」「to improve trade relations」是貿易關係
+deity	神祇	神祇	game	approved	dfzh-wiki	
+civilization	文明	文明	game	approved		
+site government	據點政府	据点政府	game	approved	dfzh-wiki	
+missions	派遣	派遣	game	draft		「a rescue mission」「infiltration mission」「I'm on an important mission」是任務
+alert	警報	警报	ui	approved		先把 settings.tsv「Alert」繁中的「警示」改成「警報」（見第 1 節），否則會 FAIL
+tutorial	教學	教程	ui	approved		
+guide	指南	指南	ui	draft		「Saving flow guides」譯流體導引；「agreed to guide」「as a guide」是嚮導
+hotkey	快捷鍵	快捷键	ui	approved		
+intelligence	情報	情报	game	approved		遊戲字串只有司法情報一種用法
+case	案件	案件	game	draft		popups.tsv 活動區說明「in case of intruders」
+crime	罪行	罪行	game	approved		
+conspiracy	陰謀	阴谋	game	approved		複數 conspiracies 要另列
+interrogation	審訊	审讯	game	approved		
+Accept	接受	接受	ui	approved		petitions: accept 等用法都是接受
+Regular Mining	一般挖掘	常规挖掘	ui	approved		
+Stair Mining	樓梯挖掘	楼梯挖掘	ui	approved		
+Build	建造	建造	ui	draft		動詞 build 到處都是，教學段落譯成「蓋這座工坊」
+Nobles and administrators	貴族與管理者	贵族与管理人员	ui	approved		
+Stocks	庫存	库存	ui	approved		
+Gathering	採集	采集	ui	approved		
+Trade	貿易	贸易	ui	draft		動詞：「you can trade for food」「Anyone can Trade」
+Position	職位	职位	ui	draft		空間位置義
+Kill	擊殺	击杀	ui	draft		戰鬥敘述裡的動詞
+Station	駐守	驻守	ui	draft		[INFERENCE] 名詞 station（崗位、站點）不是駐守
+Patrol Route	巡邏路線	巡逻路线	ui	approved		
+Defend Burrow	防守活動區	防守活动区	ui	approved		
+Bring Goods to Depot	搬運貨物到貿易站	搬运货物到贸易站	ui	approved		
+Farming	農業	农业	ui	draft		「aboveground farming」「farming civilizations」是耕作、農耕
+Hatch	活蓋	活盖	game	approved		沒有孵化義的用法；hatch cover 也是活蓋
+Wood Furnace	燒炭爐	烧炭炉	game	approved		
+Boulder	石塊	石块	game	approved		
+Track stop	軌道停靠站	轨道停靠站	game	approved		
+Traction bench	牽引床	牵引床	game	approved		
+Ashery	製灰工坊|製灰坊	制灰工坊|制灰坊	game	approved		標籤放不下全名時用「製灰坊」
