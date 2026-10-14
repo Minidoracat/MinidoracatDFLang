@@ -1,0 +1,140 @@
+en	zh-Hant	zh-Hans	align	note
+cup	杯子	杯子		exe 物品名
+barrel	桶	桶		exe 物品名
+cage	籠子	笼子		exe 物品名
+terrarium	飼養箱	饲养箱		exe 物品名；玻璃製的籠子；不譯「玻璃缸」以免接材料成「玻璃玻璃缸」
+window	窗戶	窗户		exe 物品名
+chain	鎖鏈	锁链		exe 物品名；沿用教學的「鎖鏈」
+rope	繩子	绳子		exe 物品名；沿用教學的「繩子」
+casket	棺材	棺材		exe 物品名；木製棺材；與 coffin 同為棺材，避免材料前綴接成「木棺木」
+musical instrument	樂器	乐器		exe 物品名
+flask	水壺	水壶		exe 物品名
+vial	小瓶	小瓶		exe 物品名
+waterskin	水袋	水囊		exe 物品名；兩岸用語不同，沿用工坊提示
+backpack	背包	背包		exe 物品名
+bag	袋子	袋子		exe 物品名
+quiver	箭袋	箭袋		exe 物品名
+crutch	拐杖	拐杖		exe 物品名
+splint	夾板	夹板		exe 物品名
+cast	固定具	固定具		exe 物品名；醫院用的骨折固定物；材料是 gypsum plaster「石膏灰泥」，譯「石膏」會接成「石膏灰泥石膏」
+grate	格柵	格栅		exe 物品名
+hatch cover	活蓋	活盖		exe 物品名
+floodgate	水閘	水闸		exe 物品名
+door	門	门		exe 物品名
+coffer	寶箱	宝箱		exe 物品名；石或金屬製的箱子（木製叫 chest 箱子）
+box	盒子	盒子		exe 物品名
+bin	貨箱	货箱		exe 物品名
+cut clear glass gems	透明玻璃刻面寶石	透明玻璃刻面宝石		exe 物品名；cut 譯「刻面」，與 raw「原石」相對
+cut green glass gems	綠玻璃刻面寶石	绿玻璃刻面宝石		exe 物品名
+bars	錠	锭		exe 物品名；接材料成「鐵錠」；介面標籤 Bars 是「錠材」
+refined coal	精煉煤	精炼煤		exe 物品名
+portal	大門	大门		exe 物品名；玻璃製的門
+blocks	磚塊	砖块		exe 物品名；接材料成「花崗岩磚塊」；與介面標籤 Blocks 的「磚塊」一致
+cut crystal glass gems	水晶玻璃刻面寶石	水晶玻璃刻面宝石		exe 物品名
+boulders	石塊	石块		exe 物品名
+stone boulders	石塊	石块		exe 物品名
+small rock	小石子	小石子		exe 物品名
+rock	石頭	石头		exe 物品名
+coke	焦炭	焦炭		exe 物品名
+branch	樹枝	树枝		exe 物品名
+raw crystal glass	水晶玻璃原石	水晶玻璃原石		exe 物品名
+raw clear glass	透明玻璃原石	透明玻璃原石		exe 物品名
+raw green glass	綠玻璃原石	绿玻璃原石		exe 物品名
+cloth shop sign	布店招牌	布店招牌		exe 物品名
+general imports sign	進口雜貨店招牌	进口杂货店招牌		exe 物品名
+clothing imports sign	進口服飾店招牌	进口服装店招牌		exe 物品名；服飾／服装兩岸用語不同
+food imports sign	進口食品店招牌	进口食品店招牌		exe 物品名
+bone carver's shop sign	骨雕店招牌	骨雕店招牌		exe 物品名
+leather clothing shop sign	皮衣店招牌	皮衣店招牌		exe 物品名
+woven clothing shop sign	織品服飾店招牌	纺织服装店招牌		exe 物品名；服飾／服装兩岸用語不同
+leather shop sign	皮革店招牌	皮革店招牌		exe 物品名
+traction bench	牽引床	牵引床		exe 物品名
+bracelet	手鐲	手镯		exe 物品名
+earring	耳環	耳环		exe 物品名
+ring	戒指	戒指		exe 物品名
+memorial	紀念碑	纪念碑		exe 物品名
+statue	雕像	雕像		exe 物品名
+millstone	石磨	石磨		exe 物品名
+quern	手推磨	手推磨		exe 物品名
+coin	錢幣	硬币		exe 物品名
+crown	王冠	王冠		exe 物品名
+scepter	權杖	权杖		exe 物品名
+anvil	砧台	砧台		exe 物品名；照翻譯指南，接材料成「鐵砧台」
+ballista parts	弩砲零件	弩炮零件		exe 物品名
+trap component	陷阱零件	陷阱零件		exe 物品名
+pipe section	管段	管段		exe 物品名
+ammunition	彈藥	弹药		exe 物品名
+siege ammo	攻城彈藥	攻城弹药		exe 物品名
+ballista arrow head	弩砲箭頭	弩炮箭头		exe 物品名
+amulet	護身符	护身符		exe 物品名
+powder	粉末	粉末		exe 物品名
+tube	管子	管子		exe 物品名；玻璃製的管段
+mechanisms	機械裝置	机械装置		exe 物品名；沿用教學的「機械裝置」
+bolt thrower parts	弩箭機零件	弩箭机零件		exe 物品名
+catapult parts	投石機零件	投石机零件		exe 物品名
+glob	團塊	团块		exe 物品名
+figurine	小雕像	小雕像		exe 物品名
+codex	書冊	书册		exe 物品名；沿用圖書館提示的「書冊」
+codices	書冊	书册		exe 物品名
+web	蛛網	蛛网		exe 物品名
+throne	王座	王座		exe 物品名
+animal trap	捕獸器	捕兽器		exe 物品名
+bucket	水桶	水桶		exe 物品名
+totem	圖騰	图腾		exe 物品名
+tanned hide	鞣製獸皮	鞣制兽皮		exe 物品名
+sheet	紙張	纸张		exe 物品名
+strands	絲線	丝线		exe 物品名；金屬抽成的線（adamantine strands 精金絲線）
+legwear	褲裝	裤装		exe 物品名；原文 7 格只放得下兩字
+headwear	頭部裝備	头部装备		exe 物品名
+footwear	足部裝備	足部装备		exe 物品名
+prepared meal	餐點	饭菜		exe 物品名
+handwear	手部裝備	手部装备		exe 物品名
+egg	蛋	蛋		exe 物品名
+leaf or fruit	葉子或果實	叶子或果实		exe 物品名
+leaves and fruit	葉子和果實	叶子和果实		exe 物品名
+small tame animal	馴服的小動物	驯服的小动物		exe 物品名
+small live animal	活的小動物	活的小动物		exe 物品名
+yarn body part	毛線身體部位	毛线身体部位		exe 物品名
+soap body part	肥皂身體部位	肥皂身体部位		exe 物品名
+wooden body part	木質身體部位	木质身体部位		exe 物品名
+leather body part	皮革身體部位	皮革身体部位		exe 物品名
+seeds	種子	种子		exe 物品名
+strand body part	絲狀身體部位	丝状身体部位		exe 物品名
+slab	石板	石板		exe 物品名
+tavern sign	酒館招牌	酒馆招牌		exe 物品名
+metal furniture shop sign	金屬家具店招牌	金属家具店招牌		exe 物品名
+stone furniture shop sign	石製家具店招牌	石制家具店招牌		exe 物品名
+silk body part	絲質身體部位	丝质身体部位		exe 物品名
+plant part	植物部位	植物部位		exe 物品名
+corpse	屍體	尸体		exe 物品名
+blacksmith's shop sign	鐵匠鋪招牌	铁匠铺招牌		exe 物品名
+bowyer's shop sign	弓弩鋪招牌	弓弩铺招牌		exe 物品名
+weaponsmith's shop sign	武器鋪招牌	武器铺招牌		exe 物品名
+gem cutter's shop sign	寶石切割店招牌	宝石切割店招牌		exe 物品名
+carpenter's shop sign	木匠鋪招牌	木匠铺招牌		exe 物品名
+leather goods shop sign	皮件店招牌	皮具店招牌		exe 物品名；皮件／皮具兩岸用語不同
+metal craft shop sign	金屬工藝品店招牌	金属工艺品店招牌		exe 物品名
+armorsmith's shop sign	盔甲鋪招牌	盔甲铺招牌		exe 物品名
+leather	皮革	皮革		exe 物品名
+cloth	布料	布料		exe 物品名
+logs	原木	原木		exe 物品名
+log	原木	原木		exe 物品名
+tables	桌子	桌子		exe 物品名
+chairs	椅子	椅子		exe 物品名
+beds	床	床		exe 物品名
+coffins	棺材	棺材		exe 物品名
+armor stand	盔甲架	盔甲架		exe 物品名
+weapon rack	武器架	武器架		exe 物品名
+glass	玻璃	玻璃		exe 物品名
+wool	羊毛	羊毛		exe 物品名
+yarn	毛線	毛线		exe 物品名
+lye	鹼液	碱液		exe 物品名
+potash	鉀鹼	钾碱		exe 物品名
+pearlash	珍珠灰	珍珠灰		exe 物品名
+Boulder	石塊	石块		exe 地形說明（材料＋ Boulder：chert Boulder 燧石石塊）；術語 Boulder
+Pebbles	卵石	卵石		exe 地形說明（材料＋ Pebbles：chert Pebbles 燧石卵石）
+Ash	木灰	木灰		exe 庫存材料（燒炭爐產的灰）；整句寫出來，免得引擎把大寫查不到的字退回小寫，套到同字的 raws 名稱（ash 梣樹）
+Ashes	灰燼	灰烬		exe 地形特徵；整句寫出來，免得引擎把大寫查不到的字退回小寫，套到同字的 raws 名稱（ash 梣樹）
+Amber	琥珀	琥珀		exe 庫存材料；整句寫出來，免得引擎把大寫查不到的字退回小寫，套到同字的 raws 名稱（amber 顏色「琥珀色」）
+Sea Foam	海沫	海沫		exe 流體（海浪的泡沫）；整句寫出來，免得引擎把大寫查不到的字退回小寫，套到同字的 raws 名稱（sea foam 顏色「海沫綠」）
+Mountains	山脈	山脉		exe 地區類型；整句寫出來，免得引擎把大寫查不到的字退回小寫，套到同字的 raws 名稱（mountains 形狀「山峰」）

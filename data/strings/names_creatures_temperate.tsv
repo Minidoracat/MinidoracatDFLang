@@ -1,0 +1,466 @@
+en	zh-Hant	zh-Hans	align	note
+grizzly bear	灰熊	灰熊		CREATURE:BEAR_GRIZZLY NAME
+grizzly bears	灰熊	灰熊		CREATURE:BEAR_GRIZZLY NAME
+grizzly bear cub	幼灰熊	幼灰熊		CREATURE:BEAR_GRIZZLY GENERAL_CHILD_NAME
+grizzly bear cubs	幼灰熊	幼灰熊		CREATURE:BEAR_GRIZZLY GENERAL_CHILD_NAME
+grizzly bear man	灰熊人	灰熊人		CREATURE:BEAR_GRIZZLY_MAN CASTE_NAME
+grizzly bear men	灰熊人	灰熊人		CREATURE:BEAR_GRIZZLY_MAN CASTE_NAME
+grizzly bear woman	女灰熊人	女灰熊人		CREATURE:BEAR_GRIZZLY_MAN CASTE_NAME
+grizzly bear women	女灰熊人	女灰熊人		CREATURE:BEAR_GRIZZLY_MAN CASTE_NAME
+giant grizzly bear	巨型灰熊	巨型灰熊		CREATURE:GIANT_BEAR_GRIZZLY NAME
+giant grizzly bears	巨型灰熊	巨型灰熊		CREATURE:GIANT_BEAR_GRIZZLY NAME
+giant grizzly bear cub	幼巨型灰熊	幼巨型灰熊		CREATURE:GIANT_BEAR_GRIZZLY GENERAL_CHILD_NAME
+giant grizzly bear cubs	幼巨型灰熊	幼巨型灰熊		CREATURE:GIANT_BEAR_GRIZZLY GENERAL_CHILD_NAME
+black bear	黑熊	黑熊		CREATURE:BEAR_BLACK NAME
+black bears	黑熊	黑熊		CREATURE:BEAR_BLACK NAME
+black bear cub	幼黑熊	幼黑熊		CREATURE:BEAR_BLACK GENERAL_CHILD_NAME
+black bear cubs	幼黑熊	幼黑熊		CREATURE:BEAR_BLACK GENERAL_CHILD_NAME
+black bear man	黑熊人	黑熊人		CREATURE:BEAR_BLACK_MAN CASTE_NAME
+black bear men	黑熊人	黑熊人		CREATURE:BEAR_BLACK_MAN CASTE_NAME
+black bear woman	女黑熊人	女黑熊人		CREATURE:BEAR_BLACK_MAN CASTE_NAME
+black bear women	女黑熊人	女黑熊人		CREATURE:BEAR_BLACK_MAN CASTE_NAME
+giant black bear	巨型黑熊	巨型黑熊		CREATURE:GIANT_BEAR_BLACK NAME
+giant black bears	巨型黑熊	巨型黑熊		CREATURE:GIANT_BEAR_BLACK NAME
+giant black bear cub	幼巨型黑熊	幼巨型黑熊		CREATURE:GIANT_BEAR_BLACK GENERAL_CHILD_NAME
+giant black bear cubs	幼巨型黑熊	幼巨型黑熊		CREATURE:GIANT_BEAR_BLACK GENERAL_CHILD_NAME
+deer	鹿	鹿		CREATURE:DEER NAME
+deer fawn	幼鹿	幼鹿		CREATURE:DEER GENERAL_CHILD_NAME
+deer fawns	幼鹿	幼鹿		CREATURE:DEER GENERAL_CHILD_NAME
+deer man	鹿人	鹿人		CREATURE:DEER_MAN CASTE_NAME
+deer men	鹿人	鹿人		CREATURE:DEER_MAN CASTE_NAME
+deer woman	女鹿人	女鹿人		CREATURE:DEER_MAN CASTE_NAME
+deer women	女鹿人	女鹿人		CREATURE:DEER_MAN CASTE_NAME
+giant deer	巨型鹿	巨型鹿		CREATURE:GIANT_DEER NAME
+giant deer fawn	幼巨型鹿	幼巨型鹿		CREATURE:GIANT_DEER GENERAL_CHILD_NAME
+giant deer fawns	幼巨型鹿	幼巨型鹿		CREATURE:GIANT_DEER GENERAL_CHILD_NAME
+fox	狐狸	狐狸		CREATURE:FOX NAME
+foxes	狐狸	狐狸		CREATURE:FOX NAME
+fox pup	幼狐狸	幼狐狸		CREATURE:FOX GENERAL_CHILD_NAME
+fox pups	幼狐狸	幼狐狸		CREATURE:FOX GENERAL_CHILD_NAME
+fox man	狐狸人	狐狸人		CREATURE:FOX_MAN CASTE_NAME
+fox men	狐狸人	狐狸人		CREATURE:FOX_MAN CASTE_NAME
+fox woman	女狐狸人	女狐狸人		CREATURE:FOX_MAN CASTE_NAME
+fox women	女狐狸人	女狐狸人		CREATURE:FOX_MAN CASTE_NAME
+giant fox	巨型狐狸	巨型狐狸		CREATURE:GIANT_FOX NAME
+giant foxes	巨型狐狸	巨型狐狸		CREATURE:GIANT_FOX NAME
+giant fox pup	幼巨型狐狸	幼巨型狐狸		CREATURE:GIANT_FOX GENERAL_CHILD_NAME
+giant fox pups	幼巨型狐狸	幼巨型狐狸		CREATURE:GIANT_FOX GENERAL_CHILD_NAME
+raccoon	浣熊	浣熊		CREATURE:RACCOON NAME
+raccoons	浣熊	浣熊		CREATURE:RACCOON NAME
+raccoon pup	幼浣熊	幼浣熊		CREATURE:RACCOON GENERAL_CHILD_NAME
+raccoon pups	幼浣熊	幼浣熊		CREATURE:RACCOON GENERAL_CHILD_NAME
+raccoon man	浣熊人	浣熊人		CREATURE:RACCOON_MAN CASTE_NAME
+raccoon men	浣熊人	浣熊人		CREATURE:RACCOON_MAN CASTE_NAME
+raccoon woman	女浣熊人	女浣熊人		CREATURE:RACCOON_MAN CASTE_NAME
+raccoon women	女浣熊人	女浣熊人		CREATURE:RACCOON_MAN CASTE_NAME
+giant raccoon	巨型浣熊	巨型浣熊		CREATURE:GIANT_RACCOON NAME
+giant raccoons	巨型浣熊	巨型浣熊		CREATURE:GIANT_RACCOON NAME
+giant raccoon pup	幼巨型浣熊	幼巨型浣熊		CREATURE:GIANT_RACCOON GENERAL_CHILD_NAME
+giant raccoon pups	幼巨型浣熊	幼巨型浣熊		CREATURE:GIANT_RACCOON GENERAL_CHILD_NAME
+rhesus macaque	恆河猴	猕猴		CREATURE:MACAQUE_RHESUS NAME；兩岸差異：台灣通稱恆河猴，大陸正式名猕猴
+rhesus macaques	恆河猴	猕猴		CREATURE:MACAQUE_RHESUS NAME
+rhesus macaque man	恆河猴人	猕猴人		CREATURE:MACAQUE_RHESUS_MAN CASTE_NAME
+rhesus macaque men	恆河猴人	猕猴人		CREATURE:MACAQUE_RHESUS_MAN CASTE_NAME
+rhesus macaque woman	女恆河猴人	女猕猴人		CREATURE:MACAQUE_RHESUS_MAN CASTE_NAME
+rhesus macaque women	女恆河猴人	女猕猴人		CREATURE:MACAQUE_RHESUS_MAN CASTE_NAME
+giant rhesus macaque	巨型恆河猴	巨型猕猴		CREATURE:GIANT_MACAQUE_RHESUS NAME
+giant rhesus macaques	巨型恆河猴	巨型猕猴		CREATURE:GIANT_MACAQUE_RHESUS NAME
+cougar	美洲獅	美洲狮		CREATURE:COUGAR NAME
+cougars	美洲獅	美洲狮		CREATURE:COUGAR NAME
+cougar cub	幼美洲獅	幼美洲狮		CREATURE:COUGAR GENERAL_CHILD_NAME
+cougar cubs	幼美洲獅	幼美洲狮		CREATURE:COUGAR GENERAL_CHILD_NAME
+cougar man	美洲獅人	美洲狮人		CREATURE:COUGAR_MAN CASTE_NAME
+cougar men	美洲獅人	美洲狮人		CREATURE:COUGAR_MAN CASTE_NAME
+cougar woman	女美洲獅人	女美洲狮人		CREATURE:COUGAR_MAN CASTE_NAME
+cougar women	女美洲獅人	女美洲狮人		CREATURE:COUGAR_MAN CASTE_NAME
+giant cougar	巨型美洲獅	巨型美洲狮		CREATURE:GIANT_COUGAR NAME
+giant cougars	巨型美洲獅	巨型美洲狮		CREATURE:GIANT_COUGAR NAME
+giant cougar cub	幼巨型美洲獅	幼巨型美洲狮		CREATURE:GIANT_COUGAR GENERAL_CHILD_NAME
+giant cougar cubs	幼巨型美洲獅	幼巨型美洲狮		CREATURE:GIANT_COUGAR GENERAL_CHILD_NAME
+wolf	狼	狼		CREATURE:WOLF NAME
+wolves	狼	狼		CREATURE:WOLF NAME
+wolf pup	幼狼	幼狼		CREATURE:WOLF GENERAL_CHILD_NAME
+wolf pups	幼狼	幼狼		CREATURE:WOLF GENERAL_CHILD_NAME
+wolf man	狼人	狼人		CREATURE:WOLF_MAN CASTE_NAME；狼人與 werewolf 慣用譯名撞名；照指南 X人
+wolf men	狼人	狼人		CREATURE:WOLF_MAN CASTE_NAME
+wolf woman	女狼人	女狼人		CREATURE:WOLF_MAN CASTE_NAME
+wolf women	女狼人	女狼人		CREATURE:WOLF_MAN CASTE_NAME
+giant wolf	巨型狼	巨型狼		CREATURE:GIANT_WOLF NAME
+giant wolves	巨型狼	巨型狼		CREATURE:GIANT_WOLF NAME
+giant wolf pup	幼巨型狼	幼巨型狼		CREATURE:GIANT_WOLF GENERAL_CHILD_NAME
+giant wolf pups	幼巨型狼	幼巨型狼		CREATURE:GIANT_WOLF GENERAL_CHILD_NAME
+groundhog	土撥鼠	土拨鼠		CREATURE:GROUNDHOG NAME
+groundhogs	土撥鼠	土拨鼠		CREATURE:GROUNDHOG NAME
+groundhog pup	幼土撥鼠	幼土拨鼠		CREATURE:GROUNDHOG GENERAL_CHILD_NAME
+groundhog pups	幼土撥鼠	幼土拨鼠		CREATURE:GROUNDHOG GENERAL_CHILD_NAME
+groundhog man	土撥鼠人	土拨鼠人		CREATURE:GROUNDHOG_MAN CASTE_NAME
+groundhog men	土撥鼠人	土拨鼠人		CREATURE:GROUNDHOG_MAN CASTE_NAME
+groundhog woman	女土撥鼠人	女土拨鼠人		CREATURE:GROUNDHOG_MAN CASTE_NAME
+groundhog women	女土撥鼠人	女土拨鼠人		CREATURE:GROUNDHOG_MAN CASTE_NAME
+giant groundhog	巨型土撥鼠	巨型土拨鼠		CREATURE:GIANT_GROUNDHOG NAME
+giant groundhogs	巨型土撥鼠	巨型土拨鼠		CREATURE:GIANT_GROUNDHOG NAME
+giant groundhog pup	幼巨型土撥鼠	幼巨型土拨鼠		CREATURE:GIANT_GROUNDHOG GENERAL_CHILD_NAME
+giant groundhog pups	幼巨型土撥鼠	幼巨型土拨鼠		CREATURE:GIANT_GROUNDHOG GENERAL_CHILD_NAME
+alligator	短吻鱷	短吻鳄		CREATURE:ALLIGATOR NAME
+alligators	短吻鱷	短吻鳄		CREATURE:ALLIGATOR NAME
+alligator hatchling	幼短吻鱷	幼短吻鳄		CREATURE:ALLIGATOR GENERAL_CHILD_NAME
+alligator hatchlings	幼短吻鱷	幼短吻鳄		CREATURE:ALLIGATOR GENERAL_CHILD_NAME
+alligator man	短吻鱷人	短吻鳄人		CREATURE:ALLIGATOR_MAN CASTE_NAME
+alligator men	短吻鱷人	短吻鳄人		CREATURE:ALLIGATOR_MAN CASTE_NAME
+alligator woman	女短吻鱷人	女短吻鳄人		CREATURE:ALLIGATOR_MAN CASTE_NAME
+alligator women	女短吻鱷人	女短吻鳄人		CREATURE:ALLIGATOR_MAN CASTE_NAME
+giant alligator	巨型短吻鱷	巨型短吻鳄		CREATURE:GIANT_ALLIGATOR NAME
+giant alligators	巨型短吻鱷	巨型短吻鳄		CREATURE:GIANT_ALLIGATOR NAME
+giant alligator hatchling	幼巨型短吻鱷	幼巨型短吻鳄		CREATURE:GIANT_ALLIGATOR GENERAL_CHILD_NAME
+giant alligator hatchlings	幼巨型短吻鱷	幼巨型短吻鳄		CREATURE:GIANT_ALLIGATOR GENERAL_CHILD_NAME
+buzzard	美洲鷲	美洲鹫		CREATURE:BIRD_BUZZARD NAME；描述為紅臉黑色食腐鳥＝紅頭美洲鷲；寬度限 3 字取美洲鷲
+buzzards	美洲鷲	美洲鹫		CREATURE:BIRD_BUZZARD NAME
+buzzard hatchling	幼美洲鷲	幼美洲鹫		CREATURE:BIRD_BUZZARD GENERAL_CHILD_NAME
+buzzard hatchlings	幼美洲鷲	幼美洲鹫		CREATURE:BIRD_BUZZARD GENERAL_CHILD_NAME
+buzzard man	美洲鷲人	美洲鹫人		CREATURE:BUZZARD_MAN CASTE_NAME
+buzzard men	美洲鷲人	美洲鹫人		CREATURE:BUZZARD_MAN CASTE_NAME
+buzzard woman	女美洲鷲人	女美洲鹫人		CREATURE:BUZZARD_MAN CASTE_NAME
+buzzard women	女美洲鷲人	女美洲鹫人		CREATURE:BUZZARD_MAN CASTE_NAME
+giant buzzard	巨型美洲鷲	巨型美洲鹫		CREATURE:GIANT_BUZZARD NAME
+giant buzzards	巨型美洲鷲	巨型美洲鹫		CREATURE:GIANT_BUZZARD NAME
+giant buzzard hatchling	幼巨型美洲鷲	幼巨型美洲鹫		CREATURE:GIANT_BUZZARD GENERAL_CHILD_NAME
+giant buzzard hatchlings	幼巨型美洲鷲	幼巨型美洲鹫		CREATURE:GIANT_BUZZARD GENERAL_CHILD_NAME
+panda	貓熊	熊猫		CREATURE:PANDA NAME；兩岸差異：貓熊／熊猫
+pandas	貓熊	熊猫		CREATURE:PANDA NAME
+panda cub	幼貓熊	幼熊猫		CREATURE:PANDA GENERAL_CHILD_NAME
+panda cubs	幼貓熊	幼熊猫		CREATURE:PANDA GENERAL_CHILD_NAME
+hair around the eyes	眼周毛髮	眼周毛发		CREATURE:PANDA TLCM_NOUN
+legs	腿	腿		CREATURE:PANDA TLCM_NOUN
+other hair	其他毛髮	其他毛发		CREATURE:PANDA TLCM_NOUN
+gigantic panda	巨型貓熊	巨型熊猫		CREATURE:PANDA, GIGANTIC NAME；真實物種英文就叫 giant panda，遊戲巨型版改稱 gigantic；照巨型X譯
+gigantic pandas	巨型貓熊	巨型熊猫		CREATURE:PANDA, GIGANTIC NAME
+gigantic panda cub	幼巨型貓熊	幼巨型熊猫		CREATURE:PANDA, GIGANTIC GENERAL_CHILD_NAME
+gigantic panda cubs	幼巨型貓熊	幼巨型熊猫		CREATURE:PANDA, GIGANTIC GENERAL_CHILD_NAME
+panda man	貓熊人	熊猫人		CREATURE:PANDA MAN CASTE_NAME
+panda men	貓熊人	熊猫人		CREATURE:PANDA MAN CASTE_NAME
+panda woman	女貓熊人	女熊猫人		CREATURE:PANDA MAN CASTE_NAME
+panda women	女貓熊人	女熊猫人		CREATURE:PANDA MAN CASTE_NAME
+capybara	水豚	水豚		CREATURE:CAPYBARA NAME
+capybaras	水豚	水豚		CREATURE:CAPYBARA NAME
+capybara pup	幼水豚	幼水豚		CREATURE:CAPYBARA GENERAL_CHILD_NAME
+capybara pups	幼水豚	幼水豚		CREATURE:CAPYBARA GENERAL_CHILD_NAME
+giant capybara	巨型水豚	巨型水豚		CREATURE:CAPYBARA, GIANT NAME
+giant capybaras	巨型水豚	巨型水豚		CREATURE:CAPYBARA, GIANT NAME
+giant capybara pup	幼巨型水豚	幼巨型水豚		CREATURE:CAPYBARA, GIANT GENERAL_CHILD_NAME
+giant capybara pups	幼巨型水豚	幼巨型水豚		CREATURE:CAPYBARA, GIANT GENERAL_CHILD_NAME
+capybara man	水豚人	水豚人		CREATURE:CAPYBARA MAN CASTE_NAME
+capybara men	水豚人	水豚人		CREATURE:CAPYBARA MAN CASTE_NAME
+capybara woman	女水豚人	女水豚人		CREATURE:CAPYBARA MAN CASTE_NAME
+capybara women	女水豚人	女水豚人		CREATURE:CAPYBARA MAN CASTE_NAME
+badger	獾	獾		CREATURE:BADGER NAME；描述為群居、條紋臉＝歐亞獾；參考譯名鼬獾是另一物種
+badgers	獾	獾		CREATURE:BADGER NAME
+badger cub	幼獾	幼獾		CREATURE:BADGER GENERAL_CHILD_NAME
+badger cubs	幼獾	幼獾		CREATURE:BADGER GENERAL_CHILD_NAME
+badger sow	母獾	母獾		CREATURE:BADGER CASTE_NAME
+badger sows	母獾	母獾		CREATURE:BADGER CASTE_NAME
+badger boar	公獾	公獾		CREATURE:BADGER CASTE_NAME
+badger boars	公獾	公獾		CREATURE:BADGER CASTE_NAME
+badger man	獾人	獾人		CREATURE:BADGER MAN CASTE_NAME
+badger men	獾人	獾人		CREATURE:BADGER MAN CASTE_NAME
+badger woman	女獾人	女獾人		CREATURE:BADGER MAN CASTE_NAME
+badger women	女獾人	女獾人		CREATURE:BADGER MAN CASTE_NAME
+giant badger	巨型獾	巨型獾		CREATURE:BADGER, GIANT NAME
+giant badgers	巨型獾	巨型獾		CREATURE:BADGER, GIANT NAME
+giant badger cub	幼巨型獾	幼巨型獾		CREATURE:BADGER, GIANT GENERAL_CHILD_NAME
+giant badger cubs	幼巨型獾	幼巨型獾		CREATURE:BADGER, GIANT GENERAL_CHILD_NAME
+giant badger boar	公巨型獾	公巨型獾		CREATURE:BADGER, GIANT CASTE_NAME
+giant badger boars	公巨型獾	公巨型獾		CREATURE:BADGER, GIANT CASTE_NAME
+giant badger sow	母巨型獾	母巨型獾		CREATURE:BADGER, GIANT CASTE_NAME
+giant badger sows	母巨型獾	母巨型獾		CREATURE:BADGER, GIANT CASTE_NAME
+moose	駝鹿	驼鹿		CREATURE:MOOSE NAME
+moose calf	幼駝鹿	幼驼鹿		CREATURE:MOOSE GENERAL_CHILD_NAME
+moose calves	幼駝鹿	幼驼鹿		CREATURE:MOOSE GENERAL_CHILD_NAME
+cow moose	母駝鹿	母驼鹿		CREATURE:MOOSE CASTE_NAME
+bull moose	公駝鹿	公驼鹿		CREATURE:MOOSE CASTE_NAME
+moose man	駝鹿人	驼鹿人		CREATURE:MOOSE MAN CASTE_NAME
+moose men	駝鹿人	驼鹿人		CREATURE:MOOSE MAN CASTE_NAME
+moose woman	女駝鹿人	女驼鹿人		CREATURE:MOOSE MAN CASTE_NAME
+moose women	女駝鹿人	女驼鹿人		CREATURE:MOOSE MAN CASTE_NAME
+giant moose	巨型駝鹿	巨型驼鹿		CREATURE:MOOSE, GIANT NAME
+giant moose calf	幼巨型駝鹿	幼巨型驼鹿		CREATURE:MOOSE, GIANT GENERAL_CHILD_NAME
+giant moose calves	幼巨型駝鹿	幼巨型驼鹿		CREATURE:MOOSE, GIANT GENERAL_CHILD_NAME
+giant moose cow	母巨型駝鹿	母巨型驼鹿		CREATURE:MOOSE, GIANT CASTE_NAME
+giant moose cows	母巨型駝鹿	母巨型驼鹿		CREATURE:MOOSE, GIANT CASTE_NAME
+giant moose bull	公巨型駝鹿	公巨型驼鹿		CREATURE:MOOSE, GIANT CASTE_NAME
+giant moose bulls	公巨型駝鹿	公巨型驼鹿		CREATURE:MOOSE, GIANT CASTE_NAME
+red panda	小貓熊	小熊猫		CREATURE:RED PANDA NAME；兩岸差異：小貓熊／小熊猫
+red pandas	小貓熊	小熊猫		CREATURE:RED PANDA NAME
+red panda cub	幼小貓熊	幼小熊猫		CREATURE:RED PANDA GENERAL_CHILD_NAME
+red panda cubs	幼小貓熊	幼小熊猫		CREATURE:RED PANDA GENERAL_CHILD_NAME
+red panda sow	母小貓熊	母小熊猫		CREATURE:RED PANDA CASTE_NAME
+red panda sows	母小貓熊	母小熊猫		CREATURE:RED PANDA CASTE_NAME
+red panda boar	公小貓熊	公小熊猫		CREATURE:RED PANDA CASTE_NAME
+red panda boars	公小貓熊	公小熊猫		CREATURE:RED PANDA CASTE_NAME
+head and tail	頭部與尾巴	头部和尾巴		CREATURE:RED PANDA TLCM_NOUN
+red panda man	小貓熊人	小熊猫人		CREATURE:RED PANDA MAN CASTE_NAME
+red panda men	小貓熊人	小熊猫人		CREATURE:RED PANDA MAN CASTE_NAME
+red panda woman	女小貓熊人	女小熊猫人		CREATURE:RED PANDA MAN CASTE_NAME
+red panda women	女小貓熊人	女小熊猫人		CREATURE:RED PANDA MAN CASTE_NAME
+giant red panda	巨型小貓熊	巨型小熊猫		CREATURE:RED PANDA, GIANT NAME
+giant red pandas	巨型小貓熊	巨型小熊猫		CREATURE:RED PANDA, GIANT NAME
+giant red panda cub	幼巨型小貓熊	幼巨型小熊猫		CREATURE:RED PANDA, GIANT GENERAL_CHILD_NAME
+giant red panda cubs	幼巨型小貓熊	幼巨型小熊猫		CREATURE:RED PANDA, GIANT GENERAL_CHILD_NAME
+giant red panda boar	公巨型小貓熊	公巨型小熊猫		CREATURE:RED PANDA, GIANT CASTE_NAME
+giant red panda boars	公巨型小貓熊	公巨型小熊猫		CREATURE:RED PANDA, GIANT CASTE_NAME
+giant red panda sow	母巨型小貓熊	母巨型小熊猫		CREATURE:RED PANDA, GIANT CASTE_NAME
+giant red panda sows	母巨型小貓熊	母巨型小熊猫		CREATURE:RED PANDA, GIANT CASTE_NAME
+wild boar	野豬	野猪		CREATURE:WILD_BOAR NAME
+wild boars	野豬	野猪		CREATURE:WILD_BOAR NAME
+wild boar piglet	幼野豬	幼野猪		CREATURE:WILD_BOAR GENERAL_CHILD_NAME
+wild boar piglets	幼野豬	幼野猪		CREATURE:WILD_BOAR GENERAL_CHILD_NAME
+wild boar sow	母野豬	母野猪		CREATURE:WILD_BOAR CASTE_NAME
+wild boar sows	母野豬	母野猪		CREATURE:WILD_BOAR CASTE_NAME
+wild boar man	野豬人	野猪人		CREATURE:WILD_BOAR_MAN CASTE_NAME
+wild boar men	野豬人	野猪人		CREATURE:WILD_BOAR_MAN CASTE_NAME
+wild boar woman	女野豬人	女野猪人		CREATURE:WILD_BOAR_MAN CASTE_NAME
+wild boar women	女野豬人	女野猪人		CREATURE:WILD_BOAR_MAN CASTE_NAME
+giant wild boar	巨型野豬	巨型野猪		CREATURE:GIANT_WILD_BOAR NAME
+giant wild boars	巨型野豬	巨型野猪		CREATURE:GIANT_WILD_BOAR NAME
+giant wild boar piglet	幼巨型野豬	幼巨型野猪		CREATURE:GIANT_WILD_BOAR GENERAL_CHILD_NAME
+giant wild boar piglets	幼巨型野豬	幼巨型野猪		CREATURE:GIANT_WILD_BOAR GENERAL_CHILD_NAME
+coyote	郊狼	郊狼		CREATURE:COYOTE NAME
+coyotes	郊狼	郊狼		CREATURE:COYOTE NAME
+coyote pup	幼郊狼	幼郊狼		CREATURE:COYOTE GENERAL_CHILD_NAME
+coyote pups	幼郊狼	幼郊狼		CREATURE:COYOTE GENERAL_CHILD_NAME
+coyote man	郊狼人	郊狼人		CREATURE:COYOTE_MAN CASTE_NAME
+coyote men	郊狼人	郊狼人		CREATURE:COYOTE_MAN CASTE_NAME
+coyote woman	女郊狼人	女郊狼人		CREATURE:COYOTE_MAN CASTE_NAME
+coyote women	女郊狼人	女郊狼人		CREATURE:COYOTE_MAN CASTE_NAME
+giant coyote	巨型郊狼	巨型郊狼		CREATURE:GIANT_COYOTE NAME
+giant coyotes	巨型郊狼	巨型郊狼		CREATURE:GIANT_COYOTE NAME
+giant coyote pup	幼巨型郊狼	幼巨型郊狼		CREATURE:GIANT_COYOTE GENERAL_CHILD_NAME
+giant coyote pups	幼巨型郊狼	幼巨型郊狼		CREATURE:GIANT_COYOTE GENERAL_CHILD_NAME
+kangaroo	袋鼠	袋鼠		CREATURE:KANGAROO NAME
+kangaroos	袋鼠	袋鼠		CREATURE:KANGAROO NAME
+kangaroo joey	幼袋鼠	幼袋鼠		CREATURE:KANGAROO GENERAL_CHILD_NAME
+kangaroo joeys	幼袋鼠	幼袋鼠		CREATURE:KANGAROO GENERAL_CHILD_NAME
+kangaroo doe	母袋鼠	母袋鼠		CREATURE:KANGAROO CASTE_NAME
+kangaroo does	母袋鼠	母袋鼠		CREATURE:KANGAROO CASTE_NAME
+frozen kangaroo's milk	冰凍的袋鼠奶	冰冻的袋鼠奶		CREATURE:KANGAROO STATE_NAME
+kangaroo's milk	袋鼠奶	袋鼠奶		CREATURE:KANGAROO STATE_NAME
+boiling kangaroo's milk	沸騰的袋鼠奶	沸腾的袋鼠奶		CREATURE:KANGAROO STATE_NAME
+kangaroo cheese	袋鼠起司	袋鼠奶酪		CREATURE:KANGAROO STATE_NAME
+kangaroo cheese powder	袋鼠起司粉	袋鼠奶酪粉		CREATURE:KANGAROO STATE_NAME
+melted kangaroo cheese	融化的袋鼠起司	融化的袋鼠奶酪		CREATURE:KANGAROO STATE_NAME
+boiling kangaroo cheese	沸騰的袋鼠起司	沸腾的袋鼠奶酪		CREATURE:KANGAROO STATE_NAME
+kangaroo buck	公袋鼠	公袋鼠		CREATURE:KANGAROO CASTE_NAME
+kangaroo bucks	公袋鼠	公袋鼠		CREATURE:KANGAROO CASTE_NAME
+kangaroo man	袋鼠人	袋鼠人		CREATURE:KANGAROO_MAN CASTE_NAME
+kangaroo men	袋鼠人	袋鼠人		CREATURE:KANGAROO_MAN CASTE_NAME
+kangaroo woman	女袋鼠人	女袋鼠人		CREATURE:KANGAROO_MAN CASTE_NAME
+kangaroo women	女袋鼠人	女袋鼠人		CREATURE:KANGAROO_MAN CASTE_NAME
+giant kangaroo	巨型袋鼠	巨型袋鼠		CREATURE:GIANT_KANGAROO NAME
+giant kangaroos	巨型袋鼠	巨型袋鼠		CREATURE:GIANT_KANGAROO NAME
+giant kangaroo joey	幼巨型袋鼠	幼巨型袋鼠		CREATURE:GIANT_KANGAROO GENERAL_CHILD_NAME
+giant kangaroo joeys	幼巨型袋鼠	幼巨型袋鼠		CREATURE:GIANT_KANGAROO GENERAL_CHILD_NAME
+koala	無尾熊	树袋熊		CREATURE:KOALA NAME；兩岸差異：台灣通稱無尾熊，大陸正式名树袋熊
+koalas	無尾熊	树袋熊		CREATURE:KOALA NAME
+koala joey	幼無尾熊	幼树袋熊		CREATURE:KOALA GENERAL_CHILD_NAME
+koala joeys	幼無尾熊	幼树袋熊		CREATURE:KOALA GENERAL_CHILD_NAME
+koala man	無尾熊人	树袋熊人		CREATURE:KOALA_MAN CASTE_NAME
+koala men	無尾熊人	树袋熊人		CREATURE:KOALA_MAN CASTE_NAME
+koala woman	女無尾熊人	女树袋熊人		CREATURE:KOALA_MAN CASTE_NAME
+koala women	女無尾熊人	女树袋熊人		CREATURE:KOALA_MAN CASTE_NAME
+giant koala	巨型無尾熊	巨型树袋熊		CREATURE:GIANT_KOALA NAME
+giant koalas	巨型無尾熊	巨型树袋熊		CREATURE:GIANT_KOALA NAME
+adder	蝰蛇	蝰蛇		CREATURE:ADDER NAME
+adders	蝰蛇	蝰蛇		CREATURE:ADDER NAME
+frozen adder venom	冰凍的蝰蛇毒液	冰冻的蝰蛇毒液		CREATURE:ADDER STATE_NAME
+adder venom	蝰蛇毒液	蝰蛇毒液		CREATURE:ADDER STATE_NAME
+boiling adder venom	沸騰的蝰蛇毒液	沸腾的蝰蛇毒液		CREATURE:ADDER STATE_NAME
+adder bite	蝰蛇咬傷	蝰蛇咬伤		CREATURE:ADDER SYN_NAME
+adder man	蝰蛇人	蝰蛇人		CREATURE:ADDER_MAN CASTE_NAME
+adder men	蝰蛇人	蝰蛇人		CREATURE:ADDER_MAN CASTE_NAME
+adder woman	女蝰蛇人	女蝰蛇人		CREATURE:ADDER_MAN CASTE_NAME
+adder women	女蝰蛇人	女蝰蛇人		CREATURE:ADDER_MAN CASTE_NAME
+giant adder	巨型蝰蛇	巨型蝰蛇		CREATURE:GIANT_ADDER NAME
+giant adders	巨型蝰蛇	巨型蝰蛇		CREATURE:GIANT_ADDER NAME
+echidna	針鼴	针鼹		CREATURE:ECHIDNA NAME
+echidnas	針鼴	针鼹		CREATURE:ECHIDNA NAME
+puggle	幼針鼴	幼针鼹		CREATURE:ECHIDNA GENERAL_CHILD_NAME
+puggles	幼針鼴	幼针鼹		CREATURE:ECHIDNA GENERAL_CHILD_NAME
+echidna man	針鼴人	针鼹人		CREATURE:ECHIDNA_MAN CASTE_NAME
+echidna men	針鼴人	针鼹人		CREATURE:ECHIDNA_MAN CASTE_NAME
+echidna woman	女針鼴人	女针鼹人		CREATURE:ECHIDNA_MAN CASTE_NAME
+echidna women	女針鼴人	女针鼹人		CREATURE:ECHIDNA_MAN CASTE_NAME
+giant echidna	巨型針鼴	巨型针鼹		CREATURE:GIANT_ECHIDNA NAME
+giant echidnas	巨型針鼴	巨型针鼹		CREATURE:GIANT_ECHIDNA NAME
+giant echidna puggle	幼巨型針鼴	幼巨型针鼹		CREATURE:GIANT_ECHIDNA GENERAL_CHILD_NAME
+giant echidna puggles	幼巨型針鼴	幼巨型针鼹		CREATURE:GIANT_ECHIDNA GENERAL_CHILD_NAME
+porcupine	豪豬	豪猪		CREATURE:PORCUPINE NAME
+porcupines	豪豬	豪猪		CREATURE:PORCUPINE NAME
+porcupine pup	幼豪豬	幼豪猪		CREATURE:PORCUPINE GENERAL_CHILD_NAME
+porcupine pups	幼豪豬	幼豪猪		CREATURE:PORCUPINE GENERAL_CHILD_NAME
+porcupine man	豪豬人	豪猪人		CREATURE:PORCUPINE_MAN CASTE_NAME
+porcupine men	豪豬人	豪猪人		CREATURE:PORCUPINE_MAN CASTE_NAME
+porcupine woman	女豪豬人	女豪猪人		CREATURE:PORCUPINE_MAN CASTE_NAME
+porcupine women	女豪豬人	女豪猪人		CREATURE:PORCUPINE_MAN CASTE_NAME
+giant porcupine	巨型豪豬	巨型豪猪		CREATURE:GIANT_PORCUPINE NAME
+giant porcupines	巨型豪豬	巨型豪猪		CREATURE:GIANT_PORCUPINE NAME
+giant porcupine pup	幼巨型豪豬	幼巨型豪猪		CREATURE:GIANT_PORCUPINE GENERAL_CHILD_NAME
+giant porcupine pups	幼巨型豪豬	幼巨型豪猪		CREATURE:GIANT_PORCUPINE GENERAL_CHILD_NAME
+kingsnake	王蛇	王蛇		CREATURE:KINGSNAKE NAME；王蛇屬（Lampropeltis）通行名；參考譯名皇帝蛇不通行
+kingsnakes	王蛇	王蛇		CREATURE:KINGSNAKE NAME
+kingsnake man	王蛇人	王蛇人		CREATURE:KINGSNAKE_MAN CASTE_NAME
+kingsnake men	王蛇人	王蛇人		CREATURE:KINGSNAKE_MAN CASTE_NAME
+kingsnake woman	女王蛇人	女王蛇人		CREATURE:KINGSNAKE_MAN CASTE_NAME
+kingsnake women	女王蛇人	女王蛇人		CREATURE:KINGSNAKE_MAN CASTE_NAME
+giant kingsnake	巨型王蛇	巨型王蛇		CREATURE:GIANT_KINGSNAKE NAME
+giant kingsnakes	巨型王蛇	巨型王蛇		CREATURE:GIANT_KINGSNAKE NAME
+gray langur	長尾葉猴	长尾叶猴		CREATURE:GRAY_LANGUR NAME；長尾葉猴屬（Semnopithecus）正式名
+gray langurs	長尾葉猴	长尾叶猴		CREATURE:GRAY_LANGUR NAME
+gray langur man	長尾葉猴人	长尾叶猴人		CREATURE:GRAY_LANGUR_MAN CASTE_NAME
+gray langur men	長尾葉猴人	长尾叶猴人		CREATURE:GRAY_LANGUR_MAN CASTE_NAME
+gray langur woman	女長尾葉猴人	女长尾叶猴人		CREATURE:GRAY_LANGUR_MAN CASTE_NAME
+gray langur women	女長尾葉猴人	女长尾叶猴人		CREATURE:GRAY_LANGUR_MAN CASTE_NAME
+giant gray langur	巨型長尾葉猴	巨型长尾叶猴		CREATURE:GIANT_GRAY_LANGUR NAME
+giant gray langurs	巨型長尾葉猴	巨型长尾叶猴		CREATURE:GIANT_GRAY_LANGUR NAME
+bobcat	短尾貓	短尾猫		CREATURE:BOBCAT NAME
+bobcats	短尾貓	短尾猫		CREATURE:BOBCAT NAME
+bobcat kitten	幼短尾貓	幼短尾猫		CREATURE:BOBCAT GENERAL_CHILD_NAME
+bobcat kittens	幼短尾貓	幼短尾猫		CREATURE:BOBCAT GENERAL_CHILD_NAME
+bobcat man	短尾貓人	短尾猫人		CREATURE:BOBCAT_MAN CASTE_NAME
+bobcat men	短尾貓人	短尾猫人		CREATURE:BOBCAT_MAN CASTE_NAME
+bobcat woman	女短尾貓人	女短尾猫人		CREATURE:BOBCAT_MAN CASTE_NAME
+bobcat women	女短尾貓人	女短尾猫人		CREATURE:BOBCAT_MAN CASTE_NAME
+giant bobcat	巨型短尾貓	巨型短尾猫		CREATURE:GIANT_BOBCAT NAME
+giant bobcats	巨型短尾貓	巨型短尾猫		CREATURE:GIANT_BOBCAT NAME
+giant bobcat kitten	幼巨型短尾貓	幼巨型短尾猫		CREATURE:GIANT_BOBCAT GENERAL_CHILD_NAME
+giant bobcat kittens	幼巨型短尾貓	幼巨型短尾猫		CREATURE:GIANT_BOBCAT GENERAL_CHILD_NAME
+skunk	臭鼬	臭鼬		CREATURE:SKUNK NAME
+skunks	臭鼬	臭鼬		CREATURE:SKUNK NAME
+skunk kit	幼臭鼬	幼臭鼬		CREATURE:SKUNK GENERAL_CHILD_NAME
+skunk kits	幼臭鼬	幼臭鼬		CREATURE:SKUNK GENERAL_CHILD_NAME
+skunk man	臭鼬人	臭鼬人		CREATURE:SKUNK_MAN CASTE_NAME
+skunk men	臭鼬人	臭鼬人		CREATURE:SKUNK_MAN CASTE_NAME
+skunk woman	女臭鼬人	女臭鼬人		CREATURE:SKUNK_MAN CASTE_NAME
+skunk women	女臭鼬人	女臭鼬人		CREATURE:SKUNK_MAN CASTE_NAME
+giant skunk	巨型臭鼬	巨型臭鼬		CREATURE:GIANT_SKUNK NAME
+giant skunks	巨型臭鼬	巨型臭鼬		CREATURE:GIANT_SKUNK NAME
+giant skunk kit	幼巨型臭鼬	幼巨型臭鼬		CREATURE:GIANT_SKUNK GENERAL_CHILD_NAME
+giant skunk kits	幼巨型臭鼬	幼巨型臭鼬		CREATURE:GIANT_SKUNK GENERAL_CHILD_NAME
+green tree frog	綠樹蛙	绿树蛙		CREATURE:GREEN_TREE_FROG NAME
+green tree frogs	綠樹蛙	绿树蛙		CREATURE:GREEN_TREE_FROG NAME
+green tree frog man	綠樹蛙人	绿树蛙人		CREATURE:GREEN_TREE_FROG_MAN CASTE_NAME
+green tree frog men	綠樹蛙人	绿树蛙人		CREATURE:GREEN_TREE_FROG_MAN CASTE_NAME
+green tree frog woman	女綠樹蛙人	女绿树蛙人		CREATURE:GREEN_TREE_FROG_MAN CASTE_NAME
+green tree frog women	女綠樹蛙人	女绿树蛙人		CREATURE:GREEN_TREE_FROG_MAN CASTE_NAME
+giant green tree frog	巨型綠樹蛙	巨型绿树蛙		CREATURE:GIANT_GREEN_TREE_FROG NAME
+giant green tree frogs	巨型綠樹蛙	巨型绿树蛙		CREATURE:GIANT_GREEN_TREE_FROG NAME
+hare	野兔	野兔		CREATURE:HARE NAME
+hares	野兔	野兔		CREATURE:HARE NAME
+leveret	幼野兔	幼野兔		CREATURE:HARE GENERAL_CHILD_NAME
+leverets	幼野兔	幼野兔		CREATURE:HARE GENERAL_CHILD_NAME
+doe hare	母野兔	母野兔		CREATURE:HARE CASTE_NAME
+doe hares	母野兔	母野兔		CREATURE:HARE CASTE_NAME
+buck hare	公野兔	公野兔		CREATURE:HARE CASTE_NAME
+buck hares	公野兔	公野兔		CREATURE:HARE CASTE_NAME
+hare man	野兔人	野兔人		CREATURE:HARE_MAN CASTE_NAME
+hare men	野兔人	野兔人		CREATURE:HARE_MAN CASTE_NAME
+hare woman	女野兔人	女野兔人		CREATURE:HARE_MAN CASTE_NAME
+hare women	女野兔人	女野兔人		CREATURE:HARE_MAN CASTE_NAME
+giant hare	巨型野兔	巨型野兔		CREATURE:GIANT_HARE NAME
+giant hares	巨型野兔	巨型野兔		CREATURE:GIANT_HARE NAME
+giant leveret	幼巨型野兔	幼巨型野兔		CREATURE:GIANT_HARE GENERAL_CHILD_NAME
+giant leverets	幼巨型野兔	幼巨型野兔		CREATURE:GIANT_HARE GENERAL_CHILD_NAME
+rattlesnake	響尾蛇	响尾蛇		CREATURE:RATTLESNAKE NAME
+rattlesnakes	響尾蛇	响尾蛇		CREATURE:RATTLESNAKE NAME
+frozen rattlesnake venom	冰凍的響尾蛇毒液	冰冻的响尾蛇毒液		CREATURE:RATTLESNAKE STATE_NAME
+rattlesnake venom	響尾蛇毒液	响尾蛇毒液		CREATURE:RATTLESNAKE STATE_NAME
+boiling rattlesnake venom	沸騰的響尾蛇毒液	沸腾的响尾蛇毒液		CREATURE:RATTLESNAKE STATE_NAME
+rattlesnake bite	響尾蛇咬傷	响尾蛇咬伤		CREATURE:RATTLESNAKE SYN_NAME
+rattlesnake man	響尾蛇人	响尾蛇人		CREATURE:RATTLESNAKE_MAN CASTE_NAME
+rattlesnake men	響尾蛇人	响尾蛇人		CREATURE:RATTLESNAKE_MAN CASTE_NAME
+rattlesnake woman	女響尾蛇人	女响尾蛇人		CREATURE:RATTLESNAKE_MAN CASTE_NAME
+rattlesnake women	女響尾蛇人	女响尾蛇人		CREATURE:RATTLESNAKE_MAN CASTE_NAME
+giant rattlesnake	巨型響尾蛇	巨型响尾蛇		CREATURE:GIANT_RATTLESNAKE NAME
+giant rattlesnakes	巨型響尾蛇	巨型响尾蛇		CREATURE:GIANT_RATTLESNAKE NAME
+weasel	伶鼬	伶鼬		CREATURE:WEASEL NAME；raw 對應 Mustela nivalis（伶鼬）；兩岸正式名相同
+weasels	伶鼬	伶鼬		CREATURE:WEASEL NAME
+weasel kit	幼伶鼬	幼伶鼬		CREATURE:WEASEL GENERAL_CHILD_NAME
+weasel kits	幼伶鼬	幼伶鼬		CREATURE:WEASEL GENERAL_CHILD_NAME
+weasel man	伶鼬人	伶鼬人		CREATURE:WEASEL_MAN CASTE_NAME
+weasel men	伶鼬人	伶鼬人		CREATURE:WEASEL_MAN CASTE_NAME
+weasel woman	女伶鼬人	女伶鼬人		CREATURE:WEASEL_MAN CASTE_NAME
+weasel women	女伶鼬人	女伶鼬人		CREATURE:WEASEL_MAN CASTE_NAME
+giant weasel	巨型伶鼬	巨型伶鼬		CREATURE:GIANT_WEASEL NAME
+giant weasels	巨型伶鼬	巨型伶鼬		CREATURE:GIANT_WEASEL NAME
+giant weasel kit	幼巨型伶鼬	幼巨型伶鼬		CREATURE:GIANT_WEASEL GENERAL_CHILD_NAME
+giant weasel kits	幼巨型伶鼬	幼巨型伶鼬		CREATURE:GIANT_WEASEL GENERAL_CHILD_NAME
+copperhead snake	銅頭蝮蛇	铜头蝮蛇		CREATURE:COPPERHEAD_SNAKE NAME；正式名銅頭蝮（北美銅頭蝮），加蛇字易懂
+copperhead snakes	銅頭蝮蛇	铜头蝮蛇		CREATURE:COPPERHEAD_SNAKE NAME
+frozen copperhead snake venom	冰凍的銅頭蝮蛇毒液	冰冻的铜头蝮蛇毒液		CREATURE:COPPERHEAD_SNAKE STATE_NAME
+copperhead snake venom	銅頭蝮蛇毒液	铜头蝮蛇毒液		CREATURE:COPPERHEAD_SNAKE STATE_NAME
+boiling copperhead snake venom	沸騰的銅頭蝮蛇毒液	沸腾的铜头蝮蛇毒液		CREATURE:COPPERHEAD_SNAKE STATE_NAME
+copperhead snake bite	銅頭蝮蛇咬傷	铜头蝮蛇咬伤		CREATURE:COPPERHEAD_SNAKE SYN_NAME
+copperhead snake man	銅頭蝮蛇人	铜头蝮蛇人		CREATURE:COPPERHEAD_SNAKE_MAN CASTE_NAME
+copperhead snake men	銅頭蝮蛇人	铜头蝮蛇人		CREATURE:COPPERHEAD_SNAKE_MAN CASTE_NAME
+copperhead snake woman	女銅頭蝮蛇人	女铜头蝮蛇人		CREATURE:COPPERHEAD_SNAKE_MAN CASTE_NAME
+copperhead snake women	女銅頭蝮蛇人	女铜头蝮蛇人		CREATURE:COPPERHEAD_SNAKE_MAN CASTE_NAME
+giant copperhead snake	巨型銅頭蝮蛇	巨型铜头蝮蛇		CREATURE:GIANT_COPPERHEAD_SNAKE NAME
+giant copperhead snakes	巨型銅頭蝮蛇	巨型铜头蝮蛇		CREATURE:GIANT_COPPERHEAD_SNAKE NAME
+ibex	羱羊	羱羊		CREATURE:IBEX NAME；阿爾卑斯羱羊
+ibexes	羱羊	羱羊		CREATURE:IBEX NAME
+ibex kid	幼羱羊	幼羱羊		CREATURE:IBEX GENERAL_CHILD_NAME
+ibex kids	幼羱羊	幼羱羊		CREATURE:IBEX GENERAL_CHILD_NAME
+ibex man	羱羊人	羱羊人		CREATURE:IBEX_MAN CASTE_NAME
+ibex men	羱羊人	羱羊人		CREATURE:IBEX_MAN CASTE_NAME
+ibex woman	女羱羊人	女羱羊人		CREATURE:IBEX_MAN CASTE_NAME
+ibex women	女羱羊人	女羱羊人		CREATURE:IBEX_MAN CASTE_NAME
+giant ibex	巨型羱羊	巨型羱羊		CREATURE:GIANT_IBEX NAME
+giant ibexes	巨型羱羊	巨型羱羊		CREATURE:GIANT_IBEX NAME
+giant ibex kid	幼巨型羱羊	幼巨型羱羊		CREATURE:GIANT_IBEX GENERAL_CHILD_NAME
+giant ibex kids	幼巨型羱羊	幼巨型羱羊		CREATURE:GIANT_IBEX GENERAL_CHILD_NAME
+wombat	袋熊	袋熊		CREATURE:WOMBAT NAME
+wombats	袋熊	袋熊		CREATURE:WOMBAT NAME
+wombat joey	幼袋熊	幼袋熊		CREATURE:WOMBAT GENERAL_CHILD_NAME
+wombat joeys	幼袋熊	幼袋熊		CREATURE:WOMBAT GENERAL_CHILD_NAME
+wombat man	袋熊人	袋熊人		CREATURE:WOMBAT_MAN CASTE_NAME
+wombat men	袋熊人	袋熊人		CREATURE:WOMBAT_MAN CASTE_NAME
+wombat woman	女袋熊人	女袋熊人		CREATURE:WOMBAT_MAN CASTE_NAME
+wombat women	女袋熊人	女袋熊人		CREATURE:WOMBAT_MAN CASTE_NAME
+giant wombat	巨型袋熊	巨型袋熊		CREATURE:GIANT_WOMBAT NAME
+giant wombats	巨型袋熊	巨型袋熊		CREATURE:GIANT_WOMBAT NAME
+giant wombat joey	幼巨型袋熊	幼巨型袋熊		CREATURE:GIANT_WOMBAT GENERAL_CHILD_NAME
+giant wombat joeys	幼巨型袋熊	幼巨型袋熊		CREATURE:GIANT_WOMBAT GENERAL_CHILD_NAME
+dingo	野犬	野犬		CREATURE:DINGO NAME；正式名澳洲野犬，寬度 6 格只放得下三字以內，取野犬
+dingoes	野犬	野犬		CREATURE:DINGO NAME
+dingo pup	幼野犬	幼野犬		CREATURE:DINGO GENERAL_CHILD_NAME
+dingo pups	幼野犬	幼野犬		CREATURE:DINGO GENERAL_CHILD_NAME
+dingo man	野犬人	野犬人		CREATURE:DINGO_MAN CASTE_NAME
+dingo men	野犬人	野犬人		CREATURE:DINGO_MAN CASTE_NAME
+dingo woman	女野犬人	女野犬人		CREATURE:DINGO_MAN CASTE_NAME
+dingo women	女野犬人	女野犬人		CREATURE:DINGO_MAN CASTE_NAME
+giant dingo	巨型野犬	巨型野犬		CREATURE:GIANT_DINGO NAME
+giant dingoes	巨型野犬	巨型野犬		CREATURE:GIANT_DINGO NAME
+giant dingo pup	幼巨型野犬	幼巨型野犬		CREATURE:GIANT_DINGO GENERAL_CHILD_NAME
+giant dingo pups	幼巨型野犬	幼巨型野犬		CREATURE:GIANT_DINGO GENERAL_CHILD_NAME
+coati	鼻熊	鼻熊		CREATURE:COATI NAME；正式名長鼻浣熊，寬度 6 格放不下，取別名鼻熊
+coatis	鼻熊	鼻熊		CREATURE:COATI NAME
+baby coati	幼鼻熊	幼鼻熊		CREATURE:COATI GENERAL_CHILD_NAME
+baby coatis	幼鼻熊	幼鼻熊		CREATURE:COATI GENERAL_CHILD_NAME
+coati man	鼻熊人	鼻熊人		CREATURE:COATI_MAN CASTE_NAME
+coati men	鼻熊人	鼻熊人		CREATURE:COATI_MAN CASTE_NAME
+coati woman	女鼻熊人	女鼻熊人		CREATURE:COATI_MAN CASTE_NAME
+coati women	女鼻熊人	女鼻熊人		CREATURE:COATI_MAN CASTE_NAME
+giant coati	巨型鼻熊	巨型鼻熊		CREATURE:GIANT_COATI NAME
+giant coatis	巨型鼻熊	巨型鼻熊		CREATURE:GIANT_COATI NAME
+baby giant coati	幼巨型鼻熊	幼巨型鼻熊		CREATURE:GIANT_COATI GENERAL_CHILD_NAME
+baby giant coatis	幼巨型鼻熊	幼巨型鼻熊		CREATURE:GIANT_COATI GENERAL_CHILD_NAME
+opossum	負鼠	负鼠		CREATURE:OPOSSUM NAME
+opossums	負鼠	负鼠		CREATURE:OPOSSUM NAME
+baby opossum	幼負鼠	幼负鼠		CREATURE:OPOSSUM GENERAL_CHILD_NAME
+baby opossums	幼負鼠	幼负鼠		CREATURE:OPOSSUM GENERAL_CHILD_NAME
+opossum man	負鼠人	负鼠人		CREATURE:OPOSSUM_MAN CASTE_NAME
+opossum men	負鼠人	负鼠人		CREATURE:OPOSSUM_MAN CASTE_NAME
+opossum woman	女負鼠人	女负鼠人		CREATURE:OPOSSUM_MAN CASTE_NAME
+opossum women	女負鼠人	女负鼠人		CREATURE:OPOSSUM_MAN CASTE_NAME
+giant opossum	巨型負鼠	巨型负鼠		CREATURE:GIANT_OPOSSUM NAME
+giant opossums	巨型負鼠	巨型负鼠		CREATURE:GIANT_OPOSSUM NAME
+baby giant opossum	幼巨型負鼠	幼巨型负鼠		CREATURE:GIANT_OPOSSUM GENERAL_CHILD_NAME
+baby giant opossums	幼巨型負鼠	幼巨型负鼠		CREATURE:GIANT_OPOSSUM GENERAL_CHILD_NAME

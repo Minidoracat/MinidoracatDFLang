@@ -1,0 +1,483 @@
+en	zh-Hant	zh-Hans	align	note
+plump helmet	肉盔菇	肉盔菇		PLANT:MUSHROOM_HELMET_PLUMP NAME；沿用 guides_1.tsv 教學段落的譯名
+plump helmets	肉盔菇	肉盔菇		PLANT:MUSHROOM_HELMET_PLUMP NAME_PLURAL
+frozen dwarven wine	冰凍的矮人酒	冰冻的矮人酒		PLANT:MUSHROOM_HELMET_PLUMP STATE_NAME_ADJ
+dwarven wine	矮人酒	矮人酒		PLANT:MUSHROOM_HELMET_PLUMP STATE_NAME_ADJ；肉盔菇釀的酒，不是葡萄酒
+boiling dwarven wine	沸騰的矮人酒	沸腾的矮人酒		PLANT:MUSHROOM_HELMET_PLUMP STATE_NAME_ADJ
+plump helmet spawn	肉盔菇菌種	肉盔菇菌种		PLANT:MUSHROOM_HELMET_PLUMP SEED
+pig tail	豬尾草	猪尾草		PLANT:GRASS_TAIL_PIG NAME
+pig tails	豬尾草	猪尾草		PLANT:GRASS_TAIL_PIG NAME_PLURAL
+frozen dwarven ale	冰凍的矮人艾爾酒	冰冻的矮人艾尔酒		PLANT:GRASS_TAIL_PIG STATE_NAME_ADJ
+dwarven ale	矮人艾爾酒	矮人艾尔酒		PLANT:GRASS_TAIL_PIG STATE_NAME_ADJ；ale 艾爾啤酒；5 字寬度放不下「啤酒」
+boiling dwarven ale	沸騰的矮人艾爾酒	沸腾的矮人艾尔酒		PLANT:GRASS_TAIL_PIG STATE_NAME_ADJ
+pig tail seed	豬尾草種子	猪尾草种子		PLANT:GRASS_TAIL_PIG SEED
+pig tail seeds	豬尾草種子	猪尾草种子		PLANT:GRASS_TAIL_PIG SEED
+pig tail slurry	豬尾草漿	猪尾草浆		PLANT:GRASS_TAIL_PIG STATE_NAME_ADJ
+pig tail paper	豬尾草紙	猪尾草纸		PLANT:GRASS_TAIL_PIG STATE_NAME_ADJ
+cave wheat	洞穴小麥	洞穴小麦		PLANT:GRASS_WHEAT_CAVE NAME
+frozen dwarven beer	冰凍的矮人啤酒	冰冻的矮人啤酒		PLANT:GRASS_WHEAT_CAVE STATE_NAME_ADJ
+dwarven beer	矮人啤酒	矮人啤酒		PLANT:GRASS_WHEAT_CAVE STATE_NAME_ADJ
+boiling dwarven beer	沸騰的矮人啤酒	沸腾的矮人啤酒		PLANT:GRASS_WHEAT_CAVE STATE_NAME_ADJ
+dwarven wheat flour	矮人小麥粉	矮人小麦粉		PLANT:GRASS_WHEAT_CAVE STATE_NAME_ADJ
+cave wheat seed	洞穴小麥種子	洞穴小麦种子		PLANT:GRASS_WHEAT_CAVE SEED
+cave wheat seeds	洞穴小麥種子	洞穴小麦种子		PLANT:GRASS_WHEAT_CAVE SEED
+sweet pod	甜豆莢	甜豆荚		PLANT:POD_SWEET NAME
+sweet pods	甜豆莢	甜豆荚		PLANT:POD_SWEET NAME_PLURAL
+frozen dwarven rum	冰凍的矮人蘭姆酒	冰冻的矮人朗姆酒		PLANT:POD_SWEET STATE_NAME_ADJ
+dwarven rum	矮人蘭姆酒	矮人朗姆酒		PLANT:POD_SWEET STATE_NAME_ADJ；rum 台灣蘭姆酒、大陸朗姆酒
+boiling dwarven rum	沸騰的矮人蘭姆酒	沸腾的矮人朗姆酒		PLANT:POD_SWEET STATE_NAME_ADJ
+dwarven sugar	矮人糖	矮人糖		PLANT:POD_SWEET STATE_NAME_ADJ
+frozen dwarven syrup	冰凍的矮人糖漿	冰冻的矮人糖浆		PLANT:POD_SWEET STATE_NAME_ADJ
+dwarven syrup	矮人糖漿	矮人糖浆		PLANT:POD_SWEET STATE_NAME_ADJ
+boiling dwarven syrup	沸騰的矮人糖漿	沸腾的矮人糖浆		PLANT:POD_SWEET STATE_NAME_ADJ
+sweet pod seed	甜豆莢種子	甜豆荚种子		PLANT:POD_SWEET SEED
+sweet pod seeds	甜豆莢種子	甜豆荚种子		PLANT:POD_SWEET SEED
+quarry bush	採石灌木	采石灌木		PLANT:BUSH_QUARRY NAME
+quarry bushes	採石灌木	采石灌木		PLANT:BUSH_QUARRY NAME_PLURAL
+frozen rock nut oil	冰凍的石堅果油	冰冻的石坚果油		PLANT:BUSH_QUARRY STATE_NAME_ADJ
+rock nut oil	石堅果油	石坚果油		PLANT:BUSH_QUARRY STATE_NAME_ADJ
+boiling rock nut oil	沸騰的石堅果油	沸腾的石坚果油		PLANT:BUSH_QUARRY STATE_NAME_ADJ
+rock nut soap	石堅果皂	石坚果皂		PLANT:BUSH_QUARRY STATE_NAME_ADJ
+melted rock nut soap	融化的石堅果皂	融化的石坚果皂		PLANT:BUSH_QUARRY STATE_NAME_ADJ
+rock nut	石堅果	石坚果		PLANT:BUSH_QUARRY STATE_NAME_ADJ；採石灌木的種子
+rock nut paste	石堅果糊	石坚果糊		PLANT:BUSH_QUARRY STATE_NAME_ADJ
+rock nut press cake	石堅果油粕	石坚果油饼		PLANT:BUSH_QUARRY STATE_NAME_ADJ；press cake 榨油後的渣餅：台灣油粕、大陸油饼
+rock nuts	石堅果	石坚果		PLANT:BUSH_QUARRY SEED
+quarry bush leaf	採石灌木葉	采石灌木叶		PLANT:BUSH_QUARRY GROWTH_NAME
+quarry bush leaves	採石灌木葉	采石灌木叶		PLANT:BUSH_QUARRY GROWTH_NAME
+muck root	淤泥根	淤泥根		PLANT:ROOT_MUCK NAME
+muck roots	淤泥根	淤泥根		PLANT:ROOT_MUCK NAME_PLURAL
+frozen swamp whiskey	冰凍的沼澤威士忌	冰冻的沼泽威士忌		PLANT:ROOT_MUCK STATE_NAME_ADJ
+swamp whiskey	沼澤威士忌	沼泽威士忌		PLANT:ROOT_MUCK STATE_NAME_ADJ
+boiling swamp whiskey	沸騰的沼澤威士忌	沸腾的沼泽威士忌		PLANT:ROOT_MUCK STATE_NAME_ADJ
+muck root seed	淤泥根種子	淤泥根种子		PLANT:ROOT_MUCK SEED
+muck root seeds	淤泥根種子	淤泥根种子		PLANT:ROOT_MUCK SEED
+bloated tuber	膨脹塊莖	膨胀块茎		PLANT:TUBER_BLOATED NAME
+bloated tubers	膨脹塊莖	膨胀块茎		PLANT:TUBER_BLOATED NAME_PLURAL
+frozen tuber beer	冰凍的塊莖啤酒	冰冻的块茎啤酒		PLANT:TUBER_BLOATED STATE_NAME_ADJ
+tuber beer	塊莖啤酒	块茎啤酒		PLANT:TUBER_BLOATED STATE_NAME_ADJ
+boiling tuber beer	沸騰的塊莖啤酒	沸腾的块茎啤酒		PLANT:TUBER_BLOATED STATE_NAME_ADJ
+bloated tuber seed	膨脹塊莖種子	膨胀块茎种子		PLANT:TUBER_BLOATED SEED
+bloated tuber seeds	膨脹塊莖種子	膨胀块茎种子		PLANT:TUBER_BLOATED SEED
+kobold bulb	狗頭人球莖	狗头人球茎		PLANT:BULB_KOBOLD NAME；kobold 狗頭人
+kobold bulbs	狗頭人球莖	狗头人球茎		PLANT:BULB_KOBOLD NAME_PLURAL
+frozen gnomeblight	冰凍的地精之禍	冰冻的地精之祸		PLANT:BULB_KOBOLD STATE_NAME_ADJ
+gnomeblight	地精之禍	地精之祸		PLANT:BULB_KOBOLD STATE_NAME_ADJ；自創酒名：gnome（地精）＋blight（禍害）；DF 沒有地精種族，goblin 另譯哥布林
+boiling gnomeblight	沸騰的地精之禍	沸腾的地精之祸		PLANT:BULB_KOBOLD STATE_NAME_ADJ
+prickle berry	刺莓	刺莓		PLANT:BERRIES_PRICKLE NAME
+prickle berries	刺莓	刺莓		PLANT:BERRIES_PRICKLE NAME_PLURAL
+frozen prickle berry wine	冰凍的刺莓酒	冰冻的刺莓酒		PLANT:BERRIES_PRICKLE STATE_NAME_ADJ
+prickle berry wine	刺莓酒	刺莓酒		PLANT:BERRIES_PRICKLE STATE_NAME_ADJ
+boiling prickle berry wine	沸騰的刺莓酒	沸腾的刺莓酒		PLANT:BERRIES_PRICKLE STATE_NAME_ADJ
+prickle berry seed	刺莓種子	刺莓种子		PLANT:BERRIES_PRICKLE SEED
+prickle berry seeds	刺莓種子	刺莓种子		PLANT:BERRIES_PRICKLE SEED
+strawberry plant	草莓植株	草莓植株		PLANT:BERRIES_STRAW NAME；植株本身；果實 strawberry 是草莓
+strawberry plants	草莓植株	草莓植株		PLANT:BERRIES_STRAW NAME_PLURAL
+frozen strawberry wine	冰凍的草莓酒	冰冻的草莓酒		PLANT:BERRIES_STRAW STATE_NAME_ADJ
+strawberry wine	草莓酒	草莓酒		PLANT:BERRIES_STRAW STATE_NAME_ADJ
+boiling strawberry wine	沸騰的草莓酒	沸腾的草莓酒		PLANT:BERRIES_STRAW STATE_NAME_ADJ
+strawberry seed	草莓種子	草莓种子		PLANT:BERRIES_STRAW SEED
+strawberry seeds	草莓種子	草莓种子		PLANT:BERRIES_STRAW SEED
+strawberry	草莓	草莓		PLANT:BERRIES_STRAW GROWTH_NAME
+strawberries	草莓	草莓		PLANT:BERRIES_STRAW GROWTH_NAME
+Longland grass	長地草	长地草		PLANT:GRASS_LONGLAND NAME；自創植物：Longland 照字面「長地」；大寫是 raws 原文
+frozen Longland beer	冰凍的長地啤酒	冰冻的长地啤酒		PLANT:GRASS_LONGLAND STATE_NAME_ADJ
+Longland beer	長地啤酒	长地啤酒		PLANT:GRASS_LONGLAND STATE_NAME_ADJ
+boiling Longland beer	沸騰的長地啤酒	沸腾的长地啤酒		PLANT:GRASS_LONGLAND STATE_NAME_ADJ
+Longland flour	長地麵粉	长地面粉		PLANT:GRASS_LONGLAND STATE_NAME_ADJ
+Longland grass seed	長地草種子	长地草种子		PLANT:GRASS_LONGLAND SEED
+Longland grass seeds	長地草種子	长地草种子		PLANT:GRASS_LONGLAND SEED
+valley herb	山谷草藥	山谷草药		PLANT:HERB_VALLEY NAME
+valley herbs	山谷草藥	山谷草药		PLANT:HERB_VALLEY NAME_PLURAL
+frozen golden salve	冰凍的金色藥膏	冰冻的金色药膏		PLANT:HERB_VALLEY STATE_NAME_ADJ
+golden salve	金色藥膏	金色药膏		PLANT:HERB_VALLEY STATE_NAME_ADJ；山谷草藥釀的飲料，名稱照字面
+boiling golden salve	沸騰的金色藥膏	沸腾的金色药膏		PLANT:HERB_VALLEY STATE_NAME_ADJ
+rat weed	老鼠草	老鼠草		PLANT:WEED_RAT NAME
+frozen sewer brew	冰凍的下水道酒	冰冻的下水道酒		PLANT:WEED_RAT STATE_NAME_ADJ
+sewer brew	下水道酒	下水道酒		PLANT:WEED_RAT STATE_NAME_ADJ
+boiling sewer brew	沸騰的下水道酒	沸腾的下水道酒		PLANT:WEED_RAT STATE_NAME_ADJ
+rat weed seed	老鼠草種子	老鼠草种子		PLANT:WEED_RAT SEED
+rat weed seeds	老鼠草種子	老鼠草种子		PLANT:WEED_RAT SEED
+fisher berry	漁夫莓	渔夫莓		PLANT:BERRIES_FISHER NAME
+fisher berries	漁夫莓	渔夫莓		PLANT:BERRIES_FISHER NAME_PLURAL
+frozen fisher berry wine	冰凍的漁夫莓酒	冰冻的渔夫莓酒		PLANT:BERRIES_FISHER STATE_NAME_ADJ
+fisher berry wine	漁夫莓酒	渔夫莓酒		PLANT:BERRIES_FISHER STATE_NAME_ADJ
+boiling fisher berry wine	沸騰的漁夫莓酒	沸腾的渔夫莓酒		PLANT:BERRIES_FISHER STATE_NAME_ADJ
+fisher berry seed	漁夫莓種子	渔夫莓种子		PLANT:BERRIES_FISHER SEED
+fisher berry seeds	漁夫莓種子	渔夫莓种子		PLANT:BERRIES_FISHER SEED
+rope reed	繩蘆葦	绳芦苇		PLANT:REED_ROPE NAME
+rope reeds	繩蘆葦	绳芦苇		PLANT:REED_ROPE NAME_PLURAL
+frozen river spirits	冰凍的河川烈酒	冰冻的河流烈酒		PLANT:REED_ROPE STATE_NAME_ADJ
+river spirits	河川烈酒	河流烈酒		PLANT:REED_ROPE STATE_NAME_ADJ
+boiling river spirits	沸騰的河川烈酒	沸腾的河流烈酒		PLANT:REED_ROPE STATE_NAME_ADJ
+rope reed slurry	繩蘆葦漿	绳芦苇浆		PLANT:REED_ROPE STATE_NAME_ADJ
+rope reed paper	繩蘆葦紙	绳芦苇纸		PLANT:REED_ROPE STATE_NAME_ADJ
+rope reed seed	繩蘆葦種子	绳芦苇种子		PLANT:REED_ROPE SEED
+rope reed seeds	繩蘆葦種子	绳芦苇种子		PLANT:REED_ROPE SEED
+dimple cup	窩杯菇	窝杯菇		PLANT:MUSHROOM_CUP_DIMPLE NAME；dimple 酒窩＋cup 杯狀菇
+dimple cups	窩杯菇	窝杯菇		PLANT:MUSHROOM_CUP_DIMPLE NAME_PLURAL
+dimple dye	窩杯染料	窝杯染料		PLANT:MUSHROOM_CUP_DIMPLE STATE_NAME_ADJ
+dimple cup spawn	窩杯菇菌種	窝杯菇菌种		PLANT:MUSHROOM_CUP_DIMPLE SEED
+blade weed	刀刃草	刀刃草		PLANT:WEED_BLADE NAME
+emerald dye	祖母綠染料	祖母绿染料		PLANT:WEED_BLADE STATE_NAME_ADJ
+blade weed seed	刀刃草種子	刀刃草种子		PLANT:WEED_BLADE SEED
+blade weed seeds	刀刃草種子	刀刃草种子		PLANT:WEED_BLADE SEED
+hide root	隱根草	隐根草		PLANT:ROOT_HIDE NAME；hide 照「藏匿」義
+redroot dye	紅根染料	红根染料		PLANT:ROOT_HIDE STATE_NAME_ADJ
+hide root seed	隱根草種子	隐根草种子		PLANT:ROOT_HIDE SEED
+hide root seeds	隱根草種子	隐根草种子		PLANT:ROOT_HIDE SEED
+sliver barb	碎刺草	碎刺草		PLANT:SLIVER_BARB NAME；sliver 碎片＋barb 倒刺
+sliver barbs	碎刺草	碎刺草		PLANT:SLIVER_BARB NAME_PLURAL
+frozen gutter cruor	冰凍的陰溝凝血	冰冻的阴沟凝血		PLANT:SLIVER_BARB STATE_NAME_ADJ
+gutter cruor	陰溝凝血	阴沟凝血		PLANT:SLIVER_BARB STATE_NAME_ADJ；cruor 凝血；碎刺草釀的酒
+boiling gutter cruor	沸騰的陰溝凝血	沸腾的阴沟凝血		PLANT:SLIVER_BARB STATE_NAME_ADJ
+sliver dye	碎刺染料	碎刺染料		PLANT:SLIVER_BARB STATE_NAME_ADJ
+sliver barb seed	碎刺草種子	碎刺草种子		PLANT:SLIVER_BARB SEED
+sliver barb seeds	碎刺草種子	碎刺草种子		PLANT:SLIVER_BARB SEED
+sun berry	太陽莓	太阳莓		PLANT:BERRY_SUN NAME
+sun berries	太陽莓	太阳莓		PLANT:BERRY_SUN NAME_PLURAL
+frozen sunshine	冰凍的陽光酒	冰冻的阳光酒		PLANT:BERRY_SUN STATE_NAME_ADJ
+sunshine	陽光酒	阳光酒		PLANT:BERRY_SUN STATE_NAME_ADJ；太陽莓釀的酒；只寫「陽光」看不出是酒
+boiling sunshine	沸騰的陽光酒	沸腾的阳光酒		PLANT:BERRY_SUN STATE_NAME_ADJ
+sun berry seed	太陽莓種子	太阳莓种子		PLANT:BERRY_SUN SEED
+sun berry seeds	太陽莓種子	太阳莓种子		PLANT:BERRY_SUN SEED
+whip vine	鞭藤	鞭藤		PLANT:VINE_WHIP NAME
+whip vines	鞭藤	鞭藤		PLANT:VINE_WHIP NAME_PLURAL
+frozen whip wine	冰凍的鞭藤酒	冰冻的鞭藤酒		PLANT:VINE_WHIP STATE_NAME_ADJ
+whip wine	鞭藤酒	鞭藤酒		PLANT:VINE_WHIP STATE_NAME_ADJ；不寫「鞭酒」，避免和中藥的鞭酒混淆
+boiling whip wine	沸騰的鞭藤酒	沸腾的鞭藤酒		PLANT:VINE_WHIP STATE_NAME_ADJ
+whip vine flour	鞭藤麵粉	鞭藤面粉		PLANT:VINE_WHIP STATE_NAME_ADJ
+whip vine seed	鞭藤種子	鞭藤种子		PLANT:VINE_WHIP SEED
+whip vine seeds	鞭藤種子	鞭藤种子		PLANT:VINE_WHIP SEED
+mangrove	紅樹	红树		PLANT:MANGROVE NAME
+mangroves	紅樹	红树		PLANT:MANGROVE NAME_PLURAL
+mangrove leaf	紅樹葉	红树叶		PLANT:MANGROVE GROWTH_NAME
+mangrove leaves	紅樹葉	红树叶		PLANT:MANGROVE GROWTH_NAME
+mangrove flower	紅樹花	红树花		PLANT:MANGROVE GROWTH_NAME
+mangrove fruit	紅樹果實	红树果实		PLANT:MANGROVE GROWTH_NAME
+mangrove bark dye	紅樹皮染料	红树皮染料		PLANT:MANGROVE STATE_NAME_ADJ
+mangrove leaf dye	紅樹葉染料	红树叶染料		PLANT:MANGROVE STATE_NAME_ADJ
+saguaro	巨人柱	巨人柱		PLANT:SAGUARO NAME；仙人掌 Carnegiea gigantea 的通行中文名
+saguaros	巨人柱	巨人柱		PLANT:SAGUARO NAME_PLURAL
+saguaro rib wood	巨人柱肋木	巨人柱肋木		PLANT:SAGUARO STATE_NAME
+saguaro rib	巨人柱肋木	巨人柱肋木		PLANT:SAGUARO STATE_ADJ；材料前綴（巨人柱肋木椅子），同 saguaro rib wood
+saguaro flower	巨人柱花	巨人柱花		PLANT:SAGUARO GROWTH_NAME
+saguaro fruit	巨人柱果實	巨人柱果实		PLANT:SAGUARO GROWTH_NAME
+pine	松樹	松树		PLANT:PINE NAME
+pines	松樹	松树		PLANT:PINE NAME_PLURAL
+pine needle	松針	松针		PLANT:PINE GROWTH_NAME
+pine seed cone	松樹雌毬果	松树雌球果		PLANT:PINE GROWTH_NAME；seed cone 雌毬果；台灣「毬果」、大陸「球果」
+pine pollen cone	松樹雄毬果	松树雄球果		PLANT:PINE GROWTH_NAME
+pine bark dye	松樹皮染料	松树皮染料		PLANT:PINE STATE_NAME_ADJ
+cedar	雪松	雪松		PLANT:CEDAR NAME
+cedars	雪松	雪松		PLANT:CEDAR NAME_PLURAL
+cedar scale-leaf	雪松鱗葉	雪松鳞叶		PLANT:CEDAR GROWTH_NAME
+cedar scale-leaves	雪松鱗葉	雪松鳞叶		PLANT:CEDAR GROWTH_NAME
+cedar seed cone	雪松雌毬果	雪松雌球果		PLANT:CEDAR GROWTH_NAME
+cedar pollen cone	雪松雄毬果	雪松雄球果		PLANT:CEDAR GROWTH_NAME
+oak	橡樹	橡树		PLANT:OAK NAME
+oaks	橡樹	橡树		PLANT:OAK NAME_PLURAL
+acorn	橡實	橡子		PLANT:OAK SEED；台灣「橡實」、大陸「橡子」
+acorns	橡實	橡子		PLANT:OAK SEED
+oak leaf	橡樹葉	橡树叶		PLANT:OAK GROWTH_NAME
+oak leaves	橡樹葉	橡树叶		PLANT:OAK GROWTH_NAME
+oak flower cluster	橡樹花序	橡树花序		PLANT:OAK GROWTH_NAME
+oak bark dye	橡樹皮染料	橡树皮染料		PLANT:OAK STATE_NAME_ADJ
+mahoganies	桃花心木	桃花心木		PLANT:MAHOGANY NAME_PLURAL
+mahogany leaf	桃花心木葉	桃花心木叶		PLANT:MAHOGANY GROWTH_NAME
+mahogany leaves	桃花心木葉	桃花心木叶		PLANT:MAHOGANY GROWTH_NAME
+mahogany flower	桃花心木花	桃花心木花		PLANT:MAHOGANY GROWTH_NAME
+mahogany fruit	桃花心木果實	桃花心木果实		PLANT:MAHOGANY GROWTH_NAME
+mahogany bark dye	桃花心木皮染料	桃花心木皮染料		PLANT:MAHOGANY STATE_NAME_ADJ
+acacia	金合歡	金合欢		PLANT:ACACIA NAME；DF 的 acacia 是莽原的金合歡屬，不是刺槐（洋槐）
+acacias	金合歡	金合欢		PLANT:ACACIA NAME_PLURAL
+acacia seed	金合歡種子	金合欢种子		PLANT:ACACIA SEED
+acacia seeds	金合歡種子	金合欢种子		PLANT:ACACIA SEED
+acacia leaf	金合歡葉	金合欢叶		PLANT:ACACIA GROWTH_NAME
+acacia leaves	金合歡葉	金合欢叶		PLANT:ACACIA GROWTH_NAME
+acacia flower	金合歡花	金合欢花		PLANT:ACACIA GROWTH_NAME
+acacia seed pod	金合歡莢果	金合欢荚果		PLANT:ACACIA GROWTH_NAME
+acacia bark dye	金合歡樹皮染料	金合欢树皮染料		PLANT:ACACIA STATE_NAME_ADJ
+kapok	木棉	木棉		PLANT:KAPOK NAME
+kapoks	木棉	木棉		PLANT:KAPOK NAME_PLURAL
+kapok leaf	木棉葉	木棉叶		PLANT:KAPOK GROWTH_NAME
+kapok leaves	木棉葉	木棉叶		PLANT:KAPOK GROWTH_NAME
+kapok flower	木棉花	木棉花		PLANT:KAPOK GROWTH_NAME
+kapok fruit	木棉果實	木棉果实		PLANT:KAPOK GROWTH_NAME
+maple	楓樹	枫树		PLANT:MAPLE NAME
+maples	楓樹	枫树		PLANT:MAPLE NAME_PLURAL
+maple leaf	楓樹葉	枫树叶		PLANT:MAPLE GROWTH_NAME
+maple leaves	楓樹葉	枫树叶		PLANT:MAPLE GROWTH_NAME
+maple flower cluster	楓樹花序	枫树花序		PLANT:MAPLE GROWTH_NAME
+maple samara	楓樹翅果	枫树翅果		PLANT:MAPLE GROWTH_NAME
+maple bark dye	楓樹皮染料	枫树皮染料		PLANT:MAPLE STATE_NAME_ADJ
+willow	柳樹	柳树		PLANT:WILLOW NAME
+willows	柳樹	柳树		PLANT:WILLOW NAME_PLURAL
+willow leaf	柳樹葉	柳树叶		PLANT:WILLOW GROWTH_NAME
+willow leaves	柳樹葉	柳树叶		PLANT:WILLOW GROWTH_NAME
+willow pollen catkin	柳樹雄花序	柳树雄花序		PLANT:WILLOW GROWTH_NAME；catkin 葇荑花序；pollen 雄、seed 雌
+willow seed catkin	柳樹雌花序	柳树雌花序		PLANT:WILLOW GROWTH_NAME
+willow fruit	柳樹果實	柳树果实		PLANT:WILLOW GROWTH_NAME
+willow bark dye	柳樹皮染料	柳树皮染料		PLANT:WILLOW STATE_NAME_ADJ
+willow leaf dye	柳樹葉染料	柳树叶染料		PLANT:WILLOW STATE_NAME_ADJ
+tower-cap	塔帽菇	塔帽菇		PLANT:TOWER_CAP NAME；地下巨菇；照字面 tower 塔＋cap 菌帽
+tower-caps	塔帽菇	塔帽菇		PLANT:TOWER_CAP NAME_PLURAL
+black-cap	黑帽菇	黑帽菇		PLANT:BLACK_CAP NAME
+black-caps	黑帽菇	黑帽菇		PLANT:BLACK_CAP NAME_PLURAL
+nether-cap	冥帽菇	冥帽菇		PLANT:NETHER_CAP NAME；nether 幽冥
+nether-caps	冥帽菇	冥帽菇		PLANT:NETHER_CAP NAME_PLURAL
+goblin-cap	哥布林帽菇	哥布林帽菇		PLANT:GOBLIN_CAP NAME；goblin 沿用專案的「哥布林」
+goblin-caps	哥布林帽菇	哥布林帽菇		PLANT:GOBLIN_CAP NAME_PLURAL
+fungiwood	真菌木	真菌木		PLANT:FUNGIWOOD NAME
+fungiwoods	真菌木	真菌木		PLANT:FUNGIWOOD NAME_PLURAL
+tunnel tube	隧道管	隧道管		PLANT:TUNNEL_TUBE NAME
+tunnel tubes	隧道管	隧道管		PLANT:TUNNEL_TUBE NAME_PLURAL
+spore tree	孢子樹	孢子树		PLANT:SPORE_TREE NAME
+spore trees	孢子樹	孢子树		PLANT:SPORE_TREE NAME_PLURAL
+blood thorn	血棘	血棘		PLANT:BLOOD_THORN NAME
+glumprong	鬱叉樹	郁叉树		PLANT:GLUMPRONG NAME；自創邪惡地區樹木：glum 陰鬱＋prong 尖叉
+glumprongs	鬱叉樹	郁叉树		PLANT:GLUMPRONG NAME_PLURAL
+feather tree	羽毛樹	羽毛树		PLANT:FEATHER NAME
+feather trees	羽毛樹	羽毛树		PLANT:FEATHER NAME_PLURAL
+feather wood	羽毛木	羽毛木		PLANT:FEATHER STATE_NAME
+feather tree down	羽毛樹絨羽	羽毛树绒羽		PLANT:FEATHER GROWTH_NAME；down 絨羽
+feather tree egg	羽毛樹蛋	羽毛树蛋		PLANT:FEATHER GROWTH_NAME
+highwood	高木	高木		PLANT:HIGHWOOD NAME；自創善良地區樹木：照字面 high＋wood
+highwoods	高木	高木		PLANT:HIGHWOOD NAME_PLURAL
+highwood leaf	高木葉	高木叶		PLANT:HIGHWOOD GROWTH_NAME
+highwood leaves	高木葉	高木叶		PLANT:HIGHWOOD GROWTH_NAME
+highwood flower	高木花	高木花		PLANT:HIGHWOOD GROWTH_NAME
+larch	落葉松	落叶松		PLANT:LARCH NAME
+larches	落葉松	落叶松		PLANT:LARCH NAME_PLURAL
+larch needle	落葉松針	落叶松针		PLANT:LARCH GROWTH_NAME
+larch seed cone	落葉松雌毬果	落叶松雌球果		PLANT:LARCH GROWTH_NAME
+larch pollen cone	落葉松雄毬果	落叶松雄球果		PLANT:LARCH GROWTH_NAME
+larch bark dye	落葉松樹皮染料	落叶松树皮染料		PLANT:LARCH STATE_NAME_ADJ
+chestnuts	栗子	栗子		PLANT:CHESTNUT NAME_PLURAL；樹與種子的複數；跟單數 chestnut 一樣譯「栗子」
+chestnut leaf	栗樹葉	栗树叶		PLANT:CHESTNUT GROWTH_NAME
+chestnut leaves	栗樹葉	栗树叶		PLANT:CHESTNUT GROWTH_NAME
+chestnut pollen catkin	栗樹雄花序	栗树雄花序		PLANT:CHESTNUT GROWTH_NAME
+chestnut seed catkin	栗樹雌花序	栗树雌花序		PLANT:CHESTNUT GROWTH_NAME
+chestnut burr	栗子刺苞	栗子刺苞		PLANT:CHESTNUT GROWTH_NAME；burr 栗子外面帶刺的殼斗
+chestnut bark dye	栗樹皮染料	栗树皮染料		PLANT:CHESTNUT STATE_NAME_ADJ
+chestnut leaf dye	栗樹葉染料	栗树叶染料		PLANT:CHESTNUT STATE_NAME_ADJ
+chestnut hull dye	栗殼染料	栗壳染料		PLANT:CHESTNUT STATE_NAME_ADJ
+alder	赤楊	桤木		PLANT:ALDER NAME；Alnus：台灣通稱赤楊、大陸通稱桤木
+alders	赤楊	桤木		PLANT:ALDER NAME_PLURAL
+alder leaf	赤楊葉	桤木叶		PLANT:ALDER GROWTH_NAME
+alder leaves	赤楊葉	桤木叶		PLANT:ALDER GROWTH_NAME
+alder pollen catkin	赤楊雄花序	桤木雄花序		PLANT:ALDER GROWTH_NAME
+alder seed catkin	赤楊雌花序	桤木雌花序		PLANT:ALDER GROWTH_NAME
+alder cone	赤楊毬果	桤木球果		PLANT:ALDER GROWTH_NAME
+alder bark dye	赤楊樹皮染料	桤木皮染料		PLANT:ALDER STATE_NAME_ADJ
+alder cone dye	赤楊毬果染料	桤木球果染料		PLANT:ALDER STATE_NAME_ADJ
+birch	樺樹	桦树		PLANT:BIRCH NAME
+birches	樺樹	桦树		PLANT:BIRCH NAME_PLURAL
+birch leaf	樺樹葉	桦树叶		PLANT:BIRCH GROWTH_NAME
+birch leaves	樺樹葉	桦树叶		PLANT:BIRCH GROWTH_NAME
+birch pollen catkin	樺樹雄花序	桦树雄花序		PLANT:BIRCH GROWTH_NAME
+birch seed catkin	樺樹雌花序	桦树雌花序		PLANT:BIRCH GROWTH_NAME
+birch bark dye	樺樹皮染料	桦树皮染料		PLANT:BIRCH STATE_NAME_ADJ
+ash	梣樹	梣树		PLANT:ASH NAME；Fraxinus 梣屬（白蠟樹），原文 3 格只放得下兩字；注意執行檔另有木灰的 ash／Ash，查不到大寫時會套到這條
+ashes	梣樹	梣树		PLANT:ASH NAME_PLURAL
+ash leaf	梣樹葉	梣树叶		PLANT:ASH GROWTH_NAME
+ash leaves	梣樹葉	梣树叶		PLANT:ASH GROWTH_NAME
+ash flower	梣樹花	梣树花		PLANT:ASH GROWTH_NAME
+ash samara	梣樹翅果	梣树翅果		PLANT:ASH GROWTH_NAME
+ash bark dye	梣樹皮染料	梣树皮染料		PLANT:ASH STATE_NAME_ADJ
+candlenut	石栗	石栗		PLANT:CANDLENUT NAME
+candlenuts	石栗	石栗		PLANT:CANDLENUT NAME_PLURAL
+candlenut leaf	石栗葉	石栗叶		PLANT:CANDLENUT GROWTH_NAME
+candlenut leaves	石栗葉	石栗叶		PLANT:CANDLENUT GROWTH_NAME
+candlenut flower	石栗花	石栗花		PLANT:CANDLENUT GROWTH_NAME
+mango tree	芒果樹	芒果树		PLANT:MANGO NAME
+mango trees	芒果樹	芒果树		PLANT:MANGO NAME_PLURAL
+mango wood	芒果木	芒果木		PLANT:MANGO STATE_NAME
+frozen mango wine	冰凍的芒果酒	冰冻的芒果酒		PLANT:MANGO STATE_NAME_ADJ
+mango wine	芒果酒	芒果酒		PLANT:MANGO STATE_NAME_ADJ
+boiling mango wine	沸騰的芒果酒	沸腾的芒果酒		PLANT:MANGO STATE_NAME_ADJ
+mango pit	芒果核	芒果核		PLANT:MANGO SEED
+mango pits	芒果核	芒果核		PLANT:MANGO SEED
+mango leaf	芒果葉	芒果叶		PLANT:MANGO GROWTH_NAME
+mango leaves	芒果葉	芒果叶		PLANT:MANGO GROWTH_NAME
+mango flower	芒果花	芒果花		PLANT:MANGO GROWTH_NAME
+mango	芒果	芒果		PLANT:MANGO GROWTH_NAME
+rubber tree	橡膠樹	橡胶树		PLANT:RUBBER NAME
+rubber trees	橡膠樹	橡胶树		PLANT:RUBBER NAME_PLURAL
+rubber wood	橡膠木	橡胶木		PLANT:RUBBER STATE_NAME
+rubber leaf	橡膠樹葉	橡胶树叶		PLANT:RUBBER GROWTH_NAME
+rubber leaves	橡膠樹葉	橡胶树叶		PLANT:RUBBER GROWTH_NAME
+cacao tree	可可樹	可可树		PLANT:CACAO NAME
+cacao trees	可可樹	可可树		PLANT:CACAO NAME_PLURAL
+cacao wood	可可木	可可木		PLANT:CACAO STATE_NAME
+cacao bean	可可豆	可可豆		PLANT:CACAO SEED
+cacao beans	可可豆	可可豆		PLANT:CACAO SEED
+cacao leaf	可可樹葉	可可树叶		PLANT:CACAO GROWTH_NAME
+cacao leaves	可可樹葉	可可树叶		PLANT:CACAO GROWTH_NAME
+cacao flower	可可花	可可花		PLANT:CACAO GROWTH_NAME
+cacao pod	可可果莢	可可果荚		PLANT:CACAO GROWTH_NAME
+coconut palm	椰子樹	椰子树		PLANT:PALM NAME
+coconut palms	椰子樹	椰子树		PLANT:PALM NAME_PLURAL
+coconut palm frond blade	椰子樹羽葉	椰子树羽叶		PLANT:PALM GROWTH_NAME；frond blade 羽狀複葉的小葉
+coconut palm frond blades	椰子樹羽葉	椰子树羽叶		PLANT:PALM GROWTH_NAME
+coconut palm spathe	椰子樹佛焰苞	椰子树佛焰苞		PLANT:PALM GROWTH_NAME
+coconut	椰子	椰子		PLANT:PALM GROWTH_NAME
+make wooden chair	製作木椅	制作木椅		REACTION:MAKE WOODEN CHAIR NAME
+make wooden table	製作木桌	制作木桌		REACTION:MAKE WOODEN TABLE NAME
+make wooden bed	製作木床	制作木床		REACTION:MAKE WOODEN BED NAME
+make wooden chest	製作木箱子	制作木箱子		REACTION:MAKE WOODEN CHEST NAME
+make wooden cabinet	製作木櫥櫃	制作木橱柜		REACTION:MAKE WOODEN CABINET NAME
+make wooden door	製作木門	制作木门		REACTION:MAKE WOODEN DOOR NAME
+make wooden barrel	製作木桶	制作木桶		REACTION:MAKE WOODEN BARREL NAME
+make wooden bucket	製作木水桶	制作木水桶		REACTION:MAKE WOODEN BUCKET NAME
+make wooden casket	製作木棺	制作木棺		REACTION:MAKE WOODEN CASKET NAME
+make wooden hatch cover	製作木活蓋	制作木活盖		REACTION:MAKE WOODEN HATCH COVER NAME
+make wooden grate	製作木格柵	制作木格栅		REACTION:MAKE WOODEN GRATE NAME
+make wooden bin	製作木貨箱	制作木货箱		REACTION:MAKE WOODEN BIN NAME
+make wooden stepladder	製作木摺梯	制作木折梯		REACTION:MAKE WOODEN STEPLADDER NAME
+make wooden bookcase	製作木書架	制作木书架		REACTION:MAKE WOODEN BOOKCASE NAME
+make wooden splint	製作木夾板	制作木夹板		REACTION:MAKE WOODEN SPLINT NAME
+make wooden crutch	製作木拐杖	制作木拐杖		REACTION:MAKE WOODEN CRUTCH NAME
+make wooden shield	製作木盾牌	制作木盾牌		REACTION:MAKE WOODEN SHIELD NAME
+make wooden buckler	製作木小圓盾	制作木小圆盾		REACTION:MAKE WOODEN BUCKLER NAME
+make wooden training axe	製作木訓練斧	制作木训练斧		REACTION:MAKE WOODEN TRAINING AXE NAME
+make wooden training short sword	製作木訓練劍	制作木训练剑		REACTION:MAKE WOODEN TRAINING SHORT SWORD NAME
+make wooden training spear	製作木訓練矛	制作木训练矛		REACTION:MAKE WOODEN TRAINING SPEAR NAME
+make wooden pedestal	製作木基座	制作木基座		REACTION:MAKE WOODEN PEDESTAL NAME
+make acacia bark dye	製作金合歡樹皮染料	制作金合欢树皮染料		REACTION:ACACIA_BARK_DYE NAME
+make alder bark dye	製作赤楊樹皮染料	制作桤木皮染料		REACTION:ALDER_BARK_DYE NAME
+make alder cone dye	製作赤楊毬果染料	制作桤木球果染料		REACTION:ALDER_CONE_DYE NAME
+make almond shell dye	製作杏仁殼染料	制作扁桃壳染料		REACTION:ALMOND_SHELL_DYE NAME
+make apple bark dye	製作蘋果樹皮染料	制作苹果树皮染料		REACTION:APPLE_BARK_DYE NAME
+make apple leaf dye	製作蘋果葉染料	制作苹果叶染料		REACTION:APPLE_LEAF_DYE NAME
+make apricot bark dye	製作杏樹皮染料	制作杏树皮染料		REACTION:APRICOT_BARK_DYE NAME
+make ash bark dye	製作梣樹皮染料	制作梣树皮染料		REACTION:ASH_BARK_DYE NAME
+make avocado skin dye	製作酪梨皮染料	制作牛油果皮染料		REACTION:AVOCADO_SKIN_DYE NAME
+make banana leaf dye	製作香蕉葉染料	制作香蕉叶染料		REACTION:BANANA_LEAF_DYE NAME
+make banana peel dye	製作香蕉皮染料	制作香蕉皮染料		REACTION:BANANA_PEEL_DYE NAME
+make bayberry leaf dye	製作楊梅葉染料	制作杨梅叶染料		REACTION:BAYBERRY_LEAF_DYE NAME
+make bayberry dye	製作楊梅染料	制作杨梅染料		REACTION:BAYBERRY_BERRY_DYE NAME
+make birch bark dye	製作樺樹皮染料	制作桦树皮染料		REACTION:BIRCH_BARK_DYE NAME
+make cherry bark dye	製作櫻桃樹皮染料	制作樱桃树皮染料		REACTION:CHERRY_BARK_DYE NAME
+make cherry leaf dye	製作櫻桃葉染料	制作樱桃叶染料		REACTION:CHERRY_LEAF_DYE NAME
+make chestnut bark dye	製作栗樹皮染料	制作栗树皮染料		REACTION:CHESTNUT_BARK_DYE NAME
+make chestnut leaf dye	製作栗樹葉染料	制作栗树叶染料		REACTION:CHESTNUT_LEAF_DYE NAME
+make chestnut hull dye	製作栗殼染料	制作栗壳染料		REACTION:CHESTNUT_HULL_DYE NAME
+make coffee bean dye	製作咖啡豆染料	制作咖啡豆染料		REACTION:COFFEE_BEAN_DYE NAME
+make ginkgo leaf dye	製作銀杏葉染料	制作银杏叶染料		REACTION:GINKGO_LEAF_DYE NAME
+make guava bark dye	製作芭樂樹皮染料	制作芭乐树皮染料		REACTION:GUAVA_BARK_DYE NAME
+make guava leaf dye	製作芭樂葉染料	制作芭乐叶染料		REACTION:GUAVA_LEAF_DYE NAME
+make hazel bark dye	製作榛樹皮染料	制作榛树皮染料		REACTION:HAZEL_BARK_DYE NAME
+make hazel leaf dye	製作榛葉染料	制作榛叶染料		REACTION:HAZEL_LEAF_DYE NAME
+make larch bark dye	製作落葉松樹皮染料	制作落叶松树皮染料		REACTION:LARCH_BARK_DYE NAME
+make mahogany bark dye	製作桃花心木皮染料	制作桃花心木皮染料		REACTION:MAHOGANY_BARK_DYE NAME
+make mangrove bark dye	製作紅樹皮染料	制作红树皮染料		REACTION:MANGROVE_BARK_DYE NAME
+make mangrove leaf dye	製作紅樹葉染料	制作红树叶染料		REACTION:MANGROVE_LEAF_DYE NAME
+make maple bark dye	製作楓樹皮染料	制作枫树皮染料		REACTION:MAPLE_BARK_DYE NAME
+make oak bark dye	製作橡樹皮染料	制作橡树皮染料		REACTION:OAK_BARK_DYE NAME
+make olive bark dye	製作橄欖樹皮染料	制作橄榄树皮染料		REACTION:OLIVE_BARK_DYE NAME
+make olive leaf dye	製作橄欖葉染料	制作橄榄叶染料		REACTION:OLIVE_LEAF_DYE NAME
+make peach bark dye	製作桃樹皮染料	制作桃树皮染料		REACTION:PEACH_BARK_DYE NAME
+make pear bark dye	製作梨樹皮染料	制作梨树皮染料		REACTION:PEAR_BARK_DYE NAME
+make pear leaf dye	製作梨葉染料	制作梨叶染料		REACTION:PEAR_LEAF_DYE NAME
+make persimmon dye	製作柿子染料	制作柿子染料		REACTION:PERSIMMON_FRUIT_DYE NAME
+make pine bark dye	製作松樹皮染料	制作松树皮染料		REACTION:PINE_BARK_DYE NAME
+make plum bark dye	製作李樹皮染料	制作李树皮染料		REACTION:PLUM_BARK_DYE NAME
+make pomegranate leaf dye	製作石榴葉染料	制作石榴叶染料		REACTION:POMEGRANATE_LEAF_DYE NAME
+make pomegranate rind dye	製作石榴皮染料	制作石榴皮染料		REACTION:POMEGRANATE_RIND_DYE NAME
+make pomegranate bark dye	製作石榴樹皮染料	制作石榴树皮染料		REACTION:POMEGRANATE_BARK_DYE NAME
+make tea leaf dye	製作茶葉染料	制作茶叶染料		REACTION:TEA_LEAF_DYE NAME
+make willow bark dye	製作柳樹皮染料	制作柳树皮染料		REACTION:WILLOW_BARK_DYE NAME
+make willow leaf dye	製作柳樹葉染料	制作柳树叶染料		REACTION:WILLOW_LEAF_DYE NAME
+make red spinach leaf dye	製作紅莧菜葉染料	制作红苋菜叶染料		REACTION:RED_SPINACH_LEAF_DYE NAME
+make rice husk dye	製作稻殼染料	制作稻壳染料		REACTION:RICE_HUSK_DYE NAME
+make sorghum leaf dye	製作高粱葉染料	制作高粱叶染料		REACTION:SORGHUM_LEAF_DYE NAME
+make bilberry dye	製作山桑子染料	制作欧洲越橘染料		REACTION:BILBERRY_FRUIT_DYE NAME
+make blackberry dye	製作黑莓染料	制作黑莓染料		REACTION:BLACKBERRY_FRUIT_DYE NAME
+make blueberry dye	製作藍莓染料	制作蓝莓染料		REACTION:BLUEBERRY_FRUIT_DYE NAME
+make cabbage leaf dye	製作高麗菜葉染料	制作卷心菜叶染料		REACTION:CABBAGE_LEAF_DYE NAME
+make cranberry dye	製作蔓越莓染料	制作蔓越莓染料		REACTION:CRANBERRY_FRUIT_DYE NAME
+make eggplant dye	製作茄子染料	制作茄子染料		REACTION:EGGPLANT_FRUIT_DYE NAME
+make grape dye	製作葡萄染料	制作葡萄染料		REACTION:GRAPE_FRUIT_DYE NAME
+make onion skin dye	製作洋蔥皮染料	制作洋葱皮染料		REACTION:ONION_SKIN_DYE NAME
+make peanut shell dye	製作花生殼染料	制作花生壳染料		REACTION:PEANUT_SHELL_DYE NAME
+make pineapple leaf dye	製作鳳梨葉染料	制作菠萝叶染料		REACTION:PINEAPPLE_LEAF_DYE NAME
+make potato skin dye	製作馬鈴薯皮染料	制作马铃薯皮染料		REACTION:POTATO_SKIN_DYE NAME
+make radish dye	製作蘿蔔染料	制作萝卜染料		REACTION:RADISH_ROOT_DYE NAME
+make raspberry dye	製作覆盆子染料	制作树莓染料		REACTION:RASPBERRY_FRUIT_DYE NAME
+make rhubarb leaf dye	製作大黃葉染料	制作大黄叶染料		REACTION:RHUBARB_LEAF_DYE NAME
+make spinach leaf dye	製作菠菜葉染料	制作菠菜叶染料		REACTION:SPINACH_LEAF_DYE NAME
+make sweet potato skin dye	製作地瓜皮染料	制作红薯皮染料		REACTION:SWEET_POTATO_SKIN_DYE NAME
+make tomato skin dye	製作番茄皮染料	制作番茄皮染料		REACTION:TOMATO_SKIN_DYE NAME
+make turnip skin dye	製作蕪菁皮染料	制作芜菁皮染料		REACTION:TURNIP_SKIN_DYE NAME
+make watermelon dye	製作西瓜染料	制作西瓜染料		REACTION:WATERMELON_FRUIT_DYE NAME
+make carrot dye	製作胡蘿蔔染料	制作胡萝卜染料		REACTION:WILD_CARROT_ROOT_DYE NAME
+tan a hide	鞣製生皮	鞣制生皮		REACTION:TAN_A_HIDE NAME
+render fat	熬煉油脂	熬炼油脂		REACTION:RENDER_FAT NAME
+make soap from tallow	用獸脂製作肥皂	用兽脂制作肥皂		REACTION:MAKE_SOAP_FROM_TALLOW NAME
+make soap from oil	用油製作肥皂	用油制作肥皂		REACTION:MAKE_SOAP_FROM_OIL NAME
+make pearlash	製作珍珠灰	制作珍珠灰		REACTION:MAKE_PEARLASH NAME
+make plaster powder	製作石膏粉	制作石膏粉		REACTION:MAKE_PLASTER_POWDER NAME
+make sharp rock	製作尖石	制作尖石		REACTION:MAKE_SHARP_ROCK NAME
+mill seeds/nuts to paste	將種子／堅果磨成糊	将种子/坚果磨成糊		REACTION:MILL_SEEDS_NUTS_TO_PASTE NAME
+make clay jug	製作陶壺	制作陶壶		REACTION:MAKE_CLAY_JUG NAME
+make clay bricks	製作陶磚	制作陶砖		REACTION:MAKE_CLAY_BRICKS NAME
+make clay statue	製作陶雕像	制作陶雕像		REACTION:MAKE_CLAY_STATUE NAME
+make large clay pot	製作陶大罐	制作陶大罐		REACTION:MAKE_LARGE_CLAY_POT NAME
+make clay crafts	製作陶製工藝品	制作陶制工艺品		REACTION:MAKE_CLAY_CRAFTS NAME
+glaze clay/stone jug	為陶／石壺上釉	给陶/石壶上釉		REACTION:GLAZE_JUG NAME
+glaze clay/stone statue	為陶／石雕像上釉	给陶/石雕像上釉		REACTION:GLAZE_STATUE NAME
+glaze large clay/stone pot	為陶／石大罐上釉	给陶/石大罐上釉		REACTION:GLAZE_LARGE_POT NAME
+glaze clay/stone craft	為陶／石工藝品上釉	给陶/石工艺品上釉		REACTION:GLAZE_CRAFT NAME
+press liquid from paste	從糊中榨出液體	从糊中榨出液体		REACTION:PRESS_OIL NAME
+press liquid from fruit	從水果榨出液體	从水果榨出液体		REACTION:PRESS_OIL_FRUIT NAME
+make clay hive	製作陶蜂箱	制作陶蜂箱		REACTION:MAKE_CLAY_HIVE NAME
+press honey from honeycomb	從蜂巢榨取蜂蜜	从蜂巢榨取蜂蜜		REACTION:PRESS_HONEYCOMB NAME
+make wax crafts	製作蠟製工藝品	制作蜡制工艺品		REACTION:MAKE_WAX_CRAFTS NAME
+brew drink from plant	用植物釀酒	用植物酿酒		REACTION:BREW_DRINK_FROM_PLANT NAME
+brew drink from fruit	用水果釀酒	用水果酿酒		REACTION:BREW_DRINK_FROM_PLANT_GROWTH NAME
+make mead	釀造蜜酒	酿造蜜酒		REACTION:MAKE_MEAD NAME
+process plant to bag	用植物製作袋子	用植物制作袋子		REACTION:PROCESS_PLANT_TO_BAG NAME
+make quicklime	製作生石灰	制作生石灰		REACTION:MAKE_QUICKLIME NAME
+make milk of lime	製作石灰乳	制作石灰乳		REACTION:MAKE_MILK_OF_LIME NAME
+make parchment	製作羊皮紙	制作羊皮纸		REACTION:MAKE_PARCHMENT NAME
+make scroll	製作捲軸	制作卷轴		REACTION:MAKE_SCROLL NAME
+make quire	製作紙帖	制作纸帖		REACTION:MAKE_QUIRE NAME
+make sheet from plant	用植物製作紙張	用植物制作纸张		REACTION:MAKE_SHEET_FROM_PLANT NAME
+mash plant into slurry	將植物搗成漿	将植物捣成浆		REACTION:MAKE_SLURRY_FROM_PLANT NAME
+press plant slurry into paper sheet	將植物漿壓成紙張	将植物浆压成纸张		REACTION:PRESS_PLANT_PAPER NAME
+bind book	裝訂書本	装订书本		REACTION:BIND_BOOK NAME
+carve bone figurine	雕刻骨製小雕像	雕刻骨制小雕像		REACTION:CARVE_BONE_FIGURINE NAME
+carve bone ring	雕刻骨製戒指	雕刻骨制戒指		REACTION:CARVE_BONE_RING NAME
+carve bone earring	雕刻骨製耳環	雕刻骨制耳环		REACTION:CARVE_BONE_EARRING NAME
+carve bone scepter	雕刻骨製權杖	雕刻骨制权杖		REACTION:CARVE_BONE_SCEPTER NAME
+carve bone amulet	雕刻骨製護身符	雕刻骨制护身符		REACTION:CARVE_BONE_AMULET NAME
+carve bone bracelet	雕刻骨製手鐲	雕刻骨制手镯		REACTION:CARVE_BONE_BRACELET NAME
+carve bone crown	雕刻骨製王冠	雕刻骨制王冠		REACTION:CARVE_BONE_CROWN NAME
+carve bone cabochon	雕刻骨製蛋面寶石	雕刻骨制弧面宝石		REACTION:CARVE_BONE_GEM NAME
+carve wooden helve from branch	用樹枝削製木斧柄	用树枝削制木斧柄		REACTION:CARVE_WOODEN_HELVE NAME
+assemble stone axe	組裝石斧	组装石斧		REACTION:ASSEMBLE STONE AXE NAME
+make display case	製作展示櫃	制作展示柜		REACTION:MAKE WOODEN DISPLAY CASE NAME
+make coke from bituminous coal	用煙煤製作焦炭	用烟煤制作焦炭		REACTION:BITUMINOUS_COAL_TO_COKE NAME
+make coke from lignite	用褐煤製作焦炭	用褐煤制作焦炭		REACTION:LIGNITE_TO_COKE NAME
+make brass bars (use ore)	製作黃銅錠（用礦石）	制作黄铜锭（用矿石）		REACTION:BRASS_MAKING NAME
+make brass bars (use bars)	製作黃銅錠（用金屬錠）	制作黄铜锭（用金属锭）		REACTION:BRASS_MAKING2 NAME
+make bronze bars (use ore)	製作青銅錠（用礦石）	制作青铜锭（用矿石）		REACTION:BRONZE_MAKING NAME
+make bronze bars (use bars)	製作青銅錠（用金屬錠）	制作青铜锭（用金属锭）		REACTION:BRONZE_MAKING2 NAME
+make electrum bars (use ore)	製作琥珀金錠（用礦石）	制作琥珀金锭（用矿石）		REACTION:ELECTRUM_MAKING NAME
+make electrum bars (use bars)	製作琥珀金錠（用金屬錠）	制作琥珀金锭（用金属锭）		REACTION:ELECTRUM_MAKING2 NAME
+make billon bars (use ore)	製作劣銀錠（用礦石）	制作劣银锭（用矿石）		REACTION:BILLON_MAKING NAME
+make billon bars (use bars)	製作劣銀錠（用金屬錠）	制作劣银锭（用金属锭）		REACTION:BILLON_MAKING2 NAME
+make fine pewter bars (use ore)	製作精白鑞錠（用礦石）	制作精白镴锭（用矿石）		REACTION:PEWTER_FINE_MAKING NAME
+make fine pewter bars (use bars)	製作精白鑞錠（用金屬錠）	制作精白镴锭（用金属锭）		REACTION:PEWTER_FINE_MAKING2 NAME
+make trifle pewter bars (use ore)	製作次白鑞錠（用礦石）	制作次白镴锭（用矿石）		REACTION:PEWTER_TRIFLE_MAKING NAME
+make trifle pewter bars (use bars)	製作次白鑞錠（用金屬錠）	制作次白镴锭（用金属锭）		REACTION:PEWTER_TRIFLE_MAKING2 NAME
+make lay pewter bars (use bars)	製作劣白鑞錠（用金屬錠）	制作劣白镴锭（用金属锭）		REACTION:PEWTER_LAY_MAKING NAME
+make pig iron bars	製作生鐵錠	制作生铁锭		REACTION:PIG_IRON_MAKING NAME
+make steel bars	製作鋼錠	制作钢锭		REACTION:STEEL_MAKING NAME
+make nickel silver bars	製作鎳銀錠	制作镍银锭		REACTION:NICKEL_SILVER_MAKING NAME
+make black bronze bars	製作黑青銅錠	制作黑青铜锭		REACTION:BLACK_BRONZE_MAKING NAME
+make sterling silver bars	製作標準銀錠	制作标准银锭		REACTION:STERLING_SILVER_MAKING NAME
+make rose gold bars	製作玫瑰金錠	制作玫瑰金锭		REACTION:ROSE_GOLD_MAKING NAME
+make bismuth bronze bars	製作鉍青銅錠	制作铋青铜锭		REACTION:BISMUTH_BRONZE_MAKING NAME
+make adamantine wafers	製作精金薄片	制作精金薄片		REACTION:ADAMANTINE_WAFERS NAME

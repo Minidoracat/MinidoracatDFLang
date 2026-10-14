@@ -18,6 +18,7 @@ const CACHE_LIMIT: usize = 50_000;
 /// 佔位片段遞迴套規則的層數上限
 const MAX_DEPTH: usize = 3;
 
+#[derive(Clone)]
 pub struct Entry {
     /// 替身字串（CP437）。結尾多一個 NUL：MSVC std::string 長字串模式要求緩衝區以 NUL 結尾。
     shadow: Vec<u8>,
@@ -72,11 +73,13 @@ pub struct Rule {
     pattern: Vec<Seg>,
     output: Vec<Out>,
     align: String,
-    /// 樣板本身有中文；沒有的話（例如只換標點的外框），至少要有一個佔位翻得出來才算命中
+    /// 樣板本身有中文字（全形標點不算）；沒有的話（只換標點的外框 `（{1}）`、`{1}，♂`），至少要有一個佔位翻得出來才算命中
     has_cjk: bool,
     /// 開頭、結尾的固定字，先用來快速排除
     prefix: Vec<u8>,
     suffix: Vec<u8>,
+    /// 樣板的固定字含英文字母。沒有英文字的樣板（`{1}, {@2}`、`{@1} {@2}`）能套的字串太多，排在最後比對
+    specific: bool,
 }
 
 /// 一個佔位：編號與能收的片段。
@@ -117,6 +120,22 @@ fn is_number(piece: &[u8]) -> bool {
     !digits.is_empty() && digits[0].is_ascii_digit() && digits.iter().all(|c| c.is_ascii_digit() || *c == b',')
 }
 
+/// 整句字典查詞；查不到、而且含大寫英文字母時，改查全部小寫的寫法。遊戲常把名稱放句首時改大寫
+/// （`Cats, ♂`），動物的稱呼還會每個字大寫（`Stray One-humped Camel`），raws 裡只有小寫。
+/// 全大寫的字串（`PAUSED`）不試；名稱都短，超過 64 位元組的不試，免得配置記憶體。
+fn lookup_name<'a>(entries: &'a HashMap<Vec<u8>, Entry>, key: &[u8]) -> Option<&'a Entry> {
+    entries.get(key).or_else(|| {
+        if key.len() > 64 || !key.iter().any(u8::is_ascii_uppercase) || !key.iter().any(u8::is_ascii_lowercase) {
+            return None;
+        }
+        let mut buf = [0u8; 64];
+        let lower = &mut buf[..key.len()];
+        lower.copy_from_slice(key);
+        lower.make_ascii_lowercase();
+        entries.get(&*lower)
+    })
+}
+
 impl Rule {
     /// 原文樣板必須能轉成 CP437、每個佔位只出現一次、佔位不能相鄰（相鄰時切點不唯一）；
     /// 譯文用到的佔位要和原文一致（譯文裡的 `#`、`@` 寫不寫都可以）。
@@ -151,7 +170,8 @@ impl Rule {
         Some(Rule {
             prefix: lit(pattern.first()),
             suffix: lit(pattern.last()),
-            has_cjk: output.iter().any(|o| matches!(o, Out::Text(t) if t.chars().any(|c| cp437::byte_of(c).is_none()))),
+            has_cjk: output.iter().any(|o| matches!(o, Out::Text(t) if t.chars().any(|c| c.is_alphabetic() && cp437::byte_of(c).is_none()))),
+            specific: pattern.iter().any(|s| matches!(s, Seg::Lit(l) if l.iter().any(u8::is_ascii_alphabetic))),
             pattern,
             output,
             align: align.to_owned(),
@@ -176,7 +196,7 @@ fn match_at(segs: &[Seg], text: &[u8], pos: usize, caps: &mut [(usize, usize); 9
             let fits = |end: usize| match kind {
                 Kind::Any => true,
                 Kind::Number => is_number(&text[pos..end]),
-                Kind::Term => terms.contains_key(&text[pos..end]),
+                Kind::Term => lookup_name(terms, &text[pos..end]).is_some(),
             };
             match rest.first() {
                 None => {
@@ -327,7 +347,7 @@ impl Dict {
         list.iter().find(|(screen, _)| on(screen)).map(|(_, entry)| entry)
     }
 
-    /// 句型規則檔，格式同 load_tsv；依檔案順序比對，先寫的優先。
+    /// 句型規則檔，格式同 load_tsv；依檔案順序比對，先寫的優先，但沒有英文字的樣板一律排在有英文字的後面。
     pub fn load_rules_tsv(&mut self, content: &str) -> LoadReport {
         let mut report = LoadReport { loaded: 0, bad_source: 0, missing_glyphs: 0 };
         for (en, zh, align) in Self::read_tsv(content) {
@@ -345,13 +365,15 @@ impl Dict {
             self.rules.push(rule);
             report.loaded += 1;
         }
+        // 穩定排序：同一類維持檔案順序
+        self.rules.sort_by_key(|r| !r.specific);
         self.cache.lock().clear();
         report
     }
 
-    /// 一段原文的譯文（不含對齊）：整句字典優先，再套句型規則。
+    /// 一段原文的譯文（不含對齊）：整句字典優先（含首字大寫的名稱），再套句型規則。
     pub fn translate_text(&self, key: &[u8]) -> Option<String> {
-        self.entries.get(key).map(|e| e.text.clone()).or_else(|| self.apply_rules(key, 0).map(|(t, _)| t))
+        lookup_name(&self.entries, key).map(|e| e.text.clone()).or_else(|| self.apply_rules(key, 0).map(|(t, _)| t))
     }
 
     fn apply_rules(&self, key: &[u8], depth: usize) -> Option<(String, &Rule)> {
@@ -364,7 +386,7 @@ impl Dict {
                     Out::Text(t) => out.push_str(t),
                     Out::Cap(i) => {
                         let piece = &key[caps[*i].0..caps[*i].1];
-                        let sub = self.entries.get(piece).map(|e| e.text.clone()).or_else(|| {
+                        let sub = lookup_name(&self.entries, piece).map(|e| e.text.clone()).or_else(|| {
                             (depth < MAX_DEPTH).then(|| self.apply_rules(piece, depth + 1).map(|(t, _)| t)).flatten()
                         });
                         translated |= sub.is_some();
@@ -379,18 +401,18 @@ impl Dict {
         None
     }
 
-    /// hook 用：整句字典沒有時，套句型規則並換算成替身字串。譯文比原文寬或缺字圖時放棄，照畫英文。
+    /// hook 用：整句字典沒有時，先試首字小寫的名稱，再套句型規則並換算成替身字串。譯文比原文寬或缺字圖時放棄，照畫英文。
     pub fn rule_entry(&self, key: &[u8]) -> Option<Arc<Entry>> {
-        if self.rules.is_empty() {
-            return None;
-        }
         let mut cache = self.cache.lock();
         if let Some(hit) = cache.get(key) {
             return hit.clone();
         }
-        let entry = self.apply_rules(key, 0).and_then(|(text, rule)| {
-            let (entry, missing) = self.entry(key.len(), &text, &rule.align);
-            (missing == 0 && entry.shadow().len() <= key.len()).then(|| Arc::new(entry))
+        // 小寫寫法的原文和 key 等長，替身字串與對齊都能照用
+        let entry = lookup_name(&self.entries, key).map(|e| Arc::new(e.clone())).or_else(|| {
+            self.apply_rules(key, 0).and_then(|(text, rule)| {
+                let (entry, missing) = self.entry(key.len(), &text, &rule.align);
+                (missing == 0 && entry.shadow().len() <= key.len()).then(|| Arc::new(entry))
+            })
         });
         if cache.len() >= CACHE_LIMIT {
             cache.clear();
@@ -429,9 +451,11 @@ mod tests {
 
     #[test]
     fn wrapper_without_chinese_needs_a_translated_capture() {
-        let d = dict("-{1}-\t-{1}-\n");
+        let d = dict("-{1}-\t-{1}-\n({1})\t（{1}）\n");
         assert_eq!(d.translate_text(b"-Cupidity-").as_deref(), Some("-貪婪-"));
         assert_eq!(d.translate_text(b"-Greed-"), None);
+        assert_eq!(d.translate_text(b"(Cupidity)").as_deref(), Some("（貪婪）"));
+        assert_eq!(d.translate_text(b"(Greed)"), None, "全形標點不算樣板裡的中文");
     }
 
     #[test]
@@ -464,6 +488,24 @@ mod tests {
         let d = dict("{#1}st {@2}\t{2}{1}日\n");
         assert_eq!(d.translate_text(b"1st Labor").as_deref(), Some("勞動1日"));
         assert_eq!(d.translate_text(b"1st Labor, early spring, 5"), None, "不能把後面整串當成月份名");
+    }
+
+    #[test]
+    fn capitalized_names_fall_back_to_lowercase_entries() {
+        let mut d = dict("{1} of {@2}\t{2}的{1}\n");
+        d.load_tsv("greed\t貪婪\nhistories\t歷史\nlabor\t來訪\ngreed labor\t貪婪勞動\n");
+        assert_eq!(d.rule_entry(b"Greed").map(|e| e.text.clone()).as_deref(), Some("貪婪"), "整句：大寫開頭退回小寫條目");
+        assert_eq!(d.translate_text(b"Greed Labor").as_deref(), Some("貪婪勞動"), "每個字大寫的稱呼也退回小寫");
+        assert_eq!(d.translate_text(b"Histories of Greed").as_deref(), Some("貪婪的歷史"), "佔位片段與限定佔位也退回小寫");
+        assert_eq!(d.translate_text(b"Labor").as_deref(), Some("勞動"), "大寫條目存在時用大寫條目");
+        assert_eq!(d.translate_text(b"GREED"), None, "全大寫的字串不退回");
+    }
+
+    #[test]
+    fn rules_with_english_words_are_tried_before_bare_placeholder_rules() {
+        let d = dict("{@1} {@2}\t{1}與{2}\nLabor {@1}\t{1}的勞動\n");
+        assert_eq!(d.translate_text(b"Labor Cupidity").as_deref(), Some("貪婪的勞動"), "通用樣板寫在前面也要讓給有英文字的");
+        assert_eq!(d.translate_text(b"Cupidity Labor").as_deref(), Some("貪婪與勞動"));
     }
 
     #[test]

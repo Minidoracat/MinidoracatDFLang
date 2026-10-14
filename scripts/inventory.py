@@ -84,13 +84,21 @@ def main() -> int:
 
     words = {r["en"] for p in sorted((ROOT / "data/strings").glob("*.tsv")) for r in read_tsv(p)}
     done = words | {r["en"] for p in sorted((ROOT / "data/screens").glob("*.tsv")) for r in read_tsv(p)}
-    terms = "|".join(re.escape(t) for t in sorted(words, key=len, reverse=True))  # 引擎的 {@n} 只查整句字典
-    kinds = {"\\#": r"(-?[\d,]+)", "@": f"({terms})"}  # {#1} 數字、{@1} 字典裡的字詞，其餘任意
-    rules = [re.compile(PLACEHOLDER.sub(lambda m: kinds.get(m.group(1), "(.+?)"), re.escape(r["en"])) + r"\Z")
-             for p in sorted((ROOT / "data/rules").glob("*.tsv")) for r in read_tsv(p)]
+    kinds = {"\\#": r"(-?[\d,]+)"}  # {#1} 數字；{@1} 先當任意片段，比對後再查字典
+    rules = []
+    for p in sorted((ROOT / "data/rules").glob("*.tsv")):
+        for r in read_tsv(p):
+            pattern = re.escape(r["en"])
+            at = [i + 1 for i, m in enumerate(PLACEHOLDER.finditer(pattern)) if m.group(1) == "@"]
+            rules.append((re.compile(PLACEHOLDER.sub(lambda m: kinds.get(m.group(1), "(.+?)"), pattern) + r"\Z"), at))
+
+    def named(text: str) -> bool:
+        """引擎的整句查詞與 {@n}：查整句字典，含大寫時退回全部小寫的寫法（全大寫的不退）"""
+        return text in words or text != text.lower() and text != text.upper() and text.lower() in words
 
     def translated(text: str) -> bool:
-        return text in done or any(rule.match(text) for rule in rules)
+        return text in done or named(text) or any(
+            (m := rule.match(text)) and all(named(m.group(i)) for i in at) for rule, at in rules)
 
     # 實機紀錄：依時間順序保留第一次看到的樣子（同一畫面的字串會相鄰）。沒翻譯的段落整段記一筆（mtb），
     # 段落裡的單字由引擎照畫英文、不記
@@ -145,6 +153,11 @@ def main() -> int:
         fh.write("function\tsource\ttext\n")
         fh.writelines(f"{fn}\t{'exe/raws' if t in items else 'composed'}\t{t}\n"
                       for t, fn in order.items() if not translated(t) and items.get(t, ("",))[0] != "noise")
+    # 只靠大小寫退回翻到的執行檔字串：介面標籤剛好和 raws 名稱同字，意思可能不同（Back 返回、back 後部），要逐條確認
+    with (OUT / "fallback.tsv").open("w", encoding="utf-8", newline="\n") as fh:
+        fh.write("text\tname\n")
+        fh.writelines(f"{t}\t{t.lower()}\n" for t, (kind, _) in items.items()
+                      if kind not in ("raws-name", "language", "raws-prose", "raws-other") and t not in done and named(t))
     lines = [f"快照 {snap.name}；實機紀錄 {len(logs)} 份、{len(seen)} 種字串",
              f"{'分類':<12}{'總數':>8}{'已翻':>8}{'實機看過':>10}"]
     for kind, st in sorted(stats.items(), key=lambda kv: -kv[1]["total"]):

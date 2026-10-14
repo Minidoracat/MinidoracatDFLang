@@ -185,7 +185,7 @@ quarters	住處	住处	game	approved		Meager／Modest／Noble quarters 都是房
 study	書房	书房	game	draft		動詞「to study」「moved to study in」、「the anatomical study of creatures」
 tomb	墓室	墓室	game	draft		世界據點「a tomb」「There is a tomb」是陵墓；「it may be their tomb」是葬身之地
 dungeon	地牢	地牢	game	approved		世界據點「a dungeon」「mythical dungeon」譯地牢也通
-pen	畜欄	畜栏	game	approved		
+pen	畜欄	畜栏	game	draft		母天鵝叫 pen（raws「pen swan」）
 pasture	牧場	牧场	game	approved		
 archery range	射箭場	射箭场	game	approved		
 water source	水源	水源	game	approved		
@@ -303,3 +303,28 @@ cage trap	籠子陷阱	笼子陷阱	game	approved
 weapon trap	武器陷阱	武器陷阱	game	approved		
 spatter	汙漬	污渍	game	approved		血跡、嘔吐物等灑在地上的東西
 blueprint	藍圖	蓝图	ui	approved		非藍圖的 standard 模式譯「標準」
+plump helmet	肉盔菇	肉盔菇	game	approved		地下作物；沿用教學段落的譯名
+pig tail	豬尾草	猪尾草	game	approved		地下作物（纖維）
+cave wheat	洞穴小麥	洞穴小麦	game	approved		地下作物
+sweet pod	甜豆莢	甜豆荚	game	approved		地下作物
+quarry bush	採石灌木	采石灌木	game	approved		地下作物；種子是 rock nut
+rock nut	石堅果	石坚果	game	approved		採石灌木的種子
+dimple cup	窩杯菇	窝杯菇	game	approved		地下作物（染料）
+dwarven wine	矮人酒	矮人酒	game	approved		肉盔菇釀的酒，不是葡萄酒
+dwarven ale	矮人艾爾酒	矮人艾尔酒	game	approved		
+dwarven beer	矮人啤酒	矮人啤酒	game	approved		
+dwarven rum	矮人蘭姆酒	矮人朗姆酒	game	approved		
+magma	熔岩	熔岩	game	approved		和 magma-safe「耐熔岩」一致；兩欄都不用「岩漿」
+kobold	狗頭人	狗头人	creature	approved		
+goblin	哥布林	哥布林	creature	approved		
+elf	精靈	精灵	creature	approved		
+human	人類	人类	creature	approved		
+giant	巨型	巨型	creature	draft		派生名稱 giant X 譯「巨型X」；真實物種名裡的 giant（giant grouper 龍膽石斑、giant tortoise 象龜）不用
+stray	流浪	流浪	game	approved		沒有主人的家畜（Stray Cat 流浪貓）
+wool	羊毛	羊毛	game	approved		
+silk	絲	丝	game	approved		
+parchment	羊皮紙	羊皮纸	game	approved		
+tallow	獸脂	兽脂	game	approved		煉過的動物脂肪；生的 fat 是「脂肪」
+pebbles	卵石	卵石	game	approved		地形說明（chert Pebbles 燧石卵石）
+logs	原木	原木	game	approved		
+anvil	砧台	砧台	game	approved		不用「鐵砧」：材料會接在前面（iron anvil 鐵砧台）

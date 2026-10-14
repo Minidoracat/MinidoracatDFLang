@@ -1,0 +1,454 @@
+en	zh-Hant	zh-Hans	align	note
+abaca tree	蕉麻樹	蕉麻树		PLANT:ABACA NAME
+abaca trees	蕉麻樹	蕉麻树		PLANT:ABACA NAME_PLURAL
+abaca seed	蕉麻種子	蕉麻种子		PLANT:ABACA SEED
+abaca seeds	蕉麻種子	蕉麻种子		PLANT:ABACA SEED
+abaca leaf	蕉麻葉	蕉麻叶		PLANT:ABACA GROWTH_NAME
+abaca leaves	蕉麻葉	蕉麻叶		PLANT:ABACA GROWTH_NAME
+abaca flower	蕉麻花	蕉麻花		PLANT:ABACA GROWTH_NAME
+banana tree	香蕉樹	香蕉树		PLANT:BANANA NAME
+banana trees	香蕉樹	香蕉树		PLANT:BANANA NAME_PLURAL
+frozen banana beer	冰凍的香蕉啤酒	冰冻的香蕉啤酒		PLANT:BANANA STATE_NAME_ADJ
+banana beer	香蕉啤酒	香蕉啤酒		PLANT:BANANA STATE_NAME_ADJ
+boiling banana beer	沸騰的香蕉啤酒	沸腾的香蕉啤酒		PLANT:BANANA STATE_NAME_ADJ
+banana seed	香蕉種子	香蕉种子		PLANT:BANANA SEED
+banana seeds	香蕉種子	香蕉种子		PLANT:BANANA SEED
+banana leaf	香蕉葉	香蕉叶		PLANT:BANANA GROWTH_NAME
+banana leaves	香蕉葉	香蕉叶		PLANT:BANANA GROWTH_NAME
+banana flower	香蕉花	香蕉花		PLANT:BANANA GROWTH_NAME
+banana	香蕉	香蕉		PLANT:BANANA GROWTH_NAME
+banana leaf dye	香蕉葉染料	香蕉叶染料		PLANT:BANANA STATE_NAME_ADJ
+banana peel dye	香蕉皮染料	香蕉皮染料		PLANT:BANANA STATE_NAME_ADJ
+carambola tree	楊桃樹	杨桃树		PLANT:CARAMBOLA NAME
+carambola trees	楊桃樹	杨桃树		PLANT:CARAMBOLA NAME_PLURAL
+carambola wood	楊桃木	杨桃木		PLANT:CARAMBOLA STATE_NAME
+frozen carambola wine	冰凍的楊桃酒	冰冻的杨桃酒		PLANT:CARAMBOLA STATE_NAME_ADJ
+carambola wine	楊桃酒	杨桃酒		PLANT:CARAMBOLA STATE_NAME_ADJ
+boiling carambola wine	沸騰的楊桃酒	沸腾的杨桃酒		PLANT:CARAMBOLA STATE_NAME_ADJ
+carambola seed	楊桃種子	杨桃种子		PLANT:CARAMBOLA SEED
+carambola seeds	楊桃種子	杨桃种子		PLANT:CARAMBOLA SEED
+carambola leaf	楊桃葉	杨桃叶		PLANT:CARAMBOLA GROWTH_NAME
+carambola leaves	楊桃葉	杨桃叶		PLANT:CARAMBOLA GROWTH_NAME
+carambola flower	楊桃花	杨桃花		PLANT:CARAMBOLA GROWTH_NAME
+carambola	楊桃	杨桃		PLANT:CARAMBOLA GROWTH_NAME
+cashew tree	腰果樹	腰果树		PLANT:CASHEW NAME
+cashew trees	腰果樹	腰果树		PLANT:CASHEW NAME_PLURAL
+cashew wood	腰果木	腰果木		PLANT:CASHEW STATE_NAME
+cashew	腰果	腰果		PLANT:CASHEW SEED
+cashews	腰果	腰果		PLANT:CASHEW SEED
+cashew leaf	腰果葉	腰果叶		PLANT:CASHEW GROWTH_NAME
+cashew leaves	腰果葉	腰果叶		PLANT:CASHEW GROWTH_NAME
+cashew flower	腰果花	腰果花		PLANT:CASHEW GROWTH_NAME
+cashew apple	腰果梨	腰果梨		PLANT:CASHEW GROWTH_NAME
+coffee tree	咖啡樹	咖啡树		PLANT:COFFEE NAME
+coffee trees	咖啡樹	咖啡树		PLANT:COFFEE NAME_PLURAL
+coffee wood	咖啡木	咖啡木		PLANT:COFFEE STATE_NAME
+coffee bean	咖啡豆	咖啡豆		PLANT:COFFEE SEED
+coffee beans	咖啡豆	咖啡豆		PLANT:COFFEE SEED
+coffee leaf	咖啡葉	咖啡叶		PLANT:COFFEE GROWTH_NAME
+coffee leaves	咖啡葉	咖啡叶		PLANT:COFFEE GROWTH_NAME
+coffee flower cluster	咖啡花簇	咖啡花簇		PLANT:COFFEE GROWTH_NAME
+coffee cherry	咖啡果	咖啡果		PLANT:COFFEE GROWTH_NAME
+coffee cherries	咖啡果	咖啡果		PLANT:COFFEE GROWTH_NAME
+coffee bean dye	咖啡豆染料	咖啡豆染料		PLANT:COFFEE STATE_NAME_ADJ
+durian tree	榴槤樹	榴莲树		PLANT:DURIAN NAME
+durian trees	榴槤樹	榴莲树		PLANT:DURIAN NAME_PLURAL
+durian wood	榴槤木	榴莲木		PLANT:DURIAN STATE_NAME
+frozen durian wine	冰凍的榴槤酒	冰冻的榴莲酒		PLANT:DURIAN STATE_NAME_ADJ
+durian wine	榴槤酒	榴莲酒		PLANT:DURIAN STATE_NAME_ADJ
+boiling durian wine	沸騰的榴槤酒	沸腾的榴莲酒		PLANT:DURIAN STATE_NAME_ADJ
+durian seed	榴槤種子	榴莲种子		PLANT:DURIAN SEED
+durian seeds	榴槤種子	榴莲种子		PLANT:DURIAN SEED
+durian leaf	榴槤葉	榴莲叶		PLANT:DURIAN GROWTH_NAME
+durian leaves	榴槤葉	榴莲叶		PLANT:DURIAN GROWTH_NAME
+durian flower	榴槤花	榴莲花		PLANT:DURIAN GROWTH_NAME
+durian	榴槤	榴莲		PLANT:DURIAN GROWTH_NAME
+guava tree	芭樂樹	番石榴树		PLANT:GUAVA NAME；台灣通稱芭樂，大陸用番石榴
+guava trees	芭樂樹	番石榴树		PLANT:GUAVA NAME_PLURAL
+guava wood	芭樂木	番石榴木		PLANT:GUAVA STATE_NAME
+frozen guava wine	冰凍的芭樂酒	冰冻的番石榴酒		PLANT:GUAVA STATE_NAME_ADJ
+guava wine	芭樂酒	番石榴酒		PLANT:GUAVA STATE_NAME_ADJ
+boiling guava wine	沸騰的芭樂酒	沸腾的番石榴酒		PLANT:GUAVA STATE_NAME_ADJ
+guava seed	芭樂種子	番石榴种子		PLANT:GUAVA SEED
+guava seeds	芭樂種子	番石榴种子		PLANT:GUAVA SEED
+guava leaf	芭樂葉	番石榴叶		PLANT:GUAVA GROWTH_NAME
+guava leaves	芭樂葉	番石榴叶		PLANT:GUAVA GROWTH_NAME
+guava flower	芭樂花	番石榴花		PLANT:GUAVA GROWTH_NAME
+guava	芭樂	番石榴		PLANT:GUAVA GROWTH_NAME
+guava bark dye	芭樂樹皮染料	番石榴树皮染料		PLANT:GUAVA STATE_NAME_ADJ
+guava leaf dye	芭樂葉染料	番石榴叶染料		PLANT:GUAVA STATE_NAME_ADJ
+papaya tree	木瓜樹	木瓜树		PLANT:PAPAYA NAME
+papaya trees	木瓜樹	木瓜树		PLANT:PAPAYA NAME_PLURAL
+papaya wood	木瓜木	木瓜木		PLANT:PAPAYA STATE_NAME
+frozen papaya wine	冰凍的木瓜酒	冰冻的木瓜酒		PLANT:PAPAYA STATE_NAME_ADJ
+papaya wine	木瓜酒	木瓜酒		PLANT:PAPAYA STATE_NAME_ADJ
+boiling papaya wine	沸騰的木瓜酒	沸腾的木瓜酒		PLANT:PAPAYA STATE_NAME_ADJ
+papaya seed	木瓜種子	木瓜种子		PLANT:PAPAYA SEED
+papaya seeds	木瓜種子	木瓜种子		PLANT:PAPAYA SEED
+papaya leaf	木瓜葉	木瓜叶		PLANT:PAPAYA GROWTH_NAME
+papaya leaves	木瓜葉	木瓜叶		PLANT:PAPAYA GROWTH_NAME
+papaya flower	木瓜花	木瓜花		PLANT:PAPAYA GROWTH_NAME
+papaya	木瓜	木瓜		PLANT:PAPAYA GROWTH_NAME
+paradise nut tree	天堂堅果樹	天堂坚果树		PLANT:PARADISE_NUT NAME；Lecythis zabucajo，照字面譯
+paradise nut trees	天堂堅果樹	天堂坚果树		PLANT:PARADISE_NUT NAME_PLURAL
+paradise nut wood	天堂堅果木	天堂坚果木		PLANT:PARADISE_NUT STATE_NAME
+paradise nut	天堂堅果	天堂坚果		PLANT:PARADISE_NUT SEED
+paradise nuts	天堂堅果	天堂坚果		PLANT:PARADISE_NUT SEED
+paradise nut leaf	天堂堅果葉	天堂坚果叶		PLANT:PARADISE_NUT GROWTH_NAME
+paradise nut leaves	天堂堅果葉	天堂坚果叶		PLANT:PARADISE_NUT GROWTH_NAME
+paradise nut raceme	天堂堅果總狀花序	天堂坚果总状花序		PLANT:PARADISE_NUT GROWTH_NAME
+paradise nut fruit	天堂堅果果實	天堂坚果果实		PLANT:PARADISE_NUT GROWTH_NAME
+rambutan tree	紅毛丹樹	红毛丹树		PLANT:RAMBUTAN NAME
+rambutan trees	紅毛丹樹	红毛丹树		PLANT:RAMBUTAN NAME_PLURAL
+rambutan wood	紅毛丹木	红毛丹木		PLANT:RAMBUTAN STATE_NAME
+frozen rambutan wine	冰凍的紅毛丹酒	冰冻的红毛丹酒		PLANT:RAMBUTAN STATE_NAME_ADJ
+rambutan wine	紅毛丹酒	红毛丹酒		PLANT:RAMBUTAN STATE_NAME_ADJ
+boiling rambutan wine	沸騰的紅毛丹酒	沸腾的红毛丹酒		PLANT:RAMBUTAN STATE_NAME_ADJ
+rambutan seed	紅毛丹種子	红毛丹种子		PLANT:RAMBUTAN SEED
+rambutan seeds	紅毛丹種子	红毛丹种子		PLANT:RAMBUTAN SEED
+rambutan leaf	紅毛丹葉	红毛丹叶		PLANT:RAMBUTAN GROWTH_NAME
+rambutan leaves	紅毛丹葉	红毛丹叶		PLANT:RAMBUTAN GROWTH_NAME
+rambutan flower	紅毛丹花	红毛丹花		PLANT:RAMBUTAN GROWTH_NAME
+rambutan	紅毛丹	红毛丹		PLANT:RAMBUTAN GROWTH_NAME
+tea tree	茶樹	茶树		PLANT:TEA NAME
+tea trees	茶樹	茶树		PLANT:TEA NAME_PLURAL
+tea wood	茶木	茶木		PLANT:TEA STATE_NAME
+tea seed	茶種子	茶种子		PLANT:TEA SEED
+tea seeds	茶種子	茶种子		PLANT:TEA SEED
+tea leaf	茶葉	茶叶		PLANT:TEA GROWTH_NAME
+tea leaves	茶葉	茶叶		PLANT:TEA GROWTH_NAME
+tea flower	茶花	茶花		PLANT:TEA GROWTH_NAME
+tea tree capsule	茶樹蒴果	茶树蒴果		PLANT:TEA GROWTH_NAME
+tea leaf dye	茶葉染料	茶叶染料		PLANT:TEA STATE_NAME_ADJ
+avocado tree	酪梨樹	牛油果树		PLANT:AVOCADO NAME；兩岸用語不同
+avocado trees	酪梨樹	牛油果树		PLANT:AVOCADO NAME_PLURAL
+avocado wood	酪梨木	牛油果木		PLANT:AVOCADO STATE_NAME
+avocado pit	酪梨籽	牛油果核		PLANT:AVOCADO SEED
+avocado pits	酪梨籽	牛油果核		PLANT:AVOCADO SEED
+avocado leaf	酪梨葉	牛油果叶		PLANT:AVOCADO GROWTH_NAME
+avocado leaves	酪梨葉	牛油果叶		PLANT:AVOCADO GROWTH_NAME
+avocado flower	酪梨花	牛油果花		PLANT:AVOCADO GROWTH_NAME
+avocado	酪梨	牛油果		PLANT:AVOCADO GROWTH_NAME
+avocado skin dye	酪梨皮染料	牛油果皮染料		PLANT:AVOCADO STATE_NAME_ADJ
+lime tree	萊姆樹	青柠树		PLANT:LIME NAME；柑橘類萊姆，不是椴樹
+lime trees	萊姆樹	青柠树		PLANT:LIME NAME_PLURAL
+lime wood	萊姆木	青柠木		PLANT:LIME STATE_NAME
+lime seed	萊姆種子	青柠种子		PLANT:LIME SEED
+lime seeds	萊姆種子	青柠种子		PLANT:LIME SEED
+lime leaf	萊姆葉	青柠叶		PLANT:LIME GROWTH_NAME
+lime leaves	萊姆葉	青柠叶		PLANT:LIME GROWTH_NAME
+lime flower	萊姆花	青柠花		PLANT:LIME GROWTH_NAME
+pomelo tree	柚子樹	柚子树		PLANT:POMELO NAME
+pomelo trees	柚子樹	柚子树		PLANT:POMELO NAME_PLURAL
+pomelo wood	柚子木	柚子木		PLANT:POMELO STATE_NAME
+pomelo seed	柚子種子	柚子种子		PLANT:POMELO SEED
+pomelo seeds	柚子種子	柚子种子		PLANT:POMELO SEED
+pomelo leaf	柚子葉	柚子叶		PLANT:POMELO GROWTH_NAME
+pomelo leaves	柚子葉	柚子叶		PLANT:POMELO GROWTH_NAME
+pomelo flower	柚子花	柚子花		PLANT:POMELO GROWTH_NAME
+pomelo	柚子	柚子		PLANT:POMELO GROWTH_NAME
+citron tree	香櫞樹	香橼树		PLANT:CITRON NAME
+citron trees	香櫞樹	香橼树		PLANT:CITRON NAME_PLURAL
+citron wood	香櫞木	香橼木		PLANT:CITRON STATE_NAME
+citron seed	香櫞種子	香橼种子		PLANT:CITRON SEED
+citron seeds	香櫞種子	香橼种子		PLANT:CITRON SEED
+citron leaf	香櫞葉	香橼叶		PLANT:CITRON GROWTH_NAME
+citron leaves	香櫞葉	香橼叶		PLANT:CITRON GROWTH_NAME
+citron flower	香櫞花	香橼花		PLANT:CITRON GROWTH_NAME
+citron	香櫞	香橼		PLANT:CITRON GROWTH_NAME
+orange tree	柳橙樹	橙子树		PLANT:ORANGE NAME；兩岸通行名不同
+orange trees	柳橙樹	橙子树		PLANT:ORANGE NAME_PLURAL
+orange wood	柳橙木	橙子木		PLANT:ORANGE STATE_NAME
+orange seed	柳橙種子	橙子种子		PLANT:ORANGE SEED
+orange seeds	柳橙種子	橙子种子		PLANT:ORANGE SEED
+orange leaf	柳橙葉	橙子叶		PLANT:ORANGE GROWTH_NAME
+orange leaves	柳橙葉	橙子叶		PLANT:ORANGE GROWTH_NAME
+orange flower	柳橙花	橙子花		PLANT:ORANGE GROWTH_NAME
+bitter orange tree	苦橙樹	酸橙树		PLANT:BITTER_ORANGE NAME；Citrus aurantium；大陸正式名酸橙
+bitter orange trees	苦橙樹	酸橙树		PLANT:BITTER_ORANGE NAME_PLURAL
+bitter orange wood	苦橙木	酸橙木		PLANT:BITTER_ORANGE STATE_NAME
+bitter orange seed	苦橙種子	酸橙种子		PLANT:BITTER_ORANGE SEED
+bitter orange seeds	苦橙種子	酸橙种子		PLANT:BITTER_ORANGE SEED
+bitter orange leaf	苦橙葉	酸橙叶		PLANT:BITTER_ORANGE GROWTH_NAME
+bitter orange leaves	苦橙葉	酸橙叶		PLANT:BITTER_ORANGE GROWTH_NAME
+bitter orange flower	苦橙花	酸橙花		PLANT:BITTER_ORANGE GROWTH_NAME
+bitter orange	苦橙	酸橙		PLANT:BITTER_ORANGE GROWTH_NAME
+finger lime tree	手指檸檬樹	手指柠檬树		PLANT:FINGER_LIME NAME
+finger lime trees	手指檸檬樹	手指柠檬树		PLANT:FINGER_LIME NAME_PLURAL
+finger lime wood	手指檸檬木	手指柠檬木		PLANT:FINGER_LIME STATE_NAME
+finger lime seed	手指檸檬種子	手指柠檬种子		PLANT:FINGER_LIME SEED
+finger lime seeds	手指檸檬種子	手指柠檬种子		PLANT:FINGER_LIME SEED
+finger lime leaf	手指檸檬葉	手指柠檬叶		PLANT:FINGER_LIME GROWTH_NAME
+finger lime leaves	手指檸檬葉	手指柠檬叶		PLANT:FINGER_LIME GROWTH_NAME
+finger lime flower	手指檸檬花	手指柠檬花		PLANT:FINGER_LIME GROWTH_NAME
+finger lime	手指檸檬	手指柠檬		PLANT:FINGER_LIME GROWTH_NAME
+round lime tree	圓萊姆樹	圆青柠树		PLANT:ROUND_LIME NAME；Citrus australis，無通行中文名，照字面譯
+round lime trees	圓萊姆樹	圆青柠树		PLANT:ROUND_LIME NAME_PLURAL
+round lime wood	圓萊姆木	圆青柠木		PLANT:ROUND_LIME STATE_NAME
+round lime seed	圓萊姆種子	圆青柠种子		PLANT:ROUND_LIME SEED
+round lime seeds	圓萊姆種子	圆青柠种子		PLANT:ROUND_LIME SEED
+round lime leaf	圓萊姆葉	圆青柠叶		PLANT:ROUND_LIME GROWTH_NAME
+round lime leaves	圓萊姆葉	圆青柠叶		PLANT:ROUND_LIME GROWTH_NAME
+round lime flower	圓萊姆花	圆青柠花		PLANT:ROUND_LIME GROWTH_NAME
+round lime	圓萊姆	圆青柠		PLANT:ROUND_LIME GROWTH_NAME
+desert lime tree	沙漠萊姆樹	沙漠青柠树		PLANT:DESERT_LIME NAME；Citrus glauca，無通行中文名，照字面譯
+desert lime trees	沙漠萊姆樹	沙漠青柠树		PLANT:DESERT_LIME NAME_PLURAL
+desert lime wood	沙漠萊姆木	沙漠青柠木		PLANT:DESERT_LIME STATE_NAME
+desert lime seed	沙漠萊姆種子	沙漠青柠种子		PLANT:DESERT_LIME SEED
+desert lime seeds	沙漠萊姆種子	沙漠青柠种子		PLANT:DESERT_LIME SEED
+desert lime leaf	沙漠萊姆葉	沙漠青柠叶		PLANT:DESERT_LIME GROWTH_NAME
+desert lime leaves	沙漠萊姆葉	沙漠青柠叶		PLANT:DESERT_LIME GROWTH_NAME
+desert lime flower	沙漠萊姆花	沙漠青柠花		PLANT:DESERT_LIME GROWTH_NAME
+desert lime	沙漠萊姆	沙漠青柠		PLANT:DESERT_LIME GROWTH_NAME
+kumquat tree	金桔樹	金橘树		PLANT:KUMQUAT NAME
+kumquat trees	金桔樹	金橘树		PLANT:KUMQUAT NAME_PLURAL
+kumquat wood	金桔木	金橘木		PLANT:KUMQUAT STATE_NAME
+kumquat seed	金桔種子	金橘种子		PLANT:KUMQUAT SEED
+kumquat seeds	金桔種子	金橘种子		PLANT:KUMQUAT SEED
+kumquat leaf	金桔葉	金橘叶		PLANT:KUMQUAT GROWTH_NAME
+kumquat leaves	金桔葉	金橘叶		PLANT:KUMQUAT GROWTH_NAME
+kumquat flower	金桔花	金橘花		PLANT:KUMQUAT GROWTH_NAME
+kumquat	金桔	金橘		PLANT:KUMQUAT GROWTH_NAME
+custard-apple tree	牛心梨樹	牛心番荔枝树		PLANT:CUSTARD-APPLE NAME；Annona reticulata；台灣稱牛心梨，大陸正式名牛心番荔枝
+custard-apple trees	牛心梨樹	牛心番荔枝树		PLANT:CUSTARD-APPLE NAME_PLURAL
+custard-apple wood	牛心梨木	牛心番荔枝木		PLANT:CUSTARD-APPLE STATE_NAME
+frozen custard-apple cider	冰凍的牛心梨酒	冰冻的牛心番荔枝酒		PLANT:CUSTARD-APPLE STATE_NAME_ADJ
+custard-apple cider	牛心梨酒	牛心番荔枝酒		PLANT:CUSTARD-APPLE STATE_NAME_ADJ
+boiling custard-apple cider	沸騰的牛心梨酒	沸腾的牛心番荔枝酒		PLANT:CUSTARD-APPLE STATE_NAME_ADJ
+custard-apple seed	牛心梨種子	牛心番荔枝种子		PLANT:CUSTARD-APPLE SEED
+custard-apple seeds	牛心梨種子	牛心番荔枝种子		PLANT:CUSTARD-APPLE SEED
+custard-apple leaf	牛心梨葉	牛心番荔枝叶		PLANT:CUSTARD-APPLE GROWTH_NAME
+custard-apple leaves	牛心梨葉	牛心番荔枝叶		PLANT:CUSTARD-APPLE GROWTH_NAME
+custard-apple flower	牛心梨花	牛心番荔枝花		PLANT:CUSTARD-APPLE GROWTH_NAME
+custard-apple	牛心梨	牛心番荔枝		PLANT:CUSTARD-APPLE GROWTH_NAME
+date palm	椰棗樹	椰枣树		PLANT:DATE_PALM NAME
+date palms	椰棗樹	椰枣树		PLANT:DATE_PALM NAME_PLURAL
+date palm wood	椰棗木	椰枣木		PLANT:DATE_PALM STATE_NAME
+frozen date wine	冰凍的椰棗酒	冰冻的椰枣酒		PLANT:DATE_PALM STATE_NAME_ADJ
+date wine	椰棗酒	椰枣酒		PLANT:DATE_PALM STATE_NAME_ADJ
+boiling date wine	沸騰的椰棗酒	沸腾的椰枣酒		PLANT:DATE_PALM STATE_NAME_ADJ
+date palm seed	椰棗種子	椰枣种子		PLANT:DATE_PALM SEED
+date palm seeds	椰棗種子	椰枣种子		PLANT:DATE_PALM SEED
+date palm frond blade	椰棗葉片	椰枣叶片		PLANT:DATE_PALM GROWTH_NAME
+date palm frond blades	椰棗葉片	椰枣叶片		PLANT:DATE_PALM GROWTH_NAME
+date palm flower stalk	椰棗花梗	椰枣花梗		PLANT:DATE_PALM GROWTH_NAME
+date	椰棗	椰枣		PLANT:DATE_PALM GROWTH_NAME
+lychee tree	荔枝樹	荔枝树		PLANT:LYCHEE NAME
+lychee trees	荔枝樹	荔枝树		PLANT:LYCHEE NAME_PLURAL
+lychee wood	荔枝木	荔枝木		PLANT:LYCHEE STATE_NAME
+frozen lychee wine	冰凍的荔枝酒	冰冻的荔枝酒		PLANT:LYCHEE STATE_NAME_ADJ
+lychee wine	荔枝酒	荔枝酒		PLANT:LYCHEE STATE_NAME_ADJ
+boiling lychee wine	沸騰的荔枝酒	沸腾的荔枝酒		PLANT:LYCHEE STATE_NAME_ADJ
+lychee seed	荔枝種子	荔枝种子		PLANT:LYCHEE SEED
+lychee seeds	荔枝種子	荔枝种子		PLANT:LYCHEE SEED
+lychee leaf	荔枝葉	荔枝叶		PLANT:LYCHEE GROWTH_NAME
+lychee leaves	荔枝葉	荔枝叶		PLANT:LYCHEE GROWTH_NAME
+lychee flower	荔枝花	荔枝花		PLANT:LYCHEE GROWTH_NAME
+lychee	荔枝	荔枝		PLANT:LYCHEE GROWTH_NAME
+macadamia tree	夏威夷豆樹	夏威夷果树		PLANT:MACADAMIA NAME；兩岸通行名不同
+macadamia trees	夏威夷豆樹	夏威夷果树		PLANT:MACADAMIA NAME_PLURAL
+macadamia wood	夏威夷豆木	夏威夷果木		PLANT:MACADAMIA STATE_NAME
+macadamia nut	夏威夷豆	夏威夷果		PLANT:MACADAMIA SEED
+macadamia nuts	夏威夷豆	夏威夷果		PLANT:MACADAMIA SEED
+macadamia leaf	夏威夷豆葉	夏威夷果叶		PLANT:MACADAMIA GROWTH_NAME
+macadamia leaves	夏威夷豆葉	夏威夷果叶		PLANT:MACADAMIA GROWTH_NAME
+macadamia raceme	夏威夷豆總狀花序	夏威夷果总状花序		PLANT:MACADAMIA GROWTH_NAME
+olive tree	橄欖樹	橄榄树		PLANT:OLIVE NAME
+olive trees	橄欖樹	橄榄树		PLANT:OLIVE NAME_PLURAL
+frozen olive oil	冰凍的橄欖油	冰冻的橄榄油		PLANT:OLIVE STATE_NAME_ADJ
+olive oil	橄欖油	橄榄油		PLANT:OLIVE STATE_NAME_ADJ
+boiling olive oil	沸騰的橄欖油	沸腾的橄榄油		PLANT:OLIVE STATE_NAME_ADJ
+olive oil soap	橄欖油皂	橄榄油皂		PLANT:OLIVE STATE_NAME_ADJ
+melted olive oil soap	融化的橄欖油皂	融化的橄榄油皂		PLANT:OLIVE STATE_NAME_ADJ
+olive wood	橄欖木	橄榄木		PLANT:OLIVE STATE_NAME
+olive fruit	橄欖果	橄榄果		PLANT:OLIVE STATE_NAME_ADJ
+olive pomace	橄欖果渣	橄榄果渣		PLANT:OLIVE STATE_NAME_ADJ
+olive pit	橄欖核	橄榄核		PLANT:OLIVE SEED
+olive pits	橄欖核	橄榄核		PLANT:OLIVE SEED
+olive leaf	橄欖葉	橄榄叶		PLANT:OLIVE GROWTH_NAME
+olive leaves	橄欖葉	橄榄叶		PLANT:OLIVE GROWTH_NAME
+olive raceme	橄欖總狀花序	橄榄总状花序		PLANT:OLIVE GROWTH_NAME
+olive bark dye	橄欖樹皮染料	橄榄树皮染料		PLANT:OLIVE STATE_NAME_ADJ
+olive leaf dye	橄欖葉染料	橄榄叶染料		PLANT:OLIVE STATE_NAME_ADJ
+pomegranate tree	石榴樹	石榴树		PLANT:POMEGRANATE NAME
+pomegranate trees	石榴樹	石榴树		PLANT:POMEGRANATE NAME_PLURAL
+pomegranate wood	石榴木	石榴木		PLANT:POMEGRANATE STATE_NAME
+frozen pomegranate wine	冰凍的石榴酒	冰冻的石榴酒		PLANT:POMEGRANATE STATE_NAME_ADJ
+pomegranate wine	石榴酒	石榴酒		PLANT:POMEGRANATE STATE_NAME_ADJ
+boiling pomegranate wine	沸騰的石榴酒	沸腾的石榴酒		PLANT:POMEGRANATE STATE_NAME_ADJ
+pomegranate seed	石榴種子	石榴种子		PLANT:POMEGRANATE SEED
+pomegranate seeds	石榴種子	石榴种子		PLANT:POMEGRANATE SEED
+pomegranate leaf	石榴葉	石榴叶		PLANT:POMEGRANATE GROWTH_NAME
+pomegranate leaves	石榴葉	石榴叶		PLANT:POMEGRANATE GROWTH_NAME
+pomegranate flower	石榴花	石榴花		PLANT:POMEGRANATE GROWTH_NAME
+pomegranate	石榴	石榴		PLANT:POMEGRANATE GROWTH_NAME
+pomegranate leaf dye	石榴葉染料	石榴叶染料		PLANT:POMEGRANATE STATE_NAME_ADJ
+pomegranate rind dye	石榴皮染料	石榴皮染料		PLANT:POMEGRANATE STATE_NAME_ADJ
+pomegranate bark dye	石榴樹皮染料	石榴树皮染料		PLANT:POMEGRANATE STATE_NAME_ADJ
+almond tree	杏仁樹	扁桃树		PLANT:ALMOND NAME；大陸「杏仁」多指杏核仁，簡中用扁桃
+almond trees	杏仁樹	扁桃树		PLANT:ALMOND NAME_PLURAL
+almond wood	杏仁木	扁桃木		PLANT:ALMOND STATE_NAME
+almond	杏仁果	扁桃仁		PLANT:ALMOND SEED
+almonds	杏仁果	扁桃仁		PLANT:ALMOND SEED
+almond leaf	杏仁葉	扁桃叶		PLANT:ALMOND GROWTH_NAME
+almond leaves	杏仁葉	扁桃叶		PLANT:ALMOND GROWTH_NAME
+almond flower	杏仁花	扁桃花		PLANT:ALMOND GROWTH_NAME
+almond shell dye	杏仁殼染料	扁桃壳染料		PLANT:ALMOND STATE_NAME_ADJ
+apple tree	蘋果樹	苹果树		PLANT:APPLE NAME
+apple trees	蘋果樹	苹果树		PLANT:APPLE NAME_PLURAL
+apple wood	蘋果木	苹果木		PLANT:APPLE STATE_NAME
+frozen apple cider	冰凍的蘋果酒	冰冻的苹果酒		PLANT:APPLE STATE_NAME_ADJ
+apple cider	蘋果酒	苹果酒		PLANT:APPLE STATE_NAME_ADJ
+boiling apple cider	沸騰的蘋果酒	沸腾的苹果酒		PLANT:APPLE STATE_NAME_ADJ
+apple seed	蘋果種子	苹果种子		PLANT:APPLE SEED
+apple seeds	蘋果種子	苹果种子		PLANT:APPLE SEED
+apple leaf	蘋果葉	苹果叶		PLANT:APPLE GROWTH_NAME
+apple leaves	蘋果葉	苹果叶		PLANT:APPLE GROWTH_NAME
+apple flower	蘋果花	苹果花		PLANT:APPLE GROWTH_NAME
+apple	蘋果	苹果		PLANT:APPLE GROWTH_NAME
+apple bark dye	蘋果樹皮染料	苹果树皮染料		PLANT:APPLE STATE_NAME_ADJ
+apple leaf dye	蘋果葉染料	苹果叶染料		PLANT:APPLE STATE_NAME_ADJ
+apricot tree	杏樹	杏树		PLANT:APRICOT NAME
+apricot trees	杏樹	杏树		PLANT:APRICOT NAME_PLURAL
+apricot wood	杏木	杏木		PLANT:APRICOT STATE_NAME
+frozen apricot wine	冰凍的杏子酒	冰冻的杏子酒		PLANT:APRICOT STATE_NAME_ADJ
+apricot wine	杏子酒	杏子酒		PLANT:APRICOT STATE_NAME_ADJ
+boiling apricot wine	沸騰的杏子酒	沸腾的杏子酒		PLANT:APRICOT STATE_NAME_ADJ
+apricot pit	杏核	杏核		PLANT:APRICOT SEED
+apricot pits	杏核	杏核		PLANT:APRICOT SEED
+apricot leaf	杏葉	杏叶		PLANT:APRICOT GROWTH_NAME
+apricot leaves	杏葉	杏叶		PLANT:APRICOT GROWTH_NAME
+apricot flower	杏花	杏花		PLANT:APRICOT GROWTH_NAME
+apricot	杏子	杏子		PLANT:APRICOT GROWTH_NAME
+apricot bark dye	杏樹皮染料	杏树皮染料		PLANT:APRICOT STATE_NAME_ADJ
+bayberry tree	楊梅樹	杨梅树		PLANT:BAYBERRY NAME
+bayberry trees	楊梅樹	杨梅树		PLANT:BAYBERRY NAME_PLURAL
+bayberry wood	楊梅木	杨梅木		PLANT:BAYBERRY STATE_NAME
+frozen bayberry wine	冰凍的楊梅酒	冰冻的杨梅酒		PLANT:BAYBERRY STATE_NAME_ADJ
+bayberry wine	楊梅酒	杨梅酒		PLANT:BAYBERRY STATE_NAME_ADJ
+boiling bayberry wine	沸騰的楊梅酒	沸腾的杨梅酒		PLANT:BAYBERRY STATE_NAME_ADJ
+bayberry seed	楊梅種子	杨梅种子		PLANT:BAYBERRY SEED
+bayberry seeds	楊梅種子	杨梅种子		PLANT:BAYBERRY SEED
+bayberry leaf	楊梅葉	杨梅叶		PLANT:BAYBERRY GROWTH_NAME
+bayberry leaves	楊梅葉	杨梅叶		PLANT:BAYBERRY GROWTH_NAME
+bayberry pollen catkin	楊梅雄花序	杨梅雄花序		PLANT:BAYBERRY GROWTH_NAME
+bayberry seed catkin	楊梅雌花序	杨梅雌花序		PLANT:BAYBERRY GROWTH_NAME
+bayberry	楊梅	杨梅		PLANT:BAYBERRY GROWTH_NAME
+bayberries	楊梅	杨梅		PLANT:BAYBERRY GROWTH_NAME
+bayberry leaf dye	楊梅葉染料	杨梅叶染料		PLANT:BAYBERRY STATE_NAME_ADJ
+bayberry dye	楊梅染料	杨梅染料		PLANT:BAYBERRY STATE_NAME_ADJ
+cherry tree	櫻桃樹	樱桃树		PLANT:CHERRY NAME
+cherry trees	櫻桃樹	樱桃树		PLANT:CHERRY NAME_PLURAL
+cherry wood	櫻桃木	樱桃木		PLANT:CHERRY STATE_NAME
+frozen cherry wine	冰凍的櫻桃酒	冰冻的樱桃酒		PLANT:CHERRY STATE_NAME_ADJ
+cherry wine	櫻桃酒	樱桃酒		PLANT:CHERRY STATE_NAME_ADJ
+boiling cherry wine	沸騰的櫻桃酒	沸腾的樱桃酒		PLANT:CHERRY STATE_NAME_ADJ
+cherry pit	櫻桃核	樱桃核		PLANT:CHERRY SEED
+cherry pits	櫻桃核	樱桃核		PLANT:CHERRY SEED
+cherry leaf	櫻桃葉	樱桃叶		PLANT:CHERRY GROWTH_NAME
+cherry leaves	櫻桃葉	樱桃叶		PLANT:CHERRY GROWTH_NAME
+cherry flower	櫻桃花	樱桃花		PLANT:CHERRY GROWTH_NAME
+cherry	櫻桃	樱桃		PLANT:CHERRY GROWTH_NAME
+cherries	櫻桃	樱桃		PLANT:CHERRY GROWTH_NAME
+cherry bark dye	櫻桃樹皮染料	樱桃树皮染料		PLANT:CHERRY STATE_NAME_ADJ
+cherry leaf dye	櫻桃葉染料	樱桃叶染料		PLANT:CHERRY STATE_NAME_ADJ
+ginkgo tree	銀杏樹	银杏树		PLANT:GINKGO NAME
+ginkgo trees	銀杏樹	银杏树		PLANT:GINKGO NAME_PLURAL
+ginkgo wood	銀杏木	银杏木		PLANT:GINKGO STATE_NAME
+ginkgo seed	銀杏種子	银杏种子		PLANT:GINKGO SEED
+ginkgo seeds	銀杏種子	银杏种子		PLANT:GINKGO SEED
+ginkgo leaf	銀杏葉	银杏叶		PLANT:GINKGO GROWTH_NAME
+ginkgo leaves	銀杏葉	银杏叶		PLANT:GINKGO GROWTH_NAME
+ginkgo pollen catkin	銀杏雄球花	银杏雄球花		PLANT:GINKGO GROWTH_NAME
+ginkgo leaf dye	銀杏葉染料	银杏叶染料		PLANT:GINKGO STATE_NAME_ADJ
+hazel tree	榛樹	榛树		PLANT:HAZEL NAME
+hazel trees	榛樹	榛树		PLANT:HAZEL NAME_PLURAL
+hazel wood	榛木	榛木		PLANT:HAZEL STATE_NAME
+hazel nut	榛果	榛子		PLANT:HAZEL SEED
+hazel nuts	榛果	榛子		PLANT:HAZEL SEED
+hazel leaf	榛葉	榛叶		PLANT:HAZEL GROWTH_NAME
+hazel leaves	榛葉	榛叶		PLANT:HAZEL GROWTH_NAME
+hazel pollen catkin	榛樹雄花序	榛树雄花序		PLANT:HAZEL GROWTH_NAME
+hazel bark dye	榛樹皮染料	榛树皮染料		PLANT:HAZEL STATE_NAME_ADJ
+hazel leaf dye	榛葉染料	榛叶染料		PLANT:HAZEL STATE_NAME_ADJ
+peach tree	桃樹	桃树		PLANT:PEACH NAME
+peach trees	桃樹	桃树		PLANT:PEACH NAME_PLURAL
+peach wood	桃木	桃木		PLANT:PEACH STATE_NAME
+frozen peach cider	冰凍的桃子酒	冰冻的桃子酒		PLANT:PEACH STATE_NAME_ADJ
+peach cider	桃子酒	桃子酒		PLANT:PEACH STATE_NAME_ADJ
+boiling peach cider	沸騰的桃子酒	沸腾的桃子酒		PLANT:PEACH STATE_NAME_ADJ
+peach pit	桃核	桃核		PLANT:PEACH SEED
+peach pits	桃核	桃核		PLANT:PEACH SEED
+peach leaf	桃葉	桃叶		PLANT:PEACH GROWTH_NAME
+peach leaves	桃葉	桃叶		PLANT:PEACH GROWTH_NAME
+peach flower	桃花	桃花		PLANT:PEACH GROWTH_NAME
+peaches	桃子	桃子		PLANT:PEACH GROWTH_NAME
+peach bark dye	桃樹皮染料	桃树皮染料		PLANT:PEACH STATE_NAME_ADJ
+pear tree	梨樹	梨树		PLANT:PEAR NAME
+pear trees	梨樹	梨树		PLANT:PEAR NAME_PLURAL
+pear wood	梨木	梨木		PLANT:PEAR STATE_NAME
+frozen perry	冰凍的梨酒	冰冻的梨酒		PLANT:PEAR STATE_NAME_ADJ
+perry	梨酒	梨酒		PLANT:PEAR STATE_NAME_ADJ
+boiling perry	沸騰的梨酒	沸腾的梨酒		PLANT:PEAR STATE_NAME_ADJ
+pear seed	梨種子	梨种子		PLANT:PEAR SEED
+pear seeds	梨種子	梨种子		PLANT:PEAR SEED
+pear leaf	梨葉	梨叶		PLANT:PEAR GROWTH_NAME
+pear leaves	梨葉	梨叶		PLANT:PEAR GROWTH_NAME
+pear flower	梨花	梨花		PLANT:PEAR GROWTH_NAME
+pear	梨子	梨子		PLANT:PEAR GROWTH_NAME
+pear bark dye	梨樹皮染料	梨树皮染料		PLANT:PEAR STATE_NAME_ADJ
+pear leaf dye	梨葉染料	梨叶染料		PLANT:PEAR STATE_NAME_ADJ
+pecan tree	胡桃樹	碧根果树		PLANT:PECAN NAME；台灣通稱胡桃，大陸通稱碧根果；walnut 用核桃以免撞名
+pecan trees	胡桃樹	碧根果树		PLANT:PECAN NAME_PLURAL
+pecan wood	胡桃木	碧根果木		PLANT:PECAN STATE_NAME
+pecan	胡桃	碧根果		PLANT:PECAN SEED
+pecans	胡桃	碧根果		PLANT:PECAN SEED
+pecan leaf	胡桃葉	碧根果叶		PLANT:PECAN GROWTH_NAME
+pecan leaves	胡桃葉	碧根果叶		PLANT:PECAN GROWTH_NAME
+pecan pollen catkin	胡桃雄花序	碧根果雄花序		PLANT:PECAN GROWTH_NAME
+persimmon tree	柿樹	柿树		PLANT:PERSIMMON NAME
+persimmon trees	柿樹	柿树		PLANT:PERSIMMON NAME_PLURAL
+persimmon wood	柿木	柿木		PLANT:PERSIMMON STATE_NAME
+frozen persimmon wine	冰凍的柿子酒	冰冻的柿子酒		PLANT:PERSIMMON STATE_NAME_ADJ
+persimmon wine	柿子酒	柿子酒		PLANT:PERSIMMON STATE_NAME_ADJ
+boiling persimmon wine	沸騰的柿子酒	沸腾的柿子酒		PLANT:PERSIMMON STATE_NAME_ADJ
+persimmon seed	柿子種子	柿子种子		PLANT:PERSIMMON SEED
+persimmon seeds	柿子種子	柿子种子		PLANT:PERSIMMON SEED
+persimmon leaf	柿葉	柿叶		PLANT:PERSIMMON GROWTH_NAME
+persimmon leaves	柿葉	柿叶		PLANT:PERSIMMON GROWTH_NAME
+persimmon flower	柿花	柿花		PLANT:PERSIMMON GROWTH_NAME
+persimmon	柿子	柿子		PLANT:PERSIMMON GROWTH_NAME
+persimmon dye	柿子染料	柿子染料		PLANT:PERSIMMON STATE_NAME_ADJ
+plum tree	李樹	李树		PLANT:PLUM NAME
+plum trees	李樹	李树		PLANT:PLUM NAME_PLURAL
+plum wood	李木	李木		PLANT:PLUM STATE_NAME
+frozen plum wine	冰凍的李子酒	冰冻的李子酒		PLANT:PLUM STATE_NAME_ADJ
+plum wine	李子酒	李子酒		PLANT:PLUM STATE_NAME_ADJ
+boiling plum wine	沸騰的李子酒	沸腾的李子酒		PLANT:PLUM STATE_NAME_ADJ
+plum pit	李核	李核		PLANT:PLUM SEED
+plum pits	李核	李核		PLANT:PLUM SEED
+plum leaf	李葉	李叶		PLANT:PLUM GROWTH_NAME
+plum leaves	李葉	李叶		PLANT:PLUM GROWTH_NAME
+plum flower	李花	李花		PLANT:PLUM GROWTH_NAME
+plum bark dye	李樹皮染料	李树皮染料		PLANT:PLUM STATE_NAME_ADJ
+sand pear tree	沙梨樹	沙梨树		PLANT:SAND_PEAR NAME
+sand pear trees	沙梨樹	沙梨树		PLANT:SAND_PEAR NAME_PLURAL
+sand pear wood	沙梨木	沙梨木		PLANT:SAND_PEAR STATE_NAME
+frozen sand pear cider	冰凍的沙梨酒	冰冻的沙梨酒		PLANT:SAND_PEAR STATE_NAME_ADJ
+sand pear cider	沙梨酒	沙梨酒		PLANT:SAND_PEAR STATE_NAME_ADJ
+boiling sand pear cider	沸騰的沙梨酒	沸腾的沙梨酒		PLANT:SAND_PEAR STATE_NAME_ADJ
+sand pear seed	沙梨種子	沙梨种子		PLANT:SAND_PEAR SEED
+sand pear seeds	沙梨種子	沙梨种子		PLANT:SAND_PEAR SEED
+sand pear leaf	沙梨葉	沙梨叶		PLANT:SAND_PEAR GROWTH_NAME
+sand pear leaves	沙梨葉	沙梨叶		PLANT:SAND_PEAR GROWTH_NAME
+sand pear flower	沙梨花	沙梨花		PLANT:SAND_PEAR GROWTH_NAME
+sand pear	沙梨	沙梨		PLANT:SAND_PEAR GROWTH_NAME
+walnut tree	核桃樹	核桃树		PLANT:WALNUT NAME
+walnut trees	核桃樹	核桃树		PLANT:WALNUT NAME_PLURAL
+walnut wood	核桃木	核桃木		PLANT:WALNUT STATE_NAME
+walnut	核桃	核桃		PLANT:WALNUT SEED
+walnuts	核桃	核桃		PLANT:WALNUT SEED
+walnut leaf	核桃葉	核桃叶		PLANT:WALNUT GROWTH_NAME
+walnut leaves	核桃葉	核桃叶		PLANT:WALNUT GROWTH_NAME
+walnut pollen catkin	核桃雄花序	核桃雄花序		PLANT:WALNUT GROWTH_NAME
+walnut flower cluster	核桃花簇	核桃花簇		PLANT:WALNUT GROWTH_NAME

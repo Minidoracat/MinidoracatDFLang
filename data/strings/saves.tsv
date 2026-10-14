@@ -91,3 +91,89 @@ late autumn	晚秋	晚秋		世界清單存檔日期的季節段（小寫，遊�
 early winter	初冬	初冬		世界清單存檔日期的季節段（小寫，遊戲以 early /mid/late 加季節組成）；供 rules/saves.tsv 的 {@3} 比對
 mid-winter	仲冬	仲冬		世界清單存檔日期的季節段（小寫，遊戲以 early /mid/late 加季節組成）；供 rules/saves.tsv 的 {@3} 比對
 late winter	晚冬	晚冬		世界清單存檔日期的季節段（小寫，遊戲以 early /mid/late 加季節組成）；供 rules/saves.tsv 的 {@3} 比對
+Checking directory structure...	正在檢查目錄結構……	正在检查目录结构……		載入資料進度
+Saving formations...	正在儲存陣型……	正在保存阵型……		存檔進度
+Saving interactions...	正在儲存互動……	正在保存交互……		存檔進度
+Saving written content...	正在儲存著作……	正在保存著作……		存檔進度
+Saving crimes...	正在儲存罪行……	正在保存罪行……		存檔進度
+Saving vehicles...	正在儲存載具……	正在保存载具……		存檔進度
+Saving armies...	正在儲存軍隊……	正在保存军队……		存檔進度
+Saving cultural identities...	正在儲存文化認同……	正在保存文化认同……		存檔進度
+Saving items...	儲存物品……	保存物品……		存檔進度
+Saving units...	儲存單位……	保存单位……		存檔進度
+Saving schedules...	正在儲存排程……	正在保存日程……		存檔進度
+Saving projectiles...	正在儲存投射物……	正在保存投射物……		存檔進度
+Saving machines...	正在儲存機械……	正在保存机械……		存檔進度
+Saving entities...	正在儲存實體……	正在保存实体……		存檔進度
+Saving work quotas...	正在儲存工作配額……	正在保存工作配额……		存檔進度
+Saving world events...	正在儲存世界事件……	正在保存世界事件……		存檔進度
+Saving belief systems...	正在儲存信仰體系……	正在保存信仰体系……		存檔進度
+Saving adventure data...	正在儲存冒險資料……	正在保存冒险数据……		存檔進度
+Finishing...	正在完成……	正在完成……		載入資料進度
+Loading object files...	正在載入物件檔案……	正在加载对象文件……		讀檔進度
+Preparing Arena...	正在準備競技場……	正在准备竞技场……		載入資料進度
+Importing world...	正在匯入世界……	正在导入世界……		載入資料進度
+Preparing text objects...	正在準備文字物件……	正在准备文本对象……		載入資料進度
+Preparing graphics...	正在準備圖形……	正在准备图形……		載入資料進度
+Preparing arena...	正在準備競技場……	正在准备竞技场……		載入資料進度
+Preparing screen...	正在準備畫面……	正在准备画面……		載入資料進度
+Finalizing inorganics...	正在完成無機物……	正在完成无机物……		載入資料進度
+Finalizing plants...	正在完成植物……	正在完成植物……		載入資料進度
+Finalizing items...	正在完成物品……	正在完成物品……		載入資料進度
+Finalizing languages...	正在完成語言……	正在完成语言……		載入資料進度
+Finalizing material templates...	正在完成材料範本……	正在完成材料模板……		載入資料進度
+Finalizing interactions...	正在完成互動……	正在完成交互……		載入資料進度
+Preparing material data...	正在準備材料資料……	正在准备材料数据……		載入資料進度
+Finalizing body detail plans...	正在完成身體細節方案……	正在完成身体细节方案……		載入資料進度
+Finalizing creature variations...	正在完成生物變異……	正在完成生物变异……		載入資料進度
+Finalizing creatures...	正在完成生物……	正在完成生物……		載入資料進度
+Processing reactions...	正在處理反應……	正在处理反应……		載入資料進度
+Processing sounds...	正在處理聲音……	正在处理声音……		載入資料進度
+Generating items...	正在產生物品……	正在生成物品……		載入資料進度
+Loading fortress information...	正在載入要塞資訊……	正在加载要塞信息……		讀檔進度
+Loading world information...	正在載入世界資訊……	正在加载世界信息……		讀檔進度
+Loading world events...	正在載入世界事件……	正在加载世界事件……		讀檔進度
+Loading announcements...	正在載入通知……	正在加载通知……		讀檔進度
+Loading adventure...	正在載入冒險……	正在加载冒险……		讀檔進度
+Loading general information...	正在載入一般資訊……	正在加载常规信息……		讀檔進度
+Preparing game...	正在準備遊戲……	正在准备游戏……		載入資料進度
+Loading divination sets...	正在載入占卜套組……	正在加载占卜套组……		讀檔進度
+Loading schedules...	正在載入排程……	正在加载日程……		讀檔進度
+Loading units...	正在載入單位……	正在加载单位……		讀檔進度
+Loading flow guides...	正在載入流體導引……	正在加载流体引导……		讀檔進度
+Loading effects...	正在載入效果……	正在加载效果……		讀檔進度
+Loading projectiles...	正在載入投射物……	正在加载投射物……		讀檔進度
+Loading machines...	正在載入機械……	正在加载机械……		讀檔進度
+Loading mandates...	正在載入法令……	正在加载法令……		讀檔進度
+Loading work quotas...	正在載入工作配額……	正在加载工作配额……		讀檔進度
+Loading events...	正在載入事件……	正在加载事件……		讀檔進度
+Loading written content...	正在載入著作……	正在加载著作……		讀檔進度
+Loading identities...	正在載入身分……	正在加载身份……		讀檔進度
+Loading activities...	正在載入活動……	正在加载活动……		讀檔進度
+Loading interactions...	正在載入互動……	正在加载交互……		讀檔進度
+Loading vehicles...	正在載入載具……	正在加载载具……		讀檔進度
+Loading armies...	正在載入軍隊……	正在加载军队……		讀檔進度
+Loading incidents...	正在載入事件紀錄……	正在加载事件记录……		讀檔進度
+Loading crimes...	正在載入罪行……	正在加载罪行……		讀檔進度
+Loading cultural identities...	正在載入文化認同……	正在加载文化认同……		讀檔進度
+Loading agreements...	正在載入協議……	正在加载协议……		讀檔進度
+Loading army controllers...	正在載入軍隊控制器……	正在加载军队控制器……		讀檔進度
+Loading tracking information...	正在載入追蹤資訊……	正在加载追踪信息……		讀檔進度
+Loading belief systems...	正在載入信仰體系……	正在加载信仰体系……		讀檔進度
+Loading art forms...	正在載入藝術形式……	正在加载艺术形式……		讀檔進度
+Loading occupations...	正在載入職業……	正在加载职业……		讀檔進度
+Generating reactions...	正在產生反應……	正在生成反应……		載入資料進度
+Loading entities...	正在載入實體……	正在加载实体……		讀檔進度
+Loading buildings...	正在載入建築……	正在加载建筑……		讀檔進度
+Loading history...	正在載入歷史……	正在加载历史……		讀檔進度
+Loading map data...	載入地圖資料……	加载地图数据……		讀檔進度
+Loading squads...	正在載入小隊……	正在加载小队……		讀檔進度
+Loading formations...	正在載入陣型……	正在加载阵型……		讀檔進度
+Loading active historical figures...	正在載入活躍的歷史人物……	正在加载活跃的历史人物……		讀檔進度
+Cleaning play objects...	正在清理遊戲物件……	正在清理游戏对象……		載入資料進度
+Cleaning stranded objects...	正在清理孤立物件……	正在清理孤立对象……		載入資料進度
+Saving tracking info...	正在儲存追蹤資訊……	正在保存追踪信息……		存檔進度
+Saving map data...	儲存地圖資料……	保存地图数据……		存檔進度
+Finishing up...	即將完成……	即将完成……		載入資料進度
+Placing other beasts...	正在放置其他野獸……	正在放置其他野兽……		建立世界進度
+Placing good/evil...	正在放置善惡……	正在放置善恶……		建立世界進度

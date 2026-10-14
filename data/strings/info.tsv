@@ -131,3 +131,8 @@ Sanctuary petitions: prompt	庇護請願：詢問	庇护请愿：询问		常規�
 Pets/Livestock	寵物／牲畜	宠物/牲畜	c	生物面板子分頁
 Dead/Missing	死亡／失蹤	死亡/失踪	c	生物面板子分頁
 Forbid floor/wall cleaning during sieges	圍攻時禁止清理地板與牆壁	围攻时禁止清理地板和墙壁		常規命令／禁用：切換鈕
+Train (to make a pet) or slaughter	訓練（成為寵物）或屠宰	训练（成为宠物）或屠宰		寵物／牲畜清單：動物狀態
+Uninterested in an owner	不想要主人	不想要主人		寵物／牲畜清單：動物狀態（不能認養）
+Trainer: Any	馴獸師：不限	驯兽师：不限		寵物／牲畜清單
+Trainer: 	馴獸師：	驯兽师：		寵物／牲畜清單；後面接馴獸師名字
+Trainer: Any unassigned	馴獸師：任何未指派者	驯兽师：任何未分配者		寵物／牲畜清單

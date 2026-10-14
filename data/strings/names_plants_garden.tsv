@@ -1,0 +1,514 @@
+en	zh-Hant	zh-Hans	align	note
+artichoke	朝鮮薊	洋蓟		PLANT:ARTICHOKE NAME
+artichokes	朝鮮薊	洋蓟		PLANT:ARTICHOKE NAME_PLURAL
+frozen artichoke wine	冰凍的朝鮮薊酒	冰冻的洋蓟酒		PLANT:ARTICHOKE STATE_NAME_ADJ
+artichoke wine	朝鮮薊酒	洋蓟酒		PLANT:ARTICHOKE STATE_NAME_ADJ
+boiling artichoke wine	沸騰的朝鮮薊酒	沸腾的洋蓟酒		PLANT:ARTICHOKE STATE_NAME_ADJ
+artichoke seed	朝鮮薊種子	洋蓟种子		PLANT:ARTICHOKE SEED
+artichoke seeds	朝鮮薊種子	洋蓟种子		PLANT:ARTICHOKE SEED
+artichoke leaf	朝鮮薊葉	洋蓟叶		PLANT:ARTICHOKE GROWTH_NAME
+artichoke leaves	朝鮮薊葉	洋蓟叶		PLANT:ARTICHOKE GROWTH_NAME
+artichoke heart	朝鮮薊心	洋蓟心		PLANT:ARTICHOKE GROWTH_NAME
+artichoke flower	朝鮮薊花	洋蓟花		PLANT:ARTICHOKE GROWTH_NAME
+asparagus	蘆筍	芦笋		PLANT:ASPARAGUS NAME
+asparagus seed	蘆筍種子	芦笋种子		PLANT:ASPARAGUS SEED
+asparagus seeds	蘆筍種子	芦笋种子		PLANT:ASPARAGUS SEED
+asparagus leaf	蘆筍葉	芦笋叶		PLANT:ASPARAGUS GROWTH_NAME
+asparagus leaves	蘆筍葉	芦笋叶		PLANT:ASPARAGUS GROWTH_NAME
+asparagus flower	蘆筍花	芦笋花		PLANT:ASPARAGUS GROWTH_NAME
+asparagus berry	蘆筍漿果	芦笋浆果		PLANT:ASPARAGUS GROWTH_NAME
+asparagus berries	蘆筍漿果	芦笋浆果		PLANT:ASPARAGUS GROWTH_NAME
+bambara groundnut plant	班巴拉豆植株	班巴拉豆植株		PLANT:BAMBARA_GROUNDNUT NAME
+bambara groundnut plants	班巴拉豆植株	班巴拉豆植株		PLANT:BAMBARA_GROUNDNUT NAME_PLURAL
+bambara groundnut	班巴拉豆	班巴拉豆		PLANT:BAMBARA_GROUNDNUT SEED
+bambara groundnuts	班巴拉豆	班巴拉豆		PLANT:BAMBARA_GROUNDNUT SEED
+bambara groundnut leaf	班巴拉豆葉	班巴拉豆叶		PLANT:BAMBARA_GROUNDNUT GROWTH_NAME
+bambara groundnut leaves	班巴拉豆葉	班巴拉豆叶		PLANT:BAMBARA_GROUNDNUT GROWTH_NAME
+bambara groundnut flower	班巴拉豆花	班巴拉豆花		PLANT:BAMBARA_GROUNDNUT GROWTH_NAME
+bambara groundnut pod	班巴拉豆莢	班巴拉豆荚		PLANT:BAMBARA_GROUNDNUT GROWTH_NAME
+string bean plant	四季豆植株	四季豆植株		PLANT:STRING_BEAN NAME
+string bean plants	四季豆植株	四季豆植株		PLANT:STRING_BEAN NAME_PLURAL
+string bean	四季豆	四季豆		PLANT:STRING_BEAN SEED
+string beans	四季豆	四季豆		PLANT:STRING_BEAN SEED
+string bean leaf	四季豆葉	四季豆叶		PLANT:STRING_BEAN GROWTH_NAME
+string bean leaves	四季豆葉	四季豆叶		PLANT:STRING_BEAN GROWTH_NAME
+string bean flower	四季豆花	四季豆花		PLANT:STRING_BEAN GROWTH_NAME
+string bean pod	四季豆莢	四季豆荚		PLANT:STRING_BEAN GROWTH_NAME
+broad bean plant	蠶豆植株	蚕豆植株		PLANT:BROAD_BEAN NAME
+broad bean plants	蠶豆植株	蚕豆植株		PLANT:BROAD_BEAN NAME_PLURAL
+broad bean	蠶豆	蚕豆		PLANT:BROAD_BEAN SEED
+broad beans	蠶豆	蚕豆		PLANT:BROAD_BEAN SEED
+broad bean leaf	蠶豆葉	蚕豆叶		PLANT:BROAD_BEAN GROWTH_NAME
+broad bean leaves	蠶豆葉	蚕豆叶		PLANT:BROAD_BEAN GROWTH_NAME
+broad bean flower	蠶豆花	蚕豆花		PLANT:BROAD_BEAN GROWTH_NAME
+broad bean pod	蠶豆莢	蚕豆荚		PLANT:BROAD_BEAN GROWTH_NAME
+beet plant	甜菜植株	甜菜植株		PLANT:BEET NAME
+beet plants	甜菜植株	甜菜植株		PLANT:BEET NAME_PLURAL
+frozen beetroot wine	冰凍的甜菜根酒	冰冻的甜菜根酒		PLANT:BEET STATE_NAME_ADJ
+beetroot wine	甜菜根酒	甜菜根酒		PLANT:BEET STATE_NAME_ADJ
+boiling beetroot wine	沸騰的甜菜根酒	沸腾的甜菜根酒		PLANT:BEET STATE_NAME_ADJ
+beet seed	甜菜種子	甜菜种子		PLANT:BEET SEED
+beet seeds	甜菜種子	甜菜种子		PLANT:BEET SEED
+beet leaf	甜菜葉	甜菜叶		PLANT:BEET GROWTH_NAME
+beet leaves	甜菜葉	甜菜叶		PLANT:BEET GROWTH_NAME
+beet flower spike	甜菜花穗	甜菜花穗		PLANT:BEET GROWTH_NAME
+bitter melon vine	苦瓜藤	苦瓜藤		PLANT:BITTER_MELON NAME
+bitter melon vines	苦瓜藤	苦瓜藤		PLANT:BITTER_MELON NAME_PLURAL
+bitter melon seed	苦瓜種子	苦瓜种子		PLANT:BITTER_MELON SEED
+bitter melon seeds	苦瓜種子	苦瓜种子		PLANT:BITTER_MELON SEED
+bitter melon leaf	苦瓜葉	苦瓜叶		PLANT:BITTER_MELON GROWTH_NAME
+bitter melon leaves	苦瓜葉	苦瓜叶		PLANT:BITTER_MELON GROWTH_NAME
+bitter melon flower	苦瓜花	苦瓜花		PLANT:BITTER_MELON GROWTH_NAME
+bitter melon	苦瓜	苦瓜		PLANT:BITTER_MELON GROWTH_NAME
+cabbage	高麗菜	卷心菜		PLANT:CABBAGE NAME
+cabbages	高麗菜	卷心菜		PLANT:CABBAGE NAME_PLURAL
+cabbage seed	高麗菜種子	卷心菜种子		PLANT:CABBAGE SEED
+cabbage seeds	高麗菜種子	卷心菜种子		PLANT:CABBAGE SEED
+cabbage leaf	高麗菜葉	卷心菜叶		PLANT:CABBAGE GROWTH_NAME
+cabbage leaves	高麗菜葉	卷心菜叶		PLANT:CABBAGE GROWTH_NAME
+cabbage flower spike	高麗菜花穗	卷心菜花穗		PLANT:CABBAGE GROWTH_NAME
+cabbage leaf dye	高麗菜葉染料	卷心菜叶染料		PLANT:CABBAGE STATE_NAME_ADJ
+caper bush	酸豆叢	刺山柑丛		PLANT:CAPER NAME
+caper bushes	酸豆叢	刺山柑丛		PLANT:CAPER NAME_PLURAL
+caper seed	酸豆種子	刺山柑种子		PLANT:CAPER SEED
+caper seeds	酸豆種子	刺山柑种子		PLANT:CAPER SEED
+caper leaf	酸豆葉	刺山柑叶		PLANT:CAPER GROWTH_NAME
+caper leaves	酸豆葉	刺山柑叶		PLANT:CAPER GROWTH_NAME
+caper	酸豆	刺山柑		PLANT:CAPER GROWTH_NAME
+caper flower	酸豆花	刺山柑花		PLANT:CAPER GROWTH_NAME
+caper berry	酸豆果	刺山柑果		PLANT:CAPER GROWTH_NAME
+caper berries	酸豆果	刺山柑果		PLANT:CAPER GROWTH_NAME
+wild carrot plant	野胡蘿蔔植株	野胡萝卜植株		PLANT:WILD_CARROT NAME
+wild carrot plants	野胡蘿蔔植株	野胡萝卜植株		PLANT:WILD_CARROT NAME_PLURAL
+frozen carrot wine	冰凍的胡蘿蔔酒	冰冻的胡萝卜酒		PLANT:WILD_CARROT STATE_NAME_ADJ
+carrot wine	胡蘿蔔酒	胡萝卜酒		PLANT:WILD_CARROT STATE_NAME_ADJ
+boiling carrot wine	沸騰的胡蘿蔔酒	沸腾的胡萝卜酒		PLANT:WILD_CARROT STATE_NAME_ADJ
+carrot seed	胡蘿蔔種子	胡萝卜种子		PLANT:WILD_CARROT SEED
+carrot seeds	胡蘿蔔種子	胡萝卜种子		PLANT:WILD_CARROT SEED
+carrot leaf	胡蘿蔔葉	胡萝卜叶		PLANT:WILD_CARROT GROWTH_NAME
+carrot leaves	胡蘿蔔葉	胡萝卜叶		PLANT:WILD_CARROT GROWTH_NAME
+carrot umbel	胡蘿蔔花序	胡萝卜花序		PLANT:WILD_CARROT GROWTH_NAME
+carrot dye	胡蘿蔔染料	胡萝卜染料		PLANT:WILD_CARROT STATE_NAME_ADJ
+cassava	樹薯	木薯		PLANT:CASSAVA NAME
+cassavas	樹薯	木薯		PLANT:CASSAVA NAME_PLURAL
+frozen cassava beer	冰凍的樹薯啤酒	冰冻的木薯啤酒		PLANT:CASSAVA STATE_NAME_ADJ
+cassava beer	樹薯啤酒	木薯啤酒		PLANT:CASSAVA STATE_NAME_ADJ
+boiling cassava beer	沸騰的樹薯啤酒	沸腾的木薯啤酒		PLANT:CASSAVA STATE_NAME_ADJ
+cassava seed	樹薯種子	木薯种子		PLANT:CASSAVA SEED
+cassava seeds	樹薯種子	木薯种子		PLANT:CASSAVA SEED
+cassava leaf	樹薯葉	木薯叶		PLANT:CASSAVA GROWTH_NAME
+cassava leaves	樹薯葉	木薯叶		PLANT:CASSAVA GROWTH_NAME
+cassava flower	樹薯花	木薯花		PLANT:CASSAVA GROWTH_NAME
+celery	西洋芹	西芹		PLANT:CELERY NAME
+celery seed	西洋芹種子	西芹种子		PLANT:CELERY SEED
+celery seeds	西洋芹種子	西芹种子		PLANT:CELERY SEED
+celery leaf	西洋芹葉	西芹叶		PLANT:CELERY GROWTH_NAME
+celery leaves	西洋芹葉	西芹叶		PLANT:CELERY GROWTH_NAME
+celery umbel	西洋芹花序	西芹花序		PLANT:CELERY GROWTH_NAME
+chickpea plant	鷹嘴豆植株	鹰嘴豆植株		PLANT:CHICKPEA NAME
+chickpea plants	鷹嘴豆植株	鹰嘴豆植株		PLANT:CHICKPEA NAME_PLURAL
+chickpea	鷹嘴豆	鹰嘴豆		PLANT:CHICKPEA SEED
+chickpeas	鷹嘴豆	鹰嘴豆		PLANT:CHICKPEA SEED
+chickpea leaf	鷹嘴豆葉	鹰嘴豆叶		PLANT:CHICKPEA GROWTH_NAME
+chickpea leaves	鷹嘴豆葉	鹰嘴豆叶		PLANT:CHICKPEA GROWTH_NAME
+chickpea flower	鷹嘴豆花	鹰嘴豆花		PLANT:CHICKPEA GROWTH_NAME
+chickpea pod	鷹嘴豆莢	鹰嘴豆荚		PLANT:CHICKPEA GROWTH_NAME
+chicory	菊苣	菊苣		PLANT:CHICORY NAME
+chicory seed	菊苣種子	菊苣种子		PLANT:CHICORY SEED
+chicory seeds	菊苣種子	菊苣种子		PLANT:CHICORY SEED
+chicory leaf	菊苣葉	菊苣叶		PLANT:CHICORY GROWTH_NAME
+chicory leaves	菊苣葉	菊苣叶		PLANT:CHICORY GROWTH_NAME
+chicory flower	菊苣花	菊苣花		PLANT:CHICORY GROWTH_NAME
+cowpea plant	豇豆植株	豇豆植株		PLANT:COWPEA NAME
+cowpea plants	豇豆植株	豇豆植株		PLANT:COWPEA NAME_PLURAL
+cowpea	豇豆	豇豆		PLANT:COWPEA SEED
+cowpeas	豇豆	豇豆		PLANT:COWPEA SEED
+cowpea leaf	豇豆葉	豇豆叶		PLANT:COWPEA GROWTH_NAME
+cowpea leaves	豇豆葉	豇豆叶		PLANT:COWPEA GROWTH_NAME
+cowpea flower	豇豆花	豇豆花		PLANT:COWPEA GROWTH_NAME
+cowpea pod	豇豆莢	豇豆荚		PLANT:COWPEA GROWTH_NAME
+cucumber vine	小黃瓜藤	黄瓜藤		PLANT:CUCUMBER NAME
+cucumber vines	小黃瓜藤	黄瓜藤		PLANT:CUCUMBER NAME_PLURAL
+cucumber seed	小黃瓜種子	黄瓜种子		PLANT:CUCUMBER SEED
+cucumber seeds	小黃瓜種子	黄瓜种子		PLANT:CUCUMBER SEED
+cucumber leaf	小黃瓜葉	黄瓜叶		PLANT:CUCUMBER GROWTH_NAME
+cucumber leaves	小黃瓜葉	黄瓜叶		PLANT:CUCUMBER GROWTH_NAME
+cucumber flower	小黃瓜花	黄瓜花		PLANT:CUCUMBER GROWTH_NAME
+cucumber	小黃瓜	黄瓜		PLANT:CUCUMBER GROWTH_NAME
+eggplants	茄子	茄子		PLANT:EGGPLANT NAME_PLURAL
+eggplant seed	茄子種子	茄子种子		PLANT:EGGPLANT SEED
+eggplant seeds	茄子種子	茄子种子		PLANT:EGGPLANT SEED
+eggplant leaf	茄子葉	茄子叶		PLANT:EGGPLANT GROWTH_NAME
+eggplant leaves	茄子葉	茄子叶		PLANT:EGGPLANT GROWTH_NAME
+eggplant flower	茄子花	茄子花		PLANT:EGGPLANT GROWTH_NAME
+eggplant dye	茄子染料	茄子染料		PLANT:EGGPLANT STATE_NAME_ADJ
+garden cress	家獨行菜	家独行菜		PLANT:GARDEN_CRESS NAME
+garden cress seed	家獨行菜種子	家独行菜种子		PLANT:GARDEN_CRESS SEED
+garden cress seeds	家獨行菜種子	家独行菜种子		PLANT:GARDEN_CRESS SEED
+garden cress leaf	家獨行菜葉	家独行菜叶		PLANT:GARDEN_CRESS GROWTH_NAME
+garden cress leaves	家獨行菜葉	家独行菜叶		PLANT:GARDEN_CRESS GROWTH_NAME
+garden cress raceme	家獨行菜花序	家独行菜花序		PLANT:GARDEN_CRESS GROWTH_NAME
+garlic plant	大蒜植株	大蒜植株		PLANT:GARLIC NAME
+garlic plants	大蒜植株	大蒜植株		PLANT:GARLIC NAME_PLURAL
+garlic seed	大蒜種子	大蒜种子		PLANT:GARLIC SEED
+garlic seeds	大蒜種子	大蒜种子		PLANT:GARLIC SEED
+garlic leaf	大蒜葉	大蒜叶		PLANT:GARLIC GROWTH_NAME
+garlic leaves	大蒜葉	大蒜叶		PLANT:GARLIC GROWTH_NAME
+garlic flower	大蒜花	大蒜花		PLANT:GARLIC GROWTH_NAME
+garlic bulb	蒜頭	蒜头		PLANT:GARLIC GROWTH_NAME
+horned melon vine	火參果藤	火参果藤		PLANT:HORNED_MELON NAME
+horned melon vines	火參果藤	火参果藤		PLANT:HORNED_MELON NAME_PLURAL
+horned melon seed	火參果種子	火参果种子		PLANT:HORNED_MELON SEED
+horned melon seeds	火參果種子	火参果种子		PLANT:HORNED_MELON SEED
+horned melon leaf	火參果葉	火参果叶		PLANT:HORNED_MELON GROWTH_NAME
+horned melon leaves	火參果葉	火参果叶		PLANT:HORNED_MELON GROWTH_NAME
+horned melon flower	火參果花	火参果花		PLANT:HORNED_MELON GROWTH_NAME
+horned melon	火參果	火参果		PLANT:HORNED_MELON GROWTH_NAME
+leek	韭蔥	韭葱		PLANT:LEEK NAME
+leeks	韭蔥	韭葱		PLANT:LEEK NAME_PLURAL
+leek seed	韭蔥種子	韭葱种子		PLANT:LEEK SEED
+leek seeds	韭蔥種子	韭葱种子		PLANT:LEEK SEED
+leek leaf	韭蔥葉	韭葱叶		PLANT:LEEK GROWTH_NAME
+leek leaves	韭蔥葉	韭葱叶		PLANT:LEEK GROWTH_NAME
+leek flower	韭蔥花	韭葱花		PLANT:LEEK GROWTH_NAME
+lentil plant	扁豆植株	小扁豆植株		PLANT:LENTIL NAME
+lentil plants	扁豆植株	小扁豆植株		PLANT:LENTIL NAME_PLURAL
+lentil	扁豆	小扁豆		PLANT:LENTIL SEED
+lentils	扁豆	小扁豆		PLANT:LENTIL SEED
+lentil leaf	扁豆葉	小扁豆叶		PLANT:LENTIL GROWTH_NAME
+lentil leaves	扁豆葉	小扁豆叶		PLANT:LENTIL GROWTH_NAME
+lentil flower	扁豆花	小扁豆花		PLANT:LENTIL GROWTH_NAME
+lentil pod	扁豆莢	小扁豆荚		PLANT:LENTIL GROWTH_NAME
+lettuce	萵苣	生菜		PLANT:LETTUCE NAME
+lettuces	萵苣	生菜		PLANT:LETTUCE NAME_PLURAL
+lettuce seed	萵苣種子	生菜种子		PLANT:LETTUCE SEED
+lettuce seeds	萵苣種子	生菜种子		PLANT:LETTUCE SEED
+lettuce leaf	萵苣葉	生菜叶		PLANT:LETTUCE GROWTH_NAME
+lettuce leaves	萵苣葉	生菜叶		PLANT:LETTUCE GROWTH_NAME
+lettuce flower stalk	萵苣花莖	生菜花茎		PLANT:LETTUCE GROWTH_NAME
+mung bean plant	綠豆植株	绿豆植株		PLANT:MUNG_BEAN NAME
+mung bean plants	綠豆植株	绿豆植株		PLANT:MUNG_BEAN NAME_PLURAL
+mung bean	綠豆	绿豆		PLANT:MUNG_BEAN SEED
+mung beans	綠豆	绿豆		PLANT:MUNG_BEAN SEED
+mung bean leaf	綠豆葉	绿豆叶		PLANT:MUNG_BEAN GROWTH_NAME
+mung bean leaves	綠豆葉	绿豆叶		PLANT:MUNG_BEAN GROWTH_NAME
+mung bean flower	綠豆花	绿豆花		PLANT:MUNG_BEAN GROWTH_NAME
+mung bean pod	綠豆莢	绿豆荚		PLANT:MUNG_BEAN GROWTH_NAME
+muskmelon vine	洋香瓜藤	甜瓜藤		PLANT:MUSKMELON NAME
+muskmelon vines	洋香瓜藤	甜瓜藤		PLANT:MUSKMELON NAME_PLURAL
+muskmelon seed	洋香瓜種子	甜瓜种子		PLANT:MUSKMELON SEED
+muskmelon seeds	洋香瓜種子	甜瓜种子		PLANT:MUSKMELON SEED
+muskmelon leaf	洋香瓜葉	甜瓜叶		PLANT:MUSKMELON GROWTH_NAME
+muskmelon leaves	洋香瓜葉	甜瓜叶		PLANT:MUSKMELON GROWTH_NAME
+muskmelon flower	洋香瓜花	甜瓜花		PLANT:MUSKMELON GROWTH_NAME
+muskmelon	洋香瓜	甜瓜		PLANT:MUSKMELON GROWTH_NAME
+onion plant	洋蔥植株	洋葱植株		PLANT:ONION NAME
+onion plants	洋蔥植株	洋葱植株		PLANT:ONION NAME_PLURAL
+onion seed	洋蔥種子	洋葱种子		PLANT:ONION SEED
+onion seeds	洋蔥種子	洋葱种子		PLANT:ONION SEED
+onion leaf	洋蔥葉	洋葱叶		PLANT:ONION GROWTH_NAME
+onion leaves	洋蔥葉	洋葱叶		PLANT:ONION GROWTH_NAME
+onion umbel	洋蔥花序	洋葱花序		PLANT:ONION GROWTH_NAME
+onion	洋蔥	洋葱		PLANT:ONION GROWTH_NAME
+onion skin dye	洋蔥皮染料	洋葱皮染料		PLANT:ONION STATE_NAME_ADJ
+parsnip plant	歐防風植株	欧防风植株		PLANT:PARSNIP NAME
+parsnip plants	歐防風植株	欧防风植株		PLANT:PARSNIP NAME_PLURAL
+frozen parsnip wine	冰凍的歐防風酒	冰冻的欧防风酒		PLANT:PARSNIP STATE_NAME_ADJ
+parsnip wine	歐防風酒	欧防风酒		PLANT:PARSNIP STATE_NAME_ADJ
+boiling parsnip wine	沸騰的歐防風酒	沸腾的欧防风酒		PLANT:PARSNIP STATE_NAME_ADJ
+parsnip seed	歐防風種子	欧防风种子		PLANT:PARSNIP SEED
+parsnip seeds	歐防風種子	欧防风种子		PLANT:PARSNIP SEED
+parsnip leaf	歐防風葉	欧防风叶		PLANT:PARSNIP GROWTH_NAME
+parsnip leaves	歐防風葉	欧防风叶		PLANT:PARSNIP GROWTH_NAME
+parsnip umbel	歐防風花序	欧防风花序		PLANT:PARSNIP GROWTH_NAME
+pea plant	豌豆植株	豌豆植株		PLANT:PEA NAME
+pea plants	豌豆植株	豌豆植株		PLANT:PEA NAME_PLURAL
+pea	豌豆	豌豆		PLANT:PEA SEED
+peas	豌豆	豌豆		PLANT:PEA SEED
+pea leaf	豌豆葉	豌豆叶		PLANT:PEA GROWTH_NAME
+pea leaves	豌豆葉	豌豆叶		PLANT:PEA GROWTH_NAME
+pea flower	豌豆花	豌豆花		PLANT:PEA GROWTH_NAME
+pea pod	豌豆莢	豌豆荚		PLANT:PEA GROWTH_NAME
+peanut plant	花生植株	花生植株		PLANT:PEANUT NAME
+peanut plants	花生植株	花生植株		PLANT:PEANUT NAME_PLURAL
+peanut	花生	花生		PLANT:PEANUT SEED
+peanuts	花生	花生		PLANT:PEANUT SEED
+peanut leaf	花生葉	花生叶		PLANT:PEANUT GROWTH_NAME
+peanut leaves	花生葉	花生叶		PLANT:PEANUT GROWTH_NAME
+peanut flower	花生花	花生花		PLANT:PEANUT GROWTH_NAME
+peanut pod	花生莢	花生荚		PLANT:PEANUT GROWTH_NAME
+peanut shell dye	花生殼染料	花生壳染料		PLANT:PEANUT STATE_NAME_ADJ
+pepper plant	辣椒植株	辣椒植株		PLANT:PEPPER NAME
+pepper plants	辣椒植株	辣椒植株		PLANT:PEPPER NAME_PLURAL
+pepper seed	辣椒種子	辣椒种子		PLANT:PEPPER SEED
+pepper seeds	辣椒種子	辣椒种子		PLANT:PEPPER SEED
+pepper leaf	辣椒葉	辣椒叶		PLANT:PEPPER GROWTH_NAME
+pepper leaves	辣椒葉	辣椒叶		PLANT:PEPPER GROWTH_NAME
+pepper flower	辣椒花	辣椒花		PLANT:PEPPER GROWTH_NAME
+pepper	辣椒	辣椒		PLANT:PEPPER GROWTH_NAME
+potato plant	馬鈴薯植株	马铃薯植株		PLANT:POTATO NAME
+potato plants	馬鈴薯植株	马铃薯植株		PLANT:POTATO NAME_PLURAL
+frozen potato wine	冰凍的馬鈴薯酒	冰冻的马铃薯酒		PLANT:POTATO STATE_NAME_ADJ
+potato wine	馬鈴薯酒	马铃薯酒		PLANT:POTATO STATE_NAME_ADJ
+boiling potato wine	沸騰的馬鈴薯酒	沸腾的马铃薯酒		PLANT:POTATO STATE_NAME_ADJ
+potato seed	馬鈴薯種子	马铃薯种子		PLANT:POTATO SEED
+potato seeds	馬鈴薯種子	马铃薯种子		PLANT:POTATO SEED
+potato leaf	馬鈴薯葉	马铃薯叶		PLANT:POTATO GROWTH_NAME
+potato leaves	馬鈴薯葉	马铃薯叶		PLANT:POTATO GROWTH_NAME
+potato flower	馬鈴薯花	马铃薯花		PLANT:POTATO GROWTH_NAME
+potato skin dye	馬鈴薯皮染料	马铃薯皮染料		PLANT:POTATO STATE_NAME_ADJ
+radish plant	蘿蔔植株	萝卜植株		PLANT:RADISH NAME
+radish plants	蘿蔔植株	萝卜植株		PLANT:RADISH NAME_PLURAL
+frozen radish wine	冰凍的蘿蔔酒	冰冻的萝卜酒		PLANT:RADISH STATE_NAME_ADJ
+radish wine	蘿蔔酒	萝卜酒		PLANT:RADISH STATE_NAME_ADJ
+boiling radish wine	沸騰的蘿蔔酒	沸腾的萝卜酒		PLANT:RADISH STATE_NAME_ADJ
+radish seed	蘿蔔種子	萝卜种子		PLANT:RADISH SEED
+radish seeds	蘿蔔種子	萝卜种子		PLANT:RADISH SEED
+radish leaf	蘿蔔葉	萝卜叶		PLANT:RADISH GROWTH_NAME
+radish leaves	蘿蔔葉	萝卜叶		PLANT:RADISH GROWTH_NAME
+radish raceme	蘿蔔花序	萝卜花序		PLANT:RADISH GROWTH_NAME
+radish dye	蘿蔔染料	萝卜染料		PLANT:RADISH STATE_NAME_ADJ
+red bean vine	紅豆藤	红豆藤		PLANT:RED_BEAN NAME
+red bean vines	紅豆藤	红豆藤		PLANT:RED_BEAN NAME_PLURAL
+red bean	紅豆	红豆		PLANT:RED_BEAN SEED
+red beans	紅豆	红豆		PLANT:RED_BEAN SEED
+red bean leaf	紅豆葉	红豆叶		PLANT:RED_BEAN GROWTH_NAME
+red bean leaves	紅豆葉	红豆叶		PLANT:RED_BEAN GROWTH_NAME
+red bean flower	紅豆花	红豆花		PLANT:RED_BEAN GROWTH_NAME
+red bean pod	紅豆莢	红豆荚		PLANT:RED_BEAN GROWTH_NAME
+rhubarb	大黃	大黄		PLANT:RHUBARB NAME
+rhubarbs	大黃	大黄		PLANT:RHUBARB NAME_PLURAL
+rhubarb seed	大黃種子	大黄种子		PLANT:RHUBARB SEED
+rhubarb seeds	大黃種子	大黄种子		PLANT:RHUBARB SEED
+rhubarb leaf	大黃葉	大黄叶		PLANT:RHUBARB GROWTH_NAME
+rhubarb leaves	大黃葉	大黄叶		PLANT:RHUBARB GROWTH_NAME
+rhubarb inflorescence	大黃花序	大黄花序		PLANT:RHUBARB GROWTH_NAME
+rhubarb leaf dye	大黃葉染料	大黄叶染料		PLANT:RHUBARB STATE_NAME_ADJ
+soybean plant	黃豆植株	大豆植株		PLANT:SOYBEAN NAME
+soybean plants	黃豆植株	大豆植株		PLANT:SOYBEAN NAME_PLURAL
+soybean	黃豆	大豆		PLANT:SOYBEAN SEED
+soybeans	黃豆	大豆		PLANT:SOYBEAN SEED
+soybean leaf	黃豆葉	大豆叶		PLANT:SOYBEAN GROWTH_NAME
+soybean leaves	黃豆葉	大豆叶		PLANT:SOYBEAN GROWTH_NAME
+soybean flower	黃豆花	大豆花		PLANT:SOYBEAN GROWTH_NAME
+soybean pod	黃豆莢	大豆荚		PLANT:SOYBEAN GROWTH_NAME
+spinach	菠菜	菠菜		PLANT:SPINACH NAME
+spinach seed	菠菜種子	菠菜种子		PLANT:SPINACH SEED
+spinach seeds	菠菜種子	菠菜种子		PLANT:SPINACH SEED
+spinach leaf	菠菜葉	菠菜叶		PLANT:SPINACH GROWTH_NAME
+spinach leaves	菠菜葉	菠菜叶		PLANT:SPINACH GROWTH_NAME
+spinach flower	菠菜花	菠菜花		PLANT:SPINACH GROWTH_NAME
+spinach leaf dye	菠菜葉染料	菠菜叶染料		PLANT:SPINACH STATE_NAME_ADJ
+squash vine	南瓜藤	南瓜藤		PLANT:SQUASH NAME
+squash vines	南瓜藤	南瓜藤		PLANT:SQUASH NAME_PLURAL
+squash seed	南瓜種子	南瓜种子		PLANT:SQUASH SEED
+squash seeds	南瓜種子	南瓜种子		PLANT:SQUASH SEED
+squash leaf	南瓜葉	南瓜叶		PLANT:SQUASH GROWTH_NAME
+squash leaves	南瓜葉	南瓜叶		PLANT:SQUASH GROWTH_NAME
+squash flower	南瓜花	南瓜花		PLANT:SQUASH GROWTH_NAME
+squash	南瓜	南瓜		PLANT:SQUASH GROWTH_NAME
+squashes	南瓜	南瓜		PLANT:SQUASH GROWTH_NAME
+sweet potato plant	地瓜植株	红薯植株		PLANT:SWEET_POTATO NAME
+sweet potato plants	地瓜植株	红薯植株		PLANT:SWEET_POTATO NAME_PLURAL
+frozen sweet potato wine	冰凍的地瓜酒	冰冻的红薯酒		PLANT:SWEET_POTATO STATE_NAME_ADJ
+sweet potato wine	地瓜酒	红薯酒		PLANT:SWEET_POTATO STATE_NAME_ADJ
+boiling sweet potato wine	沸騰的地瓜酒	沸腾的红薯酒		PLANT:SWEET_POTATO STATE_NAME_ADJ
+sweet potato seed	地瓜種子	红薯种子		PLANT:SWEET_POTATO SEED
+sweet potato seeds	地瓜種子	红薯种子		PLANT:SWEET_POTATO SEED
+sweet potato leaf	地瓜葉	红薯叶		PLANT:SWEET_POTATO GROWTH_NAME
+sweet potato leaves	地瓜葉	红薯叶		PLANT:SWEET_POTATO GROWTH_NAME
+sweet potato flower	地瓜花	红薯花		PLANT:SWEET_POTATO GROWTH_NAME
+sweet potato skin dye	地瓜皮染料	红薯皮染料		PLANT:SWEET_POTATO STATE_NAME_ADJ
+taro	芋頭	芋头		PLANT:TARO NAME
+taro seed	芋頭種子	芋头种子		PLANT:TARO SEED
+taro seeds	芋頭種子	芋头种子		PLANT:TARO SEED
+taro leaf	芋頭葉	芋头叶		PLANT:TARO GROWTH_NAME
+taro leaves	芋頭葉	芋头叶		PLANT:TARO GROWTH_NAME
+taro flower	芋頭花	芋头花		PLANT:TARO GROWTH_NAME
+tomato plant	番茄植株	番茄植株		PLANT:TOMATO NAME
+tomato plants	番茄植株	番茄植株		PLANT:TOMATO NAME_PLURAL
+frozen tomato wine	冰凍的番茄酒	冰冻的番茄酒		PLANT:TOMATO STATE_NAME_ADJ
+tomato wine	番茄酒	番茄酒		PLANT:TOMATO STATE_NAME_ADJ
+boiling tomato wine	沸騰的番茄酒	沸腾的番茄酒		PLANT:TOMATO STATE_NAME_ADJ
+tomato seed	番茄種子	番茄种子		PLANT:TOMATO SEED
+tomato seeds	番茄種子	番茄种子		PLANT:TOMATO SEED
+tomato leaf	番茄葉	番茄叶		PLANT:TOMATO GROWTH_NAME
+tomato leaves	番茄葉	番茄叶		PLANT:TOMATO GROWTH_NAME
+tomato flower	番茄花	番茄花		PLANT:TOMATO GROWTH_NAME
+tomato	番茄	番茄		PLANT:TOMATO GROWTH_NAME
+tomatoes	番茄	番茄		PLANT:TOMATO GROWTH_NAME
+tomato skin dye	番茄皮染料	番茄皮染料		PLANT:TOMATO STATE_NAME_ADJ
+tomatillo plant	黏果酸漿植株	粘果酸浆植株		PLANT:TOMATILLO NAME
+tomatillo plants	黏果酸漿植株	粘果酸浆植株		PLANT:TOMATILLO NAME_PLURAL
+frozen tomatillo wine	冰凍的黏果酸漿酒	冰冻的粘果酸浆酒		PLANT:TOMATILLO STATE_NAME_ADJ
+tomatillo wine	黏果酸漿酒	粘果酸浆酒		PLANT:TOMATILLO STATE_NAME_ADJ
+boiling tomatillo wine	沸騰的黏果酸漿酒	沸腾的粘果酸浆酒		PLANT:TOMATILLO STATE_NAME_ADJ
+tomatillo seed	黏果酸漿種子	粘果酸浆种子		PLANT:TOMATILLO SEED
+tomatillo seeds	黏果酸漿種子	粘果酸浆种子		PLANT:TOMATILLO SEED
+tomatillo leaf	黏果酸漿葉	粘果酸浆叶		PLANT:TOMATILLO GROWTH_NAME
+tomatillo leaves	黏果酸漿葉	粘果酸浆叶		PLANT:TOMATILLO GROWTH_NAME
+tomatillo flower	黏果酸漿花	粘果酸浆花		PLANT:TOMATILLO GROWTH_NAME
+tomatillo	黏果酸漿	粘果酸浆		PLANT:TOMATILLO GROWTH_NAME
+turnip plant	蕪菁植株	芜菁植株		PLANT:TURNIP NAME
+turnip plants	蕪菁植株	芜菁植株		PLANT:TURNIP NAME_PLURAL
+frozen turnip wine	冰凍的蕪菁酒	冰冻的芜菁酒		PLANT:TURNIP STATE_NAME_ADJ
+turnip wine	蕪菁酒	芜菁酒		PLANT:TURNIP STATE_NAME_ADJ
+boiling turnip wine	沸騰的蕪菁酒	沸腾的芜菁酒		PLANT:TURNIP STATE_NAME_ADJ
+turnip seed	蕪菁種子	芜菁种子		PLANT:TURNIP SEED
+turnip seeds	蕪菁種子	芜菁种子		PLANT:TURNIP SEED
+turnip leaf	蕪菁葉	芜菁叶		PLANT:TURNIP GROWTH_NAME
+turnip leaves	蕪菁葉	芜菁叶		PLANT:TURNIP GROWTH_NAME
+turnip flower	蕪菁花	芜菁花		PLANT:TURNIP GROWTH_NAME
+turnip skin dye	蕪菁皮染料	芜菁皮染料		PLANT:TURNIP STATE_NAME_ADJ
+urad bean plant	黑吉豆植株	黑吉豆植株		PLANT:URAD_BEAN NAME
+urad bean plants	黑吉豆植株	黑吉豆植株		PLANT:URAD_BEAN NAME_PLURAL
+urad bean	黑吉豆	黑吉豆		PLANT:URAD_BEAN SEED
+urad beans	黑吉豆	黑吉豆		PLANT:URAD_BEAN SEED
+urad bean leaf	黑吉豆葉	黑吉豆叶		PLANT:URAD_BEAN GROWTH_NAME
+urad bean leaves	黑吉豆葉	黑吉豆叶		PLANT:URAD_BEAN GROWTH_NAME
+urad bean flower	黑吉豆花	黑吉豆花		PLANT:URAD_BEAN GROWTH_NAME
+urad bean pod	黑吉豆莢	黑吉豆荚		PLANT:URAD_BEAN GROWTH_NAME
+watermelon vine	西瓜藤	西瓜藤		PLANT:WATERMELON NAME
+watermelon vines	西瓜藤	西瓜藤		PLANT:WATERMELON NAME_PLURAL
+watermelon seed	西瓜種子	西瓜种子		PLANT:WATERMELON SEED
+watermelon seeds	西瓜種子	西瓜种子		PLANT:WATERMELON SEED
+watermelon leaf	西瓜葉	西瓜叶		PLANT:WATERMELON GROWTH_NAME
+watermelon leaves	西瓜葉	西瓜叶		PLANT:WATERMELON GROWTH_NAME
+watermelon flower	西瓜花	西瓜花		PLANT:WATERMELON GROWTH_NAME
+watermelon	西瓜	西瓜		PLANT:WATERMELON GROWTH_NAME
+watermelon dye	西瓜染料	西瓜染料		PLANT:WATERMELON STATE_NAME_ADJ
+winter melon vine	冬瓜藤	冬瓜藤		PLANT:WINTER_MELON NAME
+winter melon vines	冬瓜藤	冬瓜藤		PLANT:WINTER_MELON NAME_PLURAL
+winter melon seed	冬瓜種子	冬瓜种子		PLANT:WINTER_MELON SEED
+winter melon seeds	冬瓜種子	冬瓜种子		PLANT:WINTER_MELON SEED
+winter melon leaf	冬瓜葉	冬瓜叶		PLANT:WINTER_MELON GROWTH_NAME
+winter melon leaves	冬瓜葉	冬瓜叶		PLANT:WINTER_MELON GROWTH_NAME
+winter melon flower	冬瓜花	冬瓜花		PLANT:WINTER_MELON GROWTH_NAME
+winter melon	冬瓜	冬瓜		PLANT:WINTER_MELON GROWTH_NAME
+lesser yam plant	甜薯植株	甜薯植株		PLANT:LESSER_YAM NAME
+lesser yam plants	甜薯植株	甜薯植株		PLANT:LESSER_YAM NAME_PLURAL
+lesser yam seed	甜薯種子	甜薯种子		PLANT:LESSER_YAM SEED
+lesser yam seeds	甜薯種子	甜薯种子		PLANT:LESSER_YAM SEED
+lesser yam leaf	甜薯葉	甜薯叶		PLANT:LESSER_YAM GROWTH_NAME
+lesser yam leaves	甜薯葉	甜薯叶		PLANT:LESSER_YAM GROWTH_NAME
+lesser yam flower	甜薯花	甜薯花		PLANT:LESSER_YAM GROWTH_NAME
+long yam plant	山藥植株	山药植株		PLANT:LONG_YAM NAME
+long yam plants	山藥植株	山药植株		PLANT:LONG_YAM NAME_PLURAL
+long yam seed	山藥種子	山药种子		PLANT:LONG_YAM SEED
+long yam seeds	山藥種子	山药种子		PLANT:LONG_YAM SEED
+long yam leaf	山藥葉	山药叶		PLANT:LONG_YAM GROWTH_NAME
+long yam leaves	山藥葉	山药叶		PLANT:LONG_YAM GROWTH_NAME
+long yam flower	山藥花	山药花		PLANT:LONG_YAM GROWTH_NAME
+purple yam plant	紫山藥植株	紫山药植株		PLANT:PURPLE_YAM NAME
+purple yam plants	紫山藥植株	紫山药植株		PLANT:PURPLE_YAM NAME_PLURAL
+purple yam seed	紫山藥種子	紫山药种子		PLANT:PURPLE_YAM SEED
+purple yam seeds	紫山藥種子	紫山药种子		PLANT:PURPLE_YAM SEED
+purple yam leaf	紫山藥葉	紫山药叶		PLANT:PURPLE_YAM GROWTH_NAME
+purple yam leaves	紫山藥葉	紫山药叶		PLANT:PURPLE_YAM GROWTH_NAME
+purple yam flower	紫山藥花	紫山药花		PLANT:PURPLE_YAM GROWTH_NAME
+white yam plant	白山藥植株	白山药植株		PLANT:WHITE_YAM NAME
+white yam plants	白山藥植株	白山药植株		PLANT:WHITE_YAM NAME_PLURAL
+white yam seed	白山藥種子	白山药种子		PLANT:WHITE_YAM SEED
+white yam seeds	白山藥種子	白山药种子		PLANT:WHITE_YAM SEED
+white yam leaf	白山藥葉	白山药叶		PLANT:WHITE_YAM GROWTH_NAME
+white yam leaves	白山藥葉	白山药叶		PLANT:WHITE_YAM GROWTH_NAME
+white yam flower	白山藥花	白山药花		PLANT:WHITE_YAM GROWTH_NAME
+passion fruit vine	百香果藤	百香果藤		PLANT:PASSION_FRUIT NAME
+passion fruit vines	百香果藤	百香果藤		PLANT:PASSION_FRUIT NAME_PLURAL
+frozen passion fruit wine	冰凍的百香果酒	冰冻的百香果酒		PLANT:PASSION_FRUIT STATE_NAME_ADJ
+passion fruit wine	百香果酒	百香果酒		PLANT:PASSION_FRUIT STATE_NAME_ADJ
+boiling passion fruit wine	沸騰的百香果酒	沸腾的百香果酒		PLANT:PASSION_FRUIT STATE_NAME_ADJ
+passion fruit seed	百香果種子	百香果种子		PLANT:PASSION_FRUIT SEED
+passion fruit seeds	百香果種子	百香果种子		PLANT:PASSION_FRUIT SEED
+passion fruit leaf	百香果葉	百香果叶		PLANT:PASSION_FRUIT GROWTH_NAME
+passion fruit leaves	百香果葉	百香果叶		PLANT:PASSION_FRUIT GROWTH_NAME
+passion fruit flower	百香果花	百香果花		PLANT:PASSION_FRUIT GROWTH_NAME
+passion fruit	百香果	百香果		PLANT:PASSION_FRUIT GROWTH_NAME
+grape vine	葡萄藤	葡萄藤		PLANT:GRAPE NAME
+grape vines	葡萄藤	葡萄藤		PLANT:GRAPE NAME_PLURAL
+frozen wine	冰凍葡萄酒	冰冻葡萄酒		PLANT:GRAPE STATE_NAME_ADJ；寬度限制省略「的」
+boiling wine	沸騰葡萄酒	沸腾葡萄酒		PLANT:GRAPE STATE_NAME_ADJ；跟 frozen wine 一致省略「的」
+grape seed	葡萄種子	葡萄种子		PLANT:GRAPE SEED
+grape seeds	葡萄種子	葡萄种子		PLANT:GRAPE SEED
+grape leaf	葡萄葉	葡萄叶		PLANT:GRAPE GROWTH_NAME
+grape leaves	葡萄葉	葡萄叶		PLANT:GRAPE GROWTH_NAME
+grape inflorescence	葡萄花序	葡萄花序		PLANT:GRAPE GROWTH_NAME
+grape	葡萄	葡萄		PLANT:GRAPE GROWTH_NAME
+grape dye	葡萄染料	葡萄染料		PLANT:GRAPE STATE_NAME_ADJ
+cranberry vine	蔓越莓藤	蔓越莓藤		PLANT:CRANBERRY NAME
+cranberry vines	蔓越莓藤	蔓越莓藤		PLANT:CRANBERRY NAME_PLURAL
+frozen cranberry wine	冰凍的蔓越莓酒	冰冻的蔓越莓酒		PLANT:CRANBERRY STATE_NAME_ADJ
+cranberry wine	蔓越莓酒	蔓越莓酒		PLANT:CRANBERRY STATE_NAME_ADJ
+boiling cranberry wine	沸騰的蔓越莓酒	沸腾的蔓越莓酒		PLANT:CRANBERRY STATE_NAME_ADJ
+cranberry seed	蔓越莓種子	蔓越莓种子		PLANT:CRANBERRY SEED
+cranberry seeds	蔓越莓種子	蔓越莓种子		PLANT:CRANBERRY SEED
+cranberry leaf	蔓越莓葉	蔓越莓叶		PLANT:CRANBERRY GROWTH_NAME
+cranberry leaves	蔓越莓葉	蔓越莓叶		PLANT:CRANBERRY GROWTH_NAME
+cranberry flower	蔓越莓花	蔓越莓花		PLANT:CRANBERRY GROWTH_NAME
+cranberry	蔓越莓	蔓越莓		PLANT:CRANBERRY GROWTH_NAME
+cranberries	蔓越莓	蔓越莓		PLANT:CRANBERRY GROWTH_NAME
+cranberry dye	蔓越莓染料	蔓越莓染料		PLANT:CRANBERRY STATE_NAME_ADJ
+bilberry bush	山桑子叢	欧洲越橘丛		PLANT:BILBERRY NAME
+bilberry bushes	山桑子叢	欧洲越橘丛		PLANT:BILBERRY NAME_PLURAL
+frozen bilberry wine	冰凍的山桑子酒	冰冻的欧洲越橘酒		PLANT:BILBERRY STATE_NAME_ADJ
+bilberry wine	山桑子酒	欧洲越橘酒		PLANT:BILBERRY STATE_NAME_ADJ
+boiling bilberry wine	沸騰的山桑子酒	沸腾的欧洲越橘酒		PLANT:BILBERRY STATE_NAME_ADJ
+bilberry seed	山桑子種子	欧洲越橘种子		PLANT:BILBERRY SEED
+bilberry seeds	山桑子種子	欧洲越橘种子		PLANT:BILBERRY SEED
+bilberry leaf	山桑子葉	欧洲越橘叶		PLANT:BILBERRY GROWTH_NAME
+bilberry leaves	山桑子葉	欧洲越橘叶		PLANT:BILBERRY GROWTH_NAME
+bilberry flower	山桑子花	欧洲越橘花		PLANT:BILBERRY GROWTH_NAME
+bilberry	山桑子	欧洲越橘		PLANT:BILBERRY GROWTH_NAME
+bilberries	山桑子	欧洲越橘		PLANT:BILBERRY GROWTH_NAME
+bilberry dye	山桑子染料	欧洲越橘染料		PLANT:BILBERRY STATE_NAME_ADJ
+blueberry bush	藍莓叢	蓝莓丛		PLANT:BLUEBERRY NAME
+blueberry bushes	藍莓叢	蓝莓丛		PLANT:BLUEBERRY NAME_PLURAL
+frozen blueberry wine	冰凍的藍莓酒	冰冻的蓝莓酒		PLANT:BLUEBERRY STATE_NAME_ADJ
+blueberry wine	藍莓酒	蓝莓酒		PLANT:BLUEBERRY STATE_NAME_ADJ
+boiling blueberry wine	沸騰的藍莓酒	沸腾的蓝莓酒		PLANT:BLUEBERRY STATE_NAME_ADJ
+blueberry seed	藍莓種子	蓝莓种子		PLANT:BLUEBERRY SEED
+blueberry seeds	藍莓種子	蓝莓种子		PLANT:BLUEBERRY SEED
+blueberry leaf	藍莓葉	蓝莓叶		PLANT:BLUEBERRY GROWTH_NAME
+blueberry leaves	藍莓葉	蓝莓叶		PLANT:BLUEBERRY GROWTH_NAME
+blueberry flower	藍莓花	蓝莓花		PLANT:BLUEBERRY GROWTH_NAME
+blueberry	藍莓	蓝莓		PLANT:BLUEBERRY GROWTH_NAME
+blueberries	藍莓	蓝莓		PLANT:BLUEBERRY GROWTH_NAME
+blueberry dye	藍莓染料	蓝莓染料		PLANT:BLUEBERRY STATE_NAME_ADJ
+blackberry bush	黑莓叢	黑莓丛		PLANT:BLACKBERRY NAME
+blackberry bushes	黑莓叢	黑莓丛		PLANT:BLACKBERRY NAME_PLURAL
+frozen blackberry wine	冰凍的黑莓酒	冰冻的黑莓酒		PLANT:BLACKBERRY STATE_NAME_ADJ
+blackberry wine	黑莓酒	黑莓酒		PLANT:BLACKBERRY STATE_NAME_ADJ
+boiling blackberry wine	沸騰的黑莓酒	沸腾的黑莓酒		PLANT:BLACKBERRY STATE_NAME_ADJ
+blackberry seed	黑莓種子	黑莓种子		PLANT:BLACKBERRY SEED
+blackberry seeds	黑莓種子	黑莓种子		PLANT:BLACKBERRY SEED
+blackberry leaf	黑莓葉	黑莓叶		PLANT:BLACKBERRY GROWTH_NAME
+blackberry leaves	黑莓葉	黑莓叶		PLANT:BLACKBERRY GROWTH_NAME
+blackberry flower	黑莓花	黑莓花		PLANT:BLACKBERRY GROWTH_NAME
+blackberry	黑莓	黑莓		PLANT:BLACKBERRY GROWTH_NAME
+blackberries	黑莓	黑莓		PLANT:BLACKBERRY GROWTH_NAME
+blackberry dye	黑莓染料	黑莓染料		PLANT:BLACKBERRY STATE_NAME_ADJ
+raspberry bush	覆盆子叢	树莓丛		PLANT:RASPBERRY NAME
+raspberry bushes	覆盆子叢	树莓丛		PLANT:RASPBERRY NAME_PLURAL
+frozen raspberry wine	冰凍的覆盆子酒	冰冻的树莓酒		PLANT:RASPBERRY STATE_NAME_ADJ
+raspberry wine	覆盆子酒	树莓酒		PLANT:RASPBERRY STATE_NAME_ADJ
+boiling raspberry wine	沸騰的覆盆子酒	沸腾的树莓酒		PLANT:RASPBERRY STATE_NAME_ADJ
+raspberry seed	覆盆子種子	树莓种子		PLANT:RASPBERRY SEED
+raspberry seeds	覆盆子種子	树莓种子		PLANT:RASPBERRY SEED
+raspberry leaf	覆盆子葉	树莓叶		PLANT:RASPBERRY GROWTH_NAME
+raspberry leaves	覆盆子葉	树莓叶		PLANT:RASPBERRY GROWTH_NAME
+raspberry flower	覆盆子花	树莓花		PLANT:RASPBERRY GROWTH_NAME
+raspberry	覆盆子	树莓		PLANT:RASPBERRY GROWTH_NAME
+raspberries	覆盆子	树莓		PLANT:RASPBERRY GROWTH_NAME
+raspberry dye	覆盆子染料	树莓染料		PLANT:RASPBERRY STATE_NAME_ADJ
+pineapple plant	鳳梨植株	菠萝植株		PLANT:PINEAPPLE NAME
+pineapple plants	鳳梨植株	菠萝植株		PLANT:PINEAPPLE NAME_PLURAL
+frozen pineapple wine	冰凍的鳳梨酒	冰冻的菠萝酒		PLANT:PINEAPPLE STATE_NAME_ADJ
+pineapple wine	鳳梨酒	菠萝酒		PLANT:PINEAPPLE STATE_NAME_ADJ
+boiling pineapple wine	沸騰的鳳梨酒	沸腾的菠萝酒		PLANT:PINEAPPLE STATE_NAME_ADJ
+pineapple seed	鳳梨種子	菠萝种子		PLANT:PINEAPPLE SEED
+pineapple seeds	鳳梨種子	菠萝种子		PLANT:PINEAPPLE SEED
+pineapple leaf	鳳梨葉	菠萝叶		PLANT:PINEAPPLE GROWTH_NAME
+pineapple leaves	鳳梨葉	菠萝叶		PLANT:PINEAPPLE GROWTH_NAME
+pineapple flower	鳳梨花	菠萝花		PLANT:PINEAPPLE GROWTH_NAME
+pineapple	鳳梨	菠萝		PLANT:PINEAPPLE GROWTH_NAME
+pineapple leaf dye	鳳梨葉染料	菠萝叶染料		PLANT:PINEAPPLE STATE_NAME_ADJ

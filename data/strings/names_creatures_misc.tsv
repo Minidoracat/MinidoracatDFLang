@@ -1,0 +1,445 @@
+en	zh-Hant	zh-Hans	align	note
+damselfly	豆娘	豆娘		CREATURE:DAMSELFLY NAME
+damselflies	豆娘	豆娘		CREATURE:DAMSELFLY NAME
+damselfly man	豆娘人	豆娘人		CREATURE:DAMSELFLY_MAN CASTE_NAME
+damselfly men	豆娘人	豆娘人		CREATURE:DAMSELFLY_MAN CASTE_NAME
+damselfly woman	女豆娘人	女豆娘人		CREATURE:DAMSELFLY_MAN CASTE_NAME
+damselfly women	女豆娘人	女豆娘人		CREATURE:DAMSELFLY_MAN CASTE_NAME
+giant damselfly	巨型豆娘	巨型豆娘		CREATURE:GIANT_DAMSELFLY NAME
+giant damselflies	巨型豆娘	巨型豆娘		CREATURE:GIANT_DAMSELFLY NAME
+moth	飛蛾	飞蛾		CREATURE:MOTH NAME
+moths	飛蛾	飞蛾		CREATURE:MOTH NAME
+moth man	飛蛾人	飞蛾人		CREATURE:MOTH_MAN CASTE_NAME
+moth men	飛蛾人	飞蛾人		CREATURE:MOTH_MAN CASTE_NAME
+moth woman	女飛蛾人	女飞蛾人		CREATURE:MOTH_MAN CASTE_NAME
+moth women	女飛蛾人	女飞蛾人		CREATURE:MOTH_MAN CASTE_NAME
+giant moth	巨型飛蛾	巨型飞蛾		CREATURE:GIANT_MOTH NAME
+giant moths	巨型飛蛾	巨型飞蛾		CREATURE:GIANT_MOTH NAME
+grasshopper	蚱蜢	蚱蜢		CREATURE:GRASSHOPPER NAME
+grasshoppers	蚱蜢	蚱蜢		CREATURE:GRASSHOPPER NAME
+grasshopper man	蚱蜢人	蚱蜢人		CREATURE:GRASSHOPPER_MAN CASTE_NAME
+grasshopper men	蚱蜢人	蚱蜢人		CREATURE:GRASSHOPPER_MAN CASTE_NAME
+grasshopper woman	女蚱蜢人	女蚱蜢人		CREATURE:GRASSHOPPER_MAN CASTE_NAME
+grasshopper women	女蚱蜢人	女蚱蜢人		CREATURE:GRASSHOPPER_MAN CASTE_NAME
+giant grasshopper	巨型蚱蜢	巨型蚱蜢		CREATURE:GIANT_GRASSHOPPER NAME
+giant grasshoppers	巨型蚱蜢	巨型蚱蜢		CREATURE:GIANT_GRASSHOPPER NAME
+bark scorpion	樹皮蠍	树皮蝎		CREATURE:BARK_SCORPION NAME
+bark scorpions	樹皮蠍	树皮蝎		CREATURE:BARK_SCORPION NAME
+frozen bark scorpion venom	冰凍的樹皮蠍毒液	冰冻的树皮蝎毒液		CREATURE:BARK_SCORPION STATE_NAME
+bark scorpion venom	樹皮蠍毒液	树皮蝎毒液		CREATURE:BARK_SCORPION STATE_NAME
+boiling bark scorpion venom	沸騰的樹皮蠍毒液	沸腾的树皮蝎毒液		CREATURE:BARK_SCORPION STATE_NAME
+bark scorpion sting	樹皮蠍螫傷	树皮蝎蜇伤		CREATURE:BARK_SCORPION SYN_NAME
+bark scorpion man	樹皮蠍人	树皮蝎人		CREATURE:BARK_SCORPION_MAN CASTE_NAME
+bark scorpion men	樹皮蠍人	树皮蝎人		CREATURE:BARK_SCORPION_MAN CASTE_NAME
+bark scorpion woman	女樹皮蠍人	女树皮蝎人		CREATURE:BARK_SCORPION_MAN CASTE_NAME
+bark scorpion women	女樹皮蠍人	女树皮蝎人		CREATURE:BARK_SCORPION_MAN CASTE_NAME
+giant bark scorpion	巨型樹皮蠍	巨型树皮蝎		CREATURE:GIANT_BARK_SCORPION NAME
+giant bark scorpions	巨型樹皮蠍	巨型树皮蝎		CREATURE:GIANT_BARK_SCORPION NAME
+mantis	螳螂	螳螂		CREATURE:MANTIS NAME
+mantises	螳螂	螳螂		CREATURE:MANTIS NAME
+mantis man	螳螂人	螳螂人		CREATURE:MANTIS_MAN CASTE_NAME
+mantis men	螳螂人	螳螂人		CREATURE:MANTIS_MAN CASTE_NAME
+mantis woman	女螳螂人	女螳螂人		CREATURE:MANTIS_MAN CASTE_NAME
+mantis women	女螳螂人	女螳螂人		CREATURE:MANTIS_MAN CASTE_NAME
+giant mantis	巨型螳螂	巨型螳螂		CREATURE:GIANT_MANTIS NAME
+giant mantises	巨型螳螂	巨型螳螂		CREATURE:GIANT_MANTIS NAME
+tick	壁蝨	蜱虫		CREATURE:TICK NAME；台灣通稱壁蝨，大陸用蜱虫
+ticks	壁蝨	蜱虫		CREATURE:TICK NAME
+tick man	壁蝨人	蜱虫人		CREATURE:TICK_MAN CASTE_NAME
+tick men	壁蝨人	蜱虫人		CREATURE:TICK_MAN CASTE_NAME
+tick woman	女壁蝨人	女蜱虫人		CREATURE:TICK_MAN CASTE_NAME
+tick women	女壁蝨人	女蜱虫人		CREATURE:TICK_MAN CASTE_NAME
+giant tick	巨型壁蝨	巨型蜱虫		CREATURE:GIANT_TICK NAME
+giant ticks	巨型壁蝨	巨型蜱虫		CREATURE:GIANT_TICK NAME
+louse	蝨子	虱子		CREATURE:LOUSE NAME
+lice	蝨子	虱子		CREATURE:LOUSE NAME
+louse man	蝨子人	虱子人		CREATURE:LOUSE_MAN CASTE_NAME
+louse men	蝨子人	虱子人		CREATURE:LOUSE_MAN CASTE_NAME
+louse woman	女蝨子人	女虱子人		CREATURE:LOUSE_MAN CASTE_NAME
+louse women	女蝨子人	女虱子人		CREATURE:LOUSE_MAN CASTE_NAME
+giant louse	巨型蝨子	巨型虱子		CREATURE:GIANT_LOUSE NAME
+giant lice	巨型蝨子	巨型虱子		CREATURE:GIANT_LOUSE NAME
+thrips	薊馬	蓟马		CREATURE:THRIPS NAME
+thrips man	薊馬人	蓟马人		CREATURE:THRIPS_MAN CASTE_NAME
+thrips men	薊馬人	蓟马人		CREATURE:THRIPS_MAN CASTE_NAME
+thrips woman	女薊馬人	女蓟马人		CREATURE:THRIPS_MAN CASTE_NAME
+thrips women	女薊馬人	女蓟马人		CREATURE:THRIPS_MAN CASTE_NAME
+giant thrips	巨型薊馬	巨型蓟马		CREATURE:GIANT_THRIPS NAME
+slug	蛞蝓	蛞蝓		CREATURE:SLUG NAME
+slugs	蛞蝓	蛞蝓		CREATURE:SLUG NAME
+slug man	蛞蝓人	蛞蝓人		CREATURE:SLUG_MAN NAME
+slug men	蛞蝓人	蛞蝓人		CREATURE:SLUG_MAN NAME
+giant slug	巨型蛞蝓	巨型蛞蝓		CREATURE:GIANT_SLUG NAME
+giant slugs	巨型蛞蝓	巨型蛞蝓		CREATURE:GIANT_SLUG NAME
+mosquito	蚊子	蚊子		CREATURE:MOSQUITO NAME
+mosquitos	蚊子	蚊子		CREATURE:MOSQUITO NAME
+mosquito man	蚊子人	蚊子人		CREATURE:MOSQUITO_MAN CASTE_NAME
+mosquito men	蚊子人	蚊子人		CREATURE:MOSQUITO_MAN CASTE_NAME
+mosquito woman	女蚊子人	女蚊子人		CREATURE:MOSQUITO_MAN CASTE_NAME
+mosquito women	女蚊子人	女蚊子人		CREATURE:MOSQUITO_MAN CASTE_NAME
+giant mosquito	巨型蚊子	巨型蚊子		CREATURE:GIANT_MOSQUITO NAME
+giant mosquitos	巨型蚊子	巨型蚊子		CREATURE:GIANT_MOSQUITO NAME
+jumping spider	跳蛛	跳蛛		CREATURE:SPIDER_JUMPING NAME
+jumping spiders	跳蛛	跳蛛		CREATURE:SPIDER_JUMPING NAME
+jumping spider man	跳蛛人	跳蛛人		CREATURE:JUMPING_SPIDER_MAN CASTE_NAME
+jumping spider men	跳蛛人	跳蛛人		CREATURE:JUMPING_SPIDER_MAN CASTE_NAME
+jumping spider woman	女跳蛛人	女跳蛛人		CREATURE:JUMPING_SPIDER_MAN CASTE_NAME
+jumping spider women	女跳蛛人	女跳蛛人		CREATURE:JUMPING_SPIDER_MAN CASTE_NAME
+giant jumping spider	巨型跳蛛	巨型跳蛛		CREATURE:GIANT_JUMPING_SPIDER NAME
+giant jumping spiders	巨型跳蛛	巨型跳蛛		CREATURE:GIANT_JUMPING_SPIDER NAME
+termite	白蟻	白蚁		CREATURE:TERMITE NAME
+termites	白蟻	白蚁		CREATURE:TERMITE NAME
+worker termite	白蟻工蟻	白蚁工蚁		CREATURE:TERMITE CASTE_NAME
+worker termites	白蟻工蟻	白蚁工蚁		CREATURE:TERMITE CASTE_NAME
+soldier termite	白蟻兵蟻	白蚁兵蚁		CREATURE:TERMITE CASTE_NAME
+soldier termites	白蟻兵蟻	白蚁兵蚁		CREATURE:TERMITE CASTE_NAME
+king termite	白蟻蟻王	白蚁蚁王		CREATURE:TERMITE CASTE_NAME
+king termites	白蟻蟻王	白蚁蚁王		CREATURE:TERMITE CASTE_NAME
+queen termite	白蟻蟻后	白蚁蚁后		CREATURE:TERMITE CASTE_NAME
+queen termites	白蟻蟻后	白蚁蚁后		CREATURE:TERMITE CASTE_NAME
+moon snail	玉螺	玉螺		CREATURE:MOON_SNAIL NAME；Naticidae 正式名玉螺
+moon snails	玉螺	玉螺		CREATURE:MOON_SNAIL NAME
+moon snail man	玉螺人	玉螺人		CREATURE:MOON_SNAIL_MAN CASTE_NAME
+moon snail men	玉螺人	玉螺人		CREATURE:MOON_SNAIL_MAN CASTE_NAME
+moon snail woman	女玉螺人	女玉螺人		CREATURE:MOON_SNAIL_MAN CASTE_NAME
+moon snail women	女玉螺人	女玉螺人		CREATURE:MOON_SNAIL_MAN CASTE_NAME
+giant moon snail	巨型玉螺	巨型玉螺		CREATURE:GIANT_MOON_SNAIL NAME
+giant moon snails	巨型玉螺	巨型玉螺		CREATURE:GIANT_MOON_SNAIL NAME
+brown recluse spider	褐色隱遁蛛	褐色隐遁蛛		CREATURE:SPIDER_BROWN_RECLUSE NAME
+brown recluse spiders	褐色隱遁蛛	褐色隐遁蛛		CREATURE:SPIDER_BROWN_RECLUSE NAME
+frozen brown recluse spider venom	冰凍的褐色隱遁蛛毒液	冰冻的褐色隐遁蛛毒液		CREATURE:SPIDER_BROWN_RECLUSE STATE_NAME
+brown recluse spider venom	褐色隱遁蛛毒液	褐色隐遁蛛毒液		CREATURE:SPIDER_BROWN_RECLUSE STATE_NAME
+boiling brown recluse spider venom	沸騰的褐色隱遁蛛毒液	沸腾的褐色隐遁蛛毒液		CREATURE:SPIDER_BROWN_RECLUSE STATE_NAME
+brown recluse spider bite	褐色隱遁蛛咬傷	褐色隐遁蛛咬伤		CREATURE:SPIDER_BROWN_RECLUSE SYN_NAME
+brown recluse spider man	褐色隱遁蛛人	褐色隐遁蛛人		CREATURE:BROWN_RECLUSE_SPIDER_MAN CASTE_NAME
+brown recluse spider men	褐色隱遁蛛人	褐色隐遁蛛人		CREATURE:BROWN_RECLUSE_SPIDER_MAN CASTE_NAME
+brown recluse spider woman	女褐色隱遁蛛人	女褐色隐遁蛛人		CREATURE:BROWN_RECLUSE_SPIDER_MAN CASTE_NAME
+brown recluse spider women	女褐色隱遁蛛人	女褐色隐遁蛛人		CREATURE:BROWN_RECLUSE_SPIDER_MAN CASTE_NAME
+giant brown recluse spider	巨型褐色隱遁蛛	巨型褐色隐遁蛛		CREATURE:GIANT_BROWN_RECLUSE_SPIDER NAME
+giant brown recluse spiders	巨型褐色隱遁蛛	巨型褐色隐遁蛛		CREATURE:GIANT_BROWN_RECLUSE_SPIDER NAME
+snail	蝸牛	蜗牛		CREATURE:SNAIL NAME
+snails	蝸牛	蜗牛		CREATURE:SNAIL NAME
+snail man	蝸牛人	蜗牛人		CREATURE:SNAIL_MAN NAME
+snail men	蝸牛人	蜗牛人		CREATURE:SNAIL_MAN NAME
+giant snail	巨型蝸牛	巨型蜗牛		CREATURE:GIANT_SNAIL NAME
+giant snails	巨型蝸牛	巨型蜗牛		CREATURE:GIANT_SNAIL NAME
+leopard gecko	豹紋守宮	豹纹守宫		CREATURE:GECKO_LEOPARD NAME
+leopard geckos	豹紋守宮	豹纹守宫		CREATURE:GECKO_LEOPARD NAME
+scales	鱗片	鳞片		CREATURE:GECKO_LEOPARD TLCM_NOUN；豹紋守宮外觀描述的名詞
+leopard gecko man	豹紋守宮人	豹纹守宫人		CREATURE:LEOPARD_GECKO_MAN CASTE_NAME
+leopard gecko men	豹紋守宮人	豹纹守宫人		CREATURE:LEOPARD_GECKO_MAN CASTE_NAME
+leopard gecko woman	女豹紋守宮人	女豹纹守宫人		CREATURE:LEOPARD_GECKO_MAN CASTE_NAME
+leopard gecko women	女豹紋守宮人	女豹纹守宫人		CREATURE:LEOPARD_GECKO_MAN CASTE_NAME
+giant leopard gecko	巨型豹紋守宮	巨型豹纹守宫		CREATURE:GIANT_LEOPARD_GECKO NAME
+giant leopard geckos	巨型豹紋守宮	巨型豹纹守宫		CREATURE:GIANT_LEOPARD_GECKO NAME
+desert tortoise	沙漠陸龜	沙漠陆龟		CREATURE:DESERT TORTOISE NAME
+desert tortoises	沙漠陸龜	沙漠陆龟		CREATURE:DESERT TORTOISE NAME
+desert tortoise hatchling	幼沙漠陸龜	幼沙漠陆龟		CREATURE:DESERT TORTOISE GENERAL_CHILD_NAME
+desert tortoise hatchlings	幼沙漠陸龜	幼沙漠陆龟		CREATURE:DESERT TORTOISE GENERAL_CHILD_NAME
+desert tortoise man	沙漠陸龜人	沙漠陆龟人		CREATURE:DESERT_TORTOISE_MAN CASTE_NAME
+desert tortoise men	沙漠陸龜人	沙漠陆龟人		CREATURE:DESERT_TORTOISE_MAN CASTE_NAME
+desert tortoise woman	女沙漠陸龜人	女沙漠陆龟人		CREATURE:DESERT_TORTOISE_MAN CASTE_NAME
+desert tortoise women	女沙漠陸龜人	女沙漠陆龟人		CREATURE:DESERT_TORTOISE_MAN CASTE_NAME
+giant desert tortoise	巨型沙漠陸龜	巨型沙漠陆龟		CREATURE:GIANT_DESERT_TORTOISE NAME
+giant desert tortoises	巨型沙漠陸龜	巨型沙漠陆龟		CREATURE:GIANT_DESERT_TORTOISE NAME
+giant desert tortoise hatchling	幼巨型沙漠陸龜	幼巨型沙漠陆龟		CREATURE:GIANT_DESERT_TORTOISE GENERAL_CHILD_NAME
+giant desert tortoise hatchlings	幼巨型沙漠陸龜	幼巨型沙漠陆龟		CREATURE:GIANT_DESERT_TORTOISE GENERAL_CHILD_NAME
+gila monster	美國毒蜥	美国毒蜥		CREATURE:GILA_MONSTER NAME
+gila monsters	美國毒蜥	美国毒蜥		CREATURE:GILA_MONSTER NAME
+gila monster hatchling	幼美國毒蜥	幼美国毒蜥		CREATURE:GILA_MONSTER GENERAL_CHILD_NAME
+gila monster hatchlings	幼美國毒蜥	幼美国毒蜥		CREATURE:GILA_MONSTER GENERAL_CHILD_NAME
+frozen gila monster venom	冰凍的美國毒蜥毒液	冰冻的美国毒蜥毒液		CREATURE:GILA_MONSTER STATE_NAME
+gila monster venom	美國毒蜥毒液	美国毒蜥毒液		CREATURE:GILA_MONSTER STATE_NAME
+boiling gila monster venom	沸騰的美國毒蜥毒液	沸腾的美国毒蜥毒液		CREATURE:GILA_MONSTER STATE_NAME
+gila monster bite	美國毒蜥咬傷	美国毒蜥咬伤		CREATURE:GILA_MONSTER SYN_NAME
+gila monster man	美國毒蜥人	美国毒蜥人		CREATURE:GILA_MONSTER_MAN CASTE_NAME
+gila monster men	美國毒蜥人	美国毒蜥人		CREATURE:GILA_MONSTER_MAN CASTE_NAME
+gila monster woman	女美國毒蜥人	女美国毒蜥人		CREATURE:GILA_MONSTER_MAN CASTE_NAME
+gila monster women	女美國毒蜥人	女美国毒蜥人		CREATURE:GILA_MONSTER_MAN CASTE_NAME
+giant gila monster	巨型美國毒蜥	巨型美国毒蜥		CREATURE:GIANT_GILA_MONSTER NAME
+giant gila monsters	巨型美國毒蜥	巨型美国毒蜥		CREATURE:GIANT_GILA_MONSTER NAME
+giant gila monster hatchling	幼巨型美國毒蜥	幼巨型美国毒蜥		CREATURE:GIANT_GILA_MONSTER GENERAL_CHILD_NAME
+giant gila monster hatchlings	幼巨型美國毒蜥	幼巨型美国毒蜥		CREATURE:GIANT_GILA_MONSTER GENERAL_CHILD_NAME
+fly	蒼蠅	苍蝇		CREATURE:FLY NAME
+flies	蒼蠅	苍蝇		CREATURE:FLY NAME
+fly man	蒼蠅人	苍蝇人		CREATURE:FLY_MAN CASTE_NAME
+fly men	蒼蠅人	苍蝇人		CREATURE:FLY_MAN CASTE_NAME
+fly woman	女蒼蠅人	女苍蝇人		CREATURE:FLY_MAN CASTE_NAME
+fly women	女蒼蠅人	女苍蝇人		CREATURE:FLY_MAN CASTE_NAME
+giant fly	巨型蒼蠅	巨型苍蝇		CREATURE:GIANT_FLY NAME
+giant flies	巨型蒼蠅	巨型苍蝇		CREATURE:GIANT_FLY NAME
+large roach	大蟑螂	大蟑螂		CREATURE:ROACH_LARGE NAME
+large roaches	大蟑螂	大蟑螂		CREATURE:ROACH_LARGE NAME
+roach man	蟑螂人	蟑螂人		CREATURE:ROACH_MAN CASTE_NAME
+roach men	蟑螂人	蟑螂人		CREATURE:ROACH_MAN CASTE_NAME
+roach woman	女蟑螂人	女蟑螂人		CREATURE:ROACH_MAN CASTE_NAME
+roach women	女蟑螂人	女蟑螂人		CREATURE:ROACH_MAN CASTE_NAME
+giant roach	巨型蟑螂	巨型蟑螂		CREATURE:GIANT_ROACH NAME
+giant roaches	巨型蟑螂	巨型蟑螂		CREATURE:GIANT_ROACH NAME
+beetle	甲蟲	甲虫		CREATURE:BEETLE NAME
+beetles	甲蟲	甲虫		CREATURE:BEETLE NAME
+beetle man	甲蟲人	甲虫人		CREATURE:BEETLE_MAN CASTE_NAME
+beetle men	甲蟲人	甲虫人		CREATURE:BEETLE_MAN CASTE_NAME
+beetle woman	女甲蟲人	女甲虫人		CREATURE:BEETLE_MAN CASTE_NAME
+beetle women	女甲蟲人	女甲虫人		CREATURE:BEETLE_MAN CASTE_NAME
+giant beetle	巨型甲蟲	巨型甲虫		CREATURE:GIANT_BEETLE NAME
+giant beetles	巨型甲蟲	巨型甲虫		CREATURE:GIANT_BEETLE NAME
+ant	螞蟻	蚂蚁		CREATURE:ANT NAME
+ants	螞蟻	蚂蚁		CREATURE:ANT NAME
+worker ant	工蟻	工蚁		CREATURE:ANT CASTE_NAME
+worker ants	工蟻	工蚁		CREATURE:ANT CASTE_NAME
+soldier ant	兵蟻	兵蚁		CREATURE:ANT CASTE_NAME
+soldier ants	兵蟻	兵蚁		CREATURE:ANT CASTE_NAME
+drone ant	雄蟻	雄蚁		CREATURE:ANT CASTE_NAME；drone 是雄蟻
+drone ants	雄蟻	雄蚁		CREATURE:ANT CASTE_NAME
+queen ant	蟻后	蚁后		CREATURE:ANT CASTE_NAME
+queen ants	蟻后	蚁后		CREATURE:ANT CASTE_NAME
+monarch butterfly	帝王斑蝶	黑脉金斑蝶		CREATURE:BUTTERFLY_MONARCH NAME；台灣帝王斑蝶，大陸正式名黑脉金斑蝶
+monarch butterflies	帝王斑蝶	黑脉金斑蝶		CREATURE:BUTTERFLY_MONARCH NAME
+monarch butterfly man	帝王斑蝶人	黑脉金斑蝶人		CREATURE:BUTTERFLY_MONARCH_MAN CASTE_NAME
+monarch butterfly men	帝王斑蝶人	黑脉金斑蝶人		CREATURE:BUTTERFLY_MONARCH_MAN CASTE_NAME
+monarch butterfly woman	女帝王斑蝶人	女黑脉金斑蝶人		CREATURE:BUTTERFLY_MONARCH_MAN CASTE_NAME
+monarch butterfly women	女帝王斑蝶人	女黑脉金斑蝶人		CREATURE:BUTTERFLY_MONARCH_MAN CASTE_NAME
+giant monarch butterfly	巨型帝王斑蝶	巨型黑脉金斑蝶		CREATURE:GIANT_BUTTERFLY_MONARCH NAME
+giant monarch butterflies	巨型帝王斑蝶	巨型黑脉金斑蝶		CREATURE:GIANT_BUTTERFLY_MONARCH NAME
+firefly	螢火蟲	萤火虫		CREATURE:FIREFLY NAME
+fireflies	螢火蟲	萤火虫		CREATURE:FIREFLY NAME
+firefly man	螢火蟲人	萤火虫人		CREATURE:FIREFLY_MAN CASTE_NAME
+firefly men	螢火蟲人	萤火虫人		CREATURE:FIREFLY_MAN CASTE_NAME
+firefly woman	女螢火蟲人	女萤火虫人		CREATURE:FIREFLY_MAN CASTE_NAME
+firefly women	女螢火蟲人	女萤火虫人		CREATURE:FIREFLY_MAN CASTE_NAME
+giant firefly	巨型螢火蟲	巨型萤火虫		CREATURE:GIANT_FIREFLY NAME
+giant fireflies	巨型螢火蟲	巨型萤火虫		CREATURE:GIANT_FIREFLY NAME
+dragonfly	蜻蜓	蜻蜓		CREATURE:DRAGONFLY NAME
+dragonflies	蜻蜓	蜻蜓		CREATURE:DRAGONFLY NAME
+dragonfly man	蜻蜓人	蜻蜓人		CREATURE:DRAGONFLY_MAN CASTE_NAME
+dragonfly men	蜻蜓人	蜻蜓人		CREATURE:DRAGONFLY_MAN CASTE_NAME
+dragonfly woman	女蜻蜓人	女蜻蜓人		CREATURE:DRAGONFLY_MAN CASTE_NAME
+dragonfly women	女蜻蜓人	女蜻蜓人		CREATURE:DRAGONFLY_MAN CASTE_NAME
+giant dragonfly	巨型蜻蜓	巨型蜻蜓		CREATURE:GIANT_DRAGONFLY NAME
+giant dragonflies	巨型蜻蜓	巨型蜻蜓		CREATURE:GIANT_DRAGONFLY NAME
+honey bee	蜜蜂	蜜蜂		CREATURE:HONEY_BEE NAME
+honey bees	蜜蜂	蜜蜂		CREATURE:HONEY_BEE NAME
+honey bee wax	蜂蠟	蜂蜡		CREATURE:HONEY_BEE STATE_NAME_ADJ；蜜蜂產物用通稱（蜂蠟、蜂蜜、蜂王乳），熊蜂產物加「熊」區分
+honey bee wax cake	蜂蠟餅	蜂蜡饼		CREATURE:HONEY_BEE STATE_NAME_ADJ
+melted honey bee wax	融化的蜂蠟	融化的蜂蜡		CREATURE:HONEY_BEE STATE_NAME_ADJ
+boiling honey bee wax	沸騰的蜂蠟	沸腾的蜂蜡		CREATURE:HONEY_BEE STATE_NAME_ADJ
+frozen honey bee royal jelly	冰凍的蜂王乳	冰冻的蜂王浆		CREATURE:HONEY_BEE STATE_NAME_ADJ
+honey bee royal jelly	蜂王乳	蜂王浆		CREATURE:HONEY_BEE STATE_NAME_ADJ；台灣稱蜂王乳，大陸稱蜂王浆
+boiling honey bee royal jelly	沸騰的蜂王乳	沸腾的蜂王浆		CREATURE:HONEY_BEE STATE_NAME_ADJ
+frozen honey bee honey	冰凍的蜂蜜	冰冻的蜂蜜		CREATURE:HONEY_BEE STATE_NAME_ADJ
+honey bee honey	蜂蜜	蜂蜜		CREATURE:HONEY_BEE STATE_NAME_ADJ
+boiling honey bee honey	沸騰的蜂蜜	沸腾的蜂蜜		CREATURE:HONEY_BEE STATE_NAME_ADJ
+frozen mead	冰凍蜂蜜酒	冰冻蜂蜜酒		CREATURE:HONEY_BEE STATE_NAME_ADJ；寬度 11 格，省「的」
+mead	蜂蜜酒	蜂蜜酒		CREATURE:HONEY_BEE STATE_NAME_ADJ
+boiling mead	沸騰的蜂蜜酒	沸腾的蜂蜜酒		CREATURE:HONEY_BEE STATE_NAME_ADJ
+frozen honey bee venom	冰凍的蜜蜂毒液	冰冻的蜜蜂毒液		CREATURE:HONEY_BEE STATE_NAME
+honey bee venom	蜜蜂毒液	蜜蜂毒液		CREATURE:HONEY_BEE STATE_NAME
+boiling honey bee venom	沸騰的蜜蜂毒液	沸腾的蜜蜂毒液		CREATURE:HONEY_BEE STATE_NAME
+honey bee sting	蜜蜂螫傷	蜜蜂蜇伤		CREATURE:HONEY_BEE SYN_NAME；症狀名
+honey bee worker	蜜蜂工蜂	蜜蜂工蜂		CREATURE:HONEY_BEE CASTE_NAME
+honey bee workers	蜜蜂工蜂	蜜蜂工蜂		CREATURE:HONEY_BEE CASTE_NAME
+honey bee drone	蜜蜂雄蜂	蜜蜂雄蜂		CREATURE:HONEY_BEE CASTE_NAME
+honey bee drones	蜜蜂雄蜂	蜜蜂雄蜂		CREATURE:HONEY_BEE CASTE_NAME
+honey bee queen	蜜蜂蜂后	蜜蜂蜂王		CREATURE:HONEY_BEE CASTE_NAME；台灣稱蜂后，大陸稱蜂王
+honey bee queens	蜜蜂蜂后	蜜蜂蜂王		CREATURE:HONEY_BEE CASTE_NAME
+bumblebee	熊蜂	熊蜂		CREATURE:BUMBLEBEE NAME
+bumblebees	熊蜂	熊蜂		CREATURE:BUMBLEBEE NAME
+bumblebee wax	熊蜂蠟	熊蜂蜡		CREATURE:BUMBLEBEE STATE_NAME_ADJ
+bumblebee wax cake	熊蜂蠟餅	熊蜂蜡饼		CREATURE:BUMBLEBEE STATE_NAME_ADJ
+melted bumblebee wax	融化的熊蜂蠟	融化的熊蜂蜡		CREATURE:BUMBLEBEE STATE_NAME_ADJ
+boiling bumblebee wax	沸騰的熊蜂蠟	沸腾的熊蜂蜡		CREATURE:BUMBLEBEE STATE_NAME_ADJ
+frozen bumblebee royal jelly	冰凍的熊蜂蜂王乳	冰冻的熊蜂蜂王浆		CREATURE:BUMBLEBEE STATE_NAME_ADJ
+bumblebee royal jelly	熊蜂蜂王乳	熊蜂蜂王浆		CREATURE:BUMBLEBEE STATE_NAME_ADJ
+boiling bumblebee royal jelly	沸騰的熊蜂蜂王乳	沸腾的熊蜂蜂王浆		CREATURE:BUMBLEBEE STATE_NAME_ADJ
+frozen bumblebee honey	冰凍的熊蜂蜜	冰冻的熊蜂蜜		CREATURE:BUMBLEBEE STATE_NAME_ADJ
+bumblebee honey	熊蜂蜜	熊蜂蜜		CREATURE:BUMBLEBEE STATE_NAME_ADJ
+boiling bumblebee honey	沸騰的熊蜂蜜	沸腾的熊蜂蜜		CREATURE:BUMBLEBEE STATE_NAME_ADJ
+frozen bumblebee mead	冰凍的熊蜂蜜酒	冰冻的熊蜂蜜酒		CREATURE:BUMBLEBEE STATE_NAME_ADJ
+bumblebee mead	熊蜂蜜酒	熊蜂蜜酒		CREATURE:BUMBLEBEE STATE_NAME_ADJ
+boiling bumblebee mead	沸騰的熊蜂蜜酒	沸腾的熊蜂蜜酒		CREATURE:BUMBLEBEE STATE_NAME_ADJ
+frozen bumblebee venom	冰凍的熊蜂毒液	冰冻的熊蜂毒液		CREATURE:BUMBLEBEE STATE_NAME
+bumblebee venom	熊蜂毒液	熊蜂毒液		CREATURE:BUMBLEBEE STATE_NAME
+boiling bumblebee venom	沸騰的熊蜂毒液	沸腾的熊蜂毒液		CREATURE:BUMBLEBEE STATE_NAME
+bumblebee sting	熊蜂螫傷	熊蜂蜇伤		CREATURE:BUMBLEBEE SYN_NAME
+bumblebee worker	熊蜂工蜂	熊蜂工蜂		CREATURE:BUMBLEBEE CASTE_NAME
+bumblebee workers	熊蜂工蜂	熊蜂工蜂		CREATURE:BUMBLEBEE CASTE_NAME
+bumblebee drone	熊蜂雄蜂	熊蜂雄蜂		CREATURE:BUMBLEBEE CASTE_NAME
+bumblebee drones	熊蜂雄蜂	熊蜂雄蜂		CREATURE:BUMBLEBEE CASTE_NAME
+bumblebee queen	熊蜂蜂后	熊蜂蜂王		CREATURE:BUMBLEBEE CASTE_NAME
+bumblebee queens	熊蜂蜂后	熊蜂蜂王		CREATURE:BUMBLEBEE CASTE_NAME
+mountain goat	雪羊	雪羊		CREATURE:GOAT_MOUNTAIN NAME
+mountain goats	雪羊	雪羊		CREATURE:GOAT_MOUNTAIN NAME
+mountain goat kid	幼雪羊	幼雪羊		CREATURE:GOAT_MOUNTAIN GENERAL_CHILD_NAME
+mountain goat kids	幼雪羊	幼雪羊		CREATURE:GOAT_MOUNTAIN GENERAL_CHILD_NAME
+mountain goat man	雪羊人	雪羊人		CREATURE:GOAT_MOUNTAIN_MAN CASTE_NAME
+mountain goat men	雪羊人	雪羊人		CREATURE:GOAT_MOUNTAIN_MAN CASTE_NAME
+mountain goat woman	女雪羊人	女雪羊人		CREATURE:GOAT_MOUNTAIN_MAN CASTE_NAME
+mountain goat women	女雪羊人	女雪羊人		CREATURE:GOAT_MOUNTAIN_MAN CASTE_NAME
+giant mountain goat	巨型雪羊	巨型雪羊		CREATURE:GIANT_GOAT_MOUNTAIN NAME
+giant mountain goats	巨型雪羊	巨型雪羊		CREATURE:GIANT_GOAT_MOUNTAIN NAME
+giant mountain goat kid	幼巨型雪羊	幼巨型雪羊		CREATURE:GIANT_GOAT_MOUNTAIN GENERAL_CHILD_NAME
+giant mountain goat kids	幼巨型雪羊	幼巨型雪羊		CREATURE:GIANT_GOAT_MOUNTAIN GENERAL_CHILD_NAME
+hoary marmot	灰白土撥鼠	花白旱獭		CREATURE:MARMOT_HOARY NAME；台灣通稱土撥鼠，大陸正式名旱獭
+hoary marmots	灰白土撥鼠	花白旱獭		CREATURE:MARMOT_HOARY NAME
+hoary marmot pup	幼灰白土撥鼠	幼花白旱獭		CREATURE:MARMOT_HOARY GENERAL_CHILD_NAME
+hoary marmot pups	幼灰白土撥鼠	幼花白旱獭		CREATURE:MARMOT_HOARY GENERAL_CHILD_NAME
+hoary marmot man	灰白土撥鼠人	花白旱獭人		CREATURE:MARMOT_HOARY_MAN CASTE_NAME
+hoary marmot men	灰白土撥鼠人	花白旱獭人		CREATURE:MARMOT_HOARY_MAN CASTE_NAME
+hoary marmot woman	女灰白土撥鼠人	女花白旱獭人		CREATURE:MARMOT_HOARY_MAN CASTE_NAME
+hoary marmot women	女灰白土撥鼠人	女花白旱獭人		CREATURE:MARMOT_HOARY_MAN CASTE_NAME
+giant hoary marmot	巨型灰白土撥鼠	巨型花白旱獭		CREATURE:GIANT_MARMOT_HOARY NAME
+giant hoary marmots	巨型灰白土撥鼠	巨型花白旱獭		CREATURE:GIANT_MARMOT_HOARY NAME
+giant hoary marmot pup	幼巨型灰白土撥鼠	幼巨型花白旱獭		CREATURE:GIANT_MARMOT_HOARY GENERAL_CHILD_NAME
+giant hoary marmot pups	幼巨型灰白土撥鼠	幼巨型花白旱獭		CREATURE:GIANT_MARMOT_HOARY GENERAL_CHILD_NAME
+mountain gnome	高山地精	高山侏儒		CREATURE:GNOME_MOUNTAIN NAME；gnome 繁中用台灣奇幻慣用「地精」，簡中用「侏儒」，避開大陸社群稱 goblin 的「地精」
+mountain gnomes	高山地精	高山侏儒		CREATURE:GNOME_MOUNTAIN NAME
+lips	嘴唇	嘴唇		CREATURE:GNOME_MOUNTAIN APP_MOD_NOUN；外觀描述的身體部位
+nose bridge	鼻樑	鼻梁		CREATURE:GNOME_MOUNTAIN APP_MOD_NOUN；外觀描述的身體部位
+eyebrows	眉毛	眉毛		CREATURE:GNOME_MOUNTAIN APP_MOD_NOUN；外觀描述的身體部位
+dark gnome	黑暗地精	黑暗侏儒		CREATURE:GNOME_DARK NAME；gnome 譯法同 mountain gnome
+dark gnomes	黑暗地精	黑暗侏儒		CREATURE:GNOME_DARK NAME
+muskox	麝牛	麝牛		CREATURE:MUSKOX NAME
+muskoxen	麝牛	麝牛		CREATURE:MUSKOX NAME
+muskox calf	幼麝牛	幼麝牛		CREATURE:MUSKOX GENERAL_CHILD_NAME
+muskox calves	幼麝牛	幼麝牛		CREATURE:MUSKOX GENERAL_CHILD_NAME
+muskox man	麝牛人	麝牛人		CREATURE:MUSKOX_MAN CASTE_NAME
+muskox men	麝牛人	麝牛人		CREATURE:MUSKOX_MAN CASTE_NAME
+muskox woman	女麝牛人	女麝牛人		CREATURE:MUSKOX_MAN CASTE_NAME
+muskox women	女麝牛人	女麝牛人		CREATURE:MUSKOX_MAN CASTE_NAME
+giant muskox	巨型麝牛	巨型麝牛		CREATURE:GIANT_MUSKOX NAME
+giant muskoxen	巨型麝牛	巨型麝牛		CREATURE:GIANT_MUSKOX NAME
+giant muskox calf	幼巨型麝牛	幼巨型麝牛		CREATURE:GIANT_MUSKOX GENERAL_CHILD_NAME
+giant muskox calves	幼巨型麝牛	幼巨型麝牛		CREATURE:GIANT_MUSKOX GENERAL_CHILD_NAME
+elk	馬鹿	马鹿		CREATURE:ELK NAME；elk 是北美馬鹿（wapiti），不是麋鹿
+elk fawn	幼馬鹿	幼马鹿		CREATURE:ELK GENERAL_CHILD_NAME
+elk fawns	幼馬鹿	幼马鹿		CREATURE:ELK GENERAL_CHILD_NAME
+elk man	馬鹿人	马鹿人		CREATURE:ELK_MAN CASTE_NAME
+elk men	馬鹿人	马鹿人		CREATURE:ELK_MAN CASTE_NAME
+elk woman	女馬鹿人	女马鹿人		CREATURE:ELK_MAN CASTE_NAME
+elk women	女馬鹿人	女马鹿人		CREATURE:ELK_MAN CASTE_NAME
+giant elk	巨型馬鹿	巨型马鹿		CREATURE:GIANT_ELK NAME
+giant elk fawn	幼巨型馬鹿	幼巨型马鹿		CREATURE:GIANT_ELK GENERAL_CHILD_NAME
+giant elk fawns	幼巨型馬鹿	幼巨型马鹿		CREATURE:GIANT_ELK GENERAL_CHILD_NAME
+polar bear	北極熊	北极熊		CREATURE:BEAR_POLAR NAME
+polar bears	北極熊	北极熊		CREATURE:BEAR_POLAR NAME
+polar bear cub	幼北極熊	幼北极熊		CREATURE:BEAR_POLAR GENERAL_CHILD_NAME
+polar bear cubs	幼北極熊	幼北极熊		CREATURE:BEAR_POLAR GENERAL_CHILD_NAME
+polar bear man	北極熊人	北极熊人		CREATURE:BEAR_POLAR_MAN CASTE_NAME
+polar bear men	北極熊人	北极熊人		CREATURE:BEAR_POLAR_MAN CASTE_NAME
+polar bear woman	女北極熊人	女北极熊人		CREATURE:BEAR_POLAR_MAN CASTE_NAME
+polar bear women	女北極熊人	女北极熊人		CREATURE:BEAR_POLAR_MAN CASTE_NAME
+giant polar bear	巨型北極熊	巨型北极熊		CREATURE:GIANT_BEAR_POLAR NAME
+giant polar bears	巨型北極熊	巨型北极熊		CREATURE:GIANT_BEAR_POLAR NAME
+giant polar bear cub	幼巨型北極熊	幼巨型北极熊		CREATURE:GIANT_BEAR_POLAR GENERAL_CHILD_NAME
+giant polar bear cubs	幼巨型北極熊	幼巨型北极熊		CREATURE:GIANT_BEAR_POLAR GENERAL_CHILD_NAME
+wolverine	狼獾	狼獾		CREATURE:WOLVERINE NAME
+wolverines	狼獾	狼獾		CREATURE:WOLVERINE NAME
+wolverine kit	幼狼獾	幼狼獾		CREATURE:WOLVERINE GENERAL_CHILD_NAME
+wolverine kits	幼狼獾	幼狼獾		CREATURE:WOLVERINE GENERAL_CHILD_NAME
+wolverine man	狼獾人	狼獾人		CREATURE:WOLVERINE_MAN CASTE_NAME
+wolverine men	狼獾人	狼獾人		CREATURE:WOLVERINE_MAN CASTE_NAME
+wolverine woman	女狼獾人	女狼獾人		CREATURE:WOLVERINE_MAN CASTE_NAME
+wolverine women	女狼獾人	女狼獾人		CREATURE:WOLVERINE_MAN CASTE_NAME
+giant wolverine	巨型狼獾	巨型狼獾		CREATURE:GIANT_WOLVERINE NAME
+giant wolverines	巨型狼獾	巨型狼獾		CREATURE:GIANT_WOLVERINE NAME
+giant wolverine kit	幼巨型狼獾	幼巨型狼獾		CREATURE:GIANT_WOLVERINE GENERAL_CHILD_NAME
+giant wolverine kits	幼巨型狼獾	幼巨型狼獾		CREATURE:GIANT_WOLVERINE GENERAL_CHILD_NAME
+chinchilla	毛絲鼠	毛丝鼠		CREATURE:CHINCHILLA NAME
+chinchillas	毛絲鼠	毛丝鼠		CREATURE:CHINCHILLA NAME
+chinchilla kit	幼毛絲鼠	幼毛丝鼠		CREATURE:CHINCHILLA GENERAL_CHILD_NAME
+chinchilla kits	幼毛絲鼠	幼毛丝鼠		CREATURE:CHINCHILLA GENERAL_CHILD_NAME
+chinchilla man	毛絲鼠人	毛丝鼠人		CREATURE:CHINCHILLA_MAN CASTE_NAME
+chinchilla men	毛絲鼠人	毛丝鼠人		CREATURE:CHINCHILLA_MAN CASTE_NAME
+chinchilla woman	女毛絲鼠人	女毛丝鼠人		CREATURE:CHINCHILLA_MAN CASTE_NAME
+chinchilla women	女毛絲鼠人	女毛丝鼠人		CREATURE:CHINCHILLA_MAN CASTE_NAME
+giant chinchilla	巨型毛絲鼠	巨型毛丝鼠		CREATURE:GIANT_CHINCHILLA NAME
+giant chinchillas	巨型毛絲鼠	巨型毛丝鼠		CREATURE:GIANT_CHINCHILLA NAME
+giant chinchilla kit	幼巨型毛絲鼠	幼巨型毛丝鼠		CREATURE:GIANT_CHINCHILLA GENERAL_CHILD_NAME
+giant chinchilla kits	幼巨型毛絲鼠	幼巨型毛丝鼠		CREATURE:GIANT_CHINCHILLA GENERAL_CHILD_NAME
+hamster	倉鼠	仓鼠		CREATURE:HAMSTER NAME
+hamsters	倉鼠	仓鼠		CREATURE:HAMSTER NAME
+hamster man	倉鼠人	仓鼠人		CREATURE:HAMSTER_MAN CASTE_NAME
+hamster men	倉鼠人	仓鼠人		CREATURE:HAMSTER_MAN CASTE_NAME
+hamster woman	女倉鼠人	女仓鼠人		CREATURE:HAMSTER_MAN CASTE_NAME
+hamster women	女倉鼠人	女仓鼠人		CREATURE:HAMSTER_MAN CASTE_NAME
+giant hamster	巨型倉鼠	巨型仓鼠		CREATURE:GIANT_HAMSTER NAME
+giant hamsters	巨型倉鼠	巨型仓鼠		CREATURE:GIANT_HAMSTER NAME
+hedgehog	刺蝟	刺猬		CREATURE:HEDGEHOG NAME
+hedgehogs	刺蝟	刺猬		CREATURE:HEDGEHOG NAME
+hedgehog man	刺蝟人	刺猬人		CREATURE:HEDGEHOG_MAN CASTE_NAME
+hedgehog men	刺蝟人	刺猬人		CREATURE:HEDGEHOG_MAN CASTE_NAME
+hedgehog woman	女刺蝟人	女刺猬人		CREATURE:HEDGEHOG_MAN CASTE_NAME
+hedgehog women	女刺蝟人	女刺猬人		CREATURE:HEDGEHOG_MAN CASTE_NAME
+giant hedgehog	巨型刺蝟	巨型刺猬		CREATURE:GIANT_HEDGEHOG NAME
+giant hedgehogs	巨型刺蝟	巨型刺猬		CREATURE:GIANT_HEDGEHOG NAME
+flying squirrel	飛鼠	鼯鼠		CREATURE:SQUIRREL_FLYING NAME；台灣通稱飛鼠，大陸用鼯鼠
+flying squirrels	飛鼠	鼯鼠		CREATURE:SQUIRREL_FLYING NAME
+flying squirrel man	飛鼠人	鼯鼠人		CREATURE:FLYING_SQUIRREL_MAN CASTE_NAME
+flying squirrel men	飛鼠人	鼯鼠人		CREATURE:FLYING_SQUIRREL_MAN CASTE_NAME
+flying squirrel woman	女飛鼠人	女鼯鼠人		CREATURE:FLYING_SQUIRREL_MAN CASTE_NAME
+flying squirrel women	女飛鼠人	女鼯鼠人		CREATURE:FLYING_SQUIRREL_MAN CASTE_NAME
+giant flying squirrel	巨型飛鼠	巨型鼯鼠		CREATURE:GIANT_FLYING_SQUIRREL NAME
+giant flying squirrels	巨型飛鼠	巨型鼯鼠		CREATURE:GIANT_FLYING_SQUIRREL NAME
+rat	老鼠	老鼠		CREATURE:RAT NAME
+rats	老鼠	老鼠		CREATURE:RAT NAME
+rat man	老鼠人	老鼠人		CREATURE:RAT_MAN CASTE_NAME
+rat men	老鼠人	老鼠人		CREATURE:RAT_MAN CASTE_NAME
+rat woman	女老鼠人	女老鼠人		CREATURE:RAT_MAN CASTE_NAME
+rat women	女老鼠人	女老鼠人		CREATURE:RAT_MAN CASTE_NAME
+gray squirrel	灰松鼠	灰松鼠		CREATURE:SQUIRREL_GRAY NAME
+gray squirrels	灰松鼠	灰松鼠		CREATURE:SQUIRREL_GRAY NAME
+gray squirrel man	灰松鼠人	灰松鼠人		CREATURE:SQUIRREL_GRAY_MAN CASTE_NAME
+gray squirrel men	灰松鼠人	灰松鼠人		CREATURE:SQUIRREL_GRAY_MAN CASTE_NAME
+gray squirrel woman	女灰松鼠人	女灰松鼠人		CREATURE:SQUIRREL_GRAY_MAN CASTE_NAME
+gray squirrel women	女灰松鼠人	女灰松鼠人		CREATURE:SQUIRREL_GRAY_MAN CASTE_NAME
+giant gray squirrel	巨型灰松鼠	巨型灰松鼠		CREATURE:GIANT_SQUIRREL_GRAY NAME
+giant gray squirrels	巨型灰松鼠	巨型灰松鼠		CREATURE:GIANT_SQUIRREL_GRAY NAME
+giant gray squirrel pup	幼巨型灰松鼠	幼巨型灰松鼠		CREATURE:GIANT_SQUIRREL_GRAY GENERAL_CHILD_NAME
+giant gray squirrel pups	幼巨型灰松鼠	幼巨型灰松鼠		CREATURE:GIANT_SQUIRREL_GRAY GENERAL_CHILD_NAME
+red squirrel	紅松鼠	红松鼠		CREATURE:SQUIRREL_RED NAME
+red squirrels	紅松鼠	红松鼠		CREATURE:SQUIRREL_RED NAME
+red squirrel man	紅松鼠人	红松鼠人		CREATURE:SQUIRREL_RED_MAN CASTE_NAME
+red squirrel men	紅松鼠人	红松鼠人		CREATURE:SQUIRREL_RED_MAN CASTE_NAME
+red squirrel woman	女紅松鼠人	女红松鼠人		CREATURE:SQUIRREL_RED_MAN CASTE_NAME
+red squirrel women	女紅松鼠人	女红松鼠人		CREATURE:SQUIRREL_RED_MAN CASTE_NAME
+giant red squirrel	巨型紅松鼠	巨型红松鼠		CREATURE:GIANT_SQUIRREL_RED NAME
+giant red squirrels	巨型紅松鼠	巨型红松鼠		CREATURE:GIANT_SQUIRREL_RED NAME
+giant red squirrel pup	幼巨型紅松鼠	幼巨型红松鼠		CREATURE:GIANT_SQUIRREL_RED GENERAL_CHILD_NAME
+giant red squirrel pups	幼巨型紅松鼠	幼巨型红松鼠		CREATURE:GIANT_SQUIRREL_RED GENERAL_CHILD_NAME
+chipmunk	花栗鼠	花栗鼠		CREATURE:CHIPMUNK NAME
+chipmunks	花栗鼠	花栗鼠		CREATURE:CHIPMUNK NAME
+chipmunk man	花栗鼠人	花栗鼠人		CREATURE:CHIPMUNK_MAN CASTE_NAME
+chipmunk men	花栗鼠人	花栗鼠人		CREATURE:CHIPMUNK_MAN CASTE_NAME
+chipmunk woman	女花栗鼠人	女花栗鼠人		CREATURE:CHIPMUNK_MAN CASTE_NAME
+chipmunk women	女花栗鼠人	女花栗鼠人		CREATURE:CHIPMUNK_MAN CASTE_NAME
+giant chipmunk	巨型花栗鼠	巨型花栗鼠		CREATURE:GIANT_CHIPMUNK NAME
+giant chipmunks	巨型花栗鼠	巨型花栗鼠		CREATURE:GIANT_CHIPMUNK NAME
+giant chipmunk pup	幼巨型花栗鼠	幼巨型花栗鼠		CREATURE:GIANT_CHIPMUNK GENERAL_CHILD_NAME
+giant chipmunk pups	幼巨型花栗鼠	幼巨型花栗鼠		CREATURE:GIANT_CHIPMUNK GENERAL_CHILD_NAME
+stoat	白鼬	白鼬		CREATURE:STOAT NAME
+stoats	白鼬	白鼬		CREATURE:STOAT NAME
+stoat kit	幼白鼬	幼白鼬		CREATURE:STOAT GENERAL_CHILD_NAME
+stoat kits	幼白鼬	幼白鼬		CREATURE:STOAT GENERAL_CHILD_NAME
+stoat jill	母白鼬	母白鼬		CREATURE:STOAT CASTE_NAME；jill 是母鼬
+stoat jills	母白鼬	母白鼬		CREATURE:STOAT CASTE_NAME
+stoat jack	公白鼬	公白鼬		CREATURE:STOAT CASTE_NAME；jack 是公鼬
+stoat jacks	公白鼬	公白鼬		CREATURE:STOAT CASTE_NAME
+stoat man	白鼬人	白鼬人		CREATURE:STOAT_MAN CASTE_NAME
+stoat men	白鼬人	白鼬人		CREATURE:STOAT_MAN CASTE_NAME
+stoat woman	女白鼬人	女白鼬人		CREATURE:STOAT_MAN CASTE_NAME
+stoat women	女白鼬人	女白鼬人		CREATURE:STOAT_MAN CASTE_NAME
+giant stoat	巨型白鼬	巨型白鼬		CREATURE:GIANT_STOAT NAME
+giant stoats	巨型白鼬	巨型白鼬		CREATURE:GIANT_STOAT NAME
+giant stoat kit	幼巨型白鼬	幼巨型白鼬		CREATURE:GIANT_STOAT GENERAL_CHILD_NAME
+giant stoat kits	幼巨型白鼬	幼巨型白鼬		CREATURE:GIANT_STOAT GENERAL_CHILD_NAME
+lynx	猞猁	猞猁		CREATURE:LYNX NAME
+lynx cub	幼猞猁	幼猞猁		CREATURE:LYNX GENERAL_CHILD_NAME
+lynx cubs	幼猞猁	幼猞猁		CREATURE:LYNX GENERAL_CHILD_NAME
+lynx man	猞猁人	猞猁人		CREATURE:LYNX_MAN CASTE_NAME
+lynx men	猞猁人	猞猁人		CREATURE:LYNX_MAN CASTE_NAME
+lynx woman	女猞猁人	女猞猁人		CREATURE:LYNX_MAN CASTE_NAME
+lynx women	女猞猁人	女猞猁人		CREATURE:LYNX_MAN CASTE_NAME
+giant lynx	巨型猞猁	巨型猞猁		CREATURE:GIANT_LYNX NAME
+giant lynx cub	幼巨型猞猁	幼巨型猞猁		CREATURE:GIANT_LYNX GENERAL_CHILD_NAME
+giant lynx cubs	幼巨型猞猁	幼巨型猞猁		CREATURE:GIANT_LYNX GENERAL_CHILD_NAME

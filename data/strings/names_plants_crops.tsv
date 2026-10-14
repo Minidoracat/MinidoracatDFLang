@@ -1,0 +1,409 @@
+en	zh-Hant	zh-Hans	align	note
+single-grain wheat	一粒小麥	一粒小麦		PLANT:SINGLE-GRAIN_WHEAT NAME
+frozen single-grain wheat beer	冰凍的一粒小麥啤酒	冰冻的一粒小麦啤酒		PLANT:SINGLE-GRAIN_WHEAT STATE_NAME_ADJ
+single-grain wheat beer	一粒小麥啤酒	一粒小麦啤酒		PLANT:SINGLE-GRAIN_WHEAT STATE_NAME_ADJ
+boiling single-grain wheat beer	沸騰的一粒小麥啤酒	沸腾的一粒小麦啤酒		PLANT:SINGLE-GRAIN_WHEAT STATE_NAME_ADJ
+single-grain wheat flour	一粒小麥粉	一粒小麦粉		PLANT:SINGLE-GRAIN_WHEAT STATE_NAME_ADJ
+single-grain wheat seed	一粒小麥種子	一粒小麦种子		PLANT:SINGLE-GRAIN_WHEAT SEED
+single-grain wheat seeds	一粒小麥種子	一粒小麦种子		PLANT:SINGLE-GRAIN_WHEAT SEED
+single-grain wheat leaf	一粒小麥葉	一粒小麦叶		PLANT:SINGLE-GRAIN_WHEAT GROWTH_NAME
+single-grain wheat leaves	一粒小麥葉	一粒小麦叶		PLANT:SINGLE-GRAIN_WHEAT GROWTH_NAME
+two-grain wheat	二粒小麥	二粒小麦		PLANT:TWO-GRAIN_WHEAT NAME
+frozen two-grain wheat beer	冰凍的二粒小麥啤酒	冰冻的二粒小麦啤酒		PLANT:TWO-GRAIN_WHEAT STATE_NAME_ADJ
+two-grain wheat beer	二粒小麥啤酒	二粒小麦啤酒		PLANT:TWO-GRAIN_WHEAT STATE_NAME_ADJ
+boiling two-grain wheat beer	沸騰的二粒小麥啤酒	沸腾的二粒小麦啤酒		PLANT:TWO-GRAIN_WHEAT STATE_NAME_ADJ
+two-grain wheat flour	二粒小麥粉	二粒小麦粉		PLANT:TWO-GRAIN_WHEAT STATE_NAME_ADJ
+two-grain wheat seed	二粒小麥種子	二粒小麦种子		PLANT:TWO-GRAIN_WHEAT SEED
+two-grain wheat seeds	二粒小麥種子	二粒小麦种子		PLANT:TWO-GRAIN_WHEAT SEED
+two-grain wheat leaf	二粒小麥葉	二粒小麦叶		PLANT:TWO-GRAIN_WHEAT GROWTH_NAME
+two-grain wheat leaves	二粒小麥葉	二粒小麦叶		PLANT:TWO-GRAIN_WHEAT GROWTH_NAME
+soft wheat	軟質小麥	软质小麦		PLANT:SOFT_WHEAT NAME
+frozen soft wheat beer	冰凍的軟質小麥啤酒	冰冻的软质小麦啤酒		PLANT:SOFT_WHEAT STATE_NAME_ADJ
+soft wheat beer	軟質小麥啤酒	软质小麦啤酒		PLANT:SOFT_WHEAT STATE_NAME_ADJ
+boiling soft wheat beer	沸騰的軟質小麥啤酒	沸腾的软质小麦啤酒		PLANT:SOFT_WHEAT STATE_NAME_ADJ
+soft wheat flour	軟質小麥粉	软质小麦粉		PLANT:SOFT_WHEAT STATE_NAME_ADJ
+soft wheat seed	軟質小麥種子	软质小麦种子		PLANT:SOFT_WHEAT SEED
+soft wheat seeds	軟質小麥種子	软质小麦种子		PLANT:SOFT_WHEAT SEED
+soft wheat leaf	軟質小麥葉	软质小麦叶		PLANT:SOFT_WHEAT GROWTH_NAME
+soft wheat leaves	軟質小麥葉	软质小麦叶		PLANT:SOFT_WHEAT GROWTH_NAME
+hard wheat	硬質小麥	硬质小麦		PLANT:HARD_WHEAT NAME
+frozen hard wheat beer	冰凍的硬質小麥啤酒	冰冻的硬质小麦啤酒		PLANT:HARD_WHEAT STATE_NAME_ADJ
+hard wheat beer	硬質小麥啤酒	硬质小麦啤酒		PLANT:HARD_WHEAT STATE_NAME_ADJ
+boiling hard wheat beer	沸騰的硬質小麥啤酒	沸腾的硬质小麦啤酒		PLANT:HARD_WHEAT STATE_NAME_ADJ
+hard wheat flour	硬質小麥粉	硬质小麦粉		PLANT:HARD_WHEAT STATE_NAME_ADJ
+hard wheat seed	硬質小麥種子	硬质小麦种子		PLANT:HARD_WHEAT SEED
+hard wheat seeds	硬質小麥種子	硬质小麦种子		PLANT:HARD_WHEAT SEED
+hard wheat leaf	硬質小麥葉	硬质小麦叶		PLANT:HARD_WHEAT GROWTH_NAME
+hard wheat leaves	硬質小麥葉	硬质小麦叶		PLANT:HARD_WHEAT GROWTH_NAME
+spelt	斯佩麥	斯佩麦		PLANT:SPELT NAME；斯佩爾特小麥（Triticum spelta）；寬度 6 取三字
+frozen spelt beer	冰凍的斯佩麥啤酒	冰冻的斯佩麦啤酒		PLANT:SPELT STATE_NAME_ADJ
+spelt beer	斯佩麥啤酒	斯佩麦啤酒		PLANT:SPELT STATE_NAME_ADJ
+boiling spelt beer	沸騰的斯佩麥啤酒	沸腾的斯佩麦啤酒		PLANT:SPELT STATE_NAME_ADJ
+spelt flour	斯佩麥粉	斯佩麦粉		PLANT:SPELT STATE_NAME_ADJ
+spelt seed	斯佩麥種子	斯佩麦种子		PLANT:SPELT SEED
+spelt seeds	斯佩麥種子	斯佩麦种子		PLANT:SPELT SEED
+spelt leaf	斯佩麥葉	斯佩麦叶		PLANT:SPELT GROWTH_NAME
+spelt leaves	斯佩麥葉	斯佩麦叶		PLANT:SPELT GROWTH_NAME
+barley	大麥	大麦		PLANT:BARLEY NAME
+frozen barley wine	冰凍的大麥酒	冰冻的大麦酒		PLANT:BARLEY STATE_NAME_ADJ
+barley wine	大麥酒	大麦酒		PLANT:BARLEY STATE_NAME_ADJ
+boiling barley wine	沸騰的大麥酒	沸腾的大麦酒		PLANT:BARLEY STATE_NAME_ADJ
+barley flour	大麥粉	大麦粉		PLANT:BARLEY STATE_NAME_ADJ
+barley seed	大麥種子	大麦种子		PLANT:BARLEY SEED
+barley seeds	大麥種子	大麦种子		PLANT:BARLEY SEED
+barley leaf	大麥葉	大麦叶		PLANT:BARLEY GROWTH_NAME
+barley leaves	大麥葉	大麦叶		PLANT:BARLEY GROWTH_NAME
+buckwheat	蕎麥	荞麦		PLANT:BUCKWHEAT NAME
+frozen buckwheat beer	冰凍的蕎麥啤酒	冰冻的荞麦啤酒		PLANT:BUCKWHEAT STATE_NAME_ADJ
+buckwheat beer	蕎麥啤酒	荞麦啤酒		PLANT:BUCKWHEAT STATE_NAME_ADJ
+boiling buckwheat beer	沸騰的蕎麥啤酒	沸腾的荞麦啤酒		PLANT:BUCKWHEAT STATE_NAME_ADJ
+buckwheat flour	蕎麥粉	荞麦粉		PLANT:BUCKWHEAT STATE_NAME_ADJ
+buckwheat seed	蕎麥種子	荞麦种子		PLANT:BUCKWHEAT SEED
+buckwheat seeds	蕎麥種子	荞麦种子		PLANT:BUCKWHEAT SEED
+buckwheat leaf	蕎麥葉	荞麦叶		PLANT:BUCKWHEAT GROWTH_NAME
+buckwheat leaves	蕎麥葉	荞麦叶		PLANT:BUCKWHEAT GROWTH_NAME
+buckwheat flower	蕎麥花	荞麦花		PLANT:BUCKWHEAT GROWTH_NAME
+oat	燕麥	燕麦		PLANT:OATS NAME
+oats	燕麥	燕麦		PLANT:OATS NAME_PLURAL
+oat flour	燕麥粉	燕麦粉		PLANT:OATS STATE_NAME_ADJ
+oat seed	燕麥種子	燕麦种子		PLANT:OATS SEED
+oat seeds	燕麥種子	燕麦种子		PLANT:OATS SEED
+oat leaf	燕麥葉	燕麦叶		PLANT:OATS GROWTH_NAME
+oat leaves	燕麥葉	燕麦叶		PLANT:OATS GROWTH_NAME
+alfalfa	苜蓿	苜蓿		PLANT:ALFALFA NAME
+alfalfa seed	苜蓿種子	苜蓿种子		PLANT:ALFALFA SEED
+alfalfa seeds	苜蓿種子	苜蓿种子		PLANT:ALFALFA SEED
+alfalfa leaf	苜蓿葉	苜蓿叶		PLANT:ALFALFA GROWTH_NAME
+alfalfa leaves	苜蓿葉	苜蓿叶		PLANT:ALFALFA GROWTH_NAME
+alfalfa flower cluster	苜蓿花簇	苜蓿花簇		PLANT:ALFALFA GROWTH_NAME
+rye	黑麥	黑麦		PLANT:RYE NAME
+frozen rye beer	冰凍的黑麥啤酒	冰冻的黑麦啤酒		PLANT:RYE STATE_NAME_ADJ
+rye beer	黑麥啤酒	黑麦啤酒		PLANT:RYE STATE_NAME_ADJ
+boiling rye beer	沸騰的黑麥啤酒	沸腾的黑麦啤酒		PLANT:RYE STATE_NAME_ADJ
+rye flour	黑麥粉	黑麦粉		PLANT:RYE STATE_NAME_ADJ
+rye seed	黑麥種子	黑麦种子		PLANT:RYE SEED
+rye seeds	黑麥種子	黑麦种子		PLANT:RYE SEED
+rye leaf	黑麥葉	黑麦叶		PLANT:RYE GROWTH_NAME
+rye leaves	黑麥葉	黑麦叶		PLANT:RYE GROWTH_NAME
+sorghum	高粱	高粱		PLANT:SORGHUM NAME
+frozen sorghum beer	冰凍的高粱啤酒	冰冻的高粱啤酒		PLANT:SORGHUM STATE_NAME_ADJ
+sorghum beer	高粱啤酒	高粱啤酒		PLANT:SORGHUM STATE_NAME_ADJ
+boiling sorghum beer	沸騰的高粱啤酒	沸腾的高粱啤酒		PLANT:SORGHUM STATE_NAME_ADJ
+sorghum flour	高粱粉	高粱粉		PLANT:SORGHUM STATE_NAME_ADJ
+sorghum seed	高粱種子	高粱种子		PLANT:SORGHUM SEED
+sorghum seeds	高粱種子	高粱种子		PLANT:SORGHUM SEED
+sorghum leaf	高粱葉	高粱叶		PLANT:SORGHUM GROWTH_NAME
+sorghum leaves	高粱葉	高粱叶		PLANT:SORGHUM GROWTH_NAME
+sorghum flower cluster	高粱花簇	高粱花簇		PLANT:SORGHUM GROWTH_NAME
+sorghum leaf dye	高粱葉染料	高粱叶染料		PLANT:SORGHUM STATE_NAME_ADJ
+rice plant	水稻	水稻		PLANT:RICE NAME；植株；穀粒 rice 另譯
+rice plants	水稻	水稻		PLANT:RICE NAME_PLURAL
+frozen rice beer	冰凍的米酒	冰冻的米酒		PLANT:RICE STATE_NAME_ADJ
+rice beer	米酒	米酒		PLANT:RICE STATE_NAME_ADJ
+boiling rice beer	沸騰的米酒	沸腾的米酒		PLANT:RICE STATE_NAME_ADJ
+rice flour	稻米粉	大米粉		PLANT:RICE STATE_NAME_ADJ
+rice	稻米	大米		PLANT:RICE SEED；收成的穀粒；繁：稻米、简：大米
+rice leaf	稻葉	稻叶		PLANT:RICE GROWTH_NAME
+rice leaves	稻葉	稻叶		PLANT:RICE GROWTH_NAME
+rice husk dye	稻殼染料	稻壳染料		PLANT:RICE STATE_NAME_ADJ
+maize plant	玉米植株	玉米植株		PLANT:MAIZE NAME
+maize plants	玉米植株	玉米植株		PLANT:MAIZE NAME_PLURAL
+frozen maize beer	冰凍的玉米啤酒	冰冻的玉米啤酒		PLANT:MAIZE STATE_NAME_ADJ
+maize beer	玉米啤酒	玉米啤酒		PLANT:MAIZE STATE_NAME_ADJ
+boiling maize beer	沸騰的玉米啤酒	沸腾的玉米啤酒		PLANT:MAIZE STATE_NAME_ADJ
+maize flour	玉米粉	玉米粉		PLANT:MAIZE STATE_NAME_ADJ
+maize	玉米	玉米		PLANT:MAIZE SEED
+maize leaf	玉米葉	玉米叶		PLANT:MAIZE GROWTH_NAME
+maize leaves	玉米葉	玉米叶		PLANT:MAIZE GROWTH_NAME
+quinoa	藜麥	藜麦		PLANT:QUINOA NAME
+frozen quinoa beer	冰凍的藜麥啤酒	冰冻的藜麦啤酒		PLANT:QUINOA STATE_NAME_ADJ
+quinoa beer	藜麥啤酒	藜麦啤酒		PLANT:QUINOA STATE_NAME_ADJ
+boiling quinoa beer	沸騰的藜麥啤酒	沸腾的藜麦啤酒		PLANT:QUINOA STATE_NAME_ADJ
+quinoa flour	藜麥粉	藜麦粉		PLANT:QUINOA STATE_NAME_ADJ
+quinoa seed	藜麥種子	藜麦种子		PLANT:QUINOA SEED
+quinoa seeds	藜麥種子	藜麦种子		PLANT:QUINOA SEED
+quinoa leaf	藜麥葉	藜麦叶		PLANT:QUINOA GROWTH_NAME
+quinoa leaves	藜麥葉	藜麦叶		PLANT:QUINOA GROWTH_NAME
+quinoa flower	藜麥花	藜麦花		PLANT:QUINOA GROWTH_NAME
+kaniwa	卡尼瓦	卡尼瓦		PLANT:KANIWA NAME；Chenopodium pallidicaule 音譯；寬度 6
+frozen kaniwa beer	冰凍的卡尼瓦啤酒	冰冻的卡尼瓦啤酒		PLANT:KANIWA STATE_NAME_ADJ
+kaniwa beer	卡尼瓦啤酒	卡尼瓦啤酒		PLANT:KANIWA STATE_NAME_ADJ
+boiling kaniwa beer	沸騰的卡尼瓦啤酒	沸腾的卡尼瓦啤酒		PLANT:KANIWA STATE_NAME_ADJ
+kaniwa flour	卡尼瓦粉	卡尼瓦粉		PLANT:KANIWA STATE_NAME_ADJ
+kaniwa seed	卡尼瓦種子	卡尼瓦种子		PLANT:KANIWA SEED
+kaniwa seeds	卡尼瓦種子	卡尼瓦种子		PLANT:KANIWA SEED
+kaniwa leaf	卡尼瓦葉	卡尼瓦叶		PLANT:KANIWA GROWTH_NAME
+kaniwa leaves	卡尼瓦葉	卡尼瓦叶		PLANT:KANIWA GROWTH_NAME
+kaniwa flower	卡尼瓦花	卡尼瓦花		PLANT:KANIWA GROWTH_NAME
+bitter vetch	苦野豌豆	苦野豌豆		PLANT:BITTER_VETCH NAME
+bitter vetch seed	苦野豌豆種子	苦野豌豆种子		PLANT:BITTER_VETCH SEED
+bitter vetch seeds	苦野豌豆種子	苦野豌豆种子		PLANT:BITTER_VETCH SEED
+bitter vetch leaf	苦野豌豆葉	苦野豌豆叶		PLANT:BITTER_VETCH GROWTH_NAME
+bitter vetch leaves	苦野豌豆葉	苦野豌豆叶		PLANT:BITTER_VETCH GROWTH_NAME
+bitter vetch flower	苦野豌豆花	苦野豌豆花		PLANT:BITTER_VETCH GROWTH_NAME
+bitter vetch pod	苦野豌豆莢	苦野豌豆荚		PLANT:BITTER_VETCH GROWTH_NAME
+pendant amaranth	尾穗莧	尾穗苋		PLANT:PENDANT_AMARANTH NAME
+pendant amaranths	尾穗莧	尾穗苋		PLANT:PENDANT_AMARANTH NAME_PLURAL
+frozen pendant amaranth beer	冰凍的尾穗莧啤酒	冰冻的尾穗苋啤酒		PLANT:PENDANT_AMARANTH STATE_NAME_ADJ
+pendant amaranth beer	尾穗莧啤酒	尾穗苋啤酒		PLANT:PENDANT_AMARANTH STATE_NAME_ADJ
+boiling pendant amaranth beer	沸騰的尾穗莧啤酒	沸腾的尾穗苋啤酒		PLANT:PENDANT_AMARANTH STATE_NAME_ADJ
+pendant amaranth flour	尾穗莧粉	尾穗苋粉		PLANT:PENDANT_AMARANTH STATE_NAME_ADJ
+pendant amaranth seed	尾穗莧種子	尾穗苋种子		PLANT:PENDANT_AMARANTH SEED
+pendant amaranth seeds	尾穗莧種子	尾穗苋种子		PLANT:PENDANT_AMARANTH SEED
+pendant amaranth leaf	尾穗莧葉	尾穗苋叶		PLANT:PENDANT_AMARANTH GROWTH_NAME
+pendant amaranth leaves	尾穗莧葉	尾穗苋叶		PLANT:PENDANT_AMARANTH GROWTH_NAME
+pendant amaranth inflorescence	尾穗莧花序	尾穗苋花序		PLANT:PENDANT_AMARANTH GROWTH_NAME
+blood amaranth	血莧	血苋		PLANT:BLOOD_AMARANTH NAME；字面譯；與植物「血莧」(Iresine) 同名，僅遊戲內使用
+blood amaranths	血莧	血苋		PLANT:BLOOD_AMARANTH NAME_PLURAL
+frozen blood amaranth beer	冰凍的血莧啤酒	冰冻的血苋啤酒		PLANT:BLOOD_AMARANTH STATE_NAME_ADJ
+blood amaranth beer	血莧啤酒	血苋啤酒		PLANT:BLOOD_AMARANTH STATE_NAME_ADJ
+boiling blood amaranth beer	沸騰的血莧啤酒	沸腾的血苋啤酒		PLANT:BLOOD_AMARANTH STATE_NAME_ADJ
+blood amaranth flour	血莧粉	血苋粉		PLANT:BLOOD_AMARANTH STATE_NAME_ADJ
+blood amaranth seed	血莧種子	血苋种子		PLANT:BLOOD_AMARANTH SEED
+blood amaranth seeds	血莧種子	血苋种子		PLANT:BLOOD_AMARANTH SEED
+blood amaranth leaf	血莧葉	血苋叶		PLANT:BLOOD_AMARANTH GROWTH_NAME
+blood amaranth leaves	血莧葉	血苋叶		PLANT:BLOOD_AMARANTH GROWTH_NAME
+blood amaranth inflorescence	血莧花序	血苋花序		PLANT:BLOOD_AMARANTH GROWTH_NAME
+purple amaranth	紫莧	紫苋		PLANT:PURPLE_AMARANTH NAME
+purple amaranths	紫莧	紫苋		PLANT:PURPLE_AMARANTH NAME_PLURAL
+frozen purple amaranth beer	冰凍的紫莧啤酒	冰冻的紫苋啤酒		PLANT:PURPLE_AMARANTH STATE_NAME_ADJ
+purple amaranth beer	紫莧啤酒	紫苋啤酒		PLANT:PURPLE_AMARANTH STATE_NAME_ADJ
+boiling purple amaranth beer	沸騰的紫莧啤酒	沸腾的紫苋啤酒		PLANT:PURPLE_AMARANTH STATE_NAME_ADJ
+purple amaranth flour	紫莧粉	紫苋粉		PLANT:PURPLE_AMARANTH STATE_NAME_ADJ
+purple amaranth seed	紫莧種子	紫苋种子		PLANT:PURPLE_AMARANTH SEED
+purple amaranth seeds	紫莧種子	紫苋种子		PLANT:PURPLE_AMARANTH SEED
+purple amaranth leaf	紫莧葉	紫苋叶		PLANT:PURPLE_AMARANTH GROWTH_NAME
+purple amaranth leaves	紫莧葉	紫苋叶		PLANT:PURPLE_AMARANTH GROWTH_NAME
+purple amaranth inflorescence	紫莧花序	紫苋花序		PLANT:PURPLE_AMARANTH GROWTH_NAME
+red spinach	紅莧菜	红苋菜		PLANT:RED_SPINACH NAME
+red spinach seed	紅莧菜種子	红苋菜种子		PLANT:RED_SPINACH SEED
+red spinach seeds	紅莧菜種子	红苋菜种子		PLANT:RED_SPINACH SEED
+red spinach leaf	紅莧菜葉	红苋菜叶		PLANT:RED_SPINACH GROWTH_NAME
+red spinach leaves	紅莧菜葉	红苋菜叶		PLANT:RED_SPINACH GROWTH_NAME
+red spinach inflorescence	紅莧菜花序	红苋菜花序		PLANT:RED_SPINACH GROWTH_NAME
+red spinach leaf dye	紅莧菜葉染料	红苋菜叶染料		PLANT:RED_SPINACH STATE_NAME_ADJ
+elephant-head amaranth	象頭莧	象头苋		PLANT:ELEPHANT-HEAD_AMARANTH NAME
+elephant-head amaranths	象頭莧	象头苋		PLANT:ELEPHANT-HEAD_AMARANTH NAME_PLURAL
+elephant-head amaranth seed	象頭莧種子	象头苋种子		PLANT:ELEPHANT-HEAD_AMARANTH SEED
+elephant-head amaranth seeds	象頭莧種子	象头苋种子		PLANT:ELEPHANT-HEAD_AMARANTH SEED
+elephant-head amaranth leaf	象頭莧葉	象头苋叶		PLANT:ELEPHANT-HEAD_AMARANTH GROWTH_NAME
+elephant-head amaranth leaves	象頭莧葉	象头苋叶		PLANT:ELEPHANT-HEAD_AMARANTH GROWTH_NAME
+elephant-head amaranth inflorescence	象頭莧花序	象头苋花序		PLANT:ELEPHANT-HEAD_AMARANTH GROWTH_NAME
+pearl millet plant	珍珠粟植株	珍珠粟植株		PLANT:PEARL_MILLET NAME
+pearl millet plants	珍珠粟植株	珍珠粟植株		PLANT:PEARL_MILLET NAME_PLURAL
+frozen pearl millet beer	冰凍的珍珠粟啤酒	冰冻的珍珠粟啤酒		PLANT:PEARL_MILLET STATE_NAME_ADJ
+pearl millet beer	珍珠粟啤酒	珍珠粟啤酒		PLANT:PEARL_MILLET STATE_NAME_ADJ
+boiling pearl millet beer	沸騰的珍珠粟啤酒	沸腾的珍珠粟啤酒		PLANT:PEARL_MILLET STATE_NAME_ADJ
+pearl millet flour	珍珠粟粉	珍珠粟粉		PLANT:PEARL_MILLET STATE_NAME_ADJ
+pearl millet	珍珠粟	珍珠粟		PLANT:PEARL_MILLET SEED
+pearl millet leaf	珍珠粟葉	珍珠粟叶		PLANT:PEARL_MILLET GROWTH_NAME
+pearl millet leaves	珍珠粟葉	珍珠粟叶		PLANT:PEARL_MILLET GROWTH_NAME
+white millet plant	白黍植株	白黍植株		PLANT:WHITE_MILLET NAME
+white millet plants	白黍植株	白黍植株		PLANT:WHITE_MILLET NAME_PLURAL
+frozen white millet beer	冰凍的白黍啤酒	冰冻的白黍啤酒		PLANT:WHITE_MILLET STATE_NAME_ADJ
+white millet beer	白黍啤酒	白黍啤酒		PLANT:WHITE_MILLET STATE_NAME_ADJ
+boiling white millet beer	沸騰的白黍啤酒	沸腾的白黍啤酒		PLANT:WHITE_MILLET STATE_NAME_ADJ
+white millet flour	白黍粉	白黍粉		PLANT:WHITE_MILLET STATE_NAME_ADJ
+white millet	白黍	白黍		PLANT:WHITE_MILLET SEED；白色黍（proso millet）
+white millet leaf	白黍葉	白黍叶		PLANT:WHITE_MILLET GROWTH_NAME
+white millet leaves	白黍葉	白黍叶		PLANT:WHITE_MILLET GROWTH_NAME
+finger millet plant	龍爪稷植株	龙爪稷植株		PLANT:FINGER_MILLET NAME
+finger millet plants	龍爪稷植株	龙爪稷植株		PLANT:FINGER_MILLET NAME_PLURAL
+frozen finger millet beer	冰凍的龍爪稷啤酒	冰冻的龙爪稷啤酒		PLANT:FINGER_MILLET STATE_NAME_ADJ
+finger millet beer	龍爪稷啤酒	龙爪稷啤酒		PLANT:FINGER_MILLET STATE_NAME_ADJ
+boiling finger millet beer	沸騰的龍爪稷啤酒	沸腾的龙爪稷啤酒		PLANT:FINGER_MILLET STATE_NAME_ADJ
+finger millet flour	龍爪稷粉	龙爪稷粉		PLANT:FINGER_MILLET STATE_NAME_ADJ
+finger millet	龍爪稷	龙爪稷		PLANT:FINGER_MILLET SEED；Eleusine coracana；不用罕字「䅟」
+finger millet leaf	龍爪稷葉	龙爪稷叶		PLANT:FINGER_MILLET GROWTH_NAME
+finger millet leaves	龍爪稷葉	龙爪稷叶		PLANT:FINGER_MILLET GROWTH_NAME
+foxtail millet plant	小米植株	小米植株		PLANT:FOXTAIL_MILLET NAME
+foxtail millet plants	小米植株	小米植株		PLANT:FOXTAIL_MILLET NAME_PLURAL
+frozen foxtail millet beer	冰凍的小米酒	冰冻的小米酒		PLANT:FOXTAIL_MILLET STATE_NAME_ADJ
+foxtail millet beer	小米酒	小米酒		PLANT:FOXTAIL_MILLET STATE_NAME_ADJ
+boiling foxtail millet beer	沸騰的小米酒	沸腾的小米酒		PLANT:FOXTAIL_MILLET STATE_NAME_ADJ
+foxtail millet flour	小米粉	小米粉		PLANT:FOXTAIL_MILLET STATE_NAME_ADJ
+foxtail millet	小米	小米		PLANT:FOXTAIL_MILLET SEED；粟；通行名小米，酒譯小米酒
+foxtail millet leaf	小米葉	小米叶		PLANT:FOXTAIL_MILLET GROWTH_NAME
+foxtail millet leaves	小米葉	小米叶		PLANT:FOXTAIL_MILLET GROWTH_NAME
+fonio plant	福尼奧植株	福尼奥植株		PLANT:FONIO NAME
+fonio plants	福尼奧植株	福尼奥植株		PLANT:FONIO NAME_PLURAL
+frozen fonio beer	冰凍的福尼奧啤酒	冰冻的福尼奥啤酒		PLANT:FONIO STATE_NAME_ADJ
+fonio beer	福尼奧啤酒	福尼奥啤酒		PLANT:FONIO STATE_NAME_ADJ
+boiling fonio beer	沸騰的福尼奧啤酒	沸腾的福尼奥啤酒		PLANT:FONIO STATE_NAME_ADJ
+fonio flour	福尼奧粉	福尼奥粉		PLANT:FONIO STATE_NAME_ADJ
+fonio	福尼奧	福尼奥		PLANT:FONIO SEED；福尼奧米（Digitaria exilis）；寬度 6 取三字
+fonio leaf	福尼奧葉	福尼奥叶		PLANT:FONIO GROWTH_NAME
+fonio leaves	福尼奧葉	福尼奥叶		PLANT:FONIO GROWTH_NAME
+teff plant	苔麩植株	苔麸植株		PLANT:TEFF NAME
+teff plants	苔麩植株	苔麸植株		PLANT:TEFF NAME_PLURAL
+frozen teff beer	冰凍的苔麩啤酒	冰冻的苔麸啤酒		PLANT:TEFF STATE_NAME_ADJ
+teff beer	苔麩啤酒	苔麸啤酒		PLANT:TEFF STATE_NAME_ADJ
+boiling teff beer	沸騰的苔麩啤酒	沸腾的苔麸啤酒		PLANT:TEFF STATE_NAME_ADJ
+teff flour	苔麩粉	苔麸粉		PLANT:TEFF STATE_NAME_ADJ
+teff	苔麩	苔麸		PLANT:TEFF SEED
+teff leaf	苔麩葉	苔麸叶		PLANT:TEFF GROWTH_NAME
+teff leaves	苔麩葉	苔麸叶		PLANT:TEFF GROWTH_NAME
+flax plant	亞麻植株	亚麻植株		PLANT:FLAX NAME
+flax plants	亞麻植株	亚麻植株		PLANT:FLAX NAME_PLURAL
+frozen linseed oil	冰凍的亞麻籽油	冰冻的亚麻籽油		PLANT:FLAX STATE_NAME_ADJ
+linseed oil	亞麻籽油	亚麻籽油		PLANT:FLAX STATE_NAME_ADJ
+boiling linseed oil	沸騰的亞麻籽油	沸腾的亚麻籽油		PLANT:FLAX STATE_NAME_ADJ
+linseed oil soap	亞麻籽油皂	亚麻籽油皂		PLANT:FLAX STATE_NAME_ADJ
+melted linseed oil soap	融化的亞麻籽油皂	融化的亚麻籽油皂		PLANT:FLAX STATE_NAME_ADJ
+flax flour	亞麻籽粉	亚麻籽粉		PLANT:FLAX STATE_NAME_ADJ
+flax seed	亞麻籽	亚麻籽		PLANT:FLAX STATE_NAME_ADJ；油料作物種子用「籽」，與籽油、籽餅一致
+flax seed paste	亞麻籽糊	亚麻籽糊		PLANT:FLAX STATE_NAME_ADJ
+flax seed press cake	亞麻籽餅	亚麻籽饼		PLANT:FLAX STATE_NAME_ADJ
+flax seeds	亞麻籽	亚麻籽		PLANT:FLAX SEED
+linen	亞麻	亚麻		PLANT:FLAX STATE_NAME_ADJ；材料名，接物品成亞麻布、亞麻線
+linen slurry	亞麻紙漿	亚麻纸浆		PLANT:FLAX STATE_NAME_ADJ
+linen paper	亞麻紙	亚麻纸		PLANT:FLAX STATE_NAME_ADJ
+flax leaf	亞麻葉	亚麻叶		PLANT:FLAX GROWTH_NAME
+flax leaves	亞麻葉	亚麻叶		PLANT:FLAX GROWTH_NAME
+flax flower	亞麻花	亚麻花		PLANT:FLAX GROWTH_NAME
+jute plant	黃麻植株	黄麻植株		PLANT:JUTE NAME
+jute plants	黃麻植株	黄麻植株		PLANT:JUTE NAME_PLURAL
+jute seed	黃麻種子	黄麻种子		PLANT:JUTE SEED
+jute seeds	黃麻種子	黄麻种子		PLANT:JUTE SEED
+jute	黃麻	黄麻		PLANT:JUTE STATE_NAME_ADJ
+jute slurry	黃麻紙漿	黄麻纸浆		PLANT:JUTE STATE_NAME_ADJ
+jute paper	黃麻紙	黄麻纸		PLANT:JUTE STATE_NAME_ADJ
+jute leaf	黃麻葉	黄麻叶		PLANT:JUTE GROWTH_NAME
+jute leaves	黃麻葉	黄麻叶		PLANT:JUTE GROWTH_NAME
+jute flower	黃麻花	黄麻花		PLANT:JUTE GROWTH_NAME
+hemp plant	大麻植株	大麻植株		PLANT:HEMP NAME
+hemp plants	大麻植株	大麻植株		PLANT:HEMP NAME_PLURAL
+frozen hempseed oil	冰凍的大麻籽油	冰冻的大麻籽油		PLANT:HEMP STATE_NAME_ADJ
+hempseed oil	大麻籽油	大麻籽油		PLANT:HEMP STATE_NAME_ADJ
+boiling hempseed oil	沸騰的大麻籽油	沸腾的大麻籽油		PLANT:HEMP STATE_NAME_ADJ
+hempseed oil soap	大麻籽油皂	大麻籽油皂		PLANT:HEMP STATE_NAME_ADJ
+melted hempseed oil soap	融化的大麻籽油皂	融化的大麻籽油皂		PLANT:HEMP STATE_NAME_ADJ
+hemp flour	大麻籽粉	大麻籽粉		PLANT:HEMP STATE_NAME_ADJ
+hemp seed	大麻籽	大麻籽		PLANT:HEMP STATE_NAME_ADJ
+hemp seed paste	大麻籽糊	大麻籽糊		PLANT:HEMP STATE_NAME_ADJ
+hemp seed press cake	大麻籽餅	大麻籽饼		PLANT:HEMP STATE_NAME_ADJ
+hemp seeds	大麻籽	大麻籽		PLANT:HEMP SEED
+hemp	大麻	大麻		PLANT:HEMP STATE_NAME_ADJ
+hemp slurry	大麻紙漿	大麻纸浆		PLANT:HEMP STATE_NAME_ADJ
+hemp paper	大麻紙	大麻纸		PLANT:HEMP STATE_NAME_ADJ
+hemp leaf	大麻葉	大麻叶		PLANT:HEMP GROWTH_NAME
+hemp leaves	大麻葉	大麻叶		PLANT:HEMP GROWTH_NAME
+cotton plant	棉花植株	棉花植株		PLANT:COTTON NAME
+cotton plants	棉花植株	棉花植株		PLANT:COTTON NAME_PLURAL
+frozen cottonseed oil	冰凍的棉籽油	冰冻的棉籽油		PLANT:COTTON STATE_NAME_ADJ
+cottonseed oil	棉籽油	棉籽油		PLANT:COTTON STATE_NAME_ADJ
+boiling cottonseed oil	沸騰的棉籽油	沸腾的棉籽油		PLANT:COTTON STATE_NAME_ADJ
+cottonseed oil soap	棉籽油皂	棉籽油皂		PLANT:COTTON STATE_NAME_ADJ
+melted cottonseed oil soap	融化的棉籽油皂	融化的棉籽油皂		PLANT:COTTON STATE_NAME_ADJ
+cotton seed	棉籽	棉籽		PLANT:COTTON STATE_NAME_ADJ
+cotton seed paste	棉籽糊	棉籽糊		PLANT:COTTON STATE_NAME_ADJ
+cotton seed press cake	棉籽餅	棉籽饼		PLANT:COTTON STATE_NAME_ADJ
+cotton seeds	棉籽	棉籽		PLANT:COTTON SEED
+cotton	棉	棉		PLANT:COTTON STATE_NAME_ADJ；材料名，接物品成棉布、棉線
+cotton slurry	棉紙漿	棉纸浆		PLANT:COTTON STATE_NAME_ADJ
+cotton paper	棉紙	棉纸		PLANT:COTTON STATE_NAME_ADJ
+cotton leaf	棉葉	棉叶		PLANT:COTTON GROWTH_NAME
+cotton leaves	棉葉	棉叶		PLANT:COTTON GROWTH_NAME
+cotton flower	棉花	棉花		PLANT:COTTON GROWTH_NAME
+ramie plant	苧麻植株	苎麻植株		PLANT:RAMIE NAME
+ramie plants	苧麻植株	苎麻植株		PLANT:RAMIE NAME_PLURAL
+ramie seed	苧麻種子	苎麻种子		PLANT:RAMIE SEED
+ramie seeds	苧麻種子	苎麻种子		PLANT:RAMIE SEED
+ramie	苧麻	苎麻		PLANT:RAMIE STATE_NAME_ADJ
+ramie slurry	苧麻紙漿	苎麻纸浆		PLANT:RAMIE STATE_NAME_ADJ
+ramie paper	苧麻紙	苎麻纸		PLANT:RAMIE STATE_NAME_ADJ
+ramie leaf	苧麻葉	苎麻叶		PLANT:RAMIE GROWTH_NAME
+ramie leaves	苧麻葉	苎麻叶		PLANT:RAMIE GROWTH_NAME
+kenaf plant	洋麻植株	红麻植株		PLANT:KENAF NAME
+kenaf plants	洋麻植株	红麻植株		PLANT:KENAF NAME_PLURAL
+frozen kenaf seed oil	冰凍的洋麻籽油	冰冻的红麻籽油		PLANT:KENAF STATE_NAME_ADJ
+kenaf seed oil	洋麻籽油	红麻籽油		PLANT:KENAF STATE_NAME_ADJ
+boiling kenaf seed oil	沸騰的洋麻籽油	沸腾的红麻籽油		PLANT:KENAF STATE_NAME_ADJ
+kenaf seed oil soap	洋麻籽油皂	红麻籽油皂		PLANT:KENAF STATE_NAME_ADJ
+melted kenaf seed oil soap	融化的洋麻籽油皂	融化的红麻籽油皂		PLANT:KENAF STATE_NAME_ADJ
+kenaf seed	洋麻籽	红麻籽		PLANT:KENAF STATE_NAME_ADJ
+kenaf seed paste	洋麻籽糊	红麻籽糊		PLANT:KENAF STATE_NAME_ADJ
+kenaf seed press cake	洋麻籽餅	红麻籽饼		PLANT:KENAF STATE_NAME_ADJ
+kenaf seeds	洋麻籽	红麻籽		PLANT:KENAF SEED
+kenaf	洋麻	红麻		PLANT:KENAF STATE_NAME_ADJ；兩岸通行名不同：繁 洋麻、简 红麻
+kenaf slurry	洋麻紙漿	红麻纸浆		PLANT:KENAF STATE_NAME_ADJ
+kenaf paper	洋麻紙	红麻纸		PLANT:KENAF STATE_NAME_ADJ
+kenaf leaf	洋麻葉	红麻叶		PLANT:KENAF GROWTH_NAME
+kenaf leaves	洋麻葉	红麻叶		PLANT:KENAF GROWTH_NAME
+kenaf flower	洋麻花	红麻花		PLANT:KENAF GROWTH_NAME
+papyrus sedge	紙莎草	纸莎草		PLANT:PAPYRUS_SEDGE NAME
+papyrus sedges	紙莎草	纸莎草		PLANT:PAPYRUS_SEDGE NAME_PLURAL
+papyrus	紙莎草	纸莎草		PLANT:PAPYRUS_SEDGE STATE_NAME_ADJ；材料（莖髓），與植物同名
+papyrus seed	紙莎草種子	纸莎草种子		PLANT:PAPYRUS_SEDGE SEED
+papyrus seeds	紙莎草種子	纸莎草种子		PLANT:PAPYRUS_SEDGE SEED
+papyrus leaf	紙莎草葉	纸莎草叶		PLANT:PAPYRUS_SEDGE GROWTH_NAME
+papyrus leaves	紙莎草葉	纸莎草叶		PLANT:PAPYRUS_SEDGE GROWTH_NAME
+papyrus flower cluster	紙莎草花簇	纸莎草花簇		PLANT:PAPYRUS_SEDGE GROWTH_NAME
+meadow-grass	早熟禾	早熟禾		PLANT:MEADOW-GRASS ALL_NAMES
+hair grass	髮草	发草		PLANT:HAIR GRASS ALL_NAMES
+bentgrass	剪股穎	剪股颖		PLANT:BENTGRASS ALL_NAMES
+ryegrass	黑麥草	黑麦草		PLANT:RYEGRASS ALL_NAMES
+fescue grass	羊茅	羊茅		PLANT:FESCUE GRASS ALL_NAMES
+reedgrass	拂子茅	拂子茅		PLANT:REEDGRASS ALL_NAMES
+knotgrass	萹蓄	萹蓄		PLANT:KNOTGRASS ALL_NAMES；Polygonum aviculare 萹蓄
+zoysia	結縷草	结缕草		PLANT:ZOYSIA ALL_NAMES
+dog's tooth grass	狗牙根	狗牙根		PLANT:DOG'S TOOTH GRASS ALL_NAMES；Cynodon dactylon 狗牙根
+dallisgrass	毛花雀稗	毛花雀稗		PLANT:DALLISGRASS ALL_NAMES
+carpetgrass	地毯草	地毯草		PLANT:CARPETGRASS ALL_NAMES
+satintail	白茅	白茅		PLANT:SATINTAIL ALL_NAMES
+grama	垂穗草	垂穗草		PLANT:GRAMA ALL_NAMES；Bouteloua 垂穗草屬
+dropseed grass	鼠尾粟	鼠尾粟		PLANT:DROPSEED GRASS ALL_NAMES
+needle grass	針茅	针茅		PLANT:NEEDLE GRASS ALL_NAMES
+baby toes succulent	五十鈴玉	五十铃玉		PLANT:BABY TOES SUCCULENT NAME
+baby toes succulents	五十鈴玉	五十铃玉		PLANT:BABY TOES SUCCULENT NAME_PLURAL
+baby toes succulent bud	五十鈴玉花苞	五十铃玉花苞		PLANT:BABY TOES SUCCULENT GROWTH_NAME
+baby toes succulent flower	五十鈴玉花	五十铃玉花		PLANT:BABY TOES SUCCULENT GROWTH_NAME
+pebble plant	生石花	生石花		PLANT:PEBBLE PLANTS NAME
+pebble plants	生石花	生石花		PLANT:PEBBLE PLANTS NAME_PLURAL
+pebble plant bud	生石花花苞	生石花花苞		PLANT:PEBBLE PLANTS GROWTH_NAME
+pebble plant flower	生石花花	生石花花		PLANT:PEBBLE PLANTS GROWTH_NAME
+blue sedge	藍薹草	蓝薹草		PLANT:BLUE SEDGE ALL_NAMES
+field sedge	田野薹草	田野薹草		PLANT:FIELD SEDGE ALL_NAMES
+purple moor grass	藍沼草	蓝沼草		PLANT:PURPLE MOOR GRASS ALL_NAMES；Molinia caerulea 正式名 藍沼草
+velvet grass	絨毛草	绒毛草		PLANT:VELVET GRASS ALL_NAMES
+meadowsweet	旋果蚊子草	旋果蚊子草		PLANT:MEADOWSWEET ALL_NAMES；Filipendula ulmaria 正式名旋果蚊子草（非繡線菊）
+meadowsweet bud	旋果蚊子草花苞	旋果蚊子草花苞		PLANT:MEADOWSWEET GROWTH_NAME
+meadowsweet flower	旋果蚊子草花	旋果蚊子草花		PLANT:MEADOWSWEET GROWTH_NAME
+rush	燈心草	灯心草		PLANT:RUSH NAME；Juncus 燈心草
+rushes	燈心草	灯心草		PLANT:RUSH NAME_PLURAL
+rush bud	燈心草苞	灯心草苞		PLANT:RUSH GROWTH_NAME；寬度 8，花苞省作苞
+rush flower	燈心草花	灯心草花		PLANT:RUSH GROWTH_NAME
+marsh thistle	沼澤薊	沼泽蓟		PLANT:MARSH THISTLE NAME
+marsh thistles	沼澤薊	沼泽蓟		PLANT:MARSH THISTLE NAME_PLURAL
+marsh thistle bud	沼澤薊花苞	沼泽蓟花苞		PLANT:MARSH THISTLE GROWTH_NAME
+marsh thistle flower	沼澤薊花	沼泽蓟花		PLANT:MARSH THISTLE GROWTH_NAME
+common reed	蘆葦	芦苇		PLANT:COMMON REED NAME
+common reeds	蘆葦	芦苇		PLANT:COMMON REED NAME_PLURAL
+cattail	香蒲	香蒲		PLANT:CATTAIL NAME
+cattails	香蒲	香蒲		PLANT:CATTAIL NAME_PLURAL
+sawgrass	克拉莎	克拉莎		PLANT:SAWGRASS ALL_NAMES；Cladium 克拉莎屬
+cottongrass	羊鬍子草	羊胡子草		PLANT:COTTONGRASS ALL_NAMES
+cottongrass bud	羊鬍子草花苞	羊胡子草花苞		PLANT:COTTONGRASS GROWTH_NAME
+cottongrass tuft	羊鬍子草絮	羊胡子草絮		PLANT:COTTONGRASS GROWTH_NAME
+white mountain heather	白岩鬚	白岩须		PLANT:WHITE MOUNTAIN HEATHER ALL_NAMES；Cassiope mertensiana；岩鬚屬
+mountain avens	仙女木	仙女木		PLANT:MOUNTAIN AVENS ALL_NAMES
+mountain avens bud	仙女木花苞	仙女木花苞		PLANT:MOUNTAIN AVENS GROWTH_NAME
+mountain avens flower	仙女木花	仙女木花		PLANT:MOUNTAIN AVENS GROWTH_NAME
+cloudberry	雲莓	云莓		PLANT:CLOUDBERRY NAME
+cloudberries	雲莓	云莓		PLANT:CLOUDBERRY NAME_PLURAL
+cloudberry bud	雲莓花苞	云莓花苞		PLANT:CLOUDBERRY GROWTH_NAME
+cloudberry flower	雲莓花	云莓花		PLANT:CLOUDBERRY GROWTH_NAME
+wormy tendril	蠕蟲卷鬚	蠕虫卷须		PLANT:WORMY TENDRILS NAME
+wormy tendrils	蠕蟲卷鬚	蠕虫卷须		PLANT:WORMY TENDRILS NAME_PLURAL
+staring eyeball	凝視眼球	凝视眼球		PLANT:EYEBALL NAME
+staring eyeballs	凝視眼球	凝视眼球		PLANT:EYEBALL NAME_PLURAL
+bubble bulb	泡泡球莖	泡泡球茎		PLANT:BUBBLE BULBS NAME
+bubble bulbs	泡泡球莖	泡泡球茎		PLANT:BUBBLE BULBS NAME_PLURAL
+downy grass	柔毛草	柔毛草		PLANT:DOWNY GRASS ALL_NAMES；遊戲自創；避開絨毛草（velvet grass）
+cave moss	洞穴苔蘚	洞穴苔藓		PLANT:CAVE MOSS ALL_NAMES
+floor fungus	地面真菌	地面真菌		PLANT:FLOOR FUNGI NAME；遊戲自創，地底地面菌類
+floor fungi	地面真菌	地面真菌		PLANT:FLOOR FUNGI NAME_PLURAL
+underlichen	地底地衣	地底地衣		PLANT:UNDERLICHEN ALL_NAMES；遊戲自創
+arrow bamboo	矢竹	矢竹		PLANT:BAMBOO, ARROW ALL_NAMES
+golden bamboo	金竹	金竹		PLANT:BAMBOO, GOLDEN ALL_NAMES；金竹 Phyllostachys sulphurea
+hedge bamboo	蓬萊竹	孝顺竹		PLANT:BAMBOO, HEDGE ALL_NAMES；Bambusa multiplex；繁 蓬萊竹（台灣通行）、简 孝顺竹

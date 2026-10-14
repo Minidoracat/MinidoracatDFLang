@@ -7,12 +7,13 @@
 1. data/strings/*.tsv（整句）、data/rules/*.tsv（句型）與 data/screens/*.tsv（依畫面套用的整句，檔名是畫面）：
    欄位 en, zh-Hant, zh-Hans, align, note；原文能用 CP437 表示（遊戲只會畫 CP437），同一類不重複
    （screens 是同一個畫面檔裡不重複）；align 只能是空、c、r；screens 的檔名只用英數、底線、點
-2. 句型佔位：原文至少一個 {1}～{9}、每個只出現一次、不能相鄰，樣板要有固定的英文字（否則會套到幾乎所有字串）；
-   兩種譯文用的佔位和原文一致、各一次
+2. 句型佔位：原文至少一個 {1}～{9}、每個只出現一次、不能相鄰；樣板要有英文字、限定佔位（{#n}、{@n}）或頭尾固定字，
+   否則會套到幾乎所有字串；兩種譯文用的佔位和原文一致、各一次
 3. 繁簡同步：同一條兩欄同時有譯文或同時留空（繁簡分開翻，但兩包要涵蓋同一批句子）
 4. 開頭空白：譯文開頭的空白數與原文相同（那是遊戲的縮排）
 5. 寬度：譯文格數不超過原文（CP437 字一格，其他字兩格），超出會蓋到旁邊的介面；句型只算樣板本身，
-   佔位填入後超寬的情況由引擎在執行時退回英文
+   佔位填入後超寬的情況由引擎在執行時退回英文。名稱檔（strings/names_*.tsv）至少可用 6 格：
+   短英文名（ogre、hydra、kiwi）的通行中文名多半是三個字
 6. 文字檔 UTF-8、無 BOM、LF（遊戲端逐位元組讀，BOM 與 \\r 會黏進原文或譯文）
 7. 字型：每種語言譯文與吉祥物名牌（語言標籤、作者名）用到的字，主字型或補字字型（temp/fonts/）至少一份有
 8. 吉祥物：art/mascot.png 是 8-bit RGBA PNG（引擎只讀這種）；每包的 mascot_label 是全形字
@@ -61,9 +62,12 @@ def placeholder_problem(r: dict, langs: list[str]) -> str | None:
         return "原文佔位重複"
     if re.search(r"\{[#@]?[1-9]\}\{[#@]?[1-9]\}", r["en"]):
         return "原文佔位相鄰"
-    # 沒有固定英文字的樣板會套到幾乎所有字串；但有限定佔位（{#n} 只收數字、{@n} 只收字典字詞）時，套得到的字串有限
-    if not re.search(r"[A-Za-z]", template(r["en"])) and not re.search(r"\{[#@][1-9]\}", r["en"]):
-        return "原文樣板沒有固定的英文字，也沒有限定佔位（{#n}、{@n}），會套到幾乎所有字串"
+    # 只有空白、標點夾著佔位的樣板（{1} {2}、{1}, {2}）會套到幾乎所有字串。有英文字、有限定佔位
+    # （{#n} 只收數字、{@n} 只收字典字詞），或開頭、結尾是固定字（外框 -{1}-、後綴 {1}, ♂）時，套得到的字串有限
+    lits = PLACEHOLDER.split(r["en"])  # 佔位前後的固定字；只有空白不算（` {1} {2}` 一樣會套到幾乎所有字串）
+    edges = bool(lits[0].strip() or lits[-1].strip())
+    if not re.search(r"[A-Za-z]", template(r["en"])) and not re.search(r"\{[#@][1-9]\}", r["en"]) and not edges:
+        return "原文樣板沒有英文字、限定佔位或頭尾固定字，會套到幾乎所有字串"
     for lang in langs:
         if r[lang] and sorted(PLACEHOLDER.findall(r[lang])) != sorted(en):
             return f"{lang} 佔位和原文不一致"
@@ -107,8 +111,12 @@ def main() -> int:
     indent = [f"{r['file']}: {r['en']!r} [{lang}]" for r in rows for lang in langs
               if r[lang] and leading_spaces(r[lang]) != leading_spaces(r["en"])]
     check(not indent, "譯文開頭空白與原文相同", indent)
-    wide = [f"{r['file']}: {r['en']!r} [{lang}] {cells(template(r[lang]))}>{cells(template(r['en']))}"
-            for r in rows for lang in langs if r[lang] and cells(template(r[lang])) > cells(template(r["en"]))]
+    def room(r: dict) -> int:
+        en = cells(template(r["en"]))
+        return max(en, 6) if r["file"].startswith("strings/names_") else en
+
+    wide = [f"{r['file']}: {r['en']!r} [{lang}] {cells(template(r[lang]))}>{room(r)}"
+            for r in rows for lang in langs if r[lang] and cells(template(r[lang])) > room(r)]
     check(not wide, "譯文格數不超過原文", wide)
     marks = [f"{r['file']}: {r['en'][:60]!r} [{lang}]" for r in rows for lang in langs
              if r[lang] and sorted(MARKUP.findall(r[lang])) != sorted(MARKUP.findall(r["en"]))]

@@ -1,0 +1,524 @@
+en	zh-Hant	zh-Hans	align	note
+body	身體	身体		BODY:BASIC_1PARTBODY BP
+bodies	身體	身体		BODY:BASIC_1PARTBODY BP
+upper body	上半身	上半身		BODY:BASIC_2PARTBODY BP
+upper bodies	上半身	上半身		BODY:BASIC_2PARTBODY BP
+lower body	下半身	下半身		BODY:BASIC_2PARTBODY BP
+lower bodies	下半身	下半身		BODY:BASIC_2PARTBODY BP
+right upper arm	右上臂	右上臂		BODY:BASIC_3PARTARMS BP
+left upper arm	左上臂	左上臂		BODY:BASIC_3PARTARMS BP
+right lower arm	右前臂	右前臂		BODY:BASIC_3PARTARMS BP
+left lower arm	左前臂	左前臂		BODY:BASIC_3PARTARMS BP
+right hand	右手	右手		BODY:BASIC_3PARTARMS BP
+left hand	左手	左手		BODY:BASIC_3PARTARMS BP
+right upper leg	右大腿	右大腿		BODY:BASIC_3PARTLEGS BP
+left upper leg	左大腿	左大腿		BODY:BASIC_3PARTLEGS BP
+right lower leg	右小腿	右小腿		BODY:BASIC_3PARTLEGS BP
+left lower leg	左小腿	左小腿		BODY:BASIC_3PARTLEGS BP
+right foot	右腳	右脚		BODY:BASIC_3PARTLEGS BP
+right feet	右腳	右脚		BODY:BASIC_3PARTLEGS BP
+left foot	左腳	左脚		BODY:BASIC_3PARTLEGS BP
+left feet	左腳	左脚		BODY:BASIC_3PARTLEGS BP
+right front leg	右前腿	右前腿		BODY:BASIC_FRONTLEGS BP
+left front leg	左前腿	左前腿		BODY:BASIC_FRONTLEGS BP
+right front foot	右前腳	右前脚		BODY:BASIC_FRONTLEGS BP
+right front feet	右前腳	右前脚		BODY:BASIC_FRONTLEGS BP
+left front foot	左前腳	左前脚		BODY:BASIC_FRONTLEGS BP
+left front feet	左前腳	左前脚		BODY:BASIC_FRONTLEGS BP
+right rear leg	右後腿	右后腿		BODY:BASIC_REARLEGS BP
+left rear leg	左後腿	左后腿		BODY:BASIC_REARLEGS BP
+right rear foot	右後腳	右后脚		BODY:BASIC_REARLEGS BP
+right rear feet	右後腳	右后脚		BODY:BASIC_REARLEGS BP
+left rear foot	左後腳	左后脚		BODY:BASIC_REARLEGS BP
+left rear feet	左後腳	左后脚		BODY:BASIC_REARLEGS BP
+first neck	第一頸部	第一颈部		BODY:7HEADNECKS BP
+second neck	第二頸部	第二颈部		BODY:7HEADNECKS BP
+third neck	第三頸部	第三颈部		BODY:7HEADNECKS BP
+fourth neck	第四頸部	第四颈部		BODY:7HEADNECKS BP
+fifth neck	第五頸部	第五颈部		BODY:7HEADNECKS BP
+sixth neck	第六頸部	第六颈部		BODY:7HEADNECKS BP
+seventh neck	第七頸部	第七颈部		BODY:7HEADNECKS BP
+first head	第一頭部	第一头部		BODY:7HEADNECKS BP
+second head	第二頭部	第二头部		BODY:7HEADNECKS BP
+third head	第三頭部	第三头部		BODY:7HEADNECKS BP
+fourth head	第四頭部	第四头部		BODY:7HEADNECKS BP
+fifth head	第五頭部	第五头部		BODY:7HEADNECKS BP
+sixth head	第六頭部	第六头部		BODY:7HEADNECKS BP
+seventh head	第七頭部	第七头部		BODY:7HEADNECKS BP
+head	頭部	头部		BODY:BASIC_HEAD BP
+neck	頸部	颈部		BODY:BASIC_HEAD_NECK BP
+right hoof	右蹄	右蹄		BODY:HUMANOID_HOOF BP
+right hooves	右蹄	右蹄		BODY:HUMANOID_HOOF BP
+left hoof	左蹄	左蹄		BODY:HUMANOID_HOOF BP
+left hooves	左蹄	左蹄		BODY:HUMANOID_HOOF BP
+right wing	右翅膀	右翅膀		BODY:2WINGS BP
+left wing	左翅膀	左翅膀		BODY:2WINGS BP
+first right upper arm	第一右上臂	第一右上臂		BODY:HUMANOID_4ARMS BP
+first left upper arm	第一左上臂	第一左上臂		BODY:HUMANOID_4ARMS BP
+first right lower arm	第一右前臂	第一右前臂		BODY:HUMANOID_4ARMS BP
+first left lower arm	第一左前臂	第一左前臂		BODY:HUMANOID_4ARMS BP
+first right hand	第一右手	第一右手		BODY:HUMANOID_4ARMS BP
+first left hand	第一左手	第一左手		BODY:HUMANOID_4ARMS BP
+second right upper arm	第二右上臂	第二右上臂		BODY:HUMANOID_4ARMS BP
+second left upper arm	第二左上臂	第二左上臂		BODY:HUMANOID_4ARMS BP
+second right lower arm	第二右前臂	第二右前臂		BODY:HUMANOID_4ARMS BP
+second left lower arm	第二左前臂	第二左前臂		BODY:HUMANOID_4ARMS BP
+second right hand	第二右手	第二右手		BODY:HUMANOID_4ARMS BP
+second left hand	第二左手	第二左手		BODY:HUMANOID_4ARMS BP
+third right upper arm	第三右上臂	第三右上臂		BODY:HUMANOID_6ARMS BP
+third left upper arm	第三左上臂	第三左上臂		BODY:HUMANOID_6ARMS BP
+third right lower arm	第三右前臂	第三右前臂		BODY:HUMANOID_6ARMS BP
+third left lower arm	第三左前臂	第三左前臂		BODY:HUMANOID_6ARMS BP
+third right hand	第三右手	第三右手		BODY:HUMANOID_6ARMS BP
+third left hand	第三左手	第三左手		BODY:HUMANOID_6ARMS BP
+right head	右頭	右头		BODY:HUMANOID_2HEAD BP
+left head	左頭	左头		BODY:HUMANOID_2HEAD BP
+right neck	右頸	右颈		BODY:HUMANOID_NECK_2HEAD BP
+left neck	左頸	左颈		BODY:HUMANOID_NECK_2HEAD BP
+right arm	右臂	右臂		BODY:HUMANOID_SIMPLE BP
+left arm	左臂	左臂		BODY:HUMANOID_SIMPLE BP
+right leg	右腿	右腿		BODY:HUMANOID_SIMPLE BP
+left leg	左腿	左腿		BODY:HUMANOID_SIMPLE BP
+right front hoof	右前蹄	右前蹄		BODY:QUADRUPED_NECK_HOOF BP
+right front hooves	右前蹄	右前蹄		BODY:QUADRUPED_NECK_HOOF BP
+left front hoof	左前蹄	左前蹄		BODY:QUADRUPED_NECK_HOOF BP
+left front hooves	左前蹄	左前蹄		BODY:QUADRUPED_NECK_HOOF BP
+right rear hoof	右後蹄	右后蹄		BODY:QUADRUPED_NECK_HOOF BP
+right rear hooves	右後蹄	右后蹄		BODY:QUADRUPED_NECK_HOOF BP
+left rear hoof	左後蹄	左后蹄		BODY:QUADRUPED_NECK_HOOF BP
+left rear hooves	左後蹄	左后蹄		BODY:QUADRUPED_NECK_HOOF BP
+thorax	胸部	胸部		BODY:INSECT BP
+thoraxes	胸部	胸部		BODY:INSECT BP
+abdomen	腹部	腹部		BODY:INSECT BP
+right first leg	右第一腿	右第一腿		BODY:INSECT BP
+left first leg	左第一腿	左第一腿		BODY:INSECT BP
+right first foot	右第一腳	右第一脚		BODY:INSECT BP
+right first feet	右第一腳	右第一脚		BODY:INSECT BP
+left first foot	左第一腳	左第一脚		BODY:INSECT BP
+left first feet	左第一腳	左第一脚		BODY:INSECT BP
+right second leg	右第二腿	右第二腿		BODY:INSECT BP
+left second leg	左第二腿	左第二腿		BODY:INSECT BP
+right second foot	右第二腳	右第二脚		BODY:INSECT BP
+right second feet	右第二腳	右第二脚		BODY:INSECT BP
+left second foot	左第二腳	左第二脚		BODY:INSECT BP
+left second feet	左第二腳	左第二脚		BODY:INSECT BP
+right third leg	右第三腿	右第三腿		BODY:INSECT BP
+left third leg	左第三腿	左第三腿		BODY:INSECT BP
+right third foot	右第三腳	右第三脚		BODY:INSECT BP
+right third feet	右第三腳	右第三脚		BODY:INSECT BP
+left third foot	左第三腳	左第三脚		BODY:INSECT BP
+left third feet	左第三腳	左第三脚		BODY:INSECT BP
+right upper foreleg	右上前肢	右上前肢		BODY:INSECT_4LEGS_2ARMS BP
+left upper foreleg	左上前肢	左上前肢		BODY:INSECT_4LEGS_2ARMS BP
+right lower foreleg	右下前肢	右下前肢		BODY:INSECT_4LEGS_2ARMS BP
+left lower foreleg	左下前肢	左下前肢		BODY:INSECT_4LEGS_2ARMS BP
+right forefoot	右前足	右前足		BODY:INSECT_4LEGS_2ARMS BP
+right forefeet	右前足	右前足		BODY:INSECT_4LEGS_2ARMS BP
+left forefoot	左前足	左前足		BODY:INSECT_4LEGS_2ARMS BP
+left forefeet	左前足	左前足		BODY:INSECT_4LEGS_2ARMS BP
+cephalothorax	頭胸部	头胸部		BODY:SPIDER BP
+cephalothoraxes	頭胸部	头胸部		BODY:SPIDER BP
+right fourth leg	右第四腿	右第四腿		BODY:SPIDER BP
+left fourth leg	左第四腿	左第四腿		BODY:SPIDER BP
+right fourth foot	右第四腳	右第四脚		BODY:SPIDER BP
+right fourth feet	右第四腳	右第四脚		BODY:SPIDER BP
+left fourth foot	左第四腳	左第四脚		BODY:SPIDER BP
+left fourth feet	左第四腳	左第四脚		BODY:SPIDER BP
+right tentacle	右觸手	右触手		BODY:TWO_NO_CLAW_TENTACLES BP
+left tentacle	左觸手	左触手		BODY:TWO_NO_CLAW_TENTACLES BP
+mouth	嘴巴	嘴巴		BODY:TENTACLE_MOUTH BP
+tooth	牙齒	牙齿		BODY:TENTACLE_TEETH BP
+teeth	牙齒	牙齿		BODY:TENTACLE_TEETH BP
+first arm	第一腕	第一腕		BODY:8_SIMPLE_HEAD_ARMS BP；章魚的腕
+second arm	第二腕	第二腕		BODY:8_SIMPLE_HEAD_ARMS BP
+third arm	第三腕	第三腕		BODY:8_SIMPLE_HEAD_ARMS BP
+fourth arm	第四腕	第四腕		BODY:8_SIMPLE_HEAD_ARMS BP
+fifth arm	第五腕	第五腕		BODY:8_SIMPLE_HEAD_ARMS BP
+sixth arm	第六腕	第六腕		BODY:8_SIMPLE_HEAD_ARMS BP
+seventh arm	第七腕	第七腕		BODY:8_SIMPLE_HEAD_ARMS BP
+eighth arm	第八腕	第八腕		BODY:8_SIMPLE_HEAD_ARMS BP
+right tentacle club	右觸腕穗	右触腕穗		BODY:2_HEAD_CLUBBED_TENTACLES BP；觸腕穗：烏賊觸腕末端的棒狀部分
+left tentacle club	左觸腕穗	左触腕穗		BODY:2_HEAD_CLUBBED_TENTACLES BP；觸腕穗：烏賊觸腕末端的棒狀部分
+right upper tentacle	右上觸手	右上触手		BODY:FOUR_TENTACLES BP
+left upper tentacle	左上觸手	左上触手		BODY:FOUR_TENTACLES BP
+right upper claw	右上爪	右上爪		BODY:FOUR_TENTACLES BP
+left upper claw	左上爪	左上爪		BODY:FOUR_TENTACLES BP
+right lower tentacle	右下觸手	右下触手		BODY:FOUR_TENTACLES BP
+left lower tentacle	左下觸手	左下触手		BODY:FOUR_TENTACLES BP
+right lower claw	右下爪	右下爪		BODY:FOUR_TENTACLES BP
+left lower claw	左下爪	左下爪		BODY:FOUR_TENTACLES BP
+right middle tentacle	右中觸手	右中触手		BODY:SIX_TENTACLES BP
+left middle tentacle	左中觸手	左中触手		BODY:SIX_TENTACLES BP
+right middle claw	右中爪	右中爪		BODY:SIX_TENTACLES BP
+left middle claw	左中爪	左中爪		BODY:SIX_TENTACLES BP
+front	前部	前部		BODY:WAGON BP
+back	後部	后部		BODY:WAGON BP
+right front wheel	右前輪	右前轮		BODY:WAGON BP
+left front wheel	左前輪	左前轮		BODY:WAGON BP
+right rear wheel	右後輪	右后轮		BODY:WAGON BP
+left rear wheel	左後輪	左后轮		BODY:WAGON BP
+tail	尾巴	尾巴		BODY:TAIL BP
+shell	外殼	外壳		BODY:SHELL BP
+upper carapace	上甲殼	上甲壳		BODY:2PART_CARAPACE BP
+lower carapace	下甲殼	下甲壳		BODY:2PART_CARAPACE BP
+stinger	螫針	螫针		BODY:TAIL_STINGER BP
+right pincer	右螯	右螯		BODY:UPPERBODY_PINCERS BP
+left pincer	左螯	左螯		BODY:UPPERBODY_PINCERS BP
+right frontal appendage	右前附肢	右前附肢		BODY:2_FRONTAL_PINCER_APPENDAGES BP
+left frontal appendage	左前附肢	左前附肢		BODY:2_FRONTAL_PINCER_APPENDAGES BP
+right eye	右眼	右眼		BODY:2EYES BP
+left eye	左眼	左眼		BODY:2EYES BP
+center eye	中眼	中眼		BODY:3EYES BP
+first eye	第一隻眼	第一只眼		BODY:4EYES BP
+second eye	第二隻眼	第二只眼		BODY:4EYES BP
+third eye	第三隻眼	第三只眼		BODY:4EYES BP
+fourth eye	第四隻眼	第四只眼		BODY:4EYES BP
+fifth eye	第五隻眼	第五只眼		BODY:5EYES BP
+right eyestalk	右眼柄	右眼柄		BODY:2EYESTALKS BP
+left eyestalk	左眼柄	左眼柄		BODY:2EYESTALKS BP
+right tusk	右獠牙	右獠牙		BODY:2TUSKS BP
+left tusk	左獠牙	左獠牙		BODY:2TUSKS BP
+nose	鼻子	鼻子		BODY:NOSE BP
+snout	口鼻	口鼻		BODY:SNOUT_NOSMELL BP
+trunk	象鼻	象鼻		BODY:TRUNK BP
+right ear	右耳	右耳		BODY:2EARS BP
+left ear	左耳	左耳		BODY:2EARS BP
+right lung	右肺	右肺		BODY:2LUNGS BP
+left lung	左肺	左肺		BODY:2LUNGS BP
+proboscis	口器	口器		BODY:PROBOSCIS BP
+proboscises	口器	口器		BODY:PROBOSCIS BP
+beak	鳥喙	鸟喙		BODY:BEAK BP
+heart	心臟	心脏		BODY:HEART BP
+guts	腸子	肠子		BODY:GUTS BP
+gizzard	砂囊	砂囊		BODY:GIZZARD BP
+liver	肝臟	肝脏		BODY:ORGANS BP
+stomach	胃	胃		BODY:ORGANS BP
+pancreas	胰臟	胰腺		BODY:ORGANS BP；兩岸差異：胰臟／胰腺
+pancreases	胰臟	胰腺		BODY:ORGANS BP
+spleen	脾臟	脾脏		BODY:ORGANS BP
+right kidney	右腎	右肾		BODY:ORGANS BP
+left kidney	左腎	左肾		BODY:ORGANS BP
+right shoulder	右肩	右肩		BODY:HUMANOID_JOINTS BP
+left shoulder	左肩	左肩		BODY:HUMANOID_JOINTS BP
+right elbow	右手肘	右肘部		BODY:HUMANOID_JOINTS BP
+left elbow	左手肘	左肘部		BODY:HUMANOID_JOINTS BP
+right wrist	右手腕	右手腕		BODY:HUMANOID_JOINTS BP
+left wrist	左手腕	左手腕		BODY:HUMANOID_JOINTS BP
+right hip	右髖部	右髋部		BODY:HUMANOID_JOINTS BP
+left hip	左髖部	左髋部		BODY:HUMANOID_JOINTS BP
+right knee	右膝	右膝		BODY:HUMANOID_JOINTS BP
+left knee	左膝	左膝		BODY:HUMANOID_JOINTS BP
+right ankle	右腳踝	右脚踝		BODY:HUMANOID_JOINTS BP
+left ankle	左腳踝	左脚踝		BODY:HUMANOID_JOINTS BP
+throat	喉嚨	喉咙		BODY:THROAT BP
+upper spine	上脊椎	上脊椎		BODY:NECK BP
+middle spine	中脊椎	中脊椎		BODY:SPINE BP
+lower spine	下脊椎	下脊椎		BODY:SPINE BP
+brain	大腦	大脑		BODY:BRAIN BP
+skull	頭骨	头骨		BODY:SKULL BP
+casque	盔突	盔突		BODY:CASQUE BP
+crest	頭冠	头冠		BODY:CREST BP
+horn	角	角		BODY:HEAD_HORN BP
+right horn	右角	右角		BODY:2HEAD_HORN BP
+left horn	左角	左角		BODY:2HEAD_HORN BP
+first horn	第一隻角	第一只角		BODY:2HEAD_HORN_NUMBERED BP
+second horn	第二隻角	第二只角		BODY:2HEAD_HORN_NUMBERED BP
+front horn	前角	前角		BODY:3HEAD_HORNS_FRL BP
+right upper horn	右上犄角	右上犄角		BODY:4HEAD_HORNS_RLUL BP；用「犄角」避免「右上角」讀成角落
+left upper horn	左上犄角	左上犄角		BODY:4HEAD_HORNS_RLUL BP；用「犄角」避免「右上角」讀成角落
+right lower horn	右下犄角	右下犄角		BODY:4HEAD_HORNS_RLUL BP；用「犄角」避免「右上角」讀成角落
+left lower horn	左下犄角	左下犄角		BODY:4HEAD_HORNS_RLUL BP；用「犄角」避免「右上角」讀成角落
+right antler	右鹿角	右鹿角		BODY:2HEAD_ANTLER BP
+left antler	左鹿角	左鹿角		BODY:2HEAD_ANTLER BP
+eye	眼睛	眼睛		BODY:1EYE BP
+eyelid	眼瞼	眼睑		BODY:BODY_EYELID BP
+thumb	拇指	拇指		BODY:5FINGERS BP
+first finger	第一手指	第一手指		BODY:5FINGERS BP；人類手指為拇指後的第一指，隨機生物則無拇指，故照字面
+second finger	第二手指	第二手指		BODY:5FINGERS BP
+third finger	第三手指	第三手指		BODY:5FINGERS BP
+fourth finger	第四手指	第四手指		BODY:5FINGERS BP
+finger	手指	手指		BODY:1FINGER BP
+first toe	第一腳趾	第一脚趾		BODY:5TOES BP
+second toe	第二腳趾	第二脚趾		BODY:5TOES BP
+third toe	第三腳趾	第三脚趾		BODY:5TOES BP
+fourth toe	第四腳趾	第四脚趾		BODY:5TOES BP
+fifth toe	第五腳趾	第五脚趾		BODY:5TOES BP
+first right front toe	右前腳第一趾	右前脚第一趾		BODY:5TOES_FQ_REG BP
+second right front toe	右前腳第二趾	右前脚第二趾		BODY:5TOES_FQ_REG BP
+third right front toe	右前腳第三趾	右前脚第三趾		BODY:5TOES_FQ_REG BP
+fourth right front toe	右前腳第四趾	右前脚第四趾		BODY:5TOES_FQ_REG BP
+fifth right front toe	右前腳第五趾	右前脚第五趾		BODY:5TOES_FQ_REG BP
+first left front toe	左前腳第一趾	左前脚第一趾		BODY:5TOES_FQ_REG BP
+second left front toe	左前腳第二趾	左前脚第二趾		BODY:5TOES_FQ_REG BP
+third left front toe	左前腳第三趾	左前脚第三趾		BODY:5TOES_FQ_REG BP
+fourth left front toe	左前腳第四趾	左前脚第四趾		BODY:5TOES_FQ_REG BP
+fifth left front toe	左前腳第五趾	左前脚第五趾		BODY:5TOES_FQ_REG BP
+first right rear toe	右後腳第一趾	右后脚第一趾		BODY:5TOES_RQ_REG BP
+second right rear toe	右後腳第二趾	右后脚第二趾		BODY:5TOES_RQ_REG BP
+third right rear toe	右後腳第三趾	右后脚第三趾		BODY:5TOES_RQ_REG BP
+fourth right rear toe	右後腳第四趾	右后脚第四趾		BODY:5TOES_RQ_REG BP
+fifth right rear toe	右後腳第五趾	右后脚第五趾		BODY:5TOES_RQ_REG BP
+first left rear toe	左後腳第一趾	左后脚第一趾		BODY:5TOES_RQ_REG BP
+second left rear toe	左後腳第二趾	左后脚第二趾		BODY:5TOES_RQ_REG BP
+third left rear toe	左後腳第三趾	左后脚第三趾		BODY:5TOES_RQ_REG BP
+fourth left rear toe	左後腳第四趾	左后脚第四趾		BODY:5TOES_RQ_REG BP
+fifth left rear toe	左後腳第五趾	左后脚第五趾		BODY:5TOES_RQ_REG BP
+first right toe	右腳第一趾	右脚第一趾		BODY:5TOES_RQ_ANON BP
+second right toe	右腳第二趾	右脚第二趾		BODY:5TOES_RQ_ANON BP
+third right toe	右腳第三趾	右脚第三趾		BODY:5TOES_RQ_ANON BP
+fourth right toe	右腳第四趾	右脚第四趾		BODY:5TOES_RQ_ANON BP
+fifth right toe	右腳第五趾	右脚第五趾		BODY:5TOES_RQ_ANON BP
+first left toe	左腳第一趾	左脚第一趾		BODY:5TOES_RQ_ANON BP
+second left toe	左腳第二趾	左脚第二趾		BODY:5TOES_RQ_ANON BP
+third left toe	左腳第三趾	左脚第三趾		BODY:5TOES_RQ_ANON BP
+fourth left toe	左腳第四趾	左脚第四趾		BODY:5TOES_RQ_ANON BP
+fifth left toe	左腳第五趾	左脚第五趾		BODY:5TOES_RQ_ANON BP
+first right finger	右手第一指	右手第一指		BODY:5TOES_FQ_FINGERS BP
+second right finger	右手第二指	右手第二指		BODY:5TOES_FQ_FINGERS BP
+third right finger	右手第三指	右手第三指		BODY:5TOES_FQ_FINGERS BP
+fourth right finger	右手第四指	右手第四指		BODY:5TOES_FQ_FINGERS BP
+fifth right finger	右手第五指	右手第五指		BODY:5TOES_FQ_FINGERS BP
+first left finger	左手第一指	左手第一指		BODY:5TOES_FQ_FINGERS BP
+second left finger	左手第二指	左手第二指		BODY:5TOES_FQ_FINGERS BP
+third left finger	左手第三指	左手第三指		BODY:5TOES_FQ_FINGERS BP
+fourth left finger	左手第四指	左手第四指		BODY:5TOES_FQ_FINGERS BP
+fifth left finger	左手第五指	左手第五指		BODY:5TOES_FQ_FINGERS BP
+right fin	右鰭	右鳍		BODY:SIDE_FINS BP
+left fin	左鰭	左鳍		BODY:SIDE_FINS BP
+dorsal fin	背鰭	背鳍		BODY:DORSAL_FIN BP
+right flipper	右鰭肢	右鳍肢		BODY:SIDE_FLIPPERS BP
+left flipper	左鰭肢	左鳍肢		BODY:SIDE_FLIPPERS BP
+right front flipper	右前鰭肢	右前鳍肢		BODY:FRONT_BODY_FLIPPERS BP
+left front flipper	左前鰭肢	左前鳍肢		BODY:FRONT_BODY_FLIPPERS BP
+right rear flipper	右後鰭肢	右后鳍肢		BODY:REAR_BODY_FLIPPERS BP
+left rear flipper	左後鰭肢	左后鳍肢		BODY:REAR_BODY_FLIPPERS BP
+right front fin	右前鰭	右前鳍		BODY:FRONT_BODY_FINS BP
+left front fin	左前鰭	左前鳍		BODY:FRONT_BODY_FINS BP
+right rear fin	右後鰭	右后鳍		BODY:REAR_BODY_FINS BP
+left rear fin	左後鰭	左后鳍		BODY:REAR_BODY_FINS BP
+hump	駝峰	驼峰		BODY:1HUMP BP
+front hump	前駝峰	前驼峰		BODY:2HUMPS BP
+rear hump	後駝峰	后驼峰		BODY:2HUMPS BP
+left cheek	左臉頰	左脸颊		BODY:CHEEKS BP
+right cheek	右臉頰	右脸颊		BODY:CHEEKS BP
+left eyelid	左眼瞼	左眼睑		BODY:EYELIDS BP
+right eyelid	右眼瞼	右眼睑		BODY:EYELIDS BP
+tongue	舌頭	舌头		BODY:TONGUE BP
+forked tongue	分岔舌	分叉舌		BODY:FORKED_TONGUE BP
+lower lip	下唇	下唇		BODY:LIPS BP
+upper lip	上唇	上唇		BODY:LIPS BP
+left true rib	左真肋骨	左真肋骨		BODY:RIBCAGE BP
+right true rib	右真肋骨	右真肋骨		BODY:RIBCAGE BP
+left false rib	左假肋骨	左假肋骨		BODY:RIBCAGE BP
+right false rib	右假肋骨	右假肋骨		BODY:RIBCAGE BP
+left floating rib	左浮肋骨	左浮肋骨		BODY:RIBCAGE BP
+right floating rib	右浮肋骨	右浮肋骨		BODY:RIBCAGE BP
+right eye tooth	右犬齒	右犬齿		BODY:GENERIC_TEETH_WITH_LARGE_EYE_TEETH BP
+right eye teeth	右犬齒	右犬齿		BODY:GENERIC_TEETH_WITH_LARGE_EYE_TEETH BP
+left eye tooth	左犬齒	左犬齿		BODY:GENERIC_TEETH_WITH_LARGE_EYE_TEETH BP
+left eye teeth	左犬齒	左犬齿		BODY:GENERIC_TEETH_WITH_LARGE_EYE_TEETH BP
+right fang	右尖牙	右尖牙		BODY:GENERIC_TEETH_WITH_FANGS BP
+right fangs	右尖牙	右尖牙		BODY:GENERIC_TEETH_WITH_FANGS BP
+left fang	左尖牙	左尖牙		BODY:GENERIC_TEETH_WITH_FANGS BP
+left fangs	左尖牙	左尖牙		BODY:GENERIC_TEETH_WITH_FANGS BP
+right upper incisor	右上門齒	右上门齿		BODY:RODENT_TEETH BP
+left upper incisor	左上門齒	左上门齿		BODY:RODENT_TEETH BP
+right lower incisor	右下門齒	右下门齿		BODY:RODENT_TEETH BP
+left lower incisor	左下門齒	左下门齿		BODY:RODENT_TEETH BP
+right tooth	右牙	右牙		BODY:2_TEETH BP
+left tooth	左牙	左牙		BODY:2_TEETH BP
+upper front tooth	上前牙	上前牙		BODY:TEETH BP
+upper front teeth	上前牙	上前牙		BODY:TEETH BP
+first upper right incisor	右上第一門齒	右上第一门齿		BODY:TEETH INDIVIDUAL_NAME
+first upper left incisor	左上第一門齒	左上第一门齿		BODY:TEETH INDIVIDUAL_NAME
+second upper right incisor	右上第二門齒	右上第二门齿		BODY:TEETH INDIVIDUAL_NAME
+second upper left incisor	左上第二門齒	左上第二门齿		BODY:TEETH INDIVIDUAL_NAME
+lower front tooth	下前牙	下前牙		BODY:TEETH BP
+lower front teeth	下前牙	下前牙		BODY:TEETH BP
+first lower right incisor	右下第一門齒	右下第一门齿		BODY:TEETH INDIVIDUAL_NAME
+first lower left incisor	左下第一門齒	左下第一门齿		BODY:TEETH INDIVIDUAL_NAME
+second lower right incisor	右下第二門齒	右下第二门齿		BODY:TEETH INDIVIDUAL_NAME
+second lower left incisor	左下第二門齒	左下第二门齿		BODY:TEETH INDIVIDUAL_NAME
+lower right canine	右下犬齒	右下犬齿		BODY:TEETH INDIVIDUAL_NAME
+lower left canine	左下犬齒	左下犬齿		BODY:TEETH INDIVIDUAL_NAME
+upper right back tooth	右上後牙	右上后牙		BODY:TEETH BP
+upper right back teeth	右上後牙	右上后牙		BODY:TEETH BP
+first upper right premolar	右上第一小臼齒	右上第一前磨牙		BODY:TEETH INDIVIDUAL_NAME；臼齒：台灣小臼齒／大臼齒，大陸前磨牙／磨牙
+second upper right premolar	右上第二小臼齒	右上第二前磨牙		BODY:TEETH INDIVIDUAL_NAME
+first upper right molar	右上第一大臼齒	右上第一磨牙		BODY:TEETH INDIVIDUAL_NAME
+second upper right molar	右上第二大臼齒	右上第二磨牙		BODY:TEETH INDIVIDUAL_NAME
+lower right back tooth	右下後牙	右下后牙		BODY:TEETH BP
+lower right back teeth	右下後牙	右下后牙		BODY:TEETH BP
+first lower right premolar	右下第一小臼齒	右下第一前磨牙		BODY:TEETH INDIVIDUAL_NAME
+second lower right premolar	右下第二小臼齒	右下第二前磨牙		BODY:TEETH INDIVIDUAL_NAME
+first lower right molar	右下第一大臼齒	右下第一磨牙		BODY:TEETH INDIVIDUAL_NAME
+second lower right molar	右下第二大臼齒	右下第二磨牙		BODY:TEETH INDIVIDUAL_NAME
+upper left back tooth	左上後牙	左上后牙		BODY:TEETH BP
+upper left back teeth	左上後牙	左上后牙		BODY:TEETH BP
+first upper left premolar	左上第一小臼齒	左上第一前磨牙		BODY:TEETH INDIVIDUAL_NAME
+second upper left premolar	左上第二小臼齒	左上第二前磨牙		BODY:TEETH INDIVIDUAL_NAME
+first upper left molar	左上第一大臼齒	左上第一磨牙		BODY:TEETH INDIVIDUAL_NAME
+second upper left molar	左上第二大臼齒	左上第二磨牙		BODY:TEETH INDIVIDUAL_NAME
+lower left back tooth	左下後牙	左下后牙		BODY:TEETH BP
+lower left back teeth	左下後牙	左下后牙		BODY:TEETH BP
+first lower left premolar	左下第一小臼齒	左下第一前磨牙		BODY:TEETH INDIVIDUAL_NAME
+second lower left premolar	左下第二小臼齒	左下第二前磨牙		BODY:TEETH INDIVIDUAL_NAME
+first lower left molar	左下第一大臼齒	左下第一磨牙		BODY:TEETH INDIVIDUAL_NAME
+second lower left molar	左下第二大臼齒	左下第二磨牙		BODY:TEETH INDIVIDUAL_NAME
+right mandible	右大顎	右上颚		BODY:LARGE_MANDIBLES BP；昆蟲大顎，大陸稱上颚
+left mandible	左大顎	左上颚		BODY:LARGE_MANDIBLES BP；昆蟲大顎，大陸稱上颚
+bill	扁嘴	扁嘴		BODY:BILL BP；鴨嘴獸等的扁平嘴
+tusk	獠牙	獠牙		BODY:TUSK BP
+right frontal endite	右前內肢	右前内肢		BODY:2_FRONTAL_ENDITES BP
+left frontal endite	左前內肢	左前内肢		BODY:2_FRONTAL_ENDITES BP
+head sclerite	頭部骨片	头部骨片		BODY:HEAD_SCLERITE BP
+tooth whorl	齒旋	齿旋		BODY:TOOTH_WHORL BP
+right antenna	右觸角	右触角		BODY:2_ANTENNAE BP
+left antenna	左觸角	左触角		BODY:2_ANTENNAE BP
+thagomizer	尾刺	尾刺		BODY:TAIL_THAGOMIZER BP
+tail club	尾錘	尾锤		BODY:TAIL_CLUB BP
+sail	背帆	背帆		BODY:SAIL BP
+right shoulder spine	右肩棘	右肩棘		BODY:SHOULDER_SPINES BP
+left shoulder spine	左肩棘	左肩棘		BODY:SHOULDER_SPINES BP
+right claw	右爪	右爪		BODY:RCP_CLAW_ARMS BP
+left claw	左爪	左爪		BODY:RCP_CLAW_ARMS BP
+right fifth leg	右第五腿	右第五腿		BODY:RCP_FIFTH_SIMPLE_LEGS BP
+left fifth leg	左第五腿	左第五腿		BODY:RCP_FIFTH_SIMPLE_LEGS BP
+right fifth foot	右第五腳	右第五脚		BODY:RCP_FIFTH_SIMPLE_LEGS BP
+right fifth feet	右第五腳	右第五脚		BODY:RCP_FIFTH_SIMPLE_LEGS BP
+left fifth foot	左第五腳	左第五脚		BODY:RCP_FIFTH_SIMPLE_LEGS BP
+left fifth feet	左第五腳	左第五脚		BODY:RCP_FIFTH_SIMPLE_LEGS BP
+left tail	左尾	左尾		BODY:RCP_2_TAILS BP
+right tail	右尾	右尾		BODY:RCP_2_TAILS BP
+center tail	中尾	中尾		BODY:RCP_3_TAILS BP
+third horn	第三隻角	第三只角		BODY:RCP_3_HEAD_HORNS BP
+fourth horn	第四隻角	第四只角		BODY:RCP_4_HEAD_HORNS BP
+fifth finger	第五手指	第五手指		BODY:RCP_5_FRONT_FINGERS BP
+center eyelid	中眼瞼	中眼睑		BODY:RCP_3_EYELIDS BP
+skin	皮膚	皮肤		TISSUE_TEMPLATE:SKIN_TEMPLATE TISSUE_NAME
+fat	脂肪	脂肪		TISSUE_TEMPLATE:FAT_TEMPLATE TISSUE_NAME
+muscle	肌肉	肌肉		TISSUE_TEMPLATE:MUSCLE_TEMPLATE TISSUE_NAME
+muscles	肌肉	肌肉		TISSUE_TEMPLATE:MUSCLE_TEMPLATE TISSUE_NAME
+bone	骨頭	骨头		TISSUE_TEMPLATE:BONE_TEMPLATE TISSUE_NAME
+hoof	蹄	蹄		TISSUE_TEMPLATE:HOOF_TEMPLATE TISSUE_NAME
+cartilage	軟骨	软骨		TISSUE_TEMPLATE:CARTILAGE_TEMPLATE TISSUE_NAME
+hair	毛髮	毛发		TISSUE_TEMPLATE:HAIR_TEMPLATE TISSUE_NAME
+cheek whisker	頰鬚	颊须		TISSUE_TEMPLATE:CHEEK_WHISKERS_TEMPLATE TISSUE_NAME
+chin whisker	下顎鬚	下颌须		TISSUE_TEMPLATE:CHIN_WHISKERS_TEMPLATE TISSUE_NAME
+moustache	小鬍子	小胡子		TISSUE_TEMPLATE:MOUSTACHE_TEMPLATE TISSUE_NAME
+sideburns	鬢角	鬓角		TISSUE_TEMPLATE:SIDEBURNS_TEMPLATE TISSUE_NAME
+eyebrow	眉毛	眉毛		TISSUE_TEMPLATE:EYEBROW_TEMPLATE TISSUE_NAME
+eyelash	睫毛	睫毛		TISSUE_TEMPLATE:EYELASH_TEMPLATE TISSUE_NAME
+eyelashes	睫毛	睫毛		TISSUE_TEMPLATE:EYELASH_TEMPLATE TISSUE_NAME
+feather	羽毛	羽毛		TISSUE_TEMPLATE:FEATHER_TEMPLATE TISSUE_NAME
+scale	鱗片	鳞片		TISSUE_TEMPLATE:SCALE_TEMPLATE TISSUE_NAME
+nail	指甲	指甲		TISSUE_TEMPLATE:NAIL_TEMPLATE TISSUE_NAME
+claw	爪子	爪子		TISSUE_TEMPLATE:CLAW_TEMPLATE TISSUE_NAME
+talon	利爪	利爪		TISSUE_TEMPLATE:TALON_TEMPLATE TISSUE_NAME
+ivory	象牙	象牙		TISSUE_TEMPLATE:IVORY_TEMPLATE TISSUE_NAME
+eye tissue	眼組織	眼组织		TISSUE_TEMPLATE:EYE_TEMPLATE TISSUE_NAME
+nervous tissue	神經組織	神经组织		TISSUE_TEMPLATE:NERVE_TEMPLATE TISSUE_NAME
+brain tissue	腦組織	脑组织		TISSUE_TEMPLATE:BRAIN_TEMPLATE TISSUE_NAME
+lung tissue	肺組織	肺组织		TISSUE_TEMPLATE:LUNG_TEMPLATE TISSUE_NAME
+heart tissue	心臟組織	心脏组织		TISSUE_TEMPLATE:HEART_TEMPLATE TISSUE_NAME
+liver tissue	肝臟組織	肝脏组织		TISSUE_TEMPLATE:LIVER_TEMPLATE TISSUE_NAME
+gut	腸道	肠道		TISSUE_TEMPLATE:GUT_TEMPLATE TISSUE_NAME
+stomach tissue	胃組織	胃组织		TISSUE_TEMPLATE:STOMACH_TEMPLATE TISSUE_NAME
+gizzard tissue	砂囊組織	砂囊组织		TISSUE_TEMPLATE:GIZZARD_TEMPLATE TISSUE_NAME
+pancreatic tissue	胰臟組織	胰腺组织		TISSUE_TEMPLATE:PANCREAS_TEMPLATE TISSUE_NAME
+spleen tissue	脾臟組織	脾脏组织		TISSUE_TEMPLATE:SPLEEN_TEMPLATE TISSUE_NAME
+kidney tissue	腎臟組織	肾脏组织		TISSUE_TEMPLATE:KIDNEY_TEMPLATE TISSUE_NAME
+flames	火焰	火焰		TISSUE_TEMPLATE:FLAME_TEMPLATE TISSUE_NAME
+chitin	幾丁質	几丁质		TISSUE_TEMPLATE:CHITIN_TEMPLATE TISSUE_NAME
+spine	脊椎	脊椎		TISSUE_TEMPLATE:SPINE_TEMPLATE TISSUE_NAME
+sponge	海綿	海绵		TISSUE_TEMPLATE:SPONGE_TEMPLATE TISSUE_NAME
+stone	石頭	石头		MATERIAL_TEMPLATE:STONE_TEMPLATE STATE_NAME
+boiling magma	沸騰的熔岩	沸腾的熔岩		MATERIAL_TEMPLATE:STONE_TEMPLATE STATE_NAME
+metal	金屬	金属		MATERIAL_TEMPLATE:METAL_TEMPLATE STATE_NAME
+molten metal	熔融金屬	熔融金属		MATERIAL_TEMPLATE:METAL_TEMPLATE STATE_NAME
+boiling metal	沸騰的金屬	沸腾的金属		MATERIAL_TEMPLATE:METAL_TEMPLATE STATE_NAME
+n/a	無	无		MATERIAL_TEMPLATE:WOOD_TEMPLATE STATE_NAME；木材液態名（不會出現）
+fatty	脂肪	脂肪		MATERIAL_TEMPLATE:FAT_TEMPLATE STATE_ADJ
+grease	油脂	油脂		MATERIAL_TEMPLATE:FAT_TEMPLATE STATE_NAME
+greasy	油脂	油脂		MATERIAL_TEMPLATE:FAT_TEMPLATE STATE_ADJ
+meat	肉	肉		MATERIAL_TEMPLATE:MUSCLE_TEMPLATE MEAT_NAME
+sinew	肌腱	肌腱		MATERIAL_TEMPLATE:SINEW_TEMPLATE STATE_NAME
+bone meal	骨粉	骨粉		MATERIAL_TEMPLATE:BONE_TEMPLATE STATE_NAME
+cartilaginous	軟骨	软骨		MATERIAL_TEMPLATE:CARTILAGE_TEMPLATE STATE_ADJ
+prepared	處理過的	处理过的		MATERIAL_TEMPLATE:EYE_TEMPLATE MEAT_NAME；肉名前綴：prepared 犛牛眼睛
+lung	肺	肺		MATERIAL_TEMPLATE:LUNG_TEMPLATE MEAT_NAME
+chopped	切碎的	切碎的		MATERIAL_TEMPLATE:LIVER_TEMPLATE MEAT_NAME；肉名前綴：chopped 犛牛肝臟
+intestines	腸子	肠子		MATERIAL_TEMPLATE:GUT_TEMPLATE MEAT_NAME
+tripe	肚	肚		MATERIAL_TEMPLATE:STOMACH_TEMPLATE MEAT_NAME；胃製成的肉，接生物名：犛牛肚
+sweetbread	胸腺	胸腺		MATERIAL_TEMPLATE:PANCREAS_TEMPLATE MEAT_NAME
+kidney	腎	肾		MATERIAL_TEMPLATE:KIDNEY_TEMPLATE MEAT_NAME
+parchment	羊皮紙	羊皮纸		MATERIAL_TEMPLATE:PARCHMENT_TEMPLATE STATE_NAME；接生物名時為「犛牛羊皮紙」，沿用通行譯名
+silk	絲	丝		MATERIAL_TEMPLATE:SILK_TEMPLATE STATE_NAME
+frozen blood	冰凍的血液	冰冻的血液		MATERIAL_TEMPLATE:BLOOD_TEMPLATE STATE_NAME
+boiling blood	沸騰的血液	沸腾的血液		MATERIAL_TEMPLATE:BLOOD_TEMPLATE STATE_NAME
+frozen ichor	冰凍的體液	冰冻的体液		MATERIAL_TEMPLATE:ICHOR_TEMPLATE STATE_NAME
+ichor	體液	体液		MATERIAL_TEMPLATE:ICHOR_TEMPLATE STATE_NAME；昆蟲等生物的血液，參考譯名
+boiling ichor	沸騰的體液	沸腾的体液		MATERIAL_TEMPLATE:ICHOR_TEMPLATE STATE_NAME
+frozen goo	冰凍的稠液	冰冻的稠液		MATERIAL_TEMPLATE:GOO_TEMPLATE STATE_NAME
+goo	稠液	稠液		MATERIAL_TEMPLATE:GOO_TEMPLATE STATE_NAME；某些生物的血液
+boiling goo	沸騰的稠液	沸腾的稠液		MATERIAL_TEMPLATE:GOO_TEMPLATE STATE_NAME
+frozen slime	冰凍的黏液	冰冻的黏液		MATERIAL_TEMPLATE:SLIME_TEMPLATE STATE_NAME
+boiling slime	沸騰的黏液	沸腾的黏液		MATERIAL_TEMPLATE:SLIME_TEMPLATE STATE_NAME
+frozen pus	冰凍的膿液	冰冻的脓液		MATERIAL_TEMPLATE:PUS_TEMPLATE STATE_NAME
+pus	膿液	脓液		MATERIAL_TEMPLATE:PUS_TEMPLATE STATE_NAME
+boiling pus	沸騰的膿液	沸腾的脓液		MATERIAL_TEMPLATE:PUS_TEMPLATE STATE_NAME
+soap	肥皂	肥皂		MATERIAL_TEMPLATE:SOAP_TEMPLATE STATE_NAME
+melted soap	融化的肥皂	融化的肥皂		MATERIAL_TEMPLATE:SOAP_TEMPLATE STATE_NAME
+tallow	獸脂	兽脂		MATERIAL_TEMPLATE；譯「獸脂」：煉過的動物脂肪，跟生的 fat「脂肪」分開，也跟提示框「把脂肪熬成獸脂」、反應「用獸脂製作肥皂」一致；:TALLOW_TEMPLATE STATE_NAME
+melted tallow	融化的獸脂	融化的兽脂		MATERIAL_TEMPLATE:TALLOW_TEMPLATE STATE_NAME
+frozen milk	冰凍的奶	冰冻的奶		MATERIAL_TEMPLATE:MILK_TEMPLATE STATE_NAME
+frozen milky	冰凍的奶	冰冻的奶		MATERIAL_TEMPLATE:MILK_TEMPLATE STATE_ADJ
+milk	奶	奶		MATERIAL_TEMPLATE:MILK_TEMPLATE STATE_NAME
+milky	奶	奶		MATERIAL_TEMPLATE:MILK_TEMPLATE STATE_ADJ
+cheese	起司	奶酪		MATERIAL_TEMPLATE:CREATURE_CHEESE_TEMPLATE STATE_NAME
+cheesy	起司	奶酪		MATERIAL_TEMPLATE:CREATURE_CHEESE_TEMPLATE STATE_ADJ
+melted cheese	融化的起司	融化的奶酪		MATERIAL_TEMPLATE:CREATURE_CHEESE_TEMPLATE STATE_NAME
+melted cheesy	融化的起司	融化的奶酪		MATERIAL_TEMPLATE:CREATURE_CHEESE_TEMPLATE STATE_ADJ
+plant	植物	植物		MATERIAL_TEMPLATE:STRUCTURAL_PLANT_TEMPLATE STATE_NAME
+none	無	无		MATERIAL_TEMPLATE:STRUCTURAL_PLANT_TEMPLATE STATE_NAME；植物液態名（不會出現）
+seed	種子	种子		MATERIAL_TEMPLATE:SEED_TEMPLATE STATE_NAME
+leaf	葉子	叶子		MATERIAL_TEMPLATE:LEAF_TEMPLATE STATE_NAME
+fruit	果實	果实		MATERIAL_TEMPLATE:FRUIT_TEMPLATE STATE_NAME
+bud	花苞	花苞		MATERIAL_TEMPLATE:BUD_TEMPLATE STATE_NAME
+mushroom	蘑菇	蘑菇		MATERIAL_TEMPLATE:MUSHROOM_TEMPLATE STATE_NAME
+flower	花	花		MATERIAL_TEMPLATE:FLOWER_TEMPLATE STATE_NAME
+fiber	纖維	纤维		MATERIAL_TEMPLATE:THREAD_PLANT_TEMPLATE STATE_NAME
+frozen alcohol	冰凍的酒	冰冻的酒		MATERIAL_TEMPLATE:PLANT_ALCOHOL_TEMPLATE STATE_NAME
+alcohol	酒	酒		MATERIAL_TEMPLATE:PLANT_ALCOHOL_TEMPLATE STATE_NAME
+boiling alcohol	沸騰的酒	沸腾的酒		MATERIAL_TEMPLATE:PLANT_ALCOHOL_TEMPLATE STATE_NAME
+inebriation	酒醉	醉酒		MATERIAL_TEMPLATE:PLANT_ALCOHOL_TEMPLATE SYN_NAME
+plant powder	植物粉末	植物粉末		MATERIAL_TEMPLATE:PLANT_POWDER_TEMPLATE STATE_NAME
+frozen extract	冰凍的萃取液	冰冻的提取液		MATERIAL_TEMPLATE:PLANT_EXTRACT_TEMPLATE STATE_NAME
+extract	萃取液	提取液		MATERIAL_TEMPLATE:PLANT_EXTRACT_TEMPLATE STATE_NAME；兩岸差異：萃取液／提取液
+boiling extract	沸騰的萃取液	沸腾的提取液		MATERIAL_TEMPLATE:PLANT_EXTRACT_TEMPLATE STATE_NAME
+soil	土壤	土壤		MATERIAL_TEMPLATE:SOIL_TEMPLATE STATE_NAME
+eggshell	蛋殼	蛋壳		MATERIAL_TEMPLATE:EGGSHELL_TEMPLATE STATE_NAME
+eggshell powder	蛋殼粉	蛋壳粉		MATERIAL_TEMPLATE:EGGSHELL_TEMPLATE STATE_NAME
+frozen egg white	冰凍的蛋白	冰冻的蛋清		MATERIAL_TEMPLATE:EGG_WHITE_TEMPLATE STATE_NAME
+egg white	蛋白	蛋清		MATERIAL_TEMPLATE:EGG_WHITE_TEMPLATE STATE_NAME；兩岸差異：蛋白／蛋清
+boiling egg white	沸騰的蛋白	沸腾的蛋清		MATERIAL_TEMPLATE:EGG_WHITE_TEMPLATE STATE_NAME
+frozen egg yolk	冰凍的蛋黃	冰冻的蛋黄		MATERIAL_TEMPLATE:EGG_YOLK_TEMPLATE STATE_NAME
+egg yolk	蛋黃	蛋黄		MATERIAL_TEMPLATE:EGG_YOLK_TEMPLATE STATE_NAME
+boiling egg yolk	沸騰的蛋黃	沸腾的蛋黄		MATERIAL_TEMPLATE:EGG_YOLK_TEMPLATE STATE_NAME
+frozen vegetable oil	冰凍的植物油	冰冻的植物油		MATERIAL_TEMPLATE:PLANT_OIL_TEMPLATE STATE_NAME
+vegetable oil	植物油	植物油		MATERIAL_TEMPLATE:PLANT_OIL_TEMPLATE STATE_NAME
+boiling vegetable oil	沸騰的植物油	沸腾的植物油		MATERIAL_TEMPLATE:PLANT_OIL_TEMPLATE STATE_NAME
+wax	蠟	蜡		MATERIAL_TEMPLATE:WAX_TEMPLATE STATE_NAME
+melted wax	融化的蠟	融化的蜡		MATERIAL_TEMPLATE:WAX_TEMPLATE STATE_NAME
+frozen ink	冰凍的墨汁	冰冻的墨汁		MATERIAL_TEMPLATE:INK_TEMPLATE STATE_NAME
+ink	墨汁	墨汁		MATERIAL_TEMPLATE:INK_TEMPLATE STATE_NAME
+boiling ink	沸騰的墨汁	沸腾的墨汁		MATERIAL_TEMPLATE:INK_TEMPLATE STATE_NAME
+spongy	海綿	海绵		MATERIAL_TEMPLATE:SPONGE_TEMPLATE STATE_ADJ
+frozen tears	冰凍的眼淚	冰冻的眼泪		MATERIAL_TEMPLATE:TEARS_TEMPLATE STATE_NAME
+tears	眼淚	眼泪		MATERIAL_TEMPLATE:TEARS_TEMPLATE STATE_NAME
+boiling tears	沸騰的眼淚	沸腾的眼泪		MATERIAL_TEMPLATE:TEARS_TEMPLATE STATE_NAME
+frozen spit	冰凍的唾液	冰冻的唾液		MATERIAL_TEMPLATE:SPIT_TEMPLATE STATE_NAME
+boiling spit	沸騰的唾液	沸腾的唾液		MATERIAL_TEMPLATE:SPIT_TEMPLATE STATE_NAME
+frozen sweat	冰凍的汗水	冰冻的汗水		MATERIAL_TEMPLATE:SWEAT_TEMPLATE STATE_NAME
+sweat	汗水	汗水		MATERIAL_TEMPLATE:SWEAT_TEMPLATE STATE_NAME
+boiling sweat	沸騰的汗水	沸腾的汗水		MATERIAL_TEMPLATE:SWEAT_TEMPLATE STATE_NAME

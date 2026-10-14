@@ -1,0 +1,477 @@
+en	zh-Hant	zh-Hans	align	note
+blue jay	冠藍鴉	冠蓝鸦		CREATURE:BIRD_BLUEJAY NAME
+blue jays	冠藍鴉	冠蓝鸦		CREATURE:BIRD_BLUEJAY NAME
+blue jay hatchling	幼冠藍鴉	幼冠蓝鸦		CREATURE:BIRD_BLUEJAY GENERAL_CHILD_NAME
+blue jay hatchlings	幼冠藍鴉	幼冠蓝鸦		CREATURE:BIRD_BLUEJAY GENERAL_CHILD_NAME
+feathers	羽毛	羽毛		CREATURE:BIRD_BLUEJAY TLCM_NOUN
+bluejay man	冠藍鴉人	冠蓝鸦人		CREATURE:BLUEJAY_MAN CASTE_NAME
+bluejay men	冠藍鴉人	冠蓝鸦人		CREATURE:BLUEJAY_MAN CASTE_NAME
+bluejay woman	女冠藍鴉人	女冠蓝鸦人		CREATURE:BLUEJAY_MAN CASTE_NAME
+bluejay women	女冠藍鴉人	女冠蓝鸦人		CREATURE:BLUEJAY_MAN CASTE_NAME
+giant bluejay	巨型冠藍鴉	巨型冠蓝鸦		CREATURE:GIANT_BLUEJAY NAME
+giant bluejays	巨型冠藍鴉	巨型冠蓝鸦		CREATURE:GIANT_BLUEJAY NAME
+giant bluejay hatchling	幼巨型冠藍鴉	幼巨型冠蓝鸦		CREATURE:GIANT_BLUEJAY GENERAL_CHILD_NAME
+giant bluejay hatchlings	幼巨型冠藍鴉	幼巨型冠蓝鸦		CREATURE:GIANT_BLUEJAY GENERAL_CHILD_NAME
+cardinal	北美紅雀	北美红雀		CREATURE:BIRD_CARDINAL NAME
+cardinals	北美紅雀	北美红雀		CREATURE:BIRD_CARDINAL NAME
+cardinal hatchling	幼北美紅雀	幼北美红雀		CREATURE:BIRD_CARDINAL GENERAL_CHILD_NAME
+cardinal hatchlings	幼北美紅雀	幼北美红雀		CREATURE:BIRD_CARDINAL GENERAL_CHILD_NAME
+cardinal man	北美紅雀人	北美红雀人		CREATURE:CARDINAL_MAN CASTE_NAME
+cardinal men	北美紅雀人	北美红雀人		CREATURE:CARDINAL_MAN CASTE_NAME
+cardinal woman	女北美紅雀人	女北美红雀人		CREATURE:CARDINAL_MAN CASTE_NAME
+cardinal women	女北美紅雀人	女北美红雀人		CREATURE:CARDINAL_MAN CASTE_NAME
+giant cardinal	巨型北美紅雀	巨型北美红雀		CREATURE:GIANT_CARDINAL NAME
+giant cardinals	巨型北美紅雀	巨型北美红雀		CREATURE:GIANT_CARDINAL NAME
+giant cardinal hatchling	幼巨型北美紅雀	幼巨型北美红雀		CREATURE:GIANT_CARDINAL GENERAL_CHILD_NAME
+giant cardinal hatchlings	幼巨型北美紅雀	幼巨型北美红雀		CREATURE:GIANT_CARDINAL GENERAL_CHILD_NAME
+grackle	擬八哥	拟八哥		CREATURE:BIRD_GRACKLE NAME
+grackles	擬八哥	拟八哥		CREATURE:BIRD_GRACKLE NAME
+grackle hatchling	幼擬八哥	幼拟八哥		CREATURE:BIRD_GRACKLE GENERAL_CHILD_NAME
+grackle hatchlings	幼擬八哥	幼拟八哥		CREATURE:BIRD_GRACKLE GENERAL_CHILD_NAME
+grackle man	擬八哥人	拟八哥人		CREATURE:GRACKLE_MAN CASTE_NAME
+grackle men	擬八哥人	拟八哥人		CREATURE:GRACKLE_MAN CASTE_NAME
+grackle woman	女擬八哥人	女拟八哥人		CREATURE:GRACKLE_MAN CASTE_NAME
+grackle women	女擬八哥人	女拟八哥人		CREATURE:GRACKLE_MAN CASTE_NAME
+giant grackle	巨型擬八哥	巨型拟八哥		CREATURE:GIANT_GRACKLE NAME
+giant grackles	巨型擬八哥	巨型拟八哥		CREATURE:GIANT_GRACKLE NAME
+giant grackle hatchling	幼巨型擬八哥	幼巨型拟八哥		CREATURE:GIANT_GRACKLE GENERAL_CHILD_NAME
+giant grackle hatchlings	幼巨型擬八哥	幼巨型拟八哥		CREATURE:GIANT_GRACKLE GENERAL_CHILD_NAME
+oriole	黃鸝	黄鹂		CREATURE:BIRD_ORIOLE NAME
+orioles	黃鸝	黄鹂		CREATURE:BIRD_ORIOLE NAME
+oriole hatchling	幼黃鸝	幼黄鹂		CREATURE:BIRD_ORIOLE GENERAL_CHILD_NAME
+oriole hatchlings	幼黃鸝	幼黄鹂		CREATURE:BIRD_ORIOLE GENERAL_CHILD_NAME
+oriole man	黃鸝人	黄鹂人		CREATURE:ORIOLE_MAN CASTE_NAME
+oriole men	黃鸝人	黄鹂人		CREATURE:ORIOLE_MAN CASTE_NAME
+oriole woman	女黃鸝人	女黄鹂人		CREATURE:ORIOLE_MAN CASTE_NAME
+oriole women	女黃鸝人	女黄鹂人		CREATURE:ORIOLE_MAN CASTE_NAME
+giant oriole	巨型黃鸝	巨型黄鹂		CREATURE:GIANT_ORIOLE NAME
+giant orioles	巨型黃鸝	巨型黄鹂		CREATURE:GIANT_ORIOLE NAME
+giant oriole hatchling	幼巨型黃鸝	幼巨型黄鹂		CREATURE:GIANT_ORIOLE GENERAL_CHILD_NAME
+giant oriole hatchlings	幼巨型黃鸝	幼巨型黄鹂		CREATURE:GIANT_ORIOLE GENERAL_CHILD_NAME
+red-winged blackbird	紅翅黑鸝	红翅黑鹂		CREATURE:BIRD_RW_BLACKBIRD NAME
+red-winged blackbirds	紅翅黑鸝	红翅黑鹂		CREATURE:BIRD_RW_BLACKBIRD NAME
+red-winged blackbird hatchling	幼紅翅黑鸝	幼红翅黑鹂		CREATURE:BIRD_RW_BLACKBIRD GENERAL_CHILD_NAME
+red-winged blackbird hatchlings	幼紅翅黑鸝	幼红翅黑鹂		CREATURE:BIRD_RW_BLACKBIRD GENERAL_CHILD_NAME
+red-winged blackbird man	紅翅黑鸝人	红翅黑鹂人		CREATURE:RW_BLACKBIRD_MAN CASTE_NAME
+red-winged blackbird men	紅翅黑鸝人	红翅黑鹂人		CREATURE:RW_BLACKBIRD_MAN CASTE_NAME
+red-winged blackbird woman	女紅翅黑鸝人	女红翅黑鹂人		CREATURE:RW_BLACKBIRD_MAN CASTE_NAME
+red-winged blackbird women	女紅翅黑鸝人	女红翅黑鹂人		CREATURE:RW_BLACKBIRD_MAN CASTE_NAME
+giant red-winged blackbird	巨型紅翅黑鸝	巨型红翅黑鹂		CREATURE:GIANT_RW_BLACKBIRD NAME
+giant red-winged blackbirds	巨型紅翅黑鸝	巨型红翅黑鹂		CREATURE:GIANT_RW_BLACKBIRD NAME
+giant red-winged blackbird hatchling	幼巨型紅翅黑鸝	幼巨型红翅黑鹂		CREATURE:GIANT_RW_BLACKBIRD GENERAL_CHILD_NAME
+giant red-winged blackbird hatchlings	幼巨型紅翅黑鸝	幼巨型红翅黑鹂		CREATURE:GIANT_RW_BLACKBIRD GENERAL_CHILD_NAME
+penguin	企鵝	企鹅		CREATURE:BIRD_PENGUIN NAME
+penguins	企鵝	企鹅		CREATURE:BIRD_PENGUIN NAME
+penguin chick	幼企鵝	幼企鹅		CREATURE:BIRD_PENGUIN GENERAL_CHILD_NAME
+penguin chicks	幼企鵝	幼企鹅		CREATURE:BIRD_PENGUIN GENERAL_CHILD_NAME
+belly	腹部	腹部		CREATURE:BIRD_PENGUIN TLCM_NOUN
+little penguin	小藍企鵝	小蓝企鹅		CREATURE:BIRD_PENGUIN_LITTLE NAME
+little penguins	小藍企鵝	小蓝企鹅		CREATURE:BIRD_PENGUIN_LITTLE NAME
+little penguin chick	幼小藍企鵝	幼小蓝企鹅		CREATURE:BIRD_PENGUIN_LITTLE GENERAL_CHILD_NAME
+little penguin chicks	幼小藍企鵝	幼小蓝企鹅		CREATURE:BIRD_PENGUIN_LITTLE GENERAL_CHILD_NAME
+emperor penguin	皇帝企鵝	帝企鹅		CREATURE:BIRD_PENGUIN_EMPEROR NAME；台灣皇帝企鵝；大陸帝企鹅
+emperor penguins	皇帝企鵝	帝企鹅		CREATURE:BIRD_PENGUIN_EMPEROR NAME
+emperor penguin chick	幼皇帝企鵝	幼帝企鹅		CREATURE:BIRD_PENGUIN_EMPEROR GENERAL_CHILD_NAME
+emperor penguin chicks	幼皇帝企鵝	幼帝企鹅		CREATURE:BIRD_PENGUIN_EMPEROR GENERAL_CHILD_NAME
+penguin man	企鵝人	企鹅人		CREATURE:PENGUIN MAN CASTE_NAME
+penguin men	企鵝人	企鹅人		CREATURE:PENGUIN MAN CASTE_NAME
+penguin woman	女企鵝人	女企鹅人		CREATURE:PENGUIN MAN CASTE_NAME
+penguin women	女企鵝人	女企鹅人		CREATURE:PENGUIN MAN CASTE_NAME
+giant penguin	巨型企鵝	巨型企鹅		CREATURE:BIRD_PENGUIN_GIANT NAME
+giant penguins	巨型企鵝	巨型企鹅		CREATURE:BIRD_PENGUIN_GIANT NAME
+giant penguin chick	幼巨型企鵝	幼巨型企鹅		CREATURE:BIRD_PENGUIN_GIANT GENERAL_CHILD_NAME
+giant penguin chicks	幼巨型企鵝	幼巨型企鹅		CREATURE:BIRD_PENGUIN_GIANT GENERAL_CHILD_NAME
+peregrine falcon	遊隼	游隼		CREATURE:BIRD_FALCON_PEREGRINE NAME
+peregrine falcons	遊隼	游隼		CREATURE:BIRD_FALCON_PEREGRINE NAME
+peregrine falcon chick	幼遊隼	幼游隼		CREATURE:BIRD_FALCON_PEREGRINE GENERAL_CHILD_NAME
+peregrine falcon chicks	幼遊隼	幼游隼		CREATURE:BIRD_FALCON_PEREGRINE GENERAL_CHILD_NAME
+tiercel peregrine	公遊隼	公游隼		CREATURE:BIRD_FALCON_PEREGRINE CASTE_NAME；tiercel 是雄隼
+tiercel peregrines	公遊隼	公游隼		CREATURE:BIRD_FALCON_PEREGRINE CASTE_NAME；tiercel 是雄隼
+peregrine falcon man	遊隼人	游隼人		CREATURE:PEREGRINE FALCON MAN CASTE_NAME
+peregrine falcon men	遊隼人	游隼人		CREATURE:PEREGRINE FALCON MAN CASTE_NAME
+peregrine falcon woman	女遊隼人	女游隼人		CREATURE:PEREGRINE FALCON MAN CASTE_NAME
+peregrine falcon women	女遊隼人	女游隼人		CREATURE:PEREGRINE FALCON MAN CASTE_NAME
+giant peregrine falcon	巨型遊隼	巨型游隼		CREATURE:GIANT PEREGRINE FALCON NAME
+giant peregrine falcons	巨型遊隼	巨型游隼		CREATURE:GIANT PEREGRINE FALCON NAME
+giant peregrine falcon chick	幼巨型遊隼	幼巨型游隼		CREATURE:GIANT PEREGRINE FALCON GENERAL_CHILD_NAME
+giant peregrine falcon chicks	幼巨型遊隼	幼巨型游隼		CREATURE:GIANT PEREGRINE FALCON GENERAL_CHILD_NAME
+giant tiercel peregrine	公巨型遊隼	公巨型游隼		CREATURE:GIANT PEREGRINE FALCON CASTE_NAME
+giant tiercel peregrines	公巨型遊隼	公巨型游隼		CREATURE:GIANT PEREGRINE FALCON CASTE_NAME
+kiwi	奇異鳥	几维鸟		CREATURE:BIRD_KIWI NAME；通行名奇異鳥／几维鸟（正式名鷸鴕／鹬鸵）
+kiwis	奇異鳥	几维鸟		CREATURE:BIRD_KIWI NAME
+kiwi chick	幼奇異鳥	幼几维鸟		CREATURE:BIRD_KIWI GENERAL_CHILD_NAME
+kiwi chicks	幼奇異鳥	幼几维鸟		CREATURE:BIRD_KIWI GENERAL_CHILD_NAME
+kiwi hen	母奇異鳥	母几维鸟		CREATURE:BIRD_KIWI CASTE_NAME
+kiwi hens	母奇異鳥	母几维鸟		CREATURE:BIRD_KIWI CASTE_NAME
+kiwi cock	公奇異鳥	公几维鸟		CREATURE:BIRD_KIWI CASTE_NAME
+kiwi cocks	公奇異鳥	公几维鸟		CREATURE:BIRD_KIWI CASTE_NAME
+kiwi man	奇異鳥人	几维鸟人		CREATURE:KIWI MAN CASTE_NAME
+kiwi men	奇異鳥人	几维鸟人		CREATURE:KIWI MAN CASTE_NAME
+kiwi woman	女奇異鳥人	女几维鸟人		CREATURE:KIWI MAN CASTE_NAME
+kiwi women	女奇異鳥人	女几维鸟人		CREATURE:KIWI MAN CASTE_NAME
+giant kiwi	巨型奇異鳥	巨型几维鸟		CREATURE:BIRD_KIWI_GIANT NAME
+giant kiwis	巨型奇異鳥	巨型几维鸟		CREATURE:BIRD_KIWI_GIANT NAME
+giant kiwi chick	幼巨型奇異鳥	幼巨型几维鸟		CREATURE:BIRD_KIWI_GIANT GENERAL_CHILD_NAME
+giant kiwi chicks	幼巨型奇異鳥	幼巨型几维鸟		CREATURE:BIRD_KIWI_GIANT GENERAL_CHILD_NAME
+giant kiwi cock	公巨型奇異鳥	公巨型几维鸟		CREATURE:BIRD_KIWI_GIANT CASTE_NAME
+giant kiwi cocks	公巨型奇異鳥	公巨型几维鸟		CREATURE:BIRD_KIWI_GIANT CASTE_NAME
+giant kiwi hen	母巨型奇異鳥	母巨型几维鸟		CREATURE:BIRD_KIWI_GIANT CASTE_NAME
+giant kiwi hens	母巨型奇異鳥	母巨型几维鸟		CREATURE:BIRD_KIWI_GIANT CASTE_NAME
+ostrich	鴕鳥	鸵鸟		CREATURE:BIRD_OSTRICH NAME
+ostriches	鴕鳥	鸵鸟		CREATURE:BIRD_OSTRICH NAME
+ostrich chick	幼鴕鳥	幼鸵鸟		CREATURE:BIRD_OSTRICH GENERAL_CHILD_NAME
+ostrich chicks	幼鴕鳥	幼鸵鸟		CREATURE:BIRD_OSTRICH GENERAL_CHILD_NAME
+ostrich hen	母鴕鳥	母鸵鸟		CREATURE:BIRD_OSTRICH CASTE_NAME
+ostrich hens	母鴕鳥	母鸵鸟		CREATURE:BIRD_OSTRICH CASTE_NAME
+ostrich cock	公鴕鳥	公鸵鸟		CREATURE:BIRD_OSTRICH CASTE_NAME
+ostrich cocks	公鴕鳥	公鸵鸟		CREATURE:BIRD_OSTRICH CASTE_NAME
+tail feathers	尾羽	尾羽		CREATURE:BIRD_OSTRICH TLCM_NOUN
+head and neck down	頭頸絨羽	头颈绒羽		CREATURE:BIRD_OSTRICH TLCM_NOUN；down 是絨羽
+ostrich man	鴕鳥人	鸵鸟人		CREATURE:OSTRICH MAN CASTE_NAME
+ostrich men	鴕鳥人	鸵鸟人		CREATURE:OSTRICH MAN CASTE_NAME
+ostrich woman	女鴕鳥人	女鸵鸟人		CREATURE:OSTRICH MAN CASTE_NAME
+ostrich women	女鴕鳥人	女鸵鸟人		CREATURE:OSTRICH MAN CASTE_NAME
+giant ostrich	巨型鴕鳥	巨型鸵鸟		CREATURE:BIRD_OSTRICH_GIANT NAME
+giant ostriches	巨型鴕鳥	巨型鸵鸟		CREATURE:BIRD_OSTRICH_GIANT NAME
+giant ostrich chick	幼巨型鴕鳥	幼巨型鸵鸟		CREATURE:BIRD_OSTRICH_GIANT GENERAL_CHILD_NAME
+giant ostrich chicks	幼巨型鴕鳥	幼巨型鸵鸟		CREATURE:BIRD_OSTRICH_GIANT GENERAL_CHILD_NAME
+giant ostrich cock	公巨型鴕鳥	公巨型鸵鸟		CREATURE:BIRD_OSTRICH_GIANT CASTE_NAME
+giant ostrich cocks	公巨型鴕鳥	公巨型鸵鸟		CREATURE:BIRD_OSTRICH_GIANT CASTE_NAME
+giant ostrich hen	母巨型鴕鳥	母巨型鸵鸟		CREATURE:BIRD_OSTRICH_GIANT CASTE_NAME
+giant ostrich hens	母巨型鴕鳥	母巨型鸵鸟		CREATURE:BIRD_OSTRICH_GIANT CASTE_NAME
+crow	烏鴉	乌鸦		CREATURE:BIRD_CROW NAME
+crows	烏鴉	乌鸦		CREATURE:BIRD_CROW NAME
+crow hatchling	幼烏鴉	幼乌鸦		CREATURE:BIRD_CROW GENERAL_CHILD_NAME
+crow hatchlings	幼烏鴉	幼乌鸦		CREATURE:BIRD_CROW GENERAL_CHILD_NAME
+crow man	烏鴉人	乌鸦人		CREATURE:CROW_MAN CASTE_NAME
+crow men	烏鴉人	乌鸦人		CREATURE:CROW_MAN CASTE_NAME
+crow woman	女烏鴉人	女乌鸦人		CREATURE:CROW_MAN CASTE_NAME
+crow women	女烏鴉人	女乌鸦人		CREATURE:CROW_MAN CASTE_NAME
+giant crow	巨型烏鴉	巨型乌鸦		CREATURE:GIANT_CROW NAME
+giant crows	巨型烏鴉	巨型乌鸦		CREATURE:GIANT_CROW NAME
+giant crow hatchling	幼巨型烏鴉	幼巨型乌鸦		CREATURE:GIANT_CROW GENERAL_CHILD_NAME
+giant crow hatchlings	幼巨型烏鴉	幼巨型乌鸦		CREATURE:GIANT_CROW GENERAL_CHILD_NAME
+raven	渡鴉	渡鸦		CREATURE:BIRD_RAVEN NAME
+ravens	渡鴉	渡鸦		CREATURE:BIRD_RAVEN NAME
+raven hatchling	幼渡鴉	幼渡鸦		CREATURE:BIRD_RAVEN GENERAL_CHILD_NAME
+raven hatchlings	幼渡鴉	幼渡鸦		CREATURE:BIRD_RAVEN GENERAL_CHILD_NAME
+raven man	渡鴉人	渡鸦人		CREATURE:RAVEN_MAN CASTE_NAME
+raven men	渡鴉人	渡鸦人		CREATURE:RAVEN_MAN CASTE_NAME
+raven woman	女渡鴉人	女渡鸦人		CREATURE:RAVEN_MAN CASTE_NAME
+raven women	女渡鴉人	女渡鸦人		CREATURE:RAVEN_MAN CASTE_NAME
+giant raven	巨型渡鴉	巨型渡鸦		CREATURE:GIANT_RAVEN NAME
+giant ravens	巨型渡鴉	巨型渡鸦		CREATURE:GIANT_RAVEN NAME
+giant raven hatchling	幼巨型渡鴉	幼巨型渡鸦		CREATURE:GIANT_RAVEN GENERAL_CHILD_NAME
+giant raven hatchlings	幼巨型渡鴉	幼巨型渡鸦		CREATURE:GIANT_RAVEN GENERAL_CHILD_NAME
+cassowary	食火雞	鹤鸵		CREATURE:BIRD_CASSOWARY NAME；台灣通稱食火雞；大陸正式名鹤鸵
+cassowaries	食火雞	鹤鸵		CREATURE:BIRD_CASSOWARY NAME
+cassowary chick	幼食火雞	幼鹤鸵		CREATURE:BIRD_CASSOWARY GENERAL_CHILD_NAME
+cassowary chicks	幼食火雞	幼鹤鸵		CREATURE:BIRD_CASSOWARY GENERAL_CHILD_NAME
+cassowary man	食火雞人	鹤鸵人		CREATURE:CASSOWARY_MAN CASTE_NAME
+cassowary men	食火雞人	鹤鸵人		CREATURE:CASSOWARY_MAN CASTE_NAME
+cassowary woman	女食火雞人	女鹤鸵人		CREATURE:CASSOWARY_MAN CASTE_NAME
+cassowary women	女食火雞人	女鹤鸵人		CREATURE:CASSOWARY_MAN CASTE_NAME
+giant cassowary	巨型食火雞	巨型鹤鸵		CREATURE:GIANT_CASSOWARY NAME
+giant cassowaries	巨型食火雞	巨型鹤鸵		CREATURE:GIANT_CASSOWARY NAME
+giant cassowary chick	幼巨型食火雞	幼巨型鹤鸵		CREATURE:GIANT_CASSOWARY GENERAL_CHILD_NAME
+giant cassowary chicks	幼巨型食火雞	幼巨型鹤鸵		CREATURE:GIANT_CASSOWARY GENERAL_CHILD_NAME
+kea	啄羊	啄羊		CREATURE:BIRD_KEA NAME；啄羊鸚鵡；giant kea、kea woman 只有 9 格，基本名只能兩字，取「啄羊」
+kea chick	幼啄羊	幼啄羊		CREATURE:BIRD_KEA GENERAL_CHILD_NAME
+kea chicks	幼啄羊	幼啄羊		CREATURE:BIRD_KEA GENERAL_CHILD_NAME
+kea man	啄羊人	啄羊人		CREATURE:KEA_MAN CASTE_NAME
+kea men	啄羊人	啄羊人		CREATURE:KEA_MAN CASTE_NAME
+kea woman	女啄羊人	女啄羊人		CREATURE:KEA_MAN CASTE_NAME
+kea women	女啄羊人	女啄羊人		CREATURE:KEA_MAN CASTE_NAME
+giant kea	巨型啄羊	巨型啄羊		CREATURE:GIANT_KEA NAME
+giant kea chick	幼巨型啄羊	幼巨型啄羊		CREATURE:GIANT_KEA GENERAL_CHILD_NAME
+giant kea chicks	幼巨型啄羊	幼巨型啄羊		CREATURE:GIANT_KEA GENERAL_CHILD_NAME
+snowy owl	雪鴞	雪鸮		CREATURE:BIRD_OWL_SNOWY NAME
+snowy owls	雪鴞	雪鸮		CREATURE:BIRD_OWL_SNOWY NAME
+snowy owl chick	幼雪鴞	幼雪鸮		CREATURE:BIRD_OWL_SNOWY GENERAL_CHILD_NAME
+snowy owl chicks	幼雪鴞	幼雪鸮		CREATURE:BIRD_OWL_SNOWY GENERAL_CHILD_NAME
+snowy owl man	雪鴞人	雪鸮人		CREATURE:SNOWY_OWL_MAN CASTE_NAME
+snowy owl men	雪鴞人	雪鸮人		CREATURE:SNOWY_OWL_MAN CASTE_NAME
+snowy owl woman	女雪鴞人	女雪鸮人		CREATURE:SNOWY_OWL_MAN CASTE_NAME
+snowy owl women	女雪鴞人	女雪鸮人		CREATURE:SNOWY_OWL_MAN CASTE_NAME
+giant snowy owl	巨型雪鴞	巨型雪鸮		CREATURE:GIANT_SNOWY_OWL NAME
+giant snowy owls	巨型雪鴞	巨型雪鸮		CREATURE:GIANT_SNOWY_OWL NAME
+giant snowy owl chick	幼巨型雪鴞	幼巨型雪鸮		CREATURE:GIANT_SNOWY_OWL GENERAL_CHILD_NAME
+giant snowy owl chicks	幼巨型雪鴞	幼巨型雪鸮		CREATURE:GIANT_SNOWY_OWL GENERAL_CHILD_NAME
+sparrow	麻雀	麻雀		CREATURE:SPARROW NAME
+sparrows	麻雀	麻雀		CREATURE:SPARROW NAME
+sparrow hatchling	幼麻雀	幼麻雀		CREATURE:SPARROW GENERAL_CHILD_NAME
+sparrow hatchlings	幼麻雀	幼麻雀		CREATURE:SPARROW GENERAL_CHILD_NAME
+sparrow man	麻雀人	麻雀人		CREATURE:SPARROW_MAN CASTE_NAME
+sparrow men	麻雀人	麻雀人		CREATURE:SPARROW_MAN CASTE_NAME
+sparrow woman	女麻雀人	女麻雀人		CREATURE:SPARROW_MAN CASTE_NAME
+sparrow women	女麻雀人	女麻雀人		CREATURE:SPARROW_MAN CASTE_NAME
+giant sparrow	巨型麻雀	巨型麻雀		CREATURE:GIANT_SPARROW NAME
+giant sparrows	巨型麻雀	巨型麻雀		CREATURE:GIANT_SPARROW NAME
+giant sparrow hatchling	幼巨型麻雀	幼巨型麻雀		CREATURE:GIANT_SPARROW GENERAL_CHILD_NAME
+giant sparrow hatchlings	幼巨型麻雀	幼巨型麻雀		CREATURE:GIANT_SPARROW GENERAL_CHILD_NAME
+white stork	白鸛	白鹳		CREATURE:BIRD_STORK_WHITE NAME
+white storks	白鸛	白鹳		CREATURE:BIRD_STORK_WHITE NAME
+white stork hatchling	幼白鸛	幼白鹳		CREATURE:BIRD_STORK_WHITE GENERAL_CHILD_NAME
+white stork hatchlings	幼白鸛	幼白鹳		CREATURE:BIRD_STORK_WHITE GENERAL_CHILD_NAME
+white stork man	白鸛人	白鹳人		CREATURE:WHITE_STORK_MAN CASTE_NAME
+white stork men	白鸛人	白鹳人		CREATURE:WHITE_STORK_MAN CASTE_NAME
+white stork woman	女白鸛人	女白鹳人		CREATURE:WHITE_STORK_MAN CASTE_NAME
+white stork women	女白鸛人	女白鹳人		CREATURE:WHITE_STORK_MAN CASTE_NAME
+giant white stork	巨型白鸛	巨型白鹳		CREATURE:GIANT_WHITE_STORK NAME
+giant white storks	巨型白鸛	巨型白鹳		CREATURE:GIANT_WHITE_STORK NAME
+giant white stork hatchling	幼巨型白鸛	幼巨型白鹳		CREATURE:GIANT_WHITE_STORK GENERAL_CHILD_NAME
+giant white stork hatchlings	幼巨型白鸛	幼巨型白鹳		CREATURE:GIANT_WHITE_STORK GENERAL_CHILD_NAME
+loon	潛鳥	潜鸟		CREATURE:BIRD_LOON NAME
+loons	潛鳥	潜鸟		CREATURE:BIRD_LOON NAME
+loon chick	幼潛鳥	幼潜鸟		CREATURE:BIRD_LOON GENERAL_CHILD_NAME
+loon chicks	幼潛鳥	幼潜鸟		CREATURE:BIRD_LOON GENERAL_CHILD_NAME
+loon man	潛鳥人	潜鸟人		CREATURE:LOON_MAN CASTE_NAME
+loon men	潛鳥人	潜鸟人		CREATURE:LOON_MAN CASTE_NAME
+loon woman	女潛鳥人	女潜鸟人		CREATURE:LOON_MAN CASTE_NAME
+loon women	女潛鳥人	女潜鸟人		CREATURE:LOON_MAN CASTE_NAME
+giant loon	巨型潛鳥	巨型潜鸟		CREATURE:GIANT_LOON NAME
+giant loons	巨型潛鳥	巨型潜鸟		CREATURE:GIANT_LOON NAME
+giant loon chick	幼巨型潛鳥	幼巨型潜鸟		CREATURE:GIANT_LOON GENERAL_CHILD_NAME
+giant loon chicks	幼巨型潛鳥	幼巨型潜鸟		CREATURE:GIANT_LOON GENERAL_CHILD_NAME
+barn owl	倉鴞	仓鸮		CREATURE:BIRD_OWL_BARN NAME
+barn owls	倉鴞	仓鸮		CREATURE:BIRD_OWL_BARN NAME
+barn owl chick	幼倉鴞	幼仓鸮		CREATURE:BIRD_OWL_BARN GENERAL_CHILD_NAME
+barn owl chicks	幼倉鴞	幼仓鸮		CREATURE:BIRD_OWL_BARN GENERAL_CHILD_NAME
+barn owl man	倉鴞人	仓鸮人		CREATURE:BARN_OWL_MAN CASTE_NAME
+barn owl men	倉鴞人	仓鸮人		CREATURE:BARN_OWL_MAN CASTE_NAME
+barn owl woman	女倉鴞人	女仓鸮人		CREATURE:BARN_OWL_MAN CASTE_NAME
+barn owl women	女倉鴞人	女仓鸮人		CREATURE:BARN_OWL_MAN CASTE_NAME
+giant barn owl	巨型倉鴞	巨型仓鸮		CREATURE:GIANT_BARN_OWL NAME
+giant barn owls	巨型倉鴞	巨型仓鸮		CREATURE:GIANT_BARN_OWL NAME
+giant barn owl chick	幼巨型倉鴞	幼巨型仓鸮		CREATURE:GIANT_BARN_OWL GENERAL_CHILD_NAME
+giant barn owl chicks	幼巨型倉鴞	幼巨型仓鸮		CREATURE:GIANT_BARN_OWL GENERAL_CHILD_NAME
+parakeet	虎皮鸚鵡	虎皮鹦鹉		CREATURE:BIRD_PARAKEET NAME；raws 描述是成群數百、會學說話的小鸚鵡，即虎皮鸚鵡（budgerigar）
+parakeets	虎皮鸚鵡	虎皮鹦鹉		CREATURE:BIRD_PARAKEET NAME
+parakeet hatchling	幼虎皮鸚鵡	幼虎皮鹦鹉		CREATURE:BIRD_PARAKEET GENERAL_CHILD_NAME
+parakeet hatchlings	幼虎皮鸚鵡	幼虎皮鹦鹉		CREATURE:BIRD_PARAKEET GENERAL_CHILD_NAME
+parakeet man	虎皮鸚鵡人	虎皮鹦鹉人		CREATURE:PARAKEET_MAN CASTE_NAME
+parakeet men	虎皮鸚鵡人	虎皮鹦鹉人		CREATURE:PARAKEET_MAN CASTE_NAME
+parakeet woman	女虎皮鸚鵡人	女虎皮鹦鹉人		CREATURE:PARAKEET_MAN CASTE_NAME
+parakeet women	女虎皮鸚鵡人	女虎皮鹦鹉人		CREATURE:PARAKEET_MAN CASTE_NAME
+giant parakeet	巨型虎皮鸚鵡	巨型虎皮鹦鹉		CREATURE:GIANT_PARAKEET NAME
+giant parakeets	巨型虎皮鸚鵡	巨型虎皮鹦鹉		CREATURE:GIANT_PARAKEET NAME
+giant parakeet hatchling	幼巨型虎皮鸚鵡	幼巨型虎皮鹦鹉		CREATURE:GIANT_PARAKEET GENERAL_CHILD_NAME
+giant parakeet hatchlings	幼巨型虎皮鸚鵡	幼巨型虎皮鹦鹉		CREATURE:GIANT_PARAKEET GENERAL_CHILD_NAME
+kakapo	鴞鸚鵡	鸮鹦鹉		CREATURE:BIRD_KAKAPO NAME
+kakapo chick	幼鴞鸚鵡	幼鸮鹦鹉		CREATURE:BIRD_KAKAPO GENERAL_CHILD_NAME
+kakapo chicks	幼鴞鸚鵡	幼鸮鹦鹉		CREATURE:BIRD_KAKAPO GENERAL_CHILD_NAME
+kakapo man	鴞鸚鵡人	鸮鹦鹉人		CREATURE:KAKAPO_MAN CASTE_NAME
+kakapo men	鴞鸚鵡人	鸮鹦鹉人		CREATURE:KAKAPO_MAN CASTE_NAME
+kakapo woman	女鴞鸚鵡人	女鸮鹦鹉人		CREATURE:KAKAPO_MAN CASTE_NAME
+kakapo women	女鴞鸚鵡人	女鸮鹦鹉人		CREATURE:KAKAPO_MAN CASTE_NAME
+giant kakapo	巨型鴞鸚鵡	巨型鸮鹦鹉		CREATURE:GIANT_KAKAPO NAME
+giant kakapo chick	幼巨型鴞鸚鵡	幼巨型鸮鹦鹉		CREATURE:GIANT_KAKAPO GENERAL_CHILD_NAME
+giant kakapo chicks	幼巨型鴞鸚鵡	幼巨型鸮鹦鹉		CREATURE:GIANT_KAKAPO GENERAL_CHILD_NAME
+grey parrot	非洲灰鸚鵡	非洲灰鹦鹉		CREATURE:BIRD_PARROT_GREY NAME
+grey parrots	非洲灰鸚鵡	非洲灰鹦鹉		CREATURE:BIRD_PARROT_GREY NAME
+grey parrot chick	幼非洲灰鸚鵡	幼非洲灰鹦鹉		CREATURE:BIRD_PARROT_GREY GENERAL_CHILD_NAME
+grey parrot chicks	幼非洲灰鸚鵡	幼非洲灰鹦鹉		CREATURE:BIRD_PARROT_GREY GENERAL_CHILD_NAME
+grey parrot man	非洲灰鸚鵡人	非洲灰鹦鹉人		CREATURE:GREY_PARROT_MAN CASTE_NAME
+grey parrot men	非洲灰鸚鵡人	非洲灰鹦鹉人		CREATURE:GREY_PARROT_MAN CASTE_NAME
+grey parrot woman	女非洲灰鸚鵡人	女非洲灰鹦鹉人		CREATURE:GREY_PARROT_MAN CASTE_NAME
+grey parrot women	女非洲灰鸚鵡人	女非洲灰鹦鹉人		CREATURE:GREY_PARROT_MAN CASTE_NAME
+giant grey parrot	巨型非洲灰鸚鵡	巨型非洲灰鹦鹉		CREATURE:GIANT_GREY_PARROT NAME
+giant grey parrots	巨型非洲灰鸚鵡	巨型非洲灰鹦鹉		CREATURE:GIANT_GREY_PARROT NAME
+giant grey parrot chick	幼巨型非洲灰鸚鵡	幼巨型非洲灰鹦鹉		CREATURE:GIANT_GREY_PARROT GENERAL_CHILD_NAME
+giant grey parrot chicks	幼巨型非洲灰鸚鵡	幼巨型非洲灰鹦鹉		CREATURE:GIANT_GREY_PARROT GENERAL_CHILD_NAME
+puffin	海鸚	海鹦		CREATURE:BIRD_PUFFIN NAME
+puffins	海鸚	海鹦		CREATURE:BIRD_PUFFIN NAME
+puffin chick	幼海鸚	幼海鹦		CREATURE:BIRD_PUFFIN GENERAL_CHILD_NAME
+puffin chicks	幼海鸚	幼海鹦		CREATURE:BIRD_PUFFIN GENERAL_CHILD_NAME
+puffin man	海鸚人	海鹦人		CREATURE:PUFFIN_MAN CASTE_NAME
+puffin men	海鸚人	海鹦人		CREATURE:PUFFIN_MAN CASTE_NAME
+puffin woman	女海鸚人	女海鹦人		CREATURE:PUFFIN_MAN CASTE_NAME
+puffin women	女海鸚人	女海鹦人		CREATURE:PUFFIN_MAN CASTE_NAME
+giant puffin	巨型海鸚	巨型海鹦		CREATURE:GIANT_PUFFIN NAME
+giant puffins	巨型海鸚	巨型海鹦		CREATURE:GIANT_PUFFIN NAME
+giant puffin chick	幼巨型海鸚	幼巨型海鹦		CREATURE:GIANT_PUFFIN GENERAL_CHILD_NAME
+giant puffin chicks	幼巨型海鸚	幼巨型海鹦		CREATURE:GIANT_PUFFIN GENERAL_CHILD_NAME
+swan	天鵝	天鹅		CREATURE:BIRD_SWAN NAME
+swans	天鵝	天鹅		CREATURE:BIRD_SWAN NAME
+cygnet	幼天鵝	幼天鹅		CREATURE:BIRD_SWAN GENERAL_CHILD_NAME
+cygnets	幼天鵝	幼天鹅		CREATURE:BIRD_SWAN GENERAL_CHILD_NAME
+pen swan	母天鵝	母天鹅		CREATURE:BIRD_SWAN CASTE_NAME；pen 是母天鵝，不是畜欄
+pen swans	母天鵝	母天鹅		CREATURE:BIRD_SWAN CASTE_NAME；pen 是母天鵝，不是畜欄
+cob swan	公天鵝	公天鹅		CREATURE:BIRD_SWAN CASTE_NAME
+cob swans	公天鵝	公天鹅		CREATURE:BIRD_SWAN CASTE_NAME
+swan man	天鵝人	天鹅人		CREATURE:SWAN_MAN CASTE_NAME
+swan men	天鵝人	天鹅人		CREATURE:SWAN_MAN CASTE_NAME
+swan woman	女天鵝人	女天鹅人		CREATURE:SWAN_MAN CASTE_NAME
+swan women	女天鵝人	女天鹅人		CREATURE:SWAN_MAN CASTE_NAME
+giant swan	巨型天鵝	巨型天鹅		CREATURE:GIANT_SWAN NAME
+giant swans	巨型天鵝	巨型天鹅		CREATURE:GIANT_SWAN NAME
+giant cygnet	幼巨型天鵝	幼巨型天鹅		CREATURE:GIANT_SWAN GENERAL_CHILD_NAME
+giant cygnets	幼巨型天鵝	幼巨型天鹅		CREATURE:GIANT_SWAN GENERAL_CHILD_NAME
+lorikeet	吸蜜鸚鵡	吸蜜鹦鹉		CREATURE:BIRD_LORIKEET NAME
+lorikeets	吸蜜鸚鵡	吸蜜鹦鹉		CREATURE:BIRD_LORIKEET NAME
+lorikeet hatchling	幼吸蜜鸚鵡	幼吸蜜鹦鹉		CREATURE:BIRD_LORIKEET GENERAL_CHILD_NAME
+lorikeet hatchlings	幼吸蜜鸚鵡	幼吸蜜鹦鹉		CREATURE:BIRD_LORIKEET GENERAL_CHILD_NAME
+lorikeet man	吸蜜鸚鵡人	吸蜜鹦鹉人		CREATURE:LORIKEET_MAN CASTE_NAME
+lorikeet men	吸蜜鸚鵡人	吸蜜鹦鹉人		CREATURE:LORIKEET_MAN CASTE_NAME
+lorikeet woman	女吸蜜鸚鵡人	女吸蜜鹦鹉人		CREATURE:LORIKEET_MAN CASTE_NAME
+lorikeet women	女吸蜜鸚鵡人	女吸蜜鹦鹉人		CREATURE:LORIKEET_MAN CASTE_NAME
+giant lorikeet	巨型吸蜜鸚鵡	巨型吸蜜鹦鹉		CREATURE:GIANT_LORIKEET NAME
+giant lorikeets	巨型吸蜜鸚鵡	巨型吸蜜鹦鹉		CREATURE:GIANT_LORIKEET NAME
+giant lorikeet hatchling	幼巨型吸蜜鸚鵡	幼巨型吸蜜鹦鹉		CREATURE:GIANT_LORIKEET GENERAL_CHILD_NAME
+giant lorikeet hatchlings	幼巨型吸蜜鸚鵡	幼巨型吸蜜鹦鹉		CREATURE:GIANT_LORIKEET GENERAL_CHILD_NAME
+wren	鷦鷯	鹪鹩		CREATURE:BIRD_WREN NAME
+wrens	鷦鷯	鹪鹩		CREATURE:BIRD_WREN NAME
+wren hatchling	幼鷦鷯	幼鹪鹩		CREATURE:BIRD_WREN GENERAL_CHILD_NAME
+wren hatchlings	幼鷦鷯	幼鹪鹩		CREATURE:BIRD_WREN GENERAL_CHILD_NAME
+wren man	鷦鷯人	鹪鹩人		CREATURE:WREN_MAN CASTE_NAME
+wren men	鷦鷯人	鹪鹩人		CREATURE:WREN_MAN CASTE_NAME
+wren woman	女鷦鷯人	女鹪鹩人		CREATURE:WREN_MAN CASTE_NAME
+wren women	女鷦鷯人	女鹪鹩人		CREATURE:WREN_MAN CASTE_NAME
+giant wren	巨型鷦鷯	巨型鹪鹩		CREATURE:GIANT_WREN NAME
+giant wrens	巨型鷦鷯	巨型鹪鹩		CREATURE:GIANT_WREN NAME
+giant wren hatchling	幼巨型鷦鷯	幼巨型鹪鹩		CREATURE:GIANT_WREN GENERAL_CHILD_NAME
+giant wren hatchlings	幼巨型鷦鷯	幼巨型鹪鹩		CREATURE:GIANT_WREN GENERAL_CHILD_NAME
+osprey	魚鷹	鹗		CREATURE:BIRD_OSPREY NAME；台灣魚鷹；大陸正式名鹗（鱼鹰在大陆也指鸬鹚）
+ospreys	魚鷹	鹗		CREATURE:BIRD_OSPREY NAME
+osprey chick	幼魚鷹	幼鹗		CREATURE:BIRD_OSPREY GENERAL_CHILD_NAME
+osprey chicks	幼魚鷹	幼鹗		CREATURE:BIRD_OSPREY GENERAL_CHILD_NAME
+osprey man	魚鷹人	鹗人		CREATURE:OSPREY_MAN CASTE_NAME
+osprey men	魚鷹人	鹗人		CREATURE:OSPREY_MAN CASTE_NAME
+osprey woman	女魚鷹人	女鹗人		CREATURE:OSPREY_MAN CASTE_NAME
+osprey women	女魚鷹人	女鹗人		CREATURE:OSPREY_MAN CASTE_NAME
+giant osprey	巨型魚鷹	巨型鹗		CREATURE:GIANT_OSPREY NAME
+giant ospreys	巨型魚鷹	巨型鹗		CREATURE:GIANT_OSPREY NAME
+giant osprey chick	幼巨型魚鷹	幼巨型鹗		CREATURE:GIANT_OSPREY GENERAL_CHILD_NAME
+giant osprey chicks	幼巨型魚鷹	幼巨型鹗		CREATURE:GIANT_OSPREY GENERAL_CHILD_NAME
+emu	鴯鶓	鸸鹋		CREATURE:BIRD_EMU NAME
+emus	鴯鶓	鸸鹋		CREATURE:BIRD_EMU NAME
+emu chick	幼鴯鶓	幼鸸鹋		CREATURE:BIRD_EMU GENERAL_CHILD_NAME
+emu chicks	幼鴯鶓	幼鸸鹋		CREATURE:BIRD_EMU GENERAL_CHILD_NAME
+emu man	鴯鶓人	鸸鹋人		CREATURE:EMU_MAN CASTE_NAME
+emu men	鴯鶓人	鸸鹋人		CREATURE:EMU_MAN CASTE_NAME
+emu woman	女鴯鶓人	女鸸鹋人		CREATURE:EMU_MAN CASTE_NAME
+emu women	女鴯鶓人	女鸸鹋人		CREATURE:EMU_MAN CASTE_NAME
+giant emu	巨型鴯鶓	巨型鸸鹋		CREATURE:GIANT_EMU NAME
+giant emus	巨型鴯鶓	巨型鸸鹋		CREATURE:GIANT_EMU NAME
+giant emu chick	幼巨型鴯鶓	幼巨型鸸鹋		CREATURE:GIANT_EMU GENERAL_CHILD_NAME
+giant emu chicks	幼巨型鴯鶓	幼巨型鸸鹋		CREATURE:GIANT_EMU GENERAL_CHILD_NAME
+cockatiel	玄鳳鸚鵡	鸡尾鹦鹉		CREATURE:BIRD_COCKATIEL NAME；台灣通稱玄鳳鸚鵡；大陸正式名鸡尾鹦鹉
+cockatiels	玄鳳鸚鵡	鸡尾鹦鹉		CREATURE:BIRD_COCKATIEL NAME
+cockatiel hatchling	幼玄鳳鸚鵡	幼鸡尾鹦鹉		CREATURE:BIRD_COCKATIEL GENERAL_CHILD_NAME
+cockatiel hatchlings	幼玄鳳鸚鵡	幼鸡尾鹦鹉		CREATURE:BIRD_COCKATIEL GENERAL_CHILD_NAME
+cockatiel man	玄鳳鸚鵡人	鸡尾鹦鹉人		CREATURE:COCKATIEL_MAN CASTE_NAME
+cockatiel men	玄鳳鸚鵡人	鸡尾鹦鹉人		CREATURE:COCKATIEL_MAN CASTE_NAME
+cockatiel woman	女玄鳳鸚鵡人	女鸡尾鹦鹉人		CREATURE:COCKATIEL_MAN CASTE_NAME
+cockatiel women	女玄鳳鸚鵡人	女鸡尾鹦鹉人		CREATURE:COCKATIEL_MAN CASTE_NAME
+giant cockatiel	巨型玄鳳鸚鵡	巨型鸡尾鹦鹉		CREATURE:GIANT_COCKATIEL NAME
+giant cockatiels	巨型玄鳳鸚鵡	巨型鸡尾鹦鹉		CREATURE:GIANT_COCKATIEL NAME
+giant cockatiel hatchling	幼巨型玄鳳鸚鵡	幼巨型鸡尾鹦鹉		CREATURE:GIANT_COCKATIEL GENERAL_CHILD_NAME
+giant cockatiel hatchlings	幼巨型玄鳳鸚鵡	幼巨型鸡尾鹦鹉		CREATURE:GIANT_COCKATIEL GENERAL_CHILD_NAME
+peach-faced lovebird	桃臉牡丹鸚鵡	桃脸牡丹鹦鹉		CREATURE:BIRD_LOVEBIRD_PEACH-FACED NAME
+peach-faced lovebirds	桃臉牡丹鸚鵡	桃脸牡丹鹦鹉		CREATURE:BIRD_LOVEBIRD_PEACH-FACED NAME
+peach-faced lovebird hatchling	幼桃臉牡丹鸚鵡	幼桃脸牡丹鹦鹉		CREATURE:BIRD_LOVEBIRD_PEACH-FACED GENERAL_CHILD_NAME
+peach-faced lovebird hatchlings	幼桃臉牡丹鸚鵡	幼桃脸牡丹鹦鹉		CREATURE:BIRD_LOVEBIRD_PEACH-FACED GENERAL_CHILD_NAME
+peach-faced lovebird man	桃臉牡丹鸚鵡人	桃脸牡丹鹦鹉人		CREATURE:PEACH-FACED_LOVEBIRD_MAN CASTE_NAME
+peach-faced lovebird men	桃臉牡丹鸚鵡人	桃脸牡丹鹦鹉人		CREATURE:PEACH-FACED_LOVEBIRD_MAN CASTE_NAME
+peach-faced lovebird woman	女桃臉牡丹鸚鵡人	女桃脸牡丹鹦鹉人		CREATURE:PEACH-FACED_LOVEBIRD_MAN CASTE_NAME
+peach-faced lovebird women	女桃臉牡丹鸚鵡人	女桃脸牡丹鹦鹉人		CREATURE:PEACH-FACED_LOVEBIRD_MAN CASTE_NAME
+giant peach-faced lovebird	巨型桃臉牡丹鸚鵡	巨型桃脸牡丹鹦鹉		CREATURE:GIANT_PEACH-FACED_LOVEBIRD NAME
+giant peach-faced lovebirds	巨型桃臉牡丹鸚鵡	巨型桃脸牡丹鹦鹉		CREATURE:GIANT_PEACH-FACED_LOVEBIRD NAME
+giant peach-faced lovebird hatchling	幼巨型桃臉牡丹鸚鵡	幼巨型桃脸牡丹鹦鹉		CREATURE:GIANT_PEACH-FACED_LOVEBIRD GENERAL_CHILD_NAME
+giant peach-faced lovebird hatchlings	幼巨型桃臉牡丹鸚鵡	幼巨型桃脸牡丹鹦鹉		CREATURE:GIANT_PEACH-FACED_LOVEBIRD GENERAL_CHILD_NAME
+magpie	喜鵲	喜鹊		CREATURE:BIRD_MAGPIE NAME
+magpies	喜鵲	喜鹊		CREATURE:BIRD_MAGPIE NAME
+magpie hatchling	幼喜鵲	幼喜鹊		CREATURE:BIRD_MAGPIE GENERAL_CHILD_NAME
+magpie hatchlings	幼喜鵲	幼喜鹊		CREATURE:BIRD_MAGPIE GENERAL_CHILD_NAME
+magpie man	喜鵲人	喜鹊人		CREATURE:MAGPIE_MAN CASTE_NAME
+magpie men	喜鵲人	喜鹊人		CREATURE:MAGPIE_MAN CASTE_NAME
+magpie woman	女喜鵲人	女喜鹊人		CREATURE:MAGPIE_MAN CASTE_NAME
+magpie women	女喜鵲人	女喜鹊人		CREATURE:MAGPIE_MAN CASTE_NAME
+giant magpie	巨型喜鵲	巨型喜鹊		CREATURE:GIANT_MAGPIE NAME
+giant magpies	巨型喜鵲	巨型喜鹊		CREATURE:GIANT_MAGPIE NAME
+giant magpie hatchling	幼巨型喜鵲	幼巨型喜鹊		CREATURE:GIANT_MAGPIE GENERAL_CHILD_NAME
+giant magpie hatchlings	幼巨型喜鵲	幼巨型喜鹊		CREATURE:GIANT_MAGPIE GENERAL_CHILD_NAME
+kestrel	紅隼	红隼		CREATURE:BIRD_KESTREL NAME
+kestrels	紅隼	红隼		CREATURE:BIRD_KESTREL NAME
+kestrel chick	幼紅隼	幼红隼		CREATURE:BIRD_KESTREL GENERAL_CHILD_NAME
+kestrel chicks	幼紅隼	幼红隼		CREATURE:BIRD_KESTREL GENERAL_CHILD_NAME
+kestrel man	紅隼人	红隼人		CREATURE:KESTREL_MAN CASTE_NAME
+kestrel men	紅隼人	红隼人		CREATURE:KESTREL_MAN CASTE_NAME
+kestrel woman	女紅隼人	女红隼人		CREATURE:KESTREL_MAN CASTE_NAME
+kestrel women	女紅隼人	女红隼人		CREATURE:KESTREL_MAN CASTE_NAME
+giant kestrel	巨型紅隼	巨型红隼		CREATURE:GIANT_KESTREL NAME
+giant kestrels	巨型紅隼	巨型红隼		CREATURE:GIANT_KESTREL NAME
+giant kestrel chick	幼巨型紅隼	幼巨型红隼		CREATURE:GIANT_KESTREL GENERAL_CHILD_NAME
+giant kestrel chicks	幼巨型紅隼	幼巨型红隼		CREATURE:GIANT_KESTREL GENERAL_CHILD_NAME
+albatross	信天翁	信天翁		CREATURE:BIRD_ALBATROSS NAME
+albatrosses	信天翁	信天翁		CREATURE:BIRD_ALBATROSS NAME
+albatross hatchling	幼信天翁	幼信天翁		CREATURE:BIRD_ALBATROSS GENERAL_CHILD_NAME
+albatross hatchlings	幼信天翁	幼信天翁		CREATURE:BIRD_ALBATROSS GENERAL_CHILD_NAME
+albatross man	信天翁人	信天翁人		CREATURE:ALBATROSS_MAN CASTE_NAME
+albatross men	信天翁人	信天翁人		CREATURE:ALBATROSS_MAN CASTE_NAME
+albatross woman	女信天翁人	女信天翁人		CREATURE:ALBATROSS_MAN CASTE_NAME
+albatross women	女信天翁人	女信天翁人		CREATURE:ALBATROSS_MAN CASTE_NAME
+giant albatross	巨型信天翁	巨型信天翁		CREATURE:GIANT_ALBATROSS NAME
+giant albatrosses	巨型信天翁	巨型信天翁		CREATURE:GIANT_ALBATROSS NAME
+giant albatross hatchling	幼巨型信天翁	幼巨型信天翁		CREATURE:GIANT_ALBATROSS GENERAL_CHILD_NAME
+giant albatross hatchlings	幼巨型信天翁	幼巨型信天翁		CREATURE:GIANT_ALBATROSS GENERAL_CHILD_NAME
+great horned owl	美洲鵰鴞	美洲雕鸮		CREATURE:BIRD_OWL_GREAT_HORNED NAME
+great horned owls	美洲鵰鴞	美洲雕鸮		CREATURE:BIRD_OWL_GREAT_HORNED NAME
+great horned owl chick	幼美洲鵰鴞	幼美洲雕鸮		CREATURE:BIRD_OWL_GREAT_HORNED GENERAL_CHILD_NAME
+great horned owl chicks	幼美洲鵰鴞	幼美洲雕鸮		CREATURE:BIRD_OWL_GREAT_HORNED GENERAL_CHILD_NAME
+great horned owl man	美洲鵰鴞人	美洲雕鸮人		CREATURE:GREAT_HORNED_OWL_MAN CASTE_NAME
+great horned owl men	美洲鵰鴞人	美洲雕鸮人		CREATURE:GREAT_HORNED_OWL_MAN CASTE_NAME
+great horned owl woman	女美洲鵰鴞人	女美洲雕鸮人		CREATURE:GREAT_HORNED_OWL_MAN CASTE_NAME
+great horned owl women	女美洲鵰鴞人	女美洲雕鸮人		CREATURE:GREAT_HORNED_OWL_MAN CASTE_NAME
+giant great horned owl	巨型美洲鵰鴞	巨型美洲雕鸮		CREATURE:GIANT_GREAT_HORNED_OWL NAME
+giant great horned owls	巨型美洲鵰鴞	巨型美洲雕鸮		CREATURE:GIANT_GREAT_HORNED_OWL NAME
+giant great horned owl chick	幼巨型美洲鵰鴞	幼巨型美洲雕鸮		CREATURE:GIANT_GREAT_HORNED_OWL GENERAL_CHILD_NAME
+giant great horned owl chicks	幼巨型美洲鵰鴞	幼巨型美洲雕鸮		CREATURE:GIANT_GREAT_HORNED_OWL GENERAL_CHILD_NAME
+eagle	鵰	鹰		CREATURE:BIRD_EAGLE NAME；台灣鳥名 eagle 作鵰；大陸通行作鹰
+eagles	鵰	鹰		CREATURE:BIRD_EAGLE NAME
+eaglet	幼鵰	幼鹰		CREATURE:BIRD_EAGLE GENERAL_CHILD_NAME
+eaglets	幼鵰	幼鹰		CREATURE:BIRD_EAGLE GENERAL_CHILD_NAME
+eagle man	鵰人	鹰人		CREATURE:EAGLE_MAN CASTE_NAME
+eagle men	鵰人	鹰人		CREATURE:EAGLE_MAN CASTE_NAME
+eagle woman	女鵰人	女鹰人		CREATURE:EAGLE_MAN CASTE_NAME
+eagle women	女鵰人	女鹰人		CREATURE:EAGLE_MAN CASTE_NAME
+giant eagle	巨型鵰	巨型鹰		CREATURE:GIANT_EAGLE NAME
+giant eagles	巨型鵰	巨型鹰		CREATURE:GIANT_EAGLE NAME
+giant eagle chick	幼巨型鵰	幼巨型鹰		CREATURE:GIANT_EAGLE GENERAL_CHILD_NAME
+giant eagle chicks	幼巨型鵰	幼巨型鹰		CREATURE:GIANT_EAGLE GENERAL_CHILD_NAME
+hornbill	犀鳥	犀鸟		CREATURE:BIRD_HORNBILL NAME
+hornbills	犀鳥	犀鸟		CREATURE:BIRD_HORNBILL NAME
+hornbill chick	幼犀鳥	幼犀鸟		CREATURE:BIRD_HORNBILL GENERAL_CHILD_NAME
+hornbill chicks	幼犀鳥	幼犀鸟		CREATURE:BIRD_HORNBILL GENERAL_CHILD_NAME
+hornbill man	犀鳥人	犀鸟人		CREATURE:HORNBILL_MAN CASTE_NAME
+hornbill men	犀鳥人	犀鸟人		CREATURE:HORNBILL_MAN CASTE_NAME
+hornbill woman	女犀鳥人	女犀鸟人		CREATURE:HORNBILL_MAN CASTE_NAME
+hornbill women	女犀鳥人	女犀鸟人		CREATURE:HORNBILL_MAN CASTE_NAME
+giant hornbill	巨型犀鳥	巨型犀鸟		CREATURE:GIANT_HORNBILL NAME
+giant hornbills	巨型犀鳥	巨型犀鸟		CREATURE:GIANT_HORNBILL NAME
+giant hornbill chick	幼巨型犀鳥	幼巨型犀鸟		CREATURE:GIANT_HORNBILL GENERAL_CHILD_NAME
+giant hornbill chicks	幼巨型犀鳥	幼巨型犀鸟		CREATURE:GIANT_HORNBILL GENERAL_CHILD_NAME
+masked lovebird	黃領牡丹鸚鵡	黄领牡丹鹦鹉		CREATURE:BIRD_LOVEBIRD_MASKED NAME
+masked lovebirds	黃領牡丹鸚鵡	黄领牡丹鹦鹉		CREATURE:BIRD_LOVEBIRD_MASKED NAME
+masked lovebird hatchling	幼黃領牡丹鸚鵡	幼黄领牡丹鹦鹉		CREATURE:BIRD_LOVEBIRD_MASKED GENERAL_CHILD_NAME
+masked lovebird hatchlings	幼黃領牡丹鸚鵡	幼黄领牡丹鹦鹉		CREATURE:BIRD_LOVEBIRD_MASKED GENERAL_CHILD_NAME
+masked lovebird man	黃領牡丹鸚鵡人	黄领牡丹鹦鹉人		CREATURE:MASKED_LOVEBIRD_MAN CASTE_NAME
+masked lovebird men	黃領牡丹鸚鵡人	黄领牡丹鹦鹉人		CREATURE:MASKED_LOVEBIRD_MAN CASTE_NAME
+masked lovebird woman	女黃領牡丹鸚鵡人	女黄领牡丹鹦鹉人		CREATURE:MASKED_LOVEBIRD_MAN CASTE_NAME
+masked lovebird women	女黃領牡丹鸚鵡人	女黄领牡丹鹦鹉人		CREATURE:MASKED_LOVEBIRD_MAN CASTE_NAME
+giant masked lovebird	巨型黃領牡丹鸚鵡	巨型黄领牡丹鹦鹉		CREATURE:GIANT_MASKED_LOVEBIRD NAME
+giant masked lovebirds	巨型黃領牡丹鸚鵡	巨型黄领牡丹鹦鹉		CREATURE:GIANT_MASKED_LOVEBIRD NAME
+giant masked lovebird hatchling	幼巨型黃領牡丹鸚鵡	幼巨型黄领牡丹鹦鹉		CREATURE:GIANT_MASKED_LOVEBIRD GENERAL_CHILD_NAME
+giant masked lovebird hatchlings	幼巨型黃領牡丹鸚鵡	幼巨型黄领牡丹鹦鹉		CREATURE:GIANT_MASKED_LOVEBIRD GENERAL_CHILD_NAME
+bushtit	叢山雀	丛山雀		CREATURE:BIRD_BUSHTIT NAME；短嘴長尾山雀太寬，取叢山雀
+bushtits	叢山雀	丛山雀		CREATURE:BIRD_BUSHTIT NAME
+bushtit hatchling	幼叢山雀	幼丛山雀		CREATURE:BIRD_BUSHTIT GENERAL_CHILD_NAME
+bushtit hatchlings	幼叢山雀	幼丛山雀		CREATURE:BIRD_BUSHTIT GENERAL_CHILD_NAME
+bushtit man	叢山雀人	丛山雀人		CREATURE:BUSHTIT_MAN CASTE_NAME
+bushtit men	叢山雀人	丛山雀人		CREATURE:BUSHTIT_MAN CASTE_NAME
+bushtit woman	女叢山雀人	女丛山雀人		CREATURE:BUSHTIT_MAN CASTE_NAME
+bushtit women	女叢山雀人	女丛山雀人		CREATURE:BUSHTIT_MAN CASTE_NAME
+giant bushtit	巨型叢山雀	巨型丛山雀		CREATURE:GIANT_BUSHTIT NAME
+giant bushtits	巨型叢山雀	巨型丛山雀		CREATURE:GIANT_BUSHTIT NAME
+giant bushtit hatchling	幼巨型叢山雀	幼巨型丛山雀		CREATURE:GIANT_BUSHTIT GENERAL_CHILD_NAME
+giant bushtit hatchlings	幼巨型叢山雀	幼巨型丛山雀		CREATURE:GIANT_BUSHTIT GENERAL_CHILD_NAME

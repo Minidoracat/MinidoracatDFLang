@@ -97,3 +97,4 @@ Combat	戰鬥	战斗		通知設定分類篩選
 Adventure	冒險	冒险		通知設定分類篩選；冒險模式的通知
 Other	其他	其他		通知設定分類篩選
 All	全	全		通知設定分類篩選；原文 3 格只放得下一個字
+Dolomite	Dolomite	Dolomite		音樂曲名（Track playing:），保留原文；整句寫出來，免得引擎把大寫查不到的字退回小寫，套到同字的 raws 名稱（dolomite 白雲岩）

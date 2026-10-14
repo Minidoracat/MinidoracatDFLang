@@ -1,0 +1,414 @@
+en	zh-Hant	zh-Hans	align	note
+walrus	海象	海象		CREATURE:WALRUS NAME
+walruses	海象	海象		CREATURE:WALRUS NAME
+walrus calf	幼海象	幼海象		CREATURE:WALRUS GENERAL_CHILD_NAME
+walrus calves	幼海象	幼海象		CREATURE:WALRUS GENERAL_CHILD_NAME
+walrus man	海象人	海象人		CREATURE:WALRUS_MAN CASTE_NAME
+walrus men	海象人	海象人		CREATURE:WALRUS_MAN CASTE_NAME
+walrus woman	女海象人	女海象人		CREATURE:WALRUS_MAN CASTE_NAME
+walrus women	女海象人	女海象人		CREATURE:WALRUS_MAN CASTE_NAME
+giant walrus	巨型海象	巨型海象		CREATURE:GIANT_WALRUS NAME
+giant walruss	巨型海象	巨型海象		CREATURE:GIANT_WALRUS NAME
+giant walrus pup	幼巨型海象	幼巨型海象		CREATURE:GIANT_WALRUS GENERAL_CHILD_NAME
+giant walrus pups	幼巨型海象	幼巨型海象		CREATURE:GIANT_WALRUS GENERAL_CHILD_NAME
+sea lamprey	海七鰓鰻	海七鳃鳗		CREATURE:FISH_LAMPREY_SEA NAME
+sea lampreys	海七鰓鰻	海七鳃鳗		CREATURE:FISH_LAMPREY_SEA NAME
+larval sea lamprey	幼海七鰓鰻	幼海七鳃鳗		CREATURE:FISH_LAMPREY_SEA GENERAL_CHILD_NAME
+larval sea lampreys	幼海七鰓鰻	幼海七鳃鳗		CREATURE:FISH_LAMPREY_SEA GENERAL_CHILD_NAME
+great white shark	大白鯊	大白鲨		CREATURE:SHARK_GREAT_WHITE NAME
+great white sharks	大白鯊	大白鲨		CREATURE:SHARK_GREAT_WHITE NAME
+great white shark pup	幼大白鯊	幼大白鲨		CREATURE:SHARK_GREAT_WHITE GENERAL_CHILD_NAME
+great white shark pups	幼大白鯊	幼大白鲨		CREATURE:SHARK_GREAT_WHITE GENERAL_CHILD_NAME
+frill shark	皺鰓鯊	皱鳃鲨		CREATURE:SHARK_FRILL NAME
+frill sharks	皺鰓鯊	皱鳃鲨		CREATURE:SHARK_FRILL NAME
+frill shark pup	幼皺鰓鯊	幼皱鳃鲨		CREATURE:SHARK_FRILL GENERAL_CHILD_NAME
+frill shark pups	幼皺鰓鯊	幼皱鳃鲨		CREATURE:SHARK_FRILL GENERAL_CHILD_NAME
+spiny dogfish	白斑角鯊	白斑角鲨		CREATURE:SHARK_SPINY_DOGFISH NAME
+spiny dogfish pup	幼白斑角鯊	幼白斑角鲨		CREATURE:SHARK_SPINY_DOGFISH GENERAL_CHILD_NAME
+spiny dogfish pups	幼白斑角鯊	幼白斑角鲨		CREATURE:SHARK_SPINY_DOGFISH GENERAL_CHILD_NAME
+spotted wobbegong	斑紋鬚鯊	斑纹须鲨		CREATURE:SHARK_WOBBEGONG_SPOTTED NAME
+spotted wobbegongs	斑紋鬚鯊	斑纹须鲨		CREATURE:SHARK_WOBBEGONG_SPOTTED NAME
+spotted wobbegong pup	幼斑紋鬚鯊	幼斑纹须鲨		CREATURE:SHARK_WOBBEGONG_SPOTTED GENERAL_CHILD_NAME
+spotted wobbegong pups	幼斑紋鬚鯊	幼斑纹须鲨		CREATURE:SHARK_WOBBEGONG_SPOTTED GENERAL_CHILD_NAME
+whale shark	鯨鯊	鲸鲨		CREATURE:SHARK_WHALE NAME
+whale sharks	鯨鯊	鲸鲨		CREATURE:SHARK_WHALE NAME
+whale shark pup	幼鯨鯊	幼鲸鲨		CREATURE:SHARK_WHALE GENERAL_CHILD_NAME
+whale shark pups	幼鯨鯊	幼鲸鲨		CREATURE:SHARK_WHALE GENERAL_CHILD_NAME
+basking shark	象鮫	姥鲨		CREATURE:SHARK_BASKING NAME；兩岸正式名不同
+basking sharks	象鮫	姥鲨		CREATURE:SHARK_BASKING NAME；兩岸正式名不同
+basking shark pup	幼象鮫	幼姥鲨		CREATURE:SHARK_BASKING GENERAL_CHILD_NAME
+basking shark pups	幼象鮫	幼姥鲨		CREATURE:SHARK_BASKING GENERAL_CHILD_NAME
+nurse shark	鉸口鯊	铰口鲨		CREATURE:SHARK_NURSE NAME
+nurse sharks	鉸口鯊	铰口鲨		CREATURE:SHARK_NURSE NAME
+nurse shark pup	幼鉸口鯊	幼铰口鲨		CREATURE:SHARK_NURSE GENERAL_CHILD_NAME
+nurse shark pups	幼鉸口鯊	幼铰口鲨		CREATURE:SHARK_NURSE GENERAL_CHILD_NAME
+shortfin mako shark	尖吻鯖鯊	尖吻鲭鲨		CREATURE:SHARK_MAKO_SHORTFIN NAME
+shortfin mako sharks	尖吻鯖鯊	尖吻鲭鲨		CREATURE:SHARK_MAKO_SHORTFIN NAME
+shortfin mako shark pup	幼尖吻鯖鯊	幼尖吻鲭鲨		CREATURE:SHARK_MAKO_SHORTFIN GENERAL_CHILD_NAME
+longfin mako shark	長鰭鯖鯊	长鳍鲭鲨		CREATURE:SHARK_MAKO_LONGFIN NAME
+longfin mako sharks	長鰭鯖鯊	长鳍鲭鲨		CREATURE:SHARK_MAKO_LONGFIN NAME
+longfin mako shark pup	幼長鰭鯖鯊	幼长鳍鲭鲨		CREATURE:SHARK_MAKO_LONGFIN GENERAL_CHILD_NAME
+tiger shark	虎鯊	鼬鲨		CREATURE:SHARK_TIGER NAME；台灣通稱虎鯊；大陸虎鲨指虎鲨目，故用正式名鼬鲨
+tiger sharks	虎鯊	鼬鲨		CREATURE:SHARK_TIGER NAME；台灣通稱虎鯊；大陸虎鲨指虎鲨目，故用正式名鼬鲨
+tiger shark pup	幼虎鯊	幼鼬鲨		CREATURE:SHARK_TIGER GENERAL_CHILD_NAME
+tiger shark pups	幼虎鯊	幼鼬鲨		CREATURE:SHARK_TIGER GENERAL_CHILD_NAME
+bull shark	公牛鯊	低鳍真鲨		CREATURE:SHARK_BULL NAME；兩岸通行名不同
+bull sharks	公牛鯊	低鳍真鲨		CREATURE:SHARK_BULL NAME；兩岸通行名不同
+bull shark pup	幼公牛鯊	幼低鳍真鲨		CREATURE:SHARK_BULL GENERAL_CHILD_NAME
+bull shark pups	幼公牛鯊	幼低鳍真鲨		CREATURE:SHARK_BULL GENERAL_CHILD_NAME
+blacktip reef shark	黑鰭礁鯊	乌翅真鲨		CREATURE:SHARK_REEF_BLACKTIP NAME；兩岸通行名不同
+blacktip reef sharks	黑鰭礁鯊	乌翅真鲨		CREATURE:SHARK_REEF_BLACKTIP NAME；兩岸通行名不同
+blacktip reef shark pup	幼黑鰭礁鯊	幼乌翅真鲨		CREATURE:SHARK_REEF_BLACKTIP GENERAL_CHILD_NAME
+blacktip reef shark pups	幼黑鰭礁鯊	幼乌翅真鲨		CREATURE:SHARK_REEF_BLACKTIP GENERAL_CHILD_NAME
+whitetip reef shark	白鰭礁鯊	灰三齿鲨		CREATURE:SHARK_REEF_WHITETIP NAME；兩岸通行名不同
+whitetip reef sharks	白鰭礁鯊	灰三齿鲨		CREATURE:SHARK_REEF_WHITETIP NAME；兩岸通行名不同
+whitetip reef shark pup	幼白鰭礁鯊	幼灰三齿鲨		CREATURE:SHARK_REEF_WHITETIP GENERAL_CHILD_NAME
+whitetip reef shark pups	幼白鰭礁鯊	幼灰三齿鲨		CREATURE:SHARK_REEF_WHITETIP GENERAL_CHILD_NAME
+blue shark	大青鯊	大青鲨		CREATURE:SHARK_BLUE NAME
+blue sharks	大青鯊	大青鲨		CREATURE:SHARK_BLUE NAME
+blue shark pup	幼大青鯊	幼大青鲨		CREATURE:SHARK_BLUE GENERAL_CHILD_NAME
+blue shark pups	幼大青鯊	幼大青鲨		CREATURE:SHARK_BLUE GENERAL_CHILD_NAME
+hammerhead shark	雙髻鯊	双髻鲨		CREATURE:SHARK_HAMMERHEAD NAME
+hammerhead sharks	雙髻鯊	双髻鲨		CREATURE:SHARK_HAMMERHEAD NAME
+hammerhead shark pup	幼雙髻鯊	幼双髻鲨		CREATURE:SHARK_HAMMERHEAD GENERAL_CHILD_NAME
+hammerhead shark pups	幼雙髻鯊	幼双髻鲨		CREATURE:SHARK_HAMMERHEAD GENERAL_CHILD_NAME
+angelshark	扁鯊	扁鲨		CREATURE:SHARK_ANGEL NAME
+angelsharks	扁鯊	扁鲨		CREATURE:SHARK_ANGEL NAME
+angelshark pup	幼扁鯊	幼扁鲨		CREATURE:SHARK_ANGEL GENERAL_CHILD_NAME
+angelshark pups	幼扁鯊	幼扁鲨		CREATURE:SHARK_ANGEL GENERAL_CHILD_NAME
+common skate	鰩魚	鳐鱼		CREATURE:FISH_SKATE_COMMON NAME
+common skates	鰩魚	鳐鱼		CREATURE:FISH_SKATE_COMMON NAME
+common skate pup	幼鰩魚	幼鳐鱼		CREATURE:FISH_SKATE_COMMON GENERAL_CHILD_NAME
+common skate pups	幼鰩魚	幼鳐鱼		CREATURE:FISH_SKATE_COMMON GENERAL_CHILD_NAME
+manta ray	鬼蝠魟	蝠鲼		CREATURE:FISH_RAY_MANTA NAME；兩岸通行名不同
+manta rays	鬼蝠魟	蝠鲼		CREATURE:FISH_RAY_MANTA NAME；兩岸通行名不同
+manta ray pup	幼鬼蝠魟	幼蝠鲼		CREATURE:FISH_RAY_MANTA GENERAL_CHILD_NAME
+manta ray pups	幼鬼蝠魟	幼蝠鲼		CREATURE:FISH_RAY_MANTA GENERAL_CHILD_NAME
+stingray	魟魚	魟鱼		CREATURE:FISH_STINGRAY NAME
+stingrays	魟魚	魟鱼		CREATURE:FISH_STINGRAY NAME
+stingray pup	幼魟魚	幼魟鱼		CREATURE:FISH_STINGRAY GENERAL_CHILD_NAME
+stingray pups	幼魟魚	幼魟鱼		CREATURE:FISH_STINGRAY GENERAL_CHILD_NAME
+coelacanth	腔棘魚	腔棘鱼		CREATURE:FISH_COELACANTH NAME
+coelacanths	腔棘魚	腔棘鱼		CREATURE:FISH_COELACANTH NAME
+coelacanth fry	幼腔棘魚	幼腔棘鱼		CREATURE:FISH_COELACANTH GENERAL_CHILD_NAME
+sturgeon	鱘魚	鲟鱼		CREATURE:FISH_STURGEON NAME
+sturgeons	鱘魚	鲟鱼		CREATURE:FISH_STURGEON NAME
+sturgeon fry	幼鱘魚	幼鲟鱼		CREATURE:FISH_STURGEON GENERAL_CHILD_NAME
+conger eel	康吉鰻	康吉鳗		CREATURE:FISH_CONGER_EEL NAME
+conger eels	康吉鰻	康吉鳗		CREATURE:FISH_CONGER_EEL NAME
+conger eel fry	幼康吉鰻	幼康吉鳗		CREATURE:FISH_CONGER_EEL GENERAL_CHILD_NAME
+milkfish	虱目魚	遮目鱼		CREATURE:FISH_MILKFISH NAME；兩岸通行名不同
+milkfish fry	幼虱目魚	幼遮目鱼		CREATURE:FISH_MILKFISH GENERAL_CHILD_NAME
+cod	鱈魚	鳕鱼		CREATURE:FISH_COD NAME
+cod fry	幼鱈魚	幼鳕鱼		CREATURE:FISH_COD GENERAL_CHILD_NAME
+opah	月魚	月鱼		CREATURE:FISH_OPAH NAME；寬度限 4 格，用屬名月魚
+opah fry	幼月魚	幼月鱼		CREATURE:FISH_OPAH GENERAL_CHILD_NAME
+giant grouper	龍膽石斑	龙胆石斑		CREATURE:FISH_GROUPER_GIANT NAME；鞍帶石斑魚的通稱；giant 是物種名的一部分，不譯巨型
+giant groupers	龍膽石斑	龙胆石斑		CREATURE:FISH_GROUPER_GIANT NAME；鞍帶石斑魚的通稱；giant 是物種名的一部分，不譯巨型
+grouper fry	幼龍膽石斑	幼龙胆石斑		CREATURE:FISH_GROUPER_GIANT GENERAL_CHILD_NAME
+bluefish	扁鰺	扁鲹		CREATURE:FISH_BLUEFISH NAME
+bluefish fry	幼扁鰺	幼扁鲹		CREATURE:FISH_BLUEFISH GENERAL_CHILD_NAME
+ocean sunfish	翻車魚	翻车鲀		CREATURE:FISH_SUNFISH_OCEAN NAME；兩岸通行名不同
+ocean sunfish fry	幼翻車魚	幼翻车鲀		CREATURE:FISH_SUNFISH_OCEAN GENERAL_CHILD_NAME
+swordfish	劍旗魚	剑鱼		CREATURE:FISH_SWORDFISH NAME；兩岸通行名不同
+swordfish fry	幼劍旗魚	幼剑鱼		CREATURE:FISH_SWORDFISH GENERAL_CHILD_NAME
+marlin	旗魚	枪鱼		CREATURE:FISH_MARLIN NAME；兩岸通行名不同
+marlins	旗魚	枪鱼		CREATURE:FISH_MARLIN NAME；兩岸通行名不同
+marlin fry	幼旗魚	幼枪鱼		CREATURE:FISH_MARLIN GENERAL_CHILD_NAME
+halibut	扁鱈	庸鲽		CREATURE:FISH_HALIBUT NAME；大比目魚超寬；台灣市場通稱扁鱈，大陸用正式名庸鲽
+halibut fry	幼扁鱈	幼庸鲽		CREATURE:FISH_HALIBUT GENERAL_CHILD_NAME
+great barracuda	巴拉金梭魚	大金梭鱼		CREATURE:FISH_BARRACUDA_GREAT NAME；兩岸通行名不同
+great barracudas	巴拉金梭魚	大金梭鱼		CREATURE:FISH_BARRACUDA_GREAT NAME；兩岸通行名不同
+great barracuda fry	幼巴拉金梭魚	幼大金梭鱼		CREATURE:FISH_BARRACUDA_GREAT GENERAL_CHILD_NAME
+bluefin tuna	黑鮪魚	蓝鳍金枪鱼		CREATURE:FISH_TUNA_BLUEFIN NAME；兩岸通行名不同
+bluefin fry	幼黑鮪魚	幼蓝鳍金枪		CREATURE:FISH_TUNA_BLUEFIN GENERAL_CHILD_NAME；寬度限 11 格，簡中省「鱼」
+narwhal	獨角鯨	独角鲸		CREATURE:NARWHAL NAME
+narwhals	獨角鯨	独角鲸		CREATURE:NARWHAL NAME
+narwhal calf	幼獨角鯨	幼独角鲸		CREATURE:NARWHAL GENERAL_CHILD_NAME
+narwhal calves	幼獨角鯨	幼独角鲸		CREATURE:NARWHAL GENERAL_CHILD_NAME
+narwhal man	獨角鯨人	独角鲸人		CREATURE:NARWHAL MAN CASTE_NAME
+narwhal men	獨角鯨人	独角鲸人		CREATURE:NARWHAL MAN CASTE_NAME
+narwhal woman	女獨角鯨人	女独角鲸人		CREATURE:NARWHAL MAN CASTE_NAME
+narwhal women	女獨角鯨人	女独角鲸人		CREATURE:NARWHAL MAN CASTE_NAME
+giant narwhal	巨型獨角鯨	巨型独角鲸		CREATURE:NARWHAL, GIANT NAME
+giant narwhals	巨型獨角鯨	巨型独角鲸		CREATURE:NARWHAL, GIANT NAME
+giant narwhal calf	幼巨型獨角鯨	幼巨型独角鲸		CREATURE:NARWHAL, GIANT GENERAL_CHILD_NAME
+giant narwhal calves	幼巨型獨角鯨	幼巨型独角鲸		CREATURE:NARWHAL, GIANT GENERAL_CHILD_NAME
+hippo	河馬	河马		CREATURE:HIPPO NAME
+hippos	河馬	河马		CREATURE:HIPPO NAME
+hippo calf	幼河馬	幼河马		CREATURE:HIPPO GENERAL_CHILD_NAME
+hippo calves	幼河馬	幼河马		CREATURE:HIPPO GENERAL_CHILD_NAME
+hippo man	河馬人	河马人		CREATURE:HIPPO_MAN CASTE_NAME
+hippo men	河馬人	河马人		CREATURE:HIPPO_MAN CASTE_NAME
+hippo woman	女河馬人	女河马人		CREATURE:HIPPO_MAN CASTE_NAME
+hippo women	女河馬人	女河马人		CREATURE:HIPPO_MAN CASTE_NAME
+giant hippo	巨型河馬	巨型河马		CREATURE:GIANT_HIPPO NAME
+giant hippos	巨型河馬	巨型河马		CREATURE:GIANT_HIPPO NAME
+giant hippo calf	幼巨型河馬	幼巨型河马		CREATURE:GIANT_HIPPO GENERAL_CHILD_NAME
+giant hippo calves	幼巨型河馬	幼巨型河马		CREATURE:GIANT_HIPPO GENERAL_CHILD_NAME
+longnose gar	長吻雀鱔	长吻雀鳝		CREATURE:FISH_GAR_LONGNOSE NAME
+longnose gars	長吻雀鱔	长吻雀鳝		CREATURE:FISH_GAR_LONGNOSE NAME
+longnose gar fry	幼長吻雀鱔	幼长吻雀鳝		CREATURE:FISH_GAR_LONGNOSE GENERAL_CHILD_NAME
+carp	鯉魚	鲤鱼		CREATURE:FISH_CARP NAME
+carp fry	幼鯉魚	幼鲤鱼		CREATURE:FISH_CARP GENERAL_CHILD_NAME
+tigerfish	非洲虎魚	非洲虎鱼		CREATURE:FISH_TIGERFISH NAME；狗脂鯉屬；台灣虎魚另指毒鮋類，故加非洲
+tigerfish fry	幼非洲虎魚	幼非洲虎鱼		CREATURE:FISH_TIGERFISH GENERAL_CHILD_NAME
+pike	長槍	长枪		CREATURE:FISH_PIKE NAME；同一個英文也是武器 pike（複數 pikes），字典只能一個譯名，取較常見的武器「長槍」
+pike fry	幼狗魚	幼狗鱼		CREATURE:FISH_PIKE GENERAL_CHILD_NAME
+platypus	鴨嘴獸	鸭嘴兽		CREATURE:PLATYPUS NAME
+platypuses	鴨嘴獸	鸭嘴兽		CREATURE:PLATYPUS NAME
+baby platypus	幼鴨嘴獸	幼鸭嘴兽		CREATURE:PLATYPUS GENERAL_CHILD_NAME
+baby platypuses	幼鴨嘴獸	幼鸭嘴兽		CREATURE:PLATYPUS GENERAL_CHILD_NAME
+frozen platypus venom	冰凍的鴨嘴獸毒液	冰冻的鸭嘴兽毒液		CREATURE:PLATYPUS STATE_NAME
+platypus venom	鴨嘴獸毒液	鸭嘴兽毒液		CREATURE:PLATYPUS STATE_NAME
+boiling platypus venom	沸騰的鴨嘴獸毒液	沸腾的鸭嘴兽毒液		CREATURE:PLATYPUS STATE_NAME
+platypus sting	鴨嘴獸螫傷	鸭嘴兽蜇伤		CREATURE:PLATYPUS SYN_NAME
+platypus man	鴨嘴獸人	鸭嘴兽人		CREATURE:PLATYPUS MAN CASTE_NAME
+platypus men	鴨嘴獸人	鸭嘴兽人		CREATURE:PLATYPUS MAN CASTE_NAME
+platypus woman	女鴨嘴獸人	女鸭嘴兽人		CREATURE:PLATYPUS MAN CASTE_NAME
+platypus women	女鴨嘴獸人	女鸭嘴兽人		CREATURE:PLATYPUS MAN CASTE_NAME
+giant platypus	巨型鴨嘴獸	巨型鸭嘴兽		CREATURE:PLATYPUS, GIANT NAME
+giant platypuses	巨型鴨嘴獸	巨型鸭嘴兽		CREATURE:PLATYPUS, GIANT NAME
+baby giant platypus	幼巨型鴨嘴獸	幼巨型鸭嘴兽		CREATURE:PLATYPUS, GIANT GENERAL_CHILD_NAME
+baby giant platypuses	幼巨型鴨嘴獸	幼巨型鸭嘴兽		CREATURE:PLATYPUS, GIANT GENERAL_CHILD_NAME
+octopus	章魚	章鱼		CREATURE:OCTOPUS NAME
+octopuses	章魚	章鱼		CREATURE:OCTOPUS NAME
+frozen octopus ink	冰凍的章魚墨汁	冰冻的章鱼墨汁		CREATURE:OCTOPUS STATE_NAME
+octopus ink	章魚墨汁	章鱼墨汁		CREATURE:OCTOPUS STATE_NAME
+boiling octopus ink	沸騰的章魚墨汁	沸腾的章鱼墨汁		CREATURE:OCTOPUS STATE_NAME
+octopus man	章魚人	章鱼人		CREATURE:OCTOPUS_MAN CASTE_NAME
+octopus men	章魚人	章鱼人		CREATURE:OCTOPUS_MAN CASTE_NAME
+octopus woman	女章魚人	女章鱼人		CREATURE:OCTOPUS_MAN CASTE_NAME
+octopus women	女章魚人	女章鱼人		CREATURE:OCTOPUS_MAN CASTE_NAME
+giant octopus	巨型章魚	巨型章鱼		CREATURE:GIANT_OCTOPUS NAME
+giant octopuses	巨型章魚	巨型章鱼		CREATURE:GIANT_OCTOPUS NAME
+crab	螃蟹	螃蟹		CREATURE:CRAB NAME
+crabs	螃蟹	螃蟹		CREATURE:CRAB NAME
+crab man	螃蟹人	螃蟹人		CREATURE:CRAB_MAN CASTE_NAME
+crab men	螃蟹人	螃蟹人		CREATURE:CRAB_MAN CASTE_NAME
+crab woman	女螃蟹人	女螃蟹人		CREATURE:CRAB_MAN CASTE_NAME
+crab women	女螃蟹人	女螃蟹人		CREATURE:CRAB_MAN CASTE_NAME
+giant crab	巨型螃蟹	巨型螃蟹		CREATURE:GIANT_CRAB NAME
+giant crabs	巨型螃蟹	巨型螃蟹		CREATURE:GIANT_CRAB NAME
+leopard seal	豹斑海豹	豹海豹		CREATURE:LEOPARD_SEAL NAME；兩岸通行名不同
+leopard seals	豹斑海豹	豹海豹		CREATURE:LEOPARD_SEAL NAME；兩岸通行名不同
+leopard seal pup	幼豹斑海豹	幼豹海豹		CREATURE:LEOPARD_SEAL GENERAL_CHILD_NAME
+leopard seal pups	幼豹斑海豹	幼豹海豹		CREATURE:LEOPARD_SEAL GENERAL_CHILD_NAME
+leopard seal man	豹斑海豹人	豹海豹人		CREATURE:LEOPARD_SEAL_MAN CASTE_NAME
+leopard seal men	豹斑海豹人	豹海豹人		CREATURE:LEOPARD_SEAL_MAN CASTE_NAME
+leopard seal woman	女豹斑海豹人	女豹海豹人		CREATURE:LEOPARD_SEAL_MAN CASTE_NAME
+leopard seal women	女豹斑海豹人	女豹海豹人		CREATURE:LEOPARD_SEAL_MAN CASTE_NAME
+giant leopard seal	巨型豹斑海豹	巨型豹海豹		CREATURE:GIANT_LEOPARD_SEAL NAME
+giant leopard seals	巨型豹斑海豹	巨型豹海豹		CREATURE:GIANT_LEOPARD_SEAL NAME
+giant leopard seal pup	幼巨型豹斑海豹	幼巨型豹海豹		CREATURE:GIANT_LEOPARD_SEAL GENERAL_CHILD_NAME
+giant leopard seal pups	幼巨型豹斑海豹	幼巨型豹海豹		CREATURE:GIANT_LEOPARD_SEAL GENERAL_CHILD_NAME
+cuttlefish	烏賊	乌贼		CREATURE:CUTTLEFISH NAME
+frozen cuttlefish ink	冰凍的烏賊墨汁	冰冻的乌贼墨汁		CREATURE:CUTTLEFISH STATE_NAME
+cuttlefish ink	烏賊墨汁	乌贼墨汁		CREATURE:CUTTLEFISH STATE_NAME
+boiling cuttlefish ink	沸騰的烏賊墨汁	沸腾的乌贼墨汁		CREATURE:CUTTLEFISH STATE_NAME
+cuttlefish man	烏賊人	乌贼人		CREATURE:CUTTLEFISH_MAN CASTE_NAME
+cuttlefish men	烏賊人	乌贼人		CREATURE:CUTTLEFISH_MAN CASTE_NAME
+cuttlefish woman	女烏賊人	女乌贼人		CREATURE:CUTTLEFISH_MAN CASTE_NAME
+cuttlefish women	女烏賊人	女乌贼人		CREATURE:CUTTLEFISH_MAN CASTE_NAME
+giant cuttlefish	巨型烏賊	巨型乌贼		CREATURE:GIANT_CUTTLEFISH NAME
+orca	虎鯨	虎鲸		CREATURE:ORCA NAME
+orcas	虎鯨	虎鲸		CREATURE:ORCA NAME
+orca calf	幼虎鯨	幼虎鲸		CREATURE:ORCA GENERAL_CHILD_NAME
+orca calves	幼虎鯨	幼虎鲸		CREATURE:ORCA GENERAL_CHILD_NAME
+orca man	虎鯨人	虎鲸人		CREATURE:ORCA_MAN CASTE_NAME
+orca men	虎鯨人	虎鲸人		CREATURE:ORCA_MAN CASTE_NAME
+orca woman	女虎鯨人	女虎鲸人		CREATURE:ORCA_MAN CASTE_NAME
+orca women	女虎鯨人	女虎鲸人		CREATURE:ORCA_MAN CASTE_NAME
+giant orca	巨型虎鯨	巨型虎鲸		CREATURE:GIANT_ORCA NAME
+giant orcas	巨型虎鯨	巨型虎鲸		CREATURE:GIANT_ORCA NAME
+giant orca calf	幼巨型虎鯨	幼巨型虎鲸		CREATURE:GIANT_ORCA GENERAL_CHILD_NAME
+giant orca calves	幼巨型虎鯨	幼巨型虎鲸		CREATURE:GIANT_ORCA GENERAL_CHILD_NAME
+sponges	海綿	海绵		CREATURE:SPONGE NAME
+sponge man	海綿人	海绵人		CREATURE:SPONGE_MAN NAME
+sponge men	海綿人	海绵人		CREATURE:SPONGE_MAN NAME
+giant sponge	巨型海綿	巨型海绵		CREATURE:GIANT_SPONGE NAME
+giant sponges	巨型海綿	巨型海绵		CREATURE:GIANT_SPONGE NAME
+horseshoe crab	鱟	鲎		CREATURE:HORSESHOE_CRAB NAME；正式名；參考譯名馬蹄蟹
+horseshoe crabs	鱟	鲎		CREATURE:HORSESHOE_CRAB NAME；正式名；參考譯名馬蹄蟹
+horseshoe crab man	鱟人	鲎人		CREATURE:HORSESHOE_CRAB_MAN CASTE_NAME
+horseshoe crab men	鱟人	鲎人		CREATURE:HORSESHOE_CRAB_MAN CASTE_NAME
+horseshoe crab woman	女鱟人	女鲎人		CREATURE:HORSESHOE_CRAB_MAN CASTE_NAME
+horseshoe crab women	女鱟人	女鲎人		CREATURE:HORSESHOE_CRAB_MAN CASTE_NAME
+giant horseshoe crab	巨型鱟	巨型鲎		CREATURE:GIANT_HORSESHOE_CRAB NAME
+giant horseshoe crabs	巨型鱟	巨型鲎		CREATURE:GIANT_HORSESHOE_CRAB NAME
+sperm whale	抹香鯨	抹香鲸		CREATURE:SPERM_WHALE NAME
+sperm whales	抹香鯨	抹香鲸		CREATURE:SPERM_WHALE NAME
+sperm whale calf	幼抹香鯨	幼抹香鲸		CREATURE:SPERM_WHALE GENERAL_CHILD_NAME
+sperm whale calves	幼抹香鯨	幼抹香鲸		CREATURE:SPERM_WHALE GENERAL_CHILD_NAME
+sperm whale man	抹香鯨人	抹香鲸人		CREATURE:SPERM_WHALE_MAN CASTE_NAME
+sperm whale men	抹香鯨人	抹香鲸人		CREATURE:SPERM_WHALE_MAN CASTE_NAME
+sperm whale woman	女抹香鯨人	女抹香鲸人		CREATURE:SPERM_WHALE_MAN CASTE_NAME
+sperm whale women	女抹香鯨人	女抹香鲸人		CREATURE:SPERM_WHALE_MAN CASTE_NAME
+giant sperm whale	巨型抹香鯨	巨型抹香鲸		CREATURE:GIANT_SPERM_WHALE NAME
+giant sperm whales	巨型抹香鯨	巨型抹香鲸		CREATURE:GIANT_SPERM_WHALE NAME
+giant sperm whale calf	幼巨型抹香鯨	幼巨型抹香鲸		CREATURE:GIANT_SPERM_WHALE GENERAL_CHILD_NAME
+giant sperm whale calves	幼巨型抹香鯨	幼巨型抹香鲸		CREATURE:GIANT_SPERM_WHALE GENERAL_CHILD_NAME
+elephant seal	象鼻海豹	象海豹		CREATURE:ELEPHANT_SEAL NAME；兩岸通行名不同
+elephant seals	象鼻海豹	象海豹		CREATURE:ELEPHANT_SEAL NAME；兩岸通行名不同
+elephant seal pup	幼象鼻海豹	幼象海豹		CREATURE:ELEPHANT_SEAL GENERAL_CHILD_NAME
+elephant seal pups	幼象鼻海豹	幼象海豹		CREATURE:ELEPHANT_SEAL GENERAL_CHILD_NAME
+elephant seal man	象鼻海豹人	象海豹人		CREATURE:ELEPHANT_SEAL_MAN CASTE_NAME
+elephant seal men	象鼻海豹人	象海豹人		CREATURE:ELEPHANT_SEAL_MAN CASTE_NAME
+elephant seal woman	女象鼻海豹人	女象海豹人		CREATURE:ELEPHANT_SEAL_MAN CASTE_NAME
+elephant seal women	女象鼻海豹人	女象海豹人		CREATURE:ELEPHANT_SEAL_MAN CASTE_NAME
+giant elephant seal	巨型象鼻海豹	巨型象海豹		CREATURE:GIANT_ELEPHANT_SEAL NAME
+giant elephant seals	巨型象鼻海豹	巨型象海豹		CREATURE:GIANT_ELEPHANT_SEAL NAME
+giant elephant seal pup	幼巨型象鼻海豹	幼巨型象海豹		CREATURE:GIANT_ELEPHANT_SEAL GENERAL_CHILD_NAME
+giant elephant seal pups	幼巨型象鼻海豹	幼巨型象海豹		CREATURE:GIANT_ELEPHANT_SEAL GENERAL_CHILD_NAME
+harp seal	豎琴海豹	竖琴海豹		CREATURE:HARP_SEAL NAME
+harp seals	豎琴海豹	竖琴海豹		CREATURE:HARP_SEAL NAME
+harp seal pup	幼豎琴海豹	幼竖琴海豹		CREATURE:HARP_SEAL GENERAL_CHILD_NAME
+harp seal pups	幼豎琴海豹	幼竖琴海豹		CREATURE:HARP_SEAL GENERAL_CHILD_NAME
+harp seal man	豎琴海豹人	竖琴海豹人		CREATURE:HARP_SEAL_MAN CASTE_NAME
+harp seal men	豎琴海豹人	竖琴海豹人		CREATURE:HARP_SEAL_MAN CASTE_NAME
+harp seal woman	女豎琴海豹人	女竖琴海豹人		CREATURE:HARP_SEAL_MAN CASTE_NAME
+harp seal women	女豎琴海豹人	女竖琴海豹人		CREATURE:HARP_SEAL_MAN CASTE_NAME
+giant harp seal	巨型豎琴海豹	巨型竖琴海豹		CREATURE:GIANT_HARP_SEAL NAME
+giant harp seals	巨型豎琴海豹	巨型竖琴海豹		CREATURE:GIANT_HARP_SEAL NAME
+giant harp seal pup	幼巨型豎琴海豹	幼巨型竖琴海豹		CREATURE:GIANT_HARP_SEAL GENERAL_CHILD_NAME
+giant harp seal pups	幼巨型豎琴海豹	幼巨型竖琴海豹		CREATURE:GIANT_HARP_SEAL GENERAL_CHILD_NAME
+nautilus	鸚鵡螺	鹦鹉螺		CREATURE:NAUTILUS NAME
+nautiluses	鸚鵡螺	鹦鹉螺		CREATURE:NAUTILUS NAME
+nautilus man	鸚鵡螺人	鹦鹉螺人		CREATURE:NAUTILUS_MAN CASTE_NAME
+nautilus men	鸚鵡螺人	鹦鹉螺人		CREATURE:NAUTILUS_MAN CASTE_NAME
+nautilus woman	女鸚鵡螺人	女鹦鹉螺人		CREATURE:NAUTILUS_MAN CASTE_NAME
+nautilus women	女鸚鵡螺人	女鹦鹉螺人		CREATURE:NAUTILUS_MAN CASTE_NAME
+giant nautilus	巨型鸚鵡螺	巨型鹦鹉螺		CREATURE:GIANT_NAUTILUS NAME
+giant nautiluses	巨型鸚鵡螺	巨型鹦鹉螺		CREATURE:GIANT_NAUTILUS NAME
+river otter	水獺	水獭		CREATURE:RIVER OTTER NAME
+river otters	水獺	水獭		CREATURE:RIVER OTTER NAME
+river otter pup	幼水獺	幼水獭		CREATURE:RIVER OTTER GENERAL_CHILD_NAME
+river otter pups	幼水獺	幼水獭		CREATURE:RIVER OTTER GENERAL_CHILD_NAME
+sea otter	海獺	海獭		CREATURE:SEA OTTER NAME
+sea otters	海獺	海獭		CREATURE:SEA OTTER NAME
+sea otter pup	幼海獺	幼海獭		CREATURE:SEA OTTER GENERAL_CHILD_NAME
+sea otter pups	幼海獺	幼海獭		CREATURE:SEA OTTER GENERAL_CHILD_NAME
+otter man	水獺人	水獭人		CREATURE:OTTER_MAN CASTE_NAME
+otter men	水獺人	水獭人		CREATURE:OTTER_MAN CASTE_NAME
+otter woman	女水獺人	女水獭人		CREATURE:OTTER_MAN CASTE_NAME
+otter women	女水獺人	女水獭人		CREATURE:OTTER_MAN CASTE_NAME
+giant otter	巨型水獺	巨型水獭		CREATURE:GIANT_OTTER NAME
+giant otters	巨型水獺	巨型水獭		CREATURE:GIANT_OTTER NAME
+giant otter pup	幼巨型水獺	幼巨型水獭		CREATURE:GIANT_OTTER GENERAL_CHILD_NAME
+giant otter pups	幼巨型水獺	幼巨型水獭		CREATURE:GIANT_OTTER GENERAL_CHILD_NAME
+common snapping turtle	擬鱷龜	拟鳄龟		CREATURE:SNAPPING TURTLE NAME
+common snapping turtles	擬鱷龜	拟鳄龟		CREATURE:SNAPPING TURTLE NAME
+alligator snapping turtle	真鱷龜	大鳄龟		CREATURE:ALLIGATOR SNAPPING TURTLE NAME；兩岸通行名不同
+alligator snapping turtles	真鱷龜	大鳄龟		CREATURE:ALLIGATOR SNAPPING TURTLE NAME；兩岸通行名不同
+snapping turtle man	鱷龜人	鳄龟人		CREATURE:SNAPPING_TURTLE_MAN CASTE_NAME
+snapping turtle men	鱷龜人	鳄龟人		CREATURE:SNAPPING_TURTLE_MAN CASTE_NAME
+snapping turtle woman	女鱷龜人	女鳄龟人		CREATURE:SNAPPING_TURTLE_MAN CASTE_NAME
+snapping turtle women	女鱷龜人	女鳄龟人		CREATURE:SNAPPING_TURTLE_MAN CASTE_NAME
+giant snapping turtle	巨型鱷龜	巨型鳄龟		CREATURE:GIANT_SNAPPING_TURTLE NAME
+giant snapping turtles	巨型鱷龜	巨型鳄龟		CREATURE:GIANT_SNAPPING_TURTLE NAME
+beaver	河狸	河狸		CREATURE:BEAVER NAME
+beavers	河狸	河狸		CREATURE:BEAVER NAME
+beaver kit	幼河狸	幼河狸		CREATURE:BEAVER GENERAL_CHILD_NAME
+beaver kits	幼河狸	幼河狸		CREATURE:BEAVER GENERAL_CHILD_NAME
+beaver man	河狸人	河狸人		CREATURE:BEAVER_MAN CASTE_NAME
+beaver men	河狸人	河狸人		CREATURE:BEAVER_MAN CASTE_NAME
+beaver woman	女河狸人	女河狸人		CREATURE:BEAVER_MAN CASTE_NAME
+beaver women	女河狸人	女河狸人		CREATURE:BEAVER_MAN CASTE_NAME
+giant beaver	巨型河狸	巨型河狸		CREATURE:GIANT_BEAVER NAME
+giant beavers	巨型河狸	巨型河狸		CREATURE:GIANT_BEAVER NAME
+giant beaver kit	幼巨型河狸	幼巨型河狸		CREATURE:GIANT_BEAVER GENERAL_CHILD_NAME
+giant beaver kits	幼巨型河狸	幼巨型河狸		CREATURE:GIANT_BEAVER GENERAL_CHILD_NAME
+leech	水蛭	水蛭		CREATURE:LEECH NAME
+leeches	水蛭	水蛭		CREATURE:LEECH NAME
+leech man	水蛭人	水蛭人		CREATURE:LEECH_MAN NAME
+leech men	水蛭人	水蛭人		CREATURE:LEECH_MAN NAME
+giant leech	巨型水蛭	巨型水蛭		CREATURE:GIANT_LEECH NAME
+giant leeches	巨型水蛭	巨型水蛭		CREATURE:GIANT_LEECH NAME
+axolotl	美西螈	美西螈		CREATURE:AXOLOTL NAME；六角恐龍超寬（限 7 格）
+axolotls	美西螈	美西螈		CREATURE:AXOLOTL NAME；六角恐龍超寬（限 7 格）
+axolotl man	美西螈人	美西螈人		CREATURE:AXOLOTL_MAN CASTE_NAME
+axolotl men	美西螈人	美西螈人		CREATURE:AXOLOTL_MAN CASTE_NAME
+axolotl woman	女美西螈人	女美西螈人		CREATURE:AXOLOTL_MAN CASTE_NAME
+axolotl women	女美西螈人	女美西螈人		CREATURE:AXOLOTL_MAN CASTE_NAME
+giant axolotl	巨型美西螈	巨型美西螈		CREATURE:GIANT_AXOLOTL NAME
+giant axolotls	巨型美西螈	巨型美西螈		CREATURE:GIANT_AXOLOTL NAME
+mink	水貂	水貂		CREATURE:MINK NAME
+minks	水貂	水貂		CREATURE:MINK NAME
+mink kit	幼水貂	幼水貂		CREATURE:MINK GENERAL_CHILD_NAME
+mink kits	幼水貂	幼水貂		CREATURE:MINK GENERAL_CHILD_NAME
+mink man	水貂人	水貂人		CREATURE:MINK_MAN CASTE_NAME
+mink men	水貂人	水貂人		CREATURE:MINK_MAN CASTE_NAME
+mink woman	女水貂人	女水貂人		CREATURE:MINK_MAN CASTE_NAME
+mink women	女水貂人	女水貂人		CREATURE:MINK_MAN CASTE_NAME
+giant mink	巨型水貂	巨型水貂		CREATURE:GIANT_MINK NAME
+giant minks	巨型水貂	巨型水貂		CREATURE:GIANT_MINK NAME
+giant mink kit	幼巨型水貂	幼巨型水貂		CREATURE:GIANT_MINK GENERAL_CHILD_NAME
+giant mink kits	幼巨型水貂	幼巨型水貂		CREATURE:GIANT_MINK GENERAL_CHILD_NAME
+pond turtle	澤龜	泽龟		CREATURE:POND_TURTLE NAME；歐洲澤龜的屬名；參考譯名池龜
+pond turtles	澤龜	泽龟		CREATURE:POND_TURTLE NAME；歐洲澤龜的屬名；參考譯名池龜
+pond turtle man	澤龜人	泽龟人		CREATURE:POND_TURTLE_MAN CASTE_NAME
+pond turtle men	澤龜人	泽龟人		CREATURE:POND_TURTLE_MAN CASTE_NAME
+pond turtle woman	女澤龜人	女泽龟人		CREATURE:POND_TURTLE_MAN CASTE_NAME
+pond turtle women	女澤龜人	女泽龟人		CREATURE:POND_TURTLE_MAN CASTE_NAME
+giant pond turtle	巨型澤龜	巨型泽龟		CREATURE:GIANT_POND_TURTLE NAME
+giant pond turtles	巨型澤龜	巨型泽龟		CREATURE:GIANT_POND_TURTLE NAME
+mussel	貽貝	贻贝		CREATURE:MUSSEL NAME
+mussels	貽貝	贻贝		CREATURE:MUSSEL NAME
+oyster	牡蠣	牡蛎		CREATURE:OYSTER NAME
+oysters	牡蠣	牡蛎		CREATURE:OYSTER NAME
+salmon	鮭魚	鲑鱼		CREATURE:FISH_SALMON NAME
+clownfish	小丑魚	小丑鱼		CREATURE:FISH_CLOWNFISH NAME
+hagfish	盲鰻	盲鳗		CREATURE:FISH_HAGFISH NAME
+brook lamprey	溪七鰓鰻	溪七鳃鳗		CREATURE:FISH_LAMPREY_BROOK NAME；參考譯名河七鳃鳗；brook 譯溪
+brook lampreys	溪七鰓鰻	溪七鳃鳗		CREATURE:FISH_LAMPREY_BROOK NAME；參考譯名河七鳃鳗；brook 譯溪
+bat ray	加州鱝	加州鲼		CREATURE:FISH_RAY_BAT NAME；正式名：加州鱝／加州鲼；與 manta 的鬼蝠魟／蝠鲼區分
+bat rays	加州鱝	加州鲼		CREATURE:FISH_RAY_BAT NAME；正式名：加州鱝／加州鲼；與 manta 的鬼蝠魟／蝠鲼區分
+thornback ray	刺鰩	刺鳐		CREATURE:FISH_RAY_THORNBACK NAME
+thornback rays	刺鰩	刺鳐		CREATURE:FISH_RAY_THORNBACK NAME
+spotted ratfish	斑點銀鮫	斑点银鲛		CREATURE:FISH_RATFISH_SPOTTED NAME；ratfish 是銀鮫；參考譯名斑点鼠鱼為字面譯
+herring	鯡魚	鲱鱼		CREATURE:FISH_HERRING NAME
+herrings	鯡魚	鲱鱼		CREATURE:FISH_HERRING NAME
+shad	鰣魚	鲥鱼		CREATURE:FISH_SHAD NAME；寬度限 4 格
+shads	鰣魚	鲥鱼		CREATURE:FISH_SHAD NAME；寬度限 4 格
+anchovy	鯷魚	鳀鱼		CREATURE:FISH_ANCHOVY NAME
+anchovies	鯷魚	鳀鱼		CREATURE:FISH_ANCHOVY NAME
+steelhead trout	硬頭鱒	硬头鳟		CREATURE:FISH_TROUT_STEELHEAD NAME
+hake	無鬚鱈	无须鳕		CREATURE:FISH_HAKE NAME
+seahorse	海馬	海马		CREATURE:FISH_SEAHORSE NAME
+seahorses	海馬	海马		CREATURE:FISH_SEAHORSE NAME
+glasseye	大眼鯛	大眼鲷		CREATURE:FISH_GLASSEYE NAME
+white-spotted puffer	白點叉鼻魨	纹腹叉鼻鲀		CREATURE:FISH_PUFFER_WHITE_SPOTTED NAME；兩岸正式名不同
+white-spotted puffers	白點叉鼻魨	纹腹叉鼻鲀		CREATURE:FISH_PUFFER_WHITE_SPOTTED NAME；兩岸正式名不同
+sole	鰨魚	鳎鱼		CREATURE:FISH_SOLE NAME
+flounder	比目魚	比目鱼		CREATURE:FISH_FLOUNDER NAME
+flounders	比目魚	比目鱼		CREATURE:FISH_FLOUNDER NAME
+mackerel	鯖魚	鲭鱼		CREATURE:FISH_MACKEREL NAME
+sea nettle jellyfish	海蕁麻水母	海荨麻水母		CREATURE:JELLYFISH_SEA_NETTLE NAME
+squid	魷魚	鱿鱼		CREATURE:SQUID NAME
+squids	魷魚	鱿鱼		CREATURE:SQUID NAME
+frozen squid ink	冰凍的魷魚墨汁	冰冻的鱿鱼墨汁		CREATURE:SQUID STATE_NAME
+squid ink	魷魚墨汁	鱿鱼墨汁		CREATURE:SQUID STATE_NAME
+boiling squid ink	沸騰的魷魚墨汁	沸腾的鱿鱼墨汁		CREATURE:SQUID STATE_NAME
+squid man	魷魚人	鱿鱼人		CREATURE:SQUID MAN CASTE_NAME
+squid men	魷魚人	鱿鱼人		CREATURE:SQUID MAN CASTE_NAME
+squid woman	女魷魚人	女鱿鱼人		CREATURE:SQUID MAN CASTE_NAME
+squid women	女魷魚人	女鱿鱼人		CREATURE:SQUID MAN CASTE_NAME
+gigantic squid	大王魷	大王乌贼		CREATURE:GIGANTIC SQUID NAME；真實物種大王魷（非 giant 派生）；兩岸通行名不同
+gigantic squids	大王魷	大王乌贼		CREATURE:GIGANTIC SQUID NAME；真實物種大王魷（非 giant 派生）；兩岸通行名不同
+lungfish	肺魚	肺鱼		CREATURE:FISH_LUNGFISH NAME
+clown loach	皇冠三間鼠	皇冠沙鳅		CREATURE:FISH_LOACH_CLOWN NAME；兩岸觀賞魚通行名不同
+clown loaches	皇冠三間鼠	皇冠沙鳅		CREATURE:FISH_LOACH_CLOWN NAME；兩岸觀賞魚通行名不同
+brown bullhead	褐首鯰	云斑鮰		CREATURE:FISH_BULLHEAD_BROWN NAME；兩岸通行名不同
+brown bullheads	褐首鯰	云斑鮰		CREATURE:FISH_BULLHEAD_BROWN NAME；兩岸通行名不同
+yellow bullhead	黃首鯰	黄鮰		CREATURE:FISH_BULLHEAD_YELLOW NAME；兩岸通行名不同
+yellow bullheads	黃首鯰	黄鮰		CREATURE:FISH_BULLHEAD_YELLOW NAME；兩岸通行名不同
+black bullhead	黑首鯰	黑鮰		CREATURE:FISH_BULLHEAD_BLACK NAME；兩岸通行名不同
+black bullheads	黑首鯰	黑鮰		CREATURE:FISH_BULLHEAD_BLACK NAME；兩岸通行名不同
+banded knifefish	圭亞那裸背電鰻	圭亚那裸背电鳗		CREATURE:FISH_KNIFEFISH_BANDED NAME；正式物種：圭亞那裸背電鰻／圭亚那裸背电鳗（Gymnotus carapo）；參考譯名「带状刀鱼」為字面譯
+char	紅點鮭	红点鲑		CREATURE:FISH_CHAR NAME
+rainbow trout	虹鱒	虹鳟		CREATURE:FISH_TROUT_RAINBOW NAME
+sailfin molly	帆鰭花鱂	帆鳍花鳉		CREATURE:FISH_MOLLY_SAILFIN NAME
+sailfin mollies	帆鰭花鱂	帆鳍花鳉		CREATURE:FISH_MOLLY_SAILFIN NAME
+guppy	孔雀魚	孔雀鱼		CREATURE:FISH_GUPPY NAME
+guppies	孔雀魚	孔雀鱼		CREATURE:FISH_GUPPY NAME
+perch	河鱸	河鲈		CREATURE:FISH_PERCH NAME

@@ -39,3 +39,6 @@ Farm plots	農田	农田		設施子分頁
 Siege engines	攻城器械	攻城器械		設施子分頁
 You do not have any zones.	目前沒有任何區域。	你还没有划定任何区域。		設施 > 區域 空清單提示
 Zones can be added using the zone menu at the bottom of the screen.	可從畫面下方的區域選單新增區域。	可通过屏幕底部的区域菜单添加区域。		設施 > 區域 空清單提示第二句
+Back	返回	返回		建築資訊頁的返回鈕（拉桿連結機關後）；整句寫出來，免得引擎把大寫查不到的字退回小寫，套到同字的 raws 名稱（back 身體部位「後部」）
+Clear	清除	清除		命名介面的清除鈕；整句寫出來，免得引擎把大寫查不到的字退回小寫，套到同字的 raws 名稱（clear 顏色「透明」）
+Fly	飛	飞		生物移動方式（爬、走、飛）；整句寫出來，免得引擎把大寫查不到的字退回小寫，套到同字的 raws 名稱（fly 蒼蠅）

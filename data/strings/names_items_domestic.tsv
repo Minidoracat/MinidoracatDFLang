@@ -1,0 +1,470 @@
+en	zh-Hant	zh-Hans	align	note
+dog	狗	狗		CREATURE:DOG NAME
+dogs	狗	狗		CREATURE:DOG NAME
+canine	狗	狗		CREATURE:DOG NAME
+puppy	幼犬	幼犬		CREATURE:DOG GENERAL_CHILD_NAME
+puppies	幼犬	幼犬		CREATURE:DOG GENERAL_CHILD_NAME
+ears	耳朵	耳朵		CREATURE:DOG TLCM_NOUN；狗的外觀描述
+front paws	前爪	前爪		CREATURE:DOG TLCM_NOUN；狗的外觀描述
+rear paws	後爪	后爪		CREATURE:DOG TLCM_NOUN；狗的外觀描述
+cat	貓	猫		CREATURE:CAT NAME
+cats	貓	猫		CREATURE:CAT NAME
+feline	貓	猫		CREATURE:CAT NAME
+kitten	幼貓	幼猫		CREATURE:CAT GENERAL_CHILD_NAME
+kittens	幼貓	幼猫		CREATURE:CAT GENERAL_CHILD_NAME
+mule	騾	骡		CREATURE:MULE NAME
+mules	騾	骡		CREATURE:MULE NAME
+mule foal	小騾	小骡		CREATURE:MULE GENERAL_CHILD_NAME
+mule foals	小騾	小骡		CREATURE:MULE GENERAL_CHILD_NAME
+donkey	驢	驴		CREATURE:DONKEY NAME
+donkeys	驢	驴		CREATURE:DONKEY NAME
+asinine	驢	驴		CREATURE:DONKEY NAME
+donkey foal	小驢	小驴		CREATURE:DONKEY GENERAL_CHILD_NAME
+donkey foals	小驢	小驴		CREATURE:DONKEY GENERAL_CHILD_NAME
+frozen donkey's milk	冰凍的驢奶	冰冻的驴奶		CREATURE:DONKEY STATE_NAME
+donkey's milk	驢奶	驴奶		CREATURE:DONKEY STATE_NAME
+boiling donkey's milk	沸騰的驢奶	沸腾的驴奶		CREATURE:DONKEY STATE_NAME
+donkey cheese	驢起司	驴奶酪		CREATURE:DONKEY STATE_NAME；起司／奶酪兩岸用語不同
+donkey cheese powder	驢起司粉	驴奶酪粉		CREATURE:DONKEY STATE_NAME
+melted donkey cheese	融化的驢起司	融化的驴奶酪		CREATURE:DONKEY STATE_NAME
+boiling donkey cheese	沸騰的驢起司	沸腾的驴奶酪		CREATURE:DONKEY STATE_NAME
+horse	馬	马		CREATURE:HORSE NAME
+horses	馬	马		CREATURE:HORSE NAME
+equine	馬	马		CREATURE:HORSE NAME
+horse foal	小馬	小马		CREATURE:HORSE GENERAL_CHILD_NAME
+horse foals	小馬	小马		CREATURE:HORSE GENERAL_CHILD_NAME
+frozen horse's milk	冰凍的馬奶	冰冻的马奶		CREATURE:HORSE STATE_NAME
+horse's milk	馬奶	马奶		CREATURE:HORSE STATE_NAME
+boiling horse's milk	沸騰的馬奶	沸腾的马奶		CREATURE:HORSE STATE_NAME
+horse cheese	馬起司	马奶酪		CREATURE:HORSE STATE_NAME；起司／奶酪兩岸用語不同
+horse cheese powder	馬起司粉	马奶酪粉		CREATURE:HORSE STATE_NAME
+melted horse cheese	融化的馬起司	融化的马奶酪		CREATURE:HORSE STATE_NAME
+boiling horse cheese	沸騰的馬起司	沸腾的马奶酪		CREATURE:HORSE STATE_NAME
+cow	牛	牛		CREATURE:COW NAME；物種名；母牛的階級名也是 cow
+cows	牛	牛		CREATURE:COW NAME；物種名；母牛的階級名也是 cow
+bovine	牛	牛		CREATURE:COW NAME；物種名；母牛的階級名也是 cow
+vellum	犢皮紙	犊皮纸		CREATURE:COW STATE_NAME；牛皮製的書寫材料；簡中不用「牛皮纸」（那是包裝紙）
+cow calf	小牛	小牛		CREATURE:COW GENERAL_CHILD_NAME
+cow calves	小牛	小牛		CREATURE:COW GENERAL_CHILD_NAME
+frozen cow's milk	冰凍的牛奶	冰冻的牛奶		CREATURE:COW STATE_NAME
+cow's milk	牛奶	牛奶		CREATURE:COW STATE_NAME
+boiling cow's milk	沸騰的牛奶	沸腾的牛奶		CREATURE:COW STATE_NAME
+cow cheese	牛起司	牛奶酪		CREATURE:COW STATE_NAME；起司／奶酪兩岸用語不同
+cow cheese powder	牛起司粉	牛奶酪粉		CREATURE:COW STATE_NAME
+melted cow cheese	融化的牛起司	融化的牛奶酪		CREATURE:COW STATE_NAME
+boiling cow cheese	沸騰的牛起司	沸腾的牛奶酪		CREATURE:COW STATE_NAME
+bull	公牛	公牛		CREATURE:COW CASTE_NAME
+bulls	公牛	公牛		CREATURE:COW CASTE_NAME
+sheep	綿羊	绵羊		CREATURE:SHEEP NAME
+ovine	綿羊	绵羊		CREATURE:SHEEP NAME
+lamb	小羊	小羊		CREATURE:SHEEP GENERAL_CHILD_NAME
+lambs	小羊	小羊		CREATURE:SHEEP GENERAL_CHILD_NAME
+ewe	母羊	母羊		CREATURE:SHEEP CASTE_NAME
+ewes	母羊	母羊		CREATURE:SHEEP CASTE_NAME
+frozen sheep's milk	冰凍的綿羊奶	冰冻的绵羊奶		CREATURE:SHEEP STATE_NAME
+sheep's milk	綿羊奶	绵羊奶		CREATURE:SHEEP STATE_NAME
+boiling sheep's milk	沸騰的綿羊奶	沸腾的绵羊奶		CREATURE:SHEEP STATE_NAME
+sheep cheese	綿羊起司	绵羊奶酪		CREATURE:SHEEP STATE_NAME；起司／奶酪兩岸用語不同
+sheep cheese powder	綿羊起司粉	绵羊奶酪粉		CREATURE:SHEEP STATE_NAME
+melted sheep cheese	融化的綿羊起司	融化的绵羊奶酪		CREATURE:SHEEP STATE_NAME
+boiling sheep cheese	沸騰的綿羊起司	沸腾的绵羊奶酪		CREATURE:SHEEP STATE_NAME
+ram	公羊	公羊		CREATURE:SHEEP CASTE_NAME
+rams	公羊	公羊		CREATURE:SHEEP CASTE_NAME
+pig	豬	猪		CREATURE:PIG NAME
+pigs	豬	猪		CREATURE:PIG NAME
+porcine	豬	猪		CREATURE:PIG NAME
+piglet	小豬	小猪		CREATURE:PIG GENERAL_CHILD_NAME
+piglets	小豬	小猪		CREATURE:PIG GENERAL_CHILD_NAME
+sow	母豬	母猪		CREATURE:PIG CASTE_NAME
+sows	母豬	母猪		CREATURE:PIG CASTE_NAME
+frozen pig's milk	冰凍的豬奶	冰冻的猪奶		CREATURE:PIG STATE_NAME
+pig's milk	豬奶	猪奶		CREATURE:PIG STATE_NAME
+boiling pig's milk	沸騰的豬奶	沸腾的猪奶		CREATURE:PIG STATE_NAME
+pig cheese	豬起司	猪奶酪		CREATURE:PIG STATE_NAME；起司／奶酪兩岸用語不同
+pig cheese powder	豬起司粉	猪奶酪粉		CREATURE:PIG STATE_NAME
+melted pig cheese	融化的豬起司	融化的猪奶酪		CREATURE:PIG STATE_NAME
+boiling pig cheese	沸騰的豬起司	沸腾的猪奶酪		CREATURE:PIG STATE_NAME
+boar	公豬	公猪		CREATURE:PIG CASTE_NAME
+boars	公豬	公猪		CREATURE:PIG CASTE_NAME
+goat	山羊	山羊		CREATURE:GOAT NAME
+goats	山羊	山羊		CREATURE:GOAT NAME
+hircine	山羊	山羊		CREATURE:GOAT NAME
+goat kid	小山羊	小山羊		CREATURE:GOAT GENERAL_CHILD_NAME
+goat kids	小山羊	小山羊		CREATURE:GOAT GENERAL_CHILD_NAME
+nanny goat	母山羊	母山羊		CREATURE:GOAT CASTE_NAME
+nanny goats	母山羊	母山羊		CREATURE:GOAT CASTE_NAME
+frozen goat's milk	冰凍的山羊奶	冰冻的山羊奶		CREATURE:GOAT STATE_NAME
+goat's milk	山羊奶	山羊奶		CREATURE:GOAT STATE_NAME
+boiling goat's milk	沸騰的山羊奶	沸腾的山羊奶		CREATURE:GOAT STATE_NAME
+goat cheese	山羊起司	山羊奶酪		CREATURE:GOAT STATE_NAME；起司／奶酪兩岸用語不同
+goat cheese powder	山羊起司粉	山羊奶酪粉		CREATURE:GOAT STATE_NAME
+melted goat cheese	融化的山羊起司	融化的山羊奶酪		CREATURE:GOAT STATE_NAME
+boiling goat cheese	沸騰的山羊起司	沸腾的山羊奶酪		CREATURE:GOAT STATE_NAME
+billy goat	公山羊	公山羊		CREATURE:GOAT CASTE_NAME
+billy goats	公山羊	公山羊		CREATURE:GOAT CASTE_NAME
+beard	鬍鬚	胡须		CREATURE:GOAT TLCM_NOUN；山羊的外觀描述
+chicken	雞	鸡		CREATURE:BIRD_CHICKEN NAME
+chickens	雞	鸡		CREATURE:BIRD_CHICKEN NAME
+chick	小雞	小鸡		CREATURE:BIRD_CHICKEN GENERAL_CHILD_NAME
+chicks	小雞	小鸡		CREATURE:BIRD_CHICKEN GENERAL_CHILD_NAME
+hen	母雞	母鸡		CREATURE:BIRD_CHICKEN CASTE_NAME
+hens	母雞	母鸡		CREATURE:BIRD_CHICKEN CASTE_NAME
+rooster	公雞	公鸡		CREATURE:BIRD_CHICKEN CASTE_NAME
+roosters	公雞	公鸡		CREATURE:BIRD_CHICKEN CASTE_NAME
+cavy	天竺鼠	豚鼠		CREATURE:CAVY NAME；台灣通稱天竺鼠，大陸用正式名豚鼠
+cavies	天竺鼠	豚鼠		CREATURE:CAVY NAME
+cavy pup	幼天竺鼠	幼豚鼠		CREATURE:CAVY GENERAL_CHILD_NAME
+cavy pups	幼天竺鼠	幼豚鼠		CREATURE:CAVY GENERAL_CHILD_NAME
+cavy sow	母天竺鼠	母豚鼠		CREATURE:CAVY CASTE_NAME
+cavy sows	母天竺鼠	母豚鼠		CREATURE:CAVY CASTE_NAME
+cavy boar	公天竺鼠	公豚鼠		CREATURE:CAVY CASTE_NAME
+cavy boars	公天竺鼠	公豚鼠		CREATURE:CAVY CASTE_NAME
+duck	鴨	鸭		CREATURE:BIRD_DUCK NAME；物種名；母鴨的階級名也是 duck
+ducks	鴨	鸭		CREATURE:BIRD_DUCK NAME；物種名；母鴨的階級名也是 duck
+duckling	小鴨	小鸭		CREATURE:BIRD_DUCK GENERAL_CHILD_NAME
+ducklings	小鴨	小鸭		CREATURE:BIRD_DUCK GENERAL_CHILD_NAME
+drake	公鴨	公鸭		CREATURE:BIRD_DUCK CASTE_NAME
+drakes	公鴨	公鸭		CREATURE:BIRD_DUCK CASTE_NAME
+water buffalo	水牛	水牛		CREATURE:WATER_BUFFALO NAME
+water buffalos	水牛	水牛		CREATURE:WATER_BUFFALO NAME
+water buffalo calf	小水牛	小水牛		CREATURE:WATER_BUFFALO GENERAL_CHILD_NAME
+water buffalo calves	小水牛	小水牛		CREATURE:WATER_BUFFALO GENERAL_CHILD_NAME
+water buffalo cow	母水牛	母水牛		CREATURE:WATER_BUFFALO CASTE_NAME
+water buffalo cows	母水牛	母水牛		CREATURE:WATER_BUFFALO CASTE_NAME
+frozen water buffalo's milk	冰凍的水牛奶	冰冻的水牛奶		CREATURE:WATER_BUFFALO STATE_NAME
+water buffalo's milk	水牛奶	水牛奶		CREATURE:WATER_BUFFALO STATE_NAME
+boiling water buffalo's milk	沸騰的水牛奶	沸腾的水牛奶		CREATURE:WATER_BUFFALO STATE_NAME
+water buffalo cheese	水牛起司	水牛奶酪		CREATURE:WATER_BUFFALO STATE_NAME；起司／奶酪兩岸用語不同
+water buffalo cheese powder	水牛起司粉	水牛奶酪粉		CREATURE:WATER_BUFFALO STATE_NAME
+melted water buffalo cheese	融化的水牛起司	融化的水牛奶酪		CREATURE:WATER_BUFFALO STATE_NAME
+boiling water buffalo cheese	沸騰的水牛起司	沸腾的水牛奶酪		CREATURE:WATER_BUFFALO STATE_NAME
+water buffalo bull	公水牛	公水牛		CREATURE:WATER_BUFFALO CASTE_NAME
+water buffalo bulls	公水牛	公水牛		CREATURE:WATER_BUFFALO CASTE_NAME
+reindeer	馴鹿	驯鹿		CREATURE:REINDEER NAME
+reindeer calf	小馴鹿	小驯鹿		CREATURE:REINDEER GENERAL_CHILD_NAME
+reindeer calves	小馴鹿	小驯鹿		CREATURE:REINDEER GENERAL_CHILD_NAME
+antler	鹿角	鹿角		CREATURE:REINDEER STATE_NAME；馴鹿的鹿角材料
+reindeer cow	母馴鹿	母驯鹿		CREATURE:REINDEER CASTE_NAME
+reindeer cows	母馴鹿	母驯鹿		CREATURE:REINDEER CASTE_NAME
+frozen reindeer's milk	冰凍的馴鹿奶	冰冻的驯鹿奶		CREATURE:REINDEER STATE_NAME
+reindeer's milk	馴鹿奶	驯鹿奶		CREATURE:REINDEER STATE_NAME
+boiling reindeer's milk	沸騰的馴鹿奶	沸腾的驯鹿奶		CREATURE:REINDEER STATE_NAME
+reindeer cheese	馴鹿起司	驯鹿奶酪		CREATURE:REINDEER STATE_NAME；起司／奶酪兩岸用語不同
+reindeer cheese powder	馴鹿起司粉	驯鹿奶酪粉		CREATURE:REINDEER STATE_NAME
+melted reindeer cheese	融化的馴鹿起司	融化的驯鹿奶酪		CREATURE:REINDEER STATE_NAME
+boiling reindeer cheese	沸騰的馴鹿起司	沸腾的驯鹿奶酪		CREATURE:REINDEER STATE_NAME
+reindeer bull	公馴鹿	公驯鹿		CREATURE:REINDEER CASTE_NAME
+reindeer bulls	公馴鹿	公驯鹿		CREATURE:REINDEER CASTE_NAME
+goose	鵝	鹅		CREATURE:BIRD_GOOSE NAME；物種名；母鵝的階級名也是 goose
+geese	鵝	鹅		CREATURE:BIRD_GOOSE NAME；物種名；母鵝的階級名也是 goose
+gosling	小鵝	小鹅		CREATURE:BIRD_GOOSE GENERAL_CHILD_NAME
+goslings	小鵝	小鹅		CREATURE:BIRD_GOOSE GENERAL_CHILD_NAME
+gander	公鵝	公鹅		CREATURE:BIRD_GOOSE CASTE_NAME
+ganders	公鵝	公鹅		CREATURE:BIRD_GOOSE CASTE_NAME
+yak	犛牛	牦牛		CREATURE:YAK NAME
+yaks	犛牛	牦牛		CREATURE:YAK NAME
+yak calf	小犛牛	小牦牛		CREATURE:YAK GENERAL_CHILD_NAME
+yak calves	小犛牛	小牦牛		CREATURE:YAK GENERAL_CHILD_NAME
+yak cow	母犛牛	母牦牛		CREATURE:YAK CASTE_NAME
+yak cows	母犛牛	母牦牛		CREATURE:YAK CASTE_NAME
+frozen yak's milk	冰凍的犛牛奶	冰冻的牦牛奶		CREATURE:YAK STATE_NAME
+yak's milk	犛牛奶	牦牛奶		CREATURE:YAK STATE_NAME
+boiling yak's milk	沸騰的犛牛奶	沸腾的牦牛奶		CREATURE:YAK STATE_NAME
+yak cheese	犛牛起司	牦牛奶酪		CREATURE:YAK STATE_NAME；起司／奶酪兩岸用語不同
+yak cheese powder	犛牛起司粉	牦牛奶酪粉		CREATURE:YAK STATE_NAME
+melted yak cheese	融化的犛牛起司	融化的牦牛奶酪		CREATURE:YAK STATE_NAME
+boiling yak cheese	沸騰的犛牛起司	沸腾的牦牛奶酪		CREATURE:YAK STATE_NAME
+yak bull	公犛牛	公牦牛		CREATURE:YAK CASTE_NAME
+yak bulls	公犛牛	公牦牛		CREATURE:YAK CASTE_NAME
+llama	駱馬	大羊驼		CREATURE:LLAMA NAME；台灣常稱駱馬，大陸用正式名大羊驼
+llamas	駱馬	大羊驼		CREATURE:LLAMA NAME
+baby llama	小駱馬	幼大羊驼		CREATURE:LLAMA GENERAL_CHILD_NAME
+baby llamas	小駱馬	幼大羊驼		CREATURE:LLAMA GENERAL_CHILD_NAME
+frozen llama's milk	冰凍的駱馬奶	冰冻的大羊驼奶		CREATURE:LLAMA STATE_NAME
+llama's milk	駱馬奶	大羊驼奶		CREATURE:LLAMA STATE_NAME
+boiling llama's milk	沸騰的駱馬奶	沸腾的大羊驼奶		CREATURE:LLAMA STATE_NAME
+llama cheese	駱馬起司	大羊驼奶酪		CREATURE:LLAMA STATE_NAME；起司／奶酪兩岸用語不同
+llama cheese powder	駱馬起司粉	大羊驼奶酪粉		CREATURE:LLAMA STATE_NAME
+melted llama cheese	融化的駱馬起司	融化的大羊驼奶酪		CREATURE:LLAMA STATE_NAME
+boiling llama cheese	沸騰的駱馬起司	沸腾的大羊驼奶酪		CREATURE:LLAMA STATE_NAME
+alpaca	羊駝	羊驼		CREATURE:ALPACA NAME
+alpacas	羊駝	羊驼		CREATURE:ALPACA NAME
+baby alpaca	小羊駝	小羊驼		CREATURE:ALPACA GENERAL_CHILD_NAME
+baby alpacas	小羊駝	小羊驼		CREATURE:ALPACA GENERAL_CHILD_NAME
+frozen alpaca's milk	冰凍的羊駝奶	冰冻的羊驼奶		CREATURE:ALPACA STATE_NAME
+alpaca's milk	羊駝奶	羊驼奶		CREATURE:ALPACA STATE_NAME
+boiling alpaca's milk	沸騰的羊駝奶	沸腾的羊驼奶		CREATURE:ALPACA STATE_NAME
+alpaca cheese	羊駝起司	羊驼奶酪		CREATURE:ALPACA STATE_NAME；起司／奶酪兩岸用語不同
+alpaca cheese powder	羊駝起司粉	羊驼奶酪粉		CREATURE:ALPACA STATE_NAME
+melted alpaca cheese	融化的羊駝起司	融化的羊驼奶酪		CREATURE:ALPACA STATE_NAME
+boiling alpaca cheese	沸騰的羊駝起司	沸腾的羊驼奶酪		CREATURE:ALPACA STATE_NAME
+guineafowl	珠雞	珠鸡		CREATURE:BIRD_GUINEAFOWL NAME；兩岸都用珠雞（正式名盔珠雞）；小珠雞要放進 keet 的 6 格
+guineafowls	珠雞	珠鸡		CREATURE:BIRD_GUINEAFOWL NAME
+keet	小珠雞	小珠鸡		CREATURE:BIRD_GUINEAFOWL GENERAL_CHILD_NAME；珠雞幼鳥
+keets	小珠雞	小珠鸡		CREATURE:BIRD_GUINEAFOWL GENERAL_CHILD_NAME
+guineahen	母珠雞	母珠鸡		CREATURE:BIRD_GUINEAFOWL CASTE_NAME
+guineahens	母珠雞	母珠鸡		CREATURE:BIRD_GUINEAFOWL CASTE_NAME
+guineacock	公珠雞	公珠鸡		CREATURE:BIRD_GUINEAFOWL CASTE_NAME
+guineacocks	公珠雞	公珠鸡		CREATURE:BIRD_GUINEAFOWL CASTE_NAME
+blue peafowl	藍孔雀	蓝孔雀		CREATURE:BIRD_PEAFOWL_BLUE NAME
+blue peafowls	藍孔雀	蓝孔雀		CREATURE:BIRD_PEAFOWL_BLUE NAME
+blue peachick	小藍孔雀	小蓝孔雀		CREATURE:BIRD_PEAFOWL_BLUE GENERAL_CHILD_NAME
+blue peachicks	小藍孔雀	小蓝孔雀		CREATURE:BIRD_PEAFOWL_BLUE GENERAL_CHILD_NAME
+blue peahen	母藍孔雀	母蓝孔雀		CREATURE:BIRD_PEAFOWL_BLUE CASTE_NAME
+blue peahens	母藍孔雀	母蓝孔雀		CREATURE:BIRD_PEAFOWL_BLUE CASTE_NAME
+blue peacock	公藍孔雀	公蓝孔雀		CREATURE:BIRD_PEAFOWL_BLUE CASTE_NAME
+blue peacocks	公藍孔雀	公蓝孔雀		CREATURE:BIRD_PEAFOWL_BLUE CASTE_NAME
+turkey	火雞	火鸡		CREATURE:BIRD_TURKEY NAME
+turkeys	火雞	火鸡		CREATURE:BIRD_TURKEY NAME
+poult	小火雞	小火鸡		CREATURE:BIRD_TURKEY GENERAL_CHILD_NAME；火雞幼鳥
+poults	小火雞	小火鸡		CREATURE:BIRD_TURKEY GENERAL_CHILD_NAME
+turkey hen	母火雞	母火鸡		CREATURE:BIRD_TURKEY CASTE_NAME
+turkey hens	母火雞	母火鸡		CREATURE:BIRD_TURKEY CASTE_NAME
+turkey gobbler	公火雞	公火鸡		CREATURE:BIRD_TURKEY CASTE_NAME
+turkey gobblers	公火雞	公火鸡		CREATURE:BIRD_TURKEY CASTE_NAME
+rabbit	兔	兔		CREATURE:RABBIT NAME
+rabbits	兔	兔		CREATURE:RABBIT NAME
+bunny	小兔	小兔		CREATURE:RABBIT GENERAL_CHILD_NAME
+bunnies	小兔	小兔		CREATURE:RABBIT GENERAL_CHILD_NAME
+doe rabbit	母兔	母兔		CREATURE:RABBIT CASTE_NAME
+doe rabbits	母兔	母兔		CREATURE:RABBIT CASTE_NAME
+buck rabbit	公兔	公兔		CREATURE:RABBIT CASTE_NAME
+buck rabbits	公兔	公兔		CREATURE:RABBIT CASTE_NAME
+monarchs	君主	君主		ENTITY:MOUNTAIN NAME
+generals	將軍	将军		ENTITY:MOUNTAIN NAME
+lieutenants	副將	副将		ENTITY:MOUNTAIN NAME
+captains	隊長	队长		ENTITY:MOUNTAIN NAME
+militia commanders	民兵指揮官	民兵指挥官		ENTITY:MOUNTAIN NAME
+militia captains	民兵隊長	民兵队长		ENTITY:MOUNTAIN NAME
+sheriffs	治安官	治安官		ENTITY:MOUNTAIN NAME
+captains of the guard	衛隊長	卫队长		ENTITY:MOUNTAIN NAME
+expedition leaders	遠征隊長	远征队长		ENTITY:MOUNTAIN NAME
+mayors	市長	市长		ENTITY:MOUNTAIN NAME
+managers	經理	经理		ENTITY:MOUNTAIN NAME
+chief medical dwarves	首席醫師	首席医师		ENTITY:MOUNTAIN NAME
+brokers	交易員	交易员		ENTITY:MOUNTAIN NAME
+bookkeepers	簿記員	簿记员		ENTITY:MOUNTAIN NAME
+outpost liaisons	前哨站聯絡人	前哨站联络人		ENTITY:MOUNTAIN NAME
+diplomats	外交官	外交官		ENTITY:MOUNTAIN NAME
+champions	勇士	勇士		ENTITY:MOUNTAIN NAME
+hammerers	錘刑官	锤刑官		ENTITY:MOUNTAIN NAME
+dungeon masters	地牢總管	地牢总管		ENTITY:MOUNTAIN NAME
+administrators	管理者	管理人员		ENTITY:MOUNTAIN NAME
+messengers	信使	信使		ENTITY:MOUNTAIN NAME
+druid	德魯伊	德鲁伊		ENTITY:FOREST NAME；精靈的宗教領袖
+druids	德魯伊	德鲁伊		ENTITY:FOREST NAME
+acolyte	侍僧	侍僧		ENTITY:FOREST NAME
+acolytes	侍僧	侍僧		ENTITY:FOREST NAME
+princess	公主	公主		ENTITY:FOREST NAME
+princesses	公主	公主		ENTITY:FOREST NAME
+ranger captain	遊俠隊長	游侠队长		ENTITY:FOREST NAME
+ranger captains	遊俠隊長	游侠队长		ENTITY:FOREST NAME
+bolt	弩箭	弩箭		ITEM_AMMO:ITEM_AMMO_BOLTS NAME
+bolts	弩箭	弩箭		ITEM_AMMO:ITEM_AMMO_BOLTS NAME
+arrow	箭矢	箭矢		ITEM_AMMO:ITEM_AMMO_ARROWS NAME
+arrows	箭矢	箭矢		ITEM_AMMO:ITEM_AMMO_ARROWS NAME
+blowdart	吹箭	吹箭		ITEM_AMMO:ITEM_AMMO_BLOWDARTS NAME
+blowdarts	吹箭	吹箭		ITEM_AMMO:ITEM_AMMO_BLOWDARTS NAME
+breastplate	胸甲	胸甲		ITEM_ARMOR:ITEM_ARMOR_BREASTPLATE NAME
+breastplates	胸甲	胸甲		ITEM_ARMOR:ITEM_ARMOR_BREASTPLATE NAME
+mail shirt	鎖子甲	锁子甲		ITEM_ARMOR:ITEM_ARMOR_MAIL_SHIRT NAME
+mail shirts	鎖子甲	锁子甲		ITEM_ARMOR:ITEM_ARMOR_MAIL_SHIRT NAME
+armor	盔甲	盔甲		ITEM_ARMOR:ITEM_ARMOR_LEATHER NAME；皮甲（ITEM_ARMOR_LEATHER）的物品名，前面會接材料
+coat	外套	大衣		ITEM_ARMOR:ITEM_ARMOR_COAT NAME；兩岸常用詞不同
+coats	外套	大衣		ITEM_ARMOR:ITEM_ARMOR_COAT NAME；兩岸常用詞不同
+shirt	襯衫	衬衫		ITEM_ARMOR:ITEM_ARMOR_SHIRT NAME
+shirts	襯衫	衬衫		ITEM_ARMOR:ITEM_ARMOR_SHIRT NAME
+cloak	斗篷	斗篷		ITEM_ARMOR:ITEM_ARMOR_CLOAK NAME
+cloaks	斗篷	斗篷		ITEM_ARMOR:ITEM_ARMOR_CLOAK NAME
+tunic	短袍	短袍		ITEM_ARMOR:ITEM_ARMOR_TUNIC NAME
+tunics	短袍	短袍		ITEM_ARMOR:ITEM_ARMOR_TUNIC NAME
+toga	托加袍	托加袍		ITEM_ARMOR:ITEM_ARMOR_TOGA NAME
+togas	托加袍	托加袍		ITEM_ARMOR:ITEM_ARMOR_TOGA NAME
+cape	披風	披风		ITEM_ARMOR:ITEM_ARMOR_CAPE NAME
+capes	披風	披风		ITEM_ARMOR:ITEM_ARMOR_CAPE NAME
+vest	背心	背心		ITEM_ARMOR:ITEM_ARMOR_VEST NAME
+vests	背心	背心		ITEM_ARMOR:ITEM_ARMOR_VEST NAME
+dress	洋裝	连衣裙		ITEM_ARMOR:ITEM_ARMOR_DRESS NAME；兩岸常用詞不同
+dresses	洋裝	连衣裙		ITEM_ARMOR:ITEM_ARMOR_DRESS NAME
+robe	長袍	长袍		ITEM_ARMOR:ITEM_ARMOR_ROBE NAME
+robes	長袍	长袍		ITEM_ARMOR:ITEM_ARMOR_ROBE NAME
+biscuits	餅乾	饼干		ITEM_FOOD:ITEM_FOOD_BISCUITS NAME
+stew	燉菜	炖菜		ITEM_FOOD:ITEM_FOOD_STEW NAME
+roast	烤肉	烤肉		ITEM_FOOD:ITEM_FOOD_ROAST NAME
+gauntlet	護手	护手		ITEM_GLOVES:ITEM_GLOVES_GAUNTLETS NAME
+gauntlets	護手	护手		ITEM_GLOVES:ITEM_GLOVES_GAUNTLETS NAME
+glove	手套	手套		ITEM_GLOVES:ITEM_GLOVES_GLOVES NAME
+gloves	手套	手套		ITEM_GLOVES:ITEM_GLOVES_GLOVES NAME
+mitten	連指套	连指套		ITEM_GLOVES:ITEM_GLOVES_MITTENS NAME；連指手套；mitten 只有 6 格
+mittens	連指套	连指套		ITEM_GLOVES:ITEM_GLOVES_MITTENS NAME；連指手套；mitten 只有 6 格
+helm	頭盔	头盔		ITEM_HELM:ITEM_HELM_HELM NAME
+helms	頭盔	头盔		ITEM_HELM:ITEM_HELM_HELM NAME
+cap	帽子	帽子		ITEM_HELM:ITEM_HELM_CAP NAME
+caps	帽子	帽子		ITEM_HELM:ITEM_HELM_CAP NAME
+hood	兜帽	兜帽		ITEM_HELM:ITEM_HELM_HOOD NAME
+hoods	兜帽	兜帽		ITEM_HELM:ITEM_HELM_HOOD NAME
+turban	纏頭巾	缠头巾		ITEM_HELM:ITEM_HELM_TURBAN NAME
+turbans	纏頭巾	缠头巾		ITEM_HELM:ITEM_HELM_TURBAN NAME
+mask	面具	面具		ITEM_HELM:ITEM_HELM_MASK NAME
+masks	面具	面具		ITEM_HELM:ITEM_HELM_MASK NAME
+head veil	頭紗	头纱		ITEM_HELM:ITEM_HELM_VEIL_HEAD NAME
+head veils	頭紗	头纱		ITEM_HELM:ITEM_HELM_VEIL_HEAD NAME
+face veil	面紗	面纱		ITEM_HELM:ITEM_HELM_VEIL_FACE NAME
+face veils	面紗	面纱		ITEM_HELM:ITEM_HELM_VEIL_FACE NAME
+headscarf	頭巾	头巾		ITEM_HELM:ITEM_HELM_SCARF_HEAD NAME
+headscarves	頭巾	头巾		ITEM_HELM:ITEM_HELM_SCARF_HEAD NAME
+trousers	長褲	长裤		ITEM_PANTS:ITEM_PANTS_PANTS NAME
+greaves	脛甲	胫甲		ITEM_PANTS:ITEM_PANTS_GREAVES NAME
+leggings	護腿	护腿		ITEM_PANTS:ITEM_PANTS_LEGGINGS NAME
+loincloth	纏腰布	缠腰布		ITEM_PANTS:ITEM_PANTS_LOINCLOTH NAME
+loincloths	纏腰布	缠腰布		ITEM_PANTS:ITEM_PANTS_LOINCLOTH NAME
+thong	丁字褲	丁字裤		ITEM_PANTS:ITEM_PANTS_THONG NAME；內衣
+thongs	丁字褲	丁字裤		ITEM_PANTS:ITEM_PANTS_THONG NAME
+skirt	裙子	裙子		ITEM_PANTS:ITEM_PANTS_SKIRT NAME
+skirts	裙子	裙子		ITEM_PANTS:ITEM_PANTS_SKIRT NAME
+braies	襯褲	衬裤		ITEM_PANTS:ITEM_PANTS_BRAIES NAME；中世紀寬鬆內褲
+shield	盾牌	盾牌		ITEM_SHIELD:ITEM_SHIELD_SHIELD NAME
+shields	盾牌	盾牌		ITEM_SHIELD:ITEM_SHIELD_SHIELD NAME
+buckler	小圓盾	小圆盾		ITEM_SHIELD:ITEM_SHIELD_BUCKLER NAME
+bucklers	小圓盾	小圆盾		ITEM_SHIELD:ITEM_SHIELD_BUCKLER NAME
+shoe	鞋子	鞋子		ITEM_SHOES:ITEM_SHOES_SHOES NAME
+shoes	鞋子	鞋子		ITEM_SHOES:ITEM_SHOES_SHOES NAME
+high boot	高筒靴	高筒靴		ITEM_SHOES:ITEM_SHOES_BOOTS NAME
+high boots	高筒靴	高筒靴		ITEM_SHOES:ITEM_SHOES_BOOTS NAME
+low boot	短筒靴	短筒靴		ITEM_SHOES:ITEM_SHOES_BOOTS_LOW NAME
+low boots	短筒靴	短筒靴		ITEM_SHOES:ITEM_SHOES_BOOTS_LOW NAME
+sandal	涼鞋	凉鞋		ITEM_SHOES:ITEM_SHOES_SANDAL NAME
+sandals	涼鞋	凉鞋		ITEM_SHOES:ITEM_SHOES_SANDAL NAME
+chausse	鎖甲褲	锁甲裤		ITEM_SHOES:ITEM_SHOES_CHAUSSE NAME；鎖子甲護腿
+chausses	鎖甲褲	锁甲裤		ITEM_SHOES:ITEM_SHOES_CHAUSSE NAME；鎖子甲護腿
+sock	襪子	袜子		ITEM_SHOES:ITEM_SHOES_SOCKS NAME
+socks	襪子	袜子		ITEM_SHOES:ITEM_SHOES_SOCKS NAME
+ballista arrow	弩砲箭矢	弩炮箭矢		ITEM_SIEGEAMMO:ITEM_SIEGEAMMO_BALLISTA NAME
+ballista arrows	弩砲箭矢	弩炮箭矢		ITEM_SIEGEAMMO:ITEM_SIEGEAMMO_BALLISTA NAME
+cauldron	大鍋	大锅		ITEM_TOOL:ITEM_TOOL_CAULDRON NAME
+cauldrons	大鍋	大锅		ITEM_TOOL:ITEM_TOOL_CAULDRON NAME
+ladle	湯杓	汤勺		ITEM_TOOL:ITEM_TOOL_LADLE NAME；兩岸常用詞不同
+ladles	湯杓	汤勺		ITEM_TOOL:ITEM_TOOL_LADLE NAME；兩岸常用詞不同
+bowl	碗	碗		ITEM_TOOL:ITEM_TOOL_BOWL NAME
+bowls	碗	碗		ITEM_TOOL:ITEM_TOOL_BOWL NAME
+mortar	研缽	研钵		ITEM_TOOL:ITEM_TOOL_MORTAR NAME
+mortars	研缽	研钵		ITEM_TOOL:ITEM_TOOL_MORTAR NAME
+pestle	研杵	研杵		ITEM_TOOL:ITEM_TOOL_PESTLE NAME
+pestles	研杵	研杵		ITEM_TOOL:ITEM_TOOL_PESTLE NAME
+carving knife	切肉刀	切肉刀		ITEM_TOOL:ITEM_TOOL_KNIFE_CARVING NAME
+carving knives	切肉刀	切肉刀		ITEM_TOOL:ITEM_TOOL_KNIFE_CARVING NAME
+boning knife	剔骨刀	剔骨刀		ITEM_TOOL:ITEM_TOOL_KNIFE_BONING NAME
+boning knives	剔骨刀	剔骨刀		ITEM_TOOL:ITEM_TOOL_KNIFE_BONING NAME
+slicing knife	片肉刀	切片刀		ITEM_TOOL:ITEM_TOOL_KNIFE_SLICING NAME
+slicing knives	片肉刀	切片刀		ITEM_TOOL:ITEM_TOOL_KNIFE_SLICING NAME
+meat cleaver	剁肉刀	剁肉刀		ITEM_TOOL:ITEM_TOOL_KNIFE_MEAT_CLEAVER NAME
+meat cleavers	剁肉刀	剁肉刀		ITEM_TOOL:ITEM_TOOL_KNIFE_MEAT_CLEAVER NAME
+carving fork	切肉叉	切肉叉		ITEM_TOOL:ITEM_TOOL_FORK_CARVING NAME
+carving forks	切肉叉	切肉叉		ITEM_TOOL:ITEM_TOOL_FORK_CARVING NAME
+nest box	巢箱	巢箱		ITEM_TOOL:ITEM_TOOL_NEST_BOX NAME
+nest boxes	巢箱	巢箱		ITEM_TOOL:ITEM_TOOL_NEST_BOX NAME
+jug	壺	壶		ITEM_TOOL:ITEM_TOOL_JUG NAME
+jugs	壺	壶		ITEM_TOOL:ITEM_TOOL_JUG NAME
+pot	大罐	大罐		ITEM_TOOL:ITEM_TOOL_LARGE_POT NAME；大罐（ITEM_TOOL_LARGE_POT）
+pots	大罐	大罐		ITEM_TOOL:ITEM_TOOL_LARGE_POT NAME；大罐（ITEM_TOOL_LARGE_POT）
+hive	蜂箱	蜂箱		ITEM_TOOL:ITEM_TOOL_HIVE NAME
+hives	蜂箱	蜂箱		ITEM_TOOL:ITEM_TOOL_HIVE NAME
+honeycomb	蜂巢	蜂巢		ITEM_TOOL:ITEM_TOOL_HONEYCOMB NAME
+honeycombs	蜂巢	蜂巢		ITEM_TOOL:ITEM_TOOL_HONEYCOMB NAME
+pouch	小袋	小袋		ITEM_TOOL:ITEM_TOOL_POUCH NAME
+minecart	礦車	矿车		ITEM_TOOL:ITEM_TOOL_MINECART NAME
+minecarts	礦車	矿车		ITEM_TOOL:ITEM_TOOL_MINECART NAME
+wheelbarrow	手推車	独轮车		ITEM_TOOL:ITEM_TOOL_WHEELBARROW NAME；兩岸常用詞不同
+wheelbarrows	手推車	独轮车		ITEM_TOOL:ITEM_TOOL_WHEELBARROW NAME；兩岸常用詞不同
+stepladder	摺梯	折梯		ITEM_TOOL:ITEM_TOOL_STEPLADDER NAME
+stepladders	摺梯	折梯		ITEM_TOOL:ITEM_TOOL_STEPLADDER NAME
+scroll rollers	捲軸桿	卷轴杆		ITEM_TOOL:ITEM_TOOL_SCROLL_ROLLERS NAME
+book binding	書封	书封		ITEM_TOOL:ITEM_TOOL_BOOK_BINDING NAME
+book bindings	書封	书封		ITEM_TOOL:ITEM_TOOL_BOOK_BINDING NAME
+scroll	捲軸	卷轴		ITEM_TOOL:ITEM_TOOL_SCROLL NAME
+scrolls	捲軸	卷轴		ITEM_TOOL:ITEM_TOOL_SCROLL NAME
+quire	紙帖	纸帖		ITEM_TOOL:ITEM_TOOL_QUIRE NAME
+quires	紙帖	纸帖		ITEM_TOOL:ITEM_TOOL_QUIRE NAME
+bookcase	書架	书架		ITEM_TOOL:ITEM_TOOL_BOOKCASE NAME
+bookcases	書架	书架		ITEM_TOOL:ITEM_TOOL_BOOKCASE NAME
+helve	斧柄	斧柄		ITEM_TOOL:ITEM_TOOL_HELVE NAME
+helves	斧柄	斧柄		ITEM_TOOL:ITEM_TOOL_HELVE NAME
+axe	斧頭	斧头		ITEM_TOOL:ITEM_TOOL_STONE_AXE NAME；石斧工具（ITEM_TOOL_STONE_AXE）
+axes	斧頭	斧头		ITEM_TOOL:ITEM_TOOL_STONE_AXE NAME；石斧工具（ITEM_TOOL_STONE_AXE）
+pedestal	基座	基座		ITEM_TOOL:ITEM_TOOL_PEDESTAL NAME
+pedestals	基座	基座		ITEM_TOOL:ITEM_TOOL_PEDESTAL NAME
+display case	展示櫃	展示柜		ITEM_TOOL:ITEM_TOOL_DISPLAY_CASE NAME
+display cases	展示櫃	展示柜		ITEM_TOOL:ITEM_TOOL_DISPLAY_CASE NAME
+altar	祭壇	祭坛		ITEM_TOOL:ITEM_TOOL_ALTAR NAME
+altars	祭壇	祭坛		ITEM_TOOL:ITEM_TOOL_ALTAR NAME
+die	骰子	骰子		ITEM_TOOL:ITEM_TOOL_DIE NAME
+dice	骰子	骰子		ITEM_TOOL:ITEM_TOOL_DIE NAME
+puzzlebox	機關盒	解谜盒		ITEM_TOY:ITEM_TOY_PUZZLEBOX NAME；兩岸常用詞不同
+puzzleboxes	機關盒	解谜盒		ITEM_TOY:ITEM_TOY_PUZZLEBOX NAME
+toy boat	玩具船	玩具船		ITEM_TOY:ITEM_TOY_BOAT NAME
+toy boats	玩具船	玩具船		ITEM_TOY:ITEM_TOY_BOAT NAME
+toy hammer	玩具錘	玩具锤		ITEM_TOY:ITEM_TOY_HAMMER NAME
+toy hammers	玩具錘	玩具锤		ITEM_TOY:ITEM_TOY_HAMMER NAME
+toy axe	玩具斧	玩具斧		ITEM_TOY:ITEM_TOY_AXE NAME
+toy axes	玩具斧	玩具斧		ITEM_TOY:ITEM_TOY_AXE NAME
+mini-forge	迷你鍛爐	迷你锻炉		ITEM_TOY:ITEM_TOY_MINIFORGE NAME
+mini-forges	迷你鍛爐	迷你锻炉		ITEM_TOY:ITEM_TOY_MINIFORGE NAME
+axe blade	斧刃	斧刃		ITEM_TRAPCOMP:ITEM_TRAPCOMP_GIANTAXEBLADE NAME；巨型斧刃陷阱零件
+axe blades	斧刃	斧刃		ITEM_TRAPCOMP:ITEM_TRAPCOMP_GIANTAXEBLADE NAME；巨型斧刃陷阱零件
+corkscrew	螺旋鑽	螺旋钻		ITEM_TRAPCOMP:ITEM_TRAPCOMP_ENORMOUSCORKSCREW NAME；巨型螺旋鑽陷阱零件
+corkscrews	螺旋鑽	螺旋钻		ITEM_TRAPCOMP:ITEM_TRAPCOMP_ENORMOUSCORKSCREW NAME；巨型螺旋鑽陷阱零件
+ball	球	球		ITEM_TRAPCOMP:ITEM_TRAPCOMP_SPIKEDBALL NAME；尖刺球陷阱零件，spiked 另接
+balls	球	球		ITEM_TRAPCOMP:ITEM_TRAPCOMP_SPIKEDBALL NAME；尖刺球陷阱零件，spiked 另接
+disc	圓盤	圆盘		ITEM_TRAPCOMP:ITEM_TRAPCOMP_LARGESERRATEDDISC NAME；大型鋸齒圓盤陷阱零件
+discs	圓盤	圆盘		ITEM_TRAPCOMP:ITEM_TRAPCOMP_LARGESERRATEDDISC NAME；大型鋸齒圓盤陷阱零件
+spike	尖刺	尖刺		ITEM_TRAPCOMP:ITEM_TRAPCOMP_MENACINGSPIKE NAME；險惡尖刺陷阱零件
+spikes	尖刺	尖刺		ITEM_TRAPCOMP:ITEM_TRAPCOMP_MENACINGSPIKE NAME；險惡尖刺陷阱零件
+whip	鞭子	鞭子		ITEM_WEAPON:ITEM_WEAPON_WHIP NAME
+whips	鞭子	鞭子		ITEM_WEAPON:ITEM_WEAPON_WHIP NAME
+battle axe	戰斧	战斧		ITEM_WEAPON:ITEM_WEAPON_AXE_BATTLE NAME
+battle axes	戰斧	战斧		ITEM_WEAPON:ITEM_WEAPON_AXE_BATTLE NAME
+war hammer	戰錘	战锤		ITEM_WEAPON:ITEM_WEAPON_HAMMER_WAR NAME
+war hammers	戰錘	战锤		ITEM_WEAPON:ITEM_WEAPON_HAMMER_WAR NAME
+short sword	短劍	短剑		ITEM_WEAPON:ITEM_WEAPON_SWORD_SHORT NAME
+short swords	短劍	短剑		ITEM_WEAPON:ITEM_WEAPON_SWORD_SHORT NAME
+spear	長矛	长矛		ITEM_WEAPON:ITEM_WEAPON_SPEAR NAME
+spears	長矛	长矛		ITEM_WEAPON:ITEM_WEAPON_SPEAR NAME
+mace	釘錘	钉锤		ITEM_WEAPON:ITEM_WEAPON_MACE NAME
+maces	釘錘	钉锤		ITEM_WEAPON:ITEM_WEAPON_MACE NAME
+crossbow	弩	弩		ITEM_WEAPON:ITEM_WEAPON_CROSSBOW NAME
+crossbows	弩	弩		ITEM_WEAPON:ITEM_WEAPON_CROSSBOW NAME
+pick	十字鎬	鹤嘴锄		ITEM_WEAPON:ITEM_WEAPON_PICK NAME；挖礦兼武器；兩岸常用詞不同
+picks	十字鎬	鹤嘴锄		ITEM_WEAPON:ITEM_WEAPON_PICK NAME
+bow	弓	弓		ITEM_WEAPON:ITEM_WEAPON_BOW NAME
+bows	弓	弓		ITEM_WEAPON:ITEM_WEAPON_BOW NAME
+blowgun	吹箭筒	吹箭筒		ITEM_WEAPON:ITEM_WEAPON_BLOWGUN NAME
+blowguns	吹箭筒	吹箭筒		ITEM_WEAPON:ITEM_WEAPON_BLOWGUN NAME
+pikes	長槍	长枪		ITEM_WEAPON:ITEM_WEAPON_PIKE NAME
+halberd	長戟	长戟		ITEM_WEAPON:ITEM_WEAPON_HALBERD NAME
+halberds	長戟	长戟		ITEM_WEAPON:ITEM_WEAPON_HALBERD NAME
+two-handed sword	雙手劍	双手剑		ITEM_WEAPON:ITEM_WEAPON_SWORD_2H NAME
+two-handed swords	雙手劍	双手剑		ITEM_WEAPON:ITEM_WEAPON_SWORD_2H NAME
+long sword	長劍	长剑		ITEM_WEAPON:ITEM_WEAPON_SWORD_LONG NAME
+long swords	長劍	长剑		ITEM_WEAPON:ITEM_WEAPON_SWORD_LONG NAME
+maul	大錘	大锤		ITEM_WEAPON:ITEM_WEAPON_MAUL NAME
+mauls	大錘	大锤		ITEM_WEAPON:ITEM_WEAPON_MAUL NAME
+great axe	巨斧	巨斧		ITEM_WEAPON:ITEM_WEAPON_AXE_GREAT NAME
+great axes	巨斧	巨斧		ITEM_WEAPON:ITEM_WEAPON_AXE_GREAT NAME
+dagger	匕首	匕首		ITEM_WEAPON:ITEM_WEAPON_DAGGER_LARGE NAME
+daggers	匕首	匕首		ITEM_WEAPON:ITEM_WEAPON_DAGGER_LARGE NAME
+scourge	多尾鞭	多尾鞭		ITEM_WEAPON:ITEM_WEAPON_SCOURGE NAME；多股鞭
+scourges	多尾鞭	多尾鞭		ITEM_WEAPON:ITEM_WEAPON_SCOURGE NAME；多股鞭
+flail	連枷	连枷		ITEM_WEAPON:ITEM_WEAPON_FLAIL NAME
+flails	連枷	连枷		ITEM_WEAPON:ITEM_WEAPON_FLAIL NAME
+morningstar	晨星錘	晨星锤		ITEM_WEAPON:ITEM_WEAPON_MORNINGSTAR NAME
+morningstars	晨星錘	晨星锤		ITEM_WEAPON:ITEM_WEAPON_MORNINGSTAR NAME
+scimitar	彎刀	弯刀		ITEM_WEAPON:ITEM_WEAPON_SCIMITAR NAME
+scimitars	彎刀	弯刀		ITEM_WEAPON:ITEM_WEAPON_SCIMITAR NAME
+training axe	訓練斧	训练斧		ITEM_WEAPON:ITEM_WEAPON_AXE_TRAINING NAME
+training axes	訓練斧	训练斧		ITEM_WEAPON:ITEM_WEAPON_AXE_TRAINING NAME
+training sword	訓練劍	训练剑		ITEM_WEAPON:ITEM_WEAPON_SWORD_SHORT_TRAINING NAME
+training swords	訓練劍	训练剑		ITEM_WEAPON:ITEM_WEAPON_SWORD_SHORT_TRAINING NAME
+training spear	訓練矛	训练矛		ITEM_WEAPON:ITEM_WEAPON_SPEAR_TRAINING NAME
+training spears	訓練矛	训练矛		ITEM_WEAPON:ITEM_WEAPON_SPEAR_TRAINING NAME
+great pick	大十字鎬	大鹤嘴锄		ITEM_WEAPON:ITEM_WEAPON_PICK_GREAT NAME
+great picks	大十字鎬	大鹤嘴锄		ITEM_WEAPON:ITEM_WEAPON_PICK_GREAT NAME

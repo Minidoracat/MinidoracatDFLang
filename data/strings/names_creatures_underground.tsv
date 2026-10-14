@@ -1,0 +1,442 @@
+en	zh-Hant	zh-Hans	align	note
+toad	蟾蜍	蟾蜍		CREATURE:TOAD NAME
+toads	蟾蜍	蟾蜍		CREATURE:TOAD NAME
+eyes	眼睛	眼睛		CREATURE:TOAD TLCM_NOUN；TLCM 描述用的身體部位名詞
+toad man	蟾蜍人	蟾蜍人		CREATURE:TOAD_MAN CASTE_NAME
+toad men	蟾蜍人	蟾蜍人		CREATURE:TOAD_MAN CASTE_NAME
+toad woman	女蟾蜍人	女蟾蜍人		CREATURE:TOAD_MAN CASTE_NAME
+toad women	女蟾蜍人	女蟾蜍人		CREATURE:TOAD_MAN CASTE_NAME
+giant toad	巨型蟾蜍	巨型蟾蜍		CREATURE:GIANT_TOAD NAME
+giant toads	巨型蟾蜍	巨型蟾蜍		CREATURE:GIANT_TOAD NAME
+worm	蠕蟲	蠕虫		CREATURE:WORM NAME
+worms	蠕蟲	蠕虫		CREATURE:WORM NAME
+worm man	蠕蟲人	蠕虫人		CREATURE:WORM_MAN NAME
+worm men	蠕蟲人	蠕虫人		CREATURE:WORM_MAN NAME
+wagon	篷車	篷车		CREATURE:EQUIPMENT_WAGON NAME；出發時的篷車，術語 wagon
+wagons	篷車	篷车		CREATURE:EQUIPMENT_WAGON NAME
+wood	木材	木材		CREATURE:EQUIPMENT_WAGON TISSUE_NAME；篷車的組織；同 embark.tsv 的 Wood
+wooden	木	木		CREATURE:EQUIPMENT_WAGON TISSUE_NAME；組織形容詞，當材料前綴
+chimera	奇美拉	奇美拉		CREATURE:CHIMERA NAME
+chimeras	奇美拉	奇美拉		CREATURE:CHIMERA NAME
+chimeric	奇美拉	奇美拉		CREATURE:CHIMERA NAME；形容詞譯成名詞前綴
+centaur	半人馬	半人马		CREATURE:CENTAUR NAME
+centaurs	半人馬	半人马		CREATURE:CENTAUR NAME
+centauress	女半人馬	女半人马		CREATURE:CENTAUR CASTE_NAME
+centauresses	女半人馬	女半人马		CREATURE:CENTAUR CASTE_NAME
+griffon	獅鷲	狮鹫		CREATURE:GRIFFON NAME
+griffons	獅鷲	狮鹫		CREATURE:GRIFFON NAME
+floating guts	漂浮內臟	漂浮内脏		CREATURE:FLOATING_GUTS NAME；自創：透明身體裡內臟像在漂浮，照字面
+drunian	德魯獸	德鲁兽		CREATURE:DRUNIAN NAME；自創：名稱無字面意思，音譯 dru＋獸（鬃毛人臉的四足獸）；原文 7 格只放得下三字
+drunians	德魯獸	德鲁兽		CREATURE:DRUNIAN NAME
+creeping eye	爬行之眼	爬行之眼		CREATURE:CREEPING_EYE NAME；自創：照字面
+creeping eyes	爬行之眼	爬行之眼		CREATURE:CREEPING_EYE NAME
+voracious cave crawler	貪食洞穴爬蟲	贪食洞穴爬虫		CREATURE:VORACIOUS_CAVE_CRAWLER NAME；自創：照字面
+voracious cave crawlers	貪食洞穴爬蟲	贪食洞穴爬虫		CREATURE:VORACIOUS_CAVE_CRAWLER NAME
+blind cave ogre	盲眼洞穴食人魔	盲眼洞穴食人魔		CREATURE:BLIND_CAVE_OGRE NAME；自創：照字面
+blind cave ogres	盲眼洞穴食人魔	盲眼洞穴食人魔		CREATURE:BLIND_CAVE_OGRE NAME
+cap hopper	菌帽跳蟲	菌盖跳虫		CREATURE:CAP_HOPPER NAME；自創：住在塔帽菇林的小型兩棲類，cap 指菌傘；兩岸慣用菌帽／菌盖
+cap hoppers	菌帽跳蟲	菌盖跳虫		CREATURE:CAP_HOPPER NAME
+magma crab	熔岩蟹	熔岩蟹		CREATURE:MAGMA_CRAB NAME；自創：照字面；magma 依本專案譯「熔岩」
+magma crabs	熔岩蟹	熔岩蟹		CREATURE:MAGMA_CRAB NAME
+exterior	外殼	外壳		CREATURE:MAGMA_CRAB TLCM_NOUN；TLCM 描述用的身體部位名詞
+crundle	爪角怪	爪角怪		CREATURE:CRUNDLE NAME；自創：名稱無字面意思，依外形（大爪、長角）意譯
+crundles	爪角怪	爪角怪		CREATURE:CRUNDLE NAME
+hungry head	飢餓頭顱	饥饿头颅		CREATURE:HUNGRY_HEAD NAME；自創：照字面
+hungry heads	飢餓頭顱	饥饿头颅		CREATURE:HUNGRY_HEAD NAME
+flesh ball	肉球	肉球		CREATURE:FLESH_BALL NAME；自創：照字面
+flesh balls	肉球	肉球		CREATURE:FLESH_BALL NAME
+flesh	血肉	血肉		CREATURE:FLESH_BALL STATE_NAME
+elk bird	馬鹿鳥	马鹿鸟		CREATURE:ELK_BIRD NAME；自創：照字面
+elk birds	馬鹿鳥	马鹿鸟		CREATURE:ELK_BIRD NAME
+elk bird hatchling	幼馬鹿鳥	幼马鹿鸟		CREATURE:ELK_BIRD GENERAL_CHILD_NAME
+elk bird hatchlings	幼馬鹿鳥	幼马鹿鸟		CREATURE:ELK_BIRD GENERAL_CHILD_NAME
+helmet snake	頭盔蛇	头盔蛇		CREATURE:HELMET_SNAKE NAME；自創：照字面
+helmet snakes	頭盔蛇	头盔蛇		CREATURE:HELMET_SNAKE NAME
+frozen helmet snake venom	冰凍的頭盔蛇毒液	冰冻的头盔蛇毒液		CREATURE:HELMET_SNAKE STATE_NAME
+helmet snake venom	頭盔蛇毒液	头盔蛇毒液		CREATURE:HELMET_SNAKE STATE_NAME
+boiling helmet snake venom	沸騰的頭盔蛇毒液	沸腾的头盔蛇毒液		CREATURE:HELMET_SNAKE STATE_NAME
+helmet snake bite	頭盔蛇咬傷	头盔蛇咬伤		CREATURE:HELMET_SNAKE SYN_NAME；病症名
+green devourer	綠色吞噬者	绿色吞噬者		CREATURE:GREEN_DEVOURER NAME；自創：照字面
+green devourers	綠色吞噬者	绿色吞噬者		CREATURE:GREEN_DEVOURER NAME
+rutherer	巨尾獸	巨尾兽		CREATURE:RUTHERER NAME；自創：名稱無字面意思，依外形（巨尾、厚毛）意譯；原文 8 格
+rutherers	巨尾獸	巨尾兽		CREATURE:RUTHERER NAME
+creepy crawler	駭人爬蟲	骇人爬虫		CREATURE:CREEPY_CRAWLER NAME；自創：照字面
+creepy crawlers	駭人爬蟲	骇人爬虫		CREATURE:CREEPY_CRAWLER NAME
+draltha	食菇獸	食菇兽		CREATURE:DRALTHA NAME；自創：名稱無字面意思，依習性（吃塔帽菇頂）意譯
+dralthas	食菇獸	食菇兽		CREATURE:DRALTHA NAME
+giant earthworm	巨型蚯蚓	巨型蚯蚓		CREATURE:GIANT_EARTHWORM NAME
+giant earthworms	巨型蚯蚓	巨型蚯蚓		CREATURE:GIANT_EARTHWORM NAME
+blood man	血人	血人		CREATURE:BLOOD_MAN NAME；自創：照字面
+blood men	血人	血人		CREATURE:BLOOD_MAN NAME
+frozen corrupted blood	冰凍的腐化血液	冰冻的腐化血液		CREATURE:BLOOD_MAN STATE_NAME
+corrupted blood	腐化血液	腐化血液		CREATURE:BLOOD_MAN STATE_NAME
+boiling corrupted blood	沸騰的腐化血液	沸腾的腐化血液		CREATURE:BLOOD_MAN STATE_NAME
+bugbat	蟲蝠	虫蝠		CREATURE:BUGBAT NAME；自創：照字面（昆蟲頭的蝙蝠）
+bugbats	蟲蝠	虫蝠		CREATURE:BUGBAT NAME
+bugbat pup	幼蟲蝠	幼虫蝠		CREATURE:BUGBAT GENERAL_CHILD_NAME
+bugbat pups	幼蟲蝠	幼虫蝠		CREATURE:BUGBAT GENERAL_CHILD_NAME
+manera	倒懸怪	倒悬怪		CREATURE:MANERA NAME；自創：名稱無字面意思，依習性（倒掛洞頂等獵物）意譯；原文 6 格
+maneras	倒懸怪	倒悬怪		CREATURE:MANERA NAME
+molemarian	半人鼴鼠	半人鼹鼠		CREATURE:MOLEMARIAN NAME；自創：下半身是巨型鼴鼠、上半身是鼴鼠人，比照半人馬；兩岸鼴／鼹
+molemarians	半人鼴鼠	半人鼹鼠		CREATURE:MOLEMARIAN NAME
+molemarian puppy	幼半人鼴鼠	幼半人鼹鼠		CREATURE:MOLEMARIAN GENERAL_CHILD_NAME
+molemarian puppies	幼半人鼴鼠	幼半人鼹鼠		CREATURE:MOLEMARIAN GENERAL_CHILD_NAME
+jabberer	寬喙獸	宽喙兽		CREATURE:JABBERER NAME；自創：名稱無字面意思，依外形（寬喙）意譯
+jabberers	寬喙獸	宽喙兽		CREATURE:JABBERER NAME
+jabberer hatchling	幼寬喙獸	幼宽喙兽		CREATURE:JABBERER GENERAL_CHILD_NAME
+jabberer hatchlings	幼寬喙獸	幼宽喙兽		CREATURE:JABBERER GENERAL_CHILD_NAME
+pond grabber	池塘攫獸	池塘攫兽		CREATURE:POND_GRABBER NAME；自創：照字面
+pond grabbers	池塘攫獸	池塘攫兽		CREATURE:POND_GRABBER NAME
+blind cave bear	盲眼洞穴熊	盲眼洞穴熊		CREATURE:BLIND_CAVE_BEAR NAME；自創：照字面
+blind cave bears	盲眼洞穴熊	盲眼洞穴熊		CREATURE:BLIND_CAVE_BEAR NAME
+blind cave bear cub	幼盲眼洞穴熊	幼盲眼洞穴熊		CREATURE:BLIND_CAVE_BEAR GENERAL_CHILD_NAME
+blind cave bear cubs	幼盲眼洞穴熊	幼盲眼洞穴熊		CREATURE:BLIND_CAVE_BEAR GENERAL_CHILD_NAME
+cave dragon	洞穴龍	洞穴龙		CREATURE:CAVE_DRAGON NAME；自創：照字面
+cave dragons	洞穴龍	洞穴龙		CREATURE:CAVE_DRAGON NAME
+cave draconic	洞穴龍	洞穴龙		CREATURE:CAVE_DRAGON NAME；形容詞譯成名詞前綴
+reacher	長臂怪	长臂怪		CREATURE:REACHER NAME；自創：用長臂把獵物拖下水，依字面意譯；原文 7 格
+reachers	長臂怪	长臂怪		CREATURE:REACHER NAME
+gabbro man	輝長岩人	辉长岩人		CREATURE:ELEMENTMAN_GABBRO NAME
+gabbro men	輝長岩人	辉长岩人		CREATURE:ELEMENTMAN_GABBRO NAME
+gabbro	輝長岩	辉长岩		CREATURE:ELEMENTMAN_GABBRO TISSUE_NAME
+gorlak	獠牙怪	獠牙怪		CREATURE:GORLAK NAME；自創：名稱無字面意思，依外形（巨大獠牙嘴）意譯
+gorlaks	獠牙怪	獠牙怪		CREATURE:GORLAK NAME
+cave floater	洞穴漂浮者	洞穴漂浮者		CREATURE:CAVE_FLOATER NAME；自創：照字面
+cave floaters	洞穴漂浮者	洞穴漂浮者		CREATURE:CAVE_FLOATER NAME
+frozen cave floater juice	冰凍的洞穴漂浮者汁液	冰冻的洞穴漂浮者汁液		CREATURE:CAVE_FLOATER STATE_NAME
+cave floater juice	洞穴漂浮者汁液	洞穴漂浮者汁液		CREATURE:CAVE_FLOATER STATE_NAME
+cave floater gas	洞穴漂浮者氣體	洞穴漂浮者气体		CREATURE:CAVE_FLOATER STATE_NAME
+cave floater sickness	洞穴漂浮者病	洞穴漂浮者病		CREATURE:CAVE_FLOATER SYN_NAME；病症名
+interior gas	內部氣體	内部气体		CREATURE:CAVE_FLOATER TISSUE_NAME
+pod	氣囊	气囊		CREATURE:CAVE_FLOATER TISSUE_NAME；洞穴漂浮者的身體（會漂浮的囊）
+plump helmet man	肉盔菇人	肉盔菇人		CREATURE:PLUMP_HELMET_MAN NAME；plump helmet 沿用 guides_1.tsv「肉盔菇」
+plump helmet men	肉盔菇人	肉盔菇人		CREATURE:PLUMP_HELMET_MAN NAME
+plump helmet man tissue	肉盔菇人組織	肉盔菇人组织		CREATURE:PLUMP_HELMET_MAN STATE_NAME
+melted plump helmet man tissue	融化的肉盔菇人組織	融化的肉盔菇人组织		CREATURE:PLUMP_HELMET_MAN STATE_NAME
+boiling plump helmet man tissue	沸騰的肉盔菇人組織	沸腾的肉盔菇人组织		CREATURE:PLUMP_HELMET_MAN STATE_NAME
+cave blob	洞穴黏團	洞穴黏团		CREATURE:CAVE_BLOB NAME；自創：照字面（無固定形狀的生物）
+cave blobs	洞穴黏團	洞穴黏团		CREATURE:CAVE_BLOB NAME
+frozen cave blob fluid	冰凍的洞穴黏團體液	冰冻的洞穴黏团体液		CREATURE:CAVE_BLOB STATE_NAME
+cave blob fluid	洞穴黏團體液	洞穴黏团体液		CREATURE:CAVE_BLOB STATE_NAME
+boiling cave blob fluid	沸騰的洞穴黏團體液	沸腾的洞穴黏团体液		CREATURE:CAVE_BLOB STATE_NAME
+blob blisters	黏團水泡	黏团水泡		CREATURE:CAVE_BLOB SYN_NAME；病症名
+fluid	體液	体液		CREATURE:CAVE_BLOB TISSUE_NAME
+amethyst man	紫水晶人	紫水晶人		CREATURE:ELEMENTMAN_AMETHYST NAME
+amethyst men	紫水晶人	紫水晶人		CREATURE:ELEMENTMAN_AMETHYST NAME
+amethyst	紫水晶	紫水晶		CREATURE:ELEMENTMAN_AMETHYST TISSUE_NAME
+fox squirrel	狐松鼠	狐松鼠		CREATURE:FOXSQUIRREL NAME
+fox squirrels	狐松鼠	狐松鼠		CREATURE:FOXSQUIRREL NAME
+moghopper	泥跳蛙	泥跳蛙		CREATURE:MOGHOPPER NAME；自創：住泥裡的小型兩棲類，mog 無字面意思，依習性意譯
+moghoppers	泥跳蛙	泥跳蛙		CREATURE:MOGHOPPER NAME
+frozen mog juice	冰凍的泥跳蛙汁	冰冻的泥跳蛙汁		CREATURE:MOGHOPPER STATE_NAME
+mog juice	泥跳蛙汁	泥跳蛙汁		CREATURE:MOGHOPPER STATE_NAME
+boiling mog juice	沸騰的泥跳蛙汁	沸腾的泥跳蛙汁		CREATURE:MOGHOPPER STATE_NAME
+demon rat	惡魔鼠	恶魔鼠		CREATURE:RAT_DEMON NAME；自創：照字面
+demon rats	惡魔鼠	恶魔鼠		CREATURE:RAT_DEMON NAME
+fluffy wambler	蓬鬆蹣跚獸	蓬松蹒跚兽		CREATURE:WAMBLER_FLUFFY NAME；自創：wamble 是蹣跚，照字面
+fluffy wamblers	蓬鬆蹣跚獸	蓬松蹒跚兽		CREATURE:WAMBLER_FLUFFY NAME
+fluff	絨毛	绒毛		CREATURE:WAMBLER_FLUFFY STATE_NAME
+pudge	脂肪	脂肪		CREATURE:WAMBLER_FLUFFY STATE_NAME；蓬鬆蹣跚獸身體裡的肥肉
+two-legged rhino lizard	雙足犀蜥	双足犀蜥		CREATURE:LIZARD_RHINO_TWO_LEGGED NAME；自創：照字面
+two-legged rhino lizards	雙足犀蜥	双足犀蜥		CREATURE:LIZARD_RHINO_TWO_LEGGED NAME
+knuckle worm	指節蟲	指节虫		CREATURE:WORM_KNUCKLE NAME；自創：照字面（一節節像指節）
+knuckle worms	指節蟲	指节虫		CREATURE:WORM_KNUCKLE NAME
+phantom spider	幻影蜘蛛	幻影蜘蛛		CREATURE:SPIDER_PHANTOM NAME；自創：照字面
+phantom spiders	幻影蜘蛛	幻影蜘蛛		CREATURE:SPIDER_PHANTOM NAME
+frozen phantom spider venom	冰凍的幻影蜘蛛毒液	冰冻的幻影蜘蛛毒液		CREATURE:SPIDER_PHANTOM STATE_NAME
+phantom spider venom	幻影蜘蛛毒液	幻影蜘蛛毒液		CREATURE:SPIDER_PHANTOM STATE_NAME
+boiling phantom spider venom	沸騰的幻影蜘蛛毒液	沸腾的幻影蜘蛛毒液		CREATURE:SPIDER_PHANTOM STATE_NAME
+phantom spider bite	幻影蜘蛛咬傷	幻影蜘蛛咬伤		CREATURE:SPIDER_PHANTOM SYN_NAME；病症名
+acorn fly	橡實蠅	橡子蝇		CREATURE:FLY_ACORN NAME；自創：照字面；兩岸橡實／橡子
+acorn flies	橡實蠅	橡子蝇		CREATURE:FLY_ACORN NAME
+blood gnat	血蚋	血蚋		CREATURE:GNAT_BLOOD NAME；自創：照字面（吸血小蟲）
+blood gnats	血蚋	血蚋		CREATURE:GNAT_BLOOD NAME
+lizard	蜥蜴	蜥蜴		CREATURE:LIZARD NAME
+lizards	蜥蜴	蜥蜴		CREATURE:LIZARD NAME
+lizard man	蜥蜴人	蜥蜴人		CREATURE:LIZARD_MAN CASTE_NAME
+lizard men	蜥蜴人	蜥蜴人		CREATURE:LIZARD_MAN CASTE_NAME
+lizard woman	女蜥蜴人	女蜥蜴人		CREATURE:LIZARD_MAN CASTE_NAME
+lizard women	女蜥蜴人	女蜥蜴人		CREATURE:LIZARD_MAN CASTE_NAME
+giant lizard	巨型蜥蜴	巨型蜥蜴		CREATURE:GIANT_LIZARD NAME
+giant lizards	巨型蜥蜴	巨型蜥蜴		CREATURE:GIANT_LIZARD NAME
+giant lizard hatchling	幼巨型蜥蜴	幼巨型蜥蜴		CREATURE:GIANT_LIZARD GENERAL_CHILD_NAME
+giant lizard hatchlings	幼巨型蜥蜴	幼巨型蜥蜴		CREATURE:GIANT_LIZARD GENERAL_CHILD_NAME
+skink	石龍子	石龙子		CREATURE:SKINK NAME
+skinks	石龍子	石龙子		CREATURE:SKINK NAME
+skink man	石龍子人	石龙子人		CREATURE:SKINK_MAN CASTE_NAME
+skink men	石龍子人	石龙子人		CREATURE:SKINK_MAN CASTE_NAME
+skink woman	女石龍子人	女石龙子人		CREATURE:SKINK_MAN CASTE_NAME
+skink women	女石龍子人	女石龙子人		CREATURE:SKINK_MAN CASTE_NAME
+giant skink	巨型石龍子	巨型石龙子		CREATURE:GIANT_SKINK NAME
+giant skinks	巨型石龍子	巨型石龙子		CREATURE:GIANT_SKINK NAME
+chameleon	變色龍	变色龙		CREATURE:CHAMELEON NAME
+chameleons	變色龍	变色龙		CREATURE:CHAMELEON NAME
+chameleon man	變色龍人	变色龙人		CREATURE:CHAMELEON_MAN CASTE_NAME
+chameleon men	變色龍人	变色龙人		CREATURE:CHAMELEON_MAN CASTE_NAME
+chameleon woman	女變色龍人	女变色龙人		CREATURE:CHAMELEON_MAN CASTE_NAME
+chameleon women	女變色龍人	女变色龙人		CREATURE:CHAMELEON_MAN CASTE_NAME
+giant chameleon	巨型變色龍	巨型变色龙		CREATURE:GIANT_CHAMELEON NAME
+giant chameleons	巨型變色龍	巨型变色龙		CREATURE:GIANT_CHAMELEON NAME
+anole	安樂蜥	安乐蜥		CREATURE:ANOLE NAME
+anoles	安樂蜥	安乐蜥		CREATURE:ANOLE NAME
+anole man	安樂蜥人	安乐蜥人		CREATURE:ANOLE_MAN CASTE_NAME
+anole men	安樂蜥人	安乐蜥人		CREATURE:ANOLE_MAN CASTE_NAME
+anole woman	女安樂蜥人	女安乐蜥人		CREATURE:ANOLE_MAN CASTE_NAME
+anole women	女安樂蜥人	女安乐蜥人		CREATURE:ANOLE_MAN CASTE_NAME
+giant anole	巨型安樂蜥	巨型安乐蜥		CREATURE:GIANT_ANOLE NAME
+giant anoles	巨型安樂蜥	巨型安乐蜥		CREATURE:GIANT_ANOLE NAME
+iguana	鬣蜥	鬣蜥		CREATURE:IGUANA NAME
+iguanas	鬣蜥	鬣蜥		CREATURE:IGUANA NAME
+iguana hatchling	幼鬣蜥	幼鬣蜥		CREATURE:IGUANA GENERAL_CHILD_NAME
+iguana hatchlings	幼鬣蜥	幼鬣蜥		CREATURE:IGUANA GENERAL_CHILD_NAME
+iguana man	鬣蜥人	鬣蜥人		CREATURE:IGUANA_MAN CASTE_NAME
+iguana men	鬣蜥人	鬣蜥人		CREATURE:IGUANA_MAN CASTE_NAME
+iguana woman	女鬣蜥人	女鬣蜥人		CREATURE:IGUANA_MAN CASTE_NAME
+iguana women	女鬣蜥人	女鬣蜥人		CREATURE:IGUANA_MAN CASTE_NAME
+giant iguana	巨型鬣蜥	巨型鬣蜥		CREATURE:GIANT_IGUANA NAME
+giant iguanas	巨型鬣蜥	巨型鬣蜥		CREATURE:GIANT_IGUANA NAME
+giant iguana hatchling	幼巨型鬣蜥	幼巨型鬣蜥		CREATURE:GIANT_IGUANA GENERAL_CHILD_NAME
+giant iguana hatchlings	幼巨型鬣蜥	幼巨型鬣蜥		CREATURE:GIANT_IGUANA GENERAL_CHILD_NAME
+dwarf	矮人	矮人		CREATURE:DWARF NAME；同 embark.tsv 的 Dwarves
+dwarves	矮人	矮人		CREATURE:DWARF NAME
+dwarven	矮人	矮人		CREATURE:DWARF NAME；形容詞譯成名詞前綴
+dwarven child	矮人孩童	矮人儿童		CREATURE:DWARF GENERAL_CHILD_NAME
+dwarven children	矮人孩童	矮人儿童		CREATURE:DWARF GENERAL_CHILD_NAME
+craftsdwarf	工匠	工匠		CREATURE:DWARF PROFESSION_NAME；同 professions.tsv 的 Craftsdwarf
+craftsdwarves	工匠	工匠		CREATURE:DWARF PROFESSION_NAME
+fisherdwarf	漁夫	渔夫		CREATURE:DWARF PROFESSION_NAME；同 embark.tsv 的 Fisherdwarf
+fisherdwarves	漁夫	渔夫		CREATURE:DWARF PROFESSION_NAME
+hammerdwarf	戰錘手	战锤手		CREATURE:DWARF PROFESSION_NAME；同 embark.tsv 的 Hammerdwarf
+hammerdwarves	戰錘手	战锤手		CREATURE:DWARF PROFESSION_NAME
+speardwarf	矛手	矛手		CREATURE:DWARF PROFESSION_NAME；同 embark.tsv 的 Speardwarf
+speardwarves	矛手	矛手		CREATURE:DWARF PROFESSION_NAME
+marksdwarf	弩手	弩手		CREATURE:DWARF PROFESSION_NAME；同 embark.tsv 的 Marksdwarf
+marksdwarves	弩手	弩手		CREATURE:DWARF PROFESSION_NAME
+axedwarf	斧手	斧手		CREATURE:DWARF PROFESSION_NAME；同 embark.tsv 的 Axedwarf
+axedwarves	斧手	斧手		CREATURE:DWARF PROFESSION_NAME
+swordsdwarf	劍士	剑士		CREATURE:DWARF PROFESSION_NAME；同 embark.tsv 的 Swordsdwarf
+swordsdwarves	劍士	剑士		CREATURE:DWARF PROFESSION_NAME
+macedwarf	釘錘手	钉锤手		CREATURE:DWARF PROFESSION_NAME；同 embark.tsv 的 Macedwarf
+macedwarves	釘錘手	钉锤手		CREATURE:DWARF PROFESSION_NAME
+pikedwarf	長槍手	长枪手		CREATURE:DWARF PROFESSION_NAME；同 professions.tsv 的 Pikedwarf
+pikedwarves	長槍手	长枪手		CREATURE:DWARF PROFESSION_NAME
+bowdwarf	弓手	弓手		CREATURE:DWARF PROFESSION_NAME；同 professions.tsv 的 Bowdwarf
+bowdwarves	弓手	弓手		CREATURE:DWARF PROFESSION_NAME
+Elite Marksdwarves	精銳弩手	精锐弩手		CREATURE:DWARF PROFESSION_NAME；同 professions.tsv 的 Elite Marksdwarf
+Elite Bowdwarves	精銳弓手	精锐弓手		CREATURE:DWARF PROFESSION_NAME；同 professions.tsv 的 Elite Bowdwarf
+human	人類	人类		CREATURE:HUMAN NAME；同 embark.tsv 的 Humans
+humans	人類	人类		CREATURE:HUMAN NAME
+elf	精靈	精灵		CREATURE:ELF NAME；同 embark.tsv 的 Elves
+elves	精靈	精灵		CREATURE:ELF NAME
+elven	精靈	精灵		CREATURE:ELF NAME；形容詞譯成名詞前綴
+goblin	哥布林	哥布林		CREATURE:GOBLIN NAME；同 embark.tsv 的 Goblins
+goblins	哥布林	哥布林		CREATURE:GOBLIN NAME
+kobold	狗頭人	狗头人		CREATURE:KOBOLD NAME；遊戲圈通行譯名；參考譯名「犬蜥人」
+kobolds	狗頭人	狗头人		CREATURE:KOBOLD NAME
+gremlin	搗蛋鬼	捣蛋鬼		CREATURE:GREMLIN NAME；會亂拉拉桿的小型人形生物；不用「小精靈」以免和 elf 混淆；原文 7 格
+gremlins	搗蛋鬼	捣蛋鬼		CREATURE:GREMLIN NAME
+troll	巨魔	巨魔		CREATURE:TROLL NAME
+trolls	巨魔	巨魔		CREATURE:TROLL NAME
+ogre	食人魔	食人魔		CREATURE:OGRE NAME
+ogres	食人魔	食人魔		CREATURE:OGRE NAME
+ogress	食人魔	食人魔		CREATURE:OGRE CASTE_NAME；「女食人魔」四字超過原文 6 格，性別由遊戲的 ♀ 符號表示
+ogresses	食人魔	食人魔		CREATURE:OGRE CASTE_NAME
+unicorn	獨角獸	独角兽		CREATURE:UNICORN NAME
+unicorns	獨角獸	独角兽		CREATURE:UNICORN NAME
+unicorn foal	幼獨角獸	幼独角兽		CREATURE:UNICORN GENERAL_CHILD_NAME
+unicorn foals	幼獨角獸	幼独角兽		CREATURE:UNICORN GENERAL_CHILD_NAME
+dragon	龍	龙		CREATURE:DRAGON NAME
+dragons	龍	龙		CREATURE:DRAGON NAME
+draconic	龍	龙		CREATURE:DRAGON NAME；形容詞譯成名詞前綴
+satyr	薩堤爾	萨提尔		CREATURE:SATYR NAME
+satyrs	薩堤爾	萨提尔		CREATURE:SATYR NAME
+bronze colossus	青銅巨像	青铜巨像		CREATURE:COLOSSUS_BRONZE NAME
+bronze colossuses	青銅巨像	青铜巨像		CREATURE:COLOSSUS_BRONZE NAME
+bronze	青銅	青铜		CREATURE:COLOSSUS_BRONZE TISSUE_NAME
+giant	巨人	巨人		CREATURE:GIANT NAME
+giants	巨人	巨人		CREATURE:GIANT NAME
+giantess	女巨人	女巨人		CREATURE:GIANT CASTE_NAME
+giantesses	女巨人	女巨人		CREATURE:GIANT CASTE_NAME
+cyclops	獨眼怪	独眼怪		CREATURE:CYCLOPS NAME；通行譯名「獨眼巨人」四字，原文 7 格只放得下三字
+cyclopes	獨眼怪	独眼怪		CREATURE:CYCLOPS NAME
+ettin	雙頭怪	双头怪		CREATURE:ETTIN NAME；通行譯名「雙頭巨人」四字，原文 5 格只放得下三字
+ettins	雙頭怪	双头怪		CREATURE:ETTIN NAME
+minotaur	牛頭人	牛头人		CREATURE:MINOTAUR NAME
+minotaurs	牛頭人	牛头人		CREATURE:MINOTAUR NAME
+yeti	雪怪	雪怪		CREATURE:YETI NAME
+yetis	雪怪	雪怪		CREATURE:YETI NAME
+sasquatch	大腳怪	大脚怪		CREATURE:SASQUATCH NAME
+sasquatches	大腳怪	大脚怪		CREATURE:SASQUATCH NAME
+blizzard man	暴風雪人	暴风雪人		CREATURE:BLIZZARD_MAN NAME
+blizzard men	暴風雪人	暴风雪人		CREATURE:BLIZZARD_MAN NAME
+ice wolf	冰狼	冰狼		CREATURE:WOLF_ICE NAME
+ice wolves	冰狼	冰狼		CREATURE:WOLF_ICE NAME
+ice wolf pup	幼冰狼	幼冰狼		CREATURE:WOLF_ICE GENERAL_CHILD_NAME
+ice wolf pups	幼冰狼	幼冰狼		CREATURE:WOLF_ICE GENERAL_CHILD_NAME
+fairy	仙子	仙子		CREATURE:FAIRY NAME
+fairies	仙子	仙子		CREATURE:FAIRY NAME
+pixie	小精靈	小精灵		CREATURE:PIXIE NAME
+pixies	小精靈	小精灵		CREATURE:PIXIE NAME
+beak dog	喙狗	喙狗		CREATURE:BEAK_DOG NAME；自創：照字面
+beak dogs	喙狗	喙狗		CREATURE:BEAK_DOG NAME
+beak dog pup	幼喙狗	幼喙狗		CREATURE:BEAK_DOG GENERAL_CHILD_NAME
+beak dog pups	幼喙狗	幼喙狗		CREATURE:BEAK_DOG GENERAL_CHILD_NAME
+grimeling	汙泥怪	污泥怪		CREATURE:GRIMELING NAME；自創：grime（汙垢）＋-ling，外形像泡水的雜草團，照字面意譯
+grimelings	汙泥怪	污泥怪		CREATURE:GRIMELING NAME
+foul blendec	汙穢混種	污秽混种		CREATURE:BLENDEC_FOUL NAME；自創：blendec 取 blend（混合，人身羊腿羊頭骨），照字面意譯
+foul blendecs	汙穢混種	污秽混种		CREATURE:BLENDEC_FOUL NAME
+strangler	絞殺者	绞杀者		CREATURE:STRANGLER NAME；自創：照字面
+stranglers	絞殺者	绞杀者		CREATURE:STRANGLER NAME
+nightwing	夜翼	夜翼		CREATURE:NIGHTWING NAME；自創：照字面
+nightwings	夜翼	夜翼		CREATURE:NIGHTWING NAME
+harpy	鳥妖	鸟妖		CREATURE:HARPY NAME；通行譯名「鷹身女妖」四字，原文 5 格只放得下三字以內
+harpies	鳥妖	鸟妖		CREATURE:HARPY NAME
+hydra	九頭蛇	九头蛇		CREATURE:HYDRA NAME
+hydras	九頭蛇	九头蛇		CREATURE:HYDRA NAME
+merperson	人魚	人鱼		CREATURE:MERPERSON NAME
+merpeople	人魚	人鱼		CREATURE:MERPERSON NAME
+mermaid	美人魚	美人鱼		CREATURE:MERPERSON CASTE_NAME
+mermaids	美人魚	美人鱼		CREATURE:MERPERSON CASTE_NAME
+merman	男人魚	男人鱼		CREATURE:MERPERSON CASTE_NAME
+mermen	男人魚	男人鱼		CREATURE:MERPERSON CASTE_NAME
+sea serpent	大海蛇	大海蛇		CREATURE:SEA_SERPENT NAME；不用「海蛇」，以免和真實的 sea snake 混淆
+sea serpents	大海蛇	大海蛇		CREATURE:SEA_SERPENT NAME
+sea monster	海怪	海怪		CREATURE:SEA_MONSTER NAME
+sea monsters	海怪	海怪		CREATURE:SEA_MONSTER NAME
+roc	大鵬鳥	大鹏鸟		CREATURE:BIRD_ROC NAME
+rocs	大鵬鳥	大鹏鸟		CREATURE:BIRD_ROC NAME
+roc hatchling	幼大鵬鳥	幼大鹏鸟		CREATURE:BIRD_ROC GENERAL_CHILD_NAME
+roc hatchlings	幼大鵬鳥	幼大鹏鸟		CREATURE:BIRD_ROC GENERAL_CHILD_NAME
+cave crocodile	洞穴鱷魚	洞穴鳄鱼		CREATURE:CROCODILE_CAVE NAME
+cave crocodiles	洞穴鱷魚	洞穴鳄鱼		CREATURE:CROCODILE_CAVE NAME
+cave crocodile hatchling	幼洞穴鱷魚	幼洞穴鳄鱼		CREATURE:CROCODILE_CAVE GENERAL_CHILD_NAME
+cave crocodile hatchlings	幼洞穴鱷魚	幼洞穴鳄鱼		CREATURE:CROCODILE_CAVE GENERAL_CHILD_NAME
+giant cave toad	巨型洞穴蟾蜍	巨型洞穴蟾蜍		CREATURE:TOAD_GIANT_CAVE NAME
+giant cave toads	巨型洞穴蟾蜍	巨型洞穴蟾蜍		CREATURE:TOAD_GIANT_CAVE NAME
+giant olm	巨型洞螈	巨型洞螈		CREATURE:OLM_GIANT NAME
+giant olms	巨型洞螈	巨型洞螈		CREATURE:OLM_GIANT NAME
+giant bat	巨型蝙蝠	巨型蝙蝠		CREATURE:BAT_GIANT NAME
+giant bats	巨型蝙蝠	巨型蝙蝠		CREATURE:BAT_GIANT NAME
+giant bat pup	幼巨型蝙蝠	幼巨型蝙蝠		CREATURE:BAT_GIANT GENERAL_CHILD_NAME
+giant bat pups	幼巨型蝙蝠	幼巨型蝙蝠		CREATURE:BAT_GIANT GENERAL_CHILD_NAME
+giant rat	巨型老鼠	巨型老鼠		CREATURE:RAT_GIANT NAME
+giant rats	巨型老鼠	巨型老鼠		CREATURE:RAT_GIANT NAME
+giant rat pup	幼巨型老鼠	幼巨型老鼠		CREATURE:RAT_GIANT GENERAL_CHILD_NAME
+giant rat pups	幼巨型老鼠	幼巨型老鼠		CREATURE:RAT_GIANT GENERAL_CHILD_NAME
+large rat	大型老鼠	大型老鼠		CREATURE:RAT_LARGE NAME
+large rats	大型老鼠	大型老鼠		CREATURE:RAT_LARGE NAME
+large rat pup	幼大型老鼠	幼大型老鼠		CREATURE:RAT_LARGE GENERAL_CHILD_NAME
+large rat pups	幼大型老鼠	幼大型老鼠		CREATURE:RAT_LARGE GENERAL_CHILD_NAME
+naked mole dog	裸鼴狗	裸鼹狗		CREATURE:MOLE_DOG_NAKED NAME；自創：照字面（像裸鼴鼠的狗形生物）；兩岸鼴／鼹
+naked mole dogs	裸鼴狗	裸鼹狗		CREATURE:MOLE_DOG_NAKED NAME
+naked mole puppy	幼裸鼴狗	幼裸鼹狗		CREATURE:MOLE_DOG_NAKED GENERAL_CHILD_NAME
+naked mole puppies	幼裸鼴狗	幼裸鼹狗		CREATURE:MOLE_DOG_NAKED GENERAL_CHILD_NAME
+troglodyte	穴居人	穴居人		CREATURE:TROGLODYTE NAME
+troglodytes	穴居人	穴居人		CREATURE:TROGLODYTE NAME
+giant mole	巨型鼴鼠	巨型鼹鼠		CREATURE:MOLE_GIANT NAME
+giant moles	巨型鼴鼠	巨型鼹鼠		CREATURE:MOLE_GIANT NAME
+giant mole pup	幼巨型鼴鼠	幼巨型鼹鼠		CREATURE:MOLE_GIANT GENERAL_CHILD_NAME
+giant mole pups	幼巨型鼴鼠	幼巨型鼹鼠		CREATURE:MOLE_GIANT GENERAL_CHILD_NAME
+fire imp	火焰小鬼	火焰小鬼		CREATURE:IMP_FIRE NAME
+fire imps	火焰小鬼	火焰小鬼		CREATURE:IMP_FIRE NAME
+giant cave spider	巨型洞穴蜘蛛	巨型洞穴蜘蛛		CREATURE:SPIDER_CAVE_GIANT NAME
+giant cave spiders	巨型洞穴蜘蛛	巨型洞穴蜘蛛		CREATURE:SPIDER_CAVE_GIANT NAME
+frozen giant cave spider venom	冰凍的巨型洞穴蜘蛛毒液	冰冻的巨型洞穴蜘蛛毒液		CREATURE:SPIDER_CAVE_GIANT STATE_NAME
+giant cave spider venom	巨型洞穴蜘蛛毒液	巨型洞穴蜘蛛毒液		CREATURE:SPIDER_CAVE_GIANT STATE_NAME
+boiling giant cave spider venom	沸騰的巨型洞穴蜘蛛毒液	沸腾的巨型洞穴蜘蛛毒液		CREATURE:SPIDER_CAVE_GIANT STATE_NAME
+giant cave spider bite	巨型洞穴蜘蛛咬傷	巨型洞穴蜘蛛咬伤		CREATURE:SPIDER_CAVE_GIANT SYN_NAME；病症名
+cave spider	洞穴蜘蛛	洞穴蜘蛛		CREATURE:SPIDER_CAVE NAME
+cave spiders	洞穴蜘蛛	洞穴蜘蛛		CREATURE:SPIDER_CAVE NAME
+frozen cave spider venom	冰凍的洞穴蜘蛛毒液	冰冻的洞穴蜘蛛毒液		CREATURE:SPIDER_CAVE STATE_NAME
+cave spider venom	洞穴蜘蛛毒液	洞穴蜘蛛毒液		CREATURE:SPIDER_CAVE STATE_NAME
+boiling cave spider venom	沸騰的洞穴蜘蛛毒液	沸腾的洞穴蜘蛛毒液		CREATURE:SPIDER_CAVE STATE_NAME
+cave spider bite	洞穴蜘蛛咬傷	洞穴蜘蛛咬伤		CREATURE:SPIDER_CAVE SYN_NAME；病症名
+cave fish	洞穴魚	洞穴鱼		CREATURE:FISH_CAVE NAME
+cave fish man	洞穴魚人	洞穴鱼人		CREATURE:CAVE_FISH_MAN CASTE_NAME
+cave fish men	洞穴魚人	洞穴鱼人		CREATURE:CAVE_FISH_MAN CASTE_NAME
+cave fish woman	女洞穴魚人	女洞穴鱼人		CREATURE:CAVE_FISH_MAN CASTE_NAME
+cave fish women	女洞穴魚人	女洞穴鱼人		CREATURE:CAVE_FISH_MAN CASTE_NAME
+cave lobster	洞穴龍蝦	洞穴龙虾		CREATURE:LOBSTER_CAVE NAME
+cave lobsters	洞穴龍蝦	洞穴龙虾		CREATURE:LOBSTER_CAVE NAME
+fire snake	火蛇	火蛇		CREATURE:SNAKE_FIRE NAME
+fire snakes	火蛇	火蛇		CREATURE:SNAKE_FIRE NAME
+liquid fire	液態火焰	液态火焰		CREATURE:SNAKE_FIRE STATE_NAME
+olm	洞螈	洞螈		CREATURE:OLM NAME
+olms	洞螈	洞螈		CREATURE:OLM NAME
+olm man	洞螈人	洞螈人		CREATURE:OLM_MAN CASTE_NAME
+olm men	洞螈人	洞螈人		CREATURE:OLM_MAN CASTE_NAME
+olm woman	女洞螈人	女洞螈人		CREATURE:OLM_MAN CASTE_NAME
+olm women	女洞螈人	女洞螈人		CREATURE:OLM_MAN CASTE_NAME
+bat	蝙蝠	蝙蝠		CREATURE:BAT NAME
+bats	蝙蝠	蝙蝠		CREATURE:BAT NAME
+bat man	蝙蝠人	蝙蝠人		CREATURE:BAT_MAN CASTE_NAME
+bat men	蝙蝠人	蝙蝠人		CREATURE:BAT_MAN CASTE_NAME
+bat woman	女蝙蝠人	女蝙蝠人		CREATURE:BAT_MAN CASTE_NAME
+bat women	女蝙蝠人	女蝙蝠人		CREATURE:BAT_MAN CASTE_NAME
+purring maggot	呼嚕蛆	呼噜蛆		CREATURE:MAGGOT_PURRING NAME；自創：照字面
+purring maggots	呼嚕蛆	呼噜蛆		CREATURE:MAGGOT_PURRING NAME
+frozen dwarven milk	冰凍的矮人奶	冰冻的矮人奶		CREATURE:MAGGOT_PURRING STATE_NAME
+dwarven milk	矮人奶	矮人奶		CREATURE:MAGGOT_PURRING STATE_NAME
+boiling dwarven milk	沸騰的矮人奶	沸腾的矮人奶		CREATURE:MAGGOT_PURRING STATE_NAME
+dwarven cheese	矮人起司	矮人奶酪		CREATURE:MAGGOT_PURRING STATE_NAME
+dwarven cheese powder	矮人起司粉	矮人奶酪粉		CREATURE:MAGGOT_PURRING STATE_NAME
+melted dwarven cheese	融化的矮人起司	融化的矮人奶酪		CREATURE:MAGGOT_PURRING STATE_NAME
+boiling dwarven cheese	沸騰的矮人起司	沸腾的矮人奶酪		CREATURE:MAGGOT_PURRING STATE_NAME
+fire man	火人	火人		CREATURE:ELEMENTMAN_FIRE NAME
+fire men	火人	火人		CREATURE:ELEMENTMAN_FIRE NAME
+magma man	熔岩人	熔岩人		CREATURE:ELEMENTMAN_MAGMA NAME
+magma men	熔岩人	熔岩人		CREATURE:ELEMENTMAN_MAGMA NAME
+magma	熔岩	熔岩		CREATURE:ELEMENTMAN_MAGMA TISSUE_NAME；依本專案 magma 譯「熔岩」（tooltips、magma-safe 耐熔岩）
+crust	硬殼	硬壳		CREATURE:ELEMENTMAN_MAGMA TISSUE_NAME；熔岩人的外層
+iron man	鐵人	铁人		CREATURE:ELEMENTMAN_IRON NAME
+iron men	鐵人	铁人		CREATURE:ELEMENTMAN_IRON NAME
+frozen iron man gas	冰凍的鐵人氣體	冰冻的铁人气体		CREATURE:ELEMENTMAN_IRON STATE_NAME
+condensed iron man gas	凝結的鐵人氣體	凝结的铁人气体		CREATURE:ELEMENTMAN_IRON STATE_NAME
+iron man gas	鐵人氣體	铁人气体		CREATURE:ELEMENTMAN_IRON STATE_NAME
+iron man cough	鐵人咳嗽	铁人咳嗽		CREATURE:ELEMENTMAN_IRON SYN_NAME；病症名
+iron	鐵	铁		CREATURE:ELEMENTMAN_IRON TISSUE_NAME
+gas	氣體	气体		CREATURE:ELEMENTMAN_IRON TISSUE_NAME
+mud man	泥人	泥人		CREATURE:ELEMENTMAN_MUD NAME
+mud men	泥人	泥人		CREATURE:ELEMENTMAN_MUD NAME
+cave swallow	洞穴燕	洞穴燕		CREATURE:BIRD_SWALLOW_CAVE NAME
+cave swallows	洞穴燕	洞穴燕		CREATURE:BIRD_SWALLOW_CAVE NAME
+cave swallow hatchling	幼洞穴燕	幼洞穴燕		CREATURE:BIRD_SWALLOW_CAVE GENERAL_CHILD_NAME
+cave swallow hatchlings	幼洞穴燕	幼洞穴燕		CREATURE:BIRD_SWALLOW_CAVE GENERAL_CHILD_NAME
+cave swallow man	洞穴燕人	洞穴燕人		CREATURE:CAVE_SWALLOW_MAN CASTE_NAME
+cave swallow men	洞穴燕人	洞穴燕人		CREATURE:CAVE_SWALLOW_MAN CASTE_NAME
+cave swallow woman	女洞穴燕人	女洞穴燕人		CREATURE:CAVE_SWALLOW_MAN CASTE_NAME
+cave swallow women	女洞穴燕人	女洞穴燕人		CREATURE:CAVE_SWALLOW_MAN CASTE_NAME
+giant cave swallow	巨型洞穴燕	巨型洞穴燕		CREATURE:BIRD_SWALLOW_CAVE_GIANT NAME
+giant cave swallows	巨型洞穴燕	巨型洞穴燕		CREATURE:BIRD_SWALLOW_CAVE_GIANT NAME
+giant cave swallow hatchling	幼巨型洞穴燕	幼巨型洞穴燕		CREATURE:BIRD_SWALLOW_CAVE_GIANT GENERAL_CHILD_NAME
+giant cave swallow hatchlings	幼巨型洞穴燕	幼巨型洞穴燕		CREATURE:BIRD_SWALLOW_CAVE_GIANT GENERAL_CHILD_NAME
+amphibian man	兩棲人	两栖人		CREATURE:AMPHIBIAN_MAN NAME
+amphibian men	兩棲人	两栖人		CREATURE:AMPHIBIAN_MAN NAME
+amphibian woman	女兩棲人	女两栖人		CREATURE:AMPHIBIAN_MAN CASTE_NAME
+amphibian women	女兩棲人	女两栖人		CREATURE:AMPHIBIAN_MAN CASTE_NAME
+reptile man	爬蟲人	爬虫人		CREATURE:REPTILE_MAN NAME
+reptile men	爬蟲人	爬虫人		CREATURE:REPTILE_MAN NAME
+reptile woman	女爬蟲人	女爬虫人		CREATURE:REPTILE_MAN CASTE_NAME
+reptile women	女爬蟲人	女爬虫人		CREATURE:REPTILE_MAN CASTE_NAME
+serpent man	蛇人	蛇人		CREATURE:SERPENT_MAN NAME
+serpent men	蛇人	蛇人		CREATURE:SERPENT_MAN NAME
+frozen serpent man venom	冰凍的蛇人毒液	冰冻的蛇人毒液		CREATURE:SERPENT_MAN STATE_NAME
+serpent man venom	蛇人毒液	蛇人毒液		CREATURE:SERPENT_MAN STATE_NAME
+boiling serpent man venom	沸騰的蛇人毒液	沸腾的蛇人毒液		CREATURE:SERPENT_MAN STATE_NAME
+serpent man bite	蛇人咬傷	蛇人咬伤		CREATURE:SERPENT_MAN SYN_NAME；病症名
+serpent woman	女蛇人	女蛇人		CREATURE:SERPENT_MAN CASTE_NAME
+serpent women	女蛇人	女蛇人		CREATURE:SERPENT_MAN CASTE_NAME
+antman	蟻人	蚁人		CREATURE:ANT_MAN NAME
+antmen	蟻人	蚁人		CREATURE:ANT_MAN NAME
+worker ant woman	女工蟻人	女工蚁人		CREATURE:ANT_MAN CASTE_NAME
+worker ant women	女工蟻人	女工蚁人		CREATURE:ANT_MAN CASTE_NAME
+soldier ant woman	女兵蟻人	女兵蚁人		CREATURE:ANT_MAN CASTE_NAME
+soldier ant women	女兵蟻人	女兵蚁人		CREATURE:ANT_MAN CASTE_NAME
+drone ant man	雄蟻人	雄蚁人		CREATURE:ANT_MAN CASTE_NAME；drone 是雄蟻
+drone ant men	雄蟻人	雄蚁人		CREATURE:ANT_MAN CASTE_NAME
+queen ant woman	蟻后人	蚁后人		CREATURE:ANT_MAN CASTE_NAME
+queen ant women	蟻后人	蚁后人		CREATURE:ANT_MAN CASTE_NAME
+rodent man	齧齒人	啮齿人		CREATURE:RODENT MAN NAME
+rodent men	齧齒人	啮齿人		CREATURE:RODENT MAN NAME
+rodent woman	女齧齒人	女啮齿人		CREATURE:RODENT MAN CASTE_NAME
+rodent women	女齧齒人	女啮齿人		CREATURE:RODENT MAN CASTE_NAME

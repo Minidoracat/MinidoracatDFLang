@@ -1,0 +1,482 @@
+en	zh-Hant	zh-Hans	align	note
+elephant	大象	大象		CREATURE:ELEPHANT NAME；衍生名稱用「象」（象人、幼象、巨型象），「大」是口語詞頭
+elephants	大象	大象		CREATURE:ELEPHANT NAME
+elephant calf	幼象	幼象		CREATURE:ELEPHANT GENERAL_CHILD_NAME
+elephant calves	幼象	幼象		CREATURE:ELEPHANT GENERAL_CHILD_NAME
+elephant man	象人	象人		CREATURE:ELEPHANT_MAN CASTE_NAME
+elephant men	象人	象人		CREATURE:ELEPHANT_MAN CASTE_NAME
+elephant woman	女象人	女象人		CREATURE:ELEPHANT_MAN CASTE_NAME
+elephant women	女象人	女象人		CREATURE:ELEPHANT_MAN CASTE_NAME
+giant elephant	巨型象	巨型象		CREATURE:GIANT_ELEPHANT NAME
+giant elephants	巨型象	巨型象		CREATURE:GIANT_ELEPHANT NAME
+giant elephant calf	幼巨型象	幼巨型象		CREATURE:GIANT_ELEPHANT GENERAL_CHILD_NAME
+giant elephant calves	幼巨型象	幼巨型象		CREATURE:GIANT_ELEPHANT GENERAL_CHILD_NAME
+warthog	疣豬	疣猪		CREATURE:WARTHOG NAME
+warthogs	疣豬	疣猪		CREATURE:WARTHOG NAME
+warthog piglet	幼疣豬	幼疣猪		CREATURE:WARTHOG GENERAL_CHILD_NAME
+warthog piglets	幼疣豬	幼疣猪		CREATURE:WARTHOG GENERAL_CHILD_NAME
+warthog man	疣豬人	疣猪人		CREATURE:WARTHOG_MAN CASTE_NAME
+warthog men	疣豬人	疣猪人		CREATURE:WARTHOG_MAN CASTE_NAME
+warthog woman	女疣豬人	女疣猪人		CREATURE:WARTHOG_MAN CASTE_NAME
+warthog women	女疣豬人	女疣猪人		CREATURE:WARTHOG_MAN CASTE_NAME
+giant warthog	巨型疣豬	巨型疣猪		CREATURE:GIANT_WARTHOG NAME
+giant warthogs	巨型疣豬	巨型疣猪		CREATURE:GIANT_WARTHOG NAME
+giant warthog piglet	幼巨型疣豬	幼巨型疣猪		CREATURE:GIANT_WARTHOG GENERAL_CHILD_NAME
+giant warthog piglets	幼巨型疣豬	幼巨型疣猪		CREATURE:GIANT_WARTHOG GENERAL_CHILD_NAME
+lion	獅子	狮子		CREATURE:LION NAME；衍生名稱用「獅」（獅人、幼獅、巨型獅），「子」是詞尾
+lions	獅子	狮子		CREATURE:LION NAME
+lion cub	幼獅	幼狮		CREATURE:LION GENERAL_CHILD_NAME
+lion cubs	幼獅	幼狮		CREATURE:LION GENERAL_CHILD_NAME
+lion man	獅人	狮人		CREATURE:LION_MAN CASTE_NAME
+lion men	獅人	狮人		CREATURE:LION_MAN CASTE_NAME
+lion woman	女獅人	女狮人		CREATURE:LION_MAN CASTE_NAME
+lion women	女獅人	女狮人		CREATURE:LION_MAN CASTE_NAME
+giant lion	巨型獅	巨型狮		CREATURE:GIANT_LION NAME
+giant lions	巨型獅	巨型狮		CREATURE:GIANT_LION NAME
+giant lion cub	幼巨型獅	幼巨型狮		CREATURE:GIANT_LION GENERAL_CHILD_NAME
+giant lion cubs	幼巨型獅	幼巨型狮		CREATURE:GIANT_LION GENERAL_CHILD_NAME
+leopard	花豹	花豹		CREATURE:LEOPARD NAME
+leopards	花豹	花豹		CREATURE:LEOPARD NAME
+leopard cub	幼花豹	幼花豹		CREATURE:LEOPARD GENERAL_CHILD_NAME
+leopard cubs	幼花豹	幼花豹		CREATURE:LEOPARD GENERAL_CHILD_NAME
+leopard man	花豹人	花豹人		CREATURE:LEOPARD_MAN CASTE_NAME
+leopard men	花豹人	花豹人		CREATURE:LEOPARD_MAN CASTE_NAME
+leopard woman	女花豹人	女花豹人		CREATURE:LEOPARD_MAN CASTE_NAME
+leopard women	女花豹人	女花豹人		CREATURE:LEOPARD_MAN CASTE_NAME
+giant leopard	巨型花豹	巨型花豹		CREATURE:GIANT_LEOPARD NAME
+giant leopards	巨型花豹	巨型花豹		CREATURE:GIANT_LEOPARD NAME
+giant leopard cub	幼巨型花豹	幼巨型花豹		CREATURE:GIANT_LEOPARD GENERAL_CHILD_NAME
+giant leopard cubs	幼巨型花豹	幼巨型花豹		CREATURE:GIANT_LEOPARD GENERAL_CHILD_NAME
+jaguar	美洲豹	美洲豹		CREATURE:JAGUAR NAME
+jaguars	美洲豹	美洲豹		CREATURE:JAGUAR NAME
+jaguar cub	幼美洲豹	幼美洲豹		CREATURE:JAGUAR GENERAL_CHILD_NAME
+jaguar cubs	幼美洲豹	幼美洲豹		CREATURE:JAGUAR GENERAL_CHILD_NAME
+jaguar man	美洲豹人	美洲豹人		CREATURE:JAGUAR_MAN CASTE_NAME
+jaguar men	美洲豹人	美洲豹人		CREATURE:JAGUAR_MAN CASTE_NAME
+jaguar woman	女美洲豹人	女美洲豹人		CREATURE:JAGUAR_MAN CASTE_NAME
+jaguar women	女美洲豹人	女美洲豹人		CREATURE:JAGUAR_MAN CASTE_NAME
+giant jaguar	巨型美洲豹	巨型美洲豹		CREATURE:GIANT_JAGUAR NAME
+giant jaguars	巨型美洲豹	巨型美洲豹		CREATURE:GIANT_JAGUAR NAME
+giant jaguar cub	幼巨型美洲豹	幼巨型美洲豹		CREATURE:GIANT_JAGUAR GENERAL_CHILD_NAME
+giant jaguar cubs	幼巨型美洲豹	幼巨型美洲豹		CREATURE:GIANT_JAGUAR GENERAL_CHILD_NAME
+tiger	老虎	老虎		CREATURE:TIGER NAME；衍生名稱用「虎」（虎人、幼虎、巨型虎），「老」是詞頭
+tigers	老虎	老虎		CREATURE:TIGER NAME
+tiger cub	幼虎	幼虎		CREATURE:TIGER GENERAL_CHILD_NAME
+tiger cubs	幼虎	幼虎		CREATURE:TIGER GENERAL_CHILD_NAME
+tiger man	虎人	虎人		CREATURE:TIGER_MAN CASTE_NAME
+tiger men	虎人	虎人		CREATURE:TIGER_MAN CASTE_NAME
+tiger woman	女虎人	女虎人		CREATURE:TIGER_MAN CASTE_NAME
+tiger women	女虎人	女虎人		CREATURE:TIGER_MAN CASTE_NAME
+giant tiger	巨型虎	巨型虎		CREATURE:GIANT_TIGER NAME
+giant tigers	巨型虎	巨型虎		CREATURE:GIANT_TIGER NAME
+giant tiger cub	幼巨型虎	幼巨型虎		CREATURE:GIANT_TIGER GENERAL_CHILD_NAME
+giant tiger cubs	幼巨型虎	幼巨型虎		CREATURE:GIANT_TIGER GENERAL_CHILD_NAME
+cheetah	獵豹	猎豹		CREATURE:CHEETAH NAME
+cheetahs	獵豹	猎豹		CREATURE:CHEETAH NAME
+cheetah cub	幼獵豹	幼猎豹		CREATURE:CHEETAH GENERAL_CHILD_NAME
+cheetah cubs	幼獵豹	幼猎豹		CREATURE:CHEETAH GENERAL_CHILD_NAME
+cheetah man	獵豹人	猎豹人		CREATURE:CHEETAH_MAN CASTE_NAME
+cheetah men	獵豹人	猎豹人		CREATURE:CHEETAH_MAN CASTE_NAME
+cheetah woman	女獵豹人	女猎豹人		CREATURE:CHEETAH_MAN CASTE_NAME
+cheetah women	女獵豹人	女猎豹人		CREATURE:CHEETAH_MAN CASTE_NAME
+giant cheetah	巨型獵豹	巨型猎豹		CREATURE:GIANT_CHEETAH NAME
+giant cheetahs	巨型獵豹	巨型猎豹		CREATURE:GIANT_CHEETAH NAME
+giant cheetah cub	幼巨型獵豹	幼巨型猎豹		CREATURE:GIANT_CHEETAH GENERAL_CHILD_NAME
+giant cheetah cubs	幼巨型獵豹	幼巨型猎豹		CREATURE:GIANT_CHEETAH GENERAL_CHILD_NAME
+gazelle	瞪羚	瞪羚		CREATURE:GAZELLE NAME
+gazelles	瞪羚	瞪羚		CREATURE:GAZELLE NAME
+gazelle fawn	幼瞪羚	幼瞪羚		CREATURE:GAZELLE GENERAL_CHILD_NAME
+gazelle fawns	幼瞪羚	幼瞪羚		CREATURE:GAZELLE GENERAL_CHILD_NAME
+gazelle man	瞪羚人	瞪羚人		CREATURE:GAZELLE_MAN CASTE_NAME
+gazelle men	瞪羚人	瞪羚人		CREATURE:GAZELLE_MAN CASTE_NAME
+gazelle woman	女瞪羚人	女瞪羚人		CREATURE:GAZELLE_MAN CASTE_NAME
+gazelle women	女瞪羚人	女瞪羚人		CREATURE:GAZELLE_MAN CASTE_NAME
+giant gazelle	巨型瞪羚	巨型瞪羚		CREATURE:GIANT_GAZELLE NAME
+giant gazelles	巨型瞪羚	巨型瞪羚		CREATURE:GIANT_GAZELLE NAME
+giant gazelle fawn	幼巨型瞪羚	幼巨型瞪羚		CREATURE:GIANT_GAZELLE GENERAL_CHILD_NAME
+giant gazelle fawns	幼巨型瞪羚	幼巨型瞪羚		CREATURE:GIANT_GAZELLE GENERAL_CHILD_NAME
+mandrill	山魈	山魈		CREATURE:MANDRILL NAME
+mandrills	山魈	山魈		CREATURE:MANDRILL NAME
+mandrill man	山魈人	山魈人		CREATURE:MANDRILL_MAN CASTE_NAME
+mandrill men	山魈人	山魈人		CREATURE:MANDRILL_MAN CASTE_NAME
+mandrill woman	女山魈人	女山魈人		CREATURE:MANDRILL_MAN CASTE_NAME
+mandrill women	女山魈人	女山魈人		CREATURE:MANDRILL_MAN CASTE_NAME
+giant mandrill	巨型山魈	巨型山魈		CREATURE:GIANT_MANDRILL NAME
+giant mandrills	巨型山魈	巨型山魈		CREATURE:GIANT_MANDRILL NAME
+chimpanzee	黑猩猩	黑猩猩		CREATURE:CHIMPANZEE NAME
+chimpanzees	黑猩猩	黑猩猩		CREATURE:CHIMPANZEE NAME
+bonobo	倭猩猩	倭猩猩		CREATURE:BONOBO NAME；正式名倭黑猩猩，原文 6 格只放得下三字
+bonobos	倭猩猩	倭猩猩		CREATURE:BONOBO NAME
+gorilla	大猩猩	大猩猩		CREATURE:GORILLA NAME
+gorillas	大猩猩	大猩猩		CREATURE:GORILLA NAME
+orangutan	紅毛猩猩	红毛猩猩		CREATURE:ORANGUTAN NAME
+orangutans	紅毛猩猩	红毛猩猩		CREATURE:ORANGUTAN NAME
+siamang	合趾猿	合趾猿		CREATURE:GIBBON_SIAMANG NAME
+siamangs	合趾猿	合趾猿		CREATURE:GIBBON_SIAMANG NAME
+white-handed gibbon	白手長臂猿	白掌长臂猿		CREATURE:GIBBON_WHITE_HANDED NAME；兩岸用名：白手長臂猿／白掌长臂猿
+white-handed gibbons	白手長臂猿	白掌长臂猿		CREATURE:GIBBON_WHITE_HANDED NAME
+black-handed gibbon	黑手長臂猿	黑掌长臂猿		CREATURE:GIBBON_BLACK_HANDED NAME；敏長臂猿；兩岸用名：黑手長臂猿／黑掌长臂猿
+black-handed gibbons	黑手長臂猿	黑掌长臂猿		CREATURE:GIBBON_BLACK_HANDED NAME
+gray gibbon	灰長臂猿	灰长臂猿		CREATURE:GIBBON_GRAY NAME
+gray gibbons	灰長臂猿	灰长臂猿		CREATURE:GIBBON_GRAY NAME
+silvery gibbon	銀白長臂猿	银白长臂猿		CREATURE:GIBBON_SILVERY NAME
+silvery gibbons	銀白長臂猿	银白长臂猿		CREATURE:GIBBON_SILVERY NAME
+pileated gibbon	戴帽長臂猿	戴帽长臂猿		CREATURE:GIBBON_PILEATED NAME
+pileated gibbons	戴帽長臂猿	戴帽长臂猿		CREATURE:GIBBON_PILEATED NAME
+bilou	比盧	比卢		CREATURE:GIBBON_BILOU NAME；克氏長臂猿的當地名音譯；原文 5 格放不下正式名
+bilous	比盧	比卢		CREATURE:GIBBON_BILOU NAME
+white-browed gibbon	白眉長臂猿	白眉长臂猿		CREATURE:GIBBON_WHITE_BROWED NAME
+white-browed gibbons	白眉長臂猿	白眉长臂猿		CREATURE:GIBBON_WHITE_BROWED NAME
+black-crested gibbon	黑冠長臂猿	黑冠长臂猿		CREATURE:GIBBON_BLACK_CRESTED NAME
+black-crested gibbons	黑冠長臂猿	黑冠长臂猿		CREATURE:GIBBON_BLACK_CRESTED NAME
+one-humped camel	單峰駱駝	单峰骆驼		CREATURE:CAMEL_1_HUMP NAME
+one-humped camels	單峰駱駝	单峰骆驼		CREATURE:CAMEL_1_HUMP NAME
+one-humped camel calf	幼單峰駱駝	幼单峰骆驼		CREATURE:CAMEL_1_HUMP GENERAL_CHILD_NAME
+one-humped camel calves	幼單峰駱駝	幼单峰骆驼		CREATURE:CAMEL_1_HUMP GENERAL_CHILD_NAME
+frozen one-humped camel's milk	冰凍的單峰駱駝奶	冰冻的单峰骆驼奶		CREATURE:CAMEL_1_HUMP STATE_NAME
+one-humped camel's milk	單峰駱駝奶	单峰骆驼奶		CREATURE:CAMEL_1_HUMP STATE_NAME
+boiling one-humped camel's milk	沸騰的單峰駱駝奶	沸腾的单峰骆驼奶		CREATURE:CAMEL_1_HUMP STATE_NAME
+one-humped camel cheese	單峰駱駝起司	单峰骆驼奶酪		CREATURE:CAMEL_1_HUMP STATE_NAME；兩岸用語：起司／奶酪
+one-humped camel cheese powder	單峰駱駝起司粉	单峰骆驼奶酪粉		CREATURE:CAMEL_1_HUMP STATE_NAME
+melted one-humped camel cheese	融化的單峰駱駝起司	融化的单峰骆驼奶酪		CREATURE:CAMEL_1_HUMP STATE_NAME
+boiling one-humped camel cheese	沸騰的單峰駱駝起司	沸腾的单峰骆驼奶酪		CREATURE:CAMEL_1_HUMP STATE_NAME
+one-humped camel man	單峰駱駝人	单峰骆驼人		CREATURE:CAMEL_1_HUMP_MAN CASTE_NAME
+one-humped camel men	單峰駱駝人	单峰骆驼人		CREATURE:CAMEL_1_HUMP_MAN CASTE_NAME
+one-humped camel woman	女單峰駱駝人	女单峰骆驼人		CREATURE:CAMEL_1_HUMP_MAN CASTE_NAME
+one-humped camel women	女單峰駱駝人	女单峰骆驼人		CREATURE:CAMEL_1_HUMP_MAN CASTE_NAME
+giant one-humped camel	巨型單峰駱駝	巨型单峰骆驼		CREATURE:GIANT_CAMEL_1_HUMP NAME
+giant one-humped camels	巨型單峰駱駝	巨型单峰骆驼		CREATURE:GIANT_CAMEL_1_HUMP NAME
+giant one-humped camel calf	幼巨型單峰駱駝	幼巨型单峰骆驼		CREATURE:GIANT_CAMEL_1_HUMP GENERAL_CHILD_NAME
+giant one-humped camel calves	幼巨型單峰駱駝	幼巨型单峰骆驼		CREATURE:GIANT_CAMEL_1_HUMP GENERAL_CHILD_NAME
+two-humped camel	雙峰駱駝	双峰骆驼		CREATURE:CAMEL_2_HUMP NAME
+two-humped camels	雙峰駱駝	双峰骆驼		CREATURE:CAMEL_2_HUMP NAME
+two-humped camel calf	幼雙峰駱駝	幼双峰骆驼		CREATURE:CAMEL_2_HUMP GENERAL_CHILD_NAME
+two-humped camel calves	幼雙峰駱駝	幼双峰骆驼		CREATURE:CAMEL_2_HUMP GENERAL_CHILD_NAME
+frozen two-humped camel's milk	冰凍的雙峰駱駝奶	冰冻的双峰骆驼奶		CREATURE:CAMEL_2_HUMP STATE_NAME
+two-humped camel's milk	雙峰駱駝奶	双峰骆驼奶		CREATURE:CAMEL_2_HUMP STATE_NAME
+boiling two-humped camel's milk	沸騰的雙峰駱駝奶	沸腾的双峰骆驼奶		CREATURE:CAMEL_2_HUMP STATE_NAME
+two-humped camel cheese	雙峰駱駝起司	双峰骆驼奶酪		CREATURE:CAMEL_2_HUMP STATE_NAME；兩岸用語：起司／奶酪
+two-humped camel cheese powder	雙峰駱駝起司粉	双峰骆驼奶酪粉		CREATURE:CAMEL_2_HUMP STATE_NAME
+melted two-humped camel cheese	融化的雙峰駱駝起司	融化的双峰骆驼奶酪		CREATURE:CAMEL_2_HUMP STATE_NAME
+boiling two-humped camel cheese	沸騰的雙峰駱駝起司	沸腾的双峰骆驼奶酪		CREATURE:CAMEL_2_HUMP STATE_NAME
+two-humped camel man	雙峰駱駝人	双峰骆驼人		CREATURE:CAMEL_2_HUMP_MAN CASTE_NAME
+two-humped camel men	雙峰駱駝人	双峰骆驼人		CREATURE:CAMEL_2_HUMP_MAN CASTE_NAME
+two-humped camel woman	女雙峰駱駝人	女双峰骆驼人		CREATURE:CAMEL_2_HUMP_MAN CASTE_NAME
+two-humped camel women	女雙峰駱駝人	女双峰骆驼人		CREATURE:CAMEL_2_HUMP_MAN CASTE_NAME
+giant two-humped camel	巨型雙峰駱駝	巨型双峰骆驼		CREATURE:GIANT_CAMEL_2_HUMP NAME
+giant two-humped camels	巨型雙峰駱駝	巨型双峰骆驼		CREATURE:GIANT_CAMEL_2_HUMP NAME
+giant two-humped camel calf	幼巨型雙峰駱駝	幼巨型双峰骆驼		CREATURE:GIANT_CAMEL_2_HUMP GENERAL_CHILD_NAME
+giant two-humped camel calves	幼巨型雙峰駱駝	幼巨型双峰骆驼		CREATURE:GIANT_CAMEL_2_HUMP GENERAL_CHILD_NAME
+saltwater crocodile	鹹水鱷	湾鳄		CREATURE:CROCODILE_SALTWATER NAME；兩岸用名：鹹水鱷／湾鳄
+saltwater crocodiles	鹹水鱷	湾鳄		CREATURE:CROCODILE_SALTWATER NAME
+saltwater crocodile hatchling	幼鹹水鱷	幼湾鳄		CREATURE:CROCODILE_SALTWATER GENERAL_CHILD_NAME
+saltwater crocodile hatchlings	幼鹹水鱷	幼湾鳄		CREATURE:CROCODILE_SALTWATER GENERAL_CHILD_NAME
+saltwater crocodile man	鹹水鱷人	湾鳄人		CREATURE:CROCODILE_SALTWATER_MAN CASTE_NAME
+saltwater crocodile men	鹹水鱷人	湾鳄人		CREATURE:CROCODILE_SALTWATER_MAN CASTE_NAME
+saltwater crocodile woman	女鹹水鱷人	女湾鳄人		CREATURE:CROCODILE_SALTWATER_MAN CASTE_NAME
+saltwater crocodile women	女鹹水鱷人	女湾鳄人		CREATURE:CROCODILE_SALTWATER_MAN CASTE_NAME
+giant saltwater crocodile	巨型鹹水鱷	巨型湾鳄		CREATURE:GIANT_CROCODILE_SALTWATER NAME
+giant saltwater crocodiles	巨型鹹水鱷	巨型湾鳄		CREATURE:GIANT_CROCODILE_SALTWATER NAME
+giant saltwater crocodile hatchling	幼巨型鹹水鱷	幼巨型湾鳄		CREATURE:GIANT_CROCODILE_SALTWATER GENERAL_CHILD_NAME
+giant saltwater crocodile hatchlings	幼巨型鹹水鱷	幼巨型湾鳄		CREATURE:GIANT_CROCODILE_SALTWATER GENERAL_CHILD_NAME
+vulture	禿鷲	秃鹫		CREATURE:BIRD_VULTURE NAME
+vultures	禿鷲	秃鹫		CREATURE:BIRD_VULTURE NAME
+vulture hatchling	幼禿鷲	幼秃鹫		CREATURE:BIRD_VULTURE GENERAL_CHILD_NAME
+vulture hatchlings	幼禿鷲	幼秃鹫		CREATURE:BIRD_VULTURE GENERAL_CHILD_NAME
+vulture man	禿鷲人	秃鹫人		CREATURE:VULTURE_MAN CASTE_NAME
+vulture men	禿鷲人	秃鹫人		CREATURE:VULTURE_MAN CASTE_NAME
+vulture woman	女禿鷲人	女秃鹫人		CREATURE:VULTURE_MAN CASTE_NAME
+vulture women	女禿鷲人	女秃鹫人		CREATURE:VULTURE_MAN CASTE_NAME
+giant vulture	巨型禿鷲	巨型秃鹫		CREATURE:GIANT_VULTURE NAME
+giant vultures	巨型禿鷲	巨型秃鹫		CREATURE:GIANT_VULTURE NAME
+giant vulture hatchling	幼巨型禿鷲	幼巨型秃鹫		CREATURE:GIANT_VULTURE GENERAL_CHILD_NAME
+giant vulture hatchlings	幼巨型禿鷲	幼巨型秃鹫		CREATURE:GIANT_VULTURE GENERAL_CHILD_NAME
+rhinoceros	犀牛	犀牛		CREATURE:RHINOCEROS NAME
+rhinoceroses	犀牛	犀牛		CREATURE:RHINOCEROS NAME
+rhinoceros calf	幼犀牛	幼犀牛		CREATURE:RHINOCEROS GENERAL_CHILD_NAME
+rhinoceros calves	幼犀牛	幼犀牛		CREATURE:RHINOCEROS GENERAL_CHILD_NAME
+rhinoceros man	犀牛人	犀牛人		CREATURE:RHINOCEROS_MAN CASTE_NAME
+rhinoceros men	犀牛人	犀牛人		CREATURE:RHINOCEROS_MAN CASTE_NAME
+rhinoceros woman	女犀牛人	女犀牛人		CREATURE:RHINOCEROS_MAN CASTE_NAME
+rhinoceros women	女犀牛人	女犀牛人		CREATURE:RHINOCEROS_MAN CASTE_NAME
+giant rhinoceros	巨型犀牛	巨型犀牛		CREATURE:GIANT_RHINOCEROS NAME
+giant rhinoceroses	巨型犀牛	巨型犀牛		CREATURE:GIANT_RHINOCEROS NAME
+giant rhinoceros calf	幼巨型犀牛	幼巨型犀牛		CREATURE:GIANT_RHINOCEROS GENERAL_CHILD_NAME
+giant rhinoceros calves	幼巨型犀牛	幼巨型犀牛		CREATURE:GIANT_RHINOCEROS GENERAL_CHILD_NAME
+giraffe	長頸鹿	长颈鹿		CREATURE:GIRAFFE NAME
+giraffes	長頸鹿	长颈鹿		CREATURE:GIRAFFE NAME
+giraffe calf	幼長頸鹿	幼长颈鹿		CREATURE:GIRAFFE GENERAL_CHILD_NAME
+giraffe calves	幼長頸鹿	幼长颈鹿		CREATURE:GIRAFFE GENERAL_CHILD_NAME
+giraffe man	長頸鹿人	长颈鹿人		CREATURE:GIRAFFE_MAN CASTE_NAME
+giraffe men	長頸鹿人	长颈鹿人		CREATURE:GIRAFFE_MAN CASTE_NAME
+giraffe woman	女長頸鹿人	女长颈鹿人		CREATURE:GIRAFFE_MAN CASTE_NAME
+giraffe women	女長頸鹿人	女长颈鹿人		CREATURE:GIRAFFE_MAN CASTE_NAME
+giant giraffe	巨型長頸鹿	巨型长颈鹿		CREATURE:GIANT_GIRAFFE NAME
+giant giraffes	巨型長頸鹿	巨型长颈鹿		CREATURE:GIANT_GIRAFFE NAME
+giant giraffe calf	幼巨型長頸鹿	幼巨型长颈鹿		CREATURE:GIANT_GIRAFFE GENERAL_CHILD_NAME
+giant giraffe calves	幼巨型長頸鹿	幼巨型长颈鹿		CREATURE:GIANT_GIRAFFE GENERAL_CHILD_NAME
+honey badger	蜜獾	蜜獾		CREATURE:HONEY BADGER NAME
+honey badgers	蜜獾	蜜獾		CREATURE:HONEY BADGER NAME
+honey badger cub	幼蜜獾	幼蜜獾		CREATURE:HONEY BADGER GENERAL_CHILD_NAME
+honey badger cubs	幼蜜獾	幼蜜獾		CREATURE:HONEY BADGER GENERAL_CHILD_NAME
+honey badger man	蜜獾人	蜜獾人		CREATURE:HONEY BADGER MAN CASTE_NAME
+honey badger men	蜜獾人	蜜獾人		CREATURE:HONEY BADGER MAN CASTE_NAME
+honey badger woman	女蜜獾人	女蜜獾人		CREATURE:HONEY BADGER MAN CASTE_NAME
+honey badger women	女蜜獾人	女蜜獾人		CREATURE:HONEY BADGER MAN CASTE_NAME
+giant honey badger	巨型蜜獾	巨型蜜獾		CREATURE:HONEY BADGER, GIANT NAME
+giant honey badgers	巨型蜜獾	巨型蜜獾		CREATURE:HONEY BADGER, GIANT NAME
+giant honey badger cub	幼巨型蜜獾	幼巨型蜜獾		CREATURE:HONEY BADGER, GIANT GENERAL_CHILD_NAME
+giant honey badger cubs	幼巨型蜜獾	幼巨型蜜獾		CREATURE:HONEY BADGER, GIANT GENERAL_CHILD_NAME
+giant tortoise	象龜	象龟		CREATURE:GIANT TORTOISE NAME；真實物種（加拉巴哥、亞達伯拉象龜），不是巨型生物；巨型版是 gigantic tortoise
+giant tortoises	象龜	象龟		CREATURE:GIANT TORTOISE NAME
+giant tortoise hatchling	幼象龜	幼象龟		CREATURE:GIANT TORTOISE GENERAL_CHILD_NAME
+giant tortoise hatchlings	幼象龜	幼象龟		CREATURE:GIANT TORTOISE GENERAL_CHILD_NAME
+giant tortoise man	象龜人	象龟人		CREATURE:GIANT TORTOISE MAN CASTE_NAME
+giant tortoise men	象龜人	象龟人		CREATURE:GIANT TORTOISE MAN CASTE_NAME
+giant tortoise woman	女象龜人	女象龟人		CREATURE:GIANT TORTOISE MAN CASTE_NAME
+giant tortoise women	女象龜人	女象龟人		CREATURE:GIANT TORTOISE MAN CASTE_NAME
+gigantic tortoise	巨型象龜	巨型象龟		CREATURE:GIGANTIC TORTOISE NAME
+gigantic tortoises	巨型象龜	巨型象龟		CREATURE:GIGANTIC TORTOISE NAME
+gigantic tortoise hatchling	幼巨型象龜	幼巨型象龟		CREATURE:GIGANTIC TORTOISE GENERAL_CHILD_NAME
+gigantic tortoise hatchlings	幼巨型象龜	幼巨型象龟		CREATURE:GIGANTIC TORTOISE GENERAL_CHILD_NAME
+armadillo	犰狳	犰狳		CREATURE:ARMADILLO NAME
+armadillos	犰狳	犰狳		CREATURE:ARMADILLO NAME
+armadillo pup	幼犰狳	幼犰狳		CREATURE:ARMADILLO GENERAL_CHILD_NAME
+armadillo pups	幼犰狳	幼犰狳		CREATURE:ARMADILLO GENERAL_CHILD_NAME
+armadillo sow	母犰狳	母犰狳		CREATURE:ARMADILLO CASTE_NAME
+armadillo sows	母犰狳	母犰狳		CREATURE:ARMADILLO CASTE_NAME
+armadillo boar	公犰狳	公犰狳		CREATURE:ARMADILLO CASTE_NAME
+armadillo boars	公犰狳	公犰狳		CREATURE:ARMADILLO CASTE_NAME
+armadillo man	犰狳人	犰狳人		CREATURE:ARMADILLO MAN CASTE_NAME
+armadillo men	犰狳人	犰狳人		CREATURE:ARMADILLO MAN CASTE_NAME
+armadillo woman	女犰狳人	女犰狳人		CREATURE:ARMADILLO MAN CASTE_NAME
+armadillo women	女犰狳人	女犰狳人		CREATURE:ARMADILLO MAN CASTE_NAME
+giant armadillo	巨型犰狳	巨型犰狳		CREATURE:ARMADILLO, GIANT NAME
+giant armadillos	巨型犰狳	巨型犰狳		CREATURE:ARMADILLO, GIANT NAME
+giant armadillo pup	幼巨型犰狳	幼巨型犰狳		CREATURE:ARMADILLO, GIANT GENERAL_CHILD_NAME
+giant armadillo pups	幼巨型犰狳	幼巨型犰狳		CREATURE:ARMADILLO, GIANT GENERAL_CHILD_NAME
+giant armadillo boar	公巨型犰狳	公巨型犰狳		CREATURE:ARMADILLO, GIANT CASTE_NAME
+giant armadillo boars	公巨型犰狳	公巨型犰狳		CREATURE:ARMADILLO, GIANT CASTE_NAME
+giant armadillo sow	母巨型犰狳	母巨型犰狳		CREATURE:ARMADILLO, GIANT CASTE_NAME
+giant armadillo sows	母巨型犰狳	母巨型犰狳		CREATURE:ARMADILLO, GIANT CASTE_NAME
+mongoose	獴	獴		CREATURE:MONGOOSE NAME
+mongooses	獴	獴		CREATURE:MONGOOSE NAME
+mongoose pup	幼獴	幼獴		CREATURE:MONGOOSE GENERAL_CHILD_NAME
+mongoose pups	幼獴	幼獴		CREATURE:MONGOOSE GENERAL_CHILD_NAME
+mongoose man	獴人	獴人		CREATURE:MONGOOSE_MAN CASTE_NAME
+mongoose men	獴人	獴人		CREATURE:MONGOOSE_MAN CASTE_NAME
+mongoose woman	女獴人	女獴人		CREATURE:MONGOOSE_MAN CASTE_NAME
+mongoose women	女獴人	女獴人		CREATURE:MONGOOSE_MAN CASTE_NAME
+giant mongoose	巨型獴	巨型獴		CREATURE:GIANT_MONGOOSE NAME
+giant mongooses	巨型獴	巨型獴		CREATURE:GIANT_MONGOOSE NAME
+giant mongoose pup	幼巨型獴	幼巨型獴		CREATURE:GIANT_MONGOOSE GENERAL_CHILD_NAME
+giant mongoose pups	幼巨型獴	幼巨型獴		CREATURE:GIANT_MONGOOSE GENERAL_CHILD_NAME
+hyena	鬣狗	鬣狗		CREATURE:HYENA NAME
+hyenas	鬣狗	鬣狗		CREATURE:HYENA NAME
+hyena cub	幼鬣狗	幼鬣狗		CREATURE:HYENA GENERAL_CHILD_NAME
+hyena cubs	幼鬣狗	幼鬣狗		CREATURE:HYENA GENERAL_CHILD_NAME
+hyena man	鬣狗人	鬣狗人		CREATURE:HYENA_MAN CASTE_NAME
+hyena men	鬣狗人	鬣狗人		CREATURE:HYENA_MAN CASTE_NAME
+hyena woman	女鬣狗人	女鬣狗人		CREATURE:HYENA_MAN CASTE_NAME
+hyena women	女鬣狗人	女鬣狗人		CREATURE:HYENA_MAN CASTE_NAME
+giant hyena	巨型鬣狗	巨型鬣狗		CREATURE:GIANT_HYENA NAME
+giant hyenas	巨型鬣狗	巨型鬣狗		CREATURE:GIANT_HYENA NAME
+giant hyena cub	幼巨型鬣狗	幼巨型鬣狗		CREATURE:GIANT_HYENA GENERAL_CHILD_NAME
+giant hyena cubs	幼巨型鬣狗	幼巨型鬣狗		CREATURE:GIANT_HYENA GENERAL_CHILD_NAME
+anaconda	森蚺	森蚺		CREATURE:ANACONDA NAME
+anacondas	森蚺	森蚺		CREATURE:ANACONDA NAME
+anaconda man	森蚺人	森蚺人		CREATURE:ANACONDA_MAN CASTE_NAME
+anaconda men	森蚺人	森蚺人		CREATURE:ANACONDA_MAN CASTE_NAME
+anaconda woman	女森蚺人	女森蚺人		CREATURE:ANACONDA_MAN CASTE_NAME
+anaconda women	女森蚺人	女森蚺人		CREATURE:ANACONDA_MAN CASTE_NAME
+giant anaconda	巨型森蚺	巨型森蚺		CREATURE:GIANT_ANACONDA NAME
+giant anacondas	巨型森蚺	巨型森蚺		CREATURE:GIANT_ANACONDA NAME
+monitor lizard	巨蜥	巨蜥		CREATURE:MONITOR_LIZARD NAME
+monitor lizards	巨蜥	巨蜥		CREATURE:MONITOR_LIZARD NAME
+monitor lizard hatchling	幼巨蜥	幼巨蜥		CREATURE:MONITOR_LIZARD GENERAL_CHILD_NAME
+monitor lizard hatchlings	幼巨蜥	幼巨蜥		CREATURE:MONITOR_LIZARD GENERAL_CHILD_NAME
+monitor lizard man	巨蜥人	巨蜥人		CREATURE:MONITOR_LIZARD_MAN CASTE_NAME
+monitor lizard men	巨蜥人	巨蜥人		CREATURE:MONITOR_LIZARD_MAN CASTE_NAME
+monitor lizard woman	女巨蜥人	女巨蜥人		CREATURE:MONITOR_LIZARD_MAN CASTE_NAME
+monitor lizard women	女巨蜥人	女巨蜥人		CREATURE:MONITOR_LIZARD_MAN CASTE_NAME
+giant monitor lizard	巨型巨蜥	巨型巨蜥		CREATURE:GIANT_MONITOR_LIZARD NAME
+giant monitor lizards	巨型巨蜥	巨型巨蜥		CREATURE:GIANT_MONITOR_LIZARD NAME
+giant monitor lizard hatchling	幼巨型巨蜥	幼巨型巨蜥		CREATURE:GIANT_MONITOR_LIZARD GENERAL_CHILD_NAME
+giant monitor lizard hatchlings	幼巨型巨蜥	幼巨型巨蜥		CREATURE:GIANT_MONITOR_LIZARD GENERAL_CHILD_NAME
+king cobra	眼鏡王蛇	眼镜王蛇		CREATURE:KING_COBRA NAME
+king cobras	眼鏡王蛇	眼镜王蛇		CREATURE:KING_COBRA NAME
+frozen king cobra venom	冰凍的眼鏡王蛇毒液	冰冻的眼镜王蛇毒液		CREATURE:KING_COBRA STATE_NAME
+king cobra venom	眼鏡王蛇毒液	眼镜王蛇毒液		CREATURE:KING_COBRA STATE_NAME
+boiling king cobra venom	沸騰的眼鏡王蛇毒液	沸腾的眼镜王蛇毒液		CREATURE:KING_COBRA STATE_NAME
+king cobra bite	眼鏡王蛇咬傷	眼镜王蛇咬伤		CREATURE:KING_COBRA SYN_NAME
+king cobra man	眼鏡王蛇人	眼镜王蛇人		CREATURE:KING_COBRA_MAN CASTE_NAME
+king cobra men	眼鏡王蛇人	眼镜王蛇人		CREATURE:KING_COBRA_MAN CASTE_NAME
+king cobra woman	女眼鏡王蛇人	女眼镜王蛇人		CREATURE:KING_COBRA_MAN CASTE_NAME
+king cobra women	女眼鏡王蛇人	女眼镜王蛇人		CREATURE:KING_COBRA_MAN CASTE_NAME
+giant king cobra	巨型眼鏡王蛇	巨型眼镜王蛇		CREATURE:GIANT_KING_COBRA NAME
+giant king cobras	巨型眼鏡王蛇	巨型眼镜王蛇		CREATURE:GIANT_KING_COBRA NAME
+ocelot	虎貓	虎猫		CREATURE:OCELOT NAME；Leopardus pardalis；不是豹貓（leopard cat）
+ocelots	虎貓	虎猫		CREATURE:OCELOT NAME
+ocelot kitten	幼虎貓	幼虎猫		CREATURE:OCELOT GENERAL_CHILD_NAME
+ocelot kittens	幼虎貓	幼虎猫		CREATURE:OCELOT GENERAL_CHILD_NAME
+ocelot man	虎貓人	虎猫人		CREATURE:OCELOT_MAN CASTE_NAME
+ocelot men	虎貓人	虎猫人		CREATURE:OCELOT_MAN CASTE_NAME
+ocelot woman	女虎貓人	女虎猫人		CREATURE:OCELOT_MAN CASTE_NAME
+ocelot women	女虎貓人	女虎猫人		CREATURE:OCELOT_MAN CASTE_NAME
+giant ocelot	巨型虎貓	巨型虎猫		CREATURE:GIANT_OCELOT NAME
+giant ocelots	巨型虎貓	巨型虎猫		CREATURE:GIANT_OCELOT NAME
+giant ocelot kitten	幼巨型虎貓	幼巨型虎猫		CREATURE:GIANT_OCELOT GENERAL_CHILD_NAME
+giant ocelot kittens	幼巨型虎貓	幼巨型虎猫		CREATURE:GIANT_OCELOT GENERAL_CHILD_NAME
+jackal	胡狼	胡狼		CREATURE:JACKAL NAME；不是豺（dhole）
+jackals	胡狼	胡狼		CREATURE:JACKAL NAME
+jackal pup	幼胡狼	幼胡狼		CREATURE:JACKAL GENERAL_CHILD_NAME
+jackal pups	幼胡狼	幼胡狼		CREATURE:JACKAL GENERAL_CHILD_NAME
+jackal man	胡狼人	胡狼人		CREATURE:JACKAL_MAN CASTE_NAME
+jackal men	胡狼人	胡狼人		CREATURE:JACKAL_MAN CASTE_NAME
+jackal woman	女胡狼人	女胡狼人		CREATURE:JACKAL_MAN CASTE_NAME
+jackal women	女胡狼人	女胡狼人		CREATURE:JACKAL_MAN CASTE_NAME
+giant jackal	巨型胡狼	巨型胡狼		CREATURE:GIANT_JACKAL NAME
+giant jackals	巨型胡狼	巨型胡狼		CREATURE:GIANT_JACKAL NAME
+giant jackal pup	幼巨型胡狼	幼巨型胡狼		CREATURE:GIANT_JACKAL GENERAL_CHILD_NAME
+giant jackal pups	幼巨型胡狼	幼巨型胡狼		CREATURE:GIANT_JACKAL GENERAL_CHILD_NAME
+capuchin	捲尾猴	卷尾猴		CREATURE:CAPUCHIN NAME
+capuchins	捲尾猴	卷尾猴		CREATURE:CAPUCHIN NAME
+capuchin man	捲尾猴人	卷尾猴人		CREATURE:CAPUCHIN_MAN CASTE_NAME
+capuchin men	捲尾猴人	卷尾猴人		CREATURE:CAPUCHIN_MAN CASTE_NAME
+capuchin woman	女捲尾猴人	女卷尾猴人		CREATURE:CAPUCHIN_MAN CASTE_NAME
+capuchin women	女捲尾猴人	女卷尾猴人		CREATURE:CAPUCHIN_MAN CASTE_NAME
+giant capuchin	巨型捲尾猴	巨型卷尾猴		CREATURE:GIANT_CAPUCHIN NAME
+giant capuchins	巨型捲尾猴	巨型卷尾猴		CREATURE:GIANT_CAPUCHIN NAME
+sloth	樹懶	树懒		CREATURE:SLOTH NAME
+sloths	樹懶	树懒		CREATURE:SLOTH NAME
+sloth cub	幼樹懶	幼树懒		CREATURE:SLOTH GENERAL_CHILD_NAME
+sloth cubs	幼樹懶	幼树懒		CREATURE:SLOTH GENERAL_CHILD_NAME
+sloth man	樹懶人	树懒人		CREATURE:SLOTH_MAN CASTE_NAME
+sloth men	樹懶人	树懒人		CREATURE:SLOTH_MAN CASTE_NAME
+sloth woman	女樹懶人	女树懒人		CREATURE:SLOTH_MAN CASTE_NAME
+sloth women	女樹懶人	女树懒人		CREATURE:SLOTH_MAN CASTE_NAME
+giant sloth	巨型樹懶	巨型树懒		CREATURE:GIANT_SLOTH NAME
+giant sloths	巨型樹懶	巨型树懒		CREATURE:GIANT_SLOTH NAME
+spider monkey	蜘蛛猴	蜘蛛猴		CREATURE:SPIDER_MONKEY NAME
+spider monkeys	蜘蛛猴	蜘蛛猴		CREATURE:SPIDER_MONKEY NAME
+spider monkey man	蜘蛛猴人	蜘蛛猴人		CREATURE:SPIDER_MONKEY_MAN CASTE_NAME
+spider monkey men	蜘蛛猴人	蜘蛛猴人		CREATURE:SPIDER_MONKEY_MAN CASTE_NAME
+spider monkey woman	女蜘蛛猴人	女蜘蛛猴人		CREATURE:SPIDER_MONKEY_MAN CASTE_NAME
+spider monkey women	女蜘蛛猴人	女蜘蛛猴人		CREATURE:SPIDER_MONKEY_MAN CASTE_NAME
+giant spider monkey	巨型蜘蛛猴	巨型蜘蛛猴		CREATURE:GIANT_SPIDER_MONKEY NAME
+giant spider monkeys	巨型蜘蛛猴	巨型蜘蛛猴		CREATURE:GIANT_SPIDER_MONKEY NAME
+pangolin	穿山甲	穿山甲		CREATURE:PANGOLIN NAME
+pangolins	穿山甲	穿山甲		CREATURE:PANGOLIN NAME
+baby pangolin	幼穿山甲	幼穿山甲		CREATURE:PANGOLIN GENERAL_CHILD_NAME
+baby pangolins	幼穿山甲	幼穿山甲		CREATURE:PANGOLIN GENERAL_CHILD_NAME
+pangolin man	穿山甲人	穿山甲人		CREATURE:PANGOLIN_MAN CASTE_NAME
+pangolin men	穿山甲人	穿山甲人		CREATURE:PANGOLIN_MAN CASTE_NAME
+pangolin woman	女穿山甲人	女穿山甲人		CREATURE:PANGOLIN_MAN CASTE_NAME
+pangolin women	女穿山甲人	女穿山甲人		CREATURE:PANGOLIN_MAN CASTE_NAME
+giant pangolin	巨型穿山甲	巨型穿山甲		CREATURE:GIANT_PANGOLIN NAME
+giant pangolins	巨型穿山甲	巨型穿山甲		CREATURE:GIANT_PANGOLIN NAME
+baby giant pangolin	幼巨型穿山甲	幼巨型穿山甲		CREATURE:GIANT_PANGOLIN GENERAL_CHILD_NAME
+baby giant pangolins	幼巨型穿山甲	幼巨型穿山甲		CREATURE:GIANT_PANGOLIN GENERAL_CHILD_NAME
+black mamba	黑曼巴蛇	黑曼巴蛇		CREATURE:BLACK_MAMBA NAME
+black mambas	黑曼巴蛇	黑曼巴蛇		CREATURE:BLACK_MAMBA NAME
+frozen black mamba venom	冰凍的黑曼巴蛇毒液	冰冻的黑曼巴蛇毒液		CREATURE:BLACK_MAMBA STATE_NAME
+black mamba venom	黑曼巴蛇毒液	黑曼巴蛇毒液		CREATURE:BLACK_MAMBA STATE_NAME
+boiling black mamba venom	沸騰的黑曼巴蛇毒液	沸腾的黑曼巴蛇毒液		CREATURE:BLACK_MAMBA STATE_NAME
+black mamba bite	黑曼巴蛇咬傷	黑曼巴蛇咬伤		CREATURE:BLACK_MAMBA SYN_NAME
+black mamba man	黑曼巴蛇人	黑曼巴蛇人		CREATURE:BLACK_MAMBA_MAN CASTE_NAME
+black mamba men	黑曼巴蛇人	黑曼巴蛇人		CREATURE:BLACK_MAMBA_MAN CASTE_NAME
+black mamba woman	女黑曼巴蛇人	女黑曼巴蛇人		CREATURE:BLACK_MAMBA_MAN CASTE_NAME
+black mamba women	女黑曼巴蛇人	女黑曼巴蛇人		CREATURE:BLACK_MAMBA_MAN CASTE_NAME
+giant black mamba	巨型黑曼巴蛇	巨型黑曼巴蛇		CREATURE:GIANT_BLACK_MAMBA NAME
+giant black mambas	巨型黑曼巴蛇	巨型黑曼巴蛇		CREATURE:GIANT_BLACK_MAMBA NAME
+sloth bear	懶熊	懒熊		CREATURE:BEAR_SLOTH NAME
+sloth bears	懶熊	懒熊		CREATURE:BEAR_SLOTH NAME
+sloth bear cub	幼懶熊	幼懒熊		CREATURE:BEAR_SLOTH GENERAL_CHILD_NAME
+sloth bear cubs	幼懶熊	幼懒熊		CREATURE:BEAR_SLOTH GENERAL_CHILD_NAME
+sloth bear man	懶熊人	懒熊人		CREATURE:SLOTH_BEAR_MAN CASTE_NAME
+sloth bear men	懶熊人	懒熊人		CREATURE:SLOTH_BEAR_MAN CASTE_NAME
+sloth bear woman	女懶熊人	女懒熊人		CREATURE:SLOTH_BEAR_MAN CASTE_NAME
+sloth bear women	女懶熊人	女懒熊人		CREATURE:SLOTH_BEAR_MAN CASTE_NAME
+giant sloth bear	巨型懶熊	巨型懒熊		CREATURE:GIANT_SLOTH_BEAR NAME
+giant sloth bears	巨型懶熊	巨型懒熊		CREATURE:GIANT_SLOTH_BEAR NAME
+giant sloth bear cub	幼巨型懶熊	幼巨型懒熊		CREATURE:GIANT_SLOTH_BEAR GENERAL_CHILD_NAME
+giant sloth bear cubs	幼巨型懶熊	幼巨型懒熊		CREATURE:GIANT_SLOTH_BEAR GENERAL_CHILD_NAME
+aye-aye	指猴	指猴		CREATURE:AYE-AYE NAME
+aye-ayes	指猴	指猴		CREATURE:AYE-AYE NAME
+aye-aye man	指猴人	指猴人		CREATURE:AYE-AYE_MAN CASTE_NAME
+aye-aye men	指猴人	指猴人		CREATURE:AYE-AYE_MAN CASTE_NAME
+aye-aye woman	女指猴人	女指猴人		CREATURE:AYE-AYE_MAN CASTE_NAME
+aye-aye women	女指猴人	女指猴人		CREATURE:AYE-AYE_MAN CASTE_NAME
+giant aye-aye	巨型指猴	巨型指猴		CREATURE:GIANT_AYE-AYE NAME
+giant aye-ayes	巨型指猴	巨型指猴		CREATURE:GIANT_AYE-AYE NAME
+bushmaster	巨蝮	巨蝮		CREATURE:BUSHMASTER NAME
+bushmasters	巨蝮	巨蝮		CREATURE:BUSHMASTER NAME
+frozen bushmaster venom	冰凍的巨蝮毒液	冰冻的巨蝮毒液		CREATURE:BUSHMASTER STATE_NAME
+bushmaster venom	巨蝮毒液	巨蝮毒液		CREATURE:BUSHMASTER STATE_NAME
+boiling bushmaster venom	沸騰的巨蝮毒液	沸腾的巨蝮毒液		CREATURE:BUSHMASTER STATE_NAME
+bushmaster bite	巨蝮咬傷	巨蝮咬伤		CREATURE:BUSHMASTER SYN_NAME
+bushmaster man	巨蝮人	巨蝮人		CREATURE:BUSHMASTER_MAN CASTE_NAME
+bushmaster men	巨蝮人	巨蝮人		CREATURE:BUSHMASTER_MAN CASTE_NAME
+bushmaster woman	女巨蝮人	女巨蝮人		CREATURE:BUSHMASTER_MAN CASTE_NAME
+bushmaster women	女巨蝮人	女巨蝮人		CREATURE:BUSHMASTER_MAN CASTE_NAME
+giant bushmaster	巨型巨蝮	巨型巨蝮		CREATURE:GIANT_BUSHMASTER NAME
+giant bushmasters	巨型巨蝮	巨型巨蝮		CREATURE:GIANT_BUSHMASTER NAME
+python	蟒蛇	蟒蛇		CREATURE:PYTHON NAME
+pythons	蟒蛇	蟒蛇		CREATURE:PYTHON NAME
+python man	蟒蛇人	蟒蛇人		CREATURE:PYTHON_MAN CASTE_NAME
+python men	蟒蛇人	蟒蛇人		CREATURE:PYTHON_MAN CASTE_NAME
+python woman	女蟒蛇人	女蟒蛇人		CREATURE:PYTHON_MAN CASTE_NAME
+python women	女蟒蛇人	女蟒蛇人		CREATURE:PYTHON_MAN CASTE_NAME
+giant python	巨型蟒蛇	巨型蟒蛇		CREATURE:GIANT_PYTHON NAME
+giant pythons	巨型蟒蛇	巨型蟒蛇		CREATURE:GIANT_PYTHON NAME
+tapir	貘	貘		CREATURE:TAPIR NAME
+tapirs	貘	貘		CREATURE:TAPIR NAME
+tapir calf	幼貘	幼貘		CREATURE:TAPIR GENERAL_CHILD_NAME
+tapir calves	幼貘	幼貘		CREATURE:TAPIR GENERAL_CHILD_NAME
+frozen tapir's milk	冰凍的貘奶	冰冻的貘奶		CREATURE:TAPIR STATE_NAME
+tapir's milk	貘奶	貘奶		CREATURE:TAPIR STATE_NAME
+boiling tapir's milk	沸騰的貘奶	沸腾的貘奶		CREATURE:TAPIR STATE_NAME
+tapir cheese	貘起司	貘奶酪		CREATURE:TAPIR STATE_NAME；兩岸用語：起司／奶酪
+tapir cheese powder	貘起司粉	貘奶酪粉		CREATURE:TAPIR STATE_NAME
+melted tapir cheese	融化的貘起司	融化的貘奶酪		CREATURE:TAPIR STATE_NAME
+boiling tapir cheese	沸騰的貘起司	沸腾的貘奶酪		CREATURE:TAPIR STATE_NAME
+tapir man	貘人	貘人		CREATURE:TAPIR_MAN CASTE_NAME
+tapir men	貘人	貘人		CREATURE:TAPIR_MAN CASTE_NAME
+tapir woman	女貘人	女貘人		CREATURE:TAPIR_MAN CASTE_NAME
+tapir women	女貘人	女貘人		CREATURE:TAPIR_MAN CASTE_NAME
+giant tapir	巨型貘	巨型貘		CREATURE:GIANT_TAPIR NAME
+giant tapirs	巨型貘	巨型貘		CREATURE:GIANT_TAPIR NAME
+giant tapir calf	幼巨型貘	幼巨型貘		CREATURE:GIANT_TAPIR GENERAL_CHILD_NAME
+giant tapir calves	幼巨型貘	幼巨型貘		CREATURE:GIANT_TAPIR GENERAL_CHILD_NAME
+impala	黑斑羚	黑斑羚		CREATURE:IMPALA NAME
+impalas	黑斑羚	黑斑羚		CREATURE:IMPALA NAME
+impala fawn	幼黑斑羚	幼黑斑羚		CREATURE:IMPALA GENERAL_CHILD_NAME
+impala fawns	幼黑斑羚	幼黑斑羚		CREATURE:IMPALA GENERAL_CHILD_NAME
+impala man	黑斑羚人	黑斑羚人		CREATURE:IMPALA_MAN CASTE_NAME
+impala men	黑斑羚人	黑斑羚人		CREATURE:IMPALA_MAN CASTE_NAME
+impala woman	女黑斑羚人	女黑斑羚人		CREATURE:IMPALA_MAN CASTE_NAME
+impala women	女黑斑羚人	女黑斑羚人		CREATURE:IMPALA_MAN CASTE_NAME
+giant impala	巨型黑斑羚	巨型黑斑羚		CREATURE:GIANT_IMPALA NAME
+giant impalas	巨型黑斑羚	巨型黑斑羚		CREATURE:GIANT_IMPALA NAME
+giant impala fawn	幼巨型黑斑羚	幼巨型黑斑羚		CREATURE:GIANT_IMPALA GENERAL_CHILD_NAME
+giant impala fawns	幼巨型黑斑羚	幼巨型黑斑羚		CREATURE:GIANT_IMPALA GENERAL_CHILD_NAME
+aardvark	土豚	土豚		CREATURE:AARDVARK NAME
+aardvarks	土豚	土豚		CREATURE:AARDVARK NAME
+aardvark cub	幼土豚	幼土豚		CREATURE:AARDVARK GENERAL_CHILD_NAME
+aardvark cubs	幼土豚	幼土豚		CREATURE:AARDVARK GENERAL_CHILD_NAME
+aardvark man	土豚人	土豚人		CREATURE:AARDVARK_MAN CASTE_NAME
+aardvark men	土豚人	土豚人		CREATURE:AARDVARK_MAN CASTE_NAME
+aardvark woman	女土豚人	女土豚人		CREATURE:AARDVARK_MAN CASTE_NAME
+aardvark women	女土豚人	女土豚人		CREATURE:AARDVARK_MAN CASTE_NAME
+giant aardvark	巨型土豚	巨型土豚		CREATURE:GIANT_AARDVARK NAME
+giant aardvarks	巨型土豚	巨型土豚		CREATURE:GIANT_AARDVARK NAME
+giant aardvark cub	幼巨型土豚	幼巨型土豚		CREATURE:GIANT_AARDVARK GENERAL_CHILD_NAME
+giant aardvark cubs	幼巨型土豚	幼巨型土豚		CREATURE:GIANT_AARDVARK GENERAL_CHILD_NAME
+lion tamarin	獅面狨	狮面狨		CREATURE:LION_TAMARIN NAME
+lion tamarins	獅面狨	狮面狨		CREATURE:LION_TAMARIN NAME
+lion tamarin man	獅面狨人	狮面狨人		CREATURE:LION_TAMARIN_MAN CASTE_NAME
+lion tamarin men	獅面狨人	狮面狨人		CREATURE:LION_TAMARIN_MAN CASTE_NAME
+lion tamarin woman	女獅面狨人	女狮面狨人		CREATURE:LION_TAMARIN_MAN CASTE_NAME
+lion tamarin women	女獅面狨人	女狮面狨人		CREATURE:LION_TAMARIN_MAN CASTE_NAME
+giant lion tamarin	巨型獅面狨	巨型狮面狨		CREATURE:GIANT_LION_TAMARIN NAME
+giant lion tamarins	巨型獅面狨	巨型狮面狨		CREATURE:GIANT_LION_TAMARIN NAME

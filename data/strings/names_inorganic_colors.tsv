@@ -1,0 +1,508 @@
+en	zh-Hant	zh-Hans	align	note
+amber	琥珀色	琥珀色		COLOR:AMBER NAME
+aqua	水藍色	水蓝色		COLOR:AQUA NAME
+aquamarine	海藍寶石	海蓝宝石		COLOR:AQUAMARINE NAME；兼寶石名，譯名詞
+ash gray	灰白色	灰白色		COLOR:ASH_GRAY NAME
+auburn	紅棕色	红棕色		COLOR:AUBURN NAME
+azure	天藍色	天蓝色		COLOR:AZURE NAME
+beige	米色	米色		COLOR:BEIGE NAME
+black	黑色	黑色		COLOR:BLACK NAME
+blue	藍色	蓝色		COLOR:BLUE NAME
+brass	黃銅	黄铜		COLOR:BRASS NAME；兼金屬名，譯名詞
+brown	棕色	棕色		COLOR:BROWN NAME
+buff	淺黃褐	浅黄褐		COLOR:BUFF NAME
+burnt sienna	焦赭色	焦赭色		COLOR:BURNT_SIENNA NAME
+burnt umber	焦褐色	焦褐色		COLOR:BURNT_UMBER NAME
+carmine	胭脂紅	胭脂红		COLOR:CARMINE NAME
+cerulean	蔚藍色	蔚蓝色		COLOR:CERULEAN NAME
+charcoal	炭灰色	炭灰色		COLOR:CHARCOAL NAME
+chartreuse	查特酒綠	查特酒绿		COLOR:CHARTREUSE NAME
+chestnut	栗子	栗子		COLOR:CHESTNUT NAME；兼植物名（PLANT:CHESTNUT），譯名詞
+chocolate	巧克力色	巧克力色		COLOR:CHOCOLATE NAME
+cinnamon	肉桂色	肉桂色		COLOR:CINNAMON NAME
+clear	透明	透明		COLOR:CLEAR NAME
+cobalt	鈷藍色	钴蓝色		COLOR:COBALT NAME
+copper	銅	铜		COLOR:COPPER NAME；兼金屬名，譯名詞
+cream	奶油色	奶油色		COLOR:CREAM NAME
+crimson	緋紅色	绯红色		COLOR:CRIMSON NAME
+dark blue	深藍色	深蓝色		COLOR:DARK_BLUE NAME
+dark brown	深棕色	深棕色		COLOR:DARK_BROWN NAME
+dark chestnut	深栗色	深栗色		COLOR:DARK_CHESTNUT NAME
+dark green	深綠色	深绿色		COLOR:DARK_GREEN NAME
+dark indigo	深靛藍	深靛蓝		COLOR:DARK_INDIGO NAME
+dark olive	深橄欖色	深橄榄色		COLOR:DARK_OLIVE NAME
+dark peach	深桃色	深桃色		COLOR:DARK_PEACH NAME
+dark pink	深粉紅	深粉红		COLOR:DARK_PINK NAME
+dark scarlet	深猩紅	深猩红		COLOR:DARK_SCARLET NAME
+dark tan	深黃褐	深黄褐		COLOR:DARK_TAN NAME
+dark violet	深紫羅蘭	深紫罗兰		COLOR:DARK_VIOLET NAME
+ecru	米白色	米白色		COLOR:ECRU NAME
+eggplant	茄子	茄子		COLOR:EGGPLANT NAME；兼植物名，譯名詞
+emerald	祖母綠	祖母绿		COLOR:EMERALD NAME；兼寶石名，譯名詞
+fern green	蕨綠色	蕨绿色		COLOR:FERN_GREEN NAME
+flax	亞麻色	亚麻色		COLOR:FLAX NAME
+fuchsia	紫紅色	紫红色		COLOR:FUCHSIA NAME
+gold	金	金		COLOR:GOLD NAME；兼金屬名，譯名詞
+golden yellow	金黃色	金黄色		COLOR:GOLDEN_YELLOW NAME
+goldenrod	金菊黃	金菊黄		COLOR:GOLDENROD NAME
+gray	灰色	灰色		COLOR:GRAY NAME
+green	綠色	绿色		COLOR:GREEN NAME
+green-yellow	綠黃色	绿黄色		COLOR:GREEN-YELLOW NAME
+heliotrope	天芥菜紫	天芥菜紫		COLOR:HELIOTROPE NAME
+indigo	靛藍色	靛蓝色		COLOR:INDIGO NAME
+jade	翡翠色	翡翠色		COLOR:JADE NAME
+lavender	薰衣草色	薰衣草色		COLOR:LAVENDER NAME
+lavender blush	薰衣草粉	薰衣草粉		COLOR:LAVENDER_BLUSH NAME
+lemon	檸檬黃	柠檬黄		COLOR:LEMON NAME
+light blue	淺藍色	浅蓝色		COLOR:LIGHT_BLUE NAME
+light brown	淺棕色	浅棕色		COLOR:LIGHT_BROWN NAME
+lilac	丁香紫	丁香紫		COLOR:LILAC NAME
+lime	萊姆	青柠		COLOR:LIME NAME；兼植物名（PLANT:LIME），譯名詞；兩岸名稱不同
+mahogany	桃花心木	桃花心木		COLOR:MAHOGANY NAME；兼植物名，譯名詞
+maroon	褐紅色	褐红色		COLOR:MAROON NAME
+mauve	藕荷色	藕荷色		COLOR:MAUVE NAME
+mauve taupe	藕荷灰褐	藕荷灰褐		COLOR:MAUVE_TAUPE NAME
+midnight blue	午夜藍	午夜蓝		COLOR:MIDNIGHT_BLUE NAME
+mint green	薄荷綠	薄荷绿		COLOR:MINT_GREEN NAME
+moss green	苔綠色	苔绿色		COLOR:MOSS_GREEN NAME
+ochre	赭黃色	赭黄色		COLOR:OCHRE NAME
+olive	橄欖	橄榄		COLOR:OLIVE NAME；兼植物名，譯名詞
+orange	柳橙	橙子		COLOR:ORANGE NAME；兼植物名，譯名詞；兩岸名稱不同
+pale blue	淡藍色	淡蓝色		COLOR:PALE_BLUE NAME
+pale brown	淡棕色	淡棕色		COLOR:PALE_BROWN NAME
+pale chestnut	淡栗色	淡栗色		COLOR:PALE_CHESTNUT NAME
+pale pink	淡粉紅	淡粉红		COLOR:PALE_PINK NAME
+peach	桃子	桃子		COLOR:PEACH NAME；兼植物名，譯名詞
+pearl	珍珠	珍珠		COLOR:PEARL NAME；兼材料名，譯名詞
+periwinkle	長春花藍	长春花蓝		COLOR:PERIWINKLE NAME
+pine green	松綠色	松绿色		COLOR:PINE_GREEN NAME
+pink	粉紅色	粉红色		COLOR:PINK NAME
+plum	李子	李子		COLOR:PLUM NAME；兼植物名，譯名詞
+puce	紫褐色	紫褐色		COLOR:PUCE NAME
+pumpkin	南瓜色	南瓜色		COLOR:PUMPKIN NAME
+purple	紫色	紫色		COLOR:PURPLE NAME
+raw umber	生褐色	生褐色		COLOR:RAW_UMBER NAME
+red	紅色	红色		COLOR:RED NAME
+red-purple	紅紫色	红紫色		COLOR:RED_PURPLE NAME
+rose	玫瑰色	玫瑰色		COLOR:ROSE NAME
+russet	赤褐色	赤褐色		COLOR:RUSSET NAME
+rust	鐵鏽色	铁锈色		COLOR:RUST NAME
+saffron	番紅花	藏红花		COLOR:SAFFRON NAME；寬度限 3 字；兩岸名稱不同
+scarlet	猩紅色	猩红色		COLOR:SCARLET NAME
+sea green	海綠色	海绿色		COLOR:SEA_GREEN NAME
+sepia	深褐色	深褐色		COLOR:SEPIA NAME
+silver	銀	银		COLOR:SILVER NAME；兼金屬名，譯名詞
+sky blue	天空藍	天空蓝		COLOR:SKY_BLUE NAME
+slate gray	板岩灰	板岩灰		COLOR:SLATE_GRAY NAME
+spring green	春綠色	春绿色		COLOR:SPRING_GREEN NAME
+tan	黃褐色	黄褐色		COLOR:TAN NAME
+dark taupe	深灰褐	深灰褐		COLOR:TAUPE_DARK NAME
+taupe gray	灰褐灰	灰褐灰		COLOR:TAUPE_GRAY NAME
+taupe	灰褐色	灰褐色		COLOR:TAUPE_MEDIUM NAME
+purple taupe	紫灰褐	紫灰褐		COLOR:TAUPE_PURPLE NAME
+pale taupe	淡灰褐	淡灰褐		COLOR:TAUPE_PALE NAME
+rose taupe	玫瑰灰褐	玫瑰灰褐		COLOR:TAUPE_ROSE NAME
+sandy taupe	沙灰褐	沙灰褐		COLOR:TAUPE_SANDY NAME
+teal	藍綠色	蓝绿色		COLOR:TEAL NAME
+turquoise	綠松石	绿松石		COLOR:TURQUOISE NAME；兼寶石名，譯名詞
+vermilion	朱紅色	朱红色		COLOR:VERMILION NAME
+violet	紫羅蘭	紫罗兰		COLOR:VIOLET NAME
+white	白色	白色		COLOR:WHITE NAME
+yellow	黃色	黄色		COLOR:YELLOW NAME
+yellow-green	黃綠色	黄绿色		COLOR:YELLOW_GREEN NAME
+blue-gray	藍灰色	蓝灰色		COLOR:BLUE-GRAY NAME
+apple green	蘋果綠	苹果绿		COLOR:APPLE_GREEN NAME
+bright green	亮綠色	亮绿色		COLOR:BRIGHT_GREEN NAME
+leaf green	葉綠色	叶绿色		COLOR:LEAF_GREEN NAME
+zesty green	鮮綠色	鲜绿色		COLOR:ZESTY_GREEN NAME
+woodland green	林地綠	林地绿		COLOR:WOODLAND_GREEN NAME
+grass green	草綠色	草绿色		COLOR:GRASS_GREEN NAME
+vibrant green	亮翠綠	亮翠绿		COLOR:VIBRANT_GREEN NAME
+eucalyptus	尤加利綠	桉树绿		COLOR:EUCALYPTUS NAME；兩岸名稱不同（尤加利／桉树）
+sea foam	海沫綠	海沫绿		COLOR:SEA_FOAM NAME
+glacier blue	冰河藍	冰川蓝		COLOR:GLACIER_BLUE NAME；兩岸用語不同
+river blue	河水藍	河水蓝		COLOR:RIVER_BLUE NAME
+cornflower	矢車菊藍	矢车菊蓝		COLOR:CORNFLOWER NAME
+deep sea blue	深海藍	深海蓝		COLOR:DEEP_SEA_BLUE NAME
+dark azure	深天藍	深天蓝		COLOR:DARK_AZURE NAME
+ultramarine	群青色	群青色		COLOR:ULTRAMARINE NAME
+sapphire	藍寶石	蓝宝石		COLOR:SAPPHIRE NAME；兼寶石名，譯名詞
+crocus purple	番紅花紫	番红花紫		COLOR:CROCUS_PURPLE NAME
+foxglove	毛地黃紫	毛地黄紫		COLOR:FOXGLOVE NAME
+orchid pink	蘭花粉	兰花粉		COLOR:ORCHID_PINK NAME
+raspberry pink	覆盆子粉	树莓粉		COLOR:RASPBERRY_PINK NAME；兩岸名稱不同
+star	星形	星形		SHAPE:STAR NAME
+stars	星形	星形		SHAPE:STAR NAME
+crescent	新月	新月		SHAPE:CRESCENT NAME
+crescents	新月	新月		SHAPE:CRESCENT NAME
+cross	十字	十字		SHAPE:CROSS NAME
+crosses	十字	十字		SHAPE:CROSS NAME
+square	方形	方形		SHAPE:SQUARE NAME
+squares	方形	方形		SHAPE:SQUARE NAME
+circle	圓形	圆形		SHAPE:CIRCLE NAME
+circles	圓形	圆形		SHAPE:CIRCLE NAME
+diamond	菱形	菱形		SHAPE:DIAMOND NAME；形狀（菱形），不是寶石
+diamonds	菱形	菱形		SHAPE:DIAMOND NAME；形狀（菱形），不是寶石
+sun	太陽	太阳		SHAPE:SUN NAME
+suns	太陽	太阳		SHAPE:SUN NAME
+moon	月亮	月亮		SHAPE:MOON NAME
+moons	月亮	月亮		SHAPE:MOON NAME
+wave	波浪	波浪		SHAPE:WAVE NAME
+waves	波浪	波浪		SHAPE:WAVE NAME
+mountain	山峰	山峰		SHAPE:MOUNTAIN NAME
+mountains	山峰	山峰		SHAPE:MOUNTAIN NAME
+cloud	雲朵	云朵		SHAPE:CLOUD NAME
+clouds	雲朵	云朵		SHAPE:CLOUD NAME
+gizzard stone	砂囊石	砂囊石		SHAPE:GIZZARD_STONE NAME
+gizzard stones	砂囊石	砂囊石		SHAPE:GIZZARD_STONE NAME
+pebble	卵石	卵石		SHAPE:SMOOTH_PEBBLE NAME
+pebbles	卵石	卵石		SHAPE:SMOOTH_PEBBLE NAME
+cabochon	蛋面	弧面		SHAPE:OVAL_CABOCHON NAME；寶石切工；兩岸行話不同
+cabochons	蛋面	弧面		SHAPE:OVAL_CABOCHON NAME；寶石切工；兩岸行話不同
+gem	寶石	宝石		SHAPE:POINT_CUT_GEM NAME
+gems	寶石	宝石		SHAPE:POINT_CUT_GEM NAME
+tetrahedron	四面體	四面体		SHAPE:PLATONIC_TETRAHEDRON NAME
+tetrahedra	四面體	四面体		SHAPE:PLATONIC_TETRAHEDRON NAME
+cube	立方體	立方体		SHAPE:PLATONIC_CUBE NAME
+cubes	立方體	立方体		SHAPE:PLATONIC_CUBE NAME
+octahedron	八面體	八面体		SHAPE:PLATONIC_OCTAHEDRON NAME
+octahedra	八面體	八面体		SHAPE:PLATONIC_OCTAHEDRON NAME
+dodecahedron	十二面體	十二面体		SHAPE:PLATONIC_DODECAHEDRON NAME
+dodecahedra	十二面體	十二面体		SHAPE:PLATONIC_DODECAHEDRON NAME
+icosahedron	二十面體	二十面体		SHAPE:PLATONIC_ICOSAHEDRON NAME
+icosahedra	二十面體	二十面体		SHAPE:PLATONIC_ICOSAHEDRON NAME
+four-sided prism	四角柱	四棱柱		SHAPE:LONG_DIE_4 NAME；兩岸用語不同
+four-sided prisms	四角柱	四棱柱		SHAPE:LONG_DIE_4 NAME；兩岸用語不同
+six-sided prism	六角柱	六棱柱		SHAPE:LONG_DIE_6 NAME；兩岸用語不同
+six-sided prisms	六角柱	六棱柱		SHAPE:LONG_DIE_6 NAME；兩岸用語不同
+eight-sided prism	八角柱	八棱柱		SHAPE:LONG_DIE_8 NAME；兩岸用語不同
+eight-sided prisms	八角柱	八棱柱		SHAPE:LONG_DIE_8 NAME；兩岸用語不同
+molten iron	熔融鐵	熔融铁		INORGANIC:IRON STATE_NAME_ADJ
+boiling iron	沸騰的鐵	沸腾的铁		INORGANIC:IRON STATE_NAME_ADJ
+gold dust	金粉	金粉		INORGANIC:GOLD STATE_NAME
+molten gold	熔融金	熔融金		INORGANIC:GOLD STATE_NAME_ADJ
+boiling gold	沸騰的金	沸腾的金		INORGANIC:GOLD STATE_NAME_ADJ
+molten silver	熔融銀	熔融银		INORGANIC:SILVER STATE_NAME_ADJ
+boiling silver	沸騰的銀	沸腾的银		INORGANIC:SILVER STATE_NAME_ADJ
+molten copper	熔融銅	熔融铜		INORGANIC:COPPER STATE_NAME_ADJ
+boiling copper	沸騰的銅	沸腾的铜		INORGANIC:COPPER STATE_NAME_ADJ
+nickel	鎳	镍		INORGANIC:NICKEL STATE_NAME_ADJ
+molten nickel	熔融鎳	熔融镍		INORGANIC:NICKEL STATE_NAME_ADJ
+boiling nickel	沸騰的鎳	沸腾的镍		INORGANIC:NICKEL STATE_NAME_ADJ
+zinc	鋅	锌		INORGANIC:ZINC STATE_NAME_ADJ
+molten zinc	熔融鋅	熔融锌		INORGANIC:ZINC STATE_NAME_ADJ
+boiling zinc	沸騰的鋅	沸腾的锌		INORGANIC:ZINC STATE_NAME_ADJ
+molten bronze	熔融青銅	熔融青铜		INORGANIC:BRONZE STATE_NAME_ADJ
+boiling bronze	沸騰的青銅	沸腾的青铜		INORGANIC:BRONZE STATE_NAME_ADJ
+molten brass	熔融黃銅	熔融黄铜		INORGANIC:BRASS STATE_NAME_ADJ
+boiling brass	沸騰的黃銅	沸腾的黄铜		INORGANIC:BRASS STATE_NAME_ADJ
+steel	鋼	钢		INORGANIC:STEEL STATE_NAME_ADJ
+molten steel	熔融鋼	熔融钢		INORGANIC:STEEL STATE_NAME_ADJ
+boiling steel	沸騰的鋼	沸腾的钢		INORGANIC:STEEL STATE_NAME_ADJ
+pig iron	生鐵	生铁		INORGANIC:PIG_IRON STATE_NAME_ADJ
+molten pig iron	熔融生鐵	熔融生铁		INORGANIC:PIG_IRON STATE_NAME_ADJ
+boiling pig iron	沸騰的生鐵	沸腾的生铁		INORGANIC:PIG_IRON STATE_NAME_ADJ
+platinum	鉑	铂		INORGANIC:PLATINUM STATE_NAME_ADJ
+molten platinum	熔融鉑	熔融铂		INORGANIC:PLATINUM STATE_NAME_ADJ
+boiling platinum	沸騰的鉑	沸腾的铂		INORGANIC:PLATINUM STATE_NAME_ADJ
+electrum	琥珀金	琥珀金		INORGANIC:ELECTRUM STATE_NAME_ADJ
+molten electrum	熔融琥珀金	熔融琥珀金		INORGANIC:ELECTRUM STATE_NAME_ADJ
+boiling electrum	沸騰的琥珀金	沸腾的琥珀金		INORGANIC:ELECTRUM STATE_NAME_ADJ
+tin	錫	锡		INORGANIC:TIN STATE_NAME_ADJ
+molten tin	熔融錫	熔融锡		INORGANIC:TIN STATE_NAME_ADJ
+boiling tin	沸騰的錫	沸腾的锡		INORGANIC:TIN STATE_NAME_ADJ
+fine pewter	精白鑞	精白镴		INORGANIC:PEWTER_FINE STATE_NAME_ADJ
+molten fine pewter	熔融精白鑞	熔融精白镴		INORGANIC:PEWTER_FINE STATE_NAME_ADJ
+boiling fine pewter	沸騰的精白鑞	沸腾的精白镴		INORGANIC:PEWTER_FINE STATE_NAME_ADJ
+trifle pewter	次白鑞	次白镴		INORGANIC:PEWTER_TRIFLE STATE_NAME_ADJ
+molten trifle pewter	熔融次白鑞	熔融次白镴		INORGANIC:PEWTER_TRIFLE STATE_NAME_ADJ
+boiling trifle pewter	沸騰的次白鑞	沸腾的次白镴		INORGANIC:PEWTER_TRIFLE STATE_NAME_ADJ
+lay pewter	劣白鑞	劣白镴		INORGANIC:PEWTER_LAY STATE_NAME_ADJ
+molten lay pewter	熔融劣白鑞	熔融劣白镴		INORGANIC:PEWTER_LAY STATE_NAME_ADJ
+boiling lay pewter	沸騰的劣白鑞	沸腾的劣白镴		INORGANIC:PEWTER_LAY STATE_NAME_ADJ
+lead	鉛	铅		INORGANIC:LEAD STATE_NAME_ADJ
+molten lead	熔融鉛	熔融铅		INORGANIC:LEAD STATE_NAME_ADJ
+boiling lead	沸騰的鉛	沸腾的铅		INORGANIC:LEAD STATE_NAME_ADJ
+aluminum	鋁	铝		INORGANIC:ALUMINUM STATE_NAME_ADJ
+molten aluminum	熔融鋁	熔融铝		INORGANIC:ALUMINUM STATE_NAME_ADJ
+boiling aluminum	沸騰的鋁	沸腾的铝		INORGANIC:ALUMINUM STATE_NAME_ADJ
+nickel silver	鎳銀	镍银		INORGANIC:NICKEL_SILVER STATE_NAME_ADJ
+molten nickel silver	熔融鎳銀	熔融镍银		INORGANIC:NICKEL_SILVER STATE_NAME_ADJ
+boiling nickel silver	沸騰的鎳銀	沸腾的镍银		INORGANIC:NICKEL_SILVER STATE_NAME_ADJ
+billon	劣銀	劣银		INORGANIC:BILLON STATE_NAME_ADJ；銀銅低銀合金
+molten billon	熔融劣銀	熔融劣银		INORGANIC:BILLON STATE_NAME_ADJ
+boiling billon	沸騰的劣銀	沸腾的劣银		INORGANIC:BILLON STATE_NAME_ADJ
+sterling silver	標準銀	标准银		INORGANIC:STERLING_SILVER STATE_NAME_ADJ
+molten sterling silver	熔融標準銀	熔融标准银		INORGANIC:STERLING_SILVER STATE_NAME_ADJ
+boiling sterling silver	沸騰的標準銀	沸腾的标准银		INORGANIC:STERLING_SILVER STATE_NAME_ADJ
+black bronze	黑青銅	黑青铜		INORGANIC:BLACK_BRONZE STATE_NAME_ADJ
+molten black bronze	熔融黑青銅	熔融黑青铜		INORGANIC:BLACK_BRONZE STATE_NAME_ADJ
+boiling black bronze	沸騰的黑青銅	沸腾的黑青铜		INORGANIC:BLACK_BRONZE STATE_NAME_ADJ
+rose gold	玫瑰金	玫瑰金		INORGANIC:ROSE_GOLD STATE_NAME_ADJ
+molten rose gold	熔融玫瑰金	熔融玫瑰金		INORGANIC:ROSE_GOLD STATE_NAME_ADJ
+boiling rose gold	沸騰的玫瑰金	沸腾的玫瑰金		INORGANIC:ROSE_GOLD STATE_NAME_ADJ
+bismuth	鉍	铋		INORGANIC:BISMUTH STATE_NAME_ADJ
+molten bismuth	熔融鉍	熔融铋		INORGANIC:BISMUTH STATE_NAME_ADJ
+boiling bismuth	沸騰的鉍	沸腾的铋		INORGANIC:BISMUTH STATE_NAME_ADJ
+bismuth bronze	鉍青銅	铋青铜		INORGANIC:BISMUTH_BRONZE STATE_NAME_ADJ
+molten bismuth bronze	熔融鉍青銅	熔融铋青铜		INORGANIC:BISMUTH_BRONZE STATE_NAME_ADJ
+boiling bismuth bronze	沸騰的鉍青銅	沸腾的铋青铜		INORGANIC:BISMUTH_BRONZE STATE_NAME_ADJ
+adamantine	精金	精金		INORGANIC:ADAMANTINE STATE_NAME_ADJ
+molten adamantine	熔融精金	熔融精金		INORGANIC:ADAMANTINE STATE_NAME_ADJ
+boiling adamantine	沸騰的精金	沸腾的精金		INORGANIC:ADAMANTINE STATE_NAME_ADJ
+gypsum plaster	石膏灰泥	石膏灰泥		INORGANIC:PLASTER STATE_NAME_ADJ
+earthenware	陶器	陶器		INORGANIC:CERAMIC_EARTHENWARE STATE_NAME_ADJ
+stoneware	炻器	炻器		INORGANIC:CERAMIC_STONEWARE STATE_NAME_ADJ
+porcelain	瓷器	瓷器		INORGANIC:CERAMIC_PORCELAIN STATE_NAME_ADJ
+ash glaze	灰釉	灰釉		INORGANIC:ASH_GLAZE STATE_NAME
+tin glaze	錫釉	锡釉		INORGANIC:TIN_GLAZE STATE_NAME
+quicklime	生石灰	生石灰		INORGANIC:QUICKLIME STATE_NAME
+milk of lime	石灰乳	石灰乳		INORGANIC:MILK_OF_LIME STATE_NAME
+onyx	縞瑪瑙	缟玛瑙		INORGANIC:ONYX IS_GEM
+onyxes	縞瑪瑙	缟玛瑙		INORGANIC:ONYX IS_GEM
+morion	墨晶	墨晶		INORGANIC:MORION IS_GEM
+schorl	黑碧璽	黑碧玺		INORGANIC:SCHORL IS_GEM
+lace agate	蕾絲瑪瑙	蕾丝玛瑙		INORGANIC:LACE AGATE IS_GEM
+blue jade	藍翡翠	蓝翡翠		INORGANIC:BLUE JADE IS_GEM
+lapis lazuli	青金石	青金石		INORGANIC:LAPIS LAZULI IS_GEM
+prase	綠石英	绿石英		INORGANIC:PRASE IS_GEM
+prase opal	蔥綠歐泊	葱绿欧泊		INORGANIC:PRASE OPAL IS_GEM
+bloodstone	血石	血石		INORGANIC:BLOODSTONE IS_GEM
+moss agate	苔蘚瑪瑙	苔藓玛瑙		INORGANIC:MOSS AGATE IS_GEM
+moss opal	苔蘚歐泊	苔藓欧泊		INORGANIC:MOSS OPAL IS_GEM
+variscite	磷鋁石	磷铝石		INORGANIC:VARISCITE IS_GEM
+chrysoprase	綠玉髓	绿玉髓		INORGANIC:CHRYSOPRASE IS_GEM
+chrysocolla	矽孔雀石	硅孔雀石		INORGANIC:CHRYSOCOLLA IS_GEM；兩岸用字不同（矽／硅）
+sard	褐玉髓	褐玉髓		INORGANIC:SARD IS_GEM；肉紅玉髓的簡稱
+carnelian	紅玉髓	红玉髓		INORGANIC:CARNELIAN IS_GEM
+banded agate	條紋瑪瑙	条纹玛瑙		INORGANIC:BANDED AGATE IS_GEM
+sardonyx	纏絲瑪瑙	缠丝玛瑙		INORGANIC:SARDONYX IS_GEM
+sardonyxes	纏絲瑪瑙	缠丝玛瑙		INORGANIC:SARDONYX IS_GEM
+cherry opal	櫻桃歐泊	樱桃欧泊		INORGANIC:CHERRY OPAL IS_GEM
+lavender jade	紫翡翠	紫翡翠		INORGANIC:LAVENDER JADE IS_GEM
+pink jade	粉紅翡翠	粉红翡翠		INORGANIC:PINK JADE IS_GEM
+tube agate	管狀瑪瑙	管状玛瑙		INORGANIC:TUBE AGATE IS_GEM
+fire agate	火瑪瑙	火玛瑙		INORGANIC:FIRE AGATE IS_GEM
+plume agate	羽毛瑪瑙	羽毛玛瑙		INORGANIC:PLUME AGATE IS_GEM
+brown jasper	棕碧玉	棕碧玉		INORGANIC:BROWN JASPER IS_GEM
+picture jasper	圖畫碧玉	图画碧玉		INORGANIC:PICTURE JASPER IS_GEM
+smoky quartz	煙水晶	烟晶		INORGANIC:SMOKY QUARTZ IS_GEM；兩岸行話不同
+smoky quartzes	煙水晶	烟晶		INORGANIC:SMOKY QUARTZ IS_GEM；兩岸行話不同
+wax opal	蠟歐泊	蜡欧泊		INORGANIC:WAX OPAL IS_GEM
+wood opal	木歐泊	木欧泊		INORGANIC:WOOD OPAL IS_GEM
+amber opal	琥珀歐泊	琥珀欧泊		INORGANIC:AMBER OPAL IS_GEM
+gold opal	金歐泊	金欧泊		INORGANIC:GOLD OPAL IS_GEM
+citrine	黃水晶	黄水晶		INORGANIC:CITRINE IS_GEM
+yellow jasper	黃碧玉	黄碧玉		INORGANIC:YELLOW JASPER IS_GEM
+tigereye	虎眼石	虎眼石		INORGANIC:TIGEREYE IS_GEM
+tiger iron	虎鐵石	虎铁石		INORGANIC:TIGER IRON IS_GEM
+sunstone	太陽石	日光石		INORGANIC:SUNSTONE IS_GEM；兩岸行話不同
+resin opal	樹脂歐泊	树脂欧泊		INORGANIC:RESIN OPAL IS_GEM
+pyrite	黃鐵礦	黄铁矿		INORGANIC:PYRITE IS_GEM
+clear tourmaline	無色碧璽	无色碧玺		INORGANIC:CLEAR TOURMALINE IS_GEM
+gray chalcedony	灰玉髓	灰玉髓		INORGANIC:GRAY CHALCEDONY IS_GEM
+gray chalcedonies	灰玉髓	灰玉髓		INORGANIC:GRAY CHALCEDONY IS_GEM
+dendritic agate	樹枝瑪瑙	树枝玛瑙		INORGANIC:DENDRITIC AGATE IS_GEM
+shell opal	貝殼歐泊	贝壳欧泊		INORGANIC:SHELL OPAL IS_GEM
+bone opal	骨歐泊	骨欧泊		INORGANIC:BONE OPAL IS_GEM
+white chalcedony	白玉髓	白玉髓		INORGANIC:WHITE CHALCEDONY IS_GEM
+white chalcedonies	白玉髓	白玉髓		INORGANIC:WHITE CHALCEDONY IS_GEM
+fortification agate	城堡瑪瑙	城堡玛瑙		INORGANIC:FORTIFICATION AGATE IS_GEM
+milk quartz	乳石英	乳石英		INORGANIC:MILK QUARTZ IS_GEM
+milk quartzes	乳石英	乳石英		INORGANIC:MILK QUARTZ IS_GEM
+moonstone	月光石	月光石		INORGANIC:MOONSTONE IS_GEM
+white jade	白翡翠	白翡翠		INORGANIC:WHITE JADE IS_GEM
+jasper opal	碧玉歐泊	碧玉欧泊		INORGANIC:JASPER OPAL IS_GEM
+pineapple opal	鳳梨歐泊	菠萝欧泊		INORGANIC:PINEAPPLE OPAL IS_GEM；兩岸名稱不同（鳳梨／菠萝）
+onyx opal	縞紋歐泊	缟纹欧泊		INORGANIC:ONYX OPAL IS_GEM
+milk opal	乳白歐泊	乳白欧泊		INORGANIC:MILK OPAL IS_GEM
+pipe opal	管狀歐泊	管状欧泊		INORGANIC:PIPE OPAL IS_GEM
+aventurine	東陵石	东陵石		INORGANIC:AVENTURINE IS_GEM
+rose quartz	粉晶	芙蓉石		INORGANIC:QUARTZ_ROSE IS_GEM；兩岸行話不同
+rose quartzes	粉晶	芙蓉石		INORGANIC:QUARTZ_ROSE IS_GEM；兩岸行話不同
+rock crystal	白水晶	白水晶		INORGANIC:CRYSTAL_ROCK IS_GEM
+black zircon	黑鋯石	黑锆石		INORGANIC:BLACK ZIRCON IS_GEM
+black pyrope	黑鎂鋁榴石	黑镁铝榴石		INORGANIC:BLACK PYROPE IS_GEM
+melanite	黑榴石	黑榴石		INORGANIC:MELANITE IS_GEM
+indigo tourmaline	靛藍碧璽	靛蓝碧玺		INORGANIC:INDIGO TOURMALINE IS_GEM
+blue garnet	藍石榴石	蓝石榴石		INORGANIC:BLUE GARNET IS_GEM
+tsavorite	沙弗萊石	沙弗莱石		INORGANIC:TSAVORITE IS_GEM
+green tourmaline	綠碧璽	绿碧玺		INORGANIC:GREEN TOURMALINE IS_GEM
+demantoid	翠榴石	翠榴石		INORGANIC:DEMANTOID IS_GEM
+green zircon	綠鋯石	绿锆石		INORGANIC:GREEN ZIRCON IS_GEM
+green jade	綠翡翠	绿翡翠		INORGANIC:GREEN JADE IS_GEM
+heliodor	黃綠柱石	黄绿柱石		INORGANIC:HELIODOR IS_GEM；黃色綠柱石變種；golden beryl 另譯金綠柱石
+peridot	橄欖石	橄榄石		INORGANIC:PERIDOT IS_GEM；寶石級橄欖石
+red zircon	紅鋯石	红锆石		INORGANIC:RED ZIRCON IS_GEM
+red tourmaline	紅碧璽	红碧玺		INORGANIC:RED TOURMALINE IS_GEM
+red pyrope	紅鎂鋁榴石	红镁铝榴石		INORGANIC:RED PYROPE IS_GEM
+almandine	鐵鋁榴石	铁铝榴石		INORGANIC:ALMANDINE IS_GEM
+red grossular	紅鈣鋁榴石	红钙铝榴石		INORGANIC:RED GROSSULAR IS_GEM
+pink tourmaline	粉紅碧璽	粉红碧玺		INORGANIC:PINK TOURMALINE IS_GEM
+red beryl	紅綠柱石	红绿柱石		INORGANIC:RED BERYL IS_GEM
+fire opal	火歐泊	火欧泊		INORGANIC:FIRE OPAL IS_GEM
+rhodolite	玫瑰榴石	玫瑰榴石		INORGANIC:RHODOLITE IS_GEM
+purple spinel	紫尖晶石	紫尖晶石		INORGANIC:SPINEL_PURPLE IS_GEM
+alexandrite	變石	变石		INORGANIC:ALEXANDRITE IS_GEM
+tanzanite	丹泉石	坦桑石		INORGANIC:TANZANITE IS_GEM；兩岸名稱不同
+morganite	摩根石	摩根石		INORGANIC:MORGANITE IS_GEM
+violet spessartine	紫錳鋁榴石	紫锰铝榴石		INORGANIC:VIOLET SPESSARTINE IS_GEM
+pink garnet	粉紅石榴石	粉红石榴石		INORGANIC:PINK GARNET IS_GEM
+kunzite	孔賽石	孔赛石		INORGANIC:KUNZITE IS_GEM；寬度限 3 字
+cinnamon grossular	肉桂鈣鋁榴石	肉桂钙铝榴石		INORGANIC:CINNAMON GROSSULAR IS_GEM
+honey yellow beryl	蜜黃綠柱石	蜜黄绿柱石		INORGANIC:HONEY YELLOW BERYL IS_GEM
+jelly opal	果凍歐泊	果冻欧泊		INORGANIC:JELLY OPAL IS_GEM
+brown zircon	棕鋯石	棕锆石		INORGANIC:BROWN ZIRCON IS_GEM
+yellow zircon	黃鋯石	黄锆石		INORGANIC:YELLOW ZIRCON IS_GEM
+golden beryl	金綠柱石	金绿柱石		INORGANIC:GOLDEN BERYL IS_GEM
+yellow spessartine	黃錳鋁榴石	黄锰铝榴石		INORGANIC:YELLOW SPESSARTINE IS_GEM
+topaz	黃玉	黄玉		INORGANIC:TOPAZ IS_GEM
+topazes	黃玉	黄玉		INORGANIC:TOPAZ IS_GEM
+topazolite	黃鈣鐵榴石	黄钙铁榴石		INORGANIC:TOPAZOLITE IS_GEM
+yellow grossular	黃鈣鋁榴石	黄钙铝榴石		INORGANIC:YELLOW GROSSULAR IS_GEM
+rubicelle	橙尖晶石	橙尖晶石		INORGANIC:RUBICELLE IS_GEM
+clear garnet	無色石榴石	无色石榴石		INORGANIC:CLEAR GARNET IS_GEM
+goshenite	透綠柱石	透绿柱石		INORGANIC:GOSHENITE IS_GEM
+cat's eye	貓眼石	猫眼石		INORGANIC:CAT'S EYE IS_GEM
+clear zircon	無色鋯石	无色锆石		INORGANIC:CLEAR ZIRCON IS_GEM
+red spinel	紅尖晶石	红尖晶石		INORGANIC:SPINEL_RED IS_GEM
+chrysoberyl	金綠寶石	金绿宝石		INORGANIC:CHRYSOBERYL IS_GEM
+precious fire opal	貴火歐泊	贵火欧泊		INORGANIC:OPAL_PFIRE IS_GEM
+red flash opal	紅閃歐泊	红闪欧泊		INORGANIC:OPAL_REDFLASH IS_GEM
+black opal	黑歐泊	黑欧泊		INORGANIC:OPAL_BLACK IS_GEM
+white opal	白歐泊	白欧泊		INORGANIC:OPAL_WHITE IS_GEM
+crystal opal	水晶歐泊	水晶欧泊		INORGANIC:OPAL_CRYSTAL IS_GEM
+claro opal	清透歐泊	清透欧泊		INORGANIC:OPAL_CLARO IS_GEM
+levin opal	閃電歐泊	闪电欧泊		INORGANIC:OPAL_LEVIN IS_GEM
+harlequin opal	彩格歐泊	彩格欧泊		INORGANIC:OPAL_HARLEQUIN IS_GEM
+pinfire opal	針火歐泊	针火欧泊		INORGANIC:OPAL_PINFIRE IS_GEM
+bandfire opal	條紋火歐泊	条纹火欧泊		INORGANIC:OPAL_BANDFIRE IS_GEM
+light yellow diamond	淺黃鑽石	浅黄钻石		INORGANIC:DIAMOND_LY IS_GEM
+faint yellow diamond	微黃鑽石	微黄钻石		INORGANIC:DIAMOND_FY IS_GEM
+ruby	紅寶石	红宝石		INORGANIC:RUBY IS_GEM
+rubies	紅寶石	红宝石		INORGANIC:RUBY IS_GEM
+clear diamond	無色鑽石	无色钻石		INORGANIC:DIAMOND_CLEAR IS_GEM
+red diamond	紅鑽石	红钻石		INORGANIC:DIAMOND_RED IS_GEM
+green diamond	綠鑽石	绿钻石		INORGANIC:DIAMOND_GREEN IS_GEM
+blue diamond	藍鑽石	蓝钻石		INORGANIC:DIAMOND_BLUE IS_GEM
+yellow diamond	黃鑽石	黄钻石		INORGANIC:DIAMOND_YELLOW IS_GEM
+black diamond	黑鑽石	黑钻石		INORGANIC:DIAMOND_BLACK IS_GEM
+star sapphire	星光藍寶石	星光蓝宝石		INORGANIC:SAPPHIRE_STAR IS_GEM
+star ruby	星紅寶石	星红宝石		INORGANIC:RUBY_STAR IS_GEM；寬度限 4 字，放不下星光紅寶石
+star rubies	星紅寶石	星红宝石		INORGANIC:RUBY_STAR IS_GEM；同 star ruby
+sandstone	砂岩	砂岩		INORGANIC:SANDSTONE STATE_NAME_ADJ
+siltstone	粉砂岩	粉砂岩		INORGANIC:SILTSTONE STATE_NAME_ADJ
+mudstone	泥岩	泥岩		INORGANIC:MUDSTONE STATE_NAME_ADJ
+shale	頁岩	页岩		INORGANIC:SHALE STATE_NAME_ADJ
+claystone	黏土岩	黏土岩		INORGANIC:CLAYSTONE STATE_NAME_ADJ
+rock salt	岩鹽	岩盐		INORGANIC:ROCK_SALT STATE_NAME_ADJ
+limestone	石灰岩	石灰岩		INORGANIC:LIMESTONE STATE_NAME_ADJ
+conglomerate	礫岩	砾岩		INORGANIC:CONGLOMERATE STATE_NAME_ADJ
+dolomite	白雲岩	白云岩		INORGANIC:DOLOMITE STATE_NAME_ADJ；岩層用岩名
+chert	燧石	燧石		INORGANIC:CHERT STATE_NAME_ADJ
+chalk	白堊	白垩		INORGANIC:CHALK STATE_NAME_ADJ
+granite	花崗岩	花岗岩		INORGANIC:GRANITE STATE_NAME_ADJ
+diorite	閃長岩	闪长岩		INORGANIC:DIORITE STATE_NAME_ADJ
+rhyolite	流紋岩	流纹岩		INORGANIC:RHYOLITE STATE_NAME_ADJ
+basalt	玄武岩	玄武岩		INORGANIC:BASALT STATE_NAME_ADJ
+andesite	安山岩	安山岩		INORGANIC:ANDESITE STATE_NAME_ADJ
+dacite	英安岩	英安岩		INORGANIC:DACITE STATE_NAME_ADJ
+obsidian	黑曜石	黑曜石		INORGANIC:OBSIDIAN STATE_NAME_ADJ
+quartzite	石英岩	石英岩		INORGANIC:QUARTZITE STATE_NAME_ADJ
+slate	板岩	板岩		INORGANIC:SLATE STATE_NAME_ADJ
+phyllite	千枚岩	千枚岩		INORGANIC:PHYLLITE STATE_NAME_ADJ
+schist	片岩	片岩		INORGANIC:SCHIST STATE_NAME_ADJ
+gneiss	片麻岩	片麻岩		INORGANIC:GNEISS STATE_NAME_ADJ
+marble	大理石	大理石		INORGANIC:MARBLE STATE_NAME_ADJ
+hematite	赤鐵礦	赤铁矿		INORGANIC:HEMATITE STATE_NAME_ADJ
+limonite	褐鐵礦	褐铁矿		INORGANIC:LIMONITE STATE_NAME_ADJ
+garnierite	矽鎂鎳礦	硅镁镍矿		INORGANIC:GARNIERITE STATE_NAME_ADJ；兩岸用字不同（矽／硅）
+native gold	自然金	自然金		INORGANIC:NATIVE_GOLD STATE_NAME
+native gold dust	自然金粉	自然金粉		INORGANIC:NATIVE_GOLD STATE_NAME
+molten native gold	熔融自然金	熔融自然金		INORGANIC:NATIVE_GOLD STATE_NAME_ADJ
+boiling native gold	沸騰的自然金	沸腾的自然金		INORGANIC:NATIVE_GOLD STATE_NAME_ADJ
+native silver	自然銀	自然银		INORGANIC:NATIVE_SILVER STATE_NAME_ADJ
+molten native silver	熔融自然銀	熔融自然银		INORGANIC:NATIVE_SILVER STATE_NAME_ADJ
+boiling native silver	沸騰的自然銀	沸腾的自然银		INORGANIC:NATIVE_SILVER STATE_NAME_ADJ
+native copper	自然銅	自然铜		INORGANIC:NATIVE_COPPER STATE_NAME_ADJ
+molten native copper	熔融自然銅	熔融自然铜		INORGANIC:NATIVE_COPPER STATE_NAME_ADJ
+boiling native copper	沸騰的自然銅	沸腾的自然铜		INORGANIC:NATIVE_COPPER STATE_NAME_ADJ
+malachite	孔雀石	孔雀石		INORGANIC:MALACHITE STATE_NAME_ADJ
+galena	方鉛礦	方铅矿		INORGANIC:GALENA STATE_NAME_ADJ
+sphalerite	閃鋅礦	闪锌矿		INORGANIC:SPHALERITE STATE_NAME_ADJ
+cassiterite	錫石	锡石		INORGANIC:CASSITERITE STATE_NAME_ADJ
+bituminous coal	煙煤	烟煤		INORGANIC:COAL_BITUMINOUS STATE_NAME_ADJ
+lignite	褐煤	褐煤		INORGANIC:LIGNITE STATE_NAME_ADJ
+native platinum	自然鉑	自然铂		INORGANIC:NATIVE_PLATINUM STATE_NAME_ADJ
+molten native platinum	熔融自然鉑	熔融自然铂		INORGANIC:NATIVE_PLATINUM STATE_NAME_ADJ
+boiling native platinum	沸騰的自然鉑	沸腾的自然铂		INORGANIC:NATIVE_PLATINUM STATE_NAME_ADJ
+cinnabar	辰砂	辰砂		INORGANIC:CINNABAR STATE_NAME_ADJ
+cobaltite	輝鈷礦	辉钴矿		INORGANIC:COBALTITE STATE_NAME_ADJ
+tetrahedrite	黝銅礦	黝铜矿		INORGANIC:TETRAHEDRITE STATE_NAME_ADJ
+horn silver	角銀礦	角银矿		INORGANIC:HORN_SILVER STATE_NAME_ADJ
+gypsum	石膏	石膏		INORGANIC:GYPSUM STATE_NAME_ADJ
+talc	滑石	滑石		INORGANIC:TALC STATE_NAME_ADJ
+jet	煤玉	煤精		INORGANIC:JET STATE_NAME_ADJ；兩岸名稱不同
+puddingstone	布丁岩	布丁岩		INORGANIC:PUDDINGSTONE STATE_NAME_ADJ
+petrified wood	矽化木	硅化木		INORGANIC:PETRIFIED_WOOD STATE_NAME_ADJ；兩岸用字不同（矽／硅）
+graphite	石墨	石墨		INORGANIC:GRAPHITE STATE_NAME_ADJ
+brimstone	硫磺	硫黄		INORGANIC:BRIMSTONE STATE_NAME_ADJ
+kimberlite	金伯利岩	金伯利岩		INORGANIC:KIMBERLITE STATE_NAME_ADJ
+bismuthinite	輝鉍礦	辉铋矿		INORGANIC:BISMUTHINITE STATE_NAME_ADJ
+realgar	雄黃	雄黄		INORGANIC:REALGAR STATE_NAME_ADJ
+orpiment	雌黃	雌黄		INORGANIC:ORPIMENT STATE_NAME_ADJ
+stibnite	輝銻礦	辉锑矿		INORGANIC:STIBNITE STATE_NAME_ADJ
+marcasite	白鐵礦	白铁矿		INORGANIC:MARCASITE STATE_NAME_ADJ
+sylvite	鉀鹽	钾盐		INORGANIC:SYLVITE STATE_NAME_ADJ
+cryolite	冰晶石	冰晶石		INORGANIC:CRYOLITE STATE_NAME_ADJ
+periclase	方鎂石	方镁石		INORGANIC:PERICLASE STATE_NAME_ADJ
+ilmenite	鈦鐵礦	钛铁矿		INORGANIC:ILMENITE STATE_NAME_ADJ
+rutile	金紅石	金红石		INORGANIC:RUTILE STATE_NAME_ADJ
+magnetite	磁鐵礦	磁铁矿		INORGANIC:MAGNETITE STATE_NAME_ADJ
+chromite	鉻鐵礦	铬铁矿		INORGANIC:CHROMITE STATE_NAME_ADJ
+pyrolusite	軟錳礦	软锰矿		INORGANIC:PYROLUSITE STATE_NAME_ADJ
+pitchblende	瀝青鈾礦	沥青铀矿		INORGANIC:PITCHBLENDE STATE_NAME_ADJ
+bauxite	鋁土礦	铝土矿		INORGANIC:BAUXITE STATE_NAME_ADJ
+native aluminum	自然鋁	自然铝		INORGANIC:NATIVE_ALUMINUM STATE_NAME_ADJ
+molten native aluminum	熔融自然鋁	熔融自然铝		INORGANIC:NATIVE_ALUMINUM STATE_NAME_ADJ
+boiling native aluminum	沸騰的自然鋁	沸腾的自然铝		INORGANIC:NATIVE_ALUMINUM STATE_NAME_ADJ
+borax	硼砂	硼砂		INORGANIC:BORAX STATE_NAME_ADJ
+olivine	橄欖石	橄榄石		INORGANIC:OLIVINE STATE_NAME_ADJ；正式礦物名為橄欖石；與寶石 peridot 共用正式譯名
+hornblende	角閃石	角闪石		INORGANIC:HORNBLENDE STATE_NAME_ADJ
+kaolinite	高嶺石	高岭石		INORGANIC:KAOLINITE STATE_NAME_ADJ
+serpentine	蛇紋石	蛇纹石		INORGANIC:SERPENTINE STATE_NAME_ADJ
+orthoclase	正長石	正长石		INORGANIC:ORTHOCLASE STATE_NAME_ADJ
+microcline	微斜長石	微斜长石		INORGANIC:MICROCLINE STATE_NAME_ADJ
+mica	雲母	云母		INORGANIC:MICA STATE_NAME_ADJ
+calcite	方解石	方解石		INORGANIC:CALCITE STATE_NAME_ADJ
+saltpeter	硝石	硝石		INORGANIC:SALTPETER STATE_NAME_ADJ
+alabaster	雪花石膏	雪花石膏		INORGANIC:ALABASTER STATE_NAME_ADJ
+selenite	透石膏	透石膏		INORGANIC:SELENITE STATE_NAME_ADJ
+satinspar	纖維石膏	纤维石膏		INORGANIC:SATINSPAR STATE_NAME_ADJ
+anhydrite	硬石膏	硬石膏		INORGANIC:ANHYDRITE STATE_NAME_ADJ
+alunite	明礬石	明矾石		INORGANIC:ALUNITE STATE_NAME_ADJ
+raw adamantine	精金原礦	精金原矿		INORGANIC:RAW_ADAMANTINE STATE_NAME_ADJ
+molten raw adamantine	熔融精金原礦	熔融精金原矿		INORGANIC:RAW_ADAMANTINE STATE_NAME_ADJ
+boiling raw adamantine	沸騰的精金原礦	沸腾的精金原矿		INORGANIC:RAW_ADAMANTINE STATE_NAME_ADJ
+slade	冥岩	冥岩		INORGANIC:SLADE STATE_NAME_ADJ；遊戲自創，地底深淵的不可開採岩石；照意思譯
+clay	黏土	黏土		INORGANIC:CLAY STATE_NAME_ADJ
+silty clay	粉質黏土	粉质黏土		INORGANIC:SILTY_CLAY STATE_NAME_ADJ
+sandy clay	砂質黏土	砂质黏土		INORGANIC:SANDY_CLAY STATE_NAME_ADJ
+clay loam	黏壤土	黏壤土		INORGANIC:CLAY_LOAM STATE_NAME_ADJ
+sandy clay loam	砂質黏壤土	砂质黏壤土		INORGANIC:SANDY_CLAY_LOAM STATE_NAME_ADJ
+silty clay loam	粉質黏壤土	粉质黏壤土		INORGANIC:SILTY_CLAY_LOAM STATE_NAME_ADJ
+loam	壤土	壤土		INORGANIC:LOAM STATE_NAME_ADJ
+sandy loam	砂質壤土	砂质壤土		INORGANIC:SANDY_LOAM STATE_NAME_ADJ
+silt loam	粉質壤土	粉质壤土		INORGANIC:SILT_LOAM STATE_NAME_ADJ
+loamy sand	壤質砂土	壤质砂土		INORGANIC:LOAMY_SAND STATE_NAME_ADJ
+silt	粉砂	粉砂		INORGANIC:SILT STATE_NAME_ADJ
+sand	沙子	沙子		INORGANIC:SAND_TAN STATE_NAME_ADJ
+yellow sand	黃沙	黄沙		INORGANIC:SAND_YELLOW STATE_NAME_ADJ
+white sand	白沙	白沙		INORGANIC:SAND_WHITE STATE_NAME_ADJ
+black sand	黑沙	黑沙		INORGANIC:SAND_BLACK STATE_NAME_ADJ
+red sand	紅沙	红沙		INORGANIC:SAND_RED STATE_NAME_ADJ
+peat	泥炭	泥炭		INORGANIC:PEAT STATE_NAME_ADJ
+pelagic clay	遠洋黏土	远洋黏土		INORGANIC:PELAGIC_CLAY STATE_NAME_ADJ
+calcareous ooze	鈣質軟泥	钙质软泥		INORGANIC:CALCAREOUS_OOZE STATE_NAME_ADJ
+siliceous ooze	矽質軟泥	硅质软泥		INORGANIC:SILICEOUS_OOZE STATE_NAME_ADJ；兩岸用字不同（矽／硅）
+fire clay	耐火黏土	耐火黏土		INORGANIC:FIRE_CLAY STATE_NAME_ADJ
