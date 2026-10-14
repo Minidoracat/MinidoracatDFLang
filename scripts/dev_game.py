@@ -52,8 +52,9 @@ def kill_game() -> None:
 
 def up(langs: list[str]) -> int:
     kill_game()
+    # 遮蔽 MOD 還在表示測試進行中（up 了兩次沒有 down），這時的 dflang* 是測試自己產生的，不是玩家的，不備份
     user_files = list(CONFIG_DIR.glob("dflang*"))
-    if user_files and not BACKUP.exists():  # 備份已存在表示上次沒有 down，現在這些是測試留下的檔
+    if user_files and not BACKUP.exists() and not SHADOW.exists():
         BACKUP.mkdir(parents=True)
         for f in user_files:
             shutil.move(f, BACKUP / f.name)

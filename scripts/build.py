@@ -5,8 +5,9 @@
 """組出繁、簡兩個工作坊包到 dist/<folder>/（內容就是上傳到工作坊的資料夾）。
 
 每包內容：info.txt、scripts_modinstalled/（載入器與 dflang 指令）、dflang/（引擎 DLL、整句字典 strings.tsv、
-句型規則 rules.tsv、字型子集、特徵碼、授權與致謝）。字型是 workshop.json 指定的思源黑體（Noto Sans CJK），
-只留本包譯文用到的非 CP437 字；主字型沒有的字依 fallback_fonts 依序補成第二、第三份字型，全部都沒有就建置失敗。
+句型規則 rules.tsv、字型子集、特徵碼、標題畫面吉祥物 mascot.png、授權與致謝）。字型是 workshop.json 指定的
+思源黑體（Noto Sans CJK），只留本包譯文與吉祥物標籤（mascot_label）用到的非 CP437 字；主字型沒有的字依
+fallback_fonts 依序補成第二、第三份字型，全部都沒有就建置失敗。
 引擎在遊戲啟動時依當下的文字格大小把這些字畫成字圖集，所以字型檔就是字圖的唯一來源。
 
 用法（repo 根目錄）：
@@ -33,8 +34,9 @@ DIST = ROOT / "dist"
 FONTS = ROOT / "temp/fonts"
 FONT_LICENSE_URL = "https://raw.githubusercontent.com/notofonts/noto-cjk/main/Sans/LICENSE"
 PACKAGE_LICENSE = """程式（dflang/dflang.dll、scripts_modinstalled/*.lua）：MIT License，全文附在下方。
-譯文（dflang/strings.tsv）：CC BY 4.0，https://creativecommons.org/licenses/by/4.0/
+譯文（dflang/strings.tsv、dflang/rules.tsv）：CC BY 4.0，https://creativecommons.org/licenses/by/4.0/
 字型（dflang/fonts/）：SIL Open Font License 1.1，全文見 LICENSE-fonts.txt。
+吉祥物圖（dflang/mascot.png）：© Minidoracat，保留所有權利，不適用上述授權。
 
 """
 
@@ -97,14 +99,15 @@ def build_engine() -> Path:
     return ROOT / "engine/target/release/dflang.dll"
 
 
-def info_txt(item: dict, version: dict) -> str:
+def info_txt(item: dict, config: dict) -> str:
+    version = config["version"]
     return "".join(f"[{k}:{v}]\n" for k, v in [
         ("ID", item["id"]),
         ("NUMERIC_VERSION", version["numeric"]),
         ("DISPLAYED_VERSION", version["displayed"]),
         ("EARLIEST_COMPATIBLE_NUMERIC_VERSION", version["earliest_compatible_numeric"]),
         ("EARLIEST_COMPATIBLE_DISPLAYED_VERSION", version["earliest_compatible_displayed"]),
-        ("AUTHOR", "Minidoracat"),
+        ("AUTHOR", config["author"]),
         ("NAME", item["name"]),
         ("DESCRIPTION", item["description"]),
     ])
@@ -115,7 +118,7 @@ def write_text(path: Path, text: str) -> None:
     path.write_text(text, encoding="utf-8", newline="\n")
 
 
-def build_item(item: dict, version: dict, rows: list[dict], rules: list[dict], dll: Path) -> int:
+def build_item(item: dict, config: dict, rows: list[dict], rules: list[dict], dll: Path) -> int:
     lang = item["lang"]
     pairs = [(r["en"], r[lang], r["align"]) for r in rows if r[lang].strip()]
     rule_pairs = [(r["en"], r[lang], r["align"]) for r in rules if r[lang].strip()]
@@ -130,7 +133,9 @@ def build_item(item: dict, version: dict, rows: list[dict], rules: list[dict], d
     data = out / "dflang"
     data.mkdir(parents=True)
 
-    missing = subset_fonts(chars, [item["font"], *item["fallback_fonts"]], data / "fonts")
+    # 標題畫面吉祥物的名牌（語言標籤、作者名）由引擎在遊戲裡用同一套字型畫，字型子集也要有這些字（含英數）
+    tag_chars = [c for c in dict.fromkeys(item["mascot_label"] + config["author"]) if c != " " and c not in chars]
+    missing = subset_fonts(chars + tag_chars, [item["font"], *item["fallback_fonts"]], data / "fonts")
     if missing:
         print(f"FAIL {lang}: 沒有字型能畫 {''.join(missing)}", file=sys.stderr)
         return 1
@@ -143,12 +148,15 @@ def build_item(item: dict, version: dict, rows: list[dict], rules: list[dict], d
     write_text(data / "LICENSE.txt", PACKAGE_LICENSE + (ROOT / "LICENSE").read_text(encoding="utf-8"))
     shutil.copy2(FONTS / "LICENSE", data / "LICENSE-fonts.txt")
     shutil.copy2(ROOT / "CREDITS.md", data / "CREDITS.md")
+    shutil.copy2(ROOT / "art/mascot.png", data / "mascot.png")
 
     suffix = lang.lower().replace("-", "_")
-    loader = (ROOT / "lua/loader.lua").read_text(encoding="utf-8").replace("@LANG@", lang).replace("@MOD_ID@", item["id"])
+    loader = ((ROOT / "lua/loader.lua").read_text(encoding="utf-8")
+              .replace("@LANG@", lang).replace("@MOD_ID@", item["id"])
+              .replace("@MASCOT_LABEL@", item["mascot_label"]).replace("@AUTHOR@", config["author"]))
     write_text(out / f"scripts_modinstalled/dflang_{suffix}.lua", loader)
     shutil.copy2(ROOT / "lua/dflang.lua", out / "scripts_modinstalled/dflang.lua")
-    write_text(out / "info.txt", info_txt(item, version))
+    write_text(out / "info.txt", info_txt(item, config))
     print(f"{lang}: {len(pairs)} 條譯文、{len(rule_pairs)} 條句型、{len(chars)} 個字 -> {out.relative_to(ROOT)}")
     return 0
 
@@ -163,7 +171,7 @@ def main() -> int:
         fetch_fonts(config["font_sources"])
     dll = ROOT / "engine/target/release/dflang.dll" if args.skip_engine else build_engine()
     rows, rules = read_strings(), read_rules()
-    return max(build_item(item, config["version"], rows, rules, dll) for item in config["items"])
+    return max(build_item(item, config, rows, rules, dll) for item in config["items"])
 
 
 if __name__ == "__main__":

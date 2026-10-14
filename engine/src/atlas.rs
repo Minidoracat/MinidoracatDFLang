@@ -5,8 +5,6 @@
 //! 字的原點取整數像素，hinting 才不會被小數位移抵銷；覆蓋率先換算成 ALPHA_EXPONENT 次方再存成 alpha。
 //! 字型依序找：第一個含有該字的字型負責畫（主字型之後的字型用來補字）。
 
-use std::fs::File;
-use std::io::BufWriter;
 use std::path::Path;
 
 use skrifa::instance::{LocationRef, Size};
@@ -80,46 +78,79 @@ impl OutlinePen for Pen {
     }
 }
 
+/// 依格高設定好 hinting 的字型組；字型依序找，第一個有該字的負責畫。
+pub struct Glyphs<'a> {
+    refs: Vec<FontRef<'a>>,
+    outlines: Vec<skrifa::outline::OutlineGlyphCollection<'a>>,
+    hinting: Vec<HintingInstance>,
+    size: Size,
+}
+
+impl<'a> Glyphs<'a> {
+    /// 字身等於格高（介面上的中文字大小）。
+    pub fn new(fonts: &'a [Font], cell_h: usize) -> Result<Self, String> {
+        Self::with_px(fonts, (cell_h as f32 * EM_PER_CELL).round())
+    }
+
+    /// 指定字身像素（吉祥物標籤的作者名用較小的字）。
+    pub fn with_px(fonts: &'a [Font], px: f32) -> Result<Self, String> {
+        let size = Size::new(px);
+        let refs: Vec<FontRef> = fonts.iter().map(|f| FontRef::new(&f.0).map_err(|e| e.to_string())).collect::<Result<_, _>>()?;
+        let outlines: Vec<_> = refs.iter().map(|f| f.outline_glyphs()).collect();
+        let hinting = outlines
+            .iter()
+            .map(|o| HintingInstance::new(o, size, LocationRef::default(), HintingOptions::default()).map_err(|e| e.to_string()))
+            .collect::<Result<_, _>>()?;
+        Ok(Glyphs { refs, outlines, hinting, size })
+    }
+
+    /// ch 的字寬（像素）；沒有字型能畫時回傳 None。
+    pub fn advance(&self, ch: char) -> Option<f32> {
+        self.refs.iter().find_map(|font| {
+            let gid = font.charmap().map(ch).filter(|g| g.to_u32() != 0)?;
+            font.glyph_metrics(self.size, LocationRef::default()).advance_width(gid)
+        })
+    }
+
+    /// 把 ch 的覆蓋率畫進 box_w×box_h 的遮罩（先清空）：水平依字寬置中，垂直讓「上緣到下緣」的中線落在方框中線。
+    /// 沒有字型能畫時回傳 false。
+    pub fn draw(&self, ch: char, box_w: usize, box_h: usize, mask: &mut [u8]) -> Result<bool, String> {
+        let location = LocationRef::default();
+        let found = self.refs.iter().enumerate().find_map(|(f, font)| {
+            let gid = font.charmap().map(ch).filter(|g| g.to_u32() != 0)?;
+            Some((f, gid, self.outlines[f].get(gid)?))
+        });
+        let Some((f, gid, glyph)) = found else { return Ok(false) };
+        let metrics = self.refs[f].metrics(self.size, location);
+        let advance = self.refs[f].glyph_metrics(self.size, location).advance_width(gid).unwrap_or(self.size.ppem().unwrap_or(0.0));
+        let mut pen = Pen {
+            path: Vec::new(),
+            x: ((box_w as f32 - advance) / 2.0).round(),
+            y: (box_h as f32 / 2.0 + (metrics.ascent + metrics.descent) / 2.0).round(),
+        };
+        glyph.draw(DrawSettings::hinted(&self.hinting[f], false), &mut pen).map_err(|e| format!("{ch}: {e}"))?;
+        mask[..box_w * box_h].fill(0);
+        Mask::new(&pen.path).size(box_w as u32, box_h as u32).render_into(mask, None);
+        Ok(true)
+    }
+}
+
 pub fn render(fonts: &[Font], chars: &[char], cell_w: usize, cell_h: usize, out: &Path) -> Result<Report, String> {
     let (box_w, box_h) = (cell_w * 2, cell_h);
     let tiles = chars.len() * 2;
     let width = TILES_PER_ROW.min(tiles.max(2)) * cell_w;
     let height = tiles.div_ceil(TILES_PER_ROW).max(1) * cell_h;
     let mut rgba = vec![0u8; width * height * 4];
-    let size = Size::new((cell_h as f32 * EM_PER_CELL).round());
-    let location = LocationRef::default();
     let alpha: Vec<u8> = (0..=255u32).map(|a| ((a as f32 / 255.0).powf(ALPHA_EXPONENT) * 255.0).round() as u8).collect();
-
-    let refs: Vec<FontRef> = fonts.iter().map(|f| FontRef::new(&f.0).map_err(|e| e.to_string())).collect::<Result<_, _>>()?;
-    let outlines: Vec<_> = refs.iter().map(|f| f.outline_glyphs()).collect();
-    let hinting: Vec<HintingInstance> = outlines
-        .iter()
-        .map(|o| HintingInstance::new(o, size, location, HintingOptions::default()).map_err(|e| e.to_string()))
-        .collect::<Result<_, _>>()?;
+    let glyphs = Glyphs::new(fonts, cell_h)?;
 
     let mut mask = vec![0u8; box_w * box_h];
     let mut missing = Vec::new();
     for (i, &ch) in chars.iter().enumerate() {
-        let found = refs.iter().enumerate().find_map(|(f, font)| {
-            let gid = font.charmap().map(ch).filter(|g| g.to_u32() != 0)?;
-            Some((f, gid, outlines[f].get(gid)?))
-        });
-        let Some((f, gid, glyph)) = found else {
+        if !glyphs.draw(ch, box_w, box_h, &mut mask)? {
             missing.push(ch);
             continue;
-        };
-        let metrics = refs[f].metrics(size, location);
-        let advance = refs[f].glyph_metrics(size, location).advance_width(gid).unwrap_or(size.ppem().unwrap_or(0.0));
-        // 水平依字寬置中；垂直讓「上緣到下緣」的中線落在方框中線
-        let mut pen = Pen {
-            path: Vec::new(),
-            x: ((box_w as f32 - advance) / 2.0).round(),
-            y: (box_h as f32 / 2.0 + (metrics.ascent + metrics.descent) / 2.0).round(),
-        };
-        glyph.draw(DrawSettings::hinted(&hinting[f], false), &mut pen).map_err(|e| format!("{ch}: {e}"))?;
-        mask.fill(0);
-        Mask::new(&pen.path).size(box_w as u32, box_h as u32).render_into(&mut mask, None);
-
+        }
         let (tile_x, tile_y) = ((2 * i) % TILES_PER_ROW * cell_w, (2 * i) / TILES_PER_ROW * cell_h);
         for y in 0..box_h {
             for x in 0..box_w {
@@ -129,11 +160,6 @@ pub fn render(fonts: &[Font], chars: &[char], cell_w: usize, cell_h: usize, out:
         }
     }
 
-    let file = File::create(out).map_err(|e| format!("{}: {e}", out.display()))?;
-    let mut encoder = png::Encoder::new(BufWriter::new(file), width as u32, height as u32);
-    encoder.set_color(png::ColorType::Rgba);
-    encoder.set_depth(png::BitDepth::Eight);
-    let mut writer = encoder.write_header().map_err(|e| e.to_string())?;
-    writer.write_image_data(&rgba).map_err(|e| e.to_string())?;
+    crate::image::write_png(out, width, height, &rgba)?;
     Ok(Report { tiles, missing })
 }

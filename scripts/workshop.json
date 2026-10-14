@@ -1,5 +1,6 @@
 {
   "app_id": 975370,
+  "author": "Minidoracat",
   "version": {
     "numeric": 1,
     "displayed": "0.1.0",
@@ -19,6 +20,7 @@
       "fallback_fonts": ["NotoSansCJKsc-Medium.otf"],
       "name": "Minidoracat DF Chinese - Traditional (zh-Hant)",
       "description": "Traditional Chinese translation for Dwarf Fortress. Requires DFHack.",
+      "mascot_label": "繁體中文",
       "steam_title": "矮人要塞 繁體中文化 Dwarf Fortress Traditional Chinese by Minidoracat",
       "steam_description": "docs/steam/zh-Hant.bbcode",
       "steam_language": "tchinese",
@@ -33,6 +35,7 @@
       "fallback_fonts": ["NotoSansCJKtc-Medium.otf"],
       "name": "Minidoracat DF Chinese - Simplified (zh-Hans)",
       "description": "Simplified Chinese translation for Dwarf Fortress. Requires DFHack.",
+      "mascot_label": "简体中文",
       "steam_title": "矮人要塞 简体中文化 Dwarf Fortress Simplified Chinese by Minidoracat",
       "steam_description": "docs/steam/zh-Hans.bbcode",
       "steam_language": "schinese",

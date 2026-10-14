@@ -1,5 +1,5 @@
 -- DFLang 中文化（@LANG@）載入器：DFHack 啟動時當模組執行，載入本包 dflang/ 底下的引擎、字典與字圖集。
--- scripts/build.py 依語言換掉 @LANG@、@MOD_ID@ 並改檔名；兩包檔名不同，DFHack 才會兩支都執行。
+-- scripts/build.py 依語言換掉 @LANG@、@MOD_ID@、@MASCOT_LABEL@、@AUTHOR@ 並改檔名；兩包檔名不同，DFHack 才會兩支都執行。
 --@module = true
 
 local LANG = '@LANG@'
@@ -19,6 +19,11 @@ local CONFIG_FILE = 'dfhack-config/dflang.json'
 local ATLAS_FILE = 'dfhack-config/dflang-atlas-%s.png'
 -- dflang misses on 之後每次啟動都把畫面上沒翻到的字串記到這裡（dflang.lua 共用同一個路徑）
 local MISSES_FILE = 'dfhack-config/dflang-misses.tsv'
+-- 標題畫面左下角的吉祥物：本包 dflang/mascot.png 依目前格子大小縮成高 MASCOT_ROWS 格，底部疊上名牌（語言標籤＋作者名）
+local MASCOT_FILE = 'dfhack-config/dflang-mascot-%s.png'
+local MASCOT_ROWS = 12
+local MASCOT_LABEL = '@MASCOT_LABEL@'
+local AUTHOR = '@AUTHOR@'
 
 local json = require('json')
 local scriptmanager = require('script-manager')
@@ -84,14 +89,20 @@ local function cell_size()
     return 16, 24
 end
 
-local function load_glyphs(engine, dir)
-    local chars = (read_file(dir .. 'glyphs.txt') or ''):match('^([^\n]*)')
-    if not chars or chars == '' then return nil, 'glyphs.txt 是空的' end
+-- 本包的字型檔，檔名開頭的序號就是補字順序
+local function font_files(dir)
     local fonts = {}
     for _, name in ipairs(dfhack.filesystem.listdir(dir .. 'fonts') or {}) do
         if name:match('%.[ot]tf$') then table.insert(fonts, dir .. 'fonts/' .. name) end
     end
-    table.sort(fonts) -- 檔名開頭的序號就是補字順序
+    table.sort(fonts)
+    return fonts
+end
+
+local function load_glyphs(engine, dir)
+    local chars = (read_file(dir .. 'glyphs.txt') or ''):match('^([^\n]*)')
+    if not chars or chars == '' then return nil, 'glyphs.txt 是空的' end
+    local fonts = font_files(dir)
     local w, h = cell_size()
     local png = ATLAS_FILE:format(LANG)
     local tiles, missing = engine.render_atlas(png, w, h, chars, fonts)
@@ -120,6 +131,20 @@ local function attach_hooks(engine, dir)
         if not ok then return nil, err end
     end
     return true
+end
+
+-- 吉祥物圖不是必要的；讀不到就略過，翻譯照常啟用
+local function load_mascot(engine, dir)
+    local src = dir .. 'mascot.png'
+    if not dfhack.filesystem.isfile(src) then return nil end
+    local w, h = cell_size()
+    local png = MASCOT_FILE:format(LANG)
+    local cols, err = engine.render_mascot(src, png, w, h, MASCOT_ROWS, MASCOT_LABEL, AUTHOR, font_files(dir))
+    if not cols then
+        fail('吉祥物圖片讀取失敗：%s', err)
+        return nil
+    end
+    return {handles = dfhack.textures.loadTileset(png, w, h, true), cols = cols}
 end
 
 local function start()
@@ -171,7 +196,8 @@ local function start()
     end
 
     local first = dfhack.textures.getTexposByHandle(handles[1])
-    dfhack.BASE_G.DFLANG = {engine = engine, lang = LANG, dir = dir, config = CONFIG_FILE}
+    dfhack.BASE_G.DFLANG = {engine = engine, lang = LANG, dir = dir, config = CONFIG_FILE,
+                            mascot = load_mascot(engine, dir)}
     -- 字圖放在 DFHack 的保留範圍，texpos 不會變；保留範圍不夠時 DFHack 會改用動態範圍，遊戲重載貼圖後要重查
     dfhack.onStateChange.dflang = function(sc)
         if sc ~= SC_VIEWSCREEN_CHANGED and sc ~= SC_WORLD_LOADED and sc ~= SC_WORLD_UNLOADED then return end
@@ -185,3 +211,36 @@ end
 
 local ok, err = pcall(start)
 if not ok then fail('啟動失敗：%s', err) end
+
+-- DFHack overlay 會掃描所有模組腳本的 OVERLAY_WIDGETS；玩家可在 gui/overlay 移動或關閉這個圖示。
+-- 兩包都裝時兩個小工具都會註冊，只有被選用的那包畫圖。
+local overlay = require('plugins.overlay')
+
+MascotOverlay = defclass(MascotOverlay, overlay.OverlayWidget)
+MascotOverlay.ATTRS{
+    desc = 'DFLang 中文化吉祥物，顯示在標題畫面左下角。',
+    default_pos = {x = 21, y = -5},
+    default_enabled = true,
+    viewscreens = 'title/Default',
+    frame = {w = 16, h = MASCOT_ROWS},
+}
+
+-- 畫在頂層（screentexpos_top）：主層有貼圖的格子會先填底色，圖片透明處會變成黑框；頂層直接疊在標題背景上。
+-- 標題畫面本來沒開頂層，要設 top_in_use；遊戲每幀會清空頂層，離開標題畫面後不會殘留。
+function MascotOverlay:onRenderBody()
+    local state = dfhack.BASE_G.DFLANG
+    local mascot = state and state.lang == LANG and state.mascot
+    if not mascot then return end
+    local gps, rect = df.global.gps, self.frame_rect
+    gps.top_in_use = true
+    for i, handle in ipairs(mascot.handles) do
+        local x, y = rect.x1 + (i - 1) % mascot.cols, rect.y1 + (i - 1) // mascot.cols
+        if x < gps.dimx and y < gps.dimy then
+            local index = x * gps.dimy + y
+            gps.screentexpos_top[index] = dfhack.textures.getTexposByHandle(handle)
+            gps.screentexpos_top_flag[index] = 0
+        end
+    end
+end
+
+OVERLAY_WIDGETS = {mascot = MascotOverlay}

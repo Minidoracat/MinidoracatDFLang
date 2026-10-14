@@ -14,6 +14,10 @@
 - 思源黑體（Source Han Sans）的 Google 發行版 Noto Sans CJK TC／SC Medium，© Adobe，SIL Open Font License 1.1。
 - 工作坊包內附的字型（`dflang/fonts/`）是只留本包用字的子集；遊戲啟動時引擎依當下文字格大小把它畫成字圖集。授權全文見 `dflang/LICENSE-fonts.txt`。
 
+## 吉祥物
+
+- 標題畫面左下角的貓娘是 Minidoracat 的角色，以 AI 影像模型依原有角色設定繪製成 Q 版（`art/mascot.png`、包內 `dflang/mascot.png`）。© Minidoracat，保留所有權利。
+
 ## 翻譯參考
 
 - [矮人要塞中文維基](https://dfzh.huijiwiki.com/)翻譯組的簡體中文翻譯資料（CC BY-NC 4.0）。本 MOD 的譯文逐句自行翻譯；術語選擇參考其譯名的條目，在 `glossary/terms.tsv` 的 `ref` 欄標為 `dfzh-wiki`。本 MOD 未收錄、也不散布其資料。

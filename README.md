@@ -16,6 +16,8 @@
 
 不能和 DFI18n、dfzh 等其他翻譯引擎同時使用，偵測到時本 MOD 不啟動。`dflang status` 查看狀態。
 
+標題畫面左下角會出現本 MOD 的貓娘吉祥物和「繁體中文／简体中文」名牌。要移動或關掉，在 DFHack 主控台輸入 `gui/overlay`，找 `dflang_zh_hant.mascot`（簡中包是 `dflang_zh_hans.mascot`）。
+
 ## 運作方式
 
 ```mermaid
@@ -33,6 +35,7 @@ flowchart LR
 - 中文字由遊戲自己的繪圖流程畫出：每個中文字佔兩格，字圖在遊戲啟動時依當下的文字格大小從思源黑體（Noto Sans CJK Medium）畫成，套用字型的 hinting，縮放不會糊。
 - 遊戲執行時拼出的句子（名字、數字、隨機字詞）用句型規則翻譯，例如 `Histories of {1} and {2}` →「{1}與{2}的歷史」。
 - 函式位置用 `engine/patterns.tsv` 的特徵碼尋找，由 `scripts/make_patterns.py` 從遊戲執行檔產生；遊戲改版時重產即可。
+- 標題畫面的吉祥物是 DFHack overlay 小工具：引擎啟動時把 `art/mascot.png` 縮成當下的格子大小、疊上名牌，畫在畫面頂層，透明處看得到標題背景。
 
 ## 目錄
 
@@ -40,6 +43,7 @@ flowchart LR
 data/strings/*.tsv         整句譯文：en, zh-Hant, zh-Hans, align, note（規則見 docs/translation-guide.md）
 data/rules/*.tsv           句型規則：同上，en 含 {1}～{9} 佔位
 glossary/terms.tsv         術語表；locale.tsv 兩岸用語規則
+art/mascot.png             標題畫面吉祥物（透明背景 RGBA PNG；名牌文字由引擎在遊戲裡畫）
 engine/                    Rust 引擎（cdylib dflang.dll）與特徵碼 patterns.tsv
 lua/                       DFHack 載入器範本與 dflang 指令
 scripts/
@@ -79,5 +83,6 @@ uv run scripts/dev_game.py down               # 關遊戲、還原 mods/ 與設�
 
 - 譯文與術語表（`data/`、`glossary/`）：[CC BY 4.0](LICENSE-CC-BY-4.0.txt)。轉載或改作請註明出處。
 - 其餘程式與文件：[MIT](LICENSE)。
+- 吉祥物圖（`art/`）：© Minidoracat，保留所有權利，不在上述授權範圍內。
 - 字型：思源黑體（Noto Sans CJK TC／SC Medium），SIL Open Font License 1.1，工作坊包內附授權全文。
 - 致謝與參考來源見 [CREDITS.md](CREDITS.md)。

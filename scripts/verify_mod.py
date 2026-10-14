@@ -13,10 +13,11 @@
 5. 寬度：譯文格數不超過原文（CP437 字一格，其他字兩格），超出會蓋到旁邊的介面；句型只算樣板本身，
    佔位填入後超寬的情況由引擎在執行時退回英文
 6. 文字檔 UTF-8、無 BOM、LF（遊戲端逐位元組讀，BOM 與 \\r 會黏進原文或譯文）
-7. 字型：每種語言譯文用到的非 CP437 字，主字型或補字字型（temp/fonts/）至少一份有
-8. scripts/workshop.json：繁、簡各一項；ID、名稱、說明只用 ASCII（DF 以 CP437 讀 info.txt）
-9. engine/patterns.tsv 有引擎要 hook 的四個函式
-10. dist/ 已建置時：每包檔案齊全、沒有雜檔，且字典、句型與 data/ 一致（沒建置則略過）
+7. 字型：每種語言譯文與吉祥物名牌（語言標籤、作者名）用到的字，主字型或補字字型（temp/fonts/）至少一份有
+8. 吉祥物：art/mascot.png 是 8-bit RGBA PNG（引擎只讀這種）；每包的 mascot_label 是全形字
+9. scripts/workshop.json：繁、簡各一項；ID、名稱、說明、作者只用 ASCII（DF 以 CP437 讀 info.txt）
+10. engine/patterns.tsv 有引擎要 hook 的四個函式
+11. dist/ 已建置時：每包檔案齊全、沒有雜檔，且字典、句型與 data/ 一致（沒建置則略過）
 """
 import re
 import sys
@@ -30,7 +31,7 @@ from cp437 import BYTE_OF, cells, encodable
 ROOT = Path(__file__).resolve().parents[1]
 HEADER = ["en", "zh-Hant", "zh-Hans", "align", "note"]
 HOOKS = ("addst", "addst_flag", "top_addst", "addcoloredst")
-PACKAGE_SUFFIXES = {".txt", ".tsv", ".lua", ".dll", ".otf", ".md"}
+PACKAGE_SUFFIXES = {".txt", ".tsv", ".lua", ".dll", ".otf", ".md", ".png"}
 PLACEHOLDER = re.compile(r"\{[1-9]\}")
 KINDS = ("strings", "rules")
 
@@ -125,11 +126,20 @@ def main() -> int:
             continue
         cmaps = [TTFont(f).getBestCmap() for f in fonts]
         used = {c for r in rows for c in r[item["lang"]] if c not in BYTE_OF}
+        used |= set(item.get("mascot_label", "") + config["author"]) - {" "}  # 名牌由引擎用字型畫，英數也要有
         missing = sorted(c for c in used if not any(ord(c) in cmap for cmap in cmaps))
-        check(not missing, f"{item['lang']} 字型涵蓋 {len(used)} 個字", missing)
+        check(not missing, f"{item['lang']} 字型涵蓋 {len(used)} 個字（含吉祥物名牌）", missing)
+
+    mascot = ROOT / "art/mascot.png"
+    with mascot.open("rb") as fh:  # PNG IHDR：寬、高各 4 bytes，再來是 bit depth 與 color type
+        head = fh.read(26)
+    rgba8 = head[:8] == b"\x89PNG\r\n\x1a\n" and head[24] == 8 and head[25] == 6
+    labels = [f"{item['lang']}: {item.get('mascot_label')!r}" for item in config["items"]
+              if not item.get("mascot_label") or any(c in BYTE_OF for c in item["mascot_label"])]
+    check(rgba8 and not labels, "art/mascot.png 是 8-bit RGBA PNG；每包都有全形字的 mascot_label", labels)
 
     meta = [f"{item['lang']}.{k}" for item in config["items"] for k in ("id", "name", "description")
-            if not item[k].isascii()]
+            if not item[k].isascii()] + ([] if config["author"].isascii() and config["author"] else ["author"])
     check(sorted(langs) == ["zh-Hans", "zh-Hant"] and not meta, "workshop.json 繁簡各一項、info.txt 欄位為 ASCII", meta)
 
     patterns = {line.split("\t")[0] for line in (ROOT / "engine/patterns.tsv").read_text(encoding="utf-8").splitlines()
@@ -144,7 +154,7 @@ def main() -> int:
         suffix = item["lang"].lower().replace("-", "_")
         required = ["info.txt", f"scripts_modinstalled/dflang_{suffix}.lua", "scripts_modinstalled/dflang.lua",
                     "dflang/dflang.dll", "dflang/strings.tsv", "dflang/rules.tsv", "dflang/glyphs.txt", "dflang/patterns.tsv",
-                    "dflang/LICENSE.txt", "dflang/LICENSE-fonts.txt", "dflang/CREDITS.md"]
+                    "dflang/LICENSE.txt", "dflang/LICENSE-fonts.txt", "dflang/CREDITS.md", "dflang/mascot.png"]
         lacking = [p for p in required if not (out / p).is_file()] + ([] if list((out / "dflang/fonts").glob("*.otf")) else ["dflang/fonts/*.otf"])
         stray = [p.relative_to(out).as_posix() for p in out.rglob("*") if p.is_file() and p.suffix not in PACKAGE_SUFFIXES]
         stale = []

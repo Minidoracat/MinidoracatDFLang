@@ -5,6 +5,7 @@
 //! set_layout → render_atlas → set_glyphs → load → scan/attach → enable。
 
 mod atlas;
+mod image;
 mod cp437;
 mod dict;
 mod hooks;
@@ -31,6 +32,7 @@ pub unsafe extern "C" fn luaopen_dflang(l: lua::State) -> c_int {
         lua::new_table(l);
         lua::set_fn(l, c"set_layout", set_layout);
         lua::set_fn(l, c"render_atlas", render_atlas);
+        lua::set_fn(l, c"render_mascot", render_mascot);
         lua::set_fn(l, c"set_glyphs", set_glyphs);
         lua::set_fn(l, c"load", load);
         lua::set_fn(l, c"load_rules", load_rules);
@@ -122,6 +124,41 @@ unsafe extern "C" fn render_atlas(l: lua::State) -> c_int {
                 lua::push_int(l, report.tiles as i64);
                 lua::push_str(l, &report.missing.iter().collect::<String>());
                 2
+            }
+            Err(e) => fail(l, &e),
+        }
+    }
+}
+
+/// render_mascot(來源 PNG, 輸出 PNG, 格寬, 格高, 高幾格, 語言標籤, 作者名, {字型路徑...}) → 寬幾格
+/// 標題畫面吉祥物：縮成整格大小，底部疊上名牌（名牌文字用和字圖集相同的 hinting 點陣化）。
+unsafe extern "C" fn render_mascot(l: lua::State) -> c_int {
+    unsafe {
+        let (Some(src), Some(out), Some(cell_w), Some(cell_h), Some(rows), Some(label), Some(credit)) = (
+            lua::arg_str(l, 1),
+            lua::arg_str(l, 2),
+            lua::arg_int(l, 3),
+            lua::arg_int(l, 4),
+            lua::arg_int(l, 5),
+            lua::arg_str(l, 6),
+            lua::arg_str(l, 7),
+        ) else {
+            return fail(l, "render_mascot: expects (src, out, cell_w, cell_h, rows, label, credit, fonts)");
+        };
+        if lua::arg_type(l, 8) != lua::TTABLE || cell_w < 1 || cell_h < 1 || rows < 2 {
+            return fail(l, "render_mascot: bad cell size, rows or font list");
+        }
+        let paths: Option<Vec<String>> = (1..=lua::len(l, 8) as i64).map(|i| lua::index_str(l, 8, i)).collect();
+        let Some(paths) = paths else { return fail(l, "render_mascot: font paths must be strings") };
+        let paths: Vec<&str> = paths.iter().map(String::as_str).collect();
+        let (src, out) = (std::path::Path::new(src), std::path::Path::new(out));
+        let result = atlas::load_fonts(&paths).and_then(|fonts| {
+            image::mascot(src, out, cell_w as usize, cell_h as usize, rows as usize, label, credit, &fonts)
+        });
+        match result {
+            Ok(cols) => {
+                lua::push_int(l, cols as i64);
+                1
             }
             Err(e) => fail(l, &e),
         }
