@@ -94,6 +94,8 @@ enum Out {
 
 /// 時間、原因助詞：佔位譯文已經以這些字結尾時，`{n+時}` 不再補字（介系詞片語「經歷創傷後」「在衝突中」「因…而」本身就帶）。
 const PARTICLES: &str = "時时後后中而間间前際际近地";
+/// `{n+色}`：顏色當述語時補「色」（金→金色、深黃褐→深黃褐色），譯文已經以「色」結尾就不補。
+const COLOR: &str = "色";
 
 pub struct Rule {
     pattern: Vec<Seg>,
@@ -189,7 +191,7 @@ impl Rule {
     /// 原文樣板必須能轉成 CP437、每個佔位只出現一次、佔位不能相鄰（相鄰時切點不唯一），也不能帶補字；
     /// 譯文每個佔位最多用一次，而且都要是原文有的；原文的佔位除了 `{@n}`、`{~n}` 都要用到（譯文裡的 `#`、`@`、`%`、`~` 寫不寫都可以）。
     /// `{@n}` 可以不寫：中文常省略重複的主詞（「他深受感動，卻因不喜歡大自然而困擾」不必再寫一次「他」）。
-    /// 譯文的 `{n+時}`：佔位譯文後面補「時」，但譯文已經以時間、原因助詞（PARTICLES）結尾就不補。
+    /// 譯文的 `{n+時}`：佔位譯文後面補「時」，但譯文已經以時間、原因助詞（PARTICLES）結尾就不補；`{n+色}` 已經以「色」結尾就不補。
     fn parse(en: &str, zh: &str, align: &str) -> Option<Rule> {
         let mut pattern: Vec<Seg> = Vec::new();
         for part in split_placeholders(en, cp437::encode)? {
@@ -285,6 +287,18 @@ fn match_at(segs: &[Seg], text: &[u8], pos: usize, caps: &mut [(usize, usize); 9
 /// 句界：句末標點（. ! ? "）後面連續兩個空白，k 是第一個空白。遊戲拼段落時句間空兩格。
 fn is_boundary(text: &[u8], k: usize) -> bool {
     k > 0 && text[k] == b' ' && text.get(k + 1) == Some(&b' ') && b".!?\"".contains(&text[k - 1])
+}
+
+/// 樣板固定字的顏色位置：夾在兩個佔位之間、這兩個佔位在原文裡也相鄰時，用原文兩者之間那段字的位置
+/// （「笨拙、虛弱」的「、」對應原文紅色的「 and 」）；其餘用句首（0）。
+fn literal_at(output: &[Out], p: usize, caps: &[(usize, usize); 9]) -> usize {
+    let cap = |o: &Out| match o {
+        Out::Cap(i, _) => Some(*i),
+        Out::Text(_) => None,
+    };
+    let (Some(i), Some(j)) = (output[..p].iter().rev().find_map(cap), output[p + 1..].iter().find_map(cap)) else { return 0 };
+    let (end, next) = (caps[i].1, caps[j].0);
+    if end <= next && !caps.iter().any(|&(s, _)| end <= s && s < next) { end } else { 0 }
 }
 
 #[derive(Default)]
@@ -562,9 +576,9 @@ impl Dict {
             let mut out = Pieces::new();
             let mut translated = false;
             let mut all_clean = true;
-            for part in &rule.output {
+            for (p, part) in rule.output.iter().enumerate() {
                 match part {
-                    Out::Text(t) => out.push((t.clone(), 0)),
+                    Out::Text(t) => out.push((t.clone(), literal_at(&rule.output, p, &caps))),
                     Out::Cap(i, extra) => {
                         let (start, end) = caps[*i];
                         let from = out.len();
@@ -581,7 +595,8 @@ impl Dict {
                             }
                         }
                         let last = out[from..].iter().rev().find_map(|(t, _)| t.chars().last());
-                        if !extra.is_empty() && !last.is_some_and(|c| PARTICLES.contains(c)) {
+                        let skip = if extra == COLOR { COLOR } else { PARTICLES };
+                        if !extra.is_empty() && !last.is_some_and(|c| skip.contains(c)) {
                             out.push((extra.clone(), start));
                         }
                     }
@@ -940,5 +955,14 @@ mod tests {
         d.load_tsv("plump helmets\t肉盔菇\n");
         assert_eq!(d.translate_text(b"Urist has stolen plump helmets [5]!").as_deref(), Some("Urist偷走了肉盔菇 [5]！"),
                    "{{%2}} 只收乾淨的譯文：數字照抄不算半中半英");
+    }
+
+    #[test]
+    fn color_suffix_is_added_only_when_the_color_lacks_one() {
+        let mut d = dict("{@1} hair is {%2}.\t{1}的頭髮是{2+色}。\n");
+        d.load_tsv("her\t她\ngold\t金\ndark tan\t深黃褐\nred\t紅色\n");
+        assert_eq!(d.translate_text(b"Her hair is gold.").as_deref(), Some("她的頭髮是金色。"));
+        assert_eq!(d.translate_text(b"Her hair is dark tan.").as_deref(), Some("她的頭髮是深黃褐色。"));
+        assert_eq!(d.translate_text(b"Her hair is red.").as_deref(), Some("她的頭髮是紅色。"), "已經有「色」就不再補");
     }
 }

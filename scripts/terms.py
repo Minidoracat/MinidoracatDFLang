@@ -8,7 +8,7 @@ check：
   1. glossary/terms.tsv 格式；同一英文術語（不分大小寫）同類別不重複
   2. 術語一致：原文含術語（整詞、可帶複數 s/es）時，譯文必須含該術語的譯名（多個譯名以 | 分隔，含其一即可）
      approved 不符 → FAIL；draft 不符 → WARN（draft 是代理提案，使用者確認後改 approved）
-     同字不同義的列在 note 寫「術語例外：pet」（多個用、分隔），該列不檢查那個術語（動詞 pet 撫摸、嬰兒語 Bin...）
+    同字不同義的列在 note 寫「術語例外：pet」（多個用、分隔），該列不檢查那個術語（動詞 pet 撫摸、嬰兒語 Bin...）；兩岸用語的 avoid 字詞也一樣（软体动物的「软体」）
   3. 兩岸用語：glossary/locale.tsv 的 avoid 字詞出現在該語言譯文 → level=error 為 FAIL、warn 為 WARN
   4. 字形混用：繁中譯文含簡化字、簡中譯文含繁體字 → WARN（OpenCC 只拿來偵測，不產生或改寫譯文）
 impact <英文術語>：列出原文含該術語的條目，改譯名前先看會影響哪些句子
@@ -76,7 +76,7 @@ def check() -> int:
     for rule in locale:
         for r in rows:
             text = r[rule["lang"]]
-            if text and rule["avoid"] in text:
+            if text and rule["avoid"] in text and rule["avoid"].lower() not in exempt(r):
                 msg = f"{r['file']} {r['en']!r} [{rule['lang']}] 用了「{rule['avoid']}」，建議「{rule['use']}」：{text}"
                 (fails if rule["level"] == "error" else warns).append(msg)
 

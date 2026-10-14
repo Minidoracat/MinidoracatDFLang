@@ -8,7 +8,7 @@
 輸入
 - 最新快照的 exe/strings.tsv（執行檔字串）與 raws_text.tsv（raws、TEXT_SET、程序生成 Lua）
 - 實機未翻譯紀錄：temp/misses/*.tsv（dev_game.py down 另存）與遊戲目錄 dfhack-config/dflang-misses.tsv
-- 已翻譯：data/strings（整句，原文完全相同）、data/screens（依畫面的整句）與 data/rules（句型，整句符合樣板）
+- 已翻譯：data/screens（依畫面的整句），以及引擎翻得出來的字串（離線工具 t 的 -s 模式：整句、句型，整段查不到就逐句查；繁簡都要翻得出來）
 
 輸出（temp/inventory/，不進 git：內容是遊戲原文）
 - summary.txt：各類的數量、已翻、實機看過
@@ -22,6 +22,7 @@
 """
 import csv
 import re
+import subprocess
 import sys
 from collections import Counter
 from pathlib import Path
@@ -30,7 +31,7 @@ from dfpaths import DF, latest_snapshot
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "temp/inventory"
-PLACEHOLDER = re.compile(r"\\\{(\\\#|@|%|\\~|~)?([1-9])\\\}")  # 已經 re.escape 過的 {1}／{#1}／{@1}／{%1}／{~1}（{%1}、{~1} 盤點時當任意片段）
+T = ROOT / "engine/target/release/examples/t.exe"
 CODE = re.compile(r"::|%[-+ #0-9.]*[sdifxXcpul]|\\|/|\.(txt|png|lua|dll|ttf|otf|wav|ogg|mp3|json|ini|exe|bmp)\b|\b0x|\(\)"
                   r"|^[A-Za-z]+_[A-Za-z0-9_]+$|^[a-z]+[A-Z][A-Za-z]*$|^[A-Z][a-z]+[A-Z][A-Za-z]*$")
 # 執行期錯誤、除錯訊息：玩家幾乎看不到，排最後
@@ -83,22 +84,21 @@ def main() -> int:
         return 1
 
     words = {r["en"] for p in sorted((ROOT / "data/strings").glob("*.tsv")) for r in read_tsv(p)}
-    done = words | {r["en"] for p in sorted((ROOT / "data/screens").glob("*.tsv")) for r in read_tsv(p)}
-    kinds = {"\\#": r"(-?[\d,]+)"}  # {#1} 數字；{@1} 先當任意片段，比對後再查字典
-    rules = []
-    for p in sorted((ROOT / "data/rules").glob("*.tsv")):
-        for r in read_tsv(p):
-            pattern = re.escape(r["en"])
-            at = [i + 1 for i, m in enumerate(PLACEHOLDER.finditer(pattern)) if m.group(1) == "@"]
-            rules.append((re.compile(PLACEHOLDER.sub(lambda m: kinds.get(m.group(1), "(.+?)"), pattern) + r"\Z"), at))
+    done = {r["en"] for p in sorted((ROOT / "data/screens").glob("*.tsv")) for r in read_tsv(p)}
 
     def named(text: str) -> bool:
         """引擎的整句查詞與 {@n}：查整句字典，含大寫時退回全部小寫的寫法（全大寫的不退）"""
         return text in words or text != text.lower() and text != text.upper() and text.lower() in words
 
-    def translated(text: str) -> bool:
-        return text in done or named(text) or any(
-            (m := rule.match(text)) and all(named(m.group(i)) for i in at) for rule, at in rules)
+    def engine_ok(texts: list[str]) -> set[str]:
+        """引擎翻得出來的原文。用引擎本身判斷：句型的清單、冠詞外框只在佔位裡套用這類規則，Python 仿寫會漏"""
+        subprocess.run(["cargo", "build", "--release", "-q", "--manifest-path", str(ROOT / "engine/Cargo.toml"), "--example", "t"], check=True)
+        lines = "\n".join(t.replace("\n", " ") for t in texts)
+        ok = set(texts)
+        for lang in ("zh-Hant", "zh-Hans"):
+            out = subprocess.run([T, lang, "-s"], input=lines, capture_output=True, text=True, encoding="utf-8", check=True).stdout.split("\n")
+            ok &= {t for t, o in zip(texts, out) if not o.startswith("缺：")}
+        return ok
 
     # 實機紀錄：依時間順序保留第一次看到的樣子（同一畫面的字串會相鄰）。沒翻譯的段落整段記一筆（mtb），
     # 段落裡的單字由引擎照畫英文、不記
@@ -123,6 +123,11 @@ def main() -> int:
         kind = "language" if word else "raws-name" if r["token"] in RAWS_NAMES else "raws-prose" if r["token"] in RAWS_PROSE else "raws-other"
         for part in raws_parts(r):
             items.setdefault(part, (kind, f"{r['object'] or r['file']} {r['token']}"))
+
+    ok = engine_ok([t for t in {*items, *seen} if t and t not in done])
+
+    def translated(text: str) -> bool:
+        return text in done or text in ok
 
     stats: dict[str, Counter] = {}
     todo = []
@@ -157,7 +162,7 @@ def main() -> int:
     with (OUT / "fallback.tsv").open("w", encoding="utf-8", newline="\n") as fh:
         fh.write("text\tname\n")
         fh.writelines(f"{t}\t{t.lower()}\n" for t, (kind, _) in items.items()
-                      if kind not in ("raws-name", "language", "raws-prose", "raws-other") and t not in done and named(t))
+                      if kind not in ("raws-name", "language", "raws-prose", "raws-other") and t not in words and t not in done and named(t))
     lines = [f"快照 {snap.name}；實機紀錄 {len(logs)} 份、{len(seen)} 種字串",
              f"{'分類':<12}{'總數':>8}{'已翻':>8}{'實機看過':>10}"]
     for kind, st in sorted(stats.items(), key=lambda kv: -kv[1]["total"]):

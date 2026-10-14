@@ -14,7 +14,7 @@
 4. 開頭空白：譯文開頭的空白數與原文相同（那是遊戲的縮排）
 5. 寬度：譯文格數不超過原文（CP437 字一格，其他字兩格），超出會蓋到旁邊的介面；句型只算樣板本身，
    佔位填入後超寬的情況由引擎在執行時退回英文。名稱檔（strings/names_*.tsv）至少可用 6 格：
-   短英文名（ogre、hydra、kiwi）的通行中文名多半是三個字。sentences_*、ann_*、speech_*、combat_*.tsv 不限：人物頁、訪客說明、公告、說話句與戰報由引擎依框寬重新換行
+   短英文名（ogre、hydra、kiwi）的通行中文名多半是三個字。sentences_*、ann_*、speech_*、combat_*、desc_*、health_*.tsv 不限：人物頁、訪客說明、公告、說話句、戰報、外觀與健康由引擎依框寬重新換行
 6. 文字檔 UTF-8、無 BOM、LF（遊戲端逐位元組讀，BOM 與 \\r 會黏進原文或譯文）
 7. 字型：每種語言譯文與吉祥物名牌（語言標籤、作者名）用到的字，主字型或補字字型（temp/fonts/）至少一份有
 8. 吉祥物：art/mascot.png 是 8-bit RGBA PNG（引擎只讀這種）；每包的 mascot_label 是全形字
@@ -124,15 +124,15 @@ def main() -> int:
               if r[lang] and leading_spaces(r[lang]) != leading_spaces(r["en"])]
     check(not indent, "譯文開頭空白與原文相同", indent)
     def room(r: dict) -> int | None:
-        """譯文最多幾格；None 是不限：sentences_*、ann_*、speech_*、combat_* 是人物頁、訪客說明、公告、說話句與戰報，引擎依框寬重新換行"""
-        if r["file"].split("/")[1].startswith(("sentences_", "ann_", "speech_", "combat_")):
+        """譯文最多幾格；None 是不限：sentences_*、ann_*、speech_*、combat_*、desc_*、health_* 由引擎依框寬重新換行"""
+        if r["file"].split("/")[1].startswith(("sentences_", "ann_", "speech_", "combat_", "desc_", "health_")):
             return None
         en = cells(template(r["en"]))
         return max(en, 6) if r["file"].startswith("strings/names_") else en
 
     wide = [f"{r['file']}: {r['en']!r} [{lang}] {cells(template(r[lang]))}>{room(r)}"
             for r in rows for lang in langs if r[lang] and room(r) is not None and cells(template(r[lang])) > room(r)]
-    check(not wide, "譯文格數不超過原文（sentences_*、ann_*、speech_*、combat_* 不限）", wide)
+    check(not wide, "譯文格數不超過原文（sentences_*、ann_*、speech_*、combat_*、desc_*、health_* 不限）", wide)
     marks = [f"{r['file']}: {r['en'][:60]!r} [{lang}]" for r in rows for lang in langs
              if r[lang] and sorted(MARKUP.findall(r[lang])) != sorted(MARKUP.findall(r["en"]))]
     check(not marks, "段落標記（[R]、[B]、[P]、[C:…]）與原文一致", marks)

@@ -75,10 +75,12 @@ pub struct Block {
 }
 
 /// `[C:前景:背景:亮度]` 開頭時回傳 (顏色位元組, 標記長度)。原文是 CP437 位元組，不一定是 UTF-8，所以逐位元組讀。
+/// 遊戲偶爾多拼一個冒號（病歷的 `[C:7:0:0:]`），遊戲照樣當成換色，這裡也收。
 fn color_marker(rest: &[u8]) -> Option<(u8, usize)> {
     let body = rest.strip_prefix(b"[C:")?;
     let end = body.iter().take(12).position(|&c| c == b']')?;
-    let mut nums = body[..end].split(|&c| c == b':').map(|n| std::str::from_utf8(n).ok()?.parse::<u8>().ok());
+    let fields = body[..end].strip_suffix(b":").unwrap_or(&body[..end]);
+    let mut nums = fields.split(|&c| c == b':').map(|n| std::str::from_utf8(n).ok()?.parse::<u8>().ok());
     let color = [nums.next()??, nums.next()??, nums.next()??];
     nums.next().is_none().then_some((color_byte(color), end + 4))
 }
@@ -233,6 +235,8 @@ mod tests {
         assert_eq!(b[0].colors[0], 7 + 64);
         assert_eq!(b[0].colors[9], 2 + 64, "joy 是 [C:2:0:1]");
         assert!(!b[1].blank_before && b[2].blank_before);
+        let odd = blocks(b"[C:7:0:0:]Diagnosed with fever", 7);
+        assert_eq!(odd[0].text, b"Diagnosed with fever", "遊戲多拼冒號的標記也要去掉");
     }
 
     #[test]
@@ -242,6 +246,15 @@ mod tests {
         assert_eq!(zh, "[C:7:0:1]他在衝突中感到[C:2:0:1]喜悅[C:7:0:1]。");
         let two = translate(b"[C:7:0:1]He feels [C:2:0:1]joy [C:7:0:1]while in conflict.  He is slow to anger.", 7, &d).unwrap();
         assert!(two.ends_with("。他很慢才生氣。"), "{two}");
+    }
+
+    #[test]
+    fn a_literal_between_neighbouring_captures_takes_the_color_between_them() {
+        let mut d = Dict::default();
+        d.load_tsv("he\t他\nclumsy\t笨拙\nweak\t虛弱\n");
+        d.load_rules_tsv("{@1} is {@2} and {@3}.\t{1}{2}、{3}。\n");
+        let zh = translate(b"[C:7:0:1]He is [C:4:0:1]clumsy and weak.", 7, &d).unwrap();
+        assert_eq!(zh, "[C:7:0:1]他[C:4:0:1]笨拙、虛弱[C:7:0:1]。", "「、」對應原文紅色的 and，句末標點用句首的顏色");
     }
 
     #[test]

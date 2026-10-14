@@ -1,0 +1,132 @@
+en	zh-Hant	zh-Hans	align	note
+In traction	牽引中	牵引中		FUN_140479f40 健康分頁「狀態」
+Severe blood loss	嚴重失血	严重失血		FUN_140479f40 健康分頁「狀態」
+Moderate blood loss	中度失血	中度失血		FUN_140479f40 健康分頁「狀態」
+Slightly numb	輕微麻木	轻微麻木		FUN_140479f40 健康分頁「狀態」
+Partially numb	局部麻木	局部麻木		FUN_140479f40 健康分頁「狀態」
+Completely numb	完全麻木	完全麻木		FUN_140479f40 健康分頁「狀態」
+Slight fever	輕微發燒	轻微发烧		FUN_140479f40 健康分頁「狀態」
+Moderate fever	中度發燒	中度发烧		FUN_140479f40 健康分頁「狀態」
+Serious fever	嚴重發燒	严重发烧		FUN_140479f40 健康分頁「狀態」
+Slight pain	輕微疼痛	轻微疼痛		FUN_140479f40 健康分頁「狀態」
+Moderate pain	中度疼痛	中度疼痛		FUN_140479f40 健康分頁「狀態」
+Cannot breathe	無法呼吸	无法呼吸		FUN_140479f40 健康分頁「狀態」
+Trouble breathing	呼吸困難	呼吸困难		FUN_140479f40 健康分頁「狀態」
+Vision lost	失明	失明		FUN_140479f40 健康分頁「狀態」
+Vision impaired	視力受損	视力受损		FUN_140479f40 健康分頁「狀態」
+Vision somewhat impaired	視力稍微受損	视力略微受损		FUN_140479f40 健康分頁「狀態」
+Ability to stand lost	無法站立	无法站立		FUN_140479f40 健康分頁「狀態」
+Ability to stand somewhat impaired	站立能力稍微受損	站立能力略微受损		FUN_140479f40 健康分頁「狀態」
+Ability to grasp lost	無法抓握	无法抓握		FUN_140479f40 健康分頁「狀態」
+Ability to grasp somewhat impaired	抓握能力稍微受損	抓握能力略微受损		FUN_140479f40 健康分頁「狀態」
+Ability to fly lost	無法飛行	无法飞行		FUN_140479f40 健康分頁「狀態」
+Ability to fly somewhat impaired	飛行能力稍微受損	飞行能力略微受损		FUN_140479f40 健康分頁「狀態」
+Motor nerve damage	運動神經受損	运动神经受损		FUN_140479f40 健康分頁「狀態」
+Sensory nerve damage	感覺神經受損	感觉神经受损		FUN_140479f40 健康分頁「狀態」
+Diagnosis required	需要診斷	需要诊断		FUN_140479f40 健康分頁「治療」
+Crutch required	需要拐杖	需要拐杖		FUN_140479f40 健康分頁「治療」
+.Rotten -- inoperable	.壞死，無法手術	.坏死，无法手术		FUN_140479f40 健康分頁「治療」；開頭的 . 是遊戲原字，照留
+.Needs cleaning	.需要清洗	.需要清洗		FUN_140479f40 健康分頁「治療」；開頭的 . 是遊戲原字，照留
+.Needs surgery	.需要手術	.需要手术		FUN_140479f40 健康分頁「治療」；開頭的 . 是遊戲原字，照留
+.Needs sutures	.需要縫合	.需要缝合		FUN_140479f40 健康分頁「治療」；開頭的 . 是遊戲原字，照留
+.Needs setting	.需要接骨	.需要接骨		FUN_140479f40 健康分頁「治療」；開頭的 . 是遊戲原字，照留
+.Needs dressing	.需要包紮	.需要包扎		FUN_140479f40 健康分頁「治療」；開頭的 . 是遊戲原字，照留
+.Needs traction	.需要牽引	.需要牵引		FUN_140479f40 健康分頁「治療」；開頭的 . 是遊戲原字，照留
+.Needs immobilization	.需要固定	.需要固定		FUN_140479f40 健康分頁「治療」；開頭的 . 是遊戲原字，照留
+No treatment scheduled	沒有排定的治療	没有安排的治疗		FUN_140479f40 健康分頁「治療」
+.Gelded	.已閹割	.已阉割		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Spilled	.內臟流出	.内脏流出		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Butchered	.已被屠宰	.已被屠宰		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Artery torn	.動脈撕裂	.动脉撕裂		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Major artery torn	.大動脈撕裂	.大动脉撕裂		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Bleeding	.出血	.出血		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Heavy bleeding	.大量出血	.大量出血		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Motor nerve severed	.運動神經斷裂	.运动神经断裂		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Sensory nerve severed	.感覺神經斷裂	.感觉神经断裂		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Strained tendon	.肌腱拉傷	.肌腱拉伤		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Bruised tendon	.肌腱挫傷	.肌腱挫伤		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Torn tendon	.肌腱撕裂	.肌腱撕裂		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Sprained ligament	.韌帶扭傷	.韧带扭伤		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Bruised ligament	.韌帶挫傷	.韧带挫伤		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Torn ligament	.韌帶撕裂	.韧带撕裂		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Dented	.凹陷	.凹陷		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Overlapping fracture	.重疊性骨折	.重叠性骨折		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Overlapping fracture (in traction)	.重疊性骨折（牽引中）	.重叠性骨折（牵引中）		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Compound fracture	.開放性骨折	.开放性骨折		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Cut open	.割開	.割开		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Smashed open	.砸開	.砸开		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Broken open	.破開	.破开		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Torn open	.撕開	.撕开		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Cut apart	.割斷	.割断		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Smashed apart	.砸碎	.砸碎		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Broken apart	.碎裂	.碎裂		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Torn apart	.撕碎	.撕碎		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Light bruising	.輕度瘀傷	.轻度瘀伤		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Moderate bruising	.中度瘀傷	.中度瘀伤		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Heavy bruising	.重度瘀傷	.重度瘀伤		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Minor burn	.輕度燒傷	.轻度烧伤		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Moderate burn	.中度燒傷	.中度烧伤		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Serious burn	.重度燒傷	.重度烧伤		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Minor frost-bite	.輕度凍傷	.轻度冻伤		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Moderate frost-bite	.中度凍傷	.中度冻伤		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Serious frost-bite	.重度凍傷	.重度冻伤		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Minor melting	.輕度熔化	.轻度熔化		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Moderate melting	.中度熔化	.中度熔化		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Serious melting	.重度熔化	.重度熔化		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Minor boiling	.輕度沸騰	.轻度沸腾		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Moderate boiling	.中度沸騰	.中度沸腾		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Serious boiling	.重度沸騰	.重度沸腾		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Minor freezing	.輕度凍結	.轻度冻结		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Moderate freezing	.中度凍結	.中度冻结		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Serious freezing	.重度凍結	.重度冻结		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Minor condensation	.輕度凝結	.轻度凝结		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Moderate condensation	.中度凝結	.中度凝结		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Serious condensation	.重度凝結	.重度凝结		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Minor rot	.輕度腐爛	.轻度腐烂		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Moderate rot	.中度腐爛	.中度腐烂		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Advanced rot	.嚴重腐爛	.严重腐烂		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Minor blistering	.輕度起水泡	.轻度起水泡		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Moderate blistering	.中度起水泡	.中度起水泡		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Serious blistering	.重度起水泡	.重度起水泡		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Minor pain	.輕微疼痛	.轻微疼痛		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Moderate pain	.中度疼痛	.中度疼痛		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Extreme pain	.劇烈疼痛	.剧烈疼痛		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Nausea	.噁心	.恶心		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Dizziness	.頭暈	.头晕		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Partial paralysis	.局部癱瘓	.局部瘫痪		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Some sluggishness	.有些遲緩	.有些迟缓		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Paralysis	.癱瘓	.瘫痪		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Slight numbness	.輕微麻木	.轻微麻木		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Partial numbness	.局部麻木	.局部麻木		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Complete numbness	.完全麻木	.完全麻木		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Minor swelling	.輕微腫脹	.轻微肿胀		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Moderate swelling	.中度腫脹	.中度肿胀		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Extreme swelling	.嚴重腫脹	.严重肿胀		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Slightly impaired function	.功能稍微受損	.功能略微受损		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Partially impaired function	.功能部分受損	.功能部分受损		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+.Function totally impaired	.功能完全喪失	.功能完全丧失		FUN_140479f40 健康分頁「傷勢」，部位名下一行；開頭的 . 是遊戲原字，照留
+Has been sutured	已縫合	已缝合		FUN_140479f40 健康分頁「傷勢」
+Infection	感染	感染		FUN_140479f40 健康分頁「傷勢」
+No wounds	沒有傷勢	没有伤势		FUN_140479f40 健康分頁「傷勢」
+No evaluated wounds	沒有已檢查的傷勢	没有已检查的伤势		FUN_140479f40 健康分頁「傷勢」
+---	---	---		FUN_140479f40 健康分頁「傷勢」：部位之間的分隔線，原樣
+No medical history	沒有病歷	没有病历		FUN_140479f40 健康分頁「病歷」
+Brought to rest	安置休養	安置休养		FUN_140479f40 健康分頁「病歷」，接在日期句型後
+Evaluated	接受檢查	接受检查		FUN_140479f40 健康分頁「病歷」，接在日期句型後
+Cleaned	清洗傷口	清洗伤口		FUN_140479f40 健康分頁「病歷」，接在日期句型後
+Bleeding stopped	止血	止血		FUN_140479f40 健康分頁「病歷」，接在日期句型後
+Placed in traction	進行牽引	进行牵引		FUN_140479f40 健康分頁「病歷」，接在日期句型後
+A murderous ghost.	嗜殺成性的鬼魂。	嗜杀成性的鬼魂。		FUN_1413daa50 健康分頁「描述」鬼魂說明（一句一條）
+A sadistic ghost.	以折磨人為樂的鬼魂。	以折磨人为乐的鬼魂。		FUN_1413daa50 健康分頁「描述」鬼魂說明（一句一條）
+A secretive poltergeist.	行蹤隱密的騷靈。	行踪隐秘的骚灵。		FUN_1413daa50 健康分頁「描述」鬼魂說明（一句一條）
+An energetic poltergeist.	精力旺盛的騷靈。	精力旺盛的骚灵。		FUN_1413daa50 健康分頁「描述」鬼魂說明（一句一條）
+An angry ghost.	憤怒的鬼魂。	愤怒的鬼魂。		FUN_1413daa50 健康分頁「描述」鬼魂說明（一句一條）
+A violent ghost.	暴戾的鬼魂。	暴戾的鬼魂。		FUN_1413daa50 健康分頁「描述」鬼魂說明（一句一條）
+A moaning spirit returned from the dead.	死而復返、不住呻吟的亡靈。	死而复返、不住呻吟的亡灵。		FUN_1413daa50 健康分頁「描述」鬼魂說明（一句一條）
+It will generally trouble one unfortunate at a time.	通常一次只糾纏一個倒楣鬼。	通常一次只纠缠一个倒霉鬼。		FUN_1413daa50 健康分頁「描述」鬼魂說明（一句一條）
+A howling spirit.	不停嚎叫的亡靈。	不停嚎叫的亡灵。		FUN_1413daa50 健康分頁「描述」鬼魂說明（一句一條）
+The ceaseless noise is making sleep difficult.	無休無止的嚎叫讓人難以入眠。	无休无止的嚎叫让人难以入眠。		FUN_1413daa50 健康分頁「描述」鬼魂說明（一句一條）
+A troublesome poltergeist.	惹人厭的騷靈。	惹人厌的骚灵。		FUN_1413daa50 健康分頁「描述」鬼魂說明（一句一條）
+A restless haunt, generally troubling past acquaintances and relatives.	不得安息的幽魂，通常糾纏生前的熟人與親屬。	不得安息的幽魂，通常纠缠生前的熟人和亲属。		FUN_1413daa50 健康分頁「描述」鬼魂說明（一句一條）
+A forlorn haunt, seeking out known locations or drifting around the place of death.	孤寂的幽魂，會尋訪生前熟悉的地方，或在死去之處徘徊。	孤寂的幽魂，会寻访生前熟悉的地方，或在死去之处徘徊。		FUN_1413daa50 健康分頁「描述」鬼魂說明（一句一條）
+This spirit has not been properly memorialized or buried.	這個亡靈未曾得到妥善的紀念或安葬。	这个亡灵未曾得到妥善的纪念或安葬。		FUN_1413daa50 健康分頁「描述」鬼魂說明（一句一條）

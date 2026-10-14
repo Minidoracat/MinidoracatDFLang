@@ -46,3 +46,7 @@ fortress	要塞	要塞		FUN_1410cbe50 據點種類；術語 fortress
 tower	高塔	高塔		FUN_1410cbe50 據點種類
 castle	城堡	城堡		FUN_1410cbe50 據點種類
 monastery	修道院	修道院		FUN_1410cbe50 據點種類
+gentle breeze	微風	微风		FUN_140af1190 1604470：風力（There is a {風力} blowing from the {方位}）；mighty wind 不能讓 {@1} {@2} 拼成「力大過人風」
+strong breeze	強風	强风		FUN_140af1190 1604470：風力（There is a {風力} blowing from the {方位}）；mighty wind 不能讓 {@1} {@2} 拼成「力大過人風」
+heavy wind	大風	大风		FUN_140af1190 1604470：風力（There is a {風力} blowing from the {方位}）；mighty wind 不能讓 {@1} {@2} 拼成「力大過人風」
+mighty wind	狂風	狂风		FUN_140af1190 1604470：風力（There is a {風力} blowing from the {方位}）；mighty wind 不能讓 {@1} {@2} 拼成「力大過人風」

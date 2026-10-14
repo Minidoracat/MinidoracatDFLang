@@ -1,0 +1,582 @@
+en	zh-Hant	zh-Hans	align	note
+A large monster in the shape of a leech.	形似水蛭的大型怪物。	形似水蛭的大型怪物。		raws DESCRIPTION：GIANT_LEECH
+A small salamander found in remote lakes.	棲息在偏遠湖泊中的小型美西螈。	栖息在偏远湖泊中的小型美西螈。		raws DESCRIPTION：AXOLOTL
+It has the mysterious ability to regrow limbs.	牠擁有斷肢再生的神奇能力。	它拥有断肢再生的神奇能力。		raws DESCRIPTION：AXOLOTL
+A person with the head and tail of an axolotl.	長著美西螈頭部與尾巴的人。	长着美西螈头部和尾巴的人。		raws DESCRIPTION：AXOLOTL_MAN
+A large monster in the shape of an axolotl.	形似美西螈的大型怪物。	形似美西螈的大型怪物。		raws DESCRIPTION：GIANT_AXOLOTL
+A person with the head and tail of a mink.	長著水貂頭部與尾巴的人。	长着水貂头部和尾巴的人。		raws DESCRIPTION：MINK_MAN
+A huge monster in the form of a mink.	形似水貂的巨大怪物。	形似水貂的巨大怪物。		raws DESCRIPTION：GIANT_MINK
+A tiny reptile with a shell on its back.	背上有殼的微小爬蟲類。	背上长壳的微小爬行动物。		raws DESCRIPTION：POND_TURTLE
+It can be found in rivers and ponds.	棲息於河流與池塘。	栖息于河流和池塘。		raws DESCRIPTION：POND_TURTLE
+A person with the head and shell of a pond turtle.	長著澤龜頭部與甲殼的人。	长着泽龟头部和甲壳的人。		raws DESCRIPTION：POND_TURTLE_MAN
+A huge monster shaped like a pond turtle.	形似澤龜的巨大怪物。	形似泽龟的巨大怪物。		raws DESCRIPTION：GIANT_POND_TURTLE
+A tiny rodent that burrows by day and scurries about at night.	體型微小的齧齒動物，白天躲在洞裡，夜晚四處奔竄。	体型微小的啮齿动物，白天躲在洞里，夜晚四处乱窜。		raws DESCRIPTION：HAMSTER
+A person with the head and fur of a hamster.	長著倉鼠頭部與毛皮的人。	长着仓鼠头部和皮毛的人。		raws DESCRIPTION：HAMSTER_MAN
+A large creature the shape of a hamster.	形似倉鼠的大型生物。	形似仓鼠的大型生物。		raws DESCRIPTION：GIANT_HAMSTER
+A small round mammal whose back is covered in spines.	背上佈滿尖刺、圓滾滾的小型哺乳動物。	背上布满尖刺、圆滚滚的小型哺乳动物。		raws DESCRIPTION：HEDGEHOG
+It is nocturnal and feeds on insects.	牠晝伏夜出，以昆蟲為食。	它昼伏夜出，以昆虫为食。		raws DESCRIPTION：HEDGEHOG
+It curls into a ball when startled and is found in temperate regions.	受到驚嚇時會蜷成一團，分布於溫帶地區。	受惊时会蜷成一团，分布于温带地区。		raws DESCRIPTION：HEDGEHOG
+A person with the head and spines of a hedgehog.	長著刺蝟頭部與尖刺的人。	长着刺猬头部和尖刺的人。		raws DESCRIPTION：HEDGEHOG_MAN
+A large monster with the shape of a hedgehog.	形似刺蝟的大型怪物。	形似刺猬的大型怪物。		raws DESCRIPTION：GIANT_HEDGEHOG
+A tiny grey rodent that is only active at night.	只在夜間活動的灰色微小齧齒動物。	只在夜间活动的灰色微小啮齿动物。		raws DESCRIPTION：SQUIRREL_FLYING
+It can sail between trees on wings stretching between its front and hind legs.	牠能靠前後腳之間展開的翼膜在樹間滑翔。	它能靠前后腿之间展开的翼膜在树间滑翔。		raws DESCRIPTION：SQUIRREL_FLYING
+A person with the head and wings of a flying squirrel.	長著飛鼠頭部與翼膜的人。	长着鼯鼠头部和翼膜的人。		raws DESCRIPTION：FLYING_SQUIRREL_MAN
+A large monster taking the shape of a flying squirrel.	形似飛鼠的大型怪物。	形似鼯鼠的大型怪物。		raws DESCRIPTION：GIANT_FLYING_SQUIRREL
+A person with the head and tail of a rat.	長著老鼠頭部與尾巴的人。	长着老鼠头部和尾巴的人。		raws DESCRIPTION：RAT_MAN
+A small grey rodent found chirping in the trees of temperate woodlands.	灰色的小型齧齒動物，常在溫帶林地的樹上吱吱鳴叫。	灰色的小型啮齿动物，常在温带林地的树上吱吱鸣叫。		raws DESCRIPTION：SQUIRREL_GRAY
+A person with the head and tail of a gray squirrel.	長著灰松鼠頭部與尾巴的人。	长着灰松鼠头部和尾巴的人。		raws DESCRIPTION：SQUIRREL_GRAY_MAN
+A large creature the shape of a gray squirrel.	形似灰松鼠的大型生物。	形似灰松鼠的大型生物。		raws DESCRIPTION：GIANT_SQUIRREL_GRAY
+A small red rodent found in the trees of temperate woodlands.	棲息在溫帶林地樹上的紅色小型齧齒動物。	栖息在温带林地树上的红色小型啮齿动物。		raws DESCRIPTION：SQUIRREL_RED
+A person with the head and tail of a red squirrel.	長著紅松鼠頭部與尾巴的人。	长着红松鼠头部和尾巴的人。		raws DESCRIPTION：SQUIRREL_RED_MAN
+A large creature the shape of a red squirrel.	形似紅松鼠的大型生物。	形似红松鼠的大型生物。		raws DESCRIPTION：GIANT_SQUIRREL_RED
+A tiny striped rodent found scurrying through the bushes and trees of the temperate forest.	身上有條紋的微小齧齒動物，常在溫帶森林的灌木與樹叢間竄來竄去。	身上有条纹的微小啮齿动物，常在温带森林的灌木和树丛间窜来窜去。		raws DESCRIPTION：CHIPMUNK
+A striped person with the head and tail of a chipmunk.	身上有條紋、長著花栗鼠頭部與尾巴的人。	身上有条纹、长着花栗鼠头部和尾巴的人。		raws DESCRIPTION：CHIPMUNK_MAN
+A large creature the shape of a chipmunk.	形似花栗鼠的大型生物。	形似花栗鼠的大型生物。		raws DESCRIPTION：GIANT_CHIPMUNK
+A small creature found in both salt and fresh water that lives in an asymmetrical shell rooted to the bottom.	鹹水、淡水中皆可見的小型生物，住在固著於水底、左右不對稱的殼裡。	咸水、淡水中都能见到的小型生物，住在固着于水底、左右不对称的壳里。		raws DESCRIPTION：MUSSEL
+A small marine creature that lives in a shell rooted to the sea floor.	小型海洋生物，住在固著於海底的殼中。	小型海洋生物，住在固着于海底的壳中。		raws DESCRIPTION：OYSTER
+A medium-sized red fish that lives in the ocean and swims up a river to breed.	中型紅色魚類，生活在海洋中，會溯河而上產卵。	中型红色鱼类，生活在海洋中，会溯河而上产卵。		raws DESCRIPTION：FISH_SALMON
+A tiny orange marine fish that lives inside the tentacles of a poisonous invertebrate.	微小的橙色海魚，住在有毒無脊椎動物的觸手之間。	微小的橙色海鱼，住在有毒无脊椎动物的触手之间。		raws DESCRIPTION：FISH_CLOWNFISH
+A small winged fish found in shallow seas.	棲息於淺海、長著翼狀胸鰭的小型魚類。	栖息于浅海、长着翼状胸鳍的小型鱼类。		raws DESCRIPTION：FISH_RAY_THORNBACK
+A tiny marine fish found in vast schools.	常結成龐大魚群的微小海魚。	常结成庞大鱼群的微小海鱼。		raws DESCRIPTION：FISH_HERRING
+A small marine fish that travels to rivers to breed.	會洄游到河中產卵的小型海魚。	会洄游到河中产卵的小型海鱼。		raws DESCRIPTION：FISH_SHAD
+A medium-sized fish found in tributaries and oceans.	棲息於支流與海洋的中型魚類。	栖息于支流和海洋的中型鱼类。		raws DESCRIPTION：FISH_TROUT_STEELHEAD
+An oceanic fish.	一種海洋魚類。	一种海洋鱼类。		raws DESCRIPTION：FISH_HAKE
+A small flat fish found on the muddy bottom of shallow seas.	棲息在淺海泥底的小型扁平魚類。	栖息在浅海泥底的小型扁平鱼类。		raws DESCRIPTION：FISH_SOLE
+A small flat fish found in the muddy bottom of coastal run-offs and ponds.	棲息在沿海溪口與池塘泥底的小型扁平魚類。	栖息在沿海溪口和池塘泥底的小型扁平鱼类。		raws DESCRIPTION：FISH_FLOUNDER
+A medium-sized oceanic fish prized for its meat.	肉質備受珍視的中型海洋魚類。	肉质备受青睐的中型海洋鱼类。		raws DESCRIPTION：FISH_MACKEREL
+An invertebrate found off the coast.	出沒於近海的無脊椎動物。	出没于近海的无脊椎动物。		raws DESCRIPTION：JELLYFISH_SEA_NETTLE
+It has a sting which can be severe.	被牠螫到可能傷得很重。	被它蜇到可能伤得很重。		raws DESCRIPTION：JELLYFISH_SEA_NETTLE
+A tiny sea vermin with eight arms and two tentacles.	有八條腕和兩條觸手的微小海洋生物。	有八条腕和两条触手的微小海洋生物。		raws DESCRIPTION：SQUID
+It can spray ink to confuse predators.	牠能噴墨迷惑掠食者。	它能喷墨迷惑捕食者。		raws DESCRIPTION：SQUID
+A small person with a head bearing ten tentacles.	頭上長著十條觸手、身材矮小的人。	头上长着十条触手、身材矮小的人。		raws DESCRIPTION：SQUID
+A huge sea monster the shape of a squid.	形似魷魚的巨大海怪。	形似鱿鱼的巨大海怪。		raws DESCRIPTION：GIGANTIC
+A small fish which can walk on the land and breathe air.	能在陸地上行走、呼吸空氣的小型魚類。	能在陆地上行走、呼吸空气的小型鱼类。		raws DESCRIPTION：FISH_LUNGFISH
+It burrows in the mud when things get dry.	天氣乾旱時，牠會鑽進泥裡。	天气干旱时，它会钻进泥里。		raws DESCRIPTION：FISH_LUNGFISH
+A tiny orange-striped fish.	帶有橙色條紋的微小魚類。	带有橙色条纹的微小鱼类。		raws DESCRIPTION：FISH_LOACH_CLOWN
+It lives in inland waters.	棲息於內陸水域。	栖息于内陆水域。		raws DESCRIPTION：FISH_LOACH_CLOWN
+A small whiskered fish found in muddy inland waters.	棲息於混濁內陸水域、長著觸鬚的小型魚類。	栖息于浑浊内陆水域、长着触须的小型鱼类。		raws DESCRIPTION：FISH_BULLHEAD_BROWN
+A small whiskered fish found scavenging in inland waters.	長著觸鬚的小型魚類，在內陸水域撿食殘渣。	长着触须的小型鱼类，在内陆水域捡食残渣。		raws DESCRIPTION：FISH_BULLHEAD_YELLOW
+A small whiskered fish found in inland waters.	棲息於內陸水域、長著觸鬚的小型魚類。	栖息于内陆水域、长着触须的小型鱼类。		raws DESCRIPTION：FISH_BULLHEAD_BLACK
+A small spotted fish found in tropical rivers and lakes.	棲息於熱帶河湖、身帶斑點的小型魚類。	栖息于热带河湖、身带斑点的小型鱼类。		raws DESCRIPTION：FISH_KNIFEFISH_BANDED
+A medium-sized spotted fish found in temperate lakes and rivers.	棲息於溫帶湖泊與河流、身帶斑點的中型魚類。	栖息于温带湖泊和河流、身带斑点的中型鱼类。		raws DESCRIPTION：FISH_CHAR
+A medium-sized spotted fish found in temperate rivers and lakes.	棲息於溫帶河流與湖泊、身帶斑點的中型魚類。	栖息于温带河流和湖泊、身带斑点的中型鱼类。		raws DESCRIPTION：FISH_TROUT_RAINBOW
+A tiny spotted fish found in coastal rivers and temperate lakes.	棲息於沿海河流與溫帶湖泊、身帶斑點的微小魚類。	栖息于沿海河流和温带湖泊、身带斑点的微小鱼类。		raws DESCRIPTION：FISH_MOLLY_SAILFIN
+A tiny colorful fish found in tropical lakes and rivers.	棲息於熱帶湖泊與河流、色彩繽紛的微小魚類。	栖息于热带湖泊和河流、色彩缤纷的微小鱼类。		raws DESCRIPTION：FISH_GUPPY
+A small striped fish found in fresh water.	棲息於淡水、身帶條紋的小型魚類。	栖息于淡水、身带条纹的小型鱼类。		raws DESCRIPTION：FISH_PERCH
+A medium-sized creature prone to great ambition.	中等體型的生物，往往懷有遠大的野心。	中等体型的生物，往往怀有远大的野心。		raws DESCRIPTION：HUMAN
+A medium-sized creature dedicated to the ruthless protection of nature.	中等體型的生物，以冷酷無情的手段守護自然。	中等体型的生物，以冷酷无情的手段守护自然。		raws DESCRIPTION：ELF
+A medium-sized humanoid driven to cruelty by its evil nature.	中等體型的人形生物，天性邪惡，行事殘暴。	中等体型的人形生物，天性邪恶，行事残暴。		raws DESCRIPTION：GOBLIN
+A giant humanoid monster found stomping about in the evil plains.	在邪惡平原上踏著沉重腳步四處遊蕩的巨型人形怪物。	在邪恶平原上迈着沉重步伐四处游荡的巨型人形怪物。		raws DESCRIPTION：OGRE
+Their low howls can be heard long before they are seen.	往往未見其形，就先聽見低沉的嚎叫。	往往未见其形，就先听见低沉的嚎叫。		raws DESCRIPTION：OGRE
+A horse-like creature with a spiral horn growing from its forehead.	形似馬、額頭長著一根螺旋角的生物。	形似马、额头长着一根螺旋角的生物。		raws DESCRIPTION：UNICORN
+A gigantic reptilian creature.	巨大的爬蟲類生物。	巨大的爬行类生物。		raws DESCRIPTION：DRAGON
+It is magical and can breathe fire.	牠具有魔力，能噴火。	它具有魔力，能喷火。		raws DESCRIPTION：DRAGON
+These monsters can live for thousands of years.	這種怪物能活上數千年。	这种怪物能活上数千年。		raws DESCRIPTION：DRAGON
+A medium-sized humanoid with the horns and legs of a goat.	長著山羊角與山羊腿的中等體型人形生物。	长着山羊角和山羊腿的中等体型人形生物。		raws DESCRIPTION：SATYR
+A gigantic magic statue made of bronze and bent on mayhem.	以青銅打造、一心製造混亂的巨大魔法雕像。	以青铜打造、一心制造混乱的巨大魔法雕像。		raws DESCRIPTION：COLOSSUS_BRONZE
+A giant humanoid monster with a single eye set in its forehead.	額頭上只有一隻眼睛的巨型人形怪物。	额头上只有一只眼睛的巨型人形怪物。		raws DESCRIPTION：CYCLOPS
+A giant humanoid monster with two heads.	長著兩顆頭的巨型人形怪物。	长着两颗头的巨型人形怪物。		raws DESCRIPTION：ETTIN
+A giant humanoid monster with the head of a bull.	長著公牛頭的巨型人形怪物。	长着公牛头的巨型人形怪物。		raws DESCRIPTION：MINOTAUR
+A large and mysterious ape-like creature found in temperate forests.	出沒於溫帶森林、形似猿類的神祕大型生物。	出没于温带森林、形似猿类的神秘大型生物。		raws DESCRIPTION：SASQUATCH
+A fierce creature from the evil snowy wilds.	來自邪惡雪原荒野的兇猛生物。	来自邪恶雪原荒野的凶猛生物。		raws DESCRIPTION：WOLF_ICE
+It has white fur and a piercing howl.	牠有一身白毛，嚎叫聲尖銳刺耳。	它有一身白毛，嚎叫声尖锐刺耳。		raws DESCRIPTION：WOLF_ICE
+A tiny winged humanoid with shifting colors which performs intricate aerial dances in large groups.	身上色彩變幻不定、長著翅膀的微小人形生物，會成群在空中跳起繁複的舞蹈。	身上色彩变幻不定、长着翅膀的微小人形生物，会成群在空中跳起繁复的舞蹈。		raws DESCRIPTION：PIXIE
+An evil monster from the swamp.	來自沼澤的邪惡怪物。	来自沼泽的邪恶怪物。		raws DESCRIPTION：GRIMELING
+It resembles a knot of waterlogged weeds but will strike the unaware victim.	外表像一團泡水的雜草，卻會突襲毫無防備的獵物。	外表像一团泡水的杂草，却会突袭毫无防备的猎物。		raws DESCRIPTION：GRIMELING
+A man-shaped creature with the legs of a goat and the empty-eyed skull of a goat.	人形生物，長著山羊腿，頭是一顆眼窩空洞的山羊頭骨。	人形生物，长着山羊腿，头是一颗眼窝空洞的山羊头骨。		raws DESCRIPTION：BLENDEC_FOUL
+A flying monster with stretched skin over its emaciated body.	會飛的怪物，皮膚緊繃在瘦骨嶙峋的身軀上。	会飞的怪物，皮肤紧绷在瘦骨嶙峋的身躯上。		raws DESCRIPTION：NIGHTWING
+It has the head of a jackal with needle-like horns protruding through its mane.	牠長著胡狼的頭，針狀的角從鬃毛間刺出。	它长着胡狼的头，针状的角从鬃毛间刺出。		raws DESCRIPTION：NIGHTWING
+A monster in the shape of a woman with a bird's wings in place of arms and talons for feet.	女人模樣的怪物，雙臂是鳥翼，雙腳是利爪。	女人模样的怪物，双臂是鸟翼，双脚是利爪。		raws DESCRIPTION：HARPY
+A giant dragon-like monster with seven biting heads.	長著七顆會咬人的頭、形似巨龍的巨型怪物。	长着七颗会咬人的头、形似巨龙的巨型怪物。		raws DESCRIPTION：HYDRA
+A man-like creature with the tail of a fish instead of legs.	形似人類的生物，沒有腿，而是長著魚尾。	形似人类的生物，没有腿，而是长着鱼尾。		raws DESCRIPTION：MERPERSON
+A giant limbless dragon that lives in the sea.	生活在海中、沒有四肢的巨龍。	生活在海中、没有四肢的巨龙。		raws DESCRIPTION：SEA_SERPENT
+A giant creature with many eyes and arms to terrify the sea.	長著許多眼睛與觸腕、令大海為之戰慄的巨型生物。	长着许多眼睛和触腕、令大海为之战栗的巨型生物。		raws DESCRIPTION：SEA_MONSTER
+A bird of prey so large and ferocious it dwarfs many dragons.	體型巨大又兇猛的猛禽，許多龍在牠面前都相形見絀。	体型巨大又凶猛的猛禽，许多龙在它面前都相形见绌。		raws DESCRIPTION：BIRD_ROC
+All beneath its mighty wings should fear the sky.	在牠強健雙翼之下的一切，都該畏懼天空。	在它强健双翼之下的一切，都该畏惧天空。		raws DESCRIPTION：BIRD_ROC
+A giant amphibian predator found underground.	棲息於地底的巨型兩棲掠食者。	栖息于地下的巨型两栖捕食者。		raws DESCRIPTION：TOAD_GIANT_CAVE
+A giant amphibian predator found underground near water.	棲息於地底水邊的巨型兩棲掠食者。	栖息于地下水边的巨型两栖捕食者。		raws DESCRIPTION：OLM_GIANT
+A giant flying mammal found underground.	棲息於地底的巨型飛行哺乳動物。	栖息于地下的巨型飞行哺乳动物。		raws DESCRIPTION：BAT_GIANT
+A gigantic rodent found underground.	棲息於地底的龐大齧齒動物。	栖息于地下的庞大啮齿动物。		raws DESCRIPTION：RAT_GIANT
+A huge rodent found underground.	棲息於地底的巨大齧齒動物。	栖息于地下的巨大啮齿动物。		raws DESCRIPTION：RAT_LARGE
+A savage man-like cave creature.	形似人類的野蠻穴居生物。	形似人类的野蛮穴居生物。		raws DESCRIPTION：TROGLODYTE
+A gigantic digging creature found underground.	在地底掘土的龐大生物。	在地下掘土的庞大生物。		raws DESCRIPTION：MOLE_GIANT
+A small humanoid surrounded by fire which they can hurl at their enemies.	周身環繞火焰的小型人形生物，能把火焰擲向敵人。	周身环绕火焰的小型人形生物，能把火焰掷向敌人。		raws DESCRIPTION：IMP_FIRE
+A small pale creature found in underground streams and ponds.	棲息於地底溪流與池塘的蒼白小型生物。	栖息于地下溪流和池塘的苍白小型生物。		raws DESCRIPTION：FISH_CAVE
+A humanoid creature with the head of a blind cave fish.	長著盲眼洞穴魚頭的人形生物。	长着盲眼洞穴鱼头的人形生物。		raws DESCRIPTION：CAVE_FISH_MAN
+They live in colonies in watery regions far underground.	他們在地底深處的水域群居。	他们在地下深处的水域群居。		raws DESCRIPTION：CAVE_FISH_MAN
+A serpent made of pure fire which can inject liquid fire as venom.	由純粹火焰構成的蛇，能把液態火焰當作毒液注入對手體內。	由纯粹火焰构成的蛇，能把液态火焰当作毒液注入对手体内。		raws DESCRIPTION：SNAKE_FIRE
+An animal person with the head of the amphibious olm.	長著兩棲洞螈頭的動物人。	长着两栖洞螈头的动物人。		raws DESCRIPTION：OLM_MAN
+It lives underground near water.	棲息於地底水邊。	栖息于地下水边。		raws DESCRIPTION：OLM_MAN
+A tiny winged creature that hunts at night and rests in caves during the day.	長著翅膀的微小生物，夜間獵食，白天在洞穴中休息。	长着翅膀的微小生物，夜间捕食，白天在洞穴中休息。		raws DESCRIPTION：BAT
+A humanoid with the head of a bat and wings stretching from wrist to ankle.	長著蝙蝠頭的人形生物，翼膜從手腕延伸到腳踝。	长着蝙蝠头的人形生物，翼膜从手腕延伸到脚踝。		raws DESCRIPTION：BAT_MAN
+A tiny larva which is prized for its milk.	微小的幼蟲，產出的乳汁備受珍視。	微小的幼虫，产出的乳汁备受珍视。		raws DESCRIPTION：MAGGOT_PURRING
+Fire in the shape of a human that can hurl fireballs.	人形的火焰，能投擲火球。	人形的火焰，能投掷火球。		raws DESCRIPTION：ELEMENTMAN_FIRE；術語例外：human
+A man-shaped creature made of iron.	由鐵構成的人形生物。	由铁构成的人形生物。		raws DESCRIPTION：ELEMENTMAN_IRON
+A humanoid made of mud which lives near water underground.	由泥巴構成的人形生物，棲息於地底水邊。	由泥巴构成的人形生物，栖息于地下水边。		raws DESCRIPTION：ELEMENTMAN_MUD
+A small blue and orange bird.	藍橙相間的小型鳥類。	蓝橙相间的小型鸟类。		raws DESCRIPTION：BIRD_SWALLOW_CAVE
+A feathered man with the wings and head of a bird.	身披羽毛、長著鳥頭與鳥翼的人。	身披羽毛、长着鸟头和鸟翼的人。		raws DESCRIPTION：CAVE_SWALLOW_MAN
+It lives underground.	棲息於地底。	栖息于地下。		raws DESCRIPTION：CAVE_SWALLOW_MAN
+A gigantic blue and orange bird.	藍橙相間的龐大鳥類。	蓝橙相间的庞大鸟类。		raws DESCRIPTION：BIRD_SWALLOW_CAVE_GIANT
+These evil creatures resemble walking frogs with arms and the intelligence to use them.	這種邪惡生物像是會走路的青蛙，有雙臂，也有運用雙臂的智慧。	这种邪恶生物像是会走路的青蛙，长着双臂，也有使用双臂的智慧。		raws DESCRIPTION：AMPHIBIAN_MAN
+They live in the waters far under the earth.	棲息在地底深處的水域。	栖息在地下深处的水域。		raws DESCRIPTION：AMPHIBIAN_MAN
+These creatures are shaped like men covered with rough scales.	這種生物外形似人，全身覆蓋粗糙的鱗片。	这种生物外形似人，全身覆盖粗糙的鳞片。		raws DESCRIPTION：REPTILE_MAN
+They have the head and tail of a lizard and possess a dark and evil intelligence.	長著蜥蜴的頭與尾巴，擁有陰險邪惡的智慧。	长着蜥蜴的头和尾巴，拥有阴险邪恶的智慧。		raws DESCRIPTION：REPTILE_MAN
+They are found deep under the earth.	棲息於地底深處。	栖息于地下深处。		raws DESCRIPTION：REPTILE_MAN
+A large white snake with the arms and torso of a man.	長著人類手臂與軀幹的白色大蛇。	长着人类手臂和躯干的白色大蛇。		raws DESCRIPTION：SERPENT_MAN
+These creatures are evil and live far underground.	這種生物生性邪惡，棲息於地底深處。	这种生物生性邪恶，栖息于地下深处。		raws DESCRIPTION：SERPENT_MAN
+A humanoid with the head and body of an ant.	長著螞蟻頭部與身軀的人形生物。	长着蚂蚁头部和身躯的人形生物。		raws DESCRIPTION：ANT_MAN
+A person with the head of a wild boar.	長著野豬頭部的人。	长着野猪头部的人。		raws DESCRIPTION：WILD_BOAR_MAN
+A huge monster boar with jagged tusks.	長著參差獠牙的巨大野豬怪物。	长着参差獠牙的巨大野猪怪物。		raws DESCRIPTION：GIANT_WILD_BOAR
+A person with the head and tail of a coyote.	長著郊狼頭部與尾巴的人。	长着郊狼头部和尾巴的人。		raws DESCRIPTION：COYOTE_MAN
+A large dog-like monster with a haunting howl.	形似狗的大型怪物，嚎叫聲令人毛骨悚然。	形似狗的大型怪物，嚎叫声令人毛骨悚然。		raws DESCRIPTION：GIANT_COYOTE
+A medium-sized creature that can be found hopping through the grassland.	在草原上跳躍前進的中型生物。	在草原上跳跃前进的中型生物。		raws DESCRIPTION：KANGAROO
+A person with the head and powerful legs of a kangaroo.	長著袋鼠頭部與強健雙腿的人。	长着袋鼠头部和强健双腿的人。		raws DESCRIPTION：KANGAROO_MAN
+A huge monster in the shape of a kangaroo.	形似袋鼠的巨大怪物。	形似袋鼠的巨大怪物。		raws DESCRIPTION：GIANT_KANGAROO
+A grey person with the head of a koala.	全身灰色、長著無尾熊頭部的人。	全身灰色、长着树袋熊头部的人。		raws DESCRIPTION：KOALA_MAN
+A large koala-shaped monster.	形似無尾熊的大型怪物。	形似树袋熊的大型怪物。		raws DESCRIPTION：GIANT_KOALA
+A tiny snake with ridged scales and a powerful venomous bite.	鱗片帶有稜脊、咬傷毒性猛烈的微小蛇類。	鳞片带有棱脊、咬伤毒性猛烈的微小蛇类。		raws DESCRIPTION：ADDER
+A large adder with the torso and arms of a man.	長著人類軀幹與手臂的大蝰蛇。	长着人类躯干和手臂的大蝰蛇。		raws DESCRIPTION：ADDER_MAN
+A large monster in the form of an adder.	形似蝰蛇的大型怪物。	形似蝰蛇的大型怪物。		raws DESCRIPTION：GIANT_ADDER
+A small spiny mammal with a long snout.	身披尖刺、吻部細長的小型哺乳動物。	身披尖刺、吻部细长的小型哺乳动物。		raws DESCRIPTION：ECHIDNA
+It eats ants and termites and reproduces by laying eggs.	牠以螞蟻和白蟻為食，以產卵方式繁殖。	它以蚂蚁和白蚁为食，靠产卵繁殖。		raws DESCRIPTION：ECHIDNA
+A spiny person with the head of an echidna.	身披尖刺、長著針鼴頭部的人。	身披尖刺、长着针鼹头部的人。		raws DESCRIPTION：ECHIDNA_MAN
+A large monster in the shape of an echidna.	形似針鼴的大型怪物。	形似针鼹的大型怪物。		raws DESCRIPTION：GIANT_ECHIDNA
+A small rodent covered with sharp quills.	全身長滿銳利硬刺的小型齧齒動物。	全身长满锐利硬刺的小型啮齿动物。		raws DESCRIPTION：PORCUPINE
+They eat grass and leaves and can even climb trees.	以青草和樹葉為食，甚至會爬樹。	以青草和树叶为食，甚至会爬树。		raws DESCRIPTION：PORCUPINE
+A person with the head and quills of a porcupine.	長著豪豬頭部與硬刺的人。	长着豪猪头部和硬刺的人。		raws DESCRIPTION：PORCUPINE_MAN
+A large monster in the form of a porcupine.	形似豪豬的大型怪物。	形似豪猪的大型怪物。		raws DESCRIPTION：GIANT_PORCUPINE
+A legless person with the head and tail of a kingsnake.	沒有腿、長著王蛇頭部與尾巴的人。	没有腿、长着王蛇头部和尾巴的人。		raws DESCRIPTION：KINGSNAKE_MAN
+A large monster in the form of a kingsnake.	形似王蛇的大型怪物。	形似王蛇的大型怪物。		raws DESCRIPTION：GIANT_KINGSNAKE
+A small monkey that can be found in forests and the streets of towns.	出沒於森林與城鎮街頭的小型猴類。	出没于森林和城镇街头的小型猴类。		raws DESCRIPTION：GRAY_LANGUR
+A grey person with the head and tail of a gray langur.	全身灰色、長著長尾葉猴頭部與尾巴的人。	全身灰色、长着长尾叶猴头部和尾巴的人。		raws DESCRIPTION：GRAY_LANGUR_MAN
+A huge monster in the shape of a gray langur.	形似長尾葉猴的巨大怪物。	形似长尾叶猴的巨大怪物。		raws DESCRIPTION：GIANT_GRAY_LANGUR
+A small feline predator with a shortened tail.	尾巴短小的小型貓科掠食者。	尾巴短小的小型猫科捕食者。		raws DESCRIPTION：BOBCAT
+A person with the head and short tail of a bobcat.	長著短尾貓頭部與短尾巴的人。	长着短尾猫头部和短尾巴的人。		raws DESCRIPTION：BOBCAT_MAN
+A large monster in the form of a bobcat.	形似短尾貓的大型怪物。	形似短尾猫的大型怪物。		raws DESCRIPTION：GIANT_BOBCAT
+A small black and white mammal.	黑白相間的小型哺乳動物。	黑白相间的小型哺乳动物。		raws DESCRIPTION：SKUNK
+It is capable of spraying a stinking fluid.	牠能噴出惡臭的液體。	它能喷出恶臭的液体。		raws DESCRIPTION：SKUNK
+A striped person with the head and tail of a skunk.	身上有條紋、長著臭鼬頭部與尾巴的人。	身上有条纹、长着臭鼬头部和尾巴的人。		raws DESCRIPTION：SKUNK_MAN
+A large monster in the form of a skunk.	形似臭鼬的大型怪物。	形似臭鼬的大型怪物。		raws DESCRIPTION：GIANT_SKUNK
+A tiny amphibian that lives in the trees.	生活在樹上的微小兩棲動物。	生活在树上的微小两栖动物。		raws DESCRIPTION：GREEN_TREE_FROG
+A green person with the head of a green tree frog.	全身綠色、長著綠樹蛙頭部的人。	全身绿色、长着绿树蛙头部的人。		raws DESCRIPTION：GREEN_TREE_FROG_MAN
+A large monster in the shape of a green tree frog.	形似綠樹蛙的大型怪物。	形似绿树蛙的大型怪物。		raws DESCRIPTION：GIANT_GREEN_TREE_FROG
+A long-eared person with the head and tail of a hare.	耳朵長長、長著野兔頭部與尾巴的人。	耳朵长长、长着野兔头部和尾巴的人。		raws DESCRIPTION：HARE_MAN
+A large monster in the shape of a hare.	形似野兔的大型怪物。	形似野兔的大型怪物。		raws DESCRIPTION：GIANT_HARE
+A small reptile with a tell-tale rattle and vicious bite that leads to a quick death.	小型爬蟲類，尾端的響環是牠的招牌，被咬一口很快就會喪命。	小型爬行动物，尾端的响环是它的标志，被咬一口很快就会丧命。		raws DESCRIPTION：RATTLESNAKE
+A person resembling a large rattlesnake with arms.	模樣像長了手臂的大響尾蛇的人。	模样像长了手臂的大响尾蛇的人。		raws DESCRIPTION：RATTLESNAKE_MAN
+A huge monster taking the shape of a rattlesnake.	形似響尾蛇的巨大怪物。	形似响尾蛇的巨大怪物。		raws DESCRIPTION：GIANT_RATTLESNAKE
+A tiny mammal with a slender body.	身體細長的微小哺乳動物。	身体细长的微小哺乳动物。		raws DESCRIPTION：WEASEL
+It hunts in mouse holes as well as barn yards.	牠會鑽進鼠洞獵食，也會在農家院子裡捕獵。	它会钻进鼠洞捕食，也会在农家院子里捕猎。		raws DESCRIPTION：WEASEL
+A person with the head and tail of a weasel.	長著伶鼬頭部與尾巴的人。	长着伶鼬头部和尾巴的人。		raws DESCRIPTION：WEASEL_MAN
+A large monster taking the shape of a weasel.	形似伶鼬的大型怪物。	形似伶鼬的大型怪物。		raws DESCRIPTION：GIANT_WEASEL
+A tiny venomous snake found in the woods and swamps.	出沒於樹林與沼澤的微小毒蛇。	出没于树林和沼泽的微小毒蛇。		raws DESCRIPTION：COPPERHEAD_SNAKE
+A large copperhead snake with the arms of a man.	長著人類手臂的大銅頭蝮蛇。	长着人类手臂的大铜头蝮蛇。		raws DESCRIPTION：COPPERHEAD_SNAKE_MAN
+A huge monster in the form of a copperhead snake.	形似銅頭蝮蛇的巨大怪物。	形似铜头蝮蛇的巨大怪物。		raws DESCRIPTION：GIANT_COPPERHEAD_SNAKE
+A small horned mammal.	頭上長角的小型哺乳動物。	头上长角的小型哺乳动物。		raws DESCRIPTION：IBEX
+It can be found in the mountains leaping from rock to rock.	常在山間的岩石之間跳躍。	常在山间的岩石之间跳跃。		raws DESCRIPTION：IBEX
+A horned person with the head of an ibex.	頭上長角、長著羱羊頭部的人。	头上长角、长着羱羊头部的人。		raws DESCRIPTION：IBEX_MAN
+A huge monster in the form of an ibex.	形似羱羊的巨大怪物。	形似羱羊的巨大怪物。		raws DESCRIPTION：GIANT_IBEX
+A muscular person with the head of a wombat.	肌肉發達、長著袋熊頭部的人。	肌肉发达、长着袋熊头部的人。		raws DESCRIPTION：WOMBAT_MAN
+A huge monster in the shape of a wombat.	形似袋熊的巨大怪物。	形似袋熊的巨大怪物。		raws DESCRIPTION：GIANT_WOMBAT
+A small dog-like creature.	形似狗的小型生物。	形似狗的小型生物。		raws DESCRIPTION：DINGO
+They are known to attack livestock.	以襲擊牲畜聞名。	以袭击牲畜闻名。		raws DESCRIPTION：DINGO
+A person with the head of a dingo.	長著野犬頭部的人。	长着野犬头部的人。		raws DESCRIPTION：DINGO_MAN
+A huge monster in the form of a dingo.	形似野犬的巨大怪物。	形似野犬的巨大怪物。		raws DESCRIPTION：GIANT_DINGO
+A person with the head and tail of a coati.	長著鼻熊頭部與尾巴的人。	长着鼻熊头部和尾巴的人。		raws DESCRIPTION：COATI_MAN
+A huge monster in the form of a coati.	形似鼻熊的巨大怪物。	形似鼻熊的巨大怪物。		raws DESCRIPTION：GIANT_COATI
+A person with the head and tail of an opossum.	長著負鼠頭部與尾巴的人。	长着负鼠头部和尾巴的人。		raws DESCRIPTION：OPOSSUM_MAN
+A huge monster in the shape of an opossum.	形似負鼠的巨大怪物。	形似负鼠的巨大怪物。		raws DESCRIPTION：GIANT_OPOSSUM
+A very small mammal with short legs and a long tail.	體型很小的哺乳動物，腿短尾長。	体型很小的哺乳动物，腿短尾长。		raws DESCRIPTION：MONGOOSE
+It hunts small animals to eat.	以捕食小動物維生。	以捕食小动物为生。		raws DESCRIPTION：MONGOOSE
+A small person with the head and tail of a mongoose.	身材矮小、長著獴頭部與尾巴的人。	身材矮小、长着獴头部和尾巴的人。		raws DESCRIPTION：MONGOOSE_MAN
+A large mongoose-like monster known for hunting people amongst other things.	形似獴的大型怪物，什麼都獵，連人也不放過。	形似獴的大型怪物，什么都猎，连人也不放过。		raws DESCRIPTION：GIANT_MONGOOSE
+A medium-sized pack predator found in the savanna.	棲息於莽原、成群獵食的中型掠食者。	栖息于稀树草原、成群捕猎的中型捕食者。		raws DESCRIPTION：HYENA
+A person with the head and markings of a hyena.	長著鬣狗頭部與斑紋的人。	长着鬣狗头部和斑纹的人。		raws DESCRIPTION：HYENA_MAN
+A huge monster the shape of a hyena.	形似鬣狗的巨大怪物。	形似鬣狗的巨大怪物。		raws DESCRIPTION：GIANT_HYENA
+A medium-sized snake that lives in the trees.	生活在樹上的中型蛇類。	生活在树上的中型蛇类。		raws DESCRIPTION：ANACONDA
+It eats prey much larger than itself and slays them by crushing them to death.	牠能吃下比自己大得多的獵物，靠纏勒將獵物活活勒死。	它能吞下比自己大得多的猎物，靠缠绕把猎物活活勒死。		raws DESCRIPTION：ANACONDA
+A large anaconda with the torso and arms of a man.	長著人類軀幹與手臂的大森蚺。	长着人类躯干和手臂的大森蚺。		raws DESCRIPTION：ANACONDA_MAN
+A huge monster in the form of an anaconda.	形似森蚺的巨大怪物。	形似森蚺的巨大怪物。		raws DESCRIPTION：GIANT_ANACONDA
+A medium-sized reptile.	中型爬蟲類。	中型爬行动物。		raws DESCRIPTION：MONITOR_LIZARD
+They can be found foraging for food such as eggs or worms.	常四處覓食，吃蛋或蟲子之類的食物。	常四处觅食，吃蛋或虫子之类的食物。		raws DESCRIPTION：MONITOR_LIZARD
+They are said to be the most intelligent of their kind.	據說牠們是同類中最聰明的。	据说它们是同类中最聪明的。		raws DESCRIPTION：MONITOR_LIZARD
+A person with the head and tail of a monitor lizard.	長著巨蜥頭部與尾巴的人。	长着巨蜥头部和尾巴的人。		raws DESCRIPTION：MONITOR_LIZARD_MAN
+A huge monster in the shape of a monitor lizard.	形似巨蜥的巨大怪物。	形似巨蜥的巨大怪物。		raws DESCRIPTION：GIANT_MONITOR_LIZARD
+A small limbless reptile known for its deadly venom and the warning of its hood.	沒有四肢的小型爬蟲類，以致命毒液和示警時張開的頸部皮褶聞名。	没有四肢的小型爬行动物，以致命毒液和示警时张开的颈部皮褶闻名。		raws DESCRIPTION：KING_COBRA
+A legless person with the head and tail of a king cobra.	沒有腿、長著眼鏡王蛇頭部與尾巴的人。	没有腿、长着眼镜王蛇头部和尾巴的人。		raws DESCRIPTION：KING_COBRA_MAN
+A large monster in the shape of a king cobra.	形似眼鏡王蛇的大型怪物。	形似眼镜王蛇的大型怪物。		raws DESCRIPTION：GIANT_KING_COBRA
+A small cat-like creature found in the jungle.	棲息於叢林、形似貓的小型生物。	栖息于丛林、形似猫的小型生物。		raws DESCRIPTION：OCELOT
+A person with the head and tail of an ocelot.	長著虎貓頭部與尾巴的人。	长着虎猫头部和尾巴的人。		raws DESCRIPTION：OCELOT_MAN
+A huge monster in the shape of an ocelot.	形似虎貓的巨大怪物。	形似虎猫的巨大怪物。		raws DESCRIPTION：GIANT_OCELOT
+A person with the head and tail of a jackal.	長著胡狼頭部與尾巴的人。	长着胡狼头部和尾巴的人。		raws DESCRIPTION：JACKAL_MAN
+A large monster in the form of a jackal.	形似胡狼的大型怪物。	形似胡狼的大型怪物。		raws DESCRIPTION：GIANT_JACKAL
+A tiny diurnal monkey.	白天活動的微小猴類。	白天活动的微小猴类。		raws DESCRIPTION：CAPUCHIN
+It spends its time in the trees searching for food.	牠整天在樹上尋找食物。	它整天在树上寻找食物。		raws DESCRIPTION：CAPUCHIN
+A person with the head and tail of a capuchin.	長著捲尾猴頭部與尾巴的人。	长着卷尾猴头部和尾巴的人。		raws DESCRIPTION：CAPUCHIN_MAN
+A large monster in the form of a capuchin.	形似捲尾猴的大型怪物。	形似卷尾猴的大型怪物。		raws DESCRIPTION：GIANT_CAPUCHIN
+A person with the head of a sloth.	長著樹懶頭部的人。	长着树懒头部的人。		raws DESCRIPTION：SLOTH_MAN
+A huge monster in the shape of a sloth.	形似樹懶的巨大怪物。	形似树懒的巨大怪物。		raws DESCRIPTION：GIANT_SLOTH
+A small animal found in the canopy of the jungle.	棲息於叢林樹冠層的小型動物。	栖息于丛林树冠层的小型动物。		raws DESCRIPTION：SPIDER_MONKEY
+They have extremely long arms and legs.	手臂和腿都極長。	手臂和腿都极长。		raws DESCRIPTION：SPIDER_MONKEY
+A long-limbed person with the head and tail of a spider monkey.	四肢修長、長著蜘蛛猴頭部與尾巴的人。	四肢修长、长着蜘蛛猴头部和尾巴的人。		raws DESCRIPTION：SPIDER_MONKEY_MAN
+A large monster in the form of a spider monkey.	形似蜘蛛猴的大型怪物。	形似蜘蛛猴的大型怪物。		raws DESCRIPTION：GIANT_SPIDER_MONKEY
+A small mammal covered in hard scales.	全身覆蓋堅硬鱗片的小型哺乳動物。	全身覆盖坚硬鳞片的小型哺乳动物。		raws DESCRIPTION：PANGOLIN
+It has a long nose and tongue which it uses to feed.	牠用長長的鼻子和舌頭進食。	它用长长的鼻子和舌头进食。		raws DESCRIPTION：PANGOLIN
+A person with the head and scales of a pangolin.	長著穿山甲頭部與鱗片的人。	长着穿山甲头部和鳞片的人。		raws DESCRIPTION：PANGOLIN_MAN
+A huge monster in the form of a pangolin.	形似穿山甲的巨大怪物。	形似穿山甲的巨大怪物。		raws DESCRIPTION：GIANT_PANGOLIN
+A small aggressive snake which can move very quickly.	生性好鬥、行動極快的小型蛇類。	生性好斗、行动极快的小型蛇类。		raws DESCRIPTION：BLACK_MAMBA
+Its venom is deadly.	牠的毒液足以致命。	它的毒液足以致命。		raws DESCRIPTION：BLACK_MAMBA
+A person in the form of a large black mamba with arms.	模樣像長了手臂的大黑曼巴蛇的人。	模样像长了手臂的大黑曼巴蛇的人。		raws DESCRIPTION：BLACK_MAMBA_MAN
+A large monster taking the shape of a black mamba.	形似黑曼巴蛇的大型怪物。	形似黑曼巴蛇的大型怪物。		raws DESCRIPTION：GIANT_BLACK_MAMBA
+A medium-sized mammal that lives in the trees.	生活在樹上的中型哺乳動物。	生活在树上的中型哺乳动物。		raws DESCRIPTION：BEAR_SLOTH
+It is known for its easy-going nature.	以性情悠哉隨和著稱。	以性情悠闲随和著称。		raws DESCRIPTION：BEAR_SLOTH
+A person with the head and claws of a sloth bear.	長著懶熊頭部與爪子的人。	长着懒熊头部和爪子的人。		raws DESCRIPTION：SLOTH_BEAR_MAN
+A huge monster in the form of a sloth bear.	形似懶熊的巨大怪物。	形似懒熊的巨大怪物。		raws DESCRIPTION：GIANT_SLOTH_BEAR
+A person with the head and fingers of an aye-aye.	長著指猴頭部與手指的人。	长着指猴头部和手指的人。		raws DESCRIPTION：AYE-AYE_MAN
+A huge monster shaped like an aye-aye.	形似指猴的巨大怪物。	形似指猴的巨大怪物。		raws DESCRIPTION：GIANT_AYE-AYE
+A tiny venomous snake.	微小的毒蛇。	微小的毒蛇。		raws DESCRIPTION：BUSHMASTER
+It is the longest of the pit vipers.	牠是蝮蛇類中最長的一種。	它是蝮蛇类中最长的一种。		raws DESCRIPTION：BUSHMASTER
+A large bushmaster with the arms of a man.	長著人類手臂的大型巨蝮。	长着人类手臂的大型巨蝮。		raws DESCRIPTION：BUSHMASTER_MAN
+A huge monster in the form of a bushmaster.	形似巨蝮的巨大怪物。	形似巨蝮的巨大怪物。		raws DESCRIPTION：GIANT_BUSHMASTER
+A small snake found in the trees.	棲息於樹上的小型蛇類。	栖息于树上的小型蛇类。		raws DESCRIPTION：PYTHON
+It kills its prey by using its long body to constrict them.	牠用修長的身軀纏住獵物，將其勒死。	它用修长的身躯缠住猎物，将其勒死。		raws DESCRIPTION：PYTHON
+A large python with arms of a man.	長著人類手臂的大蟒蛇。	长着人类手臂的大蟒蛇。		raws DESCRIPTION：PYTHON_MAN
+A huge monster in the form of a python.	形似蟒蛇的巨大怪物。	形似蟒蛇的巨大怪物。		raws DESCRIPTION：GIANT_PYTHON
+A medium-sized mammal with a prehensile nose.	鼻子能捲握東西的中型哺乳動物。	鼻子能卷握东西的中型哺乳动物。		raws DESCRIPTION：TAPIR
+It lives in the tropical rainforest.	棲息於熱帶雨林。	栖息于热带雨林。		raws DESCRIPTION：TAPIR
+A person with the head of a tapir.	長著貘頭部的人。	长着貘头部的人。		raws DESCRIPTION：TAPIR_MAN
+A huge monster in the form of a tapir.	形似貘的巨大怪物。	形似貘的巨大怪物。		raws DESCRIPTION：GIANT_TAPIR
+A huge monster in the form of an impala.	形似黑斑羚的巨大怪物。	形似黑斑羚的巨大怪物。		raws DESCRIPTION：GIANT_IMPALA
+A person with the head and tail of an aardvark.	長著土豚頭部與尾巴的人。	长着土豚头部和尾巴的人。		raws DESCRIPTION：AARDVARK_MAN
+A huge monster in the form of an aardvark.	形似土豚的巨大怪物。	形似土豚的巨大怪物。		raws DESCRIPTION：GIANT_AARDVARK
+A small orange monkey with a long tail.	尾巴很長的橙色小型猴類。	尾巴很长的橙色小型猴类。		raws DESCRIPTION：LION_TAMARIN
+An orange person with the head and tail of a lion tamarin.	全身橙色、長著獅面狨頭部與尾巴的人。	全身橙色、长着狮面狨头部和尾巴的人。		raws DESCRIPTION：LION_TAMARIN_MAN
+A huge monster in the form of a lion tamarin.	形似獅面狨的巨大怪物。	形似狮面狨的巨大怪物。		raws DESCRIPTION：GIANT_LION_TAMARIN
+A small weasel-like creature that hunts rodents and preys on the nests of birds.	形似伶鼬的小型生物，會獵捕齧齒動物，也會襲擊鳥巢。	形似伶鼬的小型生物，会捕食啮齿动物，也会袭击鸟巢。		raws DESCRIPTION：STOAT
+A long-bodied person with the head of a stoat.	身軀修長、長著白鼬頭部的人。	身躯修长、长着白鼬头部的人。		raws DESCRIPTION：STOAT_MAN
+A large monster in the shape of a stoat.	形似白鼬的大型怪物。	形似白鼬的大型怪物。		raws DESCRIPTION：GIANT_STOAT
+A medium-sized mammalian predator.	中型哺乳類掠食者。	中型哺乳类捕食者。		raws DESCRIPTION：LYNX
+It is known by the tell-tale tufts of hair on the tips of its ears.	耳尖上的簇毛是牠的招牌特徵。	耳尖上的簇毛是它的标志性特征。		raws DESCRIPTION：LYNX
+A person with the head and tail of a lynx.	長著猞猁頭部與尾巴的人。	长着猞猁头部和尾巴的人。		raws DESCRIPTION：LYNX_MAN
+A huge monster in the shape of a lynx.	形似猞猁的巨大怪物。	形似猞猁的巨大怪物。		raws DESCRIPTION：GIANT_LYNX
+A tiny aquatic worm-like creature with ten pairs slender legs and seven pairs of protruding rigid spines along its body.	微小的水生蠕蟲狀生物，有十對細長的腳，身上長著七對突出的硬刺。	微小的水生蠕虫状生物，有十对细长的腿，身上长着七对突出的硬刺。		raws DESCRIPTION：CAMBRIAN_HALLUCIGENIA
+A small person with the back spines of a hallucigenia.	身材矮小、背上長著怪誕蟲尖刺的人。	身材矮小、背上长着怪诞虫尖刺的人。		raws DESCRIPTION：CAMBRIAN_HALLUCIGENIA_MAN
+A tiny four-eyed fish with a pronounced fin along its back.	有四隻眼睛、背上長著明顯背鰭的微小魚類。	有四只眼睛、背上长着明显背鳍的微小鱼类。		raws DESCRIPTION：CAMBRIAN_HAIKOUICHTHYS
+A small four-eyed fish person with a pronounced back fin.	身材矮小的四眼魚人，背上長著明顯的背鰭。	身材矮小的四眼鱼人，背上长着明显的背鳍。		raws DESCRIPTION：CAMBRIAN_HAIKOUICHTHYS_MAN
+A tiny five-eyed aquatic arthropod with a grasping proboscis.	有五隻眼睛、長著可抓握長吻的微小水生節肢動物。	有五只眼睛、长着可抓握长吻的微小水生节肢动物。		raws DESCRIPTION：CAMBRIAN_OPABINIA
+A small five-eyed arthropod person with grasping proboscis.	身材矮小的五眼節肢人，長著可抓握的長吻。	身材矮小的五眼节肢人，长着可抓握的长吻。		raws DESCRIPTION：CAMBRIAN_OPABINIA_MAN
+A tiny aquatic arthropod with pronounced eyes and two frontal grasping appendages.	微小的水生節肢動物，眼睛突出，前端有兩條可抓握的附肢。	微小的水生节肢动物，眼睛突出，前端有两条可抓握的附肢。		raws DESCRIPTION：CAMBRIAN_ANOMALOCARIS
+A small arthropod person with pronounced eyes and two grasping appendages protruding from their face.	身材矮小的節肢人，眼睛突出，臉上伸出兩條可抓握的附肢。	身材矮小的节肢人，眼睛突出，脸上伸出两条可抓握的附肢。		raws DESCRIPTION：CAMBRIAN_ANOMALOCARIS_MAN
+A very small aquatic arthropod with two antennae.	體型很小的水生節肢動物，有兩根觸角。	体型很小的水生节肢动物，有两根触角。		raws DESCRIPTION：CAMBRIAN_TRILOBITE
+It has many legs underneath its flat segmented oval body.	牠扁平分節的橢圓形身體下方長著許多腳。	它扁平分节的椭圆形身体下方长着许多腿。		raws DESCRIPTION：CAMBRIAN_TRILOBITE
+They can curl into a ball to protect themselves.	能蜷成球狀保護自己。	能蜷成球状保护自己。		raws DESCRIPTION：CAMBRIAN_TRILOBITE
+A small person with the segmented body and antennae of a trilobite.	身材矮小、長著三葉蟲分節身軀與觸角的人。	身材矮小、长着三叶虫分节身躯和触角的人。		raws DESCRIPTION：CAMBRIAN_TRILOBITE_MAN
+A tiny hemispherical arthropod with protective spines.	長著護身尖刺的微小半球形節肢動物。	长着护身尖刺的微小半球形节肢动物。		raws DESCRIPTION：CAMBRIAN_WIWAXIA
+A tiny arthropod person with the protective spines of a wiwaxia.	身材極小、長著威瓦蟲護身尖刺的節肢人。	身材极小、长着威瓦虫护身尖刺的节肢人。		raws DESCRIPTION：CAMBRIAN_WIWAXIA_MAN
+A tiny amphibious limbless vertebrate that feeds on creatures as it slithers about.	沒有四肢的微小兩棲脊椎動物，一邊蜿蜒滑行一邊捕食其他生物。	没有四肢的微小两栖脊椎动物，边蜿蜒爬行边捕食其他生物。		raws DESCRIPTION：CARBONIFEROUS_OESTOCEPHALUS
+A small slender legless amphibious person.	身材矮小纖細、沒有腿的兩棲人。	身材矮小纤细、没有腿的两栖人。		raws DESCRIPTION：CARBONIFEROUS_OESTOCEPHALUS_MAN
+A small legless person with two eyestalks and a grasping appendage attached to their face.	身材矮小、沒有腿的人，有兩根眼柄，臉上長著一條可抓握的附肢。	身材矮小、没有腿的人，有两根眼柄，脸上长着一条可抓握的附肢。		raws DESCRIPTION：CARBONIFEROUS_TULLIMONSTRUM_MAN
+A small arthropod person reminescent of a myriapod.	身材矮小、令人聯想到多足類的節肢人。	身材矮小、让人联想到多足类的节肢人。		raws DESCRIPTION：CARBONIFEROUS_ARTHROPLEURA_MAN
+A small arthropod person with the wings of a giant dragonfly.	身材矮小、長著巨型蜻蜓翅膀的節肢人。	身材矮小、长着巨型蜻蜓翅膀的节肢人。		raws DESCRIPTION：CARBONIFEROUS_MEGANEURA_MAN
+A gigantic hairless mammal with a long trunk and two backward-curving tusks.	龐大的無毛哺乳動物，有長鼻和兩根向後彎曲的長牙。	庞大的无毛哺乳动物，有长鼻和两根向后弯曲的长牙。		raws DESCRIPTION：CENOZOIC_DEINOTHERIUM
+A very large hairless mammal person with a trunk and two backward-curving tusks.	身材極為高大的無毛獸人，有長鼻和兩根向後彎曲的長牙。	身材极为高大的无毛兽人，有长鼻和两根向后弯曲的长牙。		raws DESCRIPTION：CENOZOIC_DEINOTHERIUM_MAN
+A large feline with pronounced eye teeth protruding from its mouth.	大型貓科動物，口中伸出顯眼的犬齒。	大型猫科动物，口中伸出醒目的犬齿。		raws DESCRIPTION：CENOZOIC_SMILODON
+A large feline person with pronounced eye teeth protruding from their mouth.	身材高大的貓科獸人，口中伸出顯眼的犬齒。	身材高大的猫科兽人，口中伸出醒目的犬齿。		raws DESCRIPTION：CENOZOIC_SMILODON_MAN
+A huge mammal with a long trunk and two tusks.	巨大的哺乳動物，有長鼻和兩根長牙。	巨大的哺乳动物，有长鼻和两根长牙。		raws DESCRIPTION：CENOZOIC_MAMMOTH_PYGMY
+A large mammal person with a long trunk and two tusks.	身材高大的獸人，有長鼻和兩根長牙。	身材高大的兽人，有长鼻和两根长牙。		raws DESCRIPTION：CENOZOIC_MAMMOTH_PYGMY_MAN
+A huge ground sloth with a long tongue.	舌頭很長的巨大地懶。	舌头很长的巨大地懒。		raws DESCRIPTION：CENOZOIC_MEGATHERIUM
+A large sloth person with a long tongue.	身材高大、舌頭很長的大地懶人。	身材高大、舌头很长的大地懒人。		raws DESCRIPTION：CENOZOIC_MEGATHERIUM_MAN
+A small striped mammal predator that hunts a night.	身帶條紋、在夜間獵食的小型哺乳類掠食者。	身带条纹、夜间捕猎的小型哺乳类捕食者。		raws DESCRIPTION：CENOZOIC_THYLACINE
+It can open its jaws unusually wide.	牠的嘴能張得異常地大。	它的嘴能张得异常大。		raws DESCRIPTION：CENOZOIC_THYLACINE
+A small striped mammal person.	身材矮小、身帶條紋的獸人。	身材矮小、身带条纹的兽人。		raws DESCRIPTION：CENOZOIC_THYLACINE_MAN
+A very large mammalian omnivore with a long head.	體型非常大的雜食性哺乳動物，頭部狹長。	体型非常大的杂食性哺乳动物，头部狭长。		raws DESCRIPTION：CENOZOIC_ANDREWSARCHUS
+A large mammalian person with a long head.	身材高大、頭部狹長的獸人。	身材高大、头部狭长的兽人。		raws DESCRIPTION：CENOZOIC_ANDREWSARCHUS_MAN
+A huge woolly mammal with two horns.	長著兩隻角的巨大長毛哺乳動物。	长着两只角的巨大长毛哺乳动物。		raws DESCRIPTION：CENOZOIC_RHINOCEROS_WOOLLY
+A large woolly mammal person with two horns.	身材高大、長著兩隻角的長毛獸人。	身材高大、长着两只角的长毛兽人。		raws DESCRIPTION：CENOZOIC_RHINOCEROS_WOOLLY_MAN
+A small horse with three toes on each foot.	每隻腳都有三根趾頭的小型馬。	每只脚都有三个脚趾的小型马。		raws DESCRIPTION：CENOZOIC_MIOHIPPUS
+A small horse person with three fingers and three toes.	身材矮小的馬人，手有三指，腳有三趾。	身材矮小的马人，手有三指，脚有三趾。		raws DESCRIPTION：CENOZOIC_MIOHIPPUS_MAN
+A huge shelled mammal.	背負甲殼的巨大哺乳動物。	背负甲壳的巨大哺乳动物。		raws DESCRIPTION：CENOZOIC_GLYPTODON
+A large mammal person with a shell.	身材高大、背負甲殼的獸人。	身材高大、背负甲壳的兽人。		raws DESCRIPTION：CENOZOIC_GLYPTODON_MAN
+A gigantic woolly mammal with a long trunk and two tusk.	龐大的長毛哺乳動物，有長鼻和兩根長牙。	庞大的长毛哺乳动物，有长鼻和两根长牙。		raws DESCRIPTION：CENOZOIC_MAMMOTH_WOOLLY
+A very large woolly mammal person with two tusks.	身材極為高大的長毛獸人，有兩根長牙。	身材极为高大的长毛兽人，有两根长牙。		raws DESCRIPTION：CENOZOIC_MAMMOTH_WOOLLY_MAN
+A gigantic hairless mammal with a long neck and a small trunk.	龐大的無毛哺乳動物，脖子很長，還有一條小小的象鼻。	庞大的无毛哺乳动物，脖子很长，还有一条小小的象鼻。		raws DESCRIPTION：CENOZOIC_PARACERATHERIUM
+A very large hairless mammal person with a long neck and a small trunk	身材極為高大的無毛獸人，脖子很長，還有一條小小的象鼻。	身材极为高大的无毛兽人，脖子很长，还有一条小小的象鼻。		raws DESCRIPTION：CENOZOIC_PARACERATHERIUM_MAN
+A small flightless bird with a large beak.	不會飛、喙很大的小型鳥類。	不会飞、喙很大的小型鸟类。		raws DESCRIPTION：CENOZOIC_DODO
+A small flightless bird person with a large beak.	身材矮小、不會飛、喙很大的鳥人。	身材矮小、不会飞、喙很大的鸟人。		raws DESCRIPTION：CENOZOIC_DODO_MAN
+A large predatory flightless bird with a terrifying beak.	不會飛的大型掠食性鳥類，喙部令人望而生畏。	不会飞的大型掠食性鸟类，喙部令人望而生畏。		raws DESCRIPTION：CENOZOIC_KELENKEN
+A flightless bird person with a terrifying beak.	不會飛的鳥人，喙部令人望而生畏。	不会飞的鸟人，喙部令人望而生畏。		raws DESCRIPTION：CENOZOIC_KELENKEN_MAN
+Females are more than twice as large as males.	雌鳥的體型是雄鳥的兩倍以上。	雌鸟的体型是雄鸟的两倍以上。		raws DESCRIPTION：CENOZOIC_MOA
+They are primarily herbivorous.	主要以植物為食。	主要以植物为食。		raws DESCRIPTION：CENOZOIC_MOA
+A large flightless bird person.	身材高大、不會飛的鳥人。	身材高大、不会飞的鸟人。		raws DESCRIPTION：CENOZOIC_MOA_MAN
+Moa women are twice the size of moa men.	女恐鳥人的體型是男恐鳥人的兩倍。	女恐鸟人的体型是男恐鸟人的两倍。		raws DESCRIPTION：CENOZOIC_MOA_MAN
+A gigantic shark.	龐大的鯊魚。	庞大的鲨鱼。		raws DESCRIPTION：CENOZOIC_MEGALODON
+A very large legless shark person.	身材極為高大、沒有腿的鯊魚人。	身材极为高大、没有腿的鲨鱼人。		raws DESCRIPTION：CENOZOIC_MEGALODON_MAN
+A very large lizard.	體型非常大的蜥蜴。	体型非常大的蜥蜴。		raws DESCRIPTION：CENOZOIC_MEGALANIA
+A large lizard person.	身材高大的蜥蜴人。	身材高大的蜥蜴人。		raws DESCRIPTION：CENOZOIC_MEGALANIA_MAN
+A very large snake.	體型非常大的蛇。	体型非常大的蛇。		raws DESCRIPTION：CENOZOIC_TITANOBOA
+It is amphibious and constricts its prey.	牠水陸兩棲，會纏勒獵物致死。	它水陆两栖，会缠住猎物将其勒死。		raws DESCRIPTION：CENOZOIC_TITANOBOA
+A large legless snake person.	身材高大、沒有腿的蛇人。	身材高大、没有腿的蛇人。		raws DESCRIPTION：CENOZOIC_TITANOBOA_MAN
+A huge hairless mammal with a great shovel-like mouth capped with two tusks.	巨大的無毛哺乳動物，鏟子般的大嘴前端有兩根長牙。	巨大的无毛哺乳动物，铲子般的大嘴前端有两根长牙。		raws DESCRIPTION：CENOZOIC_PLATYBELODON
+It has a long trunk and two small upper tusks as well.	牠還有一條長鼻，上顎另有兩根較小的長牙。	它还有一条长鼻，上颌另有两根较小的长牙。		raws DESCRIPTION：CENOZOIC_PLATYBELODON
+A large hairless mammal person with a large shovel-like mouth and a trunk.	身材高大的無毛獸人，有鏟子般的大嘴和一條長鼻。	身材高大的无毛兽人，有铲子般的大嘴和一条长鼻。		raws DESCRIPTION：CENOZOIC_PLATYBELODON_MAN
+A large bulky mammal with a long snout.	身軀粗壯、吻部很長的大型哺乳動物。	身躯粗壮、吻部很长的大型哺乳动物。		raws DESCRIPTION：CENOZOIC_ENTELODON
+It can run quickly on its thin legs.	憑著細長的腿，牠能快速奔跑。	凭着细长的腿，它能快速奔跑。		raws DESCRIPTION：CENOZOIC_ENTELODON
+A large bulky mammal person with a long snout and skinny legs.	身材高大粗壯的獸人，吻部很長，雙腿細瘦。	身材高大粗壮的兽人，吻部很长，双腿细瘦。		raws DESCRIPTION：CENOZOIC_ENTELODON_MAN
+A huge hairless mammal with a forked horn.	長著分叉角的巨大無毛哺乳動物。	长着分叉角的巨大无毛哺乳动物。		raws DESCRIPTION：CENOZOIC_MEGACEROPS
+A large hairless mammal person with a forked horn.	身材高大、長著分叉角的無毛獸人。	身材高大、长着分叉角的无毛兽人。		raws DESCRIPTION：CENOZOIC_MEGACEROPS_MAN
+A very large cephalopod with a coiled shell.	有螺旋外殼、體型非常大的頭足類動物。	有螺旋外壳、体型非常大的头足类动物。		raws DESCRIPTION：CRETACEOUS_AMMONITE
+A large cephalod person with the tentacled face and shell of an ammonite.	身材高大的頭足人，有菊石般長著觸手的臉和外殼。	身材高大的头足人，有菊石那样长着触手的脸和外壳。		raws DESCRIPTION：CRETACEOUS_AMMONITE_MAN
+A huge marine turtle.	巨大的海龜。	巨大的海龟。		raws DESCRIPTION：CRETACEOUS_ARCHELON
+A large reptile person with the shell of a turtle.	身材高大、背著龜殼的爬蟲類人。	身材高大、背着龟壳的爬行类人。		raws DESCRIPTION：CRETACEOUS_ARCHELON_MAN
+A small feathered bipedal dinosaur with a sharp scything claw on its second toe.	長著羽毛的小型雙足恐龍，第二趾上有一根鐮刀般的利爪。	长着羽毛的小型双足恐龙，第二趾上有一根镰刀般的利爪。		raws DESCRIPTION：CRETACEOUS_VELOCIRAPTOR
+It can run very quickly.	牠能跑得非常快。	它能跑得非常快。		raws DESCRIPTION：CRETACEOUS_VELOCIRAPTOR
+A small feathered dinosaur person with a sharp claw on their second toe.	身材矮小、長著羽毛的恐龍人，第二趾上有一根利爪。	身材矮小、长着羽毛的恐龙人，第二趾上有一根利爪。		raws DESCRIPTION：CRETACEOUS_VELOCIRAPTOR_MAN、CRETACEOUS_BUITRERAPTOR_MAN
+They can run very quickly.	他們能跑得非常快。	他们能跑得非常快。		raws DESCRIPTION：CRETACEOUS_VELOCIRAPTOR_MAN
+A very small feathered bipedal dinosaur with a single claw on each side of its upper body.	體型很小、長著羽毛的雙足恐龍，上半身兩側各有一根爪子。	体型很小、长着羽毛的双足恐龙，上半身两侧各有一根爪子。		raws DESCRIPTION：CRETACEOUS_MONONYKUS
+A small feathered dinosaur person with a single claw on each arm.	身材矮小、長著羽毛的恐龍人，兩臂各有一根爪子。	身材矮小、长着羽毛的恐龙人，两臂各有一根爪子。		raws DESCRIPTION：CRETACEOUS_MONONYKUS_MAN
+A tiny feathered bipedal dinosaur with a single claw on each side of its upper body.	體型微小、長著羽毛的雙足恐龍，上半身兩側各有一根爪子。	体型微小、长着羽毛的双足恐龙，上半身两侧各有一根爪子。		raws DESCRIPTION：CRETACEOUS_LINHENYKUS
+A very small feathered bipedal dinosaur with a sharp scything claw on its second toe.	體型很小、長著羽毛的雙足恐龍，第二趾上有一根鐮刀般的利爪。	体型很小、长着羽毛的双足恐龙，第二趾上有一根镰刀般的利爪。		raws DESCRIPTION：CRETACEOUS_BUITRERAPTOR
+A large feathered bipedal dinosaur with a sharp scything claw on its second toe.	長著羽毛的大型雙足恐龍，第二趾上有一根鐮刀般的利爪。	长着羽毛的大型双足恐龙，第二趾上有一根镰刀般的利爪。		raws DESCRIPTION：CRETACEOUS_DEINONYCHUS
+A feathered dinosaur person with a sharp claw on their second toe.	長著羽毛的恐龍人，第二趾上有一根利爪。	长着羽毛的恐龙人，第二趾上有一根利爪。		raws DESCRIPTION：CRETACEOUS_DEINONYCHUS_MAN
+A very large feathered bipedal dinosaur with a sharp scything claw on its second toe.	體型非常大、長著羽毛的雙足恐龍，第二趾上有一根鐮刀般的利爪。	体型非常大、长着羽毛的双足恐龙，第二趾上有一根镰刀般的利爪。		raws DESCRIPTION：CRETACEOUS_UTAHRAPTOR
+A large feathered dinosaur person with a sharp claw on their second toe.	身材高大、長著羽毛的恐龍人，第二趾上有一根利爪。	身材高大、长着羽毛的恐龙人，第二趾上有一根利爪。		raws DESCRIPTION：CRETACEOUS_UTAHRAPTOR_MAN
+A gigantic aquatic reptile with four flippers and a huge toothy mouth.	龐大的水生爬蟲類，有四片鰭狀肢和一張佈滿利齒的巨口。	庞大的水生爬行动物，有四片鳍状肢和一张布满利齿的巨口。		raws DESCRIPTION：CRETACEOUS_MOSASAURUS
+A very large legless person with a giant toothy mouth.	身材極為高大、沒有腿的人，長著一張佈滿利齒的巨口。	身材极为高大、没有腿的人，长着一张布满利齿的巨口。		raws DESCRIPTION：CRETACEOUS_MOSASAURUS_MAN
+A huge bipedal herbivorous dinosaur.	巨大的雙足草食性恐龍。	巨大的双足食草恐龙。		raws DESCRIPTION：CRETACEOUS_PARASAUROLOPHUS、CRETACEOUS_IGUANODON
+It has a beaked mouth and a hollow crest atop is head.	牠的嘴呈喙狀，頭頂有中空的頭冠。	它的嘴呈喙状，头顶有中空的头冠。		raws DESCRIPTION：CRETACEOUS_PARASAUROLOPHUS
+A large dinosaur person with a beaked mouth and a hollow crest atop their head.	身材高大的恐龍人，嘴呈喙狀，頭頂有中空的頭冠。	身材高大的恐龙人，嘴呈喙状，头顶有中空的头冠。		raws DESCRIPTION：CRETACEOUS_PARASAUROLOPHUS_MAN
+It has two prominent thumb spikes and a beaked mouth.	牠的兩根拇指上有醒目的尖刺，嘴呈喙狀。	它的两根拇指上有醒目的尖刺，嘴呈喙状。		raws DESCRIPTION：CRETACEOUS_IGUANODON
+A very large dinosaur person with thumb spikes and a beaked mouth.	身材極為高大的恐龍人，拇指上有尖刺，嘴呈喙狀。	身材极为高大的恐龙人，拇指上有尖刺，嘴呈喙状。		raws DESCRIPTION：CRETACEOUS_IGUANODON_MAN
+A gigantic herbivorous quadrupedal dinosaur.	龐大的四足草食性恐龍。	庞大的四足食草恐龙。		raws DESCRIPTION：CRETACEOUS_TRICERATOPS
+It has a broad bony head frill and three horns.	牠頭上有寬大的骨質頸盾和三隻角。	它头上有宽大的骨质颈盾和三只角。		raws DESCRIPTION：CRETACEOUS_TRICERATOPS
+A very large person with a bony head frill and three horns.	身材極為高大的人，頭上有骨質頸盾和三隻角。	身材极为高大的人，头上有骨质颈盾和三只角。		raws DESCRIPTION：CRETACEOUS_TRICERATOPS_MAN
+A huge herbivorous quadrupedal dinosaur.	巨大的四足草食性恐龍。	巨大的四足食草恐龙。		raws DESCRIPTION：CRETACEOUS_KOSMOCERATOPS
+It has a broad spiky head frill and three horns.	牠頭上有寬大且多刺的頸盾和三隻角。	它头上有宽大且多刺的颈盾和三只角。		raws DESCRIPTION：CRETACEOUS_KOSMOCERATOPS
+A very large person with a spiky head frill and three horns.	身材極為高大的人，頭上有多刺的頸盾和三隻角。	身材极为高大的人，头上有多刺的颈盾和三只角。		raws DESCRIPTION：CRETACEOUS_KOSMOCERATOPS_MAN
+A very small bipedal herbivorous dinosaur with a bony head crest.	體型很小的雙足草食性恐龍，頭上有骨質頭冠。	体型很小的双足食草恐龙，头上有骨质头冠。		raws DESCRIPTION：CRETACEOUS_MICROCERATUS
+A small dinosaur person with a bony head crest.	身材矮小的恐龍人，頭上有骨質頭冠。	身材矮小的恐龙人，头上有骨质头冠。		raws DESCRIPTION：CRETACEOUS_MICROCERATUS_MAN
+A gigantic armored quadrupedal dinosaur with a mighty tail club.	龐大的披甲四足恐龍，尾端有一根強而有力的尾錘。	庞大的披甲四足恐龙，尾端有一根强有力的尾锤。		raws DESCRIPTION：CRETACEOUS_ANKYLOSAURUS
+It is a herbivore and has four horns.	牠是草食動物，有四隻角。	它是食草动物，有四只角。		raws DESCRIPTION：CRETACEOUS_ANKYLOSAURUS
+A very large herbivorous bipedal dinosaur with a thick domed head.	體型非常大的雙足草食性恐龍，頭頂隆起成厚實的圓頂。	体型非常大的双足食草恐龙，头顶隆起成厚实的圆顶。		raws DESCRIPTION：CRETACEOUS_PACHYCEPHALOSAURUS
+A large dinosaur person with a thick domed head.	身材高大的恐龍人，頭頂隆起成厚實的圓頂。	身材高大的恐龙人，头顶隆起成厚实的圆顶。		raws DESCRIPTION：CRETACEOUS_PACHYCEPHALOSAURUS_MAN
+A large flying reptile with a long neck and beak.	脖子和喙都很長的大型飛行爬蟲類。	脖子和喙都很长的大型飞行爬行动物。		raws DESCRIPTION：CRETACEOUS_QUETZALCOATLUS
+It can soar at amazing speeds.	牠能以驚人的速度翱翔。	它能以惊人的速度翱翔。		raws DESCRIPTION：CRETACEOUS_QUETZALCOATLUS
+A large flying reptile person with a long neck and beak.	身材高大、會飛的爬蟲類人，脖子和喙都很長。	身材高大、会飞的爬行类人，脖子和喙都很长。		raws DESCRIPTION：CRETACEOUS_QUETZALCOATLUS_MAN
+A very small bipedal herbivorous dinosaur with a thick domed head.	體型很小的雙足草食性恐龍，頭頂隆起成厚實的圓頂。	体型很小的双足食草恐龙，头顶隆起成厚实的圆顶。		raws DESCRIPTION：CRETACEOUS_COLEPIOCEPHALE
+A small dinosaur person with a thick domed head.	身材矮小的恐龍人，頭頂隆起成厚實的圓頂。	身材矮小的恐龙人，头顶隆起成厚实的圆顶。		raws DESCRIPTION：CRETACEOUS_COLEPIOCEPHALE_MAN
+A huge bipedal herbivorous dinosaur with a prominent head crest and a beaked mouth.	巨大的雙足草食性恐龍，有醒目的頭冠，嘴呈喙狀。	巨大的双足食草恐龙，有醒目的头冠，嘴呈喙状。		raws DESCRIPTION：CRETACEOUS_TSINTAOSAURUS
+A large dinosaur person with a beaked mouth and a prominent head crest.	身材高大的恐龍人，嘴呈喙狀，有醒目的頭冠。	身材高大的恐龙人，嘴呈喙状，有醒目的头冠。		raws DESCRIPTION：CRETACEOUS_TSINTAOSAURUS_MAN
+A huge feathered bipedal dinosaur with three gigantic claws on each hand.	長著羽毛的巨大雙足恐龍，每隻手上有三根巨爪。	长着羽毛的巨大双足恐龙，每只手上有三根巨爪。		raws DESCRIPTION：CRETACEOUS_THERIZINOSAURUS
+It is a herbivore with a beaked mouth.	牠是草食動物，嘴呈喙狀。	它是食草动物，嘴呈喙状。		raws DESCRIPTION：CRETACEOUS_THERIZINOSAURUS
+A very large feathered dinosaur person with three giant claws on each hand.	身材極為高大、長著羽毛的恐龍人，每隻手上有三根巨爪。	身材极为高大、长着羽毛的恐龙人，每只手上有三根巨爪。		raws DESCRIPTION：CRETACEOUS_THERIZINOSAURUS_MAN
+A huge bipedal dinosaur with a giant biting jaw and short arms.	巨大的雙足恐龍，長著善於撕咬的巨顎和短小的前肢。	巨大的双足恐龙，长着善于撕咬的巨颚和短小的前肢。		raws DESCRIPTION：CRETACEOUS_CARNOTAURUS、JURASSIC_TORVOSAURUS
+It has two small horns over its eyes.	牠的雙眼上方有兩隻小角。	它的双眼上方有两只小角。		raws DESCRIPTION：CRETACEOUS_CARNOTAURUS
+A gigantic bipedal dinosaur with a ferocious biting jaw and short arms.	龐大的雙足恐龍，長著兇猛的巨顎和短小的前肢。	庞大的双足恐龙，长着凶猛的巨颚和短小的前肢。		raws DESCRIPTION：CRETACEOUS_SPINOSAURUS_AEGYPTIACUS、CRETACEOUS_SPINOSAURUS_MIRABILIS
+It is amphibious and has a sail.	牠水陸兩棲，背上有帆。	它水陆两栖，背上有帆。		raws DESCRIPTION：CRETACEOUS_SPINOSAURUS_AEGYPTIACUS
+A gigantic bipedal dinosaur with a mighty jaw and very short arms with two claws.	龐大的雙足恐龍，長著強而有力的巨顎，前肢極短，各有兩根爪子。	庞大的双足恐龙，长着强有力的巨颚，前肢极短，各有两根爪子。		raws DESCRIPTION：CRETACEOUS_TYRANNOSAURUS
+A very large dinosaur person with a mighty jaw and very short arms with two fingers.	身材極為高大的恐龍人，長著強而有力的巨顎，手臂極短，只有兩根手指。	身材极为高大的恐龙人，长着强有力的巨颚，手臂极短，只有两根手指。		raws DESCRIPTION：CRETACEOUS_TYRANNOSAURUS_MAN
+A huge herbivorous quadrupedal dinosaur with a long neck and sail along its neck.	巨大的四足草食性恐龍，長長的脖子上長著帆狀棘。	巨大的四足食草恐龙，长长的脖子上长着帆状棘。		raws DESCRIPTION：CRETACEOUS_AMARGASAURUS
+A large dinosaur person with a long neck that has a sail.	身材高大的恐龍人，長長的脖子上長著帆狀棘。	身材高大的恐龙人，长长的脖子上长着帆状棘。		raws DESCRIPTION：CRETACEOUS_AMARGASAURUS_MAN
+A small feathered bipedal dinosaur with a beak.	長著羽毛和喙的小型雙足恐龍。	长着羽毛和喙的小型双足恐龙。		raws DESCRIPTION：CRETACEOUS_OVIRAPTOR
+A small feathered dinosaur person with a beak.	身材矮小、長著羽毛和喙的恐龍人。	身材矮小、长着羽毛和喙的恐龙人。		raws DESCRIPTION：CRETACEOUS_OVIRAPTOR_MAN
+A very small flying reptile.	體型很小的飛行爬蟲類。	体型很小的飞行爬行动物。		raws DESCRIPTION：CRETACEOUS_SINOPTERUS
+A small flying reptile person.	身材矮小、會飛的爬蟲類人。	身材矮小、会飞的爬行类人。		raws DESCRIPTION：CRETACEOUS_SINOPTERUS_MAN
+It is amphibious and has a sail and a horn.	牠水陸兩棲，背上有帆，頭上有角。	它水陆两栖，背上有帆，头上有角。		raws DESCRIPTION：CRETACEOUS_SPINOSAURUS_MIRABILIS
+A very small feathered bipedal dinosaur with an opposable fifth finger.	體型很小、長著羽毛的雙足恐龍，第五指能與其他手指對握。	体型很小、长着羽毛的双足恐龙，第五指能与其他手指对握。		raws DESCRIPTION：CRETACEOUS_HYPSILOPHODON
+It is a herbivore and has a beaked mouth.	牠是草食動物，嘴呈喙狀。	它是食草动物，嘴呈喙状。		raws DESCRIPTION：CRETACEOUS_HYPSILOPHODON
+A small feathered dinosaur person with a beaked mouth.	身材矮小、長著羽毛的恐龍人，嘴呈喙狀。	身材矮小、长着羽毛的恐龙人，嘴呈喙状。		raws DESCRIPTION：CRETACEOUS_HYPSILOPHODON_MAN
+A huge quadrupedal dinosaur with an armored carapace.	身披鎧甲般背甲的巨大四足恐龍。	身披铠甲般背甲的巨大四足恐龙。		raws DESCRIPTION：CRETACEOUS_NODOSAURUS
+It is a herbivore.	牠是草食動物。	它是食草动物。		raws DESCRIPTION：CRETACEOUS_NODOSAURUS
+A large dinosaur person with an armored carapace.	身材高大、身披鎧甲般背甲的恐龍人。	身材高大、身披铠甲般背甲的恐龙人。		raws DESCRIPTION：CRETACEOUS_NODOSAURUS_MAN
+A huge armored fish with powerful biting jaws.	身披甲冑、咬合力強大的巨大魚類。	身披甲胄、咬合力强大的巨大鱼类。		raws DESCRIPTION：DEVONIAN_DUNKLEOSTEUS
+A large legless armor-plated person with the powerful biting jaws of a dunkleosteus.	身材高大、沒有腿、身披甲冑的人，長著鄧氏魚那咬合力強大的雙顎。	身材高大、没有腿、身披甲胄的人，长着邓氏鱼那咬合力强大的双颚。		raws DESCRIPTION：DEVONIAN_DUNKLEOSTEUS_MAN
+A small four-finned fish suited to short excursions ashore.	有四片鰭的小型魚類，能短暫上岸活動。	有四片鳍的小型鱼类，能短暂上岸活动。		raws DESCRIPTION：DEVONIAN_TIKTAALIK
+A small person somewhat like a fish and somewhat like an amphibian.	身材矮小的人，模樣介於魚類與兩棲動物之間。	身材矮小的人，模样介于鱼类和两栖动物之间。		raws DESCRIPTION：DEVONIAN_TIKTAALIK_MAN
+An aquatic arthropod with a wide head and tapering body.	頭部寬大、身體逐漸收窄的水生節肢動物。	头部宽大、身体逐渐收窄的水生节肢动物。		raws DESCRIPTION：DEVONIAN_HIBBERTOPTERUS_SCOULERI
+A small arthropod person with a broad head.	身材矮小、頭部寬大的節肢人。	身材矮小、头部宽大的节肢人。		raws DESCRIPTION：DEVONIAN_HIBBERTOPTERUS_SCOULERI_MAN
+A tiny aquatic arthropod with a broad head and tapering body.	頭部寬大、身體逐漸收窄的微小水生節肢動物。	头部宽大、身体逐渐收窄的微小水生节肢动物。		raws DESCRIPTION：DEVONIAN_DREPANOPTERUS
+A tiny arthropod that walks tilted upright on two large legs.	微小的節肢動物，靠兩條粗大的步足斜立行走。	微小的节肢动物，靠两条粗大的步足斜立行走。		raws DESCRIPTION：DEVONIAN_MIMETASTER
+Six spined projections radiate outward from its head shield.	頭盾向外放射伸出六根帶刺的突起。	头盾向外放射伸出六根带刺的突起。		raws DESCRIPTION：DEVONIAN_MIMETASTER
+A small arthropod person with six spined projections radiating out from its head shield.	身材矮小的節肢人，頭盾向外伸出六根帶刺的突起。	身材矮小的节肢人，头盾向外伸出六根带刺的突起。		raws DESCRIPTION：DEVONIAN_MIMETASTER_MAN
+A very large aquatic reptile with fish-like fins and an elongated snout.	體型非常大的水生爬蟲類，有魚一般的鰭和細長的吻部。	体型非常大的水生爬行动物，有鱼一般的鳍和细长的吻部。		raws DESCRIPTION：JURASSIC_ICHTHYOSAURUS
+A large legless reptile person with the elongated snouth of an ichthyosaurus.	身材高大、沒有腿的爬蟲類人，長著魚龍那細長的吻部。	身材高大、没有腿的爬行类人，长着鱼龙那细长的吻部。		raws DESCRIPTION：JURASSIC_ICHTHYOSAURUS_MAN
+A large dinosaur person with a fierce jaw and short arms.	身材高大的恐龍人，長著兇猛的巨顎和短小的手臂。	身材高大的恐龙人，长着凶猛的巨颚和短小的手臂。		raws DESCRIPTION：JURASSIC_TORVOSAURUS_MAN
+A tiny feathered dinosaur with wings capable of flight.	長著羽毛、翅膀能飛的微小恐龍。	长着羽毛、翅膀能飞的微小恐龙。		raws DESCRIPTION：JURASSIC_ARCHAEOPTERYX
+A small feathered dinosaur person with wings.	身材矮小、長著羽毛和翅膀的恐龍人。	身材矮小、长着羽毛和翅膀的恐龙人。		raws DESCRIPTION：JURASSIC_ARCHAEOPTERYX_MAN
+A very large aquatic reptile with four flippers and a long neck.	體型非常大的水生爬蟲類，有四片鰭狀肢和長長的脖子。	体型非常大的水生爬行动物，有四片鳍状肢和长长的脖子。		raws DESCRIPTION：JURASSIC_PLESIOSAURUS
+A large legless reptile person with a long neck.	身材高大、沒有腿的爬蟲類人，脖子很長。	身材高大、没有腿的爬行类人，脖子很长。		raws DESCRIPTION：JURASSIC_PLESIOSAURUS_MAN
+A huge quadrupedal dinosaur with a prominent row of plates along its back and a spiked tail.	巨大的四足恐龍，背上有一排醒目的骨板，尾巴帶刺。	巨大的四足恐龙，背上有一排醒目的骨板，尾巴带刺。		raws DESCRIPTION：JURASSIC_STEGOSAURUS
+It is a herbivore but can defend itself.	牠雖是草食動物，卻有自保能力。	它虽是食草动物，却有自保能力。		raws DESCRIPTION：JURASSIC_STEGOSAURUS
+A large dinosaur person with plates along its back and a spiked tail.	身材高大的恐龍人，背上有骨板，尾巴帶刺。	身材高大的恐龙人，背上有骨板，尾巴带刺。		raws DESCRIPTION：JURASSIC_STEGOSAURUS_MAN
+A very small flying reptile with a long narrow mouth.	體型很小的飛行爬蟲類，嘴巴又長又窄。	体型很小的飞行爬行动物，嘴巴又长又窄。		raws DESCRIPTION：JURASSIC_PTERODACTYLUS
+A small winged reptile person with a long narrow mouth.	身材矮小、長著翅膀的爬蟲類人，嘴巴又長又窄。	身材矮小、长着翅膀的爬行类人，嘴巴又长又窄。		raws DESCRIPTION：JURASSIC_PTERODACTYLUS_MAN
+A tiny flying reptile with a small round head.	頭小而圓的微小飛行爬蟲類。	头小而圆的微小飞行爬行动物。		raws DESCRIPTION：JURASSIC_JEHOLOPTERUS
+A small winged reptile person with a round head.	身材矮小、長著翅膀的爬蟲類人，頭圓圓的。	身材矮小、长着翅膀的爬行类人，头圆圆的。		raws DESCRIPTION：JURASSIC_JEHOLOPTERUS_MAN
+A very large carnivorous bipedal dinosaur with two parallel head crests and short arms.	體型非常大的雙足肉食性恐龍，頭上有兩道平行的頭冠，前肢短小。	体型非常大的双足食肉恐龙，头上有两道平行的头冠，前肢短小。		raws DESCRIPTION：JURASSIC_DILOPHOSAURUS
+A large dinosaur person with two parallel head crests and short arms.	身材高大的恐龍人，頭上有兩道平行的頭冠，手臂短小。	身材高大的恐龙人，头上有两道平行的头冠，手臂短小。		raws DESCRIPTION：JURASSIC_DILOPHOSAURUS_MAN
+A very large carnivorous bipedal dinosaur with a horn and short arms.	體型非常大的雙足肉食性恐龍，頭上有角，前肢短小。	体型非常大的双足食肉恐龙，头上有角，前肢短小。		raws DESCRIPTION：JURASSIC_CERATOSAURUS
+A very large herbivorous quadrupedal dinosaur with a long neck.	體型非常大的四足草食性恐龍，脖子很長。	体型非常大的四足食草恐龙，脖子很长。		raws DESCRIPTION：JURASSIC_EUROPASAURUS
+A large dinosaur person with a long neck.	身材高大、脖子很長的恐龍人。	身材高大、脖子很长的恐龙人。		raws DESCRIPTION：JURASSIC_EUROPASAURUS_MAN
+A towering herbivorous quadrupedal dinosaur with a long neck.	身形高聳的四足草食性恐龍，脖子很長。	身形高耸的四足食草恐龙，脖子很长。		raws DESCRIPTION：JURASSIC_BRACHIOSAURUS
+A very large dinosaur person with a long neck.	身材極為高大、脖子很長的恐龍人。	身材极为高大、脖子很长的恐龙人。		raws DESCRIPTION：JURASSIC_BRACHIOSAURUS_MAN
+A very large bipedal dinosaur with a giant biting jaw and a strong flexible neck.	體型非常大的雙足恐龍，長著善於撕咬的巨顎，脖子強壯而靈活。	体型非常大的双足恐龙，长着善于撕咬的巨颚，脖子强壮而灵活。		raws DESCRIPTION：JURASSIC_AFROVENATOR
+A large dinosaur person with a fierce jaw and a strong flexible neck.	身材高大的恐龍人，長著兇猛的巨顎，脖子強壯而靈活。	身材高大的恐龙人，长着凶猛的巨颚，脖子强壮而灵活。		raws DESCRIPTION：JURASSIC_AFROVENATOR_MAN
+A very small flying reptile with long wings and a ferocious jaw.	體型很小的飛行爬蟲類，翅膀很長，嘴顎兇猛。	体型很小的飞行爬行动物，翅膀很长，嘴颚凶猛。		raws DESCRIPTION：JURASSIC_RHAMPHORHYNCHUS
+A small winged reptile person with a ferocious jaw.	身材矮小、長著翅膀的爬蟲類人，嘴顎兇猛。	身材矮小、长着翅膀的爬行类人，嘴颚凶猛。		raws DESCRIPTION：JURASSIC_RHAMPHORHYNCHUS_MAN
+A tiny scuttling arthropod with large compound eyes.	長著大複眼、快步疾行的微小節肢動物。	长着大复眼、快步疾行的微小节肢动物。		raws DESCRIPTION：JURASSIC_OSTENOCARIS
+A small arthropod person with large compound eyes.	身材矮小、長著大複眼的節肢人。	身材矮小、长着大复眼的节肢人。		raws DESCRIPTION：JURASSIC_OSTENOCARIS_MAN
+An aquatic arthropod with a pronounced head structure and frontal appendages for filter feeding.	水生節肢動物，頭部構造醒目，前端有用來濾食的附肢。	水生节肢动物，头部构造醒目，前端有用来滤食的附肢。		raws DESCRIPTION：ORDOVICIAN_AEGIROCASSIS
+It is large for an arthropod.	以節肢動物而言，牠的體型算是很大。	就节肢动物而言，它的体型算是很大。		raws DESCRIPTION：ORDOVICIAN_AEGIROCASSIS
+An arthropod person with the pronounced head shape of an aegirocassis.	長著海神盔蝦那醒目頭部的節肢人。	长着海神盔虾那醒目头部的节肢人。		raws DESCRIPTION：ORDOVICIAN_AEGIROCASSIS_MAN
+A very small amphibian with a wedge-shaped head and long tail.	體型很小的兩棲動物，頭呈楔形，尾巴很長。	体型很小的两栖动物，头呈楔形，尾巴很长。		raws DESCRIPTION：PERMIAN_DIPLOCAULUS
+A small amphibian person with the wedge-shaped head and tail of a diplocaulus.	身材矮小的兩棲人，長著笠頭螈的楔形頭部與尾巴。	身材矮小的两栖人，长着笠头螈的楔形头部和尾巴。		raws DESCRIPTION：PERMIAN_DIPLOCAULUS_MAN
+A very small squat amphibian with a round tummy and long tail.	體型很小、矮胖的兩棲動物，肚子圓滾滾，尾巴很長。	体型很小、矮胖的两栖动物，肚子圆滚滚，尾巴很长。		raws DESCRIPTION：PERMIAN_ERYOPS
+A large shark with a strikingly bizarre tooth whorl for biting prey.	大型鯊魚，長著用來咬獵物、模樣極為古怪的螺旋齒列。	大型鲨鱼，长着用来咬猎物、模样极为古怪的螺旋齿列。		raws DESCRIPTION：PERMIAN_HELICOPRION
+A large legless shark person with the bizarre tooth whorl of a helicoprion.	身材高大、沒有腿的鯊魚人，長著旋齒鯊那古怪的螺旋齒列。	身材高大、没有腿的鲨鱼人，长着旋齿鲨那古怪的螺旋齿列。		raws DESCRIPTION：PERMIAN_HELICOPRION_MAN
+A large quadruped with a prominent sail along its back.	背上有醒目背帆的大型四足動物。	背上有醒目背帆的大型四足动物。		raws DESCRIPTION：PERMIAN_DIMETRODON
+A large person with the prominent back sail and tail of a dimetrodon.	身材高大的人，長著異齒龍醒目的背帆與尾巴。	身材高大的人，长着异齿龙醒目的背帆和尾巴。		raws DESCRIPTION：PERMIAN_DIMETRODON_MAN
+A large person with the powerful jaws and tail of an anteosaurus.	身材高大的人，長著安蒂歐獸強而有力的雙顎與尾巴。	身材高大的人，长着安蒂欧兽强有力的双颚和尾巴。		raws DESCRIPTION：PERMIAN_ANTEOSAURUS_MAN
+A large quadruped with two teeth and a beak for eating plants.	大型四足動物，有兩顆牙和用來啃食植物的喙。	大型四足动物，有两颗牙和用来啃食植物的喙。		raws DESCRIPTION：PERMIAN_LYSTROSAURUS
+A heavily-built person with the two teeth and beak of a lystrosaurus.	體格壯碩的人，長著水龍獸的兩顆牙和喙。	体格壮硕的人，长着水龙兽的两颗牙和喙。		raws DESCRIPTION：PERMIAN_LYSTROSAURUS_MAN
+A large aquatic arthropod with two pincers attached to its front and a sleek segmented body.	大型水生節肢動物，前端有兩隻螯，身體呈流線型且分節。	大型水生节肢动物，前端有两只螯，身体呈流线型且分节。		raws DESCRIPTION：SILURIAN_JAEKELOPTERUS
+A large arthropod person with two pincers attached to their head.	身材高大的節肢人，頭上長著兩隻螯。	身材高大的节肢人，头上长着两只螯。		raws DESCRIPTION：SILURIAN_JAEKELOPTERUS_MAN
+A small amphibian with a flat body.	身體扁平的小型兩棲動物。	身体扁平的小型两栖动物。		raws DESCRIPTION：TRIASSIC_GERROTHORAX
+A small amphibian person with a flat body.	身材矮小、身體扁平的兩棲人。	身材矮小、身体扁平的两栖人。		raws DESCRIPTION：TRIASSIC_GERROTHORAX_MAN
+A very small bipedal dinosaur with a long tail and short arms.	體型很小的雙足恐龍，尾巴很長，前肢短小。	体型很小的双足恐龙，尾巴很长，前肢短小。		raws DESCRIPTION：TRIASSIC_EORAPTOR
+It is omnivorous.	牠是雜食性動物。	它是杂食性动物。		raws DESCRIPTION：TRIASSIC_EORAPTOR
+A small dinosaur person with a long tail and short arms.	身材矮小的恐龍人，尾巴很長，手臂短小。	身材矮小的恐龙人，尾巴很长，手臂短小。		raws DESCRIPTION：TRIASSIC_EORAPTOR_MAN
+A tiny reptile with a gliding membrane between its back legs.	微小的爬蟲類，後腿之間有滑翔用的翼膜。	微小的爬行动物，后腿之间有滑翔用的翼膜。		raws DESCRIPTION：TRIASSIC_SHAROVIPTERYX
+A small reptile person with a gliding membrance between their legs.	身材矮小的爬蟲類人，雙腿之間有滑翔用的翼膜。	身材矮小的爬行类人，双腿之间有滑翔用的翼膜。		raws DESCRIPTION：TRIASSIC_SHAROVIPTERYX_MAN
+They also have wings.	他們還長著翅膀。	他们还长着翅膀。		raws DESCRIPTION：TRIASSIC_SHAROVIPTERYX_MAN
+A very small reptile with a divided carapace.	體型很小的爬蟲類，背甲分為兩片。	体型很小的爬行动物，背甲分为两片。		raws DESCRIPTION：TRIASSIC_PSEPHODERMA
+A small reptile person with a wide two-part carapace.	身材矮小的爬蟲類人，背著寬大的兩片式背甲。	身材矮小的爬行类人，背着宽大的两片式背甲。		raws DESCRIPTION：TRIASSIC_PSEPHODERMA_MAN
+A tiny bipedal dinosaur.	微小的雙足恐龍。	微小的双足恐龙。		raws DESCRIPTION：TRIASSIC_PROCOMPSOGNATHUS
+It runs along the ground and eats small prey.	牠在地面奔跑，捕食小型獵物。	它在地面奔跑，捕食小型猎物。		raws DESCRIPTION：TRIASSIC_PROCOMPSOGNATHUS
+A very small reptile with a prehensile tail and giant claws on its second foredigits.	體型很小的爬蟲類，尾巴能捲握，前肢第二指上有巨爪。	体型很小的爬行动物，尾巴能卷握，前肢第二指上有巨爪。		raws DESCRIPTION：TRIASSIC_DREPANOSAURUS
+A small reptile person with a prehensile tail and giant claws on their second foredigits.	身材矮小的爬蟲類人，尾巴能捲握，第二根手指上有巨爪。	身材矮小的爬行类人，尾巴能卷握，第二根手指上有巨爪。		raws DESCRIPTION：TRIASSIC_DREPANOSAURUS_MAN
+A small underground monster that crawls across the cavern wall with its four clawed hands.	棲息於地底的小型怪物，用四隻帶爪的手在洞穴岩壁上爬行。	栖息于地下的小型怪物，用四只带爪的手在洞穴岩壁上爬行。		raws DESCRIPTION：CREEPING_EYE
+It has a single large eye which can shine with its own light, otherwise its stony skin blends in with the rock.	牠只有一隻大眼睛，能自己發光；除此之外，牠石頭般的皮膚與岩石融為一體。	它只有一只大眼睛，能自己发光；除此之外，它石头般的皮肤与岩石融为一体。		raws DESCRIPTION：CREEPING_EYE
+It has no mouth and is said to feed on evil alone.	牠沒有嘴，據說只以邪惡為食。	它没有嘴，据说只以邪恶为食。		raws DESCRIPTION：CREEPING_EYE
+A huge cave monster with hundreds of feet moving along the bottom of its long body.	巨大的洞穴怪物，長長的身體底下有數百隻腳在爬動。	巨大的洞穴怪物，长长的身体底下有数百只脚在爬动。		raws DESCRIPTION：VORACIOUS_CAVE_CRAWLER
+In place of a head, it has an enormous toothy maw.	牠沒有頭，取而代之的是一張佈滿利齒的血盆大口。	它没有头，取而代之的是一张布满利齿的血盆大口。		raws DESCRIPTION：VORACIOUS_CAVE_CRAWLER
+A fearsome, long-toothed mouth the size of a man's head, flying on bat wings.	一張人頭大小、長滿長牙的駭人大嘴，拍著蝙蝠翅膀飛行。	一张人头大小、长满长牙的骇人大嘴，扇着蝙蝠翅膀飞行。		raws DESCRIPTION：HUNGRY_HEAD
+It is found in deep caves.	棲息於地底深處的洞穴。	栖息于地下深处的洞穴。		raws DESCRIPTION：HUNGRY_HEAD
+A huge monster with an enormous tail, covered with thick fur.	長著巨大尾巴、全身覆蓋厚毛的巨大怪物。	长着巨大尾巴、全身覆盖厚毛的巨大怪物。		raws DESCRIPTION：RUTHERER
+They run on four legs and can be found deep under the earth.	牠們用四條腿奔跑，棲息於地底深處。	它们用四条腿奔跑，栖息于地下深处。		raws DESCRIPTION：RUTHERER
+A large, long-bodied grazer with a thick mane that feeds on the tops of towercap mushrooms deep under the earth.	身軀修長的大型食草動物，長著濃密鬃毛，在地底深處啃食塔帽菇的菌傘。	身躯修长的大型食草动物，长着浓密鬃毛，在地下深处啃食塔帽菇的菌盖。		raws DESCRIPTION：DRALTHA
+A gigantic version of its tiny cousin, this long, slimy creature tunnels through the rocks deep underground.	體型比牠微小的近親大上許多，這種黏滑的長條生物在地底深處的岩層中鑽洞穿行。	体型比它微小的近亲大上许多，这种黏滑的长条生物在地下深处的岩层中钻洞穿行。		raws DESCRIPTION：GIANT_EARTHWORM
+A gigantic monster, once a dragon, now adapted to and polluted by the underground.	龐大的怪物，原本是龍，如今已適應地底環境，也被地底汙染。	庞大的怪物，原本是龙，如今已适应地下环境，也被地下污染。		raws DESCRIPTION：CAVE_DRAGON
+Its wings fall limp at its side.	牠的翅膀無力地垂在身側。	它的翅膀无力地垂在身侧。		raws DESCRIPTION：CAVE_DRAGON
+Its face is full of incredibly long teeth.	牠滿嘴都是長得驚人的牙齒。	它满嘴都是长得惊人的牙齿。		raws DESCRIPTION：CAVE_DRAGON
+Its eyes are large to penetrate the darkness.	牠的眼睛很大，能看穿黑暗。	它的眼睛很大，能看穿黑暗。		raws DESCRIPTION：CAVE_DRAGON
+A humanoid monster found lurking far underground.	潛伏在地底深處的人形怪物。	潜伏在地下深处的人形怪物。		raws DESCRIPTION：REACHER
+It feigns death, usually near water, until a victim passes by.	牠通常在水邊裝死，等待獵物經過。	它通常在水边装死，等待猎物经过。		raws DESCRIPTION：REACHER
+It then uses its long arms to drag its prey into the water to drown or strangle them.	接著牠會用長長的手臂把獵物拖進水裡淹死或勒死。	接着它会用长长的手臂把猎物拖进水里淹死或勒死。		raws DESCRIPTION：REACHER
+A small, round humanoid found wandering the caves deep underground.	身材矮小渾圓的人形生物，在地底深處的洞穴中四處遊蕩。	身材矮小浑圆的人形生物，在地下深处的洞穴中四处游荡。		raws DESCRIPTION：GORLAK
+Most of its body is taken up by a huge tusked mouth.	牠的身體大半是一張長著獠牙的巨口。	它的身体大半是一张长着獠牙的巨口。		raws DESCRIPTION：GORLAK
+A tiny sea creature which dwells on the ocean floor, devoid of senses or motion.	棲息在海底的微小海洋生物，沒有感官，也不會動。	栖息在海底的微小海洋生物，没有感官，也不会动。		raws DESCRIPTION：SPONGE
+A person with the head, shell, and tail of a horseshoe crab.	長著鱟的頭部、甲殼與尾巴的人。	长着鲎的头部、甲壳和尾巴的人。		raws DESCRIPTION：HORSESHOE_CRAB_MAN
+A large, predatory marine mammal.	大型的掠食性海洋哺乳動物。	大型的掠食性海洋哺乳动物。		raws DESCRIPTION：ELEPHANT_SEAL
+A small marine mammal.	小型海洋哺乳動物。	小型海洋哺乳动物。		raws DESCRIPTION：HARP_SEAL
+Its young are prized for their white fur.	牠的幼獸因一身白毛而備受珍視。	它的幼崽因一身白毛而备受珍视。		raws DESCRIPTION：HARP_SEAL
+A tiny, mollusk with a large shell and many tentacles.	有大型外殼和許多觸手的微小軟體動物。	有大型外壳和许多触手的微小软体动物。		raws DESCRIPTION：NAUTILUS；術語例外：软体
+A fluffy, pudge-filled being, known for its warm heart and stumble bumblings.	毛茸茸、圓滾滾的生物，以心地溫暖、走路跌跌撞撞聞名。	毛茸茸、圆滚滚的生物，以心地温暖、走路跌跌撞撞闻名。		raws DESCRIPTION：WAMBLER_FLUFFY
+A tiny reptile, running on two legs.	用兩條腿奔跑的微小爬蟲類。	用两条腿奔跑的微小爬行动物。		raws DESCRIPTION：LIZARD_RHINO_TWO_LEGGED
+It has a horn on the end of its nose.	牠的鼻尖上有一隻角。	它的鼻尖上有一只角。		raws DESCRIPTION：LIZARD_RHINO_TWO_LEGGED
+A tiny translucent creature, found in evil forests.	棲息於邪惡森林的微小半透明生物。	栖息于邪恶森林的微小半透明生物。		raws DESCRIPTION：SPIDER_PHANTOM
+A tiny insect with a pulsating, lumpy body.	身體凹凸不平、不停搏動的微小昆蟲。	身体凹凸不平、不停搏动的微小昆虫。		raws DESCRIPTION：GNAT_BLOOD
+It is an evil bug that seeks blood.	這種邪惡的蟲子會四處尋找血液。	这种邪恶的虫子会四处寻找血液。		raws DESCRIPTION：GNAT_BLOOD
+A relatively large lizard.	體型相對較大的蜥蜴。	体型相对较大的蜥蜴。		raws DESCRIPTION：SKINK
+It can be found in most climates, foraging for bugs during daylight hours.	大多數氣候區都看得到牠，白天會四處覓食蟲子。	大多数气候区都能见到它，白天会四处觅食虫子。		raws DESCRIPTION：SKINK
+A colorful lizard that spends its life hunting insects with its long tongue.	色彩鮮豔的蜥蜴，一生都用長舌捕食昆蟲。	色彩鲜艳的蜥蜴，一生都用长舌捕食昆虫。		raws DESCRIPTION：CHAMELEON
+It moves slowly through the trees, spying the surroundings with its independently roving eyes.	牠在樹間緩慢移動，用能各自轉動的雙眼觀察四周。	它在树间缓慢移动，用能各自转动的双眼观察四周。		raws DESCRIPTION：CHAMELEON
+A relatively large arboreal lizard found in the tropical forests.	棲息在熱帶森林、生活在樹上、體型相對較大的蜥蜴。	栖息在热带森林、生活在树上、体型相对较大的蜥蜴。		raws DESCRIPTION：IGUANA
+Though it is a vegetarian, and mainly docile, it may whip with its extremely long tail when angered.	牠雖是草食性，性情大多溫馴，被激怒時卻可能用極長的尾巴抽打。	它虽是食草的，性情大多温顺，被激怒时却可能用极长的尾巴抽打。		raws DESCRIPTION：IGUANA
+A medium-sized reptile with a thick shell, which it can retreat into when threatened.	背著厚殼的中型爬蟲類，遇到威脅時會縮進殼裡。	背着厚壳的中型爬行动物，遇到威胁时会缩进壳里。		raws DESCRIPTION：SNAPPING
+This creature can administer a painful bite.	被這種生物咬一口會很痛。	被这种生物咬一口会很痛。		raws DESCRIPTION：SNAPPING
+A large reptile with a thick ridged shell.	背著厚實稜脊甲殼的大型爬蟲類。	背着厚实棱脊甲壳的大型爬行动物。		raws DESCRIPTION：ALLIGATOR
+It has been known to consume snakes and smaller turtles, and its bite can amputate fingers.	已知牠會吃蛇和體型較小的龜，咬合力足以咬斷手指。	已知它会吃蛇和体型较小的龟，咬合力足以咬断手指。		raws DESCRIPTION：ALLIGATOR
+A small river mammal with a flat tail, known for building wooden dams.	尾巴扁平的小型河川哺乳動物，以築木壩聞名。	尾巴扁平的小型河流哺乳动物，以筑木坝闻名。		raws DESCRIPTION：BEAVER
+A large river monster, known for building huge wooden fortresses.	大型河川怪物，以建造巨大的木造要塞聞名。	大型河流怪物，以建造巨大的木制要塞闻名。		raws DESCRIPTION：GIANT_BEAVER
+A tiny, aquatic, worm-like creature that feeds on blood.	以吸血維生的微小水生蠕蟲狀生物。	以吸血为生的微小水生蠕虫状生物。		raws DESCRIPTION：LEECH
+A small, predatory, weasel-like mammal.	形似伶鼬的小型掠食性哺乳動物。	形似伶鼬的小型掠食性哺乳动物。		raws DESCRIPTION：MINK
+It is also semi-aquatic.	牠也是半水生動物。	它也是半水生动物。		raws DESCRIPTION：MINK
+A small, intelligent vermin with a long naked tail.	聰明的小型害獸，有一條光禿禿的長尾巴。	聪明的小型害兽，有一条光秃秃的长尾巴。		raws DESCRIPTION：RAT
+A small, spineless, eel-like fish that lives on the bottom of the ocean.	棲息在海底、沒有脊椎、形似鰻魚的小型魚類。	栖息在海底、没有脊椎、形似鳗鱼的小型鱼类。		raws DESCRIPTION：FISH_HAGFISH
+It can turn the water around its body into a cloud of slime to escape predators.	牠能把身體周圍的海水變成一團黏液，藉此擺脫掠食者。	它能把身体周围的海水变成一团黏液，借此摆脱捕食者。		raws DESCRIPTION：FISH_HAGFISH
+A small, jawless, filter-feeding fish found in brooks and streams.	棲息於溪流、沒有上下顎、靠濾食維生的小型魚類。	栖息于溪流、没有上下颌、靠滤食为生的小型鱼类。		raws DESCRIPTION：FISH_LAMPREY_BROOK
+A medium-sized, winged fish found in the muddy coasts of both temperate and tropical waters.	棲息於溫帶與熱帶泥岸海域、長著翼狀胸鰭的中型魚類。	栖息于温带和热带泥岸海域、长着翼状胸鳍的中型鱼类。		raws DESCRIPTION：FISH_RAY_BAT
+A small, shark-like creature that lives in the ocean's muddy shallows.	形似鯊魚的小型生物，棲息在海洋的泥質淺灘。	形似鲨鱼的小型生物，栖息在海洋的泥质浅滩。		raws DESCRIPTION：FISH_RATFISH_SPOTTED
+Its skin sparkles and it has a venomous spine on its back.	牠的皮膚閃閃發亮，背上有一根毒棘。	它的皮肤闪闪发亮，背上有一根毒棘。		raws DESCRIPTION：FISH_RATFISH_SPOTTED
+A tiny blue-green oceanic fish, found only in temperate waters.	微小的藍綠色海洋魚類，只出沒於溫帶海域。	微小的蓝绿色海洋鱼类，只出没于温带海域。		raws DESCRIPTION：FISH_ANCHOVY
+A tiny, curved and colorful fish found in coral reefs.	身體彎曲、色彩鮮豔的微小魚類，棲息於珊瑚礁。	身体弯曲、色彩鲜艳的微小鱼类，栖息于珊瑚礁。		raws DESCRIPTION：FISH_SEAHORSE
+A small, nocturnal, marine fish.	夜行性的小型海洋魚類。	夜行性的小型海洋鱼类。		raws DESCRIPTION：FISH_GLASSEYE
+It can be found hunting in coral reefs.	常在珊瑚礁中獵食。	常在珊瑚礁中捕食。		raws DESCRIPTION：FISH_GLASSEYE
+A small, round, brightly-colored fish found in coral reefs.	棲息於珊瑚礁、圓滾滾又色彩鮮豔的小型魚類。	栖息于珊瑚礁、圆滚滚又色彩鲜艳的小型鱼类。		raws DESCRIPTION：FISH_PUFFER_WHITE_SPOTTED
+A short, sturdy creature fond of drink and industry.	矮小結實的生物，愛喝酒，也愛做工。	矮小结实的生物，爱喝酒，也爱干活。		raws DESCRIPTION：DWARF
+A small, squat humanoid with large pointy ears and yellow glowing eyes.	矮小敦實的人形生物，有一對尖尖的大耳朵和發著黃光的眼睛。	矮小敦实的人形生物，有一对尖尖的大耳朵和发着黄光的眼睛。		raws DESCRIPTION：KOBOLD
+A small humanoid creature with a mischievous, toothy grin.	小型人形生物，咧著滿口尖牙，笑得一臉調皮。	小型人形生物，咧着满口尖牙，笑得一脸调皮。		raws DESCRIPTION：GREMLIN
+A huge humanoid monster with coarse fur, large tusks and horns.	巨大的人形怪物，有粗硬的毛、大獠牙和角。	巨大的人形怪物，有粗硬的毛、大獠牙和角。		raws DESCRIPTION：TROLL
+A gigantic creature resembling a human, almost unparalleled in size.	形似人類的巨大生物，體型幾乎無可匹敵。	形似人类的巨大生物，体型几乎无可匹敌。		raws DESCRIPTION：GIANT
+A large ape-like creature with white fur, found in the snowy wilds.	形似猿類的大型生物，有一身白毛，出沒於雪原荒野。	形似猿类的大型生物，有一身白毛，出没于雪原荒野。		raws DESCRIPTION：YETI
+A large humanoid monster from the wild tundra.	來自荒涼凍原的大型人形怪物。	来自荒凉冻原的大型人形怪物。		raws DESCRIPTION：BLIZZARD_MAN
+It has translucent skin, icicles for teeth, red glowing eyes and pointed ears.	牠的皮膚半透明，牙齒是冰柱，眼睛發著紅光，耳朵尖尖的。	它的皮肤半透明，牙齿是冰柱，眼睛发着红光，耳朵尖尖的。		raws DESCRIPTION：BLIZZARD_MAN
+A tiny, giggling humanoid with lacy wings.	長著蕾絲般翅膀、咯咯笑個不停的微小人形生物。	长着蕾丝般翅膀、咯咯笑个不停的微小人形生物。		raws DESCRIPTION：FAIRY
+A creature from the evil swamp.	來自邪惡沼澤的生物。	来自邪恶沼泽的生物。		raws DESCRIPTION：BEAK_DOG
+It resembles a squat, wingless bird with powerful beak and legs.	外表像一隻矮胖、沒有翅膀的鳥，喙和腿都強而有力。	外表像一只矮胖、没有翅膀的鸟，喙和腿都强有力。		raws DESCRIPTION：BEAK_DOG
+Its blotchy skin is brightly colored.	牠的皮膚斑駁，色彩鮮豔。	它的皮肤斑驳，色彩鲜艳。		raws DESCRIPTION：BEAK_DOG
+A large, four-armed ape creature with three eyes and razor-sharp teeth.	大型的四臂猿怪，有三隻眼睛和鋒利如剃刀的牙齒。	大型的四臂猿怪，有三只眼睛和锋利如剃刀的牙齿。		raws DESCRIPTION：STRANGLER；術語例外：creature
+A huge, predatory reptile with pale, colorless scales and red eyes.	巨大的掠食性爬蟲類，鱗片蒼白無色，眼睛是紅色的。	巨大的掠食性爬行动物，鳞片苍白无色，眼睛是红色的。		raws DESCRIPTION：CROCODILE_CAVE
+It lives in caves and ambushes its prey.	牠住在洞穴裡，會伏擊獵物。	它住在洞穴里，会伏击猎物。		raws DESCRIPTION：CROCODILE_CAVE
+A large, pale rodent with loose, hanging, hairless skin.	蒼白的大型齧齒動物，無毛的皮膚鬆垮下垂。	苍白的大型啮齿动物，无毛的皮肤松垮下垂。		raws DESCRIPTION：MOLE_DOG_NAKED
+It has long teeth and an incredibly powerful bite.	牠長著長牙，咬合力強得驚人。	它长着长牙，咬合力强得惊人。		raws DESCRIPTION：MOLE_DOG_NAKED
+It is found underground.	棲息於地底。	栖息于地下。		raws DESCRIPTION：MOLE_DOG_NAKED
+A large underground monster with eight legs and sharp, venomous fangs.	棲息於地底的大型怪物，有八條腿和鋒利的毒牙。	栖息于地下的大型怪物，有八条腿和锋利的毒牙。		raws DESCRIPTION：SPIDER_CAVE_GIANT
+A tiny underground bug, sought after for its thread.	棲息於地底的微小蟲子，牠的絲備受青睞。	栖息于地下的微小虫子，它的丝备受青睐。		raws DESCRIPTION：SPIDER_CAVE
+A small, pale arthropod found in underground streams and ponds.	棲息於地底溪流與池塘的蒼白小型節肢動物。	栖息于地下溪流和池塘的苍白小型节肢动物。		raws DESCRIPTION：LOBSTER_CAVE
+A tiny amphibian, found in underground streams.	棲息於地底溪流的微小兩棲動物。	栖息于地下溪流的微小两栖动物。		raws DESCRIPTION：OLM
+Magma moving in the shape of a man.	以人形移動的熔岩。	以人形移动的熔岩。		raws DESCRIPTION：ELEMENTMAN_MAGMA
+It has a cracked black crust.	牠的表面是一層龜裂的黑色硬殼。	它的表面是一层龟裂的黑色硬壳。		raws DESCRIPTION：ELEMENTMAN_MAGMA
+An evil humanoid with a long tail, black spiky fur and a twitching nose.	邪惡的人形生物，有長尾巴、黑色尖硬的毛和不停抽動的鼻子。	邪恶的人形生物，有长尾巴、黑色尖硬的毛和不停抽动的鼻子。		raws DESCRIPTION：RODENT
+It lives far underground.	牠住在地底深處。	它住在地下深处。		raws DESCRIPTION：RODENT
+A medium-sized beast, known for its tusks and powerful build.	中型野獸，以獠牙和壯碩的體格聞名。	中型野兽，以獠牙和壮硕的体格闻名。		raws DESCRIPTION：WILD_BOAR
+A medium-sized dog-like creature.	形似狗的中型生物。	形似狗的中型生物。		raws DESCRIPTION：COYOTE
+It is sly, and groups can be heard howling in the night.	牠生性狡猾，夜裡常能聽到群體的嚎叫聲。	它生性狡猾，夜里常能听到群体的嚎叫声。		raws DESCRIPTION：COYOTE
+A small, grey, tree-dwelling creature.	生活在樹上的灰色小型生物。	生活在树上的灰色小型生物。		raws DESCRIPTION：KOALA
+A small, brightly-colored snake.	色彩鮮豔的小型蛇類。	色彩鲜艳的小型蛇类。		raws DESCRIPTION：KINGSNAKE
+It is known for eating other snakes and being mistaken for its venomous cousins.	牠以捕食其他蛇類聞名，也常被誤認為牠那些有毒的近親。	它以捕食其他蛇类闻名，也常被误认为它那些有毒的近亲。		raws DESCRIPTION：KINGSNAKE
+A swift, long-eared rodent with long legs and a short fluffy tail.	跑得很快的長耳齧齒動物，腿很長，尾巴短而蓬鬆。	跑得很快的长耳啮齿动物，腿很长，尾巴短而蓬松。		raws DESCRIPTION：HARE
+A small, stocky mammal.	矮壯的小型哺乳動物。	矮壮的小型哺乳动物。		raws DESCRIPTION：WOMBAT
+It is found from the mountains to the woodlands.	從山區到林地都看得到牠。	从山区到林地都能见到它。		raws DESCRIPTION：WOMBAT
+A small, long-nosed raccoon-like creature.	長鼻子、形似浣熊的小型生物。	长鼻子、形似浣熊的小型生物。		raws DESCRIPTION：COATI
+A small mammal resembling a large, white rat.	小型哺乳動物，模樣像一隻白色大老鼠。	小型哺乳动物，模样像一只白色大老鼠。		raws DESCRIPTION：OPOSSUM
+A small wolf-like scavenger.	形似狼的小型食腐動物。	形似狼的小型食腐动物。		raws DESCRIPTION：JACKAL
+Normally found in pairs, jackals can form packs when they find a body.	胡狼通常成對出沒，找到屍體時會聚集成群。	胡狼通常成对出没，找到尸体时会聚集成群。		raws DESCRIPTION：JACKAL
+A small, slow-moving mammal that lives in the trees.	生活在樹上、動作緩慢的小型哺乳動物。	生活在树上、动作缓慢的小型哺乳动物。		raws DESCRIPTION：SLOTH
+A small, nocturnal, tree-dwelling mammal.	夜行性、生活在樹上的小型哺乳動物。	夜行性、生活在树上的小型哺乳动物。		raws DESCRIPTION：AYE-AYE
+It uses its long fingers to fish out grubs from the wood.	牠用長長的手指從木頭裡掏出幼蟲。	它用长长的手指从木头里掏出幼虫。		raws DESCRIPTION：AYE-AYE
+A small, slender gazelle-like creature.	身形纖細、形似瞪羚的小型生物。	身形纤细、形似瞪羚的小型生物。		raws DESCRIPTION：IMPALA
+A slender, horned man with the head and tail of a impala.	身形纖細、頭上長角、長著黑斑羚頭部與尾巴的人。	身形纤细、头上长角、长着黑斑羚头部和尾巴的人。		raws DESCRIPTION：IMPALA_MAN
+A small, nocturnal mammal.	夜行性的小型哺乳動物。	夜行性的小型哺乳动物。		raws DESCRIPTION：AARDVARK
+It has a long tongue with which to eat insects.	牠用長長的舌頭吃昆蟲。	它用长长的舌头吃昆虫。		raws DESCRIPTION：AARDVARK
+A tiny soft-bodied aquatic creature with a grasping forward appendage, two eyestalks and a finned tail.	身體柔軟的微小水生生物，前端有一條可抓握的附肢，還有兩根眼柄和帶鰭的尾巴。	身体柔软的微小水生生物，前端有一条可抓握的附肢，还有两根眼柄和带鳍的尾巴。		raws DESCRIPTION：CARBONIFEROUS_TULLIMONSTRUM
+A small myriapod, though very large for a myriapod.	小型多足類動物，但以多足類而言已經非常大。	小型多足类动物，但就多足类而言已经非常大。		raws DESCRIPTION：CARBONIFEROUS_ARTHROPLEURA
+It feeds on detritus.	牠以腐屑為食。	它以腐屑为食。		raws DESCRIPTION：CARBONIFEROUS_ARTHROPLEURA
+A tiny winged insect, though exceptionally large for a dragonfly.	長著翅膀的微小昆蟲，但以蜻蜓而言大得出奇。	长着翅膀的微小昆虫，但就蜻蜓而言大得出奇。		raws DESCRIPTION：CARBONIFEROUS_MEGANEURA
+A very large dinosaur person with a tail club, an armored carapace and four horns.	身材極為高大的恐龍人，有尾錘、鎧甲般的背甲和四隻角。	身材极为高大的恐龙人，有尾锤、铠甲般的背甲和四只角。		raws DESCRIPTION：CRETACEOUS_ANKYLOSAURUS_MAN
+A large dinosaur person with a fierce jaw, short arms, and small horns over their eyes.	身材高大的恐龍人，長著兇猛的巨顎和短小的手臂，雙眼上方有小角。	身材高大的恐龙人，长着凶猛的巨颚和短小的手臂，双眼上方有小角。		raws DESCRIPTION：CRETACEOUS_CARNOTAURUS_MAN
+A very large dinosaur person with a ferocious jaw, short arms, and a sail.	身材極為高大的恐龍人，長著兇猛的巨顎和短小的手臂，背上有帆。	身材极为高大的恐龙人，长着凶猛的巨颚和短小的手臂，背上有帆。		raws DESCRIPTION：CRETACEOUS_SPINOSAURUS_AEGYPTIACUS_MAN
+A very large dinosaur person with a ferocious jaw, short arms, a sail and a horn.	身材極為高大的恐龍人，長著兇猛的巨顎和短小的手臂，背上有帆，頭上有角。	身材极为高大的恐龙人，长着凶猛的巨颚和短小的手臂，背上有帆，头上有角。		raws DESCRIPTION：CRETACEOUS_SPINOSAURUS_MIRABILIS_MAN
+A huge quadrupedal dinosaur with a row of spines along its back, a spiked tail, and two prominent shoulder spikes.	巨大的四足恐龍，背上有一排尖刺，尾巴帶刺，兩肩各有一根醒目的肩棘。	巨大的四足恐龙，背上有一排尖刺，尾巴带刺，两肩各有一根醒目的肩棘。		raws DESCRIPTION：JURASSIC_KENTROSAURUS
+A large dinosaur person with spines along its back, a spiked tail, and two menacing shoulder spikes.	身材高大的恐龍人，背上有尖刺，尾巴帶刺，兩肩各有一根嚇人的肩棘。	身材高大的恐龙人，背上有尖刺，尾巴带刺，两肩各有一根吓人的肩棘。		raws DESCRIPTION：JURASSIC_KENTROSAURUS_MAN
+A large dinosaur person with fierce jaws, a horn and short arms.	身材高大的恐龍人，長著兇猛的巨顎，頭上有角，手臂短小。	身材高大的恐龙人，长着凶猛的巨颚，头上有角，手臂短小。		raws DESCRIPTION：JURASSIC_CERATOSAURUS_MAN
+A small person with the large head, round tummy, and tail of an eryops.	身材矮小的人，長著引螈的大頭、圓肚子和尾巴。	身材矮小的人，长着引螈的大头、圆肚子和尾巴。		raws DESCRIPTION：PERMIAN_ERYOPS_MAN
+A large, strongly built quadruped with a tail.	體格強壯、拖著尾巴的大型四足動物。	体格强壮、拖着尾巴的大型四足动物。		raws DESCRIPTION：PERMIAN_DIADECTES
+It is a terrestrial herbivore.	牠是陸生的草食動物。	它是陆生的食草动物。		raws DESCRIPTION：PERMIAN_DIADECTES
+A large, strongly-built person with a tail.	身材高大、體格強壯、拖著尾巴的人。	身材高大、体格强壮、拖着尾巴的人。		raws DESCRIPTION：PERMIAN_DIADECTES_MAN
+A very large quadrupedal predator, well-suited to the hunt.	體型非常大的四足掠食者，天生擅長狩獵。	体型非常大的四足捕食者，天生擅长狩猎。		raws DESCRIPTION：PERMIAN_ANTEOSAURUS
+It has a tail and powerful jaws, and it is terrestrial.	牠有尾巴和強而有力的雙顎，在陸地上生活。	它有尾巴和强有力的双颚，在陆地上生活。		raws DESCRIPTION：PERMIAN_ANTEOSAURUS
+The manager handles work orders. Once your fortress reaches a certain population, the manager must work in an office to validate work orders.	經理負責處理工作指令。要塞人口達到一定數量後，經理必須在辦公室工作，才能核准工作指令。	经理负责处理工作订单。要塞人口达到一定数量后，经理必须在办公室工作，才能批准工作订单。		raws DESCRIPTION：DWARF；原文句間只有一個空白，整條寫
+The chief medical dwarf allows you to see the overall health of dwarves in your fortress.	首席醫師讓你能看到要塞中矮人的整體健康狀況。	首席医师让你能看到要塞中矮人的整体健康状况。		raws DESCRIPTION：DWARF
+The broker uses their appraisal skill to allow you to see the value of items in the fortress. They are also the default negotiator with visiting merchants.	交易員運用估價技能，讓你能看到要塞中物品的價值。他們也是與來訪商人交涉的預設談判者。	交易员运用估价技能，让你能看到要塞中物品的价值。他们也是与来访商人交涉的默认谈判者。		raws DESCRIPTION：DWARF；原文句間只有一個空白，整條寫
+The bookkeeper keeps an accurate count of items in the fortress. They work in their office to improve the precision of the count.	簿記員會精確清點要塞中的物品。他們在辦公室工作，以提高清點的精確度。	簿记员会精确清点要塞中的物品。他们在办公室工作，以提高清点的精确度。		raws DESCRIPTION：DWARF；原文句間只有一個空白，整條寫

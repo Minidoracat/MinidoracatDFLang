@@ -159,11 +159,11 @@ enum Atom {
     Color([u8; 3]),
 }
 
-/// `[C:前景:背景:亮度]`：回傳顏色與標記的長度。
+/// `[C:前景:背景:亮度]`：回傳顏色與標記的長度。遊戲偶爾多拼一個冒號（`[C:7:0:0:]`），照樣收。
 fn color_marker(s: &str) -> Option<([u8; 3], usize)> {
     let body = s.strip_prefix("[C:")?;
     let end = body.find(']')?;
-    let mut nums = body[..end].split(':').map(|n| n.parse::<u8>().ok());
+    let mut nums = body[..end].strip_suffix(':').unwrap_or(&body[..end]).split(':').map(|n| n.parse::<u8>().ok());
     let color = [nums.next()??, nums.next()??, nums.next()??];
     nums.next().is_none().then_some((color, end + 4))
 }

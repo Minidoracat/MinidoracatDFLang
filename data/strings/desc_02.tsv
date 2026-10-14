@@ -1,0 +1,75 @@
+en	zh-Hant	zh-Hans	align	note
+unbelievably strong	力大無窮	力大无穷		FUN_141380480 身體屬性片語，力量 +100；述語形式，接在「他」後面、以「、」並列
+mighty	力大過人	力大过人		FUN_141380480 身體屬性片語，力量 +75；述語形式，接在「他」後面、以「、」並列
+very strong	非常強壯	非常强壮		FUN_141380480 身體屬性片語，力量 +50；述語形式，接在「他」後面、以「、」並列
+very weak	非常虛弱	非常虚弱		FUN_141380480 身體屬性片語，力量 -50；述語形式，接在「他」後面、以「、」並列
+unquestionably weak	極為虛弱	极为虚弱		FUN_141380480 身體屬性片語，力量 -75；述語形式，接在「他」後面、以「、」並列
+unfathomably weak	虛弱得難以想像	虚弱得难以想象		FUN_141380480 身體屬性片語，力量 -100；述語形式，接在「他」後面、以「、」並列
+amazingly agile	敏捷得驚人	敏捷得惊人		FUN_141380480 身體屬性片語，敏捷 +100；述語形式，接在「他」後面、以「、」並列
+extremely agile	極為敏捷	极为敏捷		FUN_141380480 身體屬性片語，敏捷 +75；述語形式，接在「他」後面、以「、」並列
+very agile	非常敏捷	非常敏捷		FUN_141380480 身體屬性片語，敏捷 +50；述語形式，接在「他」後面、以「、」並列
+quite clumsy	相當笨拙	相当笨拙		FUN_141380480 身體屬性片語，敏捷 -50；述語形式，接在「他」後面、以「、」並列
+totally clumsy	極為笨拙	极为笨拙		FUN_141380480 身體屬性片語，敏捷 -75；述語形式，接在「他」後面、以「、」並列
+abysmally clumsy	笨拙至極	笨拙至极		FUN_141380480 身體屬性片語，敏捷 -100；述語形式，接在「他」後面、以「、」並列
+basically unbreakable	簡直堅不可摧	简直坚不可摧		FUN_141380480 身體屬性片語，韌性 +100；述語形式，接在「他」後面、以「、」並列
+incredibly tough	極為結實	极为结实		FUN_141380480 身體屬性片語，韌性 +75；述語形式，接在「他」後面、以「、」並列
+quite durable	相當耐打	相当耐打		FUN_141380480 身體屬性片語，韌性 +50；述語形式，接在「他」後面、以「、」並列
+flimsy	身子單薄	身子单薄		FUN_141380480 身體屬性片語，韌性 -25；述語形式，接在「他」後面、以「、」並列
+very flimsy	身子很單薄	身子很单薄		FUN_141380480 身體屬性片語，韌性 -50；述語形式，接在「他」後面、以「、」並列
+remarkably flimsy	身子非常單薄	身子非常单薄		FUN_141380480 身體屬性片語，韌性 -75；述語形式，接在「他」後面、以「、」並列
+shockingly fragile	脆弱得驚人	脆弱得惊人		FUN_141380480 身體屬性片語，韌性 -100；述語形式，接在「他」後面、以「、」並列
+absolutely inexhaustible	永不疲倦	永不疲倦		FUN_141380480 身體屬性片語，耐力 +100；述語形式，接在「他」後面、以「、」並列
+indefatigable	不知疲倦	不知疲倦		FUN_141380480 身體屬性片語，耐力 +75；述語形式，接在「他」後面、以「、」並列
+very slow to tire	很不容易疲勞	很不容易疲劳		FUN_141380480 身體屬性片語，耐力 +50；述語形式，接在「他」後面、以「、」並列
+slow to tire	不容易疲勞	不容易疲劳		FUN_141380480 身體屬性片語，耐力 +25；述語形式，接在「他」後面、以「、」並列
+quick to tire	容易疲勞	容易疲劳		FUN_141380480 身體屬性片語，耐力 -25；述語形式，接在「他」後面、以「、」並列
+very quick to tire	很容易疲勞	很容易疲劳		FUN_141380480 身體屬性片語，耐力 -50；述語形式，接在「他」後面、以「、」並列
+extremely quick to tire	極容易疲勞	极容易疲劳		FUN_141380480 身體屬性片語，耐力 -75；述語形式，接在「他」後面、以「、」並列
+truly quick to tire	稍一活動就精疲力竭	稍一活动就精疲力竭		FUN_141380480 身體屬性片語，耐力 -100；述語形式，接在「他」後面、以「、」並列
+possessed of amazing recuperative powers	擁有驚人的復原能力	拥有惊人的复原能力		FUN_141380480 身體屬性片語，復原力 +100；述語形式，接在「他」後面、以「、」並列
+incredibly quick to heal	傷好得極快	伤好得极快		FUN_141380480 身體屬性片語，復原力 +75；述語形式，接在「他」後面、以「、」並列
+quite quick to heal	傷好得相當快	伤好得相当快		FUN_141380480 身體屬性片語，復原力 +50；述語形式，接在「他」後面、以「、」並列
+quick to heal	傷好得快	伤好得快		FUN_141380480 身體屬性片語，復原力 +25；述語形式，接在「他」後面、以「、」並列
+slow to heal	傷好得慢	伤好得慢		FUN_141380480 身體屬性片語，復原力 -25；述語形式，接在「他」後面、以「、」並列
+very slow to heal	傷好得很慢	伤好得很慢		FUN_141380480 身體屬性片語，復原力 -50；述語形式，接在「他」後面、以「、」並列
+really slow to heal	傷好得非常慢	伤好得非常慢		FUN_141380480 身體屬性片語，復原力 -75；述語形式，接在「他」後面、以「、」並列
+shockingly slow to heal	傷好得慢得驚人	伤好得慢得惊人		FUN_141380480 身體屬性片語，復原力 -100；述語形式，接在「他」後面、以「、」並列
+virtually never sick	百病不侵	百病不侵		FUN_141380480 身體屬性片語，抗病力 +100；述語形式，接在「他」後面、以「、」並列
+almost never sick	幾乎不生病	几乎不生病		FUN_141380480 身體屬性片語，抗病力 +75；述語形式，接在「他」後面、以「、」並列
+very rarely sick	極少生病	极少生病		FUN_141380480 身體屬性片語，抗病力 +50；述語形式，接在「他」後面、以「、」並列
+rarely sick	很少生病	很少生病		FUN_141380480 身體屬性片語，抗病力 +25；述語形式，接在「他」後面、以「、」並列
+susceptible to disease	容易生病	容易生病		FUN_141380480 身體屬性片語，抗病力 -25；述語形式，接在「他」後面、以「、」並列
+quite susceptible to disease	相當容易生病	相当容易生病		FUN_141380480 身體屬性片語，抗病力 -50；述語形式，接在「他」後面、以「、」並列
+really susceptible to disease	非常容易生病	非常容易生病		FUN_141380480 身體屬性片語，抗病力 -75；述語形式，接在「他」後面、以「、」並列
+stunningly susceptible to disease	極易染病	极易染病		FUN_141380480 身體屬性片語，抗病力 -100；述語形式，接在「他」後面、以「、」並列
+gigantic	巨大	巨大		FUN_140716b70／FUN_140717d30 冒險模式生物稱呼前綴（FUN_14132e430：the squat dwarf），由 names.tsv 的 {@1} {@2} 接生物名
+chubby	圓胖	圆胖		FUN_140716b70／FUN_140717d30 冒險模式生物稱呼前綴（FUN_14132e430：the squat dwarf），由 names.tsv 的 {@1} {@2} 接生物名
+obese	肥胖	肥胖		FUN_140716b70／FUN_140717d30 冒險模式生物稱呼前綴（FUN_14132e430：the squat dwarf），由 names.tsv 的 {@1} {@2} 接生物名
+lanky	瘦長	瘦长		FUN_140716b70／FUN_140717d30 冒險模式生物稱呼前綴（FUN_14132e430：the squat dwarf），由 names.tsv 的 {@1} {@2} 接生物名
+stout	矮壯	矮壮		FUN_140716b70／FUN_140717d30 冒險模式生物稱呼前綴（FUN_14132e430：the squat dwarf），由 names.tsv 的 {@1} {@2} 接生物名
+slim	苗條	苗条		FUN_140716b70／FUN_140717d30 冒險模式生物稱呼前綴（FUN_14132e430：the squat dwarf），由 names.tsv 的 {@1} {@2} 接生物名
+skinny	瘦削	瘦削		FUN_140716b70／FUN_140717d30 冒險模式生物稱呼前綴（FUN_14132e430：the squat dwarf），由 names.tsv 的 {@1} {@2} 接生物名
+towering	高大	高大		FUN_140716b70／FUN_140717d30 冒險模式生物稱呼前綴（FUN_14132e430：the squat dwarf），由 names.tsv 的 {@1} {@2} 接生物名
+squat	矮墩墩	矮墩墩		FUN_140716b70／FUN_140717d30 冒險模式生物稱呼前綴（FUN_14132e430：the squat dwarf），由 names.tsv 的 {@1} {@2} 接生物名
+scrawny	乾瘦	干瘦		FUN_140716b70／FUN_140717d30 冒險模式生物稱呼前綴（FUN_14132e430：the squat dwarf），由 names.tsv 的 {@1} {@2} 接生物名
+tiny	極小	极小		FUN_140716b70／FUN_140717d30 冒險模式生物稱呼前綴（FUN_14132e430：the squat dwarf），由 names.tsv 的 {@1} {@2} 接生物名
+muscular	健壯	健壮		FUN_140716b70／FUN_140717d30 冒險模式生物稱呼前綴（FUN_14132e430：the squat dwarf），由 names.tsv 的 {@1} {@2} 接生物名
+high-voiced	高嗓	高嗓		FUN_140716b70／FUN_140717d30 冒險模式生物稱呼前綴（FUN_14132e430：the squat dwarf），由 names.tsv 的 {@1} {@2} 接生物名
+deep-voiced	沉嗓	沉嗓		FUN_140716b70／FUN_140717d30 冒險模式生物稱呼前綴（FUN_14132e430：the squat dwarf），由 names.tsv 的 {@1} {@2} 接生物名
+low-voiced	嗓音低的	嗓音低的		FUN_140716b70／FUN_140717d30 冒險模式生物稱呼前綴（FUN_14132e430：the squat dwarf），由 names.tsv 的 {@1} {@2} 接生物名
+guttural-voiced	粗喉音的	粗喉音的		FUN_140716b70／FUN_140717d30 冒險模式生物稱呼前綴（FUN_14132e430：the squat dwarf），由 names.tsv 的 {@1} {@2} 接生物名
+grating-voiced	嗓音刺耳的	嗓音刺耳的		FUN_140716b70／FUN_140717d30 冒險模式生物稱呼前綴（FUN_14132e430：the squat dwarf），由 names.tsv 的 {@1} {@2} 接生物名
+squeaky-voiced	尖嗓的	尖嗓的		FUN_140716b70／FUN_140717d30 冒險模式生物稱呼前綴（FUN_14132e430：the squat dwarf），由 names.tsv 的 {@1} {@2} 接生物名
+raspy-voiced	沙啞嗓	沙哑嗓		FUN_140716b70／FUN_140717d30 冒險模式生物稱呼前綴（FUN_14132e430：the squat dwarf），由 names.tsv 的 {@1} {@2} 接生物名
+clear-voiced	清亮嗓	清亮嗓		FUN_140716b70／FUN_140717d30 冒險模式生物稱呼前綴（FUN_14132e430：the squat dwarf），由 names.tsv 的 {@1} {@2} 接生物名
+scratchy-voiced	嗓音粗啞的	嗓音粗哑的		FUN_140716b70／FUN_140717d30 冒險模式生物稱呼前綴（FUN_14132e430：the squat dwarf），由 names.tsv 的 {@1} {@2} 接生物名
+low-cheekbones	低顴骨	低颧骨		FUN_140716b70／FUN_140717d30 冒險模式生物稱呼前綴（FUN_14132e430：the squat dwarf），由 names.tsv 的 {@1} {@2} 接生物名
+high-cheekbones	高顴骨	高颧骨		FUN_140716b70／FUN_140717d30 冒險模式生物稱呼前綴（FUN_14132e430：the squat dwarf），由 names.tsv 的 {@1} {@2} 接生物名
+round-chin	圓下巴	圆下巴		FUN_140716b70／FUN_140717d30 冒險模式生物稱呼前綴（FUN_14132e430：the squat dwarf），由 names.tsv 的 {@1} {@2} 接生物名
+square-chin	方下巴	方下巴		FUN_140716b70／FUN_140717d30 冒險模式生物稱呼前綴（FUN_14132e430：the squat dwarf），由 names.tsv 的 {@1} {@2} 接生物名
+massive-chin	大下巴	大下巴		FUN_140716b70／FUN_140717d30 冒險模式生物稱呼前綴（FUN_14132e430：the squat dwarf），由 names.tsv 的 {@1} {@2} 接生物名
+recessed-chin	後縮下巴	后缩下巴		FUN_140716b70／FUN_140717d30 冒險模式生物稱呼前綴（FUN_14132e430：the squat dwarf），由 names.tsv 的 {@1} {@2} 接生物名
+broad-chin	寬下巴	宽下巴		FUN_140716b70／FUN_140717d30 冒險模式生物稱呼前綴（FUN_14132e430：the squat dwarf），由 names.tsv 的 {@1} {@2} 接生物名
+jutting-chin	前凸下巴	前凸下巴		FUN_140716b70／FUN_140717d30 冒險模式生物稱呼前綴（FUN_14132e430：the squat dwarf），由 names.tsv 的 {@1} {@2} 接生物名
+prominent-chin	突出下巴	突出下巴		FUN_140716b70／FUN_140717d30 冒險模式生物稱呼前綴（FUN_14132e430：the squat dwarf），由 names.tsv 的 {@1} {@2} 接生物名
+narrow-chin	窄下巴	窄下巴		FUN_140716b70／FUN_140717d30 冒險模式生物稱呼前綴（FUN_14132e430：the squat dwarf），由 names.tsv 的 {@1} {@2} 接生物名

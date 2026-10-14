@@ -1,0 +1,665 @@
+en	zh-Hant	zh-Hans	align	note
+A dark green man with the distinct head of a toad.	膚色深綠、長著一顆明顯蟾蜍頭的人。	肤色深绿、长着一颗明显蟾蜍头的人。		CREATURE:TOAD_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster in the shape of a toad.	形似蟾蜍的巨大怪物。	形似蟾蜍的巨大怪物。		CREATURE:GIANT_TOAD DESCRIPTION；生物說明，健康分頁描述第一句
+A worm-like creature with the torso of a man.	形似蠕蟲、上身卻是人類軀幹的生物。	形似蠕虫、上身却是人类躯干的生物。		CREATURE:WORM_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and wings of a bluejay.	長著冠藍鴉頭部與翅膀的人。	长着冠蓝鸦头部和翅膀的人。		CREATURE:BLUEJAY_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster in the form of a bluejay.	形似冠藍鴉的巨大怪物。	形似冠蓝鸦的巨大怪物。		CREATURE:GIANT_BLUEJAY DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and wings of a cardinal.	長著北美紅雀頭部與翅膀的人。	长着北美红雀头部和翅膀的人。		CREATURE:CARDINAL_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster in the form of a cardinal.	形似北美紅雀的巨大怪物。	形似北美红雀的巨大怪物。		CREATURE:GIANT_CARDINAL DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and wings of a grackle.	長著擬八哥頭部與翅膀的人。	长着拟八哥头部和翅膀的人。		CREATURE:GRACKLE_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster in the form of a grackle.	形似擬八哥的巨大怪物。	形似拟八哥的巨大怪物。		CREATURE:GIANT_GRACKLE DESCRIPTION；生物說明，健康分頁描述第一句
+A small yellow and black bird.	黃黑相間的小型鳥類。	黄黑相间的小型鸟类。		CREATURE:BIRD_ORIOLE DESCRIPTION；生物說明，健康分頁描述第一句
+They feed in the canopy of the forest.	在森林樹冠層覓食。	在森林树冠层觅食。		CREATURE:BIRD_ORIOLE DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and wings of an oriole.	長著黃鸝頭部與翅膀的人。	长着黄鹂头部和翅膀的人。		CREATURE:ORIOLE_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster in the form of an oriole.	形似黃鸝的巨大怪物。	形似黄鹂的巨大怪物。		CREATURE:GIANT_ORIOLE DESCRIPTION；生物說明，健康分頁描述第一句
+A small black bird with bright red markings under the wings.	翅膀下方有鮮紅斑紋的小型黑鳥。	翅膀下方有鲜红斑纹的小型黑鸟。		CREATURE:BIRD_RW_BLACKBIRD DESCRIPTION；生物說明，健康分頁描述第一句
+They live in the marshland.	棲息於沼澤地。	栖息于沼泽地。		CREATURE:BIRD_RW_BLACKBIRD DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and wings of a red-winged blackbird.	長著紅翅黑鸝頭部與翅膀的人。	长着红翅黑鹂头部和翅膀的人。		CREATURE:RW_BLACKBIRD_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster in the form of a red-winged blackbird.	形似紅翅黑鸝的巨大怪物。	形似红翅黑鹂的巨大怪物。		CREATURE:GIANT_RW_BLACKBIRD DESCRIPTION；生物說明，健康分頁描述第一句
+A small flightless bird that lives on arctic shorelines.	生活在極地海岸、不會飛的小型鳥類。	生活在极地海岸、不会飞的小型鸟类。		CREATURE:BIRD_PENGUIN DESCRIPTION；生物說明，健康分頁描述第一句
+A small bird of prey that is capable of great speed.	速度極快的小型猛禽。	速度极快的小型猛禽。		CREATURE:BIRD_FALCON_PEREGRINE DESCRIPTION；生物說明，健康分頁描述第一句
+They dive on unsuspecting vermin.	會俯衝撲向毫無防備的小動物。	会俯冲扑向毫无防备的小动物。		CREATURE:BIRD_FALCON_PEREGRINE DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and wings of a peregrine falcon.	長著遊隼頭部與翅膀的人。	长着游隼头部和翅膀的人。		CREATURE:PEREGRINE FALCON MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A large bird monster that is the same shape as a peregrine falcon.	形似遊隼的大型鳥形怪物。	形似游隼的大型鸟形怪物。		CREATURE:GIANT PEREGRINE FALCON DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and feathers of a kiwi.	長著奇異鳥頭部與羽毛的人。	长着几维鸟头部和羽毛的人。		CREATURE:KIWI MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A large monster with a long nose and brown feathers.	長嘴、披著褐色羽毛的大型怪物。	长嘴、披着褐色羽毛的大型怪物。		CREATURE:BIRD_KIWI_GIANT DESCRIPTION；生物說明，健康分頁描述第一句
+A large flightless bird that runs through the savanna.	奔跑於莽原、不會飛的大型鳥類。	奔跑于稀树草原、不会飞的大型鸟类。		CREATURE:BIRD_OSTRICH DESCRIPTION；生物說明，健康分頁描述第一句
+It has a long neck and legs.	頸部和雙腿都很長。	脖子和双腿都很长。		CREATURE:BIRD_OSTRICH DESCRIPTION；生物說明，健康分頁描述第一句
+A huge bird monster with extremely long legs and neck.	腿和脖子極長的巨大鳥形怪物。	腿和脖子极长的巨大鸟形怪物。		CREATURE:BIRD_OSTRICH_GIANT DESCRIPTION；生物說明，健康分頁描述第一句
+A small person with the head and wings of a crow.	身材矮小、長著烏鴉頭部與翅膀的人。	身材矮小、长着乌鸦头部和翅膀的人。		CREATURE:CROW_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and wings of a raven.	長著渡鴉頭部與翅膀的人。	长着渡鸦头部和翅膀的人。		CREATURE:RAVEN_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A brightly-colored person with the head of a cassowary.	色彩鮮豔、長著食火雞頭部的人。	色彩鲜艳、长着鹤鸵头部的人。		CREATURE:CASSOWARY_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster in the shape of a cassowary.	形似食火雞的巨大怪物。	形似鹤鸵的巨大怪物。		CREATURE:GIANT_CASSOWARY DESCRIPTION；生物說明，健康分頁描述第一句
+A green person with the head of a kea.	通體翠綠、長著啄羊頭部的人。	通体翠绿、长着啄羊头部的人。		CREATURE:KEA_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A monster many times the size of an ordinary kea.	體型是普通啄羊好幾倍的怪物。	体型是普通啄羊好几倍的怪物。		CREATURE:GIANT_KEA DESCRIPTION；生物說明，健康分頁描述第一句
+A small white bird that hunts in the coldest reaches of the world.	在世界最寒冷之地狩獵的小型白鳥。	在世界最寒冷之地狩猎的小型白鸟。		CREATURE:BIRD_OWL_SNOWY DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the wings and head of a snowy owl.	長著雪鴞翅膀與頭部的人。	长着雪鸮翅膀和头部的人。		CREATURE:SNOWY_OWL_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A large bird monster in the shape of a snowy owl.	形似雪鴞的大型鳥形怪物。	形似雪鸮的大型鸟形怪物。		CREATURE:GIANT_SNOWY_OWL DESCRIPTION；生物說明，健康分頁描述第一句
+A tiny brown bird that can be found in most temperate regions.	見於大部分溫帶地區的褐色小鳥。	见于大部分温带地区的褐色小鸟。		CREATURE:SPARROW DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and wings of a sparrow.	長著麻雀頭部與翅膀的人。	长着麻雀头部和翅膀的人。		CREATURE:SPARROW_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A large bird-like monster in the shape of a sparrow.	形似麻雀的大型鳥形怪物。	形似麻雀的大型鸟形怪物。		CREATURE:GIANT_SPARROW DESCRIPTION；生物說明，健康分頁描述第一句
+A large monster in the form of a stork.	形似鸛的大型怪物。	形似鹳的大型怪物。		CREATURE:GIANT_WHITE_STORK DESCRIPTION；生物說明，健康分頁描述第一句
+A small water bird found in remote lakes.	棲息在偏遠湖泊的小型水鳥。	栖息在偏远湖泊的小型水鸟。		CREATURE:BIRD_LOON DESCRIPTION；生物說明，健康分頁描述第一句
+It is known for its haunting call.	以縈繞不散的鳴叫聞名。	以萦绕不散的鸣叫闻名。		CREATURE:BIRD_LOON DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and wings of a loon.	長著潛鳥頭部與翅膀的人。	长着潜鸟头部和翅膀的人。		CREATURE:LOON_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A large monster in the shape of a loon.	形似潛鳥的大型怪物。	形似潜鸟的大型怪物。		CREATURE:GIANT_LOON DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the arms and wings of a barn owl.	長著倉鴞手臂與翅膀的人。	长着仓鸮手臂和翅膀的人。		CREATURE:BARN_OWL_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A large monster in the form of a barn owl.	形似倉鴞的大型怪物。	形似仓鸮的大型怪物。		CREATURE:GIANT_BARN_OWL DESCRIPTION；生物說明，健康分頁描述第一句
+A tiny parrot found in flocks of many hundreds.	成群可達數百隻的小型鸚鵡。	成群可达数百只的小型鹦鹉。		CREATURE:BIRD_PARAKEET DESCRIPTION；生物說明，健康分頁描述第一句
+Exceptional birds can be taught to speak.	特別聰明的個體能學會說話。	特别聪明的个体能学会说话。		CREATURE:BIRD_PARAKEET DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and wings of a parakeet.	長著虎皮鸚鵡頭部與翅膀的人。	长着虎皮鹦鹉头部和翅膀的人。		CREATURE:PARAKEET_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A large monster in the shape of a parakeet.	形似虎皮鸚鵡的大型怪物。	形似虎皮鹦鹉的大型怪物。		CREATURE:GIANT_PARAKEET DESCRIPTION；生物說明，健康分頁描述第一句
+A small flightless green parrot.	不會飛的小型綠色鸚鵡。	不会飞的小型绿色鹦鹉。		CREATURE:BIRD_KAKAPO DESCRIPTION；生物說明，健康分頁描述第一句
+It is nocturnal and counts itself among the longest-lived birds.	夜行性，是最長壽的鳥類之一。	夜行性，是最长寿的鸟类之一。		CREATURE:BIRD_KAKAPO DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and wings of a kakapo.	長著鴞鸚鵡頭部與翅膀的人。	长着鸮鹦鹉头部和翅膀的人。		CREATURE:KAKAPO_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A large monster the shape of a kakapo.	形似鴞鸚鵡的大型怪物。	形似鸮鹦鹉的大型怪物。		CREATURE:GIANT_KAKAPO DESCRIPTION；生物說明，健康分頁描述第一句
+The most intelligent of birds.	鳥類中最聰明的一種。	鸟类中最聪明的一种。		CREATURE:BIRD_PARROT_GREY DESCRIPTION；生物說明，健康分頁描述第一句
+It can be found in the rainforest.	見於雨林。	见于雨林。		CREATURE:BIRD_PARROT_GREY DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and wings of a grey parrot.	長著非洲灰鸚鵡頭部與翅膀的人。	长着非洲灰鹦鹉头部和翅膀的人。		CREATURE:GREY_PARROT_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster in the shape of a grey parrot.	形似非洲灰鸚鵡的巨大怪物。	形似非洲灰鹦鹉的巨大怪物。		CREATURE:GIANT_GREY_PARROT DESCRIPTION；生物說明，健康分頁描述第一句
+A tiny diving bird found living on seaside cliffs in the colder climates.	住在寒冷地區海邊峭壁上、善於潛水的小鳥。	住在寒冷地区海边峭壁上、善于潜水的小鸟。		CREATURE:BIRD_PUFFIN DESCRIPTION；生物說明，健康分頁描述第一句
+A feathered person with the head of a puffin.	全身覆羽、長著海鸚頭部的人。	全身覆羽、长着海鹦头部的人。		CREATURE:PUFFIN_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A large monster in the form of a puffin.	形似海鸚的大型怪物。	形似海鹦的大型怪物。		CREATURE:GIANT_PUFFIN DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and wings of a swan.	長著天鵝頭部與翅膀的人。	长着天鹅头部和翅膀的人。		CREATURE:SWAN_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A large monster in the form of a swan.	形似天鵝的大型怪物。	形似天鹅的大型怪物。		CREATURE:GIANT_SWAN DESCRIPTION；生物說明，健康分頁描述第一句
+A colorful person with the head and wings of a lorikeet.	色彩鮮豔、長著吸蜜鸚鵡頭部與翅膀的人。	色彩鲜艳、长着吸蜜鹦鹉头部和翅膀的人。		CREATURE:LORIKEET_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A large monster in the shape of a lorikeet.	形似吸蜜鸚鵡的大型怪物。	形似吸蜜鹦鹉的大型怪物。		CREATURE:GIANT_LORIKEET DESCRIPTION；生物說明，健康分頁描述第一句
+A tiny brown bird given to singing complex songs.	愛唱複雜歌曲的褐色小鳥。	爱唱复杂歌曲的褐色小鸟。		CREATURE:BIRD_WREN DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and wings of a wren.	長著鷦鷯頭部與翅膀的人。	长着鹪鹩头部和翅膀的人。		CREATURE:WREN_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster in the form of a wren.	形似鷦鷯的巨大怪物。	形似鹪鹩的巨大怪物。		CREATURE:GIANT_WREN DESCRIPTION；生物說明，健康分頁描述第一句
+A small bird of prey with black markings on its eyes.	眼部有黑色斑紋的小型猛禽。	眼部有黑色斑纹的小型猛禽。		CREATURE:BIRD_OSPREY DESCRIPTION；生物說明，健康分頁描述第一句
+It hunts near bodies of water.	在水域附近狩獵。	在水域附近狩猎。		CREATURE:BIRD_OSPREY DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and wings of an osprey.	長著魚鷹頭部與翅膀的人。	长着鹗头部和翅膀的人。		CREATURE:OSPREY_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A large monster in the form of an osprey.	形似魚鷹的大型怪物。	形似鹗的大型怪物。		CREATURE:GIANT_OSPREY DESCRIPTION；生物說明，健康分頁描述第一句
+A large flightless bird.	不會飛的大型鳥類。	不会飞的大型鸟类。		CREATURE:BIRD_EMU DESCRIPTION；生物說明，健康分頁描述第一句
+It is very curious and has been known to follow other creatures.	好奇心很強，常會跟在其他生物後面。	好奇心很强，常会跟在其他生物后面。		CREATURE:BIRD_EMU DESCRIPTION；生物說明，健康分頁描述第一句
+A feathered person with the head of an emu.	全身覆羽、長著鴯鶓頭部的人。	全身覆羽、长着鸸鹋头部的人。		CREATURE:EMU_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster in the form of an emu.	形似鴯鶓的巨大怪物。	形似鸸鹋的巨大怪物。		CREATURE:GIANT_EMU DESCRIPTION；生物說明，健康分頁描述第一句
+A tiny crested parrot.	頭頂有冠羽的小型鸚鵡。	头顶有冠羽的小型鹦鹉。		CREATURE:BIRD_COCKATIEL DESCRIPTION；生物說明，健康分頁描述第一句
+They are prized as domestic companions.	很受歡迎的家養寵物。	很受欢迎的家养宠物。		CREATURE:BIRD_COCKATIEL DESCRIPTION；生物說明，健康分頁描述第一句
+A crested person with the head and wings of a cockatiel.	頭頂有冠羽、長著玄鳳鸚鵡頭部與翅膀的人。	头顶有冠羽、长着鸡尾鹦鹉头部和翅膀的人。		CREATURE:COCKATIEL_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A large monster in the form of a cockatiel.	形似玄鳳鸚鵡的大型怪物。	形似鸡尾鹦鹉的大型怪物。		CREATURE:GIANT_COCKATIEL DESCRIPTION；生物說明，健康分頁描述第一句
+A colorful person with the head and wings of a peach-faced lovebird.	色彩鮮豔、長著桃臉牡丹鸚鵡頭部與翅膀的人。	色彩鲜艳、长着桃脸牡丹鹦鹉头部和翅膀的人。		CREATURE:PEACH-FACED_LOVEBIRD_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster taking the shape of a peach-faced lovebird.	形似桃臉牡丹鸚鵡的巨大怪物。	形似桃脸牡丹鹦鹉的巨大怪物。		CREATURE:GIANT_PEACH-FACED_LOVEBIRD DESCRIPTION；生物說明，健康分頁描述第一句
+A tiny black and white bird.	黑白相間的小鳥。	黑白相间的小鸟。		CREATURE:BIRD_MAGPIE DESCRIPTION；生物說明，健康分頁描述第一句
+It is one of the most intelligent of the natural creatures.	是自然界最聰明的生物之一。	是自然界最聪明的生物之一。		CREATURE:BIRD_MAGPIE DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and wings of a magpie.	長著喜鵲頭部與翅膀的人。	长着喜鹊头部和翅膀的人。		CREATURE:MAGPIE_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster in the shape of a magpie.	形似喜鵲的巨大怪物。	形似喜鹊的巨大怪物。		CREATURE:GIANT_MAGPIE DESCRIPTION；生物說明，健康分頁描述第一句
+A tiny bird of prey.	體型嬌小的猛禽。	体型娇小的猛禽。		CREATURE:BIRD_KESTREL DESCRIPTION；生物說明，健康分頁描述第一句
+It hovers above the ground and swoops down to snatch rodents and mice.	會在空中懸停，再俯衝而下抓捕囓齒動物和老鼠。	会在空中悬停，再俯冲而下抓捕啮齿动物和老鼠。		CREATURE:BIRD_KESTREL DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and wings of a kestrel.	長著紅隼頭部與翅膀的人。	长着红隼头部和翅膀的人。		CREATURE:KESTREL_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster in the shape of a kestrel.	形似紅隼的巨大怪物。	形似红隼的巨大怪物。		CREATURE:GIANT_KESTREL DESCRIPTION；生物說明，健康分頁描述第一句
+A small sea bird with great wings.	翅膀寬大的小型海鳥。	翅膀宽大的小型海鸟。		CREATURE:BIRD_ALBATROSS DESCRIPTION；生物說明，健康分頁描述第一句
+It soars through the sky and dives for food on the surface of the water.	翱翔天際，俯衝到水面捕食。	翱翔天际，俯冲到水面捕食。		CREATURE:BIRD_ALBATROSS DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and wings of an albatross.	長著信天翁頭部與翅膀的人。	长着信天翁头部和翅膀的人。		CREATURE:ALBATROSS_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster in the shape of an albatross.	形似信天翁的巨大怪物。	形似信天翁的巨大怪物。		CREATURE:GIANT_ALBATROSS DESCRIPTION；生物說明，健康分頁描述第一句
+A feathered person with the head and wings of a great horned owl.	全身覆羽、長著美洲鵰鴞頭部與翅膀的人。	全身覆羽、长着美洲雕鸮头部和翅膀的人。		CREATURE:GREAT_HORNED_OWL_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster in the shape of a great horned owl.	形似美洲鵰鴞的巨大怪物。	形似美洲雕鸮的巨大怪物。		CREATURE:GIANT_GREAT_HORNED_OWL DESCRIPTION；生物說明，健康分頁描述第一句
+A small bird of prey.	小型猛禽。	小型猛禽。		CREATURE:BIRD_EAGLE DESCRIPTION；生物說明，健康分頁描述第一句
+A feathered person with the head and wings of an eagle.	全身覆羽、長著鵰頭部與翅膀的人。	全身覆羽、长着鹰头部和翅膀的人。		CREATURE:EAGLE_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster in the form of an eagle.	形似鵰的巨大怪物。	形似鹰的巨大怪物。		CREATURE:GIANT_EAGLE DESCRIPTION；生物說明，健康分頁描述第一句
+A feathered person with a brightly-colored bill.	全身覆羽、長著鮮豔鳥喙的人。	全身覆羽、长着鲜艳鸟喙的人。		CREATURE:HORNBILL_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster in the shape of a hornbill.	形似犀鳥的巨大怪物。	形似犀鸟的巨大怪物。		CREATURE:GIANT_HORNBILL DESCRIPTION；生物說明，健康分頁描述第一句
+A colorful person with the head and wings of a masked lovebird.	色彩鮮豔、長著黃領牡丹鸚鵡頭部與翅膀的人。	色彩鲜艳、长着黄领牡丹鹦鹉头部和翅膀的人。		CREATURE:MASKED_LOVEBIRD_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster in the form of a masked lovebird.	形似黃領牡丹鸚鵡的巨大怪物。	形似黄领牡丹鹦鹉的巨大怪物。		CREATURE:GIANT_MASKED_LOVEBIRD DESCRIPTION；生物說明，健康分頁描述第一句
+A tiny brown bird found in open woodlands.	棲息在稀疏林地的褐色小鳥。	栖息在稀疏林地的褐色小鸟。		CREATURE:BIRD_BUSHTIT DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and wings of a bushtit.	長著叢山雀頭部與翅膀的人。	长着丛山雀头部和翅膀的人。		CREATURE:BUSHTIT_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster in the form of a bushtit.	形似叢山雀的巨大怪物。	形似丛山雀的巨大怪物。		CREATURE:GIANT_BUSHTIT DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the wings and head of a damselfly.	長著豆娘翅膀與頭部的人。	长着豆娘翅膀和头部的人。		CREATURE:DAMSELFLY_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A large monster in the shape of a damselfly.	形似豆娘的大型怪物。	形似豆娘的大型怪物。		CREATURE:GIANT_DAMSELFLY DESCRIPTION；生物說明，健康分頁描述第一句
+A tiny nocturnal insect.	夜行性的小昆蟲。	夜行性的小昆虫。		CREATURE:MOTH DESCRIPTION；生物說明，健康分頁描述第一句
+It flies toward flames in the night.	夜裡會撲向火光。	夜里会扑向火光。		CREATURE:MOTH DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and wings of a moth.	長著飛蛾頭部與翅膀的人。	长着飞蛾头部和翅膀的人。		CREATURE:MOTH_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A large monster in the form of a moth.	形似飛蛾的大型怪物。	形似飞蛾的大型怪物。		CREATURE:GIANT_MOTH DESCRIPTION；生物說明，健康分頁描述第一句
+A tiny insect which uses its powerful legs to leap and make noise.	用強壯的腿跳躍、發出聲響的小昆蟲。	用强壮的腿跳跃、发出声响的小昆虫。		CREATURE:GRASSHOPPER DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and legs of a grasshopper.	長著蚱蜢頭部與腿的人。	长着蚱蜢头部和腿的人。		CREATURE:GRASSHOPPER_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge creature in the shape of a grasshopper.	形似蚱蜢的巨大生物。	形似蚱蜢的巨大生物。		CREATURE:GIANT_GRASSHOPPER DESCRIPTION；生物說明，健康分頁描述第一句
+A tiny yellow bug.	黃色的小蟲。	黄色的小虫。		CREATURE:BARK_SCORPION DESCRIPTION；生物說明，健康分頁描述第一句
+It has pincers and a stinging tail which can prove fatal.	有一對螯，尾刺足以致命。	有一对螯，尾刺足以致命。		CREATURE:BARK_SCORPION DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster in the form of a bark scorpion.	形似樹皮蠍的巨大怪物。	形似树皮蝎的巨大怪物。		CREATURE:GIANT_BARK_SCORPION DESCRIPTION；生物說明，健康分頁描述第一句
+A green person with the head and arms of a mantis.	通體翠綠、長著螳螂頭部與手臂的人。	通体翠绿、长着螳螂头部和手臂的人。		CREATURE:MANTIS_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A large monster in the shape of a mantis.	形似螳螂的大型怪物。	形似螳螂的大型怪物。		CREATURE:GIANT_MANTIS DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and legs of a tick.	長著壁蝨頭部與腿的人。	长着蜱虫头部和腿的人。		CREATURE:TICK_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A large monster taking the shape of a tick.	形似壁蝨的大型怪物。	形似蜱虫的大型怪物。		CREATURE:GIANT_TICK DESCRIPTION；生物說明，健康分頁描述第一句
+A tiny parasitic insect.	寄生性的小昆蟲。	寄生性的小昆虫。		CREATURE:LOUSE DESCRIPTION；生物說明，健康分頁描述第一句
+It feeds on skin and blood.	以皮膚和血液為食。	以皮肤和血液为食。		CREATURE:LOUSE DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and legs of a louse.	長著蝨子頭部與腿的人。	长着虱子头部和腿的人。		CREATURE:LOUSE_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster in the shape of a louse.	形似蝨子的巨大怪物。	形似虱子的巨大怪物。		CREATURE:GIANT_LOUSE DESCRIPTION；生物說明，健康分頁描述第一句
+A tiny pest insect.	細小的害蟲。	细小的害虫。		CREATURE:THRIPS DESCRIPTION 等 2 種；生物說明，健康分頁描述第一句
+It feeds on both crops and other bugs.	既吃農作物，也吃其他蟲子。	既吃农作物，也吃其他虫子。		CREATURE:THRIPS DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and wings of a thrips.	長著薊馬頭部與翅膀的人。	长着蓟马头部和翅膀的人。		CREATURE:THRIPS_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster in the form of a thrips.	形似薊馬的巨大怪物。	形似蓟马的巨大怪物。		CREATURE:GIANT_THRIPS DESCRIPTION；生物說明，健康分頁描述第一句
+A tiny land mollusk.	細小的陸生軟體動物。	细小的陆生软体动物。		CREATURE:SLUG DESCRIPTION；生物說明，健康分頁描述第一句；術語例外：软体
+It can be found under rotten logs and in gardens.	常見於腐朽的木頭底下與花園裡。	常见于腐朽的木头底下和花园里。		CREATURE:SLUG DESCRIPTION；生物說明，健康分頁描述第一句；術語例外：logs
+A great slug with the torso of a man.	上身是人類軀幹的巨大蛞蝓。	上身是人类躯干的巨大蛞蝓。		CREATURE:SLUG_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+It pulls itself across the ground with its hands for greater speed.	會用雙手拖著身體在地上爬行，以加快移動速度。	会用双手拖着身体在地上爬行，以加快移动速度。		CREATURE:SLUG_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster in the form of a slug.	形似蛞蝓的巨大怪物。	形似蛞蝓的巨大怪物。		CREATURE:GIANT_SLUG DESCRIPTION；生物說明，健康分頁描述第一句
+It uses its long nose to suck blood from its host.	用長長的口器吸食宿主的血。	用长长的口器吸食宿主的血。		CREATURE:MOSQUITO DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and wings of a mosquito.	長著蚊子頭部與翅膀的人。	长着蚊子头部和翅膀的人。		CREATURE:MOSQUITO_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster in the shape of a mosquito.	形似蚊子的巨大怪物。	形似蚊子的巨大怪物。		CREATURE:GIANT_MOSQUITO DESCRIPTION；生物說明，健康分頁描述第一句
+A tiny black bug that lacks a web but can leap short distances.	不結網、但能短距離跳躍的黑色小蟲。	不结网、但能短距离跳跃的黑色小虫。		CREATURE:SPIDER_JUMPING DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and arms of a jumping spider.	長著跳蛛頭部與手臂的人。	长着跳蛛头部和手臂的人。		CREATURE:JUMPING_SPIDER_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster in the form of a jumping spider.	形似跳蛛的巨大怪物。	形似跳蛛的巨大怪物。		CREATURE:GIANT_JUMPING_SPIDER DESCRIPTION；生物說明，健康分頁描述第一句
+A tiny insect capable of destroying large wooden structures when in large numbers.	數量一多就能蛀毀大型木造建築的小昆蟲。	数量一多就能蛀毁大型木结构建筑的小昆虫。		CREATURE:TERMITE DESCRIPTION；生物說明，健康分頁描述第一句
+A tiny predatory mollusk.	肉食性的小型軟體動物。	肉食性的小型软体动物。		CREATURE:MOON_SNAIL DESCRIPTION；生物說明，健康分頁描述第一句；術語例外：软体
+It is brightly colored.	色彩鮮豔。	色彩鲜艳。		CREATURE:MOON_SNAIL DESCRIPTION；生物說明，健康分頁描述第一句
+A colorful person with the head and shell of a moon snail.	色彩鮮豔、長著玉螺頭部與殼的人。	色彩鲜艳、长着玉螺头部和壳的人。		CREATURE:MOON_SNAIL_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster in the shape of a moon snail.	形似玉螺的巨大怪物。	形似玉螺的巨大怪物。		CREATURE:GIANT_MOON_SNAIL DESCRIPTION；生物說明，健康分頁描述第一句
+A tiny brown bug known for its powerful poison.	以劇毒聞名的褐色小蟲。	以剧毒闻名的褐色小虫。		CREATURE:SPIDER_BROWN_RECLUSE DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and arms of a brown recluse spider.	長著褐色隱遁蛛頭部與手臂的人。	长着褐色隐遁蛛头部和手臂的人。		CREATURE:BROWN_RECLUSE_SPIDER_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster in the shape of a brown recluse spider.	形似褐色隱遁蛛的巨大怪物。	形似褐色隐遁蛛的巨大怪物。		CREATURE:GIANT_BROWN_RECLUSE_SPIDER DESCRIPTION；生物說明，健康分頁描述第一句
+A tiny land mollusk with a large shell.	背著大殼的陸生小型軟體動物。	背着大壳的陆生小型软体动物。		CREATURE:SNAIL DESCRIPTION；生物說明，健康分頁描述第一句；術語例外：软体
+A huge monster in the form of a snail.	形似蝸牛的巨大怪物。	形似蜗牛的巨大怪物。		CREATURE:GIANT_SNAIL DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and fingers of a gecko.	長著守宮頭部與手指的人。	长着守宫头部和手指的人。		CREATURE:LEOPARD_GECKO_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A large monster in the shape of a gecko.	形似守宮的大型怪物。	形似守宫的大型怪物。		CREATURE:GIANT_LEOPARD_GECKO DESCRIPTION；生物說明，健康分頁描述第一句
+A tiny shelled reptile that lives in the desert.	生活在沙漠、有殼的小型爬蟲類。	生活在沙漠、有壳的小型爬行动物。		CREATURE:DESERT TORTOISE DESCRIPTION；生物說明，健康分頁描述第一句
+A reptile person with the head and tail of a desert tortoise.	長著沙漠陸龜頭部與尾巴的爬蟲類人。	长着沙漠陆龟头部和尾巴的爬行类人。		CREATURE:DESERT_TORTOISE_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A large monster in the form of a desert tortoise.	形似沙漠陸龜的大型怪物。	形似沙漠陆龟的大型怪物。		CREATURE:GIANT_DESERT_TORTOISE DESCRIPTION；生物說明，健康分頁描述第一句
+A small venomous lizard.	有毒的小型蜥蜴。	有毒的小型蜥蜴。		CREATURE:GILA_MONSTER DESCRIPTION；生物說明，健康分頁描述第一句
+A venomous person with the head and tail of a gila monster.	帶有毒性、長著美國毒蜥頭部與尾巴的人。	带有毒性、长着美国毒蜥头部和尾巴的人。		CREATURE:GILA_MONSTER_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge beast in the form of a gila monster.	形似美國毒蜥的巨大野獸。	形似美国毒蜥的巨大野兽。		CREATURE:GIANT_GILA_MONSTER DESCRIPTION；生物說明，健康分頁描述第一句
+A medium-sized highly social mammalian carnivore.	群居性極強的中型肉食性哺乳動物。	群居性极强的中型食肉哺乳动物。		CREATURE:DOG DESCRIPTION；生物說明，健康分頁描述第一句
+It has a keen sense of smell.	嗅覺敏銳。	嗅觉敏锐。		CREATURE:DOG DESCRIPTION；生物說明，健康分頁描述第一句
+It can be trained to obey commands.	可以訓練牠聽從指令。	可以训练它听从指令。		CREATURE:DOG DESCRIPTION；生物說明，健康分頁描述第一句
+A small mammalian carnivore.	小型肉食性哺乳動物。	小型食肉哺乳动物。		CREATURE:CAT DESCRIPTION；生物說明，健康分頁描述第一句
+It is usually domestic and hunts vermin.	多為家養，會捕捉小動物。	多为家养，会捕捉小动物。		CREATURE:CAT DESCRIPTION；生物說明，健康分頁描述第一句
+A large mammalian herbivore.	大型草食性哺乳動物。	大型食草哺乳动物。		CREATURE:COW DESCRIPTION 等 3 種；生物說明，健康分頁描述第一句
+They often bear large horns and the males are ill-tempered.	常長著大角，公牛脾氣暴躁。	常长着大角，公牛脾气暴躁。		CREATURE:COW DESCRIPTION；生物說明，健康分頁描述第一句
+They are domesticated for milk and meat.	人們飼養牠們以取乳和肉。	人们饲养它们以取奶和肉。		CREATURE:COW DESCRIPTION；生物說明，健康分頁描述第一句
+A medium-sized herding animal.	中型的群居家畜。	中型的群居家畜。		CREATURE:SHEEP DESCRIPTION 等 2 種；生物說明，健康分頁描述第一句
+It is prized for its thick wool coat.	因一身厚實的羊毛而受到珍視。	因一身厚实的羊毛而受到珍视。		CREATURE:SHEEP DESCRIPTION；生物說明，健康分頁描述第一句
+A medium-sized domestic animal.	中型家畜。	中型家畜。		CREATURE:PIG DESCRIPTION；生物說明，健康分頁描述第一句
+It has a distinctive snout and corkscrew tail.	鼻子造型獨特，尾巴捲成螺旋狀。	鼻子造型独特，尾巴卷成螺旋状。		CREATURE:PIG DESCRIPTION；生物說明，健康分頁描述第一句
+It is thought by some to be intelligent.	有人認為牠很聰明。	有人认为它很聪明。		CREATURE:PIG DESCRIPTION；生物說明，健康分頁描述第一句
+It is known for its short horns and beard.	以短角和鬍鬚聞名。	以短角和胡须闻名。		CREATURE:GOAT DESCRIPTION；生物說明，健康分頁描述第一句
+A small domestic bird capable of flying short distances.	能短距離飛行的小型家禽。	能短距离飞行的小型家禽。		CREATURE:BIRD_CHICKEN DESCRIPTION；生物說明，健康分頁描述第一句
+It is prized for its tasty eggs.	所產的蛋美味而受到珍視。	所产的蛋美味而受到珍视。		CREATURE:BIRD_CHICKEN DESCRIPTION；生物說明，健康分頁描述第一句
+A small rodent with no tail.	沒有尾巴的小型囓齒動物。	没有尾巴的小型啮齿动物。		CREATURE:CAVY DESCRIPTION；生物說明，健康分頁描述第一句
+It can be found roaming the grassland in herds.	常成群在草原上遊蕩。	常成群在草原上游荡。		CREATURE:CAVY DESCRIPTION；生物說明，健康分頁描述第一句
+It has three toes on its hind feet.	後腳有三根腳趾。	后脚有三根脚趾。		CREATURE:CAVY DESCRIPTION；生物說明，健康分頁描述第一句
+A small water bird.	小型水鳥。	小型水鸟。		CREATURE:BIRD_DUCK DESCRIPTION；生物說明，健康分頁描述第一句
+It has a long neck and powerful legs meant for swimming and diving.	脖子修長，雙腿強健，善於游泳與潛水。	脖子修长，双腿强健，善于游泳和潜水。		CREATURE:BIRD_DUCK DESCRIPTION；生物說明，健康分頁描述第一句
+It is powerfully built and has long curved horns.	體格強壯，長著彎曲的長角。	体格强壮，长着弯曲的长角。		CREATURE:WATER_BUFFALO DESCRIPTION；生物說明，健康分頁描述第一句
+A large mammalian herbivore living in cold climates.	生活在寒冷地帶的大型草食性哺乳動物。	生活在寒冷地带的大型食草哺乳动物。		CREATURE:REINDEER DESCRIPTION；生物說明，健康分頁描述第一句
+It has large antlers and sought-after fur.	有一對大鹿角，毛皮很搶手。	有一对大鹿角，毛皮很抢手。		CREATURE:REINDEER DESCRIPTION；生物說明，健康分頁描述第一句
+A small migratory bird.	小型候鳥。	小型候鸟。		CREATURE:BIRD_GOOSE DESCRIPTION；生物說明，健康分頁描述第一句
+It has a very long neck and can be found in lakes and other bodies of water.	脖子很長，常見於湖泊等水域。	脖子很长，常见于湖泊等水域。		CREATURE:BIRD_GOOSE DESCRIPTION；生物說明，健康分頁描述第一句
+It has long fur and curving horns.	毛長，角彎曲。	毛长，角弯曲。		CREATURE:YAK DESCRIPTION；生物說明，健康分頁描述第一句
+It can be found in the mountains.	見於山區。	见于山区。		CREATURE:YAK DESCRIPTION；生物說明，健康分頁描述第一句
+A large domestic pack animal.	大型的家養馱獸。	大型的家养驮畜。		CREATURE:LLAMA DESCRIPTION；生物說明，健康分頁描述第一句
+It has a long neck.	脖子很長。	脖子很长。		CREATURE:LLAMA DESCRIPTION；生物說明，健康分頁描述第一句
+It is prized for its hair.	毛髮受到珍視。	毛发受到珍视。		CREATURE:LLAMA DESCRIPTION；生物說明，健康分頁描述第一句
+A large domestic animal with a long neck.	脖子很長的大型家畜。	脖子很长的大型家畜。		CREATURE:ALPACA DESCRIPTION；生物說明，健康分頁描述第一句
+It has been bred for its valuable hair.	人們為了牠珍貴的毛而培育牠。	人们为了它珍贵的毛而培育它。		CREATURE:ALPACA DESCRIPTION；生物說明，健康分頁描述第一句
+A small ground-dwelling bird.	在地面生活的小型鳥類。	在地面生活的小型鸟类。		CREATURE:BIRD_GUINEAFOWL DESCRIPTION；生物說明，健康分頁描述第一句
+It has a featherless head and eats seeds and insects.	頭上無毛，吃種子和昆蟲。	头上无毛，吃种子和昆虫。		CREATURE:BIRD_GUINEAFOWL DESCRIPTION；生物說明，健康分頁描述第一句
+It moves about in groups.	成群活動。	成群活动。		CREATURE:BIRD_GUINEAFOWL DESCRIPTION；生物說明，健康分頁描述第一句
+A small forest bird known for the distinctive flaps of skin hanging from its face.	以臉上垂掛的獨特肉垂聞名的小型森林鳥類。	以脸上垂挂的独特肉垂闻名的小型森林鸟类。		CREATURE:BIRD_TURKEY DESCRIPTION；生物說明，健康分頁描述第一句
+It is prized for its meat.	肉質受到珍視。	肉质受到珍视。		CREATURE:BIRD_TURKEY DESCRIPTION；生物說明，健康分頁描述第一句
+A small lagomorph with long ears.	耳朵很長的小型兔形目動物。	耳朵很长的小型兔形目动物。		CREATURE:RABBIT DESCRIPTION；生物說明，健康分頁描述第一句
+It has powerful hind legs which it uses to swiftly avoid predators.	後腿強健，能迅速躲開掠食者。	后腿强健，能迅速躲开捕食者。		CREATURE:RABBIT DESCRIPTION；生物說明，健康分頁描述第一句
+It can be found anywhere from forests to deserts.	從森林到沙漠都看得到。	从森林到沙漠都看得到。		CREATURE:RABBIT DESCRIPTION；生物說明，健康分頁描述第一句
+A rolling platform for carrying passengers or cargo.	載運乘客或貨物的帶輪平台。	载运乘客或货物的带轮平台。		CREATURE:EQUIPMENT_WAGON DESCRIPTION；生物說明，健康分頁描述第一句
+A tiny flying insect found around rotting meat and garbage.	常在腐肉和垃圾周圍出沒的小型飛蟲。	常在腐肉和垃圾周围出没的小型飞虫。		CREATURE:FLY DESCRIPTION；生物說明，健康分頁描述第一句
+These bugs are widely considered to be a nuisance.	普遍被視為惱人的害蟲。	普遍被视为恼人的害虫。		CREATURE:FLY DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the wings and head of a fly.	長著蒼蠅翅膀與頭部的人。	长着苍蝇翅膀和头部的人。		CREATURE:FLY_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A large monster in the shape of a fly.	形似蒼蠅的大型怪物。	形似苍蝇的大型怪物。		CREATURE:GIANT_FLY DESCRIPTION；生物說明，健康分頁描述第一句
+A small insect that seeks out unwatched food and garbage.	專找沒人看管的食物和垃圾的小昆蟲。	专找没人看管的食物和垃圾的小昆虫。		CREATURE:ROACH_LARGE DESCRIPTION；生物說明，健康分頁描述第一句
+They fear light.	怕光。	怕光。		CREATURE:ROACH_LARGE DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the wings and head of a roach.	長著蟑螂翅膀與頭部的人。	长着蟑螂翅膀和头部的人。		CREATURE:ROACH_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A large monster in the shape of a roach.	形似蟑螂的大型怪物。	形似蟑螂的大型怪物。		CREATURE:GIANT_ROACH DESCRIPTION；生物說明，健康分頁描述第一句
+A tiny insect that can be found almost anywhere outside.	戶外幾乎隨處可見的小昆蟲。	户外几乎随处可见的小昆虫。		CREATURE:BEETLE DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the carapace and head of a beetle.	長著甲蟲甲殼與頭部的人。	长着甲虫甲壳和头部的人。		CREATURE:BEETLE_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A large monster in the shape of a beetle.	形似甲蟲的大型怪物。	形似甲虫的大型怪物。		CREATURE:GIANT_BEETLE DESCRIPTION；生物說明，健康分頁描述第一句
+A small insect with large orange wings.	長著橘色大翅膀的小昆蟲。	长着橙色大翅膀的小昆虫。		CREATURE:BUTTERFLY_MONARCH DESCRIPTION；生物說明，健康分頁描述第一句
+It is admired for its beauty.	因外表美麗而受人喜愛。	因外表美丽而受人喜爱。		CREATURE:BUTTERFLY_MONARCH DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the wings and head of a monarch butterfly.	長著帝王斑蝶翅膀與頭部的人。	长着黑脉金斑蝶翅膀和头部的人。		CREATURE:BUTTERFLY_MONARCH_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A large monster in the shape of a monarch butterfly.	形似帝王斑蝶的大型怪物。	形似黑脉金斑蝶的大型怪物。		CREATURE:GIANT_BUTTERFLY_MONARCH DESCRIPTION；生物說明，健康分頁描述第一句
+A tiny flying insect that can be seen at night by its glowing tail.	夜裡能靠發光的尾部看見的小型飛蟲。	夜里能靠发光的尾部看见的小型飞虫。		CREATURE:FIREFLY DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the wings and head of a firefly.	長著螢火蟲翅膀與頭部的人。	长着萤火虫翅膀和头部的人。		CREATURE:FIREFLY_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A large monster in the shape of a firefly.	形似螢火蟲的大型怪物。	形似萤火虫的大型怪物。		CREATURE:GIANT_FIREFLY DESCRIPTION；生物說明，健康分頁描述第一句
+A relatively large insect found in swamps and marshland.	體型較大的昆蟲，見於沼澤與濕地。	体型较大的昆虫，见于沼泽和湿地。		CREATURE:DRAGONFLY DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the wings and head of a dragonfly.	長著蜻蜓翅膀與頭部的人。	长着蜻蜓翅膀和头部的人。		CREATURE:DRAGONFLY_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A large monster in the shape of a dragonfly.	形似蜻蜓的大型怪物。	形似蜻蜓的大型怪物。		CREATURE:GIANT_DRAGONFLY DESCRIPTION；生物說明，健康分頁描述第一句
+A small woolly insect that lives in hive colonies.	毛茸茸的小昆蟲，群居於蜂巢中。	毛茸茸的小昆虫，群居于蜂巢中。		CREATURE:BUMBLEBEE DESCRIPTION；生物說明，健康分頁描述第一句
+It has an annoying sting which it rarely uses.	有惱人的螫針，但很少用。	有恼人的螫针，但很少用。		CREATURE:BUMBLEBEE DESCRIPTION；生物說明，健康分頁描述第一句
+A horned person with the head of a mountain goat.	頭上有角、長著雪羊頭部的人。	头上有角、长着雪羊头部的人。		CREATURE:GOAT_MOUNTAIN_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster in the form of a mountain goat.	形似雪羊的巨大怪物。	形似雪羊的巨大怪物。		CREATURE:GIANT_GOAT_MOUNTAIN DESCRIPTION；生物說明，健康分頁描述第一句
+A large rodent that lives in groups in the high mountains.	群居於高山的大型囓齒動物。	群居于高山的大型啮齿动物。		CREATURE:MARMOT_HOARY DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and fur of a hoary marmot.	長著灰白土撥鼠頭部與毛皮的人。	长着花白旱獭头部和毛皮的人。		CREATURE:MARMOT_HOARY_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A large creature the shape of a hoary marmot.	形似灰白土撥鼠的大型生物。	形似花白旱獭的大型生物。		CREATURE:GIANT_MARMOT_HOARY DESCRIPTION；生物說明，健康分頁描述第一句
+A huge aquatic mammal with giant tusks and dense whiskers.	長著巨牙和濃密鬍鬚的巨大水生哺乳動物。	长着巨牙和浓密胡须的巨大水生哺乳动物。		CREATURE:WALRUS DESCRIPTION；生物說明，健康分頁描述第一句
+They are thick and blubbery and live almost exclusively on mussels.	身軀肥厚多脂，幾乎只吃貽貝。	身躯肥厚多脂，几乎只吃贻贝。		CREATURE:WALRUS DESCRIPTION；生物說明，健康分頁描述第一句
+A legless person with the head and back flippers of a walrus.	沒有腿、長著海象頭部與後鰭肢的人。	没有腿、长着海象头部和后鳍肢的人。		CREATURE:WALRUS_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A giant monster in the form of a walrus.	形似海象的巨型怪物。	形似海象的巨型怪物。		CREATURE:GIANT_WALRUS DESCRIPTION；生物說明，健康分頁描述第一句
+A small oceanic eel-like creature that latches onto the side of its victim and tears into them.	形似鰻魚的小型海洋生物，會吸附在獵物身側撕咬。	形似鳗鱼的小型海洋生物，会吸附在猎物身侧撕咬。		CREATURE:FISH_LAMPREY_SEA DESCRIPTION；生物說明，健康分頁描述第一句
+A giant oceanic fish with rows and rows of razor-sharp pointed teeth.	長著一排又一排銳利尖牙的巨型海魚。	长着一排又一排锋利尖牙的巨型海鱼。		CREATURE:SHARK_GREAT_WHITE DESCRIPTION；生物說明，健康分頁描述第一句
+A large eel-like fish found in coastal waters.	棲息於沿海水域、形似鰻魚的大型魚類。	栖息于沿海水域、形似鳗鱼的大型鱼类。		CREATURE:SHARK_FRILL DESCRIPTION；生物說明，健康分頁描述第一句
+A large fish found in coastal temperate waters.	棲息於溫帶沿海水域的大型魚類。	栖息于温带沿海水域的大型鱼类。		CREATURE:SHARK_SPINY_DOGFISH DESCRIPTION；生物說明，健康分頁描述第一句
+A huge fish covered with growths and spots it uses to hide on the sea bed.	全身布滿肉突與斑點的巨大魚類，靠這些在海床上偽裝藏身。	全身布满肉突和斑点的巨大鱼类，靠这些在海床上伪装藏身。		CREATURE:SHARK_WOBBEGONG_SPOTTED DESCRIPTION；生物說明，健康分頁描述第一句
+It is not usually aggressive.	通常不具攻擊性。	通常不具攻击性。		CREATURE:SHARK_WOBBEGONG_SPOTTED DESCRIPTION；生物說明，健康分頁描述第一句
+A gigantic filter-feeding fish found in tropical oceans.	棲息於熱帶海洋、濾食維生的龐大魚類。	栖息于热带海洋、滤食为生的庞大鱼类。		CREATURE:SHARK_WHALE DESCRIPTION；生物說明，健康分頁描述第一句
+A gigantic filter-feeding fish found in temperate oceans.	棲息於溫帶海洋、濾食維生的龐大魚類。	栖息于温带海洋、滤食为生的庞大鱼类。		CREATURE:SHARK_BASKING DESCRIPTION；生物說明，健康分頁描述第一句
+A large nocturnal bottom-dwelling fish.	夜行性的大型底棲魚類。	夜行性的大型底栖鱼类。		CREATURE:SHARK_NURSE DESCRIPTION；生物說明，健康分頁描述第一句
+It is sluggish in movement and found in near-tropical shores.	行動遲緩，見於接近熱帶的海岸。	行动迟缓，见于接近热带的海岸。		CREATURE:SHARK_NURSE DESCRIPTION；生物說明，健康分頁描述第一句
+A large fish which scavenges along tropical and temperate coastal waters.	在熱帶與溫帶沿海覓食腐肉的大型魚類。	在热带和温带沿海觅食腐肉的大型鱼类。		CREATURE:SHARK_MAKO_LONGFIN DESCRIPTION；生物說明，健康分頁描述第一句
+A medium-sized fish found in shallow oceanic waters.	棲息於淺海的中型魚類。	栖息于浅海的中型鱼类。		CREATURE:SHARK_REEF_BLACKTIP DESCRIPTION；生物說明，健康分頁描述第一句
+A medium-sized fish which shelters in caves on the shallow sea floor.	躲在淺海海底洞穴中的中型魚類。	躲在浅海海底洞穴中的中型鱼类。		CREATURE:SHARK_REEF_WHITETIP DESCRIPTION；生物說明，健康分頁描述第一句
+It hunts for food in packs but is not aggressive.	會成群覓食，但不具攻擊性。	会成群觅食，但不具攻击性。		CREATURE:SHARK_REEF_WHITETIP DESCRIPTION；生物說明，健康分頁描述第一句
+A huge filter-feeding fish with great wings.	長著寬大「翅膀」、濾食維生的巨大魚類。	长着宽大“翅膀”、滤食为生的巨大鱼类。		CREATURE:FISH_RAY_MANTA DESCRIPTION；生物說明，健康分頁描述第一句
+They travel the oceans and are curious and friendly.	遨遊四海，好奇又友善。	遨游四海，好奇又友善。		CREATURE:FISH_RAY_MANTA DESCRIPTION；生物說明，健康分頁描述第一句
+An elusive medium-sized fish found in coastal waters.	棲息於沿海水域、難得一見的中型魚類。	栖息于沿海水域、难得一见的中型鱼类。		CREATURE:FISH_COELACANTH DESCRIPTION；生物說明，健康分頁描述第一句
+A large oceanic fish covered with bony plates.	身覆骨板的大型海魚。	身覆骨板的大型海鱼。		CREATURE:FISH_STURGEON DESCRIPTION；生物說明，健康分頁描述第一句
+A medium-sized fish found around coasts and islands.	棲息於海岸與島嶼周邊的中型魚類。	栖息于海岸和岛屿周边的中型鱼类。		CREATURE:FISH_MILKFISH DESCRIPTION；生物說明，健康分頁描述第一句
+It is easy prey for predators.	很容易成為掠食者的獵物。	很容易成为捕食者的猎物。		CREATURE:FISH_MILKFISH DESCRIPTION；生物說明，健康分頁描述第一句
+A medium-sized oceanic fish.	中型海魚。	中型海鱼。		CREATURE:FISH_BLUEFISH DESCRIPTION；生物說明，健康分頁描述第一句
+It is fork-tailed and sought after for its meat.	尾鰭分岔，肉質很搶手。	尾鳍分叉，肉质很抢手。		CREATURE:FISH_BLUEFISH DESCRIPTION；生物說明，健康分頁描述第一句
+A giant oceanic creature resembling a huge fish's head connected to a wide tail.	巨型海洋生物，看起來像一顆巨大魚頭接著寬尾巴。	巨型海洋生物，看起来像一个巨大鱼头接着宽尾巴。		CREATURE:FISH_SUNFISH_OCEAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge predatory fish found in open ocean.	棲息於遠洋的巨大掠食魚類。	栖息于远洋的巨大掠食鱼类。		CREATURE:FISH_SWORDFISH DESCRIPTION；生物說明，健康分頁描述第一句
+It has a long pointed bill which it uses to slash and ram.	長著尖長的吻，用來劈砍和衝撞。	长着尖长的吻，用来劈砍和冲撞。		CREATURE:FISH_SWORDFISH DESCRIPTION；生物說明，健康分頁描述第一句
+A large oceanic fish capable of great speed.	游速極快的大型海魚。	游速极快的大型海鱼。		CREATURE:FISH_TUNA_BLUEFIN DESCRIPTION；生物說明，健康分頁描述第一句
+A medium-sized sea mammal with a long thin horn on its nose.	鼻端長著一根細長尖角的中型海洋哺乳動物。	鼻端长着一根细长尖角的中型海洋哺乳动物。		CREATURE:NARWHAL DESCRIPTION；生物說明，健康分頁描述第一句
+It uses this horn to communicate and break up ice.	用這根角溝通與破冰。	用这根角沟通和破冰。		CREATURE:NARWHAL DESCRIPTION；生物說明，健康分頁描述第一句
+A huge sea monster with an enormous horn on its nose.	鼻端長著一根巨角的巨大海怪。	鼻端长着一根巨角的巨大海怪。		CREATURE:NARWHAL, GIANT DESCRIPTION；生物說明，健康分頁描述第一句
+A large person with the head of a hippo.	身材高大、長著河馬頭部的人。	身材高大、长着河马头部的人。		CREATURE:HIPPO_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge hippo-shaped monster.	形似河馬的巨大怪物。	形似河马的巨大怪物。		CREATURE:GIANT_HIPPO DESCRIPTION；生物說明，健康分頁描述第一句
+A medium-sized fish with a long snout.	吻部很長的中型魚類。	吻部很长的中型鱼类。		CREATURE:FISH_GAR_LONGNOSE DESCRIPTION；生物說明，健康分頁描述第一句
+It is found in lakes and streams.	見於湖泊與溪流。	见于湖泊和溪流。		CREATURE:FISH_GAR_LONGNOSE DESCRIPTION；生物說明，健康分頁描述第一句
+A medium-sized fish found in lakes and streams.	棲息於湖泊與溪流的中型魚類。	栖息于湖泊和溪流的中型鱼类。		CREATURE:FISH_CARP DESCRIPTION；生物說明，健康分頁描述第一句
+They are bottom-feeders and tend to gather in groups.	在水底覓食，喜歡成群聚集。	在水底觅食，喜欢成群聚集。		CREATURE:FISH_CARP DESCRIPTION；生物說明，健康分頁描述第一句
+A medium-sized predatory fish found in lakes and streams.	棲息於湖泊與溪流的中型掠食魚類。	栖息于湖泊和溪流的中型掠食鱼类。		CREATURE:FISH_TIGERFISH DESCRIPTION；生物說明，健康分頁描述第一句
+It is known for its ferocious attacks and interlocking teeth.	以兇猛的攻擊和交錯咬合的利齒聞名。	以凶猛的攻击和交错咬合的利齿闻名。		CREATURE:FISH_TIGERFISH DESCRIPTION；生物說明，健康分頁描述第一句
+A large person with the head of a grizzly bear.	身材高大、長著灰熊頭部的人。	身材高大、长着灰熊头部的人。		CREATURE:BEAR_GRIZZLY_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster in the shape of a grizzly bear.	形似灰熊的巨大怪物。	形似灰熊的巨大怪物。		CREATURE:GIANT_BEAR_GRIZZLY DESCRIPTION；生物說明，健康分頁描述第一句
+A large person with the head of a black bear.	身材高大、長著黑熊頭部的人。	身材高大、长着黑熊头部的人。		CREATURE:BEAR_BLACK_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster in the shape of a black bear.	形似黑熊的巨大怪物。	形似黑熊的巨大怪物。		CREATURE:GIANT_BEAR_BLACK DESCRIPTION；生物說明，健康分頁描述第一句
+A medium-sized hoofed forest creature that grows its antlers back each year.	生活在森林、每年重新長出鹿角的中型有蹄動物。	生活在森林、每年重新长出鹿角的中型有蹄动物。		CREATURE:DEER DESCRIPTION；生物說明，健康分頁描述第一句；術語例外：creature
+A person with the head of a deer.	長著鹿頭的人。	长着鹿头的人。		CREATURE:DEER_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster in the form of a deer.	形似鹿的巨大怪物。	形似鹿的巨大怪物。		CREATURE:GIANT_DEER DESCRIPTION；生物說明，健康分頁描述第一句
+A small carnivorous animal found in temperate climates.	棲息於溫帶的小型肉食動物。	栖息于温带的小型食肉动物。		CREATURE:FOX DESCRIPTION；生物說明，健康分頁描述第一句
+It has orange fur and is known for its cleverness.	毛色橘紅，以狡黠聞名。	毛色橙红，以狡黠闻名。		CREATURE:FOX DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and tail of a fox.	長著狐狸頭部與尾巴的人。	长着狐狸头部和尾巴的人。		CREATURE:FOX_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster in the shape of a fox.	形似狐狸的巨大怪物。	形似狐狸的巨大怪物。		CREATURE:GIANT_FOX DESCRIPTION；生物說明，健康分頁描述第一句
+A small omnivorous animal with a bright mask of fur.	臉上有一圈鮮明面罩狀毛紋的小型雜食動物。	脸上有一圈鲜明面罩状毛纹的小型杂食动物。		CREATURE:RACCOON DESCRIPTION；生物說明，健康分頁描述第一句
+It is nocturnal and found in temperate forests.	夜行性，見於溫帶森林。	夜行性，见于温带森林。		CREATURE:RACCOON DESCRIPTION；生物說明，健康分頁描述第一句
+It is a curious animal and has been known to steal from civilized areas.	好奇心旺盛，常溜進人類聚落偷東西。	好奇心旺盛，常溜进人类聚落偷东西。		CREATURE:RACCOON DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the mask and tail of a raccoon.	長著浣熊眼罩狀斑紋與尾巴的人。	长着浣熊眼罩状斑纹和尾巴的人。		CREATURE:RACCOON_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster in the shape of a raccoon.	形似浣熊的巨大怪物。	形似浣熊的巨大怪物。		CREATURE:GIANT_RACCOON DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and tail of a rhesus macaque.	長著恆河猴頭部與尾巴的人。	长着猕猴头部和尾巴的人。		CREATURE:MACAQUE_RHESUS_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A large monster in the form of a rhesus macaque.	形似恆河猴的大型怪物。	形似猕猴的大型怪物。		CREATURE:GIANT_MACAQUE_RHESUS DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and tail of a cougar.	長著美洲獅頭部與尾巴的人。	长着美洲狮头部和尾巴的人。		CREATURE:COUGAR_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster in the form of a cougar.	形似美洲獅的巨大怪物。	形似美洲狮的巨大怪物。		CREATURE:GIANT_COUGAR DESCRIPTION；生物說明，健康分頁描述第一句
+A large canine found in temperate regions.	棲息於溫帶的大型犬科動物。	栖息于温带的大型犬科动物。		CREATURE:WOLF DESCRIPTION；生物說明，健康分頁描述第一句
+It is territorial and hunts in packs.	有地盤意識，成群狩獵。	有领地意识，成群狩猎。		CREATURE:WOLF DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and tail of a wolf.	長著狼頭與狼尾的人。	长着狼头和狼尾的人。		CREATURE:WOLF_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster in the shape of a wolf.	形似狼的巨大怪物。	形似狼的巨大怪物。		CREATURE:GIANT_WOLF DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and fur of a groundhog.	長著土撥鼠頭部與毛皮的人。	长着土拨鼠头部和毛皮的人。		CREATURE:GROUNDHOG_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A large creature the shape of a groundhog.	形似土撥鼠的大型生物。	形似土拨鼠的大型生物。		CREATURE:GIANT_GROUNDHOG DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and tail of an alligator.	長著短吻鱷頭部與尾巴的人。	长着短吻鳄头部和尾巴的人。		CREATURE:ALLIGATOR_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster in the shape of an alligator.	形似短吻鱷的巨大怪物。	形似短吻鳄的巨大怪物。		CREATURE:GIANT_ALLIGATOR DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and wings of a buzzard.	長著美洲鷲頭部與翅膀的人。	长着美洲鹫头部和翅膀的人。		CREATURE:BUZZARD_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster in the form of a buzzard.	形似美洲鷲的巨大怪物。	形似美洲鹫的巨大怪物。		CREATURE:GIANT_BUZZARD DESCRIPTION；生物說明，健康分頁描述第一句
+A large bear-like creature with a striking coat of black and white hair.	一身醒目黑白毛皮、形似熊的大型生物。	一身醒目黑白毛皮、形似熊的大型生物。		CREATURE:PANDA DESCRIPTION；生物說明，健康分頁描述第一句
+It feeds on bamboo forests.	以竹林為食。	以竹林为食。		CREATURE:PANDA DESCRIPTION；生物說明，健康分頁描述第一句
+A giant bear-like creature found in the wildest parts of the world.	棲息於世上最荒野之地、形似熊的巨型生物。	栖息于世上最荒野之地、形似熊的巨型生物。		CREATURE:PANDA, GIGANTIC DESCRIPTION；生物說明，健康分頁描述第一句
+It has striking black and white fur.	毛皮黑白分明，十分醒目。	毛皮黑白分明，十分醒目。		CREATURE:PANDA, GIGANTIC DESCRIPTION；生物說明，健康分頁描述第一句
+A humanoid creature with the head and belly of a panda.	長著貓熊頭部與肚子的人形生物。	长着熊猫头部和肚子的人形生物。		CREATURE:PANDA MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A medium-sized semi-aquatic rodent.	半水棲的中型囓齒動物。	半水栖的中型啮齿动物。		CREATURE:CAPYBARA DESCRIPTION；生物說明，健康分頁描述第一句
+It lives in large herds and barks when alarmed.	大群生活，受驚時會發出吠叫。	大群生活，受惊时会发出吠叫。		CREATURE:CAPYBARA DESCRIPTION；生物說明，健康分頁描述第一句
+A huge rodent that walks on tall legs.	用高長的腿行走的巨大囓齒動物。	用高长的腿行走的巨大啮齿动物。		CREATURE:CAPYBARA, GIANT DESCRIPTION；生物說明，健康分頁描述第一句
+Its bark can be heard at large distances.	吠聲遠遠就能聽見。	吠声远远就能听见。		CREATURE:CAPYBARA, GIANT DESCRIPTION；生物說明，健康分頁描述第一句
+It is fond of swimming.	喜歡游泳。	喜欢游泳。		CREATURE:CAPYBARA, GIANT DESCRIPTION 等 2 種；生物說明，健康分頁描述第一句
+A humanoid with the head of a capybara.	長著水豚頭部的人形生物。	长着水豚头部的人形生物。		CREATURE:CAPYBARA MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A small mammal with a striped face.	臉上有條紋的小型哺乳動物。	脸上有条纹的小型哺乳动物。		CREATURE:BADGER DESCRIPTION；生物說明，健康分頁描述第一句
+It lives in groups and is ferocious in combat.	群居生活，戰鬥時十分兇猛。	群居生活，战斗时十分凶猛。		CREATURE:BADGER DESCRIPTION；生物說明，健康分頁描述第一句
+A humanoid with the head and stripes of a badger.	長著獾頭部與條紋的人形生物。	长着獾头部和条纹的人形生物。		CREATURE:BADGER MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster the shape of a badger.	形似獾的巨大怪物。	形似獾的巨大怪物。		CREATURE:BADGER, GIANT DESCRIPTION；生物說明，健康分頁描述第一句
+It is ferocious in combat.	戰鬥時十分兇猛。	战斗时十分凶猛。		CREATURE:BADGER, GIANT DESCRIPTION 等 2 種；生物說明，健康分頁描述第一句
+A large mammal with great antlers and a large nose. It lives in temperate forests.	長著巨大鹿角與大鼻子的大型哺乳動物。棲息於溫帶森林。	长着巨大鹿角和大鼻子的大型哺乳动物。栖息于温带森林。		CREATURE:MOOSE DESCRIPTION；生物說明，健康分頁描述第一句
+A humanoid with the head and antlers of a moose.	長著駝鹿頭部與鹿角的人形生物。	长着驼鹿头部和鹿角的人形生物。		CREATURE:MOOSE MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster the shape of a moose.	形似駝鹿的巨大怪物。	形似驼鹿的巨大怪物。		CREATURE:MOOSE, GIANT DESCRIPTION；生物說明，健康分頁描述第一句
+A small tree-dwelling mammal with distinctive color.	毛色獨特、生活在樹上的小型哺乳動物。	毛色独特、生活在树上的小型哺乳动物。		CREATURE:RED PANDA DESCRIPTION；生物說明，健康分頁描述第一句
+It rears up on its hind legs when cornered.	被逼入絕境時會用後腿站起。	被逼入绝境时会用后腿站起。		CREATURE:RED PANDA DESCRIPTION；生物說明，健康分頁描述第一句
+It uses its front paws like hands.	能像手一樣使用前掌。	能像手一样使用前掌。		CREATURE:RED PANDA DESCRIPTION；生物說明，健康分頁描述第一句
+A large monster with the shape of a red panda.	形似小貓熊的大型怪物。	形似小熊猫的大型怪物。		CREATURE:RED PANDA, GIANT DESCRIPTION；生物說明，健康分頁描述第一句
+A large person with the trunk and ears of an elephant.	身材高大、長著象鼻與象耳的人。	身材高大、长着象鼻和象耳的人。		CREATURE:ELEPHANT_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A gigantic monster in elephant form.	形似大象的龐大怪物。	形似大象的庞大怪物。		CREATURE:GIANT_ELEPHANT DESCRIPTION；生物說明，健康分頁描述第一句
+A medium-sized animal living in grass and woodland.	棲息於草原與林地的中型動物。	栖息于草原和林地的中型动物。		CREATURE:WARTHOG DESCRIPTION；生物說明，健康分頁描述第一句
+It has a large snout with four sharp tusks.	口鼻寬大，長著四根尖銳的獠牙。	口鼻宽大，长着四根尖锐的獠牙。		CREATURE:WARTHOG DESCRIPTION；生物說明，健康分頁描述第一句
+It will aggressively defend itself.	會奮力自衛。	会奋力自卫。		CREATURE:WARTHOG DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head of a warthog.	長著疣豬頭部的人。	长着疣猪头部的人。		CREATURE:WARTHOG_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster warthog with jagged tusks.	長著參差獠牙的巨大疣豬怪物。	长着参差獠牙的巨大疣猪怪物。		CREATURE:GIANT_WARTHOG DESCRIPTION；生物說明，健康分頁描述第一句
+A large ferocious predator found in grasslands.	棲息於草原的大型兇猛掠食者。	栖息于草原的大型凶猛捕食者。		CREATURE:LION DESCRIPTION；生物說明，健康分頁描述第一句
+It lives in groups of females and one male with a large mane.	由多頭母獅和一頭鬃毛濃密的公獅組成群體。	由多头母狮和一头鬃毛浓密的公狮组成群体。		CREATURE:LION DESCRIPTION；生物說明，健康分頁描述第一句
+They hunt together and are capable of felling extremely large prey.	會合作狩獵，能撲倒體型極大的獵物。	会合作狩猎，能扑倒体型极大的猎物。		CREATURE:LION DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head of a lion.	長著獅子頭部的人。	长着狮子头部的人。		CREATURE:LION_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A large spotted feline found in grass and woodland.	棲息於草原與林地、身有斑點的大型貓科動物。	栖息于草原和林地、身有斑点的大型猫科动物。		CREATURE:LEOPARD DESCRIPTION；生物說明，健康分頁描述第一句
+It is known for great speed in hunting.	以狩獵時的驚人速度聞名。	以狩猎时的惊人速度闻名。		CREATURE:LEOPARD DESCRIPTION；生物說明，健康分頁描述第一句
+A spotted person with the head and tail of a leopard.	身上有斑點、長著花豹頭部與尾巴的人。	身上有斑点、长着花豹头部和尾巴的人。		CREATURE:LEOPARD_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A spotted person with the head and tail of a jaguar.	身上有斑點、長著美洲豹頭部與尾巴的人。	身上有斑点、长着美洲豹头部和尾巴的人。		CREATURE:JAGUAR_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+An orange striped person with the head of a tiger.	身披橘色條紋、長著老虎頭部的人。	身披橙色条纹、长着老虎头部的人。		CREATURE:TIGER_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+The largest of the giant cats.	巨型貓科動物中最大的一種。	巨型猫科动物中最大的一种。		CREATURE:GIANT_TIGER DESCRIPTION；生物說明，健康分頁描述第一句
+It can be found hunting alone in the most savage countryside.	在最荒蠻的野地裡獨自狩獵。	在最荒蛮的野地里独自狩猎。		CREATURE:GIANT_TIGER DESCRIPTION；生物說明，健康分頁描述第一句
+A large spotted feline predator.	身有斑點的大型貓科掠食者。	身有斑点的大型猫科捕食者。		CREATURE:CHEETAH DESCRIPTION；生物說明，健康分頁描述第一句
+It is capable of incredible speed when ambushing its prey.	伏擊獵物時速度快得驚人。	伏击猎物时速度快得惊人。		CREATURE:CHEETAH DESCRIPTION；生物說明，健康分頁描述第一句
+A spotted person with the head and tail of a cheetah.	身上有斑點、長著獵豹頭部與尾巴的人。	身上有斑点、长着猎豹头部和尾巴的人。		CREATURE:CHEETAH_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A gigantic spotted cat.	身有斑點的龐大貓科動物。	身有斑点的庞大猫科动物。		CREATURE:GIANT_CHEETAH DESCRIPTION；生物說明，健康分頁描述第一句
+It is possibly the fastest animal on land and is found in the savage wilds.	可能是陸地上最快的動物，棲息於蠻荒野地。	可能是陆地上最快的动物，栖息于蛮荒野地。		CREATURE:GIANT_CHEETAH DESCRIPTION；生物說明，健康分頁描述第一句
+A small hooved creature found in large groups in the grasslands.	在草原上大群生活的小型有蹄動物。	在草原上大群生活的小型有蹄动物。		CREATURE:GAZELLE DESCRIPTION；生物說明，健康分頁描述第一句；術語例外：creature
+It has short horns and moves by leaps and bounds.	長著短角，以連續跳躍的方式移動。	长着短角，以连续跳跃的方式移动。		CREATURE:GAZELLE DESCRIPTION；生物說明，健康分頁描述第一句
+A horned person with the head of a gazelle.	頭上有角、長著瞪羚頭部的人。	头上有角、长着瞪羚头部的人。		CREATURE:GAZELLE_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster in the form of a gazelle.	形似瞪羚的巨大怪物。	形似瞪羚的巨大怪物。		CREATURE:GIANT_GAZELLE DESCRIPTION；生物說明，健康分頁描述第一句
+A blue-rumped person with the head and tail of a mandrill.	臀部呈藍色、長著山魈頭部與尾巴的人。	臀部呈蓝色、长着山魈头部和尾巴的人。		CREATURE:MANDRILL_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A large monster in the form of a mandrill.	形似山魈的大型怪物。	形似山魈的大型怪物。		CREATURE:GIANT_MANDRILL DESCRIPTION；生物說明，健康分頁描述第一句
+A large ape which lives in the tropical forests.	生活在熱帶森林的大型猿類。	生活在热带森林的大型猿类。		CREATURE:BONOBO DESCRIPTION；生物說明，健康分頁描述第一句
+It is quite intelligent and lives in large and complex social groups.	相當聰明，生活在龐大而複雜的社會群體中。	相当聪明，生活在庞大而复杂的社会群体中。		CREATURE:BONOBO DESCRIPTION；生物說明，健康分頁描述第一句
+A huge ape found in the forest.	棲息於森林的巨大猿類。	栖息于森林的巨大猿类。		CREATURE:GORILLA DESCRIPTION；生物說明，健康分頁描述第一句
+It lives in small groups eating plants.	以小群生活，以植物為食。	以小群生活，以植物为食。		CREATURE:GORILLA DESCRIPTION；生物說明，健康分頁描述第一句
+The groups are lead by a large dominant male with a silver back.	群體由一頭背部銀白、體型高大的強勢雄性帶領。	群体由一头背部银白、体型高大的强势雄性带领。		CREATURE:GORILLA DESCRIPTION；生物說明，健康分頁描述第一句
+A huge intelligent ape found in the tropical forests.	棲息於熱帶森林、聰明的巨大猿類。	栖息于热带森林、聪明的巨大猿类。		CREATURE:ORANGUTAN DESCRIPTION；生物說明，健康分頁描述第一句
+It is bright red and found living in the trees.	毛色鮮紅，生活在樹上。	毛色鲜红，生活在树上。		CREATURE:ORANGUTAN DESCRIPTION；生物說明，健康分頁描述第一句
+A medium-sized ape found in the trees.	生活在樹上的中型猿類。	生活在树上的中型猿类。		CREATURE:GIBBON_SIAMANG DESCRIPTION；生物說明，健康分頁描述第一句
+It is known for its loud calls.	以響亮的叫聲聞名。	以响亮的叫声闻名。		CREATURE:GIBBON_SIAMANG DESCRIPTION；生物說明，健康分頁描述第一句
+A small ape found in the trees of the tropical forest.	生活在熱帶森林樹上的小型猿類。	生活在热带森林树上的小型猿类。		CREATURE:GIBBON_GRAY DESCRIPTION；生物說明，健康分頁描述第一句
+It is known for its calls.	以叫聲聞名。	以叫声闻名。		CREATURE:GIBBON_GRAY DESCRIPTION；生物說明，健康分頁描述第一句
+A small ape found in the trees eating fruit.	在樹上吃果子的小型猿類。	在树上吃果子的小型猿类。		CREATURE:GIBBON_SILVERY DESCRIPTION；生物說明，健康分頁描述第一句
+A small ape from the tropical forest.	來自熱帶森林的小型猿類。	来自热带森林的小型猿类。		CREATURE:GIBBON_BLACK_CRESTED DESCRIPTION；生物說明，健康分頁描述第一句
+It can be found in the trees eating fruit.	常在樹上吃果子。	常在树上吃果子。		CREATURE:GIBBON_BLACK_CRESTED DESCRIPTION；生物說明，健康分頁描述第一句
+A large long-necked creature with a large hump on its sturdy body.	脖子很長、健壯身軀上有一個大駝峰的大型生物。	脖子很长、健壮身躯上有一个大驼峰的大型生物。		CREATURE:CAMEL_1_HUMP DESCRIPTION；生物說明，健康分頁描述第一句
+It has been domesticated to carry passengers and cargo but is nonetheless bad-tempered and will spit.	已被馴化來載人運貨，脾氣卻依然很差，還會吐口水。	已被驯化来载人运货，脾气却依然很差，还会吐口水。		CREATURE:CAMEL_1_HUMP DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and hump of a one-humped camel.	長著單峰駱駝頭部與駝峰的人。	长着单峰骆驼头部和驼峰的人。		CREATURE:CAMEL_1_HUMP_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster the shape of a one-humped camel.	形似單峰駱駝的巨大怪物。	形似单峰骆驼的巨大怪物。		CREATURE:GIANT_CAMEL_1_HUMP DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and humps of a two-humped camel.	長著雙峰駱駝頭部與駝峰的人。	长着双峰骆驼头部和驼峰的人。		CREATURE:CAMEL_2_HUMP_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster the shape of a two-humped camel.	形似雙峰駱駝的巨大怪物。	形似双峰骆驼的巨大怪物。		CREATURE:GIANT_CAMEL_2_HUMP DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and tail of a saltwater crocodile.	長著鹹水鱷頭部與尾巴的人。	长着湾鳄头部和尾巴的人。		CREATURE:CROCODILE_SALTWATER_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster in the shape of a saltwater crocodile.	形似鹹水鱷的巨大怪物。	形似湾鳄的巨大怪物。		CREATURE:GIANT_CROCODILE_SALTWATER DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and wings of a vulture.	長著禿鷲頭部與翅膀的人。	长着秃鹫头部和翅膀的人。		CREATURE:VULTURE_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster in the form of a vulture.	形似禿鷲的巨大怪物。	形似秃鹫的巨大怪物。		CREATURE:GIANT_VULTURE DESCRIPTION；生物說明，健康分頁描述第一句
+A huge herbivore with thick plated skin and powerful build.	皮膚厚如甲片、體格強壯的巨大草食動物。	皮肤厚如甲片、体格强壮的巨大食草动物。		CREATURE:RHINOCEROS DESCRIPTION；生物說明，健康分頁描述第一句
+It is known for the thick horns on the end of its nose.	以鼻端粗厚的角聞名。	以鼻端粗厚的角闻名。		CREATURE:RHINOCEROS DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and horns of a rhinoceros.	長著犀牛頭部與角的人。	长着犀牛头部和角的人。		CREATURE:RHINOCEROS_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster the shape of a rhinoceros.	形似犀牛的巨大怪物。	形似犀牛的巨大怪物。		CREATURE:GIANT_RHINOCEROS DESCRIPTION；生物說明，健康分頁描述第一句
+A huge leaf-eating mammal.	以樹葉為食的巨大哺乳動物。	以树叶为食的巨大哺乳动物。		CREATURE:GIRAFFE DESCRIPTION；生物說明，健康分頁描述第一句
+It has an extremely long neck.	脖子極長。	脖子极长。		CREATURE:GIRAFFE DESCRIPTION；生物說明，健康分頁描述第一句
+Its skin has a distinctive brown and white pattern.	皮膚上有獨特的褐白花紋。	皮肤上有独特的褐白花纹。		CREATURE:GIRAFFE DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and neck of a giraffe.	長著長頸鹿頭部與脖子的人。	长着长颈鹿头部和脖子的人。		CREATURE:GIRAFFE_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster the shape of a giraffe.	形似長頸鹿的巨大怪物。	形似长颈鹿的巨大怪物。		CREATURE:GIANT_GIRAFFE DESCRIPTION；生物說明，健康分頁描述第一句
+A humanoid with the head and stripes of a honey badger.	長著蜜獾頭部與條紋的人形生物。	长着蜜獾头部和条纹的人形生物。		CREATURE:HONEY BADGER MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster the shape of a honey badger.	形似蜜獾的巨大怪物。	形似蜜獾的巨大怪物。		CREATURE:HONEY BADGER, GIANT DESCRIPTION；生物說明，健康分頁描述第一句
+A medium-sized reptile with a large shell.	背著大殼的中型爬蟲類。	背着大壳的中型爬行动物。		CREATURE:GIANT TORTOISE DESCRIPTION；生物說明，健康分頁描述第一句
+It can retreat into its shell to escape predators.	能縮進殼裡躲避掠食者。	能缩进壳里躲避捕食者。		CREATURE:GIANT TORTOISE DESCRIPTION；生物說明，健康分頁描述第一句
+A person with a large shell and the head of a giant tortoise.	背著大殼、長著象龜頭部的人。	背着大壳、长着象龟头部的人。		CREATURE:GIANT TORTOISE MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster with an enormous shell.	背著巨殼的巨大怪物。	背着巨壳的巨大怪物。		CREATURE:GIGANTIC TORTOISE DESCRIPTION；生物說明，健康分頁描述第一句
+A small mammal with a leathery hide.	外皮堅韌如皮革的小型哺乳動物。	外皮坚韧如皮革的小型哺乳动物。		CREATURE:ARMADILLO DESCRIPTION；生物說明，健康分頁描述第一句
+It can roll into a ball to escape predators.	能蜷成一顆球躲避掠食者。	能蜷成一个球躲避捕食者。		CREATURE:ARMADILLO DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the hide and head of an armadillo.	長著犰狳皮甲與頭部的人。	长着犰狳皮甲和头部的人。		CREATURE:ARMADILLO MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A large monster the shape of an armadillo.	形似犰狳的大型怪物。	形似犰狳的大型怪物。		CREATURE:ARMADILLO, GIANT DESCRIPTION；生物說明，健康分頁描述第一句
+It has thick armor for skin.	皮膚是一層厚厚的鎧甲。	皮肤是一层厚厚的铠甲。		CREATURE:ARMADILLO, GIANT DESCRIPTION；生物說明，健康分頁描述第一句
+A large hooved animal with curved horns and a thick brown coat.	長著彎角、披著厚實褐毛的大型有蹄動物。	长着弯角、披着厚实褐毛的大型有蹄动物。		CREATURE:MUSKOX DESCRIPTION；生物說明，健康分頁描述第一句
+It is known for its strong odor.	以濃烈的氣味聞名。	以浓烈的气味闻名。		CREATURE:MUSKOX DESCRIPTION；生物說明，健康分頁描述第一句
+A horned person with the head of a muskox.	頭上有角、長著麝牛頭部的人。	头上有角、长着麝牛头部的人。		CREATURE:MUSKOX_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster in the form of a muskox.	形似麝牛的巨大怪物。	形似麝牛的巨大怪物。		CREATURE:GIANT_MUSKOX DESCRIPTION；生物說明，健康分頁描述第一句
+A large hooved animal found roaming wild in temperate forests.	在溫帶森林中野外遊蕩的大型有蹄動物。	在温带森林中野外游荡的大型有蹄动物。		CREATURE:ELK DESCRIPTION；生物說明，健康分頁描述第一句
+The males have long antlers.	雄性長有長長的鹿角。	雄性长有长长的鹿角。		CREATURE:ELK DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head of an elk.	長著馬鹿頭部的人。	长着马鹿头部的人。		CREATURE:ELK_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster in the form of an elk.	形似馬鹿的巨大怪物。	形似马鹿的巨大怪物。		CREATURE:GIANT_ELK DESCRIPTION；生物說明，健康分頁描述第一句
+A huge predatory mammal covered in white hair.	全身覆蓋白毛的巨大掠食性哺乳動物。	全身覆盖白毛的巨大捕食性哺乳动物。		CREATURE:BEAR_POLAR DESCRIPTION；生物說明，健康分頁描述第一句
+It hunts the shores along tundra and glaciers.	在凍原與冰河沿岸狩獵。	在冻原和冰川沿岸狩猎。		CREATURE:BEAR_POLAR DESCRIPTION；生物說明，健康分頁描述第一句
+A large person with the head of a polar bear.	身材高大、長著北極熊頭部的人。	身材高大、长着北极熊头部的人。		CREATURE:BEAR_POLAR_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster in the shape of a polar bear.	形似北極熊的巨大怪物。	形似北极熊的巨大怪物。		CREATURE:GIANT_BEAR_POLAR DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and tail of a wolverine.	長著狼獾頭部與尾巴的人。	长着狼獾头部和尾巴的人。		CREATURE:WOLVERINE_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A tiny furry rodent dwelling in the hollow cracks of rocks.	住在岩石縫隙裡、毛茸茸的小型囓齒動物。	住在岩石缝隙里、毛茸茸的小型啮齿动物。		CREATURE:CHINCHILLA DESCRIPTION；生物說明，健康分頁描述第一句
+They can be found high in the mountains.	見於高山上。	见于高山上。		CREATURE:CHINCHILLA DESCRIPTION；生物說明，健康分頁描述第一句
+A hairy person with the head and tail of a chinchilla.	毛髮濃密、長著毛絲鼠頭部與尾巴的人。	毛发浓密、长着毛丝鼠头部和尾巴的人。		CREATURE:CHINCHILLA_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A large monster in the shape of a chinchilla.	形似毛絲鼠的大型怪物。	形似毛丝鼠的大型怪物。		CREATURE:GIANT_CHINCHILLA DESCRIPTION；生物說明，健康分頁描述第一句
+A transparent and amorphous monster that lives underground.	生活在地底、透明且沒有固定形體的怪物。	生活在地下、透明且没有固定形体的怪物。		CREATURE:FLOATING_GUTS DESCRIPTION；生物說明，健康分頁描述第一句
+It is small in size and is found crawling across the cavern floor.	體型不大，常在洞穴地面上爬行。	体型不大，常在洞穴地面上爬行。		CREATURE:FLOATING_GUTS DESCRIPTION；生物說明，健康分頁描述第一句
+Its organs appear to be floating inside of its body.	體內的器官看起來像是漂浮著。	体内的器官看起来像是漂浮着。		CREATURE:FLOATING_GUTS DESCRIPTION；生物說明，健康分頁描述第一句
+A large quadruped with a mane circling its manlike face and hands at the end of its forelimbs.	大型四足生物，似人的臉孔周圍環著鬃毛，前肢末端是手。	大型四足生物，似人的脸孔周围环着鬃毛，前肢末端是手。		CREATURE:DRUNIAN DESCRIPTION；生物說明，健康分頁描述第一句
+It lives underground and is fond of raiding the supplies of cavern outposts.	生活在地底，喜歡掠奪洞穴前哨站的物資。	生活在地下，喜欢掠夺洞穴前哨站的物资。		CREATURE:DRUNIAN DESCRIPTION；生物說明，健康分頁描述第一句
+A large cavern-dwelling humanoid monster.	棲息於洞穴的大型人形怪物。	栖息于洞穴的大型人形怪物。		CREATURE:BLIND_CAVE_OGRE DESCRIPTION；生物說明，健康分頁描述第一句
+It has a gaping mouth with many sharp teeth.	張著一張布滿利齒的大嘴。	张着一张布满利齿的大嘴。		CREATURE:BLIND_CAVE_OGRE DESCRIPTION；生物說明，健康分頁描述第一句
+It has no eyes and only two digits on each hand and foot.	沒有眼睛，手腳各只有兩根指頭。	没有眼睛，手脚各只有两根指头。		CREATURE:BLIND_CAVE_OGRE DESCRIPTION；生物說明，健康分頁描述第一句
+A tiny amphibian with a long prehensile tail.	長著能抓握的長尾巴的小型兩棲動物。	长着能抓握的长尾巴的小型两栖动物。		CREATURE:CAP_HOPPER DESCRIPTION；生物說明，健康分頁描述第一句
+It lives in underground swamps and tower-cap forests on which it feeds.	生活在地底沼澤與塔帽菇林，並以塔帽菇為食。	生活在地下沼泽和塔帽菇林，并以塔帽菇为食。		CREATURE:CAP_HOPPER DESCRIPTION；生物說明，健康分頁描述第一句
+A small rock-eating creature that lives in molten rock.	生活在熔岩中、以岩石為食的小型生物。	生活在熔岩中、以岩石为食的小型生物。		CREATURE:MAGMA_CRAB DESCRIPTION；生物說明，健康分頁描述第一句
+It scurries on little feet and swims through liquid rock with sharp wings.	靠小腳快步奔走，用銳利的翼在熔岩中游動。	靠小脚快步奔走，用锋利的翼在熔岩中游动。		CREATURE:MAGMA_CRAB DESCRIPTION；生物說明，健康分頁描述第一句
+It uses magma to digest rock and spits out burning globs.	利用熔岩消化岩石，會吐出燃燒的熔團。	利用熔岩消化岩石，会吐出燃烧的熔团。		CREATURE:MAGMA_CRAB DESCRIPTION；生物說明，健康分頁描述第一句
+A tiny underground monster with large claws and horns.	長著大爪與角的小型地底怪物。	长着大爪和角的小型地下怪物。		CREATURE:CRUNDLE DESCRIPTION；生物說明，健康分頁描述第一句
+It walks on two legs and is dangerous when encountered in large numbers.	以雙腿行走，遇上一大群時十分危險。	以双腿行走，遇上一大群时十分危险。		CREATURE:CRUNDLE DESCRIPTION；生物說明，健康分頁描述第一句
+A large ball of skin found moving around the debris near underground ponds.	一大團皮肉，常在地底水池附近的殘骸間移動。	一大团皮肉，常在地下水池附近的残骸间移动。		CREATURE:FLESH_BALL DESCRIPTION；生物說明，健康分頁描述第一句
+It is there that it absorbs dead matter for food.	牠在那裡吸收死物作為食物。	它在那里吸收死物作为食物。		CREATURE:FLESH_BALL DESCRIPTION；生物說明，健康分頁描述第一句
+A large creature found grazing on mushrooms deep underground.	在地底深處啃食蘑菇的大型生物。	在地下深处啃食蘑菇的大型生物。		CREATURE:ELK_BIRD DESCRIPTION；生物說明，健康分頁描述第一句
+It walks on two legs and has the head of a bird with the antlers of a great elk.	以雙腿行走，長著鳥頭，頭上卻頂著大馬鹿的鹿角。	以双腿行走，长着鸟头，头上却顶着大马鹿的鹿角。		CREATURE:ELK_BIRD DESCRIPTION；生物說明，健康分頁描述第一句
+A snake-like creature living deep underground.	生活在地底深處、形似蛇的生物。	生活在地下深处、形似蛇的生物。		CREATURE:HELMET_SNAKE DESCRIPTION；生物說明，健康分頁描述第一句
+Its head is covered in armor so that is resembles the head of a dragon.	頭部覆有甲殼，看起來就像龍頭。	头部覆有甲壳，看起来就像龙头。		CREATURE:HELMET_SNAKE DESCRIPTION；生物說明，健康分頁描述第一句
+A medium-sized monster walking on two clawed legs.	以兩條帶爪的腿行走的中型怪物。	以两条带爪的腿行走的中型怪物。		CREATURE:GREEN_DEVOURER DESCRIPTION；生物說明，健康分頁描述第一句
+It has two mouths on the ends of a pair of tentacles.	一對觸手末端各長著一張嘴。	一对触手末端各长着一张嘴。		CREATURE:GREEN_DEVOURER DESCRIPTION；生物說明，健康分頁描述第一句
+It uses its mouths to digest its victims with acid and rows of razor-like teeth.	用嘴裡的酸液與一排排剃刀般的利齒消化獵物。	用嘴里的酸液和一排排剃刀般的利齿消化猎物。		CREATURE:GREEN_DEVOURER DESCRIPTION；生物說明，健康分頁描述第一句
+A tiny underground creature made of a mass of appendages resembling human fingers.	由一大團形似人類手指的肢體構成的小型地底生物。	由一大团形似人类手指的肢体构成的小型地下生物。		CREATURE:CREEPY_CRAWLER DESCRIPTION；生物說明，健康分頁描述第一句
+It creeps across the ground like a starfish and eats with a mouth on the bottom of its body.	像海星一樣在地上爬行，用身體底部的嘴進食。	像海星一样在地上爬行，用身体底部的嘴进食。		CREATURE:CREEPY_CRAWLER DESCRIPTION；生物說明，健康分頁描述第一句
+A man-shaped abomination made entirely of blood.	完全由血液構成的人形怪物。	完全由血液构成的人形怪物。		CREATURE:BLOOD_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+These cursed creatures are only found very near the underworld.	這種受詛咒的生物只出沒在非常接近地獄的地方。	这种受诅咒的生物只出没在非常接近地狱的地方。		CREATURE:BLOOD_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A small bat-like creature with the head of an insect.	長著昆蟲頭部、形似蝙蝠的小型生物。	长着昆虫头部、形似蝙蝠的小型生物。		CREATURE:BUGBAT DESCRIPTION；生物說明，健康分頁描述第一句
+It is found deep underground.	棲息於地底深處。	栖息于地下深处。		CREATURE:BUGBAT DESCRIPTION 等 4 種；生物說明，健康分頁描述第一句
+A creature that crawls along the cavern ceiling with four long arms.	用四條長臂沿著洞頂爬行的生物。	用四条长臂沿着洞顶爬行的生物。		CREATURE:MANERA DESCRIPTION；生物說明，健康分頁描述第一句
+Its body is shaped as the head of a man with a mouth full of shark teeth.	身體形如一顆人頭，滿嘴鯊魚般的利齒。	身体形如一颗人头，满嘴鲨鱼般的利齿。		CREATURE:MANERA DESCRIPTION；生物說明，健康分頁描述第一句
+It waits for its prey to pass below.	會等獵物從下方經過。	会等猎物从下方经过。		CREATURE:MANERA DESCRIPTION；生物說明，健康分頁描述第一句
+A hideous monster that has the body of a giant mole-rat and the torso of a mole-rat man.	醜惡的怪物，下身是巨大鼴鼠，上身是鼴鼠人的軀幹。	丑恶的怪物，下身是巨大鼹鼠，上身是鼹鼠人的躯干。		CREATURE:MOLEMARIAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster that lurks in caverns deep under the earth.	潛伏在地底深處洞穴中的巨大怪物。	潜伏在地下深处洞穴中的巨大怪物。		CREATURE:JABBERER DESCRIPTION；生物說明，健康分頁描述第一句
+It uses its wide beak to reach down and pluck up unsuspecting intruders.	會把寬大的鳥喙伸下去，叼起毫無防備的闖入者。	会把宽大的鸟喙伸下去，叼起毫无防备的闯入者。		CREATURE:JABBERER DESCRIPTION；生物說明，健康分頁描述第一句
+A small creature that lives in watery ditches deep underground.	生活在地底深處積水溝渠中的小型生物。	生活在地下深处积水沟渠中的小型生物。		CREATURE:POND_GRABBER DESCRIPTION；生物說明，健康分頁描述第一句
+It has a sharp beak and four tentacles with claws at the end.	長著尖喙和四條末端帶爪的觸手。	长着尖喙和四条末端带爪的触手。		CREATURE:POND_GRABBER DESCRIPTION；生物說明，健康分頁描述第一句
+A huge emaciated-looking bear with great drooping ears and many sharp teeth.	看似骨瘦如柴的巨熊，耳朵大而下垂，滿口利齒。	看似骨瘦如柴的巨熊，耳朵大而下垂，满口利齿。		CREATURE:BLIND_CAVE_BEAR DESCRIPTION；生物說明，健康分頁描述第一句
+Living gabbro in the shape of a man.	呈人形的活體輝長岩。	呈人形的活体辉长岩。		CREATURE:ELEMENTMAN_GABBRO DESCRIPTION；生物說明，健康分頁描述第一句
+These strange creatures are found deep underground.	這種奇異的生物棲息於地底深處。	这种奇异的生物栖息于地下深处。		CREATURE:ELEMENTMAN_GABBRO DESCRIPTION；生物說明，健康分頁描述第一句
+A floating pod with eye-stalks.	長著眼柄的漂浮囊體。	长着眼柄的漂浮囊体。		CREATURE:CAVE_FLOATER DESCRIPTION；生物說明，健康分頁描述第一句
+It can spray poison and it gives off poison gas when punctured.	能噴出毒液，被刺破時會釋放毒氣。	能喷出毒液，被刺破时会释放毒气。		CREATURE:CAVE_FLOATER DESCRIPTION；生物說明，健康分頁描述第一句
+A small humanoid resembling a walking mushroom with arms and legs.	形如長了手腳、會走路的蘑菇的小型人形生物。	形如长了手脚、会走路的蘑菇的小型人形生物。		CREATURE:PLUMP_HELMET_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+It lives far underground near water and soil.	生活在地底深處靠近水和土壤的地方。	生活在地下深处靠近水和土壤的地方。		CREATURE:PLUMP_HELMET_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A strange shapeless life form with an orange leathery skin containing a liquid interior.	沒有固定形狀的奇異生命體，橘色的皮革狀外皮內充滿液體。	没有固定形状的奇异生命体，橙色的皮革状外皮内充满液体。		CREATURE:CAVE_BLOB DESCRIPTION；生物說明，健康分頁描述第一句
+It can secrete its internal fluid.	能分泌體內的液體。	能分泌体内的液体。		CREATURE:CAVE_BLOB DESCRIPTION；生物說明，健康分頁描述第一句
+A strange crystalline creature the shape of a man.	呈人形的奇異晶體生物。	呈人形的奇异晶体生物。		CREATURE:ELEMENTMAN_AMETHYST DESCRIPTION；生物說明，健康分頁描述第一句
+A medium-sized underwater mollusk with eight arms.	有八條腕足的中型水生軟體動物。	有八条腕足的中型水生软体动物。		CREATURE:OCTOPUS DESCRIPTION；生物說明，健康分頁描述第一句；術語例外：软体
+It is the most clever of its kind.	是同類中最聰明的。	是同类中最聪明的。		CREATURE:OCTOPUS DESCRIPTION；生物說明，健康分頁描述第一句
+A person with an octopus in place of a head.	頭部是一隻章魚的人。	头部是一只章鱼的人。		CREATURE:OCTOPUS_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A dangerous water monster known for attacking ships at sea.	以在海上攻擊船隻聞名的危險水怪。	以在海上攻击船只闻名的危险水怪。		CREATURE:GIANT_OCTOPUS DESCRIPTION；生物說明，健康分頁描述第一句
+A tiny shelled ocean creature with many long legs.	長著許多長腳、有殼的小型海洋生物。	长着许多长脚、有壳的小型海洋生物。		CREATURE:CRAB DESCRIPTION；生物說明，健康分頁描述第一句
+It has two large pincers on its front limbs.	前肢上有兩隻大螯。	前肢上有两只大螯。		CREATURE:CRAB DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and pincers of a crab.	長著螃蟹頭部與螯的人。	长着螃蟹头部和螯的人。		CREATURE:CRAB_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A large monster in the shape of a crab.	形似螃蟹的大型怪物。	形似螃蟹的大型怪物。		CREATURE:GIANT_CRAB DESCRIPTION；生物說明，健康分頁描述第一句
+A large predatory amphibious mammal.	大型掠食性水陸兩棲哺乳動物。	大型捕食性水陆两栖哺乳动物。		CREATURE:LEOPARD_SEAL DESCRIPTION；生物說明，健康分頁描述第一句
+It is difficult to evade once in the water.	一旦下水就很難躲開牠。	一旦下水就很难躲开它。		CREATURE:LEOPARD_SEAL DESCRIPTION；生物說明，健康分頁描述第一句
+A legless person with the head and back flippers of a leopard seal.	沒有腿、長著豹斑海豹頭部與後鰭肢的人。	没有腿、长着豹海豹头部和后鳍肢的人。		CREATURE:LEOPARD_SEAL_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A giant monster in the form of a leopard seal.	形似豹斑海豹的巨型怪物。	形似豹海豹的巨型怪物。		CREATURE:GIANT_LEOPARD_SEAL DESCRIPTION；生物說明，健康分頁描述第一句
+A tiny sea mollusk.	小型海洋軟體動物。	小型海洋软体动物。		CREATURE:CUTTLEFISH DESCRIPTION；生物說明，健康分頁描述第一句；術語例外：软体
+It can change color and skin patterns for communication.	能改變體色與皮膚花紋來溝通。	能改变体色和皮肤花纹来沟通。		CREATURE:CUTTLEFISH DESCRIPTION；生物說明，健康分頁描述第一句
+A person with a cuttlefish in place of a head.	頭部是一隻烏賊的人。	头部是一只乌贼的人。		CREATURE:CUTTLEFISH_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge sea monster in the shape of a cuttlefish.	形似烏賊的巨大海怪。	形似乌贼的巨大海怪。		CREATURE:GIANT_CUTTLEFISH DESCRIPTION；生物說明，健康分頁描述第一句
+A huge ocean mammal.	巨大的海洋哺乳動物。	巨大的海洋哺乳动物。		CREATURE:ORCA DESCRIPTION；生物說明，健康分頁描述第一句
+It is a vicious predator and can hunt in groups.	兇殘的掠食者，能成群狩獵。	凶残的捕食者，能成群狩猎。		CREATURE:ORCA DESCRIPTION；生物說明，健康分頁描述第一句
+An aquatic person in the shape of an orca with arms.	長著手臂、形似虎鯨的水生人。	长着手臂、形似虎鲸的水生人。		CREATURE:ORCA_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A gigantic monster in the shape of an orca.	形似虎鯨的龐大怪物。	形似虎鲸的庞大怪物。		CREATURE:GIANT_ORCA DESCRIPTION；生物說明，健康分頁描述第一句
+A person in the form of a sponge with arms and legs.	長著手腳、形似海綿的人。	长着手脚、形似海绵的人。		CREATURE:SPONGE_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge immobile sponge.	無法移動的巨大海綿。	无法移动的巨大海绵。		CREATURE:GIANT_SPONGE DESCRIPTION；生物說明，健康分頁描述第一句
+A tiny sea animal that lives in the sand just offshore.	生活在近岸沙地中的小型海洋動物。	生活在近岸沙地中的小型海洋动物。		CREATURE:HORSESHOE_CRAB DESCRIPTION；生物說明，健康分頁描述第一句
+It has a flat body with legs underneath.	身體扁平，腳長在下方。	身体扁平，脚长在下方。		CREATURE:HORSESHOE_CRAB DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster in the form of a horseshoe crab.	形似鱟的巨大怪物。	形似鲎的巨大怪物。		CREATURE:GIANT_HORSESHOE_CRAB DESCRIPTION；生物說明，健康分頁描述第一句
+A giant marine mammal with a toothy jaw.	滿口利齒的巨型海洋哺乳動物。	满口利齿的巨型海洋哺乳动物。		CREATURE:SPERM_WHALE DESCRIPTION；生物說明，健康分頁描述第一句
+A huge person with the head and flippers of a sperm whale.	體型巨大、長著抹香鯨頭部與鰭肢的人。	体型巨大、长着抹香鲸头部和鳍肢的人。		CREATURE:SPERM_WHALE_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A gigantic monster in the shape of a sperm whale.	形似抹香鯨的龐大怪物。	形似抹香鲸的庞大怪物。		CREATURE:GIANT_SPERM_WHALE DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and flippers of an elephant seal.	長著象鼻海豹頭部與鰭肢的人。	长着象海豹头部和鳍肢的人。		CREATURE:ELEPHANT_SEAL_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster in the shape of an elephant seal.	形似象鼻海豹的巨大怪物。	形似象海豹的巨大怪物。		CREATURE:GIANT_ELEPHANT_SEAL DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and flippers of a harp seal.	長著豎琴海豹頭部與鰭肢的人。	长着竖琴海豹头部和鳍肢的人。		CREATURE:HARP_SEAL_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster in the shape of a harp seal.	形似豎琴海豹的巨大怪物。	形似竖琴海豹的巨大怪物。		CREATURE:GIANT_HARP_SEAL DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the shell and tentacles of a nautilus.	長著鸚鵡螺殼與觸手的人。	长着鹦鹉螺壳和触手的人。		CREATURE:NAUTILUS_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster in the shape of a nautilus.	形似鸚鵡螺的巨大怪物。	形似鹦鹉螺的巨大怪物。		CREATURE:GIANT_NAUTILUS DESCRIPTION；生物說明，健康分頁描述第一句
+A small mammal noted for its tenacity.	以堅韌頑強著稱的小型哺乳動物。	以坚韧顽强著称的小型哺乳动物。		CREATURE:FOXSQUIRREL DESCRIPTION；生物說明，健康分頁描述第一句
+It has long ears and flashing eyes.	耳朵很長，雙眼閃閃發亮。	耳朵很长，双眼闪闪发亮。		CREATURE:FOXSQUIRREL DESCRIPTION；生物說明，健康分頁描述第一句
+A small mud-dwelling amphibian.	住在泥地裡的小型兩棲動物。	住在泥地里的小型两栖动物。		CREATURE:MOGHOPPER DESCRIPTION；生物說明，健康分頁描述第一句
+An insidious form of vermin.	陰險狡詐的害獸。	阴险狡诈的害兽。		CREATURE:RAT_DEMON DESCRIPTION；生物說明，健康分頁描述第一句
+It lives only to steal food from others.	活著只為偷別人的食物。	活着只为偷别人的食物。		CREATURE:RAT_DEMON DESCRIPTION；生物說明，健康分頁描述第一句
+A tiny creature made up of a series of crackling knobs set at strange angles.	由一串以古怪角度相連、喀喀作響的瘤節構成的小型生物。	由一串以古怪角度相连、咔咔作响的瘤节构成的小型生物。		CREATURE:WORM_KNUCKLE DESCRIPTION；生物說明，健康分頁描述第一句
+An insect many times the size of its peers.	體型比同類大上好幾倍的昆蟲。	体型比同类大上好几倍的昆虫。		CREATURE:FLY_ACORN DESCRIPTION；生物說明，健康分頁描述第一句
+It is known for its deafening buzz.	以震耳欲聾的嗡嗡聲聞名。	以震耳欲聋的嗡嗡声闻名。		CREATURE:FLY_ACORN DESCRIPTION；生物說明，健康分頁描述第一句
+A small reptile.	小型爬蟲類。	小型爬行动物。		CREATURE:LIZARD DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and tail of a lizard.	長著蜥蜴頭部與尾巴的人。	长着蜥蜴头部和尾巴的人。		CREATURE:LIZARD_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster in the shape of a lizard.	形似蜥蜴的巨大怪物。	形似蜥蜴的巨大怪物。		CREATURE:GIANT_LIZARD DESCRIPTION；生物說明，健康分頁描述第一句
+A long-bodied person with the head and tail of a skink.	身形修長、長著石龍子頭部與尾巴的人。	身形修长、长着石龙子头部和尾巴的人。		CREATURE:SKINK_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A large monster in the shape of a skink.	形似石龍子的大型怪物。	形似石龙子的大型怪物。		CREATURE:GIANT_SKINK DESCRIPTION；生物說明，健康分頁描述第一句
+A colorful person with the head and tail of a chameleon.	色彩鮮豔、長著變色龍頭部與尾巴的人。	色彩鲜艳、长着变色龙头部和尾巴的人。		CREATURE:CHAMELEON_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A large monster in the shape of a chameleon.	形似變色龍的大型怪物。	形似变色龙的大型怪物。		CREATURE:GIANT_CHAMELEON DESCRIPTION；生物說明，健康分頁描述第一句
+A small lizard with adhesive feet for climbing.	腳掌有黏性、善於攀爬的小型蜥蜴。	脚掌有黏性、善于攀爬的小型蜥蜴。		CREATURE:ANOLE DESCRIPTION；生物說明，健康分頁描述第一句
+It can change color from brown to green to fit its surroundings.	能在褐色與綠色之間變換體色，融入周遭環境。	能在褐色和绿色之间变换体色，融入周围环境。		CREATURE:ANOLE DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and tail of an anole.	長著安樂蜥頭部與尾巴的人。	长着安乐蜥头部和尾巴的人。		CREATURE:ANOLE_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A large monster in the shape of an anole.	形似安樂蜥的大型怪物。	形似安乐蜥的大型怪物。		CREATURE:GIANT_ANOLE DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and tail of an iguana.	長著鬣蜥頭部與尾巴的人。	长着鬣蜥头部和尾巴的人。		CREATURE:IGUANA_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster in the shape of an iguana.	形似鬣蜥的巨大怪物。	形似鬣蜥的巨大怪物。		CREATURE:GIANT_IGUANA DESCRIPTION；生物說明，健康分頁描述第一句
+A small river mammal with a long body.	身體修長的小型河川哺乳動物。	身体修长的小型河流哺乳动物。		CREATURE:RIVER OTTER DESCRIPTION；生物說明，健康分頁描述第一句
+They enjoy eating shellfish and other small animals.	喜歡吃貝類和其他小動物。	喜欢吃贝类和其他小动物。		CREATURE:RIVER OTTER DESCRIPTION 等 2 種；生物說明，健康分頁描述第一句
+A small marine mammal with a long body.	身體修長的小型海洋哺乳動物。	身体修长的小型海洋哺乳动物。		CREATURE:SEA OTTER DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the long body and head of an otter.	長著水獺修長身軀與頭部的人。	长着水獭修长身躯和头部的人。		CREATURE:OTTER_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A large monster in the form of an otter.	形似水獺的大型怪物。	形似水獭的大型怪物。		CREATURE:GIANT_OTTER DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the shell and head of a snapping turtle.	長著鱷龜殼與頭部的人。	长着鳄龟壳和头部的人。		CREATURE:SNAPPING_TURTLE_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A large monster with an enormous shell and immensely powerful jaw.	背著巨殼、顎力驚人的大型怪物。	背着巨壳、颚力惊人的大型怪物。		CREATURE:GIANT_SNAPPING_TURTLE DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and flat tail of a beaver.	長著河狸頭部與扁平尾巴的人。	长着河狸头部和扁平尾巴的人。		CREATURE:BEAVER_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A large slug-like creature with the torso of a man.	上身是人類軀幹、形似蛞蝓的大型生物。	上身是人类躯干、形似蛞蝓的大型生物。		CREATURE:LEECH_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+Its face is a mockery of teeth and slime.	臉孔只是一團利齒與黏液，彷彿在拙劣地模仿人臉。	脸孔只是一团利齿和黏液，仿佛在拙劣地模仿人脸。		CREATURE:LEECH_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A squat amphibian with leathery skin, found in relatively dry areas.	皮膚粗韌如皮革的矮胖兩棲動物，見於較乾燥的地區。	皮肤粗韧如皮革的矮胖两栖动物，见于较干燥的地区。		CREATURE:TOAD DESCRIPTION；生物說明，健康分頁描述第一句
+A tiny burrowing creature, found in moist soil.	生活在潮濕土壤中、會鑽洞的小型生物。	生活在潮湿土壤中、会钻洞的小型生物。		CREATURE:WORM DESCRIPTION；生物說明，健康分頁描述第一句
+It is legless, long and thin.	沒有腳，身體細長。	没有脚，身体细长。		CREATURE:WORM DESCRIPTION；生物說明，健康分頁描述第一句
+A small blue-crested bird living in temperate woodlands, known for its harsh chirps.	棲息於溫帶林地、頂著藍色冠羽的小型鳥類，以刺耳的鳴叫聞名。	栖息于温带林地、顶着蓝色冠羽的小型鸟类，以刺耳的鸣叫闻名。		CREATURE:BIRD_BLUEJAY DESCRIPTION；生物說明，健康分頁描述第一句
+A small bright red bird with a distinctive crest, found in temperate forests.	頭頂有獨特冠羽的鮮紅色小鳥，見於溫帶森林。	头顶有独特冠羽的鲜红色小鸟，见于温带森林。		CREATURE:BIRD_CARDINAL DESCRIPTION；生物說明，健康分頁描述第一句
+A small gregarious bird, blue and black with yellow eyes, found in temperate pastures.	愛群居的小型鳥類，羽色藍黑、眼睛黃色，見於溫帶牧場。	爱群居的小型鸟类，羽色蓝黑、眼睛黄色，见于温带牧场。		CREATURE:BIRD_GRACKLE DESCRIPTION；生物說明，健康分頁描述第一句
+A small flightless bird, blue in color, that lives on arctic shorelines.	生活在極地海岸、不會飛的藍色小型鳥類。	生活在极地海岸、不会飞的蓝色小型鸟类。		CREATURE:BIRD_PENGUIN_LITTLE DESCRIPTION；生物說明，健康分頁描述第一句
+A small flightless bird, it is the largest of the natural penguins.	不會飛的小型鳥類，是自然界體型最大的企鵝。	不会飞的小型鸟类，是自然界体型最大的企鹅。		CREATURE:BIRD_PENGUIN_EMPEROR DESCRIPTION；生物說明，健康分頁描述第一句
+It is known for its treks through leagues of glacial ice.	以長途跋涉橫越綿延的冰原聞名。	以长途跋涉横越绵延的冰原闻名。		CREATURE:BIRD_PENGUIN_EMPEROR DESCRIPTION；生物說明，健康分頁描述第一句
+A humanoid with the head, feet, and feathers of a penguin.	長著企鵝頭部、腳與羽毛的人形生物。	长着企鹅头部、脚和羽毛的人形生物。		CREATURE:PENGUIN MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster, shaped like a penguin.	形似企鵝的巨大怪物。	形似企鹅的巨大怪物。		CREATURE:BIRD_PENGUIN_GIANT DESCRIPTION；生物說明，健康分頁描述第一句
+A small, brown, flightless bird.	不會飛的褐色小型鳥類。	不会飞的褐色小型鸟类。		CREATURE:BIRD_KIWI DESCRIPTION；生物說明，健康分頁描述第一句
+It eats insects and grubs and is known for its keen sense of smell.	吃昆蟲和幼蟲，以敏銳的嗅覺聞名。	吃昆虫和幼虫，以敏锐的嗅觉闻名。		CREATURE:BIRD_KIWI DESCRIPTION；生物說明，健康分頁描述第一句
+This is a medium-sized creature with legs and arms, but the long neck and head of an ostrich.	有手有腳的中型生物，卻長著鴕鳥的長脖子與頭部。	有手有脚的中型生物，却长着鸵鸟的长脖子和头部。		CREATURE:OSTRICH MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A small black bird that feeds on carrion.	以腐肉為食的小型黑鳥。	以腐肉为食的小型黑鸟。		CREATURE:BIRD_CROW DESCRIPTION；生物說明，健康分頁描述第一句
+It is social, very intelligent and knows how to use tools.	群居，非常聰明，懂得使用工具。	群居，非常聪明，懂得使用工具。		CREATURE:BIRD_CROW DESCRIPTION；生物說明，健康分頁描述第一句
+A large bird-like monster, even more deadly when found in groups.	鳥形的大型怪物，成群出現時更加致命。	鸟形的大型怪物，成群出现时更加致命。		CREATURE:GIANT_CROW DESCRIPTION；生物說明，健康分頁描述第一句
+A small, foreboding black bird that feeds on carrion.	以腐肉為食、給人不祥之感的小型黑鳥。	以腐肉为食、给人不祥之感的小型黑鸟。		CREATURE:BIRD_RAVEN DESCRIPTION；生物說明，健康分頁描述第一句
+It is social, very intelligent, and knows how to use tools.	群居，非常聰明，懂得使用工具。	群居，非常聪明，懂得使用工具。		CREATURE:BIRD_RAVEN DESCRIPTION；生物說明，健康分頁描述第一句
+A small, flightless, brightly-colored bird.	不會飛、色彩鮮豔的小型鳥類。	不会飞、色彩鲜艳的小型鸟类。		CREATURE:BIRD_CASSOWARY DESCRIPTION；生物說明，健康分頁描述第一句
+A small, green, intelligent mountain parrot.	聰明的綠色小型山地鸚鵡。	聪明的绿色小型山地鹦鹉。		CREATURE:BIRD_KEA DESCRIPTION；生物說明，健康分頁描述第一句
+A small bird with long legs and bill, and a extremely long wingspan.	腿長、喙長、翼展極寬的小型鳥類。	腿长、喙长、翼展极宽的小型鸟类。		CREATURE:BIRD_STORK_WHITE DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and wings of a stork, also standing on long legs.	長著鸛的頭部與翅膀、雙腿也很長的人。	长着鹳的头部和翅膀、双腿也很长的人。		CREATURE:WHITE_STORK_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A small, nocturnal bird of prey found in woodland regions.	棲息於林地的夜行性小型猛禽。	栖息于林地的夜行性小型猛禽。		CREATURE:BIRD_OWL_BARN DESCRIPTION；生物說明，健康分頁描述第一句
+Its hunger for rodents drives it to take residence in buildings.	為了捕食囓齒動物，常在建築物裡築巢定居。	为了捕食啮齿动物，常在建筑物里筑巢定居。		CREATURE:BIRD_OWL_BARN DESCRIPTION；生物說明，健康分頁描述第一句
+A small aquatic bird, prized for its beauty.	因外表美麗而受到珍視的小型水鳥。	因外表美丽而受到珍视的小型水鸟。		CREATURE:BIRD_SWAN DESCRIPTION；生物說明，健康分頁描述第一句
+A tiny, brightly-colored tree parrot.	色彩鮮豔、生活在樹上的小型鸚鵡。	色彩鲜艳、生活在树上的小型鹦鹉。		CREATURE:BIRD_LORIKEET DESCRIPTION；生物說明，健康分頁描述第一句
+It uses its tongue to feed on plants.	用舌頭吸食植物。	用舌头吸食植物。		CREATURE:BIRD_LORIKEET DESCRIPTION；生物說明，健康分頁描述第一句
+A tiny, brightly colored parrot.	色彩鮮豔的小型鸚鵡。	色彩鲜艳的小型鹦鹉。		CREATURE:BIRD_LOVEBIRD_PEACH-FACED DESCRIPTION；生物說明，健康分頁描述第一句
+They are clever and learn many tricks.	很聰明，能學會許多把戲。	很聪明，能学会许多把戏。		CREATURE:BIRD_LOVEBIRD_PEACH-FACED DESCRIPTION；生物說明，健康分頁描述第一句
+A small, nocturnal bird of prey with large eyes and protruding feathers.	眼睛很大、羽毛突起成簇的夜行性小型猛禽。	眼睛很大、羽毛突起成簇的夜行性小型猛禽。		CREATURE:BIRD_OWL_GREAT_HORNED DESCRIPTION；生物說明，健康分頁描述第一句
+A tiny bird with a large, brightly-colored bill.	長著色彩鮮豔的大鳥喙的小鳥。	长着色彩鲜艳的大鸟喙的小鸟。		CREATURE:BIRD_HORNBILL DESCRIPTION；生物說明，健康分頁描述第一句
+A tiny, colorful bird.	色彩繽紛的小鳥。	色彩缤纷的小鸟。		CREATURE:BIRD_LOVEBIRD_MASKED DESCRIPTION；生物說明，健康分頁描述第一句
+It can be trained to be a pleasant companion.	經過訓練能成為討喜的寵物。	经过训练能成为讨喜的宠物。		CREATURE:BIRD_LOVEBIRD_MASKED DESCRIPTION；生物說明，健康分頁描述第一句
+A tiny, colorful, long-bodied insect.	身體細長、色彩繽紛的小昆蟲。	身体细长、色彩缤纷的小昆虫。		CREATURE:DAMSELFLY DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head, pincers and tail of a bark scorpion.	長著樹皮蠍頭部、螯與尾巴的人。	长着树皮蝎头部、螯和尾巴的人。		CREATURE:BARK_SCORPION_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A tiny green insect.	綠色的小昆蟲。	绿色的小昆虫。		CREATURE:MANTIS DESCRIPTION；生物說明，健康分頁描述第一句
+It has long, distinctive forelimbs that it uses to catch its prey.	有一對獨特的長前肢，用來捕捉獵物。	有一对独特的长前肢，用来捕捉猎物。		CREATURE:MANTIS DESCRIPTION；生物說明，健康分頁描述第一句
+A tiny, blood-sucking bug found in wooded areas.	見於林區、會吸血的小蟲。	见于林区、会吸血的小虫。		CREATURE:TICK DESCRIPTION；生物說明，健康分頁描述第一句
+A creature with the shape of a man, but with stalks for eyes, and a great shell on its back.	人形生物，但眼睛長在肉柄上，背上還有一個大殼。	人形生物，但眼睛长在肉柄上，背上还有一个大壳。		CREATURE:SNAIL_MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A tiny, brightly-colored lizard.	色彩鮮豔的小型蜥蜴。	色彩鲜艳的小型蜥蜴。		CREATURE:GECKO_LEOPARD DESCRIPTION；生物說明，健康分頁描述第一句
+A compact offspring of horse and donkey, bred to be a beast of burden.	馬與驢的後代，體型結實，專門培育來馱運重物。	马和驴的后代，体型结实，专门培育来驮运重物。		CREATURE:MULE DESCRIPTION；生物說明，健康分頁描述第一句
+A medium-sized, hooved herbivore.	中型的有蹄草食動物。	中型的有蹄食草动物。		CREATURE:DONKEY DESCRIPTION；生物說明，健康分頁描述第一句
+Some are domesticated as beasts of burden.	有些被馴化成馱獸。	有些被驯化成驮畜。		CREATURE:DONKEY DESCRIPTION；生物說明，健康分頁描述第一句
+A large hooved, maned herbivore.	有蹄、有鬃毛的大型草食動物。	有蹄、有鬃毛的大型食草动物。		CREATURE:HORSE DESCRIPTION；生物說明，健康分頁描述第一句
+They can run swiftly and many are domesticated as steeds.	跑得很快，許多被馴化成坐騎。	跑得很快，许多被驯化成坐骑。		CREATURE:HORSE DESCRIPTION；生物說明，健康分頁描述第一句
+A small forest bird.	小型森林鳥類。	小型森林鸟类。		CREATURE:BIRD_PEAFOWL_BLUE DESCRIPTION；生物說明，健康分頁描述第一句
+The male's tail creates an extravagant display for females.	雄鳥會向雌鳥展開華麗的尾羽求偶。	雄鸟会向雌鸟展开华丽的尾羽求偶。		CREATURE:BIRD_PEAFOWL_BLUE DESCRIPTION；生物說明，健康分頁描述第一句
+At night, they roost in the trees.	夜裡棲息在樹上。	夜里栖息在树上。		CREATURE:BIRD_PEAFOWL_BLUE DESCRIPTION；生物說明，健康分頁描述第一句
+This tiny insect can be found in huge colonies in the dirt.	這種小昆蟲在土裡築成龐大的群落。	这种小昆虫在土里筑成庞大的群落。		CREATURE:ANT DESCRIPTION；生物說明，健康分頁描述第一句
+They overwhelm their enemies with swarms.	以大群蜂擁而上壓倒敵人。	以大群蜂拥而上压倒敌人。		CREATURE:ANT DESCRIPTION；生物說明，健康分頁描述第一句
+Some have poison bites.	有些咬人帶毒。	有些咬人带毒。		CREATURE:ANT DESCRIPTION；生物說明，健康分頁描述第一句
+A small flying insect that lives in large colonies.	群居成大群落的小型飛蟲。	群居成大群落的小型飞虫。		CREATURE:HONEY_BEE DESCRIPTION；生物說明，健康分頁描述第一句
+It has a powerful stinger on its tail.	尾端有強力的螫針。	尾端有强力的螫针。		CREATURE:HONEY_BEE DESCRIPTION；生物說明，健康分頁描述第一句
+Its hives are prized for their honey.	蜂巢因產蜜而受到珍視。	蜂巢因产蜜而受到珍视。		CREATURE:HONEY_BEE DESCRIPTION；生物說明，健康分頁描述第一句
+A medium-sized herbivore that lives in the high mountains, able to navigate the slopes despite its hooved feet.	生活在高山上的中型草食動物，雖然長著蹄，仍能在陡坡上穿行自如。	生活在高山上的中型食草动物，虽然长着蹄，仍能在陡坡上穿行自如。		CREATURE:GOAT_MOUNTAIN DESCRIPTION；生物說明，健康分頁描述第一句
+A tiny, jolly humanoid creature that dwells in the fair mountains.	住在祥和山地、生性快活的小型人形生物。	住在祥和山地、生性快活的小型人形生物。		CREATURE:GNOME_MOUNTAIN DESCRIPTION；生物說明，健康分頁描述第一句
+They are known to enjoy drinking liquor and don't care whether it's theirs or not.	出了名地愛喝酒，而且不管是不是自己的酒。	出了名地爱喝酒，而且不管是不是自己的酒。		CREATURE:GNOME_MOUNTAIN DESCRIPTION；生物說明，健康分頁描述第一句
+A tiny, foul-tempered humanoid creature that dwells in the evil mountains.	住在邪惡山地、脾氣暴躁的小型人形生物。	住在邪恶山地、脾气暴躁的小型人形生物。		CREATURE:GNOME_DARK DESCRIPTION；生物說明，健康分頁描述第一句
+They are known to enjoy drinking liquor and will take any unguarded supplies of booze.	出了名地愛喝酒，看到沒人看管的酒就會拿走。	出了名地爱喝酒，看到没人看管的酒就会拿走。		CREATURE:GNOME_DARK DESCRIPTION；生物說明，健康分頁描述第一句
+A large, aggressive, oceanic fish with a mouth full of pointed teeth.	滿嘴尖牙、生性好鬥的大型海魚。	满嘴尖牙、生性好斗的大型海鱼。		CREATURE:SHARK_MAKO_SHORTFIN DESCRIPTION；生物說明，健康分頁描述第一句
+It is capable of great speed.	速度極快。	速度极快。		CREATURE:SHARK_MAKO_SHORTFIN DESCRIPTION；生物說明，健康分頁描述第一句
+A giant, striped, oceanic fish known to devour anything in its path.	身有條紋的巨型海魚，以吞食沿途一切而聞名。	身有条纹的巨型海鱼，以吞食沿途一切而闻名。		CREATURE:SHARK_TIGER DESCRIPTION；生物說明，健康分頁描述第一句
+A medium-sized, aggressive, territorial fish.	好鬥且有地盤意識的中型魚類。	好斗且有领地意识的中型鱼类。		CREATURE:SHARK_BULL DESCRIPTION；生物說明，健康分頁描述第一句
+It can be found in shallow oceanic waters, and has also been known to travel up large rivers.	見於淺海，也曾沿著大河逆流而上。	见于浅海，也曾沿着大河逆流而上。		CREATURE:SHARK_BULL DESCRIPTION；生物說明，健康分頁描述第一句
+A large, dangerous fish found hunting in packs in any ocean.	危險的大型魚類，在各大洋成群狩獵。	危险的大型鱼类，在各大洋成群狩猎。		CREATURE:SHARK_BLUE DESCRIPTION；生物說明，健康分頁描述第一句
+A large, dangerous fish, often found hunting solitarily along coastlines.	危險的大型魚類，常在海岸線一帶獨自狩獵。	危险的大型鱼类，常在海岸线一带独自狩猎。		CREATURE:SHARK_HAMMERHEAD DESCRIPTION；生物說明，健康分頁描述第一句
+A large, flat, camouflaged fish found on the sea floor in temperate waters.	身體扁平、善於偽裝的大型魚類，見於溫帶海域的海底。	身体扁平、善于伪装的大型鱼类，见于温带海域的海底。		CREATURE:SHARK_ANGEL DESCRIPTION；生物說明，健康分頁描述第一句
+It is quite passive.	性情相當溫和。	性情相当温和。		CREATURE:SHARK_ANGEL DESCRIPTION；生物說明，健康分頁描述第一句
+A medium-sized, flat, bottom-dwelling fish.	身體扁平的中型底棲魚類。	身体扁平的中型底栖鱼类。		CREATURE:FISH_SKATE_COMMON DESCRIPTION；生物說明，健康分頁描述第一句
+A medium-sized, flat fish.	身體扁平的中型魚類。	身体扁平的中型鱼类。		CREATURE:FISH_STINGRAY DESCRIPTION；生物說明，健康分頁描述第一句
+It lives near the beach and will defend itself with sharp barbs.	生活在海灘附近，會用銳利的尾刺自衛。	生活在海滩附近，会用锋利的尾刺自卫。		CREATURE:FISH_STINGRAY DESCRIPTION；生物說明，健康分頁描述第一句
+A medium-sized, brown, snake-like fish found in ocean waters.	棲息於海洋、形似蛇的褐色中型魚類。	栖息于海洋、形似蛇的褐色中型鱼类。		CREATURE:FISH_CONGER_EEL DESCRIPTION；生物說明，健康分頁描述第一句
+A medium-sized oceanic fish, often hunted for its meat.	常為了肉而遭捕撈的中型海魚。	常为了肉而遭捕捞的中型海鱼。		CREATURE:FISH_COD DESCRIPTION；生物說明，健康分頁描述第一句
+A large oceanic fish.	大型海魚。	大型海鱼。		CREATURE:FISH_OPAH DESCRIPTION；生物說明，健康分頁描述第一句
+It is flat, round and red.	身體扁圓，呈紅色。	身体扁圆，呈红色。		CREATURE:FISH_OPAH DESCRIPTION；生物說明，健康分頁描述第一句
+A large, big-mouthed fish, found around coral reefs.	棲息在珊瑚礁周圍、嘴巴很大的大型魚類。	栖息在珊瑚礁周围、嘴巴很大的大型鱼类。		CREATURE:FISH_GROUPER_GIANT DESCRIPTION；生物說明，健康分頁描述第一句
+A huge oceanic fish capable of great speed.	游速極快的巨大海魚。	游速极快的巨大海鱼。		CREATURE:FISH_MARLIN DESCRIPTION；生物說明，健康分頁描述第一句
+It has a long, sharp snout used for slashing its prey.	長著尖長的吻，用來劈砍獵物。	长着尖长的吻，用来劈砍猎物。		CREATURE:FISH_MARLIN DESCRIPTION；生物說明，健康分頁描述第一句
+A large, flat, oceanic fish.	身體扁平的大型海魚。	身体扁平的大型海鱼。		CREATURE:FISH_HALIBUT DESCRIPTION；生物說明，健康分頁描述第一句
+It dwells on the sea floor, both its eyes on the top side.	棲息在海底，兩隻眼睛都長在朝上的一側。	栖息在海底，两只眼睛都长在朝上的一侧。		CREATURE:FISH_HALIBUT DESCRIPTION；生物說明，健康分頁描述第一句
+A large, long fish with many sharp fangs.	身體修長、長滿尖牙的大型魚類。	身体修长、长满尖牙的大型鱼类。		CREATURE:FISH_BARRACUDA_GREAT DESCRIPTION；生物說明，健康分頁描述第一句
+It hunts by ambushing its prey.	以伏擊方式捕獵。	以伏击方式捕猎。		CREATURE:FISH_BARRACUDA_GREAT DESCRIPTION；生物說明，健康分頁描述第一句
+A medium-sized creature with the arms and torso on a man, but with the head and tail of a narwhal.	中型生物，有人類的手臂與軀幹，卻長著獨角鯨的頭部與尾巴。	中型生物，有人类的手臂和躯干，却长着独角鲸的头部和尾巴。		CREATURE:NARWHAL MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge, round, hairless river creature.	體型渾圓、全身無毛的巨大河川生物。	体型浑圆、全身无毛的巨大河流生物。		CREATURE:HIPPO DESCRIPTION；生物說明，健康分頁描述第一句
+It is a plant-eating animal but has long tusks and can be aggressive and deadly if disturbed.	雖然吃素，卻長著長獠牙，受到打擾時會變得兇猛且致命。	虽然吃素，却长着长獠牙，受到打扰时会变得凶猛且致命。		CREATURE:HIPPO DESCRIPTION；生物說明，健康分頁描述第一句
+A medium-sized, green fish found in temperate lakes.	棲息於溫帶湖泊的綠色中型魚類。	栖息于温带湖泊的绿色中型鱼类。		CREATURE:FISH_PIKE DESCRIPTION；生物說明，健康分頁描述第一句
+A small semi-aquatic, egg laying mammal with a bill, flat tail and poison spurs.	半水棲、會下蛋的小型哺乳動物，長著扁喙、扁平尾巴與毒距。	半水栖、会下蛋的小型哺乳动物，长着扁喙、扁平尾巴和毒距。		CREATURE:PLATYPUS DESCRIPTION；生物說明，健康分頁描述第一句
+A humanoid with the head, tail and poison spurs of a platypus.	長著鴨嘴獸頭部、尾巴與毒距的人形生物。	长着鸭嘴兽头部、尾巴和毒距的人形生物。		CREATURE:PLATYPUS MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge monster, the shape of a platypus.	形似鴨嘴獸的巨大怪物。	形似鸭嘴兽的巨大怪物。		CREATURE:PLATYPUS, GIANT DESCRIPTION；生物說明，健康分頁描述第一句
+A huge brown creature found in temperate woodland.	棲息於溫帶林地的褐色巨大生物。	栖息于温带林地的褐色巨大生物。		CREATURE:BEAR_GRIZZLY DESCRIPTION；生物說明，健康分頁描述第一句
+It is known for its ferocious attack, usually when it or its young are threatened.	以兇猛的攻擊聞名，通常發生在自己或幼崽受到威脅時。	以凶猛的攻击闻名，通常发生在自己或幼崽受到威胁时。		CREATURE:BEAR_GRIZZLY DESCRIPTION；生物說明，健康分頁描述第一句
+A large omnivorous predator found in temperate woodlands.	棲息於溫帶林地的大型雜食性掠食者。	栖息于温带林地的大型杂食性捕食者。		CREATURE:BEAR_BLACK DESCRIPTION；生物說明，健康分頁描述第一句
+Mainly living on berries, it will also steal carcasses from other hunters.	主要以漿果為食，也會從其他獵食者那裡搶奪屍體。	主要以浆果为食，也会从其他猎食者那里抢夺尸体。		CREATURE:BEAR_BLACK DESCRIPTION；生物說明，健康分頁描述第一句
+Though normally a docile animal, it has been known to kill in a predatory attack.	平時性情溫順，但也曾有掠食攻擊致死的紀錄。	平时性情温顺，但也曾有捕食性攻击致死的记录。		CREATURE:BEAR_BLACK DESCRIPTION；生物說明，健康分頁描述第一句
+A medium-sized monkey found in woods and grassland.	棲息於林地與草原的中型猴類。	栖息于林地和草原的中型猴类。		CREATURE:MACAQUE_RHESUS DESCRIPTION；生物說明，健康分頁描述第一句
+It usually lives on roots and insects but can become a pest in civilized areas, roaming in large groups and begging for scraps.	通常以樹根和昆蟲為食，但在人類聚落會成群遊蕩、討要剩食，成為禍害。	通常以树根和昆虫为食，但在人类聚落会成群游荡、讨要剩食，成为祸害。		CREATURE:MACAQUE_RHESUS DESCRIPTION；生物說明，健康分頁描述第一句
+A large solitary feline.	獨居的大型貓科動物。	独居的大型猫科动物。		CREATURE:COUGAR DESCRIPTION；生物說明，健康分頁描述第一句
+It is found most often in dense vegetation, ambushing its prey.	多半躲在茂密的草木間伏擊獵物。	多半躲在茂密的草木间伏击猎物。		CREATURE:COUGAR DESCRIPTION；生物說明，健康分頁描述第一句
+A large, round, lowland rodent.	體型渾圓、生活在低地的大型囓齒動物。	体型浑圆、生活在低地的大型啮齿动物。		CREATURE:GROUNDHOG DESCRIPTION；生物說明，健康分頁描述第一句
+It lives in burrows in the ground and ventures out to eat.	住在地下洞穴，出洞覓食。	住在地下洞穴，出洞觅食。		CREATURE:GROUNDHOG DESCRIPTION；生物說明，健康分頁描述第一句
+A huge reptile, found in rivers and marshlands.	棲息於河川與沼澤的巨大爬蟲類。	栖息于河流和沼泽的巨大爬行动物。		CREATURE:ALLIGATOR DESCRIPTION；生物說明，健康分頁描述第一句
+It is an ambush predator, solitary and territorial.	伏擊型掠食者，獨居且有地盤意識。	伏击型捕食者，独居且有领地意识。		CREATURE:ALLIGATOR DESCRIPTION；生物說明，健康分頁描述第一句
+A medium-sized, red-faced black bird that searches the temperate lands for carrion.	紅臉的中型黑鳥，在溫帶地區四處尋找腐肉。	红脸的中型黑鸟，在温带地区四处寻找腐肉。		CREATURE:BIRD_BUZZARD DESCRIPTION；生物說明，健康分頁描述第一句
+A medium-sized, walking red panda with arms and a tail.	用雙腳行走、有手臂和尾巴的中型小貓熊。	用双脚行走、有手臂和尾巴的中型小熊猫。		CREATURE:RED PANDA MAN DESCRIPTION；生物說明，健康分頁描述第一句
+It prefers the forest and its beloved trees.	偏愛森林與心愛的樹木。	偏爱森林和心爱的树木。		CREATURE:RED PANDA MAN DESCRIPTION；生物說明，健康分頁描述第一句
+A huge, hairless mammal, found grazing in grasslands in groups.	幾乎無毛的巨大哺乳動物，成群在草原上覓食。	几乎无毛的巨大哺乳动物，成群在草原上觅食。		CREATURE:ELEPHANT DESCRIPTION；生物說明，健康分頁描述第一句
+It eats plants which it lifts up with its long trunk.	用長鼻捲起植物送進嘴裡。	用长鼻卷起植物送进嘴里。		CREATURE:ELEPHANT DESCRIPTION；生物說明，健康分頁描述第一句
+When angered, it will attack with its long tusks.	被激怒時會用長牙攻擊。	被激怒时会用长牙攻击。		CREATURE:ELEPHANT DESCRIPTION；生物說明，健康分頁描述第一句
+A gigantic version of the feline predator.	龐大版本的貓科掠食者。	庞大版本的猫科捕食者。		CREATURE:GIANT_LION DESCRIPTION；生物說明，健康分頁描述第一句
+Its giant prides can be found in the wildest, most savage parts of the world.	牠們的巨大獅群出沒於世上最荒涼、最蠻荒的地方。	它们的巨大狮群出没于世上最荒凉、最蛮荒的地方。		CREATURE:GIANT_LION DESCRIPTION；生物說明，健康分頁描述第一句
+A gigantic spotted predator, dwarfing its small cousins.	身有斑點的龐大掠食者，讓體型較小的近親相形見絀。	身有斑点的庞大捕食者，让体型较小的近亲相形见绌。		CREATURE:GIANT_LEOPARD DESCRIPTION；生物說明，健康分頁描述第一句
+It is found in the wild lands.	棲息於荒野。	栖息于荒野。		CREATURE:GIANT_LEOPARD DESCRIPTION；生物說明，健康分頁描述第一句
+A large, muscular, spotted feline found in tropical jungles.	棲息於熱帶叢林、肌肉發達、身有斑點的大型貓科動物。	栖息于热带丛林、肌肉发达、身有斑点的大型猫科动物。		CREATURE:JAGUAR DESCRIPTION；生物說明，健康分頁描述第一句
+It is solitary and stalks and ambushes its prey.	獨居，會跟蹤並伏擊獵物。	独居，会跟踪并伏击猎物。		CREATURE:JAGUAR DESCRIPTION；生物說明，健康分頁描述第一句
+A gigantic feline predator, similar to its cousins in all but size.	龐大的貓科掠食者，除了體型外與近親無異。	庞大的猫科捕食者，除了体型外与近亲无异。		CREATURE:GIANT_JAGUAR DESCRIPTION；生物說明，健康分頁描述第一句
+It can be found in the savage wilderness.	見於蠻荒野地。	见于蛮荒野地。		CREATURE:GIANT_JAGUAR DESCRIPTION；生物說明，健康分頁描述第一句
+A huge, striped predator.	身有條紋的巨大掠食者。	身有条纹的巨大捕食者。		CREATURE:TIGER DESCRIPTION；生物說明，健康分頁描述第一句
+It is found in almost any climate on a lone hunt for its prey.	幾乎在任何氣候中都能見到牠獨自追獵。	几乎在任何气候中都能见到它独自追猎。		CREATURE:TIGER DESCRIPTION；生物說明，健康分頁描述第一句
+A large monkey with blue face and rump.	臉和臀部呈藍色的大型猴類。	脸和臀部呈蓝色的大型猴类。		CREATURE:MANDRILL DESCRIPTION；生物說明，健康分頁描述第一句
+It lives in large groups and often survives by destroying crops and stealing garbage.	大群生活，常靠糟蹋農作物和偷翻垃圾過活。	大群生活，常靠糟蹋农作物和偷翻垃圾过活。		CREATURE:MANDRILL DESCRIPTION；生物說明，健康分頁描述第一句
+The males are larger, with powerful jaws.	雄性體型較大，顎部強而有力。	雄性体型较大，颚部强而有力。		CREATURE:MANDRILL DESCRIPTION；生物說明，健康分頁描述第一句
+It lives in complex social groups of many members.	生活在成員眾多、結構複雜的社會群體中。	生活在成员众多、结构复杂的社会群体中。		CREATURE:CHIMPANZEE DESCRIPTION；生物說明，健康分頁描述第一句
+Though it is quite intelligent, it has been known for ferocious attacks.	雖然相當聰明，卻也以兇猛的攻擊出名。	虽然相当聪明，却也以凶猛的攻击出名。		CREATURE:CHIMPANZEE DESCRIPTION；生物說明，健康分頁描述第一句
+A small, long-armed ape.	手臂很長的小型猿類。	手臂很长的小型猿类。		CREATURE:GIBBON_WHITE_HANDED DESCRIPTION；生物說明，健康分頁描述第一句
+It lives in trees and eats fruit.	住在樹上，以果實為食。	住在树上，以果实为食。		CREATURE:GIBBON_WHITE_HANDED DESCRIPTION；生物說明，健康分頁描述第一句
+A small fruit-eating ape, found in the trees.	生活在樹上、以果實為食的小型猿類。	生活在树上、以果实为食的小型猿类。		CREATURE:GIBBON_BLACK_HANDED DESCRIPTION；生物說明，健康分頁描述第一句
+A small ape found in pairs, swinging from the trees.	成對出現、在樹間擺盪的小型猿類。	成对出现、在树间摆荡的小型猿类。		CREATURE:GIBBON_PILEATED DESCRIPTION；生物說明，健康分頁描述第一句
+A small ape that swings from the trees, eating fruit.	在樹間擺盪、以果實為食的小型猿類。	在树间摆荡、以果实为食的小型猿类。		CREATURE:GIBBON_BILOU DESCRIPTION；生物說明，健康分頁描述第一句
+A large, long-necked creature with two fleshy humps on its back.	脖子很長、背上有兩個肉峰的大型生物。	脖子很长、背上有两个肉峰的大型生物。		CREATURE:CAMEL_2_HUMP DESCRIPTION；生物說明，健康分頁描述第一句
+It is domesticated to carry passengers and cargo.	已被馴化來載人運貨。	已被驯化来载人运货。		CREATURE:CAMEL_2_HUMP DESCRIPTION；生物說明，健康分頁描述第一句
+A huge, predatory reptile found in coastal marshes and river deltas.	棲息於沿海沼澤與河口三角洲的巨大掠食性爬蟲類。	栖息于沿海沼泽和河口三角洲的巨大捕食性爬行动物。		CREATURE:CROCODILE_SALTWATER DESCRIPTION；生物說明，健康分頁描述第一句
+It ambushes its prey at the shore and uses its great size to drag the victim under and drown them.	在岸邊伏擊獵物，憑龐大的身軀把獵物拖下水淹死。	在岸边伏击猎物，凭庞大的身躯把猎物拖下水淹死。		CREATURE:CROCODILE_SALTWATER DESCRIPTION；生物說明，健康分頁描述第一句
+A large bird with a featherless red head found in the sky of tropical deserts, scanning the ground for dead carcasses.	頭部光禿泛紅的大型鳥類，盤旋於熱帶沙漠上空，搜尋地面的屍骸。	头部光秃泛红的大型鸟类，盘旋于热带沙漠上空，搜索地面的尸骸。		CREATURE:BIRD_VULTURE DESCRIPTION；生物說明，健康分頁描述第一句
+A small mammal known to defend itself ferociously in combat, often fighting off multiple animals many times its size.	以戰鬥中兇猛自衛聞名的小型哺乳動物，常能擊退多隻體型比牠大好幾倍的動物。	以战斗中凶猛自卫闻名的小型哺乳动物，常能击退多只体型比它大好几倍的动物。		CREATURE:HONEY BADGER DESCRIPTION；生物說明，健康分頁描述第一句
+A small, muscular, weasel-like creature.	肌肉發達、形似鼬的小型生物。	肌肉发达、形似鼬的小型生物。		CREATURE:WOLVERINE DESCRIPTION；生物說明，健康分頁描述第一句
+It is known for its ferocity.	以兇猛聞名。	以凶猛闻名。		CREATURE:WOLVERINE DESCRIPTION；生物說明，健康分頁描述第一句
+A large, terrifying monster the shape of a wolverine.	形似狼獾的駭人大型怪物。	形似狼獾的骇人大型怪物。		CREATURE:GIANT_WOLVERINE DESCRIPTION；生物說明，健康分頁描述第一句
