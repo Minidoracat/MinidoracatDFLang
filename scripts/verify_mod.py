@@ -124,8 +124,9 @@ def main() -> int:
               if r[lang] and r.get("align") != "inner" and leading_spaces(r[lang]) != leading_spaces(r["en"])]
     check(not indent, "譯文開頭空白與原文相同（inner 句型除外）", indent)
     def room(r: dict) -> int | None:
-        """譯文最多幾格；None 是不限：sentences_*、ann_*、speech_*、combat_*、desc_*、health_* 由引擎依框寬重新換行"""
-        if r["file"].split("/")[1].startswith(("sentences_", "ann_", "speech_", "combat_", "desc_", "health_")):
+        """譯文最多幾格；None 是不限：sentences_*、ann_*、speech_*、combat_*、desc_*、health_* 由引擎依框寬重新換行；
+        note 寫「寬度例外」的條目已在實機確認右邊有空位（欄名「Adv」只有 3 格，「冒險」要 4 格）"""
+        if r["file"].split("/")[1].startswith(("sentences_", "ann_", "speech_", "combat_", "desc_", "health_")) or "寬度例外" in (r.get("note") or ""):
             return None
         en = cells(template(r["en"]))
         return max(en, 6) if r["file"].startswith("strings/names_") else en
