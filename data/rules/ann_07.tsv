@@ -1,0 +1,70 @@
+en	zh-Hant	zh-Hans	align	note
+The annual tribute from {1} has arrived.	來自{1}的年度貢品送到了。	来自{1}的年度贡品送到了。		FUN_140e41870 2136673；{1} 文明名
+A caravan from {1} has arrived.	來自{1}的商隊抵達了。	来自{1}的商队抵达了。		FUN_140e42d20 2137760；CARAVAN_ARRIVAL 第一句，商隊種族同要塞
+A {@1} caravan from {2} has arrived.	來自{2}的{1}商隊抵達了。	来自{2}的{1}商队抵达了。		FUN_140e42d20 2137757；{1} 種族形容詞（elven、human…），遊戲固定寫 A
+Although it is a grim reminder of the winter hardships to come, the supply caravan from {1} is a welcome sight. Their eyes are alight with the anticipation of inspecting the splendid products of your industrious {@2}. [B]Take careful stock of your own stores. What these merchants offer might very well be the difference between a prosperous future and a slow and meaningless death.	來自{1}的補給商隊雖然嚴峻地提醒著即將到來的冬日苦難，仍是可喜的景象。他們眼中閃著期待，等著細看你那些勤奮的{2}做出的精美產品。[B]仔細清點你自己的庫存。這些商人帶來的東西，很可能決定你們迎來繁榮的未來，還是走向緩慢而毫無意義的死亡。	来自{1}的补给商队虽然严峻地提醒着即将到来的冬日苦难，仍是可喜的景象。他们眼中闪着期待，等着细看你那些勤劳的{2}做出的精美产品。[B]仔细清点你自己的库存。这些商人带来的东西，很可能决定你们迎来繁荣的未来，还是走向缓慢而毫无意义的死亡。		FUN_140e42d20 2137669-2137705；FIRST_CARAVAN_ARRIVAL（BOX 彈出訊息，整則一條）；{1} 文明名，{2} craftsdwarves／craftsmen
+A {@1} diplomat from {2} has arrived.	來自{2}的{1}外交官抵達了。	来自{2}的{1}外交官抵达了。		FUN_140e4b750 2143123；DIPLOMAT_ARRIVAL；{1} 種族形容詞，遊戲固定寫 A
+No {%1}?  How curious...	{1}沒有來？真是奇怪……	{1}没有来？真是奇怪……		FUN_140e4ca70 2143806；該來的職位（outpost liaison 等）沒來；整則一條
+The outpost liaison {1} from {2} has arrived.	來自{2}的前哨站聯絡人{1}抵達了。	来自{2}的前哨站联络人{1}抵达了。		FUN_140e4ca70 2143758；LIAISON_ARRIVAL 的前哨站聯絡人；寫在下一條前：{%1} 取最短的片段，「outpost」先翻得出來會把 liaison 留給人名
+The {%1} {2} from {3} has arrived.	來自{3}的{1}{2}抵達了。	来自{3}的{1}{2}抵达了。		FUN_140e4ca70 2143758；LIAISON_ARRIVAL：the 職位 人名 from 文明名
+A {%1} from {2} has arrived.	來自{2}的{1}抵達了。	来自{2}的{1}抵达了。		FUN_140e4dd10 2144475；GUEST_ARRIVAL 類：A 職業 from 文明名
+The Dragon {1} has come!  A gigantic reptilian creature.  It is magical and can breathe fire.  These monsters can live for thousands of years.	龍{1}來了！巨大的爬蟲類生物。牠具有魔力，能噴火。這種怪物能活上數千年。	龙{1}来了！巨大的爬行类生物。它具有魔力，能喷火。这种怪物能活上数千年。		FUN_140e506a0 2145917／FUN_140e51490 2146460；MEGABEAST_ARRIVAL（BOX，只查整則）：名稱＋has come!＋CREATURE:DRAGON 的 DESCRIPTION；佔位不跨句，所以每種巨獸一條；「來了」沿用 ann_08 的 {1} has come!；巨獸種類寫死在樣板裡（The 種類 名字），種類名多字時 {@n} 會切錯
+The Bronze Colossus {1} has come!  A gigantic magic statue made of bronze and bent on mayhem.	青銅巨像{1}來了！以青銅打造、一心製造混亂的巨大魔法雕像。	青铜巨像{1}来了！以青铜打造、一心制造混乱的巨大魔法雕像。		FUN_140e506a0 2145917／FUN_140e51490 2146460；MEGABEAST_ARRIVAL（BOX，只查整則）：名稱＋has come!＋CREATURE:COLOSSUS_BRONZE 的 DESCRIPTION；佔位不跨句，所以每種巨獸一條；「來了」沿用 ann_08 的 {1} has come!；巨獸種類寫死在樣板裡（The 種類 名字），種類名多字時 {@n} 會切錯
+The Hydra {1} has come!  A giant dragon-like monster with seven biting heads.	九頭蛇{1}來了！長著七顆會咬人的頭、形似巨龍的巨大怪物。	九头蛇{1}来了！长着七颗会咬人的头、形似巨龙的巨大怪物。		FUN_140e506a0 2145917／FUN_140e51490 2146460；MEGABEAST_ARRIVAL（BOX，只查整則）：名稱＋has come!＋CREATURE:HYDRA 的 DESCRIPTION；佔位不跨句，所以每種巨獸一條；「來了」沿用 ann_08 的 {1} has come!；巨獸種類寫死在樣板裡（The 種類 名字），種類名多字時 {@n} 會切錯
+The Roc {1} has come!  A bird of prey so large and ferocious it dwarfs many dragons.  All beneath its mighty wings should fear the sky.	大鵬鳥{1}來了！體型巨大又兇猛的猛禽，許多龍在牠面前都相形見絀。在牠強健雙翼之下的一切，都該畏懼天空。	大鹏鸟{1}来了！体型巨大又凶猛的猛禽，许多龙在它面前都相形见绌。在它强健双翼之下的一切，都该畏惧天空。		FUN_140e506a0 2145917／FUN_140e51490 2146460；MEGABEAST_ARRIVAL（BOX，只查整則）：名稱＋has come!＋CREATURE:BIRD_ROC 的 DESCRIPTION；佔位不跨句，所以每種巨獸一條；「來了」沿用 ann_08 的 {1} has come!；巨獸種類寫死在樣板裡（The 種類 名字），種類名多字時 {@n} 會切錯
+The Giant {1} has come!  A gigantic creature resembling a human, almost unparalleled in size.	巨人{1}來了！形似人類的巨大生物，體型幾乎無可匹敵。	巨人{1}来了！形似人类的巨大生物，体型几乎无可匹敌。		FUN_140e506a0 2145917／FUN_140e51490 2146460；MEGABEAST_ARRIVAL（BOX，只查整則）：名稱＋has come!＋CREATURE:GIANT 的 DESCRIPTION；佔位不跨句，所以每種巨獸一條；「來了」沿用 ann_08 的 {1} has come!；巨獸種類寫死在樣板裡（The 種類 名字），種類名多字時 {@n} 會切錯
+The Cyclops {1} has come!  A giant humanoid monster with a single eye set in its forehead.	獨眼怪{1}來了！額頭上只有一隻眼睛的巨大人形怪物。	独眼怪{1}来了！额头上只有一只眼睛的巨大人形怪物。		FUN_140e506a0 2145917／FUN_140e51490 2146460；MEGABEAST_ARRIVAL（BOX，只查整則）：名稱＋has come!＋CREATURE:CYCLOPS 的 DESCRIPTION；佔位不跨句，所以每種巨獸一條；「來了」沿用 ann_08 的 {1} has come!；巨獸種類寫死在樣板裡（The 種類 名字），種類名多字時 {@n} 會切錯
+The Ettin {1} has come!  A giant humanoid monster with two heads.	雙頭怪{1}來了！長著兩顆頭的巨大人形怪物。	双头怪{1}来了！长着两颗头的巨大人形怪物。		FUN_140e506a0 2145917／FUN_140e51490 2146460；MEGABEAST_ARRIVAL（BOX，只查整則）：名稱＋has come!＋CREATURE:ETTIN 的 DESCRIPTION；佔位不跨句，所以每種巨獸一條；「來了」沿用 ann_08 的 {1} has come!；巨獸種類寫死在樣板裡（The 種類 名字），種類名多字時 {@n} 會切錯
+The Minotaur {1} has come!  A giant humanoid monster with the head of a bull.	牛頭人{1}來了！長著公牛頭的巨大人形怪物。	牛头人{1}来了！长着公牛头的巨大人形怪物。		FUN_140e506a0 2145917／FUN_140e51490 2146460；MEGABEAST_ARRIVAL（BOX，只查整則）：名稱＋has come!＋CREATURE:MINOTAUR 的 DESCRIPTION；佔位不跨句，所以每種巨獸一條；「來了」沿用 ann_08 的 {1} has come!；巨獸種類寫死在樣板裡（The 種類 名字），種類名多字時 {@n} 會切錯
+The merchants from {1} will be leaving soon.	來自{1}的商人即將離開。	来自{1}的商人即将离开。		FUN_140e53870 2147719；MERCHANTS_LEAVING_SOON
+The merchants from {1} have embarked on their journey.	來自{1}的商人已經踏上歸途。	来自{1}的商人已经踏上归途。		FUN_140e53870 2147855；MERCHANTS_EMBARKED
+{1} bids you farewell!	{1}向你道別！	{1}向你道别！		FUN_140e605e0 2155289；{1} 人名, 職業
+{1} has been re-elected.	{1}連任了。	{1}连任了。		FUN_140e646f0 2158475；ELECTION_RESULTS
+{1} has been elected {%2}.	{1}當選{2}。	{1}当选{2}。		FUN_140e646f0 2158491；ELECTION_RESULTS；{2} 職位名（mayor…）
+{1} slams into an obstacle and blows apart!	{1}撞上障礙物，粉身碎骨！	{1}撞上障碍物，粉身碎骨！		FUN_140eadea0 2215918／2218375；UNIT_PROJECTILE_SLAM_BLOW_APART；{1} 生物（The vulture）或人名
+{1} slams into an obstacle!	{1}撞上了障礙物！	{1}撞上了障碍物！		FUN_140eadea0 2215789／2218234；UNIT_PROJECTILE_SLAM
+{1} skips across the water!	{1}在水面上彈跳著掠過！	{1}在水面上弹跳着掠过！		FUN_140eadea0 2216044；被拋飛的生物掠過液面
+{1} skips across the lava!	{1}在熔岩上彈跳著掠過！	{1}在熔岩上弹跳着掠过！		FUN_140eadea0 2216044；被拋飛的生物掠過液面
+{1} skips across the magma!	{1}在熔岩上彈跳著掠過！	{1}在熔岩上弹跳着掠过！		FUN_140eadea0 2216044；被拋飛的生物掠過液面
+You slam into {1}!	你撞上了{1}！	你撞上了{1}！		FUN_140eadea0 2216831／2218644；UNIT_PROJECTILE_SLAM_INTO_UNIT，冒險模式自己
+{1} slams into you!	{1}撞上了你！	{1}撞上了你！		同上；被撞的是冒險者（推斷 FUN_14132e430 寫 you）
+{1} slams into {2}!	{1}撞上了{2}！	{1}撞上了{2}！		同上；{2} 生物（the stray dog，偶爾大寫 The）
+{1} is struck by a ball of flames!	{1}被火球擊中！	{1}被火球击中！		FUN_140eb3ad0 2219152；FLAME_HIT
+You have located {1}, "{2}", a dark fortress.	你找到了{1}「{2}」，一座黑暗要塞。	你找到了{1}“{2}”，一座黑暗要塞。		FUN_1410821f0 2442348；TRAVEL_SITE_DISCOVERY（BOX）；{1} 原文地名，{2} 英譯地名；地點種類 FUN_1410cbe50
+You have located {1}, "{2}", a dark pits.	你找到了{1}「{2}」，一座黑暗坑穴。	你找到了{1}“{2}”，一座黑暗坑穴。		同上
+You have located {1}, "{2}", a mountain halls.	你找到了{1}「{2}」，一座山中大廳。	你找到了{1}“{2}”，一座山中大厅。		同上
+You have located {1}, "{2}", a hillocks.	你找到了{1}「{2}」，一座丘陵村落。	你找到了{1}“{2}”，一座丘陵村落。		同上
+You have located {1}, "{2}", a fortress.	你找到了{1}「{2}」，一座要塞。	你找到了{1}“{2}”，一座要塞。		同上
+You have located {1}, "{2}", a pits.	你找到了{1}「{2}」，一座坑穴。	你找到了{1}“{2}”，一座坑穴。		同上
+You have located {1}, "{2}", a cave.	你找到了{1}「{2}」，一處洞穴。	你找到了{1}“{2}”，一处洞穴。		同上
+You have located {1}, "{2}", a forest retreat.	你找到了{1}「{2}」，一座森林隱居地。	你找到了{1}“{2}”，一座森林隐居地。		同上
+You have located {1}, "{2}", a town.	你找到了{1}「{2}」，一座城鎮。	你找到了{1}“{2}”，一座城镇。		同上
+You have located {1}, "{2}", a hamlet.	你找到了{1}「{2}」，一座村莊。	你找到了{1}“{2}”，一座村庄。		同上
+You have located {1}, "{2}", a important location.	你找到了{1}「{2}」，一處重要地點。	你找到了{1}“{2}”，一处重要地点。		同上
+You have located {1}, "{2}", a labyrinth.	你找到了{1}「{2}」，一座迷宮。	你找到了{1}“{2}”，一座迷宫。		同上
+You have located {1}, "{2}", a shrine.	你找到了{1}「{2}」，一座神龕。	你找到了{1}“{2}”，一座神龛。		同上
+You have located {1}, "{2}", a lair.	你找到了{1}「{2}」，一處巢穴。	你找到了{1}“{2}”，一处巢穴。		同上
+You have located {1}, "{2}", a tower.	你找到了{1}「{2}」，一座高塔。	你找到了{1}“{2}”，一座高塔。		同上
+You have located {1}, "{2}", a monastery.	你找到了{1}「{2}」，一座修道院。	你找到了{1}“{2}”，一座修道院。		同上
+You have located {1}, "{2}", a fort.	你找到了{1}「{2}」，一座堡壘。	你找到了{1}“{2}”，一座堡垒。		同上
+You have located {1}, "{2}", a castle.	你找到了{1}「{2}」，一座城堡。	你找到了{1}“{2}”，一座城堡。		同上
+You have located {1}, "{2}", a camp.	你找到了{1}「{2}」，一處營地。	你找到了{1}“{2}”，一处营地。		同上
+You have located {1}, "{2}", a tomb.	你找到了{1}「{2}」，一座陵墓。	你找到了{1}“{2}”，一座陵墓。		同上
+You have located {1}, "{2}", a vault.	你找到了{1}「{2}」，一座寶庫。	你找到了{1}“{2}”，一座宝库。		同上
+You have located {1}, "{2}", a mysterious palace.	你找到了{1}「{2}」，一座神祕宮殿。	你找到了{1}“{2}”，一座神秘宫殿。		同上
+You have located {1}, "{2}", a mysterious lair.	你找到了{1}「{2}」，一處神祕巢穴。	你找到了{1}“{2}”，一处神秘巢穴。		同上
+You have located {1}, "{2}", a mysterious dungeon.	你找到了{1}「{2}」，一座神祕地牢。	你找到了{1}“{2}”，一座神秘地牢。		同上
+You have located {1}, "{2}", a monument.	你找到了{1}「{2}」，一座紀念碑。	你找到了{1}“{2}”，一座纪念碑。		同上
+You have located {1}, "{2}", a site.	你找到了{1}「{2}」，一處據點。	你找到了{1}“{2}”，一处据点。		同上
+{1} cancels {%2}: Moved.	{1}取消了「{2}」：目標被移走了。	{1}取消了“{2}”：目标被移走了。		FUN_141325080 2531382；CANCEL_JOB 原因 Moved（單字太泛，寫在句型裡）；工作名稱加引號，免得和動詞黏在一起（「取消了喝」）
+{1} cancels {%2}: Relieved.	{1}取消了「{2}」：被解除職務。	{1}取消了“{2}”：被解除职务。		FUN_141325080 2531525；原因 Relieved 是被解職，不是情緒「如釋重負」
+{1} cancels {%2}: .	{1}取消了「{2}」。	{1}取消了“{2}”。		FUN_141325080 2531741；未列出的原因（default）留空
+{1} cancels {%2}: "Farewell!"  Leaving.	{1}取消了「{2}」：「再會！」離開中。	{1}取消了“{2}”：“再会！”离开中。		FUN_141325080 2531609；原因 "Farewell!"  Leaving 內含句界（引號後兩空白），佔位不能跨句，單獨寫一條
+{1} cancels {%2}: {%3}.	{1}取消了「{2}」：{3}。	{1}取消了“{2}”：{3}。		FUN_141325080 2531358；CANCEL_JOB：{1} 人名, 職業；{2} 工作名稱（加引號）；{3} 原因
+Interrupted by {1}	被{1}打斷	被{1}打断		FUN_141325080 2531372；取消原因；{1} 生物（a vulture）或人名
+Needs {%1} in linked stockpile	連結的倉儲區裡需要{1}	关联的储物区里需要{1}		FUN_141325080 2531473；取消原因；{1} 工作物品條件（FUN_140a2adb0）
+Needs {%1}	需要{1}	需要{1}	inner	FUN_141325080 2531470；取消原因；{1} 工作物品條件（FUN_140a2adb0）；只用在取消句的佔位裡，免得整句的「Needs …」介面字串被套上
+The {@1} suspended the construction of {%2}.	{1}暫停了{2}的建造。	{1}暂停了{2}的建造。		FUN_141325080 2531949；CONSTRUCTION_SUSPENDED；{1} 要塞種族複數（dwarves），{2} 建築名
+The {@1} suspended a linkage from {%2}.	{1}暫停了從{2}連出的連動。	{1}暂停了从{2}连出的联动。		FUN_141325080 2532100；LINKAGE_SUSPENDED；{2} 拉桿、壓力板等建築名
+{%1} ({#2}) has been completed.	工作指令「{1}」（{2}）已完成。	工作订单“{1}”（{2}）已完成。		FUN_141325080 2532359；工作指令完成；{1} 工作名稱，{2} 數量
+OVERWROTE JOB: {%1} BY {%2}	工作被覆蓋：{1}被{2}取代	工作被覆盖：{1}被{2}取代		FUN_141328450 2533220；JOB_OVERWRITTEN：前一個工作被後一個工作覆蓋（前綴 DAT_141782038、" BY " DAT_141782068，沒有句點）

@@ -1,0 +1,82 @@
+en	zh-Hant	zh-Hans	align	note
+You make nothing.	你什麼也沒做出來。	你什么也没做出来。		FUN_1402804b0 L339855 冒險模式製作
+You flinch.	你退縮了。	你退缩了。		FUN_1404df190 L612682 被威嚇（玩家）
+You are unperturbed.	你不為所動。	你不为所动。		FUN_1404df190 L612775 威嚇無效（玩家）
+That was compelling!	這話很有說服力！	这话很有说服力！		FUN_1404df190 L612956 被說服（玩家）
+It is not convincing.	這沒什麼說服力。	这没什么说服力。		FUN_1404df190 L613059 未被說服（玩家）
+Digging designation cancelled: damp stone located.	挖掘指定已取消：發現潮濕的岩石。	挖掘指定已取消：发现潮湿的岩石。		FUN_14053d660 L677391 挖到含水層邊緣
+Digging designation cancelled: warm stone located.	挖掘指定已取消：發現溫熱的岩石。	挖掘指定已取消：发现温热的岩石。		FUN_14053d660 L677427 挖到熔岩邊緣
+You hear nearby grinding.	你聽到附近傳來嘎吱聲。	你听到附近传来嘎吱声。		FUN_140572bd0 等 建築開關的聲響（距離近）
+You hear grinding.	你聽到嘎吱聲。	你听到嘎吱声。		同上（距離中等）
+You hear distant grinding.	你聽到遠處傳來嘎吱聲。	你听到远处传来嘎吱声。		同上（距離遠）
+There is little time -- you must flee.	時間不多了──你必須逃走。	时间不多了——你必须逃走。		FUN_1407e6840 L1133758 冒險開場
+The forces of darkness are on the march.	黑暗勢力正在進逼。	黑暗势力正在进逼。		FUN_1407e6840 L1133734 冒險開場
+The enemy will have no mercy.	敵人絕不會手下留情。	敌人绝不会手下留情。		FUN_1407e6840 L1133746 冒險開場
+Perhaps your family and friends can be convinced to leave.	或許你能說服家人和朋友一起離開。	也许你能说服家人和朋友一起离开。		FUN_1407e6840 L1133758 冒險開場
+The gang has even sent some troublemakers to harass people right here in town.	這幫盜匪甚至派了滋事分子到鎮上騷擾居民。	这帮盗匪甚至派了闹事的人到镇上骚扰居民。		FUN_1407e6840 L1133931 冒險開場
+Just reunited after a long journey, you are together with your companions again.	經過漫長的旅程，你終於和同伴們再度重聚。	经过漫长的旅程，你终于和同伴们再度重聚。		FUN_1407e6840 L1133953 冒險開場
+After a long journey, you are here to meet your most trusted companion.	經過漫長的旅程，你來到這裡和最信任的同伴會合。	经过漫长的旅程，你来到这里和最信任的同伴会合。		FUN_1407e6840 L1133955 冒險開場
+Your wanderings have brought you to this place after a long journey.	經過漫長的旅程，你一路流浪來到了這裡。	经过漫长的旅程，你一路流浪来到了这里。		FUN_1407e6840 L1133986 冒險開場
+You've finally got your equipment together, such as it is.	你總算把裝備湊齊了，雖然也就這樣。	你总算把装备凑齐了，虽然也就这样。		FUN_1407e6840 L1134005 冒險開場
+Now it's time for action and adventure!	現在，行動與冒險的時刻到了！	现在，行动与冒险的时刻到了！		FUN_1407e6840 L1134005 冒險開場
+In the rush of excitement, you've forgotten where you were going to go.	一時太過興奮，你忘了自己原本要去哪裡。	一时太过兴奋，你忘了自己原本要去哪里。		FUN_1407e6840 L1134007 冒險開場
+Your most trusted companion has made the journey to meet you here today.	你最信任的同伴今天特地遠道而來與你會合。	你最信任的同伴今天特地远道而来与你会合。		FUN_1407e6840 L1134016 冒險開場
+Your most trusted local companions are meeting you here today.	你在本地最信任的同伴們今天要在這裡與你會合。	你在本地最信任的同伴们今天要在这里与你会合。		FUN_1407e6840 L1134024 冒險開場
+Your most trusted companions have made the journey to meet you here today.	你最信任的同伴們今天特地遠道而來與你會合。	你最信任的同伴们今天特地远道而来与你会合。		FUN_1407e6840 L1134027 冒險開場
+A foolhardy soul might try to rescue the children that have been kidnapped.	有勇無謀的人或許會試著救出被綁架的孩子們。	有勇无谋的人或许会试着救出被绑架的孩子们。		FUN_1407e6840 L1134056 冒險開場
+A foolhardy soul might try to rescue the child that has been kidnapped.	有勇無謀的人或許會試著救出被綁架的孩子。	有勇无谋的人或许会试着救出被绑架的孩子。		FUN_1407e6840 L1134059 冒險開場
+Perhaps some of the people here will be worth talking to before you continue on your way.	繼續上路之前，或許值得和這裡的一些人聊聊。	继续上路之前，也许值得和这里的一些人聊聊。		FUN_1407e6840 L1134072 冒險開場
+Perhaps some of your friends here have ideas.	也許你在這裡的朋友會有些主意。	也许你在这里的朋友会有些主意。		FUN_1407e6840 L1134076 冒險開場
+Perhaps some of your friends here can remind you.	也許你在這裡的朋友能提醒你。	也许你在这里的朋友能提醒你。		FUN_1407e6840 L1134079 冒險開場
+Let the party venture forth!	隊伍出發冒險吧！	队伍出发冒险吧！		FUN_1407e6840 L1134083 冒險開場
+The location of this place is well-known, but none have penetrated its secrets.	這個地方的位置眾所皆知，卻從沒有人揭開它的祕密。	这个地方的位置众所周知，却从没有人揭开它的秘密。		FUN_1407e6840 L1133836 冒險開場：寶庫傳說；location 是位置、well-known 非水井
+If the true name of the monster can be uncovered, you might be able to end this terror forever.	要是能查出那怪物的真名，或許就能永遠終結這場恐懼。	要是能查出那怪物的真名，也许就能永远终结这场恐惧。		FUN_1407e6840 L1133836 冒險開場：寶庫傳說
+You are approaching your destination.	你快到目的地了。	你快到目的地了。		FUN_1407eed80 L1136837 冒險旅行（引號內）
+End your travels now and prepare yourself.	現在結束旅行，做好準備吧。	现在结束旅行，做好准备吧。		FUN_1407eed80 L1136837 冒險旅行（引號內）
+You've assumed tactical control as nobody else is available.	沒有其他人能指揮，由你接手戰術指揮。	没有其他人能指挥，由你接手战术指挥。		FUN_1407eed80 L1137010 冒險模式小隊
+Greetings.	你好。	你好。		FUN_1407eed80 L1137100 神明使命（引號內）
+You will have to leave this structure first before you can travel.	你得先離開這棟建築，才能開始旅行。	你得先离开这栋建筑，才能开始旅行。		FUN_1407eed80 L1137281 神明使命（引號內）
+Try to make your way out to the settlement.	試著走到外面的聚落去。	试着走到外面的聚落去。		FUN_1407eed80 L1137281 神明使命（引號內）
+My chosen, you must speak to them and offer your service.	我的選民，你得去和他們談談，表明願意效勞。	我的选民，你得去和他们谈谈，表明愿意效劳。		FUN_1407eed80 L1137364 神明使命（引號內）
+Do you feel the pull?	你感覺到那股牽引了嗎？	你感觉到那股牵引了吗？		FUN_1407eed80 L1137478 神明使命（引號內）
+You sense the direction of my representative.	你能感應到我的代表在哪個方向。	你能感应到我的代表在哪个方向。		FUN_1407eed80 L1137478 神明使命（引號內）
+It is possible to travel quickly to reach them, or you may journey more deliberately.	你可以用旅行快速趕到，也可以一步一步慢慢走。	你可以用旅行快速赶到，也可以一步一步慢慢走。		FUN_1407eed80 L1137478 神明使命（引號內）
+It is your decision.	由你決定。	由你决定。		FUN_1407eed80 L1137478 神明使命（引號內）
+Congratulations!	恭喜！	恭喜！		FUN_1407eed80 L1137543 神明使命（引號內）；婚禮公告句尾同句
+Now you must return this precious object to its proper home.	現在你必須把這件寶物送回它該在的地方。	现在你必须把这件宝物送回它该在的地方。		FUN_1407eed80 L1137543 神明使命（引號內）；object 指神器，譯寶物
+If you do not find the location in your log, ask others for directions.	如果日誌裡找不到這個地點，就向別人問路。	如果日志里找不到这个地点，就向别人问路。		FUN_1407eed80 L1137564 神明使命（引號內）；location 指地點，不是場所
+You may also follow the pull from your senses.	你也可以跟著感官的牽引走。	你也可以跟着感官的牵引走。		FUN_1407eed80 L1137564 神明使命（引號內）
+The journey is long.	路途遙遠。	路途遥远。		FUN_1407eed80 L1137581 神明使命（引號內）
+This place is dangerous.	這個地方很危險。	这个地方很危险。		FUN_1407eed80 L1137640 神明使命（引號內）
+Steel yourself against ancient enemies.	做好準備，迎戰古老的敵人。	做好准备，迎战古老的敌人。		FUN_1407eed80 L1137640 神明使命（引號內）
+Try not to let yourself be surrounded, and remain standing.	別讓自己被包圍，也別倒下。	别让自己被包围，也别倒下。		FUN_1407eed80 L1137640 神明使命（引號內）
+Enter and vanquish!	闖進去，殲滅敵人！	冲进去，歼灭敌人！		FUN_1407eed80 L1137640 神明使命（引號內）
+Or slip in unseen.	或者神不知鬼不覺地潛進去。	或者神不知鬼不觉地潜进去。		FUN_1407eed80 L1137640 神明使命（引號內）
+Securing the treasure is all that matters.	拿到寶物才是唯一要緊的事。	拿到宝物才是唯一要紧的事。		FUN_1407eed80 L1137640 神明使命（引號內）
+You are close.	你已經很近了。	你已经很近了。		FUN_1407eed80 L1137693 神明使命（引號內）
+Follow your senses to the entrance.	跟著感官找到入口。	跟着感官找到入口。		FUN_1407eed80 L1137693 神明使命（引號內）
+But my chosen, you are in need of sleep!	但我的選民，你需要睡覺！	但我的选民，你需要睡觉！		FUN_1407eed80 L1137704 神明使命（引號內）
+But my chosen, you are in need of drink!	但我的選民，你需要喝水！	但我的选民，你需要喝水！		FUN_1407eed80 L1137707 神明使命（引號內）
+But my chosen, you are in need of drink and sleep!	但我的選民，你需要喝水和睡覺！	但我的选民，你需要喝水和睡觉！		FUN_1407eed80 L1137710 神明使命（引號內）
+But my chosen, you are in need of sustenance!	但我的選民，你需要進食！	但我的选民，你需要进食！		FUN_1407eed80 L1137715 神明使命（引號內）
+But my chosen, you are in need of sustenance and sleep!	但我的選民，你需要進食和睡覺！	但我的选民，你需要进食和睡觉！		FUN_1407eed80 L1137718 神明使命（引號內）
+But my chosen, you are in need of drink and sustenance!	但我的選民，你需要喝水和進食！	但我的选民，你需要喝水和进食！		FUN_1407eed80 L1137722 神明使命（引號內）
+But my chosen, you are in a state!	但我的選民，你的狀況很糟！	但我的选民，你的状况很糟！		FUN_1407eed80 L1137725 神明使命（引號內；飢渴睏三者皆有）
+See to yourself before you face what's ahead.	面對前方的挑戰之前，先照顧好自己。	面对前方的挑战之前，先照顾好自己。		FUN_1407eed80 L1137728 神明使命（引號內）
+Remember that ice and snow can be heated by a campfire.	記得冰雪可以用營火加熱融化。	记得冰雪可以用营火加热融化。		FUN_1407eed80 L1137737 神明使命（引號內）
+With the treasure, you are near to glory and fulfillment of your task.	寶物到手，你離榮耀與完成使命已經不遠了。	宝物到手，你离荣耀与完成使命已经不远了。		FUN_1407eed80 L1137813 神明使命（引號內）
+Your senses can lead you on your return journey.	你的感官能引導你踏上歸途。	你的感官能引导你踏上归途。		FUN_1407eed80 L1137813 神明使命（引號內）
+You may return the object to the faithful by gifting it to one of the priests, or you may simply drop it in this structure wherever you see fit.	你可以把這件物品送給任一位祭司，歸還給信眾；也可以直接放在這棟建築裡你覺得合適的地方。	你可以把这件物品送给任一位祭司，归还给信众；也可以直接放在这栋建筑里你觉得合适的地方。		FUN_1407eed80 L1137843 神明使命（引號內）
+Congratulations, my faithful chosen!	恭喜你，我忠誠的選民！	恭喜你，我忠诚的选民！		FUN_1407eed80 L1137872 神明使命（引號內）
+There are other ways you can serve, if you offer your service again.	如果你願意再次效勞，還有其他方式可以侍奉我。	如果你愿意再次效劳，还有其他方式可以侍奉我。		FUN_1407eed80 L1137872 神明使命（引號內）
+You may also live your life as you see fit now if you choose.	你也可以就此按自己的意思過日子。	你也可以就此按自己的意思过日子。		FUN_1407eed80 L1137872 神明使命（引號內）
+You have done well.	你做得很好。	你做得很好。		FUN_1407eed80 L1137872 神明使命（引號內）；well 是副詞，非水井
+My other worshippers?	我的其他信徒？	我的其他信徒？		FUN_1407eed80 L1137888 神明使命（引號內）
+As you wish, my faithful chosen!	如你所願，我忠誠的選民！	如你所愿，我忠诚的选民！		FUN_1407eed80 L1137888 神明使命（引號內）
+Ungrateful apostate!	忘恩負義的叛教者！	忘恩负义的叛教者！		FUN_1407eed80 L1137903 神明使命（引號內）
+You awaken from your slumber.	你從睡夢中醒來。	你从睡梦中醒来。		FUN_1407eed80 L1138348 冒險模式睡醒
+Your sleep has been interrupted!	你的睡眠被打斷了！	你的睡眠被打断了！		FUN_1407eed80 L1138367 冒險模式睡眠中斷
+vertical bars	直立柵欄	竖直栅栏		建築名小寫（FUN_140573c10 等「The vertical bars close.」）；大寫版在既有檔
+floor bars	地板柵欄	地板栅栏		建築名小寫（開關公告）
+wall grate	牆格柵	墙格栅		建築名小寫（開關公告）
+floor grate	地板格柵	地板格栅		建築名小寫（開關公告）

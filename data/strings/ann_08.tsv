@@ -1,0 +1,86 @@
+en	zh-Hant	zh-Hans	align	note
+northwestern	西北部	西北部		FUN_1413435b0 釣魚公告的方位，接 ocean／lake／swamps／cavern 等
+southwestern	西南部	西南部		同上
+northeastern	東北部	东北部		同上
+southeastern	東南部	东南部		同上
+western	西部	西部		同上
+northern	北部	北部		同上
+eastern	東部	东部		同上
+southern	南部	南部		同上
+central	中部	中部		同上
+You are caught in a lava mist!	你被捲入熔岩霧中！	你被卷入熔岩雾中！		FUN_14134f440 2558748：冒險者本人
+You are caught in dragonfire!	你被捲入龍焰中！	你被卷入龙焰中！		FUN_14134f440 2558846：冒險者本人
+You are caught up in the web!	你被蛛網纏住了！	你被蛛网缠住了！		FUN_14134f440 2558959：冒險者本人
+You are caught in a cloud of flames!	你被捲入一團火焰中！	你被卷入一团火焰中！		FUN_14134f440 2559063：冒險者本人
+You are caught in a burst of steam!	你被一股蒸氣噴到！	你被一股蒸汽喷到！		FUN_14134f440 2559184：冒險者本人
+You are caught in a pool of lava!	你陷入了熔岩池！	你陷入了熔岩池！		FUN_14134f440 2559562：冒險者本人
+You are caught in a pool of magma!	你陷入了熔岩池！	你陷入了熔岩池！		FUN_14134f440 2559562：冒險者本人
+You fall over.	你跌倒了。	你摔倒了。		FUN_1413547e0 2563856：冒險者本人
+You regain consciousness.	你恢復了意識。	你恢复了意识。		FUN_1413547e0 2563922：冒險者本人
+You are completely free of the web.	你完全掙脫了蛛網。	你完全挣脱了蛛网。		FUN_1413547e0 2563968：冒險者本人
+You are partially free of the web.	你掙脫了部分蛛網。	你挣脱了部分蛛网。		FUN_1413547e0 2564003：冒險者本人
+You have fully overcome the paralysis.	你完全擺脫了癱瘓。	你完全摆脱了瘫痪。		FUN_1413547e0 2564047：冒險者本人
+You feel numb!	你覺得全身麻木！	你觉得全身麻木！		FUN_1413547e0 2564069：冒險者本人
+You are feeling sluggish!	你感到行動遲緩！	你感到行动迟缓！		FUN_1413547e0 2564089：冒險者本人
+You have partially overcome the paralysis.	你部分擺脫了癱瘓。	你部分摆脱了瘫痪。		FUN_1413547e0 2564114：冒險者本人
+You are partially paralyzed!	你局部癱瘓了！	你局部瘫痪了！		FUN_1413547e0 2564136：冒險者本人
+You are completely paralyzed!	你完全癱瘓了！	你完全瘫痪了！		FUN_1413547e0 2564158：冒險者本人
+You retch.	你一陣乾嘔。	你一阵干呕。		FUN_1413547e0 2564211：冒險者本人
+You vomit.	你吐了。	你吐了。		FUN_1413547e0 2564311：冒險者本人
+You vomit into the lava mist.	你吐進了熔岩霧裡。	你吐进了熔岩雾里。		FUN_1413547e0 2564311：冒險者本人
+You vomit into the dragonfire.	你吐進了龍焰裡。	你吐进了龙焰里。		FUN_1413547e0 2564311：冒險者本人
+You vomit into the flames.	你吐進了火焰裡。	你吐进了火焰里。		FUN_1413547e0 2564311：冒險者本人
+You vomit and bits of it get stuck in the web.	你吐了，有些嘔吐物黏在蛛網上。	你吐了，有些呕吐物粘在蛛网上。		FUN_1413547e0 2564311：冒險者本人
+You vomit into the ocean wave.	你吐進了海浪裡。	你吐进了海浪里。		FUN_1413547e0 2564311：冒險者本人
+You vomit into the sea foam.	你吐進了海沫裡。	你吐进了海沫里。		FUN_1413547e0 2564311：冒險者本人
+The rest of the vomit burns away in the lava.	剩下的嘔吐物在熔岩中燒光了。	剩下的呕吐物在熔岩中烧光了。		FUN_1413547e0 2564412
+The vomit burns away in the lava.	嘔吐物在熔岩中燒光了。	呕吐物在熔岩中烧光了。		FUN_1413547e0 2564412
+The rest of the vomit burns away in the magma.	剩下的嘔吐物在熔岩中燒光了。	剩下的呕吐物在熔岩中烧光了。		FUN_1413547e0 2564412
+The vomit burns away in the magma.	嘔吐物在熔岩中燒光了。	呕吐物在熔岩中烧光了。		FUN_1413547e0 2564412
+The rest of the vomit disappears into the water.	剩下的嘔吐物消失在水中。	剩下的呕吐物消失在水中。		FUN_1413547e0 2564412
+The vomit disappears into the water.	嘔吐物消失在水中。	呕吐物消失在水中。		FUN_1413547e0 2564412
+The rest of the vomit falls away into the chasm.	剩下的嘔吐物掉進了深淵。	剩下的呕吐物掉进了深渊。		FUN_1413547e0 2564412
+The vomit falls away into the chasm.	嘔吐物掉進了深淵。	呕吐物掉进了深渊。		FUN_1413547e0 2564412
+The rest of the vomit falls away into the underworld.	剩下的嘔吐物掉進了地獄。	剩下的呕吐物掉进了地狱。		FUN_1413547e0 2564412
+The vomit falls away into the underworld.	嘔吐物掉進了地獄。	呕吐物掉进了地狱。		FUN_1413547e0 2564412
+The rest of the vomit splatters into the shallow puddle of water.	剩下的嘔吐物濺進了淺水窪。	剩下的呕吐物溅进了浅水洼。		FUN_1413547e0 2564412
+The vomit splatters into the shallow puddle of water.	嘔吐物濺進了淺水窪。	呕吐物溅进了浅水洼。		FUN_1413547e0 2564412
+You are no longer stunned.	你不再暈眩了。	你不再晕眩了。		FUN_1413547e0 2564547：冒險者本人
+You collapse and fall to the ground from over-exertion.	你因過度勞累而倒在地上。	你因过度劳累而倒在地上。		FUN_1413547e0 2564665：冒險者本人
+You pass out from exhaustion.	你因精疲力竭而昏了過去。	你因精疲力竭而昏了过去。		FUN_1413547e0 2564702：冒險者本人
+You give in to pain.	你痛得昏了過去。	你痛得昏了过去。		FUN_1413547e0 2564758：冒險者本人
+You have reverted to a wild state!	你恢復了野性！	你恢复了野性！		FUN_1413547e0 2565458：冒險者本人
+You have forgotten your training!	你忘了先前的訓練！	你忘了先前的训练！		FUN_1413547e0 2565499：冒險者本人
+Intruders!	入侵者！	入侵者！		FUN_1413625b0 2569781：後接 Drive them away!
+Drive them away!	把他們趕走！	把他们赶走！		FUN_1413625b0 2569781
+Cavern dwellers!	洞穴生物！	洞穴生物！		FUN_1413625b0 2569821
+Send them back to the darkness!	把牠們趕回黑暗中！	把它们赶回黑暗中！		FUN_1413625b0 2569821
+Thief!	小偷！	小偷！		FUN_1413625b0 2569870
+Protect the hoard from skulking filth!	保護寶藏，別讓鬼祟的敗類得逞！	保护宝藏，别让鬼祟的败类得逞！		FUN_1413625b0 2569870
+An ambush!	有埋伏！	有埋伏！		FUN_1413625b0 2569916 等：後接下列各句
+Curse all friends of nature!	詛咒所有大自然的朋友！	诅咒所有大自然的朋友！		FUN_1413625b0 2569916、2570103
+Curse them!	詛咒他們！	诅咒他们！		FUN_1413625b0 2569929、2570116、2570145
+Skulking vermin!	鬼鬼祟祟的害蟲！	鬼鬼祟祟的害虫！		FUN_1413625b0 2569943
+Drive them out!	把他們趕出去！	把他们赶出去！		FUN_1413625b0 2570181
+Snatcher!	綁匪！	绑匪！		FUN_1413625b0 2570131：綁架孩童者
+Protect the children!	保護孩子們！	保护孩子们！		FUN_1413625b0 2570131
+The wilds are turning on us!	荒野與我們為敵了！	荒野与我们为敌了！		FUN_1413625b0 2570226
+Curse these lands!	詛咒這片土地！	诅咒这片土地！		FUN_1413625b0 2570226
+Horrors!	恐怖啊！	恐怖啊！		FUN_1413625b0 2570271
+Demons in the deep!	深處有惡魔！	深处有恶魔！		FUN_1413625b0 2570271
+You block the fire.	你擋住了火焰。	你挡住了火焰。		FUN_1413650e0 2571332：冒險者本人
+You block the dragonfire.	你擋住了龍焰。	你挡住了龙焰。		FUN_1413650e0 2571332：冒險者本人
+You block the breath.	你擋住了吐息。	你挡住了吐息。		FUN_1413650e0 2571332：冒險者本人
+You breathe fire!	你噴出火焰！	你喷出火焰！		FUN_1413654c0 2571496、FUN_141366000 2571980：冒險者本人
+You hurl a ball of fire!	你擲出一顆火球！	你掷出一颗火球！		FUN_141365990 2571697：冒險者本人
+You shoot out thick strands of webbing!	你射出粗厚的蛛絲！	你射出粗厚的蛛丝！		FUN_1413664d0 2572171：冒險者本人
+You are blistering!	你被燙得起水泡了！	你被烫得起水泡了！		FUN_14137cad0 2588883：冒險者受熱，輕
+You are burning!	你被灼燒著！	你正被灼烧！		FUN_14137cad0 2588883：受熱，中
+You are being incinerated!	你快被燒成灰了！	你快被烧成灰了！		FUN_14137cad0 2588883：受熱，重
+You are freezing!	你正在受凍！	你正在受冻！		FUN_14137cad0 2588927：受寒，輕
+You are being frozen solid!	你快被凍成冰塊了！	你快被冻成冰块了！		FUN_14137cad0 2588927：受寒，中
+You are freezing to death!	你快凍死了！	你快冻死了！		FUN_14137cad0 2588927：受寒，重
+You are on fire!	你著火了！	你着火了！		FUN_14137cad0 2588973：著火，輕
+You are burning alive!	你正被活活燒著！	你正被活活烧着！		FUN_14137cad0 2588973：著火，中
+You are burning to death!	你快被燒死了！	你快被烧死了！		FUN_14137cad0 2588973：著火，重
+You are melting!	你正在融化！	你正在融化！		FUN_14137cad0 2589009

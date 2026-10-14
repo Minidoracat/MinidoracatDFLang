@@ -1,0 +1,81 @@
+en	zh-Hant	zh-Hans	align	note
+There is nothing to catch in the {@1} ocean.	{1}的海裡沒有魚可釣。	{1}的海里没有鱼可钓。		FUN_1413435b0 2550669：釣魚，地表水域；{1} 方位（northwestern…central）
+There is nothing to catch in the {@1} lake.	{1}的湖裡沒有魚可釣。	{1}的湖里没有鱼可钓。		FUN_1413435b0 2550669：同上
+There is nothing to catch in the {@1} swamps.	{1}的沼澤裡沒有魚可釣。	{1}的沼泽里没有鱼可钓。		FUN_1413435b0 2550669：同上，其他生態區一律 swamps
+There is nothing to catch in the {@1} eerie cavern.	{1}的詭異洞穴裡沒有魚可釣。	{1}的诡异洞穴里没有鱼可钓。		FUN_1413435b0 2550801：釣魚，地底層
+There is nothing to catch in the {@1} cavern.	{1}的洞穴裡沒有魚可釣。	{1}的洞穴里没有鱼可钓。		FUN_1413435b0 2550801：同上
+There is nothing to catch in the {@1} magma sea.	{1}的熔岩海裡沒有魚可釣。	{1}的熔岩海里没有鱼可钓。		FUN_1413435b0 2550801：同上
+There is nothing to catch in {1}.	{1}裡沒有魚可釣。	{1}里没有鱼可钓。		FUN_1413435b0 2550877：{1} 地圖水域的名稱（虛擬函式取得）；須排在上面方位句型之後
+{1} is stricken by melancholy!	{1}陷入了憂鬱！	{1}陷入了忧郁！		FUN_141348a40 2553826：精神崩潰；{1} 人名, 職業
+{1} has gone stark raving mad!	{1}徹底瘋了！	{1}彻底疯了！		FUN_141348a40 2553826：同上
+{1} has gone berserk!	{1}陷入狂暴！	{1}陷入狂暴！		FUN_141348a40 2553826：同上
+{1} has stopped responding to the world...	{1}對外界不再有任何反應……	{1}对外界不再有任何反应……		FUN_141348a40 2553826：同上（緊張症）
+{1} has forgotten a demand.	{1}忘了一項要求。	{1}忘了一项要求。		FUN_14134ac10 2555165：貴族要求
+{1} has a new demand.	{1}提出了新的要求。	{1}提出了新的要求。		FUN_14134ac10 2555606：貴族要求
+{1} has altered the prices of goods.	{1}調整了商品價格。	{1}调整了商品价格。		FUN_14134de20 2557257：貴族
+{1} has imposed a ban on certain exports.	{1}下令禁止某些物品出口。	{1}下令禁止某些物品出口。		FUN_14134de20 2557505：貴族禁令
+{1} has mandated the construction of certain goods.	{1}下令製作某些物品。	{1}下令制作某些物品。		FUN_14134de20 2557505：貴族命令
+{1} is caught in a lava mist!	{1}被捲入熔岩霧中！	{1}被卷入熔岩雾中！		FUN_14134f440 2558748；{1} 生物稱呼（FUN_14132e430）或人名；冒險者本人見 strings
+{1} is caught in dragonfire!	{1}被捲入龍焰中！	{1}被卷入龙焰中！		FUN_14134f440 2558846
+{1} is caught up in the web!	{1}被蛛網纏住了！	{1}被蛛网缠住了！		FUN_14134f440 2558959
+{1} is caught in a cloud of flames!	{1}被捲入一團火焰中！	{1}被卷入一团火焰中！		FUN_14134f440 2559063
+{1} is caught in a burst of steam!	{1}被一股蒸氣噴到！	{1}被一股蒸汽喷到！		FUN_14134f440 2559184
+{1} is caught in a pool of lava!	{1}陷入了熔岩池！	{1}陷入了熔岩池！		FUN_14134f440 2559562
+{1} is caught in a pool of magma!	{1}陷入了熔岩池！	{1}陷入了熔岩池！		FUN_14134f440 2559562
+{1} is caught in a cloud of {%2}!	{1}被捲入一團{2}中！	{1}被卷入一团{2}中！		FUN_14134f440 2558575：{2} 氣體材料名（FUN_1414d1920）；排在上面固定句之後
+You are caught in a cloud of {%1}!	你被捲入一團{1}中！	你被卷入一团{1}中！		FUN_14134f440 2558575：冒險者本人
+You have learned the power "{1}"!	你學會了「{1}」這項能力！	你学会了“{1}”这项能力！		FUN_141352f20 2560664：冒險模式；{1} 能力名稱（raws）
+{1} has transformed into a {%2}!	{1}變成了{2}！	{1}变成了{2}！		FUN_141353940 2561291：變身（狼人等）；{2} 階級名或生物名
+You have transformed into a {%1}!	你變成了{1}！	你变成了{1}！		FUN_141353940 2561291：冒險者本人
+{1} has come!	{1}來了！	{1}来了！		FUN_1413547e0 2561867、FUN_1413625b0 2570446：巨獸／夜行生物到來；後面常接兩個空白與 raws 生物描述（DESCRIPTION），描述沒有譯文時整則照英文
+{1} falls over.	{1}跌倒了。	{1}摔倒了。		FUN_1413547e0 2563856
+{1} regains consciousness.	{1}恢復了意識。	{1}恢复了意识。		FUN_1413547e0 2563922：REGAIN_CONSCIOUSNESS
+{1} is completely free of the web.	{1}完全掙脫了蛛網。	{1}完全挣脱了蛛网。		FUN_1413547e0 2563968
+{1} is partially free of the web.	{1}掙脫了部分蛛網。	{1}挣脱了部分蛛网。		FUN_1413547e0 2564003
+{1} has fully overcome the paralysis.	{1}完全擺脫了癱瘓。	{1}完全摆脱了瘫痪。		FUN_1413547e0 2564047
+{1} looks numb!	{1}看起來麻木了！	{1}看起来麻木了！		FUN_1413547e0 2564069；冒險者本人是 You feel numb!
+{1} is feeling sluggish!	{1}感到行動遲緩！	{1}感到行动迟缓！		FUN_1413547e0 2564089
+{1} has partially overcome the paralysis.	{1}部分擺脫了癱瘓。	{1}部分摆脱了瘫痪。		FUN_1413547e0 2564114
+{1} is partially paralyzed!	{1}局部癱瘓了！	{1}局部瘫痪了！		FUN_1413547e0 2564136
+{1} is completely paralyzed!	{1}完全癱瘓了！	{1}完全瘫痪了！		FUN_1413547e0 2564158
+{1} retches.	{1}一陣乾嘔。	{1}一阵干呕。		FUN_1413547e0 2564211：VOMIT
+{1} vomits.	{1}吐了。	{1}吐了。		FUN_1413547e0 2564311：VOMIT，沒有流體
+{1} vomits into the lava mist.	{1}吐進了熔岩霧裡。	{1}吐进了熔岩雾里。		FUN_1413547e0 2564311
+{1} vomits into the dragonfire.	{1}吐進了龍焰裡。	{1}吐进了龙焰里。		FUN_1413547e0 2564311
+{1} vomits into the flames.	{1}吐進了火焰裡。	{1}吐进了火焰里。		FUN_1413547e0 2564311
+{1} vomits and bits of it get stuck in the web.	{1}吐了，有些嘔吐物黏在蛛網上。	{1}吐了，有些呕吐物粘在蛛网上。		FUN_1413547e0 2564311
+{1} vomits into the ocean wave.	{1}吐進了海浪裡。	{1}吐进了海浪里。		FUN_1413547e0 2564311
+{1} vomits into the sea foam.	{1}吐進了海沫裡。	{1}吐进了海沫里。		FUN_1413547e0 2564311
+{1} vomits into the {%2}.	{1}吐進了{2}裡。	{1}吐进了{2}里。		FUN_1413547e0 2564311：{2} 氣體材料名；排在上面固定句之後
+You vomit into the {%1}.	你吐進了{1}裡。	你吐进了{1}里。		FUN_1413547e0 2564311：冒險者本人
+{1} is no longer stunned.	{1}不再暈眩了。	{1}不再晕眩了。		FUN_1413547e0 2564547：NOT_STUNNED
+{1} collapses and falls to the ground from over-exertion.	{1}因過度勞累而倒在地上。	{1}因过度劳累而倒在地上。		FUN_1413547e0 2564665
+{1} passes out from exhaustion.	{1}因精疲力竭而昏了過去。	{1}因精疲力竭而昏了过去。		FUN_1413547e0 2564702
+{1} gives in to pain.	{1}痛得昏了過去。	{1}痛得昏了过去。		FUN_1413547e0 2564758：PAIN_KO
+{1} has reverted to a wild state!	{1}恢復了野性！	{1}恢复了野性！		FUN_1413547e0 2565458：馴養動物野化
+{1} has forgotten {@2} training!	{1}忘了先前的訓練！	{1}忘了先前的训练！		FUN_1413547e0 2565499：{2} his/her/its
+The {%1} have given a resident {%2} the name {3}.	{1}為居民{2}取名為{3}。	{1}为居民{2}取名为{3}。		FUN_1413547e0 2565638：{1} 文明種族複數，{2} 生物名，{3} 名字
+An animal has grown to become a {%1}.	一隻動物長大成了{1}。	一只动物长大成了{1}。		FUN_1413547e0 2566115：SOMEBODY_GROWS_UP，沒有名字時
+{1} has grown to become a {%2}.	{1}長大成了{2}。	{1}长大成了{2}。		FUN_1413547e0 2566115：有名字的動物
+{1} has left the martial trance.	{1}脫離了戰鬥恍惚狀態。	{1}脱离了战斗恍惚状态。		FUN_1413547e0 2566173：LOSE_EMOTION；{1} 人名, 職業（動物是大寫生物名）
+{1} is no longer enraged.	{1}不再暴怒了。	{1}不再暴怒了。		FUN_1413547e0 2566173：LOSE_EMOTION
+{1} has calmed down.	{1}冷靜下來了。	{1}冷静下来了。		FUN_1413547e0 2566173：LOSE_EMOTION
+{1} has climbed out of depression.	{1}走出了憂鬱。	{1}走出了抑郁。		FUN_1413547e0 2566173：LOSE_EMOTION
+{1} is aware of {@2} surroundings again.	{1}重新察覺到周遭的狀況。	{1}重新意识到周围的情况。		FUN_1413547e0 2566173：LOSE_EMOTION；{2} his/her/its
+{1} has given birth to {%2}.	{1}生下了{2}。	{1}生下了{2}。		FUN_1413547e0 2566535：{2} a girl／a boy／twins…（FUN_1406dd860，條目在 sentences_causes_b）或幼體名
+You shoot {%1} at {%2} from {%3}.	你用{3}向{2}射出{1}。	你用{3}向{2}射出{1}。		FUN_14135f060 2567354：冒險模式射擊；{1}{3} 物品名，{2} 生物名
+You shoot {%1} from {%2}.	你用{2}射出{1}。	你用{2}射出{1}。		FUN_14135f060 2567354：沒有目標
+{1} was spotted sneaking around!  "You will not stand between me and {2}!"	發現{1}在附近鬼鬼祟祟！「你休想擋在我和{2}之間！」	发现{1}在附近鬼鬼祟祟！“你休想挡在我和{2}之间！”		FUN_1413625b0 2569731：小偷；{2} 神器名
+{1} was spotted sneaking around!  "I'll live to fight another day!"	發現{1}在附近鬼鬼祟祟！「留得青山在，改天再來！」	发现{1}在附近鬼鬼祟祟！“留得青山在，改天再来！”		FUN_1413625b0 2569731：小偷逃走
+{1} was spotted sneaking around!	發現{1}在附近鬼鬼祟祟！	发现{1}在附近鬼鬼祟祟！		FUN_1413625b0 2569731；{1} 人名或稱號（FUN_141331500）
+A {%1}!  Drive it away!	{1}！快把牠趕走！	{1}！快把它赶走！		FUN_1413625b0 2570018：{1} 階級名或生物名
+There is a {%1} hidden away here.	有{1}躲在這裡。	有{1}躲在这里。		FUN_1413625b0 2570320：{1} 種族名
+An injured {%1} has sprung from ambush!	受傷的{1}從埋伏處衝了出來！	受伤的{1}从埋伏处冲了出来！		FUN_1413625b0 2570045
+A {%1} has sprung from ambush!	{1}從埋伏處衝了出來！	{1}从埋伏处冲了出来！		FUN_1413625b0 2570063
+{1} blocks the fire.	{1}擋住了火焰。	{1}挡住了火焰。		FUN_1413650e0 2571332
+{1} blocks the dragonfire.	{1}擋住了龍焰。	{1}挡住了龙焰。		FUN_1413650e0 2571332
+{1} blocks the breath.	{1}擋住了吐息。	{1}挡住了吐息。		FUN_1413650e0 2571332
+{1} breathes fire!	{1}噴出火焰！	{1}喷出火焰！		FUN_1413654c0 2571496、FUN_141366000 2571980
+{1} hurls a ball of fire!	{1}擲出一顆火球！	{1}掷出一颗火球！		FUN_141365990 2571697
+{1} shoots out thick strands of webbing!	{1}射出粗厚的蛛絲！	{1}射出粗厚的蛛丝！		FUN_1413664d0 2572171
+{1} has become a {%2}.	{1}成為了{2}。	{1}成为了{2}。		FUN_141373640 2580981、FUN_141374fc0 2582381：{1} 動物名字，{2} 生物名（訓練完成等）

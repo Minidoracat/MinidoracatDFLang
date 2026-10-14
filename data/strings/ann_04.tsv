@@ -1,0 +1,102 @@
+en	zh-Hant	zh-Hans	align	note
+You cannot fell trees in the arena.	你不能在競技場裡砍樹。	你不能在竞技场里砍树。		FUN_14083a8a0 L1179746 冒險：競技場砍樹
+You need to be holding an axe with a sharp edge.	你得拿著有利刃的斧頭。	你得拿着有利刃的斧头。		FUN_14083a8a0 L1179799 冒險：砍樹
+You need to be holding an axe.	你得拿著斧頭。	你得拿着斧头。		FUN_14083a8a0 L1179834 冒險：砍樹
+You cannot fell the trees here.	這裡的樹不能砍。	这里的树不能砍。		FUN_14083a8a0 L1179884 冒險：砍樹
+You make a campfire.	你生了一堆營火。	你生了一堆篝火。		FUN_14083b260 L1180155 冒險：生火
+The steam around the vegetation stops you from setting the fire.	植被周圍的蒸氣讓你點不著火。	植被周围的蒸汽让你点不着火。		FUN_14083b5b0 L1180276 冒險：放火
+The vegetation is submerged.	植被泡在水裡。	植被泡在水里。		FUN_14083b5b0 L1180321 冒險：放火
+You set a fire.	你點了一把火。	你点了一把火。		FUN_14083b5b0 L1180363（整數常數）冒險：放火
+The vegetation is too wet.	植被太濕了。	植被太湿了。		FUN_14083b5b0 L1180428 冒險：放火
+You raise the bucket.	你把水桶拉了上來。	你把水桶拉了上来。		FUN_140843eb0 L1185603 冒險：井
+You lower the bucket.	你把水桶放了下去。	你把水桶放了下去。		FUN_140844120 L1185775 冒險：井
+You pull the lever.	你拉動拉桿。	你拉动拉杆。		FUN_1408444c0 L1185906 冒險
+You break the hatch in!	你破開了活蓋！	你破开了活盖！		FUN_140844740 L1186045 冒險
+You pick the lock!	你撬開了鎖！	你撬开了锁！		FUN_1408449d0 L1186193、FUN_140845080 L1186518 冒險
+The hatch is operated by a remote mechanism.	這個活蓋由遠處的機關操控。	这个活盖由远处的机关操控。		FUN_1408449d0 L1186233 第一句；後接 You cannot proceed.
+The door is operated by a remote mechanism.	這扇門由遠處的機關操控。	这扇门由远处的机关操控。		FUN_140845080 L1186558 第一句；後接 You cannot proceed.
+You cannot proceed.	你無法前進。	你无法前进。		FUN_1408449d0 L1186233、FUN_140845080 L1186558 第二句
+You bash the door down!	你把門撞倒了！	你把门撞倒了！		FUN_140844df0 L1186370 冒險
+You topple the statue!	你推倒了雕像！	你推倒了雕像！		FUN_140845490 L1186717 冒險
+The cackling fades away.	咯咯怪笑聲漸漸遠去了。	咯咯怪笑声渐渐远去了。		FUN_140846830 L1187603 冒險：夜魔
+You are still surrounded by cackling.	咯咯怪笑聲仍然圍繞著你。	咯咯怪笑声仍然围绕着你。		FUN_14085a8b0 L1198843 行動受阻原因（存在 DAT_142640b98 再由呼叫點發出）
+travel	旅行	旅行		FUN_14085a8b0 switch 動作名稱，接在「You can't {@1} ...」等句型裡
+build	建造	建造		FUN_14085a8b0 switch 動作名稱，接在「You can't {@1} ...」等句型裡
+build a fire	生火	生火		FUN_14085a8b0 switch 動作名稱，接在「You can't {@1} ...」等句型裡
+fell trees	砍樹	砍树		FUN_14085a8b0 switch 動作名稱，接在「You can't {@1} ...」等句型裡
+rest	休息	休息		FUN_14085a8b0 switch 動作名稱，接在「You can't {@1} ...」等句型裡
+compose	創作	创作		FUN_14085a8b0 switch 動作名稱，接在「You can't {@1} ...」等句型裡
+write	寫作	写作		FUN_14085a8b0 switch 動作名稱，接在「You can't {@1} ...」等句型裡
+You spray a stream of steaming juice.	你噴出一道冒著熱氣的汁液。	你喷出一道冒着热气的汁液。		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb}.
+You spray a stream of steaming juice!	你噴出一道冒著熱氣的汁液！	你喷出一道冒着热气的汁液！		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb}!
+You spit a glob of molten rock.	你吐出一團熔岩。	你吐出一团熔岩。		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb}.
+You spit a glob of molten rock!	你吐出一團熔岩！	你吐出一团熔岩！		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb}!
+You make a flicking motion.	你彈了一下手指。	你弹了一下手指。		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb}.
+You make a flicking motion!	你彈了一下手指！	你弹了一下手指！		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb}!
+You call upon the night.	你召喚黑夜。	你召唤黑夜。		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb}.
+You call upon the night!	你召喚黑夜！	你召唤黑夜！		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb}!
+You raise a heavy fog.	你喚起一陣濃霧。	你唤起一阵浓雾。		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb}.
+You raise a heavy fog!	你喚起一陣濃霧！	你唤起一阵浓雾！		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb}!
+You wave dismissively.	你不屑地揮了揮手。	你不屑地挥了挥手。		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb}.
+You wave dismissively!	你不屑地揮了揮手！	你不屑地挥了挥手！		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb}!
+You hold up a hand.	你舉起一隻手。	你举起一只手。		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb}.
+You hold up a hand!	你舉起一隻手！	你举起一只手！		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb}!
+You clench a fist.	你握緊拳頭。	你握紧拳头。		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb}.
+You clench a fist!	你握緊拳頭！	你握紧拳头！		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb}!
+You squirt ink.	你噴出墨汁。	你喷出墨汁。		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb}.
+You squirt ink!	你噴出墨汁！	你喷出墨汁！		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb}!
+You head-bump.	你用頭蹭了蹭。	你用头蹭了蹭。		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb}.
+You head-bump!	你用頭蹭了蹭！	你用头蹭了蹭！		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb}!
+You gesture.	你比了個手勢。	你比了个手势。		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb}.
+You gesture!	你比了個手勢！	你比了个手势！		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb}!
+You vanish.	你消失了。	你消失了。		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb}.
+You vanish!	你消失了！	你消失了！		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb}!
+You focus.	你集中精神。	你集中精神。		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb}.
+You focus!	你集中精神！	你集中精神！		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb}!
+You point.	你指了指。	你指了指。		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb}.
+You point!	你指了指！	你指了指！		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb}!
+You spit.	你吐口水。	你吐口水。		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb}.
+You spit!	你吐口水！	你吐口水！		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb}!
+You lick.	你舔了舔。	你舔了舔。		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb}.
+You lick!	你舔了舔！	你舔了舔！		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb}!
+You tusk.	你用長牙頂了頂。	你用长牙顶了顶。		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb}.
+You tusk!	你用長牙頂了頂！	你用长牙顶了顶！		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb}!
+You pet.	你撫摸了一下。	你抚摸了一下。		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb}.；術語例外：pet
+You pet!	你撫摸了一下！	你抚摸了一下！		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb}!；術語例外：pet
+yourself	自己	自己		FUN_140849230 互動目標是自己（You lick yourself.）
+You feel horrible!	你覺得很難受！	你觉得很难受！		FUN_140849230 冒險互動（raws CDI:TARGET_VERB） 第二人稱：目標是玩家
+You feel intense pain!	你感到一陣劇痛！	你感到一阵剧痛！		FUN_140849230 冒險互動（raws CDI:TARGET_VERB） 第二人稱：目標是玩家
+You feel blisters forming!	你感到身上起了水泡！	你感到身上起了水泡！		FUN_140849230 冒險互動（raws CDI:TARGET_VERB） 第二人稱：目標是玩家
+You feel frozen!	你覺得全身僵住了！	你觉得全身僵住了！		FUN_140849230 冒險互動（raws CDI:TARGET_VERB） 第二人稱：目標是玩家
+You feel blood welling up!	你感到鮮血湧了出來！	你感到鲜血涌了出来！		FUN_140849230 冒險互動（raws CDI:TARGET_VERB） 第二人稱：目標是玩家
+You feel sick!	你覺得噁心想吐！	你觉得恶心想吐！		FUN_140849230 冒險互動（raws CDI:TARGET_VERB） 第二人稱：目標是玩家
+You feel death come over you!	你感到死亡籠罩著你！	你感到死亡笼罩着你！		FUN_140849230 冒險互動（raws CDI:TARGET_VERB） 第二人稱：目標是玩家
+You find your sight is fading!	你發現自己的視力正在衰退！	你发现自己的视力正在衰退！		FUN_140849230 冒險互動（raws CDI:TARGET_VERB） 第二人稱：目標是玩家
+You see your sight is fading!	你看見自己的視力正在衰退！	你看见自己的视力正在衰退！		FUN_140849230 冒險互動（raws CDI:TARGET_VERB） 第二人稱：目標是玩家
+You feel breath leaving you!	你感到氣息正離你而去！	你感到气息正离你而去！		FUN_140849230 冒險互動（raws CDI:TARGET_VERB） 第二人稱：目標是玩家
+You feel dizzy!	你覺得頭暈目眩！	你觉得头晕目眩！		FUN_140849230 冒險互動（raws CDI:TARGET_VERB） 第二人稱：目標是玩家
+You shudder and begin to move!	你抖了一下，開始動了起來！	你抖了一下，开始动了起来！		FUN_140849230 冒險互動（raws CDI:TARGET_VERB） 第二人稱：目標是玩家
+You shudder and a spirit rises!	你抖了一下，一個靈體升了起來！	你抖了一下，一个灵体升了起来！		FUN_140849230 冒險互動（raws CDI:TARGET_VERB） 第二人稱：目標是玩家
+You must come out of your shell.	你得先從殼裡出來。	你得先从壳里出来。		FUN_140862600 L1202425、FUN_140863300、FUN_140864b50、FUN_14089bd30：縮進殼裡時（raws RETRACT_INTO_BP 第三段 <pro_pos> 換成 your）
+You have nothing to examine.	你沒有東西可以查看。	你没有东西可以查看。		FUN_140862600 L1202547 冒險：物品選單沒有可選項
+You have nothing left to drop.	你已經沒有東西可以丟下了。	你已经没有东西可以丢下了。		FUN_140862600 L1202582 冒險：物品選單沒有可選項
+You have nothing left to wear.	你已經沒有東西可以穿戴了。	你已经没有东西可以穿戴了。		FUN_140862600 L1202626 冒險：物品選單沒有可選項
+You have nothing left to remove.	你已經沒有東西可以脫下了。	你已经没有东西可以脱下了。		FUN_140862600 L1202663 冒險：物品選單沒有可選項
+You have nothing to put inside a container or on a pack animal.	你沒有東西可以放進容器或放到馱獸身上。	你没有东西可以放进容器或放到驮兽身上。		FUN_140862600 L1202708 冒險：物品選單沒有可選項
+You have nothing left to eat or drink.	你已經沒有東西可以吃喝了。	你已经没有东西可以吃喝了。		FUN_140862600 L1202754 冒險：物品選單沒有可選項
+You have nothing with which to interact.	你沒有可以互動的東西。	你没有可以互动的东西。		FUN_140862600 L1202799 冒險：物品選單沒有可選項
+You have nothing left to throw.	你已經沒有東西可以投擲了。	你已经没有东西可以投掷了。		FUN_140862600 L1202844 冒險：物品選單沒有可選項
+There is nothing to pick up here.	這裡沒有東西可以撿。	这里没有东西可以捡。		FUN_140864b50 L1204016 冒險
+There is nothing to hold here.	這裡沒有東西可以抓住。	这里没有东西可以抓住。		FUN_140864b50 L1204072 冒險：抓住地形
+You cannot climb or mount while prone.	你倒在地上時無法攀爬或騎乘。	你倒在地上时无法攀爬或骑乘。		FUN_140864b50 L1204107 冒險
+There is no furniture, building, or vehicle to interact with here.	這裡沒有可以互動的家具、建築或載具。	这里没有可以互动的家具、建筑或载具。		FUN_140864b50 L1204408 冒險
+You need a free grasp to hold the terrain.	你得空出一隻手才能抓住地形。	你得空出一只手才能抓住地形。		FUN_140865d80 L1204949 冒險：攀爬
+You are too injured to hold the terrain.	你傷得太重，抓不住地形。	你伤得太重，抓不住地形。		FUN_140865d80 L1205078 冒險：攀爬
+You just can't fit any more.	你實在吃不下了。	你实在吃不下了。		FUN_140895fd0 L1233600 冒險：吃喝
+It's too much!	太多了！	太多了！		FUN_140895fd0 L1233658、L1233675 第一句
+You might not be able to keep it down.	你可能會吐出來。	你可能会吐出来。		FUN_140895fd0 L1233658 第二句
+You feel even more sick.	你覺得更不舒服了。	你觉得更不舒服了。		FUN_140895fd0 L1233675 第二句
+You are starting to feel full.	你開始覺得飽了。	你开始觉得饱了。		FUN_140895fd0 L1233727
+You feel really full.	你覺得好撐。	你觉得好撑。		FUN_140895fd0 L1233750
+You have nothing to fire with.	你沒有可以發射的武器。	你没有可以发射的武器。		FUN_14089bd30 L1237340 冒險
+You have nothing left to fire.	你已經沒有可以發射的東西了。	你已经没有可以发射的东西了。		FUN_14089bd30 L1237378 冒險

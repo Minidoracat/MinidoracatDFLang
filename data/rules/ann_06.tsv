@@ -1,0 +1,78 @@
+en	zh-Hant	zh-Hans	align	note
+The world has passed into The {%1}.	世界進入了{1}。	世界进入了{1}。		FUN_140bb8910 1734696 ERA_CHANGE（BOX）；FUN_140bb8e10 在紀元名前加 The；寫在 {%1} Age 能搶先的位置，讓紀元名整條先查
+The world has passed into {%1}.	世界進入了{1}。	世界进入了{1}。		FUN_140bb8910 1734696 ERA_CHANGE：沒有紀元名時 FUN_140bb8e10 直接寫 Unknown Age（不加 The）
+Age of Two {%1}	雙{1}時代	双{1}时代		FUN_140bb7b80 紀元名：兩股勢力同種族；{1} 是大寫複數生物名
+Age of the {%1}	{1}時代	{1}时代		FUN_140bb7b80 紀元名：單一勢力；{1} 是大寫生物名
+Age of {%1} and {%2}	{1}與{2}時代	{1}与{2}时代		FUN_140bb7b80 紀元名：兩股勢力
+Age of {1}	{1}時代	{1}时代		FUN_140bb7b80 紀元名：單一勢力的人物名或複數生物名；固定紀元名在 strings，整句先查
+{%1} Age	{1}時代	{1}时代		FUN_140bb7b80 紀元名：生物名＋ Age
+{1} and the surrounding lands have been made {%2}.	{1}及周邊土地已升格為{2}。	{1}及周边土地已升格为{2}。		FUN_140ac5b30 1573516／1573731 LAND_GAINS_STATUS、LAND_ELEVATED_STATUS；{1} 地點名，{2} 領地名（strings）
+{1} is caught in a burst of {%2}!	{1}被一股{2}噴到！	{1}被一股{2}喷到！		FUN_140abb9a0 1566839；{1} FUN_14132e430 生物稱呼，{2} 材料狀態名（steam 的整句在 ann_08）
+You are caught in a burst of {%1}!	你被一股{1}噴到！	你被一股{1}喷到！		FUN_140abb9a0 1566839 冒險模式
+{1} has created a masterpiece {%2}!	{1}製作了一件傑作：{2}！	{1}制作了一件杰作：{2}！		FUN_140ad0710 1580497 MASTERPIECE_CRAFTED；{1} 歷史人物名，{2} 物品名
+{1} is taken by a fey mood!	{1}陷入了癡迷心境！	{1}陷入了痴迷心境！		FUN_140ad2240 1581709 奇異心境（fey）；{1} 人名, 職業
+{1} withdraws from society...	{1}開始離群索居……	{1}开始离群索居……		FUN_140ad2240 1581716 奇異心境（secretive）
+{1} has been possessed!	{1}被附身了！	{1}被附身了！		FUN_140ad2240 1581723 奇異心境（possessed）
+{1} looses a roaring laughter, fell and terrible!	{1}爆出一陣凶邪可怖的狂笑！	{1}爆出一阵凶邪可怖的狂笑！		FUN_140ad2240 1581732 奇異心境（fell）
+{1} begins to stalk and brood...	{1}開始四處遊走、陰沉地沉思……	{1}开始四处游走、阴沉地沉思……		FUN_140ad2240 1581738 奇異心境（macabre）
+You maintain possession of the {%1}.	你仍握著{1}。	你仍握着{1}。		FUN_140c88f50 1870320 冒險模式；{1} 物品名
+You gain possession of the {%1}.	你取得了{1}。	你取得了{1}。		FUN_140c88f50 1870320 冒險模式
+You've lost possession of the {%1}.	你失去了{1}。	你失去了{1}。		FUN_140c88f50 1870320 冒險模式
+The {%1} remains stuck in your {%2}.	{1}仍卡在你的{2}裡。	{1}仍卡在你的{2}里。		FUN_140c88f50 1870320 冒險模式；{2} 身體部位
+The {%1} is torn from your {%2}.	{1}從你的{2}上被扯了下來。	{1}从你的{2}上被扯了下来。		FUN_140c88f50 1870320 冒險模式；{2} 身體部位
+The {%1} remains stuck in {2}'s {%3}.	{1}仍卡在{2}的{3}裡。	{1}仍卡在{2}的{3}里。		FUN_140c88f50 1870320；{2} 生物稱呼，{3} 身體部位
+{1} maintains possession of the {%2}.	{1}仍握著{2}。	{1}仍握着{2}。		FUN_140c88f50 1870320；{1} 生物稱呼
+{1} gains possession of the {%2}.	{1}取得了{2}。	{1}取得了{2}。		FUN_140c88f50 1870320；{1} 生物稱呼
+{1} looks less pained.	{1}看起來沒那麼痛了。	{1}看起来没那么痛了。		FUN_140d79ce0 2015583；{1} 生物稱呼
+{1} has less swelling.	{1}的腫脹消了一些。	{1}的肿胀消了一些。		FUN_140d7a2f0 2015858
+{1} are no longer infected.	{1}的感染已經消除。	{1}的感染已经消除。		FUN_140d7a680 2016037；遊戲把 is/are 接反，照抄
+{1} recovers from nerve damage.	{1}的神經損傷復原了。	{1}的神经损伤恢复了。		FUN_140d7abd0 2016293
+{1} has less bleeding.	{1}的出血減少了。	{1}的出血减少了。		FUN_140d7af40 2016478
+{1} has fewer wounds.	{1}的傷口減少了。	{1}的伤口减少了。		FUN_140d7be90 2017220
+{1} has fewer damaged tissues.	{1}受損的組織減少了。	{1}受损的组织减少了。		FUN_140d7c330 2017510
+Your {%1}'s {%2} and geldables regrow!	你的{1}{2}和生殖器再生了！	你的{1}{2}和生殖器再生了！		FUN_140d7c8e0 2018057 冒險模式；部位有多層時「部位's 組織」
+Your {%1}'s {%2} regrows!	你的{1}{2}再生了！	你的{1}{2}再生了！		FUN_140d7c8e0 冒險模式；部位's 組織
+Your {%1} and geldables regrow!	你的{1}和生殖器再生了！	你的{1}和生殖器再生了！		FUN_140d7c8e0 冒險模式
+Your {%1} and more regrow!	你的{1}等部位再生了！	你的{1}等部位再生了！		FUN_140d7c8e0 冒險模式
+Your {%1} regrows!	你的{1}再生了！	你的{1}再生了！		FUN_140d7c8e0 冒險模式；{1} 身體部位
+{1}'s body parts regrow!	{1}的身體部位再生了！	{1}的身体部位再生了！		FUN_140d7c8e0 2018057；{1} 生物稱呼
+{1}'s tissues regrow!	{1}的組織再生了！	{1}的组织再生了！		FUN_140d7c8e0
+{1}'s geldables regrow!	{1}的生殖器再生了！	{1}的生殖器再生了！		FUN_140d7c8e0；geldables 是可閹割的部位
+{1}'s {%2}'s {%3} and geldables regrow!	{1}的{2}{3}和生殖器再生了！	{1}的{2}{3}和生殖器再生了！		FUN_140d7c8e0；部位有多層時「部位's 組織」
+{1}'s {%2}'s {%3} regrows!	{1}的{2}{3}再生了！	{1}的{2}{3}再生了！		FUN_140d7c8e0；部位's 組織
+{1}'s {%2} and geldables regrow!	{1}的{2}和生殖器再生了！	{1}的{2}和生殖器再生了！		FUN_140d7c8e0
+{1}'s {%2} and more regrow!	{1}的{2}等部位再生了！	{1}的{2}等部位再生了！		FUN_140d7c8e0
+{1}'s {%2} regrows!	{1}的{2}再生了！	{1}的{2}再生了！		FUN_140d7c8e0；{2} 身體部位
+{1} looks less sluggish.	{1}看起來沒那麼遲緩了。	{1}看起来没那么迟缓了。		FUN_140d7dba0 2018552
+{1} looks less feverish.	{1}看起來燒退了一些。	{1}看起来烧退了一些。		FUN_140d7e1b0 2018979
+{1} coughs up blood.	{1}咳出了血。	{1}咳出了血。		FUN_140d7e7d0 2019273
+{1} vomit blood.	{1}吐血了。	{1}吐血了。		FUN_140d7ece0 2019498；遊戲動詞沒加 s，照抄
+{1} looks less nauseated.	{1}看起來沒那麼噁心了。	{1}看起来没那么恶心了。		FUN_140d7f1d0 2019740
+{1} looks less dizzy.	{1}看起來沒那麼暈了。	{1}看起来没那么晕了。		FUN_140d7fe50 2020387
+{1} has become entangled in a hidden web!	{1}被暗藏的蛛網纏住了！	{1}被暗藏的蛛网缠住了！		FUN_140da8080 2047095；{1} 人名, 職業
+Your mason has defaced a {1}!	你的石匠毀損了{1}！	你的石匠毁损了{1}！		FUN_140dac290 2049617 ARTWORK_DEFACED；{1} FUN_140a94030 名稱（雕刻相關的歷史事件對象）
+Your engraver has carved a track through a {1}!	你的雕刻師在{1}上鑿出了軌道！	你的雕刻师在{1}上凿出了轨道！		FUN_140dac290 2055210 ARTWORK_DEFACED；{1} 同上
+{1} has claimed a {%2}.	{1}佔據了一座{2}。	{1}占据了一座{2}。		FUN_140dac290 2053377 奇異心境佔據工坊；{1} 歷史人物名，{2} 建築名
+{@1}'s Workshop	{1}工坊	{1}工坊		建築名（FUN_140dac290 2053366 vfunc 0x188）：職業名＋'s Workshop（Craftsdwarf's Workshop 工匠工坊）
+{@1}'s Forge	{1}鍛爐	{1}锻炉		建築名：Metalsmith's Forge
+{@1}'s Shop	{1}工坊	{1}工坊		建築名：Clothier's Shop
+{1} has begun a mysterious construction!	{1}開始了一項神祕的建造！	{1}开始了一项神秘的建造！		FUN_140dac290 2053458；{1} 歷史人物名
+{1} pushes past you, interrupting your action.	{1}從你身旁擠過，打斷了你的動作。	{1}从你身旁挤过，打断了你的动作。		FUN_140db7100 2056174 冒險模式；{1} 生物稱呼
+{1} has dyed a masterpiece!	{1}染出了一件傑作！	{1}染出了一件杰作！		FUN_140dbc020／FUN_140dbce30／FUN_140dbdff0 DYED_MASTERPIECE；{1} 歷史人物名
+{1} has cooked a masterpiece!	{1}烹調出了一道傑作！	{1}烹调出了一道杰作！		FUN_140dc0b00 2061970 COOKED_MASTERPIECE
+You have been cursed to assume the form of a {%1}-like monster every fool moon!	你遭到詛咒，每逢滿月就會化為形似{1}的怪物！	你遭到诅咒，每逢满月就会化为形似{1}的怪物！		FUN_140dcc6a0 2069161 冒險模式；creatures.lua 狼人類詛咒（遊戲原文 fool moon 是 full moon 的筆誤）
+{1} has been cursed with a week's bad luck!	{1}遭到詛咒，要倒楣一週！	{1}遭到诅咒，要倒霉一周！		FUN_140dcc6a0 2069065／2069161；curse.lua IS_TRIGGER_STRING
+{1} has been cursed, for one week, to know life as a beast!	{1}遭到詛咒，要化為野獸過上一週！	{1}遭到诅咒，要化为野兽过上一周！		FUN_140dcc6a0；curse.lua
+{1} has been cursed to prowl the night in search of blood!	{1}遭到詛咒，從此要在夜裡遊蕩、尋找鮮血！	{1}遭到诅咒，从此要在夜里游荡、寻找鲜血！		FUN_140dcc6a0；curse.lua 吸血鬼
+{1} has been cursed to assume the form of a {%2}-like monster every fool moon!	{1}遭到詛咒，每逢滿月就會化為形似{2}的怪物！	{1}遭到诅咒，每逢满月就会化为形似{2}的怪物！		FUN_140dcc6a0；creatures.lua 狼人類詛咒（fool moon 照抄遊戲筆誤）
+{1} has been cursed by {2}!	{1}遭到{2}的詛咒！	{1}遭到{2}的诅咒！		FUN_140dcc6a0 2069065／2069161 DEITY_CURSE；{1} 人名(, 職業)，{2} 神祇名
+You chop down the {%1}.	你砍倒了{1}。	你砍倒了{1}。		FUN_140dcdbf0 2069693 冒險模式；{1} 樹種名
+{%1} toppled by {2}.	{1}被{2}推倒了。	{1}被{2}推倒了。		FUN_140dce2b0 2070267；{1} 建築名，{2} 人名, 職業
+{%1} destroyed by {2}.	{1}被{2}摧毀了。	{1}被{2}摧毁了。		FUN_140dce2b0 2070267
+{%1} toppled.	{1}倒塌了。	{1}倒塌了。		FUN_140dce2b0 2070267：破壞者不顯示時
+{%1} destroyed.	{1}被摧毀了。	{1}被摧毁了。		FUN_140dce2b0 2070267：破壞者不顯示時
+{1} has been missing for a week.	{1}已經失蹤一週了。	{1}已经失踪一周了。		FUN_140e39910 2132684 CITIZEN_MISSING／PET_MISSING；{1} 人名, 職業，沒有歷史人物時是 The ＋稱呼
+{1} is satisfied with their position here. Congratulations!  (You should be proud of your accomplishment.  Embark in a world with the deepest cavern layers for further challenges.)	{1}對自己在這裡的地位感到滿意。恭喜！（你應該為自己的成就感到驕傲。想要更多挑戰，可以到洞穴層最深的世界出發。）	{1}对自己在这里的地位感到满意。恭喜！（你应该为自己的成就感到骄傲。想要更多挑战，可以到洞穴层最深的世界出发。）		FUN_140e39910 2133479 SATISFIED_MONARCH（BOX）；{1} 君主名
+{1} is satisfied with their position here. Everything is properly royal, properly furnished.  And yet? A true Mountainhome must have a true throne! And a true ruler requires seven symbols, symbols not of this world. Mere steel will not suffice. Deeper. We must dig deeper.	{1}對自己在這裡的地位感到滿意。一切都有王家氣派，陳設也恰如其分。然而呢？真正的山之家必須有真正的王座！真正的統治者需要七件象徵物，而且是不屬於這個世界的象徵物。區區鋼鐵是不夠的。往深處去。我們必須挖得更深。	{1}对自己在这里的地位感到满意。一切都有王家气派，陈设也恰如其分。然而呢？真正的山之家必须有真正的王座！真正的统治者需要七件象征物，而且是不属于这个世界的象征物。区区钢铁是不够的。往深处去。我们必须挖得更深。		FUN_140e39910 2133479 SATISFIED_MONARCH（BOX）：世界有更深的洞穴層、還沒挖到
+{1} is satisfied with their position here. Everything is properly royal, properly furnished.  And yet? A true Mountainhome must have a true throne! And a true ruler requires seven symbols, symbols not of this world. Mere steel will not suffice. This legend does not end until we've chipped out the last treasures of the underworld!	{1}對自己在這裡的地位感到滿意。一切都有王家氣派，陳設也恰如其分。然而呢？真正的山之家必須有真正的王座！真正的統治者需要七件象徵物，而且是不屬於這個世界的象徵物。區區鋼鐵是不夠的。在我們鑿出地底世界最後的寶藏之前，這段傳奇不會結束！	{1}对自己在这里的地位感到满意。一切都有王家气派，陈设也恰如其分。然而呢？真正的山之家必须有真正的王座！真正的统治者需要七件象征物，而且是不属于这个世界的象征物。区区钢铁是不够的。在我们凿出地底世界最后的宝藏之前，这段传奇不会结束！		FUN_140e39910 2133479 SATISFIED_MONARCH（BOX）：已挖到地底
+{1} has ended a mandate.	{1}結束了一項命令。	{1}结束了一项命令。		FUN_140e39910 2133840 MANDATE_ENDS；{1} 人名, 職業

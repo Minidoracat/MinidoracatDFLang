@@ -1,0 +1,9 @@
+en	zh-Hant	zh-Hans	align	note
+You have become enraged!	你暴怒了！	你暴怒了！		FUN_1414e8470:2852898、FUN_1414ee3d0:2854626、FUN_1414ef770:2855590；冒險模式玩家本人暴怒
+You flounder in the water!	你在水裡掙扎！	你在水里挣扎！		FUN_1415059c0:2867953–2867973；冒險模式玩家落水
+You flounder in the lava!	你在熔岩裡掙扎！	你在熔岩里挣扎！		同上；lava 與 magma 分開（magma 熔岩）
+You flounder in the magma!	你在熔岩裡掙扎！	你在熔岩里挣扎！		同上
+You stand up.	你站了起來。	你站了起来。		FUN_1415059c0:2868629 case 0xd
+You lie on the ground.	你躺到地上。	你躺到地上。		FUN_1415059c0:2868687 case 0xe
+You fail to dismount in time.	你沒來得及下坐騎。	你没来得及下坐骑。		FUN_1415059c0:2869444 case 0x15
+You dismount.	你下了坐騎。	你下了坐骑。		FUN_1415059c0:2869507 case 0x15

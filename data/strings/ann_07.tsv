@@ -1,0 +1,187 @@
+en	zh-Hant	zh-Hans	align	note
+Your status as a minor land has attracted a bit more trade than usual.	你的領地已是小型屬地，吸引到的貿易比平常多一些。	你的领地已是小型属地，吸引到的贸易比平常多一些。		FUN_140e42d20 2137771；商隊抵達 CARAVAN_ARRIVAL 第二句起
+Your status as a middling land has attracted more trade than usual.	你的領地已是中型屬地，吸引到的貿易比平常多。	你的领地已是中型属地，吸引到的贸易比平常多。		FUN_140e42d20 2137771；商隊抵達 CARAVAN_ARRIVAL 第二句起
+Your status as a major land has attracted much more trade than usual.	你的領地已是大型屬地，吸引到的貿易比平常多得多。	你的领地已是大型属地，吸引到的贸易比平常多得多。		FUN_140e42d20 2137771；商隊抵達 CARAVAN_ARRIVAL 第二句起
+The presence of your ruler has attracted great riches.	君主坐鎮於此，吸引了大量財富。	君主坐镇于此，吸引了大量财富。		FUN_140e42d20 2137787；商隊抵達，君主在要塞
+Trade relations remain strengthened by recent negotiations.	近期的談判讓貿易關係依然穩固。	近期的谈判让贸易关系依然稳固。		FUN_140e42d20 2137790；商隊抵達
+Overall trade sentiments are good.	整體貿易氣氛良好。	整体贸易气氛良好。		FUN_140e42d20 2137802-2137847；商隊抵達的貿易氣氛（由好到壞）
+Overall trade sentiments are very good.	整體貿易氣氛非常良好。	整体贸易气氛非常良好。		FUN_140e42d20 2137802-2137847；商隊抵達的貿易氣氛（由好到壞）
+Overall trade sentiments are great.	整體貿易氣氛極佳。	整体贸易气氛极佳。		FUN_140e42d20 2137802-2137847；商隊抵達的貿易氣氛（由好到壞）
+Overall trade sentiments are fantastic.	整體貿易氣氛好到不能再好。	整体贸易气氛好到不能再好。		FUN_140e42d20 2137802-2137847；商隊抵達的貿易氣氛（由好到壞）
+Overall trade sentiments are cautious.	整體貿易氣氛偏向謹慎。	整体贸易气氛偏向谨慎。		FUN_140e42d20 2137802-2137847；商隊抵達的貿易氣氛（由好到壞）
+Overall trade sentiments are lukewarm.	整體貿易氣氛冷淡。	整体贸易气氛冷淡。		FUN_140e42d20 2137802-2137847；商隊抵達的貿易氣氛（由好到壞）
+Overall trade sentiments are tenuous at best.	整體貿易氣氛充其量只能說十分薄弱。	整体贸易气氛充其量只能说十分薄弱。		FUN_140e42d20 2137802-2137847；商隊抵達的貿易氣氛（由好到壞）
+Overall trade sentiments are terrible.	整體貿易氣氛糟透了。	整体贸易气氛糟透了。		FUN_140e42d20 2137802-2137847；商隊抵達的貿易氣氛（由好到壞）
+However, overall trade sentiments are cautious.	不過，整體貿易氣氛偏向謹慎。	不过，整体贸易气氛偏向谨慎。		FUN_140e42d20 2137822；前句有利多（地位、君主、談判）時接 However
+However, overall trade sentiments are lukewarm.	不過，整體貿易氣氛冷淡。	不过，整体贸易气氛冷淡。		FUN_140e42d20 2137822；前句有利多（地位、君主、談判）時接 However
+However, overall trade sentiments are tenuous at best.	不過，整體貿易氣氛充其量只能說十分薄弱。	不过，整体贸易气氛充其量只能说十分薄弱。		FUN_140e42d20 2137822；前句有利多（地位、君主、談判）時接 However
+However, overall trade sentiments are terrible.	不過，整體貿易氣氛糟透了。	不过，整体贸易气氛糟透了。		FUN_140e42d20 2137822；前句有利多（地位、君主、談判）時接 However
+Their wagons have bypassed your inaccessible site.	他們的篷車無法抵達你的據點，只好繞道而過。	他们的篷车无法抵达你的据点，只好绕道而过。		FUN_140e42d20 2137921；MERCHANT_WAGONS_BYPASSED
+Your ruler has arrived, dressed as a peasant!	你的君主抵達了，還打扮成平民的模樣！	你的君主抵达了，还打扮成平民的模样！		FUN_140e46c20 2139725；君主隱藏身分前來
+Your ruler has arrived with a full entourage.  Your thriving site is now the capital, and with continued fortune and toil, the legend of a true Mountainhome may yet be written.	你的君主帶著全套隨從抵達了。你繁榮的據點如今成了首都，只要好運與辛勞持續下去，真正的山之家傳奇或許終將寫成。	你的君主带着全套随从抵达了。你繁荣的据点如今成了首都，只要好运与辛劳持续下去，真正的山之家传奇或许终将写成。		FUN_140e4a320 2142429；君主遷入、要塞成為首都；整則一條（第二句接續第一句）
+No one even considered making the journey to such a miserable hellhole this season.	這一季，根本沒有人考慮過要遠道前來這種悲慘的人間地獄。	这一季，根本没有人考虑过要远道前来这种悲惨的人间地狱。		FUN_140e46c20 2140248-2140404；移民沒來（D_NO_MIGRANT_ARRIVAL／DISCOURAGED）；Others／No one else 是已有部分移民時
+Migrants refused to journey to this unhappy fortress this season.	這一季，移民拒絕前往這座不快樂的要塞。	这一季，移民拒绝前往这座不快乐的要塞。		FUN_140e46c20 2140248-2140404；移民沒來（D_NO_MIGRANT_ARRIVAL／DISCOURAGED）；Others／No one else 是已有部分移民時
+Migrants were too wary to make the journey this season.	這一季，移民心存戒備，不敢啟程前來。	这一季，移民心存戒备，不敢启程前来。		FUN_140e46c20 2140248-2140404；移民沒來（D_NO_MIGRANT_ARRIVAL／DISCOURAGED）；Others／No one else 是已有部分移民時
+No one else even considered making the journey to this miserable hellhole.	再也沒有別人考慮過要遠道前來這個悲慘的人間地獄。	再也没有别人考虑过要远道前来这个悲惨的人间地狱。		FUN_140e46c20 2140248-2140404；移民沒來（D_NO_MIGRANT_ARRIVAL／DISCOURAGED）；Others／No one else 是已有部分移民時
+Others refused to journey to this unhappy fortress.	其他人拒絕前往這座不快樂的要塞。	其他人拒绝前往这座不快乐的要塞。		FUN_140e46c20 2140248-2140404；移民沒來（D_NO_MIGRANT_ARRIVAL／DISCOURAGED）；Others／No one else 是已有部分移民時
+Others were too wary to make the journey.	其他人心存戒備，不敢啟程前來。	其他人心存戒备，不敢启程前来。		FUN_140e46c20 2140248-2140404；移民沒來（D_NO_MIGRANT_ARRIVAL／DISCOURAGED）；Others／No one else 是已有部分移民時
+The fortress attracted no migrants this season.	這一季，要塞沒有吸引到任何移民。	这一季，要塞没有吸引到任何移民。		FUN_140e46c20 2140248-2140404；移民沒來（D_NO_MIGRANT_ARRIVAL／DISCOURAGED）；Others／No one else 是已有部分移民時
+Migrants refused to journey to such a dangerous fortress this season.	這一季，移民拒絕前往如此危險的要塞。	这一季，移民拒绝前往如此危险的要塞。		FUN_140e46c20 2140248-2140404；移民沒來（D_NO_MIGRANT_ARRIVAL／DISCOURAGED）；Others／No one else 是已有部分移民時
+Migrants were too nervous to make the journey this season.	這一季，移民太過緊張，不敢啟程前來。	这一季，移民太过紧张，不敢启程前来。		FUN_140e46c20 2140248-2140404；移民沒來（D_NO_MIGRANT_ARRIVAL／DISCOURAGED）；Others／No one else 是已有部分移民時
+No one even considered making the journey to such a cursed death-trap this season.	這一季，根本沒有人考慮過要遠道前來這種受詛咒的死亡陷阱。	这一季，根本没有人考虑过要远道前来这种受诅咒的死亡陷阱。		FUN_140e46c20 2140248-2140404；移民沒來（D_NO_MIGRANT_ARRIVAL／DISCOURAGED）；Others／No one else 是已有部分移民時
+Others were too nervous to make the journey.	其他人太過緊張，不敢啟程前來。	其他人太过紧张，不敢启程前来。		FUN_140e46c20 2140248-2140404；移民沒來（D_NO_MIGRANT_ARRIVAL／DISCOURAGED）；Others／No one else 是已有部分移民時
+Others refused to journey to this dangerous fortress.	其他人拒絕前往這座危險的要塞。	其他人拒绝前往这座危险的要塞。		FUN_140e46c20 2140248-2140404；移民沒來（D_NO_MIGRANT_ARRIVAL／DISCOURAGED）；Others／No one else 是已有部分移民時
+No one else even considered making the journey to this cursed death-trap.	再也沒有別人考慮過要遠道前來這個受詛咒的死亡陷阱。	再也没有别人考虑过要远道前来这个受诅咒的死亡陷阱。		FUN_140e46c20 2140248-2140404；移民沒來（D_NO_MIGRANT_ARRIVAL／DISCOURAGED）；Others／No one else 是已有部分移民時
+Migrants were too nervous to make the journey this season to this miserable fortress.	這一季，移民太過緊張，不敢啟程前往這座悲慘的要塞。	这一季，移民太过紧张，不敢启程前往这座悲惨的要塞。		FUN_140e46c20 2140248-2140404；移民沒來（D_NO_MIGRANT_ARRIVAL／DISCOURAGED）；Others／No one else 是已有部分移民時
+Migrants refused to journey to such a dangerous and miserable fortress this season.	這一季，移民拒絕前往如此危險又悲慘的要塞。	这一季，移民拒绝前往如此危险又悲惨的要塞。		FUN_140e46c20 2140248-2140404；移民沒來（D_NO_MIGRANT_ARRIVAL／DISCOURAGED）；Others／No one else 是已有部分移民時
+No one even considered making the journey to such a cursed miserable death-trap this season.	這一季，根本沒有人考慮過要遠道前來這種受詛咒又悲慘的死亡陷阱。	这一季，根本没有人考虑过要远道前来这种受诅咒又悲惨的死亡陷阱。		FUN_140e46c20 2140248-2140404；移民沒來（D_NO_MIGRANT_ARRIVAL／DISCOURAGED）；Others／No one else 是已有部分移民時
+Migrants were too nervous to make the journey this season to this unhappy fortress.	這一季，移民太過緊張，不敢啟程前往這座不快樂的要塞。	这一季，移民太过紧张，不敢启程前往这座不快乐的要塞。		FUN_140e46c20 2140248-2140404；移民沒來（D_NO_MIGRANT_ARRIVAL／DISCOURAGED）；Others／No one else 是已有部分移民時
+Migrants refused to journey to such a dangerous and unhappy fortress this season.	這一季，移民拒絕前往如此危險又不快樂的要塞。	这一季，移民拒绝前往如此危险又不快乐的要塞。		FUN_140e46c20 2140248-2140404；移民沒來（D_NO_MIGRANT_ARRIVAL／DISCOURAGED）；Others／No one else 是已有部分移民時
+No one even considered making the journey to such a cursed unhappy death-trap this season.	這一季，根本沒有人考慮過要遠道前來這種受詛咒又不快樂的死亡陷阱。	这一季，根本没有人考虑过要远道前来这种受诅咒又不快乐的死亡陷阱。		FUN_140e46c20 2140248-2140404；移民沒來（D_NO_MIGRANT_ARRIVAL／DISCOURAGED）；Others／No one else 是已有部分移民時
+Others were too nervous to make the journey to this miserable fortress.	其他人太過緊張，不敢啟程前往這座悲慘的要塞。	其他人太过紧张，不敢启程前往这座悲惨的要塞。		FUN_140e46c20 2140248-2140404；移民沒來（D_NO_MIGRANT_ARRIVAL／DISCOURAGED）；Others／No one else 是已有部分移民時
+Others refused to journey to this dangerous and miserable fortress.	其他人拒絕前往這座危險又悲慘的要塞。	其他人拒绝前往这座危险又悲惨的要塞。		FUN_140e46c20 2140248-2140404；移民沒來（D_NO_MIGRANT_ARRIVAL／DISCOURAGED）；Others／No one else 是已有部分移民時
+No one else even considered making the journey to this cursed miserable death-trap.	再也沒有別人考慮過要遠道前來這個受詛咒又悲慘的死亡陷阱。	再也没有别人考虑过要远道前来这个受诅咒又悲惨的死亡陷阱。		FUN_140e46c20 2140248-2140404；移民沒來（D_NO_MIGRANT_ARRIVAL／DISCOURAGED）；Others／No one else 是已有部分移民時
+Others were too nervous to make the journey to this unhappy fortress.	其他人太過緊張，不敢啟程前往這座不快樂的要塞。	其他人太过紧张，不敢启程前往这座不快乐的要塞。		FUN_140e46c20 2140248-2140404；移民沒來（D_NO_MIGRANT_ARRIVAL／DISCOURAGED）；Others／No one else 是已有部分移民時
+Others refused to journey to this dangerous and unhappy fortress.	其他人拒絕前往這座危險又不快樂的要塞。	其他人拒绝前往这座危险又不快乐的要塞。		FUN_140e46c20 2140248-2140404；移民沒來（D_NO_MIGRANT_ARRIVAL／DISCOURAGED）；Others／No one else 是已有部分移民時
+No one else even considered making the journey to this cursed unhappy death-trap.	再也沒有別人考慮過要遠道前來這個受詛咒又不快樂的死亡陷阱。	再也没有别人考虑过要远道前来这个受诅咒又不快乐的死亡陷阱。		FUN_140e46c20 2140248-2140404；移民沒來（D_NO_MIGRANT_ARRIVAL／DISCOURAGED）；Others／No one else 是已有部分移民時
+Some migrants have arrived at this miserable place.	一批移民抵達了這個悲慘的地方。	一批移民抵达了这个悲惨的地方。		FUN_140e46c20 2141550-2141634；移民抵達（D_MIGRANTS_ARRIVAL／D_MIGRANT_ARRIVAL）
+Some migrants have arrived at this miserable place, despite the danger.	儘管危險，一批移民還是抵達了這個悲慘的地方。	尽管危险，一批移民还是抵达了这个悲惨的地方。		FUN_140e46c20 2141550-2141634；移民抵達（D_MIGRANTS_ARRIVAL／D_MIGRANT_ARRIVAL）
+Some migrants have decided to brave this terrifying place, knowing it may be their miserable tomb.	一批移民決定冒險前來這個可怕的地方，明知這裡可能成為他們悲慘的墳墓。	一批移民决定冒险前来这个可怕的地方，明知这里可能成为他们悲惨的坟墓。		FUN_140e46c20 2141550-2141634；移民抵達（D_MIGRANTS_ARRIVAL／D_MIGRANT_ARRIVAL）
+Some migrants have arrived at this unhappy place.	一批移民抵達了這個不快樂的地方。	一批移民抵达了这个不快乐的地方。		FUN_140e46c20 2141550-2141634；移民抵達（D_MIGRANTS_ARRIVAL／D_MIGRANT_ARRIVAL）
+Some migrants have arrived at this unhappy place, despite the danger.	儘管危險，一批移民還是抵達了這個不快樂的地方。	尽管危险，一批移民还是抵达了这个不快乐的地方。		FUN_140e46c20 2141550-2141634；移民抵達（D_MIGRANTS_ARRIVAL／D_MIGRANT_ARRIVAL）
+Some migrants have decided to brave this terrifying unhappy place, knowing it may be their tomb.	一批移民決定冒險前來這個可怕又不快樂的地方，明知這裡可能成為他們的墳墓。	一批移民决定冒险前来这个可怕又不快乐的地方，明知这里可能成为他们的坟墓。		FUN_140e46c20 2141550-2141634；移民抵達（D_MIGRANTS_ARRIVAL／D_MIGRANT_ARRIVAL）
+Some migrants have arrived, despite the danger.	儘管危險，一批移民還是抵達了。	尽管危险，一批移民还是抵达了。		FUN_140e46c20 2141550-2141634；移民抵達（D_MIGRANTS_ARRIVAL／D_MIGRANT_ARRIVAL）
+Some migrants have arrived.	一批移民抵達了。	一批移民抵达了。		FUN_140e46c20 2141550-2141634；移民抵達（D_MIGRANTS_ARRIVAL／D_MIGRANT_ARRIVAL）
+Some migrants have decided to brave this terrifying place, knowing it may be their tomb.	一批移民決定冒險前來這個可怕的地方，明知這裡可能成為他們的墳墓。	一批移民决定冒险前来这个可怕的地方，明知这里可能成为他们的坟墓。		FUN_140e46c20 2141550-2141634；移民抵達（D_MIGRANTS_ARRIVAL／D_MIGRANT_ARRIVAL）
+A migrant has arrived at this miserable place.	一名移民抵達了這個悲慘的地方。	一名移民抵达了这个悲惨的地方。		FUN_140e46c20 2141550-2141634；移民抵達（D_MIGRANTS_ARRIVAL／D_MIGRANT_ARRIVAL）
+A migrant has arrived at this miserable place, despite the danger.	儘管危險，一名移民還是抵達了這個悲慘的地方。	尽管危险，一名移民还是抵达了这个悲惨的地方。		FUN_140e46c20 2141550-2141634；移民抵達（D_MIGRANTS_ARRIVAL／D_MIGRANT_ARRIVAL）
+A migrant has decided to brave this terrifying miserable place.	一名移民決定冒險前來這個可怕又悲慘的地方。	一名移民决定冒险前来这个可怕又悲惨的地方。		FUN_140e46c20 2141550-2141634；移民抵達（D_MIGRANTS_ARRIVAL／D_MIGRANT_ARRIVAL）
+A migrant has arrived at this unhappy place.	一名移民抵達了這個不快樂的地方。	一名移民抵达了这个不快乐的地方。		FUN_140e46c20 2141550-2141634；移民抵達（D_MIGRANTS_ARRIVAL／D_MIGRANT_ARRIVAL）
+A migrant has arrived at this unhappy place, despite the danger.	儘管危險，一名移民還是抵達了這個不快樂的地方。	尽管危险，一名移民还是抵达了这个不快乐的地方。		FUN_140e46c20 2141550-2141634；移民抵達（D_MIGRANTS_ARRIVAL／D_MIGRANT_ARRIVAL）
+A migrant has decided to brave this terrifying unhappy place.	一名移民決定冒險前來這個可怕又不快樂的地方。	一名移民决定冒险前来这个可怕又不快乐的地方。		FUN_140e46c20 2141550-2141634；移民抵達（D_MIGRANTS_ARRIVAL／D_MIGRANT_ARRIVAL）
+A migrant has arrived, despite the danger.	儘管危險，一名移民還是抵達了。	尽管危险，一名移民还是抵达了。		FUN_140e46c20 2141550-2141634；移民抵達（D_MIGRANTS_ARRIVAL／D_MIGRANT_ARRIVAL）
+A migrant has arrived.	一名移民抵達了。	一名移民抵达了。		FUN_140e46c20 2141550-2141634；移民抵達（D_MIGRANTS_ARRIVAL／D_MIGRANT_ARRIVAL）
+A migrant has decided to brave this terrifying place.	一名移民決定冒險前來這個可怕的地方。	一名移民决定冒险前来这个可怕的地方。		FUN_140e46c20 2141550-2141634；移民抵達（D_MIGRANTS_ARRIVAL／D_MIGRANT_ARRIVAL）
+Cannot reach site	無法抵達地點	无法到达地点		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Need empty bucket	需要空水桶	需要空水桶		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Need empty trap	需要空陷阱	需要空陷阱		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Need empty bag	需要空袋子	需要空袋子		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Need empty cage	需要空籠子	需要空笼子		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Incapable of carrying	無法搬運	无法搬运		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Too injured	傷勢太重	伤势太重		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Animal inaccessible	無法接近動物	无法接近动物		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Item inaccessible	無法取得物品	无法取得物品		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Patient inaccessible	無法接近病人	无法接近病人		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Infant inaccessible	無法接近嬰兒	无法接近婴儿		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+No partner	沒有搭檔	没有搭档		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Nothing in cage	籠子是空的	笼子是空的		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Nothing to cage	沒有要關進籠子的對象	没有要关进笼子的对象		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Nothing to catch	沒有可捕捉的對象	没有可捕捉的对象		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Patient not resting	病人沒在休息	病人没在休息		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+No infant	沒有嬰兒	没有婴儿		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Already leading creature	已經牽著生物	已经牵着生物		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+No food available	沒有可用的食物	没有可用的食物		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+No item	沒有物品	没有物品		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+No ammunition	沒有彈藥	没有弹药		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+No weapon	沒有武器	没有武器		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Wrong ammunition	彈藥不對	弹药不对		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Ammunition inaccessible	無法取得彈藥	无法取得弹药		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Item blocking site	有物品擋住地點	有物品挡住地点		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Animal not restrained	動物沒有拴住	动物没有拴住		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+No creature	沒有生物	没有生物		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+No building	沒有建築	没有建筑		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Inappropriate building	建築不合適	建筑不合适		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+No designated area	沒有指定區域	没有指定区域		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+No floor space	沒有地板空間	没有地板空间		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+No party	沒有派對	没有派对		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Wrong justice state	司法狀態不符	司法状态不符		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Nothing in building	建築裡什麼都沒有	建筑里什么都没有		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Water is frozen	水結冰了	水结冰了		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Too insane	精神失常太嚴重	精神失常太严重		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Taken by mood	陷入奇異心境	陷入奇异心境		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Went insane	發瘋了	发疯了		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Throwing tantrum	正在大發脾氣	正在大发脾气		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Could not find path	找不到路徑	找不到路径		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Path blocked	路徑受阻	路径受阻		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Seeking artifact	正在尋找神器	正在寻找神器		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Handling dangerous creature	正在處理危險生物	正在处理危险生物		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Going to bed	準備上床睡覺	准备上床睡觉		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Seeking Infant	正在尋找嬰兒	正在寻找婴儿		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Dangerous terrain	地形危險	地形危险		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Job item misplaced	工作物品放錯地方	工作物品放错地方		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Job item lost or destroyed	工作物品遺失或損毀	工作物品遗失或损毁		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Getting food	正在找食物	正在找食物		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Getting water	正在取水	正在取水		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Hunting vermin for food	正在獵捕小動物充飢	正在猎捕小动物充饥		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Target inaccessible	無法接近目標	无法接近目标		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+No target	沒有目標	没有目标		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+No mechanism for target	目標端沒有機械裝置	目标端没有机械装置		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+No target building	沒有目標建築	没有目标建筑		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+No mechanism for trigger	觸發端沒有機械裝置	触发端没有机械装置		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+No trigger	沒有觸發裝置	没有触发装置		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+No available traction bench	沒有可用的牽引床	没有可用的牵引床		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Attacking building	正在攻擊建築	正在攻击建筑		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Lost pick	弄丟了十字鎬	弄丢了鹤嘴锄		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Invalid officer	負責官員無效	负责官员无效		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Removed from guard	被撤下守衛職務	被撤下守卫职务		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Equipment mismatch	裝備不符	装备不符		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Caged	被關進籠子	被关进笼子		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Getting something to drink	正在找東西喝	正在找东西喝		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Using well	正在使用水井	正在使用水井		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Lost axe	弄丟了斧頭	弄丢了斧头		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Resting injury	正在養傷	正在养伤		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Unscheduled	不在排程內	不在计划内		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Forbidden area	禁止進入的區域	禁止进入的区域		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Drop-off inaccessible	無法抵達卸貨點	无法到达卸货点		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Building inaccessible	無法抵達建築	无法到达建筑		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Area inaccessible	無法抵達區域	无法到达区域		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Water source vanished	水源消失了	水源消失了		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+No water source	沒有水源	没有水源		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+No bucket at well	水井沒有水桶	水井没有水桶		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Bucket full of extraneous material	水桶裡裝滿了雜物	水桶里装满了杂物		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Well dry	水井乾涸	水井干涸		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Building site submerged	建造地點淹水了	建造地点被水淹了		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Need valid, active sand collection zone	需要有效且啟用的取沙區	需要有效且启用的取沙区		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Sand vanished	沙子不見了	沙子不见了		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Area became inappropriate	區域變得不合適	区域变得不合适		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Water source contaminated	水源受到汙染	水源受到污染		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Creature occupying site	有生物佔據地點	有生物占据地点		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Need office	需要辦公室	需要办公室		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Not responsible for trade	不負責貿易	不负责贸易		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Inappropriate dig square	挖掘格不合適	挖掘格不合适		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Target too injured	目標傷勢太重	目标伤势太重		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Need splint	需要夾板	需要夹板		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Need thread	需要線	需要线		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Need cloth	需要布料	需要布料		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Need crutch	需要拐杖	需要拐杖		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Bad script! #1	腳本錯誤！#1	脚本错误！#1		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Bad script! #2	腳本錯誤！#2	脚本错误！#2		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Bad script! #3	腳本錯誤！#3	脚本错误！#3		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Need bag containing powder suitable for cast application	需要一個裝有可製作固定具的粉末的袋子	需要一个装有可制作固定具的粉末的袋子		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+No appropriate ammunition	沒有合適的彈藥	没有合适的弹药		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Clay vanished	黏土不見了	黏土不见了		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Need valid, active clay collection zone	需要有效且啟用的取黏土區	需要有效且启用的取黏土区		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+No available colony	沒有可用的蜂群	没有可用的蜂群		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+No weapon for execution	沒有行刑用的武器	没有行刑用的武器		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Not appointed	未獲任命	未获任命		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+No longer requested	已不再需要	已不再需要		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Mortally afraid	怕得要命	怕得要命		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Experiencing emotional shock	正處於情緒衝擊中	正处于情绪冲击中		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Grieving	正在哀悼	正在哀悼		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+In Custody	遭到拘押	遭到拘押		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Too depressed	太過沮喪	太过沮丧		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Oblivious	渾然不覺	浑然不觉		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Catatonic	陷入僵直狀態	陷入僵直状态		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Too sad	太過悲傷	太过悲伤		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+In agony	痛苦萬分	痛苦万分		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Anguished	極度痛苦	极度痛苦		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Despairing	陷入絕望	陷入绝望		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+In existential crisis	陷入存在危機	陷入存在危机		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+Interrupted by combat	被戰鬥打斷	被战斗打断		FUN_141325080 2531369-2531809；取消工作的原因（接在「X cancels 工作: 」後）
+You slam into an obstacle!	你撞上了障礙物！	你撞上了障碍物！		FUN_140eadea0 2215790／2218234；UNIT_PROJECTILE_SLAM，冒險模式自己
+You slam into an obstacle and blow apart!	你撞上障礙物，粉身碎骨！	你撞上障碍物，粉身碎骨！		FUN_140eadea0 2215918／2218375；UNIT_PROJECTILE_SLAM_BLOW_APART，冒險模式自己
+You skip across the water!	你在水面上彈跳著掠過！	你在水面上弹跳着掠过！		FUN_140eadea0 2216044；冒險模式自己被拋飛掠過液面
+You skip across the lava!	你在熔岩上彈跳著掠過！	你在熔岩上弹跳着掠过！		FUN_140eadea0 2216044；冒險模式自己被拋飛掠過液面
+You skip across the magma!	你在熔岩上彈跳著掠過！	你在熔岩上弹跳着掠过！		FUN_140eadea0 2216044；冒險模式自己被拋飛掠過液面
+You are struck by a ball of flames!	你被火球擊中！	你被火球击中！		FUN_140eb3ad0 2219138；FLAME_HIT，冒險模式自己
+craftsmen	工匠	工匠		FUN_140e42d20 2137690；首支商隊彈出訊息，文明種族沒有 CRAFTSMAN 職業名時的預設；同 craftsdwarves

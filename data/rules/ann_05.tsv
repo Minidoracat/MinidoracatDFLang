@@ -1,0 +1,42 @@
+en	zh-Hant	zh-Hans	align	note
+A {%1} cannot jump.	{1}不會跳。	{1}不会跳。		FUN_14089c4d0 1237794：「A 」＋自己這種生物的單數名＋cannot jump（CANNOT_JUMP）
+A {%1} cannot speak.	{1}不會說話。	{1}不会说话。		FUN_14089d8d0 1238394：「A 」＋種族單數名（CANNOT_SPEAK）
+You begin nocking {%1} in {%2}.	你開始把{1}搭上{2}。	你开始把{1}搭上{2}。		FUN_1408a5640 1243905：弓，沒有目標
+You begin loading {%1} into {%2}.	你開始把{1}裝進{2}。	你开始把{1}装进{2}。		FUN_1408a5640 1243905：弩等，沒有目標
+You prepare to shoot {%1} nocked in {%2}.	你把{1}搭上{2}，準備射擊。	你把{1}搭上{2}，准备射击。		FUN_1408a5640 1244062：弓，沒有目標；有目標的版本在 ann_04
+You prepare to shoot {%1} in {%2}.	你把{1}裝進{2}，準備射擊。	你把{1}装进{2}，准备射击。		FUN_1408a5640 1244062：弩等，沒有目標
+You begin to throw {%1}.	你開始投擲{1}。	你开始投掷{1}。		FUN_1408a65d0 1244563
+You fail to grab the {%1}!	你沒能抓住{1}！	你没能抓住{1}！		FUN_1408a6e70 1245227：FAIL_TO_GRAB_SURFACE，{1} 是地圖游標那種地形說明
+You root around in the {%1}.	你在{1}裡翻找。	你在{1}里翻找。		FUN_140a398a0 1488355：raws ROOT_AROUND（豬、鳥類），冒險者自己做
+{%1} roots around in the {%2}.	{1}在{2}裡翻找。	{1}在{2}里翻找。		FUN_140a398a0 1488355：同上，{1} 是 The X
+You scratch the {%1}.	你用爪子扒{1}。	你用爪子扒{1}。		FUN_140a398a0 1488355：ROOT_AROUND 的另一種動詞（scratch）
+{%1} scratches the {%2}.	{1}用爪子扒{2}。	{1}用爪子扒{2}。		FUN_140a398a0 1488355：同上
+{1} has assumed the position of {%2} of {3}.	{1}接任了{3}的{2}。	{1}接任了{3}的{2}。		FUN_1409ba3c0 1411570、1412305：FORT_POSITION_SUCCESSION（BOX）；{1} 人名、{2} 職位、{3} 組織名
+{1} has assumed the position of {%2}.	{1}接任了{2}。	{1}接任了{2}。		FUN_1409ba3c0 1411570：職位名自帶地名時（FUN_1409bdfb0）沒有 of 組織
+The {%1} of {2} now know a few facts about {%3} training.	{2}的{1}對{3}的訓練有了初步認識。	{2}的{1}对{3}的训练有了初步认识。		FUN_1409eb8a0 1444643：ANIMAL_TRAINING_KNOWLEDGE；{1} 種族複數、{2} 文明名、{3} 動物單數
+The {%1} of {2} have attained a general familiarity with {%3} training methods.	{2}的{1}已大致熟悉{3}的訓練方法。	{2}的{1}已大致熟悉{3}的训练方法。		FUN_1409eb8a0 1444643
+The {%1} of {2} are now quite knowledgeable {%3} trainers.	{2}的{1}如今已是相當內行的{3}訓練師。	{2}的{1}如今已是相当内行的{3}训练师。		FUN_1409eb8a0 1444643
+The {%1} of {2} are now expert {%3} trainers.	{2}的{1}如今已是{3}訓練專家。	{2}的{1}如今已是{3}训练专家。		FUN_1409eb8a0 1444643
+An animal has become a {%1}.	一隻動物成了{1}。	一只动物成了{1}。		FUN_140a0b4a0 1459891：沒有名字的動物
+{1} has adopted {2}.	{1}認{2}當主人了。	{1}认{2}当主人了。		FUN_140a0b4a0 1459993：PET_ADOPTS_OWNER，{1} 寵物、{2} 主人（都是「名字, 職業」）
+You have been bitten by a {%1}!	你被{1}咬了！	你被{1}咬了！		FUN_140a457a0 1496030：VERMIN_BITE；動詞是 raws VERMIN_BITE 的字（原版只有 bitten、stung）
+You have been stung by a {%1}!	你被{1}螫了！	你被{1}蜇了！		FUN_140a457a0 1496030
+{%1} has been bitten by a {%2}!	{1}被{2}咬了！	{1}被{2}咬了！		FUN_140a457a0 1496030
+{%1} has been stung by a {%2}!	{1}被{2}螫了！	{1}被{2}蜇了！		FUN_140a457a0 1496030
+The {%1} were unable to complete the {%2}.	{1}無法完成{2}。	{1}无法完成{2}。		FUN_140a80510 1530127：{1} 種族複數、{2} 建築名稱
+Jobs removed from unpowered {%1}.	{1}沒有動力，已移除其工作。	{1}没有动力，已移除其工作。		FUN_140a80510 1530268：JOBS_REMOVED_FROM_UNPOWERED_BUILDING
+A kidnapper has made off with {1}!	一名綁匪擄走了{1}！	一名绑匪掳走了{1}！		FUN_140a88610 1535752
+A thief has stolen {%1}!	一名小偷偷走了{1}！	一名小偷偷走了{1}！		FUN_140a88610 1536704
+{1} has stolen {%2}!	{1}偷走了{2}！	{1}偷走了{2}！		FUN_140a88610 1536265
+{1} has created {2}, a {%3}!  {@4} offers it to {5}.	{1}打造出{3}「{2}」！並將它獻給了{5}。	{1}打造出{3}“{2}”！并将它献给了{5}。		FUN_140a95780 1544310：MADE_ARTIFACT（BOX，整則查）；{1} 名字, 職業、{2} 神器名、{3} 物品、{4} He/She/It、{5} 文明名；原文一律 , a 照抄
+{1} has created {2}, a {%3}!  {@4} claims it as a personal treasure.	{1}打造出{3}「{2}」！並將它據為個人珍藏。	{1}打造出{3}“{2}”！并将它据为个人珍藏。		FUN_140a95780 1544310
+{1} has created {2}, a {%3}!  {@4} claims it as a family heirloom.	{1}打造出{3}「{2}」！並將它當作傳家寶。	{1}打造出{3}“{2}”！并将它当作传家宝。		FUN_140a95780 1544310
+{1} has created {2}, a {%3}!  {@4} claims it as an heirloom in the name of the family ancestor {5}.	{1}打造出{3}「{2}」！並以家族先祖{5}之名，將它當作傳家寶。	{1}打造出{3}“{2}”！并以家族先祖{5}之名，将它当作传家宝。		FUN_140a95780 1544310
+{1} has created {2}, a {%3}!	{1}打造出{3}「{2}」！	{1}打造出{3}“{2}”！		FUN_140a95780 1544310：找不到製作者的歷史人物時只有第一句
+{%1} has gnawed its way out of confinement!	{1}咬破牢籠逃了出來！	{1}咬破牢笼逃了出来！		FUN_140ab6840 1565237：VERMIN_CAGE_ESCAPE；動詞是 raws GNAWER（原版只有 gnawed）
+{%1} has burned its way out of confinement!	{1}燒穿牢籠逃了出來！	{1}烧穿牢笼逃了出来！		FUN_140ab6840 1565237：會噴火的害蟲
+{%1} has flown its way out of confinement!	{1}從牢籠中飛走了！	{1}从牢笼中飞走了！		FUN_140ab6840 1565237：會飛的害蟲
+A group of {%1} has been disturbed.	一群{1}被驚動了。	一群{1}被惊动了。		FUN_140ab6840 1565993：VERMIN_DISTURBED（冒險模式），2–9 隻
+A swarm of {%1} has been disturbed.	一大群{1}被驚動了。	一大群{1}被惊动了。		FUN_140ab6840 1565993：50 隻以上
+Many {%1} have been disturbed.	許多{1}被驚動了。	许多{1}被惊动了。		FUN_140ab6840 1565993：10–49 隻
+A {%1} has been disturbed.	一隻{1}被驚動了。	一只{1}被惊动了。		FUN_140ab6840 1565993：1 隻

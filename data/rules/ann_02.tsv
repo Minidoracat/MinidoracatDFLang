@@ -1,0 +1,182 @@
+en	zh-Hant	zh-Hans	align	note
+You receive {%1} and {%2} to conclude the transaction.	你收到{1}和{2}，完成了這筆交易。	你收到{1}和{2}，完成了这笔交易。		FUN_140276850 L333018 交易收尾（物品清單，最後一項前 and）
+You receive {%1} to conclude the transaction.	你收到{1}，完成了這筆交易。	你收到{1}，完成了这笔交易。		FUN_140276850 L333018 交易收尾（單一物品或逗號清單）
+You butcher {%1}.	你屠宰了{1}。	你屠宰了{1}。		FUN_14027e300 L338332 冒險模式屠宰；動詞不用職業名「屠夫」
+You make {%1} and more.	你做出了{1}等物品。	你做出了{1}等物品。		FUN_1402804b0 L339598 冒險模式製作（三件以上）
+You make {%1} and {%2}.	你做出了{1}和{2}。	你做出了{1}和{2}。		FUN_1402804b0 L339570 冒險模式製作（兩件）
+You make {%1}.	你做出了{1}。	你做出了{1}。		FUN_1402804b0 L339552 冒險模式製作
+You have finished working on {%1} and more.	你處理完了{1}等物品。	你处理完了{1}等物品。		FUN_1402804b0 L339768 冒險模式加工完成（三件以上）
+You have finished working on {%1} and {%2}.	你處理完了{1}和{2}。	你处理完了{1}和{2}。		FUN_1402804b0 L339753 冒險模式加工完成（兩件）
+You have finished working on {%1}.	你處理完了{1}。	你处理完了{1}。		FUN_1402804b0 L339739 冒險模式加工完成
+You practice your {%1} but make nothing of note.	你練習了{1}，但沒做出什麼像樣的東西。	你练习了{1}，但没做出什么像样的东西。		FUN_1402804b0 L339883 冒險模式練習技能（{1} 是小寫技能名）
+You practice your {%1}.	你練習了{1}。	你练习了{1}。		FUN_1402804b0 L339861 冒險模式練習技能
+{1} has revealed the presence of {2} to {3}.	{1}向{3}揭露了{2}的存在。	{1}向{3}揭露了{2}的存在。		FUN_1402afed0 L383446 揭露身分／存在（三者皆名稱）
+{1} flinches.	{1}退縮了。	{1}退缩了。		FUN_1404df190 L612697 威嚇生效
+{1} appears unperturbed.	{1}看來不為所動。	{1}看来不为所动。		FUN_1404df190 L612789 威嚇無效
+{1} appears to acquiesce.	{1}似乎被說服了。	{1}似乎被说服了。		FUN_1404df190 L612970 說服生效
+{1} appears unconvinced.	{1}似乎不以為然。	{1}似乎不以为然。		FUN_1404df190 L613073 說服無效
+The impertinent lava has defaced a {1}!	放肆的熔岩毀損了一件{1}的作品！	放肆的熔岩毁损了一件{1}的作品！		FUN_1405338a0 L671740 熔岩毀損雕刻；{1} 是工匠名（a Rembrandt 式用法）
+The impertinent magma has defaced a {1}!	放肆的熔岩毀損了一件{1}的作品！	放肆的熔岩毁损了一件{1}的作品！		FUN_1405338a0 L671759 同上，magma 依術語譯熔岩
+A {1} sculpture has melted!	一座{1}的雕塑融化了！	一座{1}的雕塑融化了！		FUN_14053bcf0 L677074 雕塑融化；{1} 是工匠名
+{%1} have hatched.	{1}孵化了。	{1}孵化了。		FUN_140561e60 L719194 蛋孵化；{1} 是首字大寫的幼體複數名
+You've caught a {%1}!	你抓到了{1}！	你抓到了{1}！		FUN_140568c40 L723776 陷阱／釣魚捕獲
+Your trap was robbed of the {%1}!	你陷阱裡的{1}被偷走了！	你陷阱里的{1}被偷走了！		FUN_140568c40 L723861 陷阱誘餌被偷
+The {%1} closes.	{1}關上了。	{1}关上了。		FUN_140572bd0／140573030／140574040／140574470 建築關閉（門、活蓋等）
+The {%1} close.	{1}關上了。	{1}关上了。		FUN_140573c10 L730323 建築關閉（複數名）
+The {%1} opens.	{1}打開了。	{1}打开了。		FUN_1405749c0／140575220／140575850／140575c90／140576970 建築打開
+The {%1} open.	{1}打開了。	{1}打开了。		FUN_1405760e0／140576530 建築打開（複數名）
+{1} has constructed a masterpiece!	{1}建造出了一件傑作！	{1}建造出了一件杰作！		FUN_140577040 L734780 建造傑作；{1} 是工匠名
+A masterwork of {1} has been lost!	{1}的一件傑作遺失了！	{1}的一件杰作遗失了！		FUN_1405879e0 L744377 傑作遺失；{1} 是工匠名
+You pull on the embedded {%1}.	你拉扯嵌在身上的{1}。	你拉扯嵌在身上的{1}。		FUN_140643f70 L866898 冒險模式拔出嵌入物（玩家）
+{1} pulls on the embedded {%2}.	{1}拉扯嵌在身上的{2}。	{1}拉扯嵌在身上的{2}。		FUN_140643f70 L866902 拔出嵌入物（他人）
+You try to remove {%1}.	你試著拔出{1}。	你试着拔出{1}。		FUN_140643f70 L867038 拔出嵌入物（玩家）
+{1} tries to remove {%2}.	{1}試著拔出{2}。	{1}试着拔出{2}。		FUN_140643f70 L867042 拔出嵌入物（他人）
+{1} stops and pays attention to you.	{1}停下來注意你。	{1}停下来注意你。		FUN_140684a10 L904292 交談對象停下
+{1} (to {2}): {%3}	{1}（對{2}）：{3}	{1}（对{2}）：{3}		FUN_140684a10 L904419 說話框：講者 (to 聽者): 台詞第一句
+{1}, {@2}: {%3}	{1}，{2}：{3}	{1}，{2}：{3}		FUN_140684a10 L904481 說話框：人名, 職業: 台詞第一句（CONFLICT_CONVERSATION 等）
+The {%1}: {%2}	{1}：{2}	{1}：{2}		FUN_140684a10 L904481 說話框：冒險模式生物講者
+The peaceful town of {1} is threatened!	和平的城鎮{1}正受到威脅！	和平的城镇{1}正受到威胁！		FUN_1407e6840 L1133727 冒險開場：城鎮受威脅
+The forces of {1} are on the march.	{1}的大軍正在進逼。	{1}的大军正在进逼。		FUN_1407e6840 L1133731 冒險開場：{1} 是文明名
+Commanded by {1}, they will have no mercy.	他們由{1}率領，絕不會手下留情。	他们由{1}率领，绝不会手下留情。		FUN_1407e6840 L1133750 冒險開場
+The citizens of {1} are plagued by bandits.	{1}的居民飽受盜匪騷擾。	{1}的居民饱受盗匪骚扰。		FUN_1407e6840 L1133917 冒險開場：盜匪；指城鎮居民，不是要塞「公民」
+The gang led by {1} has even sent some troublemakers to harass people right here in town.	{1}帶領的這幫盜匪，甚至派了滋事分子到鎮上騷擾居民。	{1}带领的这帮盗匪，甚至派了闹事的人到镇上骚扰居民。		FUN_1407e6840 L1133924 冒險開場：盜匪
+{1} is from here and might have some local information.	{1}是本地人，或許知道一些當地的消息。	{1}是本地人，也许知道一些当地的消息。		FUN_1407e6840 L1133969 冒險開場：同伴是本地人
+Legends speak of an ancient vault, {1}, where {2} wrested {@3} power from the Underworld by invoking {@4} true name.	傳說有座古老的寶庫{1}，{2}曾在那裡呼喚真名，從冥界奪得力量。	传说有座古老的宝库{1}，{2}曾在那里呼唤真名，从冥界夺得力量。		FUN_1407e6840 L1133814 冒險開場：寶庫傳說（{3}{4} 是 his/her/its）
+Legends speak of a vault, {1}, where {2} wrested {@3} power from the Underworld by invoking {@4} true name.	傳說有座寶庫{1}，{2}曾在那裡呼喚真名，從冥界奪得力量。	传说有座宝库{1}，{2}曾在那里呼唤真名，从冥界夺得力量。		FUN_1407e6840 L1133817 同上
+I am {1}, and I have chosen you as my instrument of agriculture.	我是{1}，我選中你作為我的農業使者。	我是{1}，我选中你作为我的农业使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of animals.	我是{1}，我選中你作為我的動物使者。	我是{1}，我选中你作为我的动物使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of art.	我是{1}，我選中你作為我的藝術使者。	我是{1}，我选中你作为我的艺术使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of balance.	我是{1}，我選中你作為我的平衡使者。	我是{1}，我选中你作为我的平衡使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of beauty.	我是{1}，我選中你作為我的美使者。	我是{1}，我选中你作为我的美使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of birth.	我是{1}，我選中你作為我的誕生使者。	我是{1}，我选中你作为我的诞生使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of blight.	我是{1}，我選中你作為我的枯萎使者。	我是{1}，我选中你作为我的枯萎使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of boundaries.	我是{1}，我選中你作為我的邊界使者。	我是{1}，我选中你作为我的边界使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of caverns.	我是{1}，我選中你作為我的洞穴使者。	我是{1}，我选中你作为我的洞穴使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of chaos.	我是{1}，我選中你作為我的混沌使者。	我是{1}，我选中你作为我的混沌使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of charity.	我是{1}，我選中你作為我的慈善使者。	我是{1}，我选中你作为我的慈善使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of children.	我是{1}，我選中你作為我的孩童使者。	我是{1}，我选中你作为我的孩童使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of coasts.	我是{1}，我選中你作為我的海岸使者。	我是{1}，我选中你作为我的海岸使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of consolation.	我是{1}，我選中你作為我的慰藉使者。	我是{1}，我选中你作为我的慰藉使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of courage.	我是{1}，我選中你作為我的勇氣使者。	我是{1}，我选中你作为我的勇气使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of crafts.	我是{1}，我選中你作為我的工藝使者。	我是{1}，我选中你作为我的工艺使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of creation.	我是{1}，我選中你作為我的創造使者。	我是{1}，我选中你作为我的创造使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of dance.	我是{1}，我選中你作為我的舞蹈使者。	我是{1}，我选中你作为我的舞蹈使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of darkness.	我是{1}，我選中你作為我的黑暗使者。	我是{1}，我选中你作为我的黑暗使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of dawn.	我是{1}，我選中你作為我的黎明使者。	我是{1}，我选中你作为我的黎明使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of day.	我是{1}，我選中你作為我的白晝使者。	我是{1}，我选中你作为我的白昼使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of death.	我是{1}，我選中你作為我的死亡使者。	我是{1}，我选中你作为我的死亡使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of deformity.	我是{1}，我選中你作為我的畸形使者。	我是{1}，我选中你作为我的畸形使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of depravity.	我是{1}，我選中你作為我的墮落使者。	我是{1}，我选中你作为我的堕落使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of discipline.	我是{1}，我選中你作為我的紀律使者。	我是{1}，我选中你作为我的纪律使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of disease.	我是{1}，我選中你作為我的疾病使者。	我是{1}，我选中你作为我的疾病使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of dreams.	我是{1}，我選中你作為我的夢境使者。	我是{1}，我选中你作为我的梦境使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of dusk.	我是{1}，我選中你作為我的黃昏使者。	我是{1}，我选中你作为我的黄昏使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of duty.	我是{1}，我選中你作為我的職責使者。	我是{1}，我选中你作为我的职责使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of earth.	我是{1}，我選中你作為我的大地使者。	我是{1}，我选中你作为我的大地使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of family.	我是{1}，我選中你作為我的家庭使者。	我是{1}，我选中你作为我的家庭使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of fame.	我是{1}，我選中你作為我的名聲使者。	我是{1}，我选中你作为我的名声使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of fate.	我是{1}，我選中你作為我的命運使者。	我是{1}，我选中你作为我的命运使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of fertility.	我是{1}，我選中你作為我的豐饒使者。	我是{1}，我选中你作为我的丰饶使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of festivals.	我是{1}，我選中你作為我的節慶使者。	我是{1}，我选中你作为我的节庆使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of fire.	我是{1}，我選中你作為我的火使者。	我是{1}，我选中你作为我的火使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of fish.	我是{1}，我選中你作為我的魚使者。	我是{1}，我选中你作为我的鱼使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of fishing.	我是{1}，我選中你作為我的漁獵使者。	我是{1}，我选中你作为我的渔猎使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of food.	我是{1}，我選中你作為我的食物使者。	我是{1}，我选中你作为我的食物使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of forgiveness.	我是{1}，我選中你作為我的寬恕使者。	我是{1}，我选中你作为我的宽恕使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of fortresses.	我是{1}，我選中你作為我的要塞使者。	我是{1}，我选中你作为我的要塞使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of freedom.	我是{1}，我選中你作為我的自由使者。	我是{1}，我选中你作为我的自由使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of gambling.	我是{1}，我選中你作為我的賭博使者。	我是{1}，我选中你作为我的赌博使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of games.	我是{1}，我選中你作為我的遊戲使者。	我是{1}，我选中你作为我的游戏使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of generosity.	我是{1}，我選中你作為我的慷慨使者。	我是{1}，我选中你作为我的慷慨使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of happiness.	我是{1}，我選中你作為我的幸福使者。	我是{1}，我选中你作为我的幸福使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of healing.	我是{1}，我選中你作為我的治癒使者。	我是{1}，我选中你作为我的治愈使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of hospitality.	我是{1}，我選中你作為我的款待使者。	我是{1}，我选中你作为我的款待使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of hunting.	我是{1}，我選中你作為我的狩獵使者。	我是{1}，我选中你作为我的狩猎使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of inspiration.	我是{1}，我選中你作為我的靈感使者。	我是{1}，我选中你作为我的灵感使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of jealousy.	我是{1}，我選中你作為我的嫉妒使者。	我是{1}，我选中你作为我的嫉妒使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of jewels.	我是{1}，我選中你作為我的珠寶使者。	我是{1}，我选中你作为我的珠宝使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of justice.	我是{1}，我選中你作為我的正義使者。	我是{1}，我选中你作为我的正义使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of labor.	我是{1}，我選中你作為我的勞動使者。	我是{1}，我选中你作为我的劳动使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of lakes.	我是{1}，我選中你作為我的湖泊使者。	我是{1}，我选中你作为我的湖泊使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of laws.	我是{1}，我選中你作為我的法律使者。	我是{1}，我选中你作为我的法律使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of lies.	我是{1}，我選中你作為我的謊言使者。	我是{1}，我选中你作为我的谎言使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of light.	我是{1}，我選中你作為我的光明使者。	我是{1}，我选中你作为我的光明使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of lightning.	我是{1}，我選中你作為我的閃電使者。	我是{1}，我选中你作为我的闪电使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of longevity.	我是{1}，我選中你作為我的長壽使者。	我是{1}，我选中你作为我的长寿使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of love.	我是{1}，我選中你作為我的愛使者。	我是{1}，我选中你作为我的爱使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of loyalty.	我是{1}，我選中你作為我的忠誠使者。	我是{1}，我选中你作为我的忠诚使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of luck.	我是{1}，我選中你作為我的幸運使者。	我是{1}，我选中你作为我的幸运使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of lust.	我是{1}，我選中你作為我的情慾使者。	我是{1}，我选中你作为我的情欲使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of marriage.	我是{1}，我選中你作為我的婚姻使者。	我是{1}，我选中你作为我的婚姻使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of mercy.	我是{1}，我選中你作為我的仁慈使者。	我是{1}，我选中你作为我的仁慈使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of metals.	我是{1}，我選中你作為我的金屬使者。	我是{1}，我选中你作为我的金属使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of minerals.	我是{1}，我選中你作為我的礦物使者。	我是{1}，我选中你作为我的矿物使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of misery.	我是{1}，我選中你作為我的苦難使者。	我是{1}，我选中你作为我的苦难使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of mist.	我是{1}，我選中你作為我的霧使者。	我是{1}，我选中你作为我的雾使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of moon.	我是{1}，我選中你作為我的月亮使者。	我是{1}，我选中你作为我的月亮使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of mountains.	我是{1}，我選中你作為我的山嶽使者。	我是{1}，我选中你作为我的山岳使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of muck.	我是{1}，我選中你作為我的泥沼使者。	我是{1}，我选中你作为我的泥沼使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of murder.	我是{1}，我選中你作為我的謀殺使者。	我是{1}，我选中你作为我的谋杀使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of music.	我是{1}，我選中你作為我的音樂使者。	我是{1}，我选中你作为我的音乐使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of nature.	我是{1}，我選中你作為我的自然使者。	我是{1}，我选中你作为我的自然使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of night.	我是{1}，我選中你作為我的黑夜使者。	我是{1}，我选中你作为我的黑夜使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of nightmares.	我是{1}，我選中你作為我的夢魘使者。	我是{1}，我选中你作为我的梦魇使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of oaths.	我是{1}，我選中你作為我的誓言使者。	我是{1}，我选中你作为我的誓言使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of oceans.	我是{1}，我選中你作為我的海洋使者。	我是{1}，我选中你作为我的海洋使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of order.	我是{1}，我選中你作為我的秩序使者。	我是{1}，我选中你作为我的秩序使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of painting.	我是{1}，我選中你作為我的繪畫使者。	我是{1}，我选中你作为我的绘画使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of peace.	我是{1}，我選中你作為我的和平使者。	我是{1}，我选中你作为我的和平使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of persuasion.	我是{1}，我選中你作為我的說服使者。	我是{1}，我选中你作为我的说服使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of plants.	我是{1}，我選中你作為我的植物使者。	我是{1}，我选中你作为我的植物使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of poetry.	我是{1}，我選中你作為我的詩歌使者。	我是{1}，我选中你作为我的诗歌使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of pregnancy.	我是{1}，我選中你作為我的孕育使者。	我是{1}，我选中你作为我的孕育使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of rain.	我是{1}，我選中你作為我的雨使者。	我是{1}，我选中你作为我的雨使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of rainbows.	我是{1}，我選中你作為我的彩虹使者。	我是{1}，我选中你作为我的彩虹使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of rebirth.	我是{1}，我選中你作為我的重生使者。	我是{1}，我选中你作为我的重生使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of revelry.	我是{1}，我選中你作為我的狂歡使者。	我是{1}，我选中你作为我的狂欢使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of revenge.	我是{1}，我選中你作為我的復仇使者。	我是{1}，我选中你作为我的复仇使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of rivers.	我是{1}，我選中你作為我的河流使者。	我是{1}，我选中你作为我的河流使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of rulership.	我是{1}，我選中你作為我的統治使者。	我是{1}，我选中你作为我的统治使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of rumors.	我是{1}，我選中你作為我的謠言使者。	我是{1}，我选中你作为我的谣言使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of sacrifice.	我是{1}，我選中你作為我的犧牲使者。	我是{1}，我选中你作为我的牺牲使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of salt.	我是{1}，我選中你作為我的鹽使者。	我是{1}，我选中你作为我的盐使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of scholarship.	我是{1}，我選中你作為我的學識使者。	我是{1}，我选中你作为我的学识使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of seasons.	我是{1}，我選中你作為我的季節使者。	我是{1}，我选中你作为我的季节使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of silence.	我是{1}，我選中你作為我的寂靜使者。	我是{1}，我选中你作为我的寂静使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of sky.	我是{1}，我選中你作為我的天空使者。	我是{1}，我选中你作为我的天空使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of song.	我是{1}，我選中你作為我的歌曲使者。	我是{1}，我选中你作为我的歌曲使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of speech.	我是{1}，我選中你作為我的言語使者。	我是{1}，我选中你作为我的言语使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of stars.	我是{1}，我選中你作為我的星辰使者。	我是{1}，我选中你作为我的星辰使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of storms.	我是{1}，我選中你作為我的風暴使者。	我是{1}，我选中你作为我的风暴使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of strength.	我是{1}，我選中你作為我的力量使者。	我是{1}，我选中你作为我的力量使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of suicide.	我是{1}，我選中你作為我的自盡使者。	我是{1}，我选中你作为我的自尽使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of sun.	我是{1}，我選中你作為我的太陽使者。	我是{1}，我选中你作为我的太阳使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of theft.	我是{1}，我選中你作為我的竊盜使者。	我是{1}，我选中你作为我的盗窃使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of thralldom.	我是{1}，我選中你作為我的奴役使者。	我是{1}，我选中你作为我的奴役使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of thunder.	我是{1}，我選中你作為我的雷霆使者。	我是{1}，我选中你作为我的雷霆使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of torture.	我是{1}，我選中你作為我的酷刑使者。	我是{1}，我选中你作为我的酷刑使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of trade.	我是{1}，我選中你作為我的貿易使者。	我是{1}，我选中你作为我的贸易使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of travelers.	我是{1}，我選中你作為我的旅人使者。	我是{1}，我选中你作为我的旅人使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of treachery.	我是{1}，我選中你作為我的背叛使者。	我是{1}，我选中你作为我的背叛使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of trees.	我是{1}，我選中你作為我的樹木使者。	我是{1}，我选中你作为我的树木使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of trickery.	我是{1}，我選中你作為我的詭計使者。	我是{1}，我选中你作为我的诡计使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of truth.	我是{1}，我選中你作為我的真理使者。	我是{1}，我选中你作为我的真理使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of twilight.	我是{1}，我選中你作為我的暮光使者。	我是{1}，我选中你作为我的暮光使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of valor.	我是{1}，我選中你作為我的英勇使者。	我是{1}，我选中你作为我的英勇使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of victory.	我是{1}，我選中你作為我的勝利使者。	我是{1}，我选中你作为我的胜利使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of volcanos.	我是{1}，我選中你作為我的火山使者。	我是{1}，我选中你作为我的火山使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of war.	我是{1}，我選中你作為我的戰爭使者。	我是{1}，我选中你作为我的战争使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of water.	我是{1}，我選中你作為我的水使者。	我是{1}，我选中你作为我的水使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of wealth.	我是{1}，我選中你作為我的財富使者。	我是{1}，我选中你作为我的财富使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of weather.	我是{1}，我選中你作為我的天氣使者。	我是{1}，我选中你作为我的天气使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of wind.	我是{1}，我選中你作為我的風使者。	我是{1}，我选中你作为我的风使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of wisdom.	我是{1}，我選中你作為我的智慧使者。	我是{1}，我选中你作为我的智慧使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of writing.	我是{1}，我選中你作為我的書寫使者。	我是{1}，我选中你作为我的书写使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you as my instrument of youth.	我是{1}，我選中你作為我的青春使者。	我是{1}，我选中你作为我的青春使者。		FUN_1407eed80 L1137112 神明使命；領域名取自 FUN_140756690
+I am {1}, and I have chosen you.	我是{1}，我選中了你。	我是{1}，我选中了你。		FUN_1407eed80 L1137105 神明使命
+The remnants of creation, {1}, belong with my followers, {2}.	創世的遺物{1}，應歸於我的信徒{2}。	创世的遗物{1}，应归于我的信徒{2}。		FUN_1407eed80 L1137126 神明使命：{1} 神器名，{2} 宗教組織名
+Seek out {1} in {2} and fulfill your destiny.	到{2}去找{1}，完成你的使命。	到{2}去找{1}，完成你的使命。		FUN_1407eed80 L1137143 神明使命
+You've found {1}!	你找到{1}了！	你找到{1}了！		FUN_1407eed80 L1137358 神明使命：找到代表
+You seek {1}.	你要找的是{1}。	你要找的是{1}。		FUN_1407eed80 L1137561 神明使命：{1} 是地點名
+Be sure to travel to {1}, rather than walking leisurely.	記得用旅行方式前往{1}，別慢慢走過去。	记得用旅行方式前往{1}，别慢慢走过去。		FUN_1407eed80 L1137581 神明使命
+You have been cursed by {1}!	你受到了{1}的詛咒！	你受到了{1}的诅咒！		FUN_1407eed80 L1138019 冒險模式受詛咒

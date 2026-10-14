@@ -1,0 +1,63 @@
+en	zh-Hant	zh-Hans	align	note
+You cannot {@1} until you leave this site.	離開這個地點之前，你無法{1}。	离开这个地点之前，你无法{1}。		FUN_14085a8b0 行動受阻原因；{@1} 是 travel/build/build a fire/fell trees/rest/compose/write L1198880
+You can't {@1} because you are carrying someone else's goods.  Purchase them or put some distance between yourself and the site.	你帶著別人的貨物，無法{1}。買下這些貨物，或離這個地點遠一點。	你带着别人的货物，无法{1}。买下这些货物，或离这个地点远一点。		FUN_14085a8b0 行動受阻原因；{@1} 是 travel/build/build a fire/fell trees/rest/compose/write L1199055；第二句的 them 指貨物，整則一條
+You don't feel safe enough to {@1}.	你覺得不夠安全，無法{1}。	你觉得不够安全，无法{1}。		FUN_14085a8b0 行動受阻原因；{@1} 是 travel/build/build a fire/fell trees/rest/compose/write L1199083
+You feel too watched to {@1}.	你覺得有人在盯著你，無法{1}。	你觉得有人在盯着你，无法{1}。		FUN_14085a8b0 行動受阻原因；{@1} 是 travel/build/build a fire/fell trees/rest/compose/write L1199087
+You can't {@1} until you've stopped the bleeding.	止血之前，你無法{1}。	止血之前，你无法{1}。		FUN_14085a8b0 行動受阻原因；{@1} 是 travel/build/build a fire/fell trees/rest/compose/write
+You can't {@1} because you can't breathe.	你無法呼吸，沒辦法{1}。	你无法呼吸，没办法{1}。		FUN_14085a8b0 行動受阻原因；{@1} 是 travel/build/build a fire/fell trees/rest/compose/write
+You can't {@1} because you are dying of thirst.	你快渴死了，沒辦法{1}。	你快渴死了，没办法{1}。		FUN_14085a8b0 行動受阻原因；{@1} 是 travel/build/build a fire/fell trees/rest/compose/write
+You can't {@1} because you are starving to death.	你快餓死了，沒辦法{1}。	你快饿死了，没办法{1}。		FUN_14085a8b0 行動受阻原因；{@1} 是 travel/build/build a fire/fell trees/rest/compose/write
+You can't {@1} because you are drowning.	你正在溺水，沒辦法{1}。	你正在溺水，没办法{1}。		FUN_14085a8b0 行動受阻原因；{@1} 是 travel/build/build a fire/fell trees/rest/compose/write
+You can't {@1} because you are swimming.	你正在游泳，沒辦法{1}。	你正在游泳，没办法{1}。		FUN_14085a8b0 行動受阻原因；{@1} 是 travel/build/build a fire/fell trees/rest/compose/write
+You can't {@1} until you are on a stable surface.	站到穩固的地面之前，你無法{1}。	站到稳固的地面之前，你无法{1}。		FUN_14085a8b0 行動受阻原因；{@1} 是 travel/build/build a fire/fell trees/rest/compose/write
+You must move away from the water before you can {@1}.	你得先離開水邊才能{1}。	你得先离开水边才能{1}。		FUN_14085a8b0 行動受阻原因；{@1} 是 travel/build/build a fire/fell trees/rest/compose/write
+You must come down from the mountains before you can {@1}.	你得先下山才能{1}。	你得先下山才能{1}。		FUN_14085a8b0 行動受阻原因；{@1} 是 travel/build/build a fire/fell trees/rest/compose/write
+You can't {@1} until you stop riding this vehicle.	你得先下車才能{1}。	你得先下车才能{1}。		FUN_14085a8b0 行動受阻原因；{@1} 是 travel/build/build a fire/fell trees/rest/compose/write
+You can't {@1} until you stop riding this projectile.	你還在被拋飛，無法{1}。	你还在被抛飞，无法{1}。		FUN_14085a8b0 行動受阻原因；{@1} 是 travel/build/build a fire/fell trees/rest/compose/write；被拋射出去時
+You spray a stream of steaming juice {1}.	你朝{1}噴出一道冒著熱氣的汁液。	你朝{1}喷出一道冒着热气的汁液。		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb} {目標}.，目標是 yourself 或生物稱呼
+You spit a glob of molten rock {1}.	你朝{1}吐出一團熔岩。	你朝{1}吐出一团熔岩。		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb} {目標}.，目標是 yourself 或生物稱呼
+You make a flicking motion {1}.	你對{1}彈了一下手指。	你对{1}弹了一下手指。		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb} {目標}.，目標是 yourself 或生物稱呼
+You call upon the night {1}.	你對{1}召喚黑夜。	你对{1}召唤黑夜。		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb} {目標}.，目標是 yourself 或生物稱呼
+You raise a heavy fog {1}.	你朝{1}喚起一陣濃霧。	你朝{1}唤起一阵浓雾。		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb} {目標}.，目標是 yourself 或生物稱呼
+You wave dismissively {1}.	你不屑地對{1}揮了揮手。	你不屑地对{1}挥了挥手。		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb} {目標}.，目標是 yourself 或生物稱呼
+You hold up a hand {1}.	你對{1}舉起一隻手。	你对{1}举起一只手。		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb} {目標}.，目標是 yourself 或生物稱呼
+You clench a fist {1}.	你對{1}握緊拳頭。	你对{1}握紧拳头。		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb} {目標}.，目標是 yourself 或生物稱呼
+You squirt ink {1}.	你朝{1}噴出墨汁。	你朝{1}喷出墨汁。		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb} {目標}.，目標是 yourself 或生物稱呼
+You head-bump {1}.	你用頭蹭了蹭{1}。	你用头蹭了蹭{1}。		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb} {目標}.，目標是 yourself 或生物稱呼
+You gesture {1}.	你對{1}比了個手勢。	你对{1}比了个手势。		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb} {目標}.，目標是 yourself 或生物稱呼
+You vanish {1}.	你在{1}面前消失了。	你在{1}面前消失了。		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb} {目標}.，目標是 yourself 或生物稱呼
+You focus {1}.	你把精神集中在{1}身上。	你把精神集中在{1}身上。		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb} {目標}.，目標是 yourself 或生物稱呼
+You point {1}.	你指了指{1}。	你指了指{1}。		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb} {目標}.，目標是 yourself 或生物稱呼
+You spit {1}.	你朝{1}吐口水。	你朝{1}吐口水。		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb} {目標}.，目標是 yourself 或生物稱呼
+You lick {1}.	你舔了舔{1}。	你舔了舔{1}。		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb} {目標}.，目標是 yourself 或生物稱呼；也涵蓋 FUN_140895fd0 L1234032 You lick the {物品}.
+You tusk {1}.	你用長牙頂了頂{1}。	你用长牙顶了顶{1}。		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb} {目標}.，目標是 yourself 或生物稱呼
+You pet {1}.	你撫摸了{1}。	你抚摸了{1}。		FUN_140849230 冒險互動（raws CDI:VERB 第二人稱）：You {verb} {目標}.，目標是 yourself 或生物稱呼；術語例外：pet
+{1} looks horrible!	{1}看起來很難受！	{1}看起来很难受！		FUN_140849230 冒險互動（raws CDI:TARGET_VERB） 第三人稱：{1} 是目標稱呼（The goblin、人名）
+{1} grimaces!	{1}露出痛苦的表情！	{1}露出痛苦的表情！		FUN_140849230 冒險互動（raws CDI:TARGET_VERB） 第三人稱：{1} 是目標稱呼（The goblin、人名）
+{1} freezes!	{1}僵住了！	{1}僵住了！		FUN_140849230 冒險互動（raws CDI:TARGET_VERB） 第三人稱：{1} 是目標稱呼（The goblin、人名）
+{1} looks sick!	{1}看起來很不舒服！	{1}看起来很不舒服！		FUN_140849230 冒險互動（raws CDI:TARGET_VERB） 第三人稱：{1} 是目標稱呼（The goblin、人名）
+{1} pauses!	{1}頓了一下！	{1}顿了一下！		FUN_140849230 冒險互動（raws CDI:TARGET_VERB） 第三人稱：{1} 是目標稱呼（The goblin、人名）
+{1} looks dizzy!	{1}看起來頭暈目眩！	{1}看起来头晕目眩！		FUN_140849230 冒險互動（raws CDI:TARGET_VERB） 第三人稱：{1} 是目標稱呼（The goblin、人名）
+{1} shudders and begins to move!	{1}抖了一下，開始動了起來！	{1}抖了一下，开始动了起来！		FUN_140849230 冒險互動（raws CDI:TARGET_VERB） 第三人稱：{1} 是目標稱呼（The goblin、人名）
+{1} shudders and a spirit rises!	{1}抖了一下，一個靈體升了起來！	{1}抖了一下，一个灵体升了起来！		FUN_140849230 冒險互動（raws CDI:TARGET_VERB） 第三人稱：{1} 是目標稱呼（The goblin、人名）
+A {%1} cannot hold the terrain.	{1}無法抓住地形。	{1}无法抓住地形。		FUN_140865d80 L1205014：「A」+ 生物階級名（母音開頭也是 A）
+You struggle for {%1}.	你奮力爭奪{1}。	你奋力争夺{1}。		FUN_14088a2b0 L1226518 冒險：{1} 物品
+You begin to throw {%1} at {2}.	你開始把{1}擲向{2}。	你开始把{1}掷向{2}。		FUN_14088d130 L1226878 冒險：{1} 物品、{2} 目標
+You prepare to shoot {1} with {%2} nocked in {%3}.	你把{2}搭上{3}，準備射擊{1}。	你把{2}搭上{3}，准备射击{1}。		FUN_14088d130 L1226955 冒險：弓；{1} 目標、{2} 箭、{3} 弓
+You prepare to shoot {1} with {%2} in {%3}.	你把{2}裝進{3}，準備射擊{1}。	你把{2}装进{3}，准备射击{1}。		FUN_14088d130 L1226955 冒險：弩等；{1} 目標、{2} 彈藥、{3} 武器
+You begin nocking {%1} in {%2} with intentions of shooting {3}.	你開始把{1}搭上{2}，打算射擊{3}。	你开始把{1}搭上{2}，打算射击{3}。		FUN_14088d130 L1227062 冒險：弓
+You begin loading {%1} into {%2} with intentions of shooting {3}.	你開始把{1}裝進{2}，打算射擊{3}。	你开始把{1}装进{2}，打算射击{3}。		FUN_14088d130 L1227062 冒險：弩等
+You drop {%1}.	你丟下了{1}。	你丢下了{1}。		FUN_140894b00 L1232395 冒險
+You empty {%1}.	你倒空了{1}。	你倒空了{1}。		FUN_140894b00 L1232518、FUN_1408956d0 L1233202（You empty the {物品}.）
+You put on {%1}.	你穿戴上{1}。	你穿戴上{1}。		FUN_140895240 L1232757 冒險
+You take off {%1}.	你脫下了{1}。	你脱下了{1}。		FUN_1408956d0 L1232970 冒險
+You take out the {%1}.	你取出了{1}。	你取出了{1}。		FUN_1408956d0 L1233097 冒險
+You eat the {%1}.	你吃了{1}。	你吃了{1}。		FUN_140895fd0 L1233410 冒險
+You drink the {%1}.	你喝了{1}。	你喝了{1}。		FUN_140895fd0 L1233785 冒險
+The {%1} is too hot.	{1}太燙了。	{1}太烫了。		FUN_140895fd0 L1233920 冒險：吃喝
+The {%1} is too cold.	{1}太冰了。	{1}太冰了。		FUN_140895fd0 L1233955 冒險：吃喝
+The {%1} is too salty.	{1}太鹹了。	{1}太咸了。		FUN_140895fd0 L1234140 冒險：吃喝
+You pack the {%1} on to {2}.	你把{1}裝到{2}身上。	你把{1}装到{2}身上。		FUN_140899df0 L1235855 冒險：{2} 馱獸稱呼
+You put the {%1} on display.	你把{1}擺出來展示。	你把{1}摆出来展示。		FUN_14089a1e0 L1236054 冒險
+You put the {%1} on the {%2}.	你把{1}放到{2}上。	你把{1}放到{2}上。		FUN_14089a1e0 L1236058 冒險：{2} 建築名稱
+You put the {%1} into the {%2}.	你把{1}放進{2}。	你把{1}放进{2}。		FUN_14089a1e0 L1236178（{2} 建築）、FUN_14089a950 L1236362（{2} 容器）

@@ -1,0 +1,145 @@
+en	zh-Hant	zh-Hans	align	note
+A diplomat could not complete a meeting and has left unhappy.	一位外交官沒能完成會談，不悅地離開了。	一位外交官没能完成会谈，不悦地离开了。		FUN_141391aa0 L2602682 外交官會談失敗離開（DIPLOMAT_LEFT_UNHAPPY）
+The wet season has arrived!	雨季來臨了！	雨季来临了！		FUN_141449dc0 L2738912 熱帶的春季：季節公告
+Spring has arrived!	春天到了！	春天到了！		FUN_141449dc0 L2738961：季節公告
+Spring has arrived on the calendar.	依照曆法，春天到了。	按照历法，春天到了。		FUN_141449dc0 L2738994 天氣還沒回暖：季節公告
+Summer has arrived on the calendar.	依照曆法，夏天到了。	按照历法，夏天到了。		FUN_141449dc0 L2739031：季節公告
+It is now summer.	現在是夏天了。	现在是夏天了。		FUN_141449dc0 L2739066：季節公告
+The dry season has come.	乾季到來了。	旱季到来了。		FUN_141449dc0 L2739117 熱帶的秋季：季節公告
+Autumn has come.	秋天到了。	秋天到了。		FUN_141449dc0 L2739157：季節公告
+Autumn has arrived on the calendar.	依照曆法，秋天到了。	按照历法，秋天到了。		FUN_141449dc0 L2739190：季節公告
+Winter has arrived on the calendar.	依照曆法，冬天到了。	按照历法，冬天到了。		FUN_141449dc0 L2739227：季節公告
+Winter is upon you.	冬天降臨了。	冬天降临了。		FUN_141449dc0 L2739271：季節公告
+You have disturbed the sleep of the dead!	你驚擾了亡者的安眠！	你惊扰了亡者的安眠！		FUN_1413d5350 L2644476 冒險模式驚動墓中亡者
+you	你	你		FUN_1413d5350、FUN_1413e0da0：冒險模式中被鬼魂／互動作用的對象（取代人名）
+They look sick suddenly.	突然面露病容。	突然面露病容。		FUN_1413e8800 L2656572 吃喝後生病；接在上一則後，省主詞
+It makes them look even more sick.	病容更明顯了。	病容更明显了。		FUN_1413e8800 L2656584 同上，已經在生病
+You reorganize your possessions.	你整理了自己的隨身物品。	你整理了自己的随身物品。		FUN_1413f5350 L2664743 冒險模式
+Who dares to enter my house?	是誰膽敢闖進我家？	是谁胆敢闯进我家？		FUN_1413e5680 L2654042 詛咒者的台詞（text_curse.txt，整則加引號）
+I curse you!	我詛咒你！	我诅咒你！		同上
+cursed	受詛咒的	受诅咒的		FUN_141447440：邪惡天氣物質名的形容詞（evil.lua cloud_adjs／rain_adjs；bitter 已有）
+wicked	惡毒的	恶毒的		FUN_141447440：邪惡天氣物質名的形容詞（evil.lua cloud_adjs／rain_adjs；bitter 已有）
+evil	邪惡的	邪恶的		FUN_141447440：邪惡天氣物質名的形容詞（evil.lua cloud_adjs／rain_adjs；bitter 已有）
+creeping	蔓延的	蔓延的		FUN_141447440：邪惡天氣物質名的形容詞（evil.lua cloud_adjs／rain_adjs；bitter 已有）
+haunting	縈繞不散的	萦绕不散的		FUN_141447440：邪惡天氣物質名的形容詞（evil.lua cloud_adjs／rain_adjs；bitter 已有）
+abominable	可憎的	可憎的		FUN_141447440：邪惡天氣物質名的形容詞（evil.lua cloud_adjs／rain_adjs；bitter 已有）
+devilish	惡魔般的	恶魔般的		FUN_141447440：邪惡天氣物質名的形容詞（evil.lua cloud_adjs／rain_adjs；bitter 已有）
+fiendish	魔鬼般的	魔鬼般的		FUN_141447440：邪惡天氣物質名的形容詞（evil.lua cloud_adjs／rain_adjs；bitter 已有）
+foul	汙穢的	污秽的		FUN_141447440：邪惡天氣物質名的形容詞（evil.lua cloud_adjs／rain_adjs；bitter 已有）
+heinous	凶惡的	凶恶的		FUN_141447440：邪惡天氣物質名的形容詞（evil.lua cloud_adjs／rain_adjs；bitter 已有）
+nefarious	罪惡的	罪恶的		FUN_141447440：邪惡天氣物質名的形容詞（evil.lua cloud_adjs／rain_adjs；bitter 已有）
+profane	褻瀆的	亵渎的		FUN_141447440：邪惡天氣物質名的形容詞（evil.lua cloud_adjs／rain_adjs；bitter 已有）
+vile	噁心的	恶心的		FUN_141447440：邪惡天氣物質名的形容詞（evil.lua cloud_adjs／rain_adjs；bitter 已有）
+accursed	被詛咒的	被诅咒的		FUN_141447440：邪惡天氣物質名的形容詞（evil.lua cloud_adjs／rain_adjs；bitter 已有）
+blighted	枯敗的	枯败的		FUN_141447440：邪惡天氣物質名的形容詞（evil.lua cloud_adjs／rain_adjs；bitter 已有）
+execrable	可惡的	可恶的		FUN_141447440：邪惡天氣物質名的形容詞（evil.lua cloud_adjs／rain_adjs；bitter 已有）
+infernal	地獄般的	地狱般的		FUN_141447440：邪惡天氣物質名的形容詞（evil.lua cloud_adjs／rain_adjs；bitter 已有）
+unholy	邪異的	邪异的		FUN_141447440：邪惡天氣物質名的形容詞（evil.lua cloud_adjs／rain_adjs；bitter 已有）
+eerie	詭異的	诡异的		FUN_141447440：邪惡天氣物質名的形容詞（evil.lua cloud_adjs／rain_adjs；bitter 已有）
+pungent	刺鼻的	刺鼻的		FUN_141447440：邪惡天氣物質名的形容詞（evil.lua cloud_adjs／rain_adjs；bitter 已有）
+acrid	嗆鼻的	呛鼻的		FUN_141447440：邪惡天氣物質名的形容詞（evil.lua cloud_adjs／rain_adjs；bitter 已有）
+stinking	發臭的	发臭的		FUN_141447440：邪惡天氣物質名的形容詞（evil.lua cloud_adjs／rain_adjs；bitter 已有）
+abhorrent	令人憎惡的	令人憎恶的		FUN_141447440：邪惡天氣物質名的形容詞（evil.lua cloud_adjs／rain_adjs；bitter 已有）
+fetid	惡臭的	恶臭的		FUN_141447440：邪惡天氣物質名的形容詞（evil.lua cloud_adjs／rain_adjs；bitter 已有）
+filthy	骯髒的	肮脏的		FUN_141447440：邪惡天氣物質名的形容詞（evil.lua cloud_adjs／rain_adjs；bitter 已有）
+horrid	可怕的	可怕的		FUN_141447440：邪惡天氣物質名的形容詞（evil.lua cloud_adjs／rain_adjs；bitter 已有）
+loathsome	令人厭惡的	令人厌恶的		FUN_141447440：邪惡天氣物質名的形容詞（evil.lua cloud_adjs／rain_adjs；bitter 已有）
+malodorous	難聞的	难闻的		FUN_141447440：邪惡天氣物質名的形容詞（evil.lua cloud_adjs／rain_adjs；bitter 已有）
+nauseating	令人作嘔的	令人作呕的		FUN_141447440：邪惡天氣物質名的形容詞（evil.lua cloud_adjs／rain_adjs；bitter 已有）
+putrid	腐臭的	腐臭的		FUN_141447440：邪惡天氣物質名的形容詞（evil.lua cloud_adjs／rain_adjs；bitter 已有）
+repellent	令人反感的	令人反感的		FUN_141447440：邪惡天氣物質名的形容詞（evil.lua cloud_adjs／rain_adjs；bitter 已有）
+repulsive	令人嫌惡的	令人嫌恶的		FUN_141447440：邪惡天氣物質名的形容詞（evil.lua cloud_adjs／rain_adjs；bitter 已有）
+revolting	令人反胃的	令人反胃的		FUN_141447440：邪惡天氣物質名的形容詞（evil.lua cloud_adjs／rain_adjs；bitter 已有）
+rotten	腐爛的	腐烂的		FUN_141447440：邪惡天氣物質名的形容詞（evil.lua cloud_adjs／rain_adjs；bitter 已有）
+You bark.	你吠叫。	你吠叫。		FUN_1413db000 L2647466 生物叫聲（raws SOUND），冒險模式
+You whistle.	你發出哨音。	你发出哨音。		FUN_1413db000 L2647466 生物叫聲（raws SOUND），冒險模式
+You grunt.	你發出咕噥聲。	你发出咕哝声。		FUN_1413db000 L2647466 生物叫聲（raws SOUND），冒險模式
+You purr.	你發出呼嚕聲。	你发出呼噜声。		FUN_1413db000 L2647466 生物叫聲（raws SOUND），冒險模式
+You click.	你發出喀喀聲。	你发出咔咔声。		FUN_1413db000 L2647466 生物叫聲（raws SOUND），冒險模式
+You boom.	你發出低沉的轟鳴。	你发出低沉的轰鸣。		FUN_1413db000 L2647466 生物叫聲（raws SOUND），冒險模式
+You ching.	你發出金屬般的叮聲。	你发出金属般的叮声。		FUN_1413db000 L2647466 生物叫聲（raws SOUND），冒險模式
+You whistle harshly.	你發出刺耳的哨音。	你发出刺耳的哨音。		FUN_1413db000 L2647466 生物叫聲（raws SOUND），冒險模式
+You blow softly.	你輕輕吹氣。	你轻轻吹气。		FUN_1413db000 L2647466 生物叫聲（raws SOUND），冒險模式
+You toot.	你發出嘟嘟聲。	你发出嘟嘟声。		FUN_1413db000 L2647466 生物叫聲（raws SOUND），冒險模式
+You hear a loud bark.	你聽到一聲響亮的吠叫。	你听到一声响亮的吠叫。		FUN_1413db000 L2647466 生物叫聲（raws SOUND）：看不到聲源時
+You hear whistling.	你聽到一陣哨音。	你听到一阵哨音。		FUN_1413db000 L2647466 生物叫聲（raws SOUND）：看不到聲源時
+You hear a grunt.	你聽到一聲咕噥。	你听到一声咕哝。		FUN_1413db000 L2647466 生物叫聲（raws SOUND）：看不到聲源時
+You hear a purr.	你聽到一陣呼嚕聲。	你听到一阵呼噜声。		FUN_1413db000 L2647466 生物叫聲（raws SOUND）：看不到聲源時
+You hear a click.	你聽到一聲喀嚓。	你听到一声咔嚓。		FUN_1413db000 L2647466 生物叫聲（raws SOUND）：看不到聲源時
+You hear a resounding bark.	你聽到一聲宏亮的吠叫。	你听到一声洪亮的吠叫。		FUN_1413db000 L2647466 生物叫聲（raws SOUND）：看不到聲源時
+You hear deep whistling.	你聽到一陣低沉的哨音。	你听到一阵低沉的哨音。		FUN_1413db000 L2647466 生物叫聲（raws SOUND）：看不到聲源時
+You hear a loud grunt.	你聽到一聲響亮的咕噥。	你听到一声响亮的咕哝。		FUN_1413db000 L2647466 生物叫聲（raws SOUND）：看不到聲源時
+You hear a deep purr.	你聽到一陣低沉的呼嚕聲。	你听到一阵低沉的呼噜声。		FUN_1413db000 L2647466 生物叫聲（raws SOUND）：看不到聲源時
+You hear a loud click.	你聽到一聲響亮的喀嚓。	你听到一声响亮的咔嚓。		FUN_1413db000 L2647466 生物叫聲（raws SOUND）：看不到聲源時
+You hear a low boom.	你聽到一聲低沉的轟鳴。	你听到一声低沉的轰鸣。		FUN_1413db000 L2647466 生物叫聲（raws SOUND）：看不到聲源時
+You hear a metallic ching.	你聽到一聲金屬般的叮響。	你听到一声金属般的叮响。		FUN_1413db000 L2647466 生物叫聲（raws SOUND）：看不到聲源時
+You hear a harsh whistle.	你聽到一聲刺耳的哨音。	你听到一声刺耳的哨音。		FUN_1413db000 L2647466 生物叫聲（raws SOUND）：看不到聲源時
+You hear a soft blowing sound.	你聽到一陣輕柔的吹氣聲。	你听到一阵轻柔的吹气声。		FUN_1413db000 L2647466 生物叫聲（raws SOUND）：看不到聲源時
+You hear a toot.	你聽到一聲嘟嘟響。	你听到一声嘟嘟响。		FUN_1413db000 L2647466 生物叫聲（raws SOUND）：看不到聲源時
+You have been found dead.	你被發現死了。	你被发现死了。		同上，冒險模式
+You have been found, starved to death.	你被發現時已經餓死了。	你被发现时已经饿死了。		同上，冒險模式
+You have been found dead, dehydrated.	你被發現死了，死因是脫水。	你被发现死了，死因是脱水。		同上，冒險模式
+You have been found dead, drowned.	你被發現死了，死因是溺水。	你被发现死了，死因是溺水。		同上，冒險模式
+You have been found scuttled.	你被發現時已遭拆毀。	你被发现时已遭拆毁。		同上，冒險模式
+You have been found dead, badly burned.	你被發現死了，全身嚴重燒傷。	你被发现死了，全身严重烧伤。		同上，冒險模式
+You have been found dead, badly crushed.	你被發現死了，身體嚴重壓傷。	你被发现死了，身体严重压伤。		同上，冒險模式
+You have been found dead, frozen.	你被發現死了，全身凍僵。	你被发现死了，全身冻僵。		同上，冒險模式
+You have been found boiled.	你被發現時已經沸騰蒸發。	你被发现时已经沸腾蒸发。		同上，冒險模式
+You have been found melted.	你被發現時已經融化。	你被发现时已经融化。		同上，冒險模式
+You have been found condensed.	你被發現時已經凝結。	你被发现时已经凝结。		同上，冒險模式
+You have been found solidified.	你被發現時已經凝固。	你被发现时已经凝固。		同上，冒險模式
+You have been found dead, contorted in fear!	你被發現死了，身體因恐懼而扭曲！	你被发现死了，身体因恐惧而扭曲！		同上，冒險模式
+You have been found dead, completely drained of blood!	你被發現死了，全身的血都被吸乾了！	你被发现死了，全身的血都被吸干了！		同上，冒險模式
+You have died of old age.	你壽終正寢了。	你寿终正寝了。		同上，冒險模式
+You have starved to death.	你餓死了。	你饿死了。		同上，冒險模式
+You have died of thirst.	你渴死了。	你渴死了。		同上，冒險模式
+You have been shot and killed.	你被射殺了。	你被射杀了。		同上，冒險模式
+You have bled to death.	你失血而死。	你失血而死。		同上，冒險模式
+You have drowned.	你溺死了。	你溺死了。		同上，冒險模式
+You have suffocated.	你窒息而死。	你窒息而死。		同上，冒險模式
+You have been struck down.	你被擊倒身亡。	你被击倒身亡。		同上，冒險模式
+You have been scuttled.	你被拆毀了。	你被拆毁了。		同上，冒險模式
+You have died after colliding with an obstacle.	你撞上障礙物而死。	你撞上障碍物而死。		同上，冒險模式
+You have burned up in magma.	你在熔岩中燒成了灰。	你在熔岩中烧成了灰。		同上，冒險模式
+You have burned up in a magma mist.	你在熔岩霧中燒成了灰。	你在熔岩雾中烧成了灰。		同上，冒險模式
+You have burned up in dragon fire.	你在龍焰中燒成了灰。	你在龙焰中烧成了灰。		同上，冒險模式
+You have burned to death.	你被燒死了。	你被烧死了。		同上，冒險模式
+You have been scalded to death.	你被燙死了。	你被烫死了。		同上，冒險模式
+You have been crushed under the collapsing ceiling.	你被崩塌的頂板壓死了。	你被崩塌的顶板压死了。		同上，冒險模式
+You have been crushed by a drawbridge.	你被升降橋壓死了。	你被升降桥压死了。		同上，冒險模式
+You have been killed by falling rocks.	你被落石砸死了。	你被落石砸死了。		同上，冒險模式
+You have fallen into a deep chasm.	你墜入了深深的裂谷。	你坠入了深深的裂谷。		同上，冒險模式
+You have died in a cage.	你死在籠子裡。	你死在笼子里。		同上，冒險模式
+You have been murdered by somebody!	你被人謀殺了！	你被人谋杀了！		同上，冒險模式
+You have been killed by a trap.	你被陷阱殺死了。	你被陷阱杀死了。		同上，冒險模式
+You have vanished.	你消失了。	你消失了。		同上，冒險模式
+You have died in the heat.	你熱死了。	你热死了。		同上，冒險模式
+You have frozen to death.	你凍死了。	你冻死了。		同上，冒險模式
+You have been impaled on spikes.	你被尖刺刺穿了。	你被尖刺刺穿了。		同上，冒險模式
+You have been encased in cooling lava.	你被冷卻的熔岩封在裡面了。	你被冷却的熔岩封在里面了。		同上，冒險模式
+You have been encased in cooling magma.	你被冷卻的熔岩封在裡面了。	你被冷却的熔岩封在里面了。		同上，冒險模式
+You have been encased in ice.	你被封在冰裡了。	你被封在冰里了。		同上，冒險模式
+You have been beheaded.	你被斬首了。	你被斩首了。		同上，冒險模式
+You have been crucified.	你被釘上十字架了。	你被钉上十字架了。		同上，冒險模式
+You have been buried alive.	你被活埋了。	你被活埋了。		同上，冒險模式
+You have been executed by drowning.	你被處以溺刑。	你被处以溺刑。		同上，冒險模式
+You have been burned alive.	你被活活燒死了。	你被活活烧死了。		同上，冒險模式
+You have been fed to beasts.	你被拿去餵野獸了。	你被拿去喂野兽了。		同上，冒險模式
+You have been hacked to pieces.	你被砍成碎塊了。	你被砍成碎块了。		同上，冒險模式
+You have been executed by being left out in the air.	你被留在戶外處決了。	你被留在户外处决了。		同上，冒險模式
+You have boiled.	你沸騰蒸發了。	你沸腾蒸发了。		同上，冒險模式
+You have melted.	你融化了。	你融化了。		同上，冒險模式
+You have condensed.	你凝結了。	你凝结了。		同上，冒險模式
+You have solidified.	你凝固了。	你凝固了。		同上，冒險模式
+You have succumbed to infection.	你死於感染。	你死于感染。		同上，冒險模式
+You have been put to rest.	你得到了安息。	你得到了安息。		同上，冒險模式
+You have been scared to death!	你被嚇死了！	你被吓死了！		同上，冒險模式
+You have died in the dark.	你死在黑暗之中。	你死在黑暗之中。		同上，冒險模式
+You have collapsed.	你倒地身亡。	你倒地身亡。		同上，冒險模式
+You have been drained of blood!	你被吸乾了血！	你被吸干了血！		同上，冒險模式
+You have been drained of blood by somebody!	你被人吸乾了血！	你被人吸干了血！		同上，冒險模式
+You have been slaughtered.	你被宰殺了。	你被宰杀了。		同上，冒險模式
+You have been killed by a vehicle.	你被礦車撞死了。	你被矿车撞死了。		同上，冒險模式
+You have been killed by a flying object.	你被飛來的物體砸死了。	你被飞来的物体砸死了。		同上，冒險模式
+You have leapt from a great height.	你從高處跳下身亡。	你从高处跳下身亡。		同上，冒險模式
+You have been executed.	你被處決了。	你被处决了。		同上，冒險模式

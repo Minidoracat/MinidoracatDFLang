@@ -1,0 +1,28 @@
+en	zh-Hant	zh-Hans	align	note
+You cannot jump while in the air.	你人在半空中，沒辦法跳。	你人在半空中，没法跳。		FUN_14089c4d0 1237835；冒險模式跳躍失敗（CANNOT_JUMP）
+There is nowhere to jump.	沒有地方可以跳。	没有地方可以跳。		FUN_14089c4d0 1237973；冒險模式跳躍
+You cannot jump while wrestling.	扭打中沒辦法跳。	扭打中没法跳。		FUN_14089c4d0 1238038；冒險模式跳躍（不是戰鬥報告）
+You are too injured to jump.	你傷得太重，沒辦法跳。	你伤得太重，没法跳。		FUN_14089c4d0 1238079；冒險模式跳躍
+You cannot jump while prone.	倒在地上時沒辦法跳。	倒在地上时没法跳。		FUN_14089c4d0 1238121；冒險模式跳躍
+You cannot jump while swimming.	游泳時沒辦法跳。	游泳时没法跳。		FUN_14089c4d0 1238163；冒險模式跳躍
+You cannot speak.	你沒辦法說話。	你没法说话。		FUN_14089d8d0 1238811；冒險模式交談（CANNOT_SPEAK）
+You come out of your shell.	你從殼裡出來了。	你从壳里出来了。		FUN_1408aa950 1248260：「You 」＋RETRACT_INTO_BP 第三段
+You retract into your shell.	你縮進殼裡。	你缩进壳里。		FUN_1408aa950 1248400：「You 」＋RETRACT_INTO_BP 第一段
+Merchants have arrived and are unloading their goods.	商人已經抵達，正在卸貨。	商人已经抵达，正在卸货。		FUN_140a092c0 1456986：MERCHANTS_UNLOADING
+Tribute is being unloaded.  (A report is available.)	正在卸下貢品。（有報告可看。）	正在卸下贡品。（有报告可看。）		FUN_140a092c0 1457059：貢品抵達
+A trade depot is requiered for the delivery of the tribute.	需要貿易站才能交付貢品。	需要贸易站才能交付贡品。		FUN_140a092c0 1457173：requiered 是遊戲原文錯字，照抄
+The merchants need a trade depot to unload their goods.	商人需要貿易站才能卸貨。	商人需要贸易站才能卸货。		FUN_140a092c0 1457182：MERCHANTS_NEED_DEPOT
+Something has pulled a lever!	有東西拉動了拉桿！	有东西拉动了拉杆！		FUN_140a25d80 1475387：MISCHIEF_LEVER
+Something has triggered a pressure plate!	有東西觸發了壓力板！	有东西触发了压力板！		FUN_140a25d80 1475398：MISCHIEF_PLATE
+Something has emptied a cage!	有東西把籠子清空了！	有东西把笼子清空了！		FUN_140a25d80 1475487：MISCHIEF_CAGE
+Something has unchained a creature!	有東西解開了生物的鎖鏈！	有东西解开了生物的锁链！		FUN_140a25d80 1475547
+The glowing barrier has disappeared!	發光的屏障消失了！	发光的屏障消失了！		FUN_140a5d230 1508276：挖穿地獄屏障
+The glowing barrier has disappeared, replaced by terrible shrieks from the underworld!	發光的屏障消失了，取而代之的是地底深處傳來的可怕尖嘯！	发光的屏障消失了，取而代之的是地底深处传来的可怕尖啸！		FUN_140a5d230 1508276：同上，另一分支
+Deep within this strange place, we've uncovered what must be a treasure of the gods!	在這奇異之地的深處，我們發現了想必是眾神的寶藏！	在这奇异之地的深处，我们发现了想必是众神的宝藏！		FUN_140a5f2d0 1510115
+We have unleashed the echo of a forgotten divine retribution!	我們釋放出一道被遺忘的神罰回響！	我们释放出一道被遗忘的神罚回响！		FUN_140a60e50 1510468
+Something evil is emerging from this newly exposed pocket!	有邪惡之物正從這個剛挖開的空腔裡冒出來！	有邪恶之物正从这个刚挖开的空腔里冒出来！		FUN_140a60e50 1510468
+Some ancient horror was encased here, until now!	某種遠古的恐怖一直封在這裡，直到現在！	某种远古的恐怖一直封在这里，直到现在！		FUN_140a60e50 1510468
+Apocalypse!  We are being judged by the gods!	末日降臨！我們正受到眾神的審判！	末日降临！我们正受到众神的审判！		FUN_140a60e50 1510468；兩句互相依賴，整則一條
+We checked that stone for heat!  What devilry is this?!	我們明明檢查過那塊石頭熱不熱！這是什麼妖術？！	我们明明检查过那块石头热不热！这是什么妖术？！		FUN_140a60e50 1510504；兩句互相依賴，整則一條
+Horrifying screams come from the darkness below!	下方的黑暗中傳來駭人的尖叫！	下方的黑暗中传来骇人的尖叫！		FUN_140a618d0 1510969
+A Dwarven Outpost Revisited: [C:7:0:0]You have returned. [B] How have your sturdy charges fared in your absence? Have they gone on adventures or moved on to richer delving at new frontier settlements? Perhaps they are all still here, unwilling to leave the magnificent fortress you prepared for them. [B] Deep underground, the promise of treasure and the thrill of overcoming danger have lured you back to this place. Will you strike the earth again?	重返矮人前哨站：[C:7:0:0]你們回來了。[B]你們不在的這段日子，那些堅毅的部下過得如何？他們是去冒險了，還是搬到新的邊疆聚落，另尋更豐饒的礦脈？也許他們全都還在這裡，捨不得離開你們為他們打造的壯麗要塞。[B]地底深處，寶藏的誘惑與戰勝危險的快感，又把你們引回了這個地方。你們要再次開鑿大地嗎？	重返矮人前哨站：[C:7:0:0]你们回来了。[B]你们不在的这段日子，那些坚毅的部下过得怎么样？他们是去冒险了，还是搬去新的边疆聚落，另寻更丰富的矿脉？也许他们全都还在这里，舍不得离开你们为他们建造的壮丽要塞。[B]地底深处，宝藏的诱惑与战胜危险的快感，又把你们引回了这个地方。你们要再次开凿大地吗？		FUN_1408b25a0 1253023–1253065：EMBARK_MESSAGE（BOX）重返舊要塞；寫法照 rules/fortress.tsv 新要塞那條的實機格式；Dwarven 是文明種族的形容詞（矮人要塞固定）

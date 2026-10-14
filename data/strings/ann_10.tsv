@@ -1,0 +1,48 @@
+en	zh-Hant	zh-Hans	align	note
+A section of the cavern has collapsed!	洞穴有一部分崩塌了！	洞穴有一部分坍塌了！		FUN_1414627d0 2752061：CAVE_COLLAPSE
+Something has collapsed on the surface!	地表上有東西崩塌了！	地表上有东西坍塌了！		FUN_1414627d0 2752078：CAVE_COLLAPSE
+The weather has cleared.	天氣放晴了。	天气放晴了。		FUN_14147cab0 2765864：WEATHER_BECOMES_CLEAR
+It has started raining.	開始下雨了。	开始下雨了。		FUN_14147cab0 2765905：WEATHER_BECOMES_RAIN
+A snow storm has come.	暴風雪來了。	暴风雪来了。		FUN_14147cab0 2765947：WEATHER_BECOMES_SNOW
+You feel uneasy.	你感到不安。	你感到不安。		FUN_14148da20 2776257/2776486/2777057：冒險模式，夜晚有東西接近
+Night creature!	夜行生物！	夜行生物！		FUN_14148da20 2776279：NIGHT_ATTACK_STARTS（彈出框）
+Night creatures!	夜行生物！	夜行生物！		FUN_14148da20 2776282：同上，複數
+Ambush!	伏擊！	伏击！		FUN_14148da20 2776292（整數常數 0x21687375626d41）
+You are surrounded by incessant cackling.	你被不絕於耳的咯咯怪笑聲包圍。	你被不绝于耳的咯咯怪笑声包围。		FUN_14148da20 2776566：冒險模式
+You failed to write anything.	你什麼也沒寫出來。	你什么也没写出来。		FUN_14148da20 2776657：冒險模式寫作失敗
+You failed to compose anything.	你什麼也沒創作出來。	你什么也没创作出来。		FUN_14148da20 2776894：COMPOSITION_FAILED
+The work has no particular subject.	這部作品沒有特定主題。	这部作品没有特定主题。		FUN_140cc5d50 1909393：接在 You have authored／composed 之後的作品說明（其餘說明句未做）
+You have discovered a river.	你發現了一條河流。	你发现了一条河流。		FUN_1414a2b50 case 0：FEATURE_DISCOVERY（彈出框）
+You have discovered a cave entrance.	你發現了一個洞穴入口。	你发现了一个洞穴入口。		FUN_1414a2b50 case 1：同上
+You have discovered a downward passage.	你發現了一條向下的通道。	你发现了一条向下的通道。		FUN_1414a2b50 case 1：同上
+You have discovered a deep pit.	你發現了一個深坑。	你发现了一个深坑。		FUN_1414a2b50 case 2：同上
+You have discovered a magma pool.	你發現了一處熔岩池。	你发现了一处熔岩池。		FUN_1414a2b50 case 3：同上
+You have discovered a volcano.	你發現了一座火山。	你发现了一座火山。		FUN_1414a2b50 case 4：同上
+You have discovered an unusual volcanic wall studded with gems.	你發現了一面鑲滿寶石的奇特火山岩壁。	你发现了一面镶满宝石的奇特火山岩壁。		FUN_1414a2b50 case 5：同上
+You have found a curious underground structure.	你找到了一座奇特的地下建築。	你找到了一座奇特的地下建筑。		FUN_1414a2b50 case 6：同上
+You have discovered an expansive cavern deep underground.	你在地底深處發現了一座廣闊的洞穴。	你在地下深处发现了一座广阔的洞穴。		FUN_1414a2b50 case 7：同上
+You have discovered a great magma sea.	你發現了一片巨大的熔岩海。	你发现了一片巨大的熔岩海。		FUN_1414a2b50 case 8：同上
+You have discovered an eerie cavern.  The air above the dark stone floor is alive with vortices of purple light and dark, boiling clouds.  Seemingly bottomless glowing pits mark the surface.	你發現了一座詭異的洞穴。黑暗的石地上方，空氣中翻騰著紫光的漩渦與沸騰般的黑雲。地面上布滿看似深不見底、閃著微光的坑洞。	你发现了一座诡异的洞穴。黑暗的石地上方，空气中翻腾着紫光的漩涡和翻滚的黑云。地面上布满看似深不见底、闪着微光的坑洞。		FUN_1414a2b50 case 9：彈出框只查整則，三句寫成一條
+unknown material	不明材料	不明材料		FUN_1414a2b50 2788961：找不到寶石材料時，接成「Unknown material!  Praise the miners!」
+very near	近在咫尺	近在咫尺		FUN_14147c4a0 2765486：方位片語，接在 The {@1} of {2}, {%3}, looks to… 的 {3}
+in the depths	地底深處	地下深处		FUN_14147c4a0 2765599：方位片語
+aboveground	地面上	地面上		FUN_14147c4a0 2765603：方位片語
+inaccessible from here	無法從這裡抵達	无法从这里抵达		FUN_14147c4a0 2765607：方位片語
+north	北方	北方		FUN_14147c4a0：方位片語 … to the north
+south	南方	南方		FUN_14147c4a0：方位片語
+east	東方	东方		FUN_14147c4a0：方位片語
+west	西方	西方		FUN_14147c4a0：方位片語
+northwest	西北方	西北方		FUN_14147c4a0：方位片語
+northeast	東北方	东北方		FUN_14147c4a0：方位片語
+southwest	西南方	西南方		FUN_14147c4a0：方位片語
+southeast	東南方	东南方		FUN_14147c4a0：方位片語
+hamlet	村莊	村庄		FUN_1410cbe50 據點種類：The {@1} of {2}, … looks to your thriving economy 的 {1}
+town	城鎮	城镇		FUN_1410cbe50 據點種類
+hillocks	丘陵村落	丘陵村落		FUN_1410cbe50 據點種類（矮人村落）
+forest retreat	森林隱居地	森林隐居地		FUN_1410cbe50 據點種類（精靈）
+pits	坑穴	坑穴		FUN_1410cbe50 據點種類（哥布林）
+mountain halls	山中大廳	山中大厅		FUN_1410cbe50 據點種類
+fortress	要塞	要塞		FUN_1410cbe50 據點種類；術語 fortress
+tower	高塔	高塔		FUN_1410cbe50 據點種類
+castle	城堡	城堡		FUN_1410cbe50 據點種類
+monastery	修道院	修道院		FUN_1410cbe50 據點種類

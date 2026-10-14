@@ -1,0 +1,31 @@
+en	zh-Hant	zh-Hans	align	note
+You have improved {%1} masterfully!	你以大師級手藝裝飾了{1}！	你以大师级手艺装饰了{1}！		FUN_14144ccb0 2740459：MASTERFUL_IMPROVEMENT 冒險模式玩家；{1} 物品名（FUN_140c65450）
+{1} has improved {%2} masterfully!	{1}以大師級手藝裝飾了{2}！	{1}以大师级手艺装饰了{2}！		FUN_14144ccb0 2740471：MASTERFUL_IMPROVEMENT；{1} 人名（FUN_140a94030）
+After a polite discussion with a local rival, {1} has claimed the position of {@2} of {3}.	與當地一位對手禮貌商談後，{1}取得了{3}的{2}職位。	与当地一位对手礼貌商谈后，{1}取得了{3}的{2}职位。		FUN_1414644c0 2753632：1 位競爭者；{1} 人名，{2} 職位名（小寫），{3} 勢力名
+After a polite discussion with local rivals, {1} has claimed the position of {@2} of {3}.	與當地幾位對手禮貌商談後，{1}取得了{3}的{2}職位。	与当地几位对手礼貌商谈后，{1}取得了{3}的{2}职位。		FUN_1414644c0 2753636：2 位以上競爭者
+{1} has claimed the position of {@2} of {3}.	{1}取得了{3}的{2}職位。	{1}取得了{3}的{2}职位。		FUN_1414644c0 2753645：沒有競爭者；of {3} 一定有（FUN_1409bdfb0 也會補 of）
+{1}, being the rightful heir, has inherited the position of {@2} of {3}.	{1}以合法繼承人的身分繼承了{3}的{2}職位。	{1}以合法继承人的身份继承了{3}的{2}职位。		FUN_141468370 2756649：據點政府職位繼承；{2} 職位名（FUN_14099a3c0，依性別）
+{1} has been appointed to the position of {@2} of {3}.	{1}被任命為{3}的{2}。	{1}被任命为{3}的{2}。		FUN_141468370 2756760：據點政府職位任命
+{1} has been elected to the position of {@2} of {3}.	{1}當選為{3}的{2}。	{1}当选为{3}的{2}。		FUN_141468370 2756874：據點政府職位選舉
+The {@1} of {2}, {%3}, looks to your thriving economy for its future prosperity and has been incorporated into your holdings.	{1}{2}（{3}）期盼藉你繁榮的經濟謀求未來的富足，已併入你的領地。	{1}{2}（{3}）希望借助你繁荣的经济谋求未来的富足，已并入你的领地。		FUN_141468370 2760255：{1} 據點種類（FUN_1410cbe50），{2} 據點名，{3} 方位片語（FUN_14147c4a0）
+The {@1} of {2}, {%3}, looks to your thriving economy for its future prosperity.	{1}{2}（{3}）期盼藉你繁榮的經濟謀求未來的富足。	{1}{2}（{3}）希望借助你繁荣的经济谋求未来的富足。		FUN_141468370 2760281：同上，未併入
+just to the {@1}	就在{1}	就在{1}		FUN_14147c4a0 方位片語：{1} 方向（north 等）
+a short walk to the {@1}	{1}不遠處	{1}不远处		FUN_14147c4a0 方位片語
+a half day's travel to the {@1}	{1}半天路程處	{1}半天路程处		FUN_14147c4a0 方位片語
+nearly a day's travel to the {@1}	{1}將近一天路程處	{1}将近一天路程处		FUN_14147c4a0 方位片語
+a day's travel to the {@1}	{1}一天路程處	{1}一天路程处		FUN_14147c4a0 方位片語
+far to the {@1}	遠在{1}	远在{1}		FUN_14147c4a0 方位片語
+{1} has engraved a masterpiece!	{1}雕刻出一件傑作！	{1}雕刻出一件杰作！		FUN_141486440 2771865：MASTERPIECE_ENGRAVING；{1} 人名（FUN_140a94030）
+You have authored {1}.	你寫成了《{1}》。	你写成了《{1}》。		FUN_14148da20 2776691：冒險模式；{1} 作品名；後面接 FUN_140cc5d50 的作品說明（另成句）
+You have written {1} on to {%2}.	你把《{1}》寫到了{2}上。	你把《{1}》写到了{2}上。		FUN_14148da20 2776708：{2} 物品名（FUN_140c65450）
+You have composed {1}.	你創作了《{1}》。	你创作了《{1}》。		FUN_14148da20 2776857：COMPOSITION_COMPLETE；後面接作品說明
+You have struck {%1}!  Praise the miners!	你挖到了{1}！讚美礦工！	你挖到了{1}！赞美矿工！		FUN_1414a2b50 2789369：STRUCK_DEEP_METAL（彈出框，整則）；{1} 材料名（FUN_1414d1920）
+{%1}!  Praise the miners!	{1}！讚美礦工！	{1}！赞美矿工！		FUN_1414a2b50 2788981：寶石火山壁（彈出框）；{1} 材料名首字大寫
+You have struck {%1}!	你挖到了{1}！	你挖到了{1}！		FUN_1414a2b50 2789417：STRUCK_MINERAL／STRUCK_ECONOMIC_MINERAL
+The falling debris has defaced a {1}!	落下的碎石毀損了一件{1}的作品！	落下的碎石毁损了一件{1}的作品！		FUN_1414b3f50 2814061：ARTWORK_DEFACED（傑作雕刻）；{1} 是工匠名（FUN_140a94030，a Rembrandt 式用法），譯法同 ann_02 的 The impertinent lava has defaced a {1}!
+The impertinent vegetation has defaced a {1}!	放肆的植物毀損了一件{1}的作品！	放肆的植物毁损了一件{1}的作品！		FUN_1414c27f0 2823270：同上
+A careless farmer has defaced a {1}!	粗心的農夫毀損了一件{1}的作品！	粗心的农夫毁损了一件{1}的作品！		FUN_1414c45a0 2824703：同上（耕地）
+A foolish builder defaced a {1}!	愚蠢的建築工毀損了一件{1}的作品！	愚蠢的建筑工毁损了一件{1}的作品！		FUN_1414c45a0 2824709：同上（建造）
+The {@1} {2} and the {@3} {4} have married.	{1}{2}與{3}{4}結婚了。	{1}{2}和{3}{4}结婚了。		FUN_1414cc8d0 2829848：MARRIAGE；FUN_141331500 寫成 the 職業 人名，{1}{3} 職業（首字大寫），{2}{4} 人名；後接 Congratulations!
+The {@1} {2} has come!	{1}{2}來了！	{1}{2}来了！		FUN_1414e4d90 2843653：MEGABEAST_ARRIVAL（彈出框）；FUN_141331500 寫成 the 種類 名字；比 ann_08 的 {1} has come! 先比對；raws 描述另接在後面時整則對不上
+{@1}!	{1}！	{1}！		FUN_14148da20 2776509：冒險模式伏擊，生物名（單數或複數，首字大寫）＋!；{%1}! 會被當成清單句型、整句最外層不套，所以用 {@1}

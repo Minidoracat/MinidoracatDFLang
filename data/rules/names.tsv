@@ -2,6 +2,9 @@ en	zh-Hant	zh-Hans	align	note
 War {@1}	戰{1}	战{1}		受過戰鬥訓練的動物（出發準備的動物清單）；War dog 另有整句「戰犬」
 Hunting {@1}	獵{1}	猎{1}		受過狩獵訓練的動物；Hunting dog 另有整句「獵犬」
 Stray {@1}	流浪{1}	流浪{1}		沒有主人的家畜（寵物清單、地圖游標：Stray Cat）
+stray {@1}	流浪{1}	流浪{1}		同上，公告與報告裡小寫（the stray dog）
+war {@1}	戰{1}	战{1}		同 War {@1}，公告與報告裡小寫
+hunting {@1}	獵{1}	猎{1}		同 Hunting {@1}，公告與報告裡小寫
 {1} (Tame)	{1} (馴服)	{1} (驯服)		已馴服的動物（Stray Cat (Tame)）；術語 tame；全形括號放不下，用半形（同技能的 (生疏)）
 {1} (Tm)	{1} (馴)	{1} (驯)		同上，清單放不下時遊戲縮寫成 Tm
 XX{1}XX	XX{1}XX	XX{1}XX		物品磨損外框（破爛）；寫在 X{1}X 前面

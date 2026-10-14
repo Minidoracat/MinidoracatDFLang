@@ -1,0 +1,47 @@
+en	zh-Hant	zh-Hans	align	note
+{1} is throwing a tantrum!	{1}正在大發脾氣！	{1}正在大发脾气！		FUN_1414e8470:2852484；情緒崩潰（憤怒）；{1} 是「人名, 職業」
+{1} has slipped into depression...	{1}陷入了憂鬱……	{1}陷入了抑郁……		FUN_1414e8470:2852505；情緒崩潰（悲傷）
+{1} is stumbling around obliviously!	{1}恍恍惚惚地到處亂晃！	{1}恍恍惚惚地到处乱晃！		FUN_1414e8470:2852526；情緒崩潰（失神）
+{1} has entered a martial trance!	{1}進入了戰鬥恍惚狀態！	{1}进入了战斗恍惚状态！		FUN_1414e8470:2852940；人名, 職業
+{1} is brawling under the influence!	{1}藉酒鬧事，大打出手！	{1}借酒闹事，大打出手！		FUN_1414ee3d0:2854898；人名, 職業
+{1} has become enraged!	{1}暴怒了！	{1}暴怒了！		FUN_1414e8470:2852902、FUN_1414ee3d0:2854635、FUN_1414ef770:2855596；{1} 是生物稱呼或人名；玩家本人另見 strings 的 You have become enraged!
+{1} spits out {%2}.	{1}吐出了{2}。	{1}吐出了{2}。		FUN_1414e8470:2854016；冒險模式，生物把嘴裡的物品吐出
+{1} drops {%2}.	{1}丟下了{2}。	{1}丢下了{2}。		FUN_1414e8470:2854018；同上，嘴裡的物品掉下
+{1} has guzzled some {%2}!	{1}灌下了一些{2}！	{1}灌下了一些{2}！		FUN_1414f3c00:2859218 case 0x3b；生物偷喝飲料
+You eat a {%1}.	你吃了一隻{1}。	你吃了一只{1}。		FUN_1414f3c00:2859660 case 0x4e；冒險模式玩家吃害蟲；{1} 是生物種族名
+{1} eats a {%2}.	{1}吃了一隻{2}。	{1}吃了一只{2}。		FUN_1414f3c00:2859661 case 0x4e；生物吃害蟲
+{%1} destroyed by battering ram.	{1}被攻城槌摧毀了。	{1}被攻城槌摧毁了。		FUN_1414f3c00:2863620；{1} 是建築名稱
+{%1} toppled by battering ram.	{1}被攻城槌撞倒了。	{1}被攻城槌撞倒了。		FUN_1414f3c00:2863631；同上
+You draws {%1} with {@2} {%3}.	你用{3}拔出了{1}。	你用{3}拔出了{1}。		FUN_141502780:2866035；玩家本人時遊戲照樣寫 draws（照抄）；{@2} 是 his/her/its，中文省略
+{1} draws {%2} with {@3} {%4}.	{1}用{4}拔出了{2}。	{1}用{4}拔出了{2}。		FUN_141502780:2866035；{2} 物品、{4} 身體部位（查不到時遊戲寫 body part）
+You straps {%1} to {@2} {%3}.	你把{1}綁到{3}上。	你把{1}绑到{3}上。		FUN_141502780:2866180；玩家本人時遊戲照樣寫 straps（照抄）
+{1} straps {%2} to {@3} {%4}.	{1}把{2}綁到{4}上。	{1}把{2}绑到{4}上。		FUN_141502780:2866180；{2} 物品、{4} 身體部位
+{1} comes out of {@2} shell.	{1}從殼裡探出頭來。	{1}从壳里探出头来。		FUN_141502780:2866284；raws RETRACT_INTO_BP 的字串（<pro_pos> 換成 his/her/its），原版只有龜類的 shell
+{1} retracts into {@2} shell.	{1}縮進殼裡。	{1}缩进壳里。		FUN_141502780:2867012；同上
+{1} flounders in the water!	{1}在水裡掙扎！	{1}在水里挣扎！		FUN_1415059c0:2867954；玩家本人見 strings
+{1} flounders in the lava!	{1}在熔岩裡掙扎！	{1}在熔岩里挣扎！		FUN_1415059c0:2867965；同上
+{1} flounders in the magma!	{1}在熔岩裡掙扎！	{1}在熔岩里挣扎！		FUN_1415059c0:2867967；同上
+You lose hold of the {%1}.	你沒抓穩{1}。	你没抓稳{1}。		FUN_1415059c0:2868170 case 3；{1} 是地形說明（granite Wall）
+You lose hold of the {%1}!	你沒抓穩{1}！	你没抓稳{1}！		FUN_1415059c0:2868341 case 5
+{1} loses hold of the {%2}.	{1}沒抓穩{2}。	{1}没抓稳{2}。		FUN_1415059c0:2868171 case 3
+{1} loses hold of the {%2}!	{1}沒抓穩{2}！	{1}没抓稳{2}！		FUN_1415059c0:2868342 case 5
+{1} stands up.	{1}站了起來。	{1}站了起来。		FUN_1415059c0:2868636 case 0xd
+{1} lies on the ground.	{1}躺到地上。	{1}躺到地上。		FUN_1415059c0:2868694 case 0xe
+You push {%1}.	你推動了{1}。	你推动了{1}。		FUN_1415059c0:2868759 case 0x10；{1} 是物品（礦車）
+{1} pushes {%2}.	{1}推動了{2}。	{1}推动了{2}。		FUN_1415059c0:2868760 case 0x10
+You feed on {1}.	你吸了{1}的血。	你吸了{1}的血。		FUN_1415059c0:2868823 case 0x11；吸血鬼進食；{1} 是生物稱呼或人名
+You fail to mount {1} in time.	你沒來得及騎上{1}。	你没来得及骑上{1}。		FUN_1415059c0:2869113、2869190 case 0x14
+You cannot mount {1} due to the presence of an existing rider.	你無法騎上{1}，上面已經有人騎了。	你无法骑上{1}，上面已经有人骑了。		FUN_1415059c0:2869231 case 0x14
+You mount {1}.	你騎上了{1}。	你骑上了{1}。		FUN_1415059c0:2869362 case 0x14
+{1} mounts {2}.	{1}騎上了{2}。	{1}骑上了{2}。		FUN_1415059c0:2869365 case 0x14；{1} 騎手、{2} 坐騎
+{1} dismounts.	{1}下了坐騎。	{1}下了坐骑。		FUN_1415059c0:2869508 case 0x15
+You finish nocking {%1} in {%2} and prepare to shoot.	你把{1}搭上{2}，準備射擊。	你把{1}搭上{2}，准备射击。		FUN_1415059c0:2869888；{1} 箭、{2} 弓
+You finish loading {%1} into {%2} and prepare to shoot.	你把{1}裝進{2}，準備射擊。	你把{1}装进{2}，准备射击。		FUN_1415059c0:2869891；{1} 弩箭、{2} 弩
+You finish nocking {%1} in {%2}.	你把{1}搭上{2}。	你把{1}搭上{2}。		FUN_1415059c0:2869828
+You finish loading {%1} into {%2}.	你把{1}裝進{2}。	你把{1}装进{2}。		FUN_1415059c0:2869831
+{%1} is already nocked with .	{1}已經搭上箭了。	{1}已经搭上箭了。		FUN_1415059c0:2870154；遊戲先接上還沒寫入的空字串才填箭名，所以 with 後面是空的（照抄）
+{%1} is already loaded with .	{1}已經裝填好了。	{1}已经装填好了。		FUN_1415059c0:2870157；同上
+{%1} is already nocked with {%2} and you prepared to shoot.	{1}已經搭上{2}，你準備射擊。	{1}已经搭上{2}，你准备射击。		FUN_1415059c0:2870209
+{%1} is already loaded with {%2} and you prepared to shoot.	{1}已經裝填了{2}，你準備射擊。	{1}已经装填了{2}，你准备射击。		FUN_1415059c0:2870212
+You are now in control of {1}, ruling {2} from {3}.	你現在掌控了{1}，以{3}為據點統治{2}。	你现在掌控了{1}，以{3}为据点统治{2}。		FUN_141517810:2879218；{1}{2}{3} 是名稱（照原文）
+You are now in control of {1}, ruling {2}.	你現在掌控了{1}，統治{2}。	你现在掌控了{1}，统治{2}。		FUN_141517810:2879218；沒有據點時

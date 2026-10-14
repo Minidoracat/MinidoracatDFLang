@@ -1,0 +1,129 @@
+en	zh-Hant	zh-Hans	align	note
+There is not enough room to perform here.	這裡空間不夠，無法表演。	这里空间不够，无法表演。		FUN_1400a6a70 L104421 冒險模式表演失敗
+There are not enough dancers.	舞者人數不足。	舞者人数不足。		FUN_1400a6a70 L104425 冒險模式表演失敗
+You could not find a partner.	你找不到舞伴。	你找不到舞伴。		FUN_1400a6a70 L104429 冒險模式表演失敗
+You cannot perform here.	你無法在這裡表演。	你无法在这里表演。		FUN_1400a6a70 L104433 冒險模式表演失敗
+You conclude your performance.	你結束了表演。	你结束了表演。		FUN_1400ac470 L105952 表演結束（玩家）
+Some performers finish their act.	有幾位表演者結束了演出。	有几位表演者结束了演出。		FUN_1400ac470 L105952 表演結束（多人）
+The performers are finished.	表演者們表演完畢。	表演者们表演完毕。		FUN_1400ac470 L105952 表演結束（多人）
+performers	表演者們	表演者们		FUN_1400ac470 L105416／106097／106840 表演句主詞 The performers（冠詞由 articles.tsv 去掉）
+Some children	幾個孩子	几个孩子		FUN_1400ac470 L107022／107127 扮家家酒、玩玩具句主詞（多人）
+You continue the story.	你繼續講故事。	你继续讲故事。		FUN_1400ac470 L106603 表演進行中
+The story continues.	故事繼續講下去。	故事继续讲下去。		FUN_1400ac470 L106603 表演進行中
+You continue the poem.	你繼續朗誦詩作。	你继续朗诵诗作。		FUN_1400ac470 L106603 表演進行中
+The poem continues.	詩作繼續朗誦下去。	诗作继续朗诵下去。		FUN_1400ac470 L106603 表演進行中
+You continue the dance.	你繼續跳舞。	你继续跳舞。		FUN_1400ac470 L106603 表演進行中
+The dance continues.	舞蹈繼續進行。	舞蹈继续进行。		FUN_1400ac470 L106603 表演進行中
+You continue the music.	你繼續演奏。	你继续演奏。		FUN_1400ac470 L106603 表演進行中
+The music continues.	音樂繼續演奏。	音乐继续演奏。		FUN_1400ac470 L106603 表演進行中
+You continue the sermon.	你繼續講道。	你继续讲道。		FUN_1400ac470 L106603 表演進行中
+The sermon continues.	講道繼續進行。	讲道继续进行。		FUN_1400ac470 L106603 表演進行中
+the stanza	這一節	这一节		FUN_1400ac470 L106342 詩作只有一節；接 You begin／The poetry enters
+the verse paragraph	這一段	这一段		FUN_1400ac470 L106349 詩作只有一段；接 You begin／The poetry enters
+first	第一	第一		FUN_14052eb70 序數（首字大寫後轉小寫）；給 the {@1} line／stanza／verse paragraph
+second	第二	第二		FUN_14052eb70 序數
+third	第三	第三		FUN_14052eb70 序數
+fourth	第四	第四		FUN_14052eb70 序數
+fifth	第五	第五		FUN_14052eb70 序數
+sixth	第六	第六		FUN_14052eb70 序數
+seventh	第七	第七		FUN_14052eb70 序數
+eighth	第八	第八		FUN_14052eb70 序數
+ninth	第九	第九		FUN_14052eb70 序數
+tenth	第十	第十		FUN_14052eb70 序數
+eleventh	第十一	第十一		FUN_14052eb70 序數
+twelfth	第十二	第十二		FUN_14052eb70 序數
+thirteenth	第十三	第十三		FUN_14052eb70 序數
+fourteenth	第十四	第十四		FUN_14052eb70 序數
+fifteenth	第十五	第十五		FUN_14052eb70 序數
+sixteenth	第十六	第十六		FUN_14052eb70 序數
+seventeenth	第十七	第十七		FUN_14052eb70 序數
+eighteenth	第十八	第十八		FUN_14052eb70 序數
+nineteenth	第十九	第十九		FUN_14052eb70 序數（20 以上是 20th 這種數字，未收）
+a simple passage	一段簡單的樂段	一段简单的乐段		FUN_1400ac470 L106442 樂段清單項；接 You enter／The music enters
+the introduction	前奏	前奏		FUN_1400ac470 L106445 樂段清單項
+the exposition of the theme	主題的呈示部	主题的呈示部		FUN_1400ac470 L106448 樂段清單項
+the exposition of the first theme	第一主題的呈示部	第一主题的呈示部		FUN_1400ac470 L106448 樂段清單項
+the exposition of the second theme	第二主題的呈示部	第二主题的呈示部		FUN_1400ac470 L106448 樂段清單項
+the exposition of the previous passage	前一樂段的呈示部	前一乐段的呈示部		FUN_1400ac470 L106448 樂段清單項
+a recapitulation of the theme	主題的再現部	主题的再现部		FUN_1400ac470 L106451 樂段清單項
+a recapitulation of the first theme	第一主題的再現部	第一主题的再现部		FUN_1400ac470 L106451 樂段清單項
+a recapitulation of the second theme	第二主題的再現部	第二主题的再现部		FUN_1400ac470 L106451 樂段清單項
+a recapitulation of the previous passage	前一樂段的再現部	前一乐段的再现部		FUN_1400ac470 L106451 樂段清單項
+the synthesis of the two themes	兩個主題的融合	两个主题的融合		FUN_1400ac470 L106470 樂段清單項
+the synthesis of previous passages	先前樂段的融合	先前乐段的融合		FUN_1400ac470 L106470 樂段清單項
+a verse	主歌	主歌		FUN_1400ac470 L106479 樂段清單項
+a chorus	副歌	副歌		FUN_1400ac470 L106482 樂段清單項
+the finale	終曲	终曲		FUN_1400ac470 L106485 樂段清單項
+the coda	尾聲	尾声		FUN_1400ac470 L106488 樂段清單項
+a bridge-passage	橋段	桥段		FUN_1400ac470 L106491 樂段清單項
+the theme	主題	主题		FUN_1400ac470 L106494 樂段清單項
+the first theme	第一主題	第一主题		FUN_1400ac470 L106494 樂段清單項
+the second theme	第二主題	第二主题		FUN_1400ac470 L106494 樂段清單項
+a series of variations	一系列變奏	一系列变奏		FUN_1400ac470 L106509 樂段清單項
+a series of variations on the theme	主題的一系列變奏	主题的一系列变奏		FUN_1400ac470 L106509 樂段清單項
+a series of variations on the first theme	第一主題的一系列變奏	第一主题的一系列变奏		FUN_1400ac470 L106509 樂段清單項
+a series of variations on the second theme	第二主題的一系列變奏	第二主题的一系列变奏		FUN_1400ac470 L106509 樂段清單項
+a sermon on stars	以星辰為題講道	以星辰为题讲道		FUN_1400ac470 L105517 領域 stars 單獨查是形狀「星形」，這裡另寫
+the value of truth	誠實的價值	诚实的价值		FUN_140ee0380 價值觀 truth 是「誠實」（單獨查是知識主題「真理」）
+the worthlessness of truth	誠實毫無價值	诚实毫无价值		FUN_140ee0380 同上
+nuances of truth	誠實的微妙之處	诚实的微妙之处		FUN_140ee0380 同上
+instrument	樂器	乐器		FUN_1400b1bf0 沒有樂器定義時的「the instrument」
+You mumble, having completely forgotten the words.	你含糊地念著，詞句全忘光了。	你含糊地念着，词句全忘光了。		FUN_1400b1bf0 L108717 朗誦品質（玩家）
+You enunciate poorly.	你口齒不清。	你口齿不清。		FUN_1400b1bf0 L108717 朗誦品質（玩家）
+You speak well.	你說得很好。	你说得很好。		FUN_1400b1bf0 L108717 朗誦品質（玩家）
+You enunciate crisply.	你咬字清晰。	你咬字清晰。		FUN_1400b1bf0 L108717 朗誦品質（玩家）
+You recite the words evocatively.	你朗誦得引人入勝。	你朗诵得引人入胜。		FUN_1400b1bf0 L108717 朗誦品質（玩家）
+You choose the perfect phrasing.	你的措辭恰到好處。	你的措辞恰到好处。		FUN_1400b1bf0 L108717 朗誦品質（玩家）
+You bring the poem to life with this flawless recitation.	你完美的朗誦讓這首詩活了起來。	你完美的朗诵让这首诗活了起来。		FUN_1400b1bf0 L108717 朗誦品質（玩家）
+You stumble over the details.	你講得結結巴巴，細節都亂了。	你讲得结结巴巴，细节都乱了。		FUN_1400b1bf0 L108717 說故事品質（玩家）
+You are telling the tale quite well.	你把故事講得相當好。	你把故事讲得相当好。		FUN_1400b1bf0 L108717 說故事品質（玩家）
+You tell the story in vivid detail.	你把故事講得繪聲繪影。	你把故事讲得绘声绘色。		FUN_1400b1bf0 L108717 說故事品質（玩家）
+You weave a mesmerizing tale!	你講了一個扣人心弦的故事！	你讲了一个扣人心弦的故事！		FUN_1400b1bf0 L108717 說故事品質（玩家）
+You sing sloppily.	你唱得亂七八糟。	你唱得乱七八糟。		FUN_1400b1bf0 L108717 音樂品質（玩家，無樂器）
+You chant sloppily.	你吟誦得亂七八糟。	你吟诵得乱七八糟。		FUN_1400b1bf0 L108717 音樂品質（玩家，無樂器）
+You sing sloppily and even forget some of the words.	你唱得亂七八糟，還忘了一些歌詞。	你唱得乱七八糟，还忘了一些歌词。		FUN_1400b1bf0 L108717 音樂品質（玩家，有詞）
+You chant sloppily and even forget some of the words.	你吟誦得亂七八糟，還忘了一些詞句。	你吟诵得乱七八糟，还忘了一些词句。		FUN_1400b1bf0 L108717 音樂品質（玩家，有詞）
+You are singing well.	你唱得很好。	你唱得很好。		FUN_1400b1bf0 L108717 音樂品質（玩家）
+You are chanting well.	你吟誦得很好。	你吟诵得很好。		FUN_1400b1bf0 L108717 音樂品質（玩家）
+You sing beautifully.	你唱得很美。	你唱得很美。		FUN_1400b1bf0 L108717 音樂品質（玩家）
+You chant beautifully.	你吟誦得很美。	你吟诵得很美。		FUN_1400b1bf0 L108717 音樂品質（玩家）
+Your song is absolutely flawless.	你的歌聲完美無瑕。	你的歌声完美无瑕。		FUN_1400b1bf0 L108717 音樂品質（玩家）
+Your chant is absolutely flawless.	你的吟誦完美無瑕。	你的吟诵完美无瑕。		FUN_1400b1bf0 L108717 音樂品質（玩家）
+You get tangled up.	你的腳步亂成一團。	你的脚步乱成一团。		FUN_1400b1bf0 L108717 舞蹈品質（玩家）
+You are dancing well.	你跳得很好。	你跳得很好。		FUN_1400b1bf0 L108717 舞蹈品質（玩家）
+You are dancing exceptionally.	你跳得非常出色。	你跳得非常出色。		FUN_1400b1bf0 L108717 舞蹈品質（玩家）
+You dance flawlessly, like someone out of a legend!	你的舞姿完美無瑕，宛如傳說中的人物！	你的舞姿完美无瑕，宛如传说中的人物！		FUN_1400b1bf0 L108717 舞蹈品質（玩家）
+You just can't give a sermon very well.	你實在不太會講道。	你实在不太会讲道。		FUN_1400b1bf0 L108717 講道品質（玩家）
+You are giving a creditable sermon.	你的講道可圈可點。	你的讲道可圈可点。		FUN_1400b1bf0 L108717 講道品質（玩家）
+You artfully deliver a lucid and powerful sermon.	你巧妙地發表了一場清晰有力的講道。	你巧妙地发表了一场清晰有力的讲道。		FUN_1400b1bf0 L108717 講道品質（玩家）
+You lay forth an awe-inspiring sermon for the ages!	你發表了一場令人敬畏、足以流傳千古的講道！	你发表了一场令人敬畏、足以流传千古的讲道！		FUN_1400b1bf0 L108717 講道品質（玩家）
+You begin playing make believe.	你開始玩扮家家酒。	你开始玩过家家。		FUN_1400ac470 L107045 冒險模式兒童遊戲（玩家）
+You are playing make believe.	你正在玩扮家家酒。	你正在玩过家家。		FUN_1400ac470 L107045 冒險模式兒童遊戲（玩家）
+It has no writing.	上面沒有文字。	上面没有文字。		FUN_1400b3df0 L108963 冒險模式閱讀
+The pages are blank.	書頁是空白的。	书页是空白的。		FUN_1400b3df0 L109064 冒險模式閱讀
+It has no pages.	它沒有書頁。	它没有书页。		FUN_1400b3df0 L109106 冒險模式閱讀
+Forms twisted from their nature, legion of the night.  What hope remains?	本性扭曲的形體，暗夜的大軍。還剩下什麼希望？	本性扭曲的形体，暗夜的大军。还剩下什么希望？		FUN_140110460 L173600 夜行生物軍團來襲（彈出框，整則）
+An army is invading!	一支軍隊入侵了！	一支军队入侵了！		FUN_140110460 L173609／173622 圍城公告開頭（也單獨出現）
+The enemy have come and are laying siege to the fortress.	敵軍來襲，正在圍攻要塞。	敌军来袭，正在围攻要塞。		FUN_140110460 L173844 圍城公告開頭
+A vile force of darkness has arrived!	邪惡的黑暗大軍來了！	邪恶的黑暗大军来了！		FUN_140110460 L173844 圍城公告開頭
+An army has come to your lands seeking a parley.	一支軍隊來到你的領地，要求談判。	一支军队来到你的领地，要求谈判。		FUN_140110460 L173844 圍城公告開頭（求和談）
+The enemy have come and are preparing to lay siege.  They seek a parley!	敵軍來襲，正準備圍城。他們要求談判！	敌军来袭，正准备围城。他们要求谈判！		FUN_140110460 L173844 圍城公告開頭（求和談，整則）
+The enemy have come and are preparing to lay siege.	敵軍來襲，正準備圍城。	敌军来袭，正准备围城。		FUN_140110460 L173844 同上，警報清單逐句切開時的前半句
+They seek a parley!	他們要求談判！	他们要求谈判！		FUN_140110460 L173844 同上，逐句切開時的後半句（後面接 [B] 段落時由句型 {%1}[B]… 收）
+A vile force of darkness has arrived, seeking a parley!	邪惡的黑暗大軍來了，要求談判！	邪恶的黑暗大军来了，要求谈判！		FUN_140110460 L173844 圍城公告開頭（求和談）
+come monstrous siege engineers	可怕的攻城器械師	可怕的攻城器械师		FUN_140110460 L173796 With them 段落片段（沒有隨行巨獸時）
+The dead walk.  Hide while you still can!	死者在世間遊蕩。趁還來得及，快躲起來！	死者在世间游荡。趁还来得及，快躲起来！		FUN_140110460 L173861 亡靈軍團來襲（整則）
+cave	洞穴	洞穴		FUN_1410cbe50 據點種類（DAT_14164c3ac）
+camp	營地	营地		FUN_1410cbe50 據點種類（DAT_141749a94）
+lair	巢穴	巢穴		FUN_1410cbe50 據點種類（DAT_1416761e0）
+fort	堡壘	堡垒		FUN_1410cbe50 據點種類（DAT_141619950）
+tomb	墓室	墓室		FUN_1410cbe50 據點種類（DAT_14162fa4c）；術語 tomb（draft）
+site	據點	据点		FUN_1410cbe50 據點種類（DAT_141675868）；術語 site（draft）
+shrine	神龕	神龛		FUN_1410cbe50 據點種類
+vault	寶庫	宝库		FUN_1410cbe50 據點種類
+labyrinth	迷宮	迷宫		FUN_1410cbe50 據點種類
+monument	紀念碑	纪念碑		FUN_1410cbe50 據點種類
+important location	重要地點	重要地点		FUN_1410cbe50 據點種類
+mysterious palace	神祕宮殿	神秘宫殿		FUN_1410cbe50 據點種類
+mysterious lair	神祕巢穴	神秘巢穴		FUN_1410cbe50 據點種類
+mysterious dungeon	神祕地牢	神秘地牢		FUN_1410cbe50 據點種類

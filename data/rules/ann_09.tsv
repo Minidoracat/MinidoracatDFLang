@@ -1,0 +1,152 @@
+en	zh-Hant	zh-Hans	align	note
+{1} has been misplaced.  No doubt {2} is to blame!	{1}不見了。肯定是{2}搞的鬼！	{1}不见了。肯定是{2}搞的鬼！		FUN_1413d5350 L2644709 鬼魂藏東西；{1} 物品、{2} 鬼魂；兩句相依整則寫
+{1} raises a high fever in {2}!	{1}讓{2}發高燒！	{1}让{2}发高烧！		FUN_1413d5350 L2644974 鬼魂折磨（case 1 隨機動詞 raises a high fever in）；{2} 冒險模式是 you
+{1} sucks the wind out of {2}!	{1}讓{2}喘不過氣！	{1}让{2}喘不过气！		FUN_1413d5350 L2644974 鬼魂折磨（case 1 隨機動詞 sucks the wind out of）；{2} 冒險模式是 you
+{1} inflicts excruciating pain upon {2}!	{1}讓{2}痛不欲生！	{1}让{2}痛不欲生！		FUN_1413d5350 L2644974 鬼魂折磨（case 1 隨機動詞 inflicts excruciating pain upon）；{2} 冒險模式是 you
+{1} paralyzes {2}!	{1}讓{2}全身癱瘓！	{1}让{2}全身瘫痪！		FUN_1413d5350 L2644974 鬼魂折磨（case 1 隨機動詞 paralyzes）；{2} 冒險模式是 you
+{1} stuns {2}!	{1}讓{2}陷入暈眩！	{1}让{2}陷入晕眩！		FUN_1413d5350 L2644974 鬼魂折磨（case 1 隨機動詞 stuns）；{2} 冒險模式是 you
+{1} causes a spell of dizziness in {2}!	{1}讓{2}感到一陣頭暈目眩！	{1}让{2}感到一阵头晕目眩！		FUN_1413d5350 L2644974 鬼魂折磨（case 1 隨機動詞 causes a spell of dizziness in）；{2} 冒險模式是 you
+{1} makes {2} convulse and retch!	{1}讓{2}抽搐乾嘔！	{1}让{2}抽搐干呕！		FUN_1413d5350 L2644974 鬼魂折磨（makes … convulse and retch）
+{1} batters {2}!	{1}痛毆{2}！	{1}痛殴{2}！		FUN_1413d5350 L2645083 鬼魂毆打；{2} 冒險模式是 you
+{1} is throwing a tantrum, possessed by {2}!	{1}被{2}附身，正在大發脾氣！	{1}被{2}附身，正在大发脾气！		FUN_1413d5350 L2645158 鬼魂附身；術語 possessed 附身、tantrum 大發脾氣
+{1} has risen and is haunting the fortress!	{1}的亡魂歸來，正在要塞裡作祟！	{1}的亡魂归来，正在要塞里作祟！		FUN_1413d5350 L2645257、L2646836 鬼魂出現
+{1} is following {2}!	{1}正跟著{2}！	{1}正跟着{2}！		FUN_1413d5350 L2645363 鬼魂尾隨；{2} 冒險模式是 you
+{1} can be heard howling throughout the fortress!	整座要塞都聽得到{1}的嚎叫聲！	整座要塞都听得到{1}的嚎叫声！		FUN_1413d5350 L2646315 嚎叫的鬼魂
+{1} is throwing objects around the fortress!	{1}正在要塞裡到處亂扔東西！	{1}正在要塞里到处乱扔东西！		FUN_1413d5350 L2646593 騷靈
+{1}'s mandate has ended.	{1}的命令已經結束。	{1}的命令已经结束。		FUN_1413b2a30 L2622127 貴族命令期滿；{1} 人名, 職業
+{1}'s mandates have ended.	{1}的命令都已經結束。	{1}的命令都已经结束。		FUN_1413b2a30 L2622127 同上，多條命令
+Your miners have defaced a {1}!	你的礦工毀損了{1}的一件傑作！	你的矿工毁损了{1}的一件杰作！		FUN_1413a78c0 L2615681 挖掉傑作級雕刻（雕刻品質 5）；{1} 是雕刻者的名字，原文直接接名字，譯文補「的一件傑作」
+{1} cannot find a path to its destination.	{1}找不到通往目的地的路。	{1}找不到通往目的地的路。		FUN_1413b89d0 L2626784 尋路失敗；{1} 是名字或種族名
+{%1} pulls out and releases {%2}.	{1}拔出{2}後鬆開了手。	{1}拔出{2}后松开了手。		FUN_141397100 L2606441 拔出插在身上的物品（手上抓著）
+{%1} pulls out and drops {%2}.	{1}拔出{2}，扔在地上。	{1}拔出{2}，扔在地上。		FUN_141397100 L2606441 同上，扔下
+{1} has grown attached to a {%2}!	{1}對{2}產生了依戀！	{1}对{2}产生了依恋！		FUN_1413cfbe0 L2641033 對物品產生感情
+{1} has bestowed the name {2} upon a {%3}!	{1}將{3}命名為{2}！	{1}将{3}命名为{2}！		FUN_1413cfbe0 L2641257 替心愛的物品命名；{2} 是名字
+{1} is missing from its proper place!	{1}不在它該在的位置上！	{1}不在它该在的位置上！		FUN_1413e6e20 L2655435 陳列物品不見；{1} 物品名（常是神器名，用 {n}）
+{1} has been moved from its proper place!	{1}被人從原本的位置移走了！	{1}被人从原本的位置移走了！		FUN_1413e6e20 L2655501
+{1} was seen being stolen!	有人看到{1}被偷走了！	有人看到{1}被偷走了！		FUN_1413e6e20 L2655555
+{1} was seen being passed to a thief!	有人看到{1}被交給了小偷！	有人看到{1}被交给了小偷！		FUN_1413e6e20 L2655602
+{%1} eats the {%2}.	{1}吃掉了{2}。	{1}吃掉了{2}。		FUN_1413e8800 L2656454 生物吃東西
+{%1} drinks the {%2}.	{1}喝下了{2}。	{1}喝下了{2}。		FUN_1413e8800 L2656525 生物喝東西
+{%1} reorganizes {@2} possessions.	{1}整理了自己的隨身物品。	{1}整理了自己的随身物品。		FUN_1413f5350 L2664743；{2} 是 his/her/its
+You breathe a cloud of {%1}!	你噴出一團{1}！	你喷出一团{1}！		FUN_1413c72b0 L2635366、FUN_1413c8f60 L2636541、FUN_1413c9ad0 L2636769、FUN_1413ca1d0 L2637049：冒險模式噴吐物質
+You breathe a glob of {%1}!	你吐出一坨{1}！	你吐出一坨{1}！		FUN_1413c80b0 L2635822：冒險模式吐出物質
+{%1} breathes a cloud of {%2}!	{1}噴出一團{2}！	{1}喷出一团{2}！		FUN_1413c72b0 L2635366、FUN_1413c8f60 L2636541、FUN_1413c9ad0 L2636769、FUN_1413ca1d0 L2637049：生物噴吐物質（raws 沒寫動詞時）
+{%1} breathes a glob of {%2}!	{1}吐出一坨{2}！	{1}吐出一坨{2}！		FUN_1413c80b0 L2635822
+{%1} vapor	{1}蒸氣	{1}蒸气		FUN_1413c72b0、FUN_1413c8f60：液態名＋ vapor（water vapor）；也是邪惡雲的名詞
+A cloud of {%1} has drifted nearby!	一團{1}飄到附近了！	一团{1}飘到附近了！		FUN_141447440 L2737281 邪惡雲飄近
+It is raining {%1}!	天上下起了{1}！	天上下起了{1}！		FUN_141447440 L2737549 邪惡雨
+It is raining  {%1}!	天上下起了{1}！	天上下起了{1}！		同上；邪惡雨的液態名開頭帶空白（evil.lua STATE_NAME_ADJ:LIQUID: X），所以 raining 後是兩個空白
+It is snowing {%1}!	天上飄起了{1}！	天上飘起了{1}！		FUN_141447440 L2737699 邪惡雪
+{@1} dust	{1}塵埃	{1}尘埃		FUN_141447440：邪惡天氣物質名（evil.lua 形容詞＋dust）；mist、slime、goo、muck 已在名稱字典，由 names.tsv 的 {@1} {@2} 接
+{@1} ash	{1}灰燼	{1}灰烬		FUN_141447440：邪惡天氣物質名（evil.lua 形容詞＋ash）；mist、slime、goo、muck 已在名稱字典，由 names.tsv 的 {@1} {@2} 接
+{@1} soot	{1}煤灰	{1}煤灰		FUN_141447440：邪惡天氣物質名（evil.lua 形容詞＋soot）；mist、slime、goo、muck 已在名稱字典，由 names.tsv 的 {@1} {@2} 接
+{@1} fog	{1}濃霧	{1}浓雾		FUN_141447440：邪惡天氣物質名（evil.lua 形容詞＋fog）；mist、slime、goo、muck 已在名稱字典，由 names.tsv 的 {@1} {@2} 接
+{@1} gloom	{1}陰霾	{1}阴霾		FUN_141447440：邪惡天氣物質名（evil.lua 形容詞＋gloom）；mist、slime、goo、muck 已在名稱字典，由 names.tsv 的 {@1} {@2} 接
+{@1} murk	{1}濁霧	{1}浊雾		FUN_141447440：邪惡天氣物質名（evil.lua 形容詞＋murk）；mist、slime、goo、muck 已在名稱字典，由 names.tsv 的 {@1} {@2} 接
+{@1} smoke	{1}煙霧	{1}烟雾		FUN_141447440：邪惡天氣物質名（evil.lua 形容詞＋smoke）；mist、slime、goo、muck 已在名稱字典，由 names.tsv 的 {@1} {@2} 接
+{@1} mucus	{1}黏液	{1}黏液		FUN_141447440：邪惡天氣物質名（evil.lua 形容詞＋mucus）；mist、slime、goo、muck 已在名稱字典，由 names.tsv 的 {@1} {@2} 接
+{@1} ooze	{1}軟泥	{1}软泥		FUN_141447440：邪惡天氣物質名（evil.lua 形容詞＋ooze）；mist、slime、goo、muck 已在名稱字典，由 names.tsv 的 {@1} {@2} 接
+{@1} sludge	{1}淤泥	{1}淤泥		FUN_141447440：邪惡天氣物質名（evil.lua 形容詞＋sludge）；mist、slime、goo、muck 已在名稱字典，由 names.tsv 的 {@1} {@2} 接
+{@1} filth	{1}穢物	{1}秽物		FUN_141447440：邪惡天氣物質名（evil.lua 形容詞＋filth）；mist、slime、goo、muck 已在名稱字典，由 names.tsv 的 {@1} {@2} 接
+{@1} slush	{1}爛泥	{1}烂泥		FUN_141447440：邪惡天氣物質名（evil.lua 形容詞＋slush）；mist、slime、goo、muck 已在名稱字典，由 names.tsv 的 {@1} {@2} 接
+{%1} spits!	{1}吐口水！	{1}吐口水！		FUN_1413e0da0（L2652006–2653681）互動能力：raws／程序生成的 CDI:VERB；也見噴吐函式（FUN_1413c72b0 等）raws 有動詞時
+{%1} squirts ink!	{1}噴出墨汁！	{1}喷出墨汁！		FUN_1413e0da0（L2652006–2653681）互動能力：raws／程序生成的 CDI:VERB；也見噴吐函式（FUN_1413c72b0 等）raws 有動詞時
+{%1} sprays a stream of steaming juice!	{1}噴出一道滾燙的汁液！	{1}喷出一道滚烫的汁液！		FUN_1413e0da0（L2652006–2653681）互動能力：raws／程序生成的 CDI:VERB；也見噴吐函式（FUN_1413c72b0 等）raws 有動詞時
+{%1} spits a glob of molten rock!	{1}吐出一坨熔岩！	{1}吐出一坨熔岩！		FUN_1413e0da0（L2652006–2653681）互動能力：raws／程序生成的 CDI:VERB；也見噴吐函式（FUN_1413c72b0 等）raws 有動詞時
+{%1} gestures!	{1}比了個手勢！	{1}比了个手势！		FUN_1413e0da0（L2652006–2653681）互動能力：raws／程序生成的 CDI:VERB；也見噴吐函式（FUN_1413c72b0 等）raws 有動詞時
+{%1} points!	{1}伸手一指！	{1}伸手一指！		FUN_1413e0da0（L2652006–2653681）互動能力：raws／程序生成的 CDI:VERB；也見噴吐函式（FUN_1413c72b0 等）raws 有動詞時
+{%1} holds up a hand!	{1}舉起一隻手！	{1}举起一只手！		FUN_1413e0da0（L2652006–2653681）互動能力：raws／程序生成的 CDI:VERB；也見噴吐函式（FUN_1413c72b0 等）raws 有動詞時
+{%1} clenches a fist!	{1}握緊拳頭！	{1}握紧拳头！		FUN_1413e0da0（L2652006–2653681）互動能力：raws／程序生成的 CDI:VERB；也見噴吐函式（FUN_1413c72b0 等）raws 有動詞時
+{%1} makes a flicking motion!	{1}做了個彈指的動作！	{1}做了个弹指的动作！		FUN_1413e0da0（L2652006–2653681）互動能力：raws／程序生成的 CDI:VERB；也見噴吐函式（FUN_1413c72b0 等）raws 有動詞時
+{%1} waves dismissively!	{1}不屑地揮了揮手！	{1}不屑地挥了挥手！		FUN_1413e0da0（L2652006–2653681）互動能力：raws／程序生成的 CDI:VERB；也見噴吐函式（FUN_1413c72b0 等）raws 有動詞時
+{%1} calls upon the night!	{1}召喚黑夜！	{1}召唤黑夜！		FUN_1413e0da0（L2652006–2653681）互動能力：raws／程序生成的 CDI:VERB；也見噴吐函式（FUN_1413c72b0 等）raws 有動詞時
+{%1} focuses!	{1}集中精神！	{1}集中精神！		FUN_1413e0da0（L2652006–2653681）互動能力：raws／程序生成的 CDI:VERB；也見噴吐函式（FUN_1413c72b0 等）raws 有動詞時
+{%1} raises a heavy fog.	{1}召來一片濃霧。	{1}召来一片浓雾。		FUN_1413e0da0 L2652095 改變天氣
+{%1} vanishes.	{1}消失了。	{1}消失了。		FUN_1413e0da0 L2652173 隱身
+{%1} pets {%2}.	{1}撫摸{2}。	{1}抚摸{2}。		FUN_1413e0da0 L2652006、L2652293 互相清理／接觸；{2} 可能是 you／yourself／himself 等；術語例外：pet
+{%1} licks {%2}.	{1}舔了舔{2}。	{1}舔了舔{2}。		FUN_1413e0da0 L2652006、L2652293 互相清理／接觸；{2} 可能是 you／yourself／himself 等
+{%1} head-bumps {%2}.	{1}用頭蹭了蹭{2}。	{1}用头蹭了蹭{2}。		FUN_1413e0da0 L2652006、L2652293 互相清理／接觸；{2} 可能是 you／yourself／himself 等
+{%1} tusks {%2}.	{1}用長牙頂了頂{2}。	{1}用长牙顶了顶{2}。		FUN_1413e0da0 L2652006、L2652293 互相清理／接觸；{2} 可能是 you／yourself／himself 等
+{%1} barks.	{1}吠叫。	{1}吠叫。		FUN_1413db000 L2647466 生物叫聲（raws SOUND）
+{%1} whistles.	{1}發出哨音。	{1}发出哨音。		FUN_1413db000 L2647466 生物叫聲（raws SOUND）
+{%1} grunts.	{1}發出咕噥聲。	{1}发出咕哝声。		FUN_1413db000 L2647466 生物叫聲（raws SOUND）
+{%1} purrs.	{1}發出呼嚕聲。	{1}发出呼噜声。		FUN_1413db000 L2647466 生物叫聲（raws SOUND）
+{%1} clicks.	{1}發出喀喀聲。	{1}发出咔咔声。		FUN_1413db000 L2647466 生物叫聲（raws SOUND）
+{%1} booms.	{1}發出低沉的轟鳴。	{1}发出低沉的轰鸣。		FUN_1413db000 L2647466 生物叫聲（raws SOUND）
+{%1} chings.	{1}發出金屬般的叮聲。	{1}发出金属般的叮声。		FUN_1413db000 L2647466 生物叫聲（raws SOUND）
+{%1} whistles harshly.	{1}發出刺耳的哨音。	{1}发出刺耳的哨音。		FUN_1413db000 L2647466 生物叫聲（raws SOUND）
+{%1} blows softly.	{1}輕輕吹氣。	{1}轻轻吹气。		FUN_1413db000 L2647466 生物叫聲（raws SOUND）
+{%1} toots.	{1}發出嘟嘟聲。	{1}发出嘟嘟声。		FUN_1413db000 L2647466 生物叫聲（raws SOUND）
+{1} has been found dead.	{1}被發現死了。	{1}被发现死了。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has been found, starved to death.	{1}被發現時已經餓死了。	{1}被发现时已经饿死了。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has been found dead, dehydrated.	{1}被發現死了，死因是脫水。	{1}被发现死了，死因是脱水。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has been found dead, drowned.	{1}被發現死了，死因是溺水。	{1}被发现死了，死因是溺水。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has been found scuttled.	{1}被發現時已遭拆毀。	{1}被发现时已遭拆毁。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has been found dead, badly burned.	{1}被發現死了，全身嚴重燒傷。	{1}被发现死了，全身严重烧伤。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has been found dead, badly crushed.	{1}被發現死了，身體嚴重壓傷。	{1}被发现死了，身体严重压伤。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has been found dead, frozen.	{1}被發現死了，全身凍僵。	{1}被发现死了，全身冻僵。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has been found boiled.	{1}被發現時已經沸騰蒸發。	{1}被发现时已经沸腾蒸发。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has been found melted.	{1}被發現時已經融化。	{1}被发现时已经融化。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has been found condensed.	{1}被發現時已經凝結。	{1}被发现时已经凝结。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has been found solidified.	{1}被發現時已經凝固。	{1}被发现时已经凝固。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has been found dead, contorted in fear!	{1}被發現死了，身體因恐懼而扭曲！	{1}被发现死了，身体因恐惧而扭曲！		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has been found dead, completely drained of blood!	{1}被發現死了，全身的血都被吸乾了！	{1}被发现死了，全身的血都被吸干了！		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has died of old age.	{1}壽終正寢了。	{1}寿终正寝了。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has starved to death.	{1}餓死了。	{1}饿死了。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has died of thirst.	{1}渴死了。	{1}渴死了。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has been shot and killed.	{1}被射殺了。	{1}被射杀了。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has bled to death.	{1}失血而死。	{1}失血而死。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has drowned.	{1}溺死了。	{1}溺死了。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has suffocated.	{1}窒息而死。	{1}窒息而死。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has been struck down.	{1}被擊倒身亡。	{1}被击倒身亡。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has been scuttled.	{1}被拆毀了。	{1}被拆毁了。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has died after colliding with an obstacle.	{1}撞上障礙物而死。	{1}撞上障碍物而死。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has burned up in magma.	{1}在熔岩中燒成了灰。	{1}在熔岩中烧成了灰。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has burned up in a magma mist.	{1}在熔岩霧中燒成了灰。	{1}在熔岩雾中烧成了灰。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has burned up in dragon fire.	{1}在龍焰中燒成了灰。	{1}在龙焰中烧成了灰。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has burned to death.	{1}被燒死了。	{1}被烧死了。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has been scalded to death.	{1}被燙死了。	{1}被烫死了。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has been crushed under the collapsing ceiling.	{1}被崩塌的頂板壓死了。	{1}被崩塌的顶板压死了。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has been crushed by a drawbridge.	{1}被升降橋壓死了。	{1}被升降桥压死了。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has been killed by falling rocks.	{1}被落石砸死了。	{1}被落石砸死了。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has fallen into a deep chasm.	{1}墜入了深深的裂谷。	{1}坠入了深深的裂谷。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has died in a cage.	{1}死在籠子裡。	{1}死在笼子里。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has been murdered by somebody!	{1}被人謀殺了！	{1}被人谋杀了！		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has been killed by a trap.	{1}被陷阱殺死了。	{1}被陷阱杀死了。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has vanished.	{1}消失了。	{1}消失了。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has died in the heat.	{1}熱死了。	{1}热死了。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has frozen to death.	{1}凍死了。	{1}冻死了。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has been impaled on spikes.	{1}被尖刺刺穿了。	{1}被尖刺刺穿了。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has been encased in cooling lava.	{1}被冷卻的熔岩封在裡面了。	{1}被冷却的熔岩封在里面了。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has been encased in cooling magma.	{1}被冷卻的熔岩封在裡面了。	{1}被冷却的熔岩封在里面了。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has been encased in ice.	{1}被封在冰裡了。	{1}被封在冰里了。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has been beheaded.	{1}被斬首了。	{1}被斩首了。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has been crucified.	{1}被釘上十字架了。	{1}被钉上十字架了。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has been buried alive.	{1}被活埋了。	{1}被活埋了。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has been executed by drowning.	{1}被處以溺刑。	{1}被处以溺刑。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has been burned alive.	{1}被活活燒死了。	{1}被活活烧死了。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has been fed to beasts.	{1}被拿去餵野獸了。	{1}被拿去喂野兽了。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has been hacked to pieces.	{1}被砍成碎塊了。	{1}被砍成碎块了。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has been executed by being left out in the air.	{1}被留在戶外處決了。	{1}被留在户外处决了。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has boiled.	{1}沸騰蒸發了。	{1}沸腾蒸发了。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has melted.	{1}融化了。	{1}融化了。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has condensed.	{1}凝結了。	{1}凝结了。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has solidified.	{1}凝固了。	{1}凝固了。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has succumbed to infection.	{1}死於感染。	{1}死于感染。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has been put to rest.	{1}得到了安息。	{1}得到了安息。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has been scared to death!	{1}被嚇死了！	{1}被吓死了！		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has died in the dark.	{1}死在黑暗之中。	{1}死在黑暗之中。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has collapsed.	{1}倒地身亡。	{1}倒地身亡。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has been drained of blood!	{1}被吸乾了血！	{1}被吸干了血！		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has been drained of blood by somebody!	{1}被人吸乾了血！	{1}被人吸干了血！		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has been slaughtered.	{1}被宰殺了。	{1}被宰杀了。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has been killed by a vehicle.	{1}被礦車撞死了。	{1}被矿车撞死了。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has been killed by a flying object.	{1}被飛來的物體砸死了。	{1}被飞来的物体砸死了。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has leapt from a great height.	{1}從高處跳下身亡。	{1}从高处跳下身亡。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has been executed.	{1}被處決了。	{1}被处决了。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has been murdered by {2}!	{1}被{2}謀殺了！	{1}被{2}谋杀了！		FUN_1413e5b20 L2654713 死亡公告片段（接在「{1} has 」／「You have 」後）：case 0x14，{1} 兇手名
+You have been murdered by {1}!	你被{1}謀殺了！	你被{1}谋杀了！		FUN_1413e5b20 L2654713 死亡公告片段（接在「{1} has 」／「You have 」後）：case 0x14，{1} 兇手名；冒險模式
+{1} has been scared to death by {2}!	{1}被{2}嚇死了！	{1}被{2}吓死了！		FUN_1413e5b20 L2654713 死亡公告片段（接在「{1} has 」／「You have 」後）：case 0x2d
+You have been scared to death by {1}!	你被{1}嚇死了！	你被{1}吓死了！		FUN_1413e5b20 L2654713 死亡公告片段（接在「{1} has 」／「You have 」後）：case 0x2d；冒險模式
+{1} has been drained of blood by {2}!	{1}被{2}吸乾了血！	{1}被{2}吸干了血！		FUN_1413e5b20 L2654713 死亡公告片段（接在「{1} has 」／「You have 」後）：case 0x30
+You have been drained of blood by {1}!	你被{1}吸乾了血！	你被{1}吸干了血！		FUN_1413e5b20 L2654713 死亡公告片段（接在「{1} has 」／「You have 」後）：case 0x30；冒險模式

@@ -1,0 +1,68 @@
+en	zh-Hant	zh-Hans	align	note
+You strap {%1} to your {%2}.	你把{1}綁到{2}上。	你把{1}绑到{2}上。		FUN_1407f7020 1143080：{1} 物品、{2} 身體部位（遊戲把首字大寫）
+You do not have a free grasp for {%1}.	你沒有空著的手可以拿{1}。	你没有空着的手可以拿{1}。		FUN_1407f7020 1143130
+You draw {%1} with your {%2}.	你用{2}拔出{1}。	你用{2}拔出{1}。		FUN_1407f7020 1143155：{2} 身體部位
+You don't have any ammunition for {%1}.	你沒有{1}能用的彈藥。	你没有{1}能用的弹药。		FUN_1407f7020 1143430
+{%1} is already prepared to shoot.	{1}已經準備好發射了。	{1}已经准备好发射了。		FUN_1407f7020 1143500：物品名首字大寫
+You've found a colony of {%1} and another small creature.	你找到了一窩{1}，還有另一隻小生物。	你找到了一窝{1}，还有另一只小生物。		FUN_1407f7020 0x1407fd1de：{1} 生物複數名
+You've found a colony of {%1} and some other small creatures.	你找到了一窩{1}，還有其他一些小生物。	你找到了一窝{1}，还有其他一些小生物。		FUN_1407f7020 0x1407fd1e7
+You've found a colony of {%1}.	你找到了一窩{1}。	你找到了一窝{1}。		FUN_1407f7020 1143810
+A {%1} cannot climb.	{1}不會攀爬。	{1}不会攀爬。		FUN_1407f7020 1145917：{1} 種族單數名（冠詞固定是 A）
+You pick up the {%1} and put it in your {%2}.	你撿起{1}，放進你的{2}。	你捡起{1}，放进你的{2}。		FUN_1408039b0 1147818/1147976：{2} 容器
+{1} picks up the {%2} and puts it in {@3} {%4}.	{1}撿起{2}，放進{3}的{4}。	{1}捡起{2}，放进{3}的{4}。		FUN_1408039b0 1147976：{1} 生物稱呼、{3} his/her/its
+{1} picks up the {%2} and put it in {@3} {%4}.	{1}撿起{2}，放進{3}的{4}。	{1}捡起{2}，放进{3}的{4}。		FUN_1408039b0 1147827：遊戲在第三人稱也寫 put（原樣照抄）
+You pick up the {%1} with your {%2}.	你用{2}撿起{1}。	你用{2}捡起{1}。		FUN_1408039b0 0x140803f02（1148621）：{2} 身體部位，取不到時是 body part(s)
+{1} picks up the {%2} with {@3} {%4}.	{1}用{3}的{4}撿起{2}。	{1}用{3}的{4}捡起{2}。		FUN_1408039b0 同上，第三人稱
+You pull off the {%1} with your {%2}.	你用{2}把{1}扯了下來。	你用{2}把{1}扯了下来。		FUN_1408039b0 同上（pull off）
+{1} pulls off the {%2} with {@3} {%4}.	{1}用{3}的{4}把{2}扯了下來。	{1}用{3}的{4}把{2}扯了下来。		FUN_1408039b0 同上，第三人稱
+You've located a {%1} right under you!	你發現腳下就有{1}！	你发现脚下就有{1}！		FUN_140805600 1148958：{1} 物品
+You've located a {%1} above and to the {@2}!	你發現上層{2}有{1}！	你发现上层{2}有{1}！		FUN_140805600 1148975：{2} 方位（north 等，在 ann_10）
+You've located a {%1} below and to the {@2}!	你發現下層{2}有{1}！	你发现下层{2}有{1}！		FUN_140805600 1148978
+You've located a {%1} to the {@2}!	你發現{2}有{1}！	你发现{2}有{1}！		FUN_140805600 1148984
+{1} says, "{%2}"	{1}說：「{2}」	{1}说：“{2}”		FUN_140806230 1150848：人名＋說話內容（內容少於 40 字）
+{1} says:  "{%2}"	{1}說：「{2}」	{1}说：“{2}”		FUN_140806230 1150852：內容 40 字以上
+We must not abandon {1}!	我們不能丟下{1}！	我们不能丢下{1}！		FUN_140806230 1150787：{1} 名稱
+You cannot travel through the {%1}.	你無法穿越{1}。	你无法穿越{1}。		FUN_1408189b0 1160105：{1} 據點種類（可帶 dark）
+You have discovered a {%1}.	你發現了{1}。	你发现了{1}。		FUN_1408189b0 1160175：同上（遊戲固定寫 a）
+You roll, testing the will of {1}.	你擲出骰子，試探{1}的旨意。	你掷出骰子，试探{1}的旨意。		FUN_1408300d0 1172931：{1} 神名
+You roll, divining the will of {1} according to the practice of {2}.	你依{2}的儀軌擲出骰子，占卜{1}的旨意。	你依{2}的仪轨掷出骰子，占卜{1}的旨意。		FUN_1408300d0 1172942：{2} 文明／宗教名
+{%1} lands on a word but you cannot read.	{1}停在一個字上，但你看不懂。	{1}停在一个字上，但你看不懂。		FUN_1408300d0 1173068：{1} 骰子（首字大寫）
+{%1} comes up a word but you cannot read.	{1}擲出一個字，但你看不懂。	{1}掷出一个字，但你看不懂。		FUN_1408300d0 同上
+{%1} shows a word but you cannot read.	{1}顯示出一個字，但你看不懂。	{1}显示出一个字，但你看不懂。		FUN_1408300d0 同上
+{%1} lands on {%2}.	{1}停在{2}那一面。	{1}停在{2}那一面。		FUN_1408300d0 1173039：{2} 骰面圖案（FUN_14085da20）
+{%1} comes up {%2}.	{1}擲出了{2}。	{1}掷出了{2}。		FUN_1408300d0 1173045
+{%1} shows {%2}.	{1}顯示出{2}。	{1}显示出{2}。		FUN_1408300d0 1173049
+the word "{1}"	「{1}」字樣	“{1}”字样		FUN_14085da20 1200651：骰面文字（{1} 是遊戲語言的詞）
+You already know the will of {1}.	你已經知道{1}的旨意了。	你已经知道{1}的旨意了。		FUN_1408300d0 1173130/1173203
+Why wasn't {1}, a jealous deity, consulted first?	為什麼不先求問{1}這位善妒的神祇？	为什么不先求问{1}这位善妒的神祇？		FUN_1408300d0 1173367
+Don't you know that {1} is a jealous deity?	你難道不知道{1}是善妒的神祇嗎？	你难道不知道{1}是善妒的神祇吗？		FUN_1408300d0 1173469
+Praise {1} for ignoring your hubris.	讚美{1}，不與你的狂妄計較。	赞美{1}，不与你的狂妄计较。		FUN_1408300d0 1173238
+{@1} without bound.	無盡的{1}。	无尽的{1}。		FUN_1408300d0 1173253：{1} 神祇領域名（首字大寫，FUN_140756690，在 speech_01）
+{@1} without bounds.	無盡的{1}。	无尽的{1}。		FUN_1408300d0 同上（隨機加 s）
+Such is the spirit of {@1}.	這正是{1}的精神。	这正是{1}的精神。		FUN_1408300d0 1173300
+Such {@1}!	何等的{1}！	何等的{1}！		FUN_1408300d0 1173295
+Infinite {@1}!	無限的{1}！	无限的{1}！		FUN_1408300d0 1173308
+Oh tender {@1}!	噢，溫柔的{1}！	噢，温柔的{1}！		FUN_1408300d0 1173319
+Oh sweet {@1}!	噢，甜美的{1}！	噢，甜美的{1}！		FUN_1408300d0 1173323
+{1} has been granted healing!	{1}獲得了治癒！	{1}获得了治愈！		同 You have been…，第三人稱（IS_TRIGGER_STRING_THIRD has）；{1} 人名, 職業
+{1} has been blessed with a week's good fortune!	{1}蒙受祝福，接下來一週都會有好運！	{1}蒙受祝福，接下来一周都会有好运！		同 You have been…，第三人稱（IS_TRIGGER_STRING_THIRD has）；{1} 人名, 職業
+{1} has been blessed with improved equipment!	{1}蒙受祝福，裝備變得更好了！	{1}蒙受祝福，装备变得更好了！		同 You have been…，第三人稱（IS_TRIGGER_STRING_THIRD has）；{1} 人名, 職業
+{1} has been blessed with a pet!	{1}蒙受祝福，獲賜一隻寵物！	{1}蒙受祝福，获赐一只宠物！		同 You have been…，第三人稱（IS_TRIGGER_STRING_THIRD has）；{1} 人名, 職業
+{1} has been blessed with a holyweapon!	{1}蒙受祝福，獲賜一把神聖武器！	{1}蒙受祝福，获赐一把神圣武器！		同 You have been…，第三人稱（IS_TRIGGER_STRING_THIRD has）；{1} 人名, 職業
+{1} has been blessed with a holyshield!	{1}蒙受祝福，獲賜一面神聖盾牌！	{1}蒙受祝福，获赐一面神圣盾牌！		同 You have been…，第三人稱（IS_TRIGGER_STRING_THIRD has）；{1} 人名, 職業
+{1} has been blessed with holybodywear!	{1}蒙受祝福，獲賜神聖的上身護具！	{1}蒙受祝福，获赐神圣的上身护具！		同 You have been…，第三人稱（IS_TRIGGER_STRING_THIRD has）；{1} 人名, 職業
+{1} has been blessed with holylegwear!	{1}蒙受祝福，獲賜神聖的腿部護具！	{1}蒙受祝福，获赐神圣的腿部护具！		同 You have been…，第三人稱（IS_TRIGGER_STRING_THIRD has）；{1} 人名, 職業
+{1} has been blessed with holyheadwear!	{1}蒙受祝福，獲賜神聖的頭部護具！	{1}蒙受祝福，获赐神圣的头部护具！		同 You have been…，第三人稱（IS_TRIGGER_STRING_THIRD has）；{1} 人名, 職業
+{1} has been blessed with holyhandwear!	{1}蒙受祝福，獲賜神聖的手部護具！	{1}蒙受祝福，获赐神圣的手部护具！		同 You have been…，第三人稱（IS_TRIGGER_STRING_THIRD has）；{1} 人名, 職業
+{1} has been blessed with holyfootwear!	{1}蒙受祝福，獲賜神聖的足部護具！	{1}蒙受祝福，获赐神圣的足部护具！		同 You have been…，第三人稱（IS_TRIGGER_STRING_THIRD has）；{1} 人名, 職業
+{1} has been infected with a contagious ghoulish condition	{1}感染了會傳染的食屍鬼病。	{1}感染了会传染的食尸鬼病。		同 You have been…，第三人稱（IS_TRIGGER_STRING_THIRD has）；{1} 人名, 職業
+You fill your {%1} with {%2}.	你把{1}裝滿了{2}。	你把{1}装满了{2}。		FUN_1408360a0／FUN_140837150 1177602：{2} 液體或物品（前面若有汙染物名稱會整句照英文）
+Your {%1} is already full.	你的{1}已經滿了。	你的{1}已经满了。		FUN_1408360a0／FUN_140837150
+It won't fit in your {%1}.	你的{1}裝不下了。	你的{1}装不下了。		FUN_1408360a0／FUN_140837150
+{%1} is empty.	{1}是空的。	{1}是空的。		FUN_1408360a0 1176723
+The {%1} is hot enough already.	{1}已經夠燙了。	{1}已经够烫了。		FUN_140836b20 1177206
+You heat the {%1} to no effect.	你加熱了{1}，但沒有效果。	你加热了{1}，但没有效果。		FUN_140836b20 1177143
+You heat the {%1}.	你加熱了{1}。	你加热了{1}。		FUN_140836b20 0x140836da1
+You pull out {%1}.	你拿出了{1}。	你拿出了{1}。		FUN_140834410 1175453
+You cease nocking {%1}.	你不再把{1}搭在弦上。	你不再把{1}搭在弦上。		FUN_140834eb0 1175942
+You read {1}.	你閱讀了{1}。	你阅读了{1}。		FUN_140833df0 1175183：{1} 書名等（書名不翻）

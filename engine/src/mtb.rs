@@ -290,10 +290,12 @@ pub fn wrap(text: &str, width: usize, base: [u8; 3], rgb: impl Fn([u8; 3]) -> [u
                 } else if lines.last().is_none_or(|l| l.py != y) {
                     new_line(&mut lines, x, y);
                 } else if gap == 1 {
-                    // 空白跟前一個字同色，才不會多拆出一段
+                    // 空白跟前一個字同色，才不會多拆出一段；空白也佔一格
                     let line = lines.last_mut().unwrap();
                     let prev = line.parts.last().map_or(color, |p| p.2);
                     line.parts.push((" ".to_owned(), 1, prev));
+                    x += 1;
+                    remaining -= 1;
                 }
                 x += w;
                 remaining -= w;
@@ -431,6 +433,8 @@ mod tests {
     fn latin_words_stay_whole_and_keep_spaces() {
         assert_eq!(lines("按 Esc 鍵離開", 20), ["0,0:按 Esc 鍵離開"]);
         assert_eq!(lines("按住 Shift 鍵", 6), ["0,0:按住", "0,1:Shift", "0,2:鍵"]);
+        // 名字裡的空白也佔一格：寬 14 格放不下「來自The Razor」（13 格）再加「的」
+        assert_eq!(lines("來自The Razor的商隊", 14), ["0,0:來自The Razor", "0,1:的商隊"]);
     }
 
     #[test]

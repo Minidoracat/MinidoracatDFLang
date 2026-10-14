@@ -270,7 +270,7 @@ Adequate	合格	合格	skill	draft		技能等級 2；想法句「not having adeq
 Competent	稱職	称职	skill	approved		技能等級 3
 Skilled	熟練	熟练	skill	approved		技能等級 4
 Proficient	純熟	纯熟	skill	approved		技能等級 5
-Talented	出色	出色	skill	approved		技能等級 6
+Talented	出色	出色	skill	draft		技能等級 6；反例：形容詞 a talented commander 譯「才華洋溢的指揮官」（第七輪）
 Adept	老練	老练	skill	approved		技能等級 7
 Expert	專家	专家	skill	approved		技能等級 8
 Professional	資深	资深	skill	draft		技能等級 9；知識主題「the use of professional hospital staff」是「專業」醫院人員

@@ -1,0 +1,523 @@
+en	zh-Hant	zh-Hans	align	note
+I worship {1}.	我信奉{1}。	我信奉{1}。		FUN_140660870 883041：{1} 神祇名
+{1} is a murderer.	{1}是個殺人犯。	{1}是个杀人犯。		FUN_140660870 883328 case 2；也是名聲 case 7 最低級：{1} 人名或 He/She/It
+{1} is an enemy.	{1}是敵人。	{1}是敌人。		FUN_140660870 883338 case 8：{1} 人名或 He/She/It
+{1} is a friend.	{1}是朋友。	{1}是朋友。		FUN_140660870 883344 case 9；也是好感度 ≥50：{1} 人名或 He/She/It
+{1} is unstable.	{1}精神不穩定。	{1}精神不稳定。		FUN_140660870 883351 case 0xe：{1} 人名或 He/She/It
+{1} is gladly not of the living.	{1}已欣然脫離生者之列。	{1}已欣然脱离生者之列。		FUN_140660870 883357 case 0xf（亡靈陣營看亡靈）：{1} 人名或 He/She/It
+{1} is of the living and must be killed.	{1}是活人，非殺不可。	{1}是活人，非杀不可。		FUN_140660870 883364 case 0x10：{1} 人名或 He/She/It
+{1} is not of the living.	{1}已不在生者之列。	{1}已不在生者之列。		FUN_140660870 883371 case 0x11：{1} 人名或 He/She/It
+{1} is the same as me.	{1}跟我一樣。	{1}跟我一样。		FUN_140660870 883381 case 0x12：{1} 人名或 He/She/It
+{1} is an animal.	{1}是動物。	{1}是动物。		FUN_140660870 883389 case 0x13：{1} 人名或 He/She/It
+{1} is a safe creature.	{1}是無害的生物。	{1}是无害的生物。		FUN_140660870 883399 case 0x14：{1} 人名或 He/She/It
+{1} is a dangerous animal.	{1}是危險的動物。	{1}是危险的动物。		FUN_140660870 883406 case 0x15：{1} 人名或 He/She/It
+{1} is my prisoner.	{1}是我的囚犯。	{1}是我的囚犯。		FUN_140660870 883412 case 0x17：{1} 人名或 He/She/It
+{1} is my master.	{1}是我的師父。	{1}是我的师父。		FUN_140660870 883419 case 0x18：{1} 人名或 He/She/It
+{1} is my apprentice.	{1}是我的徒弟。	{1}是我的徒弟。		FUN_140660870 883426 case 0x19：{1} 人名或 He/She/It
+{1} is my traveling companion.	{1}是我的旅伴。	{1}是我的旅伴。		FUN_140660870 883433 case 0x1a：{1} 人名或 He/She/It
+{1} is my lover.	{1}是我的戀人。	{1}是我的恋人。		FUN_140660870 883440 case 0x1b：{1} 人名或 He/She/It
+{1} is my enemy.	{1}是我的敵人。	{1}是我的敌人。		FUN_140660870 883453 case 0x1d：{1} 人名或 He/She/It
+{1} is a monster.	{1}是個怪物。	{1}是个怪物。		FUN_140660870 883464 case 0x1e；也是名聲 case 0x10：{1} 人名或 He/She/It
+{1} is my former master.	{1}是我以前的師父。	{1}是我以前的师父。		FUN_140660870 883474 case 0x1f：{1} 人名或 He/She/It
+{1} is my former apprentice.	{1}是我以前的徒弟。	{1}是我以前的徒弟。		FUN_140660870 883481 case 0x20：{1} 人名或 He/She/It
+{1} is an intruder.	{1}是個入侵者。	{1}是个入侵者。		FUN_140660870 883489 case 0x22；也是名聲 case 0x1d：{1} 人名或 He/She/It
+{1} is my neighbor.	{1}是我的鄰居。	{1}是我的邻居。		FUN_140660870 885237 沒有其他話可說且 case 0x16：{1} 人名或 He/She/It
+I hate {1}, and now we can all see why.	我恨{1}，現在大家都明白為什麼了。	我恨{1}，现在大家都明白为什么了。		FUN_140660870 883685/883704：{1} him/her/it/you
+I hate {1}.	我恨{1}。	我恨{1}。		FUN_140660870 883444 case 0x1c（{1} 人名或 you）、883685 好感度 -75～-99（him/her/it/you）
+I loathe {1} with every fiber of my being, and now we can all see why.	我打從心底厭惡{1}，現在大家都明白為什麼了。	我打心底里厌恶{1}，现在大家都明白为什么了。		FUN_140660870 883682 好感度 ≤-100：{1} him/her/it/you
+I loathe {1} with every fiber of my being.	我打從心底厭惡{1}。	我打心底里厌恶{1}。		FUN_140660870 883682 好感度 ≤-100：{1} him/her/it/you
+I never liked {1}, and now we can all see why.	我從來就不喜歡{1}，現在大家都明白為什麼了。	我从来就不喜欢{1}，现在大家都明白为什么了。		FUN_140660870 883689 好感度 -50～-74：{1} him/her/it/you
+I never liked {1}.	我從來就不喜歡{1}。	我从来就不喜欢{1}。		FUN_140660870 883689 好感度 -50～-74：{1} him/her/it/you
+It is my misfortune that {1} is my {%2}.	不幸的是，{1}是我的{2}。	不幸的是，{1}是我的{2}。		FUN_140660870 883505：已知身分之後補的親屬句；{1} He/She/It（遊戲原文大寫），{2} 親屬稱謂（FUN_14075a580）
+It is my misfortune that You are my {%1}.	不幸的是，你是我的{1}。	不幸的是，你是我的{1}。		FUN_140660870 883505：同上，對聽者本人說
+{1} is a friend, but that bond seems so thin now.	{1}是朋友，但如今那份情誼顯得如此淡薄。	{1}是朋友，但如今那份情谊显得如此淡薄。		FUN_140660870 883724 好感度 ≥50（≥75 摯友、≥100 知己）：{1} He/She/It
+{1} is a close friend.	{1}是摯友。	{1}是挚友。		FUN_140660870 883724 好感度 ≥50（≥75 摯友、≥100 知己）：{1} He/She/It
+{1} is a close friend, but that bond seems so thin now.	{1}是摯友，但如今那份情誼顯得如此淡薄。	{1}是挚友，但如今那份情谊显得如此淡薄。		FUN_140660870 883724 好感度 ≥50（≥75 摯友、≥100 知己）：{1} He/She/It
+{1} is a kindred spirit.	{1}是知己。	{1}是知己。		FUN_140660870 883724 好感度 ≥50（≥75 摯友、≥100 知己）：{1} He/She/It
+{1} is a kindred spirit, but that bond seems so thin now.	{1}是知己，但如今那份情誼顯得如此淡薄。	{1}是知己，但如今那份情谊显得如此淡薄。		FUN_140660870 883724 好感度 ≥50（≥75 摯友、≥100 知己）：{1} He/She/It
+{1} is brave.	{1}很勇敢。	{1}很勇敢。		FUN_140660870 883812 名聲 case 0 勇敢（依程度五級）：{1} He/She/It
+{1} is brave, but those acts bring no forgiveness.	{1}很勇敢，但那些作為換不來寬恕。	{1}很勇敢，但那些作为换不来宽恕。		FUN_140660870 883812 名聲 case 0 勇敢（依程度五級）：{1} He/She/It
+{1} is also brave.	{1}也很勇敢。	{1}也很勇敢。		FUN_140660870 883812 名聲 case 0 勇敢（依程度五級）：{1} He/She/It
+{1} is also brave, but those acts bring no forgiveness.	{1}也很勇敢，但那些作為換不來寬恕。	{1}也很勇敢，但那些作为换不来宽恕。		FUN_140660870 883812 名聲 case 0 勇敢（依程度五級）：{1} He/She/It
+{1} is so very brave.	{1}非常勇敢。	{1}非常勇敢。		FUN_140660870 883812 名聲 case 0 勇敢（依程度五級）：{1} He/She/It
+{1} is so very brave, but those acts bring no forgiveness.	{1}非常勇敢，但那些作為換不來寬恕。	{1}非常勇敢，但那些作为换不来宽恕。		FUN_140660870 883812 名聲 case 0 勇敢（依程度五級）：{1} He/She/It
+{1} is also so very brave.	{1}也非常勇敢。	{1}也非常勇敢。		FUN_140660870 883812 名聲 case 0 勇敢（依程度五級）：{1} He/She/It
+{1} is also so very brave, but those acts bring no forgiveness.	{1}也非常勇敢，但那些作為換不來寬恕。	{1}也非常勇敢，但那些作为换不来宽恕。		FUN_140660870 883812 名聲 case 0 勇敢（依程度五級）：{1} He/She/It
+{1} is a hero.	{1}是英雄。	{1}是英雄。		FUN_140660870 883812 名聲 case 0 勇敢（依程度五級）：{1} He/She/It
+{1} is a hero, but those acts bring no forgiveness.	{1}是英雄，但那些作為換不來寬恕。	{1}是英雄，但那些作为换不来宽恕。		FUN_140660870 883812 名聲 case 0 勇敢（依程度五級）：{1} He/She/It
+{1} is also a hero.	{1}也是英雄。	{1}也是英雄。		FUN_140660870 883812 名聲 case 0 勇敢（依程度五級）：{1} He/She/It
+{1} is also a hero, but those acts bring no forgiveness.	{1}也是英雄，但那些作為換不來寬恕。	{1}也是英雄，但那些作为换不来宽恕。		FUN_140660870 883812 名聲 case 0 勇敢（依程度五級）：{1} He/She/It
+{1} is a great hero.	{1}是偉大的英雄。	{1}是伟大的英雄。		FUN_140660870 883812 名聲 case 0 勇敢（依程度五級）：{1} He/She/It
+{1} is a great hero, but those acts bring no forgiveness.	{1}是偉大的英雄，但那些作為換不來寬恕。	{1}是伟大的英雄，但那些作为换不来宽恕。		FUN_140660870 883812 名聲 case 0 勇敢（依程度五級）：{1} He/She/It
+{1} is also a great hero.	{1}也是偉大的英雄。	{1}也是伟大的英雄。		FUN_140660870 883812 名聲 case 0 勇敢（依程度五級）：{1} He/She/It
+{1} is also a great hero, but those acts bring no forgiveness.	{1}也是偉大的英雄，但那些作為換不來寬恕。	{1}也是伟大的英雄，但那些作为换不来宽恕。		FUN_140660870 883812 名聲 case 0 勇敢（依程度五級）：{1} He/She/It
+{1} is a legendary hero.	{1}是傳奇英雄。	{1}是传奇英雄。		FUN_140660870 883812 名聲 case 0 勇敢（依程度五級）：{1} He/She/It
+{1} is a legendary hero, but those acts bring no forgiveness.	{1}是傳奇英雄，但那些作為換不來寬恕。	{1}是传奇英雄，但那些作为换不来宽恕。		FUN_140660870 883812 名聲 case 0 勇敢（依程度五級）：{1} He/She/It
+{1} is also a legendary hero.	{1}也是傳奇英雄。	{1}也是传奇英雄。		FUN_140660870 883812 名聲 case 0 勇敢（依程度五級）：{1} He/She/It
+{1} is also a legendary hero, but those acts bring no forgiveness.	{1}也是傳奇英雄，但那些作為換不來寬恕。	{1}也是传奇英雄，但那些作为换不来宽恕。		FUN_140660870 883812 名聲 case 0 勇敢（依程度五級）：{1} He/She/It
+{1} is my partner.	{1}是我的伴侶。	{1}是我的伴侣。		FUN_140660870 883907 名聲 case 1 伴侶：{1} He/She/It
+{1} is my partner, but it means nothing now.	{1}是我的伴侶，但如今這已毫無意義。	{1}是我的伴侣，但如今这已毫无意义。		FUN_140660870 883907 名聲 case 1 伴侶：{1} He/She/It
+{1} is also my partner.	{1}也是我的伴侶。	{1}也是我的伴侣。		FUN_140660870 883907 名聲 case 1 伴侶：{1} He/She/It
+{1} is also my partner, but it means nothing now.	{1}也是我的伴侶，但如今這已毫無意義。	{1}也是我的伴侣，但如今这已毫无意义。		FUN_140660870 883907 名聲 case 1 伴侶：{1} He/She/It
+{1} is somewhat violent.	{1}有點暴力。	{1}有点暴力。		FUN_140660870 883933 名聲 case 2 暴力：{1} He/She/It
+{1} is also somewhat violent.	{1}也有點暴力。	{1}也有点暴力。		FUN_140660870 883933 名聲 case 2 暴力：{1} He/She/It
+{1} is prone to violence.	{1}有暴力傾向。	{1}有暴力倾向。		FUN_140660870 883933 名聲 case 2 暴力：{1} He/She/It
+{1} is also prone to violence.	{1}也有暴力傾向。	{1}也有暴力倾向。		FUN_140660870 883933 名聲 case 2 暴力：{1} He/She/It
+{1} is well-known brawler.	{1}是出了名的好鬥之徒。	{1}是出了名的好斗之徒。		FUN_140660870 883933 名聲 case 2 暴力：{1} He/She/It
+{1} is also well-known brawler.	{1}也是出了名的好鬥之徒。	{1}也是出了名的好斗之徒。		FUN_140660870 883933 名聲 case 2 暴力：{1} He/She/It
+{1} is capable of such violence.	{1}做得出那種暴行。	{1}做得出那种暴行。		FUN_140660870 883933 名聲 case 2 暴力：{1} He/She/It
+{1} is also capable of such violence.	{1}也做得出那種暴行。	{1}也做得出那种暴行。		FUN_140660870 883933 名聲 case 2 暴力：{1} He/She/It
+{1} is a legendary brawler.	{1}是傳奇的好鬥之徒。	{1}是传奇的好斗之徒。		FUN_140660870 883933 名聲 case 2 暴力：{1} He/She/It
+{1} is also a legendary brawler.	{1}也是傳奇的好鬥之徒。	{1}也是传奇的好斗之徒。		FUN_140660870 883933 名聲 case 2 暴力：{1} He/She/It
+{1} is unhinged.	{1}精神不太正常。	{1}精神不太正常。		FUN_140660870 883996 名聲 case 3 惡棍：{1} He/She/It
+{1} is also unhinged.	{1}也精神不太正常。	{1}也精神不太正常。		FUN_140660870 883996 名聲 case 3 惡棍：{1} He/She/It
+{1} is a known villain.	{1}是個有名的惡棍。	{1}是个有名的恶棍。		FUN_140660870 883996 名聲 case 3 惡棍：{1} He/She/It
+{1} is also a known villain.	{1}也是個有名的惡棍。	{1}也是个有名的恶棍。		FUN_140660870 883996 名聲 case 3 惡棍：{1} He/She/It
+{1} is a noted villain.	{1}是個著名的惡棍。	{1}是个著名的恶棍。		FUN_140660870 883996 名聲 case 3 惡棍：{1} He/She/It
+{1} is also a noted villain.	{1}也是個著名的惡棍。	{1}也是个著名的恶棍。		FUN_140660870 883996 名聲 case 3 惡棍：{1} He/She/It
+{1} is an infamous villain.	{1}是個惡名昭彰的惡棍。	{1}是个臭名昭著的恶棍。		FUN_140660870 883996 名聲 case 3 惡棍：{1} He/She/It
+{1} is also an infamous villain.	{1}也是個惡名昭彰的惡棍。	{1}也是个臭名昭著的恶棍。		FUN_140660870 883996 名聲 case 3 惡棍：{1} He/She/It
+{1} is a legendary villain.	{1}是傳奇惡棍。	{1}是传奇恶棍。		FUN_140660870 883996 名聲 case 3 惡棍：{1} He/She/It
+{1} is also a legendary villain.	{1}也是傳奇惡棍。	{1}也是传奇恶棍。		FUN_140660870 883996 名聲 case 3 惡棍：{1} He/She/It
+{1} is good for a deal now and then.	{1}偶爾是個不錯的交易對象。	{1}偶尔是个不错的交易对象。		FUN_140660870 884046 名聲 case 4 交易：{1} He/She/It
+{1} is good for a deal now and then, but you can't bargain your way out of this.	{1}偶爾是個不錯的交易對象，但這次可不是討價還價就能脫身的。	{1}偶尔是个不错的交易对象，但这次可不是讨价还价就能脱身的。		FUN_140660870 884046 名聲 case 4 交易：{1} He/She/It
+{1} is also good for a deal now and then.	{1}也偶爾是個不錯的交易對象。	{1}也偶尔是个不错的交易对象。		FUN_140660870 884046 名聲 case 4 交易：{1} He/She/It
+{1} is also good for a deal now and then, but you can't bargain your way out of this.	{1}也偶爾是個不錯的交易對象，但這次可不是討價還價就能脫身的。	{1}也偶尔是个不错的交易对象，但这次可不是讨价还价就能脱身的。		FUN_140660870 884046 名聲 case 4 交易：{1} He/She/It
+{1} is a pleasure to speak with.	{1}是個談得來的人。	{1}是个谈得来的人。		FUN_140660870 884073 名聲 case 5 健談：{1} He/She/It
+{1} is a pleasure to speak with, but now this stands between us.	{1}是個談得來的人，但如今這件事橫在我們之間。	{1}是个谈得来的人，但如今这件事横在我们之间。		FUN_140660870 884073 名聲 case 5 健談：{1} He/She/It
+{1} is also a pleasure to speak with.	{1}也是個談得來的人。	{1}也是个谈得来的人。		FUN_140660870 884073 名聲 case 5 健談：{1} He/She/It
+{1} is also a pleasure to speak with, but now this stands between us.	{1}也是個談得來的人，但如今這件事橫在我們之間。	{1}也是个谈得来的人，但如今这件事横在我们之间。		FUN_140660870 884073 名聲 case 5 健談：{1} He/She/It
+{1} is a killer.	{1}是個殺手。	{1}是个杀手。		FUN_140660870 884099 名聲 case 6 殺手：{1} He/She/It
+{1} is also a killer.	{1}也是個殺手。	{1}也是个杀手。		FUN_140660870 884099 名聲 case 6 殺手：{1} He/She/It
+{1} is a known killer.	{1}是個有名的殺手。	{1}是个有名的杀手。		FUN_140660870 884099 名聲 case 6 殺手：{1} He/She/It
+{1} is also a known killer.	{1}也是個有名的殺手。	{1}也是个有名的杀手。		FUN_140660870 884099 名聲 case 6 殺手：{1} He/She/It
+{1} is a noted killer.	{1}是個著名的殺手。	{1}是个著名的杀手。		FUN_140660870 884099 名聲 case 6 殺手：{1} He/She/It
+{1} is also a noted killer.	{1}也是個著名的殺手。	{1}也是个著名的杀手。		FUN_140660870 884099 名聲 case 6 殺手：{1} He/She/It
+{1} is an infamous killer.	{1}是個惡名昭彰的殺手。	{1}是个臭名昭著的杀手。		FUN_140660870 884099 名聲 case 6 殺手：{1} He/She/It
+{1} is also an infamous killer.	{1}也是個惡名昭彰的殺手。	{1}也是个臭名昭著的杀手。		FUN_140660870 884099 名聲 case 6 殺手：{1} He/She/It
+{1} is a legendary killer.	{1}是傳奇殺手。	{1}是传奇杀手。		FUN_140660870 884099 名聲 case 6 殺手：{1} He/She/It
+{1} is also a legendary killer.	{1}也是傳奇殺手。	{1}也是传奇杀手。		FUN_140660870 884099 名聲 case 6 殺手：{1} He/She/It
+{1} is also a murderer.	{1}也是個殺人犯。	{1}也是个杀人犯。		FUN_140660870 884149 名聲 case 7 殺人犯：{1} He/She/It
+{1} is a known murderer.	{1}是個有名的殺人犯。	{1}是个有名的杀人犯。		FUN_140660870 884149 名聲 case 7 殺人犯：{1} He/She/It
+{1} is also a known murderer.	{1}也是個有名的殺人犯。	{1}也是个有名的杀人犯。		FUN_140660870 884149 名聲 case 7 殺人犯：{1} He/She/It
+{1} is a noted murderer.	{1}是個著名的殺人犯。	{1}是个著名的杀人犯。		FUN_140660870 884149 名聲 case 7 殺人犯：{1} He/She/It
+{1} is also a noted murderer.	{1}也是個著名的殺人犯。	{1}也是个著名的杀人犯。		FUN_140660870 884149 名聲 case 7 殺人犯：{1} He/She/It
+{1} is an infamous murderer.	{1}是個惡名昭彰的殺人犯。	{1}是个臭名昭著的杀人犯。		FUN_140660870 884149 名聲 case 7 殺人犯：{1} He/She/It
+{1} is also an infamous murderer.	{1}也是個惡名昭彰的殺人犯。	{1}也是个臭名昭著的杀人犯。		FUN_140660870 884149 名聲 case 7 殺人犯：{1} He/She/It
+{1} is a legendary murderer.	{1}是傳奇殺人犯。	{1}是传奇杀人犯。		FUN_140660870 884149 名聲 case 7 殺人犯：{1} He/She/It
+{1} is also a legendary murderer.	{1}也是傳奇殺人犯。	{1}也是传奇杀人犯。		FUN_140660870 884149 名聲 case 7 殺人犯：{1} He/She/It
+{1} is my comrade.	{1}是我的戰友。	{1}是我的战友。		FUN_140660870 884201 名聲 case 8 戰友：{1} He/She/It
+{1} is my comrade, but nothing can change the facts.	{1}是我的戰友，但什麼都改變不了事實。	{1}是我的战友，但什么都改变不了事实。		FUN_140660870 884201 名聲 case 8 戰友：{1} He/She/It
+{1} is also my comrade.	{1}也是我的戰友。	{1}也是我的战友。		FUN_140660870 884201 名聲 case 8 戰友：{1} He/She/It
+{1} is also my comrade, but nothing can change the facts.	{1}也是我的戰友，但什麼都改變不了事實。	{1}也是我的战友，但什么都改变不了事实。		FUN_140660870 884201 名聲 case 8 戰友：{1} He/She/It
+{1} is worthy of respect.	{1}值得尊敬。	{1}值得尊敬。		FUN_140660870 884237 名聲 case 9 可敬：{1} He/She/It
+{1} is worthy of respect, but at what price?	{1}值得尊敬，但代價是什麼？	{1}值得尊敬，但代价是什么？		FUN_140660870 884237 名聲 case 9 可敬：{1} He/She/It
+{1} is also worthy of respect.	{1}也值得尊敬。	{1}也值得尊敬。		FUN_140660870 884237 名聲 case 9 可敬：{1} He/She/It
+{1} is also worthy of respect, but at what price?	{1}也值得尊敬，但代價是什麼？	{1}也值得尊敬，但代价是什么？		FUN_140660870 884237 名聲 case 9 可敬：{1} He/She/It
+{1} is part of the problem.	{1}是問題的一部分。	{1}是问题的一部分。		FUN_140660870 884262 名聲 case 10 禍首：{1} He/She/It
+{1} is also part of the problem.	{1}也是問題的一部分。	{1}也是问题的一部分。		FUN_140660870 884262 名聲 case 10 禍首：{1} He/She/It
+{1} is an enemy fighter.	{1}是敵方戰士。	{1}是敌方战士。		FUN_140660870 884291 名聲 case 0xb 敵方戰士：{1} He/She/It
+{1} is also an enemy fighter.	{1}也是敵方戰士。	{1}也是敌方战士。		FUN_140660870 884291 名聲 case 0xb 敵方戰士：{1} He/She/It
+{1} is on my side.	{1}站在我這邊。	{1}站在我这边。		FUN_140660870 884349 名聲 case 0xc 同一陣線：{1} He/She/It
+{1} is on my side, but what does that mean now?	{1}站在我這邊，但如今那又代表什麼？	{1}站在我这边，但如今那又代表什么？		FUN_140660870 884349 名聲 case 0xc 同一陣線：{1} He/She/It
+{1} is also on my side.	{1}也站在我這邊。	{1}也站在我这边。		FUN_140660870 884349 名聲 case 0xc 同一陣線：{1} He/She/It
+{1} is also on my side, but what does that mean now?	{1}也站在我這邊，但如今那又代表什麼？	{1}也站在我这边，但如今那又代表什么？		FUN_140660870 884349 名聲 case 0xc 同一陣線：{1} He/She/It
+{1} is thuggish.	{1}有流氓習氣。	{1}有流氓习气。		FUN_140660870 884395 名聲 case 0xd 暴徒：{1} He/She/It
+{1} is also thuggish.	{1}也有流氓習氣。	{1}也有流氓习气。		FUN_140660870 884395 名聲 case 0xd 暴徒：{1} He/She/It
+{1} is a known thug.	{1}是個有名的暴徒。	{1}是个有名的暴徒。		FUN_140660870 884395 名聲 case 0xd 暴徒：{1} He/She/It
+{1} is also a known thug.	{1}也是個有名的暴徒。	{1}也是个有名的暴徒。		FUN_140660870 884395 名聲 case 0xd 暴徒：{1} He/She/It
+{1} is a well-known thug.	{1}是個出了名的暴徒。	{1}是个出了名的暴徒。		FUN_140660870 884395 名聲 case 0xd 暴徒：{1} He/She/It
+{1} is also a well-known thug.	{1}也是個出了名的暴徒。	{1}也是个出了名的暴徒。		FUN_140660870 884395 名聲 case 0xd 暴徒：{1} He/She/It
+{1} is an infamous thug.	{1}是個惡名昭彰的暴徒。	{1}是个臭名昭著的暴徒。		FUN_140660870 884395 名聲 case 0xd 暴徒：{1} He/She/It
+{1} is also an infamous thug.	{1}也是個惡名昭彰的暴徒。	{1}也是个臭名昭著的暴徒。		FUN_140660870 884395 名聲 case 0xd 暴徒：{1} He/She/It
+{1} is a legendary thug.	{1}是傳奇暴徒。	{1}是传奇暴徒。		FUN_140660870 884395 名聲 case 0xd 暴徒：{1} He/She/It
+{1} is also a legendary thug.	{1}也是傳奇暴徒。	{1}也是传奇暴徒。		FUN_140660870 884395 名聲 case 0xd 暴徒：{1} He/She/It
+{1} is a brigand.	{1}是個強盜。	{1}是个强盗。		FUN_140660870 884444 名聲 case 0xe 強盜（有所屬強盜團時接 and 某團 are dangerous outlaws）：{1} He/She/It
+{1} is a brigand and {2} are dangerous outlaws.	{1}是個強盜，而{2}是危險的亡命之徒。	{1}是个强盗，而{2}是危险的亡命之徒。		FUN_140660870 884444 名聲 case 0xe 強盜（有所屬強盜團時接 and 某團 are dangerous outlaws）：{1} He/She/It；{2} 文明名
+{1} is also a brigand.	{1}也是個強盜。	{1}也是个强盗。		FUN_140660870 884444 名聲 case 0xe 強盜（有所屬強盜團時接 and 某團 are dangerous outlaws）：{1} He/She/It
+{1} is also a brigand and {2} are dangerous outlaws.	{1}也是個強盜，而{2}是危險的亡命之徒。	{1}也是个强盗，而{2}是危险的亡命之徒。		FUN_140660870 884444 名聲 case 0xe 強盜（有所屬強盜團時接 and 某團 are dangerous outlaws）：{1} He/She/It；{2} 文明名
+You are a brigand and {1} are dangerous outlaws.	你是個強盜，而{1}是危險的亡命之徒。	你是个强盗，而{1}是危险的亡命之徒。		FUN_140660870 884444 名聲 case 0xe 強盜（有所屬強盜團時接 and 某團 are dangerous outlaws）：對聽者本人說；{1} 文明名
+You are also a brigand and {1} are dangerous outlaws.	你也是個強盜，而{1}是危險的亡命之徒。	你也是个强盗，而{1}是危险的亡命之徒。		FUN_140660870 884444 名聲 case 0xe 強盜（有所屬強盜團時接 and 某團 are dangerous outlaws）：對聽者本人說；{1} 文明名
+{1} is a known brigand.	{1}是個有名的強盜。	{1}是个有名的强盗。		FUN_140660870 884444 名聲 case 0xe 強盜（有所屬強盜團時接 and 某團 are dangerous outlaws）：{1} He/She/It
+{1} is a known brigand and {2} are dangerous outlaws.	{1}是個有名的強盜，而{2}是危險的亡命之徒。	{1}是个有名的强盗，而{2}是危险的亡命之徒。		FUN_140660870 884444 名聲 case 0xe 強盜（有所屬強盜團時接 and 某團 are dangerous outlaws）：{1} He/She/It；{2} 文明名
+{1} is also a known brigand.	{1}也是個有名的強盜。	{1}也是个有名的强盗。		FUN_140660870 884444 名聲 case 0xe 強盜（有所屬強盜團時接 and 某團 are dangerous outlaws）：{1} He/She/It
+{1} is also a known brigand and {2} are dangerous outlaws.	{1}也是個有名的強盜，而{2}是危險的亡命之徒。	{1}也是个有名的强盗，而{2}是危险的亡命之徒。		FUN_140660870 884444 名聲 case 0xe 強盜（有所屬強盜團時接 and 某團 are dangerous outlaws）：{1} He/She/It；{2} 文明名
+You are a known brigand and {1} are dangerous outlaws.	你是個有名的強盜，而{1}是危險的亡命之徒。	你是个有名的强盗，而{1}是危险的亡命之徒。		FUN_140660870 884444 名聲 case 0xe 強盜（有所屬強盜團時接 and 某團 are dangerous outlaws）：對聽者本人說；{1} 文明名
+You are also a known brigand and {1} are dangerous outlaws.	你也是個有名的強盜，而{1}是危險的亡命之徒。	你也是个有名的强盗，而{1}是危险的亡命之徒。		FUN_140660870 884444 名聲 case 0xe 強盜（有所屬強盜團時接 and 某團 are dangerous outlaws）：對聽者本人說；{1} 文明名
+{1} is a noted brigand.	{1}是個著名的強盜。	{1}是个著名的强盗。		FUN_140660870 884444 名聲 case 0xe 強盜（有所屬強盜團時接 and 某團 are dangerous outlaws）：{1} He/She/It
+{1} is a noted brigand and {2} are dangerous outlaws.	{1}是個著名的強盜，而{2}是危險的亡命之徒。	{1}是个著名的强盗，而{2}是危险的亡命之徒。		FUN_140660870 884444 名聲 case 0xe 強盜（有所屬強盜團時接 and 某團 are dangerous outlaws）：{1} He/She/It；{2} 文明名
+{1} is also a noted brigand.	{1}也是個著名的強盜。	{1}也是个著名的强盗。		FUN_140660870 884444 名聲 case 0xe 強盜（有所屬強盜團時接 and 某團 are dangerous outlaws）：{1} He/She/It
+{1} is also a noted brigand and {2} are dangerous outlaws.	{1}也是個著名的強盜，而{2}是危險的亡命之徒。	{1}也是个著名的强盗，而{2}是危险的亡命之徒。		FUN_140660870 884444 名聲 case 0xe 強盜（有所屬強盜團時接 and 某團 are dangerous outlaws）：{1} He/She/It；{2} 文明名
+You are a noted brigand and {1} are dangerous outlaws.	你是個著名的強盜，而{1}是危險的亡命之徒。	你是个著名的强盗，而{1}是危险的亡命之徒。		FUN_140660870 884444 名聲 case 0xe 強盜（有所屬強盜團時接 and 某團 are dangerous outlaws）：對聽者本人說；{1} 文明名
+You are also a noted brigand and {1} are dangerous outlaws.	你也是個著名的強盜，而{1}是危險的亡命之徒。	你也是个著名的强盗，而{1}是危险的亡命之徒。		FUN_140660870 884444 名聲 case 0xe 強盜（有所屬強盜團時接 and 某團 are dangerous outlaws）：對聽者本人說；{1} 文明名
+{1} is an infamous brigand.	{1}是個惡名昭彰的強盜。	{1}是个臭名昭著的强盗。		FUN_140660870 884444 名聲 case 0xe 強盜（有所屬強盜團時接 and 某團 are dangerous outlaws）：{1} He/She/It
+{1} is an infamous brigand and {2} are dangerous outlaws.	{1}是個惡名昭彰的強盜，而{2}是危險的亡命之徒。	{1}是个臭名昭著的强盗，而{2}是危险的亡命之徒。		FUN_140660870 884444 名聲 case 0xe 強盜（有所屬強盜團時接 and 某團 are dangerous outlaws）：{1} He/She/It；{2} 文明名
+{1} is also an infamous brigand.	{1}也是個惡名昭彰的強盜。	{1}也是个臭名昭著的强盗。		FUN_140660870 884444 名聲 case 0xe 強盜（有所屬強盜團時接 and 某團 are dangerous outlaws）：{1} He/She/It
+{1} is also an infamous brigand and {2} are dangerous outlaws.	{1}也是個惡名昭彰的強盜，而{2}是危險的亡命之徒。	{1}也是个臭名昭著的强盗，而{2}是危险的亡命之徒。		FUN_140660870 884444 名聲 case 0xe 強盜（有所屬強盜團時接 and 某團 are dangerous outlaws）：{1} He/She/It；{2} 文明名
+You are an infamous brigand and {1} are dangerous outlaws.	你是個惡名昭彰的強盜，而{1}是危險的亡命之徒。	你是个臭名昭著的强盗，而{1}是危险的亡命之徒。		FUN_140660870 884444 名聲 case 0xe 強盜（有所屬強盜團時接 and 某團 are dangerous outlaws）：對聽者本人說；{1} 文明名
+You are also an infamous brigand and {1} are dangerous outlaws.	你也是個惡名昭彰的強盜，而{1}是危險的亡命之徒。	你也是个臭名昭著的强盗，而{1}是危险的亡命之徒。		FUN_140660870 884444 名聲 case 0xe 強盜（有所屬強盜團時接 and 某團 are dangerous outlaws）：對聽者本人說；{1} 文明名
+{1} is a legendary brigand.	{1}是傳奇強盜。	{1}是传奇强盗。		FUN_140660870 884444 名聲 case 0xe 強盜（有所屬強盜團時接 and 某團 are dangerous outlaws）：{1} He/She/It
+{1} is a legendary brigand and {2} are dangerous outlaws.	{1}是傳奇強盜，而{2}是危險的亡命之徒。	{1}是传奇强盗，而{2}是危险的亡命之徒。		FUN_140660870 884444 名聲 case 0xe 強盜（有所屬強盜團時接 and 某團 are dangerous outlaws）：{1} He/She/It；{2} 文明名
+{1} is also a legendary brigand.	{1}也是傳奇強盜。	{1}也是传奇强盗。		FUN_140660870 884444 名聲 case 0xe 強盜（有所屬強盜團時接 and 某團 are dangerous outlaws）：{1} He/She/It
+{1} is also a legendary brigand and {2} are dangerous outlaws.	{1}也是傳奇強盜，而{2}是危險的亡命之徒。	{1}也是传奇强盗，而{2}是危险的亡命之徒。		FUN_140660870 884444 名聲 case 0xe 強盜（有所屬強盜團時接 and 某團 are dangerous outlaws）：{1} He/She/It；{2} 文明名
+You are a legendary brigand and {1} are dangerous outlaws.	你是傳奇強盜，而{1}是危險的亡命之徒。	你是传奇强盗，而{1}是危险的亡命之徒。		FUN_140660870 884444 名聲 case 0xe 強盜（有所屬強盜團時接 and 某團 are dangerous outlaws）：對聽者本人說；{1} 文明名
+You are also a legendary brigand and {1} are dangerous outlaws.	你也是傳奇強盜，而{1}是危險的亡命之徒。	你也是传奇强盗，而{1}是危险的亡命之徒。		FUN_140660870 884444 名聲 case 0xe 強盜（有所屬強盜團時接 and 某團 are dangerous outlaws）：對聽者本人說；{1} 文明名
+{1} is a loyal soldier.	{1}是忠誠的士兵。	{1}是忠诚的士兵。		FUN_140660870 884503 名聲 case 0xf 忠誠士兵（原文 your 照抄）：{1} He/She/It
+{1} is also a loyal soldier.	{1}也是忠誠的士兵。	{1}也是忠诚的士兵。		FUN_140660870 884503 名聲 case 0xf 忠誠士兵（原文 your 照抄）：{1} He/She/It
+{1} is a very loyal soldier.	{1}是非常忠誠的士兵。	{1}是非常忠诚的士兵。		FUN_140660870 884503 名聲 case 0xf 忠誠士兵（原文 your 照抄）：{1} He/She/It
+{1} is also a very loyal soldier.	{1}也是非常忠誠的士兵。	{1}也是非常忠诚的士兵。		FUN_140660870 884503 名聲 case 0xf 忠誠士兵（原文 your 照抄）：{1} He/She/It
+{1} is such a loyal soldier.	{1}是如此忠誠的士兵。	{1}是如此忠诚的士兵。		FUN_140660870 884503 名聲 case 0xf 忠誠士兵（原文 your 照抄）：{1} He/She/It
+{1} is also such a loyal soldier.	{1}也是如此忠誠的士兵。	{1}也是如此忠诚的士兵。		FUN_140660870 884503 名聲 case 0xf 忠誠士兵（原文 your 照抄）：{1} He/She/It
+{1} is famous for your loyalty as a soldier.	{1}以身為士兵的忠誠聞名。	{1}以身为士兵的忠诚闻名。		FUN_140660870 884503 名聲 case 0xf 忠誠士兵（原文 your 照抄）：{1} He/She/It
+{1} is also famous for your loyalty as a soldier.	{1}也以身為士兵的忠誠聞名。	{1}也以身为士兵的忠诚闻名。		FUN_140660870 884503 名聲 case 0xf 忠誠士兵（原文 your 照抄）：{1} He/She/It
+{1} is one of the most loyal soldiers to serve anybody at any time.	{1}是古往今來最忠誠的士兵之一。	{1}是古往今来最忠诚的士兵之一。		FUN_140660870 884503 名聲 case 0xf 忠誠士兵（原文 your 照抄）：{1} He/She/It
+{1} is also one of the most loyal soldiers to serve anybody at any time.	{1}也是古往今來最忠誠的士兵之一。	{1}也是古往今来最忠诚的士兵之一。		FUN_140660870 884503 名聲 case 0xf 忠誠士兵（原文 your 照抄）：{1} He/She/It
+{1} is also a monster.	{1}也是個怪物。	{1}也是个怪物。		FUN_140660870 884545 名聲 case 0x10 怪物：{1} He/She/It
+{1} is a storyteller, or at least tells stories.	{1}算是個說書人，至少會講故事。	{1}算是个说书人，至少会讲故事。		FUN_140660870 884585 名聲 case 0x11 說書人：{1} He/She/It
+{1} is also a storyteller, or at least tells stories.	{1}也算是個說書人，至少會講故事。	{1}也算是个说书人，至少会讲故事。		FUN_140660870 884585 名聲 case 0x11 說書人：{1} He/She/It
+{1} is a skilled storyteller.	{1}是個熟練的說書人。	{1}是个熟练的说书人。		FUN_140660870 884585 名聲 case 0x11 說書人：{1} He/She/It
+{1} is also a skilled storyteller.	{1}也是個熟練的說書人。	{1}也是个熟练的说书人。		FUN_140660870 884585 名聲 case 0x11 說書人：{1} He/She/It
+{1} is a talented storyteller.	{1}是個有天分的說書人。	{1}是个有天赋的说书人。		FUN_140660870 884585 名聲 case 0x11 說書人：{1} He/She/It
+{1} is also a talented storyteller.	{1}也是個有天分的說書人。	{1}也是个有天赋的说书人。		FUN_140660870 884585 名聲 case 0x11 說書人：{1} He/She/It
+{1} is a great storyteller.	{1}是個了不起的說書人。	{1}是个了不起的说书人。		FUN_140660870 884585 名聲 case 0x11 說書人：{1} He/She/It
+{1} is also a great storyteller.	{1}也是個了不起的說書人。	{1}也是个了不起的说书人。		FUN_140660870 884585 名聲 case 0x11 說書人：{1} He/She/It
+{1} is a legendary storyteller.	{1}是傳奇說書人。	{1}是传奇说书人。		FUN_140660870 884585 名聲 case 0x11 說書人：{1} He/She/It
+{1} is also a legendary storyteller.	{1}也是傳奇說書人。	{1}也是传奇说书人。		FUN_140660870 884585 名聲 case 0x11 說書人：{1} He/She/It
+{1} is a poet, according to some.	{1}據說是個詩人。	{1}据说是个诗人。		FUN_140660870 884629 名聲 case 0x12 詩人：{1} He/She/It
+{1} is also a poet, according to some.	{1}也據說是個詩人。	{1}也据说是个诗人。		FUN_140660870 884629 名聲 case 0x12 詩人：{1} He/She/It
+{1} is a skilled poet.	{1}是個熟練的詩人。	{1}是个熟练的诗人。		FUN_140660870 884629 名聲 case 0x12 詩人：{1} He/She/It
+{1} is also a skilled poet.	{1}也是個熟練的詩人。	{1}也是个熟练的诗人。		FUN_140660870 884629 名聲 case 0x12 詩人：{1} He/She/It
+{1} is a talented poet.	{1}是個有天分的詩人。	{1}是个有天赋的诗人。		FUN_140660870 884629 名聲 case 0x12 詩人：{1} He/She/It
+{1} is also a talented poet.	{1}也是個有天分的詩人。	{1}也是个有天赋的诗人。		FUN_140660870 884629 名聲 case 0x12 詩人：{1} He/She/It
+{1} is a great poet.	{1}是個了不起的詩人。	{1}是个了不起的诗人。		FUN_140660870 884629 名聲 case 0x12 詩人：{1} He/She/It
+{1} is also a great poet.	{1}也是個了不起的詩人。	{1}也是个了不起的诗人。		FUN_140660870 884629 名聲 case 0x12 詩人：{1} He/She/It
+{1} is a legendary poet.	{1}是傳奇詩人。	{1}是传奇诗人。		FUN_140660870 884629 名聲 case 0x12 詩人：{1} He/She/It
+{1} is also a legendary poet.	{1}也是傳奇詩人。	{1}也是传奇诗人。		FUN_140660870 884629 名聲 case 0x12 詩人：{1} He/She/It
+{1} is a modest bard.	{1}是個普普通通的吟遊詩人。	{1}是个普普通通的吟游诗人。		FUN_140660870 884671 名聲 case 0x13 吟遊詩人：{1} He/She/It
+{1} is also a modest bard.	{1}也是個普普通通的吟遊詩人。	{1}也是个普普通通的吟游诗人。		FUN_140660870 884671 名聲 case 0x13 吟遊詩人：{1} He/She/It
+{1} is a skilled bard.	{1}是個熟練的吟遊詩人。	{1}是个熟练的吟游诗人。		FUN_140660870 884671 名聲 case 0x13 吟遊詩人：{1} He/She/It
+{1} is also a skilled bard.	{1}也是個熟練的吟遊詩人。	{1}也是个熟练的吟游诗人。		FUN_140660870 884671 名聲 case 0x13 吟遊詩人：{1} He/She/It
+{1} is a talented bard.	{1}是個有天分的吟遊詩人。	{1}是个有天赋的吟游诗人。		FUN_140660870 884671 名聲 case 0x13 吟遊詩人：{1} He/She/It
+{1} is also a talented bard.	{1}也是個有天分的吟遊詩人。	{1}也是个有天赋的吟游诗人。		FUN_140660870 884671 名聲 case 0x13 吟遊詩人：{1} He/She/It
+{1} is a great bard.	{1}是個了不起的吟遊詩人。	{1}是个了不起的吟游诗人。		FUN_140660870 884671 名聲 case 0x13 吟遊詩人：{1} He/She/It
+{1} is also a great bard.	{1}也是個了不起的吟遊詩人。	{1}也是个了不起的吟游诗人。		FUN_140660870 884671 名聲 case 0x13 吟遊詩人：{1} He/She/It
+{1} is a legendary bard.	{1}是傳奇吟遊詩人。	{1}是传奇吟游诗人。		FUN_140660870 884671 名聲 case 0x13 吟遊詩人：{1} He/She/It
+{1} is also a legendary bard.	{1}也是傳奇吟遊詩人。	{1}也是传奇吟游诗人。		FUN_140660870 884671 名聲 case 0x13 吟遊詩人：{1} He/She/It
+{1} is something of a dancer.	{1}算是個舞者。	{1}算是个舞者。		FUN_140660870 884713 名聲 case 0x14 舞者：{1} He/She/It
+{1} is also something of a dancer.	{1}也算是個舞者。	{1}也算是个舞者。		FUN_140660870 884713 名聲 case 0x14 舞者：{1} He/She/It
+{1} is a skilled dancer.	{1}是個熟練的舞者。	{1}是个熟练的舞者。		FUN_140660870 884713 名聲 case 0x14 舞者：{1} He/She/It
+{1} is also a skilled dancer.	{1}也是個熟練的舞者。	{1}也是个熟练的舞者。		FUN_140660870 884713 名聲 case 0x14 舞者：{1} He/She/It
+{1} is a talented dancer.	{1}是個有天分的舞者。	{1}是个有天赋的舞者。		FUN_140660870 884713 名聲 case 0x14 舞者：{1} He/She/It
+{1} is also a talented dancer.	{1}也是個有天分的舞者。	{1}也是个有天赋的舞者。		FUN_140660870 884713 名聲 case 0x14 舞者：{1} He/She/It
+{1} is a great dancer.	{1}是個了不起的舞者。	{1}是个了不起的舞者。		FUN_140660870 884713 名聲 case 0x14 舞者：{1} He/She/It
+{1} is also a great dancer.	{1}也是個了不起的舞者。	{1}也是个了不起的舞者。		FUN_140660870 884713 名聲 case 0x14 舞者：{1} He/She/It
+{1} is a legendary dancer.	{1}是傳奇舞者。	{1}是传奇舞者。		FUN_140660870 884713 名聲 case 0x14 舞者：{1} He/She/It
+{1} is also a legendary dancer.	{1}也是傳奇舞者。	{1}也是传奇舞者。		FUN_140660870 884713 名聲 case 0x14 舞者：{1} He/She/It
+{1} is somewhat quarrelsome.	{1}有點愛吵架。	{1}有点爱吵架。		FUN_140660870 884755 名聲 case 0x15 愛吵架：{1} He/She/It
+{1} is somewhat quarrelsome, but you can't argue your way out of this.	{1}有點愛吵架，但這次可不是吵一吵就能脫身的。	{1}有点爱吵架，但这次可不是吵一吵就能脱身的。		FUN_140660870 884755 名聲 case 0x15 愛吵架：{1} He/She/It
+{1} is also somewhat quarrelsome.	{1}也有點愛吵架。	{1}也有点爱吵架。		FUN_140660870 884755 名聲 case 0x15 愛吵架：{1} He/She/It
+{1} is also somewhat quarrelsome, but you can't argue your way out of this.	{1}也有點愛吵架，但這次可不是吵一吵就能脫身的。	{1}也有点爱吵架，但这次可不是吵一吵就能脱身的。		FUN_140660870 884755 名聲 case 0x15 愛吵架：{1} He/She/It
+{1} is known to be quarrelsome.	{1}出了名地愛吵架。	{1}出了名地爱吵架。		FUN_140660870 884755 名聲 case 0x15 愛吵架：{1} He/She/It
+{1} is known to be quarrelsome, but you can't argue your way out of this.	{1}出了名地愛吵架，但這次可不是吵一吵就能脫身的。	{1}出了名地爱吵架，但这次可不是吵一吵就能脱身的。		FUN_140660870 884755 名聲 case 0x15 愛吵架：{1} He/She/It
+{1} is also known to be quarrelsome.	{1}也出了名地愛吵架。	{1}也出了名地爱吵架。		FUN_140660870 884755 名聲 case 0x15 愛吵架：{1} He/She/It
+{1} is also known to be quarrelsome, but you can't argue your way out of this.	{1}也出了名地愛吵架，但這次可不是吵一吵就能脫身的。	{1}也出了名地爱吵架，但这次可不是吵一吵就能脱身的。		FUN_140660870 884755 名聲 case 0x15 愛吵架：{1} He/She/It
+{1} is a noted quarreler.	{1}是個有名的吵架大王。	{1}是个有名的吵架大王。		FUN_140660870 884755 名聲 case 0x15 愛吵架：{1} He/She/It
+{1} is a noted quarreler, but you can't argue your way out of this.	{1}是個有名的吵架大王，但這次可不是吵一吵就能脫身的。	{1}是个有名的吵架大王，但这次可不是吵一吵就能脱身的。		FUN_140660870 884755 名聲 case 0x15 愛吵架：{1} He/She/It
+{1} is also a noted quarreler.	{1}也是個有名的吵架大王。	{1}也是个有名的吵架大王。		FUN_140660870 884755 名聲 case 0x15 愛吵架：{1} He/She/It
+{1} is also a noted quarreler, but you can't argue your way out of this.	{1}也是個有名的吵架大王，但這次可不是吵一吵就能脫身的。	{1}也是个有名的吵架大王，但这次可不是吵一吵就能脱身的。		FUN_140660870 884755 名聲 case 0x15 愛吵架：{1} He/She/It
+{1} is infamously quarrelsome.	{1}愛吵架到惡名昭彰。	{1}爱吵架到臭名昭著。		FUN_140660870 884755 名聲 case 0x15 愛吵架：{1} He/She/It
+{1} is infamously quarrelsome, but you can't argue your way out of this.	{1}愛吵架到惡名昭彰，但這次可不是吵一吵就能脫身的。	{1}爱吵架到臭名昭著，但这次可不是吵一吵就能脱身的。		FUN_140660870 884755 名聲 case 0x15 愛吵架：{1} He/She/It
+{1} is also infamously quarrelsome.	{1}也愛吵架到惡名昭彰。	{1}也爱吵架到臭名昭著。		FUN_140660870 884755 名聲 case 0x15 愛吵架：{1} He/She/It
+{1} is also infamously quarrelsome, but you can't argue your way out of this.	{1}也愛吵架到惡名昭彰，但這次可不是吵一吵就能脫身的。	{1}也爱吵架到臭名昭著，但这次可不是吵一吵就能脱身的。		FUN_140660870 884755 名聲 case 0x15 愛吵架：{1} He/She/It
+{1} is a legendary quarreler.	{1}是傳奇的吵架大王。	{1}是传奇的吵架大王。		FUN_140660870 884755 名聲 case 0x15 愛吵架：{1} He/She/It
+{1} is a legendary quarreler, but you can't argue your way out of this.	{1}是傳奇的吵架大王，但這次可不是吵一吵就能脫身的。	{1}是传奇的吵架大王，但这次可不是吵一吵就能脱身的。		FUN_140660870 884755 名聲 case 0x15 愛吵架：{1} He/She/It
+{1} is also a legendary quarreler.	{1}也是傳奇的吵架大王。	{1}也是传奇的吵架大王。		FUN_140660870 884755 名聲 case 0x15 愛吵架：{1} He/She/It
+{1} is also a legendary quarreler, but you can't argue your way out of this.	{1}也是傳奇的吵架大王，但這次可不是吵一吵就能脫身的。	{1}也是传奇的吵架大王，但这次可不是吵一吵就能脱身的。		FUN_140660870 884755 名聲 case 0x15 愛吵架：{1} He/She/It
+{1} is something of a flatterer.	{1}有點愛拍馬屁。	{1}有点爱拍马屁。		FUN_140660870 884800 名聲 case 0x16 奉承：{1} He/She/It
+{1} is something of a flatterer, but you can't talk your way out of this.	{1}有點愛拍馬屁，但這次可不是耍嘴皮子就能脫身的。	{1}有点爱拍马屁，但这次可不是耍嘴皮子就能脱身的。		FUN_140660870 884800 名聲 case 0x16 奉承：{1} He/She/It
+{1} is also something of a flatterer.	{1}也有點愛拍馬屁。	{1}也有点爱拍马屁。		FUN_140660870 884800 名聲 case 0x16 奉承：{1} He/She/It
+{1} is also something of a flatterer, but you can't talk your way out of this.	{1}也有點愛拍馬屁，但這次可不是耍嘴皮子就能脫身的。	{1}也有点爱拍马屁，但这次可不是耍嘴皮子就能脱身的。		FUN_140660870 884800 名聲 case 0x16 奉承：{1} He/She/It
+{1} is a known flatterer.	{1}是個有名的馬屁精。	{1}是个有名的马屁精。		FUN_140660870 884800 名聲 case 0x16 奉承：{1} He/She/It
+{1} is a known flatterer, but you can't talk your way out of this.	{1}是個有名的馬屁精，但這次可不是耍嘴皮子就能脫身的。	{1}是个有名的马屁精，但这次可不是耍嘴皮子就能脱身的。		FUN_140660870 884800 名聲 case 0x16 奉承：{1} He/She/It
+{1} is also a known flatterer.	{1}也是個有名的馬屁精。	{1}也是个有名的马屁精。		FUN_140660870 884800 名聲 case 0x16 奉承：{1} He/She/It
+{1} is also a known flatterer, but you can't talk your way out of this.	{1}也是個有名的馬屁精，但這次可不是耍嘴皮子就能脫身的。	{1}也是个有名的马屁精，但这次可不是耍嘴皮子就能脱身的。		FUN_140660870 884800 名聲 case 0x16 奉承：{1} He/She/It
+{1} is a noted flatterer.	{1}是個著名的馬屁精。	{1}是个著名的马屁精。		FUN_140660870 884800 名聲 case 0x16 奉承：{1} He/She/It
+{1} is a noted flatterer, but you can't talk your way out of this.	{1}是個著名的馬屁精，但這次可不是耍嘴皮子就能脫身的。	{1}是个著名的马屁精，但这次可不是耍嘴皮子就能脱身的。		FUN_140660870 884800 名聲 case 0x16 奉承：{1} He/She/It
+{1} is also a noted flatterer.	{1}也是個著名的馬屁精。	{1}也是个著名的马屁精。		FUN_140660870 884800 名聲 case 0x16 奉承：{1} He/She/It
+{1} is also a noted flatterer, but you can't talk your way out of this.	{1}也是個著名的馬屁精，但這次可不是耍嘴皮子就能脫身的。	{1}也是个著名的马屁精，但这次可不是耍嘴皮子就能脱身的。		FUN_140660870 884800 名聲 case 0x16 奉承：{1} He/She/It
+{1} is an infamous flatterer.	{1}是個惡名昭彰的馬屁精。	{1}是个臭名昭著的马屁精。		FUN_140660870 884800 名聲 case 0x16 奉承：{1} He/She/It
+{1} is an infamous flatterer, but you can't talk your way out of this.	{1}是個惡名昭彰的馬屁精，但這次可不是耍嘴皮子就能脫身的。	{1}是个臭名昭著的马屁精，但这次可不是耍嘴皮子就能脱身的。		FUN_140660870 884800 名聲 case 0x16 奉承：{1} He/She/It
+{1} is also an infamous flatterer.	{1}也是個惡名昭彰的馬屁精。	{1}也是个臭名昭著的马屁精。		FUN_140660870 884800 名聲 case 0x16 奉承：{1} He/She/It
+{1} is also an infamous flatterer, but you can't talk your way out of this.	{1}也是個惡名昭彰的馬屁精，但這次可不是耍嘴皮子就能脫身的。	{1}也是个臭名昭著的马屁精，但这次可不是耍嘴皮子就能脱身的。		FUN_140660870 884800 名聲 case 0x16 奉承：{1} He/She/It
+{1} is a legendary flatterer.	{1}是傳奇馬屁精。	{1}是传奇马屁精。		FUN_140660870 884800 名聲 case 0x16 奉承：{1} He/She/It
+{1} is a legendary flatterer, but you can't talk your way out of this.	{1}是傳奇馬屁精，但這次可不是耍嘴皮子就能脫身的。	{1}是传奇马屁精，但这次可不是耍嘴皮子就能脱身的。		FUN_140660870 884800 名聲 case 0x16 奉承：{1} He/She/It
+{1} is also a legendary flatterer.	{1}也是傳奇馬屁精。	{1}也是传奇马屁精。		FUN_140660870 884800 名聲 case 0x16 奉承：{1} He/She/It
+{1} is also a legendary flatterer, but you can't talk your way out of this.	{1}也是傳奇馬屁精，但這次可不是耍嘴皮子就能脫身的。	{1}也是传奇马屁精，但这次可不是耍嘴皮子就能脱身的。		FUN_140660870 884800 名聲 case 0x16 奉承：{1} He/She/It
+{1} is something of a hunter.	{1}算是個獵人。	{1}算是个猎人。		FUN_140660870 884845 名聲 case 0x17 獵人：{1} He/She/It
+{1} is also something of a hunter.	{1}也算是個獵人。	{1}也算是个猎人。		FUN_140660870 884845 名聲 case 0x17 獵人：{1} He/She/It
+{1} is a skilled hunter.	{1}是個熟練的獵人。	{1}是个熟练的猎人。		FUN_140660870 884845 名聲 case 0x17 獵人：{1} He/She/It
+{1} is also a skilled hunter.	{1}也是個熟練的獵人。	{1}也是个熟练的猎人。		FUN_140660870 884845 名聲 case 0x17 獵人：{1} He/She/It
+{1} is a talented hunter.	{1}是個有天分的獵人。	{1}是个有天赋的猎人。		FUN_140660870 884845 名聲 case 0x17 獵人：{1} He/She/It
+{1} is also a talented hunter.	{1}也是個有天分的獵人。	{1}也是个有天赋的猎人。		FUN_140660870 884845 名聲 case 0x17 獵人：{1} He/She/It
+{1} is a great hunter.	{1}是個了不起的獵人。	{1}是个了不起的猎人。		FUN_140660870 884845 名聲 case 0x17 獵人：{1} He/She/It
+{1} is also a great hunter.	{1}也是個了不起的獵人。	{1}也是个了不起的猎人。		FUN_140660870 884845 名聲 case 0x17 獵人：{1} He/She/It
+{1} is a legendary hunter.	{1}是傳奇獵人。	{1}是传奇猎人。		FUN_140660870 884845 名聲 case 0x17 獵人：{1} He/She/It
+{1} is also a legendary hunter.	{1}也是傳奇獵人。	{1}也是传奇猎人。		FUN_140660870 884845 名聲 case 0x17 獵人：{1} He/She/It
+{1} is a protector of the defenseless.	{1}是弱者的守護者。	{1}是弱者的守护者。		FUN_140660870 884885 名聲 case 0x18 保護弱者：{1} He/She/It
+{1} is a protector of the defenseless, but that hardly matters now.	{1}是弱者的守護者，但如今那已經不重要了。	{1}是弱者的守护者，但如今那已经不重要了。		FUN_140660870 884885 名聲 case 0x18 保護弱者：{1} He/She/It
+{1} is also a protector of the defenseless.	{1}也是弱者的守護者。	{1}也是弱者的守护者。		FUN_140660870 884885 名聲 case 0x18 保護弱者：{1} He/She/It
+{1} is also a protector of the defenseless, but that hardly matters now.	{1}也是弱者的守護者，但如今那已經不重要了。	{1}也是弱者的守护者，但如今那已经不重要了。		FUN_140660870 884885 名聲 case 0x18 保護弱者：{1} He/She/It
+{1} is a thieving scoundrel.	{1}是個手腳不乾淨的無賴。	{1}是个手脚不干净的无赖。		FUN_140660870 884979 名聲 case 0x1a 竊賊：{1} He/She/It
+{1} is also a thieving scoundrel.	{1}也是個手腳不乾淨的無賴。	{1}也是个手脚不干净的无赖。		FUN_140660870 884979 名聲 case 0x1a 竊賊：{1} He/She/It
+{1} is also an intruder.	{1}也是個入侵者。	{1}也是个入侵者。		FUN_140660870 885046 名聲 case 0x1d 入侵者：{1} He/She/It
+{1} is gives sermons, and may be a preacher.	{1}會講道，也許是個傳道者。	{1}会讲道，也许是个传道者。		FUN_140660870 885097 名聲 case 0x1e 傳道者（原文文法照抄）：{1} He/She/It
+{1} is also gives sermons, and may be a preacher.	{1}也會講道，也許是個傳道者。	{1}也会讲道，也许是个传道者。		FUN_140660870 885097 名聲 case 0x1e 傳道者（原文文法照抄）：{1} He/She/It
+{1} is a skilled preacher.	{1}是個熟練的傳道者。	{1}是个熟练的传道者。		FUN_140660870 885097 名聲 case 0x1e 傳道者（原文文法照抄）：{1} He/She/It
+{1} is also a skilled preacher.	{1}也是個熟練的傳道者。	{1}也是个熟练的传道者。		FUN_140660870 885097 名聲 case 0x1e 傳道者（原文文法照抄）：{1} He/She/It
+{1} is a talented preacher.	{1}是個有天分的傳道者。	{1}是个有天赋的传道者。		FUN_140660870 885097 名聲 case 0x1e 傳道者（原文文法照抄）：{1} He/She/It
+{1} is also a talented preacher.	{1}也是個有天分的傳道者。	{1}也是个有天赋的传道者。		FUN_140660870 885097 名聲 case 0x1e 傳道者（原文文法照抄）：{1} He/She/It
+{1} is a great preacher.	{1}是個了不起的傳道者。	{1}是个了不起的传道者。		FUN_140660870 885097 名聲 case 0x1e 傳道者（原文文法照抄）：{1} He/She/It
+{1} is also a great preacher.	{1}也是個了不起的傳道者。	{1}也是个了不起的传道者。		FUN_140660870 885097 名聲 case 0x1e 傳道者（原文文法照抄）：{1} He/She/It
+{1} is a legendary preacher.	{1}是傳奇傳道者。	{1}是传奇传道者。		FUN_140660870 885097 名聲 case 0x1e 傳道者（原文文法照抄）：{1} He/She/It
+{1} is also a legendary preacher.	{1}也是傳奇傳道者。	{1}也是传奇传道者。		FUN_140660870 885097 名聲 case 0x1e 傳道者（原文文法照抄）：{1} He/She/It
+{1} has sought out and returned our treasures.	{1}找回並歸還了我們的寶物。	{1}找回并归还了我们的宝物。		FUN_140660870 884930 名聲 case 0x19 尋回寶物（第二種結尾原文沒有句點）：{1} He/She/It
+{1} has sought out and returned our treasures, though it doesn't much matter	{1}找回並歸還了我們的寶物，雖然這已經不太重要了	{1}找回并归还了我们的宝物，虽然这已经不太重要了		FUN_140660870 884930 名聲 case 0x19 尋回寶物（第二種結尾原文沒有句點）：{1} He/She/It
+{1} has also sought out and returned our treasures.	{1}也找回並歸還了我們的寶物。	{1}也找回并归还了我们的宝物。		FUN_140660870 884930 名聲 case 0x19 尋回寶物（第二種結尾原文沒有句點）：{1} He/She/It
+{1} has also sought out and returned our treasures, though it doesn't much matter	{1}也找回並歸還了我們的寶物，雖然這已經不太重要了	{1}也找回并归还了我们的宝物，虽然这已经不太重要了		FUN_140660870 884930 名聲 case 0x19 尋回寶物（第二種結尾原文沒有句點）：{1} He/She/It
+{1} has protected knowledge from being irrevocably lost.	{1}保護了知識，使其免於永久失傳。	{1}保护了知识，使其免于永久失传。		FUN_140660870 885023 名聲 case 0x1c 保存知識（第二種結尾原文沒有句點）：{1} He/She/It
+{1} has protected knowledge from being irrevocably lost, yet that means little now	{1}保護了知識，使其免於永久失傳，但如今那已無足輕重	{1}保护了知识，使其免于永久失传，但如今那已无足轻重		FUN_140660870 885023 名聲 case 0x1c 保存知識（第二種結尾原文沒有句點）：{1} He/She/It
+{1} has also protected knowledge from being irrevocably lost.	{1}也保護了知識，使其免於永久失傳。	{1}也保护了知识，使其免于永久失传。		FUN_140660870 885023 名聲 case 0x1c 保存知識（第二種結尾原文沒有句點）：{1} He/She/It
+{1} has also protected knowledge from being irrevocably lost, yet that means little now	{1}也保護了知識，使其免於永久失傳，但如今那已無足輕重	{1}也保护了知识，使其免于永久失传，但如今那已无足轻重		FUN_140660870 885023 名聲 case 0x1c 保存知識（第二種結尾原文沒有句點）：{1} He/She/It
+{1} are my comrades, but nothing can change the facts.	{1}是我的戰友，但什麼都改變不了事實。	{1}是我的战友，但什么都改变不了事实。		FUN_140660870 884208 名聲 case 8：{1} 文明／團體名
+{1} are my comrades.	{1}是我的戰友。	{1}是我的战友。		FUN_140660870 884208 名聲 case 8：{1} 文明／團體名
+{1} are worthy of respect, but at what price?	{1}值得尊敬，但代價是什麼？	{1}值得尊敬，但代价是什么？		FUN_140660870 884244 名聲 case 9：{1} 文明／團體名
+{1} are worthy of respect.	{1}值得尊敬。	{1}值得尊敬。		FUN_140660870 884244 名聲 case 9：{1} 文明／團體名
+{1} are not fit to rule.	{1}不配統治。	{1}不配统治。		FUN_140660870 884269 名聲 case 10：{1} 文明／團體名
+{1} bravely put an end to {2}.	{1}英勇地終結了{2}。	{1}英勇地终结了{2}。		FUN_140660870 883847 名聲 case 0：補充事蹟，{1} He/She/It/You，對象是人名、me 或 you
+{1} reunited {2} with {3}.	{1}讓{2}與{3}重逢了。	{1}让{2}与{3}重逢了。		FUN_140660870 883861 名聲 case 0：補充事蹟，{1} He/She/It/You，對象是人名、me 或 you
+{1} started a fight with {2}.	{1}挑起了和{2}的打鬥。	{1}挑起了和{2}的打斗。		FUN_140660870 883959 名聲 case 2：補充事蹟，{1} He/She/It/You，對象是人名、me 或 you
+{1} perpetrated a violent attack upon {2}.	{1}對{2}發動了暴力攻擊。	{1}对{2}发动了暴力攻击。		FUN_140660870 884023 名聲 case 3：補充事蹟，{1} He/She/It/You，對象是人名、me 或 you
+{1} ended the days of {2}.	{1}結束了{2}的生命。	{1}结束了{2}的生命。		FUN_140660870 884125 名聲 case 6：補充事蹟，{1} He/She/It/You，對象是人名、me 或 you
+{1} took the life of {2}.	{1}奪走了{2}的性命。	{1}夺走了{2}的性命。		FUN_140660870 884178 名聲 case 7：補充事蹟，{1} He/She/It/You，對象是人名、me 或 you
+{1} boldly slew {2}.	{1}英勇地斬殺了{2}。	{1}英勇地斩杀了{2}。		FUN_140660870 884362 名聲 case 0xc：補充事蹟，{1} He/She/It/You，對象是人名、me 或 you
+{1} brought battle to {2}.	{1}向{2}開戰。	{1}向{2}开战。		FUN_140660870 884371 名聲 case 0xc：補充事蹟，{1} He/She/It/You，對象是人名、me 或 you
+{1} bullied {2}.	{1}欺負了{2}。	{1}欺负了{2}。		FUN_140660870 884421 名聲 case 0xd：補充事蹟，{1} He/She/It/You，對象是人名、me 或 you
+{1} robbed {2}.	{1}搶劫了{2}。	{1}抢劫了{2}。		FUN_140660870 884480 名聲 case 0xe：補充事蹟，{1} He/She/It/You，對象是人名、me 或 you
+{1} justly slew {2}.	{1}正義地斬殺了{2}。	{1}正义地斩杀了{2}。		FUN_140660870 884898 名聲 case 0x18：補充事蹟，{1} He/She/It/You，對象是人名、me 或 you
+{1} challenged {2}.	{1}向{2}發起了挑戰。	{1}向{2}发起了挑战。		FUN_140660870 884907 名聲 case 0x18：補充事蹟，{1} He/She/It/You，對象是人名、me 或 you
+{1} brought back {2}.	{1}帶回了{2}。	{1}带回了{2}。		FUN_140660870 884941 名聲 case 0x19／0x1c；{2} 神器名、著作名或 an untitled work：補充事蹟，{1} He/She/It/You，對象是人名、me 或 you
+{1} stole {2}!	{1}偷走了{2}！	{1}偷走了{2}！		FUN_140660870 884984 名聲 case 0x1a；{2} 神器名、著作名或 an untitled work：補充事蹟，{1} He/She/It/You，對象是人名、me 或 you
+{1} did not name {@2}.	{1}沒有報上自己的名字。	{1}没有报上自己的名字。		FUN_140660870 885069 名聲 case 0x1d；{2} himself/herself/itself/yourself：補充事蹟，{1} He/She/It/You，對象是人名、me 或 you
+{1} feasts on the blood of the living!	{1}以活人的鮮血為食！	{1}以活人的鲜血为食！		FUN_140660870 884556 名聲 case 0x10：{1} He/She/It
+{1} gave an unwelcome name.	{1}報上了一個不受歡迎的名字。	{1}报上了一个不受欢迎的名字。		FUN_140660870 885057 名聲 case 0x1d：{1} He/She/It/You
+I don't know {1}.	我不認識{1}。	我不认识{1}。		FUN_140660870 885240 沒有其他話可說：{1} 人名或 you
+I found {1} dead.	我發現{1}死了。	我发现{1}死了。		FUN_14066ba00 889168 事件 case 0 死亡：{1} 人名
+{1} fell to the passing years.	{1}壽終正寢了。	{1}寿终正寝了。		FUN_14066ba00 889204 事件 case 0 死因：{1} 人名或 You
+{1} starved to death.	{1}餓死了。	{1}饿死了。		FUN_14066ba00 889204 事件 case 0 死因：{1} 人名或 You
+{1} died of thirst.	{1}渴死了。	{1}渴死了。		FUN_14066ba00 889204 事件 case 0 死因：{1} 人名或 You
+{1} was shot and killed.	{1}被射殺了。	{1}被射杀了。		FUN_14066ba00 889204 事件 case 0 死因：{1} 人名或 You
+{1} bled to death.	{1}失血而死。	{1}失血而死。		FUN_14066ba00 889204 事件 case 0 死因：{1} 人名或 You
+{1} drowned.	{1}淹死了。	{1}淹死了。		FUN_14066ba00 889204 事件 case 0 死因：{1} 人名或 You
+{1} suffocated.	{1}窒息而死。	{1}窒息而死。		FUN_14066ba00 889204 事件 case 0 死因：{1} 人名或 You
+{1} was slain.	{1}被殺了。	{1}被杀了。		FUN_14066ba00 889204 事件 case 0 死因：{1} 人名或 You
+{1} was scuttled.	{1}被毀掉了。	{1}被毁掉了。		FUN_14066ba00 889204 事件 case 0 死因：{1} 人名或 You
+{1} died.	{1}死了。	{1}死了。		FUN_14066ba00 889204 事件 case 0 死因：{1} 人名或 You
+{1} died in magma.	{1}死在熔岩裡。	{1}死在熔岩里。		FUN_14066ba00 889204 事件 case 0 死因：{1} 人名或 You
+{1} burned in dragonfire.	{1}葬身龍焰。	{1}葬身龙焰。		FUN_14066ba00 889204 事件 case 0 死因：{1} 人名或 You
+{1} burned to death.	{1}被燒死了。	{1}被烧死了。		FUN_14066ba00 889204 事件 case 0 死因：{1} 人名或 You
+{1} was scalded to death.	{1}被燙死了。	{1}被烫死了。		FUN_14066ba00 889204 事件 case 0 死因：{1} 人名或 You
+{1} was crushed.	{1}被壓死了。	{1}被压死了。		FUN_14066ba00 889204 事件 case 0 死因：{1} 人名或 You
+{1} was crushed by a bridge.	{1}被橋壓死了。	{1}被桥压死了。		FUN_14066ba00 889204 事件 case 0 死因：{1} 人名或 You
+{1} was crushed by a rock.	{1}被落石壓死了。	{1}被落石压死了。		FUN_14066ba00 889204 事件 case 0 死因：{1} 人名或 You
+{1} fell into a chasm.	{1}墜入了深淵。	{1}坠入了深渊。		FUN_14066ba00 889204 事件 case 0 死因：{1} 人名或 You
+{1} died in a cage.	{1}死在籠子裡。	{1}死在笼子里。		FUN_14066ba00 889204 事件 case 0 死因：{1} 人名或 You
+{1} was murdered.	{1}被謀殺了。	{1}被谋杀了。		FUN_14066ba00 889204 事件 case 0 死因：{1} 人名或 You
+{1} died in a trap.	{1}死於陷阱。	{1}死于陷阱。		FUN_14066ba00 889204 事件 case 0 死因：{1} 人名或 You
+{1} vanished.	{1}消失了。	{1}消失了。		FUN_14066ba00 889204 事件 case 0 死因：{1} 人名或 You
+{1} died in the heat.	{1}死於酷熱。	{1}死于酷热。		FUN_14066ba00 889204 事件 case 0 死因：{1} 人名或 You
+{1} died in the cold.	{1}死於嚴寒。	{1}死于严寒。		FUN_14066ba00 889204 事件 case 0 死因：{1} 人名或 You
+{1} was killed by spikes.	{1}被尖刺刺死了。	{1}被尖刺刺死了。		FUN_14066ba00 889204 事件 case 0 死因：{1} 人名或 You
+{1} froze to death.	{1}凍死了。	{1}冻死了。		FUN_14066ba00 889204 事件 case 0 死因：{1} 人名或 You
+{1} was beheaded.	{1}被斬首了。	{1}被斩首了。		FUN_14066ba00 889204 事件 case 0 死因：{1} 人名或 You
+{1} was crucified.	{1}被釘死在十字架上。	{1}被钉死在十字架上。		FUN_14066ba00 889204 事件 case 0 死因：{1} 人名或 You
+{1} was buried alive.	{1}被活埋了。	{1}被活埋了。		FUN_14066ba00 889204 事件 case 0 死因：{1} 人名或 You
+{1} was executed by drowning.	{1}被處以溺刑。	{1}被处以溺刑。		FUN_14066ba00 889204 事件 case 0 死因：{1} 人名或 You
+{1} was burned alive.	{1}被活活燒死了。	{1}被活活烧死了。		FUN_14066ba00 889204 事件 case 0 死因：{1} 人名或 You
+{1} was fed to beasts.	{1}被丟去餵了野獸。	{1}被丢去喂了野兽。		FUN_14066ba00 889204 事件 case 0 死因：{1} 人名或 You
+{1} was hacked to pieces.	{1}被砍成了碎塊。	{1}被砍成了碎块。		FUN_14066ba00 889204 事件 case 0 死因：{1} 人名或 You
+{1} was left out to suffocate.	{1}被晾在外面窒息而死。	{1}被晾在外面窒息而死。		FUN_14066ba00 889204 事件 case 0 死因：{1} 人名或 You
+{1} died of an illness.	{1}病死了。	{1}病死了。		FUN_14066ba00 889204 事件 case 0 死因：{1} 人名或 You
+{1} was put to rest.	{1}得以安息。	{1}得以安息。		FUN_14066ba00 889204 事件 case 0 死因：{1} 人名或 You
+{1} was scared to death.	{1}被嚇死了。	{1}被吓死了。		FUN_14066ba00 889204 事件 case 0 死因：{1} 人名或 You
+{1} died in the dark.	{1}死在黑暗中。	{1}死在黑暗中。		FUN_14066ba00 889204 事件 case 0 死因：{1} 人名或 You
+{1} collapsed.	{1}倒地身亡。	{1}倒地身亡。		FUN_14066ba00 889204 事件 case 0 死因：{1} 人名或 You
+{1} was drained of blood.	{1}被吸乾了血。	{1}被吸干了血。		FUN_14066ba00 889204 事件 case 0 死因：{1} 人名或 You
+{1} was slaughtered.	{1}被宰殺了。	{1}被宰杀了。		FUN_14066ba00 889204 事件 case 0 死因：{1} 人名或 You
+{1} leapt from a great height.	{1}從高處一躍而下。	{1}从高处一跃而下。		FUN_14066ba00 889204 事件 case 0 死因：{1} 人名或 You
+{1} was executed.	{1}被處決了。	{1}被处决了。		FUN_14066ba00 889204 事件 case 0 死因：{1} 人名或 You
+{1} drowned {@2}.	{1}投水自盡了。	{1}投水自尽了。		FUN_14066ba00 889335 事件 case 0 死因 0x35：{1} 人名或 You，{2} himself/herself/itself
+{1} perpetrated a production order violation.	{1}違反了生產令。	{1}违反了生产令。		FUN_14066ba00 889464 事件 case 1 罪行：{1} 人名或 You（原文 a export 照抄）
+{1} perpetrated a export prohibition violation.	{1}違反了出口禁令。	{1}违反了出口禁令。		FUN_14066ba00 889464 事件 case 1 罪行：{1} 人名或 You（原文 a export 照抄）
+{1} perpetrated a job order violation.	{1}違反了工作令。	{1}违反了工作令。		FUN_14066ba00 889464 事件 case 1 罪行：{1} 人名或 You（原文 a export 照抄）
+{1} perpetrated a conspiracy to slow labor.	{1}策劃了怠工的陰謀。	{1}策划了怠工的阴谋。		FUN_14066ba00 889464 事件 case 1 罪行：{1} 人名或 You（原文 a export 照抄）
+{1} perpetrated a murder.	{1}犯下了謀殺案。	{1}犯下了谋杀案。		FUN_14066ba00 889464 事件 case 1 罪行：{1} 人名或 You（原文 a export 照抄）
+{1} perpetrated disorderly conduct.	{1}擾亂了秩序。	{1}扰乱了秩序。		FUN_14066ba00 889464 事件 case 1 罪行：{1} 人名或 You（原文 a export 照抄）
+{1} perpetrated building destruction.	{1}破壞了建築。	{1}破坏了建筑。		FUN_14066ba00 889464 事件 case 1 罪行：{1} 人名或 You（原文 a export 照抄）
+{1} perpetrated vandalism.	{1}蓄意毀損了財物。	{1}蓄意毁坏了财物。		FUN_14066ba00 889464 事件 case 1 罪行：{1} 人名或 You（原文 a export 照抄）
+{1} perpetrated a theft.	{1}犯下了竊案。	{1}犯下了盗窃案。		FUN_14066ba00 889464 事件 case 1 罪行：{1} 人名或 You（原文 a export 照抄）
+{1} perpetrated a robbery.	{1}犯下了搶案。	{1}犯下了抢劫案。		FUN_14066ba00 889464 事件 case 1 罪行：{1} 人名或 You（原文 a export 照抄）
+{1} perpetrated blood-drinking.	{1}吸食了鮮血。	{1}吸食了鲜血。		FUN_14066ba00 889464 事件 case 1 罪行：{1} 人名或 You（原文 a export 照抄）
+{1} perpetrated embezzlement.	{1}盜用了公款。	{1}挪用了公款。		FUN_14066ba00 889464 事件 case 1 罪行：{1} 人名或 You（原文 a export 照抄）
+{1} perpetrated a kidnapping.	{1}犯下了綁架案。	{1}犯下了绑架案。		FUN_14066ba00 889464 事件 case 1 罪行：{1} 人名或 You（原文 a export 照抄）
+{1} perpetrated treason.	{1}犯下了叛國罪。	{1}犯下了叛国罪。		FUN_14066ba00 889464 事件 case 1 罪行：{1} 人名或 You（原文 a export 照抄）
+{1} perpetrated espionage.	{1}從事了間諜活動。	{1}从事了间谍活动。		FUN_14066ba00 889464 事件 case 1 罪行：{1} 人名或 You（原文 a export 照抄）
+{1} perpetrated bribery.	{1}犯下了賄賂罪。	{1}犯下了贿赂罪。		FUN_14066ba00 889464 事件 case 1 罪行：{1} 人名或 You（原文 a export 照抄）
+{1} attempted a murder.	{1}企圖殺人。	{1}企图杀人。		FUN_14066ba00 889464 事件 case 1 罪行未遂：{1} 人名或 You
+{1} attempted a kidnapping.	{1}企圖綁架。	{1}企图绑架。		FUN_14066ba00 889464 事件 case 1 罪行未遂：{1} 人名或 You
+{1} attempted a theft.	{1}企圖偷竊。	{1}企图偷窃。		FUN_14066ba00 889464 事件 case 1 罪行未遂：{1} 人名或 You
+{1} escalated a conflict with {2}.	{1}使與{2}的衝突升級了。	{1}使与{2}的冲突升级了。		FUN_14066ba00 889795 事件 case 3：{1}{2} 人名或 You／you
+I was reunited with {1} and it is all thanks to {2}.	我與{1}重逢了，這全都要感謝{2}。	我与{1}重逢了，这全都要感谢{2}。		FUN_14066ba00 889864 事件 case 4 團聚：人名或 you
+I was reunited with {1} due to your efforts.	多虧你的努力，我與{1}重逢了。	多亏你的努力，我与{1}重逢了。		FUN_14066ba00 889864 事件 case 4 團聚：人名或 you
+I was reunited with {1}.	我與{1}重逢了。	我与{1}重逢了。		FUN_14066ba00 889864 事件 case 4 團聚：人名或 you
+You were reunited with {1} and it is all thanks to {2}.	你與{1}重逢了，這全都要感謝{2}。	你与{1}重逢了，这全都要感谢{2}。		FUN_14066ba00 890033 事件 case 4 團聚：人名或 you
+You were reunited with {1} due to your efforts.	多虧你的努力，你與{1}重逢了。	多亏你的努力，你与{1}重逢了。		FUN_14066ba00 890033 事件 case 4 團聚：人名或 you
+You were reunited with {1}.	你與{1}重逢了。	你与{1}重逢了。		FUN_14066ba00 890033 事件 case 4 團聚：人名或 you
+{1} was reunited with {2} and it is all thanks to {3}.	{1}與{2}重逢了，這全都要感謝{3}。	{1}与{2}重逢了，这全都要感谢{3}。		FUN_14066ba00 890029 事件 case 4 團聚：人名或 you；開頭 {1} 人名
+{1} was reunited with {2} due to your efforts.	多虧你的努力，{1}與{2}重逢了。	多亏你的努力，{1}与{2}重逢了。		FUN_14066ba00 890029 事件 case 4 團聚：人名或 you；開頭 {1} 人名
+{1} was reunited with {2}.	{1}與{2}重逢了。	{1}与{2}重逢了。		FUN_14066ba00 890029 事件 case 4 團聚：人名或 you；開頭 {1} 人名
+{1} demanded submission from {2}.	{1}要求{2}臣服。	{1}要求{2}臣服。		FUN_14066ba00 890227 事件 case 5：{1}{2} 人名或 You／you
+{1} was destroyed in {2} in {3}.	{1}在{3}的{2}被摧毀了。	{1}在{3}的{2}被摧毁了。		FUN_14066ba00 890868 事件 case 7 神器被毀：{1} 神器名：結尾 in 是地點（建築 in 場所、場所、地區或地底層）
+{1} was destroyed in {2}.	{1}在{2}被摧毀了。	{1}在{2}被摧毁了。		FUN_14066ba00 890868 事件 case 7 神器被毀：{1} 神器名：結尾 in 是地點（建築 in 場所、場所、地區或地底層）
+{1} was destroyed.	{1}被摧毀了。	{1}被摧毁了。		FUN_14066ba00 890868 事件 case 7 神器被毀：{1} 神器名
+{1} had {2} in {3} in {4}.	{1}在{4}的{3}持有{2}。	{1}在{4}的{3}持有{2}。		FUN_14066ba00 890985 事件 case 7 神器／891147 case 8 著作：{1} 人名或 You，{2} 神器名、著作名或 an untitled work：結尾 in 是地點（建築 in 場所、場所、地區或地底層）
+{1} had {2} in {3}.	{1}在{3}持有{2}。	{1}在{3}持有{2}。		FUN_14066ba00 890985 事件 case 7 神器／891147 case 8 著作：{1} 人名或 You，{2} 神器名、著作名或 an untitled work：結尾 in 是地點（建築 in 場所、場所、地區或地底層）
+{1} had {2}.	{1}持有{2}。	{1}持有{2}。		FUN_14066ba00 890985 事件 case 7 神器／891147 case 8 著作：{1} 人名或 You，{2} 神器名、著作名或 an untitled work
+{1} placed {2} in {3} in {4}.	{1}在{4}的{3}放置了{2}。	{1}在{4}的{3}放置了{2}。		FUN_14066ba00 890985 事件 case 7 神器／891147 case 8 著作：{1} 人名或 You，{2} 神器名、著作名或 an untitled work：結尾 in 是地點（建築 in 場所、場所、地區或地底層）
+{1} placed {2} in {3}.	{1}在{3}放置了{2}。	{1}在{3}放置了{2}。		FUN_14066ba00 890985 事件 case 7 神器／891147 case 8 著作：{1} 人名或 You，{2} 神器名、著作名或 an untitled work：結尾 in 是地點（建築 in 場所、場所、地區或地底層）
+{1} placed {2}.	{1}放置了{2}。	{1}放置了{2}。		FUN_14066ba00 890985 事件 case 7 神器／891147 case 8 著作：{1} 人名或 You，{2} 神器名、著作名或 an untitled work
+{1} obtained {2} in {3} in {4}.	{1}在{4}的{3}取得了{2}。	{1}在{4}的{3}取得了{2}。		FUN_14066ba00 890985 事件 case 7 神器／891147 case 8 著作：{1} 人名或 You，{2} 神器名、著作名或 an untitled work：結尾 in 是地點（建築 in 場所、場所、地區或地底層）
+{1} obtained {2} in {3}.	{1}在{3}取得了{2}。	{1}在{3}取得了{2}。		FUN_14066ba00 890985 事件 case 7 神器／891147 case 8 著作：{1} 人名或 You，{2} 神器名、著作名或 an untitled work：結尾 in 是地點（建築 in 場所、場所、地區或地底層）
+{1} obtained {2}.	{1}取得了{2}。	{1}取得了{2}。		FUN_14066ba00 890985 事件 case 7 神器／891147 case 8 著作：{1} 人名或 You，{2} 神器名、著作名或 an untitled work
+{1} gave {2} to {3} in {4} in {5}.	{1}在{5}的{4}把{2}交給了{3}。	{1}在{5}的{4}把{2}交给了{3}。		FUN_14066ba00 890999 事件 case 7 神器／891152 case 8 著作：{3} 人名或 you：結尾 in 是地點（建築 in 場所、場所、地區或地底層）
+{1} gave {2} to {3} in {4}.	{1}在{4}把{2}交給了{3}。	{1}在{4}把{2}交给了{3}。		FUN_14066ba00 890999 事件 case 7 神器／891152 case 8 著作：{3} 人名或 you：結尾 in 是地點（建築 in 場所、場所、地區或地底層）
+{1} gave {2} to {3}.	{1}把{2}交給了{3}。	{1}把{2}交给了{3}。		FUN_14066ba00 890999 事件 case 7 神器／891152 case 8 著作：{3} 人名或 you
+{1} would not give {2} to {3} in {4} in {5}.	{1}在{5}的{4}不肯把{2}交給{3}。	{1}在{5}的{4}不肯把{2}交给{3}。		FUN_14066ba00 891003 事件 case 7 神器：{3} 人名或 you：結尾 in 是地點（建築 in 場所、場所、地區或地底層）
+{1} would not give {2} to {3} in {4}.	{1}在{4}不肯把{2}交給{3}。	{1}在{4}不肯把{2}交给{3}。		FUN_14066ba00 891003 事件 case 7 神器：{3} 人名或 you：結尾 in 是地點（建築 in 場所、場所、地區或地底層）
+{1} would not give {2} to {3}.	{1}不肯把{2}交給{3}。	{1}不肯把{2}交给{3}。		FUN_14066ba00 891003 事件 case 7 神器：{3} 人名或 you
+Somebody named themself to {1}.	有人向{1}報上了名字。	有人向{1}报上了名字。		FUN_14066ba00 891304 事件 case 9：{1} 文明名
+You named yourself to {1}.	你向{1}報上了名字。	你向{1}报上了名字。		FUN_14066ba00 891326 事件 case 9：{1} 文明名
+{1} self-identified to {2}.	{1}向{2}表明了身分。	{1}向{2}表明了身份。		FUN_14066ba00 891393 事件 case 9：{1} 人名，{2} 文明名
+Somebody refused to name themself to {1}.	有人拒絕向{1}報上名字。	有人拒绝向{1}报上名字。		FUN_14066ba00 891401 事件 case 10：{1} 文明名
+You refused to name yourself to {1}.	你拒絕向{1}報上名字。	你拒绝向{1}报上名字。		FUN_14066ba00 891421 事件 case 10：{1} 文明名
+{1} refused to give a name to {2}.	{1}拒絕向{2}報上名字。	{1}拒绝向{2}报上名字。		FUN_14066ba00 891487 事件 case 10：{1} 人名，{2} 文明名
+I saw a telling of the story of {1} at {2}.	我看到有人在{2}講述{1}的故事。	我看到有人在{2}讲述{1}的故事。		FUN_14066ba00 890354 事件 case 6 表演 故事：{1} 故事名或 history：結尾 at {2} 是場所名
+I saw a telling of the story of {1}.	我看到有人講述{1}的故事。	我看到有人讲述{1}的故事。		FUN_14066ba00 890354 事件 case 6 表演 故事：{1} 故事名或 history
+I saw {1} tell the story of {2} at {3}.	我看到{1}在{3}講述{2}的故事。	我看到{1}在{3}讲述{2}的故事。		FUN_14066ba00 890365 事件 case 6 表演 故事：{1} 人名或 you，{2} 故事名或 history：結尾 at {3} 是場所名
+I saw {1} tell the story of {2}.	我看到{1}講述{2}的故事。	我看到{1}讲述{2}的故事。		FUN_14066ba00 890365 事件 case 6 表演 故事：{1} 人名或 you，{2} 故事名或 history
+Thestory of {1} was told at {2}.	有人在{2}講述了{1}的故事。	有人在{2}讲述了{1}的故事。		FUN_14066ba00 890379 事件 case 6 表演 故事：遊戲原文 The 後面少空白，照抄：結尾 at {2} 是場所名
+Thestory of {1} was told.	有人講述了{1}的故事。	有人讲述了{1}的故事。		FUN_14066ba00 890379 事件 case 6 表演 故事：遊戲原文 The 後面少空白，照抄
+thestory of {1} was told at {2}.	有人在{2}講述了{1}的故事。	有人在{2}讲述了{1}的故事。		FUN_14066ba00 890381 事件 case 6 表演 故事：接在 I heard that 後（小寫，少空白照抄）：結尾 at {2} 是場所名
+thestory of {1} was told.	有人講述了{1}的故事。	有人讲述了{1}的故事。		FUN_14066ba00 890381 事件 case 6 表演 故事：接在 I heard that 後（小寫，少空白照抄）
+{1} told the story of {2} at {3}.	{1}在{3}講述了{2}的故事。	{1}在{3}讲述了{2}的故事。		FUN_14066ba00 890405 事件 case 6 表演 故事：{1} 人名或 You：結尾 at {3} 是場所名
+{1} told the story of {2}.	{1}講述了{2}的故事。	{1}讲述了{2}的故事。		FUN_14066ba00 890405 事件 case 6 表演 故事：{1} 人名或 You
+I told the story of {1} at {2}.	我在{2}講述了{1}的故事。	我在{2}讲述了{1}的故事。		FUN_14066ba00 890411 事件 case 6 表演 故事：結尾 at {2} 是場所名
+I told the story of {1}.	我講述了{1}的故事。	我讲述了{1}的故事。		FUN_14066ba00 890411 事件 case 6 表演 故事
+I saw a recital of a poem at {1}.	我看到有人在{1}朗誦一首詩。	我看到有人在{1}朗诵一首诗。		FUN_14066ba00 890437 事件 case 6 表演 詩：{1} 是場所名（作品缺名稱時是 a poem）
+I saw a recital of {1} at {2}.	我看到有人在{2}朗誦《{1}》。	我看到有人在{2}朗诵《{1}》。		FUN_14066ba00 890437 事件 case 6 表演 詩：{1} 詩名：結尾 at {2} 是場所名
+I saw a recital of {1}.	我看到有人朗誦《{1}》。	我看到有人朗诵《{1}》。		FUN_14066ba00 890437 事件 case 6 表演 詩：{1} 詩名
+I saw {1} recite a poem at {2}.	我看到{1}在{2}朗誦一首詩。	我看到{1}在{2}朗诵一首诗。		FUN_14066ba00 890448 事件 case 6 表演 詩：{1} 人名或 you，{2} 是場所名（作品缺名稱時是 a poem）
+I saw {1} recite {2} at {3}.	我看到{1}在{3}朗誦《{2}》。	我看到{1}在{3}朗诵《{2}》。		FUN_14066ba00 890448 事件 case 6 表演 詩：{1} 人名或 you，{2} 詩名：結尾 at {3} 是場所名
+I saw {1} recite a poem.	我看到{1}朗誦一首詩。	我看到{1}朗诵一首诗。		FUN_14066ba00 890448 事件 case 6 表演 詩：{1} 人名或 you（作品缺名稱時是 a poem）
+I saw {1} recite {2}.	我看到{1}朗誦《{2}》。	我看到{1}朗诵《{2}》。		FUN_14066ba00 890448 事件 case 6 表演 詩：{1} 人名或 you，{2} 詩名
+A poem was recited at {1}.	有人在{1}朗誦了一首詩。	有人在{1}朗诵了一首诗。		FUN_14066ba00 890466 事件 case 6 表演 詩：{1} 是場所名（作品缺名稱時是 A poem）
+a poem was recited at {1}.	有人在{1}朗誦了一首詩。	有人在{1}朗诵了一首诗。		FUN_14066ba00 890466 事件 case 6 表演 詩：{1} 是場所名（作品缺名稱時是 a poem）
+{1} was recited at {2}.	有人在{2}朗誦了《{1}》。	有人在{2}朗诵了《{1}》。		FUN_14066ba00 890466 事件 case 6 表演 詩：{1} 詩名：結尾 at {2} 是場所名
+{1} was recited.	有人朗誦了《{1}》。	有人朗诵了《{1}》。		FUN_14066ba00 890466 事件 case 6 表演 詩：{1} 詩名
+{1} recited a poem at {2}.	{1}在{2}朗誦了一首詩。	{1}在{2}朗诵了一首诗。		FUN_14066ba00 890485 事件 case 6 表演 詩：{1} 人名或 You，{2} 是場所名（作品缺名稱時是 a poem）
+{1} recited {2} at {3}.	{1}在{3}朗誦了《{2}》。	{1}在{3}朗诵了《{2}》。		FUN_14066ba00 890485 事件 case 6 表演 詩：{1} 人名或 You，{2} 詩名：結尾 at {3} 是場所名
+{1} recited a poem.	{1}朗誦了一首詩。	{1}朗诵了一首诗。		FUN_14066ba00 890485 事件 case 6 表演 詩：{1} 人名或 You（作品缺名稱時是 a poem）
+{1} recited {2}.	{1}朗誦了《{2}》。	{1}朗诵了《{2}》。		FUN_14066ba00 890485 事件 case 6 表演 詩：{1} 人名或 You，{2} 詩名
+I recited a poem at {1}.	我在{1}朗誦了一首詩。	我在{1}朗诵了一首诗。		FUN_14066ba00 890491 事件 case 6 表演 詩：結尾 at {1} 是場所名（作品缺名稱時是 a poem）
+I recited {1} at {2}.	我在{2}朗誦了《{1}》。	我在{2}朗诵了《{1}》。		FUN_14066ba00 890491 事件 case 6 表演 詩：結尾 at {2} 是場所名
+I recited {1}.	我朗誦了《{1}》。	我朗诵了《{1}》。		FUN_14066ba00 890491 事件 case 6 表演 詩
+Music was performed at {1}.	有人在{1}演出了一段音樂。	有人在{1}演出了一段音乐。		FUN_14066ba00 890523／890679 事件 case 6 表演 音樂、舞蹈：{1} 是場所名（作品缺名稱時是 Music）
+music was performed at {1}.	有人在{1}演出了一段音樂。	有人在{1}演出了一段音乐。		FUN_14066ba00 890523／890679 事件 case 6 表演 音樂、舞蹈：{1} 是場所名（作品缺名稱時是 music）
+Dance was performed at {1}.	有人在{1}演出了一支舞。	有人在{1}演出了一支舞。		FUN_14066ba00 890523／890679 事件 case 6 表演 音樂、舞蹈：{1} 是場所名（作品缺名稱時是 Dance）
+dance was performed at {1}.	有人在{1}演出了一支舞。	有人在{1}演出了一支舞。		FUN_14066ba00 890523／890679 事件 case 6 表演 音樂、舞蹈：{1} 是場所名（作品缺名稱時是 dance）
+{1} was performed at {2}.	有人在{2}演出了《{1}》。	有人在{2}演出了《{1}》。		FUN_14066ba00 890523／890679 事件 case 6 表演 音樂、舞蹈：{1} 曲名或舞名：結尾 at {2} 是場所名
+{1} was performed.	有人演出了《{1}》。	有人演出了《{1}》。		FUN_14066ba00 890523／890679 事件 case 6 表演 音樂、舞蹈：{1} 曲名或舞名
+I saw a performance of music at {1}.	我在{1}看了一場音樂演出。	我在{1}看了一场音乐演出。		FUN_14066ba00 890594／890671 事件 case 6 表演 音樂、舞蹈：結尾 at {1} 是場所名（作品缺名稱時是 music）
+I saw a performance of dance at {1}.	我在{1}看了一場舞蹈演出。	我在{1}看了一场舞蹈演出。		FUN_14066ba00 890594／890671 事件 case 6 表演 音樂、舞蹈：結尾 at {1} 是場所名（作品缺名稱時是 dance）
+I saw a performance of {1} at {2}.	我在{2}看了《{1}》的演出。	我在{2}看了《{1}》的演出。		FUN_14066ba00 890594／890671 事件 case 6 表演 音樂、舞蹈：結尾 at {2} 是場所名
+I saw a performance of {1}.	我看了《{1}》的演出。	我看了《{1}》的演出。		FUN_14066ba00 890594／890671 事件 case 6 表演 音樂、舞蹈
+I danced dance at {1}.	我在{1}跳了一支舞。	我在{1}跳了一支舞。		FUN_14066ba00 890685 事件 case 6 表演 舞蹈：結尾 at {1} 是場所名（作品缺名稱時是 dance）
+I danced {1} at {2}.	我在{2}跳了《{1}》。	我在{2}跳了《{1}》。		FUN_14066ba00 890685 事件 case 6 表演 舞蹈：結尾 at {2} 是場所名
+I danced {1}.	我跳了《{1}》。	我跳了《{1}》。		FUN_14066ba00 890685 事件 case 6 表演 舞蹈
+I saw {1} preach on {2} at {3}.	我看到{1}在{3}以{2}為題講道。	我看到{1}在{3}以{2}为题讲道。		FUN_14066ba00 890776 事件 case 6 表演 講道：{1} 人名或 you，{2} 神名、領域或價值觀片語：結尾 at {3} 是場所名
+I saw {1} preach on {2}.	我看到{1}以{2}為題講道。	我看到{1}以{2}为题讲道。		FUN_14066ba00 890776 事件 case 6 表演 講道：{1} 人名或 you，{2} 神名、領域或價值觀片語
+I saw a sermon on {1} at {2}.	我看到有人在{2}以{1}為題講道。	我看到有人在{2}以{1}为题讲道。		FUN_14066ba00 890765 事件 case 6 表演 講道：結尾 at {2} 是場所名
+I saw a sermon on {1}.	我看到有人以{1}為題講道。	我看到有人以{1}为题讲道。		FUN_14066ba00 890765 事件 case 6 表演 講道
+A sermon on {1} was preached at {2}.	有人在{2}以{1}為題講道。	有人在{2}以{1}为题讲道。		FUN_14066ba00 890790 事件 case 6 表演 講道：結尾 at {2} 是場所名
+A sermon on {1} was preached.	有人以{1}為題講道。	有人以{1}为题讲道。		FUN_14066ba00 890790 事件 case 6 表演 講道
+I heard that a sermon on {1} was preached at {2}.	我聽說有人在{2}以{1}為題講道。	我听说有人在{2}以{1}为题讲道。		FUN_14066ba00 890792 事件 case 6 表演 講道：FUN_140680970 902248 I heard that 開頭時小寫；data/rules/ann_01 的 a sermon on {1} 會先吞掉小寫句，所以連 I heard that 一起寫：結尾 at {2} 是場所名
+I heard that a sermon on {1} was preached.	我聽說有人以{1}為題講道。	我听说有人以{1}为题讲道。		FUN_14066ba00 890792 事件 case 6 表演 講道：FUN_140680970 902248 I heard that 開頭時小寫；data/rules/ann_01 的 a sermon on {1} 會先吞掉小寫句，所以連 I heard that 一起寫
+{1} preached on {2} at {3}.	{1}在{3}以{2}為題講道。	{1}在{3}以{2}为题讲道。		FUN_14066ba00 890816 事件 case 6 表演 講道：{1} 人名或 You：結尾 at {3} 是場所名
+{1} preached on {2}.	{1}以{2}為題講道。	{1}以{2}为题讲道。		FUN_14066ba00 890816 事件 case 6 表演 講道：{1} 人名或 You
+I preached on {1} at {2}.	我在{2}以{1}為題講道。	我在{2}以{1}为题讲道。		FUN_14066ba00 890822 事件 case 6 表演 講道：結尾 at {2} 是場所名
+I preached on {1}.	我以{1}為題講道。	我以{1}为题讲道。		FUN_14066ba00 890822 事件 case 6 表演 講道
+I saw {1} speak music at {2}.	我看到{1}在{2}念誦一段音樂。	我看到{1}在{2}念诵一段音乐。		FUN_14066ba00 890575 事件 case 6 表演 音樂：{1} 人名或 you，{2} 是場所名（作品缺名稱時是 music）
+I saw {1} speak {2} at {3}.	我看到{1}在{3}念誦《{2}》。	我看到{1}在{3}念诵《{2}》。		FUN_14066ba00 890575 事件 case 6 表演 音樂：{1} 人名或 you，{2} 曲名：結尾 at {3} 是場所名
+I saw {1} speak music.	我看到{1}念誦一段音樂。	我看到{1}念诵一段音乐。		FUN_14066ba00 890575 事件 case 6 表演 音樂：{1} 人名或 you（作品缺名稱時是 music）
+I saw {1} speak {2}.	我看到{1}念誦《{2}》。	我看到{1}念诵《{2}》。		FUN_14066ba00 890575 事件 case 6 表演 音樂：{1} 人名或 you，{2} 曲名
+{1} spoke music at {2}.	{1}在{2}念誦了一段音樂。	{1}在{2}念诵了一段音乐。		FUN_14066ba00 890613 事件 case 6 表演 音樂：{1} 人名、You 或 I，{2} 是場所名（作品缺名稱時是 music）
+{1} spoke dance at {2}.	{1}在{2}口述了一段舞曲。	{1}在{2}口述了一段舞曲。		FUN_14066ba00 890613 事件 case 6 表演 音樂：{1} 人名、You 或 I，{2} 是場所名（作品缺名稱時是 dance）
+{1} spoke {2} at {3}.	{1}在{3}念誦了《{2}》。	{1}在{3}念诵了《{2}》。		FUN_14066ba00 890613 事件 case 6 表演 音樂：{1} 人名、You 或 I，{2} 曲名：結尾 at {3} 是場所名
+{1} spoke music.	{1}念誦了一段音樂。	{1}念诵了一段音乐。		FUN_14066ba00 890613 事件 case 6 表演 音樂：{1} 人名、You 或 I（作品缺名稱時是 music）
+{1} spoke dance.	{1}口述了一段舞曲。	{1}口述了一段舞曲。		FUN_14066ba00 890613 事件 case 6 表演 音樂：{1} 人名、You 或 I（作品缺名稱時是 dance）
+{1} spoke {2}.	{1}念誦了《{2}》。	{1}念诵了《{2}》。		FUN_14066ba00 890613 事件 case 6 表演 音樂：{1} 人名、You 或 I，{2} 曲名
+I saw {1} chant music at {2}.	我看到{1}在{2}吟唱一段音樂。	我看到{1}在{2}吟唱一段音乐。		FUN_14066ba00 890575 事件 case 6 表演 音樂：{1} 人名或 you，{2} 是場所名（作品缺名稱時是 music）
+I saw {1} chant {2} at {3}.	我看到{1}在{3}吟唱《{2}》。	我看到{1}在{3}吟唱《{2}》。		FUN_14066ba00 890575 事件 case 6 表演 音樂：{1} 人名或 you，{2} 曲名：結尾 at {3} 是場所名
+I saw {1} chant music.	我看到{1}吟唱一段音樂。	我看到{1}吟唱一段音乐。		FUN_14066ba00 890575 事件 case 6 表演 音樂：{1} 人名或 you（作品缺名稱時是 music）
+I saw {1} chant {2}.	我看到{1}吟唱《{2}》。	我看到{1}吟唱《{2}》。		FUN_14066ba00 890575 事件 case 6 表演 音樂：{1} 人名或 you，{2} 曲名
+{1} chanted music at {2}.	{1}在{2}吟唱了一段音樂。	{1}在{2}吟唱了一段音乐。		FUN_14066ba00 890613 事件 case 6 表演 音樂：{1} 人名、You 或 I，{2} 是場所名（作品缺名稱時是 music）
+{1} chanted dance at {2}.	{1}在{2}吟唱了一段舞曲。	{1}在{2}吟唱了一段舞曲。		FUN_14066ba00 890613 事件 case 6 表演 音樂：{1} 人名、You 或 I，{2} 是場所名（作品缺名稱時是 dance）
+{1} chanted {2} at {3}.	{1}在{3}吟唱了《{2}》。	{1}在{3}吟唱了《{2}》。		FUN_14066ba00 890613 事件 case 6 表演 音樂：{1} 人名、You 或 I，{2} 曲名：結尾 at {3} 是場所名
+{1} chanted music.	{1}吟唱了一段音樂。	{1}吟唱了一段音乐。		FUN_14066ba00 890613 事件 case 6 表演 音樂：{1} 人名、You 或 I（作品缺名稱時是 music）
+{1} chanted dance.	{1}吟唱了一段舞曲。	{1}吟唱了一段舞曲。		FUN_14066ba00 890613 事件 case 6 表演 音樂：{1} 人名、You 或 I（作品缺名稱時是 dance）
+{1} chanted {2}.	{1}吟唱了《{2}》。	{1}吟唱了《{2}》。		FUN_14066ba00 890613 事件 case 6 表演 音樂：{1} 人名、You 或 I，{2} 曲名
+I saw {1} sing music at {2}.	我看到{1}在{2}演唱一段音樂。	我看到{1}在{2}演唱一段音乐。		FUN_14066ba00 890575 事件 case 6 表演 音樂：{1} 人名或 you，{2} 是場所名（作品缺名稱時是 music）
+I saw {1} sing {2} at {3}.	我看到{1}在{3}演唱《{2}》。	我看到{1}在{3}演唱《{2}》。		FUN_14066ba00 890575 事件 case 6 表演 音樂：{1} 人名或 you，{2} 曲名：結尾 at {3} 是場所名
+I saw {1} sing music.	我看到{1}演唱一段音樂。	我看到{1}演唱一段音乐。		FUN_14066ba00 890575 事件 case 6 表演 音樂：{1} 人名或 you（作品缺名稱時是 music）
+I saw {1} sing {2}.	我看到{1}演唱《{2}》。	我看到{1}演唱《{2}》。		FUN_14066ba00 890575 事件 case 6 表演 音樂：{1} 人名或 you，{2} 曲名
+{1} sang music at {2}.	{1}在{2}演唱了一段音樂。	{1}在{2}演唱了一段音乐。		FUN_14066ba00 890613 事件 case 6 表演 音樂：{1} 人名、You 或 I，{2} 是場所名（作品缺名稱時是 music）
+{1} sang dance at {2}.	{1}在{2}演唱了一段舞曲。	{1}在{2}演唱了一段舞曲。		FUN_14066ba00 890613 事件 case 6 表演 音樂：{1} 人名、You 或 I，{2} 是場所名（作品缺名稱時是 dance）
+{1} sang {2} at {3}.	{1}在{3}演唱了《{2}》。	{1}在{3}演唱了《{2}》。		FUN_14066ba00 890613 事件 case 6 表演 音樂：{1} 人名、You 或 I，{2} 曲名：結尾 at {3} 是場所名
+{1} sang music.	{1}演唱了一段音樂。	{1}演唱了一段音乐。		FUN_14066ba00 890613 事件 case 6 表演 音樂：{1} 人名、You 或 I（作品缺名稱時是 music）
+{1} sang dance.	{1}演唱了一段舞曲。	{1}演唱了一段舞曲。		FUN_14066ba00 890613 事件 case 6 表演 音樂：{1} 人名、You 或 I（作品缺名稱時是 dance）
+{1} sang {2}.	{1}演唱了《{2}》。	{1}演唱了《{2}》。		FUN_14066ba00 890613 事件 case 6 表演 音樂：{1} 人名、You 或 I，{2} 曲名
+I saw {1} play music at {2}.	我看到{1}在{2}演奏一段音樂。	我看到{1}在{2}演奏一段音乐。		FUN_14066ba00 890575 事件 case 6 表演 音樂：{1} 人名或 you，{2} 是場所名（作品缺名稱時是 music）
+I saw {1} play {2} at {3}.	我看到{1}在{3}演奏《{2}》。	我看到{1}在{3}演奏《{2}》。		FUN_14066ba00 890575 事件 case 6 表演 音樂：{1} 人名或 you，{2} 曲名：結尾 at {3} 是場所名
+I saw {1} play music.	我看到{1}演奏一段音樂。	我看到{1}演奏一段音乐。		FUN_14066ba00 890575 事件 case 6 表演 音樂：{1} 人名或 you（作品缺名稱時是 music）
+I saw {1} play {2}.	我看到{1}演奏《{2}》。	我看到{1}演奏《{2}》。		FUN_14066ba00 890575 事件 case 6 表演 音樂：{1} 人名或 you，{2} 曲名
+{1} played music at {2}.	{1}在{2}演奏了一段音樂。	{1}在{2}演奏了一段音乐。		FUN_14066ba00 890613 事件 case 6 表演 音樂：{1} 人名、You 或 I，{2} 是場所名（作品缺名稱時是 music）
+{1} played dance at {2}.	{1}在{2}演奏了一段舞曲。	{1}在{2}演奏了一段舞曲。		FUN_14066ba00 890613 事件 case 6 表演 音樂：{1} 人名、You 或 I，{2} 是場所名（作品缺名稱時是 dance）
+{1} played {2} at {3}.	{1}在{3}演奏了《{2}》。	{1}在{3}演奏了《{2}》。		FUN_14066ba00 890613 事件 case 6 表演 音樂：{1} 人名、You 或 I，{2} 曲名：結尾 at {3} 是場所名
+{1} played music.	{1}演奏了一段音樂。	{1}演奏了一段音乐。		FUN_14066ba00 890613 事件 case 6 表演 音樂：{1} 人名、You 或 I（作品缺名稱時是 music）
+{1} played dance.	{1}演奏了一段舞曲。	{1}演奏了一段舞曲。		FUN_14066ba00 890613 事件 case 6 表演 音樂：{1} 人名、You 或 I（作品缺名稱時是 dance）
+{1} played {2}.	{1}演奏了《{2}》。	{1}演奏了《{2}》。		FUN_14066ba00 890613 事件 case 6 表演 音樂：{1} 人名、You 或 I，{2} 曲名
+I saw {1} perform music at {2}.	我看到{1}在{2}演出一段音樂。	我看到{1}在{2}演出一段音乐。		FUN_14066ba00 890575 事件 case 6 表演 音樂：{1} 人名或 you，{2} 是場所名（作品缺名稱時是 music）
+I saw {1} perform {2} at {3}.	我看到{1}在{3}演出《{2}》。	我看到{1}在{3}演出《{2}》。		FUN_14066ba00 890575 事件 case 6 表演 音樂：{1} 人名或 you，{2} 曲名：結尾 at {3} 是場所名
+I saw {1} perform music.	我看到{1}演出一段音樂。	我看到{1}演出一段音乐。		FUN_14066ba00 890575 事件 case 6 表演 音樂：{1} 人名或 you（作品缺名稱時是 music）
+I saw {1} perform {2}.	我看到{1}演出《{2}》。	我看到{1}演出《{2}》。		FUN_14066ba00 890575 事件 case 6 表演 音樂：{1} 人名或 you，{2} 曲名
+{1} performed music at {2}.	{1}在{2}演出了一段音樂。	{1}在{2}演出了一段音乐。		FUN_14066ba00 890613 事件 case 6 表演 音樂：{1} 人名、You 或 I，{2} 是場所名（作品缺名稱時是 music）
+{1} performed dance at {2}.	{1}在{2}演出了一支舞。	{1}在{2}演出了一支舞。		FUN_14066ba00 890613 事件 case 6 表演 音樂：{1} 人名、You 或 I，{2} 是場所名（作品缺名稱時是 dance）
+{1} performed {2} at {3}.	{1}在{3}演出了《{2}》。	{1}在{3}演出了《{2}》。		FUN_14066ba00 890613 事件 case 6 表演 音樂：{1} 人名、You 或 I，{2} 曲名：結尾 at {3} 是場所名
+{1} performed music.	{1}演出了一段音樂。	{1}演出了一段音乐。		FUN_14066ba00 890613 事件 case 6 表演 音樂：{1} 人名、You 或 I（作品缺名稱時是 music）
+{1} performed dance.	{1}演出了一支舞。	{1}演出了一支舞。		FUN_14066ba00 890613 事件 case 6 表演 音樂：{1} 人名、You 或 I（作品缺名稱時是 dance）
+{1} performed {2}.	{1}演出了《{2}》。	{1}演出了《{2}》。		FUN_14066ba00 890613 事件 case 6 表演 音樂：{1} 人名、You 或 I，{2} 曲名
+{1} attacked {2}.	{1}攻擊了{2}。	{1}攻击了{2}。		FUN_14066ba00 889628 事件 case 2；FUN_140660870 884313 名聲 case 0xb 補充事蹟同句：{1}{2} 人名或 You／you／me
+{1} is {@2} of {3}.	{1}是{3}的{2}。	{1}是{3}的{2}。		FUN_140660870 885141 職位：{1} He/She/It，{2} 職位名，{3} 文明名（FUN_1409bdfb0）
+You are {@1} of {2}.	你是{2}的{1}。	你是{2}的{1}。		FUN_140660870 885141 職位：對聽者本人說，{1} 職位名，{2} 文明名
+{1} is my {%2}.	{1}是我的{2}。	{1}是我的{2}。		FUN_140660870 883308 case 1 與 883511 親屬：{1} 人名或 He/She/It，{2} 親屬稱謂（FUN_14075a580）；寫在其他 is my 句後面
+You are my {%1}.	你是我的{1}。	你是我的{1}。		FUN_140660870 883308 case 1 與 883511 親屬：對聽者本人說
+I heard that {%1}	我聽說{1}	我听说{1}		FUN_140680970 902248：開頭接 FUN_14066ba00 拼的事件句（含句點）

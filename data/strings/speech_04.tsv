@@ -1,0 +1,369 @@
+en	zh-Hant	zh-Hans	align	note
+The battle rages...	戰況正激烈……	战况正激烈……		FUN_14066fe50 case 0：戰鬥中
+This is a fight!	這是一場戰鬥！	这是一场战斗！		FUN_14066fe50 case 0
+In the midst of conflict...	身陷衝突之中……	身陷冲突之中……		FUN_14066fe50 case 0
+Has the tide turned?	戰局逆轉了嗎？	战局逆转了吗？		FUN_14066fe50 case 0
+How fragile we are...	我們是多麼脆弱……	我们是多么脆弱……		FUN_14066fe50 case 1：看到傷亡
+How fleeting life is...	生命多麼短暫……	生命多么短暂……		FUN_14066fe50 case 1
+Gruesome wounds!	好可怕的傷口！	好可怕的伤口！		FUN_14066fe50 case 1
+So easily broken...	如此不堪一擊……	如此不堪一击……		FUN_14066fe50 case 1
+Those injuries...	那些傷勢……	那些伤势……		FUN_14066fe50 case 1
+Can it all end so quickly?	一切就這麼快結束了嗎？	一切就这么快结束了吗？		FUN_14066fe50 case 1
+Death is all around us.	死亡就在我們身邊。	死亡就在我们身边。		FUN_14066fe50 case 2/0xf0
+Death...	死亡……	死亡……		FUN_14066fe50 case 2/0xf0
+Slayer.	殺戮者。	杀戮者。		FUN_14066fe50 case 5：兇手不明
+This is my fight too.	這也是我的戰鬥。	这也是我的战斗。		FUN_14066fe50 case 8
+I cannot just stand by.	我不能袖手旁觀。	我不能袖手旁观。		FUN_14066fe50 case 8
+I have a part in this.	這事我也有份。	这事我也有份。		FUN_14066fe50 case 8
+This is a masterpiece.	這是一件傑作。	这是一件杰作。		FUN_14066fe50 case 9
+This is a true masterpiece.	這是一件真正的傑作。	这是一件真正的杰作。		FUN_14066fe50 case 10
+I am a parent.	我已為人父母。	我已为人父母。		FUN_14066fe50 case 0xd
+Children.	孩子啊。	孩子啊。		FUN_14066fe50 case 0xd
+A battle!	有戰鬥！	有战斗！		FUN_14066fe50 case 0xe
+There's fighting!	打起來了！	打起来了！		FUN_14066fe50 case 0xe
+There was an incident.	出事了。	出事了。		FUN_14066fe50 case 0x13：找不到事件時；有事件時由 FUN_14066ba00 寫
+Is that a weapon?	那是武器嗎？	那是武器吗？		FUN_14066fe50 case 0x16
+Is this an attack?	這是攻擊嗎？	这是攻击吗？		FUN_14066fe50 case 0x16
+Who's skulking around there?	誰在那裡鬼鬼祟祟的？	谁在那里鬼鬼祟祟的？		FUN_14066fe50 case 0x17
+Somebody up to no good...	有人在搞鬼……	有人在搞鬼……		FUN_14066fe50 case 0x17
+It feeds on blood.	那東西以血為食。	那东西以血为食。		FUN_14066fe50 case 0x18：吸血鬼
+It is drinking the blood of the living.	那東西在吸活人的血。	那东西在吸活人的血。		FUN_14066fe50 case 0x18
+I brought up the lack of jobs in a meeting.	我在會議上提出了工作不足的問題。	我在会议上提出了工作不足的问题。		FUN_14066fe50 case 0x19：會面
+I made a suggestion about work allocations in a meeting.	我在會議上對工作分配提了建議。	我在会议上对工作分配提了建议。		FUN_14066fe50 case 0x19：會面
+I requested that more weapons be produced in a meeting.	我在會議上要求多生產一些武器。	我在会议上要求多生产一些武器。		FUN_14066fe50 case 0x19：會面
+I yelled at somebody in charge.	我對負責人大吼了一頓。	我对负责人大吼了一顿。		FUN_14066fe50 case 0x19：會面
+I cried on somebody in charge.	我向負責人哭訴。	我向负责人哭诉。		FUN_14066fe50 case 0x19：會面
+I asked to become a citizen.	我申請成為公民。	我申请成为公民。		FUN_14066fe50 case 0x19：會面
+I told somebody that I am being prevented from leaving.	我跟人說我被攔著不准離開。	我跟人说我被拦着不准离开。		FUN_14066fe50 case 0x19：會面
+I complained to my priest.	我向我的祭司抱怨。	我向我的祭司抱怨。		FUN_14066fe50 case 0x19：會面
+I cried on my priest.	我向我的祭司哭訴。	我向我的祭司哭诉。		FUN_14066fe50 case 0x19：會面
+I was yelled at by an unhappy citizen.	一位不滿的公民對我大吼。	一位不满的公民对我大吼。		FUN_14066fe50 case 0x1a：被會面
+I was cried on by an unhappy citizen.	一位不滿的公民向我哭訴。	一位不满的公民向我哭诉。		FUN_14066fe50 case 0x1a：被會面
+A visitor complained about being prevented from leaving.	有位訪客抱怨被攔著不准離開。	有位访客抱怨被拦着不准离开。		FUN_14066fe50 case 0x1a：被會面
+I was yelled at by an unhappy worshipper.	一位不滿的信徒對我大吼。	一位不满的信徒对我大吼。		FUN_14066fe50 case 0x1a：被會面
+I was cried on by an unhappy worshipper.	一位不滿的信徒向我哭訴。	一位不满的信徒向我哭诉。		FUN_14066fe50 case 0x1a：被會面
+I lost a pet.	我失去了一隻寵物。	我失去了一只宠物。		FUN_14066fe50 case 0x1f
+I threw something.	我亂扔東西。	我乱扔东西。		FUN_14066fe50 case 0x20
+I was released from confinement.	我被放出來了。	我被放出来了。		FUN_14066fe50 case 0x21
+I lost the baby.	我流產了。	我流产了。		FUN_14066fe50 case 0x22
+My spouse lost the baby.	我的配偶流產了。	我的配偶流产了。		FUN_14066fe50 case 0x23
+I am wearing old clothes.	我穿著舊衣服。	我穿着旧衣服。		FUN_14066fe50 case 0x24
+My clothes are in tatters.	我的衣服破爛不堪。	我的衣服破烂不堪。		FUN_14066fe50 case 0x25
+My clothes actually rotted right off of my body.	我的衣服居然直接在身上爛掉了。	我的衣服居然直接在身上烂掉了。		FUN_14066fe50 case 0x26
+I had a nightmare about my deceased spouse.	我做了惡夢，夢見已故的配偶。	我做了噩梦，梦见已故的配偶。		FUN_14066fe50 case 0x27：夢魘
+I had a nightmare about my deceased mother.	我做了惡夢，夢見已故的母親。	我做了噩梦，梦见已故的母亲。		FUN_14066fe50 case 0x27：夢魘
+I had a nightmare about my deceased father.	我做了惡夢，夢見已故的父親。	我做了噩梦，梦见已故的父亲。		FUN_14066fe50 case 0x27：夢魘
+I had a nightmare about my deceased lover.	我做了惡夢，夢見已故的戀人。	我做了噩梦，梦见已故的恋人。		FUN_14066fe50 case 0x27：夢魘
+I had a nightmare about my deceased sibling.	我做了惡夢，夢見已故的手足。	我做了噩梦，梦见已故的兄弟姐妹。		FUN_14066fe50 case 0x27：夢魘
+I had a nightmare about my deceased child.	我做了惡夢，夢見已故的孩子。	我做了噩梦，梦见已故的孩子。		FUN_14066fe50 case 0x27：夢魘
+I had a nightmare about my deceased friend.	我做了惡夢，夢見已故的朋友。	我做了噩梦，梦见已故的朋友。		FUN_14066fe50 case 0x27：夢魘
+I had a nightmare about my deceased acquaintance.	我做了惡夢，夢見已故的熟人。	我做了噩梦，梦见已故的熟人。		FUN_14066fe50 case 0x27：夢魘
+I had a nightmare about my deceased animal training partner.	我做了惡夢，夢見已故的動物訓練夥伴。	我做了噩梦，梦见已故的动物训练伙伴。		FUN_14066fe50 case 0x27：夢魘
+I had a nightmare about my deceased pet.	我做了惡夢，夢見已故的寵物。	我做了噩梦，梦见已故的宠物。		FUN_14066fe50 case 0x27：夢魘
+I had a nightmare about the dead.	我做了惡夢，夢見亡者。	我做了噩梦，梦见亡者。		FUN_14066fe50 case 0x27：夢魘
+the ghost of my spouse	我配偶的鬼魂	我配偶的鬼魂		FUN_14066fe50 case 0x28：I was haunted by … 的 {1}
+the ghost of my mother	我母親的鬼魂	我母亲的鬼魂		FUN_14066fe50 case 0x28：I was haunted by … 的 {1}
+the ghost of my father	我父親的鬼魂	我父亲的鬼魂		FUN_14066fe50 case 0x28：I was haunted by … 的 {1}
+the ghost of my lover	我戀人的鬼魂	我恋人的鬼魂		FUN_14066fe50 case 0x28：I was haunted by … 的 {1}
+the ghost of my sibling	我手足的鬼魂	我兄弟姐妹的鬼魂		FUN_14066fe50 case 0x28：I was haunted by … 的 {1}
+the ghost of my child	我孩子的鬼魂	我孩子的鬼魂		FUN_14066fe50 case 0x28：I was haunted by … 的 {1}
+the ghost of my friend	我朋友的鬼魂	我朋友的鬼魂		FUN_14066fe50 case 0x28：I was haunted by … 的 {1}
+the ghost of my animal training partner	我動物訓練夥伴的鬼魂	我动物训练伙伴的鬼魂		FUN_14066fe50 case 0x28：I was haunted by … 的 {1}
+a ghost	一個鬼魂	一个鬼魂		FUN_14066fe50 case 0x28：I was haunted by … 的 {1}
+the ghost of an acquaintance	一位熟人的鬼魂	一位熟人的鬼魂		FUN_14066fe50 case 0x28
+the ghost of a pet	一隻寵物的鬼魂	一只宠物的鬼魂		FUN_14066fe50 case 0x28
+I had a sparring session.	我進行了一場對練。	我进行了一场对练。		FUN_14066fe50 case 0x29
+I was not able to bring up the lack of jobs.	我沒能提出工作不足的問題。	我没能提出工作不足的问题。		FUN_14066fe50 case 0x2a：會面失敗
+I was not able to make suggestions about work allocations.	我沒能對工作分配提出建議。	我没能对工作分配提出建议。		FUN_14066fe50 case 0x2a：會面失敗
+I was unable to request weapon production.	我沒辦法要求生產武器。	我没办法要求生产武器。		FUN_14066fe50 case 0x2a：會面失敗
+I could not find anybody in charge to complain at.	我找不到負責人可以抱怨。	我找不到负责人可以抱怨。		FUN_14066fe50 case 0x2a：會面失敗
+I could not find anybody in charge to comfort me.	我找不到負責人來安慰我。	我找不到负责人来安慰我。		FUN_14066fe50 case 0x2a：會面失敗
+I was not able to petition for citizenship.	我沒能請願成為公民。	我没能请愿成为公民。		FUN_14066fe50 case 0x2a：會面失敗
+I could not find a priest to complain at.	我找不到祭司可以抱怨。	我找不到祭司可以抱怨。		FUN_14066fe50 case 0x2a：會面失敗
+I could not find a priest to comfort me.	我找不到祭司來安慰我。	我找不到祭司来安慰我。		FUN_14066fe50 case 0x2a：會面失敗
+I've been on a long patrol.	我巡邏了很久。	我巡逻了很久。		FUN_14066fe50 case 0x2b
+I was nauseated by the sun.	陽光讓我反胃。	阳光让我反胃。		FUN_14066fe50 case 0x2c
+I've been out in the sunshine again after a long time away.	隔了好久，我終於又曬到太陽了。	隔了好久，我终于又晒到太阳了。		FUN_14066fe50 case 0x2d
+I'm sleepy.	我好睏。	我好困。		FUN_14066fe50 case 0x2e
+I haven't slept for a very long time.	我已經好久沒睡覺了。	我已经好久没睡觉了。		FUN_14066fe50 case 0x2f
+I'm thirsty.	我好渴。	我好渴。		FUN_14066fe50 case 0x30
+I'm dehydrated.	我快渴死了。	我快渴死了。		FUN_14066fe50 case 0x31
+I'm hungry.	我好餓。	我好饿。		FUN_14066fe50 case 0x32
+I'm starving.	我快餓死了。	我快饿死了。		FUN_14066fe50 case 0x33
+I've been injured badly.	我傷得很重。	我伤得很重。		FUN_14066fe50 case 0x34
+I've been wounded.	我受傷了。	我受伤了。		FUN_14066fe50 case 0x35
+I didn't sleep soundly due to the noise.	太吵了，我睡得不安穩。	太吵了，我睡得不安稳。		FUN_14066fe50 case 0x36
+It was very hard to sleep with the noise.	吵成這樣，實在很難睡。	吵成这样，实在很难睡。		FUN_14066fe50 case 0x36
+I couldn't sleep at all with all the noise.	吵成那樣，我根本睡不著。	吵成那样，我根本睡不着。		FUN_14066fe50 case 0x36
+I was able to rest up.	我好好休息了一下。	我好好休息了一下。		FUN_14066fe50 case 0x37
+I was caught in freakish weather.	我遇上了怪異的天氣。	我遇上了怪异的天气。		FUN_14066fe50 case 0x38
+I was out in the rain.	我在外面淋了雨。	我在外面淋了雨。		FUN_14066fe50 case 0x39
+I've been rained on.	我被雨淋了。	我被雨淋了。		FUN_14066fe50 case 0x39
+It was raining on me.	雨一直打在我身上。	雨一直打在我身上。		FUN_14066fe50 case 0x39
+I was in a snow storm.	我遇上了暴風雪。	我遇上了暴风雪。		FUN_14066fe50 case 0x3a
+I was out in a blizzard.	我在外面碰上了暴風雪。	我在外面碰上了暴风雪。		FUN_14066fe50 case 0x3a
+It was snowing on me.	雪一直落在我身上。	雪一直落在我身上。		FUN_14066fe50 case 0x3a
+I got caught in a miasma.	我被瘴氣燻到了。	我被瘴气熏到了。		FUN_14066fe50 case 0x3b
+I was caught in smoke underground.	我在地底被煙嗆到了。	我在地下被烟呛到了。		FUN_14066fe50 case 0x3c
+I was close to a waterfall.	我待在瀑布附近。	我待在瀑布附近。		FUN_14066fe50 case 0x3d
+I got caught in dust underground.	我在地底被粉塵嗆到了。	我在地下被粉尘呛到了。		FUN_14066fe50 case 0x3e
+I was considering the demands I've made.	我在想自己提過的要求。	我在想自己提过的要求。		FUN_14066fe50 case 0x3f
+A criminal could not be properly punished.	有個罪犯沒能受到應有的懲罰。	有个罪犯没能受到应有的惩罚。		FUN_14066fe50 case 0x40
+My punishment was reduced.	我的刑罰減輕了。	我的刑罚减轻了。		FUN_14066fe50 case 0x41
+I won the election.	我當選了。	我当选了。		FUN_14066fe50 case 0x42
+I was re-elected.	我連任了。	我连任了。		FUN_14066fe50 case 0x43
+My request was approved.	我的請求獲准了。	我的请求获批了。		FUN_14066fe50 case 0x44
+My request was ignored.	我的請求被無視了。	我的请求被无视了。		FUN_14066fe50 case 0x45
+Nobody could be punished for failing to obey my commands.	有人違抗我的命令，卻沒辦法懲罰任何人。	有人违抗我的命令，却没办法惩罚任何人。		FUN_14066fe50 case 0x46
+My punishment was delayed.	我的刑罰延後了。	我的刑罚推迟了。		FUN_14066fe50 case 0x47
+A criminal's punishment was delayed.	有個罪犯的刑罰延後了。	有个罪犯的刑罚推迟了。		FUN_14066fe50 case 0x48
+There are not enough cages and chains.	籠子和鎖鏈不夠用。	笼子和锁链不够用。		FUN_14066fe50 case 0x49
+My mandate was ignored.	我的命令被無視了。	我的命令被无视了。		FUN_14066fe50 case 0x4a
+A mandate deadline was missed.	有條命令沒在期限內完成。	有条命令没在期限内完成。		FUN_14066fe50 case 0x4b
+There wasn't enough work last season.	上一季的工作不夠。	上一季的工作不够。		FUN_14066fe50 case 0x4c
+I smashed up a building.	我砸爛了一座建築。	我砸烂了一座建筑。		FUN_14066fe50 case 0x4d
+I toppled something over.	我推倒了東西。	我推倒了东西。		FUN_14066fe50 case 0x4e
+I have attained a higher rank of nobility.	我晉升到更高的貴族階級了。	我晋升到更高的贵族阶级了。		FUN_14066fe50 case 0x4f
+I have entered the nobility.	我成為貴族了。	我成为贵族了。		FUN_14066fe50 case 0x50
+I was knocked out by a cave-in.	我被坍方砸昏了。	我被塌方砸晕了。		FUN_14066fe50 case 0x51
+My deadline was met.	我的命令如期完成了。	我的命令如期完成了。		FUN_14066fe50 case 0x52
+I am uncovered.	我光著身子。	我光着身子。		FUN_14066fe50 case 0x53
+I don't have a shirt.	我沒有上衣。	我没有上衣。		FUN_14066fe50 case 0x54
+I have no shoes.	我沒有鞋子。	我没有鞋子。		FUN_14066fe50 case 0x55
+I had to eat my beloved pet to survive.	為了活下去，我只好吃掉心愛的寵物。	为了活下去，我只好吃掉心爱的宠物。		FUN_14066fe50 case 0x56
+I had to eat one of my favorite animals to survive.	為了活下去，我只好吃掉一隻我最喜歡的動物。	为了活下去，我只好吃掉一只我最喜欢的动物。		FUN_14066fe50 case 0x57
+I had to eat vermin to survive.	為了活下去，我只好吃害蟲。	为了活下去，我只好吃害虫。		FUN_14066fe50 case 0x58
+I started a fist fight.	我挑起了一場鬥毆。	我挑起了一场斗殴。		FUN_14066fe50 case 0x59
+I beat somebody as a punishment.	我打了某人一頓，當作懲罰。	我打了某人一顿，当作惩罚。		FUN_14066fe50 case 0x5a
+I was beaten as a punishment.	我被打了一頓，算是受罰。	我被打了一顿，算是受罚。		FUN_14066fe50 case 0x5b
+I was beat somebody with the hammer.	我用錘子打了某人。	我用锤子打了某人。		FUN_14066fe50 case 0x5c：原文文法錯誤照抄
+I was beaten with the hammer.	我挨了錘子打。	我挨了锤子打。		FUN_14066fe50 case 0x5d
+I could not find the hammer.	我找不到錘子。	我找不到锤子。		FUN_14066fe50 case 0x5e
+I have been eating the same old food.	我吃來吃去都是同樣的食物。	我吃来吃去都是同样的食物。		FUN_14066fe50 case 0x5f
+I ate rotten food.	我吃了腐爛的食物。	我吃了腐烂的食物。		FUN_14066fe50 case 0x60
+I ate a meal.	我吃了一頓飯。	我吃了一顿饭。		FUN_14066fe50 case 0x61
+I had a drink.	我喝了一杯。	我喝了一杯。		FUN_14066fe50 case 0x62
+I don't have enough chests.	我的箱子不夠。	我的箱子不够。		FUN_14066fe50 case 0x63
+I don't have enough cabinets.	我的櫥櫃不夠。	我的橱柜不够。		FUN_14066fe50 case 0x64
+I don't have enough weapon racks.	我的武器架不夠。	我的武器架不够。		FUN_14066fe50 case 0x65
+I don't have enough armor stands.	我的盔甲架不夠。	我的盔甲架不够。		FUN_14066fe50 case 0x66
+Somebody has better office arrangements than I do.	別人的辦公室布置比我的好。	别人的办公室布置比我的好。		FUN_14066fe50 case 0x67
+Somebody has better sleeping arrangements than I do.	別人的臥房布置比我的好。	别人的卧房布置比我的好。		FUN_14066fe50 case 0x67
+Somebody has better dining arrangements than I do.	別人的用餐處布置比我的好。	别人的用餐处布置比我的好。		FUN_14066fe50 case 0x67
+Somebody has better burial arrangements than I do.	別人的墓葬布置比我的好。	别人的墓葬布置比我的好。		FUN_14066fe50 case 0x67
+Somebody has better  arrangements than I do.	別人的布置比我的好。	别人的布置比我的好。		FUN_14066fe50 case 0x67：種類不明時原文少一個字（雙空白）
+There aren't enough dining tables.	餐桌不夠。	餐桌不够。		FUN_14066fe50 case 0x68
+I ate at a crowded table.	我在擁擠的餐桌吃飯。	我在拥挤的餐桌吃饭。		FUN_14066fe50 case 0x69
+I ate in a dining room.	我在餐廳吃了飯。	我在餐厅吃了饭。		FUN_14066fe50 case 0x6a
+I didn't have a dining room.	我沒有餐廳可以用。	我没有餐厅可以用。		FUN_14066fe50 case 0x6b
+There aren't enough chairs.	椅子不夠。	椅子不够。		FUN_14066fe50 case 0x6c
+I formed a bond with my animal training partner.	我和我的動物訓練夥伴建立了感情。	我和我的动物训练伙伴建立了感情。		FUN_14066fe50 case 0x6d
+I was rescued.	我獲救了。	我获救了。		FUN_14066fe50 case 0x6e
+I brought somebody to rest in bed.	我把某人送到床上休息。	我把某人送到床上休息。		FUN_14066fe50 case 0x6f
+I felled a tree.	我砍倒了一棵樹。	我砍倒了一棵树。		FUN_14066fe50 case 0x70
+I finished up some work.	我做完了一些工作。	我做完了一些工作。		FUN_14066fe50 case 0x70
+I slaughtered an animal.	我宰了一隻動物。	我宰了一只动物。		FUN_14066fe50 case 0x70
+I chained up a creature.	我把一隻生物拴起來了。	我把一只生物拴起来了。		FUN_14066fe50 case 0x70
+I put a creature in a cage.	我把一隻生物關進籠子。	我把一只生物关进笼子。		FUN_14066fe50 case 0x70
+I gelded a creature.	我閹割了一隻生物。	我阉割了一只生物。		FUN_14066fe50 case 0x70
+I put a piece on display.	我展出了一件作品。	我展出了一件作品。		FUN_14066fe50 case 0x70
+The tax collector's escorts stole my property.	收稅官的護衛偷走了我的財物。	收税官的护卫偷走了我的财物。		FUN_14066fe50 case 0x71
+I lost some property to taxes.	我有些財物被拿去抵稅了。	我有些财物被拿去抵税了。		FUN_14066fe50 case 0x72
+I do not have adequate protection.	我沒有足夠的保護。	我没有足够的保护。		FUN_14066fe50 case 0x73
+I was unable to reach a room during tax collection.	收稅時我到不了某個房間。	收税时我到不了某个房间。		FUN_14066fe50 case 0x74
+I was misinformed about a room during tax collection.	收稅時我拿到了錯誤的房間資訊。	收税时我拿到了错误的房间信息。		FUN_14066fe50 case 0x75
+I pleased the nobility.	我讓貴族們滿意了。	我让贵族们满意了。		FUN_14066fe50 case 0x76
+Tax collection went smoothly.	收稅很順利。	收税很顺利。		FUN_14066fe50 case 0x77
+I disappointed the nobility.	我讓貴族們失望了。	我让贵族们失望了。		FUN_14066fe50 case 0x78
+The tax collection did not go smoothly.	這次收稅不太順利。	这次收税不太顺利。		FUN_14066fe50 case 0x79
+I made a new friend.	我交了一個新朋友。	我交了一个新朋友。		FUN_14066fe50 case 0x7a
+I am forming a grudge against somebody.	我開始對某人懷恨在心。	我开始对某人怀恨在心。		FUN_14066fe50 case 0x7b
+I acquired something.	我得到了一樣東西。	我得到了一样东西。		FUN_14066fe50 case 0x7f
+I adopted a new pet.	我領養了一隻新寵物。	我领养了一只新宠物。		FUN_14066fe50 case 0x80
+I was confined.	我被關起來了。	我被关起来了。		FUN_14066fe50 case 0x81
+I had a bath.	我洗了個澡。	我洗了个澡。		FUN_14066fe50 case 0x82
+I had a bath with soap!	我用肥皂洗了個澡！	我用肥皂洗了个澡！		FUN_14066fe50 case 0x83
+I killed somebody in a sparring accident.	我在對練時失手殺了人。	我在对练时失手杀了人。		FUN_14066fe50 case 0x84
+I was attacked.	我遭到攻擊。	我遭到攻击。		FUN_14066fe50 case 0x85
+I was attacked by the dead.	我遭到亡者攻擊。	我遭到亡者攻击。		FUN_14066fe50 case 0x86
+I have been drinking the same old booze.	我喝來喝去都是同樣的酒。	我喝来喝去都是同样的酒。		FUN_14066fe50 case 0x87
+I drank bloody water.	我喝了帶血的水。	我喝了带血的水。		FUN_14066fe50 case 0x88
+I drank slime.	我喝了黏液。	我喝了黏液。		FUN_14066fe50 case 0x89
+I drank vomit.	我喝了嘔吐物。	我喝了呕吐物。		FUN_14066fe50 case 0x8a
+I drank gooey water.	我喝了黏糊糊的水。	我喝了黏糊糊的水。		FUN_14066fe50 case 0x8b
+I drank water mixed with ichor.	我喝了混著體液的水。	我喝了混着体液的水。		FUN_14066fe50 case 0x8c
+I drank water mixed with pus.	我喝了混著膿的水。	我喝了混着脓的水。		FUN_14066fe50 case 0x8d
+I drank foul water.	我喝了髒水。	我喝了脏水。		FUN_14066fe50 case 0x8e
+I had a drink, but it had gone bad.	我喝了一杯，但酒已經變質了。	我喝了一杯，但酒已经变质了。		FUN_14066fe50 case 0x8f
+I drank water without a well.	我沒用水井就喝了水。	我没用水井就喝了水。		FUN_14066fe50 case 0x90
+I slept without a proper room.	我沒有像樣的房間可以睡。	我没有像样的房间可以睡。		FUN_14066fe50 case 0x93
+I slept in a bedroom.	我在臥室睡了一覺。	我在卧室睡了一觉。		FUN_14066fe50 case 0x94
+I slept on the floor.	我睡在地板上。	我睡在地板上。		FUN_14066fe50 case 0x95
+I slept in the mud.	我睡在泥巴裡。	我睡在泥巴里。		FUN_14066fe50 case 0x96
+I slept in the grass.	我睡在草地上。	我睡在草地上。		FUN_14066fe50 case 0x97
+I slept on a rough cave floor.	我睡在粗糙的洞穴地面上。	我睡在粗糙的洞穴地面上。		FUN_14066fe50 case 0x98
+I slept on rocks.	我睡在石頭上。	我睡在石头上。		FUN_14066fe50 case 0x99
+I slept on ice.	我睡在冰上。	我睡在冰上。		FUN_14066fe50 case 0x9a
+I slept in the dirt.	我睡在泥土上。	我睡在泥土上。		FUN_14066fe50 case 0x9b
+I slept on a pile of driftwood.	我睡在一堆漂流木上。	我睡在一堆漂流木上。		FUN_14066fe50 case 0x9c
+My artwork was defaced.	我的藝術品被毀損了。	我的艺术品被毁损了。		FUN_14066fe50 case 0x9d
+I was evicted.	我被趕出去了。	我被赶出去了。		FUN_14066fe50 case 0x9e
+I got married.	我結婚了。	我结婚了。		FUN_14066fe50 case 0xa0
+I have a new sibling.	我多了一個手足。	我多了一个兄弟姐妹。		FUN_14066fe50 case 0xa0
+I have new siblings.	我多了幾個手足。	我多了几个兄弟姐妹。		FUN_14066fe50 case 0xa0
+I have become a parent.	我當上父母了。	我当上父母了。		FUN_14066fe50 case 0xa0
+I received water.	有人給我水喝。	有人给我水喝。		FUN_14066fe50 case 0xa1
+I gave somebody water.	我給了某人水喝。	我给了某人水喝。		FUN_14066fe50 case 0xa2
+I received food.	有人給我食物。	有人给我食物。		FUN_14066fe50 case 0xa3
+I gave somebody food.	我給了某人食物。	我给了某人食物。		FUN_14066fe50 case 0xa4
+I talked to my spouse.	我和配偶聊了聊。	我和配偶聊了聊。		FUN_14066fe50 case 0xa5
+I talked to my mother.	我和母親聊了聊。	我和母亲聊了聊。		FUN_14066fe50 case 0xa5
+I talked to my father.	我和父親聊了聊。	我和父亲聊了聊。		FUN_14066fe50 case 0xa5
+I talked to my lover.	我和戀人聊了聊。	我和恋人聊了聊。		FUN_14066fe50 case 0xa5
+I talked to my sibling.	我和手足聊了聊。	我和兄弟姐妹聊了聊。		FUN_14066fe50 case 0xa5
+I talked to my child.	我和孩子聊了聊。	我和孩子聊了聊。		FUN_14066fe50 case 0xa5
+I talked to my friend.	我和朋友聊了聊。	我和朋友聊了聊。		FUN_14066fe50 case 0xa5
+I talked to somebody.	我和某人聊了聊。	我和某人聊了聊。		FUN_14066fe50 case 0xa5
+I talked to an acquaintance.	我和一位熟人聊了聊。	我和一位熟人聊了聊。		FUN_14066fe50 case 0xa5
+I visited with my animal training partner.	我陪我的動物訓練夥伴待了一會兒。	我陪我的动物训练伙伴待了一会儿。		FUN_14066fe50 case 0xa5
+I visited with my pet.	我陪我的寵物待了一會兒。	我陪我的宠物待了一会儿。		FUN_14066fe50 case 0xa5
+I conducted a meeting in a good setting.	我在不錯的場所主持了會議。	我在不错的场所主持了会议。		FUN_14066fe50 case 0xa6：會議場所品質
+I conducted a meeting in a very good setting.	我在很好的場所主持了會議。	我在很好的场所主持了会议。		FUN_14066fe50 case 0xa6：會議場所品質
+I conducted a meeting in a great setting.	我在很棒的場所主持了會議。	我在很棒的场所主持了会议。		FUN_14066fe50 case 0xa6：會議場所品質
+I conducted a meeting in a fantastic setting.	我在極好的場所主持了會議。	我在极好的场所主持了会议。		FUN_14066fe50 case 0xa6：會議場所品質
+I conducted a meeting in a setting worthy of legends.	我在堪稱傳奇的場所主持了會議。	我在堪称传奇的场所主持了会议。		FUN_14066fe50 case 0xa6：會議場所品質
+I conducted a meeting in a horribly substandard setting.	我在極度不合格的場所主持了會議。	我在极度不合格的场所主持了会议。		FUN_14066fe50 case 0xa6：會議場所品質
+I conducted a meeting in a horrible setting.	我在極糟的場所主持了會議。	我在极糟的场所主持了会议。		FUN_14066fe50 case 0xa6：會議場所品質
+I conducted a meeting in an awful setting.	我在糟糕的場所主持了會議。	我在糟糕的场所主持了会议。		FUN_14066fe50 case 0xa6：會議場所品質
+I conducted a meeting in a very poor setting.	我在很簡陋的場所主持了會議。	我在很简陋的场所主持了会议。		FUN_14066fe50 case 0xa6：會議場所品質
+I conducted a meeting in a poor setting.	我在簡陋的場所主持了會議。	我在简陋的场所主持了会议。		FUN_14066fe50 case 0xa6：會議場所品質
+I conducted a meeting in .	我主持了會議。	我主持了会议。		FUN_14066fe50 case 0xa6：品質 0 時原文缺字
+I conducted an official meeting in a bedroom.	我在臥室主持了正式會議。	我在卧室主持了正式会议。		FUN_14066fe50 case 0xa7
+I conducted an official meeting in a dining room.	我在餐廳主持了正式會議。	我在餐厅主持了正式会议。		FUN_14066fe50 case 0xa8
+I had no room for an official meeting.	我沒有房間可以開正式會議。	我没有房间可以开正式会议。		FUN_14066fe50 case 0xa9
+I thought about my tomb.	我想了想自己的墓室。	我想了想自己的墓室。		FUN_14066fe50 case 0xaa
+I do not have a tomb.	我沒有墓室。	我没有墓室。		FUN_14066fe50 case 0xab
+I talked to somebody important to our traditions.	我和一位對我們傳統很重要的人談過。	我和一位对我们传统很重要的人谈过。		FUN_14066fe50 case 0xac
+I played with my pet.	我和寵物玩了一會兒。	我和宠物玩了一会儿。		FUN_14066fe50 case 0xad
+Somebody dead was convicted of a crime.	有個死人被判犯下罪行。	有个死人被判犯下罪行。		FUN_14066fe50 case 0xae
+An animal was convicted of a crime.	有隻動物被判犯下罪行。	有只动物被判犯下罪行。		FUN_14066fe50 case 0xaf
+The victim of a crime was somehow convicted of that very offense.	某件罪行的受害者，竟然被判犯了同一條罪。	某件罪行的受害者，竟然被判犯了同一条罪。		FUN_14066fe50 case 0xb0
+The criminal was convicted and I received justice.	罪犯被定罪，我討回了公道。	罪犯被定罪，我讨回了公道。		FUN_14066fe50 case 0xb1
+My family received justice when the criminal was convicted.	罪犯被定罪，我的家人討回了公道。	罪犯被定罪，我的家人讨回了公道。		FUN_14066fe50 case 0xb2
+The body of my spouse decayed without burial.	我配偶的遺體沒有下葬，就這樣腐爛了。	我配偶的遗体没有下葬，就这样腐烂了。		FUN_14066fe50 case 0xb3
+The body of my mother decayed without burial.	我母親的遺體沒有下葬，就這樣腐爛了。	我母亲的遗体没有下葬，就这样腐烂了。		FUN_14066fe50 case 0xb3
+The body of my father decayed without burial.	我父親的遺體沒有下葬，就這樣腐爛了。	我父亲的遗体没有下葬，就这样腐烂了。		FUN_14066fe50 case 0xb3
+The body of my lover decayed without burial.	我戀人的遺體沒有下葬，就這樣腐爛了。	我恋人的遗体没有下葬，就这样腐烂了。		FUN_14066fe50 case 0xb3
+The body of my sibling decayed without burial.	我手足的遺體沒有下葬，就這樣腐爛了。	我兄弟姐妹的遗体没有下葬，就这样腐烂了。		FUN_14066fe50 case 0xb3
+The body of my child decayed without burial.	我孩子的遺體沒有下葬，就這樣腐爛了。	我孩子的遗体没有下葬，就这样腐烂了。		FUN_14066fe50 case 0xb3
+The body of my friend decayed without burial.	我朋友的遺體沒有下葬，就這樣腐爛了。	我朋友的遗体没有下葬，就这样腐烂了。		FUN_14066fe50 case 0xb3
+The body of my acquaintance decayed without burial.	我熟人的遺體沒有下葬，就這樣腐爛了。	我熟人的遗体没有下葬，就这样腐烂了。		FUN_14066fe50 case 0xb3
+The body of my animal training partner decayed without burial.	我動物訓練夥伴的遺體沒有下葬，就這樣腐爛了。	我动物训练伙伴的遗体没有下葬，就这样腐烂了。		FUN_14066fe50 case 0xb3
+The body of my pet decayed without burial.	我寵物的遺體沒有下葬，就這樣腐爛了。	我宠物的遗体没有下葬，就这样腐烂了。		FUN_14066fe50 case 0xb3
+The body of  decayed without burial.	遺體沒有下葬，就這樣腐爛了。	遗体没有下葬，就这样腐烂了。		FUN_14066fe50 case 0xb3：關係不明時原文缺字（雙空白）
+I have been away from people for a long time.	我已經很久沒和人相處了。	我已经很久没和人相处了。		FUN_14066fe50 case 0xb4：需求未滿足
+I need a drink.	我需要喝一杯。	我需要喝一杯。		FUN_14066fe50 case 0xb4：需求未滿足
+I need time to contemplate.	我需要時間沉思。	我需要时间沉思。		FUN_14066fe50 case 0xb4：需求未滿足
+I need something to do.	我需要找點事做。	我需要找点事做。		FUN_14066fe50 case 0xb4：需求未滿足
+It has been long time since I've done something creative.	我已經很久沒做有創意的事了。	我已经很久没做有创意的事了。		FUN_14066fe50 case 0xb4：需求未滿足
+I need some excitement in my life.	我的生活需要一點刺激。	我的生活需要一点刺激。		FUN_14066fe50 case 0xb4：需求未滿足
+I need to learn something new.	我需要學點新東西。	我需要学点新东西。		FUN_14066fe50 case 0xb4：需求未滿足
+I want to spend some time with family.	我想和家人相處一陣子。	我想和家人相处一阵子。		FUN_14066fe50 case 0xb4：需求未滿足
+I want to see my friends.	我想見見朋友。	我想见见朋友。		FUN_14066fe50 case 0xb4：需求未滿足
+I'd like to hear somebody eloquent.	我想聽聽能言善道的人說話。	我想听听能说会道的人说话。		FUN_14066fe50 case 0xb4：需求未滿足
+I long to uphold the traditions.	我渴望恪守傳統。	我渴望恪守传统。		FUN_14066fe50 case 0xb4：需求未滿足
+I need to pause and reflect upon myself.	我需要停下來好好反省自己。	我需要停下来好好反省自己。		FUN_14066fe50 case 0xb4：需求未滿足
+We must make merry again.	我們得再好好熱鬧一下。	我们得再好好热闹一下。		FUN_14066fe50 case 0xb4：需求未滿足
+I wish to make something.	我想做點東西。	我想做点东西。		FUN_14066fe50 case 0xb4：需求未滿足
+I must practice the fighting arts.	我必須練習武藝。	我必须练习武艺。		FUN_14066fe50 case 0xb4：需求未滿足
+I need to perfect my skills.	我需要精進我的技藝。	我需要精进我的技艺。		FUN_14066fe50 case 0xb4：需求未滿足
+I just want to slow down and take it easy for a while.	我只想放慢腳步，輕鬆一陣子。	我只想放慢脚步，轻松一阵子。		FUN_14066fe50 case 0xb4：需求未滿足
+I long to make romance.	我渴望談場戀愛。	我渴望谈场恋爱。		FUN_14066fe50 case 0xb4：需求未滿足
+It would nice to get out in nature and see some creatures.	要是能到大自然裡看看生物就好了。	要是能到大自然里看看生物就好了。		FUN_14066fe50 case 0xb4：需求未滿足
+I want to see a great beast.	我想看看巨獸。	我想看看巨兽。		FUN_14066fe50 case 0xb4：需求未滿足
+I need more.	我還需要更多。	我还需要更多。		FUN_14066fe50 case 0xb4：需求未滿足
+I could really use a good meal.	我真想好好吃一頓。	我真想好好吃一顿。		FUN_14066fe50 case 0xb4：需求未滿足
+I just want to fight somebody.	我只想找人打一架。	我只想找人打一架。		FUN_14066fe50 case 0xb4：需求未滿足
+This place could really use some more trouble.	這地方真該多來點亂子。	这地方真该多来点乱子。		FUN_14066fe50 case 0xb4：需求未滿足
+I'm feeling argumentative.	我想找人吵架。	我想找人吵架。		FUN_14066fe50 case 0xb4：需求未滿足
+I need to wear fine things.	我需要穿戴精品。	我需要穿戴精品。		FUN_14066fe50 case 0xb4：需求未滿足
+I need to get away from here and wander the world.	我得離開這裡，去外面的世界闖蕩。	我得离开这里，去外面的世界闯荡。		FUN_14066fe50 case 0xb4：需求未滿足
+I just wish to help somebody.	我只想幫助別人。	我只想帮助别人。		FUN_14066fe50 case 0xb4：需求未滿足
+I want to puzzle over something.	我想動動腦，琢磨點什麼。	我想动动脑，琢磨点什么。		FUN_14066fe50 case 0xb4：需求未滿足
+I miss having art in my life.	我想念有藝術陪伴的生活。	我想念有艺术陪伴的生活。		FUN_14066fe50 case 0xb4：需求未滿足
+I have unmet needs.	我有些需求沒被滿足。	我有些需求没被满足。		FUN_14066fe50 case 0xb4：需求未滿足
+I had a drink without using a goblet.	我沒用高腳杯就喝了。	我没用高脚杯就喝了。		FUN_14066fe50 case 0xb6
+I played make believe.	我玩了扮家家酒。	我玩了过家家。		FUN_14066fe50 case 0xcf
+I played with a toy.	我玩了玩具。	我玩了玩具。		FUN_14066fe50 case 0xd0
+I got into an argument.	我和人吵了一架。	我和人吵了一架。		FUN_14066fe50 case 0xd4
+I did my combat drills.	我做了戰鬥操練。	我做了战斗操练。		FUN_14066fe50 case 0xd5
+I practiced at the archery target.	我在箭靶練習了射箭。	我在箭靶练习了射箭。		FUN_14066fe50 case 0xd6
+I put on a well-crafted item.	我穿戴了一件精工物品。	我穿戴了一件精工物品。		FUN_14066fe50 case 0xd8：物品品質
+I put on a finely-crafted item.	我穿戴了一件精良物品。	我穿戴了一件精良物品。		FUN_14066fe50 case 0xd8：物品品質
+I put on a superior item.	我穿戴了一件上等物品。	我穿戴了一件上等物品。		FUN_14066fe50 case 0xd8：物品品質
+I put on an exceptional item.	我穿戴了一件卓越物品。	我穿戴了一件卓越物品。		FUN_14066fe50 case 0xd8：物品品質
+I put on a truly splendid item.	我穿戴了一件真正出色的物品。	我穿戴了一件真正出色的物品。		FUN_14066fe50 case 0xd8：物品品質
+I realized the worthlessness of truth.	我領悟到誠實毫無價值。	我领悟到诚实毫无价值。		FUN_14066fe50 case 0xd9：價值觀 truth 是「誠實」，字典的 truth 是知識主題「真理」
+I realized nuances of truth.	我領悟到誠實的微妙之處。	我领悟到诚实的微妙之处。		FUN_14066fe50 case 0xd9：同上
+I realized the value of truth.	我領悟到誠實的價值。	我领悟到诚实的价值。		FUN_14066fe50 case 0xd9：同上
+I am awoken to the worthlessness of truth.	我看清了誠實毫無價值。	我看清了诚实毫无价值。		FUN_14066fe50 case 0xd9：價值觀 truth 是「誠實」，字典的 truth 是知識主題「真理」
+I am awoken to nuances of truth.	我看清了誠實的微妙之處。	我看清了诚实的微妙之处。		FUN_14066fe50 case 0xd9：同上
+I am awoken to the value of truth.	我看清了誠實的價值。	我看清了诚实的价值。		FUN_14066fe50 case 0xd9：同上
+It was.	就是那件事。	就是那件事。		FUN_14066fe50 case 0xe9：找不到事件時原文只剩 It was.
+A child was turned away from sanctuary.	有個孩子被拒於庇護之外。	有个孩子被拒绝庇护。		FUN_14066fe50 case 0xed
+I won't go down without a fight!	我不會不戰而敗！	我不会不战而败！		FUN_14066fe50 case 0xee
+You can't take me alive!	休想活捉我！	休想活捉我！		FUN_14066fe50 case 0xee
+I was expelled.	我被驅逐了。	我被驱逐了。		FUN_14066fe50 case 0xf1
+I prey on the blood of civilized creatures.	我以文明生物的血為食。	我以文明生物的血为食。		FUN_14066fe50 case 0xf3
+I am unnaturally ageless.	我不自然地長生不老。	我不自然地长生不老。		FUN_14066fe50 case 0xf4
+I accepted bribed in exchange for offering leniency.	我收了賄賂，就對人從輕發落。	我收了贿赂，就对人从轻发落。		FUN_14066fe50 case 0xf7：原文 bribed 照抄
+I embezzled funds.	我盜用了公款。	我挪用了公款。		FUN_14066fe50 case 0xf8
+I received a cut of corruptly-obtained funds.	我從貪汙所得中分了一杯羹。	我从贪污所得中分了一杯羹。		FUN_14066fe50 case 0xf9
+I was far away.	我當時在很遠的地方。	我当时在很远的地方。		FUN_14066fe50 case 0xfb
+I was on an infiltration mission.	我當時在執行滲透任務。	我当时在执行渗透任务。		FUN_14066fe50 case 0x107
+I had an intellectual discussion with my spouse.	我和配偶進行了一場知性對談。	我和配偶进行了一场知性对话。		FUN_14066fe50 case 0x10f
+I shared a personal insight with my spouse.	我和配偶分享了一點個人見解。	我和配偶分享了一点个人见解。		FUN_14066fe50 case 0x110
+My spouse shared a personal insight with me.	配偶和我分享了一點個人見解。	配偶和我分享了一点个人见解。		FUN_14066fe50 case 0x111
+I discussed my problems with my spouse.	我向配偶傾訴了煩惱。	我向配偶倾诉了烦恼。		FUN_14066fe50 case 0x112
+My spouse discussed their problems with me.	配偶向我傾訴了煩惱。	配偶向我倾诉了烦恼。		FUN_14066fe50 case 0x113
+I had an intellectual discussion with my mother.	我和母親進行了一場知性對談。	我和母亲进行了一场知性对话。		FUN_14066fe50 case 0x10f
+I shared a personal insight with my mother.	我和母親分享了一點個人見解。	我和母亲分享了一点个人见解。		FUN_14066fe50 case 0x110
+My mother shared a personal insight with me.	母親和我分享了一點個人見解。	母亲和我分享了一点个人见解。		FUN_14066fe50 case 0x111
+I discussed my problems with my mother.	我向母親傾訴了煩惱。	我向母亲倾诉了烦恼。		FUN_14066fe50 case 0x112
+My mother discussed their problems with me.	母親向我傾訴了煩惱。	母亲向我倾诉了烦恼。		FUN_14066fe50 case 0x113
+I had an intellectual discussion with my father.	我和父親進行了一場知性對談。	我和父亲进行了一场知性对话。		FUN_14066fe50 case 0x10f
+I shared a personal insight with my father.	我和父親分享了一點個人見解。	我和父亲分享了一点个人见解。		FUN_14066fe50 case 0x110
+My father shared a personal insight with me.	父親和我分享了一點個人見解。	父亲和我分享了一点个人见解。		FUN_14066fe50 case 0x111
+I discussed my problems with my father.	我向父親傾訴了煩惱。	我向父亲倾诉了烦恼。		FUN_14066fe50 case 0x112
+My father discussed their problems with me.	父親向我傾訴了煩惱。	父亲向我倾诉了烦恼。		FUN_14066fe50 case 0x113
+I had an intellectual discussion with my lover.	我和戀人進行了一場知性對談。	我和恋人进行了一场知性对话。		FUN_14066fe50 case 0x10f
+I shared a personal insight with my lover.	我和戀人分享了一點個人見解。	我和恋人分享了一点个人见解。		FUN_14066fe50 case 0x110
+My lover shared a personal insight with me.	戀人和我分享了一點個人見解。	恋人和我分享了一点个人见解。		FUN_14066fe50 case 0x111
+I discussed my problems with my lover.	我向戀人傾訴了煩惱。	我向恋人倾诉了烦恼。		FUN_14066fe50 case 0x112
+My lover discussed their problems with me.	戀人向我傾訴了煩惱。	恋人向我倾诉了烦恼。		FUN_14066fe50 case 0x113
+I had an intellectual discussion with my sibling.	我和手足進行了一場知性對談。	我和兄弟姐妹进行了一场知性对话。		FUN_14066fe50 case 0x10f
+I shared a personal insight with my sibling.	我和手足分享了一點個人見解。	我和兄弟姐妹分享了一点个人见解。		FUN_14066fe50 case 0x110
+My sibling shared a personal insight with me.	手足和我分享了一點個人見解。	兄弟姐妹和我分享了一点个人见解。		FUN_14066fe50 case 0x111
+I discussed my problems with my sibling.	我向手足傾訴了煩惱。	我向兄弟姐妹倾诉了烦恼。		FUN_14066fe50 case 0x112
+My sibling discussed their problems with me.	手足向我傾訴了煩惱。	兄弟姐妹向我倾诉了烦恼。		FUN_14066fe50 case 0x113
+I had an intellectual discussion with my child.	我和孩子進行了一場知性對談。	我和孩子进行了一场知性对话。		FUN_14066fe50 case 0x10f
+I shared a personal insight with my child.	我和孩子分享了一點個人見解。	我和孩子分享了一点个人见解。		FUN_14066fe50 case 0x110
+My child shared a personal insight with me.	孩子和我分享了一點個人見解。	孩子和我分享了一点个人见解。		FUN_14066fe50 case 0x111
+I discussed my problems with my child.	我向孩子傾訴了煩惱。	我向孩子倾诉了烦恼。		FUN_14066fe50 case 0x112
+My child discussed their problems with me.	孩子向我傾訴了煩惱。	孩子向我倾诉了烦恼。		FUN_14066fe50 case 0x113
+I had an intellectual discussion with my friend.	我和朋友進行了一場知性對談。	我和朋友进行了一场知性对话。		FUN_14066fe50 case 0x10f
+I shared a personal insight with my friend.	我和朋友分享了一點個人見解。	我和朋友分享了一点个人见解。		FUN_14066fe50 case 0x110
+My friend shared a personal insight with me.	朋友和我分享了一點個人見解。	朋友和我分享了一点个人见解。		FUN_14066fe50 case 0x111
+I discussed my problems with my friend.	我向朋友傾訴了煩惱。	我向朋友倾诉了烦恼。		FUN_14066fe50 case 0x112
+My friend discussed their problems with me.	朋友向我傾訴了煩惱。	朋友向我倾诉了烦恼。		FUN_14066fe50 case 0x113
+I had an intellectual discussion with somebody.	我和某人進行了一場知性對談。	我和某人进行了一场知性对话。		FUN_14066fe50 case 0x10f
+I shared a personal insight with somebody.	我和某人分享了一點個人見解。	我和某人分享了一点个人见解。		FUN_14066fe50 case 0x110
+Somebody shared a personal insight with me.	有人和我分享了一點個人見解。	有人和我分享了一点个人见解。		FUN_14066fe50 case 0x111
+I discussed my problems with somebody.	我向某人傾訴了煩惱。	我向某人倾诉了烦恼。		FUN_14066fe50 case 0x112
+Somebody discussed their problems with me.	有人向我傾訴了煩惱。	有人向我倾诉了烦恼。		FUN_14066fe50 case 0x113
+I had an intellectual discussion with an acquaintance.	我和一位熟人進行了一場知性對談。	我和一位熟人进行了一场知性对话。		FUN_14066fe50 case 0x10f
+I shared a personal insight with an acquaintance.	我和一位熟人分享了一點個人見解。	我和一位熟人分享了一点个人见解。		FUN_14066fe50 case 0x110
+An acquaintance shared a personal insight with me.	一位熟人和我分享了一點個人見解。	一位熟人和我分享了一点个人见解。		FUN_14066fe50 case 0x111
+I discussed my problems with an acquaintance.	我向一位熟人傾訴了煩惱。	我向一位熟人倾诉了烦恼。		FUN_14066fe50 case 0x112
+An acquaintance discussed their problems with me.	一位熟人向我傾訴了煩惱。	一位熟人向我倾诉了烦恼。		FUN_14066fe50 case 0x113
+I learned powerful knowledge.	我學到了強大的知識。	我学到了强大的知识。		FUN_14066fe50 case 0xc2：秘密沒有名稱時

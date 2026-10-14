@@ -1,0 +1,289 @@
+en	zh-Hant	zh-Hans	align	note
+I worship no one.	我不信奉任何神。	我不信奉任何神。		FUN_140660870 883086
+You are a murderer.	你是個殺人犯。	你是个杀人犯。		FUN_140660870 883328 case 2；也是名聲 case 7 最低級：對聽者本人說
+You are an enemy.	你是敵人。	你是敌人。		FUN_140660870 883338 case 8：對聽者本人說
+You are a friend.	你是朋友。	你是朋友。		FUN_140660870 883344 case 9；也是好感度 ≥50：對聽者本人說
+You are unstable.	你精神不穩定。	你精神不稳定。		FUN_140660870 883351 case 0xe：對聽者本人說
+You are gladly not of the living.	你已欣然脫離生者之列。	你已欣然脱离生者之列。		FUN_140660870 883357 case 0xf（亡靈陣營看亡靈）：對聽者本人說
+You are of the living and must be killed.	你是活人，非殺不可。	你是活人，非杀不可。		FUN_140660870 883364 case 0x10：對聽者本人說
+You are not of the living.	你已不在生者之列。	你已不在生者之列。		FUN_140660870 883371 case 0x11：對聽者本人說
+You are the same as me.	你跟我一樣。	你跟我一样。		FUN_140660870 883381 case 0x12：對聽者本人說
+You are an animal.	你是動物。	你是动物。		FUN_140660870 883389 case 0x13：對聽者本人說
+You are a safe creature.	你是無害的生物。	你是无害的生物。		FUN_140660870 883399 case 0x14：對聽者本人說
+You are a dangerous animal.	你是危險的動物。	你是危险的动物。		FUN_140660870 883406 case 0x15：對聽者本人說
+You are my prisoner.	你是我的囚犯。	你是我的囚犯。		FUN_140660870 883412 case 0x17：對聽者本人說
+You are my master.	你是我的師父。	你是我的师父。		FUN_140660870 883419 case 0x18：對聽者本人說
+You are my apprentice.	你是我的徒弟。	你是我的徒弟。		FUN_140660870 883426 case 0x19：對聽者本人說
+You are my traveling companion.	你是我的旅伴。	你是我的旅伴。		FUN_140660870 883433 case 0x1a：對聽者本人說
+You are my lover.	你是我的戀人。	你是我的恋人。		FUN_140660870 883440 case 0x1b：對聽者本人說
+You are my enemy.	你是我的敵人。	你是我的敌人。		FUN_140660870 883453 case 0x1d：對聽者本人說
+You are a monster.	你是個怪物。	你是个怪物。		FUN_140660870 883464 case 0x1e；也是名聲 case 0x10：對聽者本人說
+You are my former master.	你是我以前的師父。	你是我以前的师父。		FUN_140660870 883474 case 0x1f：對聽者本人說
+You are my former apprentice.	你是我以前的徒弟。	你是我以前的徒弟。		FUN_140660870 883481 case 0x20：對聽者本人說
+You are an intruder.	你是個入侵者。	你是个入侵者。		FUN_140660870 883489 case 0x22；也是名聲 case 0x1d：對聽者本人說
+You are my neighbor.	你是我的鄰居。	你是我的邻居。		FUN_140660870 885237 沒有其他話可說且 case 0x16：對聽者本人說
+Murderer!	殺人兇手！	杀人凶手！		FUN_140660870 883331 case 2：當面喊出
+The dead!	亡者！	亡者！		FUN_140660870 883374 case 0x11：當面喊出
+Get away from me!	離我遠點！	离我远点！		FUN_140660870 883392 case 0x13：當面喊出
+The enemy!	敵人！	敌人！		FUN_140660870 883456 case 0x1d：當面喊出
+Vile creature!	卑劣的東西！	卑劣的东西！		FUN_140660870 883467 case 0x1e：當面喊出；術語例外：creature
+Intruder!	入侵者！	入侵者！		FUN_140660870 883492 case 0x22：當面喊出
+You are a friend, but that bond seems so thin now.	你是朋友，但如今那份情誼顯得如此淡薄。	你是朋友，但如今那份情谊显得如此淡薄。		FUN_140660870 883724 好感度 ≥50（≥75 摯友、≥100 知己）：對聽者本人說
+You are a close friend.	你是摯友。	你是挚友。		FUN_140660870 883724 好感度 ≥50（≥75 摯友、≥100 知己）：對聽者本人說
+You are a close friend, but that bond seems so thin now.	你是摯友，但如今那份情誼顯得如此淡薄。	你是挚友，但如今那份情谊显得如此淡薄。		FUN_140660870 883724 好感度 ≥50（≥75 摯友、≥100 知己）：對聽者本人說
+You are a kindred spirit.	你是知己。	你是知己。		FUN_140660870 883724 好感度 ≥50（≥75 摯友、≥100 知己）：對聽者本人說
+You are a kindred spirit, but that bond seems so thin now.	你是知己，但如今那份情誼顯得如此淡薄。	你是知己，但如今那份情谊显得如此淡薄。		FUN_140660870 883724 好感度 ≥50（≥75 摯友、≥100 知己）：對聽者本人說
+You are brave.	你很勇敢。	你很勇敢。		FUN_140660870 883812 名聲 case 0 勇敢（依程度五級）：對聽者本人說
+You are brave, but those acts bring no forgiveness.	你很勇敢，但那些作為換不來寬恕。	你很勇敢，但那些作为换不来宽恕。		FUN_140660870 883812 名聲 case 0 勇敢（依程度五級）：對聽者本人說
+You are also brave.	你也很勇敢。	你也很勇敢。		FUN_140660870 883812 名聲 case 0 勇敢（依程度五級）：對聽者本人說
+You are also brave, but those acts bring no forgiveness.	你也很勇敢，但那些作為換不來寬恕。	你也很勇敢，但那些作为换不来宽恕。		FUN_140660870 883812 名聲 case 0 勇敢（依程度五級）：對聽者本人說
+You are so very brave.	你非常勇敢。	你非常勇敢。		FUN_140660870 883812 名聲 case 0 勇敢（依程度五級）：對聽者本人說
+You are so very brave, but those acts bring no forgiveness.	你非常勇敢，但那些作為換不來寬恕。	你非常勇敢，但那些作为换不来宽恕。		FUN_140660870 883812 名聲 case 0 勇敢（依程度五級）：對聽者本人說
+You are also so very brave.	你也非常勇敢。	你也非常勇敢。		FUN_140660870 883812 名聲 case 0 勇敢（依程度五級）：對聽者本人說
+You are also so very brave, but those acts bring no forgiveness.	你也非常勇敢，但那些作為換不來寬恕。	你也非常勇敢，但那些作为换不来宽恕。		FUN_140660870 883812 名聲 case 0 勇敢（依程度五級）：對聽者本人說
+You are a hero.	你是英雄。	你是英雄。		FUN_140660870 883812 名聲 case 0 勇敢（依程度五級）：對聽者本人說
+You are a hero, but those acts bring no forgiveness.	你是英雄，但那些作為換不來寬恕。	你是英雄，但那些作为换不来宽恕。		FUN_140660870 883812 名聲 case 0 勇敢（依程度五級）：對聽者本人說
+You are also a hero.	你也是英雄。	你也是英雄。		FUN_140660870 883812 名聲 case 0 勇敢（依程度五級）：對聽者本人說
+You are also a hero, but those acts bring no forgiveness.	你也是英雄，但那些作為換不來寬恕。	你也是英雄，但那些作为换不来宽恕。		FUN_140660870 883812 名聲 case 0 勇敢（依程度五級）：對聽者本人說
+You are a great hero.	你是偉大的英雄。	你是伟大的英雄。		FUN_140660870 883812 名聲 case 0 勇敢（依程度五級）：對聽者本人說
+You are a great hero, but those acts bring no forgiveness.	你是偉大的英雄，但那些作為換不來寬恕。	你是伟大的英雄，但那些作为换不来宽恕。		FUN_140660870 883812 名聲 case 0 勇敢（依程度五級）：對聽者本人說
+You are also a great hero.	你也是偉大的英雄。	你也是伟大的英雄。		FUN_140660870 883812 名聲 case 0 勇敢（依程度五級）：對聽者本人說
+You are also a great hero, but those acts bring no forgiveness.	你也是偉大的英雄，但那些作為換不來寬恕。	你也是伟大的英雄，但那些作为换不来宽恕。		FUN_140660870 883812 名聲 case 0 勇敢（依程度五級）：對聽者本人說
+You are a legendary hero.	你是傳奇英雄。	你是传奇英雄。		FUN_140660870 883812 名聲 case 0 勇敢（依程度五級）：對聽者本人說
+You are a legendary hero, but those acts bring no forgiveness.	你是傳奇英雄，但那些作為換不來寬恕。	你是传奇英雄，但那些作为换不来宽恕。		FUN_140660870 883812 名聲 case 0 勇敢（依程度五級）：對聽者本人說
+You are also a legendary hero.	你也是傳奇英雄。	你也是传奇英雄。		FUN_140660870 883812 名聲 case 0 勇敢（依程度五級）：對聽者本人說
+You are also a legendary hero, but those acts bring no forgiveness.	你也是傳奇英雄，但那些作為換不來寬恕。	你也是传奇英雄，但那些作为换不来宽恕。		FUN_140660870 883812 名聲 case 0 勇敢（依程度五級）：對聽者本人說
+You are my partner.	你是我的伴侶。	你是我的伴侣。		FUN_140660870 883907 名聲 case 1 伴侶：對聽者本人說
+You are my partner, but it means nothing now.	你是我的伴侶，但如今這已毫無意義。	你是我的伴侣，但如今这已毫无意义。		FUN_140660870 883907 名聲 case 1 伴侶：對聽者本人說
+You are also my partner.	你也是我的伴侶。	你也是我的伴侣。		FUN_140660870 883907 名聲 case 1 伴侶：對聽者本人說
+You are also my partner, but it means nothing now.	你也是我的伴侶，但如今這已毫無意義。	你也是我的伴侣，但如今这已毫无意义。		FUN_140660870 883907 名聲 case 1 伴侶：對聽者本人說
+You are somewhat violent.	你有點暴力。	你有点暴力。		FUN_140660870 883933 名聲 case 2 暴力：對聽者本人說
+You are also somewhat violent.	你也有點暴力。	你也有点暴力。		FUN_140660870 883933 名聲 case 2 暴力：對聽者本人說
+You are prone to violence.	你有暴力傾向。	你有暴力倾向。		FUN_140660870 883933 名聲 case 2 暴力：對聽者本人說
+You are also prone to violence.	你也有暴力傾向。	你也有暴力倾向。		FUN_140660870 883933 名聲 case 2 暴力：對聽者本人說
+You are well-known brawler.	你是出了名的好鬥之徒。	你是出了名的好斗之徒。		FUN_140660870 883933 名聲 case 2 暴力：對聽者本人說
+You are also well-known brawler.	你也是出了名的好鬥之徒。	你也是出了名的好斗之徒。		FUN_140660870 883933 名聲 case 2 暴力：對聽者本人說
+You are capable of such violence.	你做得出那種暴行。	你做得出那种暴行。		FUN_140660870 883933 名聲 case 2 暴力：對聽者本人說
+You are also capable of such violence.	你也做得出那種暴行。	你也做得出那种暴行。		FUN_140660870 883933 名聲 case 2 暴力：對聽者本人說
+You are a legendary brawler.	你是傳奇的好鬥之徒。	你是传奇的好斗之徒。		FUN_140660870 883933 名聲 case 2 暴力：對聽者本人說
+You are also a legendary brawler.	你也是傳奇的好鬥之徒。	你也是传奇的好斗之徒。		FUN_140660870 883933 名聲 case 2 暴力：對聽者本人說
+You are unhinged.	你精神不太正常。	你精神不太正常。		FUN_140660870 883996 名聲 case 3 惡棍：對聽者本人說
+You are also unhinged.	你也精神不太正常。	你也精神不太正常。		FUN_140660870 883996 名聲 case 3 惡棍：對聽者本人說
+You are a known villain.	你是個有名的惡棍。	你是个有名的恶棍。		FUN_140660870 883996 名聲 case 3 惡棍：對聽者本人說
+You are also a known villain.	你也是個有名的惡棍。	你也是个有名的恶棍。		FUN_140660870 883996 名聲 case 3 惡棍：對聽者本人說
+You are a noted villain.	你是個著名的惡棍。	你是个著名的恶棍。		FUN_140660870 883996 名聲 case 3 惡棍：對聽者本人說
+You are also a noted villain.	你也是個著名的惡棍。	你也是个著名的恶棍。		FUN_140660870 883996 名聲 case 3 惡棍：對聽者本人說
+You are an infamous villain.	你是個惡名昭彰的惡棍。	你是个臭名昭著的恶棍。		FUN_140660870 883996 名聲 case 3 惡棍：對聽者本人說
+You are also an infamous villain.	你也是個惡名昭彰的惡棍。	你也是个臭名昭著的恶棍。		FUN_140660870 883996 名聲 case 3 惡棍：對聽者本人說
+You are a legendary villain.	你是傳奇惡棍。	你是传奇恶棍。		FUN_140660870 883996 名聲 case 3 惡棍：對聽者本人說
+You are also a legendary villain.	你也是傳奇惡棍。	你也是传奇恶棍。		FUN_140660870 883996 名聲 case 3 惡棍：對聽者本人說
+You are good for a deal now and then.	你偶爾是個不錯的交易對象。	你偶尔是个不错的交易对象。		FUN_140660870 884046 名聲 case 4 交易：對聽者本人說
+You are good for a deal now and then, but you can't bargain your way out of this.	你偶爾是個不錯的交易對象，但這次可不是討價還價就能脫身的。	你偶尔是个不错的交易对象，但这次可不是讨价还价就能脱身的。		FUN_140660870 884046 名聲 case 4 交易：對聽者本人說
+You are also good for a deal now and then.	你也偶爾是個不錯的交易對象。	你也偶尔是个不错的交易对象。		FUN_140660870 884046 名聲 case 4 交易：對聽者本人說
+You are also good for a deal now and then, but you can't bargain your way out of this.	你也偶爾是個不錯的交易對象，但這次可不是討價還價就能脫身的。	你也偶尔是个不错的交易对象，但这次可不是讨价还价就能脱身的。		FUN_140660870 884046 名聲 case 4 交易：對聽者本人說
+You are a pleasure to speak with.	你是個談得來的人。	你是个谈得来的人。		FUN_140660870 884073 名聲 case 5 健談：對聽者本人說
+You are a pleasure to speak with, but now this stands between us.	你是個談得來的人，但如今這件事橫在我們之間。	你是个谈得来的人，但如今这件事横在我们之间。		FUN_140660870 884073 名聲 case 5 健談：對聽者本人說
+You are also a pleasure to speak with.	你也是個談得來的人。	你也是个谈得来的人。		FUN_140660870 884073 名聲 case 5 健談：對聽者本人說
+You are also a pleasure to speak with, but now this stands between us.	你也是個談得來的人，但如今這件事橫在我們之間。	你也是个谈得来的人，但如今这件事横在我们之间。		FUN_140660870 884073 名聲 case 5 健談：對聽者本人說
+You are a killer.	你是個殺手。	你是个杀手。		FUN_140660870 884099 名聲 case 6 殺手：對聽者本人說
+You are also a killer.	你也是個殺手。	你也是个杀手。		FUN_140660870 884099 名聲 case 6 殺手：對聽者本人說
+You are a known killer.	你是個有名的殺手。	你是个有名的杀手。		FUN_140660870 884099 名聲 case 6 殺手：對聽者本人說
+You are also a known killer.	你也是個有名的殺手。	你也是个有名的杀手。		FUN_140660870 884099 名聲 case 6 殺手：對聽者本人說
+You are a noted killer.	你是個著名的殺手。	你是个著名的杀手。		FUN_140660870 884099 名聲 case 6 殺手：對聽者本人說
+You are also a noted killer.	你也是個著名的殺手。	你也是个著名的杀手。		FUN_140660870 884099 名聲 case 6 殺手：對聽者本人說
+You are an infamous killer.	你是個惡名昭彰的殺手。	你是个臭名昭著的杀手。		FUN_140660870 884099 名聲 case 6 殺手：對聽者本人說
+You are also an infamous killer.	你也是個惡名昭彰的殺手。	你也是个臭名昭著的杀手。		FUN_140660870 884099 名聲 case 6 殺手：對聽者本人說
+You are a legendary killer.	你是傳奇殺手。	你是传奇杀手。		FUN_140660870 884099 名聲 case 6 殺手：對聽者本人說
+You are also a legendary killer.	你也是傳奇殺手。	你也是传奇杀手。		FUN_140660870 884099 名聲 case 6 殺手：對聽者本人說
+You are also a murderer.	你也是個殺人犯。	你也是个杀人犯。		FUN_140660870 884149 名聲 case 7 殺人犯：對聽者本人說
+You are a known murderer.	你是個有名的殺人犯。	你是个有名的杀人犯。		FUN_140660870 884149 名聲 case 7 殺人犯：對聽者本人說
+You are also a known murderer.	你也是個有名的殺人犯。	你也是个有名的杀人犯。		FUN_140660870 884149 名聲 case 7 殺人犯：對聽者本人說
+You are a noted murderer.	你是個著名的殺人犯。	你是个著名的杀人犯。		FUN_140660870 884149 名聲 case 7 殺人犯：對聽者本人說
+You are also a noted murderer.	你也是個著名的殺人犯。	你也是个著名的杀人犯。		FUN_140660870 884149 名聲 case 7 殺人犯：對聽者本人說
+You are an infamous murderer.	你是個惡名昭彰的殺人犯。	你是个臭名昭著的杀人犯。		FUN_140660870 884149 名聲 case 7 殺人犯：對聽者本人說
+You are also an infamous murderer.	你也是個惡名昭彰的殺人犯。	你也是个臭名昭著的杀人犯。		FUN_140660870 884149 名聲 case 7 殺人犯：對聽者本人說
+You are a legendary murderer.	你是傳奇殺人犯。	你是传奇杀人犯。		FUN_140660870 884149 名聲 case 7 殺人犯：對聽者本人說
+You are also a legendary murderer.	你也是傳奇殺人犯。	你也是传奇杀人犯。		FUN_140660870 884149 名聲 case 7 殺人犯：對聽者本人說
+You are my comrade.	你是我的戰友。	你是我的战友。		FUN_140660870 884201 名聲 case 8 戰友：對聽者本人說
+You are my comrade, but nothing can change the facts.	你是我的戰友，但什麼都改變不了事實。	你是我的战友，但什么都改变不了事实。		FUN_140660870 884201 名聲 case 8 戰友：對聽者本人說
+You are also my comrade.	你也是我的戰友。	你也是我的战友。		FUN_140660870 884201 名聲 case 8 戰友：對聽者本人說
+You are also my comrade, but nothing can change the facts.	你也是我的戰友，但什麼都改變不了事實。	你也是我的战友，但什么都改变不了事实。		FUN_140660870 884201 名聲 case 8 戰友：對聽者本人說
+You are worthy of respect.	你值得尊敬。	你值得尊敬。		FUN_140660870 884237 名聲 case 9 可敬：對聽者本人說
+You are worthy of respect, but at what price?	你值得尊敬，但代價是什麼？	你值得尊敬，但代价是什么？		FUN_140660870 884237 名聲 case 9 可敬：對聽者本人說
+You are also worthy of respect.	你也值得尊敬。	你也值得尊敬。		FUN_140660870 884237 名聲 case 9 可敬：對聽者本人說
+You are also worthy of respect, but at what price?	你也值得尊敬，但代價是什麼？	你也值得尊敬，但代价是什么？		FUN_140660870 884237 名聲 case 9 可敬：對聽者本人說
+You are part of the problem.	你是問題的一部分。	你是问题的一部分。		FUN_140660870 884262 名聲 case 10 禍首：對聽者本人說
+You are also part of the problem.	你也是問題的一部分。	你也是问题的一部分。		FUN_140660870 884262 名聲 case 10 禍首：對聽者本人說
+You are an enemy fighter.	你是敵方戰士。	你是敌方战士。		FUN_140660870 884291 名聲 case 0xb 敵方戰士：對聽者本人說
+You are also an enemy fighter.	你也是敵方戰士。	你也是敌方战士。		FUN_140660870 884291 名聲 case 0xb 敵方戰士：對聽者本人說
+You are on my side.	你站在我這邊。	你站在我这边。		FUN_140660870 884349 名聲 case 0xc 同一陣線：對聽者本人說
+You are on my side, but what does that mean now?	你站在我這邊，但如今那又代表什麼？	你站在我这边，但如今那又代表什么？		FUN_140660870 884349 名聲 case 0xc 同一陣線：對聽者本人說
+You are also on my side.	你也站在我這邊。	你也站在我这边。		FUN_140660870 884349 名聲 case 0xc 同一陣線：對聽者本人說
+You are also on my side, but what does that mean now?	你也站在我這邊，但如今那又代表什麼？	你也站在我这边，但如今那又代表什么？		FUN_140660870 884349 名聲 case 0xc 同一陣線：對聽者本人說
+You are thuggish.	你有流氓習氣。	你有流氓习气。		FUN_140660870 884395 名聲 case 0xd 暴徒：對聽者本人說
+You are also thuggish.	你也有流氓習氣。	你也有流氓习气。		FUN_140660870 884395 名聲 case 0xd 暴徒：對聽者本人說
+You are a known thug.	你是個有名的暴徒。	你是个有名的暴徒。		FUN_140660870 884395 名聲 case 0xd 暴徒：對聽者本人說
+You are also a known thug.	你也是個有名的暴徒。	你也是个有名的暴徒。		FUN_140660870 884395 名聲 case 0xd 暴徒：對聽者本人說
+You are a well-known thug.	你是個出了名的暴徒。	你是个出了名的暴徒。		FUN_140660870 884395 名聲 case 0xd 暴徒：對聽者本人說
+You are also a well-known thug.	你也是個出了名的暴徒。	你也是个出了名的暴徒。		FUN_140660870 884395 名聲 case 0xd 暴徒：對聽者本人說
+You are an infamous thug.	你是個惡名昭彰的暴徒。	你是个臭名昭著的暴徒。		FUN_140660870 884395 名聲 case 0xd 暴徒：對聽者本人說
+You are also an infamous thug.	你也是個惡名昭彰的暴徒。	你也是个臭名昭著的暴徒。		FUN_140660870 884395 名聲 case 0xd 暴徒：對聽者本人說
+You are a legendary thug.	你是傳奇暴徒。	你是传奇暴徒。		FUN_140660870 884395 名聲 case 0xd 暴徒：對聽者本人說
+You are also a legendary thug.	你也是傳奇暴徒。	你也是传奇暴徒。		FUN_140660870 884395 名聲 case 0xd 暴徒：對聽者本人說
+You are a brigand.	你是個強盜。	你是个强盗。		FUN_140660870 884444 名聲 case 0xe 強盜（有所屬強盜團時接 and 某團 are dangerous outlaws）：對聽者本人說
+You are also a brigand.	你也是個強盜。	你也是个强盗。		FUN_140660870 884444 名聲 case 0xe 強盜（有所屬強盜團時接 and 某團 are dangerous outlaws）：對聽者本人說
+You are a known brigand.	你是個有名的強盜。	你是个有名的强盗。		FUN_140660870 884444 名聲 case 0xe 強盜（有所屬強盜團時接 and 某團 are dangerous outlaws）：對聽者本人說
+You are also a known brigand.	你也是個有名的強盜。	你也是个有名的强盗。		FUN_140660870 884444 名聲 case 0xe 強盜（有所屬強盜團時接 and 某團 are dangerous outlaws）：對聽者本人說
+You are a noted brigand.	你是個著名的強盜。	你是个著名的强盗。		FUN_140660870 884444 名聲 case 0xe 強盜（有所屬強盜團時接 and 某團 are dangerous outlaws）：對聽者本人說
+You are also a noted brigand.	你也是個著名的強盜。	你也是个著名的强盗。		FUN_140660870 884444 名聲 case 0xe 強盜（有所屬強盜團時接 and 某團 are dangerous outlaws）：對聽者本人說
+You are an infamous brigand.	你是個惡名昭彰的強盜。	你是个臭名昭著的强盗。		FUN_140660870 884444 名聲 case 0xe 強盜（有所屬強盜團時接 and 某團 are dangerous outlaws）：對聽者本人說
+You are also an infamous brigand.	你也是個惡名昭彰的強盜。	你也是个臭名昭著的强盗。		FUN_140660870 884444 名聲 case 0xe 強盜（有所屬強盜團時接 and 某團 are dangerous outlaws）：對聽者本人說
+You are a legendary brigand.	你是傳奇強盜。	你是传奇强盗。		FUN_140660870 884444 名聲 case 0xe 強盜（有所屬強盜團時接 and 某團 are dangerous outlaws）：對聽者本人說
+You are also a legendary brigand.	你也是傳奇強盜。	你也是传奇强盗。		FUN_140660870 884444 名聲 case 0xe 強盜（有所屬強盜團時接 and 某團 are dangerous outlaws）：對聽者本人說
+You are a loyal soldier.	你是忠誠的士兵。	你是忠诚的士兵。		FUN_140660870 884503 名聲 case 0xf 忠誠士兵（原文 your 照抄）：對聽者本人說
+You are also a loyal soldier.	你也是忠誠的士兵。	你也是忠诚的士兵。		FUN_140660870 884503 名聲 case 0xf 忠誠士兵（原文 your 照抄）：對聽者本人說
+You are a very loyal soldier.	你是非常忠誠的士兵。	你是非常忠诚的士兵。		FUN_140660870 884503 名聲 case 0xf 忠誠士兵（原文 your 照抄）：對聽者本人說
+You are also a very loyal soldier.	你也是非常忠誠的士兵。	你也是非常忠诚的士兵。		FUN_140660870 884503 名聲 case 0xf 忠誠士兵（原文 your 照抄）：對聽者本人說
+You are such a loyal soldier.	你是如此忠誠的士兵。	你是如此忠诚的士兵。		FUN_140660870 884503 名聲 case 0xf 忠誠士兵（原文 your 照抄）：對聽者本人說
+You are also such a loyal soldier.	你也是如此忠誠的士兵。	你也是如此忠诚的士兵。		FUN_140660870 884503 名聲 case 0xf 忠誠士兵（原文 your 照抄）：對聽者本人說
+You are famous for your loyalty as a soldier.	你以身為士兵的忠誠聞名。	你以身为士兵的忠诚闻名。		FUN_140660870 884503 名聲 case 0xf 忠誠士兵（原文 your 照抄）：對聽者本人說
+You are also famous for your loyalty as a soldier.	你也以身為士兵的忠誠聞名。	你也以身为士兵的忠诚闻名。		FUN_140660870 884503 名聲 case 0xf 忠誠士兵（原文 your 照抄）：對聽者本人說
+You are one of the most loyal soldiers to serve anybody at any time.	你是古往今來最忠誠的士兵之一。	你是古往今来最忠诚的士兵之一。		FUN_140660870 884503 名聲 case 0xf 忠誠士兵（原文 your 照抄）：對聽者本人說
+You are also one of the most loyal soldiers to serve anybody at any time.	你也是古往今來最忠誠的士兵之一。	你也是古往今来最忠诚的士兵之一。		FUN_140660870 884503 名聲 case 0xf 忠誠士兵（原文 your 照抄）：對聽者本人說
+You are also a monster.	你也是個怪物。	你也是个怪物。		FUN_140660870 884545 名聲 case 0x10 怪物：對聽者本人說
+You are a storyteller, or at least tells stories.	你算是個說書人，至少會講故事。	你算是个说书人，至少会讲故事。		FUN_140660870 884585 名聲 case 0x11 說書人：對聽者本人說
+You are also a storyteller, or at least tells stories.	你也算是個說書人，至少會講故事。	你也算是个说书人，至少会讲故事。		FUN_140660870 884585 名聲 case 0x11 說書人：對聽者本人說
+You are a skilled storyteller.	你是個熟練的說書人。	你是个熟练的说书人。		FUN_140660870 884585 名聲 case 0x11 說書人：對聽者本人說
+You are also a skilled storyteller.	你也是個熟練的說書人。	你也是个熟练的说书人。		FUN_140660870 884585 名聲 case 0x11 說書人：對聽者本人說
+You are a talented storyteller.	你是個有天分的說書人。	你是个有天赋的说书人。		FUN_140660870 884585 名聲 case 0x11 說書人：對聽者本人說
+You are also a talented storyteller.	你也是個有天分的說書人。	你也是个有天赋的说书人。		FUN_140660870 884585 名聲 case 0x11 說書人：對聽者本人說
+You are a great storyteller.	你是個了不起的說書人。	你是个了不起的说书人。		FUN_140660870 884585 名聲 case 0x11 說書人：對聽者本人說
+You are also a great storyteller.	你也是個了不起的說書人。	你也是个了不起的说书人。		FUN_140660870 884585 名聲 case 0x11 說書人：對聽者本人說
+You are a legendary storyteller.	你是傳奇說書人。	你是传奇说书人。		FUN_140660870 884585 名聲 case 0x11 說書人：對聽者本人說
+You are also a legendary storyteller.	你也是傳奇說書人。	你也是传奇说书人。		FUN_140660870 884585 名聲 case 0x11 說書人：對聽者本人說
+You are a poet, according to some.	你據說是個詩人。	你据说是个诗人。		FUN_140660870 884629 名聲 case 0x12 詩人：對聽者本人說
+You are also a poet, according to some.	你也據說是個詩人。	你也据说是个诗人。		FUN_140660870 884629 名聲 case 0x12 詩人：對聽者本人說
+You are a skilled poet.	你是個熟練的詩人。	你是个熟练的诗人。		FUN_140660870 884629 名聲 case 0x12 詩人：對聽者本人說
+You are also a skilled poet.	你也是個熟練的詩人。	你也是个熟练的诗人。		FUN_140660870 884629 名聲 case 0x12 詩人：對聽者本人說
+You are a talented poet.	你是個有天分的詩人。	你是个有天赋的诗人。		FUN_140660870 884629 名聲 case 0x12 詩人：對聽者本人說
+You are also a talented poet.	你也是個有天分的詩人。	你也是个有天赋的诗人。		FUN_140660870 884629 名聲 case 0x12 詩人：對聽者本人說
+You are a great poet.	你是個了不起的詩人。	你是个了不起的诗人。		FUN_140660870 884629 名聲 case 0x12 詩人：對聽者本人說
+You are also a great poet.	你也是個了不起的詩人。	你也是个了不起的诗人。		FUN_140660870 884629 名聲 case 0x12 詩人：對聽者本人說
+You are a legendary poet.	你是傳奇詩人。	你是传奇诗人。		FUN_140660870 884629 名聲 case 0x12 詩人：對聽者本人說
+You are also a legendary poet.	你也是傳奇詩人。	你也是传奇诗人。		FUN_140660870 884629 名聲 case 0x12 詩人：對聽者本人說
+You are a modest bard.	你是個普普通通的吟遊詩人。	你是个普普通通的吟游诗人。		FUN_140660870 884671 名聲 case 0x13 吟遊詩人：對聽者本人說
+You are also a modest bard.	你也是個普普通通的吟遊詩人。	你也是个普普通通的吟游诗人。		FUN_140660870 884671 名聲 case 0x13 吟遊詩人：對聽者本人說
+You are a skilled bard.	你是個熟練的吟遊詩人。	你是个熟练的吟游诗人。		FUN_140660870 884671 名聲 case 0x13 吟遊詩人：對聽者本人說
+You are also a skilled bard.	你也是個熟練的吟遊詩人。	你也是个熟练的吟游诗人。		FUN_140660870 884671 名聲 case 0x13 吟遊詩人：對聽者本人說
+You are a talented bard.	你是個有天分的吟遊詩人。	你是个有天赋的吟游诗人。		FUN_140660870 884671 名聲 case 0x13 吟遊詩人：對聽者本人說
+You are also a talented bard.	你也是個有天分的吟遊詩人。	你也是个有天赋的吟游诗人。		FUN_140660870 884671 名聲 case 0x13 吟遊詩人：對聽者本人說
+You are a great bard.	你是個了不起的吟遊詩人。	你是个了不起的吟游诗人。		FUN_140660870 884671 名聲 case 0x13 吟遊詩人：對聽者本人說
+You are also a great bard.	你也是個了不起的吟遊詩人。	你也是个了不起的吟游诗人。		FUN_140660870 884671 名聲 case 0x13 吟遊詩人：對聽者本人說
+You are a legendary bard.	你是傳奇吟遊詩人。	你是传奇吟游诗人。		FUN_140660870 884671 名聲 case 0x13 吟遊詩人：對聽者本人說
+You are also a legendary bard.	你也是傳奇吟遊詩人。	你也是传奇吟游诗人。		FUN_140660870 884671 名聲 case 0x13 吟遊詩人：對聽者本人說
+You are something of a dancer.	你算是個舞者。	你算是个舞者。		FUN_140660870 884713 名聲 case 0x14 舞者：對聽者本人說
+You are also something of a dancer.	你也算是個舞者。	你也算是个舞者。		FUN_140660870 884713 名聲 case 0x14 舞者：對聽者本人說
+You are a skilled dancer.	你是個熟練的舞者。	你是个熟练的舞者。		FUN_140660870 884713 名聲 case 0x14 舞者：對聽者本人說
+You are also a skilled dancer.	你也是個熟練的舞者。	你也是个熟练的舞者。		FUN_140660870 884713 名聲 case 0x14 舞者：對聽者本人說
+You are a talented dancer.	你是個有天分的舞者。	你是个有天赋的舞者。		FUN_140660870 884713 名聲 case 0x14 舞者：對聽者本人說
+You are also a talented dancer.	你也是個有天分的舞者。	你也是个有天赋的舞者。		FUN_140660870 884713 名聲 case 0x14 舞者：對聽者本人說
+You are a great dancer.	你是個了不起的舞者。	你是个了不起的舞者。		FUN_140660870 884713 名聲 case 0x14 舞者：對聽者本人說
+You are also a great dancer.	你也是個了不起的舞者。	你也是个了不起的舞者。		FUN_140660870 884713 名聲 case 0x14 舞者：對聽者本人說
+You are a legendary dancer.	你是傳奇舞者。	你是传奇舞者。		FUN_140660870 884713 名聲 case 0x14 舞者：對聽者本人說
+You are also a legendary dancer.	你也是傳奇舞者。	你也是传奇舞者。		FUN_140660870 884713 名聲 case 0x14 舞者：對聽者本人說
+You are somewhat quarrelsome.	你有點愛吵架。	你有点爱吵架。		FUN_140660870 884755 名聲 case 0x15 愛吵架：對聽者本人說
+You are somewhat quarrelsome, but you can't argue your way out of this.	你有點愛吵架，但這次可不是吵一吵就能脫身的。	你有点爱吵架，但这次可不是吵一吵就能脱身的。		FUN_140660870 884755 名聲 case 0x15 愛吵架：對聽者本人說
+You are also somewhat quarrelsome.	你也有點愛吵架。	你也有点爱吵架。		FUN_140660870 884755 名聲 case 0x15 愛吵架：對聽者本人說
+You are also somewhat quarrelsome, but you can't argue your way out of this.	你也有點愛吵架，但這次可不是吵一吵就能脫身的。	你也有点爱吵架，但这次可不是吵一吵就能脱身的。		FUN_140660870 884755 名聲 case 0x15 愛吵架：對聽者本人說
+You are known to be quarrelsome.	你出了名地愛吵架。	你出了名地爱吵架。		FUN_140660870 884755 名聲 case 0x15 愛吵架：對聽者本人說
+You are known to be quarrelsome, but you can't argue your way out of this.	你出了名地愛吵架，但這次可不是吵一吵就能脫身的。	你出了名地爱吵架，但这次可不是吵一吵就能脱身的。		FUN_140660870 884755 名聲 case 0x15 愛吵架：對聽者本人說
+You are also known to be quarrelsome.	你也出了名地愛吵架。	你也出了名地爱吵架。		FUN_140660870 884755 名聲 case 0x15 愛吵架：對聽者本人說
+You are also known to be quarrelsome, but you can't argue your way out of this.	你也出了名地愛吵架，但這次可不是吵一吵就能脫身的。	你也出了名地爱吵架，但这次可不是吵一吵就能脱身的。		FUN_140660870 884755 名聲 case 0x15 愛吵架：對聽者本人說
+You are a noted quarreler.	你是個有名的吵架大王。	你是个有名的吵架大王。		FUN_140660870 884755 名聲 case 0x15 愛吵架：對聽者本人說
+You are a noted quarreler, but you can't argue your way out of this.	你是個有名的吵架大王，但這次可不是吵一吵就能脫身的。	你是个有名的吵架大王，但这次可不是吵一吵就能脱身的。		FUN_140660870 884755 名聲 case 0x15 愛吵架：對聽者本人說
+You are also a noted quarreler.	你也是個有名的吵架大王。	你也是个有名的吵架大王。		FUN_140660870 884755 名聲 case 0x15 愛吵架：對聽者本人說
+You are also a noted quarreler, but you can't argue your way out of this.	你也是個有名的吵架大王，但這次可不是吵一吵就能脫身的。	你也是个有名的吵架大王，但这次可不是吵一吵就能脱身的。		FUN_140660870 884755 名聲 case 0x15 愛吵架：對聽者本人說
+You are infamously quarrelsome.	你愛吵架到惡名昭彰。	你爱吵架到臭名昭著。		FUN_140660870 884755 名聲 case 0x15 愛吵架：對聽者本人說
+You are infamously quarrelsome, but you can't argue your way out of this.	你愛吵架到惡名昭彰，但這次可不是吵一吵就能脫身的。	你爱吵架到臭名昭著，但这次可不是吵一吵就能脱身的。		FUN_140660870 884755 名聲 case 0x15 愛吵架：對聽者本人說
+You are also infamously quarrelsome.	你也愛吵架到惡名昭彰。	你也爱吵架到臭名昭著。		FUN_140660870 884755 名聲 case 0x15 愛吵架：對聽者本人說
+You are also infamously quarrelsome, but you can't argue your way out of this.	你也愛吵架到惡名昭彰，但這次可不是吵一吵就能脫身的。	你也爱吵架到臭名昭著，但这次可不是吵一吵就能脱身的。		FUN_140660870 884755 名聲 case 0x15 愛吵架：對聽者本人說
+You are a legendary quarreler.	你是傳奇的吵架大王。	你是传奇的吵架大王。		FUN_140660870 884755 名聲 case 0x15 愛吵架：對聽者本人說
+You are a legendary quarreler, but you can't argue your way out of this.	你是傳奇的吵架大王，但這次可不是吵一吵就能脫身的。	你是传奇的吵架大王，但这次可不是吵一吵就能脱身的。		FUN_140660870 884755 名聲 case 0x15 愛吵架：對聽者本人說
+You are also a legendary quarreler.	你也是傳奇的吵架大王。	你也是传奇的吵架大王。		FUN_140660870 884755 名聲 case 0x15 愛吵架：對聽者本人說
+You are also a legendary quarreler, but you can't argue your way out of this.	你也是傳奇的吵架大王，但這次可不是吵一吵就能脫身的。	你也是传奇的吵架大王，但这次可不是吵一吵就能脱身的。		FUN_140660870 884755 名聲 case 0x15 愛吵架：對聽者本人說
+You are something of a flatterer.	你有點愛拍馬屁。	你有点爱拍马屁。		FUN_140660870 884800 名聲 case 0x16 奉承：對聽者本人說
+You are something of a flatterer, but you can't talk your way out of this.	你有點愛拍馬屁，但這次可不是耍嘴皮子就能脫身的。	你有点爱拍马屁，但这次可不是耍嘴皮子就能脱身的。		FUN_140660870 884800 名聲 case 0x16 奉承：對聽者本人說
+You are also something of a flatterer.	你也有點愛拍馬屁。	你也有点爱拍马屁。		FUN_140660870 884800 名聲 case 0x16 奉承：對聽者本人說
+You are also something of a flatterer, but you can't talk your way out of this.	你也有點愛拍馬屁，但這次可不是耍嘴皮子就能脫身的。	你也有点爱拍马屁，但这次可不是耍嘴皮子就能脱身的。		FUN_140660870 884800 名聲 case 0x16 奉承：對聽者本人說
+You are a known flatterer.	你是個有名的馬屁精。	你是个有名的马屁精。		FUN_140660870 884800 名聲 case 0x16 奉承：對聽者本人說
+You are a known flatterer, but you can't talk your way out of this.	你是個有名的馬屁精，但這次可不是耍嘴皮子就能脫身的。	你是个有名的马屁精，但这次可不是耍嘴皮子就能脱身的。		FUN_140660870 884800 名聲 case 0x16 奉承：對聽者本人說
+You are also a known flatterer.	你也是個有名的馬屁精。	你也是个有名的马屁精。		FUN_140660870 884800 名聲 case 0x16 奉承：對聽者本人說
+You are also a known flatterer, but you can't talk your way out of this.	你也是個有名的馬屁精，但這次可不是耍嘴皮子就能脫身的。	你也是个有名的马屁精，但这次可不是耍嘴皮子就能脱身的。		FUN_140660870 884800 名聲 case 0x16 奉承：對聽者本人說
+You are a noted flatterer.	你是個著名的馬屁精。	你是个著名的马屁精。		FUN_140660870 884800 名聲 case 0x16 奉承：對聽者本人說
+You are a noted flatterer, but you can't talk your way out of this.	你是個著名的馬屁精，但這次可不是耍嘴皮子就能脫身的。	你是个著名的马屁精，但这次可不是耍嘴皮子就能脱身的。		FUN_140660870 884800 名聲 case 0x16 奉承：對聽者本人說
+You are also a noted flatterer.	你也是個著名的馬屁精。	你也是个著名的马屁精。		FUN_140660870 884800 名聲 case 0x16 奉承：對聽者本人說
+You are also a noted flatterer, but you can't talk your way out of this.	你也是個著名的馬屁精，但這次可不是耍嘴皮子就能脫身的。	你也是个著名的马屁精，但这次可不是耍嘴皮子就能脱身的。		FUN_140660870 884800 名聲 case 0x16 奉承：對聽者本人說
+You are an infamous flatterer.	你是個惡名昭彰的馬屁精。	你是个臭名昭著的马屁精。		FUN_140660870 884800 名聲 case 0x16 奉承：對聽者本人說
+You are an infamous flatterer, but you can't talk your way out of this.	你是個惡名昭彰的馬屁精，但這次可不是耍嘴皮子就能脫身的。	你是个臭名昭著的马屁精，但这次可不是耍嘴皮子就能脱身的。		FUN_140660870 884800 名聲 case 0x16 奉承：對聽者本人說
+You are also an infamous flatterer.	你也是個惡名昭彰的馬屁精。	你也是个臭名昭著的马屁精。		FUN_140660870 884800 名聲 case 0x16 奉承：對聽者本人說
+You are also an infamous flatterer, but you can't talk your way out of this.	你也是個惡名昭彰的馬屁精，但這次可不是耍嘴皮子就能脫身的。	你也是个臭名昭著的马屁精，但这次可不是耍嘴皮子就能脱身的。		FUN_140660870 884800 名聲 case 0x16 奉承：對聽者本人說
+You are a legendary flatterer.	你是傳奇馬屁精。	你是传奇马屁精。		FUN_140660870 884800 名聲 case 0x16 奉承：對聽者本人說
+You are a legendary flatterer, but you can't talk your way out of this.	你是傳奇馬屁精，但這次可不是耍嘴皮子就能脫身的。	你是传奇马屁精，但这次可不是耍嘴皮子就能脱身的。		FUN_140660870 884800 名聲 case 0x16 奉承：對聽者本人說
+You are also a legendary flatterer.	你也是傳奇馬屁精。	你也是传奇马屁精。		FUN_140660870 884800 名聲 case 0x16 奉承：對聽者本人說
+You are also a legendary flatterer, but you can't talk your way out of this.	你也是傳奇馬屁精，但這次可不是耍嘴皮子就能脫身的。	你也是传奇马屁精，但这次可不是耍嘴皮子就能脱身的。		FUN_140660870 884800 名聲 case 0x16 奉承：對聽者本人說
+You are something of a hunter.	你算是個獵人。	你算是个猎人。		FUN_140660870 884845 名聲 case 0x17 獵人：對聽者本人說
+You are also something of a hunter.	你也算是個獵人。	你也算是个猎人。		FUN_140660870 884845 名聲 case 0x17 獵人：對聽者本人說
+You are a skilled hunter.	你是個熟練的獵人。	你是个熟练的猎人。		FUN_140660870 884845 名聲 case 0x17 獵人：對聽者本人說
+You are also a skilled hunter.	你也是個熟練的獵人。	你也是个熟练的猎人。		FUN_140660870 884845 名聲 case 0x17 獵人：對聽者本人說
+You are a talented hunter.	你是個有天分的獵人。	你是个有天赋的猎人。		FUN_140660870 884845 名聲 case 0x17 獵人：對聽者本人說
+You are also a talented hunter.	你也是個有天分的獵人。	你也是个有天赋的猎人。		FUN_140660870 884845 名聲 case 0x17 獵人：對聽者本人說
+You are a great hunter.	你是個了不起的獵人。	你是个了不起的猎人。		FUN_140660870 884845 名聲 case 0x17 獵人：對聽者本人說
+You are also a great hunter.	你也是個了不起的獵人。	你也是个了不起的猎人。		FUN_140660870 884845 名聲 case 0x17 獵人：對聽者本人說
+You are a legendary hunter.	你是傳奇獵人。	你是传奇猎人。		FUN_140660870 884845 名聲 case 0x17 獵人：對聽者本人說
+You are also a legendary hunter.	你也是傳奇獵人。	你也是传奇猎人。		FUN_140660870 884845 名聲 case 0x17 獵人：對聽者本人說
+You are a protector of the defenseless.	你是弱者的守護者。	你是弱者的守护者。		FUN_140660870 884885 名聲 case 0x18 保護弱者：對聽者本人說
+You are a protector of the defenseless, but that hardly matters now.	你是弱者的守護者，但如今那已經不重要了。	你是弱者的守护者，但如今那已经不重要了。		FUN_140660870 884885 名聲 case 0x18 保護弱者：對聽者本人說
+You are also a protector of the defenseless.	你也是弱者的守護者。	你也是弱者的守护者。		FUN_140660870 884885 名聲 case 0x18 保護弱者：對聽者本人說
+You are also a protector of the defenseless, but that hardly matters now.	你也是弱者的守護者，但如今那已經不重要了。	你也是弱者的守护者，但如今那已经不重要了。		FUN_140660870 884885 名聲 case 0x18 保護弱者：對聽者本人說
+You are a thieving scoundrel.	你是個手腳不乾淨的無賴。	你是个手脚不干净的无赖。		FUN_140660870 884979 名聲 case 0x1a 竊賊：對聽者本人說
+You are also a thieving scoundrel.	你也是個手腳不乾淨的無賴。	你也是个手脚不干净的无赖。		FUN_140660870 884979 名聲 case 0x1a 竊賊：對聽者本人說
+You are also an intruder.	你也是個入侵者。	你也是个入侵者。		FUN_140660870 885046 名聲 case 0x1d 入侵者：對聽者本人說
+You are gives sermons, and may be a preacher.	你會講道，也許是個傳道者。	你会讲道，也许是个传道者。		FUN_140660870 885097 名聲 case 0x1e 傳道者（原文文法照抄）：對聽者本人說
+You are also gives sermons, and may be a preacher.	你也會講道，也許是個傳道者。	你也会讲道，也许是个传道者。		FUN_140660870 885097 名聲 case 0x1e 傳道者（原文文法照抄）：對聽者本人說
+You are a skilled preacher.	你是個熟練的傳道者。	你是个熟练的传道者。		FUN_140660870 885097 名聲 case 0x1e 傳道者（原文文法照抄）：對聽者本人說
+You are also a skilled preacher.	你也是個熟練的傳道者。	你也是个熟练的传道者。		FUN_140660870 885097 名聲 case 0x1e 傳道者（原文文法照抄）：對聽者本人說
+You are a talented preacher.	你是個有天分的傳道者。	你是个有天赋的传道者。		FUN_140660870 885097 名聲 case 0x1e 傳道者（原文文法照抄）：對聽者本人說
+You are also a talented preacher.	你也是個有天分的傳道者。	你也是个有天赋的传道者。		FUN_140660870 885097 名聲 case 0x1e 傳道者（原文文法照抄）：對聽者本人說
+You are a great preacher.	你是個了不起的傳道者。	你是个了不起的传道者。		FUN_140660870 885097 名聲 case 0x1e 傳道者（原文文法照抄）：對聽者本人說
+You are also a great preacher.	你也是個了不起的傳道者。	你也是个了不起的传道者。		FUN_140660870 885097 名聲 case 0x1e 傳道者（原文文法照抄）：對聽者本人說
+You are a legendary preacher.	你是傳奇傳道者。	你是传奇传道者。		FUN_140660870 885097 名聲 case 0x1e 傳道者（原文文法照抄）：對聽者本人說
+You are also a legendary preacher.	你也是傳奇傳道者。	你也是传奇传道者。		FUN_140660870 885097 名聲 case 0x1e 傳道者（原文文法照抄）：對聽者本人說
+You have sought out and returned our treasures.	你找回並歸還了我們的寶物。	你找回并归还了我们的宝物。		FUN_140660870 884930 名聲 case 0x19 尋回寶物（第二種結尾原文沒有句點）：對聽者本人說
+You have sought out and returned our treasures, though it doesn't much matter	你找回並歸還了我們的寶物，雖然這已經不太重要了	你找回并归还了我们的宝物，虽然这已经不太重要了		FUN_140660870 884930 名聲 case 0x19 尋回寶物（第二種結尾原文沒有句點）：對聽者本人說
+You have also sought out and returned our treasures.	你也找回並歸還了我們的寶物。	你也找回并归还了我们的宝物。		FUN_140660870 884930 名聲 case 0x19 尋回寶物（第二種結尾原文沒有句點）：對聽者本人說
+You have also sought out and returned our treasures, though it doesn't much matter	你也找回並歸還了我們的寶物，雖然這已經不太重要了	你也找回并归还了我们的宝物，虽然这已经不太重要了		FUN_140660870 884930 名聲 case 0x19 尋回寶物（第二種結尾原文沒有句點）：對聽者本人說
+You have protected knowledge from being irrevocably lost.	你保護了知識，使其免於永久失傳。	你保护了知识，使其免于永久失传。		FUN_140660870 885023 名聲 case 0x1c 保存知識（第二種結尾原文沒有句點）：對聽者本人說
+You have protected knowledge from being irrevocably lost, yet that means little now	你保護了知識，使其免於永久失傳，但如今那已無足輕重	你保护了知识，使其免于永久失传，但如今那已无足轻重		FUN_140660870 885023 名聲 case 0x1c 保存知識（第二種結尾原文沒有句點）：對聽者本人說
+You have also protected knowledge from being irrevocably lost.	你也保護了知識，使其免於永久失傳。	你也保护了知识，使其免于永久失传。		FUN_140660870 885023 名聲 case 0x1c 保存知識（第二種結尾原文沒有句點）：對聽者本人說
+You have also protected knowledge from being irrevocably lost, yet that means little now	你也保護了知識，使其免於永久失傳，但如今那已無足輕重	你也保护了知识，使其免于永久失传，但如今那已无足轻重		FUN_140660870 885023 名聲 case 0x1c 保存知識（第二種結尾原文沒有句點）：對聽者本人說
+What happened to bring us to this?	我們怎麼會走到這一步？	我们怎么会走到这一步？		FUN_140660870 884524 名聲 case 0xf：接在忠誠士兵句後
+You feast on the blood of the living!	你以活人的鮮血為食！	你以活人的鲜血为食！		FUN_140660870 884556 名聲 case 0x10：對聽者本人說
+You	你	你		人名的代稱：對聽者本人說時取代人名（FUN_140660870、FUN_14066ba00 句首）
+me	我	我		FUN_140b92af0 人名是說話者本人時（He killed me.）
+I found myself dead.	我發現自己死了。	我发现自己死了。		FUN_14066ba00 889165 事件 case 0 死亡
+I found you dead.	我發現你死了。	我发现你死了。		FUN_14066ba00 889171 事件 case 0 死亡
+I died.	我死了。	我死了。		FUN_14066ba00 889185 事件 case 0 死亡
+an untitled work	一部無題作品	一部无题作品		FUN_14066ba00 891192 著作名缺時；FUN_140660870 884951 同
+history	歷史	历史		FUN_14066ba00 890339 講述的故事缺名稱時（the story of history）
+I saw a recital of a poem.	我看到有人朗誦一首詩。	我看到有人朗诵一首诗。		FUN_14066ba00 890437 事件 case 6 表演 詩（作品缺名稱時是 a poem）
+A poem was recited.	有人朗誦了一首詩。	有人朗诵了一首诗。		FUN_14066ba00 890466 事件 case 6 表演 詩（作品缺名稱時是 A poem）
+a poem was recited.	有人朗誦了一首詩。	有人朗诵了一首诗。		FUN_14066ba00 890466 事件 case 6 表演 詩（作品缺名稱時是 a poem）
+I recited a poem.	我朗誦了一首詩。	我朗诵了一首诗。		FUN_14066ba00 890491 事件 case 6 表演 詩（作品缺名稱時是 a poem）
+Music was performed.	有人演出了一段音樂。	有人演出了一段音乐。		FUN_14066ba00 890523／890679 事件 case 6 表演 音樂、舞蹈（作品缺名稱時是 Music）
+music was performed.	有人演出了一段音樂。	有人演出了一段音乐。		FUN_14066ba00 890523／890679 事件 case 6 表演 音樂、舞蹈（作品缺名稱時是 music）
+Dance was performed.	有人演出了一支舞。	有人演出了一支舞。		FUN_14066ba00 890523／890679 事件 case 6 表演 音樂、舞蹈（作品缺名稱時是 Dance）
+dance was performed.	有人演出了一支舞。	有人演出了一支舞。		FUN_14066ba00 890523／890679 事件 case 6 表演 音樂、舞蹈（作品缺名稱時是 dance）
+I saw a performance of music.	我看了一場音樂演出。	我看了一场音乐演出。		FUN_14066ba00 890594／890671 事件 case 6 表演 音樂、舞蹈（作品缺名稱時是 music）
+I saw a performance of dance.	我看了一場舞蹈演出。	我看了一场舞蹈演出。		FUN_14066ba00 890594／890671 事件 case 6 表演 音樂、舞蹈（作品缺名稱時是 dance）
+I danced dance.	我跳了一支舞。	我跳了一支舞。		FUN_14066ba00 890685 事件 case 6 表演 舞蹈（作品缺名稱時是 dance）
+I	我	我		FUN_14066ba00 890598 表演者是說話者本人時句首的 I（I sang …），由 {1} sang {2}. 等句型接；不另寫 I sang {1}.，免得搶先吃掉 speech_04 的 I played with a {%1}.

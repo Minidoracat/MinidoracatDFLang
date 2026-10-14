@@ -1,0 +1,58 @@
+en	zh-Hant	zh-Hans	align	note
+Age of Three Powers	三強時代	三强时代		FUN_140bb7b80 紀元名 case 0；ERA_CHANGE「The world has passed into The …」
+Age of Two Powers	雙強時代	双强时代		FUN_140bb7b80 紀元名 case 1（Age of ＋ Two Powers）
+Age of One Power	一強時代	一强时代		FUN_140bb7b80 紀元名 case 2
+Age of Myth	神話時代	神话时代		FUN_140bb7b80 紀元名 case 3
+Age of Legends	傳說時代	传说时代		FUN_140bb7b80 紀元名 case 4
+Twilight Age	暮光時代	暮光时代		FUN_140bb7b80 紀元名 case 5
+Age of Fairy Tales	童話時代	童话时代		FUN_140bb7b80 紀元名 case 6
+Age of Heroes	英雄時代	英雄时代		FUN_140bb7b80 紀元名 case 8
+Golden Age	黃金時代	黄金时代		FUN_140bb7b80 紀元名 case 9
+Age of Death	死亡時代	死亡时代		FUN_140bb7b80 紀元名 case 10
+Age of Civilization	文明時代	文明时代		FUN_140bb7b80 紀元名 case 11
+Age of Emptiness	空虛時代	空虚时代		FUN_140bb7b80 紀元名 case 12
+Unknown Age	未知時代	未知时代		FUN_140bb8e10 沒有紀元名時
+an official land of the realm	王國的正式領地	王国的正式领地		FUN_140ac5b30 1573371 LAND_GAINS_STATUS 預設領地名
+an even more official land of the realm	地位更高的王國正式領地	地位更高的王国正式领地		FUN_140ac5b30 1573548 LAND_ELEVATED_STATUS 預設領地名
+a barony	男爵領地	男爵领地		FUN_140ac5b30 領地名：entity_default MOUNTAIN LAND_NAME
+a county	伯爵領地	伯爵领地		FUN_140ac5b30 領地名：entity_default MOUNTAIN LAND_NAME
+a duchy	公爵領地	公爵领地		FUN_140ac5b30 領地名：entity_default MOUNTAIN LAND_NAME
+body part	身體部位	身体部位		FUN_140c88f50／FUN_140d7c8e0：沒有部位名時的預設
+Leather Works	皮革工坊	皮革工坊		FUN_140dac290 2053366 建築名（奇異心境佔據工坊、建築被推倒）
+Magma Forge	熔岩鍛爐	熔岩锻炉		同上；建築名大寫寫法（建造選單是 Magma forge）
+Kiln	窯爐	窑炉		同上；建築名
+Magma Kiln	熔岩窯爐	熔岩窑炉		同上；建築名
+Glass Furnace	玻璃熔爐	玻璃熔炉		同上；建築名
+Magma Glass Furnace	熔岩玻璃熔爐	熔岩玻璃熔炉		同上；建築名
+You feel less pain.	你覺得沒那麼痛了。	你觉得没那么痛了。		FUN_140d79ce0 2015583 冒險模式
+You have less swelling.	你的腫脹消了一些。	你的肿胀消了一些。		FUN_140d7a2f0 2015858 冒險模式
+You is no longer infected.	你的感染已經消除。	你的感染已经消除。		FUN_140d7a680 2016037 冒險模式；遊戲把 is/are 接反，照抄
+You recover from nerve damage.	你的神經損傷復原了。	你的神经损伤恢复了。		FUN_140d7abd0 2016293 冒險模式
+You have less bleeding.	你的出血減少了。	你的出血减少了。		FUN_140d7af40 2016478 冒險模式
+You have fewer wounds.	你的傷口減少了。	你的伤口减少了。		FUN_140d7be90 2017220 冒險模式
+You have fewer damaged tissues.	你受損的組織減少了。	你受损的组织减少了。		FUN_140d7c330 2017510 冒險模式
+Your body parts regrow!	你的身體部位再生了！	你的身体部位再生了！		FUN_140d7c8e0 2018057 冒險模式；多個部位
+Your tissues regrow!	你的組織再生了！	你的组织再生了！		FUN_140d7c8e0 冒險模式
+Your geldables regrow!	你的生殖器再生了！	你的生殖器再生了！		FUN_140d7c8e0 冒險模式；geldables 是可閹割的部位
+You are less sluggish.	你沒那麼遲緩了。	你没那么迟缓了。		FUN_140d7dba0 2018552 冒險模式
+You feel less feverish.	你覺得燒退了一些。	你觉得烧退了一些。		FUN_140d7e1b0 2018979 冒險模式
+You cough up blood.	你咳出了血。	你咳出了血。		FUN_140d7e7d0 2019273 冒險模式
+You vomit blood.	你吐血了。	你吐血了。		FUN_140d7ece0 2019498 冒險模式
+You feel less nauseated.	你覺得沒那麼噁心了。	你觉得没那么恶心了。		FUN_140d7f1d0 2019740 冒險模式
+You feel less dizzy.	你覺得沒那麼暈了。	你觉得没那么晕了。		FUN_140d7fe50 2020387 冒險模式
+You have been cursed with a week's bad luck!	你遭到詛咒，要倒楣一週！	你遭到诅咒，要倒霉一周！		FUN_140dcc6a0 2069161 冒險模式；curse.lua IS_TRIGGER_STRING
+You have been cursed, for one week, to know life as a beast!	你遭到詛咒，要化為野獸過上一週！	你遭到诅咒，要化为野兽过上一周！		FUN_140dcc6a0 2069161 冒險模式；curse.lua
+You have been cursed to prowl the night in search of blood!	你遭到詛咒，從此要在夜裡遊蕩、尋找鮮血！	你遭到诅咒，从此要在夜里游荡、寻找鲜血！		FUN_140dcc6a0 2069161 冒險模式；curse.lua 吸血鬼
+You chop down the tree.	你砍倒了樹。	你砍倒了树。		FUN_140dcdbf0 2069693 冒險模式；找不到植物時寫 tree
+Your fortress is out of food!	你的要塞沒有食物了！	你的要塞没有食物了！		FUN_140e39910 2133198 FOOD_WARNING 第一句
+Consider placing a farmplot on some underground soil and planting seeds.	不妨在地下土壤上設置農田並播種。	不妨在地下土壤上设置农田并播种。		FUN_140e39910 2133200 FOOD_WARNING：還沒有農田
+Are your farmplots working?	你的農田有在運作嗎？	你的农田有在正常运作吗？		FUN_140e39910 2133202 FOOD_WARNING：已有農田
+Make sure you are planting edible plants.	請確認你種的是能吃的作物。	请确认你种的是能吃的作物。		FUN_140e39910 2133202 同上，後一句
+Try building a butcher's shop and slaughtering some livestock.	試著蓋一座屠宰工坊，宰殺一些牲畜。	试着建一座屠宰工坊，宰杀一些牲畜。		FUN_140e39910 2133206 FOOD_WARNING：還沒有屠宰場
+Do you have any livestock to slaughter?	你有可以宰殺的牲畜嗎？	你有可以宰杀的牲畜吗？		FUN_140e39910 2133208 FOOD_WARNING：已有屠宰場
+Perhaps you can gather plants, fruit, or go fishing.	或許你可以採集植物、水果，或是去釣魚。	或许你可以采集植物、水果，或者去钓鱼。		FUN_140e39910 2133211 FOOD_WARNING 最後一句
+Congratulations! This fortress is now a Mountainhome, proof that any suggestion of hubris was childish nonsense. 	恭喜！這座要塞如今已是山之家，證明那些說你們狂妄自大的話全是幼稚的胡扯。	恭喜！这座要塞如今已是山之家，证明那些说你们狂妄自大的话全是幼稚的胡扯。		FUN_140e39910 2133381 MOUNTAINHOME（BOX）；沒有後續句時結尾留一個空白
+Congratulations! This fortress is now a Mountainhome, proof that any suggestion of hubris was childish nonsense. The gods surely want you to dig deeper still!	恭喜！這座要塞如今已是山之家，證明那些說你們狂妄自大的話全是幼稚的胡扯。眾神肯定希望你們挖得更深！	恭喜！这座要塞如今已是山之家，证明那些说你们狂妄自大的话全是幼稚的胡扯。众神肯定希望你们挖得更深！		FUN_140e39910 2133400 MOUNTAINHOME（BOX）
+Congratulations! This fortress is now a Mountainhome, proof that any suggestion of hubris was childish nonsense. And why shouldn't you dig deeper still?!	恭喜！這座要塞如今已是山之家，證明那些說你們狂妄自大的話全是幼稚的胡扯。那又何不挖得更深呢？！	恭喜！这座要塞如今已是山之家，证明那些说你们狂妄自大的话全是幼稚的胡扯。那又何不挖得更深呢？！		FUN_140e39910 2133402 MOUNTAINHOME（BOX）
+Congratulations! This fortress is now a Mountainhome, proof that any suggestion of hubris was childish nonsense. What are a few pesky demons after all?	恭喜！這座要塞如今已是山之家，證明那些說你們狂妄自大的話全是幼稚的胡扯。區區幾隻討厭的惡魔，又算得了什麼？	恭喜！这座要塞如今已是山之家，证明那些说你们狂妄自大的话全是幼稚的胡扯。区区几只讨厌的恶魔，又算得了什么？		FUN_140e39910 2133410 MOUNTAINHOME（BOX）
+A mandate has ended.	一項命令已經結束。	一项命令已经结束。		FUN_140e39910 2133772 MANDATE_ENDS：下令的貴族已不在

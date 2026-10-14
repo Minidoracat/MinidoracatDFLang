@@ -1,0 +1,157 @@
+en	zh-Hant	zh-Hans	align	note
+{1} empties {%2}.	{1}倒空了{2}。	{1}倒空了{2}。		FUN_14007de50 L75967 倒空容器；{1} 生物稱呼（FUN_14132e430）
+You pick up {%1}.	你撿起了{1}。	你捡起了{1}。		FUN_14007de50 L76131 撿起物品（玩家）
+{1} picks up {%2}.	{1}撿起了{2}。	{1}捡起了{2}。		FUN_14007de50 L76131 撿起物品；{1} 生物稱呼
+{1} embraces {2}.	{1}擁抱了{2}。	{1}拥抱了{2}。		FUN_140082b80 L79409 擁抱；{1}{2} 生物稱呼（The X／the X／人名）
+{1} has shared a rumor from abroad.	{1}分享了一則來自遠方的傳聞。	{1}分享了一则来自远方的传闻。		FUN_1400884e0 L83589 訪客分享傳聞（1 則）；{1} FUN_141331500 稱呼
+{1} has shared a few rumors.	{1}分享了幾則傳聞。	{1}分享了几则传闻。		FUN_1400884e0 L83589 2～4 則
+{1} has shared many tales from beyond {2}.	{1}分享了許多{2}以外的見聞。	{1}分享了许多{2}以外的见闻。		FUN_1400884e0 L83589 5 則以上；{2} 地名（FUN_140b93930）
+{1} gives you {%2}.	{1}給了你{2}。	{1}给了你{2}。		FUN_1400884e0 L83642 冒險模式收禮；{2} 物品名
+{1} has discovered {%2}.	{1}有了新發現：{2}。	{1}有了新发现：{2}。		FUN_14008b670 L85451／FUN_140090280 L89409 學者研究發現；{2} 知識主題（FUN_140ee0830，已在 sentences_causes_b）
+{1} has become a student of {2}.	{1}拜{2}為師。	{1}拜{2}为师。		FUN_140090280 L89587 拜師；{1}{2} FUN_141331500 稱呼
+You are in the middle of dancing {1}.	你正在跳《{1}》。	你正在跳《{1}》。		FUN_1400ac470 L105535／106243 表演進行中；{1} 舞蹈作品名
+{1} is in the middle of dancing {2}.	{1}正在跳《{2}》。	{1}正在跳《{2}》。		FUN_1400ac470 L105535／106243；比通用的 in the middle of {%2} 先比對
+{1} are in the middle of dancing {2}.	{1}正在跳《{2}》。	{1}正在跳《{2}》。		FUN_1400ac470 L105535／106243；{1} The performers
+You are in the middle of {%1}.	你正在{1}。	你正在{1}。		FUN_1400ac470 L105535／106243 表演進行中（玩家）；{1} 表演片段（下列 the story of… 等）
+{1} is in the middle of {%2}.	{1}正在{2}。	{1}正在{2}。		FUN_1400ac470 L105535／106243；{1} 生物稱呼
+{1} are in the middle of {%2}.	{1}正在{2}。	{1}正在{2}。		FUN_1400ac470 L105535／106243；{1} The performers
+You begin dancing {1}.	你開始跳《{1}》。	你开始跳《{1}》。		FUN_1400ac470 L106958 開始表演；{1} 舞蹈作品名
+{1} begins dancing {2}.	{1}開始跳《{2}》。	{1}开始跳《{2}》。		FUN_1400ac470 L106958
+{1} begin dancing {2}.	{1}開始跳《{2}》。	{1}开始跳《{2}》。		FUN_1400ac470 L106958；{1} The performers
+You begin playing with {%1}.	你開始玩{1}。	你开始玩{1}。		FUN_1400ac470 L107165 兒童玩玩具（玩家）；{1} a toy 或物品名
+You are playing with {%1}.	你正在玩{1}。	你正在玩{1}。		FUN_1400ac470 L107165
+{1} begins playing with {%2}.	{1}開始玩{2}。	{1}开始玩{2}。		FUN_1400ac470 L107165；{1} 生物稱呼
+{1} begin playing with {%2}.	{1}開始玩{2}。	{1}开始玩{2}。		FUN_1400ac470 L107165；{1} Some children
+{1} is playing with {%2}.	{1}正在玩{2}。	{1}正在玩{2}。		FUN_1400ac470 L107165
+{1} are playing with {%2}.	{1}正在玩{2}。	{1}正在玩{2}。		FUN_1400ac470 L107165；{1} Some children
+{1} begins playing make believe.	{1}開始玩扮家家酒。	{1}开始玩过家家。		FUN_1400ac470 L107045 兒童扮家家酒
+{1} begin playing make believe.	{1}開始玩扮家家酒。	{1}开始玩过家家。		FUN_1400ac470 L107045；{1} Some children
+{1} is playing make believe.	{1}正在玩扮家家酒。	{1}正在玩过家家。		FUN_1400ac470 L107045
+{1} are playing make believe.	{1}正在玩扮家家酒。	{1}正在玩过家家。		FUN_1400ac470 L107045；{1} Some children
+You begin {%1}.	你開始{1}。	你开始{1}。		FUN_1400ac470 L106958 開始表演、L106603 詩作進入下一行／節（You begin the third line.）
+{1} begins {%2}.	{1}開始{2}。	{1}开始{2}。		FUN_1400ac470 L106958 開始表演；{2} 表演片段
+{1} begin {%2}.	{1}開始{2}。	{1}开始{2}。		FUN_1400ac470 L106958；{1} The performers
+the story of {%1}	講述{1}的故事	讲述{1}的故事		FUN_1400ac470 表演片段；{1} 歷史事件描述（事件句本輪未譯，命中不了就整句照英文）
+an improvised recital of {1}	即興朗誦《{1}》	即兴朗诵《{1}》		FUN_1400ac470 表演片段；{1} 詩體名（FUN_140a946e0）
+reciting the poem {1}	朗誦詩作《{1}》	朗诵诗作《{1}》		FUN_1400ac470 表演片段；{1} 作品名
+improvised music, {1}	即興演奏《{1}》	即兴演奏《{1}》		FUN_1400ac470 表演片段；{1} 曲式名（FUN_140a946e0）
+the musical composition {1}	演奏樂曲《{1}》	演奏乐曲《{1}》		FUN_1400ac470 表演片段；{1} 作品名
+an improvised dance, {1}	即興跳《{1}》	即兴跳《{1}》		FUN_1400ac470 表演片段；{1} 舞式名（FUN_140a946e0）
+a sermon on {1}	以{1}為題講道	以{1}为题讲道		FUN_1400ac470 表演片段；{1} 神祇領域名（FUN_140756690，strings 在 speech_01）、人名（FUN_140b92f10）或價值觀片語（下列）
+the value of {@1}	{1}的價值	{1}的价值		FUN_140ee0380 講道主題：價值觀（{1} 價值觀名，strings 已有）
+the worthlessness of {@1}	{1}毫無價值	{1}毫无价值		FUN_140ee0380 講道主題：價值觀
+nuances of {@1}	{1}的微妙之處	{1}的微妙之处		FUN_140ee0380 講道主題：價值觀
+{1} concludes a performance.	{1}結束了一場表演。	{1}结束了一场表演。		FUN_1400ac470 L105952 表演結束
+{1} has finished performing.	{1}表演完畢。	{1}表演完毕。		FUN_1400ac470 L105952 表演結束
+The poetry enters {%1}.	詩作進入{1}。	诗作进入{1}。		FUN_1400ac470 L106603 詩作進入下一行／節；{1} the third line 等
+the {@1} line	{1}行	{1}行		FUN_1400ac470 L106296 詩行；{1} 序數（first…nineteenth）
+the {@1} stanza	{1}節	{1}节		FUN_1400ac470 L106339 詩節
+the {@1} verse paragraph	{1}段	{1}段		FUN_1400ac470 L106357 詩段
+You enter {%1} and {%2}.	你進入{1}和{2}。	你进入{1}和{2}。		FUN_1400ac470 L106603 樂曲進入新段落（玩家）；{1} 樂段清單（逗號由 lists.tsv 接）
+You enter {%1}.	你進入{1}。	你进入{1}。		FUN_1400ac470 L106603 樂曲進入新段落（玩家）
+The music enters {%1} and {%2}.	音樂進入{1}和{2}。	音乐进入{1}和{2}。		FUN_1400ac470 L106603 樂曲進入新段落
+The music enters {%1}.	音樂進入{1}。	音乐进入{1}。		FUN_1400ac470 L106603 樂曲進入新段落
+The dance enters a new section with {%1} and {%2}.	舞蹈進入包含{1}和{2}的新段落。	舞蹈进入包含{1}和{2}的新段落。		FUN_1400ac470 L106603 舞蹈進入新段落
+The dance enters a new section with {%1}.	舞蹈進入包含{1}的新段落。	舞蹈进入包含{1}的新段落。		FUN_1400ac470 L106603 舞蹈進入新段落
+You've learned {1}.	你學會了《{1}》。	你学会了《{1}》。		FUN_1400ac470 L107314 冒險模式從表演學會作品；{1} 作品名
+You feel like you know the basic rules of {1} now.	你覺得自己現在懂得《{1}》的基本規則了。	你觉得自己现在懂得《{1}》的基本规则了。		FUN_1400ac470 L107359／107381／107403 學會詩體／曲式／舞式；{1} 形式名
+{1} mumbles, having completely forgotten the words.	{1}含糊地念著，詞句全忘光了。	{1}含糊地念着，词句全忘光了。		FUN_1400b1bf0 L108717 朗誦品質；{1} 生物稱呼
+{1} enunciates poorly.	{1}口齒不清。	{1}口齿不清。		FUN_1400b1bf0 L108717 朗誦品質
+{1} speaks well.	{1}說得很好。	{1}说得很好。		FUN_1400b1bf0 L108717 朗誦品質
+{1} enunciates crisply.	{1}咬字清晰。	{1}咬字清晰。		FUN_1400b1bf0 L108717 朗誦品質
+{1} recites the words evocatively.	{1}朗誦得引人入勝。	{1}朗诵得引人入胜。		FUN_1400b1bf0 L108717 朗誦品質
+{1} chooses the perfect phrasing.	{1}的措辭恰到好處。	{1}的措辞恰到好处。		FUN_1400b1bf0 L108717 朗誦品質
+{1} brings the poem to life with this flawless recitation.	{1}完美的朗誦讓這首詩活了起來。	{1}完美的朗诵让这首诗活了起来。		FUN_1400b1bf0 L108717 朗誦品質
+{1} stumbles over the details.	{1}講得結結巴巴，細節都亂了。	{1}讲得结结巴巴，细节都乱了。		FUN_1400b1bf0 L108717 說故事品質
+{1} is telling the tale quite well.	{1}把故事講得相當好。	{1}把故事讲得相当好。		FUN_1400b1bf0 L108717 說故事品質
+{1} tells the story in vivid detail.	{1}把故事講得繪聲繪影。	{1}把故事讲得绘声绘色。		FUN_1400b1bf0 L108717 說故事品質
+{1} weaves a mesmerizing tale!	{1}講了一個扣人心弦的故事！	{1}讲了一个扣人心弦的故事！		FUN_1400b1bf0 L108717 說故事品質
+You make a mockery of the {1} with a shameworthy performance.	你丟臉的演奏簡直是在糟蹋{1}。	你丢脸的演奏简直是在糟蹋{1}。		FUN_1400b1bf0 L108717 音樂品質（玩家）；{1} 樂器名（世界生成的樂器，或 instrument）
+{1} makes a mockery of the {2} with a shameworthy performance.	{1}丟臉的演奏簡直是在糟蹋{2}。	{1}丢脸的演奏简直是在糟蹋{2}。		FUN_1400b1bf0 L108717 音樂品質
+{1} sings sloppily.	{1}唱得亂七八糟。	{1}唱得乱七八糟。		FUN_1400b1bf0 L108717 音樂品質
+{1} chants sloppily.	{1}吟誦得亂七八糟。	{1}吟诵得乱七八糟。		FUN_1400b1bf0 L108717 音樂品質
+{1} sings sloppily and even forgets some of the words.	{1}唱得亂七八糟，還忘了一些歌詞。	{1}唱得乱七八糟，还忘了一些歌词。		FUN_1400b1bf0 L108717 音樂品質
+{1} chants sloppily and even forgets some of the words.	{1}吟誦得亂七八糟，還忘了一些詞句。	{1}吟诵得乱七八糟，还忘了一些词句。		FUN_1400b1bf0 L108717 音樂品質
+You don't seem to know how to play the {1}.	你似乎不會演奏{1}。	你似乎不会演奏{1}。		FUN_1400b1bf0 L108717 音樂品質（玩家）
+{1} doesn't seem to know how to play the {2}.	{1}似乎不會演奏{2}。	{1}似乎不会演奏{2}。		FUN_1400b1bf0 L108717 音樂品質
+{@1} is singing well.	{1}唱得很好。	{1}唱得很好。		FUN_1400b1bf0 L108717 音樂品質；主詞是字典名稱（The dwarf 經冠詞句型剩 dwarf）時，搶在想法句 {@1} is {@2} {%3}. 之前
+{1} is singing well.	{1}唱得很好。	{1}唱得很好。		FUN_1400b1bf0 L108717 音樂品質
+{1} is chanting well.	{1}吟誦得很好。	{1}吟诵得很好。		FUN_1400b1bf0 L108717 音樂品質
+You are playing the {1} well.	你把{1}演奏得很好。	你把{1}演奏得很好。		FUN_1400b1bf0 L108717 音樂品質（玩家）
+{1} is playing the {2} well.	{1}把{2}演奏得很好。	{1}把{2}演奏得很好。		FUN_1400b1bf0 L108717 音樂品質
+You sound vaguely like the intended {1}.	你的聲音隱約有點像要模仿的{1}。	你的声音隐约有点像要模仿的{1}。		FUN_1400b1bf0 L108717 以人聲模仿樂器（玩家）
+{1} sounds vaguely like the intended {2}.	{1}的聲音隱約有點像要模仿的{2}。	{1}的声音隐约有点像要模仿的{2}。		FUN_1400b1bf0 L108717 以人聲模仿樂器
+{1} sings beautifully.	{1}唱得很美。	{1}唱得很美。		FUN_1400b1bf0 L108717 音樂品質
+{1} chants beautifully.	{1}吟誦得很美。	{1}吟诵得很美。		FUN_1400b1bf0 L108717 音樂品質
+You play the {1} with skill.	你嫻熟地演奏{1}。	你娴熟地演奏{1}。		FUN_1400b1bf0 L108717 音樂品質（玩家）
+{1} plays the {2} with skill.	{1}嫻熟地演奏{2}。	{1}娴熟地演奏{2}。		FUN_1400b1bf0 L108717 音樂品質
+You could nearly pass for the voice of the {1}.	你的聲音幾可亂真，簡直就是{1}。	你的声音几可乱真，简直就是{1}。		FUN_1400b1bf0 L108717 以人聲模仿樂器（玩家）
+{1} could nearly pass for the voice of the {2}.	{1}的聲音幾可亂真，簡直就是{2}。	{1}的声音几可乱真，简直就是{2}。		FUN_1400b1bf0 L108717 以人聲模仿樂器
+{1}'s song is absolutely flawless.	{1}的歌聲完美無瑕。	{1}的歌声完美无瑕。		FUN_1400b1bf0 L108717 音樂品質；{1}'s 由稱呼加 's
+{1}'s chant is absolutely flawless.	{1}的吟誦完美無瑕。	{1}的吟诵完美无瑕。		FUN_1400b1bf0 L108717 音樂品質
+You are delivering a virtuoso performance on the {1}.	你正用{1}獻上精湛絕倫的演奏。	你正用{1}献上精湛绝伦的演奏。		FUN_1400b1bf0 L108717 音樂品質（玩家）
+{1} is delivering a virtuoso performance on the {2}.	{1}正用{2}獻上精湛絕倫的演奏。	{1}正用{2}献上精湛绝伦的演奏。		FUN_1400b1bf0 L108717 音樂品質
+You and the {1} are indistinguishable!	你和{1}的聲音已難分彼此！	你和{1}的声音已难分彼此！		FUN_1400b1bf0 L108717 以人聲模仿樂器（玩家）
+{1} and the {2} are indistinguishable!	{1}和{2}的聲音已難分彼此！	{1}和{2}的声音已难分彼此！		FUN_1400b1bf0 L108717 以人聲模仿樂器
+{1} gets tangled up.	{1}的腳步亂成一團。	{1}的脚步乱成一团。		FUN_1400b1bf0 L108717 舞蹈品質
+{1} is dancing well.	{1}跳得很好。	{1}跳得很好。		FUN_1400b1bf0 L108717 舞蹈品質
+{1} is dancing exceptionally.	{1}跳得非常出色。	{1}跳得非常出色。		FUN_1400b1bf0 L108717 舞蹈品質
+{1} dances flawlessly, like someone out of a legend!	{1}的舞姿完美無瑕，宛如傳說中的人物！	{1}的舞姿完美无瑕，宛如传说中的人物！		FUN_1400b1bf0 L108717 舞蹈品質
+{1} just can't give a sermon very well.	{1}實在不太會講道。	{1}实在不太会讲道。		FUN_1400b1bf0 L108717 講道品質
+{1} is giving a creditable sermon.	{1}的講道可圈可點。	{1}的讲道可圈可点。		FUN_1400b1bf0 L108717 講道品質
+{1} artfully delivers a lucid and powerful sermon.	{1}巧妙地發表了一場清晰有力的講道。	{1}巧妙地发表了一场清晰有力的讲道。		FUN_1400b1bf0 L108717 講道品質
+{1} lays forth an awe-inspiring sermon for the ages!	{1}發表了一場令人敬畏、足以流傳千古的講道！	{1}发表了一场令人敬畏、足以流传千古的讲道！		FUN_1400b1bf0 L108717 講道品質
+{1}, the performance troupe, has arrived.	表演團{1}到了。	表演团{1}到了。		FUN_14010b150 L169979 表演團抵達；{1} 團名（FUN_140b92900）
+{1}, a performance troupe, is visiting.	表演團{1}前來拜訪。	表演团{1}前来拜访。		FUN_14010b150 L169979 表演團來訪
+{1} has arrived.	{1}到了。	{1}到了。		FUN_14010b150 L169912／169950 訪客抵達；{1}「人名, 職業」（FUN_141330c30，人名照抄，所以不能用 {%1}）
+{1} is visiting.	{1}前來拜訪。	{1}前来拜访。		FUN_14010b150 L169912／169950 訪客來訪
+{1} and others have returned.	{1}等人回來了。	{1}等人回来了。		FUN_14010b150 L170556／170638 出外任務歸來；{1}「人名, 職業」或部隊名；後面可能空兩格接歷史事件句（本輪未譯）
+{1} and {2} have returned.	{1}和{2}回來了。	{1}和{2}回来了。		FUN_14010b150 L170556 兩人歸來
+{1} has returned.	{1}回來了。	{1}回来了。		FUN_14010b150 L170556 一人歸來
+{1} have returned.	{1}回來了。	{1}回来了。		FUN_14010b150 L170598 部隊歸來；{1} 部隊名（FUN_140a946e0）
+{1} has brought back a rumor from abroad.	{1}帶回了一則來自遠方的傳聞。	{1}带回了一则来自远方的传闻。		FUN_14010b150 L170798 歸來帶回傳聞（1 則）；{1} FUN_141331500 稱呼
+{1} has brought back a few rumors.	{1}帶回了幾則傳聞。	{1}带回了几则传闻。		FUN_14010b150 L170798 2～4 則
+{1} has brought back many tales from beyond {2}.	{1}帶回了許多{2}以外的見聞。	{1}带回了许多{2}以外的见闻。		FUN_14010b150 L170798 5 則以上；{2} 地名
+{%1}[B]Beware their {%2}![B]With them {%3}!	{1}[B]當心他們的{2}！[B]隨行的還有{3}！	{1}[B]当心他们的{2}！[B]随行的还有{3}！		FUN_140110460 L173844 圍城公告（彈出框整則）；{1} 開頭句（可含 The army is commanded by 段落），{2} 部隊兵種，{3} 隨行者
+{%1}[B]Beware their {%2}!	{1}[B]當心他們的{2}！	{1}[B]当心他们的{2}！		FUN_140110460 L173844 圍城公告（沒有隨行者）
+{%1}[B]With them {%2}!	{1}[B]隨行的還有{2}！	{1}[B]随行的还有{2}！		FUN_140110460 L173844 圍城公告（沒有兵種段）
+{%1}[B]The army is commanded by {%2}.  {%3}	{1}[B]這支軍隊由{2}率領。{3}	{1}[B]这支军队由{2}率领。{3}		FUN_140110460 L173740 指揮官段落；{3} 指揮官的歷史事件句（本輪未譯，有這句時整則照英文）
+{%1}[B]The army is commanded by {%2}.	{1}[B]這支軍隊由{2}率領。	{1}[B]这支军队由{2}率领。		FUN_140110460 L173703 指揮官段落；{2} 要能翻（下列 {1}, a … commander），只有人名時照英文，免得彈出框把後面的事件句吞進來
+{1}, a talented commander and true warrior	才華洋溢的指揮官兼真正的戰士{1}	才华横溢的指挥官兼真正的战士{1}		FUN_140110460 L173690 指揮官描述；{1} 人名（FUN_140b92f10）
+{1}, a talented commander and skilled warrior	才華洋溢的指揮官兼熟練的戰士{1}	才华横溢的指挥官兼熟练的战士{1}		FUN_140110460 指揮官描述
+{1}, a talented commander and middling warrior	才華洋溢的指揮官兼普通的戰士{1}	才华横溢的指挥官兼普通的战士{1}		FUN_140110460 指揮官描述
+{1}, a talented commander	才華洋溢的指揮官{1}	才华横溢的指挥官{1}		FUN_140110460 指揮官描述
+{1}, a seasoned commander and true warrior	經驗豐富的指揮官兼真正的戰士{1}	经验丰富的指挥官兼真正的战士{1}		FUN_140110460 指揮官描述
+{1}, a seasoned commander and skilled warrior	經驗豐富的指揮官兼熟練的戰士{1}	经验丰富的指挥官兼熟练的战士{1}		FUN_140110460 指揮官描述
+{1}, a seasoned commander and middling warrior	經驗豐富的指揮官兼普通的戰士{1}	经验丰富的指挥官兼普通的战士{1}		FUN_140110460 指揮官描述
+{1}, a seasoned commander	經驗豐富的指揮官{1}	经验丰富的指挥官{1}		FUN_140110460 指揮官描述
+{1}, a competent commander and true warrior	稱職的指揮官兼真正的戰士{1}	称职的指挥官兼真正的战士{1}		FUN_140110460 指揮官描述
+{1}, a competent commander and skilled warrior	稱職的指揮官兼熟練的戰士{1}	称职的指挥官兼熟练的战士{1}		FUN_140110460 指揮官描述
+{1}, a competent commander and middling warrior	稱職的指揮官兼普通的戰士{1}	称职的指挥官兼普通的战士{1}		FUN_140110460 指揮官描述
+{1}, a competent commander	稱職的指揮官{1}	称职的指挥官{1}		FUN_140110460 指揮官描述
+{1}, a true warrior	真正的戰士{1}	真正的战士{1}		FUN_140110460 指揮官描述（DAT_1415fd470 ", a "）
+{1}, a skilled warrior	熟練的戰士{1}	熟练的战士{1}		FUN_140110460 指揮官描述
+{1}, a middling warrior	普通的戰士{1}	普通的战士{1}		FUN_140110460 指揮官描述
+{1}, an ancient and horrible demon escaped from the underworld before the dawn of time	在太古之初便逃離冥界、古老而恐怖的惡魔{1}	在太古之初便逃离冥界、古老而恐怖的恶魔{1}		FUN_140110460 L173698 指揮官是惡魔
+heavily-armored {%1}	重甲{1}	重甲{1}		FUN_140110460 L173757 Beware their 兵種片段；{1} 後面的兵種片段或生物複數名
+armored {%1}	披甲{1}	披甲{1}		FUN_140110460 L173752 兵種片段
+elite {%1}	精銳{1}	精锐{1}		FUN_140110460 L173768 兵種片段
+skilled {%1}	熟練{1}	熟练{1}		FUN_140110460 L173763 兵種片段
+mounted {%1}	{1}騎兵	{1}骑兵		FUN_140110460 L173773 兵種片段
+come monstrous siege engineers and a {%1} from the {%2} of {3}	可怕的攻城器械師，以及來自{3}{2}的{1}	可怕的攻城器械师，以及来自{3}{2}的{1}		FUN_140110460 L173796–173838 With them 片段；{1} 生物名，{2} 據點種類（可含 dark、種族形容詞），{3} 據點名
+come monstrous siege engineers and {%1} from the {%2} of {3}	可怕的攻城器械師，以及來自{3}{2}的{1}	可怕的攻城器械师，以及来自{3}{2}的{1}		FUN_140110460 With them 片段（複數生物）
+come monstrous siege engineers and a {%1}	可怕的攻城器械師，以及{1}	可怕的攻城器械师，以及{1}		FUN_140110460 With them 片段
+come monstrous siege engineers and {%1}	可怕的攻城器械師，以及{1}	可怕的攻城器械师，以及{1}		FUN_140110460 With them 片段
+comes a {%1} from the {%2} of {3}	來自{3}{2}的{1}	来自{3}{2}的{1}		FUN_140110460 With them 片段（單一生物）
+come {%1} from the {%2} of {3}	來自{3}{2}的{1}	来自{3}{2}的{1}		FUN_140110460 With them 片段（複數生物）
+comes a {%1}	{1}	{1}		FUN_140110460 With them 片段
+come {%1}	{1}	{1}		FUN_140110460 With them 片段
+dark {%1}	黑暗{1}	黑暗{1}		FUN_1410cbe10 據點種類前綴（dark fortress、dark pits，可夾種族形容詞）
+The {@1} of {2} has been founded {%3} and looks to your thriving economy for its future prosperity.	{1}{2}（{3}）已經建立，期盼藉你繁榮的經濟謀求未來的富足。	{1}{2}（{3}）已经建立，希望借助你繁荣的经济谋求未来的富足。		FUN_14012bdf0 L188124 新據點建立；{1} 據點種類，{2} 據點名，{3} 方位片語（ann_10）；同句型 looks to… 一條在 ann_10
+The {@1} of {2}, {%3}, has been conquered and now looks to your thriving economy for its future prosperity.	{1}{2}（{3}）已被征服，如今期盼藉你繁榮的經濟謀求未來的富足。	{1}{2}（{3}）已被征服，如今希望借助你繁荣的经济谋求未来的富足。		FUN_14012bdf0 L188124 據點被征服
+The {@1} of {2} has been founded {%3} and incorporated into your holdings.	{1}{2}（{3}）已經建立，隨即併入你的領地。	{1}{2}（{3}）已经建立，随即并入你的领地。		FUN_14012bdf0 L188209 新據點建立並併入
+The {@1} of {2}, {%3}, has been conquered and incorporated into your holdings.	{1}{2}（{3}）已被征服，隨即併入你的領地。	{1}{2}（{3}）已被征服，随即并入你的领地。		FUN_14012bdf0 L188209 據點被征服並併入
+The {@1} of {2}, {%3}, has been incorporated into your holdings.	{1}{2}（{3}）已併入你的領地。	{1}{2}（{3}）已并入你的领地。		FUN_14012bdf0 L188209 據點併入
+You have bestowed the name {1} upon {%2}.	你將{2}命名為「{1}」。	你将{2}命名为“{1}”。		FUN_1401fe5c0 L264520 冒險模式替物品命名；{1} 名字（FUN_140a94030），{2} 物品名
+{1} drinks {%2}.	{1}喝了{2}。	{1}喝了{2}。		FUN_140224ec0 L290179 喝飲料；{2} 物品名
+{1} is sneaking an extra drink to {2}!	{1}正偷偷多塞一杯酒給{2}！	{1}正偷偷多塞一杯酒给{2}！		FUN_140224ec0 L290931 酒館偷偷多給酒；{1}{2} 人名（FUN_140a94030）

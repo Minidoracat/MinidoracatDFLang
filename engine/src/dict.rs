@@ -110,6 +110,9 @@ pub struct Rule {
     /// 開頭就是任意佔位（`{1} was given away`）：開頭沒有限制，同一類裡排在後面，
     /// 免得把外框句的前半（「He feels sad after 神器名」）整個吞進 {1}
     loose: bool,
+    /// 只用在佔位裡（align 欄寫 `inner`）：冠詞外框 `The {%1}` 套在整句上，會把「The dwarf is singing well.」去掉 The
+    /// 之後拿剩下的半句去比別的句型，比出不相干的譯文；放在佔位裡（「{%1} misses {%2}!」的 The vulture）才安全。
+    inner: bool,
 }
 
 /// 一個佔位：編號、能收的片段、譯文裡的補字（`{3+時}`，原文不能有）。
@@ -160,19 +163,22 @@ fn is_number(piece: &[u8]) -> bool {
     !digits.is_empty() && digits[0].is_ascii_digit() && digits.iter().all(|c| c.is_ascii_digit() || *c == b',')
 }
 
-/// 整句字典查詞；查不到、而且含大寫英文字母時，改查全部小寫的寫法。遊戲常把名稱放句首時改大寫
-/// （`Cats, ♂`），動物的稱呼還會每個字大寫（`Stray One-humped Camel`），raws 裡只有小寫。
+/// 整句字典查詞；查不到時改查大小寫不同的寫法：遊戲常把名稱放句首時改大寫（`Cats, ♂`），動物的稱呼還會
+/// 每個字大寫（`Stray One-humped Camel`），raws 裡只有小寫；公告又常把介面上大寫的名稱寫成小寫
+/// （`the woodcutter` 對到職業 `Woodcutter`、`Trade Depot` 對到建造選單的 `Trade depot`）。
 /// 全大寫的字串（`PAUSED`）不試；名稱都短，超過 64 位元組的不試，免得配置記憶體。
-fn lookup_name<'a>(entries: &'a HashMap<Vec<u8>, Entry>, key: &[u8]) -> Option<&'a Entry> {
-    entries.get(key).or_else(|| {
-        if key.len() > 64 || !key.iter().any(u8::is_ascii_uppercase) || !key.iter().any(u8::is_ascii_lowercase) {
+fn lookup_name<'a>(d: &'a Dict, key: &[u8]) -> Option<&'a Entry> {
+    d.entries.get(key).or_else(|| {
+        if key.len() > 64 || !key.iter().any(u8::is_ascii_lowercase) {
             return None;
         }
         let mut buf = [0u8; 64];
         let lower = &mut buf[..key.len()];
         lower.copy_from_slice(key);
         lower.make_ascii_lowercase();
-        entries.get(&*lower)
+        let lower = &*lower;
+        key.iter().any(u8::is_ascii_uppercase).then(|| d.entries.get(lower)).flatten()
+            .or_else(|| d.folded.get(lower).and_then(|k| d.entries.get(k)))
     })
 }
 
@@ -224,6 +230,7 @@ impl Rule {
                 Seg::Lit(l) => !l.iter().any(u8::is_ascii_alphabetic),
             }),
             loose: matches!(pattern.first(), Some(Seg::Cap(_, Kind::Any))),
+            inner: align == "inner",
             pattern,
             output,
             align: align.to_owned(),
@@ -280,6 +287,9 @@ fn is_boundary(text: &[u8], k: usize) -> bool {
 #[derive(Default)]
 pub struct Dict {
     pub entries: HashMap<Vec<u8>, Entry>,
+    /// 全部小寫的原文 → 原文：只收含大小寫字母、而且全小寫寫法本身沒有條目的（見 lookup_name）。
+    /// 兩條原文只差大小寫、譯文又不同時不收，結果才不看雜湊表的順序。
+    folded: HashMap<Vec<u8>, Vec<u8>>,
     /// 只在某些畫面套用的整句：原文 → [(畫面, 限定列, 譯文)]。同一個英文在不同畫面（或同畫面不同列）意思不同時用（見 screen_entry）。
     pub screens: HashMap<Vec<u8>, Vec<(String, Option<i32>, Entry)>>,
     pub rules: Vec<Rule>,
@@ -370,8 +380,32 @@ impl Dict {
             report.missing_glyphs += missing;
             self.entries.insert(key, entry);
             report.loaded += 1;
+            if let Some(key) = box_form(en).and_then(|f| cp437::encode(&f)).filter(|k| !self.entries.contains_key(k)) {
+                let (entry, _) = self.entry(key.len(), zh, align);
+                self.entries.insert(key, entry);
+            }
         }
+        self.rebuild_folded();
         report
+    }
+
+    /// 重建大小寫不同時的查詞索引（見 lookup_name）。
+    fn rebuild_folded(&mut self) {
+        let mut folded: HashMap<Vec<u8>, Option<&Vec<u8>>> = HashMap::new();
+        for (key, entry) in &self.entries {
+            if !key.iter().any(u8::is_ascii_uppercase) || !key.iter().any(u8::is_ascii_lowercase) {
+                continue;
+            }
+            let lower = key.to_ascii_lowercase();
+            if self.entries.contains_key(&lower) {
+                continue;
+            }
+            let slot = folded.entry(lower).or_insert(Some(key));
+            if slot.is_some_and(|k| self.entries[k].text != entry.text) {
+                *slot = None;
+            }
+        }
+        self.folded = folded.into_iter().filter_map(|(lower, key)| Some((lower, key?.clone()))).collect();
     }
 
     /// 依畫面套用的整句：`畫面<TAB>原文<TAB>譯文<TAB>對齊<TAB>限定列`，畫面是 DFHack 焦點字串的開頭（如 dwarfmode），
@@ -435,6 +469,9 @@ impl Dict {
                 .count();
             self.rules.push(rule);
             report.loaded += 1;
+            if let Some(alias) = box_form(en).and_then(|f| Rule::parse(&f, zh, align)) {
+                self.rules.push(alias);
+            }
         }
         // 穩定排序：同一類維持檔案順序
         self.rules.sort_by_key(|r| (!r.list, !r.specific, r.loose));
@@ -449,10 +486,20 @@ impl Dict {
 
     /// 遊戲拼成一整段的文字：整段查不到時，在句末標點後的兩個以上空白切開逐句查（遊戲拼段落時句間空兩格），
     /// 每句都有譯文才算，句間不留空白。成功回傳譯文片段（位置是整段原文的位置），否則回傳查不到的句子。
+    /// 整段用雙引號包住（人物頁概況的引言）時引號內照樣逐句查，引號換成條目 `""` 的譯文（「」），沒有就照原樣。
     pub fn translate_sentences(&self, text: &[u8]) -> Result<Pieces, Vec<Vec<u8>>> {
         let mut memo = Memo::new();
         if let Some((p, _)) = self.piece(text, 0, &mut memo) {
             return Ok(p);
+        }
+        if let [b'"', inner @ .., b'"'] = text {
+            let inner = self.translate_sentences(inner)?;
+            let marks = lookup_name(self, b"\"\"").map_or("\"\"", |e| e.text.as_str());
+            let split = marks.char_indices().nth(1).map_or(marks.len(), |(i, _)| i);
+            let mut out = vec![(marks[..split].to_owned(), 0)];
+            out.extend(inner.into_iter().map(|(t, at)| (t, at + 1)));
+            out.push((marks[split..].to_owned(), text.len() - 1));
+            return Ok(out);
         }
         let mut out = Pieces::new();
         let mut missing = Vec::new();
@@ -467,7 +514,7 @@ impl Dict {
 
     /// 一個片段的譯文：整句字典（含大寫退回小寫），再套句型。
     fn piece(&self, key: &[u8], depth: usize, memo: &mut Memo) -> Option<Found> {
-        if let Some(e) = lookup_name(&self.entries, key) {
+        if let Some(e) = lookup_name(self, key) {
             return Some((vec![(e.text.clone(), 0)], true));
         }
         if depth > MAX_DEPTH {
@@ -485,12 +532,12 @@ impl Dict {
 
     /// 第一條命中的句型：(譯文片段, 句型, 乾淨與否)。
     fn apply_rules(&self, key: &[u8], depth: usize, memo: &mut Memo) -> Option<(Pieces, &Rule, bool)> {
-        // 清單只會是句子的一部分：最外層（整句）不套清單句型，免得把「人名 likes 甲, 乙」當成一項
-        for rule in self.rules.iter().filter(|r| depth > 0 || !r.list) {
+        // 清單與冠詞外框只會是句子的一部分：最外層（整句）不套，免得把「人名 likes 甲, 乙」當成一項
+        for rule in self.rules.iter().filter(|r| depth > 0 || !(r.list || r.inner)) {
             let mut fits = |kind: Kind, piece: &[u8]| match kind {
                 Kind::Any => true,
                 Kind::Number => is_number(piece),
-                Kind::Term => lookup_name(&self.entries, piece).is_some(),
+                Kind::Term => lookup_name(self, piece).is_some(),
                 Kind::Full => matches!(self.piece(piece, depth + 1, memo), Some((_, true))),
             };
             let Some(caps) = rule.matches(key, &mut fits) else { continue };
@@ -535,7 +582,7 @@ impl Dict {
             return hit.clone();
         }
         // 小寫寫法的原文和 key 等長，替身字串與對齊都能照用
-        let entry = lookup_name(&self.entries, key).map(|e| Arc::new(e.clone())).or_else(|| {
+        let entry = lookup_name(self, key).map(|e| Arc::new(e.clone())).or_else(|| {
             self.apply_rules(key, 0, &mut Memo::new()).and_then(|(pieces, rule, _)| {
                 let (entry, missing) = self.entry(key.len(), &concat(pieces), &rule.align);
                 (missing == 0 && entry.shadow().len() <= key.len()).then(|| Arc::new(entry))
@@ -547,6 +594,31 @@ impl Dict {
         cache.insert(key.to_vec(), entry.clone());
         entry
     }
+}
+
+/// 彈出訊息（段落框，見 mtb.rs plain_text）把原文拆成單字再接回：單字間一個空白，[B] [R] [P] 自成一字。
+/// 同一則公告在警報清單照原樣畫（句間常空兩格），在彈出視窗是這個樣子；和原文不同時載入成別名，一條兩處都能用。
+/// 有換色標記的不處理：段落框把標記移到單字前面、第一個顏色不標，規則不同。
+fn box_form(en: &str) -> Option<String> {
+    if en.contains("[C:") {
+        return None;
+    }
+    let spaced = ["[B]", "[R]", "[P]"].iter().fold(en.to_owned(), |s, m| s.replace(m, &format!(" {m} ")));
+    let mut out = String::with_capacity(spaced.len());
+    for c in spaced.chars() {
+        if !(c == ' ' && out.ends_with(' ')) {
+            out.push(c);
+        }
+    }
+    // 片段頭尾的空白是原文的一部分（" cancels "），留一個；標記帶出來的頭尾空白去掉
+    let mut s = out.as_str();
+    if !en.starts_with(' ') {
+        s = s.trim_start_matches(' ');
+    }
+    if !en.ends_with(' ') {
+        s = s.trim_end_matches(' ');
+    }
+    (s != en).then(|| s.to_owned())
 }
 
 /// 句子的 (起, 迄)：在 . ! ? " 後面連續兩個以上空白處切開，去掉頭尾空白，略過空句。
@@ -757,5 +829,47 @@ mod tests {
         let d = dict("{@1} loves {%2}, and {@3} hates {%4}.\t{1}熱愛{2}，卻討厭{4}。\n");
         assert_eq!(d.translate_text(b"Labor loves Cupidity, and Labor hates Labor.").as_deref(), Some("勞動熱愛貪婪，卻討厭勞動。"),
                    "{{@3}}（重複的主詞）可以省略");
+    }
+
+    #[test]
+    fn popup_spacing_matches_entries_written_with_alert_spacing() {
+        let mut d = dict("A caravan from {1} has arrived.  Trade is {@2}.[B]Be ready.\t{1}的商隊到了。交易{2}。[B]準備好。\n");
+        d.load_tsv("Labor ends.  Rest begins.\t勞動結束。休息開始。\nLabor ends. Rest begins.\t另寫的\ngood\t好\n cancels \t取消\n");
+        assert_eq!(d.translate_text(b"A caravan from Urist has arrived. Trade is good. [B] Be ready.").as_deref(),
+                   Some("Urist的商隊到了。交易好。[B]準備好。"), "彈出視窗：單字間一個空白、[B] 自成一字");
+        assert_eq!(d.translate_text(b"A caravan from Urist has arrived.  Trade is good.[B]Be ready.").as_deref(),
+                   Some("Urist的商隊到了。交易好。[B]準備好。"), "警報清單照原文");
+        assert_eq!(d.translate_text(b"Labor ends. Rest begins.").as_deref(), Some("另寫的"), "明寫的條目不被別名蓋掉");
+        assert_eq!(d.translate_text(b"cancels").as_deref(), None, "片段頭尾的空白不去掉");
+    }
+
+    #[test]
+    fn quoted_speech_translates_sentence_by_sentence_inside_the_quotes() {
+        let mut d = dict("");
+        d.load_tsv("The battle rages...\t戰鬥正激烈……\nI am so happy!\t我好開心！\n");
+        let zh = |d: &Dict, s: &[u8]| d.translate_sentences(s).map(concat);
+        assert_eq!(zh(&d, b"\"The battle rages...  I am so happy!\""), Ok("\"戰鬥正激烈……我好開心！\"".to_owned()), "沒有引號條目時照原樣");
+        d.load_tsv("\"\"\t「」\n");
+        assert_eq!(zh(&d, b"\"The battle rages...  I am so happy!\""), Ok("「戰鬥正激烈……我好開心！」".to_owned()));
+        assert_eq!(zh(&d, b"\"The battle rages...  I am sad.\""), Err(vec![b"I am sad.".to_vec()]), "缺的句子不含引號");
+    }
+
+    #[test]
+    fn lookups_fall_back_to_entries_that_differ_only_in_case() {
+        let mut d = dict("{1} cancels {%2}.\t{1}取消了{2}。\n");
+        d.load_tsv("Woodcutter\t伐木工\nTrade depot\t貿易站\nash\t梣樹\nAsh\t木灰\nRest Area\t甲\nRest area\t乙\n");
+        assert_eq!(d.translate_text(b"woodcutter").as_deref(), Some("伐木工"), "公告裡小寫的職業");
+        assert_eq!(d.translate_text(b"Trade Depot").as_deref(), Some("貿易站"), "每個字大寫的建築名");
+        assert_eq!(d.translate_text(b"ash").as_deref(), Some("梣樹"), "有完全相同的寫法時照用");
+        assert_eq!(d.translate_text(b"rest area"), None, "只差大小寫的兩條譯文不同時不猜");
+        assert_eq!(d.translate_text(b"Urist cancels trade Depot.").as_deref(), Some("Urist取消了貿易站。"));
+    }
+
+    #[test]
+    fn article_wrappers_apply_only_inside_placeholders() {
+        let mut d = dict("The {%1}\t{1}\tinner\nthe {%1}\t{1}\tinner\n{@1} is {@2} {%3}.\t{1}{3+時}感到{2}。\n{%1} misses {%2}!\t{1}沒打中{2}！\n");
+        d.load_tsv("dwarf\t矮人\nsinging\t歌唱\nwell\t水井\nvulture\t禿鷲\n");
+        assert_eq!(d.translate_text(b"The dwarf is singing well."), None, "整句去掉 The 之後不能拿半句去比想法句");
+        assert_eq!(d.translate_text(b"The vulture misses the dwarf!").as_deref(), Some("禿鷲沒打中矮人！"));
     }
 }

@@ -1,0 +1,85 @@
+en	zh-Hant	zh-Hans	align	note
+Our time in {1} is so brief...	我們在{1}的時光如此短暫……	我们在{1}的时光如此短暂……		FUN_14066fe50 case 1：{1} 世界名
+I can't believe {1} is dead.	真不敢相信{1}死了。	真不敢相信{1}死了。		FUN_14066fe50 case 3/4：{1} 人名（FUN_140b92f10）
+{1} is dead?	{1}死了？	{1}死了？		FUN_14066fe50 case 3：{1} 人名
+{1} is really dead.	{1}真的死了。	{1}真的死了。		FUN_14066fe50 case 4：{1} 人名
+{1} is dead.	{1}死了。	{1}死了。		FUN_14066fe50 case 3/4：{1} 人名
+{1}, slayer of {2}.	{1}，殺死{2}的人。	{1}，杀死{2}的人。		FUN_14066fe50 case 5：{1} 兇手、{2} 死者
+{1}, slayer.	{1}，殺戮者。	{1}，杀戮者。		FUN_14066fe50 case 5：{1} 兇手
+{1} has killed.	{1}殺了人。	{1}杀了人。		FUN_14066fe50 case 5：{1} 兇手
+{1} killed {2}.	{1}殺死了{2}。	{1}杀死了{2}。		FUN_14066fe50 case 5：{1} 兇手、{2} 死者
+I am separated from {1}.	我和{1}分開了。	我和{1}分开了。		FUN_14066fe50 case 6：{1} 人名
+Oh, where is {1}?	噢，{1}在哪裡？	哦，{1}在哪里？		FUN_14066fe50 case 6：{1} 人名
+I am together with my {1}.	我和{1}在一起了。	我和{1}在一起了。		FUN_14066fe50 case 7：{1} 人名；my 中文省略
+I am reunited with my {1}.	我和{1}重逢了。	我和{1}重逢了。		FUN_14066fe50 case 7：{1} 人名；my 中文省略
+I shall name you {1}.	我要將你命名為{1}。	我要将你命名为{1}。		FUN_14066fe50 case 10：{1} 神器名
+I have mastered {%1}.	我精通了{1}。	我精通了{1}。		FUN_14066fe50 case 0xb：{1} 技能名小寫
+I have fallen for {1}.	我愛上{1}了。	我爱上{1}了。		FUN_14066fe50 case 0xc：{1} 人名
+Oh, {1}...	噢，{1}……	哦，{1}……		FUN_14066fe50 case 0xc：{1} 人名
+I was near to my own arranged {@1}.	我待在自己布置過的{1}附近。	我待在自己布置过的{1}附近。		FUN_14066fe50 case 0x1e：{1} 建築種類名（FUN_14054d320，首字大寫）
+I was near to my own {@1}.	我待在自己的{1}附近。	我待在自己的{1}附近。		FUN_14066fe50 case 0x1c：{1} 建築種類名
+I was near to a arranged {@1}.	我待在布置過的{1}附近。	我待在布置过的{1}附近。		FUN_14066fe50 case 0x1d：原文 a arranged 照抄；{1} 建築種類名
+I was near to a caged {%1}.	我靠近了籠子裡的{1}。	我靠近了笼子里的{1}。		FUN_14066fe50 case 0x91/0x92：{1} 生物名單數
+I was near to a {@1}.	我待在{1}附近。	我待在{1}附近。		FUN_14066fe50 case 0x1b：{1} 建築種類名
+I was near to {%1}.	我待在{1}附近。	我待在{1}附近。		FUN_14066fe50 case 0x7d：{1} 生物名複數（FUN_140256880）；須排在其他 I was near to 句型後
+I was haunted by {%1}.	{1}一直纏著我。	{1}一直缠着我。		FUN_14066fe50 case 0x28：{1} 鬼魂（本檔 the ghost of …）
+I was tormented by {%1}.	{1}一直折磨我。	{1}一直折磨我。		FUN_14066fe50 case 0x28
+I was possessed by {%1}.	我被{1}附身了。	我被{1}附身了。		FUN_14066fe50 case 0x28
+I was tortured by {%1}.	{1}把我凌虐得好慘。	{1}把我虐待得好惨。		FUN_14066fe50 case 0x28
+I was accosted by {%1}.	我遭到{1}襲擾。	我遭到{1}袭扰。		FUN_14066fe50 case 0x7c：{1} 生物名複數
+I was pestered by {%1}.	我被{1}糾纏不休。	我被{1}纠缠不休。		FUN_14066fe50 case 0x7e：{1} 生物名複數（FUN_140aa3bd0）
+I made friends with {1}.	我和{1}成了朋友。	我和{1}成了朋友。		FUN_14066fe50 case 0x7a：{1} 人名
+I am forming a grudge against {1}.	我開始對{1}懷恨在心。	我开始对{1}怀恨在心。		FUN_14066fe50 case 0x7b：{1} 人名
+I was attacked by my own dead {%1}.	我已故的{1}攻擊了我。	我已故的{1}攻击了我。		FUN_14066fe50 case 0x86：{1} 親屬稱謂（FUN_14075a580）
+I gave birth to {%1}.	我生下了{1}。	我生下了{1}。		FUN_14066fe50 case 0x9f：{1} a girl、twins、a + 嬰兒名（FUN_1406dd860）
+I have become a parent of {%1}.	我當上{1}的父母了。	我当上{1}的父母了。		FUN_14066fe50 case 0xa0：{1} twins 等多胞胎
+I must pray to {1}.	我必須向{1}祈禱。	我必须向{1}祈祷。		FUN_14066fe50 case 0xb4：{1} 神名
+I have communed with {1} in this holy place.	我在這處聖地與{1}進行了心靈交流。	我在这处圣地与{1}进行了心灵交流。		FUN_14066fe50 case 0x117：{1} 神名；須排在下一條前
+I have communed with {1}.	我與{1}進行了心靈交流。	我与{1}进行了心灵交流。		FUN_14066fe50 case 0xb5：{1} 神名
+I've made a breakthrough regarding {%1}.	我在{1}方面取得了突破。	我在{1}方面取得了突破。		FUN_14066fe50 case 0xb7：{1} 知識主題
+I just don't understand {%1}.	我就是搞不懂{1}。	我就是搞不懂{1}。		FUN_14066fe50 case 0xb8：{1} 知識主題
+I've been mulling over {%1}.	我一直在琢磨{1}。	我一直在琢磨{1}。		FUN_14066fe50 case 0xb9：{1} 知識主題
+I've been discussing {%1}.	我一直在討論{1}。	我一直在讨论{1}。		FUN_14066fe50 case 0xba：{1} 知識主題
+I learned about {%1}.	我學了一些{1}的知識。	我学了一些{1}的知识。		FUN_14066fe50 case 0xbf/0xc0：{1} 知識主題或技能名；須排在 I learned {1}. 前
+I learned {1}.	我學會了{1}。	我学会了{1}。		FUN_14066fe50 case 0xc1-0xc5：{1} 書名、秘密名、詩歌／音樂／舞蹈形式名
+I taught {%1}.	我教了{1}。	我教了{1}。		FUN_14066fe50 case 0xc6/0xc7：{1} 知識主題或技能名
+I read {1}.	我讀了{1}。	我读了{1}。		FUN_14066fe50 case 0xc8：{1} 書名或 an untitled composition
+I wrote {1}.	我寫了{1}。	我写了{1}。		FUN_14066fe50 case 0xc9：{1} 書名或 an untitled composition
+I can now reside in {1}.	我現在可以住在{1}了。	我现在可以住在{1}了。		FUN_14066fe50 case 0xca：{1} 地名
+I am now part of {1}.	我現在是{1}的一員了。	我现在是{1}的一员了。		FUN_14066fe50 case 0xcb：{1} 勢力名
+I was denied residency in {1}.	我被拒絕在{1}居住。	我被拒绝在{1}居住。		FUN_14066fe50 case 0xcc：{1} 地名
+I was rejected by {1}.	我被{1}拒絕了。	我被{1}拒绝了。		FUN_14066fe50 case 0xcd：{1} 勢力名
+I played with a {%1}.	我玩了{1}。	我玩了{1}。		FUN_14066fe50 case 0xd0：{1} 玩具名（DAT_1415ed620="a "）
+I played with {1}.	我玩了{1}。	我玩了{1}。		上一條的退路：玩具名翻不出來時照抄，免得被 speech_03 的 `{1} played {2}.` 譯成「演奏了《with a …》」
+I got into an argument with {1}.	我和{1}吵了一架。	我和{1}吵了一架。		FUN_14066fe50 case 0xd4：{1} 人名
+I have improved my {%1}.	我的{1}進步了。	我的{1}进步了。		FUN_14066fe50 case 0xd7：{1} 技能名小寫
+I realized the worthlessness of {@1}.	我領悟到{1}毫無價值。	我领悟到{1}毫无价值。		FUN_14066fe50 case 0xd9：{1} 價值觀名
+I realized nuances of {@1}.	我領悟到{1}的微妙之處。	我领悟到{1}的微妙之处。		FUN_14066fe50 case 0xd9：{1} 價值觀名
+I realized the value of {@1}.	我領悟到{1}的價值。	我领悟到{1}的价值。		FUN_14066fe50 case 0xd9：{1} 價值觀名
+I am awoken to the worthlessness of {@1}.	我看清了{1}毫無價值。	我看清了{1}毫无价值。		FUN_14066fe50 case 0xd9：{1} 價值觀名
+I am awoken to nuances of {@1}.	我看清了{1}的微妙之處。	我看清了{1}的微妙之处。		FUN_14066fe50 case 0xd9：{1} 價值觀名
+I am awoken to the value of {@1}.	我看清了{1}的價值。	我看清了{1}的价值。		FUN_14066fe50 case 0xd9：{1} 價值觀名
+I defeated {1}.	我擊敗了{1}。	我击败了{1}。		FUN_14066fe50 case 0xe5：{1} 人名
+I murdered {1}.	我殺害了{1}。	我杀害了{1}。		FUN_14066fe50 case 0xe8：{1} 人名
+I abducted {1}.	我綁架了{1}。	我绑架了{1}。		FUN_14066fe50 case 0xfa：{1} 人名
+I saw {1} on display in my personal museum.	我在私人博物館欣賞了展出的{1}。	我在私人博物馆欣赏了展出的{1}。		FUN_14066fe50 case 0xea：{1} 神器名或物品名；須排在下一條前
+I saw {1} on display.	我欣賞了展出的{1}。	我欣赏了展出的{1}。		FUN_14066fe50 case 0xeb：{1} 神器名、物品名或 a piece
+I acquired {1}.	我得到了{1}。	我得到了{1}。		FUN_14066fe50 case 0xec：{1} 神器名
+{1} was given away.	{1}被送走了。	{1}被送走了。		FUN_14066fe50 case 0xef：{1} 神器名（首字大寫）
+My {%1} was expelled.	我的{1}被驅逐了。	我的{1}被驱逐了。		FUN_14066fe50 case 0xf2：{1} 親屬稱謂（DAT_1416442d8="My "）
+There was a scholarly lecture in {1}.	{1}有一場學術講座。	{1}有一场学术讲座。		FUN_14066fe50 case 0xf5：{1} 地名
+There was a performance in {1}.	{1}有一場表演。	{1}有一场表演。		FUN_14066fe50 case 0xf6：{1} 地名
+{1} will be recognized.	{1}將獲得承認。	{1}将获得承认。		FUN_14066fe50 case 0xfc/0x102：{1} 宗教或公會名（首字大寫）
+{1} has been recognized.	{1}已獲得承認。	{1}已获得承认。		FUN_14066fe50 case 0xfd/0x103：{1} 宗教或公會名
+The temple petition for {1} was rejected.	為{1}興建神殿的請願遭拒了。	为{1}兴建神殿的请愿被拒了。		FUN_14066fe50 case 0xfe/0xff/0x100：{1} 宗教或公會名
+The temple petition for {1} was ignored.	為{1}興建神殿的請願遭到忽視。	为{1}兴建神殿的请愿被忽视了。		FUN_14066fe50 case 0xfe/0xff/0x100
+The agreement to establish a temple for {1} was abandoned.	為{1}興建神殿的協議作廢了。	为{1}兴建神殿的协议作废了。		FUN_14066fe50 case 0xfe/0xff/0x100
+The guildhall petition for {1} was rejected.	為{1}興建公會大廳的請願遭拒了。	为{1}兴建公会大厅的请愿被拒了。		FUN_14066fe50 case 0x104/0x105/0x106：{1} 宗教或公會名
+The guildhall petition for {1} was ignored.	為{1}興建公會大廳的請願遭到忽視。	为{1}兴建公会大厅的请愿被忽视了。		FUN_14066fe50 case 0x104/0x105/0x106
+The agreement to establish a guildhall for {1} was abandoned.	為{1}興建公會大廳的協議作廢了。	为{1}兴建公会大厅的协议作废了。		FUN_14066fe50 case 0x104/0x105/0x106
+{1} and I broke up.	我和{1}分手了。	我和{1}分手了。		FUN_14066fe50 case 0x108：{1} 人名
+{1} and I are divorced.	我和{1}離婚了。	我和{1}离婚了。		FUN_14066fe50 case 0x109：{1} 人名
+I have performed the rites of {1} in this holy place.	我在這處聖地舉行了{1}的儀式。	我在这处圣地举行了{1}的仪式。		FUN_14066fe50 case 0x114：{1} 宗教名；須排在下一條前
+I have performed the rites of {1} in this dubious place.	我在這個可疑的地方舉行了{1}的儀式。	我在这个可疑的地方举行了{1}的仪式。		FUN_14066fe50 case 0x115：{1} 宗教名；須排在下一條前
+I have performed the rites of {1}.	我舉行了{1}的儀式。	我举行了{1}的仪式。		FUN_14066fe50 case 0x116：{1} 宗教名
+The forces of {1} have shattered against {2}.	{1}的大軍在{2}前潰不成軍。	{1}的大军在{2}前溃不成军。		FUN_14066fe50 case 0x118：{1} 勢力名、{2} 地名

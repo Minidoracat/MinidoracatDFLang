@@ -1,0 +1,189 @@
+en	zh-Hant	zh-Hans	align	note
+You assume a submissive posture.	你擺出順從的姿態。	你摆出顺从的姿态。		FUN_1407f7020 1142964 冒險模式：示弱
+You no longer assume a submissive posture.	你不再擺出順從的姿態。	你不再摆出顺从的姿态。		FUN_1407f7020 1142979
+You have nothing left to draw or put away.	你沒有東西可以拔出或收起了。	你没有东西可以拔出或收起了。		FUN_1407f7020 1143195
+You are riding and cannot lie down.	你正在騎乘，無法躺下。	你正在骑乘，无法躺下。		FUN_1407f7020 1143224
+You are too tired to stand.	你太累了，站不起來。	你太累了，站不起来。		FUN_1407f7020 1143263
+You can't stand up -- somebody is in the way.	你站不起來——有人擋住了。	你站不起来——有人挡住了。		FUN_1407f7020 1143280
+The webs make it impossible to stand.	蛛網纏身，根本站不起來。	蛛网缠身，根本站不起来。		FUN_1407f7020 1143294
+You aren't wielding a ranged weapon.	你沒有拿著遠程武器。	你没有拿着远程武器。		FUN_1407f7020 1143400/1143415
+Your intense search turns up nothing.	你仔細搜尋，卻一無所獲。	你仔细搜索，却一无所获。		FUN_1407f7020 1143618 搜索小生物
+You've found a small creature.	你找到了一隻小生物。	你找到了一只小生物。		FUN_1407f7020 1143794
+You've found some small creatures.	你找到了一些小生物。	你找到了一些小生物。		FUN_1407f7020 1143799
+You've already searched this area recently.	你最近已經搜尋過這一帶了。	你最近已经搜索过这一带了。		FUN_1407f7020 1143863
+You need a free grasp to climb.	你需要空出一隻手才能攀爬。	你需要空出一只手才能攀爬。		FUN_1407f7020 1145864
+You are too injured to climb.	你傷得太重，無法攀爬。	你伤得太重，无法攀爬。		FUN_1407f7020 1145891
+You can't travel until you emerge from underground or enter a tunnel.	你得先回到地面或進入隧道，才能旅行。	你得先回到地面或进入隧道，才能旅行。		FUN_1407f7020 1142858 旅行提示（非公告呼叫，存進旅行訊息）
+You do not have a free grasp.	你沒有空著的手。	你没有空着的手。		FUN_1408039b0 1147890 撿東西
+You do not have a free grasp and your quiver is full.	你沒有空著的手，箭袋也滿了。	你没有空着的手，箭袋也满了。		FUN_1408039b0 1147886
+You do not have a free grasp and your quivers are full.	你沒有空著的手，所有箭袋也都滿了。	你没有空着的手，所有箭袋也都满了。		FUN_1408039b0 1147895
+You do not have a free grasp and your pack is full.	你沒有空著的手，背包也滿了。	你没有空着的手，背包也满了。		FUN_1408039b0 0x1408052a8（同函式另一組）
+You do not have a free grasp and your quiver and pack are full.	你沒有空著的手，箭袋和背包也都滿了。	你没有空着的手，箭袋和背包也都满了。		FUN_1408039b0 0x1408051ec
+You do not have a free grasp and your quivers and pack are full.	你沒有空著的手，所有箭袋和背包也都滿了。	你没有空着的手，所有箭袋和背包也都满了。		FUN_1408039b0 0x140805220
+You do not have a free grasp and your quiver and packs are full.	你沒有空著的手，箭袋和所有背包也都滿了。	你没有空着的手，箭袋和所有背包也都满了。		FUN_1408039b0 0x1408051be
+body parts	身體部位	身体部位		FUN_1408039b0 同上，複數
+Dawn is breaking.	天色破曉。	天色破晓。		FUN_14082f060 1172220
+It is noon.	現在是正午。	现在是正午。		FUN_14082f060 1172260
+Night is falling.	夜幕降臨。	夜幕降临。		FUN_14082f060 1172302
+You roll.	你擲出骰子。	你掷出骰子。		FUN_1408300d0 1172927 占卜骰
+Your fate is sealed.	你的命運已定。	你的命运已定。		FUN_1408300d0 1173582
+Do not tempt fate.	別試探命運。	别试探命运。		FUN_1408300d0 1173208：接在 You already know the will of {1}. 後
+Why consult another?	為何還要求問別的神？	为何还要求问别的神？		FUN_1408300d0 1173474：接在 Don't you know that {1} is a jealous deity? 後
+Let some days pass.	過幾天再來吧。	过几天再来吧。		FUN_1408300d0 1173139 等：占卜冷卻提示（前面兩個空白，引擎逐句切開）
+Let another day pass.	再等一天吧。	再等一天吧。		FUN_1408300d0 同上
+Let a week pass.	等一週後再來吧。	等一周后再来吧。		FUN_1408300d0 同上
+You are forgiven.	你已獲得寬恕。	你已获得宽恕。		FUN_1408300d0 1173265 神祇寬恕狂妄（FORGIVENESS）
+You are free to do as you choose.	你可以隨心所欲。	你可以随心所欲。		FUN_1408300d0 1173271（FREEDOM）
+Freedom is allowed even in this.	即使在這件事上，也容許自由。	即使在这件事上，也容许自由。		FUN_1408300d0 1173273（FREEDOM）
+Your happiness is still desired.	你的幸福依然受到珍視。	你的幸福依然受到珍视。		FUN_1408300d0 1173277（HAPPINESS）
+You are loved.	你是被愛著的。	你是被爱着的。		FUN_1408300d0 1173280（LOVE）
+You have been granted mercy.	你已蒙受慈悲。	你已蒙受慈悲。		FUN_1408300d0 1173283（MERCY）
+Peace is cherished.	和平彌足珍貴。	和平弥足珍贵。		FUN_1408300d0 1173286（PEACE）
+Such care for your happiness!	如此關心你的幸福！	如此关心你的幸福！		FUN_1408300d0 1173291（HAPPINESS）
+Hubris!	狂妄！	狂妄！		FUN_1408300d0 1173514：原文含雙引號 "Hubris!"，引擎查引號內
+Look out for a chance encounter.	留意一場不期而遇。	留意一场不期而遇。		FUN_1408300d0 1174666：占卜骰籤詩 case 0
+Stay the course.	堅持既定方向。	坚持既定方向。		FUN_1408300d0 1174666：占卜骰籤詩 case 1
+Expect a change.	變化將至。	变化将至。		FUN_1408300d0 1174666：占卜骰籤詩 case 2
+The task will not be completed.	這件事不會完成。	这件事不会完成。		FUN_1408300d0 1174666：占卜骰籤詩 case 3
+The task will be successful.	這件事將會成功。	这件事将会成功。		FUN_1408300d0 1174666：占卜骰籤詩 case 4
+Focus on living in harmony.	專心與人和睦相處。	专心与人和睦相处。		FUN_1408300d0 1174666：占卜骰籤詩 case 5
+Fulfillment will be yours.	你將心滿意足。	你将心满意足。		FUN_1408300d0 1174666：占卜骰籤詩 case 6
+A reckoning awaits.	清算之日將臨。	清算之日将临。		FUN_1408300d0 1174666：占卜骰籤詩 case 7
+You will awaken to a new possibility.	你將察覺新的可能。	你将察觉新的可能。		FUN_1408300d0 1174666：占卜骰籤詩 case 8
+You must reflect on your actions.	你必須反省自己的所作所為。	你必须反省自己的所作所为。		FUN_1408300d0 1174666：占卜骰籤詩 case 9
+Beware doubt.	當心疑慮。	当心疑虑。		FUN_1408300d0 1174666：占卜骰籤詩 case 10
+Joy is on the horizon.	喜悅就在前方。	喜悦就在前方。		FUN_1408300d0 1174666：占卜骰籤詩 case 11
+A great sadness is coming.	巨大的悲傷即將到來。	巨大的悲伤即将到来。		FUN_1408300d0 1174666：占卜骰籤詩 case 12
+A sudden upheaval is in store.	一場突如其來的動盪正等著你。	一场突如其来的动荡正等着你。		FUN_1408300d0 1174666：占卜骰籤詩 case 13
+A coming disaster can be delayed, but not avoided.	即將到來的災禍可以延後，卻無法避免。	即将到来的灾祸可以推迟，却无法避免。		FUN_1408300d0 1174666：占卜骰籤詩 case 14
+Follow your desire.	順從你的渴望。	顺从你的渴望。		FUN_1408300d0 1174666：占卜骰籤詩 case 15
+Rely on willpower to see you through.	靠意志力撐過去。	靠意志力撑过去。		FUN_1408300d0 1174666：占卜骰籤詩 case 16
+Beware those that lack passion.	提防缺乏熱忱的人。	提防缺乏热情的人。		FUN_1408300d0 1174666：占卜骰籤詩 case 17
+All is not as it seems.	事情並非表面那樣。	事情并非表面那样。		FUN_1408300d0 1174666：占卜骰籤詩 case 18
+Have faith and all shall be rejuvenated.	心懷信念，萬物皆將重生。	心怀信念，万物皆将重生。		FUN_1408300d0 1174666：占卜骰籤詩 case 19
+Cling not to material things.	莫執著於身外之物。	莫执着于身外之物。		FUN_1408300d0 1174666：占卜骰籤詩 case 20
+Hold to hope when all else is lost.	即使失去一切，也要抱持希望。	即使失去一切，也要抱持希望。		FUN_1408300d0 1174666：占卜骰籤詩 case 21
+Be playful today.	今天不妨多點玩心。	今天不妨多点玩心。		FUN_1408300d0 1174666：占卜骰籤詩 case 22
+Do not be stopped by fear.	別讓恐懼阻擋你。	别让恐惧阻挡你。		FUN_1408300d0 1174666：占卜骰籤詩 case 23
+You will released.	你將獲得解脫。	你将获得解脱。		FUN_1408300d0 1174666：占卜骰籤詩 case 24（原文錯字照抄）
+Do not take any chances.	別冒任何風險。	别冒任何风险。		FUN_1408300d0 1174666：占卜骰籤詩 case 25
+Look to another for what you need.	你需要什麼，就向他人尋求協助。	你需要什么，就向他人寻求帮助。		FUN_1408300d0 1174666：占卜骰籤詩 case 26
+The partnership is one-sided.	這段關係只是一廂情願。	这段关系只是一厢情愿。		FUN_1408300d0 1174666：占卜骰籤詩 case 27
+There are two sides to every story.	每件事都有兩面。	每件事都有两面。		FUN_1408300d0 1174666：占卜骰籤詩 case 28
+Follow your intuition.	跟隨你的直覺。	跟随你的直觉。		FUN_1408300d0 1174666：占卜骰籤詩 case 29
+You will travel far from this place.	你將遠離此地。	你将远离此地。		FUN_1408300d0 1174666：占卜骰籤詩 case 30
+An important decision awaits your careful deliberation.	一個重要的決定等著你審慎思量。	一个重要的决定等着你审慎思量。		FUN_1408300d0 1174666：占卜骰籤詩 case 31
+Beware of ill-conceived plans.	當心考慮不周的計畫。	当心考虑不周的计划。		FUN_1408300d0 1174666：占卜骰籤詩 case 32
+Focus today.	今天要專心。	今天要专心。		FUN_1408300d0 1174666：占卜骰籤詩 case 33
+Be compassionate.	心存憐憫。	心存怜悯。		FUN_1408300d0 1174666：占卜骰籤詩 case 34
+Today you will have a moment of weakness.	今天你會有軟弱的時刻。	今天你会有软弱的时刻。		FUN_1408300d0 1174666：占卜骰籤詩 case 35
+The burden will be lifted soon.	重擔很快就會卸下。	重担很快就会卸下。		FUN_1408300d0 1174666：占卜骰籤詩 case 36
+You will have a great accomplishment.	你將成就一番大事。	你将成就一番大事。		FUN_1408300d0 1174666：占卜骰籤詩 case 37
+See to your responsibilities.	盡好你的責任。	尽好你的责任。		FUN_1408300d0 1174666：占卜骰籤詩 case 38
+An end and a new beginning.	一個結束，也是新的開始。	一个结束，也是新的开始。		FUN_1408300d0 1174666：占卜骰籤詩 case 39
+Do not hold on for too long.	別執著太久。	别执着太久。		FUN_1408300d0 1174666：占卜骰籤詩 case 40
+Make a change or forever remain.	不改變，就永遠停在原地。	不改变，就永远停在原地。		FUN_1408300d0 1174666：占卜骰籤詩 case 41
+Give up the hopeless cause.	放棄無望之事。	放弃无望之事。		FUN_1408300d0 1174666：占卜骰籤詩 case 42
+Keep your own counsel today.	今天把心事藏在心裡。	今天把心事藏在心里。		FUN_1408300d0 1174666：占卜骰籤詩 case 43
+Do not be reckless.	不可魯莽。	不可鲁莽。		FUN_1408300d0 1174666：占卜骰籤詩 case 44
+You will make your final stand.	你將進行最後一搏。	你将进行最后一搏。		FUN_1408300d0 1174666：占卜骰籤詩 case 45
+Be cautious of fatigue today.	今天當心疲勞。	今天当心疲劳。		FUN_1408300d0 1174666：占卜骰籤詩 case 46
+Ask a question.	提出一個問題。	提出一个问题。		FUN_1408300d0 1174666：占卜骰籤詩 case 47
+Do not give them too much.	別給他們太多。	别给他们太多。		FUN_1408300d0 1174666：占卜骰籤詩 case 48
+Do not keep everything for yourself.	別把一切都留給自己。	别把一切都留给自己。		FUN_1408300d0 1174666：占卜骰籤詩 case 49
+The situation cannot get worse.	情況不會更糟了。	情况不会更糟了。		FUN_1408300d0 1174666：占卜骰籤詩 case 50
+The enterprise will be a failure.	這番事業終將失敗。	这番事业终将失败。		FUN_1408300d0 1174666：占卜骰籤詩 case 51
+Accept a defeat.	接受一次失敗。	接受一次失败。		FUN_1408300d0 1174666：占卜骰籤詩 case 52
+Be mindful of others around you.	留心身邊的人。	留心身边的人。		FUN_1408300d0 1174666：占卜骰籤詩 case 53
+Prepare for disappointment.	做好失望的準備。	做好失望的准备。		FUN_1408300d0 1174666：占卜骰籤詩 case 54
+Consider the consequences carefully.	仔細考慮後果。	仔细考虑后果。		FUN_1408300d0 1174666：占卜骰籤詩 case 55
+Act quickly today.	今天要當機立斷。	今天要当机立断。		FUN_1408300d0 1174666：占卜骰籤詩 case 56
+Be generous today.	今天要慷慨。	今天要慷慨。		FUN_1408300d0 1174666：占卜骰籤詩 case 57
+If you accept the gift, one will be expected in return.	若接受這份禮物，就得有所回報。	若接受这份礼物，就得有所回报。		FUN_1408300d0 1174666：占卜骰籤詩 case 58
+Bring comfort to someone today.	今天去安慰某個人。	今天去安慰某个人。		FUN_1408300d0 1174666：占卜骰籤詩 case 59
+Now is a time for calm.	此刻應當沉著。	此刻应当沉着。		FUN_1408300d0 1174666：占卜骰籤詩 case 60
+Your dreams will come true.	你的夢想將會成真。	你的梦想将会成真。		FUN_1408300d0 1174666：占卜骰籤詩 case 61
+Beware a rival.	提防對手。	提防对手。		FUN_1408300d0 1174666：占卜骰籤詩 case 62
+Avoid conflict today.	今天避免衝突。	今天避免冲突。		FUN_1408300d0 1174666：占卜骰籤詩 case 63
+Do not avoid a necessary conflict today.	今天別逃避必要的衝突。	今天别逃避必要的冲突。		FUN_1408300d0 1174666：占卜骰籤詩 case 64
+Look ahead to the future.	放眼未來。	放眼未来。		FUN_1408300d0 1174666：占卜骰籤詩 case 65
+An obstacle will present itself.	障礙將會出現。	障碍将会出现。		FUN_1408300d0 1174666：占卜骰籤詩 case 66
+Begin an adventure.	展開一場冒險。	展开一场冒险。		FUN_1408300d0 1174666：占卜骰籤詩 case 67
+You have missed your chance.	你已錯失良機。	你已错失良机。		FUN_1408300d0 1174666：占卜骰籤詩 case 68
+Accept the loss and move on.	接受損失，繼續前進。	接受损失，继续前进。		FUN_1408300d0 1174666：占卜骰籤詩 case 69
+Make the decision quickly.	盡快做出決定。	尽快做出决定。		FUN_1408300d0 1174666：占卜骰籤詩 case 70
+Explore today.	今天去探索吧。	今天去探索吧。		FUN_1408300d0 1174666：占卜骰籤詩 case 71
+A new friendship will form.	一段新的友誼將會萌芽。	一段新的友谊将会萌芽。		FUN_1408300d0 1174666：占卜骰籤詩 case 72
+It is not as simple as you think.	事情沒有你想的那麼簡單。	事情没有你想的那么简单。		FUN_1408300d0 1174666：占卜骰籤詩 case 73
+You will learn something you did not want to know.	你會得知你不想知道的事。	你会得知你不想知道的事。		FUN_1408300d0 1174666：占卜骰籤詩 case 74
+Follow your desire to reconcile.	順從你想和解的心意。	顺从你想和解的心意。		FUN_1408300d0 1174666：占卜骰籤詩 case 75
+It is too soon to forgive.	現在原諒還太早。	现在原谅还太早。		FUN_1408300d0 1174666：占卜骰籤詩 case 76
+Your ambition is misguided.	你的野心走錯了方向。	你的野心走错了方向。		FUN_1408300d0 1174666：占卜骰籤詩 case 77
+The object of your ambition will be realized.	你所追求的目標將會實現。	你所追求的目标将会实现。		FUN_1408300d0 1174666：占卜骰籤詩 case 78
+There is no right choice.	沒有正確的選擇。	没有正确的选择。		FUN_1408300d0 1174666：占卜骰籤詩 case 79
+Rethink your priorities.	重新思考輕重緩急。	重新思考轻重缓急。		FUN_1408300d0 1174666：占卜骰籤詩 case 80
+You will received bad advice.	你會聽到糟糕的建議。	你会听到糟糕的建议。		FUN_1408300d0 1174666：占卜骰籤詩 case 81（原文錯字照抄）
+A clever strategy will be required.	需要一個巧妙的策略。	需要一个巧妙的策略。		FUN_1408300d0 1174666：占卜骰籤詩 case 82
+Take care you are not deceived.	小心別被欺騙。	小心别被欺骗。		FUN_1408300d0 1174666：占卜骰籤詩 case 83
+Indulge heartily.	盡情享受吧。	尽情享受吧。		FUN_1408300d0 1174666：占卜骰籤詩 case 84
+You will know suffering soon.	你很快就會嘗到苦難。	你很快就会尝到苦难。		FUN_1408300d0 1174666：占卜骰籤詩 case 85
+Rethink your approach.	重新思考你的做法。	重新思考你的做法。		FUN_1408300d0 1174666：占卜骰籤詩 case 86
+You must reveal the truth.	你必須揭露真相。	你必须揭露真相。		FUN_1408300d0 1174666：占卜骰籤詩 case 87
+Some changes are inevitable.	有些改變無可避免。	有些改变无可避免。		FUN_1408300d0 1174666：占卜骰籤詩 case 88
+Whatever happens, it will be for the best.	無論發生什麼，都會是最好的安排。	无论发生什么，都会是最好的安排。		FUN_1408300d0 1174666：占卜骰籤詩 case 89
+It is time to leave it behind.	是時候放下了。	是时候放下了。		FUN_1408300d0 1174666：占卜骰籤詩 case 90
+Do not fear loss.	不要害怕失去。	不要害怕失去。		FUN_1408300d0 1174666：占卜骰籤詩 case 91
+You must face the challenge today.	今天你必須面對挑戰。	今天你必须面对挑战。		FUN_1408300d0 1174666：占卜骰籤詩 case 92
+Today, somebody will be cruel.	今天會有人很殘忍。	今天会有人很残忍。		FUN_1408300d0 1174666：占卜骰籤詩 case 93
+Master yourself today; discipline will be required.	今天要掌控自己；你需要自律。	今天要掌控自己；你需要自律。		FUN_1408300d0 1174666：占卜骰籤詩 case 94
+Beware a hidden plan.	提防暗中的計畫。	提防暗中的计划。		FUN_1408300d0 1174666：占卜骰籤詩 case 95
+Be practical.	務實一點。	务实一点。		FUN_1408300d0 1174666：占卜骰籤詩 case 96
+Think of others today, not yourself.	今天多為他人著想，別只想著自己。	今天多为他人着想，别只想着自己。		FUN_1408300d0 1174666：占卜骰籤詩 case 97
+See to the simple comforts.	打點好日常的小小舒適。	打点好日常的小小舒适。		FUN_1408300d0 1174666：占卜骰籤詩 case 98
+Think on what came before and what follows.	想想過去，也想想未來。	想想过去，也想想未来。		FUN_1408300d0 1174666：占卜骰籤詩 case 99
+It will not be fair.	這不會是公平的。	这不会是公平的。		FUN_1408300d0 1174666：占卜骰籤詩 case 100
+Believe no one today.	今天誰都別相信。	今天谁都别相信。		FUN_1408300d0 1174666：占卜骰籤詩 case 101
+See to your legacy.	顧及你的身後之名。	顾及你的身后之名。		FUN_1408300d0 1174666：占卜骰籤詩 case 102
+Instability.	動盪不安。	动荡不安。		FUN_1408300d0 1174666：占卜骰籤詩 case 103
+The effort will reach a culmination.	努力終將迎來高峰。	努力终将迎来高峰。		FUN_1408300d0 1174666：占卜骰籤詩 case 104
+Any success will be fleeting.	任何成功都只是曇花一現。	任何成功都只是昙花一现。		FUN_1408300d0 1174666：占卜骰籤詩 case 105
+Make the sacrifice regardless of fear.	即使害怕，也要做出犧牲。	即使害怕，也要做出牺牲。		FUN_1408300d0 1174666：占卜骰籤詩 case 106
+Do not stall.	不要拖延。	不要拖延。		FUN_1408300d0 1174666：占卜骰籤詩 case 107
+Make no needless sacrifices.	不要做無謂的犧牲。	不要做无谓的牺牲。		FUN_1408300d0 1174666：占卜骰籤詩 case 108
+Be sure to keep to a high standard today.	今天務必保持高標準。	今天务必保持高标准。		FUN_1408300d0 1174666：占卜骰籤詩 case 109
+Be patient.	要有耐心。	要有耐心。		FUN_1408300d0 1174666：占卜骰籤詩 case 110
+Take the middle path.	走中庸之道。	走中庸之道。		FUN_1408300d0 1174666：占卜骰籤詩 case 111
+You must choose between two extremes.	你必須在兩個極端之間做出選擇。	你必须在两个极端之间做出选择。		FUN_1408300d0 1174666：占卜骰籤詩 case 112
+Beware a lack of balance.	當心失去平衡。	当心失去平衡。		FUN_1408300d0 1174666：占卜骰籤詩 case 113
+Be diligent and undistracted.	勤勉專注，心無旁騖。	勤勉专注，心无旁骛。		FUN_1408300d0 1174666：占卜骰籤詩 case 114
+There will be no reward.	不會有任何回報。	不会有任何回报。		FUN_1408300d0 1174666：占卜骰籤詩 case 115
+Persevere though it may be for nothing.	即使可能徒勞，也要堅持下去。	即使可能徒劳，也要坚持下去。		FUN_1408300d0 1174666：占卜骰籤詩 case 116
+Eat not the fruits of your labor.	勿享用自己勞動的果實。	勿享用自己劳动的果实。		FUN_1408300d0 1174666：占卜骰籤詩 case 117
+It is a false success.	這是虛假的成功。	这是虚假的成功。		FUN_1408300d0 1174666：占卜骰籤詩 case 118
+You will be rewarded.	你將得到回報。	你将得到回报。		FUN_1408300d0 1174666：占卜骰籤詩 case 119
+You cannot see.	你看不見。	你看不见。		FUN_140833df0 1175318 閱讀
+You cannot read.	你不識字。	你不识字。		FUN_140833df0 1175359 閱讀
+You have been granted healing!	你獲得了治癒！	你获得了治愈！		FUN_1408300d0 1173716/1173892/1174077/1174234/1174857：交互作用 IS_TRIGGER_STRING_SECOND（have）＋IS_TRIGGER_STRING（vanilla_procedural interactions/blessing.lua、curse.lua、secret.lua；holy 後少空白是遊戲原樣）
+You have been blessed with a week's good fortune!	你蒙受祝福，接下來一週都會有好運！	你蒙受祝福，接下来一周都会有好运！		FUN_1408300d0 1173716/1173892/1174077/1174234/1174857：交互作用 IS_TRIGGER_STRING_SECOND（have）＋IS_TRIGGER_STRING（vanilla_procedural interactions/blessing.lua、curse.lua、secret.lua；holy 後少空白是遊戲原樣）
+You have been blessed with improved equipment!	你蒙受祝福，裝備變得更好了！	你蒙受祝福，装备变得更好了！		FUN_1408300d0 1173716/1173892/1174077/1174234/1174857：交互作用 IS_TRIGGER_STRING_SECOND（have）＋IS_TRIGGER_STRING（vanilla_procedural interactions/blessing.lua、curse.lua、secret.lua；holy 後少空白是遊戲原樣）
+You have been blessed with a pet!	你蒙受祝福，獲賜一隻寵物！	你蒙受祝福，获赐一只宠物！		FUN_1408300d0 1173716/1173892/1174077/1174234/1174857：交互作用 IS_TRIGGER_STRING_SECOND（have）＋IS_TRIGGER_STRING（vanilla_procedural interactions/blessing.lua、curse.lua、secret.lua；holy 後少空白是遊戲原樣）
+You have been blessed with a holyweapon!	你蒙受祝福，獲賜一把神聖武器！	你蒙受祝福，获赐一把神圣武器！		FUN_1408300d0 1173716/1173892/1174077/1174234/1174857：交互作用 IS_TRIGGER_STRING_SECOND（have）＋IS_TRIGGER_STRING（vanilla_procedural interactions/blessing.lua、curse.lua、secret.lua；holy 後少空白是遊戲原樣）
+You have been blessed with a holyshield!	你蒙受祝福，獲賜一面神聖盾牌！	你蒙受祝福，获赐一面神圣盾牌！		FUN_1408300d0 1173716/1173892/1174077/1174234/1174857：交互作用 IS_TRIGGER_STRING_SECOND（have）＋IS_TRIGGER_STRING（vanilla_procedural interactions/blessing.lua、curse.lua、secret.lua；holy 後少空白是遊戲原樣）
+You have been blessed with holybodywear!	你蒙受祝福，獲賜神聖的上身護具！	你蒙受祝福，获赐神圣的上身护具！		FUN_1408300d0 1173716/1173892/1174077/1174234/1174857：交互作用 IS_TRIGGER_STRING_SECOND（have）＋IS_TRIGGER_STRING（vanilla_procedural interactions/blessing.lua、curse.lua、secret.lua；holy 後少空白是遊戲原樣）
+You have been blessed with holylegwear!	你蒙受祝福，獲賜神聖的腿部護具！	你蒙受祝福，获赐神圣的腿部护具！		FUN_1408300d0 1173716/1173892/1174077/1174234/1174857：交互作用 IS_TRIGGER_STRING_SECOND（have）＋IS_TRIGGER_STRING（vanilla_procedural interactions/blessing.lua、curse.lua、secret.lua；holy 後少空白是遊戲原樣）
+You have been blessed with holyheadwear!	你蒙受祝福，獲賜神聖的頭部護具！	你蒙受祝福，获赐神圣的头部护具！		FUN_1408300d0 1173716/1173892/1174077/1174234/1174857：交互作用 IS_TRIGGER_STRING_SECOND（have）＋IS_TRIGGER_STRING（vanilla_procedural interactions/blessing.lua、curse.lua、secret.lua；holy 後少空白是遊戲原樣）
+You have been blessed with holyhandwear!	你蒙受祝福，獲賜神聖的手部護具！	你蒙受祝福，获赐神圣的手部护具！		FUN_1408300d0 1173716/1173892/1174077/1174234/1174857：交互作用 IS_TRIGGER_STRING_SECOND（have）＋IS_TRIGGER_STRING（vanilla_procedural interactions/blessing.lua、curse.lua、secret.lua；holy 後少空白是遊戲原樣）
+You have been blessed with holyfootwear!	你蒙受祝福，獲賜神聖的足部護具！	你蒙受祝福，获赐神圣的足部护具！		FUN_1408300d0 1173716/1173892/1174077/1174234/1174857：交互作用 IS_TRIGGER_STRING_SECOND（have）＋IS_TRIGGER_STRING（vanilla_procedural interactions/blessing.lua、curse.lua、secret.lua；holy 後少空白是遊戲原樣）
+You have been infected with a contagious ghoulish condition	你感染了會傳染的食屍鬼病。	你感染了会传染的食尸鬼病。		FUN_1408300d0 1173716/1173892/1174077/1174234/1174857：交互作用 IS_TRIGGER_STRING_SECOND（have）＋IS_TRIGGER_STRING（vanilla_procedural interactions/blessing.lua、curse.lua、secret.lua；holy 後少空白是遊戲原樣）
+dark fortress	黑暗要塞	黑暗要塞		FUN_1408189b0 1160110：據點類型 1 前面加 dark
+dark pits	黑暗坑穴	黑暗坑穴		同上（哥布林坑穴）
+stagnant water	死水	死水		FUN_140837150 1177760：You fill your … with 的液體（stagnant＋液體名）
+salt water	鹹水	咸水		FUN_140837150 1177760：salt＋液體名
+stagnant salt water	鹹的死水	咸的死水		FUN_140837150 1177760：stagnant＋salt＋液體名
+We should have made it there by now.	我們早該到了。	我们早该到了。		FUN_140806230 1150760–1150815：同行者說的話（包在 {1} says, "…" 裡）
+We should be making better progress.	我們應該走得更快才對。	我们应该走得更快才对。		FUN_140806230 1150760–1150815：同行者說的話（包在 {1} says, "…" 裡）
+We are going the wrong way.	我們走錯路了。	我们走错路了。		FUN_140806230 1150760–1150815：同行者說的話（包在 {1} says, "…" 裡）
+We have arrived at our destination.	我們到達目的地了。	我们到达目的地了。		FUN_140806230 1150760–1150815：同行者說的話（包在 {1} says, "…" 裡）
+The oppressor has been overthrown!	暴君已被推翻！	暴君已被推翻！		FUN_140806230 1150760–1150815：同行者說的話（包在 {1} says, "…" 裡）
+We must go back.	我們得回去了。	我们得回去了。		FUN_140806230 1150760–1150815：同行者說的話（包在 {1} says, "…" 裡）
+We haven't performed for some time.	我們好一陣子沒表演了。	我们好一阵子没表演了。		FUN_140806230 1150760–1150815：同行者說的話（包在 {1} says, "…" 裡）

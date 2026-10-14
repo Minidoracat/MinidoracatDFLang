@@ -6,7 +6,7 @@
 
 1. data/strings/*.tsv（整句）、data/rules/*.tsv（句型）與 data/screens/*.tsv（依畫面套用的整句，檔名是畫面）：
    欄位 en, zh-Hant, zh-Hans, align, note（screens 在 align 後多一欄 row：限定第幾列，空白或非負整數）；
-   原文能用 CP437 表示（遊戲只會畫 CP437），同一類不重複（screens 是同一個畫面檔裡不重複）；align 只能是空、c、r；
+   原文能用 CP437 表示（遊戲只會畫 CP437），同一類不重複（screens 是同一個畫面檔裡不重複）；align 只能是空、c、r（句型另可寫 inner：只用在佔位裡）；
    screens 的檔名只用英數、底線、點
 2. 句型佔位：原文至少一個 {1}～{9}、每個只出現一次、不能相鄰；樣板要有英文字、限定佔位（{#n}、{@n}、{%n}）或頭尾固定字，
    否則會套到幾乎所有字串；兩種譯文用的佔位都是原文有的、各最多一次，除了 {@n} 都要用到
@@ -14,7 +14,7 @@
 4. 開頭空白：譯文開頭的空白數與原文相同（那是遊戲的縮排）
 5. 寬度：譯文格數不超過原文（CP437 字一格，其他字兩格），超出會蓋到旁邊的介面；句型只算樣板本身，
    佔位填入後超寬的情況由引擎在執行時退回英文。名稱檔（strings/names_*.tsv）至少可用 6 格：
-   短英文名（ogre、hydra、kiwi）的通行中文名多半是三個字。sentences_*.tsv 不限：人物頁、訪客說明的句子由引擎依框寬重新換行
+   短英文名（ogre、hydra、kiwi）的通行中文名多半是三個字。sentences_*、ann_*、speech_*.tsv 不限：人物頁、訪客說明、公告與說話句由引擎依框寬重新換行
 6. 文字檔 UTF-8、無 BOM、LF（遊戲端逐位元組讀，BOM 與 \\r 會黏進原文或譯文）
 7. 字型：每種語言譯文與吉祥物名牌（語言標籤、作者名）用到的字，主字型或補字字型（temp/fonts/）至少一份有
 8. 吉祥物：art/mascot.png 是 8-bit RGBA PNG（引擎只讀這種）；每包的 mascot_label 是全形字
@@ -110,11 +110,11 @@ def main() -> int:
         seen.add(key)
         if not r["en"] or not encodable(r["en"]):
             bad_src.append(f"{r['file']}: {r['en']!r}")
-        if r["align"] not in ("", "c", "r"):
+        if r["align"] not in ("", "c", "r") and not (kind == "rules" and r["align"] == "inner"):
             bad_align.append(f"{r['file']}: {r['en']!r} align={r['align']!r}")
     check(not dupes, "原文不重複", dupes)
     check(not bad_src, "原文能用 CP437 表示", bad_src)
-    check(not bad_align, "align 只能是空、c、r", bad_align)
+    check(not bad_align, "align 只能是空、c、r（句型另可寫 inner）", bad_align)
     bad_ph = [f"{r['file']}: {r['en']!r} {p}" for r in data["rules"] if (p := placeholder_problem(r, langs))]
     check(not bad_ph, f"句型佔位寫法（{len(data['rules'])} 條）", bad_ph)
 
@@ -124,15 +124,15 @@ def main() -> int:
               if r[lang] and leading_spaces(r[lang]) != leading_spaces(r["en"])]
     check(not indent, "譯文開頭空白與原文相同", indent)
     def room(r: dict) -> int | None:
-        """譯文最多幾格；None 是不限：sentences_* 是人物頁、訪客說明這類段落裡的句子，引擎依框寬重新換行"""
-        if r["file"].split("/")[1].startswith("sentences_"):
+        """譯文最多幾格；None 是不限：sentences_*、ann_*、speech_* 是人物頁、訪客說明、公告與說話句，引擎依框寬重新換行"""
+        if r["file"].split("/")[1].startswith(("sentences_", "ann_", "speech_")):
             return None
         en = cells(template(r["en"]))
         return max(en, 6) if r["file"].startswith("strings/names_") else en
 
     wide = [f"{r['file']}: {r['en']!r} [{lang}] {cells(template(r[lang]))}>{room(r)}"
             for r in rows for lang in langs if r[lang] and room(r) is not None and cells(template(r[lang])) > room(r)]
-    check(not wide, "譯文格數不超過原文（sentences_* 不限）", wide)
+    check(not wide, "譯文格數不超過原文（sentences_*、ann_*、speech_* 不限）", wide)
     marks = [f"{r['file']}: {r['en'][:60]!r} [{lang}]" for r in rows for lang in langs
              if r[lang] and sorted(MARKUP.findall(r[lang])) != sorted(MARKUP.findall(r["en"]))]
     check(not marks, "段落標記（[R]、[B]、[P]、[C:…]）與原文一致", marks)
