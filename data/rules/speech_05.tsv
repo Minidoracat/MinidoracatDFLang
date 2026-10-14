@@ -1,0 +1,38 @@
+en	zh-Hant	zh-Hans	align	note
+This {1} player	這位{1}樂手	这位{1}乐手	inner	FUN_140673bc0 894021 等 case 0x15-0x19 表演者 0xdd：1 樂器名（世界生成的造字）；只用在評論句的主詞佔位裡
+{%1} is fantastic!	{1}太精彩了！	{1}太精彩了！		FUN_140673bc0 case 0x15 表演評論最高評價（亂數 7 選 1，跳表 0x6754a8）：{1} 主詞 This singer／This storyteller／This＋樂器＋player 等
+{%1} is awesome!	{1}太厲害了！	{1}太厉害了！		FUN_140673bc0 case 0x15 表演評論最高評價（亂數 7 選 1，跳表 0x6754a8）：{1} 主詞 This singer／This storyteller／This＋樂器＋player 等
+{%1} is magnificant!	{1}真了不起！	{1}真了不起！		FUN_140673bc0 case 0x15 表演評論最高評價（亂數 7 選 1，跳表 0x6754a8）：{1} 主詞 This singer／This storyteller／This＋樂器＋player 等
+{%1}?  Unbelievable talent!	{1}？天分高得難以置信！	{1}？天赋高得难以置信！		FUN_140673bc0 case 0x15 表演評論最高評價（亂數 7 選 1，跳表 0x6754a8）：{1} 主詞 This singer／This storyteller／This＋樂器＋player 等
+{%1}.  How can I even describe the skill?	{1}……這等技藝，我該怎麼形容才好？	{1}……这等技艺，我该怎么形容才好？		FUN_140673bc0 case 0x15 表演評論最高評價（亂數 7 選 1，跳表 0x6754a8）：{1} 主詞 This singer／This storyteller／This＋樂器＋player 等
+{%1} is legendary.	{1}堪稱傳奇。	{1}堪称传奇。		FUN_140673bc0 case 0x15 表演評論最高評價（亂數 7 選 1，跳表 0x6754a8）：{1} 主詞 This singer／This storyteller／This＋樂器＋player 等
+{%1}!  Amazing ability.	{1}！好驚人的本事。	{1}！本事真惊人。		FUN_140673bc0 case 0x15 表演評論最高評價（亂數 7 選 1，跳表 0x6754a8）：{1} 主詞 This singer／This storyteller／This＋樂器＋player 等
+{%1} is great.	{1}很棒。	{1}很棒。		FUN_140673bc0 case 0x16 表演評論高評價：{1} 主詞 This singer／This storyteller／This＋樂器＋player 等
+{%1} is splendid.	{1}真精彩。	{1}真精彩。		FUN_140673bc0 case 0x16 表演評論高評價：{1} 主詞 This singer／This storyteller／This＋樂器＋player 等
+{%1} is really quite good!	{1}真的相當不錯！	{1}真的相当不错！		FUN_140673bc0 case 0x16 表演評論高評價：{1} 主詞 This singer／This storyteller／This＋樂器＋player 等
+{%1} shows such talent.	{1}好有天分。	{1}真有天赋。		FUN_140673bc0 case 0x16 表演評論高評價：{1} 主詞 This singer／This storyteller／This＋樂器＋player 等
+{%1} is good.	{1}不錯。	{1}不错。		FUN_140673bc0 case 0x17 表演評論中上評價：{1} 主詞 This singer／This storyteller／This＋樂器＋player 等
+{%1} is pretty good.	{1}挺不錯的。	{1}挺不错的。		FUN_140673bc0 case 0x17 表演評論中上評價：{1} 主詞 This singer／This storyteller／This＋樂器＋player 等
+{%1} is alright!	{1}還不賴！	{1}还不赖！		FUN_140673bc0 case 0x17 表演評論中上評價：{1} 主詞 This singer／This storyteller／This＋樂器＋player 等
+{%1} has promise.	{1}很有潛力。	{1}很有潜力。		FUN_140673bc0 case 0x17 表演評論中上評價：{1} 主詞 This singer／This storyteller／This＋樂器＋player 等
+{%1} is okay.	{1}還可以。	{1}还可以。		FUN_140673bc0 case 0x18 表演評論普通評價（跳表 0x6755cc）：{1} 主詞 This singer／This storyteller／This＋樂器＋player 等
+{%1} is fine.	{1}還過得去。	{1}还过得去。		FUN_140673bc0 case 0x18 表演評論普通評價（跳表 0x6755cc）：{1} 主詞 This singer／This storyteller／This＋樂器＋player 等
+{%1} is alright.	{1}馬馬虎虎。	{1}马马虎虎。		FUN_140673bc0 case 0x18 表演評論普通評價（跳表 0x6755cc）：{1} 主詞 This singer／This storyteller／This＋樂器＋player 等
+{%1} could be better.	{1}還有進步空間。	{1}还有进步空间。		FUN_140673bc0 case 0x18 表演評論普通評價（跳表 0x6755cc）：{1} 主詞 This singer／This storyteller／This＋樂器＋player 等
+{%1} could be worse.	{1}也不算太差。	{1}也不算太差。		FUN_140673bc0 case 0x18 表演評論普通評價（跳表 0x6755cc）：{1} 主詞 This singer／This storyteller／This＋樂器＋player 等
+{%1} is middling.	{1}普普通通。	{1}一般般。		FUN_140673bc0 case 0x18 表演評論普通評價（跳表 0x6755cc）：{1} 主詞 This singer／This storyteller／This＋樂器＋player 等
+{%1} is no good.	{1}不怎麼樣。	{1}不怎么样。		FUN_140673bc0 case 0x19 表演評論差評（跳表 0x67563c）：{1} 主詞 This singer／This storyteller／This＋樂器＋player 等
+{%1} stinks!	{1}爛透了！	{1}烂透了！		FUN_140673bc0 case 0x19 表演評論差評（跳表 0x67563c）：{1} 主詞 This singer／This storyteller／This＋樂器＋player 等
+{%1} is lousy.	{1}很差勁。	{1}很差劲。		FUN_140673bc0 case 0x19 表演評論差評（跳表 0x67563c）：{1} 主詞 This singer／This storyteller／This＋樂器＋player 等
+{%1} is a waste of time.	{1}根本是浪費時間。	{1}纯属浪费时间。		FUN_140673bc0 case 0x19 表演評論差評（跳表 0x67563c）：{1} 主詞 This singer／This storyteller／This＋樂器＋player 等
+{%1} couldn't be much worse.	{1}差到不能再差了。	{1}差得不能再差了。		FUN_140673bc0 case 0x19 表演評論差評（跳表 0x67563c）：{1} 主詞 This singer／This storyteller／This＋樂器＋player 等
+{%1} is terrible.	{1}糟透了。	{1}糟透了。		FUN_140673bc0 case 0x19 表演評論差評（跳表 0x67563c）：{1} 主詞 This singer／This storyteller／This＋樂器＋player 等
+{%1} is just bad.	{1}就是爛。	{1}就是烂。		FUN_140673bc0 case 0x19 表演評論差評（跳表 0x67563c）：{1} 主詞 This singer／This storyteller／This＋樂器＋player 等
+{%1} doesn't belong here.	{1}根本不該在這裡。	{1}根本不该出现在这里。		FUN_140673bc0 case 0x19 表演評論差評（跳表 0x67563c）：{1} 主詞 This singer／This storyteller／This＋樂器＋player 等
+{%1} makes me retch.	{1}讓我想吐。	{1}让我想吐。		FUN_140673bc0 case 0x19 表演評論差評（跳表 0x67563c）：{1} 主詞 This singer／This storyteller／This＋樂器＋player 等
+{%1}?  Awful.	{1}？真糟糕。	{1}？真糟糕。		FUN_140673bc0 case 0x19 表演評論差評（跳表 0x67563c）：{1} 主詞 This singer／This storyteller／This＋樂器＋player 等
+That sounds just like the {1}!	聽起來跟{1}一模一樣！	听起来跟{1}一模一样！		FUN_140673bc0 894016 case 0x15 表演評論（樂器演奏 0xdc）：{1} 樂器名（世界生成的造字）
+That sounds almost like the {1}!	聽起來幾乎跟{1}一樣！	听起来几乎跟{1}一样！		FUN_140673bc0 894080 case 0x16 表演評論（樂器演奏 0xdc）：{1} 樂器名（世界生成的造字）
+That sounds like the {1}.	聽起來像{1}。	听起来像{1}。		FUN_140673bc0 894166 case 0x17 表演評論（樂器演奏 0xdc）：{1} 樂器名（世界生成的造字）
+That sounds vaguely like the {1}.	聽起來有點像{1}。	听起来有点像{1}。		FUN_140673bc0 894250 case 0x18 表演評論（樂器演奏 0xdc）：{1} 樂器名（世界生成的造字）
+Is that supposed to be the {1}?	那也算是{1}？	那也算是{1}？		FUN_140673bc0 894330 case 0x19 表演評論（樂器演奏 0xdc）：{1} 樂器名（世界生成的造字）

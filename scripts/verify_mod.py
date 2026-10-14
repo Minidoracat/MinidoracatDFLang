@@ -11,7 +11,7 @@
 2. 句型佔位：原文至少一個 {1}～{9}、每個只出現一次、不能相鄰；樣板要有英文字、限定佔位（{#n}、{@n}、{%n}）或頭尾固定字，
    否則會套到幾乎所有字串；兩種譯文用的佔位都是原文有的、各最多一次，除了 {@n} 都要用到
 3. 繁簡同步：同一條兩欄同時有譯文或同時留空（繁簡分開翻，但兩包要涵蓋同一批句子）
-4. 開頭空白：譯文開頭的空白數與原文相同（那是遊戲的縮排）
+4. 開頭空白：譯文開頭的空白數與原文相同（那是遊戲的縮排）；只套在佔位裡的 inner 句型不算（不會單獨畫出）
 5. 寬度：譯文格數不超過原文（CP437 字一格，其他字兩格），超出會蓋到旁邊的介面；句型只算樣板本身，
    佔位填入後超寬的情況由引擎在執行時退回英文。名稱檔（strings/names_*.tsv）至少可用 6 格：
    短英文名（ogre、hydra、kiwi）的通行中文名多半是三個字。sentences_*、ann_*、speech_*、combat_*、desc_*、health_*.tsv 不限：人物頁、訪客說明、公告、說話句、戰報、外觀與健康由引擎依框寬重新換行
@@ -121,8 +121,8 @@ def main() -> int:
     unpaired = [f"{r['file']}: {r['en']!r}" for r in rows if bool(r["zh-Hant"].strip()) != bool(r["zh-Hans"].strip())]
     check(not unpaired, "繁簡兩欄同時有譯文或同時留空", unpaired)
     indent = [f"{r['file']}: {r['en']!r} [{lang}]" for r in rows for lang in langs
-              if r[lang] and leading_spaces(r[lang]) != leading_spaces(r["en"])]
-    check(not indent, "譯文開頭空白與原文相同", indent)
+              if r[lang] and r.get("align") != "inner" and leading_spaces(r[lang]) != leading_spaces(r["en"])]
+    check(not indent, "譯文開頭空白與原文相同（inner 句型除外）", indent)
     def room(r: dict) -> int | None:
         """譯文最多幾格；None 是不限：sentences_*、ann_*、speech_*、combat_*、desc_*、health_* 由引擎依框寬重新換行"""
         if r["file"].split("/")[1].startswith(("sentences_", "ann_", "speech_", "combat_", "desc_", "health_")):

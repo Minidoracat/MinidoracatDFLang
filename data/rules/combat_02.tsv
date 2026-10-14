@@ -91,6 +91,7 @@ most of {%1}	大部分的{1}	大部分的{1}	inner	FUN_1400e56a0 142020 breaking
 {%1} looks even more sick!	{1}看起來更加不舒服了！	{1}看起来更加不舒服了！		FUN_1400e56a0 143211；looks sick! 已在 ann_04
 {%1} is injected into the {%2}!	{1}注入了{2}！	{1}注入了{2}！		FUN_1400e56a0 143243 毒液注入；{1} 物質，{2} 防守方所有格＋組織物質（遊戲常拼成 into the the vulture's …，{2} 也吃得下）
 {%1} crumbles over the {%2}!	{1}撒落在{2}上！	{1}撒落在{2}上！		FUN_1400e56a0 143284 粉末狀物質沾上部位
+Vomit splatters over the {%1}!	嘔吐物濺在{1}上！	呕吐物溅在{1}上！		FUN_1400e56a0 143290 液體噴濺：句首大寫的 Vomit 是嘔吐物（單獨的「Vomit」在設定的公告清單是動作「嘔吐」）
 {%1} splatters over the {%2}!	{1}濺在{2}上！	{1}溅在{2}上！		FUN_1400e56a0 143290 液體噴濺
 {%1} flows over the {%2}!	{1}流過{2}！	{1}流过{2}！		FUN_1400e56a0 143294
 {%1} pours over the {%2}!	{1}傾瀉在{2}上！	{1}倾泻在{2}上！		FUN_1400e56a0 143298

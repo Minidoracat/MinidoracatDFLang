@@ -1,0 +1,247 @@
+en	zh-Hant	zh-Hans	align	note
+processable (to vial) {%1}	可加工（裝瓶）的{1}	可加工（装瓶）的{1}		FUN_140a2adb0 1478567；工作物品條件的性質標籤（flags1 processable_to_vial）
+processable (to barrel) {%1}	可加工（裝桶）的{1}	可加工（装桶）的{1}		FUN_140a2adb0 1478570；工作物品條件的性質標籤（flags1 processable_to_barrel；術語 barrel）
+unused {%1}	未使用{1}	未使用{1}		FUN_140a2adb0 1478513；工作物品條件的性質標籤（整份未動用（布 10000、條 15000 等滿額））
+improvable {%1}	可裝飾的{1}	可装饰的{1}		FUN_140a2adb0 1478517；工作物品條件的性質標籤（flags1 improvable）
+butcherable {%1}	可屠宰的{1}	可屠宰的{1}		FUN_140a2adb0 1478520；工作物品條件的性質標籤（flags1 butcherable）
+millable {%1}	可研磨的{1}	可研磨的{1}		FUN_140a2adb0 1478523；工作物品條件的性質標籤（flags1 millable；同工作 Mill 研磨）
+possibly buriable {%1}	或可埋葬的{1}	或可埋葬的{1}		FUN_140a2adb0 1478526；工作物品條件的性質標籤（flags1 allow_buryable）
+unrotten {%1}	未腐爛的{1}	未腐烂的{1}		FUN_140a2adb0 1478529；工作物品條件的性質標籤（flags1 unrotten；raws [UNROTTEN]）
+undisturbed {%1}	未被動過的{1}	未被动过的{1}		FUN_140a2adb0 1478532；工作物品條件的性質標籤（flags1 undisturbed）
+collected {%1}	已收集的{1}	已收集的{1}		FUN_140a2adb0 1478536；工作物品條件的性質標籤（flags1 collected）
+sharpenable {%1}	可磨利的{1}	可磨利的{1}		FUN_140a2adb0 1478540；工作物品條件的性質標籤（flags1 sharpenable）
+murdered {@1}	被謀殺的{1}	被谋杀的{1}		FUN_140a2adb0 1478543；工作物品條件的性質標籤（flags1 murdered（屍體））；{@1} 只收字典裡的物品名，免得吃掉傳說句「murdered the dwarf …」與墓碑「Murdered by …」
+empty {%1}	空的{1}	空的{1}		FUN_140a2adb0 1478546；工作物品條件的性質標籤（flags1 empty；raws [EMPTY]（empty bag 空袋子））
+processable {%1}	可加工的{1}	可加工的{1}		FUN_140a2adb0 1478549；工作物品條件的性質標籤（flags1 processable；同工作 Process 加工）
+cookable {%1}	可烹煮的{1}	可烹饪的{1}		FUN_140a2adb0 1478552；工作物品條件的性質標籤（flags1 cookable）
+solid {%1}	固態{1}	固态{1}		FUN_140a2adb0 1478555；工作物品條件的性質標籤（flags1 solid）
+extract-bearing plant {%1}	含萃取物的{1}	含提取物的{1}		FUN_140a2adb0 1478558；工作物品條件的性質標籤（flags1 extract_bearing_plant；後面的物品名已說明是植物（plant），不重複）
+extract-bearing fish {%1}	含萃取物的{1}	含提取物的{1}		FUN_140a2adb0 1478561；工作物品條件的性質標籤（flags1 extract_bearing_fish；後面的物品名已說明是魚，不重複）
+extract-bearing small creature {%1}	含萃取物的{1}	含提取物的{1}		FUN_140a2adb0 1478564；工作物品條件的性質標籤（flags1 extract_bearing_vermin；術語 creature；後面的物品名（small live animal 活的小動物）已說明是小動物，不重複）；術語例外：creature
+tameable small creature {%1}	可馴服的{1}	可驯服的{1}		FUN_140a2adb0 1478573；工作物品條件的性質標籤（flags1 tameable_vermin；術語 tame、creature；後面的物品名（small live animal 活的小動物）已說明是小動物，不重複）；術語例外：creature
+nearby {%1}	附近的{1}	附近的{1}		FUN_140a2adb0 1478576；工作物品條件的性質標籤（flags1 nearby）
+sand-bearing {%1}	含沙的{1}	含沙的{1}		FUN_140a2adb0 1478579；工作物品條件的性質標籤（flags1 sand_bearing）
+glass {@1}	玻璃{1}	玻璃{1}		FUN_140a2adb0 1478582；工作物品條件的性質標籤（flags1 glass）；{@1} 只收字典裡的物品名，免得吃掉 clay loam 這類複合材料名
+lye-bearing {%1}	含鹼液的{1}	含碱液的{1}		FUN_140a2adb0 1478585；工作物品條件的性質標籤（flags1 lye_bearing）
+milk {@1}	奶{1}	奶{1}		FUN_140a2adb0 1478588；工作物品條件的性質標籤（flags1 milk）；{@1} 只收字典裡的物品名，免得吃掉 clay loam 這類複合材料名
+milkable {%1}	可擠奶的{1}	可挤奶的{1}		FUN_140a2adb0 1478591；工作物品條件的性質標籤（flags1 milkable）
+finished good {%1}	成品類{1}	成品类{1}		FUN_140a2adb0 1478594；工作物品條件的性質標籤（flags1 finished_goods）
+ammo {%1}	彈藥{1}	弹药{1}		FUN_140a2adb0 1478597；工作物品條件的性質標籤（flags1 any_ammo）
+furniture {@1}	家具{1}	家具{1}		FUN_140a2adb0 1478600；工作物品條件的性質標籤（flags1 furniture）；{@1} 只收字典裡的物品名，免得吃掉 clay loam 這類複合材料名
+dye {@1}	染料{1}	染料{1}		FUN_140a2adb0 1478613；工作物品條件的性質標籤（flags2 dye（沒有指定顏色）：dye powder 染料粉末）；{@1} 只收字典裡的物品名，免得吃掉 clay loam 這類複合材料名
+dyeable {%1}	可染色的{1}	可染色的{1}		FUN_140a2adb0 1478616；工作物品條件的性質標籤（flags2 dyeable）
+totemable {%1}	可做圖騰的{1}	可做图腾的{1}		FUN_140a2adb0 1478619；工作物品條件的性質標籤（flags2 totemable）
+glass-making {%1}	可製玻璃的{1}	可制玻璃的{1}		FUN_140a2adb0 1478622；工作物品條件的性質標籤（flags2 glass_making）
+dyed {%1}	已染{1}	已染{1}		FUN_140a2adb0 1478625；工作物品條件的性質標籤（flags2 dyed）
+melt-designated {%1}	已指定熔化的{1}	已指定熔化的{1}		FUN_140a2adb0 1478629；工作物品條件的性質標籤（flags2 melt_designated）
+deep material {%1}	深層材料{1}	深层材料{1}		FUN_140a2adb0 1478633；工作物品條件的性質標籤（flags2 deep_material）
+sewn-imageless {%1}	未縫圖案的{1}	未缝图案的{1}		FUN_140a2adb0 1478636；工作物品條件的性質標籤（flags2 sewn_imageless）
+screw {%1}	螺旋{1}	螺旋{1}		FUN_140a2adb0 1478639；工作物品條件的性質標籤（flags2 screw（可做螺旋泵的螺旋））
+fire-safe {%1}	耐火{1}	耐火{1}		FUN_140a2adb0 1478643；工作物品條件的性質標籤（flags2 fire_safe）
+magma-safe {%1}	耐熔岩{1}	耐熔岩{1}		FUN_140a2adb0 1478646；工作物品條件的性質標籤（flags2 magma_safe；術語 magma-safe）
+building material {%1}	建材{1}	建材{1}		FUN_140a2adb0 1478649；工作物品條件的性質標籤（flags2 building_material）
+non-economic {%1}	非經濟{1}	非经济{1}		FUN_140a2adb0 1478652；工作物品條件的性質標籤（flags2 non_economic（非經濟石材））
+plant {@1}	植物{1}	植物{1}		FUN_140a2adb0 1478655；工作物品條件的性質標籤（flags2 plant；raws [ANY_PLANT_MATERIAL]）；{@1} 只收字典裡的物品名，免得吃掉 clay loam 這類複合材料名
+silk {@1}	絲{1}	丝{1}		FUN_140a2adb0 1478658；工作物品條件的性質標籤（flags2 silk；術語 silk）；{@1} 只收字典裡的物品名，免得吃掉 clay loam 這類複合材料名
+yarn {@1}	毛線{1}	毛线{1}		FUN_140a2adb0 1478661；工作物品條件的性質標籤（flags2 yarn）；{@1} 只收字典裡的物品名，免得吃掉 clay loam 這類複合材料名
+leather {@1}	皮革{1}	皮革{1}		FUN_140a2adb0 1478664；工作物品條件的性質標籤（flags2 leather）；{@1} 只收字典裡的物品名，免得吃掉 clay loam 這類複合材料名
+bone {@1}	骨製{1}	骨制{1}		FUN_140a2adb0 1478667；工作物品條件的性質標籤（flags2 bone；raws [ANY_BONE_MATERIAL]）；{@1} 只收字典裡的物品名，免得吃掉 clay loam 這類複合材料名
+hair/wool {%1}	毛髮／羊毛{1}	毛发／羊毛{1}		FUN_140a2adb0 1478670；工作物品條件的性質標籤（flags2 hair_wool；術語 wool）
+shell {@1}	殼製{1}	壳制{1}		FUN_140a2adb0 1478673；工作物品條件的性質標籤（flags2 shell）；{@1} 只收字典裡的物品名，免得吃掉 clay loam 這類複合材料名
+horn {@1}	角製{1}	角制{1}		FUN_140a2adb0 1478676；工作物品條件的性質標籤（flags2 horn）；{@1} 只收字典裡的物品名，免得吃掉 clay loam 這類複合材料名
+pearl {@1}	珍珠{1}	珍珠{1}		FUN_140a2adb0 1478679；工作物品條件的性質標籤（flags2 pearl）；{@1} 只收字典裡的物品名，免得吃掉 clay loam 這類複合材料名
+plaster-containing {%1}	含石膏的{1}	含石膏的{1}		FUN_140a2adb0 1478683；工作物品條件的性質標籤（flags2 plaster_containing）
+soap {@1}	肥皂{1}	肥皂{1}		FUN_140a2adb0 1478687；工作物品條件的性質標籤（flags2 soap）；{@1} 只收字典裡的物品名，免得吃掉 clay loam 這類複合材料名
+ivory/tooth {%1}	象牙／牙質{1}	象牙／牙质{1}		FUN_140a2adb0 1478690；工作物品條件的性質標籤（flags2 ivory_tooth）
+lye/milk-free {%1}	不含鹼液／奶的{1}	不含碱液／奶的{1}		FUN_140a2adb0 1478694；工作物品條件的性質標籤（flags2 lye_milk_free）
+blunt {%1}	鈍擊{1}	钝击{1}		FUN_140a2adb0 1478697；工作物品條件的性質標籤（flags2 blunt；raws [NO_EDGE_ALLOWED]）
+unengraved {%1}	未雕刻的{1}	未雕刻的{1}		FUN_140a2adb0 1478700；工作物品條件的性質標籤（flags2 unengraved；術語 engrave）
+unimproved {%1}	未裝飾的{1}	未装饰的{1}		FUN_140a2adb0 1478703；工作物品條件的性質標籤（flags3 unimproved；raws [NOT_IMPROVED]）
+written-on {%1}	已書寫的{1}	已书写的{1}		FUN_140a2adb0 1478706；工作物品條件的性質標籤（flags3 written_on）
+non-absorbent {%1}	不吸水的{1}	不吸水的{1}		FUN_140a2adb0 1478709；工作物品條件的性質標籤（flags3 non_absorbent；raws [DOES_NOT_ABSORB]）
+food storage {%1}	可存放食物的{1}	可存放食物的{1}		FUN_140a2adb0 1478712；工作物品條件的性質標籤（flags3 food_storage；raws [FOOD_STORAGE_CONTAINER]；結尾有空白，和工具用途 food storage 不同條）
+non-pressed {%1}	未壓榨的{1}	未压榨的{1}		FUN_140a2adb0 1478715；工作物品條件的性質標籤（flags3 non_pressed；raws [NOT_PRESSED]）
+woven {%1}	編織的{1}	编织的{1}		FUN_140a2adb0 1478719；工作物品條件的性質標籤（flags3 woven）
+hard {%1}	堅硬{1}	坚硬{1}		FUN_140a2adb0 1478722；工作物品條件的性質標籤（flags3 hard）
+metal {@1}	金屬{1}	金属{1}		FUN_140a2adb0 1478725；工作物品條件的性質標籤（flags3 metal）；{@1} 只收字典裡的物品名，免得吃掉 clay loam 這類複合材料名
+sand {@1}	沙子{1}	沙子{1}		FUN_140a2adb0 1478728；工作物品條件的性質標籤（flags3 sand）；{@1} 只收字典裡的物品名，免得吃掉 clay loam 這類複合材料名
+edged {%1}	有刃的{1}	有刃的{1}		FUN_140a2adb0 1478732；工作物品條件的性質標籤（flags3 edged；raws [HAS_EDGE]（edged tool 有刃的工具））
+on-ground {%1}	地上的{1}	地上的{1}		FUN_140a2adb0 1478735；工作物品條件的性質標籤（flags3 on_ground）
+divine {%1}	神聖的{1}	神圣的{1}		FUN_140a2adb0 1478738；工作物品條件的性質標籤（flags3 divine）
+artifact {%1}	神器{1}	神器{1}		FUN_140a2adb0 1478741；工作物品條件的性質標籤（flags3 artifact）
+non-artifact {%1}	非神器{1}	非神器{1}		FUN_140a2adb0 1478744；工作物品條件的性質標籤（flags3 non_artifact）
+wooden {@1}	木製{1}	木制{1}		FUN_140a2adb0 1478747；工作物品條件的性質標籤（flags3 wooden）；{@1} 只收字典裡的物品名，免得吃掉 clay loam 這類複合材料名
+stone {@1}	石製{1}	石制{1}		FUN_140a2adb0 1478750；工作物品條件的性質標籤（flags3 stone）；{@1} 只收字典裡的物品名，免得吃掉 clay loam 這類複合材料名
+gem {@1}	寶石{1}	宝石{1}		FUN_140a2adb0 1478753；工作物品條件的性質標籤（flags3 gem（DAT_1416cc018））；{@1} 只收字典裡的物品名，免得吃掉 clay loam 這類複合材料名
+grown {%1}	種植的{1}	种植的{1}		FUN_140a2adb0 1478756；工作物品條件的性質標籤（flags3 grown；FUN_140a82c10 也會在物品名前加 grown）
+calcite/limestone/chalk/marble {%1}	方解石／石灰岩／白堊／大理石{1}	方解石／石灰岩／白垩／大理石{1}		FUN_140a2adb0 1478853；工作物品條件的性質標籤（REACTION_CLASS:CALCIUM_CARBONATE）
+glazable {%1}	可上釉的{1}	可上釉的{1}		FUN_140a2adb0 1478860；工作物品條件的性質標籤（REACTION_CLASS:CAN_GLAZE）
+fat {@1}	脂肪{1}	脂肪{1}		FUN_140a2adb0 1478870；工作物品條件的性質標籤（REACTION_CLASS:FAT（DAT_1416cbfc0））；{@1} 只收字典裡的物品名，免得吃掉 clay loam 這類複合材料名
+flux {%1}	助熔{1}	助熔{1}		FUN_140a2adb0 1478878；工作物品條件的性質標籤（REACTION_CLASS:FLUX）
+gypsum {@1}	石膏{1}	石膏{1}		FUN_140a2adb0 1478888；工作物品條件的性質標籤（REACTION_CLASS:GYPSUM）；{@1} 只收字典裡的物品名，免得吃掉 clay loam 這類複合材料名
+paper-making {%1}	造紙用{1}	造纸用{1}		FUN_140a2adb0 1478896；工作物品條件的性質標籤（REACTION_CLASS:PAPER_PLANT）
+paper-slurry {%1}	紙漿{1}	纸浆{1}		FUN_140a2adb0 1478906；工作物品條件的性質標籤（REACTION_CLASS:PAPER_SLURRY）
+tallow {@1}	獸脂{1}	兽脂{1}		FUN_140a2adb0 1478914；工作物品條件的性質標籤（REACTION_CLASS:TALLOW；術語 tallow）；{@1} 只收字典裡的物品名，免得吃掉 clay loam 這類複合材料名
+wax {@1}	蠟{1}	蜡{1}		FUN_140a2adb0 1478923；工作物品條件的性質標籤（REACTION_CLASS:WAX（DAT_1416cbf48））；{@1} 只收字典裡的物品名，免得吃掉 clay loam 這類複合材料名
+bag-processable {%1}	可加工（裝袋）的{1}	可加工（装袋）的{1}		FUN_140a2adb0 1478952；工作物品條件的性質標籤（HAS_MATERIAL_REACTION_PRODUCT:BAG_ITEM）；術語例外：bag
+fermentable {%1}	可釀酒的{1}	可酿酒的{1}		FUN_140a2adb0 1478959；工作物品條件的性質標籤（HAS_MATERIAL_REACTION_PRODUCT:DRINK_MAT）
+clay {@1}	黏土{1}	黏土{1}		FUN_140a2adb0 1478969；工作物品條件的性質標籤（HAS_MATERIAL_REACTION_PRODUCT:FIRED_MAT）；{@1} 只收字典裡的物品名，免得吃掉 clay loam 這類複合材料名
+glaze {%1}	釉料{1}	釉料{1}		FUN_140a2adb0 1478977；工作物品條件的性質標籤（HAS_MATERIAL_REACTION_PRODUCT:GLAZE_MAT）
+honey-bearing {%1}	含蜂蜜的{1}	含蜂蜜的{1}		FUN_140a2adb0 1478988；工作物品條件的性質標籤（HAS_MATERIAL_REACTION_PRODUCT:HONEYCOMB_PRESS_MAT）
+parchment-producing {%1}	可製羊皮紙的{1}	可制羊皮纸的{1}		FUN_140a2adb0 1478996；工作物品條件的性質標籤（HAS_MATERIAL_REACTION_PRODUCT:PARCHMENT_MAT；術語 parchment）
+oil-bearing {%1}	含油的{1}	含油的{1}		FUN_140a2adb0 1479007；工作物品條件的性質標籤（HAS_MATERIAL_REACTION_PRODUCT:PRESS_LIQUID_MAT）
+paper-slurryable {%1}	可製紙漿的{1}	可制纸浆的{1}		FUN_140a2adb0 1479016；工作物品條件的性質標籤（HAS_MATERIAL_REACTION_PRODUCT:PRESS_PAPER_MAT）
+renderable {%1}	可熬煉的{1}	可熬炼的{1}		FUN_140a2adb0 1479026；工作物品條件的性質標籤（HAS_MATERIAL_REACTION_PRODUCT:RENDER_MAT）
+fatty {@1}	多脂的{1}	多脂的{1}		FUN_140a2adb0 1479034；工作物品條件的性質標籤（HAS_MATERIAL_REACTION_PRODUCT:SOAP_MAT）；{@1} 只收字典裡的物品名，免得吃掉 clay loam 這類複合材料名
+tannable {%1}	可鞣製的{1}	可鞣制的{1}		FUN_140a2adb0 1479044；工作物品條件的性質標籤（HAS_MATERIAL_REACTION_PRODUCT:TAN_MAT）
+liquid cooking {%1}	烹煮液體用的{1}	烹煮液体用的{1}		FUN_140a2adb0 1479139；工具用途＋物品名（用途標籤蓋掉前面的性質，後接物品名）
+liquid scoop {%1}	舀液體用的{1}	舀液体用的{1}		FUN_140a2adb0 1479143；工具用途＋物品名（用途標籤蓋掉前面的性質，後接物品名）
+powder grinding receptacle {%1}	研磨粉末時盛裝用的{1}	研磨粉末时盛装用的{1}		FUN_140a2adb0 1479147；工具用途＋物品名（用途標籤蓋掉前面的性質，後接物品名）
+powder grinding {%1}	研磨粉末用的{1}	研磨粉末用的{1}		FUN_140a2adb0 1479150；工具用途＋物品名（用途標籤蓋掉前面的性質，後接物品名）
+meat carving {%1}	切肉用的{1}	切肉用的{1}		FUN_140a2adb0 1479154；工具用途＋物品名（用途標籤蓋掉前面的性質，後接物品名）
+meat boning {%1}	剔骨用的{1}	剔骨用的{1}		FUN_140a2adb0 1479158；工具用途＋物品名（用途標籤蓋掉前面的性質，後接物品名）
+meat slicing {%1}	切肉片用的{1}	切肉片用的{1}		FUN_140a2adb0 1479162；工具用途＋物品名（用途標籤蓋掉前面的性質，後接物品名）
+meat cleaving {%1}	剁肉用的{1}	剁肉用的{1}		FUN_140a2adb0 1479166；工具用途＋物品名（用途標籤蓋掉前面的性質，後接物品名）
+meat-carving holder {%1}	切肉時固定用的{1}	切肉时固定用的{1}		FUN_140a2adb0 1479170；工具用途＋物品名（用途標籤蓋掉前面的性質，後接物品名）
+meal container {%1}	盛餐用的{1}	盛餐用的{1}		FUN_140a2adb0 1479174；工具用途＋物品名（用途標籤蓋掉前面的性質，後接物品名）
+liquid container {%1}	裝液體用的{1}	装液体用的{1}		FUN_140a2adb0 1479178；工具用途＋物品名（用途標籤蓋掉前面的性質，後接物品名）
+hive {%1}	養蜂{1}	养蜂{1}		FUN_140a2adb0 1479186；工具用途＋物品名（用途標籤蓋掉前面的性質，後接物品名）
+nest box {%1}	作巢箱的{1}	作巢箱的{1}		FUN_140a2adb0 1479190；工具用途＋物品名（用途標籤蓋掉前面的性質，後接物品名）
+small object container {%1}	裝小物件的{1}	装小物件的{1}		FUN_140a2adb0 1479194；工具用途＋物品名（用途標籤蓋掉前面的性質，後接物品名）；術語例外：object
+track cart {%1}	作軌道車的{1}	作轨道车的{1}		FUN_140a2adb0 1479198；工具用途＋物品名（用途標籤蓋掉前面的性質，後接物品名）
+heavy object hauler {%1}	搬運重物用的{1}	搬运重物用的{1}		FUN_140a2adb0 1479202；工具用途＋物品名（用途標籤蓋掉前面的性質，後接物品名）；術語例外：object
+stand-and-work {%1}	站立工作用的{1}	站立工作用的{1}		FUN_140a2adb0 1479206；工具用途＋物品名（用途標籤蓋掉前面的性質，後接物品名）
+sheet roller {%1}	捲紙用的{1}	卷纸用的{1}		FUN_140a2adb0 1479210；工具用途＋物品名（用途標籤蓋掉前面的性質，後接物品名）
+folded sheet protector {%1}	保護摺頁用的{1}	保护折页用的{1}		FUN_140a2adb0 1479214；工具用途＋物品名（用途標籤蓋掉前面的性質，後接物品名）
+writing container {%1}	承載著作的{1}	承载著作的{1}		FUN_140a2adb0 1479218；工具用途＋物品名（用途標籤蓋掉前面的性質，後接物品名）
+bookcase {%1}	作書架的{1}	作书架的{1}		FUN_140a2adb0 1479222；工具用途＋物品名（用途標籤蓋掉前面的性質，後接物品名）
+display object {%1}	展示物品用的{1}	展示物品用的{1}		FUN_140a2adb0 1479226；工具用途＋物品名（用途標籤蓋掉前面的性質，後接物品名）；術語例外：object
+offering placement {%1}	擺放供品用的{1}	摆放供品用的{1}		FUN_140a2adb0 1479230；工具用途＋物品名（用途標籤蓋掉前面的性質，後接物品名）
+divination {%1}	占卜用的{1}	占卜用的{1}		FUN_140a2adb0 1479234；工具用途＋物品名（用途標籤蓋掉前面的性質，後接物品名）
+games of chance {%1}	機率遊戲用的{1}	概率游戏用的{1}		FUN_140a2adb0 1479237；工具用途＋物品名（用途標籤蓋掉前面的性質，後接物品名）
+Murdered {@1}	被謀殺的{1}	被谋杀的{1}		FUN_140a2adb0 1478543；同 murdered，首字大寫（FUN_14052d650，工作細節清單）；{@1} 只收字典裡的物品名，墓碑的「Murdered by …」才不會被吃掉
+Processable (to vial) {%1}	可加工（裝瓶）的{1}	可加工（装瓶）的{1}		FUN_140a2adb0 1478567；同 processable (to vial)，首字大寫（FUN_14052d650，工作細節清單）
+Processable (to barrel) {%1}	可加工（裝桶）的{1}	可加工（装桶）的{1}		FUN_140a2adb0 1478570；同 processable (to barrel)，首字大寫（FUN_14052d650，工作細節清單）
+Unused {%1}	未使用{1}	未使用{1}		FUN_140a2adb0 1478513；同 unused，首字大寫（FUN_14052d650，工作細節清單）
+Improvable {%1}	可裝飾的{1}	可装饰的{1}		FUN_140a2adb0 1478517；同 improvable，首字大寫（FUN_14052d650，工作細節清單）
+Butcherable {%1}	可屠宰的{1}	可屠宰的{1}		FUN_140a2adb0 1478520；同 butcherable，首字大寫（FUN_14052d650，工作細節清單）
+Millable {%1}	可研磨的{1}	可研磨的{1}		FUN_140a2adb0 1478523；同 millable，首字大寫（FUN_14052d650，工作細節清單）
+Possibly buriable {%1}	或可埋葬的{1}	或可埋葬的{1}		FUN_140a2adb0 1478526；同 possibly buriable，首字大寫（FUN_14052d650，工作細節清單）
+Unrotten {%1}	未腐爛的{1}	未腐烂的{1}		FUN_140a2adb0 1478529；同 unrotten，首字大寫（FUN_14052d650，工作細節清單）
+Undisturbed {%1}	未被動過的{1}	未被动过的{1}		FUN_140a2adb0 1478532；同 undisturbed，首字大寫（FUN_14052d650，工作細節清單）
+Collected {%1}	已收集的{1}	已收集的{1}		FUN_140a2adb0 1478536；同 collected，首字大寫（FUN_14052d650，工作細節清單）
+Sharpenable {%1}	可磨利的{1}	可磨利的{1}		FUN_140a2adb0 1478540；同 sharpenable，首字大寫（FUN_14052d650，工作細節清單）
+Empty {%1}	空的{1}	空的{1}		FUN_140a2adb0 1478546；同 empty，首字大寫（FUN_14052d650，工作細節清單）
+Processable {%1}	可加工的{1}	可加工的{1}		FUN_140a2adb0 1478549；同 processable，首字大寫（FUN_14052d650，工作細節清單）
+Cookable {%1}	可烹煮的{1}	可烹饪的{1}		FUN_140a2adb0 1478552；同 cookable，首字大寫（FUN_14052d650，工作細節清單）
+Solid {%1}	固態{1}	固态{1}		FUN_140a2adb0 1478555；同 solid，首字大寫（FUN_14052d650，工作細節清單）
+Extract-bearing plant {%1}	含萃取物的{1}	含提取物的{1}		FUN_140a2adb0 1478558；同 extract-bearing plant，首字大寫（FUN_14052d650，工作細節清單）
+Extract-bearing fish {%1}	含萃取物的{1}	含提取物的{1}		FUN_140a2adb0 1478561；同 extract-bearing fish，首字大寫（FUN_14052d650，工作細節清單）
+Extract-bearing small creature {%1}	含萃取物的{1}	含提取物的{1}		FUN_140a2adb0 1478564；同 extract-bearing small creature，首字大寫（FUN_14052d650，工作細節清單）；術語例外：creature
+Tameable small creature {%1}	可馴服的{1}	可驯服的{1}		FUN_140a2adb0 1478573；同 tameable small creature，首字大寫（FUN_14052d650，工作細節清單）；術語例外：creature
+Nearby {%1}	附近的{1}	附近的{1}		FUN_140a2adb0 1478576；同 nearby，首字大寫（FUN_14052d650，工作細節清單）
+Sand-bearing {%1}	含沙的{1}	含沙的{1}		FUN_140a2adb0 1478579；同 sand-bearing，首字大寫（FUN_14052d650，工作細節清單）
+Glass {@1}	玻璃{1}	玻璃{1}		FUN_140a2adb0 1478582；同 glass，首字大寫（FUN_14052d650，工作細節清單）；{@1} 只收字典裡的物品名，免得吃掉 clay loam 這類複合材料名
+Lye-bearing {%1}	含鹼液的{1}	含碱液的{1}		FUN_140a2adb0 1478585；同 lye-bearing，首字大寫（FUN_14052d650，工作細節清單）
+Milkable {%1}	可擠奶的{1}	可挤奶的{1}		FUN_140a2adb0 1478591；同 milkable，首字大寫（FUN_14052d650，工作細節清單）
+Finished good {%1}	成品類{1}	成品类{1}		FUN_140a2adb0 1478594；同 finished good，首字大寫（FUN_14052d650，工作細節清單）
+Ammo {%1}	彈藥{1}	弹药{1}		FUN_140a2adb0 1478597；同 ammo，首字大寫（FUN_14052d650，工作細節清單）
+Furniture {@1}	家具{1}	家具{1}		FUN_140a2adb0 1478600；同 furniture，首字大寫（FUN_14052d650，工作細節清單）；{@1} 只收字典裡的物品名，免得吃掉 clay loam 這類複合材料名
+Dye {@1}	染料{1}	染料{1}		FUN_140a2adb0 1478613；同 dye，首字大寫（FUN_14052d650，工作細節清單）；{@1} 只收字典裡的物品名，免得吃掉 clay loam 這類複合材料名
+Dyeable {%1}	可染色的{1}	可染色的{1}		FUN_140a2adb0 1478616；同 dyeable，首字大寫（FUN_14052d650，工作細節清單）
+Totemable {%1}	可做圖騰的{1}	可做图腾的{1}		FUN_140a2adb0 1478619；同 totemable，首字大寫（FUN_14052d650，工作細節清單）
+Glass-making {%1}	可製玻璃的{1}	可制玻璃的{1}		FUN_140a2adb0 1478622；同 glass-making，首字大寫（FUN_14052d650，工作細節清單）
+Dyed {%1}	已染{1}	已染{1}		FUN_140a2adb0 1478625；同 dyed，首字大寫（FUN_14052d650，工作細節清單）
+Melt-designated {%1}	已指定熔化的{1}	已指定熔化的{1}		FUN_140a2adb0 1478629；同 melt-designated，首字大寫（FUN_14052d650，工作細節清單）
+Deep material {%1}	深層材料{1}	深层材料{1}		FUN_140a2adb0 1478633；同 deep material，首字大寫（FUN_14052d650，工作細節清單）
+Sewn-imageless {%1}	未縫圖案的{1}	未缝图案的{1}		FUN_140a2adb0 1478636；同 sewn-imageless，首字大寫（FUN_14052d650，工作細節清單）
+Screw {%1}	螺旋{1}	螺旋{1}		FUN_140a2adb0 1478639；同 screw，首字大寫（FUN_14052d650，工作細節清單）
+Fire-safe {%1}	耐火{1}	耐火{1}		FUN_140a2adb0 1478643；同 fire-safe，首字大寫（FUN_14052d650，工作細節清單）
+Magma-safe {%1}	耐熔岩{1}	耐熔岩{1}		FUN_140a2adb0 1478646；同 magma-safe，首字大寫（FUN_14052d650，工作細節清單）
+Building material {%1}	建材{1}	建材{1}		FUN_140a2adb0 1478649；同 building material，首字大寫（FUN_14052d650，工作細節清單）
+Non-economic {%1}	非經濟{1}	非经济{1}		FUN_140a2adb0 1478652；同 non-economic，首字大寫（FUN_14052d650，工作細節清單）
+Plant {@1}	植物{1}	植物{1}		FUN_140a2adb0 1478655；同 plant，首字大寫（FUN_14052d650，工作細節清單）；{@1} 只收字典裡的物品名，免得吃掉 clay loam 這類複合材料名
+Silk {@1}	絲{1}	丝{1}		FUN_140a2adb0 1478658；同 silk，首字大寫（FUN_14052d650，工作細節清單）；{@1} 只收字典裡的物品名，免得吃掉 clay loam 這類複合材料名
+Yarn {@1}	毛線{1}	毛线{1}		FUN_140a2adb0 1478661；同 yarn，首字大寫（FUN_14052d650，工作細節清單）；{@1} 只收字典裡的物品名，免得吃掉 clay loam 這類複合材料名
+Leather {@1}	皮革{1}	皮革{1}		FUN_140a2adb0 1478664；同 leather，首字大寫（FUN_14052d650，工作細節清單）；{@1} 只收字典裡的物品名，免得吃掉 clay loam 這類複合材料名
+Bone {@1}	骨製{1}	骨制{1}		FUN_140a2adb0 1478667；同 bone，首字大寫（FUN_14052d650，工作細節清單）；{@1} 只收字典裡的物品名，免得吃掉 clay loam 這類複合材料名
+Hair/wool {%1}	毛髮／羊毛{1}	毛发／羊毛{1}		FUN_140a2adb0 1478670；同 hair/wool，首字大寫（FUN_14052d650，工作細節清單）
+Shell {@1}	殼製{1}	壳制{1}		FUN_140a2adb0 1478673；同 shell，首字大寫（FUN_14052d650，工作細節清單）；{@1} 只收字典裡的物品名，免得吃掉 clay loam 這類複合材料名
+Horn {@1}	角製{1}	角制{1}		FUN_140a2adb0 1478676；同 horn，首字大寫（FUN_14052d650，工作細節清單）；{@1} 只收字典裡的物品名，免得吃掉 clay loam 這類複合材料名
+Pearl {@1}	珍珠{1}	珍珠{1}		FUN_140a2adb0 1478679；同 pearl，首字大寫（FUN_14052d650，工作細節清單）；{@1} 只收字典裡的物品名，免得吃掉 clay loam 這類複合材料名
+Plaster-containing {%1}	含石膏的{1}	含石膏的{1}		FUN_140a2adb0 1478683；同 plaster-containing，首字大寫（FUN_14052d650，工作細節清單）
+Soap {@1}	肥皂{1}	肥皂{1}		FUN_140a2adb0 1478687；同 soap，首字大寫（FUN_14052d650，工作細節清單）；{@1} 只收字典裡的物品名，免得吃掉 clay loam 這類複合材料名
+Ivory/tooth {%1}	象牙／牙質{1}	象牙／牙质{1}		FUN_140a2adb0 1478690；同 ivory/tooth，首字大寫（FUN_14052d650，工作細節清單）
+Lye/milk-free {%1}	不含鹼液／奶的{1}	不含碱液／奶的{1}		FUN_140a2adb0 1478694；同 lye/milk-free，首字大寫（FUN_14052d650，工作細節清單）
+Blunt {%1}	鈍擊{1}	钝击{1}		FUN_140a2adb0 1478697；同 blunt，首字大寫（FUN_14052d650，工作細節清單）
+Unengraved {%1}	未雕刻的{1}	未雕刻的{1}		FUN_140a2adb0 1478700；同 unengraved，首字大寫（FUN_14052d650，工作細節清單）
+Unimproved {%1}	未裝飾的{1}	未装饰的{1}		FUN_140a2adb0 1478703；同 unimproved，首字大寫（FUN_14052d650，工作細節清單）
+Written-on {%1}	已書寫的{1}	已书写的{1}		FUN_140a2adb0 1478706；同 written-on，首字大寫（FUN_14052d650，工作細節清單）
+Non-absorbent {%1}	不吸水的{1}	不吸水的{1}		FUN_140a2adb0 1478709；同 non-absorbent，首字大寫（FUN_14052d650，工作細節清單）
+Food storage {%1}	可存放食物的{1}	可存放食物的{1}		FUN_140a2adb0 1478712；同 food storage，首字大寫（FUN_14052d650，工作細節清單）
+Non-pressed {%1}	未壓榨的{1}	未压榨的{1}		FUN_140a2adb0 1478715；同 non-pressed，首字大寫（FUN_14052d650，工作細節清單）
+Woven {%1}	編織的{1}	编织的{1}		FUN_140a2adb0 1478719；同 woven，首字大寫（FUN_14052d650，工作細節清單）
+Hard {%1}	堅硬{1}	坚硬{1}		FUN_140a2adb0 1478722；同 hard，首字大寫（FUN_14052d650，工作細節清單）
+Metal {@1}	金屬{1}	金属{1}		FUN_140a2adb0 1478725；同 metal，首字大寫（FUN_14052d650，工作細節清單）；{@1} 只收字典裡的物品名，免得吃掉 clay loam 這類複合材料名
+Sand {@1}	沙子{1}	沙子{1}		FUN_140a2adb0 1478728；同 sand，首字大寫（FUN_14052d650，工作細節清單）；{@1} 只收字典裡的物品名，免得吃掉 clay loam 這類複合材料名
+Edged {%1}	有刃的{1}	有刃的{1}		FUN_140a2adb0 1478732；同 edged，首字大寫（FUN_14052d650，工作細節清單）
+On-ground {%1}	地上的{1}	地上的{1}		FUN_140a2adb0 1478735；同 on-ground，首字大寫（FUN_14052d650，工作細節清單）
+Divine {%1}	神聖的{1}	神圣的{1}		FUN_140a2adb0 1478738；同 divine，首字大寫（FUN_14052d650，工作細節清單）
+Artifact {%1}	神器{1}	神器{1}		FUN_140a2adb0 1478741；同 artifact，首字大寫（FUN_14052d650，工作細節清單）
+Non-artifact {%1}	非神器{1}	非神器{1}		FUN_140a2adb0 1478744；同 non-artifact，首字大寫（FUN_14052d650，工作細節清單）
+Wooden {@1}	木製{1}	木制{1}		FUN_140a2adb0 1478747；同 wooden，首字大寫（FUN_14052d650，工作細節清單）；{@1} 只收字典裡的物品名，免得吃掉 clay loam 這類複合材料名
+Stone {@1}	石製{1}	石制{1}		FUN_140a2adb0 1478750；同 stone，首字大寫（FUN_14052d650，工作細節清單）；{@1} 只收字典裡的物品名，免得吃掉 clay loam 這類複合材料名
+Gem {@1}	寶石{1}	宝石{1}		FUN_140a2adb0 1478753；同 gem，首字大寫（FUN_14052d650，工作細節清單）；{@1} 只收字典裡的物品名，免得吃掉 clay loam 這類複合材料名
+Grown {%1}	種植的{1}	种植的{1}		FUN_140a2adb0 1478756；同 grown，首字大寫（FUN_14052d650，工作細節清單）
+Calcite/limestone/chalk/marble {%1}	方解石／石灰岩／白堊／大理石{1}	方解石／石灰岩／白垩／大理石{1}		FUN_140a2adb0 1478853；同 calcite/limestone/chalk/marble，首字大寫（FUN_14052d650，工作細節清單）
+Glazable {%1}	可上釉的{1}	可上釉的{1}		FUN_140a2adb0 1478860；同 glazable，首字大寫（FUN_14052d650，工作細節清單）
+Fat {@1}	脂肪{1}	脂肪{1}		FUN_140a2adb0 1478870；同 fat，首字大寫（FUN_14052d650，工作細節清單）；{@1} 只收字典裡的物品名，免得吃掉 clay loam 這類複合材料名
+Flux {%1}	助熔{1}	助熔{1}		FUN_140a2adb0 1478878；同 flux，首字大寫（FUN_14052d650，工作細節清單）
+Gypsum {@1}	石膏{1}	石膏{1}		FUN_140a2adb0 1478888；同 gypsum，首字大寫（FUN_14052d650，工作細節清單）；{@1} 只收字典裡的物品名，免得吃掉 clay loam 這類複合材料名
+Paper-making {%1}	造紙用{1}	造纸用{1}		FUN_140a2adb0 1478896；同 paper-making，首字大寫（FUN_14052d650，工作細節清單）
+Paper-slurry {%1}	紙漿{1}	纸浆{1}		FUN_140a2adb0 1478906；同 paper-slurry，首字大寫（FUN_14052d650，工作細節清單）
+Tallow {@1}	獸脂{1}	兽脂{1}		FUN_140a2adb0 1478914；同 tallow，首字大寫（FUN_14052d650，工作細節清單）；{@1} 只收字典裡的物品名，免得吃掉 clay loam 這類複合材料名
+Wax {@1}	蠟{1}	蜡{1}		FUN_140a2adb0 1478923；同 wax，首字大寫（FUN_14052d650，工作細節清單）；{@1} 只收字典裡的物品名，免得吃掉 clay loam 這類複合材料名
+Bag-processable {%1}	可加工（裝袋）的{1}	可加工（装袋）的{1}		FUN_140a2adb0 1478952；同 bag-processable，首字大寫（FUN_14052d650，工作細節清單）；術語例外：bag
+Fermentable {%1}	可釀酒的{1}	可酿酒的{1}		FUN_140a2adb0 1478959；同 fermentable，首字大寫（FUN_14052d650，工作細節清單）
+Clay {@1}	黏土{1}	黏土{1}		FUN_140a2adb0 1478969；同 clay，首字大寫（FUN_14052d650，工作細節清單）；{@1} 只收字典裡的物品名，免得吃掉 clay loam 這類複合材料名
+Glaze {%1}	釉料{1}	釉料{1}		FUN_140a2adb0 1478977；同 glaze，首字大寫（FUN_14052d650，工作細節清單）
+Honey-bearing {%1}	含蜂蜜的{1}	含蜂蜜的{1}		FUN_140a2adb0 1478988；同 honey-bearing，首字大寫（FUN_14052d650，工作細節清單）
+Parchment-producing {%1}	可製羊皮紙的{1}	可制羊皮纸的{1}		FUN_140a2adb0 1478996；同 parchment-producing，首字大寫（FUN_14052d650，工作細節清單）
+Oil-bearing {%1}	含油的{1}	含油的{1}		FUN_140a2adb0 1479007；同 oil-bearing，首字大寫（FUN_14052d650，工作細節清單）
+Paper-slurryable {%1}	可製紙漿的{1}	可制纸浆的{1}		FUN_140a2adb0 1479016；同 paper-slurryable，首字大寫（FUN_14052d650，工作細節清單）
+Renderable {%1}	可熬煉的{1}	可熬炼的{1}		FUN_140a2adb0 1479026；同 renderable，首字大寫（FUN_14052d650，工作細節清單）
+Fatty {@1}	多脂的{1}	多脂的{1}		FUN_140a2adb0 1479034；同 fatty，首字大寫（FUN_14052d650，工作細節清單）；{@1} 只收字典裡的物品名，免得吃掉 clay loam 這類複合材料名
+Tannable {%1}	可鞣製的{1}	可鞣制的{1}		FUN_140a2adb0 1479044；同 tannable，首字大寫（FUN_14052d650，工作細節清單）
+Liquid cooking {%1}	烹煮液體用的{1}	烹煮液体用的{1}		FUN_140a2adb0 1479139；同上，首字大寫（FUN_14052d650）
+Liquid scoop {%1}	舀液體用的{1}	舀液体用的{1}		FUN_140a2adb0 1479143；同上，首字大寫（FUN_14052d650）
+Powder grinding receptacle {%1}	研磨粉末時盛裝用的{1}	研磨粉末时盛装用的{1}		FUN_140a2adb0 1479147；同上，首字大寫（FUN_14052d650）
+Powder grinding {%1}	研磨粉末用的{1}	研磨粉末用的{1}		FUN_140a2adb0 1479150；同上，首字大寫（FUN_14052d650）
+Meat carving {%1}	切肉用的{1}	切肉用的{1}		FUN_140a2adb0 1479154；同上，首字大寫（FUN_14052d650）
+Meat boning {%1}	剔骨用的{1}	剔骨用的{1}		FUN_140a2adb0 1479158；同上，首字大寫（FUN_14052d650）
+Meat slicing {%1}	切肉片用的{1}	切肉片用的{1}		FUN_140a2adb0 1479162；同上，首字大寫（FUN_14052d650）
+Meat cleaving {%1}	剁肉用的{1}	剁肉用的{1}		FUN_140a2adb0 1479166；同上，首字大寫（FUN_14052d650）
+Meat-carving holder {%1}	切肉時固定用的{1}	切肉时固定用的{1}		FUN_140a2adb0 1479170；同上，首字大寫（FUN_14052d650）
+Meal container {%1}	盛餐用的{1}	盛餐用的{1}		FUN_140a2adb0 1479174；同上，首字大寫（FUN_14052d650）
+Liquid container {%1}	裝液體用的{1}	装液体用的{1}		FUN_140a2adb0 1479178；同上，首字大寫（FUN_14052d650）
+Hive {%1}	養蜂{1}	养蜂{1}		FUN_140a2adb0 1479186；同上，首字大寫（FUN_14052d650）
+Nest box {%1}	作巢箱的{1}	作巢箱的{1}		FUN_140a2adb0 1479190；同上，首字大寫（FUN_14052d650）
+Small object container {%1}	裝小物件的{1}	装小物件的{1}		FUN_140a2adb0 1479194；同上，首字大寫（FUN_14052d650）；術語例外：object
+Track cart {%1}	作軌道車的{1}	作轨道车的{1}		FUN_140a2adb0 1479198；同上，首字大寫（FUN_14052d650）
+Heavy object hauler {%1}	搬運重物用的{1}	搬运重物用的{1}		FUN_140a2adb0 1479202；同上，首字大寫（FUN_14052d650）；術語例外：object
+Stand-and-work {%1}	站立工作用的{1}	站立工作用的{1}		FUN_140a2adb0 1479206；同上，首字大寫（FUN_14052d650）
+Sheet roller {%1}	捲紙用的{1}	卷纸用的{1}		FUN_140a2adb0 1479210；同上，首字大寫（FUN_14052d650）
+Folded sheet protector {%1}	保護摺頁用的{1}	保护折页用的{1}		FUN_140a2adb0 1479214；同上，首字大寫（FUN_14052d650）
+Writing container {%1}	承載著作的{1}	承载著作的{1}		FUN_140a2adb0 1479218；同上，首字大寫（FUN_14052d650）
+Bookcase {%1}	作書架的{1}	作书架的{1}		FUN_140a2adb0 1479222；同上，首字大寫（FUN_14052d650）
+Display object {%1}	展示物品用的{1}	展示物品用的{1}		FUN_140a2adb0 1479226；同上，首字大寫（FUN_14052d650）；術語例外：object
+Offering placement {%1}	擺放供品用的{1}	摆放供品用的{1}		FUN_140a2adb0 1479230；同上，首字大寫（FUN_14052d650）
+Divination {%1}	占卜用的{1}	占卜用的{1}		FUN_140a2adb0 1479234；同上，首字大寫（FUN_14052d650）
+Games of chance {%1}	機率遊戲用的{1}	概率游戏用的{1}		FUN_140a2adb0 1479237；同上，首字大寫（FUN_14052d650）
+color {@1} {%2}	{1+色}{2}	{1+色}{2}		FUN_140a2adb0 1479127；指定顏色（非染料）：color 顏色名 物品
+Color {@1} {%2}	{1+色}{2}	{1+色}{2}		FUN_140a2adb0 1479127；同上，首字大寫
+{@1} dye {%2}	{1}染料{2}	{1}染料{2}		FUN_140a2adb0 1478610；指定顏色的染料（red dye powder）；{1} 顏色名
+{@1}-bearing {%2}	含{1}的{2}	含{1}的{2}		FUN_140a2adb0 1478815；礦石：金屬名-bearing（iron-bearing boulders 含鐵的石塊）；寫在 sand-bearing 等專門句型後面
+{@1}-containing {%2}	裝有{1}的{2}	装有{1}的{2}		FUN_140a2adb0 1479121；反應原料 CONTAINS（lye-containing 裝有鹼液的）；{1} 原料代號 lye、milk、honey、oil、quicklime
+{%1} that isn't a bin	{1}（非貨箱）	{1}（非货箱）		FUN_140a2adb0 1479294；flags1 not_bin，接在整串最後；術語 bin
+No access to {%1}	無法取得{1}	无法取得{1}		FUN_140aafd10 1559949；工作細節的問題清單：No access to＋工作物品條件（FUN_140a2adb0）

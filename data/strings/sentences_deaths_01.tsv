@@ -1,0 +1,84 @@
+en	zh-Hant	zh-Hans	align	note
+was shot and killed	被射殺	被射杀		FUN_140b70870 傳說事件死因片語（死者為主詞） case 3 L1686875
+was struck down	被擊倒身亡	被击倒身亡		FUN_140b70870 傳說事件死因片語（死者為主詞） case 7 L1686973
+was slaughtered	被宰殺	被宰杀		FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x31 L1687232
+was murdered	被謀殺	被谋杀		FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x14 L1687076
+was beheaded	被斬首	被斩首		FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x1f L1687121
+was crucified	被釘上十字架	被钉上十字架		FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x20 L1687125
+was buried alive	被活埋	被活埋		FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x21 L1687129
+was drowned	被處以溺刑	被处以溺刑		FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x22 L1687133（處以溺刑，同 ann_09）
+was burned alive	被活活燒死	被活活烧死		FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x23 L1687137
+was fed to beasts	被拿去餵野獸	被拿去喂野兽		FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x24 L1687141
+was hacked to pieces	被砍成碎塊	被砍成碎块		FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x25 L1687145
+was left out in the air	被留在戶外處決	被留在户外处决		FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x26 L1687148
+was scared to death	被嚇死	被吓死		FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x2d L1687182
+was drained of blood	被吸乾了血	被吸干了血		FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x30 L1687227
+was executed	被處決	被处决		FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x36 L1687331
+died of old age	壽終正寢	寿终正寝		FUN_140b70870 傳說事件死因片語（死者為主詞） case 0 L1686862
+starved to death	餓死	饿死		FUN_140b70870 傳說事件死因片語（死者為主詞） case 1／0x17／0x18 L1686865；墓碑 Starved to death 也由此
+died of thirst	渴死	渴死		FUN_140b70870 傳說事件死因片語（死者為主詞） case 2 L1686871；墓碑也由此
+drowned	溺死	溺死		FUN_140b70870 傳說事件死因片語（死者為主詞） case 5、0x35 L1686940；墓碑 Drowned 也由此
+was scuttled	被拆毀	被拆毁		FUN_140b70870 傳說事件死因片語（死者為主詞） case 8 L1686990
+died after colliding with an obstacle	撞上障礙物而死	撞上障碍物而死		FUN_140b70870 傳說事件死因片語（死者為主詞） case 9 L1686994；墓碑也由此
+burned up in magma	在熔岩中燒成灰	在熔岩中烧成灰		FUN_140b70870 傳說事件死因片語（死者為主詞） case 10 L1687001；墓碑也由此
+burned up in a magma mist	在熔岩霧中燒成灰	在熔岩雾中烧成灰		FUN_140b70870 傳說事件死因片語（死者為主詞） case 0xb L1687005；墓碑也由此
+burned up in dragon fire	在龍焰中燒成灰	在龙焰中烧成灰		FUN_140b70870 傳說事件死因片語（死者為主詞） case 0xc L1687013；墓碑也由此
+burned to death	被燒死	被烧死		FUN_140b70870 傳說事件死因片語（死者為主詞） case 0xd L1687036；墓碑也由此
+was scalded to death	被燙死	被烫死		FUN_140b70870 傳說事件死因片語（死者為主詞） case 0xe L1687052
+was crushed under a collapsing ceiling	被崩塌的頂板壓死	被崩塌的顶板压死		FUN_140b70870 傳說事件死因片語（死者為主詞） case 0xf L1687056
+was crushed by a drawbridge	被升降橋壓死	被升降桥压死		FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x10 L1687060
+was killed by falling rocks	被落石砸死	被落石砸死		FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x11 L1687064
+fell into a deep chasm	墜入深深的裂谷	坠入深深的裂谷		FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x12 L1687068；墓碑也由此
+died in a cage	死在籠子裡	死在笼子里		FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x13 L1687072；墓碑也由此
+was killed by a trap	被陷阱殺死	被陷阱杀死		FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x15 L1687080
+vanished	消失	消失		FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x16 L1687090；墓碑 Vanished 也由此
+died in the heat	熱死	热死		FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x19 L1687097；墓碑也由此
+froze to death	凍死	冻死		FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x1a L1687101；墓碑也由此
+was impaled on spikes	被尖刺刺穿	被尖刺刺穿		FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x1b L1687105
+was encased in cooling lava	被冷卻的熔岩封在裡面	被冷却的熔岩封在里面		FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x1c L1687109
+was encased in cooling magma	被冷卻的熔岩封在裡面	被冷却的熔岩封在里面		FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x1d L1687113
+was encased in ice	被封在冰裡	被封在冰里		FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x1e L1687117
+boiled	沸騰蒸發	沸腾蒸发		FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x27 L1687152；墓碑也由此
+melted	融化	融化		FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x28 L1687156；墓碑也由此
+condensed	凝結	凝结		FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x29 L1687160；墓碑也由此
+solidified	凝固	凝固		FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x2a L1687164；墓碑也由此
+succumbed to infection	死於感染	死于感染		FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x2b L1687168；墓碑也由此
+was put to rest	得到安息	得到安息		FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x2c L1687179
+died in the dark	死在黑暗之中	死在黑暗之中		FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x2e L1687186；墓碑也由此
+was killed by a vehicle	被礦車撞死	被矿车撞死		FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x32 L1687270
+was killed by a flying object	被飛來的物體砸死	被飞来的物体砸死		FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x33 L1687274；術語例外：object
+leapt from a great height	從高處跳下身亡	从高处跳下身亡		FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x34 L1687278；墓碑也由此；術語例外：Great
+midspring	仲春	仲春		FUN_140b92640 L1706119 傳說事件日期 In the mid＋季節 of 年（mid 與季節直接相連）；early／late 已有條目
+midsummer	仲夏	仲夏		FUN_140b92640 L1706119 傳說事件日期 In the mid＋季節 of 年（mid 與季節直接相連）；early／late 已有條目
+midautumn	仲秋	仲秋		FUN_140b92640 L1706119 傳說事件日期 In the mid＋季節 of 年（mid 與季節直接相連）；early／late 已有條目
+midwinter	仲冬	仲冬		FUN_140b92640 L1706119 傳說事件日期 In the mid＋季節 of 年（mid 與季節直接相連）；early／late 已有條目
+In memory of...	紀念……	纪念……		FUN_140cc23e0 L1907312 找不到歷史人物時
+Went missing	失蹤	失踪		FUN_140cc23e0 墓碑項目 L1907358 失蹤
+Died peacefully	安詳辭世	安详辞世		FUN_140cc23e0 墓碑死因項目 case 0 L1907485
+Shot and killed	被射殺	被射杀		FUN_140cc23e0 墓碑死因項目 case 3 L1907495
+Struck down	被擊倒身亡	被击倒身亡		FUN_140cc23e0 墓碑死因項目 case 7 L1907546
+Buried alive	被活埋	被活埋		FUN_140cc23e0 墓碑死因項目 case 0x21 L1907654
+Burned alive	被活活燒死	被活活烧死		FUN_140cc23e0 墓碑死因項目 case 0x23 L1907660
+Fed to beasts	被拿去餵野獸	被拿去喂野兽		FUN_140cc23e0 墓碑死因項目 case 0x24 L1907663
+Hacked to pieces	被砍成碎塊	被砍成碎块		FUN_140cc23e0 墓碑死因項目 case 0x25 L1907666
+Left out in the air	被留在戶外處決	被留在户外处决		FUN_140cc23e0 墓碑死因項目 case 0x26 L1907669
+Scared to death	被嚇死	被吓死		FUN_140cc23e0 墓碑死因項目 case 0x2d L1907703
+Drained of blood	被吸乾了血	被吸干了血		FUN_140cc23e0 墓碑死因項目 case 0x30 L1907751
+Scalded to death	被燙死	被烫死		FUN_140cc23e0 墓碑死因項目 case 0xe L1907603
+Crushed under a collapsing ceiling	被崩塌的頂板壓死	被崩塌的顶板压死		FUN_140cc23e0 墓碑死因項目 case 0xf L1907606
+Crushed by a drawbridge	被升降橋壓死	被升降桥压死		FUN_140cc23e0 墓碑死因項目 case 0x10 L1907609
+Killed by falling rocks	被落石砸死	被落石砸死		FUN_140cc23e0 墓碑死因項目 case 0x11 L1907612
+Killed by a trap	被陷阱殺死	被陷阱杀死		FUN_140cc23e0 墓碑死因項目 case 0x15 L1907624
+Impaled on spikes	被尖刺刺穿	被尖刺刺穿		FUN_140cc23e0 墓碑死因項目 case 0x1b L1907636
+Encased in cooling lava	被冷卻的熔岩封在裡面	被冷却的熔岩封在里面		FUN_140cc23e0 墓碑死因項目 case 0x1c L1907639
+Encased in cooling magma	被冷卻的熔岩封在裡面	被冷却的熔岩封在里面		FUN_140cc23e0 墓碑死因項目 case 0x1d L1907642
+Encased in ice	被封在冰裡	被封在冰里		FUN_140cc23e0 墓碑死因項目 case 0x1e L1907645
+Put to rest	得到安息	得到安息		FUN_140cc23e0 墓碑死因項目 case 0x2c L1907700
+Killed by a vehicle	被礦車撞死	被矿车撞死		FUN_140cc23e0 墓碑死因項目 case 0x32 L1907799
+Killed by a flying object	被飛來的物體砸死	被飞来的物体砸死		FUN_140cc23e0 墓碑死因項目 case 0x33 L1907802；術語例外：object
+Slayer of	屠戮者	屠戮者		FUN_140cc23e0 墓碑項目 L1908210 殺過歷史人物、但同種族沒有別人時只寫 Slayer of
+mother and wife	母親與妻子	母亲与妻子		FUN_140cc23e0 墓碑項目 L1908300–1908325 家人（mother、wife 等單字已有條目）
+father and husband	父親與丈夫	父亲与丈夫		FUN_140cc23e0 墓碑項目 L1908300–1908325 家人（mother、wife 等單字已有條目）
+parent and spouse	父母與配偶	父母与配偶		FUN_140cc23e0 墓碑項目 L1908300–1908325 家人（mother、wife 等單字已有條目）
+bled to death	失血而死	失血而死		FUN_140b70870 傳說事件死因片語（死者為主詞） case 4 L1686908；墓碑 Bled to death 也由此（大寫退回）
+suffocated	窒息而死	窒息而死		FUN_140b70870 傳說事件死因片語（死者為主詞） case 6 L1686944；墓碑 Suffocated 也由此

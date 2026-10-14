@@ -1,0 +1,130 @@
+en	zh-Hant	zh-Hans	align	note
+This must be stopped by any means at our disposal.	一定要不擇手段阻止這件事。	必须不惜一切手段阻止这件事。		FUN_140673bc0 893894 case 0x0：對事件的看法（前面可能接 FUN_14066fe50 的事件句＋兩個空白）
+It's not my problem.	不關我的事。	不关我的事。		FUN_140673bc0 893898 case 0x1：對事件的看法（前面可能接 FUN_14066fe50 的事件句＋兩個空白）
+It was inevitable.	這是遲早的事。	这是迟早的事。		FUN_140673bc0 893902 case 0x2：對事件的看法（前面可能接 FUN_14066fe50 的事件句＋兩個空白）
+This is the life for me.	這才是我要的生活。	这才是我想要的生活。		FUN_140673bc0 893906 case 0x3：對事件的看法（前面可能接 FUN_14066fe50 的事件句＋兩個空白）
+It is terrifying.	好可怕。	太吓人了。		FUN_140673bc0 893910 case 0x4：對事件的看法（前面可能接 FUN_14066fe50 的事件句＋兩個空白）
+I don't know anything about that.	那件事我一點都不知道。	那件事我一无所知。		FUN_140673bc0 893914 case 0x5：對事件的看法（前面可能接 FUN_14066fe50 的事件句＋兩個空白）
+We are in the right in all matters.	我們無論什麼事都有理。	我们无论什么事都占理。		FUN_140673bc0 893918 case 0x6：對事件的看法（前面可能接 FUN_14066fe50 的事件句＋兩個空白）
+It's for the best.	這樣最好。	这样最好。		FUN_140673bc0 893922 case 0x7：對事件的看法（前面可能接 FUN_14066fe50 的事件句＋兩個空白）
+I don't care one way or another.	怎樣都無所謂。	怎么样都无所谓。		FUN_140673bc0 893926 case 0x8：對事件的看法（前面可能接 FUN_14066fe50 的事件句＋兩個空白）
+I hate it.	我討厭這樣。	我讨厌这样。		FUN_140673bc0 893929 case 0x9：對事件的看法（前面可能接 FUN_14066fe50 的事件句＋兩個空白）
+I am afraid of it.	我好怕。	我很害怕。		FUN_140673bc0 893933 case 0xa：對事件的看法（前面可能接 FUN_14066fe50 的事件句＋兩個空白）
+That is sad but not unexpected.	很遺憾，但也不意外。	很遗憾，但也不意外。		FUN_140673bc0 893937 case 0xb：對事件的看法（前面可能接 FUN_14066fe50 的事件句＋兩個空白）
+That is terrible.	太糟了。	太糟糕了。		FUN_140673bc0 893941 case 0xc：對事件的看法（前面可能接 FUN_14066fe50 的事件句＋兩個空白）
+That's terrific!	太好了！	太棒了！		FUN_140673bc0 893945 case 0xd：對事件的看法（前面可能接 FUN_14066fe50 的事件句＋兩個空白）
+I enjoyed performing.	我表演得很開心。	我表演得很开心。		FUN_140673bc0 893949 case 0xe：對事件的看法（前面可能接 FUN_14066fe50 的事件句＋兩個空白）
+It was legendary.	簡直是傳奇。	简直是传奇。		FUN_140673bc0 893953 case 0xf：對事件的看法（前面可能接 FUN_14066fe50 的事件句＋兩個空白）
+It was fantastic.	太精彩了。	太精彩了。		FUN_140673bc0 893957 case 0x10：對事件的看法（前面可能接 FUN_14066fe50 的事件句＋兩個空白）
+It was great.	真棒。	真棒。		FUN_140673bc0 893961 case 0x11：對事件的看法（前面可能接 FUN_14066fe50 的事件句＋兩個空白）
+It was good.	很好。	挺好的。		FUN_140673bc0 893965 case 0x12：對事件的看法（前面可能接 FUN_14066fe50 的事件句＋兩個空白）
+It was okay.	還可以。	还行。		FUN_140673bc0 893969 case 0x13：對事件的看法（前面可能接 FUN_14066fe50 的事件句＋兩個空白）
+I agree completely.	我完全同意。	我完全同意。		FUN_140673bc0 893977 case 0x14：附和別人
+So true, so true.	說得對，說得對。	说得对，说得对。		FUN_140673bc0 893981 case 0x14：附和別人
+No doubt.	毫無疑問。	毫无疑问。		FUN_140673bc0 893985 case 0x14：附和別人
+Truly.	確實。	确实。		FUN_140673bc0 893989 case 0x14：附和別人
+I concur!	我贊成！	我赞同！		FUN_140673bc0 893994 case 0x14：附和別人
+This storyteller	這位說書人	这位说书人		FUN_140673bc0 894010 等 case 0x15-0x19 表演者 0xda：表演評論的主詞（後接 is great. 等）
+This recitation	這段朗誦	这段朗诵		FUN_140673bc0 894013 等 case 0x15-0x19 表演者 0xdb：表演評論的主詞（後接 is great. 等）
+This singer	這位歌手	这位歌手		FUN_140673bc0 894026 等 case 0x15-0x19 表演者 0xde：表演評論的主詞（後接 is great. 等）
+This chanter	這位吟誦者	这位吟诵者		FUN_140673bc0 894029 等 case 0x15-0x19 表演者 0xdf：表演評論的主詞（後接 is great. 等）
+This dancer	這位舞者	这位舞者		FUN_140673bc0 894032 等 case 0x15-0x19 表演者 0xe0：表演評論的主詞（後接 is great. 等）
+This preacher	這位傳道者	这位传道者		FUN_140673bc0 894040 等 case 0x15-0x19 表演者 0x10a：表演評論的主詞（後接 is great. 等）
+This is fantastic!	這太精彩了！	这太精彩了！		FUN_140673bc0 case 0x15 表演評論，表演種類不在清單時主詞只有 This
+This is awesome!	這太厲害了！	这太厉害了！		FUN_140673bc0 case 0x15 表演評論，表演種類不在清單時主詞只有 This
+This is magnificant!	這真了不起！	这真了不起！		FUN_140673bc0 case 0x15 表演評論，表演種類不在清單時主詞只有 This
+This?  Unbelievable talent!	這……天分高得難以置信！	这……天赋高得难以置信！		FUN_140673bc0 case 0x15 表演評論，表演種類不在清單時主詞只有 This
+This.  How can I even describe the skill?	這……這等技藝，我該怎麼形容才好？	这……这等技艺，我该怎么形容才好？		FUN_140673bc0 case 0x15 表演評論，表演種類不在清單時主詞只有 This
+This is legendary.	這堪稱傳奇。	这堪称传奇。		FUN_140673bc0 case 0x15 表演評論，表演種類不在清單時主詞只有 This
+This!  Amazing ability.	哇！好驚人的本事。	哇！本事真惊人。		FUN_140673bc0 case 0x15 表演評論，表演種類不在清單時主詞只有 This
+This is great.	這很棒。	这很棒。		FUN_140673bc0 case 0x16 表演評論，表演種類不在清單時主詞只有 This
+This is splendid.	這真精彩。	这真精彩。		FUN_140673bc0 case 0x16 表演評論，表演種類不在清單時主詞只有 This
+This is really quite good!	這真的相當不錯！	这真的相当不错！		FUN_140673bc0 case 0x16 表演評論，表演種類不在清單時主詞只有 This
+This shows such talent.	看得出好有天分。	看得出真有天赋。		FUN_140673bc0 case 0x16 表演評論，表演種類不在清單時主詞只有 This
+This is good.	這不錯。	这不错。		FUN_140673bc0 case 0x17 表演評論，表演種類不在清單時主詞只有 This
+This is pretty good.	這挺不錯的。	这挺不错的。		FUN_140673bc0 case 0x17 表演評論，表演種類不在清單時主詞只有 This
+This is alright!	這還不賴！	这还不赖！		FUN_140673bc0 case 0x17 表演評論，表演種類不在清單時主詞只有 This
+This has promise.	這很有潛力。	这很有潜力。		FUN_140673bc0 case 0x17 表演評論，表演種類不在清單時主詞只有 This
+This is okay.	這還可以。	这还可以。		FUN_140673bc0 case 0x18 表演評論，表演種類不在清單時主詞只有 This
+This is fine.	這還過得去。	这还过得去。		FUN_140673bc0 case 0x18 表演評論，表演種類不在清單時主詞只有 This
+This is alright.	這馬馬虎虎。	这马马虎虎。		FUN_140673bc0 case 0x18 表演評論，表演種類不在清單時主詞只有 This
+This could be better.	這還有進步空間。	这还有进步空间。		FUN_140673bc0 case 0x18 表演評論，表演種類不在清單時主詞只有 This
+This could be worse.	這也不算太差。	这也不算太差。		FUN_140673bc0 case 0x18 表演評論，表演種類不在清單時主詞只有 This
+This is middling.	這普普通通。	这一般般。		FUN_140673bc0 case 0x18 表演評論，表演種類不在清單時主詞只有 This
+This is no good.	這不怎麼樣。	这不怎么样。		FUN_140673bc0 case 0x19 表演評論，表演種類不在清單時主詞只有 This
+This stinks!	這爛透了！	这烂透了！		FUN_140673bc0 case 0x19 表演評論，表演種類不在清單時主詞只有 This
+This is lousy.	這很差勁。	这很差劲。		FUN_140673bc0 case 0x19 表演評論，表演種類不在清單時主詞只有 This
+This is a waste of time.	這根本是浪費時間。	这纯属浪费时间。		FUN_140673bc0 case 0x19 表演評論，表演種類不在清單時主詞只有 This
+This couldn't be much worse.	這差到不能再差了。	这差得不能再差了。		FUN_140673bc0 case 0x19 表演評論，表演種類不在清單時主詞只有 This
+This is terrible.	這糟透了。	这糟透了。		FUN_140673bc0 case 0x19 表演評論，表演種類不在清單時主詞只有 This
+This is just bad.	這就是爛。	这就是烂。		FUN_140673bc0 case 0x19 表演評論，表演種類不在清單時主詞只有 This
+This doesn't belong here.	這根本不該在這裡。	这根本不该出现在这里。		FUN_140673bc0 case 0x19 表演評論，表演種類不在清單時主詞只有 This
+This makes me retch.	這讓我想吐。	这让我想吐。		FUN_140673bc0 case 0x19 表演評論，表演種類不在清單時主詞只有 This
+This?  Awful.	這是什麼？真糟糕。	这是什么？真糟糕。		FUN_140673bc0 case 0x19 表演評論，表演種類不在清單時主詞只有 This
+This is my favorite dance.	這是我最喜歡的舞。	这是我最喜欢的舞蹈。		FUN_140673bc0 894404 case 0x1a 表演評論：音樂、歌詞與詩（0xe3 歌詞、0xe4 伴奏的歌詞）
+This is my favorite music.	這是我最喜歡的音樂。	这是我最喜欢的音乐。		FUN_140673bc0 894411 case 0x1b 表演評論：音樂、歌詞與詩（0xe3 歌詞、0xe4 伴奏的歌詞）
+The accompaniment is my favorite music.	這段伴奏是我最喜歡的音樂。	这段伴奏是我最喜欢的音乐。		FUN_140673bc0 894413 case 0x1b 表演評論：音樂、歌詞與詩（0xe3 歌詞、0xe4 伴奏的歌詞）
+The lyrics are my favorite poetry.	這歌詞是我最喜歡的詩。	这歌词是我最喜欢的诗。		FUN_140673bc0 894419 case 0x1c 表演評論：音樂、歌詞與詩（0xe3 歌詞、0xe4 伴奏的歌詞）
+The lyrics of the accompaniment are my favorite poetry.	伴奏的歌詞是我最喜歡的詩。	伴奏的歌词是我最喜欢的诗。		FUN_140673bc0 894423 case 0x1c 表演評論：音樂、歌詞與詩（0xe3 歌詞、0xe4 伴奏的歌詞）
+This is my favorite poetry.	這是我最喜歡的詩。	这是我最喜欢的诗。		FUN_140673bc0 894427 case 0x1c 表演評論：音樂、歌詞與詩（0xe3 歌詞、0xe4 伴奏的歌詞）
+I love the reflective lyrics.	我愛這種沉思的歌詞。	我喜欢这种沉思的歌词。		FUN_140673bc0 894433 case 0x1d 表演評論：音樂、歌詞與詩（0xe3 歌詞、0xe4 伴奏的歌詞）
+I love the reflective lyrics of the accompaniment.	我愛伴奏裡沉思的歌詞。	我喜欢伴奏里沉思的歌词。		FUN_140673bc0 894437 case 0x1d 表演評論：音樂、歌詞與詩（0xe3 歌詞、0xe4 伴奏的歌詞）
+I love reflective poetry.	我愛沉思的詩。	我喜欢沉思的诗。		FUN_140673bc0 894441 case 0x1d 表演評論：音樂、歌詞與詩（0xe3 歌詞、0xe4 伴奏的歌詞）
+I hate the self-absorbed lyrics.	我討厭這種自我陶醉的歌詞。	我讨厌这种自我陶醉的歌词。		FUN_140673bc0 894447 case 0x1e 表演評論：音樂、歌詞與詩（0xe3 歌詞、0xe4 伴奏的歌詞）
+I hate the self-absorbed lyrics of the accompaniment.	我討厭伴奏裡自我陶醉的歌詞。	我讨厌伴奏里自我陶醉的歌词。		FUN_140673bc0 894451 case 0x1e 表演評論：音樂、歌詞與詩（0xe3 歌詞、0xe4 伴奏的歌詞）
+I hate self-absorbed poetry.	我討厭自我陶醉的詩。	我讨厌自我陶醉的诗。		FUN_140673bc0 894455 case 0x1e 表演評論：音樂、歌詞與詩（0xe3 歌詞、0xe4 伴奏的歌詞）
+I love the riddle in the lyrics.	我愛歌詞裡的謎語。	我喜欢歌词里的谜语。		FUN_140673bc0 894461 case 0x1f 表演評論：音樂、歌詞與詩（0xe3 歌詞、0xe4 伴奏的歌詞）
+I love the riddle in the lyrics of the accompaniment.	我愛伴奏歌詞裡的謎語。	我喜欢伴奏歌词里的谜语。		FUN_140673bc0 894465 case 0x1f 表演評論：音樂、歌詞與詩（0xe3 歌詞、0xe4 伴奏的歌詞）
+I love riddles.	我愛謎語。	我喜欢谜语。		FUN_140673bc0 894469 case 0x1f 表演評論：音樂、歌詞與詩（0xe3 歌詞、0xe4 伴奏的歌詞）
+Why is there a riddle in the lyrics?	歌詞裡幹嘛放謎語？	歌词里干吗放谜语？		FUN_140673bc0 894475 case 0x20 表演評論：音樂、歌詞與詩（0xe3 歌詞、0xe4 伴奏的歌詞）；整則是問句＋兩個空白＋I hate riddles.，逐句翻
+Why is there a riddle in the lyrics of the accompaniment?	伴奏的歌詞裡幹嘛放謎語？	伴奏的歌词里干吗放谜语？		FUN_140673bc0 894479 case 0x20 表演評論：音樂、歌詞與詩（0xe3 歌詞、0xe4 伴奏的歌詞）；整則是問句＋兩個空白＋I hate riddles.，逐句翻
+I hate riddles.	我討厭謎語。	我讨厌谜语。		FUN_140673bc0 894483 case 0x20 表演評論：音樂、歌詞與詩（0xe3 歌詞、0xe4 伴奏的歌詞）；整則是問句＋兩個空白＋I hate riddles.，逐句翻
+The lyrics are so embarrassing!	這歌詞好尷尬！	这歌词太尴尬了！		FUN_140673bc0 894489 case 0x21 表演評論：音樂、歌詞與詩（0xe3 歌詞、0xe4 伴奏的歌詞）
+The lyrics of the accompaniment are so embarrassing!	伴奏的歌詞好尷尬！	伴奏的歌词太尴尬了！		FUN_140673bc0 894493 case 0x21 表演評論：音樂、歌詞與詩（0xe3 歌詞、0xe4 伴奏的歌詞）
+This poetry is so embarrassing!	這首詩好尷尬！	这首诗太尴尬了！		FUN_140673bc0 894497 case 0x21 表演評論：音樂、歌詞與詩（0xe3 歌詞、0xe4 伴奏的歌詞）
+The lyrics are so funny!	這歌詞好好笑！	这歌词太好笑了！		FUN_140673bc0 894503 case 0x22 表演評論：音樂、歌詞與詩（0xe3 歌詞、0xe4 伴奏的歌詞）
+The lyrics of the accompaniment are so funny!	伴奏的歌詞好好笑！	伴奏的歌词太好笑了！		FUN_140673bc0 894507 case 0x22 表演評論：音樂、歌詞與詩（0xe3 歌詞、0xe4 伴奏的歌詞）
+This poetry is so funny!	這首詩好好笑！	这首诗太好笑了！		FUN_140673bc0 894511 case 0x22 表演評論：音樂、歌詞與詩（0xe3 歌詞、0xe4 伴奏的歌詞）
+I love the raunchy lyrics!	我愛這種下流的歌詞！	我喜欢这种下流的歌词！		FUN_140673bc0 894517 case 0x23 表演評論：音樂、歌詞與詩（0xe3 歌詞、0xe4 伴奏的歌詞）
+I love the raunchy lyrics of the accompaniment!	我愛伴奏裡下流的歌詞！	我喜欢伴奏里下流的歌词！		FUN_140673bc0 894521 case 0x23 表演評論：音樂、歌詞與詩（0xe3 歌詞、0xe4 伴奏的歌詞）
+I love raunchy poetry!	我愛下流的詩！	我喜欢下流的诗！		FUN_140673bc0 894525 case 0x23 表演評論：音樂、歌詞與詩（0xe3 歌詞、0xe4 伴奏的歌詞）
+I love the ribald lyrics.	我愛這種葷素不忌的歌詞。	我喜欢这种荤素不忌的歌词。		FUN_140673bc0 894531 case 0x24 表演評論：音樂、歌詞與詩（0xe3 歌詞、0xe4 伴奏的歌詞）
+I love the ribald lyrics of the accompaniment.	我愛伴奏裡葷素不忌的歌詞。	我喜欢伴奏里荤素不忌的歌词。		FUN_140673bc0 894535 case 0x24 表演評論：音樂、歌詞與詩（0xe3 歌詞、0xe4 伴奏的歌詞）
+I love ribald poetry.	我愛葷素不忌的詩。	我喜欢荤素不忌的诗。		FUN_140673bc0 894539 case 0x24 表演評論：音樂、歌詞與詩（0xe3 歌詞、0xe4 伴奏的歌詞）
+These lyrics are simply unacceptable.	這歌詞實在不像話。	这歌词简直不像话。		FUN_140673bc0 894545 case 0x25 表演評論：音樂、歌詞與詩（0xe3 歌詞、0xe4 伴奏的歌詞）
+Must the lyrics of the accompaniment be so off-putting?	伴奏的歌詞非得這麼倒胃口嗎？	伴奏的歌词非得这么倒胃口吗？		FUN_140673bc0 894549 case 0x25 表演評論：音樂、歌詞與詩（0xe3 歌詞、0xe4 伴奏的歌詞）
+I hate this sleazy sort of poetry.	我討厭這種低俗的詩。	我讨厌这种低俗的诗。		FUN_140673bc0 894553 case 0x25 表演評論：音樂、歌詞與詩（0xe3 歌詞、0xe4 伴奏的歌詞）
+I love the light lyrics.	我愛這種輕快的歌詞。	我喜欢这种轻快的歌词。		FUN_140673bc0 894559 case 0x26 表演評論：音樂、歌詞與詩（0xe3 歌詞、0xe4 伴奏的歌詞）
+I love the light lyrics of the accompaniment.	我愛伴奏裡輕快的歌詞。	我喜欢伴奏里轻快的歌词。		FUN_140673bc0 894563 case 0x26 表演評論：音樂、歌詞與詩（0xe3 歌詞、0xe4 伴奏的歌詞）
+I love light poetry.	我愛輕快的詩。	我喜欢轻快的诗。		FUN_140673bc0 894567 case 0x26 表演評論：音樂、歌詞與詩（0xe3 歌詞、0xe4 伴奏的歌詞）
+These lyrics are too breezy.	這歌詞太輕浮了。	这歌词太轻飘了。		FUN_140673bc0 894573 case 0x27 表演評論：音樂、歌詞與詩（0xe3 歌詞、0xe4 伴奏的歌詞）
+Couldn't the lyrics of the accompaniment be a bit more somber?	伴奏的歌詞就不能沉重一點嗎？	伴奏的歌词就不能沉重一点吗？		FUN_140673bc0 894577 case 0x27 表演評論：音樂、歌詞與詩（0xe3 歌詞、0xe4 伴奏的歌詞）
+I prefer more weighty subject matter myself.	我自己比較喜歡有分量的題材。	我自己更喜欢有分量的题材。		FUN_140673bc0 894581 case 0x27 表演評論：音樂、歌詞與詩（0xe3 歌詞、0xe4 伴奏的歌詞）
+I love the solemn lyrics.	我愛這種莊嚴的歌詞。	我喜欢这种庄严的歌词。		FUN_140673bc0 894587 case 0x28 表演評論：音樂、歌詞與詩（0xe3 歌詞、0xe4 伴奏的歌詞）
+I love the solemn lyrics of the accompaniment.	我愛伴奏裡莊嚴的歌詞。	我喜欢伴奏里庄严的歌词。		FUN_140673bc0 894591 case 0x28 表演評論：音樂、歌詞與詩（0xe3 歌詞、0xe4 伴奏的歌詞）
+I love solemn poetry.	我愛莊嚴的詩。	我喜欢庄严的诗。		FUN_140673bc0 894595 case 0x28 表演評論：音樂、歌詞與詩（0xe3 歌詞、0xe4 伴奏的歌詞）
+These lyrics are too austere.	這歌詞太冷峻了。	这歌词太冷峻了。		FUN_140673bc0 894601 case 0x29 表演評論：音樂、歌詞與詩（0xe3 歌詞、0xe4 伴奏的歌詞）
+The lyrics of the accompaniment are way too serious.	伴奏的歌詞太嚴肅了。	伴奏的歌词太严肃了。		FUN_140673bc0 894605 case 0x29 表演評論：音樂、歌詞與詩（0xe3 歌詞、0xe4 伴奏的歌詞）
+I can't stand poetry this serious.	這麼嚴肅的詩我受不了。	这么严肃的诗我受不了。		FUN_140673bc0 894609 case 0x29 表演評論：音樂、歌詞與詩（0xe3 歌詞、0xe4 伴奏的歌詞）
+This legendary hunt has saved us from a mighty enemy!	這場傳奇的狩獵替我們除掉了強大的敵人！	这场传奇般的狩猎为我们除掉了强大的敌人！		FUN_140673bc0 894614 case 0x2a 狩獵、懲治不法之徒的評論
+This magnificent hunt has saved us from a fearsome enemy!	這場了不起的狩獵替我們除掉了可怕的敵人！	这场了不起的狩猎为我们除掉了可怕的敌人！		FUN_140673bc0 894618 case 0x2b 狩獵、懲治不法之徒的評論
+This great hunt has saved us from a dangerous enemy!	這場精彩的狩獵替我們除掉了危險的敵人！	这场精彩的狩猎为我们除掉了危险的敌人！		FUN_140673bc0 894622 case 0x2c 狩獵、懲治不法之徒的評論
+This worthy hunt has rid us of an enemy.	這場可敬的狩獵替我們除掉了一個敵人。	这场值得称道的狩猎为我们除掉了一个敌人。		FUN_140673bc0 894626 case 0x2d 狩獵、懲治不法之徒的評論
+This hunt has rid us of a nuisance.	這場狩獵替我們除掉了一個麻煩。	这场狩猎为我们除掉了一个麻烦。		FUN_140673bc0 894630 case 0x2e 狩獵、懲治不法之徒的評論
+That was a legendary hunt!	那真是一場傳奇的狩獵！	那真是一场传奇般的狩猎！		FUN_140673bc0 894634 case 0x2f 狩獵、懲治不法之徒的評論
+That was a magnificent hunt!	那真是一場了不起的狩獵！	那真是一场了不起的狩猎！		FUN_140673bc0 894638 case 0x30 狩獵、懲治不法之徒的評論
+That was a great hunt!	那真是一場精彩的狩獵！	那真是一场精彩的狩猎！		FUN_140673bc0 894642 case 0x31 狩獵、懲治不法之徒的評論
+That was a worthy hunt.	那是一場可敬的狩獵。	那是一场值得称道的狩猎。		FUN_140673bc0 894646 case 0x32 狩獵、懲治不法之徒的評論
+That was hunter's work.	獵人就該做這種事。	猎人就该干这个。		FUN_140673bc0 894650 case 0x33 狩獵、懲治不法之徒的評論
+We are saved from a mighty enemy!	我們擺脫了強大的敵人！	我们摆脱了强大的敌人！		FUN_140673bc0 894654 case 0x34 狩獵、懲治不法之徒的評論
+We are saved from a fearsome enemy!	我們擺脫了可怕的敵人！	我们摆脱了可怕的敌人！		FUN_140673bc0 894658 case 0x35 狩獵、懲治不法之徒的評論
+We are saved from a dangerous enemy!	我們擺脫了危險的敵人！	我们摆脱了危险的敌人！		FUN_140673bc0 894662 case 0x36 狩獵、懲治不法之徒的評論
+We are rid of an enemy.	我們除掉了一個敵人。	我们除掉了一个敌人。		FUN_140673bc0 894666 case 0x37 狩獵、懲治不法之徒的評論
+We are rid of a nuisance.	我們除掉了一個麻煩。	我们除掉了一个麻烦。		FUN_140673bc0 894670 case 0x38 狩獵、懲治不法之徒的評論
+They are outlaws.	他們是不法之徒。	他们是不法之徒。		FUN_140673bc0 894674 case 0x39 狩獵、懲治不法之徒的評論
+The defenseless are safer from outlaws.	無力自保的人不再那麼容易遭不法之徒傷害了。	无力自保的人不再那么容易遭不法之徒伤害了。		FUN_140673bc0 894678 case 0x3a 狩獵、懲治不法之徒的評論
+Thank you!	謝謝！	谢谢！		FUN_140673bc0 894850 case 0x2a-0x3a 感謝獵人或懲治不法之徒的人（接在狩獵句後，兩個空白）
+You have my thanks.	我很感激。	我很感激。		FUN_140673bc0 894859 case 0x2a-0x3a 感謝獵人或懲治不法之徒的人（接在狩獵句後，兩個空白）
+I'm conflicted.	我很矛盾。	我很纠结。		FUN_140673bc0 894864 case 0x3b 其他看法
+Preaching is my calling.	傳道是我的天職。	传道是我的天职。		FUN_140673bc0 894868 case 0x3c 其他看法
+It accords with my faith.	這符合我的信仰。	这符合我的信仰。		FUN_140673bc0 894872 case 0x3d 其他看法

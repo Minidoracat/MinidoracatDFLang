@@ -1,0 +1,174 @@
+en	zh-Hant	zh-Hans	align	note
+{1} met with {2} and made a blackmail threat, due to embezzlement.	{1}與{2}會面，並以盜用公款一事進行勒索。	{1}与{2}会面，并以挪用公款一事进行勒索。		FUN_1402a81f0 378136-378304 收買會面開場；司法情報審訊報告（wrap_text）；擋住 {1} met with {2} to {%3}. 把 due to 後面當成會面目的
+{1} met with {2} and, while completely misreading the situation, made a blackmail threat, due to embezzlement.	{1}與{2}會面，在完全誤判情勢下以盜用公款一事進行勒索。	{1}与{2}会面，在完全误判形势下以挪用公款一事进行勒索。		FUN_1402a81f0 378136-378304 收買會面開場；司法情報審訊報告（wrap_text）；擋住 {1} met with {2} to {%3}. 把 due to 後面當成會面目的
+{1} of {2} met with {3}, {4} of {5}, representing {6}, to {%7}.	{2}的{1}與{5}的{4}{3}（代表{6}）會面，{7}。	{2}的{1}与{5}的{4}{3}（代表{6}）会面，{7}。		FUN_1402a71e0 377493-377562 談判會面開場；司法情報審訊報告（wrap_text）
+{1} of {2} met with {3}, {4} of {5}, to {%6}.	{2}的{1}與{5}的{4}{3}會面，{6}。	{2}的{1}与{5}的{4}{3}会面，{6}。		FUN_1402a71e0 377493-377562 談判會面開場；司法情報審訊報告（wrap_text）
+{1} of {2} met with {3} of {4} to {%5}.	{2}的{1}與{4}的{3}會面，{5}。	{2}的{1}与{4}的{3}会面，{5}。		FUN_1402a71e0 377493-377562 談判會面開場；司法情報審訊報告（wrap_text）
+{1} of {2} met with {3} to {%4}.	{2}的{1}與{3}會面，{4}。	{2}的{1}与{3}会面，{4}。		FUN_1402a71e0 377493-377562 談判會面開場；司法情報審訊報告（wrap_text）
+{1} met with {2}, {3} of {4}, representing {5}, to {%6}.	{1}與{4}的{3}{2}（代表{5}）會面，{6}。	{1}与{4}的{3}{2}（代表{5}）会面，{6}。		FUN_1402a71e0 377493-377562 談判會面開場；司法情報審訊報告（wrap_text）
+{1} met with {2}, {3} of {4}, to {%5}.	{1}與{4}的{3}{2}會面，{5}。	{1}与{4}的{3}{2}会面，{5}。		FUN_1402a71e0 377493-377562 談判會面開場；司法情報審訊報告（wrap_text）
+{1} met with {2} of {3} to {%4}.	{1}與{3}的{2}會面，{4}。	{1}与{3}的{2}会面，{4}。		FUN_1402a71e0 377493-377562 談判會面開場；司法情報審訊報告（wrap_text）
+{1} met with {2} to {%3}.	{1}與{2}會面，{3}。	{1}与{2}会面，{3}。		FUN_1402a71e0 377493-377562 談判會面開場；司法情報審訊報告（wrap_text）
+{1} met with {2} and {%3}.	{1}與{2}會面，並{3}。	{1}与{2}会面，并{3}。		FUN_1402a81f0 378136-378304 收買會面開場；司法情報審訊報告（wrap_text）
+{1} met with {2} and, while completely misreading the situation, {%3}.	{1}與{2}會面，在完全誤判情勢下{3}。	{1}与{2}会面，在完全误判形势下{3}。		FUN_1402a81f0 378136-378304 收買會面開場；司法情報審訊報告（wrap_text）
+{1} lured {2} to a meeting with {3}, where the latter {%4}.	{1}誘使{2}前去與{3}會面，後者在會中{4}。	{1}诱使{2}前去与{3}会面，后者在会中{4}。		FUN_1402a81f0 378136-378304 收買會面開場；司法情報審訊報告（wrap_text）
+{1} lured {2} to a meeting with {3}, where the latter, while completely misreading the situation, {%4}.	{1}誘使{2}前去與{3}會面，後者在完全誤判情勢下{4}。	{1}诱使{2}前去与{3}会面，后者在完全误判形势下{4}。		FUN_1402a81f0 378136-378304 收買會面開場；司法情報審訊報告（wrap_text）
+{1} of {2} met with {3}, {4} of {5}, representing {6},.	{2}的{1}與{5}的{4}{3}（代表{6}）會面。	{2}的{1}与{5}的{4}{3}（代表{6}）会面。		FUN_1402a71e0 377493-377562 談判會面開場；司法情報審訊報告（wrap_text）
+{1} of {2} met with {3}, {4} of {5},.	{2}的{1}與{5}的{4}{3}會面。	{2}的{1}与{5}的{4}{3}会面。		FUN_1402a71e0 377493-377562 談判會面開場；司法情報審訊報告（wrap_text）
+{1} of {2} met with {3} of {4}.	{2}的{1}與{4}的{3}會面。	{2}的{1}与{4}的{3}会面。		FUN_1402a71e0 377493-377562 談判會面開場；司法情報審訊報告（wrap_text）
+{1} of {2} met with {3}.	{2}的{1}與{3}會面。	{2}的{1}与{3}会面。		FUN_1402a71e0 377493-377562 談判會面開場；司法情報審訊報告（wrap_text）
+{1} met with {2}, {3} of {4}, representing {5},.	{1}與{4}的{3}{2}（代表{5}）會面。	{1}与{4}的{3}{2}（代表{5}）会面。		FUN_1402a71e0 377493-377562 談判會面開場；司法情報審訊報告（wrap_text）
+{1} met with {2}, {3} of {4},.	{1}與{4}的{3}{2}會面。	{1}与{4}的{3}{2}会面。		FUN_1402a71e0 377493-377562 談判會面開場；司法情報審訊報告（wrap_text）
+{1} met with {2} of {3}.	{1}與{3}的{2}會面。	{1}与{3}的{2}会面。		FUN_1402a71e0 377493-377562 談判會面開場；司法情報審訊報告（wrap_text）
+{1} met with {2}.	{1}與{2}會面。	{1}与{2}会面。		FUN_1402a71e0 377493-377562 談判會面開場；司法情報審訊報告（wrap_text）
+pulled rank as {1} of {2}	以{2}{1}的身分壓人	以{2}{1}的身份压人	inner	FUN_1402a81f0 378202-378303 收買手段（開場句的 {%n}）；原文雙空白照抄
+made a blackmail threat, due to embezzlement using the position {1} of {2}	以利用{2}{1}職位盜用公款一事進行勒索	以利用{2}{1}职位挪用公款一事进行勒索	inner	FUN_1402a81f0 378202-378303 收買手段（開場句的 {%n}）；原文雙空白照抄
+played for sympathy by appealing to a shared worship of {1}	訴諸雙方對{1}的共同信仰來博取同情	诉诸双方对{1}的共同信仰来博取同情	inner	FUN_1402a81f0 378202-378303 收買手段（開場句的 {%n}）；原文雙空白照抄
+offered revenge upon a jealous grudge,  {1}	提議向因嫉妒而結怨的{1}報仇	提议向因嫉妒而结怨的{1}报仇	inner	FUN_1402a81f0 378202-378303 收買手段（開場句的 {%n}）；原文雙空白照抄
+offered revenge upon a business rival, {1}	提議向生意對手{1}報仇	提议向生意对手{1}报仇	inner	FUN_1402a81f0 378202-378303 收買手段（開場句的 {%n}）；原文雙空白照抄
+offered revenge upon the persecutor  {1}	提議向迫害者{1}報仇	提议向迫害者{1}报仇	inner	FUN_1402a81f0 378202-378303 收買手段（開場句的 {%n}）；原文雙空白照抄
+offered revenge upon a grudge,  {1}	提議向結有宿怨的{1}報仇	提议向结有宿怨的{1}报仇	inner	FUN_1402a81f0 378202-378303 收買手段（開場句的 {%n}）；原文雙空白照抄
+offered revenge upon the tormentor  {1}	提議向折磨者{1}報仇	提议向折磨者{1}报仇	inner	FUN_1402a81f0 378202-378303 收買手段（開場句的 {%n}）；原文雙空白照抄
+offered revenge upon the sacrilegious {1}	提議向褻瀆神明的{1}報仇	提议向亵渎神明的{1}报仇	inner	FUN_1402a81f0 378202-378303 收買手段（開場句的 {%n}）；原文雙空白照抄
+offered revenge upon  {1}	提議向{1}報仇	提议向{1}报仇	inner	FUN_1402a81f0 378202-378303 收買手段（開場句的 {%n}）；原文雙空白照抄
+Allies surrounding {1} raised their suspicions and the plan was foiled.	{1}身邊的盟友起了疑心，計畫因此受挫。	{1}身边的盟友起了疑心，计划因此受挫。		FUN_1402a81f0 378317 收買失敗；司法情報審訊報告（wrap_text）
+Effective pressure to comply came from co-conspirators surrounding {1}.	來自{1}身邊同謀者的壓力奏效，迫使其就範。	来自{1}身边同谋者的压力奏效，迫使其就范。		FUN_1402a81f0 378798 收買成功；司法情報審訊報告（wrap_text）
+{1} accepted out of loyalty to {2}, despite {%3}.	{1}出於對{2}的忠誠而接受了，儘管{3}。	{1}出于对{2}的忠诚而接受了，尽管{3}。		FUN_1402a81f0 378826 成功：關係；司法情報審訊報告（wrap_text）；結尾是 {2}，despite 清單要寫在句型裡，否則被句號版吞掉
+{1} accepted out of loyalty to {2}, despite {%3} and {%4}.	{1}出於對{2}的忠誠而接受了，儘管{3}、{4}。	{1}出于对{2}的忠诚而接受了，尽管{3}、{4}。		FUN_1402a81f0 378826 成功：關係；司法情報審訊報告（wrap_text）；結尾是 {2}，despite 清單要寫在句型裡，否則被句號版吞掉
+{1} accepted out of loyalty to {2}, despite {%3} and {%4} and {%5}.	{1}出於對{2}的忠誠而接受了，儘管{3}、{4}、{5}。	{1}出于对{2}的忠诚而接受了，尽管{3}、{4}、{5}。		FUN_1402a81f0 378826 成功：關係；司法情報審訊報告（wrap_text）；結尾是 {2}，despite 清單要寫在句型裡，否則被句號版吞掉
+{1} agreed for love of {2}, despite {%3}.	{1}出於對{2}的愛而同意了，儘管{3}。	{1}出于对{2}的爱而同意了，尽管{3}。		FUN_1402a81f0 378826 成功：關係；司法情報審訊報告（wrap_text）；結尾是 {2}，despite 清單要寫在句型裡，否則被句號版吞掉
+{1} agreed for love of {2}, despite {%3} and {%4}.	{1}出於對{2}的愛而同意了，儘管{3}、{4}。	{1}出于对{2}的爱而同意了，尽管{3}、{4}。		FUN_1402a81f0 378826 成功：關係；司法情報審訊報告（wrap_text）；結尾是 {2}，despite 清單要寫在句型裡，否則被句號版吞掉
+{1} agreed for love of {2}, despite {%3} and {%4} and {%5}.	{1}出於對{2}的愛而同意了，儘管{3}、{4}、{5}。	{1}出于对{2}的爱而同意了，尽管{3}、{4}、{5}。		FUN_1402a81f0 378826 成功：關係；司法情報審訊報告（wrap_text）；結尾是 {2}，despite 清單要寫在句型裡，否則被句號版吞掉
+{1} complied out of fear of {2}, despite {%3}.	{1}因為畏懼{2}而順從了，儘管{3}。	{1}因为畏惧{2}而顺从了，尽管{3}。		FUN_1402a81f0 378826 成功：關係；司法情報審訊報告（wrap_text）；結尾是 {2}，despite 清單要寫在句型裡，否則被句號版吞掉
+{1} complied out of fear of {2}, despite {%3} and {%4}.	{1}因為畏懼{2}而順從了，儘管{3}、{4}。	{1}因为畏惧{2}而顺从了，尽管{3}、{4}。		FUN_1402a81f0 378826 成功：關係；司法情報審訊報告（wrap_text）；結尾是 {2}，despite 清單要寫在句型裡，否則被句號版吞掉
+{1} complied out of fear of {2}, despite {%3} and {%4} and {%5}.	{1}因為畏懼{2}而順從了，儘管{3}、{4}、{5}。	{1}因为畏惧{2}而顺从了，尽管{3}、{4}、{5}。		FUN_1402a81f0 378826 成功：關係；司法情報審訊報告（wrap_text）；結尾是 {2}，despite 清單要寫在句型裡，否則被句號版吞掉
+{1} distrusted {2} and refused.	{1}不信任{2}，因此拒絕了。	{1}不信任{2}，因此拒绝了。		FUN_1402a81f0 378341 失敗：關係；司法情報審訊報告（wrap_text）
+{1} felt no loyalty to {2} and refused.	{1}對{2}毫無忠誠可言，因此拒絕了。	{1}对{2}毫无忠诚可言，因此拒绝了。		FUN_1402a81f0 378341 失敗：關係；司法情報審訊報告（wrap_text）
+{1} hated {2} and refused.	{1}憎恨{2}，因此拒絕了。	{1}憎恨{2}，因此拒绝了。		FUN_1402a81f0 378341 失敗：關係；司法情報審訊報告（wrap_text）
+{1} was unafraid of {2} and refused.	{1}不怕{2}，因此拒絕了。	{1}不怕{2}，因此拒绝了。		FUN_1402a81f0 378341 失敗：關係；司法情報審訊報告（wrap_text）
+{1} had no respect for {2} and refused.	{1}不尊重{2}，因此拒絕了。	{1}不尊重{2}，因此拒绝了。		FUN_1402a81f0 378341 失敗：關係；司法情報審訊報告（wrap_text）
+{1} valued the law and refused.	{1}重視法律，因此拒絕了。	{1}重视法律，因此拒绝了。		FUN_1402a81f0 378491 失敗：法律；司法情報審訊報告（wrap_text）
+{1} loathed abuses of power and refused.	{1}痛恨濫用權力，因此拒絕了。	{1}痛恨滥用权力，因此拒绝了。		FUN_1402a81f0 378491 失敗：法律；司法情報審訊報告（wrap_text）
+{1} was willing to accept eventual death and refused.	{1}願意接受終將一死的命運，因此拒絕了。	{1}愿意接受终将一死的命运，因此拒绝了。		FUN_1402a81f0 378640 失敗：動機；司法情報審訊報告（wrap_text）
+{1} felt no avarice and refused.	{1}毫不貪財，因此拒絕了。	{1}毫不贪财，因此拒绝了。		FUN_1402a81f0 378640 失敗：動機；司法情報審訊報告（wrap_text）
+{1} was unafraid in the moment.	{1}當下並不害怕。	{1}当下并不害怕。		FUN_1402a81f0 378640 失敗：動機（原文無 and refused）；司法情報審訊報告（wrap_text）
+{1} did not fear death and refused.	{1}不怕死，因此拒絕了。	{1}不怕死，因此拒绝了。		FUN_1402a81f0 378640 失敗：動機；司法情報審訊報告（wrap_text）
+{1} was not afraid and refused.	{1}並不害怕，因此拒絕了。	{1}并不害怕，因此拒绝了。		FUN_1402a81f0 378640 失敗：動機；司法情報審訊報告（wrap_text）
+{1} was unaffected by the comments and refused.	{1}不為這番話所動，因此拒絕了。	{1}不为这番话所动，因此拒绝了。		FUN_1402a81f0 378640 失敗：動機；司法情報審訊報告（wrap_text）
+{1} lacked a desire for vengeance and refused.	{1}沒有復仇的慾望，因此拒絕了。	{1}没有复仇的欲望，因此拒绝了。		FUN_1402a81f0 378640 失敗：動機；司法情報審訊報告（wrap_text）
+{1} was unswayed by the emotional appeal and refused.	{1}沒有被這番感性訴求打動，因此拒絕了。	{1}没有被这番感性诉求打动，因此拒绝了。		FUN_1402a81f0 378640 失敗：動機；司法情報審訊報告（wrap_text）
+{1} trusted {2} and agreed.	{1}信任{2}，因此同意了。	{1}信任{2}，因此同意了。		FUN_1402a81f0 378826 成功：關係；司法情報審訊報告（wrap_text）
+{1} accepted out of loyalty to {2}.	{1}出於對{2}的忠誠而接受了。	{1}出于对{2}的忠诚而接受了。		FUN_1402a81f0 378826 成功：關係；司法情報審訊報告（wrap_text）
+{1} agreed for love of {2}.	{1}出於對{2}的愛而同意了。	{1}出于对{2}的爱而同意了。		FUN_1402a81f0 378826 成功：關係；司法情報審訊報告（wrap_text）
+{1} complied out of fear of {2}.	{1}因為畏懼{2}而順從了。	{1}因为畏惧{2}而顺从了。		FUN_1402a81f0 378826 成功：關係；司法情報審訊報告（wrap_text）
+{1} respected {2} and agreed.	{1}敬重{2}，因此同意了。	{1}敬重{2}，因此同意了。		FUN_1402a81f0 378826 成功：關係；司法情報審訊報告（wrap_text）
+{1} spurned the law and agreed willingly.	{1}無視法律，欣然同意了。	{1}无视法律，欣然同意了。		FUN_1402a81f0 378987 成功：法律；司法情報審訊報告（wrap_text）
+{1} accepted in admiration of power.	{1}出於對權力的崇拜而接受了。	{1}出于对权力的崇拜而接受了。		FUN_1402a81f0 378987 成功：法律；司法情報審訊報告（wrap_text）
+{1} was too envious of others to face death and agreed.	{1}太過嫉妒他人，無法坦然面對死亡，因此同意了。	{1}太过嫉妒他人，无法坦然面对死亡，因此同意了。		FUN_1402a81f0 379140 成功：動機；司法情報審訊報告（wrap_text）
+{1} was too unsettled by death to face it and agreed.	{1}對死亡太過不安，無法面對，因此同意了。	{1}对死亡太过不安，无法面对，因此同意了。		FUN_1402a81f0 379140 成功：動機；司法情報審訊報告（wrap_text）
+{1} was overcome by greed.	{1}被貪婪沖昏了頭。	{1}被贪婪冲昏了头。		FUN_1402a81f0 379140 成功：動機；司法情報審訊報告（wrap_text）
+{1} gave in to fear of death.	{1}屈服於對死亡的恐懼。	{1}屈服于对死亡的恐惧。		FUN_1402a81f0 379140 成功：動機；司法情報審訊報告（wrap_text）
+{1} was too afraid not to comply.	{1}太過害怕，不敢不從。	{1}太过害怕，不敢不从。		FUN_1402a81f0 379140 成功：動機；司法情報審訊報告（wrap_text）
+{1} could not accept the uncertainty following death and agreed.	{1}無法接受死後的未知，因此同意了。	{1}无法接受死后的未知，因此同意了。		FUN_1402a81f0 379140 成功：動機；司法情報審訊報告（wrap_text）
+{1} was too vain to accept death and agreed.	{1}太過虛榮，不肯接受死亡，因此同意了。	{1}太过虚荣，不肯接受死亡，因此同意了。		FUN_1402a81f0 379140 成功：動機；司法情報審訊報告（wrap_text）
+{1} succumbed to vanity.	{1}敗給了虛榮心。	{1}败给了虚荣心。		FUN_1402a81f0 379140 成功：動機；司法情報審訊報告（wrap_text）
+{1} was too ambitious to accept death and agreed.	{1}野心太大，不肯接受死亡，因此同意了。	{1}野心太大，不肯接受死亡，因此同意了。		FUN_1402a81f0 379140 成功：動機；司法情報審訊報告（wrap_text）
+{1} desired vengeance and willingly complied.	{1}渴望復仇，心甘情願地照做了。	{1}渴望复仇，心甘情愿地照做了。		FUN_1402a81f0 379140 成功：動機；司法情報審訊報告（wrap_text）
+{1} was too proud to accept death and agreed.	{1}太過驕傲，不肯接受死亡，因此同意了。	{1}太过骄傲，不肯接受死亡，因此同意了。		FUN_1402a81f0 379140 成功：動機；司法情報審訊報告（wrap_text）
+{1} was swayed by the emotional appeal.	{1}被這番感性訴求打動了。	{1}被这番感性诉求打动了。		FUN_1402a81f0 379140 成功：動機；司法情報審訊報告（wrap_text）
+{1} distrusted {2} and refused	{1}不信任{2}，因此拒絕了	{1}不信任{2}，因此拒绝了	inner	FUN_1402a81f0 378341 失敗：關係；despite 外框的 {%1}
+{1} felt no loyalty to {2} and refused	{1}對{2}毫無忠誠可言，因此拒絕了	{1}对{2}毫无忠诚可言，因此拒绝了	inner	FUN_1402a81f0 378341 失敗：關係；despite 外框的 {%1}
+{1} hated {2} and refused	{1}憎恨{2}，因此拒絕了	{1}憎恨{2}，因此拒绝了	inner	FUN_1402a81f0 378341 失敗：關係；despite 外框的 {%1}
+{1} was unafraid of {2} and refused	{1}不怕{2}，因此拒絕了	{1}不怕{2}，因此拒绝了	inner	FUN_1402a81f0 378341 失敗：關係；despite 外框的 {%1}
+{1} had no respect for {2} and refused	{1}不尊重{2}，因此拒絕了	{1}不尊重{2}，因此拒绝了	inner	FUN_1402a81f0 378341 失敗：關係；despite 外框的 {%1}
+{1} valued the law and refused	{1}重視法律，因此拒絕了	{1}重视法律，因此拒绝了	inner	FUN_1402a81f0 378491 失敗：法律；despite 外框的 {%1}
+{1} loathed abuses of power and refused	{1}痛恨濫用權力，因此拒絕了	{1}痛恨滥用权力，因此拒绝了	inner	FUN_1402a81f0 378491 失敗：法律；despite 外框的 {%1}
+{1} was willing to accept eventual death and refused	{1}願意接受終將一死的命運，因此拒絕了	{1}愿意接受终将一死的命运，因此拒绝了	inner	FUN_1402a81f0 378640 失敗：動機；despite 外框的 {%1}
+{1} felt no avarice and refused	{1}毫不貪財，因此拒絕了	{1}毫不贪财，因此拒绝了	inner	FUN_1402a81f0 378640 失敗：動機；despite 外框的 {%1}
+{1} was unafraid in the moment	{1}當下並不害怕	{1}当下并不害怕	inner	FUN_1402a81f0 378640 失敗：動機（原文無 and refused）；despite 外框的 {%1}
+{1} did not fear death and refused	{1}不怕死，因此拒絕了	{1}不怕死，因此拒绝了	inner	FUN_1402a81f0 378640 失敗：動機；despite 外框的 {%1}
+{1} was not afraid and refused	{1}並不害怕，因此拒絕了	{1}并不害怕，因此拒绝了	inner	FUN_1402a81f0 378640 失敗：動機；despite 外框的 {%1}
+{1} was unaffected by the comments and refused	{1}不為這番話所動，因此拒絕了	{1}不为这番话所动，因此拒绝了	inner	FUN_1402a81f0 378640 失敗：動機；despite 外框的 {%1}
+{1} lacked a desire for vengeance and refused	{1}沒有復仇的慾望，因此拒絕了	{1}没有复仇的欲望，因此拒绝了	inner	FUN_1402a81f0 378640 失敗：動機；despite 外框的 {%1}
+{1} was unswayed by the emotional appeal and refused	{1}沒有被這番感性訴求打動，因此拒絕了	{1}没有被这番感性诉求打动，因此拒绝了	inner	FUN_1402a81f0 378640 失敗：動機；despite 外框的 {%1}
+{1} trusted {2} and agreed	{1}信任{2}，因此同意了	{1}信任{2}，因此同意了	inner	FUN_1402a81f0 378826 成功：關係；despite 外框的 {%1}
+{1} accepted out of loyalty to {2}	{1}出於對{2}的忠誠而接受了	{1}出于对{2}的忠诚而接受了	inner	FUN_1402a81f0 378826 成功：關係；despite 外框的 {%1}
+{1} agreed for love of {2}	{1}出於對{2}的愛而同意了	{1}出于对{2}的爱而同意了	inner	FUN_1402a81f0 378826 成功：關係；despite 外框的 {%1}
+{1} complied out of fear of {2}	{1}因為畏懼{2}而順從了	{1}因为畏惧{2}而顺从了	inner	FUN_1402a81f0 378826 成功：關係；despite 外框的 {%1}
+{1} respected {2} and agreed	{1}敬重{2}，因此同意了	{1}敬重{2}，因此同意了	inner	FUN_1402a81f0 378826 成功：關係；despite 外框的 {%1}
+{1} spurned the law and agreed willingly	{1}無視法律，欣然同意了	{1}无视法律，欣然同意了	inner	FUN_1402a81f0 378987 成功：法律；despite 外框的 {%1}
+{1} accepted in admiration of power	{1}出於對權力的崇拜而接受了	{1}出于对权力的崇拜而接受了	inner	FUN_1402a81f0 378987 成功：法律；despite 外框的 {%1}
+{1} was too envious of others to face death and agreed	{1}太過嫉妒他人，無法坦然面對死亡，因此同意了	{1}太过嫉妒他人，无法坦然面对死亡，因此同意了	inner	FUN_1402a81f0 379140 成功：動機；despite 外框的 {%1}
+{1} was too unsettled by death to face it and agreed	{1}對死亡太過不安，無法面對，因此同意了	{1}对死亡太过不安，无法面对，因此同意了	inner	FUN_1402a81f0 379140 成功：動機；despite 外框的 {%1}
+{1} was overcome by greed	{1}被貪婪沖昏了頭	{1}被贪婪冲昏了头	inner	FUN_1402a81f0 379140 成功：動機；despite 外框的 {%1}
+{1} gave in to fear of death	{1}屈服於對死亡的恐懼	{1}屈服于对死亡的恐惧	inner	FUN_1402a81f0 379140 成功：動機；despite 外框的 {%1}
+{1} was too afraid not to comply	{1}太過害怕，不敢不從	{1}太过害怕，不敢不从	inner	FUN_1402a81f0 379140 成功：動機；despite 外框的 {%1}
+{1} could not accept the uncertainty following death and agreed	{1}無法接受死後的未知，因此同意了	{1}无法接受死后的未知，因此同意了	inner	FUN_1402a81f0 379140 成功：動機；despite 外框的 {%1}
+{1} was too vain to accept death and agreed	{1}太過虛榮，不肯接受死亡，因此同意了	{1}太过虚荣，不肯接受死亡，因此同意了	inner	FUN_1402a81f0 379140 成功：動機；despite 外框的 {%1}
+{1} succumbed to vanity	{1}敗給了虛榮心	{1}败给了虚荣心	inner	FUN_1402a81f0 379140 成功：動機；despite 外框的 {%1}
+{1} was too ambitious to accept death and agreed	{1}野心太大，不肯接受死亡，因此同意了	{1}野心太大，不肯接受死亡，因此同意了	inner	FUN_1402a81f0 379140 成功：動機；despite 外框的 {%1}
+{1} desired vengeance and willingly complied	{1}渴望復仇，心甘情願地照做了	{1}渴望复仇，心甘情愿地照做了	inner	FUN_1402a81f0 379140 成功：動機；despite 外框的 {%1}
+{1} was too proud to accept death and agreed	{1}太過驕傲，不肯接受死亡，因此同意了	{1}太过骄傲，不肯接受死亡，因此同意了	inner	FUN_1402a81f0 379140 成功：動機；despite 外框的 {%1}
+{1} was swayed by the emotional appeal	{1}被這番感性訴求打動了	{1}被这番感性诉求打动了	inner	FUN_1402a81f0 379140 成功：動機；despite 外框的 {%1}
+{%1}, despite {%2} and {%3} and {%4}.	儘管{2}、{3}、{4}，{1}。	尽管{2}、{3}、{4}，{1}。		FUN_1402a81f0 收買結果的 despite 清單（第一項前 , despite，其後 and）；司法情報審訊報告（wrap_text）
+{%1}, despite {%2} and {%3}.	儘管{2}、{3}，{1}。	尽管{2}、{3}，{1}。		FUN_1402a81f0 收買結果的 despite 清單（第一項前 , despite，其後 and）；司法情報審訊報告（wrap_text）
+{%1}, despite {%2}.	儘管{2}，{1}。	尽管{2}，{1}。		FUN_1402a81f0 收買結果的 despite 清單（第一項前 , despite，其後 and）；司法情報審訊報告（wrap_text）
+{1}'s trust of {2}	{1}信任{2}	{1}信任{2}	inner	FUN_1402a81f0 despite 清單項目（失敗：拉向答應的因素）
+{1}'s loyalty toward {2}	{1}對{2}忠誠	{1}对{2}忠诚	inner	FUN_1402a81f0 despite 清單項目（失敗：拉向答應的因素）
+{1}'s love of {2}	{1}愛著{2}	{1}爱着{2}	inner	FUN_1402a81f0 despite 清單項目（失敗：拉向答應的因素）
+{1}'s fear of {2}	{1}畏懼{2}	{1}畏惧{2}	inner	FUN_1402a81f0 despite 清單項目（失敗：拉向答應的因素）
+{1}'s respect of {2}	{1}敬重{2}	{1}敬重{2}	inner	FUN_1402a81f0 despite 清單項目（失敗：拉向答應的因素）
+{1}'s distrust of {2}	{1}不信任{2}	{1}不信任{2}	inner	FUN_1402a81f0 despite 清單項目（成功：拉向拒絕的因素）
+{1}'s lack of loyalty toward {2}	{1}對{2}毫無忠誠	{1}对{2}毫无忠诚	inner	FUN_1402a81f0 despite 清單項目（成功：拉向拒絕的因素）
+{1}'s hatred of {2}	{1}憎恨{2}	{1}憎恨{2}	inner	FUN_1402a81f0 despite 清單項目（成功：拉向拒絕的因素）
+{1}'s lack of fear toward {2}	{1}不怕{2}	{1}不怕{2}	inner	FUN_1402a81f0 despite 清單項目（成功：拉向拒絕的因素）
+{1}'s lack of respect of {2}	{1}不尊重{2}	{1}不尊重{2}	inner	FUN_1402a81f0 despite 清單項目（成功：拉向拒絕的因素）
+The negotiation was doomed to failure while the morale of the invaders sieging {1} held firm.	只要圍攻{1}的入侵者士氣不墜，這場談判就注定失敗。	只要围攻{1}的入侵者士气不减，这场谈判就注定失败。		FUN_1402a71e0 377563 圍城中談判；司法情報審訊報告（wrap_text）
+{1} attempted {@2}.	{1}試圖{2}。	{1}试图{2}。		FUN_1402a71e0 377655-377797 提議者的手法；司法情報審訊報告（wrap_text）；提案失敗；{@2} 只收字典裡的手法片語，免得蓋過 speech_03 的「{1} attempted a murder.」
+{1} began {@2}.	{1}開始{2}。	{1}开始{2}。		FUN_1402a71e0 377655-377797 提議者的手法；司法情報審訊報告（wrap_text）；提案成功；{@2} 只收字典裡的手法片語，免得蓋過 speech_03 的「{1} attempted a murder.」
+{1} attempted to .	{1}試圖交涉。	{1}试图交涉。		FUN_1402a71e0 377655-377797 提議者的手法；司法情報審訊報告（wrap_text）；手法 switch 落到 default 時沒有接字
+{1} began to .	{1}開始交涉。	{1}开始交涉。		FUN_1402a71e0 377655-377797 提議者的手法；司法情報審訊報告（wrap_text）；手法 switch 落到 default 時沒有接字
+{1} {%2} in turn but was outmaneuvered.	{1}也{2}，但對方技高一籌。	{1}也{2}，但对方技高一筹。		FUN_1402a71e0 377821-378037 對方的回應；司法情報審訊報告（wrap_text）；雙方都談判、提案成功
+{1} {%2} in turn and had the mastery.	{1}也{2}，並佔了上風。	{1}也{2}，并占了上风。		FUN_1402a71e0 377821-378037 對方的回應；司法情報審訊報告（wrap_text）；雙方都談判、提案失敗
+{1} {%2} but was outmaneuvered.	{1}{2}，但對方技高一籌。	{1}{2}，但对方技高一筹。		FUN_1402a71e0 377821-378037 對方的回應；司法情報審訊報告（wrap_text）
+{1} {%2} and had the mastery.	{1}{2}，並佔了上風。	{1}{2}，并占了上风。		FUN_1402a71e0 377821-378037 對方的回應；司法情報審訊報告（wrap_text）
+{1} attempted to read their opposite's underlying motivations but was swept along.	{1}試圖看穿對方的真正動機，卻被牽著走。	{1}试图看穿对方的真实动机，却被牵着走。		FUN_1402a71e0 377821-378037 對方的回應；司法情報審訊報告（wrap_text）
+{1} attempted to read their opposite's underlying motivations as well but was swept along.	{1}也試圖看穿對方的真正動機，卻被牽著走。	{1}也试图看穿对方的真实动机，却被牵着走。		FUN_1402a71e0 377821-378037 對方的回應；司法情報審訊報告（wrap_text）
+{1} read their opposite's underlying motivations.	{1}看穿了對方的真正動機。	{1}看穿了对方的真实动机。		FUN_1402a71e0 377821-378037 對方的回應；司法情報審訊報告（wrap_text）
+{1} read their opposite's underlying motivations as well.	{1}也看穿了對方的真正動機。	{1}也看穿了对方的真实动机。		FUN_1402a71e0 377821-378037 對方的回應；司法情報審訊報告（wrap_text）
+{1} made a persuasive argument.	{1}提出了有說服力的論點。	{1}提出了有说服力的论点。		FUN_1402a71e0 377821-378037 對方的回應；司法情報審訊報告（wrap_text）
+{1} made a persuasive argument but was ultimately swayed.	{1}提出了有說服力的論點，但最終被說動了。	{1}提出了有说服力的论点，但最终被说动了。		FUN_1402a71e0 377821-378037 對方的回應；司法情報審訊報告（wrap_text）
+{1} made a persuasive argument of their own.	{1}也提出了有說服力的論點。	{1}也提出了有说服力的论点。		FUN_1402a71e0 377821-378037 對方的回應；司法情報審訊報告（wrap_text）
+{1} made a persuasive argument of their own but was ultimately swayed.	{1}也提出了有說服力的論點，但最終被說動了。	{1}也提出了有说服力的论点，但最终被说动了。		FUN_1402a71e0 377821-378037 對方的回應；司法情報審訊報告（wrap_text）
+{1} spun a web of deceit.	{1}編織了一張謊言之網。	{1}编织了一张谎言之网。		FUN_1402a71e0 377821-378037 對方的回應；司法情報審訊報告（wrap_text）
+{1} spun a web of deceit but became tied in their own knots.	{1}編織了一張謊言之網，卻作繭自縛。	{1}编织了一张谎言之网，却作茧自缚。		FUN_1402a71e0 377821-378037 對方的回應；司法情報審訊報告（wrap_text）
+{1} spun a web of deceit of their own.	{1}也編織了一張謊言之網。	{1}也编织了一张谎言之网。		FUN_1402a71e0 377821-378037 對方的回應；司法情報審訊報告（wrap_text）
+{1} spun a web of deceit of their own but became tied in their own knots.	{1}也編織了一張謊言之網，卻作繭自縛。	{1}也编织了一张谎言之网，却作茧自缚。		FUN_1402a71e0 377821-378037 對方的回應；司法情報審訊報告（wrap_text）
+{1} intimidated their opposite.	{1}威嚇了對方。	{1}威吓了对方。		FUN_1402a71e0 377821-378037 對方的回應；司法情報審訊報告（wrap_text）
+{1} intimidated their opposite but grew meeker throughout the proceedings.	{1}威嚇了對方，但在交涉過程中氣勢越來越弱。	{1}威吓了对方，但在交涉过程中气势越来越弱。		FUN_1402a71e0 377821-378037 對方的回應；司法情報審訊報告（wrap_text）
+{1} intimidated their opposite with matching fury.	{1}以同樣的怒火威嚇對方。	{1}以同样的怒火威吓对方。		FUN_1402a71e0 377821-378037 對方的回應；司法情報審訊報告（wrap_text）
+{1} intimidated their opposite with matching fury but grew meeker throughout the proceedings.	{1}以同樣的怒火威嚇對方，但在交涉過程中氣勢越來越弱。	{1}以同样的怒火威吓对方，但在交涉过程中气势越来越弱。		FUN_1402a71e0 377821-378037 對方的回應；司法情報審訊報告（wrap_text）
+{1} joined the conversation and over time came around on the matter.	{1}加入了閒聊，久而久之也就接受了這件事。	{1}加入了闲聊，久而久之也就接受了这件事。		FUN_1402a71e0 377821-378037 對方的回應；司法情報審訊報告（wrap_text）
+{1} joined the conversation and skillfully shut down the proceedings.	{1}加入了閒聊，並巧妙地中止了這場交涉。	{1}加入了闲聊，并巧妙地中止了这场交涉。		FUN_1402a71e0 377821-378037 對方的回應；司法情報審訊報告（wrap_text）
+{1} made light conversation and over time came around on the matter.	{1}輕鬆地閒聊，久而久之也就接受了這件事。	{1}轻松地闲聊，久而久之也就接受了这件事。		FUN_1402a71e0 377821-378037 對方的回應；司法情報審訊報告（wrap_text）
+{1} made light conversation and skillfully shut down the proceedings.	{1}輕鬆地閒聊，並巧妙地中止了這場交涉。	{1}轻松地闲聊，并巧妙地中止了这场交涉。		FUN_1402a71e0 377821-378037 對方的回應；司法情報審訊報告（wrap_text）
+{1} made several jokes but came to see the seriousness of the issue at hand.	{1}開了幾個玩笑，但終究體認到眼前問題的嚴重性。	{1}开了几个玩笑，但终究认识到眼前问题的严重性。		FUN_1402a71e0 377821-378037 對方的回應；司法情報審訊報告（wrap_text）
+{1} made several jokes and dismissed the matter.	{1}開了幾個玩笑，把這件事一笑置之。	{1}开了几个玩笑，把这件事一笑置之。		FUN_1402a71e0 377821-378037 對方的回應；司法情報審訊報告（wrap_text）
+{1} made several jokes of their own but came to see the seriousness of the issue at hand.	{1}也開了幾個玩笑，但終究體認到眼前問題的嚴重性。	{1}也开了几个玩笑，但终究认识到眼前问题的严重性。		FUN_1402a71e0 377821-378037 對方的回應；司法情報審訊報告（wrap_text）
+{1} made several jokes of their own and dismissed the matter.	{1}也開了幾個玩笑，把這件事一笑置之。	{1}也开了几个玩笑，把这件事一笑置之。		FUN_1402a71e0 377821-378037 對方的回應；司法情報審訊報告（wrap_text）
+{1} flattered their opposite in turn and ultimately agreed.	{1}也奉承了對方一番，最終同意了。	{1}也奉承了对方一番，最终同意了。		FUN_1402a71e0 377821-378037 對方的回應；司法情報審訊報告（wrap_text）
+{1} flattered their opposite in turn but left the matter unaddressed.	{1}也奉承了對方一番，卻對此事避而不談。	{1}也奉承了对方一番，却对此事避而不谈。		FUN_1402a71e0 377821-378037 對方的回應；司法情報審訊報告（wrap_text）
+{1} made a great show of flattery and ultimately agreed.	{1}大肆奉承了一番，最終同意了。	{1}大肆奉承了一番，最终同意了。		FUN_1402a71e0 377821-378037 對方的回應；司法情報審訊報告（wrap_text）
+{1} made a great show of flattery but left the matter unaddressed.	{1}大肆奉承了一番，卻對此事避而不談。	{1}大肆奉承了一番，却对此事避而不谈。		FUN_1402a71e0 377821-378037 對方的回應；司法情報審訊報告（wrap_text）
+{1} joined in the discussion of history and past griefs and agreed on the issue.	{1}一同談起了歷史與過往的傷痛，並在這件事上達成共識。	{1}一同谈起了历史与过往的伤痛，并在这件事上达成共识。		FUN_1402a71e0 377821-378037 對方的回應；司法情報審訊報告（wrap_text）
+{1} joined in the discussion of history and past griefs but did not agree.	{1}一同談起了歷史與過往的傷痛，但沒有同意。	{1}一同谈起了历史与过往的伤痛，但没有同意。		FUN_1402a71e0 377821-378037 對方的回應；司法情報審訊報告（wrap_text）
+{1} showed empathy with their opposite and agreed on the issue.	{1}對對方表示同理，並在這件事上達成共識。	{1}对对方表示同理心，并在这件事上达成共识。		FUN_1402a71e0 377821-378037 對方的回應；司法情報審訊報告（wrap_text）
+{1} showed empathy with their opposite but did not agree.	{1}對對方表示同理，但沒有同意。	{1}对对方表示同理心，但没有同意。		FUN_1402a71e0 377821-378037 對方的回應；司法情報審訊報告（wrap_text）
+{1} attempted to put their opposite at ease and ultimately agreed.	{1}試圖讓對方放下心來，最終同意了。	{1}试图让对方放下心来，最终同意了。		FUN_1402a71e0 377821-378037 對方的回應；司法情報審訊報告（wrap_text）
+{1} attempted to put their opposite at ease but did not ultimately agree.	{1}試圖讓對方放下心來，但最終沒有同意。	{1}试图让对方放下心来，但最终没有同意。		FUN_1402a71e0 377821-378037 對方的回應；司法情報審訊報告（wrap_text）
+{1} attempted to put their opposite at ease as well and ultimately agreed.	{1}也試圖讓對方放下心來，最終同意了。	{1}也试图让对方放下心来，最终同意了。		FUN_1402a71e0 377821-378037 對方的回應；司法情報審訊報告（wrap_text）
+{1} attempted to put their opposite at ease as well but did not ultimately agree.	{1}也試圖讓對方放下心來，但最終沒有同意。	{1}也试图让对方放下心来，但最终没有同意。		FUN_1402a71e0 377821-378037 對方的回應；司法情報審訊報告（wrap_text）
+{1} replied with a grand oration of their own.	{1}也發表了一篇宏大的演說作為回應。	{1}也发表了一篇宏大的演说作为回应。		FUN_1402a71e0 377821-378037 對方的回應；司法情報審訊報告（wrap_text）
+{1} replied with a grand oration of their own but ultimately the matter was agreed.	{1}也發表了一篇宏大的演說作為回應，但這件事最終還是談成了。	{1}也发表了一篇宏大的演说作为回应，但这件事最终还是谈成了。		FUN_1402a71e0 377821-378037 對方的回應；司法情報審訊報告（wrap_text）
+{1} replied with a fiery speech.	{1}以一席激昂的演說回應。	{1}以一席激昂的演说回应。		FUN_1402a71e0 377821-378037 對方的回應；司法情報審訊報告（wrap_text）
+{1} replied with a fiery speech but ultimately the matter was agreed.	{1}以一席激昂的演說回應，但這件事最終還是談成了。	{1}以一席激昂的演说回应，但这件事最终还是谈成了。		FUN_1402a71e0 377821-378037 對方的回應；司法情報審訊報告（wrap_text）

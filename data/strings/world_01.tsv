@@ -1,0 +1,160 @@
+en	zh-Hant	zh-Hans	align	note
+Inaccessible mission location	無法抵達派遣地點	无法抵达派遣地点		FUN_1401c17e0 232906/238903/239328 世界畫面：據點資訊、解救、奪回神器的提示
+Cannot make request without leader	沒有領袖，無法提出請求	没有领袖，无法提出请求		FUN_1401c17e0 232920 世界畫面：己方文明據點的提示
+No workers available	沒有可用的工人	没有可用的工人		FUN_1401c17e0 232929/235820 世界畫面：請求工人
+Click to request workers	點此請求工人	点此请求工人		FUN_1401c17e0 232936 世界畫面：己方文明據點的提示
+Cannot order mission without leader	沒有領袖，無法下令派遣	没有领袖，无法下令派遣		FUN_1401c17e0 232945/238893/239318 世界畫面提示
+Click to explore this site (creates new mission)	點此探索此據點（建立新派遣）	点此探索该据点（创建新派遣）		FUN_1401c17e0 232964 世界畫面：無文明據點的提示；mission 沿用按鈕 Missions 派遣
+Click to contact/raid this site (creates new mission)	點此聯絡或襲擊此據點（建立新派遣）	点此联系或袭击该据点（创建新派遣）		FUN_1401c17e0 232969 世界畫面：他國據點的提示
+Offering tribute	正在進貢	正在进贡		FUN_1401c17e0 233321 世界畫面文明清單：我方文明對該文明的關係（與 They offer tribute 方向相反）
+Accepting tribute	接受進貢	接受进贡		FUN_1401c17e0 233328 世界畫面文明清單：我方文明對該文明的關係
+Exports to 	出口至 	出口至 		FUN_1401c17e0 233628/233676 世界畫面貿易資訊：後面另畫文明名與「:」
+Imports from 	進口自 	进口自 		FUN_1401c17e0 233646/233660 世界畫面貿易資訊：後面另畫文明名與「:」
+Terror	恐懼	恐惧		FUN_1401c17e0 233636 世界畫面貿易資訊：不貿易的文明（哥布林）的出口品
+Petty Annoyance	小麻煩	小麻烦		FUN_1401c17e0 233684 世界畫面貿易資訊：不貿易的文明的出口品
+You have no agreements with this land.	你與這片土地沒有任何協議。	你与这片土地没有任何协议。		FUN_1401c17e0 233778 世界畫面貿易資訊
+Requests (Imports from 	請求（進口自 	请求（进口自 		FUN_1401c17e0 233843 世界畫面協議：後面另畫文明名與「)」；比照 Trade Agreement (Exports to 
+Agreed in year 	訂立年份：	签订年份：		FUN_1401c17e0 233859 世界畫面協議：後面另畫年份數字
+Pending	待定	待定		FUN_1401c17e0 233869 世界畫面協議：尚未生效
+This land has no important leaders.	這片土地沒有重要的領袖。	这片土地没有重要的领袖。		FUN_1401c17e0 233983 世界畫面文明資訊
+No messengers	沒有信使	没有信使		FUN_1401c17e0 234428/234802 派遣清單；也給 rules/world_01 的 no messengers here, … 小句用（查字典不分大小寫）
+Messenger (unfilled)	信使（空缺）	信使（空缺）		FUN_1401c17e0 234489/236811 派遣清單：信使職位無人
+and more...	以及更多	以及更多		FUN_1401c17e0 234503/234616 派遣清單：名單未列完；原文 11 格放不下「……」
+No commanders	沒有指揮官	没有指挥官		FUN_1401c17e0 234552/234876 派遣清單；也給 no commanders here, … 小句用
+Click for assignments and details	點此查看指派與詳情	点此查看分配和详情		FUN_1401c17e0 234630 派遣清單提示
+This mission cannot be altered now.	此派遣目前無法變更。	该派遣目前无法更改。		FUN_1401c17e0 234637 派遣清單提示：成員都已出發
+Remove	移除	移除		FUN_1401c17e0 234943 派遣詳情按鈕：移除此派遣
+Free captives belonging to your civilization	釋放屬於你文明的俘虜	释放属于你文明的俘虏		FUN_1401c17e0 235001/235612 襲擊派遣勾選項
+Release other prisoners	釋放其他囚犯	释放其他囚犯		FUN_1401c17e0 235050/235661 襲擊派遣勾選項
+Take important treasures	奪取重要寶物	夺取重要宝物		FUN_1401c17e0 235099/235710 襲擊派遣勾選項
+Loot other items	搶走其他物品	抢走其他物品		FUN_1401c17e0 235148/235759 襲擊派遣勾選項
+Steal livestock	偷走牲畜	偷走牲畜		FUN_1401c17e0 235197/235808 襲擊派遣勾選項
+Raid (squads will try to avoid detection)	襲擊（小隊會設法不被發現）	袭击（小队会设法不被发现）		FUN_1401c17e0 235248 襲擊派遣：方式
+Pillage (openly attack)	劫掠（公開攻擊）	劫掠（公开攻击）		FUN_1401c17e0 235297 襲擊派遣：方式
+Raze (openly attack and destroy site)	夷平（公開攻擊並摧毀據點）	夷平（公开攻击并摧毁据点）		FUN_1401c17e0 235346 襲擊派遣：方式
+Demand one-time tribute	要求一次性貢品	要求一次性贡品		FUN_1401c17e0 235395 襲擊派遣：方式
+Demand ongoing tribute	要求長期進貢	要求长期进贡		FUN_1401c17e0 235444 襲擊派遣：方式
+Conquer and occupy	征服並佔領	征服并占领		FUN_1401c17e0 235495 襲擊派遣：方式
+Demand surrender and occupy	要求投降並佔領	要求投降并占领		FUN_1401c17e0 235544 襲擊派遣：方式
+WARNING:  If successful, your soldiers will join the	警告：若成功，你的士兵會加入佔領部隊，	警告：如果成功，你的士兵会加入占领部队，		FUN_1401c17e0 235551 征服派遣警告第 1 行（三行各自畫，譯文照行接續）
+occupation and not return.  Your new holdings will	不會返回。你的新領地之後	不会返回。你的新领地之后		FUN_1401c17e0 235555 征服派遣警告第 2 行
+be manageable from this screen.	可以在這個畫面管理。	可以在这个界面管理。		FUN_1401c17e0 235559 征服派遣警告第 3 行
+No notable skills	沒有出色的技能	没有出色的技能		FUN_1401c17e0 236047 請求工人派遣：工人技能
+Demander unconditional surrender	要求無條件投降	要求无条件投降		FUN_1401c17e0 236156 外交派遣提議；Demander 是遊戲原文錯字，照抄
+Belongs to your civilization	屬於你的文明	属于你的文明		FUN_1401c17e0 236187/239845 派遣選項無法使用的原因
+Not under your control	不受你控制	不受你控制		FUN_1401c17e0 236192/239850 同上
+No civilized inhabitants	沒有文明居民	没有文明居民		FUN_1401c17e0 236197/239855 同上
+No requestable workers	沒有可請求的工人	没有可请求的工人		FUN_1401c17e0 236202/239860 同上
+Inaccessible	無法抵達	无法抵达		FUN_1401c17e0 236207/239865 同上
+Need military leader	需要軍事領袖	需要军事领袖		FUN_1401c17e0 236212/239870 同上
+Need leader	需要領袖	需要领袖		FUN_1401c17e0 236217/239875 同上
+Not in contact	尚未接觸	尚未接触		FUN_1401c17e0 236222/239880 同上
+Already at war	已處於交戰狀態	已处于交战状态		FUN_1401c17e0 236229/239887 同上
+Already have peace	已處於和平狀態	已处于和平状态		FUN_1401c17e0 236234/239892 同上
+Already have alliance	已經結盟	已经结盟		FUN_1401c17e0 236239/239897 同上
+At war	交戰中	交战中		FUN_1401c17e0 236244/239902 同上
+Cannot communicate	無法溝通	无法沟通		FUN_1401c17e0 236249/239907 同上
+Too hostile	敵意太深	敌意太深		FUN_1401c17e0 236254/239912 同上
+Not trading	沒有貿易	没有贸易		FUN_1401c17e0 236259/239917 同上
+Already trading	已有貿易	已有贸易		FUN_1401c17e0 236264/239922 同上
+Need civilization military leader	需要文明的軍事領袖	需要文明的军事领袖		FUN_1401c17e0 236269/239927 同上
+No specific orders	沒有具體命令	没有具体命令		FUN_1401c17e0 236478/236513/236835/236854 派遣指派：小隊或信使目前的命令
+On this mission	參與此派遣	参与此派遣		FUN_1401c17e0 236504/236844 派遣指派：已指派到此派遣
+No squads available	沒有可用的小隊	没有可用的小队		FUN_1401c17e0 236696 派遣指派
+No messengers available	沒有可用的信使	没有可用的信使		FUN_1401c17e0 236706 派遣指派
+Assign squads.	指派小隊。	分配小队。		FUN_1401c17e0 237055 派遣指派提示
+Choose a proposal.	選擇一項提議。	选择一项提议。		FUN_1401c17e0 237061/237074 外交派遣提示
+Assign messengers.	指派信使。	分配信使。		FUN_1401c17e0 237069 外交派遣提示
+Done assigning	指派完成	分配完成		FUN_1401c17e0 237109 派遣指派按鈕
+Click to view all news and rumors	點此查看所有新聞與傳聞	点此查看所有新闻和传闻		FUN_1401c17e0 237717 世界畫面新聞清單
+No reports available	目前沒有報告	目前没有报告		FUN_1401c17e0 238565 世界畫面報告分頁
+Location unknown	下落不明	下落不明		FUN_1401c17e0 238734/239088 失蹤公民、神器：最後位置
+Last known to be traveling	最後所知：在旅途中	最后所知：在旅途中		FUN_1401c17e0 238739 失蹤公民：最後位置
+Click to rescue (creates new mission)	點此解救（建立新派遣）	点此解救（创建新派遣）		FUN_1401c17e0 238910 失蹤公民提示
+Claimed by local 	當地認領者：	当地认领者：		FUN_1401c17e0 239284 神器：後面另畫認領者名字
+Claimed by local family	已被當地家族認領	已被当地家族认领		FUN_1401c17e0 239300 神器
+Claimed by your local government	已被你的當地政府認領	已被你的当地政府认领		FUN_1401c17e0 239309 神器
+Click to recover (creates new mission)	點此奪回（建立新派遣）	点此夺回（创建新派遣）		FUN_1401c17e0 239335 神器提示
+Cancel	取消	取消		FUN_1401c17e0 239754 據點行動視窗按鈕；FUN_1401ddd50 247469/247553/247650/247755/247859/247963/248067/248171 確認視窗按鈕
+Attack	攻擊	攻击		FUN_1401c17e0 239820 據點行動視窗：派遣種類
+Request workers	請求工人	请求工人		FUN_1401c17e0 239828 據點行動視窗：派遣種類
+Movement	移動	移动		FUN_1401ddd50 247046 教學清單（冒險模式）
+Menu overview	選單總覽	菜单概览		FUN_1401ddd50 247049 教學清單
+[Completed]	[已完成]	[已完成]		FUN_1401ddd50 247060 教學清單：已完成；比照 [Viewed]
+Popup: Zones	彈窗：區域	弹窗：区域		FUN_1401ddd50 247176 資訊與指南：可重看的說明彈窗
+Popup: Burrows	彈窗：活動區	弹窗：活动区		FUN_1401ddd50 247179 同上
+Popup: Hauling	彈窗：搬運	弹窗：搬运		FUN_1401ddd50 247182 同上
+Popup: Stocks	彈窗：庫存	弹窗：库存		FUN_1401ddd50 247185 同上
+Popup: Work details	彈窗：工作分組	弹窗：工作分组		FUN_1401ddd50 247188 同上
+Popup: Nobles	彈窗：貴族	弹窗：贵族		FUN_1401ddd50 247191 同上
+Popup: Justice	彈窗：司法	弹窗：司法		FUN_1401ddd50 247194 同上
+Popup: Squads	彈窗：小隊	弹窗：小队		FUN_1401ddd50 247197 同上
+Popup: The world	彈窗：世界	弹窗：世界		FUN_1401ddd50 247200 同上
+Popup: Work orders	彈窗：工作指令	弹窗：工作订单		FUN_1401ddd50 247203 同上
+Goals	目標	目标		FUN_1401ddd50 247257 指南清單
+Popup: Companions	彈窗：同伴	弹窗：同伴		FUN_1401ddd50 247260 同上（冒險模式）
+Popup: Adventurer's log	彈窗：冒險者日誌	弹窗：冒险者日志		FUN_1401ddd50 247263 同上（冒險模式）
+Popup: Inventory	彈窗：物品欄	弹窗：物品栏		FUN_1401ddd50 247266 同上（冒險模式）
+Popup: Movement options	彈窗：移動選項	弹窗：移动选项		FUN_1401ddd50 247269 同上（冒險模式）
+Popup: Hold and climb	彈窗：抓握與攀爬	弹窗：抓握和攀爬		FUN_1401ddd50 247272 同上（冒險模式）
+Popup: Talk	彈窗：交談	弹窗：交谈		FUN_1401ddd50 247275 同上（冒險模式）
+Popup: Perform	彈窗：表演	弹窗：表演		FUN_1401ddd50 247278 同上（冒險模式）
+Popup: Butcher and craft	彈窗：屠宰與製作	弹窗：屠宰和制作		FUN_1401ddd50 247281 同上（冒險模式）；術語例外：Butcher
+Popup: Abilities	彈窗：能力	弹窗：能力		FUN_1401ddd50 247284 同上（冒險模式）
+Popup: Strike	彈窗：擊打	弹窗：击打		FUN_1401ddd50 247287 同上（冒險模式）；對齊 Strike 擊打
+Popup: Wrestle	彈窗：摔角	弹窗：摔跤		FUN_1401ddd50 247290 同上（冒險模式）
+Popup: Shoot and throw	彈窗：射擊與投擲	弹窗：射击和投掷		FUN_1401ddd50 247293 同上（冒險模式）
+Popup: Travel	彈窗：旅行	弹窗：旅行		FUN_1401ddd50 247296 同上（冒險模式）
+Popup: Sleep and rest	彈窗：睡眠與休息	弹窗：睡眠和休息		FUN_1401ddd50 247299 同上（冒險模式）
+The party and followers	隊伍與追隨者	队伍和追随者		FUN_1401ddd50 247308 指南清單（冒險模式）
+Conversations	對話	对话		FUN_1401ddd50 247311 指南清單（冒險模式）
+Trading	交易	交易		FUN_1401ddd50 247314 指南清單（冒險模式）
+Quests and reputation	任務與名聲	任务和名声		FUN_1401ddd50 247317 指南清單（冒險模式）
+Fortress mode	要塞模式	要塞模式		FUN_1401ddd50 247320 指南清單（冒險模式）
+Retirement	退休	退休		FUN_1401ddd50 247323 指南清單（冒險模式）
+There is a folder with this name already.	已經有同名的資料夾。	已经有同名的文件夹。		FUN_1401ddd50 247397 存檔資料夾已存在的確認視窗第 1 行
+Would you like to overwrite it?	要覆蓋它嗎？	要覆盖它吗？		FUN_1401ddd50 247402 同上第 2 行
+Save	存檔	保存		FUN_1401ddd50 247430 覆蓋資料夾確認視窗按鈕（DAT_1416052e8）
+What would you like to name this timeline?	你想為這條時間線取什麼名字？	你想为这条时间线取什么名字？		FUN_1401ddd50 247508 新時間線命名視窗第 1 行
+Saves starting here will be grouped on the	從這裡開始的存檔會在標題畫面	从这里开始的存档会在主菜单		FUN_1401ddd50 247513 同上第 2 行（三行各自畫，譯文照行接續）
+title screen, with their own active save.	歸成一組，並有各自的目前存檔。	归为一组，并有各自的当前存档。		FUN_1401ddd50 247518 同上第 3 行
+What would you like to name this manual	你想為這個手動存檔	你想为这个手动存档		FUN_1401ddd50 247593 手動存檔命名視窗第 1 行
+save?  It will never be overwritten,	取什麼名字？它永遠不會被覆蓋，	取什么名字？它永远不会被覆盖，		FUN_1401ddd50 247598 同上第 2 行
+but you can delete it while loading.	但你可以在載入時刪除它。	但你可以在加载时删除它。		FUN_1401ddd50 247603 同上第 3 行
+Really retire?  The world will be saved but	確定要退休嗎？世界會存檔，但	确定要退休吗？世界会被保存，但		FUN_1401ddd50 247692/247796 退休確認視窗第 1 行（要塞與冒險共用，下一行不同）
+you will need to unretire the fort to play	你得先重啟這座要塞，才能	你得先重启这座要塞，才能		FUN_1401ddd50 247697 要塞退休確認第 2 行；unretire 沿用 Reclaim/unretire 重啟
+here again.	再回來玩。	再回来玩。		FUN_1401ddd50 247702/248014 要塞退休、放棄確認第 3 行；原文 11 格
+Retire	退休	退休		FUN_1401ddd50 247729/247833 退休確認按鈕
+you will need to unretire or recruit	你得先重啟或招募這名角色，	你得先重启或招募这名角色，		FUN_1401ddd50 247801 冒險者退休確認第 2 行
+this character to play them again.	才能再次遊玩。	才能再次游玩。		FUN_1401ddd50 247806 冒險者退休確認第 3 行
+Really quit without saving?	確定不存檔就離開嗎？	确定不保存就退出吗？		FUN_1401ddd50 247900 不存檔離開確認第 1 行
+All of your progress since the last	自上次存檔以來的所有進度	自上次保存以来的所有进度		FUN_1401ddd50 247905 同上第 2 行
+save will be lost.	都會遺失。	都会丢失。		FUN_1401ddd50 247910 同上第 3 行
+Really quit?  The fort will be saved but	確定要離開嗎？要塞會存檔，但	确定要退出吗？要塞会被保存，但		FUN_1401ddd50 248004 放棄要塞確認第 1 行
+you will need to reclaim the fort to play	你得先收復這座要塞，才能	你得先收复这座要塞，才能		FUN_1401ddd50 248009 放棄要塞確認第 2 行；第 3 行 here again.
+Abandon	放棄	放弃		FUN_1401ddd50 248041/248145 放棄確認按鈕
+Really quit?  The character will live on	確定要離開嗎？這名角色會活在	确定要退出吗？这名角色会活在		FUN_1401ddd50 248108 放棄冒險者確認第 1 行
+through their legend but will not be	自己的傳說裡，但之後	自己的传说里，但之后		FUN_1401ddd50 248113 同上第 2 行
+available to play.	不能再遊玩。	不能再游玩。		FUN_1401ddd50 248118 同上第 3 行
+Succumb to the invasion	屈服於入侵	屈服于入侵	c	FUN_1401ddd50 248342 暫停選單
+Retire the fortress (for the time being)	讓要塞退休（暫時）	让要塞退休（暂时）	c	FUN_1401ddd50 248348 暫停選單
+Give in to the Night	屈服於黑夜	屈服于黑夜	c	FUN_1401ddd50 248395 暫停選單（冒險模式，夜行生物）
+Finish Game	結束遊戲	结束游戏	c	FUN_1401ddd50 248399/248404/248412 暫停選單（冒險模式）
+Give in to Starvation	屈服於飢餓	屈服于饥饿	c	FUN_1401ddd50 248409 暫停選單（冒險模式）
+Finish Game (holding another's goods)	結束遊戲（持有他人的物品）	结束游戏（持有他人的物品）	c	FUN_1401ddd50 248418 暫停選單（冒險模式）
+Give in to Starvation (holding another's goods)	屈服於飢餓（持有他人的物品）	屈服于饥饿（持有他人的物品）	c	FUN_1401ddd50 248418 暫停選單（冒險模式）
+Retire at this location (or rest a while)	在此地退休（或休息一陣子）	在此地退休（或休息一阵子）	c	FUN_1401ddd50 248423 暫停選單（冒險模式）
+Save to this timeline	存檔到這條時間線	保存到这条时间线	c	FUN_1401ddd50 248434 暫停選單
+Save to new timeline	存檔到新的時間線	保存到新的时间线	c	FUN_1401ddd50 248444 暫停選單
+Save to new folder (same timeline)	存檔到新資料夾（同一時間線）	保存到新文件夹（同一时间线）	c	FUN_1401ddd50 248447 暫停選單
+Return to title menu	回到標題畫面	返回主菜单	c	FUN_1401ddd50 248450 暫停選單；對齊 Save and return to title menu
+Continue	繼續	继续	c	FUN_1401ddd50 248453 暫停選單
+Recommended!	建議使用！	推荐！	c	FUN_1401ddd50 248470 暫停選單：Save to this timeline 下方
+Multiple copies of the timeline found.	找到這條時間線的多個副本。	找到这条时间线的多个副本。	c	FUN_1401ddd50 248479 暫停選單：存檔選項下方
+Do this if you want to keep the old save.	想保留舊存檔就選這個。	想保留旧存档就选这个。	c	FUN_1401ddd50 248491 暫停選單：Save to new timeline 下方
+May interfere with existing saves.	可能會干擾現有的存檔。	可能会干扰现有的存档。	c	FUN_1401ddd50 248500 暫停選單：Save to new folder 下方
+Track playing: 	正在播放：	正在播放：		FUN_1401ddd50 248698/248982 暫停選單音樂資訊：後面另畫曲名、「 - 」、作曲者
+Last track: 	上一首：	上一首：		FUN_1401ddd50 248702 同上
+Interlude playing: 	正在播放間奏：	正在播放间奏：		FUN_1401ddd50 248785 同上
+Last interlude: 	上一段間奏：	上一段间奏：		FUN_1401ddd50 248789 同上
+Combat music: 	戰鬥音樂：	战斗音乐：		FUN_1401ddd50 248978 同上

@@ -1,0 +1,321 @@
+en	zh-Hant	zh-Hans	align	note
+In {#1}, the {@2} {3} collapsed in {4}.	{1}年於{4}，{2}{3}倒地身亡。	{1}年于{4}，{2}{3}倒地身亡。		FUN_140b70870 L1687191 case 0x2f collapsed（沒有兇手、沒有武器）寫成整句外框，不另寫片語 collapsed：lists.tsv 會把「collapsed, struck down by X」切開（the 種族 名字寫法）
+In {#1}, {2} collapsed in {3}.	{1}年於{3}，{2}倒地身亡。	{1}年于{3}，{2}倒地身亡。		FUN_140b70870 L1687191 case 0x2f collapsed（沒有兇手、沒有武器）寫成整句外框，不另寫片語 collapsed：lists.tsv 會把「collapsed, struck down by X」切開
+In {#1}, the {@2} {3} collapsed.	{1}年，{2}{3}倒地身亡。	{1}年，{2}{3}倒地身亡。		FUN_140b70870 L1687191 case 0x2f collapsed（沒有兇手、沒有武器）寫成整句外框，不另寫片語 collapsed：lists.tsv 會把「collapsed, struck down by X」切開（the 種族 名字寫法）
+In {#1}, {2} collapsed.	{1}年，{2}倒地身亡。	{1}年，{2}倒地身亡。		FUN_140b70870 L1687191 case 0x2f collapsed（沒有兇手、沒有武器）寫成整句外框，不另寫片語 collapsed：lists.tsv 會把「collapsed, struck down by X」切開
+In the {%1} of {#2}, the {@3} {4} collapsed in {5}.	{2}年{1}於{5}，{3}{4}倒地身亡。	{2}年{1}于{5}，{3}{4}倒地身亡。		FUN_140b70870 L1687191 case 0x2f collapsed（沒有兇手、沒有武器）寫成整句外框，不另寫片語 collapsed：lists.tsv 會把「collapsed, struck down by X」切開（the 種族 名字寫法）
+In the {%1} of {#2}, {3} collapsed in {4}.	{2}年{1}於{4}，{3}倒地身亡。	{2}年{1}于{4}，{3}倒地身亡。		FUN_140b70870 L1687191 case 0x2f collapsed（沒有兇手、沒有武器）寫成整句外框，不另寫片語 collapsed：lists.tsv 會把「collapsed, struck down by X」切開
+In the {%1} of {#2}, the {@3} {4} collapsed.	{2}年{1}，{3}{4}倒地身亡。	{2}年{1}，{3}{4}倒地身亡。		FUN_140b70870 L1687191 case 0x2f collapsed（沒有兇手、沒有武器）寫成整句外框，不另寫片語 collapsed：lists.tsv 會把「collapsed, struck down by X」切開（the 種族 名字寫法）
+In the {%1} of {#2}, {3} collapsed.	{2}年{1}，{3}倒地身亡。	{2}年{1}，{3}倒地身亡。		FUN_140b70870 L1687191 case 0x2f collapsed（沒有兇手、沒有武器）寫成整句外框，不另寫片語 collapsed：lists.tsv 會把「collapsed, struck down by X」切開
+In a time before time, the {@1} {2} collapsed in {3}.	太古之時於{3}，{1}{2}倒地身亡。	太古之时于{3}，{1}{2}倒地身亡。		FUN_140b70870 L1687191 case 0x2f collapsed（沒有兇手、沒有武器）寫成整句外框，不另寫片語 collapsed：lists.tsv 會把「collapsed, struck down by X」切開（the 種族 名字寫法）
+In a time before time, {1} collapsed in {2}.	太古之時於{2}，{1}倒地身亡。	太古之时于{2}，{1}倒地身亡。		FUN_140b70870 L1687191 case 0x2f collapsed（沒有兇手、沒有武器）寫成整句外框，不另寫片語 collapsed：lists.tsv 會把「collapsed, struck down by X」切開
+In a time before time, the {@1} {2} collapsed.	太古之時，{1}{2}倒地身亡。	太古之时，{1}{2}倒地身亡。		FUN_140b70870 L1687191 case 0x2f collapsed（沒有兇手、沒有武器）寫成整句外框，不另寫片語 collapsed：lists.tsv 會把「collapsed, struck down by X」切開（the 種族 名字寫法）
+In a time before time, {1} collapsed.	太古之時，{1}倒地身亡。	太古之时，{1}倒地身亡。		FUN_140b70870 L1687191 case 0x2f collapsed（沒有兇手、沒有武器）寫成整句外框，不另寫片語 collapsed：lists.tsv 會把「collapsed, struck down by X」切開
+In {#1}, the {@2} {3} burned up in dragon fire.	{1}年，{2}{3}在龍焰中燒成灰。	{1}年，{2}{3}在龙焰中烧成灰。		FUN_140b70870 L1687013 case 0xc burned up in dragon fire 沒有地點：排在兇手視角外框前（否則 up 會被當成死者）（the 種族 名字寫法）
+In {#1}, {2} burned up in dragon fire.	{1}年，{2}在龍焰中燒成灰。	{1}年，{2}在龙焰中烧成灰。		FUN_140b70870 L1687013 case 0xc burned up in dragon fire 沒有地點：排在兇手視角外框前（否則 up 會被當成死者）
+In the {%1} of {#2}, the {@3} {4} burned up in dragon fire.	{2}年{1}，{3}{4}在龍焰中燒成灰。	{2}年{1}，{3}{4}在龙焰中烧成灰。		FUN_140b70870 L1687013 case 0xc burned up in dragon fire 沒有地點：排在兇手視角外框前（否則 up 會被當成死者）（the 種族 名字寫法）
+In the {%1} of {#2}, {3} burned up in dragon fire.	{2}年{1}，{3}在龍焰中燒成灰。	{2}年{1}，{3}在龙焰中烧成灰。		FUN_140b70870 L1687013 case 0xc burned up in dragon fire 沒有地點：排在兇手視角外框前（否則 up 會被當成死者）
+In a time before time, the {@1} {2} burned up in dragon fire.	太古之時，{1}{2}在龍焰中燒成灰。	太古之时，{1}{2}在龙焰中烧成灰。		FUN_140b70870 L1687013 case 0xc burned up in dragon fire 沒有地點：排在兇手視角外框前（否則 up 會被當成死者）（the 種族 名字寫法）
+In a time before time, {1} burned up in dragon fire.	太古之時，{1}在龍焰中燒成灰。	太古之时，{1}在龙焰中烧成灰。		FUN_140b70870 L1687013 case 0xc burned up in dragon fire 沒有地點：排在兇手視角外框前（否則 up 會被當成死者）
+In {#1}, the {@2} {3} burned the {@4} {5} in dragon fire.	{1}年，{2}{3}用龍焰燒死{4}{5}。	{1}年，{2}{3}用龙焰烧死{4}{5}。		FUN_140b70870 L1686673 case 0xc 兇手視角 burned 死者 in dragon fire 沒有地點：排在通用外框前，免得 in dragon fire 被當成地點（死者 the 種族 名字）
+In {#1}, the {@2} {3} burned {4} in dragon fire.	{1}年，{2}{3}用龍焰燒死{4}。	{1}年，{2}{3}用龙焰烧死{4}。		FUN_140b70870 L1686673 case 0xc 兇手視角 burned 死者 in dragon fire 沒有地點：排在通用外框前，免得 in dragon fire 被當成地點
+In {#1}, {2} burned the {@3} {4} in dragon fire.	{1}年，{2}用龍焰燒死{3}{4}。	{1}年，{2}用龙焰烧死{3}{4}。		FUN_140b70870 L1686673 case 0xc 兇手視角 burned 死者 in dragon fire 沒有地點：排在通用外框前，免得 in dragon fire 被當成地點（死者 the 種族 名字）
+In {#1}, {2} burned {3} in dragon fire.	{1}年，{2}用龍焰燒死{3}。	{1}年，{2}用龙焰烧死{3}。		FUN_140b70870 L1686673 case 0xc 兇手視角 burned 死者 in dragon fire 沒有地點：排在通用外框前，免得 in dragon fire 被當成地點
+In the {%1} of {#2}, the {@3} {4} burned the {@5} {6} in dragon fire.	{2}年{1}，{3}{4}用龍焰燒死{5}{6}。	{2}年{1}，{3}{4}用龙焰烧死{5}{6}。		FUN_140b70870 L1686673 case 0xc 兇手視角 burned 死者 in dragon fire 沒有地點：排在通用外框前，免得 in dragon fire 被當成地點（死者 the 種族 名字）
+In the {%1} of {#2}, the {@3} {4} burned {5} in dragon fire.	{2}年{1}，{3}{4}用龍焰燒死{5}。	{2}年{1}，{3}{4}用龙焰烧死{5}。		FUN_140b70870 L1686673 case 0xc 兇手視角 burned 死者 in dragon fire 沒有地點：排在通用外框前，免得 in dragon fire 被當成地點
+In the {%1} of {#2}, {3} burned the {@4} {5} in dragon fire.	{2}年{1}，{3}用龍焰燒死{4}{5}。	{2}年{1}，{3}用龙焰烧死{4}{5}。		FUN_140b70870 L1686673 case 0xc 兇手視角 burned 死者 in dragon fire 沒有地點：排在通用外框前，免得 in dragon fire 被當成地點（死者 the 種族 名字）
+In the {%1} of {#2}, {3} burned {4} in dragon fire.	{2}年{1}，{3}用龍焰燒死{4}。	{2}年{1}，{3}用龙焰烧死{4}。		FUN_140b70870 L1686673 case 0xc 兇手視角 burned 死者 in dragon fire 沒有地點：排在通用外框前，免得 in dragon fire 被當成地點
+In a time before time, the {@1} {2} burned the {@3} {4} in dragon fire.	太古之時，{1}{2}用龍焰燒死{3}{4}。	太古之时，{1}{2}用龙焰烧死{3}{4}。		FUN_140b70870 L1686673 case 0xc 兇手視角 burned 死者 in dragon fire 沒有地點：排在通用外框前，免得 in dragon fire 被當成地點（死者 the 種族 名字）
+In a time before time, the {@1} {2} burned {3} in dragon fire.	太古之時，{1}{2}用龍焰燒死{3}。	太古之时，{1}{2}用龙焰烧死{3}。		FUN_140b70870 L1686673 case 0xc 兇手視角 burned 死者 in dragon fire 沒有地點：排在通用外框前，免得 in dragon fire 被當成地點
+In a time before time, {1} burned the {@2} {3} in dragon fire.	太古之時，{1}用龍焰燒死{2}{3}。	太古之时，{1}用龙焰烧死{2}{3}。		FUN_140b70870 L1686673 case 0xc 兇手視角 burned 死者 in dragon fire 沒有地點：排在通用外框前，免得 in dragon fire 被當成地點（死者 the 種族 名字）
+In a time before time, {1} burned {2} in dragon fire.	太古之時，{1}用龍焰燒死{2}。	太古之时，{1}用龙焰烧死{2}。		FUN_140b70870 L1686673 case 0xc 兇手視角 burned 死者 in dragon fire 沒有地點：排在通用外框前，免得 in dragon fire 被當成地點
+In {#1}, the {@2} {%3} in {4}.	{1}年於{4}，{2}{3}。	{1}年于{4}，{2}{3}。		FUN_140b70870 同通用外框；主詞是沒有名字的 the 種族（FUN_140b92f10 L1706653）時排在 the 種族 名字 外框前，免得把片語開頭的 was 當成名字
+In {#1}, the {@2} {%3}.	{1}年，{2}{3}。	{1}年，{2}{3}。		FUN_140b70870 同通用外框；主詞是沒有名字的 the 種族（FUN_140b92f10 L1706653）時排在 the 種族 名字 外框前，免得把片語開頭的 was 當成名字
+In the {%1} of {#2}, the {@3} {%4} in {5}.	{2}年{1}於{5}，{3}{4}。	{2}年{1}于{5}，{3}{4}。		FUN_140b70870 同通用外框；主詞是沒有名字的 the 種族（FUN_140b92f10 L1706653）時排在 the 種族 名字 外框前，免得把片語開頭的 was 當成名字
+In the {%1} of {#2}, the {@3} {%4}.	{2}年{1}，{3}{4}。	{2}年{1}，{3}{4}。		FUN_140b70870 同通用外框；主詞是沒有名字的 the 種族（FUN_140b92f10 L1706653）時排在 the 種族 名字 外框前，免得把片語開頭的 was 當成名字
+In a time before time, the {@1} {%2} in {3}.	太古之時於{3}，{1}{2}。	太古之时于{3}，{1}{2}。		FUN_140b70870 同通用外框；主詞是沒有名字的 the 種族（FUN_140b92f10 L1706653）時排在 the 種族 名字 外框前，免得把片語開頭的 was 當成名字
+In a time before time, the {@1} {%2}.	太古之時，{1}{2}。	太古之时，{1}{2}。		FUN_140b70870 同通用外框；主詞是沒有名字的 the 種族（FUN_140b92f10 L1706653）時排在 the 種族 名字 外框前，免得把片語開頭的 was 當成名字
+In {#1}, the {@2} {3} {%4} in {5}.	{1}年於{5}，{2}{3}{4}。	{1}年于{5}，{2}{3}{4}。		FUN_140b70870 L1686589–1687374 傳說事件：歷史人物死亡。In＋年份（FUN_140b92640）, 主詞 片語[ in 地點].；片語見本檔，地點照原文；有地點的排前面（the 種族 名字寫法）
+In {#1}, {2} {%3} in {4}.	{1}年於{4}，{2}{3}。	{1}年于{4}，{2}{3}。		FUN_140b70870 L1686589–1687374 傳說事件：歷史人物死亡。In＋年份（FUN_140b92640）, 主詞 片語[ in 地點].；片語見本檔，地點照原文；有地點的排前面
+In {#1}, the {@2} {3} {%4}.	{1}年，{2}{3}{4}。	{1}年，{2}{3}{4}。		FUN_140b70870 L1686589–1687374 傳說事件：歷史人物死亡。In＋年份（FUN_140b92640）, 主詞 片語[ in 地點].；片語見本檔，地點照原文；有地點的排前面（the 種族 名字寫法）
+In {#1}, {2} {%3}.	{1}年，{2}{3}。	{1}年，{2}{3}。		FUN_140b70870 L1686589–1687374 傳說事件：歷史人物死亡。In＋年份（FUN_140b92640）, 主詞 片語[ in 地點].；片語見本檔，地點照原文；有地點的排前面
+In the {%1} of {#2}, the {@3} {4} {%5} in {6}.	{2}年{1}於{6}，{3}{4}{5}。	{2}年{1}于{6}，{3}{4}{5}。		FUN_140b70870 L1686589–1687374 傳說事件：歷史人物死亡。In＋年份（FUN_140b92640）, 主詞 片語[ in 地點].；片語見本檔，地點照原文；有地點的排前面（the 種族 名字寫法）
+In the {%1} of {#2}, {3} {%4} in {5}.	{2}年{1}於{5}，{3}{4}。	{2}年{1}于{5}，{3}{4}。		FUN_140b70870 L1686589–1687374 傳說事件：歷史人物死亡。In＋年份（FUN_140b92640）, 主詞 片語[ in 地點].；片語見本檔，地點照原文；有地點的排前面
+In the {%1} of {#2}, the {@3} {4} {%5}.	{2}年{1}，{3}{4}{5}。	{2}年{1}，{3}{4}{5}。		FUN_140b70870 L1686589–1687374 傳說事件：歷史人物死亡。In＋年份（FUN_140b92640）, 主詞 片語[ in 地點].；片語見本檔，地點照原文；有地點的排前面（the 種族 名字寫法）
+In the {%1} of {#2}, {3} {%4}.	{2}年{1}，{3}{4}。	{2}年{1}，{3}{4}。		FUN_140b70870 L1686589–1687374 傳說事件：歷史人物死亡。In＋年份（FUN_140b92640）, 主詞 片語[ in 地點].；片語見本檔，地點照原文；有地點的排前面
+In a time before time, the {@1} {2} {%3} in {4}.	太古之時於{4}，{1}{2}{3}。	太古之时于{4}，{1}{2}{3}。		FUN_140b70870 L1686589–1687374 傳說事件：歷史人物死亡。In＋年份（FUN_140b92640）, 主詞 片語[ in 地點].；片語見本檔，地點照原文；有地點的排前面（the 種族 名字寫法）
+In a time before time, {1} {%2} in {3}.	太古之時於{3}，{1}{2}。	太古之时于{3}，{1}{2}。		FUN_140b70870 L1686589–1687374 傳說事件：歷史人物死亡。In＋年份（FUN_140b92640）, 主詞 片語[ in 地點].；片語見本檔，地點照原文；有地點的排前面
+In a time before time, the {@1} {2} {%3}.	太古之時，{1}{2}{3}。	太古之时，{1}{2}{3}。		FUN_140b70870 L1686589–1687374 傳說事件：歷史人物死亡。In＋年份（FUN_140b92640）, 主詞 片語[ in 地點].；片語見本檔，地點照原文；有地點的排前面（the 種族 名字寫法）
+In a time before time, {1} {%2}.	太古之時，{1}{2}。	太古之时，{1}{2}。		FUN_140b70870 L1686589–1687374 傳說事件：歷史人物死亡。In＋年份（FUN_140b92640）, 主詞 片語[ in 地點].；片語見本檔，地點照原文；有地點的排前面
+was shot and killed by the {@1} {2} with {3} from {4}	被{1}{2}用{4}射出的{3}射殺	被{1}{2}用{4}射出的{3}射杀	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 3 L1686875；兇手（人名或 a 種族）、武器、射擊武器（the 種族 名字寫法）
+was shot and killed by {1} with {2} from {3}	被{1}用{3}射出的{2}射殺	被{1}用{3}射出的{2}射杀	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 3 L1686875；兇手（人名或 a 種族）、武器、射擊武器
+was shot and killed by the {@1} {2} with {3}	被{1}{2}用{3}射殺	被{1}{2}用{3}射杀	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 3 L1686875；兇手、武器（或只有射擊武器）（the 種族 名字寫法）
+was shot and killed by {1} with {2}	被{1}用{2}射殺	被{1}用{2}射杀	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 3 L1686875；兇手、武器（或只有射擊武器）
+was shot and killed by the {@1} {2}	被{1}{2}射殺	被{1}{2}射杀	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 3 L1686875；兇手（人名或 a 種族）（the 種族 名字寫法）
+was shot and killed by {1}	被{1}射殺	被{1}射杀	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 3 L1686875；兇手（人名或 a 種族）
+was shot and killed with {1} from {2}	被{2}射出的{1}射殺	被{2}射出的{1}射杀	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 3 L1686875；沒有兇手：武器、射擊武器
+was shot and killed with {1}	被{1}射殺	被{1}射杀	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 3 L1686875；沒有兇手：武器
+was struck down by the {@1} {2} with {3} from {4}	被{1}{2}用{4}射出的{3}擊倒身亡	被{1}{2}用{4}射出的{3}击倒身亡	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 7 L1686973；兇手（人名或 a 種族）、武器、射擊武器（the 種族 名字寫法）
+was struck down by {1} with {2} from {3}	被{1}用{3}射出的{2}擊倒身亡	被{1}用{3}射出的{2}击倒身亡	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 7 L1686973；兇手（人名或 a 種族）、武器、射擊武器
+was struck down by the {@1} {2} with {3}	被{1}{2}用{3}擊倒身亡	被{1}{2}用{3}击倒身亡	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 7 L1686973；兇手、武器（或只有射擊武器）（the 種族 名字寫法）
+was struck down by {1} with {2}	被{1}用{2}擊倒身亡	被{1}用{2}击倒身亡	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 7 L1686973；兇手、武器（或只有射擊武器）
+was struck down by the {@1} {2}	被{1}{2}擊倒身亡	被{1}{2}击倒身亡	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 7 L1686973；兇手（人名或 a 種族）（the 種族 名字寫法）
+was struck down by {1}	被{1}擊倒身亡	被{1}击倒身亡	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 7 L1686973；兇手（人名或 a 種族）
+was struck down with {1} from {2}	被{2}射出的{1}擊倒身亡	被{2}射出的{1}击倒身亡	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 7 L1686973；沒有兇手：武器、射擊武器
+was struck down with {1}	被{1}擊倒身亡	被{1}击倒身亡	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 7 L1686973；沒有兇手：武器
+was slaughtered by the {@1} {2} with {3} from {4}	被{1}{2}用{4}射出的{3}宰殺	被{1}{2}用{4}射出的{3}宰杀	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x31 L1687232；兇手（人名或 a 種族）、武器、射擊武器（the 種族 名字寫法）
+was slaughtered by {1} with {2} from {3}	被{1}用{3}射出的{2}宰殺	被{1}用{3}射出的{2}宰杀	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x31 L1687232；兇手（人名或 a 種族）、武器、射擊武器
+was slaughtered by the {@1} {2} with {3}	被{1}{2}用{3}宰殺	被{1}{2}用{3}宰杀	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x31 L1687232；兇手、武器（或只有射擊武器）（the 種族 名字寫法）
+was slaughtered by {1} with {2}	被{1}用{2}宰殺	被{1}用{2}宰杀	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x31 L1687232；兇手、武器（或只有射擊武器）
+was slaughtered by the {@1} {2}	被{1}{2}宰殺	被{1}{2}宰杀	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x31 L1687232；兇手（人名或 a 種族）（the 種族 名字寫法）
+was slaughtered by {1}	被{1}宰殺	被{1}宰杀	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x31 L1687232；兇手（人名或 a 種族）
+was slaughtered with {1} from {2}	被{2}射出的{1}宰殺	被{2}射出的{1}宰杀	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x31 L1687232；沒有兇手：武器、射擊武器
+was slaughtered with {1}	被{1}宰殺	被{1}宰杀	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x31 L1687232；沒有兇手：武器
+was murdered by the {@1} {2}	被{1}{2}謀殺	被{1}{2}谋杀	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x14 L1687076；兇手（人名或 a 種族）（the 種族 名字寫法）
+was murdered by {1}	被{1}謀殺	被{1}谋杀	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x14 L1687076；兇手（人名或 a 種族）
+was beheaded by the {@1} {2}	被{1}{2}斬首	被{1}{2}斩首	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x1f L1687121；兇手（人名或 a 種族）（the 種族 名字寫法）
+was beheaded by {1}	被{1}斬首	被{1}斩首	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x1f L1687121；兇手（人名或 a 種族）
+was crucified by the {@1} {2}	被{1}{2}釘上十字架	被{1}{2}钉上十字架	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x20 L1687125；兇手（人名或 a 種族）（the 種族 名字寫法）
+was crucified by {1}	被{1}釘上十字架	被{1}钉上十字架	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x20 L1687125；兇手（人名或 a 種族）
+was buried alive by the {@1} {2}	被{1}{2}活埋	被{1}{2}活埋	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x21 L1687129；兇手（人名或 a 種族）（the 種族 名字寫法）
+was buried alive by {1}	被{1}活埋	被{1}活埋	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x21 L1687129；兇手（人名或 a 種族）
+was drowned by the {@1} {2}	被{1}{2}處以溺刑	被{1}{2}处以溺刑	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x22 L1687133（處以溺刑，同 ann_09）；兇手（人名或 a 種族）（the 種族 名字寫法）
+was drowned by {1}	被{1}處以溺刑	被{1}处以溺刑	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x22 L1687133（處以溺刑，同 ann_09）；兇手（人名或 a 種族）
+was burned alive by the {@1} {2}	被{1}{2}活活燒死	被{1}{2}活活烧死	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x23 L1687137；兇手（人名或 a 種族）（the 種族 名字寫法）
+was burned alive by {1}	被{1}活活燒死	被{1}活活烧死	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x23 L1687137；兇手（人名或 a 種族）
+was fed to beasts by the {@1} {2}	被{1}{2}拿去餵野獸	被{1}{2}拿去喂野兽	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x24 L1687141；兇手（人名或 a 種族）（the 種族 名字寫法）
+was fed to beasts by {1}	被{1}拿去餵野獸	被{1}拿去喂野兽	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x24 L1687141；兇手（人名或 a 種族）
+was hacked to pieces by the {@1} {2}	被{1}{2}砍成碎塊	被{1}{2}砍成碎块	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x25 L1687145；兇手（人名或 a 種族）（the 種族 名字寫法）
+was hacked to pieces by {1}	被{1}砍成碎塊	被{1}砍成碎块	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x25 L1687145；兇手（人名或 a 種族）
+was left out in the air by the {@1} {2}	被{1}{2}留在戶外處決	被{1}{2}留在户外处决	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x26 L1687148；兇手（人名或 a 種族）（the 種族 名字寫法）
+was left out in the air by {1}	被{1}留在戶外處決	被{1}留在户外处决	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x26 L1687148；兇手（人名或 a 種族）
+was scared to death by the {@1} {2}	被{1}{2}嚇死	被{1}{2}吓死	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x2d L1687182；兇手（人名或 a 種族）（the 種族 名字寫法）
+was scared to death by {1}	被{1}嚇死	被{1}吓死	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x2d L1687182；兇手（人名或 a 種族）
+was drained of blood by the {@1} {2}	被{1}{2}吸乾了血	被{1}{2}吸干了血	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x30 L1687227；兇手（人名或 a 種族）（the 種族 名字寫法）
+was drained of blood by {1}	被{1}吸乾了血	被{1}吸干了血	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x30 L1687227；兇手（人名或 a 種族）
+was executed by the {@1} {2}	被{1}{2}處決	被{1}{2}处决	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x36 L1687331；兇手（人名或 a 種族）（the 種族 名字寫法）
+was executed by {1}	被{1}處決	被{1}处决	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x36 L1687331；兇手（人名或 a 種族）
+bled to death, slain with {1} from {2}	被{2}射出的{1}重創，失血而死	被{2}射出的{1}重创，失血而死	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 4 L1686908；沒有兇手：武器、射擊武器
+bled to death, slain with {1}	被{1}重創，失血而死	被{1}重创，失血而死	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 4 L1686908；沒有兇手：武器
+bled to death, slain by the {@1} {2} with {3} from {4}	被{1}{2}用{4}射出的{3}重創，失血而死	被{1}{2}用{4}射出的{3}重创，失血而死	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 4 L1686908；兇手、武器、射擊武器（the 種族 名字寫法）
+bled to death, slain by {1} with {2} from {3}	被{1}用{3}射出的{2}重創，失血而死	被{1}用{3}射出的{2}重创，失血而死	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 4 L1686908；兇手、武器、射擊武器
+bled to death, slain by the {@1} {2} with {3}	被{1}{2}用{3}重創，失血而死	被{1}{2}用{3}重创，失血而死	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 4 L1686908；兇手、武器（the 種族 名字寫法）
+bled to death, slain by {1} with {2}	被{1}用{2}重創，失血而死	被{1}用{2}重创，失血而死	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 4 L1686908；兇手、武器
+bled to death, slain by the {@1} {2}	被{1}{2}重創，失血而死	被{1}{2}重创，失血而死	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 4 L1686908；兇手（人名或 a 種族）（the 種族 名字寫法）
+bled to death, slain by {1}	被{1}重創，失血而死	被{1}重创，失血而死	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 4 L1686908；兇手（人名或 a 種族）
+suffocated, slain by  with {1} from {2}	被{2}射出的{1}重創，窒息而死	被{2}射出的{1}重创，窒息而死	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 6 L1686944（沒有兇手時遊戲寫成 slain by  with，兩個空白照抄；排在有兇手的前面）；沒有兇手：武器、射擊武器
+suffocated, slain by  with {1}	被{1}重創，窒息而死	被{1}重创，窒息而死	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 6 L1686944（沒有兇手時遊戲寫成 slain by  with，兩個空白照抄；排在有兇手的前面）；沒有兇手：武器
+suffocated, slain by the {@1} {2} with {3} from {4}	被{1}{2}用{4}射出的{3}重創，窒息而死	被{1}{2}用{4}射出的{3}重创，窒息而死	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 6 L1686944（沒有兇手時遊戲寫成 slain by  with，兩個空白照抄；排在有兇手的前面）；兇手、武器、射擊武器（the 種族 名字寫法）
+suffocated, slain by {1} with {2} from {3}	被{1}用{3}射出的{2}重創，窒息而死	被{1}用{3}射出的{2}重创，窒息而死	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 6 L1686944（沒有兇手時遊戲寫成 slain by  with，兩個空白照抄；排在有兇手的前面）；兇手、武器、射擊武器
+suffocated, slain by the {@1} {2} with {3}	被{1}{2}用{3}重創，窒息而死	被{1}{2}用{3}重创，窒息而死	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 6 L1686944（沒有兇手時遊戲寫成 slain by  with，兩個空白照抄；排在有兇手的前面）；兇手、武器（the 種族 名字寫法）
+suffocated, slain by {1} with {2}	被{1}用{2}重創，窒息而死	被{1}用{2}重创，窒息而死	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 6 L1686944（沒有兇手時遊戲寫成 slain by  with，兩個空白照抄；排在有兇手的前面）；兇手、武器
+suffocated, slain by the {@1} {2}	被{1}{2}重創，窒息而死	被{1}{2}重创，窒息而死	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 6 L1686944（沒有兇手時遊戲寫成 slain by  with，兩個空白照抄；排在有兇手的前面）；兇手（人名或 a 種族）（the 種族 名字寫法）
+suffocated, slain by {1}	被{1}重創，窒息而死	被{1}重创，窒息而死	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 6 L1686944（沒有兇手時遊戲寫成 slain by  with，兩個空白照抄；排在有兇手的前面）；兇手（人名或 a 種族）
+collapsed, struck down  with {1} from {2}	被{2}射出的{1}擊中，倒地身亡	被{2}射出的{1}击中，倒地身亡	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x2f L1687190（沒有兇手時遊戲寫成 struck down  with，兩個空白照抄）；沒有兇手：武器、射擊武器
+collapsed, struck down  with {1}	被{1}擊中，倒地身亡	被{1}击中，倒地身亡	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x2f L1687190（沒有兇手時遊戲寫成 struck down  with，兩個空白照抄）；沒有兇手：武器
+collapsed, struck down by the {@1} {2} with {3} from {4}	被{1}{2}用{4}射出的{3}擊中，倒地身亡	被{1}{2}用{4}射出的{3}击中，倒地身亡	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x2f L1687190（沒有兇手時遊戲寫成 struck down  with，兩個空白照抄）；兇手、武器、射擊武器（the 種族 名字寫法）
+collapsed, struck down by {1} with {2} from {3}	被{1}用{3}射出的{2}擊中，倒地身亡	被{1}用{3}射出的{2}击中，倒地身亡	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x2f L1687190（沒有兇手時遊戲寫成 struck down  with，兩個空白照抄）；兇手、武器、射擊武器
+collapsed, struck down by the {@1} {2} with {3}	被{1}{2}用{3}擊中，倒地身亡	被{1}{2}用{3}击中，倒地身亡	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x2f L1687190（沒有兇手時遊戲寫成 struck down  with，兩個空白照抄）；兇手、武器（the 種族 名字寫法）
+collapsed, struck down by {1} with {2}	被{1}用{2}擊中，倒地身亡	被{1}用{2}击中，倒地身亡	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x2f L1687190（沒有兇手時遊戲寫成 struck down  with，兩個空白照抄）；兇手、武器
+collapsed, struck down by the {@1} {2}	被{1}{2}擊中，倒地身亡	被{1}{2}击中，倒地身亡	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x2f L1687190（沒有兇手時遊戲寫成 struck down  with，兩個空白照抄）；兇手（人名或 a 種族）（the 種族 名字寫法）
+collapsed, struck down by {1}	被{1}擊中，倒地身亡	被{1}击中，倒地身亡	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x2f L1687190（沒有兇手時遊戲寫成 struck down  with，兩個空白照抄）；兇手（人名或 a 種族）
+died after colliding with an obstacle, slain by the {@1} {2}	被{1}{2}摔向障礙物而死	被{1}{2}摔向障碍物而死	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 9 L1686994；兇手（人名或 a 種族）（the 種族 名字寫法）
+died after colliding with an obstacle, slain by {1}	被{1}摔向障礙物而死	被{1}摔向障碍物而死	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 9 L1686994；兇手（人名或 a 種族）
+was impaled on spikes, slain by the {@1} {2}	被{1}{2}推上尖刺，刺穿身亡	被{1}{2}推上尖刺，刺穿身亡	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x1b L1687105；兇手（人名或 a 種族）（the 種族 名字寫法）
+was impaled on spikes, slain by {1}	被{1}推上尖刺，刺穿身亡	被{1}推上尖刺，刺穿身亡	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x1b L1687105；兇手（人名或 a 種族）
+succumbed to infection, slain by the {@1} {2}	被{1}{2}所傷，最終死於感染	被{1}{2}所伤，最终死于感染	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x2b L1687168；兇手（人名或 a 種族）（the 種族 名字寫法）
+succumbed to infection, slain by {1}	被{1}所傷，最終死於感染	被{1}所伤，最终死于感染	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x2b L1687168；兇手（人名或 a 種族）
+burned up in the {@1} {2}'s dragon fire	在{1}{2}的龍焰中燒成灰	在{1}{2}的龙焰中烧成灰	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0xc L1687009；人名或 a 種族（所有格）（the 種族 名字寫法）
+burned up in {1}'s dragon fire	在{1}的龍焰中燒成灰	在{1}的龙焰中烧成灰	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0xc L1687009；人名或 a 種族（所有格）
+was burned to death by the {@1} {2}'s fire	被{1}{2}的火焰燒死	被{1}{2}的火焰烧死	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0xd L1687045；人名（所有格）（the 種族 名字寫法）
+was burned to death by {1}'s fire	被{1}的火焰燒死	被{1}的火焰烧死	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0xd L1687045；人名（所有格）
+was burned to death by the {@1} {2} fire	被{1}{2}的火焰燒死	被{1}{2}的火焰烧死	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0xd L1687039；a 種族（the 種族 名字寫法）
+was burned to death by {1} fire	被{1}的火焰燒死	被{1}的火焰烧死	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0xd L1687039；a 種族
+was banished by the {@1} {2}	被{1}{2}放逐	被{1}{2}放逐	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x16 L1687087；人名或 a 種族（the 種族 名字寫法）
+was banished by {1}	被{1}放逐	被{1}放逐	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x16 L1687087；人名或 a 種族
+drowned {@1}	投水自盡	投水自尽	inner	FUN_140b70870 傳說事件死因片語（死者為主詞） case 0x35 L1687283；himself／herself／itself（自溺）；排在主動句 drowned 死者 前面
+shot and killed the {@1} {2} with {3} from {4}	用{4}射出的{3}射殺{1}{2}	用{4}射出的{3}射杀{1}{2}	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 3 L1686596；武器、射擊武器（the 種族 名字寫法）
+shot and killed {1} with {2} from {3}	用{3}射出的{2}射殺{1}	用{3}射出的{2}射杀{1}	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 3 L1686596；武器、射擊武器
+shot and killed the {@1} {2} with {3}	用{3}射殺{1}{2}	用{3}射杀{1}{2}	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 3 L1686596；武器（the 種族 名字寫法）
+shot and killed {1} with {2}	用{2}射殺{1}	用{2}射杀{1}	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 3 L1686596；武器
+shot and killed the {@1} {2}	射殺{1}{2}	射杀{1}{2}	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 3 L1686596（the 種族 名字寫法）
+shot and killed {1}	射殺{1}	射杀{1}	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 3 L1686596
+struck down the {@1} {2} with {3} from {4}	用{4}射出的{3}擊殺{1}{2}	用{4}射出的{3}击杀{1}{2}	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 7 L1686656；武器、射擊武器（the 種族 名字寫法）
+struck down {1} with {2} from {3}	用{3}射出的{2}擊殺{1}	用{3}射出的{2}击杀{1}	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 7 L1686656；武器、射擊武器
+struck down the {@1} {2} with {3}	用{3}擊殺{1}{2}	用{3}击杀{1}{2}	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 7 L1686656；武器（the 種族 名字寫法）
+struck down {1} with {2}	用{2}擊殺{1}	用{2}击杀{1}	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 7 L1686656；武器
+struck down the {@1} {2}	擊殺{1}{2}	击杀{1}{2}	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 7 L1686656（the 種族 名字寫法）
+struck down {1}	擊殺{1}	击杀{1}	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 7 L1686656
+slaughtered the {@1} {2} with {3} from {4}	用{4}射出的{3}宰殺{1}{2}	用{4}射出的{3}宰杀{1}{2}	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 0x31 L1686801；武器、射擊武器（the 種族 名字寫法）
+slaughtered {1} with {2} from {3}	用{3}射出的{2}宰殺{1}	用{3}射出的{2}宰杀{1}	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 0x31 L1686801；武器、射擊武器
+slaughtered the {@1} {2} with {3}	用{3}宰殺{1}{2}	用{3}宰杀{1}{2}	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 0x31 L1686801；武器（the 種族 名字寫法）
+slaughtered {1} with {2}	用{2}宰殺{1}	用{2}宰杀{1}	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 0x31 L1686801；武器
+slaughtered the {@1} {2}	宰殺{1}{2}	宰杀{1}{2}	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 0x31 L1686801（the 種族 名字寫法）
+slaughtered {1}	宰殺{1}	宰杀{1}	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 0x31 L1686801
+mortally wounded the {@1} {2}, who bled to death, with {3} from {4}	用{4}射出的{3}重創{1}{2}，使其失血而死	用{4}射出的{3}重创{1}{2}，使其失血而死	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 4 L1686605；武器、射擊武器（the 種族 名字寫法）
+mortally wounded {1}, who bled to death, with {2} from {3}	用{3}射出的{2}重創{1}，使其失血而死	用{3}射出的{2}重创{1}，使其失血而死	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 4 L1686605；武器、射擊武器
+mortally wounded the {@1} {2}, who bled to death, with {3}	用{3}重創{1}{2}，使其失血而死	用{3}重创{1}{2}，使其失血而死	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 4 L1686605；武器（the 種族 名字寫法）
+mortally wounded {1}, who bled to death, with {2}	用{2}重創{1}，使其失血而死	用{2}重创{1}，使其失血而死	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 4 L1686605；武器
+mortally wounded the {@1} {2}, who bled to death	重創{1}{2}，使其失血而死	重创{1}{2}，使其失血而死	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 4 L1686605（the 種族 名字寫法）
+mortally wounded {1}, who bled to death	重創{1}，使其失血而死	重创{1}，使其失血而死	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 4 L1686605
+mortally wounded the {@1} {2}, who suffocated, with {3} from {4}	用{4}射出的{3}重創{1}{2}，使其窒息而死	用{4}射出的{3}重创{1}{2}，使其窒息而死	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 6 L1686634；武器、射擊武器（the 種族 名字寫法）
+mortally wounded {1}, who suffocated, with {2} from {3}	用{3}射出的{2}重創{1}，使其窒息而死	用{3}射出的{2}重创{1}，使其窒息而死	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 6 L1686634；武器、射擊武器
+mortally wounded the {@1} {2}, who suffocated, with {3}	用{3}重創{1}{2}，使其窒息而死	用{3}重创{1}{2}，使其窒息而死	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 6 L1686634；武器（the 種族 名字寫法）
+mortally wounded {1}, who suffocated, with {2}	用{2}重創{1}，使其窒息而死	用{2}重创{1}，使其窒息而死	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 6 L1686634；武器
+mortally wounded the {@1} {2}, who suffocated	重創{1}{2}，使其窒息而死	重创{1}{2}，使其窒息而死	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 6 L1686634（the 種族 名字寫法）
+mortally wounded {1}, who suffocated	重創{1}，使其窒息而死	重创{1}，使其窒息而死	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 6 L1686634
+threw the {@1} {2} against an obstacle, causing immediate death	把{1}{2}摔向障礙物，當場斃命	把{1}{2}摔向障碍物，当场毙命	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 9 L1686662（the 種族 名字寫法）
+threw {1} against an obstacle, causing immediate death	把{1}摔向障礙物，當場斃命	把{1}摔向障碍物，当场毙命	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 9 L1686662
+burned the {@1} {2} to death	燒死{1}{2}	烧死{1}{2}	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 0xd L1686683（the 種族 名字寫法）
+burned {1} to death	燒死{1}	烧死{1}	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 0xd L1686683
+murdered the {@1} {2}	謀殺{1}{2}	谋杀{1}{2}	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 0x14 L1686689（the 種族 名字寫法）
+murdered {1}	謀殺{1}	谋杀{1}	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 0x14 L1686689
+threw the {@1} {2} into a pit of spikes	把{1}{2}扔進尖刺坑	把{1}{2}扔进尖刺坑	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 0x1b L1686695（the 種族 名字寫法）
+threw {1} into a pit of spikes	把{1}扔進尖刺坑	把{1}扔进尖刺坑	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 0x1b L1686695
+beheaded the {@1} {2}	將{1}{2}斬首	将{1}{2}斩首	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 0x1f L1686706（the 種族 名字寫法）
+beheaded {1}	將{1}斬首	将{1}斩首	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 0x1f L1686706
+crucified the {@1} {2}	將{1}{2}釘上十字架	将{1}{2}钉上十字架	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 0x20 L1686712（the 種族 名字寫法）
+crucified {1}	將{1}釘上十字架	将{1}钉上十字架	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 0x20 L1686712
+buried the {@1} {2} alive	活埋{1}{2}	活埋{1}{2}	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 0x21 L1686719（the 種族 名字寫法）
+buried {1} alive	活埋{1}	活埋{1}	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 0x21 L1686719
+drowned the {@1} {2}	對{1}{2}處以溺刑	对{1}{2}处以溺刑	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 0x22 L1686725（the 種族 名字寫法）
+drowned {1}	對{1}處以溺刑	对{1}处以溺刑	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 0x22 L1686725
+burned the {@1} {2} alive	活活燒死{1}{2}	活活烧死{1}{2}	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 0x23 L1686732（the 種族 名字寫法）
+burned {1} alive	活活燒死{1}	活活烧死{1}	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 0x23 L1686732
+fed the {@1} {2} to beasts	把{1}{2}拿去餵野獸	把{1}{2}拿去喂野兽	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 0x24 L1686745（the 種族 名字寫法）
+fed {1} to beasts	把{1}拿去餵野獸	把{1}拿去喂野兽	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 0x24 L1686745
+hacked the {@1} {2} to pieces	把{1}{2}砍成碎塊	把{1}{2}砍成碎块	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 0x25 L1686756（the 種族 名字寫法）
+hacked {1} to pieces	把{1}砍成碎塊	把{1}砍成碎块	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 0x25 L1686756
+left the {@1} {2} out in the air	把{1}{2}留在戶外處決	把{1}{2}留在户外处决	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 0x26 L1686767（the 種族 名字寫法）
+left {1} out in the air	把{1}留在戶外處決	把{1}留在户外处决	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 0x26 L1686767
+scared the {@1} {2} to death	嚇死{1}{2}	吓死{1}{2}	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 0x2d L1686777（the 種族 名字寫法）
+scared {1} to death	嚇死{1}	吓死{1}	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 0x2d L1686777
+drained the {@1} {2} of blood	吸乾{1}{2}的血	吸干{1}{2}的血	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 0x30 L1686790（the 種族 名字寫法）
+drained {1} of blood	吸乾{1}的血	吸干{1}的血	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 0x30 L1686790
+executed the {@1} {2}	處決{1}{2}	处决{1}{2}	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 0x36 L1686842（the 種族 名字寫法）
+executed {1}	處決{1}	处决{1}	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 0x36 L1686842
+burned the {@1} {2} in dragon fire	用龍焰燒死{1}{2}	用龙焰烧死{1}{2}	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 0xc L1686673（有地點時由通用外框接；沒有地點的見本檔外框）（the 種族 名字寫法）
+burned {1} in dragon fire	用龍焰燒死{1}	用龙焰烧死{1}	inner	FUN_140b70870 傳說事件死因片語（兇手為主詞：事件從兇手的角度敘述，param_3[8]==兇手）；{1} 死者；排在被動句之後 case 0xc L1686673（有地點時由通用外框接；沒有地點的見本檔外框）
+In memory of {1} / {#2} - {#3} / {%4}	紀念{1}／{2}年至{3}年／{4}	纪念{1}／{2}年至{3}年／{4}		FUN_140cc23e0 L1907224 墓碑銘文（雕刻石板的物品說明，FUN_140dac290／FUN_140fd9120／FUN_14101da00 雕好石板時寫入）：In memory of 名字（或 a 種族），各項以 / 隔開；{2}-{3} 生卒年（L1907913 隨機寫法之一）
+In memory of {1} / {#2} - {#3}	紀念{1}／{2}年至{3}年	纪念{1}／{2}年至{3}年		FUN_140cc23e0 L1907224 墓碑銘文（雕刻石板的物品說明，FUN_140dac290／FUN_140fd9120／FUN_14101da00 雕好石板時寫入）：In memory of 名字（或 a 種族），各項以 / 隔開；生卒年後沒有其他項目
+In memory of {1} / {%2}	紀念{1}／{2}	纪念{1}／{2}		FUN_140cc23e0 L1907224 墓碑銘文（雕刻石板的物品說明，FUN_140dac290／FUN_140fd9120／FUN_14101da00 雕好石板時寫入）：In memory of 名字（或 a 種族），各項以 / 隔開；{2} 其餘各項（本檔 {%1} / {%2} 逐項接）
+{%1} / {%2}	{1}／{2}	{1}／{2}		FUN_140cc23e0 墓碑銘文的項目清單（遊戲用 / 隔開）；清單句型只套在佔位裡，一項遞迴一層
+Born {#1}	生於{1}年	生于{1}年	inner	FUN_140cc23e0 墓碑項目 L1907354／L1907838 出生年
+b.{#1} d.{#2}	生於{1}年，卒於{2}年	生于{1}年，卒于{2}年	inner	FUN_140cc23e0 墓碑項目 L1907910 生卒年（隨機寫法之一）
+d.{#1}	卒於{1}年	卒于{1}年	inner	FUN_140cc23e0 墓碑項目 L1907897 沒有出生年時的卒年（隨機寫法之一）
+Died {#1}	卒於{1}年	卒于{1}年	inner	FUN_140cc23e0 墓碑項目 L1907897 同上，另一種寫法
+{%1} in {2} in the year {#3}	{3}年於{2}{1}	{3}年于{2}{1}	inner	FUN_140cc23e0 墓碑項目 L1907863–1907877 死因（或 Went missing）＋ in 事件名（戰役等，照原文）＋ in the year 年；死因見本檔
+{%1} in the year {#2}	{2}年{1}	{2}年{1}	inner	FUN_140cc23e0 墓碑項目 L1907876 死因（或 Went missing）＋ in the year 年
+Collapsed in {1} in the year {#2}	{2}年於{1}倒地身亡	{2}年于{1}倒地身亡	inner	FUN_140cc23e0 墓碑死因項目 case 0x2f L1907713 沒有兇手、沒有武器（不寫 Collapsed 條目：清單句型會把 Collapsed, struck down by X 切開）；單字死因連 in the year 寫成句型，不寫單字條目（大寫單字會被大小寫退回，變成別的句型 {@n} 收得到的詞）
+Collapsed in the year {#1}	{1}年倒地身亡	{1}年倒地身亡	inner	FUN_140cc23e0 墓碑死因項目 case 0x2f L1907713 沒有兇手、沒有武器（不寫 Collapsed 條目：清單句型會把 Collapsed, struck down by X 切開）；單字死因連 in the year 寫成句型，不寫單字條目（大寫單字會被大小寫退回，變成別的句型 {@n} 收得到的詞）
+Murdered in {1} in the year {#2}	{2}年於{1}被謀殺	{2}年于{1}被谋杀	inner	FUN_140cc23e0 墓碑死因項目 case 0x14 L1907621；單字死因連 in the year 寫成句型，不寫單字條目（大寫單字會被大小寫退回，變成別的句型 {@n} 收得到的詞）
+Murdered in the year {#1}	{1}年被謀殺	{1}年被谋杀	inner	FUN_140cc23e0 墓碑死因項目 case 0x14 L1907621；單字死因連 in the year 寫成句型，不寫單字條目（大寫單字會被大小寫退回，變成別的句型 {@n} 收得到的詞）
+Beheaded in {1} in the year {#2}	{2}年於{1}被斬首	{2}年于{1}被斩首	inner	FUN_140cc23e0 墓碑死因項目 case 0x1f L1907648；單字死因連 in the year 寫成句型，不寫單字條目（大寫單字會被大小寫退回，變成別的句型 {@n} 收得到的詞）
+Beheaded in the year {#1}	{1}年被斬首	{1}年被斩首	inner	FUN_140cc23e0 墓碑死因項目 case 0x1f L1907648；單字死因連 in the year 寫成句型，不寫單字條目（大寫單字會被大小寫退回，變成別的句型 {@n} 收得到的詞）
+Crucified in {1} in the year {#2}	{2}年於{1}被釘上十字架	{2}年于{1}被钉上十字架	inner	FUN_140cc23e0 墓碑死因項目 case 0x20 L1907651；單字死因連 in the year 寫成句型，不寫單字條目（大寫單字會被大小寫退回，變成別的句型 {@n} 收得到的詞）
+Crucified in the year {#1}	{1}年被釘上十字架	{1}年被钉上十字架	inner	FUN_140cc23e0 墓碑死因項目 case 0x20 L1907651；單字死因連 in the year 寫成句型，不寫單字條目（大寫單字會被大小寫退回，變成別的句型 {@n} 收得到的詞）
+Executed in {1} in the year {#2}	{2}年於{1}被處決	{2}年于{1}被处决	inner	FUN_140cc23e0 墓碑死因項目 case 0x36 L1907808；單字死因連 in the year 寫成句型，不寫單字條目（大寫單字會被大小寫退回，變成別的句型 {@n} 收得到的詞）
+Executed in the year {#1}	{1}年被處決	{1}年被处决	inner	FUN_140cc23e0 墓碑死因項目 case 0x36 L1907808；單字死因連 in the year 寫成句型，不寫單字條目（大寫單字會被大小寫退回，變成別的句型 {@n} 收得到的詞）
+Slaughtered in {1} in the year {#2}	{2}年於{1}被宰殺	{2}年于{1}被宰杀	inner	FUN_140cc23e0 墓碑死因項目 case 0x31 L1907754；單字死因連 in the year 寫成句型，不寫單字條目（大寫單字會被大小寫退回，變成別的句型 {@n} 收得到的詞）
+Slaughtered in the year {#1}	{1}年被宰殺	{1}年被宰杀	inner	FUN_140cc23e0 墓碑死因項目 case 0x31 L1907754；單字死因連 in the year 寫成句型，不寫單字條目（大寫單字會被大小寫退回，變成別的句型 {@n} 收得到的詞）
+Scuttled in {1} in the year {#2}	{2}年於{1}被拆毀	{2}年于{1}被拆毁	inner	FUN_140cc23e0 墓碑死因項目 case 8 L1907549；單字死因連 in the year 寫成句型，不寫單字條目（大寫單字會被大小寫退回，變成別的句型 {@n} 收得到的詞）
+Scuttled in the year {#1}	{1}年被拆毀	{1}年被拆毁	inner	FUN_140cc23e0 墓碑死因項目 case 8 L1907549；單字死因連 in the year 寫成句型，不寫單字條目（大寫單字會被大小寫退回，變成別的句型 {@n} 收得到的詞）
+Shot and killed by the {@1} {2} with {3} from {4}	被{1}{2}用{4}射出的{3}射殺	被{1}{2}用{4}射出的{3}射杀	inner	FUN_140cc23e0 墓碑死因項目 case 3 L1907495；兇手（人名或 a 種族）、武器、射擊武器（the 種族 名字寫法）
+Shot and killed by {1} with {2} from {3}	被{1}用{3}射出的{2}射殺	被{1}用{3}射出的{2}射杀	inner	FUN_140cc23e0 墓碑死因項目 case 3 L1907495；兇手（人名或 a 種族）、武器、射擊武器
+Shot and killed by the {@1} {2} with {3}	被{1}{2}用{3}射殺	被{1}{2}用{3}射杀	inner	FUN_140cc23e0 墓碑死因項目 case 3 L1907495；兇手、武器（或只有射擊武器）（the 種族 名字寫法）
+Shot and killed by {1} with {2}	被{1}用{2}射殺	被{1}用{2}射杀	inner	FUN_140cc23e0 墓碑死因項目 case 3 L1907495；兇手、武器（或只有射擊武器）
+Shot and killed by the {@1} {2}	被{1}{2}射殺	被{1}{2}射杀	inner	FUN_140cc23e0 墓碑死因項目 case 3 L1907495；兇手（人名或 a 種族）（the 種族 名字寫法）
+Shot and killed by {1}	被{1}射殺	被{1}射杀	inner	FUN_140cc23e0 墓碑死因項目 case 3 L1907495；兇手（人名或 a 種族）
+Shot and killed with {1} from {2}	被{2}射出的{1}射殺	被{2}射出的{1}射杀	inner	FUN_140cc23e0 墓碑死因項目 case 3 L1907495；沒有兇手：武器、射擊武器
+Shot and killed with {1}	被{1}射殺	被{1}射杀	inner	FUN_140cc23e0 墓碑死因項目 case 3 L1907495；沒有兇手：武器
+Struck down by the {@1} {2} with {3} from {4}	被{1}{2}用{4}射出的{3}擊倒身亡	被{1}{2}用{4}射出的{3}击倒身亡	inner	FUN_140cc23e0 墓碑死因項目 case 7 L1907546；兇手（人名或 a 種族）、武器、射擊武器（the 種族 名字寫法）
+Struck down by {1} with {2} from {3}	被{1}用{3}射出的{2}擊倒身亡	被{1}用{3}射出的{2}击倒身亡	inner	FUN_140cc23e0 墓碑死因項目 case 7 L1907546；兇手（人名或 a 種族）、武器、射擊武器
+Struck down by the {@1} {2} with {3}	被{1}{2}用{3}擊倒身亡	被{1}{2}用{3}击倒身亡	inner	FUN_140cc23e0 墓碑死因項目 case 7 L1907546；兇手、武器（或只有射擊武器）（the 種族 名字寫法）
+Struck down by {1} with {2}	被{1}用{2}擊倒身亡	被{1}用{2}击倒身亡	inner	FUN_140cc23e0 墓碑死因項目 case 7 L1907546；兇手、武器（或只有射擊武器）
+Struck down by the {@1} {2}	被{1}{2}擊倒身亡	被{1}{2}击倒身亡	inner	FUN_140cc23e0 墓碑死因項目 case 7 L1907546；兇手（人名或 a 種族）（the 種族 名字寫法）
+Struck down by {1}	被{1}擊倒身亡	被{1}击倒身亡	inner	FUN_140cc23e0 墓碑死因項目 case 7 L1907546；兇手（人名或 a 種族）
+Struck down with {1} from {2}	被{2}射出的{1}擊倒身亡	被{2}射出的{1}击倒身亡	inner	FUN_140cc23e0 墓碑死因項目 case 7 L1907546；沒有兇手：武器、射擊武器
+Struck down with {1}	被{1}擊倒身亡	被{1}击倒身亡	inner	FUN_140cc23e0 墓碑死因項目 case 7 L1907546；沒有兇手：武器
+Slaughtered by the {@1} {2} with {3} from {4}	被{1}{2}用{4}射出的{3}宰殺	被{1}{2}用{4}射出的{3}宰杀	inner	FUN_140cc23e0 墓碑死因項目 case 0x31 L1907754；兇手（人名或 a 種族）、武器、射擊武器（the 種族 名字寫法）
+Slaughtered by {1} with {2} from {3}	被{1}用{3}射出的{2}宰殺	被{1}用{3}射出的{2}宰杀	inner	FUN_140cc23e0 墓碑死因項目 case 0x31 L1907754；兇手（人名或 a 種族）、武器、射擊武器
+Slaughtered by the {@1} {2} with {3}	被{1}{2}用{3}宰殺	被{1}{2}用{3}宰杀	inner	FUN_140cc23e0 墓碑死因項目 case 0x31 L1907754；兇手、武器（或只有射擊武器）（the 種族 名字寫法）
+Slaughtered by {1} with {2}	被{1}用{2}宰殺	被{1}用{2}宰杀	inner	FUN_140cc23e0 墓碑死因項目 case 0x31 L1907754；兇手、武器（或只有射擊武器）
+Slaughtered by the {@1} {2}	被{1}{2}宰殺	被{1}{2}宰杀	inner	FUN_140cc23e0 墓碑死因項目 case 0x31 L1907754；兇手（人名或 a 種族）（the 種族 名字寫法）
+Slaughtered by {1}	被{1}宰殺	被{1}宰杀	inner	FUN_140cc23e0 墓碑死因項目 case 0x31 L1907754；兇手（人名或 a 種族）
+Slaughtered with {1} from {2}	被{2}射出的{1}宰殺	被{2}射出的{1}宰杀	inner	FUN_140cc23e0 墓碑死因項目 case 0x31 L1907754；沒有兇手：武器、射擊武器
+Slaughtered with {1}	被{1}宰殺	被{1}宰杀	inner	FUN_140cc23e0 墓碑死因項目 case 0x31 L1907754；沒有兇手：武器
+Murdered by the {@1} {2}	被{1}{2}謀殺	被{1}{2}谋杀	inner	FUN_140cc23e0 墓碑死因項目 case 0x14 L1907621；兇手（人名或 a 種族）（the 種族 名字寫法）
+Murdered by {1}	被{1}謀殺	被{1}谋杀	inner	FUN_140cc23e0 墓碑死因項目 case 0x14 L1907621；兇手（人名或 a 種族）
+Beheaded by the {@1} {2}	被{1}{2}斬首	被{1}{2}斩首	inner	FUN_140cc23e0 墓碑死因項目 case 0x1f L1907648；兇手（人名或 a 種族）（the 種族 名字寫法）
+Beheaded by {1}	被{1}斬首	被{1}斩首	inner	FUN_140cc23e0 墓碑死因項目 case 0x1f L1907648；兇手（人名或 a 種族）
+Crucified by the {@1} {2}	被{1}{2}釘上十字架	被{1}{2}钉上十字架	inner	FUN_140cc23e0 墓碑死因項目 case 0x20 L1907651；兇手（人名或 a 種族）（the 種族 名字寫法）
+Crucified by {1}	被{1}釘上十字架	被{1}钉上十字架	inner	FUN_140cc23e0 墓碑死因項目 case 0x20 L1907651；兇手（人名或 a 種族）
+Buried alive by the {@1} {2}	被{1}{2}活埋	被{1}{2}活埋	inner	FUN_140cc23e0 墓碑死因項目 case 0x21 L1907654；兇手（人名或 a 種族）（the 種族 名字寫法）
+Buried alive by {1}	被{1}活埋	被{1}活埋	inner	FUN_140cc23e0 墓碑死因項目 case 0x21 L1907654；兇手（人名或 a 種族）
+Drowned by the {@1} {2}	被{1}{2}處以溺刑	被{1}{2}处以溺刑	inner	FUN_140cc23e0 墓碑死因項目 case 0x22 L1907657（處以溺刑；沒有兇手時與 case 5 同為 Drowned，照溺死）；兇手（人名或 a 種族）（the 種族 名字寫法）
+Drowned by {1}	被{1}處以溺刑	被{1}处以溺刑	inner	FUN_140cc23e0 墓碑死因項目 case 0x22 L1907657（處以溺刑；沒有兇手時與 case 5 同為 Drowned，照溺死）；兇手（人名或 a 種族）
+Burned alive by the {@1} {2}	被{1}{2}活活燒死	被{1}{2}活活烧死	inner	FUN_140cc23e0 墓碑死因項目 case 0x23 L1907660；兇手（人名或 a 種族）（the 種族 名字寫法）
+Burned alive by {1}	被{1}活活燒死	被{1}活活烧死	inner	FUN_140cc23e0 墓碑死因項目 case 0x23 L1907660；兇手（人名或 a 種族）
+Fed to beasts by the {@1} {2}	被{1}{2}拿去餵野獸	被{1}{2}拿去喂野兽	inner	FUN_140cc23e0 墓碑死因項目 case 0x24 L1907663；兇手（人名或 a 種族）（the 種族 名字寫法）
+Fed to beasts by {1}	被{1}拿去餵野獸	被{1}拿去喂野兽	inner	FUN_140cc23e0 墓碑死因項目 case 0x24 L1907663；兇手（人名或 a 種族）
+Hacked to pieces by the {@1} {2}	被{1}{2}砍成碎塊	被{1}{2}砍成碎块	inner	FUN_140cc23e0 墓碑死因項目 case 0x25 L1907666；兇手（人名或 a 種族）（the 種族 名字寫法）
+Hacked to pieces by {1}	被{1}砍成碎塊	被{1}砍成碎块	inner	FUN_140cc23e0 墓碑死因項目 case 0x25 L1907666；兇手（人名或 a 種族）
+Left out in the air by the {@1} {2}	被{1}{2}留在戶外處決	被{1}{2}留在户外处决	inner	FUN_140cc23e0 墓碑死因項目 case 0x26 L1907669；兇手（人名或 a 種族）（the 種族 名字寫法）
+Left out in the air by {1}	被{1}留在戶外處決	被{1}留在户外处决	inner	FUN_140cc23e0 墓碑死因項目 case 0x26 L1907669；兇手（人名或 a 種族）
+Scared to death by the {@1} {2}	被{1}{2}嚇死	被{1}{2}吓死	inner	FUN_140cc23e0 墓碑死因項目 case 0x2d L1907703；兇手（人名或 a 種族）（the 種族 名字寫法）
+Scared to death by {1}	被{1}嚇死	被{1}吓死	inner	FUN_140cc23e0 墓碑死因項目 case 0x2d L1907703；兇手（人名或 a 種族）
+Drained of blood by the {@1} {2}	被{1}{2}吸乾了血	被{1}{2}吸干了血	inner	FUN_140cc23e0 墓碑死因項目 case 0x30 L1907751；兇手（人名或 a 種族）（the 種族 名字寫法）
+Drained of blood by {1}	被{1}吸乾了血	被{1}吸干了血	inner	FUN_140cc23e0 墓碑死因項目 case 0x30 L1907751；兇手（人名或 a 種族）
+Executed by the {@1} {2}	被{1}{2}處決	被{1}{2}处决	inner	FUN_140cc23e0 墓碑死因項目 case 0x36 L1907808；兇手（人名或 a 種族）（the 種族 名字寫法）
+Executed by {1}	被{1}處決	被{1}处决	inner	FUN_140cc23e0 墓碑死因項目 case 0x36 L1907808；兇手（人名或 a 種族）
+Bled to death, slain with {1} from {2}	被{2}射出的{1}重創，失血而死	被{2}射出的{1}重创，失血而死	inner	FUN_140cc23e0 墓碑死因項目 case 4 L1907518；沒有兇手：武器、射擊武器
+Bled to death, slain with {1}	被{1}重創，失血而死	被{1}重创，失血而死	inner	FUN_140cc23e0 墓碑死因項目 case 4 L1907518；沒有兇手：武器
+Bled to death, slain by the {@1} {2} with {3} from {4}	被{1}{2}用{4}射出的{3}重創，失血而死	被{1}{2}用{4}射出的{3}重创，失血而死	inner	FUN_140cc23e0 墓碑死因項目 case 4 L1907518；兇手、武器、射擊武器（the 種族 名字寫法）
+Bled to death, slain by {1} with {2} from {3}	被{1}用{3}射出的{2}重創，失血而死	被{1}用{3}射出的{2}重创，失血而死	inner	FUN_140cc23e0 墓碑死因項目 case 4 L1907518；兇手、武器、射擊武器
+Bled to death, slain by the {@1} {2} with {3}	被{1}{2}用{3}重創，失血而死	被{1}{2}用{3}重创，失血而死	inner	FUN_140cc23e0 墓碑死因項目 case 4 L1907518；兇手、武器（the 種族 名字寫法）
+Bled to death, slain by {1} with {2}	被{1}用{2}重創，失血而死	被{1}用{2}重创，失血而死	inner	FUN_140cc23e0 墓碑死因項目 case 4 L1907518；兇手、武器
+Bled to death, slain by the {@1} {2}	被{1}{2}重創，失血而死	被{1}{2}重创，失血而死	inner	FUN_140cc23e0 墓碑死因項目 case 4 L1907518；兇手（人名或 a 種族）（the 種族 名字寫法）
+Bled to death, slain by {1}	被{1}重創，失血而死	被{1}重创，失血而死	inner	FUN_140cc23e0 墓碑死因項目 case 4 L1907518；兇手（人名或 a 種族）
+Suffocated, slain by  with {1} from {2}	被{2}射出的{1}重創，窒息而死	被{2}射出的{1}重创，窒息而死	inner	FUN_140cc23e0 墓碑死因項目 case 6 L1907537（沒有兇手時寫成 slain by  with，兩個空白照抄；排在有兇手的前面）；沒有兇手：武器、射擊武器
+Suffocated, slain by  with {1}	被{1}重創，窒息而死	被{1}重创，窒息而死	inner	FUN_140cc23e0 墓碑死因項目 case 6 L1907537（沒有兇手時寫成 slain by  with，兩個空白照抄；排在有兇手的前面）；沒有兇手：武器
+Suffocated, slain by the {@1} {2} with {3} from {4}	被{1}{2}用{4}射出的{3}重創，窒息而死	被{1}{2}用{4}射出的{3}重创，窒息而死	inner	FUN_140cc23e0 墓碑死因項目 case 6 L1907537（沒有兇手時寫成 slain by  with，兩個空白照抄；排在有兇手的前面）；兇手、武器、射擊武器（the 種族 名字寫法）
+Suffocated, slain by {1} with {2} from {3}	被{1}用{3}射出的{2}重創，窒息而死	被{1}用{3}射出的{2}重创，窒息而死	inner	FUN_140cc23e0 墓碑死因項目 case 6 L1907537（沒有兇手時寫成 slain by  with，兩個空白照抄；排在有兇手的前面）；兇手、武器、射擊武器
+Suffocated, slain by the {@1} {2} with {3}	被{1}{2}用{3}重創，窒息而死	被{1}{2}用{3}重创，窒息而死	inner	FUN_140cc23e0 墓碑死因項目 case 6 L1907537（沒有兇手時寫成 slain by  with，兩個空白照抄；排在有兇手的前面）；兇手、武器（the 種族 名字寫法）
+Suffocated, slain by {1} with {2}	被{1}用{2}重創，窒息而死	被{1}用{2}重创，窒息而死	inner	FUN_140cc23e0 墓碑死因項目 case 6 L1907537（沒有兇手時寫成 slain by  with，兩個空白照抄；排在有兇手的前面）；兇手、武器
+Suffocated, slain by the {@1} {2}	被{1}{2}重創，窒息而死	被{1}{2}重创，窒息而死	inner	FUN_140cc23e0 墓碑死因項目 case 6 L1907537（沒有兇手時寫成 slain by  with，兩個空白照抄；排在有兇手的前面）；兇手（人名或 a 種族）（the 種族 名字寫法）
+Suffocated, slain by {1}	被{1}重創，窒息而死	被{1}重创，窒息而死	inner	FUN_140cc23e0 墓碑死因項目 case 6 L1907537（沒有兇手時寫成 slain by  with，兩個空白照抄；排在有兇手的前面）；兇手（人名或 a 種族）
+Collapsed, struck down  with {1} from {2}	被{2}射出的{1}擊中，倒地身亡	被{2}射出的{1}击中，倒地身亡	inner	FUN_140cc23e0 墓碑死因項目 case 0x2f L1907711（沒有兇手時寫成 struck down  with，兩個空白照抄）；沒有兇手：武器、射擊武器
+Collapsed, struck down  with {1}	被{1}擊中，倒地身亡	被{1}击中，倒地身亡	inner	FUN_140cc23e0 墓碑死因項目 case 0x2f L1907711（沒有兇手時寫成 struck down  with，兩個空白照抄）；沒有兇手：武器
+Collapsed, struck down by the {@1} {2} with {3} from {4}	被{1}{2}用{4}射出的{3}擊中，倒地身亡	被{1}{2}用{4}射出的{3}击中，倒地身亡	inner	FUN_140cc23e0 墓碑死因項目 case 0x2f L1907711（沒有兇手時寫成 struck down  with，兩個空白照抄）；兇手、武器、射擊武器（the 種族 名字寫法）
+Collapsed, struck down by {1} with {2} from {3}	被{1}用{3}射出的{2}擊中，倒地身亡	被{1}用{3}射出的{2}击中，倒地身亡	inner	FUN_140cc23e0 墓碑死因項目 case 0x2f L1907711（沒有兇手時寫成 struck down  with，兩個空白照抄）；兇手、武器、射擊武器
+Collapsed, struck down by the {@1} {2} with {3}	被{1}{2}用{3}擊中，倒地身亡	被{1}{2}用{3}击中，倒地身亡	inner	FUN_140cc23e0 墓碑死因項目 case 0x2f L1907711（沒有兇手時寫成 struck down  with，兩個空白照抄）；兇手、武器（the 種族 名字寫法）
+Collapsed, struck down by {1} with {2}	被{1}用{2}擊中，倒地身亡	被{1}用{2}击中，倒地身亡	inner	FUN_140cc23e0 墓碑死因項目 case 0x2f L1907711（沒有兇手時寫成 struck down  with，兩個空白照抄）；兇手、武器
+Collapsed, struck down by the {@1} {2}	被{1}{2}擊中，倒地身亡	被{1}{2}击中，倒地身亡	inner	FUN_140cc23e0 墓碑死因項目 case 0x2f L1907711（沒有兇手時寫成 struck down  with，兩個空白照抄）；兇手（人名或 a 種族）（the 種族 名字寫法）
+Collapsed, struck down by {1}	被{1}擊中，倒地身亡	被{1}击中，倒地身亡	inner	FUN_140cc23e0 墓碑死因項目 case 0x2f L1907711（沒有兇手時寫成 struck down  with，兩個空白照抄）；兇手（人名或 a 種族）
+Died after colliding with an obstacle, slain by the {@1} {2}	被{1}{2}摔向障礙物而死	被{1}{2}摔向障碍物而死	inner	FUN_140cc23e0 墓碑死因項目 case 9 L1907552；兇手（人名或 a 種族）（the 種族 名字寫法）
+Died after colliding with an obstacle, slain by {1}	被{1}摔向障礙物而死	被{1}摔向障碍物而死	inner	FUN_140cc23e0 墓碑死因項目 case 9 L1907552；兇手（人名或 a 種族）
+Impaled on spikes, slain by the {@1} {2}	被{1}{2}推上尖刺，刺穿身亡	被{1}{2}推上尖刺，刺穿身亡	inner	FUN_140cc23e0 墓碑死因項目 case 0x1b L1907636；兇手（人名或 a 種族）（the 種族 名字寫法）
+Impaled on spikes, slain by {1}	被{1}推上尖刺，刺穿身亡	被{1}推上尖刺，刺穿身亡	inner	FUN_140cc23e0 墓碑死因項目 case 0x1b L1907636；兇手（人名或 a 種族）
+Succumbed to infection, slain by the {@1} {2}	被{1}{2}所傷，最終死於感染	被{1}{2}所伤，最终死于感染	inner	FUN_140cc23e0 墓碑死因項目 case 0x2b L1907684；兇手（人名或 a 種族）（the 種族 名字寫法）
+Succumbed to infection, slain by {1}	被{1}所傷，最終死於感染	被{1}所伤，最终死于感染	inner	FUN_140cc23e0 墓碑死因項目 case 0x2b L1907684；兇手（人名或 a 種族）
+Burned up in the {@1} {2}'s dragon fire	在{1}{2}的龍焰中燒成灰	在{1}{2}的龙焰中烧成灰	inner	FUN_140cc23e0 墓碑死因項目 case 0xc L1907562；人名或 a 種族（所有格）（the 種族 名字寫法）
+Burned up in {1}'s dragon fire	在{1}的龍焰中燒成灰	在{1}的龙焰中烧成灰	inner	FUN_140cc23e0 墓碑死因項目 case 0xc L1907562；人名或 a 種族（所有格）
+Burned to death by the {@1} {2}'s fire	被{1}{2}的火焰燒死	被{1}{2}的火焰烧死	inner	FUN_140cc23e0 墓碑死因項目 case 0xd L1907596；人名（所有格）（the 種族 名字寫法）
+Burned to death by {1}'s fire	被{1}的火焰燒死	被{1}的火焰烧死	inner	FUN_140cc23e0 墓碑死因項目 case 0xd L1907596；人名（所有格）
+Burned to death by the {@1} {2} fire	被{1}{2}的火焰燒死	被{1}{2}的火焰烧死	inner	FUN_140cc23e0 墓碑死因項目 case 0xd L1907588；a 種族（the 種族 名字寫法）
+Burned to death by {1} fire	被{1}的火焰燒死	被{1}的火焰烧死	inner	FUN_140cc23e0 墓碑死因項目 case 0xd L1907588；a 種族
+Creator of {1}	{1}的創作者	{1}的创作者	inner	FUN_140cc23e0 墓碑項目 L1907929；作品名照原文
+{@1} of {2}, {#3} to {#4}	{3}年至{4}年任{2}的{1}	{3}年至{4}年任{2}的{1}	inner	FUN_140cc23e0 墓碑項目 L1908034–1908061 職位：{1} 職位名（首字大寫）、{2} 實體名、{3}{4} 任期；沒有任期（起始年 -1）的「職位 of 實體」不寫，太通用
+{@1} of {2} in {#3}	{3}年任{2}的{1}	{3}年任{2}的{1}	inner	FUN_140cc23e0 墓碑項目 L1908053 職位：起訖同年
+Slayer of the {@1} {2}	斬殺{1}{2}者	斩杀{1}{2}者	inner	FUN_140cc23e0 墓碑項目 L1908184、L1908210：獵物種族（首字大寫）、the 種族 名字或名字（the 種族 名字寫法）
+Slayer of {1}	斬殺{1}者	斩杀{1}者	inner	FUN_140cc23e0 墓碑項目 L1908184、L1908210：獵物種族（首字大寫）、the 種族 名字或名字
+Hunter of {1}	{1}獵人	{1}猎人	inner	FUN_140cc23e0 墓碑項目 L1908186：獵物種族（首字大寫）
+Loving {@1}	慈愛的{1}	慈爱的{1}	inner	FUN_140cc23e0 墓碑項目 L1908288 家人：mother and wife 等
+Devoted {@1}	盡心盡力的{1}	尽心尽力的{1}	inner	FUN_140cc23e0 墓碑項目 L1908294 家人
+United with {1}	與{1}合而為一	与{1}合而为一	inner	FUN_140cc23e0 墓碑項目 L1908370 偏好（材料）
+At one with {1}	與{1}融為一體	与{1}融为一体	inner	FUN_140cc23e0 墓碑項目 L1908378 偏好（材料）
+Lover of The {1}	熱愛《The {1}》	热爱《The {1}》	inner	FUN_140cc23e0 墓碑項目：偏好的詩歌／音樂／舞蹈形式名（作品名照原文、加《》；遊戲把名稱首字大寫成 The）
+Lover of {1}	熱愛{1}	热爱{1}	inner	FUN_140cc23e0 墓碑項目 L1908383、L1908542、L1908563、L1908751 偏好（材料、物品、植物、詩歌／音樂／舞蹈形式名照原文）
+Friend of {1}	{1}之友	{1}之友	inner	FUN_140cc23e0 墓碑項目 L1908512 偏好（生物）
+Admirer of {1}	欣賞{1}	欣赏{1}	inner	FUN_140cc23e0 墓碑項目 L1908518、L1908569、L1908721 偏好（生物、植物、形狀）
+The color {1} made {@2} happy	{1+色}讓{2}開心	{1+色}让{2}开心	inner	FUN_140cc23e0 墓碑項目 L1908587 偏好（顏色）；him／her／it

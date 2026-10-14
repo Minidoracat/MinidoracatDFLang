@@ -1,0 +1,33 @@
+en	zh-Hant	zh-Hans	align	note
+liquid cooking	烹煮液體用具	烹煮液体用具		FUN_140a2adb0 1479139；工具用途標籤（物品是不限種類的工具時只畫用途，例：工作指令條件）
+liquid scoop	舀液體用具	舀液体用具		FUN_140a2adb0 1479143；工具用途標籤（物品是不限種類的工具時只畫用途，例：工作指令條件）
+powder grinding receptacle	研磨粉末用容器	研磨粉末用容器		FUN_140a2adb0 1479147；工具用途標籤（物品是不限種類的工具時只畫用途，例：工作指令條件）
+powder grinding	研磨粉末用具	研磨粉末用具		FUN_140a2adb0 1479150；工具用途標籤（物品是不限種類的工具時只畫用途，例：工作指令條件）
+meat carving	切肉用具	切肉用具		FUN_140a2adb0 1479154；工具用途標籤（物品是不限種類的工具時只畫用途，例：工作指令條件）
+meat boning	剔骨用具	剔骨用具		FUN_140a2adb0 1479158；工具用途標籤（物品是不限種類的工具時只畫用途，例：工作指令條件）
+meat slicing	切肉片用具	切肉片用具		FUN_140a2adb0 1479162；工具用途標籤（物品是不限種類的工具時只畫用途，例：工作指令條件）
+meat cleaving	剁肉用具	剁肉用具		FUN_140a2adb0 1479166；工具用途標籤（物品是不限種類的工具時只畫用途，例：工作指令條件）
+meat-carving holder	切肉固定用具	切肉固定用具		FUN_140a2adb0 1479170；工具用途標籤（物品是不限種類的工具時只畫用途，例：工作指令條件）
+meal container	盛餐容器	盛餐容器		FUN_140a2adb0 1479174；工具用途標籤（物品是不限種類的工具時只畫用途，例：工作指令條件）
+liquid container	液體容器	液体容器		FUN_140a2adb0 1479178；工具用途標籤（物品是不限種類的工具時只畫用途，例：工作指令條件）
+food storage	食物儲存容器	食物储存容器		FUN_140a2adb0 1479182；工具用途標籤（物品是不限種類的工具時只畫用途，例：工作指令條件）
+small object container	小物件容器	小物件容器		FUN_140a2adb0 1479194；工具用途標籤（物品是不限種類的工具時只畫用途，例：工作指令條件）；術語例外：object
+track cart	軌道車	轨道车		FUN_140a2adb0 1479198；工具用途標籤（物品是不限種類的工具時只畫用途，例：工作指令條件）
+heavy object hauler	重物搬運用具	重物搬运用具		FUN_140a2adb0 1479202；工具用途標籤（物品是不限種類的工具時只畫用途，例：工作指令條件）；術語例外：object
+stand-and-work	站立工作用具	站立工作用具		FUN_140a2adb0 1479206；工具用途標籤（物品是不限種類的工具時只畫用途，例：工作指令條件）
+sheet roller	紙張捲軸	纸张卷轴		FUN_140a2adb0 1479210；工具用途標籤（物品是不限種類的工具時只畫用途，例：工作指令條件）
+folded sheet protector	摺頁保護套	折页保护套		FUN_140a2adb0 1479214；工具用途標籤（物品是不限種類的工具時只畫用途，例：工作指令條件）
+writing container	著作載體	著作载体		FUN_140a2adb0 1479218；工具用途標籤（物品是不限種類的工具時只畫用途，例：工作指令條件）
+display object	展示用具	展示用具		FUN_140a2adb0 1479226；工具用途標籤（物品是不限種類的工具時只畫用途，例：工作指令條件）；術語例外：object
+offering placement	供品擺放用具	供品摆放用具		FUN_140a2adb0 1479230；工具用途標籤（物品是不限種類的工具時只畫用途，例：工作指令條件）
+divination	占卜用具	占卜用具		FUN_140a2adb0 1479234；工具用途標籤（物品是不限種類的工具時只畫用途，例：工作指令條件）
+games of chance	機率遊戲用具	概率游戏用具		FUN_140a2adb0 1479237；工具用途標籤（物品是不限種類的工具時只畫用途，例：工作指令條件）
+item	物品	物品		FUN_140a82c10 的預設物品名（物品種類不限：edged item 有刃的物品）
+tool	工具	工具		FUN_140a82c10；物品種類 TOOL 的通稱
+thread	線	线		FUN_140a82c10；物品種類 THREAD 的通稱（plant thread 植物線）
+liquid	液體	液体		FUN_140a82c10；物品種類 LIQUID_MISC 的通稱
+remains	遺骸	遗骸		FUN_140a82c10；物品種類 REMAINS 的通稱
+drink	酒類	酒类		FUN_140a82c10；物品種類 DRINK 的通稱（小寫；大寫 Drink 是工作名稱「喝」）
+honey	蜂蜜	蜂蜜		反應原料代號（CONTAINS:honey），FUN_140a2adb0 1479120 接成 honey-containing
+oil	油	油		反應原料代號（CONTAINS:oil），FUN_140a2adb0 1479120 接成 oil-containing
+milk liquid	奶	奶		FUN_140a2adb0 工作物品條件：milk 性質＋liquid 物品名（通用句型會拼成「奶液體」）

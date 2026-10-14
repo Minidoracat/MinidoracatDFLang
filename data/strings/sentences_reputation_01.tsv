@@ -1,0 +1,196 @@
+en	zh-Hant	zh-Hans	align	note
+Reputation:	名聲：	名声：		FUN_1400bc360 115690：冒險模式人物頁團體清單的小標題（wrap_text）
+respected for heroic acts	因英勇事蹟受人尊敬	因英勇事迹受人尊敬		FUN_1400bc360 115732 名聲 case 0；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+greatly respected for heroic acts	因英勇事蹟備受尊敬	因英勇事迹备受尊敬		FUN_1400bc360 115736 名聲 case 0；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+hero	英雄	英雄		FUN_1400bc360 115741 名聲 case 0；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+famous hero	赫赫有名的英雄	赫赫有名的英雄		FUN_1400bc360 115746 名聲 case 0；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+legendary hero	傳奇英雄	传奇英雄		FUN_1400bc360 115751 名聲 case 0；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+dabbling training partner	偶爾一起訓練的夥伴	偶尔一起训练的伙伴		FUN_1400bc360 115763 名聲 case 1：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）；術語例外：dabbling
+training partner	訓練夥伴	训练伙伴		FUN_1400bc360 115760 名聲 case 1：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+noted training partner	著名的訓練夥伴	著名的训练伙伴		FUN_1400bc360 115767 名聲 case 1：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+famous training partner	赫赫有名的訓練夥伴	赫赫有名的训练伙伴		FUN_1400bc360 115772 名聲 case 1：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+legendary training partner	傳奇訓練夥伴	传奇训练伙伴		FUN_1400bc360 115777 名聲 case 1：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+dabbling trade partner	偶爾往來的貿易夥伴	偶尔往来的贸易伙伴		FUN_1400bc360 115840 名聲 case 4：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）；術語例外：dabbling
+trade partner	貿易夥伴	贸易伙伴		FUN_1400bc360 115844 名聲 case 4：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+noted trade partner	著名的貿易夥伴	著名的贸易伙伴		FUN_1400bc360 115849 名聲 case 4：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+famous trade partner	赫赫有名的貿易夥伴	赫赫有名的贸易伙伴		FUN_1400bc360 115854 名聲 case 4：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+legendary trade partner	傳奇貿易夥伴	传奇贸易伙伴		FUN_1400bc360 115859 名聲 case 4：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+possibly polite	或許有禮	或许有礼		FUN_1400bc360 115868 名聲 case 5：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+notably polite	相當有禮	相当有礼		FUN_1400bc360 115877 名聲 case 5：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+famously polite	以有禮聞名	以有礼闻名		FUN_1400bc360 115882 名聲 case 5：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+legendarily polite	有禮得堪稱傳奇	有礼得堪称传奇		FUN_1400bc360 115887 名聲 case 5：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+possible comrade	可能的戰友	可能的战友		FUN_1400bc360 115951 名聲 case 8：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+comrade	戰友	战友		FUN_1400bc360 115954 名聲 case 8：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+rumored hunter	傳聞中的獵人	传闻中的猎人		FUN_1400bc360 116368 名聲 case 23；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+talented hunter	有天分的獵人	有天赋的猎人		FUN_1400bc360 116372 名聲 case 23；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+great hunter	了不起的獵人	了不起的猎人		FUN_1400bc360 116377 名聲 case 23；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+legendary hunter	傳奇獵人	传奇猎人		FUN_1400bc360 116360 名聲 case 23；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+rumored brawler	傳聞中的好鬥之徒	传闻中的好斗之徒		FUN_1400bc360 115786 名聲 case 2；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+known brawler	有名的好鬥之徒	有名的好斗之徒		FUN_1400bc360 115786 名聲 case 2；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+noted brawler	著名的好鬥之徒	著名的好斗之徒		FUN_1400bc360 115786 名聲 case 2；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+famous brawler	赫赫有名的好鬥之徒	赫赫有名的好斗之徒		FUN_1400bc360 115786 名聲 case 2；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+legendary brawler	傳奇好鬥之徒	传奇好斗之徒		FUN_1400bc360 115786 名聲 case 2；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+rumored villain	傳聞中的惡棍	传闻中的恶棍		FUN_1400bc360 115817 名聲 case 3；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+known villain	有名的惡棍	有名的恶棍		FUN_1400bc360 115817 名聲 case 3；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+noted villain	著名的惡棍	著名的恶棍		FUN_1400bc360 115817 名聲 case 3；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+infamous villain	惡名昭彰的惡棍	臭名昭著的恶棍		FUN_1400bc360 115817 名聲 case 3；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+legendary villain	傳奇惡棍	传奇恶棍		FUN_1400bc360 115817 名聲 case 3；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+rumored killer	傳聞中的殺手	传闻中的杀手		FUN_1400bc360 115896 名聲 case 6；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+known killer	有名的殺手	有名的杀手		FUN_1400bc360 115896 名聲 case 6；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+noted killer	著名的殺手	著名的杀手		FUN_1400bc360 115896 名聲 case 6；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+infamous killer	惡名昭彰的殺手	臭名昭著的杀手		FUN_1400bc360 115896 名聲 case 6；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+legendary killer	傳奇殺手	传奇杀手		FUN_1400bc360 115896 名聲 case 6；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+rumored murderer	傳聞中的殺人犯	传闻中的杀人犯		FUN_1400bc360 115925 名聲 case 7；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+known murderer	有名的殺人犯	有名的杀人犯		FUN_1400bc360 115925 名聲 case 7；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+noted murderer	著名的殺人犯	著名的杀人犯		FUN_1400bc360 115925 名聲 case 7；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+infamous murderer	惡名昭彰的殺人犯	臭名昭著的杀人犯		FUN_1400bc360 115925 名聲 case 7；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+legendary murderer	傳奇殺人犯	传奇杀人犯		FUN_1400bc360 115925 名聲 case 7；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+noted comrade	著名的戰友	著名的战友		FUN_1400bc360 115958 名聲 case 8：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+famous comrade	赫赫有名的戰友	赫赫有名的战友		FUN_1400bc360 115958 名聲 case 8：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+legendary comrade	傳奇戰友	传奇战友		FUN_1400bc360 115958 名聲 case 8：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+rumored ally	傳聞中的盟友	传闻中的盟友		FUN_1400bc360 115977 名聲 case 9：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+known ally	有名的盟友	有名的盟友		FUN_1400bc360 115977 名聲 case 9：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+noted ally	著名的盟友	著名的盟友		FUN_1400bc360 115977 名聲 case 9：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+famous ally	赫赫有名的盟友	赫赫有名的盟友		FUN_1400bc360 115977 名聲 case 9：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+legendary ally	傳奇盟友	传奇盟友		FUN_1400bc360 115977 名聲 case 9：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+rumored enemy	傳聞中的敵人	传闻中的敌人		FUN_1400bc360 116005 名聲 case 10：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+known enemy	有名的敵人	有名的敌人		FUN_1400bc360 116005 名聲 case 10：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+noted enemy	著名的敵人	著名的敌人		FUN_1400bc360 116005 名聲 case 10：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+infamous enemy	惡名昭彰的敵人	臭名昭著的敌人		FUN_1400bc360 116005 名聲 case 10：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+legendary enemy	傳奇敵人	传奇敌人		FUN_1400bc360 116005 名聲 case 10：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+rumored enemy fighter	傳聞中的敵方戰士	传闻中的敌方战士		FUN_1400bc360 116033 名聲 case 11；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+known enemy fighter	有名的敵方戰士	有名的敌方战士		FUN_1400bc360 116033 名聲 case 11；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+noted enemy fighter	著名的敵方戰士	著名的敌方战士		FUN_1400bc360 116033 名聲 case 11；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+infamous enemy fighter	惡名昭彰的敵方戰士	臭名昭著的敌方战士		FUN_1400bc360 116033 名聲 case 11；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+legendary enemy fighter	傳奇敵方戰士	传奇敌方战士		FUN_1400bc360 116033 名聲 case 11；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+rumored fighter	傳聞中的戰士	传闻中的战士		FUN_1400bc360 116061 名聲 case 12；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+known fighter	有名的戰士	有名的战士		FUN_1400bc360 116061 名聲 case 12；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+noted fighter	著名的戰士	著名的战士		FUN_1400bc360 116061 名聲 case 12；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+famous fighter	赫赫有名的戰士	赫赫有名的战士		FUN_1400bc360 116061 名聲 case 12；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+legendary fighter	傳奇戰士	传奇战士		FUN_1400bc360 116061 名聲 case 12；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+rumored bully	傳聞中的惡霸	传闻中的恶霸		FUN_1400bc360 116089 名聲 case 13；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+known bully	有名的惡霸	有名的恶霸		FUN_1400bc360 116089 名聲 case 13；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+noted bully	著名的惡霸	著名的恶霸		FUN_1400bc360 116089 名聲 case 13；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+infamous bully	惡名昭彰的惡霸	臭名昭著的恶霸		FUN_1400bc360 116089 名聲 case 13；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+legendary bully	傳奇惡霸	传奇恶霸		FUN_1400bc360 116089 名聲 case 13；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+rumored brigand	傳聞中的強盜	传闻中的强盗		FUN_1400bc360 116120 名聲 case 14；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+known brigand	有名的強盜	有名的强盗		FUN_1400bc360 116120 名聲 case 14；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+noted brigand	著名的強盜	著名的强盗		FUN_1400bc360 116120 名聲 case 14；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+infamous brigand	惡名昭彰的強盜	臭名昭著的强盗		FUN_1400bc360 116120 名聲 case 14；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+legendary brigand	傳奇強盜	传奇强盗		FUN_1400bc360 116120 名聲 case 14；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+rumored loyal soldier	傳聞中的忠誠士兵	传闻中的忠诚士兵		FUN_1400bc360 116143 名聲 case 15；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+known loyal soldier	有名的忠誠士兵	有名的忠诚士兵		FUN_1400bc360 116143 名聲 case 15；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+noted loyal soldier	著名的忠誠士兵	著名的忠诚士兵		FUN_1400bc360 116143 名聲 case 15；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+famous loyal soldier	赫赫有名的忠誠士兵	赫赫有名的忠诚士兵		FUN_1400bc360 116143 名聲 case 15；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+legendary loyal soldier	傳奇忠誠士兵	传奇忠诚士兵		FUN_1400bc360 116143 名聲 case 15；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+rumored monster	傳聞中的怪物	传闻中的怪物		FUN_1400bc360 116174 名聲 case 16；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+known monster	有名的怪物	有名的怪物		FUN_1400bc360 116174 名聲 case 16；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+noted monster	著名的怪物	著名的怪物		FUN_1400bc360 116174 名聲 case 16；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+infamous monster	惡名昭彰的怪物	臭名昭著的怪物		FUN_1400bc360 116174 名聲 case 16；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+legendary monster	傳奇怪物	传奇怪物		FUN_1400bc360 116174 名聲 case 16；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+rumored storyteller	傳聞中的說書人	传闻中的说书人		FUN_1400bc360 116197 名聲 case 17：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+known storyteller	有名的說書人	有名的说书人		FUN_1400bc360 116197 名聲 case 17：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+noted storyteller	著名的說書人	著名的说书人		FUN_1400bc360 116197 名聲 case 17：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+famous storyteller	赫赫有名的說書人	赫赫有名的说书人		FUN_1400bc360 116197 名聲 case 17：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+legendary storyteller	傳奇說書人	传奇说书人		FUN_1400bc360 116197 名聲 case 17：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+rumored poet	傳聞中的詩人	传闻中的诗人		FUN_1400bc360 116225 名聲 case 18：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+known poet	有名的詩人	有名的诗人		FUN_1400bc360 116225 名聲 case 18：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+noted poet	著名的詩人	著名的诗人		FUN_1400bc360 116225 名聲 case 18：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+famous poet	赫赫有名的詩人	赫赫有名的诗人		FUN_1400bc360 116225 名聲 case 18：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+legendary poet	傳奇詩人	传奇诗人		FUN_1400bc360 116225 名聲 case 18：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+rumored bard	傳聞中的吟遊詩人	传闻中的吟游诗人		FUN_1400bc360 116253 名聲 case 19：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+known bard	有名的吟遊詩人	有名的吟游诗人		FUN_1400bc360 116253 名聲 case 19：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+noted bard	著名的吟遊詩人	著名的吟游诗人		FUN_1400bc360 116253 名聲 case 19：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+famous bard	赫赫有名的吟遊詩人	赫赫有名的吟游诗人		FUN_1400bc360 116253 名聲 case 19：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+legendary bard	傳奇吟遊詩人	传奇吟游诗人		FUN_1400bc360 116253 名聲 case 19：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+rumored dancer	傳聞中的舞者	传闻中的舞者		FUN_1400bc360 116284 名聲 case 20：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+known dancer	有名的舞者	有名的舞者		FUN_1400bc360 116284 名聲 case 20：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+noted dancer	著名的舞者	著名的舞者		FUN_1400bc360 116284 名聲 case 20：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+famous dancer	赫赫有名的舞者	赫赫有名的舞者		FUN_1400bc360 116284 名聲 case 20：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+legendary dancer	傳奇舞者	传奇舞者		FUN_1400bc360 116284 名聲 case 20：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+rumored quarreler	傳聞中的吵架大王	传闻中的吵架大王		FUN_1400bc360 116307 名聲 case 21：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+known quarreler	有名的吵架大王	有名的吵架大王		FUN_1400bc360 116307 名聲 case 21：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+noted quarreler	著名的吵架大王	著名的吵架大王		FUN_1400bc360 116307 名聲 case 21：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+infamous quarreler	惡名昭彰的吵架大王	臭名昭著的吵架大王		FUN_1400bc360 116307 名聲 case 21：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+legendary quarreler	傳奇吵架大王	传奇吵架大王		FUN_1400bc360 116307 名聲 case 21：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+rumored flatterer	傳聞中的馬屁精	传闻中的马屁精		FUN_1400bc360 116335 名聲 case 22：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+known flatterer	有名的馬屁精	有名的马屁精		FUN_1400bc360 116335 名聲 case 22：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+noted flatterer	著名的馬屁精	著名的马屁精		FUN_1400bc360 116335 名聲 case 22：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+infamous flatterer	惡名昭彰的馬屁精	臭名昭著的马屁精		FUN_1400bc360 116335 名聲 case 22：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+legendary flatterer	傳奇馬屁精	传奇马屁精		FUN_1400bc360 116335 名聲 case 22：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+rumored protector of the weak	傳聞中的弱者守護者	传闻中的弱者守护者		FUN_1400bc360 116387 名聲 case 24；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+known protector of the weak	有名的弱者守護者	有名的弱者守护者		FUN_1400bc360 116387 名聲 case 24；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+noted protector of the weak	著名的弱者守護者	著名的弱者守护者		FUN_1400bc360 116387 名聲 case 24；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+famous protector of the weak	赫赫有名的弱者守護者	赫赫有名的弱者守护者		FUN_1400bc360 116387 名聲 case 24；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+legendary protector of the weak	傳奇的弱者守護者	传奇的弱者守护者		FUN_1400bc360 116387 名聲 case 24；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+rumored treasure hunter	傳聞中的寶藏獵人	传闻中的宝藏猎人		FUN_1400bc360 116415 名聲 case 25；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+known treasure hunter	有名的寶藏獵人	有名的宝藏猎人		FUN_1400bc360 116415 名聲 case 25；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+noted treasure hunter	著名的寶藏獵人	著名的宝藏猎人		FUN_1400bc360 116415 名聲 case 25；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+famous treasure hunter	赫赫有名的寶藏獵人	赫赫有名的宝藏猎人		FUN_1400bc360 116415 名聲 case 25；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+legendary treasure hunter	傳奇寶藏獵人	传奇宝藏猎人		FUN_1400bc360 116415 名聲 case 25；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+rumored thief	傳聞中的竊賊	传闻中的窃贼		FUN_1400bc360 116443 名聲 case 26；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+known thief	有名的竊賊	有名的窃贼		FUN_1400bc360 116443 名聲 case 26；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+noted thief	著名的竊賊	著名的窃贼		FUN_1400bc360 116443 名聲 case 26；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+infamous thief	惡名昭彰的竊賊	臭名昭著的窃贼		FUN_1400bc360 116443 名聲 case 26；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+legendary thief	傳奇竊賊	传奇窃贼		FUN_1400bc360 116443 名聲 case 26；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+rumored information source	傳聞中的線民	传闻中的线人		FUN_1400bc360 116471 名聲 case 27：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+known information source	有名的線民	有名的线人		FUN_1400bc360 116471 名聲 case 27：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+noted information source	著名的線民	著名的线人		FUN_1400bc360 116471 名聲 case 27：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+infamous information source	惡名昭彰的線民	臭名昭著的线人		FUN_1400bc360 116471 名聲 case 27：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+legendary information source	傳奇線民	传奇线人		FUN_1400bc360 116471 名聲 case 27：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+rumored preserver of knowledge	傳聞中的知識守護者	传闻中的知识守护者		FUN_1400bc360 116499 名聲 case 28；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+known preserver of knowledge	有名的知識守護者	有名的知识守护者		FUN_1400bc360 116499 名聲 case 28；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+noted preserver of knowledge	著名的知識守護者	著名的知识守护者		FUN_1400bc360 116499 名聲 case 28；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+famous preserver of knowledge	赫赫有名的知識守護者	赫赫有名的知识守护者		FUN_1400bc360 116499 名聲 case 28；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+legendary preserver of knowledge	傳奇知識守護者	传奇知识守护者		FUN_1400bc360 116499 名聲 case 28；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+rumored intruder	傳聞中的入侵者	传闻中的入侵者		FUN_1400bc360 116527 名聲 case 29；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+known intruder	有名的入侵者	有名的入侵者		FUN_1400bc360 116527 名聲 case 29；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+noted intruder	著名的入侵者	著名的入侵者		FUN_1400bc360 116527 名聲 case 29；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+infamous intruder	惡名昭彰的入侵者	臭名昭著的入侵者		FUN_1400bc360 116527 名聲 case 29；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+legendary intruder	傳奇入侵者	传奇入侵者		FUN_1400bc360 116527 名聲 case 29；FUN_140b8eeb0 傳說「相關團體」同字（有連結，目前不翻）：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+rumored preacher	傳聞中的傳道者	传闻中的传道者		FUN_1400bc360 116554 名聲 case 30：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+known preacher	有名的傳道者	有名的传道者		FUN_1400bc360 116554 名聲 case 30：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+noted preacher	著名的傳道者	著名的传道者		FUN_1400bc360 116554 名聲 case 30：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+infamous preacher	惡名昭彰的傳道者	臭名昭著的传道者		FUN_1400bc360 116554 名聲 case 30：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+legendary preacher	傳奇傳道者	传奇传道者		FUN_1400bc360 116554 名聲 case 30：冒險模式人物頁團體清單 Reputation: 下一行一條（wrap_text，首字大寫，查字典時退回小寫）
+A few issues still trouble scholars, but the picture is fairly clear.	仍有少數疑點困擾著學者，但大致情況已相當清楚。	仍有少数疑点困扰着学者，但大致情况已相当清楚。		FUN_140b95720（FUN_140b8eeb0 1703997 等處接在條目首句後）：史料完整度；冒險模式交談話題說明（FUN_140870260 彩色文字框，FUN_140b8eeb0 param_3=1）與傳說頁
+Many facts are still unclear to historians.	許多事實對史學家來說仍不明朗。	许多事实对史学家来说仍不明朗。		FUN_140b95720（FUN_140b8eeb0 1703997 等處接在條目首句後）：史料完整度；冒險模式交談話題說明（FUN_140870260 彩色文字框，FUN_140b8eeb0 param_3=1）與傳說頁
+It is still shrouded in mystery.	至今仍籠罩在謎團之中。	至今仍笼罩在谜团之中。		FUN_140b95720（FUN_140b8eeb0 1703997 等處接在條目首句後）：史料完整度；冒險模式交談話題說明（FUN_140870260 彩色文字框，FUN_140b8eeb0 param_3=1）與傳說頁
+Its nature is still an intriguing puzzle to the learned.	其本質對學者而言仍是個耐人尋味的謎題。	其本质对学者而言仍是个耐人寻味的谜题。		FUN_140b95720（FUN_140b8eeb0 1703997 等處接在條目首句後）：史料完整度；冒險模式交談話題說明（FUN_140870260 彩色文字框，FUN_140b8eeb0 param_3=1）與傳說頁
+Only the barest fragments of this amazing story have been uncovered.	這段驚人故事目前只發掘出最零星的片段。	这段惊人故事目前只发掘出最零星的片段。		FUN_140b95720（FUN_140b8eeb0 1703997 等處接在條目首句後）：史料完整度；冒險模式交談話題說明（FUN_140870260 彩色文字框，FUN_140b8eeb0 param_3=1）與傳說頁
+It is one of the great untold tales of our times.	這是我們這個時代尚未被訴說的偉大故事之一。	这是我们这个时代尚未被讲述的伟大故事之一。		FUN_140b95720（FUN_140b8eeb0 1703997 等處接在條目首句後）：史料完整度；冒險模式交談話題說明（FUN_140870260 彩色文字框，FUN_140b8eeb0 param_3=1）與傳說頁
+religion	宗教	宗教		FUN_140b8eeb0 1704104–1704195 勢力種類（{形容詞} 種類，無形容詞時單獨出現）；冒險模式交談話題說明（FUN_140870260 彩色文字框，FUN_140b8eeb0 param_3=1）
+bandit gang	強盜團	强盗团		FUN_140b8eeb0 1704104–1704195 勢力種類（{形容詞} 種類，無形容詞時單獨出現）；冒險模式交談話題說明（FUN_140870260 彩色文字框，FUN_140b8eeb0 param_3=1）
+performance troupe	表演團	演出团		FUN_140b8eeb0 1704104–1704195 勢力種類（{形容詞} 種類，無形容詞時單獨出現）；冒險模式交談話題說明（FUN_140870260 彩色文字框，FUN_140b8eeb0 param_3=1）
+collection of outcasts	流亡者團體	流亡者团体		FUN_140b8eeb0 1704104–1704195 勢力種類（{形容詞} 種類，無形容詞時單獨出現）；冒險模式交談話題說明（FUN_140870260 彩色文字框，FUN_140b8eeb0 param_3=1）
+merchant company	商會	商会		FUN_140b8eeb0 1704104–1704195 勢力種類（{形容詞} 種類，無形容詞時單獨出現）；冒險模式交談話題說明（FUN_140870260 彩色文字框，FUN_140b8eeb0 param_3=1）
+craft guild	工藝公會	工艺公会		FUN_140b8eeb0 1704104–1704195 勢力種類（{形容詞} 種類，無形容詞時單獨出現）；冒險模式交談話題說明（FUN_140870260 彩色文字框，FUN_140b8eeb0 param_3=1）
+versatile mercenary company	多才多藝的傭兵團	多才多艺的佣兵团		FUN_140b8eeb0 1704104–1704195 勢力種類（{形容詞} 種類，無形容詞時單獨出現）；冒險模式交談話題說明（FUN_140870260 彩色文字框，FUN_140b8eeb0 param_3=1）
+versatile mercenary order	多才多藝的傭兵騎士團	多才多艺的佣兵骑士团		FUN_140b8eeb0 1704104–1704195 勢力種類（{形容詞} 種類，無形容詞時單獨出現）；冒險模式交談話題說明（FUN_140870260 彩色文字框，FUN_140b8eeb0 param_3=1）
+shadowy military band	神祕的武裝團夥	神秘的武装团伙		FUN_140b8eeb0 1704104–1704195 勢力種類（{形容詞} 種類，無形容詞時單獨出現）；冒險模式交談話題說明（FUN_140870260 彩色文字框，FUN_140b8eeb0 param_3=1）
+shadowy military order	神祕的武裝騎士團	神秘的武装骑士团		FUN_140b8eeb0 1704104–1704195 勢力種類（{形容詞} 種類，無形容詞時單獨出現）；冒險模式交談話題說明（FUN_140870260 彩色文字框，FUN_140b8eeb0 param_3=1）
+mercenary company	傭兵團	佣兵团		FUN_140b8eeb0 1704104–1704195 勢力種類（{形容詞} 種類，無形容詞時單獨出現）；冒險模式交談話題說明（FUN_140870260 彩色文字框，FUN_140b8eeb0 param_3=1）
+mercenary band	傭兵團夥	佣兵团伙		FUN_140b8eeb0 1704104–1704195 勢力種類（{形容詞} 種類，無形容詞時單獨出現）；冒險模式交談話題說明（FUN_140870260 彩色文字框，FUN_140b8eeb0 param_3=1）
+mercenary order	傭兵騎士團	佣兵骑士团		FUN_140b8eeb0 1704104–1704195 勢力種類（{形容詞} 種類，無形容詞時單獨出現）；冒險模式交談話題說明（FUN_140870260 彩色文字框，FUN_140b8eeb0 param_3=1）
+god	神	神		FUN_140b8eeb0 1704321 神祇的稱呼（, a {種族} god of {領域}）；冒險模式交談話題說明（FUN_140870260 彩色文字框，FUN_140b8eeb0 param_3=1）
+goddess	女神	女神		FUN_140b8eeb0 1704318 同上
+an unknown region	某個不明地區	某个不明地区		FUN_140b94a40 1707765 找不到地區時（輔助函式，拼在 FUN_140b8eeb0 首句裡）；冒險模式交談話題說明（FUN_140870260 彩色文字框，FUN_140b8eeb0 param_3=1）
+an unknown underground region	某個不明地下區域	某个不明地下区域		FUN_140b94940 1707709 找不到地下區域時（輔助函式，拼在 FUN_140b8eeb0 首句裡）；冒險模式交談話題說明（FUN_140870260 彩色文字框，FUN_140b8eeb0 param_3=1）
+the depths of the world	世界深處	世界深处		FUN_140b94940 1707721 地下區域名（句首大寫時退回小寫查）（輔助函式，拼在 FUN_140b8eeb0 首句裡）；冒險模式交談話題說明（FUN_140870260 彩色文字框，FUN_140b8eeb0 param_3=1）
+the magma sea	熔岩海	熔岩海		FUN_140b94940 1707725 地下區域名（輔助函式，拼在 FUN_140b8eeb0 首句裡）；冒險模式交談話題說明（FUN_140870260 彩色文字框，FUN_140b8eeb0 param_3=1）
+the underworld	冥界	冥界		FUN_140b94940 1707730 地下區域名（原文 the Underworld，退回小寫查）（輔助函式，拼在 FUN_140b8eeb0 首句裡）；冒險模式交談話題說明（FUN_140870260 彩色文字框，FUN_140b8eeb0 param_3=1）
+an unknown population	某個不明族群	某个不明族群		FUN_140b94ba0 1707830（輔助函式，拼在 FUN_140b8eeb0 首句裡）；冒險模式交談話題說明（FUN_140870260 彩色文字框，FUN_140b8eeb0 param_3=1）
+an empty population	某個空無一人的族群	某个空无一人的族群		FUN_140b94ba0 1707838（輔助函式，拼在 FUN_140b8eeb0 首句裡）；冒險模式交談話題說明（FUN_140870260 彩色文字框，FUN_140b8eeb0 param_3=1）
+an unknown building	某座不明建築	某座不明建筑		FUN_140b94090 1707314（輔助函式，拼在 FUN_140b8eeb0 首句裡）；冒險模式交談話題說明（FUN_140870260 彩色文字框，FUN_140b8eeb0 param_3=1）
+a mead hall	蜜酒大廳	蜜酒大厅		FUN_140b94090 1707357 建築種類（輔助函式，拼在 FUN_140b8eeb0 首句裡）；冒險模式交談話題說明（FUN_140870260 彩色文字框，FUN_140b8eeb0 param_3=1）
+a keep	主堡	主堡		FUN_140b94090 1707361 建築種類（不單獨收 keep，免得動詞也被換掉）（輔助函式，拼在 FUN_140b8eeb0 首句裡）；冒險模式交談話題說明（FUN_140870260 彩色文字框，FUN_140b8eeb0 param_3=1）
+a temple	神殿	神殿		FUN_140b94090 1707365 建築種類（輔助函式，拼在 FUN_140b8eeb0 首句裡）；冒險模式交談話題說明（FUN_140870260 彩色文字框，FUN_140b8eeb0 param_3=1）
+a market	市集	集市		FUN_140b94090 1707373 建築種類（輔助函式，拼在 FUN_140b8eeb0 首句裡）；冒險模式交談話題說明（FUN_140870260 彩色文字框，FUN_140b8eeb0 param_3=1）
+the sewers	下水道	下水道		FUN_140b94090 1707388 建築種類（輔助函式，拼在 FUN_140b8eeb0 首句裡）；冒險模式交談話題說明（FUN_140870260 彩色文字框，FUN_140b8eeb0 param_3=1）
+the catacombs	地下墓穴	地下墓穴		FUN_140b94090 1707393 建築種類（輔助函式，拼在 FUN_140b8eeb0 首句裡）；冒險模式交談話題說明（FUN_140870260 彩色文字框，FUN_140b8eeb0 param_3=1）
+an underworld spire	冥界尖塔	冥界尖塔		FUN_140b94090 1707398 建築種類（輔助函式，拼在 FUN_140b8eeb0 首句裡）；冒險模式交談話題說明（FUN_140870260 彩色文字框，FUN_140b8eeb0 param_3=1）
+a tavern	酒館	酒馆		FUN_140b94090 1707402 建築種類（輔助函式，拼在 FUN_140b8eeb0 首句裡）；冒險模式交談話題說明（FUN_140870260 彩色文字框，FUN_140b8eeb0 param_3=1）
+a library	圖書館	图书馆		FUN_140b94090 1707406 建築種類（輔助函式，拼在 FUN_140b8eeb0 首句裡）；冒險模式交談話題說明（FUN_140870260 彩色文字框，FUN_140b8eeb0 param_3=1）
+a counting house	帳房	账房		FUN_140b94090 1707410 建築種類（輔助函式，拼在 FUN_140b8eeb0 首句裡）；冒險模式交談話題說明（FUN_140870260 彩色文字框，FUN_140b8eeb0 param_3=1）
+a guildhall	公會大廳	公会大厅		FUN_140b94090 1707414 建築種類（輔助函式，拼在 FUN_140b8eeb0 首句裡）；冒險模式交談話題說明（FUN_140870260 彩色文字框，FUN_140b8eeb0 param_3=1）
+a hospital	醫院	医院		FUN_140b94090 1707422 建築種類（輔助函式，拼在 FUN_140b8eeb0 首句裡）；冒險模式交談話題說明（FUN_140870260 彩色文字框，FUN_140b8eeb0 param_3=1）

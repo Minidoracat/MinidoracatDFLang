@@ -1,0 +1,23 @@
+en	zh-Hant	zh-Hans	align	note
+Subject revealed that "{1}" is in fact an assumed identity.	受審者透露，「{1}」其實是偽裝的身分。	受审者透露，“{1}”其实是伪装的身份。		FUN_1402c0c20 394751 審訊紀錄：識破假身分，{1} 假名
+Subject's true name is {1}.	受審者的真名是{1}。	受审者的真名是{1}。		FUN_1402c0c20 394770 審訊紀錄：接在識破假身分後，{1} 真名
+Subject has used "{1}" as an alias in the past.	受審者過去曾用過化名「{1}」。	受审者过去曾用过化名“{1}”。		FUN_1402c0c20 394784 審訊紀錄：曾用的假名，{1} 假名
+Subject {%1}, despite {%2} and {%3}.	儘管{2}、{3}，受審者{1}。	尽管{2}、{3}，受审者{1}。		FUN_1402c1770 395080～395845 審訊結果：主句、兩個理由（性格／價值觀／關係）
+Subject {%1}, despite {%2}.	儘管{2}，受審者{1}。	尽管{2}，受审者{1}。		FUN_1402c1770 395080～395845 審訊結果：主句、一個理由
+Subject {%1}.	受審者{1}。	受审者{1}。		FUN_1402c1770 395845 審訊結果：只有主句
+Appealed to shared worship of {1} in order to elicit information.	以共同信奉{1}為由打動對方，藉此套取情報。	以共同信奉{1}为由打动对方，借此套取情报。		FUN_1402c1770 394952 審訊手段（成功）：{1} 神名
+Attempted to appeal to shared worship of {1} in order to elicit information.	試圖以共同信奉{1}為由打動對方，藉此套取情報。	试图以共同信奉{1}为由打动对方，借此套取情报。		FUN_1402c1770 394949 審訊手段（未成功）：{1} 神名
+{1}'s trust of interrogator	{1}信任審訊者	{1}信任审讯者		FUN_1402c1770 395376 審訊結果 despite 後的理由：拒絕的關係，{1} 受審者人名
+{1}'s loyalty toward interrogator	{1}忠於審訊者	{1}忠于审讯者		FUN_1402c1770 395383 審訊結果 despite 後的理由：拒絕的關係，{1} 受審者人名
+{1}'s love of interrogator	{1}愛著審訊者	{1}爱着审讯者		FUN_1402c1770 395388 審訊結果 despite 後的理由：拒絕的關係，{1} 受審者人名
+{1}'s fear of interrogator	{1}畏懼審訊者	{1}畏惧审讯者		FUN_1402c1770 395393 審訊結果 despite 後的理由：拒絕的關係，{1} 受審者人名
+{1}'s respect of interrogator	{1}尊敬審訊者	{1}尊敬审讯者		FUN_1402c1770 395397 審訊結果 despite 後的理由：拒絕的關係，{1} 受審者人名
+{1}'s distrust of interrogator	{1}不信任審訊者	{1}不信任审讯者		FUN_1402c1770 395655 審訊結果 despite 後的理由：配合的關係，{1} 受審者人名
+{1}'s lack of loyalty toward interrogator	{1}對審訊者毫無忠誠	{1}对审讯者毫无忠诚		FUN_1402c1770 395660 審訊結果 despite 後的理由：配合的關係，{1} 受審者人名
+{1}'s hatred of interrogator	{1}憎恨審訊者	{1}憎恨审讯者		FUN_1402c1770 395665 審訊結果 despite 後的理由：配合的關係，{1} 受審者人名
+{1}'s lack of fear toward interrogator	{1}不畏懼審訊者	{1}不畏惧审讯者		FUN_1402c1770 395670 審訊結果 despite 後的理由：配合的關係，{1} 受審者人名
+{1}'s lack of respect of interrogator	{1}不尊敬審訊者	{1}不尊敬审讯者		FUN_1402c1770 395675 審訊結果 despite 後的理由：配合的關係，{1} 受審者人名
+Interrogation Report: {1}, {@2}, {%3}	審訊報告：{1}，{2}，{3}	审讯报告：{1}，{2}，{3}		FUN_1402bc250 391263 審訊報告標題：{1} 人名，{2} 職業，{3} 季節與年（Spring 125）；清單用 addst、內頁用 wrap_text
+Interrogation Report: {1}, {%2}	審訊報告：{1}，{2}	审讯报告：{1}，{2}		FUN_1402bc250 391263 審訊報告標題：沒有職業時，{1} 人名，{2} 季節與年
+Officer: {1}	承辦人：{1}	承办人：{1}		FUN_1404769d0 599120 審訊報告清單第二行：{1} 審訊官「人名, 職業」（addst，格數不超過原文）
+Prepared by {1}	撰寫者：{1}	撰写者：{1}		FUN_1404769d0 599201 審訊報告內頁標題下一行：{1} 審訊官「人名, 職業」（wrap_text）

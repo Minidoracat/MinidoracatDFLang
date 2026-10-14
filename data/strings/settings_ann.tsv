@@ -1,0 +1,305 @@
+en	zh-Hant	zh-Hans	align	note
+Reached peak	登上山頂	登上山顶		FUN_140749ee0 L1018867 case 0：設定「公告」分頁的公告種類名；冒險模式登上山頂
+Era change	時代更迭	时代更迭		FUN_140749ee0 L1018870 case 1：設定「公告」分頁的公告種類名
+Found a feature	發現特殊地形	发现特殊地形		FUN_140749ee0 L1018873 case 2：設定「公告」分頁的公告種類名；FEATURE_DISCOVERY：河流、洞穴、熔岩海等
+Praise the miners	讚美礦工	赞美矿工		FUN_140749ee0 L1018876 case 3：設定「公告」分頁的公告種類名；STRUCK_DEEP_METAL：挖到深層金屬；沿用公告「讚美礦工！」
+Struck mineral	挖到礦物	挖到矿物		FUN_140749ee0 L1018879 case 4：設定「公告」分頁的公告種類名
+Struck economic mineral	挖到經濟礦物	挖到经济矿物		FUN_140749ee0 L1018882 case 5：設定「公告」分頁的公告種類名；術語 economic stone 經濟石材
+(Charge) (A) Tumble	（衝鋒）攻方翻滾	（冲锋）攻方翻滚		FUN_140749ee0 L1018924 case 0x13：設定「公告」分頁的公告種類名；戰鬥；(A)＝攻方（衝撞的一方），對照 settings.tsv 的 (D) 守方
+(Charge) (A) Bounced back	（衝鋒）攻方被彈開	（冲锋）攻方被弹开		FUN_140749ee0 L1018927 case 0x14：設定「公告」分頁的公告種類名；戰鬥；(A)＝攻方
+(Charge) Tangle	（衝鋒）糾纏	（冲锋）纠缠		FUN_140749ee0 L1018930 case 0x15：設定「公告」分頁的公告種類名；戰鬥；雙方纏在一起
+(Charge) Tangle/tumble	（衝鋒）糾纏翻滾	（冲锋）纠缠翻滚		FUN_140749ee0 L1018933 case 0x16：設定「公告」分頁的公告種類名；戰鬥；纏成一團向前翻滾
+(Wrestle) Joint lock	（摔角）鎖關節	（摔跤）锁关节		FUN_140749ee0 L1018939 case 0x1a：設定「公告」分頁的公告種類名；戰鬥；Wrestler 摔角手／摔跤手
+(Wrestle) Chokehold	（摔角）鎖喉	（摔跤）锁喉		FUN_140749ee0 L1018942 case 0x1b：設定「公告」分頁的公告種類名；戰鬥
+(Wrestle) Takedown	（摔角）撂倒	（摔跤）撂倒		FUN_140749ee0 L1018945 case 0x1c：設定「公告」分頁的公告種類名；戰鬥；同戰報「撂倒在地」
+(Wrestle) Throw	（摔角）摔出	（摔跤）摔出		FUN_140749ee0 L1018948 case 0x1d：設定「公告」分頁的公告種類名；戰鬥；同戰報「摔了出去」
+(Wrestle) Release lock	（摔角）放開鎖技	（摔跤）放开锁技		FUN_140749ee0 L1018951 case 0x1e：設定「公告」分頁的公告種類名；戰鬥
+(Wrestle) Release choke	（摔角）放開鎖喉	（摔跤）放开锁喉		FUN_140749ee0 L1018954 case 0x1f：設定「公告」分頁的公告種類名；戰鬥
+(Wrestle) Release	（摔角）放手	（摔跤）放手		FUN_140749ee0 L1018957 case 0x20：設定「公告」分頁的公告種類名；戰鬥
+(Wrestle) Struggle	（摔角）掙扎	（摔跤）挣扎		FUN_140749ee0 L1018960 case 0x21：設定「公告」分頁的公告種類名；戰鬥
+(Wrestle) Latch on	（摔角）咬住	（摔跤）咬住		FUN_140749ee0 L1018963 case 0x22：設定「公告」分頁的公告種類名；戰鬥；同戰報「緊緊咬住」
+(Wrestle) Strangle	（摔角）勒頸	（摔跤）勒颈		FUN_140749ee0 L1018966 case 0x23：設定「公告」分頁的公告種類名；戰鬥
+(Wrestle) Adjust grip	（摔角）調整抓握	（摔跤）调整抓握		FUN_140749ee0 L1018969 case 0x24：設定「公告」分頁的公告種類名；戰鬥
+(Wrestle) Part ripped away	（摔角）部位被扯掉	（摔跤）部位被扯掉		FUN_140749ee0 L1018972 case 0x25：設定「公告」分頁的公告種類名；戰鬥
+(Combat) Strike	（戰鬥）攻擊	（战斗）攻击		FUN_140749ee0 L1018975 case 0x26：設定「公告」分頁的公告種類名；戰鬥
+(Combat) Wounds	（戰鬥）傷勢	（战斗）伤势		FUN_140749ee0 L1018978 case 0x27：設定「公告」分頁的公告種類名；戰鬥
+(Combat) Enraged	（戰鬥）暴怒	（战斗）暴怒		FUN_140749ee0 L1018981 case 0x28：設定「公告」分頁的公告種類名；戰鬥
+(Combat) Attack stuck in	（戰鬥）卡在傷口裡	（战斗）卡在伤口里		FUN_140749ee0 L1018984 case 0x29：設定「公告」分頁的公告種類名；戰鬥；武器卡在傷口
+(Combat) Natural attack latched	（戰鬥）天生攻擊咬住	（战斗）天生攻击咬住		FUN_140749ee0 L1018987 case 0x2a：設定「公告」分頁的公告種類名；戰鬥；咬等天生攻擊咬住部位
+(Combat) Attack latched	（戰鬥）攻擊咬住	（战斗）攻击咬住		FUN_140749ee0 L1018990 case 0x2b：設定「公告」分頁的公告種類名；戰鬥
+(Combat) Propelling blow	（戰鬥）擊飛	（战斗）击飞		FUN_140749ee0 L1018993 case 0x2c：設定「公告」分頁的公告種類名；戰鬥
+(Combat) Knocked out	（戰鬥）被打昏	（战斗）被打晕		FUN_140749ee0 L1018996 case 0x2d：設定「公告」分頁的公告種類名；戰鬥
+(Combat) Stunned	（戰鬥）暈眩	（战斗）眩晕		FUN_140749ee0 L1018999 case 0x2e：設定「公告」分頁的公告種類名；戰鬥
+(Combat) Winded	（戰鬥）岔氣	（战斗）岔气		FUN_140749ee0 L1019002 case 0x2f：設定「公告」分頁的公告種類名；戰鬥；喘不過氣，原文 15 格放不下四字
+(Combat) Nauseated	（戰鬥）噁心	（战斗）恶心		FUN_140749ee0 L1019005 case 0x30：設定「公告」分頁的公告種類名；戰鬥
+Dig canceled (warm)	挖掘取消（溫熱）	挖掘取消（温热）		FUN_140749ee0 L1019008 case 0x33：設定「公告」分頁的公告種類名；挖到熔岩邊緣的溫熱岩石
+Dig canceled (wet)	挖掘取消（潮濕）	挖掘取消（潮湿）		FUN_140749ee0 L1019011 case 0x34：設定「公告」分頁的公告種類名；挖到含水層邊緣的潮濕岩石
+Ambush (resident)	伏擊（居民）	伏击（居民）		FUN_140749ee0 L1019014 case 0x36：設定「公告」分頁的公告種類名
+Ambush (thief)	伏擊（小偷）	伏击（小偷）		FUN_140749ee0 L1019017 case 0x37：設定「公告」分頁的公告種類名
+Ambush (thief, skulking)	伏擊（小偷，潛行）	伏击（小偷，潜行）		FUN_140749ee0 L1019020 case 0x38：設定「公告」分頁的公告種類名；公告「An ambush!  Skulking vermin!」
+Ambush (thief, nature)	伏擊（小偷，自然）	伏击（小偷，自然）		FUN_140749ee0 L1019023 case 0x39：設定「公告」分頁的公告種類名；公告「An ambush!  Curse all friends of nature!」
+Ambush (thief, other)	伏擊（小偷，其他）	伏击（小偷，其他）		FUN_140749ee0 L1019026 case 0x3a：設定「公告」分頁的公告種類名；公告「An ambush!  Curse them!」
+Ambush (snatcher)	伏擊（綁匪）	伏击（绑匪）		FUN_140749ee0 L1019035 case 0x3d：設定「公告」分頁的公告種類名；同公告 Snatcher! 綁匪
+Ambush (nature)	伏擊（自然）	伏击（自然）		FUN_140749ee0 L1019038 case 0x3e：設定「公告」分頁的公告種類名
+Ambush (injured creature)	伏擊（受傷生物）	伏击（受伤生物）		FUN_140749ee0 L1019044 case 0x40：設定「公告」分頁的公告種類名
+Ambush (uninjured creature)	伏擊（未受傷生物）	伏击（未受伤生物）		FUN_140749ee0 L1019047 case 0x41：設定「公告」分頁的公告種類名
+Ambush (incapacitated creature)	伏擊（失能生物）	伏击（失能生物）		FUN_140749ee0 L1019050 case 0x42：設定「公告」分頁的公告種類名
+Caravan	商隊	商队		FUN_140749ee0 L1019053 case 0x43：設定「公告」分頁的公告種類名；術語 caravan
+Noble	貴族	贵族		FUN_140749ee0 L1019056 case 0x44：設定「公告」分頁的公告種類名
+Migrants	移民	移民		FUN_140749ee0 L1019059 case 0x45：設定「公告」分頁的公告種類名；術語 migrant
+Migrant (one)	移民（一名）	移民（一名）		FUN_140749ee0 L1019062 case 0x46：設定「公告」分頁的公告種類名
+Migrants (danger)	移民（危險）	移民（危险）		FUN_140749ee0 L1019065 case 0x47：設定「公告」分頁的公告種類名
+No migrants	沒有移民	没有移民		FUN_140749ee0 L1019068 case 0x48：設定「公告」分頁的公告種類名
+Animal trapped	動物落入陷阱	动物落入陷阱		FUN_140749ee0 L1019071 case 0x49：設定「公告」分頁的公告種類名
+Animal trap robbed	捕獸器被偷	捕兽器被偷		FUN_140749ee0 L1019074 case 0x4a：設定「公告」分頁的公告種類名；animal trap 捕獸器
+Gremlin pulled lever	搗蛋鬼拉動拉桿	捣蛋鬼拉动拉杆		FUN_140749ee0 L1019077 case 0x4b：設定「公告」分頁的公告種類名
+Gremlin triggered plate	搗蛋鬼觸發壓力板	捣蛋鬼触发压力板		FUN_140749ee0 L1019080 case 0x4c：設定「公告」分頁的公告種類名
+Gremlin opened cage	搗蛋鬼打開籠子	捣蛋鬼打开笼子		FUN_140749ee0 L1019083 case 0x4d：設定「公告」分頁的公告種類名
+Gremlin unshackled something	搗蛋鬼解開了鎖鏈	捣蛋鬼解开了锁链		FUN_140749ee0 L1019086 case 0x4e：設定「公告」分頁的公告種類名
+Liaison	聯絡人	联络人		FUN_140749ee0 L1019092 case 0x50：設定「公告」分頁的公告種類名；同 outpost liaison 前哨站聯絡人
+Cave-in	坍方	塌方		FUN_140749ee0 L1019098 case 0x52：設定「公告」分頁的公告種類名
+Animal birth	動物出生	动物出生		FUN_140749ee0 L1019104 case 0x54：設定「公告」分頁的公告種類名
+Artifact made	神器完成	神器完成		FUN_140749ee0 L1019110 case 0x56：設定「公告」分頁的公告種類名
+Item given name	物品獲得命名	物品获得命名		FUN_140749ee0 L1019113 case 0x57：設定「公告」分頁的公告種類名
+Attachment to item	依戀物品	依恋物品		FUN_140749ee0 L1019116 case 0x58：設定「公告」分頁的公告種類名；對物品產生依戀
+Vermin escaped from cage	小動物逃出籠子	小动物逃出笼子		FUN_140749ee0 L1019119 case 0x59：設定「公告」分頁的公告種類名
+Entangled in hidden web	被暗藏的蛛網纏住	被暗藏的蛛网缠住		FUN_140749ee0 L1019122 case 0x5a：設定「公告」分頁的公告種類名
+(Strange mood) Building claimed	（奇異心境）占用工坊	（奇异心境）占用工坊		FUN_140749ee0 L1019125 case 0x5b：設定「公告」分頁的公告種類名；著魔的矮人占用工坊
+Artifact construction begun	開始製作神器	开始制作神器		FUN_140749ee0 L1019128 case 0x5c：設定「公告」分頁的公告種類名
+Megabeast	巨獸	巨兽		FUN_140749ee0 L1019131 case 0x5d：設定「公告」分頁的公告種類名
+Werebeast	獸化人	兽化人		FUN_140749ee0 L1019134 case 0x5e：設定「公告」分頁的公告種類名
+Regular beast	一般野獸	一般野兽		FUN_140749ee0 L1019137 case 0x5f：設定「公告」分頁的公告種類名
+Berserk	狂暴	狂暴		FUN_140749ee0 L1019140 case 0x60：設定「公告」分頁的公告種類名
+Magma defaced engraving	熔岩毀損雕刻	熔岩毁损雕刻		FUN_140749ee0 L1019143 case 0x61：設定「公告」分頁的公告種類名
+Engraving melted	雕刻熔毀	雕刻熔毁		FUN_140749ee0 L1019146 case 0x62：設定「公告」分頁的公告種類名
+Masterwork made	傑作完成	杰作完成		FUN_140749ee0 L1019149 case 99：設定「公告」分頁的公告種類名
+Masterwork architecture lost	建築傑作遺失	建筑杰作遗失		FUN_140749ee0 L1019152 case 100：設定「公告」分頁的公告種類名；建築物（architecture）的傑作被毀
+Masterwork construction lost	建造物傑作遺失	建造物杰作遗失		FUN_140749ee0 L1019155 case 0x65：設定「公告」分頁的公告種類名；牆、地板等建造物（construction）的傑作被毀
+(Adventure) Awaken	（冒險）醒來	（冒险）醒来		FUN_140749ee0 L1019158 case 0x66：設定「公告」分頁的公告種類名
+(Adventure) Sleep interrupted	（冒險）睡眠被打斷	（冒险）睡眠被打断		FUN_140749ee0 L1019161 case 0x67：設定「公告」分頁的公告種類名
+Job cancellation	工作取消	工作取消		FUN_140749ee0 L1019164 case 0x68：設定「公告」分頁的公告種類名
+(Adventure) Death	（冒險）死亡	（冒险）死亡		FUN_140749ee0 L1019167 case 0x69：設定「公告」分頁的公告種類名
+Pet death	寵物死亡	宠物死亡		FUN_140749ee0 L1019173 case 0x6b：設定「公告」分頁的公告種類名
+Endgame event 1	終局事件 1	终局事件 1		FUN_140749ee0 L1019176 case 0x6c：設定「公告」分頁的公告種類名
+Endgame event 1B	終局事件 1B	终局事件 1B		FUN_140749ee0 L1019179 case 0x6d：設定「公告」分頁的公告種類名
+Endgame event 2	終局事件 2	终局事件 2		FUN_140749ee0 L1019182 case 0x6e：設定「公告」分頁的公告種類名
+Fall over	摔倒	摔倒		FUN_140749ee0 L1019185 case 0x6f：設定「公告」分頁的公告種類名
+Caught in flame	著火	着火		FUN_140749ee0 L1019188 case 0x70：設定「公告」分頁的公告種類名
+Caught in web	被蛛網纏住	被蛛网缠住		FUN_140749ee0 L1019191 case 0x71：設定「公告」分頁的公告種類名
+Slam into an obstacle (blow apart)	撞上障礙物（粉碎）	撞上障碍物（粉碎）		FUN_140749ee0 L1019194 case 0x72：設定「公告」分頁的公告種類名
+Slam into an obstacle	撞上障礙物	撞上障碍物		FUN_140749ee0 L1019197 case 0x73：設定「公告」分頁的公告種類名
+Slam into unit	撞上生物	撞上生物		FUN_140749ee0 L1019200 case 0x74：設定「公告」分頁的公告種類名
+Lose hold of item	握不住物品	握不住物品		FUN_140749ee0 L1019206 case 0x76：設定「公告」分頁的公告種類名
+Regain consciousness	恢復意識	恢复意识		FUN_140749ee0 L1019209 case 0x77：設定「公告」分頁的公告種類名
+Free from web	掙脫蛛網	挣脱蛛网		FUN_140749ee0 L1019212 case 0x78：設定「公告」分頁的公告種類名
+Overcome paralysis	擺脫癱瘓	摆脱瘫痪		FUN_140749ee0 L1019218 case 0x7a：設定「公告」分頁的公告種類名
+No longer stunned	不再暈眩	不再眩晕		FUN_140749ee0 L1019221 case 0x7b：設定「公告」分頁的公告種類名
+Give into pain	屈服於疼痛	屈服于疼痛		FUN_140749ee0 L1019227 case 0x7d：設定「公告」分頁的公告種類名
+(Wrestling) Break grip	（摔角）掙脫抓握	（摔跤）挣脱抓握		FUN_140749ee0 L1019230 case 0x7e：設定「公告」分頁的公告種類名
+(Wrestling) Cannot break grip	（摔角）無法掙脫抓握	（摔跤）无法挣脱抓握		FUN_140749ee0 L1019233 case 0x7f：設定「公告」分頁的公告種類名
+Breathe fire	噴火	喷火		FUN_140749ee0 L1019239 case 0x81：設定「公告」分頁的公告種類名
+Shoot web	射出蛛絲	射出蛛丝		FUN_140749ee0 L1019242 case 0x82：設定「公告」分頁的公告種類名
+Pull out and drop item	拔出並丟下物品	拔出并丢下物品		FUN_140749ee0 L1019245 case 0x83：設定「公告」分頁的公告種類名
+Stand up	站起來	站起来		FUN_140749ee0 L1019248 case 0x84：設定「公告」分頁的公告種類名
+Martial trance	戰鬥恍惚狀態	战斗恍惚状态		FUN_140749ee0 L1019251 case 0x85：設定「公告」分頁的公告種類名；同公告「戰鬥恍惚狀態」
+Breath attack	吐息攻擊	吐息攻击		FUN_140749ee0 L1019254 case 0x86：設定「公告」分頁的公告種類名
+(Adventure) Made item	（冒險）製作物品	（冒险）制作物品		FUN_140749ee0 L1019257 case 0x87：設定「公告」分頁的公告種類名
+(Adventure) Night Creature Attack	（冒險）夜行生物襲擊	（冒险）夜行生物袭击		FUN_140749ee0 L1019260 case 0x88：設定「公告」分頁的公告種類名；同公告 Night creature! 夜行生物
+(Adventure) Cackling fades	（冒險）怪笑聲遠去	（冒险）怪笑声远去		FUN_140749ee0 L1019263 case 0x89：設定「公告」分頁的公告種類名；公告「The cackling fades away.」
+Ghost attack	鬼魂襲擊	鬼魂袭击		FUN_140749ee0 L1019266 case 0x8b：設定「公告」分頁的公告種類名
+Hit by ball of flames	被火球擊中	被火球击中		FUN_140749ee0 L1019269 case 0x8c：設定「公告」分頁的公告種類名
+Discovered site	發現據點	发现据点		FUN_140749ee0 L1019272 case 0x8d：設定「公告」分頁的公告種類名；術語 site 據點
+Cannot travel through site	無法穿越據點	无法穿越据点		FUN_140749ee0 L1019275 case 0x8e：設定「公告」分頁的公告種類名
+Intro	開場	开场		FUN_140749ee0 L1019278 case 0x8f：設定「公告」分頁的公告種類名；冒險模式開場訊息
+Creature sound	生物聲響	生物声响		FUN_140749ee0 L1019281 case 0x90：設定「公告」分頁的公告種類名
+Creature stolen object	生物偷走物品	生物偷走物品		FUN_140749ee0 L1019284 case 0x91：設定「公告」分頁的公告種類名
+Found trap	發現陷阱	发现陷阱		FUN_140749ee0 L1019287 case 0x92：設定「公告」分頁的公告種類名
+Transformation	變形	变形		FUN_140749ee0 L1019290 case 0x93：設定「公告」分頁的公告種類名
+Interaction (user)	互動（施用者）	互动（施用者）		FUN_140749ee0 L1019293 case 0x94：設定「公告」分頁的公告種類名；法術、詛咒等互動效果的使用方
+Interaction (target)	互動（目標）	互动（目标）		FUN_140749ee0 L1019296 case 0x95：設定「公告」分頁的公告種類名；互動效果的對象
+Undead attack	亡靈襲擊	亡灵袭击		FUN_140749ee0 L1019299 case 0x96：設定「公告」分頁的公告種類名
+Citizen missing	公民失蹤	公民失踪		FUN_140749ee0 L1019302 case 0x97：設定「公告」分頁的公告種類名；同 Citizen death 公民死亡
+Pet missing	寵物失蹤	宠物失踪		FUN_140749ee0 L1019305 case 0x98：設定「公告」分頁的公告種類名
+Embrace	擁抱	拥抱		FUN_140749ee0 L1019308 case 0x99：設定「公告」分頁的公告種類名
+Weird weather	怪異天氣	怪异天气		FUN_140749ee0 L1019311 case 0x9a：設定「公告」分頁的公告種類名
+Animal action	動物行為	动物行为		FUN_140749ee0 L1019317 case 0x9c：設定「公告」分頁的公告種類名
+Flounder in water	在水中掙扎	在水中挣扎		FUN_140749ee0 L1019320 case 0x9d：設定「公告」分頁的公告種類名
+Semi-wild	半野化	半野化		FUN_140749ee0 L1019323 case 0x9e：設定「公告」分頁的公告種類名；馴養動物開始野化
+Full reversion	完全野化	完全野化		FUN_140749ee0 L1019326 case 0x9f：設定「公告」分頁的公告種類名；同公告「恢復了野性」
+Gained knowledge	獲得知識	获得知识		FUN_140749ee0 L1019329 case 0xa0：設定「公告」分頁的公告種類名
+Skipped on liquid	在液面彈跳	在液面弹跳		FUN_140749ee0 L1019332 case 0xa1：設定「公告」分頁的公告種類名
+Dodge projectile	閃避投射物	闪避投射物		FUN_140749ee0 L1019335 case 0xa2：設定「公告」分頁的公告種類名
+Bandit empties container	強盜清空容器	强盗清空容器		FUN_140749ee0 L1019341 case 0xa4：設定「公告」分頁的公告種類名
+Bandit grabs item	強盜搶走物品	强盗抢走物品		FUN_140749ee0 L1019344 case 0xa5：設定「公告」分頁的公告種類名
+Attack interrupted	攻擊被打斷	攻击被打断		FUN_140749ee0 L1019347 case 0xa6：設定「公告」分頁的公告種類名
+Attack caught	攻擊被抓住	攻击被抓住		FUN_140749ee0 L1019350 case 0xa7：設定「公告」分頁的公告種類名
+Fail to grab hold	抓取失敗	抓取失败		FUN_140749ee0 L1019353 case 0xa8：設定「公告」分頁的公告種類名
+Lose hold of surface	攀爬時滑脫	攀爬时滑脱		FUN_140749ee0 L1019356 case 0xa9：設定「公告」分頁的公告種類名
+Travel complaint	旅途抱怨	旅途抱怨		FUN_140749ee0 L1019359 case 0xaa：設定「公告」分頁的公告種類名
+No longer overwhelmed	不再招架不住	不再招架不住		FUN_140749ee0 L1019362 case 0xab：設定「公告」分頁的公告種類名
+Reorganize possessions	整理隨身物品	整理随身物品		FUN_140749ee0 L1019365 case 0xac：設定「公告」分頁的公告種類名
+Push item	推動物品	推动物品		FUN_140749ee0 L1019368 case 0xad：設定「公告」分頁的公告種類名
+Draw item	拔出物品	拔出物品		FUN_140749ee0 L1019371 case 0xae：設定「公告」分頁的公告種類名
+Strap item	繫上物品	系上物品		FUN_140749ee0 L1019374 case 0xaf：設定「公告」分頁的公告種類名
+Gained site control	取得據點控制權	取得据点控制权		FUN_140749ee0 L1019377 case 0xb0：設定「公告」分頁的公告種類名
+Conversation (Conflict)	交談（衝突）	交谈（冲突）		FUN_140749ee0 L1019380 case 0xb1：設定「公告」分頁的公告種類名
+Assumed position	就任職位	就任职位		FUN_140749ee0 L1019383 case 0xb2：設定「公告」分頁的公告種類名
+Mechanism sounds	機關聲響	机关声响		FUN_140749ee0 L1019386 case 0xb3：設定「公告」分頁的公告種類名
+Wild animal gave birth	野生動物產子	野生动物产仔		FUN_140749ee0 L1019389 case 0xb4：設定「公告」分頁的公告種類名
+Citizen overwhelmed by stress	公民被壓力壓垮	公民被压力压垮		FUN_140749ee0 L1019392 case 0xb5：設定「公告」分頁的公告種類名
+Citizen lost to stress	公民因壓力崩潰	公民因压力崩溃		FUN_140749ee0 L1019395 case 0xb6：設定「公告」分頁的公告種類名
+Tantrum	發脾氣	发脾气		FUN_140749ee0 L1019398 case 0xb7：設定「公告」分頁的公告種類名；公告「大發脾氣」，原文 7 格只放得下三字
+Enemy moved out of range	敵人移出範圍	敌人移出范围		FUN_140749ee0 L1019401 case 0xb8：設定「公告」分頁的公告種類名
+Cannot jump	無法跳躍	无法跳跃		FUN_140749ee0 L1019404 case 0xb9：設定「公告」分頁的公告種類名
+No tracks	沒有足跡	没有足迹		FUN_140749ee0 L1019407 case 0xba：設定「公告」分頁的公告種類名；足跡不是軌道；術語例外：track
+Already searched	已經搜過	已经搜过		FUN_140749ee0 L1019410 case 0xbb：設定「公告」分頁的公告種類名
+Search found something	搜尋有所發現	搜索有所发现		FUN_140749ee0 L1019413 case 0xbc：設定「公告」分頁的公告種類名
+Search found nothing	搜尋無所獲	搜索一无所获		FUN_140749ee0 L1019416 case 0xbd：設定「公告」分頁的公告種類名
+Nothing to interact	沒有可互動的東西	没有可互动的东西		FUN_140749ee0 L1019419 case 0xbe：設定「公告」分頁的公告種類名
+Nothing to examine	沒有可查看的東西	没有可查看的东西		FUN_140749ee0 L1019422 case 0xbf：設定「公告」分頁的公告種類名
+You yield	你投降	你投降		FUN_140749ee0 L1019425 case 0xc0：設定「公告」分頁的公告種類名
+You unyield	你取消投降	你取消投降		FUN_140749ee0 L1019428 case 0xc1：設定「公告」分頁的公告種類名
+You strap item	你繫上物品	你系上物品		FUN_140749ee0 L1019431 case 0xc2：設定「公告」分頁的公告種類名
+You draw	你拔出	你拔出		FUN_140749ee0 L1019434 case 0xc3：設定「公告」分頁的公告種類名
+No grasp to draw	沒有手能拔出	没有手能拔出		FUN_140749ee0 L1019437 case 0xc4：設定「公告」分頁的公告種類名
+No item to strap	沒有可繫的物品	没有可系的物品		FUN_140749ee0 L1019440 case 0xc5：設定「公告」分頁的公告種類名
+No item to remove	沒有可脫下的物品	没有可脱下的物品		FUN_140749ee0 L1019443 case 0xc6：設定「公告」分頁的公告種類名
+No item to wear	沒有可穿的物品	没有可穿的物品		FUN_140749ee0 L1019446 case 199：設定「公告」分頁的公告種類名
+No item to eat	沒有可吃的東西	没有可吃的东西		FUN_140749ee0 L1019449 case 200：設定「公告」分頁的公告種類名
+No item to contain	沒有可裝的物品	没有可装的物品		FUN_140749ee0 L1019452 case 0xc9：設定「公告」分頁的公告種類名
+No item to drop	沒有可丟的物品	没有可丢的物品		FUN_140749ee0 L1019455 case 0xca：設定「公告」分頁的公告種類名
+No item to pick up	沒有可撿的物品	没有可捡的物品		FUN_140749ee0 L1019458 case 0xcb：設定「公告」分頁的公告種類名
+No item to throw	沒有可丟擲的物品	没有可投掷的物品		FUN_140749ee0 L1019462 case 0xcd：設定「公告」分頁的公告種類名
+Check smells	聞氣味	闻气味		FUN_140749ee0 L1019465 case 0xce：設定「公告」分頁的公告種類名
+Check weather	查看天氣	查看天气		FUN_140749ee0 L1019468 case 0xcf：設定「公告」分頁的公告種類名
+Check temperature	查看氣溫	查看气温		FUN_140749ee0 L1019471 case 0xd0：設定「公告」分頁的公告種類名
+Check date	查看日期	查看日期		FUN_140749ee0 L1019474 case 0xd1：設定「公告」分頁的公告種類名
+No hands to pick up	沒有手可撿東西	没有手可捡东西		FUN_140749ee0 L1019477 case 0xd2：設定「公告」分頁的公告種類名
+Cannot chop tree	無法砍樹	无法砍树		FUN_140749ee0 L1019480 case 0xd3：設定「公告」分頁的公告種類名
+Cannot climb	無法攀爬	无法攀爬		FUN_140749ee0 L1019483 case 0xd4：設定「公告」分頁的公告種類名
+Cannot stand	無法站立	无法站立		FUN_140749ee0 L1019486 case 0xd5：設定「公告」分頁的公告種類名
+Must unretract first	必須先探出身體	必须先探出身体		FUN_140749ee0 L1019489 case 0xd6：設定「公告」分頁的公告種類名；縮進殼裡的生物要先伸出來
+Cannot rest	無法休息	无法休息		FUN_140749ee0 L1019492 case 0xd7：設定「公告」分頁的公告種類名
+Cannot make campfire	無法生營火	无法生篝火		FUN_140749ee0 L1019495 case 0xd8：設定「公告」分頁的公告種類名；同公告 campfire 營火／篝火
+Made a campfire	生了營火	生了篝火		FUN_140749ee0 L1019498 case 0xd9：設定「公告」分頁的公告種類名
+Cannot set a fire	無法放火	无法放火		FUN_140749ee0 L1019501 case 0xda：設定「公告」分頁的公告種類名
+Set a fire	放火	放火		FUN_140749ee0 L1019504 case 0xdb：設定「公告」分頁的公告種類名
+Break of dawn	破曉	破晓		FUN_140749ee0 L1019507 case 0xdc：設定「公告」分頁的公告種類名
+Noon	中午	中午		FUN_140749ee0 L1019510 case 0xdd：設定「公告」分頁的公告種類名
+Nightfall	入夜	入夜		FUN_140749ee0 L1019513 case 0xde：設定「公告」分頁的公告種類名
+Empty a container	清空容器	清空容器		FUN_140749ee0 L1019516 case 0xe0：設定「公告」分頁的公告種類名
+Take out of a container	從容器取出	从容器取出		FUN_140749ee0 L1019519 case 0xe1：設定「公告」分頁的公告種類名
+Put into a container	放入容器	放入容器		FUN_140749ee0 L1019522 case 0xe3：設定「公告」分頁的公告種類名
+Failed to eat/drink	吃喝失敗	吃喝失败		FUN_140749ee0 L1019531 case 0xe6：設定「公告」分頁的公告種類名
+Drop	丟下	丢下		FUN_140749ee0 L1019534 case 0xe7：設定「公告」分頁的公告種類名；冒險模式動作；原文 4 格
+Pick up	撿起	捡起		FUN_140749ee0 L1019537 case 0xe8：設定「公告」分頁的公告種類名；冒險模式動作
+You interact with building	你與建築互動	你与建筑互动		FUN_140749ee0 L1019540 case 0xe9：設定「公告」分頁的公告種類名
+You interact with item	你與物品互動	你与物品互动		FUN_140749ee0 L1019543 case 0xea：設定「公告」分頁的公告種類名
+You feel hot/cold	你感到冷或熱	你感到冷或热		FUN_140749ee0 L1019546 case 0xeb：設定「公告」分頁的公告種類名
+Profession change	職業變更	职业变更		FUN_140749ee0 L1019549 case 0xec：設定「公告」分頁的公告種類名
+Recruit gains skill	新兵技能提升	新兵技能提升		FUN_140749ee0 L1019552 case 0xed：設定「公告」分頁的公告種類名
+Soldier becomes a master	士兵成為大師	士兵成为大师		FUN_140749ee0 L1019555 case 0xee：設定「公告」分頁的公告種類名
+(Combat) Gain/lose possession of item	（戰鬥）取得／失去物品	（战斗）取得／失去物品		FUN_140749ee0 L1019558 case 0xef：設定「公告」分頁的公告種類名
+Cough blood	咳血	咳血		FUN_140749ee0 L1019561 case 0xf0：設定「公告」分頁的公告種類名
+Merchants unloading	商人卸貨	商人卸货		FUN_140749ee0 L1019567 case 0xf2：設定「公告」分頁的公告種類名
+Merchants need depot	商人需要貿易站	商人需要贸易站		FUN_140749ee0 L1019570 case 0xf3：設定「公告」分頁的公告種類名；術語 trade depot
+Wagons bypassed inaccessible site	篷車繞過無法抵達的據點	篷车绕过无法抵达的据点		FUN_140749ee0 L1019573 case 0xf4：設定「公告」分頁的公告種類名；術語 wagon 篷車
+Merchants leaving soon	商人即將離開	商人即将离开		FUN_140749ee0 L1019576 case 0xf5：設定「公告」分頁的公告種類名
+Merchants leaving now	商人正在離開	商人正在离开		FUN_140749ee0 L1019579 case 0xf6：設定「公告」分頁的公告種類名
+Pet loses dead owner	寵物的主人死亡	宠物的主人死亡		FUN_140749ee0 L1019582 case 0xf7：設定「公告」分頁的公告種類名
+Pet adopts owner	寵物認主	宠物认主		FUN_140749ee0 L1019585 case 0xf8：設定「公告」分頁的公告種類名
+Vermin bite	小動物咬傷	小动物咬伤		FUN_140749ee0 L1019588 case 0xf9：設定「公告」分頁的公告種類名
+Unable to complete building	無法完成建築	无法完成建筑		FUN_140749ee0 L1019591 case 0xfa：設定「公告」分頁的公告種類名
+Job removed from unpowered building	建築無動力，工作被移除	建筑无动力，工作被移除		FUN_140749ee0 L1019594 case 0xfb：設定「公告」分頁的公告種類名
+Citizen kidnapped	公民遭綁架	公民遭绑架		FUN_140749ee0 L1019597 case 0xfc：設定「公告」分頁的公告種類名
+Vermin disturbed	小動物受驚	小动物受惊		FUN_140749ee0 L1019600 case 0xfd：設定「公告」分頁的公告種類名
+Land gains a status	領地升格	领地升格		FUN_140749ee0 L1019603 case 0xfe：設定「公告」分頁的公告種類名；同公告「已升格為」
+Land's status elevated	領地地位提升	领地地位提升		FUN_140749ee0 L1019606 case 0xff：設定「公告」分頁的公告種類名
+Masterpiece crafted	製作出傑作	制作出杰作		FUN_140749ee0 L1019609 case 0x100：設定「公告」分頁的公告種類名
+Masterpiece defaced	傑作遭毀損	杰作遭毁损		FUN_140749ee0 L1019612 case 0x101：設定「公告」分頁的公告種類名
+Learned a power	學會一項能力	学会一项能力		FUN_140749ee0 L1019615 case 0x102：設定「公告」分頁的公告種類名
+You feed on victim	你吸了受害者的血	你吸了受害者的血		FUN_140749ee0 L1019618 case 0x103：設定「公告」分頁的公告種類名；同公告「你吸了…的血」
+Animal trained	動物訓練完成	动物训练完成		FUN_140749ee0 L1019621 case 0x104：設定「公告」分頁的公告種類名
+Masterful dye	大師級染色	大师级染色		FUN_140749ee0 L1019624 case 0x105：設定「公告」分頁的公告種類名
+Masterwork food	傑作料理	杰作菜肴		FUN_140749ee0 L1019627 case 0x106：設定「公告」分頁的公告種類名
+Mandate ends	命令結束	命令结束		FUN_140749ee0 L1019630 case 0x107：設定「公告」分頁的公告種類名
+Diplomat bids farewell	外交官道別	外交官道别		FUN_140749ee0 L1019633 case 0x109：設定「公告」分頁的公告種類名
+Election	選舉	选举		FUN_140749ee0 L1019636 case 0x10a：設定「公告」分頁的公告種類名
+Site located	找到據點	找到据点		FUN_140749ee0 L1019639 case 0x10b：設定「公告」分頁的公告種類名
+Construction suspended	建造暫停	建造暂停		FUN_140749ee0 L1019642 case 0x10c：設定「公告」分頁的公告種類名
+Machine link suspended	機械連動暫停	机械联动暂停		FUN_140749ee0 L1019645 case 0x10d：設定「公告」分頁的公告種類名
+Work order completed	工作指令完成	工作订单完成		FUN_140749ee0 L1019648 case 0x10e：設定「公告」分頁的公告種類名；術語 work order
+Job overwritten	工作被覆蓋	工作被覆盖		FUN_140749ee0 L1019651 case 0x10f：設定「公告」分頁的公告種類名
+No fish to catch	沒有魚可捕	没有鱼可捕		FUN_140749ee0 L1019654 case 0x110：設定「公告」分頁的公告種類名
+Demand forgotten	要求被遺忘	要求被遗忘		FUN_140749ee0 L1019657 case 0x111：設定「公告」分頁的公告種類名
+New demand	新要求	新要求		FUN_140749ee0 L1019660 case 0x112：設定「公告」分頁的公告種類名
+New mandate	新命令	新命令		FUN_140749ee0 L1019663 case 0x113：設定「公告」分頁的公告種類名
+Local resident creature named	當地居民生物獲得名字	当地居民生物获得名字		FUN_140749ee0 L1019666 case 0x115：設定「公告」分頁的公告種類名
+Somebody grows up	長大成年	长大成年		FUN_140749ee0 L1019669 case 0x116：設定「公告」分頁的公告種類名
+Citizen becomes soldier	公民成為士兵	公民成为士兵		FUN_140749ee0 L1019672 case 0x11a：設定「公告」分頁的公告種類名
+Citizen becomes civilian	公民成為平民	公民成为平民		FUN_140749ee0 L1019675 case 0x11b：設定「公告」分頁的公告種類名
+Party organized	舉辦派對	举办派对		FUN_140749ee0 L1019678 case 0x11c：設定「公告」分頁的公告種類名
+Tantrum (possessed by ghost)	發脾氣（鬼魂附身）	发脾气（鬼魂附身）		FUN_140749ee0 L1019681 case 0x11d：設定「公告」分頁的公告種類名；術語 possessed 附身
+Building toppled by ghost	建築被鬼魂推倒	建筑被鬼魂推倒		FUN_140749ee0 L1019684 case 0x11e：設定「公告」分頁的公告種類名
+Masterwork improvement	傑作級裝飾	杰作级装饰		FUN_140749ee0 L1019687 case 0x11f：設定「公告」分頁的公告種類名；同公告「以大師級手藝裝飾」
+Masterwork engraving	傑作雕刻	杰作雕刻		FUN_140749ee0 L1019690 case 0x120：設定「公告」分頁的公告種類名
+Wedding	婚禮	婚礼		FUN_140749ee0 L1019693 case 0x121：設定「公告」分頁的公告種類名
+Beast guzzles drink	野獸灌下飲料	野兽灌下饮料		FUN_140749ee0 L1019696 case 0x123：設定「公告」分頁的公告種類名
+Snow	下雪	下雪		FUN_140749ee0 L1019702 case 0x125：設定「公告」分頁的公告種類名
+Wet season	雨季	雨季		FUN_140749ee0 L1019708 case 0x127：設定「公告」分頁的公告種類名
+Dry season	旱季	旱季		FUN_140749ee0 L1019711 case 0x128：設定「公告」分頁的公告種類名
+Guest arrives	訪客抵達	访客抵达		FUN_140749ee0 L1019726 case 0x12d：設定「公告」分頁的公告種類名
+You cannot speak	你無法說話	你无法说话		FUN_140749ee0 L1019729 case 0x12e：設定「公告」分頁的公告種類名
+Research breakthrough	研究突破	研究突破		FUN_140749ee0 L1019732 case 0x12f：設定「公告」分頁的公告種類名
+Your order delivered	你點的東西送到了	你点的东西送到了		FUN_140749ee0 L1019735 case 0x130：設定「公告」分頁的公告種類名；酒館點餐送達
+You cannot perform	你無法表演	你无法表演		FUN_140749ee0 L1019738 case 0x131：設定「公告」分頁的公告種類名
+Begin activity	活動開始	活动开始		FUN_140749ee0 L1019741 case 0x132：設定「公告」分頁的公告種類名
+Activity ongoing	活動進行中	活动进行中		FUN_140749ee0 L1019744 case 0x133：設定「公告」分頁的公告種類名
+Activity section change	活動進入下一段	活动进入下一段		FUN_140749ee0 L1019747 case 0x134：設定「公告」分頁的公告種類名
+Activity end	活動結束	活动结束		FUN_140749ee0 L1019750 case 0x135：設定「公告」分頁的公告種類名
+Learned written content	從著作學到知識	从著作学到知识		FUN_140749ee0 L1019753 case 0x136：設定「公告」分頁的公告種類名；術語 written content 著作
+Learned art form	學會藝術形式	学会艺术形式		FUN_140749ee0 L1019756 case 0x137：設定「公告」分頁的公告種類名
+Performance quality	表演品質	表演质量		FUN_140749ee0 L1019759 case 0x138：設定「公告」分頁的公告種類名
+Building destroyed/toppled	建築被毀／推倒	建筑被毁／推倒		FUN_140749ee0 L1019762 case 0x139：設定「公告」分頁的公告種類名
+Cursed by deity	遭神祇詛咒	遭神祇诅咒		FUN_140749ee0 L1019765 case 0x13a：設定「公告」分頁的公告種類名；術語 deity 神祇
+Composition complete	創作完成	创作完成		FUN_140749ee0 L1019768 case 0x13b：設定「公告」分頁的公告種類名
+Composition failed	創作失敗	创作失败		FUN_140749ee0 L1019771 case 0x13c：設定「公告」分頁的公告種類名
+New apprenticeship	新的師徒關係	新的师徒关系		FUN_140749ee0 L1019774 case 0x13d：設定「公告」分頁的公告種類名
+Petition ignored	請願遭忽視	请愿被忽视		FUN_140749ee0 L1019777 case 0x13e：設定「公告」分頁的公告種類名；術語 petition 請願
+Tree chopped	砍倒樹木	砍倒树木		FUN_140749ee0 L1019780 case 0x13f：設定「公告」分頁的公告種類名
+You cannot construct here	你無法在此建造	你无法在此建造		FUN_140749ee0 L1019783 case 0x140：設定「公告」分頁的公告種類名
+Rumor spread by citizen	公民散布傳聞	公民散布传闻		FUN_140749ee0 L1019786 case 0x141：設定「公告」分頁的公告種類名
+Thief (villain)	小偷（反派）	小偷（反派）		FUN_140749ee0 L1019789 case 0x142：設定「公告」分頁的公告種類名
+Visitor shared rumor(s)	訪客分享傳聞	访客分享传闻		FUN_140749ee0 L1019792 case 0x143：設定「公告」分頁的公告種類名
+Returning soldiers bring rumor(s)	歸來的士兵帶回傳聞	归来的士兵带回传闻		FUN_140749ee0 L1019795 case 0x144：設定「公告」分頁的公告種類名
+New site founded nearby	附近建立新據點	附近建立新据点		FUN_140749ee0 L1019798 case 0x145：設定「公告」分頁的公告種類名
+Nearby site linked economically	附近據點與你建立經濟聯繫	附近据点与你建立经济联系		FUN_140749ee0 L1019801 case 0x146：設定「公告」分頁的公告種類名
+You given emergency tactical control	你接手緊急戰術指揮	你接手紧急战术指挥		FUN_140749ee0 L1019804 case 0x147：設定「公告」分頁的公告種類名；同公告「由你接手戰術指揮」
+Agreement satisfied	協議達成	协议达成		FUN_140749ee0 L1019807 case 0x148：設定「公告」分頁的公告種類名
+Priesthood needs recognized	祭司團的需求獲得承認	祭司团的需求获得承认		FUN_140749ee0 L1019810 case 0x149：設定「公告」分頁的公告種類名
+Agreement abandoned	協議作廢	协议作废		FUN_140749ee0 L1019813 case 0x14a：設定「公告」分頁的公告種類名；同公告「協議作廢了」
+Guild founded	公會成立	公会成立		FUN_140749ee0 L1019816 case 0x14b：設定「公告」分頁的公告種類名
+Witnessed item handoff	目擊物品轉交	目击物品转交		FUN_140749ee0 L1019819 case 0x14c：設定「公告」分頁的公告種類名
+Witnessed item stolen	目擊物品被偷	目击物品被偷		FUN_140749ee0 L1019822 case 0x14d：設定「公告」分頁的公告種類名
+Witnessed item has been moved	目擊物品被移走	目击物品被移走		FUN_140749ee0 L1019825 case 0x14e：設定「公告」分頁的公告種類名
+Witnessed item missing	發現物品不見	发现物品不见		FUN_140749ee0 L1019828 case 0x14f：設定「公告」分頁的公告種類名
+Mount	騎乘	骑乘		FUN_140749ee0 L1019831 case 0x150：設定「公告」分頁的公告種類名
+You cannot mount	你無法騎乘	你无法骑乘		FUN_140749ee0 L1019834 case 0x151：設定「公告」分頁的公告種類名
+You failed to mount	你騎乘失敗	你骑乘失败		FUN_140749ee0 L1019837 case 0x152：設定「公告」分頁的公告種類名
+Dismount	下坐騎	下坐骑		FUN_140749ee0 L1019840 case 0x153：設定「公告」分頁的公告種類名
+You failed to dismount	你下坐騎失敗	你下坐骑失败		FUN_140749ee0 L1019843 case 0x154：設定「公告」分頁的公告種類名
+Diplomat left unhappy	外交官不悅離去	外交官不悦离去		FUN_140749ee0 L1019846 case 0x155：設定「公告」分頁的公告種類名
+First caravan	首支商隊	首支商队		FUN_140749ee0 L1019852 case 0x157：設定「公告」分頁的公告種類名
+Monarch arrived	君主抵達	君主抵达		FUN_140749ee0 L1019855 case 0x158：設定「公告」分頁的公告種類名
+Monarch arrived early	君主提早抵達	君主提早抵达		FUN_140749ee0 L1019858 case 0x159：設定「公告」分頁的公告種類名
+Mountainhome achieved	成為山之家	成为山之家		FUN_140749ee0 L1019864 case 0x15b：設定「公告」分頁的公告種類名；術語 Mountainhome 山之家
+Put on item	穿上物品	穿上物品		FUN_140749ee0 L1019870 case 0x15d：設定「公告」分頁的公告種類名
+Take off item	脫下物品	脱下物品		FUN_140749ee0 L1019873 case 0x15e：設定「公告」分頁的公告種類名
+Creature stuck	生物受困	生物受困		FUN_140749ee0 L1019876 case 0x160：設定「公告」分頁的公告種類名
+Citizen stuck	公民受困	公民受困		FUN_140749ee0 L1019879 case 0x161：設定「公告」分頁的公告種類名
+Tavern keeper shirking duties	酒館老闆怠忽職守	酒馆老板玩忽职守		FUN_140749ee0 L1019882 case 0x162：設定「公告」分頁的公告種類名；術語 Tavern Keeper 酒館老闆
+Vomit blood	吐血	吐血		FUN_140749ee0 L1019564 case 0xf1：設定「公告」分頁的公告種類名；蓋過片段拼出的「嘔吐物血液」
+Clear weather	天氣放晴	天气放晴		FUN_140749ee0 L1019699 case 0x124：設定「公告」分頁的公告種類名；蓋過片段拼出的「清除天氣」；同公告「天氣放晴了」
+Satisfied monarch	君主滿意	君主满意		FUN_140749ee0 L1019861 case 0x15a：設定「公告」分頁的公告種類名；蓋過片段拼出的「滿意君主」
+No food	缺糧	缺粮		FUN_140749ee0 L1019867 case 0x15c：設定「公告」分頁的公告種類名；蓋過片段拼出的「否食物」
+Vomit	嘔吐	呕吐		FUN_140749ee0 公告種類（冒險模式動作）；不寫的話大寫退回小寫查到材料名「嘔吐物」

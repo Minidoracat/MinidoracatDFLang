@@ -1,0 +1,119 @@
+en	zh-Hant	zh-Hans	align	note
+Met with subject.	與受審者會面。	与受审者会面。		FUN_1402c1770 394920 審訊紀錄第一句（wrap_text 逐句）
+Made intimidating remarks in order to elicit information.	說了些威嚇的話來套取情報。	说了些威吓的话来套取情报。		FUN_1402c1770 394926 審訊手段（成功）
+Attempted to make intimidating remarks in order to elicit information.	試圖說些威嚇的話來套取情報。	试图说些威吓的话来套取情报。		FUN_1402c1770 394926 審訊手段（未成功）
+Made flattering remarks in order to elicit information.	說了些奉承的話來套取情報。	说了些奉承的话来套取情报。		FUN_1402c1770 394937 審訊手段（成功）
+Attempted to make flattering remarks in order to elicit information.	試圖說些奉承的話來套取情報。	试图说些奉承的话来套取情报。		FUN_1402c1770 394937 審訊手段（未成功）
+Built rapport in order to elicit information.	與對方建立融洽關係來套取情報。	与对方建立融洽关系来套取情报。		FUN_1402c1770 395003 審訊手段（成功）；術語例外：Build
+Attempted to build rapport in order to elicit information.	試圖與對方建立融洽關係來套取情報。	试图与对方建立融洽关系来套取情报。		FUN_1402c1770 395003 審訊手段（未成功）；術語例外：Build
+Misrepresented facts surrounding case in order to elicit information.	歪曲案件事實來套取情報。	歪曲案件事实来套取情报。		FUN_1402c1770 395018 審訊手段（成功）
+Attempted to misrepresent facts surrounding case in order to elicit information.	試圖歪曲案件事實來套取情報。	试图歪曲案件事实来套取情报。		FUN_1402c1770 395018 審訊手段（未成功）
+Appealed to subject's belief in the law.	訴諸受審者對法律的信念。	诉诸受审者对法律的信念。		FUN_1402c1770 394974 審訊手段：訴諸價值觀（成功）；truth 是價值觀「誠實」
+Attempted to appeal to subject's belief in the law.	試圖訴諸受審者對法律的信念。	试图诉诸受审者对法律的信念。		FUN_1402c1770 394974 審訊手段：訴諸價值觀（未成功）；truth 是價值觀「誠實」
+Appealed to subject's belief in the truth.	訴諸受審者對誠實的信念。	诉诸受审者对诚实的信念。		FUN_1402c1770 394974 審訊手段：訴諸價值觀（成功）；truth 是價值觀「誠實」
+Attempted to appeal to subject's belief in the truth.	試圖訴諸受審者對誠實的信念。	试图诉诸受审者对诚实的信念。		FUN_1402c1770 394974 審訊手段：訴諸價值觀（未成功）；truth 是價值觀「誠實」
+Appealed to subject's belief in cooperation.	訴諸受審者對合作的信念。	诉诸受审者对合作的信念。		FUN_1402c1770 394974 審訊手段：訴諸價值觀（成功）
+Attempted to appeal to subject's belief in cooperation.	試圖訴諸受審者對合作的信念。	试图诉诸受审者对合作的信念。		FUN_1402c1770 394974 審訊手段：訴諸價值觀（未成功）
+Appealed to subject's belief in harmony.	訴諸受審者對和諧的信念。	诉诸受审者对和谐的信念。		FUN_1402c1770 394974 審訊手段：訴諸價值觀（成功）
+Attempted to appeal to subject's belief in harmony.	試圖訴諸受審者對和諧的信念。	试图诉诸受审者对和谐的信念。		FUN_1402c1770 394974 審訊手段：訴諸價值觀（未成功）
+Subject naively complied.	受審者天真地配合了。	受审者天真地配合了。		FUN_1402c1770 395411 審訊結果
+Subject was cagey and refused to comply.	受審者閃爍其詞，拒絕配合。	受审者含糊其辞，拒绝配合。		FUN_1402c1770 395038 審訊結果
+In retrospect, interrogator may have completely misjudged subject's character.	事後看來，審訊者可能完全看錯了受審者的性格。	事后看来，审讯者可能完全看错了受审者的性格。		FUN_1402c1770 395847 審訊紀錄結尾
+distrusted interrogator and refused	不信任審訊者而拒絕配合	不信任审讯者而拒绝配合		FUN_1402c1770 395047 審訊結果主句（接在 Subject 後）：拒絕：關係
+felt no loyalty to interrogator and refused	對審訊者毫無忠誠而拒絕配合	对审讯者毫无忠诚而拒绝配合		FUN_1402c1770 395069 審訊結果主句（接在 Subject 後）：拒絕：關係
+hated interrogator and refused	憎恨審訊者而拒絕配合	憎恨审讯者而拒绝配合		FUN_1402c1770 395055 審訊結果主句（接在 Subject 後）：拒絕：關係
+was unafraid of interrogator and refused	不畏懼審訊者而拒絕配合	不畏惧审讯者而拒绝配合		FUN_1402c1770 395065 審訊結果主句（接在 Subject 後）：拒絕：關係
+had no respect for interrogator and refused	不尊敬審訊者而拒絕配合	不尊敬审讯者而拒绝配合		FUN_1402c1770 395060 審訊結果主句（接在 Subject 後）：拒絕：關係
+spurned the law and refused to listen	蔑視法律而不肯聽	蔑视法律而不肯听		FUN_1402c1770 395172 審訊結果主句（接在 Subject 後）：拒絕：價值觀
+spurning the truth and refused to listen	蔑視誠實而不肯聽	蔑视诚实而不肯听		FUN_1402c1770 395179 審訊結果主句（接在 Subject 後）：拒絕：價值觀（原文 spurning 照抄）
+spurning the value of cooperation and refused to listen	蔑視合作的價值而不肯聽	蔑视合作的价值而不肯听		FUN_1402c1770 395184 審訊結果主句（接在 Subject 後）：拒絕：價值觀（原文 spurning 照抄）
+spurned harmony and refused to listen	蔑視和諧而不肯聽	蔑视和谐而不肯听		FUN_1402c1770 395188 審訊結果主句（接在 Subject 後）：拒絕：價值觀
+was willing to accept eventual death and refused	坦然接受終須一死而拒絕配合	坦然接受终须一死而拒绝配合		FUN_1402c1770 395278 審訊結果主句（接在 Subject 後）：拒絕：性格
+felt no avarice and refused	毫不貪財而拒絕配合	毫不贪财而拒绝配合		FUN_1402c1770 395285 審訊結果主句（接在 Subject 後）：拒絕：性格
+was unafraid in the moment	當下毫不畏懼	当下毫不畏惧		FUN_1402c1770 395289 審訊結果主句（接在 Subject 後）：拒絕：性格（原文沒有 and refused）
+did not fear death and refused	不怕死而拒絕配合	不怕死而拒绝配合		FUN_1402c1770 395293 審訊結果主句（接在 Subject 後）：拒絕：性格
+was not afraid and refused	毫無懼色而拒絕配合	毫无惧色而拒绝配合		FUN_1402c1770 395297 審訊結果主句（接在 Subject 後）：拒絕：性格
+was unaffected by the comments and refused	不為這些話所動而拒絕配合	不为这些话所动而拒绝配合		FUN_1402c1770 395305 審訊結果主句（接在 Subject 後）：拒絕：性格
+lacked a desire for vengeance and refused	無意復仇而拒絕配合	无意复仇而拒绝配合		FUN_1402c1770 395311 審訊結果主句（接在 Subject 後）：拒絕：性格
+was intellectually stubborn and refused to listen	思想頑固而不肯聽	思想顽固而不肯听		FUN_1402c1770 395315 審訊結果主句（接在 Subject 後）：拒絕：性格
+was unswayed by the emotional appeal and refused	不為感性訴求所動而拒絕配合	不为感性诉求所动而拒绝配合		FUN_1402c1770 395318 審訊結果主句（接在 Subject 後）：拒絕：性格
+had a distrustful nature and refused to listen	天性多疑而不肯聽	天性多疑而不肯听		FUN_1402c1770 395324 審訊結果主句（接在 Subject 後）：拒絕：性格
+was a natural loner and refused to listen	天生孤僻而不肯聽	天生孤僻而不肯听		FUN_1402c1770 395328 審訊結果主句（接在 Subject 後）：拒絕：性格
+trusted interrogator and agreed	信任審訊者而同意配合	信任审讯者而同意配合		FUN_1402c1770 395420 審訊結果主句（接在 Subject 後）：配合：關係
+accepted out of loyalty to interrogator	出於對審訊者的忠誠而接受	出于对审讯者的忠诚而接受		FUN_1402c1770 395427 審訊結果主句（接在 Subject 後）：配合：關係
+agreed for love of interrogator	出於對審訊者的愛而同意	出于对审讯者的爱而同意		FUN_1402c1770 395432 審訊結果主句（接在 Subject 後）：配合：關係
+complied out of fear of interrogator	出於對審訊者的畏懼而配合	出于对审讯者的畏惧而配合		FUN_1402c1770 395437 審訊結果主句（接在 Subject 後）：配合：關係
+respected interrogator and agreed	尊敬審訊者而同意配合	尊敬审讯者而同意配合		FUN_1402c1770 395442 審訊結果主句（接在 Subject 後）：配合：關係
+value the law	重視法律	重视法律		FUN_1402c1770 395555 審訊結果主句（接在 Subject 後）：配合：價值觀（原文 value 照抄）
+valued honesty	重視誠實	重视诚实		FUN_1402c1770 395562 審訊結果主句（接在 Subject 後）：配合：價值觀
+believed in the value of cooperation	相信合作的價值	相信合作的价值		FUN_1402c1770 395567 審訊結果主句（接在 Subject 後）：配合：價值觀
+valued harmony	重視和諧	重视和谐		FUN_1402c1770 395571 審訊結果主句（接在 Subject 後）：配合：價值觀
+was too envious of others to face death and agreed	太過嫉妒他人而無法面對死亡，於是同意配合	太过嫉妒他人而无法面对死亡，于是同意配合		FUN_1402c1770 395688 審訊結果主句（接在 Subject 後）：配合：性格
+was too unsettled by death to face it and agreed	對死亡太過不安而無法面對，於是同意配合	对死亡太过不安而无法面对，于是同意配合		FUN_1402c1770 395696 審訊結果主句（接在 Subject 後）：配合：性格
+was overcome by greed	被貪婪沖昏了頭	被贪婪冲昏了头		FUN_1402c1770 395702 審訊結果主句（接在 Subject 後）：配合：性格
+gave in to fear of death	屈服於對死亡的恐懼	屈服于对死亡的恐惧		FUN_1402c1770 395706 審訊結果主句（接在 Subject 後）：配合：性格
+was too afraid not to comply	怕得不敢不配合	怕得不敢不配合		FUN_1402c1770 395708 審訊結果主句（接在 Subject 後）：配合：性格
+could not accept the uncertainty following death and agreed	無法接受死後的未知，於是同意配合	无法接受死后的未知，于是同意配合		FUN_1402c1770 395720 審訊結果主句（接在 Subject 後）：配合：性格
+was too vain to accept death and agreed	太過虛榮而無法接受死亡，於是同意配合	太过虚荣而无法接受死亡，于是同意配合		FUN_1402c1770 395726 審訊結果主句（接在 Subject 後）：配合：性格
+succumbed to vanity	敗給了虛榮心	败给了虚荣心		FUN_1402c1770 395728 審訊結果主句（接在 Subject 後）：配合：性格
+was too ambitious to accept death and agreed	野心太大而無法接受死亡，於是同意配合	野心太大而无法接受死亡，于是同意配合		FUN_1402c1770 395739 審訊結果主句（接在 Subject 後）：配合：性格
+desired vengeance and willingly complied	渴望復仇而樂意配合	渴望复仇而乐意配合		FUN_1402c1770 395745 審訊結果主句（接在 Subject 後）：配合：性格
+was too proud to accept death and agreed	太過驕傲而無法接受死亡，於是同意配合	太过骄傲而无法接受死亡，于是同意配合		FUN_1402c1770 395750 審訊結果主句（接在 Subject 後）：配合：性格
+acquiesced to the argument	接受了對方的說法	接受了对方的说法		FUN_1402c1770 395756 審訊結果主句（接在 Subject 後）：配合：性格
+was swayed by the emotional appeal	被感性訴求打動	被感性诉求打动		FUN_1402c1770 395760 審訊結果主句（接在 Subject 後）：配合：性格
+had a trusting nature and agreed	天性容易信任他人而同意配合	天性容易信任他人而同意配合		FUN_1402c1770 395764 審訊結果主句（接在 Subject 後）：配合：性格
+was naturally inclined to speak	天生就樂於開口	天生就乐于开口		FUN_1402c1770 395768 審訊結果主句（接在 Subject 後）：配合：性格
+an unwillingness to accept death	不願接受死亡	不愿接受死亡		FUN_1402c1770 395090 審訊結果 despite 後的理由：拒絕的 despite 性格
+feelings of greed	心懷貪婪	心怀贪婪		FUN_1402c1770 395097 審訊結果 despite 後的理由：拒絕的 despite 性格
+fearing of death	畏懼死亡	畏惧死亡		FUN_1402c1770 395101 審訊結果 despite 後的理由：拒絕的 despite 性格（原文 fearing of 照抄）
+being afraid	心生恐懼	心生恐惧		FUN_1402c1770 395104 審訊結果 despite 後的理由：拒絕的 despite 性格
+feelings of vanity	愛慕虛榮	爱慕虚荣		FUN_1402c1770 395111 審訊結果 despite 後的理由：拒絕的 despite 性格
+a desire for vengeance	渴望復仇	渴望复仇		FUN_1402c1770 395116 審訊結果 despite 後的理由：拒絕的 despite 性格
+an acquiescing nature	天性順從	天性顺从		FUN_1402c1770 395120 審訊結果 despite 後的理由：拒絕的 despite 性格
+being swayed by the emotional appeal	為感性訴求所動	为感性诉求所动		FUN_1402c1770 395124 審訊結果 despite 後的理由：拒絕的 despite 性格
+being trusting by nature	天性容易信任他人	天性容易信任他人		FUN_1402c1770 395128 審訊結果 despite 後的理由：拒絕的 despite 性格
+being inclined to converse	喜歡與人交談	喜欢与人交谈		FUN_1402c1770 395132 審訊結果 despite 後的理由：拒絕的 despite 性格
+valuing the law	重視法律	重视法律		FUN_1402c1770 395146 審訊結果 despite 後的理由：拒絕的 despite 價值觀
+valuing the truth	重視誠實	重视诚实		FUN_1402c1770 395150 審訊結果 despite 後的理由：拒絕的 despite 價值觀；truth 是價值觀「誠實」
+a belief in the value of cooperation	相信合作的價值	相信合作的价值		FUN_1402c1770 395155 審訊結果 despite 後的理由：拒絕的 despite 價值觀
+valuing harmony	重視和諧	重视和谐		FUN_1402c1770 395160 審訊結果 despite 後的理由：拒絕的 despite 價值觀
+being willing to accept death	願意接受死亡	愿意接受死亡		FUN_1402c1770 395464 審訊結果 despite 後的理由：配合的 despite 性格
+feeling no avarice	毫不貪財	毫不贪财		FUN_1402c1770 395471 審訊結果 despite 後的理由：配合的 despite 性格
+being unafraid in the moment	當下毫不畏懼	当下毫不畏惧		FUN_1402c1770 395475 審訊結果 despite 後的理由：配合的 despite 性格
+being unafraid of death	不怕死	不怕死		FUN_1402c1770 395479 審訊結果 despite 後的理由：配合的 despite 性格
+being unafraid	毫無懼色	毫无惧色		FUN_1402c1770 395483 審訊結果 despite 後的理由：配合的 despite 性格
+being unaffected by the comments	不為這些話所動	不为这些话所动		FUN_1402c1770 395491 審訊結果 despite 後的理由：配合的 despite 性格
+a lack of desire for vengeance	無意復仇	无意复仇		FUN_1402c1770 395497 審訊結果 despite 後的理由：配合的 despite 性格
+being intellectually stubborn	思想頑固	思想顽固		FUN_1402c1770 395500 審訊結果 despite 後的理由：配合的 despite 性格
+being unswayed by the emotional appeal	不為感性訴求所動	不为感性诉求所动		FUN_1402c1770 395506 審訊結果 despite 後的理由：配合的 despite 性格
+a distrustful nature	天性多疑	天性多疑		FUN_1402c1770 395510 審訊結果 despite 後的理由：配合的 despite 性格
+being a natural loner	天生孤僻	天生孤僻		FUN_1402c1770 395514 審訊結果 despite 後的理由：配合的 despite 性格
+spurning the law	蔑視法律	蔑视法律		FUN_1402c1770 395528 審訊結果 despite 後的理由：配合的 despite 價值觀
+spurning the truth	蔑視誠實	蔑视诚实		FUN_1402c1770 395533 審訊結果 despite 後的理由：配合的 despite 價值觀
+spurning the value of honesty	蔑視誠實的價值	蔑视诚实的价值		FUN_1402c1770 395787 審訊結果 despite 後的理由：配合的 despite 價值觀
+spurning the value of cooperation	蔑視合作的價值	蔑视合作的价值		FUN_1402c1770 395538 審訊結果 despite 後的理由：配合的 despite 價值觀
+spurning the value of harmony	蔑視和諧的價值	蔑视和谐的价值		FUN_1402c1770 395543 審訊結果 despite 後的理由：配合的 despite 價值觀
+Subject confessed to the production order violation.	受審者坦承違反了生產令。	受审者坦承违反了生产令。		FUN_1402c0c20 394557～394687 審訊紀錄：招供的罪名（譯法對齊 speech_03 FUN_14066ba00 罪行句）
+Subject confessed to the export prohibition violation.	受審者坦承違反了出口禁令。	受审者坦承违反了出口禁令。		FUN_1402c0c20 394557～394687 審訊紀錄：招供的罪名（譯法對齊 speech_03 FUN_14066ba00 罪行句）
+Subject confessed to the job order violation.	受審者坦承違反了工作令。	受审者坦承违反了工作令。		FUN_1402c0c20 394557～394687 審訊紀錄：招供的罪名（譯法對齊 speech_03 FUN_14066ba00 罪行句）
+Subject confessed to the conspiracy to slow labor.	受審者坦承策劃了怠工的陰謀。	受审者坦承策划了怠工的阴谋。		FUN_1402c0c20 394557～394687 審訊紀錄：招供的罪名（譯法對齊 speech_03 FUN_14066ba00 罪行句）；術語例外：Labor
+Subject confessed to the murder.	受審者坦承犯下了謀殺案。	受审者坦承犯下了谋杀案。		FUN_1402c0c20 394557～394687 審訊紀錄：招供的罪名（譯法對齊 speech_03 FUN_14066ba00 罪行句）
+Subject confessed to disorderly conduct.	受審者坦承擾亂了秩序。	受审者坦承扰乱了秩序。		FUN_1402c0c20 394557～394687 審訊紀錄：招供的罪名（譯法對齊 speech_03 FUN_14066ba00 罪行句）
+Subject confessed to building destruction.	受審者坦承破壞了建築。	受审者坦承破坏了建筑。		FUN_1402c0c20 394557～394687 審訊紀錄：招供的罪名（譯法對齊 speech_03 FUN_14066ba00 罪行句）
+Subject confessed to vandalism.	受審者坦承蓄意毀損了財物。	受审者坦承蓄意毁坏了财物。		FUN_1402c0c20 394557～394687 審訊紀錄：招供的罪名（譯法對齊 speech_03 FUN_14066ba00 罪行句）
+Subject confessed to the theft.	受審者坦承犯下了竊案。	受审者坦承犯下了盗窃案。		FUN_1402c0c20 394557～394687 審訊紀錄：招供的罪名（譯法對齊 speech_03 FUN_14066ba00 罪行句）
+Subject confessed to the robbery.	受審者坦承犯下了搶案。	受审者坦承犯下了抢劫案。		FUN_1402c0c20 394557～394687 審訊紀錄：招供的罪名（譯法對齊 speech_03 FUN_14066ba00 罪行句）
+Subject confessed to blood-drinking.	受審者坦承吸食了鮮血。	受审者坦承吸食了鲜血。		FUN_1402c0c20 394557～394687 審訊紀錄：招供的罪名（譯法對齊 speech_03 FUN_14066ba00 罪行句）
+Subject confessed to embezzlement.	受審者坦承盜用了公款。	受审者坦承挪用了公款。		FUN_1402c0c20 394557～394687 審訊紀錄：招供的罪名（譯法對齊 speech_03 FUN_14066ba00 罪行句）
+Subject confessed to attempted murder.	受審者坦承企圖殺人。	受审者坦承企图杀人。		FUN_1402c0c20 394557～394687 審訊紀錄：招供的罪名（譯法對齊 speech_03 FUN_14066ba00 罪行句）
+Subject confessed to the kidnapping.	受審者坦承犯下了綁架案。	受审者坦承犯下了绑架案。		FUN_1402c0c20 394557～394687 審訊紀錄：招供的罪名（譯法對齊 speech_03 FUN_14066ba00 罪行句）
+Subject confessed to attempted kidnapping.	受審者坦承企圖綁架。	受审者坦承企图绑架。		FUN_1402c0c20 394557～394687 審訊紀錄：招供的罪名（譯法對齊 speech_03 FUN_14066ba00 罪行句）
+Subject confessed to attempted theft.	受審者坦承企圖偷竊。	受审者坦承企图偷窃。		FUN_1402c0c20 394557～394687 審訊紀錄：招供的罪名（譯法對齊 speech_03 FUN_14066ba00 罪行句）
+Subject confessed to treason.	受審者坦承犯下了叛國罪。	受审者坦承犯下了叛国罪。		FUN_1402c0c20 394557～394687 審訊紀錄：招供的罪名（譯法對齊 speech_03 FUN_14066ba00 罪行句）
+Subject confessed to espionage.	受審者坦承從事了間諜活動。	受审者坦承从事了间谍活动。		FUN_1402c0c20 394557～394687 審訊紀錄：招供的罪名（譯法對齊 speech_03 FUN_14066ba00 罪行句）
+Subject confessed to bribery.	受審者坦承犯下了賄賂罪。	受审者坦承犯下了贿赂罪。		FUN_1402c0c20 394557～394687 審訊紀錄：招供的罪名（譯法對齊 speech_03 FUN_14066ba00 罪行句）
+Subject confessed to the crime.	受審者坦承犯下了罪行。	受审者坦承犯下了罪行。		FUN_1402c0c20 394557～394687 審訊紀錄：招供的罪名（譯法對齊 speech_03 FUN_14066ba00 罪行句）
+Subject confessed to multiple crimes.	受審者坦承犯下了多項罪行。	受审者坦承犯下了多项罪行。		FUN_1402c0c20 394557～394687 審訊紀錄：招供的罪名（譯法對齊 speech_03 FUN_14066ba00 罪行句）
+Unfortunately, no new pertinent information was revealed.	可惜沒有得到任何新的相關情報。	可惜没有得到任何新的相关情报。		FUN_1402c0c20 394731 審訊紀錄：沒有新情報
+Subject revealed that being nameless is in fact an assumed identity.	受審者透露，無名無姓其實是偽裝的身分。	受审者透露，无名无姓其实是伪装的身份。		FUN_1402c0c20 394753 審訊紀錄：識破假身分（假身分沒有名字）
+Subject has used a nameless identity in the past.	受審者過去曾以無名身分行事。	受审者过去曾以无名身份行事。		FUN_1402c0c20 394786 審訊紀錄：曾用的假身分沒有名字
