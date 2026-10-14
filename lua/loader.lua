@@ -116,12 +116,23 @@ local function load_glyphs(engine, dir)
     return handles, n
 end
 
-local function attach_hooks(engine, dir)
+-- 段落排版（教學、說明、彈出視窗的長文）用的結構位移；這版 DFHack 沒有這些定義就回傳 nil，段落維持英文
+local function mtb_layout()
+    local ok, layout = pcall(function()
+        local box, word = df.markup_text_boxst._fields, df.markup_text_wordst._fields
+        return {word = box.word.offset, current_width = box.current_width.offset, max_y = box.max_y.offset,
+                str = word.str.offset, red = word.red.offset, link_index = word.link_index.offset,
+                px = word.px.offset, py = word.py.offset, flags = word.flags.offset}
+    end)
+    return ok and layout or nil
+end
+
+local function attach_hooks(engine, dir, hooks)
     local patterns = {}
     for name, pattern in (read_file(dir .. 'patterns.tsv') or ''):gmatch('([%w_]+)\t([^\t\n]+)') do
         patterns[name] = pattern
     end
-    for _, name in ipairs(HOOKS) do
+    for _, name in ipairs(hooks) do
         if not patterns[name] then return nil, ('patterns.tsv 沒有 %s'):format(name) end
         local addr, hits = engine.scan(patterns[name])
         if hits ~= 1 then
@@ -172,6 +183,13 @@ local function start()
     local ok
     ok, err = engine.set_layout(layout)
     if not ok then return fail('%s', err) end
+    local hooks = {table.unpack(HOOKS)}
+    local mtb = mtb_layout()
+    if mtb and engine.set_mtb_layout(mtb) then
+        table.insert(hooks, 'mtb_set_width')
+    else
+        fail('這版 DFHack 沒有段落結構定義，教學與說明文字維持英文')
+    end
 
     local handles, glyphs = load_glyphs(engine, dir)
     if not handles then return fail('%s', glyphs) end
@@ -186,7 +204,7 @@ local function start()
         fail('句型有 %d 條寫法不對、%d 個字沒有字圖', bad_rules, missing_rule_glyphs)
     end
 
-    ok, err = attach_hooks(engine, dir)
+    ok, err = attach_hooks(engine, dir, hooks)
     if not ok then return fail('%s', err) end
     ok, err = engine.enable()
     if not ok then return fail('%s', err) end

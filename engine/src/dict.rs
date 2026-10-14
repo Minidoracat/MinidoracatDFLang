@@ -50,9 +50,17 @@ impl Entry {
     }
 }
 
+/// 佔位能收的片段：任意、只收數字（`{#1}`）、只收字典裡有整句條目的字詞（`{@1}`，例如月份名）。
+#[derive(Clone, Copy, PartialEq)]
+enum Kind {
+    Any,
+    Number,
+    Term,
+}
+
 enum Seg {
     Lit(Vec<u8>),
-    Cap(usize),
+    Cap(usize, Kind),
 }
 
 enum Out {
@@ -71,18 +79,27 @@ pub struct Rule {
     suffix: Vec<u8>,
 }
 
-/// 拆出 `{1}`～`{9}`；其餘依 `text` 轉換（原文轉 CP437 位元組、譯文保留字串）。
-fn split_placeholders<T>(s: &str, mut text: impl FnMut(&str) -> Option<T>) -> Option<Vec<Result<T, usize>>> {
+/// 一個佔位：編號與能收的片段。
+struct Placeholder(usize, Kind);
+
+/// 拆出 `{1}`～`{9}`、`{#1}`～`{#9}`、`{@1}`～`{@9}`；其餘依 `text` 轉換（原文轉 CP437 位元組、譯文保留字串）。
+fn split_placeholders<T>(s: &str, mut text: impl FnMut(&str) -> Option<T>) -> Option<Vec<Result<T, Placeholder>>> {
     let mut parts = Vec::new();
     let mut rest = s;
     while let Some(i) = rest.find('{') {
         let b = rest.as_bytes();
-        if i + 2 < b.len() && (b'1'..=b'9').contains(&b[i + 1]) && b[i + 2] == b'}' {
+        let kind = match b.get(i + 1) {
+            Some(b'#') => Kind::Number,
+            Some(b'@') => Kind::Term,
+            _ => Kind::Any,
+        };
+        let d = i + 1 + usize::from(kind != Kind::Any);
+        if d + 1 < b.len() && (b'1'..=b'9').contains(&b[d]) && b[d + 1] == b'}' {
             if i > 0 {
                 parts.push(Ok(text(&rest[..i])?));
             }
-            parts.push(Err((b[i + 1] - b'1') as usize));
-            rest = &rest[i + 3..];
+            parts.push(Err(Placeholder((b[d] - b'1') as usize, kind)));
+            rest = &rest[d + 2..];
         } else {
             parts.push(Ok(text(&rest[..=i])?));
             rest = &rest[i + 1..];
@@ -94,29 +111,35 @@ fn split_placeholders<T>(s: &str, mut text: impl FnMut(&str) -> Option<T>) -> Op
     Some(parts)
 }
 
+/// 數字佔位能接受的片段：可帶負號、千分位逗號的整數。
+fn is_number(piece: &[u8]) -> bool {
+    let digits = piece.strip_prefix(b"-").unwrap_or(piece);
+    !digits.is_empty() && digits[0].is_ascii_digit() && digits.iter().all(|c| c.is_ascii_digit() || *c == b',')
+}
+
 impl Rule {
     /// 原文樣板必須能轉成 CP437、每個佔位只出現一次、佔位不能相鄰（相鄰時切點不唯一）；
-    /// 譯文用到的佔位要和原文一致。
+    /// 譯文用到的佔位要和原文一致（譯文裡的 `#`、`@` 寫不寫都可以）。
     fn parse(en: &str, zh: &str, align: &str) -> Option<Rule> {
         let mut pattern: Vec<Seg> = Vec::new();
         for part in split_placeholders(en, cp437::encode)? {
             match (part, pattern.last_mut()) {
                 (Ok(bytes), Some(Seg::Lit(lit))) => lit.extend(bytes),
                 (Ok(bytes), _) => pattern.push(Seg::Lit(bytes)),
-                (Err(_), Some(Seg::Cap(_))) => return None,
-                (Err(i), _) => pattern.push(Seg::Cap(i)),
+                (Err(_), Some(Seg::Cap(..))) => return None,
+                (Err(Placeholder(i, kind)), _) => pattern.push(Seg::Cap(i, kind)),
             }
         }
         let output: Vec<Out> = split_placeholders(zh, |t| Some(t.to_owned()))?
             .into_iter()
-            .map(|p| p.map_or_else(Out::Cap, Out::Text))
+            .map(|p| p.map_or_else(|Placeholder(i, _)| Out::Cap(i), Out::Text))
             .collect();
         let caps = |it: &mut dyn Iterator<Item = usize>| {
             let mut v: Vec<usize> = it.collect();
             v.sort_unstable();
             v
         };
-        let en_caps = caps(&mut pattern.iter().filter_map(|s| if let Seg::Cap(i) = s { Some(*i) } else { None }));
+        let en_caps = caps(&mut pattern.iter().filter_map(|s| if let Seg::Cap(i, _) = s { Some(*i) } else { None }));
         let zh_caps = caps(&mut output.iter().filter_map(|o| if let Out::Cap(i) = o { Some(*i) } else { None }));
         if en_caps.is_empty() || en_caps != zh_caps || en_caps.windows(2).any(|w| w[0] == w[1]) {
             return None;
@@ -135,40 +158,47 @@ impl Rule {
         })
     }
 
-    /// 整句比對；佔位取最短的可行片段（至少一個字）。成功時回傳每個佔位的 (起, 迄)。
-    fn matches(&self, text: &[u8]) -> Option<[(usize, usize); 9]> {
+    /// 整句比對；佔位取最短的可行片段（至少一個字）。成功時回傳每個佔位的 (起, 迄)。`terms` 給 `{@n}` 查字詞。
+    fn matches(&self, text: &[u8], terms: &HashMap<Vec<u8>, Entry>) -> Option<[(usize, usize); 9]> {
         if text.len() < self.prefix.len() + self.suffix.len() || !text.starts_with(&self.prefix) || !text.ends_with(&self.suffix) {
             return None;
         }
         let mut caps = [(0, 0); 9];
-        match_at(&self.pattern, text, 0, &mut caps).then_some(caps)
+        match_at(&self.pattern, text, 0, &mut caps, terms).then_some(caps)
     }
 }
 
-fn match_at(segs: &[Seg], text: &[u8], pos: usize, caps: &mut [(usize, usize); 9]) -> bool {
+fn match_at(segs: &[Seg], text: &[u8], pos: usize, caps: &mut [(usize, usize); 9], terms: &HashMap<Vec<u8>, Entry>) -> bool {
     let Some((first, rest)) = segs.split_first() else { return pos == text.len() };
     match first {
-        Seg::Lit(lit) => text[pos..].starts_with(lit) && match_at(rest, text, pos + lit.len(), caps),
-        Seg::Cap(i) => match rest.first() {
-            None => {
-                caps[*i] = (pos, text.len());
-                pos < text.len()
-            }
-            Some(Seg::Lit(next)) => {
-                let mut end = pos + 1;
-                while end + next.len() <= text.len() {
-                    if text[end..].starts_with(next) {
-                        caps[*i] = (pos, end);
-                        if match_at(rest, text, end, caps) {
-                            return true;
-                        }
-                    }
-                    end += 1;
+        Seg::Lit(lit) => text[pos..].starts_with(lit) && match_at(rest, text, pos + lit.len(), caps, terms),
+        Seg::Cap(i, kind) => {
+            let fits = |end: usize| match kind {
+                Kind::Any => true,
+                Kind::Number => is_number(&text[pos..end]),
+                Kind::Term => terms.contains_key(&text[pos..end]),
+            };
+            match rest.first() {
+                None => {
+                    caps[*i] = (pos, text.len());
+                    pos < text.len() && fits(text.len())
                 }
-                false
+                Some(Seg::Lit(next)) => {
+                    let mut end = pos + 1;
+                    while end + next.len() <= text.len() {
+                        if text[end..].starts_with(next) && fits(end) {
+                            caps[*i] = (pos, end);
+                            if match_at(rest, text, end, caps, terms) {
+                                return true;
+                            }
+                        }
+                        end += 1;
+                    }
+                    false
+                }
+                Some(Seg::Cap(..)) => false,
             }
-            Some(Seg::Cap(_)) => false,
-        },
+        }
     }
 }
 
@@ -178,9 +208,17 @@ pub struct Dict {
     pub rules: Vec<Rule>,
     /// 原文 → 句型規則的結果（None 表示沒有規則命中，也要記住，免得每幀重比）
     cache: Mutex<HashMap<Vec<u8>, Option<Arc<Entry>>>>,
+    /// 段落換行後的每一行：文字 → 代號、代號 → 替身字串（見 mtb.rs）
+    lines: Mutex<Lines>,
     /// 字 → 字圖編號；字圖 i 的左右半格在 texpos[2i]、texpos[2i+1]。
     pub glyph_of: HashMap<char, u32>,
     pub texpos: Vec<i32>,
+}
+
+#[derive(Default)]
+struct Lines {
+    key_of: HashMap<String, Vec<u8>>,
+    entries: HashMap<Vec<u8>, Arc<Entry>>,
 }
 
 pub struct LoadReport {
@@ -200,6 +238,27 @@ impl Dict {
         self.glyph_of = chars.into_iter().enumerate().map(|(i, c)| (c, i as u32)).collect();
         self.texpos = texpos;
         true
+    }
+
+    /// 段落的一行中文換成代號（KEY_PREFIX + 六位數），畫字 hook 看到代號就畫這一行；缺字圖時回傳 None。
+    pub fn line_key(&self, text: &str) -> Option<Vec<u8>> {
+        let mut lines = self.lines.lock();
+        if let Some(key) = lines.key_of.get(text) {
+            return Some(key.clone());
+        }
+        let (entry, missing) = self.entry(0, text, "");
+        if missing > 0 {
+            return None;
+        }
+        let mut key = crate::mtb::KEY_PREFIX.to_vec();
+        key.extend(format!("{:06}", lines.entries.len()).bytes());
+        lines.entries.insert(key.clone(), Arc::new(entry));
+        lines.key_of.insert(text.to_owned(), key.clone());
+        Some(key)
+    }
+
+    pub fn line_entry(&self, key: &[u8]) -> Option<Arc<Entry>> {
+        self.lines.lock().entries.get(key).cloned()
     }
 
     /// `align` 是呼叫端對原文的對齊方式：遊戲先用原文長度算好起點再寫字，
@@ -290,7 +349,7 @@ impl Dict {
 
     fn apply_rules(&self, key: &[u8], depth: usize) -> Option<(String, &Rule)> {
         for rule in &self.rules {
-            let Some(caps) = rule.matches(key) else { continue };
+            let Some(caps) = rule.matches(key, &self.entries) else { continue };
             let mut out = String::new();
             let mut translated = false;
             for part in &rule.output {
@@ -382,6 +441,22 @@ mod tests {
         assert_eq!(e.shadow().len(), 18, "置中時替身字串補滿到原文寬度");
         assert_eq!(e.glyphs[0].0, 2 + 5, "左邊補 (18 - 13) / 2 = 2 格，再接 Urist");
         assert!(d.rule_entry(b"Urist is visiting.").is_some(), "第二次走快取");
+    }
+
+    #[test]
+    fn numeric_placeholder_only_takes_numbers() {
+        let d = dict("{#1}th {2}\t{2}{1}日\n{1} pts\t{1} 點\n");
+        assert_eq!(d.translate_text(b"15th Labor").as_deref(), Some("勞動15日"));
+        assert_eq!(d.translate_text(b"1,250th Labor").as_deref(), Some("勞動1,250日"));
+        assert_eq!(d.translate_text(b"fraught with many perils"), None, "with 的 th 前面不是數字");
+        assert_eq!(d.translate_text(b"14 pts").as_deref(), Some("14 點"));
+    }
+
+    #[test]
+    fn term_placeholder_only_takes_dictionary_words() {
+        let d = dict("{#1}st {@2}\t{2}{1}日\n");
+        assert_eq!(d.translate_text(b"1st Labor").as_deref(), Some("勞動1日"));
+        assert_eq!(d.translate_text(b"1st Labor, early spring, 5"), None, "不能把後面整串當成月份名");
     }
 
     #[test]

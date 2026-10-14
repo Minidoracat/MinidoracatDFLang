@@ -7,7 +7,11 @@
   uv run scripts/dev_game.py up [--lang zh-Hant|zh-Hans|both]   掛包、遮蔽 DFI18n、啟動，等到 DFHack 回應
   uv run scripts/dev_game.py run dflang status                 轉給 dfhack-run
   uv run scripts/dev_game.py click X Y                         以文字格座標模擬滑鼠左鍵（不動真滑鼠、不搶焦點）
+  uv run scripts/dev_game.py mouse PX PY [r]                   以畫面像素座標按住滑鼠三幀再放開（地圖點擊用）
   uv run scripts/dev_game.py down                              關遊戲、拆掛載、移除遮蔽，還原 dflang 設定檔
+
+點擊方式依畫面而異：標題選單、設定用 click（DFHack simulateInput）；世界地圖與出發地圖在遊戲邏輯迴圈裡讀滑鼠，
+要用 mouse 讓按鍵狀態維持幾幀；出發準備畫面的按鈕兩種都不收，改用 computer 對遊戲視窗先移過去再點。
 
 遮蔽 DFI18n：在 mods/ 放一個 ID 也是 dfi18n、版本 999、沒有腳本的空 MOD。DFHack 每個 ID 只載入最高版本，
 真的 DFI18n 腳本就不會執行；down 會把它刪掉。掛載位置是 %APPDATA%/Bay 12 Games/Dwarf Fortress/mods
@@ -105,9 +109,22 @@ def down() -> int:
     return 0
 
 
+# 先移過去停兩幀（地圖依上一幀的游標位置算出指著哪一格），再按住三幀、放開後位置再留幾幀。
+# 真滑鼠不在遊戲視窗上時 mouse_focus 是 false，遊戲每幀把游標位置清成 -1，所以每幀都要設回去。
+# dfhack.timeout 的回呼在遊戲主執行緒的後續幀執行
+MOUSE_HOLD = """local px, py, right = {px}, {py}, {right}
+local g, e = df.global.gps, df.global.enabler
+local function at() e.mouse_focus = true; g.precise_mouse_x, g.precise_mouse_y = px, py; g.mouse_x, g.mouse_y = px // g.tile_pixel_x, py // g.tile_pixel_y end
+local function press(v) if right then e.mouse_rbut, e.mouse_rbut_down = v, v else e.mouse_lbut, e.mouse_lbut_down = v, v end end
+at()
+for i = 1, 8 do dfhack.timeout(i, 'frames', at) end
+dfhack.timeout(2, 'frames', function() press(1) end)
+dfhack.timeout(5, 'frames', function() press(0) end)"""
+
+
 def main() -> int:
     args = sys.argv[1:]
-    if not args or args[0] not in ("up", "run", "click", "down"):
+    if not args or args[0] not in ("up", "run", "click", "mouse", "down"):
         print(__doc__)
         return 2
     if args[0] == "up":
@@ -119,6 +136,9 @@ def main() -> int:
         x, y = int(args[1]), int(args[2])
         return dfhack("lua", f"local gui=require('gui'); df.global.gps.mouse_x={x}; df.global.gps.mouse_y={y}; "
                              "gui.simulateInput(dfhack.gui.getDFViewscreen(true), '_MOUSE_L')").returncode
+    if args[0] == "mouse":
+        right = "true" if args[3:4] == ["r"] else "false"
+        return dfhack("lua", MOUSE_HOLD.format(px=int(args[1]), py=int(args[2]), right=right)).returncode
     return down()
 
 

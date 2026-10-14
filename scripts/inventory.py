@@ -16,7 +16,7 @@
   依 priority 排：0 實機看過 → 1 介面標籤 → 2 介面句子 → 3 生物物品名稱 → 4 片段與單字 → 5 描述與文字範本 → 6 其餘。
   同一優先序內照執行檔位址或 raws 檔案順序，同一畫面的字串通常相鄰。
 - composed.tsv：實機看過、但執行檔與 raws 都沒有整句的字串（執行時拼出來的），要寫句型規則
-
+- seen.tsv：實機看過、還沒翻譯的字串，照第一次看到的順序（同一畫面的字串相鄰），分輪翻譯從這裡取
 分類只是排序與翻法的提示：「片段」也可能被遊戲單獨畫出（例如 "Range: "、" to "），
 實機看過的就照整句翻；沒看過的先翻標籤與句子。
 """
@@ -30,7 +30,7 @@ from dfpaths import DF, latest_snapshot
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "temp/inventory"
-PLACEHOLDER = re.compile(r"\\\{([1-9])\\\}")
+PLACEHOLDER = re.compile(r"\\\{(\\\#|@)?([1-9])\\\}")  # 已經 re.escape 過的 {1}／{#1}／{@1}
 CODE = re.compile(r"::|%[-+ #0-9.]*[sdifxXcpul]|\\|/|\.(txt|png|lua|dll|ttf|otf|wav|ogg|mp3|json|ini|exe|bmp)\b|\b0x|\(\)"
                   r"|^[A-Za-z]+_[A-Za-z0-9_]+$|^[a-z]+[A-Z][A-Za-z]*$|^[A-Z][a-z]+[A-Z][A-Za-z]*$")
 # 執行期錯誤、除錯訊息：玩家幾乎看不到，排最後
@@ -83,17 +83,30 @@ def main() -> int:
         return 1
 
     done = {r["en"] for p in sorted((ROOT / "data/strings").glob("*.tsv")) for r in read_tsv(p)}
-    rules = [re.compile(PLACEHOLDER.sub("(.+?)", re.escape(r["en"])) + r"\Z")
+    terms = "|".join(re.escape(t) for t in sorted(done, key=len, reverse=True))
+    kinds = {"\\#": r"(-?[\d,]+)", "@": f"({terms})"}  # {#1} 數字、{@1} 字典裡的字詞，其餘任意
+    rules = [re.compile(PLACEHOLDER.sub(lambda m: kinds.get(m.group(1), "(.+?)"), re.escape(r["en"])) + r"\Z")
              for p in sorted((ROOT / "data/rules").glob("*.tsv")) for r in read_tsv(p)]
 
     def translated(text: str) -> bool:
         return text in done or any(rule.match(text) for rule in rules)
 
-    logs = sorted((ROOT / "temp/misses").glob("*.tsv")) + [DF / "dfhack-config/dflang-misses.tsv"]
+    # 實機紀錄：依時間順序保留第一次看到的樣子（同一畫面的字串會相鄰）。沒翻譯的段落會整段記一筆（mtb），
+    # 同時遊戲還會把段落裡的單字一個個畫出來、各記一筆；這些單字只是段落的碎片，不列入
+    logs = [log for log in [*sorted((ROOT / "temp/misses").glob("*.tsv")), DF / "dfhack-config/dflang-misses.tsv"] if log.is_file()]
+    sessions = [[line.split("\t", 1) for line in log.read_text(encoding="utf-8").splitlines() if "\t" in line] for log in logs]
+    paragraph_words = {word for rows in sessions for fn, text in rows if fn == "mtb"
+                       for word in re.sub(r"\[C:\d+:\d+:\d+\]", " ", text).split()}
     seen: Counter[str] = Counter()
-    for log in logs:
-        if log.is_file():
-            seen.update({line.split("\t", 1)[1] for line in log.read_text(encoding="utf-8").splitlines() if "\t" in line})
+    order: dict[str, str] = {}  # 原文 → 第一次攔到的函式
+    for rows in sessions:
+        session = set()
+        for fn, text in rows:
+            if fn != "mtb" and " " not in text.strip() and text.strip() in paragraph_words:
+                continue
+            order.setdefault(text, fn)
+            session.add(text)
+        seen.update(session)
 
     items: dict[str, tuple[str, str]] = {}  # 原文 → (分類, 出處)；同一句只算一次，第一次出現的出處
     for r in read_tsv(snap / "exe/strings.tsv"):
@@ -130,7 +143,12 @@ def main() -> int:
     with (OUT / "composed.tsv").open("w", encoding="utf-8", newline="\n") as fh:
         fh.write("sessions\ttext\n")
         fh.writelines(f"{n}\t{t}\n" for n, t in sorted(composed, key=lambda x: -x[0]))
-    lines = [f"快照 {snap.name}；實機紀錄 {sum(1 for log in logs if log.is_file())} 份、{len(seen)} 種字串",
+    # 實機看過、還沒翻譯的字串，照第一次看到的順序（同一畫面相鄰），一輪一輪分批翻用
+    with (OUT / "seen.tsv").open("w", encoding="utf-8", newline="\n") as fh:
+        fh.write("function\tsource\ttext\n")
+        fh.writelines(f"{fn}\t{'exe/raws' if t in items else 'composed'}\t{t}\n"
+                      for t, fn in order.items() if not translated(t) and items.get(t, ("",))[0] not in ("noise", "code"))
+    lines = [f"快照 {snap.name}；實機紀錄 {len(logs)} 份、{len(seen)} 種字串",
              f"{'分類':<12}{'總數':>8}{'已翻':>8}{'實機看過':>10}"]
     for kind, st in sorted(stats.items(), key=lambda kv: -kv[1]["total"]):
         lines.append(f"{kind:<12}{st['total']:>8}{st['done']:>8}{st['seen']:>10}")

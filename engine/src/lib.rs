@@ -2,14 +2,15 @@
 //!
 //! DFHack 的 Lua 以 `package.loadlib(dll, "luaopen_dflang")` 載入，回傳一張函式表；
 //! 不連結 dfhack.dll，所以不綁 DFHack 版本，也不依賴其他 MOD。載入順序（見 lua/loader.lua）：
-//! set_layout → render_atlas → set_glyphs → load → scan/attach → enable。
+//! set_layout／set_mtb_layout → render_atlas → set_glyphs → load → scan/attach → enable。
 
 mod atlas;
-mod image;
 mod cp437;
 mod dict;
 mod hooks;
+mod image;
 mod lua;
+mod mtb;
 mod scan;
 
 use std::ffi::{c_int, CStr};
@@ -31,6 +32,7 @@ pub unsafe extern "C" fn luaopen_dflang(l: lua::State) -> c_int {
     unsafe {
         lua::new_table(l);
         lua::set_fn(l, c"set_layout", set_layout);
+        lua::set_fn(l, c"set_mtb_layout", set_mtb_layout);
         lua::set_fn(l, c"render_atlas", render_atlas);
         lua::set_fn(l, c"render_mascot", render_mascot);
         lua::set_fn(l, c"set_glyphs", set_glyphs);
@@ -97,6 +99,36 @@ unsafe extern "C" fn set_layout(l: lua::State) -> c_int {
                 ok(l)
             }
             None => fail(l, "set_layout: missing or non-integer field"),
+        }
+    }
+}
+
+/// set_mtb_layout{markup_text_boxst／markup_text_wordst 欄位名 = 位移, ...}（段落翻譯用，見 mtb.rs）
+unsafe extern "C" fn set_mtb_layout(l: lua::State) -> c_int {
+    unsafe {
+        if lua::arg_type(l, 1) != lua::TTABLE {
+            return fail(l, "set_mtb_layout expects a table");
+        }
+        let f = |name: &CStr| lua::field_int(l, 1, name).map(|v| v as usize);
+        let layout = (|| {
+            Some(mtb::MtbLayout {
+                words: f(c"word")?,
+                current_width: f(c"current_width")?,
+                max_y: f(c"max_y")?,
+                word_str: f(c"str")?,
+                word_red: f(c"red")?,
+                word_link: f(c"link_index")?,
+                word_px: f(c"px")?,
+                word_py: f(c"py")?,
+                word_flags: f(c"flags")?,
+            })
+        })();
+        match layout {
+            Some(layout) => {
+                let _ = mtb::MTB_LAYOUT.set(layout);
+                ok(l)
+            }
+            None => fail(l, "set_mtb_layout: missing or non-integer field"),
         }
     }
 }

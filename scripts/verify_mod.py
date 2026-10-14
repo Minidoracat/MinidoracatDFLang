@@ -16,7 +16,7 @@
 7. 字型：每種語言譯文與吉祥物名牌（語言標籤、作者名）用到的字，主字型或補字字型（temp/fonts/）至少一份有
 8. 吉祥物：art/mascot.png 是 8-bit RGBA PNG（引擎只讀這種）；每包的 mascot_label 是全形字
 9. scripts/workshop.json：繁、簡各一項；ID、名稱、說明、作者只用 ASCII（DF 以 CP437 讀 info.txt）
-10. engine/patterns.tsv 有引擎要 hook 的四個函式
+10. engine/patterns.tsv 有引擎要 hook 的五個函式（四個畫字函式與段落排版）
 11. dist/ 已建置時：每包檔案齊全、沒有雜檔，且字典、句型與 data/ 一致（沒建置則略過）
 """
 import re
@@ -30,9 +30,10 @@ from cp437 import BYTE_OF, cells, encodable
 
 ROOT = Path(__file__).resolve().parents[1]
 HEADER = ["en", "zh-Hant", "zh-Hans", "align", "note"]
-HOOKS = ("addst", "addst_flag", "top_addst", "addcoloredst")
+HOOKS = ("addst", "addst_flag", "top_addst", "addcoloredst", "mtb_set_width")
 PACKAGE_SUFFIXES = {".txt", ".tsv", ".lua", ".dll", ".otf", ".md", ".png"}
-PLACEHOLDER = re.compile(r"\{[1-9]\}")
+PLACEHOLDER = re.compile(r"\{[#@]?([1-9])\}")  # {1}～{9}；{#1} 只收數字、{@1} 只收字典裡的字詞
+MARKUP = re.compile(r"\[(?:[RBP]|C:\d+:\d+:\d+)\]")  # 段落的換行與換色標記
 KINDS = ("strings", "rules")
 
 results: list[tuple[bool, str]] = []
@@ -58,7 +59,7 @@ def placeholder_problem(r: dict, langs: list[str]) -> str | None:
         return "原文沒有佔位"
     if len(set(en)) != len(en):
         return "原文佔位重複"
-    if re.search(r"\{[1-9]\}\{[1-9]\}", r["en"]):
+    if re.search(r"\{[#@]?[1-9]\}\{[#@]?[1-9]\}", r["en"]):
         return "原文佔位相鄰"
     if not re.search(r"[A-Za-z]", template(r["en"])):
         return "原文樣板沒有固定的英文字，會套到幾乎所有字串"
@@ -105,6 +106,9 @@ def main() -> int:
     wide = [f"{r['file']}: {r['en']!r} [{lang}] {cells(template(r[lang]))}>{cells(template(r['en']))}"
             for r in rows for lang in langs if r[lang] and cells(template(r[lang])) > cells(template(r["en"]))]
     check(not wide, "譯文格數不超過原文", wide)
+    marks = [f"{r['file']}: {r['en'][:60]!r} [{lang}]" for r in rows for lang in langs
+             if r[lang] and sorted(MARKUP.findall(r[lang])) != sorted(MARKUP.findall(r["en"]))]
+    check(not marks, "段落標記（[R]、[B]、[P]、[C:…]）與原文一致", marks)
 
     text_files = [*(ROOT / "data").rglob("*.tsv"), *(ROOT / "glossary").glob("*.tsv"), *(ROOT / "lua").glob("*.lua"),
                   ROOT / "scripts/workshop.json", ROOT / "engine/patterns.tsv"]
@@ -144,7 +148,7 @@ def main() -> int:
 
     patterns = {line.split("\t")[0] for line in (ROOT / "engine/patterns.tsv").read_text(encoding="utf-8").splitlines()
                 if line and not line.startswith("#")}
-    check(all(h in patterns for h in HOOKS), "engine/patterns.tsv 含四個 hook 函式", [h for h in HOOKS if h not in patterns])
+    check(all(h in patterns for h in HOOKS), f"engine/patterns.tsv 含 {len(HOOKS)} 個 hook 函式", [h for h in HOOKS if h not in patterns])
 
     for item in config["items"]:
         out = DIST / item["folder"]

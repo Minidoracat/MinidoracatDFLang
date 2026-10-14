@@ -1,7 +1,8 @@
-//! 攔遊戲的四個寫字函式：字典有這句就改寫替身字串，原函式寫完後把佔位格換成字圖。
+//! 攔遊戲的寫字函式：字典有這句就改寫替身字串，原函式寫完後把佔位格換成字圖。
 //!
 //! 版面、裁切、顏色都交給遊戲原本的函式處理；這裡只多做一件事：在佔位格的
 //! screentexpos 填字圖、在 screentexpos_flag 加 ADDCOLOR，讓渲染器用該格前景色為白色字圖上色。
+//! 另外攔段落排版函式（mtb_set_width），把自動換行的長文改寫成中文的行（見 mtb.rs）。
 
 use std::collections::HashSet;
 use std::ffi::CStr;
@@ -72,9 +73,10 @@ impl StdString {
 type AddstFn = unsafe extern "C" fn(*mut u8, *const StdString, i32, i32);
 type AddstFlagFn = unsafe extern "C" fn(*mut u8, *const StdString, i32, i32, u32);
 type ColoredFn = unsafe extern "C" fn(*mut u8, *const u8, *const u8);
+type SetWidthFn = unsafe extern "C" fn(*mut u8, i32);
 
-pub const HOOKS: [&str; 4] = ["addst", "addst_flag", "top_addst", "addcoloredst"];
-static TRAMPOLINES: [AtomicUsize; 4] = [const { AtomicUsize::new(0) }; 4];
+pub const HOOKS: [&str; 5] = ["addst", "addst_flag", "top_addst", "addcoloredst", "mtb_set_width"];
+static TRAMPOLINES: [AtomicUsize; 5] = [const { AtomicUsize::new(0) }; 5];
 
 struct Detours(Vec<RawDetour>);
 // RawDetour 只在持有鎖時由 Lua 指令啟停；遊戲執行緒只讀 TRAMPOLINES。
@@ -87,7 +89,8 @@ pub fn attach(name: &str, target: usize) -> Result<(), String> {
         0 => hook_addst as *const (),
         1 => hook_addst_flag as *const (),
         2 => hook_top_addst as *const (),
-        _ => hook_addcoloredst as *const (),
+        3 => hook_addcoloredst as *const (),
+        _ => hook_mtb_set_width as *const (),
     };
     let detour = unsafe { RawDetour::new(target as *const (), hook) }.map_err(|e| e.to_string())?;
     TRAMPOLINES[index].store(detour.trampoline() as *const () as usize, Ordering::Release);
@@ -193,19 +196,23 @@ unsafe fn translate_call(gps: *mut u8, kind: &str, key: &[u8], space: i32, layer
         return false;
     }
     let dict = unsafe { &*dict };
-    let from_rule;
+    let found;
     let entry = match dict.entries.get(key) {
         Some(entry) => entry,
-        None => match dict.rule_entry(key) {
-            Some(entry) => {
-                from_rule = entry;
-                &*from_rule
+        None => {
+            // 段落改寫後的一行（代號）、或句型規則的結果
+            let dynamic = if key.starts_with(crate::mtb::KEY_PREFIX) { dict.line_entry(key) } else { dict.rule_entry(key) };
+            match dynamic {
+                Some(entry) => {
+                    found = entry;
+                    &*found
+                }
+                None => {
+                    note_miss(kind, key);
+                    return false;
+                }
             }
-            None => {
-                note_miss(kind, key);
-                return false;
-            }
-        },
+        }
     };
     HITS.fetch_add(1, Ordering::Relaxed);
     let (cells, glyphs) = entry.fit(space);
@@ -229,7 +236,10 @@ fn top_layer(l: &Layout) -> Layer {
 unsafe extern "C" fn hook_addst(gps: *mut u8, s: *const StdString, just: i32, space: i32) {
     let orig: AddstFn = unsafe { std::mem::transmute(TRAMPOLINES[0].load(Ordering::Acquire)) };
     let key = unsafe { (*s).bytes() };
-    let done = unsafe { translate_call(gps, "addst", key, space, main_layer, |b| orig(gps, &StdString::borrowed(b), just, space)) };
+    let done = unsafe {
+        !crate::mtb::is_plain_word(s as usize)
+            && translate_call(gps, "addst", key, space, main_layer, |b| orig(gps, &StdString::borrowed(b), just, space))
+    };
     if !done {
         unsafe { orig(gps, s, just, space) }
     }
@@ -239,7 +249,8 @@ unsafe extern "C" fn hook_addst_flag(gps: *mut u8, s: *const StdString, just: i3
     let orig: AddstFlagFn = unsafe { std::mem::transmute(TRAMPOLINES[1].load(Ordering::Acquire)) };
     let key = unsafe { (*s).bytes() };
     let done = unsafe {
-        translate_call(gps, "addst_flag", key, space, main_layer, |b| orig(gps, &StdString::borrowed(b), just, space, sflag))
+        !crate::mtb::is_plain_word(s as usize)
+            && translate_call(gps, "addst_flag", key, space, main_layer, |b| orig(gps, &StdString::borrowed(b), just, space, sflag))
     };
     if !done {
         unsafe { orig(gps, s, just, space, sflag) }
@@ -249,7 +260,10 @@ unsafe extern "C" fn hook_addst_flag(gps: *mut u8, s: *const StdString, just: i3
 unsafe extern "C" fn hook_top_addst(gps: *mut u8, s: *const StdString, just: i32, space: i32) {
     let orig: AddstFn = unsafe { std::mem::transmute(TRAMPOLINES[2].load(Ordering::Acquire)) };
     let key = unsafe { (*s).bytes() };
-    let done = unsafe { translate_call(gps, "top_addst", key, 0, top_layer, |b| orig(gps, &StdString::borrowed(b), just, space)) };
+    let done = unsafe {
+        !crate::mtb::is_plain_word(s as usize)
+            && translate_call(gps, "top_addst", key, 0, top_layer, |b| orig(gps, &StdString::borrowed(b), just, space))
+    };
     if !done {
         unsafe { orig(gps, s, just, space) }
     }
@@ -272,4 +286,15 @@ unsafe extern "C" fn hook_addcoloredst(gps: *mut u8, s: *const u8, colors: *cons
     if !done {
         unsafe { orig(gps, s, colors) }
     }
+}
+
+/// 段落排版：原函式依寬度排完英文單字後，整段有譯文就改寫成中文的行。
+unsafe extern "C" fn hook_mtb_set_width(mtb: *mut u8, width: i32) {
+    let orig: SetWidthFn = unsafe { std::mem::transmute(TRAMPOLINES[4].load(Ordering::Acquire)) };
+    unsafe { orig(mtb, width) };
+    let dict = DICT.load(Ordering::Acquire);
+    if dict.is_null() || !ENABLED.load(Ordering::Relaxed) {
+        return;
+    }
+    unsafe { crate::mtb::rewrite(mtb as usize, &*dict, |key| note_miss("mtb", key)) };
 }
