@@ -1,4 +1,5 @@
 # name	pattern	va_at_generation（由 scripts/make_patterns.py 產生）
+add_anchored_tile	40 56 41 54 41 55 41 57 44 8b 99 84 00 00 00 45 8b f9	0x140adad70
 addcoloredst	48 89 5c 24 ?? 48 89 6c 24 ?? 48 89 74 24 ?? 57 41 56 41 57 48 83 ec ?? 4d 8b f0	0x140ad9790
 addst	40 53 56 57 48 83 ec ?? 48 8b 05 ?? ?? ?? ?? 48 33 c4 48 89 44 24 ?? 49 63 d9	0x140ad9960
 addst_flag	48 89 5c 24 ?? 55 56 57 48 83 ec ?? 48 8b 05 ?? ?? ?? ?? 48 33 c4 48 89 44 24 ?? 49 63 d9	0x140ad9870

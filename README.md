@@ -25,15 +25,16 @@ flowchart LR
   A[DFHack 啟動] --> B[scripts_modinstalled/dflang_zh_hant.lua]
   B --> C[package.loadlib dflang/dflang.dll]
   B --> D[用字型依目前文字格大小畫字圖集<br>註冊成遊戲貼圖]
-  C --> E[特徵碼找到 DF 的四個畫字函式與段落排版函式並 hook]
-  E --> F{整句字典或句型規則有這句？}
+  C --> E[特徵碼找到 DF 的四個畫字函式、錨定貼圖函式與段落排版函式並 hook]
+  E --> F{依畫面譯文、整句字典或句型規則有這句？}
   F -->|是| G[讓遊戲畫等寬空白<br>再把中文字圖放進那些格子]
   F -->|否| H[照原樣畫英文]
 ```
 
 - DF 本身不載入 MOD 的原生程式；DFHack 會執行每個已安裝 MOD 的 `scripts_modinstalled/`，引擎就從這裡以 Lua `package.loadlib` 載入，只用 Lua C API，不綁 DFHack 版本。
 - 中文字由遊戲自己的繪圖流程畫出：每個中文字佔兩格，字圖在遊戲啟動時依當下的文字格大小從思源黑體（Noto Sans CJK Medium）畫成，套用字型的 hinting，縮放不會糊。
-- 遊戲執行時拼出的句子（名字、數字、隨機字詞）用句型規則翻譯，例如 `Histories of {1} and {2}` →「{1}與{2}的歷史」。
+- 遊戲執行時拼出的句子（名字、數字、隨機字詞）用句型規則翻譯，例如 `Histories of {1} and {2}` →「{1}與{2}的歷史」。同一個英文在不同畫面意思不同時，用只在該畫面套用的依畫面譯文。
+- 自動換行的段落（說明、教學、彈出視窗）整段查字典、依中文規則重新換行，畫字時才換成中文；遊戲資料與存檔維持英文，移除本 MOD 不留痕跡。
 - 函式位置用 `engine/patterns.tsv` 的特徵碼尋找，由 `scripts/make_patterns.py` 從遊戲執行檔產生；遊戲改版時重產即可。
 - 標題畫面的吉祥物是 DFHack overlay 小工具：引擎啟動時把 `art/mascot.png` 縮成當下的格子大小、疊上名牌，畫在畫面頂層，透明處看得到標題背景。
 
@@ -42,6 +43,7 @@ flowchart LR
 ```
 data/strings/*.tsv         整句譯文：en, zh-Hant, zh-Hans, align, note（規則見 docs/translation-guide.md）
 data/rules/*.tsv           句型規則：同上，en 含 {1}～{9} 佔位
+data/screens/*.tsv         依畫面譯文：檔名是 DFHack 焦點字串的開頭，只在該畫面套用
 glossary/terms.tsv         術語表；locale.tsv 兩岸用語規則
 art/mascot.png             標題畫面吉祥物（透明背景 RGBA PNG；名牌文字由引擎在遊戲裡畫）
 engine/                    Rust 引擎（cdylib dflang.dll）與特徵碼 patterns.tsv

@@ -5,7 +5,7 @@
 """組出繁、簡兩個工作坊包到 dist/<folder>/（內容就是上傳到工作坊的資料夾）。
 
 每包內容：info.txt、scripts_modinstalled/（載入器與 dflang 指令）、dflang/（引擎 DLL、整句字典 strings.tsv、
-句型規則 rules.tsv、字型子集、特徵碼、標題畫面吉祥物 mascot.png、授權與致謝）。字型是 workshop.json 指定的
+句型規則 rules.tsv、依畫面套用的整句 screens.tsv、字型子集、特徵碼、標題畫面吉祥物 mascot.png、授權與致謝）。字型是 workshop.json 指定的
 思源黑體（Noto Sans CJK），只留本包譯文與吉祥物標籤（mascot_label）用到的非 CP437 字；主字型沒有的字依
 fallback_fonts 依序補成第二、第三份字型，全部都沒有就建置失敗。
 引擎在遊戲啟動時依當下的文字格大小把這些字畫成字圖集，所以字型檔就是字圖的唯一來源。
@@ -31,10 +31,11 @@ from cp437 import BYTE_OF
 
 ROOT = Path(__file__).resolve().parents[1]
 DIST = ROOT / "dist"
+KINDS = ("strings", "rules", "screens")
 FONTS = ROOT / "temp/fonts"
 FONT_LICENSE_URL = "https://raw.githubusercontent.com/notofonts/noto-cjk/main/Sans/LICENSE"
 PACKAGE_LICENSE = """程式（dflang/dflang.dll、scripts_modinstalled/*.lua）：MIT License，全文附在下方。
-譯文（dflang/strings.tsv、dflang/rules.tsv）：CC BY 4.0，https://creativecommons.org/licenses/by/4.0/
+譯文（dflang/strings.tsv、dflang/rules.tsv、dflang/screens.tsv）：CC BY 4.0，https://creativecommons.org/licenses/by/4.0/
 字型（dflang/fonts/）：SIL Open Font License 1.1，全文見 LICENSE-fonts.txt。
 吉祥物圖（dflang/mascot.png）：© Minidoracat，保留所有權利，不適用上述授權。
 
@@ -46,7 +47,7 @@ def load_config() -> dict:
 
 
 def read_rows(folder: str) -> list[dict]:
-    """data/<folder>/*.tsv 的所有列，附上來源檔名。strings 是整句字典，rules 是句型規則。"""
+    """data/<folder>/*.tsv 的所有列，附上來源檔名。strings 是整句字典，rules 是句型規則，screens 是依畫面套用的整句。"""
     rows = []
     for path in sorted((ROOT / "data" / folder).glob("*.tsv")):
         with path.open(encoding="utf-8", newline="") as fh:
@@ -55,12 +56,15 @@ def read_rows(folder: str) -> list[dict]:
     return rows
 
 
-def read_strings() -> list[dict]:
-    return read_rows("strings")
+def screen_of(file: str) -> str:
+    """data/screens 的檔名就是畫面（DFHack 焦點字串的開頭），. 代表 /：dwarfmode.Info.tsv → dwarfmode/Info。"""
+    return Path(file).stem.replace(".", "/")
 
 
-def read_rules() -> list[dict]:
-    return read_rows("rules")
+def dict_lines(kind: str, rows: list[dict], lang: str) -> str:
+    """dist 的 dflang/<kind>.tsv：原文<TAB>譯文<TAB>對齊，screens 前面多一欄畫面；沒有譯文的列不放。"""
+    return "".join(f"{screen_of(r['file']) + chr(9) if kind == 'screens' else ''}{r['en']}\t{r[lang]}\t{r['align']}\n"
+                   for r in rows if r[lang].strip())
 
 
 def fetch_fonts(sources: dict[str, str]) -> None:
@@ -118,11 +122,9 @@ def write_text(path: Path, text: str) -> None:
     path.write_text(text, encoding="utf-8", newline="\n")
 
 
-def build_item(item: dict, config: dict, rows: list[dict], rules: list[dict], dll: Path) -> int:
+def build_item(item: dict, config: dict, texts: dict[str, list[dict]], dll: Path) -> int:
     lang = item["lang"]
-    pairs = [(r["en"], r[lang], r["align"]) for r in rows if r[lang].strip()]
-    rule_pairs = [(r["en"], r[lang], r["align"]) for r in rules if r[lang].strip()]
-    chars = sorted({c for _, zh, _ in pairs + rule_pairs for c in zh if c not in BYTE_OF})
+    chars = sorted({c for kind in KINDS for r in texts[kind] for c in r[lang] if c not in BYTE_OF})
     out = DIST / item["folder"]
     try:
         if out.exists():
@@ -140,8 +142,8 @@ def build_item(item: dict, config: dict, rows: list[dict], rules: list[dict], dl
         print(f"FAIL {lang}: 沒有字型能畫 {''.join(missing)}", file=sys.stderr)
         return 1
     write_text(data / "glyphs.txt", "".join(chars) + "\n")
-    write_text(data / "strings.tsv", "".join(f"{en}\t{zh}\t{align}\n" for en, zh, align in pairs))
-    write_text(data / "rules.tsv", "".join(f"{en}\t{zh}\t{align}\n" for en, zh, align in rule_pairs))
+    for kind in KINDS:
+        write_text(data / f"{kind}.tsv", dict_lines(kind, texts[kind], lang))
     patterns = (ROOT / "engine/patterns.tsv").read_text(encoding="utf-8").splitlines()
     write_text(data / "patterns.tsv", "".join(f"{line}\n" for line in patterns if line and not line.startswith("#")))
     shutil.copy2(dll, data / "dflang.dll")
@@ -157,7 +159,9 @@ def build_item(item: dict, config: dict, rows: list[dict], rules: list[dict], dl
     write_text(out / f"scripts_modinstalled/dflang_{suffix}.lua", loader)
     shutil.copy2(ROOT / "lua/dflang.lua", out / "scripts_modinstalled/dflang.lua")
     write_text(out / "info.txt", info_txt(item, config))
-    print(f"{lang}: {len(pairs)} 條譯文、{len(rule_pairs)} 條句型、{len(chars)} 個字 -> {out.relative_to(ROOT)}")
+    counts = "、".join(f"{sum(1 for r in texts[kind] if r[lang].strip())} 條{name}"
+                      for kind, name in zip(KINDS, ("譯文", "句型", "依畫面譯文")))
+    print(f"{lang}: {counts}、{len(chars)} 個字 -> {out.relative_to(ROOT)}")
     return 0
 
 
@@ -170,8 +174,8 @@ def main() -> int:
     if args.fetch_fonts:
         fetch_fonts(config["font_sources"])
     dll = ROOT / "engine/target/release/dflang.dll" if args.skip_engine else build_engine()
-    rows, rules = read_strings(), read_rules()
-    return max(build_item(item, config, rows, rules, dll) for item in config["items"])
+    texts = {kind: read_rows(kind) for kind in KINDS}
+    return max(build_item(item, config, texts, dll) for item in config["items"])
 
 
 if __name__ == "__main__":

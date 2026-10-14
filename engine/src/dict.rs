@@ -205,20 +205,14 @@ fn match_at(segs: &[Seg], text: &[u8], pos: usize, caps: &mut [(usize, usize); 9
 #[derive(Default)]
 pub struct Dict {
     pub entries: HashMap<Vec<u8>, Entry>,
+    /// 只在某些畫面套用的整句：原文 → [(畫面, 譯文)]。同一個英文在不同畫面意思不同時用（見 screen_entry）。
+    pub screens: HashMap<Vec<u8>, Vec<(String, Entry)>>,
     pub rules: Vec<Rule>,
     /// 原文 → 句型規則的結果（None 表示沒有規則命中，也要記住，免得每幀重比）
     cache: Mutex<HashMap<Vec<u8>, Option<Arc<Entry>>>>,
-    /// 段落換行後的每一行：文字 → 代號、代號 → 替身字串（見 mtb.rs）
-    lines: Mutex<Lines>,
     /// 字 → 字圖編號；字圖 i 的左右半格在 texpos[2i]、texpos[2i+1]。
     pub glyph_of: HashMap<char, u32>,
     pub texpos: Vec<i32>,
-}
-
-#[derive(Default)]
-struct Lines {
-    key_of: HashMap<String, Vec<u8>>,
-    entries: HashMap<Vec<u8>, Arc<Entry>>,
 }
 
 pub struct LoadReport {
@@ -240,25 +234,10 @@ impl Dict {
         true
     }
 
-    /// 段落的一行中文換成代號（KEY_PREFIX + 六位數），畫字 hook 看到代號就畫這一行；缺字圖時回傳 None。
-    pub fn line_key(&self, text: &str) -> Option<Vec<u8>> {
-        let mut lines = self.lines.lock();
-        if let Some(key) = lines.key_of.get(text) {
-            return Some(key.clone());
-        }
+    /// 任一段文字的替身字串與字圖（段落換行後的一段，見 mtb.rs）；缺字圖時回傳 None。
+    pub fn text_entry(&self, text: &str) -> Option<Entry> {
         let (entry, missing) = self.entry(0, text, "");
-        if missing > 0 {
-            return None;
-        }
-        let mut key = crate::mtb::KEY_PREFIX.to_vec();
-        key.extend(format!("{:06}", lines.entries.len()).bytes());
-        lines.entries.insert(key.clone(), Arc::new(entry));
-        lines.key_of.insert(text.to_owned(), key.clone());
-        Some(key)
-    }
-
-    pub fn line_entry(&self, key: &[u8]) -> Option<Arc<Entry>> {
-        self.lines.lock().entries.get(key).cloned()
+        (missing == 0).then_some(entry)
     }
 
     /// `align` 是呼叫端對原文的對齊方式：遊戲先用原文長度算好起點再寫字，
@@ -318,6 +297,34 @@ impl Dict {
             report.loaded += 1;
         }
         report
+    }
+
+    /// 依畫面套用的整句：`畫面<TAB>原文<TAB>譯文[<TAB>對齊]`，畫面是 DFHack 焦點字串的開頭（如 dwarfmode）。
+    pub fn load_screens_tsv(&mut self, content: &str) -> LoadReport {
+        let mut report = LoadReport { loaded: 0, bad_source: 0, missing_glyphs: 0 };
+        for (screen, rest) in content.lines().filter_map(|line| line.split_once('\t')) {
+            for (en, zh, align) in Self::read_tsv(rest) {
+                let Some(key) = cp437::encode(en) else {
+                    report.bad_source += 1;
+                    continue;
+                };
+                let (entry, missing) = self.entry(key.len(), zh, align);
+                report.missing_glyphs += missing;
+                self.screens.entry(key).or_default().push((screen.to_owned(), entry));
+                report.loaded += 1;
+            }
+        }
+        report
+    }
+
+    /// 目前畫面專用的譯文。focus 是 DFHack 的焦點字串（可能有好幾個，以換行分隔）；
+    /// 畫面要是其中一個的開頭，而且剛好在 / 或結尾切開（dwarfmode 符合 dwarfmode/Default，不符合 dwarfmodeX）。
+    pub fn screen_entry<'a>(&'a self, key: &[u8], focus: &str) -> Option<&'a Entry> {
+        let list = self.screens.get(key)?;
+        let on = |screen: &str| {
+            focus.lines().any(|f| f.strip_prefix(screen).is_some_and(|rest| rest.is_empty() || rest.starts_with('/')))
+        };
+        list.iter().find(|(screen, _)| on(screen)).map(|(_, entry)| entry)
     }
 
     /// 句型規則檔，格式同 load_tsv；依檔案順序比對，先寫的優先。
@@ -457,6 +464,17 @@ mod tests {
         let d = dict("{#1}st {@2}\t{2}{1}日\n");
         assert_eq!(d.translate_text(b"1st Labor").as_deref(), Some("勞動1日"));
         assert_eq!(d.translate_text(b"1st Labor, early spring, 5"), None, "不能把後面整串當成月份名");
+    }
+
+    #[test]
+    fn screen_entries_only_apply_on_their_screen() {
+        let mut d = dict("");
+        d.load_screens_tsv("dwarfmode\tDrink\t勞動\nchoose_start_site\tTemperate\t貪婪\n");
+        assert!(d.screen_entry(b"Drink", "dwarfmode/Default").is_some());
+        assert!(d.screen_entry(b"Drink", "dwarfmode").is_some());
+        assert!(d.screen_entry(b"Drink", "dwarfmodeX/Default").is_none(), "要在 / 切開");
+        assert!(d.screen_entry(b"Drink", "dungeonmode/Default").is_none());
+        assert!(d.screen_entry(b"Temperate", "title/Default\nchoose_start_site").is_some(), "焦點有好幾個時任一個符合即可");
     }
 
     #[test]

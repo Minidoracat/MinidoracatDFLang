@@ -10,10 +10,11 @@ local CONFLICTS = {
     {id = 'dfi18n', script = 'scripts_modinstalled/dfi18n_loader.lua', name = 'DFI18n'},
     {id = 'dfzh_loader', script = 'scripts_modinstalled/dfzh_loader.lua', name = 'dfzh'},
 }
-local HOOKS = {'addst', 'addst_flag', 'top_addst', 'addcoloredst'}
+local HOOKS = {'addst', 'addst_flag', 'top_addst', 'addcoloredst', 'add_anchored_tile'}
 local GPS_FIELDS = {'screenx', 'screeny', 'dimx', 'dimy', 'clipx', 'clipy', 'screen', 'screen_limit',
                     'screentexpos', 'screentexpos_flag', 'screen_top', 'screen_top_limit',
-                    'screentexpos_top', 'screentexpos_top_flag'}
+                    'screentexpos_top', 'screentexpos_top_flag', 'screentexpos_anchored',
+                    'screen_color_r', 'screen_color_g', 'screen_color_b'}
 local CONFIG_FILE = 'dfhack-config/dflang.json'
 -- 每次啟動依當下格子大小重畫的字圖集（相對於遊戲目錄）；可直接打開檢查字形
 local ATLAS_FILE = 'dfhack-config/dflang-atlas-%s.png'
@@ -116,13 +117,14 @@ local function load_glyphs(engine, dir)
     return handles, n
 end
 
--- 段落排版（教學、說明、彈出視窗的長文）用的結構位移；這版 DFHack 沒有這些定義就回傳 nil，段落維持英文
+-- 段落排版（教學、說明、彈出視窗的長文）用的結構位移與調色盤位址；這版 DFHack 沒有這些定義就回傳 nil，段落維持英文
 local function mtb_layout()
     local ok, layout = pcall(function()
         local box, word = df.markup_text_boxst._fields, df.markup_text_wordst._fields
-        return {word = box.word.offset, current_width = box.current_width.offset, max_y = box.max_y.offset,
+        return {word = box.word.offset, current_width = box.current_width.offset,
                 str = word.str.offset, red = word.red.offset, link_index = word.link_index.offset,
-                px = word.px.offset, py = word.py.offset, flags = word.flags.offset}
+                px = word.px.offset, py = word.py.offset, flags = word.flags.offset,
+                palette = select(2, df.global.gps.uccolor:sizeof())}
     end)
     return ok and layout or nil
 end
@@ -183,6 +185,13 @@ local function start()
     local ok
     ok, err = engine.set_layout(layout)
     if not ok then return fail('%s', err) end
+    -- 出發準備畫面的分頁標籤逐字畫成字型表的貼圖；引擎要知道字型表在哪才認得出來。拿不到就只有那幾個標籤維持英文
+    local fonts_ok, small, large = pcall(function()
+        local font = df.global.init.font
+        return select(2, font.small_font_texpos:sizeof()), select(2, font.large_font_texpos:sizeof())
+    end)
+    if fonts_ok then fonts_ok, err = engine.set_fonts(small, large) else err = small end
+    if not fonts_ok then fail('找不到遊戲字型表（%s），出發準備畫面的分頁標籤維持英文', err) end
     local hooks = {table.unpack(HOOKS)}
     local mtb = mtb_layout()
     if mtb and engine.set_mtb_layout(mtb) then
@@ -203,11 +212,24 @@ local function start()
     if bad_rules > 0 or missing_rule_glyphs > 0 then
         fail('句型有 %d 條寫法不對、%d 個字沒有字圖', bad_rules, missing_rule_glyphs)
     end
+    local screens, bad_screens, missing_screen_glyphs = engine.load_screens(dir .. 'screens.tsv')
+    if not screens then return fail('%s', bad_screens) end
+    if bad_screens > 0 or missing_screen_glyphs > 0 then
+        fail('依畫面的譯文有 %d 條原文無法比對、%d 個字沒有字圖', bad_screens, missing_screen_glyphs)
+    end
 
     ok, err = attach_hooks(engine, dir, hooks)
     if not ok then return fail('%s', err) end
     ok, err = engine.enable()
     if not ok then return fail('%s', err) end
+    -- 依畫面套用的譯文要知道現在在哪個畫面：每幀把 DFHack 的焦點字串告訴引擎（'frames' 計時器在世界卸載後也繼續）
+    if screens > 0 then
+        local function track_focus()
+            engine.set_focus(table.concat(dfhack.gui.getCurFocus(true), '\n'))
+            dfhack.timeout(1, 'frames', track_focus)
+        end
+        track_focus()
+    end
     if json.open(CONFIG_FILE).data.misses then
         ok, err = engine.log_misses(MISSES_FILE)
         if not ok then fail('無法記錄未翻譯字串：%s', err) end

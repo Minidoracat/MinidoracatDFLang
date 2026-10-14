@@ -2,7 +2,8 @@
 //!
 //! DFHack 的 Lua 以 `package.loadlib(dll, "luaopen_dflang")` 載入，回傳一張函式表；
 //! 不連結 dfhack.dll，所以不綁 DFHack 版本，也不依賴其他 MOD。載入順序（見 lua/loader.lua）：
-//! set_layout／set_mtb_layout → render_atlas → set_glyphs → load → scan/attach → enable。
+//! set_layout／set_mtb_layout／set_fonts → render_atlas → set_glyphs → load／load_rules／load_screens → scan/attach → enable；
+//! 之後每幀 set_focus（依畫面套用的譯文用）。
 
 mod atlas;
 mod cp437;
@@ -36,8 +37,11 @@ pub unsafe extern "C" fn luaopen_dflang(l: lua::State) -> c_int {
         lua::set_fn(l, c"render_atlas", render_atlas);
         lua::set_fn(l, c"render_mascot", render_mascot);
         lua::set_fn(l, c"set_glyphs", set_glyphs);
+        lua::set_fn(l, c"set_fonts", set_fonts);
+        lua::set_fn(l, c"set_focus", set_focus);
         lua::set_fn(l, c"load", load);
         lua::set_fn(l, c"load_rules", load_rules);
+        lua::set_fn(l, c"load_screens", load_screens);
         lua::set_fn(l, c"scan", scan);
         lua::set_fn(l, c"attach", attach);
         lua::set_fn(l, c"enable", enable);
@@ -91,6 +95,8 @@ unsafe extern "C" fn set_layout(l: lua::State) -> c_int {
                     texpos: f(c"screentexpos_top")?,
                     flag: f(c"screentexpos_top_flag")?,
                 },
+                anchored: f(c"screentexpos_anchored")?,
+                color: [f(c"screen_color_r")?, f(c"screen_color_g")?, f(c"screen_color_b")?],
             })
         })();
         match layout {
@@ -112,9 +118,9 @@ unsafe extern "C" fn set_mtb_layout(l: lua::State) -> c_int {
         let f = |name: &CStr| lua::field_int(l, 1, name).map(|v| v as usize);
         let layout = (|| {
             Some(mtb::MtbLayout {
+                palette: f(c"palette")?,
                 words: f(c"word")?,
                 current_width: f(c"current_width")?,
-                max_y: f(c"max_y")?,
                 word_str: f(c"str")?,
                 word_red: f(c"red")?,
                 word_link: f(c"link_index")?,
@@ -230,6 +236,38 @@ unsafe extern "C" fn load(l: lua::State) -> c_int {
 /// load_rules(路徑) → 載入條數, 寫法不合規定的條數, 缺字圖的字數（句型規則）
 unsafe extern "C" fn load_rules(l: lua::State) -> c_int {
     unsafe { load_with(l, "load_rules", Dict::load_rules_tsv) }
+}
+
+/// load_screens(路徑) → 載入條數, 原文無法用 CP437 表示的條數, 缺字圖的字數（依畫面套用的整句）
+unsafe extern "C" fn load_screens(l: lua::State) -> c_int {
+    unsafe { load_with(l, "load_screens", Dict::load_screens_tsv) }
+}
+
+/// set_fonts(small_font_texpos 位址, large_font_texpos 位址)：遊戲字型表，翻譯逐字畫成貼圖的分頁標籤用
+unsafe extern "C" fn set_fonts(l: lua::State) -> c_int {
+    unsafe {
+        let (Some(small), Some(large)) = (lua::arg_int(l, 1), lua::arg_int(l, 2)) else {
+            return fail(l, "set_fonts: expects two addresses");
+        };
+        if small == 0 || large == 0 {
+            return fail(l, "set_fonts: null address");
+        }
+        let _ = hooks::FONTS.set([small as usize, large as usize]);
+        ok(l)
+    }
+}
+
+/// set_focus(焦點字串)：DFHack 目前的焦點（多個以換行分隔），Lua 每幀呼叫
+unsafe extern "C" fn set_focus(l: lua::State) -> c_int {
+    unsafe {
+        let Some(focus) = lua::arg_str(l, 1) else { return fail(l, "set_focus: expects a string") };
+        let mut current = hooks::FOCUS.lock();
+        if *current != focus {
+            current.clear();
+            current.push_str(focus);
+        }
+        ok(l)
+    }
 }
 
 unsafe fn load_with(l: lua::State, name: &str, parse: fn(&mut Dict, &str) -> dict::LoadReport) -> c_int {

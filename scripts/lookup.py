@@ -82,7 +82,8 @@ def game_strings(text: str) -> list[str]:
 
 def lookup(text: str) -> int:
     low = text.lower()
-    rows = [{**r, "file": p.name} for p in sorted((ROOT / "data/strings").glob("*.tsv")) for r in read_tsv(p)]
+    rows = [{**r, "file": f"{folder}/{p.name}"} for folder in ("strings", "screens")
+            for p in sorted((ROOT / "data" / folder).glob("*.tsv")) for r in read_tsv(p)]
     print("== 本專案")
     exact = [r for r in rows if r["en"] == text]
     near = [r for r in rows if low in r["en"].lower() and r not in exact][:10]

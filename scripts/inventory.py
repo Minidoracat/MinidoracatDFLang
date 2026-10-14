@@ -8,7 +8,7 @@
 輸入
 - 最新快照的 exe/strings.tsv（執行檔字串）與 raws_text.tsv（raws、TEXT_SET、程序生成 Lua）
 - 實機未翻譯紀錄：temp/misses/*.tsv（dev_game.py down 另存）與遊戲目錄 dfhack-config/dflang-misses.tsv
-- 已翻譯：data/strings（整句，原文完全相同）與 data/rules（句型，整句符合樣板）
+- 已翻譯：data/strings（整句，原文完全相同）、data/screens（依畫面的整句）與 data/rules（句型，整句符合樣板）
 
 輸出（temp/inventory/，不進 git：內容是遊戲原文）
 - summary.txt：各類的數量、已翻、實機看過
@@ -82,8 +82,9 @@ def main() -> int:
         print("沒有反編譯快照；先跑 uv run scripts/df_snapshot.py snapshot", file=sys.stderr)
         return 1
 
-    done = {r["en"] for p in sorted((ROOT / "data/strings").glob("*.tsv")) for r in read_tsv(p)}
-    terms = "|".join(re.escape(t) for t in sorted(done, key=len, reverse=True))
+    words = {r["en"] for p in sorted((ROOT / "data/strings").glob("*.tsv")) for r in read_tsv(p)}
+    done = words | {r["en"] for p in sorted((ROOT / "data/screens").glob("*.tsv")) for r in read_tsv(p)}
+    terms = "|".join(re.escape(t) for t in sorted(words, key=len, reverse=True))  # 引擎的 {@n} 只查整句字典
     kinds = {"\\#": r"(-?[\d,]+)", "@": f"({terms})"}  # {#1} 數字、{@1} 字典裡的字詞，其餘任意
     rules = [re.compile(PLACEHOLDER.sub(lambda m: kinds.get(m.group(1), "(.+?)"), re.escape(r["en"])) + r"\Z")
              for p in sorted((ROOT / "data/rules").glob("*.tsv")) for r in read_tsv(p)]

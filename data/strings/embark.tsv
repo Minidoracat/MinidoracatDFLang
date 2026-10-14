@@ -14,7 +14,6 @@ Cannot embark entirely on water or mountains.	出發範圍不能全是水域或�
 Cannot embark on another site.	不能在其他據點上建立要塞。	不能在其他据点上建立要塞。		選擇出發範圍的錯誤提示（同組字串，未實機看到）
 Temperate Savanna	溫帶稀樹草原	温带稀树草原		地點資訊：生態群系
 Temperature: 	氣溫： 	气温： 		地點資訊；後接 Temperate 等氣溫值
-Temperate	溫和	温和		地點資訊的氣溫值（不是溫帶）。同一個執行檔字串也是人格特質標籤（節制），要依畫面分開翻；引擎還不能分畫面，先用出發畫面的譯法
 Warm	溫暖	温暖		地點資訊的氣溫值（同組，未實機看到）
 Hot	熱	热		地點資訊的氣溫值；原文 3 格只放得下一字
 Scorching	酷熱	酷热		地點資訊的氣溫值
@@ -119,6 +118,11 @@ Save Profile	儲存設定檔	保存配置	c	同上；把這次的準備存成出
 Embark!	出發！	出发！	c	同上
 Your Citizens	你的居民	你的居民	c	謹慎準備：矮人分頁左欄標題
 Available Skills	可選技能	可选技能		同上右欄標題
+Dwarves	矮人	矮人		謹慎準備：第一個分頁（遊戲取種族名的複數，太長時改用 Citizens）；開圖形模式時逐字畫成貼圖
+Citizens	居民	居民		同上，種族名太長時的分頁名
+Items	物品	物品		謹慎準備：第二個分頁
+Animals	動物	动物		謹慎準備：第三個分頁
+Crucial	關鍵	关键		謹慎準備：技能分頁「關鍵技能」（挖礦、伐木、木工等）；Labor、Combat、Other 三個分頁沿用其他檔的通用譯法
 skill picks left	可分配技能點	可分配技能点		同上右上，前面接數字（10 skill picks left）
 skill pick left	可分配技能點	可分配技能点		同上，單數
 View	檢視	查看	c	矮人列的按鈕

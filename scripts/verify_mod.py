@@ -4,8 +4,9 @@
 # ///
 """發版前驗證閘門（repo 根目錄：uv run scripts/verify_mod.py），任一 FAIL 即 exit 1。
 
-1. data/strings/*.tsv（整句）與 data/rules/*.tsv（句型）：欄位 en, zh-Hant, zh-Hans, align, note；
-   原文能用 CP437 表示（遊戲只會畫 CP437），同一類不重複；align 只能是空、c、r
+1. data/strings/*.tsv（整句）、data/rules/*.tsv（句型）與 data/screens/*.tsv（依畫面套用的整句，檔名是畫面）：
+   欄位 en, zh-Hant, zh-Hans, align, note；原文能用 CP437 表示（遊戲只會畫 CP437），同一類不重複
+   （screens 是同一個畫面檔裡不重複）；align 只能是空、c、r；screens 的檔名只用英數、底線、點
 2. 句型佔位：原文至少一個 {1}～{9}、每個只出現一次、不能相鄰，樣板要有固定的英文字（否則會套到幾乎所有字串）；
    兩種譯文用的佔位和原文一致、各一次
 3. 繁簡同步：同一條兩欄同時有譯文或同時留空（繁簡分開翻，但兩包要涵蓋同一批句子）
@@ -16,7 +17,7 @@
 7. 字型：每種語言譯文與吉祥物名牌（語言標籤、作者名）用到的字，主字型或補字字型（temp/fonts/）至少一份有
 8. 吉祥物：art/mascot.png 是 8-bit RGBA PNG（引擎只讀這種）；每包的 mascot_label 是全形字
 9. scripts/workshop.json：繁、簡各一項；ID、名稱、說明、作者只用 ASCII（DF 以 CP437 讀 info.txt）
-10. engine/patterns.tsv 有引擎要 hook 的五個函式（四個畫字函式與段落排版）
+10. engine/patterns.tsv 有引擎要 hook 的六個函式（四個畫字函式、段落排版、錨定貼圖）
 11. dist/ 已建置時：每包檔案齊全、沒有雜檔，且字典、句型與 data/ 一致（沒建置則略過）
 """
 import re
@@ -25,16 +26,15 @@ from pathlib import Path
 
 from fontTools.ttLib import TTFont
 
-from build import DIST, FONTS, load_config, read_rows
+from build import DIST, FONTS, KINDS, dict_lines, load_config, read_rows
 from cp437 import BYTE_OF, cells, encodable
 
 ROOT = Path(__file__).resolve().parents[1]
 HEADER = ["en", "zh-Hant", "zh-Hans", "align", "note"]
-HOOKS = ("addst", "addst_flag", "top_addst", "addcoloredst", "mtb_set_width")
+HOOKS = ("addst", "addst_flag", "top_addst", "addcoloredst", "mtb_set_width", "add_anchored_tile")
 PACKAGE_SUFFIXES = {".txt", ".tsv", ".lua", ".dll", ".otf", ".md", ".png"}
 PLACEHOLDER = re.compile(r"\{[#@]?([1-9])\}")  # {1}～{9}；{#1} 只收數字、{@1} 只收字典裡的字詞
 MARKUP = re.compile(r"\[(?:[RBP]|C:\d+:\d+:\d+)\]")  # 段落的換行與換色標記
-KINDS = ("strings", "rules")
 
 results: list[tuple[bool, str]] = []
 
@@ -80,11 +80,14 @@ def main() -> int:
         bad_cols = [f"{kind}/{r['file']}: {r.get('en')!r}" for r in rows if None in r.values() or None in r]
         check(not headers and not bad_cols, f"{kind} 欄位（{len(files)} 檔、{len(rows)} 條）", headers + bad_cols)
         data[kind] = [{**r, "file": f"{kind}/{r['file']}"} for r in rows if None not in r.values() and None not in r]
-    rows = data["strings"] + data["rules"]
+    rows = [r for kind in KINDS for r in data[kind]]
+    bad_screens = [r for r in sorted({r["file"] for r in data["screens"]}) if not re.fullmatch(r"screens/[A-Za-z_][\w.]*\.tsv", r)]
+    check(not bad_screens, "data/screens 檔名是畫面（英數、底線，. 代表 /）", bad_screens)
 
     seen, dupes, bad_src, bad_align = set(), [], [], []
     for r in rows:
-        key = (r["file"].split("/")[0], r["en"])
+        kind = r["file"].split("/")[0]
+        key = (r["file"] if kind == "screens" else kind, r["en"])
         if key in seen:
             dupes.append(f"{r['file']}: {r['en']!r}")
         seen.add(key)
@@ -157,14 +160,14 @@ def main() -> int:
             continue
         suffix = item["lang"].lower().replace("-", "_")
         required = ["info.txt", f"scripts_modinstalled/dflang_{suffix}.lua", "scripts_modinstalled/dflang.lua",
-                    "dflang/dflang.dll", "dflang/strings.tsv", "dflang/rules.tsv", "dflang/glyphs.txt", "dflang/patterns.tsv",
+                    "dflang/dflang.dll", *(f"dflang/{kind}.tsv" for kind in KINDS), "dflang/glyphs.txt", "dflang/patterns.tsv",
                     "dflang/LICENSE.txt", "dflang/LICENSE-fonts.txt", "dflang/CREDITS.md", "dflang/mascot.png"]
         lacking = [p for p in required if not (out / p).is_file()] + ([] if list((out / "dflang/fonts").glob("*.otf")) else ["dflang/fonts/*.otf"])
         stray = [p.relative_to(out).as_posix() for p in out.rglob("*") if p.is_file() and p.suffix not in PACKAGE_SUFFIXES]
         stale = []
         for kind in KINDS:
             built = out / f"dflang/{kind}.tsv"
-            expected = "".join(f"{r['en']}\t{r[item['lang']]}\t{r['align']}\n" for r in data[kind] if r[item["lang"]].strip())
+            expected = dict_lines(kind, data[kind], item["lang"])
             if built.is_file() and built.read_text(encoding="utf-8") != expected:
                 stale.append(f"dflang/{kind}.tsv 過期，重跑 build.py")
         check(not lacking and not stray and not stale, f"{item['lang']} dist 檔案齊全、無雜檔、字典與句型和 data/ 一致",
