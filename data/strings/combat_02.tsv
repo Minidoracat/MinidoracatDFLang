@@ -1,0 +1,145 @@
+en	zh-Hant	zh-Hans	align	note
+bites	咬	咬		攻擊動詞（生物，raws ATTACK_VERB／ATTACK 第三人稱）；FUN_1400e56a0 外框 {%1} {@2} {%3} in the {%4} 的 {@2}，外框補「了」
+bite	咬	咬		攻擊動詞原形（冒險模式 You bite …）；同上
+scratches	抓	抓		攻擊動詞（生物，raws ATTACK_VERB／ATTACK 第三人稱）；FUN_1400e56a0 外框 {%1} {@2} {%3} in the {%4} 的 {@2}，外框補「了」
+scratch	抓	抓		攻擊動詞原形（冒險模式 You scratch …）；同上
+kicks	踢	踢		攻擊動詞（生物，raws ATTACK_VERB／ATTACK 第三人稱）；FUN_1400e56a0 外框 {%1} {@2} {%3} in the {%4} 的 {@2}，外框補「了」
+kick	踢	踢		攻擊動詞原形（冒險模式 You kick …）；同上
+slaps	拍打	拍打		攻擊動詞（生物／武器，raws ATTACK_VERB／ATTACK 第三人稱）；FUN_1400e56a0 外框 {%1} {@2} {%3} in the {%4} 的 {@2}，外框補「了」
+slap	拍打	拍打		攻擊動詞原形（冒險模式 You slap …）；同上
+punches	揍	揍		攻擊動詞（生物，raws ATTACK_VERB／ATTACK 第三人稱）；FUN_1400e56a0 外框 {%1} {@2} {%3} in the {%4} 的 {@2}，外框補「了」
+punch	揍	揍		攻擊動詞原形（冒險模式 You punch …）；同上
+gores	頂撞	顶撞		攻擊動詞（生物，raws ATTACK_VERB／ATTACK 第三人稱）；FUN_1400e56a0 外框 {%1} {@2} {%3} in the {%4} 的 {@2}，外框補「了」
+gore	頂撞	顶撞		攻擊動詞原形（冒險模式 You gore …）；同上
+stabs	刺	刺		攻擊動詞（生物／武器，raws ATTACK_VERB／ATTACK 第三人稱）；FUN_1400e56a0 外框 {%1} {@2} {%3} in the {%4} 的 {@2}，外框補「了」
+stab	刺	刺		攻擊動詞原形（冒險模式 You stab …）；同上
+slices	劃	划		攻擊動詞（生物，raws ATTACK_VERB／ATTACK 第三人稱）；FUN_1400e56a0 外框 {%1} {@2} {%3} in the {%4} 的 {@2}，外框補「了」
+slice	劃	划		攻擊動詞原形（冒險模式 You slice …）；同上
+lashes	鞭打	鞭打		攻擊動詞（生物／武器，raws ATTACK_VERB／ATTACK 第三人稱）；FUN_1400e56a0 外框 {%1} {@2} {%3} in the {%4} 的 {@2}，外框補「了」
+claws	爪擊	爪击		攻擊動詞（生物，raws ATTACK_VERB／ATTACK 第三人稱）；FUN_1400e56a0 外框 {%1} {@2} {%3} in the {%4} 的 {@2}，外框補「了」
+snatches	撲抓	扑抓		攻擊動詞（生物，raws ATTACK_VERB／ATTACK 第三人稱）；FUN_1400e56a0 外框 {%1} {@2} {%3} in the {%4} 的 {@2}，外框補「了」
+snatch	撲抓	扑抓		攻擊動詞原形（冒險模式 You snatch …）；同上
+bashes	猛擊	猛击		攻擊動詞（生物／武器，raws ATTACK_VERB／ATTACK 第三人稱）；FUN_1400e56a0 外框 {%1} {@2} {%3} in the {%4} 的 {@2}，外框補「了」
+bash	猛擊	猛击		攻擊動詞原形（冒險模式 You bash …）；同上
+stings	螫	蜇		攻擊動詞（生物，raws ATTACK_VERB／ATTACK 第三人稱）；FUN_1400e56a0 外框 {%1} {@2} {%3} in the {%4} 的 {@2}，外框補「了」
+sting	螫	蜇		攻擊動詞原形（冒險模式 You sting …）；同上
+drills	鑽	钻		攻擊動詞（武器，raws ATTACK_VERB／ATTACK 第三人稱）；FUN_1400e56a0 外框 {%1} {@2} {%3} in the {%4} 的 {@2}，外框補「了」
+drill	鑽	钻		攻擊動詞原形（冒險模式 You drill …）；同上
+hacks	劈砍	劈砍		攻擊動詞（武器，raws ATTACK_VERB／ATTACK 第三人稱）；FUN_1400e56a0 外框 {%1} {@2} {%3} in the {%4} 的 {@2}，外框補「了」
+hack	劈砍	劈砍		攻擊動詞原形（冒險模式 You hack …）；同上
+saws	鋸	锯		攻擊動詞（武器，raws ATTACK_VERB／ATTACK 第三人稱）；FUN_1400e56a0 外框 {%1} {@2} {%3} in the {%4} 的 {@2}，外框補「了」
+saw	鋸	锯		攻擊動詞原形（冒險模式 You saw …）；同上
+slashes	砍	砍		攻擊動詞（武器，raws ATTACK_VERB／ATTACK 第三人稱）；FUN_1400e56a0 外框 {%1} {@2} {%3} in the {%4} 的 {@2}，外框補「了」
+slash	砍	砍		攻擊動詞原形（冒險模式 You slash …）；同上
+sticks	戳	戳		攻擊動詞（武器，raws ATTACK_VERB／ATTACK 第三人稱）；FUN_1400e56a0 外框 {%1} {@2} {%3} in the {%4} 的 {@2}，外框補「了」
+stick	戳	戳		攻擊動詞原形（冒險模式 You stick …）；同上
+strikes	擊打	击打		攻擊動詞（武器；也是程式預設（投射物、沒有攻擊資料時），raws ATTACK_VERB／ATTACK 第三人稱）；FUN_1400e56a0 外框 {%1} {@2} {%3} in the {%4} 的 {@2}，外框補「了」
+strike	擊打	击打		攻擊動詞原形（冒險模式 You strike …）；同上
+grabs	抓住	抓住		攻擊動詞（摔角抓握（FUN_140646f00 868273 設定，by the 句型），raws ATTACK_VERB／ATTACK 第三人稱）；FUN_1400e56a0 外框 {%1} {@2} {%3} in the {%4} 的 {@2}，外框補「了」
+grab	抓住	抓住		攻擊動詞原形（冒險模式 You grab …）；同上
+right true ribs	右真肋骨	右真肋骨		BODY:RIBCAGE NUMBER:7 的複數（傷勢 shattering the right true ribs）
+left true ribs	左真肋骨	左真肋骨		同上
+right false ribs	右假肋骨	右假肋骨		同上
+left false ribs	左假肋骨	左假肋骨		同上
+right floating ribs	右浮肋骨	右浮肋骨		同上
+left floating ribs	左浮肋骨	左浮肋骨		同上
+left front paw	左前掌	左前掌		BODYGLOSS:PAW（foot→paw）套在 left front foot；狗、貓等
+right front paw	右前掌	右前掌		同上
+left rear paw	左後掌	左后掌		同上
+right rear paw	右後掌	右后掌		同上
+left paw	左掌	左掌		同上
+right paw	右掌	右掌		同上
+maw	大嘴	大嘴		BODYGLOSS（mouth→maw）
+right glove	右手套	右手套		ITEM_GLOVES 左右手的名稱（through the (pig tail right glove)）；names.tsv {@1} {@2} 接材料
+left glove	左手套	左手套		同上
+right gauntlet	右護手	右护手		同上
+left gauntlet	左護手	左护手		同上
+right mitten	右連指手套	右连指手套		同上
+left mitten	左連指手套	左连指手套		同上
+blood	血液	血液		TISSUE_NAME（傷勢裡的組織名）
+mud	泥巴	泥巴		TISSUE_NAME（泥人）
+reeking	散發惡臭的	散发恶臭的		FUN_1400e56a0 142142 spilling 的內臟形容詞；names.tsv {@1} {@2} 接 guts
+decomposing	腐爛的	腐烂的		FUN_1400e56a0 142161 同上（屍體）
+rancid	酸臭的	酸臭的		FUN_1400e56a0 142165 同上（屍體）
+main part	主要部位	主要部位		FUN_1400e56a0 141789 多層傷勢第二層與第一層同部位、只有一層時（and the main part）
+It is a gelding blow!	這一擊閹割了對方！	这一击阉割了对方！		FUN_1400e56a0 142893 閹割（防守方死亡時）
+It is a gelding strike!	這一擊閹割了對方！	这一击阉割了对方！		FUN_1400e56a0 142898 閹割
+The geldables have been torn away!	生殖器被扯掉了！	生殖器被扯掉了！		FUN_1400e56a0 142901 閹割（撕扯）
+You have been knocked unconscious!	你被打昏了！	你被打昏了！		FUN_1400e56a0 143125 冒險模式
+You have been stunned!	你被打暈了！	你被打晕了！		FUN_1400e56a0 143153 冒險模式
+You have been stunned again!	你又被打暈了！	你又被打晕了！		FUN_1400e56a0 143151 冒險模式
+You are having trouble breathing!	你呼吸困難！	你呼吸困难！		FUN_1400e56a0 143183 冒險模式
+You are having more trouble breathing!	你呼吸更加困難了！	你呼吸更加困难了！		FUN_1400e56a0 143181 冒險模式
+You feel even more sick!	你覺得更加噁心想吐！	你觉得更加恶心想吐！		FUN_1400e56a0 143211 冒險模式；You feel sick! 已在既有檔
+You are propelled away by the force of the blow!	你被這一擊的力道打飛了！	你被这一击的力道打飞了！		FUN_1400e56a0 143361 冒險模式
+You latch on firmly!	你緊緊咬住不放！	你紧紧咬住不放！		FUN_1400e56a0 143449 冒險模式
+Your attack is interrupted!	你的攻擊被打斷了！	你的攻击被打断了！		FUN_1400e56a0 143500 冒險模式
+fifth toe, left foot	左腳第五腳趾	左脚第五脚趾		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+fifth toe, right foot	右腳第五腳趾	右脚第五脚趾		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+finger, left hand	左手手指	左手手指		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+finger, right hand	右手手指	右手手指		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+first finger, first left hand	第一左手的第一手指	第一左手的第一手指		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+first finger, first right hand	第一右手的第一手指	第一右手的第一手指		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+first finger, left hand	左手第一手指	左手第一手指		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+first finger, right hand	右手第一手指	右手第一手指		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+first finger, second left hand	第二左手的第一手指	第二左手的第一手指		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+first finger, second right hand	第二右手的第一手指	第二右手的第一手指		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+first toe, left foot	左腳第一腳趾	左脚第一脚趾		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+first toe, left front foot	左前腳第一腳趾	左前脚第一脚趾		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+first toe, left paw	左掌第一腳趾	左掌第一脚趾		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+first toe, left rear foot	左後腳第一腳趾	左后脚第一脚趾		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+first toe, right foot	右腳第一腳趾	右脚第一脚趾		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+first toe, right front foot	右前腳第一腳趾	右前脚第一脚趾		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+first toe, right paw	右掌第一腳趾	右掌第一脚趾		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+first toe, right rear foot	右後腳第一腳趾	右后脚第一脚趾		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+fourth finger, first left hand	第一左手的第四手指	第一左手的第四手指		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+fourth finger, first right hand	第一右手的第四手指	第一右手的第四手指		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+fourth finger, left hand	左手第四手指	左手第四手指		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+fourth finger, right hand	右手第四手指	右手第四手指		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+fourth finger, second left hand	第二左手的第四手指	第二左手的第四手指		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+fourth finger, second right hand	第二右手的第四手指	第二右手的第四手指		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+fourth toe, left foot	左腳第四腳趾	左脚第四脚趾		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+fourth toe, left front foot	左前腳第四腳趾	左前脚第四脚趾		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+fourth toe, left paw	左掌第四腳趾	左掌第四脚趾		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+fourth toe, left rear foot	左後腳第四腳趾	左后脚第四脚趾		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+fourth toe, right foot	右腳第四腳趾	右脚第四脚趾		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+fourth toe, right front foot	右前腳第四腳趾	右前脚第四脚趾		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+fourth toe, right paw	右掌第四腳趾	右掌第四脚趾		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+fourth toe, right rear foot	右後腳第四腳趾	右后脚第四脚趾		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+second finger, first left hand	第一左手的第二手指	第一左手的第二手指		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+second finger, first right hand	第一右手的第二手指	第一右手的第二手指		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+second finger, left hand	左手第二手指	左手第二手指		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+second finger, right hand	右手第二手指	右手第二手指		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+second finger, second left hand	第二左手的第二手指	第二左手的第二手指		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+second finger, second right hand	第二右手的第二手指	第二右手的第二手指		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+second toe, left foot	左腳第二腳趾	左脚第二脚趾		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+second toe, left front foot	左前腳第二腳趾	左前脚第二脚趾		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+second toe, left paw	左掌第二腳趾	左掌第二脚趾		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+second toe, left rear foot	左後腳第二腳趾	左后脚第二脚趾		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+second toe, right foot	右腳第二腳趾	右脚第二脚趾		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+second toe, right front foot	右前腳第二腳趾	右前脚第二脚趾		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+second toe, right paw	右掌第二腳趾	右掌第二脚趾		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+second toe, right rear foot	右後腳第二腳趾	右后脚第二脚趾		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+third finger, first left hand	第一左手的第三手指	第一左手的第三手指		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+third finger, first right hand	第一右手的第三手指	第一右手的第三手指		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+third finger, left hand	左手第三手指	左手第三手指		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+third finger, right hand	右手第三手指	右手第三手指		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+third finger, second left hand	第二左手的第三手指	第二左手的第三手指		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+third finger, second right hand	第二右手的第三手指	第二右手的第三手指		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+third toe, left foot	左腳第三腳趾	左脚第三脚趾		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+third toe, left front foot	左前腳第三腳趾	左前脚第三脚趾		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+third toe, left paw	左掌第三腳趾	左掌第三脚趾		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+third toe, left rear foot	左後腳第三腳趾	左后脚第三脚趾		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+third toe, right foot	右腳第三腳趾	右脚第三脚趾		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+third toe, right front foot	右前腳第三腳趾	右前脚第三脚趾		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+third toe, right paw	右掌第三腳趾	右掌第三脚趾		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+third toe, right rear foot	右後腳第三腳趾	右后脚第三脚趾		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+thumb, first left hand	第一左手的拇指	第一左手的拇指		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+thumb, first right hand	第一右手的拇指	第一右手的拇指		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+thumb, left hand	左手拇指	左手拇指		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+thumb, right hand	右手拇指	右手拇指		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+thumb, second left hand	第二左手的拇指	第二左手的拇指		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+thumb, second right hand	第二右手的拇指	第二右手的拇指		重複的指頭名接所屬部位（CONTYPE:GRASP／STANCE；遊戲寫 first toe, right foot）；整條寫進字典，免得被清單句型拆成兩項
+the injured part	受傷的部位	受伤的部位		FUN_1400e56a0 142378 and the injured part collapses 等（部位毀壞的主詞）
+the part	該部位	该部位		FUN_1400e56a0 142451 自訂前綴後 and the part splits in gore 等
+vomit	嘔吐物	呕吐物		FUN_1400e56a0 143290 等物質名（Vomit splatters over the upper body!）

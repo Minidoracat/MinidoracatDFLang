@@ -77,6 +77,8 @@ enum Kind {
     Number,
     Term,
     Full,
+    /// `{~n}`：比對同 `{n}`，譯文可以不寫（「伐木工用伐木工的右前臂…」的第二個主人）
+    Skip,
 }
 
 enum Seg {
@@ -129,6 +131,7 @@ fn split_placeholders<T>(s: &str, mut text: impl FnMut(&str) -> Option<T>) -> Op
             Some(b'#') => Kind::Number,
             Some(b'@') => Kind::Term,
             Some(b'%') => Kind::Full,
+            Some(b'~') => Kind::Skip,
             _ => Kind::Any,
         };
         let d = i + 1 + usize::from(kind != Kind::Any);
@@ -184,7 +187,7 @@ fn lookup_name<'a>(d: &'a Dict, key: &[u8]) -> Option<&'a Entry> {
 
 impl Rule {
     /// 原文樣板必須能轉成 CP437、每個佔位只出現一次、佔位不能相鄰（相鄰時切點不唯一），也不能帶補字；
-    /// 譯文每個佔位最多用一次，而且都要是原文有的；原文的佔位除了 `{@n}` 都要用到（譯文裡的 `#`、`@`、`%` 寫不寫都可以）。
+    /// 譯文每個佔位最多用一次，而且都要是原文有的；原文的佔位除了 `{@n}`、`{~n}` 都要用到（譯文裡的 `#`、`@`、`%`、`~` 寫不寫都可以）。
     /// `{@n}` 可以不寫：中文常省略重複的主詞（「他深受感動，卻因不喜歡大自然而困擾」不必再寫一次「他」）。
     /// 譯文的 `{n+時}`：佔位譯文後面補「時」，但譯文已經以時間、原因助詞（PARTICLES）結尾就不補。
     fn parse(en: &str, zh: &str, align: &str) -> Option<Rule> {
@@ -212,7 +215,7 @@ impl Rule {
             || !unique(&en_caps.iter().map(|c| c.0).collect::<Vec<_>>())
             || !unique(&zh_caps)
             || !zh_caps.iter().all(|i| en_caps.iter().any(|c| c.0 == *i))
-            || !en_caps.iter().all(|(i, k)| *k == Kind::Term || zh_caps.contains(i))
+            || !en_caps.iter().all(|(i, k)| matches!(k, Kind::Term | Kind::Skip) || zh_caps.contains(i))
         {
             return None;
         }
@@ -229,7 +232,7 @@ impl Rule {
                 Seg::Cap(_, kind) => *kind == Kind::Full,
                 Seg::Lit(l) => !l.iter().any(u8::is_ascii_alphabetic),
             }),
-            loose: matches!(pattern.first(), Some(Seg::Cap(_, Kind::Any))),
+            loose: matches!(pattern.first(), Some(Seg::Cap(_, Kind::Any | Kind::Skip))),
             inner: align == "inner",
             pattern,
             output,
@@ -258,12 +261,12 @@ fn match_at(segs: &[Seg], text: &[u8], pos: usize, caps: &mut [(usize, usize); 9
             match rest.first() {
                 None => {
                     caps[*i] = (pos, text.len());
-                    pos < stop && stop == text.len() && (*kind == Kind::Any || fits(*kind, &text[pos..]))
+                    pos < stop && stop == text.len() && (matches!(kind, Kind::Any | Kind::Skip) || fits(*kind, &text[pos..]))
                 }
                 Some(Seg::Lit(next)) => {
                     let mut end = pos + 1;
                     while end <= stop && end + next.len() <= text.len() {
-                        if text[end..].starts_with(next) && (*kind == Kind::Any || fits(*kind, &text[pos..end])) {
+                        if text[end..].starts_with(next) && (matches!(kind, Kind::Any | Kind::Skip) || fits(*kind, &text[pos..end])) {
                             caps[*i] = (pos, end);
                             if match_at(rest, text, end, caps, fits) {
                                 return true;
@@ -290,6 +293,9 @@ pub struct Dict {
     /// 全部小寫的原文 → 原文：只收含大小寫字母、而且全小寫寫法本身沒有條目的（見 lookup_name）。
     /// 兩條原文只差大小寫、譯文又不同時不收，結果才不看雜湊表的順序。
     folded: HashMap<Vec<u8>, Vec<u8>>,
+    /// 原文含逗號的條目（身體部位 `first finger, right hand`）：片段以這種條目結尾、前面又不是清單的「, 」時不套清單句型，
+    /// 「the goblin's first finger, right hand」才會整條當部位名，不會在逗號切成兩項
+    comma_keys: Vec<Vec<u8>>,
     /// 只在某些畫面套用的整句：原文 → [(畫面, 限定列, 譯文)]。同一個英文在不同畫面（或同畫面不同列）意思不同時用（見 screen_entry）。
     pub screens: HashMap<Vec<u8>, Vec<(String, Option<i32>, Entry)>>,
     pub rules: Vec<Rule>,
@@ -386,6 +392,7 @@ impl Dict {
             }
         }
         self.rebuild_folded();
+        self.comma_keys = self.entries.keys().filter(|k| k.windows(2).any(|w| w == b", ")).cloned().collect();
         report
     }
 
@@ -504,9 +511,17 @@ impl Dict {
         let mut out = Pieces::new();
         let mut missing = Vec::new();
         for (start, end) in sentence_spans(text) {
-            match self.piece(&text[start..end], 0, &mut memo) {
-                Some((p, _)) => out.extend(p.into_iter().map(|(t, at)| (t, at + start))),
-                None => missing.push(text[start..end].to_vec()),
+            let sentence = &text[start..end];
+            // 遊戲偶爾在句子中間多拼一個空白（「The force pulls the left ankle,  shattering…」）：照原樣查不到時收成一個再查，
+            // 譯文位置都記在句首（只影響彩色文字框的上色）
+            let found = self.piece(sentence, 0, &mut memo).map(|(p, _)| p.into_iter().map(|(t, at)| (t, at + start)).collect::<Vec<_>>())
+                .or_else(|| {
+                    let single = collapse_spaces(sentence)?;
+                    self.piece(&single, 0, &mut memo).map(|(p, _)| p.into_iter().map(|(t, _)| (t, start)).collect())
+                });
+            match found {
+                Some(p) => out.extend(p),
+                None => missing.push(sentence.to_vec()),
             }
         }
         if missing.is_empty() && !out.is_empty() { Ok(out) } else { Err(missing) }
@@ -533,9 +548,12 @@ impl Dict {
     /// 第一條命中的句型：(譯文片段, 句型, 乾淨與否)。
     fn apply_rules(&self, key: &[u8], depth: usize, memo: &mut Memo) -> Option<(Pieces, &Rule, bool)> {
         // 清單與冠詞外框只會是句子的一部分：最外層（整句）不套，免得把「人名 likes 甲, 乙」當成一項
-        for rule in self.rules.iter().filter(|r| depth > 0 || !(r.list || r.inner)) {
+        let ends_with_comma_entry = self.comma_keys.iter().any(|k| {
+            key.len() > k.len() && key.ends_with(k) && !key[..key.len() - k.len()].ends_with(b", ")
+        });
+        for rule in self.rules.iter().filter(|r| depth > 0 || !(r.list || r.inner)).filter(|r| !(r.list && ends_with_comma_entry)) {
             let mut fits = |kind: Kind, piece: &[u8]| match kind {
-                Kind::Any => true,
+                Kind::Any | Kind::Skip => true,
                 Kind::Number => is_number(piece),
                 Kind::Term => lookup_name(self, piece).is_some(),
                 Kind::Full => matches!(self.piece(piece, depth + 1, memo), Some((_, true))),
@@ -557,7 +575,8 @@ impl Dict {
                                 out.extend(sub.into_iter().map(|(t, at)| (t, at + start)));
                             }
                             None => {
-                                all_clean = false;
+                                // 數字照抄也算乾淨（「plump helmets [5]」的 5 不必翻）
+                                all_clean &= rule.pattern.iter().any(|s| matches!(s, Seg::Cap(j, Kind::Number) if j == i));
                                 out.push((cp437::decode(&key[start..end]), start));
                             }
                         }
@@ -594,6 +613,20 @@ impl Dict {
         cache.insert(key.to_vec(), entry.clone());
         entry
     }
+}
+
+/// 連續空白收成一個；沒有連續空白時回傳 None。
+fn collapse_spaces(text: &[u8]) -> Option<Vec<u8>> {
+    if !text.windows(2).any(|w| w == b"  ") {
+        return None;
+    }
+    let mut out = Vec::with_capacity(text.len());
+    for &c in text {
+        if !(c == b' ' && out.last() == Some(&b' ')) {
+            out.push(c);
+        }
+    }
+    Some(out)
 }
 
 /// 彈出訊息（段落框，見 mtb.rs plain_text）把原文拆成單字再接回：單字間一個空白，[B] [R] [P] 自成一字。
@@ -871,5 +904,41 @@ mod tests {
         d.load_tsv("dwarf\t矮人\nsinging\t歌唱\nwell\t水井\nvulture\t禿鷲\n");
         assert_eq!(d.translate_text(b"The dwarf is singing well."), None, "整句去掉 The 之後不能拿半句去比想法句");
         assert_eq!(d.translate_text(b"The vulture misses the dwarf!").as_deref(), Some("禿鷲沒打中矮人！"));
+    }
+
+    #[test]
+    fn skip_placeholders_match_freely_and_may_be_left_out() {
+        let mut d = dict("The {%1}\t{1}\tinner\nthe {%1}\t{1}\tinner\n{%1}'s {%2}\t{1}的{2}\tinner\n\
+                          {%1} locks {%2} with {~3}'s {%4}!\t{1}用{4}鎖住了{2}！\n");
+        d.load_tsv("woodcutter\t伐木工\nvulture\t禿鷲\nright hip\t右髖部\nright lower arm\t右前臂\n");
+        assert_eq!(d.translate_text(b"The woodcutter locks the vulture's right hip with The woodcutter's right lower arm!").as_deref(),
+                   Some("伐木工用右前臂鎖住了禿鷲的右髖部！"), "攻擊者自己的部位不必再寫一次主人");
+    }
+
+    #[test]
+    fn part_names_with_commas_are_not_split_as_lists() {
+        let mut d = dict("the {%1}\t{1}\tinner\n{%1}'s {%2}\t{1}的{2}\tinner\n{%1}, {%2}\t{1}、{2}\n{%1} bites {%2}!\t{1}咬了{2}！\n");
+        d.load_tsv("goblin\t哥布林\ndwarf\t矮人\nfirst toe\t第一腳趾\nright foot\t右腳\nfirst toe, right foot\t右腳第一腳趾\n");
+        assert_eq!(d.translate_text(b"the goblin bites the dwarf's first toe, right foot!").as_deref(), Some("哥布林咬了矮人的右腳第一腳趾！"));
+        assert_eq!(d.translate_text(b"the goblin bites the dwarf's first toe, first toe, right foot!").as_deref(),
+                   Some("哥布林咬了矮人的第一腳趾、右腳第一腳趾！"), "前面是清單的「, 」時照樣切");
+    }
+
+    #[test]
+    fn sentences_with_stray_double_spaces_fall_back_to_single_spaces() {
+        let mut d = dict("The force pulls the {%1}, shattering {%2}!\t這股力道拉扯了{1}，打碎了{2}！\n");
+        d.load_tsv("left ankle\t左腳踝\nthe bone\t骨頭\nHe is slow to anger.\t他不容易動怒。\n");
+        let zh = |s: &[u8]| d.translate_sentences(s).map(concat);
+        assert_eq!(zh(b"The force pulls the left ankle,  shattering the bone!"), Ok("這股力道拉扯了左腳踝，打碎了骨頭！".to_owned()));
+        assert_eq!(zh(b"He is slow to anger.  The force pulls the left ankle,  shattering the bone!"),
+                   Ok("他不容易動怒。這股力道拉扯了左腳踝，打碎了骨頭！".to_owned()), "句間的兩個空白照樣切句");
+    }
+
+    #[test]
+    fn number_captures_count_as_clean() {
+        let mut d = dict("{%1} [{#2}]\t{1} [{2}]\n{1} has stolen {%2}!\t{1}偷走了{2}！\n");
+        d.load_tsv("plump helmets\t肉盔菇\n");
+        assert_eq!(d.translate_text(b"Urist has stolen plump helmets [5]!").as_deref(), Some("Urist偷走了肉盔菇 [5]！"),
+                   "{{%2}} 只收乾淨的譯文：數字照抄不算半中半英");
     }
 }

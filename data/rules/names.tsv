@@ -22,3 +22,4 @@ x{1}x	x{1}x	x{1}x		物品磨損外框（稍舊）
 {#1} {2}	{1} {2}	{1} {2}		數量＋名稱（5 plump helmet spawn、2 iron picks）；中文不加量詞
 {@1} {@2}	{1}{2}	{1}{2}		材料＋物品、生物＋材料（copper battle axes、yak leather）：兩段都是字典裡的名稱才接
 {@1} {@2} {@3}	{1}{2}{3}	{1}{2}{3}		三段名稱相接（llama wool shirt、giant cave spider silk tunic）；兩段的規則先試
+{%1} [{#2}]	{1} [{2}]	{1} [{2}]		一疊物品的數量（plump helmets [5]，被偷的公告與物品清單）

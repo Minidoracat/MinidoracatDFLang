@@ -1,0 +1,24 @@
+en	zh-Hant	zh-Hans	align	note
+You pass out.	你昏了過去。	你昏了过去。		FUN_140646f00 869428 冒險模式被勒昏
+A major artery has been opened by the attack	大動脈被割開了	大动脉被割开了		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：第一項（句首大寫），供下面的清單句型當 {%1}
+A major artery has been opened by the attack!	大動脈被割開了！	大动脉被割开了！		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：只有一項
+An artery has been opened by the attack	動脈被割開了	动脉被割开了		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：第一項（句首大寫），供下面的清單句型當 {%1}
+An artery has been opened by the attack!	動脈被割開了！	动脉被割开了！		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：只有一項
+Many nerves have been severed	多條神經被切斷了	多条神经被切断了		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：第一項（句首大寫），供下面的清單句型當 {%1}
+Many nerves have been severed!	多條神經被切斷了！	多条神经被切断了！		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：只有一項
+A motor nerve has been severed	運動神經被切斷了	运动神经被切断了		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：第一項（句首大寫），供下面的清單句型當 {%1}
+A motor nerve has been severed!	運動神經被切斷了！	运动神经被切断了！		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：只有一項
+A sensory nerve has been severed	感覺神經被切斷了	感觉神经被切断了		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：第一項（句首大寫），供下面的清單句型當 {%1}
+A sensory nerve has been severed!	感覺神經被切斷了！	感觉神经被切断了！		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：只有一項
+A ligament has been torn	韌帶撕裂了	韧带撕裂了		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：第一項（句首大寫），供下面的清單句型當 {%1}
+A ligament has been torn!	韌帶撕裂了！	韧带撕裂了！		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：只有一項
+A ligament has been sprained	韌帶扭傷了	韧带扭伤了		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：第一項（句首大寫），供下面的清單句型當 {%1}
+A ligament has been sprained!	韌帶扭傷了！	韧带扭伤了！		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：只有一項
+A ligament has been bruised	韌帶挫傷了	韧带挫伤了		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：第一項（句首大寫），供下面的清單句型當 {%1}
+A ligament has been bruised!	韌帶挫傷了！	韧带挫伤了！		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：只有一項
+A tendon has been torn	肌腱撕裂了	肌腱撕裂了		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：第一項（句首大寫），供下面的清單句型當 {%1}
+A tendon has been torn!	肌腱撕裂了！	肌腱撕裂了！		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：只有一項
+A tendon has been strained	肌腱拉傷了	肌腱拉伤了		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：第一項（句首大寫），供下面的清單句型當 {%1}
+A tendon has been strained!	肌腱拉傷了！	肌腱拉伤了！		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：只有一項
+A tendon has been bruised	肌腱挫傷了	肌腱挫伤了		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：第一項（句首大寫），供下面的清單句型當 {%1}
+A tendon has been bruised!	肌腱挫傷了！	肌腱挫伤了！		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：只有一項

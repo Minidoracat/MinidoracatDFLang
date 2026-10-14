@@ -1,0 +1,13 @@
+en	zh-Hant	zh-Hans	align	note
+You jump away!	你跳開了！	你跳开了！		FUN_140654d20 876027 閃開衝鋒（玩家）
+You roll away!	你翻滾躲開了！	你翻滚躲开了！		FUN_140654d20 876027 閃開衝鋒（玩家）
+You scramble away!	你連滾帶爬地躲開了！	你连滚带爬地躲开了！		FUN_140654d20 876027 閃開衝鋒（玩家）
+You are stunned by divine power!	你被神力震暈了！	你被神力震晕了！		FUN_14064a350 874254 神力震暈（玩家）
+Many are stunned by divine power!	許多生物被神力震暈了！	许多生物被神力震晕了！		FUN_14064a350 874263 神力震暈四人以上
+You are knocked over and tumble backward!	你被撞倒，向後翻滾！	你被撞倒，向后翻滚！		FUN_140654d20 876307／876704 撞倒（玩家）
+You are knocked over!	你被撞倒了！	你被撞倒了！		FUN_140654d20 876394／876704 撞倒（玩家）
+You bounce backward!	你被彈了回去！	你被弹了回去！		FUN_140654d20 876445 衝鋒被彈回（玩家）
+They tangle together and tumble forward!	雙方纏成一團，向前翻滾！	双方缠成一团，向前翻滚！		FUN_140654d20 876543 COMBAT_CHARGE_TANGLE_TUMBLE
+You tangle together and tumble forward!	你們纏成一團，向前翻滾！	你们缠成一团，向前翻滚！		FUN_140654d20 876540 同上（玩家參與）
+They tangle together and fall over!	雙方纏成一團，摔倒在地！	双方缠成一团，摔倒在地！		FUN_140654d20 876596 COMBAT_CHARGE_TANGLE_TOGETHER
+You tangle together and fall over!	你們纏成一團，摔倒在地！	你们缠成一团，摔倒在地！		FUN_140654d20 876593 同上（玩家參與）

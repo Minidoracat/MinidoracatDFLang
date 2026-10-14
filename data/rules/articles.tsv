@@ -5,3 +5,4 @@ a {%1}	{1}	{1}	inner	同上（Interrupted by a vulture）
 A {%1}	{1}	{1}	inner	同上，句首大寫
 an {%1}	{1}	{1}	inner	同上
 An {%1}	{1}	{1}	inner	同上，句首大寫
+{%1}'s {%2}	{1}的{2}	{1}的{2}	inner	所有格（The vulture's left wing、the goblin's iron spear）；兩邊都要翻得出來；只用在佔位裡（inner）

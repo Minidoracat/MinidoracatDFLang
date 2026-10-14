@@ -1,0 +1,170 @@
+en	zh-Hant	zh-Hans	align	note
+Your {%1}	你的{1}	你的{1}	inner	冒險模式玩家的所有格（Your right hand、句中大寫 Your left wing）；只用在佔位裡（inner）
+your {%1}	你的{1}	你的{1}	inner	同上，小寫
+{%1} pinches {%2} with {~3}'s {%4}	{1}用{4}掐了{2}	{1}用{4}掐了{2}	inner	FUN_140646f00 868710 掐；{2} 對方部位、{3}'s {4} 自己的部位（'s 寫死：articles 的 {%1}'s {%2} 排在前面，會從最後一個 's 切開整個前綴）；打擊報告前綴，由 combat_02 的外框接傷勢（{%1}, tearing {%2}!／{%1} tearing {%2}!／{%1} the {%2} collapses! 等）；只用在佔位裡（inner）
+{%1} pinches {%2} with {~3}'s {%4},	{1}用{4}掐了{2}，	{1}用{4}掐了{2}，	inner	FUN_140646f00 868710 掐；{2} 對方部位、{3}'s {4} 自己的部位（'s 寫死：articles 的 {%1}'s {%2} 排在前面，會從最後一個 's 切開整個前綴）；打擊報告前綴，由 combat_02 的外框接傷勢（{%1}, tearing {%2}!／{%1} tearing {%2}!／{%1} the {%2} collapses! 等）；只用在佔位裡（inner）；結尾「,」寫死，部位名有逗號（first toe, right foot）時清單句型才不會先切開
+{%1} pinches {%2} with {~3}'s {%4} and	{1}用{4}掐了{2}，	{1}用{4}掐了{2}，	inner	FUN_140646f00 868710 掐；{2} 對方部位、{3}'s {4} 自己的部位（'s 寫死：articles 的 {%1}'s {%2} 排在前面，會從最後一個 's 切開整個前綴）；打擊報告前綴，由 combat_02 的外框接傷勢（{%1}, tearing {%2}!／{%1} tearing {%2}!／{%1} the {%2} collapses! 等）；只用在佔位裡（inner）；結尾「and」寫死，部位名有逗號（first toe, right foot）時清單句型才不會先切開
+{%1} pinches {%2} with Your {%3}	{1}用你的{3}掐了{2}	{1}用你的{3}掐了{2}	inner	FUN_140646f00 868710 掐；冒險模式玩家用自己的部位；打擊報告前綴，由 combat_02 的外框接傷勢（{%1}, tearing {%2}!／{%1} tearing {%2}!／{%1} the {%2} collapses! 等）；只用在佔位裡（inner）
+{%1} pinches {%2} with Your {%3},	{1}用你的{3}掐了{2}，	{1}用你的{3}掐了{2}，	inner	FUN_140646f00 868710 掐；冒險模式玩家用自己的部位；打擊報告前綴，由 combat_02 的外框接傷勢（{%1}, tearing {%2}!／{%1} tearing {%2}!／{%1} the {%2} collapses! 等）；只用在佔位裡（inner）；結尾「,」寫死，部位名有逗號（first toe, right foot）時清單句型才不會先切開
+{%1} pinches {%2} with Your {%3} and	{1}用你的{3}掐了{2}，	{1}用你的{3}掐了{2}，	inner	FUN_140646f00 868710 掐；冒險模式玩家用自己的部位；打擊報告前綴，由 combat_02 的外框接傷勢（{%1}, tearing {%2}!／{%1} tearing {%2}!／{%1} the {%2} collapses! 等）；只用在佔位裡（inner）；結尾「and」寫死，部位名有逗號（first toe, right foot）時清單句型才不會先切開
+{%1} pinch {%2} with {~3}'s {%4}	{1}用{4}掐了{2}	{1}用{4}掐了{2}	inner	FUN_140646f00 868710 掐；{2} 對方部位、{3}'s {4} 自己的部位（'s 寫死：articles 的 {%1}'s {%2} 排在前面，會從最後一個 's 切開整個前綴）；冒險模式 You；打擊報告前綴，由 combat_02 的外框接傷勢（{%1}, tearing {%2}!／{%1} tearing {%2}!／{%1} the {%2} collapses! 等）；只用在佔位裡（inner）
+{%1} pinch {%2} with {~3}'s {%4},	{1}用{4}掐了{2}，	{1}用{4}掐了{2}，	inner	FUN_140646f00 868710 掐；{2} 對方部位、{3}'s {4} 自己的部位（'s 寫死：articles 的 {%1}'s {%2} 排在前面，會從最後一個 's 切開整個前綴）；冒險模式 You；打擊報告前綴，由 combat_02 的外框接傷勢（{%1}, tearing {%2}!／{%1} tearing {%2}!／{%1} the {%2} collapses! 等）；只用在佔位裡（inner）；結尾「,」寫死，部位名有逗號（first toe, right foot）時清單句型才不會先切開
+{%1} pinch {%2} with {~3}'s {%4} and	{1}用{4}掐了{2}，	{1}用{4}掐了{2}，	inner	FUN_140646f00 868710 掐；{2} 對方部位、{3}'s {4} 自己的部位（'s 寫死：articles 的 {%1}'s {%2} 排在前面，會從最後一個 's 切開整個前綴）；冒險模式 You；打擊報告前綴，由 combat_02 的外框接傷勢（{%1}, tearing {%2}!／{%1} tearing {%2}!／{%1} the {%2} collapses! 等）；只用在佔位裡（inner）；結尾「and」寫死，部位名有逗號（first toe, right foot）時清單句型才不會先切開
+{%1} pinch {%2} with Your {%3}	{1}用你的{3}掐了{2}	{1}用你的{3}掐了{2}	inner	FUN_140646f00 868710 掐；冒險模式玩家用自己的部位；冒險模式 You；打擊報告前綴，由 combat_02 的外框接傷勢（{%1}, tearing {%2}!／{%1} tearing {%2}!／{%1} the {%2} collapses! 等）；只用在佔位裡（inner）
+{%1} pinch {%2} with Your {%3},	{1}用你的{3}掐了{2}，	{1}用你的{3}掐了{2}，	inner	FUN_140646f00 868710 掐；冒險模式玩家用自己的部位；冒險模式 You；打擊報告前綴，由 combat_02 的外框接傷勢（{%1}, tearing {%2}!／{%1} tearing {%2}!／{%1} the {%2} collapses! 等）；只用在佔位裡（inner）；結尾「,」寫死，部位名有逗號（first toe, right foot）時清單句型才不會先切開
+{%1} pinch {%2} with Your {%3} and	{1}用你的{3}掐了{2}，	{1}用你的{3}掐了{2}，	inner	FUN_140646f00 868710 掐；冒險模式玩家用自己的部位；冒險模式 You；打擊報告前綴，由 combat_02 的外框接傷勢（{%1}, tearing {%2}!／{%1} tearing {%2}!／{%1} the {%2} collapses! 等）；只用在佔位裡（inner）；結尾「and」寫死，部位名有逗號（first toe, right foot）時清單句型才不會先切開
+{%1} gouges {%2} with {~3}'s {%4}	{1}用{4}挖了{2}	{1}用{4}挖了{2}	inner	FUN_140646f00 868777 挖（眼睛等）；{2} 對方部位、{3}'s {4} 自己的部位（'s 寫死：articles 的 {%1}'s {%2} 排在前面，會從最後一個 's 切開整個前綴）；打擊報告前綴，由 combat_02 的外框接傷勢（{%1}, tearing {%2}!／{%1} tearing {%2}!／{%1} the {%2} collapses! 等）；只用在佔位裡（inner）
+{%1} gouges {%2} with {~3}'s {%4},	{1}用{4}挖了{2}，	{1}用{4}挖了{2}，	inner	FUN_140646f00 868777 挖（眼睛等）；{2} 對方部位、{3}'s {4} 自己的部位（'s 寫死：articles 的 {%1}'s {%2} 排在前面，會從最後一個 's 切開整個前綴）；打擊報告前綴，由 combat_02 的外框接傷勢（{%1}, tearing {%2}!／{%1} tearing {%2}!／{%1} the {%2} collapses! 等）；只用在佔位裡（inner）；結尾「,」寫死，部位名有逗號（first toe, right foot）時清單句型才不會先切開
+{%1} gouges {%2} with {~3}'s {%4} and	{1}用{4}挖了{2}，	{1}用{4}挖了{2}，	inner	FUN_140646f00 868777 挖（眼睛等）；{2} 對方部位、{3}'s {4} 自己的部位（'s 寫死：articles 的 {%1}'s {%2} 排在前面，會從最後一個 's 切開整個前綴）；打擊報告前綴，由 combat_02 的外框接傷勢（{%1}, tearing {%2}!／{%1} tearing {%2}!／{%1} the {%2} collapses! 等）；只用在佔位裡（inner）；結尾「and」寫死，部位名有逗號（first toe, right foot）時清單句型才不會先切開
+{%1} gouges {%2} with Your {%3}	{1}用你的{3}挖了{2}	{1}用你的{3}挖了{2}	inner	FUN_140646f00 868777 挖（眼睛等）；冒險模式玩家用自己的部位；打擊報告前綴，由 combat_02 的外框接傷勢（{%1}, tearing {%2}!／{%1} tearing {%2}!／{%1} the {%2} collapses! 等）；只用在佔位裡（inner）
+{%1} gouges {%2} with Your {%3},	{1}用你的{3}挖了{2}，	{1}用你的{3}挖了{2}，	inner	FUN_140646f00 868777 挖（眼睛等）；冒險模式玩家用自己的部位；打擊報告前綴，由 combat_02 的外框接傷勢（{%1}, tearing {%2}!／{%1} tearing {%2}!／{%1} the {%2} collapses! 等）；只用在佔位裡（inner）；結尾「,」寫死，部位名有逗號（first toe, right foot）時清單句型才不會先切開
+{%1} gouges {%2} with Your {%3} and	{1}用你的{3}挖了{2}，	{1}用你的{3}挖了{2}，	inner	FUN_140646f00 868777 挖（眼睛等）；冒險模式玩家用自己的部位；打擊報告前綴，由 combat_02 的外框接傷勢（{%1}, tearing {%2}!／{%1} tearing {%2}!／{%1} the {%2} collapses! 等）；只用在佔位裡（inner）；結尾「and」寫死，部位名有逗號（first toe, right foot）時清單句型才不會先切開
+{%1} gouge {%2} with {~3}'s {%4}	{1}用{4}挖了{2}	{1}用{4}挖了{2}	inner	FUN_140646f00 868777 挖（眼睛等）；{2} 對方部位、{3}'s {4} 自己的部位（'s 寫死：articles 的 {%1}'s {%2} 排在前面，會從最後一個 's 切開整個前綴）；冒險模式 You；打擊報告前綴，由 combat_02 的外框接傷勢（{%1}, tearing {%2}!／{%1} tearing {%2}!／{%1} the {%2} collapses! 等）；只用在佔位裡（inner）
+{%1} gouge {%2} with {~3}'s {%4},	{1}用{4}挖了{2}，	{1}用{4}挖了{2}，	inner	FUN_140646f00 868777 挖（眼睛等）；{2} 對方部位、{3}'s {4} 自己的部位（'s 寫死：articles 的 {%1}'s {%2} 排在前面，會從最後一個 's 切開整個前綴）；冒險模式 You；打擊報告前綴，由 combat_02 的外框接傷勢（{%1}, tearing {%2}!／{%1} tearing {%2}!／{%1} the {%2} collapses! 等）；只用在佔位裡（inner）；結尾「,」寫死，部位名有逗號（first toe, right foot）時清單句型才不會先切開
+{%1} gouge {%2} with {~3}'s {%4} and	{1}用{4}挖了{2}，	{1}用{4}挖了{2}，	inner	FUN_140646f00 868777 挖（眼睛等）；{2} 對方部位、{3}'s {4} 自己的部位（'s 寫死：articles 的 {%1}'s {%2} 排在前面，會從最後一個 's 切開整個前綴）；冒險模式 You；打擊報告前綴，由 combat_02 的外框接傷勢（{%1}, tearing {%2}!／{%1} tearing {%2}!／{%1} the {%2} collapses! 等）；只用在佔位裡（inner）；結尾「and」寫死，部位名有逗號（first toe, right foot）時清單句型才不會先切開
+{%1} gouge {%2} with Your {%3}	{1}用你的{3}挖了{2}	{1}用你的{3}挖了{2}	inner	FUN_140646f00 868777 挖（眼睛等）；冒險模式玩家用自己的部位；冒險模式 You；打擊報告前綴，由 combat_02 的外框接傷勢（{%1}, tearing {%2}!／{%1} tearing {%2}!／{%1} the {%2} collapses! 等）；只用在佔位裡（inner）
+{%1} gouge {%2} with Your {%3},	{1}用你的{3}挖了{2}，	{1}用你的{3}挖了{2}，	inner	FUN_140646f00 868777 挖（眼睛等）；冒險模式玩家用自己的部位；冒險模式 You；打擊報告前綴，由 combat_02 的外框接傷勢（{%1}, tearing {%2}!／{%1} tearing {%2}!／{%1} the {%2} collapses! 等）；只用在佔位裡（inner）；結尾「,」寫死，部位名有逗號（first toe, right foot）時清單句型才不會先切開
+{%1} gouge {%2} with Your {%3} and	{1}用你的{3}挖了{2}，	{1}用你的{3}挖了{2}，	inner	FUN_140646f00 868777 挖（眼睛等）；冒險模式玩家用自己的部位；冒險模式 You；打擊報告前綴，由 combat_02 的外框接傷勢（{%1}, tearing {%2}!／{%1} tearing {%2}!／{%1} the {%2} collapses! 等）；只用在佔位裡（inner）；結尾「and」寫死，部位名有逗號（first toe, right foot）時清單句型才不會先切開
+{%1} bends {%2} with {~3}'s {%4}	{1}用{4}扳彎了{2}	{1}用{4}扳弯了{2}	inner	FUN_140646f00 868857 扳折關節；{2} 對方部位、{3}'s {4} 自己的部位（'s 寫死：articles 的 {%1}'s {%2} 排在前面，會從最後一個 's 切開整個前綴）；打擊報告前綴，由 combat_02 的外框接傷勢（{%1}, tearing {%2}!／{%1} tearing {%2}!／{%1} the {%2} collapses! 等）；只用在佔位裡（inner）
+{%1} bends {%2} with {~3}'s {%4},	{1}用{4}扳彎了{2}，	{1}用{4}扳弯了{2}，	inner	FUN_140646f00 868857 扳折關節；{2} 對方部位、{3}'s {4} 自己的部位（'s 寫死：articles 的 {%1}'s {%2} 排在前面，會從最後一個 's 切開整個前綴）；打擊報告前綴，由 combat_02 的外框接傷勢（{%1}, tearing {%2}!／{%1} tearing {%2}!／{%1} the {%2} collapses! 等）；只用在佔位裡（inner）；結尾「,」寫死，部位名有逗號（first toe, right foot）時清單句型才不會先切開
+{%1} bends {%2} with {~3}'s {%4} and	{1}用{4}扳彎了{2}，	{1}用{4}扳弯了{2}，	inner	FUN_140646f00 868857 扳折關節；{2} 對方部位、{3}'s {4} 自己的部位（'s 寫死：articles 的 {%1}'s {%2} 排在前面，會從最後一個 's 切開整個前綴）；打擊報告前綴，由 combat_02 的外框接傷勢（{%1}, tearing {%2}!／{%1} tearing {%2}!／{%1} the {%2} collapses! 等）；只用在佔位裡（inner）；結尾「and」寫死，部位名有逗號（first toe, right foot）時清單句型才不會先切開
+{%1} bends {%2} with Your {%3}	{1}用你的{3}扳彎了{2}	{1}用你的{3}扳弯了{2}	inner	FUN_140646f00 868857 扳折關節；冒險模式玩家用自己的部位；打擊報告前綴，由 combat_02 的外框接傷勢（{%1}, tearing {%2}!／{%1} tearing {%2}!／{%1} the {%2} collapses! 等）；只用在佔位裡（inner）
+{%1} bends {%2} with Your {%3},	{1}用你的{3}扳彎了{2}，	{1}用你的{3}扳弯了{2}，	inner	FUN_140646f00 868857 扳折關節；冒險模式玩家用自己的部位；打擊報告前綴，由 combat_02 的外框接傷勢（{%1}, tearing {%2}!／{%1} tearing {%2}!／{%1} the {%2} collapses! 等）；只用在佔位裡（inner）；結尾「,」寫死，部位名有逗號（first toe, right foot）時清單句型才不會先切開
+{%1} bends {%2} with Your {%3} and	{1}用你的{3}扳彎了{2}，	{1}用你的{3}扳弯了{2}，	inner	FUN_140646f00 868857 扳折關節；冒險模式玩家用自己的部位；打擊報告前綴，由 combat_02 的外框接傷勢（{%1}, tearing {%2}!／{%1} tearing {%2}!／{%1} the {%2} collapses! 等）；只用在佔位裡（inner）；結尾「and」寫死，部位名有逗號（first toe, right foot）時清單句型才不會先切開
+{%1} bend {%2} with {~3}'s {%4}	{1}用{4}扳彎了{2}	{1}用{4}扳弯了{2}	inner	FUN_140646f00 868857 扳折關節；{2} 對方部位、{3}'s {4} 自己的部位（'s 寫死：articles 的 {%1}'s {%2} 排在前面，會從最後一個 's 切開整個前綴）；冒險模式 You；打擊報告前綴，由 combat_02 的外框接傷勢（{%1}, tearing {%2}!／{%1} tearing {%2}!／{%1} the {%2} collapses! 等）；只用在佔位裡（inner）
+{%1} bend {%2} with {~3}'s {%4},	{1}用{4}扳彎了{2}，	{1}用{4}扳弯了{2}，	inner	FUN_140646f00 868857 扳折關節；{2} 對方部位、{3}'s {4} 自己的部位（'s 寫死：articles 的 {%1}'s {%2} 排在前面，會從最後一個 's 切開整個前綴）；冒險模式 You；打擊報告前綴，由 combat_02 的外框接傷勢（{%1}, tearing {%2}!／{%1} tearing {%2}!／{%1} the {%2} collapses! 等）；只用在佔位裡（inner）；結尾「,」寫死，部位名有逗號（first toe, right foot）時清單句型才不會先切開
+{%1} bend {%2} with {~3}'s {%4} and	{1}用{4}扳彎了{2}，	{1}用{4}扳弯了{2}，	inner	FUN_140646f00 868857 扳折關節；{2} 對方部位、{3}'s {4} 自己的部位（'s 寫死：articles 的 {%1}'s {%2} 排在前面，會從最後一個 's 切開整個前綴）；冒險模式 You；打擊報告前綴，由 combat_02 的外框接傷勢（{%1}, tearing {%2}!／{%1} tearing {%2}!／{%1} the {%2} collapses! 等）；只用在佔位裡（inner）；結尾「and」寫死，部位名有逗號（first toe, right foot）時清單句型才不會先切開
+{%1} bend {%2} with Your {%3}	{1}用你的{3}扳彎了{2}	{1}用你的{3}扳弯了{2}	inner	FUN_140646f00 868857 扳折關節；冒險模式玩家用自己的部位；冒險模式 You；打擊報告前綴，由 combat_02 的外框接傷勢（{%1}, tearing {%2}!／{%1} tearing {%2}!／{%1} the {%2} collapses! 等）；只用在佔位裡（inner）
+{%1} bend {%2} with Your {%3},	{1}用你的{3}扳彎了{2}，	{1}用你的{3}扳弯了{2}，	inner	FUN_140646f00 868857 扳折關節；冒險模式玩家用自己的部位；冒險模式 You；打擊報告前綴，由 combat_02 的外框接傷勢（{%1}, tearing {%2}!／{%1} tearing {%2}!／{%1} the {%2} collapses! 等）；只用在佔位裡（inner）；結尾「,」寫死，部位名有逗號（first toe, right foot）時清單句型才不會先切開
+{%1} bend {%2} with Your {%3} and	{1}用你的{3}扳彎了{2}，	{1}用你的{3}扳弯了{2}，	inner	FUN_140646f00 868857 扳折關節；冒險模式玩家用自己的部位；冒險模式 You；打擊報告前綴，由 combat_02 的外框接傷勢（{%1}, tearing {%2}!／{%1} tearing {%2}!／{%1} the {%2} collapses! 等）；只用在佔位裡（inner）；結尾「and」寫死，部位名有逗號（first toe, right foot）時清單句型才不會先切開
+{%1} shakes {%2} around by the {%3}	{1}扯住{2}的{3}猛甩	{1}扯住{2}的{3}猛甩	inner	FUN_140646f00 869148 咬住或抓住後甩動；{2} 對方稱呼、{3} 部位；打擊報告前綴，由 combat_02 的外框接傷勢（{%1}, tearing {%2}!／{%1} tearing {%2}!／{%1} the {%2} collapses! 等）；只用在佔位裡（inner）
+{%1} shakes {%2} around by the {%3},	{1}扯住{2}的{3}猛甩，	{1}扯住{2}的{3}猛甩，	inner	FUN_140646f00 869148 咬住或抓住後甩動；{2} 對方稱呼、{3} 部位；打擊報告前綴，由 combat_02 的外框接傷勢（{%1}, tearing {%2}!／{%1} tearing {%2}!／{%1} the {%2} collapses! 等）；只用在佔位裡（inner）；結尾「,」寫死，部位名有逗號（first toe, right foot）時清單句型才不會先切開
+{%1} shakes {%2} around by the {%3} and	{1}扯住{2}的{3}猛甩，	{1}扯住{2}的{3}猛甩，	inner	FUN_140646f00 869148 咬住或抓住後甩動；{2} 對方稱呼、{3} 部位；打擊報告前綴，由 combat_02 的外框接傷勢（{%1}, tearing {%2}!／{%1} tearing {%2}!／{%1} the {%2} collapses! 等）；只用在佔位裡（inner）；結尾「and」寫死，部位名有逗號（first toe, right foot）時清單句型才不會先切開
+{%1} shake {%2} around by the {%3}	{1}扯住{2}的{3}猛甩	{1}扯住{2}的{3}猛甩	inner	FUN_140646f00 869148 咬住或抓住後甩動；{2} 對方稱呼、{3} 部位；冒險模式 You；打擊報告前綴，由 combat_02 的外框接傷勢（{%1}, tearing {%2}!／{%1} tearing {%2}!／{%1} the {%2} collapses! 等）；只用在佔位裡（inner）
+{%1} shake {%2} around by the {%3},	{1}扯住{2}的{3}猛甩，	{1}扯住{2}的{3}猛甩，	inner	FUN_140646f00 869148 咬住或抓住後甩動；{2} 對方稱呼、{3} 部位；冒險模式 You；打擊報告前綴，由 combat_02 的外框接傷勢（{%1}, tearing {%2}!／{%1} tearing {%2}!／{%1} the {%2} collapses! 等）；只用在佔位裡（inner）；結尾「,」寫死，部位名有逗號（first toe, right foot）時清單句型才不會先切開
+{%1} shake {%2} around by the {%3} and	{1}扯住{2}的{3}猛甩，	{1}扯住{2}的{3}猛甩，	inner	FUN_140646f00 869148 咬住或抓住後甩動；{2} 對方稱呼、{3} 部位；冒險模式 You；打擊報告前綴，由 combat_02 的外框接傷勢（{%1}, tearing {%2}!／{%1} tearing {%2}!／{%1} the {%2} collapses! 等）；只用在佔位裡（inner）；結尾「and」寫死，部位名有逗號（first toe, right foot）時清單句型才不會先切開
+{%1} strangles {%2}	{1}勒緊了{2}	{1}勒紧了{2}	inner	FUN_140646f00 869370 勒頸；{2} 對方部位；打擊報告前綴，由 combat_02 的外框接傷勢（{%1}, tearing {%2}!／{%1} tearing {%2}!／{%1} the {%2} collapses! 等）；只用在佔位裡（inner）
+{%1} strangles {%2},	{1}勒緊了{2}，	{1}勒紧了{2}，	inner	FUN_140646f00 869370 勒頸；{2} 對方部位；打擊報告前綴，由 combat_02 的外框接傷勢（{%1}, tearing {%2}!／{%1} tearing {%2}!／{%1} the {%2} collapses! 等）；只用在佔位裡（inner）；結尾「,」寫死，部位名有逗號（first toe, right foot）時清單句型才不會先切開
+{%1} strangles {%2} and	{1}勒緊了{2}，	{1}勒紧了{2}，	inner	FUN_140646f00 869370 勒頸；{2} 對方部位；打擊報告前綴，由 combat_02 的外框接傷勢（{%1}, tearing {%2}!／{%1} tearing {%2}!／{%1} the {%2} collapses! 等）；只用在佔位裡（inner）；結尾「and」寫死，部位名有逗號（first toe, right foot）時清單句型才不會先切開
+{%1} strangle {%2}	{1}勒緊了{2}	{1}勒紧了{2}	inner	FUN_140646f00 869370 勒頸；{2} 對方部位；冒險模式 You；打擊報告前綴，由 combat_02 的外框接傷勢（{%1}, tearing {%2}!／{%1} tearing {%2}!／{%1} the {%2} collapses! 等）；只用在佔位裡（inner）
+{%1} strangle {%2},	{1}勒緊了{2}，	{1}勒紧了{2}，	inner	FUN_140646f00 869370 勒頸；{2} 對方部位；冒險模式 You；打擊報告前綴，由 combat_02 的外框接傷勢（{%1}, tearing {%2}!／{%1} tearing {%2}!／{%1} the {%2} collapses! 等）；只用在佔位裡（inner）；結尾「,」寫死，部位名有逗號（first toe, right foot）時清單句型才不會先切開
+{%1} strangle {%2} and	{1}勒緊了{2}，	{1}勒紧了{2}，	inner	FUN_140646f00 869370 勒頸；{2} 對方部位；冒險模式 You；打擊報告前綴，由 combat_02 的外框接傷勢（{%1}, tearing {%2}!／{%1} tearing {%2}!／{%1} the {%2} collapses! 等）；只用在佔位裡（inner）；結尾「and」寫死，部位名有逗號（first toe, right foot）時清單句型才不會先切開
+{%1} adjusts the grip of {~2}'s {%4} on {%3}.	{1}調整了{4}，重新抓牢{3}。	{1}调整了{4}，重新抓牢{3}。		FUN_140646f00 868448 調整抓握；{2} 自己的部位（The vulture's left wing）、{3} 對方部位；主詞自己的部位不重寫主人（{~n} 可省略）
+{%1} adjusts the grip of {%2} on {%3}.	{1}調整了{2}，重新抓牢{3}。	{1}调整了{2}，重新抓牢{3}。		FUN_140646f00 868448 調整抓握；{2} 自己的部位（The vulture's left wing）、{3} 對方部位
+{%1} adjust the grip of {~2}'s {%4} on {%3}.	{1}調整了{4}，重新抓牢{3}。	{1}调整了{4}，重新抓牢{3}。		FUN_140646f00 868448 調整抓握；{2} 自己的部位（The vulture's left wing）、{3} 對方部位；冒險模式 You；主詞自己的部位不重寫主人（{~n} 可省略）
+{%1} adjust the grip of {%2} on {%3}.	{1}調整了{2}，重新抓牢{3}。	{1}调整了{2}，重新抓牢{3}。		FUN_140646f00 868448 調整抓握；{2} 自己的部位（The vulture's left wing）、{3} 對方部位；冒險模式 You
+{%1} locks {%2} with {~3}'s {%4}!	{1}用{4}鎖住了{2}！	{1}用{4}锁住了{2}！		FUN_140646f00 868484 COMBAT_WRESTLE_LOCK 鎖關節；{2} 對方部位、{3} 自己的部位；攻擊者自己的部位（The X's 部位）不重寫主人：{~n} 可省略
+{%1} locks {%2} with {%3}!	{1}用{3}鎖住了{2}！	{1}用{3}锁住了{2}！		FUN_140646f00 868484 COMBAT_WRESTLE_LOCK 鎖關節；{2} 對方部位、{3} 自己的部位
+{%1} lock {%2} with {~3}'s {%4}!	{1}用{4}鎖住了{2}！	{1}用{4}锁住了{2}！		FUN_140646f00 868484 COMBAT_WRESTLE_LOCK 鎖關節；{2} 對方部位、{3} 自己的部位；冒險模式 You；攻擊者自己的部位（The X's 部位）不重寫主人：{~n} 可省略
+{%1} lock {%2} with {%3}!	{1}用{3}鎖住了{2}！	{1}用{3}锁住了{2}！		FUN_140646f00 868484 COMBAT_WRESTLE_LOCK 鎖關節；{2} 對方部位、{3} 自己的部位；冒險模式 You
+{%1} places a chokehold on {%2} with {~3}'s {%4}!	{1}用{4}勒住了{2}！	{1}用{4}勒住了{2}！		FUN_140646f00 868529 COMBAT_WRESTLE_CHOKEHOLD；攻擊者自己的部位（The X's 部位）不重寫主人：{~n} 可省略
+{%1} places a chokehold on {%2} with {%3}!	{1}用{3}勒住了{2}！	{1}用{3}勒住了{2}！		FUN_140646f00 868529 COMBAT_WRESTLE_CHOKEHOLD
+{%1} place a chokehold on {%2} with {~3}'s {%4}!	{1}用{4}勒住了{2}！	{1}用{4}勒住了{2}！		FUN_140646f00 868529 COMBAT_WRESTLE_CHOKEHOLD；冒險模式 You；攻擊者自己的部位（The X's 部位）不重寫主人：{~n} 可省略
+{%1} place a chokehold on {%2} with {%3}!	{1}用{3}勒住了{2}！	{1}用{3}勒住了{2}！		FUN_140646f00 868529 COMBAT_WRESTLE_CHOKEHOLD；冒險模式 You
+{%1} takes {%2} down by the {%3} with {~4}'s {%5}!	{1}用{5}抓住{3}，把{2}撂倒在地！	{1}用{5}抓住{3}，把{2}撂倒在地！		FUN_140646f00 868577 摔倒；{2} 對方稱呼、{3} 部位、{4} 自己的部位；攻擊者自己的部位（The X's 部位）不重寫主人：{~n} 可省略
+{%1} takes {%2} down by the {%3} with {%4}!	{1}用{4}抓住{3}，把{2}撂倒在地！	{1}用{4}抓住{3}，把{2}撂倒在地！		FUN_140646f00 868577 摔倒；{2} 對方稱呼、{3} 部位、{4} 自己的部位
+{%1} take {%2} down by the {%3} with {~4}'s {%5}!	{1}用{5}抓住{3}，把{2}撂倒在地！	{1}用{5}抓住{3}，把{2}撂倒在地！		FUN_140646f00 868577 摔倒；{2} 對方稱呼、{3} 部位、{4} 自己的部位；冒險模式 You；攻擊者自己的部位（The X's 部位）不重寫主人：{~n} 可省略
+{%1} take {%2} down by the {%3} with {%4}!	{1}用{4}抓住{3}，把{2}撂倒在地！	{1}用{4}抓住{3}，把{2}撂倒在地！		FUN_140646f00 868577 摔倒；{2} 對方稱呼、{3} 部位、{4} 自己的部位；冒險模式 You
+{%1} throws {%2} by the {%3} with {~4}'s {%5}!	{1}用{5}抓住{3}，把{2}摔了出去！	{1}用{5}抓住{3}，把{2}摔了出去！		FUN_140646f00 868617 摔出；攻擊者自己的部位（The X's 部位）不重寫主人：{~n} 可省略
+{%1} throws {%2} by the {%3} with {%4}!	{1}用{4}抓住{3}，把{2}摔了出去！	{1}用{4}抓住{3}，把{2}摔了出去！		FUN_140646f00 868617 摔出
+{%1} throw {%2} by the {%3} with {~4}'s {%5}!	{1}用{5}抓住{3}，把{2}摔了出去！	{1}用{5}抓住{3}，把{2}摔了出去！		FUN_140646f00 868617 摔出；冒險模式 You；攻擊者自己的部位（The X's 部位）不重寫主人：{~n} 可省略
+{%1} throw {%2} by the {%3} with {%4}!	{1}用{4}抓住{3}，把{2}摔了出去！	{1}用{4}抓住{3}，把{2}摔了出去！		FUN_140646f00 868617 摔出；冒險模式 You
+{%1} struggles in vain against the grip of {%2} on {~3}'s {%4}.	{1}徒勞地掙扎，{4}仍被{2}箝制著。	{1}徒劳地挣扎，{4}仍被{2}钳制着。		FUN_140646f00 868917 掙扎失敗；{2} 對方部位、{3} 自己的部位；主詞自己的部位不重寫主人（{~n} 可省略）
+{%1} struggles in vain against the grip of {%2} on {%3}.	{1}徒勞地掙扎，{3}仍被{2}箝制著。	{1}徒劳地挣扎，{3}仍被{2}钳制着。		FUN_140646f00 868917 掙扎失敗；{2} 對方部位、{3} 自己的部位
+{%1} struggle in vain against the grip of {%2} on {~3}'s {%4}.	{1}徒勞地掙扎，{4}仍被{2}箝制著。	{1}徒劳地挣扎，{4}仍被{2}钳制着。		FUN_140646f00 868917 掙扎失敗；{2} 對方部位、{3} 自己的部位；冒險模式 You；主詞自己的部位不重寫主人（{~n} 可省略）
+{%1} struggle in vain against the grip of {%2} on {%3}.	{1}徒勞地掙扎，{3}仍被{2}箝制著。	{1}徒劳地挣扎，{3}仍被{2}钳制着。		FUN_140646f00 868917 掙扎失敗；{2} 對方部位、{3} 自己的部位；冒險模式 You
+{%1} breaks the grip of {%2} on {~3}'s {%4}.	{1}掙脫了{2}，{4}脫困了。	{1}挣脱了{2}，{4}脱困了。		FUN_140646f00 868968／869306 COMBAT_WRESTLE_RELEASE_GRIP／RELEASE_LATCH 掙脫；{2} 對方部位、{3} 自己的部位；被抓或放手的一方自己的部位不重寫主人（{~n} 可省略）
+{%1} breaks the grip of {%2} on {%3}.	{1}掙脫了{2}，{3}脫困了。	{1}挣脱了{2}，{3}脱困了。		FUN_140646f00 868968／869306 COMBAT_WRESTLE_RELEASE_GRIP／RELEASE_LATCH 掙脫；{2} 對方部位、{3} 自己的部位
+{%1} break the grip of {%2} on {~3}'s {%4}.	{1}掙脫了{2}，{4}脫困了。	{1}挣脱了{2}，{4}脱困了。		FUN_140646f00 868968／869306 COMBAT_WRESTLE_RELEASE_GRIP／RELEASE_LATCH 掙脫；{2} 對方部位、{3} 自己的部位；冒險模式 You；被抓或放手的一方自己的部位不重寫主人（{~n} 可省略）
+{%1} break the grip of {%2} on {%3}.	{1}掙脫了{2}，{3}脫困了。	{1}挣脱了{2}，{3}脱困了。		FUN_140646f00 868968／869306 COMBAT_WRESTLE_RELEASE_GRIP／RELEASE_LATCH 掙脫；{2} 對方部位、{3} 自己的部位；冒險模式 You
+{%1} releases the grip of {~2}'s {%4} on {%3}.	{1}鬆開{4}，放開了{3}。	{1}松开{4}，放开了{3}。		FUN_140646f00 868968／869306 COMBAT_WRESTLE_RELEASE_GRIP 放開；{2} 自己的部位、{3} 對方部位；被抓或放手的一方自己的部位不重寫主人（{~n} 可省略）
+{%1} releases the grip of {%2} on {%3}.	{1}鬆開{2}，放開了{3}。	{1}松开{2}，放开了{3}。		FUN_140646f00 868968／869306 COMBAT_WRESTLE_RELEASE_GRIP 放開；{2} 自己的部位、{3} 對方部位
+{%1} release the grip of {~2}'s {%4} on {%3}.	{1}鬆開{4}，放開了{3}。	{1}松开{4}，放开了{3}。		FUN_140646f00 868968／869306 COMBAT_WRESTLE_RELEASE_GRIP 放開；{2} 自己的部位、{3} 對方部位；冒險模式 You；主詞自己的部位不重寫主人（{~n} 可省略）
+{%1} release the grip of {%2} on {%3}.	{1}鬆開{2}，放開了{3}。	{1}松开{2}，放开了{3}。		FUN_140646f00 868968／869306 COMBAT_WRESTLE_RELEASE_GRIP 放開；{2} 自己的部位、{3} 對方部位；冒險模式 You
+{%1} loosens the joint lock of {%2} on {~3}'s {%4}.	{1}掙鬆了{2}，{4}不再被鎖住。	{1}挣松了{2}，{4}不再被锁住。		FUN_140646f00 869039 掙鬆關節鎖；{2} 對方部位、{3} 自己的部位；主詞自己的部位不重寫主人（{~n} 可省略）
+{%1} loosens the joint lock of {%2} on {%3}.	{1}掙鬆了{2}，{3}不再被鎖住。	{1}挣松了{2}，{3}不再被锁住。		FUN_140646f00 869039 掙鬆關節鎖；{2} 對方部位、{3} 自己的部位
+{%1} loosen the joint lock of {%2} on {~3}'s {%4}.	{1}掙鬆了{2}，{4}不再被鎖住。	{1}挣松了{2}，{4}不再被锁住。		FUN_140646f00 869039 掙鬆關節鎖；{2} 對方部位、{3} 自己的部位；冒險模式 You；主詞自己的部位不重寫主人（{~n} 可省略）
+{%1} loosen the joint lock of {%2} on {%3}.	{1}掙鬆了{2}，{3}不再被鎖住。	{1}挣松了{2}，{3}不再被锁住。		FUN_140646f00 869039 掙鬆關節鎖；{2} 對方部位、{3} 自己的部位；冒險模式 You
+{%1} releases the joint lock of {~2}'s {%4} on {%3}.	{1}鬆開{4}，不再鎖住{3}。	{1}松开{4}，不再锁住{3}。		FUN_140646f00 869039 COMBAT_WRESTLE_RELEASE_LOCK 放開關節鎖；主詞自己的部位不重寫主人（{~n} 可省略）
+{%1} releases the joint lock of {%2} on {%3}.	{1}鬆開{2}，不再鎖住{3}。	{1}松开{2}，不再锁住{3}。		FUN_140646f00 869039 COMBAT_WRESTLE_RELEASE_LOCK 放開關節鎖
+{%1} release the joint lock of {~2}'s {%4} on {%3}.	{1}鬆開{4}，不再鎖住{3}。	{1}松开{4}，不再锁住{3}。		FUN_140646f00 869039 COMBAT_WRESTLE_RELEASE_LOCK 放開關節鎖；冒險模式 You；主詞自己的部位不重寫主人（{~n} 可省略）
+{%1} release the joint lock of {%2} on {%3}.	{1}鬆開{2}，不再鎖住{3}。	{1}松开{2}，不再锁住{3}。		FUN_140646f00 869039 COMBAT_WRESTLE_RELEASE_LOCK 放開關節鎖；冒險模式 You
+{%1} loosens the choke hold of {%2} on {~3}'s {%4}.	{1}掙鬆了{2}，{4}不再被勒住。	{1}挣松了{2}，{4}不再被勒住。		FUN_140646f00 869094 掙鬆勒頸（遊戲寫 choke hold 兩字）；主詞自己的部位不重寫主人（{~n} 可省略）
+{%1} loosens the choke hold of {%2} on {%3}.	{1}掙鬆了{2}，{3}不再被勒住。	{1}挣松了{2}，{3}不再被勒住。		FUN_140646f00 869094 掙鬆勒頸（遊戲寫 choke hold 兩字）
+{%1} loosen the choke hold of {%2} on {~3}'s {%4}.	{1}掙鬆了{2}，{4}不再被勒住。	{1}挣松了{2}，{4}不再被勒住。		FUN_140646f00 869094 掙鬆勒頸（遊戲寫 choke hold 兩字）；冒險模式 You；主詞自己的部位不重寫主人（{~n} 可省略）
+{%1} loosen the choke hold of {%2} on {%3}.	{1}掙鬆了{2}，{3}不再被勒住。	{1}挣松了{2}，{3}不再被勒住。		FUN_140646f00 869094 掙鬆勒頸（遊戲寫 choke hold 兩字）；冒險模式 You
+{%1} releases the choke hold of {~2}'s {%4} on {%3}.	{1}鬆開{4}，不再勒住{3}。	{1}松开{4}，不再勒住{3}。		FUN_140646f00 869094 放開勒頸；主詞自己的部位不重寫主人（{~n} 可省略）
+{%1} releases the choke hold of {%2} on {%3}.	{1}鬆開{2}，不再勒住{3}。	{1}松开{2}，不再勒住{3}。		FUN_140646f00 869094 放開勒頸
+{%1} release the choke hold of {~2}'s {%4} on {%3}.	{1}鬆開{4}，不再勒住{3}。	{1}松开{4}，不再勒住{3}。		FUN_140646f00 869094 放開勒頸；冒險模式 You；主詞自己的部位不重寫主人（{~n} 可省略）
+{%1} release the choke hold of {%2} on {%3}.	{1}鬆開{2}，不再勒住{3}。	{1}松开{2}，不再勒住{3}。		FUN_140646f00 869094 放開勒頸；冒險模式 You
+The {%1} is ripped away and remains in {%2}'s mouth!	{1}被扯了下來，還被{2}咬在嘴裡！	{1}被扯了下来，还被{2}叼在嘴里！		FUN_140646f00 869224 甩動扯下部位；{1} 部位、{2} 攻擊者稱呼（The stray dog）
+The {%1} is ripped away and remains in Your mouth!	{1}被扯了下來，還被你咬在嘴裡！	{1}被扯了下来，还被你叼在嘴里！		FUN_140646f00 869224 冒險模式
+The {%1} is ripped away and remains in {%2}'s grip!	{1}被扯了下來，還被{2}緊緊抓著！	{1}被扯了下来，还被{2}紧紧抓着！		FUN_140646f00 869224 用手等抓住時
+The {%1} is ripped away and remains in Your grip!	{1}被扯了下來，還被你緊緊抓著！	{1}被扯了下来，还被你紧紧抓着！		FUN_140646f00 869224 冒險模式
+{%1} passes out.	{1}昏了過去。	{1}昏了过去。		FUN_140646f00 869428 COMBAT_WRESTLE_STRANGLE_KO 被勒昏
+{%1} pinches {%2} with {~3}'s {%4}!	{1}用{4}掐了{2}！	{1}用{4}掐了{2}！		FUN_140646f00 868710 掐；打擊報告沒有傷勢時（前綴＋!）；攻擊者自己的部位（The X's 部位）不重寫主人：{~n} 可省略
+{%1} pinches {%2} with {%3}!	{1}用{3}掐了{2}！	{1}用{3}掐了{2}！		FUN_140646f00 868710 掐；打擊報告沒有傷勢時（前綴＋!）
+{%1} pinch {%2} with {~3}'s {%4}!	{1}用{4}掐了{2}！	{1}用{4}掐了{2}！		FUN_140646f00 868710 掐；打擊報告沒有傷勢時（前綴＋!）；冒險模式 You；攻擊者自己的部位（The X's 部位）不重寫主人：{~n} 可省略
+{%1} pinch {%2} with {%3}!	{1}用{3}掐了{2}！	{1}用{3}掐了{2}！		FUN_140646f00 868710 掐；打擊報告沒有傷勢時（前綴＋!）；冒險模式 You
+{%1} gouges {%2} with {~3}'s {%4}!	{1}用{4}挖了{2}！	{1}用{4}挖了{2}！		FUN_140646f00 868777 挖（眼睛等）；打擊報告沒有傷勢時（前綴＋!）；攻擊者自己的部位（The X's 部位）不重寫主人：{~n} 可省略
+{%1} gouges {%2} with {%3}!	{1}用{3}挖了{2}！	{1}用{3}挖了{2}！		FUN_140646f00 868777 挖（眼睛等）；打擊報告沒有傷勢時（前綴＋!）
+{%1} gouge {%2} with {~3}'s {%4}!	{1}用{4}挖了{2}！	{1}用{4}挖了{2}！		FUN_140646f00 868777 挖（眼睛等）；打擊報告沒有傷勢時（前綴＋!）；冒險模式 You；攻擊者自己的部位（The X's 部位）不重寫主人：{~n} 可省略
+{%1} gouge {%2} with {%3}!	{1}用{3}挖了{2}！	{1}用{3}挖了{2}！		FUN_140646f00 868777 挖（眼睛等）；打擊報告沒有傷勢時（前綴＋!）；冒險模式 You
+{%1} bends {%2} with {~3}'s {%4}!	{1}用{4}扳彎了{2}！	{1}用{4}扳弯了{2}！		FUN_140646f00 868857 扳折關節；打擊報告沒有傷勢時（前綴＋!）；攻擊者自己的部位（The X's 部位）不重寫主人：{~n} 可省略
+{%1} bends {%2} with {%3}!	{1}用{3}扳彎了{2}！	{1}用{3}扳弯了{2}！		FUN_140646f00 868857 扳折關節；打擊報告沒有傷勢時（前綴＋!）
+{%1} bend {%2} with {~3}'s {%4}!	{1}用{4}扳彎了{2}！	{1}用{4}扳弯了{2}！		FUN_140646f00 868857 扳折關節；打擊報告沒有傷勢時（前綴＋!）；冒險模式 You；攻擊者自己的部位（The X's 部位）不重寫主人：{~n} 可省略
+{%1} bend {%2} with {%3}!	{1}用{3}扳彎了{2}！	{1}用{3}扳弯了{2}！		FUN_140646f00 868857 扳折關節；打擊報告沒有傷勢時（前綴＋!）；冒險模式 You
+{%1} shakes {%2} around by the {%3}!	{1}扯住{2}的{3}猛甩！	{1}扯住{2}的{3}猛甩！		FUN_140646f00 869148 咬住或抓住後甩動；打擊報告沒有傷勢時（前綴＋!）
+{%1} shake {%2} around by the {%3}!	{1}扯住{2}的{3}猛甩！	{1}扯住{2}的{3}猛甩！		FUN_140646f00 869148 咬住或抓住後甩動；打擊報告沒有傷勢時（前綴＋!）；冒險模式 You
+{%1} strangles {%2}!	{1}勒緊了{2}！	{1}勒紧了{2}！		FUN_140646f00 869370 勒頸；打擊報告沒有傷勢時（前綴＋!）
+{%1} strangle {%2}!	{1}勒緊了{2}！	{1}勒紧了{2}！		FUN_140646f00 869370 勒頸；打擊報告沒有傷勢時（前綴＋!）；冒險模式 You
+{%1} is unable to break the grip of {%2} on {~3}'s {%4}!	{1}掙脫不了{2}，{4}仍被箝制著！	{1}挣脱不了{2}，{4}仍被钳制着！		FUN_141361370 2569350 NO_BREAK_GRIP；{2} 對方部位、{3} 自己的部位；被抓或放手的一方自己的部位不重寫主人（{~n} 可省略）
+{%1} is unable to break the grip of {%2} on {%3}!	{1}掙脫不了{2}，{3}仍被箝制著！	{1}挣脱不了{2}，{3}仍被钳制着！		FUN_141361370 2569350 NO_BREAK_GRIP；{2} 對方部位、{3} 自己的部位
+You are unable to break the grip of {%1} on {%2}!	你掙脫不了{1}，{2}仍被箝制著！	你挣脱不了{1}，{2}仍被钳制着！		FUN_141361370 2569350 NO_BREAK_GRIP 冒險模式
+{%1} breaks the grip of {%2} from {~3}'s {%4}!	{1}掙脫了{2}，{4}脫困了！	{1}挣脱了{2}，{4}脱困了！		FUN_141361370 2569350 BREAK_GRIP 掙脫；{2} 對方部位、{3} 自己的部位；被抓或放手的一方自己的部位不重寫主人（{~n} 可省略）
+{%1} breaks the grip of {%2} from {%3}!	{1}掙脫了{2}，{3}脫困了！	{1}挣脱了{2}，{3}脱困了！		FUN_141361370 2569350 BREAK_GRIP 掙脫；{2} 對方部位、{3} 自己的部位
+{%1} break the grip of {%2} from {~3}'s {%4}!	{1}掙脫了{2}，{4}脫困了！	{1}挣脱了{2}，{4}脱困了！		FUN_141361370 2569350 BREAK_GRIP 掙脫；{2} 對方部位、{3} 自己的部位；冒險模式 You；被抓或放手的一方自己的部位不重寫主人（{~n} 可省略）
+{%1} break the grip of {%2} from {%3}!	{1}掙脫了{2}，{3}脫困了！	{1}挣脱了{2}，{3}脱困了！		FUN_141361370 2569350 BREAK_GRIP 掙脫；{2} 對方部位、{3} 自己的部位；冒險模式 You
+{%1} releases the grip of {~2}'s {%4} from {%3}.	{1}鬆開{4}，放開了{3}。	{1}松开{4}，放开了{3}。		FUN_141361370 2569350 BREAK_GRIP 放開；{2} 自己的部位、{3} 對方部位；被抓或放手的一方自己的部位不重寫主人（{~n} 可省略）
+{%1} releases the grip of {%2} from {%3}.	{1}鬆開{2}，放開了{3}。	{1}松开{2}，放开了{3}。		FUN_141361370 2569350 BREAK_GRIP 放開；{2} 自己的部位、{3} 對方部位
+{%1} release the grip of {%2} from {%3}.	{1}鬆開{2}，放開了{3}。	{1}松开{2}，放开了{3}。		FUN_141361370 2569350 BREAK_GRIP 放開；{2} 自己的部位、{3} 對方部位；冒險模式 You
+{%1} jumps out of {%2}'s flight path!	{1}跳開躲過了{2}的飛行路線！	{1}跳开躲过了{2}的飞行路线！		FUN_140eadea0 2217444 躲開被拋飛的生物；{2} 飛來的生物稱呼
+{%1} jump out of {%2}'s flight path!	{1}跳開躲過了{2}的飛行路線！	{1}跳开躲过了{2}的飞行路线！		FUN_140eadea0 2217444 冒險模式 You
+{%1} jumps out of your flight path!	{1}跳開躲過了你的飛行路線！	{1}跳开躲过了你的飞行路线！		FUN_140eadea0 2217444 冒險模式：被拋飛的是玩家
+{%1} rolls out of {%2}'s flight path!	{1}翻滾躲開了{2}的飛行路線！	{1}翻滚躲开了{2}的飞行路线！		FUN_140eadea0 2217444 躲開被拋飛的生物；{2} 飛來的生物稱呼
+{%1} roll out of {%2}'s flight path!	{1}翻滾躲開了{2}的飛行路線！	{1}翻滚躲开了{2}的飞行路线！		FUN_140eadea0 2217444 冒險模式 You
+{%1} rolls out of your flight path!	{1}翻滾躲開了你的飛行路線！	{1}翻滚躲开了你的飞行路线！		FUN_140eadea0 2217444 冒險模式：被拋飛的是玩家
+{%1} scrambles out of {%2}'s flight path!	{1}連滾帶爬地躲開了{2}的飛行路線！	{1}连滚带爬地躲开了{2}的飞行路线！		FUN_140eadea0 2217444 躲開被拋飛的生物；{2} 飛來的生物稱呼
+{%1} scramble out of {%2}'s flight path!	{1}連滾帶爬地躲開了{2}的飛行路線！	{1}连滚带爬地躲开了{2}的飞行路线！		FUN_140eadea0 2217444 冒險模式 You
+{%1} scrambles out of your flight path!	{1}連滾帶爬地躲開了你的飛行路線！	{1}连滚带爬地躲开了你的飞行路线！		FUN_140eadea0 2217444 冒險模式：被拋飛的是玩家
+A major artery in the {%1} has been opened by the attack	{1}的大動脈被割開了	{1}的大动脉被割开了		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：第一項帶部位（只有第一項會帶 in the），供清單句型當 {%1}
+A major artery in the {%1} has been opened by the attack!	{1}的大動脈被割開了！	{1}的大动脉被割开了！		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：只有一項，帶部位
+An artery in the {%1} has been opened by the attack	{1}的動脈被割開了	{1}的动脉被割开了		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：第一項帶部位（只有第一項會帶 in the），供清單句型當 {%1}
+An artery in the {%1} has been opened by the attack!	{1}的動脈被割開了！	{1}的动脉被割开了！		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：只有一項，帶部位
+Many nerves in the {%1} have been severed	{1}的多條神經被切斷了	{1}的多条神经被切断了		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：第一項帶部位（只有第一項會帶 in the），供清單句型當 {%1}
+Many nerves in the {%1} have been severed!	{1}的多條神經被切斷了！	{1}的多条神经被切断了！		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：只有一項，帶部位
+A motor nerve in the {%1} has been severed	{1}的運動神經被切斷了	{1}的运动神经被切断了		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：第一項帶部位（只有第一項會帶 in the），供清單句型當 {%1}
+A motor nerve in the {%1} has been severed!	{1}的運動神經被切斷了！	{1}的运动神经被切断了！		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：只有一項，帶部位
+A sensory nerve in the {%1} has been severed	{1}的感覺神經被切斷了	{1}的感觉神经被切断了		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：第一項帶部位（只有第一項會帶 in the），供清單句型當 {%1}
+A sensory nerve in the {%1} has been severed!	{1}的感覺神經被切斷了！	{1}的感觉神经被切断了！		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：只有一項，帶部位
+A ligament in the {%1} has been torn	{1}的韌帶撕裂了	{1}的韧带撕裂了		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：第一項帶部位（只有第一項會帶 in the），供清單句型當 {%1}
+A ligament in the {%1} has been torn!	{1}的韌帶撕裂了！	{1}的韧带撕裂了！		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：只有一項，帶部位
+A ligament in the {%1} has been sprained	{1}的韌帶扭傷了	{1}的韧带扭伤了		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：第一項帶部位（只有第一項會帶 in the），供清單句型當 {%1}
+A ligament in the {%1} has been sprained!	{1}的韌帶扭傷了！	{1}的韧带扭伤了！		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：只有一項，帶部位
+A ligament in the {%1} has been bruised	{1}的韌帶挫傷了	{1}的韧带挫伤了		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：第一項帶部位（只有第一項會帶 in the），供清單句型當 {%1}
+A ligament in the {%1} has been bruised!	{1}的韌帶挫傷了！	{1}的韧带挫伤了！		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：只有一項，帶部位
+A tendon in the {%1} has been torn	{1}的肌腱撕裂了	{1}的肌腱撕裂了		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：第一項帶部位（只有第一項會帶 in the），供清單句型當 {%1}
+A tendon in the {%1} has been torn!	{1}的肌腱撕裂了！	{1}的肌腱撕裂了！		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：只有一項，帶部位
+A tendon in the {%1} has been strained	{1}的肌腱拉傷了	{1}的肌腱拉伤了		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：第一項帶部位（只有第一項會帶 in the），供清單句型當 {%1}
+A tendon in the {%1} has been strained!	{1}的肌腱拉傷了！	{1}的肌腱拉伤了！		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：只有一項，帶部位
+A tendon in the {%1} has been bruised	{1}的肌腱挫傷了	{1}的肌腱挫伤了		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：第一項帶部位（只有第一項會帶 in the），供清單句型當 {%1}
+A tendon in the {%1} has been bruised!	{1}的肌腱挫傷了！	{1}的肌腱挫伤了！		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：只有一項，帶部位
+{%1} and many nerves have been severed!	{1}，多條神經也被切斷了！	{1}，多条神经也被切断了！		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：最後一項（前面用 and）；中間項由 lists.tsv 的 {%1}, {%2} 接成「、」
+{%1} and a motor nerve has been severed!	{1}，運動神經也被切斷了！	{1}，运动神经也被切断了！		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：最後一項（前面用 and）；中間項由 lists.tsv 的 {%1}, {%2} 接成「、」
+{%1} and a sensory nerve has been severed!	{1}，感覺神經也被切斷了！	{1}，感觉神经也被切断了！		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：最後一項（前面用 and）；中間項由 lists.tsv 的 {%1}, {%2} 接成「、」
+{%1} and a ligament has been torn!	{1}，韌帶也撕裂了！	{1}，韧带也撕裂了！		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：最後一項（前面用 and）；中間項由 lists.tsv 的 {%1}, {%2} 接成「、」
+{%1} and a ligament has been sprained!	{1}，韌帶也扭傷了！	{1}，韧带也扭伤了！		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：最後一項（前面用 and）；中間項由 lists.tsv 的 {%1}, {%2} 接成「、」
+{%1} and a ligament has been bruised!	{1}，韌帶也挫傷了！	{1}，韧带也挫伤了！		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：最後一項（前面用 and）；中間項由 lists.tsv 的 {%1}, {%2} 接成「、」
+{%1} and a tendon has been torn!	{1}，肌腱也撕裂了！	{1}，肌腱也撕裂了！		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：最後一項（前面用 and）；中間項由 lists.tsv 的 {%1}, {%2} 接成「、」
+{%1} and a tendon has been strained!	{1}，肌腱也拉傷了！	{1}，肌腱也拉伤了！		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：最後一項（前面用 and）；中間項由 lists.tsv 的 {%1}, {%2} 接成「、」
+{%1} and a tendon has been bruised!	{1}，肌腱也挫傷了！	{1}，肌腱也挫伤了！		FUN_1400e56a0 0x1400e89ab COMBAT_STRIKE_DETAILS_2：最後一項（前面用 and）；中間項由 lists.tsv 的 {%1}, {%2} 接成「、」

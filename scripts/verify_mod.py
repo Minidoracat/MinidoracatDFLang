@@ -14,7 +14,7 @@
 4. 開頭空白：譯文開頭的空白數與原文相同（那是遊戲的縮排）
 5. 寬度：譯文格數不超過原文（CP437 字一格，其他字兩格），超出會蓋到旁邊的介面；句型只算樣板本身，
    佔位填入後超寬的情況由引擎在執行時退回英文。名稱檔（strings/names_*.tsv）至少可用 6 格：
-   短英文名（ogre、hydra、kiwi）的通行中文名多半是三個字。sentences_*、ann_*、speech_*.tsv 不限：人物頁、訪客說明、公告與說話句由引擎依框寬重新換行
+   短英文名（ogre、hydra、kiwi）的通行中文名多半是三個字。sentences_*、ann_*、speech_*、combat_*.tsv 不限：人物頁、訪客說明、公告、說話句與戰報由引擎依框寬重新換行
 6. 文字檔 UTF-8、無 BOM、LF（遊戲端逐位元組讀，BOM 與 \\r 會黏進原文或譯文）
 7. 字型：每種語言譯文與吉祥物名牌（語言標籤、作者名）用到的字，主字型或補字字型（temp/fonts/）至少一份有
 8. 吉祥物：art/mascot.png 是 8-bit RGBA PNG（引擎只讀這種）；每包的 mascot_label 是全形字
@@ -37,8 +37,8 @@ HEADER = ["en", "zh-Hant", "zh-Hans", "align", "note"]
 SCREEN_HEADER = ["en", "zh-Hant", "zh-Hans", "align", "row", "note"]
 HOOKS = ("addst", "addst_flag", "top_addst", "addcoloredst", "mtb_set_width", "add_anchored_tile", "wrap_text", "ctb_add_string")
 PACKAGE_SUFFIXES = {".txt", ".tsv", ".lua", ".dll", ".otf", ".md", ".png"}
-# {1}～{9}；{#1} 只收數字、{@1} 只收字典裡的字詞、{%1} 只收翻得出來的片段；譯文可寫 {1+時}（佔位譯文沒有時間、原因助詞結尾時補字）
-PLACEHOLDER = re.compile(r"\{[#@%]?([1-9])(?:\+([^{}]+))?\}")
+# {1}～{9}；{#1} 只收數字、{@1} 只收字典裡的字詞、{%1} 只收翻得出來的片段、{~1} 同 {1} 但譯文可省略；譯文可寫 {1+時}（佔位譯文沒有時間、原因助詞結尾時補字）
+PLACEHOLDER = re.compile(r"\{[#@%~]?([1-9])(?:\+([^{}]+))?\}")
 MARKUP = re.compile(r"\[(?:[RBP]|C:\d+:\d+:\d+)\]")  # 段落的換行與換色標記
 
 results: list[tuple[bool, str]] = []
@@ -66,7 +66,7 @@ def placeholder_problem(r: dict, langs: list[str]) -> str | None:
         return "原文佔位不能帶補字（+…）"
     if len(set(en)) != len(en):
         return "原文佔位重複"
-    if re.search(r"\{[#@%]?[1-9]\}\{[#@%]?[1-9]\}", r["en"]):
+    if re.search(r"\{[#@%~]?[1-9]\}\{[#@%~]?[1-9]\}", r["en"]):
         return "原文佔位相鄰"
     # 只有空白、標點夾著佔位的樣板（{1} {2}、{1}, {2}）會套到幾乎所有字串。有英文字、有限定佔位
     # （{#n} 只收數字、{@n} 只收字典字詞、{%n} 只收翻得出來的片段），或開頭、結尾是固定字（外框 -{1}-、後綴 {1}, ♂）時，套得到的字串有限
@@ -74,8 +74,8 @@ def placeholder_problem(r: dict, langs: list[str]) -> str | None:
     edges = bool(lits[0].strip() or lits[-1].strip())
     if not re.search(r"[A-Za-z]", template(r["en"])) and not re.search(r"\{[#@%][1-9]\}", r["en"]) and not edges:
         return "原文樣板沒有英文字、限定佔位或頭尾固定字，會套到幾乎所有字串"
-    # 譯文每個佔位最多一次、都要是原文有的；原文的佔位除了 {@n} 都要用到（中文常省略重複的代名詞主詞）
-    optional = set(re.findall(r"\{@([1-9])\}", r["en"]))
+    # 譯文每個佔位最多一次、都要是原文有的；原文的佔位除了 {@n}、{~n} 都要用到（中文常省略重複的代名詞主詞、攻擊者自己的部位的主人）
+    optional = set(re.findall(r"\{[@~]([1-9])\}", r["en"]))
     for lang in langs:
         zh = [m.group(1) for m in PLACEHOLDER.finditer(r[lang])]
         if r[lang] and (len(set(zh)) != len(zh) or not set(zh) <= set(en) or not set(en) - optional <= set(zh)):
@@ -124,15 +124,15 @@ def main() -> int:
               if r[lang] and leading_spaces(r[lang]) != leading_spaces(r["en"])]
     check(not indent, "譯文開頭空白與原文相同", indent)
     def room(r: dict) -> int | None:
-        """譯文最多幾格；None 是不限：sentences_*、ann_*、speech_* 是人物頁、訪客說明、公告與說話句，引擎依框寬重新換行"""
-        if r["file"].split("/")[1].startswith(("sentences_", "ann_", "speech_")):
+        """譯文最多幾格；None 是不限：sentences_*、ann_*、speech_*、combat_* 是人物頁、訪客說明、公告、說話句與戰報，引擎依框寬重新換行"""
+        if r["file"].split("/")[1].startswith(("sentences_", "ann_", "speech_", "combat_")):
             return None
         en = cells(template(r["en"]))
         return max(en, 6) if r["file"].startswith("strings/names_") else en
 
     wide = [f"{r['file']}: {r['en']!r} [{lang}] {cells(template(r[lang]))}>{room(r)}"
             for r in rows for lang in langs if r[lang] and room(r) is not None and cells(template(r[lang])) > room(r)]
-    check(not wide, "譯文格數不超過原文（sentences_*、ann_*、speech_* 不限）", wide)
+    check(not wide, "譯文格數不超過原文（sentences_*、ann_*、speech_*、combat_* 不限）", wide)
     marks = [f"{r['file']}: {r['en'][:60]!r} [{lang}]" for r in rows for lang in langs
              if r[lang] and sorted(MARKUP.findall(r[lang])) != sorted(MARKUP.findall(r["en"]))]
     check(not marks, "段落標記（[R]、[B]、[P]、[C:…]）與原文一致", marks)

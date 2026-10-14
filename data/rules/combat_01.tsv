@@ -1,0 +1,114 @@
+en	zh-Hant	zh-Hans	align	note
+{%1} has moved out of range!	{1}移出了攻擊範圍！	{1}移出了攻击范围！		FUN_14064a350 869948 冒險模式玩家攻擊時對象走出範圍；{1} 生物稱呼
+{%1} strikes at {%2} but the shot is deftly parried by {%3}!	{1}攻向{2}，但這一擊被{3}俐落地招架了！	{1}攻向{2}，但这一击被{3}利落地招架了！		FUN_14064a350 870596 招架；{3} 物品名（FUN_140c65450）
+You strike at {%1} but the shot is deftly parried by {%2}!	你攻向{1}，但這一擊被{2}俐落地招架了！	你攻向{1}，但这一击被{2}利落地招架了！		FUN_14064a350 870596 招架（冒險模式玩家攻擊）
+{%1} strikes at {%2} but the shot is just barely parried by {%3}!	{1}攻向{2}，但這一擊被{3}勉強招架了！	{1}攻向{2}，但这一击被{3}勉强招架了！		FUN_14064a350 870596 招架；{3} 物品名（FUN_140c65450）
+You strike at {%1} but the shot is just barely parried by {%2}!	你攻向{1}，但這一擊被{2}勉強招架了！	你攻向{1}，但这一击被{2}勉强招架了！		FUN_14064a350 870596 招架（冒險模式玩家攻擊）
+{%1} strikes at {%2} but the shot is easily parried by {%3}!	{1}攻向{2}，但這一擊被{3}輕鬆地招架了！	{1}攻向{2}，但这一击被{3}轻松地招架了！		FUN_14064a350 870596 招架；{3} 物品名（FUN_140c65450）
+You strike at {%1} but the shot is easily parried by {%2}!	你攻向{1}，但這一擊被{2}輕鬆地招架了！	你攻向{1}，但这一击被{2}轻松地招架了！		FUN_14064a350 870596 招架（冒險模式玩家攻擊）
+{%1} strikes at {%2} but the shot is parried by {%3}!	{1}攻向{2}，但這一擊被{3}招架了！	{1}攻向{2}，但这一击被{3}招架了！		FUN_14064a350 870596 招架；{3} 物品名（FUN_140c65450）
+You strike at {%1} but the shot is parried by {%2}!	你攻向{1}，但這一擊被{2}招架了！	你攻向{1}，但这一击被{2}招架了！		FUN_14064a350 870596 招架（冒險模式玩家攻擊）
+{%1} strikes at {%2} but the shot is blocked!	{1}攻向{2}，但這一擊被擋下了！	{1}攻向{2}，但这一击被挡下了！		FUN_14064a350 870765／871700 格擋（沒有盾牌名）
+You strike at {%1} but the shot is blocked!	你攻向{1}，但這一擊被擋下了！	你攻向{1}，但这一击被挡下了！		FUN_14064a350 870765／871700 格擋（玩家攻擊）
+{%1} strikes at {%2} but the shot is blocked with {~3}'s {%4}!	{1}攻向{2}，但這一擊被{4}擋下了！	{1}攻向{2}，但这一击被{4}挡下了！		FUN_14064a350 871700 格擋；{3} 盾牌等物品名；攻擊者自己的部位（The X's 部位）不重寫主人：{~n} 可省略
+{%1} strikes at {%2} but the shot is blocked with {%3}!	{1}攻向{2}，但這一擊被{3}擋下了！	{1}攻向{2}，但这一击被{3}挡下了！		FUN_14064a350 871700 格擋；{3} 盾牌等物品名
+You strike at {%1} but the shot is blocked with {~2}'s {%3}!	你攻向{1}，但這一擊被{3}擋下了！	你攻向{1}，但这一击被{3}挡下了！		FUN_14064a350 871700 格擋（玩家攻擊）；攻擊者自己的部位（The X's 部位）不重寫主人：{~n} 可省略
+You strike at {%1} but the shot is blocked with {%2}!	你攻向{1}，但這一擊被{2}擋下了！	你攻向{1}，但这一击被{2}挡下了！		FUN_14064a350 871700 格擋（玩家攻擊）
+{%1} blocks {%2}!	{1}擋下了{2}！	{1}挡下了{2}！		FUN_14064a350 871713 擋下投射物；{2} 是 The flying／spinning 物品
+{%1} blocks {%2} with {~3}'s {%4}!	{1}用{4}擋下了{2}！	{1}用{4}挡下了{2}！		FUN_14064a350 871713 擋下投射物；{3} 物品名；攻擊者自己的部位（The X's 部位）不重寫主人：{~n} 可省略
+{%1} blocks {%2} with {%3}!	{1}用{3}擋下了{2}！	{1}用{3}挡下了{2}！		FUN_14064a350 871713 擋下投射物；{3} 物品名
+You block {%1}!	你擋下了{1}！	你挡下了{1}！		FUN_14064a350 871713 擋下投射物（玩家）
+You block {%1} with {~2}'s {%3}!	你用{3}擋下了{1}！	你用{3}挡下了{1}！		FUN_14064a350 871713 擋下投射物（玩家）；攻擊者自己的部位（The X's 部位）不重寫主人：{~n} 可省略
+You block {%1} with {%2}!	你用{2}擋下了{1}！	你用{2}挡下了{1}！		FUN_14064a350 871713 擋下投射物（玩家）
+{%1} attacks {%2} but {@3} jumps away!	{1}攻擊{2}，但對方跳開了！	{1}攻击{2}，但对方跳开了！		FUN_14064a350 870876／871127 閃避（COMBAT_JUMP_DODGE_STRIKE）；{3} 是防守方 He/She/It（遊戲大寫照抄），譯文用「對方」
+You attack {%1} but {@2} jumps away!	你攻擊{1}，但對方跳開了！	你攻击{1}，但对方跳开了！		FUN_14064a350 870876／871127 閃避（玩家攻擊）
+{%1} attacks you but You jump away!	{1}攻擊你，但你跳開了！	{1}攻击你，但你跳开了！		FUN_14064a350 870876／871127 閃避（玩家閃避）
+{%1} jumps away from {%2}!	{1}跳開躲過了{2}！	{1}跳开躲过了{2}！		FUN_14064a350 871226 閃避；{2} 攻擊者稱呼或 The flying 物品；Combat03 的 away from the 物品 也走這條
+You jump away from {%1}!	你跳開躲過了{1}！	你跳开躲过了{1}！		FUN_14064a350 871226 閃避（玩家）
+{%1} jumps away!	{1}跳開了！	{1}跳开了！		FUN_140654d20 876027 閃開衝鋒（COMBAT_JUMP_DODGE_STRIKE）
+{%1} attacks {%2} but {@3} rolls away!	{1}攻擊{2}，但對方翻滾躲開了！	{1}攻击{2}，但对方翻滚躲开了！		FUN_14064a350 870876／871127 閃避（COMBAT_JUMP_DODGE_STRIKE）；{3} 是防守方 He/She/It（遊戲大寫照抄），譯文用「對方」
+You attack {%1} but {@2} rolls away!	你攻擊{1}，但對方翻滾躲開了！	你攻击{1}，但对方翻滚躲开了！		FUN_14064a350 870876／871127 閃避（玩家攻擊）
+{%1} attacks you but You roll away!	{1}攻擊你，但你翻滾躲開了！	{1}攻击你，但你翻滚躲开了！		FUN_14064a350 870876／871127 閃避（玩家閃避）
+{%1} rolls away from {%2}!	{1}翻滾躲開了{2}！	{1}翻滚躲开了{2}！		FUN_14064a350 871226 閃避；{2} 攻擊者稱呼或 The flying 物品；Combat03 的 away from the 物品 也走這條
+You roll away from {%1}!	你翻滾躲開了{1}！	你翻滚躲开了{1}！		FUN_14064a350 871226 閃避（玩家）
+{%1} rolls away!	{1}翻滾躲開了！	{1}翻滚躲开了！		FUN_140654d20 876027 閃開衝鋒（COMBAT_JUMP_DODGE_STRIKE）
+{%1} attacks {%2} but {@3} scrambles away!	{1}攻擊{2}，但對方連滾帶爬地躲開了！	{1}攻击{2}，但对方连滚带爬地躲开了！		FUN_14064a350 870876／871127 閃避（COMBAT_JUMP_DODGE_STRIKE）；{3} 是防守方 He/She/It（遊戲大寫照抄），譯文用「對方」
+You attack {%1} but {@2} scrambles away!	你攻擊{1}，但對方連滾帶爬地躲開了！	你攻击{1}，但对方连滚带爬地躲开了！		FUN_14064a350 870876／871127 閃避（玩家攻擊）
+{%1} attacks you but You scramble away!	{1}攻擊你，但你連滾帶爬地躲開了！	{1}攻击你，但你连滚带爬地躲开了！		FUN_14064a350 870876／871127 閃避（玩家閃避）
+{%1} scrambles away from {%2}!	{1}連滾帶爬地躲開了{2}！	{1}连滚带爬地躲开了{2}！		FUN_14064a350 871226 閃避；{2} 攻擊者稱呼或 The flying 物品；Combat03 的 away from the 物品 也走這條
+You scramble away from {%1}!	你連滾帶爬地躲開了{1}！	你连滚带爬地躲开了{1}！		FUN_14064a350 871226 閃避（玩家）
+{%1} scrambles away!	{1}連滾帶爬地躲開了！	{1}连滚带爬地躲开了！		FUN_140654d20 876027 閃開衝鋒（COMBAT_JUMP_DODGE_STRIKE）
+{%1} misses {%2}!	{1}沒打中{2}！	{1}没打中{2}！		FUN_14064a350 871039（COMBAT_DODGE）、FUN_140646f00 868104 共用
+You miss {%1}!	你沒打中{1}！	你没打中{1}！		FUN_14064a350 871039 玩家攻擊落空
+{%1} misses {%2} badly, blocked by the divine intervention of mighty {3}!	{1}完全沒打中{2}，強大的{3}以神力擋下了這一擊！	{1}完全没打中{2}，强大的{3}以神力挡下了这一击！		FUN_14064a350 871928 神明介入；{3} 神名（FUN_140b92f10）照原文
+You miss {%1} badly, blocked by the divine intervention of mighty {2}!	你完全沒打中{1}，強大的{2}以神力擋下了這一擊！	你完全没打中{1}，强大的{2}以神力挡下了这一击！		FUN_14064a350 871928 神明介入（玩家攻擊）
+{%1} strikes at {%2} but the shot is effortlessly deflected!	{1}攻向{2}，但這一擊被毫不費力地彈開了！	{1}攻向{2}，但这一击被毫不费力地弹开了！		FUN_14064a350 873268 偏開（沒有物品）
+You strike at {%1} but the shot is effortlessly deflected!	你攻向{1}，但這一擊被毫不費力地彈開了！	你攻向{1}，但这一击被毫不费力地弹开了！		FUN_14064a350 873268 偏開（玩家攻擊）
+{%1} strikes at {%2} but the shot is effortlessly deflected by {%3}!	{1}攻向{2}，但這一擊被{3}毫不費力地彈開了！	{1}攻向{2}，但这一击被{3}毫不费力地弹开了！		FUN_14064a350 873268 偏開；{3} 物品名
+You strike at {%1} but the shot is effortlessly deflected by {%2}!	你攻向{1}，但這一擊被{2}毫不費力地彈開了！	你攻向{1}，但这一击被{2}毫不费力地弹开了！		FUN_14064a350 873268 偏開（玩家攻擊）
+{%1} strikes at {%2} but the shot is narrowly deflected!	{1}攻向{2}，但這一擊被險險地彈開了！	{1}攻向{2}，但这一击被险险地弹开了！		FUN_14064a350 873268 偏開（沒有物品）
+You strike at {%1} but the shot is narrowly deflected!	你攻向{1}，但這一擊被險險地彈開了！	你攻向{1}，但这一击被险险地弹开了！		FUN_14064a350 873268 偏開（玩家攻擊）
+{%1} strikes at {%2} but the shot is narrowly deflected by {%3}!	{1}攻向{2}，但這一擊被{3}險險地彈開了！	{1}攻向{2}，但这一击被{3}险险地弹开了！		FUN_14064a350 873268 偏開；{3} 物品名
+You strike at {%1} but the shot is narrowly deflected by {%2}!	你攻向{1}，但這一擊被{2}險險地彈開了！	你攻向{1}，但这一击被{2}险险地弹开了！		FUN_14064a350 873268 偏開（玩家攻擊）
+{%1} strikes at {%2} but the shot is easily deflected!	{1}攻向{2}，但這一擊被輕鬆地彈開了！	{1}攻向{2}，但这一击被轻松地弹开了！		FUN_14064a350 873268 偏開（沒有物品）
+You strike at {%1} but the shot is easily deflected!	你攻向{1}，但這一擊被輕鬆地彈開了！	你攻向{1}，但这一击被轻松地弹开了！		FUN_14064a350 873268 偏開（玩家攻擊）
+{%1} strikes at {%2} but the shot is easily deflected by {%3}!	{1}攻向{2}，但這一擊被{3}輕鬆地彈開了！	{1}攻向{2}，但这一击被{3}轻松地弹开了！		FUN_14064a350 873268 偏開；{3} 物品名
+You strike at {%1} but the shot is easily deflected by {%2}!	你攻向{1}，但這一擊被{2}輕鬆地彈開了！	你攻向{1}，但这一击被{2}轻松地弹开了！		FUN_14064a350 873268 偏開（玩家攻擊）
+{%1} strikes at {%2} but the shot is deflected!	{1}攻向{2}，但這一擊被彈開了！	{1}攻向{2}，但这一击被弹开了！		FUN_14064a350 873268 偏開（沒有物品）
+You strike at {%1} but the shot is deflected!	你攻向{1}，但這一擊被彈開了！	你攻向{1}，但这一击被弹开了！		FUN_14064a350 873268 偏開（玩家攻擊）
+{%1} strikes at {%2} but the shot is deflected by {%3}!	{1}攻向{2}，但這一擊被{3}彈開了！	{1}攻向{2}，但这一击被{3}弹开了！		FUN_14064a350 873268 偏開；{3} 物品名
+You strike at {%1} but the shot is deflected by {%2}!	你攻向{1}，但這一擊被{2}彈開了！	你攻向{1}，但这一击被{2}弹开了！		FUN_14064a350 873268 偏開（玩家攻擊）
+{%1} bats {%2} aside!	{1}把{2}撥開了！	{1}把{2}拨开了！		FUN_14064a350 873297 撥開投射物；{2} The flying／spinning 物品
+{%1} bats {%2} aside with {~3}'s {%4}!	{1}用{4}把{2}撥開了！	{1}用{4}把{2}拨开了！		FUN_14064a350 873297 撥開投射物；{3} 物品名；攻擊者自己的部位（The X's 部位）不重寫主人：{~n} 可省略
+{%1} bats {%2} aside with {%3}!	{1}用{3}把{2}撥開了！	{1}用{3}把{2}拨开了！		FUN_14064a350 873297 撥開投射物；{3} 物品名
+You bat {%1} aside!	你把{1}撥開了！	你把{1}拨开了！		FUN_14064a350 873297 撥開投射物（玩家）
+You bat {%1} aside with {~2}'s {%3}!	你用{3}把{1}撥開了！	你用{3}把{1}拨开了！		FUN_14064a350 873297 撥開投射物（玩家）；攻擊者自己的部位（The X's 部位）不重寫主人：{~n} 可省略
+You bat {%1} aside with {%2}!	你用{2}把{1}撥開了！	你用{2}把{1}拨开了！		FUN_14064a350 873297 撥開投射物（玩家）
+{%1} bats {%2} out of the air!	{1}把{2}從空中打落了！	{1}把{2}从空中打落了！		FUN_14064a350 873297 撥開投射物；{2} The flying／spinning 物品
+{%1} bats {%2} out of the air with {~3}'s {%4}!	{1}用{4}把{2}從空中打落了！	{1}用{4}把{2}从空中打落了！		FUN_14064a350 873297 撥開投射物；{3} 物品名；攻擊者自己的部位（The X's 部位）不重寫主人：{~n} 可省略
+{%1} bats {%2} out of the air with {%3}!	{1}用{3}把{2}從空中打落了！	{1}用{3}把{2}从空中打落了！		FUN_14064a350 873297 撥開投射物；{3} 物品名
+You bat {%1} out of the air!	你把{1}從空中打落了！	你把{1}从空中打落了！		FUN_14064a350 873297 撥開投射物（玩家）
+You bat {%1} out of the air with {~2}'s {%3}!	你用{3}把{1}從空中打落了！	你用{3}把{1}从空中打落了！		FUN_14064a350 873297 撥開投射物（玩家）；攻擊者自己的部位（The X's 部位）不重寫主人：{~n} 可省略
+You bat {%1} out of the air with {%2}!	你用{2}把{1}從空中打落了！	你用{2}把{1}从空中打落了！		FUN_14064a350 873297 撥開投射物（玩家）
+{%1} lets the {%2} drop away as {@3} attacks.	{1}出手時鬆開了{2}，任它掉落。	{1}出手时松开了{2}，任它掉落。		FUN_14064a350 873826 攻擊時放掉手上的東西；{3} He/She/It 譯文省略
+You let the {%1} drop away as You attack.	你出手時鬆開了{1}，任它掉落。	你出手时松开了{1}，任它掉落。		FUN_14064a350 873826 同上（玩家）
+{%1} catches {%2} with {~3}'s {%4}!	{1}用{4}抓住了{2}！	{1}用{4}抓住了{2}！		FUN_14064a350 873995／874042 抓住攻來的肢體或武器；{2}{3} 所有格＋部位／物品（Your、its 亦可）；攻擊者自己的部位（The X's 部位）不重寫主人：{~n} 可省略
+{%1} catches {%2} with {%3}!	{1}用{3}抓住了{2}！	{1}用{3}抓住了{2}！		FUN_14064a350 873995／874042 抓住攻來的肢體或武器；{2}{3} 所有格＋部位／物品（Your、its 亦可）
+You catch {%1} with {~2}'s {%3}!	你用{3}抓住了{1}！	你用{3}抓住了{1}！		FUN_14064a350 873995／874042 同上（玩家）；攻擊者自己的部位（The X's 部位）不重寫主人：{~n} 可省略
+You catch {%1} with {%2}!	你用{2}抓住了{1}！	你用{2}抓住了{1}！		FUN_14064a350 873995／874042 同上（玩家）
+{%1}, {%2}, and {%3} are stunned by divine power!	{1}、{2}和{3}被神力震暈了！	{1}、{2}和{3}被神力震晕了！		FUN_14064a350 874235 神力震暈三人
+{%1} and {%2} are stunned by divine power!	{1}和{2}被神力震暈了！	{1}和{2}被神力震晕了！		FUN_14064a350 874247 神力震暈兩人
+{%1} is stunned by divine power!	{1}被神力震暈了！	{1}被神力震晕了！		FUN_14064a350 874255 神力震暈一人
+The force pulls the {%1}!	這股力道拉扯了{1}！	这股力道拉扯了{1}！		FUN_14064a350 873130–873144 打擊的力道傳到關節（COMBAT_STRIKE_DETAILS，FUN_1400e56a0 接上結尾）；{1} 身體部位
+The force twists the {%1}!	這股力道扭轉了{1}！	这股力道扭转了{1}！		FUN_14064a350 873130–873144 打擊的力道傳到關節（COMBAT_STRIKE_DETAILS，FUN_1400e56a0 接上結尾）；{1} 身體部位
+The force bends the {%1}!	這股力道彎折了{1}！	这股力道弯折了{1}！		FUN_14064a350 873130–873144 打擊的力道傳到關節（COMBAT_STRIKE_DETAILS，FUN_1400e56a0 接上結尾）；{1} 身體部位
+{%1} charges at {%2}!	{1}朝{2}衝了過去！	{1}朝{2}冲了过去！		FUN_140654d20 875709–875736 衝鋒（COMBAT_START_CHARGE）
+You charge at {%1}!	你朝{1}衝了過去！	你朝{1}冲了过去！		FUN_140654d20 875709–875736 衝鋒（玩家）
+{%1} leaps at {%2}!	{1}朝{2}撲了過去！	{1}朝{2}扑了过去！		FUN_140654d20 875709–875736 飛撲（COMBAT_START_CHARGE）
+You leap at {%1}!	你朝{1}撲了過去！	你朝{1}扑了过去！		FUN_140654d20 875709–875736 飛撲（玩家）
+{%1} charges at {%2} from behind!	{1}從背後朝{2}衝了過去！	{1}从背后朝{2}冲了过去！		FUN_140654d20 875709–875736 衝鋒（COMBAT_START_CHARGE）
+You charge at {%1} from behind!	你從背後朝{1}衝了過去！	你从背后朝{1}冲了过去！		FUN_140654d20 875709–875736 衝鋒（玩家）
+{%1} leaps at {%2} from behind!	{1}從背後朝{2}撲了過去！	{1}从背后朝{2}扑了过去！		FUN_140654d20 875709–875736 飛撲（COMBAT_START_CHARGE）
+You leap at {%1} from behind!	你從背後朝{1}撲了過去！	你从背后朝{1}扑了过去！		FUN_140654d20 875709–875736 飛撲（玩家）
+{%1} charges at {%2} from the side!	{1}從側面朝{2}衝了過去！	{1}从侧面朝{2}冲了过去！		FUN_140654d20 875709–875736 衝鋒（COMBAT_START_CHARGE）
+You charge at {%1} from the side!	你從側面朝{1}衝了過去！	你从侧面朝{1}冲了过去！		FUN_140654d20 875709–875736 衝鋒（玩家）
+{%1} leaps at {%2} from the side!	{1}從側面朝{2}撲了過去！	{1}从侧面朝{2}扑了过去！		FUN_140654d20 875709–875736 飛撲（COMBAT_START_CHARGE）
+You leap at {%1} from the side!	你從側面朝{1}撲了過去！	你从侧面朝{1}扑了过去！		FUN_140654d20 875709–875736 飛撲（玩家）
+{%1} looks surprised by the ferocity of {%2}'s onslaught!	{1}被{2}兇猛的攻勢嚇了一跳！	{1}被{2}凶猛的攻势吓了一跳！		FUN_140654d20 875764 衝鋒嚇到對手；{2} 攻擊者稱呼
+{%1} looks surprised by the ferocity of Your onslaught!	{1}被你兇猛的攻勢嚇了一跳！	{1}被你凶猛的攻势吓了一跳！		FUN_140654d20 875764 同上（玩家衝鋒；遊戲大寫 Your 照抄）
+You are surprised by the ferocity of {%1}'s onslaught!	你被{1}兇猛的攻勢嚇了一跳！	你被{1}凶猛的攻势吓了一跳！		FUN_140654d20 875764 同上（玩家被衝鋒）
+{%1} collides with {%2}!	{1}撞上了{2}！	{1}撞上了{2}！		FUN_140654d20 876196 衝鋒相撞（COMBAT_CHARGE_COLLISION）
+You collide with {%1}!	你撞上了{1}！	你撞上了{1}！		FUN_140654d20 876192 衝鋒相撞（玩家）
+{%1} is knocked over and tumbles backward!	{1}被撞倒，向後翻滾！	{1}被撞倒，向后翻滚！		FUN_140654d20 876307／876704 撞倒（COMBAT_CHARGE_DEFENDER_TUMBLES 等）
+{%1} is knocked over!	{1}被撞倒了！	{1}被撞倒了！		FUN_140654d20 876394／876704 撞倒
+{%1} bounces backward!	{1}被彈了回去！	{1}被弹了回去！		FUN_140654d20 876448 衝鋒被彈回
+flying {%1}	飛來的{1}	飞来的{1}	inner	FUN_14064a350 870037 投射物稱呼 The flying 物品；只用在佔位裡
+spinning {%1}	旋轉飛來的{1}	旋转飞来的{1}	inner	FUN_14064a350 870032 投射物稱呼 The spinning 物品；只用在佔位裡
+its {%1}	{1}	{1}	inner	FUN_14064a350 870042 投射物的所有格 its＋物品（catches its iron bolt）；只用在佔位裡
+The force pulls the {%1}	這股力道拉扯了{1}	这股力道拉扯了{1}	inner	FUN_14064a350 873130–873144 前綴：給 combat_02 的傷勢外框（{%1}, bruising {%2}! 等）當 {%1}；只用在佔位裡
+The force twists the {%1}	這股力道扭轉了{1}	这股力道扭转了{1}	inner	FUN_14064a350 873130–873144 前綴：給 combat_02 的傷勢外框（{%1}, bruising {%2}! 等）當 {%1}；只用在佔位裡
+The force bends the {%1}	這股力道彎折了{1}	这股力道弯折了{1}	inner	FUN_14064a350 873130–873144 前綴：給 combat_02 的傷勢外框（{%1}, bruising {%2}! 等）當 {%1}；只用在佔位裡
+{%1} skids along the ground	{1}在地上擦撞	{1}在地上擦撞	inner	FUN_1400e56a0 撞擊（被摔、被撞倒）：前綴，給傷勢外框（{%1}, bruising {%2}! 等）當 {%1}；只用在佔位裡（第八輪實機）
+{%1} takes the full force of the impact	{1}承受了全部的撞擊力道	{1}承受了全部的撞击力道	inner	同上：撞擊的部位
+{%1} skids along the ground!	{1}在地上擦撞！	{1}在地上擦撞！		同上，沒有傷勢時
+{%1} takes the full force of the impact!	{1}承受了全部的撞擊力道！	{1}承受了全部的撞击力道！		同上，沒有傷勢時
