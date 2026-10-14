@@ -7,7 +7,7 @@ Relations	人際關係	人际关系	c	人物資訊頁第一列分頁
 Groups	團體	团体	c	人物資訊頁分頁：所屬文明、據點政府等團體
 Thoughts	想法	想法	c	人物資訊頁分頁
 Personality	性格	性格	c	人物資訊頁分頁
-Disdains decorum	不拘禮節	不拘礼节		概況頁性格摘要標籤（價值觀：輕視禮節）
+Disdains decorum	輕視禮節	轻视礼节		概況頁性格摘要標籤（價值觀）；與 unit_values.tsv 的「輕視X」句式一致
 Patient	有耐心	有耐心		概況頁性格摘要標籤（特質）；醫療的 patient 只出現在較長字串（Seek Patient for …），單獨的 Patient 只有這個
 Vengeful	記仇	记仇		概況頁性格摘要標籤（特質）
 Wasteful	浪費	浪费		概況頁性格摘要標籤：使用資源不節省

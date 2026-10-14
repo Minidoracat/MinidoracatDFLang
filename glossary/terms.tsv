@@ -160,11 +160,11 @@ stone use	石材用途	石材用途	game	approved
 economic stone	經濟石材	经济石材	game	approved		
 magma-safe	耐熔岩	耐熔岩	game	approved		
 artifact	神器	神器	game	draft		settings.tsv「Enable artifact moods」譯「啟用奇異心境」，不含「神器」
-symbol	象徵物	象征物	game	draft		embark.tsv「Group Symbol」譯「隊伍標誌」；「is the symbol of」「symbols of office」是象徵
+symbol	象徵物	象征物	game	draft		embark.tsv「Group Symbol」譯「隊伍標誌」、提示框「Change the squad's symbol」譯「小隊的標誌」；「is the symbol of」「symbols of office」是象徵
 named object	命名物品	命名物品	game	approved		
 written content	著作	著作	game	approved		
 object	物品	物品	game	draft		「Object testing arena」物件、「Cleaning game objects」遊戲物件、tutorial「interact with objects」物體
-location	場所	场所	game	draft		「embark location」出發地點、「Inaccessible mission location」
+location	場所	场所	game	draft		「embark location」出發地點、「Inaccessible mission location」；提示框「the announcement's location」地點、「Recenter on this location」「recenter hotkey locations」位置
 burrow	活動區	活动区	game	approved	dfzh-wiki	
 farm plot	農田	农田	game	approved		教學段落的 Farmplot 寫成一個字，整詞比對抓不到；要涵蓋就另加 farmplot 一列
 siege engine	攻城器械	攻城器械	game	approved		
@@ -206,7 +206,7 @@ well	水井	水井	game	draft		副詞：「as well」「well-suited to the hunt�
 lever	拉桿	拉杆	game	approved		
 pressure plate	壓力板	压力板	game	approved		
 cage	籠子	笼子	game	approved		
-track	軌道	轨道	game	draft		音樂「Track playing:」「Last track:」是曲目
+track	軌道	轨道	game	draft		音樂「Track playing:」「Last track:」是曲目；「Toggle track view」「Freshest track」是生物足跡
 minecart	礦車	矿车	game	approved		
 route	路線	路线	game	approved		
 floodgate	水閘	水闸	game	approved		
@@ -264,3 +264,42 @@ Boulder	石塊	石块	game	approved
 Track stop	軌道停靠站	轨道停靠站	game	approved		
 Traction bench	牽引床	牵引床	game	approved		
 Ashery	製灰工坊|製灰坊	制灰工坊|制灰坊	game	approved		標籤放不下全名時用「製灰坊」
+Dabbling	入門	入门	skill	approved		技能等級 0；「等級＋技能名詞」見 rules/professions.tsv，例：Dabbling Miner 入門礦工
+Novice	新手	新手	skill	approved		技能等級 1
+Adequate	合格	合格	skill	approved		技能等級 2
+Competent	稱職	称职	skill	approved		技能等級 3
+Skilled	熟練	熟练	skill	approved		技能等級 4
+Proficient	純熟	纯熟	skill	approved		技能等級 5
+Talented	出色	出色	skill	approved		技能等級 6
+Adept	老練	老练	skill	approved		技能等級 7
+Expert	專家	专家	skill	approved		技能等級 8
+Professional	資深	资深	skill	approved		技能等級 9
+Accomplished	傑出	杰出	skill	approved		技能等級 10；比 Great「卓越」低一級
+Great	卓越	卓越	skill	draft		技能等級 11；「great beast」巨獸等一般形容詞不用
+Master	大師	大师	skill	draft		技能等級 12；「Master Volume」主音量、「Master Thief」神偷不用
+High Master	高級大師	高级大师	skill	approved		技能等級 13
+Grand Master	特級大師	特级大师	skill	approved		技能等級 14
+Legendary	傳奇	传奇	skill	approved		技能等級 15；再往上是「傳奇+1」到「傳奇+5」
+Rusty	生疏	生疏	skill	approved		技能退步的後綴；V Rusty 是「很生疏」
+Doctor	醫師	医师	skill	approved		職業；chief medical dwarf 是「首席醫師」
+Tavern Keeper	酒館老闆	酒馆老板	title	approved		酒館職務，替客人送酒
+lieutenant	副將	副将	title	approved		raws：由 general 任命、指揮 captain，所以是將軍＞副將＞隊長
+captain	隊長	队长	title	approved		captain of the guard 衛隊長、militia captain 民兵隊長也含「隊長」
+general	將軍	将军	title	draft		設定分頁「General」一般、「general information」一般資訊
+champion	勇士	勇士	title	approved		
+Dungeon Master	地牢總管	地牢总管	title	approved		管理馴獸的貴族
+outpost liaison	前哨站聯絡人	前哨站联络人	title	approved		
+Performer	表演者	表演者	title	approved		酒館職務
+fell mood	凶邪心境	凶邪心境	game	approved		奇異心境的一種
+macabre mood	陰森心境	阴森心境	game	approved		奇異心境的一種
+fey mood	癡迷心境	痴迷心境	game	approved		奇異心境的一種；不用「著魔」，免得和 possessed「附身」混淆
+secretive mood	隱密心境	隐秘心境	game	approved		奇異心境的一種
+possessed	附身	附身	game	draft		奇異心境的一種；possessed 也有「擁有」義
+kiln	窯爐	窑炉	game	approved		
+glass furnace	玻璃熔爐	玻璃熔炉	game	approved		
+gear assembly	齒輪組	齿轮组	game	approved		
+trap component	陷阱零件	陷阱零件	game	approved		簡中也用「零件」，和 Ballista parts「弩炮零件」一致
+cage trap	籠子陷阱	笼子陷阱	game	approved		
+weapon trap	武器陷阱	武器陷阱	game	approved		
+spatter	汙漬	污渍	game	approved		血跡、嘔吐物等灑在地上的東西
+blueprint	藍圖	蓝图	ui	approved		非藍圖的 standard 模式譯「標準」

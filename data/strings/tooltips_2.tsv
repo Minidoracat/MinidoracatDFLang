@@ -1,0 +1,93 @@
+en	zh-Hant	zh-Hans	align	note
+Your citizens will collect clay at this zone if a clay floor or clay wall is included.  This task is initiated manually at the kiln.	若區域內有黏土地板或黏土牆，居民會在此採集黏土。這項工作要在窯爐手動下令。	区域内有黏土地板或黏土墙时，居民会在此采集黏土。这项工作需要在窑炉手动下令。		黏土區；kiln 窯爐／窑炉
+This important zone is where your citizens will gather to socialize.  Crucially, the meeting area is where locations such as taverns, temples, hospitals, and the like are established.	這是居民聚集交際的重要區域。更關鍵的是，酒館、神殿、醫院等場所都要在集會區上建立。	这是居民聚集社交的重要区域。关键在于，酒馆、神殿、医院等场所都要在集会区上建立。		集會區
+Animals that are capable of being trained receive their training at this zone once they have been assigned a trainer from the Pets/Livestock menu.  Generally, a piece of meat is required.	在「寵物／牲畜」選單為可訓練的動物指派馴獸師後，會在此區域接受訓練。通常需要一塊肉。	在“宠物/牲畜”菜单中为能够训练的动物分配驯兽师之后，会到这个区域接受训练。一般需要一块肉。		動物訓練區
+Your citizens will sleep in bedrooms.  It should include a bed!  Try to enclose it with walls and/or doors.  Do not overlap with other rooms.	居民會在臥室睡覺。臥室裡要有床！盡量用牆壁或門把它圍起來。不要和其他房間重疊。	居民会在卧室睡觉。卧室里得有床！尽量用墙壁或门把它围起来。不要与其他房间重叠。		臥室
+Your citizens will eat at this zone.  When not assigned to a particular citizen, citizens without their own dining hall will eat here.  Tables and adjacent chairs should be included.	居民會在此區域用餐。未將此區域指派給特定居民時，沒有專屬餐廳的居民都會來這裡吃飯。區域內應有桌子與相鄰的椅子。	居民会在这个区域用餐。未将该区域分配给特定居民时，没有自己餐厅的居民都会来这里吃饭。区域内应有桌子和相邻的椅子。		餐廳
+An office or study is required for certain official tasks, such as approving work orders and bookkeeping.  A chair or throne is required for these functions.	某些公務需要辦公室或書房，例如審核工作指令與記帳。這些用途需要一張椅子或王座。	某些公务需要办公室或书房，例如审核工作订单和记账。这些功能需要一把椅子或王座。		辦公室；approving 與下方 validated 同譯審核
+Your archers can train in this zone if there is an archery target included.	區域內有箭靶時，射手可在此訓練。	区域内有箭靶时，射手可以在此训练。		射箭場
+Squads should be assigned to a barracks.  The squad can be set to train, sleep, and store equipment there.	小隊應指派到營房。可設定小隊在營房訓練、睡覺與存放裝備。	小队应分配到营房。可以设置小队在营房训练、睡觉和存放装备。		營房
+Dormitories should include multiple beds and will not belong to a particular citizen.	宿舍應放置多張床，不屬於特定居民。	宿舍应放置多张床，不归属于特定居民。		宿舍
+Prisoners convicted in the Justice menu can be incarcerated at a chain or metal cage in the dungeon zone.	在「司法」選單定罪的囚犯，可以用地牢區域裡的鎖鏈或金屬籠子關押。	在“司法”菜单中定罪的囚犯，可以用地牢区域里的锁链或金属笼子关押。		地牢
+Deceased citizens and pets can be laid to rest in a tomb.  It should include a coffin, casket, or sarcophagus.	過世的居民與寵物可以安葬在墓室。墓室裡應放置棺材、木棺或石棺。	去世的居民和宠物可以安葬在墓室里。墓室里应放置棺材、木棺或石棺。		墓室；遊戲裡木製棺材叫 casket、石製叫 sarcophagus
+Remove the burrow being painted permanently.  Also removes existing burrows!	永久移除正在繪製的活動區。既有的活動區也會一併移除！	永久移除正在绘制的活动区。已有的活动区也会一并移除！		活動區繪製
+Repaint this burrow.	重新繪製此活動區。	重新绘制该活动区。		活動區
+Erase a portion of this burrow.	擦除此活動區的一部分。	擦除该活动区的一部分。		活動區
+Remove this burrow permanently.	永久移除此活動區。	永久移除该活动区。		活動區
+Recenter on this burrow.	將視角移到此活動區。	将镜头移到该活动区。		活動區；Recenter 句式與 Tooltips4 對齊
+Toggle whether workshops can source materials from outside the burrow.	切換工坊是否可從活動區外取用材料。	切换工坊是否可以从活动区外取用材料。		活動區
+Suspend this burrow.  Assigned citizens will not respect burrow restrictions while a burrow is suspended, but all tasks within the burrow will still function.	暫停此活動區。活動區暫停期間，指派的居民不受活動區限制，但活動區內的所有工作仍照常運作。	暂停该活动区。活动区暂停期间，被分配的居民不受活动区限制，但活动区内的所有任务仍照常进行。		活動區
+Set hauling routes for minecarts.	設定礦車的搬運路線。	设置矿车的搬运路线。		礦車路線
+Finish setting hauling routes.	完成設定搬運路線。	完成设置搬运路线。		礦車路線
+Add a stop to this route.  Minecarts will move between stops when conditions are satisfied.	在此路線新增停靠站。條件滿足時，礦車會在停靠站之間移動。	为该路线添加停靠站。满足条件时，矿车会在停靠站之间移动。		礦車路線
+Assign a minecart to this route.  Only one vehicle can operate on each route.	指派礦車到此路線。每條路線只能有一輛車運行。	为该路线分配矿车。每条路线只能有一辆车运行。		礦車路線
+Name this route.	為此路線命名。	为该路线命名。		礦車路線
+Remove this route.	移除此路線。	移除该路线。		礦車路線
+Set the items desired by the minecart at this stop.  Items must be in a linked stockpile.	設定礦車在此停靠站要裝載的物品。物品必須在連結的倉儲區內。	设置矿车在该停靠站要装载的物品。物品必须位于关联的储物区内。		停靠站
+Link a stockpile to this stop.  Citizens will haul items to and from the minecart as you specify.  Items for the minecart must be specified using the desired items button to the left.	將倉儲區連結到此停靠站。居民會依你的指定，把物品搬上或搬下礦車。要裝上礦車的物品，必須用左側的「所需物品」按鈕指定。	将储物区关联到该停靠站。居民会按你的指定，把物品搬上或搬下矿车。要装上矿车的物品，必须通过左侧的“所需物品”按钮指定。		停靠站；desired items 按鈕
+Set conditions for the minecart to move on to the next stop.	設定礦車前往下一個停靠站的條件。	设置矿车前往下一个停靠站的条件。		停靠站
+Name this stop.	為停靠站命名。	为停靠站命名。		停靠站；原文 15 格，省「此」
+Remove this stop.	移除此停靠站。	移除该停靠站。		停靠站
+The assigned vehicle is at this stop.	指派的車輛正在此停靠站。	已分配的车辆正在该停靠站。		停靠站狀態
+The assigned vehicle is moving toward this stop.	指派的車輛正駛向此停靠站。	已分配的车辆正驶向该停靠站。		停靠站狀態
+The assigned vehicle wants to be at this stop but is not currently there.  A worker may be bringing it, or it may be stranded.	指派的車輛應停在此停靠站，但目前不在這裡。可能有工人正把它推過來，也可能卡在半路。	已分配的车辆应该停在该停靠站，但目前不在这里。可能有工人正在把它推过来，也可能被困在半路。		停靠站狀態
+Open the citizen information menu.	開啟居民資訊選單。	打开居民信息菜单。		左下資訊按鈕（生物）
+Open the task information menu.	開啟任務資訊選單。	打开任务信息菜单。		左下資訊按鈕（任務）
+Open the place information menu.	開啟設施資訊選單。	打开设施信息菜单。		左下資訊按鈕（設施）
+Open the labor menu.	開啟勞動選單。	打开劳动菜单。		左下資訊按鈕
+Open the work orders menu.	開啟工作指令選單。	打开工作订单菜单。		左下資訊按鈕
+Open the nobles and administrators menu.	開啟貴族與管理者選單。	打开贵族与管理人员菜单。		左下資訊按鈕
+Open the squad sidebar.	開啟小隊側邊欄。	打开小队侧边栏。		左下資訊按鈕
+Open the world screen.	開啟世界畫面。	打开世界画面。		左下資訊按鈕
+Open the justice menu.	開啟司法選單。	打开司法菜单。		左下資訊按鈕
+Toggle whether the stockpile allows plant and animal-based objects, regardless of other settings.	切換倉儲區是否允許植物或動物來源的物品，不受其他設定影響。	切换储物区是否允许植物或动物来源的物品，不受其他设置影响。		倉儲區設定
+Toggle whether the stockpile allows non-plant-and-animal-based objects, regardless of other settings.	切換倉儲區是否允許非植物、非動物來源的物品，不受其他設定影響。	切换储物区是否允许非植物、非动物来源的物品，不受其他设置影响。		倉儲區設定
+Toggle whether goods banned by export mandates are listed.	切換是否列出出口禁令所禁止的貨物。	切换是否列出出口禁令所禁止的货物。		貿易站；export mandate 出口禁令
+Sort by distance from the depot.	依與貿易站的距離排序。	按与贸易站的距离排序。		貿易站
+Sort by value.	依價值排序。	按价值排序。		貿易站
+(De)select all currently displayed items	全選／取消全選目前顯示的物品	全选/取消全选当前显示的物品		原文無句號
+Leave menu and recenter the view on the time.	關閉選單並將視角移到該物品。	关闭菜单并将镜头移到该物品。		物品清單；原文 the time 應是 the item 的筆誤
+Leave menu and open the item's sheet.	關閉選單並開啟該物品的資訊頁。	关闭菜单并打开该物品的信息页。		物品清單
+Toggle the forbidden status of the item.  Citizens will not use forbidden items or buildings.	切換物品的禁用狀態。居民不會使用禁用的物品或建築。	切换物品的禁用状态。居民不会使用禁用的物品或建筑。		物品清單；與 Tooltips3 對齊
+Toggle the dump status of the item.  Items are dumped in dumping zones.	切換物品的傾倒狀態。物品會傾倒在垃圾場。	切换物品的倾倒状态。物品会倾倒在垃圾场。		物品清單
+Toggle the melt status of the item.  Items are melted at any smelter.	切換物品的熔化狀態。物品會在任一冶煉爐熔化。	切换物品的熔化状态。物品会在任意冶炼炉熔化。		物品清單
+Toggle the visibility of the item.  Hidden items cannot be seen but citizens will still use them.	切換物品的可見性。隱藏的物品看不見，但居民仍會使用。	切换物品的可见性。隐藏的物品不可见，但居民仍会使用。		物品清單；與 Tooltips3 對齊
+Create a new work order.  Work orders are like workshop jobs but they are assigned to shops automatically and can be activated with various conditions.	建立新的工作指令。工作指令類似工坊的工作，但會自動分派給工坊，並可依各種條件啟動。	创建新的工作订单。工作订单类似工坊任务，但会自动分配给工坊，并可以根据各种条件启动。		工作指令
+This work order is active.	此工作指令已啟動。	该工作订单已启动。		工作指令狀態
+This work order is waiting for its next scheduled check.	此工作指令正在等待下一次排程檢查。	该工作订单正在等待下一次定期检查。		工作指令狀態
+This work order is checking its conditions for activation.	此工作指令正在檢查啟動條件。	该工作订单正在检查启动条件。		工作指令狀態
+This work order is ready to activate.	此工作指令已可啟動。	该工作订单已可启动。		工作指令狀態
+Set the maximum number of workshops that can be used by the work order.	設定此工作指令最多可使用的工坊數量。	设置该工作订单最多可使用的工坊数量。		工作指令
+This work order has been validated by the manager.	經理已審核此工作指令。	经理已审核该工作订单。		工作指令狀態
+This work order has not been validated by the manager.  A manager can be employed in the nobles and administrators menu, and they must have an assigned office where they will work to validate orders.	經理尚未審核此工作指令。可在「貴族與管理者」選單任命經理，經理還必須有指派的辦公室，才能在那裡審核指令。	经理尚未审核该工作订单。可以在“贵族与管理人员”菜单中任命经理，经理还必须有分配给他的办公室，才能在那里审核订单。		工作指令狀態
+Change the number of times the task will be performed.	變更此任務要執行的次數。	更改该任务要执行的次数。		工作指令
+Change the work order priority.  Work orders at the top of the list will use workshops first.	變更工作指令的優先順序。清單上方的工作指令會優先使用工坊。	更改工作订单的优先级。列表顶部的工作订单会优先使用工坊。		工作指令
+Set the conditions for work order activation.  This can involve needed materials, the current stock of products, or the completion of other work orders.	設定工作指令的啟動條件。條件可以是所需的材料、產品目前的庫存，或其他工作指令的完成狀況。	设置工作订单的启动条件。条件可以是所需材料、产品的当前库存，或其他工作订单的完成情况。		工作指令
+Set the material used or other details of the task.	設定任務使用的材料或其他細節。	设置任务使用的材料或其他细节。		工作指令
+Remove this work order.	移除此工作指令。	移除该工作订单。		工作指令
+Change the frequency that the conditions are checked.	變更檢查條件的頻率。	更改检查条件的频率。		工作指令
+Add a condition to the work order that checks the amount of some item.	為工作指令新增條件，檢查某種物品的數量。	为工作订单添加条件，检查某种物品的数量。		工作指令條件
+Make the activation of the work order depend on the status of another work order.	讓此工作指令的啟動取決於另一個工作指令的狀態。	让该工作订单的启动取决于另一个工作订单的状态。		工作指令條件
+Change the amount of the item being checked.	變更要檢查的物品數量。	更改所检查物品的数量。		工作指令條件
+Change the inequality of the condition.	變更條件的比較符號。	更改条件的比较符号。		工作指令條件；inequality 指大於、小於等比較
+Change the type of the item being checked.	變更要檢查的物品類型。	更改所检查物品的类型。		工作指令條件
+Change the material of the item being checked.	變更要檢查的物品材料。	更改所检查物品的材料。		工作指令條件
+Change the properties of the item being checked.  Many of these are obscure and rely on specific tasks, but certain properties like 'empty' can be used in many conditions.	變更要檢查的物品屬性。其中很多屬性很冷門，只用在特定任務上，但像「空的」這類屬性可用在許多條件中。	更改所检查物品的属性。其中许多属性比较冷门，只用于特定任务，但像“空的”这类属性可以用在很多条件中。		工作指令條件；'empty' 屬性
+Change whether the work order must be activated or completed to satisfy this condition.	變更該工作指令須已啟動或已完成，才算滿足此條件。	更改该工作订单须已启动还是已完成，才算满足此条件。		工作指令條件
+Remove this condition.	移除此條件。	移除该条件。		工作指令條件
+Leave this menu and recenter on this creature.	關閉選單並將視角移到此生物。	关闭菜单并将镜头移到该生物。		資訊面板清單
+Leave this menu and view this creature's sheet.	關閉選單並檢視此生物的資訊頁。	关闭菜单并查看该生物的信息页。		資訊面板清單
+Leave this menu and recenter on this object.	關閉選單並將視角移到此物品。	关闭菜单并将镜头移到该物品。		資訊面板清單
+Leave this menu and view this object's sheet.	關閉選單並檢視此物品的資訊頁。	关闭菜单并查看该物品的信息页。		資訊面板清單
+Leave this menu and recenter on this place.	關閉選單並將視角移到此設施。	关闭菜单并将镜头移到该设施。		資訊面板清單；place 同 Places 分頁「設施」
+Leave this menu and view this place's sheet or menu.	關閉選單並檢視此設施的資訊頁或選單。	关闭菜单并查看该设施的信息页或菜单。		資訊面板清單
+Leave this menu and recenter on the task's building.	關閉選單並將視角移到此任務所在的建築。	关闭菜单并将镜头移到该任务所在的建筑。		任務清單
+Set the details of this task, such as the material used.	設定此任務的細節，例如使用的材料。	设置该任务的细节，例如使用的材料。		任務清單
+View a detailed description of this activity.	檢視此活動的詳細說明。	查看该活动的详细说明。		任務清單
+Toggle whether the task will be repeated indefinitely.	切換此任務是否無限重複。	切换该任务是否无限重复。		任務清單
+Remove the current worker from the task.	移除此任務目前的工人。	移除该任务当前的工人。		任務清單
+Suspend this task.  This removes the worker.  The task can be unsuspended.	暫停此任務。這會移除工人。任務之後可以恢復。	暂停该任务。这会移除工人。任务之后可以恢复。		任務清單
+Cancel this task.	取消此任務。	取消该任务。		任務清單
+Assign a trainer to this creature.	為此生物指派馴獸師。	为该生物分配驯兽师。		寵物／牲畜
+Assign this creature as a work animal for a specific citizen or resident.	將此生物指派為特定公民或居民的工作動物。	将该生物分配为特定公民或居民的工作动物。		寵物／牲畜；原文區分 citizen／resident
+Toggle whether this creature will receive war training.  War animals have more lethal attacks.	切換此生物是否接受戰鬥訓練。戰鬥動物的攻擊更致命。	切换该生物是否接受战斗训练。战斗动物的攻击更致命。		寵物／牲畜；與 Tooltips3 對齊

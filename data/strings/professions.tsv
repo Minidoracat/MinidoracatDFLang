@@ -1,0 +1,151 @@
+en	zh-Hant	zh-Hans	align	note
+Woodworker	木工	木工		職業 WOODWORKER；職業分類：木材相關
+Stonecutter	石工	石工		職業 STONECUTTER；職業分類：石材相關
+Stone Carver	石雕師	石雕师		職業 STONE_CARVER
+Engraver	雕刻師	雕刻师		職業 ENGRAVER；engrave 雕刻
+Ranger	遊俠	游侠		職業 RANGER；職業分類：狩獵、陷阱、照顧動物
+Animal Caretaker	動物照護員	动物护理员		職業 ANIMAL_CARETAKER
+Animal Trainer	馴獸師	驯兽师		職業 ANIMAL_TRAINER
+Hunter	獵人	猎人		職業 HUNTER
+Animal Dissector	動物解剖師	动物解剖师		職業 ANIMAL_DISSECTOR
+Armorer	盔甲匠	盔甲匠		職業 ARMORER；同 Armorsmith
+Metalcrafter	金屬工藝師	金属工艺师		職業 METALCRAFTER
+Craftsman	工匠	工匠		職業 CRAFTSMAN
+Craftsdwarf	工匠	工匠		職業 CRAFTSMAN（矮人專用名稱）；Craftsman 的矮人名稱，譯名相同
+Woodcrafter	木藝師	木艺师		職業 WOODCRAFTER
+Stonecrafter	石藝師	石艺师		職業 STONECRAFTER
+Leatherworker	皮革工	皮革工		職業 LEATHERWORKER
+Bone Carver	骨雕師	骨雕师		職業 BONE_CARVER
+Glassmaker	玻璃工	玻璃工		職業 GLASSMAKER
+Strand Extractor	抽絲工	抽丝工		職業 STRAND_EXTRACTOR；從原石抽取精金絲
+Fishery Worker	漁業工人	渔业工人		職業 FISHERY_WORKER；職業分類：捕魚與處理魚
+Fisherman	漁夫	渔夫		職業 FISHERMAN；同 Fisherdwarf
+Fish Dissector	魚類解剖師	鱼类解剖师		職業 FISH_DISSECTOR
+Fish Cleaner	剖魚工	剖鱼工		職業 FISH_CLEANER；清理魚＝剖魚取肉
+Farmer	農夫	农夫		職業 FARMER；職業分類：農業相關
+Cheesemaker	起司工	奶酪工		職業 CHEESE_MAKER；兩岸用語：起司／奶酪
+Milker	擠奶工	挤奶工		職業 MILKER
+Soap Maker	製皂工	制皂工		職業 SOAP_MAKER
+Potash Maker	製鉀鹼工	制钾碱工		職業 POTASH_MAKER
+Lye Maker	製鹼液工	制碱液工		職業 LYE_MAKER
+Shearer	剪毛工	剪毛工		職業 SHEARER
+Spinner	紡紗工	纺纱工		職業 SPINNER
+Presser	壓榨工	压榨工		職業 PRESSER
+Beekeeper	養蜂人	养蜂人		職業 BEEKEEPER
+Engineer	工程師	工程师		職業 ENGINEER；職業分類：機械、攻城器械
+Siege Operator	攻城器械操作員	攻城器械操作员		職業 SIEGE_OPERATOR
+Pump Operator	泵操作員	泵操作员		職業 PUMP_OPERATOR；toolbar 的 Screw pump 譯螺旋泵
+Clerk	文書	文员		職業 CLERK；原文 5 格
+Administrator	管理者	管理人员		職業 ADMINISTRATOR；術語 administrator
+Trader	貿易商	贸易商		職業 TRADER；broker 已是交易員
+Doctor	醫師	医师		職業 DOCTOR
+Diagnoser	診斷醫師	诊断医师		職業 DIAGNOSER；同 Diagnostician
+Merchant	商人	商人		職業 MERCHANT
+Hammerman	戰錘手	战锤手		職業 HAMMERMAN；同 Hammerdwarf
+Hammer Lord	戰錘大師	战锤大师		職業 MASTER_HAMMERMAN；精通級戰鬥職業一律「X大師」
+Spearman	矛手	矛手		職業 SPEARMAN；同 Speardwarf
+Spearmaster	矛術大師	矛术大师		職業 MASTER_SPEARMAN
+Crossbowman	弩手	弩手		職業 CROSSBOWMAN；同 Marksdwarf
+Elite Crossbowman	精銳弩手	精锐弩手		職業 MASTER_CROSSBOWMAN
+Elite Marksdwarf	精銳弩手	精锐弩手		職業 MASTER_CROSSBOWMAN（矮人專用名稱）；Elite Crossbowman 的矮人名稱
+Elite Wrestler	精銳摔角手	精锐摔跤手		職業 MASTER_WRESTLER
+Axeman	斧手	斧手		職業 AXEMAN；同 Axedwarf
+Axe Lord	斧術大師	斧术大师		職業 MASTER_AXEMAN；原文 8 格
+Swordsman	劍士	剑士		職業 SWORDSMAN；同 Swordsdwarf
+Swordsmaster	劍術大師	剑术大师		職業 MASTER_SWORDSMAN
+Maceman	釘錘手	钉锤手		職業 MACEMAN；同 Macedwarf
+Mace Lord	釘錘大師	钉锤大师		職業 MASTER_MACEMAN
+Pikeman	長槍手	长枪手		職業 PIKEMAN
+Pikedwarf	長槍手	长枪手		職業 PIKEMAN（矮人專用名稱）；Pikeman 的矮人名稱
+Pikemaster	長槍大師	长枪大师		職業 MASTER_PIKEMAN
+Bowman	弓手	弓手		職業 BOWMAN
+Bowdwarf	弓手	弓手		職業 BOWMAN（矮人專用名稱）；Bowman 的矮人名稱
+Elite Bowman	精銳弓手	精锐弓手		職業 MASTER_BOWMAN
+Elite Bowdwarf	精銳弓手	精锐弓手		職業 MASTER_BOWMAN（矮人專用名稱）；Elite Bowman 的矮人名稱
+Blowgunner	吹箭手	吹箭手		職業 BLOWGUNMAN
+Master Blowgunner	吹箭大師	吹箭大师		職業 MASTER_BLOWGUNMAN
+Lasher	鞭手	鞭手		職業 LASHER
+Master Lasher	鞭術大師	鞭术大师		職業 MASTER_LASHER
+Recruit	新兵	新兵		職業 RECRUIT
+Hunting Animal	狩獵動物	狩猎动物		職業 TRAINED_HUNTER；受過狩獵訓練的動物
+War Animal	戰鬥動物	战斗动物		職業 TRAINED_WAR；受過戰鬥訓練的動物
+Master Thief	神偷	神偷		職業 MASTER_THIEF
+Thief	小偷	小偷		職業 THIEF
+Peasant	平民	平民		職業 STANDARD；術語 Peasant
+Child	兒童	儿童		職業 CHILD
+Baby	嬰兒	婴儿		職業 BABY
+Drunk	酒鬼	酒鬼		職業 DRUNK；職業清單裡的 Drunk，不是醉酒狀態
+Monster slayer	怪物獵人	怪物猎人		職業 MONSTER_SLAYER；同 info.tsv 請願
+Scout	斥候	斥候		職業 SCOUT
+Beast hunter	猛獸獵人	猛兽猎人		職業 BEAST_HUNTER
+Snatcher	綁架者	绑架者		職業 SNATCHER；哥布林擄童者
+Mercenary	傭兵	佣兵		職業 MERCENARY；同 info.tsv 請願
+Gelder	閹割師	阉割师		職業 GELDER
+Performer	表演者	表演者		職業 PERFORMER；同 info.tsv 請願
+Poet	詩人	诗人		職業 POET
+Bard	樂師	乐师		職業 BARD；原文 4 格放不下「吟遊詩人」
+Dancer	舞者	舞者		職業 DANCER
+Sage	智者	智者		職業 SAGE
+Scholar	學者	学者		職業 SCHOLAR；同 info.tsv 請願
+Philosopher	哲學家	哲学家		職業 PHILOSOPHER
+Mathematician	數學家	数学家		職業 MATHEMATICIAN
+Historian	歷史學家	历史学家		職業 HISTORIAN
+Astronomer	天文學家	天文学家		職業 ASTRONOMER
+Naturalist	博物學家	博物学家		職業 NATURALIST
+Chemist	化學家	化学家		職業 CHEMIST
+Geographer	地理學家	地理学家		職業 GEOGRAPHER
+Scribe	抄寫員	抄写员		職業 SCRIBE
+Tavern Keeper	酒館老闆	酒馆老板		職業 TAVERN_KEEPER；術語 tavern
+Criminal	罪犯	罪犯		職業 CRIMINAL
+Peddler	小販	小贩		職業 PEDDLER
+Prophet	先知	先知		職業 PROPHET
+Pilgrim	朝聖者	朝圣者		職業 PILGRIM
+Monk	僧侶	僧侣		職業 MONK
+monarch	君主	君主		人名後「, 職位」
+Monarch	君主	君主		人物頁標題
+king	國王	国王		人名後「, 職位」
+King	國王	国王		人物頁標題
+queen	女王	女王		人名後「, 職位」；女性君主
+Queen	女王	女王		人物頁標題；女性君主
+general	將軍	将军		人名後「, 職位」
+lieutenant	副將	副将		人名後「, 職位」；將軍之下的軍職
+Lieutenant	副將	副将		人物頁標題；將軍之下的軍職
+captain	隊長	队长		人名後「, 職位」
+Captain	隊長	队长		人物頁標題
+Militia Commander	民兵指揮官	民兵指挥官		人物頁標題；術語
+militia captain	民兵隊長	民兵队长		人名後「, 職位」；術語
+Militia Captain	民兵隊長	民兵队长		人物頁標題；術語
+sheriff	治安官	治安官		人名後「, 職位」；術語
+captain of the guard	衛隊長	卫队长		人名後「, 職位」；術語
+Captain Of The Guard	衛隊長	卫队长		人物頁標題；術語
+Expedition Leader	遠征隊長	远征队长		人物頁標題；術語
+mayor	市長	市长		人名後「, 職位」
+Mayor	市長	市长		人物頁標題
+manager	經理	经理		人名後「, 職位」；術語
+chief medical dwarf	首席醫師	首席医师		人名後「, 職位」；術語
+Chief Medical Dwarf	首席醫師	首席医师		人物頁標題；術語
+broker	交易員	交易员		人名後「, 職位」；術語
+bookkeeper	簿記員	簿记员		人名後「, 職位」；術語
+outpost liaison	前哨站聯絡人	前哨站联络人		人名後「, 職位」；術語 outpost
+Outpost Liaison	前哨站聯絡人	前哨站联络人		人物頁標題；術語 outpost
+diplomat	外交官	外交官		人名後「, 職位」
+Diplomat	外交官	外交官		人物頁標題
+duke	公爵	公爵		人名後「, 職位」
+Duke	公爵	公爵		人物頁標題
+duchess	女公爵	女公爵		人名後「, 職位」
+Duchess	女公爵	女公爵		人物頁標題
+count	伯爵	伯爵		人名後「, 職位」
+Count	伯爵	伯爵		人物頁標題
+countess	女伯爵	女伯爵		人名後「, 職位」
+Countess	女伯爵	女伯爵		人物頁標題
+baron	男爵	男爵		人名後「, 職位」
+Baron	男爵	男爵		人物頁標題
+baroness	女男爵	女男爵		人名後「, 職位」
+Baroness	女男爵	女男爵		人物頁標題
+champion	勇士	勇士		人名後「, 職位」；軍事貴族職位
+Champion	勇士	勇士		人物頁標題；軍事貴族職位
+hammerer	錘刑官	锤刑官		人名後「, 職位」；術語
+dungeon master	地牢總管	地牢总管		人名後「, 職位」；術語 dungeon；管理馴獸
+Dungeon Master	地牢總管	地牢总管		人物頁標題；術語 dungeon；管理馴獸
+administrator	管理者	管理人员		人名後「, 職位」；術語
+messenger	信使	信使		人名後「, 職位」；術語

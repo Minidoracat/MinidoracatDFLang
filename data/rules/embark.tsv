@@ -12,7 +12,6 @@ Nearest site: {1}	最近據點：{1}	最近据点：{1}		同上，沒有方位�
 Hostile, {1}	敵對，{1}	敌对，{1}		鄰近文明人數前加敵對；{1} 是 a hundred 等（strings，小寫）
   Prepare for the Journey to {1}  	  準備前往{1}的旅程  	  准备前往{1}的旅程  	c	謹慎準備畫面標題；{1} 是地區名
   Prepare for the Expedition to {1}  	  準備遠征{1}  	  准备远征{1}  	c	同上，收復要塞時
-{1}, Peasant	{1}，平民	{1}，平民		矮人分頁：名字加職業
 Skills ({#1})	技能（{1}）	技能（{1}）	c	矮人列的按鈕，括號內是技能點數
 {#1} pts	{1} 點	{1} 点	r	物品／動物的點數
   {#1} points remain!	  剩餘 {1} 點！	  剩余 {1} 点！		Are you sure? 後面的提醒：點數沒用完

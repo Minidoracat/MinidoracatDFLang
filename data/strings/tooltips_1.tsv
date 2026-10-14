@@ -1,0 +1,99 @@
+en	zh-Hant	zh-Hans	align	note
+Set digging orders.	下達挖掘命令。	下达挖掘命令。		工具列提示框：挖掘
+Finish setting dig orders.	完成下達挖掘命令。	完成下达挖掘命令。		工具列提示框：挖掘模式中
+Dig a regular hallway or room.  Assign a miner to the work detail if necessary.  The miner requires a pick.	挖出一般的走廊或房間。必要時把矮人指派到礦工工作分組。礦工需要十字鎬。	挖出常规的走廊或房间。必要时把矮人分配到矿工工作分组。矿工需要十字镐。		工具列提示框：挖掘：一般挖掘
+Designate constructed walls, floors, and other constructed tiles to be removed by miners.  This also designates all stairwells and ramps.	標記建造出來的牆壁、地板與其他建築格，讓礦工拆除。所有樓梯井與斜坡也會一併標記。	标记建造出来的墙壁、地板和其他建筑格，交由矿工拆除。所有楼梯井和斜坡也会一并标记。		工具列提示框：挖掘：拆除建築／樓梯／斜坡
+Dig a stairwell on this level, going up or down.  Your selection must span multiple elevations.  Click on a tile, change elevations, and click again.	在這一層挖出向上或向下的樓梯井。選取範圍必須跨越多個高度：點選一格，切換高度，再點一次。	在这一层挖出向上或向下的楼梯井。选区必须跨越多个高度：点击一格，切换高度后再点击一次。		工具列提示框：挖掘：樓梯挖掘
+Dig a ramp on this level, going up.	在這一層挖出向上的斜坡。	在这一层挖出向上的斜坡。		工具列提示框：挖掘：斜坡
+Dig a channel, making a ramp on the level below.	挖槽，在下一層形成斜坡。	挖槽，在下一层形成斜坡。		工具列提示框：挖掘：挖槽
+Hold left button to draw.	按住左鍵拖曳繪製。	按住左键拖动绘制。		工具列提示框：各指定工具共用：手繪模式
+Left click to choose corners of a rectangle.	按左鍵點選長方形的兩個對角。	单击左键选择矩形的两个对角。		工具列提示框：各指定工具共用：矩形模式
+Dig every tile selected.	挖掘所有選取的格子。	挖掘所有选中的格子。		工具列提示框：挖掘：全部挖
+Dig only ore and gems selected, and automine any ore and gems of the same type which are uncovered.	只挖選取範圍內的礦石與寶石，並自動開採挖掘時露出的同類礦石與寶石。	只挖选中范围内的矿石和宝石，并自动开采挖掘时露出的同类矿石和宝石。		工具列提示框：挖掘：自動挖礦
+Dig only ore and gems selected.	只挖選取範圍內的礦石與寶石。	只挖选中范围内的矿石和宝石。		工具列提示框：挖掘：只挖礦石與寶石
+Dig only gems selected.	只挖選取範圍內的寶石。	只挖选中范围内的宝石。		工具列提示框：挖掘：只挖寶石
+Selected tiles are very high priority.	選取的格子優先順序為極高。	选中格子的优先级为极高。		工具列提示框：指定工具：優先順序
+Selected tiles are high priority.	選取的格子優先順序為高。	选中格子的优先级为高。		工具列提示框：指定工具：優先順序
+Selected tiles are high-medium priority.	選取的格子優先順序為中高。	选中格子的优先级为中高。		工具列提示框：指定工具：優先順序
+Selected tiles are medium priority. [DEFAULT]	選取的格子優先順序為中（預設）。	选中格子的优先级为中（默认）。		工具列提示框：指定工具：優先順序；[DEFAULT] 譯成括號
+Selected tiles are medium-low priority.	選取的格子優先順序為中低。	选中格子的优先级为中低。		工具列提示框：指定工具：優先順序
+Selected tiles are low priority.	選取的格子優先順序為低。	选中格子的优先级为低。		工具列提示框：指定工具：優先順序
+Selected tiles are very low priority.	選取的格子優先順序為極低。	选中格子的优先级为极低。		工具列提示框：指定工具：優先順序
+Change to standard dig mode.	切換為標準挖掘模式。	切换为标准挖掘模式。		工具列提示框：挖掘：standard 指非藍圖，與模式名「一般挖掘」區分
+Change to blueprint-only mode.	切換為僅藍圖模式。	切换为仅蓝图模式。		工具列提示框：指定工具：藍圖
+Change blueprints to standard selections.	把藍圖改為標準選取。	把蓝图转换为标准选区。		工具列提示框：指定工具：藍圖
+Change standard selections to blueprints.	把標準選取改為藍圖。	把标准选区转换为蓝图。		工具列提示框：指定工具：藍圖
+Show advanced options.	顯示進階選項。	显示高级选项。		工具列提示框：指定工具
+Hide advanced options.	隱藏進階選項。	隐藏高级选项。		工具列提示框：指定工具
+Set tree chopping orders.	下達砍伐樹木命令。	下达砍伐树木命令。		工具列提示框：伐木
+Set tree chopping orders.  Select the base of the tree so that the woodcutter can reach it.  Assign a woodcutter to the work detail if necessary.  The woodcutter requires an axe.	下達砍伐樹木命令。請選取樹幹底部，伐木工才搆得到。必要時把矮人指派到伐木工工作分組。伐木工需要斧頭。	下达砍伐树木命令。请选中树干底部，伐木工才够得着。必要时把矮人分配到伐木工工作分组。伐木工需要斧头。		工具列提示框：伐木：砍伐樹木
+Finish setting tree chopping orders.	完成下達砍伐樹木命令。	完成下达砍伐树木命令。		工具列提示框：伐木模式中
+Change to standard chop mode.	切換為標準伐木模式。	切换为标准伐木模式。		工具列提示框：伐木
+Set plant gathering orders.	下達採集植物命令。	下达采集植物命令。		工具列提示框：採集
+Set plant gathering orders.  Some plants require fruit or other growths to be present.	下達採集植物命令。有些植物要長出果實或其他生長物才能採集。	下达采集植物命令。有些植物需要长出果实或其他生长物才能采集。		工具列提示框：採集：採集植物
+Finish setting plant gathering orders.	完成下達採集植物命令。	完成下达采集植物命令。		工具列提示框：採集模式中
+Change to standard gather mode.	切換為標準採集模式。	切换为标准采集模式。		工具列提示框：採集
+Set wall smoothing, engraving, track carving, and fortification orders.	下達磨平牆壁、雕刻、鑿刻軌道與開鑿射擊孔的命令。	下达磨平墙壁、雕刻、凿刻轨道和开凿射击孔的命令。		工具列提示框：磨平；fortification 依建造選單「射擊孔牆」譯「射擊孔」
+Smooth a rough wall to make it more pleasing to your citizens.  This also prepares the wall for engraving or fortification.	磨平粗糙的牆壁，讓居民看了更舒服。磨平後的牆壁才能雕刻或開鑿射擊孔。	磨平粗糙的墙壁，让居民看着更舒心。磨平后的墙壁才能雕刻或开凿射击孔。		工具列提示框：磨平：磨平
+Engrave artwork into a smooth wall.	在磨平的牆壁上雕刻藝術作品。	在磨平的墙壁上雕刻艺术作品。		工具列提示框：磨平：雕刻
+Carve a track in a stone floor.  Tracks are used by minecarts with routes set in the hauling menu.	在石質地板上鑿出軌道。礦車會沿著搬運選單設定的路線在軌道上行駛。	在石质地板上凿出轨道。矿车会沿着搬运菜单中设定的路线在轨道上行驶。		工具列提示框：磨平：鑿刻軌道
+Carve a gap in a smooth wall to allow your archers to fire upon invaders.	在磨平的牆壁上鑿出射擊孔，讓射手能向入侵者射擊。	在磨平的墙壁上凿出射击孔，让射手能向入侵者射击。		工具列提示框：磨平：開鑿射擊孔
+Finish setting wall orders.	完成下達牆壁命令。	完成下达墙壁命令。		工具列提示框：磨平模式中
+Change to standard orders mode.	切換為標準命令模式。	切换为标准命令模式。		工具列提示框：磨平
+Designate items for dumping and melting, claim forbidden items and buildings, and set item visibility.	標記要傾倒或熔化的物品、認領禁用的物品與建築，以及設定物品是否顯示。	标记要倾倒或熔化的物品、认领被禁用的物品和建筑，以及设置物品是否显示。		工具列提示框：物品標記工具；dump 沿用 guides_1「傾倒」
+Finish setting item/building designations.	完成物品／建築標記。	完成物品/建筑标记。		工具列提示框：物品標記模式中
+Claim a forbidden item or building so it will be used by your citizens.	認領禁用的物品或建築，讓居民可以使用。	认领被禁用的物品或建筑，让居民可以使用。		工具列提示框：物品標記：認領
+Forbid your citizens from using an item or building.	禁止居民使用某件物品或建築。	禁止居民使用某件物品或建筑。		工具列提示框：物品標記：禁用
+Designate an item for dumping in a dumping zone.	標記要搬到垃圾場傾倒的物品。	标记要搬到垃圾场倾倒的物品。		工具列提示框：物品標記：傾倒；dumping zone 沿用 guides_1「傾倒區」
+Remove dumping designations.	移除傾倒標記。	移除倾倒标记。		工具列提示框：物品標記
+Designate an item for melting at any smelter.	標記要在任一冶煉爐熔化的物品。	标记要在任意冶炼炉熔化的物品。		工具列提示框：物品標記：熔化
+Remove melting designations.	移除熔化標記。	移除熔化标记。		工具列提示框：物品標記
+Remove hidden designations.	移除隱藏標記。	移除隐藏标记。		工具列提示框：物品標記
+Hide an item or building from your view.  Citizens will still use it.	在畫面上隱藏物品或建築。居民仍會使用它。	在画面上隐藏物品或建筑。居民仍会使用它。		工具列提示框：物品標記：隱藏
+Set high and low traffic areas.	劃設高通行區與低通行區。	划定高通行区和低通行区。		工具列提示框：交通
+Finish setting traffic areas.	完成劃設通行區。	完成划定通行区。		工具列提示框：交通模式中
+Set a high traffic area.  Use this in wide central passages.	劃設高通行區。適合用在寬闊的主要通道。	划定高通行区。适合用于宽阔的主要通道。		工具列提示框：交通：高通行區
+Set a normal traffic area, the default state.	劃設一般通行區，也就是預設狀態。	划定普通通行区，即默认状态。		工具列提示框：交通：一般通行區
+Set a low traffic area.  Citizens will look for better routes.	劃設低通行區。居民會尋找更好的路線。	划定低通行区。居民会寻找更好的路线。		工具列提示框：交通：低通行區
+Set a restricted traffic area.  Citizens will look hard for better routes.  They will still use the area if other routes do not exist or are too long.	劃設限制通行區。居民會盡力尋找更好的路線；若沒有其他路線或路線太長，仍會經過這裡。	划定限制通行区。居民会极力寻找更好的路线；如果没有其他路线或路线太长，仍会经过这里。		工具列提示框：交通：限制通行區
+Set the exact weight in steps of a traffic type.	以步數設定各通行類型的確切權重。	以步数设定各通行类型的确切权重。		工具列提示框：交通：進階權重
+Finish removing mining etc. orders.	完成移除挖掘等命令。	完成移除挖掘等命令。		工具列提示框：移除命令模式中
+Place stockpiles for item storage.	劃設倉儲區來存放物品。	划定储物区来存放物品。		工具列提示框：倉儲區
+Finish placing stockpiles.	完成劃設倉儲區。	完成划定储物区。		工具列提示框：倉儲區模式中
+Start painting a new stockpile.  Once the tiles are chosen, you'll be able to set the details.	開始劃設新的倉儲區。選好格子後即可設定細節。	开始划定新的储物区。选好格子后即可设置细节。		工具列提示框：倉儲區
+Remove the stockpile being painted permanently.  Also removes existing zones!	永久移除正在劃設的倉儲區。也會移除已有的區域！	永久移除正在划定的储物区。也会移除已有的区域！		工具列提示框：倉儲區；原文就寫 zones
+Repaint this stockpile.	重新劃設此倉儲區。	重新划定此储物区。		工具列提示框：倉儲區
+Erase a portion of this stockpile.	擦除此倉儲區的一部分。	擦除此储物区的一部分。		工具列提示框：倉儲區
+Remove this stockpile permanently.	永久移除此倉儲區。	永久移除此储物区。		工具列提示框：倉儲區
+Toggle whether the stockpile can take items from anywhere or only from specific workshops and stockpiles.	切換此倉儲區能從任何地方取用物品，還是只從指定的工坊與倉儲區取用。	切换此储物区是从任何地方获取物品，还是只从指定的工坊和储物区获取。		工具列提示框：倉儲區
+Set from which workshops and stockpiles this stockpile gives and takes items.	設定此倉儲區向哪些工坊與倉儲區供應物品、又從哪些收取物品。	设置此储物区向哪些工坊和储物区供给物品，又从哪些接收物品。		工具列提示框：倉儲區：連結
+Set how many barrerls, bins, and wheelbarrows this stockpile can use.	設定此倉儲區可使用多少桶、貨箱與手推車。	设置此储物区可使用多少桶、货箱和手推车。		工具列提示框：倉儲區：容器；原文 barrerls 是遊戲拼錯，照抄
+Place zones to establish meeting areas, pastures, and more.	劃設區域，建立集會區、牧場等。	划定区域，建立集会区、牧场等。		工具列提示框：區域
+Finish placing zones.	完成劃設區域。	完成划定区域。		工具列提示框：區域模式中
+Start painting a new zone.  Once the tiles are chosen, you'll be able to set the details.	開始劃設新的區域。選好格子後即可設定細節。	开始划定新的区域。选好格子后即可设置细节。		工具列提示框：區域
+Go to the previous zone overlapping the tile you clicked.	切換到點選格子上重疊的上一個區域。	切换到所点格子上重叠的上一个区域。		工具列提示框：區域
+Go to the next zone overlapping the tile you clicked.	切換到點選格子上重疊的下一個區域。	切换到所点格子上重叠的下一个区域。		工具列提示框：區域
+Repaint this zone.	重新劃設此區域。	重新划定此区域。		工具列提示框：區域
+Erase a portion of this zone.	擦除此區域的一部分。	擦除此区域的一部分。		工具列提示框：區域
+Suspend activities in this zone.  Does not remove the zone.	暫停此區域的活動，但不會移除區域。	暂停此区域的活动，但不会移除区域。		工具列提示框：區域
+Remove this zone permanently.	永久移除此區域。	永久移除此区域。		工具列提示框：區域
+Gather fruit in trees in and just above this zone.  Requires a stepladder.	採集此區域內及正上方樹上的果實。需要折梯。	采集此区域内及正上方树上的果实。需要折梯。		工具列提示框：區域：採集果實
+Gather fruit and vegetables from shrubs in this zone.	採集此區域內灌木的果實與蔬菜。	采集此区域内灌木的果实和蔬菜。		工具列提示框：區域：採集果實
+Gather fallen fruit in this zone.	撿拾此區域內掉落的果實。	拾取此区域内掉落的果实。		工具列提示框：區域：採集果實
+Select animals to be placed in this pasture zone.  They will stay after being led here.	選擇要放進此牧場區域的動物。牠們被帶來後會留在這裡。	选择要放进此牧场区域的动物。它们被带来后会留在这里。		工具列提示框：區域：畜欄／牧場
+Designate this zone as the top of a pit.  Citizens will not fill the pit below with water.	把此區域設為坑的頂端。居民不會往下方的坑裡灌水。	将此区域设为坑的顶部。居民不会往下方的坑里灌水。		工具列提示框：區域：坑／池塘
+Designate this zone as the top of a pond.  Citizens will bring buckets of water if the pond below isn't filled.	把此區域設為池塘的頂端。下方池塘沒滿時，居民會提水桶來注水。	将此区域设为池塘的顶部。下方池塘没满时，居民会提水桶来注水。		工具列提示框：區域：坑／池塘
+Select animals to be dropped into the pit or pond below this zone.  Animals will not feel obligated to stay if they can find a way out.	選擇要丟進此區域下方坑或池塘的動物。動物若找得到出路，不一定會留在裡面。	选择要丢进此区域下方坑或池塘的动物。动物如果找得到出路，不一定会留在里面。		工具列提示框：區域：坑／池塘
+Assign a new or existing location to this zone.  Locations are groups of zones and rooms with a larger purpose, like a tavern, a temple, a library, or a craft guildhall.	為此區域指派新的或現有的場所。場所是由區域與房間組成、具有更大用途的群組，例如酒館、神殿、圖書館或工藝公會大廳。	为此区域指定新的或现有的场所。场所是由区域和房间组成、用途更大的组合，例如酒馆、神殿、图书馆或手工艺公会大厅。		工具列提示框：區域：場所
+Set details for the assigned location.	設定已指派場所的細節。	设置所指定场所的细节。		工具列提示框：區域：場所
+Select this option and any unassigned deceased citizens will be buried here automatically.	選取此選項後，未指定墓室的已故居民會自動葬在這裡。	选中此选项后，未分配墓室的已故居民会自动葬在这里。		工具列提示框：區域：墓室
+Select this option and any unassigned deceased pets will be buried here automatically.	選取此選項後，未指定墓室的已故寵物會自動葬在這裡。	选中此选项后，未分配墓室的已故宠物会自动葬在这里。		工具列提示框：區域：墓室
+Choose which squads will use this barracks.	選擇哪些小隊使用此營房。	选择哪些小队使用此营房。		工具列提示框：區域：營房
+Remove the zone being painted permanently.  Also removes existing zones!	永久移除正在劃設的區域。也會移除已有的區域！	永久移除正在划定的区域。也会移除已有的区域！		工具列提示框：區域
+Your citizens will drink at a water source zone or gather water using buckets for various tasks.  This is useful if you don't have a functioning well and you want to control exactly where the tasks take place.	居民會在水源區喝水，或用水桶取水做各種工作。沒有可用的水井、又想精確控制這些工作的地點時很有用。	居民会在水源区喝水，或用水桶取水来完成各种任务。如果没有能用的水井，又想精确控制这些任务的地点，这会很有用。		工具列提示框：區域類型說明：水源
+Citizens assigned to the fishing work detail will fish in this zone if it exists.  Otherwise, they will fish everywhere.	指派到漁夫工作分組的居民會在此區域釣魚；若沒有此區域，就會到處釣魚。	分配到渔夫工作分组的居民会在此区域钓鱼；如果没有这种区域，就会到处钓鱼。		工具列提示框：區域類型說明：釣魚；fishing work detail 沿用 info.tsv「漁夫」
+Plant gathering zones are used in locations where plants will be gathered frequently.  Use the gather designation otherwise.	採集果實區用在需要經常採集植物的地方；其他情況請使用採集命令。	采集果实区用于需要经常采集植物的地方；其他情况请使用采集命令。		工具列提示框：區域類型說明：採集果實
+Items designated for dumping will be tossed into open air spaces included in this zone.  If no open air tiles are included, they will dump the items on the floor.	標記為傾倒的物品會被丟進此區域內的懸空處；若區域內沒有懸空格，就會把物品丟在地板上。	标记为倾倒的物品会被扔进此区域内的悬空处；如果区域内没有悬空格，就会把物品倒在地板上。		工具列提示框：區域類型說明：垃圾場；open air 沿用 toolbar「懸空處」
+Certain livestock need to graze on grass.  Assign these animals to a pasture zone.  No fencing is needed.	某些牲畜需要吃草。把這些動物指派到牧場區域即可，不需要圍籬。	某些牲畜需要吃草。把这些动物分配到牧场区域即可，不需要围栏。		工具列提示框：區域類型說明：畜欄／牧場
+Animals assigned to pit/pond zones are dumped in the pit, but will leave the zone afterward if possible.  If the pit is designated as a pond, your citizens will attempt to fill it with water using buckets.	指派到坑／池塘區域的動物會被丟進坑裡，但之後若有辦法就會離開。若坑被設為池塘，居民會試著用水桶注水。	分配到坑/池塘区域的动物会被丢进坑里，但之后如果可能就会离开该区域。如果坑被设为池塘，居民会尝试用水桶往里注水。		工具列提示框：區域類型說明：坑／池塘
+Your citizens will fill sand bags at this zone if a sandy floor or sandy wall is included.  This task is initiated manually at the glass furnace.	區域內有沙質地板或沙質牆壁時，居民會在這裡把沙子裝進袋子。這項工作要在玻璃熔爐手動下達。	如果区域内有沙质地板或沙质墙壁，居民会在这里把沙子装进袋子。这项工作需要在玻璃熔炉手动下达。		工具列提示框：區域類型說明：沙子

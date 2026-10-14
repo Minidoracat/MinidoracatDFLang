@@ -1,0 +1,112 @@
+en	zh-Hant	zh-Hans	align	note
+Toggle whether this creature will receive hunting training.  Hunting animals can move stealthfully during hunts.	切換此生物是否接受狩獵訓練。狩獵動物在狩獵時能潛行移動。	切换该生物是否接受狩猎训练。狩猎动物在狩猎时能潜行移动。		生物資訊頁：狩獵訓練切換鈕
+Toggle whether this creature is available as a pet for any interested citizen or resident.	切換此生物是否開放給任何有興趣的公民或居民收養為寵物。	切换该生物是否可供任何感兴趣的公民或居民收养为宠物。		同上
+This creature is ecstatic right now.	此生物目前欣喜若狂。	该生物现在欣喜若狂。		生物資訊頁：心情狀態圖示
+This creature is happy right now.	此生物目前很快樂。	该生物现在很快乐。		同上
+This creature is pleased right now.	此生物目前心情愉快。	该生物现在心情愉快。		同上
+This creature is content right now.	此生物目前心情平靜。	该生物现在心情平静。		同上
+This creature is displeased right now.	此生物目前有些不滿。	该生物现在有些不满。		同上
+This creature is unhappy right now.	此生物目前不快樂。	该生物现在不快乐。		同上
+This creature is miserable right now.	此生物目前痛苦不堪。	该生物现在痛苦不堪。		同上
+This worker is specialized and will only do tasks that match their workshop assignments, work details, and occupations.  Click to toggle.	此工人已專職，只做符合其工坊指派、工作分組與職業的任務。點一下切換。	该工人已专职，只做符合其工坊分配、工作分组和职业的任务。点击切换。		生物資訊頁：專職切換；occupation 沿用 worldgen「職業」
+This worker is not specialized and will do any free tasks that become available.  Click to toggle.	此工人未專職，會做任何空出來的任務。點一下切換。	该工人未专职，会做任何可接手的任务。点击切换。		同上
+This creature is a tavern keeper.	此生物是酒館老闆。	该生物是酒馆老板。		生物資訊頁：職業圖示；與 Professions 組對齊
+This creature is a performer.	此生物是表演者。	该生物是表演者。		同上
+This creature is a scholar.	此生物是學者。	该生物是学者。		同上
+This creature is a scribe.	此生物是抄寫員。	该生物是抄写员。		同上
+This creature is a mercenary.	此生物是傭兵。	该生物是佣兵。		同上
+This creature is a monster slayer.	此生物是怪物獵人。	该生物是怪物猎人。		同上
+This creature is a doctor.	此生物是醫師。	该生物是医师。		同上
+This creature is assigned to a specific workshop.	此生物已指派到特定工坊。	该生物已分配到特定工坊。		同上
+This creature is assigned to a work detail.	此生物已指派到工作分組。	该生物已分配到工作分组。		同上
+Toggle whether this creature will be slaughtered at a butcher's shop when the opportunity arises.	切換此生物是否一有機會就送到屠宰工坊宰殺。	切换该生物是否一有机会就送到屠宰工坊宰杀。		同上
+Toggle whether this creature will be gelded at a farmer's workshop when the opportunity arises.	切換此生物是否一有機會就送到農夫工坊閹割。	切换该生物是否一有机会就送到农夫工坊阉割。		同上
+This type is not relevant to brewing.	此類型與釀造無關。	该类型与酿造无关。		常規命令／廚房：釀造與烹飪的類型狀態
+This type is restricted from brewing.	此類型禁止用於釀造。	该类型禁止用于酿造。		同上
+This type is allowed to be brewed.	此類型允許用於釀造。	该类型允许用于酿造。		同上
+This type is not relevant to cooking.	此類型與烹飪無關。	该类型与烹饪无关。		同上
+This type is restricted from cooking.	此類型禁止用於烹飪。	该类型禁止用于烹饪。		同上
+This type is allowed to be cooked.	此類型允許用於烹飪。	该类型允许用于烹饪。		同上
+Open the announcements screen.	開啟通知畫面。	打开通知界面。		工具列：通知按鈕
+Rename this location.	重新命名此場所。	重命名该场所。		場所資訊：存取權限選項
+This option allows visitors from outside the fortress to enter this location.	此選項允許要塞外的訪客進入此場所。	该选项允许要塞外的访客进入该场所。		同上
+This option allows long-term residents of the fortress to enter this location.	此選項允許要塞的長期居民進入此場所。	该选项允许要塞的长期居民进入该场所。		同上
+This option indicates that the location is only open to fortress citizens.	此選項表示此場所只對要塞公民開放。	该选项表示该场所只对要塞公民开放。		同上
+This option indicates that the location is only open to members.	此選項表示此場所只對成員開放。	该选项表示该场所只对成员开放。		同上
+Remove this worker from this occupation.	解除此工人的這項職業。	解除该工人的这项职业。		同上
+Set the camera to follow this item.	視角跟隨此物品。	镜头跟随该物品。		物品資訊頁
+This item is tagged by a task and will not be used by other tasks.	此物品已被某項任務標記，不會被其他任務使用。	该物品已被某项任务标记，不会被其他任务使用。		同上
+See this creature's combat history.	查看此生物的戰鬥紀錄。	查看该生物的战斗记录。		生物資訊頁按鈕
+Customize this creature's nickname and profession nickname.	自訂此生物的暱稱與職業暱稱。	自定义该生物的昵称和职业昵称。		同上
+Set the camera to follow this creature.	視角跟隨此生物。	镜头跟随该生物。		同上
+Send this creature to a linked site, or expel this creature entirely.	派此生物前往關聯據點，或將其徹底驅逐。	派该生物前往关联据点，或将其彻底驱逐。		同上
+This item is part of the assigned squad equipment.	此物品屬於指派的小隊裝備。	该物品属于分配的小队装备。		物品資訊頁：用途標記；symbol 為職位象徵物
+This item is a tool assigned by a work detail.	此物品是工作分組指派的工具。	该物品是工作分组分配的工具。		同上
+This item is a symbol of a noble or administrator.	此物品是貴族或管理者的象徵物。	该物品是贵族或管理人员的象征物。		同上
+This item is part of the creature's regular clothing.	此物品是該生物日常衣物的一部分。	该物品是该生物日常衣物的一部分。		同上
+View this item's sheet.	查看此物品的資訊頁。	查看该物品的信息页。		同上
+View this creature's sheet.	查看此生物的資訊頁。	查看该生物的信息页。		同上
+View details about this knowledge.	查看這項知識的詳細資訊。	查看这项知识的详细信息。		同上
+Recenter on this creature.	將視角移到此生物。	将镜头移到该生物。		資訊頁按鈕；Recenter 句式與 Tooltips4 組一致
+Recenter on this item.	將視角移到此物品。	将镜头移到该物品。		同上
+Name this building.	為此建築命名。	为该建筑命名。		同上
+Remove this building.	拆除此建築。	拆除该建筑。		同上
+This task has been assigned and is active.	此任務已指派，正在進行。	该任务已分配，正在进行。		工坊任務清單
+This task came from a work order.	此任務來自工作指令。	该任务来自工作订单。		同上
+This task is set to repeat indefinitely.	此任務設為無限重複。	该任务设为无限重复。		同上
+Click to set this task to repeat indefinitely.	點一下將此任務設為無限重複。	点击将该任务设为无限重复。		同上
+This task is highest priority among all tasks everywhere.	此任務在全要塞所有任務中最優先。	该任务在全要塞所有任务中最优先。		同上
+Click to set this task as highest priority among all tasks everywhere.	點一下將此任務設為全要塞所有任務中最優先。	点击将该任务设为全要塞所有任务中最优先。		同上
+Increase the priority of the task in this workshop.	提高此任務在這座工坊中的優先順序。	提高该任务在该工坊中的优先级。		同上
+Set details for this task, such as the material to be used.	設定此任務的細節，例如要使用的材料。	设置该任务的细节，例如要使用的材料。		同上
+This task has been suspended.	此任務已暫停。	该任务已暂停。		同上
+Click to suspend the task.  Assigned workers are removed from suspended tasks.	點一下暫停此任務。指派的工人會撤離已暫停的任務。	点击暂停该任务。已分配的工人会撤离已暂停的任务。		同上
+Create a new work order for this workshop.  Work orders are tasks that can repeat specified numbers of times and which can be given start conditions.  This is useful for automation.	為此工坊建立新的工作指令。工作指令是可重複指定次數、也可設定開始條件的任務，適合用來自動化生產。	为该工坊创建新的工作订单。工作订单是可重复指定次数、也可设置启动条件的任务，适合用于自动化生产。		工坊：新增工作指令
+Recenter on the linked building.	將視角移到連結的建築。	将镜头移到关联的建筑。		同上
+Add stockpile links for this workshop.	為此工坊新增倉儲區連結。	为该工坊添加关联储物区。		工坊：倉儲區連結
+This item is a permanent part of the building.  Forbid and visibility tags set here affect the whole building.	此物品是建築的永久構件。在這裡設定的禁用與可見性標記會影響整座建築。	该物品是建筑的永久构件。在这里设置的禁用和可见性标记会影响整座建筑。		建築內物品清單
+This item is being traded.	此物品正在交易中。	该物品正在交易中。		同上
+This is a small creature within the trap.	這是困在陷阱裡的小型生物。	这是困在陷阱里的小型生物。		同上
+This item is bait.	此物品是誘餌。	该物品是诱饵。		同上
+This item has been loaded.	此物品已裝填。	该物品已装填。		同上
+This item is resting within the building.	此物品存放在建築內。	该物品存放在建筑内。		同上
+This item is a semi-permanent part of the building, like an item on display.	此物品是建築的半永久構件，例如展示中的物品。	该物品是建筑的半永久构件，例如展示中的物品。		同上
+Toggle the forbidden status of the item.  Citizens will not use forbidden items or buildings.  If a permanent building item is forbidden, citizens will not perform tasks there!	切換物品的禁用狀態。居民不會使用禁用的物品或建築。建築的永久構件被禁用時，居民不會在那裡執行任務！	切换物品的禁用状态。居民不会使用禁用的物品或建筑。建筑的永久构件被禁用时，居民不会在那里执行任务！		建築內物品：禁用與可見性切換
+Toggle the visibility of the item.  Hidden items cannot be seen but citizens will still use them.  If a permanent building item is invisible, the building will be too!	切換物品的可見性。隱藏的物品看不見，但居民仍會使用。建築的永久構件被隱藏時，建築也會跟著隱藏！	切换物品的可见性。隐藏的物品不可见，但居民仍会使用。建筑的永久构件被隐藏时，建筑也会随之隐藏！		同上
+The soldiers can either keep their equipment on at all times, or only when an order is active.	士兵可以一直穿戴裝備，或只在有命令執行時穿戴。	士兵可以一直穿着装备，或只在执行命令时穿着。		小隊排程：裝備與睡眠設定
+The soldiers can be allowed to sleep in their rooms whenever they way, or in the barracks either when they want or only when they must.	可允許士兵隨時睡在自己房間，或睡在營房：可隨意，也可只在必要時。	可允许士兵随时睡在自己的房间，或睡在营房：可随意，也可只在必要时。		同上
+Cancel this scheduled order.	取消這項排程命令。	取消这项日程命令。		同上
+Cancel this position's scheduled orders.	取消此職位的排程命令。	取消该职位的日程命令。		同上
+Change the squad's symbol.	更改小隊的標誌。	更改小队的标志。		小隊面板；symbol 此處是小隊標誌，非職位象徵物
+View the leader's sheet.	查看隊長的資訊頁。	查看队长的信息页。		同上
+The squad leader is traveling or otherwise occupied off-site.	小隊隊長正在外出，或在據點外忙於其他事務。	小队队长正在外出，或在据点外忙于其他事务。		同上
+View the positions in this squad.	查看此小隊的職位。	查看该小队的职位。		同上
+Customize the squad's name.	自訂小隊名稱。	自定义小队名称。		同上
+Assign a station order.  The soldiers will stand near the point selected and engage any hostile creatures that come near.	下達駐守命令。士兵會站在所選地點附近，迎擊任何靠近的敵對生物。	下达驻守命令。士兵会站在所选地点附近，迎击任何靠近的敌对生物。		小隊命令按鈕
+Assign a kill order.  The soldiers will attempt to kill a targeted creature.	下達擊殺命令。士兵會設法擊殺指定的目標生物。	下达击杀命令。士兵会设法击杀指定的目标生物。		同上
+Assign a patrol order.  The soldiers will walk a specified route repeatedly.	下達巡邏命令。士兵會沿指定路線反覆巡邏。	下达巡逻命令。士兵会沿指定路线反复巡逻。		同上
+Assign a burrow defense order.  The soldiers will patrol the burrow and attack any hostile creatures.	下達防守活動區命令。士兵會在活動區內巡邏，並攻擊任何敵對生物。	下达防守活动区命令。士兵会在活动区内巡逻，并攻击任何敌对生物。		同上
+Assign a training order.  The squad must be assigned to a barracks zone with the training option set.	下達訓練命令。小隊必須指派到已開啟訓練選項的營房區域。	下达训练命令。小队必须分配到已启用训练选项的营房区域。		同上
+Cancel an order.  Does not affect scheduled orders.	取消命令。不影響排程命令。	取消命令。不影响日程命令。		同上
+Disband the squad.	解散小隊。	解散小队。		同上
+Inspect the route.	檢視路線。	查看路线。		同上
+Recenter on the announcement's location.	將視角移到通知的地點。	将镜头移到通知的地点。		通知清單；location 此處是地點，非場所
+Recenter on the creature (at the time of the announcement.)	將視角移到該生物（通知當時的位置）。	将镜头移到该生物（通知发出时的位置）。		同上
+Recenter on the item (at the time of the announcement.)	將視角移到該物品（通知當時的位置）。	将镜头移到该物品（通知发出时的位置）。		同上
+Toggle whether the squad will sleep here.	切換小隊是否睡在這裡。	切换小队是否睡在这里。		營房區域：小隊用途切換
+Toggle whether the squad will train here.	切換小隊是否在這裡訓練。	切换小队是否在这里训练。		同上
+Toggle whether the soldiers will store their individually assigned weapons and armor here.	切換士兵是否把個人配發的武器與盔甲存放在這裡。	切换士兵是否把个人配发的武器和盔甲存放在这里。		同上
+Toggle whether the squad will store squad-level equipment here, such as ammunition.	切換小隊是否把小隊共用裝備（如彈藥）存放在這裡。	切换小队是否把小队共用装备（如弹药）存放在这里。		同上
+Choose a stockpile to which the track stop's vehicle will give items.	選擇軌道停靠站車輛送出物品的目標倉儲區。	选择轨道停靠站车辆送出物品的目标储物区。		倉儲區連結：軌道停靠站、工坊、倉儲區
+Choose a stockpile from which the track stop's vehicle will take items.	選擇軌道停靠站車輛取用物品的來源倉儲區。	选择轨道停靠站车辆取用物品的来源储物区。		同上
+Choose a stockpile with which the track stop's vehicle will exchange items.  The vehicle will take desired items and offload any others.	選擇與軌道停靠站車輛交換物品的倉儲區。車輛會取走需要的物品，卸下其他物品。	选择与轨道停靠站车辆交换物品的储物区。车辆会取走需要的物品，卸下其他物品。		同上
+Choose a stockpile to which the workshop will give items.	選擇工坊送出物品的目標倉儲區。	选择工坊送出物品的目标储物区。		同上
+Choose a stockpile from which the workshop will take items.	選擇工坊取用物品的來源倉儲區。	选择工坊取用物品的来源储物区。		同上
+Choose a stockpile to which the selected stockpile will give items.	選擇所選倉儲區送出物品的目標倉儲區。	选择所选储物区送出物品的目标储物区。		同上
+Choose a stockpile from which the selected stockpile will take items.	選擇所選倉儲區取用物品的來源倉儲區。	选择所选储物区取用物品的来源储物区。		同上
+The track stop's vehicle will exchange items with this stockpile.  The vehicle will take desired items and offload any others.	軌道停靠站的車輛會與此倉儲區交換物品。車輛會取走需要的物品，卸下其他物品。	轨道停靠站的车辆会与该储物区交换物品。车辆会取走需要的物品，卸下其他物品。		同上
+The track stop's vehicle will take items from this stockpile.	軌道停靠站的車輛會從此倉儲區取用物品。	轨道停靠站的车辆会从该储物区取用物品。		同上
+The track stop's vehicle will give items to this stockpile.	軌道停靠站的車輛會把物品送到此倉儲區。	轨道停靠站的车辆会把物品送到该储物区。		同上
+The selected workshop will take items from here.	所選工坊會從這裡取用物品。	所选工坊会从这里取用物品。		同上
+The selected workshop will give items to here.	所選工坊會把物品送到這裡。	所选工坊会把物品送到这里。		同上
+The selected stockpile will take items from here.	所選倉儲區會從這裡取用物品。	所选储物区会从这里取用物品。		同上

@@ -1,0 +1,163 @@
+en	zh-Hant	zh-Hans	align	note
+Horizontal axles transfer power on the same elevation.  Horizontal axles can be east-west or north-south.	水平傳動軸在同一高度層傳遞動力。水平傳動軸可以東西向或南北向擺放。	水平传动轴在同一高度层传递动力。水平传动轴可以东西向或南北向放置。		建造選單提示：機械
+Vertical axles transfer power between two adjacent elevations.	垂直傳動軸在相鄰兩個高度層之間傳遞動力。	垂直传动轴在相邻两个高度层之间传递动力。		建造選單提示：機械
+Rollers move minecarts on tracks without the need for a citizen to push or guide the minecart.	滾輪會推動軌道上的礦車，不需要居民推車或引導。	滚轮会推动轨道上的矿车，无需居民推车或引导。		建造選單提示：機械
+A chain can be placed for use in the justice system or for the restraint of an animal.	鎖鏈放置後可供司法系統使用，也可用來拴住動物。	锁链放置后可供司法系统使用，也可用来拴住动物。		建造選單提示：籠子／束縛具
+Cages can be used to contain an animal, and metal cages can be used by the justice system.  Glass cages can be filled with water and used as aquariums.	籠子可以用來關動物，金屬籠子可供司法系統使用。玻璃籠子可以注水當作水族箱。	笼子可以用来关动物，金属笼子可供司法系统使用。玻璃笼子可以注水当作水族箱。		建造選單提示：籠子／束縛具
+Animal traps can be placed in the wild and baited with meat, plants, or gems, in order to catch small creatures.	捕獸器可以放在野外，用肉、植物或寶石當誘餌來捕捉小型生物。	捕兽器可以放在野外，用肉、植物或宝石作诱饵来捕捉小型生物。		建造選單提示：籠子／束縛具
+Track stops are used in conjunction with the hauling menu.  They can also be used to add friction to minecart tracks.	軌道停靠站要搭配搬運選單使用，也可以用來增加礦車軌道的摩擦力。	轨道停靠站要配合搬运菜单使用，也可以用来增加矿车轨道的摩擦力。		建造選單提示：建築結構
+Levers are used with machines, doors, floodgates, bridges, cages, and other structures to change their state.	拉桿可連接機械、門、水閘、橋、籠子等建築，用來切換它們的狀態。	拉杆可连接机械、门、水闸、桥、笼子等建筑，用来切换它们的状态。		建造選單提示：機械／流體
+Pressure plates, like levers, are used with machines, doors, floodgates, bridges, cages, and other structures to change their state.  The trigger for pressure plates can be set by creature weight, fluid, or minecart passage.	壓力板和拉桿一樣，可連接機械、門、水閘、橋、籠子等建築，用來切換它們的狀態。壓力板的觸發條件可設為生物重量、液體或礦車經過。	压力板和拉杆一样，可连接机械、门、水闸、桥、笼子等建筑，用来切换它们的状态。压力板的触发条件可设为生物重量、液体或矿车经过。		建造選單提示：陷阱
+Stone-fall traps drop a stone on intruders.  Must be loaded with boulders.	落石陷阱會朝入侵者砸下石頭。必須裝填石塊。	落石陷阱会向入侵者砸下石头。必须装填石块。		建造選單提示：陷阱
+Weapon traps use a weapon or trap component to strike intruders.  Can be used with ranged weapons and loaded with ammo.  Can use multiple weapons at once.	武器陷阱用武器或陷阱零件攻擊入侵者。可以使用遠程武器並裝填彈藥。可同時裝上多件武器。	武器陷阱用武器或陷阱零件攻击入侵者。可以使用远程武器并装填弹药。可同时安装多件武器。		建造選單提示：陷阱；陷阱零件沿用 embark.tsv
+Cage traps capture intruders in cages.  Must be loaded with a cage.	籠子陷阱會把入侵者關進籠子。必須裝入一個籠子。	笼子陷阱会把入侵者关进笼子。必须装入一个笼子。		建造選單提示：陷阱
+Upright weapons are a nasty place for intruders to fall upon.  Can also be linked to levers or pressure plates to raise them into intruders.	直立武器會讓跌落其上的入侵者吃盡苦頭。也可以連接拉桿或壓力板，升起來刺向入侵者。	直立武器会让跌落其上的入侵者吃尽苦头。也可以连接拉杆或压力板，升起来刺向入侵者。		建造選單提示：陷阱
+Archery targets are used in archery range zones for training archers.	箭靶放在射箭場區域，用來訓練射手。	箭靶放在射箭场区域，用来训练射手。		建造選單提示：軍事
+Ornamental.  Demanded by some nobles.	裝飾用。有些貴族會要求。	装饰用。有些贵族会要求。		建造選單提示：家具（裝飾品）
+A ballista fires a ballista arrow in a fixed direction.  The operator can adjust the aim freely within a cone.	弩砲朝固定方向發射弩砲箭。操作者可在錐形範圍內自由調整瞄準。	弩炮朝固定方向发射弩炮箭。操作者可在锥形范围内自由调整瞄准。		建造選單提示：軍事
+A catapult fires a boulder in a fixed direction.  The operator can adjust the aim freely within a cone.	投石機朝固定方向投出石塊。操作者可在錐形範圍內自由調整瞄準。	投石机朝固定方向投出石块。操作者可在锥形范围内自由调整瞄准。		建造選單提示：軍事
+A bolt thrower fires a regular bolts rapidly.  The operator swivels the machine from any available adjacent tiles.	弩箭機能快速連射普通弩箭。操作者可從任一可用的相鄰格轉動機器。	弩箭机能快速连射普通弩箭。操作者可从任意可用的相邻格转动机器。		建造選單提示：軍事
+Create a creature to place in the arena.	生成生物並放到競技場。	生成生物并放到竞技场。		競技場模式工具列提示
+Add or remove fluids.	加入或移除液體。	添加或移除液体。		競技場模式工具列提示
+Add water to the arena.	在競技場加水。	向竞技场加水。		競技場模式工具列提示
+Add magma to the arena.	在競技場加入熔岩。	向竞技场加入岩浆。		競技場模式工具列提示
+Add snow to the arena.	在競技場加雪。	向竞技场加雪。		競技場模式工具列提示
+Add mud to the arena.	在競技場加泥巴。	向竞技场加泥浆。		競技場模式工具列提示
+Remove fluids and spatter from the arena.	清除競技場的液體與汙漬。	清除竞技场中的液体和污渍。		競技場模式工具列提示
+Create a tree to place in the arena.	生成樹木並放到競技場。	生成树木并放到竞技场。		競技場模式工具列提示
+Change the weather, temperature, and time.	變更天氣、溫度與時間。	更改天气、温度和时间。		競技場模式工具列提示
+Default attack is a strike without charging or wrestling.	預設攻擊為打擊，不衝鋒也不摔角。	默认攻击为打击，不冲锋也不摔跤。		冒險模式戰鬥選項提示
+Default attack is a charging strike.	預設攻擊為衝鋒打擊。	默认攻击为冲锋打击。		冒險模式戰鬥選項提示
+Default attack is a wrestling move.	預設攻擊為摔角動作。	默认攻击为摔跤动作。		冒險模式戰鬥選項提示
+Choose default attack according to opponent.	依對手選擇預設攻擊。	根据对手选择默认攻击。		冒險模式戰鬥選項提示
+Freely move between tiles when dodging if necessary	必要時閃避可自由移動到其他格	必要时闪避可自由移动到其他格		冒險模式戰鬥選項提示；原文句尾無句號
+Do not move from current tile when dodging even if it means being struck.	閃避時不離開目前所在格，即使因此挨打。	闪避时不离开当前所在格，即使因此挨打。		冒險模式戰鬥選項提示
+Dodge away from charging opponents to avoid being knocked over.	閃開衝鋒的對手，以免被撞倒。	闪开冲锋的对手，以免被撞倒。		冒險模式戰鬥選項提示
+Attempt to stop charging opponents, standing your ground.	堅守原地，試圖擋下衝鋒的對手。	坚守原地，试图挡下冲锋的对手。		冒險模式戰鬥選項提示
+Handle charging attacks according to the opponent.	依對手決定如何應付衝鋒攻擊。	根据对手决定如何应对冲锋攻击。		冒險模式戰鬥選項提示
+View all announcements.	檢視所有通知。	查看所有通知。		冒險模式工具列提示
+Recenter on yourself.	將視角移到自己身上。	将镜头移到自己身上。		冒險模式工具列提示
+Move upward.	向上移動。	向上移动。		冒險模式移動提示
+Move downward.	向下移動。	向下移动。		冒險模式移動提示
+Move down to the north.	向北往下一層。	向北往下一层。		冒險模式移動提示：往斜坡下方移動
+Move down to the south.	向南往下一層。	向南往下一层。		冒險模式移動提示
+Move down to the west.	向西往下一層。	向西往下一层。		冒險模式移動提示
+Move down to the east.	向東往下一層。	向东往下一层。		冒險模式移動提示
+Move down to the northwest.	向西北往下一層。	向西北往下一层。		冒險模式移動提示
+Move down to the northeast.	向東北往下一層。	向东北往下一层。		冒險模式移動提示
+Move down to the southwest.	向西南往下一層。	向西南往下一层。		冒險模式移動提示
+Move down to the southeast.	向東南往下一層。	向东南往下一层。		冒險模式移動提示
+Travel.	旅行。	旅行。		冒險模式工具列提示：進入大地圖旅行
+Sleep or wait a while.	睡覺或稍等一會兒。	睡觉或等待一会儿。		冒險模式工具列提示
+Build. (coming soon)	建造。（即將推出）	建造。（即将推出）		冒險模式工具列提示
+View your status.	檢視你的狀態。	查看你的状态。		冒險模式工具列提示
+View your log.	檢視你的日誌。	查看你的日志。		冒險模式工具列提示；14 格剛好等於原文
+Open your inventory.	開啟你的物品欄。	打开你的物品栏。		冒險模式工具列提示
+Set movement options.	設定移動選項。	设置移动选项。		冒險模式工具列提示
+Set combat options.	設定戰鬥選項。	设置战斗选项。		冒險模式工具列提示
+Interact with nearby objects.	與附近的物體互動。	与附近的物体互动。		冒險模式工具列提示
+Search for bugs.	尋找蟲子。	搜索虫子。		冒險模式工具列提示：抓蟲（小型生物）
+Climb or hold terrain.	攀爬或抓住地形。	攀爬或抓住地形。		冒險模式工具列提示
+Jump somewhere.	跳到某處。	跳到某处。		冒險模式工具列提示
+Talk to somebody.	與人交談。	与人交谈。		冒險模式工具列提示
+Start a performance.  This can take several turns to complete.	開始表演。可能需要好幾回合才能完成。	开始表演。可能需要好几个回合才能完成。		冒險模式工具列提示
+Craft or butcher.	製作或屠宰。	制作或屠宰。		冒險模式工具列提示
+Use ability.	使用能力。	使用能力。		冒險模式工具列提示
+Strike somebody adjacent with a melee attack.  Also allows available parry, block, and dodge moves.	以近戰攻擊相鄰的對象。也能使用可用的招架、格擋與閃避動作。	以近战攻击相邻的对象。也能使用可用的招架、格挡和闪避动作。		冒險模式工具列提示
+Wrestle somebody adjacent.  Also allows available parry, block, and dodge moves.	與相鄰的對象摔角。也能使用可用的招架、格擋與閃避動作。	与相邻的对象摔跤。也能使用可用的招架、格挡和闪避动作。		冒險模式工具列提示
+Shoot.  Requires a ranged weapon and ammunition.	射擊。需要遠程武器與彈藥。	射击。需要远程武器和弹药。		冒險模式工具列提示
+Tactical mode is on.  You control everybody manually.  Click to control only this character (others will follow you.)	戰術模式已開啟。你要手動操控所有人。點選後只操控此角色（其他人會跟隨你）。	战术模式已开启。你需要手动操控所有人。点击后只操控此角色（其他人会跟随你）。		冒險模式隊伍提示
+Tactical mode is off.  Companions are following you.  Click to control everybody.	戰術模式已關閉。同伴會跟隨你。點選以操控所有人。	战术模式已关闭。同伴会跟随你。点击以操控所有人。		冒險模式隊伍提示
+View your companions and tactical settings, or switch party members.	檢視同伴與戰術設定，或切換隊員。	查看同伴和战术设置，或切换队员。		冒險模式隊伍提示
+You are currently yielded.  Click to stop yielding.	你目前已投降。點選以停止投降。	你目前已投降。点击以停止投降。		冒險模式狀態提示：yield 是戰鬥中屈服投降
+You are not yielded.  Click to yield to opponents.	你沒有投降。點選以向對手投降。	你没有投降。点击以向对手投降。		冒險模式狀態提示
+You have a weapon drawn.  Click to strap it.	你已拔出武器。點選以收起。	你已拔出武器。点击以收起。		冒險模式狀態提示
+You have a weapon available to draw.  Click to draw it.	你有可拔出的武器。點選以拔出。	你有可拔出的武器。点击以拔出。		冒險模式狀態提示
+You do not have a weapon.	你沒有武器。	你没有武器。		冒險模式狀態提示
+You are a projectile.	你正被拋在空中。	你正被抛在空中。		冒險模式狀態提示：被撞飛或拋出、成為飛行物體
+You are a rider.	你正在騎乘。	你正在骑乘。		冒險模式狀態提示
+You are prone.  Click to stand.	你趴倒在地。點選以站起。	你趴倒在地。点击以站起。		冒險模式狀態提示
+You are not prone.  Click to go prone.	你沒有趴下。點選以趴下。	你没有趴下。点击以趴下。		冒險模式狀態提示
+Close the map.	關閉地圖。	关闭地图。		冒險模式旅行提示
+Go upward.	往上走。	向上走。		冒險模式旅行提示
+Go downward.	往下走。	向下走。		冒險模式旅行提示
+End travel.	結束旅行。	结束旅行。		冒險模式旅行提示
+Toggle sneaking.	切換潛行。	切换潜行。		冒險模式旅行提示
+View the map.	檢視地圖。	查看地图。		冒險模式旅行提示
+Toggle cloud view.	切換雲層檢視。	切换云层视图。		冒險模式旅行地圖提示
+Toggle track view.	切換足跡檢視。	切换足迹视图。		冒險模式旅行地圖提示；track 指生物留下的足跡（追蹤用），不是礦車軌道
+Drop an item.	丟下物品。	丢下物品。		冒險模式物品欄提示
+Wear an item.	穿戴物品。	穿戴物品。		冒險模式物品欄提示
+Remove an item.	脫下物品。	脱下物品。		冒險模式物品欄提示
+Put an item into a container.	把物品放進容器。	把物品放进容器。		冒險模式物品欄提示
+Eat or drink an item.	食用或飲用物品。	食用或饮用物品。		冒險模式物品欄提示
+Interact with an item in a different way.	以其他方式使用物品。	以其他方式使用物品。		冒險模式物品欄提示
+View this item.	檢視這件物品。	查看这件物品。		冒險模式物品欄提示
+Drop this item.	丟下這件物品。	丢下这件物品。		冒險模式物品欄提示
+Wear this item.	穿戴這件物品。	穿戴这件物品。		冒險模式物品欄提示
+Remove this item.	脫下這件物品。	脱下这件物品。		冒險模式物品欄提示
+Put this item into a container.	把這件物品放進容器。	把这件物品放进容器。		冒險模式物品欄提示
+Eat or drink this item.	食用或飲用這件物品。	食用或饮用这件物品。		冒險模式物品欄提示
+Interact with this item in a different way (opens menu.)	以其他方式使用這件物品（開啟選單）。	以其他方式使用这件物品（打开菜单）。		冒險模式物品欄提示
+This party member is currently automated in tactical mode.	此隊員在戰術模式中目前為自動控制。	此队员在战术模式中目前为自动控制。		冒險模式隊伍提示
+This party member is manually controlled in tactical mode.	此隊員在戰術模式中由手動操控。	此队员在战术模式中由手动操控。		冒險模式隊伍提示
+Assume control of this party member.	接手操控此隊員。	接管此队员。		冒險模式隊伍提示
+You are tangled in a web.	你被蛛網纏住了。	你被蛛网缠住了。		冒險模式狀態提示
+You are sleeping.	你正在睡覺。	你正在睡觉。		冒險模式狀態提示
+You are unconscious.	你失去了意識。	你失去了意识。		冒險模式狀態提示
+You are paralyzed.	你癱瘓了。	你瘫痪了。		冒險模式狀態提示
+You are wrestling.	你正在摔角。	你正在摔跤。		冒險模式狀態提示
+You are nauseated.	你感到噁心。	你感到恶心。		冒險模式狀態提示
+You are stunned.	你頭暈目眩。	你头晕目眩。		冒險模式狀態提示
+You are winded.	你喘不過氣。	你喘不过气。		冒險模式狀態提示
+You have are seriously injured.  View your status for more information.	你受了重傷。詳情請檢視你的狀態。	你受了重伤。详情请查看你的状态。		冒險模式狀態提示；原文 have are 是遊戲筆誤
+You have are injured.  View your status for more information.	你受傷了。詳情請檢視你的狀態。	你受伤了。详情请查看你的状态。		冒險模式狀態提示；原文 have are 是遊戲筆誤
+You have a fever.	你發燒了。	你发烧了。		冒險模式狀態提示
+You are thirsty.	你口渴了。	你口渴了。		冒險模式狀態提示
+You are hungry.	你餓了。	你饿了。		冒險模式狀態提示
+You are drowsy.	你昏昏欲睡。	你昏昏欲睡。		冒險模式狀態提示
+You are stressed.  View your status for more information.	你壓力很大。詳情請檢視你的狀態。	你压力很大。详情请查看你的状态。		冒險模式狀態提示
+You are distracted by unmet needs.  View your status for more information.	你因需求未獲滿足而分心。詳情請檢視你的狀態。	你因需求未得到满足而分心。详情请查看你的状态。		冒險模式狀態提示
+You are enraged.	你怒不可遏。	你怒不可遏。		冒險模式狀態提示
+You are in a martial trance.	你陷入戰鬥恍惚。	你陷入战斗恍惚。		冒險模式狀態提示
+You are throwing a tantrum.	你正在大發脾氣。	你正在大发脾气。		冒險模式狀態提示
+You are depressed.	你意志消沉。	你意志消沉。		冒險模式狀態提示
+You are oblivious.	你對周遭渾然不覺。	你对周遭浑然不觉。		冒險模式狀態提示；18 格剛好等於原文
+You are in a fell mood.	你陷入凶邪心境。	你陷入凶邪心境。		冒險模式狀態提示：奇異心境的一種
+You are in a macabre mood.	你陷入陰森心境。	你陷入阴森心境。		冒險模式狀態提示：奇異心境的一種
+You are in a fey mood.	你陷入癡迷心境。	你陷入痴迷心境。		冒險模式狀態提示：奇異心境的一種
+You are in a secretive mood.	你陷入隱密心境。	你陷入隐秘心境。		冒險模式狀態提示：奇異心境的一種
+You are possessed.	你被附身了。	你被附身了。		冒險模式狀態提示
+You are melancholy.	你陷入憂鬱。	你陷入忧郁。		冒險模式狀態提示：精神崩潰的一種
+You are insane.	你發瘋了。	你发疯了。		冒險模式狀態提示
+You are berserk.	你陷入狂暴。	你陷入狂暴。		冒險模式狀態提示
+You are catatonic.	你陷入僵直狀態。	你陷入僵直状态。		冒險模式狀態提示
+You are terrified.	你嚇壞了。	你吓坏了。		冒險模式狀態提示
+Toggle the display of spoor for tracking.	切換顯示可供追蹤的痕跡。	切换显示可供追踪的痕迹。		冒險模式工具列提示：追蹤生物
+There is a thin mist here.	這裡有一層薄霧。	这里有一层薄雾。		冒險模式天氣提示
+Fog enshrouds the area.	霧氣籠罩著這一帶。	雾气笼罩着这一带。		冒險模式天氣提示
+There is a heavy blanket of fog enveloping everything.	濃霧籠罩著一切。	浓雾笼罩着一切。		冒險模式天氣提示
+There is a thin mist outside.	外面有一層薄霧。	外面有一层薄雾。		冒險模式天氣提示
+There is fog outside.	外面起霧了。	外面起雾了。		冒險模式天氣提示
+There is thick fog outside.	外面有濃霧。	外面有浓雾。		冒險模式天氣提示
+It is raining.	正在下雨。	正在下雨。		冒險模式天氣提示
+It is raining outside.	外面正在下雨。	外面正在下雨。		冒險模式天氣提示
+It is snowing.	正在下雪。	正在下雪。		冒險模式天氣提示
+It is snowing outside.	外面正在下雪。	外面正在下雪。		冒險模式天氣提示
+There are scattered puffy clouds above you.	你頭上有零星的蓬鬆雲朵。	你头顶上有零星的蓬松云朵。		冒險模式天氣提示
+It is freezing.	天寒地凍。	天寒地冻。		冒險模式天氣提示
+Freshest track	最新足跡	最新足迹		冒險模式追蹤：痕跡清單標題
+There is an unintelligible mess.	這裡的痕跡雜亂難辨。	这里的痕迹杂乱难辨。		冒險模式追蹤：痕跡描述
+The vegetation is heavily damaged.	植被嚴重受損。	植被严重受损。		冒險模式追蹤：痕跡描述
+The vegetation is bent.	植被被壓彎了。	植被被压弯了。		冒險模式追蹤：痕跡描述
+The vegetation has been slightly perturbed.	植被略有翻動的痕跡。	植被略有翻动的痕迹。		冒險模式追蹤：痕跡描述
+The vegetation is broken.	植被被折斷了。	植被被折断了。		冒險模式追蹤：痕跡描述
+The signs lead north.	痕跡通往北方。	痕迹通往北方。		冒險模式追蹤：痕跡方向
+The signs lead south.	痕跡通往南方。	痕迹通往南方。		冒險模式追蹤：痕跡方向
+The signs lead east.	痕跡通往東方。	痕迹通往东方。		冒險模式追蹤：痕跡方向
+The signs lead west.	痕跡通往西方。	痕迹通往西方。		冒險模式追蹤：痕跡方向
+The signs lead northeast.	痕跡通往東北方。	痕迹通往东北方。		冒險模式追蹤：痕跡方向
+The signs lead northwest.	痕跡通往西北方。	痕迹通往西北方。		冒險模式追蹤：痕跡方向
+The signs lead southeast.	痕跡通往東南方。	痕迹通往东南方。		冒險模式追蹤：痕跡方向
+The signs lead southwest.	痕跡通往西南方。	痕迹通往西南方。		冒險模式追蹤：痕跡方向
+They belong to you or a companion.	這些是你或同伴留下的。	这些是你或同伴留下的。		冒險模式追蹤：自己隊伍的痕跡

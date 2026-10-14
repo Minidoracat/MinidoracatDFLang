@@ -61,8 +61,9 @@ def placeholder_problem(r: dict, langs: list[str]) -> str | None:
         return "原文佔位重複"
     if re.search(r"\{[#@]?[1-9]\}\{[#@]?[1-9]\}", r["en"]):
         return "原文佔位相鄰"
-    if not re.search(r"[A-Za-z]", template(r["en"])):
-        return "原文樣板沒有固定的英文字，會套到幾乎所有字串"
+    # 沒有固定英文字的樣板會套到幾乎所有字串；但有限定佔位（{#n} 只收數字、{@n} 只收字典字詞）時，套得到的字串有限
+    if not re.search(r"[A-Za-z]", template(r["en"])) and not re.search(r"\{[#@][1-9]\}", r["en"]):
+        return "原文樣板沒有固定的英文字，也沒有限定佔位（{#n}、{@n}），會套到幾乎所有字串"
     for lang in langs:
         if r[lang] and sorted(PLACEHOLDER.findall(r[lang])) != sorted(en):
             return f"{lang} 佔位和原文不一致"

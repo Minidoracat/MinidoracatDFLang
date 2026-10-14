@@ -1,0 +1,65 @@
+en	zh-Hant	zh-Hans	align	note
+The selected stockpile will give items to here.	所選倉儲區會把物品送到這裡。	所选储物区会把物品送到这里。		
+The creature is chained.	這隻生物被鎖鏈拴著。	这只生物被锁链拴着。		
+The creature is caged.	這隻生物被關在籠子裡。	这只生物被关在笼子里。		
+The creature is set to be chained.	這隻生物已排定以鎖鏈拴住。	这只生物已安排用锁链拴住。		
+The creature is set to be caged.	這隻生物已排定關進籠子。	这只生物已安排关进笼子。		
+The creature is assigned to a pasture.	這隻生物已指派到牧場。	这只生物已分配到牧场。		
+The creature is assigned to a pond.	這隻生物已指派到池塘。	这只生物已分配到池塘。		
+The creature is assigned to a pit.	這隻生物已指派到坑。	这只生物已分配到坑。		
+Edit the recenter hotkey locations.	編輯視角快捷鍵位置。	编辑镜头快捷键位置。		
+Recenter on the surface at this location.	將視角移到此處的地表。	将镜头移到此处的地表。		
+Recenter on the deepest discovered area at this location.	將視角移到此處已探索的最深處。	将镜头移到此处已发现的最深处。		
+Recenter on this location.	將視角移到這個位置。	将镜头移到这个位置。		
+Set this entry to recenter on the current view.	將這一項設為目前的視角位置。	将此项设为当前的镜头位置。		
+Clear this recenter hotkey location.	清除這個視角快捷鍵位置。	清除这个镜头快捷键位置。		
+Delete this recenter location.	刪除這個視角位置。	删除这个镜头位置。		
+Display water and magma depth numerically (1 to 7.)	以數字顯示水與熔岩的深度（1 至 7）。	以数字显示水和熔岩的深度（1 到 7）。		
+Show up and down arrows over ramps at the current elevation.	在目前高度的斜坡上顯示上下箭頭。	在当前高度的斜坡上显示上下箭头。		
+Zoom in on the play area.	放大遊戲畫面。	放大游戏画面。		
+Zoom out from the play area.	縮小遊戲畫面。	缩小游戏画面。		
+Open the stocks window, where you can see all of your fortress's items.	開啟庫存視窗，查看要塞裡的所有物品。	打开库存窗口，查看要塞中的所有物品。		
+View all alerts.	檢視所有警報。	查看所有警报。		
+Most tasks in the fortress are started and completed at workshops.  Tasks generally require raw materials and most workshops are constructed from boulders, blocks, or wood.	要塞裡大多數任務都在工坊開始並完成。任務通常需要原料，而大多數工坊是用石塊、磚塊或木材建造的。	要塞中的大多数任务都在工坊中开始和完成。任务通常需要原材料，大多数工坊用石块、砖块或木材建造。		
+Furnaces are used for smelting, glassmaking, pottery, ashmaking, or to make fuel from wood or raw coal.  Furnaces require fuel to function, or they can be set above magma.	熔爐用於冶煉、製作玻璃、燒製陶器、製灰，或用木材、原煤製作燃料。熔爐需要燃料才能運作，也可以蓋在熔岩上方。	熔炉用于冶炼、制作玻璃、烧制陶器、制灰，或用木材、原煤制作燃料。熔炉需要燃料才能运转，也可以建在熔岩上方。		
+These workshops are used in the clothesmaking process, whether dyeing and weaving or using tanned hides.	這些工坊用於製衣流程，不論是染色與織布，或是使用鞣製好的皮革。	这些工坊用于制衣流程，无论是染色和织布，还是使用鞣制好的皮革。		
+A wide variety of food-and-drink-related workshops can be found in this category.	這個分類裡有各式各樣與飲食相關的工坊。	这个类别中有各种与饮食相关的工坊。		
+Use options in this category to place furniture that has already been constructed in a workshop.	用這個分類的選項放置已在工坊製作好的家具。	使用此类别中的选项放置已在工坊中制作好的家具。		
+Place doors and hatches here after you have constructed them in an appropriate workshop.	在合適的工坊做好門與活蓋後，在這裡放置。	在相应的工坊中做好门和活盖后，在这里放置。		
+Most terrain-altering constructions can be found here, from walls and floors to bridges, ramps, stairs, and more.	大多數改變地形的建築結構都在這裡，從牆壁、地板到橋、斜坡、樓梯等等。	大多数改变地形的建筑结构都在这里，从墙壁、地板到桥、斜坡、楼梯等等。		
+More complicated buildings from wells to powered machine components to levers and floodgates are found here.	較複雜的建築都在這裡，從水井、動力機械零件，到拉桿與水閘。	较复杂的建筑都在这里，从水井、动力机械零件，到拉杆和水闸。		
+Cages, ropes, and animal traps are found here.  Cages can be used in cage traps or to transport large animals.  Metal cages and chains are also used by the justice system.	籠子、繩索與捕獸器都在這裡。籠子可用於籠子陷阱，或用來運送大型動物。金屬籠子與鎖鏈也會用於司法系統。	笼子、绳索和捕兽器都在这里。笼子可用于笼子陷阱，或用来运送大型动物。金属笼子和锁链也会被司法系统使用。		
+Various mechanical traps can be found here.  The pressure plate is also found here, which has applications beyond traps.	這裡有各種機關陷阱。壓力板也在這裡，它的用途不只是陷阱。	这里有各种机关陷阱。压力板也在这里，它的用途不仅限于陷阱。		
+Archery targets, siege weapons, and some ornamental display items can be found in this category.	這個分類裡有箭靶、攻城器械，以及一些裝飾用的展示品。	这个类别中有箭靶、攻城器械以及一些装饰性的展示物品。		
+This crucial building is where all trading will be done.  Pack animals from distant civilizations will need to access this building from the edge of the map.  Later, wagons will need a clear 3-wide path to the depot.	所有貿易都在這座關鍵建築進行。來自遠方文明的馱獸必須能從地圖邊緣抵達這裡。之後，篷車還需要一條 3 格寬的暢通道路才能到貿易站。	所有贸易都在这座关键建筑中进行。来自远方文明的驮兽必须能从地图边缘到达这里。之后，篷车还需要一条 3 格宽的畅通道路才能到达贸易站。		
+Used to make lye, potash, and milk of lime.  Construction requires blocks, barrel, and a bucket.	用來製作鹼液、鉀鹼與石灰乳。建造需要磚塊、桶與水桶。	用于制作碱液、钾碱和石灰乳。建造需要砖块、桶和水桶。		
+Make crossbows here from wood or bone.  The metalsmith's forge can be used for metal crossbows and metal bolts, and the crafts workshop is used to make other bolts.	在這裡用木材或骨頭製作弩。金屬弩與金屬弩箭可在金屬匠鍛爐製作，其他弩箭則在工藝工坊製作。	在这里用木材或骨头制作弩。金属弩和金属弩箭可在金属匠锻炉制作，其他弩箭则在工艺工坊制作。		
+Make beds and various furniture here, as well as bins, barrels, and more.	在這裡製作床與各種家具，還有貨箱、桶等等。	在这里制作床和各种家具，还有货箱、桶等等。		
+Make crafts for trade and your own citizens here, as well as a variety of tools, armor, and bolts.	在這裡製作工藝品，用於貿易或給自家居民，也能做各種工具、盔甲與弩箭。	在这里制作工艺品，可用于贸易或供自家居民使用，也能制作各种工具、盔甲和弩箭。		
+Cut rough gems here to increase their value, and improve the value of other objects by encrusting them with cut gems.	在這裡把未切割寶石切割成形以提高價值，也能把切好的寶石鑲嵌到其他物品上提高其價值。	在这里切割未切割宝石以提高其价值，还能把切好的宝石镶嵌到其他物品上以提高其价值。		
+Forge weapons and armor here, as well as most other metal objects from furniture to trap components.  Magma below the forge will power tasks.  You are responsible for placing the forge above the magma, but no other fuel is required.	在這裡鍛造武器與盔甲，以及從家具到陷阱零件等大多數金屬物品。鍛爐下方的熔岩會為任務提供能源。你得自己把鍛爐蓋在熔岩上方，但不需要其他燃料。	在这里锻造武器和盔甲，以及从家具到陷阱零件的大多数金属物品。锻炉下方的熔岩会为任务提供能源。你需要自行把锻炉建在熔岩上方，但不需要其他燃料。		
+Make mechanisms here which are used to make levers, pressure plates, and gears.  You can also use mechanisms to link levers and pressure plates to other machinery.	在這裡製作機械裝置，用來做拉桿、壓力板與齒輪組。也可以用機械裝置把拉桿和壓力板連結到其他機械。	在这里制作机械装置，用于制作拉杆、压力板和齿轮组。也可以用机械装置把拉杆和压力板连接到其他机械上。		
+Forge weapons and armor here, as well as most other metal objects from furniture to trap components.  These tasks require fuel.	在這裡鍛造武器與盔甲，以及從家具到陷阱零件等大多數金屬物品。這些任務需要燃料。	在这里锻造武器和盔甲，以及从家具到陷阱零件的大多数金属物品。这些任务需要燃料。		
+Here you can make parts for ballistae and catapults.  This workshop is also the place where ballista ammo is assembled.	在這裡可以製作弩砲與投石機的零件。弩砲彈藥也是在這座工坊組裝。	在这里可以制作弩炮和投石机的零件。弩炮弹药也在这座工坊中组装。		
+Make stone furniture here, as well as blocks which are used in constructions.	在這裡製作石製家具，以及建築結構用的磚塊。	在这里制作石制家具，以及用于建筑结构的砖块。		
+Use leather tanned at the tanner's shop here to make clothing and tools, such as bags and waterskins.	在這裡用製革工坊鞣好的皮革製作衣物和工具，例如袋子和水袋。	在这里用制革工坊鞣好的皮革制作衣物和工具，例如袋子和水囊。		
+Here you can turn thread into cloth, whether it is thread from the farmer's workshop or spider silk gathered underground.	在這裡可以把線織成布料，無論是來自農夫工坊的線，還是在地底採集的蜘蛛絲。	在这里可以把线织成布料，无论是来自农夫工坊的线，还是在地下采集的蜘蛛丝。		
+Make cloth into clothing and tools here, such as bags and ropes.	在這裡把布料做成衣物和工具，例如袋子和繩索。	在这里把布料做成衣物和工具，例如袋子和绳索。		
+Use dyes here to color thread and cloth.  Requires a barrel and bucket for construction.	在這裡用染料替線和布料染色。建造需要桶和水桶。	在这里用染料给线和布料染色。建造需要桶和水桶。		
+Brew alcohol from plants, fruit, or honey.	用植物、果實或蜂蜜釀酒。	用植物、水果或蜂蜜酿酒。		
+Slaughter livestock here in order to obtain meat, hides, bones, and other animal products.	在這裡屠宰牲畜，取得肉、生皮、骨頭和其他動物產品。	在这里宰杀牲畜，获得肉、生皮、骨头和其他动物产品。		
+Make leather from animal hides here.  You can also make parchment using milk of lime and a hide.	在這裡用動物生皮製作皮革。也可以用石灰乳和生皮製作羊皮紙。	在这里用动物生皮制作皮革。也可以用石灰乳和生皮制作羊皮纸。		
+Process raw fish into edible food here.  Raw fish will not be eaten.	在這裡把生魚處理成可食用的食物。沒人會吃生魚。	在这里把生鱼加工成可食用的食物。没人会吃生鱼。		
+Cook meals here.  You can also render fat into tallow.	在這裡烹煮餐點。也可以把脂肪熬成獸脂。	在这里烹饪饭菜。也可以把脂肪熬成兽脂。		
+Process plants and work with livestock here.  Milk and shear animals, make cheese, and spin thread.	在這裡加工植物和處理牲畜：替動物擠奶、剪毛，製作起司，以及紡線。	在这里加工植物和处理牲畜：给动物挤奶、剪毛，制作奶酪，以及纺线。		
+Make sugar, flour, and various useful slurries here.  Tasks are completed very slowly compared to the powered millstone.	在這裡製作糖、麵粉與各種有用的漿料。任務完成得比動力石磨慢很多。	在这里制作糖、面粉和各种有用的浆料。与动力石磨相比，任务完成得非常慢。		
+Capture and train small animals here.  Requires animal traps.	在這裡捕捉並訓練小動物。需要捕獸器。	在这里捕捉并训练小动物。需要捕兽器。		
+Make sugar, flour, and various useful slurries here.  Powered version of the quern.  Must be hooked to a windmill or water wheel to function.	在這裡製作糖、麵粉與各種有用的漿料。這是手推磨的動力版本，必須連接風車或水車才能運作。	在这里制作糖、面粉和各种有用的浆料。这是手推磨的动力版本，必须连接风车或水车才能运转。		
+You can make a variety of objects using three different types of glass.  You can also collect sand in bags from a task originating here, if you have a sand collection zone.  Glassmaking requires fuel.	可以用三種不同的玻璃製作各種物品。如果有採沙區域，也可以從這裡發起任務，把沙子裝進袋子。製作玻璃需要燃料。	可以用三种不同的玻璃制作各种物品。如果设有采沙区域，还可以在这里发起任务，把沙子装进袋子。制作玻璃需要燃料。		
+Bake clay objects here, as well as a few other useful materials.  Clay can also be collected here if you have a clay collection zone.  All tasks require fuel aside from clay collection.	在這裡燒製黏土物品，以及其他幾種有用的材料。如果有採黏土區域，也可以在這裡採集黏土。除了採集黏土，所有任務都需要燃料。	在这里烧制黏土物品，以及其他几种有用的材料。如果设有采黏土区域，也可以在这里采集黏土。除采集黏土外，所有任务都需要燃料。		
+You can make a variety of objects using three different types of glass.  You can also collect sand in bags from a task originating here, if you have a sand collection zone.  Magma below the furnace will power tasks.  You are responsible for placing the furnace above the magma, but no other fuel is required.	可以用三種不同的玻璃製作各種物品。如果有採沙區域，也可以從這裡發起任務，把沙子裝進袋子。熔爐下方的熔岩會為任務提供能源。你得自己把熔爐蓋在熔岩上方，但不需要其他燃料。	可以用三种不同的玻璃制作各种物品。如果设有采沙区域，还可以在这里发起任务，把沙子装进袋子。熔炉下方的熔岩会为任务提供能源。你需要自行把熔炉建在熔岩上方，但不需要其他燃料。		
+Bake clay objects here, as well as a few other useful materials.  Clay can also be collected here if you have a clay collection zone.  Magma below the kiln will power tasks.  You are responsible for placing the kiln above the magma, but no other fuel is required.	在這裡燒製黏土物品，以及其他幾種有用的材料。如果有採黏土區域，也可以在這裡採集黏土。窯爐下方的熔岩會為任務提供能源。你得自己把窯爐蓋在熔岩上方，但不需要其他燃料。	在这里烧制黏土物品，以及其他几种有用的材料。如果设有采黏土区域，也可以在这里采集黏土。窑炉下方的熔岩会为任务提供能源。你需要自行把窑炉建在熔岩上方，但不需要其他燃料。		
+Make metal bars from ore here.  Can also refine coal into usable fuel or make alloys.  Magma below the smelter will power tasks.  You are responsible for placing the smelter above the magma, but no other fuel is required.	在這裡用礦石製作金屬錠。也能把煤精煉成可用的燃料，或製作合金。冶煉爐下方的熔岩會為任務提供能源。你得自己把冶煉爐蓋在熔岩上方，但不需要其他燃料。	在这里用矿石制作金属锭。也能把煤精炼成可用的燃料，或制作合金。冶炼炉下方的熔岩会为任务提供能源。你需要自行把冶炼炉建在熔岩上方，但不需要其他燃料。		
+Make metal bars from ore here.  Can also refine coal into usable fuel or make alloys.  All tasks require fuel.	在這裡用礦石製作金屬錠。也能把煤精煉成可用的燃料，或製作合金。所有任務都需要燃料。	在这里用矿石制作金属锭。也能把煤精炼成可用的燃料，或制作合金。所有任务都需要燃料。		
+Make charcoal and ash from wood here.  Does not require fuel.	在這裡用木材製作木炭與灰燼。不需要燃料。	在这里用木材制作木炭和灰烬。不需要燃料。		
+Plant crops at the farmplot.  You will need seeds or spawn and must select crops by season.  Crops can be fertilized with potash.  Soil is richer deeper underground.	在農田種植作物。你需要種子或菌種，並且要依季節選擇作物。作物可以用鉀鹼施肥。地底越深，土壤越肥沃。	在农田种植作物。你需要种子或菌种，并且要按季节选择作物。作物可以用钾碱施肥。地下越深，土壤越肥沃。		
