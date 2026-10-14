@@ -220,6 +220,9 @@ local function start()
 
     ok, err = attach_hooks(engine, dir, hooks)
     if not ok then return fail('%s', err) end
+    -- 提示框等自動換行的文字（enable 時也補做遊戲啟動時就切好的提示）；找不到只有這些維持英文
+    ok, err = attach_hooks(engine, dir, {'wrap_text'})
+    if not ok then fail('%s；提示框文字維持英文', err) end
     ok, err = engine.enable()
     if not ok then return fail('%s', err) end
     -- 依畫面套用的譯文要知道現在在哪個畫面：每幀把 DFHack 的焦點字串告訴引擎（'frames' 計時器在世界卸載後也繼續）

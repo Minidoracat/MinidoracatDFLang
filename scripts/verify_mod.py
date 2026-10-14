@@ -31,7 +31,7 @@ from cp437 import BYTE_OF, cells, encodable
 
 ROOT = Path(__file__).resolve().parents[1]
 HEADER = ["en", "zh-Hant", "zh-Hans", "align", "note"]
-HOOKS = ("addst", "addst_flag", "top_addst", "addcoloredst", "mtb_set_width", "add_anchored_tile")
+HOOKS = ("addst", "addst_flag", "top_addst", "addcoloredst", "mtb_set_width", "add_anchored_tile", "wrap_text")
 PACKAGE_SUFFIXES = {".txt", ".tsv", ".lua", ".dll", ".otf", ".md", ".png"}
 PLACEHOLDER = re.compile(r"\{[#@]?([1-9])\}")  # {1}～{9}；{#1} 只收數字、{@1} 只收字典裡的字詞
 MARKUP = re.compile(r"\[(?:[RBP]|C:\d+:\d+:\d+)\]")  # 段落的換行與換色標記

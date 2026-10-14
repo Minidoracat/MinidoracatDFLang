@@ -86,9 +86,14 @@ type ColoredFn = unsafe extern "C" fn(*mut u8, *const u8, *const u8);
 type SetWidthFn = unsafe extern "C" fn(*mut u8, i32);
 /// (gps, 貼圖, 錨點 x, 錨點 y, 寬幾格, 高幾格, 用畫面顏色上色)
 type AnchoredFn = unsafe extern "C" fn(*mut u8, i32, i32, i32, i32, i32, u8);
+/// (切好的行要接在後面的 vector<string*>, 原文, 寬幾格)
+type WrapFn = unsafe extern "C" fn(*mut u8, *const StdString, i32);
 
-pub const HOOKS: [&str; 6] = ["addst", "addst_flag", "top_addst", "addcoloredst", "mtb_set_width", "add_anchored_tile"];
-static TRAMPOLINES: [AtomicUsize; 6] = [const { AtomicUsize::new(0) }; 6];
+pub const HOOKS: [&str; 7] =
+    ["addst", "addst_flag", "top_addst", "addcoloredst", "mtb_set_width", "add_anchored_tile", "wrap_text"];
+static TRAMPOLINES: [AtomicUsize; 7] = [const { AtomicUsize::new(0) }; 7];
+/// wrap_text 的位址：enable 時從呼叫它的程式碼找出遊戲啟動時就切好的提示（見 lines.rs）
+pub static WRAP_TEXT: OnceLock<usize> = OnceLock::new();
 
 struct Detours(Vec<RawDetour>);
 // RawDetour 只在持有鎖時由 Lua 指令啟停；遊戲執行緒只讀 TRAMPOLINES。
@@ -103,11 +108,15 @@ pub fn attach(name: &str, target: usize) -> Result<(), String> {
         2 => hook_top_addst as *const (),
         3 => hook_addcoloredst as *const (),
         4 => hook_mtb_set_width as *const (),
-        _ => hook_add_anchored_tile as *const (),
+        5 => hook_add_anchored_tile as *const (),
+        _ => hook_wrap_text as *const (),
     };
     let detour = unsafe { RawDetour::new(target as *const (), hook) }.map_err(|e| e.to_string())?;
     TRAMPOLINES[index].store(detour.trampoline() as *const () as usize, Ordering::Release);
     DETOURS.lock().0.push(detour);
+    if name == "wrap_text" {
+        let _ = WRAP_TEXT.set(target);
+    }
     Ok(())
 }
 
@@ -261,14 +270,20 @@ fn top_layer(l: &Layout) -> Layer {
     l.top
 }
 
-/// 段落單字（見 mtb.rs）：照畫英文、不畫，或在載體的座標上畫幾段中文。回傳 false 表示不是段落單字。
-/// `draw` 用遊戲原本的寫字函式畫一個字串（段落單字本身，或中文段的替身字串）。
+/// 段落單字與自動換行的行（見 mtb.rs、lines.rs）：照畫英文、不畫，或在載體的座標上畫幾段中文。回傳 false 表示都不是。
+/// `draw` 用遊戲原本的寫字函式畫一個字串（載體本身，或中文段的替身字串）。
 unsafe fn paragraph_word(gps: *mut u8, s: *const StdString, layer: fn(&Layout) -> Layer, draw: impl Fn(&StdString)) -> bool {
-    let Some(plan) = (unsafe { crate::mtb::word_plan(s as usize) }) else { return false };
+    let plan = unsafe { crate::mtb::word_plan(s as usize).or_else(|| crate::lines::line_plan(s as usize)) };
+    let Some(plan) = plan else { return false };
     flush_label();
     let dict = DICT.load(Ordering::Acquire);
     let pieces = match plan {
         Plan::Plain => {
+            unsafe { draw(&*s) };
+            return true;
+        }
+        Plan::Missing(text) => {
+            note_miss("wrap", &text);
             unsafe { draw(&*s) };
             return true;
         }
@@ -284,8 +299,10 @@ unsafe fn paragraph_word(gps: *mut u8, s: *const StdString, layer: fn(&Layout) -
         for p in pieces.iter() {
             write(gps, layout.screenx, x + p.dx);
             write(gps, layout.screeny, y + p.dy);
-            for (off, c) in layout.color.iter().zip(p.color) {
-                write(gps, *off, c);
+            if let Some(c) = p.color {
+                for (off, v) in layout.color.iter().zip(c) {
+                    write(gps, *off, v);
+                }
             }
             draw(&StdString::borrowed(p.entry.shadow()));
             paint(gps, &layer(layout), x + p.dx, y + p.dy, &p.entry.glyphs, &dict.texpos);
@@ -354,7 +371,7 @@ unsafe extern "C" fn hook_addcoloredst(gps: *mut u8, s: *const u8, colors: *cons
     }
 }
 
-/// 段落排版：原函式依寬度排完英文單字後，整段有譯文就改寫成中文的行。
+/// 段落排版：原函式依寬度排完英文單字後，整段有譯文就訂好每個單字的畫字計畫（見 mtb.rs）。
 unsafe extern "C" fn hook_mtb_set_width(mtb: *mut u8, width: i32) {
     let orig: SetWidthFn = unsafe { std::mem::transmute(TRAMPOLINES[4].load(Ordering::Acquire)) };
     unsafe { orig(mtb, width) };
@@ -363,6 +380,21 @@ unsafe extern "C" fn hook_mtb_set_width(mtb: *mut u8, width: i32) {
         return;
     }
     unsafe { crate::mtb::rewrite(mtb as usize, &*dict, |key| note_miss("mtb", key)) };
+}
+
+/// 自動換行：原函式把一句切成好幾行、接在 out 後面；替這次切出來的行訂畫字計畫（見 lines.rs）。
+unsafe extern "C" fn hook_wrap_text(out: *mut u8, text: *const StdString, width: i32) {
+    let orig: WrapFn = unsafe { std::mem::transmute(TRAMPOLINES[6].load(Ordering::Acquire)) };
+    let before = unsafe { crate::lines::vec_len(out as usize) };
+    unsafe { orig(out, text, width) };
+    let dict = DICT.load(Ordering::Acquire);
+    if dict.is_null() || !ENABLED.load(Ordering::Relaxed) {
+        return;
+    }
+    unsafe {
+        let lines = crate::lines::vec_items(out as usize);
+        crate::lines::plan(&lines[before.min(lines.len())..], (*text).bytes(), width, &*dict, false);
+    }
 }
 
 // ---- 逐字畫成貼圖的分頁標籤 ----

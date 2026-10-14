@@ -2,20 +2,21 @@
 //!
 //! DFHack 的 Lua 以 `package.loadlib(dll, "luaopen_dflang")` 載入，回傳一張函式表；
 //! 不連結 dfhack.dll，所以不綁 DFHack 版本，也不依賴其他 MOD。載入順序（見 lua/loader.lua）：
-//! set_layout／set_mtb_layout／set_fonts → render_atlas → set_glyphs → load／load_rules／load_screens → scan/attach → enable；
-//! 之後每幀 set_focus（依畫面套用的譯文用）。
+//! set_layout／set_mtb_layout／set_fonts → render_atlas → set_glyphs → load／load_rules／load_screens → scan/attach → enable
+//! （enable 時補登記遊戲啟動時就切好的提示文字，見 lines.rs）；之後每幀 set_focus（依畫面套用的譯文用）。
 
 mod atlas;
 mod cp437;
 mod dict;
 mod hooks;
 mod image;
+mod lines;
 mod lua;
 mod mtb;
 mod scan;
 
 use std::ffi::{c_int, CStr};
-use std::sync::atomic::Ordering;
+use std::sync::atomic::{AtomicUsize, Ordering};
 
 use parking_lot::Mutex;
 
@@ -24,6 +25,8 @@ use hooks::{Layer, Layout};
 
 /// 載入中、尚未啟用的字典；enable 時才交給 hook。
 static STAGING: Mutex<Option<Dict>> = Mutex::new(None);
+/// 遊戲啟動時就切好、而且有譯文的提示句數（status 顯示）
+static STATIC_WRAPS: AtomicUsize = AtomicUsize::new(0);
 
 #[unsafe(no_mangle)]
 pub unsafe extern "C" fn luaopen_dflang(l: lua::State) -> c_int {
@@ -325,8 +328,12 @@ unsafe extern "C" fn enable(l: lua::State) -> c_int {
             // 舊字典刻意不釋放：遊戲執行緒可能正在讀它；重新載入是少見的開發操作
             hooks::DICT.swap(Box::into_raw(Box::new(dict)), Ordering::AcqRel);
         }
-        if hooks::DICT.load(Ordering::Acquire).is_null() {
+        let dict = hooks::DICT.load(Ordering::Acquire);
+        if dict.is_null() {
             return fail(l, "enable: no dictionary loaded");
+        }
+        if let Some(&wrap_text) = hooks::WRAP_TEXT.get() {
+            STATIC_WRAPS.store(lines::plan_static(wrap_text, &*dict), Ordering::Relaxed);
         }
         match hooks::set_enabled(true) {
             Ok(()) => ok(l),
@@ -344,7 +351,7 @@ unsafe extern "C" fn disable(l: lua::State) -> c_int {
     }
 }
 
-/// status() → {enabled, hooks, entries, rules, glyphs, hits, misses}
+/// status() → {enabled, hooks, entries, rules, glyphs, wraps, hits, misses}
 unsafe extern "C" fn status(l: lua::State) -> c_int {
     unsafe {
         let dict = hooks::DICT.load(Ordering::Acquire);
@@ -358,6 +365,7 @@ unsafe extern "C" fn status(l: lua::State) -> c_int {
             (c"entries", entries as i64),
             (c"rules", rules as i64),
             (c"glyphs", glyphs as i64),
+            (c"wraps", STATIC_WRAPS.load(Ordering::Relaxed) as i64),
             (c"hits", hooks::HITS.load(Ordering::Relaxed) as i64),
             (c"misses", hooks::MISSES.load(Ordering::Relaxed) as i64),
         ] {

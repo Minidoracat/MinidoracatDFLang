@@ -37,8 +37,8 @@ end
 
 if cmd == 'status' or not cmd then
     local s = engine.status()
-    print(('DFLang %s：%s；hook %d 個、譯文 %d 條、句型 %d 條、字圖 %d 個；本次命中 %d 次、未命中 %d 次'):format(
-        state.lang, s.enabled and '啟用中' or '已關閉', s.hooks, s.entries, s.rules, s.glyphs, s.hits, s.misses))
+    print(('DFLang %s：%s；hook %d 個、譯文 %d 條、句型 %d 條、字圖 %d 個、啟動時切好的提示 %d 句有譯文；本次命中 %d 次、未命中 %d 次'):format(
+        state.lang, s.enabled and '啟用中' or '已關閉', s.hooks, s.entries, s.rules, s.glyphs, s.wraps, s.hits, s.misses))
 elseif cmd == 'on' then
     check(engine.enable())
 elseif cmd == 'off' then

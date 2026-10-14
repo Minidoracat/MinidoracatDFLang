@@ -66,20 +66,22 @@ struct State {
 
 static STATES: LazyLock<Mutex<HashMap<usize, State>>> = LazyLock::new(|| Mutex::new(HashMap::new()));
 
-/// 一段中文：畫在載體單字座標＋(dx, dy)，用 color 上色。
+/// 一段中文：畫在載體字串座標＋(dx, dy)；color 有值時用它上色，沒有就沿用遊戲當下的顏色。
 pub struct Piece {
     pub dx: i32,
     pub dy: i32,
-    pub color: [u8; 3],
+    pub color: Option<[u8; 3]>,
     pub entry: Entry,
 }
 
-/// 段落單字被畫到時要做的事。
+/// 段落單字或自動換行的一行被畫到時要做的事。
 #[derive(Clone)]
 pub enum Plan {
-    /// 沒有譯文的段落：照畫英文，不查字典
+    /// 沒有譯文：照畫英文，不查字典
     Plain,
-    /// 有譯文的段落裡不負責畫中文的單字：不畫
+    /// 沒有譯文的提示行（見 lines.rs）：照畫英文，畫到時把整句記成未翻譯（不記片段）
+    Missing(Arc<[u8]>),
+    /// 有譯文，但這個字串不負責畫中文：不畫
     Skip,
     /// 載體：畫這幾段中文
     Draw(Arc<[Piece]>),
@@ -383,7 +385,7 @@ unsafe fn plan_words(words: &[usize], width: i32, translation: &str, dict: &Dict
             // 那列英文是空行時往下找，再沒有就用最後一個單字
             let &(i, wx, wy) = drawable.iter().find(|d| d.2 == py).or_else(|| drawable.iter().find(|d| d.2 > py))
                 .or(drawable.last())?;
-            pieces[i].push(Piece { dx: px - wx, dy: py - wy, color, entry });
+            pieces[i].push(Piece { dx: px - wx, dy: py - wy, color: Some(color), entry });
         }
         Some(pieces.into_iter().map(|p| if p.is_empty() { Plan::Skip } else { Plan::Draw(p.into()) }).collect())
     }
@@ -519,6 +521,7 @@ mod tests {
     fn plan_of(w: usize) -> &'static str {
         match unsafe { word_plan(w) } {
             Some(Plan::Plain) => "plain",
+            Some(Plan::Missing(_)) => "missing",
             Some(Plan::Skip) => "skip",
             Some(Plan::Draw(_)) => "draw",
             None => "none",
@@ -571,8 +574,8 @@ mod tests {
             assert!(rewrite(p.mtb, &d, |_| {}));
             // 「開鑿」維持第一個字的顏色，「大地」換成調色盤第 10 格；兩段都在第 0 列，由第一個單字畫
             let Some(Plan::Draw(pieces)) = word_plan(p.words[0]) else { panic!("第一個單字要畫中文") };
-            let colors: Vec<[u8; 3]> = pieces.iter().map(|p| p.color).collect();
-            assert_eq!(colors, [PALETTE[7], PALETTE[10]]);
+            let colors: Vec<Option<[u8; 3]>> = pieces.iter().map(|p| p.color).collect();
+            assert_eq!(colors, [Some(PALETTE[7]), Some(PALETTE[10])]);
             assert_eq!(pieces[1].dx, 4, "「大地」接在「開鑿」（4 格）後面");
         }
     }
