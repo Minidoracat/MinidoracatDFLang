@@ -1,0 +1,88 @@
+en	zh-Hant	zh-Hans	align	note
+The world generator is having trouble placing enough mountain peaks.	世界生成器難以放置足夠的山峰。	世界生成器难以放置足够的山峰。		FUN_140df0660 L2090723 世界生成拒絕說明 case 0 山峰
+You might want to check your maximum elevation value and other elevation parameters.	建議檢查最大高度值與其他高度參數。	建议检查最大高度值和其他高度参数。		FUN_140df0660 L2090723 世界生成拒絕說明 case 0 山峰（沒有預設地圖時）
+Can the elevation 400 be placed enough times to provide space for your peaks?	高度 400 能否出現足夠多次，讓你的山峰都有位置？	高度 400 能否出现足够多次，让你的山峰都有位置？		FUN_140df0660 L2090723 世界生成拒絕說明 case 0 山峰（沒有預設地圖時）
+You might want to check your preset elevations for the elevation 400.	建議檢查預設高度裡有沒有高度 400。	建议检查预设高度里有没有高度 400。		FUN_140df0660 L2090723 世界生成拒絕說明 case 0 山峰（有預設高度時）；preset 是預設地圖值，不是 default；術語例外：预设
+You must have at least as many of these highest elevation points as you are requiring peaks.	這種最高高度點的數量至少要和你要求的山峰數一樣多。	这种最高高度点的数量至少要和你要求的山峰数一样多。		FUN_140df0660 L2090723 世界生成拒絕說明 case 0 山峰（有預設高度時）
+Alternatively, you can reduce the number of peaks required by the parameters.	或者，也可以減少參數要求的山峰數量。	或者，也可以减少参数要求的山峰数量。		FUN_140df0660 L2090723 世界生成拒絕說明 case 0 山峰
+The world generator is having trouble placing enough mid-level elevations.	世界生成器難以放置足夠的中等高度地形。	世界生成器难以放置足够的中等高度地形。		FUN_140df0660 L2090744–2090975 世界生成拒絕說明 case 1–5/0x20–0x22 高度分布（遊戲內聯切行，沒經 FUN_1408e7310）
+The world generator is having trouble placing enough low elevations.	世界生成器難以放置足夠的低地。	世界生成器难以放置足够的低地。		FUN_140df0660 L2090744–2090975 世界生成拒絕說明 case 1–5/0x20–0x22 高度分布；低地／高地即低／高高度；術語例外：elevation
+The world generator is having trouble placing enough high elevations.	世界生成器難以放置足夠的高地。	世界生成器难以放置足够的高地。		FUN_140df0660 L2090744–2090975 世界生成拒絕說明 case 1–5/0x20–0x22 高度分布；低地／高地即低／高高度；術語例外：elevation
+Can your parameters achieve elevations between 100 and 299?	你的參數能產生 100 到 299 之間的高度嗎？	你的参数能产生 100 到 299 之间的高度吗？		FUN_140df0660 L2090744–2090975 世界生成拒絕說明 case 1–5/0x20–0x22 高度分布
+Can your parameters achieve elevations between 0 and 99?	你的參數能產生 0 到 99 之間的高度嗎？	你的参数能产生 0 到 99 之间的高度吗？		FUN_140df0660 L2090744–2090975 世界生成拒絕說明 case 1–5/0x20–0x22 高度分布
+Can your parameters achieve elevations between 300 and 400?	你的參數能產生 300 到 400 之間的高度嗎？	你的参数能产生 300 到 400 之间的高度吗？		FUN_140df0660 L2090744–2090975 世界生成拒絕說明 case 1–5/0x20–0x22 高度分布
+You might want to adjust the parameters governing elevation frequencies.	建議調整控制高度分布頻率的參數。	建议调整控制高度分布频率的参数。		FUN_140df0660 L2090744–2090975 世界生成拒絕說明 case 1–5/0x20–0x22 高度分布
+Alternatively, you can reduce the number of mid-level elevation squares required.	或者，也可以減少要求的中等高度格數。	或者，也可以减少要求的中等高度格数。		FUN_140df0660 L2090744–2090975 世界生成拒絕說明 case 1–5/0x20–0x22 高度分布；低地、高地兩種情況遊戲也接這句（原文如此）
+The world generator is having trouble placing enough ocean squares along the edges.	世界生成器難以在地圖邊緣放置足夠的海洋格。	世界生成器难以在地图边缘放置足够的海洋格。		FUN_140df0660 L2090977 世界生成拒絕說明 case 6 邊緣海洋
+Can your parameters achieve elevations between 0 and 99 frequently?	你的參數能經常產生 0 到 99 之間的高度嗎？	你的参数能经常产生 0 到 99 之间的高度吗？		FUN_140df0660 L2090977 世界生成拒絕說明 case 6 邊緣海洋
+You might want to adjust the parameters governing elevation.	建議調整控制高度的參數。	建议调整控制高度的参数。		FUN_140df0660 L2090977 世界生成拒絕說明 case 6 邊緣海洋
+Alternatively, you can reduce the number of edge oceans required.	或者，也可以減少要求的邊緣海洋數量。	或者，也可以减少要求的边缘海洋数量。		FUN_140df0660 L2090977 世界生成拒絕說明 case 6 邊緣海洋
+The world generator is having trouble placing rainfall in the manner specified by the parameters.	世界生成器難以依照參數指定的方式分配降雨量。	世界生成器难以按照参数指定的方式分配降雨量。		FUN_140df0660 L2090988 世界生成拒絕說明 case 7 降雨量
+You might want to adjust the parameters governing rainfall.	建議調整控制降雨量的參數。	建议调整控制降雨量的参数。		FUN_140df0660 L2090988 世界生成拒絕說明 case 7 降雨量
+Alternatively, you can reduce the number of high, medium or low rainfall squares required.	或者，也可以減少要求的高、中或低降雨量格數。	或者，也可以减少要求的高、中或低降雨量格数。		FUN_140df0660 L2090988 世界生成拒絕說明 case 7 降雨量
+The world generator is having trouble setting drainage in the manner specified by the parameters.	世界生成器難以依照參數指定的方式設定排水。	世界生成器难以按照参数指定的方式设置排水。		FUN_140df0660 L2090999 世界生成拒絕說明 case 8 排水
+You might want to adjust the parameters governing drainage.	建議調整控制排水的參數。	建议调整控制排水的参数。		FUN_140df0660 L2090999 世界生成拒絕說明 case 8 排水
+Alternatively, you can reduce the number of high, medium or low drainage squares required.	或者，也可以減少要求的高、中或低排水格數。	或者，也可以减少要求的高、中或低排水格数。		FUN_140df0660 L2090999 世界生成拒絕說明 case 8 排水
+The world generator is having trouble placing savagery in the manner specified by the parameters.	世界生成器難以依照參數指定的方式分配野性。	世界生成器难以按照参数指定的方式分配野性。		FUN_140df0660 L2091010 世界生成拒絕說明 case 9 野性
+You might want to adjust the parameters governing savagery.	建議調整控制野性的參數。	建议调整控制野性的参数。		FUN_140df0660 L2091010 世界生成拒絕說明 case 9 野性
+Alternatively, you can reduce the number of high, medium or low savagery squares required.	或者，也可以減少要求的高、中或低野性格數。	或者，也可以减少要求的高、中或低野性格数。		FUN_140df0660 L2091010 世界生成拒絕說明 case 9 野性
+The world generator is having trouble setting volcanism in the manner specified by the parameters.	世界生成器難以依照參數指定的方式設定火山活動。	世界生成器难以按照参数指定的方式设置火山活动。		FUN_140df0660 L2091021 世界生成拒絕說明 case 10 火山活動
+You might want to adjust the parameters governing volcanism.	建議調整控制火山活動的參數。	建议调整控制火山活动的参数。		FUN_140df0660 L2091021 世界生成拒絕說明 case 10 火山活動
+Alternatively, you can reduce the number of high, medium or low volcanism squares required.	或者，也可以減少要求的高、中或低火山活動格數。	或者，也可以减少要求的高、中或低火山活动格数。		FUN_140df0660 L2091021 世界生成拒絕說明 case 10 火山活動
+The world generator is having trouble placing swamps and marshes.	世界生成器難以放置沼澤與濕地。	世界生成器难以放置沼泽和湿地。		FUN_140df0660 L2091032 世界生成拒絕說明 case 0xb/0x15/0x2b 沼澤與濕地
+Make sure your parameters and presets can support mid-elevation, mid-to-high rainfall, low drainage, non-freezing areas.	請確認你的參數與預設值能產生中等高度、中高降雨量、低排水、不結冰的地區。	请确认你的参数和预设值能产生中等高度、中高降雨量、低排水、不结冰的地区。		FUN_140df0660 L2091032 世界生成拒絕說明 case 0xb/0x15/0x2b 沼澤與濕地；preset 是預設地圖值，不是 default；術語例外：预设
+Alternatively, you can reduce the number of swamp squares and regions required by the parameters.	或者，也可以減少參數要求的沼澤格數與區域數。	或者，也可以减少参数要求的沼泽格数和区域数。		FUN_140df0660 L2091032 世界生成拒絕說明 case 0xb/0x15/0x2b 沼澤與濕地
+The world generator is having trouble placing deserts and badlands.	世界生成器難以放置荒漠與惡地。	世界生成器难以放置荒漠和劣地。		FUN_140df0660 L2091045 世界生成拒絕說明 case 0xc/0x16/0x2c 荒漠與惡地（首句遊戲內聯組字、內聯切行）
+Make sure your parameters and presets can support mid-elevation, very low rainfall, non-freezing areas.	請確認你的參數與預設值能產生中等高度、極低降雨量、不結冰的地區。	请确认你的参数和预设值能产生中等高度、极低降雨量、不结冰的地区。		FUN_140df0660 L2091045 世界生成拒絕說明 case 0xc/0x16/0x2c 荒漠與惡地（首句遊戲內聯組字、內聯切行）；preset 是預設地圖值，不是 default；術語例外：预设
+Alternatively, you can reduce the number of desert squares and regions required by the parameters.	或者，也可以減少參數要求的荒漠格數與區域數。	或者，也可以减少参数要求的荒漠格数和区域数。		FUN_140df0660 L2091045 世界生成拒絕說明 case 0xc/0x16/0x2c 荒漠與惡地（首句遊戲內聯組字、內聯切行）
+The world generator is having trouble placing forests.	世界生成器難以放置森林。	世界生成器难以放置森林。		FUN_140df0660 L2091259 世界生成拒絕說明 case 0xd/0x17/0x2d 森林
+Make sure your parameters and presets can support mid-elevation, high rainfall, high drainage, non-freezing areas.	請確認你的參數與預設值能產生中等高度、高降雨量、高排水、不結冰的地區。	请确认你的参数和预设值能产生中等高度、高降雨量、高排水、不结冰的地区。		FUN_140df0660 L2091259 世界生成拒絕說明 case 0xd/0x17/0x2d 森林；preset 是預設地圖值，不是 default；術語例外：预设
+Alternatively, you can reduce the number of forest squares and regions required by the parameters.	或者，也可以減少參數要求的森林格數與區域數。	或者，也可以减少参数要求的森林格数和区域数。		FUN_140df0660 L2091259 世界生成拒絕說明 case 0xd/0x17/0x2d 森林
+The world generator is having trouble placing mountains.	世界生成器難以放置山地。	世界生成器难以放置山地。		FUN_140df0660 L2091272 世界生成拒絕說明 case 0xe/0x18/0x2e 山地
+Make sure your parameters and presets can support high elevation areas.	請確認你的參數與預設值能產生高地。	请确认你的参数和预设值能产生高地。		FUN_140df0660 L2091272 世界生成拒絕說明 case 0xe/0x18/0x2e 山地；低地／高地即低／高高度，preset 是預設地圖值，不是 default；術語例外：elevation、预设
+Alternatively, you can reduce the number of mountain squares and regions required by the parameters.	或者，也可以減少參數要求的山地格數與區域數。	或者，也可以减少参数要求的山地格数和区域数。		FUN_140df0660 L2091272 世界生成拒絕說明 case 0xe/0x18/0x2e 山地
+The world generator is having trouble placing oceans.	世界生成器難以放置海洋。	世界生成器难以放置海洋。		FUN_140df0660 L2091293 世界生成拒絕說明 case 0xf/0x19/0x2f 海洋
+Make sure your parameters and presets can support low elevation areas.	請確認你的參數與預設值能產生低地。	请确认你的参数和预设值能产生低地。		FUN_140df0660 L2091293 世界生成拒絕說明 case 0xf/0x19/0x2f 海洋；低地／高地即低／高高度，preset 是預設地圖值，不是 default；術語例外：elevation、预设
+Alternatively, you can reduce the number of ocean squares and regions required by the parameters.	或者，也可以減少參數要求的海洋格數與區域數。	或者，也可以减少参数要求的海洋格数和区域数。		FUN_140df0660 L2091293 世界生成拒絕說明 case 0xf/0x19/0x2f 海洋
+The world generator is having trouble placing glaciers.	世界生成器難以放置冰河。	世界生成器难以放置冰川。		FUN_140df0660 L2091305 世界生成拒絕說明 case 0x10/0x1a/0x30 冰河
+Make sure your parameters and presets can support mid-elevation, very high drainage, freezing areas.	請確認你的參數與預設值能產生中等高度、極高排水、會結冰的地區。	请确认你的参数和预设值能产生中等高度、极高排水、会结冰的地区。		FUN_140df0660 L2091305 世界生成拒絕說明 case 0x10/0x1a/0x30 冰河；preset 是預設地圖值，不是 default；術語例外：预设
+Alternatively, you can reduce the number of glacial squares and regions required by the parameters.	或者，也可以減少參數要求的冰河格數與區域數。	或者，也可以减少参数要求的冰川格数和区域数。		FUN_140df0660 L2091305 世界生成拒絕說明 case 0x10/0x1a/0x30 冰河
+The world generator is having trouble placing tundra regions.	世界生成器難以放置凍原地區。	世界生成器难以放置冻原地区。		FUN_140df0660 L2091318 世界生成拒絕說明 case 0x11/0x1b/0x31 凍原地區（首句遊戲內聯組字）
+Make sure your parameters and presets can support mid-elevation, low-to-mid drainage, freezing areas.	請確認你的參數與預設值能產生中等高度、中低排水、會結冰的地區。	请确认你的参数和预设值能产生中等高度、中低排水、会结冰的地区。		FUN_140df0660 L2091318 世界生成拒絕說明 case 0x11/0x1b/0x31 凍原地區（首句遊戲內聯組字）；preset 是預設地圖值，不是 default；術語例外：预设
+Alternatively, you can reduce the number of tundra squares and regions required by the parameters.	或者，也可以減少參數要求的凍原格數與區域數。	或者，也可以减少参数要求的冻原格数和区域数。		FUN_140df0660 L2091318 世界生成拒絕說明 case 0x11/0x1b/0x31 凍原地區（首句遊戲內聯組字）；同句也用於 case 0x12/0x1c/0x32 草原、0x13/0x1d/0x33 丘陵（遊戲原文如此）；同句也用於 case 0x12/0x1c/0x32 草原、0x13/0x1d/0x33 丘陵（遊戲原文如此）
+The world generator is having trouble placing grasslands.	世界生成器難以放置草原。	世界生成器难以放置草原。		FUN_140df0660 L2091351 世界生成拒絕說明 case 0x12/0x1c/0x32 草原（首句遊戲內聯組字、內聯切行；最後一句遊戲寫 tundra，原文如此）
+Make sure your parameters and presets can support mid-elevation, low-to-mid rainfall, low-to-mid drainage, non-freezing areas.	請確認你的參數與預設值能產生中等高度、中低降雨量、中低排水、不結冰的地區。	请确认你的参数和预设值能产生中等高度、中低降雨量、中低排水、不结冰的地区。		FUN_140df0660 L2091351 世界生成拒絕說明 case 0x12/0x1c/0x32 草原（首句遊戲內聯組字、內聯切行；最後一句遊戲寫 tundra，原文如此）；preset 是預設地圖值，不是 default；術語例外：预设
+The world generator is having trouble placing hills.	世界生成器難以放置丘陵。	世界生成器难以放置丘陵。		FUN_140df0660 L2091562 世界生成拒絕說明 case 0x13/0x1d/0x33 丘陵（同上）
+Make sure your parameters and presets can support mid-elevation, low-to-mid rainfall, high drainage, non-freezing areas.	請確認你的參數與預設值能產生中等高度、中低降雨量、高排水、不結冰的地區。	请确认你的参数和预设值能产生中等高度、中低降雨量、高排水、不结冰的地区。		FUN_140df0660 L2091562 世界生成拒絕說明 case 0x13/0x1d/0x33 丘陵（同上）；preset 是預設地圖值，不是 default；術語例外：预设
+The world generator is having trouble placing enough volcanos.	世界生成器難以放置足夠的火山。	世界生成器难以放置足够的火山。		FUN_140df0660 L2091778 世界生成拒絕說明 case 0x14 火山
+You might want to check your maximum volcanism value.	建議檢查最大火山活動值。	建议检查最大火山活动值。		FUN_140df0660 L2091778 世界生成拒絕說明 case 0x14 火山（沒有預設地圖時）
+Can volcanism be placed at the value 100 enough times to provide space for each of your volcanos?	火山活動值 100 能否出現足夠多次，讓每座火山都有位置？	火山活动值 100 能否出现足够多次，让每座火山都有位置？		FUN_140df0660 L2091778 世界生成拒絕說明 case 0x14 火山（沒有預設地圖時）
+You might want to check your preset volcanism for the value 100.	建議檢查預設火山活動裡有沒有數值 100。	建议检查预设火山活动里有没有数值 100。		FUN_140df0660 L2091778 世界生成拒絕說明 case 0x14 火山（有預設火山活動時）；preset 是預設地圖值，不是 default；術語例外：预设
+You must have at least as many of these highest volcanism points as you are requiring volcanos.	這種最高火山活動點的數量至少要和你要求的火山數一樣多。	这种最高火山活动点的数量至少要和你要求的火山数一样多。		FUN_140df0660 L2091778 世界生成拒絕說明 case 0x14 火山（有預設火山活動時）
+Alternatively, you can reduce the number of volcanos required by the parameters.	或者，也可以減少參數要求的火山數量。	或者，也可以减少参数要求的火山数量。		FUN_140df0660 L2091778 世界生成拒絕說明 case 0x14 火山
+The world generator is having trouble placing rivers.	世界生成器難以放置河流。	世界生成器难以放置河流。		FUN_140df0660 L2091800 世界生成拒絕說明 case 0x1e 河流
+Make sure your parameters and presets allow as many mountain squares as you are requiring river start points.	請確認你的參數與預設值允許的山地格數不少於你要求的河流起點數。	请确认你的参数和预设值允许的山地格数不少于你要求的河流起点数。		FUN_140df0660 L2091800 世界生成拒絕說明 case 0x1e 河流；preset 是預設地圖值，不是 default；術語例外：预设
+Alternatively, you can reduce the number of rivers required by the parameters.	或者，也可以減少參數要求的河流數量。	或者，也可以减少参数要求的河流数量。		FUN_140df0660 L2091800 世界生成拒絕說明 case 0x1e 河流
+The world generator is placing too many subregions.	世界生成器放置了太多子區域。	世界生成器放置了太多子区域。		FUN_140df0660 L2091810 世界生成拒絕說明 case 0x1f 子區域
+Make sure your parameters and presets aren't so variable that biomes change frequently.	請確認你的參數與預設值變化不會大到讓生物群系頻繁更替。	请确认你的参数和预设值变化不会大到让生物群系频繁更替。		FUN_140df0660 L2091810 世界生成拒絕說明 case 0x1f 子區域；preset 是預設地圖值，不是 default；術語例外：预设
+Alternatively, you can increase the number of subregions permitted by the parameters, up to the cap.	或者，也可以在上限內增加參數允許的子區域數量。	或者，也可以在上限内增加参数允许的子区域数量。		FUN_140df0660 L2091810 世界生成拒絕說明 case 0x1f 子區域
+The world generator is having trouble placing mountain caves.	世界生成器難以放置山區洞穴。	世界生成器难以放置山区洞穴。		FUN_140df0660 L2091821 世界生成拒絕說明 case 0x23/0x24 山區洞穴
+Make sure your parameters and presets allow as many border mountain squares as you are requiring mountain caves.	請確認你的參數與預設值允許的山地邊緣格數不少於你要求的山區洞穴數。	请确认你的参数和预设值允许的山地边缘格数不少于你要求的山区洞穴数。		FUN_140df0660 L2091821 世界生成拒絕說明 case 0x23/0x24 山區洞穴；preset 是預設地圖值，不是 default；術語例外：预设
+Alternatively, you can reduce the number of mountain caves required by the parameters.	或者，也可以減少參數要求的山區洞穴數量。	或者，也可以减少参数要求的山区洞穴数量。		FUN_140df0660 L2091821 世界生成拒絕說明 case 0x23/0x24 山區洞穴
+The world generator is having trouble placing low-lying caves.	世界生成器難以放置低地洞穴。	世界生成器难以放置低地洞穴。		FUN_140df0660 L2091833 世界生成拒絕說明 case 0x25/0x26 低地洞穴
+Make sure your parameters and presets allow as many mid-elevation squares as you are requiring low-lying caves.	請確認你的參數與預設值允許的中等高度格數不少於你要求的低地洞穴數。	请确认你的参数和预设值允许的中等高度格数不少于你要求的低地洞穴数。		FUN_140df0660 L2091833 世界生成拒絕說明 case 0x25/0x26 低地洞穴；preset 是預設地圖值，不是 default；術語例外：预设
+Alternatively, you can reduce the number of non-mountain caves required by the parameters.	或者，也可以減少參數要求的非山區洞穴數量。	或者，也可以减少参数要求的非山区洞穴数量。		FUN_140df0660 L2091833 世界生成拒絕說明 case 0x25/0x26 低地洞穴
+The world generator is having trouble placing enough civilizations.	世界生成器難以放置足夠的文明。	世界生成器难以放置足够的文明。		FUN_140df0660 L2091845 世界生成拒絕說明 case 0x27 文明數量
+Make sure your parameters and presets offer enough low-to-mid savagery, evil/good appropriate, biome appropriate squares to establish sites.	請確認你的參數與預設值提供足夠的格子來建立據點：中低野性、善惡屬性合適、生物群系合適。	请确认你的参数和预设值提供足够的格子来建立据点：中低野性、善恶属性合适、生物群系合适。		FUN_140df0660 L2091845 世界生成拒絕說明 case 0x27 文明數量（不在待翻清單，同畫面補上）；preset 是預設地圖值，不是 default；術語例外：预设
+High savagery (66+) blocks civilization placement -- make sure your parameters and presets offer at least small pockets of low-to-mid savagery areas.	高野性（66 以上）會阻止文明落腳——請確認你的參數與預設值至少留有幾小塊中低野性的地區。	高野性（66 以上）会阻止文明落脚——请确认你的参数和预设值至少留有几小块中低野性的地区。		FUN_140df0660 L2091845 世界生成拒絕說明 case 0x27 文明數量；preset 是預設地圖值，不是 default；術語例外：预设
+If you have very few biome types and are placing good or evil regions, they'll often crowd out the civilizations as well.	如果生物群系種類很少，又放置了善良或邪惡地區，這些地區也常會擠掉文明的生存空間。	如果生物群系种类很少，又放置了善良或邪恶地区，这些地区也常会挤占文明的生存空间。		FUN_140df0660 L2091845 世界生成拒絕說明 case 0x27 文明數量；as well 是副詞；術語例外：well
+Alternatively, you can reduce the number of civilizations required by the parameters.	或者，也可以減少參數要求的文明數量。	或者，也可以减少参数要求的文明数量。		FUN_140df0660 L2091845 世界生成拒絕說明 case 0x27 文明數量
+The world generator couldn't find any civilization definitions.	世界生成器找不到任何文明定義。	世界生成器找不到任何文明定义。		FUN_140df0660 L2091863 世界生成拒絕說明 case 0x28 沒有文明定義
+This problem cannot be resolved by continuing, so you should either abort or skip all rejects for a legends-only game.	繼續生成也解決不了這個問題，請中止，或略過所有拒絕，做出只能看傳說的世界。	继续生成也解决不了这个问题，请中止，或者略过所有拒绝，生成只能查看传说的世界。		FUN_140df0660 L2091863 世界生成拒絕說明 case 0x28 沒有文明定義（不在待翻清單，同畫面補上）；略過所有拒絕＝設定畫面的 ALLOW ALL REJECTS
+The world generator is having trouble placing a controllable civilization.	世界生成器難以放置可遊玩的文明。	世界生成器难以放置可游玩的文明。		FUN_140df0660 L2091871 世界生成拒絕說明 case 0x29/0x2a 可遊玩文明
+Dwarves, for example, require non-evil, non-good, unsavage mountain squares that aren't surrounded by the ocean.	例如矮人需要非邪惡、非善良、不具野性，而且沒有被海洋包圍的山地格。	例如矮人需要非邪恶、非善良、没有野性，而且没有被海洋包围的山地格。		FUN_140df0660 L2091871 世界生成拒絕說明 case 0x29/0x2a 可遊玩文明
+Make sure your parameters and presets have adequate squares of this kind.	請確認你的參數與預設值有足夠的這類格子。	请确认你的参数和预设值有足够的这类格子。		FUN_140df0660 L2091871 世界生成拒絕說明 case 0x29/0x2a 可遊玩文明；足夠，不是品質等級，preset 是預設地圖值，不是 default；術語例外：adequate、预设
+Alternatively, you can remove the requirement of a controllable civilization from the parameters, which will restrict you to adventurers (assuming an appropriate civilization is placed).	或者，也可以從參數中移除「必須有可遊玩文明」的要求，但這樣就只能玩冒險者（前提是有放置合適的文明）。	或者，也可以从参数中移除“必须有可游玩文明”的要求，但这样就只能玩冒险者（前提是放置了合适的文明）。		FUN_140df0660 L2091871 世界生成拒絕說明 case 0x29/0x2a 可遊玩文明
+The world generator is having trouble placing farming civilizations.	世界生成器難以放置務農的文明。	世界生成器难以放置务农的文明。		FUN_140df0660 L2091886 世界生成拒絕說明 case 0x34 務農文明；務農的文明；術語例外：farming
+Civilizations use available plants in their surroundings as their initial crops.	文明會以周遭現有的植物作為最初的作物。	文明会以周边现有的植物作为最初的作物。		FUN_140df0660 L2091886 世界生成拒絕說明 case 0x34 務農文明
+Make sure your parameters and raw objects have adequate vegetation.	請確認你的參數與原始定義檔有足夠的植被。	请确认你的参数和原始定义文件有足够的植被。		FUN_140df0660 L2091886 世界生成拒絕說明 case 0x34 務農文明；raw objects＝raws 定義檔；raw objects 是 raws 定義檔，足夠，不是品質等級；術語例外：object、adequate

@@ -1,0 +1,139 @@
+en	zh-Hant	zh-Hans	align	note
+Use Seed	使用種子	使用种子		FUN_140de6b00 L2086022 建立世界進階參數：標籤（開關，關時顯示 Random）
+Use History Seed	使用歷史種子	使用历史种子		FUN_140de6b00 L2086041 建立世界進階參數：標籤
+Use Name Seed	使用名稱種子	使用名称种子		FUN_140de6b00 L2086060 建立世界進階參數：標籤
+Use Creature Seed	使用生物種子	使用生物种子		FUN_140de6b00 L2086079 建立世界進階參數：標籤
+ Seed	 種子	 种子		FUN_140de6b00 L2086034 建立世界進階參數：標籤（種子字串欄位）；開頭空白照原文
+Random	隨機	随机		FUN_140de6b00 L2086024 建立世界進階參數：數值說明：種子開關關閉時；全域單字
+Embark Points	出發點數	出发点数		FUN_140de6b00 L2086105 建立世界進階參數：標籤
+End Year	結束年份	结束年份		FUN_140de6b00 L2086116 建立世界進階參數：標籤
+Population Cap After Civ Creation	文明建立後的人口上限	文明建立后的人口上限		FUN_140de6b00 L2086125 建立世界進階參數：標籤
+No Cap	無上限	无上限		FUN_140de6b00 L2086127 建立世界進階參數：數值說明：人口／據點上限為 -1 時
+Site Cap After Civ Creation	文明建立後的據點上限	文明建立后的据点上限		FUN_140de6b00 L2086136 建立世界進階參數：標籤
+Percentage Beasts Dead For Stoppage	停止歷史的巨獸死亡比例	停止历史的巨兽死亡比例		FUN_140de6b00 L2086147 建立世界進階參數：標籤：巨獸死亡達此百分比時停止生成歷史（BEAST_END_YEAR）
+Ignore	忽略	忽略		FUN_140de6b00 L2086149 建立世界進階參數：數值說明：比例 -1、網格大小 1 時；全域單字
+Year to Begin Checking Megabeast Percentage	開始檢查巨獸比例的年份	开始检查巨兽比例的年份		FUN_140de6b00 L2086158 建立世界進階參數：標籤
+Cull Unimportant Historical Figures	剔除不重要的歷史人物	剔除不重要的历史人物		FUN_140de6b00 L2086167 建立世界進階參數：標籤
+Reveal All Historical Events	揭露所有歷史事件	揭示所有历史事件		FUN_140de6b00 L2086181 建立世界進階參數：標籤
+Elevation Mesh Size	高度網格大小	高度网格大小		FUN_140de6b00 L2086315 建立世界進階參數：標籤；數值 2 x 2～32 x 32 照原文
+Rain Mesh Size	降雨量網格大小	降雨量网格大小		FUN_140de6b00 L2086363 建立世界進階參數：標籤
+Drainage Mesh Size	排水網格大小	排水网格大小		FUN_140de6b00 L2086410 建立世界進階參數：標籤
+Savagery Mesh Size	野性網格大小	野性网格大小		FUN_140de6b00 L2086457 建立世界進階參數：標籤
+Temperature Mesh Size	氣溫網格大小	气温网格大小		FUN_140de6b00 L2086504 建立世界進階參數：標籤
+Volcanism Mesh Size	火山活動網格大小	火山活动网格大小		FUN_140de6b00 L2086550 建立世界進階參數：標籤
+Pole	極地	极地		FUN_140de6b00 L2086597 建立世界進階參數：標籤（DAT_14171c9a8）：哪一端有極地
+North or South	北極或南極	北极或南极		FUN_140de6b00 L2086601 建立世界進階參數：數值說明：極地
+North and/or South	北極和／或南極	北极和/或南极		FUN_140de6b00 L2086604 建立世界進階參數：數值說明：極地
+North and South	北極和南極	北极和南极		FUN_140de6b00 L2086613 建立世界進階參數：數值說明：極地
+Minimum Mountain Peak Number	山峰數量下限	山峰数量下限		FUN_140de6b00 L2086623 建立世界進階參數：標籤
+Minimum Partial Edge Oceans	部分邊緣海洋數量下限	部分边缘海洋数量下限		FUN_140de6b00 L2086634 建立世界進階參數：標籤
+Minimum Complete Edge Oceans	完整邊緣海洋數量下限	完整边缘海洋数量下限		FUN_140de6b00 L2086645 建立世界進階參數：標籤
+Minimum Volcano Number	火山數量下限	火山数量下限		FUN_140de6b00 L2086656 建立世界進階參數：標籤
+Mineral Scarcity (Low = More minerals)	礦物稀缺度（低＝礦物多）	矿物稀缺度（低＝矿物多）		FUN_140de6b00 L2086667 建立世界進階參數：標籤
+Real-world extinct creatures	現實世界中已滅絕的生物	现实世界中已灭绝的生物		FUN_140de6b00 L2086676 建立世界進階參數：標籤；同基本選項 Real world extinct creatures；數值 Extinct 等已有
+Max Megabeast Caves	巨獸洞穴上限	巨兽洞穴上限		FUN_140de6b00 L2086699 建立世界進階參數：標籤
+No Beasts	無巨獸	无巨兽		FUN_140de6b00 L2086701 建立世界進階參數：數值說明：巨獸／半巨獸洞穴為 0 時（原本被 No {1} 拼成「否幾頭野獸」）
+Max Semimegabeast Caves	半巨獸洞穴上限	半巨兽洞穴上限		FUN_140de6b00 L2086710 建立世界進階參數：標籤
+Titan Number	泰坦數量	泰坦数量		FUN_140de6b00 L2086721 建立世界進階參數：標籤
+Titan Attack Population Rating	泰坦襲擊人口門檻	泰坦袭击人口门槛		FUN_140de6b00 L2086732 建立世界進階參數：標籤：觸發泰坦襲擊的人口指標
+Titan Attack Exported Wealth Rating	泰坦襲擊出口財富門檻	泰坦袭击出口财富门槛		FUN_140de6b00 L2086743 建立世界進階參數：標籤
+Titan Attack Created Wealth Rating	泰坦襲擊創造財富門檻	泰坦袭击创造财富门槛		FUN_140de6b00 L2086754 建立世界進階參數：標籤
+Number of Demon Types	惡魔種類數	恶魔种类数		FUN_140de6b00 L2086765 建立世界進階參數：標籤
+Number of Night Troll Types	暗夜巨魔種類數	暗夜巨魔种类数		FUN_140de6b00 L2086776 建立世界進階參數：標籤
+Number of Bogeyman Types	鬼怪種類數	鬼怪种类数		FUN_140de6b00 L2086787 建立世界進階參數：標籤
+Number of Nightmare Types	夢魘種類數	梦魇种类数		FUN_140de6b00 L2086798 建立世界進階參數：標籤
+Number of Vampire Curse Types	吸血鬼詛咒種類數	吸血鬼诅咒种类数		FUN_140de6b00 L2086809 建立世界進階參數：標籤
+Number of Werebeast Curse Types	獸化人詛咒種類數	兽化人诅咒种类数		FUN_140de6b00 L2086820 建立世界進階參數：標籤
+Werebeast Attack Population Rating	獸化人襲擊人口門檻	兽化人袭击人口门槛		FUN_140de6b00 L2086831 建立世界進階參數：標籤
+Werebeast Attack Exported Wealth Rating	獸化人襲擊出口財富門檻	兽化人袭击出口财富门槛		FUN_140de6b00 L2086842 建立世界進階參數：標籤
+Werebeast Attack Created Wealth Rating	獸化人襲擊創造財富門檻	兽化人袭击创造财富门槛		FUN_140de6b00 L2086853 建立世界進階參數：標籤
+Number of Secret Types	秘法種類數	秘法种类数		FUN_140de6b00 L2086864 建立世界進階參數：標籤：生死秘法等可習得的秘密
+Number of Regional Interaction Types	地區互動種類數	地区交互种类数		FUN_140de6b00 L2086875 建立世界進階參數：標籤
+Number of Disturbance Interaction Types	驚擾互動種類數	惊扰交互种类数		FUN_140de6b00 L2086886 建立世界進階參數：標籤：驚擾墓穴觸發的詛咒等
+Number of Evil Cloud Types	邪惡雲霧種類數	邪恶云雾种类数		FUN_140de6b00 L2086897 建立世界進階參數：標籤
+Number of Evil Rain Types	邪惡之雨種類數	邪恶之雨种类数		FUN_140de6b00 L2086908 建立世界進階參數：標籤
+Generate Divine Materials	生成神聖材料	生成神圣材料		FUN_140de6b00 L2086918 建立世界進階參數：標籤
+Generate Mythical Materials	生成神話材料	生成神话材料		FUN_140de6b00 L2086931 建立世界進階參數：標籤
+Allow Mythical Healing	允許神話治療	允许神话治疗		FUN_140de6b00 L2086944 建立世界進階參數：標籤
+Allow Divination	允許占卜	允许占卜		FUN_140de6b00 L2086957 建立世界進階參數：標籤
+Allow Demonic Experiments	允許惡魔實驗	允许恶魔实验		FUN_140de6b00 L2086970 建立世界進階參數：標籤
+Allow Necromancer Experiments	允許死靈法師實驗	允许死灵法师实验		FUN_140de6b00 L2086983 建立世界進階參數：標籤
+Allow Necromancer Lieutenants	允許死靈法師副將	允许死灵法师副将		FUN_140de6b00 L2086996 建立世界進階參數：標籤
+Allow Necromancer Ghouls	允許死靈法師食屍鬼	允许死灵法师食尸鬼		FUN_140de6b00 L2087009 建立世界進階參數：標籤
+Allow Necromancer Summons	允許死靈法師召喚	允许死灵法师召唤		FUN_140de6b00 L2087022 建立世界進階參數：標籤
+Desired Good Square Count in Small Subregions	小型子區域的期望善良格數	小型子区域的期望善良格数		FUN_140de6b00 L2087036 建立世界進階參數：標籤
+Desired Good Square Count in Medium Subregions	中型子區域的期望善良格數	中型子区域的期望善良格数		FUN_140de6b00 L2087047 建立世界進階參數：標籤
+Desired Good Square Count in Large Subregions	大型子區域的期望善良格數	大型子区域的期望善良格数		FUN_140de6b00 L2087058 建立世界進階參數：標籤
+Desired Evil Square Count in Small Subregions	小型子區域的期望邪惡格數	小型子区域的期望邪恶格数		FUN_140de6b00 L2087069 建立世界進階參數：標籤
+Desired Evil Square Count in Medium Subregions	中型子區域的期望邪惡格數	中型子区域的期望邪恶格数		FUN_140de6b00 L2087080 建立世界進階參數：標籤
+Desired Evil Square Count in Large Subregions	大型子區域的期望邪惡格數	大型子区域的期望邪恶格数		FUN_140de6b00 L2087091 建立世界進階參數：標籤
+Erosion Cycle Count	侵蝕週期數	侵蚀周期数		FUN_140de6b00 L2087152 建立世界進階參數：標籤
+Minimum River Start Locations (Pre-Erosion)	河流起點數量下限（侵蝕前）	河流起点数量下限（侵蚀前）		FUN_140de6b00 L2087163 建立世界進階參數：標籤；術語例外：location
+Desired River Start Locations (Post-Erosion)	期望河流起點數量（侵蝕後）	期望河流起点数量（侵蚀后）		FUN_140de6b00 L2087174 建立世界進階參數：標籤；術語例外：location
+Periodically Erode Extreme Cliffs	定期侵蝕陡峭懸崖	定期侵蚀陡峭悬崖		FUN_140de6b00 L2087185 建立世界進階參數：標籤
+Do Orographic Precipitation and Rain Shadows	計算地形降雨與雨影	计算地形降水与雨影		FUN_140de6b00 L2087199 建立世界進階參數：標籤
+Maximum Number of Subregions	子區域數量上限	子区域数量上限		FUN_140de6b00 L2087213 建立世界進階參數：標籤
+Cavern Layer Number	洞穴層數	洞穴层数		FUN_140de6b00 L2087222 建立世界進階參數：標籤
+Cavern Layer Openness Min	洞穴層開闊度下限	洞穴层开阔度下限		FUN_140de6b00 L2087233 建立世界進階參數：標籤
+Cavern Layer Openness Max	洞穴層開闊度上限	洞穴层开阔度上限		FUN_140de6b00 L2087242 建立世界進階參數：標籤
+Cavern Layer Passage Density Min	洞穴層通道密度下限	洞穴层通道密度下限		FUN_140de6b00 L2087251 建立世界進階參數：標籤
+Cavern Layer Passage Density Max	洞穴層通道密度上限	洞穴层通道密度上限		FUN_140de6b00 L2087260 建立世界進階參數：標籤
+Cavern Layer Water Min	洞穴層水量下限	洞穴层水量下限		FUN_140de6b00 L2087269 建立世界進階參數：標籤
+Cavern Layer Water Max	洞穴層水量上限	洞穴层水量上限		FUN_140de6b00 L2087278 建立世界進階參數：標籤
+Magma Layer	熔岩層	熔岩层		FUN_140de6b00 L2087286 建立世界進階參數：標籤
+Bottom Layer (Forces Magma)	底層（強制熔岩）	底层（强制熔岩）		FUN_140de6b00 L2087299 建立世界進階參數：標籤：地底最深層，開啟時強制有熔岩層
+Z Levels Above Ground	地面以上 Z 層數	地面以上 Z 层数		FUN_140de6b00 L2087313 建立世界進階參數：標籤
+Z Levels Above Layer 1	第 1 層上方 Z 層數	第 1 层上方 Z 层数		FUN_140de6b00 L2087322 建立世界進階參數：標籤：第 i 個洞穴層上方的 Z 層數
+Z Levels Above Layer 2	第 2 層上方 Z 層數	第 2 层上方 Z 层数		FUN_140de6b00 L2087331 建立世界進階參數：標籤：第 i 個洞穴層上方的 Z 層數
+Z Levels Above Layer 3	第 3 層上方 Z 層數	第 3 层上方 Z 层数		FUN_140de6b00 L2087340 建立世界進階參數：標籤：第 i 個洞穴層上方的 Z 層數
+Z Levels Above Layer 4	第 4 層上方 Z 層數	第 4 层上方 Z 层数		FUN_140de6b00 L2087349 建立世界進階參數：標籤：第 i 個洞穴層上方的 Z 層數
+Z Levels Above Layer 5	第 5 層上方 Z 層數	第 5 层上方 Z 层数		FUN_140de6b00 L2087358 建立世界進階參數：標籤：第 i 個洞穴層上方的 Z 層數
+Z Levels At Bottom	底部 Z 層數	底部 Z 层数		FUN_140de6b00 L2087367 建立世界進階參數：標籤
+Minimum Natural Cave Size	天然洞穴大小下限	天然洞穴大小下限		FUN_140de6b00 L2087376 建立世界進階參數：標籤
+Maximum Natural Cave Size	天然洞穴大小上限	天然洞穴大小上限		FUN_140de6b00 L2087385 建立世界進階參數：標籤
+Number of Mountain Caves	山區洞穴數量	山区洞穴数量		FUN_140de6b00 L2087394 建立世界進階參數：標籤
+Number of Non-Mountain Caves	非山區洞穴數量	非山区洞穴数量		FUN_140de6b00 L2087405 建立世界進階參數：標籤
+Number of Mythical Sites	神話據點數量	神话据点数量		FUN_140de6b00 L2087416 建立世界進階參數：標籤
+Make Caves Visible	顯示所有洞穴	显示所有洞穴		FUN_140de6b00 L2087427 建立世界進階參數：標籤
+Allow Init Embark Options to Show Tunnels	允許出發選項顯示隧道	允许出发选项显示隧道		FUN_140de6b00 L2087441 建立世界進階參數：標籤；數值 No／Always／Only in Finder
+Only in Finder	僅限選址工具	仅限选址工具		FUN_140de6b00 L2087448 建立世界進階參數：數值說明：同 settings.tsv In site finder
+Playable Civilization Required	必須有可遊玩文明	必须有可游玩文明		FUN_140de6b00 L2087469 建立世界進階參數：標籤；與 sentences_world2 拒絕說明的引用一致
+Minimum Number of Mid-Elevation Squares	中等高度格數下限	中等高度格数下限		FUN_140de6b00 L2087483 建立世界進階參數：標籤
+Minimum Number of Low-Elevation Squares	低地格數下限	低地格数下限		FUN_140de6b00 L2087494 建立世界進階參數：標籤；低地／高地同 world_3 拒絕標題；術語例外：elevation
+Minimum Number of High-Elevation Squares	高地格數下限	高地格数下限		FUN_140de6b00 L2087505 建立世界進階參數：標籤；低地／高地同 world_3 拒絕標題；術語例外：elevation
+Minimum Number of Mid-Rain Squares	中等降雨量格數下限	中等降雨量格数下限		FUN_140de6b00 L2087516 建立世界進階參數：標籤
+Minimum Number of Low-Rain Squares	低降雨量格數下限	低降雨量格数下限		FUN_140de6b00 L2087527 建立世界進階參數：標籤
+Minimum Number of High-Rain Squares	高降雨量格數下限	高降雨量格数下限		FUN_140de6b00 L2087538 建立世界進階參數：標籤
+Minimum Number of Mid-Drainage Squares	中等排水格數下限	中等排水格数下限		FUN_140de6b00 L2087549 建立世界進階參數：標籤
+Minimum Number of Low-Drainage Squares	低排水格數下限	低排水格数下限		FUN_140de6b00 L2087560 建立世界進階參數：標籤
+Minimum Number of High-Drainage Squares	高排水格數下限	高排水格数下限		FUN_140de6b00 L2087571 建立世界進階參數：標籤
+Minimum Number of Mid-Savagery Squares	中等野性格數下限	中等野性格数下限		FUN_140de6b00 L2087582 建立世界進階參數：標籤
+Minimum Number of Low-Savagery Squares	低野性格數下限	低野性格数下限		FUN_140de6b00 L2087593 建立世界進階參數：標籤
+Minimum Number of High-Savagery Squares	高野性格數下限	高野性格数下限		FUN_140de6b00 L2087604 建立世界進階參數：標籤
+Minimum Number of Mid-Volcanism Squares	中等火山活動格數下限	中等火山活动格数下限		FUN_140de6b00 L2087615 建立世界進階參數：標籤
+Minimum Number of Low-Volcanism Squares	低火山活動格數下限	低火山活动格数下限		FUN_140de6b00 L2087626 建立世界進階參數：標籤
+Minimum Number of High-Volcanism Squares	高火山活動格數下限	高火山活动格数下限		FUN_140de6b00 L2087637 建立世界進階參數：標籤
+Minimum Elevation	高度下限	高度下限		FUN_140de6b00 L2086243 建立世界進階參數：標籤：Minimum ＋類別名拼成
+Maximum Elevation	高度上限	高度上限		FUN_140de6b00 L2086254 建立世界進階參數：標籤：Maximum ＋類別名拼成
+Elevation X-Variance	高度 X 軸變異量	高度 X 轴变异量		FUN_140de6b00 L2086265 建立世界進階參數：標籤：類別名＋ X-Variance／Y-Variance 拼成
+Elevation Y-Variance	高度 Y 軸變異量	高度 Y 轴变异量		FUN_140de6b00 L2086265 建立世界進階參數：標籤：類別名＋ X-Variance／Y-Variance 拼成
+Minimum Rainfall	降雨量下限	降雨量下限		FUN_140de6b00 L2086243 建立世界進階參數：標籤：Minimum ＋類別名拼成
+Maximum Rainfall	降雨量上限	降雨量上限		FUN_140de6b00 L2086254 建立世界進階參數：標籤：Maximum ＋類別名拼成
+Rainfall X-Variance	降雨量 X 軸變異量	降雨量 X 轴变异量		FUN_140de6b00 L2086265 建立世界進階參數：標籤：類別名＋ X-Variance／Y-Variance 拼成
+Rainfall Y-Variance	降雨量 Y 軸變異量	降雨量 Y 轴变异量		FUN_140de6b00 L2086265 建立世界進階參數：標籤：類別名＋ X-Variance／Y-Variance 拼成
+Minimum Temperature	氣溫下限	气温下限		FUN_140de6b00 L2086243 建立世界進階參數：標籤：Minimum ＋類別名拼成
+Maximum Temperature	氣溫上限	气温上限		FUN_140de6b00 L2086254 建立世界進階參數：標籤：Maximum ＋類別名拼成
+Temperature X-Variance	氣溫 X 軸變異量	气温 X 轴变异量		FUN_140de6b00 L2086265 建立世界進階參數：標籤：類別名＋ X-Variance／Y-Variance 拼成
+Temperature Y-Variance	氣溫 Y 軸變異量	气温 Y 轴变异量		FUN_140de6b00 L2086265 建立世界進階參數：標籤：類別名＋ X-Variance／Y-Variance 拼成
+Minimum Drainage	排水下限	排水下限		FUN_140de6b00 L2086243 建立世界進階參數：標籤：Minimum ＋類別名拼成
+Maximum Drainage	排水上限	排水上限		FUN_140de6b00 L2086254 建立世界進階參數：標籤：Maximum ＋類別名拼成
+Drainage X-Variance	排水 X 軸變異量	排水 X 轴变异量		FUN_140de6b00 L2086265 建立世界進階參數：標籤：類別名＋ X-Variance／Y-Variance 拼成
+Drainage Y-Variance	排水 Y 軸變異量	排水 Y 轴变异量		FUN_140de6b00 L2086265 建立世界進階參數：標籤：類別名＋ X-Variance／Y-Variance 拼成
+Minimum Volcanism	火山活動下限	火山活动下限		FUN_140de6b00 L2086243 建立世界進階參數：標籤：Minimum ＋類別名拼成
+Maximum Volcanism	火山活動上限	火山活动上限		FUN_140de6b00 L2086254 建立世界進階參數：標籤：Maximum ＋類別名拼成
+Volcanism X-Variance	火山活動 X 軸變異量	火山活动 X 轴变异量		FUN_140de6b00 L2086265 建立世界進階參數：標籤：類別名＋ X-Variance／Y-Variance 拼成
+Volcanism Y-Variance	火山活動 Y 軸變異量	火山活动 Y 轴变异量		FUN_140de6b00 L2086265 建立世界進階參數：標籤：類別名＋ X-Variance／Y-Variance 拼成
+Minimum Savagery	野性下限	野性下限		FUN_140de6b00 L2086243 建立世界進階參數：標籤：Minimum ＋類別名拼成
+Maximum Savagery	野性上限	野性上限		FUN_140de6b00 L2086254 建立世界進階參數：標籤：Maximum ＋類別名拼成
+Savagery X-Variance	野性 X 軸變異量	野性 X 轴变异量		FUN_140de6b00 L2086265 建立世界進階參數：標籤：類別名＋ X-Variance／Y-Variance 拼成
+Savagery Y-Variance	野性 Y 軸變異量	野性 Y 轴变异量		FUN_140de6b00 L2086265 建立世界進階參數：標籤：類別名＋ X-Variance／Y-Variance 拼成

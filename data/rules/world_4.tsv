@@ -1,0 +1,3 @@
+en	zh-Hant	zh-Hans	align	note
+{%1} saves	{1}個存檔	{1}个存档		FUN_140258c60 L318552 世界清單：存檔數量；{1} 是 FUN_14052e360 的英文數字字（首字大寫，Two、Twenty-one），查 sentences_forms_poetry.tsv 的 inner 數字字；1 個時是 strings/saves.tsv 的 One save
+Timeline: {1}	時間線：{1}	时间线：{1}		FUN_140258c60 L318521 世界清單：Timeline: 與時間線名稱拼成一段畫；對齊 world_01.tsv 的時間線

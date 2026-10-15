@@ -1,0 +1,49 @@
+en	zh-Hant	zh-Hans	align	note
+  Dwarf Fortress: Arena  	  矮人要塞：競技場  	  矮人要塞：竞技场  	c	FUN_140258c60 L319596 競技場載入畫面頂框標題（FUN_1408be780 置中畫在框線上）
+A Bay 12 Games Production	Bay 12 Games 出品	Bay 12 Games 出品		FUN_140258c60 L317667 標題畫面（文字模式）左下；Bay 12 Games 是公司名，照英文
+Dwarf Fortress uses FMOD by Firelight Technologies	矮人要塞使用 Firelight Technologies 的 FMOD	矮人要塞使用 Firelight Technologies 的 FMOD		FUN_140258c60 L317672 標題畫面（文字模式）底部授權說明；公司與產品名照英文
+This Version of DF uses FMOD Studio	本版 DF 使用 FMOD Studio	本版 DF 使用 FMOD Studio		FUN_140258c60 L318322 關於遊戲：授權說明；下一行是 Firelight 版權行（照英文）
+This version of DF uses SDL: Simple DirectMedia Layer,	本版 DF 使用 SDL：Simple DirectMedia Layer，	本版 DF 使用 SDL：Simple DirectMedia Layer，		FUN_140258c60 L318329 關於遊戲：授權說明；下一行是 SDL_Image、SDL_ttf 版權行（照英文）
+See the SDL folder for license information.	授權資訊請見 SDL 資料夾。	许可信息请见 SDL 文件夹。		FUN_140258c60 L318335 關於遊戲：授權說明最後一行
+Click Publish to upload a mod to Steam Workshop.	點選「發布」即可將模組上傳到 Steam 工作坊。	点击“发布”即可将模组上传到 Steam 创意工坊。		FUN_140258c60 L316821 模組畫面：發布模組分頁說明；Steam 工作坊／创意工坊是 Steam 官方中文名；術語例外：workshop
+Publish	發布	发布		FUN_140258c60 L316962 模組畫面：發布模組分頁每個模組右側的按鈕
+Unnamed mod	未命名模組	未命名模组		FUN_140258c60 L317004／L317472、FUN_140df5e90 L2095202 模組資訊：模組沒有名稱時
+Author: 	作者：	作者：		FUN_140258c60 L317010／L317478、FUN_140df5e90 L2095214 模組資訊：後接作者名（另一段畫）；全形冒號已留空隙，結尾空白省略
+Unknown author	作者不明	未知作者		FUN_140258c60 L317018／L317486、FUN_140df5e90 L2095222 模組資訊：沒有作者時
+Version: 	版本：	版本：		FUN_140258c60 L317024／L317492、FUN_140df5e90 L2095234 模組資訊：後接版本號（另一段畫）
+Steam title: 	Steam 標題：	Steam 标题：		FUN_140258c60 L317039 發布模組：模組的 Steam 工作坊資訊；後接標題（另一段畫，沒有時是 Untitled）
+Steam file id: 	Steam 檔案 ID：	Steam 文件 ID：		FUN_140258c60 L317053 發布模組：後接工作坊檔案編號或 None yet
+None yet	尚無	暂无		FUN_140258c60 L317057 發布模組：還沒上傳過、沒有 Steam 檔案編號
+Steam changelog: 	Steam 更新紀錄：	Steam 更新日志：		FUN_140258c60 L317070 發布模組：後接更新說明（另一段畫）
+Steam metadata: 	Steam 中繼資料：	Steam 元数据：		FUN_140258c60 L317084 發布模組：後接中繼資料（另一段畫）
+Earliest compatible version: 	最早相容版本：	最早兼容版本：		FUN_140258c60 L317101／L317508、FUN_140df5e90 L2095280 模組資訊：後接版本號（另一段畫）
+Steam description:	Steam 說明：	Steam 描述：		FUN_140258c60 L317121 發布模組：下方逐行畫出工作坊說明（玩家寫的內容，不翻）
+Description:	說明：	描述：		FUN_140258c60 L317528、FUN_140df5e90 L2095332 模組資訊：下方逐行畫出模組說明（模組作者寫的內容，不翻）
+Requires 	需要：	需要：		FUN_140258c60 L317166／L317571、FUN_140df5e90 L2095365 模組資訊：相依清單，每行後接模組名（另一段畫）
+Must be before 	須早於：	须早于：		FUN_140258c60 L317171／L317576、FUN_140df5e90 L2095371 模組資訊：載入順序要排在後接的模組之前
+Must be after 	須晚於：	须晚于：		FUN_140258c60 L317177／L317582、FUN_140df5e90 L2095378 模組資訊：載入順序要排在後接的模組之後
+Conflicts with 	不相容：	不兼容：		FUN_140258c60 L317204／L317610、FUN_140df5e90 L2095402 模組資訊：後接衝突的模組名（另一段畫）
+Uploading mod	正在上傳模組	正在上传模组		FUN_140258c60 L317280 發布模組：上傳進度條上方
+Publish mods	發布模組	发布模组		FUN_140258c60 L317343 模組畫面：分頁標籤
+Mods install automatically when chosen during world creation.	在建立世界時選用的模組會自動安裝。	在创建世界时选用的模组会自动安装。		FUN_140258c60 L317351 模組畫面：已安裝模組清單上方說明
+Click a mod to open its folder.	點選模組即可開啟其資料夾。	点击模组即可打开其文件夹。		FUN_140258c60 L317355 模組畫面：已安裝模組清單上方說明第 2 行
+Installed	已安裝	已安装		FUN_140258c60 L317421、FUN_140df5e90 L2094855 模組清單：已安裝的模組旁的綠字；FUN_140df8a80（建立世界的模組分頁）同義
+Clicking delete will instantly delete!	點選「刪除」會立刻刪除！	点击“删除”会立即删除！		FUN_140258c60 L318000 世界清單：刪除某份存檔（非目前存檔）的確認框
+Don't click it unless you're sure you want to delete it.	除非確定要刪除，否則別點它。	除非确定要删除，否则别点它。		FUN_140258c60 L318005／L319556 刪除存檔、刪除遊戲的確認框
+(only this inactive copy will be deleted)	（只會刪除這份非使用中的副本）	（只会删除这份非使用中的副本）		FUN_140258c60 L318010 刪除某份存檔的確認框：不會動到目前存檔
+Are you sure you want to delete this active world?	確定要刪除這個進行中的世界嗎？	确定要删除这个进行中的世界吗？		FUN_140258c60 L318130 世界清單：刪除整個世界的確認框
+All active/manual/autosaves there will be deleted!	其中所有目前／手動／自動存檔都會被刪除！	其中所有当前/手动/自动存档都会被删除！		FUN_140258c60 L318135 刪除整個世界的確認框第 2 行
+Clicking delete will instantly delete this game!	點選「刪除」會立刻刪除這個遊戲！	点击“删除”会立即删除这个游戏！		FUN_140258c60 L319551 刪除遊戲（某一份存檔）的確認框
+(no other folders will be deleted)	（不會刪除其他資料夾）	（不会删除其他文件夹）		FUN_140258c60 L319561 刪除遊戲的確認框
+File	檔案	文件	c	FUN_140258c60 L318026／L319579 刪除確認框按鈕（DAT_14161922c）：開啟存檔資料夾；同世界清單的 Files
+Testing Arena	測試競技場	测试竞技场		FUN_140258c60 L318505／L318722／L319479 世界清單、存檔清單：存檔種類（競技場）
+Testing Arena (Adventurer)	測試競技場（冒險者）	测试竞技场（冒险者）		FUN_140258c60 L318725／L319482 存檔清單：存檔種類（以冒險者進入的競技場）
+Reclaim Fortress	收復要塞	收复要塞		FUN_140258c60 L318719／L319476 存檔清單：存檔種類；對齊 embark.tsv 的 Reclaim 收復
+Fortress Testing	要塞測試	要塞测试		FUN_140258c60 L318728／L319485 存檔清單：存檔種類
+Active save	目前存檔	当前存档		FUN_140258c60 L318805 存檔清單：存檔種類標記（綠字）；對齊 world_01.tsv 的 active save 目前存檔
+Manual save	手動存檔	手动存档		FUN_140258c60 L318815 存檔清單：存檔種類標記
+Portable 	可攜 	便携 		FUN_140258c60 L318572／L318840 世界、存檔清單：可攜模式的存檔，後接 Folder: ；對齊 settings.tsv 的 Portable mode 可攜模式
+Arena profile	競技場設定檔	竞技场配置		FUN_140df5e90 L2094461 競技場建立畫面：分頁標籤
+Create arena	建立競技場	创建竞技场		FUN_140df5e90 L2094438 競技場建立畫面：按鈕
+Welcome to the arena!  Here you can test mods or just play around.	歡迎來到競技場！你可以在這裡測試模組，或單純隨意玩玩。	欢迎来到竞技场！你可以在这里测试模组，或者只是随便玩玩。		FUN_140df5e90 L2094551 競技場建立畫面：上方說明（fn_addst 單行）
+Click now to open to this mod folder.	現在點選即可開啟這個模組的資料夾。	现在点击即可打开这个模组的文件夹。		FUN_140df5e90 L2095431 競技場建立畫面：模組資訊最下方（原文 open to 是遊戲筆誤）

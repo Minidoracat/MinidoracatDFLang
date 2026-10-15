@@ -1,0 +1,59 @@
+en	zh-Hant	zh-Hans	align	note
+Creating the world	正在建立世界	正在创建世界		FUN_140df8a80 L2096334 建立世界進度首行：世界還沒取名時
+Use world now	立即使用世界	立即使用世界		FUN_140df8a80 L2096864 建立世界畫面按鈕：停止歷史模擬、直接使用目前的世界
+Continue generating	繼續生成	继续生成		FUN_140df8a80 L2096899 建立世界畫面按鈕：暫停後繼續生成歷史
+LACK OF PEAKS	山峰不足	山峰不足		FUN_140df8a80 L2097052 世界被拒絕的原因標題（下方說明見 sentences_world2）
+MEDIUM ELEVATION REJECTION	中等高度不符	中等高度不符		FUN_140df8a80 L2097060 世界被拒絕的原因標題；elevation 照拒絕說明用「高度」
+LOW ELEVATION REJECTION	低地不符	低地不符		FUN_140df8a80 L2097066 世界被拒絕的原因標題；照拒絕說明（sentences_world2）用低地／高地；術語例外：elevation
+HIGH ELEVATION REJECTION	高地不符	高地不符		FUN_140df8a80 L2097072 世界被拒絕的原因標題；照拒絕說明（sentences_world2）用低地／高地；術語例外：elevation
+LACK OF EDGE OCEANS	邊緣海洋不足	边缘海洋不足		FUN_140df8a80 L2097077 世界被拒絕的原因標題：地圖邊緣的海洋格不夠
+RAINFALL REJECTION	降雨量不符	降雨量不符		FUN_140df8a80 L2097082 世界被拒絕的原因標題
+DRAINAGE REJECTION	排水不符	排水不符		FUN_140df8a80 L2097087 世界被拒絕的原因標題
+SAVAGERY REJECTION	野性不符	野性不符		FUN_140df8a80 L2097092 世界被拒絕的原因標題
+VOLCANISM REJECTION	火山活動不符	火山活动不符		FUN_140df8a80 L2097097 世界被拒絕的原因標題
+SWAMP REJECTION	沼澤不符	沼泽不符		FUN_140df8a80 L2097104 世界被拒絕的原因標題；同一標題涵蓋多種 case（數量、區域），用「不符」不寫死不足或過多
+DESERT REJECTION	荒漠不符	荒漠不符		FUN_140df8a80 L2097111 世界被拒絕的原因標題；desert 照既有「荒漠」
+FOREST REJECTION	森林不符	森林不符		FUN_140df8a80 L2097118 世界被拒絕的原因標題
+MOUNTAIN REJECTION	山地不符	山地不符		FUN_140df8a80 L2097125 世界被拒絕的原因標題
+OCEAN REJECTION	海洋不符	海洋不符		FUN_140df8a80 L2097132 世界被拒絕的原因標題
+GLACIER REJECTION	冰河不符	冰川不符		FUN_140df8a80 L2097139 世界被拒絕的原因標題；glacier 照既有冰河／冰川
+TUNDRA REJECTION	凍原不符	冻原不符		FUN_140df8a80 L2097146 世界被拒絕的原因標題
+GRASSLAND REJECTION	草原不符	草原不符		FUN_140df8a80 L2097153 世界被拒絕的原因標題
+HILLS REJECTION	丘陵不符	丘陵不符		FUN_140df8a80 L2097160 世界被拒絕的原因標題
+LACK OF VOLCANOS	火山不足	火山不足		FUN_140df8a80 L2097165 世界被拒絕的原因標題
+LACK OF RIVERS	河流不足	河流不足		FUN_140df8a80 L2097170 世界被拒絕的原因標題
+TOO MANY REGIONS	地區過多	地区过多		FUN_140df8a80 L2097175 世界被拒絕的原因標題
+LACK OF MOUNTAIN CAVES	山地洞穴不足	山地洞穴不足		FUN_140df8a80 L2097181 世界被拒絕的原因標題
+LACK OF LOW-LYING CAVES	低地洞穴不足	低地洞穴不足		FUN_140df8a80 L2097187 世界被拒絕的原因標題
+UNABLE TO PLACE ENOUGH CIVILIZATIONS	無法安置足夠的文明	无法安置足够的文明		FUN_140df8a80 L2097192 世界被拒絕的原因標題；place 照進度「正在安置文明」
+NO CIVILIZATIONS AVAILABLE	沒有可用的文明	没有可用的文明		FUN_140df8a80 L2097197 世界被拒絕的原因標題
+UNABLE TO PLACE CONTROLLABLE CIVILIZATION	無法安置可操控的文明	无法安置可操控的文明		FUN_140df8a80 L2097203 世界被拒絕的原因標題：玩家可選的文明
+FARMING CIVILIZATION PLACED WITHOUT CROPS	農業文明的所在地沒有作物	农业文明的所在地没有作物		FUN_140df8a80 L2097208 世界被拒絕的原因標題
+CONTINUE until you give me another warning.	繼續生成，有其他警告再通知我。	继续生成，有其他警告再通知我。		FUN_140df8a80 L2097263 世界被拒絕時的選項按鈕
+ABORT NOW and I'll look over my parameters.	立即中止，我要重新檢查參數。	立即中止，我要重新检查参数。		FUN_140df8a80 L2097295 世界被拒絕時的選項按鈕
+ALLOW THIS REJECTION TYPE and continue reporting others.	略過這類拒絕，其他類型照常回報。	略过这类拒绝，其他类型照常报告。		FUN_140df8a80 L2097327 世界被拒絕時的選項按鈕；allow 譯「略過」，和拒絕說明（sentences_world2）一致
+ALLOW ALL REJECTS, even if I end up with a legends-only world!	略過所有拒絕，就算最後得到只能看傳說的世界也沒關係！	略过所有拒绝，就算最后得到只能查看传说的世界也没关系！		FUN_140df8a80 L2097359 世界被拒絕時的選項按鈕；legends-only world 和拒絕說明（sentences_world2）一致
+Ice	冰	冰		FUN_140df8a80 L2098199 世界地圖滑鼠資訊：冰河區的地表層
+Basic options	基本選項	基本选项		FUN_140df8a80 L2098919 建立世界參數按鈕：從詳細模式切回基本選項
+A shorter history means certain game elements might not be available.	歷史較短，部分遊戲內容可能無法使用。	历史较短，部分游戏内容可能无法使用。		FUN_140df8a80 L2099003 歷史長度選 50 年時的提示；句型對齊 In such a young world…
+This may take several minutes!	這可能需要好幾分鐘！	这可能需要好几分钟！		FUN_140df8a80 L2099012 歷史長度選 250 年時的提示
+This may take a long while!	這可能要花很長一段時間！	这可能要花很长时间！		FUN_140df8a80 L2099019 歷史長度選 500 年時的提示
+They are extinct in this world as well.	牠們在這個世界也已滅絕。	它们在这个世界中也已灭绝。		FUN_140df8a80 L2099056 已滅絕生物選 Extinct 時的說明；繁中動物用「牠」；術語例外：well
+They live only on savage islands and very small savage biomes.	牠們只生活在野性島嶼與極小的野性生物群系。	它们只生活在野性岛屿和极小的野性生物群系中。		FUN_140df8a80 L2099063 已滅絕生物選 Isolated 時的說明；biome 照拒絕說明用「生物群系」
+They can be found in any wilderness.	牠們在任何荒野都找得到。	任何荒野中都能找到它们。		FUN_140df8a80 L2099078 已滅絕生物選 Any wilderness 時的說明
+Many civilizations keep them as pets and work animals.	許多文明把牠們當成寵物與役用動物飼養。	许多文明把它们当作宠物和役用动物饲养。		FUN_140df8a80 L2099085 已滅絕生物選 Domesticated 時的說明
+Parameters saved!	參數已儲存！	参数已保存！		FUN_140df8a80 L2099505 詳細模式頂端訊息
+Parameters loaded!	參數已載入！	参数已加载！		FUN_140df8a80 L2099511 詳細模式頂端訊息
+Choose or create a parameter set to make a custom world.	選擇或建立一組參數，打造自訂世界。	选择或创建一组参数，打造自定义世界。		FUN_140df8a80 L2099516 詳細模式頂端說明
+New parameter set	新增參數組	新建参数组		FUN_140df8a80 L2099550 詳細模式按鈕
+Width	寬度	宽度		FUN_140df8a80 L2099779 詳細模式：世界地圖寬度（Height 已有「高度」）
+Various seeds	多組種子	多组种子		FUN_140df8a80 L2099927 詳細模式：世界、歷史、名稱、生物等種子不一致時
+Random seed	隨機種子	随机种子		FUN_140df8a80 L2099933 詳細模式：沒有指定種子時
+Copy	複製	复制		FUN_140df8a80 L2099982 詳細模式按鈕：複製參數組
+Really delete this parameter set?	確定要刪除這組參數嗎？	确定要删除这组参数吗？		FUN_140df8a80 L2100430 刪除參數組確認視窗
+Really change the dimensions?	確定要變更尺寸嗎？	确定要更改尺寸吗？		FUN_140df8a80 L2100551 變更世界大小確認視窗
+This parameter set will be reset.	這組參數會被重設。	这组参数将被重置。		FUN_140df8a80 L2100555 變更世界大小確認視窗
+Are you sure you want to abort?	確定要放棄嗎？	确定要放弃吗？		FUN_140df8a80 L2100677 離開詳細模式確認視窗；按鈕 Abort 在本畫面譯「放棄」（screens/new_region.tsv）
+You haven't saved your changes.	你還沒儲存變更。	你还没有保存更改。		FUN_140df8a80 L2100681 L2100807 離開詳細模式、直接建立世界的確認視窗
+Are you sure you want to go on?	確定要繼續嗎？	确定要继续吗？		FUN_140df8a80 L2100803 參數未儲存就建立世界的確認視窗
+Create	建立	创建		FUN_140df8a80 L2100839 參數未儲存就建立世界的確認視窗按鈕：建立世界

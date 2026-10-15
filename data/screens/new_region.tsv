@@ -1,0 +1,5 @@
+en	zh-Hant	zh-Hans	align	row	note
+Temperate	溫和	温和			FUN_140df8a80 L2097754 世界地圖滑鼠資訊的氣溫值（不是溫帶）；同一個字在人格特質是「節制」，所以只在建立世界畫面套用（同 choose_start_site.tsv）
+Abort	放棄	放弃			FUN_140df8a80 L2100713 離開詳細模式確認視窗按鈕：放棄未儲存的參數；全域 Abort 是「取消」，和同視窗的 Cancel 撞字，所以本畫面改寫
+Save	儲存	保存			FUN_140df8a80 L2099583 詳細模式按鈕：儲存參數組；全域 Save 是「存檔」
+Change	變更	更改			FUN_140df8a80 L2100587 變更世界大小確認視窗按鈕；放依畫面譯文：全域的大寫條目會經大小寫退回搶走傳說模式的領域名 change（變化）

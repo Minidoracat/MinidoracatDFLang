@@ -3,4 +3,3 @@ en	zh-Hant	zh-Hans	align	note
 {#1}nd {@2}, {@3}, {#4}	{4} 年{2}{1}日，{3}	{4} 年{2}{1}日，{3}		世界清單存檔日期（如 1st Granite, early spring, 5）：{1} 日、{2} 月份名、{3} 季節（strings/saves.tsv）、{4} 年
 {#1}rd {@2}, {@3}, {#4}	{4} 年{2}{1}日，{3}	{4} 年{2}{1}日，{3}		世界清單存檔日期（如 1st Granite, early spring, 5）：{1} 日、{2} 月份名、{3} 季節（strings/saves.tsv）、{4} 年
 {#1}th {@2}, {@3}, {#4}	{4} 年{2}{1}日，{3}	{4} 年{2}{1}日，{3}		世界清單存檔日期（如 1st Granite, early spring, 5）：{1} 日、{2} 月份名、{3} 季節（strings/saves.tsv）、{4} 年
-{#1} saves	{1}個存檔	{1}个存档		世界清單：存檔數量（One save 的複數）；寬度不夠，數字與中文間不留空白
