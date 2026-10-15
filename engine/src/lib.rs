@@ -301,7 +301,7 @@ unsafe extern "C" fn render_mascot(l: lua::State) -> c_int {
     }
 }
 
-/// set_glyphs(字串, {texpos...})：字圖集裡依序的字，與每字左右兩格的 texpos。
+/// set_glyphs(字串, {texpos...})：字圖集裡依序的字，與每字八張貼圖的 texpos（左右兩格、半格位移的上下列、錨定標籤用；見 atlas::render）。
 unsafe extern "C" fn set_glyphs(l: lua::State) -> c_int {
     unsafe {
         let Some(chars) = lua::arg_str(l, 1) else { return fail(l, "set_glyphs: arg 1 must be a UTF-8 string") };
@@ -319,7 +319,7 @@ unsafe extern "C" fn set_glyphs(l: lua::State) -> c_int {
         let mut staging = STAGING.lock();
         let dict = staging.get_or_insert_with(Dict::default);
         if !dict.set_glyphs(chars, texpos) {
-            return fail(l, "set_glyphs: texpos count must be twice the glyph count");
+            return fail(l, "set_glyphs: texpos count must be 8 times the glyph count");
         }
         lua::push_int(l, dict.glyph_of.len() as i64);
         1

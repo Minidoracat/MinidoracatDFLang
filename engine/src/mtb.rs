@@ -54,10 +54,10 @@ const BLANK_LINE: u32 = 2;
 const INDENT: u32 = 4;
 const MARKERS: u32 = NEW_LINE | BLANK_LINE | INDENT;
 
-/// 不能放在行首的標點（中文與半形），換行時連同前一個字一起移到下一行
-const NO_START: &str = "，。、；：！？）」』》〉】〕…‥％・～,.;:!?)]}%";
+/// 不能放在行首的標點（中文與半形；簡中的引號是 “”），換行時連同前一個字一起移到下一行
+const NO_START: &str = "，。、；：！？）」』》〉】〕”’…‥％・～,.;:!?)]}%";
 /// 不能放在行尾的標點，換行時移到下一行
-const NO_END: &str = "（「『《〈【〔([{";
+const NO_END: &str = "（「『《〈【〔“‘([{";
 
 /// 每個段落（以 markup_text_boxst 位址區分）上次排版的單字清單與寬度：都沒變就不重做。
 struct State {
@@ -679,6 +679,7 @@ mod tests {
     fn punctuation_never_starts_a_line() {
         // 寬 12 格：第一行剛好放滿六個字，「。」會落在第二行開頭，所以把「人」一起帶下去
         assert_eq!(lines("準備帶領矮人。出發", 12), ["0,0:準備帶領矮", "0,1:人。出發"]);
+        assert_eq!(lines("准备带领矮人”。出发", 12), ["0,0:准备带领矮", "0,1:人”。出发"], "简中的后引号也不放行首");
     }
 
     #[test]

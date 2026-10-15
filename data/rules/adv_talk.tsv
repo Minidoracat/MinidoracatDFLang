@@ -1,5 +1,5 @@
 en	zh-Hant	zh-Hans	align	note
-Start new conversation with {1}	與{1}展開新交談	与{1}开始新的交谈		FUN_1406b75a0 L931112 交談選單：{1} 對象稱呼（FUN_141331500）；遊戲依寬度把結尾截成「…」時（the Human baro...）照樣套上，截掉的名字照原文
+Start new conversation with {1}	與{1}展開新交談	与{1}开始新的对话		FUN_1406b75a0 L931112 交談選單：{1} 對象稱呼（FUN_141331500）；遊戲依寬度把結尾截成「…」時（the Human baro...）照樣套上，截掉的名字照原文
 Bring up {%1}	提起{1}	提起{1}		FUN_140697740 L918345 等 case 0xc 提起事件：{1} 事件短語（同檔 inner 句型；攻擊用 _events.tsv 的 {1}'s attack on {2}）。整句條目（Bring up the journey together 等）先查
 Spread rumor of {%1}	散播傳聞：{1}	散布传闻：{1}		FUN_140697740 L919022 等 case 0xd 散播傳聞：{1} 傳聞短語（同檔 inner 句型）
 Summarize the conflict in which you slew {1}, {2}, {3}, {4} and {5}	概述你殺死{1}、{2}、{3}、{4}和{5}的那場衝突	概述你杀死{1}、{2}、{3}、{4}和{5}的那场冲突		FUN_140697740 L922567 case 0x76 衝突概述：你殺死的對象（最多五個，逗號與 and 相接；名字不一定翻得出來，所以逐個數量寫，不靠 lists.tsv）

@@ -1,2 +1,3 @@
 en	zh-Hant	zh-Hans	align	row	note
 Cat	Cat	Cat			生物清單的排序鈕（Category 縮寫）。同一個焦點字串的寵物分頁也會單獨畫動物名 Cat，分不開；整句寫成原文，免得引擎把首字大寫的 Cat 退回小寫查到「貓」
+Fish	釣魚	钓鱼			工作名稱 Fish（釣魚）；全域的 Fish 是上方資訊列與庫存的「魚類」，所以只在生物清單、任務分頁、人物頁套用（第二十三輪簡中實機）

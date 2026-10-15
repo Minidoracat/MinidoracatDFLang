@@ -1,4 +1,5 @@
-//! 依目前的文字格大小畫字圖集 PNG：每字畫在兩格寬、一格高的方框裡，再切成左右兩張貼圖。
+//! 依目前的文字格大小畫字圖集 PNG：每字畫在兩格寬、一格高的方框裡，再切成左右兩張貼圖；
+//! 後面接每字四張「往下位移半格」的貼圖（上列左右、下列左右），給分頁標籤這類半格位移的文字用。
 //!
 //! 遊戲以最近鄰縮放貼圖；字圖的像素大小剛好等於畫面上的格子大小，就不會被縮放而糊掉或斷筆。
 //! 清晰度靠三件事：字形套用字型內建的 hinting（思源黑體是 CFF 的 PostScript hints，橫筆對齊像素格）；
@@ -14,8 +15,12 @@ use zeno::{Command, Mask, PathBuilder};
 
 /// 每列幾張貼圖；偶數，同一字的左右半格不會被拆到兩列。
 pub const TILES_PER_ROW: usize = 64;
-/// 字身（em）相對格高的倍數。方塊字約佔字身的 0.9，1.0 時字高約為格高的九成，上下各留約一像素。
-const EM_PER_CELL: f32 = 1.0;
+/// 字身（em）相對格高的倍數。方塊字約佔字身的 0.88：0.875 時 16 px 的格子字高約 12 px，和英文大寫字母（約 11 px）相近。
+/// 1.0 時字高約 14 px、上下只剩一像素：方框畫在最後一列下緣的框線（冒險側欄、日誌的協議欄）會壓到最後一列的字。
+const EM_PER_CELL: f32 = 0.875;
+/// 字往上提的格高比例：英文大寫字母在格子的第 1～11 列，中文置中後上提一像素（16 px 的格子），字身中線才和英文對齊，
+/// 下緣也離框線遠一點。
+const RAISE_PER_CELL: f32 = 1.0 / 16.0;
 /// 覆蓋率存成 alpha 前的次方。實測遊戲畫 ADDCOLOR 貼圖時 alpha 約被平方（53.16，字圖 alpha 0.56 在畫面上只剩約 0.26），
 /// 筆畫邊緣會變得太淡、看起來斷筆；先取 0.7 次方，畫面上約為覆蓋率的 1.4～1.7 次方，邊緣收細但筆畫連續。
 const ALPHA_EXPONENT: f32 = 0.7;
@@ -112,9 +117,9 @@ impl<'a> Glyphs<'a> {
         })
     }
 
-    /// 把 ch 的覆蓋率畫進 box_w×box_h 的遮罩（先清空）：水平依字寬置中，垂直讓「上緣到下緣」的中線落在方框中線。
-    /// 沒有字型能畫時回傳 false。
-    pub fn draw(&self, ch: char, box_w: usize, box_h: usize, mask: &mut [u8]) -> Result<bool, String> {
+    /// 把 ch 的覆蓋率畫進 box_w×box_h 的遮罩（先清空）：水平依字寬置中，垂直讓「上緣到下緣」的中線落在方框中線再往下移 dy 像素
+    /// （負數往上）。沒有字型能畫時回傳 false。
+    pub fn draw(&self, ch: char, box_w: usize, box_h: usize, dy: f32, mask: &mut [u8]) -> Result<bool, String> {
         let location = LocationRef::default();
         let found = self.refs.iter().enumerate().find_map(|(f, font)| {
             let gid = font.charmap().map(ch).filter(|g| g.to_u32() != 0)?;
@@ -126,7 +131,7 @@ impl<'a> Glyphs<'a> {
         let mut pen = Pen {
             path: Vec::new(),
             x: ((box_w as f32 - advance) / 2.0).round(),
-            y: (box_h as f32 / 2.0 + (metrics.ascent + metrics.descent) / 2.0).round(),
+            y: (box_h as f32 / 2.0 + (metrics.ascent + metrics.descent) / 2.0 + dy).round(),
         };
         glyph.draw(DrawSettings::hinted(&self.hinting[f], false), &mut pen).map_err(|e| format!("{ch}: {e}"))?;
         mask[..box_w * box_h].fill(0);
@@ -135,28 +140,57 @@ impl<'a> Glyphs<'a> {
     }
 }
 
+/// 錨定貼圖標籤（出發準備畫面的分頁，見 hooks.rs finish_label）的字身與上提：遊戲把貼圖照原尺寸從固定的上緣畫起，
+/// 英文字型表的字（8×12）大寫字母約 10 px；中文用一般大小（約 13 px）會壓到分頁下緣，改用小一號、靠上。
+const LABEL_EM_PER_CELL: f32 = 0.75;
+const LABEL_RAISE_PER_CELL: f32 = 2.0 / 16.0;
+
+/// 字圖集：前 2n 張是每字左右兩格；之後每字四張（2n + 4i 起：上列左、上列右、下列左、下列右）是同一個字往下位移半格、
+/// 跨在兩列中間的樣子，遊戲畫半格位移的文字時，上列格子標 TOP_OF_TEXT、下列標 BOTTOM_OF_TEXT（見 hooks.rs paint）；
+/// 最後每字兩張（6n + 2i 起）是錨定貼圖標籤用的小一號字。
 pub fn render(fonts: &[Font], chars: &[char], cell_w: usize, cell_h: usize, out: &Path) -> Result<Report, String> {
-    let (box_w, box_h) = (cell_w * 2, cell_h);
-    let tiles = chars.len() * 2;
+    let n = chars.len();
+    let tiles = n * 8;
     let width = TILES_PER_ROW.min(tiles.max(2)) * cell_w;
     let height = tiles.div_ceil(TILES_PER_ROW).max(1) * cell_h;
     let mut rgba = vec![0u8; width * height * 4];
     let alpha: Vec<u8> = (0..=255u32).map(|a| ((a as f32 / 255.0).powf(ALPHA_EXPONENT) * 255.0).round() as u8).collect();
     let glyphs = Glyphs::new(fonts, cell_h)?;
+    let small = Glyphs::with_px(fonts, (cell_h as f32 * LABEL_EM_PER_CELL).round())?;
+    let box_w = cell_w * 2;
+    let dy = -(cell_h as f32 * RAISE_PER_CELL).round();
+    let label_dy = -(cell_h as f32 * LABEL_RAISE_PER_CELL).round();
+    // 遮罩 (sx, sy) 起一格大小的區塊寫進第 tile 張貼圖
+    let mut put = |tile: usize, mask: &[u8], sx: usize, sy: usize| {
+        let (tx, ty) = (tile % TILES_PER_ROW * cell_w, tile / TILES_PER_ROW * cell_h);
+        for y in 0..cell_h {
+            for x in 0..cell_w {
+                let o = ((ty + y) * width + tx + x) * 4;
+                rgba[o..o + 4].copy_from_slice(&[255, 255, 255, alpha[mask[(sy + y) * box_w + sx + x] as usize]]);
+            }
+        }
+    };
 
-    let mut mask = vec![0u8; box_w * box_h];
+    let mut mask = vec![0u8; box_w * cell_h * 2];
     let mut missing = Vec::new();
     for (i, &ch) in chars.iter().enumerate() {
-        if !glyphs.draw(ch, box_w, box_h, &mut mask)? {
+        if !glyphs.draw(ch, box_w, cell_h, dy, &mut mask)? {
             missing.push(ch);
             continue;
         }
-        let (tile_x, tile_y) = ((2 * i) % TILES_PER_ROW * cell_w, (2 * i) / TILES_PER_ROW * cell_h);
-        for y in 0..box_h {
-            for x in 0..box_w {
-                let o = ((tile_y + y) * width + tile_x + x) * 4;
-                rgba[o..o + 4].copy_from_slice(&[255, 255, 255, alpha[mask[y * box_w + x] as usize]]);
+        for half in 0..2 {
+            put(2 * i + half, &mask, half * cell_w, 0);
+        }
+        // 兩列高的方框置中＝一般位置往下移半格
+        glyphs.draw(ch, box_w, cell_h * 2, dy, &mut mask)?;
+        for row in 0..2 {
+            for half in 0..2 {
+                put(2 * n + 4 * i + 2 * row + half, &mask, half * cell_w, row * cell_h);
             }
+        }
+        small.draw(ch, box_w, cell_h, label_dy, &mut mask)?;
+        for half in 0..2 {
+            put(6 * n + 2 * i + half, &mask, half * cell_w, 0);
         }
     }
 

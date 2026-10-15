@@ -18,12 +18,13 @@ use parking_lot::Mutex;
 use retour::RawDetour;
 
 use crate::cp437;
-use crate::dict::{Dict, Entry};
+use crate::dict::{Dict, Entry, Row};
 use crate::mtb::Plan;
 
 /// screentexpos_flag 位元（DFHack Screen.cpp）：ADDCOLOR 以該格前景色為貼圖上色；
 /// TOP_OF_TEXT／BOTTOM_OF_TEXT 是「文字往下位移半格」的上下兩列，遊戲用半格字形分別畫上半與下半。
 const FLAG_ADDCOLOR: u32 = 0x2;
+const FLAG_TOP_OF_TEXT: u32 = 0x8;
 const FLAG_BOTTOM_OF_TEXT: u32 = 0x10;
 
 /// graphicst 欄位相對於 gps 的位移，由 Lua 依 DFHack 的結構定義算出後傳入。
@@ -201,7 +202,7 @@ unsafe fn write<T>(gps: *mut u8, offset: usize, v: T) {
 
 /// 把 (x0 + 格位, y) 上的佔位格換成字圖。條件與遊戲 addchar 相同：在裁切框內（`clip`）、不超出畫面緩衝區。
 /// DFHack 的 paintString 不看遊戲的裁切框（裁切由它的 Lua Painter 先做），貼它的字時 `clip` 給 false。
-unsafe fn paint(gps: *mut u8, layer: &Layer, x0: i32, y: i32, glyphs: &[(usize, u32)], texpos: &[i32], clip: bool) {
+unsafe fn paint(gps: *mut u8, layer: &Layer, x0: i32, y: i32, glyphs: &[(usize, u32)], dict: &Dict, clip: bool) {
     let Some(layout) = LAYOUT.get() else { return };
     unsafe {
         let dimx: i32 = read(gps, layout.dimx);
@@ -231,11 +232,17 @@ unsafe fn paint(gps: *mut u8, layer: &Layer, x0: i32, y: i32, glyphs: &[(usize, 
                 if screen.add(index * 8) >= limit {
                     continue;
                 }
-                // 半格位移的文字（分頁標籤等）遊戲會在上下兩列各寫一次；字圖不能切半格，只畫在上列，下列留白
-                if *flag.add(index) & FLAG_BOTTOM_OF_TEXT != 0 {
-                    continue;
-                }
-                *tex.add(index) = texpos[glyph as usize * 2 + half as usize];
+                // 半格位移的文字（分頁標籤等）遊戲在上下兩列各寫一次，字圖也分上下兩半（見 atlas::render）
+                let f = *flag.add(index);
+                let row = if f & FLAG_BOTTOM_OF_TEXT != 0 {
+                    Row::Bottom
+                } else if f & FLAG_TOP_OF_TEXT != 0 {
+                    Row::Top
+                } else {
+                    Row::Whole
+                };
+                let Some(t) = dict.tile(glyph, half as usize, row) else { continue };
+                *tex.add(index) = t;
                 *flag.add(index) |= FLAG_ADDCOLOR;
             }
         }
@@ -307,7 +314,7 @@ unsafe fn translate_call(gps: *mut u8, kind: &str, key: &[u8], space: i32, layer
     let (cells, glyphs) = entry.fit(space);
     unsafe {
         write(&entry.shadow()[..cells]);
-        paint(gps, &layer(layout), x0, y, &entry.glyphs[..glyphs], &dict.texpos, true);
+        paint(gps, &layer(layout), x0, y, &entry.glyphs[..glyphs], dict, true);
     }
     true
 }
@@ -460,7 +467,7 @@ pub fn dfhack_stamp(gps: usize, x: i32, y: i32, top: bool) {
         return;
     }
     let layer = if top { layout.top } else { layout.main };
-    unsafe { paint(gps as *mut u8, &layer, x, y, &glyphs, &(*dict).texpos, false) };
+    unsafe { paint(gps as *mut u8, &layer, x, y, &glyphs, &*dict, false) };
 }
 
 fn main_layer(l: &Layout) -> Layer {
@@ -506,7 +513,7 @@ unsafe fn paragraph_word(gps: *mut u8, s: *const StdString, layer: fn(&Layout) -
                 }
             }
             draw(&StdString::borrowed(p.entry.shadow()));
-            paint(gps, &layer(layout), x + p.dx, y + p.dy, &p.entry.glyphs, &dict.texpos, true);
+            paint(gps, &layer(layout), x + p.dx, y + p.dy, &p.entry.glyphs, dict, true);
         }
         for (off, c) in layout.color.iter().zip(color) {
             write(gps, *off, c);
@@ -602,7 +609,7 @@ unsafe fn colored_line(gps: *mut u8, s: *const u8, draw: impl Fn(*const u8, *con
             let text: Vec<u8> = shadow.iter().copied().chain([0]).collect();
             let cols: Vec<u8> = std::iter::repeat_n(p.color, shadow.len()).chain([0]).collect();
             draw(text.as_ptr(), cols.as_ptr());
-            paint(gps, &layout.main, x + p.dx, y + p.dy, &p.entry.glyphs, &dict.texpos, true);
+            paint(gps, &layout.main, x + p.dx, y + p.dy, &p.entry.glyphs, dict, true);
         }
         write(gps, layout.screenx, x);
         write(gps, layout.screeny, y);
@@ -851,7 +858,7 @@ unsafe fn finish_label(label: Label) {
         note_miss("add_anchored_tile", &label.text);
         return;
     };
-    let Some(tiles) = label_tiles(label.text.len(), &entry, &dict.texpos, |c| unsafe { font_tex(label.font, c) }) else {
+    let Some(tiles) = label_tiles(label.text.len(), &entry, dict, |c| unsafe { font_tex(label.font, c) }) else {
         return; // 放不下，照畫英文
     };
     HITS.fetch_add(1, Ordering::Relaxed);
@@ -874,14 +881,14 @@ unsafe fn finish_label(label: Label) {
     }
 }
 
-/// 標籤每一格換成的貼圖：譯文在原文寬度裡置中，中文字放字圖的左右半格，其他字用字型表的字，
-/// 多出來的格放空白。譯文比原文寬就回傳 None（照畫英文）。
-fn label_tiles(n: usize, entry: &Entry, glyph_tex: &[i32], font: impl Fn(u8) -> i32) -> Option<Vec<i32>> {
+/// 標籤每一格換成的貼圖：譯文在原文寬度裡置中，中文字放標籤用字圖（小一號，見 atlas::render）的左右半格，
+/// 其他字用字型表的字，多出來的格放空白。譯文比原文寬就回傳 None（照畫英文）。
+fn label_tiles(n: usize, entry: &Entry, dict: &Dict, font: impl Fn(u8) -> i32) -> Option<Vec<i32>> {
     let shadow = entry.shadow();
     let pad = n.checked_sub(shadow.len())? / 2;
     let tile = |k: usize| match k.checked_sub(pad).filter(|&r| r < shadow.len()) {
         Some(r) => match entry.glyphs.iter().find(|&&(off, _)| r == off || r == off + 1) {
-            Some(&(off, g)) => glyph_tex[g as usize * 2 + (r - off)],
+            Some(&(off, g)) => dict.tile(g, r - off, Row::Label).unwrap_or_else(|| font(shadow[r])),
             None => font(shadow[r]),
         },
         None => font(b' '),
@@ -902,10 +909,10 @@ mod tests {
         let font = |c: u8| 500 + c as i32;
         let sp = font(b' ');
         // Crucial 7 格、關鍵 4 格：左邊空 1 格，右邊空 2 格
-        assert_eq!(label_tiles(7, &d.entries[&b"Crucial"[..]], &d.texpos, font), Some(vec![sp, 10, 11, 20, 21, sp, sp]));
+        assert_eq!(label_tiles(7, &d.entries[&b"Crucial"[..]], &d, font), Some(vec![sp, 10, 11, 20, 21, sp, sp]));
         // 英數照字型表；放不下就不換
-        assert_eq!(label_tiles(3, &d.entries[&b"C1"[..]], &d.texpos, font), Some(vec![font(b'A'), 10, 11]));
-        assert_eq!(label_tiles(2, &d.entries[&b"C1"[..]], &d.texpos, font), None);
+        assert_eq!(label_tiles(3, &d.entries[&b"C1"[..]], &d, font), Some(vec![font(b'A'), 10, 11]));
+        assert_eq!(label_tiles(2, &d.entries[&b"C1"[..]], &d, font), None);
     }
 
     #[test]

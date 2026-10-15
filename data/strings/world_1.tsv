@@ -137,3 +137,13 @@ Minimum Savagery	野性下限	野性下限		FUN_140de6b00 L2086243 建立世界�
 Maximum Savagery	野性上限	野性上限		FUN_140de6b00 L2086254 建立世界進階參數：標籤：Maximum ＋類別名拼成
 Savagery X-Variance	野性 X 軸變異量	野性 X 轴变异量		FUN_140de6b00 L2086265 建立世界進階參數：標籤：類別名＋ X-Variance／Y-Variance 拼成
 Savagery Y-Variance	野性 Y 軸變異量	野性 Y 轴变异量		FUN_140de6b00 L2086265 建立世界進階參數：標籤：類別名＋ X-Variance／Y-Variance 拼成
+LARGE ISLAND	大型島嶼	大型岛屿		FUN_140deaba0 世界生成參數組的預設名稱（詳細模式左上的下拉選單；全大寫不退回小寫，要整條寫）
+LARGE REGION	大型地區	大型地区		同上
+MEDIUM ISLAND	中型島嶼	中型岛屿		FUN_140deaba0 世界生成參數組的預設名稱（詳細模式左上的下拉選單；全大寫不退回小寫，要整條寫）
+MEDIUM REGION	中型地區	中型地区		同上
+SMALL ISLAND	小型島嶼	小型岛屿		FUN_140deaba0 世界生成參數組的預設名稱（詳細模式左上的下拉選單；全大寫不退回小寫，要整條寫）
+SMALL REGION	小型地區	小型地区		同上
+SMALLER ISLAND	較小島嶼	较小岛屿		FUN_140deaba0 世界生成參數組的預設名稱（詳細模式左上的下拉選單；全大寫不退回小寫，要整條寫）
+SMALLER REGION	較小地區	较小地区		同上
+POCKET ISLAND	袖珍島嶼	袖珍岛屿		FUN_140deaba0 世界生成參數組的預設名稱（詳細模式左上的下拉選單；全大寫不退回小寫，要整條寫）
+POCKET REGION	袖珍地區	袖珍地区		同上

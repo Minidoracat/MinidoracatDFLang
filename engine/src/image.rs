@@ -139,7 +139,7 @@ fn text_line(glyphs: &Glyphs, text: &str, cell_w: usize, line_h: usize) -> Resul
     let mut x0 = 0;
     for (ch, w) in boxes {
         let mut mask = vec![0u8; w * line_h];
-        if !glyphs.draw(ch, w, line_h, &mut mask)? {
+        if !glyphs.draw(ch, w, line_h, 0.0, &mut mask)? {
             return Err(format!("「{ch}」沒有字型能畫"));
         }
         for y in 0..line_h {

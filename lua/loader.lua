@@ -109,9 +109,9 @@ local function load_glyphs(engine, dir)
     local tiles, missing = engine.render_atlas(png, w, h, chars, fonts)
     if not tiles then return nil, missing end
     if missing ~= '' then fail('沒有字型能畫：%s', missing) end
-    -- 字圖集最後一列可能沒排滿；只取每字左右兩格
+    -- 字圖集最後一列可能沒排滿；每字取八張：左右兩格、半格位移的上下列各左右兩格（分頁標籤這類文字）、錨定貼圖標籤用的小一號字
     local loaded = dfhack.textures.loadTileset(png, w, h, true)
-    local handles = table.move(loaded, 1, utf8.len(chars) * 2, 1, {})
+    local handles = table.move(loaded, 1, utf8.len(chars) * 8, 1, {})
     local n, err = engine.set_glyphs(chars, resolve(handles))
     if not n then return nil, err end
     return handles, n
@@ -387,15 +387,16 @@ local function start()
         if not ok then fail('無法記錄未翻譯字串：%s', err) end
     end
 
-    local first = dfhack.textures.getTexposByHandle(handles[1])
+    -- 每字八張，保留範圍（約 8,800 張可用）放不下，後面的落在 DFHack 的動態範圍：遊戲重載貼圖後 texpos 會變，
+    -- 最後一張一定在動態範圍（或全部都在保留範圍、永遠不變），看它就知道要不要重查
+    local last = dfhack.textures.getTexposByHandle(handles[#handles])
     dfhack.BASE_G.DFLANG = {engine = engine, lang = LANG, dir = dir, config = CONFIG_FILE,
                             mascot = load_mascot(engine, dir)}
-    -- 字圖放在 DFHack 的保留範圍，texpos 不會變；保留範圍不夠時 DFHack 會改用動態範圍，遊戲重載貼圖後要重查
     dfhack.onStateChange.dflang = function(sc)
         if sc ~= SC_VIEWSCREEN_CHANGED and sc ~= SC_WORLD_LOADED and sc ~= SC_WORLD_UNLOADED then return end
-        local now = dfhack.textures.getTexposByHandle(handles[1])
-        if now == first then return end
-        first = now
+        local now = dfhack.textures.getTexposByHandle(handles[#handles])
+        if now == last then return end
+        last = now
         engine.update_texpos(resolve(handles))
     end
     log('已啟用：%d 條譯文、%d 條句型、%d 個字圖', loaded, rules, glyphs)

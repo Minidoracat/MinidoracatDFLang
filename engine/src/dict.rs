@@ -465,7 +465,8 @@ pub struct Dict {
     /// 原文 → 句型規則的結果。翻不出來的也要記住（免得每幀重比）。翻不出來或譯文還夾著英文的，另記當時名稱表的版本
     /// （names::generation）：之後登記了新名字（清單先畫、名字後登記），版本不同就重算；全中文的結果不再重算
     cache: Mutex<HashMap<Vec<u8>, (Option<Arc<Entry>>, Option<u64>)>>,
-    /// 字 → 字圖編號；字圖 i 的左右半格在 texpos[2i]、texpos[2i+1]。
+    /// 字 → 字圖編號；字圖 i 的左右半格在 texpos[2i]、texpos[2i+1]。完整字圖集（長度 8n，見 atlas::render）另有：
+    /// 字圖 i 往下位移半格的上列左右在 [2n+4i]、[2n+4i+1]，下列左右在 [2n+4i+2]、[2n+4i+3]；錨定貼圖標籤用的小一號字在 [6n+2i]、[6n+2i+1]（見 Dict::tile）。
     pub glyph_of: HashMap<char, u32>,
     pub texpos: Vec<i32>,
 }
@@ -478,15 +479,39 @@ pub struct LoadReport {
     pub missing_glyphs: usize,
 }
 
+/// 一格字圖畫在哪種地方：一般、半格位移文字的上列（TOP_OF_TEXT）或下列（BOTTOM_OF_TEXT）、錨定貼圖標籤
+#[derive(Clone, Copy, PartialEq, Debug)]
+pub enum Row {
+    Whole,
+    Top,
+    Bottom,
+    Label,
+}
+
 impl Dict {
+    /// texpos 是每字左右兩格（2n，測試用），或完整字圖集（8n，見 glyph_of）。
     pub fn set_glyphs(&mut self, chars: &str, texpos: Vec<i32>) -> bool {
         let chars: Vec<char> = chars.chars().collect();
-        if texpos.len() != chars.len() * 2 {
+        if texpos.len() != chars.len() * 2 && texpos.len() != chars.len() * 8 {
             return false;
         }
         self.glyph_of = chars.into_iter().enumerate().map(|(i, c)| (c, i as u32)).collect();
         self.texpos = texpos;
         true
+    }
+
+    /// 字圖 glyph 的左（half 0）或右半格畫在 row 時的 texpos。只有一般字圖時，上列與標籤畫一般的字、下列不畫（None）。
+    pub fn tile(&self, glyph: u32, half: usize, row: Row) -> Option<i32> {
+        let (g, n) = (glyph as usize, self.glyph_of.len());
+        let full = self.texpos.len() == n * 8;
+        let i = match row {
+            Row::Top if full => 2 * n + 4 * g,
+            Row::Bottom if full => 2 * n + 4 * g + 2,
+            Row::Label if full => 6 * n + 2 * g,
+            Row::Bottom => return None,
+            _ => 2 * g,
+        };
+        self.texpos.get(i + half).copied()
     }
 
     /// 任一段文字的替身字串與字圖（段落換行後的一段，見 mtb.rs）；缺字圖時回傳 None。
@@ -1615,5 +1640,21 @@ mod tests {
         assert_eq!(zh(b"The artwork relates to the departure of Urist after the death of Bob in 3.").as_deref(),
                    Some("這與3年Urist的離去，在Bob死後有關。"), "含名字的片語不能在外層把短語的日期吞進 {{1}}");
         assert_eq!(zh(b"Urist sang for an insurrection."), None, "其餘翻不出來就不算");
+    }
+
+    #[test]
+    fn half_row_text_and_anchored_labels_use_their_own_glyph_tiles() {
+        let mut d = Dict::default();
+        // 兩字：一般左右 10、11／20、21；半格位移：第一字上列 100、101、下列 102、103，第二字 104～107；標籤 200、201／210、211
+        let full = vec![10, 11, 20, 21, 100, 101, 102, 103, 104, 105, 106, 107, 200, 201, 210, 211];
+        assert!(d.set_glyphs("關鍵", full));
+        assert_eq!(d.tile(1, 1, Row::Whole), Some(21));
+        assert_eq!(d.tile(0, 1, Row::Top), Some(101), "分頁標籤的上列畫字的上半");
+        assert_eq!(d.tile(1, 0, Row::Bottom), Some(106), "下列畫字的下半，不再留白");
+        assert_eq!(d.tile(1, 1, Row::Label), Some(211), "錨定貼圖標籤用小一號的字");
+        assert!(d.set_glyphs("關鍵", vec![10, 11, 20, 21]));
+        assert_eq!((d.tile(1, 0, Row::Top), d.tile(1, 0, Row::Bottom), d.tile(1, 0, Row::Label)), (Some(20), None, Some(20)),
+                   "只有一般字圖：上列與標籤畫一般的字、下列不畫");
+        assert!(!d.set_glyphs("關鍵", vec![0; 12]), "數量不是 2 或 8 倍");
     }
 }
