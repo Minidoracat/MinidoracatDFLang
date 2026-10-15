@@ -28,14 +28,16 @@ from pathlib import Path
 
 from fontTools.ttLib import TTFont
 
-from build import DIST, FONTS, KINDS, dict_lines, load_config, read_rows
+from build import DIST, FONTS, KINDS, dict_lines, load_config, name_lines, read_rows
 from cp437 import BYTE_OF, cells, encodable
 
 ROOT = Path(__file__).resolve().parents[1]
 HEADER = ["en", "zh-Hant", "zh-Hans", "align", "note"]
 # data/screens 多一欄 row：只在畫面第幾列套用（空白是任何一列），同畫面同字不同意思時用
 SCREEN_HEADER = ["en", "zh-Hant", "zh-Hans", "align", "row", "note"]
-HOOKS = ("addst", "addst_flag", "top_addst", "addcoloredst", "mtb_set_width", "add_anchored_tile", "wrap_text", "ctb_add_string")
+NAME_HEADER = ["word", "pos", "en", "zh-Hant", "zh-Hans", "note"]
+HOOKS = ("addst", "addst_flag", "top_addst", "addcoloredst", "mtb_set_width", "add_anchored_tile", "wrap_text", "ctb_add_string",
+         "translate_name")
 PACKAGE_SUFFIXES = {".txt", ".tsv", ".lua", ".dll", ".otf", ".md", ".png"}
 # {1}～{9}；{#1} 只收數字、{@1} 只收字典裡的字詞、{%1} 只收翻得出來的片段、{~1} 同 {1} 但譯文可省略；譯文可寫 {1+時}（佔位譯文沒有時間、原因助詞結尾時補字）
 PLACEHOLDER = re.compile(r"\{[#@%~]?([1-9])(?:\+([^{}]+))?\}")
@@ -100,6 +102,20 @@ def main() -> int:
     check(not bad_screens, "data/screens 檔名是畫面（英數、底線，. 代表 /）", bad_screens)
     bad_rows = [f"{r['file']}: {r['en']!r} row={r['row']!r}" for r in data["screens"] if not re.fullmatch(r"\d*", r["row"])]
     check(not bad_rows, "data/screens 的 row 是空白或非負整數", bad_rows)
+    # 世界生成名稱的字表（見引擎 names.rs）：一個字的一個詞性一列，繁簡都要有
+    name_files = sorted((ROOT / "data/names").glob("*.tsv"))
+    bad_name_headers = [f"names/{f.name}" for f in name_files if f.read_text(encoding="utf-8").split("\n", 1)[0].split("\t") != NAME_HEADER]
+    names = [r for r in read_rows("names") if f"names/{r['file']}" not in bad_name_headers]
+    seen_names: set[tuple[str, str]] = set()
+    bad_names = []
+    for r in names:
+        key = (r.get("word"), r.get("pos"))
+        if None in r.values() or None in r or r["pos"] not in ("NOUN", "ADJ", "PREFIX", "VERB") or key in seen_names \
+                or any(not r[lang].strip() for lang in langs):
+            bad_names.append(f"names/{r['file']}: {key}")
+        seen_names.add(key)
+    check(not bad_name_headers and not bad_names, f"names 字表（{len(name_files)} 檔、{len(names)} 條：代號＋詞性不重複、繁簡都有）",
+          bad_name_headers + bad_names)
 
     seen, dupes, bad_src, bad_align = set(), [], [], []
     for r in rows:
@@ -185,16 +201,17 @@ def main() -> int:
             continue
         suffix = item["lang"].lower().replace("-", "_")
         required = ["info.txt", f"scripts_modinstalled/dflang_{suffix}.lua", "scripts_modinstalled/dflang.lua",
-                    "dflang/dflang.dll", *(f"dflang/{kind}.tsv" for kind in KINDS), "dflang/glyphs.txt", "dflang/patterns.tsv",
-                    "dflang/LICENSE.txt", "dflang/LICENSE-fonts.txt", "dflang/CREDITS.md", "dflang/mascot.png"]
+                    "dflang/dflang.dll", *(f"dflang/{kind}.tsv" for kind in KINDS), "dflang/names.tsv", "dflang/glyphs.txt",
+                    "dflang/patterns.tsv", "dflang/LICENSE.txt", "dflang/LICENSE-fonts.txt", "dflang/CREDITS.md", "dflang/mascot.png"]
         lacking = [p for p in required if not (out / p).is_file()] + ([] if list((out / "dflang/fonts").glob("*.otf")) else ["dflang/fonts/*.otf"])
         stray = [p.relative_to(out).as_posix() for p in out.rglob("*") if p.is_file() and p.suffix not in PACKAGE_SUFFIXES]
         stale = []
-        for kind in KINDS:
-            built = out / f"dflang/{kind}.tsv"
-            expected = dict_lines(kind, data[kind], item["lang"])
+        built_files = {f"dflang/{kind}.tsv": dict_lines(kind, data[kind], item["lang"]) for kind in KINDS}
+        built_files["dflang/names.tsv"] = name_lines(names, item["lang"])
+        for path, expected in built_files.items():
+            built = out / path
             if built.is_file() and built.read_text(encoding="utf-8") != expected:
-                stale.append(f"dflang/{kind}.tsv 過期，重跑 build.py")
+                stale.append(f"{path} 過期，重跑 build.py")
         check(not lacking and not stray and not stale, f"{item['lang']} dist 檔案齊全、無雜檔、字典與句型和 data/ 一致",
               lacking + stray + stale)
 

@@ -62,10 +62,11 @@ def check() -> int:
             fails.append(f"terms.tsv: 重複術語 {t['en']}（{t['category']}）")
         seen.add(key)
 
+    # 世界生成名稱的字表（data/names）是組名字用的詞素（TEMPLE 太陽穴、TAME 馴），不套介面術語；兩岸用語與字形照查
     for t in terms:
         pattern = term_re(t["en"])
         for r in rows:
-            if not pattern.search(r["en"]) or t["en"].lower() in exempt(r):
+            if r["file"].startswith("names/") or not pattern.search(r["en"]) or t["en"].lower() in exempt(r):
                 continue
             for lang in LANGS:
                 text = r[lang]

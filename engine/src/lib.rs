@@ -15,6 +15,7 @@ mod image;
 mod lines;
 mod lua;
 mod mtb;
+mod names;
 mod scan;
 
 use std::ffi::{c_int, CStr};
@@ -40,6 +41,8 @@ pub unsafe extern "C" fn luaopen_dflang(l: lua::State) -> c_int {
         lua::set_fn(l, c"set_layout", set_layout);
         lua::set_fn(l, c"set_mtb_layout", set_mtb_layout);
         lua::set_fn(l, c"set_ctb_layout", set_ctb_layout);
+        lua::set_fn(l, c"set_name_layout", set_name_layout);
+        lua::set_fn(l, c"load_names", load_names);
         lua::set_fn(l, c"render_atlas", render_atlas);
         lua::set_fn(l, c"render_mascot", render_mascot);
         lua::set_fn(l, c"set_glyphs", set_glyphs);
@@ -158,6 +161,38 @@ unsafe extern "C" fn set_ctb_layout(l: lua::State) -> c_int {
                 ok(l)
             }
             _ => fail(l, "set_ctb_layout: missing or non-integer field"),
+        }
+    }
+}
+
+/// set_name_layout{words, parts = language_name 欄位位移, word_vec = world.raws.language.words 的位址,
+/// word_token, word_forms = language_word 欄位位移}（世界生成名稱，見 names.rs）
+unsafe extern "C" fn set_name_layout(l: lua::State) -> c_int {
+    unsafe {
+        if lua::arg_type(l, 1) != lua::TTABLE {
+            return fail(l, "set_name_layout expects a table");
+        }
+        let f = |name: &CStr| lua::field_int(l, 1, name).map(|v| v as usize);
+        match (f(c"words"), f(c"parts"), f(c"word_vec"), f(c"word_token"), f(c"word_forms")) {
+            (Some(words), Some(parts), Some(word_vec), Some(word_token), Some(word_forms)) if word_vec != 0 => {
+                let _ = names::NAME_LAYOUT.set(names::NameLayout { words, parts, word_vec, word_token, word_forms });
+                ok(l)
+            }
+            _ => fail(l, "set_name_layout: missing or non-integer field"),
+        }
+    }
+}
+
+/// load_names(路徑) → 載入條數（世界生成名稱的字表：代號<TAB>詞性<TAB>中文）
+unsafe extern "C" fn load_names(l: lua::State) -> c_int {
+    unsafe {
+        let Some(path) = lua::arg_str(l, 1) else { return fail(l, "load_names: expects a path") };
+        match std::fs::read_to_string(path) {
+            Ok(content) => {
+                lua::push_int(l, names::load_words(&content) as i64);
+                1
+            }
+            Err(e) => fail(l, &format!("load_names: {e}")),
         }
     }
 }

@@ -70,6 +70,11 @@ def dict_lines(kind: str, rows: list[dict], lang: str) -> str:
     return "".join(line(r) for r in rows if r[lang].strip())
 
 
+def name_lines(rows: list[dict], lang: str) -> str:
+    """dist 的 dflang/names.tsv：字的代號<TAB>詞性<TAB>中文（世界生成名稱的字表，見引擎 names.rs）。"""
+    return "".join(f"{r['word']}\t{r['pos']}\t{r[lang]}\n" for r in rows if r[lang].strip())
+
+
 def fetch_fonts(sources: dict[str, str]) -> None:
     """workshop.json 的 font_sources：字型檔名 → 下載網址；已下載的略過。"""
     FONTS.mkdir(parents=True, exist_ok=True)
@@ -125,9 +130,9 @@ def write_text(path: Path, text: str) -> None:
     path.write_text(text, encoding="utf-8", newline="\n")
 
 
-def build_item(item: dict, config: dict, texts: dict[str, list[dict]], dll: Path) -> int:
+def build_item(item: dict, config: dict, texts: dict[str, list[dict]], names: list[dict], dll: Path) -> int:
     lang = item["lang"]
-    chars = sorted({c for kind in KINDS for r in texts[kind] for c in r[lang] if c not in BYTE_OF})
+    chars = sorted({c for rows in [*texts.values(), names] for r in rows for c in r[lang] if c not in BYTE_OF})
     out = DIST / item["folder"]
     try:
         if out.exists():
@@ -147,6 +152,7 @@ def build_item(item: dict, config: dict, texts: dict[str, list[dict]], dll: Path
     write_text(data / "glyphs.txt", "".join(chars) + "\n")
     for kind in KINDS:
         write_text(data / f"{kind}.tsv", dict_lines(kind, texts[kind], lang))
+    write_text(data / "names.tsv", name_lines(names, lang))
     patterns = (ROOT / "engine/patterns.tsv").read_text(encoding="utf-8").splitlines()
     write_text(data / "patterns.tsv", "".join(f"{line}\n" for line in patterns if line and not line.startswith("#")))
     shutil.copy2(dll, data / "dflang.dll")
@@ -164,7 +170,7 @@ def build_item(item: dict, config: dict, texts: dict[str, list[dict]], dll: Path
     write_text(out / "info.txt", info_txt(item, config))
     counts = "、".join(f"{sum(1 for r in texts[kind] if r[lang].strip())} 條{name}"
                       for kind, name in zip(KINDS, ("譯文", "句型", "依畫面譯文")))
-    print(f"{lang}: {counts}、{len(chars)} 個字 -> {out.relative_to(ROOT)}")
+    print(f"{lang}: {counts}、{sum(1 for r in names if r[lang].strip())} 個名稱用字、{len(chars)} 個字 -> {out.relative_to(ROOT)}")
     return 0
 
 
@@ -178,7 +184,8 @@ def main() -> int:
         fetch_fonts(config["font_sources"])
     dll = ROOT / "engine/target/release/dflang.dll" if args.skip_engine else build_engine()
     texts = {kind: read_rows(kind) for kind in KINDS}
-    return max(build_item(item, config, texts, dll) for item in config["items"])
+    names = read_rows("names")
+    return max(build_item(item, config, texts, names, dll) for item in config["items"])
 
 
 if __name__ == "__main__":

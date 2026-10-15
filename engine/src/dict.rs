@@ -643,10 +643,13 @@ impl Dict {
         Some(out)
     }
 
-    /// 一個片段的譯文：整句字典（含大寫退回小寫），再套句型。
+    /// 一個片段的譯文：整句字典（含大寫退回小寫）、遊戲組過的世界生成名稱（見 names.rs），再套句型。
     fn piece(&self, key: &[u8], depth: usize, memo: &mut Memo) -> Option<Found> {
         if let Some(e) = if depth > 0 { lookup_inner(self, key) } else { lookup_name(self, key) } {
             return Some((vec![(e.text.clone(), 0)], true));
+        }
+        if let Some(zh) = crate::names::get(key) {
+            return Some((vec![(zh.to_string(), 0)], true));
         }
         if depth > MAX_DEPTH {
             return None;
@@ -711,19 +714,24 @@ impl Dict {
         None
     }
 
-    /// hook 用：整句字典沒有時，先試首字小寫的名稱，再套句型規則並換算成替身字串。譯文比原文寬或缺字圖時放棄，照畫英文。
+    /// hook 用：整句字典沒有時，先試首字小寫的名稱、遊戲組過的世界生成名稱，再套句型規則並換算成替身字串。
+    /// 譯文比原文寬或缺字圖時放棄，照畫英文。記成翻不出來的字串之後若登記成世界生成名稱（見 names.rs），重算一次。
     pub fn rule_entry(&self, key: &[u8]) -> Option<Arc<Entry>> {
         let mut cache = self.cache.lock();
-        if let Some(hit) = cache.get(key) {
-            return hit.clone();
+        let name = || crate::names::get(key);
+        match cache.get(key) {
+            Some(Some(hit)) => return Some(hit.clone()),
+            Some(None) if name().is_none() => return None,
+            _ => {}
         }
+        let fits = |text: &str, align: &str| {
+            let (entry, missing) = self.entry(key.len(), text, align);
+            (missing == 0 && entry.shadow().len() <= key.len()).then(|| Arc::new(entry))
+        };
         // 小寫寫法的原文和 key 等長，替身字串與對齊都能照用
-        let entry = lookup_name(self, key).map(|e| Arc::new(e.clone())).or_else(|| {
-            self.apply_rules(key, 0, &mut Memo::new()).and_then(|(pieces, rule, _)| {
-                let (entry, missing) = self.entry(key.len(), &concat(pieces), &rule.align);
-                (missing == 0 && entry.shadow().len() <= key.len()).then(|| Arc::new(entry))
-            })
-        });
+        let entry = lookup_name(self, key).map(|e| Arc::new(e.clone()))
+            .or_else(|| name().and_then(|zh| fits(&zh, "")))
+            .or_else(|| self.apply_rules(key, 0, &mut Memo::new()).and_then(|(pieces, rule, _)| fits(&concat(pieces), &rule.align)));
         if cache.len() >= CACHE_LIMIT {
             cache.clear();
         }

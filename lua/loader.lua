@@ -137,6 +137,17 @@ local function ctb_layout()
     return ok and layout or nil
 end
 
+-- 世界生成名稱（見引擎 names.rs）：名字的字號與詞性欄位、字表的位址；這版 DFHack 沒有這些定義就回傳 nil，名稱維持英文
+local function name_layout()
+    local ok, layout = pcall(function()
+        local name, word = df.language_name._fields, df.language_word._fields
+        return {words = name.words.offset, parts = name.parts_of_speech.offset,
+                word_vec = select(2, df.global.world.raws.language.words:sizeof()),
+                word_token = word.word.offset, word_forms = word.forms.offset}
+    end)
+    return ok and layout or nil
+end
+
 local function attach_hooks(engine, dir, hooks)
     local patterns = {}
     for name, pattern in (read_file(dir .. 'patterns.tsv') or ''):gmatch('([%w_]+)\t([^\t\n]+)') do
@@ -210,6 +221,9 @@ local function start()
     local ctb = ctb_layout()
     local ctb_ok = ctb and engine.set_ctb_layout(ctb)
     if not ctb_ok then fail('這版 DFHack 沒有彩色文字框的結構定義，人物頁的想法與性格維持英文') end
+    local name = name_layout()
+    local names_ok = name and engine.set_name_layout(name)
+    if not names_ok then fail('這版 DFHack 沒有名稱的結構定義，世界生成的名稱維持英文') end
 
     local handles, glyphs = load_glyphs(engine, dir)
     if not handles then return fail('%s', glyphs) end
@@ -228,6 +242,14 @@ local function start()
     if bad_screens > 0 or missing_screen_glyphs > 0 then
         fail('依畫面的譯文有 %d 條原文無法比對、%d 個字沒有字圖', bad_screens, missing_screen_glyphs)
     end
+    if names_ok then
+        local words
+        words, err = engine.load_names(dir .. 'names.tsv')
+        if not words then
+            fail('%s；世界生成的名稱維持英文', err)
+            names_ok = false
+        end
+    end
 
     ok, err = attach_hooks(engine, dir, hooks)
     if not ok then return fail('%s', err) end
@@ -238,6 +260,11 @@ local function start()
     if ctb_ok then
         ok, err = attach_hooks(engine, dir, {'ctb_add_string'})
         if not ok then fail('%s；人物頁的想法與性格維持英文', err) end
+    end
+    -- 世界生成的名稱（攔遊戲把名字轉成英文的函式）；找不到只有名稱維持英文
+    if names_ok then
+        ok, err = attach_hooks(engine, dir, {'translate_name'})
+        if not ok then fail('%s；世界生成的名稱維持英文', err) end
     end
     ok, err = engine.enable()
     if not ok then return fail('%s', err) end

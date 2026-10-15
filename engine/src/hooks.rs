@@ -90,10 +90,14 @@ type AnchoredFn = unsafe extern "C" fn(*mut u8, i32, i32, i32, i32, i32, u8);
 type WrapFn = unsafe extern "C" fn(*mut u8, *const StdString, i32);
 /// (color_text_boxst：開頭是 vector<color_text_linest*>, 含換色標記的原文)
 type CtbAddFn = unsafe extern "C" fn(*mut u8, *const StdString);
+/// (language_name, 輸出的英文名, 每段字首大寫, 只要第一段)
+type NameFn = unsafe extern "C" fn(*const u8, *mut StdString, u8, u8);
 
-pub const HOOKS: [&str; 8] =
-    ["addst", "addst_flag", "top_addst", "addcoloredst", "mtb_set_width", "add_anchored_tile", "wrap_text", "ctb_add_string"];
-static TRAMPOLINES: [AtomicUsize; 8] = [const { AtomicUsize::new(0) }; 8];
+pub const HOOKS: [&str; 9] = [
+    "addst", "addst_flag", "top_addst", "addcoloredst", "mtb_set_width", "add_anchored_tile", "wrap_text", "ctb_add_string",
+    "translate_name",
+];
+static TRAMPOLINES: [AtomicUsize; 9] = [const { AtomicUsize::new(0) }; 9];
 /// wrap_text 的位址：enable 時從呼叫它的程式碼找出遊戲啟動時就切好的提示（見 lines.rs）
 pub static WRAP_TEXT: OnceLock<usize> = OnceLock::new();
 
@@ -112,7 +116,8 @@ pub fn attach(name: &str, target: usize) -> Result<(), String> {
         4 => hook_mtb_set_width as *const (),
         5 => hook_add_anchored_tile as *const (),
         6 => hook_wrap_text as *const (),
-        _ => hook_ctb_add_string as *const (),
+        7 => hook_ctb_add_string as *const (),
+        _ => hook_translate_name as *const (),
     };
     let detour = unsafe { RawDetour::new(target as *const (), hook) }.map_err(|e| e.to_string())?;
     TRAMPOLINES[index].store(detour.trampoline() as *const () as usize, Ordering::Release);
@@ -453,6 +458,15 @@ unsafe extern "C" fn hook_ctb_add_string(boxp: *mut u8, raw: *const StdString) {
         for sentence in crate::ctb::plan(&lines[before.min(lines.len())..], (*raw).bytes(), width, &*dict) {
             note_miss("ctb", &sentence);
         }
+    }
+}
+
+/// 名字轉英文：原函式照跑、英文照用；登記這個英文名的中文（見 names.rs）。
+unsafe extern "C" fn hook_translate_name(name: *const u8, out: *mut StdString, capitalize: u8, only_first: u8) {
+    let orig: NameFn = unsafe { std::mem::transmute(TRAMPOLINES[8].load(Ordering::Acquire)) };
+    unsafe { orig(name, out, capitalize, only_first) };
+    if ENABLED.load(Ordering::Relaxed) {
+        unsafe { crate::names::note(name as usize, (*out).bytes()) };
     }
 }
 

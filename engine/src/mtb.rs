@@ -561,12 +561,29 @@ unsafe fn plan_links(words: &[usize], width: i32, translation: &str, dict: &Dict
         let movable: Vec<bool> = words.iter().enumerate().map(|(i, &w)| !is_link[i] && read::<u32>(w, l.word_flags) & MARKERS == 0).collect();
         let carrier = |i: usize| movable[i] && !str_bytes(words[i] + l.word_str).is_empty();
         let base: [u8; 3] = read(words[(0..words.len()).find(|&i| carrier(i))?], l.word_red);
-        let widths: Vec<Vec<usize>> = links.iter().map(|k| (0..k.words.len()).map(|j| k.name(j, words, l).len()).collect()).collect();
+        // 連結是世界生成的名稱時畫中文名（見 names.rs）：整個名字當一個字排，第一個連結字畫中文、
+        // 其他字疊在同一處不畫（點擊範圍照遊戲的英文字長）
+        let named: Vec<Option<String>> = links.iter()
+            .map(|k| link_name(dict, &(0..k.words.len()).map(|j| k.name(j, words, l)).collect::<Vec<_>>().join(&b' ')))
+            .collect();
+        let widths: Vec<Vec<usize>> = links.iter().zip(&named).map(|(k, zh)| match zh {
+            Some(zh) => vec![zh.chars().map(|c| if cp437::byte_of(c).is_some() { 1 } else { 2 }).sum()],
+            None => (0..k.words.len()).map(|j| k.name(j, words, l).len()).collect(),
+        }).collect();
         let (segments, placed) = wrap_links(translation, width.max(1) as usize, base, |c| pal.map_or(base, |p| marker_rgb(p, c)), &widths);
         let mut pos: Vec<(i32, i32)> = words.iter().map(|&w| (read(w, l.word_px), read(w, l.word_py))).collect();
         let mut link_plans: Vec<Option<Plan>> = vec![None; words.len()];
         for (k, j, px, py) in placed {
             let link = &links[k];
+            if let Some(zh) = &named[k] {
+                let entry = dict.text_entry(zh)?;
+                for &i in &link.words {
+                    pos[i] = (px, py);
+                    link_plans[i] = Some(Plan::Skip);
+                }
+                link_plans[link.words[0]] = Some(Plan::Draw(vec![Piece { dx: 0, dy: 0, color: None, entry }].into()));
+                continue;
+            }
             let i = link.words[j];
             pos[i] = (px, py);
             let whole = (j > 0 || link.head == 0) && (j + 1 < link.words.len() || link.tail == 0);
@@ -619,6 +636,23 @@ unsafe fn plan_links(words: &[usize], width: i32, translation: &str, dict: &Dict
             .collect();
         Some((plans, pos))
     }
+}
+
+/// 連結字的中文名：整段是遊戲組過的世界生成名稱，或「the goblin＋名稱」這種稱呼加名稱（稱呼查字典）。
+fn link_name(dict: &Dict, text: &[u8]) -> Option<String> {
+    if let Some(zh) = crate::names::get(text) {
+        return Some(zh.to_string());
+    }
+    let mut start = 0;
+    while let Some(i) = text[start..].iter().position(|&c| c == b' ') {
+        start += i + 1;
+        if let Some(zh) = crate::names::get(&text[start..]) {
+            let head = &text[..start - 1];
+            let head = head.strip_prefix(b"the ").or_else(|| head.strip_prefix(b"The ")).unwrap_or(head);
+            return Some(dict.translate_text(head)? + &zh);
+        }
+    }
+    None
 }
 
 /// 畫字 hook 用：這個字串是段落單字時，回傳它的畫字計畫。

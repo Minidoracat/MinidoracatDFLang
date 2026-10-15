@@ -1,0 +1,646 @@
+word	pos	en	zh-Hant	zh-Hans	note
+ADULATE	NOUN	adulation/	讚頌	赞颂	of_noun_sing,the_noun_sing
+CELEBRATE	NOUN	celebration/celebrations	慶典	庆典	of_noun_plur,of_noun_sing,the_noun_sing
+CELEBRATE	ADJ	celebrated	顯赫	显赫	adj_dist
+CELEBRATE	VERB	celebrate/celebrates/celebrated/celebrated/celebrating	慶	庆	
+CONFIDENT	NOUN	confidence/	自信	自信	of_noun_sing,the_noun_sing
+CONFIDENT	ADJ	confident	篤定	笃定	adj_dist
+DEFERENCE	NOUN	deference/	恭順	恭顺	of_noun_sing,the_noun_sing
+DEFERENCE	ADJ	deferent	謙恭	谦恭	adj_dist
+DEITY	NOUN	deity/deities	神祇	神祇	of_noun_plur,the_noun_sing
+DISTINCT	NOUN	distinction/distinctions	殊榮	殊荣	of_noun_plur,of_noun_sing,the_noun_sing
+DISTINCT	ADJ	distinct	卓異	卓异	adj_dist,front_compound_adj,rear_compound_adj
+DISTINCT	VERB	distinguish/distinguishes/distinguished/distinguished/distinguishing	辨	辨	
+ELEVATE	NOUN	elevation/	擢升	擢升	of_noun_sing,the_noun_sing
+ELEVATE	ADJ	elevated	高聳	高耸	adj_dist
+ELEVATE	VERB	elevate/elevates/elevated/elevated/elevating	擢	擢	
+ESTEEM	NOUN	esteem/	尊崇	尊崇	front_compound_noun_sing,of_noun_sing,rear_compound_noun_sing,the_noun_sing
+ESTEEM	ADJ	esteemed	尊貴	尊贵	adj_dist
+ESTEEM	VERB	esteem/esteems/esteemed/esteemed/esteeming	敬	敬	standard_verb
+EXALT	NOUN	exaltation/	頌揚	颂扬	of_noun_sing,the_noun_sing
+EXALT	ADJ	exalted	崇高	崇高	adj_dist
+EXALT	VERB	exalt/exalts/exalted/exalted/exalting	揚	扬	
+FAME	NOUN	fame/	名聲	名声	front_compound_noun_sing,of_noun_sing,rear_compound_noun_sing,the_noun_sing
+FAME	ADJ	famous	著名	著名	adj_dist,front_compound_adj,rear_compound_adj
+FEALTY	NOUN	fealty/fealties	忠誠	忠诚	front_compound_noun_sing,of_noun_plur,of_noun_sing,rear_compound_noun_sing,the_noun_sing
+HOMAGE	NOUN	homage/homages	朝覲	朝觐	front_compound_noun_sing,of_noun_plur,of_noun_sing,rear_compound_noun_sing,the_noun_sing
+MORTAL	NOUN	mortal/mortals	凡人	凡人	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+MORTAL	ADJ	mortal	凡俗	凡俗	adj_dist,front_compound_adj,rear_compound_adj
+IMMORTAL	NOUN	immortal/immortals	不死者	不死者	of_noun_plur,the_noun_sing
+IMMORTAL	ADJ	immortal	不朽	不朽	adj_dist
+LAUD	ADJ	lauded	盛讚	盛赞	adj_dist,front_compound_adj
+LAUD	VERB	laud/lauds/lauded/lauded/lauding	讚	赞	standard_verb
+OBEISANCE	NOUN	obeisance/	叩拜	叩拜	of_noun_sing,the_noun_sing
+OBEISANCE	ADJ	obeisant	恭謹	恭谨	adj_dist
+PRAISE	NOUN	praise/praises	讚美	赞美	front_compound_noun_sing,of_noun_plur,of_noun_sing,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_plur,the_noun_sing
+PRAISE	ADJ	praised	稱頌	称颂	adj_dist,front_compound_adj
+PRAISE	VERB	praise/praises/praised/praised/praising	頌	颂	standard_verb
+PRESTIGE	NOUN	prestige/	威望	威望	front_compound_noun_sing,of_noun_sing,rear_compound_noun_sing,the_noun_sing
+PRESTIGE	ADJ	prestigious	顯貴	显贵	adj_dist
+RENOWN	NOUN	renown/	盛名	盛名	front_compound_noun_sing,of_noun_sing,rear_compound_noun_sing,the_noun_sing
+RENOWN	ADJ	renowned	馳名	驰名	adj_dist,front_compound_adj,rear_compound_adj
+REPUTATION	NOUN	reputation/reputations	聲譽	声誉	of_noun_plur,the_noun_sing
+REPUTATION	ADJ	reputed	傳說	传说	adj_dist
+REPUTATION	VERB	repute/reputes/reputed/reputed/reputing	譽	誉	
+TRIBUTE	NOUN	tribute/tributes	貢品	贡品	front_compound_noun_sing,of_noun_plur,of_noun_sing,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+WORSHIP	NOUN	worship/	崇拜	崇拜	front_compound_noun_sing,of_noun_sing,rear_compound_noun_sing,the_noun_sing
+WORSHIP	ADJ	worshipful	虔敬	虔敬	adj_dist
+WORSHIP	VERB	worship/worships/worshipped/worshipped/worshipping	拜	拜	standard_verb
+CHASTITY	NOUN	chastity/	貞操	贞操	of_noun_sing,the_noun_sing
+CHASTITY	ADJ	chaste	清貞	清贞	adj_dist,front_compound_adj,rear_compound_adj
+COURAGE	NOUN	courage/	勇氣	勇气	front_compound_noun_sing,of_noun_sing,rear_compound_noun_sing,the_noun_sing
+COURAGE	ADJ	courageous	英勇	英勇	adj_dist
+DECENT	NOUN	decency/	體面	体面	of_noun_sing,the_noun_sing
+DECENT	ADJ	decent	端正	端正	adj_dist,front_compound_adj,rear_compound_adj
+GOOD	NOUN	good/	善	善	front_compound_noun_sing,of_noun_sing,rear_compound_noun_sing,the_noun_sing
+GOOD	ADJ	good	良	良	adj_dist,front_compound_adj,rear_compound_adj
+INNOCENT	NOUN	innocence/	純真	纯真	of_noun_sing,the_noun_sing
+INNOCENT	ADJ	innocent	無辜	无辜	adj_dist
+MODEST	NOUN	modesty/	謙遜	谦逊	of_noun_sing,the_noun_sing
+MODEST	ADJ	modest	謙和	谦和	adj_dist,front_compound_adj,rear_compound_adj
+PRINCIPLE	NOUN	principle/principles	信條	信条	of_noun_plur,of_noun_sing,the_noun_sing
+PURE	NOUN	purity/	純淨	纯净	of_noun_sing,the_noun_sing
+PURE	ADJ	pure	純	纯	adj_dist,front_compound_adj,rear_compound_adj
+PURE	VERB	purify/purifies/purified/purified/purifying	淨化	净化	
+RIGHTEOUSNESS	NOUN	righteousness/	正義	正义	of_noun_sing,the_noun_sing
+TRUTH	NOUN	truth/truths	真理	真理	front_compound_noun_sing,of_noun_plur,of_noun_sing,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+TRUTH	ADJ	true	真	真	adj_dist,front_compound_adj,rear_compound_adj
+TRUTHFUL	ADJ	truthful	信實	信实	adj_dist,front_compound_adj,rear_compound_adj
+VIRGIN	NOUN	virgin/virgins	處女	处女	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+VIRGIN	ADJ	virginal	貞潔	贞洁	adj_dist
+VIRGINITY	NOUN	virginity/	童貞	童贞	of_noun_sing,the_noun_sing
+HOLD	NOUN	hold/holds	堡寨	堡寨	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing；據點義
+HOLD	ADJ	held	持握	持握	adj_dist,front_compound_adj
+HOLD	VERB	hold/holds/held/held/holding	持	持	standard_verb
+SCALD	ADJ	scalded	灼燙	灼烫	adj_dist,front_compound_adj
+SCALD	VERB	scald/scalds/scalded/scalded/scalding	燙	烫	standard_verb
+SCALE VERB	VERB	scale/scales/scaled/scaled/scaling	攀	攀	standard_verb
+SCALE SKIN	NOUN	scale/scales	鱗	鳞	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_plur,the_noun_sing
+SCALE SKIN	ADJ	scaly	覆鱗	覆鳞	adj_dist,front_compound_adj,rear_compound_adj
+CLAN	NOUN	clan/clans	氏族	氏族	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+LABYRINTH	NOUN	labyrinth/labyrinths	迷宮	迷宫	of_noun_plur,the_noun_sing
+LABYRINTH	ADJ	labyrinthine	錯綜	错综	adj_dist
+MAZE	NOUN	maze/mazes	迷陣	迷阵	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+WEB	NOUN	web/webs	羅網	罗网	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_plur,the_noun_sing
+WEB	VERB	web/webs/webbed/webbed/webbing	網	网	standard_verb
+CROWD	NOUN	crowd/crowds	群眾	群众	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+CROWD	ADJ	crowded	熙攘	熙攘	adj_dist,front_compound_adj
+CROWD	VERB	crowd/crowds/crowded/crowded/crowding	簇	簇	standard_verb
+FAMILY	NOUN	family/families	家族	家族	of_noun_plur,the_noun_sing
+FAMILY	ADJ	familial	宗族	宗族	adj_dist
+KIN	NOUN	kin/	親族	亲族	front_compound_noun_sing,of_noun_sing,rear_compound_noun_sing,the_noun_sing
+MOB	NOUN	mob/mobs	暴民	暴民	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+MOB	VERB	mob/mobs/mobbed/mobbed/mobbing	圍攻	围攻	standard_verb
+ORGAN	NOUN	organ/organs	器官	器官	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing；身體器官義
+ORGANIZE	NOUN	organization/organizations	組織	组织	of_noun_plur,of_noun_sing,the_noun_sing
+ORGANIZE	ADJ	organized	有序	有序	adj_dist
+ORGANIZE	VERB	organize/organizes/organized/organized/organizing	組	组	
+MESH	NOUN	mesh/meshes	細網	细网	front_compound_noun_sing,of_noun_plur,of_noun_sing,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+TANGLE	NOUN	tangle/tangles	糾葛	纠葛	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_plur,the_noun_sing
+TANGLE	ADJ	tangled	糾纏	纠缠	adj_dist,front_compound_adj
+TANGLE	VERB	tangle/tangles/tangled/tangled/tangling	纏	缠	standard_verb
+ENTANGLE	NOUN	entanglement/	羈絆	羁绊	of_noun_sing,the_noun_sing
+ENTANGLE	ADJ	entangled	纏繞	缠绕	adj_dist
+ENTANGLE	VERB	entangle/entangles/entangled/entangled/entangling	絆	绊	
+PUZZLE	NOUN	puzzle/puzzles	謎題	谜题	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+PUZZLE	ADJ	puzzling	費解	费解	adj_dist,front_compound_adj,rear_compound_adj
+PUZZLE	VERB	puzzle/puzzles/puzzled/puzzled/puzzling	惑	惑	standard_verb
+PERPLEX	ADJ	perplexing	迷離	迷离	adj_dist
+PERPLEX	VERB	perplex/perplexes/perplexed/perplexed/perplexing	困	困	standard_verb
+QUANDARY	NOUN	quandary/quandaries	困境	困境	of_noun_plur,the_noun_sing
+COMBINE	NOUN	combination/combinations	組合	组合	of_noun_plur,the_noun_sing
+COMBINE	ADJ	combined	合一	合一	adj_dist,front_compound_adj
+COMBINE	VERB	combine/combines/combined/combined/combining	合	合	standard_verb
+FLICKER	NOUN	flicker/flickers	明滅	明灭	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+FLICKER	ADJ	flickering	搖曳	摇曳	adj_dist
+FLICKER	VERB	flicker/flickers/flickered/flickered/flickering	閃	闪	standard_verb
+BRAND	NOUN	brand/brands	烙印	烙印	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_plur,the_noun_sing
+BRAND	ADJ	branded	烙印	烙印	adj_dist,front_compound_adj,rear_compound_adj
+BRAND	VERB	brand/brands/branded/branded/branding	烙	烙	standard_verb
+SINGE	ADJ	singed	燎焦	燎焦	adj_dist,front_compound_adj
+SINGE	VERB	singe/singes/singed/singed/singing	燎	燎	standard_verb
+SEAR	ADJ	searing	灼熱	灼热	adj_dist,front_compound_adj
+SEAR	VERB	sear/sears/seared/seared/searing	灼	灼	standard_verb
+SCORCH	ADJ	scorching	炙熱	炙热	adj_dist,front_compound_adj,rear_compound_adj
+SCORCH	VERB	scorch/scorches/scorched/scorched/scorching	焦	焦	standard_verb
+ROAST	ADJ	roasted	炙烤	炙烤	adj_dist,front_compound_adj
+ROAST	VERB	roast/roasts/roasted/roasted/roasting	烤	烤	standard_verb
+PARCH	ADJ	parched	焦乾	焦干	adj_dist,front_compound_adj
+PARCH	VERB	parch/parches/parched/parched/parching	燥	燥	standard_verb
+IGNITE	NOUN	ignition/	引燃	引燃	of_noun_sing,the_noun_sing
+IGNITE	ADJ	ignited	點燃	点燃	adj_dist
+IGNITE	VERB	ignite/ignites/ignited/ignited/igniting	燃	燃	
+INCINERATE	NOUN	incineration/	焚燒	焚烧	of_noun_sing,the_noun_sing
+INCINERATE	ADJ	incinerated	焚毀	焚毁	adj_dist
+INCINERATE	VERB	incinerate/incinerates/incinerated/incinerated/incinerating	焚	焚	
+GLOW	NOUN	glow/glows	輝光	辉光	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+GLOW	ADJ	glowing	輝耀	辉耀	adj_dist,front_compound_adj,rear_compound_adj
+GLOW	VERB	glow/glows/glowed/glowed/glowing	耀	耀	standard_verb
+CREMATE	NOUN	cremation/cremations	火葬	火葬	of_noun_plur,of_noun_sing,the_noun_sing
+CREMATE	ADJ	cremated	火化	火化	adj_dist
+CREMATE	VERB	cremate/cremates/cremated/cremated/cremating	火化	火化	
+FACTION	NOUN	faction/factions	派系	派系	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+FACTION	ADJ	factional	黨派	党派	adj_dist
+CREW	NOUN	crew/crews	部眾	部众	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+CREW	ADJ	crewed	滿員	满员	adj_dist,front_compound_adj
+CREW	VERB	crew/crews/crewed/crewed/crewing	駕	驾	standard_verb
+VESSEL	NOUN	vessel/vessels	器皿	器皿	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+LEAGUE GROUP	NOUN	league/leagues	聯盟	联盟	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+COOPERATE	NOUN	cooperation/	合作	合作	of_noun_sing,the_noun_sing
+COOPERATE	ADJ	cooperative	協力	协力	adj_dist
+COOPERATE	VERB	cooperate/cooperates/cooperated/cooperated/cooperating	協	协	
+GROUP	NOUN	group/groups	群	群	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+GROUP	VERB	group/groups/grouped/grouped/grouping	聚	聚	standard_verb
+GANG	NOUN	gang/gangs	幫派	帮派	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+FELLOWSHIP	NOUN	fellowship/fellowships	同袍	同袍	of_noun_plur,of_noun_sing,the_noun_sing
+PARTNER	NOUN	partner/partners	夥伴	伙伴	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+PARTNER	VERB	partner/partners/partnered/partnered/partnering	偕	偕	standard_verb
+RIDDLE	NOUN	riddle/riddles	謎語	谜语	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_plur,the_noun_sing
+RIDDLE	VERB	riddle/riddles/riddled/riddled/riddling	詰	诘	standard_verb
+ROUT	NOUN	rout/routs	潰敗	溃败	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+ROUT	ADJ	routed	潰散	溃散	adj_dist,front_compound_adj
+ROUT	VERB	rout/routs/routed/routed/routing	潰	溃	standard_verb
+SCRAPE	NOUN	scrape/scrapes	刮痕	刮痕	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+SCRAPE	ADJ	scraped	刮傷	刮伤	adj_dist,front_compound_adj
+SCRAPE	VERB	scrape/scrapes/scraped/scraped/scraping	刮	刮	standard_verb
+SCRAP	NOUN	scrap/scraps	殘片	残片	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_plur,the_noun_sing
+SCOUR	ADJ	scoured	刷淨	刷净	adj_dist,front_compound_adj
+SCOUR	VERB	scour/scours/scoured/scoured/scouring	刷	刷	standard_verb
+SCRUB	ADJ	scrubbed	搓洗	搓洗	adj_dist,front_compound_adj
+SCRUB	VERB	scrub/scrubs/scrubbed/scrubbed/scrubbing	搓	搓	standard_verb
+SHAKE	ADJ	shaken	動搖	动摇	adj_dist,front_compound_adj,rear_compound_adj
+SHAKE	VERB	shake/shakes/shook/shaken/shaking	撼	撼	standard_verb
+SOAP	NOUN	soap/soaps	肥皂	肥皂	front_compound_noun_sing,of_noun_sing,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+SOAP	ADJ	soapy	滑膩	滑腻	adj_dist,front_compound_adj,rear_compound_adj
+SPONGE	NOUN	sponge/sponges	海綿	海绵	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+SPONGE	ADJ	spongy	鬆軟	松软	adj_dist,front_compound_adj,rear_compound_adj
+SWEEP	VERB	sweep/sweeps/swept/swept/sweeping	掃	扫	standard_verb
+WHISKER	NOUN	whisker/whiskers	鬍鬚	胡须	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_plur,the_noun_sing
+WHISKER	ADJ	whiskered	長鬚	长须	adj_dist,front_compound_adj,rear_compound_adj
+FASTEN	VERB	fasten/fastens/fastened/fastened/fastening	繫	系	standard_verb
+WINNOW	NOUN	winnower/winnowers	揚穀者	扬谷者	of_noun_plur,the_noun_sing
+WINNOW	VERB	winnow/winnows/winnowed/winnowed/winnowing	簸	簸	standard_verb
+WIPE	VERB	wipe/wipes/wiped/wiped/wiping	拭	拭	standard_verb
+CLENCH	VERB	clench/clenches/clenched/clenched/clenching	攥	攥	standard_verb
+CLINCH	NOUN	clinch/clinches	擒抱	擒抱	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+CLINCH	VERB	clinch/clinches/clinched/clinched/clinching	鎖	锁	standard_verb
+CLOUT	NOUN	clout/clouts	重擊	重击	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+CLOUT	VERB	clout/clouts/clouted/clouted/clouting	捶	捶	standard_verb
+CLUTCH	NOUN	clutch/clutches	緊握	紧握	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_plur,the_noun_sing
+CLUTCH	VERB	clutch/clutches/clutched/clutched/clutching	攫	攫	standard_verb
+DOMINATE	NOUN	domination/	支配	支配	of_noun_sing,the_noun_sing
+DOMINATE	ADJ	dominant	至上	至上	adj_dist
+DOMINATE	VERB	dominate/dominates/dominated/dominated/dominating	霸	霸	
+DOMINION	NOUN	dominion/dominions	領地	领地	of_noun_plur,of_noun_sing,the_noun_sing
+GRASP	NOUN	grasp/grasps	掌握	掌握	front_compound_noun_sing,of_noun_plur,of_noun_sing,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+GRASP	ADJ	grasping	貪婪	贪婪	adj_dist,front_compound_adj,rear_compound_adj
+GRASP	VERB	grasp/grasps/grasped/grasped/grasping	握	握	standard_verb
+INFLUENCE	NOUN	influence/influences	勢力	势力	of_noun_plur,of_noun_sing,the_noun_plur,the_noun_sing
+INFLUENCE	ADJ	influential	顯要	显要	adj_dist
+INFLUENCE	VERB	influence/influences/influenced/influenced/influencing	左右	左右	
+OWN	NOUN	owner/owners	主人	主人	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+OWN	VERB	own/owns/owned/owned/owning	擁	拥	standard_verb
+OWNERSHIP	NOUN	ownership/	所有權	所有权	of_noun_sing,the_noun_sing
+TENACITY	NOUN	tenacity/	堅韌	坚韧	of_noun_sing,the_noun_sing
+TENACITY	ADJ	tenacious	頑強	顽强	adj_dist
+BIND	VERB	bind/binds/bound/bound/binding	縛	缚	standard_verb
+CARRY	VERB	carry/carries/carried/carried/carrying	負	负	standard_verb
+CATCH	NOUN	catch/catches	捕獲	捕获	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+CATCH	VERB	catch/catches/caught/caught/catching	捕	捕	standard_verb
+CONFINE	NOUN	confinement/	禁錮	禁锢	of_noun_sing,the_noun_sing
+CONFINE	ADJ	confining	狹隘	狭隘	adj_dist
+CONFINE	VERB	confine/confines/confined/confined/confining	錮	锢	standard_verb
+CONTAIN	NOUN	container/containers	容器	容器	of_noun_plur,the_noun_sing
+CONTAIN	ADJ	contained	內斂	内敛	adj_dist,front_compound_adj
+CONTAIN	VERB	contain/contains/contained/contained/containing	容	容	standard_verb
+CRADLE	NOUN	cradle/cradles	搖籃	摇篮	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_plur,the_noun_sing
+CRADLE	ADJ	cradled	呵護	呵护	adj_dist
+CRADLE	VERB	cradle/cradles/cradled/cradled/cradling	懷	怀	standard_verb
+EMBRACE	NOUN	embrace/embraces	擁抱	拥抱	front_compound_noun_sing,of_noun_plur,rear_compound_noun_sing,the_noun_plur,the_noun_sing
+EMBRACE	ADJ	embraced	相擁	相拥	adj_dist,front_compound_adj,rear_compound_adj
+EMBRACE	VERB	embrace/embraces/embraced/embraced/embracing	抱	抱	standard_verb
+POOL	NOUN	pool/pools	池	池	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_plur,the_noun_sing
+SOCIETY	NOUN	society/societies	結社	结社	of_noun_plur,of_noun_sing,the_noun_sing
+CIRCLE	NOUN	circle/circles	圓環	圆环	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+CIRCLE	ADJ	circular	圓	圆	adj_dist
+CIRCLE	VERB	circle/circles/circled/circled/circling	繞	绕	standard_verb
+SQUARE	NOUN	square/squares	方陣	方阵	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+SQUARE	ADJ	square	方正	方正	adj_dist,front_compound_adj,rear_compound_adj
+TRIANGLE	NOUN	triangle/triangles	三角形	三角形	of_noun_plur,the_noun_sing
+TRIANGLE	ADJ	triangular	三角	三角	adj_dist
+CONNECT	NOUN	connection/connections	紐帶	纽带	of_noun_plur,the_noun_sing
+CONNECT	ADJ	connected	相連	相连	adj_dist
+CONNECT	VERB	connect/connects/connected/connected/connecting	連	连	
+MERGE	ADJ	merged	交融	交融	adj_dist,front_compound_adj,rear_compound_adj
+MERGE	VERB	merge/merges/merged/merged/merging	融	融	standard_verb
+CONFUSE	NOUN	confusion/	迷亂	迷乱	of_noun_sing,the_noun_sing
+CONFUSE	ADJ	confusing	撲朔	扑朔	adj_dist
+CONFUSE	VERB	confuse/confuses/confused/confused/confusing	亂	乱	standard_verb
+COMPLEX	NOUN	complexity/	繁複	繁复	of_noun_sing,the_noun_sing
+COMPLEX	ADJ	complex	複雜	复杂	adj_dist,front_compound_adj
+MEANDER	ADJ	meandering	蜿蜒	蜿蜒	adj_dist
+MEANDER	VERB	meander/meanders/meandered/meandered/meandering	迂	迂	
+MUDDLE	ADJ	muddled	昏亂	昏乱	adj_dist,front_compound_adj
+MUDDLE	VERB	muddle/muddles/muddled/muddled/muddling	攪	搅	standard_verb
+BEWILDER	NOUN	bewilderment/	惶惑	惶惑	of_noun_sing,the_noun_sing
+BEWILDER	ADJ	bewildering	迷茫	迷茫	adj_dist
+BEWILDER	VERB	bewilder/bewilders/bewildered/bewildered/bewildering	眩	眩	
+MORASS	NOUN	morass/morasses	泥淖	泥淖	front_compound_noun_sing,of_noun_plur,rear_compound_noun_sing,the_noun_sing
+PROBLEM	NOUN	problem/problems	難題	难题	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+PROBLEM	ADJ	problematic	棘手	棘手	adj_dist
+INTRICATE	NOUN	intricacy/intricacies	精微	精微	of_noun_plur,of_noun_sing,the_noun_plur,the_noun_sing
+INTRICATE	ADJ	intricate	精細	精细	adj_dist
+FLUSH	VERB	flush/flushes/flushed/flushed/flushing	沖	冲	standard_verb
+MOP	NOUN	mop/mops	拖把	拖把	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+MOP	VERB	mop/mops/mopped/mopped/mopping	拖	拖	standard_verb
+POLISH	NOUN	polish/	光澤	光泽	front_compound_noun_sing,of_noun_sing,rear_compound_noun_sing,the_noun_sing
+POLISH	ADJ	polished	光潔	光洁	adj_dist,front_compound_adj
+POLISH	VERB	polish/polishes/polished/polished/polishing	磨	磨	standard_verb
+PURGE	NOUN	purge/purges	肅清	肃清	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+PURGE	ADJ	purged	滌淨	涤净	adj_dist,front_compound_adj
+PURGE	VERB	purge/purges/purged/purged/purging	清	清	standard_verb
+RASP	NOUN	rasp/rasps	銼刀	锉刀	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_plur,the_noun_sing
+RASP	VERB	rasp/rasps/rasped/rasped/rasping	銼	锉	standard_verb
+RINSE	VERB	rinse/rinses/rinsed/rinsed/rinsing	濯	濯	standard_verb
+BAND OBJECT	NOUN	band/bands	環帶	环带	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_plur,the_noun_sing
+BAND OBJECT	ADJ	banded	條紋	条纹	adj_dist,front_compound_adj,rear_compound_adj
+BAND GROUP	NOUN	band/bands	隊伍	队伍	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+TALL	ADJ	tall	高	高	adj_dist,front_compound_adj,rear_compound_adj
+SHORT	ADJ	short	短	短	adj_dist,front_compound_adj,rear_compound_adj
+BULBOUS	ADJ	bulbous	球狀	球状	adj_dist,front_compound_adj,rear_compound_adj
+BULB	NOUN	bulb/bulbs	球莖	球茎	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+ALLY	NOUN	ally/allies	盟友	盟友	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+ALLY	ADJ	allied	結盟	结盟	adj_dist,front_compound_adj,rear_compound_adj
+ALLY	VERB	ally/allies/allied/allied/allying	盟	盟	standard_verb
+ALLIANCE	NOUN	alliance/alliances	同盟	同盟	of_noun_plur,of_noun_sing,the_noun_sing
+ALLEGIANCE	NOUN	allegiance/allegiances	效忠	效忠	of_noun_plur,of_noun_sing,the_noun_sing
+COALITION	NOUN	coalition/coalitions	聯合	联合	of_noun_plur,the_noun_sing
+COAL	NOUN	coal/	煤	煤	front_compound_noun_sing,of_noun_sing,rear_compound_noun_sing,the_noun_sing
+ENJOY	NOUN	enjoyment/	享樂	享乐	of_noun_sing,the_noun_sing
+ENJOY	ADJ	enjoyable	愉悅	愉悦	adj_dist
+ENJOY	VERB	enjoy/enjoys/enjoyed/enjoyed/enjoying	享	享	standard_verb
+FONDLE	ADJ	fondled	撫愛	抚爱	adj_dist,front_compound_adj
+FONDLE	VERB	fondle/fondles/fondled/fondled/fondling	撫	抚	standard_verb
+HANDLE OBJECT	NOUN	handle/handles	柄	柄	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_plur,the_noun_sing
+HANDLE VERB	VERB	handle/handles/handled/handled/handling	操	操	standard_verb
+IMPRISON	NOUN	imprisonment/	監禁	监禁	of_noun_sing,the_noun_sing
+IMPRISON	ADJ	imprisoned	囚禁	囚禁	adj_dist
+IMPRISON	VERB	imprison/imprisons/imprisoned/imprisoned/imprisoning	囚	囚	
+NOURISH	NOUN	nourishment/	滋養	滋养	of_noun_sing,the_noun_sing
+NOURISH	ADJ	nourishing	滋補	滋补	adj_dist
+NOURISH	VERB	nourish/nourishes/nourished/nourished/nourishing	養	养	standard_verb
+SQUEEZE	ADJ	squeezing	擠壓	挤压	adj_dist,front_compound_adj
+SQUEEZE	VERB	squeeze/squeezes/squeezed/squeezed/squeezing	擠	挤	standard_verb
+TRAMMEL	NOUN	trammel/trammels	桎梏	桎梏	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_plur
+TRAMMEL	VERB	trammel/trammels/trammeled/trammeled/trammeling	羈	羁	standard_verb
+VICE	NOUN	vice/	惡習	恶习	front_compound_noun_sing,of_noun_sing,rear_compound_noun_sing,the_noun_sing
+VISE	NOUN	vise/vises	虎鉗	虎钳	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_plur,the_noun_sing
+VISE	VERB	vise/vises/vised/vised/vising	鉗	钳	standard_verb
+DEFECT FAULT	NOUN	defect/defects	瑕疵	瑕疵	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_plur,the_noun_sing
+DEFECT FAULT	ADJ	defective	殘缺	残缺	adj_dist
+PERFECT	NOUN	perfection/	完美	完美	of_noun_sing,the_noun_sing
+PERFECT	ADJ	perfect	無瑕	无瑕	adj_dist,front_compound_adj,rear_compound_adj
+PERFECT	VERB	perfect/perfects/perfected/perfected/perfecting	臻	臻	
+GEM	NOUN	gem/gems	寶石	宝石	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+JEWEL	NOUN	jewel/jewels	珠寶	珠宝	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_plur,the_noun_sing
+JEWEL	ADJ	bejeweled	鑲寶	镶宝	adj_dist
+JEWEL	VERB	bejewel/bejewels/bejeweled/bejeweled/bejeweling	鑲	镶	
+WIELD	VERB	wield/wields/wielded/wielded/wielding	揮	挥	
+WRING	VERB	wring/wrings/wrung/wrung/wringing	絞	绞	standard_verb
+CONJUNCTION	NOUN	conjunction/conjunctions	交會	交会	of_noun_plur,the_noun_sing
+BLOT	NOUN	blot/blots	汙點	污点	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+BLOT	ADJ	blotted	漬染	渍染	adj_dist
+BLOT	VERB	blot/blots/blotted/blotted/blotting	玷	玷	standard_verb
+BLOW	ADJ	blowing	呼嘯	呼啸	adj_dist,front_compound_adj,rear_compound_adj
+BLOW	VERB	blow/blows/blew/blown/blowing	吹	吹	standard_verb
+BRUSH	NOUN	brush/brushes	毛刷	毛刷	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+BRUSH	ADJ	brushed	拂拭	拂拭	adj_dist,front_compound_adj
+BRUSH	VERB	brush/brushes/brushed/brushed/brushing	拂	拂	standard_verb
+CLARIFY	NOUN	clarity/	清明	清明	of_noun_sing,the_noun_sing
+CLARIFY	VERB	clarify/clarifies/clarified/clarified/clarifying	澄	澄	
+CLEANSE	VERB	cleanse/cleanses/cleansed/cleansed/cleansing	潔	洁	standard_verb
+DREDGE	VERB	dredge/dredges/dredged/dredged/dredging	浚	浚	standard_verb
+ERASE	NOUN	erasure/	抹除	抹除	of_noun_sing,the_noun_sing
+ERASE	ADJ	erased	湮滅	湮灭	adj_dist,front_compound_adj
+ERASE	VERB	erase/erases/erased/erased/erasing	抹	抹	standard_verb
+MORSEL	NOUN	morsel/morsels	碎屑	碎屑	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_plur,the_noun_sing
+MONGREL	NOUN	mongrel/mongrels	雜種	杂种	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+TENDER	NOUN	tenderness/	柔情	柔情	of_noun_sing,the_noun_sing
+TENDER	ADJ	tender	溫柔	温柔	adj_dist,front_compound_adj,rear_compound_adj
+URGE	NOUN	urge/urges	衝動	冲动	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_plur,the_noun_sing
+URGE	VERB	urge/urges/urged/urged/urging	催	催	standard_verb
+MECHANISM	NOUN	mechanism/mechanisms	機關	机关	of_noun_plur,the_noun_plur,the_noun_sing；物品名「機械裝置」四字過長，名稱用機關
+MECHANISM	ADJ	mechanical	機械	机械	adj_dist
+SMEAR	NOUN	smear/smears	塗痕	涂痕	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+SMEAR	ADJ	smeared	塗抹	涂抹	adj_dist,front_compound_adj
+SMEAR	VERB	smear/smears/smeared/smeared/smearing	塗	涂	standard_verb
+TATTOO	NOUN	tattoo/tattoos	刺青	纹身	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_plur,the_noun_sing
+TATTOO	ADJ	tattooed	黥紋	黥纹	adj_dist,front_compound_adj
+TATTOO	VERB	tattoo/tattoos/tattooed/tattooed/tattooing	紋	纹	standard_verb
+WEATHER VERB	NOUN	weathering/	風化	风化	of_noun_sing,the_noun_sing
+WEATHER VERB	ADJ	weathered	風蝕	风蚀	adj_dist,front_compound_adj
+WEATHER VERB	VERB	weather/weathers/weathered/weathered/weathering	蝕	蚀	standard_verb
+CRUX	NOUN	crux/cruxes	癥結	症结	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+PEEK	NOUN	peek/peeks	一瞥	一瞥	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+PEEK	VERB	peek/peeks/peeked/peeked/peeking	窺	窥	standard_verb
+SNEAK	VERB	sneak/sneaks/sneaked/sneaked/sneaking	匿	匿	standard_verb
+ATTIC	NOUN	attic/attics	閣樓	阁楼	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+BASEMENT	NOUN	basement/basements	地窖	地窖	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+DEARTH	NOUN	dearth/	匱乏	匮乏	front_compound_noun_sing,rear_compound_noun_sing,the_noun_sing
+APEX	NOUN	apex/apexes	巔峰	巅峰	front_compound_noun_sing,of_noun_plur,rear_compound_noun_sing,the_noun_sing
+NADIR	NOUN	nadir/nadirs	谷底	谷底	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+TUNNEL	NOUN	tunnel/tunnels	隧道	隧道	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+TUNNEL	VERB	tunnel/tunnels/tunneled/tunneled/tunneling	掘	掘	standard_verb
+ENTRANCE VERB	ADJ	entrancing	魅惑	魅惑	adj_dist
+ENTRANCE VERB	VERB	entrance/entrances/entranced/entranced/entrancing	迷	迷	standard_verb
+DELIGHT	NOUN	delight/delights	歡欣	欢欣	front_compound_noun_sing,of_noun_plur,of_noun_sing,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_plur,the_noun_sing
+DELIGHT	ADJ	delightful	怡人	怡人	adj_dist
+DELIGHT	VERB	delight/delights/delighted/delighted/delighting	悅	悦	
+JOY	NOUN	joy/joys	喜悅	喜悦	front_compound_noun_sing,of_noun_plur,of_noun_sing,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_plur,the_noun_sing
+JOY	ADJ	joyous	歡樂	欢乐	adj_dist,front_compound_adj,rear_compound_adj
+FRIGID	NOUN	frigidity/	嚴寒	严寒	of_noun_sing,the_noun_sing
+FRIGID	ADJ	frigid	凜寒	凛寒	adj_dist,front_compound_adj,rear_compound_adj
+ANKLE	NOUN	ankle/ankles	腳踝	脚踝	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_plur,the_noun_sing
+ELBOW	NOUN	elbow/elbows	手肘	手肘	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_plur,the_noun_sing
+PASSION	NOUN	passion/passions	激情	激情	front_compound_noun_sing,of_noun_plur,of_noun_sing,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_plur,the_noun_sing
+PASSION	ADJ	passionate	熱烈	热烈	adj_dist,rear_compound_adj
+ARDENT	ADJ	ardent	熾烈	炽烈	adj_dist,front_compound_adj,rear_compound_adj
+STREAM	NOUN	stream/streams	溪流	溪流	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+BOWEL GUT	NOUN	bowel/bowels	肚腸	肚肠	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_plur,the_noun_sing
+BOWEL INTERIOR	NOUN	bowel/bowels	深處	深处	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_plur,the_noun_sing
+DRILL BORE	VERB	drill/drills/drilled/drilled/drilling	鑽	钻	standard_verb
+DRILL ROUTINE	NOUN	drill/drills	操練	操练	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+DRILL ROUTINE	VERB	drill/drills/drilled/drilled/drilling	練	练	standard_verb
+BORE DRILL	VERB	bore/bores/bored/bored/boring	鑿	凿	standard_verb
+BOREDOM	NOUN	boredom/	倦怠	倦怠	front_compound_noun_sing,of_noun_sing,rear_compound_noun_sing,the_noun_sing
+BOREDOM	ADJ	boring	乏味	乏味	adj_dist,front_compound_adj,rear_compound_adj
+BOREDOM	VERB	bore/bores/bored/bored/boring	厭	厌	standard_verb
+FLECK	NOUN	fleck/flecks	星點	星点	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_plur,the_noun_sing
+FLECK	ADJ	flecked	斑駁	斑驳	adj_dist,rear_compound_adj
+SPOT	NOUN	spot/spots	斑點	斑点	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_plur,the_noun_sing
+SPOT	ADJ	spotted	斑斑	斑斑	adj_dist,front_compound_adj,rear_compound_adj
+DOT	NOUN	dot/dots	點	点	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_plur,the_noun_sing
+CREATE	NOUN	creation/creations	造物	造物	of_noun_plur,of_noun_sing,the_noun_sing
+CREATE	ADJ	creative	奇巧	奇巧	adj_dist
+CREATE	VERB	create/creates/created/created/creating	創	创	
+POEM	NOUN	poem/poems	詩篇	诗篇	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+POETRY	NOUN	poetry/	詩歌	诗歌	of_noun_sing,the_noun_sing
+POETRY	ADJ	poetic	詩意	诗意	adj_dist
+POET	NOUN	poet/poets	詩人	诗人	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+SCRIBE	NOUN	scribe/scribes	書吏	书吏	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+SCRIBE	VERB	scribe/scribes/scribed/scribed/scribing	書	书	standard_verb
+MONK	NOUN	monk/monks	僧侶	僧侣	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+HERMIT	NOUN	hermit/hermits	隱士	隐士	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+HERMIT	ADJ	hermitic	隱遁	隐遁	adj_dist
+RECLUSE	NOUN	recluse/recluses	隱者	隐者	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+RECLUSE	ADJ	reclusive	離群	离群	adj_dist
+NAME	NOUN	name/names	名號	名号	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+NAME	ADJ	named	具名	具名	adj_dist,front_compound_adj
+NAME	VERB	name/names/named/named/naming	命	命	standard_verb
+LANGUAGE	NOUN	language/languages	語言	语言	front_compound_noun_sing,of_noun_plur,of_noun_sing,rear_compound_noun_sing,the_noun_sing
+PHRASE	NOUN	phrase/phrases	詞句	词句	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_plur,the_noun_sing
+PHRASE	VERB	phrase/phrases/phrased/phrased/phrasing	述	述	standard_verb
+RHYME	NOUN	rhyme/rhymes	詩韻	诗韵	front_compound_noun_sing,of_noun_plur,of_noun_sing,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_plur,the_noun_sing
+RHYME	ADJ	rhyming	押韻	押韵	adj_dist,front_compound_adj,rear_compound_adj
+RHYME	VERB	rhyme/rhymes/rhymed/rhymed/rhyming	吟	吟	standard_verb
+RHYTHM	NOUN	rhythm/rhythms	節奏	节奏	front_compound_noun_sing,of_noun_plur,of_noun_sing,rear_compound_noun_sing,the_noun_sing
+RHYTHM	ADJ	rhythmic	律動	律动	adj_dist,front_compound_adj,rear_compound_adj
+VERSE	NOUN	verse/verses	詩句	诗句	front_compound_noun_sing,of_noun_plur,of_noun_sing,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_plur,the_noun_sing
+DRUM VERB	VERB	drum/drums/drummed/drummed/drumming	擂	擂	standard_verb
+CREATURE	NOUN	creature/creatures	生物	生物	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+SNAIL	NOUN	snail/snails	蝸牛	蜗牛	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+VINE	NOUN	vine/vines	藤蔓	藤蔓	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_plur,the_noun_sing
+SQUASH	ADJ	squashed	壓扁	压扁	adj_dist,front_compound_adj
+SQUASH	VERB	squash/squashes/squashed/squashed/squashing	碾	碾	standard_verb
+NEVER	PREFIX	never	永不	永不	front_compound_prefix,the_compound_prefix
+DWELL	NOUN	dweller/dwellers	居者	居者	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+DWELL	VERB	dwell/dwells/dwelled/dwelled/dwelling	居	居	standard_verb
+HABIT	NOUN	habit/habits	習性	习性	front_compound_noun_sing,of_noun_plur,of_noun_sing,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+HABIT	ADJ	habitual	慣常	惯常	adj_dist
+CHEW	VERB	chew/chews/chewed/chewed/chewing	嚼	嚼	standard_verb
+SWALLOW	NOUN	swallow/swallows	燕	燕	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing；鳥名義
+SWALLOW	VERB	swallow/swallows/swallowed/swallowed/swallowing	吞	吞	standard_verb
+DISEMBOWEL	NOUN	disemboweler/disembowelers	開膛者	开膛者	of_noun_plur,the_noun_sing
+DISEMBOWEL	ADJ	disemboweled	開膛	开膛	adj_dist
+DISEMBOWEL	VERB	disembowel/disembowels/disemboweled/disemboweled/disemboweling	剖	剖	
+EVISCERATE	NOUN	eviscerator/eviscerators	刳腸者	刳肠者	of_noun_plur,the_noun_sing
+EVISCERATE	ADJ	eviscerated	刳腸	刳肠	adj_dist
+EVISCERATE	VERB	eviscerate/eviscerates/eviscerated/eviscerated/eviscerating	刳	刳	
+RAPID	NOUN	rapidity/	迅捷	迅捷	of_noun_sing,the_noun_sing
+RAPID	ADJ	rapid	迅疾	迅疾	adj_dist,front_compound_adj,rear_compound_adj
+MEDICINE	NOUN	medicine/	醫藥	医药	of_noun_sing,the_noun_sing
+HEAL	NOUN	healer/healers	醫者	医者	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+HEAL	ADJ	healing	療癒	疗愈	adj_dist,rear_compound_adj
+HEAL	VERB	heal/heals/healed/healed/healing	癒	愈	standard_verb
+SELL	VERB	sell/sells/sold/sold/selling	售	售	standard_verb
+MARKET	NOUN	market/markets	市集	市集	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing
+SLOW	ADJ	slow	緩	缓	adj_dist,front_compound_adj,rear_compound_adj
+SLOW	VERB	slow/slows/slowed/slowed/slowing	滯	滞	standard_verb
+MIRE	NOUN	mire/mires	泥沼	泥沼	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+MIRE	ADJ	mired	深陷	深陷	adj_dist,front_compound_adj
+MIRE	VERB	mire/mires/mired/mired/miring	陷	陷	standard_verb
+ADMIRE	NOUN	admirer/admirers	仰慕者	仰慕者	of_noun_plur,the_noun_sing
+ADMIRE	ADJ	admired	景仰	景仰	adj_dist,front_compound_adj
+ADMIRE	VERB	admire/admires/admired/admired/admiring	慕	慕	standard_verb
+DIRGE	NOUN	dirge/dirges	輓歌	挽歌	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+LAMENT	NOUN	lamentation/	悲嘆	悲叹	of_noun_sing,the_noun_sing
+LAMENT	ADJ	lamented	哀悼	哀悼	adj_dist
+LAMENT	VERB	lament/laments/lamented/lamented/lamenting	哀	哀	
+FUNERAL	NOUN	funeral/funerals	葬禮	葬礼	of_noun_plur,the_noun_sing
+QUEST	NOUN	quest/quests	追尋	追寻	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+QUEST	VERB	quest/quests/quested/quested/questing	尋	寻	standard_verb
+ADVENTURE	NOUN	adventure/adventures	歷險	历险	of_noun_plur,of_noun_sing,the_noun_sing
+ADVENTURE	ADJ	adventurous	冒險	冒险	adj_dist
+ADVENTURE	VERB	adventure/adventures/adventured/adventured/adventuring	闖	闯	
+MOURN	ADJ	mournful	哀戚	哀戚	adj_dist,front_compound_adj,rear_compound_adj
+MOURN	VERB	mourn/mourns/mourned/mourned/mourning	悼	悼	standard_verb
+MORNING	NOUN	morning/mornings	清晨	清晨	front_compound_noun_sing,of_noun_plur,of_noun_sing,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+BULWARK	NOUN	bulwark/bulwarks	壁壘	壁垒	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+COSMOS	NOUN	cosmos/	寰宇	寰宇	front_compound_noun_sing,rear_compound_noun_sing,the_noun_sing
+ANGUISH	NOUN	anguish/	苦痛	苦痛	front_compound_noun_sing,of_noun_sing,rear_compound_noun_sing,the_noun_sing
+ANGUISH	ADJ	anguished	悲愴	悲怆	adj_dist,front_compound_adj
+ANGUISH	VERB	anguish/anguishes/anguished/anguished/anguishing	苦	苦	standard_verb
+TAUT	ADJ	taut	緊繃	紧绷	adj_dist,front_compound_adj,rear_compound_adj
+DEIFY	NOUN	deification/	封神	封神	of_noun_sing,the_noun_sing
+DEIFY	ADJ	deified	神化	神化	adj_dist
+DEIFY	VERB	deify/deifies/deified/deified/deifying	奉	奉	
+INFAMY	NOUN	infamy/	惡名	恶名	of_noun_sing,the_noun_sing
+INFAMY	ADJ	infamous	臭名	臭名	adj_dist
+MORTALITY	NOUN	mortality/	無常	无常	of_noun_sing,the_noun_sing
+IMMORTALITY	NOUN	immortality/	永生	永生	front_compound_noun_sing,of_noun_sing
+MORTIFY	NOUN	mortification/	屈辱	屈辱	of_noun_sing,the_noun_sing
+MORTIFY	ADJ	mortified	羞愧	羞愧	adj_dist
+MORTIFY	VERB	mortify/mortifies/mortified/mortified/mortifying	辱	辱	
+OBEY	VERB	obey/obeys/obeyed/obeyed/obeying	遵	遵	standard_verb
+WORSHIPPER	NOUN	worshipper/worshippers	信徒	信徒	of_noun_plur,the_noun_sing
+RIDDLE HOLES	ADJ	riddled	百孔	百孔	adj_dist,front_compound_adj
+RIDDLE HOLES	VERB	riddle/riddles/riddled/riddled/riddling	穿	穿	standard_verb
+DWELLING	NOUN	dwelling/dwellings	居所	居所	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+DISEMBOWELMENT	NOUN	disembowelment/	開膛	开膛	of_noun_sing,the_noun_sing
+EVISCERATION	NOUN	evisceration/	刳腸	刳肠	of_noun_sing,the_noun_sing
+HEALING	NOUN	healing/	治癒	治愈	of_noun_sing,the_noun_sing
+ADMIRATION	NOUN	admiration/	欽慕	钦慕	of_noun_sing,the_noun_sing
+CONFLICT	NOUN	conflict/conflicts	紛爭	纷争	front_compound_noun_sing,of_noun_sing,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+ATTACK	NOUN	attack/attacks	攻勢	攻势	front_compound_noun_sing,of_noun_sing,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+ATTACK	VERB	attack/attacks/attacked/attacked/attacking	攻	攻	
+ONSLAUGHT	NOUN	onslaught/onslaughts	猛攻	猛攻	front_compound_noun_sing,of_noun_sing,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+TREE	NOUN	tree/trees	樹	树	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+AMBER	NOUN	amber/ambers	琥珀	琥珀	front_compound_noun_sing,of_noun_plur,of_noun_sing,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+AMBER	ADJ	amber	琥珀	琥珀	adj_dist,front_compound_adj,rear_compound_adj
+AMETHYST	NOUN	amethyst/amethysts	紫水晶	紫水晶	of_noun_plur,of_noun_sing,the_noun_sing
+AMETHYST	ADJ	amethyst	紫晶	紫晶	adj_dist
+AQUA	ADJ	aqua	水藍	水蓝	adj_dist,front_compound_adj,rear_compound_adj
+AQUAMARINE	NOUN	aquamarine/aquamarines	海藍寶	海蓝宝	of_noun_plur,of_noun_sing,the_noun_sing；名稱檔「海藍寶石」四字過長
+AQUAMARINE	ADJ	aquamarine	海藍	海蓝	adj_dist
+GRAY	NOUN	grayness/graynesses	灰暗	灰暗	
+GRAY	ADJ	gray	灰	灰	adj_dist,front_compound_adj,rear_compound_adj
+AUBURN	ADJ	auburn	紅棕	红棕	adj_dist,front_compound_adj,rear_compound_adj
+AZURE	ADJ	azure	天藍	天蓝	adj_dist,front_compound_adj,rear_compound_adj
+BEIGE	ADJ	beige	米黃	米黄	adj_dist,front_compound_adj,rear_compound_adj
+BRASS	NOUN	brass/	黃銅	黄铜	front_compound_noun_sing,of_noun_sing,rear_compound_noun_sing
+BRASS	ADJ	brass	黃銅	黄铜	adj_dist,front_compound_adj,rear_compound_adj
+BROWN	ADJ	brown	棕	棕	adj_dist,front_compound_adj,rear_compound_adj
+BUFF	ADJ	buff	淺黃	浅黄	adj_dist,front_compound_adj,rear_compound_adj
+SIENNA	ADJ	sienna	赭	赭	adj_dist
+UMBER	ADJ	umber	暗褐	暗褐	adj_dist,front_compound_adj,rear_compound_adj
+CARDINAL_COLOR	ADJ	cardinal	緋紅	绯红	adj_dist
+CARMINE	ADJ	carmine	胭脂	胭脂	adj_dist,front_compound_adj,rear_compound_adj
+CERULEAN	ADJ	cerulean	蔚藍	蔚蓝	adj_dist
+CHARCOAL	NOUN	charcoal/	木炭	木炭	front_compound_noun_sing,of_noun_sing,rear_compound_noun_sing,the_noun_sing
+CHARCOAL	ADJ	charcoal	炭灰	炭灰	adj_dist,front_compound_adj,rear_compound_adj
+CHARTREUSE	ADJ	chartreuse	黃綠	黄绿	adj_dist
+CHESTNUT	NOUN	chestnut/chestnuts	栗子	栗子	front_compound_noun_sing,of_noun_plur,rear_compound_noun_sing,the_noun_sing
+CHESTNUT	ADJ	chestnut	栗	栗	adj_dist,rear_compound_adj
+CHOCOLATE	NOUN	chocolate/chocolates	巧克力	巧克力	of_noun_sing,the_noun_sing
+CHOCOLATE	ADJ	chocolate	巧克力	巧克力	adj_dist
+CINNAMON	NOUN	cinnamon/	肉桂	肉桂	of_noun_sing,the_noun_sing
+CINNAMON	ADJ	cinnamon	肉桂	肉桂	adj_dist
+COBALT	NOUN	cobalt/	鈷	钴	front_compound_noun_sing,of_noun_sing,rear_compound_noun_sing
+COBALT	ADJ	cobalt	鈷藍	钴蓝	adj_dist,front_compound_adj,rear_compound_adj
+INDIGO	ADJ	indigo	靛藍	靛蓝	adj_dist,front_compound_adj
+OLIVE	NOUN	olive/olives	橄欖	橄榄	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+OLIVE	ADJ	olive	橄欖	橄榄	adj_dist,front_compound_adj,rear_compound_adj
+PINK	ADJ	pink	粉紅	粉红	adj_dist,front_compound_adj,rear_compound_adj
+SCARLET	ADJ	scarlet	猩紅	猩红	adj_dist,front_compound_adj,rear_compound_adj
+TAN	ADJ	tan	黃褐	黄褐	adj_dist,front_compound_adj,rear_compound_adj
+ECRU	ADJ	ecru	米白	米白	adj_dist,front_compound_adj,rear_compound_adj
+EMERALD	NOUN	emerald/emeralds	祖母綠	祖母绿	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+EMERALD	ADJ	emerald	翠綠	翠绿	adj_dist,front_compound_adj,rear_compound_adj
+FLAX	NOUN	flax/	亞麻	亚麻	front_compound_noun_sing,of_noun_sing,rear_compound_noun_sing,the_noun_sing
+FLAX	ADJ	flaxen	淡金	淡金	adj_dist,front_compound_adj,rear_compound_adj
+FUCHSIA	ADJ	fuchsia	紫紅	紫红	adj_dist,front_compound_adj,rear_compound_adj
+GOLDENROD	ADJ	goldenrod	金菊黃	金菊黄	adj_dist
+HELIOTROPE	ADJ	heliotrope	天芥紫	天芥紫	adj_dist
+LAVENDER	ADJ	lavender	淡紫	淡紫	adj_dist
+BLUSH	NOUN	blush/blushes	紅暈	红晕	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+BLUSH	VERB	blush/blushes/blushed/blushed/blushing	赧	赧	standard_verb
+LEMON	NOUN	lemon/lemons	檸檬	柠檬	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+LILAC	NOUN	lilac/lilacs	丁香	丁香	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+LIME	NOUN	lime/limes	萊姆	青柠	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+MAHOGANY	ADJ	mahogany	紅木	红木	adj_dist
+MAROON_COLOR	ADJ	maroon	褐紅	褐红	adj_dist,front_compound_adj,rear_compound_adj
+MAUVE	ADJ	mauve	藕荷	藕荷	adj_dist,front_compound_adj,rear_compound_adj
+TAUPE	ADJ	taupe	灰褐	灰褐	adj_dist,front_compound_adj,rear_compound_adj
+MINT	ADJ	mint	薄荷	薄荷	adj_dist,front_compound_adj,rear_compound_adj
+MOSS	NOUN	moss/mosses	苔蘚	苔藓	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+OCHRE	ADJ	ochre	赭黃	赭黄	adj_dist,front_compound_adj,rear_compound_adj
+ORANGE	NOUN	orange/oranges	柳橙	橙子	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+PERIWINKLE	NOUN	periwinkle/periwinkles	長春花	长春花	of_noun_plur,the_noun_sing
+PLUM	NOUN	plum/plums	李子	李子	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+PUCE	ADJ	puce	紫褐	紫褐	adj_dist,front_compound_adj,rear_compound_adj
+PUMPKIN	NOUN	pumpkin/pumpkins	南瓜	南瓜	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+RUSSET	ADJ	russet	赤褐	赤褐	adj_dist,front_compound_adj,rear_compound_adj
+SAFFRON	NOUN	saffron/	番紅花	藏红花	front_compound_noun_sing,of_noun_sing,rear_compound_noun_sing,the_noun_sing
+SAFFRON	ADJ	saffron	橙黃	橙黄	adj_dist,front_compound_adj,rear_compound_adj
+SEPIA	ADJ	sepia	深褐	深褐	adj_dist
+TEAL	ADJ	teal	藍綠	蓝绿	adj_dist,front_compound_adj,rear_compound_adj
+TURQUOISE	NOUN	turquoise/turquoises	綠松石	绿松石	of_noun_sing,the_noun_sing
+TURQUOISE	ADJ	turquoise	松石綠	松石绿	adj_dist
+VERMILION	ADJ	vermilion	朱紅	朱红	adj_dist
+PATH	NOUN	path/paths	小徑	小径	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+THREAT	NOUN	threat/threats	威脅	威胁	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+THREAT	VERB	threaten/threatens/threatened/threatened/threatening	脅	胁	
+WARNING	NOUN	warning/warnings	警示	警示	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+WARNING	VERB	warn/warns/warned/warned/warning	警	警	standard_verb
+FATE	NOUN	fate/fates	宿命	宿命	front_compound_noun_sing,of_noun_sing,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+FATE	ADJ	fated	註定	注定	adj_dist,front_compound_adj,rear_compound_adj
+DESTINY	NOUN	destiny/destinies	命運	命运	of_noun_sing,the_noun_sing
+DESTINY	ADJ	destined	天定	天定	adj_dist,front_compound_adj,rear_compound_adj
+HORROR	NOUN	horror/horrors	恐怖	恐怖	front_compound_noun_sing,of_noun_sing,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+LITTLE	ADJ	little	小	小	adj_dist,front_compound_adj,rear_compound_adj
+EARLY	ADJ	early	早	早	adj_dist,front_compound_adj,rear_compound_adj
+LATE	ADJ	late	晚	晚	adj_dist,front_compound_adj,rear_compound_adj
+LIFE	NOUN	life/lives	生命	生命	front_compound_noun_sing,of_noun_sing,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+LIFE	ADJ	living	活	活	adj_dist,front_compound_adj,rear_compound_adj
+LIFE	VERB	live/lives/lived/lived/living	活	活	
+CHEESE	NOUN	cheese/cheeses	起司	奶酪	front_compound_noun_sing,of_noun_sing,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+FIGURE_OBJECT	NOUN	figure/figures	雕像	雕像	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+HOPE	NOUN	hope/hopes	希望	希望	front_compound_noun_sing,of_noun_sing,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+HOPE	ADJ	hopeful	期盼	期盼	adj_dist,front_compound_adj,rear_compound_adj
+HOPE	VERB	hope/hopes/hoped/hoped/hoping	盼	盼	
+BODY	NOUN	body/bodies	身軀	身躯	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+WALK	NOUN	walk/walks	漫步	漫步	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+WALK	VERB	walk/walks/walked/walked/walking	行	行	standard_verb
+HOUR	NOUN	hour/hours	時辰	时辰	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+SIT	VERB	sit/sits/sat/sat/sitting	坐	坐	
+MOMENT	NOUN	moment/moments	剎那	刹那	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+BEAUTY	NOUN	beauty/	美	美	front_compound_noun_sing,of_noun_sing,rear_compound_noun_sing,the_noun_sing
+BEAUTY	ADJ	beautiful	美麗	美丽	adj_dist
+JUDGE	NOUN	judge/judges	判官	判官	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+JUDGE	VERB	judge/judges/judged/judged/judging	判	判	standard_verb
+WISH	NOUN	wish/wishes	願望	愿望	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+WISH	VERB	wish/wishes/wished/wished/wishing	願	愿	
+RESPECT	NOUN	respect/	敬重	敬重	front_compound_noun_sing,of_noun_sing,rear_compound_noun_sing,the_noun_sing
+RESPECT	ADJ	respectful	恭敬	恭敬	adj_dist
+RESPECT	VERB	respect/respects/respected/respected/respecting	尊	尊	
+MARK	NOUN	mark/marks	印記	印记	front_compound_noun_sing,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+MARK	VERB	mark/marks/marked/marked/marking	標	标	standard_verb
+HEAVY	NOUN	heaviness/	沉重	沉重	of_noun_sing,the_noun_sing
+HEAVY	ADJ	heavy	重	重	adj_dist,front_compound_adj,rear_compound_adj
+TRIAL	NOUN	trial/trials	試煉	试炼	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+PRACTICE	NOUN	practice/	修習	修习	front_compound_noun_sing,of_noun_sing,rear_compound_noun_sing,the_noun_sing
+PRACTICE	VERB	practice/practices/practiced/practiced/practicing	修	修	standard_verb
+END	NOUN	end/ends	終焉	终焉	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_plur,the_noun_sing
+END	VERB	end/ends/ended/ended/ending	終	终	standard_verb
+START	NOUN	start/starts	起始	起始	front_compound_noun_sing,rear_compound_noun_sing
+START	VERB	start/starts/started/started/starting	啟	启	
+BEGIN	NOUN	beginning/beginnings	開端	开端	of_noun_plur,the_noun_sing
+BEGIN	VERB	begin/begins/began/begun/beginning	始	始	standard_verb
+BIRTH	NOUN	birth/births	誕生	诞生	front_compound_noun_sing,of_noun_plur,of_noun_sing,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+BIRTH	ADJ	born	天生	天生	adj_dist,front_compound_adj,rear_compound_adj
+BIRTH	VERB	bear/bears/bore/born/bearing	生	生	
+LEARN	NOUN	learning/	學識	学识	of_noun_sing,rear_compound_noun_sing,the_noun_sing
+LEARN	ADJ	learned	博學	博学	adj_dist,front_compound_adj,rear_compound_adj
+LEARN	VERB	learn/learns/learned/learned/learning	學	学	standard_verb
+MISCHIEF	NOUN	mischief/	戲謔	戏谑	front_compound_noun_sing,of_noun_sing,rear_compound_noun_sing,the_noun_sing
+MISCHIEF	ADJ	mischievous	頑皮	顽皮	adj_dist
+WISDOM	NOUN	wisdom/	智慧	智慧	front_compound_noun_sing,of_noun_sing,rear_compound_noun_sing,the_noun_sing
+WISDOM	ADJ	wise	睿智	睿智	adj_dist,front_compound_adj,rear_compound_adj
+KNOW	NOUN	knower/knowers	知者	知者	rear_compound_noun_sing,the_noun_sing
+KNOW	ADJ	knowing	洞悉	洞悉	adj_dist,front_compound_adj,rear_compound_adj
+KNOW	VERB	know/knows/knew/known/knowing	知	知	standard_verb
+KNOWLEDGE	NOUN	knowledge/	知識	知识	front_compound_noun_sing,of_noun_sing,rear_compound_noun_sing,the_noun_sing
+CRACK	NOUN	crack/cracks	裂隙	裂隙	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+CRACK	ADJ	cracked	龜裂	龟裂	adj_dist,front_compound_adj,rear_compound_adj
+CRACK	VERB	crack/cracks/cracked/cracked/cracking	裂	裂	standard_verb
+SHATTER	ADJ	shattered	破碎	破碎	adj_dist,rear_compound_adj
+SHATTER	VERB	shatter/shatters/shattered/shattered/shattering	碎	碎	standard_verb
+LEAP	NOUN	leap/leaps	飛躍	飞跃	front_compound_noun_sing,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+LEAP	VERB	leap/leaps/leaped/leaped/leaping	躍	跃	standard_verb
+JUMP	NOUN	jump/jumps	跳躍	跳跃	front_compound_noun_sing,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+JUMP	VERB	jump/jumps/jumped/jumped/jumping	跳	跳	standard_verb
+DIVE	NOUN	dive/dives	俯衝	俯冲	front_compound_noun_sing,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+DIVE	VERB	dive/dives/dove/dived/diving	潛	潜	standard_verb
+VAULT VERB	VERB	vault/vaults/vaulted/vaulted/vaulting	越	越	standard_verb
+VAULT PLACE	NOUN	vault/vaults	寶庫	宝库	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_noun_sing
+TREASURY	NOUN	treasury/treasuries	府庫	府库	of_noun_plur,the_noun_sing
+BETRAY	NOUN	betrayal/betrayals	背叛	背叛	of_noun_sing,the_noun_sing
+BETRAY	VERB	betray/betrays/betrayed/betrayed/betraying	叛	叛	
+TREASON	NOUN	treason/	叛國	叛国	front_compound_noun_sing,of_noun_sing,rear_compound_noun_sing,the_noun_sing
+REASON	NOUN	reason/reasons	理性	理性	front_compound_noun_sing,of_noun_sing,rear_compound_noun_sing,the_noun_sing
+REASON	VERB	reason/reasons/reasoned/reasoned/reasoning	思	思	
+SQUAT	ADJ	squat	矮壯	矮壮	adj_dist,front_compound_adj,rear_compound_adj
+SQUAT	VERB	squat/squats/squatted/squatted/squatting	蹲	蹲	
+FESTIVAL	NOUN	festival/festivals	節慶	节庆	of_noun_plur,the_noun_sing
+FESTIVAL	ADJ	festive	歡騰	欢腾	adj_dist,front_compound_adj
+COMPANY	NOUN	company/companies	團	团	of_noun_plur,the_noun_sing
