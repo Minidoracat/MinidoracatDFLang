@@ -712,13 +712,17 @@ unsafe fn plan_report_lines(vec: usize) {
         if report != 0 {
             let group = &items[i..j];
             let text = unsafe { crate::lines::str_bytes(report + 8) };
-            let lines: Vec<usize> = match group {
-                [only] if unsafe { crate::lines::str_bytes(*only) }.is_empty() => vec![report + 8],
-                _ => group.to_vec(),
+            let single;
+            let lines: &[usize] = match group {
+                [only] if unsafe { crate::lines::str_bytes(*only) }.is_empty() => {
+                    single = report + 8;
+                    std::slice::from_ref(&single)
+                }
+                _ => group,
             };
-            let width = lines.iter().map(|&s| unsafe { crate::lines::str_bytes(s) }.len()).max().unwrap_or(0) as i32;
-            if text.iter().any(u8::is_ascii_alphabetic) {
-                unsafe { crate::lines::plan(&lines, text, width, dict, false) };
+            if text.iter().any(u8::is_ascii_alphabetic) && !unsafe { crate::lines::planned(lines) } {
+                let width = lines.iter().map(|&s| unsafe { crate::lines::str_bytes(s) }.len()).max().unwrap_or(0) as i32;
+                unsafe { crate::lines::plan(lines, text, width, dict, false) };
             }
         }
         i = j;

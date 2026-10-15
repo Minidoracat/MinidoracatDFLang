@@ -120,6 +120,12 @@ pub unsafe fn line_plan(s: usize) -> Option<Plan> {
     (*line.text == *unsafe { str_bytes(s) }).then(|| line.plan.clone())
 }
 
+/// 這幾行都已經照現在的內容登記過畫字計畫（每幀重畫的框不必每幀重算、重登記）。
+pub unsafe fn planned(lines: &[usize]) -> bool {
+    let table = LINES.lock();
+    lines.iter().all(|&s| table.get(&s).is_some_and(|l| *l.text == *unsafe { str_bytes(s) }))
+}
+
 /// 遊戲啟動時就切好的提示：從呼叫 wrap_text 的程式碼找出 (切好的行, 原文, 寬度)，補登記。
 /// 只在切好的行和原文的單字完全相同時才算（找錯字串常數、或同一個 vector 接了好幾句時就略過）。
 /// 回傳有譯文的句數。

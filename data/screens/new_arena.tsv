@@ -1,0 +1,3 @@
+en	zh-Hant	zh-Hans	align	row	note
+Small arena	小型競技場	小型竞技场			data/init/arena.txt DISPLAY_NAME：競技場設定檔（物件測試競技場的選單）
+Classic Arena	經典競技場	经典竞技场			data/init/arena.txt DISPLAY_NAME：競技場設定檔
