@@ -1,0 +1,154 @@
+en	zh-Hant	zh-Hans	align	note
+{1} was disturbed from eternal rest once more, this time by {2} as {%3}.	{1}再次從永眠中被驚醒，這次是{2}所為，化為{3}。	{1}再次从永眠中被惊醒，这次是{2}所为，化为{3}。	inner	FUN_140b70360 L1686189 hist_figure_revived 完整句：有施術者，flag 2 disturbed；once more；as 鬼魂種類（a murderous ghost…）或互動顯示名（a mummy）
+{1} was disturbed from eternal rest once more, this time by {2}.	{1}再次從永眠中被驚醒，這次是{2}所為。	{1}再次从永眠中被惊醒，这次是{2}所为。	inner	FUN_140b70360 L1686189 hist_figure_revived 完整句：有施術者，flag 2 disturbed；once more
+{1} was disturbed from eternal rest by {2} as {%3}.	{1}被{2}從永眠中驚醒，化為{3}。	{1}被{2}从永眠中惊醒，化为{3}。	inner	FUN_140b70360 L1686189 hist_figure_revived 完整句：有施術者，flag 2 disturbed；as 鬼魂種類（a murderous ghost…）或互動顯示名（a mummy）
+{1} was disturbed from eternal rest by {2}.	{1}被{2}從永眠中驚醒。	{1}被{2}从永眠中惊醒。	inner	FUN_140b70360 L1686189 hist_figure_revived 完整句：有施術者，flag 2 disturbed
+{1} was brought back from the dead once more, this time by {2} as {%3} in {4}.	{1}在{4}再次被復活，這次是{2}所為，化為{3}。	{1}在{4}再次被复活，这次是{2}所为，化为{3}。	inner	FUN_140b70360 L1686189 hist_figure_revived 完整句：有施術者；once more；as 鬼魂種類（a murderous ghost…）或互動顯示名（a mummy）；in 據點／地區／地底層
+{1} was brought back from the dead once more, this time by {2} as {%3}.	{1}再次被復活，這次是{2}所為，化為{3}。	{1}再次被复活，这次是{2}所为，化为{3}。	inner	FUN_140b70360 L1686189 hist_figure_revived 完整句：有施術者；once more；as 鬼魂種類（a murderous ghost…）或互動顯示名（a mummy）
+{1} was brought back from the dead once more, this time by {2} in {3}.	{1}在{3}再次被復活，這次是{2}所為。	{1}在{3}再次被复活，这次是{2}所为。	inner	FUN_140b70360 L1686189 hist_figure_revived 完整句：有施術者；once more；in 據點／地區／地底層
+{1} was brought back from the dead once more, this time by {2}.	{1}再次被復活，這次是{2}所為。	{1}再次被复活，这次是{2}所为。	inner	FUN_140b70360 L1686189 hist_figure_revived 完整句：有施術者；once more
+{1} was brought back from the dead by {2} as {%3} in {4}.	{1}在{4}被{2}復活，化為{3}。	{1}在{4}被{2}复活，化为{3}。	inner	FUN_140b70360 L1686189 hist_figure_revived 完整句：有施術者；as 鬼魂種類（a murderous ghost…）或互動顯示名（a mummy）；in 據點／地區／地底層
+{1} was brought back from the dead by {2} as {%3}.	{1}被{2}復活，化為{3}。	{1}被{2}复活，化为{3}。	inner	FUN_140b70360 L1686189 hist_figure_revived 完整句：有施術者；as 鬼魂種類（a murderous ghost…）或互動顯示名（a mummy）
+{1} was brought back from the dead by {2} in {3}.	{1}在{3}被{2}復活。	{1}在{3}被{2}复活。	inner	FUN_140b70360 L1686189 hist_figure_revived 完整句：有施術者；in 據點／地區／地底層
+{1} was brought back from the dead by {2}.	{1}被{2}復活。	{1}被{2}复活。	inner	FUN_140b70360 L1686189 hist_figure_revived 完整句：有施術者
+{1} came back from the dead once more, this time as {%2} in {3}.	{1}在{3}再次死而復生，這次化為{2}。	{1}在{3}再次死而复生，这次化为{2}。	inner	FUN_140b70360 L1686189 hist_figure_revived 完整句：沒有施術者；once more；as 鬼魂種類（a murderous ghost…）或互動顯示名（a mummy）；in 據點／地區／地底層
+{1} came back from the dead once more, this time as {%2}.	{1}再次死而復生，這次化為{2}。	{1}再次死而复生，这次化为{2}。	inner	FUN_140b70360 L1686189 hist_figure_revived 完整句：沒有施術者；once more；as 鬼魂種類（a murderous ghost…）或互動顯示名（a mummy）
+{1} came back from the dead once more, this time in {2}.	{1}在{2}再次死而復生。	{1}在{2}再次死而复生。	inner	FUN_140b70360 L1686189 hist_figure_revived 完整句：沒有施術者；once more；in 據點／地區／地底層
+{1} came back from the dead once more, this time.	{1}再次死而復生。	{1}再次死而复生。	inner	FUN_140b70360 L1686189 hist_figure_revived 完整句：沒有施術者；once more
+{1} came back from the dead as {%2} in {3}.	{1}在{3}死而復生，化為{2}。	{1}在{3}死而复生，化为{2}。	inner	FUN_140b70360 L1686189 hist_figure_revived 完整句：沒有施術者；as 鬼魂種類（a murderous ghost…）或互動顯示名（a mummy）；in 據點／地區／地底層
+{1} came back from the dead as {%2}.	{1}死而復生，化為{2}。	{1}死而复生，化为{2}。	inner	FUN_140b70360 L1686189 hist_figure_revived 完整句：沒有施術者；as 鬼魂種類（a murderous ghost…）或互動顯示名（a mummy）
+{1} came back from the dead in {2}.	{1}在{2}死而復生。	{1}在{2}死而复生。	inner	FUN_140b70360 L1686189 hist_figure_revived 完整句：沒有施術者；in 據點／地區／地底層
+{1} came back from the dead.	{1}死而復生。	{1}死而复生。	inner	FUN_140b70360 L1686189 hist_figure_revived 完整句：沒有施術者
+the return of {1} from the dead, once more, as {%2} in {3}	{1}在{3}再次死而復生並化為{2}	{1}在{3}再次死而复生并化为{2}	inner	FUN_140b732f0 L1687893 hist_figure_revived 短語（日期由 _events_00 接）
+the return of {1} from the dead, once more, as {%2}	{1}再次死而復生並化為{2}	{1}再次死而复生并化为{2}	inner	FUN_140b732f0 L1687893 hist_figure_revived 短語（日期由 _events_00 接）
+the return of {1} from the dead, once more, in {2}	{1}在{2}再次死而復生	{1}在{2}再次死而复生	inner	FUN_140b732f0 L1687893 hist_figure_revived 短語（日期由 _events_00 接）
+the return of {1} from the dead, once more,	{1}再次死而復生	{1}再次死而复生	inner	FUN_140b732f0 L1687893 hist_figure_revived 短語（日期由 _events_00 接）
+the return of {1} from the dead as {%2} in {3}	{1}在{3}死而復生並化為{2}	{1}在{3}死而复生并化为{2}	inner	FUN_140b732f0 L1687893 hist_figure_revived 短語（日期由 _events_00 接）
+the return of {1} from the dead as {%2}	{1}死而復生並化為{2}	{1}死而复生并化为{2}	inner	FUN_140b732f0 L1687893 hist_figure_revived 短語（日期由 _events_00 接）
+the return of {1} from the dead in {2}	{1}在{2}死而復生	{1}在{2}死而复生	inner	FUN_140b732f0 L1687893 hist_figure_revived 短語（日期由 _events_00 接）
+the return of {1} from the dead	{1}死而復生	{1}死而复生	inner	FUN_140b732f0 L1687893 hist_figure_revived 短語（日期由 _events_00 接）
+{1}, {2} and {3} were reunited with {4} and {5} in {6} through the efforts of {7}.	在{7}的努力下，{1}、{2}和{3}在{6}與{4}和{5}團聚。	在{7}的努力下，{1}、{2}和{3}在{6}与{4}和{5}团聚。	inner	FUN_140b74e00 L1688831 hist_figure_reunion 完整句：名單 1–3 人、was／were；in 據點或地區；through the efforts of 促成者
+{1}, {2} and {3} were reunited with {4} in {5} through the efforts of {6}.	在{6}的努力下，{1}、{2}和{3}在{5}與{4}團聚。	在{6}的努力下，{1}、{2}和{3}在{5}与{4}团聚。	inner	FUN_140b74e00 L1688831 hist_figure_reunion 完整句：名單 1–3 人、was／were；in 據點或地區；through the efforts of 促成者
+{1} and {2} were reunited with {3}, {4} and {5} in {6} through the efforts of {7}.	在{7}的努力下，{1}和{2}在{6}與{3}、{4}和{5}團聚。	在{7}的努力下，{1}和{2}在{6}与{3}、{4}和{5}团聚。	inner	FUN_140b74e00 L1688831 hist_figure_reunion 完整句：名單 1–3 人、was／were；in 據點或地區；through the efforts of 促成者
+{1} and {2} were reunited with {3} and {4} in {5} through the efforts of {6}.	在{6}的努力下，{1}和{2}在{5}與{3}和{4}團聚。	在{6}的努力下，{1}和{2}在{5}与{3}和{4}团聚。	inner	FUN_140b74e00 L1688831 hist_figure_reunion 完整句：名單 1–3 人、was／were；in 據點或地區；through the efforts of 促成者
+{1} and {2} were reunited with {3} in {4} through the efforts of {5}.	在{5}的努力下，{1}和{2}在{4}與{3}團聚。	在{5}的努力下，{1}和{2}在{4}与{3}团聚。	inner	FUN_140b74e00 L1688831 hist_figure_reunion 完整句：名單 1–3 人、was／were；in 據點或地區；through the efforts of 促成者
+{1} was reunited with {2}, {3} and {4} in {5} through the efforts of {6}.	在{6}的努力下，{1}在{5}與{2}、{3}和{4}團聚。	在{6}的努力下，{1}在{5}与{2}、{3}和{4}团聚。	inner	FUN_140b74e00 L1688831 hist_figure_reunion 完整句：名單 1–3 人、was／were；in 據點或地區；through the efforts of 促成者
+{1} was reunited with {2} and {3} in {4} through the efforts of {5}.	在{5}的努力下，{1}在{4}與{2}和{3}團聚。	在{5}的努力下，{1}在{4}与{2}和{3}团聚。	inner	FUN_140b74e00 L1688831 hist_figure_reunion 完整句：名單 1–3 人、was／were；in 據點或地區；through the efforts of 促成者
+{1} was reunited with {2} in {3} through the efforts of {4}.	在{4}的努力下，{1}在{3}與{2}團聚。	在{4}的努力下，{1}在{3}与{2}团聚。	inner	FUN_140b74e00 L1688831 hist_figure_reunion 完整句：名單 1–3 人、was／were；in 據點或地區；through the efforts of 促成者
+{1}, {2} and {3} were reunited with {4}, {5} and {6} through the efforts of {7}.	在{7}的努力下，{1}、{2}和{3}與{4}、{5}和{6}團聚。	在{7}的努力下，{1}、{2}和{3}与{4}、{5}和{6}团聚。	inner	FUN_140b74e00 L1688831 hist_figure_reunion 完整句：名單 1–3 人、was／were；in 據點或地區；through the efforts of 促成者
+{1}, {2} and {3} were reunited with {4} and {5} through the efforts of {6}.	在{6}的努力下，{1}、{2}和{3}與{4}和{5}團聚。	在{6}的努力下，{1}、{2}和{3}与{4}和{5}团聚。	inner	FUN_140b74e00 L1688831 hist_figure_reunion 完整句：名單 1–3 人、was／were；in 據點或地區；through the efforts of 促成者
+{1}, {2} and {3} were reunited with {4} through the efforts of {5}.	在{5}的努力下，{1}、{2}和{3}與{4}團聚。	在{5}的努力下，{1}、{2}和{3}与{4}团聚。	inner	FUN_140b74e00 L1688831 hist_figure_reunion 完整句：名單 1–3 人、was／were；in 據點或地區；through the efforts of 促成者
+{1} and {2} were reunited with {3}, {4} and {5} through the efforts of {6}.	在{6}的努力下，{1}和{2}與{3}、{4}和{5}團聚。	在{6}的努力下，{1}和{2}与{3}、{4}和{5}团聚。	inner	FUN_140b74e00 L1688831 hist_figure_reunion 完整句：名單 1–3 人、was／were；in 據點或地區；through the efforts of 促成者
+{1} and {2} were reunited with {3} and {4} through the efforts of {5}.	在{5}的努力下，{1}和{2}與{3}和{4}團聚。	在{5}的努力下，{1}和{2}与{3}和{4}团聚。	inner	FUN_140b74e00 L1688831 hist_figure_reunion 完整句：名單 1–3 人、was／were；in 據點或地區；through the efforts of 促成者
+{1} and {2} were reunited with {3} through the efforts of {4}.	在{4}的努力下，{1}和{2}與{3}團聚。	在{4}的努力下，{1}和{2}与{3}团聚。	inner	FUN_140b74e00 L1688831 hist_figure_reunion 完整句：名單 1–3 人、was／were；in 據點或地區；through the efforts of 促成者
+{1} was reunited with {2}, {3} and {4} through the efforts of {5}.	在{5}的努力下，{1}與{2}、{3}和{4}團聚。	在{5}的努力下，{1}与{2}、{3}和{4}团聚。	inner	FUN_140b74e00 L1688831 hist_figure_reunion 完整句：名單 1–3 人、was／were；in 據點或地區；through the efforts of 促成者
+{1} was reunited with {2} and {3} through the efforts of {4}.	在{4}的努力下，{1}與{2}和{3}團聚。	在{4}的努力下，{1}与{2}和{3}团聚。	inner	FUN_140b74e00 L1688831 hist_figure_reunion 完整句：名單 1–3 人、was／were；in 據點或地區；through the efforts of 促成者
+{1} was reunited with {2} through the efforts of {3}.	在{3}的努力下，{1}與{2}團聚。	在{3}的努力下，{1}与{2}团聚。	inner	FUN_140b74e00 L1688831 hist_figure_reunion 完整句：名單 1–3 人、was／were；in 據點或地區；through the efforts of 促成者
+{1}, {2} and {3} were reunited with {4}, {5} and {6} in {7}.	{1}、{2}和{3}在{7}與{4}、{5}和{6}團聚。	{1}、{2}和{3}在{7}与{4}、{5}和{6}团聚。	inner	FUN_140b74e00 L1688831 hist_figure_reunion 完整句：名單 1–3 人、was／were；in 據點或地區；through the efforts of 促成者
+{1}, {2} and {3} were reunited with {4} and {5} in {6}.	{1}、{2}和{3}在{6}與{4}和{5}團聚。	{1}、{2}和{3}在{6}与{4}和{5}团聚。	inner	FUN_140b74e00 L1688831 hist_figure_reunion 完整句：名單 1–3 人、was／were；in 據點或地區；through the efforts of 促成者
+{1}, {2} and {3} were reunited with {4} in {5}.	{1}、{2}和{3}在{5}與{4}團聚。	{1}、{2}和{3}在{5}与{4}团聚。	inner	FUN_140b74e00 L1688831 hist_figure_reunion 完整句：名單 1–3 人、was／were；in 據點或地區；through the efforts of 促成者
+{1} and {2} were reunited with {3}, {4} and {5} in {6}.	{1}和{2}在{6}與{3}、{4}和{5}團聚。	{1}和{2}在{6}与{3}、{4}和{5}团聚。	inner	FUN_140b74e00 L1688831 hist_figure_reunion 完整句：名單 1–3 人、was／were；in 據點或地區；through the efforts of 促成者
+{1} and {2} were reunited with {3} and {4} in {5}.	{1}和{2}在{5}與{3}和{4}團聚。	{1}和{2}在{5}与{3}和{4}团聚。	inner	FUN_140b74e00 L1688831 hist_figure_reunion 完整句：名單 1–3 人、was／were；in 據點或地區；through the efforts of 促成者
+{1} and {2} were reunited with {3} in {4}.	{1}和{2}在{4}與{3}團聚。	{1}和{2}在{4}与{3}团聚。	inner	FUN_140b74e00 L1688831 hist_figure_reunion 完整句：名單 1–3 人、was／were；in 據點或地區；through the efforts of 促成者
+{1} was reunited with {2}, {3} and {4} in {5}.	{1}在{5}與{2}、{3}和{4}團聚。	{1}在{5}与{2}、{3}和{4}团聚。	inner	FUN_140b74e00 L1688831 hist_figure_reunion 完整句：名單 1–3 人、was／were；in 據點或地區；through the efforts of 促成者
+{1} was reunited with {2} and {3} in {4}.	{1}在{4}與{2}和{3}團聚。	{1}在{4}与{2}和{3}团聚。	inner	FUN_140b74e00 L1688831 hist_figure_reunion 完整句：名單 1–3 人、was／were；in 據點或地區；through the efforts of 促成者
+{1} was reunited with {2} in {3}.	{1}在{3}與{2}團聚。	{1}在{3}与{2}团聚。	inner	FUN_140b74e00 L1688831 hist_figure_reunion 完整句：名單 1–3 人、was／were；in 據點或地區；through the efforts of 促成者
+{1}, {2} and {3} were reunited with {4}, {5} and {6}.	{1}、{2}和{3}與{4}、{5}和{6}團聚。	{1}、{2}和{3}与{4}、{5}和{6}团聚。	inner	FUN_140b74e00 L1688831 hist_figure_reunion 完整句：名單 1–3 人、was／were；in 據點或地區；through the efforts of 促成者
+{1}, {2} and {3} were reunited with {4} and {5}.	{1}、{2}和{3}與{4}和{5}團聚。	{1}、{2}和{3}与{4}和{5}团聚。	inner	FUN_140b74e00 L1688831 hist_figure_reunion 完整句：名單 1–3 人、was／were；in 據點或地區；through the efforts of 促成者
+{1}, {2} and {3} were reunited with {4}.	{1}、{2}和{3}與{4}團聚。	{1}、{2}和{3}与{4}团聚。	inner	FUN_140b74e00 L1688831 hist_figure_reunion 完整句：名單 1–3 人、was／were；in 據點或地區；through the efforts of 促成者
+{1} and {2} were reunited with {3}, {4} and {5}.	{1}和{2}與{3}、{4}和{5}團聚。	{1}和{2}与{3}、{4}和{5}团聚。	inner	FUN_140b74e00 L1688831 hist_figure_reunion 完整句：名單 1–3 人、was／were；in 據點或地區；through the efforts of 促成者
+{1} and {2} were reunited with {3} and {4}.	{1}和{2}與{3}和{4}團聚。	{1}和{2}与{3}和{4}团聚。	inner	FUN_140b74e00 L1688831 hist_figure_reunion 完整句：名單 1–3 人、was／were；in 據點或地區；through the efforts of 促成者
+{1} and {2} were reunited with {3}.	{1}和{2}與{3}團聚。	{1}和{2}与{3}团聚。	inner	FUN_140b74e00 L1688831 hist_figure_reunion 完整句：名單 1–3 人、was／were；in 據點或地區；through the efforts of 促成者
+{1} was reunited with {2}, {3} and {4}.	{1}與{2}、{3}和{4}團聚。	{1}与{2}、{3}和{4}团聚。	inner	FUN_140b74e00 L1688831 hist_figure_reunion 完整句：名單 1–3 人、was／were；in 據點或地區；through the efforts of 促成者
+{1} was reunited with {2} and {3}.	{1}與{2}和{3}團聚。	{1}与{2}和{3}团聚。	inner	FUN_140b74e00 L1688831 hist_figure_reunion 完整句：名單 1–3 人、was／were；in 據點或地區；through the efforts of 促成者
+{1} was reunited with {2}.	{1}與{2}團聚。	{1}与{2}团聚。	inner	FUN_140b74e00 L1688831 hist_figure_reunion 完整句：名單 1–3 人、was／were；in 據點或地區；through the efforts of 促成者
+the reunion of {1}, {2} and {3} with {4}, {5} and {6} in {7} through the efforts of {8}	{1}、{2}和{3}經{8}促成在{7}與{4}、{5}和{6}團聚	{1}、{2}和{3}经{8}促成在{7}与{4}、{5}和{6}团聚	inner	FUN_140b750d0 L1688918 hist_figure_reunion 短語
+the reunion of {1}, {2} and {3} with {4} and {5} in {6} through the efforts of {7}	{1}、{2}和{3}經{7}促成在{6}與{4}和{5}團聚	{1}、{2}和{3}经{7}促成在{6}与{4}和{5}团聚	inner	FUN_140b750d0 L1688918 hist_figure_reunion 短語
+the reunion of {1}, {2} and {3} with {4} in {5} through the efforts of {6}	{1}、{2}和{3}經{6}促成在{5}與{4}團聚	{1}、{2}和{3}经{6}促成在{5}与{4}团聚	inner	FUN_140b750d0 L1688918 hist_figure_reunion 短語
+the reunion of {1} and {2} with {3}, {4} and {5} in {6} through the efforts of {7}	{1}和{2}經{7}促成在{6}與{3}、{4}和{5}團聚	{1}和{2}经{7}促成在{6}与{3}、{4}和{5}团聚	inner	FUN_140b750d0 L1688918 hist_figure_reunion 短語
+the reunion of {1} and {2} with {3} and {4} in {5} through the efforts of {6}	{1}和{2}經{6}促成在{5}與{3}和{4}團聚	{1}和{2}经{6}促成在{5}与{3}和{4}团聚	inner	FUN_140b750d0 L1688918 hist_figure_reunion 短語
+the reunion of {1} and {2} with {3} in {4} through the efforts of {5}	{1}和{2}經{5}促成在{4}與{3}團聚	{1}和{2}经{5}促成在{4}与{3}团聚	inner	FUN_140b750d0 L1688918 hist_figure_reunion 短語
+the reunion of {1} with {2}, {3} and {4} in {5} through the efforts of {6}	{1}經{6}促成在{5}與{2}、{3}和{4}團聚	{1}经{6}促成在{5}与{2}、{3}和{4}团聚	inner	FUN_140b750d0 L1688918 hist_figure_reunion 短語
+the reunion of {1} with {2} and {3} in {4} through the efforts of {5}	{1}經{5}促成在{4}與{2}和{3}團聚	{1}经{5}促成在{4}与{2}和{3}团聚	inner	FUN_140b750d0 L1688918 hist_figure_reunion 短語
+the reunion of {1} with {2} in {3} through the efforts of {4}	{1}經{4}促成在{3}與{2}團聚	{1}经{4}促成在{3}与{2}团聚	inner	FUN_140b750d0 L1688918 hist_figure_reunion 短語
+the reunion of {1}, {2} and {3} with {4}, {5} and {6} through the efforts of {7}	{1}、{2}和{3}經{7}促成與{4}、{5}和{6}團聚	{1}、{2}和{3}经{7}促成与{4}、{5}和{6}团聚	inner	FUN_140b750d0 L1688918 hist_figure_reunion 短語
+the reunion of {1}, {2} and {3} with {4} and {5} through the efforts of {6}	{1}、{2}和{3}經{6}促成與{4}和{5}團聚	{1}、{2}和{3}经{6}促成与{4}和{5}团聚	inner	FUN_140b750d0 L1688918 hist_figure_reunion 短語
+the reunion of {1}, {2} and {3} with {4} through the efforts of {5}	{1}、{2}和{3}經{5}促成與{4}團聚	{1}、{2}和{3}经{5}促成与{4}团聚	inner	FUN_140b750d0 L1688918 hist_figure_reunion 短語
+the reunion of {1} and {2} with {3}, {4} and {5} through the efforts of {6}	{1}和{2}經{6}促成與{3}、{4}和{5}團聚	{1}和{2}经{6}促成与{3}、{4}和{5}团聚	inner	FUN_140b750d0 L1688918 hist_figure_reunion 短語
+the reunion of {1} and {2} with {3} and {4} through the efforts of {5}	{1}和{2}經{5}促成與{3}和{4}團聚	{1}和{2}经{5}促成与{3}和{4}团聚	inner	FUN_140b750d0 L1688918 hist_figure_reunion 短語
+the reunion of {1} and {2} with {3} through the efforts of {4}	{1}和{2}經{4}促成與{3}團聚	{1}和{2}经{4}促成与{3}团聚	inner	FUN_140b750d0 L1688918 hist_figure_reunion 短語
+the reunion of {1} with {2}, {3} and {4} through the efforts of {5}	{1}經{5}促成與{2}、{3}和{4}團聚	{1}经{5}促成与{2}、{3}和{4}团聚	inner	FUN_140b750d0 L1688918 hist_figure_reunion 短語
+the reunion of {1} with {2} and {3} through the efforts of {4}	{1}經{4}促成與{2}和{3}團聚	{1}经{4}促成与{2}和{3}团聚	inner	FUN_140b750d0 L1688918 hist_figure_reunion 短語
+the reunion of {1} with {2} through the efforts of {3}	{1}經{3}促成與{2}團聚	{1}经{3}促成与{2}团聚	inner	FUN_140b750d0 L1688918 hist_figure_reunion 短語
+the reunion of {1}, {2} and {3} with {4}, {5} and {6} in {7}	{1}、{2}和{3}在{7}與{4}、{5}和{6}團聚	{1}、{2}和{3}在{7}与{4}、{5}和{6}团聚	inner	FUN_140b750d0 L1688918 hist_figure_reunion 短語
+the reunion of {1}, {2} and {3} with {4} and {5} in {6}	{1}、{2}和{3}在{6}與{4}和{5}團聚	{1}、{2}和{3}在{6}与{4}和{5}团聚	inner	FUN_140b750d0 L1688918 hist_figure_reunion 短語
+the reunion of {1}, {2} and {3} with {4} in {5}	{1}、{2}和{3}在{5}與{4}團聚	{1}、{2}和{3}在{5}与{4}团聚	inner	FUN_140b750d0 L1688918 hist_figure_reunion 短語
+the reunion of {1} and {2} with {3}, {4} and {5} in {6}	{1}和{2}在{6}與{3}、{4}和{5}團聚	{1}和{2}在{6}与{3}、{4}和{5}团聚	inner	FUN_140b750d0 L1688918 hist_figure_reunion 短語
+the reunion of {1} and {2} with {3} and {4} in {5}	{1}和{2}在{5}與{3}和{4}團聚	{1}和{2}在{5}与{3}和{4}团聚	inner	FUN_140b750d0 L1688918 hist_figure_reunion 短語
+the reunion of {1} and {2} with {3} in {4}	{1}和{2}在{4}與{3}團聚	{1}和{2}在{4}与{3}团聚	inner	FUN_140b750d0 L1688918 hist_figure_reunion 短語
+the reunion of {1} with {2}, {3} and {4} in {5}	{1}在{5}與{2}、{3}和{4}團聚	{1}在{5}与{2}、{3}和{4}团聚	inner	FUN_140b750d0 L1688918 hist_figure_reunion 短語
+the reunion of {1} with {2} and {3} in {4}	{1}在{4}與{2}和{3}團聚	{1}在{4}与{2}和{3}团聚	inner	FUN_140b750d0 L1688918 hist_figure_reunion 短語
+the reunion of {1} with {2} in {3}	{1}在{3}與{2}團聚	{1}在{3}与{2}团聚	inner	FUN_140b750d0 L1688918 hist_figure_reunion 短語
+the reunion of {1}, {2} and {3} with {4}, {5} and {6}	{1}、{2}和{3}與{4}、{5}和{6}團聚	{1}、{2}和{3}与{4}、{5}和{6}团聚	inner	FUN_140b750d0 L1688918 hist_figure_reunion 短語
+the reunion of {1}, {2} and {3} with {4} and {5}	{1}、{2}和{3}與{4}和{5}團聚	{1}、{2}和{3}与{4}和{5}团聚	inner	FUN_140b750d0 L1688918 hist_figure_reunion 短語
+the reunion of {1}, {2} and {3} with {4}	{1}、{2}和{3}與{4}團聚	{1}、{2}和{3}与{4}团聚	inner	FUN_140b750d0 L1688918 hist_figure_reunion 短語
+the reunion of {1} and {2} with {3}, {4} and {5}	{1}和{2}與{3}、{4}和{5}團聚	{1}和{2}与{3}、{4}和{5}团聚	inner	FUN_140b750d0 L1688918 hist_figure_reunion 短語
+the reunion of {1} and {2} with {3} and {4}	{1}和{2}與{3}和{4}團聚	{1}和{2}与{3}和{4}团聚	inner	FUN_140b750d0 L1688918 hist_figure_reunion 短語
+the reunion of {1} and {2} with {3}	{1}和{2}與{3}團聚	{1}和{2}与{3}团聚	inner	FUN_140b750d0 L1688918 hist_figure_reunion 短語
+the reunion of {1} with {2}, {3} and {4}	{1}與{2}、{3}和{4}團聚	{1}与{2}、{3}和{4}团聚	inner	FUN_140b750d0 L1688918 hist_figure_reunion 短語
+the reunion of {1} with {2} and {3}	{1}與{2}和{3}團聚	{1}与{2}和{3}团聚	inner	FUN_140b750d0 L1688918 hist_figure_reunion 短語
+the reunion of {1} with {2}	{1}與{2}團聚	{1}与{2}团聚	inner	FUN_140b750d0 L1688918 hist_figure_reunion 短語
+{1} was abducted from {2} by {3}.	{1}被{3}從{2}綁走。	{1}被{3}从{2}绑走。	inner	FUN_140b75350 L1688995 hist_figure_abducted 完整句
+{1} was abducted by {2}.	{1}被{2}綁架。	{1}被{2}绑架。	inner	FUN_140b75350 L1688995 hist_figure_abducted 完整句
+{1} abducted {2} from {3}.	{1}從{3}綁走了{2}。	{1}从{3}绑走了{2}。	inner	FUN_140b75350 L1688995 hist_figure_abducted 完整句：在綁架者頁（主詞是綁架者）
+{1} abducted {2}.	{1}綁架了{2}。	{1}绑架了{2}。	inner	FUN_140b75350 L1688995 hist_figure_abducted 完整句：在綁架者頁
+the abduction of {1} from {2} by {3}	{1}被{3}從{2}綁走	{1}被{3}从{2}绑走	inner	FUN_140b75510 L1689034 hist_figure_abducted 短語
+the abduction of {1} by {2}	{1}被{2}綁架	{1}被{2}绑架	inner	FUN_140b75510 L1689034 hist_figure_abducted 短語
+{1} decided to become a thief, operating out of {2}.	{1}決定當小偷，以{2}為據點活動。	{1}决定当小偷，以{2}为据点活动。	inner	FUN_140b75660 L1689062 change_hf_job 完整句：thief，有據點
+{1} decided to become a thief, operating in {2}.	{1}決定當小偷，在{2}活動。	{1}决定当小偷，在{2}活动。	inner	FUN_140b75660 L1689062 change_hf_job 完整句：thief，地區或 the wilds
+{1} decided to become a baby-snatcher, operating out of {2}.	{1}決定當擄童綁匪，以{2}為據點活動。	{1}决定当掳童绑匪，以{2}为据点活动。	inner	FUN_140b75660 L1689062 change_hf_job 完整句：baby-snatcher，有據點
+{1} decided to become a baby-snatcher, operating in {2}.	{1}決定當擄童綁匪，在{2}活動。	{1}决定当掳童绑匪，在{2}活动。	inner	FUN_140b75660 L1689062 change_hf_job 完整句：baby-snatcher，地區或 the wilds
+{1} decided to become a mercenary, operating out of {2}.	{1}決定當傭兵，以{2}為據點活動。	{1}决定当佣兵，以{2}为据点活动。	inner	FUN_140b75660 L1689062 change_hf_job 完整句：mercenary，有據點
+{1} decided to become a mercenary, operating in {2}.	{1}決定當傭兵，在{2}活動。	{1}决定当佣兵，在{2}活动。	inner	FUN_140b75660 L1689062 change_hf_job 完整句：mercenary，地區或 the wilds
+{1} began wandering around {2}.	{1}開始在{2}一帶遊蕩。	{1}开始在{2}一带游荡。	inner	FUN_140b75660 L1689062 change_hf_job 完整句：MONSTER_SLAYER，有據點
+{1} began wandering in {2}.	{1}開始在{2}遊蕩。	{1}开始在{2}游荡。	inner	FUN_140b75660 L1689062 change_hf_job 完整句：地區
+{1} began wandering the wilds.	{1}開始在荒野中遊蕩。	{1}开始在荒野中游荡。	inner	FUN_140b75660 L1689062 change_hf_job 完整句：沒有地點
+{1} began hunting great beasts in {2}.	{1}開始在{2}獵殺巨獸。	{1}开始在{2}猎杀巨兽。	inner	FUN_140b75660 L1689062 change_hf_job 完整句：BEAST_HUNTER；據點、地區或 the wilds
+{1} gave up being a {%2} to become a {%3} in {4}.	{1}在{4}放棄{2}的身分，成為{3}。	{1}在{4}放弃{2}的身份，成为{3}。	inner	FUN_140b75660 L1689062 change_hf_job 完整句：舊職業→新職業（職業名 FUN_14132e0c0）；排在 became a 前
+{1} stopped being a {%2} in {3}.	{1}在{3}不再當{2}。	{1}在{3}不再当{2}。	inner	FUN_140b75660 L1689062 change_hf_job 完整句：新職業是 STANDARD
+{1} became a {%2} in {3}.	{1}在{3}成為{2}。	{1}在{3}成为{2}。	inner	FUN_140b75660 L1689062 change_hf_job 完整句：舊職業是 STANDARD，或 scout（became a scout in）
+{1} lost a hist fig entry in {2}.	{1}在{2}遺失了歷史人物條目。	{1}在{2}丢失了历史人物条目。	inner	FUN_140b75660 L1689062 change_hf_job 完整句：找不到人物資料時的除錯字串
+the thievery of {1}, based in {2}	{1}以{2}為據點的偷竊活動	{1}以{2}为据点的偷窃活动	inner	FUN_140b75c00 L1689279 change_hf_job 短語
+the baby-snatching of {1}, based in {2}	{1}以{2}為據點的擄童活動	{1}以{2}为据点的掳童活动	inner	FUN_140b75c00 L1689279 change_hf_job 短語
+the mercenary operation of {1}, based in {2}	{1}以{2}為據點的傭兵活動	{1}以{2}为据点的佣兵活动	inner	FUN_140b75c00 L1689279 change_hf_job 短語
+the wandering of {1} around {2}	{1}在{2}一帶的遊蕩	{1}在{2}一带的游荡	inner	FUN_140b75c00 L1689279 change_hf_job 短語
+the wandering of {1} throughout the wilds	{1}在荒野中的遊蕩	{1}在荒野中的游荡	inner	FUN_140b75c00 L1689279 change_hf_job 短語
+the wandering of {1} in {2}	{1}在{2}的遊蕩	{1}在{2}的游荡	inner	FUN_140b75c00 L1689279 change_hf_job 短語
+the scouting of {1} around {2}	{1}在{2}一帶的偵察	{1}在{2}一带的侦察	inner	FUN_140b75c00 L1689279 change_hf_job 短語
+the scouting of {1} in {2}	{1}在{2}的偵察	{1}在{2}的侦察	inner	FUN_140b75c00 L1689279 change_hf_job 短語
+the hunting of great beasts of {1} in {2}	{1}在{2}的巨獸狩獵	{1}在{2}的巨兽狩猎	inner	FUN_140b75c00 L1689279 change_hf_job 短語
+the giving up on being a {%1} of {2} in {3}	{2}在{3}放棄{1}的身分	{2}在{3}放弃{1}的身份	inner	FUN_140b75c00 L1689279 change_hf_job 短語
+the career change from {%1} to {%2} of {3} in {4}	{3}在{4}從{1}轉行為{2}	{3}在{4}从{1}转行为{2}	inner	FUN_140b75c00 L1689279 change_hf_job 短語
+the start as a {%1} of {2} in {3}	{2}在{3}開始當{1}	{2}在{3}开始当{1}	inner	FUN_140b75c00 L1689279 change_hf_job 短語
+the loss of a hist fig entry of {1} in {2}	{1}在{2}遺失歷史人物條目	{1}在{2}丢失历史人物条目	inner	FUN_140b75c00 L1689279 change_hf_job 短語
+{1} arose from {2} within {3}.	{1}從{2}的{3}中爬起。	{1}从{2}的{3}中爬起。	inner	FUN_140b76120 L1689494 change_hf_body_state 完整句：據點 within 建築
+{1} arose from {2}.	{1}從{2}中爬起。	{1}从{2}中爬起。	inner	FUN_140b76120 L1689494 change_hf_body_state 完整句：據點、地區、地底層或 the wilds
+{1} was buried in {2} within {3}.	{1}被安葬於{2}的{3}。	{1}被安葬于{2}的{3}。	inner	FUN_140b76120 L1689494 change_hf_body_state 完整句：據點 within 建築
+{1} was buried in {2}.	{1}被安葬於{2}。	{1}被安葬于{2}。	inner	FUN_140b76120 L1689494 change_hf_body_state 完整句：據點、地區、地底層或 the wilds
+{1} was discarded in {2} within {3}.	{1}的遺體被棄置於{2}的{3}。	{1}的遗体被弃置于{2}的{3}。	inner	FUN_140b76120 L1689494 change_hf_body_state 完整句：據點 within 建築
+{1} was discarded in {2}.	{1}的遺體被棄置於{2}。	{1}的遗体被弃置于{2}。	inner	FUN_140b76120 L1689494 change_hf_body_state 完整句：據點、地區、地底層或 the wilds
+{1} was entombed in {2} within {3}.	{1}被葬入{2}的{3}。	{1}被葬入{2}的{3}。	inner	FUN_140b76120 L1689494 change_hf_body_state 完整句：據點 within 建築
+{1} was entombed in {2}.	{1}被葬入{2}。	{1}被葬入{2}。	inner	FUN_140b76120 L1689494 change_hf_body_state 完整句：據點、地區、地底層或 the wilds
+the raising of {1} in  {2} within {3}	{1}在{2}的{3}中爬起	{1}在{2}的{3}中爬起	inner	FUN_140b76340 L1689563 change_hf_body_state 短語；in 與地名之間遊戲寫了兩個空白
+the raising of {1} in  {2}	{1}在{2}中爬起	{1}在{2}中爬起	inner	FUN_140b76340 L1689563 change_hf_body_state 短語；in 與地名之間遊戲寫了兩個空白
+the burial of {1} in  {2} within {3}	{1}安葬於{2}的{3}	{1}安葬于{2}的{3}	inner	FUN_140b76340 L1689563 change_hf_body_state 短語；in 與地名之間遊戲寫了兩個空白
+the burial of {1} in  {2}	{1}安葬於{2}	{1}安葬于{2}	inner	FUN_140b76340 L1689563 change_hf_body_state 短語；in 與地名之間遊戲寫了兩個空白
+the discarding of {1} in  {2} within {3}	{1}的遺體被棄置於{2}的{3}	{1}的遗体被弃置于{2}的{3}	inner	FUN_140b76340 L1689563 change_hf_body_state 短語；in 與地名之間遊戲寫了兩個空白
+the discarding of {1} in  {2}	{1}的遺體被棄置於{2}	{1}的遗体被弃置于{2}	inner	FUN_140b76340 L1689563 change_hf_body_state 短語；in 與地名之間遊戲寫了兩個空白
+the entombment of {1} in  {2} within {3}	{1}葬入{2}的{3}	{1}葬入{2}的{3}	inner	FUN_140b76340 L1689563 change_hf_body_state 短語；in 與地名之間遊戲寫了兩個空白
+the entombment of {1} in  {2}	{1}葬入{2}	{1}葬入{2}	inner	FUN_140b76340 L1689563 change_hf_body_state 短語；in 與地名之間遊戲寫了兩個空白
+{1} was denied an apprenticeship under {2} in {3} as the latter prefers to work alone.	{1}在{3}向{2}拜師遭拒，因為對方偏好獨自工作。	{1}在{3}向{2}拜师遭拒，因为对方喜欢独自工作。	inner	FUN_140b76550 L1689632 hf_relationship_denied 完整句（apprenticeship）：原因 0x31，拒絕者本人
+{1} was denied an apprenticeship under {2} in {3} as {4} prefers to work alone.	{1}在{3}向{2}拜師遭拒，因為{4}偏好獨自工作。	{1}在{3}向{2}拜师遭拒，因为{4}喜欢独自工作。	inner	FUN_140b76550 L1689632 hf_relationship_denied 完整句（apprenticeship）：原因 0x31，另一人
+{1} was denied an apprenticeship under {2} in {3} due to {4}'s jealousy.	{1}在{3}向{2}拜師遭拒，因為{4}心生嫉妒。	{1}在{3}向{2}拜师遭拒，因为{4}心生嫉妒。	inner	FUN_140b76550 L1689632 hf_relationship_denied 完整句（apprenticeship）：原因 0x32（'s 黏在連結後）
+{1} was denied an apprenticeship under {2} in {3}.	{1}在{3}向{2}拜師遭拒。	{1}在{3}向{2}拜师遭拒。	inner	FUN_140b76550 L1689632 hf_relationship_denied 完整句（apprenticeship）：沒有原因；{p} 據點、地區、地底層或 the wilds
+the denial of apprenticeship of {1} under {2} in  {3}	{1}在{3}向{2}拜師遭拒	{1}在{3}向{2}拜师遭拒	inner	FUN_140b767c0 L1689698 hf_relationship_denied 短語；in 與地名之間遊戲寫了兩個空白

@@ -86,10 +86,12 @@ fn main() {
         };
         if para {
             let (key, names) = link_tokens(&raw);
+            let named = |t: String| names.iter().enumerate().fold(t, |t, (k, n)| t.replace(&format!("☺{k}☻"), &format!("☺{n}☻")));
             match dict.translate_paragraph(&key) {
-                None => println!("缺："),
-                Some(t) if dict::link_order(&t, names.len()).is_none() => println!("缺：連結名稱漏掉或重複：{t}"),
-                Some(t) => println!("{}", names.iter().enumerate().fold(t, |t, (k, n)| t.replace(&format!("☺{k}☻"), &format!("☺{n}☻")))),
+                (None, _) => println!("缺："),
+                (Some(t), _) if dict::link_order(&t, names.len()).is_none() => println!("缺：連結名稱漏掉或重複：{t}"),
+                (Some(t), false) => println!("缺：有幾段照原文：{}", named(t)),
+                (Some(t), true) => println!("{}", named(t)),
             }
             continue;
         }

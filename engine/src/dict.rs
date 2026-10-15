@@ -168,6 +168,23 @@ fn is_number(piece: &[u8]) -> bool {
     !digits.is_empty() && digits[0].is_ascii_digit() && digits.iter().all(|c| c.is_ascii_digit() || *c == b',')
 }
 
+/// 事件短語結尾的日期（FUN_140b92640）：` in 3`、` in the midsummer of 3`、` in a time before time` 的開頭位置。
+fn date_start(text: &[u8]) -> Option<usize> {
+    if let Some(head) = text.strip_suffix(b" in a time before time") {
+        return Some(head.len());
+    }
+    let digits = text.iter().rev().take_while(|c| c.is_ascii_digit()).count();
+    if digits == 0 {
+        return None;
+    }
+    let head = &text[..text.len() - digits];
+    if let Some(h) = head.strip_suffix(b" in ") {
+        return Some(h.len());
+    }
+    let season = head.strip_suffix(b" of ")?;
+    season.windows(8).rposition(|w| w == b" in the ")
+}
+
 /// 段落框裡可以點的連結（傳說頁面、物品說明的人名、地名、作品名）在原文裡換成記號 `\x01序號\x02`（CP437 的 ☺、☻），
 /// 名字本身不給句型看：名字常含 of、the、and，句型的固定字會切進名字裡。記號和沒有連結的名字一樣翻不出來：
 /// `{n}` 照抄、`{%n}` 不收（收了的話，給片語用的 `{%n}` 會吞下單獨的名字，搶走專寫的句型），排版時再換回遊戲的連結字（見 mtb.rs）。
@@ -367,6 +384,9 @@ pub struct Dict {
     /// 只在某些畫面套用的整句：原文 → [(畫面, 限定列, 譯文)]。同一個英文在不同畫面（或同畫面不同列）意思不同時用（見 screen_entry）。
     pub screens: HashMap<Vec<u8>, Vec<(String, Option<i32>, Entry)>>,
     pub rules: Vec<Rule>,
+    /// 事件的原因、情境片語（字串檔與句型檔 align 寫 `tail`，見 strip_tail）：(原文, 譯文)，長的在前；含名字的放 tail_rules
+    tails: Vec<(Vec<u8>, String)>,
+    tail_rules: Vec<Rule>,
     /// 原文 → 句型規則的結果（None 表示沒有規則命中，也要記住，免得每幀重比）
     cache: Mutex<HashMap<Vec<u8>, Option<Arc<Entry>>>>,
     /// 字 → 字圖編號；字圖 i 的左右半格在 texpos[2i]、texpos[2i+1]。
@@ -453,6 +473,10 @@ impl Dict {
             let (entry, missing) = self.entry(key.len(), zh, align);
             report.missing_glyphs += missing;
             report.loaded += 1;
+            if align == "tail" {
+                self.tails.push((key, entry.text));
+                continue;
+            }
             if align == "inner" {
                 // 句中常把首字大寫的片語寫成小寫（「In the simple passage」對 `The simple passage`）：另存一份小寫的，原樣的條目優先
                 let lower = key.to_ascii_lowercase();
@@ -468,6 +492,7 @@ impl Dict {
                 self.entries.insert(key, entry);
             }
         }
+        self.tails.sort_by_key(|(k, _)| std::cmp::Reverse(k.len()));
         self.rebuild_folded();
         self.comma_keys = self.entries.keys().filter(|k| k.windows(2).any(|w| w == b", ")).cloned().collect();
         report
@@ -551,8 +576,12 @@ impl Dict {
                 .flat_map(|t| t.chars())
                 .filter(|c| cp437::byte_of(*c).is_none() && !self.glyph_of.contains_key(c))
                 .count();
-            self.rules.push(rule);
             report.loaded += 1;
+            if align == "tail" {
+                self.tail_rules.push(rule);
+                continue;
+            }
+            self.rules.push(rule);
             if let Some(alias) = box_form(en).and_then(|f| Rule::parse(&f, zh, align)) {
                 self.rules.push(alias);
             }
@@ -611,15 +640,19 @@ impl Dict {
     }
 
     /// 段落框（mtb）的一整段：先整段查；查不到時在 [B]／[R]／[P] 處分段，每段把單空白句界還原成兩個空白再逐句查
-    /// （和彩色文字框一樣），每段都翻得出來才算。有換色標記的段落只整段查（逐句時顏色對不回去）。
-    pub fn translate_paragraph(&self, key: &[u8]) -> Option<String> {
+    /// （和彩色文字框一樣）。一般段落（提示、說明）每段都翻得出來才算，免得半中半英；有連結的段落（傳說頁）是一筆筆紀錄
+    /// （頁首說明、事件句、相關人物），翻不出來的段照原文。回傳 (譯文, 每段都翻出來了)。
+    /// 有換色標記的段只整段查（逐句時顏色對不回去）；一般段落有標記就整段照英文。
+    pub fn translate_paragraph(&self, key: &[u8]) -> (Option<String>, bool) {
         if let Some(t) = self.translate_text(key) {
-            return Some(t);
+            return (Some(t), true);
         }
-        if key.windows(3).any(|w| w == b"[C:") {
-            return None;
+        let records = key.contains(&LINK_OPEN);
+        let colored = |s: &[u8]| s.windows(3).any(|w| w == b"[C:");
+        if !records && colored(key) {
+            return (None, false);
         }
-        let mut out = String::new();
+        let (mut out, mut any, mut complete) = (String::new(), false, true);
         let mut rest = key;
         loop {
             let mark = [b"[B]", b"[R]", b"[P]"].iter()
@@ -627,20 +660,35 @@ impl Dict {
                 .min_by_key(|&(i, _)| i);
             let body = mark.map_or(rest, |(i, _)| &rest[..i]).trim_ascii();
             if !body.is_empty() {
-                let mut restored = Vec::with_capacity(body.len() + 8);
-                for (k, &c) in body.iter().enumerate() {
-                    restored.push(c);
-                    if is_box_break(body, k) {
-                        restored.push(b' ');
+                let found = if colored(body) {
+                    self.translate_text(body)
+                } else {
+                    let mut restored = Vec::with_capacity(body.len() + 8);
+                    for (k, &c) in body.iter().enumerate() {
+                        restored.push(c);
+                        if is_box_break(body, k) {
+                            restored.push(b' ');
+                        }
                     }
+                    self.translate_sentences(&restored).ok().map(concat)
+                };
+                match found {
+                    Some(t) => {
+                        any = true;
+                        out.push_str(&t);
+                    }
+                    None if records => {
+                        complete = false;
+                        out.push_str(&cp437::decode(body));
+                    }
+                    None => return (None, false),
                 }
-                out.push_str(&concat(self.translate_sentences(&restored).ok()?));
             }
             let Some((i, m)) = mark else { break };
             out.push_str(std::str::from_utf8(m).unwrap_or_default());
             rest = &rest[i + 3..];
         }
-        Some(out)
+        (any.then_some(out), complete)
     }
 
     /// 一個片段的譯文：整句字典（含大寫退回小寫）、遊戲組過的世界生成名稱（見 names.rs），再套句型。
@@ -659,7 +707,7 @@ impl Dict {
         }
         // 先記成翻不出來：佔位抓到整段（`{%1}.` 這類）又遞迴回同一段時就此打住
         memo.insert(key.to_vec(), None);
-        let found = self.apply_rules(key, depth, memo).map(|(p, _, clean)| (p, clean));
+        let found = self.strip_tail(key, depth, memo).or_else(|| self.apply_rules(key, depth, memo).map(|(p, _, clean)| (p, clean)));
         memo.insert(key.to_vec(), found.clone());
         found
     }
@@ -671,47 +719,103 @@ impl Dict {
             key.len() > k.len() && key.ends_with(k) && !key[..key.len() - k.len()].ends_with(b", ")
         });
         for rule in self.rules.iter().filter(|r| depth > 0 || !(r.list || r.inner)).filter(|r| !(r.list && ends_with_comma_entry)) {
-            let mut fits = |kind: Kind, piece: &[u8]| match kind {
-                Kind::Any | Kind::Skip => true,
-                Kind::Number => is_number(piece),
-                Kind::Term => lookup_inner(self, piece).is_some(),
-                Kind::Full => matches!(self.piece(piece, depth + 1, memo), Some((_, true))),
-            };
-            let Some(caps) = rule.matches(key, &mut fits) else { continue };
-            let mut out = Pieces::new();
-            let mut translated = false;
-            let mut all_clean = true;
-            for (p, part) in rule.output.iter().enumerate() {
-                match part {
-                    Out::Text(t) => out.push((t.clone(), literal_at(&rule.output, p, &caps))),
-                    Out::Cap(i, extra) => {
-                        let (start, end) = caps[*i];
-                        let from = out.len();
-                        match self.piece(&key[start..end], depth + 1, memo) {
-                            Some((sub, clean)) => {
-                                translated = true;
-                                all_clean &= clean;
-                                out.extend(sub.into_iter().map(|(t, at)| (t, at + start)));
-                            }
-                            None => {
-                                // 數字照抄也算乾淨（「plump helmets [5]」的 5 不必翻）
-                                all_clean &= rule.pattern.iter().any(|s| matches!(s, Seg::Cap(j, Kind::Number) if j == i));
-                                out.push((cp437::decode(&key[start..end]), start));
-                            }
-                        }
-                        let last = out[from..].iter().rev().find_map(|(t, _)| t.chars().last());
-                        let skip = if extra == COLOR { COLOR } else { PARTICLES };
-                        if !extra.is_empty() && !last.is_some_and(|c| skip.contains(c)) {
-                            out.push((extra.clone(), start));
-                        }
-                    }
-                }
-            }
-            if rule.has_cjk || translated {
-                return Some((out, rule, rule.has_cjk || rule.specific || all_clean));
+            if let Some((out, clean)) = self.try_rule(rule, key, depth, memo) {
+                return Some((out, rule, clean));
             }
         }
         None
+    }
+
+    /// 一條句型套整段 key 的譯文：(片段, 乾淨與否)。樣板沒有中文字、佔位也都照抄英文時不算命中。
+    fn try_rule(&self, rule: &Rule, key: &[u8], depth: usize, memo: &mut Memo) -> Option<Found> {
+        let mut fits = |kind: Kind, piece: &[u8]| match kind {
+            Kind::Any | Kind::Skip => true,
+            Kind::Number => is_number(piece),
+            Kind::Term => lookup_inner(self, piece).is_some(),
+            Kind::Full => matches!(self.piece(piece, depth + 1, memo), Some((_, true))),
+        };
+        let caps = rule.matches(key, &mut fits)?;
+        let mut out = Pieces::new();
+        let mut translated = false;
+        let mut all_clean = true;
+        for (p, part) in rule.output.iter().enumerate() {
+            match part {
+                Out::Text(t) => out.push((t.clone(), literal_at(&rule.output, p, &caps))),
+                Out::Cap(i, extra) => {
+                    let (start, end) = caps[*i];
+                    let from = out.len();
+                    match self.piece(&key[start..end], depth + 1, memo) {
+                        Some((sub, clean)) => {
+                            translated = true;
+                            all_clean &= clean;
+                            out.extend(sub.into_iter().map(|(t, at)| (t, at + start)));
+                        }
+                        None => {
+                            // 數字照抄也算乾淨（「plump helmets [5]」的 5 不必翻）
+                            all_clean &= rule.pattern.iter().any(|s| matches!(s, Seg::Cap(j, Kind::Number) if j == i));
+                            out.push((cp437::decode(&key[start..end]), start));
+                        }
+                    }
+                    let last = out[from..].iter().rev().find_map(|(t, _)| t.chars().last());
+                    let skip = if extra == COLOR { COLOR } else { PARTICLES };
+                    if !extra.is_empty() && !last.is_some_and(|c| skip.contains(c)) {
+                        out.push((extra.clone(), start));
+                    }
+                }
+            }
+        }
+        (rule.has_cjk || translated).then_some((out, rule.has_cjk || rule.specific || all_clean))
+    }
+
+    /// 事件的原因、情境（tails）：遊戲接在事件句尾、句號前的片語（FUN_140b5a6c0：for an insurrection、in order to sanctify X，
+    /// 最多兩段）；短語（`the departure of X for an insurrection in 3`）裡接在結尾的日期前面。這種片語先去掉、其餘照常翻，
+    /// 譯文最後（句號前）補「，片語」；其餘翻不出來就照一般句型。
+    /// 先於句型比對：句型最後一個任意佔位（`{1} departed to {2}.` 的 {2}）會把片語整段吞進去照抄英文。
+    /// ponytail: 只認結尾；片語夾在句中（item_stolen 的「by X 原因 and brought to Y」）照一般句型
+    fn strip_tail(&self, key: &[u8], depth: usize, memo: &mut Memo) -> Option<Found> {
+        let body = key.strip_suffix(b".").unwrap_or(key);
+        let date = date_start(body);
+        // 句子以日期結尾（The artwork relates to … in 3.）：日期屬於裡面的短語，片語也是，交給短語那一層
+        if date.is_some() && body.len() < key.len() {
+            return None;
+        }
+        let end = date.unwrap_or(body.len());
+        let head = &body[..end];
+        for (tail, zh) in &self.tails {
+            let Some(start) = head.len().checked_sub(tail.len() + 1) else { continue };
+            if start > 0 && head[start] == b' ' && head.ends_with(tail) {
+                if let Some(found) = self.with_tail(key, start, end, vec![(zh.clone(), start + 1)], depth, memo) {
+                    return Some(found);
+                }
+            }
+        }
+        for rule in &self.tail_rules {
+            for start in (1..head.len()).filter(|&i| head[i] == b' ' && head[i + 1..].starts_with(&rule.prefix)) {
+                let Some((tail, _)) = self.try_rule(rule, &head[start + 1..], depth, memo) else { continue };
+                let tail = tail.into_iter().map(|(t, at)| (t, at + start + 1)).collect();
+                if let Some(found) = self.with_tail(key, start, end, tail, depth, memo) {
+                    return Some(found);
+                }
+            }
+        }
+        None
+    }
+
+    /// key 去掉 start..end 的片語（日期與句號留著）翻好之後，接上「，」與片語譯文；譯文以「。」結尾時接在「。」前面。
+    fn with_tail(&self, key: &[u8], start: usize, end: usize, tail: Pieces, depth: usize, memo: &mut Memo) -> Option<Found> {
+        let rest = [&key[..start], &key[end..]].concat();
+        let (mut out, clean) = self.piece(&rest, depth, memo)?;
+        let mut stop = false;
+        if let Some((t, _)) = out.last_mut().filter(|(t, _)| key.ends_with(b".") && t.ends_with('。')) {
+            t.pop();
+            stop = true;
+        }
+        out.push(("，".to_owned(), start));
+        out.extend(tail);
+        if stop {
+            out.push(("。".to_owned(), key.len() - 1));
+        }
+        Some((out, clean))
     }
 
     /// hook 用：整句字典沒有時，先試首字小寫的名稱、遊戲組過的世界生成名稱，再套句型規則並換算成替身字串。
@@ -1074,9 +1178,13 @@ mod tests {
     fn box_paragraphs_fall_back_to_blocks_and_sentences() {
         let mut d = dict("{1} is visiting.\t{1}來訪了。\n");
         d.load_tsv("Labor ends.\t勞動結束。\n");
-        assert_eq!(d.translate_paragraph(b"Labor ends. Urist is visiting. [B] Labor ends.").as_deref(), Some("勞動結束。Urist來訪了。[B]勞動結束。"),
+        let para = |s: &[u8]| d.translate_paragraph(s);
+        assert_eq!(para(b"Labor ends. Urist is visiting. [B] Labor ends."), (Some("勞動結束。Urist來訪了。[B]勞動結束。".to_owned()), true),
                    "段落框的單空白句界還原後逐句查，[B] 照原樣接回");
-        assert_eq!(d.translate_paragraph(b"Labor ends. Urist is visiting. [B] Nobody knows."), None, "缺一句就整段照英文");
+        assert_eq!(para(b"Labor ends. Urist is visiting. [B] Nobody knows."), (None, false), "缺一句就整段照英文");
+        assert_eq!(para(b"\x010\x02 is a hydra. [B] \x010\x02 is visiting. [B] [C:3:0:1]Related [B] Labor ends."),
+                   (Some("☺0☻ is a hydra.[B]☺0☻來訪了。[B][C:3:0:1]Related[B]勞動結束。".to_owned()), false),
+                   "有連結的段落（傳說頁）是一筆筆紀錄：翻不出來的段照原文，其餘照翻");
     }
 
     #[test]
@@ -1112,7 +1220,7 @@ mod tests {
         assert_eq!(d.translate_text(b"Histories of \x010\x02"), None, "{{%n}} 不收單獨的連結，和沒有連結的名字一樣");
         assert_eq!(d.translate_text(b"In 1, \x010\x02 settled in \x011\x02.").as_deref(), Some("1年，☺0☻定居於☺1☻。"),
                    "給片語的 {{%3}} 不能吞下單獨的名字，搶走後面專寫的句型");
-        assert_eq!(d.translate_paragraph(b"Labor ends. \x010\x02 is visiting.").as_deref(), Some("勞動結束。☺0☻來訪了。"),
+        assert_eq!(d.translate_paragraph(b"Labor ends. \x010\x02 is visiting.").0.as_deref(), Some("勞動結束。☺0☻來訪了。"),
                    "連結開頭的句子是新句，{{1}} 不能吞進前一句");
         assert_eq!(link_order("☺1☻與☺0☻", 2), Some(vec![1, 0]));
         assert_eq!(link_order("☺0☻與☺0☻", 2), None, "重複");
@@ -1123,11 +1231,31 @@ mod tests {
     fn quotes_end_sentences_but_text_inside_them_stays_whole() {
         let mut d = dict("It asks, \"{1}\"\t問道：「{1}」\nThe slab reads \"{1}\".\t石板上寫著：「{1}」。\n");
         d.load_tsv("Labor ends.\t勞動結束。\n");
-        assert_eq!(d.translate_paragraph(b"It asks, \"Why?\" Labor ends.").as_deref(), Some("問道：「Why?」勞動結束。"),
+        assert_eq!(d.translate_paragraph(b"It asks, \"Why?\" Labor ends.").0.as_deref(), Some("問道：「Why?」勞動結束。"),
                    "段落框裡 ?\" 後面一個空白接大寫字母也是句界");
         assert_eq!(d.translate_sentences(b"The slab reads \"I am Urist.  By Labor, I bind.\".  Labor ends.").map(concat).as_deref(),
                    Ok("石板上寫著：「I am Urist.  By Labor, I bind.」。勞動結束。"), "引號裡的句子不切開");
-        assert_eq!(d.translate_paragraph(b"The slab reads \"I am Urist. By Labor, I bind.\". Labor ends.").as_deref(),
+        assert_eq!(d.translate_paragraph(b"The slab reads \"I am Urist. By Labor, I bind.\". Labor ends.").0.as_deref(),
                    Some("石板上寫著：「I am Urist. By Labor, I bind.」。勞動結束。"), "段落框也一樣");
+    }
+
+    #[test]
+    fn event_tails_are_translated_apart_and_put_before_the_period() {
+        let mut d = dict("{%1} in {#2}\t{2}年{1}\tinner\n{1} departed to {2}.\t{1}前往{2}。\nthe departure of {1}\t{1}的離去\tinner\n\
+                          The artwork relates to {%1}.\t這與{1}有關。\nin order to sanctify {1}\t為了將{1}奉為聖物\ttail\n\
+                          after the death of {1}\t在{1}死後\ttail\n");
+        d.load_tsv("after being exiled\t在遭放逐之後\ttail\nfor an insurrection\t為了叛亂\ttail\nexiled\t放逐\ttail\n");
+        let zh = |s: &[u8]| d.translate_text(s);
+        assert_eq!(zh(b"Urist departed to Boatmurdered after being exiled.").as_deref(), Some("Urist前往Boatmurdered，在遭放逐之後。"),
+                   "{{2}} 不能把句尾的原因吞進去照抄英文；長的片語先比（不是只去掉 exiled）");
+        assert_eq!(zh(b"Urist departed to Boatmurdered for an insurrection after being exiled.").as_deref(),
+                   Some("Urist前往Boatmurdered，為了叛亂，在遭放逐之後。"), "原因＋情境兩段");
+        assert_eq!(zh(b"Urist departed to Boatmurdered in order to sanctify \x010\x02.").as_deref(),
+                   Some("Urist前往Boatmurdered，為了將☺0☻奉為聖物。"), "含名字的片語");
+        assert_eq!(zh(b"The artwork relates to the departure of Urist for an insurrection in 3.").as_deref(),
+                   Some("這與3年Urist的離去，為了叛亂有關。"), "短語（結尾是日期）裡的片語跟著短語");
+        assert_eq!(zh(b"The artwork relates to the departure of Urist after the death of Bob in 3.").as_deref(),
+                   Some("這與3年Urist的離去，在Bob死後有關。"), "含名字的片語不能在外層把短語的日期吞進 {{1}}");
+        assert_eq!(zh(b"Urist sang for an insurrection."), None, "其餘翻不出來就不算");
     }
 }

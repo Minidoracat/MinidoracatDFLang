@@ -1,0 +1,43 @@
+en	zh-Hant	zh-Hans	align	note
+an insurrection mission	起義任務	起义任务	inner	協議種類：agreement_concluded 完整句 FUN_140b81f00 1696325、短語 FUN_140b82a20 1696701
+an adventure	冒險	冒险	inner	協議種類（同上）
+a guide agreement	嚮導協議	向导协议	inner	協議種類（同上）
+a journey to safety	避難之旅	避难之旅	inner	協議種類（同上）
+a rescue mission	救援任務	救援任务	inner	協議種類（同上）
+bound service	契約勞役	契约劳役	inner	協議種類（同上）
+a performance tour	巡迴演出	巡回演出	inner	協議種類（同上）
+a residency agreement	居留協議	居留协议	inner	協議種類（同上）
+a citizenship agreement	入籍協議	入籍协议	inner	協議種類（同上）
+a parley	談判	谈判	inner	協議種類（同上）
+corrupt dealing	不法交易	不法交易	inner	協議種類（完整句 1696356 單數）
+corrupt dealings	不法交易	不法交易	inner	協議種類（短語 1696732 複數）
+a theft deal	竊盜交易	盗窃交易	inner	協議種類（同上）
+a promise of position	職位承諾	职位承诺	inner	協議種類（同上）
+an assassination plot	暗殺陰謀	暗杀阴谋	inner	協議種類（同上）
+an abduction plot	綁架陰謀	绑架阴谋	inner	協議種類（同上）
+a sabotage plot	破壞陰謀	破坏阴谋	inner	協議種類（同上）
+a foiled bribery conspiracy	敗露的賄賂陰謀	败露的贿赂阴谋	inner	協議種類（同上）
+a foiled corruption conspiracy	敗露的貪腐陰謀	败露的贪腐阴谋	inner	協議種類（同上）
+a foiled embezzlement conspiracy	敗露的侵占公款陰謀	败露的挪用公款阴谋	inner	協議種類（同上）
+an agreement to establish a temple	建立神殿的協議	建立神殿的协议	inner	協議種類（同上）
+an agreement to establish a guildhall	建立公會大廳的協議	建立公会大厅的协议	inner	協議種類（同上）
+an infiltration plot	滲透陰謀	渗透阴谋	inner	協議種類（同上）
+a framing plot	栽贓陰謀	栽赃阴谋	inner	協議種類（同上）
+a war starting plot	挑起戰爭的陰謀	挑起战争的阴谋	inner	協議種類（同上）
+a request to offer service	效力請求	效力请求	inner	協議種類（同上，沒有對象勢力）
+an agreement	協議	协议	inner	找不到協議時（同上 1696433／1696808）
+on a whim	一時興起	一时兴起	inner	協議結束原因（FUN_140b81f00 1696484、FUN_140b82a20 1696819），接在「…，」後或主詞後
+because the group travelled too slowly	因為隊伍行進太慢	因为队伍行进太慢	inner	協議結束原因（同上）
+because the group went too far away	因為隊伍走得太遠	因为队伍走得太远	inner	協議結束原因（同上）
+after arriving at the destination	在抵達目的地之後	在抵达目的地之后	inner	協議結束原因（同上）
+because of a leadership change at the site	因為據點的領導層更迭	因为据点的领导层更迭	inner	協議結束原因（同上）
+after a joyous reunion	在歡喜團聚之後	在欢喜团聚之后	inner	協議結束原因（同上）
+after a violent disagreement	在激烈爭執之後	在激烈争执之后	inner	協議結束原因（同上）
+after an adoption	在收養之後	在收养之后	inner	協議結束原因（同上）
+due to a lack of performances	因為缺少演出	因为缺少演出	inner	協議結束原因（同上）
+territory	領土	领土	inner	site_dispute 爭議對象（FUN_140b83300 1696967、FUN_140b834b0 1697023）
+water rights	水權	水权	inner	爭議對象（同上）
+grazing rights	放牧權	放牧权	inner	爭議對象（同上）
+fishing rights	捕魚權	捕鱼权	inner	爭議對象（同上）
+rights-of-way	通行權	通行权	inner	爭議對象（同上）
+livestock ownership	牲畜所有權	牲畜所有权	inner	爭議對象（同上）

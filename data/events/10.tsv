@@ -1,0 +1,179 @@
+en	zh-Hant	zh-Hans	align	note
+{1} aroused general suspicion in {2} after a murder.	{1}在{2}因一起謀殺案而引起眾人懷疑。	{1}在{2}因一起谋杀案而引起众人怀疑。	inner	FUN_140b76980 1689783 hf_confronted 理由含 a murder：寫成整條，不另設 inner 字串 a murder（會讓 plots_01 的 {1} attempted {@2}. 搶走說話句的 attempted a murder）
+{1} aroused general suspicion in {2} after a murder and appearing not to age.	{1}在{2}因一起謀殺案和外貌不老而引起眾人懷疑。	{1}在{2}因一起谋杀案和外貌不老而引起众人怀疑。	inner	FUN_140b76980 1689783 hf_confronted 理由含 a murder：寫成整條，不另設 inner 字串 a murder（會讓 plots_01 的 {1} attempted {@2}. 搶走說話句的 attempted a murder）
+{1} aroused general suspicion in {2} after appearing not to age and a murder.	{1}在{2}因外貌不老和一起謀殺案而引起眾人懷疑。	{1}在{2}因外貌不老和一起谋杀案而引起众人怀疑。	inner	FUN_140b76980 1689783 hf_confronted 理由含 a murder：寫成整條，不另設 inner 字串 a murder（會讓 plots_01 的 {1} attempted {@2}. 搶走說話句的 attempted a murder）
+the general suspicion of {1} in  {2} after a murder	{1}在{2}因一起謀殺案而引起的懷疑	{1}在{2}因一起谋杀案而引起的怀疑	inner	FUN_140b76ba0 1689817 hf_confronted 短語 理由含 a murder：寫成整條，不另設 inner 字串 a murder（會讓 plots_01 的 {1} attempted {@2}. 搶走說話句的 attempted a murder）
+the general suspicion of {1} in  {2} after a murder and appearing not to age	{1}在{2}因一起謀殺案和外貌不老而引起的懷疑	{1}在{2}因一起谋杀案和外貌不老而引起的怀疑	inner	FUN_140b76ba0 1689817 hf_confronted 短語 理由含 a murder：寫成整條，不另設 inner 字串 a murder（會讓 plots_01 的 {1} attempted {@2}. 搶走說話句的 attempted a murder）
+the general suspicion of {1} in  {2} after appearing not to age and a murder	{1}在{2}因外貌不老和一起謀殺案而引起的懷疑	{1}在{2}因外貌不老和一起谋杀案而引起的怀疑	inner	FUN_140b76ba0 1689817 hf_confronted 短語 理由含 a murder：寫成整條，不另設 inner 字串 a murder（會讓 plots_01 的 {1} attempted {@2}. 搶走說話句的 attempted a murder）
+{1} aroused general suspicion in {2} after {%3}.	{1}在{2}因{3}而引起眾人懷疑。	{1}在{2}因{3}而引起众人怀疑。	inner	FUN_140b76980 1689740 hf_confronted；{3} 理由清單（strings）
+{1} aroused general suspicion in {2}.	{1}在{2}引起眾人懷疑。	{1}在{2}引起众人怀疑。	inner	FUN_140b76980 1689740 hf_confronted
+the general suspicion of {1} in  {2} after {%3}	{1}在{2}因{3}而引起的懷疑	{1}在{2}因{3}而引起的怀疑	inner	FUN_140b76ba0 1689817 hf_confronted 短語；in 後原文雙空白
+the general suspicion of {1} in  {2}	{1}在{2}引起的懷疑	{1}在{2}引起的怀疑	inner	FUN_140b76ba0 1689817 hf_confronted 短語；in 後原文雙空白
+{1} was taken by a fey mood in {2}.	{1}在{2}陷入了癡迷心境。	{1}在{2}陷入了痴迷心境。	inner	FUN_140b76dc0 1689890 change_hf_mood；{2} 據點／地區／地底層／the wilds
+{1} withdrew from society in {2}.	{1}在{2}開始離群索居。	{1}在{2}开始离群索居。	inner	FUN_140b76dc0 1689890 change_hf_mood；{2} 據點／地區／地底層／the wilds
+{1} was possessed in {2}.	{1}在{2}被附身了。	{1}在{2}被附身了。	inner	FUN_140b76dc0 1689890 change_hf_mood；{2} 據點／地區／地底層／the wilds
+{1} began to skulk and brood in {2}.	{1}在{2}開始鬼祟徘徊、陰鬱沉思。	{1}在{2}开始鬼祟徘徊、阴郁沉思。	inner	FUN_140b76dc0 1689890 change_hf_mood；{2} 據點／地區／地底層／the wilds
+{1} was taken by a fell mood in {2}.	{1}在{2}陷入了凶邪心境。	{1}在{2}陷入了凶邪心境。	inner	FUN_140b76dc0 1689890 change_hf_mood；{2} 據點／地區／地底層／the wilds
+{1} was striken by melancholy in {2}.	{1}在{2}陷入了憂鬱。	{1}在{2}陷入了忧郁。	inner	FUN_140b76dc0 1689890 change_hf_mood；{2} 據點／地區／地底層／the wilds
+{1} became crazed in {2}.	{1}在{2}發了瘋。	{1}在{2}发了疯。	inner	FUN_140b76dc0 1689890 change_hf_mood；{2} 據點／地區／地底層／the wilds
+{1} went berserk in {2}.	{1}在{2}陷入狂暴。	{1}在{2}陷入狂暴。	inner	FUN_140b76dc0 1689890 change_hf_mood；{2} 據點／地區／地底層／the wilds
+{1} stopped responding to the outside world in {2}.	{1}在{2}對外界不再有任何反應。	{1}在{2}对外界不再有任何反应。	inner	FUN_140b76dc0 1689890 change_hf_mood；{2} 據點／地區／地底層／the wilds
+the fey mood of {1} in {2}	{1}在{2}的癡迷心境	{1}在{2}的痴迷心境	inner	FUN_140b76fe0 1689970 change_hf_mood 短語
+the withdrawal from society of {1} in {2}	{1}在{2}離群索居	{1}在{2}离群索居	inner	FUN_140b76fe0 1689970 change_hf_mood 短語
+the possession of {1} in {2}	{1}在{2}被附身	{1}在{2}被附身	inner	FUN_140b76fe0 1689970 change_hf_mood 短語
+the dark brooding of {1} in {2}	{1}在{2}的陰鬱沉思	{1}在{2}的阴郁沉思	inner	FUN_140b76fe0 1689970 change_hf_mood 短語
+the fell mood of {1} in {2}	{1}在{2}的凶邪心境	{1}在{2}的凶邪心境	inner	FUN_140b76fe0 1689970 change_hf_mood 短語
+the melancholy of {1} in {2}	{1}在{2}的憂鬱	{1}在{2}的忧郁	inner	FUN_140b76fe0 1689970 change_hf_mood 短語
+the insanity of {1} in {2}	{1}在{2}的瘋狂	{1}在{2}的疯狂	inner	FUN_140b76fe0 1689970 change_hf_mood 短語
+the rampage of {1} in {2}	{1}在{2}的狂暴	{1}在{2}的狂暴	inner	FUN_140b76fe0 1689970 change_hf_mood 短語
+the catatonia {1} in {2}	{1}在{2}的僵直	{1}在{2}的僵直	inner	FUN_140b76fe0 1689970 change_hf_mood 短語（原文缺 of，照抄）
+{1} departed to the area around {2}.	{1}前往{2}一帶。	{1}前往{2}一带。	inner	FUN_140b771d0 1690048 change_hf_state
+{1} departed to {2}.	{1}前往{2}。	{1}前往{2}。	inner	FUN_140b771d0 1690048 change_hf_state
+{1} began wandering the area around {2}.	{1}開始在{2}一帶遊蕩。	{1}开始在{2}一带游荡。	inner	FUN_140b771d0 1690048 change_hf_state
+{1} began wandering {2}.	{1}開始在{2}遊蕩。	{1}开始在{2}游荡。	inner	FUN_140b771d0 1690048 change_hf_state
+{1} settled in {2}.	{1}定居於{2}。	{1}定居于{2}。	inner	FUN_140b771d0 1690048 change_hf_state
+merchants from {1} visited {2} at {3} and suffered great hardships.	{1}的商人前往{3}拜訪{2}，途中歷經千辛萬苦。	{1}的商人前往{3}拜访{2}，途中历尽千辛万苦。	inner	history_event_merchantst 完整句 FUN_140b875d0 L1699419：子句（商人來訪）（Events16 寫的；搬到這裡排在 `{1} visited {2}.` 前）
+merchants from {1} visited {2} at {3} and were never heard from again.	{1}的商人前往{3}拜訪{2}，此後音訊全無。	{1}的商人前往{3}拜访{2}，此后音讯全无。	inner	history_event_merchantst 完整句 FUN_140b875d0 L1699419：子句（商人來訪）（Events16 寫的；搬到這裡排在 `{1} visited {2}.` 前）
+merchants from {1} visited {2} at {3}.	{1}的商人前往{3}拜訪{2}。	{1}的商人前往{3}拜访{2}。	inner	history_event_merchantst 完整句 FUN_140b875d0 L1699419：子句（商人來訪）（Events16 寫的；搬到這裡排在 `{1} visited {2}.` 前）
+{1} visited {2}.	{1}造訪了{2}。	{1}造访了{2}。	inner	FUN_140b771d0 1690048 change_hf_state
+the flight of {1} into the area around {2}	{1}逃入{2}一帶	{1}逃入{2}一带	inner	FUN_140b77430 1690149 change_hf_state 短語
+the flight of {1} into {2}	{1}逃入{2}	{1}逃入{2}	inner	FUN_140b77430 1690149 change_hf_state 短語
+the flight of {1} to {2}	{1}逃往{2}	{1}逃往{2}	inner	FUN_140b77430 1690149 change_hf_state 短語
+the studies of {1} around {2}	{1}在{2}一帶求學	{1}在{2}一带求学	inner	FUN_140b77430 1690149 change_hf_state 短語
+the studies of {1} in {2}	{1}在{2}求學	{1}在{2}求学	inner	FUN_140b77430 1690149 change_hf_state 短語
+the exile of {1} to {2}	{1}被流放到{2}	{1}被流放到{2}	inner	FUN_140b77430 1690149 change_hf_state 短語
+the settling of {1} in {2}	{1}定居於{2}	{1}定居于{2}	inner	FUN_140b77430 1690149 change_hf_state 短語
+the visit of merchants from {1} to {2} at {3}	{1}在{3}對{2}的商人造訪	{1}在{3}对{2}的商人造访	inner	history_event_merchantst 短語 FUN_140b877e0 L1699487（Events16 寫的，排在 change_hf_state 的 the visit of {1} to {2} 前面）
+the visit of {1} to {2}	{1}造訪{2}	{1}造访{2}	inner	FUN_140b77430 1690149 change_hf_state 短語
+{1} was born to {2}.	{1}由{2}所生。	{1}由{2}所生。	inner	FUN_140b77720 1690290 add_hf_hf_link
+{1} was sired by {2}.	{1}的父親是{2}。	{1}的父亲是{2}。	inner	FUN_140b77720 1690290 add_hf_hf_link
+{1} sired {2}.	{1}成為{2}的父親。	{1}成为{2}的父亲。	inner	FUN_140b77720 1690290 add_hf_hf_link
+{1} gave birth to {2}.	{1}生下了{2}。	{1}生下了{2}。	inner	FUN_140b77720 1690290 add_hf_hf_link
+{1} married {2}.	{1}與{2}結婚。	{1}与{2}结婚。	inner	FUN_140b77720 1690290 add_hf_hf_link
+{1} became the parent of {2}.	{1}成為{2}的父母。	{1}成为{2}的父母。	inner	FUN_140b77720 1690290 add_hf_hf_link
+{1} began worshipping {2}.	{1}開始崇拜{2}。	{1}开始崇拜{2}。	inner	FUN_140b77720 1690290 add_hf_hf_link
+{1} received the worship of {2}.	{1}受到{2}的崇拜。	{1}受到{2}的崇拜。	inner	FUN_140b77720 1690290 add_hf_hf_link
+{1} became romantically involved with {2}.	{1}與{2}墜入愛河。	{1}与{2}坠入爱河。	inner	FUN_140b77720 1690290 add_hf_hf_link
+{1} was imprisoned by {2}.	{1}被{2}囚禁。	{1}被{2}囚禁。	inner	FUN_140b77720 1690290 add_hf_hf_link
+{1} began an apprenticeship under {2}.	{1}拜{2}為師。	{1}拜{2}为师。	inner	FUN_140b77720 1690290 add_hf_hf_link
+{1} became the master of {2}.	{1}收{2}為徒。	{1}收{2}为徒。	inner	FUN_140b77720 1690290 add_hf_hf_link
+{1} began traveling with {2}.	{1}開始與{2}結伴同行。	{1}开始与{2}结伴同行。	inner	FUN_140b77720 1690290 add_hf_hf_link
+{1} ceased being the apprentice of {2}.	{1}不再是{2}的學徒。	{1}不再是{2}的学徒。	inner	FUN_140b77720 1690290 add_hf_hf_link
+{1} ceased being the master of {2}.	{1}不再是{2}的師父。	{1}不再是{2}的师父。	inner	FUN_140b77720 1690290 add_hf_hf_link
+{1} became the pet of {2}.	{1}成為{2}的寵物。	{1}成为{2}的宠物。	inner	FUN_140b77720 1690290 add_hf_hf_link
+{1} became the owner of {2}.	{1}成為{2}的主人。	{1}成为{2}的主人。	inner	FUN_140b77720 1690290 add_hf_hf_link
+{1} became the former spouse of {2}.	{1}成為{2}的前配偶。	{1}成为{2}的前配偶。	inner	FUN_140b77720 1690290 add_hf_hf_link
+{1} became the spouse of the deceased  {2}.	{1}成為已故的{2}的配偶。	{1}成为已故的{2}的配偶。	inner	FUN_140b77720 1690290 add_hf_hf_link（原文 deceased 後雙空白）
+{1} became the deceased spouse of {2}.	{1}成為{2}已故的配偶。	{1}成为{2}已故的配偶。	inner	FUN_140b77720 1690290 add_hf_hf_link
+{1} stopped being the child of {2}.	{1}不再是{2}的孩子。	{1}不再是{2}的孩子。	inner	FUN_140b77b30 1690460 remove_hf_hf_link
+{1} stopped being the parent of {2}.	{1}不再是{2}的父母。	{1}不再是{2}的父母。	inner	FUN_140b77b30 1690460 remove_hf_hf_link
+{1} stopped being the mother of {2}.	{1}不再是{2}的母親。	{1}不再是{2}的母亲。	inner	FUN_140b77b30 1690460 remove_hf_hf_link
+{1} stopped being the father of {2}.	{1}不再是{2}的父親。	{1}不再是{2}的父亲。	inner	FUN_140b77b30 1690460 remove_hf_hf_link
+{1} divorced {2}.	{1}與{2}離婚。	{1}与{2}离婚。	inner	FUN_140b77b30 1690460 remove_hf_hf_link
+{1} lost faith in {2}.	{1}對{2}失去了信仰。	{1}对{2}失去了信仰。	inner	FUN_140b77b30 1690460 remove_hf_hf_link
+{1} lost the worship of {2}.	{1}失去了{2}的崇拜。	{1}失去了{2}的崇拜。	inner	FUN_140b77b30 1690460 remove_hf_hf_link
+{1} ended the romantic relationship with {2}.	{1}與{2}結束了戀情。	{1}与{2}结束了恋情。	inner	FUN_140b77b30 1690460 remove_hf_hf_link
+{1} was no longer imprisoned by {2}.	{1}不再被{2}囚禁。	{1}不再被{2}囚禁。	inner	FUN_140b77b30 1690460 remove_hf_hf_link
+{1} stopped being the apprentice of {2}.	{1}不再是{2}的學徒。	{1}不再是{2}的学徒。	inner	FUN_140b77b30 1690460 remove_hf_hf_link
+{1} stopped being the master of {2}.	{1}不再是{2}的師父。	{1}不再是{2}的师父。	inner	FUN_140b77b30 1690460 remove_hf_hf_link
+{1} stopped traveling with {2}.	{1}不再與{2}同行。	{1}不再与{2}同行。	inner	FUN_140b77b30 1690460 remove_hf_hf_link
+{1} stopped being the pet of {2}.	{1}不再是{2}的寵物。	{1}不再是{2}的宠物。	inner	FUN_140b77b30 1690460 remove_hf_hf_link
+{1} stopped being the owner of {2}.	{1}不再是{2}的主人。	{1}不再是{2}的主人。	inner	FUN_140b77b30 1690460 remove_hf_hf_link
+the status of {1} as the child of {2}	{1}身為{2}子女的身分	{1}作为{2}子女的身份	inner	FUN_140b7f4a0 1694721 add_hf_hf_link 短語
+the status of {1} as the parent of {2}	{1}身為{2}父母的身分	{1}作为{2}父母的身份	inner	FUN_140b7f4a0 1694721 add_hf_hf_link 短語
+the status of {1} as the owner of {2}	{1}身為{2}主人的身分	{1}作为{2}主人的身份	inner	FUN_140b7f4a0 1694721 add_hf_hf_link 短語
+the marriage of {1} and {2}	{1}與{2}的婚姻	{1}与{2}的婚姻	inner	FUN_140b7f4a0 1694721 add_hf_hf_link 短語
+the belief of {1} in {2}	{1}對{2}的信仰	{1}对{2}的信仰	inner	FUN_140b7f4a0 1694721 add_hf_hf_link 短語
+the romantic relationship between {1} and {2}	{1}與{2}的戀情	{1}与{2}的恋情	inner	FUN_140b7f4a0 1694721 add_hf_hf_link 短語
+the imprisonment by {1} of {2}	{1}對{2}的囚禁	{1}对{2}的囚禁	inner	FUN_140b7f4a0 1694721 add_hf_hf_link 短語
+the imprisonment of {1} by {2}	{1}遭{2}囚禁	{1}遭{2}囚禁	inner	FUN_140b7f4a0 1694721 add_hf_hf_link 短語
+the former apprenticeship of {1} under {2}	{1}過去在{2}門下的學徒生涯	{1}过去在{2}门下的学徒生涯	inner	FUN_140b7f4a0 1694721 add_hf_hf_link 短語
+the former master-apprentice relationship of {1} over {2}	{1}與{2}過去的師徒關係	{1}与{2}过去的师徒关系	inner	FUN_140b7f4a0 1694721 add_hf_hf_link 短語
+the apprenticeship of {1} under {2}	{1}在{2}門下的學徒生涯	{1}在{2}门下的学徒生涯	inner	FUN_140b7f4a0 1694721 add_hf_hf_link 短語；remove 短語 0xb／0xc 共用
+the master-apprentice relationship of {1} over {2}	{1}與{2}的師徒關係	{1}与{2}的师徒关系	inner	FUN_140b7f4a0 1694721 add_hf_hf_link 短語；remove 短語 0xb／0xc 共用
+the companionship of {1} and {2}	{1}與{2}的結伴同行	{1}与{2}的结伴同行	inner	FUN_140b7f4a0 1694721 add_hf_hf_link 短語
+the termination of {1} as the child of {2}	{1}不再是{2}的子女	{1}不再是{2}的子女	inner	FUN_140b7f770 1694840 remove_hf_hf_link 短語
+the termination of {1} as the parent of {2}	{1}不再是{2}的父母	{1}不再是{2}的父母	inner	FUN_140b7f770 1694840 remove_hf_hf_link 短語
+the termination of {1} as the pet of {2}	{1}不再是{2}的寵物	{1}不再是{2}的宠物	inner	FUN_140b7f770 1694840 remove_hf_hf_link 短語
+the divorce of {1} and {2}	{1}與{2}的離婚	{1}与{2}的离婚	inner	FUN_140b7f770 1694840 remove_hf_hf_link 短語
+the loss of faith of {1} in {2}	{1}對{2}失去信仰	{1}对{2}失去信仰	inner	FUN_140b7f770 1694840 remove_hf_hf_link 短語
+the end of the romantic relationship between {1} and {2}	{1}與{2}戀情的結束	{1}与{2}恋情的结束	inner	FUN_140b7f770 1694840 remove_hf_hf_link 短語
+the end of the imprisonment by {1} of {2}	{1}對{2}囚禁的結束	{1}对{2}囚禁的结束	inner	FUN_140b7f770 1694840 remove_hf_hf_link 短語
+the end of the imprisonment of {1} by {2}	{1}遭{2}囚禁的結束	{1}遭{2}囚禁的结束	inner	FUN_140b7f770 1694840 remove_hf_hf_link 短語
+the end of the apprenticeship of {1} under {2}	{1}在{2}門下學徒生涯的結束	{1}在{2}门下学徒生涯的结束	inner	FUN_140b7f770 1694840 remove_hf_hf_link 短語
+the end of the master-apprentice of {1} over {2}	{1}與{2}師徒關係的結束	{1}与{2}师徒关系的结束	inner	FUN_140b7f770 1694840 remove_hf_hf_link 短語
+the end of the companionship of {1} and {2}	{1}與{2}結伴同行的結束	{1}与{2}结伴同行的结束	inner	FUN_140b7f770 1694840 remove_hf_hf_link 短語
+{1} started working at {2} of {3} in {4}.	{1}開始在{4}屬於{3}的{2}工作。	{1}开始在{4}属于{3}的{2}工作。	inner	FUN_140b77ed0 1690610 add_hf_site_link；{2} 建築（連結，或 a temple 這類），of 後是建築所屬的團體，最後是據點
+{1} started working at {2} in {3}.	{1}開始在{3}的{2}工作。	{1}开始在{3}的{2}工作。	inner	FUN_140b77ed0 1690610 add_hf_site_link；{2} 建築（連結，或 a temple 這類），of 後是建築所屬的團體，最後是據點
+{1} ruled from {2} of {3} in {4}.	{1}以{4}屬於{3}的{2}為統治中樞。	{1}以{4}属于{3}的{2}为统治中枢。	inner	FUN_140b77ed0 1690610 add_hf_site_link；{2} 建築（連結，或 a temple 這類），of 後是建築所屬的團體，最後是據點
+{1} ruled from {2} in {3}.	{1}以{3}的{2}為統治中樞。	{1}以{3}的{2}为统治中枢。	inner	FUN_140b77ed0 1690610 add_hf_site_link；{2} 建築（連結，或 a temple 這類），of 後是建築所屬的團體，最後是據點
+{1} started hanging out at {2} of {3} in {4}.	{1}開始常去{4}屬於{3}的{2}。	{1}开始常去{4}属于{3}的{2}。	inner	FUN_140b77ed0 1690610 add_hf_site_link；{2} 建築（連結，或 a temple 這類），of 後是建築所屬的團體，最後是據點
+{1} started hanging out at {2} in {3}.	{1}開始常去{3}的{2}。	{1}开始常去{3}的{2}。	inner	FUN_140b77ed0 1690610 add_hf_site_link；{2} 建築（連結，或 a temple 這類），of 後是建築所屬的團體，最後是據點
+{1} took up residence in in {2}.	{1}住進了{2}。	{1}住进了{2}。	inner	FUN_140b77ed0 1690610 add_hf_site_link；{2} 建築（連結，或 a temple 這類），of 後是建築所屬的團體，最後是據點（沒有建築：in in 照原文）
+{1} took up residence in {2} of {3} in {4}.	{1}住進了{4}屬於{3}的{2}。	{1}住进了{4}属于{3}的{2}。	inner	FUN_140b77ed0 1690610 add_hf_site_link；{2} 建築（連結，或 a temple 這類），of 後是建築所屬的團體，最後是據點
+{1} took up residence in {2} in {3}.	{1}住進了{3}的{2}。	{1}住进了{3}的{2}。	inner	FUN_140b77ed0 1690610 add_hf_site_link；{2} 建築（連結，或 a temple 這類），of 後是建築所屬的團體，最後是據點
+{1} took up residence {2} of {3} in {4}.	{1}住進了{4}屬於{3}的{2}。	{1}住进了{4}属于{3}的{2}。	inner	FUN_140b77ed0 1690610 add_hf_site_link；{2} 建築（連結，或 a temple 這類），of 後是建築所屬的團體，最後是據點
+{1} took up residence {2} in {3}.	{1}住進了{3}的{2}。	{1}住进了{3}的{2}。	inner	FUN_140b77ed0 1690610 add_hf_site_link；{2} 建築（連結，或 a temple 這類），of 後是建築所屬的團體，最後是據點
+{1} laired within {2} of {3} in {4}.	{1}盤踞在{4}屬於{3}的{2}。	{1}盘踞在{4}属于{3}的{2}。	inner	FUN_140b77ed0 1690610 add_hf_site_link；{2} 建築（連結，或 a temple 這類），of 後是建築所屬的團體，最後是據點
+{1} laired within {2} in {3}.	{1}盤踞在{3}的{2}。	{1}盘踞在{3}的{2}。	inner	FUN_140b77ed0 1690610 add_hf_site_link；{2} 建築（連結，或 a temple 這類），of 後是建築所屬的團體，最後是據點
+{1} was imprisoned in {2} of {3} in {4}.	{1}被囚禁在{4}屬於{3}的{2}。	{1}被囚禁在{4}属于{3}的{2}。	inner	FUN_140b77ed0 1690610 add_hf_site_link；{2} 建築（連結，或 a temple 這類），of 後是建築所屬的團體，最後是據點
+{1} was imprisoned in {2} in {3}.	{1}被囚禁在{3}的{2}。	{1}被囚禁在{3}的{2}。	inner	FUN_140b77ed0 1690610 add_hf_site_link；{2} 建築（連結，或 a temple 這類），of 後是建築所屬的團體，最後是據點
+{1} started working at in {2}.	{1}開始在{2}工作。	{1}开始在{2}工作。	inner	FUN_140b77ed0 1690610 add_hf_site_link；{2} 建築（連結，或 a temple 這類），of 後是建築所屬的團體，最後是據點（沒有建築）
+{1} ruled from in {2}.	{1}以{2}為統治中樞。	{1}以{2}为统治中枢。	inner	FUN_140b77ed0 1690610 add_hf_site_link；{2} 建築（連結，或 a temple 這類），of 後是建築所屬的團體，最後是據點（沒有建築）
+{1} started hanging out at in {2}.	{1}開始常去{2}。	{1}开始常去{2}。	inner	FUN_140b77ed0 1690610 add_hf_site_link；{2} 建築（連結，或 a temple 這類），of 後是建築所屬的團體，最後是據點（沒有建築）
+{1} took up residence in {2}.	{1}住進了{2}。	{1}住进了{2}。	inner	FUN_140b77ed0 1690610 add_hf_site_link；{2} 建築（連結，或 a temple 這類），of 後是建築所屬的團體，最後是據點（沒有建築）
+{1} laired within in {2}.	{1}盤踞在{2}。	{1}盘踞在{2}。	inner	FUN_140b77ed0 1690610 add_hf_site_link；{2} 建築（連結，或 a temple 這類），of 後是建築所屬的團體，最後是據點（沒有建築）
+{1} was imprisoned in in {2}.	{1}被囚禁在{2}。	{1}被囚禁在{2}。	inner	FUN_140b77ed0 1690610 add_hf_site_link；{2} 建築（連結，或 a temple 這類），of 後是建築所屬的團體，最後是據點（沒有建築）
+{1} stopped working at {2} of {3} in {4}.	{1}不再在{4}屬於{3}的{2}工作。	{1}不再在{4}属于{3}的{2}工作。	inner	FUN_140b780b0 1690679 remove_hf_site_link；同上
+{1} stopped working at {2} in {3}.	{1}不再在{3}的{2}工作。	{1}不再在{3}的{2}工作。	inner	FUN_140b780b0 1690679 remove_hf_site_link；同上
+{1} stopped ruling from {2} of {3} in {4}.	{1}不再以{4}屬於{3}的{2}為統治中樞。	{1}不再以{4}属于{3}的{2}为统治中枢。	inner	FUN_140b780b0 1690679 remove_hf_site_link；同上
+{1} stopped ruling from {2} in {3}.	{1}不再以{3}的{2}為統治中樞。	{1}不再以{3}的{2}为统治中枢。	inner	FUN_140b780b0 1690679 remove_hf_site_link；同上
+{1} stopped hanging out at {2} of {3} in {4}.	{1}不再常去{4}屬於{3}的{2}。	{1}不再常去{4}属于{3}的{2}。	inner	FUN_140b780b0 1690679 remove_hf_site_link；同上
+{1} stopped hanging out at {2} in {3}.	{1}不再常去{3}的{2}。	{1}不再常去{3}的{2}。	inner	FUN_140b780b0 1690679 remove_hf_site_link；同上
+{1} moved out of {2} of {3} in {4}.	{1}搬出了{4}屬於{3}的{2}。	{1}搬出了{4}属于{3}的{2}。	inner	FUN_140b780b0 1690679 remove_hf_site_link；同上
+{1} moved out of {2} in {3}.	{1}搬出了{3}的{2}。	{1}搬出了{3}的{2}。	inner	FUN_140b780b0 1690679 remove_hf_site_link；同上
+{1} stopped working at {2}.	{1}不再在{2}工作。	{1}不再在{2}工作。	inner	FUN_140b780b0 1690679 remove_hf_site_link；同上（沒有建築）
+{1} stopped ruling from {2}.	{1}不再以{2}為統治中樞。	{1}不再以{2}为统治中枢。	inner	FUN_140b780b0 1690679 remove_hf_site_link；同上（沒有建築）
+{1} stopped hanging out at {2}.	{1}不再常去{2}。	{1}不再常去{2}。	inner	FUN_140b780b0 1690679 remove_hf_site_link；同上（沒有建築）
+{1} moved out of {2}.	{1}搬出了{2}。	{1}搬出了{2}。	inner	FUN_140b780b0 1690679 remove_hf_site_link；同上（沒有建築）
+the working of {1} at {2} of {3} in {4}	{1}在{4}屬於{3}的{2}工作	{1}在{4}属于{3}的{2}工作	inner	FUN_140b7fa40 1694959 add_hf_site_link 短語
+the working of {1} at {2} in {3}	{1}在{3}的{2}工作	{1}在{3}的{2}工作	inner	FUN_140b7fa40 1694959 add_hf_site_link 短語
+the seat of power of {1} at {2} of {3} in {4}	{1}以{4}屬於{3}的{2}為統治中樞	{1}以{4}属于{3}的{2}为统治中枢	inner	FUN_140b7fa40 1694959 add_hf_site_link 短語
+the seat of power of {1} at {2} in {3}	{1}以{3}的{2}為統治中樞	{1}以{3}的{2}为统治中枢	inner	FUN_140b7fa40 1694959 add_hf_site_link 短語
+the hanging-out of {1} at {2} of {3} in {4}	{1}常去{4}屬於{3}的{2}	{1}常去{4}属于{3}的{2}	inner	FUN_140b7fa40 1694959 add_hf_site_link 短語
+the hanging-out of {1} at {2} in {3}	{1}常去{3}的{2}	{1}常去{3}的{2}	inner	FUN_140b7fa40 1694959 add_hf_site_link 短語
+the residence of {1} in {2} of {3} in {4}	{1}居住於{4}屬於{3}的{2}	{1}居住于{4}属于{3}的{2}	inner	FUN_140b7fa40 1694959 add_hf_site_link 短語
+the residence of {1} in {2} in {3}	{1}居住於{3}的{2}	{1}居住于{3}的{2}	inner	FUN_140b7fa40 1694959 add_hf_site_link 短語
+the lair of {1} in {2} of {3} in {4}	{1}盤踞於{4}屬於{3}的{2}	{1}盘踞于{4}属于{3}的{2}	inner	FUN_140b7fa40 1694959 add_hf_site_link 短語
+the lair of {1} in {2} in {3}	{1}盤踞於{3}的{2}	{1}盘踞于{3}的{2}	inner	FUN_140b7fa40 1694959 add_hf_site_link 短語
+the imprisonment of {1} in {2} of {3} in {4}	{1}被囚禁於{4}屬於{3}的{2}	{1}被囚禁于{4}属于{3}的{2}	inner	FUN_140b7fa40 1694959 add_hf_site_link 短語
+the imprisonment of {1} in {2} in {3}	{1}被囚禁於{3}的{2}	{1}被囚禁于{3}的{2}	inner	FUN_140b7fa40 1694959 add_hf_site_link 短語
+the working of {1} at{2}	{1}在{2}工作	{1}在{2}工作	inner	FUN_140b7fa40 1694959 add_hf_site_link 短語（沒有建築：原文 at 後直接接據點，無空白）
+the seat of power of {1} at{2}	{1}以{2}為統治中樞	{1}以{2}为统治中枢	inner	FUN_140b7fa40 1694959 add_hf_site_link 短語（沒有建築：原文 at 後直接接據點，無空白）
+the hanging-out of {1} at{2}	{1}常去{2}	{1}常去{2}	inner	FUN_140b7fa40 1694959 add_hf_site_link 短語（沒有建築：原文 at 後直接接據點，無空白）
+the residence of {1} in{2}	{1}居住於{2}	{1}居住于{2}	inner	FUN_140b7fa40 1694959 add_hf_site_link 短語（沒有建築：原文 in 後直接接據點，無空白）
+the lair of {1} in{2}	{1}盤踞於{2}	{1}盘踞于{2}	inner	FUN_140b7fa40 1694959 add_hf_site_link 短語（沒有建築：原文 in 後直接接據點，無空白）
+the imprisonment of {1} in{2}	{1}被囚禁於{2}	{1}被囚禁于{2}	inner	FUN_140b7fa40 1694959 add_hf_site_link 短語（沒有建築：原文 in 後直接接據點，無空白）
+the cease of occupation of {1} at {2} of {3} in {4}	{1}不再在{4}屬於{3}的{2}工作	{1}不再在{4}属于{3}的{2}工作	inner	FUN_140b7fc80 1695045 remove_hf_site_link 短語
+the cease of occupation of {1} at {2} in {3}	{1}不再在{3}的{2}工作	{1}不再在{3}的{2}工作	inner	FUN_140b7fc80 1695045 remove_hf_site_link 短語
+the removal of the seat of power of {1} from {2} of {3} in {4}	{1}不再以{4}屬於{3}的{2}為統治中樞	{1}不再以{4}属于{3}的{2}为统治中枢	inner	FUN_140b7fc80 1695045 remove_hf_site_link 短語
+the removal of the seat of power of {1} from {2} in {3}	{1}不再以{3}的{2}為統治中樞	{1}不再以{3}的{2}为统治中枢	inner	FUN_140b7fc80 1695045 remove_hf_site_link 短語
+the stoppage of hanging-out of {1} at {2} of {3} in {4}	{1}不再常去{4}屬於{3}的{2}	{1}不再常去{4}属于{3}的{2}	inner	FUN_140b7fc80 1695045 remove_hf_site_link 短語
+the stoppage of hanging-out of {1} at {2} in {3}	{1}不再常去{3}的{2}	{1}不再常去{3}的{2}	inner	FUN_140b7fc80 1695045 remove_hf_site_link 短語
+the moving out of {1} from {2} of {3} in {4}	{1}搬出{4}屬於{3}的{2}	{1}搬出{4}属于{3}的{2}	inner	FUN_140b7fc80 1695045 remove_hf_site_link 短語
+the moving out of {1} from {2} in {3}	{1}搬出{3}的{2}	{1}搬出{3}的{2}	inner	FUN_140b7fc80 1695045 remove_hf_site_link 短語
+the escape of {1} from {2} of {3} in {4}	{1}從{4}屬於{3}的{2}逃脫	{1}从{4}属于{3}的{2}逃脱	inner	FUN_140b7fc80 1695045 remove_hf_site_link 短語
+the escape of {1} from {2} in {3}	{1}從{3}的{2}逃脫	{1}从{3}的{2}逃脱	inner	FUN_140b7fc80 1695045 remove_hf_site_link 短語
+the cease of occupation of {1} at{2}	{1}不再在{2}工作	{1}不再在{2}工作	inner	FUN_140b7fc80 1695045 remove_hf_site_link 短語（沒有建築：原文 at 後直接接據點，無空白）
+the removal of the seat of power of {1} from{2}	{1}不再以{2}為統治中樞	{1}不再以{2}为统治中枢	inner	FUN_140b7fc80 1695045 remove_hf_site_link 短語（沒有建築：原文 from 後直接接據點，無空白）
+the stoppage of hanging-out of {1} at{2}	{1}不再常去{2}	{1}不再常去{2}	inner	FUN_140b7fc80 1695045 remove_hf_site_link 短語（沒有建築：原文 at 後直接接據點，無空白）
+the moving out of {1} from{2}	{1}搬出{2}	{1}搬出{2}	inner	FUN_140b7fc80 1695045 remove_hf_site_link 短語（沒有建築：原文 from 後直接接據點，無空白）
+the escape of {1} from{2}	{1}從{2}逃脫	{1}从{2}逃脱	inner	FUN_140b7fc80 1695045 remove_hf_site_link 短語（沒有建築：原文 from 後直接接據點，無空白）
+{1} taught {2} {%3} from {4}.	{1}藉由{4}向{2}傳授了{3}。	{1}借由{4}向{2}传授了{3}。	inner	FUN_140b78270 1690742 hf_learns_secret；{%n} 是祕密名（互動 raws 的名稱）
+{1} taught {2} {%3}.	{1}向{2}傳授了{3}。	{1}向{2}传授了{3}。	inner	FUN_140b78270 1690742 hf_learns_secret；{%n} 是祕密名（互動 raws 的名稱）
+{1} learned {%2} from {3}.	{1}從{3}習得了{2}。	{1}从{3}习得了{2}。	inner	FUN_140b78270 1690742 hf_learns_secret；{%n} 是祕密名（互動 raws 的名稱）
+{1} learned {%2}.	{1}習得了{2}。	{1}习得了{2}。	inner	FUN_140b78270 1690742 hf_learns_secret；{%n} 是祕密名（互動 raws 的名稱）
+the learning of {%1} by {2} from the teaching of {3} from {4}	{3}藉由{4}向{2}傳授了{1}	{3}借由{4}向{2}传授了{1}	inner	FUN_140b78480 1690828 hf_learns_secret 短語
+the learning of {%1} by {2} from the teaching of {3}	{3}向{2}傳授了{1}	{3}向{2}传授了{1}	inner	FUN_140b78480 1690828 hf_learns_secret 短語
+the learning of {%1} by {2} from {3}	{2}從{3}習得{1}	{2}从{3}习得{1}	inner	FUN_140b78480 1690828 hf_learns_secret 短語
+the learning of {%1} by {2}	{2}習得{1}	{2}习得{1}	inner	FUN_140b78480 1690828 hf_learns_secret 短語

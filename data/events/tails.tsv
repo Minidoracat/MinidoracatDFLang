@@ -1,0 +1,24 @@
+en	zh-Hant	zh-Hans	align	note
+after the death of {1}	在{1}死後	在{1}死后	tail	FUN_140b5a6c0 circumstance 4 Death：人物（FUN_140b92f10）
+after praying to {1} in a dedicated temple	在專屬神殿中向{1}祈禱之後	在专属神殿中向{1}祈祷之后	tail	FUN_140b5a6c0 circumstance 279：人物（神）
+after praying to {1}	在向{1}祈禱之後	在向{1}祈祷之后	tail	FUN_140b5a6c0 circumstance 181：人物（神）
+after performing the rites of {1} in a dedicated temple	在專屬神殿中舉行{1}的儀式之後	在专属神殿中举行{1}的仪式之后	tail	FUN_140b5a6c0 circumstance 276：勢力（信仰，FUN_140b92900）
+after incompletely performing the rites of {1} in an improperly dedicated temple	在奉獻不當的神殿中不完整地舉行{1}的儀式之後	在奉献不当的神殿中不完整地举行{1}的仪式之后	tail	FUN_140b5a6c0 circumstance 277：勢力（信仰）
+after incompletely performing the rites of {1} in an undedicated temple	在未經奉獻的神殿中不完整地舉行{1}的儀式之後	在未经奉献的神殿中不完整地举行{1}的仪式之后	tail	FUN_140b5a6c0 circumstance 278：勢力（信仰）
+after dreaming of {1}	在夢見{1}之後	在梦见{1}之后	tail	FUN_140b5a6c0 circumstance 209：人物
+after defeating {1}	在擊敗{1}之後	在击败{1}之后	tail	FUN_140b5a6c0 circumstance 229：人物
+after murdering {1}	在謀殺{1}之後	在谋杀{1}之后	tail	FUN_140b5a6c0 circumstance 232：人物
+after abducting {1}	在綁架{1}之後	在绑架{1}之后	tail	FUN_140b5a6c0 circumstance 250：人物
+after acquiring {1}	在取得{1}之後	在取得{1}之后	tail	FUN_140b5a6c0 circumstance 236：神器（FUN_140b94400）
+after {1} was given away	在{1}被送出之後	在{1}被送出之后	tail	FUN_140b5a6c0 circumstance 239：神器
+after a scholarly lecture in {1}	在{1}的一場學術講座之後	在{1}的一场学术讲座之后	tail	FUN_140b5a6c0 circumstance 245：據點（FUN_140b93930）
+after a performance in {1}	在{1}的一場演出之後	在{1}的一场演出之后	tail	FUN_140b5a6c0 circumstance 246：據點
+after pondering the ineffable subtleties of {%1}	在沉思{1}那難以言喻的奧妙之後	在沉思{1}那难以言喻的奥妙之后	tail	FUN_140b5a6c0 reason 4：神祇領域名（FUN_140756500，部分前加 the）
+after finding {1}	在找到{1}之後	在找到{1}之后	tail	FUN_140b5a6c0 reason 40：人物
+in order to glorify {1}	為了頌揚{1}	为了颂扬{1}	tail	FUN_140b5a6c0 reason 51：人物
+in order to sanctify {1}	為了尊奉{1}	为了尊奉{1}	tail	FUN_140b5a6c0 reason 69：人物（神）
+as an heirloom of the {1} family	作為{1}家族的傳家寶	作为{1}家族的传家宝	tail	FUN_140b5a6c0 reason 70：人物名（FUN_140b92f10 第六參數 1、不帶連結）
+as a symbol of authority within {1}	作為{1}內部的權威象徵	作为{1}内部的权威象征	tail	FUN_140b5a6c0 reason 77：勢力（FUN_140b92900）
+to smooth the operation of {1}	為了讓{1}運作順暢	为了让{1}运作顺畅	tail	FUN_140b5a6c0 reason 79：勢力
+due to a belief in nuances of {@1}	因為相信{1}的精妙之處	因为相信{1}的精妙之处	tail	FUN_140b5a6c0 reason 80：價值觀名（law…knowledge，33 種）
+due to a shared interest in {@1}	因為對{1}有共同的興趣	因为对{1}有共同的兴趣	tail	FUN_140b5a6c0 reason 81：知識領域（philosophy…dance，12 種）

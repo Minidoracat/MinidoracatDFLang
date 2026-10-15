@@ -1,0 +1,181 @@
+en	zh-Hant	zh-Hans	align	note
+{1} devoured a {%2} of {3} in {4}.	{1}在{4}吞食了{3}的一名{2}。	{1}在{4}吞食了{3}的一名{2}。	inner	FUN_140b6ab80 1682847 creature_devoured 完整句：無名生物＋所屬勢力＋地點（需在不帶 of 的那條前）
+{1} devoured a {%2} of {3}.	{1}吞食了{3}的一名{2}。	{1}吞食了{3}的一名{2}。	inner	FUN_140b6ab80 1682847 creature_devoured 完整句：無名生物＋所屬勢力
+{1} devoured a {%2} in {3}.	{1}在{3}吞食了一隻{2}。	{1}在{3}吞食了一只{2}。	inner	FUN_140b6ab80 1682847 creature_devoured 完整句：無名生物＋地點
+{1} devoured a {%2}.	{1}吞食了一隻{2}。	{1}吞食了一只{2}。	inner	FUN_140b6ab80 1682847 creature_devoured 完整句：無名生物
+{1} devoured {2} in {3}.	{1}在{3}吞食了{2}。	{1}在{3}吞食了{2}。	inner	FUN_140b6ab80 1682847 creature_devoured 完整句：歷史人物＋地點（地點：據點、地區、地下區域）
+{1} devoured {2}.	{1}吞食了{2}。	{1}吞食了{2}。	inner	FUN_140b6ab80 1682847 creature_devoured 完整句：歷史人物
+the devouring of a {%1} of {2} by {3} in {4}	{3}在{4}吞食{2}的一名{1}	{3}在{4}吞食{2}的一名{1}	inner	FUN_140b6ae90 1682966 creature_devoured 短語（日期由 _events_00 的 inner 處理）
+the devouring of a {%1} of {2} by {3}	{3}吞食{2}的一名{1}	{3}吞食{2}的一名{1}	inner	FUN_140b6ae90 1682966 creature_devoured 短語（日期由 _events_00 的 inner 處理）
+the devouring of a {%1} by {2} in {3}	{2}在{3}吞食一隻{1}	{2}在{3}吞食一只{1}	inner	FUN_140b6ae90 1682966 creature_devoured 短語（日期由 _events_00 的 inner 處理）
+the devouring of a {%1} by {2}	{2}吞食一隻{1}	{2}吞食一只{1}	inner	FUN_140b6ae90 1682966 creature_devoured 短語（日期由 _events_00 的 inner 處理）
+the devouring of {1} by {2} in {3}	{2}在{3}吞食{1}	{2}在{3}吞食{1}	inner	FUN_140b6ae90 1682966 creature_devoured 短語（日期由 _events_00 的 inner 處理）
+the devouring of {1} by {2}	{2}吞食{1}	{2}吞食{1}	inner	FUN_140b6ae90 1682966 creature_devoured 短語（日期由 _events_00 的 inner 處理）
+{1}'s {%2} was broken away by {3} as a means of torture.	{1}的{2}遭{3}以酷刑打斷。	{1}的{2}遭{3}以酷刑打断。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：斷肢：鈍擊；加害者＋酷刑
+{1}'s {%2} was broken away by {3}.	{1}的{2}被{3}打斷。	{1}的{2}被{3}打断。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：斷肢：鈍擊；加害者
+{1}'s {%2} was broken away.	{1}的{2}被打斷。	{1}的{2}被打断。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：斷肢：鈍擊
+{1}'s {%2} was slashed out by {3} as a means of torture.	{1}的{2}遭{3}以酷刑剜出。	{1}的{2}遭{3}以酷刑剜出。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：斷肢：砍、嵌入部位（眼睛）；加害者＋酷刑
+{1}'s {%2} was slashed out by {3}.	{1}的{2}被{3}剜出。	{1}的{2}被{3}剜出。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：斷肢：砍、嵌入部位（眼睛）；加害者
+{1}'s {%2} was slashed out.	{1}的{2}被剜出。	{1}的{2}被剜出。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：斷肢：砍、嵌入部位（眼睛）
+{1}'s {%2} was slashed off by {3} as a means of torture.	{1}的{2}遭{3}以酷刑砍斷。	{1}的{2}遭{3}以酷刑砍断。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：斷肢：砍；加害者＋酷刑
+{1}'s {%2} was slashed off by {3}.	{1}的{2}被{3}砍斷。	{1}的{2}被{3}砍断。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：斷肢：砍；加害者
+{1}'s {%2} was slashed off.	{1}的{2}被砍斷。	{1}的{2}被砍断。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：斷肢：砍
+{1}'s {%2} was stabbed out by {3} as a means of torture.	{1}的{2}遭{3}以酷刑戳出。	{1}的{2}遭{3}以酷刑戳出。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：斷肢：刺、嵌入部位；加害者＋酷刑
+{1}'s {%2} was stabbed out by {3}.	{1}的{2}被{3}戳出。	{1}的{2}被{3}戳出。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：斷肢：刺、嵌入部位；加害者
+{1}'s {%2} was stabbed out.	{1}的{2}被戳出。	{1}的{2}被戳出。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：斷肢：刺、嵌入部位
+{1}'s {%2} was ripped off by {3} as a means of torture.	{1}的{2}遭{3}以酷刑扯斷。	{1}的{2}遭{3}以酷刑扯断。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：斷肢：刺（遊戲原文如此）；加害者＋酷刑
+{1}'s {%2} was ripped off by {3}.	{1}的{2}被{3}扯斷。	{1}的{2}被{3}扯断。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：斷肢：刺（遊戲原文如此）；加害者
+{1}'s {%2} was ripped off.	{1}的{2}被扯斷。	{1}的{2}被扯断。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：斷肢：刺（遊戲原文如此）
+{1}'s {%2} was torn out by {3} as a means of torture.	{1}的{2}遭{3}以酷刑扯出。	{1}的{2}遭{3}以酷刑扯出。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：斷肢：撕、嵌入部位；加害者＋酷刑
+{1}'s {%2} was torn out by {3}.	{1}的{2}被{3}扯出。	{1}的{2}被{3}扯出。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：斷肢：撕、嵌入部位；加害者
+{1}'s {%2} was torn out.	{1}的{2}被扯出。	{1}的{2}被扯出。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：斷肢：撕、嵌入部位
+{1}'s {%2} was torn off by {3} as a means of torture.	{1}的{2}遭{3}以酷刑撕下。	{1}的{2}遭{3}以酷刑撕下。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：斷肢：撕；加害者＋酷刑
+{1}'s {%2} was torn off by {3}.	{1}的{2}被{3}撕下。	{1}的{2}被{3}撕下。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：斷肢：撕；加害者
+{1}'s {%2} was torn off.	{1}的{2}被撕下。	{1}的{2}被撕下。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：斷肢：撕
+{1}'s {%2} was burned out by {3} as a means of torture.	{1}的{2}遭{3}以酷刑燒毀。	{1}的{2}遭{3}以酷刑烧毁。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：斷肢：燒、嵌入部位；加害者＋酷刑
+{1}'s {%2} was burned out by {3}.	{1}的{2}被{3}燒毀。	{1}的{2}被{3}烧毁。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：斷肢：燒、嵌入部位；加害者
+{1}'s {%2} was burned out.	{1}的{2}被燒毀。	{1}的{2}被烧毁。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：斷肢：燒、嵌入部位
+{1}'s {%2} was burned away by {3} as a means of torture.	{1}的{2}遭{3}以酷刑燒盡。	{1}的{2}遭{3}以酷刑烧尽。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：斷肢：燒；加害者＋酷刑
+{1}'s {%2} was burned away by {3}.	{1}的{2}被{3}燒盡。	{1}的{2}被{3}烧尽。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：斷肢：燒；加害者
+{1}'s {%2} was burned away.	{1}的{2}被燒盡。	{1}的{2}被烧尽。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：斷肢：燒
+{1}'s {%2} was smashed by {3} as a means of torture.	{1}的{2}遭{3}以酷刑砸傷。	{1}的{2}遭{3}以酷刑砸伤。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：鈍擊；加害者＋酷刑
+{1}'s {%2} was smashed by {3}.	{1}的{2}被{3}砸傷。	{1}的{2}被{3}砸伤。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：鈍擊；加害者
+{1}'s {%2} was smashed.	{1}的{2}被砸傷。	{1}的{2}被砸伤。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：鈍擊
+{1}'s {%2} was slashed by {3} as a means of torture.	{1}的{2}遭{3}以酷刑砍傷。	{1}的{2}遭{3}以酷刑砍伤。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：砍；加害者＋酷刑
+{1}'s {%2} was slashed by {3}.	{1}的{2}被{3}砍傷。	{1}的{2}被{3}砍伤。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：砍；加害者
+{1}'s {%2} was slashed.	{1}的{2}被砍傷。	{1}的{2}被砍伤。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：砍
+{1}'s {%2} was stabbed by {3} as a means of torture.	{1}的{2}遭{3}以酷刑刺傷。	{1}的{2}遭{3}以酷刑刺伤。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：刺；加害者＋酷刑
+{1}'s {%2} was stabbed by {3}.	{1}的{2}被{3}刺傷。	{1}的{2}被{3}刺伤。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：刺；加害者
+{1}'s {%2} was stabbed.	{1}的{2}被刺傷。	{1}的{2}被刺伤。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：刺
+{1}'s {%2} was ripped by {3} as a means of torture.	{1}的{2}遭{3}以酷刑撕裂。	{1}的{2}遭{3}以酷刑撕裂。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：撕；加害者＋酷刑
+{1}'s {%2} was ripped by {3}.	{1}的{2}被{3}撕裂。	{1}的{2}被{3}撕裂。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：撕；加害者
+{1}'s {%2} was ripped.	{1}的{2}被撕裂。	{1}的{2}被撕裂。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：撕
+{1}'s {%2} was burned by {3} as a means of torture.	{1}的{2}遭{3}以酷刑燒傷。	{1}的{2}遭{3}以酷刑烧伤。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：燒；加害者＋酷刑
+{1}'s {%2} was burned by {3}.	{1}的{2}被{3}燒傷。	{1}的{2}被{3}烧伤。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：燒；加害者
+{1}'s {%2} was burned.	{1}的{2}被燒傷。	{1}的{2}被烧伤。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：燒
+the smashing of {1}'s {%2} by {3} as a means of torture	{1}的{2}遭{3}以酷刑砸傷	{1}的{2}遭{3}以酷刑砸伤	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：鈍擊；加害者＋酷刑
+the smashing of {1}'s {%2} by {3}	{1}的{2}被{3}砸傷	{1}的{2}被{3}砸伤	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：鈍擊；加害者
+the smashing of {1}'s {%2}	{1}的{2}被砸傷	{1}的{2}被砸伤	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：鈍擊
+the slashing of {1}'s {%2} by {3} as a means of torture	{1}的{2}遭{3}以酷刑砍傷	{1}的{2}遭{3}以酷刑砍伤	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：砍；加害者＋酷刑
+the slashing of {1}'s {%2} by {3}	{1}的{2}被{3}砍傷	{1}的{2}被{3}砍伤	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：砍；加害者
+the slashing of {1}'s {%2}	{1}的{2}被砍傷	{1}的{2}被砍伤	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：砍
+the stabbing of {1}'s {%2} by {3} as a means of torture	{1}的{2}遭{3}以酷刑刺傷	{1}的{2}遭{3}以酷刑刺伤	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：刺；加害者＋酷刑
+the stabbing of {1}'s {%2} by {3}	{1}的{2}被{3}刺傷	{1}的{2}被{3}刺伤	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：刺；加害者
+the stabbing of {1}'s {%2}	{1}的{2}被刺傷	{1}的{2}被刺伤	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：刺
+the ripping of {1}'s {%2} by {3} as a means of torture	{1}的{2}遭{3}以酷刑撕裂	{1}的{2}遭{3}以酷刑撕裂	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：撕；加害者＋酷刑
+the ripping of {1}'s {%2} by {3}	{1}的{2}被{3}撕裂	{1}的{2}被{3}撕裂	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：撕；加害者
+the ripping of {1}'s {%2}	{1}的{2}被撕裂	{1}的{2}被撕裂	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：撕
+the burning of {1}'s {%2} by {3} as a means of torture	{1}的{2}遭{3}以酷刑燒傷	{1}的{2}遭{3}以酷刑烧伤	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：燒；加害者＋酷刑
+the burning of {1}'s {%2} by {3}	{1}的{2}被{3}燒傷	{1}的{2}被{3}烧伤	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：燒；加害者
+the burning of {1}'s {%2}	{1}的{2}被燒傷	{1}的{2}被烧伤	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：燒
+the breaking away of {1}'s {%2} by {3} as a means of torture	{1}的{2}遭{3}以酷刑打斷	{1}的{2}遭{3}以酷刑打断	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：鈍擊；加害者＋酷刑
+the breaking away of {1}'s {%2} by {3}	{1}的{2}被{3}打斷	{1}的{2}被{3}打断	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：鈍擊；加害者
+the breaking away of {1}'s {%2}	{1}的{2}被打斷	{1}的{2}被打断	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：鈍擊
+the slashing out of {1}'s {%2} by {3} as a means of torture	{1}的{2}遭{3}以酷刑剜出	{1}的{2}遭{3}以酷刑剜出	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：砍、嵌入部位（眼睛）；加害者＋酷刑
+the slashing out of {1}'s {%2} by {3}	{1}的{2}被{3}剜出	{1}的{2}被{3}剜出	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：砍、嵌入部位（眼睛）；加害者
+the slashing out of {1}'s {%2}	{1}的{2}被剜出	{1}的{2}被剜出	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：砍、嵌入部位（眼睛）
+the slashing off of {1}'s {%2} by {3} as a means of torture	{1}的{2}遭{3}以酷刑砍斷	{1}的{2}遭{3}以酷刑砍断	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：砍；加害者＋酷刑
+the slashing off of {1}'s {%2} by {3}	{1}的{2}被{3}砍斷	{1}的{2}被{3}砍断	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：砍；加害者
+the slashing off of {1}'s {%2}	{1}的{2}被砍斷	{1}的{2}被砍断	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：砍
+the stabbing out of {1}'s {%2} by {3} as a means of torture	{1}的{2}遭{3}以酷刑戳出	{1}的{2}遭{3}以酷刑戳出	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：刺、嵌入部位；加害者＋酷刑
+the stabbing out of {1}'s {%2} by {3}	{1}的{2}被{3}戳出	{1}的{2}被{3}戳出	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：刺、嵌入部位；加害者
+the stabbing out of {1}'s {%2}	{1}的{2}被戳出	{1}的{2}被戳出	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：刺、嵌入部位
+the ripping off of {1}'s {%2} by {3} as a means of torture	{1}的{2}遭{3}以酷刑扯斷	{1}的{2}遭{3}以酷刑扯断	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：刺（遊戲原文如此）；加害者＋酷刑
+the ripping off of {1}'s {%2} by {3}	{1}的{2}被{3}扯斷	{1}的{2}被{3}扯断	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：刺（遊戲原文如此）；加害者
+the ripping off of {1}'s {%2}	{1}的{2}被扯斷	{1}的{2}被扯断	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：刺（遊戲原文如此）
+the tearing out of {1}'s {%2} by {3} as a means of torture	{1}的{2}遭{3}以酷刑扯出	{1}的{2}遭{3}以酷刑扯出	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：撕、嵌入部位；加害者＋酷刑
+the tearing out of {1}'s {%2} by {3}	{1}的{2}被{3}扯出	{1}的{2}被{3}扯出	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：撕、嵌入部位；加害者
+the tearing out of {1}'s {%2}	{1}的{2}被扯出	{1}的{2}被扯出	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：撕、嵌入部位
+the tearing off of {1}'s {%2} by {3} as a means of torture	{1}的{2}遭{3}以酷刑撕下	{1}的{2}遭{3}以酷刑撕下	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：撕；加害者＋酷刑
+the tearing off of {1}'s {%2} by {3}	{1}的{2}被{3}撕下	{1}的{2}被{3}撕下	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：撕；加害者
+the tearing off of {1}'s {%2}	{1}的{2}被撕下	{1}的{2}被撕下	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：撕
+the burning out of {1}'s {%2} by {3} as a means of torture	{1}的{2}遭{3}以酷刑燒毀	{1}的{2}遭{3}以酷刑烧毁	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：燒、嵌入部位；加害者＋酷刑
+the burning out of {1}'s {%2} by {3}	{1}的{2}被{3}燒毀	{1}的{2}被{3}烧毁	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：燒、嵌入部位；加害者
+the burning out of {1}'s {%2}	{1}的{2}被燒毀	{1}的{2}被烧毁	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：燒、嵌入部位
+the burning away of {1}'s {%2} by {3} as a means of torture	{1}的{2}遭{3}以酷刑燒盡	{1}的{2}遭{3}以酷刑烧尽	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：燒；加害者＋酷刑
+the burning away of {1}'s {%2} by {3}	{1}的{2}被{3}燒盡	{1}的{2}被{3}烧尽	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：燒；加害者
+the burning away of {1}'s {%2}	{1}的{2}被燒盡	{1}的{2}被烧尽	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：燒
+{1}, {2}, {3}, {4} and {5} were the first to reach the summit of {6}, which rises above {7}.	{1}、{2}、{3}、{4}和{5}率先登上了{6}之巔，此峰聳立於{7}。	{1}、{2}、{3}、{4}和{5}率先登上了{6}之巅，此峰耸立于{7}。	inner	FUN_140b6b8e0 1683414 hist_figure_reach_summit 完整句：五人；山峰名（不是連結）＋地區或地下區域
+{1}, {2}, {3}, {4} and {5} were the first to reach the summit of {6}.	{1}、{2}、{3}、{4}和{5}率先登上了{6}之巔。	{1}、{2}、{3}、{4}和{5}率先登上了{6}之巅。	inner	FUN_140b6b8e0 1683414 hist_figure_reach_summit 完整句：五人；山峰名（不是連結）
+{1}, {2}, {3} and {4} were the first to reach the summit of {5}, which rises above {6}.	{1}、{2}、{3}和{4}率先登上了{5}之巔，此峰聳立於{6}。	{1}、{2}、{3}和{4}率先登上了{5}之巅，此峰耸立于{6}。	inner	FUN_140b6b8e0 1683414 hist_figure_reach_summit 完整句：四人；山峰名（不是連結）＋地區或地下區域
+{1}, {2}, {3} and {4} were the first to reach the summit of {5}.	{1}、{2}、{3}和{4}率先登上了{5}之巔。	{1}、{2}、{3}和{4}率先登上了{5}之巅。	inner	FUN_140b6b8e0 1683414 hist_figure_reach_summit 完整句：四人；山峰名（不是連結）
+{1}, {2} and {3} were the first to reach the summit of {4}, which rises above {5}.	{1}、{2}和{3}率先登上了{4}之巔，此峰聳立於{5}。	{1}、{2}和{3}率先登上了{4}之巅，此峰耸立于{5}。	inner	FUN_140b6b8e0 1683414 hist_figure_reach_summit 完整句：三人；山峰名（不是連結）＋地區或地下區域
+{1}, {2} and {3} were the first to reach the summit of {4}.	{1}、{2}和{3}率先登上了{4}之巔。	{1}、{2}和{3}率先登上了{4}之巅。	inner	FUN_140b6b8e0 1683414 hist_figure_reach_summit 完整句：三人；山峰名（不是連結）
+{1} and others were the first to reach the summit of {2}, which rises above {3}.	{1}等人率先登上了{2}之巔，此峰聳立於{3}。	{1}等人率先登上了{2}之巅，此峰耸立于{3}。	inner	FUN_140b6b8e0 1683414 hist_figure_reach_summit 完整句：頁面人物在內、三人以上：and others；山峰名（不是連結）＋地區或地下區域
+{1} and others were the first to reach the summit of {2}.	{1}等人率先登上了{2}之巔。	{1}等人率先登上了{2}之巅。	inner	FUN_140b6b8e0 1683414 hist_figure_reach_summit 完整句：頁面人物在內、三人以上：and others；山峰名（不是連結）
+{1} and {2} were the first to reach the summit of {3}, which rises above {4}.	{1}和{2}率先登上了{3}之巔，此峰聳立於{4}。	{1}和{2}率先登上了{3}之巅，此峰耸立于{4}。	inner	FUN_140b6b8e0 1683414 hist_figure_reach_summit 完整句：兩人；山峰名（不是連結）＋地區或地下區域
+{1} and {2} were the first to reach the summit of {3}.	{1}和{2}率先登上了{3}之巔。	{1}和{2}率先登上了{3}之巅。	inner	FUN_140b6b8e0 1683414 hist_figure_reach_summit 完整句：兩人；山峰名（不是連結）
+{1} was the first to reach the summit of {2}, which rises above {3}.	{1}率先登上了{2}之巔，此峰聳立於{3}。	{1}率先登上了{2}之巅，此峰耸立于{3}。	inner	FUN_140b6b8e0 1683414 hist_figure_reach_summit 完整句：一人；山峰名（不是連結）＋地區或地下區域
+{1} was the first to reach the summit of {2}.	{1}率先登上了{2}之巔。	{1}率先登上了{2}之巅。	inner	FUN_140b6b8e0 1683414 hist_figure_reach_summit 完整句：一人；山峰名（不是連結）
+the climbing of {1} by {2}, {3}, {4}, {5} and {6}	{2}、{3}、{4}、{5}和{6}攀登{1}	{2}、{3}、{4}、{5}和{6}攀登{1}	inner	FUN_140b6bc70 1683567 hist_figure_reach_summit 短語：五人
+the climbing of {1} by {2}, {3}, {4} and {5}	{2}、{3}、{4}和{5}攀登{1}	{2}、{3}、{4}和{5}攀登{1}	inner	FUN_140b6bc70 1683567 hist_figure_reach_summit 短語：四人
+the climbing of {1} by {2}, {3} and {4}	{2}、{3}和{4}攀登{1}	{2}、{3}和{4}攀登{1}	inner	FUN_140b6bc70 1683567 hist_figure_reach_summit 短語：三人
+the climbing of {1} by {2} and others	{2}等人攀登{1}	{2}等人攀登{1}	inner	FUN_140b6bc70 1683567 hist_figure_reach_summit 短語：頁面人物在內、三人以上：and others
+the climbing of {1} by {2} and {3}	{2}和{3}攀登{1}	{2}和{3}攀登{1}	inner	FUN_140b6bc70 1683567 hist_figure_reach_summit 短語：兩人
+the climbing of {1} by {2}	{2}攀登{1}	{2}攀登{1}	inner	FUN_140b6bc70 1683567 hist_figure_reach_summit 短語：一人
+{1}, {2}, {3}, {4} and {5} made a journey to {6}.	{1}、{2}、{3}、{4}和{5}踏上了前往{6}的旅程。	{1}、{2}、{3}、{4}和{5}踏上了前往{6}的旅程。	inner	FUN_140b6bf50 1683697 hist_figure_travel 完整句：flag 0；五人；地點：據點、地區、地下區域或 unknown lands
+{1}, {2}, {3} and {4} made a journey to {5}.	{1}、{2}、{3}和{4}踏上了前往{5}的旅程。	{1}、{2}、{3}和{4}踏上了前往{5}的旅程。	inner	FUN_140b6bf50 1683697 hist_figure_travel 完整句：flag 0；四人；地點：據點、地區、地下區域或 unknown lands
+{1}, {2} and {3} made a journey to {4}.	{1}、{2}和{3}踏上了前往{4}的旅程。	{1}、{2}和{3}踏上了前往{4}的旅程。	inner	FUN_140b6bf50 1683697 hist_figure_travel 完整句：flag 0；三人；地點：據點、地區、地下區域或 unknown lands
+{1} and others made a journey to {2}.	{1}等人踏上了前往{2}的旅程。	{1}等人踏上了前往{2}的旅程。	inner	FUN_140b6bf50 1683697 hist_figure_travel 完整句：flag 0；頁面人物在內、三人以上：and others；地點：據點、地區、地下區域或 unknown lands
+{1} and {2} made a journey to {3}.	{1}和{2}踏上了前往{3}的旅程。	{1}和{2}踏上了前往{3}的旅程。	inner	FUN_140b6bf50 1683697 hist_figure_travel 完整句：flag 0；兩人；地點：據點、地區、地下區域或 unknown lands
+{1} made a journey to {2}.	{1}踏上了前往{2}的旅程。	{1}踏上了前往{2}的旅程。	inner	FUN_140b6bf50 1683697 hist_figure_travel 完整句：flag 0；一人；地點：據點、地區、地下區域或 unknown lands
+{1}, {2}, {3}, {4} and {5} returned to {6}.	{1}、{2}、{3}、{4}和{5}回到了{6}。	{1}、{2}、{3}、{4}和{5}回到了{6}。	inner	FUN_140b6bf50 1683697 hist_figure_travel 完整句：flag&1；五人；地點：據點、地區、地下區域或 unknown lands
+{1}, {2}, {3} and {4} returned to {5}.	{1}、{2}、{3}和{4}回到了{5}。	{1}、{2}、{3}和{4}回到了{5}。	inner	FUN_140b6bf50 1683697 hist_figure_travel 完整句：flag&1；四人；地點：據點、地區、地下區域或 unknown lands
+{1}, {2} and {3} returned to {4}.	{1}、{2}和{3}回到了{4}。	{1}、{2}和{3}回到了{4}。	inner	FUN_140b6bf50 1683697 hist_figure_travel 完整句：flag&1；三人；地點：據點、地區、地下區域或 unknown lands
+{1} and others returned to {2}.	{1}等人回到了{2}。	{1}等人回到了{2}。	inner	FUN_140b6bf50 1683697 hist_figure_travel 完整句：flag&1；頁面人物在內、三人以上：and others；地點：據點、地區、地下區域或 unknown lands
+{1} and {2} returned to {3}.	{1}和{2}回到了{3}。	{1}和{2}回到了{3}。	inner	FUN_140b6bf50 1683697 hist_figure_travel 完整句：flag&1；兩人；地點：據點、地區、地下區域或 unknown lands
+{1} returned to {2}.	{1}回到了{2}。	{1}回到了{2}。	inner	FUN_140b6bf50 1683697 hist_figure_travel 完整句：flag&1；一人；地點：據點、地區、地下區域或 unknown lands
+{1} escaped from {2} of {3} in {4}.	{1}從{4}屬於{3}的{2}逃脫。	{1}从{4}属于{3}的{2}逃脱。	inner	FUN_140b780b0 1690679 remove_hf_site_link case 8/9：{2} 建築、{3} 所屬團體、{4} 據點（Events10 寫的，排在 `{1} escaped from {2}.` 前）
+{1} escaped from {2} in {3}.	{1}從{3}的{2}逃脫。	{1}从{3}的{2}逃脱。	inner	FUN_140b780b0 1690679 remove_hf_site_link case 8/9：{2} 建築、{3} 據點（Events10 寫的，排在 `{1} escaped from {2}.` 前）
+{1} escaped from the slavery of {2}.	{1}擺脫了{2}的奴役。	{1}摆脱了{2}的奴役。	inner	FUN_140b7eff0 1694548 remove_hf_entity_link 完整句 case 4（Events14 寫的；搬到這裡排在 hist_figure_travel 的 `{1} escaped from {2}.` 前面，否則被通用句搶走）
+{1} escaped from the prisons of {2}.	{1}逃出了{2}的監牢。	{1}逃出了{2}的监牢。	inner	FUN_140b7eff0 1694548 remove_hf_entity_link 完整句 case 6（Events14 寫的；搬到這裡排在 hist_figure_travel 的 `{1} escaped from {2}.` 前面，否則被通用句搶走）
+{1}, {2}, {3}, {4} and {5} escaped from {6}.	{1}、{2}、{3}、{4}和{5}逃離了{6}。	{1}、{2}、{3}、{4}和{5}逃离了{6}。	inner	FUN_140b6bf50 1683697 hist_figure_travel 完整句：flag&2；五人；地點：據點、地區、地下區域或 unknown lands
+{1}, {2}, {3} and {4} escaped from {5}.	{1}、{2}、{3}和{4}逃離了{5}。	{1}、{2}、{3}和{4}逃离了{5}。	inner	FUN_140b6bf50 1683697 hist_figure_travel 完整句：flag&2；四人；地點：據點、地區、地下區域或 unknown lands
+{1}, {2} and {3} escaped from {4}.	{1}、{2}和{3}逃離了{4}。	{1}、{2}和{3}逃离了{4}。	inner	FUN_140b6bf50 1683697 hist_figure_travel 完整句：flag&2；三人；地點：據點、地區、地下區域或 unknown lands
+{1} and others escaped from {2}.	{1}等人逃離了{2}。	{1}等人逃离了{2}。	inner	FUN_140b6bf50 1683697 hist_figure_travel 完整句：flag&2；頁面人物在內、三人以上：and others；地點：據點、地區、地下區域或 unknown lands
+{1} and {2} escaped from {3}.	{1}和{2}逃離了{3}。	{1}和{2}逃离了{3}。	inner	FUN_140b6bf50 1683697 hist_figure_travel 完整句：flag&2；兩人；地點：據點、地區、地下區域或 unknown lands
+{1} escaped from {2}.	{1}逃離了{2}。	{1}逃离了{2}。	inner	FUN_140b6bf50 1683697 hist_figure_travel 完整句：flag&2；一人；地點：據點、地區、地下區域或 unknown lands
+the journey of {1}, {2}, {3}, {4} and {5} to {6}	{1}、{2}、{3}、{4}和{5}前往{6}的旅程	{1}、{2}、{3}、{4}和{5}前往{6}的旅程	inner	FUN_140b6c210 1683806 hist_figure_travel 短語：flag 0；五人
+the journey of {1}, {2}, {3} and {4} to {5}	{1}、{2}、{3}和{4}前往{5}的旅程	{1}、{2}、{3}和{4}前往{5}的旅程	inner	FUN_140b6c210 1683806 hist_figure_travel 短語：flag 0；四人
+the journey of {1}, {2} and {3} to {4}	{1}、{2}和{3}前往{4}的旅程	{1}、{2}和{3}前往{4}的旅程	inner	FUN_140b6c210 1683806 hist_figure_travel 短語：flag 0；三人
+the journey of {1} and others to {2}	{1}等人前往{2}的旅程	{1}等人前往{2}的旅程	inner	FUN_140b6c210 1683806 hist_figure_travel 短語：flag 0；頁面人物在內、三人以上：and others
+the journey of {1} and {2} to {3}	{1}和{2}前往{3}的旅程	{1}和{2}前往{3}的旅程	inner	FUN_140b6c210 1683806 hist_figure_travel 短語：flag 0；兩人
+the journey of {1} to {2}	{1}前往{2}的旅程	{1}前往{2}的旅程	inner	FUN_140b6c210 1683806 hist_figure_travel 短語：flag 0；一人
+the return of {1}, {2}, {3}, {4} and {5} to {6}	{1}、{2}、{3}、{4}和{5}重返{6}	{1}、{2}、{3}、{4}和{5}重返{6}	inner	FUN_140b6c210 1683806 hist_figure_travel 短語：flag&1；五人
+the return of {1}, {2}, {3} and {4} to {5}	{1}、{2}、{3}和{4}重返{5}	{1}、{2}、{3}和{4}重返{5}	inner	FUN_140b6c210 1683806 hist_figure_travel 短語：flag&1；四人
+the return of {1}, {2} and {3} to {4}	{1}、{2}和{3}重返{4}	{1}、{2}和{3}重返{4}	inner	FUN_140b6c210 1683806 hist_figure_travel 短語：flag&1；三人
+the return of {1} and others to {2}	{1}等人重返{2}	{1}等人重返{2}	inner	FUN_140b6c210 1683806 hist_figure_travel 短語：flag&1；頁面人物在內、三人以上：and others
+the return of {1} and {2} to {3}	{1}和{2}重返{3}	{1}和{2}重返{3}	inner	FUN_140b6c210 1683806 hist_figure_travel 短語：flag&1；兩人
+the return of {1} to {2}	{1}重返{2}	{1}重返{2}	inner	FUN_140b6c210 1683806 hist_figure_travel 短語：flag&1；一人
+the escape from {1}, {2}, {3}, {4} and {5} to {6}	{1}、{2}、{3}、{4}和{5}逃離{6}	{1}、{2}、{3}、{4}和{5}逃离{6}	inner	FUN_140b6c210 1683806 hist_figure_travel 短語：flag&2；五人（原文 escape from 人物 to 地點，照意思譯成逃離該地）
+the escape from {1}, {2}, {3} and {4} to {5}	{1}、{2}、{3}和{4}逃離{5}	{1}、{2}、{3}和{4}逃离{5}	inner	FUN_140b6c210 1683806 hist_figure_travel 短語：flag&2；四人（原文 escape from 人物 to 地點，照意思譯成逃離該地）
+the escape from {1}, {2} and {3} to {4}	{1}、{2}和{3}逃離{4}	{1}、{2}和{3}逃离{4}	inner	FUN_140b6c210 1683806 hist_figure_travel 短語：flag&2；三人（原文 escape from 人物 to 地點，照意思譯成逃離該地）
+the escape from {1} and others to {2}	{1}等人逃離{2}	{1}等人逃离{2}	inner	FUN_140b6c210 1683806 hist_figure_travel 短語：flag&2；頁面人物在內、三人以上：and others（原文 escape from 人物 to 地點，照意思譯成逃離該地）
+the escape from {1} and {2} to {3}	{1}和{2}逃離{3}	{1}和{2}逃离{3}	inner	FUN_140b6c210 1683806 hist_figure_travel 短語：flag&2；兩人（原文 escape from 人物 to 地點，照意思譯成逃離該地）
+the escape from {1} to {2}	{1}逃離{2}	{1}逃离{2}	inner	FUN_140b6c210 1683806 hist_figure_travel 短語：flag&2；一人（原文 escape from 人物 to 地點，照意思譯成逃離該地）
+the forces shifted, and {@1} in {2} in {3}.	在{3}的{2}，兵力調動之後，{1}。	在{3}的{2}，兵力调动之后，{1}。	inner	FUN_140b6c4a0 1683917 tactical_situation 完整句：雙方都沒有指揮者；地點是據點裡的建築
+the forces shifted, and {@1} in {2}.	在{2}，兵力調動之後，{1}。	在{2}，兵力调动之后，{1}。	inner	FUN_140b6c4a0 1683917 tactical_situation 完整句：雙方都沒有指揮者
+the forces were arrayed, and {@1} in {2} in {3}.	在{3}的{2}，兩軍列陣之後，{1}。	在{3}的{2}，两军列阵之后，{1}。	inner	FUN_140b6c4a0 1683917 tactical_situation 完整句：雙方都沒有指揮者；地點是據點裡的建築
+the forces were arrayed, and {@1} in {2}.	在{2}，兩軍列陣之後，{1}。	在{2}，两军列阵之后，{1}。	inner	FUN_140b6c4a0 1683917 tactical_situation 完整句：雙方都沒有指揮者
+{%1}, and {@2} in {3} in {4}.	在{4}的{3}，{1}，而且{2}。	在{4}的{3}，{1}，而且{2}。	inner	FUN_140b6c4a0 1683917 tactical_situation 完整句：{1} 指揮者表現（下方 inner），{@2} 只收地利片語；地點是據點裡的建築
+{%1}, and {@2} in {3}.	在{3}，{1}，而且{2}。	在{3}，{1}，而且{2}。	inner	FUN_140b6c4a0 1683917 tactical_situation 完整句：{1} 指揮者表現（下方 inner），{@2} 只收地利片語
+{%1}, but {@2} in {3} in {4}.	在{4}的{3}，{1}，但{2}。	在{4}的{3}，{1}，但{2}。	inner	FUN_140b6c4a0 1683917 tactical_situation 完整句：{1} 指揮者表現（下方 inner），{@2} 只收地利片語；地點是據點裡的建築
+{%1}, but {@2} in {3}.	在{3}，{1}，但{2}。	在{3}，{1}，但{2}。	inner	FUN_140b6c4a0 1683917 tactical_situation 完整句：{1} 指揮者表現（下方 inner），{@2} 只收地利片語
+{1} outmanuevered {2}	{1}在調度上勝過了{2}	{1}在调度上胜过了{2}	inner	FUN_140b6c4a0 1683917 tactical_situation 指揮者表現片段（給完整句 {%1}）（outmanuevered 遊戲原文拼錯）
+{1} entirely outwitted {2}	{1}徹底智取了{2}	{1}彻底智取了{2}	inner	FUN_140b6c4a0 1683917 tactical_situation 指揮者表現片段（給完整句 {%1}）
+{1} tactical planning was superior to {2}'s	{1}的戰術規劃勝過{2}	{1}的战术规划胜过{2}	inner	FUN_140b6c4a0 1683917 tactical_situation 指揮者表現片段（給完整句 {%1}）（前一人原文沒有 's，遊戲原文如此）
+{1} outmatched {2} with a cunning plan	{1}以巧妙的計畫壓制了{2}	{1}以巧妙的计划压制了{2}	inner	FUN_140b6c4a0 1683917 tactical_situation 指揮者表現片段（給完整句 {%1}）
+{1} used poor tactics	{1}運用了拙劣的戰術	{1}运用了拙劣的战术	inner	FUN_140b6c4a0 1683917 tactical_situation 指揮者表現片段（給完整句 {%1}）
+{1} used good tactics	{1}運用了高明的戰術	{1}运用了高明的战术	inner	FUN_140b6c4a0 1683917 tactical_situation 指揮者表現片段（給完整句 {%1}）
+{1} hatched a stunning strategy	{1}想出了驚人的妙計	{1}想出了惊人的妙计	inner	FUN_140b6c4a0 1683917 tactical_situation 指揮者表現片段（給完整句 {%1}）
+{1} blundered terribly	{1}犯下了嚴重的失誤	{1}犯下了严重的失误	inner	FUN_140b6c4a0 1683917 tactical_situation 指揮者表現片段（給完整句 {%1}）
+{1} made a poor plan	{1}擬定了拙劣的計畫	{1}制定了拙劣的计划	inner	FUN_140b6c4a0 1683917 tactical_situation 指揮者表現片段（給完整句 {%1}）
+{1} put forth a sound plan	{1}提出了穩妥的計畫	{1}提出了稳妥的计划	inner	FUN_140b6c4a0 1683917 tactical_situation 指揮者表現片段（給完整句 {%1}）
+{1} unrolled a brilliant tactical plan	{1}施展了出色的戰術計畫	{1}施展了出色的战术计划	inner	FUN_140b6c4a0 1683917 tactical_situation 指揮者表現片段（給完整句 {%1}）
+{1} made an outright foolish plan	{1}擬定了愚不可及的計畫	{1}制定了愚不可及的计划	inner	FUN_140b6c4a0 1683917 tactical_situation 指揮者表現片段（給完整句 {%1}）
+a tactical situation in {1} in {2}	{2}的{1}的一場戰術交鋒	{2}的{1}的一场战术交锋	inner	FUN_140b6cb80 1684231 tactical_situation 短語：沒有指揮者；建築 in 據點
+a tactical situation in {1}	{1}的一場戰術交鋒	{1}的一场战术交锋	inner	FUN_140b6cb80 1684231 tactical_situation 短語：沒有指揮者
+the tactics of {1} in {2} in {3}	{1}在{3}的{2}的戰術	{1}在{3}的{2}的战术	inner	FUN_140b6cb80 1684231 tactical_situation 短語：一方指揮者；建築 in 據點
+the tactics of {1} in {2}	{1}在{2}的戰術	{1}在{2}的战术	inner	FUN_140b6cb80 1684231 tactical_situation 短語：一方指揮者
+the tactical contest between {1} and {2} in {3} in {4}	{1}與{2}在{4}的{3}的戰術較量	{1}与{2}在{4}的{3}的战术较量	inner	FUN_140b6cb80 1684231 tactical_situation 短語：雙方指揮者；建築 in 據點
+the tactical contest between {1} and {2} in {3}	{1}與{2}在{3}的戰術較量	{1}与{2}在{3}的战术较量	inner	FUN_140b6cb80 1684231 tactical_situation 短語：雙方指揮者

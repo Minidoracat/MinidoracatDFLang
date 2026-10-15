@@ -1,0 +1,41 @@
+en	zh-Hant	zh-Hans	align	note
+The Journey	旅程	旅程		FUN_140bc6ba0 1744837 旅程（journeyst）；沒有旅人
+The Occasion	慶典	庆典		FUN_140bc6da0 1744901 節慶（occasionst）；{2} 節慶名（世界生成的名稱）；找不到節慶（The Occasion）
+The Dance Performance	舞蹈演出	舞蹈演出		FUN_140bc6fd0 1744984 演出（performancest）；of 後是節慶名（世界生成的名稱）
+The Musical Performance	音樂演出	音乐演出		FUN_140bc6fd0 1744984 演出（performancest）；of 後是節慶名（世界生成的名稱）
+The Poetry Recital	詩歌朗誦	诗歌朗诵		FUN_140bc6fd0 1744984 演出（performancest）；of 後是節慶名（世界生成的名稱）
+The Storytelling	說書表演	说书表演		FUN_140bc6fd0 1744984 演出（performancest）；of 後是節慶名（世界生成的名稱）
+The Performance	演出	演出		FUN_140bc6fd0 1744984 演出（performancest）；of 後是節慶名（世界生成的名稱）；找不到節慶或演出種類
+The Dance Competition	舞蹈比賽	舞蹈比赛		FUN_140bc7270 1745093 比賽（competitionst）；of 後是節慶名（世界生成的名稱）
+The Musical Competition	音樂比賽	音乐比赛		FUN_140bc7270 1745093 比賽（competitionst）；of 後是節慶名（世界生成的名稱）
+The Poetry Competition	詩歌比賽	诗歌比赛		FUN_140bc7270 1745093 比賽（competitionst）；of 後是節慶名（世界生成的名稱）
+The Wrestling Competition	摔角比賽	摔跤比赛		FUN_140bc7270 1745093 比賽（competitionst）；of 後是節慶名（世界生成的名稱）
+The Gladiatory Games	角鬥競技	角斗竞技		FUN_140bc7270 1745093 比賽（competitionst）；of 後是節慶名（世界生成的名稱）
+The Air Race	空中競速賽	空中竞速赛		FUN_140bc7270 1745093 比賽（competitionst）；of 後是節慶名（世界生成的名稱）
+The Competition	比賽	比赛		FUN_140bc7270 1745093 比賽（competitionst）；of 後是節慶名（世界生成的名稱）；找不到節慶或比賽種類
+The Procession	遊行	游行		FUN_140bc7780 1745305 遊行（processionst）；of 後是節慶名
+The Opening Ceremony	開幕典禮	开幕典礼		FUN_140bc79b0 1745382 典禮（ceremonyst）；of 後是節慶名
+The Closing Ceremony	閉幕典禮	闭幕典礼		FUN_140bc79b0 1745382 典禮（ceremonyst）；of 後是節慶名
+The Main Ceremony	主典禮	主典礼		FUN_140bc79b0 1745382 典禮（ceremonyst）；of 後是節慶名
+The Ceremony	典禮	典礼		FUN_140bc79b0 1745382 典禮（ceremonyst）；of 後是節慶名
+The Race	賽跑	赛跑		FUN_140bc7270 1745093 比賽（competitionst）；of 後是節慶名（世界生成的名稱）；賽跑
+Monster	怪物	怪物	inner	FUN_140bc6880 1744715 野獸肆虐（beast_attackst）；兩隻以上才有種族或 Monster 前綴，正好一隻才有 of 人物：兩隻以上、種族不同時的前綴
+Vampire	吸血鬼	吸血鬼	inner	FUN_140bc5e60 1744308 肅清（purgest）；形容詞取自集合的 adjective 字串：adjective（吸血鬼獵殺）
+The Second Race	第二場賽跑	第二场赛跑		FUN_140bc7270 1745093 比賽（competitionst）；of 後是節慶名（世界生成的名稱）；賽跑；序數寫死（避免與種族名混淆）
+The Third Race	第三場賽跑	第三场赛跑		FUN_140bc7270 1745093 比賽（competitionst）；of 後是節慶名（世界生成的名稱）；賽跑；序數寫死（避免與種族名混淆）
+The Fourth Race	第四場賽跑	第四场赛跑		FUN_140bc7270 1745093 比賽（competitionst）；of 後是節慶名（世界生成的名稱）；賽跑；序數寫死（避免與種族名混淆）
+The Fifth Race	第五場賽跑	第五场赛跑		FUN_140bc7270 1745093 比賽（competitionst）；of 後是節慶名（世界生成的名稱）；賽跑；序數寫死（避免與種族名混淆）
+The Sixth Race	第六場賽跑	第六场赛跑		FUN_140bc7270 1745093 比賽（competitionst）；of 後是節慶名（世界生成的名稱）；賽跑；序數寫死（避免與種族名混淆）
+The Seventh Race	第七場賽跑	第七场赛跑		FUN_140bc7270 1745093 比賽（competitionst）；of 後是節慶名（世界生成的名稱）；賽跑；序數寫死（避免與種族名混淆）
+The Eighth Race	第八場賽跑	第八场赛跑		FUN_140bc7270 1745093 比賽（competitionst）；of 後是節慶名（世界生成的名稱）；賽跑；序數寫死（避免與種族名混淆）
+The Ninth Race	第九場賽跑	第九场赛跑		FUN_140bc7270 1745093 比賽（competitionst）；of 後是節慶名（世界生成的名稱）；賽跑；序數寫死（避免與種族名混淆）
+The Tenth Race	第十場賽跑	第十场赛跑		FUN_140bc7270 1745093 比賽（competitionst）；of 後是節慶名（世界生成的名稱）；賽跑；序數寫死（避免與種族名混淆）
+The Eleventh Race	第十一場賽跑	第十一场赛跑		FUN_140bc7270 1745093 比賽（competitionst）；of 後是節慶名（世界生成的名稱）；賽跑；序數寫死（避免與種族名混淆）
+The Twelfth Race	第十二場賽跑	第十二场赛跑		FUN_140bc7270 1745093 比賽（competitionst）；of 後是節慶名（世界生成的名稱）；賽跑；序數寫死（避免與種族名混淆）
+The Thirteenth Race	第十三場賽跑	第十三场赛跑		FUN_140bc7270 1745093 比賽（competitionst）；of 後是節慶名（世界生成的名稱）；賽跑；序數寫死（避免與種族名混淆）
+The Fourteenth Race	第十四場賽跑	第十四场赛跑		FUN_140bc7270 1745093 比賽（competitionst）；of 後是節慶名（世界生成的名稱）；賽跑；序數寫死（避免與種族名混淆）
+The Fifteenth Race	第十五場賽跑	第十五场赛跑		FUN_140bc7270 1745093 比賽（competitionst）；of 後是節慶名（世界生成的名稱）；賽跑；序數寫死（避免與種族名混淆）
+The Sixteenth Race	第十六場賽跑	第十六场赛跑		FUN_140bc7270 1745093 比賽（competitionst）；of 後是節慶名（世界生成的名稱）；賽跑；序數寫死（避免與種族名混淆）
+The Seventeenth Race	第十七場賽跑	第十七场赛跑		FUN_140bc7270 1745093 比賽（competitionst）；of 後是節慶名（世界生成的名稱）；賽跑；序數寫死（避免與種族名混淆）
+The Eighteenth Race	第十八場賽跑	第十八场赛跑		FUN_140bc7270 1745093 比賽（competitionst）；of 後是節慶名（世界生成的名稱）；賽跑；序數寫死（避免與種族名混淆）
+The Nineteenth Race	第十九場賽跑	第十九场赛跑		FUN_140bc7270 1745093 比賽（competitionst）；of 後是節慶名（世界生成的名稱）；賽跑；序數寫死（避免與種族名混淆）

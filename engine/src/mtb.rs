@@ -474,7 +474,8 @@ pub unsafe fn rewrite(mtb: usize, dict: &Dict, note_miss: impl FnOnce(&[u8])) ->
         // (每個單字的計畫, 有連結時每個單字的新座標)
         let planned = plain_text(words, l, pal.as_ref()).and_then(|(key, links)| {
             // 句型漏掉或重複了名字也算沒翻：連結字沒有位置可放
-            let Some(t) = dict.translate_paragraph(&key).filter(|t| dict::link_order(t, links.len()).is_some()) else {
+            let (t, complete) = dict.translate_paragraph(&key);
+            let Some(t) = t.filter(|t| dict::link_order(t, links.len()).is_some()) else {
                 if links.is_empty() {
                     note_miss(&key);
                 } else {
@@ -482,6 +483,10 @@ pub unsafe fn rewrite(mtb: usize, dict: &Dict, note_miss: impl FnOnce(&[u8])) ->
                 }
                 return None;
             };
+            if !complete {
+                // 傳說頁有幾段翻不出來（照原文畫）：整段記下，之後補
+                note_miss(&readable(&key, words, &links, l));
+            }
             if links.is_empty() {
                 plan_words(words, width, &t, dict, l, pal.as_ref()).map(|p| (p, None))
             } else {

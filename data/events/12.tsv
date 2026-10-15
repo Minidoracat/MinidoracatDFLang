@@ -1,0 +1,135 @@
+en	zh-Hant	zh-Hans	align	note
+{1} received the title of {2} in {3} given to all new members.	{1}獲得了{3}授予所有新成員的{2}頭銜。	{1}获得了{3}授予所有新成员的{2}头衔。	inner	FUN_140b7a420 L1691996（add_hf_entity_honor） L1692029 新成員一律授予
+{1} received the title of {2} in {3} after {%4}, and {%5}.	{1}在{4}並{5}後，獲得了{3}的{2}頭銜。	{1}在{4}并{5}后，获得了{3}的{2}头衔。	inner	FUN_140b7a420 L1691996（add_hf_entity_honor） L1692046 授予條件清單（三項以上；{4} 由 lists.tsv 接成、）；寫在兩項、一項版前
+{1} received the title of {2} in {3} after {%4} and {%5}.	{1}在{4}並{5}後，獲得了{3}的{2}頭銜。	{1}在{4}并{5}后，获得了{3}的{2}头衔。	inner	FUN_140b7a420 L1691996（add_hf_entity_honor） L1692046 授予條件兩項
+{1} received the title of {2} in {3} after {%4}.	{1}在{4}後，獲得了{3}的{2}頭銜。	{1}在{4}后，获得了{3}的{2}头衔。	inner	FUN_140b7a420 L1691996（add_hf_entity_honor） L1692046 授予條件一項
+{1} received the title of {2} in {3}.	{1}獲得了{3}的{2}頭銜。	{1}获得了{3}的{2}头衔。	inner	FUN_140b7a420 L1691996（add_hf_entity_honor） 沒有授予條件
+participating in {#1} battles	參與 {1} 場戰鬥	参与 {1} 场战斗	inner	FUN_140b7a420 L1691996（add_hf_entity_honor） 授予條件項目（只給本檔 after 子句用） L1692162
+slaying {#1} enemies	殺死 {1} 名敵人	杀死 {1} 名敌人	inner	FUN_140b7a420 L1691996（add_hf_entity_honor） 授予條件項目（只給本檔 after 子句用） L1692193
+{#1} years of membership	成為成員滿 {1} 年	成为成员满 {1} 年	inner	FUN_140b7a420 L1691996（add_hf_entity_honor） 授予條件項目（只給本檔 after 子句用） L1692223（遊戲在數字前多拼一個空白，段落框收成一個）
+the bestowal of the title of {1} in {2} upon {3}	{2}授予{3}{1}頭銜	{2}授予{3}{1}头衔	inner	FUN_140b7a9f0 L1692253（add_hf_entity_honor 短語）
+{1} dissolved.	{1}解散了。	{1}解散了。	inner	FUN_140b7ab20 L1692282（entity_dissolved）；原因子句（FUN_140b5a6c0）由 gen_dates 的原因變體處理
+the dissolution of {1}	{1}的解散	{1}的解散	inner	FUN_140b7abe0 L1692299（entity_dissolved 短語）；原因子句未處理
+{1} purchased {2} in {3} formerly owned by {4}.	{1}購得了{3}原屬{4}的{2}。	{1}购得了{3}原属{4}的{2}。	inner	FUN_140b7b230 L1692529（building_profile_acquired） L1692553 前任業主（L1692576/L1692581）；寫在無業主版前
+{1} purchased {2} in {3}.	{1}購得了{3}的{2}。	{1}购得了{3}的{2}。	inner	FUN_140b7b230 L1692529（building_profile_acquired） L1692553；{2} 建物（FUN_140b93cf0：a house… 或建築連結）；寫在購買裝備句前
+{1} inherited {2} in {3} formerly owned by {4}.	{1}繼承了{3}原屬{4}的{2}。	{1}继承了{3}原属{4}的{2}。	inner	FUN_140b7b230 L1692529（building_profile_acquired） L1692559 前任業主（L1692576/L1692581）；寫在無業主版前
+{1} inherited {2} in {3}.	{1}繼承了{3}的{2}。	{1}继承了{3}的{2}。	inner	FUN_140b7b230 L1692529（building_profile_acquired） L1692559；{2} 建物（FUN_140b93cf0：a house… 或建築連結）；寫在購買裝備句前
+{1} rebuilt {2} in {3} formerly owned by {4}.	{1}重建了{3}原屬{4}的{2}。	{1}重建了{3}原属{4}的{2}。	inner	FUN_140b7b230 L1692529（building_profile_acquired） L1692564 前任業主（L1692576/L1692581）；寫在無業主版前
+the purchase of {1} in {2} by {3}	{3}購得{2}的{1}	{3}购得{2}的{1}	inner	FUN_140b7b400 L1692590（building_profile_acquired 短語）；寫在購買裝備短語前
+the inheritance of {1} in {2} by {3}	{3}繼承{2}的{1}	{3}继承{2}的{1}	inner	FUN_140b7b400 L1692590（building_profile_acquired 短語）；寫在購買裝備短語前
+{1} purchased {%2}, which {3} received.	{1}購買了{2}，由{3}領受。	{1}购买了{2}，由{3}领受。	inner	FUN_140b7ac70 L1692314（entity_equipment_purchase） L1692372 有受領人
+the purchase of {%1} by {2}	{2}購買{1}	{2}购买{1}	inner	FUN_140b7ae50 L1692382（entity_equipment_purchase 短語）
+{1} had a dungeon constructed within {2} in {3}.	{1}下令在{3}的{2}內修建地牢。	{1}下令在{3}的{2}内修建地牢。	inner	FUN_140b7af80 L1692433（modified_building） L1692455；{2} 建築（FUN_140b94090）
+{1} had the fortifications improved of {2} in {3}.	{1}下令強化{3}的{2}的防禦工事。	{1}下令强化{3}的{2}的防御工事。	inner	FUN_140b7af80 L1692433（modified_building） L1692459；{2} 建築（FUN_140b94090）
+{1} had a gated courtyard added to {2} in {3}.	{1}下令為{3}的{2}增建有門的庭院。	{1}下令为{3}的{2}增建有门的庭院。	inner	FUN_140b7af80 L1692433（modified_building） L1692463；{2} 建築（FUN_140b94090）
+{1} had a feast hall added to {2} in {3}.	{1}下令為{3}的{2}增建宴會廳。	{1}下令为{3}的{2}增建宴会厅。	inner	FUN_140b7af80 L1692433（modified_building） L1692468；{2} 建築（FUN_140b94090）
+the addition of a dungeon to {1} in {2} by {3}	{3}在{2}的{1}內修建地牢	{3}在{2}的{1}内修建地牢	inner	FUN_140b7b0e0 L1692482（modified_building 短語）
+the addition of improved fortifications to {1} in {2} by {3}	{3}強化{2}的{1}的防禦工事	{3}强化{2}的{1}的防御工事	inner	FUN_140b7b0e0 L1692482（modified_building 短語）
+the addition of a gated courtyard to {1} in {2} by {3}	{3}為{2}的{1}增建有門的庭院	{3}为{2}的{1}增建有门的庭院	inner	FUN_140b7b0e0 L1692482（modified_building 短語）
+the addition of a feast hall to {1} in {2} by {3}	{3}為{2}的{1}增建宴會廳	{3}为{2}的{1}增建宴会厅	inner	FUN_140b7b0e0 L1692482（modified_building 短語）
+{1} preached to {2}, inveighing against {3} at {4}.	{1}在{4}向{2}佈道，抨擊{3}。	{1}在{4}向{2}布道，抨击{3}。	inner	FUN_140b7b540 L1692635（hf_preach） L1692652 主題 0xb＋地點；寫在無地點版前
+{1} preached to {2}, inveighing against {3}.	{1}向{2}佈道，抨擊{3}。	{1}向{2}布道，抨击{3}。	inner	FUN_140b7b540 L1692635（hf_preach） L1692652 主題 0xb
+{1} preached to {2}, urging love be shown to {3} at {4}.	{1}在{4}向{2}佈道，呼籲關愛{3}。	{1}在{4}向{2}布道，呼吁关爱{3}。	inner	FUN_140b7b540 L1692635（hf_preach） L1692659 主題 0xc＋地點
+{1} preached to {2}, urging love be shown to {3}.	{1}向{2}佈道，呼籲關愛{3}。	{1}向{2}布道，呼吁关爱{3}。	inner	FUN_140b7b540 L1692635（hf_preach） L1692659 主題 0xc
+the sermon of {1} at {2} in {#3} setting {4} against {5}	{3}年{1}在{2}煽動{4}敵視{5}的佈道	{3}年{1}在{2}煽动{4}敌视{5}的布道	inner	FUN_140b7b6a0 L1692673（hf_preach 短語：日期在中間，自己寫三種日期） L1692689
+the sermon of {1} at {2} in the {@3} of {#4} setting {5} against {6}	{4}年{3}{1}在{2}煽動{5}敵視{6}的佈道	{4}年{3}{1}在{2}煽动{5}敌视{6}的布道	inner	FUN_140b7b6a0 L1692673（hf_preach 短語：日期在中間，自己寫三種日期） L1692689
+the sermon of {1} at {2} in a time before time setting {3} against {4}	太古之時{1}在{2}煽動{3}敵視{4}的佈道	太古之时{1}在{2}煽动{3}敌视{4}的布道	inner	FUN_140b7b6a0 L1692673（hf_preach 短語：日期在中間，自己寫三種日期） L1692689
+the sermon of {1} at {2} in {#3} urging love between {4} and {5}	{3}年{1}在{2}呼籲{4}與{5}友愛的佈道	{3}年{1}在{2}呼吁{4}与{5}友爱的布道	inner	FUN_140b7b6a0 L1692673（hf_preach 短語：日期在中間，自己寫三種日期） L1692698
+the sermon of {1} at {2} in the {@3} of {#4} urging love between {5} and {6}	{4}年{3}{1}在{2}呼籲{5}與{6}友愛的佈道	{4}年{3}{1}在{2}呼吁{5}与{6}友爱的布道	inner	FUN_140b7b6a0 L1692673（hf_preach 短語：日期在中間，自己寫三種日期） L1692698
+the sermon of {1} at {2} in a time before time urging love between {3} and {4}	太古之時{1}在{2}呼籲{3}與{4}友愛的佈道	太古之时{1}在{2}呼吁{3}与{4}友爱的布道	inner	FUN_140b7b6a0 L1692673（hf_preach 短語：日期在中間，自己寫三種日期） L1692698
+the sermon of {1} at {2} in {#3} 	{3}年{1}在{2}的佈道	{3}年{1}在{2}的布道	inner	FUN_140b7b6a0 L1692673（hf_preach 短語：日期在中間，自己寫三種日期） 主題以外：遊戲在日期後多拼一個空白（L1692687），句型照抄結尾空白
+the sermon of {1} at {2} in the {@3} of {#4} 	{4}年{3}{1}在{2}的佈道	{4}年{3}{1}在{2}的布道	inner	FUN_140b7b6a0 L1692673（hf_preach 短語：日期在中間，自己寫三種日期） 主題以外：遊戲在日期後多拼一個空白（L1692687），句型照抄結尾空白
+the sermon of {1} at {2} in a time before time 	太古之時{1}在{2}的佈道	太古之时{1}在{2}的布道	inner	FUN_140b7b6a0 L1692673（hf_preach 短語：日期在中間，自己寫三種日期） 主題以外：遊戲在日期後多拼一個空白（L1692687），句型照抄結尾空白
+{1} of {2} persecuted {3} in {4}.	{2}的{1}在{4}迫害了{3}。	{2}的{1}在{4}迫害了{3}。	inner	FUN_140b7b7f0 L1692709（entity_persecuted） L1692742 人物＋所屬團體；寫在無人物版前
+{1} persecuted {2} in {3}.	{1}在{3}迫害了{2}。	{1}在{3}迫害了{2}。	inner	FUN_140b7b7f0 L1692709（entity_persecuted） L1692746 只有團體
+{1}'s property was confiscated.	{1}的財產遭到沒收。	{1}的财产遭到没收。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692793：沒收／驅逐單獨成句
+{1} and others were expelled.	{1}等人遭到驅逐。	{1}等人遭到驱逐。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692808：沒收／驅逐單獨成句
+{1} and {2} and some others were expelled.	{1}、{2}和另外一些人遭到驅逐。	{1}、{2}和另外一些人遭到驱逐。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692835：沒收／驅逐單獨成句
+{1} and {2} were expelled.	{1}和{2}遭到驅逐。	{1}和{2}遭到驱逐。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692838：沒收／驅逐單獨成句
+{1} was expelled with some others.	{1}和另外一些人遭到驅逐。	{1}和另外一些人遭到驱逐。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692887：沒收／驅逐單獨成句
+{1} was expelled with many others.	{1}和其他許多人遭到驅逐。	{1}和其他许多人遭到驱逐。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692891：沒收／驅逐單獨成句
+{1} was expelled with dozens of others.	{1}和其他數十人遭到驅逐。	{1}和其他数十人遭到驱逐。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692896：沒收／驅逐單獨成句
+{1} was expelled with a hundred or more others.	{1}和其他上百人遭到驅逐。	{1}和其他上百人遭到驱逐。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692901：沒收／驅逐單獨成句
+{1} was expelled with five hundred or more others.	{1}和其他五百人以上遭到驅逐。	{1}和其他五百人以上遭到驱逐。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692906：沒收／驅逐單獨成句
+{1} was expelled with a thousand or more others.	{1}和其他上千人遭到驅逐。	{1}和其他上千人遭到驱逐。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692911：沒收／驅逐單獨成句
+{1} was expelled.	{1}遭到驅逐。	{1}遭到驱逐。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692812/L1692879：沒收／驅逐單獨成句
+and {1} was destroyed	{1}遭到摧毀	{1}遭到摧毁	inner	FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692951：「沒收／驅逐 and 毀壞／褻瀆」的後半（只給本檔 {%n} 用；遊戲在 and 後照樣大寫 Several major…）
+and {1} was destroyed along with smaller sacred sites	{1}遭到摧毀，一些較小的聖地也一併被毀	{1}遭到摧毁，一些较小的圣地也一并被毁	inner	FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692951＋L1692973：「沒收／驅逐 and 毀壞／褻瀆」的後半（只給本檔 {%n} 用；遊戲在 and 後照樣大寫 Several major…）
+and {1} was destroyed along with several smaller sacred sites	{1}遭到摧毀，好幾處較小的聖地也一併被毀	{1}遭到摧毁，好几处较小的圣地也一并被毁	inner	FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692951＋L1692987：「沒收／驅逐 and 毀壞／褻瀆」的後半（只給本檔 {%n} 用；遊戲在 and 後照樣大寫 Several major…）
+and {1} and {2} were destroyed	{1}和{2}遭到摧毀	{1}和{2}遭到摧毁	inner	FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692943：「沒收／驅逐 and 毀壞／褻瀆」的後半（只給本檔 {%n} 用；遊戲在 and 後照樣大寫 Several major…）
+and {1} and {2} were destroyed along with smaller sacred sites	{1}和{2}遭到摧毀，一些較小的聖地也一併被毀	{1}和{2}遭到摧毁，一些较小的圣地也一并被毁	inner	FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692943＋L1692973：「沒收／驅逐 and 毀壞／褻瀆」的後半（只給本檔 {%n} 用；遊戲在 and 後照樣大寫 Several major…）
+and {1} and {2} were destroyed along with several smaller sacred sites	{1}和{2}遭到摧毀，好幾處較小的聖地也一併被毀	{1}和{2}遭到摧毁，好几处较小的圣地也一并被毁	inner	FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692943＋L1692987：「沒收／驅逐 and 毀壞／褻瀆」的後半（只給本檔 {%n} 用；遊戲在 and 後照樣大寫 Several major…）
+Most property was confiscated {%1}.	大部分財產遭到沒收，{1}。	大部分财产遭到没收，{1}。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692782＋ and 毀壞／褻瀆（後半見 and … inner 句型）
+{1}'s property was confiscated {%2}.	{1}的財產遭到沒收，{2}。	{1}的财产遭到没收，{2}。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692793＋ and 毀壞／褻瀆（後半見 and … inner 句型）
+{1} and others were expelled {%2}.	{1}等人遭到驅逐，{2}。	{1}等人遭到驱逐，{2}。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692808＋ and 毀壞／褻瀆（後半見 and … inner 句型）
+Somebody was expelled {%1}.	有一人遭到驅逐，{1}。	有一人遭到驱逐，{1}。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692820＋ and 毀壞／褻瀆（後半見 and … inner 句型）
+A few people were expelled {%1}.	有數人遭到驅逐，{1}。	有数人遭到驱逐，{1}。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692824＋ and 毀壞／褻瀆（後半見 and … inner 句型）
+{1} and {2} and some others were expelled {%3}.	{1}、{2}和另外一些人遭到驅逐，{3}。	{1}、{2}和另外一些人遭到驱逐，{3}。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692835＋ and 毀壞／褻瀆（後半見 and … inner 句型）
+{1} and {2} were expelled {%3}.	{1}和{2}遭到驅逐，{3}。	{1}和{2}遭到驱逐，{3}。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692838＋ and 毀壞／褻瀆（後半見 and … inner 句型）
+Several people were expelled {%1}.	有好幾人遭到驅逐，{1}。	有好几人遭到驱逐，{1}。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692843＋ and 毀壞／褻瀆（後半見 and … inner 句型）
+Dozens of people were expelled {%1}.	有數十人遭到驅逐，{1}。	有数十人遭到驱逐，{1}。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692848＋ and 毀壞／褻瀆（後半見 and … inner 句型）
+A hundred or more people were expelled {%1}.	有上百人遭到驅逐，{1}。	有上百人遭到驱逐，{1}。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692853＋ and 毀壞／褻瀆（後半見 and … inner 句型）
+Five hundred or more people were expelled {%1}.	有五百人以上遭到驅逐，{1}。	有五百人以上遭到驱逐，{1}。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692858＋ and 毀壞／褻瀆（後半見 and … inner 句型）
+A thousand or more people were expelled {%1}.	有上千人遭到驅逐，{1}。	有上千人遭到驱逐，{1}。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692863＋ and 毀壞／褻瀆（後半見 and … inner 句型）
+{1} was expelled with some others {%2}.	{1}和另外一些人遭到驅逐，{2}。	{1}和另外一些人遭到驱逐，{2}。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692887＋ and 毀壞／褻瀆（後半見 and … inner 句型）
+{1} was expelled with many others {%2}.	{1}和其他許多人遭到驅逐，{2}。	{1}和其他许多人遭到驱逐，{2}。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692891＋ and 毀壞／褻瀆（後半見 and … inner 句型）
+{1} was expelled with dozens of others {%2}.	{1}和其他數十人遭到驅逐，{2}。	{1}和其他数十人遭到驱逐，{2}。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692896＋ and 毀壞／褻瀆（後半見 and … inner 句型）
+{1} was expelled with a hundred or more others {%2}.	{1}和其他上百人遭到驅逐，{2}。	{1}和其他上百人遭到驱逐，{2}。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692901＋ and 毀壞／褻瀆（後半見 and … inner 句型）
+{1} was expelled with five hundred or more others {%2}.	{1}和其他五百人以上遭到驅逐，{2}。	{1}和其他五百人以上遭到驱逐，{2}。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692906＋ and 毀壞／褻瀆（後半見 and … inner 句型）
+{1} was expelled with a thousand or more others {%2}.	{1}和其他上千人遭到驅逐，{2}。	{1}和其他上千人遭到驱逐，{2}。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692911＋ and 毀壞／褻瀆（後半見 and … inner 句型）
+{1} was expelled {%2}.	{1}遭到驅逐，{2}。	{1}遭到驱逐，{2}。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692812/L1692879＋ and 毀壞／褻瀆（後半見 and … inner 句型）
+{1} was destroyed along with smaller sacred sites.	{1}遭到摧毀，一些較小的聖地也一併被毀。	{1}遭到摧毁，一些较小的圣地也一并被毁。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692951＋L1692973：毀壞／褻瀆單獨成句
+{1} was destroyed along with several smaller sacred sites.	{1}遭到摧毀，好幾處較小的聖地也一併被毀。	{1}遭到摧毁，好几处较小的圣地也一并被毁。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692951＋L1692987：毀壞／褻瀆單獨成句
+{1} and {2} were destroyed.	{1}和{2}遭到摧毀。	{1}和{2}遭到摧毁。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692943：毀壞／褻瀆單獨成句
+{1} and {2} were destroyed along with smaller sacred sites.	{1}和{2}遭到摧毀，一些較小的聖地也一併被毀。	{1}和{2}遭到摧毁，一些较小的圣地也一并被毁。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692943＋L1692973：毀壞／褻瀆單獨成句
+{1} and {2} were destroyed along with several smaller sacred sites.	{1}和{2}遭到摧毀，好幾處較小的聖地也一併被毀。	{1}和{2}遭到摧毁，好几处较小的圣地也一并被毁。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692943＋L1692987：毀壞／褻瀆單獨成句
+the persecution of {1} by {2} of {3} in {4}	{3}的{2}在{4}對{1}的迫害	{3}的{2}在{4}对{1}的迫害	inner	FUN_140b7bfb0 L1693014（entity_persecuted 短語） 人物＋團體；寫在其他版前
+the persecution of {1} by {2} in {3}	{2}在{3}對{1}的迫害	{2}在{3}对{1}的迫害	inner	FUN_140b7bfb0 L1693014（entity_persecuted 短語） 只有團體
+the persecution of {1} in {2}	在{2}對{1}的迫害	在{2}对{1}的迫害	inner	FUN_140b7bfb0 L1693014（entity_persecuted 短語） 沒有迫害者
+{1} of {2} breached {3} at {4}.	{2}的{1}在{4}突破了{3}。	{2}的{1}在{4}突破了{3}。	inner	FUN_140b7c0d0 L1693041（entity_breach_feature_layer） L1693051 所屬文明；寫在下一條前；{3} 地底層（FUN_140b94940：the Underworld…）
+{1} breached {2} at {3}.	{1}在{3}突破了{2}。	{1}在{3}突破了{2}。	inner	FUN_140b7c0d0 L1693041（entity_breach_feature_layer）
+the breach of {1} by {2} of {3} at {4}	{3}的{2}在{4}對{1}的突破	{3}的{2}在{4}对{1}的突破	inner	FUN_140b7c1d0 L1693063（entity_breach_feature_layer 短語）；寫在下一條前
+the breach of {1} by {2} at {3}	{2}在{3}對{1}的突破	{2}在{3}对{1}的突破	inner	FUN_140b7c1d0 L1693063（entity_breach_feature_layer 短語）
+several groups, including {1}, swore to support {2} in war if the latter did likewise.	好幾個團體（包括{1}）立誓在戰爭中支援{2}，前提是對方也這麼做。	好几个团体（包括{1}）立誓在战争中支援{2}，前提是对方也这样做。	inner	FUN_140b7c2c0 L1693084（entity_alliance_formed） L1693136 三個以上團體、含焦點團體；寫在下一條前
+several groups swore to support {1} in war if the latter did likewise.	好幾個團體立誓在戰爭中支援{1}，前提是對方也這麼做。	好几个团体立誓在战争中支援{1}，前提是对方也这样做。	inner	FUN_140b7c2c0 L1693084（entity_alliance_formed） L1693130 三個以上團體
+{1} and {2} swore to support {3} in war if the latter did likewise.	{1}與{2}立誓在戰爭中支援{3}，前提是對方也這麼做。	{1}与{2}立誓在战争中支援{3}，前提是对方也这样做。	inner	FUN_140b7c2c0 L1693084（entity_alliance_formed） L1693120 兩個團體；寫在一個團體版前
+{1} swore to support {2} in war if the latter did likewise.	{1}立誓在戰爭中支援{2}，前提是對方也這麼做。	{1}立誓在战争中支援{2}，前提是对方也这样做。	inner	FUN_140b7c2c0 L1693084（entity_alliance_formed） L1693125 一個團體
+the alliance between {1} and several groups	{1}與好幾個團體的同盟	{1}与好几个团体的同盟	inner	FUN_140b7c5e0 L1693200（entity_alliance_formed 短語） 三個以上；寫在其他版前
+the alliance between {1} and {2} and {3}	{1}與{2}、{3}的同盟	{1}与{2}、{3}的同盟	inner	FUN_140b7c5e0 L1693200（entity_alliance_formed 短語） 兩個；寫在一個版前
+the alliance between {1} and {2}	{1}與{2}的同盟	{1}与{2}的同盟	inner	FUN_140b7c5e0 L1693200（entity_alliance_formed 短語）
+{1} ransomed {2} to {3} of {4}.	{1}收取贖金，將{2}交給{4}的{3}。	{1}收取赎金，将{2}交给{4}的{3}。	inner	FUN_140b7c6e0 L1693229（hf_ransomed） L1693243 付款人＋團體；寫在下一條前
+{1} ransomed {2} to {3}.	{1}收取贖金，將{2}交給{3}。	{1}收取赎金，将{2}交给{3}。	inner	FUN_140b7c6e0 L1693229（hf_ransomed） L1693241 付款人或付款團體
+{1} ransomed {2}.	{1}收取贖金後放走了{2}。	{1}收取赎金后放走了{2}。	inner	FUN_140b7c6e0 L1693229（hf_ransomed） 沒有付款人
+{1} was sent to {2}.	{1}被送往{2}。	{1}被送往{2}。		FUN_140b7c6e0 L1693229（hf_ransomed） L1693253 第二句（.  之後），單獨成句
+the ransom of {1} to {2} of {3} by {4}	{4}收取贖金將{1}交給{3}的{2}	{4}收取赎金将{1}交给{3}的{2}	inner	FUN_140b7c8b0 L1693261（hf_ransomed 短語）；寫在下一條前
+the ransom of {1} to {2} by {3}	{3}收取贖金將{1}交給{2}	{3}收取赎金将{1}交给{2}	inner	FUN_140b7c8b0 L1693261（hf_ransomed 短語）
+the ransom of {1} by {2}	{2}收取贖金放走{1}	{2}收取赎金放走{1}	inner	FUN_140b7c8b0 L1693261（hf_ransomed 短語）
+{1} sold {2} to {3} in {4}.	{1}在{4}將{2}賣給了{3}。	{1}在{4}将{2}卖给了{3}。	inner	FUN_140b7ca00 L1693286（hf_enslaved）
+the sale of {1} to {2} in {3} by {4}	{4}在{3}將{1}賣給{2}	{4}在{3}将{1}卖给{2}	inner	FUN_140b7cb20 L1693306（hf_enslaved 短語）
+{1} sabotaged the activities of {2} at {3}.	{1}在{3}破壞了{2}的活動。	{1}在{3}破坏了{2}的活动。	inner	FUN_140b7cc30 L1693325（sabotage） L1693344 有地點；寫在下一條前
+{1} sabotaged the activities of {2}.	{1}破壞了{2}的活動。	{1}破坏了{2}的活动。	inner	FUN_140b7cc30 L1693325（sabotage）
+the sabotage of the activities of {1} at {2} by {3}	{3}在{2}對{1}活動的破壞	{3}在{2}对{1}活动的破坏	inner	FUN_140b7cd50 L1693352（sabotage 短語）；寫在下一條前
+the sabotage of the activities of {1} by {2}	{2}對{1}活動的破壞	{2}对{1}活动的破坏	inner	FUN_140b7cd50 L1693352（sabotage 短語）
+{1} was recognized and arrested by {2}.	{1}被{2}認出並逮捕。	{1}被{2}认出并逮捕。	inner	FUN_140b7ce60 L1693378（hf_interrogated） L1693401 被認出＋逮捕團體；寫在其他版前
+{1} was recognized and arrested.	{1}被認出並遭到逮捕。	{1}被认出并遭到逮捕。	inner	FUN_140b7ce60 L1693378（hf_interrogated） L1693401 被認出
+{1} was arrested by {2}.	{1}被{2}逮捕。	{1}被{2}逮捕。	inner	FUN_140b7ce60 L1693378（hf_interrogated） L1693405 逮捕團體
+{1} was arrested.	{1}遭到逮捕。	{1}遭到逮捕。	inner	FUN_140b7ce60 L1693378（hf_interrogated） L1693405
+After being interrogated by {1}, {2} implicated {3}, {4}, and {5} but did not reveal everything.	{2}在接受{1}審訊後供出了{3}、{4}和{5}，但並未全盤托出。	{2}在接受{1}审讯后供出了{3}、{4}和{5}，但并未全盘托出。		FUN_140b7ce60 L1693378（hf_interrogated） 第二句（.  之後），單獨成句 L1693416＋L1693502 供出名單（一、二、三人以上；四人以上時前幾人連同英文逗號一起放進第一個佔位）
+After being interrogated by {1}, {2} implicated {3}, {4}, and {5}.	{2}在接受{1}審訊後供出了{3}、{4}和{5}。	{2}在接受{1}审讯后供出了{3}、{4}和{5}。		FUN_140b7ce60 L1693378（hf_interrogated） 第二句（.  之後），單獨成句 L1693416 供出名單（一、二、三人以上；四人以上時前幾人連同英文逗號一起放進第一個佔位）
+After being interrogated by {1}, {2} implicated {3} and {4} but did not reveal everything.	{2}在接受{1}審訊後供出了{3}和{4}，但並未全盤托出。	{2}在接受{1}审讯后供出了{3}和{4}，但并未全盘托出。		FUN_140b7ce60 L1693378（hf_interrogated） 第二句（.  之後），單獨成句 L1693416＋L1693502 供出名單（一、二、三人以上；四人以上時前幾人連同英文逗號一起放進第一個佔位）
+After being interrogated by {1}, {2} implicated {3} and {4}.	{2}在接受{1}審訊後供出了{3}和{4}。	{2}在接受{1}审讯后供出了{3}和{4}。		FUN_140b7ce60 L1693378（hf_interrogated） 第二句（.  之後），單獨成句 L1693416 供出名單（一、二、三人以上；四人以上時前幾人連同英文逗號一起放進第一個佔位）
+After being interrogated by {1}, {2} implicated {3} but did not reveal everything.	{2}在接受{1}審訊後供出了{3}，但並未全盤托出。	{2}在接受{1}审讯后供出了{3}，但并未全盘托出。		FUN_140b7ce60 L1693378（hf_interrogated） 第二句（.  之後），單獨成句 L1693416＋L1693502 供出名單（一、二、三人以上；四人以上時前幾人連同英文逗號一起放進第一個佔位）
+After being interrogated by {1}, {2} implicated {3}.	{2}在接受{1}審訊後供出了{3}。	{2}在接受{1}审讯后供出了{3}。		FUN_140b7ce60 L1693378（hf_interrogated） 第二句（.  之後），單獨成句 L1693416 供出名單（一、二、三人以上；四人以上時前幾人連同英文逗號一起放進第一個佔位）
+After being interrogated, {1} implicated {2}, {3}, and {4} but did not reveal everything.	{1}在接受審訊後供出了{2}、{3}和{4}，但並未全盤托出。	{1}在接受审讯后供出了{2}、{3}和{4}，但并未全盘托出。		FUN_140b7ce60 L1693378（hf_interrogated） 第二句（.  之後），單獨成句 L1693414＋L1693502 供出名單（一、二、三人以上；四人以上時前幾人連同英文逗號一起放進第一個佔位）
+After being interrogated, {1} implicated {2}, {3}, and {4}.	{1}在接受審訊後供出了{2}、{3}和{4}。	{1}在接受审讯后供出了{2}、{3}和{4}。		FUN_140b7ce60 L1693378（hf_interrogated） 第二句（.  之後），單獨成句 L1693414 供出名單（一、二、三人以上；四人以上時前幾人連同英文逗號一起放進第一個佔位）
+After being interrogated, {1} implicated {2} and {3} but did not reveal everything.	{1}在接受審訊後供出了{2}和{3}，但並未全盤托出。	{1}在接受审讯后供出了{2}和{3}，但并未全盘托出。		FUN_140b7ce60 L1693378（hf_interrogated） 第二句（.  之後），單獨成句 L1693414＋L1693502 供出名單（一、二、三人以上；四人以上時前幾人連同英文逗號一起放進第一個佔位）
+After being interrogated, {1} implicated {2} and {3}.	{1}在接受審訊後供出了{2}和{3}。	{1}在接受审讯后供出了{2}和{3}。		FUN_140b7ce60 L1693378（hf_interrogated） 第二句（.  之後），單獨成句 L1693414 供出名單（一、二、三人以上；四人以上時前幾人連同英文逗號一起放進第一個佔位）
+After being interrogated, {1} implicated {2} but did not reveal everything.	{1}在接受審訊後供出了{2}，但並未全盤托出。	{1}在接受审讯后供出了{2}，但并未全盘托出。		FUN_140b7ce60 L1693378（hf_interrogated） 第二句（.  之後），單獨成句 L1693414＋L1693502 供出名單（一、二、三人以上；四人以上時前幾人連同英文逗號一起放進第一個佔位）
+After being interrogated, {1} implicated {2}.	{1}在接受審訊後供出了{2}。	{1}在接受审讯后供出了{2}。		FUN_140b7ce60 L1693378（hf_interrogated） 第二句（.  之後），單獨成句 L1693414 供出名單（一、二、三人以上；四人以上時前幾人連同英文逗號一起放進第一個佔位）
+After enduring an interrogation by {1}, {2} was released.	{2}經{1}審訊後獲釋。	{2}经{1}审讯后获释。		FUN_140b7ce60 L1693378（hf_interrogated） 第二句（.  之後），單獨成句 L1693476＋L1693478
+After enduring an interrogation, {1} was released.	{1}經審訊後獲釋。	{1}经审讯后获释。		FUN_140b7ce60 L1693378（hf_interrogated） 第二句（.  之後），單獨成句 L1693476
+Despite the interrogation by {1}, {2} refused to reveal anything and was released.	儘管遭到{1}審訊，{2}仍拒絕透露任何事，隨後獲釋。	尽管遭到{1}审讯，{2}仍拒绝透露任何事情，随后获释。		FUN_140b7ce60 L1693378（hf_interrogated） 第二句（.  之後），單獨成句 L1693487＋L1693490
+Despite the interrogation, {1} refused to reveal anything and was released.	儘管遭到審訊，{1}仍拒絕透露任何事，隨後獲釋。	尽管遭到审讯，{1}仍拒绝透露任何事情，随后获释。		FUN_140b7ce60 L1693378（hf_interrogated） 第二句（.  之後），單獨成句 L1693487
+the arrest and interrogation of {1} by {2} and {3}	{2}和{3}對{1}的逮捕與審訊	{2}和{3}对{1}的逮捕与审讯	inner	FUN_140b7d2f0 L1693509（hf_interrogated 短語） 逮捕團體＋審訊者；寫在下一條前
+the arrest and interrogation of {1} by {2}	{2}對{1}的逮捕與審訊	{2}对{1}的逮捕与审讯	inner	FUN_140b7d2f0 L1693509（hf_interrogated 短語）
+the arrest and interrogation of {1}	對{1}的逮捕與審訊	对{1}的逮捕与审讯	inner	FUN_140b7d2f0 L1693509（hf_interrogated 短語）

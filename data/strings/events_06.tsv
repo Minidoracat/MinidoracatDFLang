@@ -1,0 +1,10 @@
+en	zh-Hant	zh-Hans	align	note
+the attackers had a strong positional advantage	攻方佔有極大的地利	攻方占有极大的地利	inner	FUN_140b6c4a0 1684173 tactical_situation 地利片語（只給完整句 {@n} 用）
+the attackers had a positional advantage	攻方佔有地利	攻方占有地利	inner	FUN_140b6c4a0 1684173 tactical_situation 地利片語（只給完整句 {@n} 用）
+the attackers had a slight positional advantage	攻方略佔地利	攻方略占地利	inner	FUN_140b6c4a0 1684173 tactical_situation 地利片語（只給完整句 {@n} 用）
+the defenders had a strong positional advantage	守方佔有極大的地利	守方占有极大的地利	inner	FUN_140b6c4a0 1684173 tactical_situation 地利片語（只給完整句 {@n} 用）
+the defenders had a positional advantage	守方佔有地利	守方占有地利	inner	FUN_140b6c4a0 1684173 tactical_situation 地利片語（只給完整句 {@n} 用）
+the defenders had a slight positional advantage	守方略佔地利	守方略占地利	inner	FUN_140b6c4a0 1684173 tactical_situation 地利片語（只給完整句 {@n} 用）
+neither side had a positional advantage	雙方皆無地利	双方皆无地利	inner	FUN_140b6c4a0 1684173 tactical_situation 地利片語（只給完整句 {@n} 用）
+unknown lands	未知之地	未知之地	inner	FUN_140b6bf50 1683788／FUN_140b6c210／FUN_140b6c4a0／FUN_140b6cb80 地點不明時
+an unknown peak	某座不明山峰	某座不明山峰	inner	FUN_140b6b8e0 1683529／FUN_140b6bc70 1683620 找不到山峰時

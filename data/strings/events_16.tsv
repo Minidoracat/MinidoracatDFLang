@@ -1,0 +1,47 @@
+en	zh-Hant	zh-Hans	align	note
+added to a grisly mound	堆進駭人的屍堆	堆进骇人的尸堆	inner	history_event_body_abusedst 完整句 FUN_140b83d10 L1697284 case 1：處置方式
+added to a grotesque pillar	砌進怪誕的屍柱	砌进怪诞的尸柱	inner	history_event_body_abusedst 完整句 FUN_140b83d10 L1697284 case 1：處置方式
+added to a gruesome sculpture	嵌進可怖的屍雕	嵌进可怖的尸雕	inner	history_event_body_abusedst 完整句 FUN_140b83d10 L1697284 case 1：處置方式
+horribly mutilated	殘忍肢解	残忍肢解	inner	history_event_body_abusedst 完整句 FUN_140b83d10 L1697284 case 4：處置方式
+animated	復活為行屍	复活为行尸	inner	history_event_body_abusedst 完整句 FUN_140b83d10 L1697284 case 5：處置方式（屍體被賦予活動）
+horrible mutilation of	殘忍肢解	残忍肢解	inner	history_event_body_abusedst 短語 FUN_140b84480 L1697605 case 4：處置方式
+animation of	復活為行屍	复活为行尸	inner	history_event_body_abusedst 短語 FUN_140b84480 L1697605 case 5：處置方式
+lost a fortune	賠了一大筆錢	赔了一大笔钱	inner	history_event_gamblest FUN_140b84e70 L1697966／history_event_tradest FUN_140b85190 L1698088：盈虧結果（inner）
+did poorly	虧了錢	亏了钱	inner	history_event_gamblest FUN_140b84e70 L1697966／history_event_tradest FUN_140b85190 L1698088：盈虧結果（inner）
+broke even	不賺不賠	不赚不赔	inner	history_event_gamblest FUN_140b84e70 L1697966／history_event_tradest FUN_140b85190 L1698088：盈虧結果（inner）
+did well	賺了些錢	赚了些钱	inner	history_event_gamblest FUN_140b84e70 L1697966／history_event_tradest FUN_140b85190 L1698088：盈虧結果（inner）
+made a fortune	大賺一筆	大赚一笔	inner	history_event_gamblest FUN_140b84e70 L1697966／history_event_tradest FUN_140b85190 L1698088：盈虧結果（inner）
+goods	貨物	货物	inner	history_event_tradest FUN_140b85510 L1698246：貨物類別不明時
+They were greatly offended by the locals.	他們受到當地人嚴重冒犯。	他们受到当地人严重冒犯。		history_event_merchantst 完整句 FUN_140b875d0 L1699419：後續句（不帶日期，非 inner）
+They reported a seizure of goods.	他們回報貨物遭到扣押。	他们报告货物遭到扣押。		history_event_merchantst 完整句 FUN_140b875d0 L1699419：後續句（不帶日期，非 inner）
+They reported irregularities with their goods.	他們回報貨物出了問題。	他们报告货物出了问题。		history_event_merchantst 完整句 FUN_140b875d0 L1699419：後續句（不帶日期，非 inner）
+The trade was highly profitable.	這次貿易獲利豐厚。	这次贸易获利丰厚。		history_event_merchantst 完整句 FUN_140b875d0 L1699419：後續句（不帶日期，非 inner）
+tribute delivery	的進貢	的进贡	inner	history_event_merchantst 短語 FUN_140b877e0 L1699487：名詞（形容詞依旗標疊加）
+ill-fated tribute delivery	那次命運多舛的進貢	那次命运多舛的进贡	inner	history_event_merchantst 短語 FUN_140b877e0 L1699487：名詞（形容詞依旗標疊加）
+terrible tribute delivery	那次慘痛的進貢	那次惨痛的进贡	inner	history_event_merchantst 短語 FUN_140b877e0 L1699487：名詞（形容詞依旗標疊加）
+tragic tribute delivery	那次悲慘的進貢	那次悲惨的进贡	inner	history_event_merchantst 短語 FUN_140b877e0 L1699487：名詞（形容詞依旗標疊加）
+unfortunate tribute delivery	那次不愉快的進貢	那次不愉快的进贡	inner	history_event_merchantst 短語 FUN_140b877e0 L1699487：名詞（形容詞依旗標疊加）
+tragic terrible tribute delivery	那次悲慘、慘痛的進貢	那次悲惨、惨痛的进贡	inner	history_event_merchantst 短語 FUN_140b877e0 L1699487：名詞（形容詞依旗標疊加）
+tragic unfortunate tribute delivery	那次悲慘、不愉快的進貢	那次悲惨、不愉快的进贡	inner	history_event_merchantst 短語 FUN_140b877e0 L1699487：名詞（形容詞依旗標疊加）
+costly visit of merchants	那次虧損的商人造訪	那次亏损的商人造访	inner	history_event_merchantst 短語 FUN_140b877e0 L1699487：名詞（形容詞依旗標疊加）
+ill-fated visit of merchants	那次命運多舛的商人造訪	那次命运多舛的商人造访	inner	history_event_merchantst 短語 FUN_140b877e0 L1699487：名詞（形容詞依旗標疊加）
+profitable visit of merchants	那次獲利豐厚的商人造訪	那次获利丰厚的商人造访	inner	history_event_merchantst 短語 FUN_140b877e0 L1699487：名詞（形容詞依旗標疊加）
+terrible visit of merchants	那次慘痛的商人造訪	那次惨痛的商人造访	inner	history_event_merchantst 短語 FUN_140b877e0 L1699487：名詞（形容詞依旗標疊加）
+tragic visit of merchants	那次悲慘的商人造訪	那次悲惨的商人造访	inner	history_event_merchantst 短語 FUN_140b877e0 L1699487：名詞（形容詞依旗標疊加）
+unfortunate visit of merchants	那次不愉快的商人造訪	那次不愉快的商人造访	inner	history_event_merchantst 短語 FUN_140b877e0 L1699487：名詞（形容詞依旗標疊加）
+terrible costly visit of merchants	那次慘痛、虧損的商人造訪	那次惨痛、亏损的商人造访	inner	history_event_merchantst 短語 FUN_140b877e0 L1699487：名詞（形容詞依旗標疊加）
+terrible profitable visit of merchants	那次慘痛、獲利豐厚的商人造訪	那次惨痛、获利丰厚的商人造访	inner	history_event_merchantst 短語 FUN_140b877e0 L1699487：名詞（形容詞依旗標疊加）
+tragic costly visit of merchants	那次悲慘、虧損的商人造訪	那次悲惨、亏损的商人造访	inner	history_event_merchantst 短語 FUN_140b877e0 L1699487：名詞（形容詞依旗標疊加）
+tragic profitable visit of merchants	那次悲慘、獲利豐厚的商人造訪	那次悲惨、获利丰厚的商人造访	inner	history_event_merchantst 短語 FUN_140b877e0 L1699487：名詞（形容詞依旗標疊加）
+tragic terrible visit of merchants	那次悲慘、慘痛的商人造訪	那次悲惨、惨痛的商人造访	inner	history_event_merchantst 短語 FUN_140b877e0 L1699487：名詞（形容詞依旗標疊加）
+tragic unfortunate visit of merchants	那次悲慘、不愉快的商人造訪	那次悲惨、不愉快的商人造访	inner	history_event_merchantst 短語 FUN_140b877e0 L1699487：名詞（形容詞依旗標疊加）
+unfortunate costly visit of merchants	那次不愉快、虧損的商人造訪	那次不愉快、亏损的商人造访	inner	history_event_merchantst 短語 FUN_140b877e0 L1699487：名詞（形容詞依旗標疊加）
+unfortunate profitable visit of merchants	那次不愉快、獲利豐厚的商人造訪	那次不愉快、获利丰厚的商人造访	inner	history_event_merchantst 短語 FUN_140b877e0 L1699487：名詞（形容詞依旗標疊加）
+tragic terrible costly visit of merchants	那次悲慘、慘痛、虧損的商人造訪	那次悲惨、惨痛、亏损的商人造访	inner	history_event_merchantst 短語 FUN_140b877e0 L1699487：名詞（形容詞依旗標疊加）
+tragic terrible profitable visit of merchants	那次悲慘、慘痛、獲利豐厚的商人造訪	那次悲惨、惨痛、获利丰厚的商人造访	inner	history_event_merchantst 短語 FUN_140b877e0 L1699487：名詞（形容詞依旗標疊加）
+tragic unfortunate costly visit of merchants	那次悲慘、不愉快、虧損的商人造訪	那次悲惨、不愉快、亏损的商人造访	inner	history_event_merchantst 短語 FUN_140b877e0 L1699487：名詞（形容詞依旗標疊加）
+tragic unfortunate profitable visit of merchants	那次悲慘、不愉快、獲利豐厚的商人造訪	那次悲惨、不愉快、获利丰厚的商人造访	inner	history_event_merchantst 短語 FUN_140b877e0 L1699487：名詞（形容詞依旗標疊加）
+a grisly mound	駭人的屍堆	骇人的尸堆	inner	history_event_body_abusedst 短語 FUN_140b84480 L1697605 case 1：短語 the construction of {%1} from {%2}（句型在 _events_05，排在 the construction of 前面）
+a grotesque pillar	怪誕的屍柱	怪诞的尸柱	inner	history_event_body_abusedst 短語 FUN_140b84480 L1697605 case 1：短語 the construction of {%1} from {%2}（句型在 _events_05，排在 the construction of 前面）
+a gruesome sculpture	可怖的屍雕	可怖的尸雕	inner	history_event_body_abusedst 短語 FUN_140b84480 L1697605 case 1：短語 the construction of {%1} from {%2}（句型在 _events_05，排在 the construction of 前面）
+Leather Goods	皮革製品	皮革制品		FUN_140289050 L358985 物品類別名（case 0xe）；第十四輪的 goods 條目讓 names.tsv 的 {@1} {@2} 拼成「皮革貨物」，另寫整條

@@ -21,6 +21,8 @@ from pathlib import Path
 
 import opencc
 
+from gen_events import OUTS as EVENT_FILES
+
 ROOT = Path(__file__).resolve().parents[1]
 LANGS = ("zh-Hant", "zh-Hans")
 
@@ -34,6 +36,8 @@ def strings() -> list[dict]:
     """整句字典與句型規則的所有列；file 欄是 strings/xxx.tsv 或 rules/xxx.tsv。"""
     rows = []
     for path in sorted((ROOT / "data").glob("*/*.tsv")):
+        if path in EVENT_FILES:  # 由 data/events 產生（scripts/gen_events.py），查來源就好
+            continue
         rows += [{**r, "file": f"{path.parent.name}/{path.name}"} for r in read_tsv(path)]
     return rows
 

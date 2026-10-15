@@ -1,0 +1,41 @@
+en	zh-Hant	zh-Hans	align	note
+{1} concluded {%2} with {3} and {4} {%5}.	{1}結束了與{3}和{4}的{2}，{5}。	{1}结束了与{3}和{4}的{2}，{5}。	inner	agreement_concluded 完整句 FUN_140b81f00 1696290-1696526：協議種類＋with 另一方名單（FUN_1400e2b80，A, B and C）＋原因；有原因的寫在前面，否則名字佔位會吞掉原因
+{1} concluded {%2} with {3} and {4}.	{1}結束了與{3}和{4}的{2}。	{1}结束了与{3}和{4}的{2}。	inner	同上，無原因
+{1} concluded {%2} with {3} {%4}.	{1}結束了與{3}的{2}，{4}。	{1}结束了与{3}的{2}，{4}。	inner	同上，單一方＋原因
+{1} concluded {%2} with {3}.	{1}結束了與{3}的{2}。	{1}结束了与{3}的{2}。	inner	同上，單一方
+{1} concluded {%2} {%3}.	{1}結束了{2}，{3}。	{1}结束了{2}，{3}。	inner	同上，沒有另一方（或找不到協議：an agreement）＋原因
+{1} concluded {%2}.	{1}結束了{2}。	{1}结束了{2}。	inner	同上
+a request to offer service to {1}	向{1}效力的請求	向{1}效力的请求	inner	FUN_140b81f00 1696403／FUN_140b82a20 1696779 協議種類（後接勢力）
+an agreement to retrieve {1} for {2}	為{2}取回{1}的協議	为{2}取回{1}的协议	inner	FUN_140b81f00 1696412／FUN_140b82a20 1696788 協議種類：取回神器（為某勢力）
+an agreement to retrieve {1}	取回{1}的協議	取回{1}的协议	inner	同上，沒有委託勢力
+the conclusion of {%1} with {2} and {3} by {4} {%5}	{4}{5}結束和{2}及{3}的{1}	{4}{5}结束和{2}及{3}的{1}	inner	agreement_concluded 短語 FUN_140b82a20 1696672-1696862（日期由 _events_00 處理）
+the conclusion of {%1} with {2} and {3} by {4}	{4}結束和{2}及{3}的{1}	{4}结束和{2}及{3}的{1}	inner	同上，無原因
+the conclusion of {%1} with {2} by {3} {%4}	{3}{4}結束和{2}的{1}	{3}{4}结束和{2}的{1}	inner	同上，單一方＋原因
+the conclusion of {%1} with {2} by {3}	{3}結束和{2}的{1}	{3}结束和{2}的{1}	inner	同上，單一方
+the conclusion of {%1} by {2} {%3}	{2}{3}結束{1}	{2}{3}结束{1}	inner	同上，沒有另一方＋原因
+the conclusion of {%1} by {2}	{2}結束{1}	{2}结束{1}	inner	同上
+a declaration of war was made to {1} by {2} at {3}.	{2}在{3}向{1}宣戰。	{2}在{3}向{1}宣战。	inner	topicagreement_made 完整句 FUN_140b82720 1696556-1696577：議題 0xd（宣戰）；{1} 受方、{2} 宣戰方（勢力）、{3} 據點；句號後可能接外交敘述（FUN_1402a71e0／FUN_1402a81f0，另句）
+a declaration of war was made to {1} by {2}.	{2}向{1}宣戰。	{2}向{1}宣战。	inner	同上，無據點
+{%1} proposed by {2} was accepted by {3} at {4}.	{3}在{4}接受了{2}提議的{1}。	{3}在{4}接受了{2}提议的{1}。	inner	同上，其他議題（FUN_140b95020，events_14 的 inner 字串）
+{%1} proposed by {2} was accepted by {3}.	{3}接受了{2}提議的{1}。	{3}接受了{2}提议的{1}。	inner	同上，無據點
+the making of a declaration of war by {1} to {2} at {3}	{1}在{3}向{2}宣戰	{1}在{3}向{2}宣战	inner	topicagreement_made 短語 FUN_140b831e0 1696911-1696936：議題 0xd；兩個勢力的參數反編譯遺失，依完整句推為宣戰方、受方
+the making of a declaration of war by {1} to {2}	{1}向{2}宣戰	{1}向{2}宣战	inner	同上，無據點
+the acceptance of an offer of peace from {1} by {2} at {3}	{2}在{3}接受{1}的和平提議	{2}在{3}接受{1}的和平提议	inner	war_peace_accepted 短語 FUN_140b838f0 1697156-1697165；寫在 topicagreement 的 the acceptance of {%1} of 前面
+the acceptance of an offer of peace from {1} by {2}	{2}接受{1}的和平提議	{2}接受{1}的和平提议	inner	同上，無據點
+the rejection of an offer of peace from {1} by {2} at {3}	{2}在{3}拒絕{1}的和平提議	{2}在{3}拒绝{1}的和平提议	inner	war_peace_rejected 短語 FUN_140b83c50 1697270-1697279
+the rejection of an offer of peace from {1} by {2}	{2}拒絕{1}的和平提議	{2}拒绝{1}的和平提议	inner	同上，無據點
+the acceptance of {%1} of {2} by {3} at {4}	{3}在{4}接受{2}的{1}	{3}在{4}接受{2}的{1}	inner	topicagreement_made 短語 FUN_140b831e0：其他議題（" of " 提議方、" by " 接受方；參數反編譯遺失，依完整句推）
+the acceptance of {%1} of {2} by {3}	{3}接受{2}的{1}	{3}接受{2}的{1}	inner	同上，無據點
+{1} of {2} and {3} of {4} became embroiled in a dispute over {%5}.	{2}的{1}與{4}的{3}陷入了{5}之爭。	{2}的{1}与{4}的{3}陷入了{5}之争。	inner	site_dispute 完整句 FUN_140b83300 1696949-1696994：兩個勢力（of 所在據點，可省）＋爭議對象
+{1} of {2} and {3} became embroiled in a dispute over {%4}.	{2}的{1}與{3}陷入了{4}之爭。	{2}的{1}与{3}陷入了{4}之争。	inner	同上，第二方無據點
+{1} and {2} of {3} became embroiled in a dispute over {%4}.	{1}與{3}的{2}陷入了{4}之爭。	{1}与{3}的{2}陷入了{4}之争。	inner	同上，第一方無據點
+{1} and {2} became embroiled in a dispute over {%3}.	{1}與{2}陷入了{3}之爭。	{1}与{2}陷入了{3}之争。	inner	同上，都無據點
+the dispute between {1} of {2} and {3} of {4} over {%5}	{2}的{1}和{4}的{3}之間的{5}之爭	{2}的{1}和{4}的{3}之间的{5}之争	inner	site_dispute 短語 FUN_140b834b0 1697007-1697051
+the dispute between {1} of {2} and {3} over {%4}	{2}的{1}和{3}之間的{4}之爭	{2}的{1}和{3}之间的{4}之争	inner	同上，第二方無據點
+the dispute between {1} and {2} of {3} over {%4}	{1}和{3}的{2}之間的{4}之爭	{1}和{3}的{2}之间的{4}之争	inner	同上，第一方無據點
+the dispute between {1} and {2} over {%3}	{1}和{2}之間的{3}之爭	{1}和{2}之间的{3}之争	inner	同上，都無據點
+{1} accepted an offer of peace from {2} at {3}.	{1}在{3}接受了{2}的和平提議。	{1}在{3}接受了{2}的和平提议。	inner	war_peace_accepted 完整句 FUN_140b83650 1697080-1697090；句號後可能接外交敘述（另句）
+{1} accepted an offer of peace from {2}.	{1}接受了{2}的和平提議。	{1}接受了{2}的和平提议。	inner	同上，無據點
+{1} rejected an offer of peace from {2} at {3}.	{1}在{3}拒絕了{2}的和平提議。	{1}在{3}拒绝了{2}的和平提议。	inner	war_peace_rejected 完整句 FUN_140b839b0 1697194-1697204；句號後可能接外交敘述（另句）
+{1} rejected an offer of peace from {2}.	{1}拒絕了{2}的和平提議。	{1}拒绝了{2}的和平提议。	inner	同上，無據點
+played for sympathy by appealing to a shared worship of {1}	訴諸雙方對{1}的共同信仰來博取同情	诉诸双方对{1}的共同信仰来博取同情	inner	FUN_1402a81f0 378249-378262 收買手段（外交敘述開場句的 {%n}）；與 sentences_plots_01.tsv 同一條，放進 data/events 才會排在 events/13 的通用 {@1} by {2} 前面（否則譯成「博取同情，由…判決」）

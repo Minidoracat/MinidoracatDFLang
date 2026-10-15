@@ -1,0 +1,71 @@
+en	zh-Hant	zh-Hans	align	note
+{1} ceased to be a claimant for {%2} of {3}.	{1}不再爭奪{3}的{2}之位。	{1}不再争夺{3}的{2}之位。	inner	FUN_140b7eff0 1694548 remove_hf_entity_link 完整句 case 0xc 職位繼承人；排在 ceased to be a {%2} of 前
+{1} ceased to be the captain of the guard of {2}.	{1}不再擔任{2}的衛隊長。	{1}不再担任{2}的卫队长。	inner	FUN_140b7eff0 1694548 remove_hf_entity_link 完整句 case 10 職位名含 of（captain of the guard）；排在 ceased to be the {%2} of 前
+{1} ceased to be the {%2} of {3}.	{1}不再擔任{3}的{2}。	{1}不再担任{3}的{2}。	inner	FUN_140b7eff0 1694548 remove_hf_entity_link 完整句 case 10 職位（只有一人的職位寫 the）；{2} 職位名（依性別 name／name_male／name_female）
+{1} ceased to be a {%2} of {3}.	{1}不再擔任{3}的{2}。	{1}不再担任{3}的{2}。	inner	FUN_140b7eff0 1694548 remove_hf_entity_link 完整句 case 10 職位（多人職位寫 a）；case 0xd 職位的 squad 名（soldier、militia-dwarf…）
+{1} left the service of {2}.	{1}不再為{2}效力。	{1}不再为{2}效力。	inner	FUN_140b7eff0 1694548 remove_hf_entity_link 完整句 case 2 傭兵；排在 left {2} 前
+{1} left ☺{#2}☻.	{1}離開了☺{2}☻。	{1}离开了☺{2}☻。	inner	FUN_140b7eff0 1694548 remove_hf_entity_link 完整句 case 0/1/3/5/7 成員、前成員等；離開的勢力只收一個連結（☺{#2}☻）：寫成 {2} 時帶日期的整句會搶走死因「the dwarf X was left out in the air by…」
+{1} made peace with {2}.	{1}與{2}言和。	{1}与{2}言和。	inner	FUN_140b7eff0 1694548 remove_hf_entity_link 完整句 case 8 敵人
+{1} was brought to the justice of {2}.	{1}受到了{2}的制裁。	{1}受到了{2}的制裁。	inner	FUN_140b7eff0 1694548 remove_hf_entity_link 完整句 case 9 罪犯
+{1} stopped working for {2}.	{1}不再為{2}工作。	{1}不再为{2}工作。	inner	FUN_140b7eff0 1694548 remove_hf_entity_link 完整句 case 0xf 職業
+the end of the membership of {1} in {2}	{1}退出{2}	{1}退出{2}	inner	FUN_140b80ae0 1695558 remove_hf_entity_link 短語 case 0
+the end of the former membership of {1} in {2}	{1}與{2}前成員關係的終結	{1}与{2}前成员关系的终结	inner	FUN_140b80ae0 1695558 remove_hf_entity_link 短語 case 1
+{1} from the mercenary service of {2}	{1}脫離{2}的傭兵職務	{1}脱离{2}的佣兵职务	inner	FUN_140b80ae0 1695558 remove_hf_entity_link 短語 case 2（遊戲沒寫開頭片語，原文是「 X from the mercenary service of Y」）
+the end of the former mercenary status of {1} in {2}	{1}與{2}前傭兵關係的終結	{1}与{2}前佣兵关系的终结	inner	FUN_140b80ae0 1695558 remove_hf_entity_link 短語 case 3
+the escape of {1} from the slavery of {2}	{1}擺脫{2}的奴役	{1}摆脱{2}的奴役	inner	FUN_140b80ae0 1695558 remove_hf_entity_link 短語 case 4
+the end of the former enslavement of {1} by {2}	{1}與{2}前奴役關係的終結	{1}与{2}前奴役关系的终结	inner	FUN_140b80ae0 1695558 remove_hf_entity_link 短語 case 5
+the escape of {1} from the prisons of {2}	{1}逃出{2}的監牢	{1}逃出{2}的监牢	inner	FUN_140b80ae0 1695558 remove_hf_entity_link 短語 case 6
+the end of the former imprisonment of {1} by {2}	{1}與{2}前囚禁關係的終結	{1}与{2}前囚禁关系的终结	inner	FUN_140b80ae0 1695558 remove_hf_entity_link 短語 case 7
+the peace-making of {1} with {2}	{1}與{2}言和	{1}与{2}言和	inner	FUN_140b80ae0 1695558 remove_hf_entity_link 短語 case 8
+the loss of heroic status of {1} and {2}	{1}與{2}失去英雄身分	{1}与{2}失去英雄身份	inner	FUN_140b80ae0 1695558 remove_hf_entity_link 短語 case 9（原文如此，接 and）
+the fall of {1} from the position of captain of the guard of {2}	{1}自{2}的衛隊長之位垮台	{1}从{2}的卫队长之位垮台	inner	FUN_140b80ae0 1695558 remove_hf_entity_link 短語 case 10 職位名含 of；排在通用前
+the removal of {1} from the position of captain of the guard of {2}	{1}被解除{2}的衛隊長之職	{1}被解除{2}的卫队长之职	inner	FUN_140b80ae0 1695558 remove_hf_entity_link 短語 case 10 職位名含 of；排在通用前
+the departure of {1} from the position of captain of the guard of {2}	{1}卸下{2}的衛隊長之職	{1}卸下{2}的卫队长之职	inner	FUN_140b80ae0 1695558 remove_hf_entity_link 短語 case 10 職位名含 of；排在通用前
+the fall of {1} from the position of {%2} of {3}	{1}自{3}的{2}之位垮台	{1}从{3}的{2}之位垮台	inner	FUN_140b80ae0 1695558 remove_hf_entity_link 短語 case 10 職位（fall／removal／departure 依職位旗標）
+the removal of {1} from the position of {%2} of {3}	{1}被解除{3}的{2}之職	{1}被解除{3}的{2}之职	inner	FUN_140b80ae0 1695558 remove_hf_entity_link 短語 case 10 職位（fall／removal／departure 依職位旗標）
+the departure of {1} from the position of {%2} of {3}	{1}卸下{3}的{2}之職	{1}卸下{3}的{2}之职	inner	FUN_140b80ae0 1695558 remove_hf_entity_link 短語 case 10 職位（fall／removal／departure 依職位旗標）
+the end of the claim of {1} to the position of {%2} of {3}	{1}退出{3}的{2}之位爭奪	{1}退出{3}的{2}之位争夺	inner	FUN_140b80ae0 1695558 remove_hf_entity_link 短語 case 0xc
+the loss of status of {1} as a {%2} of {3}	{1}失去{3}的{2}身分	{1}失去{3}的{2}身份	inner	FUN_140b80ae0 1695558 remove_hf_entity_link 短語 case 0xd squad 名
+the end of work {1} for {2}	{1}停止為{2}工作	{1}停止为{2}工作	inner	FUN_140b80ae0 1695558 remove_hf_entity_link 短語 case 0xf（原文如此）
+{1} made contact with {2} at {3}.	{1}在{3}與{2}首次接觸。	{1}在{3}与{2}首次接触。	inner	FUN_140b81170 1695800 first_contact 完整句 有地點；排在無地點前
+{1} made contact with {2}.	{1}與{2}首次接觸。	{1}与{2}首次接触。	inner	FUN_140b81170 1695800 first_contact 完整句
+the first contact of {1} and {2} at {3}	{1}與{2}在{3}的首次接觸	{1}与{2}在{3}的首次接触	inner	FUN_140b81410 1695895 first_contact 短語 有地點；排在無地點前
+the first contact of {1} and {2}	{1}與{2}的首次接觸	{1}与{2}的首次接触	inner	FUN_140b81410 1695895 first_contact 短語
+{1} rejected contact with {2} at {3}.	{1}在{3}拒絕與{2}接觸。	{1}在{3}拒绝与{2}接触。	inner	FUN_140b814d0 1695914 first_contact_failed 完整句 有地點；排在無地點前
+{1} rejected contact with {2}.	{1}拒絕與{2}接觸。	{1}拒绝与{2}接触。	inner	FUN_140b814d0 1695914 first_contact_failed 完整句
+the rejection of contact by {1} of {2} at {3}	{1}在{3}拒絕與{2}接觸	{1}在{3}拒绝与{2}接触	inner	FUN_140b81770 1696009 first_contact_failed 短語 有地點；排在無地點前
+the rejection of contact by {1} of {2}	{1}拒絕與{2}接觸	{1}拒绝与{2}接触	inner	FUN_140b81770 1696009 first_contact_failed 短語
+{%1} between {2} and {3} at {4} concluded fairly.	{2}與{3}在{4}就{1}進行的談判公平收場。	{2}与{3}在{4}就{1}进行的谈判公平收场。	inner	FUN_140b81830 1696028 topicagreement_concluded 完整句 有地點；排在無地點前；{1} 議題（FUN_140b95020）
+{%1} between {2} and {3} at {4} concluded with a positive outcome.	{2}與{3}在{4}就{1}進行的談判取得了正面成果。	{2}与{3}在{4}就{1}进行的谈判取得了积极成果。	inner	FUN_140b81830 1696028 topicagreement_concluded 完整句 有地點；排在無地點前；{1} 議題（FUN_140b95020）
+{%1} between {2} and {3} at {4} concluded, cementing bonds of mutual trust.	{2}與{3}在{4}就{1}進行的談判圓滿成功，鞏固了彼此的互信。	{2}与{3}在{4}就{1}进行的谈判圆满成功，巩固了彼此的互信。	inner	FUN_140b81830 1696028 topicagreement_concluded 完整句 有地點；排在無地點前；{1} 議題（FUN_140b95020）
+{%1} between {2} and {3} at {4} concluded with miserable outcome.	{2}與{3}在{4}就{1}進行的談判以慘敗告終。	{2}与{3}在{4}就{1}进行的谈判以惨败告终。	inner	FUN_140b81830 1696028 topicagreement_concluded 完整句 有地點；排在無地點前；{1} 議題（FUN_140b95020）
+{%1} between {2} and {3} at {4} concluded in failure.	{2}與{3}在{4}就{1}進行的談判以失敗告終。	{2}与{3}在{4}就{1}进行的谈判以失败告终。	inner	FUN_140b81830 1696028 topicagreement_concluded 完整句 有地點；排在無地點前；{1} 議題（FUN_140b95020）
+{%1} between {2} and {3} at {4} concluded in an unsatisfactory fashion.	{2}與{3}在{4}就{1}進行的談判結果不如人意。	{2}与{3}在{4}就{1}进行的谈判结果不尽如人意。	inner	FUN_140b81830 1696028 topicagreement_concluded 完整句 有地點；排在無地點前；{1} 議題（FUN_140b95020）
+{%1} between {2} and {3} at {4} concluded.	{2}與{3}在{4}就{1}進行的談判結束了。	{2}与{3}在{4}就{1}进行的谈判结束了。	inner	FUN_140b81830 1696028 topicagreement_concluded 完整句 有地點；排在無地點前；{1} 議題（FUN_140b95020）
+{%1} between {2} and {3} concluded fairly.	{2}與{3}就{1}進行的談判公平收場。	{2}与{3}就{1}进行的谈判公平收场。	inner	FUN_140b81830 1696028 topicagreement_concluded 完整句；{1} 議題（FUN_140b95020）
+{%1} between {2} and {3} concluded with a positive outcome.	{2}與{3}就{1}進行的談判取得了正面成果。	{2}与{3}就{1}进行的谈判取得了积极成果。	inner	FUN_140b81830 1696028 topicagreement_concluded 完整句；{1} 議題（FUN_140b95020）
+{%1} between {2} and {3} concluded, cementing bonds of mutual trust.	{2}與{3}就{1}進行的談判圓滿成功，鞏固了彼此的互信。	{2}与{3}就{1}进行的谈判圆满成功，巩固了彼此的互信。	inner	FUN_140b81830 1696028 topicagreement_concluded 完整句；{1} 議題（FUN_140b95020）
+{%1} between {2} and {3} concluded with miserable outcome.	{2}與{3}就{1}進行的談判以慘敗告終。	{2}与{3}就{1}进行的谈判以惨败告终。	inner	FUN_140b81830 1696028 topicagreement_concluded 完整句；{1} 議題（FUN_140b95020）
+{%1} between {2} and {3} concluded in failure.	{2}與{3}就{1}進行的談判以失敗告終。	{2}与{3}就{1}进行的谈判以失败告终。	inner	FUN_140b81830 1696028 topicagreement_concluded 完整句；{1} 議題（FUN_140b95020）
+{%1} between {2} and {3} concluded in an unsatisfactory fashion.	{2}與{3}就{1}進行的談判結果不如人意。	{2}与{3}就{1}进行的谈判结果不尽如人意。	inner	FUN_140b81830 1696028 topicagreement_concluded 完整句；{1} 議題（FUN_140b95020）
+{%1} between {2} and {3} concluded.	{2}與{3}就{1}進行的談判結束了。	{2}与{3}就{1}进行的谈判结束了。	inner	FUN_140b81830 1696028 topicagreement_concluded 完整句；{1} 議題（FUN_140b95020）
+the fair conclusion of {%1} between {2} and {3} at {4}	{2}與{3}在{4}就{1}談判的公平收場	{2}与{3}在{4}就{1}谈判的公平收场	inner	FUN_140b819e0 1696084 topicagreement_concluded 短語 有地點；排在無地點前（the positive／the brilliant 原文如此）
+the positive of {%1} between {2} and {3} at {4}	{2}與{3}在{4}就{1}談判的正面成果	{2}与{3}在{4}就{1}谈判的积极成果	inner	FUN_140b819e0 1696084 topicagreement_concluded 短語 有地點；排在無地點前（the positive／the brilliant 原文如此）
+the brilliant of {%1} between {2} and {3} at {4}	{2}與{3}在{4}就{1}談判的圓滿成功	{2}与{3}在{4}就{1}谈判的圆满成功	inner	FUN_140b819e0 1696084 topicagreement_concluded 短語 有地點；排在無地點前（the positive／the brilliant 原文如此）
+the miserable failure of {%1} between {2} and {3} at {4}	{2}與{3}在{4}就{1}談判的慘敗	{2}与{3}在{4}就{1}谈判的惨败	inner	FUN_140b819e0 1696084 topicagreement_concluded 短語 有地點；排在無地點前（the positive／the brilliant 原文如此）
+the failure of {%1} between {2} and {3} at {4}	{2}與{3}在{4}就{1}談判的失敗	{2}与{3}在{4}就{1}谈判的失败	inner	FUN_140b819e0 1696084 topicagreement_concluded 短語 有地點；排在無地點前（the positive／the brilliant 原文如此）
+the unsatisfactory conclusion of {%1} between {2} and {3} at {4}	{2}與{3}在{4}就{1}談判的不如人意的結果	{2}与{3}在{4}就{1}谈判的不尽如人意的结果	inner	FUN_140b819e0 1696084 topicagreement_concluded 短語 有地點；排在無地點前（the positive／the brilliant 原文如此）
+the fair conclusion of {%1} between {2} and {3}	{2}與{3}就{1}談判的公平收場	{2}与{3}就{1}谈判的公平收场	inner	FUN_140b819e0 1696084 topicagreement_concluded 短語（the positive／the brilliant 原文如此）
+the positive of {%1} between {2} and {3}	{2}與{3}就{1}談判的正面成果	{2}与{3}就{1}谈判的积极成果	inner	FUN_140b819e0 1696084 topicagreement_concluded 短語（the positive／the brilliant 原文如此）
+the brilliant of {%1} between {2} and {3}	{2}與{3}就{1}談判的圓滿成功	{2}与{3}就{1}谈判的圆满成功	inner	FUN_140b819e0 1696084 topicagreement_concluded 短語（the positive／the brilliant 原文如此）
+the miserable failure of {%1} between {2} and {3}	{2}與{3}就{1}談判的慘敗	{2}与{3}就{1}谈判的惨败	inner	FUN_140b819e0 1696084 topicagreement_concluded 短語（the positive／the brilliant 原文如此）
+the failure of {%1} between {2} and {3}	{2}與{3}就{1}談判的失敗	{2}与{3}就{1}谈判的失败	inner	FUN_140b819e0 1696084 topicagreement_concluded 短語（the positive／the brilliant 原文如此）
+the unsatisfactory conclusion of {%1} between {2} and {3}	{2}與{3}就{1}談判的不如人意的結果	{2}与{3}就{1}谈判的不尽如人意的结果	inner	FUN_140b819e0 1696084 topicagreement_concluded 短語（the positive／the brilliant 原文如此）
+{%1} proposed by {2} was rejected by {3} at {4}.	{2}提議的{1}在{4}遭到{3}拒絕。	{2}提议的{1}在{4}遭到{3}拒绝。	inner	FUN_140b81b60 1696138 topicagreement_rejected 完整句 有地點；排在無地點前
+{%1} proposed by {2} was rejected by {3}.	{2}提議的{1}遭到{3}拒絕。	{2}提议的{1}遭到{3}拒绝。	inner	FUN_140b81b60 1696138 topicagreement_rejected 完整句
+the rejection of {%1} of {2} by {3} at {4}	{3}在{4}拒絕{2}提議的{1}	{3}在{4}拒绝{2}提议的{1}	inner	FUN_140b81e20 1696235 topicagreement_rejected 短語 有地點；排在無地點前
+the rejection of {%1} of {2} by {3}	{3}拒絕{2}提議的{1}	{3}拒绝{2}提议的{1}	inner	FUN_140b81e20 1696235 topicagreement_rejected 短語
+the establishment of landed nobility in {#1}	{1}年設立封地貴族	{1}年设立封地贵族	inner	短語 the establishment of landed nobility（data/strings/events_14.tsv 的字串）加上結尾的日期：字串不會自動產生帶日期的版本（scripts/gen_events.py 只替句型產生）
+the establishment of landed nobility in the {@1} of {#2}	{2}年{1}設立封地貴族	{2}年{1}设立封地贵族	inner	短語 the establishment of landed nobility（data/strings/events_14.tsv 的字串）加上結尾的日期：字串不會自動產生帶日期的版本（scripts/gen_events.py 只替句型產生）
+the elevation of the landed nobility in {#1}	{1}年提升封地貴族的地位	{1}年提升封地贵族的地位	inner	短語 the elevation of the landed nobility（data/strings/events_14.tsv 的字串）加上結尾的日期：字串不會自動產生帶日期的版本（scripts/gen_events.py 只替句型產生）
+the elevation of the landed nobility in the {@1} of {#2}	{2}年{1}提升封地貴族的地位	{2}年{1}提升封地贵族的地位	inner	短語 the elevation of the landed nobility（data/strings/events_14.tsv 的字串）加上結尾的日期：字串不會自動產生帶日期的版本（scripts/gen_events.py 只替句型產生）

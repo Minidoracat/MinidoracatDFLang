@@ -1,0 +1,98 @@
+en	zh-Hant	zh-Hans	align	note
+for an insurrection	為了發動叛亂	为了发动叛乱	tail	FUN_140b5a6c0 reason 0
+to adventure	為了冒險	为了冒险	tail	FUN_140b5a6c0 reason 1
+as a guide	擔任嚮導	担任向导	tail	FUN_140b5a6c0 reason 2
+in order to be rescued	以求獲救	以求获救	tail	FUN_140b5a6c0 reason 3
+due to their cosmic similarity	因為彼此在宇宙間的相似	因为彼此在宇宙间的相似	tail	FUN_140b5a6c0 reason 4（reason_id=-1）
+in order to maintain balance in the universe	以維持宇宙的平衡	以维持宇宙的平衡	tail	FUN_140b5a6c0 reason 5
+to create a monument to the boundaries between realities	為了建立一座紀念諸界之間界限的豐碑	为了建立一座纪念诸界之间界限的丰碑	tail	FUN_140b5a6c0 reason 6
+to sow the seeds of chaos therein	為了在那裡播下混亂的種子	为了在那里播下混乱的种子	tail	FUN_140b5a6c0 reason 7
+to provide opportunities for courage to rise	為了讓勇氣有機會展現	为了让勇气有机会展现	tail	FUN_140b5a6c0 reason 8
+that more might die	好讓更多人死去	好让更多人死去	tail	FUN_140b5a6c0 reason 9
+that all should gaze upon a truly gruesome visage	好讓眾人目睹一副真正駭人的面容	好让众人目睹一副真正骇人的面容	tail	FUN_140b5a6c0 reason 10
+because it was destined	因為這是命中注定	因为这是命中注定	tail	FUN_140b5a6c0 reason 11
+that great fortresses might be raised and tested in siege	好讓宏偉的要塞得以築起、並在圍城中接受考驗	好让宏伟的要塞得以筑起、并在围城中接受考验	tail	FUN_140b5a6c0 reason 12
+on a whim	一時興起	一时兴起	tail	FUN_140b5a6c0 reason 13（同 events_15.tsv 的 inner 條目）
+that it might bathe in misery forever	好讓它永遠沉浸在悲慘之中	好让它永远沉浸在悲惨之中	tail	FUN_140b5a6c0 reason 14
+that more might be murdered	好讓更多人遭到謀殺	好让更多人遭到谋杀	tail	FUN_140b5a6c0 reason 15
+in order to make nightmares reality	為了讓噩夢成真	为了让噩梦成真	tail	FUN_140b5a6c0 reason 16
+in order to make thralls of everyone	為了讓所有人都淪為奴僕	为了让所有人都沦为奴仆	tail	FUN_140b5a6c0 reason 17
+in order that acts of torture be perpetrated	好讓酷刑得以施行	好让酷刑得以施行	tail	FUN_140b5a6c0 reason 18
+to provide opportunities for acts of valor to be performed	為了讓英勇之舉有機會上演	为了让英勇之举有机会上演	tail	FUN_140b5a6c0 reason 19
+that war might rage forever	好讓戰火永不止息	好让战火永不止息	tail	FUN_140b5a6c0 reason 20
+in order to find a relative	為了尋找親人	为了寻找亲人	tail	FUN_140b5a6c0 reason 21
+to offer condolences	前去弔唁	前去吊唁	tail	FUN_140b5a6c0 reason 22
+in order to be brought to safety	以求被護送到安全之處	以求被护送到安全之处	tail	FUN_140b5a6c0 reason 23
+to help with a rescue	協助救援	协助救援	tail	FUN_140b5a6c0 reason 24
+due to insufficient work	因為工作不足	因为工作不足	tail	FUN_140b5a6c0 reason 25
+to request work	前去請求工作	前去请求工作	tail	FUN_140b5a6c0 reason 26
+that weapons be made	以便打造武器	以便打造武器	tail	FUN_140b5a6c0 reason 27
+to vent at somebody in charge	去向主事者發洩怨氣	去向主事者发泄怨气	tail	FUN_140b5a6c0 reason 28
+to cry on somebody in charge	去向主事者哭訴	去向主事者哭诉	tail	FUN_140b5a6c0 reason 29
+as the goal was not reached	因為未能達成目標	因为未能达成目标	tail	FUN_140b5a6c0 reason 30
+as insufficient progress was made toward the goal	因為朝目標的進展不足	因为朝目标的进展不足	tail	FUN_140b5a6c0 reason 31
+after going the wrong direction	在走錯方向之後	在走错方向之后	tail	FUN_140b5a6c0 reason 32
+after arriving at the location	在抵達該地之後	在抵达该地之后	tail	FUN_140b5a6c0 reason 33
+as the relevant government was no longer in control	因為相關政權已失去控制	因为相关政权已失去控制	tail	FUN_140b5a6c0 reason 34
+after leaving the site	在離開該據點之後	在离开该据点之后	tail	FUN_140b5a6c0 reason 35
+after being reunited with a loved one	在與摯愛重聚之後	在与挚爱重聚之后	tail	FUN_140b5a6c0 reason 36
+after a violent disagreement	在激烈爭執之後	在激烈争执之后	tail	FUN_140b5a6c0 reason 37（同 events_15.tsv 的 inner 條目）
+after adoption	在被收養之後	在被收养之后	tail	FUN_140b5a6c0 reason 38
+after invocation of the true name	在真名被喚出之後	在真名被唤出之后	tail	FUN_140b5a6c0 reason 39
+in order to eradicate beasts	為了剷除野獸	为了铲除野兽	tail	FUN_140b5a6c0 reason 41
+in order to entertain people	為了娛樂眾人	为了娱乐众人	tail	FUN_140b5a6c0 reason 42
+in order to make a living as a warrior	為了以戰士為業謀生	为了以战士为业谋生	tail	FUN_140b5a6c0 reason 43
+in order to study	為了求學	为了求学	tail	FUN_140b5a6c0 reason 44
+in order to flee	為了逃難	为了逃难	tail	FUN_140b5a6c0 reason 45
+in order to pursue scholarship	為了鑽研學問	为了钻研学问	tail	FUN_140b5a6c0 reason 46
+in order to be with the master	為了追隨師父	为了追随师父	tail	FUN_140b5a6c0 reason 47
+in order to become a citizen	為了成為公民	为了成为公民	tail	FUN_140b5a6c0 reason 48
+in order to continue working alone	為了繼續獨自工作	为了继续独自工作	tail	FUN_140b5a6c0 reason 49
+due to jealousy	出於嫉妒	出于嫉妒	tail	FUN_140b5a6c0 reason 50
+due to a lack of performances	因為缺少演出	因为缺少演出	tail	FUN_140b5a6c0 reason 52（同 events_15.tsv 的 inner 條目）
+after being prevented from leaving	在被阻止離開之後	在被阻止离开之后	tail	FUN_140b5a6c0 reason 53
+out of curiosity	出於好奇	出于好奇	tail	FUN_140b5a6c0 reason 54
+to fill a role as a mercenary	為了擔任傭兵	为了担任佣兵	tail	FUN_140b5a6c0 reason 55
+to fill a role as a performer	為了擔任表演者	为了担任表演者	tail	FUN_140b5a6c0 reason 56
+to fill a role as a scholar	為了擔任學者	为了担任学者	tail	FUN_140b5a6c0 reason 57
+in order to drink	為了喝酒	为了喝酒	tail	FUN_140b5a6c0 reason 58
+in order to admire architecture	為了欣賞建築	为了欣赏建筑	tail	FUN_140b5a6c0 reason 59
+in order to pray	為了祈禱	为了祈祷	tail	FUN_140b5a6c0 reason 60
+in order to relax	為了放鬆	为了放松	tail	FUN_140b5a6c0 reason 61
+to experience danger	為了體驗危險	为了体验危险	tail	FUN_140b5a6c0 reason 62
+after being unable to find an artifact	在找不到神器之後	在找不到神器之后	tail	FUN_140b5a6c0 reason 63
+after failing to create an artifact	在未能創造出神器之後	在未能创造出神器之后	tail	FUN_140b5a6c0 reason 64
+due to lack of sleep	因為睡眠不足	因为睡眠不足	tail	FUN_140b5a6c0 reason 65
+after being trapped in a cage	在被困於籠子裡之後	在被困于笼子里之后	tail	FUN_140b5a6c0 reason 66
+after a great deal of stress	在承受極大壓力之後	在承受极大压力之后	tail	FUN_140b5a6c0 reason 67
+after being unable to leave a location	在無法離開某處之後	在无法离开某处之后	tail	FUN_140b5a6c0 reason 68
+in order to cement the bonds of friendship	為了鞏固友誼	为了巩固友谊	tail	FUN_140b5a6c0 reason 71
+as a symbol of everlasting peace	作為永久和平的象徵	作为永久和平的象征	tail	FUN_140b5a6c0 reason 72
+on a pilgrimage	踏上朝聖之旅	踏上朝圣之旅	tail	FUN_140b5a6c0 reason 73
+to gather information	為了蒐集情報	为了搜集情报	tail	FUN_140b5a6c0 reason 74
+in order to find sanctuary	為了尋求庇護	为了寻求庇护	tail	FUN_140b5a6c0 reason 75
+as part of a trade negotiation	作為貿易談判的一環	作为贸易谈判的一环	tail	FUN_140b5a6c0 reason 76
+due to fear of persecution	因為害怕遭受迫害	因为害怕遭受迫害	tail	FUN_140b5a6c0 reason 78
+due to envy of those that live on	出於對生者的嫉妒	出于对生者的嫉妒	tail	FUN_140b5a6c0 reason 82
+due to panic about what happens after death	因為對死後之事感到恐慌	因为对死后之事感到恐慌	tail	FUN_140b5a6c0 reason 83
+due to fear of death	因為畏懼死亡	因为畏惧死亡	tail	FUN_140b5a6c0 reason 84
+unable to face any possible judgment and the afterlife	無法面對可能的審判與來世	无法面对可能的审判与来世	tail	FUN_140b5a6c0 reason 85
+being too proud to give in to death	因為太過驕傲而不肯向死亡屈服	因为太过骄傲而不肯向死亡屈服	tail	FUN_140b5a6c0 reason 86
+being too vain to give in to death	因為太過虛榮而不肯向死亡屈服	因为太过虚荣而不肯向死亡屈服	tail	FUN_140b5a6c0 reason 87
+having ambitions for which death was only a small obstacle	懷抱著連死亡都只是小小阻礙的野心	怀抱着连死亡都只是小小阻碍的野心	tail	FUN_140b5a6c0 reason 88
+due to a lack of funds	因為資金不足	因为资金不足	tail	FUN_140b5a6c0 reason 89
+after taking heavy losses in battle	在戰鬥中蒙受慘重損失之後	在战斗中蒙受惨重损失之后	tail	FUN_140b5a6c0 reason 90
+after being exiled following a criminal conviction	在因犯罪被定罪而遭放逐之後	在因犯罪被定罪而遭放逐之后	tail	FUN_140b5a6c0 reason 91
+to vent at a priest	去向祭司發洩怨氣	去向祭司发泄怨气	tail	FUN_140b5a6c0 reason 92
+to cry on a priest	去向祭司哭訴	去向祭司哭诉	tail	FUN_140b5a6c0 reason 93
+after a dream	在一場夢之後	在一场梦之后	tail	FUN_140b5a6c0 circumstance 210 Dream
+after a nightmare	在一場噩夢之後	在一场噩梦之后	tail	FUN_140b5a6c0 circumstance 211 Nightmare
+as the item was a favorite possession	因為那是心愛之物	因为那是心爱之物	tail	FUN_140b5a6c0 circumstance 230
+by preserving a part of the body	藉由保存身體的一部分	借由保存身体的一部分	tail	FUN_140b5a6c0 circumstance 231
+after preying on the blood of civilized creatures	在吸食文明生物的血之後	在吸食文明生物的血之后	tail	FUN_140b5a6c0 circumstance 243
+being unnaturally ageless	因為不自然地長生不老	因为不自然地长生不老	tail	FUN_140b5a6c0 circumstance 244（sentences_causes_b.tsv 另有一般條目）
+after accepting bribes in exchange for leniency	在收受賄賂換取寬待之後	在收受贿赂换取宽待之后	tail	FUN_140b5a6c0 circumstance 247
+after embezzling funds	在侵吞公款之後	在侵吞公款之后	tail	FUN_140b5a6c0 circumstance 248
+after receiving a cut of corruptly-obtained funds	在分得貪腐所得的款項之後	在分得贪腐所得的款项之后	tail	FUN_140b5a6c0 circumstance 249
+from afar	從遠方	从远方	tail	FUN_140b5a6c0 circumstance 251（sentences_causes_b.tsv 另有一般條目）
+during an infiltration mission	在一次滲透任務期間	在一次渗透任务期间	tail	FUN_140b5a6c0 circumstance 263

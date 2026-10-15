@@ -1,0 +1,55 @@
+en	zh-Hant	zh-Hans	align	note
+{1} fought with and subdued {2}.	{1}與{2}交手並制伏了對方。	{1}与{2}交手并制伏了对方。	inner	history_event_hist_figure_simple_battle_eventst 完整句 FUN_140b6ec90 L1685550 case 10；排在 fought with 前
+{1} fought with {2}.	{1}與{2}交手。	{1}与{2}交手。	inner	同上 L1685515 case 0；後接獨立句 While defeated, the latter escaped unscathed.（strings/events_08.tsv）
+{1} managed to escape from {2}'s onslaught.	{1}從{2}的猛攻中成功脫逃。	{1}从{2}的猛攻中成功脱逃。	inner	同上 L1685525 case 7
+{1} was forced to retreat from {2} despite the latter's wounds.	儘管{2}已經負傷，{1}仍被迫從其面前撤退。	尽管{2}已经负伤，{1}仍被迫从其面前撤退。	inner	同上 L1685533 case 8（{2} 是負傷的一方）
+{1} eventually prevailed and {2} was forced to make a hasty escape.	{1}最終占了上風，{2}被迫倉皇逃走。	{1}最终占了上风，{2}被迫仓皇逃走。	inner	同上 L1685542 case 9
+{1} got into a brawl with {2}.	{1}與{2}發生了鬥毆。	{1}与{2}发生了斗殴。	inner	同上 L1685584 case 0xb
+{1} happened upon {2}.	{1}偶然遇上了{2}。	{1}偶然遇上了{2}。	inner	同上 L1685571 case 4
+{1} confronted {2}.	{1}與{2}正面對峙。	{1}与{2}正面对峙。	inner	同上 L1685578 case 6
+{1} surprised {2}.	{1}突襲了{2}。	{1}突袭了{2}。	inner	同上 L1685562 case 2
+{1} ambushed {2}.	{1}伏擊了{2}。	{1}伏击了{2}。	inner	同上 L1685566 case 3
+{1} cornered {2}.	{1}將{2}逼入了絕境。	{1}将{2}逼入了绝境。	inner	同上 L1685575 case 5
+{1} attacked {2}.	{1}攻擊了{2}。	{1}攻击了{2}。	inner	同上 L1685558 case 1；speech_03.tsv 有同 en 的非 inner 句型（本檔排在前面）
+a scuffle between {1} and {2} in {#3} in which the former emerged victorious	{3}年{1}在扭打中勝過{2}	{3}年{1}在扭打中胜过{2}	inner	simple_battle 短語 FUN_140b6f040 L1685615 case 0：日期夾在句中，三種日期各寫一條
+a scuffle between {1} and {2} in the {@3} of {#4} in which the former emerged victorious	{4}年{3}{1}在扭打中勝過{2}	{4}年{3}{1}在扭打中胜过{2}	inner	同上（季節日期）
+a scuffle between {1} and {2} in a time before time in which the former emerged victorious	太古之時{1}在扭打中勝過{2}	太古之时{1}在扭打中胜过{2}	inner	同上（太古）
+the escape of {1} from {2} after a punishing fight	{1}經過一番苦戰後從{2}手中逃脫	{1}经过一番苦战后从{2}手中逃脱	inner	simple_battle 短語 FUN_140b6f040 L1685628 case 7
+the escape of {1} from {2} despite the latter's wounds	{1}從負傷的{2}手中逃脫	{1}从负伤的{2}手中逃脱	inner	同上 L1685637 case 8
+the escape of {1} from {2} after a horrific combat	{1}在一場慘烈的戰鬥後從{2}手中逃脫	{1}在一场惨烈的战斗后从{2}手中逃脱	inner	同上 L1685646 case 9
+the subduing of {1} by {2}	{2}制伏{1}	{2}制伏{1}	inner	同上 L1685655 case 10（後接日期，由 _events_00 處理）
+{1}'s attack on {2}	{1}對{2}的攻擊	{1}对{2}的攻击	inner	同上 L1685664 default case 1（沒有日期）
+{1}'s surprising of {2}	{1}對{2}的突襲	{1}对{2}的突袭	inner	同上 case 2
+{1}'s ambush of {2}	{1}對{2}的伏擊	{1}对{2}的伏击	inner	同上 case 3
+{1}'s happening upon {2}	{1}與{2}的偶遇	{1}与{2}的偶遇	inner	同上 case 4
+{1}'s cornering of {2}	{1}對{2}的圍堵	{1}对{2}的围堵	inner	同上 case 5
+{1}'s confrontation of {2}	{1}與{2}的對峙	{1}与{2}的对峙	inner	同上 case 6
+{1}'s brawl with {2}	{1}與{2}的鬥毆	{1}与{2}的斗殴	inner	同上 case 0xb
+{1} began dreaming of starting a family.	{1}開始夢想成家。	{1}开始梦想成家。	inner	history_event_hf_gains_secret_goalst 完整句 FUN_140b6ffa0 L1686078 case 2；reason 附加子句（FUN_140b5a6c0）未處理
+{1} came to desire to rule the world.	{1}開始渴望統治世界。	{1}开始渴望统治世界。	inner	同上 case 3
+{1} began dreaming of creating a great work of art.	{1}開始夢想創作一件偉大的藝術品。	{1}开始梦想创作一件伟大的艺术品。	inner	同上 case 4
+{1} began dreaming of crafting a masterwork.	{1}開始夢想打造一件傑作。	{1}开始梦想打造一件杰作。	inner	同上 case 5
+{1} began dreaming of bringing peace to the world.	{1}開始夢想為世界帶來和平。	{1}开始梦想为世界带来和平。	inner	同上 case 6
+{1} began dreaming of becoming a legendary warrior.	{1}開始夢想成為傳奇戰士。	{1}开始梦想成为传奇战士。	inner	同上 case 7
+{1} began dreaming of mastering a skill.	{1}開始夢想精通一門技藝。	{1}开始梦想精通一门技艺。	inner	同上 case 8
+{1} began dreaming of falling in love.	{1}開始夢想墜入愛河。	{1}开始梦想坠入爱河。	inner	同上 case 9
+{1} began dreaming of seeing the great natural wonders of the world.	{1}開始夢想親眼看看世上的自然奇觀。	{1}开始梦想亲眼看看世上的自然奇观。	inner	同上 case 10
+{1} became obsessed with {@2} own mortality and sought to extend {@3} life by any means.	{1}開始執著於自身的死亡，不擇手段地尋求延長壽命。	{1}开始执着于自身的死亡，不择手段地寻求延长寿命。	inner	同上 case 0xb（his/her/its）
+{1} began dreaming of making a great discovery.	{1}開始夢想做出偉大的發現。	{1}开始梦想做出伟大的发现。	inner	同上 case 0xc
+{1} began dreaming of attaining rank in society.	{1}開始夢想在社會上取得地位。	{1}开始梦想在社会上取得地位。	inner	同上 case 0xd
+{1} came to desire to bathe the world in chaos.	{1}開始渴望讓世界陷入混沌。	{1}开始渴望让世界陷入混沌。	inner	同上 case 0xe
+{1} became obsessed with an inscrutable goal.	{1}開始執著於一個難以理解的目標。	{1}开始执着于一个难以理解的目标。	inner	同上 default
+the new dream of {1} to start a family	{1}成家的新夢想	{1}成家的新梦想	inner	hf_gains_secret_goal 短語 FUN_140b72ee0 L1687758 case 2（後接日期）
+the new desire of {1} to rule the world	{1}統治世界的新慾望	{1}统治世界的新欲望	inner	同上 case 3
+the new dream of {1} to create a great work of art	{1}創作偉大藝術品的新夢想	{1}创作伟大艺术品的新梦想	inner	同上 case 4
+the new dream of {1} to craft a masterwork	{1}打造傑作的新夢想	{1}打造杰作的新梦想	inner	同上 case 5
+the new dream of {1} to bring peace to the world	{1}為世界帶來和平的新夢想	{1}为世界带来和平的新梦想	inner	同上 case 6
+the new dream of {1} to become a legendary warrior	{1}成為傳奇戰士的新夢想	{1}成为传奇战士的新梦想	inner	同上 case 7
+the new dream of {1} to master a skill	{1}精通一門技藝的新夢想	{1}精通一门技艺的新梦想	inner	同上 case 8
+the new dream of {1} to fall in love	{1}墜入愛河的新夢想	{1}坠入爱河的新梦想	inner	同上 case 9
+the new dream of {1} to see the great natural wonders of the world	{1}親眼看看世上自然奇觀的新夢想	{1}亲眼看看世上自然奇观的新梦想	inner	同上 case 10
+the new obsession of {1} with extending {@2} own life	{1}對延長自身壽命的新執念	{1}对延长自身寿命的新执念	inner	同上 case 0xb（his/her/its）
+the new dream of {1} to make a great discovery	{1}做出偉大發現的新夢想	{1}做出伟大发现的新梦想	inner	同上 case 0xc
+the new dream of {1} to attain rank in society	{1}在社會上取得地位的新夢想	{1}在社会上取得地位的新梦想	inner	同上 case 0xd
+the new desire of {1} to bathe the world in chaos	{1}讓世界陷入混沌的新慾望	{1}让世界陷入混沌的新欲望	inner	同上 case 0xe
+the new obsession of {1} with an inscrutable goal	{1}對難以理解之目標的新執念	{1}对难以理解之目标的新执念	inner	同上 default

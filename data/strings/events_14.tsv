@@ -1,0 +1,27 @@
+en	zh-Hant	zh-Hans	align	note
+a vague agreement	模糊協議	模糊协议	inner	FUN_140b95020 1707983 議題名（topicagreement_* 共用，Events15 的 topicagreement_made 也用）
+a peace agreement	和平協議	和平协议	inner	FUN_140b95020 1707983 議題名（topicagreement_* 共用，Events15 的 topicagreement_made 也用）
+a lumber agreement	木材協議	木材协议	inner	FUN_140b95020 1707983 議題名（topicagreement_* 共用，Events15 的 topicagreement_made 也用）
+the establishment of landed nobility	設立封地貴族	设立封地贵族	inner	FUN_140b95020 1707983 議題名（topicagreement_* 共用，Events15 的 topicagreement_made 也用）
+the elevation of the landed nobility	提升封地貴族的地位	提升封地贵族的地位	inner	FUN_140b95020 1707983 議題名（topicagreement_* 共用，Events15 的 topicagreement_made 也用）
+a trade agreement	貿易協議	贸易协议	inner	FUN_140b95020 1707983 議題名（topicagreement_* 共用，Events15 的 topicagreement_made 也用）
+a tribute agreement	納貢協議	纳贡协议	inner	FUN_140b95020 1707983 議題名（topicagreement_* 共用，Events15 的 topicagreement_made 也用）
+a demand of unconditional surrender	無條件投降的要求	无条件投降的要求	inner	FUN_140b95020 1707983 議題名（topicagreement_* 共用，Events15 的 topicagreement_made 也用）
+a declaration of war	宣戰	宣战	inner	FUN_140b95020 1707983 議題名（topicagreement_* 共用，Events15 的 topicagreement_made 也用）
+an alliance	結盟	结盟	inner	FUN_140b95020 1707983 議題名（topicagreement_* 共用，Events15 的 topicagreement_made 也用）
+a strengthening of trade ties	加強貿易往來	加强贸易往来	inner	FUN_140b95020 1707983 議題名（topicagreement_* 共用，Events15 的 topicagreement_made 也用）
+soldier	士兵	士兵	inner	職位名（entity_position name／squad[0]），raws 與執行檔（程序生成職位）裡、尚無條目的；remove/add_hf_entity_link 用；squad 名
+militia-dwarf	民兵	民兵	inner	職位名（entity_position name／squad[0]），raws 與執行檔（程序生成職位）裡、尚無條目的；remove/add_hf_entity_link 用；squad 名
+lord	領主	领主	inner	職位名（entity_position name／squad[0]），raws 與執行檔（程序生成職位）裡、尚無條目的；remove/add_hf_entity_link 用
+lady	女領主	女领主	inner	職位名（entity_position name／squad[0]），raws 與執行檔（程序生成職位）裡、尚無條目的；remove/add_hf_entity_link 用
+priest	祭司	祭司	inner	職位名（entity_position name／squad[0]），raws 與執行檔（程序生成職位）裡、尚無條目的；remove/add_hf_entity_link 用
+high priest	大祭司	大祭司		職位名（entity_position name／squad[0]），raws 與執行檔（程序生成職位）裡、尚無條目的；remove/add_hf_entity_link 用；不設 inner：介面上單獨出現的職位名也要翻（設 inner 時整句查詢會被 names.tsv 的 {@1} {@2} 拼成「高祭司」）
+chieftain	酋長	酋长	inner	職位名（entity_position name／squad[0]），raws 與執行檔（程序生成職位）裡、尚無條目的；remove/add_hf_entity_link 用
+warlord	軍閥	军阀	inner	職位名（entity_position name／squad[0]），raws 與執行檔（程序生成職位）裡、尚無條目的；remove/add_hf_entity_link 用
+ringleader	頭目	头目	inner	職位名（entity_position name／squad[0]），raws 與執行檔（程序生成職位）裡、尚無條目的；remove/add_hf_entity_link 用
+commander	指揮官	指挥官	inner	職位名（entity_position name／squad[0]），raws 與執行檔（程序生成職位）裡、尚無條目的；remove/add_hf_entity_link 用
+leader	領袖	领袖	inner	職位名（entity_position name／squad[0]），raws 與執行檔（程序生成職位）裡、尚無條目的；remove/add_hf_entity_link 用
+the establishment of landed nobility in a time before time	太古之時設立封地貴族	太古之时设立封地贵族	inner	the establishment of landed nobility 加上結尾的日期（太古）：字串不會自動產生帶日期的版本
+the elevation of the landed nobility in a time before time	太古之時提升封地貴族的地位	太古之时提升封地贵族的地位	inner	the elevation of the landed nobility 加上結尾的日期（太古）：字串不會自動產生帶日期的版本
+war leader	戰爭首領	战争首领		FUN_14096ece0 L1366520 程序生成的軍事職位名（單數）；不翻時會被 names.tsv 的 {@1} {@2} 拼成「戰領袖」
+war leaders	戰爭首領	战争首领		FUN_14096ece0 L1366521 同上（複數）

@@ -1,0 +1,200 @@
+en	zh-Hant	zh-Hans	align	note
+{1} of {2} surrendered {3} to {4}.	{2}的{1}向{4}交出了{3}。	{2}的{1}向{4}交出了{3}。	inner	site_surrendered 完整句 FUN_140b675f0 L1681306：{1} 政權、{2} 所屬文明、{3} 據點、{4} 受降文明；排在無 of 的前面
+{1} surrendered {2} to {3}.	{1}向{3}交出了{2}。	{1}向{3}交出了{2}。	inner	同上，政權與文明相同
+the surrender of {1} by {2} of {3} to {4}	{3}的{2}向{4}交出{1}	{3}的{2}向{4}交出{1}	inner	site_surrendered 短語 FUN_140b676f0 L1681328（日期後綴由 _events_00 處理）
+the surrender of {1} by {2} to {3}	{2}向{3}交出{1}	{2}向{3}交出{1}	inner	同上
+the rout of {1} of {2} and destruction of {3} by {4}	{4}擊潰{2}的{1}並摧毀{3}	{4}击溃{2}的{1}并摧毁{3}	inner	hf_destroyed_site 短語 FUN_140b678f0 L1681371（完整句 routed … and destroyed 放在 _events_04.tsv，排在它的通用 {1} destroyed {2}. 前面）
+the rout of {1} and destruction of {2} by {3}	{3}擊潰{1}並摧毀{2}	{3}击溃{1}并摧毁{2}	inner	同上
+{1} of {2} spotted the forces of {3} slipping out of {4}.	{2}的{1}發現{3}的部隊悄悄撤出{4}。	{2}的{1}发现{3}的部队悄悄撤出{4}。	inner	spotted_leaving_site 完整句 FUN_140b679f0 L1681392：{1} 人物、{2} 文明
+the detection of the forces of {1} leaving {2} by {3} of {4}	{4}的{3}發現{1}的部隊撤出{2}	{4}的{3}发现{1}的部队撤出{2}	inner	spotted_leaving_site 短語 FUN_140b67b00 L1681412
+{1} attacked {2} of {3} at {4}.	{1}在{4}攻擊了{3}的{2}。	{1}在{4}攻击了{3}的{2}。	inner	hf_attacked_site 完整句 FUN_140b67bf0 L1681431：{1} 人物、{2} 政權、{3} 文明、{4} 據點；排在無 of 的前面
+{1} attacked {2} at {3}.	{1}在{3}攻擊了{2}。	{1}在{3}攻击了{2}。	inner	同上
+the attack of {1} on {2} of {3} at {4}	{1}在{4}攻擊{3}的{2}	{1}在{4}攻击{3}的{2}	inner	hf_attacked_site 短語 FUN_140b67d00 L1681453
+the attack of {1} on {2} at {3}	{1}在{3}攻擊{2}	{1}在{3}攻击{2}	inner	同上
+{1} and their settlement of {2} withered.	{1}及其聚落{2}就此衰亡。	{1}及其聚落{2}就此衰亡。	inner	site_died 完整句 FUN_140b67e00 L1681474：據點凋零；their 那條排在前面
+{1} and {2} settlement of {3} withered.	{1}與{2}的聚落{3}就此衰亡。	{1}与{2}的聚落{3}就此衰亡。	inner	同上，據點屬於另一個文明（原文缺 's，照抄）
+{1} abandoned the settlement of {2}.	{1}放棄了聚落{2}。	{1}放弃了聚落{2}。	inner	同上，棄守據點
+the withering of {1} and their settlement of {2}	{1}及其聚落{2}的衰亡	{1}及其聚落{2}的衰亡	inner	site_died 短語 FUN_140b67f30 L1681511
+the withering of {1} and {2} settlement of {3}	{1}與{2}的聚落{3}的衰亡	{1}与{2}的聚落{3}的衰亡	inner	同上
+the abandonment of {1} and their settlement of {2}	{1}棄守其聚落{2}	{1}弃守其聚落{2}	inner	同上
+the abandonment of {1} and {2} settlement of {3}	{1}棄守{2}的聚落{3}	{1}弃守{2}的聚落{3}	inner	同上
+{1} formed in {2} in {3}.	{1}在{3}的{2}成立。	{1}在{3}的{2}成立。	inner	entity_created 完整句 FUN_140b68020 L1681541：沒有創立者，{2} 建築、{3} 據點；順序：長的在前，formed in 在 formed {n} 前
+{1} formed in {2}.	{1}在{2}成立。	{1}在{2}成立。	inner	同上
+{1} formed.	{1}成立了。	{1}成立了。	inner	同上
+{1} formed {2} in {3} in {4}.	{1}在{4}的{3}成立了{2}。	{1}在{4}的{3}成立了{2}。	inner	同上，{1} 創立者
+{1} formed {2} in {3}.	{1}在{3}成立了{2}。	{1}在{3}成立了{2}。	inner	同上
+{1} formed {2}.	{1}成立了{2}。	{1}成立了{2}。	inner	同上
+the formation of {1} by {2} in {3} at {4}	{2}在{4}的{3}成立{1}	{2}在{4}的{3}成立{1}	inner	entity_created 短語 FUN_140b688d0 L1681825：長的在前
+the formation of {1} by {2} at {3}	{2}在{3}成立{1}	{2}在{3}成立{1}	inner	同上
+the formation of {1} by {2}	{2}成立{1}	{2}成立{1}	inner	同上
+the formation of {1} in {2} at {3}	{1}在{3}的{2}成立	{1}在{3}的{2}成立	inner	同上
+the formation of {1} at {2}	{1}在{2}成立	{1}在{2}成立	inner	同上
+the formation of {1}	{1}的成立	{1}的成立	inner	同上
+{1} became the primary criminal organization in {2} in {3}.	{1}在{3}的{2}成為頭號犯罪組織。	{1}在{3}的{2}成为头号犯罪组织。	inner	entity_action 完整句 FUN_140b68180 L1681574：{2} 建築、{3} 據點；長的在前
+{1} became the primary criminal organization in {2}.	{1}在{2}成為頭號犯罪組織。	{1}在{2}成为头号犯罪组织。	inner	同上
+{1} became the primary criminal organization.	{1}成為頭號犯罪組織。	{1}成为头号犯罪组织。	inner	同上
+{1} moved to study in the area around {2}.	{1}遷往{2}一帶求學。	{1}迁往{2}一带求学。	inner	FUN_140b771d0 1690048 change_hf_state（reason 0x2e/0x2f）（Events10 寫的，排在 `{1} moved to {2} in {3}.` 前）
+{1} moved to study in {2}.	{1}遷往{2}求學。	{1}迁往{2}求学。	inner	FUN_140b771d0 1690048 change_hf_state（reason 0x2e/0x2f）（Events10 寫的，排在 `{1} moved to {2} in {3}.` 前）
+{1} moved to {2} in {3}.	{1}遷往{3}的{2}。	{1}迁往{3}的{2}。	inner	entity_action 完整句 FUN_140b68180 L1681574，組織遷移：{2} 建築、{3} 據點
+{1} moved to {2}.	{1}遷往{2}。	{1}迁往{2}。	inner	同上
+{1} moved.	{1}遷移了。	{1}迁移了。	inner	同上
+the ascendency of the criminal organization {1} in {2} in {3}	犯罪組織{1}在{3}的{2}崛起	犯罪组织{1}在{3}的{2}崛起	inner	entity_action 短語 FUN_140b689e0 L1681853
+the ascendency of the criminal organization {1} in {2}	犯罪組織{1}在{2}崛起	犯罪组织{1}在{2}崛起	inner	同上
+the ascendency of the criminal organization {1}	犯罪組織{1}的崛起	犯罪组织{1}的崛起	inner	同上
+the relocation of {1} to {2} in {3}	{1}遷往{3}的{2}	{1}迁往{3}的{2}	inner	同上
+the relocation of {1} to {2}	{1}遷往{2}	{1}迁往{2}	inner	同上
+the relocation of {1}	{1}的遷移	{1}的迁移	inner	同上
+a few {%1}	少數{1}	少数{1}	inner	regionpop_incorporated_into_entity 人數詞 FUN_140b68300 L1681642（<10）＋種族名；子句與短語句型（{%1} from {2} joined with {3}…、the joining of {%1}…）放在 _events_02.tsv，排在它的通用 joined with 前面
+several {%1}	若干{1}	若干{1}	inner	同上（<24）
+dozens of {%1}	數十{1}	数十{1}	inner	同上（<100）
+some hundred {%1}	約百{1}	约百{1}	inner	同上（<200）
+hundreds {%1}	數百{1}	数百{1}	inner	同上（<1000，原文沒有 of，照抄）
+a multitude of {%1}	大批{1}	大批{1}	inner	同上（≥1000）
+{1} began operating at the direction of {2} at {3} under the leadership of {4}.	{1}在{4}的領導下，於{3}開始聽命於{2}。	{1}在{4}的领导下，于{3}开始听命于{2}。	inner	entity_incorporated 完整句 FUN_140b68690 L1681761：{3} 據點、{4} 領導人物；長的在前
+{1} began operating at the direction of {2} at {3}.	{1}於{3}開始聽命於{2}。	{1}于{3}开始听命于{2}。	inner	同上
+{1} began operating at the direction of {2} under the leadership of {3}.	{1}在{3}的領導下開始聽命於{2}。	{1}在{3}的领导下开始听命于{2}。	inner	同上
+{1} began operating at the direction of {2}.	{1}開始聽命於{2}。	{1}开始听命于{2}。	inner	同上
+{1} fully incorporated into {2} at {3} under the leadership of {4}.	{1}在{4}的領導下，於{3}完全併入{2}。	{1}在{4}的领导下，于{3}完全并入{2}。	inner	同上，完全併入
+{1} fully incorporated into {2} at {3}.	{1}於{3}完全併入{2}。	{1}于{3}完全并入{2}。	inner	同上
+{1} fully incorporated into {2} under the leadership of {3}.	{1}在{3}的領導下完全併入{2}。	{1}在{3}的领导下完全并入{2}。	inner	同上
+{1} fully incorporated into {2}.	{1}完全併入了{2}。	{1}完全并入了{2}。	inner	同上
+the subordination of {1} by {2} at {3} under the leadership of {4}	{1}在{4}的領導下於{3}聽命於{2}	{1}在{4}的领导下于{3}听命于{2}	inner	entity_incorporated 短語 FUN_140b68b60 L1681903
+the subordination of {1} by {2} at {3}	{1}於{3}聽命於{2}	{1}于{3}听命于{2}	inner	同上
+the subordination of {1} by {2} under the leadership of {3}	{1}在{3}的領導下聽命於{2}	{1}在{3}的领导下听命于{2}	inner	同上
+the subordination of {1} by {2}	{1}聽命於{2}	{1}听命于{2}	inner	同上
+the incorporation of {1} into {2} at {3} under the leadership of {4}	{1}在{4}的領導下於{3}併入{2}	{1}在{4}的领导下于{3}并入{2}	inner	同上
+the incorporation of {1} into {2} at {3}	{1}於{3}併入{2}	{1}于{3}并入{2}	inner	同上
+the incorporation of {1} into {2} under the leadership of {3}	{1}在{3}的領導下併入{2}	{1}在{3}的领导下并入{2}	inner	同上
+the incorporation of {1} into {2}	{1}併入{2}	{1}并入{2}	inner	同上
+{1} of {2} at the settlement of {3} regained their senses after an initial period of questionable judgment.	{2}的{1}在聚落{3}度過最初一段判斷失當的時期後，恢復了理智。	{2}的{1}在聚落{3}度过最初一段判断失当的时期后，恢复了理智。	inner	site_retired 完整句 FUN_140b687e0 L1681798（退休要塞）：{1} 政權、{2} 文明
+{1} of {2} at the settlement of {3} regained their senses after another period of questionable judgment.	{2}的{1}在聚落{3}又度過一段判斷失當的時期後，恢復了理智。	{2}的{1}在聚落{3}又度过一段判断失当的时期后，恢复了理智。	inner	同上，第二次以後
+the return to reason at the settlement of {1} by {2} of {3}	{3}的{2}在聚落{1}恢復理智	{3}的{2}在聚落{1}恢复理智	inner	site_retired 短語 FUN_140b68c90 L1681938
+{1} enacted a series of oppressive laws.	{1}頒布了一系列高壓法令。	{1}颁布了一系列高压法令。	inner	entity_law 完整句 FUN_140b68d50 L1681955：{1} 文明
+{1} repealed numerous oppressive laws.	{1}廢除了多項高壓法令。	{1}废除了多项高压法令。	inner	同上
+{1} laid a series of oppressive edicts upon {2}.	{1}對{2}施加了一系列高壓敕令。	{1}对{2}施加了一系列高压敕令。	inner	同上，{1} 人物、{2} 文明
+{1} lifted numerous oppressive laws from {2}.	{1}為{2}解除了多項高壓法令。	{1}为{2}解除了多项高压法令。	inner	同上
+the enactment of a series of oppressive laws by {1}	{1}頒布一系列高壓法令	{1}颁布一系列高压法令	inner	entity_law 短語 FUN_140b68e80 L1681987
+the repeal of numerous oppressive laws by {1}	{1}廢除多項高壓法令	{1}废除多项高压法令	inner	同上
+the proclamation of a series of oppressive edicts upon {1} by {2}	{2}對{1}施加一系列高壓敕令	{2}对{1}施加一系列高压敕令	inner	同上
+the lifting of numerous oppressive laws from {1} by {2}	{2}為{1}解除多項高壓法令	{2}为{1}解除多项高压法令	inner	同上
+{1} of {2} finished the construction of {3} as a part of {4} connecting {5} and {6}.	{2}的{1}建成了連接{5}與{6}的{3}，作為{4}的一部分。	{2}的{1}建成了连接{5}与{6}的{3}，作为{4}的一部分。	inner	created_world_construction 完整句 FUN_140b68fb0 L1682019：{3}{4} 道路、隧道、橋、牆（名字或 a road 等）；順序：有 of 的主詞在前、as a part of 在前、connecting／in 在無地點前
+{1} of {2} finished the construction of {3} as a part of {4} in {5}.	{2}的{1}在{5}建成了{3}，作為{4}的一部分。	{2}的{1}在{5}建成了{3}，作为{4}的一部分。	inner	同上
+{1} of {2} finished the construction of {3} as a part of {4}.	{2}的{1}建成了{3}，作為{4}的一部分。	{2}的{1}建成了{3}，作为{4}的一部分。	inner	同上
+{1} of {2} finished the construction of {3} connecting {4} and {5}.	{2}的{1}建成了連接{4}與{5}的{3}。	{2}的{1}建成了连接{4}与{5}的{3}。	inner	同上
+{1} of {2} finished the construction of {3} in {4}.	{2}的{1}在{4}建成了{3}。	{2}的{1}在{4}建成了{3}。	inner	同上
+{1} of {2} finished the construction of {3}.	{2}的{1}建成了{3}。	{2}的{1}建成了{3}。	inner	同上
+{1} finished the construction of {2} as a part of {3} connecting {4} and {5}.	{1}建成了連接{4}與{5}的{2}，作為{3}的一部分。	{1}建成了连接{4}与{5}的{2}，作为{3}的一部分。	inner	同上
+{1} finished the construction of {2} as a part of {3} in {4}.	{1}在{4}建成了{2}，作為{3}的一部分。	{1}在{4}建成了{2}，作为{3}的一部分。	inner	同上
+{1} finished the construction of {2} as a part of {3}.	{1}建成了{2}，作為{3}的一部分。	{1}建成了{2}，作为{3}的一部分。	inner	同上
+{1} finished the construction of {2} connecting {3} and {4}.	{1}建成了連接{3}與{4}的{2}。	{1}建成了连接{3}与{4}的{2}。	inner	同上
+{1} finished the construction of {2} in {3}.	{1}在{3}建成了{2}。	{1}在{3}建成了{2}。	inner	同上
+{1} finished the construction of {2}.	{1}建成了{2}。	{1}建成了{2}。	inner	同上
+the completion of {1} as a part of {2} connecting {3} and {4} by {5} of {6}	{6}的{5}建成連接{3}與{4}的{1}，作為{2}的一部分	{6}的{5}建成连接{3}与{4}的{1}，作为{2}的一部分	inner	created_world_construction 短語 FUN_140b69120 L1682056：順序同完整句
+the completion of {1} as a part of {2} connecting {3} and {4} by {5}	{5}建成連接{3}與{4}的{1}，作為{2}的一部分	{5}建成连接{3}与{4}的{1}，作为{2}的一部分	inner	同上
+the completion of {1} as a part of {2} in {3} by {4} of {5}	{5}的{4}在{3}建成{1}，作為{2}的一部分	{5}的{4}在{3}建成{1}，作为{2}的一部分	inner	同上
+the completion of {1} as a part of {2} in {3} by {4}	{4}在{3}建成{1}，作為{2}的一部分	{4}在{3}建成{1}，作为{2}的一部分	inner	同上
+the completion of {1} as a part of {2} by {3} of {4}	{4}的{3}建成{1}，作為{2}的一部分	{4}的{3}建成{1}，作为{2}的一部分	inner	同上
+the completion of {1} as a part of {2} by {3}	{3}建成{1}，作為{2}的一部分	{3}建成{1}，作为{2}的一部分	inner	同上
+the completion of {1} connecting {2} and {3} by {4} of {5}	{5}的{4}建成連接{2}與{3}的{1}	{5}的{4}建成连接{2}与{3}的{1}	inner	同上
+the completion of {1} connecting {2} and {3} by {4}	{4}建成連接{2}與{3}的{1}	{4}建成连接{2}与{3}的{1}	inner	同上
+the completion of {1} in {2} by {3} of {4}	{4}的{3}在{2}建成{1}	{4}的{3}在{2}建成{1}	inner	同上
+the completion of {1} in {2} by {3}	{3}在{2}建成{1}	{3}在{2}建成{1}	inner	同上
+the completion of {1} by {2} of {3}	{3}的{2}建成{1}	{3}的{2}建成{1}	inner	同上
+the completion of {1} by {2}	{2}建成{1}	{2}建成{1}	inner	同上
+{1} of {2} thrust a spire of slade up from the underworld, naming it {3}, and established a gateway between worlds in {4}.	{2}的{1}在{4}從冥界升起一座冥岩尖塔，命名為{3}，並開啟了通往異界的門戶。	{2}的{1}在{4}从冥界升起一座冥岩尖塔，命名为{3}，并开启了通往异界的门户。	inner	created_building 完整句 FUN_140b69280 L1682092：冥界尖塔；{3} 建築名
+{1} thrust a spire of slade up from the underworld, naming it {2}, and established a gateway between worlds in {3}.	{1}在{3}從冥界升起一座冥岩尖塔，命名為{2}，並開啟了通往異界的門戶。	{1}在{3}从冥界升起一座冥岩尖塔，命名为{2}，并开启了通往异界的门户。	inner	同上，主詞是人物或單一文明
+{1} of {2} constructed {3} in {4}.	{2}的{1}在{4}建造了{3}。	{2}的{1}在{4}建造了{3}。	inner	同上，{3} 建築（名字或 a temple 等）；有 of 的在前
+{1} constructed {2} in {3}.	{1}在{3}建造了{2}。	{1}在{3}建造了{2}。	inner	同上
+{1} of {2} rebuilt {3} in {4}.	{2}的{1}在{4}重建了{3}。	{2}的{1}在{4}重建了{3}。	inner	同上，重建
+{1} rebuilt {2} in {3}.	{1}在{3}重建了{2}。	{1}在{3}重建了{2}。	inner	同上
+the construction of {%1} from {%2} by {3} on behalf of {4} in {5} in {6}	{2}在{6}的{5}遭{3}奉{4}之命堆砌成{1}	{2}在{6}的{5}遭{3}奉{4}之命堆砌成{1}	inner	history_event_body_abusedst 短語 FUN_140b84480 L1697623 case 1（Events16 寫的，排在 created_building／created_site 的 the construction of 前面；{%2} 由 _events_16 的 the body of… inner 句型翻）
+the construction of {%1} from {%2} by {3} on behalf of {4} in {5}	{2}在{5}遭{3}奉{4}之命堆砌成{1}	{2}在{5}遭{3}奉{4}之命堆砌成{1}	inner	同上（Events16）
+the construction of {%1} from {%2} by {3} on behalf of {4}	{2}遭{3}奉{4}之命堆砌成{1}	{2}遭{3}奉{4}之命堆砌成{1}	inner	同上（Events16）
+the construction of {%1} from {%2} by {3} in {4} in {5}	{2}在{5}的{4}遭{3}堆砌成{1}	{2}在{5}的{4}遭{3}堆砌成{1}	inner	同上（Events16）
+the construction of {%1} from {%2} by {3} in {4}	{2}在{4}遭{3}堆砌成{1}	{2}在{4}遭{3}堆砌成{1}	inner	同上（Events16）
+the construction of {%1} from {%2} by {3}	{2}遭{3}堆砌成{1}	{2}遭{3}堆砌成{1}	inner	同上（Events16）
+the construction of {%1} from {%2} in {3} in {4}	{2}在{4}的{3}遭堆砌成{1}	{2}在{4}的{3}遭堆砌成{1}	inner	同上（Events16）
+the construction of {%1} from {%2} in {3}	{2}在{3}遭堆砌成{1}	{2}在{3}遭堆砌成{1}	inner	同上（Events16）
+the construction of {%1} from {%2}	{2}遭堆砌成{1}	{2}遭堆砌成{1}	inner	同上（Events16）
+the construction of {1} in {2} by {3} of {4}	{4}的{3}在{2}建造{1}	{4}的{3}在{2}建造{1}	inner	created_building 短語 FUN_140b69d30 L1682424：排在 created_site 的 the construction of 前面（否則 {1} 會吞下「建築 in 據點」）
+the construction of {1} in {2} by {3}	{3}在{2}建造{1}	{3}在{2}建造{1}	inner	同上
+the rebuilding of {1} in {2} by {3} of {4}	{4}的{3}在{2}重建{1}	{4}的{3}在{2}重建{1}	inner	同上
+the rebuilding of {1} in {2} by {3}	{3}在{2}重建{1}	{3}在{2}重建{1}	inner	同上
+the emergence of {1} in {2} from the underworld through the power of {3} of {4}	{4}的{3}以其力量讓{1}從冥界升起於{2}	{4}的{3}以其力量让{1}从冥界升起于{2}	inner	同上，冥界尖塔
+the emergence of {1} in {2} from the underworld through the power of {3}	{3}以其力量讓{1}從冥界升起於{2}	{3}以其力量让{1}从冥界升起于{2}	inner	同上
+{1} of {2} replaced {3} in {4} with {5}.	{2}的{1}將{4}的{3}改建為{5}。	{2}的{1}将{4}的{3}改建为{5}。	inner	replaced_building 完整句 FUN_140b69450 L1682157：{3}{5} 建築
+{1} replaced {2} in {3} with {4}.	{1}將{3}的{2}改建為{4}。	{1}将{3}的{2}改建为{4}。	inner	同上
+the replacement of {1} with {2} in {3} by {4} of {5}	{5}的{4}將{3}的{1}改建為{2}	{5}的{4}将{3}的{1}改建为{2}	inner	replaced_building 短語 FUN_140b69f00 L1682490
+the replacement of {1} with {2} in {3} by {4}	{4}將{3}的{1}改建為{2}	{4}将{3}的{1}改建为{2}	inner	同上
+{1} razed {2} in {3}.	{1}夷平了{3}的{2}。	{1}夷平了{3}的{2}。	inner	entity_razed_building FUN_140b69590 L1682183（{1} 文明）、hf_razed_building FUN_140b69670 L1682201（{1} 人物）完整句
+the razing of {1} in {2} by {3}	{3}夷平{2}的{1}	{3}夷平{2}的{1}	inner	entity_razed_building 短語 FUN_140b6a3b0 L1682616、hf_razed_building 短語 FUN_140b6a030 L1682515
+{1} was disturbed from eternal rest once more, this time by {2} as {%3} in {4}.	{1}在{4}再次從永眠中被驚醒，這次是{2}所為，化為{3}。	{1}在{4}再次从永眠中被惊醒，这次是{2}所为，化为{3}。	inner	FUN_140b70360 L1686189 hist_figure_revived 完整句（Events09，搬到這裡：排在 hf_act_on_building 的 {1} disturbed {2} in {3}. 前面）：有施術者，flag 2 disturbed；once more；as 鬼魂種類或互動顯示名；in 據點／地區／地底層
+{1} was disturbed from eternal rest once more, this time by {2} in {3}.	{1}在{3}再次從永眠中被驚醒，這次是{2}所為。	{1}在{3}再次从永眠中被惊醒，这次是{2}所为。	inner	同上：once more；in 據點／地區／地底層
+{1} was disturbed from eternal rest by {2} as {%3} in {4}.	{1}在{4}被{2}從永眠中驚醒，化為{3}。	{1}在{4}被{2}从永眠中惊醒，化为{3}。	inner	同上：as 鬼魂種類或互動顯示名；in 據點／地區／地底層
+{1} was disturbed from eternal rest by {2} in {3}.	{1}在{3}被{2}從永眠中驚醒。	{1}在{3}被{2}从永眠中惊醒。	inner	同上：in 據點／地區／地底層
+{1} profaned {2} in {3}.	{1}褻瀆了{3}的{2}。	{1}亵渎了{3}的{2}。	inner	hf_act_on_building 完整句 FUN_140b69760 L1682224
+{1} disturbed {2} in {3}.	{1}驚擾了{3}的{2}。	{1}惊扰了{3}的{2}。	inner	同上
+{1} prayed inside {2} in {3}.	{1}在{3}的{2}裡祈禱。	{1}在{3}的{2}里祈祷。	inner	同上
+the profaning of {1} in {2} by {3}	{3}褻瀆{2}的{1}	{3}亵渎{2}的{1}	inner	hf_act_on_building 短語 FUN_140b6a110 L1682536
+the disturbing of {1} in {2} by {3}	{3}驚擾{2}的{1}	{3}惊扰{2}的{1}	inner	同上
+the prayer inside of {1} in {2} by {3}	{3}在{2}的{1}裡祈禱	{3}在{2}的{1}里祈祷	inner	同上
+{1} viewed {2} in {3} in {4}.	{1}在{4}的{3}觀賞了{2}。	{1}在{4}的{3}观赏了{2}。	inner	hf_act_on_artifact 完整句 FUN_140b698b0 L1682267：{2} 神器、{3} 建築、{4} 據點；長的在前
+{1} viewed {2} in {3}.	{1}在{3}觀賞了{2}。	{1}在{3}观赏了{2}。	inner	同上
+{1} asked about {2} in {3} in {4}.	{1}在{4}的{3}打聽了{2}。	{1}在{4}的{3}打听了{2}。	inner	同上
+{1} asked about {2} in {3}.	{1}在{3}打聽了{2}。	{1}在{3}打听了{2}。	inner	同上
+the viewing of {1} in {2} in {3} by {4}	{4}在{3}的{2}觀賞{1}	{4}在{3}的{2}观赏{1}	inner	hf_act_on_artifact 短語 FUN_140b6a250 L1682577
+the viewing of {1} in {2} by {3}	{3}在{2}觀賞{1}	{3}在{2}观赏{1}	inner	同上
+the inquiry after {1} in {2} in {3} by {4}	{4}在{3}的{2}打聽{1}	{4}在{3}的{2}打听{1}	inner	同上
+the inquiry after {1} in {2} by {3}	{3}在{2}打聽{1}	{3}在{2}打听{1}	inner	同上
+{1} of {2} founded {3} for {4}.	{2}的{1}為{4}建立了{3}。	{2}的{1}为{4}建立了{3}。	inner	created_site 完整句 FUN_140b69a10 L1682308：{3} 據點、{4} 文明；有 of 的主詞在前
+{1} of {2} founded {3}.	{2}的{1}建立了{3}。	{2}的{1}建立了{3}。	inner	同上
+{1} founded {2} for {3}.	{1}為{3}建立了{2}。	{1}为{3}建立了{2}。	inner	同上，主詞是人物或單一文明
+{1} founded {2}.	{1}建立了{2}。	{1}建立了{2}。	inner	同上
+{1} of {2} created {3} for {4}.	{2}的{1}為{4}創造了{3}。	{2}的{1}为{4}创造了{3}。	inner	同上，據點種類 10（神祕之地）
+{1} of {2} created {3}.	{2}的{1}創造了{3}。	{2}的{1}创造了{3}。	inner	同上
+{1} created {2} for {3}.	{1}為{3}創造了{2}。	{1}为{3}创造了{2}。	inner	同上
+{1} created {2}.	{1}創造了{2}。	{1}创造了{2}。	inner	同上
+{1} of {2} constructed {3} for {4}.	{2}的{1}為{4}建造了{3}。	{2}的{1}为{4}建造了{3}。	inner	同上，據點種類 8、10
+{1} of {2} constructed {3}.	{2}的{1}建造了{3}。	{2}的{1}建造了{3}。	inner	同上
+{1} constructed {2} for {3}.	{1}為{3}建造了{2}。	{1}为{3}建造了{2}。	inner	同上
+{1} constructed {2}.	{1}建造了{2}。	{1}建造了{2}。	inner	同上
+the foundation of {1} by {2} of {3} for {4}	{3}的{2}為{4}建立{1}	{3}的{2}为{4}建立{1}	inner	created_site 短語 FUN_140b69bb0 L1682367
+the foundation of {1} by {2} of {3}	{3}的{2}建立{1}	{3}的{2}建立{1}	inner	同上
+the foundation of {1} by {2} for {3}	{2}為{3}建立{1}	{2}为{3}建立{1}	inner	同上
+the foundation of {1} by {2}	{2}建立{1}	{2}建立{1}	inner	同上
+the creation of {1} in {2} by {3} and {4}	{3}和{4}在{2}創造{1}	{3}和{4}在{2}创造{1}	inner	FUN_140b89e90 1700893 artifact_created 短語（Events17 寫的，排在 created_site 的 the creation of 前）
+the creation of {1} in {2} by {3}	{3}在{2}創造{1}	{3}在{2}创造{1}	inner	FUN_140b89e90 1700893 artifact_created 短語（Events17 寫的）
+the creation of {1} by {2} and {3}	{2}和{3}創造{1}	{2}和{3}创造{1}	inner	FUN_140b89e90 1700893 artifact_created 短語（Events17 寫的）
+the creation of {1} by {2} in {3}	{2}在{3}創造{1}	{2}在{3}创造{1}	inner	FUN_140b88c70 1700168／FUN_140b89120 1700353／FUN_140b89640 1700572 形式創作 短語（Events17 寫的）：排在 the creation of {1} in {2} 前面
+the creation of {1} by {2} of {3} for {4}	{3}的{2}為{4}創造{1}	{3}的{2}为{4}创造{1}	inner	created_site 短語 FUN_140b69bb0 L1682367（據點種類 10）
+the creation of {1} by {2} of {3}	{3}的{2}創造{1}	{3}的{2}创造{1}	inner	同上
+the creation of {1} by {2} for {3}	{2}為{3}創造{1}	{2}为{3}创造{1}	inner	同上
+the creation of {1} by {2}	{2}創造{1}	{2}创造{1}	inner	同上
+the construction of {1} by {2} of {3} for {4}	{3}的{2}為{4}建造{1}	{3}的{2}为{4}建造{1}	inner	同上（排在 created_building 的 the construction of 後面）
+the construction of {1} by {2} of {3}	{3}的{2}建造{1}	{3}的{2}建造{1}	inner	同上
+the construction of {1} by {2} for {3}	{2}為{3}建造{1}	{2}为{3}建造{1}	inner	同上
+the construction of {1} by {2}	{2}建造{1}	{2}建造{1}	inner	同上
+an insurrection against{1} began in {2}.	{2}爆發了反抗{1}的叛亂。	{2}爆发了反抗{1}的叛乱。	inner	insurrection_started 完整句 FUN_140b6a480 L1682633：原文 against 後面沒有空白，照抄
+an insurrection began in {1}.	{1}爆發了叛亂。	{1}爆发了叛乱。	inner	同上
+the insurrection against{1} in {2}	{2}反抗{1}的叛亂	{2}反抗{1}的叛乱	inner	insurrection_started 短語 FUN_140b6a550 L1682652：against 後面沒有空白
+the insurrection in {1}	{1}的叛亂	{1}的叛乱	inner	同上
+the insurrection in {1} concluded with the local government overthrown.	{1}的叛亂以推翻當地政府告終。	{1}的叛乱以推翻当地政府告终。	inner	insurrection_ended 完整句 FUN_140b6a600 L1682670：推翻
+the insurrection in {1} concluded with {2} overthrown.	{1}的叛亂以推翻{2}告終。	{1}的叛乱以推翻{2}告终。	inner	同上
+the insurrection in {1} against the local government ended with the disappearance of the rebelling population.	{1}反抗當地政府的叛亂隨著叛亂人口消失而告終。	{1}反抗当地政府的叛乱随着叛乱人口消失而告终。	inner	同上：叛亂人口消失
+the insurrection in {1} against {2} ended with the disappearance of the rebelling population.	{1}反抗{2}的叛亂隨著叛亂人口消失而告終。	{1}反抗{2}的叛乱随着叛乱人口消失而告终。	inner	同上
+the local government crushed the insurrection in {1}.	當地政府鎮壓了{1}的叛亂。	当地政府镇压了{1}的叛乱。	inner	同上：鎮壓
+{1} crushed the insurrection in {2}.	{1}鎮壓了{2}的叛亂。	{1}镇压了{2}的叛乱。	inner	同上
+the overthrow of the local government in {1}	{1}當地政府遭推翻	{1}当地政府遭推翻	inner	insurrection_ended 短語 FUN_140b6a7f0 L1682731
+the overthrow of {1} in {2}	{1}在{2}遭推翻	{1}在{2}遭推翻	inner	同上
+the end of the insurrection in {1} against the local government	{1}反抗當地政府的叛亂落幕	{1}反抗当地政府的叛乱落幕	inner	同上
+the end of the insurrection in {1} against {2}	{1}反抗{2}的叛亂落幕	{1}反抗{2}的叛乱落幕	inner	同上
+the crushing of the insurrection against the local government in {1}	{1}反抗當地政府的叛亂遭到鎮壓	{1}反抗当地政府的叛乱遭到镇压	inner	同上
+the crushing of the insurrection against {1} in {2}	{2}反抗{1}的叛亂遭到鎮壓	{2}反抗{1}的叛乱遭到镇压	inner	同上
+{1} of {2} launched an expedition to reclaim {3}.	{2}的{1}派出遠征隊收復{3}。	{2}的{1}派出远征队收复{3}。	inner	reclaim_site 完整句 FUN_140b6a930 L1682778：有 of 的在前
+{1} launched an expedition to reclaim {2}.	{1}派出遠征隊收復{2}。	{1}派出远征队收复{2}。	inner	同上
+{1} of {2} were taken by a mood to act against their better judgment at {3}.	{2}的{1}在{3}一時衝動，做出了違背理智的舉動。	{2}的{1}在{3}一时冲动，做出了违背理智的举动。	inner	同上：重啟退休要塞
+{1} were taken by a mood to act against their better judgment at {2}.	{1}在{2}一時衝動，做出了違背理智的舉動。	{1}在{2}一时冲动，做出了违背理智的举动。	inner	同上
+the reclamation of {1} by {2} of {3}	{3}的{2}收復{1}	{3}的{2}收复{1}	inner	reclaim_site 短語 FUN_140b6aa30 L1682809
+the reclamation of {1} by {2}	{2}收復{1}	{2}收复{1}	inner	同上
+the questionable judgment of {1} of {2} at {3}	{2}的{1}在{3}的失當判斷	{2}的{1}在{3}的失当判断	inner	同上
+the questionable judgment of {1} at {2}	{1}在{2}的失當判斷	{1}在{2}的失当判断	inner	同上

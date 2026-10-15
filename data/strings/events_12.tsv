@@ -1,0 +1,72 @@
+en	zh-Hant	zh-Hans	align	note
+attaining sufficient skill with a weapon or technique	某種武器或技巧達到足夠的造詣	某种武器或技巧达到足够的造诣	inner	FUN_140b7a420 L1691996（add_hf_entity_honor） 授予條件項目（只給本檔 after 子句用） L1692054
+attaining sufficient skill with a melee weapon or technique	某種近戰武器或技巧達到足夠的造詣	某种近战武器或技巧达到足够的造诣	inner	FUN_140b7a420 L1691996（add_hf_entity_honor） 授予條件項目（只給本檔 after 子句用） L1692059
+attaining sufficient skill with a ranged weapon	某種遠程武器達到足夠的造詣	某种远程武器达到足够的造诣	inner	FUN_140b7a420 L1691996（add_hf_entity_honor） 授予條件項目（只給本檔 after 子句用） L1692064
+attaining sufficient skill with the axe	斧術達到足夠的造詣	斧术达到足够的造诣	inner	FUN_140b7a420 L1691996（add_hf_entity_honor） 授予條件項目（只給本檔 after 子句用） L1692069
+attaining sufficient skill with the sword	劍術達到足夠的造詣	剑术达到足够的造诣	inner	FUN_140b7a420 L1691996（add_hf_entity_honor） 授予條件項目（只給本檔 after 子句用） L1692073
+attaining sufficient skill with the mace	釘錘術達到足夠的造詣	钉锤术达到足够的造诣	inner	FUN_140b7a420 L1691996（add_hf_entity_honor） 授予條件項目（只給本檔 after 子句用） L1692078
+attaining sufficient skill with the hammer	錘術達到足夠的造詣	锤术达到足够的造诣	inner	FUN_140b7a420 L1691996（add_hf_entity_honor） 授予條件項目（只給本檔 after 子句用） L1692083
+attaining sufficient skill with the spear	矛術達到足夠的造詣	矛术达到足够的造诣	inner	FUN_140b7a420 L1691996（add_hf_entity_honor） 授予條件項目（只給本檔 after 子句用） L1692087
+attaining sufficient skill with the crossbow	弩術達到足夠的造詣	弩术达到足够的造诣	inner	FUN_140b7a420 L1691996（add_hf_entity_honor） 授予條件項目（只給本檔 after 子句用） L1692091
+attaining sufficient skill with the shield	盾術達到足夠的造詣	盾术达到足够的造诣	inner	FUN_140b7a420 L1691996（add_hf_entity_honor） 授予條件項目（只給本檔 after 子句用） L1692095
+attaining sufficient skill with the pike	長槍術達到足夠的造詣	长枪术达到足够的造诣	inner	FUN_140b7a420 L1691996（add_hf_entity_honor） 授予條件項目（只給本檔 after 子句用） L1692099
+attaining sufficient skill with the whip	鞭術達到足夠的造詣	鞭术达到足够的造诣	inner	FUN_140b7a420 L1691996（add_hf_entity_honor） 授予條件項目（只給本檔 after 子句用） L1692103
+attaining sufficient skill with the bow	弓術達到足夠的造詣	弓术达到足够的造诣	inner	FUN_140b7a420 L1691996（add_hf_entity_honor） 授予條件項目（只給本檔 after 子句用） L1692106
+attaining sufficient skill with the blowgun	吹箭術達到足夠的造詣	吹箭术达到足够的造诣	inner	FUN_140b7a420 L1691996（add_hf_entity_honor） 授予條件項目（只給本檔 after 子句用） L1692110
+attaining sufficient skill with grappling	摔角達到足夠的造詣	摔跤达到足够的造诣	inner	FUN_140b7a420 L1691996（add_hf_entity_honor） 授予條件項目（只給本檔 after 子句用） L1692114
+attaining sufficient skill with the tooth	啃咬達到足夠的造詣	啃咬达到足够的造诣	inner	FUN_140b7a420 L1691996（add_hf_entity_honor） 授予條件項目（只給本檔 after 子句用） L1692118
+attaining sufficient skill with strikes	打擊達到足夠的造詣	打击达到足够的造诣	inner	FUN_140b7a420 L1691996（add_hf_entity_honor） 授予條件項目（只給本檔 after 子句用） L1692121
+attaining sufficient skill with kicks	踢擊達到足夠的造詣	踢击达到足够的造诣	inner	FUN_140b7a420 L1691996（add_hf_entity_honor） 授予條件項目（只給本檔 after 子句用） L1692125
+attaining sufficient skill with dodging	閃避達到足夠的造詣	闪避达到足够的造诣	inner	FUN_140b7a420 L1691996（add_hf_entity_honor） 授予條件項目（只給本檔 after 子句用） L1692128
+serving in combat	參與作戰	参与作战	inner	FUN_140b7a420 L1691996（add_hf_entity_honor） 授予條件項目（只給本檔 after 子句用） L1692159
+slaying an enemy	殺死一名敵人	杀死一名敌人	inner	FUN_140b7a420 L1691996（add_hf_entity_honor） 授予條件項目（只給本檔 after 子句用） L1692189
+being a member for a year	成為成員滿一年	成为成员满一年	inner	FUN_140b7a420 L1691996（add_hf_entity_honor） 授予條件項目（只給本檔 after 子句用） L1692219
+standard equipment	標準裝備	标准装备	inner	FUN_140b7ac70 L1692314（entity_equipment_purchase） L1692330 品質＋ equipment（短語 FUN_140b7ae50 同）
+artifact equipment	神器級裝備	神器级装备	inner	FUN_140b7ac70 L1692314（entity_equipment_purchase） L1692330 品質＋ equipment（短語 FUN_140b7ae50 同）
+Most property was confiscated.	大部分財產遭到沒收。	大部分财产遭到没收。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692782：沒收／驅逐單獨成句
+Somebody was expelled.	有一人遭到驅逐。	有一人遭到驱逐。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692820：沒收／驅逐單獨成句
+A few people were expelled.	有數人遭到驅逐。	有数人遭到驱逐。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692824：沒收／驅逐單獨成句
+Several people were expelled.	有好幾人遭到驅逐。	有好几人遭到驱逐。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692843：沒收／驅逐單獨成句
+Dozens of people were expelled.	有數十人遭到驅逐。	有数十人遭到驱逐。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692848：沒收／驅逐單獨成句
+A hundred or more people were expelled.	有上百人遭到驅逐。	有上百人遭到驱逐。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692853：沒收／驅逐單獨成句
+Five hundred or more people were expelled.	有五百人以上遭到驅逐。	有五百人以上遭到驱逐。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692858：沒收／驅逐單獨成句
+A thousand or more people were expelled.	有上千人遭到驅逐。	有上千人遭到驱逐。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692863：沒收／驅逐單獨成句
+Several major structures were destroyed.	好幾座主要建築遭到摧毀。	好几座主要建筑遭到摧毁。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692960：毀壞／褻瀆單獨成句
+Several major structures were destroyed along with smaller sacred sites.	好幾座主要建築遭到摧毀，一些較小的聖地也一併被毀。	好几座主要建筑遭到摧毁，一些较小的圣地也一并被毁。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692960＋L1692973：毀壞／褻瀆單獨成句
+Several major structures were destroyed along with several smaller sacred sites.	好幾座主要建築遭到摧毀，好幾處較小的聖地也一併被毀。	好几座主要建筑遭到摧毁，好几处较小的圣地也一并被毁。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692960＋L1692987：毀壞／褻瀆單獨成句
+Some sacred sites were desecrated.	一些聖地遭到褻瀆。	一些圣地遭到亵渎。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692967：毀壞／褻瀆單獨成句
+Several sacred sites were desecrated.	好幾處聖地遭到褻瀆。	好几处圣地遭到亵渎。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692976：毀壞／褻瀆單獨成句
+a cottage plot	小屋地	小屋地	inner	FUN_140b93cf0 L1707123 建物種類（building_profile_acquired 用；只給佔位用）
+a castle wall	城牆	城墙	inner	FUN_140b93cf0 L1707123 建物種類（building_profile_acquired 用；只給佔位用）
+a castle tower	城塔	城塔	inner	FUN_140b93cf0 L1707123 建物種類（building_profile_acquired 用；只給佔位用）
+a castle courtyard	城堡庭院	城堡庭院	inner	FUN_140b93cf0 L1707123 建物種類（building_profile_acquired 用；只給佔位用）
+a house	房屋	房屋	inner	FUN_140b93cf0 L1707123 建物種類（building_profile_acquired 用；只給佔位用）
+a tomb	墓室	墓室	inner	FUN_140b93cf0 L1707123 建物種類（building_profile_acquired 用；只給佔位用）；FUN_140b94090 同
+a shop	商店	商店	inner	FUN_140b93cf0 L1707123 建物種類（building_profile_acquired 用；只給佔位用）
+a warehouse	倉庫	仓库	inner	FUN_140b93cf0 L1707123 建物種類（building_profile_acquired 用；只給佔位用）
+a market square	市集廣場	集市广场	inner	FUN_140b93cf0 L1707123 建物種類（building_profile_acquired 用；只給佔位用）
+a pasture	牧場	牧场	inner	FUN_140b93cf0 L1707123 建物種類（building_profile_acquired 用；只給佔位用）
+a waste	荒地	荒地	inner	FUN_140b93cf0 L1707123 建物種類（building_profile_acquired 用；只給佔位用）
+a yard	院子	院子	inner	FUN_140b93cf0 L1707123 建物種類（building_profile_acquired 用；只給佔位用）
+a well	水井	水井	inner	FUN_140b93cf0 L1707123 建物種類（building_profile_acquired 用；只給佔位用）
+a vault	金庫	金库	inner	FUN_140b93cf0 L1707123 建物種類（building_profile_acquired 用；只給佔位用）
+a trenches	壕溝	壕沟	inner	FUN_140b93cf0 L1707123 建物種類（building_profile_acquired 用；只給佔位用）（原文文法照抄）
+a tree	樹	树	inner	FUN_140b93cf0 L1707123 建物種類（building_profile_acquired 用；只給佔位用）
+a hillock	小丘	小丘	inner	FUN_140b93cf0 L1707123 建物種類（building_profile_acquired 用；只給佔位用）
+a fortress entrance	要塞入口	要塞入口	inner	FUN_140b93cf0 L1707123 建物種類（building_profile_acquired 用；只給佔位用）
+a tower	高塔	高塔	inner	FUN_140b93cf0 L1707123 建物種類（building_profile_acquired 用；只給佔位用）；FUN_140b94090 同
+a shrine	神龕	神龛	inner	FUN_140b93cf0 L1707123 建物種類（building_profile_acquired 用；只給佔位用）
+a meadow	草地	草地	inner	FUN_140b93cf0 L1707123 建物種類（building_profile_acquired 用；只給佔位用）
+a dormitory	宿舍	宿舍	inner	FUN_140b93cf0 L1707123 建物種類（building_profile_acquired 用；只給佔位用）
+a dining hall	餐廳	餐厅	inner	FUN_140b93cf0 L1707123 建物種類（building_profile_acquired 用；只給佔位用）
+a barrow	古墳	古坟	inner	FUN_140b93cf0 L1707123 建物種類（building_profile_acquired 用；只給佔位用）
+a mythical palace	神話宮殿	神话宫殿	inner	FUN_140b93cf0 L1707123 建物種類（building_profile_acquired 用；只給佔位用）
+a mythical dungeon	神話地牢	神话地牢	inner	FUN_140b93cf0 L1707123 建物種類（building_profile_acquired 用；只給佔位用）
+a mythical lair	神話巢穴	神话巢穴	inner	FUN_140b93cf0 L1707123 建物種類（building_profile_acquired 用；只給佔位用）
+a dark tower	黑暗高塔	黑暗高塔	inner	FUN_140b94090 L1707286 建築種類（只給佔位用）；譯名對齊名聲句的「黑暗高塔」
+a dungeon	地牢	地牢	inner	FUN_140b94090 L1707286 建築種類（只給佔位用）
+and Several major structures were destroyed	好幾座主要建築遭到摧毀	好几座主要建筑遭到摧毁	inner	FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692960：「沒收／驅逐 and 毀壞／褻瀆」的後半（只給本檔 {%n} 用；遊戲在 and 後照樣大寫 Several major…）
+and Several major structures were destroyed along with smaller sacred sites	好幾座主要建築遭到摧毀，一些較小的聖地也一併被毀	好几座主要建筑遭到摧毁，一些较小的圣地也一并被毁	inner	FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692960＋L1692973：「沒收／驅逐 and 毀壞／褻瀆」的後半（只給本檔 {%n} 用；遊戲在 and 後照樣大寫 Several major…）
+and Several major structures were destroyed along with several smaller sacred sites	好幾座主要建築遭到摧毀，好幾處較小的聖地也一併被毀	好几座主要建筑遭到摧毁，好几处较小的圣地也一并被毁	inner	FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692960＋L1692987：「沒收／驅逐 and 毀壞／褻瀆」的後半（只給本檔 {%n} 用；遊戲在 and 後照樣大寫 Several major…）
+and some sacred sites were desecrated	一些聖地遭到褻瀆	一些圣地遭到亵渎	inner	FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692969：「沒收／驅逐 and 毀壞／褻瀆」的後半（只給本檔 {%n} 用；遊戲在 and 後照樣大寫 Several major…）
+and several sacred sites were desecrated	好幾處聖地遭到褻瀆	好几处圣地遭到亵渎	inner	FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692978：「沒收／驅逐 and 毀壞／褻瀆」的後半（只給本檔 {%n} 用；遊戲在 and 後照樣大寫 Several major…）

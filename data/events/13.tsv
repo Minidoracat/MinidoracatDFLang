@@ -1,0 +1,161 @@
+en	zh-Hant	zh-Hans	align	note
+{1} attempted to frame {2} for {%3} at the behest of {4} by fooling {5} and {6} with fabricated evidence, but nothing came of it.	{1}受{4}指使，企圖以{3}的罪名誣陷{2}，用捏造的證據矇騙了{5}與{6}，但最後不了了之。	{1}受{4}指使，企图以{3}的罪名诬陷{2}，用捏造的证据蒙骗了{5}和{6}，但最后不了了之。	inner	FUN_140b7d410 1693536 failed_frame_attempt 完整句：{1}誣陷者、{2}目標、罪名 {%n}、受騙者；at the behest of／and 文明 變體排在前面，免得 {n} 吞下
+{1} attempted to frame {2} for {%3} at the behest of {4} by fooling {5} with fabricated evidence, but nothing came of it.	{1}受{4}指使，企圖以{3}的罪名誣陷{2}，用捏造的證據矇騙了{5}，但最後不了了之。	{1}受{4}指使，企图以{3}的罪名诬陷{2}，用捏造的证据蒙骗了{5}，但最后不了了之。	inner	FUN_140b7d410 1693536 failed_frame_attempt 完整句：{1}誣陷者、{2}目標、罪名 {%n}、受騙者；at the behest of／and 文明 變體排在前面，免得 {n} 吞下
+{1} attempted to frame {2} for {%3} by fooling {4} and {5} with fabricated evidence, but nothing came of it.	{1}企圖以{3}的罪名誣陷{2}，用捏造的證據矇騙了{4}與{5}，但最後不了了之。	{1}企图以{3}的罪名诬陷{2}，用捏造的证据蒙骗了{4}和{5}，但最后不了了之。	inner	FUN_140b7d410 1693536 failed_frame_attempt 完整句：{1}誣陷者、{2}目標、罪名 {%n}、受騙者；at the behest of／and 文明 變體排在前面，免得 {n} 吞下
+{1} attempted to frame {2} for {%3} by fooling {4} with fabricated evidence, but nothing came of it.	{1}企圖以{3}的罪名誣陷{2}，用捏造的證據矇騙了{4}，但最後不了了之。	{1}企图以{3}的罪名诬陷{2}，用捏造的证据蒙骗了{4}，但最后不了了之。	inner	FUN_140b7d410 1693536 failed_frame_attempt 完整句：{1}誣陷者、{2}目標、罪名 {%n}、受騙者；at the behest of／and 文明 變體排在前面，免得 {n} 吞下
+the failed attempt by {1} at the behest of {2} to frame {3} for {%4} by fooling {5} and {6} with fabricated evidence	{1}受{2}指使，用捏造的證據矇騙{5}與{6}，以{4}的罪名誣陷{3}未遂	{1}受{2}指使，用捏造的证据蒙骗{5}和{6}，以{4}的罪名诬陷{3}未遂	inner	FUN_140b7d740 1693647 failed_frame_attempt 短語：日期由 _events_00 的 {%1} in {#2} 處理
+the failed attempt by {1} at the behest of {2} to frame {3} for {%4} by fooling {5} with fabricated evidence	{1}受{2}指使，用捏造的證據矇騙{5}，以{4}的罪名誣陷{3}未遂	{1}受{2}指使，用捏造的证据蒙骗{5}，以{4}的罪名诬陷{3}未遂	inner	FUN_140b7d740 1693647 failed_frame_attempt 短語：日期由 _events_00 的 {%1} in {#2} 處理
+the failed attempt by {1} to frame {2} for {%3} by fooling {4} and {5} with fabricated evidence	{1}用捏造的證據矇騙{4}與{5}，以{3}的罪名誣陷{2}未遂	{1}用捏造的证据蒙骗{4}和{5}，以{3}的罪名诬陷{2}未遂	inner	FUN_140b7d740 1693647 failed_frame_attempt 短語：日期由 _events_00 的 {%1} in {#2} 處理
+the failed attempt by {1} to frame {2} for {%3} by fooling {4} with fabricated evidence	{1}用捏造的證據矇騙{4}，以{3}的罪名誣陷{2}未遂	{1}用捏造的证据蒙骗{4}，以{3}的罪名诬陷{2}未遂	inner	FUN_140b7d740 1693647 failed_frame_attempt 短語：日期由 _events_00 的 {%1} in {#2} 處理
+after being recognized and arrested by {1}, {2} confessed and was convicted of {%3}.	{2}被{1}認出並逮捕，認罪後被定罪，罪名是{3}。	{2}被{1}认出并逮捕，认罪后被定罪，罪名是{3}。	inner	FUN_140b7da60 1693757 hf_convicted 完整句：{%n} 是罪名加附加段（由下方 inner 句型一層層剝）；前綴（逮捕／監視）變體排在無前綴前面
+after being recognized and arrested by {1}, {2} confessed and was wrongfully convicted of {%3}.	{2}被{1}認出並逮捕，認罪後被誤判有罪，罪名是{3}。	{2}被{1}认出并逮捕，认罪后被误判有罪，罪名是{3}。	inner	FUN_140b7da60 1693757 hf_convicted 完整句：{%n} 是罪名加附加段（由下方 inner 句型一層層剝）；前綴（逮捕／監視）變體排在無前綴前面
+after being recognized and arrested by {1}, {2} confessed and was convicted as a go-between in a conspiracy to commit {%3}.	{2}被{1}認出並逮捕，認罪後以中間人身分被定罪，罪名是共謀{3}。	{2}被{1}认出并逮捕，认罪后以中间人身份被定罪，罪名是共谋{3}。	inner	FUN_140b7da60 1693757 hf_convicted 完整句：{%n} 是罪名加附加段（由下方 inner 句型一層層剝）；前綴（逮捕／監視）變體排在無前綴前面；conspiracy to commit 是罪名「共謀」；術語例外：conspiracy
+after being recognized and arrested by {1}, {2} confessed and was wrongfully convicted as a go-between in a conspiracy to commit {%3}.	{2}被{1}認出並逮捕，認罪後以中間人身分被誤判有罪，罪名是共謀{3}。	{2}被{1}认出并逮捕，认罪后以中间人身份被误判有罪，罪名是共谋{3}。	inner	FUN_140b7da60 1693757 hf_convicted 完整句：{%n} 是罪名加附加段（由下方 inner 句型一層層剝）；前綴（逮捕／監視）變體排在無前綴前面；conspiracy to commit 是罪名「共謀」；術語例外：conspiracy
+after being recognized and arrested, {1} confessed and was convicted of {%2}.	{1}被認出並遭到逮捕，認罪後被定罪，罪名是{2}。	{1}被认出并遭到逮捕，认罪后被定罪，罪名是{2}。	inner	FUN_140b7da60 1693757 hf_convicted 完整句：{%n} 是罪名加附加段（由下方 inner 句型一層層剝）；前綴（逮捕／監視）變體排在無前綴前面
+after being recognized and arrested, {1} confessed and was wrongfully convicted of {%2}.	{1}被認出並遭到逮捕，認罪後被誤判有罪，罪名是{2}。	{1}被认出并遭到逮捕，认罪后被误判有罪，罪名是{2}。	inner	FUN_140b7da60 1693757 hf_convicted 完整句：{%n} 是罪名加附加段（由下方 inner 句型一層層剝）；前綴（逮捕／監視）變體排在無前綴前面
+after being recognized and arrested, {1} confessed and was convicted as a go-between in a conspiracy to commit {%2}.	{1}被認出並遭到逮捕，認罪後以中間人身分被定罪，罪名是共謀{2}。	{1}被认出并遭到逮捕，认罪后以中间人身份被定罪，罪名是共谋{2}。	inner	FUN_140b7da60 1693757 hf_convicted 完整句：{%n} 是罪名加附加段（由下方 inner 句型一層層剝）；前綴（逮捕／監視）變體排在無前綴前面；conspiracy to commit 是罪名「共謀」；術語例外：conspiracy
+after being recognized and arrested, {1} confessed and was wrongfully convicted as a go-between in a conspiracy to commit {%2}.	{1}被認出並遭到逮捕，認罪後以中間人身分被誤判有罪，罪名是共謀{2}。	{1}被认出并遭到逮捕，认罪后以中间人身份被误判有罪，罪名是共谋{2}。	inner	FUN_140b7da60 1693757 hf_convicted 完整句：{%n} 是罪名加附加段（由下方 inner 句型一層層剝）；前綴（逮捕／監視）變體排在無前綴前面；conspiracy to commit 是罪名「共謀」；術語例外：conspiracy
+due to ongoing surveillance on {%1} as the plot unfolded, {2} was convicted of {%3}.	由於陰謀展開期間對{1}的持續監視，{2}被定罪，罪名是{3}。	由于阴谋展开期间对{1}的持续监视，{2}被定罪，罪名是{3}。	inner	FUN_140b7da60 1693757 hf_convicted 完整句：{%n} 是罪名加附加段（由下方 inner 句型一層層剝）；前綴（逮捕／監視）變體排在無前綴前面
+due to ongoing surveillance on {%1} as the plot unfolded, {2} was wrongfully convicted of {%3}.	由於陰謀展開期間對{1}的持續監視，{2}被誤判有罪，罪名是{3}。	由于阴谋展开期间对{1}的持续监视，{2}被误判有罪，罪名是{3}。	inner	FUN_140b7da60 1693757 hf_convicted 完整句：{%n} 是罪名加附加段（由下方 inner 句型一層層剝）；前綴（逮捕／監視）變體排在無前綴前面
+due to ongoing surveillance on {%1} as the plot unfolded, {2} was convicted as a go-between in a conspiracy to commit {%3}.	由於陰謀展開期間對{1}的持續監視，{2}以中間人身分被定罪，罪名是共謀{3}。	由于阴谋展开期间对{1}的持续监视，{2}以中间人身份被定罪，罪名是共谋{3}。	inner	FUN_140b7da60 1693757 hf_convicted 完整句：{%n} 是罪名加附加段（由下方 inner 句型一層層剝）；前綴（逮捕／監視）變體排在無前綴前面
+due to ongoing surveillance on {%1} as the plot unfolded, {2} was wrongfully convicted as a go-between in a conspiracy to commit {%3}.	由於陰謀展開期間對{1}的持續監視，{2}以中間人身分被誤判有罪，罪名是共謀{3}。	由于阴谋展开期间对{1}的持续监视，{2}以中间人身份被误判有罪，罪名是共谋{3}。	inner	FUN_140b7da60 1693757 hf_convicted 完整句：{%n} 是罪名加附加段（由下方 inner 句型一層層剝）；前綴（逮捕／監視）變體排在無前綴前面
+due to ongoing surveillance as the plot unfolded, {1} was convicted of {%2}.	由於陰謀展開期間的持續監視，{1}被定罪，罪名是{2}。	由于阴谋展开期间的持续监视，{1}被定罪，罪名是{2}。	inner	FUN_140b7da60 1693757 hf_convicted 完整句：{%n} 是罪名加附加段（由下方 inner 句型一層層剝）；前綴（逮捕／監視）變體排在無前綴前面
+due to ongoing surveillance as the plot unfolded, {1} was wrongfully convicted of {%2}.	由於陰謀展開期間的持續監視，{1}被誤判有罪，罪名是{2}。	由于阴谋展开期间的持续监视，{1}被误判有罪，罪名是{2}。	inner	FUN_140b7da60 1693757 hf_convicted 完整句：{%n} 是罪名加附加段（由下方 inner 句型一層層剝）；前綴（逮捕／監視）變體排在無前綴前面
+due to ongoing surveillance as the plot unfolded, {1} was convicted as a go-between in a conspiracy to commit {%2}.	由於陰謀展開期間的持續監視，{1}以中間人身分被定罪，罪名是共謀{2}。	由于阴谋展开期间的持续监视，{1}以中间人身份被定罪，罪名是共谋{2}。	inner	FUN_140b7da60 1693757 hf_convicted 完整句：{%n} 是罪名加附加段（由下方 inner 句型一層層剝）；前綴（逮捕／監視）變體排在無前綴前面
+due to ongoing surveillance as the plot unfolded, {1} was wrongfully convicted as a go-between in a conspiracy to commit {%2}.	由於陰謀展開期間的持續監視，{1}以中間人身分被誤判有罪，罪名是共謀{2}。	由于阴谋展开期间的持续监视，{1}以中间人身份被误判有罪，罪名是共谋{2}。	inner	FUN_140b7da60 1693757 hf_convicted 完整句：{%n} 是罪名加附加段（由下方 inner 句型一層層剝）；前綴（逮捕／監視）變體排在無前綴前面
+{1} was convicted of {%2}.	{1}被定罪，罪名是{2}。	{1}被定罪，罪名是{2}。	inner	FUN_140b7da60 1693757 hf_convicted 完整句：{%n} 是罪名加附加段（由下方 inner 句型一層層剝）；前綴（逮捕／監視）變體排在無前綴前面
+{1} was wrongfully convicted of {%2}.	{1}被誤判有罪，罪名是{2}。	{1}被误判有罪，罪名是{2}。	inner	FUN_140b7da60 1693757 hf_convicted 完整句：{%n} 是罪名加附加段（由下方 inner 句型一層層剝）；前綴（逮捕／監視）變體排在無前綴前面
+{1} was convicted as a go-between in a conspiracy to commit {%2}.	{1}以中間人身分被定罪，罪名是共謀{2}。	{1}以中间人身份被定罪，罪名是共谋{2}。	inner	FUN_140b7da60 1693757 hf_convicted 完整句：{%n} 是罪名加附加段（由下方 inner 句型一層層剝）；前綴（逮捕／監視）變體排在無前綴前面；conspiracy to commit 是罪名「共謀」；術語例外：conspiracy
+{1} was wrongfully convicted as a go-between in a conspiracy to commit {%2}.	{1}以中間人身分被誤判有罪，罪名是共謀{2}。	{1}以中间人身份被误判有罪，罪名是共谋{2}。	inner	FUN_140b7da60 1693757 hf_convicted 完整句：{%n} 是罪名加附加段（由下方 inner 句型一層層剝）；前綴（逮捕／監視）變體排在無前綴前面；conspiracy to commit 是罪名「共謀」；術語例外：conspiracy
+the wrongful conviction of {1} for {%2}	{1}被誤判有罪（罪名：{2}）	{1}被误判有罪（罪名：{2}）	inner	FUN_140b7e640 1694209 hf_convicted 短語：日期由 _events_00 處理；{%2} 罪名加附加段
+the conviction of {1} for {%2}	{1}被定罪（罪名：{2}）	{1}被定罪（罪名：{2}）	inner	FUN_140b7e640 1694209 hf_convicted 短語：日期由 _events_00 處理；{%2} 罪名加附加段
+{%1} and a coconspirator, {2},	{1}與同謀{2}	{1}和同谋{2}	inner	FUN_140b7da60 1693757 hf_convicted 完整句 1693802–1693835：due to ongoing surveillance on 後的對象（聯絡人／同謀／目標，以 and 連接）；and 變體排在前面
+{%1} and the target {2}	{1}與目標{2}	{1}和目标{2}	inner	FUN_140b7da60 1693757 hf_convicted 完整句 1693802–1693835：due to ongoing surveillance on 後的對象（聯絡人／同謀／目標，以 and 連接）；and 變體排在前面
+the contact {1}	聯絡人{1}	联络人{1}	inner	FUN_140b7da60 1693757 hf_convicted 完整句 1693802–1693835：due to ongoing surveillance on 後的對象（聯絡人／同謀／目標，以 and 連接）；and 變體排在前面
+a coconspirator, {1},	同謀{1}	同谋{1}	inner	FUN_140b7da60 1693757 hf_convicted 完整句 1693802–1693835：due to ongoing surveillance on 後的對象（聯絡人／同謀／目標，以 and 連接）；and 變體排在前面
+the target {1}	目標{1}	目标{1}	inner	FUN_140b7da60 1693757 hf_convicted 完整句 1693802–1693835：due to ongoing surveillance on 後的對象（聯絡人／同謀／目標，以 and 連接）；and 變體排在前面
+{%1} and sentenced to death	{1}，並被判處死刑	{1}，并被判处死刑	inner	FUN_140b7da60 1693757 hf_convicted 完整句 1693994–1694121：刑罰（接在罪名附加段最後，最先剝）
+{%1} and exiled	{1}，並遭到放逐	{1}，并遭到放逐	inner	FUN_140b7da60 1693757 hf_convicted 完整句 1693994–1694121：刑罰（接在罪名附加段最後，最先剝）
+{%1} and would have been imprisoned but for lack of accommodations	{1}，本應入獄，卻因沒有牢房而作罷	{1}，本应入狱，却因没有牢房而作罢	inner	FUN_140b7da60 1693757 hf_convicted 完整句 1693994–1694121：刑罰（接在罪名附加段最後，最先剝）
+{%1} and imprisoned for a term of {%2}	{1}，並被判處{2}徒刑	{1}，并被判处{2}徒刑	inner	FUN_140b7da60 1693757 hf_convicted 完整句 1693994–1694121：刑罰（接在罪名附加段最後，最先剝）
+{%1}, sentenced to {%2} hammerstrokes	{1}，被判處錘擊{2}下	{1}，被判处锤击{2}下	inner	FUN_140b7da60 1693757 hf_convicted 完整句 1693994–1694121：刑罰（接在罪名附加段最後，最先剝）
+{%1}, sentenced to {%2} hammerstroke	{1}，被判處錘擊{2}下	{1}，被判处锤击{2}下	inner	FUN_140b7da60 1693757 hf_convicted 完整句 1693994–1694121：刑罰（接在罪名附加段最後，最先剝）
+{%1} and sentenced to {%2} hammerstrokes	{1}，並被判處錘擊{2}下	{1}，并被判处锤击{2}下	inner	FUN_140b7da60 1693757 hf_convicted 完整句 1693994–1694121：刑罰（接在罪名附加段最後，最先剝）
+{%1} and sentenced to {%2} hammerstroke	{1}，並被判處錘擊{2}下	{1}，并被判处锤击{2}下	inner	FUN_140b7da60 1693757 hf_convicted 完整句 1693994–1694121：刑罰（接在罪名附加段最後，最先剝）
+{%1}, beaten	{1}，遭到責打	{1}，遭到责打	inner	FUN_140b7da60 1693757 hf_convicted 完整句 1693994–1694121：刑罰（接在罪名附加段最後，最先剝）
+{%1} and beaten	{1}，並遭到責打	{1}，并遭到责打	inner	FUN_140b7da60 1693757 hf_convicted 完整句 1693994–1694121：刑罰（接在罪名附加段最後，最先剝）
+more than {%1} years	超過{1}年	超过{1}年	inner	FUN_140b7da60 1693757 hf_convicted 完整句 1694056–1694107：刑期（FUN_14052e360 英文數字字）
+{%1} years	{1}年	{1}年	inner	FUN_140b7da60 1693757 hf_convicted 完整句 1694056–1694107：刑期（FUN_14052e360 英文數字字）
+{%1} months	{1}個月	{1}个月	inner	FUN_140b7da60 1693757 hf_convicted 完整句 1694056–1694107：刑期（FUN_14052e360 英文數字字）
+{%1} at the behest of {2}	{1}，幕後主使是{2}	{1}，幕后主使是{2}	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 hf_convicted 短語：罪名後的附加段（指使、陰謀、捏造證據、判決者）
+{%1} through the machinations of {2}	{1}，這是{2}的陰謀所致	{1}，这是{2}的阴谋所致	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 hf_convicted 短語：罪名後的附加段（指使、陰謀、捏造證據、判決者）
+{%1} after {2} fooled {3} with fabricated evidence	{1}，起因是{2}用捏造的證據矇騙了{3}	{1}，起因是{2}用捏造的证据蒙骗了{3}	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 hf_convicted 短語：罪名後的附加段（指使、陰謀、捏造證據、判決者）
+production order violation by {1} and the corrupt {2}	違反生產令，由{1}與腐敗的{2}判決	违反生产令，由{1}和腐败的{2}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+production order violation by the corrupt {1}	違反生產令，由腐敗的{1}判決	违反生产令，由腐败的{1}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+production order violation by {1}	違反生產令，由{1}判決	违反生产令，由{1}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+export prohibition violation by {1} and the corrupt {2}	違反出口禁令，由{1}與腐敗的{2}判決	违反出口禁令，由{1}和腐败的{2}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+export prohibition violation by the corrupt {1}	違反出口禁令，由腐敗的{1}判決	违反出口禁令，由腐败的{1}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+export prohibition violation by {1}	違反出口禁令，由{1}判決	违反出口禁令，由{1}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+job order violation by {1} and the corrupt {2}	違反工作令，由{1}與腐敗的{2}判決	违反工作令，由{1}和腐败的{2}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+job order violation by the corrupt {1}	違反工作令，由腐敗的{1}判決	违反工作令，由腐败的{1}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+job order violation by {1}	違反工作令，由{1}判決	违反工作令，由{1}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+disorderly conduct by {1} and the corrupt {2}	擾亂秩序，由{1}與腐敗的{2}判決	扰乱秩序，由{1}和腐败的{2}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+disorderly conduct by the corrupt {1}	擾亂秩序，由腐敗的{1}判決	扰乱秩序，由腐败的{1}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+disorderly conduct by {1}	擾亂秩序，由{1}判決	扰乱秩序，由{1}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+building destruction by {1} and the corrupt {2}	破壞建築，由{1}與腐敗的{2}判決	破坏建筑，由{1}和腐败的{2}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+building destruction by the corrupt {1}	破壞建築，由腐敗的{1}判決	破坏建筑，由腐败的{1}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+building destruction by {1}	破壞建築，由{1}判決	破坏建筑，由{1}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+vandalism by {1} and the corrupt {2}	蓄意毀損，由{1}與腐敗的{2}判決	蓄意毁坏，由{1}和腐败的{2}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+vandalism by the corrupt {1}	蓄意毀損，由腐敗的{1}判決	蓄意毁坏，由腐败的{1}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+vandalism by {1}	蓄意毀損，由{1}判決	蓄意毁坏，由{1}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+robbery by {1} and the corrupt {2}	搶劫，由{1}與腐敗的{2}判決	抢劫，由{1}和腐败的{2}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+robbery by the corrupt {1}	搶劫，由腐敗的{1}判決	抢劫，由腐败的{1}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+robbery by {1}	搶劫，由{1}判決	抢劫，由{1}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+blood-drinking by {1} and the corrupt {2}	吸血，由{1}與腐敗的{2}判決	吸血，由{1}和腐败的{2}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+blood-drinking by the corrupt {1}	吸血，由腐敗的{1}判決	吸血，由腐败的{1}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+blood-drinking by {1}	吸血，由{1}判決	吸血，由{1}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+embezzlement by {1} and the corrupt {2}	盜用公款，由{1}與腐敗的{2}判決	挪用公款，由{1}和腐败的{2}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+embezzlement by the corrupt {1}	盜用公款，由腐敗的{1}判決	挪用公款，由腐败的{1}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+embezzlement by {1}	盜用公款，由{1}判決	挪用公款，由{1}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+attempted murder by {1} and the corrupt {2}	謀殺未遂，由{1}與腐敗的{2}判決	谋杀未遂，由{1}和腐败的{2}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+attempted murder by the corrupt {1}	謀殺未遂，由腐敗的{1}判決	谋杀未遂，由腐败的{1}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+attempted murder by {1}	謀殺未遂，由{1}判決	谋杀未遂，由{1}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+kidnapping by {1} and the corrupt {2}	綁架，由{1}與腐敗的{2}判決	绑架，由{1}和腐败的{2}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+kidnapping by the corrupt {1}	綁架，由腐敗的{1}判決	绑架，由腐败的{1}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+kidnapping by {1}	綁架，由{1}判決	绑架，由{1}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+attempted kidnapping by {1} and the corrupt {2}	綁架未遂，由{1}與腐敗的{2}判決	绑架未遂，由{1}和腐败的{2}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+attempted kidnapping by the corrupt {1}	綁架未遂，由腐敗的{1}判決	绑架未遂，由腐败的{1}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+attempted kidnapping by {1}	綁架未遂，由{1}判決	绑架未遂，由{1}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+attempted theft by {1} and the corrupt {2}	竊盜未遂，由{1}與腐敗的{2}判決	盗窃未遂，由{1}和腐败的{2}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+attempted theft by the corrupt {1}	竊盜未遂，由腐敗的{1}判決	盗窃未遂，由腐败的{1}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+attempted theft by {1}	竊盜未遂，由{1}判決	盗窃未遂，由{1}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+treason by {1} and the corrupt {2}	叛國，由{1}與腐敗的{2}判決	叛国，由{1}和腐败的{2}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+treason by the corrupt {1}	叛國，由腐敗的{1}判決	叛国，由腐败的{1}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+treason by {1}	叛國，由{1}判決	叛国，由{1}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+espionage by {1} and the corrupt {2}	間諜活動，由{1}與腐敗的{2}判決	间谍活动，由{1}和腐败的{2}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+espionage by the corrupt {1}	間諜活動，由腐敗的{1}判決	间谍活动，由腐败的{1}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+espionage by {1}	間諜活動，由{1}判決	间谍活动，由{1}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+bribery by {1} and the corrupt {2}	賄賂，由{1}與腐敗的{2}判決	贿赂，由{1}和腐败的{2}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+bribery by the corrupt {1}	賄賂，由腐敗的{1}判決	贿赂，由腐败的{1}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+bribery by {1}	賄賂，由{1}判決	贿赂，由{1}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+conspiracy to slow labor by {1} and the corrupt {2}	密謀怠工，由{1}與腐敗的{2}判決	密谋怠工，由{1}和腐败的{2}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）；罪名，密謀與陰謀同義；術語例外：conspiracy
+conspiracy to slow labor by the corrupt {1}	密謀怠工，由腐敗的{1}判決	密谋怠工，由腐败的{1}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）；罪名，密謀與陰謀同義；術語例外：conspiracy
+conspiracy to slow labor by {1}	密謀怠工，由{1}判決	密谋怠工，由{1}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）；罪名，密謀與陰謀同義；術語例外：conspiracy
+murder by {1} and the corrupt {2}	謀殺，由{1}與腐敗的{2}判決	谋杀，由{1}和腐败的{2}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+murder by the corrupt {1}	謀殺，由腐敗的{1}判決	谋杀，由腐败的{1}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+murder by {1}	謀殺，由{1}判決	谋杀，由{1}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+theft by {1} and the corrupt {2}	竊盜，由{1}與腐敗的{2}判決	盗窃，由{1}和腐败的{2}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+theft by the corrupt {1}	竊盜，由腐敗的{1}判決	盗窃，由腐败的{1}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+theft by {1}	竊盜，由{1}判決	盗窃，由{1}判决	inner	FUN_140b7da60 1693757 hf_convicted 完整句／FUN_140b7e640 1694209 短語：罪名＋判決者（罪名逐條寫死：通用的 {@1} by {2} 會讓別處的清單、死因、舞蹈說明切出「，由X判決」）
+{1} revealed nothing during interrogation.	{1}在審訊中什麼也沒有透露。	{1}在审讯中什么也没有透露。		FUN_140b7da60 1693757 hf_convicted 完整句 1694124–1694205：第二句（審訊供詞，接在句號與兩個空白後）
+{1} implicated {2}, {3}, {4}, {5}, and {6} during interrogation but did not reveal everything.	{1}在審訊中供出了{2}、{3}、{4}、{5}與{6}，但沒有全盤托出。	{1}在审讯中供出了{2}、{3}、{4}、{5}和{6}，但没有全盘托出。		FUN_140b7da60 1693757 hf_convicted 完整句 1694124–1694205：第二句（審訊供詞，接在句號與兩個空白後）；名單由長到短排
+{1} implicated {2}, {3}, {4}, and {5} during interrogation but did not reveal everything.	{1}在審訊中供出了{2}、{3}、{4}與{5}，但沒有全盤托出。	{1}在审讯中供出了{2}、{3}、{4}和{5}，但没有全盘托出。		FUN_140b7da60 1693757 hf_convicted 完整句 1694124–1694205：第二句（審訊供詞，接在句號與兩個空白後）；名單由長到短排
+{1} implicated {2}, {3}, and {4} during interrogation but did not reveal everything.	{1}在審訊中供出了{2}、{3}與{4}，但沒有全盤托出。	{1}在审讯中供出了{2}、{3}和{4}，但没有全盘托出。		FUN_140b7da60 1693757 hf_convicted 完整句 1694124–1694205：第二句（審訊供詞，接在句號與兩個空白後）；名單由長到短排
+{1} implicated {2} and {3} during interrogation but did not reveal everything.	{1}在審訊中供出了{2}與{3}，但沒有全盤托出。	{1}在审讯中供出了{2}和{3}，但没有全盘托出。		FUN_140b7da60 1693757 hf_convicted 完整句 1694124–1694205：第二句（審訊供詞，接在句號與兩個空白後）；名單由長到短排
+{1} implicated {2} during interrogation but did not reveal everything.	{1}在審訊中供出了{2}，但沒有全盤托出。	{1}在审讯中供出了{2}，但没有全盘托出。		FUN_140b7da60 1693757 hf_convicted 完整句 1694124–1694205：第二句（審訊供詞，接在句號與兩個空白後）
+{1} implicated {2}, {3}, {4}, {5}, and {6} during interrogation.	{1}在審訊中供出了{2}、{3}、{4}、{5}與{6}。	{1}在审讯中供出了{2}、{3}、{4}、{5}和{6}。		FUN_140b7da60 1693757 hf_convicted 完整句 1694124–1694205：第二句（審訊供詞，接在句號與兩個空白後）；名單由長到短排
+{1} implicated {2}, {3}, {4}, and {5} during interrogation.	{1}在審訊中供出了{2}、{3}、{4}與{5}。	{1}在审讯中供出了{2}、{3}、{4}和{5}。		FUN_140b7da60 1693757 hf_convicted 完整句 1694124–1694205：第二句（審訊供詞，接在句號與兩個空白後）；名單由長到短排
+{1} implicated {2}, {3}, and {4} during interrogation.	{1}在審訊中供出了{2}、{3}與{4}。	{1}在审讯中供出了{2}、{3}和{4}。		FUN_140b7da60 1693757 hf_convicted 完整句 1694124–1694205：第二句（審訊供詞，接在句號與兩個空白後）；名單由長到短排
+{1} implicated {2} and {3} during interrogation.	{1}在審訊中供出了{2}與{3}。	{1}在审讯中供出了{2}和{3}。		FUN_140b7da60 1693757 hf_convicted 完整句 1694124–1694205：第二句（審訊供詞，接在句號與兩個空白後）；名單由長到短排
+{1} implicated {2} during interrogation.	{1}在審訊中供出了{2}。	{1}在审讯中供出了{2}。		FUN_140b7da60 1693757 hf_convicted 完整句 1694124–1694205：第二句（審訊供詞，接在句號與兩個空白後）
+{1} became the {%2} of {3}, appointed by {4} in fulfillment of a promise to {5}.	{4}為了兌現對{5}的承諾，任命{1}為{3}的{2}。	{4}为了兑现对{5}的承诺，任命{1}为{3}的{2}。	inner	FUN_140b7ea50 1694346 add_hf_entity_link 完整句：{1} 人物、文明（FUN_140b92900）；職位名用 {%n}；appointed by 變體排在前面
+{1} became the {%2} of {3}, appointed by {4} in fulfillment of a promise.	{4}為了兌現承諾，任命{1}為{3}的{2}。	{4}为了兑现承诺，任命{1}为{3}的{2}。	inner	FUN_140b7ea50 1694346 add_hf_entity_link 完整句：{1} 人物、文明（FUN_140b92900）；職位名用 {%n}；appointed by 變體排在前面
+{1} became the {%2} of {3}, appointed by {4}.	{1}獲{4}任命為{3}的{2}。	{1}获{4}任命为{3}的{2}。	inner	FUN_140b7ea50 1694346 add_hf_entity_link 完整句：{1} 人物、文明（FUN_140b92900）；職位名用 {%n}；appointed by 變體排在前面
+{1} became a {%2} of {3}, appointed by {4} in fulfillment of a promise to {5}.	{4}為了兌現對{5}的承諾，任命{1}為{3}的{2}。	{4}为了兑现对{5}的承诺，任命{1}为{3}的{2}。	inner	FUN_140b7ea50 1694346 add_hf_entity_link 完整句：{1} 人物、文明（FUN_140b92900）；職位名用 {%n}；appointed by 變體排在前面
+{1} became a {%2} of {3}, appointed by {4} in fulfillment of a promise.	{4}為了兌現承諾，任命{1}為{3}的{2}。	{4}为了兑现承诺，任命{1}为{3}的{2}。	inner	FUN_140b7ea50 1694346 add_hf_entity_link 完整句：{1} 人物、文明（FUN_140b92900）；職位名用 {%n}；appointed by 變體排在前面
+{1} became a {%2} of {3}, appointed by {4}.	{1}獲{4}任命為{3}的{2}。	{1}获{4}任命为{3}的{2}。	inner	FUN_140b7ea50 1694346 add_hf_entity_link 完整句：{1} 人物、文明（FUN_140b92900）；職位名用 {%n}；appointed by 變體排在前面
+{1} became a claimant for {%2} of {3}, appointed by {4} in fulfillment of a promise to {5}.	{4}為了兌現對{5}的承諾，讓{1}開始爭奪{3}的{2}之位。	{4}为了兑现对{5}的承诺，让{1}开始争夺{3}的{2}之位。	inner	FUN_140b7ea50 1694346 add_hf_entity_link 完整句：{1} 人物、文明（FUN_140b92900）；職位名用 {%n}（case 0xc 職位爭奪）
+{1} became a claimant for {%2} of {3}, appointed by {4} in fulfillment of a promise.	{4}為了兌現承諾，讓{1}開始爭奪{3}的{2}之位。	{4}为了兑现承诺，让{1}开始争夺{3}的{2}之位。	inner	FUN_140b7ea50 1694346 add_hf_entity_link 完整句：{1} 人物、文明（FUN_140b92900）；職位名用 {%n}（case 0xc 職位爭奪）
+{1} became a claimant for {%2} of {3}, appointed by {4}.	{1}經{4}指定，開始爭奪{3}的{2}之位。	{1}经{4}指定，开始争夺{3}的{2}之位。	inner	FUN_140b7ea50 1694346 add_hf_entity_link 完整句：{1} 人物、文明（FUN_140b92900）；職位名用 {%n}（case 0xc 職位爭奪）
+{1} was enslaved by {2}.	{1}遭{2}奴役。	{1}遭{2}奴役。	inner	FUN_140b7ea50 1694346 add_hf_entity_link 完整句：{1} 人物、文明（FUN_140b92900）；職位名用 {%n}
+{1} became a member of {2}.	{1}成為{2}的一員。	{1}成为{2}的一员。	inner	FUN_140b7ea50 1694346 add_hf_entity_link 完整句：{1} 人物、文明（FUN_140b92900）；職位名用 {%n}
+{1} became a former member of {2}.	{1}不再是{2}的成員。	{1}不再是{2}的成员。	inner	FUN_140b7ea50 1694346 add_hf_entity_link 完整句：{1} 人物、文明（FUN_140b92900）；職位名用 {%n}
+{1} became a mercenary for {2}.	{1}成為{2}的傭兵。	{1}成为{2}的佣兵。	inner	FUN_140b7ea50 1694346 add_hf_entity_link 完整句：{1} 人物、文明（FUN_140b92900）；職位名用 {%n}
+{1} became a former mercenary of {2}.	{1}不再是{2}的傭兵。	{1}不再是{2}的佣兵。	inner	FUN_140b7ea50 1694346 add_hf_entity_link 完整句：{1} 人物、文明（FUN_140b92900）；職位名用 {%n}
+{1} became a former slave of {2}.	{1}不再是{2}的奴隸。	{1}不再是{2}的奴隶。	inner	FUN_140b7ea50 1694346 add_hf_entity_link 完整句：{1} 人物、文明（FUN_140b92900）；職位名用 {%n}
+{1} became a former prisoner of {2}.	{1}不再是{2}的囚犯。	{1}不再是{2}的囚犯。	inner	FUN_140b7ea50 1694346 add_hf_entity_link 完整句：{1} 人物、文明（FUN_140b92900）；職位名用 {%n}
+{1} became an enemy of {2}.	{1}成為{2}的敵人。	{1}成为{2}的敌人。	inner	FUN_140b7ea50 1694346 add_hf_entity_link 完整句：{1} 人物、文明（FUN_140b92900）；職位名用 {%n}
+{1} became a criminal in the eyes of {2}.	{1}在{2}眼中成了罪犯。	{1}在{2}眼中成了罪犯。	inner	FUN_140b7ea50 1694346 add_hf_entity_link 完整句：{1} 人物、文明（FUN_140b92900）；職位名用 {%n}
+{1} became a worker of {2}.	{1}開始為{2}工作。	{1}开始为{2}工作。	inner	FUN_140b7ea50 1694346 add_hf_entity_link 完整句：{1} 人物、文明（FUN_140b92900）；職位名用 {%n}
+{1} became a claimant for {%2} of {3}.	{1}開始爭奪{3}的{2}之位。	{1}开始争夺{3}的{2}之位。	inner	FUN_140b7ea50 1694346 add_hf_entity_link 完整句：{1} 人物、文明（FUN_140b92900）；職位名用 {%n}
+{1} became the {%2} of {3}.	{1}成為{3}的{2}。	{1}成为{3}的{2}。	inner	FUN_140b7ea50 1694346 add_hf_entity_link 完整句：{1} 人物、文明（FUN_140b92900）；職位名用 {%n}
+{1} became a {%2} of {3}.	{1}成為{3}的{2}。	{1}成为{3}的{2}。	inner	FUN_140b7ea50 1694346 add_hf_entity_link 完整句：{1} 人物、文明（FUN_140b92900）；職位名用 {%n}
+the acceptance of {1} as a member of {2}	{2}接納{1}為成員	{2}接纳{1}为成员	inner	FUN_140b80420 1695310 add_hf_entity_link 短語：日期由 _events_00 處理
+the status of {1} as a former member of {2}	{1}不再是{2}的成員	{1}不再是{2}的成员	inner	FUN_140b80420 1695310 add_hf_entity_link 短語：日期由 _events_00 處理
+the entry of {1} into the mercenary service of {2}	{1}成為{2}的傭兵	{1}成为{2}的佣兵	inner	FUN_140b80420 1695310 add_hf_entity_link 短語：日期由 _events_00 處理
+the status of {1} as a former mercenary of {2}	{1}不再是{2}的傭兵	{1}不再是{2}的佣兵	inner	FUN_140b80420 1695310 add_hf_entity_link 短語：日期由 _events_00 處理
+the enslavement of {1} by {2}	{1}遭{2}奴役	{1}遭{2}奴役	inner	FUN_140b80420 1695310 add_hf_entity_link 短語：日期由 _events_00 處理
+the status of {1} as a former slave of {2}	{1}不再是{2}的奴隸	{1}不再是{2}的奴隶	inner	FUN_140b80420 1695310 add_hf_entity_link 短語：日期由 _events_00 處理
+the imprisonment of {1} by {2}	{1}遭{2}囚禁	{1}遭{2}囚禁	inner	FUN_140b80420 1695310 add_hf_entity_link 短語：日期由 _events_00 處理
+the status of {1} as a former prisoner of {2}	{1}不再是{2}的囚犯	{1}不再是{2}的囚犯	inner	FUN_140b80420 1695310 add_hf_entity_link 短語：日期由 _events_00 處理
+the rise of {1} as an enemy of {2}	{1}成為{2}的敵人	{1}成为{2}的敌人	inner	FUN_140b80420 1695310 add_hf_entity_link 短語：日期由 _events_00 處理
+the crimes of {1} in the eyes of {2}	{1}在{2}眼中犯下的罪行	{1}在{2}眼中犯下的罪行	inner	FUN_140b80420 1695310 add_hf_entity_link 短語：日期由 _events_00 處理
+the selection of {1} to the position of {%2} of {3}	{1}獲選為{3}的{2}	{1}获选为{3}的{2}	inner	FUN_140b80420 1695310 add_hf_entity_link 短語：日期由 _events_00 處理
+the election of {1} to the position of {%2} of {3}	{1}當選{3}的{2}	{1}当选{3}的{2}	inner	FUN_140b80420 1695310 add_hf_entity_link 短語：日期由 _events_00 處理
+the appointment of {1} to the position of {%2} of {3}	{1}獲任命為{3}的{2}	{1}获任命为{3}的{2}	inner	FUN_140b80420 1695310 add_hf_entity_link 短語：日期由 _events_00 處理
+the ascension of {1} to the position of {%2} of {3}	{1}登上{3}的{2}之位	{1}登上{3}的{2}之位	inner	FUN_140b80420 1695310 add_hf_entity_link 短語：日期由 _events_00 處理
+the claim of {1} to the position of {%2} of {3}	{1}宣稱有權擔任{3}的{2}	{1}声称有权担任{3}的{2}	inner	FUN_140b80420 1695310 add_hf_entity_link 短語：日期由 _events_00 處理
+the status of {1} as a {%2} of {3}	{1}成為{3}的{2}	{1}成为{3}的{2}	inner	FUN_140b80420 1695310 add_hf_entity_link 短語：日期由 _events_00 處理
+the work of {1} for {2}	{1}為{2}工作	{1}为{2}工作	inner	FUN_140b80420 1695310 add_hf_entity_link 短語：日期由 _events_00 處理
+{1} no longer imprisoned {2}.	{1}不再囚禁{2}。	{1}不再囚禁{2}。	inner	FUN_140b77b30 1690460 remove_hf_hf_link；Events10 寫的，搬到 13.tsv 檔尾：通用的 {1} imprisoned {2}. 會搶走定罪句的「…and imprisoned for a term of…」（13.tsv 的片段規則），兩者原文套不上，gen_events 分不出誰比較專門
+{1} imprisoned {2}.	{1}囚禁了{2}。	{1}囚禁了{2}。	inner	FUN_140b77720 1690290 add_hf_hf_link；Events10 寫的，搬到 13.tsv 檔尾：通用的 {1} imprisoned {2}. 會搶走定罪句的「…and imprisoned for a term of…」（13.tsv 的片段規則），兩者原文套不上，gen_events 分不出誰比較專門
