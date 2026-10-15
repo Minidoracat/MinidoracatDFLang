@@ -761,13 +761,20 @@ impl Dict {
                 let found = if colored(body) {
                     self.translate_text(body)
                 } else {
+                    // 整段只有外框一對雙引號（神明對天選者說的話）：外框不算引號，裡面照樣還原句界
+                    let (scan, wrap) = match body {
+                        [b'"', inner @ .., b'"'] if !inner.contains(&b'"') => (inner, &b"\""[..]),
+                        _ => (body, &b""[..]),
+                    };
                     let mut restored = Vec::with_capacity(body.len() + 8);
-                    for (k, &c) in body.iter().enumerate() {
+                    restored.extend_from_slice(wrap);
+                    for (k, &c) in scan.iter().enumerate() {
                         restored.push(c);
-                        if is_box_break(body, k) {
+                        if is_box_break(scan, k) {
                             restored.push(b' ');
                         }
                     }
+                    restored.extend_from_slice(wrap);
                     self.translate_sentences(&restored).ok().map(concat)
                 };
                 match found {
@@ -1585,6 +1592,9 @@ mod tests {
                    Ok("石板上寫著：「I am Urist.  By Labor, I bind.」。勞動結束。"), "引號裡的句子不切開");
         assert_eq!(d.translate_paragraph(b"The slab reads \"I am Urist. By Labor, I bind.\". Labor ends.").0.as_deref(),
                    Some("石板上寫著：「I am Urist. By Labor, I bind.」。勞動結束。"), "段落框也一樣");
+        d.load_tsv("Why?\t為什麼？\n");
+        assert_eq!(d.translate_paragraph(b"\"Why? Labor ends.\"").0.as_deref(), Some("\"為什麼？勞動結束。\""),
+                   "整段只有外框一對引號（神明對天選者說的話）：外框不算引號，裡面照樣切句");
     }
 
     #[test]

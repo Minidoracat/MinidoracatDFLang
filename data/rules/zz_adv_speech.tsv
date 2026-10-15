@@ -23,3 +23,8 @@ I am {%1} of {2}.	我是{2}的{1}。	我是{2}的{1}。		FUN_140689de0 L908110-9
 I am {%1}.	我是{1}。	我是{1}。		FUN_140689de0 L908110-908122 同上，沒有所屬勢力；錨點 I am，{%1} 要翻得出來
 {1} the {%2} is there.	{2}{1}在那裡。	{2}{1}在那里。		FUN_14068d170 L910008-910085 case 1：{1} 人名、{2} 職業名（同種族）或種族名（異種族）；錨點 the … is there
 {1} is there.	{1}在那裡。	{1}在那里。		FUN_14068d170 L910085 case 1：同種族、職業 0x66 時只有名字；錨點 is there
+The dwarf {@1} {^2}: {%3}	矮人{1}{2}：{3}	矮人{1}{2}：{3}		交談紀錄的講者：the 種族 職業 名字，種族、職業都小寫（「The dwarf merchant Momuz Kogannog: Hey.」，第二十二輪實機）
+The human {@1} {^2}: {%3}	人類{1}{2}：{3}	人类{1}{2}：{3}		交談紀錄的講者：the 種族 職業 名字，種族、職業都小寫（「The dwarf merchant Momuz Kogannog: Hey.」，第二十二輪實機）
+The elf {@1} {^2}: {%3}	精靈{1}{2}：{3}	精灵{1}{2}：{3}		交談紀錄的講者：the 種族 職業 名字，種族、職業都小寫（「The dwarf merchant Momuz Kogannog: Hey.」，第二十二輪實機）
+The goblin {@1} {^2}: {%3}	哥布林{1}{2}：{3}	哥布林{1}{2}：{3}		交談紀錄的講者：the 種族 職業 名字，種族、職業都小寫（「The dwarf merchant Momuz Kogannog: Hey.」，第二十二輪實機）
+The kobold {@1} {^2}: {%3}	狗頭人{1}{2}：{3}	狗头人{1}{2}：{3}		交談紀錄的講者：the 種族 職業 名字，種族、職業都小寫（「The dwarf merchant Momuz Kogannog: Hey.」，第二十二輪實機）

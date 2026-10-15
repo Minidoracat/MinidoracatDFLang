@@ -1,0 +1,8 @@
+en	zh-Hant	zh-Hans	align	note
+${1}$	${1}$	${1}$		冒險模式以物易物畫面：對方的貨物前後標 $（「$-pig tail cloak-$」，第二十二輪實機）；不用 {%1}：只有 {%n} 和標點的樣板算清單句型，只套在佔位裡
+{1}, Human {@2}	{1}，人類{2}	{1}，人类{2}		冒險模式以物易物畫面標題：名字, 種族 職業（「Momuz Kogannog, Dwarf Merchant」，第二十二輪實機）
+{1}, Dwarf {@2}	{1}，矮人{2}	{1}，矮人{2}		冒險模式以物易物畫面標題：名字, 種族 職業（「Momuz Kogannog, Dwarf Merchant」，第二十二輪實機）
+{1}, Elf {@2}	{1}，精靈{2}	{1}，精灵{2}		冒險模式以物易物畫面標題：名字, 種族 職業（「Momuz Kogannog, Dwarf Merchant」，第二十二輪實機）
+{1}, Goblin {@2}	{1}，哥布林{2}	{1}，哥布林{2}		冒險模式以物易物畫面標題：名字, 種族 職業（「Momuz Kogannog, Dwarf Merchant」，第二十二輪實機）
+stray {%1}	流浪{1}	流浪{1}	inner	公告裡的「the stray 形容詞 動物」（the stray skinny cat）：names.tsv 的 stray {@1} 只收整條條目
+Stray {%1}	流浪{1}	流浪{1}	inner	同上，句首大寫

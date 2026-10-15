@@ -1,0 +1,471 @@
+en	zh-Hant	zh-Hans	align	note
+shining metal	閃耀金屬	闪耀金属		divine.lua 神造材料（天使、神器）：LIGHT 領域的金屬名
+flashing metal	閃光金屬	闪光金属		divine.lua 神造材料（天使、神器）：LIGHTNING 領域的金屬名
+rusted metal	鏽蝕金屬	锈蚀金属		divine.lua 神造材料（天使、神器）：BLIGHT 領域的金屬名
+twisting metal	扭動金屬	扭动金属		divine.lua 神造材料（天使、神器）：CHAOS 領域的金屬名
+dark metal	幽暗金屬	幽暗金属		divine.lua 神造材料（天使、神器）：DARKNESS 領域的金屬名
+glowing metal	發光金屬	发光金属		divine.lua 神造材料（天使、神器）：DAWN 領域的金屬名
+bright metal	明亮金屬	明亮金属		divine.lua 神造材料（天使、神器）：DAY 領域的金屬名
+pale metal	蒼白金屬	苍白金属		divine.lua 神造材料（天使、神器）：DEATH 領域的金屬名
+pock-marked metal	坑疤金屬	坑疤金属		divine.lua 神造材料（天使、神器）：DEFORMITY 領域的金屬名
+blistered metal	起泡金屬	起泡金属		divine.lua 神造材料（天使、神器）：DISEASE 領域的金屬名
+ruddy metal	赤褐金屬	赤褐金属		divine.lua 神造材料（天使、神器）：EARTH 領域的金屬名
+flickering metal	搖曳金屬	摇曳金属		divine.lua 神造材料（天使、神器）：FIRE 領域的金屬名
+faceted metal	刻面金屬	刻面金属		divine.lua 神造材料（天使、神器）：JEWELS 領域的金屬名
+translucent metal	半透明金屬	半透明金属		divine.lua 神造材料（天使、神器）：MOON 領域的金屬名
+frosty metal	霜白金屬	霜白金属		divine.lua 神造材料（天使、神器）：MOUNTAINS 領域的金屬名
+slick metal	滑溜金屬	滑溜金属		divine.lua 神造材料（天使、神器）：MUCK 領域的金屬名
+singing metal	歌唱金屬	歌唱金属		divine.lua 神造材料（天使、神器）：MUSIC 領域的金屬名
+black metal	漆黑金屬	漆黑金属		divine.lua 神造材料（天使、神器）：NIGHT 領域的金屬名
+multicolored metal	多彩金屬	多彩金属		divine.lua 神造材料（天使、神器）：RAINBOWS 領域的金屬名
+clear blue metal	澄藍金屬	澄蓝金属		divine.lua 神造材料（天使、神器）：SKY 領域的金屬名
+twinkling metal	閃爍金屬	闪烁金属		divine.lua 神造材料（天使、神器）：STARS 領域的金屬名
+crashing metal	激盪金屬	激荡金属		divine.lua 神造材料（天使、神器）：STORMS 領域的金屬名
+blazing metal	熾烈金屬	炽烈金属		divine.lua 神造材料（天使、神器）：SUN 領域的金屬名
+booming metal	轟鳴金屬	轰鸣金属		divine.lua 神造材料（天使、神器）：THUNDER 領域的金屬名
+searing metal	灼燙金屬	灼烫金属		divine.lua 神造材料（天使、神器）：TORTURE 領域的金屬名
+flowing metal	流動金屬	流动金属		divine.lua 神造材料（天使、神器）：VOLCANOS 領域的金屬名
+glowing cloth	發光布料	发光布料		divine.lua 神造材料（天使、神器）：LIGHT 領域的布料名
+flashing sparks	閃耀火花	闪耀火花		divine.lua 神造材料（天使、神器）：LIGHTNING 領域的布料名
+dancing wisps	舞動光縷	舞动光缕		divine.lua 神造材料（天使、神器）：BEAUTY 領域的布料名
+rotted fabric	腐朽織物	腐朽织物		divine.lua 神造材料（天使、神器）：BLIGHT 領域的布料名
+never-still cloth	不息布料	不息布料		divine.lua 神造材料（天使、神器）：CHAOS 領域的布料名
+liquid darkness	液態黑暗	液态黑暗		divine.lua 神造材料（天使、神器）：DARKNESS 領域的布料名
+shining cloth	閃耀布料	闪耀布料		divine.lua 神造材料（天使、神器）：DAWN／THUNDER 領域的布料名
+bright cloth	明亮布料	明亮布料		divine.lua 神造材料（天使、神器）：DAY 領域的布料名
+pale fabric	蒼白織物	苍白织物		divine.lua 神造材料（天使、神器）：DEATH 領域的布料名
+twisted fabric	扭曲織物	扭曲织物		divine.lua 神造材料（天使、神器）：DEFORMITY 領域的布料名
+patchy cloth	斑駁布料	斑驳布料		divine.lua 神造材料（天使、神器）：DISEASE 領域的布料名
+wispy cloth	絲縷布料	丝缕布料		divine.lua 神造材料（天使、神器）：DREAMS 領域的布料名
+translucent cloth	半透明布料	半透明布料		divine.lua 神造材料（天使、神器）：DUSK 領域的布料名
+flickering cloth	搖曳布料	摇曳布料		divine.lua 神造材料（天使、神器）：FIRE 領域的布料名
+faceted cloth	刻面布料	刻面布料		divine.lua 神造材料（天使、神器）：JEWELS 領域的布料名
+still blue fabric	靜藍織物	静蓝织物		divine.lua 神造材料（天使、神器）：LAKES 領域的布料名
+heavy cloth	厚重布料	厚重布料		divine.lua 神造材料（天使、神器）：LIES 領域的布料名
+misty cloth	迷濛布料	迷蒙布料		divine.lua 神造材料（天使、神器）：MIST 領域的布料名
+white cloth	白色布料	白色布料		divine.lua 神造材料（天使、神器）：MOON 領域的布料名
+dirty fabric	髒汙織物	脏污织物		divine.lua 神造材料（天使、神器）：MUCK 領域的布料名
+sonorous lines	鳴響絲線	鸣响丝线		divine.lua 神造材料（天使、神器）：MUSIC 領域的布料名
+pitch-black fabric	漆黑織物	漆黑织物		divine.lua 神造材料（天使、神器）：NIGHT 領域的布料名
+screaming mouths	尖嘯之口	尖啸之口		divine.lua 神造材料（天使、神器）：NIGHTMARES 領域的布料名
+undulating cloth	起伏布料	起伏布料		divine.lua 神造材料（天使、神器）：OCEANS 領域的布料名
+moist fabric	潮濕織物	潮湿织物		divine.lua 神造材料（天使、神器）：RAIN 領域的布料名
+multicolored cloth	多彩布料	多彩布料		divine.lua 神造材料（天使、神器）：RAINBOWS 領域的布料名
+flowing fabric	流動織物	流动织物		divine.lua 神造材料（天使、神器）：RIVERS 領域的布料名
+clear blue cloth	澄藍布料	澄蓝布料		divine.lua 神造材料（天使、神器）：SKY 領域的布料名
+motes of light	光塵	光尘		divine.lua 神造材料（天使、神器）：STARS 領域的布料名
+flowing cloth	飄動布料	飘动布料		divine.lua 神造材料（天使、神器）：STORMS 領域的布料名
+blazing cloth	熾烈布料	炽烈布料		divine.lua 神造材料（天使、神器）：SUN 領域的布料名
+shimmering cloth	幻光布料	幻光布料		divine.lua 神造材料（天使、神器）：TRICKERY 領域的布料名
+shadow stuff	暗影質料	暗影质料		divine.lua 神造材料（天使、神器）：TWILIGHT 領域的布料名
+molten liquid	熔融液體	熔融液体		divine.lua 神造材料（天使、神器）：VOLCANOS 領域的布料名
+liquid cloth	液態布料	液态布料		divine.lua 神造材料（天使、神器）：WATER 領域的布料名
+rustling fabric	窸窣織物	窸窣织物		divine.lua 神造材料（天使、神器）：WIND 領域的布料名
+primordial stone	太初之石	太初之石		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primordial crystal	太初水晶	太初水晶		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primordial chaos	太初混沌	太初混沌		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primordial darkness	太初黑暗	太初黑暗		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primordial dreamstuff	太初夢質	太初梦质		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primordial fire	太初之火	太初之火		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primordial light	太初之光	太初之光		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primordial lightning	太初雷電	太初雷电		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primordial metal	太初金屬	太初金属		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primordial moonstone	太初月光石	太初月光石		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primordial mudstone	太初泥岩	太初泥岩		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primordial ice	太初之冰	太初之冰		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primordial leaf	太初之葉	太初之叶		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primordial salt	太初之鹽	太初之盐		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primordial cloudstuff	太初雲質	太初云质		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primordial stardust	太初星塵	太初星尘		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primordial sunstone	太初太陽石	太初日光石		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primordial wood	太初之木	太初之木		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primordial obsidian	太初黑曜石	太初黑曜石		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primordial glitchstuff	太初故障質	太初故障质		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+elder stone	遠古之石	远古之石		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+elder crystal	遠古水晶	远古水晶		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+elder chaos	遠古混沌	远古混沌		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+elder darkness	遠古黑暗	远古黑暗		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+elder dreamstuff	遠古夢質	远古梦质		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+elder fire	遠古之火	远古之火		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+elder light	遠古之光	远古之光		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+elder lightning	遠古雷電	远古雷电		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+elder metal	遠古金屬	远古金属		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+elder moonstone	遠古月光石	远古月光石		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+elder mudstone	遠古泥岩	远古泥岩		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+elder ice	遠古之冰	远古之冰		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+elder leaf	遠古之葉	远古之叶		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+elder salt	遠古之鹽	远古之盐		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+elder cloudstuff	遠古雲質	远古云质		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+elder stardust	遠古星塵	远古星尘		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+elder sunstone	遠古太陽石	远古日光石		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+elder wood	遠古之木	远古之木		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+elder obsidian	遠古黑曜石	远古黑曜石		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+elder glitchstuff	遠古故障質	远古故障质		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+cosmic stone	宇宙之石	宇宙之石		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+cosmic crystal	宇宙水晶	宇宙水晶		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+cosmic chaos	宇宙混沌	宇宙混沌		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+cosmic darkness	宇宙黑暗	宇宙黑暗		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+cosmic dreamstuff	宇宙夢質	宇宙梦质		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+cosmic fire	宇宙之火	宇宙之火		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+cosmic light	宇宙之光	宇宙之光		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+cosmic lightning	宇宙雷電	宇宙雷电		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+cosmic metal	宇宙金屬	宇宙金属		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+cosmic moonstone	宇宙月光石	宇宙月光石		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+cosmic mudstone	宇宙泥岩	宇宙泥岩		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+cosmic ice	宇宙之冰	宇宙之冰		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+cosmic leaf	宇宙之葉	宇宙之叶		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+cosmic salt	宇宙之鹽	宇宙之盐		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+cosmic cloudstuff	宇宙雲質	宇宙云质		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+cosmic stardust	宇宙星塵	宇宙星尘		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+cosmic sunstone	宇宙太陽石	宇宙日光石		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+cosmic wood	宇宙之木	宇宙之木		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+cosmic obsidian	宇宙黑曜石	宇宙黑曜石		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+cosmic glitchstuff	宇宙故障質	宇宙故障质		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primal stone	原初之石	原初之石		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primal crystal	原初水晶	原初水晶		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primal chaos	原初混沌	原初混沌		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primal darkness	原初黑暗	原初黑暗		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primal dreamstuff	原初夢質	原初梦质		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primal fire	原初之火	原初之火		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primal light	原初之光	原初之光		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primal lightning	原初雷電	原初雷电		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primal metal	原初金屬	原初金属		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primal moonstone	原初月光石	原初月光石		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primal mudstone	原初泥岩	原初泥岩		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primal ice	原初之冰	原初之冰		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primal leaf	原初之葉	原初之叶		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primal salt	原初之鹽	原初之盐		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primal cloudstuff	原初雲質	原初云质		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primal stardust	原初星塵	原初星尘		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primal sunstone	原初太陽石	原初日光石		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primal wood	原初之木	原初之木		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primal obsidian	原初黑曜石	原初黑曜石		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primal glitchstuff	原初故障質	原初故障质		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+elemental stone	元素之石	元素之石		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+elemental crystal	元素水晶	元素水晶		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+elemental chaos	元素混沌	元素混沌		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+elemental darkness	元素黑暗	元素黑暗		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+elemental dreamstuff	元素夢質	元素梦质		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+elemental fire	元素之火	元素之火		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+elemental light	元素之光	元素之光		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+elemental lightning	元素雷電	元素雷电		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+elemental metal	元素金屬	元素金属		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+elemental moonstone	元素月光石	元素月光石		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+elemental mudstone	元素泥岩	元素泥岩		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+elemental ice	元素之冰	元素之冰		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+elemental leaf	元素之葉	元素之叶		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+elemental salt	元素之鹽	元素之盐		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+elemental cloudstuff	元素雲質	元素云质		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+elemental stardust	元素星塵	元素星尘		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+elemental sunstone	元素太陽石	元素日光石		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+elemental wood	元素之木	元素之木		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+elemental obsidian	元素黑曜石	元素黑曜石		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+elemental glitchstuff	元素故障質	元素故障质		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primeval stone	洪荒之石	洪荒之石		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primeval crystal	洪荒水晶	洪荒水晶		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primeval chaos	洪荒混沌	洪荒混沌		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primeval darkness	洪荒黑暗	洪荒黑暗		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primeval dreamstuff	洪荒夢質	洪荒梦质		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primeval fire	洪荒之火	洪荒之火		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primeval light	洪荒之光	洪荒之光		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primeval lightning	洪荒雷電	洪荒雷电		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primeval metal	洪荒金屬	洪荒金属		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primeval moonstone	洪荒月光石	洪荒月光石		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primeval mudstone	洪荒泥岩	洪荒泥岩		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primeval ice	洪荒之冰	洪荒之冰		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primeval leaf	洪荒之葉	洪荒之叶		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primeval salt	洪荒之鹽	洪荒之盐		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primeval cloudstuff	洪荒雲質	洪荒云质		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primeval stardust	洪荒星塵	洪荒星尘		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primeval sunstone	洪荒太陽石	洪荒日光石		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primeval wood	洪荒之木	洪荒之木		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primeval obsidian	洪荒黑曜石	洪荒黑曜石		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+primeval glitchstuff	洪荒故障質	洪荒故障质		materials.lua 神話遺物材料（天選者開場：The remnants of creation, …）：形容詞＋領域名詞；單字名詞加「之」
+curious liquid	奇妙液體	奇妙液体		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+frozen curious liquid	冰凍的奇妙液體	冰冻的奇妙液体		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+boiling curious liquid	沸騰的奇妙液體	沸腾的奇妙液体		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+curious liquid effect	奇妙液體效果	奇妙液体效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+curious fluid	奇妙流體	奇妙流体		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+frozen curious fluid	冰凍的奇妙流體	冰冻的奇妙流体		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+boiling curious fluid	沸騰的奇妙流體	沸腾的奇妙流体		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+curious fluid effect	奇妙流體效果	奇妙流体效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+curious broth	奇妙湯汁	奇妙汤汁		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+frozen curious broth	冰凍的奇妙湯汁	冰冻的奇妙汤汁		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+boiling curious broth	沸騰的奇妙湯汁	沸腾的奇妙汤汁		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+curious broth effect	奇妙湯汁效果	奇妙汤汁效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+curious juice	奇妙汁液	奇妙汁液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+frozen curious juice	冰凍的奇妙汁液	冰冻的奇妙汁液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+boiling curious juice	沸騰的奇妙汁液	沸腾的奇妙汁液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+curious juice effect	奇妙汁液效果	奇妙汁液效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+curious goo	奇妙稠液	奇妙稠液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+frozen curious goo	冰凍的奇妙稠液	冰冻的奇妙稠液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+boiling curious goo	沸騰的奇妙稠液	沸腾的奇妙稠液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+curious goo effect	奇妙稠液效果	奇妙稠液效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+curious liquor	奇妙烈酒	奇妙烈酒		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+frozen curious liquor	冰凍的奇妙烈酒	冰冻的奇妙烈酒		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+boiling curious liquor	沸騰的奇妙烈酒	沸腾的奇妙烈酒		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+curious liquor effect	奇妙烈酒效果	奇妙烈酒效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+curious solution	奇妙溶液	奇妙溶液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+frozen curious solution	冰凍的奇妙溶液	冰冻的奇妙溶液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+boiling curious solution	沸騰的奇妙溶液	沸腾的奇妙溶液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+curious solution effect	奇妙溶液效果	奇妙溶液效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+curious jelly	奇妙膠凍	奇妙胶冻		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+molten curious jelly	熔融奇妙膠凍	熔融奇妙胶冻		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+boiling curious jelly	沸騰的奇妙膠凍	沸腾的奇妙胶冻		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+curious jelly effect	奇妙膠凍效果	奇妙胶冻效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+curious pulp	奇妙漿泥	奇妙浆泥		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+molten curious pulp	熔融奇妙漿泥	熔融奇妙浆泥		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+boiling curious pulp	沸騰的奇妙漿泥	沸腾的奇妙浆泥		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+curious pulp effect	奇妙漿泥效果	奇妙浆泥效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+curious wax	奇妙蠟膏	奇妙蜡膏		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+molten curious wax	熔融奇妙蠟膏	熔融奇妙蜡膏		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+boiling curious wax	沸騰的奇妙蠟膏	沸腾的奇妙蜡膏		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+curious wax effect	奇妙蠟膏效果	奇妙蜡膏效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+curious jam	奇妙果醬	奇妙果酱		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+molten curious jam	熔融奇妙果醬	熔融奇妙果酱		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+boiling curious jam	沸騰的奇妙果醬	沸腾的奇妙果酱		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+curious jam effect	奇妙果醬效果	奇妙果酱效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+curious dough	奇妙麵團	奇妙面团		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+molten curious dough	熔融奇妙麵團	熔融奇妙面团		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+boiling curious dough	沸騰的奇妙麵團	沸腾的奇妙面团		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+curious dough effect	奇妙麵團效果	奇妙面团效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+weird liquid	古怪液體	古怪液体		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+frozen weird liquid	冰凍的古怪液體	冰冻的古怪液体		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+boiling weird liquid	沸騰的古怪液體	沸腾的古怪液体		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+weird liquid effect	古怪液體效果	古怪液体效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+weird fluid	古怪流體	古怪流体		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+frozen weird fluid	冰凍的古怪流體	冰冻的古怪流体		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+boiling weird fluid	沸騰的古怪流體	沸腾的古怪流体		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+weird fluid effect	古怪流體效果	古怪流体效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+weird broth	古怪湯汁	古怪汤汁		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+frozen weird broth	冰凍的古怪湯汁	冰冻的古怪汤汁		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+boiling weird broth	沸騰的古怪湯汁	沸腾的古怪汤汁		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+weird broth effect	古怪湯汁效果	古怪汤汁效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+weird juice	古怪汁液	古怪汁液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+frozen weird juice	冰凍的古怪汁液	冰冻的古怪汁液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+boiling weird juice	沸騰的古怪汁液	沸腾的古怪汁液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+weird juice effect	古怪汁液效果	古怪汁液效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+weird goo	古怪稠液	古怪稠液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+frozen weird goo	冰凍的古怪稠液	冰冻的古怪稠液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+boiling weird goo	沸騰的古怪稠液	沸腾的古怪稠液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+weird goo effect	古怪稠液效果	古怪稠液效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+weird liquor	古怪烈酒	古怪烈酒		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+frozen weird liquor	冰凍的古怪烈酒	冰冻的古怪烈酒		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+boiling weird liquor	沸騰的古怪烈酒	沸腾的古怪烈酒		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+weird liquor effect	古怪烈酒效果	古怪烈酒效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+weird solution	古怪溶液	古怪溶液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+frozen weird solution	冰凍的古怪溶液	冰冻的古怪溶液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+boiling weird solution	沸騰的古怪溶液	沸腾的古怪溶液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+weird solution effect	古怪溶液效果	古怪溶液效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+weird jelly	古怪膠凍	古怪胶冻		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+molten weird jelly	熔融古怪膠凍	熔融古怪胶冻		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+boiling weird jelly	沸騰的古怪膠凍	沸腾的古怪胶冻		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+weird jelly effect	古怪膠凍效果	古怪胶冻效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+weird pulp	古怪漿泥	古怪浆泥		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+molten weird pulp	熔融古怪漿泥	熔融古怪浆泥		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+boiling weird pulp	沸騰的古怪漿泥	沸腾的古怪浆泥		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+weird pulp effect	古怪漿泥效果	古怪浆泥效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+weird wax	古怪蠟膏	古怪蜡膏		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+molten weird wax	熔融古怪蠟膏	熔融古怪蜡膏		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+boiling weird wax	沸騰的古怪蠟膏	沸腾的古怪蜡膏		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+weird wax effect	古怪蠟膏效果	古怪蜡膏效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+weird jam	古怪果醬	古怪果酱		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+molten weird jam	熔融古怪果醬	熔融古怪果酱		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+boiling weird jam	沸騰的古怪果醬	沸腾的古怪果酱		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+weird jam effect	古怪果醬效果	古怪果酱效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+weird dough	古怪麵團	古怪面团		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+molten weird dough	熔融古怪麵團	熔融古怪面团		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+boiling weird dough	沸騰的古怪麵團	沸腾的古怪面团		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+weird dough effect	古怪麵團效果	古怪面团效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+odd liquid	怪液體	怪液体		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+frozen odd liquid	冰凍的怪液體	冰冻的怪液体		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+boiling odd liquid	沸騰的怪液體	沸腾的怪液体		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+odd liquid effect	怪液體效果	怪液体效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+odd fluid	怪流體	怪流体		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+frozen odd fluid	冰凍的怪流體	冰冻的怪流体		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+boiling odd fluid	沸騰的怪流體	沸腾的怪流体		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+odd fluid effect	怪流體效果	怪流体效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+odd broth	怪湯汁	怪汤汁		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+frozen odd broth	冰凍的怪湯汁	冰冻的怪汤汁		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+boiling odd broth	沸騰的怪湯汁	沸腾的怪汤汁		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+odd broth effect	怪湯汁效果	怪汤汁效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+odd juice	怪汁液	怪汁液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+frozen odd juice	冰凍的怪汁液	冰冻的怪汁液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+boiling odd juice	沸騰的怪汁液	沸腾的怪汁液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+odd juice effect	怪汁液效果	怪汁液效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+odd goo	怪稠液	怪稠液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+frozen odd goo	冰凍的怪稠液	冰冻的怪稠液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+boiling odd goo	沸騰的怪稠液	沸腾的怪稠液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+odd goo effect	怪稠液效果	怪稠液效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+odd liquor	怪烈酒	怪烈酒		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+frozen odd liquor	冰凍的怪烈酒	冰冻的怪烈酒		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+boiling odd liquor	沸騰的怪烈酒	沸腾的怪烈酒		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+odd liquor effect	怪烈酒效果	怪烈酒效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+odd solution	怪溶液	怪溶液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+frozen odd solution	冰凍的怪溶液	冰冻的怪溶液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+boiling odd solution	沸騰的怪溶液	沸腾的怪溶液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+odd solution effect	怪溶液效果	怪溶液效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+odd jelly	怪膠凍	怪胶冻		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+molten odd jelly	熔融怪膠凍	熔融怪胶冻		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+boiling odd jelly	沸騰的怪膠凍	沸腾的怪胶冻		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+odd jelly effect	怪膠凍效果	怪胶冻效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+odd pulp	怪漿泥	怪浆泥		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+molten odd pulp	熔融怪漿泥	熔融怪浆泥		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+boiling odd pulp	沸騰的怪漿泥	沸腾的怪浆泥		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+odd pulp effect	怪漿泥效果	怪浆泥效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+odd wax	怪蠟膏	怪蜡膏		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+molten odd wax	熔融怪蠟膏	熔融怪蜡膏		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+boiling odd wax	沸騰的怪蠟膏	沸腾的怪蜡膏		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+odd wax effect	怪蠟膏效果	怪蜡膏效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+odd jam	怪果醬	怪果酱		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+molten odd jam	熔融怪果醬	熔融怪果酱		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+boiling odd jam	沸騰的怪果醬	沸腾的怪果酱		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+odd jam effect	怪果醬效果	怪果酱效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+odd dough	怪麵團	怪面团		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+molten odd dough	熔融怪麵團	熔融怪面团		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+boiling odd dough	沸騰的怪麵團	沸腾的怪面团		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+odd dough effect	怪麵團效果	怪面团效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+strange liquid	奇異液體	奇异液体		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+frozen strange liquid	冰凍的奇異液體	冰冻的奇异液体		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+boiling strange liquid	沸騰的奇異液體	沸腾的奇异液体		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+strange liquid effect	奇異液體效果	奇异液体效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+strange fluid	奇異流體	奇异流体		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+frozen strange fluid	冰凍的奇異流體	冰冻的奇异流体		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+boiling strange fluid	沸騰的奇異流體	沸腾的奇异流体		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+strange fluid effect	奇異流體效果	奇异流体效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+strange broth	奇異湯汁	奇异汤汁		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+frozen strange broth	冰凍的奇異湯汁	冰冻的奇异汤汁		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+boiling strange broth	沸騰的奇異湯汁	沸腾的奇异汤汁		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+strange broth effect	奇異湯汁效果	奇异汤汁效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+strange juice	奇異汁液	奇异汁液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+frozen strange juice	冰凍的奇異汁液	冰冻的奇异汁液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+boiling strange juice	沸騰的奇異汁液	沸腾的奇异汁液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+strange juice effect	奇異汁液效果	奇异汁液效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+strange goo	奇異稠液	奇异稠液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+frozen strange goo	冰凍的奇異稠液	冰冻的奇异稠液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+boiling strange goo	沸騰的奇異稠液	沸腾的奇异稠液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+strange goo effect	奇異稠液效果	奇异稠液效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+strange liquor	奇異烈酒	奇异烈酒		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+frozen strange liquor	冰凍的奇異烈酒	冰冻的奇异烈酒		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+boiling strange liquor	沸騰的奇異烈酒	沸腾的奇异烈酒		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+strange liquor effect	奇異烈酒效果	奇异烈酒效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+strange solution	奇異溶液	奇异溶液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+frozen strange solution	冰凍的奇異溶液	冰冻的奇异溶液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+boiling strange solution	沸騰的奇異溶液	沸腾的奇异溶液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+strange solution effect	奇異溶液效果	奇异溶液效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+strange jelly	奇異膠凍	奇异胶冻		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+molten strange jelly	熔融奇異膠凍	熔融奇异胶冻		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+boiling strange jelly	沸騰的奇異膠凍	沸腾的奇异胶冻		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+strange jelly effect	奇異膠凍效果	奇异胶冻效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+strange pulp	奇異漿泥	奇异浆泥		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+molten strange pulp	熔融奇異漿泥	熔融奇异浆泥		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+boiling strange pulp	沸騰的奇異漿泥	沸腾的奇异浆泥		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+strange pulp effect	奇異漿泥效果	奇异浆泥效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+strange wax	奇異蠟膏	奇异蜡膏		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+molten strange wax	熔融奇異蠟膏	熔融奇异蜡膏		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+boiling strange wax	沸騰的奇異蠟膏	沸腾的奇异蜡膏		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+strange wax effect	奇異蠟膏效果	奇异蜡膏效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+strange jam	奇異果醬	奇异果酱		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+molten strange jam	熔融奇異果醬	熔融奇异果酱		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+boiling strange jam	沸騰的奇異果醬	沸腾的奇异果酱		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+strange jam effect	奇異果醬效果	奇异果酱效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+strange dough	奇異麵團	奇异面团		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+molten strange dough	熔融奇異麵團	熔融奇异面团		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+boiling strange dough	沸騰的奇異麵團	沸腾的奇异面团		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+strange dough effect	奇異麵團效果	奇异面团效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+unusual liquid	罕見液體	罕见液体		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+frozen unusual liquid	冰凍的罕見液體	冰冻的罕见液体		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+boiling unusual liquid	沸騰的罕見液體	沸腾的罕见液体		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+unusual liquid effect	罕見液體效果	罕见液体效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+unusual fluid	罕見流體	罕见流体		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+frozen unusual fluid	冰凍的罕見流體	冰冻的罕见流体		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+boiling unusual fluid	沸騰的罕見流體	沸腾的罕见流体		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+unusual fluid effect	罕見流體效果	罕见流体效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+unusual broth	罕見湯汁	罕见汤汁		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+frozen unusual broth	冰凍的罕見湯汁	冰冻的罕见汤汁		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+boiling unusual broth	沸騰的罕見湯汁	沸腾的罕见汤汁		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+unusual broth effect	罕見湯汁效果	罕见汤汁效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+unusual juice	罕見汁液	罕见汁液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+frozen unusual juice	冰凍的罕見汁液	冰冻的罕见汁液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+boiling unusual juice	沸騰的罕見汁液	沸腾的罕见汁液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+unusual juice effect	罕見汁液效果	罕见汁液效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+unusual goo	罕見稠液	罕见稠液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+frozen unusual goo	冰凍的罕見稠液	冰冻的罕见稠液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+boiling unusual goo	沸騰的罕見稠液	沸腾的罕见稠液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+unusual goo effect	罕見稠液效果	罕见稠液效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+unusual liquor	罕見烈酒	罕见烈酒		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+frozen unusual liquor	冰凍的罕見烈酒	冰冻的罕见烈酒		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+boiling unusual liquor	沸騰的罕見烈酒	沸腾的罕见烈酒		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+unusual liquor effect	罕見烈酒效果	罕见烈酒效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+unusual solution	罕見溶液	罕见溶液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+frozen unusual solution	冰凍的罕見溶液	冰冻的罕见溶液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+boiling unusual solution	沸騰的罕見溶液	沸腾的罕见溶液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+unusual solution effect	罕見溶液效果	罕见溶液效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+unusual jelly	罕見膠凍	罕见胶冻		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+molten unusual jelly	熔融罕見膠凍	熔融罕见胶冻		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+boiling unusual jelly	沸騰的罕見膠凍	沸腾的罕见胶冻		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+unusual jelly effect	罕見膠凍效果	罕见胶冻效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+unusual pulp	罕見漿泥	罕见浆泥		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+molten unusual pulp	熔融罕見漿泥	熔融罕见浆泥		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+boiling unusual pulp	沸騰的罕見漿泥	沸腾的罕见浆泥		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+unusual pulp effect	罕見漿泥效果	罕见浆泥效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+unusual wax	罕見蠟膏	罕见蜡膏		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+molten unusual wax	熔融罕見蠟膏	熔融罕见蜡膏		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+boiling unusual wax	沸騰的罕見蠟膏	沸腾的罕见蜡膏		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+unusual wax effect	罕見蠟膏效果	罕见蜡膏效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+unusual jam	罕見果醬	罕见果酱		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+molten unusual jam	熔融罕見果醬	熔融罕见果酱		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+boiling unusual jam	沸騰的罕見果醬	沸腾的罕见果酱		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+unusual jam effect	罕見果醬效果	罕见果酱效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+unusual dough	罕見麵團	罕见面团		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+molten unusual dough	熔融罕見麵團	熔融罕见面团		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+boiling unusual dough	沸騰的罕見麵團	沸腾的罕见面团		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+unusual dough effect	罕見麵團效果	罕见面团效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+peculiar liquid	特異液體	特异液体		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+frozen peculiar liquid	冰凍的特異液體	冰冻的特异液体		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+boiling peculiar liquid	沸騰的特異液體	沸腾的特异液体		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+peculiar liquid effect	特異液體效果	特异液体效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+peculiar fluid	特異流體	特异流体		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+frozen peculiar fluid	冰凍的特異流體	冰冻的特异流体		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+boiling peculiar fluid	沸騰的特異流體	沸腾的特异流体		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+peculiar fluid effect	特異流體效果	特异流体效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+peculiar broth	特異湯汁	特异汤汁		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+frozen peculiar broth	冰凍的特異湯汁	冰冻的特异汤汁		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+boiling peculiar broth	沸騰的特異湯汁	沸腾的特异汤汁		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+peculiar broth effect	特異湯汁效果	特异汤汁效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+peculiar juice	特異汁液	特异汁液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+frozen peculiar juice	冰凍的特異汁液	冰冻的特异汁液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+boiling peculiar juice	沸騰的特異汁液	沸腾的特异汁液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+peculiar juice effect	特異汁液效果	特异汁液效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+peculiar goo	特異稠液	特异稠液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+frozen peculiar goo	冰凍的特異稠液	冰冻的特异稠液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+boiling peculiar goo	沸騰的特異稠液	沸腾的特异稠液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+peculiar goo effect	特異稠液效果	特异稠液效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+peculiar liquor	特異烈酒	特异烈酒		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+frozen peculiar liquor	冰凍的特異烈酒	冰冻的特异烈酒		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+boiling peculiar liquor	沸騰的特異烈酒	沸腾的特异烈酒		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+peculiar liquor effect	特異烈酒效果	特异烈酒效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+peculiar solution	特異溶液	特异溶液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+frozen peculiar solution	冰凍的特異溶液	冰冻的特异溶液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+boiling peculiar solution	沸騰的特異溶液	沸腾的特异溶液		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+peculiar solution effect	特異溶液效果	特异溶液效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+peculiar jelly	特異膠凍	特异胶冻		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+molten peculiar jelly	熔融特異膠凍	熔融特异胶冻		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+boiling peculiar jelly	沸騰的特異膠凍	沸腾的特异胶冻		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+peculiar jelly effect	特異膠凍效果	特异胶冻效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+peculiar pulp	特異漿泥	特异浆泥		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+molten peculiar pulp	熔融特異漿泥	熔融特异浆泥		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+boiling peculiar pulp	沸騰的特異漿泥	沸腾的特异浆泥		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+peculiar pulp effect	特異漿泥效果	特异浆泥效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+peculiar wax	特異蠟膏	特异蜡膏		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+molten peculiar wax	熔融特異蠟膏	熔融特异蜡膏		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+boiling peculiar wax	沸騰的特異蠟膏	沸腾的特异蜡膏		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+peculiar wax effect	特異蠟膏效果	特异蜡膏效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+peculiar jam	特異果醬	特异果酱		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+molten peculiar jam	熔融特異果醬	熔融特异果酱		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+boiling peculiar jam	沸騰的特異果醬	沸腾的特异果酱		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+peculiar jam effect	特異果醬效果	特异果酱效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME
+peculiar dough	特異麵團	特异面团		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（固態）
+molten peculiar dough	熔融特異麵團	熔融特异面团		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（液態）
+boiling peculiar dough	沸騰的特異麵團	沸腾的特异面团		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞（氣態）
+peculiar dough effect	特異麵團效果	特异面团效果		materials.lua 神話療癒物質（世界生成的療傷藥）：形容詞＋名詞：症狀名 SYN_NAME

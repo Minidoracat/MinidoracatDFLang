@@ -145,6 +145,7 @@ raws 裡的生物、植物、材料、物品、身體部位名稱，以及執行
 
 - 繁中用台灣通行的名稱，簡中用中國大陸通行的名稱，兩岸不同就各寫各的（酪梨／牛油果）。動植物、礦物有大眾熟悉的通行名時用通行名（奇異鳥、無尾熊、劍齒虎），沒有通行名、或通行名會指到別的物種時用正式中文名（加州鱝）。遊戲自創的生物照字面意思譯。
 - 寬度：名稱檔至少可用 6 格（三個中文字），因為短英文名的通行中文名多半是三個字（ogre 食人魔、kiwi 奇異鳥）；多出的格數可能貼到右邊的文字，實機看到再改。
+- 神造材料與神話物質（`faceted metal`、`motes of light`、`primal cloudstuff`、`curious jelly`）不在 raws 文字檔，是世界生成時 raws 的 Lua 產生器（`vanilla_procedural/scripts/generators/divine.lua`、`materials.lua`）從固定字表組的：全部組合整條寫進 `names_divine_materials.tsv`。神話遺物「形容詞＋領域名詞」，單字名詞加「之」（「原初之火」「原初雲質」）；療癒物質的 frozen、molten、boiling 照上表。
 
 ## 世界生成的名稱
 
@@ -206,7 +207,7 @@ uv run scripts/gen_events.py
 - 檔案：字串 `data/strings/adv_<批次>.tsv`、句型 `data/rules/adv_<批次>.tsv`；只靠佔位撐起來的通用樣板放 `data/rules/zz_adv_<批次>.tsv`，一樣要有錨點（見上一節）。交談紀錄（`adv_speech`）是自動換行的段落，不檢查格數。
 - 口吻：選單選項是玩家的動作（「詢問…」「要求以物易物」），NPC 說話用口語、符合說話者身分。
 - 冒險畫面同字不同義的單字放 `data/screens/dungeonmode.tsv`（合成選單 `Butcher` 是「屠宰」，全域是職業「屠夫」；能力名 `Spit`、`Curse`），交談選單的英文關鍵字靠 `dungeonmode.Conversation.tsv` 的 `*` 列保留（見「一詞多義」）。
-- 人物稱呼「the 職位 名字」靠 `{^n}` 句型；職位名（含程序生成的「fire commissioner」「royal chancellor」，`adv_titles.tsv`）要寫成整句條目，`{@n}` 才查得到。
+- 人物稱呼「the 職位 名字」靠 `{^n}` 句型；職位名（含程序生成的「fire commissioner」「royal chancellor」，`adv_titles.tsv`）要寫成整句條目，`{@n}` 才查得到。「the 種族 職業 名字」的種族逐一寫出（`the dwarf {@1} {^2}`），不寫成 `the {@1} {@2} {^3}`：後者會把「the attack on Boatmurdered」拆成「攻擊開Boatmurdered」。每個字都大寫的稱呼（交談頭像下的「The Dwarf Merchant X」）沒有佔位分得出職業和名字（`{^n}` 要前一個字小寫，任意佔位會吞掉整句公告），照英文。
 - 遊戲截成「開頭...」的清單字串（交談選單「Start new conversation with the Human baro...」、開局的「From Stukos òrdir, The Razor of Incinera...」）不用另寫：引擎記下截短前的原文來翻（見 `docs/analysis.md` 第 17 點）。
 - 開局畫面的外觀、性格段落和人物頁是同一批句子，引擎逐句查，不用整段寫。
 - 交談紀錄（畫面上方有頭像的框）每一則是「講者: 內容」，遊戲自己切行；引擎整則查、查不到就逐句查，再依中文重新換行（見 `docs/analysis.md` 第 20 點）。所以交談內容一句一條（兩個空白隔開的每一句都要能單獨翻），講者句型已經有，只翻冒號後面的句子；檔名用 `adv_speech_*`，不檢查格數。

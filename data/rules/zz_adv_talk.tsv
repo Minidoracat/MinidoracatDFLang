@@ -12,3 +12,13 @@ The {@1} {^2}	{1}{2}	{1}{2}		冒險模式的人物稱呼（FUN_141331500：the �
 the forces of {1}	{1}的軍隊	{1}的军队	inner	FUN_140697740 L922367 衝突概述：攻擊者、被攻擊者；放 zz：寫在 adv_talk 會先吞掉 sentences_causes_b 的 the forces of {1} were defeated at {2}
 {@1} of {2} died	{2}的{1}死亡	{2}的{1}死亡	inner	FUN_140697740 L922540 衝突概述：{1} 生物名（字典有的才收），{2} 文明名；只套在佔位裡
 {@1} died	{1}死亡	{1}死亡	inner	FUN_140697740 L922540 衝突概述：{1} 生物名（字典有的才收）；只套在佔位裡
+the dwarf {@1} {^2}	矮人{1}{2}	矮人{1}{2}		冒險模式的人物稱呼：the 種族 職業 名字，種族、職業都小寫（「the dwarf merchant Momuz Kogannog」，第二十二輪實機）；種族寫死，免得「the attack on Boatmurdered」被當成稱呼
+The dwarf {@1} {^2}	矮人{1}{2}	矮人{1}{2}		冒險模式的人物稱呼：the 種族 職業 名字，種族、職業都小寫（「the dwarf merchant Momuz Kogannog」，第二十二輪實機）；種族寫死，免得「the attack on Boatmurdered」被當成稱呼
+the human {@1} {^2}	人類{1}{2}	人类{1}{2}		冒險模式的人物稱呼：the 種族 職業 名字，種族、職業都小寫（「the dwarf merchant Momuz Kogannog」，第二十二輪實機）；種族寫死，免得「the attack on Boatmurdered」被當成稱呼
+The human {@1} {^2}	人類{1}{2}	人类{1}{2}		冒險模式的人物稱呼：the 種族 職業 名字，種族、職業都小寫（「the dwarf merchant Momuz Kogannog」，第二十二輪實機）；種族寫死，免得「the attack on Boatmurdered」被當成稱呼
+the elf {@1} {^2}	精靈{1}{2}	精灵{1}{2}		冒險模式的人物稱呼：the 種族 職業 名字，種族、職業都小寫（「the dwarf merchant Momuz Kogannog」，第二十二輪實機）；種族寫死，免得「the attack on Boatmurdered」被當成稱呼
+The elf {@1} {^2}	精靈{1}{2}	精灵{1}{2}		冒險模式的人物稱呼：the 種族 職業 名字，種族、職業都小寫（「the dwarf merchant Momuz Kogannog」，第二十二輪實機）；種族寫死，免得「the attack on Boatmurdered」被當成稱呼
+the goblin {@1} {^2}	哥布林{1}{2}	哥布林{1}{2}		冒險模式的人物稱呼：the 種族 職業 名字，種族、職業都小寫（「the dwarf merchant Momuz Kogannog」，第二十二輪實機）；種族寫死，免得「the attack on Boatmurdered」被當成稱呼
+The goblin {@1} {^2}	哥布林{1}{2}	哥布林{1}{2}		冒險模式的人物稱呼：the 種族 職業 名字，種族、職業都小寫（「the dwarf merchant Momuz Kogannog」，第二十二輪實機）；種族寫死，免得「the attack on Boatmurdered」被當成稱呼
+the kobold {@1} {^2}	狗頭人{1}{2}	狗头人{1}{2}		冒險模式的人物稱呼：the 種族 職業 名字，種族、職業都小寫（「the dwarf merchant Momuz Kogannog」，第二十二輪實機）；種族寫死，免得「the attack on Boatmurdered」被當成稱呼
+The kobold {@1} {^2}	狗頭人{1}{2}	狗头人{1}{2}		冒險模式的人物稱呼：the 種族 職業 名字，種族、職業都小寫（「the dwarf merchant Momuz Kogannog」，第二十二輪實機）；種族寫死，免得「the attack on Boatmurdered」被當成稱呼
