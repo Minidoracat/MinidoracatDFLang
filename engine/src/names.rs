@@ -7,6 +7,7 @@
 //! 組中文時也照遊戲的規則拼一次英文，和原函式的輸出（不分大小寫）對得上才登記：遊戲改版或 MOD 改了字表時寧可照英文。
 
 use std::collections::HashMap;
+use std::sync::atomic::{AtomicU64, Ordering};
 use std::sync::{Arc, LazyLock, OnceLock};
 
 use parking_lot::Mutex;
@@ -36,6 +37,8 @@ static WORDS: OnceLock<HashMap<Vec<u8>, [String; 4]>> = OnceLock::new();
 /// 英文名 → 中文名。ponytail: 滿了整張清掉，畫面上的名字下次遊戲再組名字時補回來
 static NAMES: LazyLock<Mutex<HashMap<Vec<u8>, Arc<str>>>> = LazyLock::new(|| Mutex::new(HashMap::new()));
 const NAMES_LIMIT: usize = 200_000;
+/// 每登記一個新名字加一：字典記成翻不出來的字串，在這之後可能翻得出來了（見 Dict::rule_entry）
+static GENERATION: AtomicU64 = AtomicU64::new(0);
 
 /// 讀 `代號<TAB>詞性<TAB>中文` 一行一條（詞性 NOUN／ADJ／PREFIX／VERB）；回傳載入條數。只能載入一次。
 pub fn load_words(content: &str) -> usize {
@@ -58,6 +61,17 @@ pub fn load_words(content: &str) -> usize {
 /// 字典查詞用：遊戲組過的英文名的中文。
 pub fn get(english: &[u8]) -> Option<Arc<str>> {
     NAMES.lock().get(english).cloned()
+}
+
+pub fn generation() -> u64 {
+    GENERATION.load(Ordering::Acquire)
+}
+
+/// 測試用：直接登記一個名字（不經 translate_name）。
+#[cfg(test)]
+pub fn insert(english: &[u8], zh: &str) {
+    NAMES.lock().insert(english.to_vec(), zh.into());
+    GENERATION.fetch_add(1, Ordering::Release);
 }
 
 unsafe fn read<T: Copy>(base: usize, offset: usize) -> T {
@@ -177,6 +191,7 @@ pub unsafe fn note(name: usize, out: &[u8]) {
         names.clear();
     }
     names.insert(out.to_vec(), zh.into());
+    GENERATION.fetch_add(1, Ordering::Release);
 }
 
 #[cfg(test)]

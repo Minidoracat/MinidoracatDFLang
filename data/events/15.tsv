@@ -1,4 +1,12 @@
 en	zh-Hant	zh-Hans	align	note
+{1} concluded an agreement to retrieve {2} for {3} with {4} and {5} {%6}.	{1}結束了與{4}和{5}為{3}取回{2}的協議，{6}。	{1}结束了与{4}和{5}为{3}取回{2}的协议，{6}。	inner	agreement_concluded 完整句 FUN_140b81f00 1696290-1696526：協議種類是取回神器時寫整句（「與C為B取回A的協議」，避免「和C的為B取回A的協議」）；排在 {%2} 通用句前
+{1} concluded an agreement to retrieve {2} for {3} with {4} and {5}.	{1}結束了與{4}和{5}為{3}取回{2}的協議。	{1}结束了与{4}和{5}为{3}取回{2}的协议。	inner	agreement_concluded 完整句 FUN_140b81f00 1696290-1696526：協議種類是取回神器時寫整句（「與C為B取回A的協議」，避免「和C的為B取回A的協議」）；排在 {%2} 通用句前
+{1} concluded an agreement to retrieve {2} for {3} with {4} {%5}.	{1}結束了與{4}為{3}取回{2}的協議，{5}。	{1}结束了与{4}为{3}取回{2}的协议，{5}。	inner	agreement_concluded 完整句 FUN_140b81f00 1696290-1696526：協議種類是取回神器時寫整句（「與C為B取回A的協議」，避免「和C的為B取回A的協議」）；排在 {%2} 通用句前
+{1} concluded an agreement to retrieve {2} for {3} with {4}.	{1}結束了與{4}為{3}取回{2}的協議。	{1}结束了与{4}为{3}取回{2}的协议。	inner	agreement_concluded 完整句 FUN_140b81f00 1696290-1696526：協議種類是取回神器時寫整句（「與C為B取回A的協議」，避免「和C的為B取回A的協議」）；排在 {%2} 通用句前
+{1} concluded an agreement to retrieve {2} with {3} and {4} {%5}.	{1}結束了與{3}和{4}取回{2}的協議，{5}。	{1}结束了与{3}和{4}取回{2}的协议，{5}。	inner	agreement_concluded 完整句 FUN_140b81f00 1696290-1696526：協議種類是取回神器時寫整句（「與C為B取回A的協議」，避免「和C的為B取回A的協議」）；排在 {%2} 通用句前
+{1} concluded an agreement to retrieve {2} with {3} and {4}.	{1}結束了與{3}和{4}取回{2}的協議。	{1}结束了与{3}和{4}取回{2}的协议。	inner	agreement_concluded 完整句 FUN_140b81f00 1696290-1696526：協議種類是取回神器時寫整句（「與C為B取回A的協議」，避免「和C的為B取回A的協議」）；排在 {%2} 通用句前
+{1} concluded an agreement to retrieve {2} with {3} {%4}.	{1}結束了與{3}取回{2}的協議，{4}。	{1}结束了与{3}取回{2}的协议，{4}。	inner	agreement_concluded 完整句 FUN_140b81f00 1696290-1696526：協議種類是取回神器時寫整句（「與C為B取回A的協議」，避免「和C的為B取回A的協議」）；排在 {%2} 通用句前
+{1} concluded an agreement to retrieve {2} with {3}.	{1}結束了與{3}取回{2}的協議。	{1}结束了与{3}取回{2}的协议。	inner	agreement_concluded 完整句 FUN_140b81f00 1696290-1696526：協議種類是取回神器時寫整句（「與C為B取回A的協議」，避免「和C的為B取回A的協議」）；排在 {%2} 通用句前
 {1} concluded {%2} with {3} and {4} {%5}.	{1}結束了與{3}和{4}的{2}，{5}。	{1}结束了与{3}和{4}的{2}，{5}。	inner	agreement_concluded 完整句 FUN_140b81f00 1696290-1696526：協議種類＋with 另一方名單（FUN_1400e2b80，A, B and C）＋原因；有原因的寫在前面，否則名字佔位會吞掉原因
 {1} concluded {%2} with {3} and {4}.	{1}結束了與{3}和{4}的{2}。	{1}结束了与{3}和{4}的{2}。	inner	同上，無原因
 {1} concluded {%2} with {3} {%4}.	{1}結束了與{3}的{2}，{4}。	{1}结束了与{3}的{2}，{4}。	inner	同上，單一方＋原因
@@ -8,10 +16,18 @@ en	zh-Hant	zh-Hans	align	note
 a request to offer service to {1}	向{1}效力的請求	向{1}效力的请求	inner	FUN_140b81f00 1696403／FUN_140b82a20 1696779 協議種類（後接勢力）
 an agreement to retrieve {1} for {2}	為{2}取回{1}的協議	为{2}取回{1}的协议	inner	FUN_140b81f00 1696412／FUN_140b82a20 1696788 協議種類：取回神器（為某勢力）
 an agreement to retrieve {1}	取回{1}的協議	取回{1}的协议	inner	同上，沒有委託勢力
-the conclusion of {%1} with {2} and {3} by {4} {%5}	{4}{5}結束和{2}及{3}的{1}	{4}{5}结束和{2}及{3}的{1}	inner	agreement_concluded 短語 FUN_140b82a20 1696672-1696862（日期由 _events_00 處理）
-the conclusion of {%1} with {2} and {3} by {4}	{4}結束和{2}及{3}的{1}	{4}结束和{2}及{3}的{1}	inner	同上，無原因
-the conclusion of {%1} with {2} by {3} {%4}	{3}{4}結束和{2}的{1}	{3}{4}结束和{2}的{1}	inner	同上，單一方＋原因
-the conclusion of {%1} with {2} by {3}	{3}結束和{2}的{1}	{3}结束和{2}的{1}	inner	同上，單一方
+the conclusion of an agreement to retrieve {1} for {2} with {3} and {4} by {5} {%6}	{5}{6}結束與{3}及{4}為{2}取回{1}的協議	{5}{6}结束与{3}及{4}为{2}取回{1}的协议	inner	agreement_concluded 短語 FUN_140b82a20 1696672-1696862（日期由 _events_00 處理）：協議種類是取回神器時寫整句（避免「和C的為B取回A的協議」）；排在 {%1} 通用句前
+the conclusion of an agreement to retrieve {1} for {2} with {3} and {4} by {5}	{5}結束與{3}及{4}為{2}取回{1}的協議	{5}结束与{3}及{4}为{2}取回{1}的协议	inner	agreement_concluded 短語 FUN_140b82a20 1696672-1696862（日期由 _events_00 處理）：協議種類是取回神器時寫整句（避免「和C的為B取回A的協議」）；排在 {%1} 通用句前
+the conclusion of an agreement to retrieve {1} for {2} with {3} by {4} {%5}	{4}{5}結束與{3}為{2}取回{1}的協議	{4}{5}结束与{3}为{2}取回{1}的协议	inner	agreement_concluded 短語 FUN_140b82a20 1696672-1696862（日期由 _events_00 處理）：協議種類是取回神器時寫整句（避免「和C的為B取回A的協議」）；排在 {%1} 通用句前
+the conclusion of an agreement to retrieve {1} for {2} with {3} by {4}	{4}結束與{3}為{2}取回{1}的協議	{4}结束与{3}为{2}取回{1}的协议	inner	agreement_concluded 短語 FUN_140b82a20 1696672-1696862（日期由 _events_00 處理）：協議種類是取回神器時寫整句（避免「和C的為B取回A的協議」）；排在 {%1} 通用句前
+the conclusion of an agreement to retrieve {1} with {2} and {3} by {4} {%5}	{4}{5}結束與{2}及{3}取回{1}的協議	{4}{5}结束与{2}及{3}取回{1}的协议	inner	agreement_concluded 短語 FUN_140b82a20 1696672-1696862（日期由 _events_00 處理）：協議種類是取回神器時寫整句（避免「和C的為B取回A的協議」）；排在 {%1} 通用句前
+the conclusion of an agreement to retrieve {1} with {2} and {3} by {4}	{4}結束與{2}及{3}取回{1}的協議	{4}结束与{2}及{3}取回{1}的协议	inner	agreement_concluded 短語 FUN_140b82a20 1696672-1696862（日期由 _events_00 處理）：協議種類是取回神器時寫整句（避免「和C的為B取回A的協議」）；排在 {%1} 通用句前
+the conclusion of an agreement to retrieve {1} with {2} by {3} {%4}	{3}{4}結束與{2}取回{1}的協議	{3}{4}结束与{2}取回{1}的协议	inner	agreement_concluded 短語 FUN_140b82a20 1696672-1696862（日期由 _events_00 處理）：協議種類是取回神器時寫整句（避免「和C的為B取回A的協議」）；排在 {%1} 通用句前
+the conclusion of an agreement to retrieve {1} with {2} by {3}	{3}結束與{2}取回{1}的協議	{3}结束与{2}取回{1}的协议	inner	agreement_concluded 短語 FUN_140b82a20 1696672-1696862（日期由 _events_00 處理）：協議種類是取回神器時寫整句（避免「和C的為B取回A的協議」）；排在 {%1} 通用句前
+the conclusion of {%1} with {2} and {3} by {4} {%5}	{4}{5}結束與{2}及{3}的{1}	{4}{5}结束与{2}及{3}的{1}	inner	agreement_concluded 短語 FUN_140b82a20 1696672-1696862（日期由 _events_00 處理）
+the conclusion of {%1} with {2} and {3} by {4}	{4}結束與{2}及{3}的{1}	{4}结束与{2}及{3}的{1}	inner	同上，無原因
+the conclusion of {%1} with {2} by {3} {%4}	{3}{4}結束與{2}的{1}	{3}{4}结束与{2}的{1}	inner	同上，單一方＋原因
+the conclusion of {%1} with {2} by {3}	{3}結束與{2}的{1}	{3}结束与{2}的{1}	inner	同上，單一方
 the conclusion of {%1} by {2} {%3}	{2}{3}結束{1}	{2}{3}结束{1}	inner	同上，沒有另一方＋原因
 the conclusion of {%1} by {2}	{2}結束{1}	{2}结束{1}	inner	同上
 a declaration of war was made to {1} by {2} at {3}.	{2}在{3}向{1}宣戰。	{2}在{3}向{1}宣战。	inner	topicagreement_made 完整句 FUN_140b82720 1696556-1696577：議題 0xd（宣戰）；{1} 受方、{2} 宣戰方（勢力）、{3} 據點；句號後可能接外交敘述（FUN_1402a71e0／FUN_1402a81f0，另句）

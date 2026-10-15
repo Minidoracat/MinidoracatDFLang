@@ -46,7 +46,7 @@ PACKAGE_SUFFIXES = {".txt", ".tsv", ".lua", ".dll", ".otf", ".md", ".png"}
 PLACEHOLDER = re.compile(r"\{[#@%~]?([1-9])(?:\+([^{}]+))?\}")
 MARKUP = re.compile(r"\[(?:[RBP]|C:\d+:\d+:\d+)\]")  # 段落的換行與換色標記
 # 由引擎依框寬重新換行的檔案（檔名開頭）：譯文寬度不限
-WRAPPED = ("sentences_", "ann_", "speech_", "combat_", "desc_", "health_", "_events", "zz_events", "events_")
+WRAPPED = ("sentences_", "ann_", "speech_", "combat_", "desc_", "health_", "_events", "zz_events", "events_", "legends_", "zz_legends_")
 
 results: list[tuple[bool, str]] = []
 

@@ -11,7 +11,7 @@ companion	同伴	同伴	inner	FUN_1402a9e40 L379312（hfs_formed_intrigue_relati
 ex-spouse	前配偶	前配偶	inner	FUN_1402a9e40 L379312（hfs_formed_intrigue_relationship）、FUN_1402aa700 L379636（failed_intrigue_corruption） L379381-379463 收買對象的關係（接在對象名字前；spouse／mother／father 沿用既有條目）
 neighbor	鄰居	邻居	inner	FUN_1402a9e40 L379312（hfs_formed_intrigue_relationship）、FUN_1402aa700 L379636（failed_intrigue_corruption） L379381-379463 收買對象的關係（接在對象名字前；spouse／mother／father 沿用既有條目）
 fellow believer	同為信徒的	同为信徒的	inner	FUN_1402a9e40 L379312（hfs_formed_intrigue_relationship）、FUN_1402aa700 L379636（failed_intrigue_corruption） L379381-379463 收買對象的關係（接在對象名字前；spouse／mother／father 沿用既有條目）
-fellow order member	同一軍團的	同一军团的	inner	FUN_1402a9e40 L379312（hfs_formed_intrigue_relationship）、FUN_1402aa700 L379636（failed_intrigue_corruption） L379381-379463 收買對象的關係（接在對象名字前；spouse／mother／father 沿用既有條目）
+fellow order member	同一騎士團的	同一骑士团的	inner	FUN_1402a9e40 L379312（hfs_formed_intrigue_relationship）、FUN_1402aa700 L379636（failed_intrigue_corruption） L379381-379463 收買對象的關係（接在對象名字前；spouse／mother／father 沿用既有條目）
 troupemate	同劇團的	同剧团的	inner	FUN_1402a9e40 L379312（hfs_formed_intrigue_relationship）、FUN_1402aa700 L379636（failed_intrigue_corruption） L379381-379463 收買對象的關係（接在對象名字前；spouse／mother／father 沿用既有條目）
 fellow company member	同一傭兵團的	同一佣兵团的	inner	FUN_1402a9e40 L379312（hfs_formed_intrigue_relationship）、FUN_1402aa700 L379636（failed_intrigue_corruption） L379381-379463 收買對象的關係（接在對象名字前；spouse／mother／father 沿用既有條目）
 guildmate	同公會的	同公会的	inner	FUN_1402a9e40 L379312（hfs_formed_intrigue_relationship）、FUN_1402aa700 L379636（failed_intrigue_corruption） L379381-379463 收買對象的關係（接在對象名字前；spouse／mother／father 沿用既有條目）

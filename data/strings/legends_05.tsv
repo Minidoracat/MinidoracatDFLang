@@ -1,0 +1,415 @@
+en	zh-Hant	zh-Hans	align	note
+ankylosaurid	甲龍	甲龙	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+anteater	食蟻獸	食蚁兽	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+antelope	羚羊	羚羊	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+antlion larva	蟻獅幼蟲	蚁狮幼虫	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+ape	猿	猿	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+aphid	蚜蟲	蚜虫	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+armless biped	無臂雙足生物	无臂双足生物	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+assassin bug	獵椿象	猎蝽	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+bee	蜂	蜂	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+bison	野牛	野牛	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+blob	黏團	黏团	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+bristleworm	剛毛蟲	刚毛虫	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+buffalo	水牛	水牛	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+bunting	鵐	鹀	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+butterfly	蝴蝶	蝴蝶	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+caddisfly	石蛾	石蛾	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+camel	駱駝	骆驼	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+caterpillar	毛毛蟲	毛毛虫	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+ceratopsid	角龍	角龙	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+chickadee	山雀	山雀	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+cicada	蟬	蝉	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+civet	麝香貓	灵猫	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+click beetle	叩頭蟲	叩头虫	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+cobra	眼鏡蛇	眼镜蛇	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+cockatoo	鳳頭鸚鵡	凤头鹦鹉	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+cockroach	蟑螂	蟑螂	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+condor	兀鷹	神鹫	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+crane	鶴	鹤	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+cricket	蟋蟀	蟋蟀	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+crocodile	鱷魚	鳄鱼	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+cuckoo	杜鵑	杜鹃	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+darkling beetle	擬步行蟲	拟步甲	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+decapod	十足生物	十足生物	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+dove	斑鳩	斑鸠	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+dung beetle	糞金龜	蜣螂	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+earthworm	蚯蚓	蚯蚓	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+earwig	蠼螋	蠼螋	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+falcon	隼	隼	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+fantail	扇尾鶲	扇尾鹟	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+finch	雀	雀	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+flamingo	紅鶴	火烈鸟	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+flea	跳蚤	跳蚤	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+flycatcher	鶲	鹟	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+frog	青蛙	青蛙	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+gecko	壁虎	壁虎	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+gopher	囊鼠	囊鼠	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+grebe	鸊鷉	䴙䴘	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+grouse	松雞	松鸡	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+gull	海鷗	海鸥	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+hadrosaurid	鴨嘴龍	鸭嘴龙	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+harrier	鷂	鹞	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+hawk	鷹	鹰	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+hexapod	六足生物	六足生物	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+hippopotamus	河馬	河马	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+honeyeater	吸蜜鳥	吸蜜鸟	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+hornet	虎頭蜂	胡蜂	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+humanoid	人形生物	人形生物	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+hummingbird	蜂鳥	蜂鸟	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+iguanodont	禽龍	禽龙	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+jay	松鴉	松鸦	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+kingfisher	翠鳥	翠鸟	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+kinglet	戴菊鳥	戴菊	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+kite	鳶	鸢	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+lacewing	草蛉	草蛉	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+ladybug	瓢蟲	瓢虫	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+lark	雲雀	云雀	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+lemur	狐猴	狐猴	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+lobster	龍蝦	龙虾	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+loris	懶猴	懒猴	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+lyrebird	琴鳥	琴鸟	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+maggot	蛆	蛆	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+mammoth	猛瑪象	猛犸象	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+marmot	土撥鼠	旱獭	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+martin	毛腳燕	毛脚燕	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+mayfly	蜉蝣	蜉蝣	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+mite	蟎	螨	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+mockingbird	嘲鶇	嘲鸫	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+mole	鼴鼠	鼹鼠	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+monitor	巨蜥	巨蜥	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+monkey	猴子	猴子	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+mouse	老鼠	老鼠	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+nematode	線蟲	线虫	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+newt	蠑螈	蝾螈	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+nightjar	夜鷹	夜鹰	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+nuthatch	鳾	䴓	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+octopod	八足生物	八足生物	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+otter	水獺	水獭	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+owl	貓頭鷹	猫头鹰	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+oxpecker	牛椋鳥	牛椋鸟	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+panther	黑豹	黑豹	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+parrot	鸚鵡	鹦鹉	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+pelican	鵜鶘	鹈鹕	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+petrel	海燕	海燕	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+pheasant	雉雞	雉鸡	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+pigeon	鴿子	鸽子	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+primate	靈長類	灵长类	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+pterosaur	翼龍	翼龙	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+quadruped	四足生物	四足生物	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+quail	鵪鶉	鹌鹑	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+quetzal	綠咬鵑	绿咬鹃	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+ribbon worm	紐蟲	纽虫	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+rove beetle	隱翅蟲	隐翅虫	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+salamander	山椒魚	鲵	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+sauropod	蜥腳龍	蜥脚龙	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+scarab beetle	聖甲蟲	圣甲虫	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+scorpion	蠍子	蝎子	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+scorpionfly	蠍蛉	蝎蛉	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+serpent	大蛇	大蛇	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+shrew	鼩鼱	鼩鼱	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+shrike	伯勞	伯劳	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+shrimp	蝦	虾	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+silverfish	衣魚	衣鱼	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+snake	蛇	蛇	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+snakefly	蛇蛉	蛇蛉	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+spider	蜘蛛	蜘蛛	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+squirrel	松鼠	松鼠	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+stag beetle	鍬形蟲	锹甲	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+starling	椋鳥	椋鸟	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+stegosaurid	劍龍	剑龙	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+stick insect	竹節蟲	竹节虫	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+stonefly	石蠅	石蝇	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+stork	鸛	鹳	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+swallow	燕子	燕子	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+swift	雨燕	雨燕	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+tanager	唐納雀	唐纳雀	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+tarantula	捕鳥蛛	捕鸟蛛	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+theropod	獸腳龍	兽脚龙	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+thornbill	刺嘴鶯	刺嘴莺	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+thrush	鶇	鸫	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+titmouse	冠山雀	冠山雀	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+tortoise	陸龜	陆龟	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+toucan	巨嘴鳥	巨嘴鸟	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+turtle	烏龜	乌龟	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+viper	蝰蛇	蝰蛇	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+warbler	鶯	莺	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+wasp	黃蜂	黄蜂	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+waxwing	太平鳥	太平鸟	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+weevil	象鼻蟲	象鼻虫	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+woodpecker	啄木鳥	啄木鸟	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+wyrm	巨蟲	巨虫	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+zebra	斑馬	斑马	inner	rcp.lua／creatures.lua rcp name_string：生成生物說明首句與稱呼裡的身體原型名（shared_info.lua build_description 6438–6538 6462）
+a long, hanging tail	一條長而下垂的尾巴	一条长而下垂的尾巴	inner	shared_info.lua tweaks.TAIL has_desc_func 3880–3902：It has …
+a long, straight tail	一條長而筆直的尾巴	一条长而笔直的尾巴	inner	shared_info.lua tweaks.TAIL has_desc_func 3880–3902：It has …
+a long, curly tail	一條長而捲曲的尾巴	一条长而卷曲的尾巴	inner	shared_info.lua tweaks.TAIL has_desc_func 3880–3902：It has …
+a short tail	一條短尾巴	一条短尾巴	inner	shared_info.lua tweaks.TAIL has_desc_func 3880–3902：It has …
+a stubby tail	一條粗短的尾巴	一条粗短的尾巴	inner	shared_info.lua tweaks.TAIL has_desc_func 3880–3902：It has …
+a narrow tail	一條細長的尾巴	一条细长的尾巴	inner	shared_info.lua tweaks.TAIL has_desc_func 3880–3902：It has …
+two long, hanging tails	兩條長而下垂的尾巴	两条长而下垂的尾巴	inner	shared_info.lua tweaks.TAIL has_desc_func 3880–3902：It has …
+two long, straight tails	兩條長而筆直的尾巴	两条长而笔直的尾巴	inner	shared_info.lua tweaks.TAIL has_desc_func 3880–3902：It has …
+two long, curly tails	兩條長而捲曲的尾巴	两条长而卷曲的尾巴	inner	shared_info.lua tweaks.TAIL has_desc_func 3880–3902：It has …
+two short tails	兩條短尾巴	两条短尾巴	inner	shared_info.lua tweaks.TAIL has_desc_func 3880–3902：It has …
+two stubby tails	兩條粗短的尾巴	两条粗短的尾巴	inner	shared_info.lua tweaks.TAIL has_desc_func 3880–3902：It has …
+two narrow tails	兩條細長的尾巴	两条细长的尾巴	inner	shared_info.lua tweaks.TAIL has_desc_func 3880–3902：It has …
+three long, hanging tails	三條長而下垂的尾巴	三条长而下垂的尾巴	inner	shared_info.lua tweaks.TAIL has_desc_func 3880–3902：It has …
+three long, straight tails	三條長而筆直的尾巴	三条长而笔直的尾巴	inner	shared_info.lua tweaks.TAIL has_desc_func 3880–3902：It has …
+three long, curly tails	三條長而捲曲的尾巴	三条长而卷曲的尾巴	inner	shared_info.lua tweaks.TAIL has_desc_func 3880–3902：It has …
+three short tails	三條短尾巴	三条短尾巴	inner	shared_info.lua tweaks.TAIL has_desc_func 3880–3902：It has …
+three stubby tails	三條粗短的尾巴	三条粗短的尾巴	inner	shared_info.lua tweaks.TAIL has_desc_func 3880–3902：It has …
+three narrow tails	三條細長的尾巴	三条细长的尾巴	inner	shared_info.lua tweaks.TAIL has_desc_func 3880–3902：It has …
+a long, spiral horn	一隻長而螺旋的角	一只长而螺旋的角	inner	shared_info.lua tweaks.HEAD_HORNS has_desc_func 3955–3979：It has …
+a long, curving horn	一隻長而彎曲的角	一只长而弯曲的角	inner	shared_info.lua tweaks.HEAD_HORNS has_desc_func 3955–3979：It has …
+a  long, curving horn	一隻長而彎曲的角	一只长而弯曲的角	inner	同上；原文 " long, curving" 開頭多一個空白（3968），未經段落框收空白時是雙空白
+a short horn	一隻短角	一只短角	inner	shared_info.lua tweaks.HEAD_HORNS has_desc_func 3955–3979：It has …
+a stubby horn	一隻粗短的角	一只粗短的角	inner	shared_info.lua tweaks.HEAD_HORNS has_desc_func 3955–3979：It has …
+a broad horn	一隻寬大的角	一只宽大的角	inner	shared_info.lua tweaks.HEAD_HORNS has_desc_func 3955–3979：It has …
+a long, straight horn	一隻長而筆直的角	一只长而笔直的角	inner	shared_info.lua tweaks.HEAD_HORNS has_desc_func 3955–3979：It has …
+two long, spiral horns	兩隻長而螺旋的角	两只长而螺旋的角	inner	shared_info.lua tweaks.HEAD_HORNS has_desc_func 3955–3979：It has …
+two long, curving horns	兩隻長而彎曲的角	两只长而弯曲的角	inner	shared_info.lua tweaks.HEAD_HORNS has_desc_func 3955–3979：It has …
+two  long, curving horns	兩隻長而彎曲的角	两只长而弯曲的角	inner	同上；原文 " long, curving" 開頭多一個空白（3968），未經段落框收空白時是雙空白
+two short horns	兩隻短角	两只短角	inner	shared_info.lua tweaks.HEAD_HORNS has_desc_func 3955–3979：It has …
+two stubby horns	兩隻粗短的角	两只粗短的角	inner	shared_info.lua tweaks.HEAD_HORNS has_desc_func 3955–3979：It has …
+two broad horns	兩隻寬大的角	两只宽大的角	inner	shared_info.lua tweaks.HEAD_HORNS has_desc_func 3955–3979：It has …
+two long, straight horns	兩隻長而筆直的角	两只长而笔直的角	inner	shared_info.lua tweaks.HEAD_HORNS has_desc_func 3955–3979：It has …
+three long, spiral horns	三隻長而螺旋的角	三只长而螺旋的角	inner	shared_info.lua tweaks.HEAD_HORNS has_desc_func 3955–3979：It has …
+three long, curving horns	三隻長而彎曲的角	三只长而弯曲的角	inner	shared_info.lua tweaks.HEAD_HORNS has_desc_func 3955–3979：It has …
+three  long, curving horns	三隻長而彎曲的角	三只长而弯曲的角	inner	同上；原文 " long, curving" 開頭多一個空白（3968），未經段落框收空白時是雙空白
+three short horns	三隻短角	三只短角	inner	shared_info.lua tweaks.HEAD_HORNS has_desc_func 3955–3979：It has …
+three stubby horns	三隻粗短的角	三只粗短的角	inner	shared_info.lua tweaks.HEAD_HORNS has_desc_func 3955–3979：It has …
+three broad horns	三隻寬大的角	三只宽大的角	inner	shared_info.lua tweaks.HEAD_HORNS has_desc_func 3955–3979：It has …
+three long, straight horns	三隻長而筆直的角	三只长而笔直的角	inner	shared_info.lua tweaks.HEAD_HORNS has_desc_func 3955–3979：It has …
+four long, spiral horns	四隻長而螺旋的角	四只长而螺旋的角	inner	shared_info.lua tweaks.HEAD_HORNS has_desc_func 3955–3979：It has …
+four long, curving horns	四隻長而彎曲的角	四只长而弯曲的角	inner	shared_info.lua tweaks.HEAD_HORNS has_desc_func 3955–3979：It has …
+four  long, curving horns	四隻長而彎曲的角	四只长而弯曲的角	inner	同上；原文 " long, curving" 開頭多一個空白（3968），未經段落框收空白時是雙空白
+four short horns	四隻短角	四只短角	inner	shared_info.lua tweaks.HEAD_HORNS has_desc_func 3955–3979：It has …
+four stubby horns	四隻粗短的角	四只粗短的角	inner	shared_info.lua tweaks.HEAD_HORNS has_desc_func 3955–3979：It has …
+four broad horns	四隻寬大的角	四只宽大的角	inner	shared_info.lua tweaks.HEAD_HORNS has_desc_func 3955–3979：It has …
+four long, straight horns	四隻長而筆直的角	四只长而笔直的角	inner	shared_info.lua tweaks.HEAD_HORNS has_desc_func 3955–3979：It has …
+thin wings of stretched skin	一對皮膜薄翼	一对皮膜薄翼	inner	shared_info.lua tweaks.HAIR／SCALES／SKIN add_wings 4065：It has …
+feathered wings	一對羽翼	一对羽翼	inner	shared_info.lua tweaks.FEATHERS add_wings 4100：It has …
+a proboscis	一根長吻	一根长吻	inner	shared_info.lua tweaks.PROBOSCIS 3907：It has …
+a long, swinging trunk	一條長而擺盪的象鼻	一条长而摆荡的象鼻	inner	shared_info.lua tweaks.TRUNK 3913：It has …
+a short trunk	一條短象鼻	一条短象鼻	inner	shared_info.lua tweaks.TRUNK 3914：It has …
+a fat, bulging trunk	一條肥厚鼓脹的象鼻	一条肥厚鼓胀的象鼻	inner	shared_info.lua tweaks.TRUNK 3915：It has …
+a twisting, jointed trunk	一條扭曲多節的象鼻	一条扭曲多节的象鼻	inner	shared_info.lua tweaks.TRUNK 3916：It has …
+a curling trunk	一條捲曲的象鼻	一条卷曲的象鼻	inner	shared_info.lua tweaks.TRUNK 3917：It has …
+a knobby trunk	一條多瘤的象鼻	一条多瘤的象鼻	inner	shared_info.lua tweaks.TRUNK 3918：It has …
+a round shell	圓形的外殼	圆形的外壳	inner	shared_info.lua tweaks.SHELL 3927：It has …
+a spiral shell	螺旋狀的外殼	螺旋状的外壳	inner	shared_info.lua tweaks.SHELL 3928：It has …
+a square shell	方形的外殼	方形的外壳	inner	shared_info.lua tweaks.SHELL 3929：It has …
+a knobby shell	多瘤的外殼	多瘤的外壳	inner	shared_info.lua tweaks.SHELL 3930：It has …
+an enormous shell	巨大的外殼	巨大的外壳	inner	shared_info.lua tweaks.SHELL 3931：It has …
+a broad shell	寬大的外殼	宽大的外壳	inner	shared_info.lua tweaks.SHELL 3932：It has …
+a pair of long antennae	一對長觸角	一对长触角	inner	shared_info.lua tweaks.ANTENNAE 3940：It has …
+a pair of fan-like antennae	一對扇狀觸角	一对扇状触角	inner	shared_info.lua tweaks.ANTENNAE 3941：It has …
+a pair of spindly antennae	一對細長的觸角	一对细长的触角	inner	shared_info.lua tweaks.ANTENNAE 3942：It has …
+a pair of squat antennae	一對粗短的觸角	一对粗短的触角	inner	shared_info.lua tweaks.ANTENNAE 3943：It has …
+a pair of branching antennae	一對分岔的觸角	一对分岔的触角	inner	shared_info.lua tweaks.ANTENNAE 3944：It has …
+a pair of knobby antennae	一對多瘤的觸角	一对多瘤的触角	inner	shared_info.lua tweaks.ANTENNAE 3945：It has …
+large mandibles	巨大的大顎	巨大的上颚	inner	shared_info.lua tweaks.LARGE_MANDIBLES 3985：It has …
+has a regal bearing	帶著王者般的威儀	带着王者般的威仪	inner	shared_info.lua default_desc_adds 5302；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+has an austere look about it	神情嚴峻	神情严峻	inner	shared_info.lua default_desc_adds 5310；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+moves deliberately	行動從容不迫	行动从容不迫	inner	shared_info.lua default_desc_adds 5318；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+moves about carelessly	行動漫不經心	行动漫不经心	inner	shared_info.lua default_desc_adds 5326；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+bears a look of unbelievable peace	神情無比安詳	神情无比安详	inner	shared_info.lua good_desc_adds 5338；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+emanates an aura of giving and kindness	散發著慷慨與仁慈的氣息	散发着慷慨与仁慈的气息	inner	shared_info.lua good_desc_adds 5350；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+joy marks its every movement	一舉一動都洋溢著喜悅	一举一动都洋溢着喜悦	inner	shared_info.lua good_desc_adds 5359；接在 It has … and 後面
+moves its will in accordance with the truth of things	依循萬物的真理行事	依循万物的真理行事	inner	shared_info.lua good_desc_adds 5367；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+is ravening	四處貪婪地搜尋獵物	四处贪婪地搜索猎物	inner	shared_info.lua evil_desc_adds 5379；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+is slavering	口水直流	口水直流	inner	shared_info.lua evil_desc_adds 5380；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+belches and croaks	不時打嗝，發出嘶啞的叫聲	不时打嗝，发出嘶哑的叫声	inner	shared_info.lua evil_desc_adds 5381；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+undulates rhythmically	有節奏地起伏蠕動	有节奏地起伏蠕动	inner	shared_info.lua evil_desc_adds 5389；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+squirms and fidgets	不停扭動，躁動不安	不停扭动，躁动不安	inner	shared_info.lua evil_desc_adds 5395；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+has a bloated body	身體腫脹	身体肿胀	inner	shared_info.lua evil_desc_adds 5402；creatures.lua night_troll_strength_flavor 593；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+has a gaunt appearance	外表憔悴枯瘦	外表憔悴枯瘦	inner	shared_info.lua evil_desc_adds 5409；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+appears to be emaciated	看起來骨瘦如柴	看起来骨瘦如柴	inner	shared_info.lua evil_desc_adds 5410；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+chants ceaselessly	不停地吟誦	不停地吟诵	inner	shared_info.lua evil_desc_adds 5420；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+murmurs horrible curses	低聲念著可怕的詛咒	低声念着可怕的诅咒	inner	shared_info.lua evil_desc_adds 5421；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+spouts gibberish periodically	不時胡言亂語	不时胡言乱语	inner	shared_info.lua evil_desc_adds 5422；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+knows and intones the names of all it encounters	知曉並吟誦所遇一切的名字	知晓并吟诵所遇一切的名字	inner	shared_info.lua evil_desc_adds 5423；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+repeatedly makes threats of torture and death	一再以酷刑和死亡相威脅	一再以酷刑和死亡相威胁	inner	shared_info.lua evil_desc_adds 5425（TORTURE 領域）；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+mutters to itself as it moves aimlessly	漫無目的地遊蕩，嘴裡喃喃自語	漫无目的地游荡，嘴里喃喃自语	inner	creatures.lua night_troll_flavor 571；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+groans from time to time	不時發出呻吟	不时发出呻吟	inner	creatures.lua night_troll_flavor 575；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+howls into high winds	對著狂風嚎叫	对着狂风嚎叫	inner	creatures.lua night_troll_flavor 579；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+shambles sluggishly	步履蹣跚，行動遲緩	步履蹒跚，行动迟缓	inner	creatures.lua night_troll_strength_flavor 585；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+stamps the ground and snorts	跺著地面、噴著鼻息	跺着地面、喷着鼻息	inner	creatures.lua night_troll_strength_flavor 589；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+lumbers along steadily from place to place	笨重而穩健地四處走動	笨重而稳健地四处走动	inner	creatures.lua night_troll_strength_flavor 597；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+its joints are backward	關節反折	关节反折	inner	creatures.lua night_troll_agile_flavor 603；接在 It has … and 後面
+moves with uneven jerking motions	動作抽搐而不協調	动作抽搐而不协调	inner	creatures.lua night_troll_agile_flavor 607；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+its limbs jut out at asymmetric angles	四肢以不對稱的角度戳出	四肢以不对称的角度戳出	inner	creatures.lua night_troll_agile_flavor 611；接在 It has … and 後面
+lopes quickly along the ground	在地面上大步疾行	在地面上大步疾行	inner	creatures.lua night_troll_agile_flavor 615；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+strides in silence with purpose	默默大步前行，目標明確	默默大步前行，目标明确	inner	creatures.lua night_troll_agile_flavor 619；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+hurls vicious insults constantly	不斷惡毒地辱罵	不断恶毒地辱骂	inner	creatures.lua 夜魔 bogeyman custom_desc_func 948；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+with singular purpose it seeks to destroy the living	一心只想毀滅生靈	一心只想毁灭生灵	inner	creatures.lua 夢魘 nightmare custom_desc_func 1036；接在 It has … and 後面
+is crazed for blood and flesh	瘋狂渴求血肉	疯狂渴求血肉	inner	creatures.lua 狼人類 werebeast custom_desc_func 1244；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+is a divine being	是神聖的存在	是神圣的存在	inner	creatures.lua 天使 custom_desc_func 2142（沒有對應領域時）；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+looks constantly to the sky for rain	總是仰望天空盼著下雨	总是仰望天空盼着下雨	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） AGRICULTURE；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+growls, buzzes, clicks and generally makes a varied racket	會低吼、嗡鳴、喀喀作響，總之吵鬧不休	会低吼、嗡鸣、咔咔作响，总之吵闹不休	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） ANIMALS；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+is decorated with intricate patterns	身上裝飾著繁複的花紋	身上装饰着繁复的花纹	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） ART；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+is perfectly symmetric	完美對稱	完美对称	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） BALANCE；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+is strikingly beautiful	美得驚人	美得惊人	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） BEAUTY；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+is covered with a filmy sac	包覆著一層薄膜囊	包覆着一层薄膜囊	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） BIRTH；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+nearby vegetation seem to shrink away from it	附近的草木似乎都在躲避牠	附近的草木似乎都在躲避它	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） BLIGHT（原文 seem）；接在 It has … and 後面
+the pieces of its body are carefully separated by markings	身體各部分以紋路仔細區隔	身体各部分以纹路仔细区隔	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） BOUNDARIES；接在 It has … and 後面
+its moans seem to echo no matter where it resides	無論身在何處，呻吟聲似乎都會迴盪	无论身在何处，呻吟声似乎都会回荡	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） CAVERNS；接在 It has … and 後面
+spins wildly, lurching and howling	瘋狂旋轉，踉蹌嚎叫	疯狂旋转，踉跄嚎叫	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） CHAOS；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+seems very pleasant	看起來十分和善	看起来十分和善	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） CHARITY；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+never misses an opportunity to jump in puddles	從不錯過任何跳水坑的機會	从不错过任何踩水坑的机会	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） CHILDREN；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+appears to be covered with rocky crags	看起來覆滿嶙峋的岩石	看起来覆满嶙峋的岩石	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） COASTS；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+radiates a sad kindness	散發著帶有哀傷的溫柔	散发着带有哀伤的温柔	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） CONSOLATION；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+makes those around it feel brave	讓周遭的人感到勇氣倍增	让周围的人感到勇气倍增	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） COURAGE；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+appears constructed	看起來像是人工打造的	看起来像是人工打造的	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） CRAFTS；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+small objects seem to pop into existence around it	周圍似乎會憑空冒出小東西	周围似乎会凭空冒出小东西	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） CREATION；接在 It has … and 後面；術語例外：object
+whirls, skips and jumps whenever it moves	一移動就旋轉、蹦跳	一移动就旋转、蹦跳	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） DANCE；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+is difficult to see clearly even in bright light	即使在明亮的光線下也難以看清	即使在明亮的光线下也难以看清	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） DARKNESS；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+always turns to welcome the rise of the sun	總會轉身迎接日出	总会转身迎接日出	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） DAWN；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+hums pleasantly when the sun is high in the sky	在太陽高掛時會愉快地哼唱	在太阳高挂时会愉快地哼唱	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） DAY；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+has a rattling exhale	呼氣時喉中咯咯作響	呼气时喉中咯咯作响	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） DEATH；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+its body is bent and misshapen	身體彎曲畸形	身体弯曲畸形	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） DEFORMITY；接在 It has … and 後面
+slavers uncontrollably	口水流個不停	口水流个不停	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） DEPRAVITY；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+moves with great focus	行動極為專注	行动极为专注	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） DISCIPLINE；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用；術語例外：Great
+bears malodorous pustules	身上長著惡臭的膿皰	身上长着恶臭的脓疱	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） DISEASE；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+the details of its form are easily forgotten without deliberate concentration	若不刻意集中精神，很快就會忘記牠的模樣	若不刻意集中精神，很快就会忘记它的模样	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） DREAMS；接在 It has … and 後面
+never looks toward the sun	從不望向太陽	从不望向太阳	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） DUSK；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+is utterly still when not taking deliberate action	不刻意行動時便紋風不動	不刻意行动时便纹丝不动	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） DUTY；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+looks very solid and stocky	看起來十分結實粗壯	看起来十分结实粗壮	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） EARTH；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+appears to be closely related to every other of its kind	似乎與每個同類都血緣相近	似乎与每个同类都血缘相近	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） FAMILY；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+fanfare follows it wherever it goes	所到之處總伴隨著號角齊鳴	所到之处总伴随着号角齐鸣	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） FAME；接在 It has … and 後面
+never appears to be perturbed or surprised by any happening	無論發生什麼事，從不顯得慌亂或驚訝	无论发生什么事，从不显得慌乱或惊讶	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） FATE；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+appears to be very healthy	看起來非常健康	看起来非常健康	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） FERTILITY；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+skips and twirls as it moves	移動時又蹦又轉	移动时又蹦又转	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） FESTIVALS；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+a sheen around it always seems to rise upward	周身的光暈似乎總是向上升騰	周身的光晕似乎总是向上升腾	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） FIRE；接在 It has … and 後面
+only looks comfortable when it is in the water	只有在水中才顯得自在	只有在水中才显得自在	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） FISH；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+always moves carefully around water	在水邊總是小心翼翼	在水边总是小心翼翼	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） FISHING；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+has the delicious smell of freshly-baked goods	散發著剛出爐的烘焙香氣	散发着刚出炉的烘焙香气	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） FOOD；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+is impossible to hold a grudge near it	在牠身邊無法記恨	在它身边无法记恨	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） FORGIVENESS；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+is very sturdy-looking	看起來非常堅固	看起来非常坚固	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） FORTRESSES；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+eagerly moves from place to place	熱切地四處遊走	热切地四处游走	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） FREEDOM；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+changes between two colors intermittently	會在兩種顏色之間來回變換	会在两种颜色之间来回变换	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） GAMBLING；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+giggles at random	時不時咯咯傻笑	时不时咯咯傻笑	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） GAMES；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+makes those around it want to give up their possessions	讓周遭的人想捨棄自己的財物	让周围的人想舍弃自己的财物	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） GENEROSITY；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+seems to smile constantly	似乎總是面帶微笑	似乎总是面带微笑	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） HAPPINESS；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+is surrounded by a gentle atmosphere	周身籠罩著溫和的氣息	周身笼罩着温和的气息	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） HEALING；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+radiates an aura of welcoming	散發著殷勤待客的氣息	散发着殷勤待客的气息	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） HOSPITALITY；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+inspects the ground intently as it moves	移動時專注地察看地面	移动时专注地察看地面	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） HUNTING；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+flashes of energy pulse across its surface intermittently	表面不時閃過陣陣能量	表面不时闪过阵阵能量	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） INSPIRATION；接在 It has … and 後面
+appears to be a very bitter creature	看起來是個滿懷怨懟的生物	看起来是个满怀怨怼的生物	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） JEALOUSY；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+its whole body appears to be faceted in a symmetric fashion	全身看起來像對稱切割的寶石刻面	全身看起来像对称切割的宝石刻面	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） JEWELS；接在 It has … and 後面
+seems eager to pronounce judgment on others	似乎急於對他人下判決	似乎急于对他人下判决	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） JUSTICE；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+appears very deliberate in its actions	一舉一動都顯得深思熟慮	一举一动都显得深思熟虑	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） LABOR；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+moves ponderously	行動笨重遲緩	行动笨重迟缓	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） LAKES；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+has a very stark look about it	神情極為冷峻	神情极为冷峻	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） LAWS；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+seems unerringly honest if one does not concentrate	若不集中精神，會覺得牠誠實無欺	若不集中精神，会觉得它诚实无欺	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） LIES；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+returns surrounding light with a new vibrance and intensity	映回周遭光線時更添鮮明與強烈	映回周围光线时更添鲜明与强烈	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） LIGHT；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+crackles with energy	全身劈啪作響，充滿能量	全身噼啪作响，充满能量	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） LIGHTNING；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+always seems to be looking far into the distance	似乎總在凝望遠方	似乎总在凝望远方	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） LONGEVITY；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+stares longingly at those nearby	渴慕地凝視著身旁的人	渴慕地凝视着身旁的人	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） LOVE；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+never abandons its companions	從不拋棄同伴	从不抛弃同伴	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） LOYALTY；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+changes direction suddenly at times	有時會突然改變方向	有时会突然改变方向	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） LUCK；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+has an unnerving stare	目光令人不安	目光令人不安	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） LUST；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+heckles those it meets that are not married	會嘲弄遇到的未婚者	会嘲弄遇到的未婚者	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） MARRIAGE；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+always seems like it is on the verge of crying	總是一副快要哭出來的樣子	总是一副快要哭出来的样子	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） MERCY；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+appears to have sharp shimmering edges on many parts of its body	身上許多部位似乎有閃著微光的銳利邊緣	身上许多部位似乎有闪着微光的锐利边缘	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） METALS；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+has an angular appearance	外形稜角分明	外形棱角分明	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） MINERALS；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+has a distinctly depressing moan	呻吟聲格外令人沮喪	呻吟声格外令人沮丧	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） MISERY；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+is difficult to see clearly	難以看清	难以看清	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） MIST；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+changes color with the phases of the moon	顏色隨月相變化	颜色随月相变化	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） MOON；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+is very solidly built	體格非常結實	体格非常结实	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） MOUNTAINS；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+there is a foul reek about it	身上有一股惡臭	身上有一股恶臭	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） MUCK；接在 It has … and 後面
+cannot abide anything that lives	容不下任何活物	容不下任何活物	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） MURDER；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+sounds clear tones as its body moves in time	身體隨節拍擺動，發出清亮的音調	身体随节拍摆动，发出清亮的音调	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） MUSIC；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+seems most at ease when it is outdoors	在戶外似乎最自在	在户外似乎最自在	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） NATURE；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+eerily reflects the light of the stars and moon	詭異地映著星月之光	诡异地映着星月之光	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） NIGHT；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+reminds those that look upon it of their most unpleasant memories	讓看見牠的人想起最不愉快的記憶	让看见它的人想起最不愉快的记忆	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） NIGHTMARES；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+cannot look directly at somebody that has broken an oath	無法直視背棄誓言的人	无法直视背弃誓言的人	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） OATHS；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+always raises a part of its body toward the moon	總會把身體的一部分舉向月亮	总会把身体的一部分举向月亮	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） OCEANS；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+moves very stiffly	動作非常僵硬	动作非常僵硬	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） ORDER；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+its surface is always enlivened with a refreshing play of color	表面總有清新的色彩流轉，生氣盎然	表面总有清新的色彩流转，生气盎然	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） PAINTING；接在 It has … and 後面
+rocks back and forth whenever somebody changes their mind in its presence	每當有人在牠面前改變主意，就會前後搖晃	每当有人在它面前改变主意，就会前后摇晃	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） PERSUASION；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+always seems to point toward the sun when it is in the sky	太陽在天上時，似乎總是朝著太陽	太阳在天上时，似乎总是朝着太阳	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） PLANTS；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+recites verses in a strange language on occasion	偶爾會用陌生的語言吟詩	偶尔会用陌生的语言吟诗	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） POETRY；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+appears to be expecting	看起來懷有身孕	看起来怀有身孕	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） PREGNANCY；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+leaves water wherever it goes	所到之處都留下水跡	所到之处都留下水迹	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） RAIN；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+is strikingly colored	色彩鮮豔奪目	色彩鲜艳夺目	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） RAINBOWS；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+alternates from instant to instant between sluggishness and extreme vibrancy	時而遲滯、時而極其活躍，瞬息萬變	时而迟滞、时而极其活跃，瞬息万变	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） REBIRTH；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+moves with a bouncing rhythm	行動帶著輕快跳躍的節奏	行动带着轻快跳跃的节奏	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） REVELRY；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+has a fixed and unblinking gaze when interacting	與人往來時目不轉睛地盯著對方	与人打交道时目不转睛地盯着对方	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） REVENGE；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+its outer surface seems to flow about its body	體表似乎在全身上下流動	体表似乎在全身上下流动	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） RIVERS；接在 It has … and 後面
+is hard to disobey	令人難以違抗	令人难以违抗	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） RULERSHIP；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+always nods eagerly when somebody is speaking	有人說話時總是熱切地點頭	有人说话时总是热切地点头	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） RUMORS；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+inspires those around it to acts of great sacrifice	激勵周遭的人做出重大犧牲	激励周围的人做出重大牺牲	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） SACRIFICE；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用；術語例外：Great
+makes nearby water undrinkable	讓附近的水無法飲用	让附近的水无法饮用	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） SALT；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+always seems to be deep in thought	似乎總在沉思	似乎总在沉思	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） SCHOLARSHIP；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+its form is ever-changing	形體變化不定	形体变化不定	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） SEASONS；接在 It has … and 後面
+makes absolutely no sound	完全不發出任何聲音	完全不发出任何声音	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） SILENCE；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+has a slowly shifting pattern on its surface	表面有緩緩變換的花紋	表面有缓缓变换的花纹	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） SKY；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+sings beautiful songs endlessly	不停地唱著優美的歌	不停地唱着优美的歌	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） SONG；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+pays attention carefully to anybody that is speaking	仔細聆聽任何說話的人	仔细聆听任何说话的人	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） SPEECH；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+appears to sparkle after night falls	入夜後似乎閃閃發光	入夜后似乎闪闪发光	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） STARS；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+its movement is the sound of wind and rain	行動時發出風雨之聲	行动时发出风雨之声	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） STORMS；接在 It has … and 後面
+looks solidly built	看起來體格結實	看起来体格结实	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） STRENGTH；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+mutters to itself about death	喃喃自語地念著死亡	喃喃自语地念着死亡	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） SUICIDE；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+is difficult to look at directly	令人難以直視	令人难以直视	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） SUN；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+always seems to have its attention on the most valuable object in the area	注意力似乎總放在附近最值錢的東西上	注意力似乎总放在附近最值钱的东西上	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） THEFT；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用；術語例外：object
+its movements sound like the rattling of chains	行動時發出鎖鏈般的嘩啦聲	行动时发出锁链般的哗啦声	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） THRALLDOM；接在 It has … and 後面
+is incredibly noisy	吵鬧得驚人	吵闹得惊人	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） THUNDER；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+appears to be covered with sharp hooks and barbs	看起來布滿鋒利的鉤子與倒刺	看起来布满锋利的钩子和倒刺	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） TORTURE；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+seems most content when a fair wind is blowing	順風吹拂時似乎最為滿足	顺风吹拂时似乎最为满足	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） TRADE；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+never stops moving completely	從不完全停下腳步	从不完全停下脚步	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） TRAVELERS；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+is unsettling to be around	讓身邊的人感到不安	让身边的人感到不安	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） TREACHERY；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+is top-heavy	頭重腳輕	头重脚轻	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） TREES；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+has a tendency to laugh quietly to itself every so often	不時會獨自竊笑	不时会独自窃笑	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） TRICKERY；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+tenses up throughout its entire body whenever somebody tells a falsehood in its presence	每當有人在牠面前說謊，全身就會繃緊	每当有人在它面前说谎，全身就会绷紧	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） TRUTH；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+chitters briefly before sunrise and just after nightfall	日出前與入夜後會短暫地吱吱叫	日出前和入夜后会短暂地吱吱叫	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） TWILIGHT；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+always tries to embolden any fighting in its presence with exhortations of bravery, even its foes	總會高聲激勵在場的每個戰鬥者鼓起勇氣，連敵人也不例外	总会高声激励在场的每个战斗者鼓起勇气，连敌人也不例外	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） VALOR；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+looks very proud of itself	看起來非常自豪	看起来非常自豪	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） VICTORY；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+seems to glow brightly from within	似乎從體內發出明亮的光芒	似乎从体内发出明亮的光芒	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） VOLCANOS；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+bellows and cheers without pause	不停地咆哮歡呼	不停地咆哮欢呼	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） WAR；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+seems to flow as it moves	移動時宛如流水	移动时宛如流水	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） WATER；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+always seems to be counting something	似乎總在數著什麼	似乎总在数着什么	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） WEALTH；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+changes appearance based on the clouds and precipitation above	外觀隨天上的雲與雨雪而變化	外观随天上的云和雨雪而变化	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） WEATHER；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+is surrounded by an everpresent rush of wind	周身始終颳著疾風	周身始终刮着疾风	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） WIND；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+acts with unwavering calm	行事沉著，從不動搖	行事沉着，从不动摇	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） WISDOM；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+is covered with divine writing	全身寫滿神聖的文字	全身写满神圣的文字	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） WRITING；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+appears spry and vigorous	看起來輕快而有活力	看起来轻快而有活力	inner	creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） YOUTH；去掉開頭 it，給 It has … and it {2}. 與 It {1}. 用
+Joy marks its every movement.	一舉一動都洋溢著喜悅。	一举一动都洋溢着喜悦。		shared_info.lua good_desc_adds 5359；沒有 It has 時首字大寫成一句（shared_info.lua build_description 6438–6538 6508）
+Its joints are backward.	關節反折。	关节反折。		creatures.lua night_troll_agile_flavor 603；沒有 It has 時首字大寫成一句（shared_info.lua build_description 6438–6538 6508）
+Its limbs jut out at asymmetric angles.	四肢以不對稱的角度戳出。	四肢以不对称的角度戳出。		creatures.lua night_troll_agile_flavor 611；沒有 It has 時首字大寫成一句（shared_info.lua build_description 6438–6538 6508）
+With singular purpose it seeks to destroy the living.	一心只想毀滅生靈。	一心只想毁灭生灵。		creatures.lua 夢魘 nightmare custom_desc_func 1036；沒有 It has 時首字大寫成一句（shared_info.lua build_description 6438–6538 6508）
+Nearby vegetation seem to shrink away from it.	附近的草木似乎都在躲避牠。	附近的草木似乎都在躲避它。		creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） BLIGHT（原文 seem）；沒有 It has 時首字大寫成一句（shared_info.lua build_description 6438–6538 6508）
+The pieces of its body are carefully separated by markings.	身體各部分以紋路仔細區隔。	身体各部分以纹路仔细区隔。		creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） BOUNDARIES；沒有 It has 時首字大寫成一句（shared_info.lua build_description 6438–6538 6508）
+Its moans seem to echo no matter where it resides.	無論身在何處，呻吟聲似乎都會迴盪。	无论身在何处，呻吟声似乎都会回荡。		creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） CAVERNS；沒有 It has 時首字大寫成一句（shared_info.lua build_description 6438–6538 6508）
+Small objects seem to pop into existence around it.	周圍似乎會憑空冒出小東西。	周围似乎会凭空冒出小东西。		creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） CREATION；沒有 It has 時首字大寫成一句（shared_info.lua build_description 6438–6538 6508）；術語例外：object
+Its body is bent and misshapen.	身體彎曲畸形。	身体弯曲畸形。		creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） DEFORMITY；沒有 It has 時首字大寫成一句（shared_info.lua build_description 6438–6538 6508）
+The details of its form are easily forgotten without deliberate concentration.	若不刻意集中精神，很快就會忘記牠的模樣。	若不刻意集中精神，很快就会忘记它的模样。		creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） DREAMS；沒有 It has 時首字大寫成一句（shared_info.lua build_description 6438–6538 6508）
+Fanfare follows it wherever it goes.	所到之處總伴隨著號角齊鳴。	所到之处总伴随着号角齐鸣。		creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） FAME；沒有 It has 時首字大寫成一句（shared_info.lua build_description 6438–6538 6508）
+A sheen around it always seems to rise upward.	周身的光暈似乎總是向上升騰。	周身的光晕似乎总是向上升腾。		creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） FIRE；沒有 It has 時首字大寫成一句（shared_info.lua build_description 6438–6538 6508）
+Flashes of energy pulse across its surface intermittently.	表面不時閃過陣陣能量。	表面不时闪过阵阵能量。		creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） INSPIRATION；沒有 It has 時首字大寫成一句（shared_info.lua build_description 6438–6538 6508）
+Its whole body appears to be faceted in a symmetric fashion.	全身看起來像對稱切割的寶石刻面。	全身看起来像对称切割的宝石刻面。		creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） JEWELS；沒有 It has 時首字大寫成一句（shared_info.lua build_description 6438–6538 6508）
+There is a foul reek about it.	身上有一股惡臭。	身上有一股恶臭。		creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） MUCK；沒有 It has 時首字大寫成一句（shared_info.lua build_description 6438–6538 6508）
+Its surface is always enlivened with a refreshing play of color.	表面總有清新的色彩流轉，生氣盎然。	表面总有清新的色彩流转，生气盎然。		creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） PAINTING；沒有 It has 時首字大寫成一句（shared_info.lua build_description 6438–6538 6508）
+Its outer surface seems to flow about its body.	體表似乎在全身上下流動。	体表似乎在全身上下流动。		creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） RIVERS；沒有 It has 時首字大寫成一句（shared_info.lua build_description 6438–6538 6508）
+Its form is ever-changing.	形體變化不定。	形体变化不定。		creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） SEASONS；沒有 It has 時首字大寫成一句（shared_info.lua build_description 6438–6538 6508）
+Its movement is the sound of wind and rain.	行動時發出風雨之聲。	行动时发出风雨之声。		creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） STORMS；沒有 It has 時首字大寫成一句（shared_info.lua build_description 6438–6538 6508）
+Its movements sound like the rattling of chains.	行動時發出鎖鏈般的嘩啦聲。	行动时发出锁链般的哗啦声。		creatures.lua sphere_flavor 1796–1927（天使 custom_desc_func 2138／2211／2277） THRALLDOM；沒有 It has 時首字大寫成一句（shared_info.lua build_description 6438–6538 6508）
+Now you will know why you fear the night.	如今你終將明白，自己為何畏懼黑夜。	如今你终将明白，自己为何畏惧黑夜。		creatures.lua night_creature_universals 523：夜行生物說明的結尾句
+Beware its poisonous sting!	小心牠的毒刺！	小心它的毒刺！		shared_info.lua attack_tweaks TAIL_STINGER／INSECT_STINGER 5102／5113
+Beware its fire!	小心牠的火焰！	小心它的火焰！		shared_info.lua attack_tweaks FIRE 5150
+Beware its webs!	小心牠的蛛網！	小心它的蛛网！		shared_info.lua attack_tweaks WEBS 5157
+Beware its poisonous vapors!	小心牠的毒霧！	小心它的毒雾！		shared_info.lua attack_tweaks BREATHE_TRAILING_FLOW／BREATHE_UNDIRECTED 5180／5227
+Beware its poisonous gas!	小心牠的毒氣！	小心它的毒气！		shared_info.lua attack_tweaks 5181／5228
+Beware its deadly dust!	小心牠的致命粉塵！	小心它的致命粉尘！		shared_info.lua attack_tweaks 5182／5229
+Beware its deadly spittle!	小心牠的致命唾液！	小心它的致命唾液！		shared_info.lua attack_tweaks BREATHE_GLOB 5204
+Beware its noxious secretions!	小心牠的有毒分泌物！	小心它的有毒分泌物！		shared_info.lua attack_tweaks SECRETION 5244
+Beware its deadly blood!	小心牠的致命血液！	小心它的致命血液！		shared_info.lua attack_tweaks POISON_BLOOD 5266
+Beware its poisonous bite!	小心牠的毒牙！	小心它的毒牙！		shared_info.lua attack_tweaks POISON_BITE 5280
+Beware its hunger for warm blood!	小心牠對溫熱鮮血的渴求！	小心它对温热鲜血的渴求！		shared_info.lua attack_tweaks PROBOSCIS_BLOOD 5291
+through the fiend's terrifying power	以那惡魔可怖的力量	以那恶魔可怖的力量	inner	creatures.lua experiment_description 1315–1378 1339
+through the fiend's twisted power	以那惡魔扭曲的力量	以那恶魔扭曲的力量	inner	creatures.lua experiment_description 1315–1378 1341
+through the fiend's chaotic power	以那惡魔混沌的力量	以那恶魔混沌的力量	inner	creatures.lua experiment_description 1315–1378 1343
+after horrible experiments	進行恐怖實驗後	进行恐怖实验后	inner	creatures.lua experiment_description 1315–1378 1345
+after horrible experiments gone wrong	於恐怖實驗出錯後	于恐怖实验出错后	inner	creatures.lua experiment_description 1315–1378 1345–1347
+multitudes	眾多生靈	众多生灵	inner	creatures.lua experiment_description 1315–1378 1354 amalgam_experiment
+the an unknown creature	某種不明生物	某种不明生物	inner	creatures.lua experiment_description 1315–1378 1356+1366（遊戲先加 the 再加 an unknown creature）
+It was created by an unknown deity.	由一位不知名的神祇所造。	由一位不知名的神祇所造。		creatures.lua angel_description 1929–1961 1943：沒有領域

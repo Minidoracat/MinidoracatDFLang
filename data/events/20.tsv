@@ -1,4 +1,19 @@
 en	zh-Hant	zh-Hans	align	note
+The artwork relates to the foundation of {1} by {2} of {3} for {4} in {#5} during {6}.	這件藝術品與{5}年{3}的{2}在{6}期間為{4}建立{1}有關。	这件艺术品与{5}年{3}的{2}在{6}期间为{4}建立{1}有关。		FUN_141451b10 2743029-2743069 藝術品事件句＋ during 事件集合（sentences_artimage_01 的 The artwork relates to {%1} during {2}. 會譯成「Z期間的3年…」）：created_site 短語（05.tsv）把 during 放進「在Z期間」
+The artwork relates to the foundation of {1} by {2} of {3} for {4} in the {@5} of {#6} during {7}.	這件藝術品與{6}年{5}{3}的{2}在{7}期間為{4}建立{1}有關。	这件艺术品与{6}年{5}{3}的{2}在{7}期间为{4}建立{1}有关。		FUN_141451b10 2743029-2743069 藝術品事件句＋ during 事件集合（sentences_artimage_01 的 The artwork relates to {%1} during {2}. 會譯成「Z期間的3年…」）：created_site 短語（05.tsv）把 during 放進「在Z期間」
+The artwork relates to the foundation of {1} by {2} of {3} for {4} in a time before time during {5}.	這件藝術品與太古之時{3}的{2}在{5}期間為{4}建立{1}有關。	这件艺术品与太古之时{3}的{2}在{5}期间为{4}建立{1}有关。		FUN_141451b10 2743029-2743069 藝術品事件句＋ during 事件集合（sentences_artimage_01 的 The artwork relates to {%1} during {2}. 會譯成「Z期間的3年…」）：created_site 短語（05.tsv）把 during 放進「在Z期間」
+The artwork relates to the foundation of {1} by {2} of {3} in {#4} during {5}.	這件藝術品與{4}年{3}的{2}在{5}期間建立{1}有關。	这件艺术品与{4}年{3}的{2}在{5}期间建立{1}有关。		FUN_141451b10 2743029-2743069 藝術品事件句＋ during 事件集合（sentences_artimage_01 的 The artwork relates to {%1} during {2}. 會譯成「Z期間的3年…」）：created_site 短語（05.tsv）把 during 放進「在Z期間」
+The artwork relates to the foundation of {1} by {2} of {3} in the {@4} of {#5} during {6}.	這件藝術品與{5}年{4}{3}的{2}在{6}期間建立{1}有關。	这件艺术品与{5}年{4}{3}的{2}在{6}期间建立{1}有关。		FUN_141451b10 2743029-2743069 藝術品事件句＋ during 事件集合（sentences_artimage_01 的 The artwork relates to {%1} during {2}. 會譯成「Z期間的3年…」）：created_site 短語（05.tsv）把 during 放進「在Z期間」
+The artwork relates to the foundation of {1} by {2} of {3} in a time before time during {4}.	這件藝術品與太古之時{3}的{2}在{4}期間建立{1}有關。	这件艺术品与太古之时{3}的{2}在{4}期间建立{1}有关。		FUN_141451b10 2743029-2743069 藝術品事件句＋ during 事件集合（sentences_artimage_01 的 The artwork relates to {%1} during {2}. 會譯成「Z期間的3年…」）：created_site 短語（05.tsv）把 during 放進「在Z期間」
+The artwork relates to the foundation of {1} by {2} for {3} in {#4} during {5}.	這件藝術品與{4}年{2}在{5}期間為{3}建立{1}有關。	这件艺术品与{4}年{2}在{5}期间为{3}建立{1}有关。		FUN_141451b10 2743029-2743069 藝術品事件句＋ during 事件集合（sentences_artimage_01 的 The artwork relates to {%1} during {2}. 會譯成「Z期間的3年…」）：created_site 短語（05.tsv）把 during 放進「在Z期間」
+The artwork relates to the foundation of {1} by {2} for {3} in the {@4} of {#5} during {6}.	這件藝術品與{5}年{4}{2}在{6}期間為{3}建立{1}有關。	这件艺术品与{5}年{4}{2}在{6}期间为{3}建立{1}有关。		FUN_141451b10 2743029-2743069 藝術品事件句＋ during 事件集合（sentences_artimage_01 的 The artwork relates to {%1} during {2}. 會譯成「Z期間的3年…」）：created_site 短語（05.tsv）把 during 放進「在Z期間」
+The artwork relates to the foundation of {1} by {2} for {3} in a time before time during {4}.	這件藝術品與太古之時{2}在{4}期間為{3}建立{1}有關。	这件艺术品与太古之时{2}在{4}期间为{3}建立{1}有关。		FUN_141451b10 2743029-2743069 藝術品事件句＋ during 事件集合（sentences_artimage_01 的 The artwork relates to {%1} during {2}. 會譯成「Z期間的3年…」）：created_site 短語（05.tsv）把 during 放進「在Z期間」
+The artwork relates to the foundation of {1} by {2} in {#3} during {4}.	這件藝術品與{3}年{2}在{4}期間建立{1}有關。	这件艺术品与{3}年{2}在{4}期间建立{1}有关。		FUN_141451b10 2743029-2743069 藝術品事件句＋ during 事件集合（sentences_artimage_01 的 The artwork relates to {%1} during {2}. 會譯成「Z期間的3年…」）：created_site 短語（05.tsv）把 during 放進「在Z期間」
+The artwork relates to the foundation of {1} by {2} in the {@3} of {#4} during {5}.	這件藝術品與{4}年{3}{2}在{5}期間建立{1}有關。	这件艺术品与{4}年{3}{2}在{5}期间建立{1}有关。		FUN_141451b10 2743029-2743069 藝術品事件句＋ during 事件集合（sentences_artimage_01 的 The artwork relates to {%1} during {2}. 會譯成「Z期間的3年…」）：created_site 短語（05.tsv）把 during 放進「在Z期間」
+The artwork relates to the foundation of {1} by {2} in a time before time during {3}.	這件藝術品與太古之時{2}在{3}期間建立{1}有關。	这件艺术品与太古之时{2}在{3}期间建立{1}有关。		FUN_141451b10 2743029-2743069 藝術品事件句＋ during 事件集合（sentences_artimage_01 的 The artwork relates to {%1} during {2}. 會譯成「Z期間的3年…」）：created_site 短語（05.tsv）把 during 放進「在Z期間」
+The artwork relates to {%1} in {#2} during {3}.	這件藝術品與{2}年{1}有關，當時正值{3}。	这件艺术品与{2}年{1}有关，当时正值{3}。		FUN_141451b10 2743029-2743069 藝術品事件句：事件短語帶日期又接 during 事件集合時，日期留在事件前、集合名放句尾（sentences_artimage_01 的 The artwork relates to {%1} during {2}. 會譯成「Z期間的3年…」）；created_site 另寫在前面
+The artwork relates to {%1} in the {@2} of {#3} during {4}.	這件藝術品與{3}年{2}{1}有關，當時正值{4}。	这件艺术品与{3}年{2}{1}有关，当时正值{4}。		FUN_141451b10 2743029-2743069 藝術品事件句：事件短語帶日期又接 during 事件集合時，日期留在事件前、集合名放句尾（sentences_artimage_01 的 The artwork relates to {%1} during {2}. 會譯成「Z期間的3年…」）；created_site 另寫在前面
+The artwork relates to {%1} in a time before time during {2}.	這件藝術品與太古之時{1}有關，當時正值{2}。	这件艺术品与太古之时{1}有关，当时正值{2}。		FUN_141451b10 2743029-2743069 藝術品事件句：事件短語帶日期又接 during 事件集合時，日期留在事件前、集合名放句尾（sentences_artimage_01 的 The artwork relates to {%1} during {2}. 會譯成「Z期間的3年…」）；created_site 另寫在前面
 The {%1} Air Race of {2}	{2}的{1}場空中競速賽	{2}的{1}场空中竞速赛		FUN_140bc7270 1745093 比賽（competitionst）；of 後是節慶名（世界生成的名稱）；{1} 序數（Second、20th）
 The Air Race of {1}	{1}的空中競速賽	{1}的空中竞速赛		FUN_140bc7270 1745093 比賽（competitionst）；of 後是節慶名（世界生成的名稱）
 The {%1} Air Race	{1}場空中競速賽	{1}场空中竞速赛		FUN_140bc7270 1745093 比賽（competitionst）；of 後是節慶名（世界生成的名稱）；{1} 序數
@@ -66,6 +81,33 @@ The Sixteenth Race of {1}	{1}的第十六場賽跑	{1}的第十六场赛跑		FUN
 The Seventeenth Race of {1}	{1}的第十七場賽跑	{1}的第十七场赛跑		FUN_140bc7270 1745093 比賽（competitionst）；of 後是節慶名（世界生成的名稱）；賽跑；序數寫死（避免與種族名混淆）
 The Eighteenth Race of {1}	{1}的第十八場賽跑	{1}的第十八场赛跑		FUN_140bc7270 1745093 比賽（competitionst）；of 後是節慶名（世界生成的名稱）；賽跑；序數寫死（避免與種族名混淆）
 The Nineteenth Race of {1}	{1}的第十九場賽跑	{1}的第十九场赛跑		FUN_140bc7270 1745093 比賽（competitionst）；of 後是節慶名（世界生成的名稱）；賽跑；序數寫死（避免與種族名混淆）
+The Second Horse Race of {1}	{1}的第二場賽馬	{1}的第二场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The Third Horse Race of {1}	{1}的第三場賽馬	{1}的第三场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The Fourth Horse Race of {1}	{1}的第四場賽馬	{1}的第四场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The Fifth Horse Race of {1}	{1}的第五場賽馬	{1}的第五场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The Sixth Horse Race of {1}	{1}的第六場賽馬	{1}的第六场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The Seventh Horse Race of {1}	{1}的第七場賽馬	{1}的第七场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The Eighth Horse Race of {1}	{1}的第八場賽馬	{1}的第八场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The Ninth Horse Race of {1}	{1}的第九場賽馬	{1}的第九场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The Tenth Horse Race of {1}	{1}的第十場賽馬	{1}的第十场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The Eleventh Horse Race of {1}	{1}的第十一場賽馬	{1}的第十一场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The Twelfth Horse Race of {1}	{1}的第十二場賽馬	{1}的第十二场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The Thirteenth Horse Race of {1}	{1}的第十三場賽馬	{1}的第十三场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The Fourteenth Horse Race of {1}	{1}的第十四場賽馬	{1}的第十四场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The Fifteenth Horse Race of {1}	{1}的第十五場賽馬	{1}的第十五场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The Sixteenth Horse Race of {1}	{1}的第十六場賽馬	{1}的第十六场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The Seventeenth Horse Race of {1}	{1}的第十七場賽馬	{1}的第十七场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The Eighteenth Horse Race of {1}	{1}的第十八場賽馬	{1}的第十八场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The Nineteenth Horse Race of {1}	{1}的第十九場賽馬	{1}的第十九场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The {#1}st Horse Race of {2}	{2}的第{1}場賽馬	{2}的第{1}场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The {#1}nd Horse Race of {2}	{2}的第{1}場賽馬	{2}的第{1}场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The {#1}rd Horse Race of {2}	{2}的第{1}場賽馬	{2}的第{1}场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The {#1}th Horse Race of {2}	{2}的第{1}場賽馬	{2}的第{1}场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The {#1}st Horse Race	第{1}場賽馬	第{1}场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The {#1}nd Horse Race	第{1}場賽馬	第{1}场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The {#1}rd Horse Race	第{1}場賽馬	第{1}场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The {#1}th Horse Race	第{1}場賽馬	第{1}场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The Horse Race of {1}	{1}的賽馬	{1}的赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
 The Second {%1} Race of {2}	{2}的第二場{1}競速賽	{2}的第二场{1}竞速赛		FUN_140bc7270 1745093 比賽（competitionst）；of 後是節慶名（世界生成的名稱）；{1} 生物名（每字首大寫，查不到時 Creature）；序數寫死（避免與前綴詞混淆）
 The Third {%1} Race of {2}	{2}的第三場{1}競速賽	{2}的第三场{1}竞速赛		FUN_140bc7270 1745093 比賽（competitionst）；of 後是節慶名（世界生成的名稱）；{1} 生物名（每字首大寫，查不到時 Creature）；序數寫死（避免與前綴詞混淆）
 The Fourth {%1} Race of {2}	{2}的第四場{1}競速賽	{2}的第四场{1}竞速赛		FUN_140bc7270 1745093 比賽（competitionst）；of 後是節慶名（世界生成的名稱）；{1} 生物名（每字首大寫，查不到時 Creature）；序數寫死（避免與前綴詞混淆）
@@ -221,34 +263,34 @@ The {%1} Attempted Abduction of {2} at {3}	{2}於{3}{1}次險遭擄走	{2}于{3}
 The Attempted Abduction of {1} at {2}	{1}於{2}險遭擄走	{1}于{2}险遭掳走		FUN_140bc60f0 1744413 擄人（abductionst）；at 據點／in 地區、地下區域、the Wilds
 The {%1} Attempted Abduction of {2} in {3}	{2}於{3}{1}次險遭擄走	{2}于{3}{1}次险遭掳走		FUN_140bc60f0 1744413 擄人（abductionst）；at 據點／in 地區、地下區域、the Wilds；{1} 序數（Second、20th）
 The Attempted Abduction of {1} in {2}	{1}於{2}險遭擄走	{1}于{2}险遭掳走		FUN_140bc60f0 1744413 擄人（abductionst）；at 據點／in 地區、地下區域、the Wilds
-The {%1} Attempted Abduction at {2}	{2}{1}次擄人未遂事件	{2}{1}次掳人未遂事件		FUN_140bc60f0 1744413 擄人（abductionst）；at 據點／in 地區、地下區域、the Wilds；{1} 序數（Second、20th）
-The Attempted Abduction at {1}	{1}擄人未遂事件	{1}掳人未遂事件		FUN_140bc60f0 1744413 擄人（abductionst）；at 據點／in 地區、地下區域、the Wilds
-The {%1} Attempted Abduction in {2}	{2}{1}次擄人未遂事件	{2}{1}次掳人未遂事件		FUN_140bc60f0 1744413 擄人（abductionst）；at 據點／in 地區、地下區域、the Wilds；{1} 序數（Second、20th）
-The Attempted Abduction in {1}	{1}擄人未遂事件	{1}掳人未遂事件		FUN_140bc60f0 1744413 擄人（abductionst）；at 據點／in 地區、地下區域、the Wilds
+The {%1} Attempted Abduction at {2}	{2}的{1}次擄人未遂事件	{2}的{1}次掳人未遂事件		FUN_140bc60f0 1744413 擄人（abductionst）；at 據點／in 地區、地下區域、the Wilds；{1} 序數（Second、20th）
+The Attempted Abduction at {1}	{1}的擄人未遂事件	{1}的掳人未遂事件		FUN_140bc60f0 1744413 擄人（abductionst）；at 據點／in 地區、地下區域、the Wilds
+The {%1} Attempted Abduction in {2}	{2}的{1}次擄人未遂事件	{2}的{1}次掳人未遂事件		FUN_140bc60f0 1744413 擄人（abductionst）；at 據點／in 地區、地下區域、the Wilds；{1} 序數（Second、20th）
+The Attempted Abduction in {1}	{1}的擄人未遂事件	{1}的掳人未遂事件		FUN_140bc60f0 1744413 擄人（abductionst）；at 據點／in 地區、地下區域、the Wilds
 The {%1} Abduction of {2} at {3}	{2}於{3}{1}次遭擄	{2}于{3}{1}次遭掳		FUN_140bc60f0 1744413 擄人（abductionst）；at 據點／in 地區、地下區域、the Wilds；{1} 序數（Second、20th）
 The Abduction of {1} at {2}	{1}於{2}遭擄	{1}于{2}遭掳		FUN_140bc60f0 1744413 擄人（abductionst）；at 據點／in 地區、地下區域、the Wilds
 The {%1} Abduction of {2} in {3}	{2}於{3}{1}次遭擄	{2}于{3}{1}次遭掳		FUN_140bc60f0 1744413 擄人（abductionst）；at 據點／in 地區、地下區域、the Wilds；{1} 序數（Second、20th）
 The Abduction of {1} in {2}	{1}於{2}遭擄	{1}于{2}遭掳		FUN_140bc60f0 1744413 擄人（abductionst）；at 據點／in 地區、地下區域、the Wilds
-The {%1} Abduction at {2}	{2}{1}次擄人事件	{2}{1}次掳人事件		FUN_140bc60f0 1744413 擄人（abductionst）；at 據點／in 地區、地下區域、the Wilds；{1} 序數（Second、20th）
-The Abduction at {1}	{1}擄人事件	{1}掳人事件		FUN_140bc60f0 1744413 擄人（abductionst）；at 據點／in 地區、地下區域、the Wilds
-The {%1} Abduction in {2}	{2}{1}次擄人事件	{2}{1}次掳人事件		FUN_140bc60f0 1744413 擄人（abductionst）；at 據點／in 地區、地下區域、the Wilds；{1} 序數（Second、20th）
-The Abduction in {1}	{1}擄人事件	{1}掳人事件		FUN_140bc60f0 1744413 擄人（abductionst）；at 據點／in 地區、地下區域、the Wilds
+The {%1} Abduction at {2}	{2}的{1}次擄人事件	{2}的{1}次掳人事件		FUN_140bc60f0 1744413 擄人（abductionst）；at 據點／in 地區、地下區域、the Wilds；{1} 序數（Second、20th）
+The Abduction at {1}	{1}的擄人事件	{1}的掳人事件		FUN_140bc60f0 1744413 擄人（abductionst）；at 據點／in 地區、地下區域、the Wilds
+The {%1} Abduction in {2}	{2}的{1}次擄人事件	{2}的{1}次掳人事件		FUN_140bc60f0 1744413 擄人（abductionst）；at 據點／in 地區、地下區域、the Wilds；{1} 序數（Second、20th）
+The Abduction in {1}	{1}的擄人事件	{1}的掳人事件		FUN_140bc60f0 1744413 擄人（abductionst）；at 據點／in 地區、地下區域、the Wilds
 The {%1} Attempted Theft of {2} at {3}	{2}於{3}{1}次險遭竊取	{2}于{3}{1}次险些被盗		FUN_140bc6520 1744567 竊盜（theftst）；{n} 神器；at 據點／in 地區、地下區域、the Wilds；{1} 序數（Second、20th）
 The Attempted Theft of {1} at {2}	{1}於{2}險遭竊取	{1}于{2}险些被盗		FUN_140bc6520 1744567 竊盜（theftst）；{n} 神器；at 據點／in 地區、地下區域、the Wilds
 The {%1} Attempted Theft of {2} in {3}	{2}於{3}{1}次險遭竊取	{2}于{3}{1}次险些被盗		FUN_140bc6520 1744567 竊盜（theftst）；{n} 神器；at 據點／in 地區、地下區域、the Wilds；{1} 序數（Second、20th）
 The Attempted Theft of {1} in {2}	{1}於{2}險遭竊取	{1}于{2}险些被盗		FUN_140bc6520 1744567 竊盜（theftst）；{n} 神器；at 據點／in 地區、地下區域、the Wilds
-The {%1} Attempted Theft at {2}	{2}{1}次竊盜未遂案	{2}{1}次盗窃未遂案		FUN_140bc6520 1744567 竊盜（theftst）；{n} 神器；at 據點／in 地區、地下區域、the Wilds；{1} 序數（Second、20th）
-The Attempted Theft at {1}	{1}竊盜未遂案	{1}盗窃未遂案		FUN_140bc6520 1744567 竊盜（theftst）；{n} 神器；at 據點／in 地區、地下區域、the Wilds
-The {%1} Attempted Theft in {2}	{2}{1}次竊盜未遂案	{2}{1}次盗窃未遂案		FUN_140bc6520 1744567 竊盜（theftst）；{n} 神器；at 據點／in 地區、地下區域、the Wilds；{1} 序數（Second、20th）
-The Attempted Theft in {1}	{1}竊盜未遂案	{1}盗窃未遂案		FUN_140bc6520 1744567 竊盜（theftst）；{n} 神器；at 據點／in 地區、地下區域、the Wilds
+The {%1} Attempted Theft at {2}	{2}的{1}次竊盜未遂案	{2}的{1}次盗窃未遂案		FUN_140bc6520 1744567 竊盜（theftst）；{n} 神器；at 據點／in 地區、地下區域、the Wilds；{1} 序數（Second、20th）
+The Attempted Theft at {1}	{1}的竊盜未遂案	{1}的盗窃未遂案		FUN_140bc6520 1744567 竊盜（theftst）；{n} 神器；at 據點／in 地區、地下區域、the Wilds
+The {%1} Attempted Theft in {2}	{2}的{1}次竊盜未遂案	{2}的{1}次盗窃未遂案		FUN_140bc6520 1744567 竊盜（theftst）；{n} 神器；at 據點／in 地區、地下區域、the Wilds；{1} 序數（Second、20th）
+The Attempted Theft in {1}	{1}的竊盜未遂案	{1}的盗窃未遂案		FUN_140bc6520 1744567 竊盜（theftst）；{n} 神器；at 據點／in 地區、地下區域、the Wilds
 The {%1} Theft of {2} at {3}	{2}於{3}{1}次遭竊	{2}于{3}{1}次被盗		FUN_140bc6520 1744567 竊盜（theftst）；{n} 神器；at 據點／in 地區、地下區域、the Wilds；{1} 序數（Second、20th）
 The Theft of {1} at {2}	{1}於{2}遭竊	{1}于{2}被盗		FUN_140bc6520 1744567 竊盜（theftst）；{n} 神器；at 據點／in 地區、地下區域、the Wilds
 The {%1} Theft of {2} in {3}	{2}於{3}{1}次遭竊	{2}于{3}{1}次被盗		FUN_140bc6520 1744567 竊盜（theftst）；{n} 神器；at 據點／in 地區、地下區域、the Wilds；{1} 序數（Second、20th）
 The Theft of {1} in {2}	{1}於{2}遭竊	{1}于{2}被盗		FUN_140bc6520 1744567 竊盜（theftst）；{n} 神器；at 據點／in 地區、地下區域、the Wilds
-The {%1} Theft at {2}	{2}{1}次竊案	{2}{1}次盗窃案		FUN_140bc6520 1744567 竊盜（theftst）；{n} 神器；at 據點／in 地區、地下區域、the Wilds；{1} 序數（Second、20th）
-The Theft at {1}	{1}竊案	{1}盗窃案		FUN_140bc6520 1744567 竊盜（theftst）；{n} 神器；at 據點／in 地區、地下區域、the Wilds
-The {%1} Theft in {2}	{2}{1}次竊案	{2}{1}次盗窃案		FUN_140bc6520 1744567 竊盜（theftst）；{n} 神器；at 據點／in 地區、地下區域、the Wilds；{1} 序數（Second、20th）
-The Theft in {1}	{1}竊案	{1}盗窃案		FUN_140bc6520 1744567 竊盜（theftst）；{n} 神器；at 據點／in 地區、地下區域、the Wilds
+The {%1} Theft at {2}	{2}的{1}次竊案	{2}的{1}次盗窃案		FUN_140bc6520 1744567 竊盜（theftst）；{n} 神器；at 據點／in 地區、地下區域、the Wilds；{1} 序數（Second、20th）
+The Theft at {1}	{1}的竊案	{1}的盗窃案		FUN_140bc6520 1744567 竊盜（theftst）；{n} 神器；at 據點／in 地區、地下區域、the Wilds
+The {%1} Theft in {2}	{2}的{1}次竊案	{2}的{1}次盗窃案		FUN_140bc6520 1744567 竊盜（theftst）；{n} 神器；at 據點／in 地區、地下區域、the Wilds；{1} 序數（Second、20th）
+The Theft in {1}	{1}的竊案	{1}的盗窃案		FUN_140bc6520 1744567 竊盜（theftst）；{n} 神器；at 據點／in 地區、地下區域、the Wilds
 The {%1} Raid of {2}	{2}的{1}次突襲	{2}的{1}次突袭		FUN_140bc63a0 1744504 突襲（raidst）；據點、地區、地下區域或 the Wilds；{1} 序數（Second、20th）
 The Raid of {1}	{1}的突襲	{1}的突袭		FUN_140bc63a0 1744504 突襲（raidst）；據點、地區、地下區域或 the Wilds
 The {%1} Rampage of {2} in  in {3}	{2}在{3}的{1}次肆虐	{2}在{3}的{1}次肆虐		FUN_140bc6880 1744715 野獸肆虐（beast_attackst）；兩隻以上才有種族或 Monster 前綴，正好一隻才有 of 人物；地下區域時遊戲多接一次 in（in  in，兩個空白）；{1} 序數（Second、20th）

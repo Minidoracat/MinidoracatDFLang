@@ -1,0 +1,6 @@
+en	zh-Hant	zh-Hans	align	note
+{1} is a {%2}.	{1}是{2}。	{1}是{2}。		FUN_140c2b870 L1806370-1806446 人物頁首句：名字（無名時 This nameless being）＋ is a ＋種族（FUN_140b94ed0 caste 名，可接 curse 稱呼；稱呼組合見 zz_legends_04）；was 版是 sentences_reputation_01 既有
+{@1} is the {%2} of {3} and {4}.	{1}是{3}與{4}的{2}。	{1}是{3}与{4}的{2}。		FUN_140c2b870 L1806600-1806688 雙親：He/She/It＋關係名（FUN_14075a580：eldest son…child）＋父母連結
+{@1} is the {%2} of {3}.	{1}是{3}的{2}。	{1}是{3}的{2}。		FUN_140c2b870 同上，只知一方
+{@1} was the {%2} of {3} and {4}.	{1}是{3}與{4}的{2}。	{1}是{3}与{4}的{2}。		FUN_140c2b870 同上（g_gamemode==3）
+{@1} was the {%2} of {3}.	{1}是{3}的{2}。	{1}是{3}的{2}。		FUN_140c2b870 同上（g_gamemode==3），只知一方

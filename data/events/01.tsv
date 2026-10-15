@@ -21,7 +21,7 @@ en	zh-Hant	zh-Hans	align	note
 in order to have an agent in {1}	以便在{1}安插眼線	以便在{1}安插眼线	inner	同上 L379483/L379529 目的片語；{1} 據點／地區／地下區域連結或 the wilds
 in order to have law enforcement look the other way in {1}	好讓{1}的執法者睜一隻眼閉一隻眼	好让{1}的执法者睁一只眼闭一只眼	inner	同上 L379519 目的片語
 in order to have someone to act on plots and schemes in {1}	以便在{1}有人替自己執行陰謀詭計	以便在{1}有人替自己执行阴谋诡计	inner	同上 L379524 目的片語
-in order to secure embezzled funds in {1}	以便在{1}侵吞公款	以便在{1}侵吞公款	inner	同上 L379534 目的片語
+in order to secure embezzled funds in {1}	以便在{1}取得盜用的公款	以便在{1}取得挪用的公款	inner	同上 L379534 目的片語
 as a member of {1} toward the fulfillment of plots and schemes in {2}	讓對方以{1}成員的身分，在{2}為陰謀詭計效力	让对方以{1}成员的身份，在{2}为阴谋诡计效力	inner	同上 L379508-379511 目的片語（0x101）；{1} 勢力（FUN_140b92900）
 the corruption of {1} by {2} in {3}	{2}在{3}收買{1}一事	{2}在{3}收买{1}一事	inner	FUN_1402aa590 L379598 短語（hfs_formed_intrigue_relationship）；日期由 _events_00 外框處理
 the failed attempt by {1} to corrupt {2} in {3}	{1}在{3}收買{2}未果一事	{1}在{3}收买{2}未果一事	inner	FUN_1402aae00 L379904 短語（failed_intrigue_corruption）；日期由 _events_00 外框處理

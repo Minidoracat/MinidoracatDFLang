@@ -26,8 +26,8 @@ The {%1} are made from {%2}.	{1}以{2}製成。	{1}以{2}制成。		FUN_140c7500
 It is spattered with {%1}.	表面濺有{1}。	表面溅有{1}。		FUN_140c75000 1860227–1860246：沾染物，數量少於 100
 It is coated with {%1}.	表面覆有一層{1}。	表面覆有一层{1}。		FUN_140c75000 1860227–1860246：沾染物，數量 100 以上
 When used as a dye, it produces {%1}.	用作染料時可染出{1+色}。	用作染料时可染出{1+色}。		FUN_140c75000 1860072：染料；{1} 顏色名
-The slab reads "I am {1}, once of the Underworld. By {2}, I bind myself to this place.".	石板上寫著：「吾乃{1}，昔日出自冥界。藉{2}之力，吾將自身束縛於此地。」。	石板上写着：“吾乃{1}，昔日出自冥界。借{2}之力，吾将自身束缚于此地。”。		惡魔石板的刻文（FUN_140be1450 1760882：I am 名字, once of the Underworld.  By 協助者, I bind myself to this place.）；{1} 惡魔名、{2} 協助召喚的人物；須排在 The slab reads "{1}". 前
-The slab reads "I am {1}, once of the Underworld. I bind myself to this place.".	石板上寫著：「吾乃{1}，昔日出自冥界。吾將自身束縛於此地。」。	石板上写着：“吾乃{1}，昔日出自冥界。吾将自身束缚于此地。”。		同上，沒有協助者
-The slab reads "I am {1}, once of the Underworld.  By {2}, I bind myself to this place.".	石板上寫著：「吾乃{1}，昔日出自冥界。藉{2}之力，吾將自身束縛於此地。」。	石板上写着：“吾乃{1}，昔日出自冥界。借{2}之力，吾将自身束缚于此地。”。		同上，石板刻文照程式原樣（句間兩個空白，要塞物品頁會照原樣畫）
-The slab reads "I am {1}, once of the Underworld.  I bind myself to this place.".	石板上寫著：「吾乃{1}，昔日出自冥界。吾將自身束縛於此地。」。	石板上写着：“吾乃{1}，昔日出自冥界。吾将自身束缚于此地。”。		同上，沒有協助者，句間兩個空白
+The slab reads "I am {1}, once of the Underworld. By {2}, I bind myself to this place.".	石板上寫著：「吾乃{1}，昔日出自冥界。藉{2}之力，吾將自身束縛於此地。」	石板上写着：“吾乃{1}，昔日出自冥界。借{2}之力，吾将自身束缚于此地。”		惡魔石板的刻文（FUN_140be1450 1760882：I am 名字, once of the Underworld.  By 協助者, I bind myself to this place.）；{1} 惡魔名、{2} 協助召喚的人物；須排在 The slab reads "{1}". 前；引號內已有句號，後面不再加「。」
+The slab reads "I am {1}, once of the Underworld. I bind myself to this place.".	石板上寫著：「吾乃{1}，昔日出自冥界。吾將自身束縛於此地。」	石板上写着：“吾乃{1}，昔日出自冥界。吾将自身束缚于此地。”		同上，沒有協助者；引號內已有句號，後面不再加「。」
+The slab reads "I am {1}, once of the Underworld.  By {2}, I bind myself to this place.".	石板上寫著：「吾乃{1}，昔日出自冥界。藉{2}之力，吾將自身束縛於此地。」	石板上写着：“吾乃{1}，昔日出自冥界。借{2}之力，吾将自身束缚于此地。”		同上，石板刻文照程式原樣（句間兩個空白，要塞物品頁會照原樣畫）；引號內已有句號，後面不再加「。」
+The slab reads "I am {1}, once of the Underworld.  I bind myself to this place.".	石板上寫著：「吾乃{1}，昔日出自冥界。吾將自身束縛於此地。」	石板上写着：“吾乃{1}，昔日出自冥界。吾将自身束缚于此地。”		同上，沒有協助者，句間兩個空白；引號內已有句號，後面不再加「。」
 The slab reads "{1}".	石板上寫著：「{1}」。	石板上写着：“{1}”。		FUN_140c75000 1860112：石板刻字；{1} 刻文（紀念文由別的函式拼成，能翻就翻）

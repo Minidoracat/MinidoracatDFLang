@@ -2,4 +2,4 @@ en	zh-Hant	zh-Hans	align	note
 appearing not to age	外貌不老	外貌不老	inner	FUN_140b76980 1689783 hf_confronted 理由（after 後）
 an unknown secret	某種不明的奧祕	某种不明的奥秘	inner	FUN_140b93c60 1707115 祕密名（找不到時）
 traveling companion	旅伴	旅伴		FUN_140b8eeb0 L1704844 等人際關係名；不翻時會被拼成「旅行中的同伴」
-High Master	高階大師	高阶大师		FUN_1407737c0 L1048113 技能等級名（case 0xd，Master 與 Grand Master 之間）；不翻時會被 names.tsv 的 {@1} {@2} 拼成「高師父」
+High Master	高級大師	高级大师		FUN_1407737c0 L1048113 技能等級名（case 0xd，Master 與 Grand Master 之間）；不翻時會被 names.tsv 的 {@1} {@2} 拼成「高師父」；譯名照術語表

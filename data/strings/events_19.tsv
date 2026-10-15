@@ -5,6 +5,7 @@ a music competition	音樂比賽	音乐比赛	inner	FUN_140b8c990 L1702383/FUN_1
 a poetry competition	詩歌比賽	诗歌比赛	inner	FUN_140b8c990 L1702383/FUN_140b8d5f0 L1702839 比賽種類 case 6
 a foot race	賽跑	赛跑	inner	FUN_140b8c990 L1702383/FUN_140b8d5f0 L1702839 比賽種類 case 7
 a flying race	飛行競速賽	飞行竞速赛	inner	FUN_140b8c990 L1702383/FUN_140b8d5f0 L1702839 比賽種類 case 8
+a horse race	賽馬	赛马	inner	FUN_140b8c990 L1702383/FUN_140b8d5f0 L1702839 比賽種類 case 9 生物是馬：寫整條「賽馬」，其他生物照 19.tsv 的 a {%1} race「{生物}競速賽」
 a wrestling competition	摔角比賽	摔跤比赛	inner	FUN_140b8c990 L1702383/FUN_140b8d5f0 L1702839 比賽種類 case 10
 a gladiatory competition	角鬥比賽	角斗比赛	inner	FUN_140b8c990 L1702383/FUN_140b8d5f0 L1702839 比賽種類 case 12
 a procession	遊行	游行	inner	FUN_140b8ddd0 L1703146/FUN_140b8e460 L1703397 遊行（接在 held、held by 句型裡）
@@ -17,12 +18,17 @@ an order of precedence	依位階排定的行列	按位阶排定的行列	inner	F
 banners	旗幟	旗帜	inner	FUN_140d3bea0 L1975568 清單項目 case 9
 images	圖像	图像	inner	FUN_140d3bea0 L1975568 清單項目 case 10（沒有對象）
 acrobats	雜技演員	杂技演员	inner	FUN_140d3bea0 L1975568 清單項目 case 13
+mounted horses	騎馬隊伍	骑马队伍	inner	FUN_140d3bea0 L1975568 清單項目（騎乘的生物是馬）；寫整條，不然被 ann_01 的圍城句型 mounted {%1} 譯成「馬騎兵」
+mounted animals	騎乘動物的隊伍	骑乘动物的队伍	inner	FUN_140d3bea0 L1975568 清單項目（沒有指定生物）；寫整條，理由同上
 incense burning	焚香	焚香	inner	FUN_140d3bea0 L1975568 清單項目 case 14
 costumes	戲服	戏服	inner	FUN_140d3bea0 L1975568 清單項目 case 15
 candles	蠟燭	蜡烛	inner	FUN_140d3bea0 L1975568 清單項目 case 16
 In a time before time, there was a competition.	太古之時，舉行了一場比賽。	太古之时，举行了一场比赛。		FUN_140b8c990 L1702383 太古、沒有日程、地點與節慶的整句（無佔位）
 In a time before time, there was a procession.	太古之時，舉行了一場遊行。	太古之时，举行了一场游行。		FUN_140b8ddd0 L1703146 太古、沒有日程、地點與節慶的整句（無佔位）
 In a time before time, there was a ceremony.	太古之時，舉行了一場儀式。	太古之时，举行了一场仪式。		FUN_140b8e6e0 L1703484 太古、沒有日程、地點與節慶的整句（無佔位）
+a competition in a time before time	太古之時舉行的比賽	太古之时举行的比赛	inner	FUN_140b8d5f0 L1702839 短語：a competition 加上結尾的日期（太古）；帶年份的寫在 data/events
+a procession in a time before time	太古之時舉行的遊行	太古之时举行的游行	inner	FUN_140b8e460 L1703397 短語：a procession 加上結尾的日期（太古）；帶年份的寫在 data/events
+a ceremony in a time before time	太古之時舉行的儀式	太古之时举行的仪式	inner	FUN_140b8e990 L1703587 短語：a ceremony 加上結尾的日期（太古）；帶年份的寫在 data/events
 a poetry recital	詩歌朗誦會	诗歌朗诵会	inner	FUN_140d3bea0 L1975568 清單項目 case 3；也給 Events18 表演種類（FUN_140b8bb50／FUN_140b8c2b0）用
 a concert	音樂會	音乐会	inner	FUN_140d3bea0 L1975568 清單項目 case 4；也給 Events18 表演種類用
 a dance	舞蹈表演	舞蹈表演	inner	FUN_140d3bea0 L1975568 清單項目 case 5（沒有舞蹈形式）；也給 Events18 表演種類用

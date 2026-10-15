@@ -19,8 +19,9 @@
   - 第十一輪：音樂、詩歌、舞蹈形式的說明（「這種音樂演奏時不偏好特定音階，採用自由節奏。」）、樂器說明、學者的研究活動（「思索…」「講授…」）。
   - 第十二輪：物品頁的說明（「這是Besmar Avuztaron製作的大師級巨型蝙蝠皮革長褲。物品是沙灰褐色，以窩杯染料和蘋果葉染料混合染成。」）、裝飾與藝術圖像、書寫內容、物品頁標籤（主人、重量）；引擎支援傳說模式的連結（人名、地名照中文排版，點得到）。
   - 第十三輪：世界生成的名稱。引擎攔下遊戲組名字的函式，用 2,196 字的中文字表照同樣的結構組中文名（「The Planet of Destiny」→「命運之星」、堡壘名「Scorchaxe」→「焦斧」），原名照原文。
-  - 整句 23,055 條、句型 8,854 條、依畫面譯文 5 條、名稱字表 3,301 條，繁簡分開翻。
-- 尚未發布到 Steam 工作坊；翻譯接近完成後才發布。上架前還要完成：冒險模式、傳說模式的歷史事件句與種族描述、DFHack 視窗文字。
+  - 第十四輪：傳說模式。歷史事件句（「1年仲夏，Onsmost在盜根攻擊了收割者之夢魘。」，含事件原因與日期的各種組合）、人物／勢力／據點／地區頁開頭的說明與相關清單、生成生物（遺忘巨獸、泰坦、夜行生物、天使、實驗體）的稱呼與說明、傳說介面（分類、清單、分頁標籤、載入進度）；被截短成「…」的分頁標籤也翻。
+  - 整句 33,399 條、句型 19,343 條（其中 9,599 條由事件句樣板產生）、依畫面譯文 7 條、名稱字表 3,301 條，繁簡分開翻。
+- 尚未發布到 Steam 工作坊；翻譯接近完成後才發布。上架前還要完成：冒險模式（交談選單、說明、任務）、DFHack 視窗文字、建立世界的進階參數、競技場。
 
 ## 玩家安裝（發布後）
 
@@ -58,6 +59,8 @@ flowchart LR
 ```
 data/strings/*.tsv         整句譯文：en, zh-Hant, zh-Hans, align, note（規則見 docs/translation-guide.md）
 data/rules/*.tsv           句型規則：同上，en 含 {1}～{9} 佔位
+data/events/*.tsv          傳說事件句樣板：scripts/gen_events.py 展開成 data/rules/_events.tsv、zz_events.tsv（產物，別手改）
+data/names/*.tsv           世界生成名稱的中文字表（字的代號、詞性、中文）
 data/screens/*.tsv         依畫面譯文：檔名是 DFHack 焦點字串的開頭，只在該畫面套用
 glossary/terms.tsv         術語表；locale.tsv 兩岸用語規則
 art/mascot.png             標題畫面吉祥物（透明背景 RGBA PNG；名牌文字由引擎在遊戲裡畫）
@@ -65,6 +68,7 @@ engine/                    Rust 引擎（cdylib dflang.dll）與特徵碼 patter
 lua/                       DFHack 載入器範本與 dflang 指令
 scripts/
   build.py                 組出 dist/ 下的兩個工作坊包（含編譯引擎、裁字型）
+  gen_events.py            由 data/events 產生事件句的句型（日期、原因的各種組合）
   verify_mod.py            發版前驗證閘門
   terms.py                 術語一致與兩岸用語檢查
   lookup.py                查一句原文的現有譯文、術語、參考譯名與遊戲字串
@@ -84,6 +88,7 @@ dist/                      建置產物（不進 git）
 
 ```bash
 uv run scripts/build.py --fetch-fonts         # 首次：下載思源黑體到 temp/fonts/
+uv run scripts/gen_events.py                  # 改過 data/events 後重產事件句型
 uv run scripts/build.py                       # 建置兩包（遊戲要先關：執行中會鎖住 DLL）
 uv run scripts/verify_mod.py                  # 必須全部 PASS
 uv run scripts/terms.py check                 # 術語與兩岸用語

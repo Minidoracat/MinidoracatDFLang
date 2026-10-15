@@ -85,6 +85,7 @@ a recital of {1} held by {2} as part of {3}	{2}在{3}期間舉辦的《{1}》朗
 a recital of {1} held by {2}	{2}舉辦的《{1}》朗誦會	{2}举办的《{1}》朗诵会	inner	FUN_140b8c2b0 L1702113 表演短語：排在 a recital of {1} 前，否則 {1} 會吞下 held by
 a performance of {1}	《{1}》的演出	《{1}》的演出	inner	FUN_140b8bb50 L1701811 表演／FUN_140b8c2b0 表演種類：{1} 舞蹈或樂曲形式名
 a recital of {1}	《{1}》的朗誦會	《{1}》的朗诵会	inner	FUN_140b8bb50 L1701811 表演／FUN_140b8c2b0 表演種類：{1} 詩體名
+a telling of the story of {%1}	講述{1}的故事	讲述{1}的故事		FUN_140d3bea0 L1975568 儀式 The event featured 清單 case 2：{1} 事件短語（自帶日期）。排在 {%1} held by {2} in {3} 前，否則 held by 先把「a telling of the story of a procession」當成 {1}；align 留空，產生器才不替它加結尾日期（日期屬於 {1} 的事件）
 {%1} held by {2} in {3} as part of {4}	{2}在{4}期間於{3}舉辦的{1}	{2}在{4}期间于{3}举办的{1}	inner	FUN_140b8c2b0 L1702113 表演短語：{1} 表演種類、{2} 文明、{3} 地點、{4} 節慶名
 {%1} held by {2} in {3}	{2}在{3}舉辦的{1}	{2}在{3}举办的{1}	inner	FUN_140b8c2b0 L1702113 表演短語
 {%1} held by {2} as part of {3}	{2}在{3}期間舉辦的{1}	{2}在{3}期间举办的{1}	inner	FUN_140b8c2b0 L1702113 表演短語
@@ -92,5 +93,7 @@ a recital of {1}	《{1}》的朗誦會	《{1}》的朗诵会	inner	FUN_140b8bb50
 the performance in {1} as part of {2}	{2}期間在{1}的表演	{2}期间在{1}的表演	inner	FUN_140b8c2b0 L1702113 表演短語：沒有主辦者
 the performance in {1}	在{1}的表演	在{1}的表演	inner	FUN_140b8c2b0 L1702113 表演短語：沒有主辦者
 the performance as part of {1}	{1}期間的表演	{1}期间的表演	inner	FUN_140b8c2b0 L1702113 表演短語：沒有主辦者
+the performance in {#1}	{1}年的表演	{1}年的表演	inner	FUN_140b8c2b0 L1702113 短語：沒有日程、地點、節慶；沒有佔位的短語是字串（events_18），產生器不替它加日期，這裡手寫結尾日期（否則 in 57 被「the performance in {1}」當成地點）
+the performance in the {@1} of {#2}	{2}年{1}的表演	{2}年{1}的表演	inner	FUN_140b8c2b0 L1702113 短語：沒有日程、地點、節慶；沒有佔位的短語是字串（events_18），產生器不替它加日期，這裡手寫結尾日期（否則 in 57 被「the performance in {1}」當成地點）
 In {#1}, there was a performance.	{1}年，舉行了一場表演。	{1}年，举行了一场表演。		FUN_140b8bb50 L1701811 表演：沒有主辦者、地點、節慶；子句沒有佔位，gen_dates 不產生，直接寫帶日期的整句
 In the {@1} of {#2}, there was a performance.	{2}年{1}，舉行了一場表演。	{2}年{1}，举行了一场表演。		FUN_140b8bb50 L1701811 表演：同上，有季節

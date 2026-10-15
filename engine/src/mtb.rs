@@ -643,21 +643,10 @@ unsafe fn plan_links(words: &[usize], width: i32, translation: &str, dict: &Dict
     }
 }
 
-/// 連結字的中文名：整段是遊戲組過的世界生成名稱，或「the goblin＋名稱」這種稱呼加名稱（稱呼查字典）。
+/// 連結字的中文名：整段是遊戲組過的世界生成名稱，或「the goblin＋名稱」這種稱呼加名稱（見 Dict::titled_name），
+/// 或是沒有名字的建築、地下區域、族群（`a temple`、`the magma sea`）照字典翻。
 fn link_name(dict: &Dict, text: &[u8]) -> Option<String> {
-    if let Some(zh) = crate::names::get(text) {
-        return Some(zh.to_string());
-    }
-    let mut start = 0;
-    while let Some(i) = text[start..].iter().position(|&c| c == b' ') {
-        start += i + 1;
-        if let Some(zh) = crate::names::get(&text[start..]) {
-            let head = &text[..start - 1];
-            let head = head.strip_prefix(b"the ").or_else(|| head.strip_prefix(b"The ")).unwrap_or(head);
-            return Some(dict.translate_text(head)? + &zh);
-        }
-    }
-    None
+    crate::names::get(text).map(|zh| zh.to_string()).or_else(|| dict.titled_name(text, true)).or_else(|| dict.translate_fragment(text))
 }
 
 /// 畫字 hook 用：這個字串是段落單字時，回傳它的畫字計畫。

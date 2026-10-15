@@ -381,14 +381,17 @@ pub struct Dict {
     /// 原文含逗號的條目（身體部位 `first finger, right hand`）：片段以這種條目結尾、前面又不是清單的「, 」時不套清單句型，
     /// 「the goblin's first finger, right hand」才會整條當部位名，不會在逗號切成兩項
     comma_keys: Vec<Vec<u8>>,
+    /// 整句字典的原文排序過：遊戲把放不下的字截成「開頭...」時，從開頭找回原句（見 truncated）
+    sorted_keys: Vec<Vec<u8>>,
     /// 只在某些畫面套用的整句：原文 → [(畫面, 限定列, 譯文)]。同一個英文在不同畫面（或同畫面不同列）意思不同時用（見 screen_entry）。
     pub screens: HashMap<Vec<u8>, Vec<(String, Option<i32>, Entry)>>,
     pub rules: Vec<Rule>,
     /// 事件的原因、情境片語（字串檔與句型檔 align 寫 `tail`，見 strip_tail）：(原文, 譯文)，長的在前；含名字的放 tail_rules
     tails: Vec<(Vec<u8>, String)>,
     tail_rules: Vec<Rule>,
-    /// 原文 → 句型規則的結果（None 表示沒有規則命中，也要記住，免得每幀重比）
-    cache: Mutex<HashMap<Vec<u8>, Option<Arc<Entry>>>>,
+    /// 原文 → 句型規則的結果。翻不出來的也要記住（免得每幀重比）。翻不出來或譯文還夾著英文的，另記當時名稱表的版本
+    /// （names::generation）：之後登記了新名字（清單先畫、名字後登記），版本不同就重算；全中文的結果不再重算
+    cache: Mutex<HashMap<Vec<u8>, (Option<Arc<Entry>>, Option<u64>)>>,
     /// 字 → 字圖編號；字圖 i 的左右半格在 texpos[2i]、texpos[2i+1]。
     pub glyph_of: HashMap<char, u32>,
     pub texpos: Vec<i32>,
@@ -495,6 +498,8 @@ impl Dict {
         self.tails.sort_by_key(|(k, _)| std::cmp::Reverse(k.len()));
         self.rebuild_folded();
         self.comma_keys = self.entries.keys().filter(|k| k.windows(2).any(|w| w == b", ")).cloned().collect();
+        self.sorted_keys = self.entries.keys().cloned().collect();
+        self.sorted_keys.sort_unstable();
         report
     }
 
@@ -699,17 +704,91 @@ impl Dict {
         if let Some(zh) = crate::names::get(key) {
             return Some((vec![(zh.to_string(), 0)], true));
         }
+        // 「the goblin 名字」（傳說頁故事裡不是連結的人物）
+        if let Some(zh) = key.starts_with(b"the ").then(|| self.titled_name(key, false)).flatten() {
+            return Some((vec![(zh, 0)], true));
+        }
         if depth > MAX_DEPTH {
             return None;
         }
-        if let Some(hit) = memo.get(key) {
-            return hit.clone();
+        // 佔位裡（depth > 0）可以套 inner 句型與詞，結果和整句不同，所以只記佔位裡的。逐句查時整段先試過一次，
+        // 句子若沿用整段時在佔位裡算過的結果，會套到 inner 句型（「由綠色玻璃。構成」）
+        if depth > 0 {
+            if let Some(hit) = memo.get(key) {
+                return hit.clone();
+            }
+            // 先記成翻不出來：佔位抓到整段（`{%1}.` 這類）又遞迴回同一段時就此打住
+            memo.insert(key.to_vec(), None);
         }
-        // 先記成翻不出來：佔位抓到整段（`{%1}.` 這類）又遞迴回同一段時就此打住
-        memo.insert(key.to_vec(), None);
         let found = self.strip_tail(key, depth, memo).or_else(|| self.apply_rules(key, depth, memo).map(|(p, _, clean)| (p, clean)));
-        memo.insert(key.to_vec(), found.clone());
+        if depth > 0 {
+            memo.insert(key.to_vec(), found.clone());
+        }
         found
+    }
+
+    /// 稱呼加世界生成名稱（`the goblin Snodub Monstrousentry`、連結字 `dwarf Urist`）：名字是遊戲組過的名稱（names.rs），
+    /// 稱呼（開頭的 the 去掉）查字典或句型，接成「哥布林＋中文名」。名字一定大寫開頭（含 CP437 的 Ï、Ö 這類，0x80 以上），其他位置不查。
+    /// 連結字（link）一定是名字：第一個大寫字起只有一個字、遊戲沒組過英文名的原名（`the forgotten beast Ubbul`）照抄。
+    pub fn titled_name(&self, text: &[u8], link: bool) -> Option<String> {
+        let mut loose = link;
+        let mut start = 0;
+        while let Some(i) = text[start..].iter().position(|&c| c == b' ') {
+            start += i + 1;
+            if !text.get(start).is_some_and(|&c| c.is_ascii_uppercase() || c >= 0x80) {
+                continue;
+            }
+            let name = &text[start..];
+            let zh = match crate::names::get(name) {
+                Some(zh) => zh.to_string(),
+                None if loose && !name.contains(&b' ') => cp437::decode(name),
+                None => {
+                    loose = false;
+                    continue;
+                }
+            };
+            let head = &text[..start - 1];
+            let head = head.strip_prefix(b"the ").or_else(|| head.strip_prefix(b"The ")).unwrap_or(head);
+            return Some(self.translate_text(head)? + &zh);
+        }
+        None
+    }
+
+    /// 佔位裡的片段的譯文（也查只給佔位用的條目）：傳說頁的連結字不是名字時（`a temple`、`the magma sea`）用。
+    /// 翻得不乾淨（夾著照抄的英文）時回傳 None。
+    pub fn translate_fragment(&self, key: &[u8]) -> Option<String> {
+        self.piece(key, 1, &mut Memo::new()).filter(|(_, clean)| *clean).map(|(p, _)| concat(p))
+    }
+
+    /// 遊戲把放不下的字截成「開頭...」（傳說模式的分頁標籤、清單）：原句一定比截斷後長。整句字典裡以這段開頭、
+    /// 又比它長的原文只有一種譯文（不計結尾的空白與冒號）時用那句；譯文也放不下時截短，接「…」。
+    /// 本來就以刪節號結尾的字串（`Items...` 載入進度）要寫成整句條目：整句先查，才不會被當成 `Items designated…` 的截短。
+    fn truncated(&self, key: &[u8]) -> Option<String> {
+        let head = key.strip_suffix(b"...").filter(|h| h.len() >= 4)?;
+        let start = self.sorted_keys.partition_point(|k| k.as_slice() < head);
+        let mut found: Option<&str> = None;
+        for k in self.sorted_keys[start..].iter().take_while(|k| k.starts_with(head)) {
+            if k.len() <= key.len() {
+                continue;
+            }
+            let zh = self.entries[k].text.trim_end_matches([' ', ':', '：']);
+            match found {
+                Some(f) if f != zh => return None,
+                _ => found = Some(zh),
+            }
+        }
+        let zh = found?;
+        let width = |c: char| if cp437::byte_of(c).is_some() { 1 } else { 2 };
+        if zh.chars().map(width).sum::<usize>() <= key.len() {
+            return Some(zh.to_owned());
+        }
+        let mut cells = 2; // 結尾的「…」
+        let mut out: String = zh.chars().take_while(|&c| {
+            cells += width(c);
+            cells <= key.len()
+        }).collect();
+        out.push('…');
+        Some(out)
     }
 
     /// 第一條命中的句型：(譯文片段, 句型, 乾淨與否)。
@@ -818,14 +897,14 @@ impl Dict {
         Some((out, clean))
     }
 
-    /// hook 用：整句字典沒有時，先試首字小寫的名稱、遊戲組過的世界生成名稱，再套句型規則並換算成替身字串。
-    /// 譯文比原文寬或缺字圖時放棄，照畫英文。記成翻不出來的字串之後若登記成世界生成名稱（見 names.rs），重算一次。
+    /// hook 用：整句字典沒有時，先試首字小寫的名稱、遊戲組過的世界生成名稱，再套句型規則並換算成替身字串，
+    /// 最後試被截斷的字串。譯文比原文寬或缺字圖時放棄，照畫英文。
     pub fn rule_entry(&self, key: &[u8]) -> Option<Arc<Entry>> {
         let mut cache = self.cache.lock();
-        let name = || crate::names::get(key);
+        let generation = crate::names::generation();
         match cache.get(key) {
-            Some(Some(hit)) => return Some(hit.clone()),
-            Some(None) if name().is_none() => return None,
+            Some((hit, None)) => return hit.clone(),
+            Some((hit, Some(seen))) if *seen == generation => return hit.clone(),
             _ => {}
         }
         let fits = |text: &str, align: &str| {
@@ -834,12 +913,15 @@ impl Dict {
         };
         // 小寫寫法的原文和 key 等長，替身字串與對齊都能照用
         let entry = lookup_name(self, key).map(|e| Arc::new(e.clone()))
-            .or_else(|| name().and_then(|zh| fits(&zh, "")))
-            .or_else(|| self.apply_rules(key, 0, &mut Memo::new()).and_then(|(pieces, rule, _)| fits(&concat(pieces), &rule.align)));
+            .or_else(|| crate::names::get(key).and_then(|zh| fits(&zh, "")))
+            .or_else(|| self.apply_rules(key, 0, &mut Memo::new()).and_then(|(pieces, rule, _)| fits(&concat(pieces), &rule.align)))
+            .or_else(|| self.truncated(key).and_then(|zh| fits(&zh, "")));
         if cache.len() >= CACHE_LIMIT {
             cache.clear();
         }
-        cache.insert(key.to_vec(), entry.clone());
+        // 翻不出來、或譯文還夾著英文（可能是還沒登記的名字，`Slaxusnuk，「Fellrelic」，黑暗要塞`）的，名稱表換了版本就重算
+        let settled = entry.as_ref().is_some_and(|e| !e.text.bytes().any(|b| b.is_ascii_alphabetic()));
+        cache.insert(key.to_vec(), (entry.clone(), (!settled).then_some(generation)));
         entry
     }
 }
@@ -961,6 +1043,47 @@ mod tests {
         assert_eq!(e.shadow().len(), 18, "置中時替身字串補滿到原文寬度");
         assert_eq!(e.glyphs[0].0, 2 + 5, "左邊補 (18 - 13) / 2 = 2 格，再接 Urist");
         assert!(d.rule_entry(b"Urist is visiting.").is_some(), "第二次走快取");
+    }
+
+    #[test]
+    fn truncated_labels_use_the_only_longer_entry_and_shorten_to_fit() {
+        let mut d = Dict::default();
+        let chars = "歷史人物地圖：文明與其他勢力…載入中";
+        assert!(d.set_glyphs(chars, vec![0; chars.chars().count() * 2]));
+        d.load_tsv("Historical figures\t歷史人物\nHistorical figures: \t歷史人物：\nHistorical maps\t歷史地圖\n\
+                    Civilization\t文明\nCivilizations and other entities\t文明與其他勢力\n\
+                    Loading...\t載入中……\nLoading world\t文明\n");
+        let text = |k: &[u8]| d.rule_entry(k).map(|e| e.text.clone());
+        assert_eq!(text(b"Historical f...").as_deref(), Some("歷史人物"), "結尾的冒號不算不同譯文");
+        assert_eq!(text(b"Historical ..."), None, "開頭相同、譯文不同的有兩句");
+        assert_eq!(text(b"Civilization...").as_deref(), Some("文明與其他勢力"), "原句一定比截斷後長：Civilization 不算");
+        assert_eq!(text(b"Civilizations...").as_deref(), Some("文明與其他勢力"), "剛好截在字尾也算");
+        assert_eq!(text(b"Civilizat...").as_deref(), Some("文明與其他…"), "放不下就截短接「…」，不超過原文寬度");
+        assert_eq!(text(b"Loading...").as_deref(), Some("載入中……"), "本來就有刪節號的整句條目先查");
+    }
+
+    #[test]
+    fn strings_retry_after_a_new_name_is_registered() {
+        let mut d = dict("{1}, \"{2}\", {%3}\t{1}，「{2}」，{3}\n{1}, \"{2}\"\t{1}「{2}」\n");
+        assert!(d.set_glyphs("「」，青銅貪婪", vec![0; 14]));
+        let two = b"Slaxusnuk, \"Bronzeretry\"";
+        let three = b"Slaxusnuk, \"Bronzeretrytwo\", cupidity";
+        let text = |k: &[u8]| d.rule_entry(k).map(|e| e.text.clone());
+        assert_eq!(text(two), None, "英文名還沒登記：樣板沒有中文字，不算命中");
+        assert_eq!(text(three).as_deref(), Some("Slaxusnuk，「Bronzeretrytwo」，貪婪"), "種族翻得出來就命中，英文名先照抄");
+        crate::names::insert(b"Bronzeretry", "青銅");
+        crate::names::insert(b"Bronzeretrytwo", "青銅");
+        assert_eq!(text(two).as_deref(), Some("Slaxusnuk「青銅」"), "登記後重算，不沿用快取的翻不出來");
+        assert_eq!(text(three).as_deref(), Some("Slaxusnuk，「青銅」，貪婪"), "夾著英文的結果也重算");
+    }
+
+    #[test]
+    fn link_titles_keep_a_lone_native_name() {
+        let mut d = dict("");
+        d.load_tsv("forgotten beast\t貪婪\ndwarf\t勞動\n");
+        assert_eq!(d.titled_name(b"the forgotten beast Ubbul", true).as_deref(), Some("貪婪Ubbul"));
+        assert_eq!(d.titled_name(b"the forgotten beast Ubbul", false), None, "句子裡的名字要是遊戲組過的");
+        assert_eq!(d.titled_name(b"the dwarf Urist McDwarf", true), None, "第一個大寫字起不只一個字");
     }
 
     #[test]

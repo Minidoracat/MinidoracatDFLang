@@ -20,9 +20,18 @@ the devouring of {1} by {2}	{2}吞食{1}	{2}吞食{1}	inner	FUN_140b6ae90 168296
 {1}'s {%2} was slashed off by {3} as a means of torture.	{1}的{2}遭{3}以酷刑砍斷。	{1}的{2}遭{3}以酷刑砍断。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：斷肢：砍；加害者＋酷刑
 {1}'s {%2} was slashed off by {3}.	{1}的{2}被{3}砍斷。	{1}的{2}被{3}砍断。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：斷肢：砍；加害者
 {1}'s {%2} was slashed off.	{1}的{2}被砍斷。	{1}的{2}被砍断。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：斷肢：砍
-{1}'s {%2} was stabbed out by {3} as a means of torture.	{1}的{2}遭{3}以酷刑戳出。	{1}的{2}遭{3}以酷刑戳出。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：斷肢：刺、嵌入部位；加害者＋酷刑
-{1}'s {%2} was stabbed out by {3}.	{1}的{2}被{3}戳出。	{1}的{2}被{3}戳出。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：斷肢：刺、嵌入部位；加害者
-{1}'s {%2} was stabbed out.	{1}的{2}被戳出。	{1}的{2}被戳出。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：斷肢：刺、嵌入部位
+{1}'s left eye was stabbed out by {2} as a means of torture.	{1}的左眼遭{2}以酷刑戳出。	{1}的左眼遭{2}以酷刑戳出。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：斷肢：刺、嵌入部位；眼睛寫死「戳出」，排在其他部位的通用句型前
+{1}'s left eye was stabbed out by {2}.	{1}的左眼被{2}戳出。	{1}的左眼被{2}戳出。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：斷肢：刺、嵌入部位；眼睛寫死「戳出」，排在其他部位的通用句型前
+{1}'s left eye was stabbed out.	{1}的左眼被戳出。	{1}的左眼被戳出。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：斷肢：刺、嵌入部位；眼睛寫死「戳出」，排在其他部位的通用句型前
+{1}'s right eye was stabbed out by {2} as a means of torture.	{1}的右眼遭{2}以酷刑戳出。	{1}的右眼遭{2}以酷刑戳出。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：斷肢：刺、嵌入部位；眼睛寫死「戳出」，排在其他部位的通用句型前
+{1}'s right eye was stabbed out by {2}.	{1}的右眼被{2}戳出。	{1}的右眼被{2}戳出。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：斷肢：刺、嵌入部位；眼睛寫死「戳出」，排在其他部位的通用句型前
+{1}'s right eye was stabbed out.	{1}的右眼被戳出。	{1}的右眼被戳出。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：斷肢：刺、嵌入部位；眼睛寫死「戳出」，排在其他部位的通用句型前
+{1}'s eye was stabbed out by {2} as a means of torture.	{1}的眼睛遭{2}以酷刑戳出。	{1}的眼睛遭{2}以酷刑戳出。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：斷肢：刺、嵌入部位；眼睛寫死「戳出」，排在其他部位的通用句型前
+{1}'s eye was stabbed out by {2}.	{1}的眼睛被{2}戳出。	{1}的眼睛被{2}戳出。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：斷肢：刺、嵌入部位；眼睛寫死「戳出」，排在其他部位的通用句型前
+{1}'s eye was stabbed out.	{1}的眼睛被戳出。	{1}的眼睛被戳出。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：斷肢：刺、嵌入部位；眼睛寫死「戳出」，排在其他部位的通用句型前
+{1}'s {%2} was stabbed out by {3} as a means of torture.	{1}的{2}遭{3}以酷刑刺擊而毀。	{1}的{2}遭{3}以酷刑刺击而毁。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：斷肢：刺、嵌入部位；加害者＋酷刑；頭、軀幹等非眼睛部位（眼睛另寫在前面）
+{1}'s {%2} was stabbed out by {3}.	{1}的{2}遭{3}刺擊而毀。	{1}的{2}遭{3}刺击而毁。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：斷肢：刺、嵌入部位；加害者；頭、軀幹等非眼睛部位（眼睛另寫在前面）
+{1}'s {%2} was stabbed out.	{1}的{2}遭刺擊而毀。	{1}的{2}遭刺击而毁。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：斷肢：刺、嵌入部位；頭、軀幹等非眼睛部位（眼睛另寫在前面）
 {1}'s {%2} was ripped off by {3} as a means of torture.	{1}的{2}遭{3}以酷刑扯斷。	{1}的{2}遭{3}以酷刑扯断。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：斷肢：刺（遊戲原文如此）；加害者＋酷刑
 {1}'s {%2} was ripped off by {3}.	{1}的{2}被{3}扯斷。	{1}的{2}被{3}扯断。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：斷肢：刺（遊戲原文如此）；加害者
 {1}'s {%2} was ripped off.	{1}的{2}被扯斷。	{1}的{2}被扯断。	inner	FUN_140b6b190 1683084 hist_figure_wounded 完整句：斷肢：刺（遊戲原文如此）
@@ -77,9 +86,18 @@ the slashing out of {1}'s {%2}	{1}的{2}被剜出	{1}的{2}被剜出	inner	FUN_1
 the slashing off of {1}'s {%2} by {3} as a means of torture	{1}的{2}遭{3}以酷刑砍斷	{1}的{2}遭{3}以酷刑砍断	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：砍；加害者＋酷刑
 the slashing off of {1}'s {%2} by {3}	{1}的{2}被{3}砍斷	{1}的{2}被{3}砍断	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：砍；加害者
 the slashing off of {1}'s {%2}	{1}的{2}被砍斷	{1}的{2}被砍断	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：砍
-the stabbing out of {1}'s {%2} by {3} as a means of torture	{1}的{2}遭{3}以酷刑戳出	{1}的{2}遭{3}以酷刑戳出	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：刺、嵌入部位；加害者＋酷刑
-the stabbing out of {1}'s {%2} by {3}	{1}的{2}被{3}戳出	{1}的{2}被{3}戳出	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：刺、嵌入部位；加害者
-the stabbing out of {1}'s {%2}	{1}的{2}被戳出	{1}的{2}被戳出	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：刺、嵌入部位
+the stabbing out of {1}'s left eye by {2} as a means of torture	{1}的左眼遭{2}以酷刑戳出	{1}的左眼遭{2}以酷刑戳出	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：刺、嵌入部位；眼睛寫死「戳出」，排在其他部位的通用句型前
+the stabbing out of {1}'s left eye by {2}	{1}的左眼被{2}戳出	{1}的左眼被{2}戳出	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：刺、嵌入部位；眼睛寫死「戳出」，排在其他部位的通用句型前
+the stabbing out of {1}'s left eye	{1}的左眼被戳出	{1}的左眼被戳出	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：刺、嵌入部位；眼睛寫死「戳出」，排在其他部位的通用句型前
+the stabbing out of {1}'s right eye by {2} as a means of torture	{1}的右眼遭{2}以酷刑戳出	{1}的右眼遭{2}以酷刑戳出	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：刺、嵌入部位；眼睛寫死「戳出」，排在其他部位的通用句型前
+the stabbing out of {1}'s right eye by {2}	{1}的右眼被{2}戳出	{1}的右眼被{2}戳出	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：刺、嵌入部位；眼睛寫死「戳出」，排在其他部位的通用句型前
+the stabbing out of {1}'s right eye	{1}的右眼被戳出	{1}的右眼被戳出	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：刺、嵌入部位；眼睛寫死「戳出」，排在其他部位的通用句型前
+the stabbing out of {1}'s eye by {2} as a means of torture	{1}的眼睛遭{2}以酷刑戳出	{1}的眼睛遭{2}以酷刑戳出	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：刺、嵌入部位；眼睛寫死「戳出」，排在其他部位的通用句型前
+the stabbing out of {1}'s eye by {2}	{1}的眼睛被{2}戳出	{1}的眼睛被{2}戳出	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：刺、嵌入部位；眼睛寫死「戳出」，排在其他部位的通用句型前
+the stabbing out of {1}'s eye	{1}的眼睛被戳出	{1}的眼睛被戳出	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：刺、嵌入部位；眼睛寫死「戳出」，排在其他部位的通用句型前
+the stabbing out of {1}'s {%2} by {3} as a means of torture	{1}的{2}遭{3}以酷刑刺擊而毀	{1}的{2}遭{3}以酷刑刺击而毁	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：刺、嵌入部位；加害者＋酷刑；頭、軀幹等非眼睛部位（眼睛另寫在前面）
+the stabbing out of {1}'s {%2} by {3}	{1}的{2}遭{3}刺擊而毀	{1}的{2}遭{3}刺击而毁	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：刺、嵌入部位；加害者；頭、軀幹等非眼睛部位（眼睛另寫在前面）
+the stabbing out of {1}'s {%2}	{1}的{2}遭刺擊而毀	{1}的{2}遭刺击而毁	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：刺、嵌入部位；頭、軀幹等非眼睛部位（眼睛另寫在前面）
 the ripping off of {1}'s {%2} by {3} as a means of torture	{1}的{2}遭{3}以酷刑扯斷	{1}的{2}遭{3}以酷刑扯断	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：刺（遊戲原文如此）；加害者＋酷刑
 the ripping off of {1}'s {%2} by {3}	{1}的{2}被{3}扯斷	{1}的{2}被{3}扯断	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：刺（遊戲原文如此）；加害者
 the ripping off of {1}'s {%2}	{1}的{2}被扯斷	{1}的{2}被扯断	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：刺（遊戲原文如此）

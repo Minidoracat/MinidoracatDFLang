@@ -1,0 +1,31 @@
+en	zh-Hant	zh-Hans	align	note
+[C:3:0:1]Related Historical Figures	[C:3:0:1]相關人物	[C:3:0:1]相关人物		FUN_140b8eeb0 L1704688 傳說人物頁「相關人物」標題（原文 [C:3:0:1]…[C:7:0:0][B]，灰色標記移到下一個字前）
+[C:1:0:1]Related Entities	[C:1:0:1]相關勢力	[C:1:0:1]相关势力		FUN_140b8eeb0 L1704902／1705188／1705296／1705351 傳說頁「相關勢力」標題
+[C:6:0:1]Related Sites	[C:6:0:1]相關據點	[C:6:0:1]相关据点		FUN_140b8eeb0 L1705865 傳說頁「相關據點」標題
+object of worship	崇拜對象	崇拜对象	inner	FUN_140b8eeb0 L1704804-1704826 case 4 神祇（虔誠度 25–74）：傳說「相關人物／勢力／據點」清單的關係或身分，只給 legends_03 句型的佔位用
+object of dubious worship	存疑的崇拜對象	存疑的崇拜对象	inner	FUN_140b8eeb0 L1704811 case 4 虔誠度 <10：傳說「相關人物／勢力／據點」清單的關係或身分，只給 legends_03 句型的佔位用
+object of casual worship	隨意崇拜的對象	随意崇拜的对象	inner	FUN_140b8eeb0 L1704809 case 4 虔誠度 10–24：傳說「相關人物／勢力／據點」清單的關係或身分，只給 legends_03 句型的佔位用
+object of faithful worship	虔誠崇拜的對象	虔诚崇拜的对象	inner	FUN_140b8eeb0 L1704819 case 4 虔誠度 75–89：傳說「相關人物／勢力／據點」清單的關係或身分，只給 legends_03 句型的佔位用
+object of ardent worship	狂熱崇拜的對象	狂热崇拜的对象	inner	FUN_140b8eeb0 L1704823 case 4 虔誠度 ≥90：傳說「相關人物／勢力／據點」清單的關係或身分，只給 legends_03 句型的佔位用
+prisoner	囚犯	囚犯	inner	FUN_140b8eeb0 L1704832 case 6；L1704928 勢力身分 case 6 同字：傳說「相關人物／勢力／據點」清單的關係或身分，只給 legends_03 句型的佔位用
+imprisoner	囚禁者	囚禁者	inner	FUN_140b8eeb0 L1704835 case 7：傳說「相關人物／勢力／據點」清單的關係或身分，只給 legends_03 句型的佔位用
+apprenticeship	學徒	学徒	inner	FUN_140b8eeb0 L1704841 case 9（原文就是 apprenticeship，指徒弟）：傳說「相關人物／勢力／據點」清單的關係或身分，只給 legends_03 句型的佔位用
+former master	前師父	前师父	inner	FUN_140b8eeb0 L1704847 case 0xb；術語例外：Master；和 events_01 的 master「師父」一致：傳說「相關人物／勢力／據點」清單的關係或身分，只給 legends_03 句型的佔位用
+former apprentice	前學徒	前学徒	inner	FUN_140b8eeb0 L1704850 case 0xc：傳說「相關人物／勢力／據點」清單的關係或身分，只給 legends_03 句型的佔位用
+owner	主人	主人	inner	FUN_140b8eeb0 L1704853 case 0xd 寵物的主人：傳說「相關人物／勢力／據點」清單的關係或身分，只給 legends_03 句型的佔位用
+former spouse	前配偶	前配偶	inner	FUN_140b8eeb0 L1704856 case 0xe：傳說「相關人物／勢力／據點」清單的關係或身分，只給 legends_03 句型的佔位用
+former member	前成員	前成员	inner	FUN_140b8eeb0 L1704913 勢力身分 case 1：傳說「相關人物／勢力／據點」清單的關係或身分，只給 legends_03 句型的佔位用
+former mercenary	前傭兵	前佣兵	inner	FUN_140b8eeb0 L1704919 勢力身分 case 3：傳說「相關人物／勢力／據點」清單的關係或身分，只給 legends_03 句型的佔位用
+slave	奴隸	奴隶	inner	FUN_140b8eeb0 L1704922 勢力身分 case 4：傳說「相關人物／勢力／據點」清單的關係或身分，只給 legends_03 句型的佔位用
+former slave	前奴隸	前奴隶	inner	FUN_140b8eeb0 L1704925 勢力身分 case 5：傳說「相關人物／勢力／據點」清單的關係或身分，只給 legends_03 句型的佔位用
+former prisoner	前囚犯	前囚犯	inner	FUN_140b8eeb0 L1704931 勢力身分 case 7：傳說「相關人物／勢力／據點」清單的關係或身分，只給 legends_03 句型的佔位用
+enemy	敵人	敌人	inner	FUN_140b8eeb0 L1704934 勢力身分 case 8：傳說「相關人物／勢力／據點」清單的關係或身分，只給 legends_03 句型的佔位用
+associated civilization	相關文明	相关文明	inner	FUN_140b8eeb0 L1705301 神祇頁：信奉的文明：傳說「相關人物／勢力／據點」清單的關係或身分，只給 legends_03 句型的佔位用
+militant worshippers	好戰信徒	好战信徒	inner	FUN_140b8eeb0 L1705306 神祇頁：信奉的團體（種類 6）：傳說「相關人物／勢力／據點」清單的關係或身分，只給 legends_03 句型的佔位用
+religious worshippers	宗教信徒	宗教信徒	inner	FUN_140b8eeb0 L1705310 神祇頁：信奉的宗教：傳說「相關人物／勢力／據點」清單的關係或身分，只給 legends_03 句型的佔位用
+site occ	工作地點	工作地点	inner	FUN_140b8eeb0 L1705874 據點關係 case 0（原文被截斷，site occupation：任職的據點）：傳說「相關人物／勢力／據點」清單的關係或身分，只給 legends_03 句型的佔位用
+seat of power	權力中心	权力中心	inner	FUN_140b8eeb0 L1705878 據點關係 case 1：傳說「相關人物／勢力／據點」清單的關係或身分，只給 legends_03 句型的佔位用
+hangout	常去之處	常去之处	inner	FUN_140b8eeb0 L1705882 據點關係 case 2：傳說「相關人物／勢力／據點」清單的關係或身分，只給 legends_03 句型的佔位用
+home	住所	住所	inner	FUN_140b8eeb0 L1705889 據點關係 case 3/4/6/7：傳說「相關人物／勢力／據點」清單的關係或身分，只給 legends_03 句型的佔位用
+prison	監獄	监狱	inner	FUN_140b8eeb0 L1705898 據點關係 case 8/9：傳說「相關人物／勢力／據點」清單的關係或身分，只給 legends_03 句型的佔位用
+deceased spouse	已故配偶	已故配偶	inner	FUN_140b8eeb0 L1704859 相關人物 case 0xf：-w 查得到是靠別的句型拼出，{@n} 要整句條目，所以補一條

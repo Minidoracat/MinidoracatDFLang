@@ -131,16 +131,16 @@ the giving up on being a {%1} of {2} in {3}	{2}在{3}放棄{1}的身分	{2}在{3
 the career change from {%1} to {%2} of {3} in {4}	{3}在{4}從{1}轉行為{2}	{3}在{4}从{1}转行为{2}	inner	FUN_140b75c00 L1689279 change_hf_job 短語
 the start as a {%1} of {2} in {3}	{2}在{3}開始當{1}	{2}在{3}开始当{1}	inner	FUN_140b75c00 L1689279 change_hf_job 短語
 the loss of a hist fig entry of {1} in {2}	{1}在{2}遺失歷史人物條目	{1}在{2}丢失历史人物条目	inner	FUN_140b75c00 L1689279 change_hf_job 短語
-{1} arose from {2} within {3}.	{1}從{2}的{3}中爬起。	{1}从{2}的{3}中爬起。	inner	FUN_140b76120 L1689494 change_hf_body_state 完整句：據點 within 建築
-{1} arose from {2}.	{1}從{2}中爬起。	{1}从{2}中爬起。	inner	FUN_140b76120 L1689494 change_hf_body_state 完整句：據點、地區、地底層或 the wilds
+{1} arose from {2} within {3}.	{1}從{2}的{3}中起身。	{1}从{2}的{3}中起身。	inner	FUN_140b76120 L1689494 change_hf_body_state 完整句：據點 within 建築
+{1} arose from {2}.	{1}從{2}中起身。	{1}从{2}中起身。	inner	FUN_140b76120 L1689494 change_hf_body_state 完整句：據點、地區、地底層或 the wilds
 {1} was buried in {2} within {3}.	{1}被安葬於{2}的{3}。	{1}被安葬于{2}的{3}。	inner	FUN_140b76120 L1689494 change_hf_body_state 完整句：據點 within 建築
 {1} was buried in {2}.	{1}被安葬於{2}。	{1}被安葬于{2}。	inner	FUN_140b76120 L1689494 change_hf_body_state 完整句：據點、地區、地底層或 the wilds
 {1} was discarded in {2} within {3}.	{1}的遺體被棄置於{2}的{3}。	{1}的遗体被弃置于{2}的{3}。	inner	FUN_140b76120 L1689494 change_hf_body_state 完整句：據點 within 建築
 {1} was discarded in {2}.	{1}的遺體被棄置於{2}。	{1}的遗体被弃置于{2}。	inner	FUN_140b76120 L1689494 change_hf_body_state 完整句：據點、地區、地底層或 the wilds
 {1} was entombed in {2} within {3}.	{1}被葬入{2}的{3}。	{1}被葬入{2}的{3}。	inner	FUN_140b76120 L1689494 change_hf_body_state 完整句：據點 within 建築
 {1} was entombed in {2}.	{1}被葬入{2}。	{1}被葬入{2}。	inner	FUN_140b76120 L1689494 change_hf_body_state 完整句：據點、地區、地底層或 the wilds
-the raising of {1} in  {2} within {3}	{1}在{2}的{3}中爬起	{1}在{2}的{3}中爬起	inner	FUN_140b76340 L1689563 change_hf_body_state 短語；in 與地名之間遊戲寫了兩個空白
-the raising of {1} in  {2}	{1}在{2}中爬起	{1}在{2}中爬起	inner	FUN_140b76340 L1689563 change_hf_body_state 短語；in 與地名之間遊戲寫了兩個空白
+the raising of {1} in  {2} within {3}	{1}的遺體在{2}的{3}被喚起	{1}的遗体在{2}的{3}被唤起	inner	FUN_140b76340 L1689563 change_hf_body_state 短語；in 與地名之間遊戲寫了兩個空白；raising 是遺體被喚起成為不死者
+the raising of {1} in  {2}	{1}的遺體在{2}被喚起	{1}的遗体在{2}被唤起	inner	FUN_140b76340 L1689563 change_hf_body_state 短語；in 與地名之間遊戲寫了兩個空白；raising 是遺體被喚起成為不死者
 the burial of {1} in  {2} within {3}	{1}安葬於{2}的{3}	{1}安葬于{2}的{3}	inner	FUN_140b76340 L1689563 change_hf_body_state 短語；in 與地名之間遊戲寫了兩個空白
 the burial of {1} in  {2}	{1}安葬於{2}	{1}安葬于{2}	inner	FUN_140b76340 L1689563 change_hf_body_state 短語；in 與地名之間遊戲寫了兩個空白
 the discarding of {1} in  {2} within {3}	{1}的遺體被棄置於{2}的{3}	{1}的遗体被弃置于{2}的{3}	inner	FUN_140b76340 L1689563 change_hf_body_state 短語；in 與地名之間遊戲寫了兩個空白

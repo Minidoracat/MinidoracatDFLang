@@ -1,0 +1,473 @@
+en	zh-Hant	zh-Hans	align	note
+{@1} spouse	{1}配偶	{1}配偶		creatures.lua 807-856 夜行生物：配偶 caste＝flavor_adj 名詞＋spouse（847）；{@1} 只收整句條目的稱呼，免得吞進「連結, deceased」
+spouse of the {@1}	{1}的配偶	{1}的配偶		creatures.lua 807-856 夜行生物：配偶 caste＝spouse of the flavor_adj 名詞（849）
+{@1} mate	{1}伴侶	{1}伴侣		creatures.lua 807-856 夜行生物：配偶 caste＝flavor_adj 名詞＋mate（847）；{@1} 只收整句條目的稱呼，免得吞進「連結, deceased」
+mate of the {@1}	{1}的伴侶	{1}的伴侣		creatures.lua 807-856 夜行生物：配偶 caste＝mate of the flavor_adj 名詞（849）
+{@1} consort	{1}眷侶	{1}眷侣		creatures.lua 807-856 夜行生物：配偶 caste＝flavor_adj 名詞＋consort（847）；{@1} 只收整句條目的稱呼，免得吞進「連結, deceased」
+consort of the {@1}	{1}的眷侶	{1}的眷侣		creatures.lua 807-856 夜行生物：配偶 caste＝consort of the flavor_adj 名詞（849）
+{@1} wife	{1}妻子	{1}妻子		creatures.lua 807-856 夜行生物：配偶 caste＝flavor_adj 名詞＋wife（847）；{@1} 只收整句條目的稱呼，免得吞進「連結, deceased」
+wife of the {@1}	{1}的妻子	{1}的妻子		creatures.lua 807-856 夜行生物：配偶 caste＝wife of the flavor_adj 名詞（849）
+{@1} bride	{1}新娘	{1}新娘		creatures.lua 807-856 夜行生物：配偶 caste＝flavor_adj 名詞＋bride（847）；{@1} 只收整句條目的稱呼，免得吞進「連結, deceased」
+bride of the {@1}	{1}的新娘	{1}的新娘		creatures.lua 807-856 夜行生物：配偶 caste＝bride of the flavor_adj 名詞（849）
+{@1} husband	{1}丈夫	{1}丈夫		creatures.lua 807-856 夜行生物：配偶 caste＝flavor_adj 名詞＋husband（847）；{@1} 只收整句條目的稱呼，免得吞進「連結, deceased」
+husband of the {@1}	{1}的丈夫	{1}的丈夫		creatures.lua 807-856 夜行生物：配偶 caste＝husband of the flavor_adj 名詞（849）
+{@1} bridegroom	{1}新郎	{1}新郎		creatures.lua 807-856 夜行生物：配偶 caste＝flavor_adj 名詞＋bridegroom（847）；{@1} 只收整句條目的稱呼，免得吞進「連結, deceased」
+bridegroom of the {@1}	{1}的新郎	{1}的新郎		creatures.lua 807-856 夜行生物：配偶 caste＝bridegroom of the flavor_adj 名詞（849）
+{@1} groom	{1}新郎	{1}新郎		creatures.lua 807-856 夜行生物：配偶 caste＝flavor_adj 名詞＋groom（847）；{@1} 只收整句條目的稱呼，免得吞進「連結, deceased」
+groom of the {@1}	{1}的新郎	{1}的新郎		creatures.lua 807-856 夜行生物：配偶 caste＝groom of the flavor_adj 名詞（849）
+demon of {%1}	{1}之惡魔	{1}之恶魔		creatures.lua 481-510 惡魔：名詞 of name_mat／結尾片語（486、499）
+{@1} demon	{1}惡魔	{1}恶魔		creatures.lua 481-510 惡魔：rcp 名／flavor_adj／name_mat＋名詞（490-506）
+devil of {%1}	{1}之魔鬼	{1}之魔鬼		creatures.lua 481-510 惡魔：名詞 of name_mat／結尾片語（486、499）
+{@1} devil	{1}魔鬼	{1}魔鬼		creatures.lua 481-510 惡魔：rcp 名／flavor_adj／name_mat＋名詞（490-506）
+fiend of {%1}	{1}之惡鬼	{1}之恶鬼		creatures.lua 481-510 惡魔：名詞 of name_mat／結尾片語（486、499）
+{@1} fiend	{1}惡鬼	{1}恶鬼		creatures.lua 481-510 惡魔：rcp 名／flavor_adj／name_mat＋名詞（490-506）
+brute of {%1}	{1}之蠻獸	{1}之蛮兽		creatures.lua 481-510 惡魔：名詞 of name_mat／結尾片語（486、499）
+{@1} brute	{1}蠻獸	{1}蛮兽		creatures.lua 481-510 惡魔：rcp 名／flavor_adj／name_mat＋名詞（490-506）
+monster of {%1}	{1}之怪物	{1}之怪物		creatures.lua 481-510 惡魔：名詞 of name_mat／結尾片語（486、499）
+{@1} monster	{1}怪物	{1}怪物		creatures.lua 481-510 惡魔：rcp 名／flavor_adj／name_mat＋名詞（490-506）
+spirit of {%1}	{1}之靈體	{1}之灵体		creatures.lua 481-510 惡魔：名詞 of name_mat／結尾片語（486、499）
+{@1} spirit	{1}靈體	{1}灵体		creatures.lua 481-510 惡魔：rcp 名／flavor_adj／name_mat＋名詞（490-506）
+ghost of {%1}	{1}之鬼魂	{1}之鬼魂		creatures.lua 481-510 惡魔：名詞 of name_mat／結尾片語（486、499）
+{@1} ghost	{1}鬼魂	{1}鬼魂		creatures.lua 481-510 惡魔：rcp 名／flavor_adj／name_mat＋名詞（490-506）
+banshee of {%1}	{1}之報喪女妖	{1}之报丧女妖		creatures.lua 481-510 惡魔：名詞 of name_mat／結尾片語（486、499）
+{@1} banshee	{1}報喪女妖	{1}报丧女妖		creatures.lua 481-510 惡魔：rcp 名／flavor_adj／name_mat＋名詞（490-506）
+haunt of {%1}	{1}之怨靈	{1}之怨灵		creatures.lua 481-510 惡魔：名詞 of name_mat／結尾片語（486、499）
+{@1} haunt	{1}怨靈	{1}怨灵		creatures.lua 481-510 惡魔：rcp 名／flavor_adj／name_mat＋名詞（490-506）
+phantom of {%1}	{1}之魅影	{1}之魅影		creatures.lua 481-510 惡魔：名詞 of name_mat／結尾片語（486、499）
+{@1} phantom	{1}魅影	{1}魅影		creatures.lua 481-510 惡魔：rcp 名／flavor_adj／name_mat＋名詞（490-506）
+specter of {%1}	{1}之幽靈	{1}之幽灵		creatures.lua 481-510 惡魔：名詞 of name_mat／結尾片語（486、499）
+{@1} specter	{1}幽靈	{1}幽灵		creatures.lua 481-510 惡魔：rcp 名／flavor_adj／name_mat＋名詞（490-506）
+wraith of {%1}	{1}之亡靈	{1}之亡灵		creatures.lua 481-510 惡魔：名詞 of name_mat／結尾片語（486、499）
+{@1} wraith	{1}亡靈	{1}亡灵		creatures.lua 481-510 惡魔：rcp 名／flavor_adj／name_mat＋名詞（490-506）
+{@1} bone servant	{1}骸骨僕從	{1}骸骨仆从		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} dark servant	{1}黑暗僕從	{1}黑暗仆从		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} noon servant	{1}正午僕從	{1}正午仆从		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} shadow servant	{1}暗影僕從	{1}暗影仆从		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} star servant	{1}星辰僕從	{1}星辰仆从		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} servant of noon	{1}正午僕從	{1}正午仆从		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} servant of shadow	{1}暗影僕從	{1}暗影仆从		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} servant of sleep	{1}睡眠僕從	{1}睡眠仆从		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} servant of stars	{1}星辰僕從	{1}星辰仆从		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} servant of the noon	{1}正午僕從	{1}正午仆从		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} bone follower	{1}骸骨追隨者	{1}骸骨追随者		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} dark follower	{1}黑暗追隨者	{1}黑暗追随者		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} noon follower	{1}正午追隨者	{1}正午追随者		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} shadow follower	{1}暗影追隨者	{1}暗影追随者		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} star follower	{1}星辰追隨者	{1}星辰追随者		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} follower of noon	{1}正午追隨者	{1}正午追随者		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} follower of shadow	{1}暗影追隨者	{1}暗影追随者		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} follower of sleep	{1}睡眠追隨者	{1}睡眠追随者		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} follower of stars	{1}星辰追隨者	{1}星辰追随者		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} follower of the noon	{1}正午追隨者	{1}正午追随者		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} bone cultist	{1}骸骨邪教徒	{1}骸骨邪教徒		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} dark cultist	{1}黑暗邪教徒	{1}黑暗邪教徒		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} noon cultist	{1}正午邪教徒	{1}正午邪教徒		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} shadow cultist	{1}暗影邪教徒	{1}暗影邪教徒		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} star cultist	{1}星辰邪教徒	{1}星辰邪教徒		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} cultist of noon	{1}正午邪教徒	{1}正午邪教徒		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} cultist of shadow	{1}暗影邪教徒	{1}暗影邪教徒		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} cultist of sleep	{1}睡眠邪教徒	{1}睡眠邪教徒		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} cultist of stars	{1}星辰邪教徒	{1}星辰邪教徒		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} cultist of the noon	{1}正午邪教徒	{1}正午邪教徒		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} bone worshipper	{1}骸骨信徒	{1}骸骨信徒		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} dark worshipper	{1}黑暗信徒	{1}黑暗信徒		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} noon worshipper	{1}正午信徒	{1}正午信徒		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} shadow worshipper	{1}暗影信徒	{1}暗影信徒		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} star worshipper	{1}星辰信徒	{1}星辰信徒		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} worshipper of noon	{1}正午信徒	{1}正午信徒		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} worshipper of shadow	{1}暗影信徒	{1}暗影信徒		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} worshipper of sleep	{1}睡眠信徒	{1}睡眠信徒		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} worshipper of stars	{1}星辰信徒	{1}星辰信徒		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} worshipper of the noon	{1}正午信徒	{1}正午信徒		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} bone adept	{1}骸骨術士	{1}骸骨术士		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）；神話力量的修行者，不是技能等級；術語例外：Adept；死靈法術的「術士」，不是技能等級；術語例外：adept
+{@1} dark adept	{1}黑暗術士	{1}黑暗术士		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）；神話力量的修行者，不是技能等級；術語例外：Adept；死靈法術的「術士」，不是技能等級；術語例外：adept
+{@1} noon adept	{1}正午術士	{1}正午术士		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）；神話力量的修行者，不是技能等級；術語例外：Adept；死靈法術的「術士」，不是技能等級；術語例外：adept
+{@1} shadow adept	{1}暗影術士	{1}暗影术士		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）；神話力量的修行者，不是技能等級；術語例外：Adept；死靈法術的「術士」，不是技能等級；術語例外：adept
+{@1} star adept	{1}星辰術士	{1}星辰术士		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）；神話力量的修行者，不是技能等級；術語例外：Adept；死靈法術的「術士」，不是技能等級；術語例外：adept
+{@1} adept of noon	{1}正午術士	{1}正午术士		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）；神話力量的修行者，不是技能等級；術語例外：Adept；死靈法術的「術士」，不是技能等級；術語例外：adept
+{@1} adept of shadow	{1}暗影術士	{1}暗影术士		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）；神話力量的修行者，不是技能等級；術語例外：Adept；死靈法術的「術士」，不是技能等級；術語例外：adept
+{@1} adept of sleep	{1}睡眠術士	{1}睡眠术士		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）；神話力量的修行者，不是技能等級；術語例外：Adept；死靈法術的「術士」，不是技能等級；術語例外：adept
+{@1} adept of stars	{1}星辰術士	{1}星辰术士		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）；神話力量的修行者，不是技能等級；術語例外：Adept；死靈法術的「術士」，不是技能等級；術語例外：adept
+{@1} adept of the noon	{1}正午術士	{1}正午术士		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）；神話力量的修行者，不是技能等級；術語例外：Adept；死靈法術的「術士」，不是技能等級；術語例外：adept
+{@1} bone priest	{1}骸骨祭司	{1}骸骨祭司		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} dark priest	{1}黑暗祭司	{1}黑暗祭司		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} noon priest	{1}正午祭司	{1}正午祭司		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} shadow priest	{1}暗影祭司	{1}暗影祭司		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} star priest	{1}星辰祭司	{1}星辰祭司		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} priest of noon	{1}正午祭司	{1}正午祭司		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} priest of shadow	{1}暗影祭司	{1}暗影祭司		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} priest of sleep	{1}睡眠祭司	{1}睡眠祭司		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} priest of stars	{1}星辰祭司	{1}星辰祭司		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} priest of the noon	{1}正午祭司	{1}正午祭司		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} bone cleric	{1}骸骨神官	{1}骸骨神官		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} dark cleric	{1}黑暗神官	{1}黑暗神官		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} noon cleric	{1}正午神官	{1}正午神官		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} shadow cleric	{1}暗影神官	{1}暗影神官		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} star cleric	{1}星辰神官	{1}星辰神官		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} cleric of noon	{1}正午神官	{1}正午神官		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} cleric of shadow	{1}暗影神官	{1}暗影神官		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} cleric of sleep	{1}睡眠神官	{1}睡眠神官		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} cleric of stars	{1}星辰神官	{1}星辰神官		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} cleric of the noon	{1}正午神官	{1}正午神官		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} bone shaman	{1}骸骨薩滿	{1}骸骨萨满		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} dark shaman	{1}黑暗薩滿	{1}黑暗萨满		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} noon shaman	{1}正午薩滿	{1}正午萨满		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} shadow shaman	{1}暗影薩滿	{1}暗影萨满		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} star shaman	{1}星辰薩滿	{1}星辰萨满		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} shaman of noon	{1}正午薩滿	{1}正午萨满		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} shaman of shadow	{1}暗影薩滿	{1}暗影萨满		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} shaman of sleep	{1}睡眠薩滿	{1}睡眠萨满		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} shaman of stars	{1}星辰薩滿	{1}星辰萨满		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} shaman of the noon	{1}正午薩滿	{1}正午萨满		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} bone lord	{1}骸骨領主	{1}骸骨领主		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} dark lord	{1}黑暗領主	{1}黑暗领主		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} noon lord	{1}正午領主	{1}正午领主		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} shadow lord	{1}暗影領主	{1}暗影领主		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} star lord	{1}星辰領主	{1}星辰领主		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} lord of noon	{1}正午領主	{1}正午领主		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} lord of shadow	{1}暗影領主	{1}暗影领主		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} lord of sleep	{1}睡眠領主	{1}睡眠领主		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} lord of stars	{1}星辰領主	{1}星辰领主		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} lord of the noon	{1}正午領主	{1}正午领主		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} bone master	{1}骸骨主宰	{1}骸骨主宰		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} dark master	{1}黑暗主宰	{1}黑暗主宰		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} noon master	{1}正午主宰	{1}正午主宰		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} shadow master	{1}暗影主宰	{1}暗影主宰		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} star master	{1}星辰主宰	{1}星辰主宰		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} master of noon	{1}正午主宰	{1}正午主宰		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} master of shadow	{1}暗影主宰	{1}暗影主宰		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} master of sleep	{1}睡眠主宰	{1}睡眠主宰		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} master of stars	{1}星辰主宰	{1}星辰主宰		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} master of the noon	{1}正午主宰	{1}正午主宰		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} bone ancient	{1}骸骨古老者	{1}骸骨古老者		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} dark ancient	{1}黑暗古老者	{1}黑暗古老者		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} noon ancient	{1}正午古老者	{1}正午古老者		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} shadow ancient	{1}暗影古老者	{1}暗影古老者		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} star ancient	{1}星辰古老者	{1}星辰古老者		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} ancient of noon	{1}正午古老者	{1}正午古老者		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} ancient of shadow	{1}暗影古老者	{1}暗影古老者		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} ancient of sleep	{1}睡眠古老者	{1}睡眠古老者		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} ancient of stars	{1}星辰古老者	{1}星辰古老者		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} ancient of the noon	{1}正午古老者	{1}正午古老者		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} bone elder	{1}骸骨長老	{1}骸骨长老		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} dark elder	{1}黑暗長老	{1}黑暗长老		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} noon elder	{1}正午長老	{1}正午长老		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} shadow elder	{1}暗影長老	{1}暗影长老		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} star elder	{1}星辰長老	{1}星辰长老		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} elder of noon	{1}正午長老	{1}正午长老		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} elder of shadow	{1}暗影長老	{1}暗影长老		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} elder of sleep	{1}睡眠長老	{1}睡眠长老		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} elder of stars	{1}星辰長老	{1}星辰长老		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} elder of the noon	{1}正午長老	{1}正午长老		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} night one	{1}夜晚者	{1}夜晚者		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} risen one	{1}復甦者	{1}复苏者		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} sunless one	{1}無光者	{1}无光者		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} dark corpse	{1}黑暗屍體	{1}黑暗尸体		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} dark ghoul	{1}黑暗食屍鬼	{1}黑暗食尸鬼		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} dark zombie	{1}黑暗殭屍	{1}黑暗僵尸		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} dark stalker	{1}黑暗潛獵者	{1}黑暗潜猎者		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} dark butcher	{1}黑暗屠夫	{1}黑暗屠夫		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} dark hunter	{1}黑暗獵人	{1}黑暗猎人		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} dark slayer	{1}黑暗殺手	{1}黑暗杀手		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} dark one	{1}黑暗者	{1}黑暗者		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} pale one	{1}蒼白者	{1}苍白者		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} returned one	{1}歸來者	{1}归来者		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} hollow one	{1}空洞者	{1}空洞者		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} cold one	{1}寒冷者	{1}寒冷者		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} gaunt one	{1}枯槁者	{1}枯槁者		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} doomed one	{1}末路者	{1}末路者		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} death one	{1}死亡者	{1}死亡者		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} empty one	{1}空虛者	{1}空虚者		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} void one	{1}虛無者	{1}虚无者		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} fallen one	{1}墮落者	{1}堕落者		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} fell one	{1}兇殘者	{1}凶残者		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} cursed one	{1}受詛咒者	{1}受诅咒者		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} damned one	{1}天譴者	{1}天谴者		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} lost one	{1}迷失者	{1}迷失者		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} ruined one	{1}殘破者	{1}残破者		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} dismal one	{1}陰鬱者	{1}阴郁者		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} fetid one	{1}惡臭者	{1}恶臭者		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} rotten one	{1}腐爛者	{1}腐烂者		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} putrid one	{1}腐臭者	{1}腐臭者		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} corrupted one	{1}腐化者	{1}腐化者		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} bitter one	{1}苦澀者	{1}苦涩者		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} bleak one	{1}淒冷者	{1}凄冷者		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} frozen one	{1}冰凍者	{1}冰冻者		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} faded one	{1}黯淡者	{1}黯淡者		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} faint corpse	{1}幽微屍體	{1}幽微尸体		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} faint ghoul	{1}幽微食屍鬼	{1}幽微食尸鬼		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} faint zombie	{1}幽微殭屍	{1}幽微僵尸		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} faint stalker	{1}幽微潛獵者	{1}幽微潜猎者		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} faint butcher	{1}幽微屠夫	{1}幽微屠夫		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} faint hunter	{1}幽微獵人	{1}幽微猎人		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} faint slayer	{1}幽微殺手	{1}幽微杀手		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} faint one	{1}幽微者	{1}幽微者		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} sallow one	{1}蠟黃者	{1}蜡黄者		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} forlorn one	{1}孤寂者	{1}孤寂者		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} grim one	{1}猙獰者	{1}狰狞者		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} wasting one	{1}衰朽者	{1}衰朽者		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} crypt one	{1}墓穴者	{1}墓穴者		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} tomb one	{1}墓室者	{1}墓室者		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} entombed one	{1}入殮者	{1}入殓者		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} buried one	{1}埋葬者	{1}埋葬者		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} once-resting one	{1}曾安息者	{1}曾安息者		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} sanctified one	{1}聖化者	{1}圣化者		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} sacred one	{1}神聖者	{1}神圣者		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} profane one	{1}褻瀆者	{1}亵渎者		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} mausoleum one	{1}陵墓者	{1}陵墓者		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} coffin one	{1}棺材者	{1}棺材者		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} grave one	{1}墳墓者	{1}坟墓者		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} sepulcher one	{1}墓窖者	{1}墓窖者		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} interred one	{1}下葬者	{1}下葬者		FUN_140c2b870 人物頁 種族＋curse 顯示名；secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名（整句條目的種族組合，寫在通用句型前）
+{@1} servant below	{1}地底僕從	{1}地底仆从		mythical.lua 263-286 顯示名；前接種族
+{@1} servant mud	{1}泥沼僕從	{1}泥沼仆从		mythical.lua 263-286 顯示名；前接種族
+{@1} servant of {%2}	{1}{2}僕從	{1}{2}仆从		mythical.lua 263-286 顯示名：種族＋名詞 of 片語
+servant of {%1}	{1}僕從	{1}仆从		mythical.lua 263-286 顯示名：名詞 of 片語
+{@1} {@2} servant	{1}{2}僕從	{1}{2}仆从		mythical.lua 263-286 顯示名：種族＋形容詞＋名詞
+{@1} servant	{1}僕從	{1}仆从		mythical.lua 263-286 顯示名：形容詞＋名詞
+{@1} follower below	{1}地底追隨者	{1}地底追随者		mythical.lua 263-286 顯示名；前接種族
+{@1} follower mud	{1}泥沼追隨者	{1}泥沼追随者		mythical.lua 263-286 顯示名；前接種族
+{@1} follower of {%2}	{1}{2}追隨者	{1}{2}追随者		mythical.lua 263-286 顯示名：種族＋名詞 of 片語
+follower of {%1}	{1}追隨者	{1}追随者		mythical.lua 263-286 顯示名：名詞 of 片語
+{@1} {@2} follower	{1}{2}追隨者	{1}{2}追随者		mythical.lua 263-286 顯示名：種族＋形容詞＋名詞
+{@1} follower	{1}追隨者	{1}追随者		mythical.lua 263-286 顯示名：形容詞＋名詞
+{@1} cultist below	{1}地底邪教徒	{1}地底邪教徒		mythical.lua 263-286 顯示名；前接種族
+{@1} cultist mud	{1}泥沼邪教徒	{1}泥沼邪教徒		mythical.lua 263-286 顯示名；前接種族
+{@1} cultist of {%2}	{1}{2}邪教徒	{1}{2}邪教徒		mythical.lua 263-286 顯示名：種族＋名詞 of 片語
+cultist of {%1}	{1}邪教徒	{1}邪教徒		mythical.lua 263-286 顯示名：名詞 of 片語
+{@1} {@2} cultist	{1}{2}邪教徒	{1}{2}邪教徒		mythical.lua 263-286 顯示名：種族＋形容詞＋名詞
+{@1} cultist	{1}邪教徒	{1}邪教徒		mythical.lua 263-286 顯示名：形容詞＋名詞
+{@1} worshipper below	{1}地底信徒	{1}地底信徒		mythical.lua 263-286 顯示名；前接種族
+{@1} worshipper mud	{1}泥沼信徒	{1}泥沼信徒		mythical.lua 263-286 顯示名；前接種族
+{@1} worshipper of {%2}	{1}{2}信徒	{1}{2}信徒		mythical.lua 263-286 顯示名：種族＋名詞 of 片語
+worshipper of {%1}	{1}信徒	{1}信徒		mythical.lua 263-286 顯示名：名詞 of 片語
+{@1} {@2} worshipper	{1}{2}信徒	{1}{2}信徒		mythical.lua 263-286 顯示名：種族＋形容詞＋名詞
+{@1} worshipper	{1}信徒	{1}信徒		mythical.lua 263-286 顯示名：形容詞＋名詞
+{@1} adept below	{1}地底術士	{1}地底术士		mythical.lua 263-286 顯示名；前接種族；神話力量的修行者，不是技能等級；術語例外：Adept；死靈法術的「術士」，不是技能等級；術語例外：adept
+{@1} adept mud	{1}泥沼術士	{1}泥沼术士		mythical.lua 263-286 顯示名；前接種族；神話力量的修行者，不是技能等級；術語例外：Adept；死靈法術的「術士」，不是技能等級；術語例外：adept
+{@1} adept of {%2}	{1}{2}術士	{1}{2}术士		mythical.lua 263-286 顯示名：種族＋名詞 of 片語；神話力量的修行者，不是技能等級；術語例外：Adept；死靈法術的「術士」，不是技能等級；術語例外：adept
+adept of {%1}	{1}術士	{1}术士		mythical.lua 263-286 顯示名：名詞 of 片語；神話力量的修行者，不是技能等級；術語例外：Adept；死靈法術的「術士」，不是技能等級；術語例外：adept
+{@1} {@2} adept	{1}{2}術士	{1}{2}术士		mythical.lua 263-286 顯示名：種族＋形容詞＋名詞；神話力量的修行者，不是技能等級；術語例外：Adept；死靈法術的「術士」，不是技能等級；術語例外：adept
+{@1} adept	{1}術士	{1}术士		mythical.lua 263-286 顯示名：形容詞＋名詞；神話力量的修行者，不是技能等級；術語例外：Adept；死靈法術的「術士」，不是技能等級；術語例外：adept
+{@1} priest below	{1}地底祭司	{1}地底祭司		mythical.lua 263-286 顯示名；前接種族
+{@1} priest mud	{1}泥沼祭司	{1}泥沼祭司		mythical.lua 263-286 顯示名；前接種族
+{@1} priest of {%2}	{1}{2}祭司	{1}{2}祭司		mythical.lua 263-286 顯示名：種族＋名詞 of 片語
+priest of {%1}	{1}祭司	{1}祭司		mythical.lua 263-286 顯示名：名詞 of 片語
+{@1} {@2} priest	{1}{2}祭司	{1}{2}祭司		mythical.lua 263-286 顯示名：種族＋形容詞＋名詞
+{@1} priest	{1}祭司	{1}祭司		mythical.lua 263-286 顯示名：形容詞＋名詞
+{@1} cleric below	{1}地底神官	{1}地底神官		mythical.lua 263-286 顯示名；前接種族
+{@1} cleric mud	{1}泥沼神官	{1}泥沼神官		mythical.lua 263-286 顯示名；前接種族
+{@1} cleric of {%2}	{1}{2}神官	{1}{2}神官		mythical.lua 263-286 顯示名：種族＋名詞 of 片語
+cleric of {%1}	{1}神官	{1}神官		mythical.lua 263-286 顯示名：名詞 of 片語
+{@1} {@2} cleric	{1}{2}神官	{1}{2}神官		mythical.lua 263-286 顯示名：種族＋形容詞＋名詞
+{@1} cleric	{1}神官	{1}神官		mythical.lua 263-286 顯示名：形容詞＋名詞
+{@1} shaman below	{1}地底薩滿	{1}地底萨满		mythical.lua 263-286 顯示名；前接種族
+{@1} shaman mud	{1}泥沼薩滿	{1}泥沼萨满		mythical.lua 263-286 顯示名；前接種族
+{@1} shaman of {%2}	{1}{2}薩滿	{1}{2}萨满		mythical.lua 263-286 顯示名：種族＋名詞 of 片語
+shaman of {%1}	{1}薩滿	{1}萨满		mythical.lua 263-286 顯示名：名詞 of 片語
+{@1} {@2} shaman	{1}{2}薩滿	{1}{2}萨满		mythical.lua 263-286 顯示名：種族＋形容詞＋名詞
+{@1} shaman	{1}薩滿	{1}萨满		mythical.lua 263-286 顯示名：形容詞＋名詞
+{@1} lord below	{1}地底領主	{1}地底领主		mythical.lua 263-286 顯示名；前接種族
+{@1} lord mud	{1}泥沼領主	{1}泥沼领主		mythical.lua 263-286 顯示名；前接種族
+{@1} lord of {%2}	{1}{2}領主	{1}{2}领主		mythical.lua 263-286 顯示名：種族＋名詞 of 片語
+lord of {%1}	{1}領主	{1}领主		mythical.lua 263-286 顯示名：名詞 of 片語
+{@1} {@2} lord	{1}{2}領主	{1}{2}领主		mythical.lua 263-286 顯示名：種族＋形容詞＋名詞
+{@1} lord	{1}領主	{1}领主		mythical.lua 263-286 顯示名：形容詞＋名詞
+{@1} master below	{1}地底主宰	{1}地底主宰		mythical.lua 263-286 顯示名；前接種族
+{@1} master mud	{1}泥沼主宰	{1}泥沼主宰		mythical.lua 263-286 顯示名；前接種族
+{@1} master of {%2}	{1}{2}主宰	{1}{2}主宰		mythical.lua 263-286 顯示名：種族＋名詞 of 片語
+master of {%1}	{1}主宰	{1}主宰		mythical.lua 263-286 顯示名：名詞 of 片語
+{@1} {@2} master	{1}{2}主宰	{1}{2}主宰		mythical.lua 263-286 顯示名：種族＋形容詞＋名詞
+{@1} master	{1}主宰	{1}主宰		mythical.lua 263-286 顯示名：形容詞＋名詞
+{@1} ancient below	{1}地底古老者	{1}地底古老者		mythical.lua 263-286 顯示名；前接種族
+{@1} ancient mud	{1}泥沼古老者	{1}泥沼古老者		mythical.lua 263-286 顯示名；前接種族
+{@1} ancient of {%2}	{1}{2}古老者	{1}{2}古老者		mythical.lua 263-286 顯示名：種族＋名詞 of 片語
+ancient of {%1}	{1}古老者	{1}古老者		mythical.lua 263-286 顯示名：名詞 of 片語
+{@1} {@2} ancient	{1}{2}古老者	{1}{2}古老者		mythical.lua 263-286 顯示名：種族＋形容詞＋名詞
+{@1} ancient	{1}古老者	{1}古老者		mythical.lua 263-286 顯示名：形容詞＋名詞
+{@1} elder below	{1}地底長老	{1}地底长老		mythical.lua 263-286 顯示名；前接種族
+{@1} elder mud	{1}泥沼長老	{1}泥沼长老		mythical.lua 263-286 顯示名；前接種族
+{@1} elder of {%2}	{1}{2}長老	{1}{2}长老		mythical.lua 263-286 顯示名：種族＋名詞 of 片語
+elder of {%1}	{1}長老	{1}长老		mythical.lua 263-286 顯示名：名詞 of 片語
+{@1} {@2} elder	{1}{2}長老	{1}{2}长老		mythical.lua 263-286 顯示名：種族＋形容詞＋名詞
+{@1} elder	{1}長老	{1}长老		mythical.lua 263-286 顯示名：形容詞＋名詞
+{@1} {@2} mist husk	{1}{2}迷霧屍殼	{1}{2}迷雾尸壳		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names；前接種族
+{@1} mist husk	{1}迷霧屍殼	{1}迷雾尸壳		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names
+{@1} {@2} mist zombie	{1}{2}迷霧殭屍	{1}{2}迷雾僵尸		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names；前接種族
+{@1} mist zombie	{1}迷霧殭屍	{1}迷雾僵尸		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names
+{@1} {@2} mist thrall	{1}{2}迷霧屍奴	{1}{2}迷雾尸奴		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names；前接種族
+{@1} mist thrall	{1}迷霧屍奴	{1}迷雾尸奴		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names
+{@1} {@2} dust husk	{1}{2}塵埃屍殼	{1}{2}尘埃尸壳		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names；前接種族
+{@1} dust husk	{1}塵埃屍殼	{1}尘埃尸壳		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names
+{@1} {@2} dust zombie	{1}{2}塵埃殭屍	{1}{2}尘埃僵尸		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names；前接種族
+{@1} dust zombie	{1}塵埃殭屍	{1}尘埃僵尸		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names
+{@1} {@2} dust thrall	{1}{2}塵埃屍奴	{1}{2}尘埃尸奴		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names；前接種族
+{@1} dust thrall	{1}塵埃屍奴	{1}尘埃尸奴		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names
+{@1} {@2} ash husk	{1}{2}灰燼屍殼	{1}{2}灰烬尸壳		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names；前接種族
+{@1} ash husk	{1}灰燼屍殼	{1}灰烬尸壳		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names
+{@1} {@2} ash zombie	{1}{2}灰燼殭屍	{1}{2}灰烬僵尸		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names；前接種族
+{@1} ash zombie	{1}灰燼殭屍	{1}灰烬僵尸		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names
+{@1} {@2} ash thrall	{1}{2}灰燼屍奴	{1}{2}灰烬尸奴		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names；前接種族
+{@1} ash thrall	{1}灰燼屍奴	{1}灰烬尸奴		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names
+{@1} {@2} soot husk	{1}{2}煤灰屍殼	{1}{2}煤灰尸壳		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names；前接種族
+{@1} soot husk	{1}煤灰屍殼	{1}煤灰尸壳		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names
+{@1} {@2} soot zombie	{1}{2}煤灰殭屍	{1}{2}煤灰僵尸		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names；前接種族
+{@1} soot zombie	{1}煤灰殭屍	{1}煤灰僵尸		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names
+{@1} {@2} soot thrall	{1}{2}煤灰屍奴	{1}{2}煤灰尸奴		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names；前接種族
+{@1} soot thrall	{1}煤灰屍奴	{1}煤灰尸奴		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names
+{@1} {@2} fog husk	{1}{2}濃霧屍殼	{1}{2}浓雾尸壳		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names；前接種族
+{@1} fog husk	{1}濃霧屍殼	{1}浓雾尸壳		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names
+{@1} {@2} fog zombie	{1}{2}濃霧殭屍	{1}{2}浓雾僵尸		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names；前接種族
+{@1} fog zombie	{1}濃霧殭屍	{1}浓雾僵尸		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names
+{@1} {@2} fog thrall	{1}{2}濃霧屍奴	{1}{2}浓雾尸奴		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names；前接種族
+{@1} fog thrall	{1}濃霧屍奴	{1}浓雾尸奴		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names
+{@1} {@2} gloom husk	{1}{2}陰霾屍殼	{1}{2}阴霾尸壳		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names；前接種族
+{@1} gloom husk	{1}陰霾屍殼	{1}阴霾尸壳		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names
+{@1} {@2} gloom zombie	{1}{2}陰霾殭屍	{1}{2}阴霾僵尸		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names；前接種族
+{@1} gloom zombie	{1}陰霾殭屍	{1}阴霾僵尸		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names
+{@1} {@2} gloom thrall	{1}{2}陰霾屍奴	{1}{2}阴霾尸奴		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names；前接種族
+{@1} gloom thrall	{1}陰霾屍奴	{1}阴霾尸奴		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names
+{@1} {@2} murk husk	{1}{2}幽霧屍殼	{1}{2}幽雾尸壳		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names；前接種族
+{@1} murk husk	{1}幽霧屍殼	{1}幽雾尸壳		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names
+{@1} {@2} murk zombie	{1}{2}幽霧殭屍	{1}{2}幽雾僵尸		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names；前接種族
+{@1} murk zombie	{1}幽霧殭屍	{1}幽雾僵尸		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names
+{@1} {@2} murk thrall	{1}{2}幽霧屍奴	{1}{2}幽雾尸奴		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names；前接種族
+{@1} murk thrall	{1}幽霧屍奴	{1}幽雾尸奴		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names
+{@1} {@2} smoke husk	{1}{2}煙霧屍殼	{1}{2}烟雾尸壳		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names；前接種族
+{@1} smoke husk	{1}煙霧屍殼	{1}烟雾尸壳		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names
+{@1} {@2} smoke zombie	{1}{2}煙霧殭屍	{1}{2}烟雾僵尸		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names；前接種族
+{@1} smoke zombie	{1}煙霧殭屍	{1}烟雾僵尸		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names
+{@1} {@2} smoke thrall	{1}{2}煙霧屍奴	{1}{2}烟雾尸奴		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names；前接種族
+{@1} smoke thrall	{1}煙霧屍奴	{1}烟雾尸奴		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names
+{@1} {@2} vapor husk	{1}{2}蒸氣屍殼	{1}{2}蒸汽尸壳		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names；前接種族
+{@1} vapor husk	{1}蒸氣屍殼	{1}蒸汽尸壳		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names
+{@1} {@2} vapor zombie	{1}{2}蒸氣殭屍	{1}{2}蒸汽僵尸		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names；前接種族
+{@1} vapor zombie	{1}蒸氣殭屍	{1}蒸汽僵尸		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names
+{@1} {@2} vapor thrall	{1}{2}蒸氣屍奴	{1}{2}蒸汽尸奴		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names；前接種族
+{@1} vapor thrall	{1}蒸氣屍奴	{1}蒸汽尸奴		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names
+{@1} {@2} corpse	{1}{2}屍體	{1}{2}尸体		secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名；前接種族
+{@1} corpse	{1}屍體	{1}尸体		secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名
+{@1} {@2} ghoul	{1}{2}食屍鬼	{1}{2}食尸鬼		secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名；前接種族
+{@1} ghoul	{1}食屍鬼	{1}食尸鬼		secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名
+{@1} {@2} zombie	{1}{2}殭屍	{1}{2}僵尸		secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名；前接種族
+{@1} zombie	{1}殭屍	{1}僵尸		secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名
+{@1} {@2} stalker	{1}{2}潛獵者	{1}{2}潜猎者		secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名；前接種族
+{@1} stalker	{1}潛獵者	{1}潜猎者		secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名
+{@1} {@2} butcher	{1}{2}屠夫	{1}{2}屠夫		secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名；前接種族
+{@1} butcher	{1}屠夫	{1}屠夫		secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名
+{@1} {@2} hunter	{1}{2}獵人	{1}{2}猎人		secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名；前接種族
+{@1} hunter	{1}獵人	{1}猎人		secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名
+{@1} {@2} slayer	{1}{2}殺手	{1}{2}杀手		secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名；前接種族
+{@1} slayer	{1}殺手	{1}杀手		secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名
+{@1} {@2} thrall	{1}{2}屍奴	{1}{2}尸奴		secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名；前接種族
+{@1} thrall	{1}屍奴	{1}尸奴		secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名
+{@1} necromancer	{1}死靈法師	{1}死灵法师		interactions/secret.lua 148 CE_DISPLAY_NAME；人物頁 FUN_140c2b870 寫成 種族＋顯示名
+{@1} vampire	{1}吸血鬼	{1}吸血鬼		interactions/curse.lua 91 CE_DISPLAY_NAME；人物頁 FUN_140c2b870 寫成 種族＋顯示名
+{@1} mummy	{1}木乃伊	{1}木乃伊		interactions/disturbance.lua 88 CE_DISPLAY_NAME；人物頁 FUN_140c2b870 寫成 種族＋顯示名
+were{%1}	{1}獸化人	{1}兽化人		creatures.lua 1248 獸化人稱呼＝were＋rcp 名（連寫）；譯名沿用 settings_ann 的 Werebeast 獸化人
+{1}'s Angel	{1}之天使	{1}之天使		creatures.lua 2003-2078 天使：神名／領域名詞's 名詞（2070）
+Angel of {1}	{1}之天使	{1}之天使		creatures.lua 2003-2078 天使：名詞 of 神的稱號／領域名詞（2073）
+{1}'s Soldier	{1}之士兵	{1}之士兵		creatures.lua 2003-2078 天使：神名／領域名詞's 名詞（2070）
+Soldier of {1}	{1}之士兵	{1}之士兵		creatures.lua 2003-2078 天使：名詞 of 神的稱號／領域名詞（2073）
+{1}'s Warrior	{1}之戰士	{1}之战士		creatures.lua 2003-2078 天使：神名／領域名詞's 名詞（2070）
+Warrior of {1}	{1}之戰士	{1}之战士		creatures.lua 2003-2078 天使：名詞 of 神的稱號／領域名詞（2073）
+{1}'s Champion	{1}之勇士	{1}之勇士		creatures.lua 2003-2078 天使：神名／領域名詞's 名詞（2070）
+Champion of {1}	{1}之勇士	{1}之勇士		creatures.lua 2003-2078 天使：名詞 of 神的稱號／領域名詞（2073）
+{1}'s Fighter	{1}之鬥士	{1}之斗士		creatures.lua 2003-2078 天使：神名／領域名詞's 名詞（2070）
+Fighter of {1}	{1}之鬥士	{1}之斗士		creatures.lua 2003-2078 天使：名詞 of 神的稱號／領域名詞（2073）
+{1}'s Guardian	{1}之守護者	{1}之守护者		creatures.lua 2003-2078 天使：神名／領域名詞's 名詞（2070）
+Guardian of {1}	{1}之守護者	{1}之守护者		creatures.lua 2003-2078 天使：名詞 of 神的稱號／領域名詞（2073）
+{1}'s Spirit	{1}之聖靈	{1}之圣灵		creatures.lua 2003-2078 天使：神名／領域名詞's 名詞（2070）
+Spirit of {1}	{1}之聖靈	{1}之圣灵		creatures.lua 2003-2078 天使：名詞 of 神的稱號／領域名詞（2073）
+{1}'s Messenger	{1}之信使	{1}之信使		creatures.lua 2003-2078 天使：神名／領域名詞's 名詞（2070）
+Messenger of {1}	{1}之信使	{1}之信使		creatures.lua 2003-2078 天使：名詞 of 神的稱號／領域名詞（2073）
+{1}'s Slayer	{1}之屠戮者	{1}之屠戮者		creatures.lua 2003-2078 天使：神名／領域名詞's 名詞（2070）
+Slayer of {%1}	{1}之屠戮者	{1}之屠戮者		creatures.lua 2003-2078 天使：名詞 of 神的稱號／領域名詞（2073）
+{1}'s Enforcer	{1}之執法者	{1}之执法者		creatures.lua 2003-2078 天使：神名／領域名詞's 名詞（2070）
+Enforcer of {1}	{1}之執法者	{1}之执法者		creatures.lua 2003-2078 天使：名詞 of 神的稱號／領域名詞（2073）
+{1}'s Beast	{1}之神獸	{1}之神兽		creatures.lua 2003-2078 天使：神名／領域名詞's 名詞（2070）
+Beast of {1}	{1}之神獸	{1}之神兽		creatures.lua 2003-2078 天使：名詞 of 神的稱號／領域名詞（2073）
+{1}'s Behemoth	{1}之巨獸	{1}之巨兽		creatures.lua 2003-2078 天使：神名／領域名詞's 名詞（2070）
+Behemoth of {1}	{1}之巨獸	{1}之巨兽		creatures.lua 2003-2078 天使：名詞 of 神的稱號／領域名詞（2073）
+{1}'s Harbinger	{1}之先驅	{1}之先驱		creatures.lua 2003-2078 天使：神名／領域名詞's 名詞（2070）
+Harbinger of {1}	{1}之先驅	{1}之先驱		creatures.lua 2003-2078 天使：名詞 of 神的稱號／領域名詞（2073）
+{1}'s Monster	{1}之怪物	{1}之怪物		creatures.lua 2003-2078 天使：神名／領域名詞's 名詞（2070）
+Monster of {1}	{1}之怪物	{1}之怪物		creatures.lua 2003-2078 天使：名詞 of 神的稱號／領域名詞（2073）
+{1}'s Destroyer	{1}之毀滅者	{1}之毁灭者		creatures.lua 2003-2078 天使：神名／領域名詞's 名詞（2070）
+Destroyer of {1}	{1}之毀滅者	{1}之毁灭者		creatures.lua 2003-2078 天使：名詞 of 神的稱號／領域名詞（2073）
+{1}'s Doom	{1}之末日	{1}之末日		creatures.lua 2003-2078 天使：神名／領域名詞's 名詞（2070）
+Doom of {1}	{1}之末日	{1}之末日		creatures.lua 2003-2078 天使：名詞 of 神的稱號／領域名詞（2073）
+{1}'s Bane	{1}之禍根	{1}之祸根		creatures.lua 2003-2078 天使：神名／領域名詞's 名詞（2070）
+Bane of {1}	{1}之禍根	{1}之祸根		creatures.lua 2003-2078 天使：名詞 of 神的稱號／領域名詞（2073）
+{1}'s Catastrophe	{1}之浩劫	{1}之浩劫		creatures.lua 2003-2078 天使：神名／領域名詞's 名詞（2070）
+Catastrophe of {1}	{1}之浩劫	{1}之浩劫		creatures.lua 2003-2078 天使：名詞 of 神的稱號／領域名詞（2073）
+{1}'s Ruination	{1}之毀滅	{1}之毁灭		creatures.lua 2003-2078 天使：神名／領域名詞's 名詞（2070）
+Ruination of {1}	{1}之毀滅	{1}之毁灭		creatures.lua 2003-2078 天使：名詞 of 神的稱號／領域名詞（2073）
+{1}'s Judgment	{1}之審判	{1}之审判		creatures.lua 2003-2078 天使：神名／領域名詞's 名詞（2070）
+Judgment of {1}	{1}之審判	{1}之审判		creatures.lua 2003-2078 天使：名詞 of 神的稱號／領域名詞（2073）
+{1}'s Servant	{1}之僕從	{1}之仆从		creatures.lua 2003-2078 天使：神名／領域名詞's 名詞（2070）
+Servant of {1}	{1}之僕從	{1}之仆从		creatures.lua 2003-2078 天使：名詞 of 神的稱號／領域名詞（2073）
+{1}'s Assistant	{1}之助手	{1}之助手		creatures.lua 2003-2078 天使：神名／領域名詞's 名詞（2070）
+Assistant of {1}	{1}之助手	{1}之助手		creatures.lua 2003-2078 天使：名詞 of 神的稱號／領域名詞（2073）
+{1}'s Attendant	{1}之侍從	{1}之侍从		creatures.lua 2003-2078 天使：神名／領域名詞's 名詞（2070）
+Attendant of {1}	{1}之侍從	{1}之侍从		creatures.lua 2003-2078 天使：名詞 of 神的稱號／領域名詞（2073）
+{1}'s Minion	{1}之爪牙	{1}之爪牙		creatures.lua 2003-2078 天使：神名／領域名詞's 名詞（2070）
+Minion of {1}	{1}之爪牙	{1}之爪牙		creatures.lua 2003-2078 天使：名詞 of 神的稱號／領域名詞（2073）
+{1}'s Helper	{1}之幫手	{1}之帮手		creatures.lua 2003-2078 天使：神名／領域名詞's 名詞（2070）
+Helper of {1}	{1}之幫手	{1}之帮手		creatures.lua 2003-2078 天使：名詞 of 神的稱號／領域名詞（2073）
+{1}'s Worker	{1}之勞役者	{1}之劳役者		creatures.lua 2003-2078 天使：神名／領域名詞's 名詞（2070）
+Worker of {1}	{1}之勞役者	{1}之劳役者		creatures.lua 2003-2078 天使：名詞 of 神的稱號／領域名詞（2073）
+{1}'s Hand	{1}之手下	{1}之手下		creatures.lua 2003-2078 天使：神名／領域名詞's 名詞（2070）
+Hand of {1}	{1}之手下	{1}之手下		creatures.lua 2003-2078 天使：名詞 of 神的稱號／領域名詞（2073）
+{1}'s Being	{1}之靈物	{1}之灵物		creatures.lua 2003-2078 天使：神名／領域名詞's 名詞（2070）
+Being of {1}	{1}之靈物	{1}之灵物		creatures.lua 2003-2078 天使：名詞 of 神的稱號／領域名詞（2073）
+{1}'s Puppet	{1}之傀儡	{1}之傀儡		creatures.lua 2003-2078 天使：神名／領域名詞's 名詞（2070）
+Puppet of {1}	{1}之傀儡	{1}之傀儡		creatures.lua 2003-2078 天使：名詞 of 神的稱號／領域名詞（2073）
+{1}'s Pawn	{1}之卒子	{1}之卒子		creatures.lua 2003-2078 天使：神名／領域名詞's 名詞（2070）
+Pawn of {1}	{1}之卒子	{1}之卒子		creatures.lua 2003-2078 天使：名詞 of 神的稱號／領域名詞（2073）
+{1}'s Retainer	{1}之家臣	{1}之家臣		creatures.lua 2003-2078 天使：神名／領域名詞's 名詞（2070）
+Retainer of {1}	{1}之家臣	{1}之家臣		creatures.lua 2003-2078 天使：名詞 of 神的稱號／領域名詞（2073）
+{1}'s hand	{1}之手	{1}之手		creatures.lua 1418-1474 實驗體：實驗者／據點名's 名詞（1467）
+hand of {1}	{1}之手	{1}之手		creatures.lua 1418-1474 實驗體：名詞 of 實驗者／據點名（1470）
+{1}'s demon	{1}之惡魔	{1}之恶魔		creatures.lua 1418-1474 實驗體：實驗者／據點名's 名詞（1467）
+demon of {1}	{1}之惡魔	{1}之恶魔		creatures.lua 1418-1474 實驗體：名詞 of 實驗者／據點名（1470）
+{1}'s warrior	{1}之戰士	{1}之战士		creatures.lua 1418-1474 實驗體：實驗者／據點名's 名詞（1467）
+warrior of {1}	{1}之戰士	{1}之战士		creatures.lua 1418-1474 實驗體：名詞 of 實驗者／據點名（1470）
+{1}'s soldier	{1}之士兵	{1}之士兵		creatures.lua 1418-1474 實驗體：實驗者／據點名's 名詞（1467）
+soldier of {1}	{1}之士兵	{1}之士兵		creatures.lua 1418-1474 實驗體：名詞 of 實驗者／據點名（1470）
+{1}'s fist	{1}之拳	{1}之拳		creatures.lua 1418-1474 實驗體：實驗者／據點名's 名詞（1467）
+fist of {1}	{1}之拳	{1}之拳		creatures.lua 1418-1474 實驗體：名詞 of 實驗者／據點名（1470）
+{1}'s eye	{1}之眼	{1}之眼		creatures.lua 1418-1474 實驗體：實驗者／據點名's 名詞（1467）
+eye of {1}	{1}之眼	{1}之眼		creatures.lua 1418-1474 實驗體：名詞 of 實驗者／據點名（1470）
+{1}'s giant	{1}之巨人	{1}之巨人		creatures.lua 1418-1474 實驗體：實驗者／據點名's 名詞（1467）
+giant of {1}	{1}之巨人	{1}之巨人		creatures.lua 1418-1474 實驗體：名詞 of 實驗者／據點名（1470）
+{1}'s hulk	{1}之巨漢	{1}之巨汉		creatures.lua 1418-1474 實驗體：實驗者／據點名's 名詞（1467）
+hulk of {1}	{1}之巨漢	{1}之巨汉		creatures.lua 1418-1474 實驗體：名詞 of 實驗者／據點名（1470）
+{1}'s tower	{1}之巨塔	{1}之巨塔		creatures.lua 1418-1474 實驗體：實驗者／據點名's 名詞（1467）
+tower of {1}	{1}之巨塔	{1}之巨塔		creatures.lua 1418-1474 實驗體：名詞 of 實驗者／據點名（1470）
+{1}'s mountain	{1}之山	{1}之山		creatures.lua 1418-1474 實驗體：實驗者／據點名's 名詞（1467）
+mountain of {1}	{1}之山	{1}之山		creatures.lua 1418-1474 實驗體：名詞 of 實驗者／據點名（1470）
+{1}'s dog	{1}之犬	{1}之犬		creatures.lua 1418-1474 實驗體：實驗者／據點名's 名詞（1467）
+dog of {1}	{1}之犬	{1}之犬		creatures.lua 1418-1474 實驗體：名詞 of 實驗者／據點名（1470）
+{1}'s hound	{1}之獵犬	{1}之猎犬		creatures.lua 1418-1474 實驗體：實驗者／據點名's 名詞（1467）
+hound of {1}	{1}之獵犬	{1}之猎犬		creatures.lua 1418-1474 實驗體：名詞 of 實驗者／據點名（1470）
+{1}'s wolf	{1}之狼	{1}之狼		creatures.lua 1418-1474 實驗體：實驗者／據點名's 名詞（1467）
+wolf of {1}	{1}之狼	{1}之狼		creatures.lua 1418-1474 實驗體：名詞 of 實驗者／據點名（1470）
+{1}'s beast	{1}之獸	{1}之兽		creatures.lua 1418-1474 實驗體：實驗者／據點名's 名詞（1467）
+beast of {1}	{1}之獸	{1}之兽		creatures.lua 1418-1474 實驗體：名詞 of 實驗者／據點名（1470）
+{1}'s monster	{1}之怪物	{1}之怪物		creatures.lua 1418-1474 實驗體：實驗者／據點名's 名詞（1467）
+monster of {1}	{1}之怪物	{1}之怪物		creatures.lua 1418-1474 實驗體：名詞 of 實驗者／據點名（1470）
+{1}'s creature	{1}之生物	{1}之生物		creatures.lua 1418-1474 實驗體：實驗者／據點名's 名詞（1467）
+creature of {1}	{1}之生物	{1}之生物		creatures.lua 1418-1474 實驗體：名詞 of 實驗者／據點名（1470）
+{1}'s mistake	{1}之失誤	{1}之失误		creatures.lua 1418-1474 實驗體：實驗者／據點名's 名詞（1467）
+mistake of {1}	{1}之失誤	{1}之失误		creatures.lua 1418-1474 實驗體：名詞 of 實驗者／據點名（1470）
+{1}'s folly	{1}之蠢物	{1}之蠢物		creatures.lua 1418-1474 實驗體：實驗者／據點名's 名詞（1467）
+folly of {1}	{1}之蠢物	{1}之蠢物		creatures.lua 1418-1474 實驗體：名詞 of 實驗者／據點名（1470）
+{1}'s experiment	{1}之實驗體	{1}之实验体		creatures.lua 1418-1474 實驗體：實驗者／據點名's 名詞（1467）
+experiment of {1}	{1}之實驗體	{1}之实验体		creatures.lua 1418-1474 實驗體：名詞 of 實驗者／據點名（1470）
+{1}'s nightmare	{1}之夢魘	{1}之梦魇		creatures.lua 1418-1474 實驗體：實驗者／據點名's 名詞（1467）
+nightmare of {1}	{1}之夢魘	{1}之梦魇		creatures.lua 1418-1474 實驗體：名詞 of 實驗者／據點名（1470）
+{1}'s catastrophe	{1}之災禍	{1}之灾祸		creatures.lua 1418-1474 實驗體：實驗者／據點名's 名詞（1467）
+catastrophe of {1}	{1}之災禍	{1}之灾祸		creatures.lua 1418-1474 實驗體：名詞 of 實驗者／據點名（1470）
+{1}'s disaster	{1}之災厄	{1}之灾厄		creatures.lua 1418-1474 實驗體：實驗者／據點名's 名詞（1467）
+disaster of {1}	{1}之災厄	{1}之灾厄		creatures.lua 1418-1474 實驗體：名詞 of 實驗者／據點名（1470）

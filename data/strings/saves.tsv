@@ -177,3 +177,26 @@ Saving map data...	儲存地圖資料……	保存地图数据……		存檔進�
 Finishing up...	即將完成……	即将完成……		載入資料進度
 Placing other beasts...	正在放置其他野獸……	正在放置其他野兽……		建立世界進度
 Placing good/evil...	正在放置善惡……	正在放置善恶……		建立世界進度
+Body detail plans...	身體細節方案……	身体细节方案……		FUN_140258c60 載入原始資料（raws）時逐類畫的進度
+Buildings...	建築……	建筑……		FUN_140258c60 載入原始資料（raws）時逐類畫的進度
+Colors...	顏色……	颜色……		FUN_140258c60 載入原始資料（raws）時逐類畫的進度
+Creature bodies...	生物身體……	生物身体……		FUN_140258c60 載入原始資料（raws）時逐類畫的進度
+Creature variations...	生物變異……	生物变异……		FUN_140258c60 載入原始資料（raws）時逐類畫的進度
+Creatures...	生物……	生物……		FUN_140258c60 載入原始資料（raws）時逐類畫的進度
+Entities...	實體……	实体……		FUN_140258c60 載入原始資料（raws）時逐類畫的進度
+Inorganics...	無機物……	无机物……		FUN_140258c60 載入原始資料（raws）時逐類畫的進度
+Interactions...	互動……	交互……		FUN_140258c60 載入原始資料（raws）時逐類畫的進度
+Items...	物品……	物品……		FUN_140258c60 載入原始資料（raws）時逐類畫的進度；本來就有刪節號，寫成整句（不然會被當成 Items designated for dumping w 的截短）
+Languages...	語言……	语言……		FUN_140258c60 載入原始資料（raws）時逐類畫的進度
+Material templates...	材料範本……	材料模板……		FUN_140258c60 載入原始資料（raws）時逐類畫的進度
+Music...	音樂……	音乐……		FUN_140258c60 載入原始資料（raws）時逐類畫的進度；本來就有刪節號，寫成整句（不然會被當成 Music was performed. 的截短）
+Patterns...	花紋……	花纹……		FUN_140258c60 載入原始資料（raws）時逐類畫的進度
+Plants...	植物……	植物……		FUN_140258c60 載入原始資料（raws）時逐類畫的進度
+Reactions...	反應……	反应……		FUN_140258c60 載入原始資料（raws）時逐類畫的進度
+Shapes...	形狀……	形状……		FUN_140258c60 載入原始資料（raws）時逐類畫的進度
+Sound...	聲音……	声音……		FUN_140258c60 載入原始資料（raws）時逐類畫的進度
+Text...	文字…	文本…		FUN_140258c60 載入原始資料（raws）時逐類畫的進度；本來就有刪節號，寫成整句（不然會被當成 Text entry 的截短）
+Tissue templates...	組織範本……	组织模板……		FUN_140258c60 載入原始資料（raws）時逐類畫的進度
+Handling compatibility issues...	正在處理相容性問題……	正在处理兼容性问题……		FUN_1407c2660 1094621 讀檔進度
+Rebuilding temporary information...	正在重建暫存資訊……	正在重建临时信息……		FUN_1407c0c20 1093850／FUN_1407c2660 1094609 讀檔進度
+Offloading site...	正在卸下據點……	正在卸下据点……		FUN_14080d5e0 1154372 離開據點時把據點資料存回世界

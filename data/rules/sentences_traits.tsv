@@ -1,4 +1,13 @@
 en	zh-Hant	zh-Hans	align	note
+{@1} is a nervous wreck.	{1}緊張到快要崩潰。	{1}紧张得快要崩溃。		性格特質句（is a nervous wreck）寫成整條：通用的 {@1} {%2}. 沒有英文字，排在傳說人物說明的「{1} is a {%2}.」後面，會被它搶走（「他是完美主義」）
+{@1} is a dyed-in-the-wool quarreler, never missing a chance to lash out in verbal hostility.	{1}生性愛吵架，從不放過惡言相向的機會。	{1}生性爱吵架，从不放过恶语相向的机会。		性格特質句（is a dyed-in-the-wool quarreler, never missing a chance to lash out in verbal hostility）寫成整條：通用的 {@1} {%2}. 沒有英文字，排在傳說人物說明的「{1} is a {%2}.」後面，會被它搶走（「他是完美主義」）
+{@1} is a friendly individual.	{1}為人友善。	{1}为人友善。		性格特質句（is a friendly individual）寫成整條：通用的 {@1} {%2}. 沒有英文字，排在傳說人物說明的「{1} is a {%2}.」後面，會被它搶走（「他是完美主義」）
+{@1} is a vulgar being who does not care a lick for even the most basic rules of civilized living.	{1}粗俗不堪，連文明生活最基本的規矩都毫不在乎。	{1}粗俗不堪，连文明生活最基本的规矩都毫不在乎。		性格特質句（is a vulgar being who does not care a lick for even the most basic rules of civilized living）寫成整條：通用的 {@1} {%2}. 沒有英文字，排在傳說人物說明的「{1} is a {%2}.」後面，會被它搶走（「他是完美主義」）
+{@1} is a coward, completely overwhelmed by fear when confronted with danger.	{1}是個膽小鬼，一遇到危險就被恐懼完全壓倒。	{1}是个胆小鬼，一遇到危险就被恐惧完全压倒。		性格特質句（is a coward, completely overwhelmed by fear when confronted with danger）寫成整條：通用的 {@1} {%2}. 沒有英文字，排在傳說人物說明的「{1} is a {%2}.」後面，會被它搶走（「他是完美主義」）
+{@1} is a complete scatterbrain, unable to focus on a single matter for more than a passing moment.	{1}完全心不在焉，做任何事都專心不了片刻。	{1}完全心不在焉，做任何事都专心不了片刻。		性格特質句（is a complete scatterbrain, unable to focus on a single matter for more than a passing moment）寫成整條：通用的 {@1} {%2}. 沒有英文字，排在傳說人物說明的「{1} is a {%2}.」後面，會被它搶走（「他是完美主義」）
+{@1} is a pessimist.	{1}是個悲觀的人。	{1}是个悲观的人。		性格特質句（is a pessimist）寫成整條：通用的 {@1} {%2}. 沒有英文字，排在傳說人物說明的「{1} is a {%2}.」後面，會被它搶走（「他是完美主義」）
+{@1} is an optimist.	{1}是個樂觀的人。	{1}是个乐观的人。		性格特質句（is an optimist）寫成整條：通用的 {@1} {%2}. 沒有英文字，排在傳說人物說明的「{1} is a {%2}.」後面，會被它搶走（「他是完美主義」）
+{@1} is a perfectionist.	{1}是個完美主義者。	{1}是个完美主义者。		性格特質句（is a perfectionist）寫成整條：通用的 {@1} {%2}. 沒有英文字，排在傳說人物說明的「{1} is a {%2}.」後面，會被它搶走（「他是完美主義」）
 {@1} {%2}, and {@3} is troubled by this because {@4} values romance.	{1}{2}，為此感到困擾，因為重視浪漫。	{1}{2}，为此感到困扰，因为重视浪漫。		性格特質與價值觀衝突子句：FUN_140e26ca0 case 0x0 LOVE_PROPENSITY（2126097 起）；{2} 是特質句本體（可含記憶造成的變化片段）
 {@1} {%2}, and {@3} is troubled by this because {@4} holds romance in low regard.	{1}{2}，為此感到困擾，因為輕視浪漫。	{1}{2}，为此感到困扰，因为轻视浪漫。		性格特質與價值觀衝突子句：FUN_140e26ca0 case 0x0 LOVE_PROPENSITY（2126097 起）；{2} 是特質句本體（可含記憶造成的變化片段）
 {@1} {%2}, and {@3} is conflicted by this as {@4} values parties and merrymaking in the abstract.	{1}{2}，對此感到矛盾，因為在觀念上重視宴會與歡樂。	{1}{2}，对此感到矛盾，因为在观念上重视宴会与欢乐。		性格特質與價值觀衝突子句：FUN_140e26ca0 case 0x3 CHEER_PROPENSITY（2126097 起）；{2} 是特質句本體（可含記憶造成的變化片段）

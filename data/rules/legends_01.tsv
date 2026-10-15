@@ -1,0 +1,45 @@
+en	zh-Hant	zh-Hans	align	note
+{1} is a deity of {2}.	{1}是{2}的神祇。	{1}是{2}的神祇。		FUN_140c2b870 L1806783-1806813 神祇首句（傳說模式 is；{2} 信奉此神的文明名）
+{1} was a deity that occurs in the myths of {2}.	{1}是{2}神話中的神祇。	{1}是{2}神话中的神祇。		FUN_140c2b870 L1806795-1806813 神祇首句（g_gamemode==3）
+{1} is a force which permeates {2}.	{1}是一股瀰漫於{2}的力量。	{1}是一股弥漫于{2}的力量。		FUN_140c2b870 L1806748-1806769 力量首句（{2} 力量所在地名）
+{1} was a force which was said to permeate {2}.	{1}是一股據說瀰漫於{2}的力量。	{1}是一股据说弥漫于{2}的力量。		FUN_140c2b870 L1806751-1806769 力量首句（g_gamemode==3）
+{1} is a force.	{1}是一股力量。	{1}是一股力量。		FUN_140c2b870 L1806748 力量首句（無所在地）
+{1} was a force.	{1}是一股力量。	{1}是一股力量。		FUN_140c2b870 L1806748 力量首句（g_gamemode==3，無所在地）
+{1} is a {2}'s corpse, animated by unknown forces.	{1}是{2}的屍體，由不明力量驅動。	{1}是{2}的尸体，由不明力量驱动。		FUN_140c2b870 L1806390-1806427 活屍首句：原人物查不到時多一個 a；{2}'s corpse 是 curse+0x150 字串（L832514-832523）；a 版要排在無 a 版前
+{1} is {2}'s corpse, animated by unknown forces.	{1}是{2}的屍體，由不明力量驅動。	{1}是{2}的尸体，由不明力量驱动。		FUN_140c2b870 L1806390-1806427 活屍首句（原人物查得到，無 a）
+{1} is a ghostly {%2} born in {#3}.	{1}是{2}的鬼魂，生於{3}年。	{1}是{2}的鬼魂，生于{3}年。		FUN_140c2b870 L1806431-1806493 首句：鬼魂＋種族（FUN_140b94ed0 caste 名，可接 curse 稱呼）＋出生年（FUN_140b92640）
+{1} is a {%2} born in {#3}.	{1}是{2}，生於{3}年。	{1}是{2}，生于{3}年。		FUN_140c2b870 L1806431-1806493 首句：種族＋出生年
+{1} is a ghostly {%2}.	{1}是{2}的鬼魂。	{1}是{2}的鬼魂。		FUN_140c2b870 L1806431-1806438 首句：鬼魂（無出生年）；通用的 {1} is a {%2}. 在 zz_legends_01
+{1} was a {2}'s corpse, animated by unknown forces.	{1}是{2}的屍體，由不明力量驅動。	{1}是{2}的尸体，由不明力量驱动。		FUN_140c2b870 L1806390-1806427 活屍首句：原人物查不到時多一個 a；{2}'s corpse 是 curse+0x150 字串（L832514-832523）（g_gamemode==3）；a 版要排在無 a 版前
+{1} was {2}'s corpse, animated by unknown forces.	{1}是{2}的屍體，由不明力量驅動。	{1}是{2}的尸体，由不明力量驱动。		FUN_140c2b870 L1806390-1806427 活屍首句（原人物查得到，無 a）（g_gamemode==3）
+{1} was a ghostly {%2} born in {#3}.	{1}是{2}的鬼魂，生於{3}年。	{1}是{2}的鬼魂，生于{3}年。		FUN_140c2b870 L1806431-1806493 首句：鬼魂＋種族（FUN_140b94ed0 caste 名，可接 curse 稱呼）＋出生年（FUN_140b92640）（g_gamemode==3）
+{1} was a {%2} born in {#3}.	{1}是{2}，生於{3}年。	{1}是{2}，生于{3}年。		FUN_140c2b870 L1806431-1806493 首句：種族＋出生年（g_gamemode==3）
+{1} was a ghostly {%2}.	{1}是{2}的鬼魂。	{1}是{2}的鬼魂。		FUN_140c2b870 L1806431-1806438 首句：鬼魂（無出生年）（g_gamemode==3）；通用的 {1} is a {%2}. 在 zz_legends_01
+{@1} is the only one of {@2} kind.	{1}是同類中唯一的存在。	{1}是同类中唯一的存在。		FUN_140c2b870 L1806461-1806489 出生年<1：同類只有一個
+{@1} is one of the only ones of {@2} kind.	{1}是同類中僅有的少數幾個之一。	{1}是同类中仅有的少数几个之一。		FUN_140c2b870 L1806476 同類不只一個、都未出生於紀年內
+{@1} is the first of {@2} kind.	{1}是同類中的第一個。	{1}是同类中的第一个。		FUN_140c2b870 L1806480 同類其餘都在紀年內出生
+{@1} is one of the first of {@2} kind.	{1}是同類中最早出現的幾個之一。	{1}是同类中最早出现的几个之一。		FUN_140c2b870 L1806484
+{@1} is of unknown parentage.	{1}父母不詳。	{1}父母不详。		FUN_140c2b870 L1806579-1806593／1806734-1806742 雙親不明
+{@1} was the only one of {@2} kind.	{1}是同類中唯一的存在。	{1}是同类中唯一的存在。		FUN_140c2b870 L1806461-1806489 出生年<1：同類只有一個（g_gamemode==3 was）
+{@1} was one of the only ones of {@2} kind.	{1}是同類中僅有的少數幾個之一。	{1}是同类中仅有的少数几个之一。		FUN_140c2b870 L1806476 同類不只一個、都未出生於紀年內（g_gamemode==3 was）
+{@1} was the first of {@2} kind.	{1}是同類中的第一個。	{1}是同类中的第一个。		FUN_140c2b870 L1806480 同類其餘都在紀年內出生（g_gamemode==3 was）
+{@1} was one of the first of {@2} kind.	{1}是同類中最早出現的幾個之一。	{1}是同类中最早出现的几个之一。		FUN_140c2b870 L1806484（g_gamemode==3 was）
+{@1} was of unknown parentage.	{1}父母不詳。	{1}父母不详。		FUN_140c2b870 L1806579-1806593／1806734-1806742 雙親不明（g_gamemode==3 was）
+The identity of {@1} mother has been lost to time.	{1}母親的身分已不可考。	{1}母亲的身份已不可考。		FUN_140c2b870 L1806703-1806714 只知父母一方（{@1} her/his/its）
+The identity of {@1} father has been lost to time.	{1}父親的身分已不可考。	{1}父亲的身份已不可考。		FUN_140c2b870 L1806703-1806714 只知父母一方（{@1} her/his/its）
+Although accounts vary, it is universally agreed that {1} was guided by forces unknown.	儘管說法不一，世人都認同{1}受到未知力量的指引。	尽管说法不一，世人都认同{1}受到未知力量的指引。		FUN_140c2b870 L1806830-1806857 命運（g_gamemode==3）
+{1} is guided by forces unknown.	{1}受到未知力量的指引。	{1}受到未知力量的指引。		FUN_140c2b870 L1806830-1806857 命運（傳說模式）
+Although accounts vary, it is universally agreed that {1} was possessed of an unusual destiny.	儘管說法不一，世人都認同{1}身負不凡的命運。	尽管说法不一，世人都认同{1}身负不凡的命运。		FUN_140c2b870 L1806830-1806857 命運（g_gamemode==3）
+{1} is possessed of an unusual destiny.	{1}身負不凡的命運。	{1}身负不凡的命运。		FUN_140c2b870 L1806830-1806857 命運（傳說模式）
+Although accounts vary, it is universally agreed that {1} was chosen by fate as the vanguard of destiny.	儘管說法不一，世人都認同{1}是命運選中的天命先鋒。	尽管说法不一，世人都认同{1}是命运选中的天命先锋。		FUN_140c2b870 L1806830-1806857 命運（g_gamemode==3）
+{1} is chosen by fate as the vanguard of destiny.	{1}是命運選中的天命先鋒。	{1}是命运选中的天命先锋。		FUN_140c2b870 L1806830-1806857 命運（傳說模式）
+{1} most often takes the form of a {%2} and is associated with {%3} and {%4}.	{1}最常以{2}的形象現身，掌管{3}與{4}。	{1}最常以{2}的形象现身，掌管{3}与{4}。		FUN_140c2b870 L1806861-1806994＋L1807113-1807153 神祇形象（skeletal/rotting/ghostly、female/male 前綴見 sentences_artimage_01）＋領域（FUN_140756500，倒序、最後一項前 and）
+{1} most often takes the form of a {%2} and is associated with {%3}.	{1}最常以{2}的形象現身，掌管{3}。	{1}最常以{2}的形象现身，掌管{3}。		FUN_140c2b870 同上，單一領域
+{1} most often takes the form of a {%2}.	{1}最常以{2}的形象現身。	{1}最常以{2}的形象现身。		FUN_140c2b870 L1806861-1806994 神祇形象（無領域）
+{1} was most often depicted as a {%2} and was associated with {%3} and {%4}.	{1}最常被描繪成{2}，掌管{3}與{4}。	{1}最常被描绘成{2}，掌管{3}与{4}。		FUN_140c2b870 L1806861-1806994＋L1807113-1807153 神祇形象（skeletal/rotting/ghostly、female/male 前綴見 sentences_artimage_01）＋領域（FUN_140756500，倒序、最後一項前 and）（g_gamemode==3）
+{1} was most often depicted as a {%2} and was associated with {%3}.	{1}最常被描繪成{2}，掌管{3}。	{1}最常被描绘成{2}，掌管{3}。		FUN_140c2b870 同上，單一領域（g_gamemode==3）
+{1} was most often depicted as a {%2}.	{1}最常被描繪成{2}。	{1}最常被描绘成{2}。		FUN_140c2b870 L1806861-1806994 神祇形象（無領域）（g_gamemode==3）
+{1} is associated with {%2} and {%3}.	{1}與{2}、{3}有所關聯。	{1}与{2}、{3}有所关联。		FUN_140c2b870 L1807107-1807157 非神祇的領域（FUN_140756500；清單 {%1}, {%2} 接成、）
+{1} is associated with {%2}.	{1}與{2}有所關聯。	{1}与{2}有所关联。		FUN_140c2b870 同上，單一領域
+{1} was associated with {%2} and {%3}.	{1}與{2}、{3}有所關聯。	{1}与{2}、{3}有所关联。		FUN_140c2b870 L1807107-1807157 非神祇的領域（FUN_140756500；清單 {%1}, {%2} 接成、）（g_gamemode==3）
+{1} was associated with {%2}.	{1}與{2}有所關聯。	{1}与{2}有所关联。		FUN_140c2b870 同上，單一領域（g_gamemode==3）

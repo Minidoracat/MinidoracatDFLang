@@ -1,0 +1,59 @@
+en	zh-Hant	zh-Hans	align	note
+Historical figures	歷史人物	历史人物		FUN_140d3e8d0 1978015 傳說主畫面分類；分頁標題 FUN_140d43840 1981188
+Sites	據點	据点		FUN_140d3e8d0 1978021 傳說主畫面分類；分頁標題 1981192
+Codices, scrolls, etc.	典籍、卷軸等	典籍、卷轴等		FUN_140d3e8d0 1978033 傳說主畫面分類；分頁標題 1981200
+Regions	地區	地区		FUN_140d3e8d0 1978039 傳說主畫面分類；分頁標題 1981204
+Civilizations and other entities	文明與其他勢力	文明与其他势力		FUN_140d3e8d0 1978045 傳說主畫面分類；分頁標題 1981208
+Structures	建築	建筑		FUN_140d3e8d0 1978057 傳說主畫面分類；分頁標題 1981216
+Chronicles by age	各時代編年史	各时代编年史		FUN_140d3e8d0 1978063 傳說主畫面分類；分頁標題 1981220
+Historical maps	歷史地圖	历史地图		FUN_140d3e8d0 1978071 傳說主畫面分類；分頁標題 1981226
+Underground regions	地下區域	地下区域		FUN_140d3e8d0 1978076 傳說主畫面分類；分頁標題 1981230
+Select a category below to begin.	請從下方選擇一個分類。	请从下方选择一个分类。	c	FUN_140d3e8d0 1977951 傳說主畫面提示，置中
+Export XML	匯出 XML	导出 XML		FUN_140d3e8d0 1977932 左上按鈕（inline 常數 "Export XML"）
+Exporting!	匯出中！	导出中！		FUN_140d3e8d0 1977940 匯出 XML 進行中（inline 常數 "Exporting!"）
+Unnamed	無名	无名		FUN_140d3e8d0 1978395／1979844 清單與分頁標題：沒有名字的據點、人物
+Untitled	未命名	未命名		FUN_140d3e8d0 1978524／1978665／1978925 清單：沒有標題的神器、典籍、藝術形式
+Dark Pits	黑暗坑穴	黑暗坑穴		FUN_140d4c430 1985643-1985657 據點分頁標題「名, "英文名", dark pits」（大小寫不同也查得到）；dark fortress 已有條目
+Mead Hall	蜜酒大廳	蜜酒大厅		FUN_140d3e8d0 1979024 建築清單右欄（FUN_14052d3c0 每字首大寫）；分頁標題 FUN_140d4e240 用小寫 mead hall
+Temple	神殿	神殿		FUN_140d3e8d0 1979030 建築清單右欄
+Dark Tower	黑暗高塔	黑暗高塔		FUN_140d3e8d0 1979033 建築清單右欄；整句條目蓋過 dark（音色暗沉）＋tower 的拼法
+Market	市場	市场		FUN_140d3e8d0 1979036 建築清單右欄
+Sewers	下水道	下水道		FUN_140d3e8d0 1979047 建築清單右欄：地牢類建築的下水道
+Catacombs	地下墓穴	地下墓穴		FUN_140d3e8d0 1979051 建築清單右欄
+Underworld Spire	冥界尖塔	冥界尖塔		FUN_140d3e8d0 1979055 建築清單右欄
+Tavern	酒館	酒馆		FUN_140d3e8d0 1979058 建築清單右欄
+Library	圖書館	图书馆		FUN_140d3e8d0 1979061 建築清單右欄
+Counting House	帳房	账房		FUN_140d3e8d0 1979064 建築清單右欄
+Guildhall	公會大廳	公会大厅		FUN_140d3e8d0 1979067 建築清單右欄
+Hospital	醫院	医院		FUN_140d3e8d0 1979073 建築清單右欄
+Unnamed underground area	無名地下區域	无名地下区域		FUN_140d3e8d0 1979187 地下區域清單；分頁標題 FUN_140d4d990
+Unnamed magma sea area	無名熔岩海區域	无名熔岩海区域		FUN_140d3e8d0 1979190 地下區域清單；分頁標題 FUN_140d4d990；magma 照術語表「熔岩」
+Unnamed Underworld area	無名冥界區域	无名冥界区域		FUN_140d3e8d0 1979194 地下區域清單；分頁標題 FUN_140d4d990
+b. 	生 	生 		FUN_140d3e8d0 1979990 人物清單右欄：b. ＋出生年＋空白（inline 常數 0x202e62）
+d. 	歿 	殁 		FUN_140d3e8d0 1980020 人物清單右欄：d. ＋死亡年（inline 常數 0x202e64）
+force	力量	力量	inner	FUN_140d3e8d0 1979937／FUN_140d4b4a0 1985177 人物清單與分頁標題的「, force」（自然力量的化身）；只給佔位用；譯名同 legends_02 的「力量」，「自然之力」會比 force 寬
+Sorting	排序中	排序中		FUN_140d3e8d0 1979396 進入傳說模式時的載入進度
+Initialization complete...	初始化完成……	初始化完成……		FUN_140d3e8d0 1979403 載入進度
+Historical events 	歷史事件 	历史事件 		FUN_140d3e8d0 1979415 載入進度標籤，後面另畫「數/數 completed」
+Check for culled historical figures 	檢查已剔除的歷史人物 	检查已剔除的历史人物 		FUN_140d3e8d0 1979502 載入進度標籤，後面另畫「數/數 completed」
+Historical figures 	歷史人物 	历史人物 		FUN_140d3e8d0 1979548 載入進度標籤，後面另畫「數/數 completed」
+Artifacts completed	神器已完成	神器已完成		FUN_140d3e8d0 1979597 載入進度
+Structures completed	建築已完成	建筑已完成		FUN_140d3e8d0 1979636 載入進度
+Unknown creature	未知生物	未知生物		FUN_140d4b4a0 1984889 人物分頁標題：找不到人物時
+Unknown artwork	未知藝術形式	未知艺术形式		FUN_140d4bf70 1985340 藝術分頁標題
+Unknown site	未知據點	未知据点		FUN_140d4c430 1985577 據點分頁標題
+Unknown artifact	未知神器	未知神器		FUN_140d4c910 1985848 神器分頁標題
+Unknown book	未知書籍	未知书籍		FUN_140d4cf30 1986172 典籍分頁標題
+Unknown region	未知地區	未知地区		FUN_140d4d550 1986460 地區分頁標題
+Unknown underground area	未知地下區域	未知地下区域		FUN_140d4d990 1986681 地下區域分頁標題
+Unknown group	未知團體	未知团体		FUN_140d4dde0 1986912 勢力分頁標題
+Unknown structure	未知建築	未知建筑		FUN_140d4e240 1987139 建築分頁標題
+Myth	神話	神话	inner	FUN_140bb7b80 紀元名 Age of Myth 的詞，只給「The Age of {%1}」佔位用
+Heroes	英雄	英雄	inner	FUN_140bb7b80 紀元名 Age of Heroes，同上
+Emptiness	空虛	空虚	inner	FUN_140bb7b80 紀元名 Age of Emptiness，同上
+Fairy Tales	童話	童话	inner	FUN_140bb7b80 紀元名 Age of Fairy Tales，同上
+Three Powers	三強	三强	inner	FUN_140bb7b80 紀元名 Age of Three Powers，同上
+One Power	一強	一强	inner	FUN_140bb7b80 紀元名 Age of One Power，同上
+The Age of Two Powers	雙強時代	双强时代		FUN_140bb8e10 紀元名加 The：整句寫，免得 The Age of Two {%1} 把 Powers 翻成「乘冪」
+The Twilight Age	暮光時代	暮光时代		FUN_140bb8e10 紀元名加 The：整句寫（The {%1} Age 的佔位會查到知識主題 twilight「曙暮光」）
+The Golden Age	黃金時代	黄金时代		FUN_140bb8e10 紀元名加 The

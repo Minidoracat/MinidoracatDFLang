@@ -1,7 +1,6 @@
 en	zh-Hant	zh-Hans	align	note
 a {%1} race	{1}競速賽	{1}竞速赛	inner	FUN_140b8c990 L1702383/FUN_140b8d5f0 L1702839 case 9：{1} 生物名（FUN_140aa3bd0 單數）；排在 articles.tsv 的 a {%1} 前（檔名在前）
 a {%1} throwing competition	{1}投擲比賽	{1}投掷比赛	inner	FUN_140b8c990 L1702383/FUN_140b8d5f0 L1702839 case 11：{1} 物品名（FUN_140a82c10）
-a telling of the story of {%1}	講述{1}的故事	讲述{1}的故事	inner	FUN_140d3bea0 L1975568 case 2：{1} 事件短語
 the carrying of {%1}	手持{1}	手持{1}	inner	FUN_140d3bea0 L1975568 case 11：{1} 植物部位名（預設 flowers）
 the scattering of {%1}	拋撒{1}	抛撒{1}	inner	FUN_140d3bea0 L1975568 case 12：{1} 植物部位名（預設 flowers）
 the giving of {%1}	贈送{1}	赠送{1}	inner	FUN_140d3bea0 L1975568 case 17：{1} 物品名
@@ -9,12 +8,18 @@ the sacrifice of {%1}	獻祭{1}	献祭{1}	inner	FUN_140d3bea0 L1975568 case 18�
 a competition in {1} as part of {2}	{2}期間在{1}舉行的比賽	{2}期间在{1}举行的比赛	inner	FUN_140b8d5f0 L1702839 短語：沒有日程（無主辦者）
 a competition in {1}	在{1}舉行的比賽	在{1}举行的比赛	inner	FUN_140b8d5f0 L1702839 短語：沒有日程
 a competition as part of {1}	{1}期間舉行的比賽	{1}期间举行的比赛	inner	FUN_140b8d5f0 L1702839 短語：沒有日程、沒有地點
+a competition in {#1}	{1}年舉行的比賽	{1}年举行的比赛	inner	FUN_140b8d5f0 L1702839 短語：沒有日程、地點、節慶；沒有佔位的短語是字串（events_19），產生器不替它加日期，這裡手寫結尾日期（否則 in 57 被「a competition in {1}」當成地點）
+a competition in the {@1} of {#2}	{2}年{1}舉行的比賽	{2}年{1}举行的比赛	inner	FUN_140b8d5f0 L1702839 短語：沒有日程、地點、節慶；沒有佔位的短語是字串（events_19），產生器不替它加日期，這裡手寫結尾日期（否則 in 57 被「a competition in {1}」當成地點）
 a procession in {1} as part of {2}	{2}期間在{1}舉行的遊行	{2}期间在{1}举行的游行	inner	FUN_140b8e460 L1703397 短語：沒有日程（無主辦者）
 a procession in {1}	在{1}舉行的遊行	在{1}举行的游行	inner	FUN_140b8e460 L1703397 短語：沒有日程
 a procession as part of {1}	{1}期間舉行的遊行	{1}期间举行的游行	inner	FUN_140b8e460 L1703397 短語：沒有日程、沒有地點
+a procession in {#1}	{1}年舉行的遊行	{1}年举行的游行	inner	FUN_140b8e460 L1703397 短語：沒有日程、地點、節慶；沒有佔位的短語是字串（events_19），產生器不替它加日期，這裡手寫結尾日期（否則 in 57 被「a procession in {1}」當成地點）
+a procession in the {@1} of {#2}	{2}年{1}舉行的遊行	{2}年{1}举行的游行	inner	FUN_140b8e460 L1703397 短語：沒有日程、地點、節慶；沒有佔位的短語是字串（events_19），產生器不替它加日期，這裡手寫結尾日期（否則 in 57 被「a procession in {1}」當成地點）
 a ceremony in {1} as part of {2}	{2}期間在{1}舉行的儀式	{2}期间在{1}举行的仪式	inner	FUN_140b8e990 L1703587 短語：沒有日程（無主辦者）
 a ceremony in {1}	在{1}舉行的儀式	在{1}举行的仪式	inner	FUN_140b8e990 L1703587 短語：沒有日程
 a ceremony as part of {1}	{1}期間舉行的儀式	{1}期间举行的仪式	inner	FUN_140b8e990 L1703587 短語：沒有日程、沒有地點
+a ceremony in {#1}	{1}年舉行的儀式	{1}年举行的仪式	inner	FUN_140b8e990 L1703587 短語：沒有日程、地點、節慶；沒有佔位的短語是字串（events_19），產生器不替它加日期，這裡手寫結尾日期（否則 in 57 被「a ceremony in {1}」當成地點）
+a ceremony in the {@1} of {#2}	{2}年{1}舉行的儀式	{2}年{1}举行的仪式	inner	FUN_140b8e990 L1703587 短語：沒有日程、地點、節慶；沒有佔位的短語是字串（events_19），產生器不替它加日期，這裡手寫結尾日期（否則 in 57 被「a ceremony in {1}」當成地點）
 a competition involving {1}	《{1}》比賽	《{1}》比赛	inner	FUN_140b8c990 L1702383/FUN_140b8d5f0 L1702839 case 4/5/6：{1} 舞蹈／曲式／詩體名（FUN_140a946e0）；held by 短語與 held 子句沿用 _events_18（同 en，檔名在前）
 images of {1}	{1}的畫像	{1}的画像	inner	FUN_140d3bea0 L1975568 case 10：{1} 歷史人物（連結）
 there was a competition in {1} as part of {2}.	{1}舉行了一場比賽，作為{2}的一環。	{1}举行了一场比赛，作为{2}的一环。	inner	FUN_140b8c990 L1702383 子句：沒有日程（無主辦者）
@@ -36,8 +41,8 @@ There were {#1} competitors.	共有 {1} 名參賽者。	共有 {1} 名参赛者�
 The victory was shared by {1}, {2}, {3} and {4}.	{1}、{2}、{3}和{4}共同獲勝。	{1}、{2}、{3}和{4}共同获胜。		FUN_140b8c990 L1702383 L1702790：優勝者 2–4 人；人數多的排前面
 The victory was shared by {1}, {2} and {3}.	{1}、{2}和{3}共同獲勝。	{1}、{2}和{3}共同获胜。		FUN_140b8c990 L1702383 L1702790
 The victory was shared by {1} and {2}.	{1}和{2}共同獲勝。	{1}和{2}共同获胜。		FUN_140b8c990 L1702383 L1702790
-Victory was spread among {#1} winners including {2}.	共有 {1} 名優勝者，包括{2}。	共有 {1} 名优胜者，包括{2}。		FUN_140b8c990 L1702383 L1702815：5 人以上
-Victory was spread among {#1} winners.	共有 {1} 名優勝者。	共有 {1} 名优胜者。		FUN_140b8c990 L1702383 L1702815
+Victory was spread among {#1} winners including {2}.	勝利由 {1} 名優勝者分享，包括{2}。	胜利由 {1} 名优胜者分享，包括{2}。		FUN_140b8c990 L1702383 L1702815：5 人以上
+Victory was spread among {#1} winners.	勝利由 {1} 名優勝者分享。	胜利由 {1} 名优胜者分享。		FUN_140b8c990 L1702383 L1702815
 It started at {1} and returned there after following its route.	遊行從{1}出發，沿路線繞行後回到原地。	游行从{1}出发，沿路线绕行后回到原地。		FUN_140b8ddd0 L1703146 L1703363：{1} 據點內地點名（FUN_140a946e0，無連結）
 It started at {1} and ended at {2}.	遊行從{1}出發，在{2}結束。	游行从{1}出发，在{2}结束。		FUN_140b8ddd0 L1703146 L1703311
 It started at {1}.	遊行從{1}出發。	游行从{1}出发。		FUN_140b8ddd0 L1703146 L1703293

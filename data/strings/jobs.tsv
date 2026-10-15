@@ -167,3 +167,5 @@ Pen/pasture a large animal	把大型動物關進畜欄／牧場	把大型动物�
 Surgery	手術	手术		工作名稱：醫療
 Engrave memorial slab	雕刻紀念石板	雕刻纪念石板		工作名稱
 No patient	沒有病人	没有病人		工作取消原因（Diagnose Patient 等醫療工作找不到病人）；不寫整句時會被 {@1} {@2} 接成「否有耐心」
+Geld animal	閹割動物	阉割动物		FUN_140d032b0 1955824-1955844 工作名稱：沒有指定動物時接 animal；整條寫出（句型 Geld {1}／Slaughter {1} 的 {1} 不會把 animal 當動物）
+Slaughter animal	屠宰動物	屠宰动物		FUN_140d032b0 （Slaughter 同一函式） 工作名稱：沒有指定動物時接 animal；整條寫出（句型 Geld {1}／Slaughter {1} 的 {1} 不會把 animal 當動物）

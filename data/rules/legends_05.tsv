@@ -1,0 +1,74 @@
+en	zh-Hant	zh-Hans	align	note
+It has {%1} and it {%2}.	有{1}，{2}。	有{1}，{2}。		shared_info.lua build_description 6438–6538 6480–6510：has_desc_func（It has …）後接 and 與小寫的 add（it …）
+It has {%1} and {%2}.	有{1}，{2}。	有{1}，{2}。		同上；add 不以 it 開頭（its joints are backward、joy marks its every movement…）。排在 and it 那條後面
+It has {%1} and .	有{1}。	有{1}。		同上；夜行巨魔 custom_desc_func 沒選到 add 時（creatures.lua 779–794 回傳 nil）遊戲留下空的 and
+It has {%1}.	有{1}。	有{1}。		shared_info.lua build_description 6438–6538 6481：只有 has_desc（實驗生物 no_extra_description）
+Its eyes glow {@1}.	雙眼散發{1+色}的光芒。	双眼散发{1+色}的光芒。		shared_info.lua build_description 6438–6538 6523：eye_count>1（兩眼、三眼）；{1} 顏色名
+Its eye glows {@1}.	獨眼散發{1+色}的光芒。	独眼散发{1+色}的光芒。		shared_info.lua build_description 6438–6538 6523：eye_count=1
+Its {@1} hair is long and shaggy.	{1+色}的毛髮長而蓬亂。	{1+色}的毛发长而蓬乱。		shared_info.lua tweaks.HAIR color_desc 4067–4077；{1} 顏色名
+Its {@1} hair is very curly.	{1+色}的毛髮非常捲曲。	{1+色}的毛发非常卷曲。		shared_info.lua tweaks.HAIR color_desc 4067–4077；{1} 顏色名
+Its {@1} hair is short and even.	{1+色}的毛髮短而整齊。	{1+色}的毛发短而整齐。		shared_info.lua tweaks.HAIR color_desc 4067–4077；{1} 顏色名
+Its {@1} hair is patchy.	{1+色}的毛髮稀疏斑駁。	{1+色}的毛发稀疏斑驳。		shared_info.lua tweaks.HAIR color_desc 4067–4077；{1} 顏色名
+Its {@1} hair is unkempt.	{1+色}的毛髮凌亂不堪。	{1+色}的毛发凌乱不堪。		shared_info.lua tweaks.HAIR color_desc 4067–4077；{1} 顏色名
+Its {@1} hair is long and straight.	{1+色}的毛髮長而柔順。	{1+色}的毛发长而柔顺。		shared_info.lua tweaks.HAIR color_desc 4067–4077；{1} 顏色名
+Its {@1} hair is long and wavy.	{1+色}的毛髮長而呈波浪狀。	{1+色}的毛发长而呈波浪状。		shared_info.lua tweaks.HAIR color_desc 4067–4077；{1} 顏色名
+Its {@1} feathers are fluffed-out.	{1+色}的羽毛蓬鬆張開。	{1+色}的羽毛蓬松张开。		shared_info.lua tweaks.FEATHERS color_desc 4102–4111
+Its {@1} feathers are downy.	{1+色}的羽毛柔軟如絨。	{1+色}的羽毛柔软如绒。		shared_info.lua tweaks.FEATHERS color_desc 4102–4111
+Its {@1} feathers are long and broad.	{1+色}的羽毛長而寬。	{1+色}的羽毛长而宽。		shared_info.lua tweaks.FEATHERS color_desc 4102–4111
+Its {@1} feathers are long and sparse.	{1+色}的羽毛長而稀疏。	{1+色}的羽毛长而稀疏。		shared_info.lua tweaks.FEATHERS color_desc 4102–4111
+Its {@1} feathers are patchy.	{1+色}的羽毛稀疏斑駁。	{1+色}的羽毛稀疏斑驳。		shared_info.lua tweaks.FEATHERS color_desc 4102–4111
+Its {@1} feathers are long and narrow.	{1+色}的羽毛長而窄。	{1+色}的羽毛长而窄。		shared_info.lua tweaks.FEATHERS color_desc 4102–4111
+Its {@1} scales are small and overlapping.	{1+色}的鱗片細小，層層交疊。	{1+色}的鳞片细小，层层交叠。		shared_info.lua tweaks.SCALES color_desc 4138–4151
+Its {@1} scales are small and set far apart.	{1+色}的鱗片細小，排列稀疏。	{1+色}的鳞片细小，排列稀疏。		shared_info.lua tweaks.SCALES color_desc 4138–4151
+Its {@1} scales are small and close-set.	{1+色}的鱗片細小，排列緊密。	{1+色}的鳞片细小，排列紧密。		shared_info.lua tweaks.SCALES color_desc 4138–4151
+Its {@1} scales are large and overlapping.	{1+色}的鱗片碩大，層層交疊。	{1+色}的鳞片硕大，层层交叠。		shared_info.lua tweaks.SCALES color_desc 4138–4151
+Its {@1} scales are large and set far apart.	{1+色}的鱗片碩大，排列稀疏。	{1+色}的鳞片硕大，排列稀疏。		shared_info.lua tweaks.SCALES color_desc 4138–4151
+Its {@1} scales are large and close-set.	{1+色}的鱗片碩大，排列緊密。	{1+色}的鳞片硕大，排列紧密。		shared_info.lua tweaks.SCALES color_desc 4138–4151
+Its {@1} scales are round and overlapping.	{1+色}的鱗片圓潤，層層交疊。	{1+色}的鳞片圆润，层层交叠。		shared_info.lua tweaks.SCALES color_desc 4138–4151
+Its {@1} scales are round and set far apart.	{1+色}的鱗片圓潤，排列稀疏。	{1+色}的鳞片圆润，排列稀疏。		shared_info.lua tweaks.SCALES color_desc 4138–4151
+Its {@1} scales are round and close-set.	{1+色}的鱗片圓潤，排列緊密。	{1+色}的鳞片圆润，排列紧密。		shared_info.lua tweaks.SCALES color_desc 4138–4151
+Its {@1} scales are blocky and overlapping.	{1+色}的鱗片呈塊狀，層層交疊。	{1+色}的鳞片呈块状，层层交叠。		shared_info.lua tweaks.SCALES color_desc 4138–4151
+Its {@1} scales are blocky and set far apart.	{1+色}的鱗片呈塊狀，排列稀疏。	{1+色}的鳞片呈块状，排列稀疏。		shared_info.lua tweaks.SCALES color_desc 4138–4151
+Its {@1} scales are blocky and close-set.	{1+色}的鱗片呈塊狀，排列緊密。	{1+色}的鳞片呈块状，排列紧密。		shared_info.lua tweaks.SCALES color_desc 4138–4151
+Its {@1} scales are jagged and overlapping.	{1+色}的鱗片參差不齊，層層交疊。	{1+色}的鳞片参差不齐，层层交叠。		shared_info.lua tweaks.SCALES color_desc 4138–4151
+Its {@1} scales are jagged and set far apart.	{1+色}的鱗片參差不齊，排列稀疏。	{1+色}的鳞片参差不齐，排列稀疏。		shared_info.lua tweaks.SCALES color_desc 4138–4151
+Its {@1} scales are jagged and close-set.	{1+色}的鱗片參差不齊，排列緊密。	{1+色}的鳞片参差不齐，排列紧密。		shared_info.lua tweaks.SCALES color_desc 4138–4151
+Its {@1} scales are oval-shaped and overlapping.	{1+色}的鱗片呈橢圓形，層層交疊。	{1+色}的鳞片呈椭圆形，层层交叠。		shared_info.lua tweaks.SCALES color_desc 4138–4151
+Its {@1} scales are oval-shaped and set far apart.	{1+色}的鱗片呈橢圓形，排列稀疏。	{1+色}的鳞片呈椭圆形，排列稀疏。		shared_info.lua tweaks.SCALES color_desc 4138–4151
+Its {@1} scales are oval-shaped and close-set.	{1+色}的鱗片呈橢圓形，排列緊密。	{1+色}的鳞片呈椭圆形，排列紧密。		shared_info.lua tweaks.SCALES color_desc 4138–4151
+Its {@1} skin is waxy.	{1+色}的皮膚如蠟般光滑。	{1+色}的皮肤如蜡般光滑。		shared_info.lua tweaks.SKIN／SKIN_BONES color_desc 4168–4177／4196–4205
+Its {@1} skin is leathery.	{1+色}的皮膚如皮革般堅韌。	{1+色}的皮肤如皮革般坚韧。		shared_info.lua tweaks.SKIN／SKIN_BONES color_desc 4168–4177／4196–4205
+Its {@1} skin is warty.	{1+色}的皮膚長滿疣粒。	{1+色}的皮肤长满疣粒。		shared_info.lua tweaks.SKIN／SKIN_BONES color_desc 4168–4177／4196–4205
+Its {@1} skin is sleek and smooth.	{1+色}的皮膚光滑柔順。	{1+色}的皮肤光滑柔顺。		shared_info.lua tweaks.SKIN／SKIN_BONES color_desc 4168–4177／4196–4205；術語例外：smooth
+Its {@1} skin is rough and cracked.	{1+色}的皮膚粗糙龜裂。	{1+色}的皮肤粗糙龟裂。		shared_info.lua tweaks.SKIN／SKIN_BONES color_desc 4168–4177／4196–4205
+Its {@1} skin is wrinkled.	{1+色}的皮膚滿是皺紋。	{1+色}的皮肤满是皱纹。		shared_info.lua tweaks.SKIN／SKIN_BONES color_desc 4168–4177／4196–4205
+Its {@1} exoskeleton is waxy.	{1+色}的外骨骼如蠟般光滑。	{1+色}的外骨骼如蜡般光滑。		shared_info.lua tweaks.EXOSKELETON color_desc 4228–4237
+Its {@1} exoskeleton is leathery.	{1+色}的外骨骼如皮革般堅韌。	{1+色}的外骨骼如皮革般坚韧。		shared_info.lua tweaks.EXOSKELETON color_desc 4228–4237
+Its {@1} exoskeleton is warty.	{1+色}的外骨骼長滿疣粒。	{1+色}的外骨骼长满疣粒。		shared_info.lua tweaks.EXOSKELETON color_desc 4228–4237
+Its {@1} exoskeleton is sleek and smooth.	{1+色}的外骨骼光滑柔順。	{1+色}的外骨骼光滑柔顺。		shared_info.lua tweaks.EXOSKELETON color_desc 4228–4237；術語例外：smooth
+Its {@1} exoskeleton is rough and cracked.	{1+色}的外骨骼粗糙龜裂。	{1+色}的外骨骼粗糙龟裂。		shared_info.lua tweaks.EXOSKELETON color_desc 4228–4237
+Its {@1} exoskeleton is wrinkled.	{1+色}的外骨骼滿是皺紋。	{1+色}的外骨骼满是皱纹。		shared_info.lua tweaks.EXOSKELETON color_desc 4228–4237
+This night creature was first created accidentally by the {@1} {2} {%3} in {4} in the year {#5}.	這種夜行生物最初是在{5}年由{1}{2}在{4}{3}意外造出的。	这种夜行生物最初是在{5}年由{1}{2}在{4}{3}意外造出的。		creatures.lua experiment_description 1315–1378：實驗生物說明結尾（end_phrase，shared_info.lua build_description 6438–6538 6534）。accidentally＝failed_experiment 1322；{1} 創造者種族名、{2} 名字（可帶 of 首都）；{3} 手段（借助惡魔力量／經過恐怖實驗，可帶對象）；{4} 據點。專門的寫在前面
+This night creature was first created accidentally by the {2} {%3} in {4} in the year {#5}.	這種夜行生物最初是在{5}年由{2}在{4}{3}意外造出的。	这种夜行生物最初是在{5}年由{2}在{4}{3}意外造出的。		creatures.lua experiment_description 1315–1378：實驗生物說明結尾（end_phrase，shared_info.lua build_description 6438–6538 6534）。accidentally＝failed_experiment 1322；{2} 創造者（種族＋名字，種族不是字典字時）；{3} 手段（借助惡魔力量／經過恐怖實驗，可帶對象）；{4} 據點。專門的寫在前面
+This night creature was first created accidentally by the {@1} {2} {%3} in the year {#5}.	這種夜行生物最初是在{5}年由{1}{2}{3}意外造出的。	这种夜行生物最初是在{5}年由{1}{2}{3}意外造出的。		creatures.lua experiment_description 1315–1378：實驗生物說明結尾（end_phrase，shared_info.lua build_description 6438–6538 6534）。accidentally＝failed_experiment 1322；{1} 創造者種族名、{2} 名字（可帶 of 首都）；{3} 手段（借助惡魔力量／經過恐怖實驗，可帶對象）。專門的寫在前面
+This night creature was first created accidentally by the {2} {%3} in the year {#5}.	這種夜行生物最初是在{5}年由{2}{3}意外造出的。	这种夜行生物最初是在{5}年由{2}{3}意外造出的。		creatures.lua experiment_description 1315–1378：實驗生物說明結尾（end_phrase，shared_info.lua build_description 6438–6538 6534）。accidentally＝failed_experiment 1322；{2} 創造者（種族＋名字，種族不是字典字時）；{3} 手段（借助惡魔力量／經過恐怖實驗，可帶對象）。專門的寫在前面
+This night creature was first created by the {@1} {2} {%3} in {4} in the year {#5}.	這種夜行生物最初是在{5}年由{1}{2}在{4}{3}造出的。	这种夜行生物最初是在{5}年由{1}{2}在{4}{3}造出的。		creatures.lua experiment_description 1315–1378：實驗生物說明結尾（end_phrase，shared_info.lua build_description 6438–6538 6534）。{1} 創造者種族名、{2} 名字（可帶 of 首都）；{3} 手段（借助惡魔力量／經過恐怖實驗，可帶對象）；{4} 據點。專門的寫在前面
+This night creature was first created by the {2} {%3} in {4} in the year {#5}.	這種夜行生物最初是在{5}年由{2}在{4}{3}造出的。	这种夜行生物最初是在{5}年由{2}在{4}{3}造出的。		creatures.lua experiment_description 1315–1378：實驗生物說明結尾（end_phrase，shared_info.lua build_description 6438–6538 6534）。{2} 創造者（種族＋名字，種族不是字典字時）；{3} 手段（借助惡魔力量／經過恐怖實驗，可帶對象）；{4} 據點。專門的寫在前面
+This night creature was first created by the {@1} {2} {%3} in the year {#5}.	這種夜行生物最初是在{5}年由{1}{2}{3}造出的。	这种夜行生物最初是在{5}年由{1}{2}{3}造出的。		creatures.lua experiment_description 1315–1378：實驗生物說明結尾（end_phrase，shared_info.lua build_description 6438–6538 6534）。{1} 創造者種族名、{2} 名字（可帶 of 首都）；{3} 手段（借助惡魔力量／經過恐怖實驗，可帶對象）。專門的寫在前面
+This night creature was first created by the {2} {%3} in the year {#5}.	這種夜行生物最初是在{5}年由{2}{3}造出的。	这种夜行生物最初是在{5}年由{2}{3}造出的。		creatures.lua experiment_description 1315–1378：實驗生物說明結尾（end_phrase，shared_info.lua build_description 6438–6538 6534）。{2} 創造者（種族＋名字，種族不是字典字時）；{3} 手段（借助惡魔力量／經過恐怖實驗，可帶對象）。專門的寫在前面
+through the fiend's terrifying power unleashed upon {%1}	以那惡魔施加於{1}的可怖力量	以那恶魔施加于{1}的可怖力量	inner	creatures.lua experiment_description 1315–1378 1339–1351：惡魔力量＋unleashed upon 對象
+through the fiend's twisted power unleashed upon {%1}	以那惡魔施加於{1}的扭曲力量	以那恶魔施加于{1}的扭曲力量	inner	creatures.lua experiment_description 1315–1378 1339–1351：惡魔力量＋unleashed upon 對象
+through the fiend's chaotic power unleashed upon {%1}	以那惡魔施加於{1}的混沌力量	以那恶魔施加于{1}的混沌力量	inner	creatures.lua experiment_description 1315–1378 1339–1351：惡魔力量＋unleashed upon 對象
+after horrible experiments gone wrong on {%1}	對{1}進行的恐怖實驗出錯後	对{1}进行的恐怖实验出错后	inner	creatures.lua experiment_description 1315–1378 1345–1352：實驗出錯＋on 對象（排在不帶 gone wrong 的前面）
+after horrible experiments on {%1}	對{1}進行恐怖實驗後	对{1}进行恐怖实验后	inner	creatures.lua experiment_description 1315–1378 1345–1352：恐怖實驗＋on 對象
+It was created by the {@1} god {2} and is of a part with {%3} and {%4}.	由{1}神{2}所造，與{3}及{4}融為一體。	由{1}神{2}所造，与{3}及{4}融为一体。		creatures.lua angel_description 1929–1961：天使說明結尾；{1} 種族形容詞、{2} 神名、{3}{4} 領域（清單 A, B and C 的 A, B 由 lists.tsv 接）
+It was created by the {@1} god {2} and is of a part with {%3}.	由{1}神{2}所造，與{3}融為一體。	由{1}神{2}所造，与{3}融为一体。		creatures.lua angel_description 1929–1961：只有一個領域
+It was created by the {@1} god {2}.	由{1}神{2}所造。	由{1}神{2}所造。		creatures.lua angel_description 1929–1961：沒有領域
+It was created by the {@1} goddess {2} and is of a part with {%3} and {%4}.	由{1}女神{2}所造，與{3}及{4}融為一體。	由{1}女神{2}所造，与{3}及{4}融为一体。		creatures.lua angel_description 1929–1961：天使說明結尾；{1} 種族形容詞、{2} 神名、{3}{4} 領域（清單 A, B and C 的 A, B 由 lists.tsv 接）
+It was created by the {@1} goddess {2} and is of a part with {%3}.	由{1}女神{2}所造，與{3}融為一體。	由{1}女神{2}所造，与{3}融为一体。		creatures.lua angel_description 1929–1961：只有一個領域
+It was created by the {@1} goddess {2}.	由{1}女神{2}所造。	由{1}女神{2}所造。		creatures.lua angel_description 1929–1961：沒有領域
+It was created by the {@1} deity {2} and is of a part with {%3} and {%4}.	由{1}神祇{2}所造，與{3}及{4}融為一體。	由{1}神祇{2}所造，与{3}及{4}融为一体。		creatures.lua angel_description 1929–1961：天使說明結尾；{1} 種族形容詞、{2} 神名、{3}{4} 領域（清單 A, B and C 的 A, B 由 lists.tsv 接）
+It was created by the {@1} deity {2} and is of a part with {%3}.	由{1}神祇{2}所造，與{3}融為一體。	由{1}神祇{2}所造，与{3}融为一体。		creatures.lua angel_description 1929–1961：只有一個領域
+It was created by the {@1} deity {2}.	由{1}神祇{2}所造。	由{1}神祇{2}所造。		creatures.lua angel_description 1929–1961：沒有領域
+It was created by an unknown deity and is of a part with {%1} and {%2}.	由一位不知名的神祇所造，與{1}及{2}融為一體。	由一位不知名的神祇所造，与{1}及{2}融为一体。		creatures.lua angel_description 1929–1961 1943
+It was created by an unknown deity and is of a part with {%1}.	由一位不知名的神祇所造，與{1}融為一體。	由一位不知名的神祇所造，与{1}融为一体。		creatures.lua angel_description 1929–1961 1943

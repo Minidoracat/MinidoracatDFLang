@@ -1,0 +1,20 @@
+en	zh-Hant	zh-Hans	align	note
+Explore the history of {1}.	探索{1}的歷史。	探索{1}的历史。	c	FUN_140d3e8d0 1977849-1977858 傳說畫面標題：Explore the history of ＋世界名（FUN_140a946e0 英文名）＋.，置中；排在 world_01 的 Explore {1} 前面
+{#1} events	{1} 事件	{1} 事件		FUN_140d3e8d0 1979144-1979160 編年史清單右欄：事件數（FUN_14052c2b0）＋ event＋s（截到 19 字）
+{#1} event	{1} 事件	{1} 事件		FUN_140d3e8d0 1979144-1979160 編年史清單右欄：只有 1 件時不加 s；「1 個事件」會比 1 event 寬
+{#1}/{#2} completed	{1}/{2} 已完成	{1}/{2} 已完成		FUN_140d3e8d0 1979415-1979431／1979502-1979517／1979548-1979564 載入進度：接在 Historical events 等標籤後另畫
+{%1} event sort {#2}/{#3} completed	{1}事件排序 {2}/{3} 已完成	{1}事件排序 {2}/{3} 已完成		FUN_140d3e8d0 1979699-1979716 載入進度：紀元名（FUN_140bb8e10）＋ event sort ＋數/數＋ completed
+The {%1} Age of Two Powers	{1}個雙強時代	{1}个双强时代		FUN_140bb8e10 1734733-1734780 紀元名加 The 與序數（FUN_14052eb70 小寫 second…；同名紀元重複時）；紀元名 FUN_140bb7b80（ann_06 的 Age of 句型）；編年史清單、載入進度；序數句型寫在不帶序數的前面；Two Powers 寫在 Two {%2} 前面，免得 Powers 翻成「乘冪」
+The {%1} Age of Two {%2}	{1}個雙{2}時代	{1}个双{2}时代		同上：兩股勢力同種族
+The {%1} Age of the {%2}	{1}個{2}時代	{1}个{2}时代		同上
+The {%1} Age of {%2} and {%3}	{1}個{2}與{3}時代	{1}个{2}与{3}时代		同上
+The {%1} Age of {%2}	{1}個{2}時代	{1}个{2}时代		同上：固定紀元名的詞（Myth、Heroes…）在 strings/legendsui.tsv（inner）
+The {%1} Age of {2}	{1}個{2}時代	{1}个{2}时代		同上：人物名
+The Age of Two {%1}	雙{1}時代	双{1}时代		FUN_140bb8e10 1734733-1734780 紀元名加 The（編年史清單 FUN_140d3e8d0 1979130、載入進度 1979699）；The Age of Two Powers 在 strings 整句
+The Age of the {%1}	{1}時代	{1}时代		同上：單一勢力
+The Age of {%1} and {%2}	{1}與{2}時代	{1}与{2}时代		同上：兩股勢力
+The Age of {%1}	{1}時代	{1}时代		同上：固定紀元名（Myth、Legends、Heroes、Fairy Tales、Three Powers…，inner 字串）或複數生物名
+The Age of {1}	{1}時代	{1}时代		同上：人物名
+The {%1} Age	{1}時代	{1}时代		同上：生物名＋ Age（Twilight、Golden 在 strings 整句）
+Unnamed female {%1}	無名的女性{1}	无名的女性{1}		FUN_140d3e8d0 1979844-1979900 人物清單：沒有名字的人物（Unnamed＋空白＋female＋種族）；排在 world_01 的 Unnamed {@1} 前面
+Unnamed male {%1}	無名的男性{1}	无名的男性{1}		同上

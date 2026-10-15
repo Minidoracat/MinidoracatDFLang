@@ -1,7 +1,7 @@
 en	zh-Hant	zh-Hans	align	note
-slaying them	殲滅了對方	歼灭了对方	inner	FUN_140b6cd90 1684287–1684648 history_event_squad_vs_squadst 完整句（子句）：殺傷結果
-slaying them and dying	殲滅了對方，自身也戰死	歼灭了对方，自身也战死	inner	FUN_140b6cd90 1684287–1684648 history_event_squad_vs_squadst 完整句（子句）：殺傷結果
-slaying them and losing everyone	殲滅了對方，己方也全軍覆沒	歼灭了对方，己方也全军覆没	inner	FUN_140b6cd90 1684287–1684648 history_event_squad_vs_squadst 完整句（子句）：殺傷結果
+slaying them	擊殺了對方	击杀了对方	inner	FUN_140b6cd90 1684287–1684648 history_event_squad_vs_squadst 完整句（子句）：殺傷結果（them 可能只有一人，一律「擊殺」；對方是一群時 07.tsv 另寫整句「殲滅」）
+slaying them and dying	擊殺了對方，自身也戰死	击杀了对方，自身也战死	inner	FUN_140b6cd90 1684287–1684648 history_event_squad_vs_squadst 完整句（子句）：殺傷結果（them 可能只有一人，一律「擊殺」；對方是一群時 07.tsv 另寫整句「殲滅」）
+slaying them and losing everyone	擊殺了對方，己方也全軍覆沒	击杀了对方，己方也全军覆没	inner	FUN_140b6cd90 1684287–1684648 history_event_squad_vs_squadst 完整句（子句）：殺傷結果（them 可能只有一人，一律「擊殺」；對方是一群時 07.tsv 另寫整句「殲滅」）
 losing everyone	己方全軍覆沒	己方全军覆没	inner	FUN_140b6cd90 1684287–1684648 history_event_squad_vs_squadst 完整句（子句）：殺傷結果
 their diplomatic target	外交對象	外交对象	inner	FUN_140b6dcb0 1684879–1685077 history_event_hist_figure_simple_actionst 完整句（子句）（case 7／8 沒有對象時）
 wild beasts	野獸	野兽	inner	FUN_140b6e600 1685262–1685376 history_event_hist_figure_new_petst 完整句（子句）：三種以上生物

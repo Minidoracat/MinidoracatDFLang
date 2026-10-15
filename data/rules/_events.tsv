@@ -15,10 +15,10 @@ in order to have someone to act on plots and schemes in {1} in {#2}	{2}年以便
 in order to have someone to act on plots and schemes in {1} in the {@2} of {#3}	{3}年{2}以便在{1}有人替自己執行陰謀詭計	{3}年{2}以便在{1}有人替自己执行阴谋诡计	inner	自動產生（scripts/gen_events.py）：01.tsv in order to have someone to act on plots and schemes in {1} 加上結尾的日期
 in order to have someone to act on plots and schemes in {1} in a time before time	太古之時以便在{1}有人替自己執行陰謀詭計	太古之时以便在{1}有人替自己执行阴谋诡计	inner	自動產生（scripts/gen_events.py）：01.tsv in order to have someone to act on plots and schemes in {1} 加上結尾的日期
 in order to have someone to act on plots and schemes in {1}	以便在{1}有人替自己執行陰謀詭計	以便在{1}有人替自己执行阴谋诡计	inner	同上 L379524 目的片語
-in order to secure embezzled funds in {1} in {#2}	{2}年以便在{1}侵吞公款	{2}年以便在{1}侵吞公款	inner	自動產生（scripts/gen_events.py）：01.tsv in order to secure embezzled funds in {1} 加上結尾的日期
-in order to secure embezzled funds in {1} in the {@2} of {#3}	{3}年{2}以便在{1}侵吞公款	{3}年{2}以便在{1}侵吞公款	inner	自動產生（scripts/gen_events.py）：01.tsv in order to secure embezzled funds in {1} 加上結尾的日期
-in order to secure embezzled funds in {1} in a time before time	太古之時以便在{1}侵吞公款	太古之时以便在{1}侵吞公款	inner	自動產生（scripts/gen_events.py）：01.tsv in order to secure embezzled funds in {1} 加上結尾的日期
-in order to secure embezzled funds in {1}	以便在{1}侵吞公款	以便在{1}侵吞公款	inner	同上 L379534 目的片語
+in order to secure embezzled funds in {1} in {#2}	{2}年以便在{1}取得盜用的公款	{2}年以便在{1}取得挪用的公款	inner	自動產生（scripts/gen_events.py）：01.tsv in order to secure embezzled funds in {1} 加上結尾的日期
+in order to secure embezzled funds in {1} in the {@2} of {#3}	{3}年{2}以便在{1}取得盜用的公款	{3}年{2}以便在{1}取得挪用的公款	inner	自動產生（scripts/gen_events.py）：01.tsv in order to secure embezzled funds in {1} 加上結尾的日期
+in order to secure embezzled funds in {1} in a time before time	太古之時以便在{1}取得盜用的公款	太古之时以便在{1}取得挪用的公款	inner	自動產生（scripts/gen_events.py）：01.tsv in order to secure embezzled funds in {1} 加上結尾的日期
+in order to secure embezzled funds in {1}	以便在{1}取得盜用的公款	以便在{1}取得挪用的公款	inner	同上 L379534 目的片語
 as a member of {1} toward the fulfillment of plots and schemes in {2} in {#3}	{3}年讓對方以{1}成員的身分，在{2}為陰謀詭計效力	{3}年让对方以{1}成员的身份，在{2}为阴谋诡计效力	inner	自動產生（scripts/gen_events.py）：01.tsv as a member of {1} toward the fulfillment of plots and schemes in {2} 加上結尾的日期
 as a member of {1} toward the fulfillment of plots and schemes in {2} in the {@3} of {#4}	{4}年{3}讓對方以{1}成員的身分，在{2}為陰謀詭計效力	{4}年{3}让对方以{1}成员的身份，在{2}为阴谋诡计效力	inner	自動產生（scripts/gen_events.py）：01.tsv as a member of {1} toward the fulfillment of plots and schemes in {2} 加上結尾的日期
 as a member of {1} toward the fulfillment of plots and schemes in {2} in a time before time	太古之時讓對方以{1}成員的身分，在{2}為陰謀詭計效力	太古之时让对方以{1}成员的身份，在{2}为阴谋诡计效力	inner	自動產生（scripts/gen_events.py）：01.tsv as a member of {1} toward the fulfillment of plots and schemes in {2} 加上結尾的日期
@@ -485,22 +485,22 @@ the {%1} masterfully dyed with {%2} by {3} for {4} at {5} in {#6}	{6}年{3}在{5
 the {%1} masterfully dyed with {%2} by {3} for {4} at {5} in the {@6} of {#7}	{7}年{6}{3}在{5}為{4}以大師級手藝用{2}染製的{1}	{7}年{6}{3}在{5}为{4}以大师级手艺用{2}染制的{1}	inner	自動產生（scripts/gen_events.py）：03.tsv the {%1} masterfully dyed with {%2} by {3} for {4} at {5} 加上結尾的日期
 the {%1} masterfully dyed with {%2} by {3} for {4} at {5} in a time before time	太古之時{3}在{5}為{4}以大師級手藝用{2}染製的{1}	太古之时{3}在{5}为{4}以大师级手艺用{2}染制的{1}	inner	自動產生（scripts/gen_events.py）：03.tsv the {%1} masterfully dyed with {%2} by {3} for {4} at {5} 加上結尾的日期
 the {%1} masterfully dyed with {%2} by {3} for {4} at {5}	{3}在{5}為{4}以大師級手藝用{2}染製的{1}	{3}在{5}为{4}以大师级手艺用{2}染制的{1}	inner	FUN_140b63fd0 1679562 masterpiece_created_dye_item 短語
-the {@1} "{2}" in {%3} to {%4} by {5} for {6} at {7} in {#8}	{8}年{5}在{7}為{6}用{3}替{4}{1}「{2}」一事	{8}年{5}在{7}为{6}用{3}替{4}{1}“{2}”一事	inner	自動產生（scripts/gen_events.py）：03.tsv the {@1} "{2}" in {%3} to {%4} by {5} for {6} at {7} 加上結尾的日期
-the {@1} "{2}" in {%3} to {%4} by {5} for {6} at {7} in the {@8} of {#9}	{9}年{8}{5}在{7}為{6}用{3}替{4}{1}「{2}」一事	{9}年{8}{5}在{7}为{6}用{3}替{4}{1}“{2}”一事	inner	自動產生（scripts/gen_events.py）：03.tsv the {@1} "{2}" in {%3} to {%4} by {5} for {6} at {7} 加上結尾的日期
-the {@1} "{2}" in {%3} to {%4} by {5} for {6} at {7} in a time before time	太古之時{5}在{7}為{6}用{3}替{4}{1}「{2}」一事	太古之时{5}在{7}为{6}用{3}替{4}{1}“{2}”一事	inner	自動產生（scripts/gen_events.py）：03.tsv the {@1} "{2}" in {%3} to {%4} by {5} for {6} at {7} 加上結尾的日期
-the {@1} "{2}" in {%3} to {%4} by {5} for {6} at {7}	{5}在{7}為{6}用{3}替{4}{1}「{2}」一事	{5}在{7}为{6}用{3}替{4}{1}“{2}”一事	inner	FUN_140b64490 1679760 masterpiece_created_item_improvement 短語；{@} 改良種類，名詞化用「一事」
-the {@1} "{2}" to {%3} by {4} for {5} at {6} in {#7}	{7}年{4}在{6}為{5}替{3}{1}「{2}」一事	{7}年{4}在{6}为{5}替{3}{1}“{2}”一事	inner	自動產生（scripts/gen_events.py）：03.tsv the {@1} "{2}" to {%3} by {4} for {5} at {6} 加上結尾的日期
-the {@1} "{2}" to {%3} by {4} for {5} at {6} in the {@7} of {#8}	{8}年{7}{4}在{6}為{5}替{3}{1}「{2}」一事	{8}年{7}{4}在{6}为{5}替{3}{1}“{2}”一事	inner	自動產生（scripts/gen_events.py）：03.tsv the {@1} "{2}" to {%3} by {4} for {5} at {6} 加上結尾的日期
-the {@1} "{2}" to {%3} by {4} for {5} at {6} in a time before time	太古之時{4}在{6}為{5}替{3}{1}「{2}」一事	太古之时{4}在{6}为{5}替{3}{1}“{2}”一事	inner	自動產生（scripts/gen_events.py）：03.tsv the {@1} "{2}" to {%3} by {4} for {5} at {6} 加上結尾的日期
-the {@1} "{2}" to {%3} by {4} for {5} at {6}	{4}在{6}為{5}替{3}{1}「{2}」一事	{4}在{6}为{5}替{3}{1}“{2}”一事	inner	FUN_140b64490 1679760 masterpiece_created_item_improvement 短語；{@} 改良種類，名詞化用「一事」
-the {@1} in {%2} to {%3} by {4} for {5} at {6} in {#7}	{7}年{4}在{6}為{5}用{2}替{3}{1}一事	{7}年{4}在{6}为{5}用{2}替{3}{1}一事	inner	自動產生（scripts/gen_events.py）：03.tsv the {@1} in {%2} to {%3} by {4} for {5} at {6} 加上結尾的日期
-the {@1} in {%2} to {%3} by {4} for {5} at {6} in the {@7} of {#8}	{8}年{7}{4}在{6}為{5}用{2}替{3}{1}一事	{8}年{7}{4}在{6}为{5}用{2}替{3}{1}一事	inner	自動產生（scripts/gen_events.py）：03.tsv the {@1} in {%2} to {%3} by {4} for {5} at {6} 加上結尾的日期
-the {@1} in {%2} to {%3} by {4} for {5} at {6} in a time before time	太古之時{4}在{6}為{5}用{2}替{3}{1}一事	太古之时{4}在{6}为{5}用{2}替{3}{1}一事	inner	自動產生（scripts/gen_events.py）：03.tsv the {@1} in {%2} to {%3} by {4} for {5} at {6} 加上結尾的日期
-the {@1} in {%2} to {%3} by {4} for {5} at {6}	{4}在{6}為{5}用{2}替{3}{1}一事	{4}在{6}为{5}用{2}替{3}{1}一事	inner	FUN_140b64490 1679760 masterpiece_created_item_improvement 短語；{@} 改良種類，名詞化用「一事」
-the {@1} to {%2} by {3} for {4} at {5} in {#6}	{6}年{3}在{5}為{4}替{2}{1}一事	{6}年{3}在{5}为{4}替{2}{1}一事	inner	自動產生（scripts/gen_events.py）：03.tsv the {@1} to {%2} by {3} for {4} at {5} 加上結尾的日期
-the {@1} to {%2} by {3} for {4} at {5} in the {@6} of {#7}	{7}年{6}{3}在{5}為{4}替{2}{1}一事	{7}年{6}{3}在{5}为{4}替{2}{1}一事	inner	自動產生（scripts/gen_events.py）：03.tsv the {@1} to {%2} by {3} for {4} at {5} 加上結尾的日期
-the {@1} to {%2} by {3} for {4} at {5} in a time before time	太古之時{3}在{5}為{4}替{2}{1}一事	太古之时{3}在{5}为{4}替{2}{1}一事	inner	自動產生（scripts/gen_events.py）：03.tsv the {@1} to {%2} by {3} for {4} at {5} 加上結尾的日期
-the {@1} to {%2} by {3} for {4} at {5}	{3}在{5}為{4}替{2}{1}一事	{3}在{5}为{4}替{2}{1}一事	inner	FUN_140b64490 1679760 masterpiece_created_item_improvement 短語；{@} 改良種類，名詞化用「一事」
+the {@1} "{2}" in {%3} to {%4} by {5} for {6} at {7} in {#8}	{8}年{5}在{7}為{6}於{4}上以{3}{1}「{2}」一事	{8}年{5}在{7}为{6}于{4}上以{3}{1}“{2}”一事	inner	自動產生（scripts/gen_events.py）：03.tsv the {@1} "{2}" in {%3} to {%4} by {5} for {6} at {7} 加上結尾的日期
+the {@1} "{2}" in {%3} to {%4} by {5} for {6} at {7} in the {@8} of {#9}	{9}年{8}{5}在{7}為{6}於{4}上以{3}{1}「{2}」一事	{9}年{8}{5}在{7}为{6}于{4}上以{3}{1}“{2}”一事	inner	自動產生（scripts/gen_events.py）：03.tsv the {@1} "{2}" in {%3} to {%4} by {5} for {6} at {7} 加上結尾的日期
+the {@1} "{2}" in {%3} to {%4} by {5} for {6} at {7} in a time before time	太古之時{5}在{7}為{6}於{4}上以{3}{1}「{2}」一事	太古之时{5}在{7}为{6}于{4}上以{3}{1}“{2}”一事	inner	自動產生（scripts/gen_events.py）：03.tsv the {@1} "{2}" in {%3} to {%4} by {5} for {6} at {7} 加上結尾的日期
+the {@1} "{2}" in {%3} to {%4} by {5} for {6} at {7}	{5}在{7}為{6}於{4}上以{3}{1}「{2}」一事	{5}在{7}为{6}于{4}上以{3}{1}“{2}”一事	inner	FUN_140b64490 1679760 masterpiece_created_item_improvement 短語；{@} 改良種類，名詞化用「一事」；材料寫「以金」、物品寫「於…上」
+the {@1} "{2}" to {%3} by {4} for {5} at {6} in {#7}	{7}年{4}在{6}為{5}於{3}上{1}「{2}」一事	{7}年{4}在{6}为{5}于{3}上{1}“{2}”一事	inner	自動產生（scripts/gen_events.py）：03.tsv the {@1} "{2}" to {%3} by {4} for {5} at {6} 加上結尾的日期
+the {@1} "{2}" to {%3} by {4} for {5} at {6} in the {@7} of {#8}	{8}年{7}{4}在{6}為{5}於{3}上{1}「{2}」一事	{8}年{7}{4}在{6}为{5}于{3}上{1}“{2}”一事	inner	自動產生（scripts/gen_events.py）：03.tsv the {@1} "{2}" to {%3} by {4} for {5} at {6} 加上結尾的日期
+the {@1} "{2}" to {%3} by {4} for {5} at {6} in a time before time	太古之時{4}在{6}為{5}於{3}上{1}「{2}」一事	太古之时{4}在{6}为{5}于{3}上{1}“{2}”一事	inner	自動產生（scripts/gen_events.py）：03.tsv the {@1} "{2}" to {%3} by {4} for {5} at {6} 加上結尾的日期
+the {@1} "{2}" to {%3} by {4} for {5} at {6}	{4}在{6}為{5}於{3}上{1}「{2}」一事	{4}在{6}为{5}于{3}上{1}“{2}”一事	inner	FUN_140b64490 1679760 masterpiece_created_item_improvement 短語；{@} 改良種類，名詞化用「一事」
+the {@1} in {%2} to {%3} by {4} for {5} at {6} in {#7}	{7}年{4}在{6}為{5}於{3}上以{2}{1}一事	{7}年{4}在{6}为{5}于{3}上以{2}{1}一事	inner	自動產生（scripts/gen_events.py）：03.tsv the {@1} in {%2} to {%3} by {4} for {5} at {6} 加上結尾的日期
+the {@1} in {%2} to {%3} by {4} for {5} at {6} in the {@7} of {#8}	{8}年{7}{4}在{6}為{5}於{3}上以{2}{1}一事	{8}年{7}{4}在{6}为{5}于{3}上以{2}{1}一事	inner	自動產生（scripts/gen_events.py）：03.tsv the {@1} in {%2} to {%3} by {4} for {5} at {6} 加上結尾的日期
+the {@1} in {%2} to {%3} by {4} for {5} at {6} in a time before time	太古之時{4}在{6}為{5}於{3}上以{2}{1}一事	太古之时{4}在{6}为{5}于{3}上以{2}{1}一事	inner	自動產生（scripts/gen_events.py）：03.tsv the {@1} in {%2} to {%3} by {4} for {5} at {6} 加上結尾的日期
+the {@1} in {%2} to {%3} by {4} for {5} at {6}	{4}在{6}為{5}於{3}上以{2}{1}一事	{4}在{6}为{5}于{3}上以{2}{1}一事	inner	FUN_140b64490 1679760 masterpiece_created_item_improvement 短語；{@} 改良種類，名詞化用「一事」；材料寫「以金」、物品寫「於…上」
+the {@1} to {%2} by {3} for {4} at {5} in {#6}	{6}年{3}在{5}為{4}於{2}上{1}一事	{6}年{3}在{5}为{4}于{2}上{1}一事	inner	自動產生（scripts/gen_events.py）：03.tsv the {@1} to {%2} by {3} for {4} at {5} 加上結尾的日期
+the {@1} to {%2} by {3} for {4} at {5} in the {@6} of {#7}	{7}年{6}{3}在{5}為{4}於{2}上{1}一事	{7}年{6}{3}在{5}为{4}于{2}上{1}一事	inner	自動產生（scripts/gen_events.py）：03.tsv the {@1} to {%2} by {3} for {4} at {5} 加上結尾的日期
+the {@1} to {%2} by {3} for {4} at {5} in a time before time	太古之時{3}在{5}為{4}於{2}上{1}一事	太古之时{3}在{5}为{4}于{2}上{1}一事	inner	自動產生（scripts/gen_events.py）：03.tsv the {@1} to {%2} by {3} for {4} at {5} 加上結尾的日期
+the {@1} to {%2} by {3} for {4} at {5}	{3}在{5}為{4}於{2}上{1}一事	{3}在{5}为{4}于{2}上{1}一事	inner	FUN_140b64490 1679760 masterpiece_created_item_improvement 短語；{@} 改良種類，名詞化用「一事」
 The artwork relates to the destruction of {%1} by {2} during fortification carving at {3}in {#4}.	這件藝術品與{4}年{2}在{3}鑿射擊孔牆時毀掉{1}有關。	这件艺术品与{4}年{2}在{3}凿射击孔墙时毁掉{1}有关。		masterpiece_lost 短語（FUN_140b65030）套進 FUN_141451b10 的 The artwork relates to {%1}.：短語含 during，會被 sentences_artimage_01 的 The artwork relates to {%1} during {2}. 拆錯，所以整句寫在這裡（檔名在前）
 The artwork relates to the destruction of {%1} by {2} during fortification carving at {3}in the {@4} of {#5}.	這件藝術品與{5}年{4}{2}在{3}鑿射擊孔牆時毀掉{1}有關。	这件艺术品与{5}年{4}{2}在{3}凿射击孔墙时毁掉{1}有关。		masterpiece_lost 短語（FUN_140b65030）套進 FUN_141451b10 的 The artwork relates to {%1}.：短語含 during，會被 sentences_artimage_01 的 The artwork relates to {%1} during {2}. 拆錯，所以整句寫在這裡（檔名在前）
 The artwork relates to the destruction of {%1} by {2} during fortification carving at {3}in a time before time.	這件藝術品與太古之時{2}在{3}鑿射擊孔牆時毀掉{1}有關。	这件艺术品与太古之时{2}在{3}凿射击孔墙时毁掉{1}有关。		masterpiece_lost 短語（FUN_140b65030）套進 FUN_141451b10 的 The artwork relates to {%1}.：短語含 during，會被 sentences_artimage_01 的 The artwork relates to {%1} during {2}. 拆錯，所以整句寫在這裡（檔名在前）
@@ -1707,18 +1707,54 @@ the slashing off of {1}'s {%2} in {#3}	{3}年{1}的{2}被砍斷	{3}年{1}的{2}�
 the slashing off of {1}'s {%2} in the {@3} of {#4}	{4}年{3}{1}的{2}被砍斷	{4}年{3}{1}的{2}被砍断	inner	自動產生（scripts/gen_events.py）：06.tsv the slashing off of {1}'s {%2} 加上結尾的日期
 the slashing off of {1}'s {%2} in a time before time	太古之時{1}的{2}被砍斷	太古之时{1}的{2}被砍断	inner	自動產生（scripts/gen_events.py）：06.tsv the slashing off of {1}'s {%2} 加上結尾的日期
 the slashing off of {1}'s {%2}	{1}的{2}被砍斷	{1}的{2}被砍断	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：砍
-the stabbing out of {1}'s {%2} by {3} as a means of torture	{1}的{2}遭{3}以酷刑戳出	{1}的{2}遭{3}以酷刑戳出	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：刺、嵌入部位；加害者＋酷刑
-the stabbing out of {1}'s {%2} by {3} as a means of torture in {#4}	{4}年{1}的{2}遭{3}以酷刑戳出	{4}年{1}的{2}遭{3}以酷刑戳出	inner	自動產生（scripts/gen_events.py）：06.tsv the stabbing out of {1}'s {%2} by {3} as a means of torture 加上結尾的日期
-the stabbing out of {1}'s {%2} by {3} as a means of torture in the {@4} of {#5}	{5}年{4}{1}的{2}遭{3}以酷刑戳出	{5}年{4}{1}的{2}遭{3}以酷刑戳出	inner	自動產生（scripts/gen_events.py）：06.tsv the stabbing out of {1}'s {%2} by {3} as a means of torture 加上結尾的日期
-the stabbing out of {1}'s {%2} by {3} as a means of torture in a time before time	太古之時{1}的{2}遭{3}以酷刑戳出	太古之时{1}的{2}遭{3}以酷刑戳出	inner	自動產生（scripts/gen_events.py）：06.tsv the stabbing out of {1}'s {%2} by {3} as a means of torture 加上結尾的日期
-the stabbing out of {1}'s {%2} by {3} in {#4}	{4}年{1}的{2}被{3}戳出	{4}年{1}的{2}被{3}戳出	inner	自動產生（scripts/gen_events.py）：06.tsv the stabbing out of {1}'s {%2} by {3} 加上結尾的日期
-the stabbing out of {1}'s {%2} by {3} in the {@4} of {#5}	{5}年{4}{1}的{2}被{3}戳出	{5}年{4}{1}的{2}被{3}戳出	inner	自動產生（scripts/gen_events.py）：06.tsv the stabbing out of {1}'s {%2} by {3} 加上結尾的日期
-the stabbing out of {1}'s {%2} by {3} in a time before time	太古之時{1}的{2}被{3}戳出	太古之时{1}的{2}被{3}戳出	inner	自動產生（scripts/gen_events.py）：06.tsv the stabbing out of {1}'s {%2} by {3} 加上結尾的日期
-the stabbing out of {1}'s {%2} by {3}	{1}的{2}被{3}戳出	{1}的{2}被{3}戳出	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：刺、嵌入部位；加害者
-the stabbing out of {1}'s {%2} in {#3}	{3}年{1}的{2}被戳出	{3}年{1}的{2}被戳出	inner	自動產生（scripts/gen_events.py）：06.tsv the stabbing out of {1}'s {%2} 加上結尾的日期
-the stabbing out of {1}'s {%2} in the {@3} of {#4}	{4}年{3}{1}的{2}被戳出	{4}年{3}{1}的{2}被戳出	inner	自動產生（scripts/gen_events.py）：06.tsv the stabbing out of {1}'s {%2} 加上結尾的日期
-the stabbing out of {1}'s {%2} in a time before time	太古之時{1}的{2}被戳出	太古之时{1}的{2}被戳出	inner	自動產生（scripts/gen_events.py）：06.tsv the stabbing out of {1}'s {%2} 加上結尾的日期
-the stabbing out of {1}'s {%2}	{1}的{2}被戳出	{1}的{2}被戳出	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：刺、嵌入部位
+the stabbing out of {1}'s left eye by {2} as a means of torture	{1}的左眼遭{2}以酷刑戳出	{1}的左眼遭{2}以酷刑戳出	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：刺、嵌入部位；眼睛寫死「戳出」，排在其他部位的通用句型前
+the stabbing out of {1}'s left eye by {2} as a means of torture in {#3}	{3}年{1}的左眼遭{2}以酷刑戳出	{3}年{1}的左眼遭{2}以酷刑戳出	inner	自動產生（scripts/gen_events.py）：06.tsv the stabbing out of {1}'s left eye by {2} as a means of torture 加上結尾的日期
+the stabbing out of {1}'s left eye by {2} as a means of torture in the {@3} of {#4}	{4}年{3}{1}的左眼遭{2}以酷刑戳出	{4}年{3}{1}的左眼遭{2}以酷刑戳出	inner	自動產生（scripts/gen_events.py）：06.tsv the stabbing out of {1}'s left eye by {2} as a means of torture 加上結尾的日期
+the stabbing out of {1}'s left eye by {2} as a means of torture in a time before time	太古之時{1}的左眼遭{2}以酷刑戳出	太古之时{1}的左眼遭{2}以酷刑戳出	inner	自動產生（scripts/gen_events.py）：06.tsv the stabbing out of {1}'s left eye by {2} as a means of torture 加上結尾的日期
+the stabbing out of {1}'s left eye by {2} in {#3}	{3}年{1}的左眼被{2}戳出	{3}年{1}的左眼被{2}戳出	inner	自動產生（scripts/gen_events.py）：06.tsv the stabbing out of {1}'s left eye by {2} 加上結尾的日期
+the stabbing out of {1}'s left eye by {2} in the {@3} of {#4}	{4}年{3}{1}的左眼被{2}戳出	{4}年{3}{1}的左眼被{2}戳出	inner	自動產生（scripts/gen_events.py）：06.tsv the stabbing out of {1}'s left eye by {2} 加上結尾的日期
+the stabbing out of {1}'s left eye by {2} in a time before time	太古之時{1}的左眼被{2}戳出	太古之时{1}的左眼被{2}戳出	inner	自動產生（scripts/gen_events.py）：06.tsv the stabbing out of {1}'s left eye by {2} 加上結尾的日期
+the stabbing out of {1}'s left eye by {2}	{1}的左眼被{2}戳出	{1}的左眼被{2}戳出	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：刺、嵌入部位；眼睛寫死「戳出」，排在其他部位的通用句型前
+the stabbing out of {1}'s left eye	{1}的左眼被戳出	{1}的左眼被戳出	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：刺、嵌入部位；眼睛寫死「戳出」，排在其他部位的通用句型前
+the stabbing out of {1}'s right eye by {2} as a means of torture	{1}的右眼遭{2}以酷刑戳出	{1}的右眼遭{2}以酷刑戳出	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：刺、嵌入部位；眼睛寫死「戳出」，排在其他部位的通用句型前
+the stabbing out of {1}'s right eye by {2} as a means of torture in {#3}	{3}年{1}的右眼遭{2}以酷刑戳出	{3}年{1}的右眼遭{2}以酷刑戳出	inner	自動產生（scripts/gen_events.py）：06.tsv the stabbing out of {1}'s right eye by {2} as a means of torture 加上結尾的日期
+the stabbing out of {1}'s right eye by {2} as a means of torture in the {@3} of {#4}	{4}年{3}{1}的右眼遭{2}以酷刑戳出	{4}年{3}{1}的右眼遭{2}以酷刑戳出	inner	自動產生（scripts/gen_events.py）：06.tsv the stabbing out of {1}'s right eye by {2} as a means of torture 加上結尾的日期
+the stabbing out of {1}'s right eye by {2} as a means of torture in a time before time	太古之時{1}的右眼遭{2}以酷刑戳出	太古之时{1}的右眼遭{2}以酷刑戳出	inner	自動產生（scripts/gen_events.py）：06.tsv the stabbing out of {1}'s right eye by {2} as a means of torture 加上結尾的日期
+the stabbing out of {1}'s right eye by {2} in {#3}	{3}年{1}的右眼被{2}戳出	{3}年{1}的右眼被{2}戳出	inner	自動產生（scripts/gen_events.py）：06.tsv the stabbing out of {1}'s right eye by {2} 加上結尾的日期
+the stabbing out of {1}'s right eye by {2} in the {@3} of {#4}	{4}年{3}{1}的右眼被{2}戳出	{4}年{3}{1}的右眼被{2}戳出	inner	自動產生（scripts/gen_events.py）：06.tsv the stabbing out of {1}'s right eye by {2} 加上結尾的日期
+the stabbing out of {1}'s right eye by {2} in a time before time	太古之時{1}的右眼被{2}戳出	太古之时{1}的右眼被{2}戳出	inner	自動產生（scripts/gen_events.py）：06.tsv the stabbing out of {1}'s right eye by {2} 加上結尾的日期
+the stabbing out of {1}'s right eye by {2}	{1}的右眼被{2}戳出	{1}的右眼被{2}戳出	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：刺、嵌入部位；眼睛寫死「戳出」，排在其他部位的通用句型前
+the stabbing out of {1}'s right eye	{1}的右眼被戳出	{1}的右眼被戳出	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：刺、嵌入部位；眼睛寫死「戳出」，排在其他部位的通用句型前
+the stabbing out of {1}'s eye by {2} as a means of torture	{1}的眼睛遭{2}以酷刑戳出	{1}的眼睛遭{2}以酷刑戳出	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：刺、嵌入部位；眼睛寫死「戳出」，排在其他部位的通用句型前
+the stabbing out of {1}'s eye by {2} as a means of torture in {#3}	{3}年{1}的眼睛遭{2}以酷刑戳出	{3}年{1}的眼睛遭{2}以酷刑戳出	inner	自動產生（scripts/gen_events.py）：06.tsv the stabbing out of {1}'s eye by {2} as a means of torture 加上結尾的日期
+the stabbing out of {1}'s eye by {2} as a means of torture in the {@3} of {#4}	{4}年{3}{1}的眼睛遭{2}以酷刑戳出	{4}年{3}{1}的眼睛遭{2}以酷刑戳出	inner	自動產生（scripts/gen_events.py）：06.tsv the stabbing out of {1}'s eye by {2} as a means of torture 加上結尾的日期
+the stabbing out of {1}'s eye by {2} as a means of torture in a time before time	太古之時{1}的眼睛遭{2}以酷刑戳出	太古之时{1}的眼睛遭{2}以酷刑戳出	inner	自動產生（scripts/gen_events.py）：06.tsv the stabbing out of {1}'s eye by {2} as a means of torture 加上結尾的日期
+the stabbing out of {1}'s eye by {2} in {#3}	{3}年{1}的眼睛被{2}戳出	{3}年{1}的眼睛被{2}戳出	inner	自動產生（scripts/gen_events.py）：06.tsv the stabbing out of {1}'s eye by {2} 加上結尾的日期
+the stabbing out of {1}'s eye by {2} in the {@3} of {#4}	{4}年{3}{1}的眼睛被{2}戳出	{4}年{3}{1}的眼睛被{2}戳出	inner	自動產生（scripts/gen_events.py）：06.tsv the stabbing out of {1}'s eye by {2} 加上結尾的日期
+the stabbing out of {1}'s eye by {2} in a time before time	太古之時{1}的眼睛被{2}戳出	太古之时{1}的眼睛被{2}戳出	inner	自動產生（scripts/gen_events.py）：06.tsv the stabbing out of {1}'s eye by {2} 加上結尾的日期
+the stabbing out of {1}'s eye by {2}	{1}的眼睛被{2}戳出	{1}的眼睛被{2}戳出	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：刺、嵌入部位；眼睛寫死「戳出」，排在其他部位的通用句型前
+the stabbing out of {1}'s eye	{1}的眼睛被戳出	{1}的眼睛被戳出	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：刺、嵌入部位；眼睛寫死「戳出」，排在其他部位的通用句型前
+the stabbing out of {1}'s {%2} by {3} as a means of torture	{1}的{2}遭{3}以酷刑刺擊而毀	{1}的{2}遭{3}以酷刑刺击而毁	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：刺、嵌入部位；加害者＋酷刑；頭、軀幹等非眼睛部位（眼睛另寫在前面）
+the stabbing out of {1}'s {%2} by {3} as a means of torture in {#4}	{4}年{1}的{2}遭{3}以酷刑刺擊而毀	{4}年{1}的{2}遭{3}以酷刑刺击而毁	inner	自動產生（scripts/gen_events.py）：06.tsv the stabbing out of {1}'s {%2} by {3} as a means of torture 加上結尾的日期
+the stabbing out of {1}'s {%2} by {3} as a means of torture in the {@4} of {#5}	{5}年{4}{1}的{2}遭{3}以酷刑刺擊而毀	{5}年{4}{1}的{2}遭{3}以酷刑刺击而毁	inner	自動產生（scripts/gen_events.py）：06.tsv the stabbing out of {1}'s {%2} by {3} as a means of torture 加上結尾的日期
+the stabbing out of {1}'s {%2} by {3} as a means of torture in a time before time	太古之時{1}的{2}遭{3}以酷刑刺擊而毀	太古之时{1}的{2}遭{3}以酷刑刺击而毁	inner	自動產生（scripts/gen_events.py）：06.tsv the stabbing out of {1}'s {%2} by {3} as a means of torture 加上結尾的日期
+the stabbing out of {1}'s {%2} by {3} in {#4}	{4}年{1}的{2}遭{3}刺擊而毀	{4}年{1}的{2}遭{3}刺击而毁	inner	自動產生（scripts/gen_events.py）：06.tsv the stabbing out of {1}'s {%2} by {3} 加上結尾的日期
+the stabbing out of {1}'s {%2} by {3} in the {@4} of {#5}	{5}年{4}{1}的{2}遭{3}刺擊而毀	{5}年{4}{1}的{2}遭{3}刺击而毁	inner	自動產生（scripts/gen_events.py）：06.tsv the stabbing out of {1}'s {%2} by {3} 加上結尾的日期
+the stabbing out of {1}'s {%2} by {3} in a time before time	太古之時{1}的{2}遭{3}刺擊而毀	太古之时{1}的{2}遭{3}刺击而毁	inner	自動產生（scripts/gen_events.py）：06.tsv the stabbing out of {1}'s {%2} by {3} 加上結尾的日期
+the stabbing out of {1}'s {%2} by {3}	{1}的{2}遭{3}刺擊而毀	{1}的{2}遭{3}刺击而毁	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：刺、嵌入部位；加害者；頭、軀幹等非眼睛部位（眼睛另寫在前面）
+the stabbing out of {1}'s left eye in {#2}	{2}年{1}的左眼被戳出	{2}年{1}的左眼被戳出	inner	自動產生（scripts/gen_events.py）：06.tsv the stabbing out of {1}'s left eye 加上結尾的日期
+the stabbing out of {1}'s left eye in the {@2} of {#3}	{3}年{2}{1}的左眼被戳出	{3}年{2}{1}的左眼被戳出	inner	自動產生（scripts/gen_events.py）：06.tsv the stabbing out of {1}'s left eye 加上結尾的日期
+the stabbing out of {1}'s left eye in a time before time	太古之時{1}的左眼被戳出	太古之时{1}的左眼被戳出	inner	自動產生（scripts/gen_events.py）：06.tsv the stabbing out of {1}'s left eye 加上結尾的日期
+the stabbing out of {1}'s right eye in {#2}	{2}年{1}的右眼被戳出	{2}年{1}的右眼被戳出	inner	自動產生（scripts/gen_events.py）：06.tsv the stabbing out of {1}'s right eye 加上結尾的日期
+the stabbing out of {1}'s right eye in the {@2} of {#3}	{3}年{2}{1}的右眼被戳出	{3}年{2}{1}的右眼被戳出	inner	自動產生（scripts/gen_events.py）：06.tsv the stabbing out of {1}'s right eye 加上結尾的日期
+the stabbing out of {1}'s right eye in a time before time	太古之時{1}的右眼被戳出	太古之时{1}的右眼被戳出	inner	自動產生（scripts/gen_events.py）：06.tsv the stabbing out of {1}'s right eye 加上結尾的日期
+the stabbing out of {1}'s eye in {#2}	{2}年{1}的眼睛被戳出	{2}年{1}的眼睛被戳出	inner	自動產生（scripts/gen_events.py）：06.tsv the stabbing out of {1}'s eye 加上結尾的日期
+the stabbing out of {1}'s eye in the {@2} of {#3}	{3}年{2}{1}的眼睛被戳出	{3}年{2}{1}的眼睛被戳出	inner	自動產生（scripts/gen_events.py）：06.tsv the stabbing out of {1}'s eye 加上結尾的日期
+the stabbing out of {1}'s eye in a time before time	太古之時{1}的眼睛被戳出	太古之时{1}的眼睛被戳出	inner	自動產生（scripts/gen_events.py）：06.tsv the stabbing out of {1}'s eye 加上結尾的日期
+the stabbing out of {1}'s {%2} in {#3}	{3}年{1}的{2}遭刺擊而毀	{3}年{1}的{2}遭刺击而毁	inner	自動產生（scripts/gen_events.py）：06.tsv the stabbing out of {1}'s {%2} 加上結尾的日期
+the stabbing out of {1}'s {%2} in the {@3} of {#4}	{4}年{3}{1}的{2}遭刺擊而毀	{4}年{3}{1}的{2}遭刺击而毁	inner	自動產生（scripts/gen_events.py）：06.tsv the stabbing out of {1}'s {%2} 加上結尾的日期
+the stabbing out of {1}'s {%2} in a time before time	太古之時{1}的{2}遭刺擊而毀	太古之时{1}的{2}遭刺击而毁	inner	自動產生（scripts/gen_events.py）：06.tsv the stabbing out of {1}'s {%2} 加上結尾的日期
+the stabbing out of {1}'s {%2}	{1}的{2}遭刺擊而毀	{1}的{2}遭刺击而毁	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：刺、嵌入部位；頭、軀幹等非眼睛部位（眼睛另寫在前面）
 the ripping off of {1}'s {%2} by {3} as a means of torture	{1}的{2}遭{3}以酷刑扯斷	{1}的{2}遭{3}以酷刑扯断	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：刺（遊戲原文如此）；加害者＋酷刑
 the ripping off of {1}'s {%2} by {3} as a means of torture in {#4}	{4}年{1}的{2}遭{3}以酷刑扯斷	{4}年{1}的{2}遭{3}以酷刑扯断	inner	自動產生（scripts/gen_events.py）：06.tsv the ripping off of {1}'s {%2} by {3} as a means of torture 加上結尾的日期
 the ripping off of {1}'s {%2} by {3} as a means of torture in the {@4} of {#5}	{5}年{4}{1}的{2}遭{3}以酷刑扯斷	{5}年{4}{1}的{2}遭{3}以酷刑扯断	inner	自動產生（scripts/gen_events.py）：06.tsv the ripping off of {1}'s {%2} by {3} as a means of torture 加上結尾的日期
@@ -2249,19 +2285,19 @@ a lone {%1} in {#2}	{2}年一名孤身的{1}	{2}年一名孤身的{1}	inner	自�
 a lone {%1} in the {@2} of {#3}	{3}年{2}一名孤身的{1}	{3}年{2}一名孤身的{1}	inner	自動產生（scripts/gen_events.py）：07.tsv a lone {%1} 加上結尾的日期
 a lone {%1} in a time before time	太古之時一名孤身的{1}	太古之时一名孤身的{1}	inner	自動產生（scripts/gen_events.py）：07.tsv a lone {%1} 加上結尾的日期
 a lone {%1}	一名孤身的{1}	一名孤身的{1}	inner	FUN_140b6cd90 1684287–1684648 history_event_squad_vs_squadst 完整句（子句）／短語：攻方只有一名生物
-animated {%1} in {#2}	{2}年復生的{1}	{2}年复生的{1}	inner	自動產生（scripts/gen_events.py）：07.tsv animated {%1} 加上結尾的日期
-animated {%1} in the {@2} of {#3}	{3}年{2}復生的{1}	{3}年{2}复生的{1}	inner	自動產生（scripts/gen_events.py）：07.tsv animated {%1} 加上結尾的日期
-animated {%1} in a time before time	太古之時復生的{1}	太古之时复生的{1}	inner	自動產生（scripts/gen_events.py）：07.tsv animated {%1} 加上結尾的日期
-animated {%1}	復生的{1}	复生的{1}	inner	FUN_140b6cd90 1684287–1684648 history_event_squad_vs_squadst 完整句（子句）／短語：被法術復生（animated）的生物
+animated {%1} in {#2}	{2}年行屍{1}	{2}年行尸{1}	inner	自動產生（scripts/gen_events.py）：07.tsv animated {%1} 加上結尾的日期
+animated {%1} in the {@2} of {#3}	{3}年{2}行屍{1}	{3}年{2}行尸{1}	inner	自動產生（scripts/gen_events.py）：07.tsv animated {%1} 加上結尾的日期
+animated {%1} in a time before time	太古之時行屍{1}	太古之时行尸{1}	inner	自動產生（scripts/gen_events.py）：07.tsv animated {%1} 加上結尾的日期
+animated {%1}	行屍{1}	行尸{1}	inner	FUN_140b6cd90 1684287–1684648 history_event_squad_vs_squadst 完整句（子句）／短語：被法術復生（animated）的生物；和屍體處置的「復活為行屍」一致
 {1}, brilliantly led by {2},	由{2}英明指揮的{1}	由{2}英明指挥的{1}	inner	FUN_140b6cd90 1684287–1684648 history_event_squad_vs_squadst 完整句（子句）：小隊名＋指揮者（領導擲骰分級）
 {1}, inspiringly led by {2},	由{2}鼓舞人心地指揮的{1}	由{2}鼓舞人心地指挥的{1}	inner	FUN_140b6cd90 1684287–1684648 history_event_squad_vs_squadst 完整句（子句）：小隊名＋指揮者（領導擲骰分級）
 {1}, ably led by {2},	由{2}幹練指揮的{1}	由{2}干练指挥的{1}	inner	FUN_140b6cd90 1684287–1684648 history_event_squad_vs_squadst 完整句（子句）：小隊名＋指揮者（領導擲骰分級）
 {1}, poorly led by {2},	由{2}拙劣指揮的{1}	由{2}拙劣指挥的{1}	inner	FUN_140b6cd90 1684287–1684648 history_event_squad_vs_squadst 完整句（子句）：小隊名＋指揮者（領導擲骰分級）
 {1}, led by {2},	由{2}指揮的{1}	由{2}指挥的{1}	inner	FUN_140b6cd90 1684287–1684648 history_event_squad_vs_squadst 完整句（子句）：小隊名＋指揮者（領導擲骰 50–99）
-slaying them and losing {@1} in {#2}	{2}年殲滅了對方，己方折損{1}名	{2}年歼灭了对方，己方折损{1}名	inner	自動產生（scripts/gen_events.py）：07.tsv slaying them and losing {@1} 加上結尾的日期
-slaying them and losing {@1} in the {@2} of {#3}	{3}年{2}殲滅了對方，己方折損{1}名	{3}年{2}歼灭了对方，己方折损{1}名	inner	自動產生（scripts/gen_events.py）：07.tsv slaying them and losing {@1} 加上結尾的日期
-slaying them and losing {@1} in a time before time	太古之時殲滅了對方，己方折損{1}名	太古之时歼灭了对方，己方折损{1}名	inner	自動產生（scripts/gen_events.py）：07.tsv slaying them and losing {@1} 加上結尾的日期
-slaying them and losing {@1}	殲滅了對方，己方折損{1}名	歼灭了对方，己方折损{1}名	inner	FUN_140b6cd90 1684287–1684648 history_event_squad_vs_squadst 完整句（子句）：殺傷結果
+slaying them and losing {@1} in {#2}	{2}年擊殺了對方，己方折損{1}名	{2}年击杀了对方，己方折损{1}名	inner	自動產生（scripts/gen_events.py）：07.tsv slaying them and losing {@1} 加上結尾的日期
+slaying them and losing {@1} in the {@2} of {#3}	{3}年{2}擊殺了對方，己方折損{1}名	{3}年{2}击杀了对方，己方折损{1}名	inner	自動產生（scripts/gen_events.py）：07.tsv slaying them and losing {@1} 加上結尾的日期
+slaying them and losing {@1} in a time before time	太古之時擊殺了對方，己方折損{1}名	太古之时击杀了对方，己方折损{1}名	inner	自動產生（scripts/gen_events.py）：07.tsv slaying them and losing {@1} 加上結尾的日期
+slaying them and losing {@1}	擊殺了對方，己方折損{1}名	击杀了对方，己方折损{1}名	inner	FUN_140b6cd90 1684287–1684648 history_event_squad_vs_squadst 完整句（子句）：殺傷結果（them 可能只有一人，一律「擊殺」；對方是一群時由前面的整句寫「殲滅」）
 slaying {@1} and losing everyone	殺死了{1}名敵人，己方也全軍覆沒	杀死了{1}名敌人，己方也全军覆没	inner	FUN_140b6cd90 1684287–1684648 history_event_squad_vs_squadst 完整句（子句）：殺傷結果
 slaying {@1} and losing everyone in {#2}	{2}年殺死了{1}名敵人，己方也全軍覆沒	{2}年杀死了{1}名敌人，己方也全军覆没	inner	自動產生（scripts/gen_events.py）：07.tsv slaying {@1} and losing everyone 加上結尾的日期
 slaying {@1} and losing {@2} in {#3}	{3}年殺死了{1}名敵人，己方折損{2}名	{3}年杀死了{1}名敌人，己方折损{2}名	inner	自動產生（scripts/gen_events.py）：07.tsv slaying {@1} and losing {@2} 加上結尾的日期
@@ -2573,14 +2609,14 @@ the loss of a hist fig entry of {1} in {2} in {#3}	{3}年{1}在{2}遺失歷史�
 the loss of a hist fig entry of {1} in {2} in the {@3} of {#4}	{4}年{3}{1}在{2}遺失歷史人物條目	{4}年{3}{1}在{2}丢失历史人物条目	inner	自動產生（scripts/gen_events.py）：09.tsv the loss of a hist fig entry of {1} in {2} 加上結尾的日期
 the loss of a hist fig entry of {1} in {2} in a time before time	太古之時{1}在{2}遺失歷史人物條目	太古之时{1}在{2}丢失历史人物条目	inner	自動產生（scripts/gen_events.py）：09.tsv the loss of a hist fig entry of {1} in {2} 加上結尾的日期
 the loss of a hist fig entry of {1} in {2}	{1}在{2}遺失歷史人物條目	{1}在{2}丢失历史人物条目	inner	FUN_140b75c00 L1689279 change_hf_job 短語
-the raising of {1} in  {2} within {3} in {#4}	{4}年{1}在{2}的{3}中爬起	{4}年{1}在{2}的{3}中爬起	inner	自動產生（scripts/gen_events.py）：09.tsv the raising of {1} in  {2} within {3} 加上結尾的日期
-the raising of {1} in  {2} within {3} in the {@4} of {#5}	{5}年{4}{1}在{2}的{3}中爬起	{5}年{4}{1}在{2}的{3}中爬起	inner	自動產生（scripts/gen_events.py）：09.tsv the raising of {1} in  {2} within {3} 加上結尾的日期
-the raising of {1} in  {2} within {3} in a time before time	太古之時{1}在{2}的{3}中爬起	太古之时{1}在{2}的{3}中爬起	inner	自動產生（scripts/gen_events.py）：09.tsv the raising of {1} in  {2} within {3} 加上結尾的日期
-the raising of {1} in  {2} within {3}	{1}在{2}的{3}中爬起	{1}在{2}的{3}中爬起	inner	FUN_140b76340 L1689563 change_hf_body_state 短語；in 與地名之間遊戲寫了兩個空白
-the raising of {1} in  {2} in {#3}	{3}年{1}在{2}中爬起	{3}年{1}在{2}中爬起	inner	自動產生（scripts/gen_events.py）：09.tsv the raising of {1} in  {2} 加上結尾的日期
-the raising of {1} in  {2} in the {@3} of {#4}	{4}年{3}{1}在{2}中爬起	{4}年{3}{1}在{2}中爬起	inner	自動產生（scripts/gen_events.py）：09.tsv the raising of {1} in  {2} 加上結尾的日期
-the raising of {1} in  {2} in a time before time	太古之時{1}在{2}中爬起	太古之时{1}在{2}中爬起	inner	自動產生（scripts/gen_events.py）：09.tsv the raising of {1} in  {2} 加上結尾的日期
-the raising of {1} in  {2}	{1}在{2}中爬起	{1}在{2}中爬起	inner	FUN_140b76340 L1689563 change_hf_body_state 短語；in 與地名之間遊戲寫了兩個空白
+the raising of {1} in  {2} within {3} in {#4}	{4}年{1}的遺體在{2}的{3}被喚起	{4}年{1}的遗体在{2}的{3}被唤起	inner	自動產生（scripts/gen_events.py）：09.tsv the raising of {1} in  {2} within {3} 加上結尾的日期
+the raising of {1} in  {2} within {3} in the {@4} of {#5}	{5}年{4}{1}的遺體在{2}的{3}被喚起	{5}年{4}{1}的遗体在{2}的{3}被唤起	inner	自動產生（scripts/gen_events.py）：09.tsv the raising of {1} in  {2} within {3} 加上結尾的日期
+the raising of {1} in  {2} within {3} in a time before time	太古之時{1}的遺體在{2}的{3}被喚起	太古之时{1}的遗体在{2}的{3}被唤起	inner	自動產生（scripts/gen_events.py）：09.tsv the raising of {1} in  {2} within {3} 加上結尾的日期
+the raising of {1} in  {2} within {3}	{1}的遺體在{2}的{3}被喚起	{1}的遗体在{2}的{3}被唤起	inner	FUN_140b76340 L1689563 change_hf_body_state 短語；in 與地名之間遊戲寫了兩個空白；raising 是遺體被喚起成為不死者
+the raising of {1} in  {2} in {#3}	{3}年{1}的遺體在{2}被喚起	{3}年{1}的遗体在{2}被唤起	inner	自動產生（scripts/gen_events.py）：09.tsv the raising of {1} in  {2} 加上結尾的日期
+the raising of {1} in  {2} in the {@3} of {#4}	{4}年{3}{1}的遺體在{2}被喚起	{4}年{3}{1}的遗体在{2}被唤起	inner	自動產生（scripts/gen_events.py）：09.tsv the raising of {1} in  {2} 加上結尾的日期
+the raising of {1} in  {2} in a time before time	太古之時{1}的遺體在{2}被喚起	太古之时{1}的遗体在{2}被唤起	inner	自動產生（scripts/gen_events.py）：09.tsv the raising of {1} in  {2} 加上結尾的日期
+the raising of {1} in  {2}	{1}的遺體在{2}被喚起	{1}的遗体在{2}被唤起	inner	FUN_140b76340 L1689563 change_hf_body_state 短語；in 與地名之間遊戲寫了兩個空白；raising 是遺體被喚起成為不死者
 the burial of {1} in  {2} within {3} in {#4}	{4}年{1}安葬於{2}的{3}	{4}年{1}安葬于{2}的{3}	inner	自動產生（scripts/gen_events.py）：09.tsv the burial of {1} in  {2} within {3} 加上結尾的日期
 the burial of {1} in  {2} within {3} in the {@4} of {#5}	{5}年{4}{1}安葬於{2}的{3}	{5}年{4}{1}安葬于{2}的{3}	inner	自動產生（scripts/gen_events.py）：09.tsv the burial of {1} in  {2} within {3} 加上結尾的日期
 the burial of {1} in  {2} within {3} in a time before time	太古之時{1}安葬於{2}的{3}	太古之时{1}安葬于{2}的{3}	inner	自動產生（scripts/gen_events.py）：09.tsv the burial of {1} in  {2} within {3} 加上結尾的日期
@@ -3687,26 +3723,26 @@ the end of the membership of {1} in {2} in {#3}	{3}年{1}退出{2}	{3}年{1}退�
 the end of the membership of {1} in {2} in the {@3} of {#4}	{4}年{3}{1}退出{2}	{4}年{3}{1}退出{2}	inner	自動產生（scripts/gen_events.py）：14.tsv the end of the membership of {1} in {2} 加上結尾的日期
 the end of the membership of {1} in {2} in a time before time	太古之時{1}退出{2}	太古之时{1}退出{2}	inner	自動產生（scripts/gen_events.py）：14.tsv the end of the membership of {1} in {2} 加上結尾的日期
 the end of the membership of {1} in {2}	{1}退出{2}	{1}退出{2}	inner	FUN_140b80ae0 1695558 remove_hf_entity_link 短語 case 0
-the end of the former membership of {1} in {2} in {#3}	{3}年{1}與{2}前成員關係的終結	{3}年{1}与{2}前成员关系的终结	inner	自動產生（scripts/gen_events.py）：14.tsv the end of the former membership of {1} in {2} 加上結尾的日期
-the end of the former membership of {1} in {2} in the {@3} of {#4}	{4}年{3}{1}與{2}前成員關係的終結	{4}年{3}{1}与{2}前成员关系的终结	inner	自動產生（scripts/gen_events.py）：14.tsv the end of the former membership of {1} in {2} 加上結尾的日期
-the end of the former membership of {1} in {2} in a time before time	太古之時{1}與{2}前成員關係的終結	太古之时{1}与{2}前成员关系的终结	inner	自動產生（scripts/gen_events.py）：14.tsv the end of the former membership of {1} in {2} 加上結尾的日期
-the end of the former membership of {1} in {2}	{1}與{2}前成員關係的終結	{1}与{2}前成员关系的终结	inner	FUN_140b80ae0 1695558 remove_hf_entity_link 短語 case 1
+the end of the former membership of {1} in {2} in {#3}	{3}年{1}不再是{2}的一員	{3}年{1}不再是{2}的一员	inner	自動產生（scripts/gen_events.py）：14.tsv the end of the former membership of {1} in {2} 加上結尾的日期
+the end of the former membership of {1} in {2} in the {@3} of {#4}	{4}年{3}{1}不再是{2}的一員	{4}年{3}{1}不再是{2}的一员	inner	自動產生（scripts/gen_events.py）：14.tsv the end of the former membership of {1} in {2} 加上結尾的日期
+the end of the former membership of {1} in {2} in a time before time	太古之時{1}不再是{2}的一員	太古之时{1}不再是{2}的一员	inner	自動產生（scripts/gen_events.py）：14.tsv the end of the former membership of {1} in {2} 加上結尾的日期
+the end of the former membership of {1} in {2}	{1}不再是{2}的一員	{1}不再是{2}的一员	inner	FUN_140b80ae0 1695558 remove_hf_entity_link 短語 case 1
 {1} from the mercenary service of {2} in {#3}	{3}年{1}脫離{2}的傭兵職務	{3}年{1}脱离{2}的佣兵职务	inner	自動產生（scripts/gen_events.py）：14.tsv {1} from the mercenary service of {2} 加上結尾的日期
 {1} from the mercenary service of {2} in the {@3} of {#4}	{4}年{3}{1}脫離{2}的傭兵職務	{4}年{3}{1}脱离{2}的佣兵职务	inner	自動產生（scripts/gen_events.py）：14.tsv {1} from the mercenary service of {2} 加上結尾的日期
 {1} from the mercenary service of {2} in a time before time	太古之時{1}脫離{2}的傭兵職務	太古之时{1}脱离{2}的佣兵职务	inner	自動產生（scripts/gen_events.py）：14.tsv {1} from the mercenary service of {2} 加上結尾的日期
 {1} from the mercenary service of {2}	{1}脫離{2}的傭兵職務	{1}脱离{2}的佣兵职务	inner	FUN_140b80ae0 1695558 remove_hf_entity_link 短語 case 2（遊戲沒寫開頭片語，原文是「 X from the mercenary service of Y」）
-the end of the former mercenary status of {1} in {2} in {#3}	{3}年{1}與{2}前傭兵關係的終結	{3}年{1}与{2}前佣兵关系的终结	inner	自動產生（scripts/gen_events.py）：14.tsv the end of the former mercenary status of {1} in {2} 加上結尾的日期
-the end of the former mercenary status of {1} in {2} in the {@3} of {#4}	{4}年{3}{1}與{2}前傭兵關係的終結	{4}年{3}{1}与{2}前佣兵关系的终结	inner	自動產生（scripts/gen_events.py）：14.tsv the end of the former mercenary status of {1} in {2} 加上結尾的日期
-the end of the former mercenary status of {1} in {2} in a time before time	太古之時{1}與{2}前傭兵關係的終結	太古之时{1}与{2}前佣兵关系的终结	inner	自動產生（scripts/gen_events.py）：14.tsv the end of the former mercenary status of {1} in {2} 加上結尾的日期
-the end of the former mercenary status of {1} in {2}	{1}與{2}前傭兵關係的終結	{1}与{2}前佣兵关系的终结	inner	FUN_140b80ae0 1695558 remove_hf_entity_link 短語 case 3
-the end of the former enslavement of {1} by {2} in {#3}	{3}年{1}與{2}前奴役關係的終結	{3}年{1}与{2}前奴役关系的终结	inner	自動產生（scripts/gen_events.py）：14.tsv the end of the former enslavement of {1} by {2} 加上結尾的日期
-the end of the former enslavement of {1} by {2} in the {@3} of {#4}	{4}年{3}{1}與{2}前奴役關係的終結	{4}年{3}{1}与{2}前奴役关系的终结	inner	自動產生（scripts/gen_events.py）：14.tsv the end of the former enslavement of {1} by {2} 加上結尾的日期
-the end of the former enslavement of {1} by {2} in a time before time	太古之時{1}與{2}前奴役關係的終結	太古之时{1}与{2}前奴役关系的终结	inner	自動產生（scripts/gen_events.py）：14.tsv the end of the former enslavement of {1} by {2} 加上結尾的日期
-the end of the former enslavement of {1} by {2}	{1}與{2}前奴役關係的終結	{1}与{2}前奴役关系的终结	inner	FUN_140b80ae0 1695558 remove_hf_entity_link 短語 case 5
-the end of the former imprisonment of {1} by {2} in {#3}	{3}年{1}與{2}前囚禁關係的終結	{3}年{1}与{2}前囚禁关系的终结	inner	自動產生（scripts/gen_events.py）：14.tsv the end of the former imprisonment of {1} by {2} 加上結尾的日期
-the end of the former imprisonment of {1} by {2} in the {@3} of {#4}	{4}年{3}{1}與{2}前囚禁關係的終結	{4}年{3}{1}与{2}前囚禁关系的终结	inner	自動產生（scripts/gen_events.py）：14.tsv the end of the former imprisonment of {1} by {2} 加上結尾的日期
-the end of the former imprisonment of {1} by {2} in a time before time	太古之時{1}與{2}前囚禁關係的終結	太古之时{1}与{2}前囚禁关系的终结	inner	自動產生（scripts/gen_events.py）：14.tsv the end of the former imprisonment of {1} by {2} 加上結尾的日期
-the end of the former imprisonment of {1} by {2}	{1}與{2}前囚禁關係的終結	{1}与{2}前囚禁关系的终结	inner	FUN_140b80ae0 1695558 remove_hf_entity_link 短語 case 7
+the end of the former mercenary status of {1} in {2} in {#3}	{3}年{1}不再擔任{2}的傭兵	{3}年{1}不再担任{2}的佣兵	inner	自動產生（scripts/gen_events.py）：14.tsv the end of the former mercenary status of {1} in {2} 加上結尾的日期
+the end of the former mercenary status of {1} in {2} in the {@3} of {#4}	{4}年{3}{1}不再擔任{2}的傭兵	{4}年{3}{1}不再担任{2}的佣兵	inner	自動產生（scripts/gen_events.py）：14.tsv the end of the former mercenary status of {1} in {2} 加上結尾的日期
+the end of the former mercenary status of {1} in {2} in a time before time	太古之時{1}不再擔任{2}的傭兵	太古之时{1}不再担任{2}的佣兵	inner	自動產生（scripts/gen_events.py）：14.tsv the end of the former mercenary status of {1} in {2} 加上結尾的日期
+the end of the former mercenary status of {1} in {2}	{1}不再擔任{2}的傭兵	{1}不再担任{2}的佣兵	inner	FUN_140b80ae0 1695558 remove_hf_entity_link 短語 case 3
+the end of the former enslavement of {1} by {2} in {#3}	{3}年{1}不再受{2}奴役	{3}年{1}不再受{2}奴役	inner	自動產生（scripts/gen_events.py）：14.tsv the end of the former enslavement of {1} by {2} 加上結尾的日期
+the end of the former enslavement of {1} by {2} in the {@3} of {#4}	{4}年{3}{1}不再受{2}奴役	{4}年{3}{1}不再受{2}奴役	inner	自動產生（scripts/gen_events.py）：14.tsv the end of the former enslavement of {1} by {2} 加上結尾的日期
+the end of the former enslavement of {1} by {2} in a time before time	太古之時{1}不再受{2}奴役	太古之时{1}不再受{2}奴役	inner	自動產生（scripts/gen_events.py）：14.tsv the end of the former enslavement of {1} by {2} 加上結尾的日期
+the end of the former enslavement of {1} by {2}	{1}不再受{2}奴役	{1}不再受{2}奴役	inner	FUN_140b80ae0 1695558 remove_hf_entity_link 短語 case 5
+the end of the former imprisonment of {1} by {2} in {#3}	{3}年{1}不再遭{2}囚禁	{3}年{1}不再遭{2}囚禁	inner	自動產生（scripts/gen_events.py）：14.tsv the end of the former imprisonment of {1} by {2} 加上結尾的日期
+the end of the former imprisonment of {1} by {2} in the {@3} of {#4}	{4}年{3}{1}不再遭{2}囚禁	{4}年{3}{1}不再遭{2}囚禁	inner	自動產生（scripts/gen_events.py）：14.tsv the end of the former imprisonment of {1} by {2} 加上結尾的日期
+the end of the former imprisonment of {1} by {2} in a time before time	太古之時{1}不再遭{2}囚禁	太古之时{1}不再遭{2}囚禁	inner	自動產生（scripts/gen_events.py）：14.tsv the end of the former imprisonment of {1} by {2} 加上結尾的日期
+the end of the former imprisonment of {1} by {2}	{1}不再遭{2}囚禁	{1}不再遭{2}囚禁	inner	FUN_140b80ae0 1695558 remove_hf_entity_link 短語 case 7
 the peace-making of {1} with {2} in {#3}	{3}年{1}與{2}言和	{3}年{1}与{2}言和	inner	自動產生（scripts/gen_events.py）：14.tsv the peace-making of {1} with {2} 加上結尾的日期
 the peace-making of {1} with {2} in the {@3} of {#4}	{4}年{3}{1}與{2}言和	{4}年{3}{1}与{2}言和	inner	自動產生（scripts/gen_events.py）：14.tsv the peace-making of {1} with {2} 加上結尾的日期
 the peace-making of {1} with {2} in a time before time	太古之時{1}與{2}言和	太古之时{1}与{2}言和	inner	自動產生（scripts/gen_events.py）：14.tsv the peace-making of {1} with {2} 加上結尾的日期
@@ -3739,10 +3775,10 @@ the departure of {1} from the position of {%2} of {3} in {#4}	{4}年{1}卸下{3}
 the departure of {1} from the position of {%2} of {3} in the {@4} of {#5}	{5}年{4}{1}卸下{3}的{2}之職	{5}年{4}{1}卸下{3}的{2}之职	inner	自動產生（scripts/gen_events.py）：14.tsv the departure of {1} from the position of {%2} of {3} 加上結尾的日期
 the departure of {1} from the position of {%2} of {3} in a time before time	太古之時{1}卸下{3}的{2}之職	太古之时{1}卸下{3}的{2}之职	inner	自動產生（scripts/gen_events.py）：14.tsv the departure of {1} from the position of {%2} of {3} 加上結尾的日期
 the departure of {1} from the position of {%2} of {3}	{1}卸下{3}的{2}之職	{1}卸下{3}的{2}之职	inner	FUN_140b80ae0 1695558 remove_hf_entity_link 短語 case 10 職位（fall／removal／departure 依職位旗標）
-the end of the claim of {1} to the position of {%2} of {3} in {#4}	{4}年{1}退出{3}的{2}之位爭奪	{4}年{1}退出{3}的{2}之位争夺	inner	自動產生（scripts/gen_events.py）：14.tsv the end of the claim of {1} to the position of {%2} of {3} 加上結尾的日期
-the end of the claim of {1} to the position of {%2} of {3} in the {@4} of {#5}	{5}年{4}{1}退出{3}的{2}之位爭奪	{5}年{4}{1}退出{3}的{2}之位争夺	inner	自動產生（scripts/gen_events.py）：14.tsv the end of the claim of {1} to the position of {%2} of {3} 加上結尾的日期
-the end of the claim of {1} to the position of {%2} of {3} in a time before time	太古之時{1}退出{3}的{2}之位爭奪	太古之时{1}退出{3}的{2}之位争夺	inner	自動產生（scripts/gen_events.py）：14.tsv the end of the claim of {1} to the position of {%2} of {3} 加上結尾的日期
-the end of the claim of {1} to the position of {%2} of {3}	{1}退出{3}的{2}之位爭奪	{1}退出{3}的{2}之位争夺	inner	FUN_140b80ae0 1695558 remove_hf_entity_link 短語 case 0xc
+the end of the claim of {1} to the position of {%2} of {3} in {#4}	{4}年{1}放棄對{3}的{2}之位的主張	{4}年{1}放弃对{3}的{2}之位的主张	inner	自動產生（scripts/gen_events.py）：14.tsv the end of the claim of {1} to the position of {%2} of {3} 加上結尾的日期
+the end of the claim of {1} to the position of {%2} of {3} in the {@4} of {#5}	{5}年{4}{1}放棄對{3}的{2}之位的主張	{5}年{4}{1}放弃对{3}的{2}之位的主张	inner	自動產生（scripts/gen_events.py）：14.tsv the end of the claim of {1} to the position of {%2} of {3} 加上結尾的日期
+the end of the claim of {1} to the position of {%2} of {3} in a time before time	太古之時{1}放棄對{3}的{2}之位的主張	太古之时{1}放弃对{3}的{2}之位的主张	inner	自動產生（scripts/gen_events.py）：14.tsv the end of the claim of {1} to the position of {%2} of {3} 加上結尾的日期
+the end of the claim of {1} to the position of {%2} of {3}	{1}放棄對{3}的{2}之位的主張	{1}放弃对{3}的{2}之位的主张	inner	FUN_140b80ae0 1695558 remove_hf_entity_link 短語 case 0xc
 the loss of status of {1} as a {%2} of {3} in {#4}	{4}年{1}失去{3}的{2}身分	{4}年{1}失去{3}的{2}身份	inner	自動產生（scripts/gen_events.py）：14.tsv the loss of status of {1} as a {%2} of {3} 加上結尾的日期
 the loss of status of {1} as a {%2} of {3} in the {@4} of {#5}	{5}年{4}{1}失去{3}的{2}身分	{5}年{4}{1}失去{3}的{2}身份	inner	自動產生（scripts/gen_events.py）：14.tsv the loss of status of {1} as a {%2} of {3} 加上結尾的日期
 the loss of status of {1} as a {%2} of {3} in a time before time	太古之時{1}失去{3}的{2}身分	太古之时{1}失去{3}的{2}身份	inner	自動產生（scripts/gen_events.py）：14.tsv the loss of status of {1} as a {%2} of {3} 加上結尾的日期
@@ -3767,10 +3803,10 @@ the rejection of contact by {1} of {2} in {#3}	{3}年{1}拒絕與{2}接觸	{3}�
 the rejection of contact by {1} of {2} in the {@3} of {#4}	{4}年{3}{1}拒絕與{2}接觸	{4}年{3}{1}拒绝与{2}接触	inner	自動產生（scripts/gen_events.py）：14.tsv the rejection of contact by {1} of {2} 加上結尾的日期
 the rejection of contact by {1} of {2} in a time before time	太古之時{1}拒絕與{2}接觸	太古之时{1}拒绝与{2}接触	inner	自動產生（scripts/gen_events.py）：14.tsv the rejection of contact by {1} of {2} 加上結尾的日期
 the rejection of contact by {1} of {2}	{1}拒絕與{2}接觸	{1}拒绝与{2}接触	inner	FUN_140b81770 1696009 first_contact_failed 短語
-the fair conclusion of {%1} between {2} and {3} at {4} in {#5}	{5}年{2}與{3}在{4}就{1}談判的公平收場	{5}年{2}与{3}在{4}就{1}谈判的公平收场	inner	自動產生（scripts/gen_events.py）：14.tsv the fair conclusion of {%1} between {2} and {3} at {4} 加上結尾的日期
-the fair conclusion of {%1} between {2} and {3} at {4} in the {@5} of {#6}	{6}年{5}{2}與{3}在{4}就{1}談判的公平收場	{6}年{5}{2}与{3}在{4}就{1}谈判的公平收场	inner	自動產生（scripts/gen_events.py）：14.tsv the fair conclusion of {%1} between {2} and {3} at {4} 加上結尾的日期
-the fair conclusion of {%1} between {2} and {3} at {4} in a time before time	太古之時{2}與{3}在{4}就{1}談判的公平收場	太古之时{2}与{3}在{4}就{1}谈判的公平收场	inner	自動產生（scripts/gen_events.py）：14.tsv the fair conclusion of {%1} between {2} and {3} at {4} 加上結尾的日期
-the fair conclusion of {%1} between {2} and {3} at {4}	{2}與{3}在{4}就{1}談判的公平收場	{2}与{3}在{4}就{1}谈判的公平收场	inner	FUN_140b819e0 1696084 topicagreement_concluded 短語 有地點；排在無地點前（the positive／the brilliant 原文如此）
+the fair conclusion of {%1} between {2} and {3} at {4} in {#5}	{5}年{2}與{3}在{4}就{1}談判取得的尚可結果	{5}年{2}与{3}在{4}就{1}谈判取得的尚可结果	inner	自動產生（scripts/gen_events.py）：14.tsv the fair conclusion of {%1} between {2} and {3} at {4} 加上結尾的日期
+the fair conclusion of {%1} between {2} and {3} at {4} in the {@5} of {#6}	{6}年{5}{2}與{3}在{4}就{1}談判取得的尚可結果	{6}年{5}{2}与{3}在{4}就{1}谈判取得的尚可结果	inner	自動產生（scripts/gen_events.py）：14.tsv the fair conclusion of {%1} between {2} and {3} at {4} 加上結尾的日期
+the fair conclusion of {%1} between {2} and {3} at {4} in a time before time	太古之時{2}與{3}在{4}就{1}談判取得的尚可結果	太古之时{2}与{3}在{4}就{1}谈判取得的尚可结果	inner	自動產生（scripts/gen_events.py）：14.tsv the fair conclusion of {%1} between {2} and {3} at {4} 加上結尾的日期
+the fair conclusion of {%1} between {2} and {3} at {4}	{2}與{3}在{4}就{1}談判取得的尚可結果	{2}与{3}在{4}就{1}谈判取得的尚可结果	inner	FUN_140b819e0 1696084 topicagreement_concluded 短語 有地點；排在無地點前（the positive／the brilliant 原文如此）
 the positive of {%1} between {2} and {3} at {4} in {#5}	{5}年{2}與{3}在{4}就{1}談判的正面成果	{5}年{2}与{3}在{4}就{1}谈判的积极成果	inner	自動產生（scripts/gen_events.py）：14.tsv the positive of {%1} between {2} and {3} at {4} 加上結尾的日期
 the positive of {%1} between {2} and {3} at {4} in the {@5} of {#6}	{6}年{5}{2}與{3}在{4}就{1}談判的正面成果	{6}年{5}{2}与{3}在{4}就{1}谈判的积极成果	inner	自動產生（scripts/gen_events.py）：14.tsv the positive of {%1} between {2} and {3} at {4} 加上結尾的日期
 the positive of {%1} between {2} and {3} at {4} in a time before time	太古之時{2}與{3}在{4}就{1}談判的正面成果	太古之时{2}与{3}在{4}就{1}谈判的积极成果	inner	自動產生（scripts/gen_events.py）：14.tsv the positive of {%1} between {2} and {3} at {4} 加上結尾的日期
@@ -3791,10 +3827,10 @@ the unsatisfactory conclusion of {%1} between {2} and {3} at {4} in {#5}	{5}年{
 the unsatisfactory conclusion of {%1} between {2} and {3} at {4} in the {@5} of {#6}	{6}年{5}{2}與{3}在{4}就{1}談判的不如人意的結果	{6}年{5}{2}与{3}在{4}就{1}谈判的不尽如人意的结果	inner	自動產生（scripts/gen_events.py）：14.tsv the unsatisfactory conclusion of {%1} between {2} and {3} at {4} 加上結尾的日期
 the unsatisfactory conclusion of {%1} between {2} and {3} at {4} in a time before time	太古之時{2}與{3}在{4}就{1}談判的不如人意的結果	太古之时{2}与{3}在{4}就{1}谈判的不尽如人意的结果	inner	自動產生（scripts/gen_events.py）：14.tsv the unsatisfactory conclusion of {%1} between {2} and {3} at {4} 加上結尾的日期
 the unsatisfactory conclusion of {%1} between {2} and {3} at {4}	{2}與{3}在{4}就{1}談判的不如人意的結果	{2}与{3}在{4}就{1}谈判的不尽如人意的结果	inner	FUN_140b819e0 1696084 topicagreement_concluded 短語 有地點；排在無地點前（the positive／the brilliant 原文如此）
-the fair conclusion of {%1} between {2} and {3} in {#4}	{4}年{2}與{3}就{1}談判的公平收場	{4}年{2}与{3}就{1}谈判的公平收场	inner	自動產生（scripts/gen_events.py）：14.tsv the fair conclusion of {%1} between {2} and {3} 加上結尾的日期
-the fair conclusion of {%1} between {2} and {3} in the {@4} of {#5}	{5}年{4}{2}與{3}就{1}談判的公平收場	{5}年{4}{2}与{3}就{1}谈判的公平收场	inner	自動產生（scripts/gen_events.py）：14.tsv the fair conclusion of {%1} between {2} and {3} 加上結尾的日期
-the fair conclusion of {%1} between {2} and {3} in a time before time	太古之時{2}與{3}就{1}談判的公平收場	太古之时{2}与{3}就{1}谈判的公平收场	inner	自動產生（scripts/gen_events.py）：14.tsv the fair conclusion of {%1} between {2} and {3} 加上結尾的日期
-the fair conclusion of {%1} between {2} and {3}	{2}與{3}就{1}談判的公平收場	{2}与{3}就{1}谈判的公平收场	inner	FUN_140b819e0 1696084 topicagreement_concluded 短語（the positive／the brilliant 原文如此）
+the fair conclusion of {%1} between {2} and {3} in {#4}	{4}年{2}與{3}就{1}談判取得的尚可結果	{4}年{2}与{3}就{1}谈判取得的尚可结果	inner	自動產生（scripts/gen_events.py）：14.tsv the fair conclusion of {%1} between {2} and {3} 加上結尾的日期
+the fair conclusion of {%1} between {2} and {3} in the {@4} of {#5}	{5}年{4}{2}與{3}就{1}談判取得的尚可結果	{5}年{4}{2}与{3}就{1}谈判取得的尚可结果	inner	自動產生（scripts/gen_events.py）：14.tsv the fair conclusion of {%1} between {2} and {3} 加上結尾的日期
+the fair conclusion of {%1} between {2} and {3} in a time before time	太古之時{2}與{3}就{1}談判取得的尚可結果	太古之时{2}与{3}就{1}谈判取得的尚可结果	inner	自動產生（scripts/gen_events.py）：14.tsv the fair conclusion of {%1} between {2} and {3} 加上結尾的日期
+the fair conclusion of {%1} between {2} and {3}	{2}與{3}就{1}談判取得的尚可結果	{2}与{3}就{1}谈判取得的尚可结果	inner	FUN_140b819e0 1696084 topicagreement_concluded 短語（the positive／the brilliant 原文如此）
 the positive of {%1} between {2} and {3} in {#4}	{4}年{2}與{3}就{1}談判的正面成果	{4}年{2}与{3}就{1}谈判的积极成果	inner	自動產生（scripts/gen_events.py）：14.tsv the positive of {%1} between {2} and {3} 加上結尾的日期
 the positive of {%1} between {2} and {3} in the {@4} of {#5}	{5}年{4}{2}與{3}就{1}談判的正面成果	{5}年{4}{2}与{3}就{1}谈判的积极成果	inner	自動產生（scripts/gen_events.py）：14.tsv the positive of {%1} between {2} and {3} 加上結尾的日期
 the positive of {%1} between {2} and {3} in a time before time	太古之時{2}與{3}就{1}談判的正面成果	太古之时{2}与{3}就{1}谈判的积极成果	inner	自動產生（scripts/gen_events.py）：14.tsv the positive of {%1} between {2} and {3} 加上結尾的日期
@@ -3849,22 +3885,54 @@ an agreement to retrieve {1} in {#2}	{2}年取回{1}的協議	{2}年取回{1}的
 an agreement to retrieve {1} in the {@2} of {#3}	{3}年{2}取回{1}的協議	{3}年{2}取回{1}的协议	inner	自動產生（scripts/gen_events.py）：15.tsv an agreement to retrieve {1} 加上結尾的日期
 an agreement to retrieve {1} in a time before time	太古之時取回{1}的協議	太古之时取回{1}的协议	inner	自動產生（scripts/gen_events.py）：15.tsv an agreement to retrieve {1} 加上結尾的日期
 an agreement to retrieve {1}	取回{1}的協議	取回{1}的协议	inner	同上，沒有委託勢力
-the conclusion of {%1} with {2} and {3} by {4} {%5} in {#6}	{6}年{4}{5}結束和{2}及{3}的{1}	{6}年{4}{5}结束和{2}及{3}的{1}	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of {%1} with {2} and {3} by {4} {%5} 加上結尾的日期
-the conclusion of {%1} with {2} and {3} by {4} {%5} in the {@6} of {#7}	{7}年{6}{4}{5}結束和{2}及{3}的{1}	{7}年{6}{4}{5}结束和{2}及{3}的{1}	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of {%1} with {2} and {3} by {4} {%5} 加上結尾的日期
-the conclusion of {%1} with {2} and {3} by {4} {%5} in a time before time	太古之時{4}{5}結束和{2}及{3}的{1}	太古之时{4}{5}结束和{2}及{3}的{1}	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of {%1} with {2} and {3} by {4} {%5} 加上結尾的日期
-the conclusion of {%1} with {2} and {3} by {4} in {#5}	{5}年{4}結束和{2}及{3}的{1}	{5}年{4}结束和{2}及{3}的{1}	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of {%1} with {2} and {3} by {4} 加上結尾的日期
-the conclusion of {%1} with {2} and {3} by {4} in the {@5} of {#6}	{6}年{5}{4}結束和{2}及{3}的{1}	{6}年{5}{4}结束和{2}及{3}的{1}	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of {%1} with {2} and {3} by {4} 加上結尾的日期
-the conclusion of {%1} with {2} and {3} by {4} in a time before time	太古之時{4}結束和{2}及{3}的{1}	太古之时{4}结束和{2}及{3}的{1}	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of {%1} with {2} and {3} by {4} 加上結尾的日期
-the conclusion of {%1} with {2} and {3} by {4} {%5}	{4}{5}結束和{2}及{3}的{1}	{4}{5}结束和{2}及{3}的{1}	inner	agreement_concluded 短語 FUN_140b82a20 1696672-1696862（日期由 _events_00 處理）
-the conclusion of {%1} with {2} and {3} by {4}	{4}結束和{2}及{3}的{1}	{4}结束和{2}及{3}的{1}	inner	同上，無原因
-the conclusion of {%1} with {2} by {3} {%4} in {#5}	{5}年{3}{4}結束和{2}的{1}	{5}年{3}{4}结束和{2}的{1}	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of {%1} with {2} by {3} {%4} 加上結尾的日期
-the conclusion of {%1} with {2} by {3} {%4} in the {@5} of {#6}	{6}年{5}{3}{4}結束和{2}的{1}	{6}年{5}{3}{4}结束和{2}的{1}	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of {%1} with {2} by {3} {%4} 加上結尾的日期
-the conclusion of {%1} with {2} by {3} {%4} in a time before time	太古之時{3}{4}結束和{2}的{1}	太古之时{3}{4}结束和{2}的{1}	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of {%1} with {2} by {3} {%4} 加上結尾的日期
-the conclusion of {%1} with {2} by {3} in {#4}	{4}年{3}結束和{2}的{1}	{4}年{3}结束和{2}的{1}	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of {%1} with {2} by {3} 加上結尾的日期
-the conclusion of {%1} with {2} by {3} in the {@4} of {#5}	{5}年{4}{3}結束和{2}的{1}	{5}年{4}{3}结束和{2}的{1}	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of {%1} with {2} by {3} 加上結尾的日期
-the conclusion of {%1} with {2} by {3} in a time before time	太古之時{3}結束和{2}的{1}	太古之时{3}结束和{2}的{1}	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of {%1} with {2} by {3} 加上結尾的日期
-the conclusion of {%1} with {2} by {3} {%4}	{3}{4}結束和{2}的{1}	{3}{4}结束和{2}的{1}	inner	同上，單一方＋原因
-the conclusion of {%1} with {2} by {3}	{3}結束和{2}的{1}	{3}结束和{2}的{1}	inner	同上，單一方
+the conclusion of an agreement to retrieve {1} for {2} with {3} and {4} by {5} {%6} in {#7}	{7}年{5}{6}結束與{3}及{4}為{2}取回{1}的協議	{7}年{5}{6}结束与{3}及{4}为{2}取回{1}的协议	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of an agreement to retrieve {1} for {2} with {3} and {4} by {5} {%6} 加上結尾的日期
+the conclusion of an agreement to retrieve {1} for {2} with {3} and {4} by {5} {%6} in the {@7} of {#8}	{8}年{7}{5}{6}結束與{3}及{4}為{2}取回{1}的協議	{8}年{7}{5}{6}结束与{3}及{4}为{2}取回{1}的协议	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of an agreement to retrieve {1} for {2} with {3} and {4} by {5} {%6} 加上結尾的日期
+the conclusion of an agreement to retrieve {1} for {2} with {3} and {4} by {5} {%6} in a time before time	太古之時{5}{6}結束與{3}及{4}為{2}取回{1}的協議	太古之时{5}{6}结束与{3}及{4}为{2}取回{1}的协议	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of an agreement to retrieve {1} for {2} with {3} and {4} by {5} {%6} 加上結尾的日期
+the conclusion of an agreement to retrieve {1} for {2} with {3} and {4} by {5} in {#6}	{6}年{5}結束與{3}及{4}為{2}取回{1}的協議	{6}年{5}结束与{3}及{4}为{2}取回{1}的协议	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of an agreement to retrieve {1} for {2} with {3} and {4} by {5} 加上結尾的日期
+the conclusion of an agreement to retrieve {1} for {2} with {3} and {4} by {5} in the {@6} of {#7}	{7}年{6}{5}結束與{3}及{4}為{2}取回{1}的協議	{7}年{6}{5}结束与{3}及{4}为{2}取回{1}的协议	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of an agreement to retrieve {1} for {2} with {3} and {4} by {5} 加上結尾的日期
+the conclusion of an agreement to retrieve {1} for {2} with {3} and {4} by {5} in a time before time	太古之時{5}結束與{3}及{4}為{2}取回{1}的協議	太古之时{5}结束与{3}及{4}为{2}取回{1}的协议	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of an agreement to retrieve {1} for {2} with {3} and {4} by {5} 加上結尾的日期
+the conclusion of an agreement to retrieve {1} for {2} with {3} and {4} by {5} {%6}	{5}{6}結束與{3}及{4}為{2}取回{1}的協議	{5}{6}结束与{3}及{4}为{2}取回{1}的协议	inner	agreement_concluded 短語 FUN_140b82a20 1696672-1696862（日期由 _events_00 處理）：協議種類是取回神器時寫整句（避免「和C的為B取回A的協議」）；排在 {%1} 通用句前
+the conclusion of an agreement to retrieve {1} for {2} with {3} and {4} by {5}	{5}結束與{3}及{4}為{2}取回{1}的協議	{5}结束与{3}及{4}为{2}取回{1}的协议	inner	agreement_concluded 短語 FUN_140b82a20 1696672-1696862（日期由 _events_00 處理）：協議種類是取回神器時寫整句（避免「和C的為B取回A的協議」）；排在 {%1} 通用句前
+the conclusion of an agreement to retrieve {1} for {2} with {3} by {4} {%5} in {#6}	{6}年{4}{5}結束與{3}為{2}取回{1}的協議	{6}年{4}{5}结束与{3}为{2}取回{1}的协议	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of an agreement to retrieve {1} for {2} with {3} by {4} {%5} 加上結尾的日期
+the conclusion of an agreement to retrieve {1} for {2} with {3} by {4} {%5} in the {@6} of {#7}	{7}年{6}{4}{5}結束與{3}為{2}取回{1}的協議	{7}年{6}{4}{5}结束与{3}为{2}取回{1}的协议	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of an agreement to retrieve {1} for {2} with {3} by {4} {%5} 加上結尾的日期
+the conclusion of an agreement to retrieve {1} for {2} with {3} by {4} {%5} in a time before time	太古之時{4}{5}結束與{3}為{2}取回{1}的協議	太古之时{4}{5}结束与{3}为{2}取回{1}的协议	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of an agreement to retrieve {1} for {2} with {3} by {4} {%5} 加上結尾的日期
+the conclusion of an agreement to retrieve {1} for {2} with {3} by {4} in {#5}	{5}年{4}結束與{3}為{2}取回{1}的協議	{5}年{4}结束与{3}为{2}取回{1}的协议	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of an agreement to retrieve {1} for {2} with {3} by {4} 加上結尾的日期
+the conclusion of an agreement to retrieve {1} for {2} with {3} by {4} in the {@5} of {#6}	{6}年{5}{4}結束與{3}為{2}取回{1}的協議	{6}年{5}{4}结束与{3}为{2}取回{1}的协议	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of an agreement to retrieve {1} for {2} with {3} by {4} 加上結尾的日期
+the conclusion of an agreement to retrieve {1} for {2} with {3} by {4} in a time before time	太古之時{4}結束與{3}為{2}取回{1}的協議	太古之时{4}结束与{3}为{2}取回{1}的协议	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of an agreement to retrieve {1} for {2} with {3} by {4} 加上結尾的日期
+the conclusion of an agreement to retrieve {1} for {2} with {3} by {4} {%5}	{4}{5}結束與{3}為{2}取回{1}的協議	{4}{5}结束与{3}为{2}取回{1}的协议	inner	agreement_concluded 短語 FUN_140b82a20 1696672-1696862（日期由 _events_00 處理）：協議種類是取回神器時寫整句（避免「和C的為B取回A的協議」）；排在 {%1} 通用句前
+the conclusion of an agreement to retrieve {1} for {2} with {3} by {4}	{4}結束與{3}為{2}取回{1}的協議	{4}结束与{3}为{2}取回{1}的协议	inner	agreement_concluded 短語 FUN_140b82a20 1696672-1696862（日期由 _events_00 處理）：協議種類是取回神器時寫整句（避免「和C的為B取回A的協議」）；排在 {%1} 通用句前
+the conclusion of an agreement to retrieve {1} with {2} and {3} by {4} {%5} in {#6}	{6}年{4}{5}結束與{2}及{3}取回{1}的協議	{6}年{4}{5}结束与{2}及{3}取回{1}的协议	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of an agreement to retrieve {1} with {2} and {3} by {4} {%5} 加上結尾的日期
+the conclusion of an agreement to retrieve {1} with {2} and {3} by {4} {%5} in the {@6} of {#7}	{7}年{6}{4}{5}結束與{2}及{3}取回{1}的協議	{7}年{6}{4}{5}结束与{2}及{3}取回{1}的协议	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of an agreement to retrieve {1} with {2} and {3} by {4} {%5} 加上結尾的日期
+the conclusion of an agreement to retrieve {1} with {2} and {3} by {4} {%5} in a time before time	太古之時{4}{5}結束與{2}及{3}取回{1}的協議	太古之时{4}{5}结束与{2}及{3}取回{1}的协议	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of an agreement to retrieve {1} with {2} and {3} by {4} {%5} 加上結尾的日期
+the conclusion of an agreement to retrieve {1} with {2} and {3} by {4} in {#5}	{5}年{4}結束與{2}及{3}取回{1}的協議	{5}年{4}结束与{2}及{3}取回{1}的协议	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of an agreement to retrieve {1} with {2} and {3} by {4} 加上結尾的日期
+the conclusion of an agreement to retrieve {1} with {2} and {3} by {4} in the {@5} of {#6}	{6}年{5}{4}結束與{2}及{3}取回{1}的協議	{6}年{5}{4}结束与{2}及{3}取回{1}的协议	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of an agreement to retrieve {1} with {2} and {3} by {4} 加上結尾的日期
+the conclusion of an agreement to retrieve {1} with {2} and {3} by {4} in a time before time	太古之時{4}結束與{2}及{3}取回{1}的協議	太古之时{4}结束与{2}及{3}取回{1}的协议	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of an agreement to retrieve {1} with {2} and {3} by {4} 加上結尾的日期
+the conclusion of an agreement to retrieve {1} with {2} and {3} by {4} {%5}	{4}{5}結束與{2}及{3}取回{1}的協議	{4}{5}结束与{2}及{3}取回{1}的协议	inner	agreement_concluded 短語 FUN_140b82a20 1696672-1696862（日期由 _events_00 處理）：協議種類是取回神器時寫整句（避免「和C的為B取回A的協議」）；排在 {%1} 通用句前
+the conclusion of an agreement to retrieve {1} with {2} and {3} by {4}	{4}結束與{2}及{3}取回{1}的協議	{4}结束与{2}及{3}取回{1}的协议	inner	agreement_concluded 短語 FUN_140b82a20 1696672-1696862（日期由 _events_00 處理）：協議種類是取回神器時寫整句（避免「和C的為B取回A的協議」）；排在 {%1} 通用句前
+the conclusion of an agreement to retrieve {1} with {2} by {3} {%4} in {#5}	{5}年{3}{4}結束與{2}取回{1}的協議	{5}年{3}{4}结束与{2}取回{1}的协议	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of an agreement to retrieve {1} with {2} by {3} {%4} 加上結尾的日期
+the conclusion of an agreement to retrieve {1} with {2} by {3} {%4} in the {@5} of {#6}	{6}年{5}{3}{4}結束與{2}取回{1}的協議	{6}年{5}{3}{4}结束与{2}取回{1}的协议	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of an agreement to retrieve {1} with {2} by {3} {%4} 加上結尾的日期
+the conclusion of an agreement to retrieve {1} with {2} by {3} {%4} in a time before time	太古之時{3}{4}結束與{2}取回{1}的協議	太古之时{3}{4}结束与{2}取回{1}的协议	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of an agreement to retrieve {1} with {2} by {3} {%4} 加上結尾的日期
+the conclusion of an agreement to retrieve {1} with {2} by {3} in {#4}	{4}年{3}結束與{2}取回{1}的協議	{4}年{3}结束与{2}取回{1}的协议	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of an agreement to retrieve {1} with {2} by {3} 加上結尾的日期
+the conclusion of an agreement to retrieve {1} with {2} by {3} in the {@4} of {#5}	{5}年{4}{3}結束與{2}取回{1}的協議	{5}年{4}{3}结束与{2}取回{1}的协议	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of an agreement to retrieve {1} with {2} by {3} 加上結尾的日期
+the conclusion of an agreement to retrieve {1} with {2} by {3} in a time before time	太古之時{3}結束與{2}取回{1}的協議	太古之时{3}结束与{2}取回{1}的协议	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of an agreement to retrieve {1} with {2} by {3} 加上結尾的日期
+the conclusion of an agreement to retrieve {1} with {2} by {3} {%4}	{3}{4}結束與{2}取回{1}的協議	{3}{4}结束与{2}取回{1}的协议	inner	agreement_concluded 短語 FUN_140b82a20 1696672-1696862（日期由 _events_00 處理）：協議種類是取回神器時寫整句（避免「和C的為B取回A的協議」）；排在 {%1} 通用句前
+the conclusion of an agreement to retrieve {1} with {2} by {3}	{3}結束與{2}取回{1}的協議	{3}结束与{2}取回{1}的协议	inner	agreement_concluded 短語 FUN_140b82a20 1696672-1696862（日期由 _events_00 處理）：協議種類是取回神器時寫整句（避免「和C的為B取回A的協議」）；排在 {%1} 通用句前
+the conclusion of {%1} with {2} and {3} by {4} {%5} in {#6}	{6}年{4}{5}結束與{2}及{3}的{1}	{6}年{4}{5}结束与{2}及{3}的{1}	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of {%1} with {2} and {3} by {4} {%5} 加上結尾的日期
+the conclusion of {%1} with {2} and {3} by {4} {%5} in the {@6} of {#7}	{7}年{6}{4}{5}結束與{2}及{3}的{1}	{7}年{6}{4}{5}结束与{2}及{3}的{1}	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of {%1} with {2} and {3} by {4} {%5} 加上結尾的日期
+the conclusion of {%1} with {2} and {3} by {4} {%5} in a time before time	太古之時{4}{5}結束與{2}及{3}的{1}	太古之时{4}{5}结束与{2}及{3}的{1}	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of {%1} with {2} and {3} by {4} {%5} 加上結尾的日期
+the conclusion of {%1} with {2} and {3} by {4} in {#5}	{5}年{4}結束與{2}及{3}的{1}	{5}年{4}结束与{2}及{3}的{1}	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of {%1} with {2} and {3} by {4} 加上結尾的日期
+the conclusion of {%1} with {2} and {3} by {4} in the {@5} of {#6}	{6}年{5}{4}結束與{2}及{3}的{1}	{6}年{5}{4}结束与{2}及{3}的{1}	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of {%1} with {2} and {3} by {4} 加上結尾的日期
+the conclusion of {%1} with {2} and {3} by {4} in a time before time	太古之時{4}結束與{2}及{3}的{1}	太古之时{4}结束与{2}及{3}的{1}	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of {%1} with {2} and {3} by {4} 加上結尾的日期
+the conclusion of {%1} with {2} and {3} by {4} {%5}	{4}{5}結束與{2}及{3}的{1}	{4}{5}结束与{2}及{3}的{1}	inner	agreement_concluded 短語 FUN_140b82a20 1696672-1696862（日期由 _events_00 處理）
+the conclusion of {%1} with {2} and {3} by {4}	{4}結束與{2}及{3}的{1}	{4}结束与{2}及{3}的{1}	inner	同上，無原因
+the conclusion of {%1} with {2} by {3} {%4} in {#5}	{5}年{3}{4}結束與{2}的{1}	{5}年{3}{4}结束与{2}的{1}	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of {%1} with {2} by {3} {%4} 加上結尾的日期
+the conclusion of {%1} with {2} by {3} {%4} in the {@5} of {#6}	{6}年{5}{3}{4}結束與{2}的{1}	{6}年{5}{3}{4}结束与{2}的{1}	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of {%1} with {2} by {3} {%4} 加上結尾的日期
+the conclusion of {%1} with {2} by {3} {%4} in a time before time	太古之時{3}{4}結束與{2}的{1}	太古之时{3}{4}结束与{2}的{1}	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of {%1} with {2} by {3} {%4} 加上結尾的日期
+the conclusion of {%1} with {2} by {3} in {#4}	{4}年{3}結束與{2}的{1}	{4}年{3}结束与{2}的{1}	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of {%1} with {2} by {3} 加上結尾的日期
+the conclusion of {%1} with {2} by {3} in the {@4} of {#5}	{5}年{4}{3}結束與{2}的{1}	{5}年{4}{3}结束与{2}的{1}	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of {%1} with {2} by {3} 加上結尾的日期
+the conclusion of {%1} with {2} by {3} in a time before time	太古之時{3}結束與{2}的{1}	太古之时{3}结束与{2}的{1}	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of {%1} with {2} by {3} 加上結尾的日期
+the conclusion of {%1} with {2} by {3} {%4}	{3}{4}結束與{2}的{1}	{3}{4}结束与{2}的{1}	inner	同上，單一方＋原因
+the conclusion of {%1} with {2} by {3}	{3}結束與{2}的{1}	{3}结束与{2}的{1}	inner	同上，單一方
 the conclusion of {%1} by {2} {%3} in {#4}	{4}年{2}{3}結束{1}	{4}年{2}{3}结束{1}	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of {%1} by {2} {%3} 加上結尾的日期
 the conclusion of {%1} by {2} {%3} in the {@4} of {#5}	{5}年{4}{2}{3}結束{1}	{5}年{4}{2}{3}结束{1}	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of {%1} by {2} {%3} 加上結尾的日期
 the conclusion of {%1} by {2} {%3} in a time before time	太古之時{2}{3}結束{1}	太古之时{2}{3}结束{1}	inner	自動產生（scripts/gen_events.py）：15.tsv the conclusion of {%1} by {2} {%3} 加上結尾的日期
@@ -4651,6 +4719,7 @@ a recital of {1} in {#2}	{2}年《{1}》的朗誦會	{2}年《{1}》的朗诵会
 a recital of {1} in the {@2} of {#3}	{3}年{2}《{1}》的朗誦會	{3}年{2}《{1}》的朗诵会	inner	自動產生（scripts/gen_events.py）：18.tsv a recital of {1} 加上結尾的日期
 a recital of {1} in a time before time	太古之時《{1}》的朗誦會	太古之时《{1}》的朗诵会	inner	自動產生（scripts/gen_events.py）：18.tsv a recital of {1} 加上結尾的日期
 a recital of {1}	《{1}》的朗誦會	《{1}》的朗诵会	inner	FUN_140b8bb50 L1701811 表演／FUN_140b8c2b0 表演種類：{1} 詩體名
+a telling of the story of {%1}	講述{1}的故事	讲述{1}的故事		FUN_140d3bea0 L1975568 儀式 The event featured 清單 case 2：{1} 事件短語（自帶日期）。排在 {%1} held by {2} in {3} 前，否則 held by 先把「a telling of the story of a procession」當成 {1}；align 留空，產生器才不替它加結尾日期（日期屬於 {1} 的事件）
 {%1} held by {2} in {3} as part of {4} in {#5}	{5}年{2}在{4}期間於{3}舉辦的{1}	{5}年{2}在{4}期间于{3}举办的{1}	inner	自動產生（scripts/gen_events.py）：18.tsv {%1} held by {2} in {3} as part of {4} 加上結尾的日期
 {%1} held by {2} in {3} as part of {4} in the {@5} of {#6}	{6}年{5}{2}在{4}期間於{3}舉辦的{1}	{6}年{5}{2}在{4}期间于{3}举办的{1}	inner	自動產生（scripts/gen_events.py）：18.tsv {%1} held by {2} in {3} as part of {4} 加上結尾的日期
 {%1} held by {2} in {3} as part of {4} in a time before time	太古之時{2}在{4}期間於{3}舉辦的{1}	太古之时{2}在{4}期间于{3}举办的{1}	inner	自動產生（scripts/gen_events.py）：18.tsv {%1} held by {2} in {3} as part of {4} 加上結尾的日期
@@ -4670,8 +4739,16 @@ the performance in {1} as part of {2} in {#3}	{3}年{2}期間在{1}的表演	{3}
 the performance in {1} as part of {2} in the {@3} of {#4}	{4}年{3}{2}期間在{1}的表演	{4}年{3}{2}期间在{1}的表演	inner	自動產生（scripts/gen_events.py）：18.tsv the performance in {1} as part of {2} 加上結尾的日期
 the performance in {1} as part of {2} in a time before time	太古之時{2}期間在{1}的表演	太古之时{2}期间在{1}的表演	inner	自動產生（scripts/gen_events.py）：18.tsv the performance in {1} as part of {2} 加上結尾的日期
 the performance in {1} as part of {2}	{2}期間在{1}的表演	{2}期间在{1}的表演	inner	FUN_140b8c2b0 L1702113 表演短語：沒有主辦者
+the performance in {#1}	{1}年的表演	{1}年的表演	inner	FUN_140b8c2b0 L1702113 短語：沒有日程、地點、節慶；沒有佔位的短語是字串（events_18），產生器不替它加日期，這裡手寫結尾日期（否則 in 57 被「the performance in {1}」當成地點）
+the performance in {#1} in {#2}	{2}年{1}年的表演	{2}年{1}年的表演	inner	自動產生（scripts/gen_events.py）：18.tsv the performance in {#1} 加上結尾的日期
+the performance in {#1} in the {@2} of {#3}	{3}年{2}{1}年的表演	{3}年{2}{1}年的表演	inner	自動產生（scripts/gen_events.py）：18.tsv the performance in {#1} 加上結尾的日期
+the performance in {#1} in a time before time	太古之時{1}年的表演	太古之时{1}年的表演	inner	自動產生（scripts/gen_events.py）：18.tsv the performance in {#1} 加上結尾的日期
+the performance in the {@1} of {#2} in {#3}	{3}年{2}年{1}的表演	{3}年{2}年{1}的表演	inner	自動產生（scripts/gen_events.py）：18.tsv the performance in the {@1} of {#2} 加上結尾的日期
 the performance in {1} in {#2}	{2}年在{1}的表演	{2}年在{1}的表演	inner	自動產生（scripts/gen_events.py）：18.tsv the performance in {1} 加上結尾的日期
+the performance in the {@1} of {#2} in the {@3} of {#4}	{4}年{3}{2}年{1}的表演	{4}年{3}{2}年{1}的表演	inner	自動產生（scripts/gen_events.py）：18.tsv the performance in the {@1} of {#2} 加上結尾的日期
+the performance in the {@1} of {#2}	{2}年{1}的表演	{2}年{1}的表演	inner	FUN_140b8c2b0 L1702113 短語：沒有日程、地點、節慶；沒有佔位的短語是字串（events_18），產生器不替它加日期，這裡手寫結尾日期（否則 in 57 被「the performance in {1}」當成地點）
 the performance in {1} in the {@2} of {#3}	{3}年{2}在{1}的表演	{3}年{2}在{1}的表演	inner	自動產生（scripts/gen_events.py）：18.tsv the performance in {1} 加上結尾的日期
+the performance in the {@1} of {#2} in a time before time	太古之時{2}年{1}的表演	太古之时{2}年{1}的表演	inner	自動產生（scripts/gen_events.py）：18.tsv the performance in the {@1} of {#2} 加上結尾的日期
 the performance in {1} in a time before time	太古之時在{1}的表演	太古之时在{1}的表演	inner	自動產生（scripts/gen_events.py）：18.tsv the performance in {1} 加上結尾的日期
 the performance in {1}	在{1}的表演	在{1}的表演	inner	FUN_140b8c2b0 L1702113 表演短語：沒有主辦者
 the performance as part of {1} in {#2}	{2}年{1}期間的表演	{2}年{1}期间的表演	inner	自動產生（scripts/gen_events.py）：18.tsv the performance as part of {1} 加上結尾的日期
@@ -4682,10 +4759,6 @@ In {#1}, there was a performance.	{1}年，舉行了一場表演。	{1}年，举
 In the {@1} of {#2}, there was a performance.	{2}年{1}，舉行了一場表演。	{2}年{1}，举行了一场表演。		FUN_140b8bb50 L1701811 表演：同上，有季節
 a {%1} race	{1}競速賽	{1}竞速赛	inner	FUN_140b8c990 L1702383/FUN_140b8d5f0 L1702839 case 9：{1} 生物名（FUN_140aa3bd0 單數）；排在 articles.tsv 的 a {%1} 前（檔名在前）
 a {%1} throwing competition	{1}投擲比賽	{1}投掷比赛	inner	FUN_140b8c990 L1702383/FUN_140b8d5f0 L1702839 case 11：{1} 物品名（FUN_140a82c10）
-a telling of the story of {%1} in {#2}	{2}年講述{1}的故事	{2}年讲述{1}的故事	inner	自動產生（scripts/gen_events.py）：19.tsv a telling of the story of {%1} 加上結尾的日期
-a telling of the story of {%1} in the {@2} of {#3}	{3}年{2}講述{1}的故事	{3}年{2}讲述{1}的故事	inner	自動產生（scripts/gen_events.py）：19.tsv a telling of the story of {%1} 加上結尾的日期
-a telling of the story of {%1} in a time before time	太古之時講述{1}的故事	太古之时讲述{1}的故事	inner	自動產生（scripts/gen_events.py）：19.tsv a telling of the story of {%1} 加上結尾的日期
-a telling of the story of {%1}	講述{1}的故事	讲述{1}的故事	inner	FUN_140d3bea0 L1975568 case 2：{1} 事件短語
 the carrying of {%1} in {#2}	{2}年手持{1}	{2}年手持{1}	inner	自動產生（scripts/gen_events.py）：19.tsv the carrying of {%1} 加上結尾的日期
 the carrying of {%1} in the {@2} of {#3}	{3}年{2}手持{1}	{3}年{2}手持{1}	inner	自動產生（scripts/gen_events.py）：19.tsv the carrying of {%1} 加上結尾的日期
 the carrying of {%1} in a time before time	太古之時手持{1}	太古之时手持{1}	inner	自動產生（scripts/gen_events.py）：19.tsv the carrying of {%1} 加上結尾的日期
@@ -4706,8 +4779,16 @@ a competition in {1} as part of {2} in {#3}	{3}年{2}期間在{1}舉行的比賽
 a competition in {1} as part of {2} in the {@3} of {#4}	{4}年{3}{2}期間在{1}舉行的比賽	{4}年{3}{2}期间在{1}举行的比赛	inner	自動產生（scripts/gen_events.py）：19.tsv a competition in {1} as part of {2} 加上結尾的日期
 a competition in {1} as part of {2} in a time before time	太古之時{2}期間在{1}舉行的比賽	太古之时{2}期间在{1}举行的比赛	inner	自動產生（scripts/gen_events.py）：19.tsv a competition in {1} as part of {2} 加上結尾的日期
 a competition in {1} as part of {2}	{2}期間在{1}舉行的比賽	{2}期间在{1}举行的比赛	inner	FUN_140b8d5f0 L1702839 短語：沒有日程（無主辦者）
+a competition in {#1}	{1}年舉行的比賽	{1}年举行的比赛	inner	FUN_140b8d5f0 L1702839 短語：沒有日程、地點、節慶；沒有佔位的短語是字串（events_19），產生器不替它加日期，這裡手寫結尾日期（否則 in 57 被「a competition in {1}」當成地點）
+a competition in {#1} in {#2}	{2}年{1}年舉行的比賽	{2}年{1}年举行的比赛	inner	自動產生（scripts/gen_events.py）：19.tsv a competition in {#1} 加上結尾的日期
+a competition in {#1} in the {@2} of {#3}	{3}年{2}{1}年舉行的比賽	{3}年{2}{1}年举行的比赛	inner	自動產生（scripts/gen_events.py）：19.tsv a competition in {#1} 加上結尾的日期
+a competition in {#1} in a time before time	太古之時{1}年舉行的比賽	太古之时{1}年举行的比赛	inner	自動產生（scripts/gen_events.py）：19.tsv a competition in {#1} 加上結尾的日期
+a competition in the {@1} of {#2} in {#3}	{3}年{2}年{1}舉行的比賽	{3}年{2}年{1}举行的比赛	inner	自動產生（scripts/gen_events.py）：19.tsv a competition in the {@1} of {#2} 加上結尾的日期
 a competition in {1} in {#2}	{2}年在{1}舉行的比賽	{2}年在{1}举行的比赛	inner	自動產生（scripts/gen_events.py）：19.tsv a competition in {1} 加上結尾的日期
+a competition in the {@1} of {#2} in the {@3} of {#4}	{4}年{3}{2}年{1}舉行的比賽	{4}年{3}{2}年{1}举行的比赛	inner	自動產生（scripts/gen_events.py）：19.tsv a competition in the {@1} of {#2} 加上結尾的日期
+a competition in the {@1} of {#2}	{2}年{1}舉行的比賽	{2}年{1}举行的比赛	inner	FUN_140b8d5f0 L1702839 短語：沒有日程、地點、節慶；沒有佔位的短語是字串（events_19），產生器不替它加日期，這裡手寫結尾日期（否則 in 57 被「a competition in {1}」當成地點）
 a competition in {1} in the {@2} of {#3}	{3}年{2}在{1}舉行的比賽	{3}年{2}在{1}举行的比赛	inner	自動產生（scripts/gen_events.py）：19.tsv a competition in {1} 加上結尾的日期
+a competition in the {@1} of {#2} in a time before time	太古之時{2}年{1}舉行的比賽	太古之时{2}年{1}举行的比赛	inner	自動產生（scripts/gen_events.py）：19.tsv a competition in the {@1} of {#2} 加上結尾的日期
 a competition in {1} in a time before time	太古之時在{1}舉行的比賽	太古之时在{1}举行的比赛	inner	自動產生（scripts/gen_events.py）：19.tsv a competition in {1} 加上結尾的日期
 a competition in {1}	在{1}舉行的比賽	在{1}举行的比赛	inner	FUN_140b8d5f0 L1702839 短語：沒有日程
 a competition as part of {1} in {#2}	{2}年{1}期間舉行的比賽	{2}年{1}期间举行的比赛	inner	自動產生（scripts/gen_events.py）：19.tsv a competition as part of {1} 加上結尾的日期
@@ -4718,8 +4799,16 @@ a procession in {1} as part of {2} in {#3}	{3}年{2}期間在{1}舉行的遊行	
 a procession in {1} as part of {2} in the {@3} of {#4}	{4}年{3}{2}期間在{1}舉行的遊行	{4}年{3}{2}期间在{1}举行的游行	inner	自動產生（scripts/gen_events.py）：19.tsv a procession in {1} as part of {2} 加上結尾的日期
 a procession in {1} as part of {2} in a time before time	太古之時{2}期間在{1}舉行的遊行	太古之时{2}期间在{1}举行的游行	inner	自動產生（scripts/gen_events.py）：19.tsv a procession in {1} as part of {2} 加上結尾的日期
 a procession in {1} as part of {2}	{2}期間在{1}舉行的遊行	{2}期间在{1}举行的游行	inner	FUN_140b8e460 L1703397 短語：沒有日程（無主辦者）
+a procession in {#1}	{1}年舉行的遊行	{1}年举行的游行	inner	FUN_140b8e460 L1703397 短語：沒有日程、地點、節慶；沒有佔位的短語是字串（events_19），產生器不替它加日期，這裡手寫結尾日期（否則 in 57 被「a procession in {1}」當成地點）
+a procession in {#1} in {#2}	{2}年{1}年舉行的遊行	{2}年{1}年举行的游行	inner	自動產生（scripts/gen_events.py）：19.tsv a procession in {#1} 加上結尾的日期
+a procession in {#1} in the {@2} of {#3}	{3}年{2}{1}年舉行的遊行	{3}年{2}{1}年举行的游行	inner	自動產生（scripts/gen_events.py）：19.tsv a procession in {#1} 加上結尾的日期
+a procession in {#1} in a time before time	太古之時{1}年舉行的遊行	太古之时{1}年举行的游行	inner	自動產生（scripts/gen_events.py）：19.tsv a procession in {#1} 加上結尾的日期
+a procession in the {@1} of {#2} in {#3}	{3}年{2}年{1}舉行的遊行	{3}年{2}年{1}举行的游行	inner	自動產生（scripts/gen_events.py）：19.tsv a procession in the {@1} of {#2} 加上結尾的日期
 a procession in {1} in {#2}	{2}年在{1}舉行的遊行	{2}年在{1}举行的游行	inner	自動產生（scripts/gen_events.py）：19.tsv a procession in {1} 加上結尾的日期
+a procession in the {@1} of {#2} in the {@3} of {#4}	{4}年{3}{2}年{1}舉行的遊行	{4}年{3}{2}年{1}举行的游行	inner	自動產生（scripts/gen_events.py）：19.tsv a procession in the {@1} of {#2} 加上結尾的日期
+a procession in the {@1} of {#2}	{2}年{1}舉行的遊行	{2}年{1}举行的游行	inner	FUN_140b8e460 L1703397 短語：沒有日程、地點、節慶；沒有佔位的短語是字串（events_19），產生器不替它加日期，這裡手寫結尾日期（否則 in 57 被「a procession in {1}」當成地點）
 a procession in {1} in the {@2} of {#3}	{3}年{2}在{1}舉行的遊行	{3}年{2}在{1}举行的游行	inner	自動產生（scripts/gen_events.py）：19.tsv a procession in {1} 加上結尾的日期
+a procession in the {@1} of {#2} in a time before time	太古之時{2}年{1}舉行的遊行	太古之时{2}年{1}举行的游行	inner	自動產生（scripts/gen_events.py）：19.tsv a procession in the {@1} of {#2} 加上結尾的日期
 a procession in {1} in a time before time	太古之時在{1}舉行的遊行	太古之时在{1}举行的游行	inner	自動產生（scripts/gen_events.py）：19.tsv a procession in {1} 加上結尾的日期
 a procession in {1}	在{1}舉行的遊行	在{1}举行的游行	inner	FUN_140b8e460 L1703397 短語：沒有日程
 a procession as part of {1} in {#2}	{2}年{1}期間舉行的遊行	{2}年{1}期间举行的游行	inner	自動產生（scripts/gen_events.py）：19.tsv a procession as part of {1} 加上結尾的日期
@@ -4730,8 +4819,16 @@ a ceremony in {1} as part of {2} in {#3}	{3}年{2}期間在{1}舉行的儀式	{3
 a ceremony in {1} as part of {2} in the {@3} of {#4}	{4}年{3}{2}期間在{1}舉行的儀式	{4}年{3}{2}期间在{1}举行的仪式	inner	自動產生（scripts/gen_events.py）：19.tsv a ceremony in {1} as part of {2} 加上結尾的日期
 a ceremony in {1} as part of {2} in a time before time	太古之時{2}期間在{1}舉行的儀式	太古之时{2}期间在{1}举行的仪式	inner	自動產生（scripts/gen_events.py）：19.tsv a ceremony in {1} as part of {2} 加上結尾的日期
 a ceremony in {1} as part of {2}	{2}期間在{1}舉行的儀式	{2}期间在{1}举行的仪式	inner	FUN_140b8e990 L1703587 短語：沒有日程（無主辦者）
+a ceremony in {#1}	{1}年舉行的儀式	{1}年举行的仪式	inner	FUN_140b8e990 L1703587 短語：沒有日程、地點、節慶；沒有佔位的短語是字串（events_19），產生器不替它加日期，這裡手寫結尾日期（否則 in 57 被「a ceremony in {1}」當成地點）
+a ceremony in {#1} in {#2}	{2}年{1}年舉行的儀式	{2}年{1}年举行的仪式	inner	自動產生（scripts/gen_events.py）：19.tsv a ceremony in {#1} 加上結尾的日期
+a ceremony in {#1} in the {@2} of {#3}	{3}年{2}{1}年舉行的儀式	{3}年{2}{1}年举行的仪式	inner	自動產生（scripts/gen_events.py）：19.tsv a ceremony in {#1} 加上結尾的日期
+a ceremony in {#1} in a time before time	太古之時{1}年舉行的儀式	太古之时{1}年举行的仪式	inner	自動產生（scripts/gen_events.py）：19.tsv a ceremony in {#1} 加上結尾的日期
+a ceremony in the {@1} of {#2} in {#3}	{3}年{2}年{1}舉行的儀式	{3}年{2}年{1}举行的仪式	inner	自動產生（scripts/gen_events.py）：19.tsv a ceremony in the {@1} of {#2} 加上結尾的日期
 a ceremony in {1} in {#2}	{2}年在{1}舉行的儀式	{2}年在{1}举行的仪式	inner	自動產生（scripts/gen_events.py）：19.tsv a ceremony in {1} 加上結尾的日期
+a ceremony in the {@1} of {#2} in the {@3} of {#4}	{4}年{3}{2}年{1}舉行的儀式	{4}年{3}{2}年{1}举行的仪式	inner	自動產生（scripts/gen_events.py）：19.tsv a ceremony in the {@1} of {#2} 加上結尾的日期
+a ceremony in the {@1} of {#2}	{2}年{1}舉行的儀式	{2}年{1}举行的仪式	inner	FUN_140b8e990 L1703587 短語：沒有日程、地點、節慶；沒有佔位的短語是字串（events_19），產生器不替它加日期，這裡手寫結尾日期（否則 in 57 被「a ceremony in {1}」當成地點）
 a ceremony in {1} in the {@2} of {#3}	{3}年{2}在{1}舉行的儀式	{3}年{2}在{1}举行的仪式	inner	自動產生（scripts/gen_events.py）：19.tsv a ceremony in {1} 加上結尾的日期
+a ceremony in the {@1} of {#2} in a time before time	太古之時{2}年{1}舉行的儀式	太古之时{2}年{1}举行的仪式	inner	自動產生（scripts/gen_events.py）：19.tsv a ceremony in the {@1} of {#2} 加上結尾的日期
 a ceremony in {1} in a time before time	太古之時在{1}舉行的儀式	太古之时在{1}举行的仪式	inner	自動產生（scripts/gen_events.py）：19.tsv a ceremony in {1} 加上結尾的日期
 a ceremony in {1}	在{1}舉行的儀式	在{1}举行的仪式	inner	FUN_140b8e990 L1703587 短語：沒有日程
 a ceremony as part of {1} in {#2}	{2}年{1}期間舉行的儀式	{2}年{1}期间举行的仪式	inner	自動產生（scripts/gen_events.py）：19.tsv a ceremony as part of {1} 加上結尾的日期
@@ -4756,8 +4853,8 @@ There were {#1} competitors.	共有 {1} 名參賽者。	共有 {1} 名参赛者�
 The victory was shared by {1}, {2}, {3} and {4}.	{1}、{2}、{3}和{4}共同獲勝。	{1}、{2}、{3}和{4}共同获胜。		FUN_140b8c990 L1702383 L1702790：優勝者 2–4 人；人數多的排前面
 The victory was shared by {1}, {2} and {3}.	{1}、{2}和{3}共同獲勝。	{1}、{2}和{3}共同获胜。		FUN_140b8c990 L1702383 L1702790
 The victory was shared by {1} and {2}.	{1}和{2}共同獲勝。	{1}和{2}共同获胜。		FUN_140b8c990 L1702383 L1702790
-Victory was spread among {#1} winners including {2}.	共有 {1} 名優勝者，包括{2}。	共有 {1} 名优胜者，包括{2}。		FUN_140b8c990 L1702383 L1702815：5 人以上
-Victory was spread among {#1} winners.	共有 {1} 名優勝者。	共有 {1} 名优胜者。		FUN_140b8c990 L1702383 L1702815
+Victory was spread among {#1} winners including {2}.	勝利由 {1} 名優勝者分享，包括{2}。	胜利由 {1} 名优胜者分享，包括{2}。		FUN_140b8c990 L1702383 L1702815：5 人以上
+Victory was spread among {#1} winners.	勝利由 {1} 名優勝者分享。	胜利由 {1} 名优胜者分享。		FUN_140b8c990 L1702383 L1702815
 It started at {1} and returned there after following its route.	遊行從{1}出發，沿路線繞行後回到原地。	游行从{1}出发，沿路线绕行后回到原地。		FUN_140b8ddd0 L1703146 L1703363：{1} 據點內地點名（FUN_140a946e0，無連結）
 It started at {1} and ended at {2}.	遊行從{1}出發，在{2}結束。	游行从{1}出发，在{2}结束。		FUN_140b8ddd0 L1703146 L1703311
 It started at {1}.	遊行從{1}出發。	游行从{1}出发。		FUN_140b8ddd0 L1703146 L1703293
@@ -4770,6 +4867,21 @@ In {#1}, there was a procession.	{1}年，舉行了一場遊行。	{1}年，举�
 In the {@1} of {#2}, there was a procession.	{2}年{1}，舉行了一場遊行。	{2}年{1}，举行了一场游行。		FUN_140b8ddd0 L1703146 沒有日程、地點與節慶的子句無佔位，gen_dates.py 產生不了，這裡手寫日期外框
 In {#1}, there was a ceremony.	{1}年，舉行了一場儀式。	{1}年，举行了一场仪式。		FUN_140b8e6e0 L1703484 沒有日程、地點與節慶的子句無佔位，gen_dates.py 產生不了，這裡手寫日期外框
 In the {@1} of {#2}, there was a ceremony.	{2}年{1}，舉行了一場儀式。	{2}年{1}，举行了一场仪式。		FUN_140b8e6e0 L1703484 沒有日程、地點與節慶的子句無佔位，gen_dates.py 產生不了，這裡手寫日期外框
+The artwork relates to the foundation of {1} by {2} of {3} for {4} in {#5} during {6}.	這件藝術品與{5}年{3}的{2}在{6}期間為{4}建立{1}有關。	这件艺术品与{5}年{3}的{2}在{6}期间为{4}建立{1}有关。		FUN_141451b10 2743029-2743069 藝術品事件句＋ during 事件集合（sentences_artimage_01 的 The artwork relates to {%1} during {2}. 會譯成「Z期間的3年…」）：created_site 短語（05.tsv）把 during 放進「在Z期間」
+The artwork relates to the foundation of {1} by {2} of {3} for {4} in the {@5} of {#6} during {7}.	這件藝術品與{6}年{5}{3}的{2}在{7}期間為{4}建立{1}有關。	这件艺术品与{6}年{5}{3}的{2}在{7}期间为{4}建立{1}有关。		FUN_141451b10 2743029-2743069 藝術品事件句＋ during 事件集合（sentences_artimage_01 的 The artwork relates to {%1} during {2}. 會譯成「Z期間的3年…」）：created_site 短語（05.tsv）把 during 放進「在Z期間」
+The artwork relates to the foundation of {1} by {2} of {3} for {4} in a time before time during {5}.	這件藝術品與太古之時{3}的{2}在{5}期間為{4}建立{1}有關。	这件艺术品与太古之时{3}的{2}在{5}期间为{4}建立{1}有关。		FUN_141451b10 2743029-2743069 藝術品事件句＋ during 事件集合（sentences_artimage_01 的 The artwork relates to {%1} during {2}. 會譯成「Z期間的3年…」）：created_site 短語（05.tsv）把 during 放進「在Z期間」
+The artwork relates to the foundation of {1} by {2} of {3} in {#4} during {5}.	這件藝術品與{4}年{3}的{2}在{5}期間建立{1}有關。	这件艺术品与{4}年{3}的{2}在{5}期间建立{1}有关。		FUN_141451b10 2743029-2743069 藝術品事件句＋ during 事件集合（sentences_artimage_01 的 The artwork relates to {%1} during {2}. 會譯成「Z期間的3年…」）：created_site 短語（05.tsv）把 during 放進「在Z期間」
+The artwork relates to the foundation of {1} by {2} of {3} in the {@4} of {#5} during {6}.	這件藝術品與{5}年{4}{3}的{2}在{6}期間建立{1}有關。	这件艺术品与{5}年{4}{3}的{2}在{6}期间建立{1}有关。		FUN_141451b10 2743029-2743069 藝術品事件句＋ during 事件集合（sentences_artimage_01 的 The artwork relates to {%1} during {2}. 會譯成「Z期間的3年…」）：created_site 短語（05.tsv）把 during 放進「在Z期間」
+The artwork relates to the foundation of {1} by {2} of {3} in a time before time during {4}.	這件藝術品與太古之時{3}的{2}在{4}期間建立{1}有關。	这件艺术品与太古之时{3}的{2}在{4}期间建立{1}有关。		FUN_141451b10 2743029-2743069 藝術品事件句＋ during 事件集合（sentences_artimage_01 的 The artwork relates to {%1} during {2}. 會譯成「Z期間的3年…」）：created_site 短語（05.tsv）把 during 放進「在Z期間」
+The artwork relates to the foundation of {1} by {2} for {3} in {#4} during {5}.	這件藝術品與{4}年{2}在{5}期間為{3}建立{1}有關。	这件艺术品与{4}年{2}在{5}期间为{3}建立{1}有关。		FUN_141451b10 2743029-2743069 藝術品事件句＋ during 事件集合（sentences_artimage_01 的 The artwork relates to {%1} during {2}. 會譯成「Z期間的3年…」）：created_site 短語（05.tsv）把 during 放進「在Z期間」
+The artwork relates to the foundation of {1} by {2} for {3} in the {@4} of {#5} during {6}.	這件藝術品與{5}年{4}{2}在{6}期間為{3}建立{1}有關。	这件艺术品与{5}年{4}{2}在{6}期间为{3}建立{1}有关。		FUN_141451b10 2743029-2743069 藝術品事件句＋ during 事件集合（sentences_artimage_01 的 The artwork relates to {%1} during {2}. 會譯成「Z期間的3年…」）：created_site 短語（05.tsv）把 during 放進「在Z期間」
+The artwork relates to the foundation of {1} by {2} for {3} in a time before time during {4}.	這件藝術品與太古之時{2}在{4}期間為{3}建立{1}有關。	这件艺术品与太古之时{2}在{4}期间为{3}建立{1}有关。		FUN_141451b10 2743029-2743069 藝術品事件句＋ during 事件集合（sentences_artimage_01 的 The artwork relates to {%1} during {2}. 會譯成「Z期間的3年…」）：created_site 短語（05.tsv）把 during 放進「在Z期間」
+The artwork relates to the foundation of {1} by {2} in {#3} during {4}.	這件藝術品與{3}年{2}在{4}期間建立{1}有關。	这件艺术品与{3}年{2}在{4}期间建立{1}有关。		FUN_141451b10 2743029-2743069 藝術品事件句＋ during 事件集合（sentences_artimage_01 的 The artwork relates to {%1} during {2}. 會譯成「Z期間的3年…」）：created_site 短語（05.tsv）把 during 放進「在Z期間」
+The artwork relates to the foundation of {1} by {2} in the {@3} of {#4} during {5}.	這件藝術品與{4}年{3}{2}在{5}期間建立{1}有關。	这件艺术品与{4}年{3}{2}在{5}期间建立{1}有关。		FUN_141451b10 2743029-2743069 藝術品事件句＋ during 事件集合（sentences_artimage_01 的 The artwork relates to {%1} during {2}. 會譯成「Z期間的3年…」）：created_site 短語（05.tsv）把 during 放進「在Z期間」
+The artwork relates to the foundation of {1} by {2} in a time before time during {3}.	這件藝術品與太古之時{2}在{3}期間建立{1}有關。	这件艺术品与太古之时{2}在{3}期间建立{1}有关。		FUN_141451b10 2743029-2743069 藝術品事件句＋ during 事件集合（sentences_artimage_01 的 The artwork relates to {%1} during {2}. 會譯成「Z期間的3年…」）：created_site 短語（05.tsv）把 during 放進「在Z期間」
+The artwork relates to {%1} in {#2} during {3}.	這件藝術品與{2}年{1}有關，當時正值{3}。	这件艺术品与{2}年{1}有关，当时正值{3}。		FUN_141451b10 2743029-2743069 藝術品事件句：事件短語帶日期又接 during 事件集合時，日期留在事件前、集合名放句尾（sentences_artimage_01 的 The artwork relates to {%1} during {2}. 會譯成「Z期間的3年…」）；created_site 另寫在前面
+The artwork relates to {%1} in the {@2} of {#3} during {4}.	這件藝術品與{3}年{2}{1}有關，當時正值{4}。	这件艺术品与{3}年{2}{1}有关，当时正值{4}。		FUN_141451b10 2743029-2743069 藝術品事件句：事件短語帶日期又接 during 事件集合時，日期留在事件前、集合名放句尾（sentences_artimage_01 的 The artwork relates to {%1} during {2}. 會譯成「Z期間的3年…」）；created_site 另寫在前面
+The artwork relates to {%1} in a time before time during {2}.	這件藝術品與太古之時{1}有關，當時正值{2}。	这件艺术品与太古之时{1}有关，当时正值{2}。		FUN_141451b10 2743029-2743069 藝術品事件句：事件短語帶日期又接 during 事件集合時，日期留在事件前、集合名放句尾（sentences_artimage_01 的 The artwork relates to {%1} during {2}. 會譯成「Z期間的3年…」）；created_site 另寫在前面
 The {%1} Air Race of {2}	{2}的{1}場空中競速賽	{2}的{1}场空中竞速赛		FUN_140bc7270 1745093 比賽（competitionst）；of 後是節慶名（世界生成的名稱）；{1} 序數（Second、20th）
 The Air Race of {1}	{1}的空中競速賽	{1}的空中竞速赛		FUN_140bc7270 1745093 比賽（competitionst）；of 後是節慶名（世界生成的名稱）
 The {%1} Air Race	{1}場空中競速賽	{1}场空中竞速赛		FUN_140bc7270 1745093 比賽（competitionst）；of 後是節慶名（世界生成的名稱）；{1} 序數
@@ -4837,6 +4949,33 @@ The Sixteenth Race of {1}	{1}的第十六場賽跑	{1}的第十六场赛跑		FUN
 The Seventeenth Race of {1}	{1}的第十七場賽跑	{1}的第十七场赛跑		FUN_140bc7270 1745093 比賽（competitionst）；of 後是節慶名（世界生成的名稱）；賽跑；序數寫死（避免與種族名混淆）
 The Eighteenth Race of {1}	{1}的第十八場賽跑	{1}的第十八场赛跑		FUN_140bc7270 1745093 比賽（competitionst）；of 後是節慶名（世界生成的名稱）；賽跑；序數寫死（避免與種族名混淆）
 The Nineteenth Race of {1}	{1}的第十九場賽跑	{1}的第十九场赛跑		FUN_140bc7270 1745093 比賽（competitionst）；of 後是節慶名（世界生成的名稱）；賽跑；序數寫死（避免與種族名混淆）
+The Second Horse Race of {1}	{1}的第二場賽馬	{1}的第二场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The Third Horse Race of {1}	{1}的第三場賽馬	{1}的第三场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The Fourth Horse Race of {1}	{1}的第四場賽馬	{1}的第四场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The Fifth Horse Race of {1}	{1}的第五場賽馬	{1}的第五场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The Sixth Horse Race of {1}	{1}的第六場賽馬	{1}的第六场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The Seventh Horse Race of {1}	{1}的第七場賽馬	{1}的第七场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The Eighth Horse Race of {1}	{1}的第八場賽馬	{1}的第八场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The Ninth Horse Race of {1}	{1}的第九場賽馬	{1}的第九场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The Tenth Horse Race of {1}	{1}的第十場賽馬	{1}的第十场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The Eleventh Horse Race of {1}	{1}的第十一場賽馬	{1}的第十一场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The Twelfth Horse Race of {1}	{1}的第十二場賽馬	{1}的第十二场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The Thirteenth Horse Race of {1}	{1}的第十三場賽馬	{1}的第十三场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The Fourteenth Horse Race of {1}	{1}的第十四場賽馬	{1}的第十四场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The Fifteenth Horse Race of {1}	{1}的第十五場賽馬	{1}的第十五场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The Sixteenth Horse Race of {1}	{1}的第十六場賽馬	{1}的第十六场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The Seventeenth Horse Race of {1}	{1}的第十七場賽馬	{1}的第十七场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The Eighteenth Horse Race of {1}	{1}的第十八場賽馬	{1}的第十八场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The Nineteenth Horse Race of {1}	{1}的第十九場賽馬	{1}的第十九场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The {#1}st Horse Race of {2}	{2}的第{1}場賽馬	{2}的第{1}场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The {#1}nd Horse Race of {2}	{2}的第{1}場賽馬	{2}的第{1}场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The {#1}rd Horse Race of {2}	{2}的第{1}場賽馬	{2}的第{1}场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The {#1}th Horse Race of {2}	{2}的第{1}場賽馬	{2}的第{1}场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The {#1}st Horse Race	第{1}場賽馬	第{1}场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The {#1}nd Horse Race	第{1}場賽馬	第{1}场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The {#1}rd Horse Race	第{1}場賽馬	第{1}场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The {#1}th Horse Race	第{1}場賽馬	第{1}场赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
+The Horse Race of {1}	{1}的賽馬	{1}的赛马		FUN_140bc7270 1745093 比賽（competitionst）；馬的競速賽寫整條「賽馬」，排在 The … {%1} Race 通用句型前
 The Second {%1} Race of {2}	{2}的第二場{1}競速賽	{2}的第二场{1}竞速赛		FUN_140bc7270 1745093 比賽（competitionst）；of 後是節慶名（世界生成的名稱）；{1} 生物名（每字首大寫，查不到時 Creature）；序數寫死（避免與前綴詞混淆）
 The Third {%1} Race of {2}	{2}的第三場{1}競速賽	{2}的第三场{1}竞速赛		FUN_140bc7270 1745093 比賽（competitionst）；of 後是節慶名（世界生成的名稱）；{1} 生物名（每字首大寫，查不到時 Creature）；序數寫死（避免與前綴詞混淆）
 The Fourth {%1} Race of {2}	{2}的第四場{1}競速賽	{2}的第四场{1}竞速赛		FUN_140bc7270 1745093 比賽（competitionst）；of 後是節慶名（世界生成的名稱）；{1} 生物名（每字首大寫，查不到時 Creature）；序數寫死（避免與前綴詞混淆）
@@ -4992,34 +5131,34 @@ The {%1} Attempted Abduction of {2} at {3}	{2}於{3}{1}次險遭擄走	{2}于{3}
 The Attempted Abduction of {1} at {2}	{1}於{2}險遭擄走	{1}于{2}险遭掳走		FUN_140bc60f0 1744413 擄人（abductionst）；at 據點／in 地區、地下區域、the Wilds
 The {%1} Attempted Abduction of {2} in {3}	{2}於{3}{1}次險遭擄走	{2}于{3}{1}次险遭掳走		FUN_140bc60f0 1744413 擄人（abductionst）；at 據點／in 地區、地下區域、the Wilds；{1} 序數（Second、20th）
 The Attempted Abduction of {1} in {2}	{1}於{2}險遭擄走	{1}于{2}险遭掳走		FUN_140bc60f0 1744413 擄人（abductionst）；at 據點／in 地區、地下區域、the Wilds
-The {%1} Attempted Abduction at {2}	{2}{1}次擄人未遂事件	{2}{1}次掳人未遂事件		FUN_140bc60f0 1744413 擄人（abductionst）；at 據點／in 地區、地下區域、the Wilds；{1} 序數（Second、20th）
-The Attempted Abduction at {1}	{1}擄人未遂事件	{1}掳人未遂事件		FUN_140bc60f0 1744413 擄人（abductionst）；at 據點／in 地區、地下區域、the Wilds
-The {%1} Attempted Abduction in {2}	{2}{1}次擄人未遂事件	{2}{1}次掳人未遂事件		FUN_140bc60f0 1744413 擄人（abductionst）；at 據點／in 地區、地下區域、the Wilds；{1} 序數（Second、20th）
-The Attempted Abduction in {1}	{1}擄人未遂事件	{1}掳人未遂事件		FUN_140bc60f0 1744413 擄人（abductionst）；at 據點／in 地區、地下區域、the Wilds
+The {%1} Attempted Abduction at {2}	{2}的{1}次擄人未遂事件	{2}的{1}次掳人未遂事件		FUN_140bc60f0 1744413 擄人（abductionst）；at 據點／in 地區、地下區域、the Wilds；{1} 序數（Second、20th）
+The Attempted Abduction at {1}	{1}的擄人未遂事件	{1}的掳人未遂事件		FUN_140bc60f0 1744413 擄人（abductionst）；at 據點／in 地區、地下區域、the Wilds
+The {%1} Attempted Abduction in {2}	{2}的{1}次擄人未遂事件	{2}的{1}次掳人未遂事件		FUN_140bc60f0 1744413 擄人（abductionst）；at 據點／in 地區、地下區域、the Wilds；{1} 序數（Second、20th）
+The Attempted Abduction in {1}	{1}的擄人未遂事件	{1}的掳人未遂事件		FUN_140bc60f0 1744413 擄人（abductionst）；at 據點／in 地區、地下區域、the Wilds
 The {%1} Abduction of {2} at {3}	{2}於{3}{1}次遭擄	{2}于{3}{1}次遭掳		FUN_140bc60f0 1744413 擄人（abductionst）；at 據點／in 地區、地下區域、the Wilds；{1} 序數（Second、20th）
 The Abduction of {1} at {2}	{1}於{2}遭擄	{1}于{2}遭掳		FUN_140bc60f0 1744413 擄人（abductionst）；at 據點／in 地區、地下區域、the Wilds
 The {%1} Abduction of {2} in {3}	{2}於{3}{1}次遭擄	{2}于{3}{1}次遭掳		FUN_140bc60f0 1744413 擄人（abductionst）；at 據點／in 地區、地下區域、the Wilds；{1} 序數（Second、20th）
 The Abduction of {1} in {2}	{1}於{2}遭擄	{1}于{2}遭掳		FUN_140bc60f0 1744413 擄人（abductionst）；at 據點／in 地區、地下區域、the Wilds
-The {%1} Abduction at {2}	{2}{1}次擄人事件	{2}{1}次掳人事件		FUN_140bc60f0 1744413 擄人（abductionst）；at 據點／in 地區、地下區域、the Wilds；{1} 序數（Second、20th）
-The Abduction at {1}	{1}擄人事件	{1}掳人事件		FUN_140bc60f0 1744413 擄人（abductionst）；at 據點／in 地區、地下區域、the Wilds
-The {%1} Abduction in {2}	{2}{1}次擄人事件	{2}{1}次掳人事件		FUN_140bc60f0 1744413 擄人（abductionst）；at 據點／in 地區、地下區域、the Wilds；{1} 序數（Second、20th）
-The Abduction in {1}	{1}擄人事件	{1}掳人事件		FUN_140bc60f0 1744413 擄人（abductionst）；at 據點／in 地區、地下區域、the Wilds
+The {%1} Abduction at {2}	{2}的{1}次擄人事件	{2}的{1}次掳人事件		FUN_140bc60f0 1744413 擄人（abductionst）；at 據點／in 地區、地下區域、the Wilds；{1} 序數（Second、20th）
+The Abduction at {1}	{1}的擄人事件	{1}的掳人事件		FUN_140bc60f0 1744413 擄人（abductionst）；at 據點／in 地區、地下區域、the Wilds
+The {%1} Abduction in {2}	{2}的{1}次擄人事件	{2}的{1}次掳人事件		FUN_140bc60f0 1744413 擄人（abductionst）；at 據點／in 地區、地下區域、the Wilds；{1} 序數（Second、20th）
+The Abduction in {1}	{1}的擄人事件	{1}的掳人事件		FUN_140bc60f0 1744413 擄人（abductionst）；at 據點／in 地區、地下區域、the Wilds
 The {%1} Attempted Theft of {2} at {3}	{2}於{3}{1}次險遭竊取	{2}于{3}{1}次险些被盗		FUN_140bc6520 1744567 竊盜（theftst）；{n} 神器；at 據點／in 地區、地下區域、the Wilds；{1} 序數（Second、20th）
 The Attempted Theft of {1} at {2}	{1}於{2}險遭竊取	{1}于{2}险些被盗		FUN_140bc6520 1744567 竊盜（theftst）；{n} 神器；at 據點／in 地區、地下區域、the Wilds
 The {%1} Attempted Theft of {2} in {3}	{2}於{3}{1}次險遭竊取	{2}于{3}{1}次险些被盗		FUN_140bc6520 1744567 竊盜（theftst）；{n} 神器；at 據點／in 地區、地下區域、the Wilds；{1} 序數（Second、20th）
 The Attempted Theft of {1} in {2}	{1}於{2}險遭竊取	{1}于{2}险些被盗		FUN_140bc6520 1744567 竊盜（theftst）；{n} 神器；at 據點／in 地區、地下區域、the Wilds
-The {%1} Attempted Theft at {2}	{2}{1}次竊盜未遂案	{2}{1}次盗窃未遂案		FUN_140bc6520 1744567 竊盜（theftst）；{n} 神器；at 據點／in 地區、地下區域、the Wilds；{1} 序數（Second、20th）
-The Attempted Theft at {1}	{1}竊盜未遂案	{1}盗窃未遂案		FUN_140bc6520 1744567 竊盜（theftst）；{n} 神器；at 據點／in 地區、地下區域、the Wilds
-The {%1} Attempted Theft in {2}	{2}{1}次竊盜未遂案	{2}{1}次盗窃未遂案		FUN_140bc6520 1744567 竊盜（theftst）；{n} 神器；at 據點／in 地區、地下區域、the Wilds；{1} 序數（Second、20th）
-The Attempted Theft in {1}	{1}竊盜未遂案	{1}盗窃未遂案		FUN_140bc6520 1744567 竊盜（theftst）；{n} 神器；at 據點／in 地區、地下區域、the Wilds
+The {%1} Attempted Theft at {2}	{2}的{1}次竊盜未遂案	{2}的{1}次盗窃未遂案		FUN_140bc6520 1744567 竊盜（theftst）；{n} 神器；at 據點／in 地區、地下區域、the Wilds；{1} 序數（Second、20th）
+The Attempted Theft at {1}	{1}的竊盜未遂案	{1}的盗窃未遂案		FUN_140bc6520 1744567 竊盜（theftst）；{n} 神器；at 據點／in 地區、地下區域、the Wilds
+The {%1} Attempted Theft in {2}	{2}的{1}次竊盜未遂案	{2}的{1}次盗窃未遂案		FUN_140bc6520 1744567 竊盜（theftst）；{n} 神器；at 據點／in 地區、地下區域、the Wilds；{1} 序數（Second、20th）
+The Attempted Theft in {1}	{1}的竊盜未遂案	{1}的盗窃未遂案		FUN_140bc6520 1744567 竊盜（theftst）；{n} 神器；at 據點／in 地區、地下區域、the Wilds
 The {%1} Theft of {2} at {3}	{2}於{3}{1}次遭竊	{2}于{3}{1}次被盗		FUN_140bc6520 1744567 竊盜（theftst）；{n} 神器；at 據點／in 地區、地下區域、the Wilds；{1} 序數（Second、20th）
 The Theft of {1} at {2}	{1}於{2}遭竊	{1}于{2}被盗		FUN_140bc6520 1744567 竊盜（theftst）；{n} 神器；at 據點／in 地區、地下區域、the Wilds
 The {%1} Theft of {2} in {3}	{2}於{3}{1}次遭竊	{2}于{3}{1}次被盗		FUN_140bc6520 1744567 竊盜（theftst）；{n} 神器；at 據點／in 地區、地下區域、the Wilds；{1} 序數（Second、20th）
 The Theft of {1} in {2}	{1}於{2}遭竊	{1}于{2}被盗		FUN_140bc6520 1744567 竊盜（theftst）；{n} 神器；at 據點／in 地區、地下區域、the Wilds
-The {%1} Theft at {2}	{2}{1}次竊案	{2}{1}次盗窃案		FUN_140bc6520 1744567 竊盜（theftst）；{n} 神器；at 據點／in 地區、地下區域、the Wilds；{1} 序數（Second、20th）
-The Theft at {1}	{1}竊案	{1}盗窃案		FUN_140bc6520 1744567 竊盜（theftst）；{n} 神器；at 據點／in 地區、地下區域、the Wilds
-The {%1} Theft in {2}	{2}{1}次竊案	{2}{1}次盗窃案		FUN_140bc6520 1744567 竊盜（theftst）；{n} 神器；at 據點／in 地區、地下區域、the Wilds；{1} 序數（Second、20th）
-The Theft in {1}	{1}竊案	{1}盗窃案		FUN_140bc6520 1744567 竊盜（theftst）；{n} 神器；at 據點／in 地區、地下區域、the Wilds
+The {%1} Theft at {2}	{2}的{1}次竊案	{2}的{1}次盗窃案		FUN_140bc6520 1744567 竊盜（theftst）；{n} 神器；at 據點／in 地區、地下區域、the Wilds；{1} 序數（Second、20th）
+The Theft at {1}	{1}的竊案	{1}的盗窃案		FUN_140bc6520 1744567 竊盜（theftst）；{n} 神器；at 據點／in 地區、地下區域、the Wilds
+The {%1} Theft in {2}	{2}的{1}次竊案	{2}的{1}次盗窃案		FUN_140bc6520 1744567 竊盜（theftst）；{n} 神器；at 據點／in 地區、地下區域、the Wilds；{1} 序數（Second、20th）
+The Theft in {1}	{1}的竊案	{1}的盗窃案		FUN_140bc6520 1744567 竊盜（theftst）；{n} 神器；at 據點／in 地區、地下區域、the Wilds
 The {%1} Raid of {2}	{2}的{1}次突襲	{2}的{1}次突袭		FUN_140bc63a0 1744504 突襲（raidst）；據點、地區、地下區域或 the Wilds；{1} 序數（Second、20th）
 The Raid of {1}	{1}的突襲	{1}的突袭		FUN_140bc63a0 1744504 突襲（raidst）；據點、地區、地下區域或 the Wilds
 The {%1} Rampage of {2} in  in {3}	{2}在{3}的{1}次肆虐	{2}在{3}的{1}次肆虐		FUN_140bc6880 1744715 野獸肆虐（beast_attackst）；兩隻以上才有種族或 Monster 前綴，正好一隻才有 of 人物；地下區域時遊戲多接一次 in（in  in，兩個空白）；{1} 序數（Second、20th）
@@ -6048,18 +6187,18 @@ In a time before time, {1} created a masterful {%2}.	太古之時，{1}製作了
 In {#1}, {2} masterfully dyed a {%3} with {%4} for {5} at {6}.	{1}年，{2}在{6}為{5}以大師級手藝用{4}染了{3}。	{1}年，{2}在{6}为{5}以大师级手艺用{4}染了{3}。		自動產生（scripts/gen_events.py）：03.tsv {1} masterfully dyed a {%2} with {%3} for {4} at {5}.
 In the {@1} of {#2}, {3} masterfully dyed a {%4} with {%5} for {6} at {7}.	{2}年{1}，{3}在{7}為{6}以大師級手藝用{5}染了{4}。	{2}年{1}，{3}在{7}为{6}以大师级手艺用{5}染了{4}。		自動產生（scripts/gen_events.py）：03.tsv {1} masterfully dyed a {%2} with {%3} for {4} at {5}.
 In a time before time, {1} masterfully dyed a {%2} with {%3} for {4} at {5}.	太古之時，{1}在{5}為{4}以大師級手藝用{3}染了{2}。	太古之时，{1}在{5}为{4}以大师级手艺用{3}染了{2}。		自動產生（scripts/gen_events.py）：03.tsv {1} masterfully dyed a {%2} with {%3} for {4} at {5}.
-In {#1}, {2} {@3} "{4}" in {%5} to a {%6} for {7} at {8}.	{1}年，{2}在{8}為{7}用{5}替{6}{3}「{4}」。	{1}年，{2}在{8}为{7}用{5}替{6}{3}“{4}”。		自動產生（scripts/gen_events.py）：03.tsv {1} {@2} "{3}" in {%4} to a {%5} for {6} at {7}.
-In the {@1} of {#2}, {3} {@4} "{5}" in {%6} to a {%7} for {8} at {9}.	{2}年{1}，{3}在{9}為{8}用{6}替{7}{4}「{5}」。	{2}年{1}，{3}在{9}为{8}用{6}替{7}{4}“{5}”。		自動產生（scripts/gen_events.py）：03.tsv {1} {@2} "{3}" in {%4} to a {%5} for {6} at {7}.
-In a time before time, {1} {@2} "{3}" in {%4} to a {%5} for {6} at {7}.	太古之時，{1}在{7}為{6}用{4}替{5}{2}「{3}」。	太古之时，{1}在{7}为{6}用{4}替{5}{2}“{3}”。		自動產生（scripts/gen_events.py）：03.tsv {1} {@2} "{3}" in {%4} to a {%5} for {6} at {7}.
-In {#1}, {2} {@3} "{4}" to a {%5} for {6} at {7}.	{1}年，{2}在{7}為{6}替{5}{3}「{4}」。	{1}年，{2}在{7}为{6}替{5}{3}“{4}”。		自動產生（scripts/gen_events.py）：03.tsv {1} {@2} "{3}" to a {%4} for {5} at {6}.
-In the {@1} of {#2}, {3} {@4} "{5}" to a {%6} for {7} at {8}.	{2}年{1}，{3}在{8}為{7}替{6}{4}「{5}」。	{2}年{1}，{3}在{8}为{7}替{6}{4}“{5}”。		自動產生（scripts/gen_events.py）：03.tsv {1} {@2} "{3}" to a {%4} for {5} at {6}.
-In a time before time, {1} {@2} "{3}" to a {%4} for {5} at {6}.	太古之時，{1}在{6}為{5}替{4}{2}「{3}」。	太古之时，{1}在{6}为{5}替{4}{2}“{3}”。		自動產生（scripts/gen_events.py）：03.tsv {1} {@2} "{3}" to a {%4} for {5} at {6}.
-In {#1}, {2} {@3} in {%4} to a {%5} for {6} at {7}.	{1}年，{2}在{7}為{6}用{4}替{5}{3}。	{1}年，{2}在{7}为{6}用{4}替{5}{3}。		自動產生（scripts/gen_events.py）：03.tsv {1} {@2} in {%3} to a {%4} for {5} at {6}.
-In the {@1} of {#2}, {3} {@4} in {%5} to a {%6} for {7} at {8}.	{2}年{1}，{3}在{8}為{7}用{5}替{6}{4}。	{2}年{1}，{3}在{8}为{7}用{5}替{6}{4}。		自動產生（scripts/gen_events.py）：03.tsv {1} {@2} in {%3} to a {%4} for {5} at {6}.
-In a time before time, {1} {@2} in {%3} to a {%4} for {5} at {6}.	太古之時，{1}在{6}為{5}用{3}替{4}{2}。	太古之时，{1}在{6}为{5}用{3}替{4}{2}。		自動產生（scripts/gen_events.py）：03.tsv {1} {@2} in {%3} to a {%4} for {5} at {6}.
-In {#1}, {2} {@3} to a {%4} for {5} at {6}.	{1}年，{2}在{6}為{5}替{4}{3}。	{1}年，{2}在{6}为{5}替{4}{3}。		自動產生（scripts/gen_events.py）：03.tsv {1} {@2} to a {%3} for {4} at {5}.
-In the {@1} of {#2}, {3} {@4} to a {%5} for {6} at {7}.	{2}年{1}，{3}在{7}為{6}替{5}{4}。	{2}年{1}，{3}在{7}为{6}替{5}{4}。		自動產生（scripts/gen_events.py）：03.tsv {1} {@2} to a {%3} for {4} at {5}.
-In a time before time, {1} {@2} to a {%3} for {4} at {5}.	太古之時，{1}在{5}為{4}替{3}{2}。	太古之时，{1}在{5}为{4}替{3}{2}。		自動產生（scripts/gen_events.py）：03.tsv {1} {@2} to a {%3} for {4} at {5}.
+In {#1}, {2} {@3} "{4}" in {%5} to a {%6} for {7} at {8}.	{1}年，{2}在{8}為{7}於{6}上以{5}{3}「{4}」。	{1}年，{2}在{8}为{7}于{6}上以{5}{3}“{4}”。		自動產生（scripts/gen_events.py）：03.tsv {1} {@2} "{3}" in {%4} to a {%5} for {6} at {7}.
+In the {@1} of {#2}, {3} {@4} "{5}" in {%6} to a {%7} for {8} at {9}.	{2}年{1}，{3}在{9}為{8}於{7}上以{6}{4}「{5}」。	{2}年{1}，{3}在{9}为{8}于{7}上以{6}{4}“{5}”。		自動產生（scripts/gen_events.py）：03.tsv {1} {@2} "{3}" in {%4} to a {%5} for {6} at {7}.
+In a time before time, {1} {@2} "{3}" in {%4} to a {%5} for {6} at {7}.	太古之時，{1}在{7}為{6}於{5}上以{4}{2}「{3}」。	太古之时，{1}在{7}为{6}于{5}上以{4}{2}“{3}”。		自動產生（scripts/gen_events.py）：03.tsv {1} {@2} "{3}" in {%4} to a {%5} for {6} at {7}.
+In {#1}, {2} {@3} "{4}" to a {%5} for {6} at {7}.	{1}年，{2}在{7}為{6}於{5}上{3}「{4}」。	{1}年，{2}在{7}为{6}于{5}上{3}“{4}”。		自動產生（scripts/gen_events.py）：03.tsv {1} {@2} "{3}" to a {%4} for {5} at {6}.
+In the {@1} of {#2}, {3} {@4} "{5}" to a {%6} for {7} at {8}.	{2}年{1}，{3}在{8}為{7}於{6}上{4}「{5}」。	{2}年{1}，{3}在{8}为{7}于{6}上{4}“{5}”。		自動產生（scripts/gen_events.py）：03.tsv {1} {@2} "{3}" to a {%4} for {5} at {6}.
+In a time before time, {1} {@2} "{3}" to a {%4} for {5} at {6}.	太古之時，{1}在{6}為{5}於{4}上{2}「{3}」。	太古之时，{1}在{6}为{5}于{4}上{2}“{3}”。		自動產生（scripts/gen_events.py）：03.tsv {1} {@2} "{3}" to a {%4} for {5} at {6}.
+In {#1}, {2} {@3} in {%4} to a {%5} for {6} at {7}.	{1}年，{2}在{7}為{6}於{5}上以{4}{3}。	{1}年，{2}在{7}为{6}于{5}上以{4}{3}。		自動產生（scripts/gen_events.py）：03.tsv {1} {@2} in {%3} to a {%4} for {5} at {6}.
+In the {@1} of {#2}, {3} {@4} in {%5} to a {%6} for {7} at {8}.	{2}年{1}，{3}在{8}為{7}於{6}上以{5}{4}。	{2}年{1}，{3}在{8}为{7}于{6}上以{5}{4}。		自動產生（scripts/gen_events.py）：03.tsv {1} {@2} in {%3} to a {%4} for {5} at {6}.
+In a time before time, {1} {@2} in {%3} to a {%4} for {5} at {6}.	太古之時，{1}在{6}為{5}於{4}上以{3}{2}。	太古之时，{1}在{6}为{5}于{4}上以{3}{2}。		自動產生（scripts/gen_events.py）：03.tsv {1} {@2} in {%3} to a {%4} for {5} at {6}.
+In {#1}, {2} {@3} to a {%4} for {5} at {6}.	{1}年，{2}在{6}為{5}於{4}上{3}。	{1}年，{2}在{6}为{5}于{4}上{3}。		自動產生（scripts/gen_events.py）：03.tsv {1} {@2} to a {%3} for {4} at {5}.
+In the {@1} of {#2}, {3} {@4} to a {%5} for {6} at {7}.	{2}年{1}，{3}在{7}為{6}於{5}上{4}。	{2}年{1}，{3}在{7}为{6}于{5}上{4}。		自動產生（scripts/gen_events.py）：03.tsv {1} {@2} to a {%3} for {4} at {5}.
+In a time before time, {1} {@2} to a {%3} for {4} at {5}.	太古之時，{1}在{5}為{4}於{3}上{2}。	太古之时，{1}在{5}为{4}于{3}上{2}。		自動產生（scripts/gen_events.py）：03.tsv {1} {@2} to a {%3} for {4} at {5}.
 In {#1}, {%2} was destroyed by {3} by melting at {4}.	{1}年，{2}在{4}被{3}熔毀。	{1}年，{2}在{4}被{3}熔毁。		自動產生（scripts/gen_events.py）：04.tsv {%1} was destroyed by {2} by melting at {3}.
 In {#1}, {2} destroyed {%3} by melting at {4}.	{1}年，{2}在{4}熔毀了{3}。	{1}年，{2}在{4}熔毁了{3}。		自動產生（scripts/gen_events.py）：04.tsv {1} destroyed {%2} by melting at {3}.
 In the {@1} of {#2}, {%3} was destroyed by {4} by melting at {5}.	{2}年{1}，{3}在{5}被{4}熔毀。	{2}年{1}，{3}在{5}被{4}熔毁。		自動產生（scripts/gen_events.py）：04.tsv {%1} was destroyed by {2} by melting at {3}.
@@ -6945,15 +7084,42 @@ In a time before time, {1}'s {%2} was slashed off by {3}.	太古之時，{1}的{
 In {#1}, {2}'s {%3} was slashed off.	{1}年，{2}的{3}被砍斷。	{1}年，{2}的{3}被砍断。		自動產生（scripts/gen_events.py）：06.tsv {1}'s {%2} was slashed off.
 In the {@1} of {#2}, {3}'s {%4} was slashed off.	{2}年{1}，{3}的{4}被砍斷。	{2}年{1}，{3}的{4}被砍断。		自動產生（scripts/gen_events.py）：06.tsv {1}'s {%2} was slashed off.
 In a time before time, {1}'s {%2} was slashed off.	太古之時，{1}的{2}被砍斷。	太古之时，{1}的{2}被砍断。		自動產生（scripts/gen_events.py）：06.tsv {1}'s {%2} was slashed off.
-In {#1}, {2}'s {%3} was stabbed out by {4} as a means of torture.	{1}年，{2}的{3}遭{4}以酷刑戳出。	{1}年，{2}的{3}遭{4}以酷刑戳出。		自動產生（scripts/gen_events.py）：06.tsv {1}'s {%2} was stabbed out by {3} as a means of torture.
-In the {@1} of {#2}, {3}'s {%4} was stabbed out by {5} as a means of torture.	{2}年{1}，{3}的{4}遭{5}以酷刑戳出。	{2}年{1}，{3}的{4}遭{5}以酷刑戳出。		自動產生（scripts/gen_events.py）：06.tsv {1}'s {%2} was stabbed out by {3} as a means of torture.
-In a time before time, {1}'s {%2} was stabbed out by {3} as a means of torture.	太古之時，{1}的{2}遭{3}以酷刑戳出。	太古之时，{1}的{2}遭{3}以酷刑戳出。		自動產生（scripts/gen_events.py）：06.tsv {1}'s {%2} was stabbed out by {3} as a means of torture.
-In {#1}, {2}'s {%3} was stabbed out by {4}.	{1}年，{2}的{3}被{4}戳出。	{1}年，{2}的{3}被{4}戳出。		自動產生（scripts/gen_events.py）：06.tsv {1}'s {%2} was stabbed out by {3}.
-In the {@1} of {#2}, {3}'s {%4} was stabbed out by {5}.	{2}年{1}，{3}的{4}被{5}戳出。	{2}年{1}，{3}的{4}被{5}戳出。		自動產生（scripts/gen_events.py）：06.tsv {1}'s {%2} was stabbed out by {3}.
-In a time before time, {1}'s {%2} was stabbed out by {3}.	太古之時，{1}的{2}被{3}戳出。	太古之时，{1}的{2}被{3}戳出。		自動產生（scripts/gen_events.py）：06.tsv {1}'s {%2} was stabbed out by {3}.
-In {#1}, {2}'s {%3} was stabbed out.	{1}年，{2}的{3}被戳出。	{1}年，{2}的{3}被戳出。		自動產生（scripts/gen_events.py）：06.tsv {1}'s {%2} was stabbed out.
-In the {@1} of {#2}, {3}'s {%4} was stabbed out.	{2}年{1}，{3}的{4}被戳出。	{2}年{1}，{3}的{4}被戳出。		自動產生（scripts/gen_events.py）：06.tsv {1}'s {%2} was stabbed out.
-In a time before time, {1}'s {%2} was stabbed out.	太古之時，{1}的{2}被戳出。	太古之时，{1}的{2}被戳出。		自動產生（scripts/gen_events.py）：06.tsv {1}'s {%2} was stabbed out.
+In {#1}, {2}'s left eye was stabbed out by {3} as a means of torture.	{1}年，{2}的左眼遭{3}以酷刑戳出。	{1}年，{2}的左眼遭{3}以酷刑戳出。		自動產生（scripts/gen_events.py）：06.tsv {1}'s left eye was stabbed out by {2} as a means of torture.
+In the {@1} of {#2}, {3}'s left eye was stabbed out by {4} as a means of torture.	{2}年{1}，{3}的左眼遭{4}以酷刑戳出。	{2}年{1}，{3}的左眼遭{4}以酷刑戳出。		自動產生（scripts/gen_events.py）：06.tsv {1}'s left eye was stabbed out by {2} as a means of torture.
+In a time before time, {1}'s left eye was stabbed out by {2} as a means of torture.	太古之時，{1}的左眼遭{2}以酷刑戳出。	太古之时，{1}的左眼遭{2}以酷刑戳出。		自動產生（scripts/gen_events.py）：06.tsv {1}'s left eye was stabbed out by {2} as a means of torture.
+In {#1}, {2}'s left eye was stabbed out by {3}.	{1}年，{2}的左眼被{3}戳出。	{1}年，{2}的左眼被{3}戳出。		自動產生（scripts/gen_events.py）：06.tsv {1}'s left eye was stabbed out by {2}.
+In the {@1} of {#2}, {3}'s left eye was stabbed out by {4}.	{2}年{1}，{3}的左眼被{4}戳出。	{2}年{1}，{3}的左眼被{4}戳出。		自動產生（scripts/gen_events.py）：06.tsv {1}'s left eye was stabbed out by {2}.
+In a time before time, {1}'s left eye was stabbed out by {2}.	太古之時，{1}的左眼被{2}戳出。	太古之时，{1}的左眼被{2}戳出。		自動產生（scripts/gen_events.py）：06.tsv {1}'s left eye was stabbed out by {2}.
+In {#1}, {2}'s left eye was stabbed out.	{1}年，{2}的左眼被戳出。	{1}年，{2}的左眼被戳出。		自動產生（scripts/gen_events.py）：06.tsv {1}'s left eye was stabbed out.
+In the {@1} of {#2}, {3}'s left eye was stabbed out.	{2}年{1}，{3}的左眼被戳出。	{2}年{1}，{3}的左眼被戳出。		自動產生（scripts/gen_events.py）：06.tsv {1}'s left eye was stabbed out.
+In a time before time, {1}'s left eye was stabbed out.	太古之時，{1}的左眼被戳出。	太古之时，{1}的左眼被戳出。		自動產生（scripts/gen_events.py）：06.tsv {1}'s left eye was stabbed out.
+In {#1}, {2}'s right eye was stabbed out by {3} as a means of torture.	{1}年，{2}的右眼遭{3}以酷刑戳出。	{1}年，{2}的右眼遭{3}以酷刑戳出。		自動產生（scripts/gen_events.py）：06.tsv {1}'s right eye was stabbed out by {2} as a means of torture.
+In the {@1} of {#2}, {3}'s right eye was stabbed out by {4} as a means of torture.	{2}年{1}，{3}的右眼遭{4}以酷刑戳出。	{2}年{1}，{3}的右眼遭{4}以酷刑戳出。		自動產生（scripts/gen_events.py）：06.tsv {1}'s right eye was stabbed out by {2} as a means of torture.
+In a time before time, {1}'s right eye was stabbed out by {2} as a means of torture.	太古之時，{1}的右眼遭{2}以酷刑戳出。	太古之时，{1}的右眼遭{2}以酷刑戳出。		自動產生（scripts/gen_events.py）：06.tsv {1}'s right eye was stabbed out by {2} as a means of torture.
+In {#1}, {2}'s right eye was stabbed out by {3}.	{1}年，{2}的右眼被{3}戳出。	{1}年，{2}的右眼被{3}戳出。		自動產生（scripts/gen_events.py）：06.tsv {1}'s right eye was stabbed out by {2}.
+In the {@1} of {#2}, {3}'s right eye was stabbed out by {4}.	{2}年{1}，{3}的右眼被{4}戳出。	{2}年{1}，{3}的右眼被{4}戳出。		自動產生（scripts/gen_events.py）：06.tsv {1}'s right eye was stabbed out by {2}.
+In a time before time, {1}'s right eye was stabbed out by {2}.	太古之時，{1}的右眼被{2}戳出。	太古之时，{1}的右眼被{2}戳出。		自動產生（scripts/gen_events.py）：06.tsv {1}'s right eye was stabbed out by {2}.
+In {#1}, {2}'s right eye was stabbed out.	{1}年，{2}的右眼被戳出。	{1}年，{2}的右眼被戳出。		自動產生（scripts/gen_events.py）：06.tsv {1}'s right eye was stabbed out.
+In the {@1} of {#2}, {3}'s right eye was stabbed out.	{2}年{1}，{3}的右眼被戳出。	{2}年{1}，{3}的右眼被戳出。		自動產生（scripts/gen_events.py）：06.tsv {1}'s right eye was stabbed out.
+In a time before time, {1}'s right eye was stabbed out.	太古之時，{1}的右眼被戳出。	太古之时，{1}的右眼被戳出。		自動產生（scripts/gen_events.py）：06.tsv {1}'s right eye was stabbed out.
+In {#1}, {2}'s eye was stabbed out by {3} as a means of torture.	{1}年，{2}的眼睛遭{3}以酷刑戳出。	{1}年，{2}的眼睛遭{3}以酷刑戳出。		自動產生（scripts/gen_events.py）：06.tsv {1}'s eye was stabbed out by {2} as a means of torture.
+In the {@1} of {#2}, {3}'s eye was stabbed out by {4} as a means of torture.	{2}年{1}，{3}的眼睛遭{4}以酷刑戳出。	{2}年{1}，{3}的眼睛遭{4}以酷刑戳出。		自動產生（scripts/gen_events.py）：06.tsv {1}'s eye was stabbed out by {2} as a means of torture.
+In a time before time, {1}'s eye was stabbed out by {2} as a means of torture.	太古之時，{1}的眼睛遭{2}以酷刑戳出。	太古之时，{1}的眼睛遭{2}以酷刑戳出。		自動產生（scripts/gen_events.py）：06.tsv {1}'s eye was stabbed out by {2} as a means of torture.
+In {#1}, {2}'s eye was stabbed out by {3}.	{1}年，{2}的眼睛被{3}戳出。	{1}年，{2}的眼睛被{3}戳出。		自動產生（scripts/gen_events.py）：06.tsv {1}'s eye was stabbed out by {2}.
+In the {@1} of {#2}, {3}'s eye was stabbed out by {4}.	{2}年{1}，{3}的眼睛被{4}戳出。	{2}年{1}，{3}的眼睛被{4}戳出。		自動產生（scripts/gen_events.py）：06.tsv {1}'s eye was stabbed out by {2}.
+In a time before time, {1}'s eye was stabbed out by {2}.	太古之時，{1}的眼睛被{2}戳出。	太古之时，{1}的眼睛被{2}戳出。		自動產生（scripts/gen_events.py）：06.tsv {1}'s eye was stabbed out by {2}.
+In {#1}, {2}'s eye was stabbed out.	{1}年，{2}的眼睛被戳出。	{1}年，{2}的眼睛被戳出。		自動產生（scripts/gen_events.py）：06.tsv {1}'s eye was stabbed out.
+In the {@1} of {#2}, {3}'s eye was stabbed out.	{2}年{1}，{3}的眼睛被戳出。	{2}年{1}，{3}的眼睛被戳出。		自動產生（scripts/gen_events.py）：06.tsv {1}'s eye was stabbed out.
+In a time before time, {1}'s eye was stabbed out.	太古之時，{1}的眼睛被戳出。	太古之时，{1}的眼睛被戳出。		自動產生（scripts/gen_events.py）：06.tsv {1}'s eye was stabbed out.
+In {#1}, {2}'s {%3} was stabbed out by {4} as a means of torture.	{1}年，{2}的{3}遭{4}以酷刑刺擊而毀。	{1}年，{2}的{3}遭{4}以酷刑刺击而毁。		自動產生（scripts/gen_events.py）：06.tsv {1}'s {%2} was stabbed out by {3} as a means of torture.
+In the {@1} of {#2}, {3}'s {%4} was stabbed out by {5} as a means of torture.	{2}年{1}，{3}的{4}遭{5}以酷刑刺擊而毀。	{2}年{1}，{3}的{4}遭{5}以酷刑刺击而毁。		自動產生（scripts/gen_events.py）：06.tsv {1}'s {%2} was stabbed out by {3} as a means of torture.
+In a time before time, {1}'s {%2} was stabbed out by {3} as a means of torture.	太古之時，{1}的{2}遭{3}以酷刑刺擊而毀。	太古之时，{1}的{2}遭{3}以酷刑刺击而毁。		自動產生（scripts/gen_events.py）：06.tsv {1}'s {%2} was stabbed out by {3} as a means of torture.
+In {#1}, {2}'s {%3} was stabbed out by {4}.	{1}年，{2}的{3}遭{4}刺擊而毀。	{1}年，{2}的{3}遭{4}刺击而毁。		自動產生（scripts/gen_events.py）：06.tsv {1}'s {%2} was stabbed out by {3}.
+In the {@1} of {#2}, {3}'s {%4} was stabbed out by {5}.	{2}年{1}，{3}的{4}遭{5}刺擊而毀。	{2}年{1}，{3}的{4}遭{5}刺击而毁。		自動產生（scripts/gen_events.py）：06.tsv {1}'s {%2} was stabbed out by {3}.
+In a time before time, {1}'s {%2} was stabbed out by {3}.	太古之時，{1}的{2}遭{3}刺擊而毀。	太古之时，{1}的{2}遭{3}刺击而毁。		自動產生（scripts/gen_events.py）：06.tsv {1}'s {%2} was stabbed out by {3}.
+In {#1}, {2}'s {%3} was stabbed out.	{1}年，{2}的{3}遭刺擊而毀。	{1}年，{2}的{3}遭刺击而毁。		自動產生（scripts/gen_events.py）：06.tsv {1}'s {%2} was stabbed out.
+In the {@1} of {#2}, {3}'s {%4} was stabbed out.	{2}年{1}，{3}的{4}遭刺擊而毀。	{2}年{1}，{3}的{4}遭刺击而毁。		自動產生（scripts/gen_events.py）：06.tsv {1}'s {%2} was stabbed out.
+In a time before time, {1}'s {%2} was stabbed out.	太古之時，{1}的{2}遭刺擊而毀。	太古之时，{1}的{2}遭刺击而毁。		自動產生（scripts/gen_events.py）：06.tsv {1}'s {%2} was stabbed out.
 In {#1}, {2}'s {%3} was ripped off by {4} as a means of torture.	{1}年，{2}的{3}遭{4}以酷刑扯斷。	{1}年，{2}的{3}遭{4}以酷刑扯断。		自動產生（scripts/gen_events.py）：06.tsv {1}'s {%2} was ripped off by {3} as a means of torture.
 In the {@1} of {#2}, {3}'s {%4} was ripped off by {5} as a means of torture.	{2}年{1}，{3}的{4}遭{5}以酷刑扯斷。	{2}年{1}，{3}的{4}遭{5}以酷刑扯断。		自動產生（scripts/gen_events.py）：06.tsv {1}'s {%2} was ripped off by {3} as a means of torture.
 In a time before time, {1}'s {%2} was ripped off by {3} as a means of torture.	太古之時，{1}的{2}遭{3}以酷刑扯斷。	太古之时，{1}的{2}遭{3}以酷刑扯断。		自動產生（scripts/gen_events.py）：06.tsv {1}'s {%2} was ripped off by {3} as a means of torture.
@@ -7419,6 +7585,54 @@ In a time before time, {1} and {2} tamed the {%3} of {4}.	太古之時，{1}和{
 In {#1}, {2} tamed the {%3} of {4}.	{1}年，{2}馴服了{4}的{3}。	{1}年，{2}驯服了{4}的{3}。		自動產生（scripts/gen_events.py）：07.tsv {1} tamed the {%2} of {3}.
 In the {@1} of {#2}, {3} tamed the {%4} of {5}.	{2}年{1}，{3}馴服了{5}的{4}。	{2}年{1}，{3}驯服了{5}的{4}。		自動產生（scripts/gen_events.py）：07.tsv {1} tamed the {%2} of {3}.
 In a time before time, {1} tamed the {%2} of {3}.	太古之時，{1}馴服了{3}的{2}。	太古之时，{1}驯服了{3}的{2}。		自動產生（scripts/gen_events.py）：07.tsv {1} tamed the {%2} of {3}.
+In {#1}, {@2} {%3} clashed with {@4} {%5} in {6} in {7}, slaying them.	{1}年，{2}名{3}與{4}名{5}在{7}的{6}交戰，殲滅了對方。	{1}年，{2}名{3}与{4}名{5}在{7}的{6}交战，歼灭了对方。		自動產生（scripts/gen_events.py）：07.tsv {@1} {%2} clashed with {@3} {%4} in {5} in {6}, slaying them.
+In the {@1} of {#2}, {@3} {%4} clashed with {@5} {%6} in {7} in {8}, slaying them.	{2}年{1}，{3}名{4}與{5}名{6}在{8}的{7}交戰，殲滅了對方。	{2}年{1}，{3}名{4}与{5}名{6}在{8}的{7}交战，歼灭了对方。		自動產生（scripts/gen_events.py）：07.tsv {@1} {%2} clashed with {@3} {%4} in {5} in {6}, slaying them.
+In a time before time, {@1} {%2} clashed with {@3} {%4} in {5} in {6}, slaying them.	太古之時，{1}名{2}與{3}名{4}在{6}的{5}交戰，殲滅了對方。	太古之时，{1}名{2}与{3}名{4}在{6}的{5}交战，歼灭了对方。		自動產生（scripts/gen_events.py）：07.tsv {@1} {%2} clashed with {@3} {%4} in {5} in {6}, slaying them.
+In {#1}, {@2} {%3} clashed with {@4} {%5} in {6} in {7}, slaying them and dying.	{1}年，{2}名{3}與{4}名{5}在{7}的{6}交戰，殲滅了對方，自身也戰死。	{1}年，{2}名{3}与{4}名{5}在{7}的{6}交战，歼灭了对方，自身也战死。		自動產生（scripts/gen_events.py）：07.tsv {@1} {%2} clashed with {@3} {%4} in {5} in {6}, slaying them and dying.
+In the {@1} of {#2}, {@3} {%4} clashed with {@5} {%6} in {7} in {8}, slaying them and dying.	{2}年{1}，{3}名{4}與{5}名{6}在{8}的{7}交戰，殲滅了對方，自身也戰死。	{2}年{1}，{3}名{4}与{5}名{6}在{8}的{7}交战，歼灭了对方，自身也战死。		自動產生（scripts/gen_events.py）：07.tsv {@1} {%2} clashed with {@3} {%4} in {5} in {6}, slaying them and dying.
+In a time before time, {@1} {%2} clashed with {@3} {%4} in {5} in {6}, slaying them and dying.	太古之時，{1}名{2}與{3}名{4}在{6}的{5}交戰，殲滅了對方，自身也戰死。	太古之时，{1}名{2}与{3}名{4}在{6}的{5}交战，歼灭了对方，自身也战死。		自動產生（scripts/gen_events.py）：07.tsv {@1} {%2} clashed with {@3} {%4} in {5} in {6}, slaying them and dying.
+In {#1}, {@2} {%3} clashed with {@4} {%5} in {6} in {7}, slaying them and losing everyone.	{1}年，{2}名{3}與{4}名{5}在{7}的{6}交戰，殲滅了對方，己方也全軍覆沒。	{1}年，{2}名{3}与{4}名{5}在{7}的{6}交战，歼灭了对方，己方也全军覆没。		自動產生（scripts/gen_events.py）：07.tsv {@1} {%2} clashed with {@3} {%4} in {5} in {6}, slaying them and losing everyone.
+In the {@1} of {#2}, {@3} {%4} clashed with {@5} {%6} in {7} in {8}, slaying them and losing everyone.	{2}年{1}，{3}名{4}與{5}名{6}在{8}的{7}交戰，殲滅了對方，己方也全軍覆沒。	{2}年{1}，{3}名{4}与{5}名{6}在{8}的{7}交战，歼灭了对方，己方也全军覆没。		自動產生（scripts/gen_events.py）：07.tsv {@1} {%2} clashed with {@3} {%4} in {5} in {6}, slaying them and losing everyone.
+In a time before time, {@1} {%2} clashed with {@3} {%4} in {5} in {6}, slaying them and losing everyone.	太古之時，{1}名{2}與{3}名{4}在{6}的{5}交戰，殲滅了對方，己方也全軍覆沒。	太古之时，{1}名{2}与{3}名{4}在{6}的{5}交战，歼灭了对方，己方也全军覆没。		自動產生（scripts/gen_events.py）：07.tsv {@1} {%2} clashed with {@3} {%4} in {5} in {6}, slaying them and losing everyone.
+In {#1}, {@2} {%3} clashed with {@4} {%5} in {6} in {7}, slaying them and losing {@8}.	{1}年，{2}名{3}與{4}名{5}在{7}的{6}交戰，殲滅了對方，己方折損{8}名。	{1}年，{2}名{3}与{4}名{5}在{7}的{6}交战，歼灭了对方，己方折损{8}名。		自動產生（scripts/gen_events.py）：07.tsv {@1} {%2} clashed with {@3} {%4} in {5} in {6}, slaying them and losing {@7}.
+In the {@1} of {#2}, {@3} {%4} clashed with {@5} {%6} in {7} in {8}, slaying them and losing {@9}.	{2}年{1}，{3}名{4}與{5}名{6}在{8}的{7}交戰，殲滅了對方，己方折損{9}名。	{2}年{1}，{3}名{4}与{5}名{6}在{8}的{7}交战，歼灭了对方，己方折损{9}名。		自動產生（scripts/gen_events.py）：07.tsv {@1} {%2} clashed with {@3} {%4} in {5} in {6}, slaying them and losing {@7}.
+In a time before time, {@1} {%2} clashed with {@3} {%4} in {5} in {6}, slaying them and losing {@7}.	太古之時，{1}名{2}與{3}名{4}在{6}的{5}交戰，殲滅了對方，己方折損{7}名。	太古之时，{1}名{2}与{3}名{4}在{6}的{5}交战，歼灭了对方，己方折损{7}名。		自動產生（scripts/gen_events.py）：07.tsv {@1} {%2} clashed with {@3} {%4} in {5} in {6}, slaying them and losing {@7}.
+In {#1}, {@2} {%3} clashed with {@4} {%5} in {6}, slaying them.	{1}年，{2}名{3}與{4}名{5}在{6}交戰，殲滅了對方。	{1}年，{2}名{3}与{4}名{5}在{6}交战，歼灭了对方。		自動產生（scripts/gen_events.py）：07.tsv {@1} {%2} clashed with {@3} {%4} in {5}, slaying them.
+In the {@1} of {#2}, {@3} {%4} clashed with {@5} {%6} in {7}, slaying them.	{2}年{1}，{3}名{4}與{5}名{6}在{7}交戰，殲滅了對方。	{2}年{1}，{3}名{4}与{5}名{6}在{7}交战，歼灭了对方。		自動產生（scripts/gen_events.py）：07.tsv {@1} {%2} clashed with {@3} {%4} in {5}, slaying them.
+In a time before time, {@1} {%2} clashed with {@3} {%4} in {5}, slaying them.	太古之時，{1}名{2}與{3}名{4}在{5}交戰，殲滅了對方。	太古之时，{1}名{2}与{3}名{4}在{5}交战，歼灭了对方。		自動產生（scripts/gen_events.py）：07.tsv {@1} {%2} clashed with {@3} {%4} in {5}, slaying them.
+In {#1}, {@2} {%3} clashed with {@4} {%5} in {6}, slaying them and dying.	{1}年，{2}名{3}與{4}名{5}在{6}交戰，殲滅了對方，自身也戰死。	{1}年，{2}名{3}与{4}名{5}在{6}交战，歼灭了对方，自身也战死。		自動產生（scripts/gen_events.py）：07.tsv {@1} {%2} clashed with {@3} {%4} in {5}, slaying them and dying.
+In the {@1} of {#2}, {@3} {%4} clashed with {@5} {%6} in {7}, slaying them and dying.	{2}年{1}，{3}名{4}與{5}名{6}在{7}交戰，殲滅了對方，自身也戰死。	{2}年{1}，{3}名{4}与{5}名{6}在{7}交战，歼灭了对方，自身也战死。		自動產生（scripts/gen_events.py）：07.tsv {@1} {%2} clashed with {@3} {%4} in {5}, slaying them and dying.
+In a time before time, {@1} {%2} clashed with {@3} {%4} in {5}, slaying them and dying.	太古之時，{1}名{2}與{3}名{4}在{5}交戰，殲滅了對方，自身也戰死。	太古之时，{1}名{2}与{3}名{4}在{5}交战，歼灭了对方，自身也战死。		自動產生（scripts/gen_events.py）：07.tsv {@1} {%2} clashed with {@3} {%4} in {5}, slaying them and dying.
+In {#1}, {@2} {%3} clashed with {@4} {%5} in {6}, slaying them and losing everyone.	{1}年，{2}名{3}與{4}名{5}在{6}交戰，殲滅了對方，己方也全軍覆沒。	{1}年，{2}名{3}与{4}名{5}在{6}交战，歼灭了对方，己方也全军覆没。		自動產生（scripts/gen_events.py）：07.tsv {@1} {%2} clashed with {@3} {%4} in {5}, slaying them and losing everyone.
+In the {@1} of {#2}, {@3} {%4} clashed with {@5} {%6} in {7}, slaying them and losing everyone.	{2}年{1}，{3}名{4}與{5}名{6}在{7}交戰，殲滅了對方，己方也全軍覆沒。	{2}年{1}，{3}名{4}与{5}名{6}在{7}交战，歼灭了对方，己方也全军覆没。		自動產生（scripts/gen_events.py）：07.tsv {@1} {%2} clashed with {@3} {%4} in {5}, slaying them and losing everyone.
+In a time before time, {@1} {%2} clashed with {@3} {%4} in {5}, slaying them and losing everyone.	太古之時，{1}名{2}與{3}名{4}在{5}交戰，殲滅了對方，己方也全軍覆沒。	太古之时，{1}名{2}与{3}名{4}在{5}交战，歼灭了对方，己方也全军覆没。		自動產生（scripts/gen_events.py）：07.tsv {@1} {%2} clashed with {@3} {%4} in {5}, slaying them and losing everyone.
+In {#1}, {@2} {%3} clashed with {@4} {%5} in {6}, slaying them and losing {@7}.	{1}年，{2}名{3}與{4}名{5}在{6}交戰，殲滅了對方，己方折損{7}名。	{1}年，{2}名{3}与{4}名{5}在{6}交战，歼灭了对方，己方折损{7}名。		自動產生（scripts/gen_events.py）：07.tsv {@1} {%2} clashed with {@3} {%4} in {5}, slaying them and losing {@6}.
+In the {@1} of {#2}, {@3} {%4} clashed with {@5} {%6} in {7}, slaying them and losing {@8}.	{2}年{1}，{3}名{4}與{5}名{6}在{7}交戰，殲滅了對方，己方折損{8}名。	{2}年{1}，{3}名{4}与{5}名{6}在{7}交战，歼灭了对方，己方折损{8}名。		自動產生（scripts/gen_events.py）：07.tsv {@1} {%2} clashed with {@3} {%4} in {5}, slaying them and losing {@6}.
+In a time before time, {@1} {%2} clashed with {@3} {%4} in {5}, slaying them and losing {@6}.	太古之時，{1}名{2}與{3}名{4}在{5}交戰，殲滅了對方，己方折損{6}名。	太古之时，{1}名{2}与{3}名{4}在{5}交战，歼灭了对方，己方折损{6}名。		自動產生（scripts/gen_events.py）：07.tsv {@1} {%2} clashed with {@3} {%4} in {5}, slaying them and losing {@6}.
+In {#1}, {2} clashed with {@3} {%4} in {5} in {6}, slaying them.	{1}年，{2}與{3}名{4}在{6}的{5}交戰，殲滅了對方。	{1}年，{2}与{3}名{4}在{6}的{5}交战，歼灭了对方。		自動產生（scripts/gen_events.py）：07.tsv {1} clashed with {@2} {%3} in {4} in {5}, slaying them.
+In the {@1} of {#2}, {3} clashed with {@4} {%5} in {6} in {7}, slaying them.	{2}年{1}，{3}與{4}名{5}在{7}的{6}交戰，殲滅了對方。	{2}年{1}，{3}与{4}名{5}在{7}的{6}交战，歼灭了对方。		自動產生（scripts/gen_events.py）：07.tsv {1} clashed with {@2} {%3} in {4} in {5}, slaying them.
+In a time before time, {1} clashed with {@2} {%3} in {4} in {5}, slaying them.	太古之時，{1}與{2}名{3}在{5}的{4}交戰，殲滅了對方。	太古之时，{1}与{2}名{3}在{5}的{4}交战，歼灭了对方。		自動產生（scripts/gen_events.py）：07.tsv {1} clashed with {@2} {%3} in {4} in {5}, slaying them.
+In {#1}, {2} clashed with {@3} {%4} in {5} in {6}, slaying them and dying.	{1}年，{2}與{3}名{4}在{6}的{5}交戰，殲滅了對方，自身也戰死。	{1}年，{2}与{3}名{4}在{6}的{5}交战，歼灭了对方，自身也战死。		自動產生（scripts/gen_events.py）：07.tsv {1} clashed with {@2} {%3} in {4} in {5}, slaying them and dying.
+In the {@1} of {#2}, {3} clashed with {@4} {%5} in {6} in {7}, slaying them and dying.	{2}年{1}，{3}與{4}名{5}在{7}的{6}交戰，殲滅了對方，自身也戰死。	{2}年{1}，{3}与{4}名{5}在{7}的{6}交战，歼灭了对方，自身也战死。		自動產生（scripts/gen_events.py）：07.tsv {1} clashed with {@2} {%3} in {4} in {5}, slaying them and dying.
+In a time before time, {1} clashed with {@2} {%3} in {4} in {5}, slaying them and dying.	太古之時，{1}與{2}名{3}在{5}的{4}交戰，殲滅了對方，自身也戰死。	太古之时，{1}与{2}名{3}在{5}的{4}交战，歼灭了对方，自身也战死。		自動產生（scripts/gen_events.py）：07.tsv {1} clashed with {@2} {%3} in {4} in {5}, slaying them and dying.
+In {#1}, {2} clashed with {@3} {%4} in {5} in {6}, slaying them and losing everyone.	{1}年，{2}與{3}名{4}在{6}的{5}交戰，殲滅了對方，己方也全軍覆沒。	{1}年，{2}与{3}名{4}在{6}的{5}交战，歼灭了对方，己方也全军覆没。		自動產生（scripts/gen_events.py）：07.tsv {1} clashed with {@2} {%3} in {4} in {5}, slaying them and losing everyone.
+In the {@1} of {#2}, {3} clashed with {@4} {%5} in {6} in {7}, slaying them and losing everyone.	{2}年{1}，{3}與{4}名{5}在{7}的{6}交戰，殲滅了對方，己方也全軍覆沒。	{2}年{1}，{3}与{4}名{5}在{7}的{6}交战，歼灭了对方，己方也全军覆没。		自動產生（scripts/gen_events.py）：07.tsv {1} clashed with {@2} {%3} in {4} in {5}, slaying them and losing everyone.
+In a time before time, {1} clashed with {@2} {%3} in {4} in {5}, slaying them and losing everyone.	太古之時，{1}與{2}名{3}在{5}的{4}交戰，殲滅了對方，己方也全軍覆沒。	太古之时，{1}与{2}名{3}在{5}的{4}交战，歼灭了对方，己方也全军覆没。		自動產生（scripts/gen_events.py）：07.tsv {1} clashed with {@2} {%3} in {4} in {5}, slaying them and losing everyone.
+In {#1}, {2} clashed with {@3} {%4} in {5} in {6}, slaying them and losing {@7}.	{1}年，{2}與{3}名{4}在{6}的{5}交戰，殲滅了對方，己方折損{7}名。	{1}年，{2}与{3}名{4}在{6}的{5}交战，歼灭了对方，己方折损{7}名。		自動產生（scripts/gen_events.py）：07.tsv {1} clashed with {@2} {%3} in {4} in {5}, slaying them and losing {@6}.
+In the {@1} of {#2}, {3} clashed with {@4} {%5} in {6} in {7}, slaying them and losing {@8}.	{2}年{1}，{3}與{4}名{5}在{7}的{6}交戰，殲滅了對方，己方折損{8}名。	{2}年{1}，{3}与{4}名{5}在{7}的{6}交战，歼灭了对方，己方折损{8}名。		自動產生（scripts/gen_events.py）：07.tsv {1} clashed with {@2} {%3} in {4} in {5}, slaying them and losing {@6}.
+In a time before time, {1} clashed with {@2} {%3} in {4} in {5}, slaying them and losing {@6}.	太古之時，{1}與{2}名{3}在{5}的{4}交戰，殲滅了對方，己方折損{6}名。	太古之时，{1}与{2}名{3}在{5}的{4}交战，歼灭了对方，己方折损{6}名。		自動產生（scripts/gen_events.py）：07.tsv {1} clashed with {@2} {%3} in {4} in {5}, slaying them and losing {@6}.
+In {#1}, {2} clashed with {@3} {%4} in {5}, slaying them.	{1}年，{2}與{3}名{4}在{5}交戰，殲滅了對方。	{1}年，{2}与{3}名{4}在{5}交战，歼灭了对方。		自動產生（scripts/gen_events.py）：07.tsv {1} clashed with {@2} {%3} in {4}, slaying them.
+In the {@1} of {#2}, {3} clashed with {@4} {%5} in {6}, slaying them.	{2}年{1}，{3}與{4}名{5}在{6}交戰，殲滅了對方。	{2}年{1}，{3}与{4}名{5}在{6}交战，歼灭了对方。		自動產生（scripts/gen_events.py）：07.tsv {1} clashed with {@2} {%3} in {4}, slaying them.
+In a time before time, {1} clashed with {@2} {%3} in {4}, slaying them.	太古之時，{1}與{2}名{3}在{4}交戰，殲滅了對方。	太古之时，{1}与{2}名{3}在{4}交战，歼灭了对方。		自動產生（scripts/gen_events.py）：07.tsv {1} clashed with {@2} {%3} in {4}, slaying them.
+In {#1}, {2} clashed with {@3} {%4} in {5}, slaying them and dying.	{1}年，{2}與{3}名{4}在{5}交戰，殲滅了對方，自身也戰死。	{1}年，{2}与{3}名{4}在{5}交战，歼灭了对方，自身也战死。		自動產生（scripts/gen_events.py）：07.tsv {1} clashed with {@2} {%3} in {4}, slaying them and dying.
+In the {@1} of {#2}, {3} clashed with {@4} {%5} in {6}, slaying them and dying.	{2}年{1}，{3}與{4}名{5}在{6}交戰，殲滅了對方，自身也戰死。	{2}年{1}，{3}与{4}名{5}在{6}交战，歼灭了对方，自身也战死。		自動產生（scripts/gen_events.py）：07.tsv {1} clashed with {@2} {%3} in {4}, slaying them and dying.
+In a time before time, {1} clashed with {@2} {%3} in {4}, slaying them and dying.	太古之時，{1}與{2}名{3}在{4}交戰，殲滅了對方，自身也戰死。	太古之时，{1}与{2}名{3}在{4}交战，歼灭了对方，自身也战死。		自動產生（scripts/gen_events.py）：07.tsv {1} clashed with {@2} {%3} in {4}, slaying them and dying.
+In {#1}, {2} clashed with {@3} {%4} in {5}, slaying them and losing everyone.	{1}年，{2}與{3}名{4}在{5}交戰，殲滅了對方，己方也全軍覆沒。	{1}年，{2}与{3}名{4}在{5}交战，歼灭了对方，己方也全军覆没。		自動產生（scripts/gen_events.py）：07.tsv {1} clashed with {@2} {%3} in {4}, slaying them and losing everyone.
+In the {@1} of {#2}, {3} clashed with {@4} {%5} in {6}, slaying them and losing everyone.	{2}年{1}，{3}與{4}名{5}在{6}交戰，殲滅了對方，己方也全軍覆沒。	{2}年{1}，{3}与{4}名{5}在{6}交战，歼灭了对方，己方也全军覆没。		自動產生（scripts/gen_events.py）：07.tsv {1} clashed with {@2} {%3} in {4}, slaying them and losing everyone.
+In a time before time, {1} clashed with {@2} {%3} in {4}, slaying them and losing everyone.	太古之時，{1}與{2}名{3}在{4}交戰，殲滅了對方，己方也全軍覆沒。	太古之时，{1}与{2}名{3}在{4}交战，歼灭了对方，己方也全军覆没。		自動產生（scripts/gen_events.py）：07.tsv {1} clashed with {@2} {%3} in {4}, slaying them and losing everyone.
+In {#1}, {2} clashed with {@3} {%4} in {5}, slaying them and losing {@6}.	{1}年，{2}與{3}名{4}在{5}交戰，殲滅了對方，己方折損{6}名。	{1}年，{2}与{3}名{4}在{5}交战，歼灭了对方，己方折损{6}名。		自動產生（scripts/gen_events.py）：07.tsv {1} clashed with {@2} {%3} in {4}, slaying them and losing {@5}.
+In the {@1} of {#2}, {3} clashed with {@4} {%5} in {6}, slaying them and losing {@7}.	{2}年{1}，{3}與{4}名{5}在{6}交戰，殲滅了對方，己方折損{7}名。	{2}年{1}，{3}与{4}名{5}在{6}交战，歼灭了对方，己方折损{7}名。		自動產生（scripts/gen_events.py）：07.tsv {1} clashed with {@2} {%3} in {4}, slaying them and losing {@5}.
+In a time before time, {1} clashed with {@2} {%3} in {4}, slaying them and losing {@5}.	太古之時，{1}與{2}名{3}在{4}交戰，殲滅了對方，己方折損{5}名。	太古之时，{1}与{2}名{3}在{4}交战，歼灭了对方，己方折损{5}名。		自動產生（scripts/gen_events.py）：07.tsv {1} clashed with {@2} {%3} in {4}, slaying them and losing {@5}.
 In {#1}, {@2} {%3} clashed with a single {%4} in {5} in {6}, dying.	{1}年，{2}名{3}與單獨一名{4}在{6}的{5}交戰，最終戰死。	{1}年，{2}名{3}与单独一名{4}在{6}的{5}交战，最终战死。		自動產生（scripts/gen_events.py）：07.tsv {@1} {%2} clashed with a single {%3} in {4} in {5}, dying.
 In {#1}, {@2} {%3} clashed with a single {%4} in {5} in {6}, {%7}.	{1}年，{2}名{3}與單獨一名{4}在{6}的{5}交戰，{7}。	{1}年，{2}名{3}与单独一名{4}在{6}的{5}交战，{7}。		自動產生（scripts/gen_events.py）：07.tsv {@1} {%2} clashed with a single {%3} in {4} in {5}, {%6}.
 In {#1}, {@2} {%3} clashed with {@4} {%5} in {6} in {7}, dying.	{1}年，{2}名{3}與{4}名{5}在{7}的{6}交戰，最終戰死。	{1}年，{2}名{3}与{4}名{5}在{7}的{6}交战，最终战死。		自動產生（scripts/gen_events.py）：07.tsv {@1} {%2} clashed with {@3} {%4} in {5} in {6}, dying.
@@ -7839,12 +8053,12 @@ In a time before time, {1} became a {%2} in {3}.	太古之時，{1}在{3}成為{
 In {#1}, {2} lost a hist fig entry in {3}.	{1}年，{2}在{3}遺失了歷史人物條目。	{1}年，{2}在{3}丢失了历史人物条目。		自動產生（scripts/gen_events.py）：09.tsv {1} lost a hist fig entry in {2}.
 In the {@1} of {#2}, {3} lost a hist fig entry in {4}.	{2}年{1}，{3}在{4}遺失了歷史人物條目。	{2}年{1}，{3}在{4}丢失了历史人物条目。		自動產生（scripts/gen_events.py）：09.tsv {1} lost a hist fig entry in {2}.
 In a time before time, {1} lost a hist fig entry in {2}.	太古之時，{1}在{2}遺失了歷史人物條目。	太古之时，{1}在{2}丢失了历史人物条目。		自動產生（scripts/gen_events.py）：09.tsv {1} lost a hist fig entry in {2}.
-In {#1}, {2} arose from {3} within {4}.	{1}年，{2}從{3}的{4}中爬起。	{1}年，{2}从{3}的{4}中爬起。		自動產生（scripts/gen_events.py）：09.tsv {1} arose from {2} within {3}.
-In the {@1} of {#2}, {3} arose from {4} within {5}.	{2}年{1}，{3}從{4}的{5}中爬起。	{2}年{1}，{3}从{4}的{5}中爬起。		自動產生（scripts/gen_events.py）：09.tsv {1} arose from {2} within {3}.
-In a time before time, {1} arose from {2} within {3}.	太古之時，{1}從{2}的{3}中爬起。	太古之时，{1}从{2}的{3}中爬起。		自動產生（scripts/gen_events.py）：09.tsv {1} arose from {2} within {3}.
-In {#1}, {2} arose from {3}.	{1}年，{2}從{3}中爬起。	{1}年，{2}从{3}中爬起。		自動產生（scripts/gen_events.py）：09.tsv {1} arose from {2}.
-In the {@1} of {#2}, {3} arose from {4}.	{2}年{1}，{3}從{4}中爬起。	{2}年{1}，{3}从{4}中爬起。		自動產生（scripts/gen_events.py）：09.tsv {1} arose from {2}.
-In a time before time, {1} arose from {2}.	太古之時，{1}從{2}中爬起。	太古之时，{1}从{2}中爬起。		自動產生（scripts/gen_events.py）：09.tsv {1} arose from {2}.
+In {#1}, {2} arose from {3} within {4}.	{1}年，{2}從{3}的{4}中起身。	{1}年，{2}从{3}的{4}中起身。		自動產生（scripts/gen_events.py）：09.tsv {1} arose from {2} within {3}.
+In the {@1} of {#2}, {3} arose from {4} within {5}.	{2}年{1}，{3}從{4}的{5}中起身。	{2}年{1}，{3}从{4}的{5}中起身。		自動產生（scripts/gen_events.py）：09.tsv {1} arose from {2} within {3}.
+In a time before time, {1} arose from {2} within {3}.	太古之時，{1}從{2}的{3}中起身。	太古之时，{1}从{2}的{3}中起身。		自動產生（scripts/gen_events.py）：09.tsv {1} arose from {2} within {3}.
+In {#1}, {2} arose from {3}.	{1}年，{2}從{3}中起身。	{1}年，{2}从{3}中起身。		自動產生（scripts/gen_events.py）：09.tsv {1} arose from {2}.
+In the {@1} of {#2}, {3} arose from {4}.	{2}年{1}，{3}從{4}中起身。	{2}年{1}，{3}从{4}中起身。		自動產生（scripts/gen_events.py）：09.tsv {1} arose from {2}.
+In a time before time, {1} arose from {2}.	太古之時，{1}從{2}中起身。	太古之时，{1}从{2}中起身。		自動產生（scripts/gen_events.py）：09.tsv {1} arose from {2}.
 In {#1}, {2} was buried in {3} within {4}.	{1}年，{2}被安葬於{3}的{4}。	{1}年，{2}被安葬于{3}的{4}。		自動產生（scripts/gen_events.py）：09.tsv {1} was buried in {2} within {3}.
 In the {@1} of {#2}, {3} was buried in {4} within {5}.	{2}年{1}，{3}被安葬於{4}的{5}。	{2}年{1}，{3}被安葬于{4}的{5}。		自動產生（scripts/gen_events.py）：09.tsv {1} was buried in {2} within {3}.
 In a time before time, {1} was buried in {2} within {3}.	太古之時，{1}被安葬於{2}的{3}。	太古之时，{1}被安葬于{2}的{3}。		自動產生（scripts/gen_events.py）：09.tsv {1} was buried in {2} within {3}.
@@ -8535,18 +8749,18 @@ In a time before time, {1} rejected contact with {2} at {3}.	太古之時，{1}�
 In {#1}, {2} rejected contact with {3}.	{1}年，{2}拒絕與{3}接觸。	{1}年，{2}拒绝与{3}接触。		自動產生（scripts/gen_events.py）：14.tsv {1} rejected contact with {2}.
 In the {@1} of {#2}, {3} rejected contact with {4}.	{2}年{1}，{3}拒絕與{4}接觸。	{2}年{1}，{3}拒绝与{4}接触。		自動產生（scripts/gen_events.py）：14.tsv {1} rejected contact with {2}.
 In a time before time, {1} rejected contact with {2}.	太古之時，{1}拒絕與{2}接觸。	太古之时，{1}拒绝与{2}接触。		自動產生（scripts/gen_events.py）：14.tsv {1} rejected contact with {2}.
-In {#1}, {%2} between {3} and {4} at {5} concluded fairly.	{1}年，{3}與{4}在{5}就{2}進行的談判公平收場。	{1}年，{3}与{4}在{5}就{2}进行的谈判公平收场。		自動產生（scripts/gen_events.py）：14.tsv {%1} between {2} and {3} at {4} concluded fairly.
-In the {@1} of {#2}, {%3} between {4} and {5} at {6} concluded fairly.	{2}年{1}，{4}與{5}在{6}就{3}進行的談判公平收場。	{2}年{1}，{4}与{5}在{6}就{3}进行的谈判公平收场。		自動產生（scripts/gen_events.py）：14.tsv {%1} between {2} and {3} at {4} concluded fairly.
-In a time before time, {%1} between {2} and {3} at {4} concluded fairly.	太古之時，{2}與{3}在{4}就{1}進行的談判公平收場。	太古之时，{2}与{3}在{4}就{1}进行的谈判公平收场。		自動產生（scripts/gen_events.py）：14.tsv {%1} between {2} and {3} at {4} concluded fairly.
+In {#1}, {%2} between {3} and {4} at {5} concluded fairly.	{1}年，{3}與{4}在{5}就{2}進行的談判結果尚可。	{1}年，{3}与{4}在{5}就{2}进行的谈判结果尚可。		自動產生（scripts/gen_events.py）：14.tsv {%1} between {2} and {3} at {4} concluded fairly.
+In the {@1} of {#2}, {%3} between {4} and {5} at {6} concluded fairly.	{2}年{1}，{4}與{5}在{6}就{3}進行的談判結果尚可。	{2}年{1}，{4}与{5}在{6}就{3}进行的谈判结果尚可。		自動產生（scripts/gen_events.py）：14.tsv {%1} between {2} and {3} at {4} concluded fairly.
+In a time before time, {%1} between {2} and {3} at {4} concluded fairly.	太古之時，{2}與{3}在{4}就{1}進行的談判結果尚可。	太古之时，{2}与{3}在{4}就{1}进行的谈判结果尚可。		自動產生（scripts/gen_events.py）：14.tsv {%1} between {2} and {3} at {4} concluded fairly.
 In {#1}, {%2} between {3} and {4} at {5} concluded with a positive outcome.	{1}年，{3}與{4}在{5}就{2}進行的談判取得了正面成果。	{1}年，{3}与{4}在{5}就{2}进行的谈判取得了积极成果。		自動產生（scripts/gen_events.py）：14.tsv {%1} between {2} and {3} at {4} concluded with a positive outcome.
 In the {@1} of {#2}, {%3} between {4} and {5} at {6} concluded with a positive outcome.	{2}年{1}，{4}與{5}在{6}就{3}進行的談判取得了正面成果。	{2}年{1}，{4}与{5}在{6}就{3}进行的谈判取得了积极成果。		自動產生（scripts/gen_events.py）：14.tsv {%1} between {2} and {3} at {4} concluded with a positive outcome.
 In a time before time, {%1} between {2} and {3} at {4} concluded with a positive outcome.	太古之時，{2}與{3}在{4}就{1}進行的談判取得了正面成果。	太古之时，{2}与{3}在{4}就{1}进行的谈判取得了积极成果。		自動產生（scripts/gen_events.py）：14.tsv {%1} between {2} and {3} at {4} concluded with a positive outcome.
 In {#1}, {%2} between {3} and {4} at {5} concluded, cementing bonds of mutual trust.	{1}年，{3}與{4}在{5}就{2}進行的談判圓滿成功，鞏固了彼此的互信。	{1}年，{3}与{4}在{5}就{2}进行的谈判圆满成功，巩固了彼此的互信。		自動產生（scripts/gen_events.py）：14.tsv {%1} between {2} and {3} at {4} concluded, cementing bonds of mutual trust.
 In the {@1} of {#2}, {%3} between {4} and {5} at {6} concluded, cementing bonds of mutual trust.	{2}年{1}，{4}與{5}在{6}就{3}進行的談判圓滿成功，鞏固了彼此的互信。	{2}年{1}，{4}与{5}在{6}就{3}进行的谈判圆满成功，巩固了彼此的互信。		自動產生（scripts/gen_events.py）：14.tsv {%1} between {2} and {3} at {4} concluded, cementing bonds of mutual trust.
 In a time before time, {%1} between {2} and {3} at {4} concluded, cementing bonds of mutual trust.	太古之時，{2}與{3}在{4}就{1}進行的談判圓滿成功，鞏固了彼此的互信。	太古之时，{2}与{3}在{4}就{1}进行的谈判圆满成功，巩固了彼此的互信。		自動產生（scripts/gen_events.py）：14.tsv {%1} between {2} and {3} at {4} concluded, cementing bonds of mutual trust.
-In {#1}, {%2} between {3} and {4} at {5} concluded with miserable outcome.	{1}年，{3}與{4}在{5}就{2}進行的談判以慘敗告終。	{1}年，{3}与{4}在{5}就{2}进行的谈判以惨败告终。		自動產生（scripts/gen_events.py）：14.tsv {%1} between {2} and {3} at {4} concluded with miserable outcome.
-In the {@1} of {#2}, {%3} between {4} and {5} at {6} concluded with miserable outcome.	{2}年{1}，{4}與{5}在{6}就{3}進行的談判以慘敗告終。	{2}年{1}，{4}与{5}在{6}就{3}进行的谈判以惨败告终。		自動產生（scripts/gen_events.py）：14.tsv {%1} between {2} and {3} at {4} concluded with miserable outcome.
-In a time before time, {%1} between {2} and {3} at {4} concluded with miserable outcome.	太古之時，{2}與{3}在{4}就{1}進行的談判以慘敗告終。	太古之时，{2}与{3}在{4}就{1}进行的谈判以惨败告终。		自動產生（scripts/gen_events.py）：14.tsv {%1} between {2} and {3} at {4} concluded with miserable outcome.
+In {#1}, {%2} between {3} and {4} at {5} concluded with miserable outcome.	{1}年，{3}與{4}在{5}就{2}進行的談判結果慘澹。	{1}年，{3}与{4}在{5}就{2}进行的谈判结果惨淡。		自動產生（scripts/gen_events.py）：14.tsv {%1} between {2} and {3} at {4} concluded with miserable outcome.
+In the {@1} of {#2}, {%3} between {4} and {5} at {6} concluded with miserable outcome.	{2}年{1}，{4}與{5}在{6}就{3}進行的談判結果慘澹。	{2}年{1}，{4}与{5}在{6}就{3}进行的谈判结果惨淡。		自動產生（scripts/gen_events.py）：14.tsv {%1} between {2} and {3} at {4} concluded with miserable outcome.
+In a time before time, {%1} between {2} and {3} at {4} concluded with miserable outcome.	太古之時，{2}與{3}在{4}就{1}進行的談判結果慘澹。	太古之时，{2}与{3}在{4}就{1}进行的谈判结果惨淡。		自動產生（scripts/gen_events.py）：14.tsv {%1} between {2} and {3} at {4} concluded with miserable outcome.
 In {#1}, {%2} between {3} and {4} at {5} concluded in failure.	{1}年，{3}與{4}在{5}就{2}進行的談判以失敗告終。	{1}年，{3}与{4}在{5}就{2}进行的谈判以失败告终。		自動產生（scripts/gen_events.py）：14.tsv {%1} between {2} and {3} at {4} concluded in failure.
 In the {@1} of {#2}, {%3} between {4} and {5} at {6} concluded in failure.	{2}年{1}，{4}與{5}在{6}就{3}進行的談判以失敗告終。	{2}年{1}，{4}与{5}在{6}就{3}进行的谈判以失败告终。		自動產生（scripts/gen_events.py）：14.tsv {%1} between {2} and {3} at {4} concluded in failure.
 In a time before time, {%1} between {2} and {3} at {4} concluded in failure.	太古之時，{2}與{3}在{4}就{1}進行的談判以失敗告終。	太古之时，{2}与{3}在{4}就{1}进行的谈判以失败告终。		自動產生（scripts/gen_events.py）：14.tsv {%1} between {2} and {3} at {4} concluded in failure.
@@ -8556,18 +8770,18 @@ In a time before time, {%1} between {2} and {3} at {4} concluded in an unsatisfa
 In {#1}, {%2} between {3} and {4} at {5} concluded.	{1}年，{3}與{4}在{5}就{2}進行的談判結束了。	{1}年，{3}与{4}在{5}就{2}进行的谈判结束了。		自動產生（scripts/gen_events.py）：14.tsv {%1} between {2} and {3} at {4} concluded.
 In the {@1} of {#2}, {%3} between {4} and {5} at {6} concluded.	{2}年{1}，{4}與{5}在{6}就{3}進行的談判結束了。	{2}年{1}，{4}与{5}在{6}就{3}进行的谈判结束了。		自動產生（scripts/gen_events.py）：14.tsv {%1} between {2} and {3} at {4} concluded.
 In a time before time, {%1} between {2} and {3} at {4} concluded.	太古之時，{2}與{3}在{4}就{1}進行的談判結束了。	太古之时，{2}与{3}在{4}就{1}进行的谈判结束了。		自動產生（scripts/gen_events.py）：14.tsv {%1} between {2} and {3} at {4} concluded.
-In {#1}, {%2} between {3} and {4} concluded fairly.	{1}年，{3}與{4}就{2}進行的談判公平收場。	{1}年，{3}与{4}就{2}进行的谈判公平收场。		自動產生（scripts/gen_events.py）：14.tsv {%1} between {2} and {3} concluded fairly.
-In the {@1} of {#2}, {%3} between {4} and {5} concluded fairly.	{2}年{1}，{4}與{5}就{3}進行的談判公平收場。	{2}年{1}，{4}与{5}就{3}进行的谈判公平收场。		自動產生（scripts/gen_events.py）：14.tsv {%1} between {2} and {3} concluded fairly.
-In a time before time, {%1} between {2} and {3} concluded fairly.	太古之時，{2}與{3}就{1}進行的談判公平收場。	太古之时，{2}与{3}就{1}进行的谈判公平收场。		自動產生（scripts/gen_events.py）：14.tsv {%1} between {2} and {3} concluded fairly.
+In {#1}, {%2} between {3} and {4} concluded fairly.	{1}年，{3}與{4}就{2}進行的談判結果尚可。	{1}年，{3}与{4}就{2}进行的谈判结果尚可。		自動產生（scripts/gen_events.py）：14.tsv {%1} between {2} and {3} concluded fairly.
+In the {@1} of {#2}, {%3} between {4} and {5} concluded fairly.	{2}年{1}，{4}與{5}就{3}進行的談判結果尚可。	{2}年{1}，{4}与{5}就{3}进行的谈判结果尚可。		自動產生（scripts/gen_events.py）：14.tsv {%1} between {2} and {3} concluded fairly.
+In a time before time, {%1} between {2} and {3} concluded fairly.	太古之時，{2}與{3}就{1}進行的談判結果尚可。	太古之时，{2}与{3}就{1}进行的谈判结果尚可。		自動產生（scripts/gen_events.py）：14.tsv {%1} between {2} and {3} concluded fairly.
 In {#1}, {%2} between {3} and {4} concluded with a positive outcome.	{1}年，{3}與{4}就{2}進行的談判取得了正面成果。	{1}年，{3}与{4}就{2}进行的谈判取得了积极成果。		自動產生（scripts/gen_events.py）：14.tsv {%1} between {2} and {3} concluded with a positive outcome.
 In the {@1} of {#2}, {%3} between {4} and {5} concluded with a positive outcome.	{2}年{1}，{4}與{5}就{3}進行的談判取得了正面成果。	{2}年{1}，{4}与{5}就{3}进行的谈判取得了积极成果。		自動產生（scripts/gen_events.py）：14.tsv {%1} between {2} and {3} concluded with a positive outcome.
 In a time before time, {%1} between {2} and {3} concluded with a positive outcome.	太古之時，{2}與{3}就{1}進行的談判取得了正面成果。	太古之时，{2}与{3}就{1}进行的谈判取得了积极成果。		自動產生（scripts/gen_events.py）：14.tsv {%1} between {2} and {3} concluded with a positive outcome.
 In {#1}, {%2} between {3} and {4} concluded, cementing bonds of mutual trust.	{1}年，{3}與{4}就{2}進行的談判圓滿成功，鞏固了彼此的互信。	{1}年，{3}与{4}就{2}进行的谈判圆满成功，巩固了彼此的互信。		自動產生（scripts/gen_events.py）：14.tsv {%1} between {2} and {3} concluded, cementing bonds of mutual trust.
 In the {@1} of {#2}, {%3} between {4} and {5} concluded, cementing bonds of mutual trust.	{2}年{1}，{4}與{5}就{3}進行的談判圓滿成功，鞏固了彼此的互信。	{2}年{1}，{4}与{5}就{3}进行的谈判圆满成功，巩固了彼此的互信。		自動產生（scripts/gen_events.py）：14.tsv {%1} between {2} and {3} concluded, cementing bonds of mutual trust.
 In a time before time, {%1} between {2} and {3} concluded, cementing bonds of mutual trust.	太古之時，{2}與{3}就{1}進行的談判圓滿成功，鞏固了彼此的互信。	太古之时，{2}与{3}就{1}进行的谈判圆满成功，巩固了彼此的互信。		自動產生（scripts/gen_events.py）：14.tsv {%1} between {2} and {3} concluded, cementing bonds of mutual trust.
-In {#1}, {%2} between {3} and {4} concluded with miserable outcome.	{1}年，{3}與{4}就{2}進行的談判以慘敗告終。	{1}年，{3}与{4}就{2}进行的谈判以惨败告终。		自動產生（scripts/gen_events.py）：14.tsv {%1} between {2} and {3} concluded with miserable outcome.
-In the {@1} of {#2}, {%3} between {4} and {5} concluded with miserable outcome.	{2}年{1}，{4}與{5}就{3}進行的談判以慘敗告終。	{2}年{1}，{4}与{5}就{3}进行的谈判以惨败告终。		自動產生（scripts/gen_events.py）：14.tsv {%1} between {2} and {3} concluded with miserable outcome.
-In a time before time, {%1} between {2} and {3} concluded with miserable outcome.	太古之時，{2}與{3}就{1}進行的談判以慘敗告終。	太古之时，{2}与{3}就{1}进行的谈判以惨败告终。		自動產生（scripts/gen_events.py）：14.tsv {%1} between {2} and {3} concluded with miserable outcome.
+In {#1}, {%2} between {3} and {4} concluded with miserable outcome.	{1}年，{3}與{4}就{2}進行的談判結果慘澹。	{1}年，{3}与{4}就{2}进行的谈判结果惨淡。		自動產生（scripts/gen_events.py）：14.tsv {%1} between {2} and {3} concluded with miserable outcome.
+In the {@1} of {#2}, {%3} between {4} and {5} concluded with miserable outcome.	{2}年{1}，{4}與{5}就{3}進行的談判結果慘澹。	{2}年{1}，{4}与{5}就{3}进行的谈判结果惨淡。		自動產生（scripts/gen_events.py）：14.tsv {%1} between {2} and {3} concluded with miserable outcome.
+In a time before time, {%1} between {2} and {3} concluded with miserable outcome.	太古之時，{2}與{3}就{1}進行的談判結果慘澹。	太古之时，{2}与{3}就{1}进行的谈判结果惨淡。		自動產生（scripts/gen_events.py）：14.tsv {%1} between {2} and {3} concluded with miserable outcome.
 In {#1}, {%2} between {3} and {4} concluded in failure.	{1}年，{3}與{4}就{2}進行的談判以失敗告終。	{1}年，{3}与{4}就{2}进行的谈判以失败告终。		自動產生（scripts/gen_events.py）：14.tsv {%1} between {2} and {3} concluded in failure.
 In the {@1} of {#2}, {%3} between {4} and {5} concluded in failure.	{2}年{1}，{4}與{5}就{3}進行的談判以失敗告終。	{2}年{1}，{4}与{5}就{3}进行的谈判以失败告终。		自動產生（scripts/gen_events.py）：14.tsv {%1} between {2} and {3} concluded in failure.
 In a time before time, {%1} between {2} and {3} concluded in failure.	太古之時，{2}與{3}就{1}進行的談判以失敗告終。	太古之时，{2}与{3}就{1}进行的谈判以失败告终。		自動產生（scripts/gen_events.py）：14.tsv {%1} between {2} and {3} concluded in failure.
@@ -8583,6 +8797,30 @@ In a time before time, {%1} proposed by {2} was rejected by {3} at {4}.	太古�
 In {#1}, {%2} proposed by {3} was rejected by {4}.	{1}年，{3}提議的{2}遭到{4}拒絕。	{1}年，{3}提议的{2}遭到{4}拒绝。		自動產生（scripts/gen_events.py）：14.tsv {%1} proposed by {2} was rejected by {3}.
 In the {@1} of {#2}, {%3} proposed by {4} was rejected by {5}.	{2}年{1}，{4}提議的{3}遭到{5}拒絕。	{2}年{1}，{4}提议的{3}遭到{5}拒绝。		自動產生（scripts/gen_events.py）：14.tsv {%1} proposed by {2} was rejected by {3}.
 In a time before time, {%1} proposed by {2} was rejected by {3}.	太古之時，{2}提議的{1}遭到{3}拒絕。	太古之时，{2}提议的{1}遭到{3}拒绝。		自動產生（scripts/gen_events.py）：14.tsv {%1} proposed by {2} was rejected by {3}.
+In {#1}, {2} concluded an agreement to retrieve {3} for {4} with {5} and {6} {%7}.	{1}年，{2}結束了與{5}和{6}為{4}取回{3}的協議，{7}。	{1}年，{2}结束了与{5}和{6}为{4}取回{3}的协议，{7}。		自動產生（scripts/gen_events.py）：15.tsv {1} concluded an agreement to retrieve {2} for {3} with {4} and {5} {%6}.
+In the {@1} of {#2}, {3} concluded an agreement to retrieve {4} for {5} with {6} and {7} {%8}.	{2}年{1}，{3}結束了與{6}和{7}為{5}取回{4}的協議，{8}。	{2}年{1}，{3}结束了与{6}和{7}为{5}取回{4}的协议，{8}。		自動產生（scripts/gen_events.py）：15.tsv {1} concluded an agreement to retrieve {2} for {3} with {4} and {5} {%6}.
+In a time before time, {1} concluded an agreement to retrieve {2} for {3} with {4} and {5} {%6}.	太古之時，{1}結束了與{4}和{5}為{3}取回{2}的協議，{6}。	太古之时，{1}结束了与{4}和{5}为{3}取回{2}的协议，{6}。		自動產生（scripts/gen_events.py）：15.tsv {1} concluded an agreement to retrieve {2} for {3} with {4} and {5} {%6}.
+In {#1}, {2} concluded an agreement to retrieve {3} for {4} with {5} and {6}.	{1}年，{2}結束了與{5}和{6}為{4}取回{3}的協議。	{1}年，{2}结束了与{5}和{6}为{4}取回{3}的协议。		自動產生（scripts/gen_events.py）：15.tsv {1} concluded an agreement to retrieve {2} for {3} with {4} and {5}.
+In the {@1} of {#2}, {3} concluded an agreement to retrieve {4} for {5} with {6} and {7}.	{2}年{1}，{3}結束了與{6}和{7}為{5}取回{4}的協議。	{2}年{1}，{3}结束了与{6}和{7}为{5}取回{4}的协议。		自動產生（scripts/gen_events.py）：15.tsv {1} concluded an agreement to retrieve {2} for {3} with {4} and {5}.
+In a time before time, {1} concluded an agreement to retrieve {2} for {3} with {4} and {5}.	太古之時，{1}結束了與{4}和{5}為{3}取回{2}的協議。	太古之时，{1}结束了与{4}和{5}为{3}取回{2}的协议。		自動產生（scripts/gen_events.py）：15.tsv {1} concluded an agreement to retrieve {2} for {3} with {4} and {5}.
+In {#1}, {2} concluded an agreement to retrieve {3} for {4} with {5} {%6}.	{1}年，{2}結束了與{5}為{4}取回{3}的協議，{6}。	{1}年，{2}结束了与{5}为{4}取回{3}的协议，{6}。		自動產生（scripts/gen_events.py）：15.tsv {1} concluded an agreement to retrieve {2} for {3} with {4} {%5}.
+In the {@1} of {#2}, {3} concluded an agreement to retrieve {4} for {5} with {6} {%7}.	{2}年{1}，{3}結束了與{6}為{5}取回{4}的協議，{7}。	{2}年{1}，{3}结束了与{6}为{5}取回{4}的协议，{7}。		自動產生（scripts/gen_events.py）：15.tsv {1} concluded an agreement to retrieve {2} for {3} with {4} {%5}.
+In a time before time, {1} concluded an agreement to retrieve {2} for {3} with {4} {%5}.	太古之時，{1}結束了與{4}為{3}取回{2}的協議，{5}。	太古之时，{1}结束了与{4}为{3}取回{2}的协议，{5}。		自動產生（scripts/gen_events.py）：15.tsv {1} concluded an agreement to retrieve {2} for {3} with {4} {%5}.
+In {#1}, {2} concluded an agreement to retrieve {3} for {4} with {5}.	{1}年，{2}結束了與{5}為{4}取回{3}的協議。	{1}年，{2}结束了与{5}为{4}取回{3}的协议。		自動產生（scripts/gen_events.py）：15.tsv {1} concluded an agreement to retrieve {2} for {3} with {4}.
+In the {@1} of {#2}, {3} concluded an agreement to retrieve {4} for {5} with {6}.	{2}年{1}，{3}結束了與{6}為{5}取回{4}的協議。	{2}年{1}，{3}结束了与{6}为{5}取回{4}的协议。		自動產生（scripts/gen_events.py）：15.tsv {1} concluded an agreement to retrieve {2} for {3} with {4}.
+In a time before time, {1} concluded an agreement to retrieve {2} for {3} with {4}.	太古之時，{1}結束了與{4}為{3}取回{2}的協議。	太古之时，{1}结束了与{4}为{3}取回{2}的协议。		自動產生（scripts/gen_events.py）：15.tsv {1} concluded an agreement to retrieve {2} for {3} with {4}.
+In {#1}, {2} concluded an agreement to retrieve {3} with {4} and {5} {%6}.	{1}年，{2}結束了與{4}和{5}取回{3}的協議，{6}。	{1}年，{2}结束了与{4}和{5}取回{3}的协议，{6}。		自動產生（scripts/gen_events.py）：15.tsv {1} concluded an agreement to retrieve {2} with {3} and {4} {%5}.
+In the {@1} of {#2}, {3} concluded an agreement to retrieve {4} with {5} and {6} {%7}.	{2}年{1}，{3}結束了與{5}和{6}取回{4}的協議，{7}。	{2}年{1}，{3}结束了与{5}和{6}取回{4}的协议，{7}。		自動產生（scripts/gen_events.py）：15.tsv {1} concluded an agreement to retrieve {2} with {3} and {4} {%5}.
+In a time before time, {1} concluded an agreement to retrieve {2} with {3} and {4} {%5}.	太古之時，{1}結束了與{3}和{4}取回{2}的協議，{5}。	太古之时，{1}结束了与{3}和{4}取回{2}的协议，{5}。		自動產生（scripts/gen_events.py）：15.tsv {1} concluded an agreement to retrieve {2} with {3} and {4} {%5}.
+In {#1}, {2} concluded an agreement to retrieve {3} with {4} and {5}.	{1}年，{2}結束了與{4}和{5}取回{3}的協議。	{1}年，{2}结束了与{4}和{5}取回{3}的协议。		自動產生（scripts/gen_events.py）：15.tsv {1} concluded an agreement to retrieve {2} with {3} and {4}.
+In the {@1} of {#2}, {3} concluded an agreement to retrieve {4} with {5} and {6}.	{2}年{1}，{3}結束了與{5}和{6}取回{4}的協議。	{2}年{1}，{3}结束了与{5}和{6}取回{4}的协议。		自動產生（scripts/gen_events.py）：15.tsv {1} concluded an agreement to retrieve {2} with {3} and {4}.
+In a time before time, {1} concluded an agreement to retrieve {2} with {3} and {4}.	太古之時，{1}結束了與{3}和{4}取回{2}的協議。	太古之时，{1}结束了与{3}和{4}取回{2}的协议。		自動產生（scripts/gen_events.py）：15.tsv {1} concluded an agreement to retrieve {2} with {3} and {4}.
+In {#1}, {2} concluded an agreement to retrieve {3} with {4} {%5}.	{1}年，{2}結束了與{4}取回{3}的協議，{5}。	{1}年，{2}结束了与{4}取回{3}的协议，{5}。		自動產生（scripts/gen_events.py）：15.tsv {1} concluded an agreement to retrieve {2} with {3} {%4}.
+In the {@1} of {#2}, {3} concluded an agreement to retrieve {4} with {5} {%6}.	{2}年{1}，{3}結束了與{5}取回{4}的協議，{6}。	{2}年{1}，{3}结束了与{5}取回{4}的协议，{6}。		自動產生（scripts/gen_events.py）：15.tsv {1} concluded an agreement to retrieve {2} with {3} {%4}.
+In a time before time, {1} concluded an agreement to retrieve {2} with {3} {%4}.	太古之時，{1}結束了與{3}取回{2}的協議，{4}。	太古之时，{1}结束了与{3}取回{2}的协议，{4}。		自動產生（scripts/gen_events.py）：15.tsv {1} concluded an agreement to retrieve {2} with {3} {%4}.
+In {#1}, {2} concluded an agreement to retrieve {3} with {4}.	{1}年，{2}結束了與{4}取回{3}的協議。	{1}年，{2}结束了与{4}取回{3}的协议。		自動產生（scripts/gen_events.py）：15.tsv {1} concluded an agreement to retrieve {2} with {3}.
+In the {@1} of {#2}, {3} concluded an agreement to retrieve {4} with {5}.	{2}年{1}，{3}結束了與{5}取回{4}的協議。	{2}年{1}，{3}结束了与{5}取回{4}的协议。		自動產生（scripts/gen_events.py）：15.tsv {1} concluded an agreement to retrieve {2} with {3}.
+In a time before time, {1} concluded an agreement to retrieve {2} with {3}.	太古之時，{1}結束了與{3}取回{2}的協議。	太古之时，{1}结束了与{3}取回{2}的协议。		自動產生（scripts/gen_events.py）：15.tsv {1} concluded an agreement to retrieve {2} with {3}.
 In {#1}, {2} concluded {%3} with {4} and {5} {%6}.	{1}年，{2}結束了與{4}和{5}的{3}，{6}。	{1}年，{2}结束了与{4}和{5}的{3}，{6}。		自動產生（scripts/gen_events.py）：15.tsv {1} concluded {%2} with {3} and {4} {%5}.
 In the {@1} of {#2}, {3} concluded {%4} with {5} and {6} {%7}.	{2}年{1}，{3}結束了與{5}和{6}的{4}，{7}。	{2}年{1}，{3}结束了与{5}和{6}的{4}，{7}。		自動產生（scripts/gen_events.py）：15.tsv {1} concluded {%2} with {3} and {4} {%5}.
 In a time before time, {1} concluded {%2} with {3} and {4} {%5}.	太古之時，{1}結束了與{3}和{4}的{2}，{5}。	太古之时，{1}结束了与{3}和{4}的{2}，{5}。		自動產生（scripts/gen_events.py）：15.tsv {1} concluded {%2} with {3} and {4} {%5}.
