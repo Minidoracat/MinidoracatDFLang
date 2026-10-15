@@ -1,0 +1,5 @@
+en	zh-Hant	zh-Hans	align	row	note
+dist	距離	距离			DFHack hack/lua/plugins/zone.lua L180 動物指派視窗（ZScreen zone/assign）清單欄位標題兼排序按鈕；通用小寫單字只在此視窗套用
+disposition	馴養狀態	驯养状态			DFHack hack/lua/plugins/zone.lua L182 動物指派視窗（ZScreen zone/assign）清單欄位標題兼排序按鈕；通用小寫單字只在此視窗套用
+gender	性別	性别			DFHack hack/lua/plugins/zone.lua L184 動物指派視窗（ZScreen zone/assign）清單欄位標題兼排序按鈕；通用小寫單字只在此視窗套用
+race	種族	种族			DFHack hack/lua/plugins/zone.lua L188 動物指派視窗（ZScreen zone/assign）清單欄位標題兼排序按鈕；通用小寫單字只在此視窗套用

@@ -179,6 +179,96 @@ local function load_mascot(engine, dir)
     return {handles = dfhack.textures.loadTileset(png, w, h, true), cols = cols}
 end
 
+-- 玩家在 DFHack 輸入框打的字（搜尋框、gm-editor 的欄位、gui/journal）照原樣畫：畫輸入框內容與切行時為 true，不查字典（見 install_typing）
+local typing = false
+
+-- 回傳貼字圖的函式：把 engine.dh_translate 查到的字圖貼在 (x, y)；DFHack 在頂層開著時只寫頂層，字圖跟著貼頂層
+local function stamper(engine)
+    local gps = df.global.gps
+    local _, gps_addr = df.sizeof(gps)
+    return function(x, y) engine.dh_stamp(gps_addr, x, y, gps.top_in_use and 1 or 0) end
+end
+
+local function install_paint_string(engine, stamp)
+    local screen = dfhack.screen
+    if screen.dflang_paint_string then return end -- 只包一層
+    local orig = screen.paintString
+    screen.dflang_paint_string = orig
+    screen.paintString = function(pen, x, y, text, map)
+        if typing or map or type(text) ~= 'string' then return orig(pen, x, y, text, map) end
+        local shadow = engine.dh_translate(text, y)
+        if not shadow then return orig(pen, x, y, text, map) end
+        local ok = orig(pen, x, y, shadow, map)
+        stamp(x, y)
+        return ok
+    end
+end
+
+-- 圖形模式的分頁標籤一格一字畫兩列（上下各半格），不經 paintString：標籤有譯文時上列畫影子字串、下列留白，
+-- 字圖貼在上列（和遊戲的分頁標籤一樣，中文比英文高半格）。函式不在就略過，分頁照英文
+local function install_tab(engine, stamp)
+    local ok, TabBar = pcall(require, 'gui.widgets.tab_bar')
+    local Tab = ok and type(TabBar) == 'table' and TabBar.Tab
+    if type(Tab) ~= 'table' or type(Tab.onRenderBody) ~= 'function' or Tab.dflang_render then return end
+    local orig = Tab.onRenderBody
+    Tab.dflang_render = orig
+    Tab.onRenderBody = function(self, dc)
+        local shadow = dfhack.screen.inGraphicsMode() and type(self.label) == 'string' and engine.dh_translate(self.label, -1)
+        if not shadow or #shadow ~= #self.label then return orig(self, dc) end
+        -- 標籤整個畫得出來才換（分頁列捲動時左右會被切掉一截，影子字串畫了字圖卻貼不上），否則照英文
+        dc:seek(2, 0)
+        local x, y = dc.x, dc.y
+        if y < dc.clip_y1 or y > dc.clip_y2 or x < dc.clip_x1 or x + #shadow - 1 > dc.clip_x2 then return orig(self, dc) end
+        local pens = self.get_pens()
+        dc:seek(0, 0)
+        dc:char(nil, pens.lt):char(nil, pens.lt2)
+        for i = 1, #shadow do dc:char(shadow:sub(i, i), pens.t) end
+        dc:char(nil, pens.rt2):char(nil, pens.rt)
+        dc:seek(0, 1)
+        dc:char(nil, pens.lb):char(nil, pens.lb2)
+        for _ = 1, #shadow do dc:char(' ', pens.b) end
+        dc:char(nil, pens.rb2):char(nil, pens.rb)
+        stamp(x, y)
+    end
+end
+
+-- DFHack 的說明段落（WrappedLabel、確認對話框…）在 Lua 先用 string:wrap 切成英文行再一行行畫：原函式切完後把整段與英文行交給引擎，
+-- 整段有譯文就依中文規則以同樣寬度重新換行，登記每一行要畫的中文（見 engine/src/hooks.rs 的 dfhack_wrap）。函式不在就略過，這些段落照英文
+local function install_wrap(engine)
+    local orig = string.wrap
+    if type(orig) ~= 'function' or string.dflang_wrap then return end
+    string.dflang_wrap = orig
+    string.wrap = function(self, width, opts)
+        local out = orig(self, width, opts)
+        if typing then return out end
+        local lines = out
+        if type(out) == 'string' then
+            lines = {}
+            for line in (out .. '\n'):gmatch('([^\n]*)\n') do lines[#lines + 1] = line end
+        end
+        if type(lines) == 'table' and #lines > 0 and self:find('%a') then engine.dh_wrap(self, width or 72, lines) end
+        return out
+    end
+end
+
+-- 輸入框（EditField 也是 TextArea）畫內容、依框寬切行的時候把 typing 設成 true：玩家打的字照原樣，也不拿去查字典登記段落。
+-- 函式不在就略過
+local function install_typing()
+    for _, spec in ipairs{{'gui.widgets.text_area.text_area_content', 'onRenderBody'}, {'gui.widgets.text_area.wrapped_text', 'update'}} do
+        local ok, class = pcall(require, spec[1])
+        local name = spec[2]
+        local fn = ok and type(class) == 'table' and class[name]
+        if type(fn) == 'function' and not class['dflang_' .. name] then
+            class['dflang_' .. name] = fn
+            class[name] = function(...)
+                local was = typing
+                typing = true
+                return dfhack.with_finalize(function() typing = was end, fn, ...)
+            end
+        end
+    end
+end
+
 local function start()
     if dfhack.BASE_G.DFLANG then return end
     if chosen_lang() ~= LANG then
@@ -274,6 +364,13 @@ local function start()
     end
     ok, err = engine.enable()
     if not ok then return fail('%s', err) end
+    -- DFHack 自己的視窗（overlay、gui/ 腳本）不經遊戲的畫字函式：包住 dfhack.screen.paintString，有譯文就畫影子字串
+    -- （格數照英文，版面、點擊不變）再貼字圖。引擎啟用時就裝，趕在腳本把它存成區域變數之前（gui/load-screen.lua）
+    local stamp = stamper(engine)
+    install_paint_string(engine, stamp)
+    install_wrap(engine)
+    install_tab(engine, stamp)
+    install_typing()
     -- 依畫面套用的譯文要知道現在在哪個畫面：每幀把 DFHack 的焦點字串告訴引擎（'frames' 計時器在世界卸載後也繼續）
     if screens > 0 then
         local function track_focus()

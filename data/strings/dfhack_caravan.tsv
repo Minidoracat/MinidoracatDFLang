@@ -1,0 +1,123 @@
+en	zh-Hant	zh-Hans	align	note
+Min condition:	最差狀態：	最差状态：		DFHack hack/scripts/internal/caravan/common.lua L116 篩選滑桿標籤（物品磨損）
+Max condition:	最佳狀態：	最佳状态：		DFHack hack/scripts/internal/caravan/common.lua L137 篩選滑桿標籤（物品磨損）
+XXTatteredXX	XX破爛XX	XX破烂XX		DFHack hack/scripts/internal/caravan/common.lua L121 磨損篩選選項（遊戲以 XX 標破爛）（另見 common.lua L142）
+XFrayedX	X磨破X	X磨破X		DFHack hack/scripts/internal/caravan/common.lua L122 磨損篩選選項（另見 common.lua L143）
+xWornx	x磨舊x	x磨旧x		DFHack hack/scripts/internal/caravan/common.lua L123 磨損篩選選項（另見 common.lua L144）
+Pristine	完好	完好		DFHack hack/scripts/internal/caravan/common.lua L124 磨損篩選選項（無磨損）（另見 common.lua L145）
+Min quality:	最低品質：	最低品质：		DFHack hack/scripts/internal/caravan/common.lua L175 品質篩選標籤；buildingplan filterselection.lua 也用這條（另見 pedestal.lua L214）
+Max quality:	最高品質：	最高品质：		DFHack hack/scripts/internal/caravan/common.lua L199 品質篩選標籤；buildingplan filterselection.lua 也用這條（另見 pedestal.lua L239）
++Fine Crafted+	+精良+	+精良+		DFHack hack/scripts/internal/caravan/common.lua L182 品質選項（原文 Fine 少了 ly，外框規則查不到，整條寫）（另見 common.lua L206）
+Superior	上等	上等		DFHack hack/scripts/internal/caravan/common.lua L183 品質選項單字；*{1}* 外框與 buildingplan 共用；譯名照 names.tsv 外框註記（另見 common.lua L207、pedestal.lua L222）
+Exceptional	卓越	卓越		DFHack hack/scripts/internal/caravan/common.lua L184 品質選項單字（≡{1}≡ 外框裡查）；與 buildingplan 共用（另見 common.lua L208、pedestal.lua L223）
+Masterful	大師級	大师级		DFHack hack/scripts/internal/caravan/common.lua L185 品質選項單字（☼{1}☼ 外框裡查）；與 buildingplan 共用（另見 common.lua L209、pedestal.lua L224）
+Min value:	最低價值：	最低价值：		DFHack hack/scripts/internal/caravan/common.lua L240 價值篩選標籤
+Max value:	最高價值：	最高价值：		DFHack hack/scripts/internal/caravan/common.lua L265 價值篩選標籤
+Animals, Trees	動物、樹木	动物、树木		DFHack hack/scripts/internal/caravan/common.lua L441 商人道德禁忌清單（table.concat 拼成一段）
+Price agreement for exported items	出口物品議定價格	出口物品议定价格	c	DFHack hack/scripts/internal/caravan/common.lua L430 出口協定詳情對話框標題
+Item origins:	物品來源：	物品来源：		DFHack hack/scripts/internal/caravan/common.lua L495 篩選標籤
+Fort-made only	僅限要塞製造	仅限要塞制造		DFHack hack/scripts/internal/caravan/common.lua L498 物品來源選項
+Foreign-made only	僅限外地製造	仅限外地制造		DFHack hack/scripts/internal/caravan/common.lua L499 物品來源選項
+Merchant export agreements:	商人出口協定：	商人出口协定：		DFHack hack/scripts/internal/caravan/common.lua L509 後接 None 或 [details]
+[details]	[詳情]	[详情]		DFHack hack/scripts/internal/caravan/common.lua L516 按鍵提示說明文字
+Show only requested items:	只顯示對方要求的物品：	只显示对方要求的物品：		DFHack hack/scripts/internal/caravan/common.lua L524 切換標籤
+Merchant ethical restrictions:	商人的道德禁忌：	商人的道德禁忌：		DFHack hack/scripts/internal/caravan/common.lua L542 下一列為 None／Animals／Trees
+Show only ethically acceptable items	只顯示合乎對方道德的物品	只显示合乎对方道德的物品		DFHack hack/scripts/internal/caravan/common.lua L551 道德篩選選項
+Ignore ethical restrictions	忽略道德禁忌	忽略道德禁忌		DFHack hack/scripts/internal/caravan/common.lua L552 道德篩選選項
+Show only ethically unacceptable items	只顯示違反對方道德的物品	只显示违反对方道德的物品		DFHack hack/scripts/internal/caravan/common.lua L553 道德篩選選項
+Include mixed bins	包含混裝的貨箱	包含混装的货箱		DFHack hack/scripts/internal/caravan/common.lua L565 貨箱篩選選項
+Exclude mixed bins	排除混裝的貨箱	排除混装的货箱		DFHack hack/scripts/internal/caravan/common.lua L566 貨箱篩選選項
+Items banned by export mandates:	出口禁令禁止的物品：	出口禁令禁止的物品：		DFHack hack/scripts/internal/caravan/common.lua L584 下一列為物品類別清單（遊戲資料）
+Additional items at risk of mandates:	其他可能觸犯命令的物品：	其他可能触犯命令的物品：		DFHack hack/scripts/internal/caravan/common.lua L586 貴族喜好、可能被下令禁止出口的物品
+Hide banned and risky items	隱藏禁止與有風險的物品	隐藏禁止和有风险的物品		DFHack hack/scripts/internal/caravan/common.lua L595 命令篩選選項
+Hide banned items	隱藏禁止的物品	隐藏禁止的物品		DFHack hack/scripts/internal/caravan/common.lua L596 命令篩選選項
+Ignore mandate restrictions	忽略命令限制	忽略命令限制		DFHack hack/scripts/internal/caravan/common.lua L597 命令篩選選項
+Assigned here	已指派到此處	已指派到此处		DFHack hack/scripts/internal/caravan/pedestal.lua L13 展示清單狀態欄
+Assigned elsewhere	已指派到別處	已指派到别处		DFHack hack/scripts/internal/caravan/pedestal.lua L14 展示清單狀態欄
+Assign items for display	指派展示物品	指派展示物品	c	DFHack hack/scripts/internal/caravan/pedestal.lua L38 視窗標題
+Grand Guildhall	宏偉公會大廳	宏伟公会大厅		DFHack hack/scripts/internal/caravan/pedestal.lua L159 預計場所等級
+Temple Complex	神殿建築群	神殿建筑群		DFHack hack/scripts/internal/caravan/pedestal.lua L165 預計場所等級
+Meeting Hall	集會廳	集会厅		DFHack hack/scripts/internal/caravan/pedestal.lua L170 預計場所等級（未達神殿／公會大廳門檻）
+Hide unreachable items:	隱藏無法抵達的物品：	隐藏无法到达的物品：		DFHack hack/scripts/internal/caravan/pedestal.lua L278 切換標籤
+Hide forbidden items:	隱藏禁用的物品：	隐藏禁用的物品：		DFHack hack/scripts/internal/caravan/pedestal.lua L293 切換標籤（另見 movegoods.lua L196）
+Hide written items:	隱藏書寫作品：	隐藏书写作品：		DFHack hack/scripts/internal/caravan/pedestal.lua L309 切換標籤（書本、卷軸）
+Total value of assigned items:	已指派物品總價值：	已指派物品总价值：		DFHack hack/scripts/internal/caravan/pedestal.lua L373 後接價值數字
+Expected location tier:	預計場所等級：	预计场所等级：		DFHack hack/scripts/internal/caravan/pedestal.lua L382 後接 Temple／Guildhall 等
+See inside containers:	顯示容器內物品：	显示容器内物品：		DFHack hack/scripts/internal/caravan/pedestal.lua L398 切換標籤
+Click to assign/unassign. Shift click to assign/unassign a range.	點選即可指派／取消指派。按住 Shift 點選可指派／取消一整段範圍。	单击即可指派/取消指派。按住 Shift 单击可指派/取消一整段范围。		DFHack hack/scripts/internal/caravan/pedestal.lua L412 WrappedLabel 整段
+DFHack assign	DFHack 指派	DFHack 指派		DFHack hack/scripts/internal/caravan/pedestal.lua L730 展示家具建築面板的 overlay 按鈕
+Adds link to the display furniture building panel to launch the DFHack display assignment UI.	在展示家具的建築面板加上按鈕，開啟 DFHack 的展示指派介面。	在展示家具的建筑面板加上按钮，打开 DFHack 的展示指派界面。		DFHack hack/scripts/internal/caravan/pedestal.lua L714 overlay 說明（控制面板疊加介面分頁的說明框）
+Move goods to/from depot	搬運貨物進出貿易站	搬运货物进出贸易站	c	DFHack hack/scripts/internal/caravan/movegoods.lua L16 視窗標題
+Total value of items marked for trade:	標記交易的物品總價值：	标记交易的物品总价值：		DFHack hack/scripts/internal/caravan/movegoods.lua L281 後接價值數字
+Click to mark/unmark for trade. Shift click to mark/unmark a range of items.	點選即可標記／取消標記交易。按住 Shift 點選可標記／取消一整段物品。	单击即可标记/取消标记交易。按住 Shift 单击可标记/取消一整段物品。		DFHack hack/scripts/internal/caravan/movegoods.lua L289 單行 Label；trade.lua 也用（另見 trade.lua L262）
+Group items:	物品分組：	物品分组：		DFHack hack/scripts/internal/caravan/movegoods.lua L301 切換標籤
+Inside containers:	容器內物品：	容器内物品：		DFHack hack/scripts/internal/caravan/movegoods.lua L313 切換標籤
+DFHack move trade goods	DFHack 搬運貿易貨物	DFHack 搬运贸易货物		DFHack hack/scripts/internal/caravan/movegoods.lua L863 貿易站面板與指派貿易畫面的 overlay 按鈕（另見 movegoods.lua L909）
+Adds link to trade depot building to launch the DFHack trade goods UI.	在貿易站建築面板加上按鈕，開啟 DFHack 的貿易貨物介面。	在贸易站建筑面板加上按钮，打开 DFHack 的贸易货物界面。		DFHack hack/scripts/internal/caravan/movegoods.lua L850 overlay 說明（控制面板）
+Hides the vanilla trade goods selection button.	隱藏原版的貿易貨物選擇按鈕。	隐藏原版的贸易货物选择按钮。		DFHack hack/scripts/internal/caravan/movegoods.lua L876 overlay 說明（控制面板）
+Adds link to the trade goods screen to launch the DFHack trade goods UI.	在貿易貨物畫面加上按鈕，開啟 DFHack 的貿易貨物介面。	在贸易货物界面加上按钮，打开 DFHack 的贸易货物界面。		DFHack hack/scripts/internal/caravan/movegoods.lua L894 overlay 說明（控制面板）
+Select trade goods	選擇交易貨物	选择交易货物	c	DFHack hack/scripts/internal/caravan/trade.lua L28 視窗標題
+Bins:	貨箱:	货箱:		DFHack hack/scripts/internal/caravan/trade.lua L129 切換標籤（全形冒號放不下，用半形）
+Trade bin with contents	連同貨箱一起交易	连同货箱一起交易		DFHack hack/scripts/internal/caravan/trade.lua L132 貨箱選項
+Trade contents only	只交易箱內物品	只交易箱内物品		DFHack hack/scripts/internal/caravan/trade.lua L133 貨箱選項
+Caravan goods	商隊貨物	商队货物		DFHack hack/scripts/internal/caravan/trade.lua L141 分頁標籤（TabBar）
+Fort goods	要塞貨物	要塞货物		DFHack hack/scripts/internal/caravan/trade.lua L142 分頁標籤（TabBar）
+Show filters:	顯示篩選：	显示筛选：		DFHack hack/scripts/internal/caravan/trade.lua L156 切換標籤
+Shift+Click checkbox	Shift+點選核取方塊	Shift+单击复选框		DFHack hack/scripts/internal/caravan/trade.lua L704 交易畫面 overlay 說明（後接 :）
+select items inside bin	選取貨箱內的物品	选择货箱内的物品		DFHack hack/scripts/internal/caravan/trade.lua L706 交易畫面 overlay（原文開頭兩個空白，引擎照原文補）
+Ctrl+Click checkbox	Ctrl+點選核取方塊	Ctrl+单击复选框		DFHack hack/scripts/internal/caravan/trade.lua L712 交易畫面 overlay 說明（後接 :）
+collapse/expand bin	收合／展開貨箱	折叠/展开货箱		DFHack hack/scripts/internal/caravan/trade.lua L714 交易畫面 overlay（原文開頭兩個空白）
+collapse bins	收合貨箱	折叠货箱		DFHack hack/scripts/internal/caravan/trade.lua L719 交易畫面 overlay 按鍵提示
+collapse all	全部收合	全部折叠		DFHack hack/scripts/internal/caravan/trade.lua L725 交易畫面 overlay 按鍵提示
+: fast scroll	: 快速捲動	: 快速滚动		DFHack hack/scripts/internal/caravan/trade.lua L736 交易畫面 overlay，接在 Shift+Scroll 後（按鍵名不翻）
+DFHack trade UI	DFHack 貿易介面	DFHack 贸易界面		DFHack hack/scripts/internal/caravan/trade.lua L775 交易畫面 overlay 按鈕（另見 trade.lua L787）
+Ethical transgressions	觸犯禁忌的物品	触犯禁忌的物品	c	DFHack hack/scripts/internal/caravan/trade.lua L811 道德警告視窗標題
+Deselect items in trade list	在交易清單取消選取	在交易列表中取消选择		DFHack hack/scripts/internal/caravan/trade.lua L840 按鍵提示
+Ethics	道德	道德		DFHack hack/scripts/internal/caravan/trade.lua L979 道德警告標章第一列（Ethics／warning 用 NEWLINE 拆兩列；overlay 無焦點，只能寫單字）
+Adds convenience functions for working with bins to the trade screen.	在交易畫面加上處理貨箱的便利功能。	在交易界面加上处理货箱的便利功能。		DFHack hack/scripts/internal/caravan/trade.lua L690 overlay 說明（控制面板）
+Adds link to the trade screen to launch the DFHack trade UI.	在交易畫面加上按鈕，開啟 DFHack 的貿易介面。	在交易界面加上按钮，打开 DFHack 的贸易界面。		DFHack hack/scripts/internal/caravan/trade.lua L775 overlay 說明（控制面板）
+Adds warning to the trade screen when you are about to offend the elves.	在交易畫面加上警告，提醒你即將冒犯精靈。	在交易界面加上警告，提醒你即将冒犯精灵。		DFHack hack/scripts/internal/caravan/trade.lua L963 overlay 說明（控制面板）
+Select by value	依價值選取	按价值选择		DFHack hack/scripts/internal/caravan/tradeagreement.lua L95 貿易協定畫面 overlay 按鍵提示
+Select materials with base value	依基礎價值選擇材料	按基础价值选择材料	c	DFHack hack/scripts/internal/caravan/tradeagreement.lua L136 清單對話框標題
+Adds quick toggles for groups of trade agreement items.	在貿易協定畫面加上整組物品的快速切換。	在贸易协定界面加上整组物品的快速切换。		DFHack hack/scripts/internal/caravan/tradeagreement.lua L11 overlay 說明（控制面板）
+value	價值	价值	inner	DFHack hack/scripts/internal/caravan/pedestal.lua L190 排序欄名，給 {%1}▼／{%1}▲ 句型（dfhack_gui2.tsv）用；單獨畫出的在 screens（另見 pedestal.lua L344、movegoods.lua L169）
+dist	距離	距离	inner	DFHack hack/scripts/internal/caravan/movegoods.lua L167 排序欄名（距離），給排序箭頭句型用（另見 movegoods.lua L219）
+Cancel trade	取消交易	取消交易	c	DFHack hack/scripts/internal/confirm/specs.lua L107 確認對話框標題
+Mark all fortress goods	標記所有要塞貨物	标记所有要塞货物	c	DFHack hack/scripts/internal/confirm/specs.lua L116 確認對話框標題
+Unmark all fortress goods	取消標記所有要塞貨物	取消标记所有要塞货物	c	DFHack hack/scripts/internal/confirm/specs.lua L127 確認對話框標題
+Mark all merchant goods	標記所有商人貨物	标记所有商人货物	c	DFHack hack/scripts/internal/confirm/specs.lua L138 確認對話框標題（另見 specs.lua L149）
+Confirm trade	確認交易	确认交易	c	DFHack hack/scripts/internal/confirm/specs.lua L169 確認對話框標題
+Seize merchant goods	扣押商人貨物	扣押商人货物	c	DFHack hack/scripts/internal/confirm/specs.lua L180 確認對話框標題
+Offer fortress goods	贈送要塞貨物	赠送要塞货物	c	DFHack hack/scripts/internal/confirm/specs.lua L191 確認對話框標題
+Cancel trade agreement	取消貿易協定	取消贸易协定	c	DFHack hack/scripts/internal/confirm/specs.lua L202 確認對話框標題
+Delete hauling route	刪除搬運路線	删除搬运路线	c	DFHack hack/scripts/internal/confirm/specs.lua L211 確認對話框標題
+Delete hauling stop	刪除搬運停靠站	删除搬运停靠站	c	DFHack hack/scripts/internal/confirm/specs.lua L221 確認對話框標題
+Remove depot	拆除貿易站	拆除贸易站	c	DFHack hack/scripts/internal/confirm/specs.lua L231 確認對話框標題
+Delete uniform	刪除制服	删除制服	c	DFHack hack/scripts/internal/confirm/specs.lua L242 確認對話框標題
+Discard uniform changes	捨棄制服變更	放弃制服更改	c	DFHack hack/scripts/internal/confirm/specs.lua L316 確認對話框標題
+Confirm conviction	確認定罪	确认定罪	c	DFHack hack/scripts/internal/confirm/specs.lua L340 確認對話框標題
+Remove manger order	移除工作指令	移除工作订单	c	DFHack hack/scripts/internal/confirm/specs.lua L451 確認對話框標題（原文 manger 是 manager 的錯字）；術語例外：manager
+Remove zone	移除區域	移除区域	c	DFHack hack/scripts/internal/confirm/specs.lua L483 確認對話框標題
+Remove burrow	移除活動區	移除活动区	c	DFHack hack/scripts/internal/confirm/specs.lua L494 確認對話框標題
+Remove stockpile	移除倉儲區	移除储物区	c	DFHack hack/scripts/internal/confirm/specs.lua L507 確認對話框標題
+Re-run finder	重新搜尋地點	重新搜索地点	c	DFHack hack/scripts/internal/confirm/specs.lua L517 確認對話框標題
+Are you sure you want leave this screen? Selected items will not be saved.	確定要離開這個畫面嗎？選取的物品不會保留。	确定要离开这个界面吗？选中的物品不会保留。		DFHack hack/scripts/internal/confirm/specs.lua L108 確認訊息（confirm.lua L142 先 :wrap(45) 再畫，引擎攔 string.wrap 整段翻）
+Are you sure you want mark all fortress goods at the depot? Your current fortress goods selections will be lost.	確定要標記貿易站裡所有的要塞貨物嗎？目前選取的要塞貨物會被清除。	确定要标记贸易站里所有的要塞货物吗？当前选中的要塞货物会被清除。		DFHack hack/scripts/internal/confirm/specs.lua L117 確認訊息（confirm.lua L142 先 :wrap(45) 再畫，引擎攔 string.wrap 整段翻）
+Are you sure you want unmark all fortress goods at the depot? Your current fortress goods selections will be lost.	確定要取消標記貿易站裡所有的要塞貨物嗎？目前選取的要塞貨物會被清除。	确定要取消标记贸易站里所有的要塞货物吗？当前选中的要塞货物会被清除。		DFHack hack/scripts/internal/confirm/specs.lua L128 確認訊息（confirm.lua L142 先 :wrap(45) 再畫，引擎攔 string.wrap 整段翻）
+Are you sure you want mark all merchant goods at the depot? Your current merchant goods selections will be lost.	確定要標記貿易站裡所有的商人貨物嗎？目前選取的商人貨物會被清除。	确定要标记贸易站里所有的商人货物吗？当前选中的商人货物会被清除。		DFHack hack/scripts/internal/confirm/specs.lua L139 確認訊息（confirm.lua L142 先 :wrap(45) 再畫，引擎攔 string.wrap 整段翻）（另見 specs.lua L150）
+Are you sure you want to trade the selected goods?	確定要交易選取的貨物嗎？	确定要交易选中的货物吗？		DFHack hack/scripts/internal/confirm/specs.lua L170 確認訊息（confirm.lua L142 先 :wrap(45) 再畫，引擎攔 string.wrap 整段翻）
+You have items selected that will offend the merchants. Proceeding with this trade will anger them. You can click on the Ethics warning badge to see which items the merchants will find offensive.	你選取的物品會冒犯商人，繼續這筆交易會激怒他們。點選「道德警告」標章，可以查看商人會覺得哪些物品冒犯。	你选中的物品会冒犯商人，继续这笔交易会激怒他们。单击“道德警告”标记，可以查看商人会觉得哪些物品冒犯。		DFHack hack/scripts/internal/confirm/specs.lua L162 確認交易／贈送訊息第二段（get_ethics_message 以 NEWLINE 接在問句、空行之後；引擎在 換行 分段）
+Are you sure you want seize marked merchant goods? This will make the merchant unwilling to trade further and will damage relations with the merchant's civilization.	確定要扣押標記的商人貨物嗎？商人將不願再交易，你和商人所屬文明的關係也會受損。	确定要扣押标记的商人货物吗？商人将不愿再交易，你和商人所属文明的关系也会受损。		DFHack hack/scripts/internal/confirm/specs.lua L181 確認訊息（confirm.lua L142 先 :wrap(45) 再畫，引擎攔 string.wrap 整段翻）
+Are you sure you want to offer these goods? You will receive no payment.	確定要贈送這些貨物嗎？你不會得到任何報酬。	确定要赠送这些货物吗？你不会得到任何报酬。		DFHack hack/scripts/internal/confirm/specs.lua L192 確認訊息（confirm.lua L142 先 :wrap(45) 再畫，引擎攔 string.wrap 整段翻）
+Are you sure you want to leave this screen? The trade agreement selection will not be saved until you hit the "Done" button at the bottom of the screen.	確定要離開這個畫面嗎？要按下畫面底部的「完成」按鈕，貿易協定的選擇才會儲存。	确定要离开这个界面吗？要按下界面底部的“完成”按钮，贸易协定的选择才会保存。		DFHack hack/scripts/internal/confirm/specs.lua L203 確認訊息（confirm.lua L142 先 :wrap(45) 再畫，引擎攔 string.wrap 整段翻）
+Are you sure you want to delete this route?	確定要刪除這條路線嗎？	确定要删除这条路线吗？		DFHack hack/scripts/internal/confirm/specs.lua L212 確認訊息（confirm.lua L142 先 :wrap(45) 再畫，引擎攔 string.wrap 整段翻）
+Are you sure you want to delete this stop?	確定要刪除這個停靠站嗎？	确定要删除这个停靠站吗？		DFHack hack/scripts/internal/confirm/specs.lua L222 確認訊息（confirm.lua L142 先 :wrap(45) 再畫，引擎攔 string.wrap 整段翻）
+Are you sure you want to remove this depot? Merchants are present and will lose profits.	確定要拆除這個貿易站嗎？商人還在，他們會損失利潤。	确定要拆除这个贸易站吗？商人还在，他们会损失利润。		DFHack hack/scripts/internal/confirm/specs.lua L232 確認訊息（confirm.lua L142 先 :wrap(45) 再畫，引擎攔 string.wrap 整段翻）
+Are you sure you want to delete this uniform?	確定要刪除這套制服嗎？	确定要删除这套制服吗？		DFHack hack/scripts/internal/confirm/specs.lua L243 確認訊息（confirm.lua L142 先 :wrap(45) 再畫，引擎攔 string.wrap 整段翻）
+Are you sure you want to discard changes to this uniform?	確定要捨棄這套制服的變更嗎？	确定要放弃对这套制服的更改吗？		DFHack hack/scripts/internal/confirm/specs.lua L317 確認訊息（confirm.lua L142 先 :wrap(45) 再畫，引擎攔 string.wrap 整段翻）
+Are you sure you want to convict this creature? This action is irreversible.	確定要將這個生物定罪嗎？此動作無法復原。	确定要将这个生物定罪吗？此操作无法撤销。		DFHack hack/scripts/internal/confirm/specs.lua L342 確認訊息（名字取不到時的預設 this creature；有名字的用句型）
+Are you sure you want to remove this manager order?	確定要移除這項工作指令嗎？	确定要移除这项工作订单吗？		DFHack hack/scripts/internal/confirm/specs.lua L473 確認訊息第一段（後接兩個 換行 與工作指令名稱，名稱是遊戲資料）；manager order 是工作指令；術語例外：manager
+Are you sure you want to remove this zone?	確定要移除這個區域嗎？	确定要移除这个区域吗？		DFHack hack/scripts/internal/confirm/specs.lua L484 確認訊息（confirm.lua L142 先 :wrap(45) 再畫，引擎攔 string.wrap 整段翻）
+Are you sure you want to remove this burrow?	確定要移除這個活動區嗎？	确定要移除这个活动区吗？		DFHack hack/scripts/internal/confirm/specs.lua L495 確認訊息（confirm.lua L142 先 :wrap(45) 再畫，引擎攔 string.wrap 整段翻）
+Are you sure you want to remove this stockpile?	確定要移除這個倉儲區嗎？	确定要移除这个储物区吗？		DFHack hack/scripts/internal/confirm/specs.lua L508 確認訊息（confirm.lua L142 先 :wrap(45) 再畫，引擎攔 string.wrap 整段翻）
+Are you sure you want to re-run the site finder? Your current map highlights will be lost.	確定要重新執行地點搜尋嗎？目前地圖上的標示會消失。	确定要重新运行地点搜索吗？当前地图上的高亮会消失。		DFHack hack/scripts/internal/confirm/specs.lua L518 確認訊息（confirm.lua L142 先 :wrap(45) 再畫，引擎攔 string.wrap 整段翻）

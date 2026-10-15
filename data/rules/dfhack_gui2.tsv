@@ -1,0 +1,50 @@
+en	zh-Hant	zh-Hans	align	note
+{@1}▼	{1}▼	{1}▼		DFHack hack/scripts/gui/autobutcher.lua L164 排序標籤後接 CH_DN（string.char(31)）表示遞減；DFHack 各視窗共用
+{@1}▲	{1}▲	{1}▲		DFHack hack/scripts/gui/autobutcher.lua L165 排序標籤後接 CH_UP（string.char(30)）表示遞增；DFHack 各視窗共用
+Race: {1}	種族：{1}	种族：{1}	c	DFHack hack/scripts/gui/autobutcher.lua L621 輸入框標題，{1} 是種族名（或 ALL RACES PLUS NEW）
+Enter desired target for {%1}:	輸入{1}的目標數：	输入{1}的目标数：		DFHack hack/scripts/gui/autobutcher.lua L622 輸入框說明，{1} 是 female kids 等
+Set whole row for {1}	設定整列：{1}	设置整行：{1}	c	DFHack hack/scripts/gui/autobutcher.lua L649 輸入框標題，{1} 是種族名
+Global: X{#1} Y{#2} Z{#3}	全域：X{1} Y{2} Z{3}	全局：X{1} Y{2} Z{3}		DFHack hack/scripts/gui/adv-finder.lua L515 尋找器：世界座標
+Global: X{#1} Y{#2}	全域：X{1} Y{2}	全局：X{1} Y{2}		DFHack hack/scripts/gui/adv-finder.lua L515 尋找器：世界座標（無 Z）
+Local: X{#1} Y{#2} Z{#3}	本地：X{1} Y{2} Z{3}	本地：X{1} Y{2} Z{3}		DFHack hack/scripts/gui/adv-finder.lua L520 尋找器：本地座標
+Held by {1}	持有者：{1}	持有者：{1}		DFHack hack/scripts/gui/adv-finder.lua L614 尋找器：神器持有者，{1} 是人名（原文）
+Wilderness ({1})	荒野（{1}）	荒野（{1}）		DFHack hack/scripts/gui/adv-finder.lua L590 尋找器：所在荒野地區，{1} 是地區名
+{#1} minecarts available: one will be automatically assigned to the quantum route	有 {1} 輛礦車可用：會自動指派一輛給量子路線	有 {1} 辆矿车可用：会自动分配一辆给量子路线		DFHack hack/scripts/gui/quantum.lua L160 量子倉儲說明（WrappedLabel）
+{#1} minecarts available: one will be ordered via the manager for you to assign to the quantum route later	有 {1} 輛礦車可用：會透過經理下單製作一輛，之後由你指派給量子路線	有 {1} 辆矿车可用：会通过经理下单制作一辆，之后由你分配给量子路线		DFHack hack/scripts/gui/quantum.lua L160 量子倉儲說明（WrappedLabel，0 輛時）
+{#1} minecarts available: an additional one will be ordered for you to assign to the quantum route later	有 {1} 輛礦車可用：會另外下單製作一輛，之後由你指派給量子路線	有 {1} 辆矿车可用：会另外下单制作一辆，之后由你分配给量子路线		DFHack hack/scripts/gui/quantum.lua L169 量子倉儲說明（WrappedLabel）
+{#1} minecarts available: one will be ordered for you to assign to the quantum route later	有 {1} 輛礦車可用：會下單製作一輛，之後由你指派給量子路線	有 {1} 辆矿车可用：会下单制作一辆，之后由你分配给量子路线		DFHack hack/scripts/gui/quantum.lua L169 量子倉儲說明（WrappedLabel，0 輛時）
+{#1} minecarts available: please order and assign a minecart of your choice to the quantum route later	有 {1} 輛礦車可用：請之後自行下單製作並指派一輛礦車給量子路線	有 {1} 辆矿车可用：请之后自行下单制作并分配一辆矿车给量子路线		DFHack hack/scripts/gui/quantum.lua L176 量子倉儲說明（WrappedLabel，0 輛時）
+{#1} minecarts available: please assign a minecart of your choice to the quantum route later	有 {1} 輛礦車可用：請之後自行指派一輛礦車給量子路線	有 {1} 辆矿车可用：请之后自行分配一辆矿车给量子路线		DFHack hack/scripts/gui/quantum.lua L176 量子倉儲說明（WrappedLabel）
+An available minecart ({1}) was assigned to your new quantum stockpile. You're all done!	已將一輛可用的礦車（{1}）指派給新的量子倉儲區。全部完成！	已将一辆可用的矿车（{1}）分配给新的量子储物区。全部完成！		DFHack hack/scripts/gui/quantum.lua L294 完成訊息框（:wrap(70)），{1} 是礦車說明
+Catapult {1}	投石機 {1}	投石机 {1}		DFHack hack/scripts/gui/siegemanager.lua L311 攻城器械清單：種類＋名字（沒名字時是 Unnamed）；Thrower 指弩箭機
+Ballista {1}	弩砲 {1}	弩炮 {1}		DFHack hack/scripts/gui/siegemanager.lua L311 攻城器械清單：種類＋名字（沒名字時是 Unnamed）；Thrower 指弩箭機
+Thrower {1}	弩箭機 {1}	弩箭机 {1}		DFHack hack/scripts/gui/siegemanager.lua L311 攻城器械清單：種類＋名字（沒名字時是 Unnamed）；Thrower 指弩箭機
+Currently: {1}	目前：{1}	当前：{1}		DFHack hack/scripts/internal/gm-unit/editor_civilization.lua L139 gm-unit 文明編輯：目前文明（名稱、英文名、ID）
+: set to current civ ({#1})	: 設為目前文明（{1}）	: 设为当前文明（{1}）		DFHack hack/scripts/internal/gm-unit/editor_civilization.lua L150 gm-unit 文明編輯按鍵說明，{1} 是文明 ID
+<unnamed>:{#1}	<無名>:{1}	<无名>:{1}		DFHack hack/scripts/internal/gm-unit/editor_civilization.lua L50 文明清單：沒有名字的文明＋ID
+<unnamed> ({#1})	<無名> ({1})	<无名> ({1})		DFHack hack/scripts/internal/gm-unit/editor_civilization.lua L71 沒有名字的文明＋ID
+{@1} guildhall	{1}公會大廳	{1}公会大厅		DFHack hack/scripts/gui/sitemap.lua L42 搜尋：場所類型，{1} 是職業名
+Temple to {1}	{1}的神殿	{1}的神殿		DFHack hack/scripts/gui/sitemap.lua L51 搜尋：場所類型，{1} 是神明或宗教的英文名
+[{#1} zones]	[{1}個區域]	[{1}个区域]		DFHack hack/scripts/gui/sitemap.lua L78 搜尋：場所對應的區域數（原文前有空白）；寬度不足，數字後不空格
+Unknown {@1}	未知{1}	未知{1}		DFHack hack/scripts/gui/sitemap.lua L119 搜尋：沒有名字的勢力＋勢力類型
+Animal stockpile #{#1}	動物倉儲區 #{1}	动物储物区 #{1}		DFHack hack/scripts/gui/masspit.lua L76 沒有名字的動物倉儲區
+Unnamed pit/pond on elevation {#1}	高度 {1} 的無名坑／池塘	高度 {1} 的无名坑/池塘		DFHack hack/scripts/gui/masspit.lua L111 沒有名字的坑／池塘區域
+Select (or click on) a pond/pit zone to move {#1} caged creatures to.	選擇（或點選）要把 {1} 隻籠中生物移去的池塘／坑區域。	选择（或点击）要把 {1} 只笼中生物移去的池塘/坑区域。		DFHack hack/scripts/gui/masspit.lua L130 說明（WrappedLabel）
+Pitting {#1} units.	丟 {1} 隻入坑。	丢 {1} 只入坑。		DFHack hack/scripts/gui/masspit.lua L161 說明（WrappedLabel）
+{#1}: {2} (ALREADY ASSIGNED)	{1}: {2}（已指派）	{1}: {2}（已指派）		DFHack hack/scripts/gui/masspit.lua L178 已丟進坑的清單：ID、名字、已指派過
+Unnamed {%1} civilisation	無名的{1}文明	无名的{1}文明		DFHack hack/scripts/embark-anyone.lua L74 選擇出身文明清單：沒有名字的文明，{1} 是種族名
+Pop: {#1} Sites: {#2}	人口：{1} 據點：{2}	人口：{1} 据点：{2}		DFHack hack/scripts/embark-anyone.lua L86 選擇出身文明清單：人口與據點數
+Item {#1}: {#2} of {#3}	物品 {1}：{2}/{3}	物品 {1}：{2}/{3}		DFHack hack/scripts/gui/workshop-job.lua L179 工作坊工作詳情：第幾項原料、已有幾個／需要幾個
+Item {#1}: {#2} of {#3}(size {#4})	物品 {1}：{2}/{3}（大小 {4}）	物品 {1}：{2}/{3}（大小 {4}）		DFHack hack/scripts/gui/workshop-job.lua L181 同上，加最小尺寸
+any {%1}	任何{1}	任意{1}		DFHack hack/scripts/gui/workshop-job.lua L135 工作坊工作詳情：不限子類的物品類型
+Please select a new item type for input {#1}	請選擇第 {1} 項原料的新物品類型	请选择第 {1} 项原料的新物品类型		DFHack hack/scripts/gui/workshop-job.lua L247 選擇對話框提示
+Please select a new material for input {#1}	請選擇第 {1} 項原料的新材料	请选择第 {1} 项原料的新材料		DFHack hack/scripts/gui/workshop-job.lua L310 選擇對話框提示
+Invalid character at position {#1}: "{2}"	第 {1} 個位置的字元無效：「{2}」	第 {1} 个位置的字符无效：“{2}”		DFHack hack/scripts/gui/cp437-table.lua L113 錯誤訊息
+Line thickness: {#1}	線寬：{1}	线宽：{1}		DFHack hack/scripts/internal/design/shapes.lua L231 gui/design 形狀數值選項（%s: %d）
+Spacing: {#1}	間距：{1}	间距：{1}		DFHack hack/scripts/internal/design/shapes.lua L349 gui/design 形狀數值選項（%s: %d）
+Total points: {#1}	頂點數：{1}	顶点数：{1}		DFHack hack/scripts/internal/design/shapes.lua L702 gui/design 形狀數值選項（%s: %d）
+Next point offset: {#1}	下一點偏移：{1}	下一点偏移：{1}		DFHack hack/scripts/internal/design/shapes.lua L710 gui/design 形狀數值選項（%s: %d）
+Order: {1}	工單：{1}	订单：{1}		DFHack hack/lua/plugins/stockflow.lua L1256 stockflow overlay：倉儲區設定的工作（反應名稱照英文）
+Trigger: {%1}	觸發：{1}	触发：{1}		DFHack hack/lua/plugins/stockflow.lua L1271 stockflow overlay：觸發條件
+{%1} (Heard of)	{1}（聽說過）	{1}（听说过）	inner	DFHack hack/scripts/internal/advtools/convo.lua L82 冒險模式交談「Ask for the whereabouts of the 種族 名字 (Heard of)」：只聽說過的人物；接在 adv_talk 的 Ask for the whereabouts of {1} 佔位裡
+Invalid number of beds: {1}	床數無效：{1}	床数无效：{1}		DFHack hack/scripts/gui/extended-status.lua L43 錯誤訊息框

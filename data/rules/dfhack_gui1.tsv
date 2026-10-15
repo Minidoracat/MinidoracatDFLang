@@ -1,0 +1,20 @@
+en	zh-Hant	zh-Hans	align	note
+{#1} starving jobs	{1} 項工作缺人	{1} 项工作缺人		DFHack hack/scripts/gui/settings-manager.lua L725 工作分組 overlay 監看模式：缺人的工作數（複數）
+{#1} starving job	{1} 項工作缺人	{1} 项工作缺人		DFHack hack/scripts/gui/settings-manager.lua L725 同上（單數）
+This is not a number: {1}	這不是數字：{1}	这不是数字：{1}		DFHack hack/scripts/gui/seedwatch.lua L248 訊息框第一行，{1} 是玩家輸入的字
+Enter desired target for {1}:	輸入{1}的目標數量：	输入{1}的目标数量：		DFHack hack/scripts/gui/seedwatch.lua L261 輸入框說明，{1} 是種子名
+Click on a tile to spawn a {#1}/7 level of {%2}	點選格子以生成深度 {1}/7 的{2}	点击格子以生成深度 {1}/7 的{2}		DFHack hack/scripts/gui/liquids.lua L140 說明，{2} 是 Water／Magma／River
+ore of {%1}	{1}礦石	{1}矿石		DFHack hack/lua/gui/materials.lua L553 物品特性清單，{1} 是金屬名
+Draw boxes around units to select, or double click on a tile to teleport {#1} selected unit(s).	框選單位以選取，或連按兩下某一格，把選取的 {1} 個單位傳送過去。	框住单位来选择，或双击某一格，把选中的 {1} 个单位传送过去。		DFHack hack/scripts/gui/teleport.lua L250 說明（WrappedLabel，已選取單位時）
+{1} (citizen)	{1} (公民)	{1} (公民)		DFHack hack/scripts/gui/teleport.lua L205 已選取單位清單：單位名＋身分
+{1} (resident)	{1} (居民)	{1} (居民)		DFHack hack/scripts/gui/teleport.lua L206 已選取單位清單
+{1} (hostile)	{1} (敵對)	{1} (敌对)		DFHack hack/scripts/gui/teleport.lua L207 已選取單位清單
+{1} (merchant)	{1} (商人)	{1} (商人)		DFHack hack/scripts/gui/teleport.lua L209 已選取單位清單
+{1} (wild)	{1} (野生)	{1} (野生)		DFHack hack/scripts/gui/teleport.lua L213 已選取單位清單
+{1} (friendly)	{1} (友方)	{1} (友方)		DFHack hack/scripts/gui/teleport.lua L216 已選取單位清單
+{%1} - Select a modifier	{1} - 選擇特徵	{1} - 选择特征	c	DFHack hack/scripts/internal/gm-unit/editor_body.lua L254 視窗標題（置中，前後兩個空白由引擎照原文補），{1} 是身體部位名
+UI grid size: {#1} x {#2}	介面格數：{1} x {2}	界面格数：{1} x {2}		DFHack hack/scripts/devel/inspect-screen.lua L72
+Map grid size: {#1} x {#2}	地圖格數：{1} x {2}	地图格数：{1} x {2}		DFHack hack/scripts/devel/inspect-screen.lua L75
+UI grid coords: {#1}, {#2}	介面座標：{1}, {2}	界面坐标：{1}, {2}		DFHack hack/scripts/devel/inspect-screen.lua L85
+Map coords: {#1}, {#2}, {#3}	地圖座標：{1}, {2}, {3}	地图坐标：{1}, {2}, {3}		DFHack hack/scripts/devel/inspect-screen.lua L91
+{#1}y, {#2}m, {#3}d ago	{1}年{2}月{3}天前	{1}年{2}月{3}天前		DFHack hack/scripts/gui/petitions.lua L69 協議距今（原文 "%dy, %dm, %dd ago "）

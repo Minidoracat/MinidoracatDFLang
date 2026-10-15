@@ -172,3 +172,6 @@ You last heard this on the {#1}th {@2} in the year {#3}.	你最後一次聽說�
 You first heard this on the {#1}th {@2} in the year {#3} from {4}.	你最初聽說此事是在 {3} 年{2}{1}日，從{4}那裡。	你最初听说此事是在 {3} 年{2}{1}日，从{4}那里。		FUN_1400d8440 L133522-133657、L133722-133851 事件說明：何時、從誰聽說（整句一行時才整句畫出）
 You first heard this on the {#1}th {@2} in the year {#3}.	你最初聽說此事是在 {3} 年{2}{1}日。	你最初听说此事是在 {3} 年{2}{1}日。		FUN_1400d8440 同上（沒有消息來源）
 The destruction of{1}	{1}的毀滅	{1}的毁灭		FUN_1400d53a0 L132170 事件標題（原文 of 後面沒有空白）
+Order: Kill {1}	命令：殺死{1}	命令：杀死{1}		FUN_1400df540 協議標題：上級下的命令，後接對象；寫在 a 開頭的檔案，才不會被 DFHack stockflow 的 `Order: {1}`（工單）先命中
+Order: Drive off {1}	命令：驅逐{1}	命令：驱逐{1}		FUN_1400df540 協議標題：上級下的命令，後接對象；寫在 a 開頭的檔案，才不會被 DFHack stockflow 的 `Order: {1}`（工單）先命中
+Order: Cause trouble for {1}	命令：找{1}的麻煩	命令：找{1}的麻烦		FUN_1400df540 協議標題：上級下的命令，後接對象；寫在 a 開頭的檔案，才不會被 DFHack stockflow 的 `Order: {1}`（工單）先命中

@@ -1,0 +1,4 @@
+en	zh-Hant	zh-Hans	align	row	note
+Direction	方向	方向			DFHack hack/scripts/trackstop.lua L188 滾輪 overlay：方向
+Speed	速度	速度			DFHack hack/scripts/trackstop.lua L196 滾輪 overlay：速度
+Higher	更高	更高			DFHack hack/scripts/trackstop.lua L23 滾輪 overlay：速度選項

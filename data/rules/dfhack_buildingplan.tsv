@@ -1,0 +1,28 @@
+en	zh-Hant	zh-Hans	align	note
+{#1} Block	{1} 磚塊	{1} 砖块		DFHack hack/lua/plugins/buildingplan/planneroverlay.lua L443 物品列「數量 類別」單數；全域 Block 是格擋，names.tsv 的 {#1} {2} 會譯錯，這條要先比
+[{#1} mat. categories]	[{1} 類材料]	[{1} 类材料]	r	DFHack hack/lua/plugins/buildingplan/planneroverlay.lua L331 篩選摘要：選了多類材料
+[{@1}]	[{1}]	[{1}]		DFHack hack/lua/plugins/buildingplan/planneroverlay.lua L321/L329 篩選摘要：單一材料名或材料類別（首字大寫）
+└ {#1} available now	└ 現有 {1} 個可用	└ 现有 {1} 个可用		DFHack hack/lua/plugins/buildingplan/planneroverlay.lua L431 物品列第二行（└ 是 CP437 192）
+└ Will link next (need to make {#1})	└ 下一個取得（需再製作 {1} 個）	└ 下一个取得（需再制作 {1} 个）		DFHack hack/lua/plugins/buildingplan/planneroverlay.lua L434 物品不夠，排第一個等物品
+└ Will link later (need to make {#1})	└ 稍後取得（需再製作 {1} 個）	└ 稍后取得（需再制作 {1} 个）		DFHack hack/lua/plugins/buildingplan/planneroverlay.lua L437 物品不夠，排在其他規劃後面
+Last used ({%1})	上次使用（{1}）	上次使用（{1}）		DFHack hack/lua/plugins/buildingplan/planneroverlay.lua L889 選擇物品方式：上次用的物品（搜尋鍵，物品名去標點）或 pick manually
+Work order queued for {#1} Block.	已排入工作指令：{1} 磚塊。	已加入工作订单：{1} 砖块。		DFHack hack/lua/plugins/buildingplan/planneroverlay.lua L1199 公告；Block 寫死（全域是格擋）
+Work order queued for {#1} {%2}.	已排入工作指令：{1} {2}。	已加入工作订单：{1} {2}。		DFHack hack/lua/plugins/buildingplan/planneroverlay.lua L1199 公告；{2} 物品類別（get_desc）
+Position in line: {#1}	排隊順位：{1}	排队顺位：{1}		DFHack hack/lua/plugins/buildingplan/inspectoroverlay.lua L49；術語例外：Position
+Select up to {#1} items (	最多選 {1} 件物品（已選	最多选 {1} 件物品（已选		DFHack hack/lua/plugins/buildingplan/itemselection.lua L103 後接已選數量與 selected)
+Any Slab [engraved] of {%1}	任何石板 [已雕刻]（{1}）	任意石板 [已雕刻]（{1}）		DFHack hack/lua/plugins/buildingplan/filterselection.lua L298-352 目前篩選摘要：耐熱＋物品類別（＋特殊條件）（＋ of 材料清單）；專門的寫在前
+Any Cage [empty] of {%1}	任何籠子 [空的]（{1}）	任意笼子 [空的]（{1}）		DFHack hack/lua/plugins/buildingplan/filterselection.lua L298-352 目前篩選摘要：耐熱＋物品類別（＋特殊條件）（＋ of 材料清單）；專門的寫在前
+Any Block of {%1}	任何磚塊（{1}）	任意砖块（{1}）		DFHack hack/lua/plugins/buildingplan/filterselection.lua L298-352 目前篩選摘要：耐熱＋物品類別（＋特殊條件）（＋ of 材料清單）；專門的寫在前；Block 寫死（全域是格擋）
+Any {@1} of {%2}	任何{1}（{2}）	任意{1}（{2}）		DFHack hack/lua/plugins/buildingplan/filterselection.lua L298-352 目前篩選摘要：耐熱＋物品類別（＋特殊條件）（＋ of 材料清單）；專門的寫在前
+Any {@1}	任何{1}	任意{1}		DFHack hack/lua/plugins/buildingplan/filterselection.lua L298-352 目前篩選摘要：耐熱＋物品類別（＋特殊條件）（＋ of 材料清單）；專門的寫在前
+Magma safe Slab [engraved] of {%1}	耐熔岩石板 [已雕刻]（{1}）	耐熔岩石板 [已雕刻]（{1}）		DFHack hack/lua/plugins/buildingplan/filterselection.lua L298-352 目前篩選摘要：耐熱＋物品類別（＋特殊條件）（＋ of 材料清單）；專門的寫在前
+Magma safe Cage [empty] of {%1}	耐熔岩籠子 [空的]（{1}）	耐熔岩笼子 [空的]（{1}）		DFHack hack/lua/plugins/buildingplan/filterselection.lua L298-352 目前篩選摘要：耐熱＋物品類別（＋特殊條件）（＋ of 材料清單）；專門的寫在前
+Magma safe Block of {%1}	耐熔岩磚塊（{1}）	耐熔岩砖块（{1}）		DFHack hack/lua/plugins/buildingplan/filterselection.lua L298-352 目前篩選摘要：耐熱＋物品類別（＋特殊條件）（＋ of 材料清單）；專門的寫在前；Block 寫死（全域是格擋）
+Magma safe {@1} of {%2}	耐熔岩{1}（{2}）	耐熔岩{1}（{2}）		DFHack hack/lua/plugins/buildingplan/filterselection.lua L298-352 目前篩選摘要：耐熱＋物品類別（＋特殊條件）（＋ of 材料清單）；專門的寫在前
+Magma safe {@1}	耐熔岩{1}	耐熔岩{1}		DFHack hack/lua/plugins/buildingplan/filterselection.lua L298-352 目前篩選摘要：耐熱＋物品類別（＋特殊條件）（＋ of 材料清單）；專門的寫在前
+Fire safe Slab [engraved] of {%1}	耐火石板 [已雕刻]（{1}）	耐火石板 [已雕刻]（{1}）		DFHack hack/lua/plugins/buildingplan/filterselection.lua L298-352 目前篩選摘要：耐熱＋物品類別（＋特殊條件）（＋ of 材料清單）；專門的寫在前
+Fire safe Cage [empty] of {%1}	耐火籠子 [空的]（{1}）	耐火笼子 [空的]（{1}）		DFHack hack/lua/plugins/buildingplan/filterselection.lua L298-352 目前篩選摘要：耐熱＋物品類別（＋特殊條件）（＋ of 材料清單）；專門的寫在前
+Fire safe Block of {%1}	耐火磚塊（{1}）	耐火砖块（{1}）		DFHack hack/lua/plugins/buildingplan/filterselection.lua L298-352 目前篩選摘要：耐熱＋物品類別（＋特殊條件）（＋ of 材料清單）；專門的寫在前；Block 寫死（全域是格擋）
+Fire safe {@1} of {%2}	耐火{1}（{2}）	耐火{1}（{2}）		DFHack hack/lua/plugins/buildingplan/filterselection.lua L298-352 目前篩選摘要：耐熱＋物品類別（＋特殊條件）（＋ of 材料清單）；專門的寫在前
+Fire safe {@1}	耐火{1}	耐火{1}		DFHack hack/lua/plugins/buildingplan/filterselection.lua L298-352 目前篩選摘要：耐熱＋物品類別（＋特殊條件）（＋ of 材料清單）；專門的寫在前
+{#1} - {@2}	{1} - {2}	{1} - {2}		DFHack hack/lua/plugins/buildingplan/filterselection.lua L276 材料清單一列：數量 - 材料名

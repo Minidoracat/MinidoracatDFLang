@@ -1,0 +1,4 @@
+en	zh-Hant	zh-Hans	align	row	note
+*	*	*			這個畫面單獨畫出的全小寫字串照英文：工具名（reveal、zone、burrow、tailor）剛好是字典字詞時不翻
+Output	輸出	输出			DFHack hack/scripts/gui/launcher.lua L673 說明面板分頁標籤（限啟動器畫面）
+Custom	自訂	自定义			DFHack hack/scripts/gui/launcher.lua L113 標籤篩選狀態（限啟動器畫面）

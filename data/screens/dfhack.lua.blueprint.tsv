@@ -1,0 +1,21 @@
+en	zh-Hant	zh-Hans	align	row	note
+Blueprint	藍圖	蓝图	c		DFHack hack/scripts/gui/blueprint.lua L272 視窗標題
+name:	名稱：	名称：			DFHack hack/scripts/gui/blueprint.lua L55 EditField 標籤，原文 "name: " 含結尾空白共 6 格；寬度例外：引擎以整段 6 格判斷（hooks.rs dfhack_translate），程式確認
+phases:	階段：	阶段：			DFHack hack/scripts/gui/blueprint.lua L139
+Autodetect	自動偵測	自动检测			DFHack hack/scripts/gui/blueprint.lua L140 phases 選項
+Custom	自訂	自定义			DFHack hack/scripts/gui/blueprint.lua L141 phases 選項
+carve	雕鑿	雕凿			DFHack hack/scripts/gui/blueprint.lua L160 階段名
+construct	建築結構	建筑结构			DFHack hack/scripts/gui/blueprint.lua L167 階段名（constructions）
+build	建築	建筑			DFHack hack/scripts/gui/blueprint.lua L170 階段名（buildings）
+place	倉儲	储物			DFHack hack/scripts/gui/blueprint.lua L174 階段名（倉儲區）
+zone	區域	区域			DFHack hack/scripts/gui/blueprint.lua L178 階段名（區域）
+playback start:	重播起點：	回放起点：			DFHack hack/scripts/gui/blueprint.lua L222
+Unset	無	无			DFHack hack/scripts/gui/blueprint.lua L223 重播起點選項：未設定（5 格放不下「未設定」）
+Setting	設定中	设置中			DFHack hack/scripts/gui/blueprint.lua L223 重播起點選項：正在用滑鼠選
+Set	有	有			DFHack hack/scripts/gui/blueprint.lua L223 重播起點選項：已設定（3 格只放得下一字，與「無」對稱）
+engrave:	雕刻：	雕刻：			DFHack hack/scripts/gui/blueprint.lua L305
+smooth:	磨平：	磨平：			DFHack hack/scripts/gui/blueprint.lua L315
+format:	格式：	格式：			DFHack hack/scripts/gui/blueprint.lua L325
+split:	拆分：	拆分：			DFHack hack/scripts/gui/blueprint.lua L351
+By group	依群組	按组			DFHack hack/scripts/gui/blueprint.lua L353 split 選項
+By phase	依階段	按阶段			DFHack hack/scripts/gui/blueprint.lua L354 split 選項

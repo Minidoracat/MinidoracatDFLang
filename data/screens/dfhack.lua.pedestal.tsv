@@ -1,0 +1,4 @@
+en	zh-Hant	zh-Hans	align	row	note
+Ordinary	普通	普通			DFHack hack/scripts/internal/caravan/pedestal.lua L219 品質選項（全域 Ordinary 是建立角色的「平凡」）
+Artifact	神器	神器			DFHack hack/scripts/internal/caravan/pedestal.lua L225 品質選項
+value	價值	价值			DFHack hack/scripts/internal/caravan/pedestal.lua L343 排序欄名（未排序時單獨畫出）

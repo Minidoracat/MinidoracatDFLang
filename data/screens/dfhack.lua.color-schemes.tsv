@@ -1,0 +1,27 @@
+en	zh-Hant	zh-Hans	align	row	note
+Register	註冊	注册			DFHack hack/scripts/gui/color-schemes.lua L611 註冊輸入框標題
+Colors	顏色	颜色			DFHack hack/scripts/gui/color-schemes.lua L783 預覽分頁名
+loaded	已載入	已加载			DFHack hack/scripts/gui/color-schemes.lua L688 圖例（L 旗標）
+default	預設	默认			DFHack hack/scripts/gui/color-schemes.lua L689 圖例（D 旗標）
+preview	預覽	预览			DFHack hack/scripts/gui/color-schemes.lua L676 按鍵提示
+set default	設為預設	设为默认			DFHack hack/scripts/gui/color-schemes.lua L694 按鍵提示
+load	載入	加载			DFHack hack/scripts/gui/color-schemes.lua L699 按鍵提示
+invalid	無效	无效			DFHack hack/scripts/gui/color-schemes.lua L711 圖例（I 旗標）
+register	註冊	注册			DFHack hack/scripts/gui/color-schemes.lua L715 按鍵提示
+exit	離開	退出			DFHack hack/scripts/gui/color-schemes.lua L721 按鍵提示
+Black	黑色	黑色			DFHack hack/scripts/gui/color-schemes.lua L758 預覽色塊名
+Dark Grey	深灰色	深灰色			DFHack hack/scripts/gui/color-schemes.lua L759 預覽色塊名
+Blue	藍色	蓝色			DFHack hack/scripts/gui/color-schemes.lua L760 預覽色塊名
+Light Blue	淺藍色	浅蓝色			DFHack hack/scripts/gui/color-schemes.lua L761 預覽色塊名
+Green	綠色	绿色			DFHack hack/scripts/gui/color-schemes.lua L762 預覽色塊名
+Light Green	淺綠色	浅绿色			DFHack hack/scripts/gui/color-schemes.lua L763 預覽色塊名
+Cyan	青色	青色			DFHack hack/scripts/gui/color-schemes.lua L764 預覽色塊名
+Light Cyan	淺青色	浅青色			DFHack hack/scripts/gui/color-schemes.lua L765 預覽色塊名
+Red	紅	红			DFHack hack/scripts/gui/color-schemes.lua L766 預覽色塊名
+Light Red	淺紅色	浅红色			DFHack hack/scripts/gui/color-schemes.lua L767 預覽色塊名
+Magenta	洋紅色	品红色			DFHack hack/scripts/gui/color-schemes.lua L768 預覽色塊名
+Light Magenta	淺洋紅色	浅品红色			DFHack hack/scripts/gui/color-schemes.lua L769 預覽色塊名
+Brown	棕色	棕色			DFHack hack/scripts/gui/color-schemes.lua L770 預覽色塊名
+Yellow	黃色	黄色			DFHack hack/scripts/gui/color-schemes.lua L771 預覽色塊名
+Grey	灰色	灰色			DFHack hack/scripts/gui/color-schemes.lua L772 預覽色塊名
+White	白色	白色			DFHack hack/scripts/gui/color-schemes.lua L773 預覽色塊名

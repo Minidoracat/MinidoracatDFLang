@@ -1,0 +1,5 @@
+en	zh-Hant	zh-Hans	align	row	note
+Drain	排乾	排干			DFHack hack/scripts/gui/aquifer.lua L37 動作選項
+Convert	轉換	转换			DFHack hack/scripts/gui/aquifer.lua L38 動作選項
+Light	輕度	轻度			DFHack hack/scripts/gui/aquifer.lua L58 含水層類型選項
+Heavy	重度	重度			DFHack hack/scripts/gui/aquifer.lua L59 含水層類型選項

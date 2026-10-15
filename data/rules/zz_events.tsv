@@ -1,3 +1,4 @@
 en	zh-Hant	zh-Hans	align	note
 {1} was expelled.	{1}遭到驅逐。	{1}遭到驱逐。		FUN_140b7b7f0 L1692709（entity_persecuted） 第二句（L1692766 兩個空白後） L1692812/L1692879：沒收／驅逐單獨成句
+{%1} months	{1}個月	{1}个月	inner	FUN_140b7da60 1693757 hf_convicted 完整句 1694056–1694107：刑期（FUN_14052e360 英文數字字）
 {%1} held by {2}	{2}舉辦的{1}	{2}举办的{1}	inner	FUN_140b8c2b0 L1702113 表演短語

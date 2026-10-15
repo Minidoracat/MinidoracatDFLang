@@ -1,0 +1,10 @@
+en	zh-Hant	zh-Hans	align	row	note
+DEAD	死亡	死亡			DFHack hack/scripts/gui/adv-finder.lua L568 冒險模式尋找器：人物狀態
+ETERNAL	永恆	永恒			DFHack hack/scripts/gui/adv-finder.lua L571 冒險模式尋找器：人物狀態：不會老死
+ALIVE	存活	存活			DFHack hack/scripts/gui/adv-finder.lua L573 冒險模式尋找器：人物狀態
+Transcendent	超脫	超脱			DFHack hack/scripts/gui/adv-finder.lua L578 冒險模式尋找器：所在：無處不在
+Missing	失蹤	失踪			DFHack hack/scripts/gui/adv-finder.lua L580 冒險模式尋找器：所在
+Nearby	附近	附近			DFHack hack/scripts/gui/adv-finder.lua L584 冒險模式尋找器：所在
+Traveling	旅行中	旅行中			DFHack hack/scripts/gui/adv-finder.lua L588 冒險模式尋找器：所在：隨軍隊移動
+Underground	地底	地底			DFHack hack/scripts/gui/adv-finder.lua L592 冒險模式尋找器：所在：洞穴層
+Finder	尋找器	查找器	c		DFHack hack/scripts/gui/adv-finder.lua L645 冒險模式尋找器：視窗標題

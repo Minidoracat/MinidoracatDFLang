@@ -1,0 +1,176 @@
+en	zh-Hant	zh-Hans	align	note
+Save settings	儲存設定	保存设置		DFHack hack/scripts/gui/settings-manager.lua L74 難度設定畫面 overlay 按鈕
+Saved	已存	已存		DFHack hack/scripts/gui/settings-manager.lua L80/L266 overlay 儲存後閃現的提示（overlay 單字；原文 5 格，「已儲存」放不下）
+Loaded	已載入	已加载		DFHack hack/scripts/gui/settings-manager.lua L95/L281 overlay 載入後閃現的提示（overlay 單字）
+Load saved settings	載入已存設定	加载已存设置		DFHack hack/scripts/gui/settings-manager.lua L88 難度設定畫面 overlay 按鈕
+Apply saved settings for new embarks:	新出發時套用已存設定：	新出发时应用已存设置：		DFHack hack/scripts/gui/settings-manager.lua L102 難度設定 overlay 開關
+Saved settings restored	已還原儲存的設定	已恢复保存的设置		DFHack hack/scripts/gui/settings-manager.lua L188 出發準備畫面：自動套用已存難度設定的提示
+Enabled auto-restore	已啟用自動還原	已启用自动恢复	c	DFHack hack/scripts/gui/settings-manager.lua L358 自動還原設定提示視窗視窗標題（置中，前後兩個空白由引擎照原文補）
+Disabled auto-restore	已停用自動還原	已停用自动恢复	c	DFHack hack/scripts/gui/settings-manager.lua L358 自動還原設定提示視窗視窗標題（置中，前後兩個空白由引擎照原文補）
+Save standing orders (all tabs)	儲存常規命令（所有分頁）	保存常规命令（所有标签页）		DFHack hack/scripts/gui/settings-manager.lua L424 常規命令畫面 overlay 按鈕
+Load saved standing orders	載入已存的常規命令	加载已存的常规命令		DFHack hack/scripts/gui/settings-manager.lua L425 常規命令畫面 overlay 按鈕
+Barrels reserved for use	保留的桶數	保留的桶数		DFHack hack/scripts/gui/settings-manager.lua L453 常規命令畫面「保留桶」overlay 第一行（NEWLINE 拆兩行，兩行各自成立：保留的桶數／（工坊工作用）：N）
+by workshop jobs:	（工坊工作用）：	（工坊工作用）：		DFHack hack/scripts/gui/settings-manager.lua L454 同上第二行，後接數字（原文 "by workshop jobs: "）
+Set num reserved	設定保留數量	设置保留数量		DFHack hack/scripts/gui/settings-manager.lua L464 保留桶 overlay 按鈕
+Set reserved barrels	設定保留桶數	设置保留桶数	c	DFHack hack/scripts/gui/settings-manager.lua L467 輸入框視窗標題（置中，前後兩個空白由引擎照原文補）
+Number of barrels to reserve:	保留桶數：	保留桶数：		DFHack hack/scripts/gui/settings-manager.lua L479 輸入框欄位標籤（原文 "Number of barrels to reserve: "）
+Save work details	儲存工作分組	保存工作分组		DFHack hack/scripts/gui/settings-manager.lua L633 工作分組畫面 overlay 按鈕
+Load work details	載入工作分組	加载工作分组		DFHack hack/scripts/gui/settings-manager.lua L634 工作分組畫面 overlay 按鈕
+Load for new embarks:	新出發時載入：	新出发时加载：		DFHack hack/scripts/gui/settings-manager.lua L635 工作分組畫面 overlay 開關
+Labor automation:	勞動自動化：	劳动自动化：		DFHack hack/scripts/gui/settings-manager.lua L656 工作分組 overlay 循環選項標籤
+legacy (autolabor)	舊版 (autolabor)	旧版 (autolabor)		DFHack hack/scripts/gui/settings-manager.lua L659 勞動自動化選項（autolabor 是外掛名）
+modern (labormanager)	新版 (labormanager)	新版 (labormanager)		DFHack hack/scripts/gui/settings-manager.lua L660 勞動自動化選項（labormanager 是外掛名）
+monitor (warnings only)	監看（只警告）	监视（仅警告）		DFHack hack/scripts/gui/settings-manager.lua L661 勞動自動化選項
+Labor automation is off.	勞動自動化已關閉。	劳动自动化已关闭。		DFHack hack/scripts/gui/settings-manager.lua L680 工作分組 overlay 狀態列
+Legacy mode: edits here have no effect.	舊版模式：在這裡編輯無效。	旧版模式：在此编辑无效。		DFHack hack/scripts/gui/settings-manager.lua L682 工作分組 overlay 狀態列
+Monitor mode: no labor management.	監看模式：不管理勞動。	监视模式：不管理劳动。		DFHack hack/scripts/gui/settings-manager.lua L684 工作分組 overlay 狀態列
+Modern mode: 'auto:' details are managed.	新版模式：「auto:」分組由系統管理。	新版模式：“auto:”分组由系统管理。		DFHack hack/scripts/gui/settings-manager.lua L686 工作分組 overlay 狀態列（auto: 是工作分組名稱前綴，照原文）
+Manual edits will be overwritten.	手動編輯會被覆寫。	手动编辑会被覆盖。		DFHack hack/scripts/gui/settings-manager.lua L692 工作分組 overlay 狀態列
+Priority:	優先度：	优先级：		DFHack hack/scripts/gui/settings-manager.lua L698 工作分組 overlay 滑桿標籤（框寬 9 格）
+Show only in stock:	只顯示有庫存的：	只显示有库存的：		DFHack hack/scripts/gui/seedwatch.lua L80 開關標籤
+Please enable seedwatch to change settings	請先啟用 seedwatch 才能變更設定	请先启用 seedwatch 才能更改设置		DFHack hack/scripts/gui/seedwatch.lua L127 未啟用時的提示
+Double click on a row or hit	連按兩下某一列，或按	双击某一行，或按		DFHack hack/scripts/gui/seedwatch.lua L145 頁尾提示前半（後接 Enter 與「設定目標。」，原文 "Double click on a row or hit "）
+to set the target.	設定目標。	设置目标。		DFHack hack/scripts/gui/seedwatch.lua L147 頁尾提示後半（接在 Enter 後，原文 " to set the target."）
+Seedwatch is	Seedwatch：	Seedwatch：		DFHack hack/scripts/gui/seedwatch.lua L153 開關標籤，後接「已啟用／已停用」（工具名照原文）
+Set all targets	設定全部目標	设置全部目标		DFHack hack/scripts/gui/seedwatch.lua L164 按鈕；L276 同字也是輸入框標題（共用一條，不置中）
+Invalid Number	無效的數字	无效的数字	c	DFHack hack/scripts/gui/seedwatch.lua L248 訊息框視窗標題（置中，前後兩個空白由引擎照原文補）
+(for zero enter a 0)	（零請輸入 0）	（零请输入 0）		DFHack hack/scripts/gui/seedwatch.lua L248 訊息框第二行
+Negative numbers make no sense!	不能輸入負數！	不能输入负数！		DFHack hack/scripts/gui/seedwatch.lua L252 訊息框內容
+Set target	設定目標	设置目标	c	DFHack hack/scripts/gui/seedwatch.lua L260 輸入框視窗標題（置中，前後兩個空白由引擎照原文補）
+Enter desired target for all seed types	輸入所有種子的目標數量	输入所有种子的目标数量		DFHack hack/scripts/gui/seedwatch.lua L277 輸入框說明
+Spawn liquid menu	生成液體	生成液体	c	DFHack hack/scripts/gui/liquids.lua L29 視窗標題（置中，前後兩個空白由引擎照原文補）
+Decrease level	降低深度	降低深度		DFHack hack/scripts/gui/liquids.lua L47 按鈕
+Increase level	提高深度	提高深度		DFHack hack/scripts/gui/liquids.lua L60 按鈕
+Brush:	筆刷：	笔刷：		DFHack hack/scripts/gui/liquids.lua L73 循環選項標籤（水／熔岩／河流）
+Paint mode:	繪製方式：	绘制方式：		DFHack hack/scripts/gui/liquids.lua L89 循環選項標籤
+Type or select a material from this list	輸入或從清單中選擇材料	输入或从列表中选择材料		DFHack hack/lua/gui/materials.lua L20 材料選擇視窗說明
+Select Material	選擇材料	选择材料	c	DFHack hack/lua/gui/materials.lua L23 視窗標題（置中，前後兩個空白由引擎照原文補）
+No matching materials	沒有符合的材料	没有匹配的材料		DFHack hack/lua/gui/materials.lua L57 篩選清單無結果
+: Select	: 選擇	: 选择		DFHack hack/lua/gui/materials.lua L65 按鍵提示（按鍵名後接的 ": Select" 一段畫）
+Any material	任何材料	任意材料		DFHack hack/lua/gui/materials.lua L114 類別名
+Inorganic materials	無機材料	无机材料		DFHack hack/lua/gui/materials.lua L124 類別名
+Creature materials	生物材料	生物材料		DFHack hack/lua/gui/materials.lua L134 類別名
+Plant materials	植物材料	植物材料		DFHack hack/lua/gui/materials.lua L144 類別名
+Type or select an item type	輸入或選擇物品類型	输入或选择物品类型		DFHack hack/lua/gui/materials.lua L287 物品類型選擇視窗說明
+Type or select an item trait	輸入或選擇物品特性	输入或选择物品特性		DFHack hack/lua/gui/materials.lua L451 物品特性選擇視窗說明
+unset flags	清除旗標	清除标志		DFHack hack/lua/gui/materials.lua L501 物品特性清單
+unset use	清除用途	清除用途		DFHack hack/lua/gui/materials.lua L525 物品特性清單
+unset ore	清除礦石	清除矿石		DFHack hack/lua/gui/materials.lua L546 物品特性清單
+unset reaction class	清除反應類別	清除反应类别		DFHack hack/lua/gui/materials.lua L566 物品特性清單
+unset producing	清除產物	清除产物		DFHack hack/lua/gui/materials.lua L586 物品特性清單
+Water:	水：	水：		DFHack hack/scripts/machine-toggle.lua L213 壓力板 overlay 開關（水分頁）
+Magma:	熔岩：	熔岩：		DFHack hack/scripts/machine-toggle.lua L213 壓力板 overlay 開關（熔岩分頁）
+Min Depth:	最小深度：	最小深度：		DFHack hack/scripts/machine-toggle.lua L225 壓力板 overlay
+Max Depth:	最大深度：	最大深度：		DFHack hack/scripts/machine-toggle.lua L235 壓力板 overlay
+Minecarts:	礦車：	矿车：		DFHack hack/scripts/machine-toggle.lua L255 壓力板 overlay
+Min Weight:	最小重量：	最小重量：		DFHack hack/scripts/machine-toggle.lua L266/L309 壓力板 overlay
+Max Weight:	最大重量：	最大重量：		DFHack hack/scripts/machine-toggle.lua L276/L319 壓力板 overlay
+Creatures:	生物：	生物：		DFHack hack/scripts/machine-toggle.lua L287 壓力板 overlay
+Citizens:	公民：	公民：		DFHack hack/scripts/machine-toggle.lua L298 壓力板 overlay
+State:	狀態：	状态：		DFHack hack/scripts/machine-toggle.lua L366 齒輪組 overlay 開關
+Teleport	傳送	传送	c	DFHack hack/scripts/gui/teleport.lua L34 視窗標題（置中，前後兩個空白由引擎照原文補）
+Draw boxes around units to select	框選單位以選取	框住单位来选择		DFHack hack/scripts/gui/teleport.lua L246 說明（WrappedLabel，未選取單位時）
+Teleport units to mouse cursor	將單位傳送到滑鼠游標處	将单位传送到鼠标光标处		DFHack hack/scripts/gui/teleport.lua L63 按鈕
+Include citizen units	包含公民單位	包含公民单位		DFHack hack/scripts/gui/teleport.lua L77 開關（原文 "Include citizen units "）
+Include friendly units	包含友方單位	包含友方单位		DFHack hack/scripts/gui/teleport.lua L85 開關
+Include hostile units	包含敵對單位	包含敌对单位		DFHack hack/scripts/gui/teleport.lua L93 開關（原文 "Include hostile units "）
+No selected units	未選取單位	未选择单位		DFHack hack/scripts/gui/teleport.lua L106
+Selected units:	已選取單位：	已选择单位：		DFHack hack/scripts/gui/teleport.lua L111
+Deselect unit	取消選取	取消选择		DFHack hack/scripts/gui/teleport.lua L132 按鈕
+Clear list	清空清單	清空列表		DFHack hack/scripts/gui/teleport.lua L140 按鈕
+Click name or hit	點選名稱或按	点击名称或按		DFHack hack/scripts/gui/teleport.lua L148 提示前半（後接 Enter，原文 "Click name or hit "）
+to zoom to unit	跳到該單位	跳转到该单位		DFHack hack/scripts/gui/teleport.lua L150 提示後半（原文 " to zoom to unit"）
+Aquifer	含水層	含水层	c	DFHack hack/scripts/gui/aquifer.lua L19 視窗標題（置中，前後兩個空白由引擎照原文補）
+Select map area to modify	選取要修改的地圖範圍	选择要修改的地图区域		DFHack hack/scripts/gui/aquifer.lua L30
+Action:	動作：	动作：		DFHack hack/scripts/gui/aquifer.lua L35 循環選項標籤（排乾／轉換／加）
+To aquifer type:	改為含水層類型：	改为含水层类型：		DFHack hack/scripts/gui/aquifer.lua L52 循環選項標籤（動作為轉換時）
+Aquifer type:	含水層類型：	含水层类型：		DFHack hack/scripts/gui/aquifer.lua L54 循環選項標籤
+Allow immediate leaks:	允許立即滲漏：	允许立即渗漏：		DFHack hack/scripts/gui/aquifer.lua L73 開關（動作為加時）
+Affect only leaks:	只影響滲漏處：	只影响渗漏处：		DFHack hack/scripts/gui/aquifer.lua L75 開關
+Apply to entire level now	立即套用到整層	立即应用到整层		DFHack hack/scripts/gui/aquifer.lua L87 按鈕
+Reveal	揭露	揭示	c	DFHack hack/scripts/gui/reveal.lua L12 視窗標題（置中，前後兩個空白由引擎照原文補）
+The map is revealed.	地圖已揭露。	地图已揭示。		DFHack hack/scripts/gui/reveal.lua L40 WrappedLabel（冒險模式）
+The map is revealed. The game will be force paused until you close this window.	地圖已揭露。關閉此視窗前，遊戲會強制暫停。	地图已揭示。关闭此窗口前，游戏会强制暂停。		DFHack hack/scripts/gui/reveal.lua L40 WrappedLabel（要塞模式）
+Areas with event triggers are kept hidden to avoid spoilers.	會觸發事件的區域仍保持隱藏，以免爆雷。	会触发事件的区域仍保持隐藏，以免剧透。		DFHack hack/scripts/gui/reveal.lua L43 WrappedLabel
+Areas with hidden secrets have been revealed.	藏有秘密的區域已經揭露。	藏有秘密的区域已经揭示。		DFHack hack/scripts/gui/reveal.lua L47 WrappedLabel（reveal hell，冒險模式）
+Areas with hidden secrets have been revealed. The map must be hidden again before unpausing.	藏有秘密的區域已經揭露。取消暫停前必須把地圖重新隱藏。	藏有秘密的区域已经揭示。取消暂停前必须把地图重新隐藏。		DFHack hack/scripts/gui/reveal.lua L47 WrappedLabel（reveal hell，要塞模式）
+In graphics mode, solid tiles that are not adjacent to open space are not rendered. Switch to ASCII mode to see them.	圖形模式下，不與空地相鄰的實心格子不會畫出來。切換到 ASCII 模式才看得到。	图形模式下，不与空地相邻的实心格子不会绘制。切换到 ASCII 模式才能看到。		DFHack hack/scripts/gui/reveal.lua L52 WrappedLabel
+Aquifers and damp tiles are revealed.	已揭露含水層與潮濕格子。	已揭示含水层与潮湿格子。		DFHack hack/scripts/gui/reveal.lua L59 WrappedLabel（aquifers-only）
+Restore map on close:	關閉時還原地圖：	关闭时还原地图：		DFHack hack/scripts/gui/reveal.lua L72 開關
+Autofish is	Autofish：	Autofish：		DFHack hack/scripts/gui/autofish.lua L24 開關標籤，後接「已啟用／已停用」（工具名照原文）
+Maximum fish target:	魚類目標上限：	鱼类目标上限：		DFHack hack/scripts/gui/autofish.lua L33 輸入欄標籤（原文 "Maximum fish target: "）
+Counting raw fish:	計入生魚：	计入生鱼：		DFHack hack/scripts/gui/autofish.lua L45 開關
+Fish:	魚：	鱼：		DFHack hack/scripts/gui/autofish.lua L94 魚數列開頭（原文 "Fish: "，後接總數）
+prepared,	已處理，	已处理，		DFHack hack/scripts/gui/autofish.lua L97 魚數列（原文 " prepared, "，前接已處理數）
+raw)	生)	生)		DFHack hack/scripts/gui/autofish.lua L98 魚數列結尾（原文 " raw)"，前接生魚數；左括號是半形，這裡也用半形）
+fishing.	在捕魚。	在捕鱼。		DFHack hack/scripts/gui/autofish.lua L104 狀態列結尾
+Body appearance editor	身體外觀編輯器	身体外观编辑器		DFHack hack/scripts/internal/gm-unit/editor_body.lua L190 視窗標題，也是 gui/gm-unit 主清單項目（同一條，不置中，與 gui2 的其他編輯器一致）
+: back	: 返回	: 返回		DFHack hack/scripts/internal/gm-unit/editor_body.lua L163 按鍵提示（按鍵名後接的 ": back " 一段畫）
+: edit modifier	: 編輯特徵	: 编辑特征		DFHack hack/scripts/internal/gm-unit/editor_body.lua L164 按鍵提示
+: raise	: 增加	: 增加		DFHack hack/scripts/internal/gm-unit/editor_body.lua L165 按鍵提示
+: reduce	: 減少	: 减少		DFHack hack/scripts/internal/gm-unit/editor_body.lua L171 按鍵提示
+: randomise selected	: 隨機化選取項	: 随机化所选项		DFHack hack/scripts/internal/gm-unit/editor_body.lua L172、editor_orientation.lua L61 按鍵提示
+: select feature	: 選擇特徵	: 选择特征		DFHack hack/scripts/internal/gm-unit/editor_body.lua L271 按鍵提示
+Enter new value:	輸入新數值：	输入新数值：		DFHack hack/scripts/internal/gm-unit/editor_body.lua L54、editor_counters.lua L61 輸入框說明
+Stranded citizen warning	受困公民警告	受困公民警告	c	DFHack hack/scripts/warn-stranded.lua L217 視窗標題（置中，前後兩個空白由引擎照原文補）
+Select to zoom to unit. Double click to toggle unit ignore. Shift double click to toggle a group.	選取以跳到該單位。連按兩下切換是否忽略該單位。按住 Shift 連按兩下切換整個群組。	选择以跳转到该单位。双击切换是否忽略该单位。按住 Shift 双击切换整个群组。		DFHack hack/scripts/warn-stranded.lua L233 WrappedLabel
+Toggle ignore	切換忽略	切换忽略		DFHack hack/scripts/warn-stranded.lua L238 按鈕
+Toggle group	切換群組	切换群组		DFHack hack/scripts/warn-stranded.lua L245 按鈕
+Ignore all	全部忽略	全部忽略		DFHack hack/scripts/warn-stranded.lua L252 按鈕
+Clear all ignored	清除所有忽略	清除全部忽略		DFHack hack/scripts/warn-stranded.lua L260 按鈕
+Open Legends Mode	開啟傳說模式	打开传说模式	c	DFHack hack/scripts/open-legends.lua L98 視窗標題（置中，前後兩個空白由引擎照原文補）
+This is your last chance to save your game.	這是你存檔的最後機會。	这是你存档的最后机会。		DFHack hack/scripts/open-legends.lua L145
+Please click here to create an Autosave	請點這裡建立自動存檔	请点击这里创建自动存档		DFHack hack/scripts/open-legends.lua L151 按鈕
+Click here to continue to legends mode	點這裡繼續進入傳說模式	点击这里继续进入传说模式		DFHack hack/scripts/open-legends.lua L164 按鈕
+Exiting to avoid save corruption	為避免存檔損毀，即將結束	为避免存档损坏，即将退出	c	DFHack hack/scripts/open-legends.lua L65 是否對話框視窗標題（置中，前後兩個空白由引擎照原文補）
+Tile Browser	圖塊瀏覽器	图块浏览器	c	DFHack hack/scripts/devel/tile-browser.lua L15 視窗標題（置中，前後兩個空白由引擎照原文補）
+Start index:	起始編號：	起始编号：		DFHack hack/scripts/devel/tile-browser.lua L26 輸入欄標籤（原文 "Start index: "）
+Reposition overlay widgets	調整疊加介面元件位置	调整叠加界面组件位置	c	DFHack hack/scripts/gui/overlay.lua L118 視窗標題（置中，前後兩個空白由引擎照原文補）
+Current contexts:	目前情境：	当前情境：		DFHack hack/scripts/gui/overlay.lua L124（原文 "Current contexts: "，後接焦點字串）
+Interface width percent:	介面寬度百分比：	界面宽度百分比：		DFHack hack/scripts/gui/overlay.lua L130（原文 "Interface width percent: "）
+Showing	顯示	显示		DFHack hack/scripts/gui/overlay.lua L137 循環選項標籤，後接「目前情境的疊加介面／所有疊加介面」（gui.Screen 無焦點名，只能寫整句單字）
+overlays for the current contexts	目前情境的疊加介面	当前情境的叠加界面		DFHack hack/scripts/gui/overlay.lua L138 循環選項
+all overlays	所有疊加介面	所有叠加界面		DFHack hack/scripts/gui/overlay.lua L139 循環選項
+or drag the on-screen widget to reposition	或拖曳畫面上的元件來調整位置	或拖动屏幕上的组件来调整位置		DFHack hack/scripts/gui/overlay.lua L149 按鍵提示（key_sep，原文 " or drag the on-screen widget to reposition "）
+reset selected widget to its default position	將選取的元件重設回預設位置	将所选组件重置到默认位置		DFHack hack/scripts/gui/overlay.lua L157 按鈕；術語例外：Position
+When repositioning a widget, touch a boundary edge to anchor the widget to that edge.	調整元件位置時，碰到邊界就會把元件固定在那一邊。	调整组件位置时，碰到边界就会把组件固定在那一边。		DFHack hack/scripts/gui/overlay.lua L163 WrappedLabel
+(repositioning with keyboard)	(用鍵盤調整位置)	(用键盘调整位置)		DFHack hack/scripts/gui/overlay.lua L244 清單項後綴（原文 " (repositioning with keyboard)"；括號半形以免超寬）
+Screen Inspector	畫面檢視器	界面检查器	c	DFHack hack/scripts/devel/inspect-screen.lua L12 視窗標題（置中，前後兩個空白由引擎照原文補）
+Current screen:	目前畫面：	当前界面：		DFHack hack/scripts/devel/inspect-screen.lua L22（原文 "Current screen: "）
+Inspect layer:	檢視圖層：	检查图层：		DFHack hack/scripts/devel/inspect-screen.lua L28 循環選項標籤
+Empty elements:	空元素：	空元素：		DFHack hack/scripts/devel/inspect-screen.lua L36 循環選項標籤
+Freeze current tile:	凍結目前格子：	冻结当前格子：		DFHack hack/scripts/devel/inspect-screen.lua L43 開關
+Mouse is not on the map	滑鼠不在地圖上	鼠标不在地图上		DFHack hack/scripts/devel/inspect-screen.lua L93
+Orientation editor	性向編輯器	性取向编辑器		DFHack hack/scripts/internal/gm-unit/editor_orientation.lua L11 視窗標題，也是 gui/gm-unit 主清單項目（同一條，不置中，與 gui2 的其他編輯器一致）
+Male: Uninterested	男性：沒興趣	男性：无兴趣		DFHack hack/scripts/internal/gm-unit/editor_orientation.lua L37 清單項（set-orientation.lua getInterestString）
+Male: Romance	男性：戀愛	男性：恋爱		DFHack hack/scripts/internal/gm-unit/editor_orientation.lua L37 清單項
+Male: Marry	男性：結婚	男性：结婚		DFHack hack/scripts/internal/gm-unit/editor_orientation.lua L37 清單項
+Female: Uninterested	女性：沒興趣	女性：无兴趣		DFHack hack/scripts/internal/gm-unit/editor_orientation.lua L41 清單項
+Female: Romance	女性：戀愛	女性：恋爱		DFHack hack/scripts/internal/gm-unit/editor_orientation.lua L41 清單項
+Female: Marry	女性：結婚	女性：结婚		DFHack hack/scripts/internal/gm-unit/editor_orientation.lua L41 清單項
+: cycle selected	: 循環切換	: 循环切换		DFHack hack/scripts/internal/gm-unit/editor_orientation.lua L60 按鍵提示
+Notification settings	通知設定	通知设置	c	DFHack hack/scripts/gui/notify.lua L196 視窗標題（置中，前後兩個空白由引擎照原文補）
+Irrit. Threat	激怒威脅	激怒威胁		DFHack hack/scripts/agitation-rebalance.lua L531 激怒監看 overlay 標題
+Surface:	地表：	地表：		DFHack hack/scripts/agitation-rebalance.lua L537 激怒監看 overlay（後接無／低／中／高）
+Caverns:	洞穴：	洞穴：		DFHack hack/scripts/agitation-rebalance.lua L545 激怒監看 overlay
+Med	中	中		DFHack hack/scripts/agitation-rebalance.lua L502 激怒監看 overlay 的機率等級（overlay 單字；None／Low／High 已有）
+Flood fill on double click:	連按兩下時填滿：	双击时填充：		DFHack hack/lua/plugins/burrow.lua L71 活動區繪製 overlay 循環選項標籤
+2D fill enabled	已啟用 2D 填滿	已启用 2D 填充		DFHack hack/lua/plugins/burrow.lua L74 循環選項
+3D fill enabled	已啟用 3D 填滿	已启用 3D 填充		DFHack hack/lua/plugins/burrow.lua L75 循環選項
+Allow idle dwarves to satisfy crafting needs:	允許閒置矮人滿足製作需求：	允许空闲矮人满足制作需求：		DFHack hack/scripts/idle-crafting.lua L649 工藝坊 overlay 開關（選項 yes／no 已有）
+Show past agreements:	顯示過去的協議：	显示过去的协议：		DFHack hack/scripts/gui/petitions.lua L26 開關
+No outstanding agreements	沒有未完成的協議	没有未完成的协议		DFHack hack/scripts/gui/petitions.lua L85 清單空白時
+as agreed on	協議於	协议于		DFHack hack/scripts/gui/petitions.lua L66 清單第二行開頭（原文 "as agreed on "，後接日期）
+Counters editor	計數器編輯器	计数器编辑器		DFHack hack/scripts/internal/gm-unit/editor_counters.lua L10 視窗標題，也是 gui/gm-unit 主清單項目（同一條，不置中，與 gui2 的其他編輯器一致）
+: set counter	: 設定計數器	: 设置计数器		DFHack hack/scripts/internal/gm-unit/editor_counters.lua L85 按鍵提示
+: reset counter	: 重設計數器	: 重置计数器		DFHack hack/scripts/internal/gm-unit/editor_counters.lua L87 按鍵提示
+Filter by race:	依種族篩選：	按种族筛选：		DFHack hack/scripts/internal/exportlegends/racefilter.lua L38 傳說模式 overlay 按鈕
+Races	種族	种族	c	DFHack hack/scripts/internal/exportlegends/racefilter.lua L70 清單視窗視窗標題（置中，前後兩個空白由引擎照原文補）
+Choose race filter	選擇種族篩選	选择种族筛选		DFHack hack/scripts/internal/exportlegends/racefilter.lua L70 清單視窗說明
+Confirmation dialogs	確認對話框	确认对话框	c	DFHack hack/scripts/gui/confirm.lua L9 視窗標題（置中，前後兩個空白由引擎照原文補）
+Select someone to add to the "Specific Person" list:	選擇要加入「特定人物」清單的人：	选择要加入“特定人物”列表的人：		DFHack hack/scripts/unretire-anyone.lua L98 清單視窗說明
+DF Journal	DF 日誌	DF 日志	c	DFHack hack/scripts/gui/journal.lua L21 視窗標題（置中，前後兩個空白由引擎照原文補）
+Toggle table of contents	切換目錄	切换目录		DFHack hack/scripts/gui/journal.lua L116 按鈕
+Prev Section	上一節	上一节		DFHack hack/scripts/internal/journal/table_of_contents.lua L52 按鈕
+Next Section	下一節	下一节		DFHack hack/scripts/internal/journal/table_of_contents.lua L65 按鈕
+Interface cannot be hidden in ASCII mode.	ASCII 模式下無法隱藏介面。	ASCII 模式下无法隐藏界面。		DFHack hack/scripts/hide-interface.lua L26

@@ -1,0 +1,286 @@
+en	zh-Hant	zh-Hans	align	note
+Select an artifact to rename:	選擇要改名的神器：	选择要改名的神器：		DFHack hack/scripts/gui/rename.lua L210 清單對話框提示（整句條目，免得被 zz_adv_create 的 Select {1} 照抄）
+Select a location to rename:	選擇要改名的場所：	选择要改名的场所：		DFHack hack/scripts/gui/rename.lua L231 清單對話框提示
+Select a squad to rename:	選擇要改名的小隊：	选择要改名的小队：		DFHack hack/scripts/gui/rename.lua L259 清單對話框提示
+Select a unit to rename:	選擇要改名的單位：	选择要改名的单位：		DFHack hack/scripts/gui/rename.lua L277 清單對話框提示
+What would you like to rename?	要替什麼改名？	要给什么改名？		DFHack hack/scripts/gui/rename.lua L315 清單對話框提示
+An artifact	神器	神器		DFHack hack/scripts/gui/rename.lua L290 改名對象清單
+A unit	單位	单位		DFHack hack/scripts/gui/rename.lua L293 改名對象清單
+A squad	小隊	小队		DFHack hack/scripts/gui/rename.lua L301 改名對象清單
+A location	場所	场所		DFHack hack/scripts/gui/rename.lua L304 改名對象清單
+This fortress/site	本要塞／據點	本要塞／据点		DFHack hack/scripts/gui/rename.lua L306 改名對象清單
+The government of this fortress	本要塞的政府	本要塞的政府		DFHack hack/scripts/gui/rename.lua L309 改名對象清單
+The civilization of this fortress	本要塞所屬的文明	本要塞所属的文明		DFHack hack/scripts/gui/rename.lua L312 改名對象清單
+Select new target	選擇新目標	选择新目标		DFHack hack/scripts/gui/rename.lua L431 快捷鍵說明（整句條目，蓋過 Select {1}）
+Generate random name	產生隨機名字	生成随机名字		DFHack hack/scripts/gui/rename.lua L447 快捷鍵說明
+Language:	語言：	语言：		DFHack hack/scripts/gui/rename.lua L463 循環選項標籤
+Name type:	名字種類：	名字类型：		DFHack hack/scripts/gui/rename.lua L470 標籤（類型值是列舉名，不翻）
+Name components:	名字組成：	名字组成：		DFHack hack/scripts/gui/rename.lua L485 標籤
+Prev component	上一個部分	上一个部分		DFHack hack/scripts/gui/rename.lua L506 快捷鍵說明
+Next component	下一個部分	下一个部分		DFHack hack/scripts/gui/rename.lua L518 快捷鍵說明
+Randomize component	隨機此部分	随机此部分		DFHack hack/scripts/gui/rename.lua L529 快捷鍵說明
+Clear component	清除此部分	清除此部分		DFHack hack/scripts/gui/rename.lua L542 快捷鍵說明
+Change sort	變更排序	更改排序		DFHack hack/scripts/gui/rename.lua L561 循環選項標籤
+English	英文	英文		DFHack hack/scripts/gui/rename.lua L585 字表欄名（排序箭頭由 dfhack_gui2 的 {%1}▼ 句型接上，所以放 strings）
+native	本族語	本族语		DFHack hack/scripts/gui/rename.lua L597 字表欄名：該語言的原文詞（欄寬 7，含排序箭頭）
+part of speech	詞性	词性		DFHack hack/scripts/gui/rename.lua L608 字表欄名
+part_of_speech	詞性	词性		DFHack hack/scripts/gui/rename.lua L609 字表欄名（原文排序時的寫法帶底線）
+Front Compound	前複合詞	前复合词		DFHack hack/scripts/gui/rename.lua L648 名字部分（language_name_component 列舉名拆字）
+Rear Compound	後複合詞	后复合词		DFHack hack/scripts/gui/rename.lua L648 名字部分
+First Adjective	第一形容詞	第一形容词		DFHack hack/scripts/gui/rename.lua L648 名字部分
+Second Adjective	第二形容詞	第二形容词		DFHack hack/scripts/gui/rename.lua L648 名字部分
+Hyphen Compound	連字號複合詞	连字符复合词		DFHack hack/scripts/gui/rename.lua L648 名字部分
+Singular Noun	單數名詞	单数名词		DFHack hack/scripts/gui/rename.lua L796 字表詞性欄
+Plural Noun	複數名詞	复数名词		DFHack hack/scripts/gui/rename.lua L797 字表詞性欄
+Present (1st)	現在式一人稱	现在时一人称		DFHack hack/scripts/gui/rename.lua L800 字表詞性欄（原文 13 格）
+Present (3rd)	現在式三人稱	现在时三人称		DFHack hack/scripts/gui/rename.lua L801 字表詞性欄
+Preterite	過去式	过去式		DFHack hack/scripts/gui/rename.lua L802 字表詞性欄
+Past Participle	過去分詞	过去分词		DFHack hack/scripts/gui/rename.lua L803 字表詞性欄
+Present Participle	現在分詞	现在分词		DFHack hack/scripts/gui/rename.lua L804 字表詞性欄
+Adds a button for renaming newly generated worlds.	新增一個按鈕，可替新生成的世界改名。	添加一个按钮，可为新生成的世界改名。		DFHack hack/scripts/gui/rename.lua L948 疊加介面說明（控制面板顯示）
+Rename world	替世界改名	为世界改名		DFHack hack/scripts/gui/rename.lua L960 世界生成畫面的疊加介面按鈕
+Allows editing of unit nicknames on the embark preparation screen.	可在出發準備畫面編輯單位的暱稱。	可在出发准备界面编辑单位的昵称。		DFHack hack/scripts/gui/rename.lua L975 疊加介面說明（控制面板顯示）
+New partners have existing lovers. Spurn them?	新伴侶已有戀人。要拋棄他們嗎？	新伴侣已有恋人。要抛弃他们吗？		DFHack hack/scripts/gui/family-affairs.lua L157 確認對話框
+Family manager	家庭管理	家庭管理		DFHack hack/scripts/gui/family-affairs.lua L779 視窗標題（frame_title），管理家庭關係的工具，不是貴族職位「經理」；術語例外：manager
+Clear lovers	清除戀人	清除恋人		DFHack hack/scripts/gui/family-affairs.lua L156 確認對話框標題
+Name:	姓名	姓名		DFHack hack/scripts/gui/family-affairs.lua L182 標籤（右邊緊接名字，只有 5 格，省略冒號）
+None (please select a unit)	無（請選擇一個單位）	无（请选择一个单位）		DFHack hack/scripts/gui/family-affairs.lua L186 未選單位時的提示
+Switch to selected unit	切換到選取的單位	切换到选中的单位		DFHack hack/scripts/gui/family-affairs.lua L200 快捷鍵說明
+Spouse:	配偶：	配偶：		DFHack hack/scripts/gui/family-affairs.lua L211 標籤
+(off-site)	（外地）	（外地）		DFHack hack/scripts/gui/family-affairs.lua L230 配偶／戀人不在本地時的標記
+Dissolve spouse relationship	解除婚姻關係	解除婚姻关系		DFHack hack/scripts/gui/family-affairs.lua L237 快捷鍵說明
+Set selected unit as spouse	將選取的單位設為配偶	将选中的单位设为配偶		DFHack hack/scripts/gui/family-affairs.lua L245 快捷鍵說明
+Lovers:	戀人：	恋人：		DFHack hack/scripts/gui/family-affairs.lua L268 標籤（後接人數）
+Add selected unit as lover	將選取的單位加為戀人	将选中的单位加为恋人		DFHack hack/scripts/gui/family-affairs.lua L285 快捷鍵說明
+Mother:	母親：	母亲：		DFHack hack/scripts/gui/family-affairs.lua L406 標籤
+None (please select an adult female)	無（請選擇成年雌性）	无（请选择成年雌性）		DFHack hack/scripts/gui/family-affairs.lua L410 未選母親時的提示
+Choose selected unit to be the mother	將選取的單位設為母親	将选中的单位设为母亲		DFHack hack/scripts/gui/family-affairs.lua L428 快捷鍵說明
+Set mother's spouse as the father	將母親的配偶設為父親	将母亲的配偶设为父亲		DFHack hack/scripts/gui/family-affairs.lua L465 快捷鍵說明
+Father:	父親：	父亲：		DFHack hack/scripts/gui/family-affairs.lua L487 標籤
+(optionally select an adult male)	（可選擇成年雄性）	（可选择成年雄性）		DFHack hack/scripts/gui/family-affairs.lua L493 未選父親時的提示（前面的 None 另一段，已有條目）
+Choose selected unit to be the father	將選取的單位設為父親	将选中的单位设为父亲		DFHack hack/scripts/gui/family-affairs.lua L513 快捷鍵說明
+Set father's spouse as the mother	將父親的配偶設為母親	将父亲的配偶设为母亲		DFHack hack/scripts/gui/family-affairs.lua L556 快捷鍵說明
+Pregnancy term (in months):	懷孕期（月數）：	怀孕期（月数）：		DFHack hack/scripts/gui/family-affairs.lua L579 循環選項標籤
+Generate pregnancy	使其懷孕	使其怀孕		DFHack hack/scripts/gui/family-affairs.lua L604 快捷鍵說明
+Not currently pregnant	目前未懷孕	目前未怀孕		DFHack hack/scripts/gui/family-affairs.lua L656 懷孕狀態
+Currently pregnant: coming to term today	目前懷孕中：今天臨盆	目前怀孕中：今天临盆		DFHack hack/scripts/gui/family-affairs.lua L666 懷孕狀態
+Currently pregnant: coming to term in 1 month	目前懷孕中：1 個月後臨盆	目前怀孕中：1 个月后临盆		DFHack hack/scripts/gui/family-affairs.lua L666 懷孕狀態（單數）
+Currently pregnant: coming to term in 1 day	目前懷孕中：1 天後臨盆	目前怀孕中：1 天后临盆		DFHack hack/scripts/gui/family-affairs.lua L666 懷孕狀態（單數）
+Race mismatch	種族不符	种族不符		DFHack hack/scripts/gui/family-affairs.lua L702 確認對話框標題
+Are you sure you want to select this unit as the mother?	確定要選這個單位當母親嗎？	确定要选这个单位当母亲吗？		DFHack hack/scripts/gui/family-affairs.lua L703 確認對話框（訊息以 \n 分行，一行一條）
+The unit's race does not match the selected father.	這個單位的種族與所選的父親不同。	这个单位的种族与所选的父亲不同。		DFHack hack/scripts/gui/family-affairs.lua L704 確認對話框
+The choice for father will be reset.	所選的父親將被重設。	所选的父亲将被重置。		DFHack hack/scripts/gui/family-affairs.lua L705 確認對話框
+Are you sure you want to select this unit as the father?	確定要選這個單位當父親嗎？	确定要选这个单位当父亲吗？		DFHack hack/scripts/gui/family-affairs.lua L730 確認對話框
+The unit's race does not match the selected mother.	這個單位的種族與所選的母親不同。	这个单位的种族与所选的母亲不同。		DFHack hack/scripts/gui/family-affairs.lua L731 確認對話框
+The choice for mother will be reset.	所選的母親將被重設。	所选的母亲将被重置。		DFHack hack/scripts/gui/family-affairs.lua L732 確認對話框
+Toggle between read-only and read-write	切換唯讀／可寫	切换只读／可写		DFHack hack/scripts/gui/gm-editor.lua L32 說明頁的按鍵說明
+See live updates of changing values	即時顯示數值變化	实时显示数值变化		DFHack hack/scripts/gui/gm-editor.lua L33 說明頁的按鍵說明
+Show current items offset	顯示目前項目的位移	显示当前项的偏移		DFHack hack/scripts/gui/gm-editor.lua L34 說明頁的按鍵說明
+Find a value by entering a predicate	輸入條件式來尋找數值	输入条件式来查找数值		DFHack hack/scripts/gui/gm-editor.lua L35 說明頁的按鍵說明
+Find object with this ID, using ref-target if available	以此 ID 尋找物件（有 ref-target 時使用）	按此 ID 查找对象（有 ref-target 时使用）		DFHack hack/scripts/gui/gm-editor.lua L36 說明頁的按鍵說明
+Find object with this ID, forcing dialog box	以此 ID 尋找物件（一律開對話框）	按此 ID 查找对象（总是打开对话框）		DFHack hack/scripts/gui/gm-editor.lua L37 說明頁的按鍵說明
+Set by using a lua function	用 Lua 函式設定	用 Lua 函数设置		DFHack hack/scripts/gui/gm-editor.lua L38 說明頁的按鍵說明
+Insert a new value to the vector	在向量中插入新值	在向量中插入新值		DFHack hack/scripts/gui/gm-editor.lua L39 說明頁的按鍵說明
+Delete selected entry	刪除選取的項目	删除选中的项		DFHack hack/scripts/gui/gm-editor.lua L40 說明頁的按鍵說明
+Open selected entry as something else	以其他型別開啟選取的項目	以其他类型打开选中的项		DFHack hack/scripts/gui/gm-editor.lua L41 說明頁的按鍵說明
+Start typing filter, Enter to finish	開始輸入篩選，按 Enter 結束	开始输入筛选，按 Enter 结束		DFHack hack/scripts/gui/gm-editor.lua L42 說明頁的按鍵說明
+Move map view to location of target	將地圖視角移到目標位置	将地图视角移到目标位置		DFHack hack/scripts/gui/gm-editor.lua L43 說明頁的按鍵說明
+Show this help	顯示此說明	显示此帮助		DFHack hack/scripts/gui/gm-editor.lua L44 說明頁的按鍵說明
+Open reference offseted by index	依索引位移開啟參照	按索引偏移打开引用		DFHack hack/scripts/gui/gm-editor.lua L45 說明頁的按鍵說明
+GameMaster's editor	GM 編輯器	GM 编辑器	c	DFHack hack/scripts/gui/gm-editor.lua L124 視窗標題（開啟時）
+GameMaster's Editor	GM 編輯器	GM 编辑器	c	DFHack hack/scripts/gui/gm-editor.lua L657 視窗標題（updateTitles 拼出，四種組合各一條）
+GameMaster's Editor (Read only)	GM 編輯器（唯讀）	GM 编辑器（只读）	c	DFHack hack/scripts/gui/gm-editor.lua L659 視窗標題
+GameMaster's Editor (Live updates)	GM 編輯器（即時更新）	GM 编辑器（实时更新）	c	DFHack hack/scripts/gui/gm-editor.lua L664 視窗標題
+GameMaster's Editor (Read only) (Live updates)	GM 編輯器（唯讀）（即時更新）	GM 编辑器（只读）（实时更新）	c	DFHack hack/scripts/gui/gm-editor.lua L664 視窗標題
+Magma not included.	不含熔岩。	不含熔岩。		DFHack hack/scripts/gui/gm-editor.lua L141 說明頁免責聲明的最後一行（前三行跨 token 斷句，不翻）
+Test function	測試函式	测试函数	c	DFHack hack/scripts/gui/gm-editor.lua L238 輸入對話框標題
+Input function that tests(k,v as argument):	輸入測試函式（參數為 k, v）：	输入测试函数（参数为 k, v）：		DFHack hack/scripts/gui/gm-editor.lua L238 輸入對話框提示
+Error!	錯誤！	错误！	c	DFHack hack/scripts/gui/gm-editor.lua L244 訊息對話框標題
+function failed to compile	函式編譯失敗	函数编译失败		DFHack hack/scripts/gui/gm-editor.lua L244 訊息對話框第一行（第二行是 Lua 錯誤訊息，不翻）
+Choose type:	選擇型別：	选择类型：	c	DFHack hack/scripts/gui/gm-editor.lua L324 清單對話框標題
+Note:	注意	注意		DFHack hack/scripts/gui/gm-editor.lua L318 清單對話框訊息開頭（其後的說明在 NEWLINE 處斷句，不翻）
+Class type	類別型別	类别类型	c	DFHack hack/scripts/gui/gm-editor.lua L339 輸入對話框標題
+You can:	你可以：	你可以：		DFHack hack/scripts/gui/gm-editor.lua L339 輸入對話框說明（以 \n 分行，一行一條）
+* Enter type name (without 'df.')	* 輸入型別名稱（不含「df.」）	* 输入类型名称（不含“df.”）		DFHack hack/scripts/gui/gm-editor.lua L339 輸入對話框說明
+* Leave empty for default type and 'nil' value	* 留空：預設型別與「nil」值	* 留空：默认类型与“nil”值		DFHack hack/scripts/gui/gm-editor.lua L339 輸入對話框說明
+* Enter '*' for default type and 'new' constructed pointer value	* 輸入「*」：預設型別與「new」建構的指標值	* 输入“*”：默认类型与“new”构造的指针值		DFHack hack/scripts/gui/gm-editor.lua L339 輸入對話框說明
+Enter new type:	輸入新型別：	输入新类型：		DFHack hack/scripts/gui/gm-editor.lua L426 輸入對話框提示
+Enter offset:	輸入位移：	输入偏移：		DFHack hack/scripts/gui/gm-editor.lua L435 輸入對話框提示
+Set to what?	設為什麼？	设为什么？	c	DFHack hack/scripts/gui/gm-editor.lua L537 輸入對話框標題
+Lua code to set to (v cur target):	設定值的 Lua 碼（v 為目前目標）：	设定值的 Lua 码（v 为当前目标）：		DFHack hack/scripts/gui/gm-editor.lua L537 輸入對話框提示
+GAME SUSPENDED	遊戲已凍結	游戏已冻结		DFHack hack/scripts/gui/gm-editor.lua L753 凍結模式時畫在視窗下框
+Dwarf Fortress is currently suspended by gui/gm-editor	矮人要塞目前已被 gui/gm-editor 凍結	矮人要塞目前已被 gui/gm-editor 冻结		DFHack hack/scripts/gui/gm-editor.lua L773 凍結模式時畫在畫面四角
+GM Editor	GM 編輯器	GM 编辑器	c	DFHack hack/scripts/gui/gm-editor.lua L858 輸入對話框標題（gui/gm-editor dialog）
+Object to edit:	要編輯的物件：	要编辑的对象：		DFHack hack/scripts/gui/gm-editor.lua L858 輸入對話框提示
+Hide column	隱藏欄	隐藏列		DFHack hack/scripts/gui/manipulator.lua L90 欄位選單／快捷鍵說明
+Hide group	隱藏群組	隐藏分组		DFHack hack/scripts/gui/manipulator.lua L94 欄位選單／快捷鍵說明
+Zoom to	前往	前往		DFHack hack/scripts/gui/manipulator.lua L99 欄位選單
+Shown:	顯示：	显示：		DFHack hack/scripts/gui/manipulator.lua L704 統計列標籤
+Total:	總計：	总计：		DFHack hack/scripts/gui/manipulator.lua L708 統計列標籤
+Shift click to select multiple.	Shift+點選可多選。	Shift+点击可多选。		DFHack hack/scripts/gui/manipulator.lua L1055 快速選單提示
+Unit Overview and Manipulator	單位總覽與管理	单位总览与管理		DFHack hack/scripts/gui/manipulator.lua L1112 視窗標題
+Use arrow keys or middle click drag to navigate cells. Left click or ENTER to toggle cell.	用方向鍵或按住滑鼠中鍵拖曳來移動儲存格。按左鍵或 ENTER 切換儲存格。	用方向键或按住鼠标中键拖动来移动单元格。按左键或 ENTER 切换单元格。		DFHack hack/scripts/gui/manipulator.lua L1162 WrappedLabel 說明
+Sort/reverse sort	排序／反向排序	排序／反向排序		DFHack hack/scripts/gui/manipulator.lua L1167 快捷鍵說明
+Jump to column	跳到欄	跳到列		DFHack hack/scripts/gui/manipulator.lua L1174 快捷鍵說明
+Export to csv	匯出 CSV	导出 CSV		DFHack hack/scripts/gui/manipulator.lua L1181 快捷鍵說明
+Unhide column	取消隱藏欄	取消隐藏列		DFHack hack/scripts/gui/manipulator.lua L1202 快捷鍵說明
+Zoom to unit	前往單位	前往单位		DFHack hack/scripts/gui/manipulator.lua L1209 快捷鍵說明
+Zoom to source	前往來源	前往来源		DFHack hack/scripts/gui/manipulator.lua L1216 快捷鍵說明
+Refresh units (new units have arrived)	重新整理單位（有新單位抵達）	刷新单位（有新单位抵达）		DFHack hack/scripts/gui/manipulator.lua L1224 快捷鍵說明
+Refresh units	重新整理單位	刷新单位		DFHack hack/scripts/gui/manipulator.lua L1224 快捷鍵說明
+Jump to column:	跳到欄：	跳到列：		DFHack hack/scripts/gui/manipulator.lua L1239 快速選單標題
+Unhide column:	取消隱藏欄：	取消隐藏列：		DFHack hack/scripts/gui/manipulator.lua L1257 快速選單標題
+Export World Map	匯出世界地圖	导出世界地图	c	DFHack hack/scripts/gui/export-world-map.lua L20 視窗標題
+counting...	計算中……	计算中……		DFHack hack/scripts/gui/export-world-map.lua L146 載入進度的初始文字（以刪節號結尾，一定要整句條目）
+Region Map Export (regions.csv)	地區地圖匯出（regions.csv）	地区地图导出（regions.csv）		DFHack hack/scripts/gui/export-world-map.lua L108 匯出項目清單
+River Export (rivers.csv)	河流匯出（rivers.csv）	河流导出（rivers.csv）		DFHack hack/scripts/gui/export-world-map.lua L109 匯出項目清單
+Site Export (sites.csv)	據點匯出（sites.csv）	据点导出（sites.csv）		DFHack hack/scripts/gui/export-world-map.lua L110 匯出項目清單
+Elevation Grid Export (elevation.dat, elevation.vrt)	高程網格匯出（elevation.dat, elevation.vrt）	高程网格导出（elevation.dat, elevation.vrt）		DFHack hack/scripts/gui/export-world-map.lua L111 匯出項目清單
+Road Export (roads.geojson)	道路匯出（roads.geojson）	道路导出（roads.geojson）		DFHack hack/scripts/gui/export-world-map.lua L112 匯出項目清單
+Export Geological Layers (layers.csv)	匯出地質分層（layers.csv）	导出地质分层（layers.csv）		DFHack hack/scripts/gui/export-world-map.lua L113 匯出項目清單
+Export Plant and Animal Populations (*_pops.csv)	匯出動植物族群（*_pops.csv）	导出动植物种群（*_pops.csv）		DFHack hack/scripts/gui/export-world-map.lua L114 匯出項目清單
+Load Region Details!	載入地區細節！	加载地区细节！		DFHack hack/scripts/gui/export-world-map.lua L150 按鈕
+Select exports to place in dfhack-config/map-export:	選擇要匯出到 dfhack-config/map-export 的項目：	选择要导出到 dfhack-config/map-export 的项目：		DFHack hack/scripts/gui/export-world-map.lua L160 標籤（整句條目，蓋過 Select {1}）
+Create folder for world name	依世界名稱建立資料夾	按世界名称创建文件夹		DFHack hack/scripts/gui/export-world-map.lua L175 循環選項標籤
+Create subfolder for world date	依世界日期建立子資料夾	按世界日期创建子文件夹		DFHack hack/scripts/gui/export-world-map.lua L188 循環選項標籤
+Run Map Exports!	執行地圖匯出！	执行地图导出！		DFHack hack/scripts/gui/export-world-map.lua L197 按鈕
+Spectate	旁觀	旁观	c	DFHack hack/scripts/gui/spectate.lua L48 視窗標題
+See help for option details:	選項詳情請見說明：	选项详情请见帮助：		DFHack hack/scripts/gui/spectate.lua L178
+Spectate mode	旁觀模式	旁观模式		DFHack hack/scripts/gui/spectate.lua L190 開關標籤（原文結尾空白由引擎照原文補）
+Switch target (sec):	切換目標（秒）：	切换目标（秒）：		DFHack hack/scripts/gui/spectate.lua L193 數字輸入框標籤
+Auto unpause	自動取消暫停	自动取消暂停		DFHack hack/scripts/gui/spectate.lua L194 開關標籤（原文以空白補到 21 格）
+Cinematic action	電影式鏡頭	电影式镜头		DFHack hack/scripts/gui/spectate.lua L195 開關標籤
+Include animals	包含動物	包含动物		DFHack hack/scripts/gui/spectate.lua L196 開關標籤
+Include hostiles	包含敵人	包含敌人		DFHack hack/scripts/gui/spectate.lua L197 開關標籤
+Include visitors	包含訪客	包含访客		DFHack hack/scripts/gui/spectate.lua L198 開關標籤
+Include wildlife	包含野生動物	包含野生动物		DFHack hack/scripts/gui/spectate.lua L199 開關標籤
+Prefer conflict	優先衝突	优先冲突		DFHack hack/scripts/gui/spectate.lua L200 開關標籤
+Prefer new arrivals	優先新來者	优先新来者		DFHack hack/scripts/gui/spectate.lua L201 開關標籤
+Prefer nicknamed	優先有暱稱者	优先有昵称者		DFHack hack/scripts/gui/spectate.lua L202 開關標籤
+Tooltips:	提示框：	提示框：		DFHack hack/scripts/gui/spectate.lua L211 標籤
+: Enabled	：啟用	：启用		DFHack hack/scripts/gui/spectate.lua L228 提示框列標籤（按鍵另畫，冒號是同一段字）
+Blink period (ms):	閃爍週期（毫秒）：	闪烁周期（毫秒）：		DFHack hack/scripts/gui/spectate.lua L230 數字輸入框標籤
+Hold to show:	按住顯示：	按住显示：		DFHack hack/scripts/gui/spectate.lua L234 循環選項標籤
+: Job	:工作	:工作		DFHack hack/scripts/gui/spectate.lua L245 提示框列標籤；原文只有 5 格，全形冒號放不下，用半形
+: Activity	：活動	：活动		DFHack hack/scripts/gui/spectate.lua L246 提示框列標籤
+: Name	:名字	:名字		DFHack hack/scripts/gui/spectate.lua L247 提示框列標籤；原文只有 6 格，全形冒號加空白放不下，用半形
+: Stress	：壓力	：压力		DFHack hack/scripts/gui/spectate.lua L248 提示框列標籤
+Armok's Sandbox	Armok 沙盒	Armok 沙盒	c	DFHack hack/scripts/gui/sandbox.lua L22 視窗標題
+hostile (undead)	敵對（不死）	敌对（亡灵）		DFHack hack/scripts/gui/sandbox.lua L100 生成立場選項
+independent/wild	獨立／野生	独立／野生		DFHack hack/scripts/gui/sandbox.lua L101 生成立場選項
+citizens/pets	公民／寵物	公民／宠物		DFHack hack/scripts/gui/sandbox.lua L106 生成立場選項
+Unit group #	單位組 #	单位组 #		DFHack hack/scripts/gui/sandbox.lua L118 標籤（後接組號；下一行 unit+s+in group 拆成多段，不翻）
+Spawn unit	生成單位	生成单位		DFHack hack/scripts/gui/sandbox.lua L131 快捷鍵說明
+Start new group	開始新的一組	开始新的一组		DFHack hack/scripts/gui/sandbox.lua L141 快捷鍵說明
+Group disposition	本組立場	本组立场		DFHack hack/scripts/gui/sandbox.lua L151 循環選項標籤
+Spawn tree	生成樹木	生成树木		DFHack hack/scripts/gui/sandbox.lua L165 快捷鍵說明
+Create item	建立物品	创建物品		DFHack hack/scripts/gui/sandbox.lua L175 快捷鍵說明
+Dump to tile under mouse cursor	傾倒到滑鼠下的圖格	倾倒到鼠标下的图格		DFHack hack/scripts/gui/autodump.lua L47 快捷鍵說明
+Destroy items	銷毀物品	销毁物品		DFHack hack/scripts/gui/autodump.lua L55 快捷鍵說明
+Undo destroy items	復原銷毀	撤销销毁		DFHack hack/scripts/gui/autodump.lua L63 快捷鍵說明
+Select all items on this z-level	選取這一層的所有物品	选取这一层的所有物品		DFHack hack/scripts/gui/autodump.lua L71 快捷鍵說明（整句條目，蓋過 Select {1}）
+Clear selected items	清除選取的物品	清除选中的物品		DFHack hack/scripts/gui/autodump.lua L85 快捷鍵說明
+Include forbidden items	包含禁用的物品	包含禁用的物品		DFHack hack/scripts/gui/autodump.lua L95 開關標籤
+Include items claimed by jobs	包含工作佔用的物品	包含工作占用的物品		DFHack hack/scripts/gui/autodump.lua L104 開關標籤
+Include items dropped by traders	包含商人丟下的物品	包含商人丢下的物品		DFHack hack/scripts/gui/autodump.lua L113 開關標籤
+Forbid after teleporting	傳送後設為禁用	传送后设为禁用		DFHack hack/scripts/gui/autodump.lua L122 開關標籤
+Unit Syndromes	單位症候群	单位综合征	c	DFHack hack/scripts/gui/unit-syndromes.lua L357 視窗標題
+Citizens and Residents	公民與居民	公民与居民		DFHack hack/scripts/gui/unit-syndromes.lua L375 分類清單
+Livestock	牲畜	牲畜		DFHack hack/scripts/gui/unit-syndromes.lua L376 分類清單
+Wild animals	野生動物	野生动物		DFHack hack/scripts/gui/unit-syndromes.lua L377 分類清單
+All units	所有單位	所有单位		DFHack hack/scripts/gui/unit-syndromes.lua L379 分類清單
+All syndromes	所有症候群	所有综合征		DFHack hack/scripts/gui/unit-syndromes.lua L380 分類清單
+Draw:	繪製	绘制		DFHack hack/scripts/gui/pathable.lua L19 開關標籤
+Lock target:	鎖定目標：	锁定目标：		DFHack hack/scripts/gui/pathable.lua L27 開關標籤
+Show hidden:	顯示隱藏：	显示隐藏：		DFHack hack/scripts/gui/pathable.lua L34 開關標籤
+Pathability group:	通行群組：	通行分组：		DFHack hack/scripts/gui/pathable.lua L39 標籤（右邊接群組編號）
+Not available in adventure mode.	冒險模式下無法使用。	冒险模式下无法使用。		DFHack hack/scripts/gui/pathable.lua L85
+Depot is reachable by:	可抵達貿易站的有：	可抵达贸易站的有：		DFHack hack/scripts/gui/pathable.lua L101
+Pack animals:	馱獸：	驮兽：		DFHack hack/scripts/gui/pathable.lua L106
+Wagons:	篷車：	篷车：		DFHack hack/scripts/gui/pathable.lua L114
+Zoom to depot	前往貿易站	前往贸易站		DFHack hack/scripts/gui/pathable.lua L122 快捷鍵說明
+Pathability Viewer	通行性檢視器	通行性查看器	c	DFHack hack/scripts/gui/pathable.lua L148 視窗標題
+Follow mouse	跟隨滑鼠	跟随鼠标		DFHack hack/scripts/gui/pathable.lua L157 分頁標籤
+Input Monitor	輸入監看器	输入监视器	c	DFHack hack/scripts/devel/input-monitor.lua L11 視窗標題
+Modifier keys:	修飾鍵：	修饰键：		DFHack hack/scripts/devel/input-monitor.lua L32 標籤
+Mouse buttons:	滑鼠按鍵：	鼠标按键：		DFHack hack/scripts/devel/input-monitor.lua L41 標籤（後面 Lbut/Mbut/Rbut 是按鍵名，不翻）
+Input stream (newest at bottom):	輸入串流（最新的在最下方）：	输入流（最新的在最下面）：		DFHack hack/scripts/devel/input-monitor.lua L54
+Hit ESC twice or click here twice to close	按兩次 ESC 或點這裡兩次以關閉	按两次 ESC 或点这里两次以关闭		DFHack hack/scripts/devel/input-monitor.lua L67 快捷鍵說明
+Equipment conflict report:	裝備衝突報告：	装备冲突报告：		DFHack hack/scripts/uniform-unstick.lua L337
+After resolving conflicts, be sure to click the "Update equipment" button to reassign new equipment!	解決衝突後，務必按下「Update equipment」按鈕來重新分配裝備！	解决冲突后，务必点击“Update equipment”按钮来重新分配装备！		DFHack hack/scripts/uniform-unstick.lua L351 WrappedLabel；按鈕名照遊戲原文（遊戲本體的這個按鈕尚無譯文）
+Try to resolve conflicts	嘗試解決衝突	尝试解决冲突		DFHack hack/scripts/uniform-unstick.lua L359 快捷鍵說明
+Adds a link to the equip screen to fix equipment conflicts.	在裝備畫面加上修正裝備衝突的連結。	在装备界面加上修复装备冲突的链接。		DFHack hack/scripts/uniform-unstick.lua L385 疊加介面說明（控制面板顯示）
+Detect conflicts	偵測衝突	检测冲突		DFHack hack/scripts/uniform-unstick.lua L398 裝備畫面的疊加介面按鈕
+No conflicts	沒有衝突	没有冲突		DFHack hack/scripts/uniform-unstick.lua L405 裝備畫面的疊加介面按鈕（原文前後空白補齊，由引擎照原文補）
+Removing from uniform	從制服中移除	从制服中移除		DFHack hack/scripts/uniform-unstick.lua L197 衝突報告的一行（報告是 uniform-unstick --all 的輸出，以 \n 分行）
+Suspendmanager is	Suspendmanager	Suspendmanager		DFHack hack/scripts/gui/suspendmanager.lua L21 開關標籤（後接 Enabled／Disabled；外掛名照原文，「is」不另譯）
+Prevent blocking jobs:	防止工作互相阻擋：	防止工作互相阻挡：		DFHack hack/scripts/gui/suspendmanager.lua L30 開關標籤
+Adds information to suspended building panels about why it is suspended.	在暫停中的建築面板加上暫停原因。	在暂停中的建筑面板加上暂停原因。		DFHack hack/lua/plugins/suspendmanager.lua L72 疊加介面說明（控制面板顯示）
+Not suspended.	未暫停。	未暂停。		DFHack hack/lua/plugins/suspendmanager.lua L97 建築面板的疊加介面
+Adds a link to suspended building panels for enabling suspendmanager.	在暫停中的建築面板加上啟用 suspendmanager 的連結。	在暂停中的建筑面板加上启用 suspendmanager 的链接。		DFHack hack/lua/plugins/suspendmanager.lua L113 疊加介面說明（控制面板顯示）
+Annotates suspended buildings with a visible marker.	在暫停中的建築上標示明顯的記號。	在暂停中的建筑上标示明显的记号。		DFHack hack/lua/plugins/suspendmanager.lua L174 疊加介面說明（控制面板顯示）
+Jobsite is submerged	工地被水淹沒	工地被水淹没	inner	DFHack hack/plugins/suspendmanager.plug.dll 暫停原因（suspensionDescription），只給 Suspended because: {%1}. 用
+Managed by buildingplan	由 buildingplan 管理	由 buildingplan 管理	inner	DFHack hack/plugins/suspendmanager.plug.dll 暫停原因（suspensionDescription），只給 Suspended because: {%1}. 用
+May block another build job	可能擋住其他建造工作	可能挡住其他建造工作	inner	DFHack hack/plugins/suspendmanager.plug.dll 暫停原因（suspensionDescription），只給 Suspended because: {%1}. 用
+Waiting for carve/smooth/engrave	等待開鑿／磨平／雕刻	等待开凿／磨平／雕刻	inner	DFHack hack/plugins/suspendmanager.plug.dll 暫停原因（suspensionDescription），只給 Suspended because: {%1}. 用
+Blocks another build job	擋住其他建造工作	挡住其他建造工作	inner	DFHack hack/plugins/suspendmanager.plug.dll 暫停原因（suspensionDescription），只給 Suspended because: {%1}. 用
+Would collapse immediately	會立刻崩塌	会立刻坍塌	inner	DFHack hack/plugins/suspendmanager.plug.dll 暫停原因（suspensionDescription），只給 Suspended because: {%1}. 用
+Blocked by an unmovable item	被無法移動的物品擋住	被无法移动的物品挡住	inner	DFHack hack/plugins/suspendmanager.plug.dll 暫停原因（suspensionDescription），只給 Suspended because: {%1}. 用
+Would collapse machinery	會壓壞機械	会压坏机械	inner	DFHack hack/plugins/suspendmanager.plug.dll 暫停原因（suspensionDescription），只給 Suspended because: {%1}. 用
+External reason	外部原因	外部原因	inner	DFHack hack/plugins/suspendmanager.plug.dll 暫停原因（suspensionDescription），只給 Suspended because: {%1}. 用
+DF Notes	DF 筆記	DF 笔记	c	DFHack hack/scripts/gui/notes.lua L23 視窗標題
+New note	新增筆記	新建笔记		DFHack hack/scripts/gui/notes.lua L77 快捷鍵說明
+Adds a button for activating a civilian alert when the squads panel is open.	開啟小隊面板時加上發布平民警報的按鈕。	打开小队面板时加上发布平民警报的按钮。		DFHack hack/scripts/gui/civ-alert.lua L115 疊加介面說明（控制面板顯示）
+Click to configure	點選進行設定	点击进行设置		DFHack hack/scripts/gui/civ-alert.lua L183 疊加介面提示第一行
+civilian alert	平民警報	平民警报		DFHack hack/scripts/gui/civ-alert.lua L184 疊加介面提示第二行（原文前後空白補齊）
+Civilian alert	平民警報	平民警报	c	DFHack hack/scripts/gui/civ-alert.lua L202 視窗標題
+Choose the burrow(s) where you want your civilians to hide during danger.	選擇危險時平民要躲藏的活動區。	选择危险时平民要躲藏的活动区。		DFHack hack/scripts/gui/civ-alert.lua L217 WrappedLabel
+Sound alarm! Citizens run to safety!	拉響警報！公民快去避難！	拉响警报！公民快去避难！		DFHack hack/scripts/gui/civ-alert.lua L222 快捷鍵說明
+All clear! Citizens return to normal	解除警報！公民恢復正常	解除警报！公民恢复正常		DFHack hack/scripts/gui/civ-alert.lua L229 快捷鍵說明
+No burrows defined. Please define one to use for the civalert.	尚未定義活動區。請先定義一個供平民警報使用。	尚未定义活动区。请先定义一个供平民警报使用。		DFHack hack/scripts/gui/civ-alert.lua L247 WrappedLabel
+Embark Anywhere	隨處出發	随处出发	c	DFHack hack/scripts/gui/embark-anywhere.lua L6 視窗標題
+Click anywhere on the map to ignore warnings and embark wherever you want.	點選地圖上任何地方，即可忽略警告、在任意位置出發。	点击地图上任何地方，即可忽略警告、在任意位置出发。		DFHack hack/scripts/gui/embark-anywhere.lua L15 WrappedLabel
+There may be unforeseen consequences when embarking where the game doesn't expect.	在遊戲預期之外的地點出發，可能會有意想不到的後果。	在游戏预期之外的地点出发，可能会有意想不到的后果。		DFHack hack/scripts/gui/embark-anywhere.lua L18 WrappedLabel
+Right click on this window to cancel.	在此視窗上按右鍵即可取消。	在此窗口上点右键即可取消。		DFHack hack/scripts/gui/embark-anywhere.lua L22 WrappedLabel
+Good luck!	祝好運！	祝好运！		DFHack hack/scripts/gui/embark-anywhere.lua L53 確認出發面板（前兩行一句拆在兩個 token，不翻）
+Adds productivity actions to the stocks page.	在庫存頁面加上便利操作。	在库存页面加上便利操作。		DFHack hack/lua/plugins/stocks.lua L72 疊加介面說明（控制面板顯示）
+expand all	全部展開	全部展开		DFHack hack/lua/plugins/stocks.lua L86 庫存頁疊加介面的快捷鍵說明
+remove empties	移除空項目	移除空项		DFHack hack/lua/plugins/stocks.lua L99 庫存頁疊加介面的快捷鍵說明
+Show the viewed unit's current and long-term mood on their sheet.	在單位資訊頁顯示目前與長期心情。	在单位信息页显示当前与长期心情。		DFHack hack/scripts/internal/unit-info-viewer/overall-mood.lua L51 疊加介面說明（控制面板顯示）
+Mood:	心情	心情		DFHack hack/scripts/internal/unit-info-viewer/overall-mood.lua L85 人物頁疊加介面標籤（後接心情等級）
+Long-term mood:	長期心情：	长期心情：		DFHack hack/scripts/internal/unit-info-viewer/overall-mood.lua L88 人物頁疊加介面標籤
+Displeased	不悅	不悦		DFHack hack/scripts/internal/unit-info-viewer/overall-mood.lua L35 人物頁疊加介面的心情等級（疊加介面沒有焦點，單字只能放 strings）
+Pleased	愉快	愉快		DFHack hack/scripts/internal/unit-info-viewer/overall-mood.lua L37 人物頁疊加介面的心情等級（疊加介面沒有焦點，單字只能放 strings）
+Ecstatic	狂喜	狂喜		DFHack hack/scripts/internal/unit-info-viewer/overall-mood.lua L39 人物頁疊加介面的心情等級（疊加介面沒有焦點，單字只能放 strings）
+Colors editor	顏色編輯器	颜色编辑器	c	DFHack hack/scripts/internal/gm-unit/editor_colors.lua L10 gui/gm-unit 子視窗標題
+Choose color	選擇顏色	选择颜色	c	DFHack hack/scripts/internal/gm-unit/editor_colors.lua L127 清單對話框標題
+Select feature's color	選擇部位的顏色	选择部位的颜色		DFHack hack/scripts/internal/gm-unit/editor_colors.lua L128 清單對話框提示（整句條目，蓋過 Select {1}）
+: edit feature	：編輯部位	：编辑部位		DFHack hack/scripts/internal/gm-unit/editor_colors.lua L162 按鍵說明（按鍵另畫）
+: randomise color	：隨機顏色	：随机颜色		DFHack hack/scripts/internal/gm-unit/editor_colors.lua L163 按鍵說明（按鍵另畫）
+Adds extended export progress bar to the legends main screen.	在傳說主畫面加上擴充匯出的進度列。	在传说主界面加上扩展导出的进度栏。		DFHack hack/scripts/internal/exportlegends/asyncexport.lua L24 疊加介面說明（控制面板顯示）
+Also export DFHack extended legends data:	同時匯出 DFHack 擴充傳說資料：	同时导出 DFHack 扩展传说数据：		DFHack hack/scripts/internal/exportlegends/asyncexport.lua L44 傳說主畫面疊加介面的開關標籤
+Exporting	匯出中	导出中		DFHack hack/scripts/internal/exportlegends/asyncexport.lua L51 匯出進度列開頭（後接項目名與百分比）
+% complete	% 完成	% 完成		DFHack hack/scripts/internal/exportlegends/asyncexport.lua L55 匯出進度列結尾（接在百分比數字後）
+Prevents legends mode from being exited while an export is in progress.	匯出進行中時，防止離開傳說模式。	导出进行中时，防止离开传说模式。		DFHack hack/scripts/internal/exportlegends/asyncexport.lua L81 疊加介面說明（控制面板顯示）
+Block Borders	區塊邊界	区块边界	c	DFHack hack/scripts/devel/block-borders.lua L18 視窗標題
+Draw borders:	繪製邊界：	绘制边界：		DFHack hack/scripts/devel/block-borders.lua L29 開關標籤
+Block size:	區塊大小：	区块大小：		DFHack hack/scripts/devel/block-borders.lua L35 循環選項標籤（原文開頭兩個空白對齊，由引擎照原文補）
+Adds a panel to unbuilt buildings indicating whether a dwarf is on their way to build.	在未完工的建築加上面板，顯示是否有矮人正前往建造。	在未完工的建筑加上面板，显示是否有矮人正前往建造。		DFHack hack/scripts/prioritize.lua L848 疊加介面說明（控制面板顯示）
+Job taken by:	接手者：	接手者：		DFHack hack/scripts/prioritize.lua L863 建築面板疊加介面標籤（後接單位名）
+Make top priority:	設為最優先：	设为最优先：		DFHack hack/scripts/prioritize.lua L871 建築面板疊加介面的開關標籤
+Adds toggle to pets screen for autoretraining partially trained pets.	在寵物畫面加上開關，自動重新訓練部分馴化的寵物。	在宠物界面加上开关，自动重新训练部分驯化的宠物。		DFHack hack/lua/plugins/logistics.lua L276 疊加介面說明（控制面板顯示）
+Autoretrain livestock:	自動重新訓練牲畜：	自动重新训练牲畜：		DFHack hack/lua/plugins/logistics.lua L301 寵物畫面疊加介面的開關標籤
+Skip combat animations and announcements with a click or key press.	點一下或按任意鍵即可略過戰鬥動畫與通知。	点一下或按任意键即可跳过战斗动画与通知。		DFHack hack/scripts/internal/advtools/fastcombat.lua L9 疊加介面說明（控制面板顯示）
+Unit info	單位資訊	单位信息	c	DFHack hack/scripts/gui/unit-info-viewer.lua L450 視窗標題
+Please select a unit.	請選擇一個單位。	请选择一个单位。		DFHack hack/scripts/gui/unit-info-viewer.lua L474
+A secretive ghost. This spirit has not been properly memorialized or buried.	行蹤隱密的鬼魂。這個亡靈未曾得到妥善的紀念或安葬。	行踪隐秘的鬼魂。这个亡灵未曾得到妥善的纪念或安葬。		DFHack hack/scripts/gui/unit-info-viewer.lua L97 鬼魂說明＋固定句（L292 拼成一段再 :wrap；其餘鬼魂類型遊戲本體已有同句條目）
+A moaning spirit returned from the dead.  It will generally trouble one unfortunate at a time. This spirit has not been properly memorialized or buried.	從死者之中歸來的哀號亡靈。它通常一次只糾纏一個倒楣鬼。這個亡靈未曾得到妥善的紀念或安葬。	从死者之中归来的哀号亡灵。它通常一次只纠缠一个倒霉鬼。这个亡灵未曾得到妥善的纪念或安葬。		DFHack hack/scripts/gui/unit-info-viewer.lua L101 鬼魂說明＋固定句（L292 拼成一段再 :wrap；其餘鬼魂類型遊戲本體已有同句條目）
+A howling spirit.  The ceaseless noise is making sleep difficult. This spirit has not been properly memorialized or buried.	嚎叫的亡靈。不停的噪音讓人難以入睡。這個亡靈未曾得到妥善的紀念或安葬。	嚎叫的亡灵。不停的噪音让人难以入睡。这个亡灵未曾得到妥善的纪念或安葬。		DFHack hack/scripts/gui/unit-info-viewer.lua L102 鬼魂說明＋固定句（L292 拼成一段再 :wrap；其餘鬼魂類型遊戲本體已有同句條目）
+A mysterious ghost. This spirit has not been properly memorialized or buried.	神祕的鬼魂。這個亡靈未曾得到妥善的紀念或安葬。	神秘的鬼魂。这个亡灵未曾得到妥善的纪念或安葬。		DFHack hack/scripts/gui/unit-info-viewer.lua L109 鬼魂說明＋固定句（L292 拼成一段再 :wrap；其餘鬼魂類型遊戲本體已有同句條目）
+larger than average	比平均大	比平均大	inner	DFHack hack/scripts/gui/unit-info-viewer.lua L368-372 體型比較，只給體型句型的佔位用
+smaller than average	比平均小	比平均小	inner	DFHack hack/scripts/gui/unit-info-viewer.lua L368-372 體型比較，只給體型句型的佔位用
+about average	約為平均	约为平均	inner	DFHack hack/scripts/gui/unit-info-viewer.lua L368-372 體型比較，只給體型句型的佔位用
+a miniscule part of an elephant	大象的極小部分	大象的极小部分	inner	DFHack hack/scripts/gui/unit-info-viewer.lua L355-362 重量比較對象（原文 an cat、an dwarf 照抄）；只給重量句型的佔位用
+a miniscule part of an cat	貓的極小部分	猫的极小部分	inner	DFHack hack/scripts/gui/unit-info-viewer.lua L355-362 重量比較對象（原文 an cat、an dwarf 照抄）；只給重量句型的佔位用
+a miniscule part of an dwarf	矮人的極小部分	矮人的极小部分	inner	DFHack hack/scripts/gui/unit-info-viewer.lua L355-362 重量比較對象（原文 an cat、an dwarf 照抄）；只給重量句型的佔位用
+N/A	無	无		DFHack hack/scripts/prioritize.lua L883 建築面板疊加介面：沒有人接手時（疊加介面沒有焦點，只能放 strings）

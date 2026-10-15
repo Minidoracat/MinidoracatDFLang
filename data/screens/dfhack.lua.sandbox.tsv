@@ -1,0 +1,3 @@
+en	zh-Hant	zh-Hans	align	row	note
+friendly	友善	友好			DFHack hack/scripts/gui/sandbox.lua L102 生成立場選項；通用單字，只在沙盒視窗套用
+hostile	敵對	敌对			DFHack hack/scripts/gui/sandbox.lua L99 生成立場選項；全域已有 Hostile（敵對），這裡寫明避免大小寫退回猜錯

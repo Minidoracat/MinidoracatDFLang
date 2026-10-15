@@ -1,0 +1,83 @@
+en	zh-Hant	zh-Hans	align	note
+Load quickfort blueprint	載入 quickfort 藍圖	加载 quickfort 蓝图	c	DFHack hack/scripts/gui/quickfort.lua L57 藍圖選擇視窗標題
+Double click or	點兩下或	双击或		DFHack hack/scripts/gui/quickfort.lua L113 藍圖選擇視窗底部，後接按鍵與「Load selected blueprint」
+Load selected blueprint	載入選取的藍圖	加载选中的蓝图		DFHack hack/scripts/gui/quickfort.lua L118 按鍵說明
+Shift click or	Shift 點一下或	Shift+单击或		DFHack hack/scripts/gui/quickfort.lua L128 藍圖選擇視窗底部，後接按鍵與「Delete selected blueprint」
+Delete selected blueprint	刪除選取的藍圖	删除选中的蓝图		DFHack hack/scripts/gui/quickfort.lua L133 按鍵說明
+No description	沒有說明	没有说明		DFHack hack/scripts/gui/quickfort.lua L209 藍圖清單下方的說明框（WrappedLabel），藍圖沒有註解時
+Cannot list blueprints	無法列出藍圖	无法列出蓝图	c	DFHack hack/scripts/gui/quickfort.lua L188 對話框標題（內文是錯誤訊息，不翻）
+Delete blueprint	刪除藍圖	删除蓝图	c	DFHack hack/scripts/gui/quickfort.lua L250 確認對話框標題
+Are you sure you want to delete this blueprint?	確定要刪除這份藍圖嗎？	确定要删除这个蓝图吗？		DFHack hack/scripts/gui/quickfort.lua L251 確認對話框內文第一行（第二行是檔名）
+Reposition with the mouse.	用滑鼠調整位置。	用鼠标调整位置。		DFHack hack/scripts/gui/quickfort.lua L475 quickfort 視窗第一行
+Blueprint shows help text.	藍圖會顯示說明文字。	蓝图会显示说明文字。		DFHack hack/scripts/gui/quickfort.lua L473 quickfort 視窗第一行（notes 藍圖）
+Click or hit	點一下或按	单击或按		DFHack hack/scripts/gui/quickfort.lua L305 quickfort 視窗「Click or hit Enter to apply.」的開頭（原文 "Click or hit "）
+to apply.	來套用。	以应用。		DFHack hack/scripts/gui/quickfort.lua L308 quickfort 視窗「Click or hit Enter to apply.」的結尾
+Load new blueprint	載入新藍圖	加载新蓝图		DFHack hack/scripts/gui/quickfort.lua L312 按鍵說明
+Current blueprint:	目前藍圖：	当前蓝图：		DFHack hack/scripts/gui/quickfort.lua L315
+No blueprint loaded	尚未載入藍圖	尚未加载蓝图		DFHack hack/scripts/gui/quickfort.lua L486 目前藍圖（WrappedLabel）
+Blueprint tiles:	藍圖格數：	蓝图格数：		DFHack hack/scripts/gui/quickfort.lua L322 後接數字（原文 "Blueprint tiles: "）
+Invalid tiles:	無效格數：	无效格数：		DFHack hack/scripts/gui/quickfort.lua L325 後接數字（原文 "Invalid tiles:   "）
+Zoom to locked position	跳到鎖定位置	跳转到锁定位置		DFHack hack/scripts/gui/quickfort.lua L491 按鍵說明
+Unlock blueprint position	解鎖藍圖位置	解锁蓝图位置		DFHack hack/scripts/gui/quickfort.lua L493 按鍵說明（"Unl".."ock blueprint position"）
+Lock blueprint position	鎖定藍圖位置	锁定蓝图位置		DFHack hack/scripts/gui/quickfort.lua L493 按鍵說明（"L".."ock blueprint position"）
+Baseline dig priority:	基準挖掘優先順序：	基准挖掘优先级：		DFHack hack/scripts/gui/quickfort.lua L341 後接 1–7
+Add marker:	附加標記：	附加标记：		DFHack hack/scripts/gui/quickfort.lua L350 挖掘標記附加旗標（藍圖／潮濕／溫熱）
+Damp dig:	挖濕岩：	挖湿岩：		DFHack hack/scripts/gui/quickfort.lua L373 標記為可挖潮濕岩石（9 格放不下「潮濕挖掘：」）
+Warm dig:	挖熱岩：	挖热岩：		DFHack hack/scripts/gui/quickfort.lua L380 標記為可挖溫熱岩石（9 格放不下「溫熱挖掘：」）
+Down z-levels	向下各層	向下各层		DFHack hack/scripts/gui/quickfort.lua L394 重複方向選項
+Up z-levels	向上各層	向上各层		DFHack hack/scripts/gui/quickfort.lua L395 重複方向選項
+No transform	未變換	未变换		DFHack hack/scripts/gui/quickfort.lua L446 變換清單（WrappedLabel）沒有變換時
+Generate manager orders	產生工作指令	生成工作订单		DFHack hack/scripts/gui/quickfort.lua L452 按鍵說明；manager orders 即遊戲的工作指令；術語例外：manager
+Preview manager orders	預覽工作指令	预览工作订单		DFHack hack/scripts/gui/quickfort.lua L457 按鍵說明；manager orders 即遊戲的工作指令；術語例外：manager
+Undo blueprint	復原藍圖	撤销蓝图		DFHack hack/scripts/gui/quickfort.lua L461 按鍵說明
+Build mode blueprints will use DFHack building planner material filter settings.	建造模式的藍圖會沿用 DFHack 建築規劃器的材料篩選設定。	建造模式的蓝图会沿用 DFHack 建筑规划器的材料筛选设置。		DFHack hack/scripts/gui/quickfort.lua L466 quickfort 視窗底部說明（WrappedLabel）
+Blueprint messages	藍圖訊息	蓝图信息	c	DFHack hack/scripts/gui/quickfort.lua L740 對話框標題（內文是藍圖作者寫的訊息，不翻）
+Orders enqueued	工作指令已排入	工作订单已加入	c	DFHack hack/scripts/gui/quickfort.lua L764 對話框標題（"Orders %senqueued"）
+Orders that would be enqueued	將排入的工作指令	将加入的工作订单	c	DFHack hack/scripts/gui/quickfort.lua L764 對話框標題（預覽，"Orders %senqueued"）
+Select the playback start with the mouse.	用滑鼠選擇重播起點。	用鼠标选择回放起点。		DFHack hack/scripts/gui/blueprint.lua L33-41 視窗頂端提示（WrappedLabel）
+Select the second corner with the mouse.	用滑鼠選擇第二個角。	用鼠标选择第二个角。		DFHack hack/scripts/gui/blueprint.lua L33-41 視窗頂端提示（WrappedLabel）
+Select the first corner with the mouse.	用滑鼠選擇第一個角。	用鼠标选择第一个角。		DFHack hack/scripts/gui/blueprint.lua L33-41 視窗頂端提示（WrappedLabel）
+Warning: may overwrite existing files.	警告：可能會覆寫現有檔案。	警告：可能会覆盖现有文件。		DFHack hack/scripts/gui/blueprint.lua L123 名稱提示（TooltipLabel）
+Set base name for the generated blueprint files.	設定產生的藍圖檔案的基本名稱。	设置生成的蓝图文件的基础名称。		DFHack hack/scripts/gui/blueprint.lua L125 名稱提示（TooltipLabel）
+Select blueprint phases to export.	選擇要匯出的藍圖階段。	选择要导出的蓝图阶段。		DFHack hack/scripts/gui/blueprint.lua L183 階段提示（TooltipLabel）
+Choose where the cursor should be positioned when replaying the blueprints.	選擇重播藍圖時游標要放在哪裡。	选择回放蓝图时光标所在的位置。		DFHack hack/scripts/gui/blueprint.lua L234 重播起點提示（TooltipLabel）
+Please enter a comment for the start position	請輸入起點的註解	请输入起点的注释		DFHack hack/scripts/gui/blueprint.lua L252 輸入框說明第一行
+Example: "on central stairs"	例如：「在中央樓梯上」	例如：“在中央楼梯上”		DFHack hack/scripts/gui/blueprint.lua L254 輸入框說明範例
+Capture engravings.	擷取雕刻。	记录雕刻。		DFHack hack/scripts/gui/blueprint.lua L309 engrave 提示（TooltipLabel）
+Capture smoothed tiles.	擷取已磨平的格子。	记录已磨平的格子。		DFHack hack/scripts/gui/blueprint.lua L319 smooth 提示（TooltipLabel）
+Minimal text .csv	精簡文字 .csv	精简文本 .csv		DFHack hack/scripts/gui/blueprint.lua L326 輸出格式選項
+Pretty text .csv	美化文字 .csv	美化文本 .csv		DFHack hack/scripts/gui/blueprint.lua L327 輸出格式選項
+File output format.	輸出檔案格式。	输出文件格式。		DFHack hack/scripts/gui/blueprint.lua L330 format 提示（TooltipLabel）
+Combine blueprints that can be replayed together.	合併可以一起重播的藍圖。	合并可以一起回放的蓝图。		DFHack hack/scripts/gui/blueprint.lua L345 meta 提示（TooltipLabel）
+Split blueprints into multiple files.	把藍圖拆成多個檔案。	把蓝图拆分为多个文件。		DFHack hack/scripts/gui/blueprint.lua L357 split 提示（TooltipLabel）
+Ensure at least one phase is enabled or enable autodetect	請至少啟用一個階段，或啟用自動偵測	请至少启用一个阶段，或启用自动检测		DFHack hack/scripts/gui/blueprint.lua L503 錯誤對話框內文
+Ensure blueprint bounds are set	請先設定藍圖範圍	请先设置蓝图范围		DFHack hack/scripts/gui/blueprint.lua L514 錯誤對話框內文
+No files generated (see console for any error output)	沒有產生檔案（錯誤訊息請見主控台）	没有生成文件（错误信息请查看控制台）		DFHack hack/scripts/gui/blueprint.lua L561 完成對話框內文
+Generated blueprint file(s):	已產生藍圖檔案：	已生成蓝图文件：		DFHack hack/scripts/gui/blueprint.lua L563 完成對話框內文第一行（之後每行一個檔名）
+Blueprint completed	藍圖完成	蓝图已完成	c	DFHack hack/scripts/gui/blueprint.lua L570 完成對話框標題
+Adds a tooltip that shows the selected dimensions when drawing boxes.	繪製方框時加上顯示選取尺寸的提示框。	绘制方框时添加显示选区尺寸的提示框。		DFHack hack/scripts/gui/design.lua L62 overlay 說明（控制面板顯示）
+When drawing boxes, makes right click cancel selection instead of exiting.	繪製方框時，按右鍵改為取消選取而不是離開。	绘制方框时，右键改为取消选区而不是退出。		DFHack hack/scripts/gui/design.lua L139 overlay 說明（控制面板顯示）
+gui/design Help	gui/design 說明	gui/design 帮助	c	DFHack hack/scripts/gui/design.lua L189 說明視窗標題
+Building filters	建築篩選條件	建筑筛选条件		DFHack hack/scripts/gui/design.lua L181 說明視窗（WrappedLabel）標題行
+Use the DFHack building planner to configure filters for the desired construction types. This tool will use the current buildingplan filters for a building type.	請用 DFHack 建築規劃器設定所需建築結構類型的篩選條件。本工具會沿用 buildingplan 目前對該建築類型的篩選設定。	请用 DFHack 建筑规划器为所需的建筑结构类型设置筛选条件。本工具会沿用 buildingplan 当前对该建筑类型的筛选设置。		DFHack hack/scripts/gui/design.lua L184 說明視窗（WrappedLabel）內文
+Clear entire z-level	清除整層	清除整层		DFHack hack/scripts/gui/design.lua L482 按鍵說明（移除標記模式）
+Stop placing points	停止放置點	停止放置点		DFHack hack/scripts/gui/design.lua L634 按鍵說明
+Start placing more points	開始放置更多點	开始放置更多点		DFHack hack/scripts/gui/design.lua L634 按鍵說明
+Add: N/A	新增：無	添加：无		DFHack hack/scripts/gui/design.lua L652-657 按鍵說明：沒有可加的額外點
+Mirror across axis	沿軸鏡像	沿轴镜像		DFHack hack/scripts/gui/design.lua L715 按鍵說明
+Cancel mirror	取消鏡像	取消镜像		DFHack hack/scripts/gui/design.lua L717 按鍵說明
+Mirror horizontal:	水平鏡像：	水平镜像：		DFHack hack/scripts/gui/design.lua L742（原文 "Mirror horizontal: "）
+Mirror diagonal:	對角鏡像：	对角镜像：		DFHack hack/scripts/gui/design.lua L751（原文 "Mirror diagonal: "）
+Mirror vertical:	垂直鏡像：	垂直镜像：		DFHack hack/scripts/gui/design.lua L760（原文 "Mirror vertical: "）
+On (odd)	開（奇）	开（奇）		DFHack hack/scripts/gui/design.lua L616 鏡像選項（奇數寬）
+On (even)	開（偶）	开（偶）		DFHack hack/scripts/gui/design.lua L617 鏡像選項（偶數寬）
+Commit mirror changes	套用鏡像變更	应用镜像更改		DFHack hack/scripts/gui/design.lua L768 按鍵說明
+Click to place the point with the mouse. Use right-click to dismiss points in order.	用滑鼠點一下放置這個點。按右鍵可依序取消各點。	用鼠标单击放置该点。右键单击可依次取消各点。		DFHack hack/scripts/gui/design.lua L856+868 動作提示（WrappedLabel）
+Click to place the first point with the mouse. Use right-click to dismiss points in order.	用滑鼠點一下放置第一個點。按右鍵可依序取消各點。	用鼠标单击放置第一个点。右键单击可依次取消各点。		DFHack hack/scripts/gui/design.lua L858+868 動作提示（WrappedLabel）
+Move any draggable points with the mouse. Use right-click to dismiss points in order.	用滑鼠移動可拖曳的點。按右鍵可依序取消各點。	用鼠标移动可拖动的点。右键单击可依次取消各点。		DFHack hack/scripts/gui/design.lua L860+868 動作提示（WrappedLabel）
+Place any extra points with the mouse. Use right-click to dismiss points in order.	用滑鼠放置額外的點。按右鍵可依序取消各點。	用鼠标放置额外的点。右键单击可依次取消各点。		DFHack hack/scripts/gui/design.lua L862+868 動作提示（WrappedLabel）
+Move the center point with the mouse. Use right-click to dismiss points in order.	用滑鼠移動中心點。按右鍵可依序取消各點。	用鼠标移动中心点。右键单击可依次取消各点。		DFHack hack/scripts/gui/design.lua L864+868 動作提示（WrappedLabel）
+Area: N/A	範圍：無	范围：无		DFHack hack/scripts/gui/design.lua L874 範圍（WrappedLabel）尚未選取時
+Commit shape to the map	把形狀套用到地圖	将形状应用到地图		DFHack hack/scripts/gui/design.lua L813 按鍵說明
+Show alignment guides:	顯示對齊參考線：	显示对齐参考线：		DFHack hack/scripts/gui/design.lua L826
+Auto-commit on click:	點選時自動套用：	点击时自动应用：		DFHack hack/scripts/gui/design.lua L833

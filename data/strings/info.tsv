@@ -114,6 +114,7 @@ Workers save hair and wool	工人保留毛髮和羊毛	工人保留毛发和羊�
 Workers save other objects	工人保留其他物品	工人保留其他物品		常規命令／垃圾：切換鈕
 Forbid used ammunition	禁用射出的彈藥	禁用射出的弹药		常規命令／禁用：切換鈕
 Claim your dead	認領己方遺體	认领己方遗体		常規命令／禁用：切換鈕
+Forbid your death items	禁用己方遺物	禁用己方遗物		常規命令／禁用：切換鈕（第十六輪補：DFHack 的 Forbid 規則把它拼成「禁用你的死亡物品」）
 Claim your death items	認領己方遺物	认领己方遗物		常規命令／禁用：切換鈕
 Claim other dead	認領外人遺體	认领外人遗体		常規命令／禁用：切換鈕；other＝非己方
 Forbid other death items	禁用外人遺物	禁用外人遗物		常規命令／禁用：切換鈕；other＝非己方

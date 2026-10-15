@@ -1,0 +1,9 @@
+en	zh-Hant	zh-Hans	align	row	note
+Filters:	篩選：	筛选：			DFHack hack/scripts/gui/quickfort.lua L62 藍圖選擇視窗（通用字只在 quickfort 套用）
+Library:	藍圖庫：	蓝图库：			DFHack hack/scripts/gui/quickfort.lua L68 是否列出內建藍圖庫；術語例外：library
+Hidden:	隱藏：	隐藏：			DFHack hack/scripts/gui/quickfort.lua L77 是否列出隱藏藍圖
+Show	顯示	显示			DFHack hack/scripts/gui/quickfort.lua L50 Library／Hidden 選項
+Hide	隱藏	隐藏			DFHack hack/scripts/gui/quickfort.lua L51 Library／Hidden 選項
+Blueprint:	藍圖：	蓝图：			DFHack hack/scripts/gui/quickfort.lua L366 附加標記：僅標為藍圖
+Repeat:	重複：	重复：			DFHack hack/scripts/gui/quickfort.lua L390 重複套用到多層
+Transform:	變換：	变换：			DFHack hack/scripts/gui/quickfort.lua L423 旋轉／翻轉

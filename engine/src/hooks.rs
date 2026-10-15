@@ -7,12 +7,12 @@
 //! 以及 std::string::resize，記下遊戲截成「開頭...」之前的原文（見 lookup）。
 
 use std::cell::RefCell;
-use std::collections::{HashSet, VecDeque};
+use std::collections::{HashMap, HashSet, VecDeque};
 use std::ffi::CStr;
 use std::fs::File;
 use std::io::Write;
 use std::sync::atomic::{AtomicBool, AtomicPtr, AtomicU64, AtomicUsize, Ordering};
-use std::sync::{Arc, OnceLock};
+use std::sync::{Arc, LazyLock, OnceLock};
 
 use parking_lot::Mutex;
 use retour::RawDetour;
@@ -193,13 +193,18 @@ unsafe fn write<T>(gps: *mut u8, offset: usize, v: T) {
     unsafe { *(gps.add(offset) as *mut T) = v }
 }
 
-/// 把 (x0 + 格位, y) 上的佔位格換成字圖。條件與遊戲 addchar 相同：在裁切框內、不超出畫面緩衝區。
-unsafe fn paint(gps: *mut u8, layer: &Layer, x0: i32, y: i32, glyphs: &[(usize, u32)], texpos: &[i32]) {
+/// 把 (x0 + 格位, y) 上的佔位格換成字圖。條件與遊戲 addchar 相同：在裁切框內（`clip`）、不超出畫面緩衝區。
+/// DFHack 的 paintString 不看遊戲的裁切框（裁切由它的 Lua Painter 先做），貼它的字時 `clip` 給 false。
+unsafe fn paint(gps: *mut u8, layer: &Layer, x0: i32, y: i32, glyphs: &[(usize, u32)], texpos: &[i32], clip: bool) {
     let Some(layout) = LAYOUT.get() else { return };
     unsafe {
         let dimx: i32 = read(gps, layout.dimx);
         let dimy: i32 = read(gps, layout.dimy);
-        let clip: [i32; 4] = [read(gps, layout.clipx), read(gps, layout.clipx + 4), read(gps, layout.clipy), read(gps, layout.clipy + 4)];
+        let clip: [i32; 4] = if clip {
+            [read(gps, layout.clipx), read(gps, layout.clipx + 4), read(gps, layout.clipy), read(gps, layout.clipy + 4)]
+        } else {
+            [0, dimx - 1, 0, dimy - 1]
+        };
         if y < 0 || y >= dimy || y < clip[2] || y > clip[3] {
             return;
         }
@@ -285,7 +290,7 @@ unsafe fn translate_call(gps: *mut u8, kind: &str, key: &[u8], space: i32, layer
     }
     let dict = unsafe { &*dict };
     let (x0, y): (i32, i32) = unsafe { (read(gps, layout.screenx), read(gps, layout.screeny)) };
-    if !dict.verbatim_screens.is_empty() && dict.keeps_word(key, &FOCUS.lock()) {
+    if !dict.verbatim_screens.is_empty() && dict.keeps_word(key, &FOCUS.lock(), false) {
         return false;
     }
     let Some(entry) = lookup(dict, key, y) else {
@@ -296,9 +301,160 @@ unsafe fn translate_call(gps: *mut u8, kind: &str, key: &[u8], space: i32, layer
     let (cells, glyphs) = entry.fit(space);
     unsafe {
         write(&entry.shadow()[..cells]);
-        paint(gps, &layer(layout), x0, y, &entry.glyphs[..glyphs], &dict.texpos);
+        paint(gps, &layer(layout), x0, y, &entry.glyphs[..glyphs], &dict.texpos, true);
     }
     true
+}
+
+// ---- DFHack 視窗的字（Lua 包住 dfhack.screen.paintString，見 lua/loader.lua） ----
+//
+// DFHack 的介面（overlay、gui/ 腳本）不經遊戲的畫字函式，直接寫畫面緩衝區。Lua 依序呼叫：dfhack_translate 查字典、
+// 原本的 paintString 畫影子字串（格數、顏色、裁切、點擊範圍都照英文），dfhack_stamp 貼字圖。都在主執行緒。
+
+/// dfhack_translate 查到、等 dfhack_stamp 貼上的字圖 (格位, 字圖編號)
+static DH_PENDING: Mutex<Vec<(usize, u32)>> = Mutex::new(Vec::new());
+
+/// DFHack 自動換行的段落（string:wrap 切的，見 dfhack_wrap）：英文行 → 同一列要畫的中文（None：中文行比英文少，這一行畫空白）。
+/// ponytail: 以英文行的文字當鍵、全部畫面共用：不同段落（或同一段的兩行）剛好有同一行英文時用最後登記的，別處單獨畫出同樣英文的字串
+/// 也會換成這裡的中文或空白；表滿了整批清掉。真的撞到再改成依段落（WrappedLabel）登記。
+static DH_LINES: LazyLock<Mutex<HashMap<Vec<u8>, Option<Arc<Entry>>>>> = LazyLock::new(|| Mutex::new(HashMap::new()));
+const DH_LINES_LIMIT: usize = 20_000;
+
+/// DFHack 要畫的一段字：有譯文就回傳影子字串（補到原長，頭尾空白照原文，視窗標題前後各有兩個空白），字圖留給 dfhack_stamp；
+/// 沒有譯文、或譯文比原文寬時回傳 None，照畫英文。段落的一行（dfhack_wrap 登記過的）畫同一列的中文。
+pub fn dfhack_translate(text: &[u8], y: i32) -> Option<Vec<u8>> {
+    let dict = DICT.load(Ordering::Acquire);
+    if dict.is_null() || !ENABLED.load(Ordering::Relaxed) {
+        return None;
+    }
+    if let Some(row) = DH_LINES.lock().get(text).cloned() {
+        let shadow = row.as_ref().map_or(&[][..], |e| e.shadow());
+        let mut out = vec![b' '; text.len().max(shadow.len())];
+        out[..shadow.len()].copy_from_slice(shadow);
+        *DH_PENDING.lock() = row.map_or_else(Vec::new, |e| e.glyphs.clone());
+        return Some(out);
+    }
+    let dict = unsafe { &*dict };
+    let lead = text.iter().take_while(|&&c| c == b' ').count();
+    let key = text[lead..].trim_ascii_end();
+    if !key.iter().any(u8::is_ascii_alphabetic) || (!dict.verbatim_screens.is_empty() && dict.keeps_word(key, &FOCUS.lock(), true)) {
+        return None;
+    }
+    let Some(entry) = lookup(dict, key, y) else {
+        note_miss("dfhack", key);
+        return None;
+    };
+    let shadow = entry.shadow();
+    if lead + shadow.len() > text.len() {
+        return None;
+    }
+    HITS.fetch_add(1, Ordering::Relaxed);
+    let mut out = vec![b' '; text.len()];
+    out[lead..lead + shadow.len()].copy_from_slice(shadow);
+    *DH_PENDING.lock() = entry.glyphs.iter().map(|&(offset, glyph)| (offset + lead, glyph)).collect();
+    Some(out)
+}
+
+/// DFHack 的 string:wrap（WrappedLabel、確認對話框都用它）把整段英文 text（`\n` 分段）依 width 格切成 lines，之後一行行畫：整段有譯文時依中文規則以同樣寬度重新換行，
+/// 登記每一行英文要畫的中文（見 wrap_plan），回傳 true。缺一句就整段照英文，翻不出來的那一段記進未翻譯紀錄。
+pub fn dfhack_wrap(text: &[u8], width: usize, lines: &[Vec<u8>]) -> bool {
+    let dict = DICT.load(Ordering::Acquire);
+    if dict.is_null() || !ENABLED.load(Ordering::Relaxed) || lines.is_empty() || width == 0 {
+        return false;
+    }
+    let dict = unsafe { &*dict };
+    let Some(plan) = wrap_plan(dict, text, width, lines) else { return false };
+    let mut entries = Vec::with_capacity(plan.len());
+    for (k, row) in plan {
+        let entry = match row {
+            Some(row) => {
+                let Some(entry) = dict.text_entry(&row) else { return false };
+                Some(Arc::new(entry))
+            }
+            None => None,
+        };
+        entries.push((k, entry));
+    }
+    let mut table = DH_LINES.lock();
+    if table.len() + entries.len() > DH_LINES_LIMIT {
+        table.clear();
+    }
+    for (k, entry) in entries {
+        table.insert(lines[k].clone(), entry);
+    }
+    true
+}
+
+/// dfhack_wrap 的對照：(英文第幾行, 那一行要畫的中文；None 是畫空白)。string:wrap 一段一段切（原文的 `\n` 分段），
+/// 這裡也每段各自翻、各自依 width 格換行，中文列依序放進同一段的英文行：前一段中文比較短時，後一段照樣從自己的第一行畫起，
+/// 段落間的空行對得上。英文的空行（Painter 不畫空字串）不列。翻不出來的段落記進未翻譯紀錄；有段落翻不出來、某段中文比英文多列、
+/// 或英文行對不回原文時回傳 None，整段照英文。
+fn wrap_plan(dict: &Dict, text: &[u8], width: usize, lines: &[Vec<u8>]) -> Option<Vec<(usize, Option<String>)>> {
+    let cells = |s: &str| s.chars().map(|c| if cp437::byte_of(c).is_some() { 1 } else { 2 }).sum::<usize>();
+    let solid = |s: &[u8]| s.iter().filter(|c| !c.is_ascii_whitespace()).count();
+    let mut plan = Vec::new();
+    let mut next = 0;
+    for para in text.split(|&c| c == b'\n') {
+        // 這一段的英文行：string:wrap 只在空白處切行（太長的字切成幾截），各行扣掉空白的字數加起來就是這一段扣掉空白的字數；空段佔一行
+        let (first, need) = (next, solid(para));
+        let mut got = 0;
+        while next == first || got < need {
+            got += solid(lines.get(next)?);
+            next += 1;
+        }
+        if got != need {
+            return None;
+        }
+        let zh = if para.iter().any(u8::is_ascii_alphabetic) {
+            match dict.translate_sentences(para) {
+                Ok(pieces) => pieces.into_iter().map(|(t, _)| t).collect::<String>(),
+                Err(_) => {
+                    note_miss("dfhack", para);
+                    return None;
+                }
+            }
+        } else {
+            cp437::decode(para)
+        };
+        // 換行後的每一段 (列內位移, 第幾列, 字)：同一列的段依位移接成一行。英文段開頭的縮排（string:wrap 只留在第一行）照樣加在第一列，
+        // 所以換行寬度扣掉縮排
+        let lead = para.iter().take_while(|&&c| c == b' ').count();
+        let mut rows: Vec<String> = Vec::new();
+        for (px, py, t, _) in crate::mtb::wrap(&zh, width.saturating_sub(lead).max(1), [0; 3], |c| c) {
+            let (px, py) = (px.max(0) as usize, py.max(0) as usize);
+            let px = if py == 0 { px + lead } else { px };
+            if rows.len() <= py {
+                rows.resize(py + 1, String::new());
+            }
+            let pad = px.saturating_sub(cells(&rows[py]));
+            rows[py].extend(std::iter::repeat_n(' ', pad));
+            rows[py].push_str(&t);
+        }
+        if rows.len() > next - first {
+            return None;
+        }
+        for (k, line) in lines[first..next].iter().enumerate() {
+            let row = rows.get(k).filter(|row| !row.trim().is_empty()).cloned();
+            match (solid(line) == 0, row) {
+                (true, Some(_)) => return None, // 有字的中文列落在不會畫的英文空行
+                (true, None) => {}
+                (false, row) => plan.push((first + k, row)),
+            }
+        }
+    }
+    lines[next..].iter().all(|line| solid(line) == 0).then_some(plan)
+}
+
+/// 把 dfhack_translate 查到的字圖貼在 (x, y)：DFHack 在頂層開著時（`top_in_use`）只寫頂層，字圖跟著貼頂層。
+pub fn dfhack_stamp(gps: usize, x: i32, y: i32, top: bool) {
+    let glyphs = std::mem::take(&mut *DH_PENDING.lock());
+    let dict = DICT.load(Ordering::Acquire);
+    let Some(layout) = LAYOUT.get() else { return };
+    if dict.is_null() || gps == 0 || glyphs.is_empty() {
+        return;
+    }
+    let layer = if top { layout.top } else { layout.main };
+    unsafe { paint(gps as *mut u8, &layer, x, y, &glyphs, &(*dict).texpos, false) };
 }
 
 fn main_layer(l: &Layout) -> Layer {
@@ -344,7 +500,7 @@ unsafe fn paragraph_word(gps: *mut u8, s: *const StdString, layer: fn(&Layout) -
                 }
             }
             draw(&StdString::borrowed(p.entry.shadow()));
-            paint(gps, &layer(layout), x + p.dx, y + p.dy, &p.entry.glyphs, &dict.texpos);
+            paint(gps, &layer(layout), x + p.dx, y + p.dy, &p.entry.glyphs, &dict.texpos, true);
         }
         for (off, c) in layout.color.iter().zip(color) {
             write(gps, *off, c);
@@ -440,7 +596,7 @@ unsafe fn colored_line(gps: *mut u8, s: *const u8, draw: impl Fn(*const u8, *con
             let text: Vec<u8> = shadow.iter().copied().chain([0]).collect();
             let cols: Vec<u8> = std::iter::repeat_n(p.color, shadow.len()).chain([0]).collect();
             draw(text.as_ptr(), cols.as_ptr());
-            paint(gps, &layout.main, x + p.dx, y + p.dy, &p.entry.glyphs, &dict.texpos);
+            paint(gps, &layout.main, x + p.dx, y + p.dy, &p.entry.glyphs, &dict.texpos, true);
         }
         write(gps, layout.screenx, x);
         write(gps, layout.screeny, y);
@@ -673,7 +829,7 @@ fn label_tiles(n: usize, entry: &Entry, glyph_tex: &[i32], font: impl Fn(u8) -> 
 
 #[cfg(test)]
 mod tests {
-    use super::label_tiles;
+    use super::{label_tiles, wrap_plan};
     use crate::dict::Dict;
 
     #[test]
@@ -688,5 +844,21 @@ mod tests {
         // 英數照字型表；放不下就不換
         assert_eq!(label_tiles(3, &d.entries[&b"C1"[..]], &d.texpos, font), Some(vec![font(b'A'), 10, 11]));
         assert_eq!(label_tiles(2, &d.entries[&b"C1"[..]], &d.texpos, font), None);
+    }
+
+    #[test]
+    fn wrapped_paragraphs_line_up_by_segment() {
+        let mut d = Dict::default();
+        d.load_tsv("First line.\t第一行。\nThe second paragraph is long.\t第二段。\n");
+        let lines = |ls: &[&str]| ls.iter().map(|l| l.as_bytes().to_vec()).collect::<Vec<_>>();
+        let row = |s: &str| Some(s.to_owned());
+        // 英文第一段切成兩行、中文只要一列：第二行畫空白，空行不列，下一段照樣從自己的第一行畫起（不往上擠到不會畫的空行）
+        assert_eq!(wrap_plan(&d, b"The second paragraph is long.\n\nFirst line.", 20, &lines(&["The second", "paragraph is long.", "", "First line."])),
+                   Some(vec![(0, row("第二段。")), (1, None), (3, row("第一行。"))]));
+        assert_eq!(wrap_plan(&d, b"First line.\n\nThe second paragraph is long.", 20, &lines(&["First line.", "", "The second", "paragraph is long."])),
+                   Some(vec![(0, row("第一行。")), (2, row("第二段。")), (3, None)]));
+        assert_eq!(wrap_plan(&d, b"First line.\nThird line.", 20, &lines(&["First line.", "Third line."])), None, "有一段翻不出來就整段照英文");
+        assert_eq!(wrap_plan(&d, b"First line.", 20, &lines(&["First", "line.", "extra"])), None, "英文行對不回原文就照英文");
+        assert_eq!(wrap_plan(&d, b"  First line.", 20, &lines(&["  First line."])), Some(vec![(0, row("  第一行。"))]), "段首縮排照留");
     }
 }

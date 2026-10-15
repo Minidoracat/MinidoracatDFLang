@@ -1,0 +1,78 @@
+en	zh-Hant	zh-Hans	align	note
+Really clear spouse for {1}?	確定要清除{1}的配偶嗎？	确定要清除{1}的配偶吗？		DFHack hack/scripts/gui/family-affairs.lua L124 確認對話框：{1} 人名
+{1} and {2} have married!	{1}與{2}結婚了！	{1}与{2}结婚了！		DFHack hack/scripts/gui/family-affairs.lua L148 手動結婚後的公告：{1}{2} 人名
+Currently pregnant: coming to term in {#1} months	目前懷孕中：{1} 個月後臨盆	目前怀孕中：{1} 个月后临盆		DFHack hack/scripts/gui/family-affairs.lua L661 懷孕狀態：{1} 月數
+Currently pregnant: coming to term in {#1} days	目前懷孕中：{1} 天後臨盆	目前怀孕中：{1} 天后临盆		DFHack hack/scripts/gui/family-affairs.lua L664 懷孕狀態：{1} 天數
+Cannot look up {1} by ID	無法以 ID 查詢 {1}	无法按 ID 查询 {1}		DFHack hack/scripts/gui/gm-editor.lua L286 訊息對話框：{1} 型別名
+{1} with ID {#2} not found	找不到 ID 為 {2} 的 {1}	找不到 ID 为 {2} 的 {1}		DFHack hack/scripts/gui/gm-editor.lua L294 訊息對話框：{1} 型別名、{2} ID
+Type '{1} not found	找不到型別「{1}」	找不到类型“{1}”		DFHack hack/scripts/gui/gm-editor.lua L352 訊息對話框：{1} 型別名（原文少了結尾引號）
+Choose {1} item:	選擇 {1} 項目：	选择 {1} 项：	c	DFHack hack/scripts/gui/gm-editor.lua L413 清單對話框標題：{1} 列舉型別名
+Enter new {1} value	輸入新的 {1} 值	输入新的 {1} 值		DFHack hack/scripts/gui/gm-editor.lua L501 輸入對話框提示：{1} 型別名
+{#1} out of {#2} region tiles loaded	已載入 {1}／{2} 個地區格	已加载 {1}／{2} 个地区格		DFHack hack/scripts/gui/export-world-map.lua L33 載入進度：{1} 已載入、{2} 總數
+Double click on a tile to teleport {#1} highlighted item(s).	在圖格上點兩下，即可傳送 {1} 件標示的物品。	在图格上双击，即可传送 {1} 件标示的物品。		DFHack hack/scripts/gui/autodump.lua L173 WrappedLabel 說明：{1} 選取的物品數
+Double click on a tile to teleport {#1} item(s) marked for dumping.	在圖格上點兩下，即可傳送 {1} 件標記傾倒的物品。	在图格上双击，即可传送 {1} 件标记倾倒的物品。		DFHack hack/scripts/gui/autodump.lua L175 WrappedLabel 說明：{1} 標記傾倒的物品數
+{#1} effects	{1} 種效果	{1} 种效果		DFHack hack/scripts/gui/unit-syndromes.lua L287 症候群清單第二行：{1} 效果數
+{#1} syndrome(s)	{1} 種症候群	{1} 种综合征		DFHack hack/scripts/gui/unit-syndromes.lua L471 單位清單第二行：{1} 症候群數
+WARNING: Unit {1} is a member of a squad from another site! This may be preventing them from doing any useful work. You can fix this by assigning them to a local squad and then unassigning them.	警告：{1}是其他據點的小隊成員！這可能讓他無法做任何有用的工作。可先把他編入本地小隊再移出來修正。	警告：{1}是其他据点的小队成员！这可能让他无法做任何有用的工作。可先把他编入本地小队再移出来修正。		DFHack hack/scripts/uniform-unstick.lua L46 衝突報告：{1} 單位名
+WARNING: Unit {1} has the mining labor enabled, which conflicts with military uniforms.	警告：{1}啟用了採礦勞動，會與軍隊制服衝突。	警告：{1}启用了采矿劳动，会与军队制服冲突。		DFHack hack/scripts/uniform-unstick.lua L139 衝突報告：{1} 單位名
+WARNING: Unit {1} has the woodcutting labor enabled, which conflicts with military uniforms.	警告：{1}啟用了伐木勞動，會與軍隊制服衝突。	警告：{1}启用了伐木劳动，会与军队制服冲突。		DFHack hack/scripts/uniform-unstick.lua L142 衝突報告：{1} 單位名
+WARNING: Unit {1} has the hunting labor enabled, which conflicts with military uniforms.	警告：{1}啟用了狩獵勞動，會與軍隊制服衝突。	警告：{1}启用了狩猎劳动，会与军队制服冲突。		DFHack hack/scripts/uniform-unstick.lua L145 衝突報告：{1} 單位名
+{1} does not have a military uniform.	{1}沒有軍隊制服。	{1}没有军队制服。		DFHack hack/scripts/uniform-unstick.lua L132 衝突報告：{1} 單位名
+{1} is missing an assigned item, item #{#2} '{3}'	{1}缺少一件分配的物品：物品 #{2}「{3}」	{1}缺少一件分配的物品：物品 #{2}“{3}”		DFHack hack/scripts/uniform-unstick.lua L190 衝突報告：{1} 單位名、{2} 物品編號、{3} 物品描述
+{1} cannot equip item: another unit has a claim on item #{#2} '{3}'	{1}無法裝備物品：另一個單位已認領物品 #{2}「{3}」	{1}无法装备物品：另一个单位已认领物品 #{2}“{3}”		DFHack hack/scripts/uniform-unstick.lua L194 衝突報告
+{1} has an improperly assigned item, item #{#2} '{3}'; removing it	{1}有一件分配不當的物品：物品 #{2}「{3}」，予以移除	{1}有一件分配不当的物品：物品 #{2}“{3}”，予以移除		DFHack hack/scripts/uniform-unstick.lua L218 衝突報告
+{1} has a nonexistent item assigned, item # {#2}; removing it	{1}被分配了不存在的物品：物品 # {2}，予以移除	{1}被分配了不存在的物品：物品 # {2}，予以移除		DFHack hack/scripts/uniform-unstick.lua L220 衝突報告
+{1} potentially has item #{#2} '{3}' blocking a missing uniform item.	{1}的物品 #{2}「{3}」可能擋住了缺少的制服物品。	{1}的物品 #{2}“{3}”可能挡住了缺少的制服物品。		DFHack hack/scripts/uniform-unstick.lua L261 衝突報告
+Suspended because: {%1}.	暫停原因：{1}。	暂停原因：{1}。		DFHack hack/lua/plugins/suspendmanager.lua L95 建築面板的疊加介面：{1} 外掛 C++ 給的原因（下列 inner 條目）
+{@1} is {#2} years old, born before the dawn of time.	{1}今年 {2} 歲，生於太古之時。	{1}今年 {2} 岁，生于太古之时。		DFHack hack/scripts/gui/unit-info-viewer.lua L255-263 年齡與出生：{1} 代名詞（He/She/It）、年齡數字
+{@1} is {#2} years old, born in the year {#3}.	{1}今年 {2} 歲，生於 {3} 年。	{1}今年 {2} 岁，生于 {3} 年。		DFHack hack/scripts/gui/unit-info-viewer.lua L255-263 年齡與出生：{1} 代名詞（He/She/It）、年齡數字、年
+{@1} is {#2} years old, born on the {#3}st of {@4} in the year {#5}.	{1}今年 {2} 歲，生於 {5} 年{4}{3}日。	{1}今年 {2} 岁，生于 {5} 年{4}{3}日。		DFHack hack/scripts/gui/unit-info-viewer.lua L255-263 年齡與出生：{1} 代名詞（He/She/It）、年齡數字、日、月份名、年
+{@1} is {#2} years old, born on the {#3}nd of {@4} in the year {#5}.	{1}今年 {2} 歲，生於 {5} 年{4}{3}日。	{1}今年 {2} 岁，生于 {5} 年{4}{3}日。		DFHack hack/scripts/gui/unit-info-viewer.lua L255-263 年齡與出生：{1} 代名詞（He/She/It）、年齡數字、日、月份名、年
+{@1} is {#2} years old, born on the {#3}rd of {@4} in the year {#5}.	{1}今年 {2} 歲，生於 {5} 年{4}{3}日。	{1}今年 {2} 岁，生于 {5} 年{4}{3}日。		DFHack hack/scripts/gui/unit-info-viewer.lua L255-263 年齡與出生：{1} 代名詞（He/She/It）、年齡數字、日、月份名、年
+{@1} is {#2} years old, born on the {#3}th of {@4} in the year {#5}.	{1}今年 {2} 歲，生於 {5} 年{4}{3}日。	{1}今年 {2} 岁，生于 {5} 年{4}{3}日。		DFHack hack/scripts/gui/unit-info-viewer.lua L255-263 年齡與出生：{1} 代名詞（He/She/It）、年齡數字、日、月份名、年
+{@1} is 1 year old, born before the dawn of time.	{1}今年 1 歲，生於太古之時。	{1}今年 1 岁，生于太古之时。		DFHack hack/scripts/gui/unit-info-viewer.lua L255-263 年齡與出生：{1} 代名詞（He/She/It）
+{@1} is 1 year old, born in the year {#2}.	{1}今年 1 歲，生於 {2} 年。	{1}今年 1 岁，生于 {2} 年。		DFHack hack/scripts/gui/unit-info-viewer.lua L255-263 年齡與出生：{1} 代名詞（He/She/It）、年
+{@1} is 1 year old, born on the {#2}st of {@3} in the year {#4}.	{1}今年 1 歲，生於 {4} 年{3}{2}日。	{1}今年 1 岁，生于 {4} 年{3}{2}日。		DFHack hack/scripts/gui/unit-info-viewer.lua L255-263 年齡與出生：{1} 代名詞（He/She/It）、日、月份名、年
+{@1} is 1 year old, born on the {#2}nd of {@3} in the year {#4}.	{1}今年 1 歲，生於 {4} 年{3}{2}日。	{1}今年 1 岁，生于 {4} 年{3}{2}日。		DFHack hack/scripts/gui/unit-info-viewer.lua L255-263 年齡與出生：{1} 代名詞（He/She/It）、日、月份名、年
+{@1} is 1 year old, born on the {#2}rd of {@3} in the year {#4}.	{1}今年 1 歲，生於 {4} 年{3}{2}日。	{1}今年 1 岁，生于 {4} 年{3}{2}日。		DFHack hack/scripts/gui/unit-info-viewer.lua L255-263 年齡與出生：{1} 代名詞（He/She/It）、日、月份名、年
+{@1} is 1 year old, born on the {#2}th of {@3} in the year {#4}.	{1}今年 1 歲，生於 {4} 年{3}{2}日。	{1}今年 1 岁，生于 {4} 年{3}{2}日。		DFHack hack/scripts/gui/unit-info-viewer.lua L255-263 年齡與出生：{1} 代名詞（He/She/It）、日、月份名、年
+{@1} is {#2} months old, born before the dawn of time.	{1}出生 {2} 個月，生於太古之時。	{1}出生 {2} 个月，生于太古之时。		DFHack hack/scripts/gui/unit-info-viewer.lua L255-263 年齡與出生：{1} 代名詞（He/She/It）、年齡數字
+{@1} is {#2} months old, born in the year {#3}.	{1}出生 {2} 個月，生於 {3} 年。	{1}出生 {2} 个月，生于 {3} 年。		DFHack hack/scripts/gui/unit-info-viewer.lua L255-263 年齡與出生：{1} 代名詞（He/She/It）、年齡數字、年
+{@1} is {#2} months old, born on the {#3}st of {@4} in the year {#5}.	{1}出生 {2} 個月，生於 {5} 年{4}{3}日。	{1}出生 {2} 个月，生于 {5} 年{4}{3}日。		DFHack hack/scripts/gui/unit-info-viewer.lua L255-263 年齡與出生：{1} 代名詞（He/She/It）、年齡數字、日、月份名、年
+{@1} is {#2} months old, born on the {#3}nd of {@4} in the year {#5}.	{1}出生 {2} 個月，生於 {5} 年{4}{3}日。	{1}出生 {2} 个月，生于 {5} 年{4}{3}日。		DFHack hack/scripts/gui/unit-info-viewer.lua L255-263 年齡與出生：{1} 代名詞（He/She/It）、年齡數字、日、月份名、年
+{@1} is {#2} months old, born on the {#3}rd of {@4} in the year {#5}.	{1}出生 {2} 個月，生於 {5} 年{4}{3}日。	{1}出生 {2} 个月，生于 {5} 年{4}{3}日。		DFHack hack/scripts/gui/unit-info-viewer.lua L255-263 年齡與出生：{1} 代名詞（He/She/It）、年齡數字、日、月份名、年
+{@1} is {#2} months old, born on the {#3}th of {@4} in the year {#5}.	{1}出生 {2} 個月，生於 {5} 年{4}{3}日。	{1}出生 {2} 个月，生于 {5} 年{4}{3}日。		DFHack hack/scripts/gui/unit-info-viewer.lua L255-263 年齡與出生：{1} 代名詞（He/She/It）、年齡數字、日、月份名、年
+{@1} is 1 month old, born before the dawn of time.	{1}出生 1 個月，生於太古之時。	{1}出生 1 个月，生于太古之时。		DFHack hack/scripts/gui/unit-info-viewer.lua L255-263 年齡與出生：{1} 代名詞（He/She/It）
+{@1} is 1 month old, born in the year {#2}.	{1}出生 1 個月，生於 {2} 年。	{1}出生 1 个月，生于 {2} 年。		DFHack hack/scripts/gui/unit-info-viewer.lua L255-263 年齡與出生：{1} 代名詞（He/She/It）、年
+{@1} is 1 month old, born on the {#2}st of {@3} in the year {#4}.	{1}出生 1 個月，生於 {4} 年{3}{2}日。	{1}出生 1 个月，生于 {4} 年{3}{2}日。		DFHack hack/scripts/gui/unit-info-viewer.lua L255-263 年齡與出生：{1} 代名詞（He/She/It）、日、月份名、年
+{@1} is 1 month old, born on the {#2}nd of {@3} in the year {#4}.	{1}出生 1 個月，生於 {4} 年{3}{2}日。	{1}出生 1 个月，生于 {4} 年{3}{2}日。		DFHack hack/scripts/gui/unit-info-viewer.lua L255-263 年齡與出生：{1} 代名詞（He/She/It）、日、月份名、年
+{@1} is 1 month old, born on the {#2}rd of {@3} in the year {#4}.	{1}出生 1 個月，生於 {4} 年{3}{2}日。	{1}出生 1 个月，生于 {4} 年{3}{2}日。		DFHack hack/scripts/gui/unit-info-viewer.lua L255-263 年齡與出生：{1} 代名詞（He/She/It）、日、月份名、年
+{@1} is 1 month old, born on the {#2}th of {@3} in the year {#4}.	{1}出生 1 個月，生於 {4} 年{3}{2}日。	{1}出生 1 个月，生于 {4} 年{3}{2}日。		DFHack hack/scripts/gui/unit-info-viewer.lua L255-263 年齡與出生：{1} 代名詞（He/She/It）、日、月份名、年
+{@1} is a newborn, born before the dawn of time.	{1}剛出生，生於太古之時。	{1}刚出生，生于太古之时。		DFHack hack/scripts/gui/unit-info-viewer.lua L255-263 年齡與出生：{1} 代名詞（He/She/It）
+{@1} is a newborn, born in the year {#2}.	{1}剛出生，生於 {2} 年。	{1}刚出生，生于 {2} 年。		DFHack hack/scripts/gui/unit-info-viewer.lua L255-263 年齡與出生：{1} 代名詞（He/She/It）、年
+{@1} is a newborn, born on the {#2}st of {@3} in the year {#4}.	{1}剛出生，生於 {4} 年{3}{2}日。	{1}刚出生，生于 {4} 年{3}{2}日。		DFHack hack/scripts/gui/unit-info-viewer.lua L255-263 年齡與出生：{1} 代名詞（He/She/It）、日、月份名、年
+{@1} is a newborn, born on the {#2}nd of {@3} in the year {#4}.	{1}剛出生，生於 {4} 年{3}{2}日。	{1}刚出生，生于 {4} 年{3}{2}日。		DFHack hack/scripts/gui/unit-info-viewer.lua L255-263 年齡與出生：{1} 代名詞（He/She/It）、日、月份名、年
+{@1} is a newborn, born on the {#2}rd of {@3} in the year {#4}.	{1}剛出生，生於 {4} 年{3}{2}日。	{1}刚出生，生于 {4} 年{3}{2}日。		DFHack hack/scripts/gui/unit-info-viewer.lua L255-263 年齡與出生：{1} 代名詞（He/She/It）、日、月份名、年
+{@1} is a newborn, born on the {#2}th of {@3} in the year {#4}.	{1}剛出生，生於 {4} 年{3}{2}日。	{1}刚出生，生于 {4} 年{3}{2}日。		DFHack hack/scripts/gui/unit-info-viewer.lua L255-263 年齡與出生：{1} 代名詞（He/She/It）、日、月份名、年
+{%1} only die of unnatural causes.	{1}只會死於非自然原因。	{1}只会死于非自然原因。		DFHack hack/scripts/gui/unit-info-viewer.lua L274 壽命：{1} 種族複數名（翻不出來就整句照英文）
+{%1} usually die at a very young age.	{1}通常很年輕就會死去。	{1}通常很年轻就会死去。		DFHack hack/scripts/gui/unit-info-viewer.lua L278 壽命：{1} 種族複數名（翻不出來就整句照英文）
+{%1} live about 1 year.	{1}的壽命約 1 年。	{1}的寿命约 1 年。		DFHack hack/scripts/gui/unit-info-viewer.lua L280 壽命：{1} 種族複數名（翻不出來就整句照英文）
+{%1} live about {#2} years.	{1}的壽命約 {2} 年。	{1}的寿命约 {2} 年。		DFHack hack/scripts/gui/unit-info-viewer.lua L282 壽命：{1} 種族複數名（翻不出來就整句照英文）
+{1}'s ghost was put to rest with a memorial.	{1}的亡靈已藉紀念碑安息。	{1}的亡灵已借纪念碑安息。		DFHack hack/scripts/gui/unit-info-viewer.lua L114-169 死因：{1} 單位名（L331 名字接死因再接句號）
+{@1} is {#2} cc, which is {%3} in size.	{1}的體型為 {2} cc，{3}。	{1}的体型为 {2} cc，{3}。		DFHack hack/scripts/gui/unit-info-viewer.lua L388 體型：{1} 代名詞、{2} 體積、{3} 與平均比較（inner 條目）
+{@1} weighs about as much as {2} average elephants	{1}的重量約等於 {2} 頭普通大象	{1}的重量约等于 {2} 头普通大象		DFHack hack/scripts/gui/unit-info-viewer.lua L355-377 重量比較（原文無句號）：{1} 代名詞、{2} 倍數（帶小數，用 {n}）；寫在通用的 {%2} 句型前面
+{@1} weighs about as much as {2} average cats	{1}的重量約等於 {2} 隻普通貓	{1}的重量约等于 {2} 只普通猫		DFHack hack/scripts/gui/unit-info-viewer.lua L355-377 重量比較（原文無句號）：{1} 代名詞、{2} 倍數（帶小數，用 {n}）；寫在通用的 {%2} 句型前面
+{@1} weighs about as much as {2} average dwarves	{1}的重量約等於 {2} 個普通矮人	{1}的重量约等于 {2} 个普通矮人		DFHack hack/scripts/gui/unit-info-viewer.lua L355-377 重量比較（原文無句號）：{1} 代名詞、{2} 倍數（帶小數，用 {n}）；寫在通用的 {%2} 句型前面
+{@1} weighs about as much as 1 average elephant	{1}的重量約等於 1 頭普通大象	{1}的重量约等于 1 头普通大象		DFHack hack/scripts/gui/unit-info-viewer.lua L355-377 重量比較（原文無句號）：{1} 代名詞；寫在通用的 {%2} 句型前面
+{@1} weighs about as much as 1 average cat	{1}的重量約等於 1 隻普通貓	{1}的重量约等于 1 只普通猫		DFHack hack/scripts/gui/unit-info-viewer.lua L355-377 重量比較（原文無句號）：{1} 代名詞；寫在通用的 {%2} 句型前面
+{@1} weighs about as much as 1 average dwarf	{1}的重量約等於 1 個普通矮人	{1}的重量约等于 1 个普通矮人		DFHack hack/scripts/gui/unit-info-viewer.lua L355-377 重量比較（原文無句號）：{1} 代名詞；寫在通用的 {%2} 句型前面
+{@1} weighs about as much as {%2}	{1}的重量約等於{2}	{1}的重量约等于{2}		重量比較（原文無句號）：{1} 代名詞、{2}「a miniscule part of an …」（inner 條目）；排在帶數字的幾條後面
+Grazing satisfies {#1} units of hunger.	吃草可滿足 {1} 單位的飢餓。	吃草可满足 {1} 单位的饥饿。		DFHack hack/scripts/gui/unit-info-viewer.lua L396 unit-info-viewer 段落：{1} 數值
+{@1} secretes {2} every {#3} days.	{1}每 {3} 天分泌{2}。	{1}每 {3} 天分泌{2}。		DFHack hack/scripts/gui/unit-info-viewer.lua L409 unit-info-viewer 段落：{1} 代名詞、{2} 乳汁材料、{3} 天數
+{@1} secretes {2} every {#3} to {#4} days.	{1}每 {3}～{4} 天分泌{2}。	{1}每 {3}～{4} 天分泌{2}。		DFHack hack/scripts/gui/unit-info-viewer.lua L409 unit-info-viewer 段落：{1} 代名詞、{2} 乳汁材料、{3}{4} 天數範圍
+{%1} secrete {2} every {#3} days.	{1}每 {3} 天分泌{2}。	{1}每 {3} 天分泌{2}。		DFHack hack/scripts/gui/unit-info-viewer.lua L411 unit-info-viewer 段落：{1} 種族複數名、{2} 乳汁材料、{3} 天數
+{%1} secrete {2} every {#3} to {#4} days.	{1}每 {3}～{4} 天分泌{2}。	{1}每 {3}～{4} 天分泌{2}。		DFHack hack/scripts/gui/unit-info-viewer.lua L411 unit-info-viewer 段落：{1} 種族複數名、{2} 乳汁材料
+{@1} produces {2}.	{1}會產出{2}。	{1}会产出{2}。		DFHack hack/scripts/gui/unit-info-viewer.lua L427 unit-info-viewer 段落：{1} 代名詞、{2} 毛料材料
+{%1} produce {2}.	{1}會產出{2}。	{1}会产出{2}。		DFHack hack/scripts/gui/unit-info-viewer.lua L429 unit-info-viewer 段落：{1} 種族複數名（{%n}，翻不出來不套）、{2} 毛料材料
+She lays clutches of about {#1} eggs.	她每窩約產 {1} 顆蛋。	她每窝约产 {1} 颗蛋。		DFHack hack/scripts/gui/unit-info-viewer.lua L440 unit-info-viewer 段落：{1} 平均每窩蛋數
+She lays clutches of about {#1} egg.	她每窩約產 {1} 顆蛋。	她每窝约产 {1} 颗蛋。		DFHack hack/scripts/gui/unit-info-viewer.lua L440 unit-info-viewer 段落：{1} 平均每窩蛋數（單數）

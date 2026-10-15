@@ -1,0 +1,30 @@
+en	zh-Hant	zh-Hans	align	note
+Monitors irritation and shows chances of invasion.	監看激怒程度並顯示入侵機率。	监视激怒程度并显示入侵几率。		DFHack hack/scripts/agitation-rebalance.lua L401 overlay 說明（控制面板疊加介面分頁）；irritation 照同檔 overlay「Irrit. Threat」譯激怒
+Detects dangerous actions and prompts with confirmation dialogs.	偵測危險操作並跳出確認對話框。	检测危险操作并弹出确认对话框。		DFHack hack/scripts/confirm.lua L45 overlay 說明（控制面板疊加介面分頁）
+Adds a toggle for recreational crafting to Craftdwarf's workshops.	在工匠工坊加上休閒製作的開關。	在工匠工坊加上休闲制作的开关。		DFHack hack/scripts/idle-crafting.lua L630 overlay 說明（控制面板疊加介面分頁）；原文 Craftdwarf 拼法照 DFHack，工坊名照 ann_06 規則 Craftsdwarf's Workshop 工匠工坊
+Adds widgets for reconfiguring pressure plates after construction.	加上可在建好後重新設定壓力板的元件。	加上可在建好后重新设置压力板的组件。		DFHack hack/scripts/machine-toggle.lua L33 overlay 說明（控制面板疊加介面分頁）；句型照 trackstop.lua 同類說明
+Adds widget for toggling gear assemblies.	加上切換齒輪組的元件。	加上切换齿轮组的组件。		DFHack hack/scripts/machine-toggle.lua L346 overlay 說明（控制面板疊加介面分頁）
+Render map notes.	顯示地圖筆記。	显示地图笔记。		DFHack hack/scripts/notes.lua L18 overlay 說明（控制面板疊加介面分頁）
+Adds a scrollbar (if necessary) to the list of starting dwarves.	必要時在出發矮人清單加上捲軸。	必要时在出发矮人列表加上滚动条。		DFHack hack/scripts/startdwarf.lua L10 overlay 說明（控制面板疊加介面分頁）；出發準備畫面的矮人清單
+Next job in the list	清單中的下一項工作	列表中的下一项工作		DFHack hack/scripts/gui/advfort.lua L45 gui/advfort 說明畫面的按鍵說明（helptext，按鍵另畫）
+Previous job in the list	清單中的上一項工作	列表中的上一项工作		DFHack hack/scripts/gui/advfort.lua L46 gui/advfort 說明畫面的按鍵說明（helptext，按鍵另畫）
+Continue job if available	可行時繼續工作	可行时继续工作		DFHack hack/scripts/gui/advfort.lua L47 gui/advfort 說明畫面的按鍵說明（helptext，按鍵另畫）
+Use job down	對下層執行	对下层执行		DFHack hack/scripts/gui/advfort.lua L48 gui/advfort 說明畫面的按鍵說明（helptext，按鍵另畫）；下一個 Z 層（另見 L49）
+Use job up	對上層執行	对上层执行		DFHack hack/scripts/gui/advfort.lua L50 gui/advfort 說明畫面的按鍵說明（helptext，按鍵另畫）；上一個 Z 層（另見 L51）
+Use job at the tile you are standing	在你站的格子執行工作	在你所站的格子执行工作		DFHack hack/scripts/gui/advfort.lua L52 gui/advfort 說明畫面的按鍵說明（helptext，按鍵另畫）
+Show building menu	顯示建築選單	显示建筑菜单		DFHack hack/scripts/gui/advfort.lua L53 gui/advfort 說明畫面的按鍵說明（helptext，按鍵另畫）
+Toggle quick item select	切換快速選取物品	切换快速选择物品		DFHack hack/scripts/gui/advfort.lua L54 gui/advfort 說明畫面的按鍵說明（helptext，按鍵另畫）
+Adds a hotkey to the vanilla units screen to launch the DFHack units interface.	在原版單位畫面加上快捷鍵，開啟 DFHack 的單位介面。	在原版单位界面加上快捷键，打开 DFHack 的单位界面。		DFHack hack/scripts/gui/manipulator.lua L1327 overlay 說明（控制面板疊加介面分頁）
+Shows list of active notifications in fort mode.	在要塞模式顯示目前的通知清單。	在要塞模式显示当前的通知列表。		DFHack hack/scripts/gui/notify.lua L128 overlay 說明（控制面板疊加介面分頁）
+Shows list of active notifications in adventure mode.	在冒險模式顯示目前的通知清單。	在冒险模式显示当前的通知列表。		DFHack hack/scripts/gui/notify.lua L155 overlay 說明（控制面板疊加介面分頁）
+Adds buttons to the embark difficulty screen for saving and restoring settings.	在出發難度畫面加上儲存與還原設定的按鈕。	在出发难度界面加上保存和恢复设置的按钮。		DFHack hack/scripts/gui/settings-manager.lua L150 overlay 說明（控制面板疊加介面分頁）
+Displays a message when saved difficulty settings have been automatically applied.	自動套用已存的難度設定時顯示訊息。	自动应用已存的难度设置时显示消息。		DFHack hack/scripts/gui/settings-manager.lua L173 overlay 說明（控制面板疊加介面分頁）
+Adds buttons to the fort difficulty screen for saving and restoring settings.	在要塞難度畫面加上儲存與還原設定的按鈕。	在要塞难度界面加上保存和恢复设置的按钮。		DFHack hack/scripts/gui/settings-manager.lua L226 overlay 說明（控制面板疊加介面分頁）
+Adds buttons to the standing orders screen for saving and restoring settings.	在常規命令畫面加上儲存與還原設定的按鈕。	在常规命令界面加上保存和恢复设置的按钮。		DFHack hack/scripts/gui/settings-manager.lua L420 overlay 說明（控制面板疊加介面分頁）
+Exposes the setting for reserved barrels on the standing orders screen.	在常規命令畫面顯示保留桶數的設定。	在常规命令界面显示保留桶数的设置。		DFHack hack/scripts/gui/settings-manager.lua L439 overlay 說明（控制面板疊加介面分頁）
+Adds buttons to the work details screen for saving and restoring settings and for controlling labor automation.	在工作分組畫面加上儲存與還原設定、控制勞動自動化的按鈕。	在工作分组界面加上保存和恢复设置、控制劳动自动化的按钮。		DFHack hack/scripts/gui/settings-manager.lua L629 overlay 說明（控制面板疊加介面分頁）
+Adds the ability to filter historical figures by race in legends mode.	在傳說模式中可依種族篩選歷史人物。	在传说模式中可按种族筛选历史人物。		DFHack hack/scripts/internal/exportlegends/racefilter.lua L25 overlay 說明（控制面板疊加介面分頁）
+Adds flood fill and 3D box select functionality to burrow designations.	在活動區繪製加入填滿與 3D 方框選取功能。	在活动区绘制中加入填充和 3D 框选功能。		DFHack hack/lua/plugins/burrow.lua L55 overlay 說明（控制面板疊加介面分頁）；Flood fill 照同檔標籤譯填滿／填充
+Adds info tooltips that follow units or appear when you hover the mouse.	加上跟隨單位或滑鼠停留時出現的資訊提示框。	加上跟随单位或鼠标悬停时出现的信息提示框。		DFHack hack/lua/plugins/spectate.lua L379 overlay 說明（控制面板疊加介面分頁）
+Adds spectate widgets to the vanilla follow panel.	在原版跟隨面板加上旁觀元件。	在原版跟随面板加上旁观组件。		DFHack hack/lua/plugins/spectate.lua L634 overlay 說明（控制面板疊加介面分頁）
+Adds search functionality to the unit assignment screens.	在單位指派畫面加入搜尋功能。	在单位分配界面加入搜索功能。		DFHack hack/lua/plugins/sort/unitselector.lua L19 overlay 說明（控制面板疊加介面分頁）

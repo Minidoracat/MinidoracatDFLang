@@ -58,7 +58,7 @@
 - 檔名是 DFHack 焦點字串的開頭，`/` 寫成 `.`：`dwarfmode.tsv` 套用到 `dwarfmode/Default`、`dwarfmode/Info/…` 等所有要塞畫面；`choose_start_site.tsv` 只套用在選出發地點。開頭要在 `/` 或結尾切開，`dwarfmode` 不符合 `dwarfmodeX`。
 - 焦點字串在 DFHack 主控台執行 `:lua printall(dfhack.gui.getCurFocus(true))` 查看。
 - 欄位比 `data/strings` 多一欄 `row`（放在 `align` 與 `note` 之間）：空白是任何一列；填數字時只在字串畫在畫面那一列時套用，給同一畫面、同一個字、意思不同的情況。例：`Temperate` 在選出發地點是氣候「溫和」（`choose_start_site.tsv`）；`Drink` 在要塞上方資訊列（第 0 列）是存量「酒類」（`dwarfmode.tsv`，row 填 0），同畫面的工作名稱 `Drink` 是「喝」（`data/strings/jobs.tsv`）。
-- `en` 欄只寫 `*` 的列：這個畫面上單獨畫出、全小寫的單字一律照英文畫，不查字典。冒險模式的交談選單（`dungeonmode.Conversation.tsv`）用它：每個選項下面的「關鍵字：」後面是搜尋框比對用的英文關鍵字（`greet hello listener`），翻成中文就搜不到。
+- `en` 欄只寫 `*` 的列（譯文欄也寫 `*`）：這個畫面上單獨畫出、全小寫的字串一律照英文畫，不查字典；遊戲畫的只管單字，DFHack 畫的連以空白隔開的幾個字也算。冒險模式的交談選單（`dungeonmode.Conversation.tsv`）用它：每個選項下面的「關鍵字：」後面是搜尋框比對用的英文關鍵字（`greet hello listener`），翻成中文就搜不到；DFHack 的 launcher、控制面板、快捷鍵選單列的工具名與指令（`reveal`、`spectate toggle`）也要照英文。
 
 ## 段落
 
@@ -194,6 +194,17 @@ uv run scripts/gen_events.py
 - 人物稱呼「the 職位 名字」靠 `{^n}` 句型；職位名（含程序生成的「fire commissioner」「royal chancellor」，`adv_titles.tsv`）要寫成整句條目，`{@n}` 才查得到。
 - 遊戲截成「開頭...」的清單字串（交談選單「Start new conversation with the Human baro...」、開局的「From Stukos òrdir, The Razor of Incinera...」）不用另寫：引擎記下截短前的原文來翻（見 `docs/analysis.md` 第 17 點）。
 - 開局畫面的外觀、性格段落和人物頁是同一批句子，引擎逐句查，不用整段寫。
+
+## DFHack 視窗
+
+DFHack 的視窗與 overlay（控制面板、launcher、快捷鍵選單、標題畫面的 DFHack 選單、存檔提醒、要塞介面上的各種 overlay）由 DFHack 的 Lua 一段段畫出，引擎在每一段畫之前查字典（見 `docs/analysis.md` 第 19 點）。
+
+- 一段就是 Lua 裡傳給 `label=`、`text=` 的那個字串，或 `..` 拼出來的結果：`{text='Last save: '}, {text=n..' mins ago'}` 是兩段，寫 `Last save:` 與句型 `{#1} mins ago`。
+- 視窗標題（`frame_title`）前後的兩個空白引擎自己處理，條目寫標題本身，標題置中，`align` 寫 `c`。
+- Lua 先用 `:wrap(寬度)` 切行再畫的文字（`WrappedLabel` 的 `text_to_wrap`、確認對話框的訊息）整段寫一條（切行前的完整字串）：DFHack 句間只有一個空白，逐句查不到。引擎整段翻、依中文重新換行。
+- 按鍵提示（`Enter: Toggle enabled`）分成按鍵名、`: `、說明三段畫，只翻說明；按鍵名、工具名、指令名不翻。
+- 檔案：`data/strings/dfhack_<批次>.tsv`、`data/rules/dfhack_<批次>.tsv`。通用的單字（`Enabled`、`Gameplay`）放 `data/screens/dfhack.lua.<focus>.tsv`，`<focus>` 是那個視窗的 `focus_path`（控制面板是 `control-panel`）。overlay 沒有自己的焦點，單字寫成整句或句型。
+- 主控台輸出（`print`）、錯誤訊息不翻：引擎只翻遊戲畫面上的字。輸入框（`EditField`、`TextArea`）裡玩家打的字也不翻：引擎畫輸入框內容時不查字典。
 
 ## 繁簡分開翻
 

@@ -144,6 +144,16 @@ pub unsafe fn index_str(l: State, idx: c_int, i: i64) -> Option<String> {
     }
 }
 
+/// table[i] 的位元組（複製出來；CP437 字串不一定是 UTF-8）。
+pub unsafe fn index_bytes(l: State, idx: c_int, i: i64) -> Option<Vec<u8>> {
+    unsafe {
+        (api().lua_rawgeti)(l, idx, i);
+        let v = arg_bytes(l, -1).map(<[u8]>::to_vec);
+        (api().lua_settop)(l, -2);
+        v
+    }
+}
+
 /// table[i] 的整數值（陣列，table 在 idx，i 從 1 起）。
 pub unsafe fn index_int(l: State, idx: c_int, i: i64) -> Option<i64> {
     unsafe {
@@ -172,6 +182,11 @@ pub unsafe fn push_bool(l: State, v: bool) {
 
 pub unsafe fn push_str(l: State, s: &str) {
     unsafe { (api().lua_pushlstring)(l, s.as_ptr().cast(), s.len()) };
+}
+
+/// 任意位元組（CP437 的影子字串，不一定是 UTF-8）
+pub unsafe fn push_bytes(l: State, b: &[u8]) {
+    unsafe { (api().lua_pushlstring)(l, b.as_ptr().cast(), b.len()) };
 }
 
 pub unsafe fn new_table(l: State) {

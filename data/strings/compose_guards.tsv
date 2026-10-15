@@ -17,3 +17,10 @@ You can recognize a priesthood once this is a temple.	這裡成為神殿後，�
 A creature of the night has our people cowering in fear.	暗夜生物讓我們的人民嚇得瑟瑟發抖。	暗夜生物让我们的人民吓得瑟瑟发抖。		整條寫出：第十四輪加了許多只給佔位用的詞後，names.tsv 的 {@1} {@2}、{1}, {@2} 會把這條拼成怪譯文（介面語料前後比對找到）
 Adventure: Log, Regions	冒險：日誌，地區	冒险：日志，地区		冒險模式的按鍵名稱；整條寫出：第十四輪加了許多只給佔位用的詞後，names.tsv 的 {@1} {@2}、{1}, {@2} 會把這條拼成怪譯文（介面語料前後比對找到）
 Adventure: Log, Sites	冒險：日誌，據點	冒险：日志，据点		冒險模式的按鍵名稱；整條寫出：第十四輪加了許多只給佔位用的詞後，names.tsv 的 {@1} {@2}、{1}, {@2} 會把這條拼成怪譯文（介面語料前後比對找到）
+Citizens only	僅限居民	仅限居民		FUN_1403b13d0 場所的開放對象；整條寫出：第十六輪加了 DFHack 的介面字（Only、Training、Total、Filter、Never）後，names.tsv 的 {@1} {@2} 或標點句型會把這條拼成怪譯文（介面語料前後比對找到）
+You can recognize a high priest when this is a temple complex.	這裡成為神殿建築群後，就能承認大祭司。	这里成为神殿建筑群后，就能承认大祭司。		FUN_1403b13d0 場所介面（同組的 priesthood 句在上面）；整條寫出：第十六輪加了 DFHack 的介面字（Only、Training、Total、Filter、Never）後，names.tsv 的 {@1} {@2} 或標點句型會把這條拼成怪譯文（介面語料前後比對找到）
+Combat Training	戰鬥訓練	战斗训练		FUN_140750010 活動名稱；整條寫出：第十六輪加了 DFHack 的介面字（Only、Training、Total、Filter、Never）後，names.tsv 的 {@1} {@2} 或標點句型會把這條拼成怪譯文（介面語料前後比對找到）
+Lead Combat Training	帶領戰鬥訓練	带领战斗训练		FUN_1400a3060 軍事訓練的活動名稱（Lead 不是金屬「鉛」）；整條寫出：第十六輪加了 DFHack 的介面字（Only、Training、Total、Filter、Never）後，names.tsv 的 {@1} {@2} 或標點句型會把這條拼成怪譯文（介面語料前後比對找到）
+Total seed cap	種子總上限	种子总上限		FUN_1402390f0 難度設定（cap 是上限，不是帽子）；整條寫出：第十六輪加了 DFHack 的介面字（Only、Training、Total、Filter、Never）後，names.tsv 的 {@1} {@2} 或標點句型會把這條拼成怪譯文（介面語料前後比對找到）
+Filter box	篩選框	筛选框		FUN_14042fcc0、FUN_141424160 文字篩選框（不是盒子）；整條寫出：第十六輪加了 DFHack 的介面字（Only、Training、Total、Filter、Never）後，names.tsv 的 {@1} {@2} 或標點句型會把這條拼成怪譯文（介面語料前後比對找到）
+Never!	絕不！	绝不！		FUN_1404988b0 交談的回答（拒絕），不是 DFHack 選項的「從不」；整條寫出：第十六輪加了 DFHack 的介面字（Only、Training、Total、Filter、Never）後，names.tsv 的 {@1} {@2} 或標點句型會把這條拼成怪譯文（介面語料前後比對找到）

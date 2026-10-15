@@ -1,0 +1,216 @@
+en	zh-Hant	zh-Hans	align	note
+Search	搜尋	搜索		通用介面字（各批共用，core 批維護）
+Search:	搜尋：	搜索：		通用介面字（各批共用，core 批維護）；搜尋欄標籤
+Close	關閉	关闭		DFHack hack/scripts/gui/quickcmd.lua L193 按鈕；通用介面字（各批共用，core 批維護）
+Filter	篩選	筛选		通用介面字（各批共用，core 批維護）
+Filter:	篩選：	筛选：		通用介面字（各批共用，core 批維護）；篩選欄標籤
+Apply	套用	应用		DFHack hack/scripts/gui/keybinds.lua L242 按鈕；通用介面字（各批共用，core 批維護）
+Enable	啟用	启用		通用介面字（各批共用，core 批維護）
+Disable	停用	禁用		通用介面字（各批共用，core 批維護）
+Enabled	已啟用	已启用		通用介面字（各批共用，core 批維護）；CycleHotkeyLabel 選項（控制面板分頁標籤另見 data/screens/dfhack.lua.control-panel.tsv，譯文相同）
+Disabled	已停用	已禁用		通用介面字（各批共用，core 批維護）；CycleHotkeyLabel 選項
+On	開	开		DFHack hack/lua/gui/widgets/labels/toggle_hotkey_label.lua L11 ToggleHotkeyLabel 選項；Off 已有「關」；通用介面字（各批共用，core 批維護）
+Toggle	切換	切换		通用介面字（各批共用，core 批維護）
+Toggle all	全部切換	全部切换		通用介面字（各批共用，core 批維護）
+Prev	上個	上个		通用介面字（各批共用，core 批維護）；上一頁／上一項按鈕（4 格放不下「上一個」）
+Previous	上一個	上一个		通用介面字（各批共用，core 批維護）
+Help	說明	帮助		DFHack hack/scripts/gui/launcher.lua L672 說明分頁標籤；通用介面字（各批共用，core 批維護）
+Error	錯誤	错误		通用介面字（各批共用，core 批維護）
+Success	成功	成功		DFHack hack/scripts/gui/control-panel.lua L478 對話框標題；通用介面字（各批共用，core 批維護）
+Edit	編輯	编辑		通用介面字（各批共用，core 批維護）
+Refresh	重整	刷新		通用介面字（各批共用，core 批維護）；7 格放不下「重新整理」
+Default	預設	默认		DFHack hack/scripts/gui/launcher.lua L106 標籤篩選狀態；通用介面字（各批共用，core 批維護）
+Options	選項	选项		通用介面字（各批共用，core 批維護）
+Load	載入	加载		DFHack hack/scripts/gui/mod-manager.lua L508 按鈕；通用介面字（各批共用，core 批維護）
+Sort by:	排序：	排序：		通用介面字（各批共用，core 批維護）；排序選項標籤
+Select all/none	全選／全不選	全选/全不选		通用介面字（各批共用，core 批維護）
+Warning	警告	警告		DFHack hack/scripts/gui/mod-manager.lua L372 對話框標題；通用介面字（各批共用，core 批維護）
+Confirmation	確認	确认		DFHack hack/scripts/gui/mod-manager.lua L450 對話框標題；通用介面字（各批共用，core 批維護）
+Rename	更名	重命名		DFHack hack/scripts/gui/mod-manager.lua L471 按鈕；6 格放不下「重新命名」；通用介面字（各批共用，core 批維護）
+Copied	已複製	已复制		DFHack hack/scripts/gui/launcher.lua L714 複製成功提示；通用介面字（各批共用，core 批維護）
+Command finished successfully	指令執行成功	命令执行成功		DFHack hack/scripts/gui/launcher.lua L1168 與 quickcmd.lua L203 共用
+No output	沒有輸出	没有输出		DFHack hack/scripts/gui/quickcmd.lua L187 指令輸出視窗
+true	是	是	inner	DFHack hack/scripts/gui/control-panel.lua L834 偏好設定預設值／目前值的布林值（Lua tostring），只給句型佔位用
+false	否	否	inner	DFHack hack/scripts/gui/control-panel.lua L834 偏好設定預設值／目前值的布林值（Lua tostring），只給句型佔位用
+PAUSE FORCED	強制暫停	强制暂停		DFHack hack/lua/gui.lua L1338 視窗左下角強制暫停標示（原文前後各一空白）
+Yes, proceed	是，繼續	是，继续		DFHack hack/lua/gui/dialogs.lua L166 showYesNoPrompt 確認按鈕
+Pause this confirmation	暫時停用此確認	暂时停用此确认		DFHack hack/lua/gui/dialogs.lua L148 confirm 工具對話框按鈕：暫停這種確認
+Pre-release build	預先發行版本	预发布版本		DFHack hack/lua/plugins/overlay.lua L655 標題畫面版本資訊
+Show DFHack version number and quick links on the DF title page.	在 DF 標題畫面顯示 DFHack 版本號與快速連結。	在 DF 标题画面显示 DFHack 版本号和快捷链接。		DFHack hack/lua/plugins/overlay.lua L636 疊加介面說明（控制面板疊加介面分頁）
+Command not found	找不到指令	找不到命令		DFHack hack/lua/plugins/hotkeys.lua L293 DFHack 選單說明框
+Shows the DFHack logo context menu button on most screens.	在大多數畫面顯示 DFHack 標誌選單按鈕。	在大多数画面显示 DFHack 标志菜单按钮。		DFHack hack/lua/plugins/hotkeys.lua L64 疊加介面說明（控制面板疊加介面分頁）
+Shows the DFHack logo context menu button on the embark and new game screens.	在出發與新遊戲畫面顯示 DFHack 標誌選單按鈕。	在出发和新游戏画面显示 DFHack 标志菜单按钮。		DFHack hack/lua/plugins/hotkeys.lua L85 疊加介面說明（控制面板疊加介面分頁）
+Shows the DFHack logo context menu button on the legends screen.	在傳說畫面顯示 DFHack 標誌選單按鈕。	在传说画面显示 DFHack 标志菜单按钮。		DFHack hack/lua/plugins/hotkeys.lua L96 疊加介面說明（控制面板疊加介面分頁）
+Shows the DFHack logo context menu button on adventure mode screens.	在冒險模式畫面顯示 DFHack 標誌選單按鈕。	在冒险模式画面显示 DFHack 标志菜单按钮。		DFHack hack/lua/plugins/hotkeys.lua L105 疊加介面說明（控制面板疊加介面分頁）
+Shows the DFHack logo context menu button on the new adventure screen.	在新冒險畫面顯示 DFHack 標誌選單按鈕。	在新冒险画面显示 DFHack 标志菜单按钮。		DFHack hack/lua/plugins/hotkeys.lua L119 疊加介面說明（控制面板疊加介面分頁）
+Toggle enabled	切換啟用	切换启用		DFHack hack/scripts/gui/control-panel.lua L381 按鍵提示
+Show full tool help or run custom command	顯示完整工具說明或執行自訂指令	显示完整工具帮助或执行自定义命令		DFHack hack/scripts/gui/control-panel.lua L388 按鍵提示
+Launch tool-specific config UI	開啟工具專屬設定介面	打开工具专属设置界面		DFHack hack/scripts/gui/control-panel.lua L395 按鍵提示
+Toggle overlay	切換疊加介面	切换叠加界面		DFHack hack/scripts/gui/control-panel.lua L550 按鍵提示
+Show overlay help	顯示疊加介面說明	显示叠加界面帮助		DFHack hack/scripts/gui/control-panel.lua L557 按鍵提示
+Launch widget position adjustment UI	開啟小工具位置調整介面	打开小部件位置调整界面		DFHack hack/scripts/gui/control-panel.lua L564 按鍵提示（執行 gui/overlay）
+Toggle/edit setting	切換／編輯設定	切换/编辑设置		DFHack hack/scripts/gui/control-panel.lua L799 偏好設定分頁按鍵提示
+Edit setting	編輯設定	编辑设置	c	DFHack hack/scripts/gui/control-panel.lua L671 偏好設定編輯視窗標題
+Please set a new value for	請為以下項目設定新值：	请为以下项目设置新值：		DFHack hack/scripts/gui/control-panel.lua L681 偏好設定編輯視窗（下一行是設定名稱；原文結尾空白）
+These run in the background and help you manage your fort. They are always safe to enable, and allow you to concentrate on other aspects of gameplay that you find more enjoyable.	這些工具在背景執行，協助你管理要塞。啟用它們一定安全，讓你能專心在自己覺得更有趣的遊戲面向上。	这些工具在后台运行，帮助你管理要塞。启用它们总是安全的，让你能专注于自己觉得更有趣的游戏方面。		DFHack hack/scripts/gui/control-panel.lua L491 自動化分頁說明（WrappedLabel，整段）
+These automatically fix dangerous or annoying vanilla bugs. You should generally have all of these enabled.	這些工具會自動修正原版中危險或惱人的錯誤。一般來說應該全部啟用。	这些工具会自动修复原版中危险或烦人的错误。一般来说应该全部启用。		DFHack hack/scripts/gui/control-panel.lua L504 錯誤修正分頁說明（WrappedLabel，整段）
+These are DFHack overlays that add information and functionality to native DF screens. You can toggle whether they are enabled here, or you can reposition them with gui/overlay.	這些是 DFHack 疊加介面，會在 DF 原生畫面上加入資訊與功能。你可以在這裡切換是否啟用，也可以用 gui/overlay 調整它們的位置。	这些是 DFHack 叠加界面，会在 DF 原生画面上添加信息和功能。你可以在这里切换是否启用，也可以用 gui/overlay 调整它们的位置。		DFHack hack/scripts/gui/control-panel.lua L528 介面疊加分頁說明（WrappedLabel，整段）
+These are the customizable DFHack system settings.	這些是可自訂的 DFHack 系統設定。	这些是可自定义的 DFHack 系统设置。		DFHack hack/scripts/gui/control-panel.lua L776 偏好設定分頁說明（WrappedLabel）
+Tools that are enabled on this page will be auto-run or auto-enabled for you when you start a new fort (or, for "global" tools, when you start the game). To see tools that are enabled right now, please click on the "Enabled" tab.	在這一頁啟用的工具，會在你開始新要塞時（「全域」工具則是在啟動遊戲時）自動執行或自動啟用。要查看目前已啟用的工具，請點「已啟用」分頁。	在这一页启用的工具，会在你开始新要塞时（“全局”工具则是在启动游戏时）自动运行或自动启用。要查看当前已启用的工具，请点击“已启用”标签页。		DFHack hack/scripts/gui/control-panel.lua L326 自動啟動子分頁說明（WrappedLabel，整段）
+Are you sure you want to restore overlay defaults?	確定要將疊加介面恢復預設值嗎？	确定要将叠加界面恢复默认值吗？		DFHack hack/scripts/gui/control-panel.lua L645 恢復預設確認框
+Are you sure you want to restore default preferences?	確定要將偏好設定恢復預設值嗎？	确定要将偏好设置恢复默认值吗？		DFHack hack/scripts/gui/control-panel.lua L899 恢復預設確認框
+Overlay defaults restored.	已恢復疊加介面預設值。	已恢复叠加界面默认值。		DFHack hack/scripts/gui/control-panel.lua L652 恢復完成訊息
+Default preferences restored.	已恢復預設偏好設定。	已恢复默认偏好设置。		DFHack hack/scripts/gui/control-panel.lua L906 恢復完成訊息
+Enabled defaults restored for automation tools.	自動化工具的啟用狀態已恢復預設。	自动化工具的启用状态已恢复默认。		DFHack hack/scripts/gui/control-panel.lua L479 恢復完成訊息（'%s defaults restored for %s tools.'，子分頁 Enabled × 群組 automation，逐條寫死）
+Autostart defaults restored for automation tools.	自動化工具的自動啟動設定已恢復預設。	自动化工具的自动启动设置已恢复默认。		DFHack hack/scripts/gui/control-panel.lua L479 恢復完成訊息（子分頁 Autostart × 群組 automation，逐條寫死）
+Enabled defaults restored for bugfix tools.	錯誤修正工具的啟用狀態已恢復預設。	错误修正工具的启用状态已恢复默认。		DFHack hack/scripts/gui/control-panel.lua L479 恢復完成訊息（'%s defaults restored for %s tools.'，子分頁 Enabled × 群組 bugfix，逐條寫死）
+Autostart defaults restored for bugfix tools.	錯誤修正工具的自動啟動設定已恢復預設。	错误修正工具的自动启动设置已恢复默认。		DFHack hack/scripts/gui/control-panel.lua L479 恢復完成訊息（子分頁 Autostart × 群組 bugfix，逐條寫死）
+Enabled defaults restored for gameplay tools.	遊戲玩法工具的啟用狀態已恢復預設。	游戏玩法工具的启用状态已恢复默认。		DFHack hack/scripts/gui/control-panel.lua L479 恢復完成訊息（'%s defaults restored for %s tools.'，子分頁 Enabled × 群組 gameplay，逐條寫死）
+Autostart defaults restored for gameplay tools.	遊戲玩法工具的自動啟動設定已恢復預設。	游戏玩法工具的自动启动设置已恢复默认。		DFHack hack/scripts/gui/control-panel.lua L479 恢復完成訊息（子分頁 Autostart × 群組 gameplay，逐條寫死）
+Mortal mode: hide "armok" tools	凡人模式：隱藏「armok」工具	凡人模式：隐藏“armok”工具		DFHack hack/scripts/internal/control-panel/registry.lua L179 偏好設定名稱
+DFHack searches full text	DFHack 搜尋全文	DFHack 全文搜索		DFHack hack/scripts/internal/control-panel/registry.lua L187 偏好設定名稱
+Hide console on startup (MS Windows only)	啟動時隱藏主控台（僅限 Windows）	启动时隐藏控制台（仅限 Windows）		DFHack hack/scripts/internal/control-panel/registry.lua L195 偏好設定名稱
+DFHack tools autopause game	DFHack 工具自動暫停遊戲	DFHack 工具自动暂停游戏		DFHack hack/scripts/internal/control-panel/registry.lua L203 偏好設定名稱
+Large number formatting	大數字格式	大数字格式		DFHack hack/scripts/internal/control-panel/registry.lua L211 偏好設定名稱
+Intercept handled hotkeys	攔截已處理的快捷鍵	拦截已处理的快捷键		DFHack hack/scripts/internal/control-panel/registry.lua L226 偏好設定名稱
+Mouse double click speed (ms)	滑鼠雙擊間隔（毫秒）	鼠标双击间隔（毫秒）		DFHack hack/scripts/internal/control-panel/registry.lua L234 偏好設定名稱
+Mouse scroll repeat delay (ms)	滑鼠捲動重複間隔（毫秒）	鼠标滚动重复间隔（毫秒）		DFHack hack/scripts/internal/control-panel/registry.lua L243 偏好設定名稱
+Mouse initial scroll repeat delay (ms)	滑鼠捲動重複起始延遲（毫秒）	鼠标滚动重复初始延迟（毫秒）		DFHack hack/scripts/internal/control-panel/registry.lua L252 偏好設定名稱
+Don't show tools that give you god-like powers wherever DFHack tools are listed.	列出 DFHack 工具時，不顯示會給你神一般能力的工具。	列出 DFHack 工具时，不显示会赋予你神一般能力的工具。		DFHack hack/scripts/internal/control-panel/registry.lua L180 偏好設定說明（控制面板下方說明框）
+When searching, whether to match anywhere in the text (true) or just at the start of words (false).	搜尋時要比對文字中的任何位置（是），或只比對單字開頭（否）。	搜索时匹配文本中的任意位置（是），还是只匹配单词开头（否）。		DFHack hack/scripts/internal/control-panel/registry.lua L188 偏好設定說明（控制面板下方說明框）
+Hide the external DFHack terminal window on startup. Use the "show" command to unhide it.	啟動時隱藏外部的 DFHack 終端機視窗。要再顯示，請使用「show」指令。	启动时隐藏外部的 DFHack 终端窗口。要重新显示，请使用“show”命令。		DFHack hack/scripts/internal/control-panel/registry.lua L196 偏好設定說明（控制面板下方說明框）
+Always pause the game when a DFHack tool window is shown (you can still unpause afterwards).	開啟 DFHack 工具視窗時一律暫停遊戲（之後仍可取消暫停）。	打开 DFHack 工具窗口时总是暂停游戏（之后仍可取消暂停）。		DFHack hack/scripts/internal/control-panel/registry.lua L204 偏好設定說明（控制面板下方說明框）
+Number formatting style for DFHack tool UIs.	DFHack 工具介面的數字格式。	DFHack 工具界面的数字格式。		DFHack hack/scripts/internal/control-panel/registry.lua L212 偏好設定說明（控制面板下方說明框）
+Prevent key events handled by DFHack windows from also affecting the vanilla widgets.	避免已由 DFHack 視窗處理的按鍵，又影響到原版介面。	避免已由 DFHack 窗口处理的按键，又影响到原版界面。		DFHack hack/scripts/internal/control-panel/registry.lua L227 偏好設定說明（控制面板下方說明框）
+How long to wait for the second click of a double click, in ms.	雙擊時等待第二下點擊的時間，單位為毫秒。	双击时等待第二次点击的时间，单位为毫秒。		DFHack hack/scripts/internal/control-panel/registry.lua L235 偏好設定說明（控制面板下方說明框）
+The delay between events when holding the mouse button down on a scrollbar, in ms.	在捲軸上按住滑鼠按鍵時，每次捲動的間隔，單位為毫秒。	在滚动条上按住鼠标按键时，每次滚动的间隔，单位为毫秒。		DFHack hack/scripts/internal/control-panel/registry.lua L244 偏好設定說明（控制面板下方說明框）
+The delay before scrolling quickly when holding the mouse button down on a scrollbar, in ms.	在捲軸上按住滑鼠按鍵時，開始快速捲動前的延遲，單位為毫秒。	在滚动条上按住鼠标按键时，开始快速滚动前的延迟，单位为毫秒。		DFHack hack/scripts/internal/control-panel/registry.lua L253 偏好設定說明（控制面板下方說明框）
+None (ex: 1234567)	無（例：1234567）	无（例：1234567）		DFHack hack/scripts/internal/control-panel/registry.lua L215 大數字格式選項
+English (ex: 1,234,567)	英式（例：1,234,567）	英式（例：1,234,567）		DFHack hack/scripts/internal/control-panel/registry.lua L216 大數字格式選項
+System locale	系統地區設定	系统区域设置		DFHack hack/scripts/internal/control-panel/registry.lua L217 大數字格式選項
+SI suffix (ex: 1.23M)	SI 字尾（例：1.23M）	SI 后缀（例：1.23M）		DFHack hack/scripts/internal/control-panel/registry.lua L218 大數字格式選項
+Scientific (ex: 1.2e+06)	科學記號（例：1.2e+06）	科学记数（例：1.2e+06）		DFHack hack/scripts/internal/control-panel/registry.lua L219 大數字格式選項
+Reports missing nemesis records, indicating savegame corruption.	回報缺少的 nemesis 紀錄，這代表存檔已損毀。	报告缺失的 nemesis 记录，这表示存档已损坏。		DFHack hack/scripts/internal/notify/notifications.lua L434 通知設定說明（gui/notify 等清單）
+Notifies when a squad is stuck on the world map.	小隊受困在世界地圖上時通知。	小队被困在世界地图上时通知。		DFHack hack/scripts/internal/notify/notifications.lua L501 通知設定說明（gui/notify 等清單）
+Notifies when there are no squads set up for training	沒有設定訓練用的小隊時通知。	没有设置训练用的小队时通知。		DFHack hack/scripts/internal/notify/notifications.lua L531 通知設定說明（gui/notify 等清單）
+Notifies when traders are ready to trade at the depot.	商人在貿易站準備好交易時通知。	商人在贸易站准备好交易时通知。		DFHack hack/scripts/internal/notify/notifications.lua L549 通知設定說明（gui/notify 等清單）
+Notifies when a production mandate is within 1 month of expiring.	生產命令距離到期不到 1 個月時通知。	生产命令距离到期不到 1 个月时通知。		DFHack hack/scripts/internal/notify/notifications.lua L591 通知設定說明（gui/notify 等清單）
+Notifies when you have agreed to build (but have not yet built) a guildhall or temple.	你已同意興建（但尚未建好）公會大廳或神殿時通知。	你已同意建造（但尚未建好）公会大厅或神殿时通知。		DFHack hack/scripts/internal/notify/notifications.lua L615 通知設定說明（gui/notify 等清單）
+Describes the status of the current moody dwarf: gathering materials, working, or stuck	顯示目前心境奇異的矮人的狀態：收集材料、工作中或卡住	显示当前心境奇异的矮人的状态：收集材料、工作中或卡住		DFHack hack/scripts/internal/notify/notifications.lua L629 通知設定說明（gui/notify 等清單）；術語例外：Gathering；蒐集神器材料，不是採集勞動
+Reports units that are dangerously hungry, thirsty, or drowsy.	回報飢餓、口渴或睏倦到危險程度的單位。	报告饥饿、口渴或困倦到危险程度的单位。		DFHack hack/scripts/internal/notify/notifications.lua L659 通知設定說明（gui/notify 等清單）
+Notifies when there are agitated animals on the map.	地圖上有躁動的動物時通知。	地图上有躁动的动物时通知。		DFHack hack/scripts/internal/notify/notifications.lua L666 通知設定說明（gui/notify 等清單）
+Notifies when there are active invaders on the map.	地圖上有活動中的入侵者時通知。	地图上有活动中的入侵者时通知。		DFHack hack/scripts/internal/notify/notifications.lua L673 通知設定說明（gui/notify 等清單）
+Notifies when there are non-invader hostiles (e.g. megabeasts) on the map.	地圖上有入侵者以外的敵對生物（例如巨獸）時通知。	地图上有入侵者以外的敌对生物（例如巨兽）时通知。		DFHack hack/scripts/internal/notify/notifications.lua L680 通知設定說明（gui/notify 等清單）
+Notifies when thieving or mischievous creatures are on the map.	地圖上有會偷竊或搗蛋的生物時通知。	地图上有会偷窃或捣乱的生物时通知。		DFHack hack/scripts/internal/notify/notifications.lua L687 通知設定說明（gui/notify 等清單）
+Notifies when units are stranded from the main group.	有單位與主要群體隔絕而受困時通知。	有单位与主要群体隔绝而被困时通知。		DFHack hack/scripts/internal/notify/notifications.lua L694 通知設定說明（gui/notify 等清單）
+Gives a summary of visible wildlife on the map.	摘要列出地圖上看得到的野生動物。	概要列出地图上可见的野生动物。		DFHack hack/scripts/internal/notify/notifications.lua L701 通知設定說明（gui/notify 等清單）
+Shows number of injured citizens and a warning if there is no functional hospital.	顯示受傷居民的人數，沒有可運作的醫院時也會警告。	显示受伤居民的人数，没有可运作的医院时也会警告。		DFHack hack/scripts/internal/notify/notifications.lua L715 通知設定說明（gui/notify 等清單）
+Warns when job postings stay unclaimed for more than a day while labormanager (or monitor mode) is active.	labormanager（或監看模式）啟用時，若有工作超過一天無人認領就發出警告。	labormanager（或监视模式）启用时，若有工作超过一天无人认领就发出警告。		DFHack hack/scripts/internal/notify/notifications.lua L722 通知設定說明（gui/notify 等清單）
+Shows a suffocation bar when you are drowning or breathless.	溺水或喘不過氣時顯示窒息條。	溺水或喘不过气时显示窒息条。		DFHack hack/scripts/internal/notify/notifications.lua L746 通知設定說明（gui/notify 等清單）
+Shows a bleeding bar when you are losing blood.	失血時顯示出血條。	失血时显示出血条。		DFHack hack/scripts/internal/notify/notifications.lua L754 通知設定說明（gui/notify 等清單）
+nemesis vector not sorted	nemesis 向量未排序	nemesis 向量未排序		DFHack hack/scripts/internal/notify/notifications.lua L440 通知欄訊息與對話框標題；nemesis 是遊戲內部紀錄名，照原文
+Would you like to save now? (Note: You can also close this reminder and save manually)	要現在存檔嗎？（註：你也可以關閉這個提醒，自行存檔）	要现在保存吗？（注：你也可以关闭这个提醒，自行保存）		DFHack hack/scripts/internal/notify/notifications.lua L334 存檔提醒對話框第二段（\n\n 後）
+Close this popup to open the options menu and select "Save and continue playing"	關閉這個視窗後會開啟選項選單，請選擇「存檔並繼續遊戲」	关闭这个窗口后会打开选项菜单，请选择“保存并继续游戏”		DFHack hack/scripts/internal/notify/notifications.lua L339 存檔提醒對話框第二段（非要塞模式）；選單項沿用 title.tsv 譯名
+Save now?	存檔嗎？	保存吗？		DFHack hack/scripts/internal/notify/notifications.lua L337 存檔提醒對話框標題
+Save reminder	存檔提醒	保存提醒		DFHack hack/scripts/internal/notify/notifications.lua L340 存檔提醒對話框標題
+This save game is corrupt.	這個存檔已損毀。	这个存档已损坏。		DFHack hack/scripts/internal/notify/notifications.lua L454 nemesis 未排序對話框第一段（\n\n 前）
+This save game may be corrupt.	這個存檔可能已損毀。	这个存档可能已损坏。		DFHack hack/scripts/internal/notify/notifications.lua L463 缺少 nemesis 紀錄對話框第一行
+These units on the map are missing their nemesis records:	地圖上這些單位缺少 nemesis 紀錄：	地图上这些单位缺少 nemesis 记录：		DFHack hack/scripts/internal/notify/notifications.lua L480 缺少 nemesis 紀錄對話框
+No units on the map are missing their nemesis records.	地圖上沒有單位缺少 nemesis 紀錄。	地图上没有单位缺少 nemesis 记录。		DFHack hack/scripts/internal/notify/notifications.lua L492 缺少 nemesis 紀錄對話框
+Units on the map are missing nemesis records	地圖上有單位缺少 nemesis 紀錄	地图上有单位缺少 nemesis 记录		DFHack hack/scripts/internal/notify/notifications.lua L495 缺少 nemesis 紀錄對話框標題
+This world is missing nemesis records	這個世界缺少 nemesis 紀錄	这个世界缺少 nemesis 记录		DFHack hack/scripts/internal/notify/notifications.lua L495 缺少 nemesis 紀錄對話框標題
+A squad is lost on the world map and needs rescue!	有小隊在世界地圖上迷途，需要救援！	有小队在世界地图上迷路，需要救援！		DFHack hack/scripts/internal/notify/notifications.lua L516 受困小隊對話框第一段（\n\n 前）
+Rescue stuck squads	救援受困小隊	救援被困小队		DFHack hack/scripts/internal/notify/notifications.lua L526 受困小隊對話框標題
+autotraining: no squads selected	autotraining：未選擇小隊	autotraining：未选择小队		DFHack hack/scripts/internal/notify/notifications.lua L536 通知欄訊息；autotraining 是工具名
+You have no squads selected for training.	你沒有選擇任何要訓練的小隊。	你没有选择任何要训练的小队。		DFHack hack/scripts/internal/notify/notifications.lua L541 自動訓練對話框（\n 分段）
+You should have a squad set up to be constantly training with about 8 units needed for training.	你應該設定一支持續訓練的小隊，訓練大約需要 8 個單位。	你应该设置一支持续训练的小队，训练大约需要 8 个单位。		DFHack hack/scripts/internal/notify/notifications.lua L542 自動訓練對話框（\n 分段）
+Then you can select that squad for training in the config.	然後就能在設定中選擇那支小隊進行訓練。	然后就能在设置中选择那支小队进行训练。		DFHack hack/scripts/internal/notify/notifications.lua L543 自動訓練對話框（\n 分段）
+Would you like to open the config? Alternatively, simply close this popup to go create a squad.	要開啟設定嗎？或者，直接關閉這個視窗去建立小隊。	要打开设置吗？或者，直接关闭这个窗口去创建小队。		DFHack hack/scripts/internal/notify/notifications.lua L543 自動訓練對話框（\n\n 後）
+Training Squads not configured	尚未設定訓練小隊	尚未设置训练小队		DFHack hack/scripts/internal/notify/notifications.lua L544 自動訓練對話框標題
+moody dwarf is claiming a workshop	心境奇異的矮人正在佔用工坊	心境奇异的矮人正在占用工坊		DFHack hack/scripts/internal/notify/notifications.lua L638 通知欄：奇異心境狀態
+moody dwarf can't find needed workshop!	心境奇異的矮人找不到需要的工坊！	心境奇异的矮人找不到需要的工坊！		DFHack hack/scripts/internal/notify/notifications.lua L640 通知欄：奇異心境狀態
+moody dwarf is gathering items	心境奇異的矮人正在收集物品	心境奇异的矮人正在收集物品		DFHack hack/scripts/internal/notify/notifications.lua L645 通知欄：奇異心境狀態；術語例外：Gathering；蒐集神器材料，不是採集勞動
+moody dwarf is working	心境奇異的矮人正在工作	心境奇异的矮人正在工作		DFHack hack/scripts/internal/notify/notifications.lua L647 通知欄：奇異心境狀態
+moody dwarf can't find needed item!	心境奇異的矮人找不到需要的物品！	心境奇异的矮人找不到需要的物品！		DFHack hack/scripts/internal/notify/notifications.lua L649 通知欄：奇異心境狀態
+DFHack Launcher	DFHack 啟動器	DFHack 启动器	c	DFHack hack/scripts/gui/launcher.lua L19 視窗標題（MainPanel frame_title；也當 showMessage 標題）
+Cycle filter	切換篩選	切换筛选		DFHack hack/scripts/gui/launcher.lua L256 標籤篩選面板按鍵提示
+Cycle all	全部切換	全部切换		DFHack hack/scripts/gui/launcher.lua L263 標籤篩選面板按鍵提示
+(included)	（納入）	（纳入）		DFHack hack/scripts/gui/launcher.lua L330 標籤篩選狀態
+(excluded)	（排除）	（排除）		DFHack hack/scripts/gui/launcher.lua L332 標籤篩選狀態
+Click or select via	點選或按下列鍵	点击或按下列键		DFHack hack/scripts/gui/launcher.lua L380 自動完成面板（下一行是 Tab/Shift+Tab）
+Tags:	標籤:	标签:		DFHack hack/scripts/gui/launcher.lua L391 自動完成面板按鍵提示；5 格放不下全形冒號
+Reset tag filter	重設標籤篩選	重置标签筛选		DFHack hack/scripts/gui/launcher.lua L399 按鍵提示
+Showing:	顯示：	显示：		DFHack hack/scripts/gui/launcher.lua L411 自動完成清單標頭
+Matching tools	符合的工具	匹配的工具		DFHack hack/scripts/gui/launcher.lua L416 自動完成清單標頭（L1107 同）
+Tagged tools	同標籤工具	同标签工具		DFHack hack/scripts/gui/launcher.lua L1101 自動完成清單標頭
+Similar tools	相似工具	相似工具		DFHack hack/scripts/gui/launcher.lua L1104 自動完成清單標頭
+history search:	搜尋歷史：	搜索历史：		DFHack hack/scripts/gui/launcher.lua L524 歷史搜尋欄標籤（原文結尾空白）
+Clear output	清除輸出	清除输出		DFHack hack/scripts/gui/launcher.lua L680 按鈕
+Copy output to clipboard	複製輸出到剪貼簿	复制输出到剪贴板		DFHack hack/scripts/gui/launcher.lua L690 按鈕
+Dev default	開發預設	开发默认		DFHack hack/scripts/gui/launcher.lua L104 標籤篩選狀態
+Welcome to DFHack!	歡迎使用 DFHack！	欢迎使用 DFHack！		DFHack hack/scripts/gui/launcher.lua L652 預設說明文字第一段（WrappedLabel，\n 分段）
+Type a command or click on it in the autocomplete panel to see its help text here. Hit Enter or click on the "run" button to run the command as typed. You can also run a command without parameters by double clicking on it in the autocomplete list.	輸入指令，或在自動完成面板點選指令，就會在這裡顯示說明。按 Enter 或點「run」按鈕，就會照輸入的內容執行指令。在自動完成清單中雙擊指令，也能不帶參數直接執行。	输入命令，或在自动补全面板点击命令，就会在这里显示帮助。按 Enter 或点击“run”按钮，就会按输入的内容执行命令。在自动补全列表中双击命令，也能不带参数直接执行。		DFHack hack/scripts/gui/launcher.lua L654 預設說明文字（WrappedLabel，\n 分段）
+You can filter the autocomplete list by clicking on the "Tags" button. Tap backtick (`) or hit ESC to close this dialog. This dialog also closes automatically if you run a command that shows a new GUI screen.	點「標籤」按鈕可以篩選自動完成清單。按反引號（`）或 ESC 關閉這個視窗。執行會開啟新介面畫面的指令時，這個視窗也會自動關閉。	点击“标签”按钮可以筛选自动补全列表。按反引号（`）或 ESC 关闭这个窗口。执行会打开新界面画面的命令时，这个窗口也会自动关闭。		DFHack hack/scripts/gui/launcher.lua L656 預設說明文字（WrappedLabel，\n 分段）；Tags 按鈕譯成「標籤:」，說明照用「標籤」
+Not sure what to do? You can browse and configure DFHack most important tools in "gui/control-panel". Please also run "quickstart-guide" to get oriented with DFHack and its capabilities.	不知道該做什麼？可以在「gui/control-panel」瀏覽並設定 DFHack 最重要的工具。也請執行「quickstart-guide」，認識 DFHack 和它的功能。	不知道该做什么？可以在“gui/control-panel”浏览并设置 DFHack 最重要的工具。也请运行“quickstart-guide”，了解 DFHack 和它的功能。		DFHack hack/scripts/gui/launcher.lua L658 預設說明文字（WrappedLabel，\n 分段）
+To see more detailed help for this command launcher (including info on keyboard and mouse controls), type "gui/launcher".	要查看這個指令啟動器更詳細的說明（包括鍵盤與滑鼠操作），請輸入「gui/launcher」。	要查看这个命令启动器更详细的帮助（包括键盘和鼠标操作），请输入“gui/launcher”。		DFHack hack/scripts/gui/launcher.lua L660 預設說明文字（WrappedLabel，\n 分段）
+Keybinds	按鍵設定	按键设置	c	DFHack hack/scripts/gui/keybinds.lua L505 主視窗標題
+New Keybind	新按鍵設定	新按键设置		DFHack hack/scripts/gui/keybinds.lua L520 按鍵提示
+Delete Keybind	刪除按鍵設定	删除按键设置		DFHack hack/scripts/gui/keybinds.lua L527 按鍵提示
+Edit Keybind	編輯按鍵設定	编辑按键设置		DFHack hack/scripts/gui/keybinds.lua L534 按鍵提示；視窗標題（L192）同字，置中由引擎依標題處理
+Save Keybinds	儲存按鍵設定	保存按键设置		DFHack hack/scripts/gui/keybinds.lua L541 按鍵提示；視窗標題（L281）同字
+Select a Key Combination	選擇按鍵組合	选择按键组合	c	DFHack hack/scripts/gui/keybinds.lua L76 選擇按鍵視窗標題
+Listening...	等待按鍵...	等待按键...		DFHack hack/scripts/gui/keybinds.lua L160 選擇按鍵視窗：等待玩家按鍵
+WARNING: This keybind may be disruptive to gameplay.	警告：這個按鍵設定可能會干擾遊戲操作。	警告：这个按键设置可能会干扰游戏操作。		DFHack hack/scripts/gui/keybinds.lua L92 選擇按鍵視窗（\n 分段）
+Proceed cautiously.	請謹慎操作。	请谨慎操作。		DFHack hack/scripts/gui/keybinds.lua L92 選擇按鍵視窗（\n 分段）
+Hotkey:	快捷鍵:	快捷键:		DFHack hack/scripts/gui/keybinds.lua L198 編輯按鍵設定視窗按鍵提示（原文結尾空白）；7 格放不下全形冒號
+Command to Execute:	要執行的指令：	要执行的命令：		DFHack hack/scripts/gui/keybinds.lua L211 輸入欄標籤（原文結尾空白）
+List of active contexts, separated by |.	生效的情境清單，以 | 分隔。	生效的上下文列表，以 | 分隔。		DFHack hack/scripts/gui/keybinds.lua L217 說明（\n 分段）
+Blank for always active	留空表示永遠生效	留空表示始终生效		DFHack hack/scripts/gui/keybinds.lua L218 說明（\n 分段）
+Focus Context:	焦點情境：	焦点上下文：		DFHack hack/scripts/gui/keybinds.lua L224 輸入欄標籤（原文結尾空白）
+Current context:	目前情境：	当前上下文：		DFHack hack/scripts/gui/keybinds.lua L184 目前焦點清單標頭（下面每行一個焦點字串，照原文）
+Keybinds are saved to "dfhack-config/init/dfhack.auto.keybinds.init" and loaded on startup.	按鍵設定會儲存到「dfhack-config/init/dfhack.auto.keybinds.init」，並在啟動時載入。	按键设置会保存到“dfhack-config/init/dfhack.auto.keybinds.init”，并在启动时加载。		DFHack hack/scripts/gui/keybinds.lua L286 儲存視窗（WrappedLabel，原文結尾 \n）
+This will not remove any keybinds set by other init files.	這不會移除其他 init 檔設定的按鍵。	这不会移除其他 init 文件设置的按键。		DFHack hack/scripts/gui/keybinds.lua L290 儲存視窗
+Delete Saved Keybinds	刪除已儲存的按鍵設定	删除已保存的按键设置		DFHack hack/scripts/gui/keybinds.lua L310 按鍵提示
+Modlist Manager	模組清單管理	模组列表管理	c	DFHack hack/scripts/gui/mod-manager.lua L207 視窗標題；術語例外：manager；模組管理工具，不是貴族職位經理
+Failed to load some mods from your default preset.	無法從你的預設組合載入部分模組。	无法从你的默认组合加载部分模组。		DFHack hack/scripts/gui/mod-manager.lua L255 警告對話框（preset 譯「組合」，避開「預設」）
+Preset is being unmarked as the default for safety.	為了安全，已取消此組合的預設標記。	为安全起见，已取消此组合的默认标记。		DFHack hack/scripts/gui/mod-manager.lua L260 警告對話框
+Failed to load some mods from the preset.	無法從此組合載入部分模組。	无法从此组合加载部分模组。		DFHack hack/scripts/gui/mod-manager.lua L265 警告對話框
+Some vanilla mods have been updated.	部分原版模組已更新。	部分原版模组已更新。		DFHack hack/scripts/gui/mod-manager.lua L277 警告對話框
+Please re-create your preset with mods you currently have installed.	請用目前已安裝的模組重新建立組合。	请用当前已安装的模组重新创建组合。		DFHack hack/scripts/gui/mod-manager.lua L282 警告對話框
+Here are the mods that failed to load:	以下是載入失敗的模組：	以下是加载失败的模组：		DFHack hack/scripts/gui/mod-manager.lua L332 警告對話框
+Here are the vanilla mods that have been updated:	以下是已更新的原版模組：	以下是已更新的原版模组：		DFHack hack/scripts/gui/mod-manager.lua L346 警告對話框
+New vanilla mods are not included in the preset.	新的原版模組未包含在此組合中。	新的原版模组未包含在此组合中。		DFHack hack/scripts/gui/mod-manager.lua L360 警告對話框
+Save current	儲存目前組合	保存当前组合		DFHack hack/scripts/gui/mod-manager.lua L444 按鍵提示（w=15）
+Enter preset name	輸入組合名稱	输入组合名称		DFHack hack/scripts/gui/mod-manager.lua L446 輸入框標題
+Enter new name	輸入新名稱	输入新名称		DFHack hack/scripts/gui/mod-manager.lua L479 輸入框標題
+Set as default	設為預設	设为默认		DFHack hack/scripts/gui/mod-manager.lua L546 按鍵提示
+Active Mods	啟用中模組	已启用模组	c	DFHack hack/scripts/gui/mod-manager.lua L581 視窗標題；11 格放不下「已啟用的模組」
+Vanilla mods:	原版模組：	原版模组：		DFHack hack/scripts/gui/mod-manager.lua L612 CycleHotkeyLabel 標籤
+Export to clipboard (single line)	匯出到剪貼簿（單行）	导出到剪贴板（单行）		DFHack hack/scripts/gui/mod-manager.lua L628 按鈕
+Export to clipboard (with links)	匯出到剪貼簿（含連結）	导出到剪贴板（含链接）		DFHack hack/scripts/gui/mod-manager.lua L642 按鈕
+vanilla mods	原版模組	原版模组		DFHack hack/scripts/gui/mod-manager.lua L674 底部計數（原文前有空白，接在數字後）
+non-vanilla mods	非原版模組	非原版模组		DFHack hack/scripts/gui/mod-manager.lua L678 底部計數（原文前有空白，接在數字後）
+(hidden)	（隱藏）	（隐藏）		DFHack hack/scripts/gui/mod-manager.lua L675 底部計數：原版模組被隱藏時
+Mod Manager	模組管理	模组管理		DFHack hack/scripts/gui/mod-manager.lua L751 模組選擇畫面 overlay 按鈕；術語例外：manager；模組管理工具，不是貴族職位經理
+Adds a link to the mod selection screen for accessing the mod manager.	在模組選擇畫面加入開啟模組管理的連結。	在模组选择画面添加打开模组管理的链接。		DFHack hack/scripts/gui/mod-manager.lua L738 疊加介面說明（控制面板疊加介面分頁）；術語例外：manager；模組管理工具，不是貴族職位經理
+Displays a message when a mod preset has been automatically applied.	自動套用模組組合時顯示訊息。	自动应用模组组合时显示消息。		DFHack hack/scripts/gui/mod-manager.lua L762 疊加介面說明（控制面板疊加介面分頁）
+Color Schemes	配色方案	配色方案	c	DFHack hack/scripts/gui/color-schemes.lua L587 視窗標題
+Register color schemes by file or directory	依檔案或資料夾註冊配色方案	按文件或目录注册配色方案		DFHack hack/scripts/gui/color-schemes.lua L612 註冊輸入框說明
+Quick Command	快速指令	快速命令	c	DFHack hack/scripts/gui/quickcmd.lua L80 視窗標題
+Hotkey	快捷鍵	快捷键		DFHack hack/scripts/gui/quickcmd.lua L92 清單欄名（width=7）
+Name/Command	名稱／指令	名称/命令		DFHack hack/scripts/gui/quickcmd.lua L92 清單欄名
+Command list is empty.	指令清單是空的。	命令列表为空。		DFHack hack/scripts/gui/quickcmd.lua L102 空清單提示（NEWLINE 分行，各為一句）
+Hit "A" to add one!	按「A」新增一個！	按“A”添加一个！		DFHack hack/scripts/gui/quickcmd.lua L102 空清單提示
+Add command	新增指令	添加命令		DFHack hack/scripts/gui/quickcmd.lua L108 按鍵提示；輸入框標題（L249）同字
+Delete command	刪除指令	删除命令		DFHack hack/scripts/gui/quickcmd.lua L115 按鍵提示；確認框標題（L270）同字
+Edit command	編輯指令	编辑命令		DFHack hack/scripts/gui/quickcmd.lua L122 按鍵提示；輸入框標題（L290）同字
+Edit name	編輯名稱	编辑名称		DFHack hack/scripts/gui/quickcmd.lua L129 按鍵提示
+Capture output	擷取輸出	捕获输出		DFHack hack/scripts/gui/quickcmd.lua L136 按鍵提示
+Enter new command:	輸入新指令：	输入新命令：		DFHack hack/scripts/gui/quickcmd.lua L250 輸入框標籤
+Are you sure you want to delete this command:	確定要刪除以下指令嗎？	确定要删除以下命令吗？		DFHack hack/scripts/gui/quickcmd.lua L271 確認框（下一行是指令；原文結尾空白）
+Enter command:	輸入指令：	输入命令：		DFHack hack/scripts/gui/quickcmd.lua L291 輸入框標籤
+Set name	設定名稱	设置名称		DFHack hack/scripts/gui/quickcmd.lua L311 輸入框標題
+Enter name:	輸入名稱：	输入名称：		DFHack hack/scripts/gui/quickcmd.lua L312 輸入框標籤
+Never	從不	从不		通用介面字（各批共用，core 批維護）；stockflow 觸發條件等
+No results	沒有結果	没有结果		通用介面字（各批共用，core 批維護）；FilteredList not_found_label
+Suspended	已暫停	已暂停		通用介面字（各批共用，core 批維護）；工作狀態

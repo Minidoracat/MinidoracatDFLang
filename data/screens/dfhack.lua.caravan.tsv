@@ -1,0 +1,7 @@
+en	zh-Hant	zh-Hans	align	row	note
+Ordinary	普通	普通			DFHack hack/scripts/internal/caravan/common.lua L180 品質選項（全域 Ordinary 是建立角色的「平凡」）
+Artifact	神器	神器			DFHack hack/scripts/internal/caravan/common.lua L186 品質選項
+Trees	樹木	树木			DFHack hack/scripts/internal/caravan/common.lua L437 商人道德禁忌（只有一項時單獨畫出）
+value	價值	价值			DFHack hack/scripts/internal/caravan/movegoods.lua L230 排序欄名（未排序時單獨畫出）
+dist	距離	距离			DFHack hack/scripts/internal/caravan/movegoods.lua L218 排序欄名（未排序時單獨畫出）
+depot	站內	站内			DFHack hack/scripts/internal/caravan/movegoods.lua L409 清單距離欄：物品已在貿易站（欄寬 5，只放得下兩字）

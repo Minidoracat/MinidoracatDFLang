@@ -1,0 +1,4 @@
+en	zh-Hant	zh-Hans	align	note
+Quickstart guide	快速入門指南	快速入门指南		DFHack hack/lua/plugins/overlay.lua L670 標題畫面 overlay 按鈕、hotkeys.lua L260 DFHack 選單
+Control panel	控制面板	控制面板		DFHack hack/lua/plugins/overlay.lua L677 標題畫面 overlay 按鈕
+Last save:	上次存檔：	上次存档：		DFHack hack/scripts/internal/notify/notifications.lua L327 存檔提醒（原文 "Last save: "，結尾空白由引擎照原文補）

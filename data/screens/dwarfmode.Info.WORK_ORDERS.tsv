@@ -1,0 +1,2 @@
+en	zh-Hant	zh-Hans	align	row	note
+clear	清除	清除			DFHack hack/lua/plugins/orders.lua 工作指令 overlay 的按鈕（清除全部工作指令）；全域 names_inorganic_colors.tsv 的 clear 是顏色「透明」，所以只在工作指令畫面套用

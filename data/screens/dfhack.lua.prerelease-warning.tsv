@@ -1,0 +1,3 @@
+en	zh-Hant	zh-Hans	align	row	note
+Notice	注意	注意	c		DFHack hack/scripts/gui/prerelease-warning.lua L43 預覽版警告視窗標題（候選發行版）
+Dismiss	關閉	关闭			DFHack hack/scripts/gui/prerelease-warning.lua L150 預覽版警告按鈕

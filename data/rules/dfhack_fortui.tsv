@@ -1,0 +1,11 @@
+en	zh-Hant	zh-Hans	align	note
+Burrow {#1}	活動區 {1}	活动区 {1}		DFHack hack/lua/plugins/sort/info.lua L147 工作動物篩選 overlay：未命名活動區的選項名稱
+Assigned work animals: {#1}	已指派工作動物：{1}	已分配工作动物：{1}		DFHack hack/lua/plugins/sort/info.lua L506 指派工作動物畫面 overlay：每人已指派的工作動物數（前後的 [ ] 是另外兩段）
+{#1} preference: {%2}	{1} 項偏好：{2}	{1} 项偏好：{2}		DFHack hack/lua/plugins/sort/diplomacy.lua L155 晉封男爵畫面偏好 overlay：喜愛的物品種類（只有一項）；{%2} 為物品類型清單，被截短時照英文
+{#1} preferences: {%2}	{1} 項偏好：{2}	{1} 项偏好：{2}		DFHack hack/lua/plugins/sort/diplomacy.lua L155 晉封男爵畫面偏好 overlay：喜愛的物品種類（多項，清單由 lists.tsv 接成「、」）
+Search: {#1} matches	搜尋：符合 {1} 筆	搜索：匹配 {1} 个		DFHack hack/lua/plugins/orders.lua L971 工作指令搜尋 overlay 框標題：符合筆數（'Search' 接 get_match_text 拼成一段）
+Search: {#1} of {#2}	搜尋：{1}／{2}	搜索：{1}/{2}		DFHack hack/lua/plugins/orders.lua L974 工作指令搜尋 overlay 框標題：目前是第幾筆／共幾筆
+Are you sure you want to delete "{1}"?	確定要刪除「{1}」嗎？	确定要删除“{1}”吗？		DFHack hack/lua/plugins/orders.lua L44 刪除工作指令檔／倉儲區設定檔確認視窗內文；{1} 是檔案路徑（orders.lua 與 stockpiles.lua 共用）
+- unassign {#1} location occupation(s)	- 解除 {1} 個場所職務的任命	- 解除 {1} 个场所职务的任命		DFHack hack/lua/plugins/zone.lua L1286 撤除場所訊息視窗：還有人擔任場所職務
+- detach this location from {#1} zone(s)	- 讓此場所脫離 {1} 個區域	- 让此场所脱离 {1} 个区域		DFHack hack/lua/plugins/zone.lua L1289 撤除場所訊息視窗：場所還連著區域
+tame {@1}	馴服{1}	驯服{1}		DFHack hack/lua/plugins/zone.lua L619 動物指派視窗清單：小型寵物的說明（{@1} 只收字典裡的生物名）

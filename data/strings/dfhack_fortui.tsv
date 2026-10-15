@@ -1,0 +1,172 @@
+en	zh-Hant	zh-Hans	align	note
+Adds sort and annotation capabilities to the squad assignment panel.	在小隊指派面板加入排序與標註功能。	在小队分配面板加入排序和标注功能。		DFHack hack/lua/plugins/sort.lua L646 overlay 說明（控制面板疊加介面分頁的說明框，自動換行）
+Adds filter capabilities to the squad assignment panel.	在小隊指派面板加入篩選功能。	在小队分配面板加入筛选功能。		DFHack hack/lua/plugins/sort.lua L1020 overlay 說明（控制面板疊加介面分頁的說明框，自動換行）
+Adds search and filter functionality to info screens.	在資訊畫面加入搜尋與篩選功能。	在信息界面加入搜索和筛选功能。		DFHack hack/lua/plugins/sort/info.lua L114 overlay 說明（控制面板疊加介面分頁的說明框，自動換行）
+Adds search functionality to the noble assignment page.	在貴族任命頁面加入搜尋功能。	在贵族任命页面加入搜索功能。		DFHack hack/lua/plugins/sort/info.lua L381 overlay 說明（控制面板疊加介面分頁的說明框，自動換行）
+Annotates units with how many work animals they have assigned on the assign work animal screen.	在指派工作動物畫面標示每人已指派幾隻工作動物。	在分配工作动物界面标示每人已分配几只工作动物。		DFHack hack/lua/plugins/sort/info.lua L436 overlay 說明（控制面板疊加介面分頁的說明框，自動換行）
+Adds filter capabilities to the work animal assignment screen.	在工作動物指派畫面加入篩選功能。	在工作动物分配界面加入筛选功能。		DFHack hack/lua/plugins/sort/info.lua L523 overlay 說明（控制面板疊加介面分頁的說明框，自動換行）
+Adds filter capabilities to the interrogation screen.	在審訊畫面加入篩選功能。	在审讯界面加入筛选功能。		DFHack hack/lua/plugins/sort/info.lua L682 overlay 說明（控制面板疊加介面分頁的說明框，自動換行）
+Adds filter capabilities to the conviction screen.	在定罪畫面加入篩選功能。	在定罪界面加入筛选功能。		DFHack hack/lua/plugins/sort/info.lua L719 overlay 說明（控制面板疊加介面分頁的說明框，自動換行）
+Adds search and sort functionality to the elevate unit to barony screen.	在晉封男爵畫面加入搜尋與排序功能。	在晋封男爵界面加入搜索和排序功能。		DFHack hack/lua/plugins/sort/diplomacy.lua L15 overlay 說明（控制面板疊加介面分頁的說明框，自動換行）；elevate unit to barony 指把人選晉封為男爵領地的領主
+Adds information about unit preferences to the elevate unit to barony screen.	在晉封男爵畫面顯示人選的偏好。	在晋封男爵界面显示人选的偏好。		DFHack hack/lua/plugins/sort/diplomacy.lua L114 overlay 說明（控制面板疊加介面分頁的說明框，自動換行）
+Adds search and filter functionality to the slab engraving panel.	在雕刻石板面板加入搜尋與篩選功能。	在雕刻石板面板加入搜索和筛选功能。		DFHack hack/lua/plugins/sort/slab.lua L15 overlay 說明（控制面板疊加介面分頁的說明框，自動換行）
+Adds search and filter capabilities to the temple and guildhall establishment screens.	在建立神殿與公會大廳的畫面加入搜尋與篩選功能。	在建立神殿和公会大厅的界面加入搜索和筛选功能。		DFHack hack/lua/plugins/sort/locationselector.lua L14 overlay 說明（控制面板疊加介面分頁的說明框，自動換行）
+Adds search functionality to the artifact list on the world raid screen.	在世界突襲畫面的神器清單加入搜尋功能。	在世界突袭界面的神器列表加入搜索功能。		DFHack hack/lua/plugins/sort/world.lua L12 overlay 說明（控制面板疊加介面分頁的說明框，自動換行）
+Click a stress icon in the top bar to list the citizens in that stress category.	點選上方資訊列的壓力圖示，列出該壓力等級的居民。	点击顶部信息栏的压力图标，列出该压力等级的居民。		DFHack hack/lua/plugins/sort/stressicons.lua L53 overlay 說明（控制面板疊加介面分頁的說明框，自動換行）；citizen 照 embark.tsv「Citizens」譯居民；術語例外：citizen；照 embark.tsv「Citizens」譯居民
+Adds search functionality to the places overview screens.	在設施總覽畫面加入搜尋功能。	在设施总览界面加入搜索功能。		DFHack hack/lua/plugins/sort/places.lua L296 overlay 說明（控制面板疊加介面分頁的說明框，自動換行）；Places 照 fortress.tsv 譯設施
+Adds a button to view death cause on the dead/missing tab.	在死亡／失蹤分頁加入檢視死因的按鈕。	在死亡/失踪分页加入查看死因的按钮。		DFHack hack/lua/plugins/sort/deathcause_button.lua L9 overlay 說明（控制面板疊加介面分頁的說明框，自動換行）
+Adds import, export, and other functions to the manager orders screen.	在工作指令畫面加入匯入、匯出等功能。	在工作订单界面加入导入、导出等功能。		DFHack hack/lua/plugins/orders.lua L76 overlay 說明（控制面板疊加介面分頁的說明框，自動換行）；manager orders 即遊戲的工作指令；術語例外：manager；manager orders 即工作指令，不是經理職位
+Adds a button to the work order details page to tell the manager to recheck conditions.	在工作指令詳情頁加入按鈕，讓經理重新檢查條件。	在工作订单详情页加入按钮，让经理重新检查条件。		DFHack hack/lua/plugins/orders.lua L207 overlay 說明（控制面板疊加介面分頁的說明框，自動換行）
+Adds a UI to the Workers tab for vanilla workshop labor restrictions.	在「工人」分頁加入原版工坊勞動限制的設定介面。	在“工人”分页加入原版工坊劳动限制的设置界面。		DFHack hack/lua/plugins/orders.lua L266 overlay 說明（控制面板疊加介面分頁的說明框，自動換行）；技能限制與勞動限制兩個 overlay 共用此說明
+When adjusting condition details, makes right click cancel selection instead of exiting.	調整條件細節時，按右鍵改為取消選擇，而不是離開畫面。	调整条件细节时，右键改为取消选择，而不是退出界面。		DFHack hack/lua/plugins/orders.lua L653 overlay 說明（控制面板疊加介面分頁的說明框，自動換行）
+When adjusting condition quantities, makes right click cancel selection instead of exiting.	調整條件數量時，按右鍵改為取消選擇，而不是離開畫面。	调整条件数量时，右键改为取消选择，而不是退出界面。		DFHack hack/lua/plugins/orders.lua L676 overlay 說明（控制面板疊加介面分頁的說明框，自動換行）
+When adjusting order quantity details, makes right click cancel selection instead of exiting.	調整指令數量時，按右鍵改為取消選擇，而不是離開畫面。	调整订单数量时，右键改为取消选择，而不是退出界面。		DFHack hack/lua/plugins/orders.lua L695 overlay 說明（控制面板疊加介面分頁的說明框，自動換行）
+Adds a search box to find and navigate to matching manager orders.	加入搜尋框，可尋找並跳到符合的工作指令。	加入搜索框，可查找并跳转到匹配的工作订单。		DFHack hack/lua/plugins/orders.lua L818 overlay 說明（控制面板疊加介面分頁的說明框，自動換行）；術語例外：manager；manager orders 即工作指令，不是經理職位
+Shows a panel when a stockpile is selected for stockpile automation.	選取倉儲區時顯示倉儲區自動化面板。	选中储物区时显示储物区自动化面板。		DFHack hack/lua/plugins/stockpiles.lua L446 overlay 說明（控制面板疊加介面分頁的說明框，自動換行）
+Shows a panel when minecart route stop conditions are being edited.	編輯礦車路線停靠站條件時顯示面板。	编辑矿车路线停靠站条件时显示面板。		DFHack hack/lua/plugins/stockpiles.lua L622 overlay 說明（控制面板疊加介面分頁的說明框，自動換行）
+Adds a link to launch the animal assignment UI to pastures and ponds.	在牧場與池塘加入開啟動物指派介面的連結。	在牧场和池塘加入打开动物分配界面的链接。		DFHack hack/lua/plugins/zone.lua L940 overlay 說明（控制面板疊加介面分頁的說明框，自動換行）
+Adds a link to launch the animal assignment UI to cages and chains.	在籠子與鎖鏈加入開啟動物指派介面的連結。	在笼子和锁链加入打开动物分配界面的链接。		DFHack hack/lua/plugins/zone.lua L1068 overlay 說明（控制面板疊加介面分頁的說明框，自動換行）
+Adds a button to retire unneeded locations to the location details screen.	在場所詳情畫面加入按鈕，可撤除不再需要的場所。	在场所详情界面加入按钮，可撤除不再需要的场所。		DFHack hack/lua/plugins/zone.lua L1222 overlay 說明（控制面板疊加介面分頁的說明框，自動換行）
+Add options to tamed animals view sheet.	在已馴服動物的資訊頁加入選項。	在已驯服动物的信息页加入选项。		DFHack hack/lua/plugins/zone.lua L1360 overlay 說明（控制面板疊加介面分頁的說明框，自動換行）
+Show:	顯示	显示		DFHack hack/lua/plugins/sort.lua L780 小隊指派面板 overlay（dwarfmode/UnitSelector/SQUAD_FILL_POSITION）、工作動物／審訊／定罪篩選 overlay 的 CycleHotkeyLabel 標籤（原文 5 格，全形冒號放不下，省略冒號）；info.lua 的 '  Show:' 去掉頭尾空白後同一條
+melee effectiveness	近戰效能	近战效能		DFHack hack/lua/plugins/sort.lua L505 小隊指派面板 overlay（dwarfmode/UnitSelector/SQUAD_FILL_POSITION）：「Show:」排序依據選項；arrival order 也是懸停面板的欄位按鈕
+ranged effectiveness	遠程效能	远程效能		DFHack hack/lua/plugins/sort.lua L506 小隊指派面板 overlay（dwarfmode/UnitSelector/SQUAD_FILL_POSITION）：「Show:」排序依據選項；arrival order 也是懸停面板的欄位按鈕
+teacher skill	教學技能	教学技能		DFHack hack/lua/plugins/sort.lua L507 小隊指派面板 overlay（dwarfmode/UnitSelector/SQUAD_FILL_POSITION）：「Show:」排序依據選項；arrival order 也是懸停面板的欄位按鈕
+stress level	壓力程度	压力程度		DFHack hack/lua/plugins/sort.lua L508 小隊指派面板 overlay（dwarfmode/UnitSelector/SQUAD_FILL_POSITION）：「Show:」排序依據選項；arrival order 也是懸停面板的欄位按鈕
+arrival order	抵達順序	抵达顺序		DFHack hack/lua/plugins/sort.lua L509 小隊指派面板 overlay（dwarfmode/UnitSelector/SQUAD_FILL_POSITION）：「Show:」排序依據選項；arrival order 也是懸停面板的欄位按鈕
+tactics skill	戰術技能	战术技能		DFHack hack/lua/plugins/sort.lua L510 小隊指派面板 overlay（dwarfmode/UnitSelector/SQUAD_FILL_POSITION）：「Show:」排序依據選項；arrival order 也是懸停面板的欄位按鈕
+ambusher skill	伏擊技能	伏击技能		DFHack hack/lua/plugins/sort.lua L511 小隊指派面板 overlay（dwarfmode/UnitSelector/SQUAD_FILL_POSITION）：「Show:」排序依據選項；arrival order 也是懸停面板的欄位按鈕；術語例外：ambusher；伏擊技能（技能名，不是職業名）
+need for training	訓練需求	训练需求		DFHack hack/lua/plugins/sort.lua L512 小隊指派面板 overlay（dwarfmode/UnitSelector/SQUAD_FILL_POSITION）：「Show:」排序依據選項；arrival order 也是懸停面板的欄位按鈕
+pick (mining) skill	十字鎬（採礦）技能	鹤嘴锄（采矿）技能		DFHack hack/lua/plugins/sort.lua L513 小隊指派面板 overlay（dwarfmode/UnitSelector/SQUAD_FILL_POSITION）：「Show:」排序依據選項；arrival order 也是懸停面板的欄位按鈕
+axe skill	斧頭技能	斧头技能		DFHack hack/lua/plugins/sort.lua L514 小隊指派面板 overlay（dwarfmode/UnitSelector/SQUAD_FILL_POSITION）：「Show:」排序依據選項；arrival order 也是懸停面板的欄位按鈕
+sword skill	劍術技能	剑术技能		DFHack hack/lua/plugins/sort.lua L515 小隊指派面板 overlay（dwarfmode/UnitSelector/SQUAD_FILL_POSITION）：「Show:」排序依據選項；arrival order 也是懸停面板的欄位按鈕
+mace skill	釘錘技能	钉锤技能		DFHack hack/lua/plugins/sort.lua L516 小隊指派面板 overlay（dwarfmode/UnitSelector/SQUAD_FILL_POSITION）：「Show:」排序依據選項；arrival order 也是懸停面板的欄位按鈕
+hammer skill	戰錘技能	战锤技能		DFHack hack/lua/plugins/sort.lua L517 小隊指派面板 overlay（dwarfmode/UnitSelector/SQUAD_FILL_POSITION）：「Show:」排序依據選項；arrival order 也是懸停面板的欄位按鈕
+spear skill	長矛技能	长矛技能		DFHack hack/lua/plugins/sort.lua L518 小隊指派面板 overlay（dwarfmode/UnitSelector/SQUAD_FILL_POSITION）：「Show:」排序依據選項；arrival order 也是懸停面板的欄位按鈕
+crossbow skill	弩術技能	弩术技能		DFHack hack/lua/plugins/sort.lua L519 小隊指派面板 overlay（dwarfmode/UnitSelector/SQUAD_FILL_POSITION）：「Show:」排序依據選項；arrival order 也是懸停面板的欄位按鈕
+melee potential	近戰潛力	近战潜力		DFHack hack/lua/plugins/sort.lua L520 小隊指派面板 overlay（dwarfmode/UnitSelector/SQUAD_FILL_POSITION）：「Show:」排序依據選項；arrival order 也是懸停面板的欄位按鈕
+ranged potential	遠程潛力	远程潜力		DFHack hack/lua/plugins/sort.lua L521 小隊指派面板 overlay（dwarfmode/UnitSelector/SQUAD_FILL_POSITION）：「Show:」排序依據選項；arrival order 也是懸停面板的欄位按鈕
+melee effect.	近戰效能	近战效能		DFHack hack/lua/plugins/sort.lua L805 小隊指派面板 overlay（dwarfmode/UnitSelector/SQUAD_FILL_POSITION）：懸停面板的排序按鈕（縮寫）
+ranged effect.	遠程效能	远程效能		DFHack hack/lua/plugins/sort.lua L813 小隊指派面板 overlay（dwarfmode/UnitSelector/SQUAD_FILL_POSITION）：懸停面板的排序按鈕（縮寫）
+stress	壓力	压力		DFHack hack/lua/plugins/sort.lua L827 小隊指派面板 overlay（dwarfmode/UnitSelector/SQUAD_FILL_POSITION）：懸停面板的排序按鈕（縮寫）
+tactics	戰術	战术		DFHack hack/lua/plugins/sort.lua L841 小隊指派面板 overlay（dwarfmode/UnitSelector/SQUAD_FILL_POSITION）：懸停面板的排序按鈕（縮寫）
+train. need	訓練需求	训练需求		DFHack hack/lua/plugins/sort.lua L855 小隊指派面板 overlay（dwarfmode/UnitSelector/SQUAD_FILL_POSITION）：懸停面板的排序按鈕（縮寫）
+melee poten.	近戰潛力	近战潜力		DFHack hack/lua/plugins/sort.lua L911 小隊指派面板 overlay（dwarfmode/UnitSelector/SQUAD_FILL_POSITION）：懸停面板的排序按鈕（縮寫）
+ranged poten.	遠程潛力	远程潜力		DFHack hack/lua/plugins/sort.lua L918 小隊指派面板 overlay（dwarfmode/UnitSelector/SQUAD_FILL_POSITION）：懸停面板的排序按鈕（縮寫）
+Other squads:	其他小隊：	其他小队：		DFHack hack/lua/plugins/sort.lua L1056 小隊篩選 overlay（dwarfmode/UnitSelector/SQUAD_FILL_POSITION） 篩選標籤
+Officials:	官員：	官员：		DFHack hack/lua/plugins/sort.lua L1069 小隊篩選 overlay（dwarfmode/UnitSelector/SQUAD_FILL_POSITION） 篩選標籤；原文前有縮排空白
+Nobility:	貴族：	贵族：		DFHack hack/lua/plugins/sort.lua L1082 小隊篩選 overlay（dwarfmode/UnitSelector/SQUAD_FILL_POSITION） 篩選標籤；原文前有縮排空白
+Uniformed:	帶工具：	带工具：		DFHack hack/lua/plugins/sort.lua L1103 小隊篩選 overlay（dwarfmode/UnitSelector/SQUAD_FILL_POSITION） 篩選標籤；原文前有縮排空白；指有採礦、伐木、狩獵勞動（會帶十字鎬／斧頭／弩當裝備，和軍服衝突）的人
+With infants:	帶嬰兒：	带婴儿：		DFHack hack/lua/plugins/sort.lua L1116 小隊篩選 overlay（dwarfmode/UnitSelector/SQUAD_FILL_POSITION） 篩選標籤
+Hates combat:	厭惡戰鬥：	厌恶战斗：		DFHack hack/lua/plugins/sort.lua L1129 小隊篩選 overlay（dwarfmode/UnitSelector/SQUAD_FILL_POSITION） 篩選標籤
+Maimed:	殘疾：	残疾：		DFHack hack/lua/plugins/sort.lua L1142 小隊篩選 overlay（dwarfmode/UnitSelector/SQUAD_FILL_POSITION） 篩選標籤；原文前有縮排空白
+Include	包含	包含		DFHack hack/lua/plugins/sort.lua L1058 篩選選項（小隊篩選、工作動物、審訊、動物指派視窗共用；overlay 只能單字）
+Only	僅限	仅限		DFHack hack/lua/plugins/sort.lua L1059 篩選選項（小隊篩選、工作動物、審訊、動物指派視窗共用；overlay 只能單字）
+Exclude	排除	排除		DFHack hack/lua/plugins/sort.lua L1060 篩選選項（小隊篩選、工作動物、審訊、動物指派視窗共用；overlay 只能單字）
+Civilians	平民	平民		DFHack hack/lua/plugins/sort/info.lua L203 工作動物／活動區篩選 「Show:」選項
+Burrowed	有活動區	有活动区		DFHack hack/lua/plugins/sort/info.lua L204 工作動物／活動區篩選 「Show:」選項：已被指派到活動區的人
+Burrow:	活動區	活动区		DFHack hack/lua/plugins/sort/info.lua L248 工作動物／活動區篩選 標籤（原文 7 格，全形冒號放不下，省略冒號）
+Squad:	小隊：	小队：		DFHack hack/lua/plugins/sort/info.lua L237 工作動物／活動區篩選 標籤（info.lua 的 ' Squad:' 去掉空白後同一條）
+Any	全	全		DFHack hack/lua/plugins/sort/info.lua L127 工作動物／活動區篩選 小隊／活動區選項「任何」（原文 3 格，只放得下一個字）
+Unburrowed	無活動區	无活动区		DFHack hack/lua/plugins/sort/info.lua L143 工作動物／活動區篩選 活動區選項：未被指派到任何活動區
+Risky visitors	高風險訪客	高风险访客		DFHack hack/lua/plugins/sort/info.lua L645 審訊／定罪篩選 overlay（dwarfmode/Info/JUSTICE）「Show:」選項
+Other visitors	其他訪客	其他访客		DFHack hack/lua/plugins/sort/info.lua L646 審訊／定罪篩選 overlay（dwarfmode/Info/JUSTICE）「Show:」選項
+Deceased or missing	死亡或失蹤	死亡或失踪		DFHack hack/lua/plugins/sort/info.lua L650 審訊／定罪篩選 overlay（dwarfmode/Info/JUSTICE）「Show:」選項
+Others	其他	其他		DFHack hack/lua/plugins/sort/info.lua L651 審訊／定罪篩選 overlay（dwarfmode/Info/JUSTICE）「Show:」選項
+Interviewed:	已審訊：	已审讯：		DFHack hack/lua/plugins/sort/info.lua L701 審訊篩選 overlay 標籤：是否包含已審訊過的人
+no item preferences	無物品偏好	无物品偏好		DFHack hack/lua/plugins/sort/diplomacy.lua L153 晉封男爵畫面偏好 overlay（dwarfmode/Diplomacy/ElevateLandHolder）
+Show only citizens who need a slab:	只顯示需要石板的居民：	只显示需要石板的居民：		DFHack hack/lua/plugins/sort/slab.lua L45 雕刻石板 overlay 開關標籤；術語例外：citizen；照 embark.tsv「Citizens」譯居民
+Hide established:	隱藏已建立的：	隐藏已建立的：		DFHack hack/lua/plugins/sort/locationselector.lua L83 神殿／公會大廳選擇 overlay 開關標籤：隱藏已經建立的宗教或公會
+Citizens: Miserable	居民：悲慘	居民：悲惨	c	DFHack hack/lua/plugins/sort/stressicons.lua L31 點壓力圖示列出居民的清單視窗標題（stressicons.lua 以 'Citizens: ' .. 名稱 拼出，壓力等級只有七種，逐條寫）；術語例外：citizen；照 embark.tsv「Citizens」譯居民
+No citizens are currently miserable.	目前沒有悲慘的居民。	目前没有悲惨的居民。		DFHack hack/lua/plugins/sort/stressicons.lua L32 同上，該等級沒有居民時的訊息；術語例外：citizen；照 embark.tsv「Citizens」譯居民
+Citizens: Unhappy	居民：不快樂	居民：不快乐	c	DFHack hack/lua/plugins/sort/stressicons.lua L31 點壓力圖示列出居民的清單視窗標題（stressicons.lua 以 'Citizens: ' .. 名稱 拼出，壓力等級只有七種，逐條寫）；術語例外：citizen；照 embark.tsv「Citizens」譯居民
+No citizens are currently unhappy.	目前沒有不快樂的居民。	目前没有不快乐的居民。		DFHack hack/lua/plugins/sort/stressicons.lua L32 同上，該等級沒有居民時的訊息；術語例外：citizen；照 embark.tsv「Citizens」譯居民
+Citizens: Displeased	居民：不滿	居民：不满	c	DFHack hack/lua/plugins/sort/stressicons.lua L31 點壓力圖示列出居民的清單視窗標題（stressicons.lua 以 'Citizens: ' .. 名稱 拼出，壓力等級只有七種，逐條寫）；術語例外：citizen；照 embark.tsv「Citizens」譯居民
+No citizens are currently displeased.	目前沒有不滿的居民。	目前没有不满的居民。		DFHack hack/lua/plugins/sort/stressicons.lua L32 同上，該等級沒有居民時的訊息；術語例外：citizen；照 embark.tsv「Citizens」譯居民
+Citizens: Content	居民：滿足	居民：满足	c	DFHack hack/lua/plugins/sort/stressicons.lua L31 點壓力圖示列出居民的清單視窗標題（stressicons.lua 以 'Citizens: ' .. 名稱 拼出，壓力等級只有七種，逐條寫）；術語例外：citizen；照 embark.tsv「Citizens」譯居民
+No citizens are currently content.	目前沒有滿足的居民。	目前没有满足的居民。		DFHack hack/lua/plugins/sort/stressicons.lua L32 同上，該等級沒有居民時的訊息；術語例外：citizen；照 embark.tsv「Citizens」譯居民
+Citizens: Pleased	居民：愉快	居民：愉快	c	DFHack hack/lua/plugins/sort/stressicons.lua L31 點壓力圖示列出居民的清單視窗標題（stressicons.lua 以 'Citizens: ' .. 名稱 拼出，壓力等級只有七種，逐條寫）；術語例外：citizen；照 embark.tsv「Citizens」譯居民
+No citizens are currently pleased.	目前沒有愉快的居民。	目前没有愉快的居民。		DFHack hack/lua/plugins/sort/stressicons.lua L32 同上，該等級沒有居民時的訊息；術語例外：citizen；照 embark.tsv「Citizens」譯居民
+Citizens: Happy	居民：開心	居民：开心	c	DFHack hack/lua/plugins/sort/stressicons.lua L31 點壓力圖示列出居民的清單視窗標題（stressicons.lua 以 'Citizens: ' .. 名稱 拼出，壓力等級只有七種，逐條寫）；術語例外：citizen；照 embark.tsv「Citizens」譯居民
+No citizens are currently happy.	目前沒有開心的居民。	目前没有开心的居民。		DFHack hack/lua/plugins/sort/stressicons.lua L32 同上，該等級沒有居民時的訊息；術語例外：citizen；照 embark.tsv「Citizens」譯居民
+Citizens: Ecstatic	居民：欣喜若狂	居民：欣喜若狂	c	DFHack hack/lua/plugins/sort/stressicons.lua L31 點壓力圖示列出居民的清單視窗標題（stressicons.lua 以 'Citizens: ' .. 名稱 拼出，壓力等級只有七種，逐條寫）；術語例外：citizen；照 embark.tsv「Citizens」譯居民
+No citizens are currently ecstatic.	目前沒有欣喜若狂的居民。	目前没有欣喜若狂的居民。		DFHack hack/lua/plugins/sort/stressicons.lua L32 同上，該等級沒有居民時的訊息；術語例外：citizen；照 embark.tsv「Citizens」譯居民
+Show death cause	顯示死因	显示死因		DFHack hack/lua/plugins/sort/deathcause_button.lua L63 死亡／失蹤分頁 overlay 按鈕
+Death Cause	死因	死因	c	DFHack hack/lua/plugins/sort/deathcause_button.lua L68 死因訊息視窗標題
+No unit selected.	未選取任何人。	未选中任何人。		DFHack hack/lua/plugins/sort/deathcause_button.lua L68 死因按鈕：清單沒有選取對象時的訊息
+Clear manager orders?	清除工作指令？	清除工作订单？	c	DFHack hack/lua/plugins/orders.lua L19 清除工作指令確認視窗標題；術語例外：manager；manager orders 即工作指令，不是經理職位
+Are you sure you want to clear the manager orders?	確定要清除所有工作指令嗎？	确定要清除所有工作订单吗？		DFHack hack/lua/plugins/orders.lua L20 清除工作指令確認視窗內文；術語例外：manager；manager orders 即工作指令，不是經理職位
+Import/Delete Manager Orders	匯入／刪除工作指令	导入/删除工作订单	c	DFHack hack/lua/plugins/orders.lua L32 匯入工作指令清單視窗標題；術語例外：manager；manager orders 即工作指令，不是經理職位
+Delete orders file?	刪除指令檔？	删除订单文件？	c	DFHack hack/lua/plugins/orders.lua L43 刪除工作指令檔確認視窗標題
+: Delete file	：刪除檔案	：删除文件		DFHack hack/lua/plugins/orders.lua L54 匯入清單視窗底部提示（dialogs.lua 畫「Shift-Click」後接 ': '..select2_hint 為一段；orders.lua 與 stockpiles.lua 共用）
+Export Manager Orders	匯出工作指令	导出工作订单	c	DFHack hack/lua/plugins/orders.lua L60 匯出工作指令輸入框標題；術語例外：manager；manager orders 即工作指令，不是經理職位
+Please enter a filename	請輸入檔名	请输入文件名		DFHack hack/lua/plugins/orders.lua L61 匯出輸入框提示（orders.lua 與 stockpiles.lua 共用）
+import	匯入	导入		DFHack hack/lua/plugins/orders.lua L95 工作指令 overlay（dwarfmode/Info/WORK_ORDERS） 與倉儲區 overlay 的按鍵提示
+export	匯出	导出		DFHack hack/lua/plugins/orders.lua L102 工作指令 overlay（dwarfmode/Info/WORK_ORDERS） 與倉儲區 overlay 的按鍵提示
+recheck conditions	重新檢查條件	重新检查条件		DFHack hack/lua/plugins/orders.lua L109 工作指令 overlay（dwarfmode/Info/WORK_ORDERS） 按鍵提示
+sort	排序	排序		DFHack hack/lua/plugins/orders.lua L116 工作指令 overlay（dwarfmode/Info/WORK_ORDERS） 按鍵提示：排序工作指令
+re-check conditions	重新檢查條件	重新检查条件		DFHack hack/lua/plugins/orders.lua L237 工作指令詳情頁按鈕（dwarfmode/Info/WORK_ORDERS/Conditions）
+Min skill:	最低技能：	最低技能：		DFHack hack/lua/plugins/orders.lua L338 工坊技能限制 overlay（Workers 分頁） 標籤
+Max skill:	最高技能：	最高技能：		DFHack hack/lua/plugins/orders.lua L356 工坊技能限制 overlay（Workers 分頁） 標籤
+Permitted General Work Order Labors	允許的一般工作指令勞動	允许的一般工作订单劳动		DFHack hack/lua/plugins/orders.lua L551 工坊勞動限制 overlay（Workers 分頁） 標題列；術語例外：general；一般工作指令，不是將軍
+Toggle selected	切換所選	切换所选		DFHack hack/lua/plugins/orders.lua L572 工坊勞動限制 overlay（Workers 分頁） 按鍵提示
+(or double click)	（或按兩下）	（或双击）		DFHack hack/lua/plugins/orders.lua L578 工坊勞動限制 overlay（Workers 分頁） 說明
+prev	上個	上个		DFHack hack/lua/plugins/orders.lua L845 工作指令搜尋 overlay 按鍵提示：上一個符合項（原文 4 格）
+next	下個	下个		DFHack hack/lua/plugins/orders.lua L853 工作指令搜尋 overlay 按鍵提示：下一個符合項（原文 4 格；小寫 next 只出現在 DFHack，教學的 Next 另有條目）
+Import/Delete Stockpile Settings	匯入／刪除倉儲區設定	导入/删除储物区设置	c	DFHack hack/lua/plugins/stockpiles.lua L259 匯入倉儲區設定清單視窗標題
+Delete saved stockpile settings file?	刪除已儲存的倉儲區設定檔？	删除已保存的储物区设置文件？	c	DFHack hack/lua/plugins/stockpiles.lua L268 刪除設定檔確認視窗標題
+Export Stockpile Settings	匯出倉儲區設定	导出储物区设置	c	DFHack hack/lua/plugins/stockpiles.lua L285 匯出倉儲區設定輸入框標題
+Import/Delete Stop Settings	匯入／刪除停靠站設定	导入/删除停靠站设置	c	DFHack hack/lua/plugins/stockpiles.lua L307 礦車路線停靠站：匯入清單視窗標題
+Export Stop Settings	匯出停靠站設定	导出停靠站设置	c	DFHack hack/lua/plugins/stockpiles.lua L311 礦車路線停靠站：匯出輸入框標題
+Advanced logistics settings	進階物流設定	高级物流设置	c	DFHack hack/lua/plugins/stockpiles.lua L335 倉儲區進階設定視窗標題（ZScreen stockpiles_config）
+Melt masterworks	熔化傑作	熔化杰作		DFHack hack/lua/plugins/stockpiles.lua L341 倉儲區進階設定開關：自動熔化時也熔化傑作品質的物品
+minimize	最小化	最小化		DFHack hack/lua/plugins/stockpiles.lua L359 倉儲區 overlay 縮小按鈕（滑鼠移上時顯示）
+restore	還原	还原		DFHack hack/lua/plugins/stockpiles.lua L360 倉儲區 overlay 還原按鈕（滑鼠移上時顯示）
+Auto-designate stockpile items/animals for:	自動將倉儲區物品／動物標記為：	自动将储物区物品/动物标记为：		DFHack hack/lua/plugins/stockpiles.lua L486 倉儲區 overlay（dwarfmode/Stockpile） 說明列
+Melting	熔化	熔化		DFHack hack/lua/plugins/stockpiles.lua L494 倉儲區 overlay（dwarfmode/Stockpile） 自動標記開關
+Dumping	傾倒	倾倒		DFHack hack/lua/plugins/stockpiles.lua L514 倉儲區 overlay（dwarfmode/Stockpile） 自動標記開關
+Training	訓練	训练		DFHack hack/lua/plugins/stockpiles.lua L524 倉儲區 overlay（dwarfmode/Stockpile） 自動標記開關（動物）
+Forbid	禁用	禁用		DFHack hack/lua/plugins/stockpiles.lua L533 倉儲區 overlay（dwarfmode/Stockpile） 自動標記開關
+Claim	認領	认领		DFHack hack/lua/plugins/stockpiles.lua L535 倉儲區 overlay（dwarfmode/Stockpile） 自動標記開關
+Partially trained	部分馴服	部分驯服		DFHack hack/lua/plugins/zone.lua L19 動物指派視窗（ZScreen zone/assign） 馴養狀態欄與篩選選項
+Wild (trainable)	野生（可馴服）	野生（可驯服）		DFHack hack/lua/plugins/zone.lua L20 動物指派視窗（ZScreen zone/assign） 馴養狀態欄與篩選選項
+Untrainable	無法馴服	无法驯服		DFHack hack/lua/plugins/zone.lua L21 動物指派視窗（ZScreen zone/assign） 馴養狀態欄與篩選選項
+Hostile	敵對	敌对		DFHack hack/lua/plugins/zone.lua L22 動物指派視窗（ZScreen zone/assign） 馴養狀態欄與篩選選項
+Animal and prisoner assignment	動物與囚犯指派	动物与囚犯分配	c	DFHack hack/lua/plugins/zone.lua L42 動物指派視窗（ZScreen zone/assign） 標題
+Min status:	最低狀態：	最低状态：		DFHack hack/lua/plugins/zone.lua L206 動物指派視窗（ZScreen zone/assign） 篩選標籤
+Max status:	最高狀態：	最高状态：		DFHack hack/lua/plugins/zone.lua L222 動物指派視窗（ZScreen zone/assign） 篩選標籤
+Min disposition:	最低馴養狀態：	最低驯养状态：		DFHack hack/lua/plugins/zone.lua L255 動物指派視窗（ZScreen zone/assign） 篩選標籤
+Max disposition:	最高馴養狀態：	最高驯养状态：		DFHack hack/lua/plugins/zone.lua L271 動物指派視窗（ZScreen zone/assign） 篩選標籤
+Egg layers:	產卵動物：	产卵动物：		DFHack hack/lua/plugins/zone.lua L306 動物指派視窗（ZScreen zone/assign） 篩選標籤
+Juveniles:	幼年動物：	幼年动物：		DFHack hack/lua/plugins/zone.lua L334 動物指派視窗（ZScreen zone/assign） 篩選標籤
+Grazers:	食草動物	食草动物		DFHack hack/lua/plugins/zone.lua L320 動物指派視窗（ZScreen zone/assign） 篩選標籤（原文 8 格，術語 grazer 食草動物已 8 格，省略冒號）
+In other pasture	在其他牧場	在其他牧场		DFHack hack/lua/plugins/zone.lua L973 動物指派視窗（ZScreen zone/assign） 狀態欄與篩選選項
+In other pit/pond	在其他坑／池塘	在其他坑/池塘		DFHack hack/lua/plugins/zone.lua L974 動物指派視窗（ZScreen zone/assign） 狀態欄與篩選選項
+On restraint	被束縛具拴住	被束缚具拴住		DFHack hack/lua/plugins/zone.lua L975 動物指派視窗（ZScreen zone/assign） 狀態欄與篩選選項
+In built cage	在已建籠子中	在已建笼子中		DFHack hack/lua/plugins/zone.lua L976 動物指派視窗（ZScreen zone/assign） 狀態欄與篩選選項
+In loose cage	在散置籠子中	在散置笼子中		DFHack hack/lua/plugins/zone.lua L977 動物指派視窗（ZScreen zone/assign） 狀態欄與篩選選項
+Roaming	遊蕩	游荡		DFHack hack/lua/plugins/zone.lua L978 動物指派視窗（ZScreen zone/assign） 狀態欄與篩選選項
+In pasture	在牧場	在牧场		DFHack hack/lua/plugins/zone.lua L1120 動物指派視窗（ZScreen zone/assign） 狀態欄與篩選選項
+In pit/pond	在坑／池塘	在坑/池塘		DFHack hack/lua/plugins/zone.lua L1121 動物指派視窗（ZScreen zone/assign） 狀態欄與篩選選項
+In stockpiled cage	在倉儲區的籠子中	在储物区的笼子中		DFHack hack/lua/plugins/zone.lua L1124 動物指派視窗（ZScreen zone/assign） 狀態欄與篩選選項
+Assign all/none	全部指派／取消	全部分配/取消		DFHack hack/lua/plugins/zone.lua L427 動物指派視窗（ZScreen zone/assign） 按鍵提示：可見的全部指派或全部取消
+creature(s) assigned here.	隻生物已指派至此。	只生物已分配至此。		DFHack hack/lua/plugins/zone.lua L437 動物指派視窗（ZScreen zone/assign） 底部統計（前面是數字，另一段）
+Click to assign/unassign to pasture/pond/pit. Shift click to assign/unassign a range.	點選可指派到牧場／池塘／坑，或取消指派。Shift+點選可一次指派或取消一段範圍。	点击可分配到牧场/池塘/坑，或取消分配。Shift+点击可一次分配或取消一段范围。		DFHack hack/lua/plugins/zone.lua L443 動物指派視窗（ZScreen zone/assign） 底部說明（WrappedLabel；牧場／池塘開啟時）
+Click to assign/unassign to cage/restraint. Shift click to assign/unassign a range.	點選可指派到籠子／束縛具，或取消指派。Shift+點選可一次指派或取消一段範圍。	点击可分配到笼子/束缚具，或取消分配。Shift+点击可一次分配或取消一段范围。		DFHack hack/lua/plugins/zone.lua L443 動物指派視窗（ZScreen zone/assign） 底部說明（WrappedLabel；籠子開啟時，\n 前一段）
+Click to assign/unassign to cage/restraint.	點選可指派到籠子／束縛具，或取消指派。	点击可分配到笼子/束缚具，或取消分配。		DFHack hack/lua/plugins/zone.lua L443 動物指派視窗（ZScreen zone/assign） 底部說明（WrappedLabel；鎖鏈開啟時，\n 前一段）
+Note that pets cannot be assigned to cages or restraints.	注意：寵物不能指派到籠子或束縛具。	注意：宠物不能分配到笼子或束缚具。		DFHack hack/lua/plugins/zone.lua L445 動物指派視窗（ZScreen zone/assign） 底部說明（WrappedLabel，\n 後一段）
+Unknown vermin	不明小動物	不明小动物		DFHack hack/lua/plugins/zone.lua L610 動物指派視窗（ZScreen zone/assign） 清單：找不到種族資料的小動物
+Unknown small pet	不明小型寵物	不明小型宠物		DFHack hack/lua/plugins/zone.lua L618 動物指派視窗（ZScreen zone/assign） 清單：找不到種族資料的小型寵物
+Retire location	撤除場所	撤除场所		DFHack hack/lua/plugins/zone.lua L1238 場所詳情 overlay（dwarfmode/LocationDetails） 按鍵提示
+Cannot retire location! Please:	無法撤除場所！請先：	无法撤除场所！请先：		DFHack hack/lua/plugins/zone.lua L1284 撤除場所訊息視窗第一行
+and try again	然後再試一次	然后再试一次		DFHack hack/lua/plugins/zone.lua L1292 撤除場所訊息視窗最後一行
+Location in use	場所使用中	场所使用中	c	DFHack hack/lua/plugins/zone.lua L1293 撤除場所訊息視窗標題
+Confirm retire location	確認撤除場所	确认撤除场所	c	DFHack hack/lua/plugins/zone.lua L1296 撤除場所確認視窗標題
+Are you sure you want to retire this location?	確定要撤除這個場所嗎？	确定要撤除这个场所吗？		DFHack hack/lua/plugins/zone.lua L1297 撤除場所確認視窗內文第一行
+You won't be able to use it again.	撤除後將無法再使用。	撤除后将无法再使用。		DFHack hack/lua/plugins/zone.lua L1297 撤除場所確認視窗內文第二行
+Geld	閹割	阉割		DFHack hack/lua/plugins/zone.lua L1468 已馴服動物資訊頁 overlay（dwarfmode/ViewSheets/UNIT/Overview）開關（原文 'Geld       ' 補空白對齊）
+Adopt	領養	领养		DFHack hack/lua/plugins/zone.lua L1480 已馴服動物資訊頁 overlay（dwarfmode/ViewSheets/UNIT/Overview）開關：開放領養（原文 'Adopt      ' 補空白對齊）
+Has Trainer	有馴獸師	有驯兽师		DFHack hack/lua/plugins/zone.lua L1492 已馴服動物資訊頁 overlay（dwarfmode/ViewSheets/UNIT/Overview）開關：指派馴獸師訓練
+disposition	馴養狀態	驯养状态	inner	DFHack hack/lua/plugins/zone.lua L182 動物指派視窗排序標籤，只給排序箭頭句型（{%1}▼、{%1}▲）的佔位用；單獨畫出時用 data/screens/dfhack.lua.zone.assign.tsv
+gender	性別	性别	inner	DFHack hack/lua/plugins/zone.lua L184 動物指派視窗排序標籤，只給排序箭頭句型（{%1}▼、{%1}▲）的佔位用；單獨畫出時用 data/screens/dfhack.lua.zone.assign.tsv
+race	種族	种族	inner	DFHack hack/lua/plugins/zone.lua L188 動物指派視窗排序標籤，只給排序箭頭句型（{%1}▼、{%1}▲）的佔位用；單獨畫出時用 data/screens/dfhack.lua.zone.assign.tsv

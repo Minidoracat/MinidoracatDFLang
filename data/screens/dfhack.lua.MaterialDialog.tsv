@@ -1,0 +1,3 @@
+en	zh-Hant	zh-Hans	align	row	note
+inorganic	無機物	无机物			DFHack hack/lua/gui/materials.lua L92 材料類別清單
+creature	生物	生物			DFHack hack/lua/gui/materials.lua L98 材料類別清單（全域 creature 只有 inner 條目）

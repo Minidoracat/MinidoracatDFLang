@@ -1,0 +1,14 @@
+en	zh-Hant	zh-Hans	align	row	note
+Total	總數	总数			DFHack hack/scripts/gui/autobutcher.lua L200 自動屠宰欄名第一列（第二列 stock）
+Race	種族	种族			DFHack hack/scripts/gui/autobutcher.lua L166 自動屠宰欄名／排序選項
+female	雌性	雌性			DFHack hack/scripts/gui/autobutcher.lua L227 自動屠宰欄名第一列（第二列 kids）
+male	雄性	雄性			DFHack hack/scripts/gui/autobutcher.lua L242 自動屠宰欄名第一列（第二列 kids）
+Female	雌性	雌性			DFHack hack/scripts/gui/autobutcher.lua L257 自動屠宰欄名第一列（第二列 adults）
+Male	雄性	雄性			DFHack hack/scripts/gui/autobutcher.lua L272 自動屠宰欄名第一列（第二列 adults）
+Watch?	監看？	监视？			DFHack hack/scripts/gui/autobutcher.lua L176 自動屠宰欄名／排序選項：是否監看此種族
+Butchering	屠宰	屠宰			DFHack hack/scripts/gui/autobutcher.lua L298 自動屠宰欄名第一列（第二列 ordered）
+stock	存量	存量			DFHack hack/scripts/gui/autobutcher.lua L210 自動屠宰欄名第二列
+kids	幼體	幼体			DFHack hack/scripts/gui/autobutcher.lua L236 自動屠宰欄名第二列
+adults	成體	成体			DFHack hack/scripts/gui/autobutcher.lua L266 自動屠宰欄名第二列
+ordered	已下令	已下令			DFHack hack/scripts/gui/autobutcher.lua L307 自動屠宰欄名第二列
+Autobutcher	自動屠宰	自动屠宰	c		DFHack hack/scripts/gui/autobutcher.lua L154 視窗標題（與指令名同字，限定畫面免得翻到控制面板的 autobutcher）

@@ -1,0 +1,7 @@
+en	zh-Hant	zh-Hans	align	row	note
+Quantity	數量	数量			DFHack hack/scripts/gui/seedwatch.lua L104 欄位排序標題
+Quantity▼	數量▼	数量▼			DFHack hack/scripts/gui/seedwatch.lua L68/L105 排序選項（CH_DN）
+Quantity▲	數量▲	数量▲			DFHack hack/scripts/gui/seedwatch.lua L69/L106 排序選項（CH_UP）
+Target	目標	目标			DFHack hack/scripts/gui/seedwatch.lua L115 欄位排序標題
+Target▼	目標▼	目标▼			DFHack hack/scripts/gui/seedwatch.lua L70/L116 排序選項
+Target▲	目標▲	目标▲			DFHack hack/scripts/gui/seedwatch.lua L71/L117 排序選項

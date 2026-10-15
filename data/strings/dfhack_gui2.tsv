@@ -1,0 +1,364 @@
+en	zh-Hant	zh-Hans	align	note
+Total stock	總存量	总存量		DFHack hack/scripts/gui/autobutcher.lua L164 自動屠宰排序選項（後接排序箭頭）
+female kids	雌性幼體	雌性幼体		DFHack hack/scripts/gui/autobutcher.lua L168 自動屠宰排序選項（後接排序箭頭）
+male kids	雄性幼體	雄性幼体		DFHack hack/scripts/gui/autobutcher.lua L170 自動屠宰排序選項（後接排序箭頭）
+make kids	雄性幼體	雄性幼体		DFHack hack/scripts/gui/autobutcher.lua L171 自動屠宰排序選項（後接排序箭頭）；原文 make 是 male 的錯字
+Female adults	雌性成體	雌性成体		DFHack hack/scripts/gui/autobutcher.lua L172 自動屠宰排序選項（後接排序箭頭）
+Male adults	雄性成體	雄性成体		DFHack hack/scripts/gui/autobutcher.lua L174 自動屠宰排序選項（後接排序箭頭）
+Butchering ordered	已下令屠宰	已下令屠宰		DFHack hack/scripts/gui/autobutcher.lua L178 自動屠宰排序選項（後接排序箭頭）
+Total	總數	总数	inner	DFHack hack/scripts/gui/autobutcher.lua L200 自動屠宰欄名第一列（第二列 stock），只給排序箭頭句型用
+female	雌性	雌性	inner	DFHack hack/scripts/gui/autobutcher.lua L227 自動屠宰欄名第一列（第二列 kids），只給排序箭頭句型用
+male	雄性	雄性	inner	DFHack hack/scripts/gui/autobutcher.lua L242 自動屠宰欄名第一列（第二列 kids），只給排序箭頭句型用
+Female	雌性	雌性	inner	DFHack hack/scripts/gui/autobutcher.lua L257 自動屠宰欄名第一列（第二列 adults），只給排序箭頭句型用
+Male	雄性	雄性	inner	DFHack hack/scripts/gui/autobutcher.lua L272 自動屠宰欄名第一列（第二列 adults），只給排序箭頭句型用
+Watch?	監看？	监视？	inner	DFHack hack/scripts/gui/autobutcher.lua L176 自動屠宰欄名／排序選項：是否監看此種族，只給排序箭頭句型用
+Butchering	屠宰	屠宰	inner	DFHack hack/scripts/gui/autobutcher.lua L298 自動屠宰欄名第一列（第二列 ordered），只給排序箭頭句型用
+Show only rows with non-zero targets	只顯示目標不為零的列	只显示目标不为零的行		DFHack hack/scripts/gui/autobutcher.lua L188 自動屠宰切換選項
+Enable autobutcher to change settings	啟用 autobutcher 才能變更設定	启用 autobutcher 才能更改设置		DFHack hack/scripts/gui/autobutcher.lua L313 外掛未啟用時的提示
+Columns show butcherable stock (+ protected stock, if any) / target:	各欄顯示可屠宰數（＋受保護數，若有）／目標：	各列显示可屠宰数（+受保护数，若有）/目标：		DFHack hack/scripts/gui/autobutcher.lua L332 頁尾說明第一行
+Double click on a value to edit/toggle or use the hotkeys listed below.	雙擊數值可編輯／切換，或用下方列出的快捷鍵。	双击数值可编辑/切换，或使用下方列出的快捷键。		DFHack hack/scripts/gui/autobutcher.lua L333 頁尾說明第二行
+f kids	雌幼	雌幼		DFHack hack/scripts/gui/autobutcher.lua L340 自動屠宰快捷鍵說明
+m kids	雄幼	雄幼		DFHack hack/scripts/gui/autobutcher.lua L348 自動屠宰快捷鍵說明
+F adults	雌成體	雌成体		DFHack hack/scripts/gui/autobutcher.lua L356 自動屠宰快捷鍵說明
+M adults	雄成體	雄成体		DFHack hack/scripts/gui/autobutcher.lua L364 自動屠宰快捷鍵說明
+Butcher race	屠宰此種族	屠宰此种族		DFHack hack/scripts/gui/autobutcher.lua L372 自動屠宰快捷鍵說明
+Unbutcher race	取消屠宰種族	取消屠宰种族		DFHack hack/scripts/gui/autobutcher.lua L380 自動屠宰快捷鍵說明
+Toggle watch	切換監看	切换监视		DFHack hack/scripts/gui/autobutcher.lua L388 自動屠宰快捷鍵說明
+Delete row	刪除此列	删除此行		DFHack hack/scripts/gui/autobutcher.lua L395 自動屠宰快捷鍵說明
+Set row targets to 0	此列目標設為 0	此行目标设为 0		DFHack hack/scripts/gui/autobutcher.lua L402 自動屠宰快捷鍵說明
+Set row targets to N	此列目標設為 N	此行目标设为 N		DFHack hack/scripts/gui/autobutcher.lua L409 自動屠宰快捷鍵說明
+Butcher all	全部屠宰	全部屠宰		DFHack hack/scripts/gui/autobutcher.lua L417 自動屠宰快捷鍵說明
+Unbutcher all	全部取消屠宰	全部取消屠宰		DFHack hack/scripts/gui/autobutcher.lua L425 自動屠宰快捷鍵說明
+Autobutcher is	自動屠宰：	自动屠宰：		DFHack hack/scripts/gui/autobutcher.lua L432 自動屠宰快捷鍵說明
+Autowatch is	自動監看：	自动监视：		DFHack hack/scripts/gui/autobutcher.lua L444 自動屠宰快捷鍵說明
+!! ALL RACES PLUS NEW	!! 所有種族及新種族	!! 所有种族及新种族		DFHack hack/scripts/gui/autobutcher.lua L538 自動屠宰清單第一列（套用到全部種族）
+!! ONLY NEW RACES	!! 僅新種族	!! 仅新种族		DFHack hack/scripts/gui/autobutcher.lua L543 自動屠宰清單第二列
+female adults	雌性成體	雌性成体	inner	DFHack hack/scripts/gui/autobutcher.lua L358 輸入框說明裡的類別（另見 Female adults）
+male adults	雄性成體	雄性成体	inner	DFHack hack/scripts/gui/autobutcher.lua L366 輸入框說明裡的類別（另見 Male adults）
+Enter desired value for all targets:	輸入所有目標的數值：	输入所有目标的数值：		DFHack hack/scripts/gui/autobutcher.lua L650 輸入框說明
+Really set all targets for all races to 0?	確定要把所有種族的目標都設為 0？	确定要把所有种族的目标都设为 0？		DFHack hack/scripts/gui/autobutcher.lua L677 確認框
+Delete from Watchlist	從監看清單刪除	从监视列表删除	c	DFHack hack/scripts/gui/autobutcher.lua L708 確認框標題
+Really delete the selected entry?	確定刪除選取的項目？	确定删除选中的条目？		DFHack hack/scripts/gui/autobutcher.lua L709 確認框訊息第一行
+(you could just toggle watch instead)	（也可以只切換監看）	（也可以只切换监视）		DFHack hack/scripts/gui/autobutcher.lua L709 確認框訊息第二行
+Please select a specific race.	請選擇一個種族。	请选择一个种族。		DFHack hack/scripts/gui/autobutcher.lua L721 錯誤訊息
+Butcher all animals	屠宰所有動物	屠宰所有动物	c	DFHack hack/scripts/gui/autobutcher.lua L748 確認框標題
+Warning! This will mark ALL animals for butchering.	警告！這會把所有動物標記為待屠宰。	警告！这会把所有动物标记为待屠宰。		DFHack hack/scripts/gui/autobutcher.lua L749 確認框訊息第一行
+Proceed with caution.	請謹慎操作。	请谨慎操作。		DFHack hack/scripts/gui/autobutcher.lua L749 確認框訊息第二行
+Paint tiles	塗刷地塊	涂刷地块		DFHack hack/scripts/gui/tiletypes.lua L86 地塊類型編輯：目前模式的說明（WrappedLabel）
+Replace non-empty tiles	取代非空地塊	替换非空地块		DFHack hack/scripts/gui/tiletypes.lua L91 地塊類型編輯：目前模式的說明（WrappedLabel）
+Fill in empty tiles	填補空地塊	填补空地块		DFHack hack/scripts/gui/tiletypes.lua L96 地塊類型編輯：目前模式的說明（WrappedLabel）
+Remove selected tiles	移除選取的地塊	移除选中的地块		DFHack hack/scripts/gui/tiletypes.lua L101 地塊類型編輯：目前模式的說明（WrappedLabel）
+Type or select a item from this list	輸入或從清單選擇一項	输入或从列表中选择一项		DFHack hack/scripts/gui/tiletypes.lua L887 選擇對話框提示（原文 a item 照抄）
+Category:	分類：	分类：		DFHack hack/scripts/gui/tiletypes.lua L918 選擇對話框（原文 "Category: "）
+Any item	任何項目	任意项目		DFHack hack/scripts/gui/tiletypes.lua L888 選擇對話框的預設分類名
+Select Item	選擇項目	选择项目	c	DFHack hack/scripts/gui/tiletypes.lua L892 選擇對話框標題
+No matching items	沒有符合的項目	没有匹配的项目		DFHack hack/scripts/gui/tiletypes.lua L909 篩選清單沒有結果
+Shape:	形狀：	形状：		DFHack hack/scripts/gui/tiletypes.lua L1213 地塊類型編輯欄位標籤
+Material:	材料：	材料：		DFHack hack/scripts/gui/tiletypes.lua L1230 地塊類型編輯欄位標籤
+Stone:	石材：	石材：		DFHack hack/scripts/gui/tiletypes.lua L1245 地塊類型編輯欄位標籤
+Special:	特殊：	特殊：		DFHack hack/scripts/gui/tiletypes.lua L1255 地塊類型編輯欄位標籤
+Variant:	變體：	变体：		DFHack hack/scripts/gui/tiletypes.lua L1271 地塊類型編輯欄位標籤
+Mode:	模式	模式		DFHack hack/scripts/gui/tiletypes.lua L1539 地塊類型編輯欄位標籤；寬度不足省略冒號
+More options	更多選項	更多选项		DFHack hack/scripts/gui/tiletypes.lua L1579 地塊類型編輯按鈕
+More Options	更多選項	更多选项	c	DFHack hack/scripts/gui/tiletypes.lua L1096 地塊類型編輯彈出視窗標題
+Shape Values	形狀值	形状值	c	DFHack hack/scripts/gui/tiletypes.lua L1313 選擇對話框標題
+Material Values	材料值	材料值	c	DFHack hack/scripts/gui/tiletypes.lua L1328 選擇對話框標題
+Special Values	特殊值	特殊值	c	DFHack hack/scripts/gui/tiletypes.lua L1343 選擇對話框標題
+Stone Types	石材種類	石材种类	c	DFHack hack/scripts/gui/tiletypes.lua L1358 選擇對話框標題
+generated materials	生成的材料	生成的材料		DFHack hack/scripts/gui/tiletypes.lua L1753 石材清單的分類項目（世界生成的石材）
+Please deselect any selected buildings, stockpiles or zones before attempting to remove them.	移除前請先取消選取任何建築、倉儲區或區域。	移除前请先取消选中任何建筑、储物区或区域。		DFHack hack/scripts/gui/mass-remove.lua L119 大量移除警告（WrappedLabel）
+Designate buildings, constructions, stockpiles, and/or zones for removal.	標示要移除的建築、構築物、倉儲區或區域。	标记要移除的建筑、构筑物、储物区或区域。		DFHack hack/scripts/gui/mass-remove.lua L124 大量移除說明（WrappedLabel）
+Designate buildings or constructions to cancel removal.	標示要取消移除的建築或構築物。	标记要取消移除的建筑或构筑物。		DFHack hack/scripts/gui/mass-remove.lua L128 大量移除說明（WrappedLabel）
+Buildings:	建築：	建筑：		DFHack hack/scripts/gui/mass-remove.lua L137 大量移除選項標籤
+Constructions:	構築物：	构筑物：		DFHack hack/scripts/gui/mass-remove.lua L152 大量移除選項標籤
+Stockpiles:	倉儲區：	储物区：		DFHack hack/scripts/gui/mass-remove.lua L166 大量移除選項標籤
+Zones:	區域：	区域：		DFHack hack/scripts/gui/mass-remove.lua L188 大量移除選項標籤
+Leave alone	不處理	不处理		DFHack hack/scripts/gui/mass-remove.lua L142 大量移除選項
+Affect built and planned	已建與計畫中	已建和计划中		DFHack hack/scripts/gui/mass-remove.lua L143 大量移除選項
+Affect built	僅已建	仅已建		DFHack hack/scripts/gui/mass-remove.lua L144 大量移除選項
+Affect planned	僅計畫中	仅计划中		DFHack hack/scripts/gui/mass-remove.lua L145 大量移除選項
+Remove or schedule for removal	移除或排定移除	移除或安排移除		DFHack hack/scripts/gui/mass-remove.lua L213 大量移除選項；排定移除工作，不是排程表；術語例外：schedule
+Adds a button to the erase toolbar to open the mass removal tool.	在清除工具列加上按鈕，開啟大量移除工具。	在清除工具栏加上按钮，打开批量移除工具。		DFHack hack/scripts/gui/mass-remove.lua L404 overlay 說明（控制面板顯示）
+Open mass removal	開啟大量移除	打开批量移除		DFHack hack/scripts/gui/mass-remove.lua L428 清除工具列按鈕提示第一行（第二行 interface.）
+interface.	介面。	界面。		DFHack hack/scripts/gui/mass-remove.lua L429 清除工具列按鈕提示第二行（接在 Open mass removal 後）
+Mass Remove	大量移除	批量移除	c	DFHack hack/scripts/gui/mass-remove.lua L107 視窗標題
+Find Target	尋找目標	查找目标	c	DFHack hack/scripts/gui/adv-finder.lua L121 冒險模式尋找器的選擇視窗標題
+Show dead:	顯示死者：	显示死者：		DFHack hack/scripts/gui/adv-finder.lua L158 尋找器切換選項
+Show books:	顯示書籍：	显示书籍：		DFHack hack/scripts/gui/adv-finder.lua L167 尋找器切換選項
+Target (local):	目標（本地）：	目标（本地）：		DFHack hack/scripts/gui/adv-finder.lua L493 尋找器：目標的相對方位（本地座標）
+Target (global):	目標（全域）：	目标（全局）：		DFHack hack/scripts/gui/adv-finder.lua L501 尋找器：目標的相對方位（世界座標）
+Dump direction:	傾倒方向：	倾倒方向：		DFHack hack/scripts/gui/quantum.lua L124 量子倉儲選項
+Create output pile:	建立輸出倉儲區：	创建输出储物区：		DFHack hack/scripts/gui/quantum.lua L135 量子倉儲選項
+Feeder select:	供料區選擇：	供料区选择：		DFHack hack/scripts/gui/quantum.lua L140 量子倉儲選項：一次選一個或多個供料倉儲區
+Assign minecart:	指派礦車：	指派矿车：		DFHack hack/scripts/gui/quantum.lua L149 量子倉儲選項
+1 minecart available: it will be automatically assigned to the quantum route	有 1 輛礦車可用：會自動指派給量子路線	有 1 辆矿车可用：会自动分配给量子路线		DFHack hack/scripts/gui/quantum.lua L160 量子倉儲說明（WrappedLabel）
+1 minecart available: an additional one will be ordered for you to assign to the quantum route later	有 1 輛礦車可用：會另外下單製作一輛，之後由你指派給量子路線	有 1 辆矿车可用：会另外下单制作一辆，之后由你分配给量子路线		DFHack hack/scripts/gui/quantum.lua L169 量子倉儲說明（WrappedLabel）
+1 minecart available: please assign a minecart of your choice to the quantum route later	有 1 輛礦車可用：請之後自行指派一輛礦車給量子路線	有 1 辆矿车可用：请之后自行分配一辆矿车给量子路线		DFHack hack/scripts/gui/quantum.lua L176 量子倉儲說明（WrappedLabel）
+Please select a feeder stockpile.	請選擇一個供料倉儲區。	请选择一个供料储物区。		DFHack hack/scripts/gui/quantum.lua L195 量子倉儲說明（WrappedLabel）
+Please select the location of the new quantum dumper.	請選擇新量子傾倒點的位置。	请选择新量子倾倒点的位置。		DFHack hack/scripts/gui/quantum.lua L198 量子倉儲說明（WrappedLabel）
+Please select additional feeder stockpiles or the location of the new quantum dumper.	請再選擇供料倉儲區，或選擇新量子傾倒點的位置。	请再选择供料储物区，或选择新量子倾倒点的位置。		DFHack hack/scripts/gui/quantum.lua L200 量子倉儲說明（WrappedLabel）
+There are no minecarts available to assign to the quantum stockpile, but a manager order to produce one was created for you. Once the minecart is built, please add it to the quantum stockpile route with the "assign-minecarts all" command or manually in the (H)auling menu.	沒有可指派給量子倉儲區的礦車，但已替你建立製作礦車的經理工作指令。礦車做好後，請用「assign-minecarts all」指令，或在搬運（H）選單手動把它加入量子倉儲區路線。	没有可分配给量子储物区的矿车，但已为你创建制作矿车的经理工作订单。矿车做好后，请用“assign-minecarts all”命令，或在搬运（H）菜单手动把它加入量子储物区路线。		DFHack hack/scripts/gui/quantum.lua L299 完成訊息框（:wrap(70)，整段）
+A manager order to produce a minecart has been created for you. Once the minecart is built, please add it to the quantum stockpile route with the "assign-minecarts all" command or manually in the (H)auling menu.	已替你建立製作礦車的經理工作指令。礦車做好後，請用「assign-minecarts all」指令，或在搬運（H）選單手動把它加入量子倉儲區路線。	已为你创建制作矿车的经理工作订单。矿车做好后，请用“assign-minecarts all”命令，或在搬运（H）菜单手动把它加入量子储物区路线。		DFHack hack/scripts/gui/quantum.lua L309 完成訊息框（:wrap(70)，整段）
+Please add a minecart of your choice to the quantum stockpile route in the (H)auling menu.	請在搬運（H）選單把你選的礦車加入量子倉儲區路線。	请在搬运（H）菜单把你选的矿车加入量子储物区路线。		DFHack hack/scripts/gui/quantum.lua L316 完成訊息框（:wrap(70)）
+Allow autochop to chop trees in this burrow	允許在此活動區自動伐木	允许在此活动区自动伐木		DFHack hack/scripts/gui/autochop.lua L34 自動伐木的活動區設定
+Cut down all trees in this burrow	砍光此活動區的所有樹	砍光此活动区的所有树		DFHack hack/scripts/gui/autochop.lua L40 自動伐木的活動區設定
+Protect trees that produce brewable items	保護會產出可釀造物的樹	保护会产出可酿造物的树		DFHack hack/scripts/gui/autochop.lua L46 自動伐木的活動區設定
+Protect trees that produce edible items	保護會產出可食用物的樹	保护会产出可食用物的树		DFHack hack/scripts/gui/autochop.lua L52 自動伐木的活動區設定
+Protect trees that produce cookable items	保護會產出可烹飪物的樹	保护会产出可烹饪物的树		DFHack hack/scripts/gui/autochop.lua L58 自動伐木的活動區設定
+Autochop is	自動伐木：	自动伐木：		DFHack hack/scripts/gui/autochop.lua L150 自動伐木啟用切換（後接 Enabled／Disabled）
+Target number of logs:	目標原木數：	目标原木数：		DFHack hack/scripts/gui/autochop.lua L170 自動伐木輸入欄（原文 "Target number of logs: "）
+Chop  Clear  Trees  Marked  Prot	砍伐  清空   樹木   已標記  保護	砍伐  清空   树木   已标记  保护		DFHack hack/scripts/gui/autochop.lua L7 自動伐木清單欄名（一整段，欄位位置對齊原文：砍伐、全部砍光、樹數、已標示數、保護項目）
+Hide burrows with no trees:	隱藏沒有樹的活動區：	隐藏没有树的活动区：		DFHack hack/scripts/gui/autochop.lua L206 自動伐木選項
+Hide burrows with no chop/clear order set:	隱藏未設定砍伐／砍光的活動區：	隐藏未设置砍伐/砍光的活动区：		DFHack hack/scripts/gui/autochop.lua L215 自動伐木選項
+Designate trees for chopping now	立即標示要砍伐的樹	立即标记要砍伐的树		DFHack hack/scripts/gui/autochop.lua L223 自動伐木選項
+Undesignate all trees now	立即取消所有樹的標示	立即取消所有树的标记		DFHack hack/scripts/gui/autochop.lua L234 自動伐木選項
+Will chop in burrows tagged with "Chop"	只在標記「砍伐」的活動區伐木	只在标记“砍伐”的活动区伐木		DFHack hack/scripts/gui/autochop.lua L308 自動伐木狀態訊息
+Will chop any accessible trees on the map	會砍伐地圖上所有到得了的樹	会砍伐地图上所有能到达的树		DFHack hack/scripts/gui/autochop.lua L309 自動伐木狀態訊息
+Usable logs in stock:	庫存可用原木：	库存可用原木：	r	DFHack hack/scripts/gui/autochop.lua L333 自動伐木統計（原文前面補空白靠右對齊冒號）
+Approx. logs left in accessible trees:	可到達的樹約還能產原木：	可到达的树约还能产原木：	r	DFHack hack/scripts/gui/autochop.lua L336 自動伐木統計（原文前面補空白靠右對齊冒號）
+Total trees designated:	已標示樹木總數：	已标记树木总数：	r	DFHack hack/scripts/gui/autochop.lua L339 自動伐木統計（原文前面補空白靠右對齊冒號）
+Approx. logs from designated trees:	已標示的樹約可產原木：	已标记的树约可产原木：	r	DFHack hack/scripts/gui/autochop.lua L340 自動伐木統計（原文前面補空白靠右對齊冒號）
+Total trees harvested:	已砍伐樹木總數：	已砍伐树木总数：		DFHack hack/scripts/gui/autochop.lua L344 自動伐木統計
+Siege Manager	攻城器械管理	攻城器械管理	c	DFHack hack/scripts/gui/siegemanager.lua L474 視窗標題；管理工具，不是經理；術語例外：manager
+ammo=	彈藥=	弹药=		DFHack hack/scripts/gui/siegemanager.lua L324 攻城器械清單：裝填的彈藥數前綴
+Show Types:	顯示類型：	显示类型：		DFHack hack/scripts/gui/siegemanager.lua L489 攻城器械篩選
+Configure All	套用到全部	应用到全部		DFHack hack/scripts/gui/siegemanager.lua L503 攻城器械：動作套用到全部器械的切換
+Reveal in World	移到所在位置	移到所在位置		DFHack hack/scripts/gui/siegemanager.lua L509 攻城器械：畫面移到選取的器械
+Set Action	設定動作	设置动作		DFHack hack/scripts/gui/siegemanager.lua L523 攻城器械：動作按鈕列的說明
+autogems dashboard	寶石切割設定	宝石切割设置	c	DFHack hack/scripts/gui/autogems.lua L116 視窗標題
+: Clear filters,	: 清除篩選，	: 清除筛选，		DFHack hack/scripts/gui/autogems.lua L134 寶石切割設定的按鍵說明（按鍵名後直接接這段）
+: Rock crystal,	: 水晶，	: 水晶，		DFHack hack/scripts/gui/autogems.lua L137 寶石切割設定的按鍵說明（按鍵名後直接接這段）
+: Same color,	: 同色，	: 同色，		DFHack hack/scripts/gui/autogems.lua L139 寶石切割設定的按鍵說明（按鍵名後直接接這段）
+: On map	: 地圖上	: 地图上		DFHack hack/scripts/gui/autogems.lua L141 寶石切割設定的按鍵說明（按鍵名後直接接這段）
+: Back,	: 返回,	: 返回,		DFHack hack/scripts/gui/autogems.lua L144 寶石切割設定的按鍵說明（按鍵名後直接接這段）；寬度不足，逗號用半形
+: Toggle,	: 切換，	: 切换，		DFHack hack/scripts/gui/autogems.lua L145 寶石切割設定的按鍵說明（按鍵名後直接接這段）
+: Toggle all	: 全部切換	: 全部切换		DFHack hack/scripts/gui/autogems.lua L146 寶石切割設定的按鍵說明（按鍵名後直接接這段）
+: Clear,	: 清除，	: 清除，		DFHack hack/scripts/gui/autogems.lua L153 寶石切割設定的按鍵說明（按鍵名後直接接這段）
+: Done	: 完成	: 完成		DFHack hack/scripts/gui/autogems.lua L154 寶石切割設定的按鍵說明（按鍵名後直接接這段）
+Civilization editor	文明編輯器	文明编辑器		DFHack hack/scripts/internal/gm-unit/editor_civilization.lua L135 gm-unit 編輯頁標題
+: set to other (-1, usually enemy)	: 設為其他（-1，通常是敵人）	: 设为其他（-1，通常是敌人）		DFHack hack/scripts/internal/gm-unit/editor_civilization.lua L148 gm-unit 文明編輯按鍵說明
+: manually enter	: 手動輸入	: 手动输入		DFHack hack/scripts/internal/gm-unit/editor_civilization.lua L152 gm-unit 文明編輯按鍵說明
+: select from list	: 從清單選擇	: 从列表选择		DFHack hack/scripts/internal/gm-unit/editor_civilization.lua L161 gm-unit 文明編輯按鍵說明
+Civ id	文明ID	文明ID	c	DFHack hack/scripts/internal/gm-unit/editor_civilization.lua L154 輸入框標題；寬度不足，ID 前不空格
+Enter new civ id:	輸入新的文明 ID：	输入新的文明 ID：		DFHack hack/scripts/internal/gm-unit/editor_civilization.lua L154 輸入框說明
+Choose civilization	選擇文明	选择文明	c	DFHack hack/scripts/internal/gm-unit/editor_civilization.lua L163 清單框標題
+Select units civilization	選擇單位的文明	选择单位的文明		DFHack hack/scripts/internal/gm-unit/editor_civilization.lua L163 清單框說明
+Choose race	選擇種族	选择种族	c	DFHack hack/scripts/internal/gm-unit/editor_civilization.lua L104 清單框標題
+Select new race:	選擇新種族：	选择新种族：		DFHack hack/scripts/internal/gm-unit/editor_civilization.lua L104 清單框說明
+Filter race	篩選種族	筛选种族		DFHack hack/scripts/internal/gm-unit/editor_civilization.lua L113 文明清單框的種族篩選（按鍵前的文字，原文 "Filter race "）
+: <none>	: <無>	: <无>		DFHack hack/scripts/internal/gm-unit/editor_civilization.lua L116 文明清單框：未篩選種族
+<none>	<無>	<无>		DFHack hack/scripts/internal/gm-unit/editor_civilization.lua L25 種族清單第一項（不指定）
+<other(-1)>	<其他(-1)>	<其他(-1)>		DFHack hack/scripts/internal/gm-unit/editor_civilization.lua L51 文明清單：其他（-1）
+<other (-1)>	<其他 (-1)>	<其他 (-1)>		DFHack hack/scripts/internal/gm-unit/editor_civilization.lua L58 目前文明為 -1 時的名稱
+<invalid>	<無效>	<无效>		DFHack hack/scripts/internal/gm-unit/editor_civilization.lua L66 找不到文明時的名稱
+[retired]	[已廢棄]	[已废弃]		DFHack hack/scripts/gui/sitemap.lua L73 搜尋：場所已不存在（原文前有空白）
+[no zone]	[無區域]	[无区域]		DFHack hack/scripts/gui/sitemap.lua L75 搜尋：場所沒有對應區域（原文前有空白）
+Unknown affiliation	所屬不明	所属不明		DFHack hack/scripts/gui/sitemap.lua L116 搜尋：生物的所屬勢力不明
+Military Unit	軍事單位	军事单位	inner	DFHack hack/scripts/gui/sitemap.lua L118 搜尋：勢力類型（historical_entity_type 拆字），只給「名字, 類型」句型用
+Guild	公會	公会	inner	DFHack hack/scripts/gui/sitemap.lua L118 搜尋：勢力類型（historical_entity_type 拆字），只給「名字, 類型」句型用
+Click on a name or hit	點選名字或按	点击名字或按		DFHack hack/scripts/gui/sitemap.lua L226 搜尋底部說明（後接 Enter、「 to zoom to」，下一行「the selected target.」；中文照同樣順序讀得通）
+to zoom to	，畫面移到	，画面移到		DFHack hack/scripts/gui/sitemap.lua L226 搜尋底部說明（接在 Enter 後）
+the selected target.	選取的目標。	选中的目标。		DFHack hack/scripts/gui/sitemap.lua L227 搜尋底部說明第二行
+Shift-click or	Shift 點選或	Shift 点击或		DFHack hack/scripts/gui/sitemap.lua L236 搜尋底部說明（下一行 Shift-Enter）
+to zoom and follow unit/item.	移到並跟隨該單位／物品。	移到并跟随该单位/物品。		DFHack hack/scripts/gui/sitemap.lua L239 搜尋底部說明（接在 Shift-Enter 後）
+Nobody around. Spooky!	附近沒人，好可怕！	附近没人，好吓人！		DFHack hack/scripts/gui/sitemap.lua L272 搜尋：生物清單是空的
+Please enter a site to see locations.	請進入據點才能查看場所。	请进入据点才能查看场所。		DFHack hack/scripts/gui/sitemap.lua L290 搜尋：不在據點
+No temples, guildhalls, hospitals, taverns,	此據點沒有神殿、公會大廳、醫院、酒館	此据点没有神殿、公会大厅、医院、酒馆		DFHack hack/scripts/gui/sitemap.lua L297 搜尋：場所清單是空的，第一行（第二行 or libraries…；中文照同樣順序讀得通）
+or libraries found at this site.	或圖書館。	或图书馆。		DFHack hack/scripts/gui/sitemap.lua L298 搜尋：場所清單是空的，第二行
+No artifacts around here.	這附近沒有神器。	这附近没有神器。		DFHack hack/scripts/gui/sitemap.lua L316 搜尋：神器清單是空的
+Adds a button to the toolbar at the bottom left corner of the screen for launching gui/sitemap.	在畫面左下角工具列加上開啟 gui/sitemap 的按鈕。	在屏幕左下角工具栏加上打开 gui/sitemap 的按钮。		DFHack hack/scripts/gui/sitemap.lua L369 overlay 說明（控制面板顯示）
+Open the general search	開啟綜合搜尋	打开综合搜索		DFHack hack/scripts/gui/sitemap.lua L393 工具列按鈕提示第一行（第二行 and zoom interface.）
+and zoom interface.	與定位介面。	与定位界面。		DFHack hack/scripts/gui/sitemap.lua L394 工具列按鈕提示第二行
+Training Setup	訓練設定	训练设置	c	DFHack hack/scripts/gui/autotraining.lua L14 自動訓練視窗標題
+Select squads for automatic training:	選擇要自動訓練的小隊：	选择要自动训练的小队：		DFHack hack/scripts/gui/autotraining.lua L163 自動訓練
+General options:	一般選項：	常规选项：		DFHack hack/scripts/gui/autotraining.lua L175 自動訓練
+Need threshold for training:	開始訓練的需求門檻：	开始训练的需求阈值：		DFHack hack/scripts/gui/autotraining.lua L181 自動訓練輸入欄（原文 "Need threshold for training: "）
+Autotraining is	自動訓練：	自动训练：		DFHack hack/scripts/gui/autotraining.lua L198 自動訓練啟用切換（後接 Enabled／Disabled）
+Ignored noble positions:	忽略的貴族職位：	忽略的贵族职位：		DFHack hack/scripts/gui/autotraining.lua L213 自動訓練
+Select units to exclude from automatic training:	選擇不參加自動訓練的單位：	选择不参加自动训练的单位：		DFHack hack/scripts/gui/autotraining.lua L225 自動訓練
+Hello World	你好，世界	你好，世界	c	DFHack hack/scripts/devel/hello-world.lua L16 範例視窗標題
+Hello, world!	你好，世界！	你好，世界！		DFHack hack/scripts/devel/hello-world.lua L33 範例視窗
+Click me	點我	点我		DFHack hack/scripts/devel/hello-world.lua L36 範例視窗按鈕
+Level:	等級：	等级：		DFHack hack/scripts/devel/hello-world.lua L53 範例視窗選項
+Display progress bars for learning skills on unit viewsheets.	在單位資訊頁顯示技能學習進度條。	在单位信息页显示技能学习进度条。		DFHack hack/scripts/internal/unit-info-viewer/skills-progress.lua L22 overlay 說明（控制面板顯示）
+Progress Bar:	進度條：	进度条：		DFHack hack/scripts/internal/unit-info-viewer/skills-progress.lua L52 單位技能頁 overlay 切換
+Experience:	經驗：	经验：		DFHack hack/scripts/internal/unit-info-viewer/skills-progress.lua L63 單位技能頁 overlay 切換
+Mark newly designated	將新標示的	将新标记的		DFHack hack/lua/plugins/dig.lua L43 潮濕／溫熱挖掘設定第一行（第二行 tiles for:；中文照同樣順序讀得通）
+tiles for:	地塊標為：	地块标为：		DFHack hack/lua/plugins/dig.lua L44 潮濕／溫熱挖掘設定第二行
+Damp dig	挖濕岩	挖湿岩		DFHack hack/lua/plugins/dig.lua L79 本層已標示地塊改標潮濕挖掘
+Warm dig	挖熱岩	挖热岩		DFHack hack/lua/plugins/dig.lua L84 本層已標示地塊改標溫熱挖掘
+Adds widgets to the dig interface to allow uninterrupted digging through warm and damp tiles.	在挖掘介面加上設定，可以不中斷地挖穿溫熱與潮濕的地塊。	在挖掘界面加上设置，可以不中断地挖穿温热和潮湿的地块。		DFHack hack/lua/plugins/dig.lua L147 overlay 說明（控制面板顯示）
+Mark for uninterrupted	標記為不中斷地	标记为不中断地		DFHack hack/lua/plugins/dig.lua L181 挖掘工具列按鈕提示第一行（接 digging through damp / or warm tiles.；中文照同樣順序讀得通）
+digging through damp	挖穿潮濕	挖穿潮湿		DFHack hack/lua/plugins/dig.lua L182 挖掘工具列按鈕提示第二行
+or warm tiles.	或溫熱地塊。	或温热地块。		DFHack hack/lua/plugins/dig.lua L183 挖掘工具列按鈕提示第三行
+Visibility improvements for warm and damp map tiles.	讓溫熱與潮濕的地塊更容易看清楚。	让温热和潮湿的地块更容易看清楚。		DFHack hack/lua/plugins/dig.lua L273 overlay 說明（控制面板顯示）
+Makes existing carving designations visible when in ASCII mode.	在 ASCII 模式顯示已有的開鑿標示。	在 ASCII 模式显示已有的开凿标记。		DFHack hack/lua/plugins/dig.lua L356 overlay 說明（控制面板顯示）
+Beliefs editor	信念編輯器	信念编辑器		DFHack hack/scripts/internal/gm-unit/editor_beliefs.lua L12 gm-unit 編輯頁標題，也是主清單的項目（所以不置中）
+Personality editor	性格編輯器	性格编辑器		DFHack hack/scripts/internal/gm-unit/editor_personality.lua L13 gm-unit 編輯頁標題，也是主清單的項目（所以不置中）
+Skill editor	技能編輯器	技能编辑器		DFHack hack/scripts/internal/gm-unit/editor_skills.lua L12 gm-unit 編輯頁標題，也是主清單的項目（所以不置中）
+Wounds editor	傷口編輯器	伤口编辑器		DFHack hack/scripts/internal/gm-unit/editor_wounds.lua L11 gm-unit 編輯頁標題，也是主清單的項目（所以不置中）
+Attributes editor	屬性編輯器	属性编辑器		DFHack hack/scripts/internal/gm-unit/editor_attributes.lua L11 gm-unit 編輯頁標題，也是主清單的項目（所以不置中）
+Profession editor	職業編輯器	职业编辑器		DFHack hack/scripts/internal/gm-unit/editor_profession.lua L9 gm-unit 編輯頁標題，也是主清單的項目（所以不置中）
+: edit value	: 編輯數值	: 编辑数值		DFHack hack/scripts/internal/gm-unit/editor_beliefs.lua L88 gm-unit 信念／性格編輯按鍵說明
+* denotes cultural default	* 表示文化預設值	* 表示文化默认值		DFHack hack/scripts/internal/gm-unit/editor_beliefs.lua L94 gm-unit 信念編輯說明
+: set to cultural default	: 設為文化預設值	: 设为文化默认值		DFHack hack/scripts/internal/gm-unit/editor_beliefs.lua L96 gm-unit 信念編輯按鍵說明
+: set to caste average	: 設為階層平均值	: 设为阶层平均值		DFHack hack/scripts/internal/gm-unit/editor_personality.lua L90 gm-unit 性格編輯按鍵說明（caste 是種族內的性別／階層）
+: remove level	: 降一級	: 降一级		DFHack hack/scripts/internal/gm-unit/editor_skills.lua L82 gm-unit 技能編輯按鍵說明
+: add level	: 升一級	: 升一级		DFHack hack/scripts/internal/gm-unit/editor_skills.lua L85 gm-unit 技能編輯按鍵說明
+: show learned only	: 只顯示已學會的	: 只显示已学会的		DFHack hack/scripts/internal/gm-unit/editor_skills.lua L89 gm-unit 技能編輯按鍵說明
+delete wound	刪除傷口	删除伤口		DFHack hack/scripts/internal/gm-unit/editor_wounds.lua L125 gm-unit 傷口編輯按鍵說明
+: set attribute	: 設定屬性	: 设置属性		DFHack hack/scripts/internal/gm-unit/editor_attributes.lua L85 gm-unit 屬性編輯按鍵說明
+: set max attribute	: 設定屬性上限	: 设置属性上限		DFHack hack/scripts/internal/gm-unit/editor_attributes.lua L96 gm-unit 屬性編輯按鍵說明
+Enter new max value:	輸入新的上限值：	输入新的上限值：		DFHack hack/scripts/internal/gm-unit/editor_attributes.lua L100 輸入框說明
+GameMaster's unit editor	GM 單位編輯器	GM 单位编辑器	c	DFHack hack/scripts/gui/gm-unit.lua L93 gm-unit 主視窗標題
+North ↑	北 ↑	北 ↑		DFHack hack/scripts/trackstop.lua L15 軌道停靠站／滾輪 overlay 的方向選項（方向＋箭頭字元 24–27）
+East →	東 →	东 →		DFHack hack/scripts/trackstop.lua L15 軌道停靠站／滾輪 overlay 的方向選項（方向＋箭頭字元 24–27）
+South ↓	南 ↓	南 ↓		DFHack hack/scripts/trackstop.lua L15 軌道停靠站／滾輪 overlay 的方向選項（方向＋箭頭字元 24–27）
+West ←	西 ←	西 ←		DFHack hack/scripts/trackstop.lua L15 軌道停靠站／滾輪 overlay 的方向選項（方向＋箭頭字元 24–27）
+Adds widgets for reconfiguring trackstops after construction.	加上可在建好後重新設定軌道停靠站的元件。	加上可在建好后重新设置轨道停靠站的组件。		DFHack hack/scripts/trackstop.lua L56 overlay 說明（控制面板顯示）
+Adds widgets for reconfiguring rollers after construction.	加上可在建好後重新設定滾輪的元件。	加上可在建好后重新设置滚轮的组件。		DFHack hack/scripts/trackstop.lua L159 overlay 說明（控制面板顯示）
+Mass-pit caged creatures	把籠中生物丟進坑	把笼中生物丢进坑	c	DFHack hack/scripts/gui/masspit.lua L29 視窗標題
+Select or click on a stockpile	選擇或點選一個倉儲區	选择或点击一个储物区		DFHack hack/scripts/gui/masspit.lua L40 說明（WrappedLabel）
+No stockpiles with caged creatures found! Create one first.	找不到有籠中生物的倉儲區！請先建立一個。	找不到有笼中生物的储物区！请先创建一个。		DFHack hack/scripts/gui/masspit.lua L94 說明（WrappedLabel）
+Select (or click on) an animal stockpile with caged creatures to pit.	選擇（或點選）有籠中生物、要丟進坑的動物倉儲區。	选择（或点击）有笼中生物、要丢进坑的动物储物区。		DFHack hack/scripts/gui/masspit.lua L96 說明（WrappedLabel）
+No pond/pit zones found! Create one first.	找不到池塘／坑區域！請先建立一個。	找不到池塘/坑区域！请先创建一个。		DFHack hack/scripts/gui/masspit.lua L128 說明（WrappedLabel）
+This stockpile contains no caged units.	這個倉儲區沒有籠中的生物。	这个储物区没有笼中的生物。		DFHack hack/scripts/gui/masspit.lua L151 說明（WrappedLabel）
+Embark Anyone	任選文明出發	任选文明出发	c	DFHack hack/scripts/embark-anyone.lua L98 對話框標題
+Select a civilization to add to the list of origin civs:	選擇要加入出身文明清單的文明：	选择要加入出身文明列表的文明：		DFHack hack/scripts/embark-anyone.lua L99 對話框說明
+No additional civilizations found.	找不到其他文明。	找不到其他文明。		DFHack hack/scripts/embark-anyone.lua L111 對話框訊息
+No worker	無人執行	无人执行		DFHack hack/scripts/gui/workshop-job.lua L73 工作坊工作詳情：狀態
+: Input item,	: 原料物品，	: 原料物品，		DFHack hack/scripts/gui/workshop-job.lua L92 工作坊工作詳情按鍵說明
+: Material	: 材料	: 材料		DFHack hack/scripts/gui/workshop-job.lua L95 工作坊工作詳情按鍵說明
+any item	任何物品	任何物品		DFHack hack/scripts/gui/workshop-job.lua L127 工作坊工作詳情：不限物品
+material not applicable	不適用材料	不适用材料		DFHack hack/scripts/gui/workshop-job.lua L148 工作坊工作詳情
+no flags	無旗標	无标志		DFHack hack/scripts/gui/workshop-job.lua L212 工作坊工作詳情：原料沒有限制旗標
+Bug Alert	錯誤警報	错误警报	c	DFHack hack/scripts/gui/workshop-job.lua L299 訊息框標題
+Please set a specific item type first.	請先設定具體的物品類型。	请先设置具体的物品类型。		DFHack hack/scripts/gui/workshop-job.lua L300 訊息框第一行
+Otherwise the material will be matched	否則會因為 DF 程式的限制	否则会因为 DF 代码的限制		DFHack hack/scripts/gui/workshop-job.lua L301 訊息框第二行（第三行 incorrectly due to…；中文照同樣順序讀得通）
+incorrectly due to a limitation in DF code.	而比對到錯誤的材料。	而匹配到错误的材料。		DFHack hack/scripts/gui/workshop-job.lua L302 訊息框第三行
+CP437 table	CP437字元表	CP437字符表	c	DFHack hack/scripts/gui/cp437-table.lua L32 視窗標題
+Click characters or type	點選字元或直接輸入	点击字符或直接输入		DFHack hack/scripts/gui/cp437-table.lua L48 CP437 字元表說明
+Send text to parent	送出文字到上一層	发送文字到上一层		DFHack hack/scripts/gui/cp437-table.lua L53 CP437 字元表按鈕
+Click here to Backspace	點這裡刪除前一字	点这里删除前一字		DFHack hack/scripts/gui/cp437-table.lua L61 CP437 字元表按鈕
+Shows whether a zone has been reserved for a unit or role.	顯示區域是否已保留給某個單位或職位。	显示区域是否已保留给某个单位或职位。		DFHack hack/lua/plugins/preserve-rooms.lua L101 overlay 說明（控制面板顯示）
+Autoassign to holder of role:	自動指派給此職位的擔任者：	自动分配给此职位的担任者：		DFHack hack/lua/plugins/preserve-rooms.lua L153 區域頁 overlay：依職位自動指派房間
+Reserved for traveling unit:	已保留給外出的單位：	已保留给外出的单位：		DFHack hack/lua/plugins/preserve-rooms.lua L199 區域頁 overlay：房間主人離開要塞時保留
+Clear reservation	取消保留	取消保留		DFHack hack/lua/plugins/preserve-rooms.lua L206 區域頁 overlay 按鈕
+This is an alpha build of DFHack. Some structures are likely	這是 DFHack 的 alpha 版。部分資料結構可能	这是 DFHack 的 alpha 版。部分数据结构可能		DFHack hack/scripts/gui/prerelease-warning.lua L29 預覽版警告視窗的一行（一句拆成數行時，中文照同樣順序讀得通）
+to be incorrect, resulting in crashes or save corruption	有誤，導致當機或存檔損毀	有误，导致崩溃或存档损坏		DFHack hack/scripts/gui/prerelease-warning.lua L30 預覽版警告視窗的一行（一句拆成數行時，中文照同樣順序讀得通）
+Make backups of your saves often!	請經常備份存檔！	请经常备份存档！		DFHack hack/scripts/gui/prerelease-warning.lua L31 預覽版警告視窗的一行（一句拆成數行時，中文照同樣順序讀得通）
+This is a beta release of DFHack. It is more stable than an	這是 DFHack 的 beta 版，比	这是 DFHack 的 beta 版，比		DFHack hack/scripts/gui/prerelease-warning.lua L36 預覽版警告視窗的一行（一句拆成數行時，中文照同樣順序讀得通）
+alpha release, but bugs are still possible, possibly including	alpha 版穩定，但仍可能有錯誤，可能包括	alpha 版稳定，但仍可能有错误，可能包括		DFHack hack/scripts/gui/prerelease-warning.lua L37 預覽版警告視窗的一行（一句拆成數行時，中文照同樣順序讀得通）
+crashes and save corruption.	當機和存檔損毀。	崩溃和存档损坏。		DFHack hack/scripts/gui/prerelease-warning.lua L38 預覽版警告視窗的一行（一句拆成數行時，中文照同樣順序讀得通）
+Make backups of your saves beforehand to be safe.	保險起見，請事先備份存檔。	保险起见，请事先备份存档。		DFHack hack/scripts/gui/prerelease-warning.lua L39 預覽版警告視窗的一行（一句拆成數行時，中文照同樣順序讀得通）
+This is a DFHack release candidate. It is fairly stable but	這是 DFHack 的候選發行版，相當穩定，但	这是 DFHack 的候选发行版，相当稳定，但		DFHack hack/scripts/gui/prerelease-warning.lua L44 預覽版警告視窗的一行（一句拆成數行時，中文照同樣順序讀得通）
+likely contains newer features that are not fully-tested.	可能含有尚未完整測試的新功能。	可能含有尚未完整测试的新功能。		DFHack hack/scripts/gui/prerelease-warning.lua L45 預覽版警告視窗的一行（一句拆成數行時，中文照同樣順序讀得通）
+Crashes are unlikely, but always make backups of your saves	不太會當機，但請務必備份存檔，	不太会崩溃，但请务必备份存档，		DFHack hack/scripts/gui/prerelease-warning.lua L46 預覽版警告視窗的一行（一句拆成數行時，中文照同樣順序讀得通）
+to be safe.	以策安全。	以策安全。		DFHack hack/scripts/gui/prerelease-warning.lua L47 預覽版警告視窗的一行（一句拆成數行時，中文照同樣順序讀得通）
+This release is flagged as a prerelease but named as a	此版本標記為預覽版，卻以	此版本标记为预览版，却以		DFHack hack/scripts/gui/prerelease-warning.lua L52 預覽版警告視窗的一行（一句拆成數行時，中文照同樣順序讀得通）
+stable release.	穩定版命名。	稳定版命名。		DFHack hack/scripts/gui/prerelease-warning.lua L53 預覽版警告視窗的一行（一句拆成數行時，中文照同樣順序讀得通）
+Please report this to the DFHack team.	請回報給 DFHack 團隊。	请报告给 DFHack 团队。		DFHack hack/scripts/gui/prerelease-warning.lua L54 預覽版警告視窗的一行（一句拆成數行時，中文照同樣順序讀得通）
+Unknown prerelease DFHack build. This should never happen!	不明的 DFHack 預覽版建置。這不該發生！	未知的 DFHack 预览版构建。这不该发生！		DFHack hack/scripts/gui/prerelease-warning.lua L59 預覽版警告視窗的一行（一句拆成數行時，中文照同樣順序讀得通）
+This should not be enabled by default in a pack.	整合包不該預設啟用這個。	整合包不该默认启用这个。		DFHack hack/scripts/gui/prerelease-warning.lua L70 預覽版警告視窗的一行（一句拆成數行時，中文照同樣順序讀得通）
+If you are seeing this message and did not enable/install DFHack	若你看到這則訊息，而 DFHack 不是你自己	若你看到这条消息，而 DFHack 不是你自己		DFHack hack/scripts/gui/prerelease-warning.lua L71 預覽版警告視窗的一行（一句拆成數行時，中文照同樣順序讀得通）
+yourself, please report this to your pack's maintainer.	啟用／安裝的，請回報給整合包的維護者。	启用/安装的，请报告给整合包的维护者。		DFHack hack/scripts/gui/prerelease-warning.lua L72 預覽版警告視窗的一行（一句拆成數行時，中文照同樣順序讀得通）
+REMINDER: Please report any issues you encounter while	提醒：使用此 DFHack 版本時遇到任何問題，	提醒：使用此 DFHack 版本时遇到任何问题，		DFHack hack/scripts/gui/prerelease-warning.lua L85 預覽版警告視窗的一行（一句拆成數行時，中文照同樣順序讀得通）
+using this DFHack build on GitHub (github.com/DFHack/dfhack/issues)	請回報到 GitHub（github.com/DFHack/dfhack/issues）	请报告到 GitHub（github.com/DFHack/dfhack/issues）		DFHack hack/scripts/gui/prerelease-warning.lua L86 預覽版警告視窗的一行（一句拆成數行時，中文照同樣順序讀得通）
+or the Bay12 forums (dfhack.org/bay12).	或 Bay12 論壇（dfhack.org/bay12）。	或 Bay12 论坛（dfhack.org/bay12）。		DFHack hack/scripts/gui/prerelease-warning.lua L87 預覽版警告視窗的一行（一句拆成數行時，中文照同樣順序讀得通）
+You appear to be using a nightly build of DFHack. If you	你似乎在用 DFHack 的每夜建置版。若	你似乎在用 DFHack 的每夜构建版。若		DFHack hack/scripts/gui/prerelease-warning.lua L93 預覽版警告視窗的一行（一句拆成數行時，中文照同樣順序讀得通）
+experience problems, check dfhack.org/builds for updates.	遇到問題，請到 dfhack.org/builds 查看更新。	遇到问题，请到 dfhack.org/builds 查看更新。		DFHack hack/scripts/gui/prerelease-warning.lua L94 預覽版警告視窗的一行（一句拆成數行時，中文照同樣順序讀得通）
+Do not show again	不再顯示	不再显示		DFHack hack/scripts/gui/prerelease-warning.lua L140 預覽版警告按鈕
+Welcome to DFHack! This guide will help get you oriented with the DFHack system and teach you how to find and use the tools productively. If you're reading this in the in-game quickstart-guide reader, hit the right arrow key or click on the hotkey hint in the lower right corner of the window to go to the next page.	歡迎使用 DFHack！本指南會帶你認識 DFHack 系統，教你如何找到並善用各種工具。如果你是在遊戲內的 quickstart-guide 閱讀器看這份指南，按右方向鍵或點視窗右下角的快捷鍵提示，就能翻到下一頁。	欢迎使用 DFHack！本指南会带你认识 DFHack 系统，教你如何找到并善用各种工具。如果你是在游戏内的 quickstart-guide 阅读器看这份指南，按右方向键或点击窗口右下角的快捷键提示，就能翻到下一页。		DFHack hack/docs/docs/Quickstart.txt L4（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）
+What is DFHack?	DFHack 是什麼？	DFHack 是什么？		DFHack hack/docs/docs/Quickstart.txt L7（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）
+DFHack is an add-on for Dwarf Fortress that enables mods and tools to significantly extend the game. The default DFHack distribution contains a wide variety of these mods and tools, including bugfixes, interface improvements, automation agents, design blueprints, modding building blocks, and more. Third-party tools (e.g. mods downloaded from Steam Workshop or the forums) can also seamlessly integrate with the DFHack framework and extend the game far beyond what can be done by just modding the raws.	DFHack 是《矮人要塞》的附加程式，讓模組與工具能大幅擴充遊戲。預設的 DFHack 套件就附有各式各樣的模組與工具，包括錯誤修正、介面改良、自動化工具、設計藍圖、製作模組用的基礎元件等等。第三方工具（例如從 Steam 工作坊或論壇下載的模組）也能無縫整合進 DFHack 架構，把遊戲擴充到遠超過單靠修改 raws 所能做到的程度。	DFHack 是《矮人要塞》的附加程序，让模组和工具能大幅扩展游戏。默认的 DFHack 发行包就附有各种各样的模组和工具，包括错误修复、界面改进、自动化工具、设计蓝图、制作模组用的基础组件等等。第三方工具（例如从 Steam 创意工坊或论坛下载的模组）也能无缝集成进 DFHack 框架，把游戏扩展到远超单靠修改 raws 所能做到的程度。		DFHack hack/docs/docs/Quickstart.txt L10（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）；Steam 工作坊；術語例外：workshop
+DFHack's mission is to provide tools and interfaces for players and modders to:	DFHack 的使命是為玩家與模組作者提供工具和介面，用來：	DFHack 的使命是为玩家和模组作者提供工具和界面，用来：		DFHack hack/docs/docs/Quickstart.txt L12（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）
+* expand the bounds of what is possible in Dwarf Fortress	* 拓展《矮人要塞》的可能性	* 拓展《矮人要塞》的可能性		DFHack hack/docs/docs/Quickstart.txt L14（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）
+* reduce the impact of game bugs	* 減少遊戲錯誤的影響	* 减少游戏 bug 的影响		DFHack hack/docs/docs/Quickstart.txt L16（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）
+* give the player more agency and control over the game	* 讓玩家對遊戲有更多主導權與掌控	* 让玩家对游戏有更多主导权和掌控		DFHack hack/docs/docs/Quickstart.txt L18（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）
+* provide alternatives to toilsome or frustrating aspects of gameplay	* 為遊戲中繁瑣或令人挫折的部分提供替代做法	* 为游戏中繁琐或令人沮丧的部分提供替代做法		DFHack hack/docs/docs/Quickstart.txt L20（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）
+* **make the game more fun**	* **讓遊戲更好玩**	* **让游戏更好玩**		DFHack hack/docs/docs/Quickstart.txt L22（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）
+What can I do with DFHack tools?	DFHack 工具能做什麼？	DFHack 工具能做什么？		DFHack hack/docs/docs/Quickstart.txt L25（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）
+DFHack has been around for a long time -- almost as long as Dwarf Fortress itself. Many of the game's rough edges have been smoothed with DFHack tools. Here are some common tasks people use DFHack tools to accomplish:	DFHack 已經存在很久了，幾乎跟《矮人要塞》本身一樣久。遊戲裡許多不順手的地方，都已經用 DFHack 工具修平了。以下是大家常用 DFHack 工具完成的事：	DFHack 已经存在很久了，几乎和《矮人要塞》本身一样久。游戏里许多不顺手的地方，都已经用 DFHack 工具修平了。以下是大家常用 DFHack 工具完成的事：		DFHack hack/docs/docs/Quickstart.txt L28（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）
+* Automatically chop trees when log stocks are low	* 原木庫存不足時自動伐木	* 原木库存不足时自动伐木		DFHack hack/docs/docs/Quickstart.txt L30（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）
+* Mark all damaged items for trade in a single click	* 一鍵把所有損壞的物品標記為交易品	* 一键把所有损坏的物品标记为交易品		DFHack hack/docs/docs/Quickstart.txt L32（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）
+* Copy and paste fort layouts	* 複製貼上要塞的布局	* 复制粘贴要塞的布局		DFHack hack/docs/docs/Quickstart.txt L34（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）
+* Import and export lists of manager orders	* 匯入與匯出經理工作指令清單	* 导入和导出经理工作订单列表		DFHack hack/docs/docs/Quickstart.txt L36（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）
+* Clean contaminants from map squares that dwarves can't reach	* 清除矮人到不了的地圖格子上的汙染物	* 清除矮人到不了的地图格子上的污染物		DFHack hack/docs/docs/Quickstart.txt L38（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）
+* Automatically butcher excess livestock so you don't become overrun with animals	* 自動屠宰多餘的牲畜，免得動物多到失控	* 自动屠宰多余的牲畜，免得动物多到失控		DFHack hack/docs/docs/Quickstart.txt L40（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）
+* Promote time-sensitive job types (e.g. food hauling) so they are done expediently	* 提高有時效性的工作（例如搬運食物）的優先順序，讓它們盡快完成	* 提高有时效性的工作（例如搬运食物）的优先级，让它们尽快完成		DFHack hack/docs/docs/Quickstart.txt L42（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）
+* Quickly scan the map for visible ores of specific types so you can focus your mining efforts	* 快速掃描地圖上看得見的特定礦石，讓你集中挖礦	* 快速扫描地图上看得见的特定矿石，让你集中挖矿		DFHack hack/docs/docs/Quickstart.txt L44（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）
+Some tools are one-shot commands. For example, you can run unforbid all to claim all (reachable) items on the map after a messy siege.	有些工具是一次性的指令。例如在一場混亂的圍城之後，可以執行 unforbid all 取回地圖上所有（到得了的）物品。	有些工具是一次性的命令。例如在一场混乱的围城之后，可以执行 unforbid all 取回地图上所有（能到达的）物品。		DFHack hack/docs/docs/Quickstart.txt L46（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）
+Other tools must be enabled once and then they will run in the background. For example, once enabled, seedwatch will start monitoring your stocks of seeds and prevent your chefs from cooking seeds that you need for planting. Tools that are enabled in the context of a fort will save their state with that fort, and they will remember that they are enabled the next time you load your save. You can see which tools you have enabled and toggle their states in gui/control-panel.	另一些工具只要啟用一次，就會在背景持續運作。例如 seedwatch 啟用後，會開始監看你的種子庫存，防止廚師把你要拿來種植的種子煮掉。在要塞裡啟用的工具會把狀態存在該要塞，下次讀取存檔時仍會記得自己已啟用。你可以在 gui/control-panel 查看已啟用哪些工具，並切換它們的狀態。	另一些工具只要启用一次，就会在后台持续运行。例如 seedwatch 启用后，会开始监视你的种子库存，防止厨师把你要拿来种植的种子煮掉。在要塞里启用的工具会把状态保存在该要塞，下次读取存档时仍会记得自己已启用。你可以在 gui/control-panel 查看已启用哪些工具，并切换它们的状态。		DFHack hack/docs/docs/Quickstart.txt L48（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）
+A third class of tools adds information to the screen or provides new integrated functionality via the DFHack overlay framework. For example, the sort tool adds widgets to the squad member selection screen that allow you to sort and filter the list of military candidates. You don't have to run any command to get the benefits of the tool, it appears automatically when you're on the relevant screen.	第三類工具會透過 DFHack 的疊加介面架構，在畫面上加入資訊或提供整合的新功能。例如 sort 工具會在小隊成員選擇畫面加上元件，讓你排序與篩選軍事候選人清單。你不必執行任何指令就能享有這類工具的好處，只要進入相關畫面就會自動出現。	第三类工具会通过 DFHack 的叠加界面框架，在屏幕上加入信息或提供集成的新功能。例如 sort 工具会在小队成员选择界面加上组件，让你排序和筛选军事候选人列表。你不必执行任何命令就能享有这类工具的好处，只要进入相关界面就会自动出现。		DFHack hack/docs/docs/Quickstart.txt L50（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）
+How can I figure out which commands to run?	我該怎麼知道要執行哪些指令？	我该怎么知道要执行哪些命令？		DFHack hack/docs/docs/Quickstart.txt L53（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）
+There are several ways to scan DFHack tools and find the ones you need right now.	有好幾種方式可以瀏覽 DFHack 工具，找出你現在需要的。	有好几种方式可以浏览 DFHack 工具，找出你现在需要的。		DFHack hack/docs/docs/Quickstart.txt L56（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）
+The first place to check is the DFHack logo menu. It's in the upper left corner of the screen by default, though you can move it anywhere you want with the gui/overlay configuration UI.	首先可以看 DFHack 標誌選單。它預設在畫面左上角，你也可以用 gui/overlay 設定介面把它移到任何地方。	首先可以看 DFHack 标志菜单。它默认在屏幕左上角，你也可以用 gui/overlay 设置界面把它移到任何地方。		DFHack hack/docs/docs/Quickstart.txt L58（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）
+When you click on the logo (or hit the Ctrl-Shift-C keyboard shortcut), a short list of popular, relevant DFHack tools comes up. These are the tools that have been assigned hotkeys that are active in the current context. For example, when you're looking at a fort map, the list will contain fortress design tools like gui/quickfort and gui/design. You can click on the tools in the list, or note the hotkeys listed next to them and maybe use them to launch the tool next time without even opening the logo menu.	點標誌（或按 Ctrl-Shift-C 快捷鍵）時，會跳出一小份熱門又相關的 DFHack 工具清單。這些是指派了快捷鍵、而且在目前情境下可用的工具。例如在看要塞地圖時，清單會列出 gui/quickfort 和 gui/design 這類要塞設計工具。你可以直接點清單裡的工具，或記下旁邊列出的快捷鍵，下次不必打開標誌選單就能用快捷鍵啟動工具。	点击标志（或按 Ctrl-Shift-C 快捷键）时，会弹出一小份热门又相关的 DFHack 工具列表。这些是分配了快捷键、而且在当前情境下可用的工具。例如在看要塞地图时，列表会列出 gui/quickfort 和 gui/design 这类要塞设计工具。你可以直接点击列表里的工具，或记下旁边列出的快捷键，下次不必打开标志菜单就能用快捷键启动工具。		DFHack hack/docs/docs/Quickstart.txt L60（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）
+The second place to check is the DFHack control panel: gui/control-panel. It will give you an overview of which tools are currently enabled, and will allow you to toggle tools on or off, see help text for them, or launch their dedicated configuration UIs. You can open the control panel from anywhere with the Ctrl-Shift-E hotkey or by selecting it from the logo menu list.	其次可以看 DFHack 控制面板：gui/control-panel。它會列出目前已啟用哪些工具，讓你開關工具、查看說明，或開啟各工具專屬的設定介面。在任何地方都可以按 Ctrl-Shift-E 快捷鍵，或從標誌選單清單選取，打開控制面板。	其次可以看 DFHack 控制面板：gui/control-panel。它会列出当前已启用哪些工具，让你开关工具、查看说明，或打开各工具专属的设置界面。在任何地方都可以按 Ctrl-Shift-E 快捷键，或从标志菜单列表选择，打开控制面板。		DFHack hack/docs/docs/Quickstart.txt L62（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）
+In the control panel, you can also select which tools you'd like to be automatically enabled and popular commands you'd like to run when you start a new fort. On the "Preferences" tab, there are settings you can change, like "mortal mode" (you'll learn more about this in the next section) or whether you want DFHack windows to pause the game when they come up.	在控制面板裡，你也可以選擇開新要塞時要自動啟用哪些工具、要執行哪些常用指令。「偏好設定」分頁有一些可以變更的設定，例如「凡人模式」（下一節會詳細說明），或 DFHack 視窗出現時是否要暫停遊戲。	在控制面板里，你也可以选择开新要塞时要自动启用哪些工具、要执行哪些常用命令。“偏好设置”标签页有一些可以更改的设置，例如“凡人模式”（下一节会详细说明），或 DFHack 窗口出现时是否要暂停游戏。		DFHack hack/docs/docs/Quickstart.txt L64（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）
+Finally, you can explore the full extent of the DFHack catalog in gui/launcher, which is always listed first in the DFHack logo menu list. You can bring up the launcher by tapping the backtick key (`) or hitting Ctrl-Shift-D. In the launcher, you can quickly autocomplete any command name by selecting it in the list on the right side of the window. You can filter the list by command tag, for example, you can see only productivity tools by setting the "productivity" tag to "include" in the filter panel. Commands are ordered by how often you run them, so your favorite commands will always be on top. You can also pull full commandlines out of your history with Alt-S or by clicking on the "history search" button.	最後，你可以在 gui/launcher 探索 DFHack 的完整目錄，它永遠排在 DFHack 標誌選單清單的第一個。按反引號鍵（`）或 Ctrl-Shift-D 可以叫出啟動器。在啟動器裡，從視窗右側的清單選取，就能快速補完任何指令名稱。你可以依指令標籤篩選清單，例如在篩選面板把「productivity」標籤設為「包含」，就只會看到提升效率的工具。指令依你執行的頻率排序，最常用的指令永遠在最上面。你也可以按 Alt-S 或點「搜尋歷史」按鈕，從歷史紀錄叫出完整的指令列。	最后，你可以在 gui/launcher 探索 DFHack 的完整目录，它永远排在 DFHack 标志菜单列表的第一个。按反引号键（`）或 Ctrl-Shift-D 可以调出启动器。在启动器里，从窗口右侧的列表选择，就能快速补全任何命令名称。你可以按命令标签筛选列表，例如在筛选面板把“productivity”标签设为“包含”，就只会看到提升效率的工具。命令按你执行的频率排序，最常用的命令永远在最上面。你也可以按 Alt-S 或点击“搜索历史”按钮，从历史记录调出完整的命令行。		DFHack hack/docs/docs/Quickstart.txt L66（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）
+Once you have typed (or autocompleted, or searched for) a command, other commands related to the one you have selected will appear in the right-hand panel. Scanning through that list is a great way to learn about new tools that you might find useful.	輸入（或補完、搜尋到）一個指令後，右側面板會列出與所選指令相關的其他指令。瀏覽這份清單，是認識可能派得上用場的新工具的好方法。	输入（或补全、搜索到）一个命令后，右侧面板会列出与所选命令相关的其他命令。浏览这份列表，是认识可能派得上用场的新工具的好方法。		DFHack hack/docs/docs/Quickstart.txt L68（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）
+The bottom panel will show the full help text for the command you are running, allowing you to refer to the usage documentation and examples when you are typing your command. After you run a command, the bottom panel switches to command output mode, but you can get back to the help text by hitting Ctrl-T or clicking on the "Help" tab.	下方面板會顯示你正要執行的指令的完整說明，讓你輸入指令時可以參考用法說明與範例。執行指令後，下方面板會切換成指令輸出模式，但按 Ctrl-T 或點「說明」分頁就能回到說明。	下方面板会显示你正要执行的命令的完整说明，让你输入命令时可以参考用法说明和示例。执行命令后，下方面板会切换成命令输出模式，但按 Ctrl-T 或点击“帮助”标签页就能回到说明。		DFHack hack/docs/docs/Quickstart.txt L70（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）
+What if I don't want to be tempted by god-mode tools?	不想被神模式工具誘惑怎麼辦？	不想被神模式工具诱惑怎么办？		DFHack hack/docs/docs/Quickstart.txt L73（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）
+DFHack can give you god-like powers over the game. Sometimes, this is necessary to recover from game-breaking bugs. Sometimes, this is desirable so players can create specific role playing environments and situations. Sometimes, this is just fun : )	DFHack 能讓你對遊戲擁有神一般的力量。有時候這是從毀掉遊戲的錯誤中救回存檔的必要手段；有時候是玩家想營造特定角色扮演情境時需要的；有時候純粹只是好玩 : )	DFHack 能让你对游戏拥有神一般的力量。有时候这是从毁掉游戏的 bug 中救回存档的必要手段；有时候是玩家想营造特定角色扮演情境时需要的；有时候纯粹只是好玩 : )		DFHack hack/docs/docs/Quickstart.txt L76（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）
+But sometimes the knowledge that you can just "Armok" your way out of trouble detracts from the game experience. If this is the way you feel, you can hide DFHack's god-mode tools -- they all have the tag "armok" -- from the game. Open gui/control-panel and go to the "Preferences" tab. Enable "Mortal mode" to hide all "armok" tools. You can still access them in gui/launcher if you type their names in full, but they won't show up in autocomplete lists, in the output of ls, or anywhere else. Any global hotkeys that run "armok" tools will be disabled.	但有時候，知道自己隨時可以「Armok」一下脫困，反而會減損遊戲體驗。如果你也這麼覺得，可以把 DFHack 的神模式工具（它們都有「armok」標籤）從遊戲中藏起來。打開 gui/control-panel，到「偏好設定」分頁，啟用「凡人模式」就會隱藏所有「armok」工具。在 gui/launcher 輸入完整名稱仍然可以使用它們，但它們不會出現在自動補完清單、ls 的輸出或其他任何地方。執行「armok」工具的全域快捷鍵也會停用。	但有时候，知道自己随时可以“Armok”一下脱困，反而会减损游戏体验。如果你也这么觉得，可以把 DFHack 的神模式工具（它们都有“armok”标签）从游戏中藏起来。打开 gui/control-panel，到“偏好设置”标签页，启用“凡人模式”就会隐藏所有“armok”工具。在 gui/launcher 输入完整名称仍然可以使用它们，但它们不会出现在自动补全列表、ls 的输出或其他任何地方。执行“armok”工具的全局快捷键也会禁用。		DFHack hack/docs/docs/Quickstart.txt L78（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）
+How do DFHack in-game windows work?	DFHack 的遊戲內視窗怎麼操作？	DFHack 的游戏内窗口怎么操作？		DFHack hack/docs/docs/Quickstart.txt L81（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）
+Many DFHack tools have graphical interfaces that appear in-game. You can tell which windows belong to DFHack tools because they will have the word "DFHack" printed across their bottom frame edge. DFHack provides an advanced windowing system that gives the player a lot of control over where the windows appear and whether they capture keyboard and mouse input.	許多 DFHack 工具都有在遊戲內出現的圖形介面。視窗下框印有「DFHack」字樣的，就是 DFHack 工具的視窗。DFHack 提供進階的視窗系統，讓玩家能大幅掌控視窗出現的位置，以及視窗是否攔截鍵盤與滑鼠輸入。	许多 DFHack 工具都有在游戏内出现的图形界面。窗口下框印有“DFHack”字样的，就是 DFHack 工具的窗口。DFHack 提供高级的窗口系统，让玩家能大幅掌控窗口出现的位置，以及窗口是否拦截键盘和鼠标输入。		DFHack hack/docs/docs/Quickstart.txt L84（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）
+The DFHack windowing system allows multiple overlapping windows to be active at once. The one with the highlighted title bar has focus and will receive anything you type at the keyboard. Hit Esc or right click to close the window or cancel the current action. You can click anywhere on the screen that is not a DFHack window to unfocus the window and let it just sit in the background. It won't respond to key presses or mouse clicks until you click on it again to give it focus. If no DFHack windows are focused, you can right click directly on a window to close it without left clicking to focus it first.	DFHack 視窗系統允許同時開啟多個重疊的視窗。標題列反白的那個擁有焦點，會接收你從鍵盤輸入的所有內容。按 Esc 或按右鍵可以關閉視窗或取消目前的動作。點畫面上任何不是 DFHack 視窗的地方，可以讓視窗失去焦點、留在背景。在你再次點它取得焦點之前，它不會回應按鍵或滑鼠點擊。如果沒有任何 DFHack 視窗擁有焦點，可以直接在視窗上按右鍵關閉它，不必先按左鍵讓它取得焦點。	DFHack 窗口系统允许同时打开多个重叠的窗口。标题栏高亮的那个拥有焦点，会接收你从键盘输入的所有内容。按 Esc 或点击右键可以关闭窗口或取消当前的操作。点击屏幕上任何不是 DFHack 窗口的地方，可以让窗口失去焦点、留在后台。在你再次点击它获得焦点之前，它不会响应按键或鼠标点击。如果没有任何 DFHack 窗口拥有焦点，可以直接在窗口上点击右键关闭它，不必先点击左键让它获得焦点。		DFHack hack/docs/docs/Quickstart.txt L86（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）
+DFHack windows are draggable from the title bar or from anywhere on the window that doesn't have a mouse-clickable widget on it. Many are resizable as well (if the tool window has components that can reasonably be resized).	DFHack 視窗可以從標題列，或視窗上任何沒有可點元件的地方拖曳。許多視窗也能調整大小（如果工具視窗的元件適合調整大小的話）。	DFHack 窗口可以从标题栏，或窗口上任何没有可点击组件的地方拖动。许多窗口也能调整大小（如果工具窗口的组件适合调整大小的话）。		DFHack hack/docs/docs/Quickstart.txt L88（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）
+You can generally use DFHack tools without interrupting the game. That is, if the game is unpaused, it can continue to run while a DFHack window is open. If configured to do so in gui/control-panel, tools will initially pause the game to let you focus on the task at hand, but you can unpause like normal if you want. You can also interact with the map, scrolling it with the keyboard or mouse and selecting units, buildings, and items. Some tools, like gui/blueprint, will intercept all mouse clicks to allow you to select regions of the map. When these tools have focus, you will not be able to use the mouse to interact with map elements or pause/unpause the game. Therefore, these tools will pause the game when they open, regardless of your settings in gui/control-panel. You can still unpause with the keyboard (spacebar by default), though.	一般來說，使用 DFHack 工具不必中斷遊戲。也就是說，如果遊戲沒有暫停，DFHack 視窗開著時遊戲仍會繼續進行。如果在 gui/control-panel 設定了，工具開啟時會先暫停遊戲，讓你專心處理手上的事，但你想的話也可以照常取消暫停。你也可以和地圖互動，用鍵盤或滑鼠捲動地圖、選取單位、建築與物品。有些工具（例如 gui/blueprint）會攔截所有滑鼠點擊，讓你選取地圖上的區域。這類工具擁有焦點時，你無法用滑鼠和地圖元素互動，也無法暫停／取消暫停遊戲。因此這類工具開啟時一定會暫停遊戲，不管你在 gui/control-panel 怎麼設定。不過你仍然可以用鍵盤（預設是空白鍵）取消暫停。	一般来说，使用 DFHack 工具不必中断游戏。也就是说，如果游戏没有暂停，DFHack 窗口开着时游戏仍会继续进行。如果在 gui/control-panel 设置了，工具打开时会先暂停游戏，让你专心处理手上的事，但你想的话也可以照常取消暂停。你也可以和地图互动，用键盘或鼠标滚动地图、选择单位、建筑和物品。有些工具（例如 gui/blueprint）会拦截所有鼠标点击，让你选择地图上的区域。这类工具拥有焦点时，你无法用鼠标和地图元素互动，也无法暂停/取消暂停游戏。因此这类工具打开时一定会暂停游戏，不管你在 gui/control-panel 怎么设置。不过你仍然可以用键盘（默认是空格键）取消暂停。		DFHack hack/docs/docs/Quickstart.txt L90（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）；工具名 gui/blueprint；術語例外：blueprint
+Where do I go next?	接下來要做什麼？	接下来要做什么？		DFHack hack/docs/docs/Quickstart.txt L93（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）
+To recap:	回顧：	回顾：		DFHack hack/docs/docs/Quickstart.txt L96（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）
+You can get to popular, relevant tools for the current context by clicking on the DFHack logo or by hitting Ctrl-Shift-C.	點 DFHack 標誌或按 Ctrl-Shift-C，就能找到目前情境下熱門又相關的工具。	点击 DFHack 标志或按 Ctrl-Shift-C，就能找到当前情境下热门又相关的工具。		DFHack hack/docs/docs/Quickstart.txt L98（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）
+You can enable DFHack tools and configure settings with gui/control-panel, which you can open from the DFHack logo or access directly with the Ctrl-Shift-E hotkey.	在 gui/control-panel 可以啟用 DFHack 工具、調整設定；從 DFHack 標誌打開，或直接按 Ctrl-Shift-E 快捷鍵。	在 gui/control-panel 可以启用 DFHack 工具、调整设置；从 DFHack 标志打开，或直接按 Ctrl-Shift-E 快捷键。		DFHack hack/docs/docs/Quickstart.txt L100（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）
+You can get to the launcher and its integrated autocomplete, history search, and help text by hitting backtick (`) or Ctrl-Shift-D, or, of course, by running it from the logo menu list.	按反引號（`）或 Ctrl-Shift-D，當然也可以從標誌選單清單執行，就能打開啟動器，使用它內建的自動補完、歷史搜尋與說明。	按反引号（`）或 Ctrl-Shift-D，当然也可以从标志菜单列表执行，就能打开启动器，使用它内置的自动补全、历史搜索和说明。		DFHack hack/docs/docs/Quickstart.txt L102（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）
+With those three interfaces, you have the complete DFHack tool suite at your fingertips. So what to run first? Here are a few examples to get you started.	有了這三個介面，整套 DFHack 工具就任你取用。那要先執行什麼呢？以下是幾個入門範例。	有了这三个界面，整套 DFHack 工具就任你取用。那要先执行什么呢？以下是几个入门示例。		DFHack hack/docs/docs/Quickstart.txt L104（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）
+First, let's import some useful manager orders to keep your fort stocked with basic necessities. Run "orders import library/basic". If you go to your manager orders screen, you can see all the orders that have been created for you. Note that you could have imported the orders directly from this screen as well, using the DFHack overlay widget at the bottom of the manager orders panel.	首先，匯入一些實用的經理工作指令，讓要塞的基本必需品保持充足。執行「orders import library/basic」。到工作指令畫面就能看到替你建立的所有指令。其實你也可以直接在那個畫面，用工作指令面板底部的 DFHack 疊加介面元件匯入這些指令。	首先，导入一些实用的经理工作订单，让要塞的基本必需品保持充足。执行“orders import library/basic”。到工作订单界面就能看到为你创建的所有订单。其实你也可以直接在那个界面，用工作订单面板底部的 DFHack 叠加界面组件导入这些订单。		DFHack hack/docs/docs/Quickstart.txt L106（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）；指令參數 library/basic；術語例外：library
+Next, try setting up autochop to automatically designate trees for chopping when you get low on usable logs. Run gui/control-panel and enable "autochop" in the "Automation" -> "Enabled" tab. Click on the button to the left of the name or hit Enter to enable it. You can then click on the configure button (the gear icon) to launch gui/autochop if you'd like to customize its settings (the defaults are usually fine). If you have the extra screen space, you can go ahead and set the gui/autochop window to minimal mode (click on the button near the upper right corner of the window or hit Alt-M) and click on the map so the window loses keyboard focus. As you play the game, you can glance at the live status panel to check on your stocks of wood.	接著試著設定 autochop，在可用原木不足時自動標示要砍的樹。執行 gui/control-panel，在「自動化」->「已啟用」分頁啟用「autochop」：點名稱左邊的按鈕或按 Enter 啟用。接著可以點設定按鈕（齒輪圖示）開啟 gui/autochop 自訂設定（預設值通常就夠用）。如果畫面還有空間，可以把 gui/autochop 視窗切成精簡模式（點視窗右上角附近的按鈕或按 Alt-M），再點一下地圖讓視窗失去鍵盤焦點。玩遊戲時瞄一眼即時狀態面板，就能掌握木材庫存。	接着试着设置 autochop，在可用原木不足时自动标记要砍的树。执行 gui/control-panel，在“自动化”->“已启用”标签页启用“autochop”：点击名称左边的按钮或按 Enter 启用。接着可以点击设置按钮（齿轮图标）打开 gui/autochop 自定义设置（默认值通常就够用）。如果屏幕还有空间，可以把 gui/autochop 窗口切成精简模式（点击窗口右上角附近的按钮或按 Alt-M），再点击一下地图让窗口失去键盘焦点。玩游戏时瞄一眼实时状态面板，就能掌握木材库存。		DFHack hack/docs/docs/Quickstart.txt L108（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）
+Finally, let's do some fort design copy-pasting. Go to some bedrooms that you have set up in your fort. Run gui/blueprint, set a name for your blueprint by clicking on the name field (or hitting the 'n' hotkey). Type "rooms" (or whatever) and hit Enter to set. Then draw a box around the target area by clicking with the mouse. When you select the second corner, the blueprint will be saved to your "dfhack-config/blueprints" subfolder.	最後來複製貼上要塞設計。到你在要塞裡設好的幾間臥室。執行 gui/blueprint，點名稱欄位（或按快捷鍵「n」）替藍圖取名。輸入「rooms」（或隨便什麼）後按 Enter 確定。接著用滑鼠點選，在目標區域框出範圍。選好第二個角落時，藍圖就會存到「dfhack-config/blueprints」子資料夾。	最后来复制粘贴要塞设计。到你在要塞里设好的几间卧室。执行 gui/blueprint，点击名称栏（或按快捷键“n”）给蓝图取名。输入“rooms”（或随便什么）后按 Enter 确定。接着用鼠标点击，在目标区域框出范围。选好第二个角时，蓝图就会保存到“dfhack-config/blueprints”子文件夹。		DFHack hack/docs/docs/Quickstart.txt L110（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）
+Now open up gui/quickfort (the hotkey is Ctrl-Shift-Q). You can search for the blueprint you just created by typing its name, but it should be up near the top already. If you copied a dug-out area with furniture in it, you will see two blueprints with the labels "/dig" and "/build". Click on the "/dig" blueprint or select it with the keyboard arrow keys and hit Enter. You can rotate or flip the blueprint around if you need to with the transform hotkeys. You'll see a preview of where the blueprint will be applied as you move the mouse cursor around the map. Red outlines mean that the blueprint may fail to fully apply at that location, so be sure to choose a spot where all the preview tiles are shown with green diamonds. Click the mouse or hit Enter to apply the blueprint and designate the tiles for digging. Your dwarves will come and dig it out as if you had designated the tiles yourself.	現在打開 gui/quickfort（快捷鍵是 Ctrl-Shift-Q）。你可以輸入名稱搜尋剛建立的藍圖，不過它應該已經在最上面附近。如果你複製的是挖好、擺了家具的區域，會看到兩份藍圖，標籤分別是「/dig」和「/build」。點「/dig」藍圖，或用鍵盤方向鍵選取後按 Enter。需要的話可以用變換快捷鍵旋轉或翻轉藍圖。移動滑鼠游標時，會預覽藍圖要套用的位置。紅色外框表示藍圖在該處可能無法完整套用，所以請選所有預覽格子都顯示綠色菱形的地點。按滑鼠或 Enter 套用藍圖、標示要挖掘的地塊。矮人會前來挖掘，就像你親自標示的一樣。	现在打开 gui/quickfort（快捷键是 Ctrl-Shift-Q）。你可以输入名称搜索刚创建的蓝图，不过它应该已经在最上面附近。如果你复制的是挖好、摆了家具的区域，会看到两份蓝图，标签分别是“/dig”和“/build”。点击“/dig”蓝图，或用键盘方向键选择后按 Enter。需要的话可以用变换快捷键旋转或翻转蓝图。移动鼠标光标时，会预览蓝图要应用的位置。红色外框表示蓝图在该处可能无法完整应用，所以请选所有预览格子都显示绿色菱形的地点。点击鼠标或按 Enter 应用蓝图、标记要挖掘的地块。矮人会前来挖掘，就像你亲自标记的一样。		DFHack hack/docs/docs/Quickstart.txt L112（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）
+Once the area is dug out, run gui/quickfort again and select the "/build" blueprint this time. Hit "o" to generate manager orders for the required furniture. Click to apply the blueprint in the dug-out area, and your furniture will be designated. It's just that easy! Note that quickfort uses buildingplan to place buildings, so you don't even need to have the relevant furniture or building materials in stock yet. The planned furniture/buildings will get built whenever you are able to produce the building materials.	區域挖好後，再次執行 gui/quickfort，這次選「/build」藍圖。按「o」替需要的家具產生經理工作指令。點一下就能把藍圖套用到挖好的區域，家具就會標示好。就是這麼簡單！quickfort 用 buildingplan 擺放建築，所以你甚至不必先備好相關的家具或建材。只要能生產出建材，計畫中的家具／建築就會建造起來。	区域挖好后，再次执行 gui/quickfort，这次选“/build”蓝图。按“o”为需要的家具生成经理工作订单。点击一下就能把蓝图应用到挖好的区域，家具就会标记好。就是这么简单！quickfort 用 buildingplan 摆放建筑，所以你甚至不必先备好相关的家具或建材。只要能生产出建材，计划中的家具/建筑就会建造起来。		DFHack hack/docs/docs/Quickstart.txt L114（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）
+There are many, many more tools to explore. Poke around or ask other player for advice. Have fun, and dig deep!	還有非常多工具等你探索。到處逛逛，或向其他玩家請教。祝你玩得愉快，挖得夠深！	还有非常多工具等你探索。到处逛逛，或向其他玩家请教。祝你玩得愉快，挖得够深！		DFHack hack/docs/docs/Quickstart.txt L116（scripts/quickstart-guide.lua 以 WrappedLabel 顯示，一行一段）
+DFHack Quickstart Guide	DFHack 快速入門指南	DFHack 快速入门指南	c	DFHack hack/scripts/quickstart-guide.lua L42 視窗標題
+Guide text not found!	找不到指南內容！	找不到指南内容！		DFHack hack/scripts/quickstart-guide.lua L21 讀不到 Quickstart.txt 時
+Hollow:	空心：	空心：		DFHack hack/scripts/internal/design/shapes.lua L225 gui/design 形狀選項（option.name..":"）
+Vertical:	垂直：	垂直：		DFHack hack/scripts/internal/design/shapes.lua L337 gui/design 形狀選項（option.name..":"）
+Horizontal:	水平：	水平：		DFHack hack/scripts/internal/design/shapes.lua L343 gui/design 形狀選項（option.name..":"）
+Reverse:	反向：	反向：		DFHack hack/scripts/internal/design/shapes.lua L384 gui/design 形狀選項（option.name..":"）
+Closed:	封閉：	封闭：		DFHack hack/scripts/internal/design/shapes.lua L582 gui/design 形狀選項（option.name..":"）
+Filled:	填滿：	填满：		DFHack hack/scripts/internal/design/shapes.lua L588 gui/design 形狀選項（option.name..":"）
+Curve Point	曲線點	曲线点		DFHack hack/scripts/internal/design/shapes.lua L454 gui/design 形狀的額外控制點（接在 design.lua 的 Add: 後）
+Second Curve Point	第二曲線點	第二曲线点		DFHack hack/scripts/internal/design/shapes.lua L454 gui/design 形狀的額外控制點（接在 design.lua 的 Add: 後）
+Main Axis	主軸	主轴		DFHack hack/scripts/internal/design/shapes.lua L675 gui/design 形狀的額外控制點（接在 design.lua 的 Add: 後）
+Select Stockpile Order	選擇倉儲區工作指令	选择储物区工作订单	c	DFHack hack/lua/plugins/stockflow.lua L821 stockflow 選擇視窗標題
+Type in parts of the name to narrow your search.	輸入部分名稱來縮小搜尋範圍。	输入部分名称来缩小搜索范围。		DFHack hack/lua/plugins/stockflow.lua L833 stockflow 選擇視窗說明（原文結尾兩個空白，後接按鍵與 to abort.）
+to abort.	中止。	中止。		DFHack hack/lua/plugins/stockflow.lua L834 stockflow 選擇視窗說明（接在按鍵後，原文 " to abort."）
+: No order	: 不下指令	: 不下订单		DFHack hack/lua/plugins/stockflow.lua L847 stockflow 選擇視窗按鍵說明
+No job selected	未選擇工作	未选择工作		DFHack hack/lua/plugins/stockflow.lua L114 stockflow：倉儲區沒有設定工作指令
+Per empty space	每個空格	每个空格	inner	DFHack hack/lua/plugins/stockflow.lua L30 stockflow 觸發條件（接在 Trigger: 後）
+Per stored item	每件存放物品	每件存放物品	inner	DFHack hack/lua/plugins/stockflow.lua L30 stockflow 觸發條件（接在 Trigger: 後）
+Per two empty spaces	每兩個空格	每两个空格	inner	DFHack hack/lua/plugins/stockflow.lua L30 stockflow 觸發條件（接在 Trigger: 後）
+Per two stored items	每兩件存放物品	每两件存放物品	inner	DFHack hack/lua/plugins/stockflow.lua L30 stockflow 觸發條件（接在 Trigger: 後）
+Per three empty spaces	每三個空格	每三个空格	inner	DFHack hack/lua/plugins/stockflow.lua L30 stockflow 觸發條件（接在 Trigger: 後）
+Per three stored items	每三件存放物品	每三件存放物品	inner	DFHack hack/lua/plugins/stockflow.lua L30 stockflow 觸發條件（接在 Trigger: 後）
+Per four empty spaces	每四個空格	每四个空格	inner	DFHack hack/lua/plugins/stockflow.lua L30 stockflow 觸發條件（接在 Trigger: 後）
+Per four stored items	每四件存放物品	每四件存放物品	inner	DFHack hack/lua/plugins/stockflow.lua L30 stockflow 觸發條件（接在 Trigger: 後）
+Displays and adjusts stockflow work order settings for the selected stockpile.	顯示並調整所選倉儲區的 stockflow 工作指令設定。	显示并调整所选储物区的 stockflow 工作订单设置。		DFHack hack/lua/plugins/stockflow.lua L1233 overlay 說明（控制面板顯示）
+Adds keywords to conversation entries.	替交談選項加上關鍵字。	为交谈选项加上关键字。		DFHack hack/scripts/internal/advtools/convo.lua L162 overlay 說明（控制面板顯示）
+: Bedrooms	: 臥室	: 卧室		DFHack hack/scripts/gui/extended-status.lua L79 狀態頁額外選單（按鍵後接 ": "..desc）
+: Additional options (DFHack)	: 其他選項（DFHack）	: 其他选项（DFHack）		DFHack hack/scripts/gui/extended-status.lua L85 狀態頁按鍵說明
+Bedroom status	臥室狀態	卧室状态	c	DFHack hack/scripts/gui/extended-status.lua L119 視窗標題
+Built beds	已建造的床	已建造的床		DFHack hack/scripts/gui/extended-status.lua L128 臥室狀態的統計項目（後接 ": " 數字）
+Unbuilt beds	未建造的床	未建造的床		DFHack hack/scripts/gui/extended-status.lua L128 臥室狀態的統計項目（後接 ": " 數字）
+Owned Bedrooms	有主的臥室	有主的卧室		DFHack hack/scripts/gui/extended-status.lua L128 臥室狀態的統計項目（後接 ": " 數字）
+Unowned Bedrooms	無主的臥室	无主的卧室		DFHack hack/scripts/gui/extended-status.lua L128 臥室狀態的統計項目（後接 ": " 數字）
+Units with bedrooms	有臥室的單位	有卧室的单位		DFHack hack/scripts/gui/extended-status.lua L128 臥室狀態的統計項目（後接 ": " 數字）
+Units without bedrooms	沒有臥室的單位	没有卧室的单位		DFHack hack/scripts/gui/extended-status.lua L128 臥室狀態的統計項目（後接 ": " 數字）
+Order more beds	訂製更多床	订制更多床		DFHack hack/scripts/gui/extended-status.lua L195 臥室狀態按鍵說明
+needs manager	需要經理	需要经理		DFHack hack/scripts/gui/extended-status.lua L201 臥室狀態：沒有經理
+Replace manager	更換經理	更换经理		DFHack hack/scripts/gui/extended-status.lua L205 臥室狀態按鍵說明
+Assign manager	指派經理	指派经理		DFHack hack/scripts/gui/extended-status.lua L205 臥室狀態按鍵說明
+Open manager	開啟經理畫面	打开经理界面		DFHack hack/scripts/gui/extended-status.lua L208 臥室狀態按鍵說明：開啟工作指令畫面
+Queue beds	排入床	排入床	c	DFHack hack/scripts/gui/extended-status.lua L216 輸入框標題
+Number of beds to queue:	要排入的床數：	要排入的床数：		DFHack hack/scripts/gui/extended-status.lua L217 輸入框說明
+Cannot queue a negative number of beds	不能排入負數的床	不能排入负数的床		DFHack hack/scripts/gui/extended-status.lua L46 錯誤訊息框

@@ -1,0 +1,10 @@
+en	zh-Hant	zh-Hans	align	row	note
+available	可用數	可用数			DFHack hack/lua/plugins/buildingplan/filterselection.lua L84 排序選項：依可用數量
+Material	材料	材料			DFHack hack/lua/plugins/buildingplan/filterselection.lua L113 欄位標題
+Superior	上等	上等			DFHack hack/lua/plugins/buildingplan/filterselection.lua L172 品質（同遊戲 superior quality）
+Exceptional	卓越	卓越			DFHack hack/lua/plugins/buildingplan/filterselection.lua L173 品質
+Masterful	大師級	大师级			DFHack hack/lua/plugins/buildingplan/filterselection.lua L174 品質（同遊戲 masterwork）
+Artifact	神器	神器			DFHack hack/lua/plugins/buildingplan/filterselection.lua L175 品質
+Amount	數量	数量			DFHack hack/lua/plugins/buildingplan/itemselection.lua L158 排序選項
+Value	價值	价值			DFHack hack/lua/plugins/buildingplan/itemselection.lua L159 排序選項
+Block	磚塊	砖块			DFHack hack/lua/plugins/buildingplan/itemselection.lua L103 選擇物品視窗第一行的物品類別（全域 Block 是格擋）

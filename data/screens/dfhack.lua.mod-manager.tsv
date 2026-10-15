@@ -1,0 +1,4 @@
+en	zh-Hant	zh-Hans	align	row	note
+order	順序	顺序			DFHack hack/scripts/gui/mod-manager.lua L659 清單欄名 'Load'＋NEWLINE＋'order'（載入／順序）；全域 order 是「秩序」，這裡限模組管理畫面
+Include	包含	包含			DFHack hack/scripts/gui/mod-manager.lua L614 CycleHotkeyLabel 選項：原版模組是否列出
+Exclude	排除	排除			DFHack hack/scripts/gui/mod-manager.lua L615 CycleHotkeyLabel 選項：原版模組是否列出

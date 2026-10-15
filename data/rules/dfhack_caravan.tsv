@@ -1,0 +1,4 @@
+en	zh-Hant	zh-Hans	align	note
+Are you sure you want to convict {1}? This action is irreversible.	確定要將{1}定罪嗎？此動作無法復原。	确定要将{1}定罪吗？此操作无法撤销。		DFHack hack/scripts/internal/confirm/specs.lua L342 確認定罪訊息：{1} 是犯人名字（translateName）；confirm.lua 先 :wrap(45)，引擎整段翻
+{#1}☼ ({#2} types of {@3})	{1}☼（{2} 種{3}）	{1}☼（{2} 种{3}）		DFHack hack/scripts/internal/caravan/tradeagreement.lua L132 選擇材料清單一列：基礎價值、種類數（複數）、資源名（leather／gem／meat／parchment，字典已有）
+{#1}☼ ({#2} type of {@3})	{1}☼（{2} 種{3}）	{1}☼（{2} 种{3}）		DFHack hack/scripts/internal/caravan/tradeagreement.lua L132 同上，單數

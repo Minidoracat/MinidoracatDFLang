@@ -1,0 +1,45 @@
+en	zh-Hant	zh-Hans	align	note
+{1} (global)	{1}（全域）	{1}（全局）		DFHack hack/scripts/gui/control-panel.lua L141 工具清單：全域工具名後綴（L239 自動啟動清單同）；工具名照原文
+(default: {1},	（預設：{1}，	（默认：{1}，		DFHack hack/scripts/gui/control-panel.lua L834 偏好設定清單第二行（'(default: %s, '）；值是 true/false（inner 條目譯是／否）、數字或大數字格式選項
+current: {1}	目前：{1}	当前：{1}		DFHack hack/scripts/gui/control-panel.lua L835 偏好設定清單第二行（'current: %s'）
+(default: {#1}, at least {#2})	（預設 {1}，至少 {2}）	（默认 {1}，至少 {2}）		DFHack hack/scripts/gui/control-panel.lua L741 偏好設定編輯視窗的數值範圍（registry 的數值設定都有 min、沒有 max）
+Shows a reminder if it has been more than {#1} minutes since your last save.	距離上次存檔超過 {1} 分鐘時顯示提醒。	距离上次保存超过 {1} 分钟时显示提醒。		DFHack hack/scripts/internal/notify/notifications.lua L762 通知設定說明（門檻預設 15）
+It has been {#1} minutes since your last save.	距離上次存檔已經 {1} 分鐘了。	距离上次保存已经 {1} 分钟了。		DFHack hack/scripts/internal/notify/notifications.lua L334 存檔提醒對話框第一段
+missing {#1} nemesis record	缺少 {1} 筆 nemesis 紀錄	缺少 {1} 条 nemesis 记录		DFHack hack/scripts/internal/notify/notifications.lua L448 通知欄（單數）
+missing {#1} nemesis records	缺少 {1} 筆 nemesis 紀錄	缺少 {1} 条 nemesis 记录		DFHack hack/scripts/internal/notify/notifications.lua L448 通知欄（複數）
+missing unit for unit id {#1}	找不到 ID {1} 的單位	找不到 ID {1} 的单位		DFHack hack/scripts/internal/notify/notifications.lua L485 缺少 nemesis 紀錄對話框單位清單
+{#1} squad needs rescue	{1} 支小隊待救援	{1} 支小队待救援		DFHack hack/scripts/internal/notify/notifications.lua L509 通知欄（單數）
+{#1} squads need rescue	{1} 支小隊待救援	{1} 支小队待救援		DFHack hack/scripts/internal/notify/notifications.lua L509 通知欄（複數）
+{#1} trader is ready to trade	{1} 支商隊可以交易了	{1} 支商队可以交易了		DFHack hack/scripts/internal/notify/notifications.lua L574 通知欄（單數；計數的是商隊）
+{#1} traders are ready to trade	{1} 支商隊可以交易了	{1} 支商队可以交易了		DFHack hack/scripts/internal/notify/notifications.lua L574 通知欄（複數）
+{#1} production mandate near deadline	{1} 項生產命令即將到期	{1} 项生产命令即将到期		DFHack hack/scripts/internal/notify/notifications.lua L603 通知欄（單數）
+{#1} production mandates near deadline	{1} 項生產命令即將到期	{1} 项生产命令即将到期		DFHack hack/scripts/internal/notify/notifications.lua L603 通知欄（複數）
+{#1} petition outstanding	{1} 項請願待完成	{1} 项请愿待完成		DFHack hack/scripts/internal/notify/notifications.lua L621 通知欄（單數）
+{#1} petitions outstanding	{1} 項請願待完成	{1} 项请愿待完成		DFHack hack/scripts/internal/notify/notifications.lua L621 通知欄（複數）
+{#1} starving, dehydrated, or drowsy unit	{1} 個單位飢餓、脫水或睏倦	{1} 个单位饥饿、脱水或困倦		DFHack hack/scripts/internal/notify/notifications.lua L661 通知欄（count_units 單數；'%d %s%s'）
+{#1} starving, dehydrated, or drowsy units	{1} 個單位飢餓、脫水或睏倦	{1} 个单位饥饿、脱水或困倦		DFHack hack/scripts/internal/notify/notifications.lua L661 通知欄（count_units 複數）
+{#1} agitated animal	{1} 隻躁動的動物	{1} 只躁动的动物		DFHack hack/scripts/internal/notify/notifications.lua L668 通知欄（count_units 單數；'%d %s%s'）
+{#1} agitated animals	{1} 隻躁動的動物	{1} 只躁动的动物		DFHack hack/scripts/internal/notify/notifications.lua L668 通知欄（count_units 複數）
+{#1} invader	入侵者 {1}	入侵者 {1}		DFHack hack/scripts/internal/notify/notifications.lua L675 通知欄（count_units 單數；'%d %s%s'）
+{#1} invaders	入侵者 {1}	入侵者 {1}		DFHack hack/scripts/internal/notify/notifications.lua L675 通知欄（count_units 複數）
+{#1} hostile	敵對者 {1}	敌对者 {1}		DFHack hack/scripts/internal/notify/notifications.lua L682 通知欄（count_units 單數；'%d %s%s'）
+{#1} hostiles	敵對者 {1}	敌对者 {1}		DFHack hack/scripts/internal/notify/notifications.lua L682 通知欄（count_units 複數）
+{#1} thieving or mischievous creature	{1} 隻偷竊或搗蛋的生物	{1} 只偷窃或捣乱的生物		DFHack hack/scripts/internal/notify/notifications.lua L689 通知欄（count_units 單數；'%d %s%s'）
+{#1} thieving or mischievous creatures	{1} 隻偷竊或搗蛋的生物	{1} 只偷窃或捣乱的生物		DFHack hack/scripts/internal/notify/notifications.lua L689 通知欄（count_units 複數）
+{#1} injured citizen	{1} 名居民受傷	{1} 名居民受伤		DFHack hack/scripts/internal/notify/notifications.lua L717 通知欄（count_units 單數；'%d %s%s'）
+{#1} injured citizens	{1} 名居民受傷	{1} 名居民受伤		DFHack hack/scripts/internal/notify/notifications.lua L717 通知欄（count_units 複數）
+{#1} injured citizen; no functional hospital!	{1} 名居民受傷；沒有可運作的醫院！	{1} 名居民受伤；没有可运作的医院！		DFHack hack/scripts/internal/notify/notifications.lua L218 通知欄（單數＋沒有醫院）
+{#1} injured citizens; no functional hospital!	{1} 名居民受傷；沒有可運作的醫院！	{1} 名居民受伤；没有可运作的医院！		DFHack hack/scripts/internal/notify/notifications.lua L218 通知欄（複數＋沒有醫院）
+{#1} group of citizens is stranded	{1} 群居民受困	{1} 群居民被困		DFHack hack/scripts/internal/notify/notifications.lua L265 通知欄（單數）
+{#1} groups of citizens are stranded	{1} 群居民受困	{1} 群居民被困		DFHack hack/scripts/internal/notify/notifications.lua L265 通知欄（複數）
+Wildlife: {%1}	野生動物：{1}	野生动物：{1}		DFHack hack/scripts/internal/notify/notifications.lua L236 通知欄：「數量 生物名」以逗號相接，清單由 lists.tsv 接
+task starvation: {#1} unclaimed job	工作缺人：{1} 項無人認領	工作缺人：{1} 项无人认领		DFHack hack/scripts/internal/notify/notifications.lua L728 通知欄（labormanager；單數）
+task starvation: {#1} unclaimed jobs	工作缺人：{1} 項無人認領	工作缺人：{1} 项无人认领		DFHack hack/scripts/internal/notify/notifications.lua L728 通知欄（複數）
+task starvation: {#1} unclaimed job (oldest: {2}, {#3} ticks)	工作缺人：{1} 項無人認領（最久：{2}，{3} 刻）	工作缺人：{1} 项无人认领（最久：{2}，{3} 刻）		DFHack hack/scripts/internal/notify/notifications.lua L731 通知欄（單數＋最久的工作名與刻數）
+task starvation: {#1} unclaimed jobs (oldest: {2}, {#3} ticks)	工作缺人：{1} 項無人認領（最久：{2}，{3} 刻）	工作缺人：{1} 项无人认领（最久：{2}，{3} 刻）		DFHack hack/scripts/internal/notify/notifications.lua L731 通知欄（複數＋最久的工作名與刻數）
+Build ID: {1}	建置 ID：{1}	构建 ID：{1}		DFHack hack/lua/plugins/overlay.lua L651 標題畫面版本資訊（一個 token）
+You're running DFHack {1}	你正在使用 DFHack {1}	你正在使用 DFHack {1}		DFHack hack/scripts/gui/launcher.lua L662 預設說明文字最後一段（版本號照原文）
+{1} (default)	{1}（預設）	{1}（默认）		DFHack hack/scripts/gui/mod-manager.lua L421 模組組合清單：預設組合名稱後綴
+Overwrite {1}?	要覆寫{1}嗎？	要覆盖{1}吗？		DFHack hack/scripts/gui/mod-manager.lua L451 確認框：組合名稱
+Delete {1}?	刪除{1}？	删除{1}？		DFHack hack/scripts/gui/mod-manager.lua L533 確認框：組合名稱
+*** Loaded mod list '{1}'!	*** 已載入模組清單「{1}」	*** 已加载模组列表“{1}”		DFHack hack/scripts/gui/mod-manager.lua L811 模組選擇畫面 overlay 通知；寬度不夠，省略驚嘆號

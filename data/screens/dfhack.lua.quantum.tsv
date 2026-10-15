@@ -1,0 +1,7 @@
+en	zh-Hant	zh-Hans	align	row	note
+Quantum	量子	量子	c		DFHack hack/scripts/gui/quantum.lua L99 視窗標題（與指令名同字，限定畫面）；寬度不足，只寫「量子」
+Single	單選	单选			DFHack hack/scripts/gui/quantum.lua L142 量子倉儲選項：供料區選擇
+Multi	多選	多选			DFHack hack/scripts/gui/quantum.lua L143 量子倉儲選項：供料區選擇
+Auto	自動	自动			DFHack hack/scripts/gui/quantum.lua L151 量子倉儲選項：指派礦車方式
+Order	下單	下单			DFHack hack/scripts/gui/quantum.lua L152 量子倉儲選項：指派礦車方式：用工作指令製作
+Manual	手動	手动			DFHack hack/scripts/gui/quantum.lua L153 量子倉儲選項：指派礦車方式

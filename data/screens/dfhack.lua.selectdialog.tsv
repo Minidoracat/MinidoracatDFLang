@@ -1,0 +1,7 @@
+en	zh-Hant	zh-Hans	align	row	note
+Shape	形狀	形状			DFHack hack/scripts/gui/tiletypes.lua L1314 選擇對話框「分類：」後的分類名
+Material	材料	材料			DFHack hack/scripts/gui/tiletypes.lua L1329 選擇對話框「分類：」後的分類名
+Special	特殊	特殊			DFHack hack/scripts/gui/tiletypes.lua L1344 選擇對話框「分類：」後的分類名
+Stone	石材	石材			DFHack hack/scripts/gui/tiletypes.lua L1359 選擇對話框「分類：」後的分類名
+Generated	生成的	生成的			DFHack hack/scripts/gui/tiletypes.lua L1753 選擇對話框「分類：」後的分類名
+none	無	无			DFHack hack/scripts/gui/tiletypes.lua L1740 石材清單第一項（不指定）

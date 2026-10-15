@@ -1,0 +1,21 @@
+en	zh-Hant	zh-Hans	align	row	note
+Sitemap	搜尋	搜索	c		DFHack hack/scripts/gui/sitemap.lua L20 視窗標題（綜合搜尋與定位工具；與指令名同字，限定畫面；寬度只放得下兩字）
+Keep	城堡	城堡			DFHack hack/scripts/gui/sitemap.lua L56 搜尋：場所類型（abstract_building_type KEEP）
+invader	入侵者	入侵者			DFHack hack/scripts/gui/sitemap.lua L126 搜尋：生物的身分
+caged invader	籠中入侵者	笼中入侵者			DFHack hack/scripts/gui/sitemap.lua L123 搜尋：生物的身分（關在籠子裡）
+hostile	敵對	敌对			DFHack hack/scripts/gui/sitemap.lua L126 搜尋：生物的身分
+caged hostile	籠中敵對	笼中敌对			DFHack hack/scripts/gui/sitemap.lua L123 搜尋：生物的身分（關在籠子裡）
+fort animal	要塞動物	要塞动物			DFHack hack/scripts/gui/sitemap.lua L126 搜尋：生物的身分
+caged fort animal	籠中要塞動物	笼中要塞动物			DFHack hack/scripts/gui/sitemap.lua L123 搜尋：生物的身分（關在籠子裡）
+fort member	要塞成員	要塞成员			DFHack hack/scripts/gui/sitemap.lua L126 搜尋：生物的身分
+caged fort member	籠中要塞成員	笼中要塞成员			DFHack hack/scripts/gui/sitemap.lua L123 搜尋：生物的身分（關在籠子裡）
+wildlife	野生動物	野生动物			DFHack hack/scripts/gui/sitemap.lua L126 搜尋：生物的身分
+caged wildlife	籠中野生動物	笼中野生动物			DFHack hack/scripts/gui/sitemap.lua L123 搜尋：生物的身分（關在籠子裡）
+visitor	訪客	访客			DFHack hack/scripts/gui/sitemap.lua L126 搜尋：生物的身分
+caged visitor	籠中訪客	笼中访客			DFHack hack/scripts/gui/sitemap.lua L123 搜尋：生物的身分（關在籠子裡）
+merchant	商人	商人			DFHack hack/scripts/gui/sitemap.lua L126 搜尋：生物的身分
+caged merchant	籠中商人	笼中商人			DFHack hack/scripts/gui/sitemap.lua L123 搜尋：生物的身分（關在籠子裡）
+merchant animal	商隊動物	商队动物			DFHack hack/scripts/gui/sitemap.lua L126 搜尋：生物的身分
+caged merchant animal	籠中商隊動物	笼中商队动物			DFHack hack/scripts/gui/sitemap.lua L123 搜尋：生物的身分（關在籠子裡）
+friendly	友善	友善			DFHack hack/scripts/gui/sitemap.lua L126 搜尋：生物的身分
+caged friendly	籠中友善	笼中友善			DFHack hack/scripts/gui/sitemap.lua L123 搜尋：生物的身分（關在籠子裡）

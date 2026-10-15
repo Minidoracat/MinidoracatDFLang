@@ -1,0 +1,3 @@
+en	zh-Hant	zh-Hans	align	row	note
+Autochop	自動伐木	自动伐木	c		DFHack hack/scripts/gui/autochop.lua L118 視窗標題（與指令名同字，限定畫面）
+Burrow	活動區	活动区			DFHack hack/scripts/gui/autochop.lua L182 自動伐木清單欄名

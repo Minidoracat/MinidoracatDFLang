@@ -410,7 +410,7 @@ pub struct Dict {
     sorted_keys: Vec<Vec<u8>>,
     /// 只在某些畫面套用的整句：原文 → [(畫面, 限定列, 譯文)]。同一個英文在不同畫面（或同畫面不同列）意思不同時用（見 screen_entry）。
     pub screens: HashMap<Vec<u8>, Vec<(String, Option<i32>, Entry)>>,
-    /// 單獨畫出的小寫單字照原文的畫面（screens 檔原文寫 `*` 的列，見 keeps_word）
+    /// 單獨畫出的全小寫字串照原文的畫面（screens 檔原文寫 `*` 的列，見 keeps_word）
     pub verbatim_screens: Vec<String>,
     pub rules: Vec<Rule>,
     /// 事件的原因、情境片語（字串檔與句型檔 align 寫 `tail`，見 strip_tail）：(原文, 譯文)，長的在前；含名字的放 tail_rules
@@ -550,7 +550,7 @@ impl Dict {
     }
 
     /// 依畫面套用的整句：`畫面<TAB>原文<TAB>譯文<TAB>對齊<TAB>限定列`，畫面是 DFHack 焦點字串的開頭（如 dwarfmode），
-    /// 限定列空白表示任何一列。原文寫 `*` 的列表示這個畫面上單獨畫出的小寫單字一律照原文（見 keeps_word）。
+    /// 限定列空白表示任何一列。原文寫 `*` 的列表示這個畫面上單獨畫出的全小寫字串一律照原文（見 keeps_word）。
     pub fn load_screens_tsv(&mut self, content: &str) -> LoadReport {
         let mut report = LoadReport { loaded: 0, bad_source: 0, missing_glyphs: 0 };
         for line in content.lines().filter(|l| !l.is_empty() && !l.starts_with('#')) {
@@ -592,12 +592,14 @@ impl Dict {
         list.iter().find(|(screen, row, _)| row.is_none_or(|r| r == y) && on_screen(focus, screen)).map(|(_, _, entry)| entry)
     }
 
-    /// 這個畫面上單獨畫出的小寫單字照原文、不查字典：交談選單把每個搜尋關鍵字分開畫（`duty`、`trade`），
-    /// 搜尋框只收英文，翻成中文反而對不上。
-    pub fn keeps_word(&self, key: &[u8], focus: &str) -> bool {
-        !key.is_empty()
-            && key.iter().all(u8::is_ascii_lowercase)
-            && self.verbatim_screens.iter().any(|screen| on_screen(focus, screen))
+    /// 這個畫面上單獨畫出的全小寫字串照原文、不查字典：交談選單把每個搜尋關鍵字分開畫（`duty`、`trade`），
+    /// 搜尋框只收英文，翻成中文反而對不上；DFHack 的指令清單（`reveal`、`spectate toggle`）是要照打的指令名。
+    /// 遊戲畫的字（`dfhack` 為 false）只看單字、不看 `dfhack/` 畫面：DFHack 視窗開在要塞上面時焦點是視窗的，底下遊戲畫的字照常翻；
+    /// DFHack 畫的字（true）另收以空白隔開的幾個字。
+    pub fn keeps_word(&self, key: &[u8], focus: &str, dfhack: bool) -> bool {
+        key.iter().any(u8::is_ascii_lowercase)
+            && key.iter().all(|&c| c.is_ascii_lowercase() || (dfhack && c == b' '))
+            && self.verbatim_screens.iter().any(|screen| (dfhack || !screen.starts_with("dfhack/")) && on_screen(focus, screen))
     }
 
     /// 句型規則檔，格式同 load_tsv；依檔案順序比對，先寫的優先，但清單句型一律最先，沒有英文字的樣板一律排在有英文字的後面，
@@ -1132,13 +1134,17 @@ mod tests {
     }
 
     #[test]
-    fn verbatim_screens_keep_lone_lowercase_words() {
+    fn verbatim_screens_keep_lowercase_strings() {
         let mut d = Dict::default();
-        d.load_screens_tsv("dungeonmode/Conversation\t*\t*\t\t\n");
-        assert!(d.keeps_word(b"duty", "dungeonmode/Conversation"));
-        assert!(!d.keeps_word(b"Duty", "dungeonmode/Conversation"), "大寫開頭的選項名照常翻");
-        assert!(!d.keeps_word(b"ask about", "dungeonmode/Conversation"), "只管單獨的一個字");
-        assert!(!d.keeps_word(b"duty", "dwarfmode/Default"), "別的畫面照常翻");
+        d.load_screens_tsv("dungeonmode/Conversation\t*\t*\t\t\ndfhack/lua/launcher\t*\t*\t\t\n");
+        let conv = "dungeonmode/Conversation";
+        assert!(d.keeps_word(b"duty", conv, false));
+        assert!(!d.keeps_word(b"Duty", conv, false), "大寫開頭的選項名照常翻");
+        assert!(!d.keeps_word(b"ask about", conv, false), "遊戲畫的字只管單獨的一個字");
+        assert!(d.keeps_word(b"spectate toggle", "dfhack/lua/launcher", true), "DFHack 畫的全小寫指令連空白也照原文");
+        assert!(!d.keeps_word(b"run 3 times", "dfhack/lua/launcher", true), "夾數字、標點的照常查");
+        assert!(!d.keeps_word(b"rope", "dfhack/lua/launcher", false), "DFHack 視窗開在上面時，底下遊戲畫的字照常翻");
+        assert!(!d.keeps_word(b"duty", "dwarfmode/Default", false), "別的畫面照常翻");
     }
 
     #[test]

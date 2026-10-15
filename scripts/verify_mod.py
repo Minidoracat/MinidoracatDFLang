@@ -105,8 +105,8 @@ def main() -> int:
         check(not headers and not bad_cols, f"{kind} 欄位（{len(files)} 檔、{len(rows)} 條）", headers + bad_cols)
         data[kind] = [{**r, "file": f"{kind}/{r['file']}"} for r in rows if None not in r.values() and None not in r]
     rows = [r for kind in KINDS for r in data[kind]]
-    bad_screens = [r for r in sorted({r["file"] for r in data["screens"]}) if not re.fullmatch(r"screens/[A-Za-z_][\w.]*\.tsv", r)]
-    check(not bad_screens, "data/screens 檔名是畫面（英數、底線，. 代表 /）", bad_screens)
+    bad_screens = [r for r in sorted({r["file"] for r in data["screens"]}) if not re.fullmatch(r"screens/[A-Za-z_][\w.-]*\.tsv", r)]
+    check(not bad_screens, "data/screens 檔名是畫面（英數、底線、連字號，. 代表 /）", bad_screens)
     bad_rows = [f"{r['file']}: {r['en']!r} row={r['row']!r}" for r in data["screens"] if not re.fullmatch(r"\d*", r["row"])]
     check(not bad_rows, "data/screens 的 row 是空白或非負整數", bad_rows)
     # 世界生成名稱的字表（見引擎 names.rs）：一個字的一個詞性一列，繁簡都要有

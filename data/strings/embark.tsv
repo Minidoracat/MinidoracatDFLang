@@ -222,3 +222,4 @@ War dog	戰犬	战犬		出發準備的動物清單：受過戰鬥訓練的狗（
 Hunting dog	獵犬	猎犬		出發準備的動物清單：受過狩獵訓練的狗
 war dog	戰犬	战犬		同 War dog，公告與報告裡小寫（the war dog）
 hunting dog	獵犬	猎犬		同 Hunting dog，公告與報告裡小寫
+Difficulty	難度	难度		出發準備（setupdwarfgame）的難度設定標題（addst_flag）

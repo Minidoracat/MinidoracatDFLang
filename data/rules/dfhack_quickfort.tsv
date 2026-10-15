@@ -1,0 +1,19 @@
+en	zh-Hant	zh-Hans	align	note
+cursor on: {1}	游標位置：{1}	光标位置：{1}		DFHack hack/scripts/gui/quickfort.lua L207 藍圖說明框（WrappedLabel）：藍圖沒有註解時只有起點說明，{1} 是藍圖作者寫的文字
+{1}; cursor on: {2}	{1}；游標位置：{2}	{1}；光标位置：{2}		DFHack hack/scripts/gui/quickfort.lua L207 藍圖說明框（WrappedLabel）：註解；起點說明，{1}{2} 是藍圖作者寫的文字
+{#1} order(s) would be enqueued for	將排入 {1} 道工作指令	将加入 {1} 个工作订单		DFHack hack/scripts/gui/quickfort.lua L750 工作指令對話框第一段（預覽；下一段是藍圖路徑）；寫在 enqueued for 前
+{#1} order(s) enqueued for	已排入 {1} 道工作指令	已加入 {1} 个工作订单		DFHack hack/scripts/gui/quickfort.lua L750 工作指令對話框第一段（下一段是藍圖路徑）
+{1}.csv -n {2}.	藍圖：{1}.csv -n {2}	蓝图：{1}.csv -n {2}		DFHack hack/scripts/gui/quickfort.lua L752 工作指令對話框第二段：藍圖路徑與段落名（format_command）＋句號；整段 :wrap 過，每段都要翻得出來，譯文補「藍圖：」；寬度例外：整段經 string:wrap(73) 由引擎依中文重新換行，路徑本身不翻，比原文多「藍圖：」
+{1}.xlsx -n {2}.	藍圖：{1}.xlsx -n {2}	蓝图：{1}.xlsx -n {2}		DFHack hack/scripts/gui/quickfort.lua L752 同上（.xlsx 藍圖）；寬度例外：整段經 string:wrap(73) 由引擎依中文重新換行，路徑本身不翻，比原文多「藍圖：」
+{1}.csv.	藍圖：{1}.csv	蓝图：{1}.csv		DFHack hack/scripts/gui/quickfort.lua L752 同上（沒有段落名）；寬度例外：整段經 string:wrap(73) 由引擎依中文重新換行，路徑本身不翻，比原文多「藍圖：」
+{1}.xlsx.	藍圖：{1}.xlsx	蓝图：{1}.xlsx		DFHack hack/scripts/gui/quickfort.lua L752 同上（.xlsx、沒有段落名）；寬度例外：整段經 string:wrap(73) 由引擎依中文重新換行，路徑本身不翻，比原文多「藍圖：」
+Ordered {%1}: {#2}	已排入{1}：{2}	已安排{1}：{2}		DFHack hack/scripts/internal/quickfort/orders.lua L165 → DFHack hack/scripts/gui/quickfort.lua L759 工作指令對話框每行（原文前有兩個空白）：物品標籤與數量
+Would order {%1}: {#2}	將排入{1}：{2}	将安排{1}：{2}		DFHack hack/scripts/internal/quickfort/orders.lua L167 → DFHack hack/scripts/gui/quickfort.lua L759 工作指令對話框每行（預覽）
+Comment: {1}	註解：{1}	注释：{1}		DFHack hack/scripts/gui/blueprint.lua L241 重播起點註解（TooltipLabel），{1} 是玩家輸入的文字
+Add: {%1}	新增 {1}	添加 {1}		DFHack hack/scripts/gui/design.lua L652-655 按鍵說明，{1} 是 internal/design/shapes 額外點標籤（gui2 批）；5 格放不下「新增：」
+Area: {#1}x{#2}x{#3} ({#4} tiles)	範圍：{1}x{2}x{3}（{4} 格）	范围：{1}x{2}x{3}（{4} 格）		DFHack hack/scripts/gui/design.lua L880 範圍（WrappedLabel）
+Area: {#1}x{#2}x{#3} ({#4} tile)	範圍：{1}x{2}x{3}（{4} 格）	范围：{1}x{2}x{3}（{4} 格）		DFHack hack/scripts/gui/design.lua L880 範圍（WrappedLabel），單數
+First Mark ({#1}): {#2}, {#3}, {#4}	首點（{1}）：{2}, {3}, {4}	首点（{1}）：{2}, {3}, {4}		DFHack hack/scripts/gui/design.lua L890 座標（WrappedLabel 一段）
+Last Mark ({#1}): {#2}, {#3}, {#4}	末點（{1}）：{2}, {3}, {4}	末点（{1}）：{2}, {3}, {4}		DFHack hack/scripts/gui/design.lua L898 座標（WrappedLabel 一段）
+Mouse: {#1}, {#2}, {#3}	滑鼠：{1}, {2}, {3}	鼠标：{1}, {2}, {3}		DFHack hack/scripts/gui/design.lua L905 座標（WrappedLabel 一段）
+Mirror Point: {#1}, {#2}, {#3}	鏡像點：{1}, {2}, {3}	镜像点：{1}, {2}, {3}		DFHack hack/scripts/gui/design.lua L910 座標（WrappedLabel 一段）

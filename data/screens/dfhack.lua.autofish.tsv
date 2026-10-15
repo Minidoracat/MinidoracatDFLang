@@ -1,0 +1,3 @@
+en	zh-Hant	zh-Hans	align	row	note
+not	沒	没			DFHack hack/scripts/gui/autofish.lua L80 狀態列紅字（原文 "not "）：目前：沒 在捕魚。全域 Not 是「非」，這裡依畫面
+Currently	目前：	目前：			DFHack hack/scripts/gui/autofish.lua L102 狀態列開頭（原文 "Currently "，後接 not 與 fishing.）；放依畫面譯文：全域的 Currently 會經大小寫退回搶走人物頁的「He is currently more…」

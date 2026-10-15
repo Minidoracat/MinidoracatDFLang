@@ -1,0 +1,5 @@
+en	zh-Hant	zh-Hans	align	row	note
+Area	範圍	范围			DFHack hack/scripts/gui/liquids.lua L93 繪製方式選項（原文 "Area "）
+Click	點選	点击			DFHack hack/scripts/gui/liquids.lua L94 繪製方式選項
+Drag	拖曳	拖动			DFHack hack/scripts/gui/liquids.lua L95 繪製方式選項（原文 "Drag "）
+Set	設定	设定			DFHack hack/scripts/gui/liquids.lua L107/L126 模式選項；寬度例外：原文 "Set   " 補空白到 6 格，引擎以含空白的 6 格判斷，畫得下

@@ -1,0 +1,5 @@
+en	zh-Hant	zh-Hans	align	row	note
+Paint	塗刷	涂刷			DFHack hack/scripts/gui/tiletypes.lua L66 地塊類型編輯的模式選項（Mode:）
+Replace	取代	替换			DFHack hack/scripts/gui/tiletypes.lua L67 地塊類型編輯的模式選項（Mode:）
+Fill	填補	填补			DFHack hack/scripts/gui/tiletypes.lua L68 地塊類型編輯的模式選項（Mode:）
+Tiletypes	地塊類型	地块类型	c		DFHack hack/scripts/gui/tiletypes.lua L1426 視窗標題（與指令名同字，限定畫面）

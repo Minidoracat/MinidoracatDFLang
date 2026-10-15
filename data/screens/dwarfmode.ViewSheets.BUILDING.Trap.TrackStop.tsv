@@ -1,0 +1,3 @@
+en	zh-Hant	zh-Hans	align	row	note
+Dump	傾倒	倾倒			DFHack hack/scripts/trackstop.lua L128 軌道停靠站 overlay：傾倒方向
+Friction	摩擦力	摩擦力			DFHack hack/scripts/trackstop.lua L141 軌道停靠站 overlay：摩擦力

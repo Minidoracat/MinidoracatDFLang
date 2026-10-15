@@ -1,0 +1,10 @@
+en	zh-Hant	zh-Hans	align	row	note
+*	*	*			這個畫面單獨畫出的全小寫字串照英文：工具名（reveal、zone、burrow、tailor）剛好是字典字詞時不翻
+Automation	自動化	自动化			DFHack hack/scripts/gui/control-panel.lua 分頁標籤（TabBar；通用字只在控制面板套用）
+Bug Fixes	錯誤修正	错误修正			DFHack hack/scripts/gui/control-panel.lua 分頁標籤（TabBar；通用字只在控制面板套用）
+Gameplay	遊戲玩法	游戏玩法			DFHack hack/scripts/gui/control-panel.lua 分頁標籤（TabBar；通用字只在控制面板套用）
+UI Overlays	介面疊加	界面叠加			DFHack hack/scripts/gui/control-panel.lua 分頁標籤（TabBar；通用字只在控制面板套用）
+Preferences	偏好設定	偏好设置			DFHack hack/scripts/gui/control-panel.lua 分頁標籤（TabBar；通用字只在控制面板套用）
+Enabled	已啟用	已启用			DFHack hack/scripts/gui/control-panel.lua 分頁標籤（TabBar；通用字只在控制面板套用）
+Autostart	自動啟動	自动启动			DFHack hack/scripts/gui/control-panel.lua 分頁標籤（TabBar；通用字只在控制面板套用）
+Save	儲存	保存			DFHack hack/scripts/gui/control-panel.lua L705 偏好設定編輯視窗的按鈕（儲存設定）；全域 Save 是遊戲的「存檔」

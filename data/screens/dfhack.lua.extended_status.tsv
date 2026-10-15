@@ -1,0 +1,5 @@
+en	zh-Hant	zh-Hans	align	row	note
+Beds	床	床			DFHack hack/scripts/gui/extended-status.lua L128 臥室狀態的統計項目（後接 ": " 數字）
+Bedrooms	臥室	卧室			DFHack hack/scripts/gui/extended-status.lua L128 臥室狀態的統計項目（後接 ": " 數字）
+Units	單位	单位			DFHack hack/scripts/gui/extended-status.lua L128 臥室狀態的統計項目（後接 ": " 數字）
+queued	已排入	已排入			DFHack hack/scripts/gui/extended-status.lua L199 臥室狀態：數字後的已排入床數（原文 " queued"）

@@ -1,0 +1,5 @@
+en	zh-Hant	zh-Hans	align	row	note
+Note	筆記	笔记	c		DFHack hack/scripts/internal/notes/note_manager.lua L28 視窗標題；通用單字，只在筆記編輯視窗套用
+Comment	備註	备注			DFHack hack/scripts/internal/notes/note_manager.lua L46 快捷鍵說明；通用單字，只在筆記編輯視窗套用
+Save	儲存	保存			DFHack hack/scripts/internal/notes/note_manager.lua L66 快捷鍵說明：儲存筆記（全域 Save 是存檔）；只在筆記編輯視窗套用
+Create	建立	创建			DFHack hack/scripts/internal/notes/note_manager.lua L76 快捷鍵說明；通用單字，只在筆記編輯視窗套用

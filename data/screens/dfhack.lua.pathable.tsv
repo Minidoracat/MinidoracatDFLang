@@ -1,0 +1,3 @@
+en	zh-Hant	zh-Hans	align	row	note
+Hidden	未探明	未探明			DFHack hack/scripts/gui/pathable.lua L62 通行群組欄：游標所在格尚未探明；通用單字，只在通行性視窗套用
+Depot	貿易	贸易			DFHack hack/scripts/gui/pathable.lua L158 分頁標籤；通用單字，只在通行性視窗套用

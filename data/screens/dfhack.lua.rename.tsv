@@ -1,0 +1,4 @@
+en	zh-Hant	zh-Hans	align	row	note
+Random	隨機	随机			DFHack hack/scripts/gui/rename.lua L668 名字部分旁的〔Random〕按鈕（方括號另畫）；通用單字，只在改名視窗套用
+Adjective	形容詞	形容词			DFHack hack/scripts/gui/rename.lua L798 字表詞性欄；通用單字，只在改名視窗套用
+Prefix	字首	前缀			DFHack hack/scripts/gui/rename.lua L799 字表詞性欄；通用單字，只在改名視窗套用

@@ -59,6 +59,9 @@ pub unsafe extern "C" fn luaopen_dflang(l: lua::State) -> c_int {
         lua::set_fn(l, c"translate", translate);
         lua::set_fn(l, c"log_misses", log_misses);
         lua::set_fn(l, c"update_texpos", update_texpos);
+        lua::set_fn(l, c"dh_translate", dh_translate);
+        lua::set_fn(l, c"dh_stamp", dh_stamp);
+        lua::set_fn(l, c"dh_wrap", dh_wrap);
     }
     1
 }
@@ -70,6 +73,43 @@ unsafe fn fail(l: lua::State, msg: &str) -> c_int {
         lua::push_str(l, msg);
     }
     2
+}
+
+/// dh_translate(text, y)：DFHack 要畫的一段字（CP437）有譯文就回傳影子字串，否則 nil（見 hooks::dfhack_translate）。
+unsafe extern "C" fn dh_translate(l: lua::State) -> c_int {
+    unsafe {
+        let y = lua::arg_int(l, 2).unwrap_or(-1) as i32;
+        match lua::arg_bytes(l, 1).and_then(|text| hooks::dfhack_translate(text, y)) {
+            Some(shadow) => lua::push_bytes(l, &shadow),
+            None => lua::push_nil(l),
+        }
+        1
+    }
+}
+
+/// dh_stamp(gps 位址, x, y, 頂層 0/1)：貼上 dh_translate 查到的字圖（見 hooks::dfhack_stamp）。
+unsafe extern "C" fn dh_stamp(l: lua::State) -> c_int {
+    unsafe {
+        if let (Some(gps), Some(x), Some(y), Some(top)) = (lua::arg_int(l, 1), lua::arg_int(l, 2), lua::arg_int(l, 3), lua::arg_int(l, 4)) {
+            hooks::dfhack_stamp(gps as usize, x as i32, y as i32, top != 0);
+        }
+        0
+    }
+}
+
+/// dh_wrap(整段英文, 寬幾格, {英文行...})：DFHack WrappedLabel 的段落有譯文就登記每一行要畫的中文（見 hooks::dfhack_wrap）。
+unsafe extern "C" fn dh_wrap(l: lua::State) -> c_int {
+    unsafe {
+        let ok = match (lua::arg_bytes(l, 1).map(<[u8]>::to_vec), lua::arg_int(l, 2), lua::arg_type(l, 3) == lua::TTABLE) {
+            (Some(text), Some(width), true) => {
+                let lines: Option<Vec<Vec<u8>>> = (1..=lua::len(l, 3) as i64).map(|i| lua::index_bytes(l, 3, i)).collect();
+                lines.is_some_and(|lines| hooks::dfhack_wrap(&text, width.max(0) as usize, &lines))
+            }
+            _ => false,
+        };
+        lua::push_bool(l, ok);
+        1
+    }
 }
 
 unsafe fn ok(l: lua::State) -> c_int {

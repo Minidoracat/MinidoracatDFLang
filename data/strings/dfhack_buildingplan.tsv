@@ -1,0 +1,146 @@
+en	zh-Hant	zh-Hans	align	note
+show Planner	顯示規劃器	显示规划器		DFHack hack/lua/plugins/buildingplan/planneroverlay.lua L655 最小化列按鈕（原文前後各一空白）
+hide Planner	隱藏規劃器	隐藏规划器		DFHack hack/lua/plugins/buildingplan/planneroverlay.lua L664 最小化列按鈕（原文前後各一空白）
+No items required.	不需要物品。	不需要物品。		DFHack hack/lua/plugins/buildingplan/planneroverlay.lua L732
+[any material]	[任何材料]	[任意材料]	r	DFHack hack/lua/plugins/buildingplan/planneroverlay.lua L456 物品列右側篩選摘要（rjustify 寬 19）
+[impossible filter]	[篩選條件無解]	[筛选条件无解]	r	DFHack hack/lua/plugins/buildingplan/planneroverlay.lua L335 篩選摘要：選了材料又改耐熱，沒有材料符合
+[clear]	[清除]	[清除]		DFHack hack/lua/plugins/buildingplan/planneroverlay.lua L391 清除該物品的篩選
+Number of weapons:	武器數量：	武器数量：		DFHack hack/lua/plugins/buildingplan/planneroverlay.lua L707 武器陷阱／尖刺陷阱
+Hollow area:	中空區域：	中空区域：		DFHack hack/lua/plugins/buildingplan/planneroverlay.lua L755 建造物框選只建外框
+Top stair type:	頂層樓梯類型：	顶层楼梯类型：		DFHack hack/lua/plugins/buildingplan/planneroverlay.lua L766 多層樓梯（原文結尾三個空白）
+Bottom Stair Type:	底層樓梯類型：	底层楼梯类型：		DFHack hack/lua/plugins/buildingplan/planneroverlay.lua L778 多層樓梯
+Single level stair:	單層樓梯：	单层楼梯：		DFHack hack/lua/plugins/buildingplan/planneroverlay.lua L790
+UpDown	上下	上下		DFHack hack/lua/plugins/buildingplan/planneroverlay.lua L770 樓梯類型選項（上下樓梯）
+Engraved only:	限已雕刻：	限已雕刻：		DFHack hack/lua/plugins/buildingplan/planneroverlay.lua L805 石板
+Empty only:	限空的：	限空的：		DFHack hack/lua/plugins/buildingplan/planneroverlay.lua L815 籠子
+Do now:	立即：	立即：		DFHack hack/lua/plugins/buildingplan/planneroverlay.lua L827 工作立即執行（do_now 旗標）；原文 7 格
+Queue order	下工作指令	下工作订单		DFHack hack/lua/plugins/buildingplan/planneroverlay.lua L840 缺物品時排入工作指令
+Edit filter	編輯篩選	编辑筛选		DFHack hack/lua/plugins/buildingplan/planneroverlay.lua L852
+Set filter	設定篩選	设置筛选		DFHack hack/lua/plugins/buildingplan/planneroverlay.lua L852
+Delete filter	刪除篩選	删除筛选		DFHack hack/lua/plugins/buildingplan/planneroverlay.lua L859、filterselection.lua L240
+Show favorites	顯示我的最愛	显示收藏		DFHack hack/lua/plugins/buildingplan/planneroverlay.lua L872
+Hide favorites	隱藏我的最愛	隐藏收藏		DFHack hack/lua/plugins/buildingplan/planneroverlay.lua L873
+Choose items:	選擇物品：	选择物品：		DFHack hack/lua/plugins/buildingplan/planneroverlay.lua L882 label_below
+With filters	依篩選條件	按筛选条件		DFHack hack/lua/plugins/buildingplan/planneroverlay.lua L885 選擇物品方式
+pick manually	手動挑選	手动挑选	inner	DFHack hack/lua/plugins/buildingplan/planneroverlay.lua L889 只出現在 Last used ({1}) 的括號裡
+Manually	手動	手动		DFHack hack/lua/plugins/buildingplan/planneroverlay.lua L893
+Building safety:	建築耐熱：	建筑耐热：		DFHack hack/lua/plugins/buildingplan/planneroverlay.lua L904 選項 Any／Magma／Fire
+OK to build	可以建造	可以建造		DFHack hack/lua/plugins/buildingplan/planneroverlay.lua L943 擺放無錯誤
+: Prev/	：上一/	: 上一/		DFHack hack/lua/plugins/buildingplan/planneroverlay.lua L956 Shift+q 的說明（key_sep 是 \0），後接 q 鍵與 next item
+next item	下一項	下一项		DFHack hack/lua/plugins/buildingplan/planneroverlay.lua L966 接在 q 鍵後
+next/previous slot	下一個/上一個欄位	下一个/上一个栏位		DFHack hack/lua/plugins/buildingplan/planneroverlay.lua L1029 我的最愛欄位切換
+set/apply selected	儲存/套用所選	保存/应用所选		DFHack hack/lua/plugins/buildingplan/planneroverlay.lua L1037 我的最愛：空欄儲存目前篩選，有內容時套用
+Shift+click to edit the label of a favorite	Shift+點選可編輯我的最愛名稱	Shift+点击可编辑收藏名称		DFHack hack/lua/plugins/buildingplan/planneroverlay.lua L1044 TooltipLabel
+Shows the building planner interface panel when building buildings.	建造時顯示建築規劃器介面。	建造时显示建筑规划器界面。		DFHack hack/lua/plugins/buildingplan/planneroverlay.lua L628 overlay desc（控制面板 Overlays 分頁說明）
+Mechanism	機械裝置	机械装置		DFHack hack/lua/plugins/buildingplan.lua L95 get_desc 物品類別名（plural 由呼叫端加 s；名稱照遊戲既有譯名）
+Building material	建材	建材		DFHack hack/lua/plugins/buildingplan.lua L95 get_desc 物品類別名（plural 由呼叫端加 s；名稱照遊戲既有譯名）
+Building materials	建材	建材		DFHack hack/lua/plugins/buildingplan.lua L95 get_desc 物品類別名（plural 由呼叫端加 s；名稱照遊戲既有譯名）
+Magma-safe material	耐熔岩建材	耐熔岩建材		DFHack hack/lua/plugins/buildingplan.lua L95 get_desc 物品類別名（plural 由呼叫端加 s；名稱照遊戲既有譯名）
+Magma-safe materials	耐熔岩建材	耐熔岩建材		DFHack hack/lua/plugins/buildingplan.lua L95 get_desc 物品類別名（plural 由呼叫端加 s；名稱照遊戲既有譯名）
+Fire-safe material	耐火建材	耐火建材		DFHack hack/lua/plugins/buildingplan.lua L95 get_desc 物品類別名（plural 由呼叫端加 s；名稱照遊戲既有譯名）
+Fire-safe materials	耐火建材	耐火建材		DFHack hack/lua/plugins/buildingplan.lua L95 get_desc 物品類別名（plural 由呼叫端加 s；名稱照遊戲既有譯名）
+Weaponrack	武器架	武器架		DFHack hack/lua/plugins/buildingplan.lua L95 get_desc 物品類別名（plural 由呼叫端加 s；名稱照遊戲既有譯名）
+Weaponracks	武器架	武器架		DFHack hack/lua/plugins/buildingplan.lua L95 get_desc 物品類別名（plural 由呼叫端加 s；名稱照遊戲既有譯名）
+Armorstand	盔甲架	盔甲架		DFHack hack/lua/plugins/buildingplan.lua L95 get_desc 物品類別名（plural 由呼叫端加 s；名稱照遊戲既有譯名）
+Armorstands	盔甲架	盔甲架		DFHack hack/lua/plugins/buildingplan.lua L95 get_desc 物品類別名（plural 由呼叫端加 s；名稱照遊戲既有譯名）
+Animaltrap	捕獸器	捕兽器		DFHack hack/lua/plugins/buildingplan.lua L95 get_desc 物品類別名（plural 由呼叫端加 s；名稱照遊戲既有譯名）
+Animaltraps	捕獸器	捕兽器		DFHack hack/lua/plugins/buildingplan.lua L95 get_desc 物品類別名（plural 由呼叫端加 s；名稱照遊戲既有譯名）
+Small, cut gem	切割寶石	切割宝石		DFHack hack/lua/plugins/buildingplan.lua L95 get_desc 物品類別名（plural 由呼叫端加 s；名稱照遊戲既有譯名）
+Small, cut gems	切割寶石	切割宝石		DFHack hack/lua/plugins/buildingplan.lua L95 get_desc 物品類別名（plural 由呼叫端加 s；名稱照遊戲既有譯名）
+Screw	螺旋	螺旋		DFHack hack/lua/plugins/buildingplan.lua L95 get_desc 物品類別名（plural 由呼叫端加 s；名稱照遊戲既有譯名）
+Screws	螺旋	螺旋		DFHack hack/lua/plugins/buildingplan.lua L95 get_desc 物品類別名（plural 由呼叫端加 s；名稱照遊戲既有譯名）
+Place offering	供奉處	供奉处		DFHack hack/lua/plugins/buildingplan.lua L95 get_desc 物品類別名（plural 由呼叫端加 s；名稱照遊戲既有譯名）
+Place offerings	供奉處	供奉处		DFHack hack/lua/plugins/buildingplan.lua L95 get_desc 物品類別名（plural 由呼叫端加 s；名稱照遊戲既有譯名）
+Catapult part	投石機零件	投石机零件		DFHack hack/lua/plugins/buildingplan.lua L95 get_desc 物品類別名（plural 由呼叫端加 s；名稱照遊戲既有譯名）
+Ballista part	弩砲零件	弩炮零件		DFHack hack/lua/plugins/buildingplan.lua L95 get_desc 物品類別名（plural 由呼叫端加 s；名稱照遊戲既有譯名）
+Bolt thrower part	弩箭機零件	弩箭机零件		DFHack hack/lua/plugins/buildingplan.lua L95 get_desc 物品類別名（plural 由呼叫端加 s；名稱照遊戲既有譯名）
+Boxs	盒子	盒子		DFHack hack/lua/plugins/buildingplan.lua L95 get_desc 物品類別名（plural 由呼叫端加 s；名稱照遊戲既有譯名）
+Cabinets	櫥櫃	橱柜		DFHack hack/lua/plugins/buildingplan.lua L95 get_desc 物品類別名（plural 由呼叫端加 s；名稱照遊戲既有譯名）
+Traction benchs	牽引床	牵引床		DFHack hack/lua/plugins/buildingplan.lua L95 get_desc 物品類別名（plural 由呼叫端加 s；名稱照遊戲既有譯名）
+Nest boxs	巢箱	巢箱		DFHack hack/lua/plugins/buildingplan.lua L95 get_desc 物品類別名（plural 由呼叫端加 s；名稱照遊戲既有譯名）
+Bar	錠	锭		DFHack hack/lua/plugins/buildingplan.lua L95 get_desc 物品類別名（plural 由呼叫端加 s；名稱照遊戲既有譯名）
+Choose filters	選擇篩選條件	选择筛选条件	c	DFHack hack/lua/plugins/buildingplan/filterselection.lua L547 視窗標題
+Quality and materials	品質與材料	品质与材料		DFHack hack/lua/plugins/buildingplan/filterselection.lua L561 分頁
+Global settings	全域設定	全局设置		DFHack hack/lua/plugins/buildingplan/filterselection.lua L562 分頁
+Current filter:	目前篩選：	当前筛选：		DFHack hack/lua/plugins/buildingplan/filterselection.lua L70
+Hide unavailable:	隱藏無庫存：	隐藏无库存：		DFHack hack/lua/plugins/buildingplan/filterselection.lua L92
+Item quality	物品品質	物品品质	c	DFHack hack/lua/plugins/buildingplan/filterselection.lua L147 框標題
+Decorated only:	限有裝飾：	限有装饰：		DFHack hack/lua/plugins/buildingplan/filterselection.lua L153
+Well Crafted	精工	精工		DFHack hack/lua/plugins/buildingplan/filterselection.lua L170 品質（同遊戲 well-crafted）；術語例外：well
+Finely Crafted	精良	精良		DFHack hack/lua/plugins/buildingplan/filterselection.lua L171 品質（同遊戲 finely-crafted）
+Invert selection	反向選取	反向选择		DFHack hack/lua/plugins/buildingplan/filterselection.lua L233
+These options will affect the selection of "Generic Materials" for all future buildings.	這些選項會影響之後所有建築選用「通用材料」的方式。	这些选项会影响之后所有建筑选用“通用材料”的方式。		DFHack hack/lua/plugins/buildingplan/filterselection.lua L467 WrappedLabel
+Multi-rebuild	多格重建	多格重建		DFHack hack/lua/plugins/buildingplan/filterselection.lua L511 框選時也在已有建造物的格子上規劃
+Any Block	任何磚塊	任意砖块		DFHack hack/lua/plugins/buildingplan/filterselection.lua L298 目前篩選摘要（耐熱＋物品類別）；全域 Block 是格擋，這裡寫死
+Magma safe Block	耐熔岩磚塊	耐熔岩砖块		DFHack hack/lua/plugins/buildingplan/filterselection.lua L298 目前篩選摘要（耐熱＋物品類別）；全域 Block 是格擋，這裡寫死
+Fire safe Block	耐火磚塊	耐火砖块		DFHack hack/lua/plugins/buildingplan/filterselection.lua L298 目前篩選摘要（耐熱＋物品類別）；全域 Block 是格擋，這裡寫死
+Choose items	選擇物品	选择物品	c	DFHack hack/lua/plugins/buildingplan/itemselection.lua L74 視窗標題
+Select up to 1 item (	最多選 1 件物品（已選	最多选 1 件物品（已选		DFHack hack/lua/plugins/buildingplan/itemselection.lua L103 後接已選數量與 selected)
+selected)	件）	件）		DFHack hack/lua/plugins/buildingplan/itemselection.lua L105 原文開頭一個空白；接在已選數量後
+Autoselect	自動選取	自动选择	c	DFHack hack/lua/plugins/buildingplan/itemselection.lua L113 按鈕
+Recently used	最近使用	最近使用		DFHack hack/lua/plugins/buildingplan/itemselection.lua L157 排序選項
+Use one	用一個	用一个		DFHack hack/lua/plugins/buildingplan/itemselection.lua L189
+Use one fewer	少用一個	少用一个		DFHack hack/lua/plugins/buildingplan/itemselection.lua L200
+Use all/none	全用/全不用	全用/全不用		DFHack hack/lua/plugins/buildingplan/itemselection.lua L213
+Adds mechanism selection capabilities to the link lever/pressure plate screens.	在連結拉桿／壓力板的畫面加入機械裝置選擇。	在连接拉杆/压力板的界面加入机械装置选择。		DFHack hack/lua/plugins/buildingplan/mechanisms.lua L16 overlay desc
+Mechanism safety:	機械裝置耐熱：	机械装置耐热：		DFHack hack/lua/plugins/buildingplan/mechanisms.lua L39
+Lever:	拉桿：	拉杆：		DFHack hack/lua/plugins/buildingplan/mechanisms.lua L30 拉桿端機械裝置耐熱
+Plate:	壓板：	压板：		DFHack hack/lua/plugins/buildingplan/mechanisms.lua L27 壓力板端；原文 6 格，寬度剛好
+Target:	目標：	目标：		DFHack hack/lua/plugins/buildingplan/mechanisms.lua L58 目標建築端
+No any safe mechanisms available	沒有可用的機械裝置	没有可用的机械装置		DFHack hack/lua/plugins/buildingplan/itemselection.lua L29 get_item_description（安全選項 Any 轉小寫）
+No magma safe mechanisms available	沒有可用的耐熔岩機械裝置	没有可用的耐熔岩机械装置		DFHack hack/lua/plugins/buildingplan/itemselection.lua L29
+No fire safe mechanisms available	沒有可用的耐火機械裝置	没有可用的耐火机械装置		DFHack hack/lua/plugins/buildingplan/itemselection.lua L29
+Any mechanism	任何機械裝置	任意机械装置		DFHack hack/lua/plugins/buildingplan/mechanisms.lua L181 選擇物品視窗的物品類別
+Magma safe mechanism	耐熔岩機械裝置	耐熔岩机械装置		DFHack hack/lua/plugins/buildingplan/mechanisms.lua L181
+Fire safe mechanism	耐火機械裝置	耐火机械装置		DFHack hack/lua/plugins/buildingplan/mechanisms.lua L181
+Adds information to planned buildings about what materials are still needed.	在規劃中的建築顯示還缺哪些材料。	在规划中的建筑显示还缺哪些材料。		DFHack hack/lua/plugins/buildingplan/inspectoroverlay.lua L64 overlay desc
+Waiting for items:	等待物品：	等待物品：		DFHack hack/lua/plugins/buildingplan/inspectoroverlay.lua L75
+Item attached	已取得物品	已取得物品		DFHack hack/lua/plugins/buildingplan/inspectoroverlay.lua L46
+make top priority	設為最優先	设为最优先		DFHack hack/lua/plugins/buildingplan/inspectoroverlay.lua L93
+Allows unlinking mechanisms and pulling linked levers from buildings.	可在建築上斷開機械裝置連結，並拉動已連結的拉桿。	可在建筑上断开机械装置连接，并拉动已连接的拉杆。		DFHack hack/lua/plugins/buildingplan/unlink_mechanisms.lua L186 overlay desc
+Allows freeing unlinked mechanisms from buildings.	可從建築卸下未連結的機械裝置。	可从建筑卸下未连接的机械装置。		DFHack hack/lua/plugins/buildingplan/unlink_mechanisms.lua L512 overlay desc
+Unlink mode	斷開模式	断开模式		DFHack hack/lua/plugins/buildingplan/unlink_mechanisms.lua L207
+Don't auto free	不自動卸下	不自动卸下		DFHack hack/lua/plugins/buildingplan/unlink_mechanisms.lua L211 斷開後不自動卸下機械裝置
+Free local mechanism	卸下這端的機械裝置	卸下这端的机械装置		DFHack hack/lua/plugins/buildingplan/unlink_mechanisms.lua L212
+Free target mechanism	卸下目標的機械裝置	卸下目标的机械装置		DFHack hack/lua/plugins/buildingplan/unlink_mechanisms.lua L213
+Free local and target	卸下兩端的機械裝置	卸下两端的机械装置		DFHack hack/lua/plugins/buildingplan/unlink_mechanisms.lua L214
+Unlink all	全部斷開	全部断开		DFHack hack/lua/plugins/buildingplan/unlink_mechanisms.lua L222
+Unlink	斷開	断开	c	DFHack hack/lua/plugins/buildingplan/unlink_mechanisms.lua L289 按鈕、L401 確認視窗標題
+Pull    /	拉動    /	拉动    /		DFHack hack/lua/plugins/buildingplan/unlink_mechanisms.lua L66-70 拉桿按鈕＋拉桿狀態字（圖形模式 / \，文字模式 CP437 0x95 ò、0xA2 ó）
+Pull    \	拉動    \	拉动    \		DFHack hack/lua/plugins/buildingplan/unlink_mechanisms.lua L66-70 拉桿按鈕＋拉桿狀態字（圖形模式 / \，文字模式 CP437 0x95 ò、0xA2 ó）
+Pull    ò	拉動    ò	拉动    ò		DFHack hack/lua/plugins/buildingplan/unlink_mechanisms.lua L66-70 拉桿按鈕＋拉桿狀態字（圖形模式 / \，文字模式 CP437 0x95 ò、0xA2 ó）
+Pull    ó	拉動    ó	拉动    ó		DFHack hack/lua/plugins/buildingplan/unlink_mechanisms.lua L66-70 拉桿按鈕＋拉桿狀態字（圖形模式 / \，文字模式 CP437 0x95 ò、0xA2 ó）
+Pulling /	拉動中  /	拉动中  /		DFHack hack/lua/plugins/buildingplan/unlink_mechanisms.lua L66-70 拉桿按鈕＋拉桿狀態字（圖形模式 / \，文字模式 CP437 0x95 ò、0xA2 ó）
+Pulling \	拉動中  \	拉动中  \		DFHack hack/lua/plugins/buildingplan/unlink_mechanisms.lua L66-70 拉桿按鈕＋拉桿狀態字（圖形模式 / \，文字模式 CP437 0x95 ò、0xA2 ó）
+Pulling ò	拉動中  ò	拉动中  ò		DFHack hack/lua/plugins/buildingplan/unlink_mechanisms.lua L66-70 拉桿按鈕＋拉桿狀態字（圖形模式 / \，文字模式 CP437 0x95 ò、0xA2 ó）
+Pulling ó	拉動中  ó	拉动中  ó		DFHack hack/lua/plugins/buildingplan/unlink_mechanisms.lua L66-70 拉桿按鈕＋拉桿狀態字（圖形模式 / \，文字模式 CP437 0x95 ò、0xA2 ó）
+Queued  /	已排程  /	已排队  /		DFHack hack/lua/plugins/buildingplan/unlink_mechanisms.lua L66-70 拉桿按鈕＋拉桿狀態字（圖形模式 / \，文字模式 CP437 0x95 ò、0xA2 ó）
+Queued  \	已排程  \	已排队  \		DFHack hack/lua/plugins/buildingplan/unlink_mechanisms.lua L66-70 拉桿按鈕＋拉桿狀態字（圖形模式 / \，文字模式 CP437 0x95 ò、0xA2 ó）
+Queued  ò	已排程  ò	已排队  ò		DFHack hack/lua/plugins/buildingplan/unlink_mechanisms.lua L66-70 拉桿按鈕＋拉桿狀態字（圖形模式 / \，文字模式 CP437 0x95 ò、0xA2 ó）
+Queued  ó	已排程  ó	已排队  ó		DFHack hack/lua/plugins/buildingplan/unlink_mechanisms.lua L66-70 拉桿按鈕＋拉桿狀態字（圖形模式 / \，文字模式 CP437 0x95 ò、0xA2 ó）
+Unlink mechanism?	斷開機械裝置？	断开机械装置？		DFHack hack/lua/plugins/buildingplan/unlink_mechanisms.lua L315 確認視窗
+Mechanism:	機械裝置：	机械装置：		DFHack hack/lua/plugins/buildingplan/unlink_mechanisms.lua L317 確認視窗（原文補空白對齊）
+Target building:	目標建築：	目标建筑：		DFHack hack/lua/plugins/buildingplan/unlink_mechanisms.lua L319 確認視窗
+This mechanism will be freed and moved to the ground.	此機械裝置會被卸下並放到地上。	该机械装置会被卸下并放到地上。		DFHack hack/lua/plugins/buildingplan/unlink_mechanisms.lua L321
+This mechanism will be kept in the building. You can free it later.	此機械裝置會留在建築裡，之後可以再卸下。	该机械装置会留在建筑里，之后可以再卸下。		DFHack hack/lua/plugins/buildingplan/unlink_mechanisms.lua L322
+Mechanism in target will be freed and moved to the ground.	目標裡的機械裝置會被卸下並放到地上。	目标里的机械装置会被卸下并放到地上。		DFHack hack/lua/plugins/buildingplan/unlink_mechanisms.lua L324
+Mechanism in target will be kept in the building. You can free it later.	目標裡的機械裝置會留在建築裡，之後可以再卸下。	目标里的机械装置会留在建筑里，之后可以再卸下。		DFHack hack/lua/plugins/buildingplan/unlink_mechanisms.lua L325
+Unlink mechanism	斷開機械裝置	断开机械装置	c	DFHack hack/lua/plugins/buildingplan/unlink_mechanisms.lua L327 確認視窗標題
+Unlink all mechanisms?	斷開所有機械裝置？	断开所有机械装置？		DFHack hack/lua/plugins/buildingplan/unlink_mechanisms.lua L393
+These mechanisms will be freed and moved to the ground.	這些機械裝置會被卸下並放到地上。	这些机械装置会被卸下并放到地上。		DFHack hack/lua/plugins/buildingplan/unlink_mechanisms.lua L395
+These mechanisms will be kept in the building. You can free them later.	這些機械裝置會留在建築裡，之後可以再卸下。	这些机械装置会留在建筑里，之后可以再卸下。		DFHack hack/lua/plugins/buildingplan/unlink_mechanisms.lua L396
+Mechanisms in linked buildings will be freed and moved to the ground.	已連結建築裡的機械裝置會被卸下並放到地上。	已连接建筑里的机械装置会被卸下并放到地上。		DFHack hack/lua/plugins/buildingplan/unlink_mechanisms.lua L398
+Mechanisms in linked buildings will be kept in the buildings. You can free them later.	已連結建築裡的機械裝置會留在建築裡，之後可以再卸下。	已连接建筑里的机械装置会留在建筑里，之后可以再卸下。		DFHack hack/lua/plugins/buildingplan/unlink_mechanisms.lua L399
+Free all	全部卸下	全部卸下		DFHack hack/lua/plugins/buildingplan/unlink_mechanisms.lua L534
+Free mechanism and move it to the ground?	卸下機械裝置並放到地上？	卸下机械装置并放到地上？		DFHack hack/lua/plugins/buildingplan/unlink_mechanisms.lua L582
+This mechanism:	此機械裝置：	该机械装置：		DFHack hack/lua/plugins/buildingplan/unlink_mechanisms.lua L584
+Free mechanism	卸下機械裝置	卸下机械装置	c	DFHack hack/lua/plugins/buildingplan/unlink_mechanisms.lua L586 確認視窗標題
+Free all mechanisms and move them to the ground?	卸下所有機械裝置並放到地上？	卸下所有机械装置并放到地上？		DFHack hack/lua/plugins/buildingplan/unlink_mechanisms.lua L598
+This will recover all unlinked mechanisms from the building for reuse.	這會從建築收回所有未連結的機械裝置，以便再利用。	这会从建筑收回所有未连接的机械装置，以便再利用。		DFHack hack/lua/plugins/buildingplan/unlink_mechanisms.lua L600
+Free all mechanisms	卸下所有機械裝置	卸下所有机械装置	c	DFHack hack/lua/plugins/buildingplan/unlink_mechanisms.lua L602 確認視窗標題
+Any Slab [engraved]	任何石板 [已雕刻]	任意石板 [已雕刻]		DFHack hack/lua/plugins/buildingplan/filterselection.lua L298-352 目前篩選摘要：耐熱＋物品類別（＋特殊條件）（＋ of 材料清單）；專門的寫在前
+Any Cage [empty]	任何籠子 [空的]	任意笼子 [空的]		DFHack hack/lua/plugins/buildingplan/filterselection.lua L298-352 目前篩選摘要：耐熱＋物品類別（＋特殊條件）（＋ of 材料清單）；專門的寫在前
+Magma safe Slab [engraved]	耐熔岩石板 [已雕刻]	耐熔岩石板 [已雕刻]		DFHack hack/lua/plugins/buildingplan/filterselection.lua L298-352 目前篩選摘要：耐熱＋物品類別（＋特殊條件）（＋ of 材料清單）；專門的寫在前
+Magma safe Cage [empty]	耐熔岩籠子 [空的]	耐熔岩笼子 [空的]		DFHack hack/lua/plugins/buildingplan/filterselection.lua L298-352 目前篩選摘要：耐熱＋物品類別（＋特殊條件）（＋ of 材料清單）；專門的寫在前
+Fire safe Slab [engraved]	耐火石板 [已雕刻]	耐火石板 [已雕刻]		DFHack hack/lua/plugins/buildingplan/filterselection.lua L298-352 目前篩選摘要：耐熱＋物品類別（＋特殊條件）（＋ of 材料清單）；專門的寫在前
+Fire safe Cage [empty]	耐火籠子 [空的]	耐火笼子 [空的]		DFHack hack/lua/plugins/buildingplan/filterselection.lua L298-352 目前篩選摘要：耐熱＋物品類別（＋特殊條件）（＋ of 材料清單）；專門的寫在前

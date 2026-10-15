@@ -62,12 +62,13 @@ def screen_of(file: str) -> str:
 
 
 def dict_lines(kind: str, rows: list[dict], lang: str) -> str:
-    """dist 的 dflang/<kind>.tsv：原文<TAB>譯文<TAB>對齊；screens 前面多一欄畫面、後面多一欄限定列。沒有譯文的列不放。"""
+    """dist 的 dflang/<kind>.tsv：原文<TAB>譯文<TAB>對齊；screens 前面多一欄畫面、後面多一欄限定列。沒有譯文的列不放；
+    screens 原文寫 `*` 的列（這個畫面的全小寫字串照原文）不看譯文欄，一律放。"""
     def line(r: dict) -> str:
         if kind == "screens":
             return f"{screen_of(r['file'])}\t{r['en']}\t{r[lang]}\t{r['align']}\t{r['row']}\n"
         return f"{r['en']}\t{r[lang]}\t{r['align']}\n"
-    return "".join(line(r) for r in rows if r[lang].strip())
+    return "".join(line(r) for r in rows if r[lang].strip() or (kind == "screens" and r["en"] == "*"))
 
 
 def name_lines(rows: list[dict], lang: str) -> str:

@@ -1,0 +1,27 @@
+en	zh-Hant	zh-Hans	align	row	note
+Design	設計	设计	c		DFHack hack/scripts/gui/design.lua L296 視窗標題
+Designation:	標記：	标记：			DFHack hack/scripts/gui/design.lua L381
+Channel	挖槽	挖槽			DFHack hack/scripts/gui/design.lua L326 標記類型
+Smooth	磨平	磨平			DFHack hack/scripts/gui/design.lua L327 標記類型
+Engrave	雕刻	雕刻			DFHack hack/scripts/gui/design.lua L328 標記類型
+Remove Designation	移除標記	移除标记			DFHack hack/scripts/gui/design.lua L330 標記類型
+Auto	自動	自动			DFHack hack/scripts/gui/design.lua L404 樓梯類型選項
+Up	上	上			DFHack hack/scripts/gui/design.lua L421 樓梯類型選項
+Down	下	下			DFHack hack/scripts/gui/design.lua L406 樓梯類型選項
+Outer Tiles:	外圈格子：	外圈格子：			DFHack hack/scripts/gui/design.lua L454
+Inner Tiles:	內部格子：	内部格子：			DFHack hack/scripts/gui/design.lua L462
+Walls	牆壁	墙壁			DFHack hack/scripts/gui/design.lua L368 建築結構選項
+Reinforced Walls	強化牆壁	加固墙壁			DFHack hack/scripts/gui/design.lua L369 建築結構選項
+Ramps	斜坡	斜坡			DFHack hack/scripts/gui/design.lua L372 建築結構選項
+Shape:	形狀：	形状：			DFHack hack/scripts/gui/design.lua L508
+Invert:	反轉：	反转：			DFHack hack/scripts/gui/design.lua L602
+Rotate	旋轉	旋转			DFHack hack/scripts/gui/design.lua L688 按鍵說明
+Flip	翻轉	翻转			DFHack hack/scripts/gui/design.lua L703 按鍵說明
+Reset	重設	重置			DFHack hack/scripts/gui/design.lua L778 按鍵說明
+Ellipse	橢圓	椭圆			DFHack hack/scripts/internal/design/shapes.lua L217 形狀名（gui/design 的 Shape 按鈕組選項）
+Rectangle	矩形	矩形			DFHack hack/scripts/internal/design/shapes.lua L281 形狀名
+Rows	列	行			DFHack hack/scripts/internal/design/shapes.lua L329 形狀名：一排排格子（台灣 row＝列，大陸 row＝行）
+Diagonal	斜線	斜线			DFHack hack/scripts/internal/design/shapes.lua L369 形狀名
+Line	直線	直线			DFHack hack/scripts/internal/design/shapes.lua L453 形狀名
+FreeForm	自由形	自由形			DFHack hack/scripts/internal/design/shapes.lua L555 形狀名
+Star	星形	星形			DFHack hack/scripts/internal/design/shapes.lua L672 形狀名

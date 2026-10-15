@@ -1,0 +1,4 @@
+en	zh-Hant	zh-Hans	align	note
+DFHack Control Panel	DFHack 控制面板	DFHack 控制面板	c	DFHack hack/scripts/gui/control-panel.lua 視窗標題（paint_frame 置中，前後兩個空白由引擎照原文補）
+These change or extend gameplay. Read their help docs to see what they do and enable the ones that appeal to you.	這些工具會改變或擴充遊戲玩法。請閱讀說明文件了解用途，再啟用你喜歡的工具。	这些工具会改变或扩展游戏玩法。请阅读帮助文档了解用途，再启用你喜欢的工具。		DFHack hack/scripts/gui/control-panel.lua L516 遊戲玩法分頁說明（WrappedLabel，引擎整段翻再換行）
+These are the tools that can be enabled right now. Most tools can only be enabled when you have a fort loaded. Once enabled, tools will stay enabled when you save and reload your fort. If you want them to be auto-enabled for new forts, please see the "Autostart" tab.	這些是現在就能啟用的工具。大多數工具要載入要塞後才能啟用。啟用後，存檔再讀檔時仍會保持啟用。若想讓它們在新要塞自動啟用，請看「自動啟動」分頁。	这些是现在就能启用的工具。大多数工具要载入要塞后才能启用。启用后，存档再读档时仍会保持启用。若想让它们在新要塞自动启用，请看“自动启动”标签页。		DFHack hack/scripts/gui/control-panel.lua L321 已啟用分頁說明（WrappedLabel）
