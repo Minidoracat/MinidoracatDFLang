@@ -1,0 +1,113 @@
+en	zh-Hant	zh-Hans	align	note
+well-designed	品質為精工	品质为精工	inner	FUN_141451b10 2742890-2742917 圖像設計品質，只給圖像片語句型用
+finely-designed	品質為精良	品质为精良	inner	FUN_141451b10 2742890-2742917 圖像設計品質，只給圖像片語句型用
+superiorly designed	品質為上等	品质为上等	inner	FUN_141451b10 2742890-2742917 圖像設計品質，只給圖像片語句型用
+exceptionally designed	品質為卓越	品质为卓越	inner	FUN_141451b10 2742890-2742917 圖像設計品質，只給圖像片語句型用
+masterfully designed	品質為大師級	品质为大师级	inner	FUN_141451b10 2742890-2742917 圖像設計品質，只給圖像片語句型用
+three-pointed star	三角星	三角星	inner	FUN_140147640 204211-204265 圖像元素：形狀形容詞＋形狀名（descriptor_shape）
+three-pointed stars	三角星	三角星	inner	FUN_140147640 同上，複數
+four-pointed star	四角星	四角星	inner	FUN_140147640 204211-204265 圖像元素：形狀形容詞＋形狀名（descriptor_shape）
+four-pointed stars	四角星	四角星	inner	FUN_140147640 同上，複數
+five-pointed star	五角星	五角星	inner	FUN_140147640 204211-204265 圖像元素：形狀形容詞＋形狀名（descriptor_shape）
+five-pointed stars	五角星	五角星	inner	FUN_140147640 同上，複數
+many-pointed star	多角星	多角星	inner	FUN_140147640 204211-204265 圖像元素：形狀形容詞＋形狀名（descriptor_shape）
+many-pointed stars	多角星	多角星	inner	FUN_140147640 同上，複數
+narrow crescent	窄新月	窄新月	inner	FUN_140147640 204211-204265 圖像元素：形狀形容詞＋形狀名（descriptor_shape）
+narrow crescents	窄新月	窄新月	inner	FUN_140147640 同上，複數
+thick crescent	粗新月	粗新月	inner	FUN_140147640 204211-204265 圖像元素：形狀形容詞＋形狀名（descriptor_shape）
+thick crescents	粗新月	粗新月	inner	FUN_140147640 同上，複數
+broad cross	寬十字	宽十字	inner	FUN_140147640 204211-204265 圖像元素：形狀形容詞＋形狀名（descriptor_shape）
+broad crosses	寬十字	宽十字	inner	FUN_140147640 同上，複數
+tall cross	高十字	高十字	inner	FUN_140147640 204211-204265 圖像元素：形狀形容詞＋形狀名（descriptor_shape）
+tall crosses	高十字	高十字	inner	FUN_140147640 同上，複數
+thin cross	細十字	细十字	inner	FUN_140147640 204211-204265 圖像元素：形狀形容詞＋形狀名（descriptor_shape）
+thin crosses	細十字	细十字	inner	FUN_140147640 同上，複數
+shining sun	閃耀的太陽	闪耀的太阳	inner	FUN_140147640 204211-204265 圖像元素：形狀形容詞＋形狀名（descriptor_shape）
+shining suns	閃耀的太陽	闪耀的太阳	inner	FUN_140147640 同上，複數
+blazing sun	熾烈的太陽	炽烈的太阳	inner	FUN_140147640 204211-204265 圖像元素：形狀形容詞＋形狀名（descriptor_shape）
+blazing suns	熾烈的太陽	炽烈的太阳	inner	FUN_140147640 同上，複數
+hidden moon	隱沒的月亮	隐没的月亮	inner	FUN_140147640 204211-204265 圖像元素：形狀形容詞＋形狀名（descriptor_shape）
+hidden moons	隱沒的月亮	隐没的月亮	inner	FUN_140147640 同上，複數
+full moon	滿月	满月	inner	FUN_140147640 204211-204265 圖像元素：形狀形容詞＋形狀名（descriptor_shape）
+full moons	滿月	满月	inner	FUN_140147640 同上，複數
+crescent moon	新月	新月	inner	FUN_140147640 204211-204265 圖像元素：形狀形容詞＋形狀名（descriptor_shape）
+crescent moons	新月	新月	inner	FUN_140147640 同上，複數
+half moon	半月	半月	inner	FUN_140147640 204211-204265 圖像元素：形狀形容詞＋形狀名（descriptor_shape）
+half moons	半月	半月	inner	FUN_140147640 同上，複數
+group	團體	团体	inner	FUN_141451b10 2743190 實體種類（遷徙／游牧／流亡的群體）
+vessel	船隊	船队	inner	FUN_141451b10 2743185 實體種類（船員組織）
+This engraving appears on a floor  somewhere.	這幅雕刻位於某處的地板上。	这幅雕刻位于某处的地板上。		FUN_141451b10 2742683-2742886 藝術品所在處（傳說頁藝術品頁），句末 .[B] 或 .  ；2742784-2742793 遊戲原文 floor 後兩個空白（段落框收成一個）
+This engraving appears on a wall  somewhere.	這幅雕刻位於某處的牆上。	这幅雕刻位于某处的墙上。		FUN_141451b10 2742683-2742886 藝術品所在處（傳說頁藝術品頁），句末 .[B] 或 .  ；2742784-2742793 遊戲原文 wall 後兩個空白（段落框收成一個）
+This engraving appears on a floor somewhere.	這幅雕刻位於某處的地板上。	这幅雕刻位于某处的地板上。		FUN_141451b10 2742683-2742886 藝術品所在處（傳說頁藝術品頁），句末 .[B] 或 .  ；2742784-2742793 遊戲原文 floor 後兩個空白（段落框收成一個）
+This engraving appears on a wall somewhere.	這幅雕刻位於某處的牆上。	这幅雕刻位于某处的墙上。		FUN_141451b10 2742683-2742886 藝術品所在處（傳說頁藝術品頁），句末 .[B] 或 .  ；2742784-2742793 遊戲原文 wall 後兩個空白（段落框收成一個）
+X is withering away	X日漸消瘦	X日渐消瘦		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is laboring	X正在勞動	X正在劳动		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is striking a menacing pose	X擺出威嚇的姿勢	X摆出威吓的姿势		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is traveling	X正在旅行	X正在旅行		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X looks confused	X一臉困惑	X一脸困惑		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X looks terrified	X一臉驚恐	X一脸惊恐		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is burning	X正在燃燒	X正在燃烧		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is weeping	X正在哭泣	X正在哭泣		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X looks dejected	X一臉沮喪	X一脸沮丧		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is cringing	X正畏縮著	X正畏缩着		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is screaming	X正在尖叫	X正在尖叫		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is making a submissive gesture	X做出順從的手勢	X做出顺从的手势		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is in a fetal position	X蜷縮成胎兒般的姿勢	X蜷缩成胎儿般的姿势		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is smeared out into a spiral	X被抹成一道螺旋	X被抹成一道螺旋		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is falling	X正在墜落	X正在坠落		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is dead	X已經死去	X已经死去		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is laughing	X正在大笑	X正在大笑		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X looks offended	X一臉不悅	X一脸不悦		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is being shot	X正遭到射擊	X正遭到射击		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is making a plaintive gesture	X做出哀求的手勢	X做出哀求的手势		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is melting	X正在融化	X正在融化		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is being tortured	X正遭受折磨	X正遭受折磨		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is committing a depraved act	X正在做出墮落的行徑	X正在做出堕落的行径		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is praying	X正在祈禱	X正在祈祷		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is contemplating	X正在沉思	X正在沉思		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is cooking	X正在烹飪	X正在烹饪		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is engraving	X正在雕刻	X正在雕刻		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is suffering	X正在受苦	X正在受苦		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is unnaturally contorted	X身體不自然地扭曲	X身体不自然地扭曲		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is being flayed	X正被剝皮	X正被剥皮		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is being mutilated	X正遭到殘害	X正遭到残害		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is striking a triumphant pose	X擺出勝利的姿勢	X摆出胜利的姿势		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is surrounded by Y	X被Y包圍	X被Y包围		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is massacring Y	X正在屠殺Y	X正在屠杀Y		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is fighting with Y	X正在與Y搏鬥	X正在与Y搏斗		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is greeting Y	X正在向Y致意	X正在向Y致意		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is refusing Y	X正在拒絕Y	X正在拒绝Y		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is speaking with Y	X正在與Y交談	X正在与Y交谈		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is embracing Y	X正在擁抱Y	X正在拥抱Y		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is striking down Y	X正在擊倒Y	X正在击倒Y		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is raising Y	X正在舉起Y	X正在举起Y		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is hiding Y	X正在藏起Y	X正在藏起Y		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is devouring Y	X正在吞食Y	X正在吞食Y		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is admiring Y	X正在欣賞Y	X正在欣赏Y		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is burning Y	X正在焚燒Y	X正在焚烧Y		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is shooting Y	X正在射擊Y	X正在射击Y		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is torturing Y	X正在折磨Y	X正在折磨Y		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is committing a depraved act upon Y	X正對Y做出墮落的行徑	X正对Y做出堕落的行径		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is praying to Y	X正在向Y祈禱	X正在向Y祈祷		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is contemplating Y	X正在凝思Y	X正在凝思Y		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is cooking Y	X正在烹煮Y	X正在烹煮Y		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is engraving Y	X正在雕刻Y	X正在雕刻Y		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is impaled on Y	X被刺穿在Y上	X被刺穿在Y上		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is being flayed by Y	X正被Y剝皮	X正被Y剥皮		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is hanging from Y	X正吊在Y上	X正吊在Y上		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is being mutilated by Y	X正遭Y殘害	X正遭Y残害		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+X is prostrating itself before Y	X正拜倒在Y面前	X正拜倒在Y面前		FUN_1401fb510 262272-262538 冒險模式構圖選單的動作項（X、Y 是佔位字母，單行清單）
+On the item	物品上有	物品上有	inner	FUN_141451b10 2742552 圖像說明開頭（接 is a … image），只給本檔句型的 {@1} 用
+On the front of the coin	錢幣正面有	钱币正面有	inner	FUN_141451b10 2742557 圖像說明開頭（接 is a … image），只給本檔句型的 {@1} 用
+On the coin's back	錢幣背面有	钱币背面有	inner	FUN_141451b10 2742562 圖像說明開頭（接 is a … image），只給本檔句型的 {@1} 用
+Engraved on the floor	地板上刻有	地板上刻有	inner	FUN_141451b10 2742570-2742575 圖像說明開頭（接 is a … image），只給本檔句型的 {@1} 用
+Engraved on the wall	牆上刻有	墙上刻有	inner	FUN_141451b10 2742570-2742579 圖像說明開頭（接 is a … image），只給本檔句型的 {@1} 用
+a well-designed	品質為精工	品质为精工	inner	FUN_141451b10 2742584＋2742890-2742917 冠詞＋圖像設計品質，只給本檔句型的 {@n} 用
+a finely-designed	品質為精良	品质为精良	inner	FUN_141451b10 2742584＋2742890-2742917 冠詞＋圖像設計品質，只給本檔句型的 {@n} 用
+a superiorly designed	品質為上等	品质为上等	inner	FUN_141451b10 2742584＋2742890-2742917 冠詞＋圖像設計品質，只給本檔句型的 {@n} 用
+an exceptionally designed	品質為卓越	品质为卓越	inner	FUN_141451b10 2742584＋2742890-2742917 冠詞＋圖像設計品質，只給本檔句型的 {@n} 用
+a masterfully designed	品質為大師級	品质为大师级	inner	FUN_141451b10 2742584＋2742890-2742917 冠詞＋圖像設計品質，只給本檔句型的 {@n} 用
+The item is an image.	這件物品是一幅圖像。	这件物品是一幅图像。		FUN_141451b10 2742918-2742998 圖像說明句：設計品質、圖像元素（of；元素間 , 與 and，先試兩邊都翻得出來的切法，傳說頁的 HF 連結用任意佔位）、材料（in）、作者（by，傳說頁是 HF 連結）；2742545 圖像本身就是物品
+It is an image.	這是一幅圖像。	这是一幅图像。		FUN_141451b10 2742918-2742998 圖像說明句：設計品質、圖像元素（of；元素間 , 與 and，先試兩邊都翻得出來的切法，傳說頁的 HF 連結用任意佔位）、材料（in）、作者（by，傳說頁是 HF 連結）；2742888 接在 This artwork appears … 之後
+This artwork is an image.	這件藝術品是一幅圖像。	这件艺术品是一幅图像。		FUN_141451b10 2742918-2742998 圖像說明句：設計品質、圖像元素（of；元素間 , 與 and，先試兩邊都翻得出來的切法，傳說頁的 HF 連結用任意佔位）、材料（in）、作者（by，傳說頁是 HF 連結）；2742821
+Engraved is an image.	刻有一幅圖像。	刻有一幅图像。		FUN_141451b10 2742918-2742998 圖像說明句：設計品質、圖像元素（of；元素間 , 與 and，先試兩邊都翻得出來的切法，傳說頁的 HF 連結用任意佔位）、材料（in）、作者（by，傳說頁是 HF 連結）；2742570 沒有地點時遊戲原文缺了 on the …

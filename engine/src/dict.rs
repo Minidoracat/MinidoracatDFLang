@@ -168,6 +168,28 @@ fn is_number(piece: &[u8]) -> bool {
     !digits.is_empty() && digits[0].is_ascii_digit() && digits.iter().all(|c| c.is_ascii_digit() || *c == b',')
 }
 
+/// 段落框裡可以點的連結（傳說頁面、物品說明的人名、地名、作品名）在原文裡換成記號 `\x01序號\x02`（CP437 的 ☺、☻），
+/// 名字本身不給句型看：名字常含 of、the、and，句型的固定字會切進名字裡。記號和沒有連結的名字一樣翻不出來：
+/// `{n}` 照抄、`{%n}` 不收（收了的話，給片語用的 `{%n}` 會吞下單獨的名字，搶走專寫的句型），排版時再換回遊戲的連結字（見 mtb.rs）。
+pub const LINK_OPEN: u8 = 1;
+pub const LINK_CLOSE: u8 = 2;
+
+/// 譯文裡的連結記號依出現順序是第幾個連結；n 個連結都要恰好出現一次，否則 None（句型漏掉或重複了名字）。
+pub fn link_order(translation: &str, n: usize) -> Option<Vec<usize>> {
+    let (open, close) = (cp437::TABLE[LINK_OPEN as usize], cp437::TABLE[LINK_CLOSE as usize]);
+    let mut order = Vec::with_capacity(n);
+    let mut seen = vec![false; n];
+    for (i, _) in translation.match_indices(open) {
+        let rest = &translation[i + open.len_utf8()..];
+        let k: usize = rest[..rest.find(close)?].parse().ok()?;
+        if std::mem::replace(seen.get_mut(k)?, true) {
+            return None;
+        }
+        order.push(k);
+    }
+    (order.len() == n).then_some(order)
+}
+
 /// 整句字典查詞；查不到時改查大小寫不同的寫法：遊戲常把名稱放句首時改大寫（`Cats, ♂`），動物的稱呼還會
 /// 每個字大寫（`Stray One-humped Camel`），raws 裡只有小寫；公告又常把介面上大寫的名稱寫成小寫
 /// （`the woodcutter` 對到職業 `Woodcutter`、`Trade Depot` 對到建造選單的 `Trade depot`）。
@@ -299,14 +321,23 @@ fn match_at(segs: &[Seg], text: &[u8], pos: usize, caps: &mut [(usize, usize); 9
 }
 
 /// 句界：句末標點（. ! ? "）後面連續兩個空白，k 是第一個空白。遊戲拼段落時句間空兩格。
+/// 雙引號裡面的不算（石板刻文「I am …, once of the Underworld.  By …」整段引在一句裡）。
 fn is_boundary(text: &[u8], k: usize) -> bool {
-    k > 0 && text[k] == b' ' && text.get(k + 1) == Some(&b' ') && b".!?\"".contains(&text[k - 1])
+    k > 0 && text[k] == b' ' && text.get(k + 1) == Some(&b' ') && b".!?\"".contains(&text[k - 1]) && !in_quote(text, k)
 }
 
-/// 段落框（mtb）的句界：遊戲排段落時把句間兩個空白收成一個，留下「句末標點、一個空白、大寫字母或 [B] 這類標記」。
-/// 佔位不跨這種句界，段落框整段查詞時才不會把後面整串吞進來；translate_paragraph 也在這裡還原成兩個空白再切句。
+/// 段落框（mtb）的句界：遊戲排段落時把句間兩個空白收成一個，留下「句末標點（可再接收尾的引號）、一個空白、
+/// 大寫字母、[B] 這類標記或連結」。佔位不跨這種句界，段落框整段查詞時才不會把後面整串吞進來；
+/// translate_paragraph 也在這裡還原成兩個空白再切句。雙引號裡面的不算。
 fn is_box_break(text: &[u8], k: usize) -> bool {
-    k > 0 && text[k] == b' ' && b".!?".contains(&text[k - 1]) && text.get(k + 1).is_some_and(|c| c.is_ascii_uppercase() || *c == b'[')
+    let end = |i: usize| b".!?".contains(&text[i]) || (text[i] == b'"' && i > 0 && b".!?".contains(&text[i - 1]));
+    k > 0 && text[k] == b' ' && end(k - 1) && text.get(k + 1).is_some_and(|c| c.is_ascii_uppercase() || *c == b'[' || *c == LINK_OPEN)
+        && !in_quote(text, k)
+}
+
+/// 位置 k 在一對雙引號裡（前面的雙引號是奇數個）。只在其他條件都成立時才數，句界很少，不必預先算。
+fn in_quote(text: &[u8], k: usize) -> bool {
+    text[..k].iter().filter(|&&c| c == b'"').count() % 2 == 1
 }
 
 /// 樣板固定字的顏色位置：夾在兩個佔位之間、這兩個佔位在原文裡也相鄰時，用原文兩者之間那段字的位置
@@ -1064,5 +1095,31 @@ mod tests {
         assert_eq!(d.translate_text(b"It has a dark timbre.").as_deref(), Some("音色暗沉。"));
         assert_eq!(d.translate_text(b"dark"), None, "介面上單獨出現的 dark 不翻成音色");
         assert_eq!(d.translate_text(b"Dark"), None);
+    }
+
+    #[test]
+    fn link_tokens_behave_like_names_and_start_box_sentences() {
+        let mut d = dict("{1} is visiting.\t{1}來訪了。\n{1} of {%2}\t{2}的{1}\nIn {#1}, {2} {%3}.\t{1}年，{2}{3}。\nIn {#1}, {2} settled in {3}.\t{1}年，{2}定居於{3}。\n");
+        d.load_tsv("Labor ends.\t勞動結束。\n");
+        assert_eq!(d.translate_text(b"Histories of \x010\x02"), None, "{{%n}} 不收單獨的連結，和沒有連結的名字一樣");
+        assert_eq!(d.translate_text(b"In 1, \x010\x02 settled in \x011\x02.").as_deref(), Some("1年，☺0☻定居於☺1☻。"),
+                   "給片語的 {{%3}} 不能吞下單獨的名字，搶走後面專寫的句型");
+        assert_eq!(d.translate_paragraph(b"Labor ends. \x010\x02 is visiting.").as_deref(), Some("勞動結束。☺0☻來訪了。"),
+                   "連結開頭的句子是新句，{{1}} 不能吞進前一句");
+        assert_eq!(link_order("☺1☻與☺0☻", 2), Some(vec![1, 0]));
+        assert_eq!(link_order("☺0☻與☺0☻", 2), None, "重複");
+        assert_eq!(link_order("☺0☻", 2), None, "漏掉");
+    }
+
+    #[test]
+    fn quotes_end_sentences_but_text_inside_them_stays_whole() {
+        let mut d = dict("It asks, \"{1}\"\t問道：「{1}」\nThe slab reads \"{1}\".\t石板上寫著：「{1}」。\n");
+        d.load_tsv("Labor ends.\t勞動結束。\n");
+        assert_eq!(d.translate_paragraph(b"It asks, \"Why?\" Labor ends.").as_deref(), Some("問道：「Why?」勞動結束。"),
+                   "段落框裡 ?\" 後面一個空白接大寫字母也是句界");
+        assert_eq!(d.translate_sentences(b"The slab reads \"I am Urist.  By Labor, I bind.\".  Labor ends.").map(concat).as_deref(),
+                   Ok("石板上寫著：「I am Urist.  By Labor, I bind.」。勞動結束。"), "引號裡的句子不切開");
+        assert_eq!(d.translate_paragraph(b"The slab reads \"I am Urist. By Labor, I bind.\". Labor ends.").as_deref(),
+                   Some("石板上寫著：「I am Urist. By Labor, I bind.」。勞動結束。"), "段落框也一樣");
     }
 }

@@ -6,9 +6,11 @@
 //! 替每個單字訂好畫字計畫——每段中文交給同一列的一個英文單字（載體）畫，其他單字不畫。
 //! 畫字 hook 看到載體單字，就在「載體座標＋位移」畫那段中文。
 //!
-//! 遊戲的單字清單一律不改：彈出視窗排好的單字會存進存檔，改過的字串讀檔後（或移除本 MOD 後）會變成亂碼。
-//! 沒有譯文的段落（含有連結的傳說、編年史）也登記成「照畫英文」：單字若剛好是字典裡的介面標籤
-//! （All、Fish、Iron…）才不會被換成中文，夾在英文句子裡。
+//! 遊戲的單字字串一律不改：彈出視窗排好的單字會存進存檔，改過的字串讀檔後（或移除本 MOD 後）會變成亂碼。
+//! 沒有譯文的段落也登記成「照畫英文」：單字若剛好是字典裡的介面標籤（All、Fish、Iron…）才不會被換成中文，夾在英文句子裡。
+//!
+//! 有連結的段落（傳說頁面、物品說明裡可以點的人名、地名）：連結字由遊戲照英文畫、依座標判斷點擊，
+//! 所以照中文排版把連結字搬到中文裡名字的位置（只改座標，見 plan_links）。這種段落是畫面開啟時才產生的，不進存檔。
 
 use std::collections::HashMap;
 use std::sync::{Arc, LazyLock, OnceLock};
@@ -16,7 +18,7 @@ use std::sync::{Arc, LazyLock, OnceLock};
 use parking_lot::Mutex;
 
 use crate::cp437;
-use crate::dict::{Dict, Entry};
+use crate::dict::{self, Dict, Entry, LINK_CLOSE, LINK_OPEN};
 
 /// markup_text_boxst／markup_text_wordst 的欄位位移，由 Lua 依 DFHack 的結構定義傳入。
 #[derive(Clone, Copy)]
@@ -97,6 +99,10 @@ unsafe fn read<T: Copy>(base: usize, offset: usize) -> T {
     unsafe { *((base + offset) as *const T) }
 }
 
+unsafe fn write<T>(base: usize, offset: usize, v: T) {
+    unsafe { *((base + offset) as *mut T) = v }
+}
+
 /// MSVC std::string：16 bytes 內建緩衝區（或長字串指標）、長度、容量。
 unsafe fn str_bytes<'a>(s: usize) -> &'a [u8] {
     unsafe {
@@ -106,18 +112,76 @@ unsafe fn str_bytes<'a>(s: usize) -> &'a [u8] {
     }
 }
 
+/// 一個連結：同一個連結的連續單字，以及頭尾黏在字上、不屬於名字的字元數。遊戲把 [/LPAGE] 後面緊接的字元
+/// 也算進同一個單字（`Mangemined.` 的句號、`Urist's` 的 's），連單字一起畫成連結色；這些字元移到記號外面給句型看，
+/// 中文版面裡不畫（見 plan_links）。
+struct Link {
+    words: Vec<usize>,
+    head: usize,
+    tail: usize,
+}
+
+/// 連結字開頭（( " '）與結尾（標點、括號、引號、所有格 's）不屬於名字的位元組數；整個字都是這些字元時不切。
+fn link_trim(word: &[u8]) -> (usize, usize) {
+    let head = word.iter().take_while(|c| b"(\"'".contains(c)).count();
+    let rest = &word[head..];
+    let mut tail = rest.iter().rev().take_while(|c| b".,!?:;)\"'".contains(c)).count();
+    if rest[..rest.len() - tail].ends_with(b"'s") {
+        tail += 2;
+    }
+    if head + tail >= word.len() { (0, 0) } else { (head, tail) }
+}
+
+impl Link {
+    /// 第 j 個字去掉頭尾字元後的部分（畫在中文版面裡的名字）
+    unsafe fn name<'a>(&self, j: usize, words: &[usize], l: &MtbLayout) -> &'a [u8] {
+        let w = unsafe { str_bytes(words[self.words[j]] + l.word_str) };
+        let head = if j == 0 { self.head } else { 0 };
+        let tail = if j + 1 == self.words.len() { self.tail } else { 0 };
+        &w[head..w.len() - tail]
+    }
+}
+
 /// 單字接回整段：單字間一個空白，單獨的 . , ? ! 直接接在前一字後面（遊戲排版也是這樣貼著），
 /// 換行標記寫成 [R]、[B]、[P]；換顏色的單字前面加 [C:前景:背景:亮度]（第一個單字的顏色當整段底色，不標）。
-/// 都和遊戲的標記語法相同，譯文可以照用。有連結（傳說頁面）的段落、顏色不在調色盤上的段落不處理。
-unsafe fn plain_text(words: &[usize], l: &MtbLayout, palette: Option<&Palette>) -> Option<Vec<u8>> {
+/// 都和遊戲的標記語法相同，譯文可以照用。可以點的連結寫成記號 ☺序號☻（見 dict::LINK_OPEN），
+/// 黏在連結字頭尾的標點寫在記號外面；一併回傳每個連結。顏色不在調色盤上的段落不處理。
+unsafe fn plain_text(words: &[usize], l: &MtbLayout, palette: Option<&Palette>) -> Option<(Vec<u8>, Vec<Link>)> {
     let mut out: Vec<u8> = Vec::new();
     let mut color: Option<[u8; 3]> = None;
-    for &w in words {
+    let mut links: Vec<Link> = Vec::new();
+    let mut prev_link = -1;
+    // 目前這個連結最後一個字的尾巴：連結結束時接在記號後面
+    let mut tail: &[u8] = b"";
+    for (i, &w) in words.iter().enumerate() {
         unsafe {
-            if read::<i32>(w, l.word_link) != -1 {
-                return None;
-            }
             let flags: u32 = read(w, l.word_flags);
+            let link: i32 = read(w, l.word_link);
+            let text = str_bytes(w + l.word_str);
+            if link != -1 && flags & MARKERS == 0 {
+                // 連結的顏色由遊戲依連結種類決定，不看單字的顏色
+                let (head, t) = link_trim(text);
+                match links.last_mut() {
+                    Some(span) if link == prev_link => span.words.push(i),
+                    _ => {
+                        out.extend_from_slice(tail);
+                        if !out.is_empty() {
+                            out.push(b' ');
+                        }
+                        out.extend_from_slice(&text[..head]);
+                        out.push(LINK_OPEN);
+                        out.extend_from_slice(links.len().to_string().as_bytes());
+                        out.push(LINK_CLOSE);
+                        links.push(Link { words: vec![i], head, tail: 0 });
+                    }
+                }
+                links.last_mut().unwrap().tail = t;
+                tail = &text[text.len() - t..];
+                prev_link = link;
+                continue;
+            }
+            out.extend_from_slice(std::mem::take(&mut tail));
+            prev_link = -1;
             let token: &[u8] = if flags & NEW_LINE != 0 {
                 b"[R]"
             } else if flags & BLANK_LINE != 0 {
@@ -125,7 +189,7 @@ unsafe fn plain_text(words: &[usize], l: &MtbLayout, palette: Option<&Palette>) 
             } else if flags & INDENT != 0 {
                 b"[P]"
             } else {
-                str_bytes(w + l.word_str)
+                text
             };
             if token.is_empty() {
                 continue;
@@ -145,10 +209,32 @@ unsafe fn plain_text(words: &[usize], l: &MtbLayout, palette: Option<&Palette>) 
             out.extend_from_slice(token);
         }
     }
-    Some(out)
+    out.extend_from_slice(tail);
+    Some((out, links))
 }
 
-/// 換行的最小單位：中文字（兩格）、連在一起的英數（不拆開）、空白、換行標記、換色標記。
+/// 未翻譯紀錄用：連結記號換回名字（☺名字☻），`t -m` 可以直接拿來查。
+unsafe fn readable(key: &[u8], words: &[usize], links: &[Link], l: &MtbLayout) -> Vec<u8> {
+    let mut out = Vec::with_capacity(key.len() + 16 * links.len());
+    let mut rest = key;
+    for link in links {
+        let Some(i) = rest.iter().position(|&c| c == LINK_OPEN) else { break };
+        let j = rest[i..].iter().position(|&c| c == LINK_CLOSE).map_or(rest.len(), |j| i + j + 1);
+        out.extend_from_slice(&rest[..=i]);
+        for n in 0..link.words.len() {
+            if n > 0 {
+                out.push(b' ');
+            }
+            out.extend_from_slice(unsafe { link.name(n, words, l) });
+        }
+        out.push(LINK_CLOSE);
+        rest = &rest[j..];
+    }
+    out.extend_from_slice(rest);
+    out
+}
+
+/// 換行的最小單位：中文字（兩格）、連在一起的英數（不拆開）、空白、換行標記、換色標記、連結字。
 #[derive(Debug, PartialEq)]
 enum Atom {
     Text(String, usize),
@@ -157,6 +243,8 @@ enum Atom {
     Blank,
     Indent,
     Color([u8; 3]),
+    /// 第幾個連結的第幾個字、格數
+    Link(usize, usize, usize),
 }
 
 /// `[C:前景:背景:亮度]`：回傳顏色與標記的長度。遊戲偶爾多拼一個冒號（`[C:7:0:0:]`），照樣收。
@@ -168,7 +256,16 @@ fn color_marker(s: &str) -> Option<([u8; 3], usize)> {
     nums.next().is_none().then_some((color, end + 4))
 }
 
-fn atoms(text: &str) -> Vec<Atom> {
+/// 譯文裡的連結記號 ☺序號☻：回傳序號與記號長度。
+fn link_marker(s: &str) -> Option<(usize, usize)> {
+    let (open, close) = (cp437::TABLE[LINK_OPEN as usize], cp437::TABLE[LINK_CLOSE as usize]);
+    let body = s.strip_prefix(open)?;
+    let end = body.find(close)?;
+    Some((body[..end].parse().ok()?, open.len_utf8() + end + close.len_utf8()))
+}
+
+/// links[k] 是第 k 個連結各字的格數：連結記號展開成這些字，字間一個空白（遊戲照英文畫，可以在字間換行）。
+fn atoms(text: &str, links: &[Vec<usize>]) -> Vec<Atom> {
     let mut out = Vec::new();
     let mut run = String::new();
     let flush = |run: &mut String, out: &mut Vec<Atom>| {
@@ -182,6 +279,17 @@ fn atoms(text: &str) -> Vec<Atom> {
         if let Some((color, n)) = color_marker(rest) {
             flush(&mut run, &mut out);
             out.push(Atom::Color(color));
+            rest = &rest[n..];
+            continue;
+        }
+        if let Some((k, n)) = link_marker(rest) {
+            flush(&mut run, &mut out);
+            for (j, &w) in links.get(k).into_iter().flatten().enumerate() {
+                if j > 0 {
+                    out.push(Atom::Space);
+                }
+                out.push(Atom::Link(k, j, w));
+            }
             rest = &rest[n..];
             continue;
         }
@@ -215,14 +323,23 @@ fn atoms(text: &str) -> Vec<Atom> {
 /// 換行後的一段：(px, py, 文字, 顏色)。同一行中途換顏色就拆成兩段。
 pub type Segment = (i32, i32, String, [u8; 3]);
 
+/// 換行後連結字的位置：(第幾個連結, 連結裡第幾個字, px, py)。
+type Placed = (usize, usize, i32, i32);
+
 /// 依中文規則換行，回傳每段的位置、文字與顏色：base 是整段底色（RGB），[C:…] 之後改用標記的顏色（跨行延續），
 /// 標記的顏色由 rgb 換算。和遊戲的排版一致：[R] 換行、[B] 再空一行、[P] 換行並縮排四格；
 /// 中文字之間不加空白，英數之間的空白保留；行首不放 NO_START 標點、行尾不放 NO_END 標點。
 pub fn wrap(text: &str, width: usize, base: [u8; 3], rgb: impl Fn([u8; 3]) -> [u8; 3]) -> Vec<Segment> {
+    wrap_links(text, width, base, rgb, &[]).0
+}
+
+/// 同 wrap，另外排譯文裡的連結記號：links[k] 是第 k 個連結各字的格數。回傳的段不含連結字，連結字的位置另外回傳。
+fn wrap_links(text: &str, width: usize, base: [u8; 3], rgb: impl Fn([u8; 3]) -> [u8; 3], links: &[Vec<usize>]) -> (Vec<Segment>, Vec<Placed>) {
+    /// 一行裡的各段：(文字, 格數, 顏色, 連結字)；連結字的文字是空的
     struct Line {
         px: usize,
         py: i32,
-        parts: Vec<(String, usize, [u8; 3])>,
+        parts: Vec<(String, usize, [u8; 3], Option<(usize, usize)>)>,
     }
     let width = width.max(4);
     let mut lines: Vec<Line> = Vec::new();
@@ -230,91 +347,112 @@ pub fn wrap(text: &str, width: usize, base: [u8; 3], rgb: impl Fn([u8; 3]) -> [u
     let mut space = false;
     let mut color = base;
     let new_line = |lines: &mut Vec<Line>, px: usize, py: i32| lines.push(Line { px, py, parts: Vec::new() });
-    for atom in atoms(text) {
-        match atom {
-            Atom::Color(c) => color = rgb(c),
-            Atom::NewLine => remaining = 0,
+    for atom in atoms(text, links) {
+        let (t, w, link) = match atom {
+            Atom::Color(c) => {
+                color = rgb(c);
+                continue;
+            }
+            Atom::NewLine => {
+                remaining = 0;
+                continue;
+            }
             Atom::Blank => {
                 remaining = 0;
                 x = 0;
                 y += 1;
+                continue;
             }
             Atom::Indent => {
                 remaining = width;
                 x = 4;
                 y += 1;
                 new_line(&mut lines, x, y);
+                continue;
             }
-            Atom::Space => space = lines.last().is_some_and(|l| l.py == y && !l.parts.is_empty()),
-            Atom::Text(t, w) => {
-                let gap = usize::from(space);
-                space = false;
-                if remaining < w + gap {
-                    // 換行；標點不放行首：把上一行最後一個字一起帶下來
-                    let carry = if NO_START.contains(t.as_str()) {
-                        lines.last_mut().filter(|l| l.parts.len() > 1).and_then(|l| l.parts.pop())
-                    } else {
-                        // 上一行以開括號結尾：括號移到下一行
-                        lines.last_mut().filter(|l| l.parts.len() > 1 && NO_END.contains(l.parts.last().unwrap().0.as_str()))
-                            .and_then(|l| l.parts.pop())
-                    };
-                    y += 1;
-                    x = 0;
-                    remaining = width;
-                    new_line(&mut lines, 0, y);
-                    if let Some(c) = carry {
-                        x += c.1;
-                        remaining -= c.1.min(remaining);
-                        lines.last_mut().unwrap().parts.push(c);
-                    }
-                    if w > remaining {
-                        // 比整行還長的英數：硬切
-                        let mut chunk = String::new();
-                        for ch in t.chars() {
-                            if remaining == 0 {
-                                let n = chunk.chars().count();
-                                lines.last_mut().unwrap().parts.push((std::mem::take(&mut chunk), n, color));
-                                y += 1;
-                                x = 0;
-                                remaining = width;
-                                new_line(&mut lines, 0, y);
-                            }
-                            chunk.push(ch);
-                            remaining -= 1;
-                        }
+            Atom::Space => {
+                space = lines.last().is_some_and(|l| l.py == y && !l.parts.is_empty());
+                continue;
+            }
+            Atom::Text(t, w) => (t, w, None),
+            Atom::Link(k, j, w) => (String::new(), w, Some((k, j))),
+        };
+        let gap = usize::from(space);
+        space = false;
+        if remaining < w + gap {
+            // 換行；標點不放行首：把上一行最後一個字一起帶下來
+            let carry = if link.is_none() && NO_START.contains(t.as_str()) {
+                lines.last_mut().filter(|l| l.parts.len() > 1).and_then(|l| l.parts.pop())
+            } else {
+                // 上一行以開括號結尾：括號移到下一行
+                lines.last_mut()
+                    .filter(|l| l.parts.len() > 1 && l.parts.last().is_some_and(|p| !p.0.is_empty() && NO_END.contains(p.0.as_str())))
+                    .and_then(|l| l.parts.pop())
+            };
+            y += 1;
+            x = 0;
+            remaining = width;
+            new_line(&mut lines, 0, y);
+            if let Some(c) = carry {
+                x += c.1;
+                remaining -= c.1.min(remaining);
+                lines.last_mut().unwrap().parts.push(c);
+            }
+            if w > remaining && link.is_none() {
+                // 比整行還長的英數：硬切（連結字由遊戲照英文整個畫，不切）
+                let mut chunk = String::new();
+                for ch in t.chars() {
+                    if remaining == 0 {
                         let n = chunk.chars().count();
-                        x += n;
-                        lines.last_mut().unwrap().parts.push((chunk, n, color));
-                        continue;
+                        lines.last_mut().unwrap().parts.push((std::mem::take(&mut chunk), n, color, None));
+                        y += 1;
+                        x = 0;
+                        remaining = width;
+                        new_line(&mut lines, 0, y);
                     }
-                } else if lines.last().is_none_or(|l| l.py != y) {
-                    new_line(&mut lines, x, y);
-                } else if gap == 1 {
-                    // 空白跟前一個字同色，才不會多拆出一段；空白也佔一格
-                    let line = lines.last_mut().unwrap();
-                    let prev = line.parts.last().map_or(color, |p| p.2);
-                    line.parts.push((" ".to_owned(), 1, prev));
-                    x += 1;
+                    chunk.push(ch);
                     remaining -= 1;
                 }
-                x += w;
-                remaining -= w;
-                lines.last_mut().unwrap().parts.push((t, w, color));
+                let n = chunk.chars().count();
+                x += n;
+                lines.last_mut().unwrap().parts.push((chunk, n, color, None));
+                continue;
             }
+        } else if lines.last().is_none_or(|l| l.py != y) {
+            new_line(&mut lines, x, y);
+        } else if gap == 1 {
+            // 空白跟前一個字同色，才不會多拆出一段；空白也佔一格
+            let line = lines.last_mut().unwrap();
+            let prev = line.parts.last().map_or(color, |p| p.2);
+            line.parts.push((" ".to_owned(), 1, prev, None));
+            x += 1;
+            remaining -= 1;
         }
+        x += w;
+        remaining = remaining.saturating_sub(w);
+        lines.last_mut().unwrap().parts.push((t, w, color, link));
     }
     let mut out: Vec<Segment> = Vec::new();
+    let mut placed: Vec<Placed> = Vec::new();
     for line in lines {
         let mut px = line.px as i32;
-        for (i, (text, w, c)) in line.parts.into_iter().enumerate() {
-            match out.last_mut() {
-                Some(seg) if i > 0 && seg.3 == c => seg.2.push_str(&text),
-                _ => out.push((px, line.py, text, c)),
+        // 這一段能不能接在 out 最後一段後面：同一行、中間沒有連結字
+        let mut join = false;
+        for (text, w, c, link) in line.parts {
+            if let Some((k, j)) = link {
+                placed.push((k, j, px, line.py));
+                join = false;
+            } else if join && out.last().is_some_and(|seg| seg.3 == c) {
+                out.last_mut().unwrap().2.push_str(&text);
+            } else if join || text != " " {
+                // 連結字後面的空白不必畫
+                out.push((px, line.py, text, c));
+                join = true;
             }
             px += w as i32;
         }
     }
-    out
+    (out, placed)
 }
 
 /// 排版函式跑完後呼叫：依譯文訂好這個段落每個單字的畫字計畫。回傳 true 表示這段有譯文。
@@ -333,16 +471,24 @@ pub unsafe fn rewrite(mtb: usize, dict: &Dict, note_miss: impl FnOnce(&[u8])) ->
             return s.translated; // 已排過、寬度沒變：計畫還有效
         }
         let pal = palette(l);
-        let plans = plain_text(words, l, pal.as_ref())
-            .and_then(|key| {
-                let t = dict.translate_paragraph(&key);
-                if t.is_none() {
+        // (每個單字的計畫, 有連結時每個單字的新座標)
+        let planned = plain_text(words, l, pal.as_ref()).and_then(|(key, links)| {
+            // 句型漏掉或重複了名字也算沒翻：連結字沒有位置可放
+            let Some(t) = dict.translate_paragraph(&key).filter(|t| dict::link_order(t, links.len()).is_some()) else {
+                if links.is_empty() {
                     note_miss(&key);
+                } else {
+                    note_miss(&readable(&key, words, &links, l));
                 }
-                t
-            })
-            .and_then(|t| plan_words(words, width, &t, dict, l, pal.as_ref()));
-        let translated = plans.is_some();
+                return None;
+            };
+            if links.is_empty() {
+                plan_words(words, width, &t, dict, l, pal.as_ref()).map(|p| (p, None))
+            } else {
+                plan_links(words, width, &t, dict, l, pal.as_ref(), &links).map(|(p, pos)| (p, Some(pos)))
+            }
+        });
+        let translated = planned.is_some();
         let mut table = WORDS.lock();
         if let Some(old) = states.remove(&mtb) {
             for w in old.words {
@@ -354,7 +500,11 @@ pub unsafe fn rewrite(mtb: usize, dict: &Dict, note_miss: impl FnOnce(&[u8])) ->
             states.clear();
         }
         for (i, &w) in words.iter().enumerate() {
-            let plan = plans.as_ref().map_or(Plan::Plain, |p| p[i].clone());
+            let plan = planned.as_ref().map_or(Plan::Plain, |(p, _)| p[i].clone());
+            if let Some((_, Some(pos))) = &planned {
+                write(w, l.word_px, pos[i].0);
+                write(w, l.word_py, pos[i].1);
+            }
             table.insert(w + l.word_str, (read(w, l.word_px), read(w, l.word_py), plan));
         }
         states.insert(mtb, State { words: words.to_vec(), width, translated });
@@ -393,6 +543,84 @@ unsafe fn plan_words(words: &[usize], width: i32, translation: &str, dict: &Dict
     }
 }
 
+/// 有連結的段落：連結字（遊戲照英文畫、依座標判斷點擊）搬到中文裡名字的位置，其他單字當載體畫中文，回傳計畫與每個單字的新座標。
+/// 遊戲畫字與判斷點擊都照單字順序掃、碰到第一個列超出框底的單字就停，所以載體由上而下一列一個，
+/// 而且後面的連結字列都不比它小；不畫的單字搬到第 -1 列（和換行標記一樣），不會擋住掃描。
+/// 連結字頭尾黏著的標點（見 Link）不畫：那個字改由 hook 畫去掉標點的名字，點擊範圍照遊戲（多出標點那幾格）。
+/// 缺字圖或沒有能當載體的單字時回傳 None（照畫英文）。
+/// ponytail: 中文把名字的先後換過、又剛好分在兩列時，前面的連結字列比較大，框底剛好切在兩列之間時
+/// 後面那列不畫、名字點不到（捲一列就恢復）；要完全正確得 hook 畫字與點擊的迴圈。
+unsafe fn plan_links(words: &[usize], width: i32, translation: &str, dict: &Dict, l: &MtbLayout, pal: Option<&Palette>,
+                     links: &[Link]) -> Option<(Vec<Plan>, Vec<(i32, i32)>)> {
+    unsafe {
+        let mut is_link = vec![false; words.len()];
+        for &i in links.iter().flat_map(|k| &k.words) {
+            is_link[i] = true;
+        }
+        // 可以搬的單字（不是連結字也不是換行標記）與其中能當載體的（字串不是空的）
+        let movable: Vec<bool> = words.iter().enumerate().map(|(i, &w)| !is_link[i] && read::<u32>(w, l.word_flags) & MARKERS == 0).collect();
+        let carrier = |i: usize| movable[i] && !str_bytes(words[i] + l.word_str).is_empty();
+        let base: [u8; 3] = read(words[(0..words.len()).find(|&i| carrier(i))?], l.word_red);
+        let widths: Vec<Vec<usize>> = links.iter().map(|k| (0..k.words.len()).map(|j| k.name(j, words, l).len()).collect()).collect();
+        let (segments, placed) = wrap_links(translation, width.max(1) as usize, base, |c| pal.map_or(base, |p| marker_rgb(p, c)), &widths);
+        let mut pos: Vec<(i32, i32)> = words.iter().map(|&w| (read(w, l.word_px), read(w, l.word_py))).collect();
+        let mut link_plans: Vec<Option<Plan>> = vec![None; words.len()];
+        for (k, j, px, py) in placed {
+            let link = &links[k];
+            let i = link.words[j];
+            pos[i] = (px, py);
+            let whole = (j > 0 || link.head == 0) && (j + 1 < link.words.len() || link.tail == 0);
+            link_plans[i] = Some(if whole {
+                Plan::Plain
+            } else {
+                // 去掉標點的名字由 hook 畫；顏色沿用遊戲畫這個連結字時設好的連結色
+                let entry = dict.text_entry(&cp437::decode(link.name(j, words, l)))?;
+                Plan::Draw(vec![Piece { dx: 0, dy: 0, color: None, entry }].into())
+            });
+        }
+        // 每一列的中文：(列, [(px, 字, 顏色)])；換行後的段依列排好
+        let mut rows: Vec<(i32, Vec<(i32, Entry, [u8; 3])>)> = Vec::new();
+        for (px, py, text, color) in segments {
+            let entry = dict.text_entry(&text)?;
+            match rows.last_mut() {
+                Some((row, pieces)) if *row == py => pieces.push((px, entry, color)),
+                _ => rows.push((py, vec![(px, entry, color)])),
+            }
+        }
+        // after[i]：第 i 個單字起，後面連結字最小的列
+        let mut after = vec![i32::MAX; words.len() + 1];
+        for i in (0..words.len()).rev() {
+            after[i] = if is_link[i] { after[i + 1].min(pos[i].1) } else { after[i + 1] };
+        }
+        let mut pieces: Vec<Vec<Piece>> = (0..words.len()).map(|_| Vec::new()).collect();
+        let mut rows = rows.into_iter().peekable();
+        let mut last = None;
+        for i in 0..words.len() {
+            if !movable[i] {
+                continue;
+            }
+            pos[i].1 = -1;
+            if carrier(i) && rows.peek().is_some_and(|(row, _)| *row <= after[i + 1]) {
+                let (row, segs) = rows.next().unwrap();
+                let x0 = segs[0].0;
+                pos[i] = (x0, row);
+                pieces[i] = segs.into_iter().map(|(px, entry, color)| Piece { dx: px - x0, dy: 0, color: Some(color), entry }).collect();
+                last = Some(i);
+            }
+        }
+        // 後面只剩連結字時，剩下的列交給最後一個載體，畫在它下面
+        for (row, segs) in rows {
+            let i = last?;
+            let (x0, y0) = pos[i];
+            pieces[i].extend(segs.into_iter().map(|(px, entry, color)| Piece { dx: px - x0, dy: row - y0, color: Some(color), entry }));
+        }
+        let plans = pieces.into_iter().zip(link_plans)
+            .map(|(p, link)| link.unwrap_or_else(|| if p.is_empty() { Plan::Skip } else { Plan::Draw(p.into()) }))
+            .collect();
+        Some((plans, pos))
+    }
+}
+
 /// 畫字 hook 用：這個字串是段落單字時，回傳它的畫字計畫。
 /// 單字釋放後位址可能給別的字串用，所以座標也要和排版時相同才算；讀的位置在原本單字結構的範圍內。
 pub unsafe fn word_plan(s: usize) -> Option<Plan> {
@@ -406,10 +634,6 @@ pub unsafe fn word_plan(s: usize) -> Option<Plan> {
 #[cfg(test)]
 mod tests {
     use super::*;
-
-    unsafe fn write<T>(base: usize, offset: usize, v: T) {
-        unsafe { *((base + offset) as *mut T) = v }
-    }
 
     const GRAY: [u8; 3] = [7, 0, 0];
 
@@ -458,6 +682,15 @@ mod tests {
                 (0, 1, "大地進擊吧".to_owned(), GREEN),
             ]
         );
+    }
+
+    #[test]
+    fn link_words_are_laid_out_inside_the_chinese_text() {
+        // 「由」＋連結兩字（Urist 5 格、McDwarf 7 格，字間一格）＋「製作的雕像」，寬 20 格
+        let (segs, placed) = wrap_links("由☺0☻製作的雕像", 20, GRAY, |c| c, &[vec![5, 7]]);
+        let segs: Vec<String> = segs.into_iter().map(|(px, py, t, _)| format!("{px},{py}:{t}")).collect();
+        assert_eq!(segs, ["0,0:由", "15,0:製作", "0,1:的雕像"], "連結字後面另起一段，不和前面的中文接在一起");
+        assert_eq!(placed, [(0, 0, 2, 0), (0, 1, 8, 0)]);
     }
 
     /// 假的段落：單字 56 bytes（MSVC std::string 32 bytes＋顏色、連結、座標、旗標），段落只用單字向量與寬度。
@@ -529,6 +762,74 @@ mod tests {
             Some(Plan::Skip) => "skip",
             Some(Plan::Draw(_)) => "draw",
             None => "none",
+        }
+    }
+
+    unsafe fn set_link(p: &Fake, i: usize, link: i32) {
+        unsafe { write(p.words[i], 36, link) }
+    }
+
+    fn pos(w: usize) -> (i32, i32) {
+        unsafe { (read(w, 40), read(w, 44)) }
+    }
+
+    #[test]
+    fn link_words_move_to_the_name_and_carriers_keep_scan_order() {
+        let mut d = Dict::default();
+        assert!(d.set_glyphs("這是製作的杯子。", vec![0; 16]));
+        d.load_rules_tsv("A mug by {1}.\t這是{1}製作的杯子。\n");
+        unsafe {
+            let p = Fake::new(&[("A", 7), ("mug", 7), ("by", 7), ("Urist", 7), (".", 7)], 10);
+            set_link(&p, 3, 0);
+            assert!(rewrite(p.mtb, &d, |_| {}));
+            // 寬 10 格：第 0 列「這是Urist」、第 1 列「製作的杯」、第 2 列「子。」（「。」不放行首）
+            assert_eq!((plan_of(p.words[3]), pos(p.words[3])), ("plain", (4, 0)), "連結字搬到「這是」後面，遊戲照這裡畫、判斷點擊");
+            assert_eq!(str_bytes(p.words[3]), b"Urist", "字串不動");
+            assert_eq!((plan_of(p.words[0]), pos(p.words[0])), ("draw", (0, 0)));
+            // 畫字迴圈照單字順序掃、碰到列超出框底的就停：第 1 列的載體要在連結字（第 0 列）後面，
+            // 連結字前面不畫的單字搬到第 -1 列
+            assert_eq!((plan_of(p.words[1]), pos(p.words[1]).1), ("skip", -1));
+            assert_eq!((plan_of(p.words[4]), pos(p.words[4])), ("draw", (0, 1)));
+            let Some(Plan::Draw(rest)) = word_plan(p.words[4]) else { panic!("「.」要畫第 1 列") };
+            assert_eq!(rest.iter().map(|p| (p.dx, p.dy)).collect::<Vec<_>>(), [(0, 0), (0, 1)], "後面沒有單字了，第 2 列也由它畫");
+        }
+    }
+
+    #[test]
+    fn untranslated_link_paragraphs_log_names_and_stay_in_place() {
+        let d = Dict::default();
+        unsafe {
+            let p = Fake::new(&[("Made", 7), ("by", 7), ("Urist", 7), ("McDwarf", 7), (".", 7)], 40);
+            set_link(&p, 2, 0);
+            set_link(&p, 3, 0);
+            let mut logged = String::new();
+            assert!(!rewrite(p.mtb, &d, |k| logged = cp437::decode(k)));
+            assert_eq!(logged, "Made by ☺Urist McDwarf☻.", "未翻譯紀錄寫名字，t -m 可以直接查");
+            assert_eq!((plan_of(p.words[2]), pos(p.words[2])), ("plain", (8, 0)));
+        }
+    }
+
+    #[test]
+    fn punctuation_stuck_to_link_words_moves_out_of_the_name() {
+        assert_eq!(link_trim(b"Mangemined."), (0, 1));
+        assert_eq!(link_trim(b"Urist's"), (0, 2));
+        assert_eq!(link_trim(b"(Urist),"), (1, 2));
+        assert_eq!(link_trim(b"."), (0, 0), "整個字都是標點時不切");
+        let mut d = Dict::default();
+        assert!(d.set_glyphs("年，定居於。", vec![0; 12]));
+        d.load_rules_tsv("In {#1}, {2} settled in {3}.\t{1}年，{2}定居於{3}。\n");
+        unsafe {
+            // 遊戲把 [/LPAGE] 後面的句號算進連結字「Mangemined.」：句型看到的句號在記號外面，中文版面裡不畫這個句號
+            let p = Fake::new(&[("In", 7), ("1,", 7), ("Onsmost", 7), ("settled", 7), ("in", 7), ("Mangemined.", 7)], 40);
+            set_link(&p, 2, 0);
+            set_link(&p, 5, 1);
+            assert!(rewrite(p.mtb, &d, |_| {}));
+            // 「1年，」5 格、Onsmost 7 格、「定居於」6 格，Mangemined 10 格後面接「。」
+            assert_eq!((plan_of(p.words[2]), pos(p.words[2])), ("plain", (5, 0)));
+            let Some(Plan::Draw(name)) = word_plan(p.words[5]) else { panic!("帶句號的連結字改由 hook 畫名字") };
+            assert_eq!((name[0].entry.text.as_str(), name[0].color, pos(p.words[5])), ("Mangemined", None, (18, 0)));
+            let Some(Plan::Draw(row)) = word_plan(p.words[0]) else { panic!("第一個單字畫中文") };
+            assert_eq!(row.iter().map(|p| (p.dx, p.entry.text.as_str())).collect::<Vec<_>>(), [(0, "1年，"), (12, "定居於"), (28, "。")]);
         }
     }
 

@@ -7,12 +7,14 @@
 //! 每句輸出一行：譯文（原文有換色標記時譯文也標出顏色），或「缺：」加查不到的句子（以 ｜ 分隔）。
 //! 語言後面加 `-w`：照畫字 hook（addst 等）只查整句字典與句型、不切句，給介面字串做前後比對。
 //! 加 `-m`：照段落框（mtb：彈出訊息、說明頁）：整段查不到就在 [B]／[R]／[P] 分段，單空白句界還原成兩個空白後逐句查。
+//!   可以點的連結（人名、地名）寫成 `☺名稱☻`：照引擎換成記號再查，譯文裡換回名稱；句型漏掉或重複名稱時算缺。
 //! 加 `-s`：照警報清單、提示這類 wrap_text 的段落：整段查不到就逐句查（含引號包住的引言），標記不處理。
 
 use std::io::BufRead;
 use std::path::Path;
 
-use dflang::{cp437, ctb, dict::Dict};
+use dflang::dict::{self, Dict, LINK_CLOSE, LINK_OPEN};
+use dflang::{cp437, ctb};
 
 /// data/<kind>/*.tsv（欄位 en, zh-Hant, zh-Hans, align, note）換成引擎讀的「原文<TAB>譯文<TAB>對齊」
 fn engine_tsv(dir: &Path, lang: &str) -> String {
@@ -35,6 +37,24 @@ fn engine_tsv(dir: &Path, lang: &str) -> String {
         }
     }
     out
+}
+
+/// 樣本裡的 `☺名稱☻` 換成引擎的連結記號 `☺序號☻`（見 dict::LINK_OPEN）：回傳記號化的原文與名稱。
+fn link_tokens(raw: &[u8]) -> (Vec<u8>, Vec<String>) {
+    let mut key = Vec::with_capacity(raw.len());
+    let mut names = Vec::new();
+    let mut rest = raw;
+    while let Some(i) = rest.iter().position(|&c| c == LINK_OPEN) {
+        let Some(j) = rest[i..].iter().position(|&c| c == LINK_CLOSE) else { break };
+        key.extend_from_slice(&rest[..i]);
+        key.push(LINK_OPEN);
+        key.extend_from_slice(names.len().to_string().as_bytes());
+        key.push(LINK_CLOSE);
+        names.push(cp437::decode(&rest[i + 1..i + j]));
+        rest = &rest[i + j + 1..];
+    }
+    key.extend_from_slice(rest);
+    (key, names)
 }
 
 fn main() {
@@ -64,9 +84,17 @@ fn main() {
             println!("缺：（原文有 CP437 以外的字）{text}");
             continue;
         };
-        if whole || para {
-            let t = if para { dict.translate_paragraph(&raw) } else { dict.translate_text(&raw) };
-            println!("{}", t.unwrap_or_else(|| "缺：".to_owned()));
+        if para {
+            let (key, names) = link_tokens(&raw);
+            match dict.translate_paragraph(&key) {
+                None => println!("缺："),
+                Some(t) if dict::link_order(&t, names.len()).is_none() => println!("缺：連結名稱漏掉或重複：{t}"),
+                Some(t) => println!("{}", names.iter().enumerate().fold(t, |t, (k, n)| t.replace(&format!("☺{k}☻"), &format!("☺{n}☻")))),
+            }
+            continue;
+        }
+        if whole {
+            println!("{}", dict.translate_text(&raw).unwrap_or_else(|| "缺：".to_owned()));
             continue;
         }
         if wrap {

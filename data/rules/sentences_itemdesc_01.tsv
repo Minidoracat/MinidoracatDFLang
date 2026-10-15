@@ -1,0 +1,33 @@
+en	zh-Hant	zh-Hans	align	note
+masterful {%1} created by an unknown artisan	無名工匠製作的大師級{1}	无名工匠制作的大师级{1}	inner	FUN_140c75000 1858131：物品說明開頭句，品質 5 而製作者已不在世界紀錄
+masterful {%1} created by {2}	{2}製作的大師級{1}	{2}制作的大师级{1}	inner	FUN_140c75000 1858134–1858147：物品說明開頭句，品質 5；{2} 製作者名（傳說頁是 HF 連結）
+masterfully prepared {%1} created by an unknown artisan	無名工匠烹製的大師級{1}	无名工匠烹制的大师级{1}	inner	FUN_140c75000 1858099／1858131：料理品質 5
+masterfully prepared {%1} created by {2}	{2}烹製的大師級{1}	{2}烹制的大师级{1}	inner	FUN_140c75000 1858099／1858134：料理品質 5；{2} 製作者名（傳說頁是 HF 連結）
+superiorly prepared {%1}	上等{1}	上等{1}	inner	FUN_140c75000 1858092：料理品質 3（其餘品質前綴在 sentences_itemdesc_02）
+exceptional prepared {%1}	卓越{1}	卓越{1}	inner	FUN_140c75000 1858095：料理品質 4，遊戲原文少了 -ly
+{%1} Barrel ({%2})	一桶{1}（{2}製）	一桶{1}（{2}制）	inner	FUN_140c65450 物品名：裝了東西的桶「內容物 Barrel (材料)」，物品說明開頭句用
+{%1} Bag ({%2})	一袋{1}（{2}製）	一袋{1}（{2}制）	inner	FUN_140c65450 物品名：裝了東西的袋子「內容物 Bag (材料)」，物品說明開頭句用；術語例外：bag；「一袋」是量詞
+This is a stack of {#1} {%2}.	這是一堆{2}，共 {1} 份。	这是一堆{2}，共 {1} 份。		FUN_140c75000 1858071–1858077：物品說明開頭句，一疊物品
+This is a stack of {%1}.	這是一堆{1}。	这是一堆{1}。		FUN_140c75000 1858071：物品說明開頭句，一疊物品（數量不大於 1）
+This is a bundle of {%1}.	這是一捆{1}。	这是一捆{1}。		FUN_140c75000 1858044：物品說明開頭句，一捆
+These are {#1} bundles of {%2}.	這些是 {1} 捆{2}。	这些是 {1} 捆{2}。		FUN_140c75000 1858047–1858050：物品說明開頭句，多捆
+These are {%1}.	這些是{1}。	这些是{1}。		FUN_140c75000 1858056：物品說明開頭句，複數物品（種子、菌種）
+This is {%1}.	這是{1}。	这是{1}。		FUN_140c75000 1858058–1858066：物品說明開頭句；{1} 含 a／an（由 articles 去掉）、品質、物品名、created by
+All {~1}ship is of the highest quality.	每一處做工都屬最高品質。	每一处做工都属最高品质。		FUN_140c75000 1858152–1858166：奇異心境做出的神器；{1} 是 craftsdwarf／craftsman 等，譯文省略
+It is sized for {%1}.	這是按{1}的體型製作的。	这是按{1}的体型制作的。		FUN_140c75000 1858175：衣物、盔甲尺寸；{1} 生物名複數
+It is made from {%1}.	以{1}製成。	以{1}制成。		FUN_140c75000 1859288／1859348、FUN_140cacd70 1893553：材料句；{1} 品質＋材料（布料是「X cloth」）
+The handle is made from {%1}.	握柄以{1}製成。	握柄以{1}制成。		FUN_140c75000 1858972：專用改良（握柄）
+The rollers are made from {%1}.	滾軸以{1}製成。	滚轴以{1}制成。		FUN_140c75000 1858978：專用改良（滾軸）
+The rope is {%1}.	繩索以{1}製成。	绳索以{1}制成。		FUN_140c75000 1858982：專用改良（繩索）；{1} 品質＋材料
+The chain is {%1}.	鏈條以{1}製成。	链条以{1}制成。		FUN_140c75000 1858986：專用改良（鏈條）；{1} 品質＋材料
+The body is made from {%1}.	主體以{1}製成。	主体以{1}制成。		FUN_140c75000 樂器／工具零件的材料句；body 單獨查會變成身體部位「身體」，所以寫死；須排在 The {%1} is made from {%2}. 前
+The {%1} is made from {%2}.	{1}以{2}製成。	{1}以{2}制成。		FUN_140c75000 1858867–1858950：樂器零件；{1} 零件名，{2} 品質＋材料（品質 5 接 by 製作者）
+The {%1} are made from {%2}.	{1}以{2}製成。	{1}以{2}制成。		FUN_140c75000 1858884：樂器零件（複數名稱）
+It is spattered with {%1}.	表面濺有{1}。	表面溅有{1}。		FUN_140c75000 1860227–1860246：沾染物，數量少於 100
+It is coated with {%1}.	表面覆有一層{1}。	表面覆有一层{1}。		FUN_140c75000 1860227–1860246：沾染物，數量 100 以上
+When used as a dye, it produces {%1}.	用作染料時可染出{1+色}。	用作染料时可染出{1+色}。		FUN_140c75000 1860072：染料；{1} 顏色名
+The slab reads "I am {1}, once of the Underworld. By {2}, I bind myself to this place.".	石板上寫著：「吾乃{1}，昔日出自冥界。藉{2}之力，吾將自身束縛於此地。」。	石板上写着：“吾乃{1}，昔日出自冥界。借{2}之力，吾将自身束缚于此地。”。		惡魔石板的刻文（FUN_140be1450 1760882：I am 名字, once of the Underworld.  By 協助者, I bind myself to this place.）；{1} 惡魔名、{2} 協助召喚的人物；須排在 The slab reads "{1}". 前
+The slab reads "I am {1}, once of the Underworld. I bind myself to this place.".	石板上寫著：「吾乃{1}，昔日出自冥界。吾將自身束縛於此地。」。	石板上写着：“吾乃{1}，昔日出自冥界。吾将自身束缚于此地。”。		同上，沒有協助者
+The slab reads "I am {1}, once of the Underworld.  By {2}, I bind myself to this place.".	石板上寫著：「吾乃{1}，昔日出自冥界。藉{2}之力，吾將自身束縛於此地。」。	石板上写着：“吾乃{1}，昔日出自冥界。借{2}之力，吾将自身束缚于此地。”。		同上，石板刻文照程式原樣（句間兩個空白，要塞物品頁會照原樣畫）
+The slab reads "I am {1}, once of the Underworld.  I bind myself to this place.".	石板上寫著：「吾乃{1}，昔日出自冥界。吾將自身束縛於此地。」。	石板上写着：“吾乃{1}，昔日出自冥界。吾将自身束缚于此地。”。		同上，沒有協助者，句間兩個空白
+The slab reads "{1}".	石板上寫著：「{1}」。	石板上写着：“{1}”。		FUN_140c75000 1860112：石板刻字；{1} 刻文（紀念文由別的函式拼成，能翻就翻）

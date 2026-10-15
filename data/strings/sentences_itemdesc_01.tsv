@@ -1,0 +1,11 @@
+en	zh-Hant	zh-Hans	align	note
+This object is showing some wear.	這件物品有些磨損。	这件物品有些磨损。		FUN_140c75000 1860177：物品說明，磨損 1
+This object is heavily worn.	這件物品磨損嚴重。	这件物品磨损严重。		FUN_140c75000 1860182：物品說明，磨損 2（非布料）
+This object is mangled.	這件物品已嚴重損壞。	这件物品已严重损坏。		FUN_140c75000 1860187：物品說明，磨損 3（非布料）
+This object is threadbare.	這件物品已磨得露出織線。	这件物品已磨得露出织线。		FUN_140c75000 1860209：物品說明，磨損 2（布料、絲、毛等材料）
+This object is in tatters.	這件物品已破爛不堪。	这件物品已破烂不堪。		FUN_140c75000 1860214：物品說明，磨損 3（布料、絲、毛等材料）
+There is writing on this item, but you cannot read.	這件物品上寫有文字，但你不識字。	这件物品上写有文字，但你不识字。		FUN_140c75000 1859574：物品說明，冒險模式不識字
+There is writing on this item which you have not read.	這件物品上有你還沒讀過的文字。	这件物品上有你还没读过的文字。		FUN_140c75000 1859594：物品說明，冒險模式
+There is writing in the book, but you cannot read.	書裡寫有文字，但你不識字。	书里写有文字，但你不识字。		FUN_140c75000 1859687：物品說明，書，冒險模式不識字
+You have not read this book.	你還沒讀過這本書。	你还没读过这本书。		FUN_140c75000 1859706：物品說明，書，冒險模式
+There is writing on the slab, but you cannot read.	石板上刻有文字，但你不識字。	石板上刻有文字，但你不识字。		FUN_140c75000 1860093：物品說明，石板，冒險模式不識字
