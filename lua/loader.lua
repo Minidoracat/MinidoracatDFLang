@@ -352,6 +352,9 @@ local function start()
     -- 冒險者開局畫面的外觀、性格段落（遊戲自己切行）；找不到只有這幾段維持英文
     ok, err = attach_hooks(engine, dir, {'adv_appearance', 'adv_personality'})
     if not ok then fail('%s；冒險者開局畫面的外觀與性格維持英文', err) end
+    -- 冒險模式上方的訊息框（交談紀錄，遊戲自己切行）；找不到只有這個框維持英文
+    ok, err = attach_hooks(engine, dir, {'adv_log', 'adv_talk_log'})
+    if not ok then fail('%s；冒險模式的交談紀錄維持英文', err) end
     -- 彩色文字框（人物頁的想法、記憶、性格）；找不到只有這些維持英文
     if ctb_ok then
         ok, err = attach_hooks(engine, dir, {'ctb_add_string'})

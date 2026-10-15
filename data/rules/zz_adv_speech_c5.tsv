@@ -1,0 +1,458 @@
+en	zh-Hant	zh-Hans	align	note
+{1} will be appearing.	{1}將會出現。	{1}将会出现。		FUN_140659090 L877906 預言句：appear，will be＋-ing；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was appearing.	{1}當時正在出現。	{1}当时正在出现。		FUN_140659090 L877906 預言句：appear，was＋-ing（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is appearing.	{1}正在出現。	{1}正在出现。		FUN_140659090 L877906 預言句：appear，is＋-ing；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will appear.	{1}將會出現。	{1}将会出现。		FUN_140659090 L877906 預言句：appear，未來式；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} appeared.	{1}出現了。	{1}出现了。		FUN_140659090 L877906 預言句：appear，過去式；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} appears.	{1}出現。	{1}出现。		FUN_140659090 L877906 預言句：appear，現在式第三人稱；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be destroying {2}.	{1}將會摧毀{2}。	{1}将会摧毁{2}。		FUN_140659090 L877906 預言句：destroy＋受詞，will be＋-ing；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was destroying {2}.	{1}當時正在摧毀{2}。	{1}当时正在摧毁{2}。		FUN_140659090 L877906 預言句：destroy＋受詞，was＋-ing（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is destroying {2}.	{1}正在摧毀{2}。	{1}正在摧毁{2}。		FUN_140659090 L877906 預言句：destroy＋受詞，is＋-ing；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will destroy {2}.	{1}將會摧毀{2}。	{1}将会摧毁{2}。		FUN_140659090 L877906 預言句：destroy＋受詞，未來式；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} destroyed me.	{1}摧毀了我。	{1}摧毁了我。		FUN_140659090 L877906 預言句：destroy＋受詞，過去式，受詞 me；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} destroyed you.	{1}摧毀了你。	{1}摧毁了你。		FUN_140659090 L877906 預言句：destroy＋受詞，過去式，受詞 you；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} destroyed {^2}.	{1}摧毀了{2}。	{1}摧毁了{2}。		FUN_140659090 L877906 預言句：destroy＋受詞，過去式，受詞是名字：用 {^2} 只收大寫開頭的名字，免得吃掉被動句「X was destroyed by …」；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} destroys me.	{1}摧毀我。	{1}摧毁我。		FUN_140659090 L877906 預言句：destroy＋受詞，現在式第三人稱，受詞 me；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} destroys you.	{1}摧毀你。	{1}摧毁你。		FUN_140659090 L877906 預言句：destroy＋受詞，現在式第三人稱，受詞 you；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} destroys {^2}.	{1}摧毀{2}。	{1}摧毁{2}。		FUN_140659090 L877906 預言句：destroy＋受詞，現在式第三人稱，受詞是名字：用 {^2} 只收大寫開頭的名字，免得吃掉被動句「X was destroyed by …」；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be speaking to {2}.	{1}將會對{2}說話。	{1}将会对{2}说话。		FUN_140659090 L877906 預言句：speak＋受詞，will be＋-ing；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was speaking to {2}.	{1}當時正在對{2}說話。	{1}当时正在对{2}说话。		FUN_140659090 L877906 預言句：speak＋受詞，was＋-ing（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is speaking to {2}.	{1}正在對{2}說話。	{1}正在对{2}说话。		FUN_140659090 L877906 預言句：speak＋受詞，is＋-ing；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will speak to {2}.	{1}將會對{2}說話。	{1}将会对{2}说话。		FUN_140659090 L877906 預言句：speak＋受詞，未來式；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} speaks to me.	{1}對我說話。	{1}对我说话。		FUN_140659090 L877906 預言句：speak＋受詞，現在式第三人稱，受詞 me；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} speaks to you.	{1}對你說話。	{1}对你说话。		FUN_140659090 L877906 預言句：speak＋受詞，現在式第三人稱，受詞 you；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} speaks to {^2}.	{1}對{2}說話。	{1}对{2}说话。		FUN_140659090 L877906 預言句：speak＋受詞，現在式第三人稱，受詞是名字：用 {^2} 只收大寫開頭的名字，免得吃掉被動句「X was destroyed by …」；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be speaking.	{1}將會開口說話。	{1}将会开口说话。		FUN_140659090 L877906 預言句：speak，will be＋-ing；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was speaking.	{1}當時正在開口說話。	{1}当时正在开口说话。		FUN_140659090 L877906 預言句：speak，was＋-ing（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is speaking.	{1}正在開口說話。	{1}正在开口说话。		FUN_140659090 L877906 預言句：speak，is＋-ing；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will speak.	{1}將會開口說話。	{1}将会开口说话。		FUN_140659090 L877906 預言句：speak，未來式；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} spoke.	{1}開口說話了。	{1}开口说话了。		FUN_140659090 L877906 預言句：speak，過去式；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} speaks.	{1}開口說話。	{1}开口说话。		FUN_140659090 L877906 預言句：speak，現在式第三人稱；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be burning {2}.	{1}將會焚燒{2}。	{1}将会焚烧{2}。		FUN_140659090 L877906 預言句：burn＋受詞，will be＋-ing；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was burning {2}.	{1}當時正在焚燒{2}。	{1}当时正在焚烧{2}。		FUN_140659090 L877906 預言句：burn＋受詞，was＋-ing（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will burn {2}.	{1}將會焚燒{2}。	{1}将会焚烧{2}。		FUN_140659090 L877906 預言句：burn＋受詞，未來式；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} burned me.	{1}焚燒了我。	{1}焚烧了我。		FUN_140659090 L877906 預言句：burn＋受詞，過去式，受詞 me；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} burned you.	{1}焚燒了你。	{1}焚烧了你。		FUN_140659090 L877906 預言句：burn＋受詞，過去式，受詞 you；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} burned {^2}.	{1}焚燒了{2}。	{1}焚烧了{2}。		FUN_140659090 L877906 預言句：burn＋受詞，過去式，受詞是名字：用 {^2} 只收大寫開頭的名字，免得吃掉被動句「X was destroyed by …」；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} burns me.	{1}焚燒我。	{1}焚烧我。		FUN_140659090 L877906 預言句：burn＋受詞，現在式第三人稱，受詞 me；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} burns you.	{1}焚燒你。	{1}焚烧你。		FUN_140659090 L877906 預言句：burn＋受詞，現在式第三人稱，受詞 you；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} burns {^2}.	{1}焚燒{2}。	{1}焚烧{2}。		FUN_140659090 L877906 預言句：burn＋受詞，現在式第三人稱，受詞是名字：用 {^2} 只收大寫開頭的名字，免得吃掉被動句「X was destroyed by …」；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be burning.	{1}將會燃燒。	{1}将会燃烧。		FUN_140659090 L877906 預言句：burn，will be＋-ing；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was burning.	{1}當時正在燃燒。	{1}当时正在燃烧。		FUN_140659090 L877906 預言句：burn，was＋-ing（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will burn.	{1}將會燃燒。	{1}将会燃烧。		FUN_140659090 L877906 預言句：burn，未來式；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} burns.	{1}燃燒。	{1}燃烧。		FUN_140659090 L877906 預言句：burn，現在式第三人稱；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be flooding {2}.	{1}將會淹沒{2}。	{1}将会淹没{2}。		FUN_140659090 L877906 預言句：flood＋受詞，will be＋-ing；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was flooding {2}.	{1}當時正在淹沒{2}。	{1}当时正在淹没{2}。		FUN_140659090 L877906 預言句：flood＋受詞，was＋-ing（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is flooding {2}.	{1}正在淹沒{2}。	{1}正在淹没{2}。		FUN_140659090 L877906 預言句：flood＋受詞，is＋-ing；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will flood {2}.	{1}將會淹沒{2}。	{1}将会淹没{2}。		FUN_140659090 L877906 預言句：flood＋受詞，未來式；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} flooded me.	{1}淹沒了我。	{1}淹没了我。		FUN_140659090 L877906 預言句：flood＋受詞，過去式，受詞 me；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} flooded you.	{1}淹沒了你。	{1}淹没了你。		FUN_140659090 L877906 預言句：flood＋受詞，過去式，受詞 you；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} flooded {^2}.	{1}淹沒了{2}。	{1}淹没了{2}。		FUN_140659090 L877906 預言句：flood＋受詞，過去式，受詞是名字：用 {^2} 只收大寫開頭的名字，免得吃掉被動句「X was destroyed by …」；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} floods me.	{1}淹沒我。	{1}淹没我。		FUN_140659090 L877906 預言句：flood＋受詞，現在式第三人稱，受詞 me；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} floods you.	{1}淹沒你。	{1}淹没你。		FUN_140659090 L877906 預言句：flood＋受詞，現在式第三人稱，受詞 you；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} floods {^2}.	{1}淹沒{2}。	{1}淹没{2}。		FUN_140659090 L877906 預言句：flood＋受詞，現在式第三人稱，受詞是名字：用 {^2} 只收大寫開頭的名字，免得吃掉被動句「X was destroyed by …」；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be flooding.	{1}將會遭洪水淹沒。	{1}将会遭洪水淹没。		FUN_140659090 L877906 預言句：flood，will be＋-ing；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was flooding.	{1}當時正在遭洪水淹沒。	{1}当时正在遭洪水淹没。		FUN_140659090 L877906 預言句：flood，was＋-ing（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is flooding.	{1}正在遭洪水淹沒。	{1}正在遭洪水淹没。		FUN_140659090 L877906 預言句：flood，is＋-ing；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will flood.	{1}將會遭洪水淹沒。	{1}将会遭洪水淹没。		FUN_140659090 L877906 預言句：flood，未來式；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} floods.	{1}遭洪水淹沒。	{1}遭洪水淹没。		FUN_140659090 L877906 預言句：flood，現在式第三人稱；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be rewarding {2}.	{1}將會獎賞{2}。	{1}将会奖赏{2}。		FUN_140659090 L877906 預言句：reward＋受詞，will be＋-ing；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was rewarding {2}.	{1}當時正在獎賞{2}。	{1}当时正在奖赏{2}。		FUN_140659090 L877906 預言句：reward＋受詞，was＋-ing（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is rewarding {2}.	{1}正在獎賞{2}。	{1}正在奖赏{2}。		FUN_140659090 L877906 預言句：reward＋受詞，is＋-ing；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will reward {2}.	{1}將會獎賞{2}。	{1}将会奖赏{2}。		FUN_140659090 L877906 預言句：reward＋受詞，未來式；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} rewarded me.	{1}獎賞了我。	{1}奖赏了我。		FUN_140659090 L877906 預言句：reward＋受詞，過去式，受詞 me；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} rewarded you.	{1}獎賞了你。	{1}奖赏了你。		FUN_140659090 L877906 預言句：reward＋受詞，過去式，受詞 you；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} rewarded {^2}.	{1}獎賞了{2}。	{1}奖赏了{2}。		FUN_140659090 L877906 預言句：reward＋受詞，過去式，受詞是名字：用 {^2} 只收大寫開頭的名字，免得吃掉被動句「X was destroyed by …」；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} rewards me.	{1}獎賞我。	{1}奖赏我。		FUN_140659090 L877906 預言句：reward＋受詞，現在式第三人稱，受詞 me；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} rewards you.	{1}獎賞你。	{1}奖赏你。		FUN_140659090 L877906 預言句：reward＋受詞，現在式第三人稱，受詞 you；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} rewards {^2}.	{1}獎賞{2}。	{1}奖赏{2}。		FUN_140659090 L877906 預言句：reward＋受詞，現在式第三人稱，受詞是名字：用 {^2} 只收大寫開頭的名字，免得吃掉被動句「X was destroyed by …」；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is in acceptance.	{1}坦然接受。	{1}坦然接受。		FUN_140659090 L877906 預言句：情緒 in acceptance，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was in acceptance.	{1}曾坦然接受。	{1}曾坦然接受。		FUN_140659090 L877906 預言句：情緒 in acceptance，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be in acceptance.	{1}將會坦然接受。	{1}将会坦然接受。		FUN_140659090 L877906 預言句：情緒 in acceptance，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is in adoration.	{1}滿懷愛慕。	{1}满怀爱慕。		FUN_140659090 L877906 預言句：情緒 in adoration，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was in adoration.	{1}曾滿懷愛慕。	{1}曾满怀爱慕。		FUN_140659090 L877906 預言句：情緒 in adoration，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be in adoration.	{1}將會滿懷愛慕。	{1}将会满怀爱慕。		FUN_140659090 L877906 預言句：情緒 in adoration，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is feeling affection.	{1}感到溫情。	{1}感到温情。		FUN_140659090 L877906 預言句：情緒 feeling affection，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was feeling affection.	{1}曾感到溫情。	{1}曾感到温情。		FUN_140659090 L877906 預言句：情緒 feeling affection，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be feeling affection.	{1}將會感到溫情。	{1}将会感到温情。		FUN_140659090 L877906 預言句：情緒 feeling affection，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is agitated.	{1}感到焦躁。	{1}感到焦躁。		FUN_140659090 L877906 預言句：情緒 agitated，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was agitated.	{1}曾感到焦躁。	{1}曾感到焦躁。		FUN_140659090 L877906 預言句：情緒 agitated，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be agitated.	{1}將會感到焦躁。	{1}将会感到焦躁。		FUN_140659090 L877906 預言句：情緒 agitated，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is aggravated.	{1}感到氣惱。	{1}感到气恼。		FUN_140659090 L877906 預言句：情緒 aggravated，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was aggravated.	{1}曾感到氣惱。	{1}曾感到气恼。		FUN_140659090 L877906 預言句：情緒 aggravated，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be aggravated.	{1}將會感到氣惱。	{1}将会感到气恼。		FUN_140659090 L877906 預言句：情緒 aggravated，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is in agony.	{1}深感痛苦。	{1}深感痛苦。		FUN_140659090 L877906 預言句：情緒 in agony，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was in agony.	{1}曾深感痛苦。	{1}曾深感痛苦。		FUN_140659090 L877906 預言句：情緒 in agony，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be in agony.	{1}將會深感痛苦。	{1}将会深感痛苦。		FUN_140659090 L877906 預言句：情緒 in agony，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is alarmed.	{1}感到驚慌。	{1}感到惊慌。		FUN_140659090 L877906 預言句：情緒 alarmed，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was alarmed.	{1}曾感到驚慌。	{1}曾感到惊慌。		FUN_140659090 L877906 預言句：情緒 alarmed，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be alarmed.	{1}將會感到驚慌。	{1}将会感到惊慌。		FUN_140659090 L877906 預言句：情緒 alarmed，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is feeling alienated.	{1}感到疏離。	{1}感到疏离。		FUN_140659090 L877906 預言句：情緒 feeling alienated，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was feeling alienated.	{1}曾感到疏離。	{1}曾感到疏离。		FUN_140659090 L877906 預言句：情緒 feeling alienated，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be feeling alienated.	{1}將會感到疏離。	{1}将会感到疏离。		FUN_140659090 L877906 預言句：情緒 feeling alienated，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is amazed.	{1}感到驚奇。	{1}感到惊奇。		FUN_140659090 L877906 預言句：情緒 amazed，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was amazed.	{1}曾感到驚奇。	{1}曾感到惊奇。		FUN_140659090 L877906 預言句：情緒 amazed，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be amazed.	{1}將會感到驚奇。	{1}将会感到惊奇。		FUN_140659090 L877906 預言句：情緒 amazed，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is feeling ambivalent.	{1}感到矛盾。	{1}感到矛盾。		FUN_140659090 L877906 預言句：情緒 feeling ambivalent，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was feeling ambivalent.	{1}曾感到矛盾。	{1}曾感到矛盾。		FUN_140659090 L877906 預言句：情緒 feeling ambivalent，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be feeling ambivalent.	{1}將會感到矛盾。	{1}将会感到矛盾。		FUN_140659090 L877906 預言句：情緒 feeling ambivalent，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is amused.	{1}感到好笑。	{1}感到好笑。		FUN_140659090 L877906 預言句：情緒 amused，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was amused.	{1}曾感到好笑。	{1}曾感到好笑。		FUN_140659090 L877906 預言句：情緒 amused，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be amused.	{1}將會感到好笑。	{1}将会感到好笑。		FUN_140659090 L877906 預言句：情緒 amused，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is angry.	{1}感到憤怒。	{1}感到愤怒。		FUN_140659090 L877906 預言句：情緒 angry，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was angry.	{1}曾感到憤怒。	{1}曾感到愤怒。		FUN_140659090 L877906 預言句：情緒 angry，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be angry.	{1}將會感到憤怒。	{1}将会感到愤怒。		FUN_140659090 L877906 預言句：情緒 angry，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is in existential crisis.	{1}陷入存在危機。	{1}陷入存在危机。		FUN_140659090 L877906 預言句：情緒 in existential crisis，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was in existential crisis.	{1}曾陷入存在危機。	{1}曾陷入存在危机。		FUN_140659090 L877906 預言句：情緒 in existential crisis，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be in existential crisis.	{1}將會陷入存在危機。	{1}将会陷入存在危机。		FUN_140659090 L877906 預言句：情緒 in existential crisis，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is anguished.	{1}感到揪心。	{1}感到揪心。		FUN_140659090 L877906 預言句：情緒 anguished，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was anguished.	{1}曾感到揪心。	{1}曾感到揪心。		FUN_140659090 L877906 預言句：情緒 anguished，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be anguished.	{1}將會感到揪心。	{1}将会感到揪心。		FUN_140659090 L877906 預言句：情緒 anguished，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is annoyed.	{1}感到心煩。	{1}感到心烦。		FUN_140659090 L877906 預言句：情緒 annoyed，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was annoyed.	{1}曾感到心煩。	{1}曾感到心烦。		FUN_140659090 L877906 預言句：情緒 annoyed，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be annoyed.	{1}將會感到心煩。	{1}将会感到心烦。		FUN_140659090 L877906 預言句：情緒 annoyed，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is anxious.	{1}感到焦慮。	{1}感到焦虑。		FUN_140659090 L877906 預言句：情緒 anxious，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was anxious.	{1}曾感到焦慮。	{1}曾感到焦虑。		FUN_140659090 L877906 預言句：情緒 anxious，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be anxious.	{1}將會感到焦慮。	{1}将会感到焦虑。		FUN_140659090 L877906 預言句：情緒 anxious，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is feeling apathetic.	{1}感到冷漠。	{1}感到冷漠。		FUN_140659090 L877906 預言句：情緒 feeling apathetic，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was feeling apathetic.	{1}曾感到冷漠。	{1}曾感到冷漠。		FUN_140659090 L877906 預言句：情緒 feeling apathetic，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be feeling apathetic.	{1}將會感到冷漠。	{1}将会感到冷漠。		FUN_140659090 L877906 預言句：情緒 feeling apathetic，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is aroused.	{1}感到動情。	{1}感到动情。		FUN_140659090 L877906 預言句：情緒 aroused，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was aroused.	{1}曾感到動情。	{1}曾感到动情。		FUN_140659090 L877906 預言句：情緒 aroused，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be aroused.	{1}將會感到動情。	{1}将会感到动情。		FUN_140659090 L877906 預言句：情緒 aroused，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is astonished.	{1}感到驚訝。	{1}感到惊讶。		FUN_140659090 L877906 預言句：情緒 astonished，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was astonished.	{1}曾感到驚訝。	{1}曾感到惊讶。		FUN_140659090 L877906 預言句：情緒 astonished，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be astonished.	{1}將會感到驚訝。	{1}将会感到惊讶。		FUN_140659090 L877906 預言句：情緒 astonished，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is feeling aversion.	{1}感到反感。	{1}感到反感。		FUN_140659090 L877906 預言句：情緒 feeling aversion，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was feeling aversion.	{1}曾感到反感。	{1}曾感到反感。		FUN_140659090 L877906 預言句：情緒 feeling aversion，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be feeling aversion.	{1}將會感到反感。	{1}将会感到反感。		FUN_140659090 L877906 預言句：情緒 feeling aversion，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is awed.	{1}感到敬畏。	{1}感到敬畏。		FUN_140659090 L877906 預言句：情緒 awed，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was awed.	{1}曾感到敬畏。	{1}曾感到敬畏。		FUN_140659090 L877906 預言句：情緒 awed，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be awed.	{1}將會感到敬畏。	{1}将会感到敬畏。		FUN_140659090 L877906 預言句：情緒 awed，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is bitter.	{1}感到苦澀。	{1}感到苦涩。		FUN_140659090 L877906 預言句：情緒 bitter，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was bitter.	{1}曾感到苦澀。	{1}曾感到苦涩。		FUN_140659090 L877906 預言句：情緒 bitter，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be bitter.	{1}將會感到苦澀。	{1}将会感到苦涩。		FUN_140659090 L877906 預言句：情緒 bitter，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is blissful.	{1}感到幸福。	{1}感到幸福。		FUN_140659090 L877906 預言句：情緒 blissful，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was blissful.	{1}曾感到幸福。	{1}曾感到幸福。		FUN_140659090 L877906 預言句：情緒 blissful，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be blissful.	{1}將會感到幸福。	{1}将会感到幸福。		FUN_140659090 L877906 預言句：情緒 blissful，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is bored.	{1}感到無聊。	{1}感到无聊。		FUN_140659090 L877906 預言句：情緒 bored，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was bored.	{1}曾感到無聊。	{1}曾感到无聊。		FUN_140659090 L877906 預言句：情緒 bored，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be bored.	{1}將會感到無聊。	{1}将会感到无聊。		FUN_140659090 L877906 預言句：情緒 bored，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is feeling caring.	{1}感到憐惜。	{1}感到怜惜。		FUN_140659090 L877906 預言句：情緒 feeling caring，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was feeling caring.	{1}曾感到憐惜。	{1}曾感到怜惜。		FUN_140659090 L877906 預言句：情緒 feeling caring，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be feeling caring.	{1}將會感到憐惜。	{1}将会感到怜惜。		FUN_140659090 L877906 預言句：情緒 feeling caring，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is confused.	{1}感到困惑。	{1}感到困惑。		FUN_140659090 L877906 預言句：情緒 confused，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was confused.	{1}曾感到困惑。	{1}曾感到困惑。		FUN_140659090 L877906 預言句：情緒 confused，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be confused.	{1}將會感到困惑。	{1}将会感到困惑。		FUN_140659090 L877906 預言句：情緒 confused，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is contemptuous.	{1}感到輕蔑。	{1}感到轻蔑。		FUN_140659090 L877906 預言句：情緒 contemptuous，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was contemptuous.	{1}曾感到輕蔑。	{1}曾感到轻蔑。		FUN_140659090 L877906 預言句：情緒 contemptuous，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be contemptuous.	{1}將會感到輕蔑。	{1}将会感到轻蔑。		FUN_140659090 L877906 預言句：情緒 contemptuous，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is content.	{1}感到滿足。	{1}感到满足。		FUN_140659090 L877906 預言句：情緒 content，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was content.	{1}曾感到滿足。	{1}曾感到满足。		FUN_140659090 L877906 預言句：情緒 content，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be content.	{1}將會感到滿足。	{1}将会感到满足。		FUN_140659090 L877906 預言句：情緒 content，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is feeling defeated.	{1}感到被擊垮。	{1}感到被击垮。		FUN_140659090 L877906 預言句：情緒 feeling defeated，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was feeling defeated.	{1}曾感到被擊垮。	{1}曾感到被击垮。		FUN_140659090 L877906 預言句：情緒 feeling defeated，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be feeling defeated.	{1}將會感到被擊垮。	{1}将会感到被击垮。		FUN_140659090 L877906 預言句：情緒 feeling defeated，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is dejected.	{1}感到沮喪。	{1}感到沮丧。		FUN_140659090 L877906 預言句：情緒 dejected，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was dejected.	{1}曾感到沮喪。	{1}曾感到沮丧。		FUN_140659090 L877906 預言句：情緒 dejected，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be dejected.	{1}將會感到沮喪。	{1}将会感到沮丧。		FUN_140659090 L877906 預言句：情緒 dejected，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is delighted.	{1}感到欣喜。	{1}感到欣喜。		FUN_140659090 L877906 預言句：情緒 delighted，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was delighted.	{1}曾感到欣喜。	{1}曾感到欣喜。		FUN_140659090 L877906 預言句：情緒 delighted，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be delighted.	{1}將會感到欣喜。	{1}将会感到欣喜。		FUN_140659090 L877906 預言句：情緒 delighted，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is in despair.	{1}陷入絕望。	{1}陷入绝望。		FUN_140659090 L877906 預言句：情緒 in despair，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was in despair.	{1}曾陷入絕望。	{1}曾陷入绝望。		FUN_140659090 L877906 預言句：情緒 in despair，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be in despair.	{1}將會陷入絕望。	{1}将会陷入绝望。		FUN_140659090 L877906 預言句：情緒 in despair，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is disappointed.	{1}感到失望。	{1}感到失望。		FUN_140659090 L877906 預言句：情緒 disappointed，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was disappointed.	{1}曾感到失望。	{1}曾感到失望。		FUN_140659090 L877906 預言句：情緒 disappointed，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be disappointed.	{1}將會感到失望。	{1}将会感到失望。		FUN_140659090 L877906 預言句：情緒 disappointed，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is disgusted.	{1}感到厭惡。	{1}感到厌恶。		FUN_140659090 L877906 預言句：情緒 disgusted，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was disgusted.	{1}曾感到厭惡。	{1}曾感到厌恶。		FUN_140659090 L877906 預言句：情緒 disgusted，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be disgusted.	{1}將會感到厭惡。	{1}将会感到厌恶。		FUN_140659090 L877906 預言句：情緒 disgusted，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is disillusioned.	{1}感到幻滅。	{1}感到幻灭。		FUN_140659090 L877906 預言句：情緒 disillusioned，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was disillusioned.	{1}曾感到幻滅。	{1}曾感到幻灭。		FUN_140659090 L877906 預言句：情緒 disillusioned，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be disillusioned.	{1}將會感到幻滅。	{1}将会感到幻灭。		FUN_140659090 L877906 預言句：情緒 disillusioned，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is feeling dislike.	{1}感到厭煩。	{1}感到厌烦。		FUN_140659090 L877906 預言句：情緒 feeling dislike，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was feeling dislike.	{1}曾感到厭煩。	{1}曾感到厌烦。		FUN_140659090 L877906 預言句：情緒 feeling dislike，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be feeling dislike.	{1}將會感到厭煩。	{1}将会感到厌烦。		FUN_140659090 L877906 預言句：情緒 feeling dislike，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is dismayed.	{1}感到驚惶。	{1}感到惊惶。		FUN_140659090 L877906 預言句：情緒 dismayed，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was dismayed.	{1}曾感到驚惶。	{1}曾感到惊惶。		FUN_140659090 L877906 預言句：情緒 dismayed，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be dismayed.	{1}將會感到驚惶。	{1}将会感到惊惶。		FUN_140659090 L877906 預言句：情緒 dismayed，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is displeased.	{1}感到不悅。	{1}感到不悦。		FUN_140659090 L877906 預言句：情緒 displeased，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was displeased.	{1}曾感到不悅。	{1}曾感到不悦。		FUN_140659090 L877906 預言句：情緒 displeased，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be displeased.	{1}將會感到不悅。	{1}将会感到不悦。		FUN_140659090 L877906 預言句：情緒 displeased，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is distressed.	{1}感到苦惱。	{1}感到苦恼。		FUN_140659090 L877906 預言句：情緒 distressed，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was distressed.	{1}曾感到苦惱。	{1}曾感到苦恼。		FUN_140659090 L877906 預言句：情緒 distressed，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be distressed.	{1}將會感到苦惱。	{1}将会感到苦恼。		FUN_140659090 L877906 預言句：情緒 distressed，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is in doubt.	{1}心存懷疑。	{1}心存怀疑。		FUN_140659090 L877906 預言句：情緒 in doubt，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was in doubt.	{1}曾心存懷疑。	{1}曾心存怀疑。		FUN_140659090 L877906 預言句：情緒 in doubt，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be in doubt.	{1}將會心存懷疑。	{1}将会心存怀疑。		FUN_140659090 L877906 預言句：情緒 in doubt，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is eager.	{1}感到渴望。	{1}感到渴望。		FUN_140659090 L877906 預言句：情緒 eager，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was eager.	{1}曾感到渴望。	{1}曾感到渴望。		FUN_140659090 L877906 預言句：情緒 eager，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be eager.	{1}將會感到渴望。	{1}将会感到渴望。		FUN_140659090 L877906 預言句：情緒 eager，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is elated.	{1}感到高興。	{1}感到高兴。		FUN_140659090 L877906 預言句：情緒 elated，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was elated.	{1}曾感到高興。	{1}曾感到高兴。		FUN_140659090 L877906 預言句：情緒 elated，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be elated.	{1}將會感到高興。	{1}将会感到高兴。		FUN_140659090 L877906 預言句：情緒 elated，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is embarrassed.	{1}感到尷尬。	{1}感到尴尬。		FUN_140659090 L877906 預言句：情緒 embarrassed，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was embarrassed.	{1}曾感到尷尬。	{1}曾感到尴尬。		FUN_140659090 L877906 預言句：情緒 embarrassed，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be embarrassed.	{1}將會感到尷尬。	{1}将会感到尴尬。		FUN_140659090 L877906 預言句：情緒 embarrassed，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is empathetic.	{1}感到共鳴。	{1}感到共鸣。		FUN_140659090 L877906 預言句：情緒 empathetic，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was empathetic.	{1}曾感到共鳴。	{1}曾感到共鸣。		FUN_140659090 L877906 預言句：情緒 empathetic，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be empathetic.	{1}將會感到共鳴。	{1}将会感到共鸣。		FUN_140659090 L877906 預言句：情緒 empathetic，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is feeling empty.	{1}感到空虛。	{1}感到空虚。		FUN_140659090 L877906 預言句：情緒 feeling empty，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was feeling empty.	{1}曾感到空虛。	{1}曾感到空虚。		FUN_140659090 L877906 預言句：情緒 feeling empty，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be feeling empty.	{1}將會感到空虛。	{1}将会感到空虚。		FUN_140659090 L877906 預言句：情緒 feeling empty，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is feeling enjoyment.	{1}感到樂趣。	{1}感到乐趣。		FUN_140659090 L877906 預言句：情緒 feeling enjoyment，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was feeling enjoyment.	{1}曾感到樂趣。	{1}曾感到乐趣。		FUN_140659090 L877906 預言句：情緒 feeling enjoyment，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be feeling enjoyment.	{1}將會感到樂趣。	{1}将会感到乐趣。		FUN_140659090 L877906 預言句：情緒 feeling enjoyment，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is enthusiastic.	{1}感到熱切。	{1}感到热切。		FUN_140659090 L877906 預言句：情緒 enthusiastic，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was enthusiastic.	{1}曾感到熱切。	{1}曾感到热切。		FUN_140659090 L877906 預言句：情緒 enthusiastic，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be enthusiastic.	{1}將會感到熱切。	{1}将会感到热切。		FUN_140659090 L877906 預言句：情緒 enthusiastic，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is euphoric.	{1}感到狂喜。	{1}感到狂喜。		FUN_140659090 L877906 預言句：情緒 euphoric，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was euphoric.	{1}曾感到狂喜。	{1}曾感到狂喜。		FUN_140659090 L877906 預言句：情緒 euphoric，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be euphoric.	{1}將會感到狂喜。	{1}将会感到狂喜。		FUN_140659090 L877906 預言句：情緒 euphoric，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is exasperated.	{1}感到惱怒。	{1}感到恼怒。		FUN_140659090 L877906 預言句：情緒 exasperated，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was exasperated.	{1}曾感到惱怒。	{1}曾感到恼怒。		FUN_140659090 L877906 預言句：情緒 exasperated，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be exasperated.	{1}將會感到惱怒。	{1}将会感到恼怒。		FUN_140659090 L877906 預言句：情緒 exasperated，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is excited.	{1}感到興奮。	{1}感到兴奋。		FUN_140659090 L877906 預言句：情緒 excited，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was excited.	{1}曾感到興奮。	{1}曾感到兴奋。		FUN_140659090 L877906 預言句：情緒 excited，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be excited.	{1}將會感到興奮。	{1}将会感到兴奋。		FUN_140659090 L877906 預言句：情緒 excited，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is exhilarated.	{1}感到振奮。	{1}感到振奋。		FUN_140659090 L877906 預言句：情緒 exhilarated，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was exhilarated.	{1}曾感到振奮。	{1}曾感到振奋。		FUN_140659090 L877906 預言句：情緒 exhilarated，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be exhilarated.	{1}將會感到振奮。	{1}将会感到振奋。		FUN_140659090 L877906 預言句：情緒 exhilarated，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is feeling expectant.	{1}感到期待。	{1}感到期待。		FUN_140659090 L877906 預言句：情緒 feeling expectant，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was feeling expectant.	{1}曾感到期待。	{1}曾感到期待。		FUN_140659090 L877906 預言句：情緒 feeling expectant，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be feeling expectant.	{1}將會感到期待。	{1}将会感到期待。		FUN_140659090 L877906 預言句：情緒 feeling expectant，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is afraid.	{1}感到害怕。	{1}感到害怕。		FUN_140659090 L877906 預言句：情緒 afraid，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was afraid.	{1}曾感到害怕。	{1}曾感到害怕。		FUN_140659090 L877906 預言句：情緒 afraid，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be afraid.	{1}將會感到害怕。	{1}将会感到害怕。		FUN_140659090 L877906 預言句：情緒 afraid，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is feeling ferocious.	{1}兇性大發。	{1}凶性大发。		FUN_140659090 L877906 預言句：情緒 feeling ferocious，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was feeling ferocious.	{1}曾兇性大發。	{1}曾凶性大发。		FUN_140659090 L877906 預言句：情緒 feeling ferocious，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be feeling ferocious.	{1}將會兇性大發。	{1}将会凶性大发。		FUN_140659090 L877906 預言句：情緒 feeling ferocious，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is feeling fond.	{1}感到喜愛。	{1}感到喜爱。		FUN_140659090 L877906 預言句：情緒 feeling fond，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was feeling fond.	{1}曾感到喜愛。	{1}曾感到喜爱。		FUN_140659090 L877906 預言句：情緒 feeling fond，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be feeling fond.	{1}將會感到喜愛。	{1}将会感到喜爱。		FUN_140659090 L877906 預言句：情緒 feeling fond，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is feeling free.	{1}感到自由。	{1}感到自由。		FUN_140659090 L877906 預言句：情緒 feeling free，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was feeling free.	{1}曾感到自由。	{1}曾感到自由。		FUN_140659090 L877906 預言句：情緒 feeling free，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be feeling free.	{1}將會感到自由。	{1}将会感到自由。		FUN_140659090 L877906 預言句：情緒 feeling free，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is frightened.	{1}感到驚恐。	{1}感到惊恐。		FUN_140659090 L877906 預言句：情緒 frightened，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was frightened.	{1}曾感到驚恐。	{1}曾感到惊恐。		FUN_140659090 L877906 預言句：情緒 frightened，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be frightened.	{1}將會感到驚恐。	{1}将会感到惊恐。		FUN_140659090 L877906 預言句：情緒 frightened，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is frustrated.	{1}感到挫折。	{1}感到挫败。		FUN_140659090 L877906 預言句：情緒 frustrated，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was frustrated.	{1}曾感到挫折。	{1}曾感到挫败。		FUN_140659090 L877906 預言句：情緒 frustrated，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be frustrated.	{1}將會感到挫折。	{1}将会感到挫败。		FUN_140659090 L877906 預言句：情緒 frustrated，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is feeling gaiety.	{1}感到歡快。	{1}感到欢快。		FUN_140659090 L877906 預言句：情緒 feeling gaiety，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was feeling gaiety.	{1}曾感到歡快。	{1}曾感到欢快。		FUN_140659090 L877906 預言句：情緒 feeling gaiety，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be feeling gaiety.	{1}將會感到歡快。	{1}将会感到欢快。		FUN_140659090 L877906 預言句：情緒 feeling gaiety，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is gleeful.	{1}感到雀躍。	{1}感到雀跃。		FUN_140659090 L877906 預言句：情緒 gleeful，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was gleeful.	{1}曾感到雀躍。	{1}曾感到雀跃。		FUN_140659090 L877906 預言句：情緒 gleeful，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be gleeful.	{1}將會感到雀躍。	{1}将会感到雀跃。		FUN_140659090 L877906 預言句：情緒 gleeful，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is gloomy.	{1}感到陰鬱。	{1}感到阴郁。		FUN_140659090 L877906 預言句：情緒 gloomy，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was gloomy.	{1}曾感到陰鬱。	{1}曾感到阴郁。		FUN_140659090 L877906 預言句：情緒 gloomy，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be gloomy.	{1}將會感到陰鬱。	{1}将会感到阴郁。		FUN_140659090 L877906 預言句：情緒 gloomy，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is glum.	{1}感到鬱悶。	{1}感到郁闷。		FUN_140659090 L877906 預言句：情緒 glum，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was glum.	{1}曾感到鬱悶。	{1}曾感到郁闷。		FUN_140659090 L877906 預言句：情緒 glum，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be glum.	{1}將會感到鬱悶。	{1}将会感到郁闷。		FUN_140659090 L877906 預言句：情緒 glum，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is feeling gratitude.	{1}感到感激。	{1}感到感激。		FUN_140659090 L877906 預言句：情緒 feeling gratitude，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was feeling gratitude.	{1}曾感到感激。	{1}曾感到感激。		FUN_140659090 L877906 預言句：情緒 feeling gratitude，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be feeling gratitude.	{1}將會感到感激。	{1}将会感到感激。		FUN_140659090 L877906 預言句：情緒 feeling gratitude，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is in grief.	{1}深感悲痛。	{1}深感悲痛。		FUN_140659090 L877906 預言句：情緒 in grief，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was in grief.	{1}曾深感悲痛。	{1}曾深感悲痛。		FUN_140659090 L877906 預言句：情緒 in grief，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be in grief.	{1}將會深感悲痛。	{1}将会深感悲痛。		FUN_140659090 L877906 預言句：情緒 in grief，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is feeling grim satisfaction.	{1}感到冷酷的快意。	{1}感到冷酷的快意。		FUN_140659090 L877906 預言句：情緒 feeling grim satisfaction，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was feeling grim satisfaction.	{1}曾感到冷酷的快意。	{1}曾感到冷酷的快意。		FUN_140659090 L877906 預言句：情緒 feeling grim satisfaction，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be feeling grim satisfaction.	{1}將會感到冷酷的快意。	{1}将会感到冷酷的快意。		FUN_140659090 L877906 預言句：情緒 feeling grim satisfaction，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is grouchy.	{1}感到煩躁。	{1}感到烦躁。		FUN_140659090 L877906 預言句：情緒 grouchy，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was grouchy.	{1}曾感到煩躁。	{1}曾感到烦躁。		FUN_140659090 L877906 預言句：情緒 grouchy，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be grouchy.	{1}將會感到煩躁。	{1}将会感到烦躁。		FUN_140659090 L877906 預言句：情緒 grouchy，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is grumpy.	{1}感到不爽。	{1}感到不爽。		FUN_140659090 L877906 預言句：情緒 grumpy，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was grumpy.	{1}曾感到不爽。	{1}曾感到不爽。		FUN_140659090 L877906 預言句：情緒 grumpy，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be grumpy.	{1}將會感到不爽。	{1}将会感到不爽。		FUN_140659090 L877906 預言句：情緒 grumpy，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is feeling guilty.	{1}感到內疚。	{1}感到内疚。		FUN_140659090 L877906 預言句：情緒 feeling guilty，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was feeling guilty.	{1}曾感到內疚。	{1}曾感到内疚。		FUN_140659090 L877906 預言句：情緒 feeling guilty，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be feeling guilty.	{1}將會感到內疚。	{1}将会感到内疚。		FUN_140659090 L877906 預言句：情緒 feeling guilty，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is happy.	{1}感到開心。	{1}感到开心。		FUN_140659090 L877906 預言句：情緒 happy，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was happy.	{1}曾感到開心。	{1}曾感到开心。		FUN_140659090 L877906 預言句：情緒 happy，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be happy.	{1}將會感到開心。	{1}将会感到开心。		FUN_140659090 L877906 預言句：情緒 happy，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is hateful.	{1}感到憎恨。	{1}感到憎恨。		FUN_140659090 L877906 預言句：情緒 hateful，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was hateful.	{1}曾感到憎恨。	{1}曾感到憎恨。		FUN_140659090 L877906 預言句：情緒 hateful，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be hateful.	{1}將會感到憎恨。	{1}将会感到憎恨。		FUN_140659090 L877906 預言句：情緒 hateful，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is taking hope.	{1}燃起希望。	{1}燃起希望。		FUN_140659090 L877906 預言句：情緒 taking hope，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was taking hope.	{1}曾燃起希望。	{1}曾燃起希望。		FUN_140659090 L877906 預言句：情緒 taking hope，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be taking hope.	{1}將會燃起希望。	{1}将会燃起希望。		FUN_140659090 L877906 預言句：情緒 taking hope，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is feeling hopeless.	{1}感到無望。	{1}感到无望。		FUN_140659090 L877906 預言句：情緒 feeling hopeless，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was feeling hopeless.	{1}曾感到無望。	{1}曾感到无望。		FUN_140659090 L877906 預言句：情緒 feeling hopeless，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be feeling hopeless.	{1}將會感到無望。	{1}将会感到无望。		FUN_140659090 L877906 預言句：情緒 feeling hopeless，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is horrified.	{1}感到驚駭。	{1}感到惊骇。		FUN_140659090 L877906 預言句：情緒 horrified，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was horrified.	{1}曾感到驚駭。	{1}曾感到惊骇。		FUN_140659090 L877906 預言句：情緒 horrified，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be horrified.	{1}將會感到驚駭。	{1}将会感到惊骇。		FUN_140659090 L877906 預言句：情緒 horrified，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is humiliated.	{1}感到屈辱。	{1}感到屈辱。		FUN_140659090 L877906 預言句：情緒 humiliated，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was humiliated.	{1}曾感到屈辱。	{1}曾感到屈辱。		FUN_140659090 L877906 預言句：情緒 humiliated，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be humiliated.	{1}將會感到屈辱。	{1}将会感到屈辱。		FUN_140659090 L877906 預言句：情緒 humiliated，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is insulted.	{1}感到受辱。	{1}感到受辱。		FUN_140659090 L877906 預言句：情緒 insulted，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was insulted.	{1}曾感到受辱。	{1}曾感到受辱。		FUN_140659090 L877906 預言句：情緒 insulted，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be insulted.	{1}將會感到受辱。	{1}将会感到受辱。		FUN_140659090 L877906 預言句：情緒 insulted，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is interested.	{1}感到有興趣。	{1}感到有兴趣。		FUN_140659090 L877906 預言句：情緒 interested，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was interested.	{1}曾感到有興趣。	{1}曾感到有兴趣。		FUN_140659090 L877906 預言句：情緒 interested，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be interested.	{1}將會感到有興趣。	{1}将会感到有兴趣。		FUN_140659090 L877906 預言句：情緒 interested，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is irritated.	{1}感到惱火。	{1}感到恼火。		FUN_140659090 L877906 預言句：情緒 irritated，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was irritated.	{1}曾感到惱火。	{1}曾感到恼火。		FUN_140659090 L877906 預言句：情緒 irritated，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be irritated.	{1}將會感到惱火。	{1}将会感到恼火。		FUN_140659090 L877906 預言句：情緒 irritated，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is isolated.	{1}感到孤立。	{1}感到孤立。		FUN_140659090 L877906 預言句：情緒 isolated，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was isolated.	{1}曾感到孤立。	{1}曾感到孤立。		FUN_140659090 L877906 預言句：情緒 isolated，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be isolated.	{1}將會感到孤立。	{1}将会感到孤立。		FUN_140659090 L877906 預言句：情緒 isolated，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is jolly.	{1}感到快活。	{1}感到快活。		FUN_140659090 L877906 預言句：情緒 jolly，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was jolly.	{1}曾感到快活。	{1}曾感到快活。		FUN_140659090 L877906 預言句：情緒 jolly，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be jolly.	{1}將會感到快活。	{1}将会感到快活。		FUN_140659090 L877906 預言句：情緒 jolly，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is jovial.	{1}感到開朗。	{1}感到开朗。		FUN_140659090 L877906 預言句：情緒 jovial，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was jovial.	{1}曾感到開朗。	{1}曾感到开朗。		FUN_140659090 L877906 預言句：情緒 jovial，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be jovial.	{1}將會感到開朗。	{1}将会感到开朗。		FUN_140659090 L877906 預言句：情緒 jovial，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is joyful.	{1}感到喜悅。	{1}感到喜悦。		FUN_140659090 L877906 預言句：情緒 joyful，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was joyful.	{1}曾感到喜悅。	{1}曾感到喜悦。		FUN_140659090 L877906 預言句：情緒 joyful，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be joyful.	{1}將會感到喜悅。	{1}将会感到喜悦。		FUN_140659090 L877906 預言句：情緒 joyful，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is jubilant.	{1}感到歡欣。	{1}感到欢欣。		FUN_140659090 L877906 預言句：情緒 jubilant，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was jubilant.	{1}曾感到歡欣。	{1}曾感到欢欣。		FUN_140659090 L877906 預言句：情緒 jubilant，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be jubilant.	{1}將會感到歡欣。	{1}将会感到欢欣。		FUN_140659090 L877906 預言句：情緒 jubilant，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is feeling loathing.	{1}感到憎惡。	{1}感到憎恶。		FUN_140659090 L877906 預言句：情緒 feeling loathing，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was feeling loathing.	{1}曾感到憎惡。	{1}曾感到憎恶。		FUN_140659090 L877906 預言句：情緒 feeling loathing，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be feeling loathing.	{1}將會感到憎惡。	{1}将会感到憎恶。		FUN_140659090 L877906 預言句：情緒 feeling loathing，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is lonely.	{1}感到孤單。	{1}感到孤独。		FUN_140659090 L877906 預言句：情緒 lonely，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was lonely.	{1}曾感到孤單。	{1}曾感到孤独。		FUN_140659090 L877906 預言句：情緒 lonely，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be lonely.	{1}將會感到孤單。	{1}将会感到孤独。		FUN_140659090 L877906 預言句：情緒 lonely，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is feeling love.	{1}感到愛意。	{1}感到爱意。		FUN_140659090 L877906 預言句：情緒 feeling love，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was feeling love.	{1}曾感到愛意。	{1}曾感到爱意。		FUN_140659090 L877906 預言句：情緒 feeling love，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be feeling love.	{1}將會感到愛意。	{1}将会感到爱意。		FUN_140659090 L877906 預言句：情緒 feeling love，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is lustful.	{1}情慾高漲。	{1}情欲高涨。		FUN_140659090 L877906 預言句：情緒 lustful，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was lustful.	{1}曾情慾高漲。	{1}曾情欲高涨。		FUN_140659090 L877906 預言句：情緒 lustful，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be lustful.	{1}將會情慾高漲。	{1}将会情欲高涨。		FUN_140659090 L877906 預言句：情緒 lustful，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is miserable.	{1}感到悲慘。	{1}感到悲惨。		FUN_140659090 L877906 預言句：情緒 miserable，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was miserable.	{1}曾感到悲慘。	{1}曾感到悲惨。		FUN_140659090 L877906 預言句：情緒 miserable，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be miserable.	{1}將會感到悲慘。	{1}将会感到悲惨。		FUN_140659090 L877906 預言句：情緒 miserable，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is mortified.	{1}感到羞愧難當。	{1}感到羞愧难当。		FUN_140659090 L877906 預言句：情緒 mortified，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was mortified.	{1}曾感到羞愧難當。	{1}曾感到羞愧难当。		FUN_140659090 L877906 預言句：情緒 mortified，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be mortified.	{1}將會感到羞愧難當。	{1}将会感到羞愧难当。		FUN_140659090 L877906 預言句：情緒 mortified，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is nervous.	{1}感到緊張。	{1}感到紧张。		FUN_140659090 L877906 預言句：情緒 nervous，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was nervous.	{1}曾感到緊張。	{1}曾感到紧张。		FUN_140659090 L877906 預言句：情緒 nervous，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be nervous.	{1}將會感到緊張。	{1}将会感到紧张。		FUN_140659090 L877906 預言句：情緒 nervous，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is nostalgic.	{1}感到懷舊。	{1}感到怀旧。		FUN_140659090 L877906 預言句：情緒 nostalgic，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was nostalgic.	{1}曾感到懷舊。	{1}曾感到怀旧。		FUN_140659090 L877906 預言句：情緒 nostalgic，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be nostalgic.	{1}將會感到懷舊。	{1}将会感到怀旧。		FUN_140659090 L877906 預言句：情緒 nostalgic，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is optimistic.	{1}感到樂觀。	{1}感到乐观。		FUN_140659090 L877906 預言句：情緒 optimistic，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was optimistic.	{1}曾感到樂觀。	{1}曾感到乐观。		FUN_140659090 L877906 預言句：情緒 optimistic，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be optimistic.	{1}將會感到樂觀。	{1}将会感到乐观。		FUN_140659090 L877906 預言句：情緒 optimistic，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is outraged.	{1}怒不可遏。	{1}怒不可遏。		FUN_140659090 L877906 預言句：情緒 outraged，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was outraged.	{1}曾怒不可遏。	{1}曾怒不可遏。		FUN_140659090 L877906 預言句：情緒 outraged，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be outraged.	{1}將會怒不可遏。	{1}将会怒不可遏。		FUN_140659090 L877906 預言句：情緒 outraged，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is panicked.	{1}驚慌失措。	{1}惊慌失措。		FUN_140659090 L877906 預言句：情緒 panicked，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was panicked.	{1}曾驚慌失措。	{1}曾惊慌失措。		FUN_140659090 L877906 預言句：情緒 panicked，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be panicked.	{1}將會驚慌失措。	{1}将会惊慌失措。		FUN_140659090 L877906 預言句：情緒 panicked，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is patient.	{1}心平氣和。	{1}心平气和。		FUN_140659090 L877906 預言句：情緒 patient，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was patient.	{1}曾心平氣和。	{1}曾心平气和。		FUN_140659090 L877906 預言句：情緒 patient，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be patient.	{1}將會心平氣和。	{1}将会心平气和。		FUN_140659090 L877906 預言句：情緒 patient，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is passionate.	{1}感到熱情。	{1}感到热情。		FUN_140659090 L877906 預言句：情緒 passionate，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was passionate.	{1}曾感到熱情。	{1}曾感到热情。		FUN_140659090 L877906 預言句：情緒 passionate，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be passionate.	{1}將會感到熱情。	{1}将会感到热情。		FUN_140659090 L877906 預言句：情緒 passionate，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is pessimistic.	{1}感到悲觀。	{1}感到悲观。		FUN_140659090 L877906 預言句：情緒 pessimistic，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was pessimistic.	{1}曾感到悲觀。	{1}曾感到悲观。		FUN_140659090 L877906 預言句：情緒 pessimistic，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be pessimistic.	{1}將會感到悲觀。	{1}将会感到悲观。		FUN_140659090 L877906 預言句：情緒 pessimistic，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is pleased.	{1}感到愉悅。	{1}感到愉悦。		FUN_140659090 L877906 預言句：情緒 pleased，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was pleased.	{1}曾感到愉悅。	{1}曾感到愉悦。		FUN_140659090 L877906 預言句：情緒 pleased，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be pleased.	{1}將會感到愉悅。	{1}将会感到愉悦。		FUN_140659090 L877906 預言句：情緒 pleased，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is proud.	{1}感到自豪。	{1}感到自豪。		FUN_140659090 L877906 預言句：情緒 proud，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was proud.	{1}曾感到自豪。	{1}曾感到自豪。		FUN_140659090 L877906 預言句：情緒 proud，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be proud.	{1}將會感到自豪。	{1}将会感到自豪。		FUN_140659090 L877906 預言句：情緒 proud，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is enraged.	{1}勃然大怒。	{1}勃然大怒。		FUN_140659090 L877906 預言句：情緒 enraged，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was enraged.	{1}曾勃然大怒。	{1}曾勃然大怒。		FUN_140659090 L877906 預言句：情緒 enraged，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be enraged.	{1}將會勃然大怒。	{1}将会勃然大怒。		FUN_140659090 L877906 預言句：情緒 enraged，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is enraptured.	{1}感到陶醉。	{1}感到陶醉。		FUN_140659090 L877906 預言句：情緒 enraptured，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was enraptured.	{1}曾感到陶醉。	{1}曾感到陶醉。		FUN_140659090 L877906 預言句：情緒 enraptured，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be enraptured.	{1}將會感到陶醉。	{1}将会感到陶醉。		FUN_140659090 L877906 預言句：情緒 enraptured，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is feeling rejected.	{1}感到被拒絕。	{1}感到被拒绝。		FUN_140659090 L877906 預言句：情緒 feeling rejected，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was feeling rejected.	{1}曾感到被拒絕。	{1}曾感到被拒绝。		FUN_140659090 L877906 預言句：情緒 feeling rejected，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be feeling rejected.	{1}將會感到被拒絕。	{1}将会感到被拒绝。		FUN_140659090 L877906 預言句：情緒 feeling rejected，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is relieved.	{1}感到如釋重負。	{1}感到如释重负。		FUN_140659090 L877906 預言句：情緒 relieved，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was relieved.	{1}曾感到如釋重負。	{1}曾感到如释重负。		FUN_140659090 L877906 預言句：情緒 relieved，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be relieved.	{1}將會感到如釋重負。	{1}将会感到如释重负。		FUN_140659090 L877906 預言句：情緒 relieved，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is regretful.	{1}感到後悔。	{1}感到后悔。		FUN_140659090 L877906 預言句：情緒 regretful，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was regretful.	{1}曾感到後悔。	{1}曾感到后悔。		FUN_140659090 L877906 預言句：情緒 regretful，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be regretful.	{1}將會感到後悔。	{1}将会感到后悔。		FUN_140659090 L877906 預言句：情緒 regretful，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is remorseful.	{1}感到悔恨。	{1}感到悔恨。		FUN_140659090 L877906 預言句：情緒 remorseful，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was remorseful.	{1}曾感到悔恨。	{1}曾感到悔恨。		FUN_140659090 L877906 預言句：情緒 remorseful，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be remorseful.	{1}將會感到悔恨。	{1}将会感到悔恨。		FUN_140659090 L877906 預言句：情緒 remorseful，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is repentant.	{1}感到懊悔。	{1}感到懊悔。		FUN_140659090 L877906 預言句：情緒 repentant，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was repentant.	{1}曾感到懊悔。	{1}曾感到懊悔。		FUN_140659090 L877906 預言句：情緒 repentant，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be repentant.	{1}將會感到懊悔。	{1}将会感到懊悔。		FUN_140659090 L877906 預言句：情緒 repentant，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is resentful.	{1}感到怨恨。	{1}感到怨恨。		FUN_140659090 L877906 預言句：情緒 resentful，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was resentful.	{1}曾感到怨恨。	{1}曾感到怨恨。		FUN_140659090 L877906 預言句：情緒 resentful，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be resentful.	{1}將會感到怨恨。	{1}将会感到怨恨。		FUN_140659090 L877906 預言句：情緒 resentful，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is indignant.	{1}感到憤慨。	{1}感到愤慨。		FUN_140659090 L877906 預言句：情緒 indignant，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was indignant.	{1}曾感到憤慨。	{1}曾感到愤慨。		FUN_140659090 L877906 預言句：情緒 indignant，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be indignant.	{1}將會感到憤慨。	{1}将会感到愤慨。		FUN_140659090 L877906 預言句：情緒 indignant，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is sad.	{1}感到悲傷。	{1}感到悲伤。		FUN_140659090 L877906 預言句：情緒 sad，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was sad.	{1}曾感到悲傷。	{1}曾感到悲伤。		FUN_140659090 L877906 預言句：情緒 sad，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be sad.	{1}將會感到悲傷。	{1}将会感到悲伤。		FUN_140659090 L877906 預言句：情緒 sad，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is satisfied.	{1}感到滿意。	{1}感到满意。		FUN_140659090 L877906 預言句：情緒 satisfied，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was satisfied.	{1}曾感到滿意。	{1}曾感到满意。		FUN_140659090 L877906 預言句：情緒 satisfied，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be satisfied.	{1}將會感到滿意。	{1}将会感到满意。		FUN_140659090 L877906 預言句：情緒 satisfied，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is feeling self-pity.	{1}感到自憐。	{1}感到自怜。		FUN_140659090 L877906 預言句：情緒 feeling self-pity，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was feeling self-pity.	{1}曾感到自憐。	{1}曾感到自怜。		FUN_140659090 L877906 預言句：情緒 feeling self-pity，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be feeling self-pity.	{1}將會感到自憐。	{1}将会感到自怜。		FUN_140659090 L877906 預言句：情緒 feeling self-pity，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is feeling servile.	{1}感到卑微。	{1}感到卑微。		FUN_140659090 L877906 預言句：情緒 feeling servile，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was feeling servile.	{1}曾感到卑微。	{1}曾感到卑微。		FUN_140659090 L877906 預言句：情緒 feeling servile，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be feeling servile.	{1}將會感到卑微。	{1}将会感到卑微。		FUN_140659090 L877906 預言句：情緒 feeling servile，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is shaken.	{1}感到心驚。	{1}感到心惊。		FUN_140659090 L877906 預言句：情緒 shaken，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was shaken.	{1}曾感到心驚。	{1}曾感到心惊。		FUN_140659090 L877906 預言句：情緒 shaken，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be shaken.	{1}將會感到心驚。	{1}将会感到心惊。		FUN_140659090 L877906 預言句：情緒 shaken，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is ashamed.	{1}感到羞愧。	{1}感到羞愧。		FUN_140659090 L877906 預言句：情緒 ashamed，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was ashamed.	{1}曾感到羞愧。	{1}曾感到羞愧。		FUN_140659090 L877906 預言句：情緒 ashamed，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be ashamed.	{1}將會感到羞愧。	{1}将会感到羞愧。		FUN_140659090 L877906 預言句：情緒 ashamed，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is shocked.	{1}感到震驚。	{1}感到震惊。		FUN_140659090 L877906 預言句：情緒 shocked，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was shocked.	{1}曾感到震驚。	{1}曾感到震惊。		FUN_140659090 L877906 預言句：情緒 shocked，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be shocked.	{1}將會感到震驚。	{1}将会感到震惊。		FUN_140659090 L877906 預言句：情緒 shocked，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is suspicious.	{1}感到不對勁。	{1}感到不对劲。		FUN_140659090 L877906 預言句：情緒 suspicious，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was suspicious.	{1}曾感到不對勁。	{1}曾感到不对劲。		FUN_140659090 L877906 預言句：情緒 suspicious，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be suspicious.	{1}將會感到不對勁。	{1}将会感到不对劲。		FUN_140659090 L877906 預言句：情緒 suspicious，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is sympathetic.	{1}感到同情。	{1}感到同情。		FUN_140659090 L877906 預言句：情緒 sympathetic，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was sympathetic.	{1}曾感到同情。	{1}曾感到同情。		FUN_140659090 L877906 預言句：情緒 sympathetic，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be sympathetic.	{1}將會感到同情。	{1}将会感到同情。		FUN_140659090 L877906 預言句：情緒 sympathetic，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is feeling tenderness.	{1}感到柔情。	{1}感到柔情。		FUN_140659090 L877906 預言句：情緒 feeling tenderness，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was feeling tenderness.	{1}曾感到柔情。	{1}曾感到柔情。		FUN_140659090 L877906 預言句：情緒 feeling tenderness，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be feeling tenderness.	{1}將會感到柔情。	{1}将会感到柔情。		FUN_140659090 L877906 預言句：情緒 feeling tenderness，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is terrified.	{1}感到極度恐懼。	{1}感到极度恐惧。		FUN_140659090 L877906 預言句：情緒 terrified，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was terrified.	{1}曾感到極度恐懼。	{1}曾感到极度恐惧。		FUN_140659090 L877906 預言句：情緒 terrified，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be terrified.	{1}將會感到極度恐懼。	{1}将会感到极度恐惧。		FUN_140659090 L877906 預言句：情緒 terrified，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is thrilled.	{1}感到激動。	{1}感到激动。		FUN_140659090 L877906 預言句：情緒 thrilled，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was thrilled.	{1}曾感到激動。	{1}曾感到激动。		FUN_140659090 L877906 預言句：情緒 thrilled，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be thrilled.	{1}將會感到激動。	{1}将会感到激动。		FUN_140659090 L877906 預言句：情緒 thrilled，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is feeling triumphant.	{1}感到勝利的喜悅。	{1}感到胜利的喜悦。		FUN_140659090 L877906 預言句：情緒 feeling triumphant，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was feeling triumphant.	{1}曾感到勝利的喜悅。	{1}曾感到胜利的喜悦。		FUN_140659090 L877906 預言句：情緒 feeling triumphant，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be feeling triumphant.	{1}將會感到勝利的喜悅。	{1}将会感到胜利的喜悦。		FUN_140659090 L877906 預言句：情緒 feeling triumphant，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is uneasy.	{1}感到不安。	{1}感到不安。		FUN_140659090 L877906 預言句：情緒 uneasy，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was uneasy.	{1}曾感到不安。	{1}曾感到不安。		FUN_140659090 L877906 預言句：情緒 uneasy，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be uneasy.	{1}將會感到不安。	{1}将会感到不安。		FUN_140659090 L877906 預言句：情緒 uneasy，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is unhappy.	{1}感到不快樂。	{1}感到不开心。		FUN_140659090 L877906 預言句：情緒 unhappy，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was unhappy.	{1}曾感到不快樂。	{1}曾感到不开心。		FUN_140659090 L877906 預言句：情緒 unhappy，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be unhappy.	{1}將會感到不快樂。	{1}将会感到不开心。		FUN_140659090 L877906 預言句：情緒 unhappy，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is vengeful.	{1}復仇心切。	{1}复仇心切。		FUN_140659090 L877906 預言句：情緒 vengeful，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was vengeful.	{1}曾復仇心切。	{1}曾复仇心切。		FUN_140659090 L877906 預言句：情緒 vengeful，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be vengeful.	{1}將會復仇心切。	{1}将会复仇心切。		FUN_140659090 L877906 預言句：情緒 vengeful，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is in wonder.	{1}驚嘆不已。	{1}惊叹不已。		FUN_140659090 L877906 預言句：情緒 in wonder，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was in wonder.	{1}曾驚嘆不已。	{1}曾惊叹不已。		FUN_140659090 L877906 預言句：情緒 in wonder，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be in wonder.	{1}將會驚嘆不已。	{1}将会惊叹不已。		FUN_140659090 L877906 預言句：情緒 in wonder，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is worried.	{1}感到擔心。	{1}感到担心。		FUN_140659090 L877906 預言句：情緒 worried，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was worried.	{1}曾感到擔心。	{1}曾感到担心。		FUN_140659090 L877906 預言句：情緒 worried，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be worried.	{1}將會感到擔心。	{1}将会感到担心。		FUN_140659090 L877906 預言句：情緒 worried，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is wrathful.	{1}感到狂怒。	{1}感到狂怒。		FUN_140659090 L877906 預言句：情緒 wrathful，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was wrathful.	{1}曾感到狂怒。	{1}曾感到狂怒。		FUN_140659090 L877906 預言句：情緒 wrathful，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be wrathful.	{1}將會感到狂怒。	{1}将会感到狂怒。		FUN_140659090 L877906 預言句：情緒 wrathful，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is zealous.	{1}感到狂熱。	{1}感到狂热。		FUN_140659090 L877906 預言句：情緒 zealous，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was zealous.	{1}曾感到狂熱。	{1}曾感到狂热。		FUN_140659090 L877906 預言句：情緒 zealous，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be zealous.	{1}將會感到狂熱。	{1}将会感到狂热。		FUN_140659090 L877906 預言句：情緒 zealous，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is restless.	{1}坐立不安。	{1}坐立不安。		FUN_140659090 L877906 預言句：情緒 restless，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was restless.	{1}曾坐立不安。	{1}曾坐立不安。		FUN_140659090 L877906 預言句：情緒 restless，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be restless.	{1}將會坐立不安。	{1}将会坐立不安。		FUN_140659090 L877906 預言句：情緒 restless，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is feeling admiration.	{1}感到欽佩。	{1}感到钦佩。		FUN_140659090 L877906 預言句：情緒 feeling admiration，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was feeling admiration.	{1}曾感到欽佩。	{1}曾感到钦佩。		FUN_140659090 L877906 預言句：情緒 feeling admiration，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be feeling admiration.	{1}將會感到欽佩。	{1}将会感到钦佩。		FUN_140659090 L877906 預言句：情緒 feeling admiration，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} is emotionless.	{1}毫無情緒。	{1}毫无情绪。		FUN_140659090 L877906 預言句：情緒 emotionless，is；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} was emotionless.	{1}曾毫無情緒。	{1}曾毫无情绪。		FUN_140659090 L877906 預言句：情緒 emotionless，was（I／他人）；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比
+{1} will be emotionless.	{1}將會毫無情緒。	{1}将会毫无情绪。		FUN_140659090 L877906 預言句：情緒 emotionless，will be；錨點：助動詞＋動詞／情緒詞＋句號，放 zz 讓 speech_03、sentences_* 等既有句型先比

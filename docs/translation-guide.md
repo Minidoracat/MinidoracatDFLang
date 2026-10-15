@@ -194,6 +194,7 @@ uv run scripts/gen_events.py
 - 人物稱呼「the 職位 名字」靠 `{^n}` 句型；職位名（含程序生成的「fire commissioner」「royal chancellor」，`adv_titles.tsv`）要寫成整句條目，`{@n}` 才查得到。
 - 遊戲截成「開頭...」的清單字串（交談選單「Start new conversation with the Human baro...」、開局的「From Stukos òrdir, The Razor of Incinera...」）不用另寫：引擎記下截短前的原文來翻（見 `docs/analysis.md` 第 17 點）。
 - 開局畫面的外觀、性格段落和人物頁是同一批句子，引擎逐句查，不用整段寫。
+- 交談紀錄（畫面上方有頭像的框）每一則是「講者: 內容」，遊戲自己切行；引擎整則查、查不到就逐句查，再依中文重新換行（見 `docs/analysis.md` 第 20 點）。所以交談內容一句一條（兩個空白隔開的每一句都要能單獨翻），講者句型已經有，只翻冒號後面的句子；檔名用 `adv_speech_*`，不檢查格數。
 
 ## DFHack 視窗
 
@@ -205,6 +206,15 @@ DFHack 的視窗與 overlay（控制面板、launcher、快捷鍵選單、標題
 - 按鍵提示（`Enter: Toggle enabled`）分成按鍵名、`: `、說明三段畫，只翻說明；按鍵名、工具名、指令名不翻。
 - 檔案：`data/strings/dfhack_<批次>.tsv`、`data/rules/dfhack_<批次>.tsv`。通用的單字（`Enabled`、`Gameplay`）放 `data/screens/dfhack.lua.<focus>.tsv`，`<focus>` 是那個視窗的 `focus_path`（控制面板是 `control-panel`）。overlay 沒有自己的焦點，單字寫成整句或句型。
 - 主控台輸出（`print`）、錯誤訊息不翻：引擎只翻遊戲畫面上的字。輸入框（`EditField`、`TextArea`）裡玩家打的字也不翻：引擎畫輸入框內容時不查字典。
+
+## 按鍵設定
+
+設定的「按鍵設定」分頁左欄是按鍵用途（`Main: Hot Key 1`、`Adventure: Attack, Multi`、`String: Character 032`），綠字欄是按鍵名（`Enter`、`Space`、`Ampersand`）。
+
+- 用途名一條一條寫整句（`data/strings/keys_*.tsv`），不寫句型：句型依檔名比對，DFHack 的 `Hotkey: {1}` 排在前面會先命中。
+- 前綴照這張表：`Adventure:` 冒險／冒险、`Main:` 主介面／主界面、`Hotkey:` 快捷鍵／快捷键、`Arena:` 競技場／竞技场、`Unit lists:` 單位清單／单位列表、`String:` 文字輸入／文字输入、`Custom:` 自訂／自定义；前綴後面用逗號分層的中文用「，」。
+- 按鍵名與按鍵組合照英文，不寫條目。
+- 左欄約 38 格，比英文寬的條目 note 寫寬度例外。
 
 ## 繁簡分開翻
 

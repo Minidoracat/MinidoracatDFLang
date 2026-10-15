@@ -1,0 +1,96 @@
+en	zh-Hant	zh-Hans	align	note
+Agreed to build temple	已同意建造神殿	已同意建造神殿		FUN_1403b13d0 L484567 場所資訊：神龕已有協議要升級成神殿
+Agreed to build temple complex	已同意建造神殿建築群	已同意建造神殿建筑群		FUN_1403b13d0 L484573 場所資訊：已有協議要升級成神殿建築群
+Agreed to build guildhall	已同意建造公會大廳	已同意建造公会大厅		FUN_1403b13d0 L485685 場所資訊：公會集會廳已有協議要升級
+Agreed to build grand guildhall	已同意建造宏偉公會大廳	已同意建造宏伟公会大厅		FUN_1403b13d0 L485691 場所資訊：已有協議要升級成宏偉公會大廳
+Citizens and long-term residents only	僅限居民與長期居留者	仅限居民与长期居留者		FUN_1403b13d0 L484249 場所開放對象（同組 Citizens only 在 compose_guards.tsv：僅限居民）；citizen 照 Citizens only 譯居民；術語例外：citizen
+All visitors welcome	歡迎所有訪客	欢迎所有访客		FUN_1403b13d0 L484257 場所開放對象
+Only members can visit	僅限成員造訪	仅限成员到访		FUN_1403b13d0 L484273 場所開放對象（神殿：同宗教的信徒）
+Only members can visit (if guild established)	僅限成員造訪（公會成立後）	仅限成员到访（公会成立后）		FUN_1403b13d0 L484268 場所開放對象（公會大廳）
+No particular deity	未指定神祇	未指定神祇		FUN_1403b13d0 L483862 神殿標題第二行：沒有供奉對象
+No established guild	尚未成立公會	尚未成立公会		FUN_1403b13d0 L483954 公會大廳標題第二行；後面接 , no workers／, N workers
+, no workers	，無工作者	，无从业者		FUN_1403b13d0 L483958 接在 No established guild 後（另畫）；與 Guildhalls 說明的「工作者／从业者」一致
+, no members	，無成員	，无成员		FUN_1403b13d0 L483979 接在公會名後（另畫）
+Recognize priesthood	承認祭司團	承认祭司团		FUN_1403b13d0 L484510 神殿按鈕；與 You can recognize a priesthood… 一致
+Recognize high priest	承認大祭司	承认大祭司		FUN_1403b13d0 L484514 神殿建築群按鈕
+Only organized religions can have recognized priesthoods.	只有組織化的宗教才能有受承認的祭司團。	只有有组织的宗教才能拥有受承认的祭司团。		FUN_1403b13d0 L484592 神殿：供奉對象是單一神祇（不是宗教）時
+worshipper	信徒	信徒		FUN_1403b13d0 L484346 神殿：信徒人數後（數字、空白、這個字分三段畫）
+worshippers	信徒	信徒		FUN_1403b13d0 L484350 同上，複數
+Priest	祭司	祭司		FUN_1403b13d0 L486991 場所職務清單：職位名（FUN_14052d3c0 首字大寫；High Priest 已有）
+Chests in common area: 	公共區域的箱子：	公共区域的箱子：		FUN_1403b13d0 L484634 等 場所資訊：後面接數字；術語 chest
+Beds in common area: 	公共區域的床：	公共区域的床：		FUN_1403b13d0 L485770 醫院
+Tables in common area: 	公共區域的桌子：	公共区域的桌子：		FUN_1403b13d0 L485779 醫院
+Traction benches in common area: 	公共區域的牽引床：	公共区域的牵引床：		FUN_1403b13d0 L485787 醫院；術語 Traction bench
+Dance floor in common area: 	公共區域的舞池：	公共区域的舞池：		FUN_1403b13d0 L484793 神殿／酒館：後面接 寬x高 或 None
+Stored Instruments (Desired): 	存放樂器（期望）：	存放乐器（期望）：		FUN_1403b13d0 L484703 神殿／酒館：後面接 目前數 (期望數)
+Goblets (Desired): 	高腳杯（期望）：	高脚杯（期望）：		FUN_1403b13d0 L484938 酒館；與 Taverns 說明的高腳杯一致
+Rented rooms (Total): 	出租房間（總數）：	出租房间（总数）：		FUN_1403b13d0 L485200 酒館：後面接 已出租 (總數)
+Bookcases: 	書架：	书架：		FUN_1403b13d0 L485285 圖書館
+Tables: 	桌子：	桌子：		FUN_1403b13d0 L485296 圖書館
+Chairs: 	椅子：	椅子：		FUN_1403b13d0 L485304 圖書館
+Written objects (incl. copies): 	著作（含副本）：	著作（含副本）：		FUN_1403b13d0 L485314 圖書館：館藏書寫物數量；書寫物（書、卷軸）譯著作；術語例外：object
+Total number of each to scribe: 	每部著作抄寫份數：	每部著作抄写份数：		FUN_1403b13d0 L485382 圖書館：每部著作要抄幾份（可輸入）
+Writing Material (Desired): 	書寫材料（期望）：	书写材料（期望）：		FUN_1403b13d0 L485530 圖書館
+Thread (Desired): 	線（期望）：	线（期望）：		FUN_1403b13d0 L485860 醫院；與 Hospitals 說明一致
+Cloth (Desired): 	布料（期望）：	布料（期望）：		FUN_1403b13d0 L486009 醫院
+Splints (Desired): 	夾板（期望）：	夹板（期望）：		FUN_1403b13d0 L486159 醫院
+Crutches (Desired): 	拐杖（期望）：	拐杖（期望）：		FUN_1403b13d0 L486309 醫院
+Powder for casts (Desired): 	石膏粉（期望）：	石膏粉（期望）：		FUN_1403b13d0 L486459 醫院：做石膏用的粉；與 Hospitals 說明一致
+Buckets (Desired): 	水桶（期望）：	水桶（期望）：		FUN_1403b13d0 L486609 醫院
+Soap (Desired): 	肥皂（期望）：	肥皂（期望）：		FUN_1403b13d0 L486759 醫院
+Yearly	每年	每年		FUN_1402390f0 L300854 遊戲設定值：自動存檔頻率
+Seasonal	每季	每季		FUN_1402390f0 L300905 遊戲設定值：自動存檔頻率
+Always	總是	总是		FUN_1402390f0 L301287、L301365 遊戲設定值（Never 從不／Always）
+Default embark width	預設出發寬度	默认出发宽度		FUN_1402390f0 L301526 遊戲設定；embark 出發
+Default embark height	預設出發高度	默认出发高度		FUN_1402390f0 L301535 遊戲設定；之前靠 {@1} {@2} 拼出，整條寫出
+Default high traffic path cost	高通行區預設路徑成本	高通行区默认路径成本		FUN_1402390f0 L301542 遊戲設定；通行區名與按鍵設定一致
+Default normal traffic path cost	一般通行區預設路徑成本	普通通行区默认路径成本		FUN_1402390f0 L301551 遊戲設定
+Default low traffic path cost	低通行區預設路徑成本	低通行区默认路径成本		FUN_1402390f0 L301560 遊戲設定
+Default restricted traffic path cost	限制通行區預設路徑成本	限制通行区默认路径成本		FUN_1402390f0 L301569 遊戲設定
+Storage path decrease (# of contained item cap)	倉儲路徑折減（已裝物品數上限）	仓储路径折减（已装物品数上限）		FUN_1402390f0 L301578 遊戲設定：找存放處時，容器裡已有物品可抵減的路徑距離
+Storage path decrease (seed bag combine)	倉儲路徑折減（併入種子袋子）	仓储路径折减（并入种子袋子）		FUN_1402390f0 L301587 遊戲設定；術語 bag 袋子
+Storage path decrease (bucket combine)	倉儲路徑折減（併入水桶）	仓储路径折减（并入水桶）		FUN_1402390f0 L301596 遊戲設定
+Storage path decrease (barrel combine)	倉儲路徑折減（併入桶）	仓储路径折减（并入桶）		FUN_1402390f0 L301605 遊戲設定；術語 barrel 桶
+Storage path decrease (bin combine)	倉儲路徑折減（併入貨箱）	仓储路径折减（并入货箱）		FUN_1402390f0 L301614 遊戲設定；術語 bin 貨箱
+Population cap	人口上限	人口上限		FUN_1402390f0 L301623 遊戲設定
+Strict population cap (includes births)	嚴格人口上限（含出生）	严格人口上限（含出生）		FUN_1402390f0 L301632 遊戲設定
+Baby+child cap	嬰兒與孩童上限	婴儿与儿童上限		FUN_1402390f0 L301641 遊戲設定
+Baby+child cap (percentage of total)	嬰兒與孩童上限（佔總人口百分比）	婴儿与儿童上限（占总人口百分比）		FUN_1402390f0 L301650 遊戲設定
+Visitor cap	訪客上限	访客上限		FUN_1402390f0 L301659 遊戲設定
+Cull dead units at	死亡單位清除門檻	死亡单位清除阈值		FUN_1402390f0 L301668 遊戲設定：死者數到這個數目就從清單清掉
+Seed cap (per species)	種子上限（每種）	种子上限（每种）		FUN_1402390f0 L301677 遊戲設定；與 Total seed cap 種子總上限一致
+Engravings start obscured	雕刻初始為模糊	雕刻初始为模糊		FUN_1402390f0 L301696 遊戲設定
+Show improvement quality in item names	在物品名稱中顯示裝飾品質	在物品名称中显示装饰品质		FUN_1402390f0 L301710 遊戲設定；improvement 是物品上的裝飾（Masterwork improvement 傑作級裝飾）
+Show numeric liquid levels	以數字顯示液體深度	以数字显示液体深度		FUN_1402390f0 L301724 遊戲設定；與工具列提示框一致
+Show up/down arrows on ramps at current elevation	在目前高度的斜坡上顯示上下箭頭	在当前高度的斜坡上显示上下箭头		FUN_1402390f0 L301738 遊戲設定；與工具列提示框一致
+Number of lower elevation layers to show	顯示的下方高度層數	显示的下方高度层数		FUN_1402390f0 L301751 遊戲設定
+Show all historical events in engravings etc.	在雕刻等處顯示所有歷史事件	在雕刻等处显示所有历史事件		FUN_1402390f0 L301761 遊戲設定
+Nickname position (fort mode)	暱稱位置（要塞模式）	昵称位置（要塞模式）		FUN_1402390f0 L301774 遊戲設定；position 是暱稱在名字裡的位置，不是職位；術語例外：Position
+Nickname position (adv mode)	暱稱位置（冒險模式）	昵称位置（冒险模式）		FUN_1402390f0 L301793 遊戲設定；position 是暱稱在名字裡的位置，不是職位；術語例外：Position
+Nickname position (legends mode)	暱稱位置（傳說模式）	昵称位置（传说模式）		FUN_1402390f0 L301812 遊戲設定；position 是暱稱在名字裡的位置，不是職位；術語例外：Position
+Replace first	取代名字	替换名字		FUN_1402390f0 L301778 遊戲設定值：暱稱取代名字（first name）
+Centralize	放在中間	放在中间		FUN_1402390f0 L301782 遊戲設定值：暱稱放在名字與姓氏中間
+Replace all	取代全名	替换全名		FUN_1402390f0 L301785 遊戲設定值：只顯示暱稱
+Grazing coefficient (higher = less grass)	放牧係數（越高草越少）	放牧系数（越高草越少）		FUN_1402390f0 L301831 遊戲設定
+Show frames-per-second	顯示 FPS	显示 FPS		FUN_1402390f0 L301841 遊戲設定；與 Graphical FPS cap 畫面 FPS 上限一致
+Game frames-per-second cap (default 100)	遊戲 FPS 上限（預設 100）	游戏 FPS 上限（默认 100）		FUN_1402390f0 L301856 遊戲設定
+Key hold milliseconds before repeat	按住按鍵後開始重複的毫秒數	按住按键后开始重复的毫秒数		FUN_1402390f0 L301865 遊戲設定；repeat 與按鍵設定的 Delayed repeat 延遲重複一致
+Milliseconds for each key repeat	每次按鍵重複的毫秒數	每次按键重复的毫秒数		FUN_1402390f0 L301874 遊戲設定
+Number of key repeats before accelerating	開始加速前的按鍵重複次數	开始加速前的按键重复次数		FUN_1402390f0 L301883 遊戲設定
+Maximum key repeat acceleration multiplier	按鍵重複加速倍率上限	按键重复加速倍率上限		FUN_1402390f0 L301894 遊戲設定
+Milliseconds interface shutdown after recenter	視角置中後介面停止反應的毫秒數	镜头居中后界面停止响应的毫秒数		FUN_1402390f0 L301903 遊戲設定；Recenter 與通知設定欄名一致
+Milliseconds between macro instructions	巨集指令間隔毫秒數	宏指令间隔毫秒数		FUN_1402390f0 L301914 遊戲設定
+Compressed saves (recommended!)	壓縮存檔（建議開啟！）	压缩存档（建议开启！）		FUN_1402390f0 L301922 遊戲設定
+Maximum embark dimension	出發地最大邊長	出发地最大边长		FUN_1402390f0 L301935 遊戲設定
+Display worn clothing dyes (fort mode)	顯示穿著衣物的染色（要塞模式）	显示所穿衣物的染色（要塞模式）		FUN_1402390f0 L301945 遊戲設定
+Display worn clothing dyes (adv mode)	顯示穿著衣物的染色（冒險模式）	显示所穿衣物的染色（冒险模式）		FUN_1402390f0 L301959 遊戲設定
+Classic varied ground tiles	經典多樣地面圖格	经典多样地面图块		FUN_1402390f0 L302035 遊戲設定
+Show rectangle dimensions	顯示矩形尺寸	显示矩形尺寸		FUN_1402390f0 L302086 遊戲設定
+Horizontal keyboard scroll tiles	鍵盤水平捲動格數	键盘水平滚动格数		FUN_1402390f0 L302099 遊戲設定
+Horizontal keyboard scroll tiles (fast)	鍵盤水平捲動格數（快速）	键盘水平滚动格数（快速）		FUN_1402390f0 L302108 遊戲設定
+Vertical keyboard scroll tiles	鍵盤垂直捲動格數	键盘垂直滚动格数		FUN_1402390f0 L302117 遊戲設定
+Vertical keyboard scroll tiles (fast)	鍵盤垂直捲動格數（快速）	键盘垂直滚动格数（快速）		FUN_1402390f0 L302126 遊戲設定
+Horizontal keyboard scroll tiles (world)	鍵盤水平捲動格數（世界地圖）	键盘水平滚动格数（世界地图）		FUN_1402390f0 L302135 遊戲設定
+Horizontal keyboard scroll tiles (world, fast)	鍵盤水平捲動格數（世界地圖，快速）	键盘水平滚动格数（世界地图，快速）		FUN_1402390f0 L302144 遊戲設定
+Vertical keyboard scroll tiles (world)	鍵盤垂直捲動格數（世界地圖）	键盘垂直滚动格数（世界地图）		FUN_1402390f0 L302153 遊戲設定
+Vertical keyboard scroll tiles (world, fast)	鍵盤垂直捲動格數（世界地圖，快速）	键盘垂直滚动格数（世界地图，快速）		FUN_1402390f0 L302162 遊戲設定

@@ -1,0 +1,78 @@
+en	zh-Hant	zh-Hans	align	note
+Stop!  This isn't happening!	住手！怎麼會這樣！	住手！怎么会这样！		FUN_1404988b0 1404cf777 交談：NPC 驚慌拒絕（整句，兩句以兩個空白隔開）
+We yield!  We yield!	我們投降！我們投降！	我们投降！我们投降！		FUN_1404988b0 1404cfaec 交談：一群人投降（整句）
+I yield!  I yield!	我投降！我投降！	我投降！我投降！		FUN_1404988b0 1404cfb03 交談：投降（整句）
+We will fight no more.	我們不打了。	我们不打了。		FUN_1404988b0 1404cfc42 交談：一群人停戰
+I will fight no more.	我不打了。	我不打了。		FUN_1404988b0 1404cfc59 交談：停戰
+You first, coward!	你先啊，膽小鬼！	你先来啊，胆小鬼！		FUN_1404988b0 1404d011f 交談：拒絕停戰／投降的要求（緊接 Never! 的分支）
+Okay!  I'll do it.	好啦！我照做就是了。	好吧！我照做就是了。		FUN_1404988b0 1404d0511 交談：答應要求（之後生物吐出或丟下物品，見 ann_11 的 {1} spits out {%2}.／{1} drops {%2}.）
+Over my dead body!	除非踏過我的屍體！	除非从我的尸体上踏过去！		FUN_1404988b0 1404d0959 交談：斷然拒絕
+I am compelled to continue!	我身不由己，非繼續不可！	我身不由己，必须继续！		FUN_1404988b0 1404d29a3 交談：被迫繼續（無法停手）
+Maybe you're right.	也許你說得對。	也许你说得对。		FUN_1404988b0 1404d3300 交談：被說服，四選一
+Yes, I can see it clearly now.	是啊，我現在看清楚了。	是啊，我现在看明白了。		FUN_1404988b0 1404d3300 交談：被說服，四選一
+I have been so foolish.  Yes, I agree.	我真是太傻了。對，我同意。	我真是太傻了。对，我同意。		FUN_1404988b0 1404d3300 交談：被說服，四選一
+You know, I think you're right.	說真的，我覺得你說得對。	说真的，我觉得你说得对。		FUN_1404988b0 1404d3300 交談：被說服，四選一
+Despite some minor reservations...	雖然我還有些小小的保留……	虽然我还有些小小的保留……		FUN_1404988b0 1404d38ba 交談：讓步（奉承型）開頭五選一，接「  」再接一個空白與九句之一；這兩個以「...  」結尾，後句單獨成句
+Ignoring that I don't quite concur...	先不管我其實不太認同……	先不说我其实不太认同……		FUN_1404988b0 1404d38ba 交談：讓步（奉承型）開頭五選一，接「  」再接一個空白與九句之一；這兩個以「...  」結尾，後句單獨成句
+you are so clever I must concede!	你實在太聰明了，我只能認輸！	你实在太聪明了，我只能认输！		FUN_1404988b0 1404d397e 交談：讓步（奉承型）九選一；接在「...」開頭後單獨成句，也接在 rules/adv_speech_conv7 的 Though／Even if／Although 句型逗號後（譯文要能接在「但」後面）
+I admire how brilliant you are!	我真佩服你的聰明才智！	我真佩服你的聪明才智！		FUN_1404988b0 1404d397e 交談：讓步（奉承型）九選一；接在「...」開頭後單獨成句，也接在 rules/adv_speech_conv7 的 Though／Even if／Although 句型逗號後（譯文要能接在「但」後面）
+I must say that is a truly insightful observation!	不得不說，你的見解真是精闢！	不得不说，你的见解真是精辟！		FUN_1404988b0 1404d397e 交談：讓步（奉承型）九選一；接在「...」開頭後單獨成句，也接在 rules/adv_speech_conv7 的 Though／Even if／Although 句型逗號後（譯文要能接在「但」後面）
+I confess your stunning argument overwhelms me!	我承認，你那驚人的論點讓我無從招架！	我承认，你那惊人的论点让我无从招架！		FUN_1404988b0 1404d397e 交談：讓步（奉承型）九選一；接在「...」開頭後單獨成句，也接在 rules/adv_speech_conv7 的 Though／Even if／Although 句型逗號後（譯文要能接在「但」後面）
+I am overmastered by your presence!	在你面前我甘拜下風！	在你面前我甘拜下风！		FUN_1404988b0 1404d397e 交談：讓步（奉承型）九選一；接在「...」開頭後單獨成句，也接在 rules/adv_speech_conv7 的 Though／Even if／Although 句型逗號後（譯文要能接在「但」後面）
+we can both agree you are by far the most persuasive!	我們都同意，你絕對是最有說服力的！	我们都同意，你绝对是最有说服力的！		FUN_1404988b0 1404d397e 交談：讓步（奉承型）九選一；接在「...」開頭後單獨成句，也接在 rules/adv_speech_conv7 的 Though／Even if／Although 句型逗號後（譯文要能接在「但」後面）
+no one can deny your genius!	誰也不能否認你是個天才！	谁也不能否认你是个天才！		FUN_1404988b0 1404d397e 交談：讓步（奉承型）九選一；接在「...」開頭後單獨成句，也接在 rules/adv_speech_conv7 的 Though／Even if／Although 句型逗號後（譯文要能接在「但」後面）
+you needn't indulge my trivial thoughts!	你不必理會我那些微不足道的想法！	你不必理会我那些微不足道的想法！		FUN_1404988b0 1404d397e 交談：讓步（奉承型）九選一；接在「...」開頭後單獨成句，也接在 rules/adv_speech_conv7 的 Though／Even if／Although 句型逗號後（譯文要能接在「但」後面）
+I am so nearly swayed by your greatness alone that we can simply assign you the victory!	光是你的偉大就幾乎讓我動搖了，乾脆直接算你贏吧！	光是你的伟大就几乎让我动摇了，干脆直接算你赢吧！		FUN_1404988b0 1404d397e 交談：讓步（奉承型）九選一；接在「...」開頭後單獨成句，也接在 rules/adv_speech_conv7 的 Though／Even if／Although 句型逗號後（譯文要能接在「但」後面）
+Do I look like I need to calm down?!	我看起來像需要冷靜嗎？！	我看起来像需要冷静吗？！		FUN_1404988b0 1404d43c3 交談：被叫冷靜時發怒，後接「  I'll show you calm!」或「  Get away from me!」（speech_03 已有），逐句查
+I'll show you calm!	我就讓你見識什麼叫冷靜！	我这就让你见识什么叫冷静！		FUN_1404988b0 1404d43c3 交談：被叫冷靜時發怒，後接「  I'll show you calm!」或「  Get away from me!」（speech_03 已有），逐句查
+You calm down!	你才該冷靜！	你才该冷静！		FUN_1404988b0 1404d463c 交談：被叫冷靜時回嗆
+Spare me the compliments.	省省你的恭維吧。	省省你的恭维吧。		FUN_1404988b0 1404d4702 交談：回應奉承
+Don't tell me to calm myself.	別叫我冷靜。	别叫我冷静。		FUN_1404988b0 1404d47d6 交談：回應「冷靜點」
+Thank you for your kind words.	謝謝你的讚美。	谢谢你的夸奖。		FUN_1404988b0 1404d48aa 交談：回應奉承
+You're right.  I need to relax.	你說得對。我得放輕鬆。	你说得对。我得放松一下。		FUN_1404988b0 1404d497e 交談：回應「冷靜點」（整句）
+I assure you I am already calm.  Look to yourself.	我向你保證，我已經很冷靜了。管好你自己吧。	我向你保证，我已经很冷静了。管好你自己吧。		FUN_1404988b0 1404d4a52 交談：回應「冷靜點」（整句）
+Ha ha ha...  You're funny!	哈哈哈……你真好笑！	哈哈哈……你真逗！		FUN_1404988b0 1404d4b26 交談：回應（整句）
+Don't waste my time.	別浪費我的時間。	别浪费我的时间。		FUN_1404988b0 1404d4bfa 交談：回應
+Base flattery!	無恥的奉承！	无耻的吹捧！		FUN_1404988b0 1404d5255 交談：被奉承／嘲弄而發怒，前句（Base flattery!／You dare to flatter me?! 回應奉承；其餘三句回應嘲弄），後接「  I will settle this my way.」或「  This conversation is over.」，逐句查
+You dare to flatter me?!	你竟敢奉承我？！	你竟敢拍我马屁？！		FUN_1404988b0 1404d5255 交談：被奉承／嘲弄而發怒，前句（Base flattery!／You dare to flatter me?! 回應奉承；其餘三句回應嘲弄），後接「  I will settle this my way.」或「  This conversation is over.」，逐句查
+How dare you?!	你竟敢這樣？！	你竟敢这样？！		FUN_1404988b0 1404d5255 交談：被奉承／嘲弄而發怒，前句（Base flattery!／You dare to flatter me?! 回應奉承；其餘三句回應嘲弄），後接「  I will settle this my way.」或「  This conversation is over.」，逐句查
+Insufferable!	簡直無法忍受！	简直无法忍受！		FUN_1404988b0 1404d5255 交談：被奉承／嘲弄而發怒，前句（Base flattery!／You dare to flatter me?! 回應奉承；其餘三句回應嘲弄），後接「  I will settle this my way.」或「  This conversation is over.」，逐句查
+You mock me?!	你在嘲弄我？！	你在嘲笑我？！		FUN_1404988b0 1404d5255 交談：被奉承／嘲弄而發怒，前句（Base flattery!／You dare to flatter me?! 回應奉承；其餘三句回應嘲弄），後接「  I will settle this my way.」或「  This conversation is over.」，逐句查
+I will settle this my way.	那就照我的方式解決。	那就按我的方式解决。		FUN_1404988b0 1404d5255 交談：被奉承／嘲弄而發怒，前句（Base flattery!／You dare to flatter me?! 回應奉承；其餘三句回應嘲弄），後接「  I will settle this my way.」或「  This conversation is over.」，逐句查
+This conversation is over.	談話到此為止。	谈话到此为止。		FUN_1404988b0 1404d5255 交談：被奉承／嘲弄而發怒，前句（Base flattery!／You dare to flatter me?! 回應奉承；其餘三句回應嘲弄），後接「  I will settle this my way.」或「  This conversation is over.」，逐句查
+You insult me with your flattery, but let us move on.	你的奉承是對我的侮辱，不過算了，談別的吧。	你的吹捧是对我的侮辱，不过算了，聊点别的吧。		FUN_1404988b0 1404d55c3 交談：被奉承／嘲弄但不發怒（兩段接成整句）
+You insult me with your derision, but let us move on.	你的嘲弄是對我的侮辱，不過算了，談別的吧。	你的嘲讽是对我的侮辱，不过算了，聊点别的吧。		FUN_1404988b0 1404d55c3 交談：被奉承／嘲弄但不發怒（兩段接成整句）
+If you insist so strongly, we can move on.	既然你這麼堅持，那就換個話題吧。	既然你这么坚持，那就换个话题吧。		FUN_1404988b0 1404d5742 交談：同意結束爭論，三選一
+Well, there must be something else to discuss.	好吧，總有別的事可以聊。	好吧，总有别的事可以聊。		FUN_1404988b0 1404d5742 交談：同意結束爭論，三選一；術語例外：well
+Fine.  Let's drop the argument.	好吧。這件事就別爭了。	好吧。这事就别争了。		FUN_1404988b0 1404d5742 交談：同意結束爭論，三選一（整句）
+How gracious!	你真是寬宏大量！	你真是宽宏大量！		FUN_1404988b0 1404d5891 交談：對方讓步後的回應，前句 Of course.（conv5 已收）／How gracious!／You are right. 接「  」再接後句三選一，逐句查
+You are right.	你說得對。	你说得对。		FUN_1404988b0 1404d5891 交談：對方讓步後的回應，前句 Of course.（conv5 已收）／How gracious!／You are right. 接「  」再接後句三選一，逐句查
+Let's move on.	我們換個話題吧。	我们换个话题吧。		FUN_1404988b0 1404d5891 交談：對方讓步後的回應，前句 Of course.（conv5 已收）／How gracious!／You are right. 接「  」再接後句三選一，逐句查
+There must be something else to discuss.	總有別的事可以聊。	总有别的事可以聊。		FUN_1404988b0 1404d5891 交談：對方讓步後的回應，前句 Of course.（conv5 已收）／How gracious!／You are right. 接「  」再接後句三選一，逐句查；1404d5aac 也單獨說出
+Let's drop the argument.	這件事就別爭了。	这事就别争了。		FUN_1404988b0 1404d5891 交談：對方讓步後的回應，前句 Of course.（conv5 已收）／How gracious!／You are right. 接「  」再接後句三選一，逐句查；1404d5aac 也單獨說出
+Yes, let's move on.	好，換個話題吧。	好，换个话题吧。		FUN_1404988b0 1404d5aac 交談：同意換話題，三選一
+Eh?	蛤？	啊？		FUN_1404988b0 1404d5c4d 交談：駁斥對方論點的開頭感嘆（No!／Ha!／Huh?／Uh... 已有）
+Ack!	嘖！	啧！		FUN_1404988b0 1404d5c4d 交談：駁斥對方論點的開頭感嘆（No!／Ha!／Huh?／Uh... 已有）
+How unreasonable!	真是不可理喻！	真是不可理喻！		FUN_1404988b0 1404d5d6a 交談：駁斥論點，十三選一（Forgive me, but／Oh, no, 見 rules，後面一定接小寫的評語句）
+Were you trying to make an argument?	你剛剛那算是在論證嗎？	你刚才那算是在论证吗？		FUN_1404988b0 1404d5d6a 交談：駁斥論點，十三選一（Forgive me, but／Oh, no, 見 rules，後面一定接小寫的評語句）
+Give me a break.	饒了我吧。	饶了我吧。		FUN_1404988b0 1404d5d6a 交談：駁斥論點，十三選一（Forgive me, but／Oh, no, 見 rules，後面一定接小寫的評語句）
+Are you being serious?	你是認真的嗎？	你是认真的吗？		FUN_1404988b0 1404d5d6a 交談：駁斥論點，十三選一（Forgive me, but／Oh, no, 見 rules，後面一定接小寫的評語句）
+What?	什麼？	什么？		FUN_1404988b0 1404d5d6a 交談：駁斥論點，十三選一（Forgive me, but／Oh, no, 見 rules，後面一定接小寫的評語句）
+Wait, what?	等等，什麼？	等等，什么？		FUN_1404988b0 1404d5d6a 交談：駁斥論點，十三選一（Forgive me, but／Oh, no, 見 rules，後面一定接小寫的評語句）
+What did you just say?	你剛剛說什麼？	你刚才说什么？		FUN_1404988b0 1404d5d6a 交談：駁斥論點，十三選一（Forgive me, but／Oh, no, 見 rules，後面一定接小寫的評語句）
+Am I supposed to engage with that?	這種話也值得我回應？	这种话也值得我回应？		FUN_1404988b0 1404d5d6a 交談：駁斥論點，十三選一（Forgive me, but／Oh, no, 見 rules，後面一定接小寫的評語句）
+You must be joking.	你在開玩笑吧。	你在开玩笑吧。		FUN_1404988b0 1404d5d6a 交談：駁斥論點，十三選一（Forgive me, but／Oh, no, 見 rules，後面一定接小寫的評語句）
+I've heard it all now!	這下我真是什麼都聽過了！	这下我真是什么都听过了！		FUN_1404988b0 1404d5d6a 交談：駁斥論點，十三選一（Forgive me, but／Oh, no, 見 rules，後面一定接小寫的評語句）
+That's absurd!	太荒謬了！	太荒谬了！		FUN_1404988b0 1404d5d6a 交談：駁斥論點，十三選一（Forgive me, but／Oh, no, 見 rules，後面一定接小寫的評語句）
+That is the stupidest statement I have ever heard.	這是我聽過最蠢的話。	这是我听过最蠢的话。		FUN_1404988b0 1404d5fa3 交談：駁斥論點的評語，十一選一；單獨成句時遊戲把首字改大寫（FUN_14052d650），接在 Forgive me, but／Oh, no, 後面是小寫原樣，靠大小寫不同也查得到；譯文要能接在「恕我直言，」「噢，不，」後面
+Don't waste my time with this drivel.	別拿這種廢話浪費我的時間。	别拿这种废话浪费我的时间。		FUN_1404988b0 1404d5fa3 交談：駁斥論點的評語，十一選一；單獨成句時遊戲把首字改大寫（FUN_14052d650），接在 Forgive me, but／Oh, no, 後面是小寫原樣，靠大小寫不同也查得到；譯文要能接在「恕我直言，」「噢，不，」後面
+Really, I've been over all this nonsense before.	說真的，這套胡說八道我早就領教過了。	说真的，这套胡说八道我早就领教过了。		FUN_1404988b0 1404d5fa3 交談：駁斥論點的評語，十一選一；單獨成句時遊戲把首字改大寫（FUN_14052d650），接在 Forgive me, but／Oh, no, 後面是小寫原樣，靠大小寫不同也查得到；譯文要能接在「恕我直言，」「噢，不，」後面
+I couldn't follow your rambling.	你東拉西扯的，我根本聽不懂。	你东拉西扯的，我根本听不懂。		FUN_1404988b0 1404d5fa3 交談：駁斥論點的評語，十一選一；單獨成句時遊戲把首字改大寫（FUN_14052d650），接在 Forgive me, but／Oh, no, 後面是小寫原樣，靠大小寫不同也查得到；譯文要能接在「恕我直言，」「噢，不，」後面
+I'm having trouble taking you seriously.	我很難把你的話當真。	我很难把你的话当真。		FUN_1404988b0 1404d5fa3 交談：駁斥論點的評語，十一選一；單獨成句時遊戲把首字改大寫（FUN_14052d650），接在 Forgive me, but／Oh, no, 後面是小寫原樣，靠大小寫不同也查得到；譯文要能接在「恕我直言，」「噢，不，」後面
+Nobody could possibly believe that.	不可能有人會相信那種話。	不可能有人会信那种话。		FUN_1404988b0 1404d5fa3 交談：駁斥論點的評語，十一選一；單獨成句時遊戲把首字改大寫（FUN_14052d650），接在 Forgive me, but／Oh, no, 後面是小寫原樣，靠大小寫不同也查得到；譯文要能接在「恕我直言，」「噢，不，」後面
+It would amaze me if somebody actually thought that.	要是真有人這麼想，我才會嚇一跳。	要是真有人这么想，那才叫我吃惊。		FUN_1404988b0 1404d5fa3 交談：駁斥論點的評語，十一選一；單獨成句時遊戲把首字改大寫（FUN_14052d650），接在 Forgive me, but／Oh, no, 後面是小寫原樣，靠大小寫不同也查得到；譯文要能接在「恕我直言，」「噢，不，」後面
+There's just no way you can believe something so stupid.	你不可能真的相信這麼蠢的事吧。	你不可能真的相信这么蠢的事吧。		FUN_1404988b0 1404d5fa3 交談：駁斥論點的評語，十一選一；單獨成句時遊戲把首字改大寫（FUN_14052d650），接在 Forgive me, but／Oh, no, 後面是小寫原樣，靠大小寫不同也查得到；譯文要能接在「恕我直言，」「噢，不，」後面
+The things some people think just boggle the mind.	有些人的想法真是讓人匪夷所思。	有些人的想法真是让人匪夷所思。		FUN_1404988b0 1404d5fa3 交談：駁斥論點的評語，十一選一；單獨成句時遊戲把首字改大寫（FUN_14052d650），接在 Forgive me, but／Oh, no, 後面是小寫原樣，靠大小寫不同也查得到；譯文要能接在「恕我直言，」「噢，不，」後面
+You should keep your weird thoughts to yourself.	你那些古怪的想法還是留給自己吧。	你那些古怪的想法还是自己留着吧。		FUN_1404988b0 1404d5fa3 交談：駁斥論點的評語，十一選一；單獨成句時遊戲把首字改大寫（FUN_14052d650），接在 Forgive me, but／Oh, no, 後面是小寫原樣，靠大小寫不同也查得到；譯文要能接在「恕我直言，」「噢，不，」後面
+That isn't at all convincing.	這一點說服力都沒有。	这一点说服力都没有。		FUN_1404988b0 1404d5fa3 交談：駁斥論點的評語，十一選一；單獨成句時遊戲把首字改大寫（FUN_14052d650），接在 Forgive me, but／Oh, no, 後面是小寫原樣，靠大小寫不同也查得到；譯文要能接在「恕我直言，」「噢，不，」後面
+I'm appalled.	真讓我震驚。	真让我震惊。		FUN_1404988b0 1404d614c 交談：駁斥論點的結尾感嘆六選一（其餘五句在 conv8）

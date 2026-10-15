@@ -1,0 +1,30 @@
+en	zh-Hant	zh-Hans	align	note
+We shall bring {1} home safely.	我們一定會把{1}平安帶回家。	我们一定会把{1}平安带回家。		FUN_1404988b0 1404a64b9-1404a6597 同行協議（救援）：{1} 人物名（FUN_140b92f10）
+I am on a mission from {1}.	我奉{1}之命前來。	我奉{1}之命前来。		FUN_1404988b0 1404a70b5-1404a7107 玩家向領主表示效力：{1} 派任務的人物（FUN_140b92f10），下句 How may I serve …?
+How may I serve {1}?	我能為{1}效什麼力？	我能为{1}效什么力？		FUN_1404988b0 1404a711c-1404a7153 同上：{1} 勢力名（FUN_140b92900）
+You must kill {1}.	你必須殺了{1}。	你必须杀了{1}。		FUN_1404988b0 1404a7411-1404a7468 統治者派的獵殺任務：{1} 目標人物／生物名（FUN_140b92f10），下句 This … threatens our people…；術語例外：Kill
+This {%1} threatens our people with its very presence.	這{1}光是存在，就已經威脅到我們的族人了。	这{1}光是存在，就已经威胁到我们的族人了。		FUN_1404988b0 1404a7732-1404a7c1f 同上：{1} 目標描述（great beast、night creature、creeping thing…，依生物種類與所在地；inner）
+Seek your foe in the {%1} of {2}.	到{2}{1}去找你的對手吧。	到{2}{1}去找你的对手吧。		FUN_1404988b0 1404a85ec-1404a8672 同上：{1} 據點類型（FUN_1410cbe50：town、hamlet、mysterious lair…，ann_* 已有），{2} 據點名（FUN_140b93930）
+You must drive the ruffians of {1} from our {%2} of {3}.	你得把{1}那幫惡棍趕出我們的{3}{2}。	你得把{1}那帮恶棍赶出我们的{3}{2}。		FUN_1404988b0 1404a8a87-1404a8b89 驅逐惡棍任務：{1} 勢力名（FUN_140b92900），{2} 據點類型（FUN_1410cbe50），{3} 據點名；下句 They have been harassing…
+You must drive the ruffians of {1} from {2}.	你得把{1}那幫惡棍趕出{2}。	你得把{1}那帮恶棍赶出{2}。		FUN_1404988b0 1404a8ae4 同上：查不到據點類型時只有據點名（猜測的分支）
+{1} sent {2} to try to boss us around, but you'll show them the true nature of power.	{1}派{2}來對我們頤指氣使，但你會讓他們見識什麼才是真正的力量。	{1}派{2}来对我们颐指气使，但你会让他们见识什么才是真正的力量。		FUN_1404988b0 1404a9148-1404a9211 獵殺任務的下句：{1} 派人者、{2} 被派來的人（FUN_140b92f10，首字大寫 FUN_14052d650）
+{1} came try to boss us around, but you'll teach that coward a lesson.	{1}跑來對我們頤指氣使，但你會給那個懦夫一點教訓。	{1}跑来对我们颐指气使，但你会给那个懦夫一点教训。		FUN_1404988b0 1404a925b-1404a92de 同上，目標自己來的；原文 came try 是遊戲的錯字
+You must drive the skulking vermin {1} out of {2}.	你得把{1}那群鬼鬼祟祟的鼠輩趕出{2}。	你得把{1}那群鬼鬼祟祟的鼠辈赶出{2}。		FUN_1404988b0 1404a9732-1404a97a0 驅逐任務：{1} 勢力名、{2} 據點名；排在 You must drive {1} out of {2}. 前
+You must drive {1} out of {2}.	你得把{1}趕出{2}。	你得把{1}赶出{2}。		FUN_1404988b0 1404a97fc-1404a99fe 驅逐任務：{1} 勢力名、{2} 據點名；下句 Their aggressive order…／These outlaws…／These criminals…
+You must drive {1} from their home at {2}.	你得把{1}從他們在{2}的老巢趕出去。	你得把{1}从他们在{2}的老巢赶出去。		FUN_1404988b0 1404a9a18-1404a9a86 驅逐任務：{1} 勢力名、{2} 據點名
+{1} must be driven off or subjugated.	{1}非趕走或征服不可。	{1}非赶走或征服不可。		FUN_1404988b0 1404aa01b-1404aa099 統治者談某勢力：{1} 勢力名（FUN_140b92900）或 The group
+{1} could afford to learn a lesson or two, though open conflict would be unwise.	{1}是該受點教訓，不過公開開戰並不明智。	{1}是该吃点教训，不过公开开战并不明智。		FUN_1404988b0 1404aa0ba 同上
+The group is our ally, {%1}	那個團體是我們的盟友，{1}	那个团体是我们的盟友，{1}		FUN_1404988b0 1404ab023／1404ab086 勢力關係：{1} and there is friendship…（inner）；勢力沒有名字時遊戲寫 The group。逐條寫出：在講者句型的佔位裡，articles 的 The {%1} 比 {1} 開頭的句型先比，會剝掉 The 變成「團體」；排在 {{1}} is our ally, {{%2}} 前
+The group is not at war with us, {%1}	那個團體沒有和我們交戰，{1}	那个团体没有和我们交战，{1}		FUN_1404988b0 1404ab023／1404ab09d 同上
+The group is paying us tribute, {%1}	那個團體一直向我們進貢，{1}	那个团体一直向我们进贡，{1}		FUN_1404988b0 1404ab023／1404ab0d3 同上
+The group accepts our tribute, {%1}	我們一直向那個團體進貢，{1}	我们一直向那个团体进贡，{1}		FUN_1404988b0 1404ab023／1404ab0f1 同上；術語例外：Accept
+{1} is our ally, {%2}	{1}是我們的盟友，{2}	{1}是我们的盟友，{2}		FUN_1404988b0 1404ab01b-1404ab1b9 勢力關係：{1} 勢力名（The group 另寫在前面與 strings），{2} and there is friendship…／no hard feeling…／but there is ill-will…（inner）
+{1} is not at war with us, {%2}	{1}沒有和我們交戰，{2}	{1}没有和我们交战，{2}		FUN_1404988b0 1404ab09d 同上
+{1} is paying us tribute, {%2}	{1}一直向我們進貢，{2}	{1}一直向我们进贡，{2}		FUN_1404988b0 1404ab0d3 同上
+{1} accepts our tribute, {%2}	我們一直向{1}進貢，{2}	我们一直向{1}进贡，{2}		FUN_1404988b0 1404ab0f1 同上；術語例外：Accept
+{1} is at war with us.	{1}正在和我們交戰。	{1}正在和我们交战。		FUN_1404988b0 1404ab0bc 同上（不接後半句）
+{1} is skirmishing with us.	{1}和我們時有零星衝突。	{1}和我们时有零星冲突。		FUN_1404988b0 1404ab10f 同上（不接後半句）
+{1} is unknown us.	我們對{1}一無所知。	我们对{1}一无所知。		FUN_1404988b0 1404ab126 同上（不接後半句）；原文少了 to 是遊戲的錯字
+The trouble started because of {%1}.	事情的起因是{1}。	事情的起因是{1}。		FUN_1404988b0 1404ab4fb-1404ab6e0／1404ab735-1404abc99 勢力間麻煩的起因：{1} a dispute over …、開戰原因、歷史事件（inner，部分在 events_15、adv_speech_conv3）
+a dispute over the ownership of {1}	{1}的歸屬之爭	{1}的归属之争	inner	FUN_1404988b0 1404ab798 起因：{1} 神器名（FUN_140b94400）；排在 a dispute over {%1} 前
+a dispute over {%1}	圍繞{1}的爭執	围绕{1}的争执	inner	FUN_1404988b0 1404ab56c／1404ab925 起因：{1} 倫理話題（the treatment of animals…）或爭議對象（territory、water rights…，events_15）

@@ -1,0 +1,276 @@
+en	zh-Hant	zh-Hans	align	note
+Animals, Assign Work Animal	動物，指派工作動物	动物，分配工作动物		FUN_140d17170 按鍵設定：要塞
+Animals, Hunting Training	動物，狩獵訓練	动物，狩猎训练		FUN_140d17170 按鍵設定：要塞
+Animals, Slaughter	動物，屠宰	动物，屠宰		FUN_140d17170 按鍵設定：要塞
+Animals, Toggle Available	動物，切換可領養	动物，切换可领养		FUN_140d17170 按鍵設定：要塞
+Animals, Trainer	動物，訓練師	动物，训练师		FUN_140d17170 按鍵設定：要塞
+Animals, War Training	動物，戰鬥訓練	动物，战斗训练		FUN_140d17170 按鍵設定：要塞
+Arena: Conflict state down	競技場：降低衝突狀態	竞技场：降低冲突状态		FUN_140d17170 按鍵設定：競技場
+Arena: Conflict state up	競技場：提高衝突狀態	竞技场：提高冲突状态		FUN_140d17170 按鍵設定：競技場
+Arena: Create creature	競技場：生成生物	竞技场：生成生物		FUN_140d17170 按鍵設定：競技場
+Arena: Create tree	競技場：生成樹木	竞技场：生成树木		FUN_140d17170 按鍵設定：競技場
+Arena: Creature, reset	競技場：生物，重設	竞技场：生物，重置		FUN_140d17170 按鍵設定：競技場
+Arena: Fluids	競技場：流體	竞技场：流体		FUN_140d17170 按鍵設定：競技場
+Arena: Fluids, magma	競技場：流體，熔岩	竞技场：流体，熔岩		FUN_140d17170 按鍵設定：競技場
+Arena: Fluids, mud	競技場：流體，泥巴	竞技场：流体，泥巴		FUN_140d17170 按鍵設定：競技場
+Arena: Fluids, remove	競技場：流體，移除	竞技场：流体，移除		FUN_140d17170 按鍵設定：競技場
+Arena: Fluids, snow	競技場：流體，雪	竞技场：流体，雪		FUN_140d17170 按鍵設定：競技場
+Arena: Fluids, water	競技場：流體，水	竞技场：流体，水		FUN_140d17170 按鍵設定：競技場
+Arena: Morale	競技場：士氣	竞技场：士气		FUN_140d17170 按鍵設定：競技場
+Arena: Weather	競技場：天氣	竞技场：天气		FUN_140d17170 按鍵設定：競技場
+Change tab or highlight selection, secondary	切換分頁或標示選取項目，次要	切换标签页或高亮选中项，次要		FUN_140d17170 按鍵設定：一般
+Command repeat prefix-key	指令重複前綴鍵	命令重复前缀键		FUN_140d17170 按鍵設定：一般
+Complete Binding	完成按鍵綁定	完成按键绑定		FUN_140d17170 按鍵設定：一般
+Designate, Blueprint to Standard	指定，藍圖轉為一般	指定，蓝图转为常规		FUN_140d17170 按鍵設定：要塞
+Designate, Carve Track	指定，鑿出軌道	指定，凿出轨道		FUN_140d17170 按鍵設定：要塞
+Designate, Channel	指定，挖槽	指定，挖槽		FUN_140d17170 按鍵設定：要塞
+Designate, Chop Trees	指定，砍伐樹木	指定，砍伐树木		FUN_140d17170 按鍵設定：要塞
+Designate, Dig	指定，挖掘	指定，挖掘		FUN_140d17170 按鍵設定：要塞
+Designate, Dig Remove Stairs Ramps	指定，移除樓梯與斜坡	指定，移除楼梯和斜坡		FUN_140d17170 按鍵設定：要塞
+Designate, Dump	指定，傾倒	指定，倾倒		FUN_140d17170 按鍵設定：要塞
+Designate, Engrave	指定，雕刻	指定，雕刻		FUN_140d17170 按鍵設定：要塞
+Designate, Forbid	指定，禁用	指定，禁用		FUN_140d17170 按鍵設定：要塞
+Designate, Fortify	指定，鑿出射擊孔牆	指定，凿出射击孔墙		FUN_140d17170 按鍵設定：要塞
+Designate, Free Draw	指定，自由繪製	指定，自由绘制		FUN_140d17170 按鍵設定：要塞
+Designate, Gather Plants	指定，採集植物	指定，采集植物		FUN_140d17170 按鍵設定：要塞
+Designate, Hide	指定，隱藏	指定，隐藏		FUN_140d17170 按鍵設定：要塞
+Designate, High Traffic	指定，高通行區	指定，高通行区		FUN_140d17170 按鍵設定：要塞
+Designate, Low Traffic	指定，低通行區	指定，低通行区		FUN_140d17170 按鍵設定：要塞
+Designate, Melt	指定，熔化	指定，熔化		FUN_140d17170 按鍵設定：要塞
+Designate, Min Gems	指定，只挖寶石	指定，只挖宝石		FUN_140d17170 按鍵設定：要塞
+Designate, Mine All	指定，全部挖掘	指定，全部挖掘		FUN_140d17170 按鍵設定：要塞
+Designate, Mine Auto	指定，自動挖礦	指定，自动挖矿		FUN_140d17170 按鍵設定：要塞
+Designate, Mine Ore+Gems	指定，只挖礦石與寶石	指定，只挖矿石和宝石		FUN_140d17170 按鍵設定：要塞
+Designate, No Dump	指定，取消傾倒	指定，取消倾倒		FUN_140d17170 按鍵設定：要塞
+Designate, No Hide	指定，取消隱藏	指定，取消隐藏		FUN_140d17170 按鍵設定：要塞
+Designate, No Melt	指定，取消熔化	指定，取消熔化		FUN_140d17170 按鍵設定：要塞
+Designate, Normal Traffic	指定，一般通行區	指定，普通通行区		FUN_140d17170 按鍵設定：要塞
+Designate, Priority Down	指定，降低優先度	指定，降低优先级		FUN_140d17170 按鍵設定：要塞
+Designate, Priority Up	指定，提高優先度	指定，提高优先级		FUN_140d17170 按鍵設定：要塞
+Designate, Ramp	指定，斜坡	指定，斜坡		FUN_140d17170 按鍵設定：要塞
+Designate, Reclaim	指定，認領	指定，认领		FUN_140d17170 按鍵設定：要塞
+Designate, Rectangle	指定，矩形	指定，矩形		FUN_140d17170 按鍵設定：要塞
+Designate, Restricted Traffic	指定，限制通行區	指定，限制通行区		FUN_140d17170 按鍵設定：要塞
+Designate, Smooth	指定，磨平	指定，磨平		FUN_140d17170 按鍵設定：要塞
+Designate, Standard to Blueprint	指定，一般轉為藍圖	指定，常规转为蓝图		FUN_140d17170 按鍵設定：要塞
+Designate, Toggle Advanced Options	指定，切換進階選項	指定，切换高级选项		FUN_140d17170 按鍵設定：要塞
+Designate, Toggle Blueprint	指定，切換藍圖模式	指定，切换蓝图模式		FUN_140d17170 按鍵設定：要塞
+Designate, UD Stair	指定，上下樓梯	指定，上下楼梯		FUN_140d17170 按鍵設定：要塞
+Hotkey: Building, Cages and Chains	快捷鍵：建築，籠子與鎖鏈	快捷键：建筑，笼子和锁链		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Construction, Floor	快捷鍵：建築，建築結構，地板	快捷键：建筑，建筑结构，地板		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Construction, Fortification	快捷鍵：建築，建築結構，射擊孔牆	快捷键：建筑，建筑结构，射击孔墙		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Construction, Ramp	快捷鍵：建築，建築結構，斜坡	快捷键：建筑，建筑结构，斜坡		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Construction, Track	快捷鍵：建築，建築結構，軌道	快捷键：建筑，建筑结构，轨道		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Construction, Track Stop	快捷鍵：建築，建築結構，軌道停靠站	快捷键：建筑，建筑结构，轨道停靠站		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Construction, Up/Down Stair	快捷鍵：建築，建築結構，上下樓梯	快捷键：建筑，建筑结构，上下楼梯		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Construction, Wall	快捷鍵：建築，建築結構，牆壁	快捷键：建筑，建筑结构，墙壁		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Doors and Hatches	快捷鍵：建築，門與活蓋	快捷键：建筑，门和活盖		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Farm Plot	快捷鍵：建築，農田	快捷键：建筑，农田		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Furn, Glass	快捷鍵：建築，熔爐，玻璃	快捷键：建筑，熔炉，玻璃		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Furn, Kiln	快捷鍵：建築，熔爐，窯爐	快捷键：建筑，熔炉，窑炉		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Furn, Smelter	快捷鍵：建築，熔爐，冶煉爐	快捷键：建筑，熔炉，冶炼炉		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Furn, Wood	快捷鍵：建築，熔爐，木材	快捷键：建筑，熔炉，木材		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Furnace	快捷鍵：建築，熔爐	快捷键：建筑，熔炉		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Kennel	快捷鍵：建築，犬舍	快捷键：建筑，犬舍		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Machine Component	快捷鍵：建築，機械零件	快捷键：建筑，机械零件		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Machine Component, Gear Assembly	快捷鍵：建築，機械零件，齒輪組	快捷键：建筑，机械零件，齿轮组		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Machine Component, Horizontal Axle	快捷鍵：建築，機械零件，水平傳動軸	快捷键：建筑，机械零件，水平传动轴		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Machine Component, Rollers	快捷鍵：建築，機械零件，滾輪	快捷键：建筑，机械零件，滚轮		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Machine Component, Screw Pump	快捷鍵：建築，機械零件，螺旋泵	快捷键：建筑，机械零件，螺旋泵		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Machine Component, Vertical Axle	快捷鍵：建築，機械零件，垂直傳動軸	快捷键：建筑，机械零件，垂直传动轴		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Machine Component, Water Wheel	快捷鍵：建築，機械零件，水車	快捷键：建筑，机械零件，水车		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Machine Component, Windmill	快捷鍵：建築，機械零件，風車	快捷键：建筑，机械零件，风车		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Trap	快捷鍵：建築，陷阱	快捷键：建筑，陷阱		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Trap, Cage	快捷鍵：建築，陷阱，籠子	快捷键：建筑，陷阱，笼子		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Trap, Lever	快捷鍵：建築，陷阱，拉桿	快捷键：建筑，陷阱，拉杆		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Trap, Stone	快捷鍵：建築，陷阱，落石	快捷键：建筑，陷阱，落石		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Trap, Trigger	快捷鍵：建築，陷阱，壓力板	快捷键：建筑，陷阱，压力板		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Trap, Upright Spear/Spike	快捷鍵：建築，陷阱，直立長矛／尖刺	快捷键：建筑，陷阱，直立长矛／尖刺		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Trap, Weapon	快捷鍵：建築，陷阱，武器	快捷键：建筑，陷阱，武器		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Wall/Floor/Stairs	快捷鍵：建築，牆壁／地板／樓梯	快捷键：建筑，墙壁／地板／楼梯		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Wksp, Ashery	快捷鍵：建築，工坊，製灰坊	快捷键：建筑，工坊，制灰坊		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Wksp, Bowyer	快捷鍵：建築，工坊，弓弩匠	快捷键：建筑，工坊，弓弩匠		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Wksp, Butcher	快捷鍵：建築，工坊，屠夫	快捷键：建筑，工坊，屠夫		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Wksp, Carpenter	快捷鍵：建築，工坊，木匠	快捷键：建筑，工坊，木匠		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Wksp, Clothes	快捷鍵：建築，工坊，裁縫	快捷键：建筑，工坊，裁缝		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Wksp, Craftsman	快捷鍵：建築，工坊，工匠	快捷键：建筑，工坊，工匠		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Wksp, Dyer	快捷鍵：建築，工坊，染工	快捷键：建筑，工坊，染工		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Wksp, Farmer	快捷鍵：建築，工坊，農夫	快捷键：建筑，工坊，农夫		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Wksp, Fishery	快捷鍵：建築，工坊，漁獲處理	快捷键：建筑，工坊，渔获处理		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Wksp, Jeweler	快捷鍵：建築，工坊，珠寶匠	快捷键：建筑，工坊，珠宝匠		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Wksp, Kitchen	快捷鍵：建築，工坊，廚房	快捷键：建筑，工坊，厨房		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Wksp, Lavamill	快捷鍵：建築，工坊，熔岩磨坊	快捷键：建筑，工坊，熔岩磨坊		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Wksp, Leather	快捷鍵：建築，工坊，皮革	快捷键：建筑，工坊，皮革		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Wksp, Loom	快捷鍵：建築，工坊，織布機	快捷键：建筑，工坊，织布机		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Wksp, Mason	快捷鍵：建築，工坊，石匠	快捷键：建筑，工坊，石匠		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Wksp, Mechanic	快捷鍵：建築，工坊，機械師	快捷键：建筑，工坊，机械师		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Wksp, Metalsmith	快捷鍵：建築，工坊，金屬匠	快捷键：建筑，工坊，金属匠		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Wksp, Millstone	快捷鍵：建築，工坊，石磨	快捷键：建筑，工坊，石磨		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Wksp, Quern	快捷鍵：建築，工坊，手推磨	快捷键：建筑，工坊，手推磨		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Wksp, Siege	快捷鍵：建築，工坊，攻城	快捷键：建筑，工坊，攻城		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Wksp, Still	快捷鍵：建築，工坊，釀酒坊	快捷键：建筑，工坊，酿酒坊		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Wksp, Tanner	快捷鍵：建築，工坊，製革工	快捷键：建筑，工坊，制革工		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Workshop	快捷鍵：建築，工坊	快捷键：建筑，工坊		FUN_140d17170 按鍵設定：建築
+Hotkey: Building, Workshops, Cloth/Leather	快捷鍵：建築，工坊，衣物／皮革	快捷键：建筑，工坊，衣物／皮革		FUN_140d17170 按鍵設定：建築
+Justice, Convict	司法，定罪	司法，定罪		FUN_140d17170 按鍵設定：要塞；JUSTICE_CONVICT 是「定罪」動作；術語例外：convict
+Justice, Interrogate	司法，審問	司法，审问		FUN_140d17170 按鍵設定：要塞
+Kitchen, Brew	廚房，釀造	厨房，酿造		FUN_140d17170 按鍵設定：要塞
+Macro, Break	巨集，中斷	宏，中断		FUN_140d17170 按鍵設定：巨集
+Macro, Load	巨集，載入	宏，加载		FUN_140d17170 按鍵設定：巨集
+Macro, Play	巨集，播放	宏，播放		FUN_140d17170 按鍵設定：巨集
+Macro, Record	巨集，錄製	宏，录制		FUN_140d17170 按鍵設定：巨集
+Macro, Save	巨集，儲存	宏，保存		FUN_140d17170 按鍵設定：巨集
+Main: Announcements	主介面：通知	主界面：通知		FUN_140d17170 按鍵設定：要塞
+Main: Artifacts	主介面：神器	主界面：神器		FUN_140d17170 按鍵設定：要塞
+Main: Buildings	主介面：建築	主界面：建筑		FUN_140d17170 按鍵設定：要塞
+Main: Burrows	主介面：活動區	主界面：活动区		FUN_140d17170 按鍵設定：要塞；寬度例外：按鍵設定左欄約 38 格（實機截圖確認）
+Main: Chop trees	主介面：砍伐樹木	主界面：砍伐树木		FUN_140d17170 按鍵設定：要塞
+Main: Dig	主介面：挖掘	主界面：挖掘		FUN_140d17170 按鍵設定：要塞；寬度例外：按鍵設定左欄約 38 格（實機截圖確認）
+Main: Erase designations	主介面：清除指定	主界面：清除指定		FUN_140d17170 按鍵設定：要塞
+Main: Gather plants	主介面：採集植物	主界面：采集植物		FUN_140d17170 按鍵設定：要塞
+Main: Hauling	主介面：搬運	主界面：搬运		FUN_140d17170 按鍵設定：要塞
+Main: Hot Key 1	主介面：快捷鍵1	主界面：快捷键1		FUN_140d17170 按鍵設定：要塞
+Main: Hot Key 10	主介面：快捷鍵10	主界面：快捷键10		FUN_140d17170 按鍵設定：要塞
+Main: Hot Key 11	主介面：快捷鍵11	主界面：快捷键11		FUN_140d17170 按鍵設定：要塞
+Main: Hot Key 12	主介面：快捷鍵12	主界面：快捷键12		FUN_140d17170 按鍵設定：要塞
+Main: Hot Key 13	主介面：快捷鍵13	主界面：快捷键13		FUN_140d17170 按鍵設定：要塞
+Main: Hot Key 14	主介面：快捷鍵14	主界面：快捷键14		FUN_140d17170 按鍵設定：要塞
+Main: Hot Key 15	主介面：快捷鍵15	主界面：快捷键15		FUN_140d17170 按鍵設定：要塞
+Main: Hot Key 16	主介面：快捷鍵16	主界面：快捷键16		FUN_140d17170 按鍵設定：要塞
+Main: Hot Key 2	主介面：快捷鍵2	主界面：快捷键2		FUN_140d17170 按鍵設定：要塞
+Main: Hot Key 3	主介面：快捷鍵3	主界面：快捷键3		FUN_140d17170 按鍵設定：要塞
+Main: Hot Key 4	主介面：快捷鍵4	主界面：快捷键4		FUN_140d17170 按鍵設定：要塞
+Main: Hot Key 5	主介面：快捷鍵5	主界面：快捷键5		FUN_140d17170 按鍵設定：要塞
+Main: Hot Key 6	主介面：快捷鍵6	主界面：快捷键6		FUN_140d17170 按鍵設定：要塞
+Main: Hot Key 7	主介面：快捷鍵7	主界面：快捷键7		FUN_140d17170 按鍵設定：要塞
+Main: Hot Key 8	主介面：快捷鍵8	主界面：快捷键8		FUN_140d17170 按鍵設定：要塞
+Main: Hot Key 9	主介面：快捷鍵9	主界面：快捷键9		FUN_140d17170 按鍵設定：要塞
+Main: Hot Keys	主介面：快捷鍵	主界面：快捷键		FUN_140d17170 按鍵設定：要塞
+Main: Item properties	主介面：物品屬性	主界面：物品属性		FUN_140d17170 按鍵設定：要塞
+Main: Justice	主介面：司法	主界面：司法		FUN_140d17170 按鍵設定：要塞
+Main: Labor	主介面：勞動	主界面：劳动		FUN_140d17170 按鍵設定：要塞；寬度例外：按鍵設定左欄約 38 格（實機截圖確認）
+Main: Locations	主介面：場所	主界面：场所		FUN_140d17170 按鍵設定：要塞
+Main: Nobles	主介面：貴族	主界面：贵族		FUN_140d17170 按鍵設定：要塞
+Main: One-Step	主介面：單步執行	主界面：单步执行		FUN_140d17170 按鍵設定：要塞；寬度例外：按鍵設定左欄約 38 格（實機截圖確認）
+Main: Open Item/Unit sheet	主介面：開啟物品／單位資訊	主界面：打开物品／单位信息		FUN_140d17170 按鍵設定：要塞
+Main: Pause/Resume	主介面：暫停／繼續	主界面：暂停／继续		FUN_140d17170 按鍵設定：要塞
+Main: Recenter	主介面：視角置中	主界面：镜头居中		FUN_140d17170 按鍵設定：要塞；寬度例外：按鍵設定左欄約 38 格（實機截圖確認）
+Main: Select filter box	主介面：選取篩選框	主界面：选中筛选框		FUN_140d17170 按鍵設定：要塞
+Main: Smooth and engrave	主介面：磨平與雕刻	主界面：磨平和雕刻		FUN_140d17170 按鍵設定：要塞
+Main: Squads	主介面：小隊	主界面：小队		FUN_140d17170 按鍵設定：要塞
+Main: Stockpiles	主介面：倉儲區	主界面：储物区		FUN_140d17170 按鍵設定：要塞
+Main: Stocks	主介面：庫存	主界面：库存		FUN_140d17170 按鍵設定：要塞
+Main: Tasks	主介面：任務	主界面：任务		FUN_140d17170 按鍵設定：要塞；寬度例外：按鍵設定左欄約 38 格（實機截圖確認）
+Main: Toggle fluid numbers	主介面：切換流體數值	主界面：切换流体数值		FUN_140d17170 按鍵設定：要塞
+Main: Toggle ramp indicators	主介面：切換斜坡標示	主界面：切换斜坡标识		FUN_140d17170 按鍵設定：要塞
+Main: Traffic designations	主介面：劃設通行區	主界面：划定通行区		FUN_140d17170 按鍵設定：要塞
+Main: Units	主介面：單位	主界面：单位		FUN_140d17170 按鍵設定：要塞；寬度例外：按鍵設定左欄約 38 格（實機截圖確認）
+Main: Work orders	主介面：工作指令	主界面：工作订单		FUN_140d17170 按鍵設定：要塞
+Main: World	主介面：世界	主界面：世界		FUN_140d17170 按鍵設定：要塞；寬度例外：按鍵設定左欄約 38 格（實機截圖確認）
+Main: Zones	主介面：區域	主界面：区域		FUN_140d17170 按鍵設定：要塞；寬度例外：按鍵設定左欄約 38 格（實機截圖確認）
+Menu Confirm	選單確認	菜单确认		FUN_140d17170 按鍵設定：一般
+Mouse-context scrollbar down	滑鼠所在捲軸下捲	鼠标所在滚动条下滚		FUN_140d17170 按鍵設定：一般
+Mouse-context scrollbar page down	滑鼠所在捲軸下翻一頁	鼠标所在滚动条下翻一页		FUN_140d17170 按鍵設定：一般
+Mouse-context scrollbar page up	滑鼠所在捲軸上翻一頁	鼠标所在滚动条上翻一页		FUN_140d17170 按鍵設定：一般
+Mouse-context scrollbar up	滑鼠所在捲軸上捲	鼠标所在滚动条上滚		FUN_140d17170 按鍵設定：一般
+Move keyboard cursor down	鍵盤游標下移	键盘光标下移		FUN_140d17170 按鍵設定：一般
+Move keyboard cursor down (z)	鍵盤游標下移一層	键盘光标下移一层		FUN_140d17170 按鍵設定：一般
+Move keyboard cursor down (z), aux	鍵盤游標下移一層，備用	键盘光标下移一层，备用		FUN_140d17170 按鍵設定：一般
+Move keyboard cursor down and left	鍵盤游標左下移	键盘光标左下移		FUN_140d17170 按鍵設定：一般
+Move keyboard cursor down and left, fast	鍵盤游標左下移，快速	键盘光标左下移，快速		FUN_140d17170 按鍵設定：一般
+Move keyboard cursor down and right	鍵盤游標右下移	键盘光标右下移		FUN_140d17170 按鍵設定：一般
+Move keyboard cursor down and right, fast	鍵盤游標右下移，快速	键盘光标右下移，快速		FUN_140d17170 按鍵設定：一般
+Move keyboard cursor down, fast	鍵盤游標下移，快速	键盘光标下移，快速		FUN_140d17170 按鍵設定：一般
+Move keyboard cursor left	鍵盤游標左移	键盘光标左移		FUN_140d17170 按鍵設定：一般
+Move keyboard cursor left, fast	鍵盤游標左移，快速	键盘光标左移，快速		FUN_140d17170 按鍵設定：一般
+Move keyboard cursor right	鍵盤游標右移	键盘光标右移		FUN_140d17170 按鍵設定：一般
+Move keyboard cursor right, fast	鍵盤游標右移，快速	键盘光标右移，快速		FUN_140d17170 按鍵設定：一般
+Move keyboard cursor up	鍵盤游標上移	键盘光标上移		FUN_140d17170 按鍵設定：一般
+Move keyboard cursor up (z)	鍵盤游標上移一層	键盘光标上移一层		FUN_140d17170 按鍵設定：一般
+Move keyboard cursor up (z), aux	鍵盤游標上移一層，備用	键盘光标上移一层，备用		FUN_140d17170 按鍵設定：一般
+Move keyboard cursor up and left	鍵盤游標左上移	键盘光标左上移		FUN_140d17170 按鍵設定：一般
+Move keyboard cursor up and left, fast	鍵盤游標左上移，快速	键盘光标左上移，快速		FUN_140d17170 按鍵設定：一般
+Move keyboard cursor up and right	鍵盤游標右上移	键盘光标右上移		FUN_140d17170 按鍵設定：一般
+Move keyboard cursor up and right, fast	鍵盤游標右上移，快速	键盘光标右上移，快速		FUN_140d17170 按鍵設定：一般
+Move keyboard cursor up, fast	鍵盤游標上移，快速	键盘光标上移，快速		FUN_140d17170 按鍵設定：一般
+Move secondary selector down	次要選取框下移	次要选择框下移		FUN_140d17170 按鍵設定：一般
+Move secondary selector up	次要選取框上移	次要选择框上移		FUN_140d17170 按鍵設定：一般
+Move selector down	選取框下移	选择框下移		FUN_140d17170 按鍵設定：一般
+Move selector left	選取框左移	选择框左移		FUN_140d17170 按鍵設定：一般
+Move selector right	選取框右移	选择框右移		FUN_140d17170 按鍵設定：一般
+Move selector up	選取框上移	选择框上移		FUN_140d17170 按鍵設定：一般
+Move view/cursor down	視角／游標下移	视角／光标下移		FUN_140d17170 按鍵設定：一般
+Move view/cursor down (z)	視角／游標下移一層	视角／光标下移一层		FUN_140d17170 按鍵設定：一般
+Move view/cursor down (z), aux	視角／游標下移一層，備用	视角／光标下移一层，备用		FUN_140d17170 按鍵設定：一般
+Move view/cursor down (z), fast	視角／游標下移一層，快速	视角／光标下移一层，快速		FUN_140d17170 按鍵設定：一般
+Move view/cursor down and left	視角／游標左下移	视角／光标左下移		FUN_140d17170 按鍵設定：一般
+Move view/cursor down and left, fast	視角／游標左下移，快速	视角／光标左下移，快速		FUN_140d17170 按鍵設定：一般
+Move view/cursor down and right	視角／游標右下移	视角／光标右下移		FUN_140d17170 按鍵設定：一般
+Move view/cursor down and right, fast	視角／游標右下移，快速	视角／光标右下移，快速		FUN_140d17170 按鍵設定：一般
+Move view/cursor down, fast	視角／游標下移，快速	视角／光标下移，快速		FUN_140d17170 按鍵設定：一般
+Move view/cursor left	視角／游標左移	视角／光标左移		FUN_140d17170 按鍵設定：一般
+Move view/cursor left, fast	視角／游標左移，快速	视角／光标左移，快速		FUN_140d17170 按鍵設定：一般
+Move view/cursor right	視角／游標右移	视角／光标右移		FUN_140d17170 按鍵設定：一般
+Move view/cursor right, fast	視角／游標右移，快速	视角／光标右移，快速		FUN_140d17170 按鍵設定：一般
+Move view/cursor up	視角／游標上移	视角／光标上移		FUN_140d17170 按鍵設定：一般
+Move view/cursor up (z)	視角／游標上移一層	视角／光标上移一层		FUN_140d17170 按鍵設定：一般
+Move view/cursor up (z), aux	視角／游標上移一層，備用	视角／光标上移一层，备用		FUN_140d17170 按鍵設定：一般
+Move view/cursor up (z), fast	視角／游標上移一層，快速	视角／光标上移一层，快速		FUN_140d17170 按鍵設定：一般
+Move view/cursor up and left	視角／游標左上移	视角／光标左上移		FUN_140d17170 按鍵設定：一般
+Move view/cursor up and left, fast	視角／游標左上移，快速	视角／光标左上移，快速		FUN_140d17170 按鍵設定：一般
+Move view/cursor up and right	視角／游標右上移	视角／光标右上移		FUN_140d17170 按鍵設定：一般
+Move view/cursor up and right, fast	視角／游標右上移，快速	视角／光标右上移，快速		FUN_140d17170 按鍵設定：一般
+Move view/cursor up, fast	視角／游標上移，快速	视角／光标上移，快速		FUN_140d17170 按鍵設定：一般
+Option 1	選項 1	选项 1		FUN_140d17170 按鍵設定：一般
+Option 10	選項 10	选项 10		FUN_140d17170 按鍵設定：一般
+Option 11	選項 11	选项 11		FUN_140d17170 按鍵設定：一般
+Option 12	選項 12	选项 12		FUN_140d17170 按鍵設定：一般
+Option 13	選項 13	选项 13		FUN_140d17170 按鍵設定：一般
+Option 14	選項 14	选项 14		FUN_140d17170 按鍵設定：一般
+Option 15	選項 15	选项 15		FUN_140d17170 按鍵設定：一般
+Option 16	選項 16	选项 16		FUN_140d17170 按鍵設定：一般
+Option 17	選項 17	选项 17		FUN_140d17170 按鍵設定：一般
+Option 18	選項 18	选项 18		FUN_140d17170 按鍵設定：一般
+Option 19	選項 19	选项 19		FUN_140d17170 按鍵設定：一般
+Option 2	選項 2	选项 2		FUN_140d17170 按鍵設定：一般
+Option 20	選項 20	选项 20		FUN_140d17170 按鍵設定：一般
+Option 3	選項 3	选项 3		FUN_140d17170 按鍵設定：一般
+Option 4	選項 4	选项 4		FUN_140d17170 按鍵設定：一般
+Option 5	選項 5	选项 5		FUN_140d17170 按鍵設定：一般
+Option 6	選項 6	选项 6		FUN_140d17170 按鍵設定：一般
+Option 7	選項 7	选项 7		FUN_140d17170 按鍵設定：一般
+Option 8	選項 8	选项 8		FUN_140d17170 按鍵設定：一般
+Option 9	選項 9	选项 9		FUN_140d17170 按鍵設定：一般
+Page secondary selector down	次要選取框下翻一頁	次要选择框下翻一页		FUN_140d17170 按鍵設定：一般
+Page secondary selector up	次要選取框上翻一頁	次要选择框上翻一页		FUN_140d17170 按鍵設定：一般
+Page selector down	選取框下翻一頁	选择框下翻一页		FUN_140d17170 按鍵設定：一般
+Page selector up	選取框上翻一頁	选择框上翻一页		FUN_140d17170 按鍵設定：一般
+Secondary Option 1	次要選項 1	次要选项 1		FUN_140d17170 按鍵設定：一般
+Secondary Option 10	次要選項 10	次要选项 10		FUN_140d17170 按鍵設定：一般
+Secondary Option 11	次要選項 11	次要选项 11		FUN_140d17170 按鍵設定：一般
+Secondary Option 12	次要選項 12	次要选项 12		FUN_140d17170 按鍵設定：一般
+Secondary Option 13	次要選項 13	次要选项 13		FUN_140d17170 按鍵設定：一般
+Secondary Option 14	次要選項 14	次要选项 14		FUN_140d17170 按鍵設定：一般
+Secondary Option 15	次要選項 15	次要选项 15		FUN_140d17170 按鍵設定：一般
+Secondary Option 16	次要選項 16	次要选项 16		FUN_140d17170 按鍵設定：一般
+Secondary Option 17	次要選項 17	次要选项 17		FUN_140d17170 按鍵設定：一般
+Secondary Option 18	次要選項 18	次要选项 18		FUN_140d17170 按鍵設定：一般
+Secondary Option 19	次要選項 19	次要选项 19		FUN_140d17170 按鍵設定：一般
+Secondary Option 2	次要選項 2	次要选项 2		FUN_140d17170 按鍵設定：一般
+Secondary Option 20	次要選項 20	次要选项 20		FUN_140d17170 按鍵設定：一般
+Secondary Option 3	次要選項 3	次要选项 3		FUN_140d17170 按鍵設定：一般
+Secondary Option 4	次要選項 4	次要选项 4		FUN_140d17170 按鍵設定：一般
+Secondary Option 5	次要選項 5	次要选项 5		FUN_140d17170 按鍵設定：一般
+Secondary Option 6	次要選項 6	次要选项 6		FUN_140d17170 按鍵設定：一般
+Secondary Option 7	次要選項 7	次要选项 7		FUN_140d17170 按鍵設定：一般
+Secondary Option 8	次要選項 8	次要选项 8		FUN_140d17170 按鍵設定：一般
+Secondary Option 9	次要選項 9	次要选项 9		FUN_140d17170 按鍵設定：一般
+Unit list: Sort by skills	單位清單：依技能排序	单位列表：按技能排序		FUN_140d17170 按鍵設定：要塞
+Unit list: Toggle specialization	單位清單：切換專職	单位列表：切换专职		FUN_140d17170 按鍵設定：要塞
+Unit lists: Open job details	單位清單：開啟工作詳情	单位列表：打开工作详情		FUN_140d17170 按鍵設定：要塞
+Unit lists: Recenter on job	單位清單：視角移到工作處	单位列表：镜头移到工作处		FUN_140d17170 按鍵設定：要塞
+Unit lists: Sort by category	單位清單：依類別排序	单位列表：按类别排序		FUN_140d17170 按鍵設定：要塞
+Unit lists: Sort by happiness	單位清單：依心情排序	单位列表：按心情排序		FUN_140d17170 按鍵設定：要塞
+Unit lists: Sort by job	單位清單：依工作排序	单位列表：按工作排序		FUN_140d17170 按鍵設定：要塞
+Unit lists: Sort by name	單位清單：依名字排序	单位列表：按名字排序		FUN_140d17170 按鍵設定：要塞
+Unit lists: Sort by profession	單位清單：依職業排序	单位列表：按职业排序		FUN_140d17170 按鍵設定：要塞

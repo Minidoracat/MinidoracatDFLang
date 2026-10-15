@@ -1,0 +1,72 @@
+en	zh-Hant	zh-Hans	align	note
+How are you enjoying the adventure?	這趟冒險你還玩得開心嗎？	这趟冒险你还玩得开心吗？		FUN_1404988b0 1404a5eaa 同行協議的閒聊（同伴、受護送者之間），單獨一句
+Where should I take you?	你要我帶你去哪裡？	你要我带你去哪儿？		FUN_1404988b0 1404a60af 同行協議：護送、帶路的一方問目的地
+Soon the world will be set right.	這個世界很快就會回到正軌。	这个世界很快就会回到正轨。		FUN_1404988b0 1404a62b4 同行協議的閒聊
+Are you looking forward to the performance?	你期待這場演出嗎？	你期待这场演出吗？		FUN_1404988b0 1404a679b 同行協議：結伴去看／參加演出
+I've forgotten what I was going to say...	我忘了我本來要說什麼……	我忘了我本来要说什么……		FUN_1404988b0 1404a69a5 沒有話題可說時
+How have things been?	最近過得怎麼樣？	最近过得怎么样？		FUN_1404988b0 1404a6e4c 問近況（與 How's life here? 二選一）
+How's life here?	在這裡過得怎麼樣？	在这儿过得怎么样？		FUN_1404988b0 1404a6e75 問近況（對方住在當地時）
+How may I serve you?	有什麼我能為你效勞的？	有什么我能为你效劳的？		FUN_1404988b0 1404a7181 玩家向統治者／領主表示效力；查不到對方勢力時
+It has been the same as ever.	還是老樣子。	还是老样子。		FUN_1404988b0 1404a7255 回答 How have things been? 一類的近況問題
+Our hopes travel with you.	我們的希望與你同行。	我们的希望与你同行。		FUN_1404988b0 1404a88da 任務句尾（You must kill …  Seek your foe …  ＋這句或 Enjoy the hunt!）
+Enjoy the hunt!	好好享受這場狩獵吧！	好好享受这场狩猎吧！		FUN_1404988b0 1404a88f1 任務句尾（同上，說話者性格好鬥時）
+They have been harassing the people for too long.	他們騷擾百姓太久了。	他们骚扰百姓太久了。		FUN_1404988b0 1404a8b8e 驅逐惡棍任務的下句（原文以 .  接在 You must drive the ruffians of … 後）
+Their aggressive order must not be allowed to flourish.	絕不能讓他們那套好戰的秩序壯大下去。	绝不能让他们那套好战的秩序壮大下去。		FUN_1404988b0 1404a986a 驅逐任務的下句（You must drive … out of …）
+These outlaws must be punished.	這些不法之徒必須受到懲罰。	这些不法之徒必须受到惩罚。		FUN_1404988b0 1404a9934 驅逐任務的下句（同上）
+These criminals have been allowed to thrive for too long.	這些罪犯逍遙法外太久了。	这些罪犯逍遥法外太久了。		FUN_1404988b0 1404a99fe 驅逐任務的下句（同上）
+The alliance has outlived its usefulness.	這個同盟已經沒有利用價值了。	这个同盟已经没有利用价值了。		FUN_1404988b0 1404aa133 統治者談對某勢力的打算（… must be driven off or subjugated. 的下句）
+In any case, peace is no longer an option.	無論如何，和平已經不在考慮之列了。	无论如何，和平已经不在考虑之列了。		FUN_1404988b0 1404aa14a 同上；術語例外：case
+This war must end with our victory.	這場戰爭必須以我們的勝利告終。	这场战争必须以我们的胜利告终。		FUN_1404988b0 1404aa161 同上
+Their tribute is not enough.	他們進貢的那點東西根本不夠。	他们进贡的那点东西根本不够。		FUN_1404988b0 1404aa178 同上（對方向我們納貢）
+We can no longer pay them homage.	我們不能再對他們俯首稱臣了。	我们不能再对他们俯首称臣了。		FUN_1404988b0 1404aa18f 同上（我們向對方納貢）
+I tire of this pointless skirmishing.	這種沒完沒了的無謂衝突，我受夠了。	这种没完没了的无谓冲突，我受够了。		FUN_1404988b0 1404aa1a6 同上（雙方小規模衝突）
+I wish I could tell you where to begin your search.	真希望我能告訴你該從哪裡找起。	真希望我能告诉你该从哪儿找起。		FUN_1404988b0 1404aa754 任務句尾：查不到目標所在地時（原文一個字串含兩句，以兩個空白隔開）
+Until then, you are free to do as you please.	在那之前，你想做什麼都行。	在那之前，你想做什么都行。		FUN_1404988b0 1404aa754 同上第二句
+The group is at war with us.	那個團體正在和我們交戰。	那个团体正在和我们交战。		FUN_1404988b0 1404ab023／1404ab0bc 勢力關係；勢力沒有名字時遊戲寫 The group。逐條寫出：在講者句型的佔位裡，articles 的 The {%1} 比 {1} 開頭的句型先比，會剝掉 The 變成「團體」
+The group is skirmishing with us.	那個團體和我們時有零星衝突。	那个团体和我们时有零星冲突。		FUN_1404988b0 1404ab023／1404ab10f 勢力關係；勢力沒有名字時遊戲寫 The group。逐條寫出：在講者句型的佔位裡，articles 的 The {%1} 比 {1} 開頭的句型先比，會剝掉 The 變成「團體」
+The group is unknown us.	我們對那個團體一無所知。	我们对那个团体一无所知。		FUN_1404988b0 1404ab023／1404ab126 勢力關係（原文少了 to 是遊戲的錯字）；勢力沒有名字時遊戲寫 The group。逐條寫出：在講者句型的佔位裡，articles 的 The {%1} 比 {1} 開頭的句型先比，會剝掉 The 變成「團體」
+The group must be driven off or subjugated.	那個團體非趕走或征服不可。	那个团体非赶走或征服不可。		FUN_1404988b0 1404aa01b／1404aa099 統治者談某勢力；勢力沒有名字時遊戲寫 The group。逐條寫出：在講者句型的佔位裡，articles 的 The {%1} 比 {1} 開頭的句型先比，會剝掉 The 變成「團體」
+The group could afford to learn a lesson or two, though open conflict would be unwise.	那個團體是該受點教訓，不過公開開戰並不明智。	那个团体是该吃点教训，不过公开开战并不明智。		FUN_1404988b0 1404aa01b／1404aa0ba 統治者談某勢力；勢力沒有名字時遊戲寫 The group。逐條寫出：在講者句型的佔位裡，articles 的 The {%1} 比 {1} 開頭的句型先比，會剝掉 The 變成「團體」
+the deaths	那幾起死亡事件	那几起死亡事件	inner	FUN_1404988b0 1404a6aed Tell me about ＋麻煩話題＋.（句型在 zz_adv_speech_conv4 的 Tell me about {%1}.「跟我說說{1}的事。」；選單 Ask about the deaths 的說出口版）
+the law-breaking	違法亂紀	违法乱纪	inner	FUN_1404988b0 1404a6b1e 同上
+the abductions	那幾起綁架案	那几起绑架案	inner	FUN_1404988b0 1404a6b9b 同上
+the beasts	那些野獸	那些野兽	inner	FUN_1404988b0 1404a6c15 同上
+the criminals	那些罪犯	那些罪犯	inner	FUN_1404988b0 1404a6c46 同上
+the bandits	那些盜匪	那些土匪	inner	FUN_1404988b0 1404a6c60 同上
+the skulking vermin	那些鬼鬼祟祟的鼠輩	那些鬼鬼祟祟的鼠辈	inner	FUN_1404988b0 1404a6c7a 同上
+the bone-chilling horror	那令人毛骨悚然的怪物	那令人毛骨悚然的怪物	inner	FUN_1404988b0 1404a6c91 同上
+the ruffians	那些惡棍	那些恶棍	inner	FUN_1404988b0 1404a6ca8 同上
+the open war	那場公開的戰爭	那场公开的战争	inner	FUN_1404988b0 1404a6cbf 同上
+the brewing trouble	那正在醞釀的麻煩	那正在酝酿的麻烦	inner	FUN_1404988b0 1404a6cd6 同上
+great beast	巨獸	巨兽	inner	FUN_1404988b0 1404a7779 任務：  This ＋目標描述＋ threatens our people with its very presence.；術語例外：Great
+ancient force of nature	遠古的自然之力	远古的自然之力	inner	FUN_1404988b0 1404a77c5 同上（巨獸類）
+fearsome beast	可怕的野獸	可怕的野兽	inner	FUN_1404988b0 1404a785d 同上
+horrible beast	駭人的野獸	骇人的野兽	inner	FUN_1404988b0 1404a78a9 同上
+evil being	邪惡的存在	邪恶的存在	inner	FUN_1404988b0 1404a7977 同上
+terror from the evil depths	來自邪惡深淵的恐怖之物	来自邪恶深渊的恐怖之物	inner	FUN_1404988b0 1404a7ab9 同上（地底生物）
+vile monster from the bowels of the earth	來自大地深處的可憎怪物	来自大地深处的可憎怪物	inner	FUN_1404988b0 1404a7add 同上（地底生物）
+beast from underground	地底來的野獸	地底来的野兽	inner	FUN_1404988b0 1404a7b01 同上（地底生物）
+creeping thing	爬行的怪東西	爬行的怪东西	inner	FUN_1404988b0 1404a7b1f 同上（地底生物）
+savage beast	兇殘的野獸	凶残的野兽	inner	FUN_1404988b0 1404a7b74 同上（荒野生物）
+ferocious wild animal	兇猛的野生動物	凶猛的野生动物	inner	FUN_1404988b0 1404a7bcd 同上（荒野生物）
+ferocious unnatural beast	兇猛的邪異野獸	凶猛的邪异野兽	inner	FUN_1404988b0 1404a7be4 同上（荒野生物）
+beast from the wilds	荒野來的野獸	荒野来的野兽	inner	FUN_1404988b0 1404a7c03 同上（荒野生物）
+and there is friendship between our peoples.	而且兩族交情深厚。	而且两族交情深厚。	inner	FUN_1404988b0 1404ab181 勢力關係句：… is our ally／is not at war with us／is paying us tribute／accepts our tribute＋, ＋這段
+and there is no hard feeling between our peoples.	而且兩族之間沒什麼嫌隙。	而且两族之间没什么嫌隙。	inner	FUN_1404988b0 1404ab1a2 同上
+but there is ill-will between our peoples.	但兩族之間心存芥蒂。	但两族之间心存芥蒂。	inner	FUN_1404988b0 1404ab1b9 同上
+the treatment of animals	對待動物的方式	对待动物的方式	inner	FUN_1404988b0 1404ab5dc The trouble started because of a dispute over ＋倫理話題
+the treatment of plants	對待植物的方式	对待植物的方式	inner	FUN_1404988b0 1404ab5f6 同上
+a formalized agreement	訂立正式協議	订立正式协议	inner	FUN_1404988b0 1404ab624 同上
+truthfulness	誠實與否	诚实与否	inner	FUN_1404988b0 1404ab63b 同上（倫理話題：誠實）
+the devouring of the bodies of sapient beings	啃食智慧生物屍體	啃食智慧生物尸体	inner	FUN_1404988b0 1404ab652 同上
+the display of war and hunting trophies	陳列戰爭與狩獵的戰利品	陈列战争与狩猎的战利品	inner	FUN_1404988b0 1404ab669 同上
+the adversary's inability to communicate and form treaties	對方無法溝通、也無法締結條約	对方无法沟通、也无法缔结条约	inner	FUN_1404988b0 1404ab69d The trouble started because of ＋原因（不接 a dispute over）
+a desire to kill the living and any others in opposition	想殺光生者與一切反抗者的慾望	想杀光生者与一切反抗者的欲望	inner	FUN_1404988b0 1404ab6b4 同上（亡靈勢力）；術語例外：Kill
+the disturbance of once-eternal rest	本該永恆的安息遭到驚擾	本该永恒的安息遭到惊扰	inner	FUN_1404988b0 1404ab6cb 同上（亡靈）
+prior aggression by the adversary	對方先前的侵略	对方先前的侵略	inner	FUN_1404988b0 1404ab86f The trouble started because of ＋開戰原因
+a first contact that went horribly wrong	一次糟糕透頂的初次接觸	一次糟糕透顶的初次接触	inner	FUN_1404988b0 1404ab889 同上
+the adversary's refusal to form treaties	對方拒絕締結條約	对方拒绝缔结条约	inner	FUN_1404988b0 1404ab8a3 同上
+the adversary's abuse of the aggressor's fallen	對方凌辱了進攻方的陣亡者	对方凌辱了进攻方的阵亡者	inner	FUN_1404988b0 1404ab8bd 同上
+an incident involving a lost diplomat	一起與失蹤使節有關的事件	一起与失踪使节有关的事件	inner	FUN_1404988b0 1404ab8d7 同上
+a disagreement over prior treaties	對過去條約的分歧	对过去条约的分歧	inner	FUN_1404988b0 1404ab8f1 同上
+an incident involving a trade caravan	一起與商隊有關的事件	一起与商队有关的事件	inner	FUN_1404988b0 1404ab90b 同上；術語例外：Trade

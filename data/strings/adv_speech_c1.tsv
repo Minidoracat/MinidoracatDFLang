@@ -1,0 +1,7 @@
+en	zh-Hant	zh-Hans	align	note
+Ah, hello.	啊，你好。	啊，你好。		FUN_14067d390 L901884 回應問候：TEXT_SET GREET_REPLY（raws text_greet_reply.txt）第一句；原本被通用句型拆成「Ah，你好。」
+Can I be of some help?	有什麼我幫得上忙的嗎？	有什么我帮得上忙的吗？		FUN_14067d390 L901978 回應名人問候：TEXT_SET GREET_REPLY_AFTER_HERO 第二句（I am＋名字. 之後）
+Hellooo!	哈囉～！	哈喽～！		FUN_14067d390 L900315 對嬰兒說話：TEXT_SET GREET_BABY（三選一）
+Look at you!	瞧瞧你！	瞧瞧你！		FUN_14067d390 L900315 對嬰兒說話：TEXT_SET GREET_BABY（三選一）
+A baby!	是小寶寶！	是小宝宝！		FUN_14067d390 L900315 對嬰兒說話：TEXT_SET GREET_BABY（A baby!  How adorable! 第一句）
+How adorable!	好可愛啊！	好可爱啊！		FUN_14067d390 L900315 對嬰兒說話：TEXT_SET GREET_BABY（A baby!  How adorable! 第二句）

@@ -98,12 +98,16 @@ type NameFn = unsafe extern "C" fn(*const u8, *mut StdString, u8, u8);
 type ResizeFn = unsafe extern "C" fn(*mut StdString, usize, u8);
 /// (viewscreen)
 type ScreenFn = unsafe extern "C" fn(*mut u8);
+/// (冒險模式介面, 框左緣, 框右緣)
+type LogFn = unsafe extern "C" fn(*mut u8, i32, i32);
+/// (交談畫面, ?, 框左緣, 框右緣)
+type TalkLogFn = unsafe extern "C" fn(*mut u8, u32, i32, i32);
 
-pub const HOOKS: [&str; 12] = [
+pub const HOOKS: [&str; 14] = [
     "addst", "addst_flag", "top_addst", "addcoloredst", "mtb_set_width", "add_anchored_tile", "wrap_lines", "ctb_add_string",
-    "translate_name", "string_resize", "adv_appearance", "adv_personality",
+    "translate_name", "string_resize", "adv_appearance", "adv_personality", "adv_log", "adv_talk_log",
 ];
-static TRAMPOLINES: [AtomicUsize; 12] = [const { AtomicUsize::new(0) }; 12];
+static TRAMPOLINES: [AtomicUsize; 14] = [const { AtomicUsize::new(0) }; 14];
 /// wrap_text 的位址（只登記、不攔；它切行時呼叫 wrap_lines）：enable 時從呼叫它的程式碼找出遊戲啟動時就切好的提示（見 lines.rs）
 pub static WRAP_TEXT: OnceLock<usize> = OnceLock::new();
 
@@ -130,7 +134,9 @@ pub fn attach(name: &str, target: usize) -> Result<(), String> {
         8 => hook_translate_name as *const (),
         9 => hook_string_resize as *const (),
         10 => hook_adv_appearance as *const (),
-        _ => hook_adv_personality as *const (),
+        11 => hook_adv_personality as *const (),
+        12 => hook_adv_log as *const (),
+        _ => hook_adv_talk_log as *const (),
     };
     let detour = unsafe { RawDetour::new(target as *const (), hook) }.map_err(|e| e.to_string())?;
     TRAMPOLINES[index].store(detour.trampoline() as *const () as usize, Ordering::Release);
@@ -664,6 +670,58 @@ unsafe extern "C" fn hook_adv_personality(vs: *mut u8) {
     unsafe {
         orig(vs);
         plan_adventurer(vs, &[(0x1398, 78), (0x13b0, 78), (0x13c8, 78)]);
+    }
+}
+
+/// 冒險模式上方的訊息框（公告與交談紀錄）：遊戲先把每則報告依框寬切成幾行，再一行行用 addst 畫，整句比對只看得到片段，
+/// 兩句以上的一則也比不到。畫之前替每則報告的這幾行登記畫字計畫（見 plan_report_lines）。
+unsafe extern "C" fn hook_adv_log(ui: *mut u8, left: i32, right: i32) {
+    let orig: LogFn = unsafe { std::mem::transmute(TRAMPOLINES[12].load(Ordering::Acquire)) };
+    unsafe {
+        plan_report_lines(ui as usize + 0x43d0);
+        orig(ui, left, right);
+    }
+}
+
+/// 交談畫面上方的交談紀錄：同上，行清單在 +0xb0。
+unsafe extern "C" fn hook_adv_talk_log(ui: *mut u8, a: u32, left: i32, right: i32) {
+    let orig: TalkLogFn = unsafe { std::mem::transmute(TRAMPOLINES[13].load(Ordering::Acquire)) };
+    unsafe {
+        plan_report_lines(ui as usize + 0xb0);
+        orig(ui, a, left, right);
+    }
+}
+
+/// 報告切成的行清單（vector<行*>）：每行開頭是那一行的 std::string，+0x20 指回報告，報告 +8 是整則原文。
+/// 同一則報告的幾行連在一起；只有一行的報告，行字串是空的、畫的是報告本身的全文。整則（「講者: 內容」）查字典，
+/// 查不到就逐句查，中文以這幾行最長的一行為寬重新換行（見 lines.rs）。
+/// ponytail: 位移照 53.16 的 FUN_1408020c0（訊息框 +0x43d0）、FUN_140867e10（交談畫面 +0xb0）寫死；改版時特徵碼對不上就不攔，
+/// 只有這兩個框維持英文。
+unsafe fn plan_report_lines(vec: usize) {
+    let dict = DICT.load(Ordering::Acquire);
+    if dict.is_null() || !ENABLED.load(Ordering::Relaxed) {
+        return;
+    }
+    let dict = unsafe { &*dict };
+    let items = unsafe { crate::lines::vec_items(vec) };
+    let report_of = |item: usize| unsafe { (item as *const usize).byte_add(0x20).read() };
+    let mut i = 0;
+    while i < items.len() {
+        let report = report_of(items[i]);
+        let j = i + items[i..].iter().take_while(|&&item| report_of(item) == report).count();
+        if report != 0 {
+            let group = &items[i..j];
+            let text = unsafe { crate::lines::str_bytes(report + 8) };
+            let lines: Vec<usize> = match group {
+                [only] if unsafe { crate::lines::str_bytes(*only) }.is_empty() => vec![report + 8],
+                _ => group.to_vec(),
+            };
+            let width = lines.iter().map(|&s| unsafe { crate::lines::str_bytes(s) }.len()).max().unwrap_or(0) as i32;
+            if text.iter().any(u8::is_ascii_alphabetic) {
+                unsafe { crate::lines::plan(&lines, text, width, dict, false) };
+            }
+        }
+        i = j;
     }
 }
 

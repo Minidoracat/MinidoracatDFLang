@@ -1,0 +1,112 @@
+en	zh-Hant	zh-Hans	align	note
+DIPLOMACY	外交	外交		FUN_1403d6950 1403d6d96 要塞主畫面上方警報鈕：外交（與 ALERT 同一列，addst）
+PETITIONS	請願	请愿		FUN_1403d6950 1403d6f86 要塞主畫面上方警報鈕：請願
+SIEGE	圍攻	围攻		FUN_1403d6950 1403d7158 要塞主畫面上方警報鈕：圍攻（during sieges 一律「圍攻時」）
+Placing creatures	放置生物	放置生物		FUN_1403d6950 1403d81db 物件測試場（arena）左上工具模式名
+Placing trees	放置樹木	放置树木		FUN_1403d6950 1403d8257 物件測試場左上工具模式名
+Right click when done	完成後按右鍵	完成后按右键		FUN_1403d6950 1403d8221 物件測試場：放置生物／樹木模式名下一行
+Adding water	加入水	添加水		FUN_1403d6950 1403d82d3 物件測試場左上工具模式名
+Adding magma	加入熔岩	添加熔岩		FUN_1403d6950 1403d8309 物件測試場左上工具模式名
+Adding snow	加入雪	添加雪		FUN_1403d6950 1403d833f 物件測試場左上工具模式名
+Adding mud	加入泥巴	添加泥巴		FUN_1403d6950 1403d8372 物件測試場左上工具模式名；mud 照名稱檔「泥巴」
+Removing fluids and spatter	移除液體與汙漬	移除液体和污渍		FUN_1403d6950 1403d83a5 物件測試場左上工具模式名；spatter 照術語「汙漬」
+Automated vein and gem mining blueprint	自動礦脈與寶石挖掘藍圖	自动矿脉和宝石挖掘蓝图		FUN_1403d6950 1403d9710 挖掘工具左上模式名（藍圖模式）；模式名照 toolbar.tsv「一般挖掘」「寶石挖掘」
+Vein and gem mining blueprint	礦脈與寶石挖掘藍圖	矿脉和宝石挖掘蓝图		FUN_1403d6950 1403d974b 挖掘工具左上模式名（藍圖模式）
+Gem mining blueprint	寶石挖掘藍圖	宝石挖掘蓝图		FUN_1403d6950 1403d9786 挖掘工具左上模式名（藍圖模式）
+Regular mining blueprint	一般挖掘藍圖	常规挖掘蓝图		FUN_1403d6950 1403d97bc 挖掘工具左上模式名（藍圖模式）
+Automated vein and gem mining	自動礦脈與寶石挖掘	自动矿脉和宝石挖掘		FUN_1403d6950 1403d97f7 挖掘工具左上模式名；提示框「只挖礦石與寶石，並自動開採…」
+Vein and gem mining	礦脈與寶石挖掘	矿脉和宝石挖掘		FUN_1403d6950 1403d9832 挖掘工具左上模式名
+Removing stairs/ramp/constructions	移除樓梯／斜坡／建築結構	移除楼梯/斜坡/建筑结构		FUN_1403d6950 1403d98d9 挖掘工具左上模式名（拆除建築結構）
+Stair mining blueprint	樓梯挖掘藍圖	楼梯挖掘蓝图		FUN_1403d6950 1403d9918 挖掘工具左上模式名（藍圖模式）
+Stair mining	樓梯挖掘	楼梯挖掘		FUN_1403d6950 1403d994e 挖掘工具左上模式名；照術語 Stair Mining
+Ramp mining blueprint	斜坡挖掘藍圖	斜坡挖掘蓝图		FUN_1403d6950 1403d998d 挖掘工具左上模式名（藍圖模式）
+Channel mining blueprint	挖槽藍圖	挖槽蓝图		FUN_1403d6950 1403d9a02 挖掘工具左上模式名（藍圖模式）
+Channel mining	挖槽	挖槽		FUN_1403d6950 1403d9a38 挖掘工具左上模式名；channel 照術語「挖槽」
+Converting mining blueprint to regular	將挖掘藍圖轉為一般命令	将挖掘蓝图转为常规命令		FUN_1403d6950 1403d9a6b 挖掘工具左上模式名：藍圖轉一般（提示框「把藍圖改為標準選取」）
+Converting mining to blueprint	將挖掘命令轉為藍圖	将挖掘命令转为蓝图		FUN_1403d6950 1403d9a9e 挖掘工具左上模式名：一般轉藍圖
+Must span multiple elevations	必須跨越多個高度	必须跨越多个高度		FUN_1403d6950 1403d9b17／1403e5b4b 樓梯挖掘、建造樓梯等時模式名下一行（提示框「選取範圍必須跨越多個高度」）
+Converting to chopping blueprint	將伐木命令轉為藍圖	将伐木命令转为蓝图		FUN_1403d6950 1403d9c52 伐木工具左上模式名
+Converting chopping blueprint to regular	將伐木藍圖轉為一般命令	将伐木蓝图转为常规命令		FUN_1403d6950 1403d9c88 伐木工具左上模式名
+Chopping trees blueprint	砍伐樹木藍圖	砍伐树木蓝图		FUN_1403d6950 1403d9cc7 伐木工具左上模式名（藍圖模式）
+Converting to gathering blueprint	將採集命令轉為藍圖	将采集命令转为蓝图		FUN_1403d6950 1403d9e32 採集工具左上模式名
+Converting gathering blueprint to regular	將採集藍圖轉為一般命令	将采集蓝图转为常规命令		FUN_1403d6950 1403d9e68 採集工具左上模式名
+Gathering fruit and leaves blueprint	採集果實與葉子藍圖	采集果实和叶子蓝图		FUN_1403d6950 1403d9ea7 採集工具左上模式名（藍圖模式）
+Smoothing blueprint	磨平藍圖	磨平蓝图		FUN_1403d6950 1403da02c 磨平工具左上模式名（藍圖模式）
+Engraving blueprint	雕刻藍圖	雕刻蓝图		FUN_1403d6950 1403da0a1 磨平工具左上模式名（藍圖模式）
+Engraving smoothed floors and walls	雕刻磨平的地板與牆壁	雕刻磨平的地板和墙壁		FUN_1403d6950 1403da0d7 磨平工具左上模式名；照「磨平粗糙的地板與牆壁」
+Track carving blueprint	鑿刻軌道藍圖	凿刻轨道蓝图		FUN_1403d6950 1403da116 磨平工具左上模式名（藍圖模式）
+Carving tracks in floor	在地板上鑿刻軌道	在地板上凿刻轨道		FUN_1403d6950 1403da14c 磨平工具左上模式名；照提示框「在石質地板上鑿出軌道」
+Fortification carving blueprint	開鑿射擊孔藍圖	开凿射击孔蓝图		FUN_1403d6950 1403da18b 磨平工具左上模式名（藍圖模式）
+Carving fortifications through walls	在牆壁上開鑿射擊孔	在墙壁上开凿射击孔		FUN_1403d6950 1403da1c1 磨平工具左上模式名；fortification 照提示框「射擊孔」
+Converting smoothing blueprint to regular	將磨平藍圖轉為一般命令	将磨平蓝图转为常规命令		FUN_1403d6950 1403da1f7 磨平工具左上模式名
+Converting to smoothing blueprint	將磨平命令轉為藍圖	将磨平命令转为蓝图		FUN_1403d6950 1403da22d 磨平工具左上模式名
+Forbidding items and buildings	禁用物品與建築	禁用物品和建筑		FUN_1403d6950 1403da3a0 物品標記工具左上模式名；對照「認領禁用的物品與建築」
+Designating items for melting	標記要熔化的物品	标记要熔化的物品		FUN_1403d6950 1403da3d6 物品標記工具左上模式名
+Removing melting designations	移除熔化標記	移除熔化标记		FUN_1403d6950 1403da40c 物品標記工具左上模式名；照提示框同名句
+Designating items for dumping	標記要傾倒的物品	标记要倾倒的物品		FUN_1403d6950 1403da442 物品標記工具左上模式名
+Removing dumping designations	移除傾倒標記	移除倾倒标记		FUN_1403d6950 1403da478 物品標記工具左上模式名
+Hiding items from view	在畫面上隱藏物品	在画面上隐藏物品		FUN_1403d6950 1403da4ae 物品標記工具左上模式名
+Revealing hidden items	顯示隱藏的物品	显示隐藏的物品		FUN_1403d6950 1403da4e4 物品標記工具左上模式名
+Designating restricted traffic area	劃設限制通行區	划定限制通行区		FUN_1403d6950 1403da62b 交通工具左上模式名；照「劃設高通行區」
+Designating low traffic area	劃設低通行區	划定低通行区		FUN_1403d6950 1403da661 交通工具左上模式名
+Removing traffic designations	移除通行標記	移除通行标记		FUN_1403d6950 1403da697 交通工具左上模式名（恢復一般通行）
+A catapult's orientation cannot be changed	投石機的方向一經放置	投石机的方向一经放置		FUN_1403d6950 1403dfae9 放置投石機時的說明第 1 行，下一行「就無法再改變。」
+once it is placed.	就無法再改變。	就无法再改变。		FUN_1403d6950 1403dfb30 放置投石機／弩砲說明第 2 行
+A ballista's orientation cannot be changed	弩砲的方向一經放置	弩炮的方向一经放置		FUN_1403d6950 1403dfb9c 放置弩砲時的說明第 1 行，下一行「就無法再改變。」
+A bolt thrower can be freely turned by the	弩箭機可由操作員自由轉向。	弩箭机可由操作员自由转向。		FUN_1403d6950 1403dfc48 放置弩箭機說明第 1 行（下一行開頭的 operator 移到這行）
+operator.  Choose a resting orientation.	請選擇待命朝向。	请选择待命朝向。		FUN_1403d6950 1403dfc8f 放置弩箭機說明第 2 行；resting orientation 照建築資訊頁「待命朝向」
+Horizontal axles can vary in length.	水平傳動軸的長度可以調整。	水平传动轴的长度可以调整。		FUN_1403d6950 1403dfe7f 放置水平傳動軸說明
+Set the orientation below.	在下方設定方向。	在下方设置方向。		FUN_1403d6950 1403dfec6 放置建築說明
+Water wheels are 1x3 or 3x1.	水車為 1x3 或 3x1。	水车为 1x3 或 3x1。		FUN_1403d6950 1403e037a 放置水車說明
+The long side should align	長邊應順著	长边应顺着		FUN_1403d6950 1403e03c0 放置水車說明第 1 行，下一行「水流的方向。」
+with the water's flow.	水流的方向。	水流的方向。		FUN_1403d6950 1403e0406 放置水車說明第 2 行
+Set the liquid flow direction below.	在下方設定液體流向。	在下方设置液体流向。		FUN_1403d6950 1403e08b1 放置螺旋泵說明
+Water flows from the adjacent input tile	水從相鄰的進水格流入，	水从相邻的进水格流入，		FUN_1403d6950 1403e08f8 放置螺旋泵說明第 1 行
+and from the tile below the input tile.	也從進水格下方那格流入。	也从进水格下方那格流入。		FUN_1403d6950 1403e093f 放置螺旋泵說明第 2 行
+Minecart rollers can vary in length.	礦車滾輪的長度可以調整。	矿车滚轮的长度可以调整。		FUN_1403d6950 1403e1231 放置滾輪說明
+Set the orientation and speed below.	在下方設定方向與速度。	在下方设置方向和速度。		FUN_1403d6950 1403e1278 放置滾輪說明
+Resets	可重設	可重置		FUN_1403d6950 1403e2058 壓力板設定：觸發後會重設（與 One use only 二選一）
+One use only	僅限一次	仅限一次		FUN_1403d6950 1403e2164 壓力板設定：只觸發一次
+Depth	深度	深度		FUN_1403d6950 1403e22c7／1403e2637 壓力板設定：水／熔岩深度標籤
+Water does not trigger	水不會觸發	水不会触发		FUN_1403d6950 1403e24c9 壓力板設定
+Magma does not trigger	熔岩不會觸發	熔岩不会触发		FUN_1403d6950 1403e2839 壓力板設定
+Cart	礦車	矿车		FUN_1403d6950 1403e2946 壓力板設定：礦車觸發（後接 Weight）
+Weight	重量	重量		FUN_1403d6950 1403e29ab 壓力板設定：礦車重量標籤，下面是「數字Γ／Any」 to 「數字Γ／Any」
+Minecarts do not trigger	礦車不會觸發	矿车不会触发		FUN_1403d6950 1403e2d71 壓力板設定
+Creature trigger settings	生物觸發設定	生物触发设置		FUN_1403d6950 1403e2e73 壓力板設定
+Citizens trigger	居民會觸發	居民会触发		FUN_1403d6950 1403e2f69 壓力板設定切換鈕；citizen 照提示框用「居民」；術語例外：citizen
+Citizens do not trigger	居民不會觸發	居民不会触发		FUN_1403d6950 1403e2fa0 壓力板設定切換鈕；術語例外：citizen
+Creatures do not trigger	生物不會觸發	生物不会触发		FUN_1403d6950 1403e3482 壓力板設定
+Set the friction and auto-dump direction.	設定摩擦力與自動傾倒方向。	设置摩擦力和自动倾倒方向。		FUN_1403d6950 1403e3510 放置軌道停靠站說明
+Auto-dumping is not required.	自動傾倒並非必要。	自动倾倒不是必需的。		FUN_1403d6950 1403e355e 放置軌道停靠站說明
+Set the draw direction below.	在下方設定升起方向。	在下方设置升起方向。		FUN_1403d6950 1403e4548 放置橋說明：吊橋升起的方向
+Then select the corners of the bridge.	接著選取橋的兩個對角。	接着选择桥的两个对角。		FUN_1403d6950 1403e4597 放置橋說明
+Select material after placement	放置後選擇材料	放置后选择材料		FUN_1403d6950 1403e5689 放置建築的材料選項
+Use closest material	使用最近的材料	使用最近的材料		FUN_1403d6950 1403e5787 放置建築的材料選項
+Use last material	使用上次的材料	使用上次的材料		FUN_1403d6950 1403e5892 放置建築的材料選項
+Keep building after placement	放置後繼續建造	放置后继续建造		FUN_1403d6950 1403e5a54 放置建築選項：放置後留在建造模式
+Bars and	錠材與	锭材与		FUN_1403d6950 1403e720e 倉儲區類型圖示標籤第 1 行，下一行 Blocks（磚塊）；Bars 照 toolbar.tsv「錠材」
+Finished	製成	制成		FUN_1403d6950 1403e7358 倉儲區類型圖示標籤第 1 行，下一行 Goods（貨物），合起來「製成貨物」；執行檔只有這一處單獨的 Finished
+Goods	貨物	货物		FUN_1403d6950 1403e73a7 倉儲區類型圖示標籤第 2 行，上一行 Finished（製成）；譯文與 events_16 的 inner goods「貨物」相同，免得佔位裡的 goods 改譯
+Custom	自訂	自定义		FUN_1403d6950 1403e7657 倉儲區類型圖示標籤：自訂倉儲區
+Click an icon to set stockpile type.	點選圖示以設定倉儲區類型。	点击图标以设置储物区类型。		FUN_1403d6950 1403e76d7 倉儲區面板說明
+Warning: stockpile has no type.	警告：倉儲區沒有類型。	警告：储物区没有类型。		FUN_1403d6950 1403e7752 倉儲區面板警告
+Click an existing stockpile to select it.	點選既有的倉儲區以選取。	点击已有的储物区以选中。		FUN_1403d6950 1403e78c0 倉儲區面板說明
+Overlapping	重疊	重叠		FUN_1403d6950 1403e9379 區域清單：區域互相重疊的標示
+Farm Plot	農田	农田	inner	FUN_14054d320 建築名稱（大寫寫法），接進 FUN_1403d6950 1403e53ba「Click a tile to place the {%1}.」等放置提示；照按鍵設定「Hotkey: Building, …」的譯名；只給佔位用
+Wood Furnace	燒炭爐	烧炭炉	inner	FUN_14054d320 建築名稱（大寫寫法），接進 FUN_1403d6950 1403e53ba「Click a tile to place the {%1}.」等放置提示；照術語 Wood Furnace；只給佔位用
+Smelter	冶煉爐	冶炼炉	inner	FUN_14054d320 建築名稱（大寫寫法），接進 FUN_1403d6950 1403e53ba「Click a tile to place the {%1}.」等放置提示；照按鍵設定「Hotkey: Building, …」的譯名；只給佔位用
+Magma Smelter	熔岩冶煉爐	熔岩冶炼炉	inner	FUN_14054d320 建築名稱（大寫寫法），接進 FUN_1403d6950 1403e53ba「Click a tile to place the {%1}.」等放置提示；照按鍵設定「Hotkey: Building, …」的譯名；只給佔位用
+Cage Trap	籠子陷阱	笼子陷阱	inner	FUN_14054d320 建築名稱（大寫寫法），接進 FUN_1403d6950 1403e53ba「Click a tile to place the {%1}.」等放置提示；照按鍵設定「Hotkey: Building, …」的譯名；只給佔位用
+Stone-Fall Trap	落石陷阱	落石陷阱	inner	FUN_14054d320 建築名稱（大寫寫法），接進 FUN_1403d6950 1403e53ba「Click a tile to place the {%1}.」等放置提示；照按鍵設定「Hotkey: Building, …」的譯名；只給佔位用
+Weapon Trap	武器陷阱	武器陷阱	inner	FUN_14054d320 建築名稱（大寫寫法），接進 FUN_1403d6950 1403e53ba「Click a tile to place the {%1}.」等放置提示；照按鍵設定「Hotkey: Building, …」的譯名；只給佔位用
+Restraint	束縛具	束缚具	inner	FUN_14054d320 建築名稱（大寫寫法），接進 FUN_1403d6950 1403e53ba「Click a tile to place the {%1}.」等放置提示；照按鍵設定「Hotkey: Building, …」的譯名；只給佔位用
+Upright Spear/Spike	直立長矛／尖刺	直立长矛/尖刺	inner	FUN_14054d320 建築名稱（大寫寫法），接進 FUN_1403d6950 1403e53ba「Click a tile to place the {%1}.」等放置提示；照按鍵設定「Hotkey: Building, …」的譯名；只給佔位用
+Up Stair	上樓梯	上楼梯	inner	FUN_14054d320 建築名稱（大寫寫法），接進 FUN_1403d6950 1403e53ba「Click a tile to place the {%1}.」等放置提示；照按鍵設定「Hotkey: Building, …」的譯名；只給佔位用
+Down Stair	下樓梯	下楼梯	inner	FUN_14054d320 建築名稱（大寫寫法），接進 FUN_1403d6950 1403e53ba「Click a tile to place the {%1}.」等放置提示；照按鍵設定「Hotkey: Building, …」的譯名；只給佔位用
+Up/Down Stair	上下樓梯	上下楼梯	inner	FUN_14054d320 建築名稱（大寫寫法），接進 FUN_1403d6950 1403e53ba「Click a tile to place the {%1}.」等放置提示；照按鍵設定「Hotkey: Building, …」的譯名；只給佔位用
+Siege Workshop	攻城器械工坊	攻城器械工坊	inner	FUN_14054d320 建築名稱（大寫寫法），接進 FUN_1403d6950 1403e53ba「Click a tile to place the {%1}.」等放置提示；照按鍵設定「Hotkey: Building, …」的譯名；只給佔位用
+Fishery	漁獲處理	渔获处理	inner	FUN_14054d320 建築名稱（大寫寫法），接進 FUN_1403d6950 1403e53ba「Click a tile to place the {%1}.」等放置提示；照按鍵設定「Hotkey: Building, …」的譯名；只給佔位用；寬度例外：inner，只接進放置提示的句型，不單獨畫
+Still	釀酒坊	酿酒坊	inner	FUN_14054d320 建築名稱（大寫寫法），接進 FUN_1403d6950 1403e53ba「Click a tile to place the {%1}.」等放置提示；照按鍵設定「Hotkey: Building, …」的譯名；只給佔位用；寬度例外：inner，只接進放置提示的句型，不單獨畫
+Loom	織布機	织布机	inner	FUN_14054d320 建築名稱（大寫寫法），接進 FUN_1403d6950 1403e53ba「Click a tile to place the {%1}.」等放置提示；照按鍵設定「Hotkey: Building, …」的譯名；只給佔位用；寬度例外：inner，只接進放置提示的句型，不單獨畫
+Workshop	工坊	工坊	inner	FUN_14054d320 建築名稱（大寫寫法），接進 FUN_1403d6950 1403e53ba「Click a tile to place the {%1}.」等放置提示；照按鍵設定「Hotkey: Building, …」的譯名；只給佔位用

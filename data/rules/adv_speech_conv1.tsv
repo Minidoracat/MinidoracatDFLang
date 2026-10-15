@@ -1,0 +1,30 @@
+en	zh-Hant	zh-Hans	align	note
+I am your loyal {%1}.	我是您忠實的{1}。	我是您忠实的{1}。		FUN_1404988b0 14049a23c/14049d84b 家臣回報（玩家是家臣，對領主說）：I am your loyal＋職位名（FUN_1415184a0 找到的職位，如 hearthperson）＋.；後面接 task 回報或 What do you command?
+{1} is dead!	{1}死了！	{1}死了！		FUN_1404988b0 14049a52d 家臣回報（玩家是家臣，對領主說）：任務目標已死；1 人物名（FUN_140b92f10）；後面可能再接 FUN_14066ba00 的死因句
+{1} will be slain.	{1}難逃一死。	{1}难逃一死。		FUN_1404988b0 14049af5f 家臣回報（玩家是家臣，對領主說）：任務目標還活著；1 人物名（FUN_140b92f10）
+{1} have been driven from {2}.	{1}已經被逐出{2}了。	{1}已经被逐出{2}了。		FUN_1404988b0 14049b4d9/14049b874 家臣回報（玩家是家臣，對領主說）：驅逐任務完成；1 勢力名（FUN_140b92900），2 據點名（FUN_140b93930）
+I wish to become a {%1} for {2}.	我想在{2}擔任{1}。	我想在{2}担任{1}。		FUN_1404988b0 14049d9df 玩家向場所主人求職：{1} 職業（tavern keeper、performer、scholar、doctor、diagnostician、surgeon、bone doctor、mercenary、monster slayer、scribe），{2} 場所名（FUN_140a946e0）；後接 Will you have me?
+I ask that {1} be made {%2} for {3}.	我請求讓{1}在{3}擔任{2}。	我请求让{1}在{3}担任{2}。		FUN_1404988b0 14049dd0d 玩家替同伴求職：{1} 同伴名（FUN_140a946e0），{2} 職業（同上，原文沒有冠詞），{3} 場所名
+Yes, you'd make a fantastic {%1} here.	好啊，你在這裡一定會是個出色的{1}。	好啊，你在这里一定会是个出色的{1}。		FUN_1404988b0 14049e08d 場所主人答應求職：{1} 職業；後接 Make us proud!
+I would love to join {1}.	我很想加入{1}。	我很想加入{1}。		FUN_1404988b0 14049e9ed 玩家想加入表演團：{1} 團名（FUN_140a946e0）；後接 Can I perform with you?
+Welcome to {1}!	歡迎加入{1}！	欢迎加入{1}！		FUN_1404988b0 14049ebee 表演團收下玩家：{1} 團名；用驚嘆號，和 adv_speech 的 Welcome to {1}.（來到據點）分開
+Would you like to join {1}?	你想加入{1}嗎？	你想加入{1}吗？		FUN_1404988b0 14049ef34 玩家邀人加入表演團：{1} 團名；後接 The troupe could use your talent.
+I'm kicking you out of {1}.	我要把你踢出{1}。	我要把你踢出{1}。		FUN_1404988b0 14049f42d 玩家把團員踢出表演團：{1} 團名
+I'm leaving {1}.	我要離開{1}了。	我要离开{1}了。		FUN_1404988b0 14049fc8d 玩家離開表演團：{1} 團名
+I will be your {%1}, {%2}.	{2}，我願意當您的{1}。	{2}，我愿意当您的{1}。		FUN_1404988b0 1404a0070 答應當家臣：{1} 職位名（hearthperson），{2} 對方的職位稱呼（FUN_14099a3c0，如 lord）；寫在 I will be your {%1}. 前
+I will be your {%1}.	我願意當您的{1}。	我愿意当您的{1}。		FUN_1404988b0 1404a0070 同上，查不到對方職位時
+You are now one of my {%1}.	從現在起，你就是我的{1}了。	从现在起，你就是我的{1}了。		FUN_1404988b0 1404a0697 領主收玩家為家臣：Gladly.  You are now one of my＋職位複數（hearthpeople）
+You can no longer be a {%1}.	你不能再當{1}了。	你不能再当{1}了。		FUN_1404988b0 1404a0a77 玩家（領主）解除家臣：{1} 職位名
+I would be honored if you would become a {%1}.	若你願意成為我的{1}，我將深感榮幸。	如果你愿意成为我的{1}，我将深感荣幸。		FUN_1404988b0 1404a0c73 玩家（領主）邀人當家臣：{1} 職位名；後接 Will you have me as {%1}?
+Will you have me as {%1}?	你願意奉我為{1}嗎？	你愿意奉我为{1}吗？		FUN_1404988b0 1404a0cb0 同上第二句：{1} 玩家的職位稱呼（FUN_14099a3c0，如 lord、lady）
+I would be honored to serve as a {%1}.	能成為您的{1}是我的榮幸。	能成为您的{1}是我的荣幸。		FUN_1404988b0 1404a0e7a 玩家自薦當家臣：{1} 職位名；後接 Will you have me?
+I am {^1}.	我是{1}。	我是{1}。		FUN_1404988b0 1404a17f4 神祇自報名號：{1} 名字（FUN_140a946e0）；用 {^n} 只收大寫開頭的名字，免得吃掉 I am confused. 這類句子
+we've got {%1} and {%2}.	我們這兒有{1}和{2}。	我们这儿有{1}和{2}。		FUN_1404988b0 1404a1e4e 麻煩清單（A, B and C；小寫開頭，接在 Well, let's see... 的兩個空白後）：{1} 用 lists.tsv 接成「、」；寫在單項前
+we've got {%1}.	我們這兒有{1}。	我们这儿有{1}。		FUN_1404988b0 1404a1e4e 同上，只有一項
+Can you tell me the way to {1}?	你能告訴我去{1}的路嗎？	你能告诉我去{1}的路吗？		FUN_1404988b0 1404a2962 玩家問路：{1} 據點名（FUN_140b93930）
+I deign to favor you with my little pretty, {1}.	我就屈尊把我的小寶貝{1}賞給你吧。	我就屈尊把我的小宝贝{1}赏给你吧。		FUN_1404988b0 1404a3232 玩家送動物（高傲口吻）：{1} 動物名（FUN_140b92f10）
+I give to you this fine beast, {1}.	我把這隻出色的動物{1}送給你。	我把这只出色的动物{1}送给你。		FUN_1404988b0 1404a3249 玩家送動物：{1} 動物名
+What can you tell me about {1}?	關於{1}，你知道些什麼？	关于{1}，你知道些什么？		FUN_1404988b0 1404a3e73 玩家打聽人物：{1} 人物名（FUN_140b92f10／FUN_140c3a590）
+Can you tell me where I can find {1}?	你能告訴我上哪找{1}嗎？	你能告诉我去哪儿找{1}吗？		FUN_1404988b0 1404a433a 玩家問人在哪：{1} 人物名
+Please guide me to {1}.	請帶我去{1}。	请带我去{1}。		FUN_1404988b0 1404a44f9/1404a4925 玩家請人帶路：{1} 據點名（FUN_140b93930）或人物名（FUN_140b92f10）；術語例外：guide
+Now we will live under {1}.	現在我們得在{1}的統治下過日子了。	现在我们得在{1}的统治下过日子了。		FUN_1404988b0 1404a532b 同伴所屬團體併入勢力：{1} 勢力名（FUN_140a946e0）；後接兩個空白＋看法句

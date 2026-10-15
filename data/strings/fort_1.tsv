@@ -1,0 +1,171 @@
+en	zh-Hant	zh-Hans	align	note
+will be installed at 	將安裝於 	将安装于 		FUN_14014ef90 140150c31 建築頁：待安裝的物品名下一行，後面另畫建築名（fn_addst 分開畫）
+will be installed at target	將安裝於目標	将安装于目标		FUN_14014ef90 1401511fd 建築頁：待安裝物品，沒有指定建築時
+Value: 	價值：	价值：		FUN_14014ef90 140154d51 物品頁：後面另畫價值數字；與 Weight: 「重量：」同一區
+View stockpile	檢視倉儲區	查看储物区		FUN_14014ef90 140157443 物品頁按鈕：物品所在的倉儲區
+Assigned to hunters	已分配給獵人	已分配给猎人		FUN_14014ef90 1401574fd 物品頁：彈藥／武器分配給獵人；對齊 Bolts nearby but assigned to hunters:
+Specify image	指定圖像	指定图像		FUN_14014ef90 14015916a 雕刻頁按鈕：指定雕刻圖像（推斷）
+Independent	獨立	独立		FUN_14014ef90 14015bc52 競技場模式（gametype 4）人物頁：不屬於任何隊伍（有隊伍時畫 #編號）
+On Table	桌子上	桌子上		FUN_14014ef90 140156795 物品頁：物品所在位置（桌子類建築，建築名不帶材料時）
+Enraged at all enemies!	對所有敵人怒不可遏！	对所有敌人怒不可遏！		FUN_14014ef90 14015c2c3-14015c42b 人物頁名字下方的狀態：士兵情緒（soldier_mood）；用詞對齊公告與 tooltips_6
+In a martial trance!	陷入戰鬥恍惚！	陷入战斗恍惚！		FUN_14014ef90 14015c2c3-14015c42b 人物頁名字下方的狀態：士兵情緒（soldier_mood）；用詞對齊公告與 tooltips_6
+Throwing a tantrum!	正在大發脾氣！	正在大发脾气！		FUN_14014ef90 14015c2c3-14015c42b 人物頁名字下方的狀態：士兵情緒（soldier_mood）；用詞對齊公告與 tooltips_6
+Sunk into depression...	深陷消沉……	深陷消沉……		FUN_14014ef90 14015c2c3-14015c42b 人物頁名字下方的狀態：士兵情緒（soldier_mood）；用詞對齊公告與 tooltips_6
+Stumbling obliviously!	渾然不覺地跌跌撞撞！	浑然不觉地跌跌撞撞！		FUN_14014ef90 14015c2c3-14015c42b 人物頁名字下方的狀態：士兵情緒（soldier_mood）；用詞對齊公告與 tooltips_6
+Has a horrible fell look!	神情凶邪可怖！	神情凶邪可怖！		FUN_14014ef90 14015c583-14015c99b 人物頁名字下方的狀態：奇異心境／發瘋（凶邪心境）；用詞對齊公告與 tooltips_6
+Brooding darkly...	陰森地沉吟……	阴森地沉吟……		FUN_14014ef90 14015c583-14015c99b 人物頁名字下方的狀態：奇異心境／發瘋（陰森心境）；用詞對齊公告與 tooltips_6
+Has the aspect of one fey!	一副癡迷的模樣！	一副痴迷的模样！		FUN_14014ef90 14015c583-14015c99b 人物頁名字下方的狀態：奇異心境／發瘋（癡迷心境）；用詞對齊公告與 tooltips_6
+Peculiarly secretive...	行跡異常隱密……	行迹异常隐秘……		FUN_14014ef90 14015c583-14015c99b 人物頁名字下方的狀態：奇異心境／發瘋（隱密心境）；用詞對齊公告與 tooltips_6
+Possessed by unknown forces!	被未知的力量附身！	被未知的力量附身！		FUN_14014ef90 14015c583-14015c99b 人物頁名字下方的狀態：奇異心境／發瘋（附身）；用詞對齊公告與 tooltips_6
+Stricken by melancholy...	陷入憂鬱……	陷入忧郁……		FUN_14014ef90 14015c583-14015c99b 人物頁名字下方的狀態：奇異心境／發瘋（憂鬱）；用詞對齊公告與 tooltips_6
+Crawling around babbling!	到處爬著胡言亂語！	到处爬着胡言乱语！		FUN_14014ef90 14015c583-14015c99b 人物頁名字下方的狀態：奇異心境／發瘋（精神錯亂（嬰兒））；用詞對齊公告與 tooltips_6
+Running around babbling!	到處跑著胡言亂語！	到处跑着胡言乱语！		FUN_14014ef90 14015c583-14015c99b 人物頁名字下方的狀態：奇異心境／發瘋（精神錯亂）；用詞對齊公告與 tooltips_6
+Crawling around crazed!	發狂地到處亂爬！	发狂地到处乱爬！		FUN_14014ef90 14015c583-14015c99b 人物頁名字下方的狀態：奇異心境／發瘋（徹底瘋了（嬰兒））；用詞對齊公告與 tooltips_6
+Running around crazed!	發狂地到處亂跑！	发狂地到处乱跑！		FUN_14014ef90 14015c583-14015c99b 人物頁名字下方的狀態：奇異心境／發瘋（徹底瘋了）；用詞對齊公告與 tooltips_6
+In a berserk rage!	陷入狂暴！	陷入狂暴！		FUN_14014ef90 14015c583-14015c99b 人物頁名字下方的狀態：奇異心境／發瘋（狂暴）；用詞對齊公告與 tooltips_6
+Staring off into space...	兩眼茫然出神……	两眼茫然出神……		FUN_14014ef90 14015c583-14015c99b 人物頁名字下方的狀態：奇異心境／發瘋（創傷後失神）；用詞對齊公告與 tooltips_6
+Overcome by terror!	被恐懼淹沒！	被恐惧淹没！		FUN_14014ef90 14015cc26-14015d217 人物頁名字下方的狀態：情緒崩潰；與 Anguished!、Distressed!、In existential crisis! 同一組
+In emotional shock!	陷入情緒衝擊！	陷入情绪冲击！		FUN_14014ef90 14015cc26-14015d217 人物頁名字下方的狀態：情緒崩潰；與 Anguished!、Distressed!、In existential crisis! 同一組
+Overwhelmed by horror!	被驚駭吞沒！	被惊骇吞没！		FUN_14014ef90 14015cc26-14015d217 人物頁名字下方的狀態：情緒崩潰；與 Anguished!、Distressed!、In existential crisis! 同一組
+Experiencing mortal fear!	怕得要命！	怕得要命！		FUN_14014ef90 14015cc26-14015d217 人物頁名字下方的狀態：情緒崩潰；與 Anguished!、Distressed!、In existential crisis! 同一組
+Drowning in sadness!	沉溺於悲傷！	沉溺于悲伤！		FUN_14014ef90 14015cc26-14015d217 人物頁名字下方的狀態：情緒崩潰；與 Anguished!、Distressed!、In existential crisis! 同一組
+Writhing in agony!	痛苦得輾轉難安！	痛苦得辗转难安！		FUN_14014ef90 14015cc26-14015d217 人物頁名字下方的狀態：情緒崩潰；與 Anguished!、Distressed!、In existential crisis! 同一組
+Lost in despair!	陷入絕望！	陷入绝望！		FUN_14014ef90 14015cc26-14015d217 人物頁名字下方的狀態：情緒崩潰；與 Anguished!、Distressed!、In existential crisis! 同一組
+Completely dismayed!	徹底灰心喪志！	彻底灰心丧志！		FUN_14014ef90 14015cc26-14015d217 人物頁名字下方的狀態：情緒崩潰；與 Anguished!、Distressed!、In existential crisis! 同一組
+Taken by a fright!	受到驚嚇！	受到惊吓！		FUN_14014ef90 14015cc26-14015d217 人物頁名字下方的狀態：情緒崩潰；與 Anguished!、Distressed!、In existential crisis! 同一組
+Wallowing in misery!	深陷苦楚！	深陷苦楚！		FUN_14014ef90 14015cc26-14015d217 人物頁名字下方的狀態：情緒崩潰；與 Anguished!、Distressed!、In existential crisis! 同一組
+Truly mortified!	羞愧到無地自容！	羞愧到无地自容！		FUN_14014ef90 14015cc26-14015d217 人物頁名字下方的狀態：情緒崩潰；與 Anguished!、Distressed!、In existential crisis! 同一組
+Shaken to the core!	內心大受動搖！	内心大受动摇！		FUN_14014ef90 14015cc26-14015d217 人物頁名字下方的狀態：情緒崩潰；與 Anguished!、Distressed!、In existential crisis! 同一組
+Emotionally overloaded!	情緒不堪負荷！	情绪不堪负荷！		FUN_14014ef90 14015cc26-14015d217 人物頁名字下方的狀態：情緒崩潰；與 Anguished!、Distressed!、In existential crisis! 同一組
+Beside 	悲痛得	悲痛得		FUN_14014ef90 14015cd52 人物頁狀態「Beside herself with grief!」分三段畫：本段＋herself/himself/itself（sentences_mannerisms：她自己）＋ with grief!；拼成「悲痛得她自己 難以自持！」
+ with grief!	 難以自持！	 难以自持！		FUN_14014ef90 14015ce7c 同上第三段；開頭空白照原文；拼成「悲痛得她自己 難以自持！」
+Pet of 	飼主：	主人：		FUN_14014ef90 14015d2ac 人物頁：寵物的主人，後面另畫主人名字或 Somebody；7 格放不下「寵物主人：」，寫成「飼主：」；術語例外：pet
+Creator of 	打造神器：	打造神器：		FUN_14014ef90 14015d3b0 人物頁：曾有奇異心境（flags1 had_mood），後面另畫神器名
+Cannot expel or send away:	無法驅逐或送走：	无法驱逐或送走：		FUN_14014ef90 14015d78a 人物頁驅逐：不能驅逐時的標題，下面列原因
+Does the expelling	負責執行驅逐	负责执行驱逐		FUN_14014ef90 14015d81f-14015dc04 人物頁驅逐：不能驅逐的原因
+Nobility	貴族身分	贵族身份		FUN_14014ef90 14015d81f-14015dc04 人物頁驅逐：不能驅逐的原因
+Holds elected office	擔任民選職位	担任民选职位		FUN_14014ef90 14015d81f-14015dc04 人物頁驅逐：不能驅逐的原因；office 是職位；術語例外：office
+Spouse does the expelling	配偶負責執行驅逐	配偶负责执行驱逐		FUN_14014ef90 14015d81f-14015dc04 人物頁驅逐：不能驅逐的原因
+Spouse is not present	配偶不在此地	配偶不在此地		FUN_14014ef90 14015d81f-14015dc04 人物頁驅逐：不能驅逐的原因
+Spouse is nobility	配偶是貴族	配偶是贵族		FUN_14014ef90 14015d81f-14015dc04 人物頁驅逐：不能驅逐的原因
+Spouse is elected	配偶擔任民選職位	配偶担任民选职位		FUN_14014ef90 14015d81f-14015dc04 人物頁驅逐：不能驅逐的原因
+Child does the expelling	子女負責執行驅逐	子女负责执行驱逐		FUN_14014ef90 14015d81f-14015dc04 人物頁驅逐：不能驅逐的原因
+Child is not present	子女不在此地	子女不在此地		FUN_14014ef90 14015d81f-14015dc04 人物頁驅逐：不能驅逐的原因
+Child is nobility	子女是貴族	子女是贵族		FUN_14014ef90 14015d81f-14015dc04 人物頁驅逐：不能驅逐的原因
+Child is elected	子女擔任民選職位	子女担任民选职位		FUN_14014ef90 14015d81f-14015dc04 人物頁驅逐：不能驅逐的原因
+Expel	驅逐	驱逐		FUN_14014ef90 14015e00d／14015e556 人物頁驅逐按鈕（沒有目的地時）
+Send away	送走	送走		FUN_14014ef90 14015e5ba 人物頁驅逐：送走（訪客等）
+Pray to 	祈禱：	祈祷：		FUN_14014ef90 140168025 概況頁需求：後面另畫神祇名；名字太長時改畫 Pray 「祈禱 」
+Assume Control	接手操控	接管控制		FUN_14014ef90 140168c53 人物頁按鈕；對齊 tooltips_6「Assume control of this party member.」
+Cannot assign work details	無法指派工作分組	无法分配工作分组		FUN_14014ef90 1401722ad 勞動分頁「工作分組」子分頁
+Cannot assign work animals	無法指派工作動物	无法分配工作动物		FUN_14014ef90 140175706 勞動分頁「工作動物」子分頁
+No assigned or assignable work animals	沒有已指派或可指派的工作動物	没有已分配或可分配的工作动物		FUN_14014ef90 140175789 勞動分頁「工作動物」子分頁
+No relationships	沒有人際關係	没有人际关系		FUN_14014ef90 14017650d 人際關係分頁
+Pet owner	寵物飼主	宠物主人		FUN_14014ef90 140176fb4-140178afd 人際關係分頁：關係種類
+Lover	戀人	恋人		FUN_14014ef90 140176fb4-140178afd 人際關係分頁：關係種類
+Bonded	羈絆	羁绊		FUN_14014ef90 140176fb4-140178afd 人際關係分頁：關係種類
+Childhood friend	兒時玩伴	儿时玩伴		FUN_14014ef90 140176fb4-140178afd 人際關係分頁：關係種類
+War buddy	沙場袍澤	沙场袍泽		FUN_14014ef90 140176fb4-140178afd 人際關係分頁：關係種類
+Obsession	迷戀對象	迷恋对象		FUN_14014ef90 140176fb4-140178afd 人際關係分頁：關係種類
+Kindred spirit	知己	知己		FUN_14014ef90 140176fb4-140178afd 人際關係分頁：關係種類
+Athletic rival	運動對手	运动对手		FUN_14014ef90 140176fb4-140178afd 人際關係分頁：關係種類
+Business rival	商場對手	商场对手		FUN_14014ef90 140176fb4-140178afd 人際關係分頁：關係種類
+Persecutor	迫害者	迫害者		FUN_14014ef90 140176fb4-140178afd 人際關係分頁：關係種類
+Religious persecutor	宗教迫害者	宗教迫害者		FUN_14014ef90 140176fb4-140178afd 人際關係分頁：關係種類
+Grudge	宿怨	宿怨		FUN_14014ef90 140176fb4-140178afd 人際關係分頁：關係種類
+Jealous grudge	因妒生怨	因妒生怨		FUN_14014ef90 140176fb4-140178afd 人際關係分頁：關係種類
+Supernatural vengeance	超自然復仇	超自然复仇		FUN_14014ef90 140176fb4-140178afd 人際關係分頁：關係種類
+Pure hate	深惡痛絕	深恶痛绝		FUN_14014ef90 140176fb4-140178afd 人際關係分頁：關係種類
+Hated	憎恨	憎恨		FUN_14014ef90 140176fb4-140178afd 人際關係分頁：關係種類
+Disliked	厭惡	厌恶		FUN_14014ef90 140176fb4-140178afd 人際關係分頁：關係種類
+Passing acquaintance	點頭之交	点头之交		FUN_14014ef90 140176fb4-140178afd 人際關係分頁：關係種類
+Intruder	入侵者	入侵者		FUN_14014ef90 140176fb4-140178afd 人際關係分頁：關係種類
+Considers monster	視為怪物	视为怪物		FUN_14014ef90 140176fb4-140178afd 人際關係分頁：關係種類；此人把對方看作…（用詞對齊 sentences_reputation_01）
+Considers brigand	視為強盜	视为强盗		FUN_14014ef90 140176fb4-140178afd 人際關係分頁：關係種類；此人把對方看作…（用詞對齊 sentences_reputation_01）
+Considers bully	視為惡霸	视为恶霸		FUN_14014ef90 140176fb4-140178afd 人際關係分頁：關係種類；此人把對方看作…（用詞對齊 sentences_reputation_01）
+Considers preacher	視為傳道者	视为传道者		FUN_14014ef90 140176fb4-140178afd 人際關係分頁：關係種類；此人把對方看作…（用詞對齊 sentences_reputation_01）
+Considers storyteller	視為說書人	视为说书人		FUN_14014ef90 140176fb4-140178afd 人際關係分頁：關係種類；此人把對方看作…（用詞對齊 sentences_reputation_01）
+Considers poet	視為詩人	视为诗人		FUN_14014ef90 140176fb4-140178afd 人際關係分頁：關係種類；此人把對方看作…（用詞對齊 sentences_reputation_01）
+Considers bard	視為吟遊詩人	视为吟游诗人		FUN_14014ef90 140176fb4-140178afd 人際關係分頁：關係種類；此人把對方看作…（用詞對齊 sentences_reputation_01）
+Considers dancer	視為舞者	视为舞者		FUN_14014ef90 140176fb4-140178afd 人際關係分頁：關係種類；此人把對方看作…（用詞對齊 sentences_reputation_01）
+Considers violent	視為暴力分子	视为暴力分子		FUN_14014ef90 140176fb4-140178afd 人際關係分頁：關係種類；此人把對方看作…（用詞對齊 sentences_reputation_01）
+Considers psychotic	視為瘋子	视为疯子		FUN_14014ef90 140176fb4-140178afd 人際關係分頁：關係種類；此人把對方看作…（用詞對齊 sentences_reputation_01）
+Good for business	生意上的好夥伴	生意上的好伙伴		FUN_14014ef90 140176fb4-140178afd 人際關係分頁：關係種類
+Friendly terms	交情不錯	交情不错		FUN_14014ef90 140176fb4-140178afd 人際關係分頁：關係種類
+Considers killer	視為殺手	视为杀手		FUN_14014ef90 140176fb4-140178afd 人際關係分頁：關係種類；此人把對方看作…（用詞對齊 sentences_reputation_01）
+Considers murderer	視為殺人犯	视为杀人犯		FUN_14014ef90 140176fb4-140178afd 人際關係分頁：關係種類；此人把對方看作…（用詞對齊 sentences_reputation_01）
+Member of respected group	受敬重團體的成員	受敬重团体的成员		FUN_14014ef90 140176fb4-140178afd 人際關係分頁：關係種類
+Member of hated group	受憎恨團體的成員	受憎恨团体的成员		FUN_14014ef90 140176fb4-140178afd 人際關係分頁：關係種類
+Friendly fighter	友方戰士	友方战士		FUN_14014ef90 140176fb4-140178afd 人際關係分頁：關係種類
+Apprentice	學徒	学徒		FUN_14014ef90 140176fb4-140178afd 人際關係分頁：關係種類
+Companion	同伴	同伴		FUN_14014ef90 140176fb4-140178afd 人際關係分頁：關係種類
+Former master	前師父	前师父		FUN_14014ef90 140176fb4-140178afd 人際關係分頁：關係種類；師徒關係；術語例外：Master
+Former apprentice	前學徒	前学徒		FUN_14014ef90 140176fb4-140178afd 人際關係分頁：關係種類
+Considers quarreler	視為吵架大王	视为吵架大王		FUN_14014ef90 140176fb4-140178afd 人際關係分頁：關係種類；此人把對方看作…（用詞對齊 sentences_reputation_01）
+Considers flatterer	視為馬屁精	视为马屁精		FUN_14014ef90 140176fb4-140178afd 人際關係分頁：關係種類；此人把對方看作…（用詞對齊 sentences_reputation_01）
+Protector of the weak	弱者守護者	弱者守护者		FUN_14014ef90 140176fb4-140178afd 人際關係分頁：關係種類
+Preserver of knowledge	知識守護者	知识守护者		FUN_14014ef90 140176fb4-140178afd 人際關係分頁：關係種類
+Treasure hunter	寶藏獵人	宝藏猎人		FUN_14014ef90 140176fb4-140178afd 人際關係分頁：關係種類
+Noted intruder according	著名的入侵者	著名的入侵者		FUN_14014ef90 140179a66-14017a3e0 人際關係分頁：名聲等級（同組的 Legendary／Infamous／Noted 對齊 sentences_reputation_01）；遊戲原文如此（according 多半是截斷的殘字），照 Noted 譯
+Certainly considered an intruder	公認的入侵者	公认的入侵者		FUN_14014ef90 140179a66-14017a3e0 人際關係分頁：名聲等級（同組的 Legendary／Infamous／Noted 對齊 sentences_reputation_01）
+Considered an intruder	被視為入侵者	被视为入侵者		FUN_14014ef90 140179a66-14017a3e0 人際關係分頁：名聲等級（同組的 Legendary／Infamous／Noted 對齊 sentences_reputation_01）
+Certainly feared as a monster	公認令人畏懼的怪物	公认令人畏惧的怪物		FUN_14014ef90 140179a66-14017a3e0 人際關係分頁：名聲等級（同組的 Legendary／Infamous／Noted 對齊 sentences_reputation_01）
+Feared as a monster	令人畏懼的怪物	令人畏惧的怪物		FUN_14014ef90 140179a66-14017a3e0 人際關係分頁：名聲等級（同組的 Legendary／Infamous／Noted 對齊 sentences_reputation_01）
+Certainly feared as a brigand	公認令人畏懼的強盜	公认令人畏惧的强盗		FUN_14014ef90 140179a66-14017a3e0 人際關係分頁：名聲等級（同組的 Legendary／Infamous／Noted 對齊 sentences_reputation_01）
+Feared as a brigand	令人畏懼的強盜	令人畏惧的强盗		FUN_14014ef90 140179a66-14017a3e0 人際關係分頁：名聲等級（同組的 Legendary／Infamous／Noted 對齊 sentences_reputation_01）
+Certainly considered a bully	公認的惡霸	公认的恶霸		FUN_14014ef90 140179a66-14017a3e0 人際關係分頁：名聲等級（同組的 Legendary／Infamous／Noted 對齊 sentences_reputation_01）
+Considered a bully	被視為惡霸	被视为恶霸		FUN_14014ef90 140179a66-14017a3e0 人際關係分頁：名聲等級（同組的 Legendary／Infamous／Noted 對齊 sentences_reputation_01）
+Moted brawler	知名好鬥之徒	知名好斗之徒		FUN_14014ef90 140179a66-14017a3e0 人際關係分頁：名聲等級（同組的 Legendary／Infamous／Noted 對齊 sentences_reputation_01）；遊戲原文錯字（Noted），照意思譯；13 格放不下「著名的好鬥之徒」
+Certainly considered a brawler	公認的好鬥之徒	公认的好斗之徒		FUN_14014ef90 140179a66-14017a3e0 人際關係分頁：名聲等級（同組的 Legendary／Infamous／Noted 對齊 sentences_reputation_01）
+Considered a brawler	被視為好鬥之徒	被视为好斗之徒		FUN_14014ef90 140179a66-14017a3e0 人際關係分頁：名聲等級（同組的 Legendary／Infamous／Noted 對齊 sentences_reputation_01）
+Greatly feared as a villain	令人極度畏懼的惡棍	令人极度畏惧的恶棍		FUN_14014ef90 140179a66-14017a3e0 人際關係分頁：名聲等級（同組的 Legendary／Infamous／Noted 對齊 sentences_reputation_01）
+Feared as a villain	令人畏懼的惡棍	令人畏惧的恶棍		FUN_14014ef90 140179a66-14017a3e0 人際關係分頁：名聲等級（同組的 Legendary／Infamous／Noted 對齊 sentences_reputation_01）
+Respected as a hunter	受人尊敬的獵人	受人尊敬的猎人		FUN_14014ef90 140179a66-14017a3e0 人際關係分頁：名聲等級（同組的 Legendary／Infamous／Noted 對齊 sentences_reputation_01）
+Greatly feared as a killer	令人極度畏懼的殺手	令人极度畏惧的杀手		FUN_14014ef90 140179a66-14017a3e0 人際關係分頁：名聲等級（同組的 Legendary／Infamous／Noted 對齊 sentences_reputation_01）
+Feared as a killer	令人畏懼的殺手	令人畏惧的杀手		FUN_14014ef90 140179a66-14017a3e0 人際關係分頁：名聲等級（同組的 Legendary／Infamous／Noted 對齊 sentences_reputation_01）
+Greatly feared as a murderer	令人極度畏懼的殺人犯	令人极度畏惧的杀人犯		FUN_14014ef90 140179a66-14017a3e0 人際關係分頁：名聲等級（同組的 Legendary／Infamous／Noted 對齊 sentences_reputation_01）
+Feared as a murderer	令人畏懼的殺人犯	令人畏惧的杀人犯		FUN_14014ef90 140179a66-14017a3e0 人際關係分頁：名聲等級（同組的 Legendary／Infamous／Noted 對齊 sentences_reputation_01）
+Greatly feared for violent oppositoin	因暴力反抗令人極度畏懼	因暴力反抗令人极度畏惧		FUN_14014ef90 140179a66-14017a3e0 人際關係分頁：名聲等級（同組的 Legendary／Infamous／Noted 對齊 sentences_reputation_01）；遊戲原文錯字（opposition），照意思譯
+Feared for violent opposition	因暴力反抗令人畏懼	因暴力反抗令人畏惧		FUN_14014ef90 140179a66-14017a3e0 人際關係分頁：名聲等級（同組的 Legendary／Infamous／Noted 對齊 sentences_reputation_01）
+Greatly respected for fighter	以戰士身分備受尊敬	以战士身份备受尊敬		FUN_14014ef90 140179a66-14017a3e0 人際關係分頁：名聲等級（同組的 Legendary／Infamous／Noted 對齊 sentences_reputation_01）
+Respected for fighter	以戰士身分受人尊敬	以战士身份受人尊敬		FUN_14014ef90 140179a66-14017a3e0 人際關係分頁：名聲等級（同組的 Legendary／Infamous／Noted 對齊 sentences_reputation_01）
+Greatly respected for loyalty	因忠誠備受尊敬	因忠诚备受尊敬		FUN_14014ef90 140179a66-14017a3e0 人際關係分頁：名聲等級（同組的 Legendary／Infamous／Noted 對齊 sentences_reputation_01）
+Respected for loyalty	因忠誠受人尊敬	因忠诚受人尊敬		FUN_14014ef90 140179a66-14017a3e0 人際關係分頁：名聲等級（同組的 Legendary／Infamous／Noted 對齊 sentences_reputation_01）
+Greatly respected for protecting the weak	因保護弱者備受尊敬	因保护弱者备受尊敬		FUN_14014ef90 140179a66-14017a3e0 人際關係分頁：名聲等級（同組的 Legendary／Infamous／Noted 對齊 sentences_reputation_01）
+Respected for protecting the weak	因保護弱者受人尊敬	因保护弱者受人尊敬		FUN_14014ef90 140179a66-14017a3e0 人際關係分頁：名聲等級（同組的 Legendary／Infamous／Noted 對齊 sentences_reputation_01）
+Legendary preserver of the knowledge	傳奇知識守護者	传奇知识守护者		FUN_14014ef90 140179a66-14017a3e0 人際關係分頁：名聲等級（同組的 Legendary／Infamous／Noted 對齊 sentences_reputation_01）
+Famous preserver of the knowledge	赫赫有名的知識守護者	赫赫有名的知识守护者		FUN_14014ef90 140179a66-14017a3e0 人際關係分頁：名聲等級（同組的 Legendary／Infamous／Noted 對齊 sentences_reputation_01）
+Noted preserver of the knowledge	著名的知識守護者	著名的知识守护者		FUN_14014ef90 140179a66-14017a3e0 人際關係分頁：名聲等級（同組的 Legendary／Infamous／Noted 對齊 sentences_reputation_01）
+Greatly respected for preserving the knowledge	因守護知識備受尊敬	因守护知识备受尊敬		FUN_14014ef90 140179a66-14017a3e0 人際關係分頁：名聲等級（同組的 Legendary／Infamous／Noted 對齊 sentences_reputation_01）
+Respected for preserving the knowledge	因守護知識受人尊敬	因守护知识受人尊敬		FUN_14014ef90 140179a66-14017a3e0 人際關係分頁：名聲等級（同組的 Legendary／Infamous／Noted 對齊 sentences_reputation_01）
+Greatly respected for hunting treasure	因尋寶備受尊敬	因寻宝备受尊敬		FUN_14014ef90 140179a66-14017a3e0 人際關係分頁：名聲等級（同組的 Legendary／Infamous／Noted 對齊 sentences_reputation_01）
+Respected for hunting treasure	因尋寶受人尊敬	因寻宝受人尊敬		FUN_14014ef90 140179a66-14017a3e0 人際關係分頁：名聲等級（同組的 Legendary／Infamous／Noted 對齊 sentences_reputation_01）
+Certainly considered a thief	公認的竊賊	公认的窃贼		FUN_14014ef90 140179a66-14017a3e0 人際關係分頁：名聲等級（同組的 Legendary／Infamous／Noted 對齊 sentences_reputation_01）
+Considered a thief	被視為竊賊	被视为窃贼		FUN_14014ef90 140179a66-14017a3e0 人際關係分頁：名聲等級（同組的 Legendary／Infamous／Noted 對齊 sentences_reputation_01）
+Worker	工人	工人		FUN_14014ef90 14017aa23 團體分頁：在團體中的身分
+Former worker	前工人	前工人		FUN_14014ef90 14017aa3a 團體分頁：在團體中以前的身分
+Construction initiated.	建造已開始。	建造已开始。		FUN_14014ef90 1401814eb 建築資訊頁：建造狀態；與 Construction nearly done. 同一組
+Partially constructed.	已完成部分建造。	已完成部分建造。		FUN_14014ef90 140181545 建築資訊頁：建造狀態
+DOOR TAKEN BY INVADERS	門已被入侵者佔領	门已被入侵者占领		FUN_14014ef90 140193f17 建築資訊頁：門的狀態，下一行 Retake door to forbid it.
+DOOR USED BY INTRUDER	門正被入侵者使用	门正被入侵者使用		FUN_14014ef90 140194056 建築資訊頁：門的狀態，下一行 Retake door to forbid it.
+HATCH TAKEN BY INVADERS	活蓋已被入侵者佔領	活盖已被入侵者占领		FUN_14014ef90 14019467d 建築資訊頁：活蓋的狀態，下一行 Retake hatch to forbid it.
+HATCH USED BY INTRUDER	活蓋正被入侵者使用	活盖正被入侵者使用		FUN_14014ef90 1401947bc 建築資訊頁：活蓋的狀態
+ item	 件	 件		FUN_14014ef90 140196c7b 貿易站：Awaiting 、數字、本段分開畫（單數）；同 buildings_1 的 " items"
+In Magma Forge	熔岩鍛爐內	熔岩锻炉内		FUN_14014ef90 1401567ac 物品頁：物品所在的建築；整句寫出，免得被 zz_adv_craft 的 In {@1}（冒險物品欄「穿＋部位」）抓走
+In Leather Works	皮革工坊內	皮革工坊内		FUN_14014ef90 1401567ac 物品頁：物品所在的建築；整句寫出，免得被 zz_adv_craft 的 In {@1}（冒險物品欄「穿＋部位」）抓走
+In Quern	手推磨內	手推磨内		FUN_14014ef90 1401567ac 物品頁：物品所在的建築；整句寫出，免得被 zz_adv_craft 的 In {@1}（冒險物品欄「穿＋部位」）抓走
+In Kitchen	廚房內	厨房内		FUN_14014ef90 1401567ac 物品頁：物品所在的建築；整句寫出，免得被 zz_adv_craft 的 In {@1}（冒險物品欄「穿＋部位」）抓走
+In Ashery	製灰坊內	制灰坊内		FUN_14014ef90 1401567ac 物品頁：物品所在的建築；整句寫出，免得被 zz_adv_craft 的 In {@1}（冒險物品欄「穿＋部位」）抓走
+In Millstone	石磨內	石磨内		FUN_14014ef90 1401567ac 物品頁：物品所在的建築；整句寫出，免得被 zz_adv_craft 的 In {@1}（冒險物品欄「穿＋部位」）抓走
+In Soap Maker's Workshop	製皂工坊內	制皂工坊内		FUN_14014ef90 1401567ac 物品頁：物品所在的建築；整句寫出，免得被 zz_adv_craft 的 In {@1}（冒險物品欄「穿＋部位」）抓走
+In Screw Press	螺旋壓榨機內	螺旋压榨机内		FUN_14014ef90 1401567ac 物品頁：物品所在的建築；整句寫出，免得被 zz_adv_craft 的 In {@1}（冒險物品欄「穿＋部位」）抓走
+In Glass Furnace	玻璃熔爐內	玻璃熔炉内		FUN_14014ef90 1401567ac 物品頁：物品所在的建築；整句寫出，免得被 zz_adv_craft 的 In {@1}（冒險物品欄「穿＋部位」）抓走
+In Kiln	窯爐內	窑炉内		FUN_14014ef90 1401567ac 物品頁：物品所在的建築；整句寫出，免得被 zz_adv_craft 的 In {@1}（冒險物品欄「穿＋部位」）抓走
+In Magma Glass Furnace	熔岩玻璃熔爐內	熔岩玻璃熔炉内		FUN_14014ef90 1401567ac 物品頁：物品所在的建築；整句寫出，免得被 zz_adv_craft 的 In {@1}（冒險物品欄「穿＋部位」）抓走
+In Magma Kiln	熔岩窯爐內	熔岩窑炉内		FUN_14014ef90 1401567ac 物品頁：物品所在的建築；整句寫出，免得被 zz_adv_craft 的 In {@1}（冒險物品欄「穿＋部位」）抓走
+In Trade Depot	貿易站內	贸易站内		FUN_14014ef90 1401567ac 物品頁：物品所在的建築；整句寫出，免得被 zz_adv_craft 的 In {@1}（冒險物品欄「穿＋部位」）抓走
+In Hive	蜂箱內	蜂箱内		FUN_14014ef90 1401567ac 物品頁：物品所在的建築；整句寫出，免得被 zz_adv_craft 的 In {@1}（冒險物品欄「穿＋部位」）抓走
+In Nest Box	巢箱內	巢箱内		FUN_14014ef90 1401567ac 物品頁：物品所在的建築；整句寫出，免得被 zz_adv_craft 的 In {@1}（冒險物品欄「穿＋部位」）抓走
+In Bookcase	書架內	书架内		FUN_14014ef90 1401567ac 物品頁：物品所在的建築；整句寫出，免得被 zz_adv_craft 的 In {@1}（冒險物品欄「穿＋部位」）抓走
+In Display Case	展示櫃內	展示柜内		FUN_14014ef90 1401567ac 物品頁：物品所在的建築；整句寫出，免得被 zz_adv_craft 的 In {@1}（冒險物品欄「穿＋部位」）抓走；術語例外：case
+In Pedestal	基座內	基座内		FUN_14014ef90 1401567ac 物品頁：物品所在的建築；整句寫出，免得被 zz_adv_craft 的 In {@1}（冒險物品欄「穿＋部位」）抓走

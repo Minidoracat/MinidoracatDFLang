@@ -1,0 +1,83 @@
+en	zh-Hant	zh-Hans	align	note
+I must take my leave.	我該告辭了。	我该告辞了。		FUN_1404988b0 1404b0703 道別（交談類型 0xf0）
+Goodbye.	再見。	再见。		FUN_1404988b0 1404b071a、1404b0c65 道別
+We weren't personally acquainted.	我們私下並不認識。	我们私下并不认识。		FUN_1404988b0 1404b16ec 談到死者：說話者和死者不熟
+You may enjoy these times of peace, but remain vigilant.	你可以享受這段太平日子，但要保持警覺。	你可以享受这段太平日子，但要保持警惕。		FUN_1404988b0 1404b17a3
+My condolences.	請節哀。	请节哀。		FUN_1404988b0 1404b1869 對死者親屬致哀（說出口的話，不是選單）
+What will you do about it?	你打算怎麼處理？	你打算怎么处理？		FUN_1404988b0 1404b19be
+What should I do about it?	我該怎麼做？	我该怎么办？		FUN_1404988b0 1404b1a83
+Let's entertain the world together!	一起去為全世界帶來歡樂吧！	一起去给全世界带来欢乐吧！		FUN_1404988b0 1404b1b48 邀請加入表演團
+Come, join me on my adventures!	來吧，跟我一起去冒險！	来吧，跟我一起去冒险！		FUN_1404988b0 1404b1c1c 邀請同行
+this poor soul	這個可憐人	这个可怜人	inner	FUN_1404988b0 1404b1dfa Join me and we'll bring … back home! 查不到人名時
+the oppressors	壓迫者	压迫者	inner	FUN_1404988b0 1404b1fec shake off the yoke of … 沒有勢力名時
+this place	這個地方	这个地方	inner	FUN_1404988b0 1404b2056 shake off the yoke of … from this place 沒有據點時
+I'm with you on this.	這件事我挺你。	这件事我挺你。		FUN_1404988b0 1404b212f 答應加入
+Nevermind.	算了。	算了。		FUN_1404988b0 1404b5174 說出口的話；也給 1404b7f67「Tavern keeper!  Uhh...  nevermind.」切開後的小寫 nevermind.（大小寫退回）
+I'd like to stay here another day if you don't mind.	不介意的話，我想在這裡多待一天。	不介意的话，我想在这里多待一天。		FUN_1404988b0 1404b536e 玩家請求借宿（已借宿過）
+Please let me shelter here for the night.	請讓我在這裡借宿一晚。	请让我在这里借宿一晚。		FUN_1404988b0 1404b5385 玩家請求借宿
+My pleasure.	我很樂意。	我很乐意。		FUN_1404988b0 1404b56ac「Of course.  My pleasure.」第二句（Of course. 在 adv_speech_conv5）
+Certainly.	沒問題。	没问题。		FUN_1404988b0 1404b56c3「Certainly.  It would be terrible …」第一句
+It would be terrible to leave someone to fend for themselves after sunset.	太陽下山了還讓人在外頭自生自滅，那可就太過分了。	太阳下山了还让人在外面自生自灭，那可就太过分了。		FUN_1404988b0 1404b56c3 第二句：答應借宿
+Ah, I'm sorry.	啊，抱歉。	啊，对不起。		FUN_1404988b0 1404b57f2「Ah, I'm sorry.  Permission is not mine to give.」第一句（原本被通用句型拼成 Ah，抱歉。）
+Permission is not mine to give.	這不是我能作主的。	这不是我能做主的。		FUN_1404988b0 1404b57f2 第二句：拒絕借宿
+Here's something you might be interested in...	這個你或許會有興趣……	这个你或许会感兴趣……		FUN_1404988b0 1404b58c6
+I've decided.	我決定了。	我决定了。		FUN_1404988b0 1404b5b33「I've decided.  Let's call our troupe {名字}!」第一句
+I've forgotten what to say...	我忘了要說什麼……	我忘了要说什么……		FUN_1404988b0 1404b5c20 替表演團取名但沒有名字
+I've forgotten my bold pronouncement...	我忘了我那番豪言壯語……	我忘了我那番豪言壮语……		FUN_1404988b0 1404b661c 宣布接管但查不到對象
+Let's trade.	我們來交易吧。	我们来做买卖吧。		FUN_1404988b0 1404b66d4 說出口的話（交談選單選了交易）；動詞；術語例外：Trade
+What's available here?	這裡有什麼可以買的？	这里有什么可以买的？		FUN_1404988b0 1404b680f 說出口的話（問店家）
+I'd just as soon you went someplace else.	你還是去別的地方吧。	你还是去别的地方吧。		FUN_1404988b0 1404b6e2d 店家對不受歡迎的客人，接在前一句後（雙空白）
+You have been such a good trade partner.	你一直是很好的生意夥伴。	你一直是很好的生意伙伴。		FUN_1404988b0 1404b7099 店家依玩家名聲類型招呼（switch 0x7f0），接在前一句後；生意夥伴；術語例外：Trade
+It's such a pleasure to serve you.	能為您服務真是榮幸。	能为您服务真是荣幸。		FUN_1404988b0 1404b70b3 同上
+My good friend.	我的好朋友。	我的好朋友。		FUN_1404988b0 1404b70cd 同上
+My companion.	我的夥伴。	我的伙伴。		FUN_1404988b0 1404b70e7 同上
+It is good to see you here.	真高興在這裡見到你。	真高兴在这里见到你。		FUN_1404988b0 1404b7101 同上
+You ought to be rewarded for returning our treasures.	你找回了我們的寶物，理當受到獎賞。	你找回了我们的宝物，理应得到奖赏。		FUN_1404988b0 1404b7135 同上：歸還神器
+Thank you for preserving our legacy of wisdom.	謝謝你保存了我們傳承的智慧。	谢谢你保存了我们传承的智慧。		FUN_1404988b0 1404b714f 同上：保存書籍
+Long live the cause.	大業萬歲。	大业万岁。		FUN_1404988b0 1404b7169 同上：同屬反抗勢力
+Loyalty should be rewarded.	忠誠理當獲得回報。	忠诚理应得到回报。		FUN_1404988b0 1404b7183 同上
+What stories you tell!	你講的故事真精彩！	你讲的故事真精彩！		FUN_1404988b0 1404b719a 同上：說書人；第二句 It's such an honor to have you here.
+It's such an honor to have you here.	能請到您光臨真是榮幸。	能请到您光临真是荣幸。		FUN_1404988b0 1404b719a-1404b71df 表演者招呼的第二句
+The poet!	是那位詩人！	是那位诗人！		FUN_1404988b0 1404b71b1 同上：詩人
+My talented bard!	我才華洋溢的吟遊詩人！	我才华横溢的吟游诗人！		FUN_1404988b0 1404b71c8 同上：音樂家；稱讚語氣；術語例外：Talented
+What a dancer!	好一位舞者！	好一位舞者！		FUN_1404988b0 1404b71df 同上：舞者
+Your selfless dedication is appreciated here.	這裡的人都很感激你的無私奉獻。	这里的人都很感激你的无私奉献。		FUN_1404988b0 1404b71f6 同上
+There's no need for trouble here.	這裡用不著鬧事。	这里没必要闹事。		FUN_1404988b0 1404b72df 店家對有敵意的客人
+We have many drinks to choose from.	我們有很多酒可以選。	我们有很多酒可以选。		FUN_1404988b0 1404b7408「We have many drinks to choose from.  [You receive a list.]」第一句（五種以上的酒）
+[You receive a list.]	[你拿到一份清單。]	[你拿到一份清单。]		FUN_1404988b0 1404b7408 第二句（方括號旁白）
+All drinks are free, of course!	酒當然都是免費的！	酒当然都是免费的！		FUN_1404988b0 1404b7887 接在 We have … 酒單後
+You have a room here, and you can stay longer if you like.	你在這裡有房間，想多住幾天也行。	你在这里有房间，想多住几天也行。		FUN_1404988b0 1404b79af 酒館老闆：玩家已租房
+We have a free room.	我們有一間免費的房間。	我们有一间免费的房间。		FUN_1404988b0 1404b7c04-1404b7c4f We have＋a free room＋.  Let me know …；整句寫，免得 free 被翻成「自由」
+We have free rooms.	我們有免費的房間。	我们有免费的房间。		FUN_1404988b0 1404b7c04-1404b7c4f 同上，複數
+Let me know and you can stay as long as you like.	跟我說一聲，想住多久都行。	跟我说一声，想住多久都行。		FUN_1404988b0 1404b7c4f 免費房間句的第二句
+This is not that kind of establishment.	我們這裡不做那種生意。	我们这里不做那种生意。		FUN_1404988b0 1404b7d3f 不是酒館的地方被要求點酒／租房；原本被 zz_adv_speech 的 This is {1}. 拼成半中半英
+I'd like a room.	我想租一間房。	我想租一间房。		FUN_1404988b0 1404b8364 玩家對酒館老闆
+I'd like my room for another night.	我的房間想再續住一晚。	我的房间想再续住一晚。		FUN_1404988b0 1404b84b1 玩家對酒館老闆
+I'll be back with your drink in a moment.	你的酒馬上就來。	你的酒马上就来。		FUN_1404988b0 1404b896a 酒館老闆
+Your room is somewhere.	你的房間在某個地方。	你的房间在某个地方。		FUN_1404988b0 1404b8d11／1404b8d28 Your room is＋somewhere＋.（查不到房間位置）
+You'll have the room for another day.	房間再給你留一天。	房间再给你留一天。		FUN_1404988b0 1404b8f74「You'll have the room for another day.  I'm glad you're enjoying your stay.」第一句
+I'm glad you're enjoying your stay.	很高興你住得愉快。	很高兴你住得愉快。		FUN_1404988b0 1404b8f74 第二句
+this hall	這座大廳	这座大厅	inner	FUN_1404988b0 1404b9323-1404b9550 Tell me about＋建築（switch）＋.；只在佔位裡用（tower、tomb、dungeon 原本被通用樣板拼成「這裡高塔」）
+this keep	這座城堡	这座城堡	inner	FUN_1404988b0 1404b9323-1404b9550 Tell me about＋建築（switch）＋.；只在佔位裡用（tower、tomb、dungeon 原本被通用樣板拼成「這裡高塔」）
+this establishment	這間店	这家店	inner	FUN_1404988b0 1404b9323-1404b9550 Tell me about＋建築（switch）＋.；只在佔位裡用（tower、tomb、dungeon 原本被通用樣板拼成「這裡高塔」）
+this tower	這座塔	这座塔	inner	FUN_1404988b0 1404b9323-1404b9550 Tell me about＋建築（switch）＋.；只在佔位裡用（tower、tomb、dungeon 原本被通用樣板拼成「這裡高塔」）
+this tomb	這座陵墓	这座陵墓	inner	FUN_1404988b0 1404b9323-1404b9550 Tell me about＋建築（switch）＋.；只在佔位裡用（tower、tomb、dungeon 原本被通用樣板拼成「這裡高塔」）；建築說成陵墓，同世界據點；術語例外：tomb
+this dungeon	這座地牢	这座地牢	inner	FUN_1404988b0 1404b9323-1404b9550 Tell me about＋建築（switch）＋.；只在佔位裡用（tower、tomb、dungeon 原本被通用樣板拼成「這裡高塔」）
+these sewers	這片下水道	这片下水道	inner	FUN_1404988b0 1404b9323-1404b9550 Tell me about＋建築（switch）＋.；只在佔位裡用（tower、tomb、dungeon 原本被通用樣板拼成「這裡高塔」）
+these catacombs	這片地下墓穴	这片地下墓穴	inner	FUN_1404988b0 1404b9323-1404b9550 Tell me about＋建築（switch）＋.；只在佔位裡用（tower、tomb、dungeon 原本被通用樣板拼成「這裡高塔」）
+this spire	這座尖塔	这座尖塔	inner	FUN_1404988b0 1404b9323-1404b9550 Tell me about＋建築（switch）＋.；只在佔位裡用（tower、tomb、dungeon 原本被通用樣板拼成「這裡高塔」）
+Tell me about this dungeonthese sewersthese catacombs.	跟我說說這座地牢的事。	跟我说说这座地牢的事。		FUN_1404988b0 1404b94e3 遊戲的 switch 少了 break：地牢會接著加上 these sewers、these catacombs，照原文比對、照意思翻
+Tell me about these sewersthese catacombs.	跟我說說這片下水道的事。	跟我说说这片下水道的事。		FUN_1404988b0 1404b94f8 同上：下水道會接著加上 these catacombs
+This is my new home.	這是我的新家。	这是我的新家。		FUN_1404988b0 1404b967f 原本被 zz_adv_speech 的 This is {1}. 拼成半中半英
+this poor nameless child	這個可憐的無名孩子	这个可怜的无名孩子	inner	FUN_1404988b0 1404b9c9f Would you please adopt …? 孩子沒有名字時
+someone	某人	某人	inner	FUN_1404988b0 1404b9aac Would you agree to become someone of …（沒有職位）；句型已整句寫出，這條只給佔位用
+I accept this honor.	我接受這份榮耀。	我接受这份荣耀。		FUN_1404988b0 1404b9da0 答應繼任
+I am sorry, but I am otherwise disposed.	抱歉，我另有打算。	抱歉，我另有打算。		FUN_1404988b0 1404ba074 拒絕收養
+I will accept the child into my home.	我願意接受這孩子，讓他到我家來。	我愿意接受这孩子，把他接到我家来。		FUN_1404988b0 1404ba13a 答應收養；後面可接 It has always been … 與 This must be the will of …
+It has always been my dream to start a family.	成家一直是我的夢想。	成家一直是我的梦想。		FUN_1404988b0 1404ba27f 答應收養的第二句
+I'm sorry, but I'm unable to help.	抱歉，我幫不上忙。	抱歉，我帮不上忙。		FUN_1404988b0 1404bbd5c
+Why are you traveling?	你為什麼在外旅行？	你为什么在外旅行？		FUN_1404988b0 1404bbe22 玩家的話
+Do they have a firm grip on these lands?	他們把這片土地控制得牢嗎？	他们对这片土地控制得牢吗？		FUN_1404988b0 1404bbf0f 玩家的話：問占領勢力
+Where are their forces?	他們的兵力在哪裡？	他们的兵力在哪里？		FUN_1404988b0 1404bc03f「Where are their forces?  Are there patrols or guards?」第一句
+Are there patrols or guards?	有巡邏隊或守衛嗎？	有巡逻队或守卫吗？		FUN_1404988b0 1404bc03f 第二句
+Does anybody else still have a stake in these lands?	還有別人想在這片土地上分一杯羹嗎？	还有别人想在这片土地上分一杯羹吗？		FUN_1404988b0 1404bc16f 玩家的話

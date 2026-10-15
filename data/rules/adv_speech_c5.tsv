@@ -1,0 +1,29 @@
+en	zh-Hant	zh-Hans	align	note
+you were destroying {1}.	你當時正在摧毀{1}。	你当时正在摧毁{1}。		FUN_140659090 L877906 預言句：destroy＋受詞，were＋-ing
+I am destroying {1}.	我正在摧毀{1}。	我正在摧毁{1}。		FUN_140659090 L877906 預言句：destroy＋受詞，am＋-ing
+you are destroying {1}.	你正在摧毀{1}。	你正在摧毁{1}。		FUN_140659090 L877906 預言句：destroy＋受詞，are＋-ing
+I destroy {1}.	我摧毀{1}。	我摧毁{1}。		FUN_140659090 L877906 預言句：destroy＋受詞，現在式
+you destroy {1}.	你摧毀{1}。	你摧毁{1}。		FUN_140659090 L877906 預言句：destroy＋受詞，現在式
+you were speaking to {1}.	你當時正在對{1}說話。	你当时正在对{1}说话。		FUN_140659090 L877906 預言句：speak＋受詞，were＋-ing
+I am speaking to {1}.	我正在對{1}說話。	我正在对{1}说话。		FUN_140659090 L877906 預言句：speak＋受詞，am＋-ing
+you are speaking to {1}.	你正在對{1}說話。	你正在对{1}说话。		FUN_140659090 L877906 預言句：speak＋受詞，are＋-ing
+I speak to {1}.	我對{1}說話。	我对{1}说话。		FUN_140659090 L877906 預言句：speak＋受詞，現在式
+you speak to {1}.	你對{1}說話。	你对{1}说话。		FUN_140659090 L877906 預言句：speak＋受詞，現在式
+you were burning {1}.	你當時正在焚燒{1}。	你当时正在焚烧{1}。		FUN_140659090 L877906 預言句：burn＋受詞，were＋-ing
+I am burning {1}.	我正在焚燒{1}。	我正在焚烧{1}。		FUN_140659090 L877906 預言句：burn＋受詞，am＋-ing
+you are burning {1}.	你正在焚燒{1}。	你正在焚烧{1}。		FUN_140659090 L877906 預言句：burn＋受詞，are＋-ing
+I burn {1}.	我焚燒{1}。	我焚烧{1}。		FUN_140659090 L877906 預言句：burn＋受詞，現在式
+you burn {1}.	你焚燒{1}。	你焚烧{1}。		FUN_140659090 L877906 預言句：burn＋受詞，現在式
+you were flooding {1}.	你當時正在淹沒{1}。	你当时正在淹没{1}。		FUN_140659090 L877906 預言句：flood＋受詞，were＋-ing
+I am flooding {1}.	我正在淹沒{1}。	我正在淹没{1}。		FUN_140659090 L877906 預言句：flood＋受詞，am＋-ing
+you are flooding {1}.	你正在淹沒{1}。	你正在淹没{1}。		FUN_140659090 L877906 預言句：flood＋受詞，are＋-ing
+I flood {1}.	我淹沒{1}。	我淹没{1}。		FUN_140659090 L877906 預言句：flood＋受詞，現在式
+you flood {1}.	你淹沒{1}。	你淹没{1}。		FUN_140659090 L877906 預言句：flood＋受詞，現在式
+you were rewarding {1}.	你當時正在獎賞{1}。	你当时正在奖赏{1}。		FUN_140659090 L877906 預言句：reward＋受詞，were＋-ing
+I am rewarding {1}.	我正在獎賞{1}。	我正在奖赏{1}。		FUN_140659090 L877906 預言句：reward＋受詞，am＋-ing
+you are rewarding {1}.	你正在獎賞{1}。	你正在奖赏{1}。		FUN_140659090 L877906 預言句：reward＋受詞，are＋-ing
+I reward {1}.	我獎賞{1}。	我奖赏{1}。		FUN_140659090 L877906 預言句：reward＋受詞，現在式
+you reward {1}.	你獎賞{1}。	你奖赏{1}。		FUN_140659090 L877906 預言句：reward＋受詞，現在式
+{1} spoke to me.	{1}對我說過話。	{1}对我说过话。		FUN_140659090 L877906 預言句：speak＋受詞，過去式；放非 zz 檔，搶在 speech_03 的 {1} spoke {2}.（念誦曲名）之前，受詞 me
+{1} spoke to you.	{1}對你說過話。	{1}对你说过话。		FUN_140659090 L877906 預言句：speak＋受詞，過去式；放非 zz 檔，搶在 speech_03 的 {1} spoke {2}.（念誦曲名）之前，受詞 you
+{1} spoke to {^2}.	{1}對{2}說過話。	{1}对{2}说过话。		FUN_140659090 L877906 預言句：speak＋受詞，過去式；放非 zz 檔，搶在 speech_03 的 {1} spoke {2}.（念誦曲名）之前，受詞是名字：用 {^2} 只收大寫開頭的名字，免得吃掉被動句「X was destroyed by …」

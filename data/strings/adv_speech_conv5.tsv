@@ -1,0 +1,78 @@
+en	zh-Hant	zh-Hans	align	note
+Did anybody flee the attack?	有人從那場襲擊裡逃出來嗎？	有人从那次袭击中逃出来吗？		FUN_1404988b0 1404bc29f 玩家問話：襲擊事件
+Tell me about the local ruler.	跟我說說這裡的統治者吧。	跟我说说这里的统治者吧。		FUN_1404988b0 1404bc3cf 玩家問話
+Does this settlement engage in trade?	這個聚落有在跟別處做買賣嗎？	这个聚落有跟别处做买卖吗？		FUN_1404988b0 1404bc4f0 玩家問話第一句（後接 Tell me about those places.）；術語例外：Trade
+Tell me about those places.	跟我說說那些地方吧。	跟我说说那些地方吧。		FUN_1404988b0 1404bc4f0 玩家問話第二句
+Look at the sky!	看看那天空！	看看那天空！		FUN_1404988b0 1404bc755 天氣話題（地底）第一句
+Are we in the Underworld?	我們是在冥界嗎？	我们是在冥界吗？		FUN_1404988b0 1404bc755 天氣話題（地底）第二句；underworld 照 speech 既有譯法「冥界」
+What an odd glow!	好奇怪的光！	好奇怪的光！		FUN_1404988b0 1404bc81e 天氣話題（地底發光）
+At least it doesn't rain down here.	至少在這底下不會下雨。	至少在这底下不会下雨。		FUN_1404988b0 1404bc8d4 天氣話題（地底）
+Is it raining?	在下雨嗎？	在下雨吗？		FUN_1404988b0 1404bc8eb 天氣話題
+I have confidence in your abilities.	我對你的能力有信心。	我对你的能力有信心。		FUN_1404988b0 1404bc9b1 整句覆蓋 zz_adv_speech 的 I have {1}.（原本拼成「confidence in your abilities在我這裡」）
+What a strange place!	好奇怪的地方！	好奇怪的地方！		FUN_1404988b0 1404bcc21 所在地話題
+It is invigorating to be out in the wilds!	到荒郊野外走走，真讓人精神一振！	到野外走走，真让人精神一振！		FUN_1404988b0 1404bcc6b 所在地話題（喜歡戶外、在野外）
+It is good to be outdoors.	待在戶外真好。	待在户外真好。		FUN_1404988b0 1404bcc82 所在地話題
+Indoors, outdoors.	室內也好，戶外也罷。	室内也好，户外也罢。		FUN_1404988b0 1404bcca3/1404bcd5f 所在地話題第一句
+It's all the same to me as long as the weather's fine.	只要天氣好，對我來說都一樣。	只要天气好，对我来说都一样。		FUN_1404988b0 1404bcca3/1404bcd5f 所在地話題第二句
+How I long for civilization...	我好想回到文明世界啊……	我好想回到文明世界啊……		FUN_1404988b0 1404bcccc 所在地話題（在野外、喜歡室內）
+I would prefer to be indoors.	我比較想待在室內。	我更想待在室内。		FUN_1404988b0 1404bcce3 所在地話題
+How sinister the glow...	這光芒看起來真不祥……	这光芒看起来真不祥……		FUN_1404988b0 1404bcd0d 所在地話題（地底發光）
+I would prefer to be outdoors.	我比較想待在戶外。	我更想待在户外。		FUN_1404988b0 1404bcd3e 所在地話題
+It is good to be indoors.	待在室內真好。	待在室内真好。		FUN_1404988b0 1404bcd76 所在地話題
+It sure is dark down here.	這底下還真暗。	这底下还真暗。		FUN_1404988b0 1404bcd8d 所在地話題（地底）
+Where am I?	我在哪裡？	我在哪里？		FUN_1404988b0 1404bcda4 所在地話題
+Tell me about this area.	跟我說說這一帶吧。	跟我说说这一带吧。		FUN_1404988b0 1404bce6a 玩家問話
+Let us stop this pointless fighting!	我們別再做這種無謂的爭鬥了！	我们别再做这种无谓的争斗了！		FUN_1404988b0 1404bcf3e 求和
+I accept your offer.	我接受你的提議。	我接受你的提议。		FUN_1404988b0 1404bd012 外交回答
+I have no reason to accept this.	我沒有理由接受。	我没有理由接受。		FUN_1404988b0 1404bd5b4 外交回答；整句覆蓋 zz_adv_speech 的 I have {1}.（原本拼成「no reason to accept this在我這裡」）
+May this new age of harmony last a thousand year.	願這和睦的新時代延續千年。	愿这和睦的新时代延续千年。		FUN_1404988b0 1404bda2c 外交回答第二句（第一句 Gladly. 在 adv_speech_conv1）；原文 year 少 s 照抄
+Never.	休想。	休想。		FUN_1404988b0 1404bdf88 外交回答：拒絕
+I agree to submit to your request.	我同意順從你的要求。	我同意服从你的要求。		FUN_1404988b0 1404be400 外交回答
+I will not bow before you.	我不會向你低頭。	我不会向你低头。		FUN_1404988b0 1404be9a2 外交回答
+Identify yourself!	報上名來！	报上名来！		FUN_1404988b0 1404bf89f 守衛盤問
+the object I can't remember	某樣我想不起來的東西	某样我想不起来的东西	inner	FUN_1404988b0 1404bfa8d 物品名取不到時的代稱，接在 Drop／Where is／trade 句裡；術語例外：object
+Please consider my offer.	請考慮一下我的提議。	请考虑一下我的提议。		FUN_1404988b0 1404c12af 想買對方物品的第二句
+You must yield!	你必須投降！	你必须投降！		FUN_1404988b0 1404c1751 要求投降
+The bond is broken!	束縛已解！	束缚已解！		FUN_1404988b0 1404c2864 解除束縛的第二句（前面是名字!）；帶講者時整句規則比不到，靠逐句
+Return to the Underworld and trouble us no more!	回冥界去，別再來糾纏我們！	回冥界去，别再来纠缠我们！		FUN_1404988b0 1404c2864 第三句
+You are bound to me!	你已被我束縛！	你已被我束缚！		FUN_1404988b0 1404c2a4b 束縛（前面是名字!）
+Whosoever would blight the world, preying on the helpless, fear me!	凡是荼毒世間、欺凌弱小之輩，都給我顫抖吧！	凡是荼毒世间、欺凌弱小之辈，都给我颤抖吧！		FUN_1404988b0 1404c3566 指認夜行生物第一句；術語例外：world
+I call you a child of the night and will slay you where you stand.	我認定你是黑夜之子，要將你就地斬殺。	我认定你是黑夜之子，要将你就地斩杀。		FUN_1404988b0 1404c3566 第二句
+Tell me who you work for, or else.	說，你替誰做事？不然有你好看。	说，你替谁做事？不然有你好看。		FUN_1404988b0 1404c3656 審問（威脅）
+Who do you work for?	你替誰做事？	你替谁做事？		FUN_1404988b0 1404c366d 審問
+Reveal what you have been scheming or suffer the consequences.	從實招來你在密謀什麼，否則後果自負。	从实招来你在密谋什么，否则后果自负。		FUN_1404988b0 1404c37ca 審問（威脅）
+What have you been scheming?	你在密謀什麼？	你在密谋什么？		FUN_1404988b0 1404c37e1 審問
+You look like a mighty warrior indeed.	你看起來真是個強大的戰士。	你看起来真是个强大的战士。		FUN_1404988b0 1404c3922 稱讚
+How are you feeling right now?	你現在感覺怎麼樣？	你现在感觉怎么样？		FUN_1404988b0 1404c39f6 問感受
+You are amazing.	你真了不起。	你真了不起。		FUN_1404988b0 1404c3e3c 稱讚穿著，沒有可稱讚的衣物時
+Calm yourself!	冷靜點！	冷静点！		FUN_1404988b0 1404c432e
+Tell me about your family.	跟我說說你的家人吧。	跟我说说你的家人吧。		FUN_1404988b0 1404c548b 玩家問話
+Of course.	當然。	当然。		FUN_1404988b0 1404c555f 答應；也是 1404c67e7 第一句
+Yes, let's go.	好，我們走吧。	好，我们走吧。		FUN_1404988b0 1404c5633 答應同行
+Sorry, I'm otherwise occupied.	抱歉，我現在有別的事要忙。	抱歉，我现在有别的事要忙。		FUN_1404988b0 1404c5721 拒絕
+You'll have to talk to somebody older.	這你得去找大人談。	这你得去找大人谈。		FUN_1404988b0 1404c57f5 小孩的回答
+You will best serve by finishing your quest.	把你的任務完成，就是最好的效力。	把你的任务完成，就是最好的效力。		FUN_1404988b0 1404c5fcc 祭司：已有任務
+I cannot lay a quest on you.	我不能給你指派任務。	我不能给你指派任务。		FUN_1404988b0 1404c60a0 祭司第一句
+Really?	真的嗎？	真的吗？		FUN_1404988b0 1404c64c0/1404c6668 第一句
+Please come closer.	請靠近一點。	请靠近一点。		FUN_1404988b0 1404c64c0 第二句
+Please come closer and ask again.	請靠近一點再問一次。	请靠近一点再问一次。		FUN_1404988b0 1404c6594 第二句（第一句 Fantastic! 已有）
+Alright.	好吧。	好吧。		FUN_1404988b0 1404c6668 第二句
+Let's do business.	我們來做生意吧。	咱们来做生意吧。		FUN_1404988b0 1404c67e7 第二句
+Come see me in my store sometime.	有空來我店裡看看吧。	有空来我店里看看吧。		FUN_1404988b0 1404c6e6c 商人
+Come see me at the trade depot sometime.	有空來貿易站找我吧。	有空来贸易站找我吧。		FUN_1404988b0 1404c6f40 商人
+Come see me in the market sometime.	有空來市場找我吧。	有空来市场找我吧。		FUN_1404988b0 1404c7014 商人
+Please be patient.	請稍候。	请稍等。		FUN_1404988b0 1404c70e8 店員第一句
+I'll have your order ready in a moment.	您點的東西馬上就好。	您点的东西马上就好。		FUN_1404988b0 1404c70e8 第二句
+We don't offer any specific services here.	我們這裡沒有提供什麼特別的服務。	我们这里不提供什么特别的服务。		FUN_1404988b0 1404c71bc 店員
+Yes, I can serve you when we're both there.	可以，等我們都到了那裡，我就能為你服務。	可以，等我们都到了那里，我就能为你服务。		FUN_1404988b0 1404c7290 店員
+I don't work here.	我不在這裡工作。	我不在这里工作。		FUN_1404988b0 1404c7364
+You haven't ordered anything.	你還沒點任何東西。	你还没点任何东西。		FUN_1404988b0 1404c7438 第一句
+Would you like something?	要來點什麼嗎？	要来点什么吗？		FUN_1404988b0 1404c7438 第二句
+You should probably try a shopkeeper.	你大概得去找店主。	你大概得去找店主。		FUN_1404988b0 1404c750c
+No such place exists.	沒有這個地方。	没有这个地方。		FUN_1404988b0 1404c79bd 問路
+It is the best I can do.	我只能幫到這裡了。	我只能帮到这里了。		FUN_1404988b0 1404c7d73 問路第三句
+I don't know myself, and I don't even know anybody that could tell you.	我自己不知道，也不認識誰能告訴你。	我自己不知道，也不认识谁能告诉你。		FUN_1404988b0 1404c7fad 問路；整句覆蓋既有句型（原本拼成「我不認識myself…」）
+Who?	誰？	谁？		FUN_1404988b0 1404c83a4 問人
+I don't remember what I was going to say...	我忘了我要說什麼了……	我忘了我要说什么了……		FUN_1404988b0 1404c8511/1404c86ba
+Probably on the move or deep underground, but I can't be sure.	大概在四處移動，不然就是在地底深處吧，不過我不敢肯定。	大概在四处走动，不然就是在地下深处吧，不过我不敢肯定。		FUN_1404988b0 1404c8b06 問人在哪
+I'm not sure.	我不確定。	我不确定。		FUN_1404988b0 1404c9416 問旅程：沒有可說的行程

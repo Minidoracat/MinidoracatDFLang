@@ -1,0 +1,44 @@
+en	zh-Hant	zh-Hans	align	note
+{1} offers to pay homage to {2}.	{1}願意向{2}稱臣。	{1}愿意向{2}称臣。		FUN_1404988b0 1404bee4b 外交：{1}{2} 勢力名（FUN_140b92900）
+{1} will no longer pay homage to {2}.	{1}不再向{2}稱臣了。	{1}不再向{2}称臣了。		FUN_1404988b0 1404befc5 外交：{1}{2} 勢力名
+Let there be peace between {1} and {2}.	願{1}與{2}從此和平共處。	愿{1}与{2}从此和平共处。		FUN_1404988b0 1404bf5a4 外交求和：{1}{2} 勢力名
+{1} must pay homage to {2} or suffer the consequences.	{1}必須向{2}稱臣，否則後果自負。	{1}必须向{2}称臣，否则后果自负。		FUN_1404988b0 1404bf756 外交威脅：{1}{2} 勢力名
+Drop {1}!	把{1}放下！	把{1}放下！		FUN_1404988b0 1404bf98c 喝令放下物品：{1} 神器名（FUN_140a94030）或物品描述（FUN_140c65450），取不到時 the object I can't remember（inner）；用 {1}：神器名不在字典
+Fortune has favored you, and {1} is yours.	你運氣真好，{1}歸你了。	你运气真好，{1}归你了。		FUN_1404988b0 1404c1199 想買對方的物品第一句：{1} 同 Drop 句；後接 Please consider my offer.
+Perhaps you'd be willing to trade {1}?	也許你願意拿{1}來交易？	也许你愿意拿{1}来交易？		FUN_1404988b0 1404c1374：{1} 同 Drop 句；術語例外：Trade
+Where is {1}?	{1}在哪裡？	{1}在哪里？		FUN_1404988b0 1404c154f 問物品下落：{1} 同 Drop 句；用 {1} 收神器名
+{1}!  The bond is broken!  Return to the Underworld and trouble us no more!	{1}！束縛已解！回冥界去，別再來糾纏我們！	{1}！束缚已解！回冥界去，别再来纠缠我们！		FUN_1404988b0 1404c284f 解除束縛：{1} 被束縛者名字（FUN_140a946e0）＋!  ；名字單獨成句寫不成條目，所以整句寫（帶講者時比不到）
+{1}!  You are bound to me!	{1}！你已被我束縛！	{1}！你已被我束缚！		FUN_1404988b0 1404c2a36 束縛：{1} 名字（FUN_140a946e0）
+{%1} really makes the outfit.	{1}真是整套打扮的點睛之筆。	{1}真是整套打扮的点睛之笔。		FUN_1404988b0 1404c3d98 稱讚穿著：{1} 衣物名（FUN_140c65450，首字大寫），單數 makes
+{%1} really make the outfit.	{1}真是整套打扮的點睛之筆。	{1}真是整套打扮的点睛之笔。		FUN_1404988b0 1404c3dcb 同上，複數 make
+So, the {%1} and the {%2}...	話說，{1}和{2}……	话说，{1}和{2}……		FUN_1404988b0 1404c4823 笑話開頭：{1}{2} 生物名（FUN_140aa3bd0，單數或複數）
+... and the {%1} said, "Are you going to eat that?"	……然後{1}說：「那個你還要吃嗎？」	……然后{1}说：“那个你还要吃吗？”		FUN_1404988b0 1404c4e35 笑話結尾：{1} 生物名
+... and the {%1} saw the sun and vomited on the spot!	……然後{1}一看到太陽，當場就吐了！	……然后{1}一看到太阳，当场就吐了！		FUN_1404988b0 1404c4f4c 笑話結尾：{1} 生物名
+Blessed be {1} and the chosen!	願{1}與天選之人蒙福！	愿{1}与天选之人蒙福！		FUN_1404988b0 1404c58fb 祭司派任務第一句：{1} 神祇名（FUN_140b92f10）
+You are hereby charged to retrieve {1} from {2} for {3}.	茲命你前往{2}取回{1}，交給{3}。	兹命你前往{2}取回{1}，交给{3}。		FUN_1404988b0 1404c5962 第二句：{1} 神器名（FUN_140b94400），{2} 據點，{3} 勢力；from／for 各自可省，四種逐條寫、長的在前
+You are hereby charged to retrieve {1} from {2}.	茲命你前往{2}取回{1}。	兹命你前往{2}取回{1}。		FUN_1404988b0 1404c5962 同上，沒有勢力
+You are hereby charged to retrieve {1} for {2}.	茲命你取回{1}，交給{2}。	兹命你取回{1}，交给{2}。		FUN_1404988b0 1404c5962 同上，沒有據點
+You are hereby charged to retrieve {1}.	茲命你取回{1}。	兹命你取回{1}。		FUN_1404988b0 1404c5962 同上，都沒有
+I merely ask that you serve {%1} in a way that suits you.	我只求你以適合自己的方式侍奉{1}。	我只求你以适合自己的方式侍奉{1}。		FUN_1404988b0 1404c60a0 祭司第二句：{1} 神祇領域名（FUN_140756690：agriculture、death…）
+{1} is well-traveled and would probably have that information.	{1}走過很多地方，大概會知道。	{1}走过很多地方，大概会知道。		FUN_1404988b0 1404c7af7 問路：{1} 人物（FUN_140b92f10）；術語例外：well
+However, the {%1} not be able to guide you personally.	不過，{1}恐怕沒辦法親自帶你去。	不过，{1}恐怕没办法亲自带你去。		FUN_1404988b0 1404c7d23 問路第二句：{1} 職位名（FUN_14099a3c0）；遊戲原文少了 will／may，照抄；術語例外：guide
+I started my pilgrimage in {1} in {2}.	我是從{2}的{1}開始朝聖之旅的。	我是从{2}的{1}开始朝圣之旅的。		FUN_1404988b0 1404c8f75 朝聖紀錄：{1} 據點（FUN_140b93930），{2} 地區（FUN_140b92640）
+I visited {1} in {2} in {3} to view {4}.	我到過{3}的{2}，在{1}瞻仰了{4}。	我到过{3}的{2}，在{1}瞻仰了{4}。		FUN_1404988b0 1404c9006 朝聖紀錄：{1} 建築（FUN_140b94090），{2} 據點，{3} 地區，{4} 神器（FUN_140b94400）；建築可省，長的在前
+I visited {1} in {2} to view {3}.	我到過{2}的{1}，瞻仰了{3}。	我到过{2}的{1}，瞻仰了{3}。		FUN_1404988b0 1404c9006 同上，沒有建築：{1} 據點，{2} 地區，{3} 神器
+I visited {1} in {2} in {3}.	我到過{3}的{2}，參訪了{1}。	我到过{3}的{2}，参访了{1}。		FUN_1404988b0 1404c912b 朝聖紀錄：{1} 建築，{2} 據點，{3} 地區
+I visited {1} in {2}.	我到過{2}的{1}。	我到过{2}的{1}。		FUN_1404988b0 1404c912b 同上，沒有建築
+I'm preparing to travel to {1} in {2} to view {3}.	我正準備動身前往{2}的{1}瞻仰{3}。	我正准备动身前往{2}的{1}瞻仰{3}。		FUN_1404988b0 1404c924e 朝聖行程：{1} 建築，{2} 據點，{3} 神器；建築、神器可省，長的在前
+I'm preparing to travel to {1} to view {2}.	我正準備動身前往{1}瞻仰{2}。	我正准备动身前往{1}瞻仰{2}。		FUN_1404988b0 1404c924e 同上，沒有建築：{1} 據點，{2} 神器
+I'm preparing to travel to {1} in {2}.	我正準備動身前往{2}的{1}。	我正准备动身前往{2}的{1}。		FUN_1404988b0 1404c924e 同上，沒有神器：{1} 建築，{2} 據點
+I'm preparing to travel to {1}.	我正準備動身前往{1}。	我正准备动身前往{1}。		FUN_1404988b0 1404c924e 同上，只有據點
+I'm traveling to {1} in {2} to view {3}.	我正要去{2}的{1}瞻仰{3}。	我正要去{2}的{1}瞻仰{3}。		FUN_1404988b0 1404c9265 朝聖行程：{1} 建築，{2} 據點，{3} 神器；建築、神器可省，長的在前
+I'm traveling to {1} to view {2}.	我正要去{1}瞻仰{2}。	我正要去{1}瞻仰{2}。		FUN_1404988b0 1404c9265 同上，沒有建築：{1} 據點，{2} 神器
+I'm traveling to {1} in {2}.	我正要去{2}的{1}。	我正要去{2}的{1}。		FUN_1404988b0 1404c9265 同上，沒有神器：{1} 建築，{2} 據點
+I'm traveling to {1}.	我正要去{1}。	我正要去{1}。		FUN_1404988b0 1404c9265 同上，只有據點
+I'm returning to my home in {1}	我正要回{1}的家。	我正要回{1}的家。		FUN_1404988b0 1404c950d 行程：{1} 據點；遊戲在這個分支不加句號（直接跳到送出），照抄
+I'm going to {1} to take up my position as captain of the guard of {2}.	我要去{1}就任{2}的衛隊長一職。	我要去{1}就任{2}的卫队长一职。		FUN_1404988b0 1404c95cd 職位名含 of，排在 as {%2} of {3}. 前（否則 {%2} 只取到 captain）；術語例外：Position
+I'm going to {1} to take up my position as master of beasts of {2}.	我要去{1}就任{2}的馴獸總管一職。	我要去{1}就任{2}的驯兽总管一职。		FUN_1404988b0 1404c95cd 職位名含 of，排在 as {%2} of {3}. 前（否則 {%2} 只取到 captain）；術語例外：Position、Master
+I'm going to {1} to take up my position as keeper of the seal of {2}.	我要去{1}就任{2}的掌璽大臣一職。	我要去{1}就任{2}的掌玺大臣一职。		FUN_1404988b0 1404c95cd 職位名含 of，排在 as {%2} of {3}. 前（否則 {%2} 只取到 captain）；術語例外：Position
+I'm going to {1} to take up my position as {%2} of {3}.	我要去{1}就任{3}的{2}一職。	我要去{1}就任{3}的{2}一职。		FUN_1404988b0 1404c95cd 行程：{1} 據點，{2} 職位名（FUN_14099a3c0），{3} 勢力（FUN_1409bdfb0 接 of＋名稱）；其餘 I'm going to … 結尾在 adv_speech_conv6；術語例外：Position
+I'm going to {1} to take up my position as {%2}.	我要去{1}就任{2}一職。	我要去{1}就任{2}一职。		FUN_1404988b0 1404c968f 同上，沒有勢力；術語例外：Position
+I'm going to {1} to take up my position.	我要去{1}就任。	我要去{1}就任。		FUN_1404988b0 1404c95cd 同上，找不到職位；術語例外：Position

@@ -1,0 +1,82 @@
+en	zh-Hant	zh-Hans	align	note
+Automatically weave dyed thread	自動把染色線材織成布	自动把染色线材织成布		FUN_140434c60 L553546 常規命令／工坊：切換鈕
+Use only dyed cloth	只使用染色布料	只使用染色布料		FUN_140434c60 L553555 常規命令／工坊：裁縫用布：切換鈕
+No automatic web collection	不自動收集蛛網	不自动收集蛛网		FUN_140434c60 L553575 常規命令／工坊：切換鈕
+No automatic slaughter	不自動屠宰動物	不自动屠宰动物		FUN_140434c60 L553585 常規命令／工坊；對應 Slaughter any marked animal：切換鈕
+Do not automate kitchen	不自動化廚房	不自动化厨房		FUN_140434c60 L553620 常規命令／工坊：切換鈕
+Do not automate tannery	不自動化製革工坊	不自动化制革工坊		FUN_140434c60 L553628 常規命令／工坊：切換鈕
+Automate kiln	自動化窯爐	自动化窑炉		FUN_140434c60 L553634 常規命令／工坊：切換鈕
+Do not automate kiln	不自動化窯爐	不自动化窑炉		FUN_140434c60 L553636 常規命令／工坊：切換鈕
+Automate smelter	自動化冶煉爐	自动化冶炼炉		FUN_140434c60 L553642 常規命令／工坊：切換鈕
+Do not automate smelter	不自動化冶煉爐	不自动化冶炼炉		FUN_140434c60 L553644 常規命令／工坊：切換鈕
+Automate other shops	自動化其他工坊	自动化其他工坊		FUN_140434c60 L553654 常規命令／工坊：切換鈕
+Do not automate other shops	不自動化其他工坊	不自动化其他工坊		FUN_140434c60 L553656 常規命令／工坊：切換鈕
+Workers ignore animals	工人忽略動物	工人忽略动物		FUN_140434c60 L553753 常規命令／搬運：切換鈕
+Workers ignore food	工人忽略食物	工人忽略食物		FUN_140434c60 L553770 常規命令／搬運：切換鈕
+Workers ignore furniture	工人忽略家具	工人忽略家具		FUN_140434c60 L553776 常規命令／搬運：切換鈕
+Workers ignore bodies	工人忽略屍體	工人忽略尸体		FUN_140434c60 L553782 常規命令／搬運：切換鈕
+Workers ignore minerals	工人忽略礦物	工人忽略矿物		FUN_140434c60 L553788 常規命令／搬運：切換鈕
+Workers ignore wood	工人忽略木材	工人忽略木材		FUN_140434c60 L553794 常規命令／搬運：切換鈕
+Workers ignore refuse	工人忽略垃圾	工人忽略垃圾		FUN_140434c60 L553896 常規命令／垃圾：切換鈕
+Workers gather outdoor refuse	工人收集戶外垃圾	工人收集户外垃圾		FUN_140434c60 L553900 常規命令／垃圾：切換鈕
+Workers gather outdoor vermin remains	工人收集戶外害蟲殘骸	工人收集户外害虫残骸		FUN_140434c60 L553911 常規命令／垃圾：切換鈕
+Workers dump corpses	工人丟棄屍體	工人丢弃尸体		FUN_140434c60 L553918 常規命令／垃圾；dump＝搬去垃圾場，對應 save 保留：切換鈕
+Workers dump skulls	工人丟棄頭骨	工人丢弃头骨		FUN_140434c60 L553924 常規命令／垃圾：切換鈕
+Workers dump bones	工人丟棄骨頭	工人丢弃骨头		FUN_140434c60 L553930 常規命令／垃圾：切換鈕
+Workers dump shells	工人丟棄貝殼	工人丢弃贝壳		FUN_140434c60 L553936 常規命令／垃圾：切換鈕
+Workers dump skins	工人丟棄生皮	工人丢弃生皮		FUN_140434c60 L553942 常規命令／垃圾：切換鈕
+Workers dump hair and wool	工人丟棄毛髮和羊毛	工人丢弃毛发和羊毛		FUN_140434c60 L553948 常規命令／垃圾：切換鈕
+Workers dump other objects	工人丟棄其他物品	工人丢弃其他物品		FUN_140434c60 L553954 常規命令／垃圾：切換鈕
+Forbid used ammunition during sieges	圍攻時禁用射出的彈藥	围攻时禁用射出的弹药		FUN_140434c60 L554055 常規命令／禁用：切換鈕
+Claim used ammunition	認領射出的彈藥	认领射出的弹药		FUN_140434c60 L554057 常規命令／禁用：切換鈕
+Forbid your dead	禁用己方遺體	禁用己方遗体		FUN_140434c60 L554063 常規命令／禁用：切換鈕
+Forbid your dead during sieges	圍攻時禁用己方遺體	围攻时禁用己方遗体		FUN_140434c60 L554066 常規命令／禁用：切換鈕
+Forbid your death items during sieges	圍攻時禁用己方遺物	围攻时禁用己方遗物		FUN_140434c60 L554077 常規命令／禁用：切換鈕
+Forbid other non-hunted dead	禁用非獵獲的外人遺體	禁用非猎获的外人遗体		FUN_140434c60 L554085 常規命令／禁用；other＝非己方，non-hunted＝不是打獵得來的：切換鈕
+Forbid other non-hunted dead during sieges	圍攻時禁用非獵獲的外人遺體	围攻时禁用非猎获的外人遗体		FUN_140434c60 L554088 常規命令／禁用：切換鈕
+Forbid other death items during sieges	圍攻時禁用外人遺物	围攻时禁用外人遗物		FUN_140434c60 L554099 常規命令／禁用：切換鈕
+Claim other death items	認領外人遺物	认领外人遗物		FUN_140434c60 L554101 常規命令／禁用：切換鈕
+Forbid floor/wall cleaning	禁止清理地板與牆壁	禁止清理地板和墙壁		FUN_140434c60 L554107 常規命令／禁用；動作用「禁止」：切換鈕
+Allow floor/wall cleaning	允許清理地板與牆壁	允许清理地板和墙壁		FUN_140434c60 L554112 常規命令／禁用：切換鈕
+Forbid trap cleaning	禁止清理陷阱	禁止清理陷阱		FUN_140434c60 L554118 常規命令／禁用：切換鈕
+Allow trap cleaning	允許清理陷阱	允许清理陷阱		FUN_140434c60 L554123 常規命令／禁用：切換鈕
+Forbid trap rearming	禁止重設陷阱	禁止重置陷阱		FUN_140434c60 L554129 常規命令／禁用：切換鈕
+Allow trap rearming	允許重設陷阱	允许重置陷阱		FUN_140434c60 L554134 常規命令／禁用：切換鈕
+Forbid cages from sprung traps	禁用已觸發陷阱的籠子	禁用已触发陷阱的笼子		FUN_140434c60 L554140 常規命令／禁用：切換鈕
+Claim cages from sprung traps	認領已觸發陷阱的籠子	认领已触发陷阱的笼子		FUN_140434c60 L554145 常規命令／禁用：切換鈕
+Forbid toppled building items	禁用被推倒建築的物品	禁用被推倒建筑的物品		FUN_140434c60 L554151 常規命令／禁用：切換鈕
+Claim toppled building items	認領被推倒建築的物品	认领被推倒建筑的物品		FUN_140434c60 L554156 常規命令／禁用：切換鈕
+Citizenship petitions: reject	公民身分請願：拒絕	公民身份请愿：拒绝		FUN_140434c60 L554286 常規命令／請願：切換鈕
+Citizenship petitions: accept	公民身分請願：接受	公民身份请愿：接受		FUN_140434c60 L554293 常規命令／請願：切換鈕
+Performer petitions: reject	表演者請願：拒絕	表演者请愿：拒绝		FUN_140434c60 L554298 常規命令／請願：切換鈕
+Performer petitions: accept	表演者請願：接受	表演者请愿：接受		FUN_140434c60 L554305 常規命令／請願：切換鈕
+Monster slayer petitions: reject	怪物獵人請願：拒絕	怪物猎人请愿：拒绝		FUN_140434c60 L554310 常規命令／請願：切換鈕
+Monster slayer petitions: accept	怪物獵人請願：接受	怪物猎人请愿：接受		FUN_140434c60 L554318 常規命令／請願：切換鈕
+Mercenary petitions: reject	傭兵請願：拒絕	佣兵请愿：拒绝		FUN_140434c60 L554323 常規命令／請願：切換鈕
+Mercenary petitions: accept	傭兵請願：接受	佣兵请愿：接受		FUN_140434c60 L554330 常規命令／請願：切換鈕
+Scholar petitions: reject	學者請願：拒絕	学者请愿：拒绝		FUN_140434c60 L554335 常規命令／請願：切換鈕
+Scholar petitions: accept	學者請願：接受	学者请愿：接受		FUN_140434c60 L554342 常規命令／請願：切換鈕
+Sanctuary petitions: reject	庇護請願：拒絕	庇护请愿：拒绝		FUN_140434c60 L554347 常規命令／請願：切換鈕
+Sanctuary petitions: accept	庇護請願：接受	庇护请愿：接受		FUN_140434c60 L554354 常規命令／請願：切換鈕
+Children do chores	兒童做雜務	儿童做杂务		FUN_140434c60 L554483 常規命令／雜務：左欄標題，下面列出做雜務的兒童：切換鈕
+Children don't do chores	兒童不做雜務	儿童不做杂务		FUN_140434c60 L554557 常規命令／雜務：右欄標題：切換鈕
+There are no children	目前沒有兒童	目前没有儿童		FUN_140434c60 L554852 常規命令／雜務：沒有兒童時第一行，下一行 to do your chores.：切換鈕
+to do your chores.	能幫你做雜務。	能帮你做杂务。		FUN_140434c60 L554862 常規命令／雜務：沒有兒童時第二行，單獨 addst；接上一行讀成「目前沒有兒童／能幫你做雜務。」：切換鈕
+Announce all job cancellations	通報所有工作取消	通报所有工作取消		FUN_140434c60 L555254 常規命令／雜務：切換鈕
+Announce most job cancellations	通報大部分工作取消	通报大部分工作取消		FUN_140434c60 L555257 常規命令／雜務：切換鈕
+Announce some job cancellations	通報部分工作取消	通报部分工作取消		FUN_140434c60 L555260 常規命令／雜務：切換鈕
+Announce no job cancellations	不通報工作取消	不通报工作取消		FUN_140434c60 L555263 常規命令／雜務：切換鈕
+Mining cancelled near new damp stone	發現潮濕岩石時取消附近挖掘	发现潮湿岩石时取消附近挖掘		FUN_140434c60 L555268 常規命令／雜務；同公告 damp stone located 潮濕的岩石：切換鈕
+Mining continues through new damp stone	發現潮濕岩石時繼續挖掘	发现潮湿岩石时继续挖掘		FUN_140434c60 L555271 常規命令／雜務：切換鈕
+Mining cancelled near new warm stone	發現溫熱岩石時取消附近挖掘	发现温热岩石时取消附近挖掘		FUN_140434c60 L555276 常規命令／雜務：切換鈕
+Mining continues through new warm stone	發現溫熱岩石時繼續挖掘	发现温热岩石时继续挖掘		FUN_140434c60 L555279 常規命令／雜務：切換鈕
+Only farmers harvest	只有農夫收成	只有农夫收获		FUN_140434c60 L555284 常規命令／雜務：切換鈕
+Everybody harvests	所有人都收成	所有人都收获		FUN_140434c60 L555287 常規命令／雜務：切換鈕
+Do not mix similar food in barrels	桶中不混裝同類食物	桶中不混装同类食物		FUN_140434c60 L555292 常規命令／雜務：切換鈕
+Mix similar foods in barrels	桶中混裝同類食物	桶中混装同类食物		FUN_140434c60 L555295 常規命令／雜務：切換鈕
+Drink water only from designed zones	只在指定區域喝水	只在指定区域喝水		FUN_140434c60 L555300 常規命令／雜務；designed 是遊戲原文的錯字：切換鈕
+Prefer zones for water drinking	優先在指定區域喝水	优先在指定区域喝水		FUN_140434c60 L555303 常規命令／雜務：切換鈕
+Fish only in designated zones	只在指定區域釣魚	只在指定区域钓鱼		FUN_140434c60 L555307 常規命令／雜務：切換鈕
+Prefer zones for fishing	優先在指定區域釣魚	优先在指定区域钓鱼		FUN_140434c60 L555309 常規命令／雜務：切換鈕
+Set hunter ammunition	設定獵人彈藥	设置猎人弹药		FUN_140434c60 L555374 常規命令／雜務：按鈕
+Done: 	完成：	完成：		FUN_1400df540 L137418 協議標題前綴；後面沒接標題時單獨畫出，6 格放不下「已完成：」

@@ -1,0 +1,29 @@
+en	zh-Hant	zh-Hans	align	note
+The seat of {1} is also located here.	{1}的首府也設在這裡。	{1}的首府也设在这里。		FUN_1404988b0 1404af414-1404af461 統治者介紹的最後一句：{1} 勢力名（seat 與 adv_speech_conv3 的 Not that it matters, as the seat of … 一致譯「首府」）
+My {@1} {2} lives in {3}.	我的{1}{2}住在{3}。	我的{1}{2}住在{3}。		FUN_1404988b0 1404b10d4-1404b123b My＋親屬稱謂（FUN_14075a580，只收字典裡的稱謂）＋ ＋人名（FUN_140a946e0）＋ lives in ＋據點名＋.
+If you want to find a relative, you should talk to {1}.	如果你想找親人，應該去找{1}談談。	如果你想找亲人，应该去找{1}谈谈。		FUN_1404988b0 1404b132e-1404b143b 前綴＋you should talk to＋人名（FUN_140a946e0）＋.
+If you want to offer your condolences, you should talk to {1}.	如果你想表達哀悼之意，應該去找{1}談談。	如果你想表示哀悼，应该去找{1}谈谈。		FUN_1404988b0 1404b132e-1404b143b 前綴＋you should talk to＋人名（FUN_140a946e0）＋.
+You should talk to {1}.	你應該去找{1}談談。	你应该去找{1}谈谈。		FUN_1404988b0 1404b136e-1404b143b 沒有前綴時 You＋ should talk to＋人名＋.
+If you want to find a relative, you should travel to {1}.	如果你想找親人，應該到{1}去一趟。	如果你想找亲人，应该到{1}去一趟。		FUN_1404988b0 1404b152e-1404b1637 前綴＋you should travel to＋據點名＋.
+If you want to offer your condolences, you should travel to {1}.	如果你想表達哀悼之意，應該到{1}去一趟。	如果你想表示哀悼，应该到{1}去一趟。		FUN_1404988b0 1404b152e-1404b1637 前綴＋you should travel to＋據點名＋.
+You should travel to {1}.	你應該到{1}去一趟。	你应该到{1}去一趟。		FUN_1404988b0 1404b156e-1404b1637 沒有前綴時
+Join me and we'll bring {1} back home!	加入我，我們一起把{1}帶回家！	加入我，我们一起把{1}带回家！		FUN_1404988b0 1404b1cf0-1404b1e1e {1} 人名（FUN_140a946e0）或 this poor soul（inner）
+Join me and we can shake off the yoke of {1} from the weary shoulders of the people of {2} forever!	加入我，我們就能永遠卸下{2}人民疲憊肩上那副{1}的枷鎖！	加入我，我们就能永远卸下{2}人民疲惫肩上那副{1}的枷锁！		FUN_1404988b0 1404b1ed3-1404b207a {1} 勢力名（FUN_140b92900）或 the oppressors（inner），{2} 據點名（FUN_140b93930）；寫在 from {%2} 那條前
+Join me and we can shake off the yoke of {1} from {%2} forever!	加入我，我們就能讓{2}永遠擺脫{1}的枷鎖！	加入我，我们就能让{2}永远摆脱{1}的枷锁！		FUN_1404988b0 1404b1ed3-1404b207a 沒有據點時 {2} 是 this place（inner）
+Let's call our troupe {1}!	我們的劇團就叫{1}吧！	我们的剧团就叫{1}吧！		FUN_1404988b0 1404b5b33-1404b5b9c「I've decided.  Let's call our troupe ＋名字＋!」第二句；{1} 團名（FUN_140a946e0）
+I'm in charge of {1} now.	現在{1}歸我管了。	现在{1}归我管了。		FUN_1404988b0 1404b5ff4-1404b6045「I'm in charge of ＋名字＋ now.  Make way for …!」第一句；{1} 團體名（FUN_140a946e0）
+Make way for {%1} {^2} and {3}!	給{1}{2}和{3}讓路！	给{1}{2}和{3}让路！		FUN_1404988b0 1404b604a-1404b617a 第二句：職位名（FUN_14099a3c0）＋ ＋人名＋ and ＋人名＋!；{^2} 只收大寫開頭的名字，寫在 Make way for {1} and {2}! 前
+Your room is {1}.	你的房間在{1}。	你的房间在{1}。		FUN_1404988b0 1404b8b71-1404b8d4c 酒館老闆：房間位置（建築物件 +8 的字串，內容未知）；查不到時是 somewhere（整句另寫）
+I'd like the {%1}.	我要{1}。	我要{1}。		FUN_1404988b0 1404b806a-1404b8136 玩家點酒：{1} 酒名（FUN_140a82c10）
+We rent out a room for {#1} a night.	我們有一間房出租，一晚 {1}。	我们有一间房出租，一晚 {1}。		FUN_1404988b0 1404b7b4e-1404b7bd0 酒館老闆：{1} 價錢（FUN_14052c130 整數）
+We rent out rooms for {#1} a night.	我們有房間出租，一晚 {1}。	我们有房间出租，一晚 {1}。		FUN_1404988b0 1404b7b4e-1404b7bd0 同上，複數
+All drinks cost {#1} for a mug.	酒一律一杯 {1}。	酒一律一杯 {1}。		FUN_1404988b0 1404b783e-1404b7875 接在 We have … 酒單後：{1} 價錢（FUN_14052c130 整數）
+{%1} for {#2}	{1}（一杯 {2}）	{1}（一杯 {2}）	inner	FUN_1404988b0 1404b7734-1404b779f We have 酒單的一項：酒名（FUN_140a82c10）＋ for ＋價錢；只給佔位用
+{%1} for free	{1}（免費）	{1}（免费）	inner	FUN_1404988b0 1404b7759-1404b77b6 酒單的一項：價錢 0 時 for free；只給佔位用
+Would you agree to become someone of {1}, taking over my duties and responsibilities?	你願意接下我在{1}的位子，承擔我的職責與重擔嗎？	你愿意接下我在{1}的位子，承担我的职责和重担吗？		FUN_1404988b0 1404b9931-1404b9b14 沒有職位時 someone＋ of ＋勢力名；寫在 {%1} of {2} 那條前
+Would you agree to become captain of the guard of {1}, taking over my duties and responsibilities?	你願意成為{1}的衛隊長，接下我的職責與重擔嗎？	你愿意成为{1}的卫队长，接下我的职责和重担吗？		FUN_1404988b0 1404b9931-1404b9b14 職位名含 of，要排在 {%1} of {2} 那條前（否則 {%1} 只取到前半）
+Would you agree to become master of beasts of {1}, taking over my duties and responsibilities?	你願意成為{1}的馴獸總管，接下我的職責與重擔嗎？	你愿意成为{1}的驯兽总管，接下我的职责和重担吗？		FUN_1404988b0 1404b9931-1404b9b14 職位名含 of，要排在 {%1} of {2} 那條前（否則 {%1} 只取到前半）；職位名；術語例外：Master
+Would you agree to become keeper of the seal of {1}, taking over my duties and responsibilities?	你願意成為{1}的掌璽大臣，接下我的職責與重擔嗎？	你愿意成为{1}的掌玺大臣，接下我的职责和重担吗？		FUN_1404988b0 1404b9931-1404b9b14 職位名含 of，要排在 {%1} of {2} 那條前（否則 {%1} 只取到前半）
+Would you agree to become {%1} of {2}, taking over my duties and responsibilities?	你願意成為{2}的{1}，接下我的職責與重擔嗎？	你愿意成为{2}的{1}，接下我的职责和重担吗？		FUN_1404988b0 1404b9931-1404b9b14 繼任邀請：{1} 職位名（FUN_14099a3c0），{2} 勢力名（FUN_140b92900）或 FUN_1409bdfb0 接上的所屬
+Would you please adopt {1}?	你願意收養{1}嗎？	你愿意收养{1}吗？		FUN_1404988b0 1404b9c0a-1404b9cc3 {1} 孩子的名字（FUN_140a946e0）或 this poor nameless child（inner）
+This must be the will of {1}.	這一定是{1}的旨意。	这一定是{1}的旨意。		FUN_1404988b0 1404ba5b5-1404ba61d 答應收養的第三句：{1} 神名（FUN_140a946e0）

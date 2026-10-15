@@ -1,0 +1,2 @@
+en	zh-Hant	zh-Hans	align	note
+{1} rules {^2}.	{1}統治著{2}。	{1}统治着{2}。		FUN_1404988b0 1404aeb6e 問勢力：{1} 勢力名（FUN_140b92900，首字大寫）、{2} 據點（FUN_140b93930）；只有 rules 一個錨點字，放 zz 讓既有句型先比；{2} 限名字（{^n}）：通用的 {2} 會切開性格句「…observes appropriate rules of decorum…」

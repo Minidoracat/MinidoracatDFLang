@@ -1,0 +1,12 @@
+en	zh-Hant	zh-Hans	align	note
+My name is {^1}.	我叫{1}。	我叫{1}。		FUN_14067d390 L900248/L900320 問候：TEXT_SET GREET「Greetings.  My name is [SPEAKER:TRANS_NAME].」第二句；{^1} 只收名字
+Hello, {@1}.	你好，{1}。	你好，{1}。		FUN_14067d390 L901922 回應不同種族的問候：TEXT_SET GREET_REPLY_DIFF_LANGUAGE 第一句；{@1} 對方種族名（dwarf、human…，只收字典裡的生物名）；後接 I am＋名字.
+Ah, hello.  I'm {1}.  {2}.  Does that mean something?	啊，你好。我是{1}。{2}，這名字有什麼含意嗎？	啊，你好。我是{1}。{2}，这名字有什么含义吗？		FUN_14067d390 L901884-901915 回應同族問候＋對方名字少見：GREET_REPLY＋GREET_REPLY_UNUSUAL_FIRST；{1} 說話者名字，{2} 對方的名（first name）。只有名字的那一句單獨翻不出來，所以整則寫（後面再接別的句子時照英文）
+Ah, hello.  I'm {1}.  {2}.  I can't say I've heard that before.	啊，你好。我是{1}。{2}？這名字我還真沒聽過。	啊，你好。我是{1}。{2}？这名字我还真没听过。		FUN_14067d390 L901884-901915 GREET_REPLY＋GREET_REPLY_UNUSUAL_FIRST；同上
+Ah, hello.  I'm {1}.  {2}...  your parents must have been interesting!	啊，你好。我是{1}。{2}……你爸媽想必很有個性！	啊，你好。我是{1}。{2}……你爸妈想必很有个性！		FUN_14067d390 L901884-901915 GREET_REPLY＋GREET_REPLY_UNUSUAL_FIRST；同上
+You know, you don't meet many people with the name {1}.	說真的，叫{1}這名字的人可不多見。	说真的，叫{1}这名字的人可不多见。		FUN_14067d390 L901913 GREET_REPLY_UNUSUAL_FIRST：{1} 對方的名（first name）
+Praise be to {1}.	讚美{1}。	赞美{1}。		FUN_14067d390 L901179 信徒問候：TEXT_SET GREET_WORSHIP；{1} 說話者信仰的神名
+Praise {@1}.	讚美{1}。	赞美{1}。		FUN_14067d390 L901179 信徒問候：GREET_WORSHIP；{@1} 神祇的領域（fire、death…，只收字典裡的詞）
+Life is, in a word, {1}.	一言以蔽之，人生就是{1}。	一言以蔽之，人生就是{1}。		FUN_14067d390 L901179 信徒問候：GREET_WORSHIP；{1} 神祇的領域
+This servant of {1} greets you.	{1}的僕人向你致意。	{1}的仆人向你致意。		FUN_14067d390 L901179 信徒問候：GREET_WORSHIP；{1} 神名或神祇的領域
+I heard that a poem was recited at {1}.	我聽說有人在{1}朗誦了一首詩。	我听说有人在{1}朗诵了一首诗。		FUN_140680970 L902248＋FUN_14066ba00 L890466 傳聞：表演的詩沒有名稱；整句寫，免得 speech_03 的 I heard that {%1} 把 a poem 拆成《詩歌》

@@ -1,0 +1,5 @@
+en	zh-Hant	zh-Hans	align	note
+I'm {1}.	我是{1}。	我是{1}。		FUN_14067d390 L901884 回應同族問候：TEXT_SET GREET_REPLY「Ah, hello.  I'm [SPEAKER:TRANS_NAME].」第二句；{1} 說話者名字（I'm 開頭大寫，{^1} 用不上），放 zz 讓其他 I'm … 句子先比
+So, {1}...	這麼說，{1}……	这么说，{1}……		FUN_14067d390 L901913 GREET_REPLY_UNUSUAL_FIRST「So, X...   X, was it?」第一句；{1} 對方的名
+{1}, was it?	{1}，是吧？	{1}，是吧？		FUN_14067d390 L901913 GREET_REPLY_UNUSUAL_FIRST「So, X...   X, was it?」第二句；{1} 對方的名；錨點 , was it?
+{1} has {^2}.	{2}在{1}那裡。	{2}在{1}那里。		FUN_140680970 L903626-903642 傳聞 case 0x1c 神器在某人手上：{1} 人物名，{2} 神器名（I have {1}. 的另一分支，對應 {1} does not possess {2}.）；{^2} 只收每個字大寫的名字（含 of、the 的神器名照英文），寫成 {2} 會吃掉性格句 He has a calm demeanor. 這類句子

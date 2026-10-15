@@ -1,0 +1,23 @@
+en	zh-Hant	zh-Hans	align	note
+Shrine, {1} (next at {#2}☼)	神龕，{1}（升級需 {2}☼）	神龛，{1}（升级需 {2}☼）		FUN_1403b13d0 L484296 場所標題下：等級、價值（FUN_14077f920，可帶 ~）、升級門檻
+Temple, {1} (next at {#2}☼)	神殿，{1}（升級需 {2}☼）	神殿，{1}（升级需 {2}☼）		FUN_1403b13d0 L484310 同上
+Temple Complex, {1}	神殿建築群，{1}	神殿建筑群，{1}		FUN_1403b13d0 L484320 同上，最高等級沒有升級門檻
+Meeting place, {1} (next at {#2}☼)	集會廳，{1}（升級需 {2}☼）	集会厅，{1}（升级需 {2}☼）		FUN_1403b13d0 L485629 公會場所等級；集會廳與 DFHack pedestal 的 Meeting Hall 一致
+Guildhall, {1} (next at {#2}☼)	公會大廳，{1}（升級需 {2}☼）	公会大厅，{1}（升级需 {2}☼）		FUN_1403b13d0 L485643 同上
+Grand Guildhall, {1}	宏偉公會大廳，{1}	宏伟公会大厅，{1}		FUN_1403b13d0 L485653 同上，最高等級
+Dedicated to {1}	供奉{1}	供奉{1}		FUN_1403b13d0 L483880 神殿標題第二行：供奉的宗教名（世界生成名稱）
+{@1} meeting place	{1}集會廳	{1}集会厅		FUN_1403b13d0 L483942 公會場所標題：職業名（FUN_14132e0c0 複數、首字大寫；字典有複數時用這條）＋等級
+{@1}s meeting place	{1}集會廳	{1}集会厅		FUN_1403b13d0 L483942 同上：職業名＋s 的複數（Carpenters），{1} 抓單數職業名
+{@1}s guildhall	{1}公會大廳	{1}公会大厅		FUN_1403b13d0 L483945 同上（{@1} guildhall 已在 dfhack_gui2.tsv）
+{@1} grand guildhall	{1}宏偉公會大廳	{1}宏伟公会大厅		FUN_1403b13d0 L483948 同上
+{@1}s grand guildhall	{1}宏偉公會大廳	{1}宏伟公会大厅		FUN_1403b13d0 L483948 同上，複數
+, {#1} worker	，工作者 {1}	，从业者 {1}		FUN_1403b13d0 L483964 接在 No established guild 後（另畫）：人數
+, {#1} workers	，工作者 {1}	，从业者 {1}		FUN_1403b13d0 L483964 同上，複數
+, {#1} member	，成員 {1}	，成员 {1}		FUN_1403b13d0 L483985 接在公會名後（另畫）：成員數
+, {#1} members	，成員 {1}	，成员 {1}		FUN_1403b13d0 L483985 同上，複數
+Priest: {#1} worshipper needed	祭司：需要 {1} 名信徒	祭司：需要 {1} 名信徒		FUN_1403b13d0 L484461 神殿：承認祭司團還差的信徒數
+Priest: {#1} worshippers needed	祭司：需要 {1} 名信徒	祭司：需要 {1} 名信徒		FUN_1403b13d0 L484461 同上，複數
+High priest: {#1} worshipper needed	大祭司：需要 {1} 名信徒	大祭司：需要 {1} 名信徒		FUN_1403b13d0 L484463 神殿建築群：承認大祭司還差的信徒數
+High priest: {#1} worshippers needed	大祭司：需要 {1} 名信徒	大祭司：需要 {1} 名信徒		FUN_1403b13d0 L484463 同上，複數
+You need a {@1}.	需要一位{1}。	需要一位{1}。		FUN_1403b13d0 L484054 醫院：缺負責醫療的職位（首席醫師），框窄時的短句
+You need to assign a {@1} to utilize a hospital.	需要任命一位{1}，醫院才能運作。	需要任命一位{1}，医院才能运转。		FUN_1403b13d0 L484061 醫院：同上，框寬時的長句；任命與 Hospitals 說明一致

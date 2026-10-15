@@ -1,0 +1,8 @@
+en	zh-Hant	zh-Hans	align	note
+Tell me about {%1}.	跟我說說{1}的事。	跟我说说{1}的事。		FUN_1404988b0 1404b9323-1404b955f 玩家的話：Tell me about＋建築（this keep 等 inner）＋.；adv_speech_conv2 的 1404a6a79 也用同一個開頭（the deaths 等話題），撞到時由主代理合併
+{1} lives in {2}.	{1}住在{2}。	{1}住在{2}。		FUN_1404988b0 1404b1132-1404b123b 沒有親屬稱謂時：人名＋ lives in ＋據點名＋.；錨點 lives in，放 zz 讓 adv_journal2 的 This creature lives in … 與 My {@1} {2} lives in {3}. 先比
+Make way for {1} and {2}!	給{1}和{2}讓路！	给{1}和{2}让路！		FUN_1404988b0 1404b604a-1404b617a 職位名查不到時的退路；錨點 Make way for … and …!，放 zz
+Make way for {1}!	給{1}讓路！	给{1}让路！		FUN_1404988b0 1404b612e-1404b617a 沒有職位與第二人時只有人名；錨點 Make way for，放 zz
+One {%1}!	來一杯{1}！	来一杯{1}！		FUN_1404988b0 1404b7e86-1404b7f51 玩家點酒「Tavern keeper!  One ＋酒名＋!」第二句；只有 One 錨點，{%1} 要翻得出來，放 zz
+We have {%1} and {%2}.	我們有{1}和{2}。	我们有{1}和{2}。		FUN_1404988b0 1404b759d-1404b782e 酒館酒單：We have＋清單（, 與 and 接，lists.tsv 接成「、」）＋.；放 zz 讓別處的 We have … 句型先比；寫在 We have {%1}. 前
+We have {%1}.	我們有{1}。	我们有{1}。		FUN_1404988b0 1404b759d-1404b782e 酒單只有一項；錨點 We have，{%1} 要翻得出來，放 zz

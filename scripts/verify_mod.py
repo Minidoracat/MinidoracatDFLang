@@ -40,7 +40,7 @@ HEADER = ["en", "zh-Hant", "zh-Hans", "align", "note"]
 SCREEN_HEADER = ["en", "zh-Hant", "zh-Hans", "align", "row", "note"]
 NAME_HEADER = ["word", "pos", "en", "zh-Hant", "zh-Hans", "note"]
 HOOKS = ("addst", "addst_flag", "top_addst", "addcoloredst", "mtb_set_width", "add_anchored_tile", "wrap_text", "wrap_lines",
-         "ctb_add_string", "translate_name", "string_resize", "adv_appearance", "adv_personality")
+         "ctb_add_string", "translate_name", "string_resize", "adv_appearance", "adv_personality", "adv_log", "adv_talk_log")
 PACKAGE_SUFFIXES = {".txt", ".tsv", ".lua", ".dll", ".otf", ".md", ".png"}
 # {1}～{9}；{#1} 只收數字、{@1} 只收字典裡的字詞、{%1} 只收翻得出來的片段、{~1} 同 {1} 但譯文可省略、{^1} 只收大寫開頭的名字；
 # 譯文可寫 {1+時}（佔位譯文沒有時間、原因助詞結尾時補字）

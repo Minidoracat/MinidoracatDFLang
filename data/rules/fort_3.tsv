@@ -1,0 +1,8 @@
+en	zh-Hant	zh-Hans	align	note
+Done: {%1}	完成：{1}	完成：{1}		FUN_1400df540 L137418 協議標題：已完成的協議在標題前加 Done: ；模板 6 格放不下「已完成：」
+Insurrection with {1}	與{1}起義	与{1}起义		FUN_1400df540 L137485 協議標題（Overthrow Agreement）：後接對方名字
+Adventure with {1}	與{1}冒險	与{1}冒险		FUN_1400df540 L137488 協議標題（Adventuring Agreement）
+Guided by {1}	由{1}嚮導	由{1}向导		FUN_1400df540 L137491 協議標題（Guide Agreement）
+Aid rescue with {1}	與{1}協助救援	与{1}协助救援		FUN_1400df540 L137499 協議標題（Aid Rescue Agreement）
+The bound service of{1}	{1}的契約勞役	{1}的契约劳役		FUN_1400df540 L137502 協議標題（Bound Servitude）；原文 of 後面沒有空白，直接接名字
+Entertain people with {1}	與{1}一同娛樂大眾	与{1}一同娱乐大众		FUN_1400df540 L137505 協議標題（Entertainment Agreement）

@@ -1,0 +1,11 @@
+en	zh-Hant	zh-Hans	align	note
+The temple petition by {1} has been ignored.	{1}提出的神殿請願遭到忽視。	{1}提出的神殿请愿被忽视了。		FUN_140e365c0 140e3684e 公告：{1} 是勢力名（FUN_140b92900）
+The guildhall petition by {1} has been ignored.	{1}提出的公會大廳請願遭到忽視。	{1}提出的公会大厅请愿被忽视了。		FUN_140e365c0 140e36a41 公告：{1} 是勢力名
+The citizenship petition of {1} has been ignored.	{1}的公民身分請願遭到忽視。	{1}的公民身份请愿被忽视了。		FUN_140e365c0 140e36c29 公告：{1} 是人物名（FUN_141331500）；照常規命令「公民身分請願」
+The residency petition of {1} has been ignored.	{1}的居留請願遭到忽視。	{1}的居留请愿被忽视了。		FUN_140e365c0 140e3716c／140e3722a 公告：{1} 是人物名；照「居留協議」
+The guildhall agreement with {1} has been satisfied.	與{1}的公會大廳協議已履行。	与{1}的公会大厅协议已履行。		FUN_140e365c0 140e37772 公告
+The priesthood of {1} is ready to be recognized (from the temple's location menu.)  This will satisfy the agreement.	現在可以承認{1}的祭司團了（在神殿的場所選單操作）。這樣就能履行協議。	现在可以承认{1}的祭司团了（在神殿的场所菜单操作）。这样就能履行协议。		FUN_140e365c0 140e37880 公告：{1} 是宗教名；recognize 照場所介面「承認祭司團」
+The high priest of {1} is ready to be recognized (from the temple's location menu.)  This will satisfy the agreement.	現在可以承認{1}的大祭司了（在神殿的場所選單操作）。這樣就能履行協議。	现在可以承认{1}的大祭司了（在神殿的场所菜单操作）。这样就能履行协议。		FUN_140e365c0 140e378c4 公告：{1} 是宗教名
+The agreement to establish a temple for {1} has been abandoned.	為{1}興建神殿的協議已作廢。	为{1}兴建神殿的协议已作废。		FUN_140e365c0 140e37b5b 公告；照 speech_04「…的協議作廢了」
+The agreement to establish a guildhall for {1} has been abandoned.	為{1}興建公會大廳的協議已作廢。	为{1}兴建公会大厅的协议已作废。		FUN_140e365c0 140e37d51 公告
+{1}, a {%2} guild, has been established.	{1}已成立，是一個{2}公會。	{1}已成立，是一个{2}公会。		FUN_140e365c0 140e3963f 公告：{1} 公會名（首字大寫），{2} 小寫職業名（FUN_14132e0c0）

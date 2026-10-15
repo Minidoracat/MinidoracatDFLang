@@ -1,0 +1,3 @@
+en	zh-Hant	zh-Hans	align	note
+Ask for {1} to made performers for {2}	請求讓{1}擔任{2}的表演者	请求让{1}担任{2}的表演者		FUN_140697740 L924290 case 0xd3 選項（wrap_text 0x4e 寬）：職業複數 performers 寫死在句型，免得套到 ann_01 的「表演者們」；術語 Performer＝表演者；遊戲原文 to made（少 be）
+ work as performers for {1}	 擔任{1}的表演者	 担任{1}的表演者		FUN_140697740 L924495／L924556 case 0xd6、0xd7：同上，performers 寫死；開頭空白是原文（遊戲用指定寫入「 work as 」，前面的 Grant／Refuse＋名字被蓋掉）

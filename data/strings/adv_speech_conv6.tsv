@@ -1,0 +1,82 @@
+en	zh-Hant	zh-Hans	align	note
+I am escaping from danger which threatened my former home.	我原本的家鄉遭到危險威脅，我正在逃難。	我原来的家乡遭到危险威胁，我正在逃难。		FUN_1404988b0 1404ca7a3-1404ca9ed 交談：問對方要去哪裡／在做什麼的回答（任務、巡邏、日常外出）
+I'm on an important mission.	我身負重要任務。	我身负重要任务。		FUN_1404988b0 1404ca7a3-1404ca9ed 交談：問對方要去哪裡／在做什麼的回答（任務、巡邏、日常外出）
+I'm returning from my patrol.	我剛巡邏回來。	我刚巡逻回来。		FUN_1404988b0 1404ca7a3-1404ca9ed 交談：問對方要去哪裡／在做什麼的回答（任務、巡邏、日常外出）
+I'm just out for a stroll.	我只是出來散散步。	我只是出来散散步。		FUN_1404988b0 1404ca7a3-1404ca9ed 交談：問對方要去哪裡／在做什麼的回答（任務、巡邏、日常外出）
+I was just out for some water.	我剛剛只是出去打水。	我刚刚只是出去打水。		FUN_1404988b0 1404ca7a3-1404ca9ed 交談：問對方要去哪裡／在做什麼的回答（任務、巡邏、日常外出）
+I was out visiting the temple.	我剛去了一趟神殿。	我刚去了一趟神殿。		FUN_1404988b0 1404ca7a3-1404ca9ed 交談：問對方要去哪裡／在做什麼的回答（任務、巡邏、日常外出）
+I was out visiting the shrine.	我剛去了一趟神龕。	我刚去了一趟神龛。		FUN_1404988b0 1404ca7a3-1404ca9ed 交談：問對方要去哪裡／在做什麼的回答（任務、巡邏、日常外出）
+I was just out at the tavern.	我剛剛只是去了一趟酒館。	我刚刚只是去了一趟酒馆。		FUN_1404988b0 1404ca7a3-1404ca9ed 交談：問對方要去哪裡／在做什麼的回答（任務、巡邏、日常外出）
+I was out visiting the library.	我剛去了一趟圖書館。	我刚去了一趟图书馆。		FUN_1404988b0 1404ca7a3-1404ca9ed 交談：問對方要去哪裡／在做什麼的回答（任務、巡邏、日常外出）
+I'm walking my patrol.	我正在巡邏。	我正在巡逻。		FUN_1404988b0 1404ca7a3-1404ca9ed 交談：問對方要去哪裡／在做什麼的回答（任務、巡邏、日常外出）
+I'm going out for some water.	我要出去打水。	我要出去打水。		FUN_1404988b0 1404ca7a3-1404ca9ed 交談：問對方要去哪裡／在做什麼的回答（任務、巡邏、日常外出）
+I'm going to visit the temple.	我要去一趟神殿。	我要去一趟神殿。		FUN_1404988b0 1404ca7a3-1404ca9ed 交談：問對方要去哪裡／在做什麼的回答（任務、巡邏、日常外出）
+I'm going to visit the shrine.	我要去一趟神龕。	我要去一趟神龛。		FUN_1404988b0 1404ca7a3-1404ca9ed 交談：問對方要去哪裡／在做什麼的回答（任務、巡邏、日常外出）
+I'm going out to the tavern.	我要去酒館。	我要去酒馆。		FUN_1404988b0 1404ca7a3-1404ca9ed 交談：問對方要去哪裡／在做什麼的回答（任務、巡邏、日常外出）
+I'm going to visit the library.	我要去一趟圖書館。	我要去一趟图书馆。		FUN_1404988b0 1404ca7a3-1404ca9ed 交談：問對方要去哪裡／在做什麼的回答（任務、巡邏、日常外出）
+I'm not planning a journey.	我沒打算出遠門。	我没打算出远门。		FUN_1404988b0 1404ca7a3-1404ca9ed 交談：問對方要去哪裡／在做什麼的回答（任務、巡邏、日常外出）
+Perhaps I'll finally make my fortune!	說不定我終於能發大財了！	说不定我终于能发大财了！		FUN_1404988b0 1404c9b07 交談：要去某地 in search of … 之後接「.   Perhaps …」（句號後三個空白，逐句查時單獨成句）
+This place is insulated from the rest of the world, at least in terms of trade.	至少在貿易上，這地方跟外界完全隔絕。	至少在贸易上，这地方跟外界完全隔绝。		FUN_1404988b0 1404cbd1d/1404cc4ec 交談：問本地貿易，沒有任何貿易往來；術語例外：world
+There's nothing organized here.	這裡沒有什麼像樣的組織。	这里没有什么像样的组织。		FUN_1404988b0 1404cc511 交談：問本地貿易，所在地沒有據點組織
+Where?	哪裡？	哪里？		FUN_1404988b0 1404cc528 交談：問本地貿易，不在任何地點
+That's me.  I'm right here.	就是我。我就在這裡。	就是我。我就在这里。		FUN_1404988b0 1404cc708 交談：玩家問的人就是對方本人
+Yes, master.  Ask and I shall obey.	是的，主人。儘管吩咐，我必遵從。	是，主人。尽管吩咐，我必遵从。		FUN_1404988b0 1404cc7dc 交談：僕從（亡靈等）回答主人；術語例外：Master
+Ask me when I've returned to my home!	等我回到家再問我吧！	等我回到家再问我吧！		FUN_1404988b0 1404cc8a2 交談：對方不在家，不能談家裡的事
+I'd rather not say.	我不太想說。	我不太想说。		FUN_1404988b0 1404ccc73 交談：拒絕回答
+Is it really you?	真的是你嗎？	真的是你吗？		FUN_1404988b0 1404cd553 交談：與久別的親人重逢
+Dear, is it really you?	親愛的，真的是你嗎？	亲爱的，真的是你吗？		FUN_1404988b0 1404cd512 交談：與久別的配偶／戀人重逢（Dear＋, is it really you?）
+An item has returned!	有件東西回來了！	有件东西回来了！		FUN_1404988b0 1404cd749 交談：神器物歸原主（查不到神器時）
+I don't remember what I believe...	我不記得自己信仰什麼了……	我不记得自己信仰什么了……		FUN_1404988b0 1404cd902 交談：問信仰，說話者記不得
+Today only!	只限今天！	仅限今天！		FUN_1404988b0 1404ce307-1404ce335 交談：市場小販叫賣句尾，前面是「…!」再接兩個空白，逐句查時單獨成句
+Limited supply!	數量有限！	数量有限！		FUN_1404988b0 1404ce307-1404ce335 交談：市場小販叫賣句尾，前面是「…!」再接兩個空白，逐句查時單獨成句
+Best price in town!	全城最低價！	全城最低价！		FUN_1404988b0 1404ce307-1404ce335 交談：市場小販叫賣句尾，前面是「…!」再接兩個空白，逐句查時單獨成句
+Mother!	媽！	妈！		FUN_1404988b0 1404cd16a-1404cd40b 交談：與久別的親人重逢，親屬稱謂（首字大寫）＋! 或 , is it really you?；稱呼用口語（異父母手足直接叫兄弟姊妹）
+Mother, is it really you?	媽，真的是你嗎？	妈，真的是你吗？		FUN_1404988b0 1404cd16a-1404cd40b 交談：與久別的親人重逢，親屬稱謂（首字大寫）＋! 或 , is it really you?；稱呼用口語（異父母手足直接叫兄弟姊妹）
+Father!	爸！	爸！		FUN_1404988b0 1404cd16a-1404cd40b 交談：與久別的親人重逢，親屬稱謂（首字大寫）＋! 或 , is it really you?；稱呼用口語（異父母手足直接叫兄弟姊妹）
+Father, is it really you?	爸，真的是你嗎？	爸，真的是你吗？		FUN_1404988b0 1404cd16a-1404cd40b 交談：與久別的親人重逢，親屬稱謂（首字大寫）＋! 或 , is it really you?；稱呼用口語（異父母手足直接叫兄弟姊妹）
+Parent!	爸媽！	爸妈！		FUN_1404988b0 1404cd16a-1404cd40b 交談：與久別的親人重逢，親屬稱謂（首字大寫）＋! 或 , is it really you?；稱呼用口語（異父母手足直接叫兄弟姊妹）
+Parent, is it really you?	爸媽，真的是你嗎？	爸妈，真的是你吗？		FUN_1404988b0 1404cd16a-1404cd40b 交談：與久別的親人重逢，親屬稱謂（首字大寫）＋! 或 , is it really you?；稱呼用口語（異父母手足直接叫兄弟姊妹）
+Son!	兒子！	儿子！		FUN_1404988b0 1404cd16a-1404cd40b 交談：與久別的親人重逢，親屬稱謂（首字大寫）＋! 或 , is it really you?；稱呼用口語（異父母手足直接叫兄弟姊妹）
+Son, is it really you?	兒子，真的是你嗎？	儿子，真的是你吗？		FUN_1404988b0 1404cd16a-1404cd40b 交談：與久別的親人重逢，親屬稱謂（首字大寫）＋! 或 , is it really you?；稱呼用口語（異父母手足直接叫兄弟姊妹）
+Daughter!	女兒！	女儿！		FUN_1404988b0 1404cd16a-1404cd40b 交談：與久別的親人重逢，親屬稱謂（首字大寫）＋! 或 , is it really you?；稱呼用口語（異父母手足直接叫兄弟姊妹）
+Daughter, is it really you?	女兒，真的是你嗎？	女儿，真的是你吗？		FUN_1404988b0 1404cd16a-1404cd40b 交談：與久別的親人重逢，親屬稱謂（首字大寫）＋! 或 , is it really you?；稱呼用口語（異父母手足直接叫兄弟姊妹）
+Child!	孩子！	孩子！		FUN_1404988b0 1404cd16a-1404cd40b 交談：與久別的親人重逢，親屬稱謂（首字大寫）＋! 或 , is it really you?；稱呼用口語（異父母手足直接叫兄弟姊妹）
+Child, is it really you?	孩子，真的是你嗎？	孩子，真的是你吗？		FUN_1404988b0 1404cd16a-1404cd40b 交談：與久別的親人重逢，親屬稱謂（首字大寫）＋! 或 , is it really you?；稱呼用口語（異父母手足直接叫兄弟姊妹）
+Grandmother!	奶奶！	奶奶！		FUN_1404988b0 1404cd16a-1404cd40b 交談：與久別的親人重逢，親屬稱謂（首字大寫）＋! 或 , is it really you?；稱呼用口語（異父母手足直接叫兄弟姊妹）
+Grandmother, is it really you?	奶奶，真的是你嗎？	奶奶，真的是你吗？		FUN_1404988b0 1404cd16a-1404cd40b 交談：與久別的親人重逢，親屬稱謂（首字大寫）＋! 或 , is it really you?；稱呼用口語（異父母手足直接叫兄弟姊妹）
+Grandfather!	爺爺！	爷爷！		FUN_1404988b0 1404cd16a-1404cd40b 交談：與久別的親人重逢，親屬稱謂（首字大寫）＋! 或 , is it really you?；稱呼用口語（異父母手足直接叫兄弟姊妹）
+Grandfather, is it really you?	爺爺，真的是你嗎？	爷爷，真的是你吗？		FUN_1404988b0 1404cd16a-1404cd40b 交談：與久別的親人重逢，親屬稱謂（首字大寫）＋! 或 , is it really you?；稱呼用口語（異父母手足直接叫兄弟姊妹）
+Grandparent!	爺爺奶奶！	爷爷奶奶！		FUN_1404988b0 1404cd16a-1404cd40b 交談：與久別的親人重逢，親屬稱謂（首字大寫）＋! 或 , is it really you?；稱呼用口語（異父母手足直接叫兄弟姊妹）
+Grandparent, is it really you?	爺爺奶奶，真的是你嗎？	爷爷奶奶，真的是你吗？		FUN_1404988b0 1404cd16a-1404cd40b 交談：與久別的親人重逢，親屬稱謂（首字大寫）＋! 或 , is it really you?；稱呼用口語（異父母手足直接叫兄弟姊妹）
+Grandchild!	孫兒！	孙儿！		FUN_1404988b0 1404cd16a-1404cd40b 交談：與久別的親人重逢，親屬稱謂（首字大寫）＋! 或 , is it really you?；稱呼用口語（異父母手足直接叫兄弟姊妹）
+Grandchild, is it really you?	孫兒，真的是你嗎？	孙儿，真的是你吗？		FUN_1404988b0 1404cd16a-1404cd40b 交談：與久別的親人重逢，親屬稱謂（首字大寫）＋! 或 , is it really you?；稱呼用口語（異父母手足直接叫兄弟姊妹）
+Brother!	兄弟！	兄弟！		FUN_1404988b0 1404cd16a-1404cd40b 交談：與久別的親人重逢，親屬稱謂（首字大寫）＋! 或 , is it really you?；稱呼用口語（異父母手足直接叫兄弟姊妹）
+Brother, is it really you?	兄弟，真的是你嗎？	兄弟，真的是你吗？		FUN_1404988b0 1404cd16a-1404cd40b 交談：與久別的親人重逢，親屬稱謂（首字大寫）＋! 或 , is it really you?；稱呼用口語（異父母手足直接叫兄弟姊妹）
+Sister!	姊妹！	姐妹！		FUN_1404988b0 1404cd16a-1404cd40b 交談：與久別的親人重逢，親屬稱謂（首字大寫）＋! 或 , is it really you?；稱呼用口語（異父母手足直接叫兄弟姊妹）
+Sister, is it really you?	姊妹，真的是你嗎？	姐妹，真的是你吗？		FUN_1404988b0 1404cd16a-1404cd40b 交談：與久別的親人重逢，親屬稱謂（首字大寫）＋! 或 , is it really you?；稱呼用口語（異父母手足直接叫兄弟姊妹）
+Sibling!	兄弟姊妹！	兄弟姐妹！		FUN_1404988b0 1404cd16a-1404cd40b 交談：與久別的親人重逢，親屬稱謂（首字大寫）＋! 或 , is it really you?；稱呼用口語（異父母手足直接叫兄弟姊妹）
+Sibling, is it really you?	兄弟姊妹，真的是你嗎？	兄弟姐妹，真的是你吗？		FUN_1404988b0 1404cd16a-1404cd40b 交談：與久別的親人重逢，親屬稱謂（首字大寫）＋! 或 , is it really you?；稱呼用口語（異父母手足直接叫兄弟姊妹）
+Half-brother!	兄弟！	兄弟！		FUN_1404988b0 1404cd16a-1404cd40b 交談：與久別的親人重逢，親屬稱謂（首字大寫）＋! 或 , is it really you?；稱呼用口語（異父母手足直接叫兄弟姊妹）
+Half-brother, is it really you?	兄弟，真的是你嗎？	兄弟，真的是你吗？		FUN_1404988b0 1404cd16a-1404cd40b 交談：與久別的親人重逢，親屬稱謂（首字大寫）＋! 或 , is it really you?；稱呼用口語（異父母手足直接叫兄弟姊妹）
+Half-sister!	姊妹！	姐妹！		FUN_1404988b0 1404cd16a-1404cd40b 交談：與久別的親人重逢，親屬稱謂（首字大寫）＋! 或 , is it really you?；稱呼用口語（異父母手足直接叫兄弟姊妹）
+Half-sister, is it really you?	姊妹，真的是你嗎？	姐妹，真的是你吗？		FUN_1404988b0 1404cd16a-1404cd40b 交談：與久別的親人重逢，親屬稱謂（首字大寫）＋! 或 , is it really you?；稱呼用口語（異父母手足直接叫兄弟姊妹）
+Half-sibling!	兄弟姊妹！	兄弟姐妹！		FUN_1404988b0 1404cd16a-1404cd40b 交談：與久別的親人重逢，親屬稱謂（首字大寫）＋! 或 , is it really you?；稱呼用口語（異父母手足直接叫兄弟姊妹）
+Half-sibling, is it really you?	兄弟姊妹，真的是你嗎？	兄弟姐妹，真的是你吗？		FUN_1404988b0 1404cd16a-1404cd40b 交談：與久別的親人重逢，親屬稱謂（首字大寫）＋! 或 , is it really you?；稱呼用口語（異父母手足直接叫兄弟姊妹）
+Aunt!	阿姨！	阿姨！		FUN_1404988b0 1404cd16a-1404cd40b 交談：與久別的親人重逢，親屬稱謂（首字大寫）＋! 或 , is it really you?；稱呼用口語（異父母手足直接叫兄弟姊妹）
+Aunt, is it really you?	阿姨，真的是你嗎？	阿姨，真的是你吗？		FUN_1404988b0 1404cd16a-1404cd40b 交談：與久別的親人重逢，親屬稱謂（首字大寫）＋! 或 , is it really you?；稱呼用口語（異父母手足直接叫兄弟姊妹）
+Uncle!	叔叔！	叔叔！		FUN_1404988b0 1404cd16a-1404cd40b 交談：與久別的親人重逢，親屬稱謂（首字大寫）＋! 或 , is it really you?；稱呼用口語（異父母手足直接叫兄弟姊妹）
+Uncle, is it really you?	叔叔，真的是你嗎？	叔叔，真的是你吗？		FUN_1404988b0 1404cd16a-1404cd40b 交談：與久別的親人重逢，親屬稱謂（首字大寫）＋! 或 , is it really you?；稱呼用口語（異父母手足直接叫兄弟姊妹）
+Niece!	姪女！	侄女！		FUN_1404988b0 1404cd16a-1404cd40b 交談：與久別的親人重逢，親屬稱謂（首字大寫）＋! 或 , is it really you?；稱呼用口語（異父母手足直接叫兄弟姊妹）
+Niece, is it really you?	姪女，真的是你嗎？	侄女，真的是你吗？		FUN_1404988b0 1404cd16a-1404cd40b 交談：與久別的親人重逢，親屬稱謂（首字大寫）＋! 或 , is it really you?；稱呼用口語（異父母手足直接叫兄弟姊妹）
+Nephew!	姪子！	侄子！		FUN_1404988b0 1404cd16a-1404cd40b 交談：與久別的親人重逢，親屬稱謂（首字大寫）＋! 或 , is it really you?；稱呼用口語（異父母手足直接叫兄弟姊妹）
+Nephew, is it really you?	姪子，真的是你嗎？	侄子，真的是你吗？		FUN_1404988b0 1404cd16a-1404cd40b 交談：與久別的親人重逢，親屬稱謂（首字大寫）＋! 或 , is it really you?；稱呼用口語（異父母手足直接叫兄弟姊妹）
+Cousin!	表親！	表亲！		FUN_1404988b0 1404cd16a-1404cd40b 交談：與久別的親人重逢，親屬稱謂（首字大寫）＋! 或 , is it really you?；稱呼用口語（異父母手足直接叫兄弟姊妹）
+Cousin, is it really you?	表親，真的是你嗎？	表亲，真的是你吗？		FUN_1404988b0 1404cd16a-1404cd40b 交談：與久別的親人重逢，親屬稱謂（首字大寫）＋! 或 , is it really you?；稱呼用口語（異父母手足直接叫兄弟姊妹）
+brother	兄弟	兄弟	inner	FUN_1404988b0 1404cd273-1404cd2db 親屬稱謂（交談重逢句用；只給佔位用，比照既有 half-sibling 譯法）
+sister	姊妹	姐妹	inner	FUN_1404988b0 1404cd273-1404cd2db 親屬稱謂（交談重逢句用；只給佔位用，比照既有 half-sibling 譯法）
+half-brother	同父異母或同母異父的兄弟	同父异母或同母异父的兄弟	inner	FUN_1404988b0 1404cd273-1404cd2db 親屬稱謂（交談重逢句用；只給佔位用，比照既有 half-sibling 譯法）
+half-sister	同父異母或同母異父的姊妹	同父异母或同母异父的姐妹	inner	FUN_1404988b0 1404cd273-1404cd2db 親屬稱謂（交談重逢句用；只給佔位用，比照既有 half-sibling 譯法）
+That's me.	就是我。	就是我。		FUN_1404988b0 1404cc708 交談：That's me.  I'm right here. 前半；帶講者時逐句查會單獨成句
+I'm right here.	我就在這裡。	我就在这里。		FUN_1404988b0 1404cc708 交談：同上後半
+Yes, master.	是的，主人。	是，主人。		FUN_1404988b0 1404cc7dc 交談：Yes, master.  Ask and I shall obey. 前半；帶講者時逐句查會單獨成句；術語例外：Master
+Ask and I shall obey.	儘管吩咐，我必遵從。	尽管吩咐，我必遵从。		FUN_1404988b0 1404cc7dc 交談：同上後半

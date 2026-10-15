@@ -1,0 +1,72 @@
+en	zh-Hant	zh-Hans	align	note
+general ill feelings over past historical events	對過去歷史事件的積怨	对过去历史事件的积怨	inner	FUN_1404988b0 1404aba0e–1404abc84 紛爭起因：接在 Conv2 的 The trouble started because of {%1}. 裡（歷史事件種類 switch 0x11；查不到事件時用 general ill feelings…）；只給佔位用；術語例外：general
+a previous war	先前的一場戰爭	之前的一场战争	inner	FUN_1404988b0 1404aba0e–1404abc84 紛爭起因：接在 Conv2 的 The trouble started because of {%1}. 裡（歷史事件種類 switch 0x11；查不到事件時用 general ill feelings…）；只給佔位用
+a previous battle	先前的一場戰役	之前的一场战役	inner	FUN_1404988b0 1404aba0e–1404abc84 紛爭起因：接在 Conv2 的 The trouble started because of {%1}. 裡（歷史事件種類 switch 0x11；查不到事件時用 general ill feelings…）；只給佔位用
+a previous duel	先前的一場決鬥	之前的一场决斗	inner	FUN_1404988b0 1404aba0e–1404abc84 紛爭起因：接在 Conv2 的 The trouble started because of {%1}. 裡（歷史事件種類 switch 0x11；查不到事件時用 general ill feelings…）；只給佔位用
+a previous conquest	先前的一次征服	之前的一次征服	inner	FUN_1404988b0 1404aba0e–1404abc84 紛爭起因：接在 Conv2 的 The trouble started because of {%1}. 裡（歷史事件種類 switch 0x11；查不到事件時用 general ill feelings…）；只給佔位用
+an abduction	一起綁架事件	一起绑架事件	inner	FUN_1404988b0 1404aba0e–1404abc84 紛爭起因：接在 Conv2 的 The trouble started because of {%1}. 裡（歷史事件種類 switch 0x11；查不到事件時用 general ill feelings…）；只給佔位用
+an act of theft	一起竊盜事件	一起盗窃事件	inner	FUN_1404988b0 1404aba0e–1404abc84 紛爭起因：接在 Conv2 的 The trouble started because of {%1}. 裡（歷史事件種類 switch 0x11；查不到事件時用 general ill feelings…）；只給佔位用
+an attack by a beast	一次野獸襲擊	一次野兽袭击	inner	FUN_1404988b0 1404aba0e–1404abc84 紛爭起因：接在 Conv2 的 The trouble started because of {%1}. 裡（歷史事件種類 switch 0x11；查不到事件時用 general ill feelings…）；只給佔位用
+a previous insurrection	先前的一場叛亂	之前的一场叛乱	inner	FUN_1404988b0 1404aba0e–1404abc84 紛爭起因：接在 Conv2 的 The trouble started because of {%1}. 裡（歷史事件種類 switch 0x11；查不到事件時用 general ill feelings…）；只給佔位用
+a special occasion	一場特別的盛會	一场特别的盛会	inner	FUN_1404988b0 1404aba0e–1404abc84 紛爭起因：接在 Conv2 的 The trouble started because of {%1}. 裡（歷史事件種類 switch 0x11；查不到事件時用 general ill feelings…）；只給佔位用
+a purge	一場肅清	一场清洗	inner	FUN_1404988b0 1404aba0e–1404abc84 紛爭起因：接在 Conv2 的 The trouble started because of {%1}. 裡（歷史事件種類 switch 0x11；查不到事件時用 general ill feelings…）；只給佔位用
+a raid	一次突襲	一次袭击	inner	FUN_1404988b0 1404aba0e–1404abc84 紛爭起因：接在 Conv2 的 The trouble started because of {%1}. 裡（歷史事件種類 switch 0x11；查不到事件時用 general ill feelings…）；只給佔位用
+persecution	迫害	迫害	inner	FUN_1404988b0 1404aba0e–1404abc84 紛爭起因：接在 Conv2 的 The trouble started because of {%1}. 裡（歷史事件種類 switch 0x11；查不到事件時用 general ill feelings…）；只給佔位用
+a coup	一場政變	一场政变	inner	FUN_1404988b0 1404aba0e–1404abc84 紛爭起因：接在 Conv2 的 The trouble started because of {%1}. 裡（歷史事件種類 switch 0x11；查不到事件時用 general ill feelings…）；只給佔位用
+There is also a family matter.	另外還牽涉到一些家族的事。	另外还牵涉到一些家族的事。		FUN_1404988b0 1404abe01/1404abe61 紛爭起因後的補充（宗教／家族差異 switch）；前面有兩個空白，逐句查
+There is also the issue of their godlessness.	另外，他們不信神，這也是個問題。	另外，他们不信神，这也是个问题。		FUN_1404988b0 1404abe7b 同上
+I don't really know.	我也不太清楚。	我也说不太清楚。		FUN_1404988b0 1404ac4ed 問統治勢力的掌控程度：查不到時的回答，後面可接「They consider you…」
+They do not feel challenged at all.	他們一點也不覺得地位受到威脅。	他们一点也不觉得地位受到威胁。		FUN_1404988b0 1404ac769 掌控程度 ≥100；整句寫出，原本被 They do not feel {…} 句型拆成半中半英
+They still hold this area, but they do not feel certain.	這一帶還在他們手裡，但他們心裡也沒底。	这一带还在他们手里，但他们心里也没底。		FUN_1404988b0 1404ac78a 掌控程度 90–99
+Their strength has been challenged, and their hold has loosened.	他們的勢力受到挑戰，掌控也鬆動了。	他们的势力受到挑战，掌控也松动了。		FUN_1404988b0 1404ac7ab 掌控程度 76–89
+Their strength has been broken.	他們的勢力已經瓦解了。	他们的势力已经瓦解了。		FUN_1404988b0 1404ac7c2 掌控程度 ≤75
+They consider you an infamous villain among those opposing them.	在他們眼裡，你是反抗者當中惡名昭彰的惡徒。	在他们眼里，你是反抗者当中臭名昭著的恶徒。		FUN_1404988b0 1404ac8da–1404ac972、1404adc3c–1404adcd4 統治勢力對玩家的敵視程度（≥100／75／50／25／其餘），接在掌控程度或衛兵說明後（前面兩個空白）
+They consider you a leader of the opposition.	他們把你當成反抗勢力的首領。	他们把你当成反抗势力的首领。		FUN_1404988b0 1404ac8da–1404ac972、1404adc3c–1404adcd4 統治勢力對玩家的敵視程度（≥100／75／50／25／其餘），接在掌控程度或衛兵說明後（前面兩個空白）
+They consider you a key figure in the opposition.	他們把你當成反抗勢力的關鍵人物。	他们把你当成反抗势力的关键人物。		FUN_1404988b0 1404ac8da–1404ac972、1404adc3c–1404adcd4 統治勢力對玩家的敵視程度（≥100／75／50／25／其餘），接在掌控程度或衛兵說明後（前面兩個空白）
+You are considered an integral part of the opposition.	你被視為反抗勢力不可或缺的一員。	你被视为反抗势力不可或缺的一员。		FUN_1404988b0 1404ac8da–1404ac972、1404adc3c–1404adcd4 統治勢力對玩家的敵視程度（≥100／75／50／25／其餘），接在掌控程度或衛兵說明後（前面兩個空白）
+You are considered part of the opposition.	你被視為反抗勢力的一份子。	你被视为反抗势力的一分子。		FUN_1404988b0 1404ac8da–1404ac972、1404adc3c–1404adcd4 統治勢力對玩家的敵視程度（≥100／75／50／25／其餘），接在掌控程度或衛兵說明後（前面兩個空白）
+I'd watch out for them.	我勸你提防著點他們。	我劝你提防着点他们。		FUN_1404988b0 1404adc14 衛兵說明後（原字串前後各兩個空白，逐句查）；them＝衛兵
+I have no idea.	我不知道。	我不知道。		FUN_1404988b0 1404adb24 問衛兵在哪：沒有衛兵資訊時；整句寫出，原本被 zz_adv_speech 的 I have {1}. 拆成「no idea在我這裡」
+I haven't heard anything like that.	我沒聽說過這種事。	我没听说过这种事。		FUN_1404988b0 1404ae221 問誰在爭奪控制權：沒有團體時
+One group organized itself.	有一群人自己組織了起來。	有一群人自己组织了起来。		FUN_1404988b0 1404ae636 問難民：只有一個團體，後面接「{團體} fled before the attack.」
+A few separate groups were organized.	有好幾群人各自組織了起來。	有好几群人各自组织了起来。		FUN_1404988b0 1404ae64d 問難民：2–3 個團體，後面接團體清單＋fled before the attack.
+Nobody I remember.	我不記得有誰。	我不记得有谁。		FUN_1404988b0 1404ae7ec 問難民：沒有團體時
+You sound like a troublemaker.	聽你這麼說，你就是個麻煩人物。	听你这么说，你就是个捣乱分子。		FUN_1404988b0 1404ae8a3 NPC 回應；用語同交談選單 Accuse the speaker of being a troublemaker（adv_talk）
+the mead hall	蜜酒大廳	蜜酒大厅	inner	FUN_1404988b0 1404ad336–1404ad739 衛兵所在建築（switch 0x1e、商店種類、市集種類）；只給 There are guards in … 句型的佔位用
+a cottage	小屋	小屋	inner	FUN_1404988b0 1404ad336–1404ad739 衛兵所在建築（switch 0x1e、商店種類、市集種類）；只給 There are guards in … 句型的佔位用
+the keep	城堡主樓	城堡主楼	inner	FUN_1404988b0 1404ad336–1404ad739 衛兵所在建築（switch 0x1e、商店種類、市集種類）；只給 There are guards in … 句型的佔位用
+the great tower	巨塔	巨塔	inner	FUN_1404988b0 1404ad336–1404ad739 衛兵所在建築（switch 0x1e、商店種類、市集種類）；只給 There are guards in … 句型的佔位用；術語例外：Great
+an abandoned shop	廢棄店鋪	废弃店铺	inner	FUN_1404988b0 1404ad336–1404ad739 衛兵所在建築（switch 0x1e、商店種類、市集種類）；只給 There are guards in … 句型的佔位用
+a food imports store	進口食品店	进口食品店	inner	FUN_1404988b0 1404ad336–1404ad739 衛兵所在建築（switch 0x1e、商店種類、市集種類）；只給 There are guards in … 句型的佔位用
+a clothing imports store	進口服飾店	进口服装店	inner	FUN_1404988b0 1404ad336–1404ad739 衛兵所在建築（switch 0x1e、商店種類、市集種類）；只給 There are guards in … 句型的佔位用
+a general imports store	進口雜貨店	进口杂货店	inner	FUN_1404988b0 1404ad336–1404ad739 衛兵所在建築（switch 0x1e、商店種類、市集種類）；只給 There are guards in … 句型的佔位用；術語例外：general
+a cloth shop	布料店	布料店	inner	FUN_1404988b0 1404ad336–1404ad739 衛兵所在建築（switch 0x1e、商店種類、市集種類）；只給 There are guards in … 句型的佔位用
+a leather shop	皮革店	皮革店	inner	FUN_1404988b0 1404ad336–1404ad739 衛兵所在建築（switch 0x1e、商店種類、市集種類）；只給 There are guards in … 句型的佔位用
+a woven clothing shop	布衣店	布衣店	inner	FUN_1404988b0 1404ad336–1404ad739 衛兵所在建築（switch 0x1e、商店種類、市集種類）；只給 There are guards in … 句型的佔位用
+a leather clothing shop	皮衣店	皮衣店	inner	FUN_1404988b0 1404ad336–1404ad739 衛兵所在建築（switch 0x1e、商店種類、市集種類）；只給 There are guards in … 句型的佔位用
+a bone carver's shop	骨雕店	骨雕店	inner	FUN_1404988b0 1404ad336–1404ad739 衛兵所在建築（switch 0x1e、商店種類、市集種類）；只給 There are guards in … 句型的佔位用
+a gem cutter's shop	寶石切割師店鋪	宝石切割师店铺	inner	FUN_1404988b0 1404ad336–1404ad739 衛兵所在建築（switch 0x1e、商店種類、市集種類）；只給 There are guards in … 句型的佔位用
+a weaponsmith's shop	武器匠鋪	武器匠铺	inner	FUN_1404988b0 1404ad336–1404ad739 衛兵所在建築（switch 0x1e、商店種類、市集種類）；只給 There are guards in … 句型的佔位用
+a bowyer's shop	弓弩匠鋪	弓弩匠铺	inner	FUN_1404988b0 1404ad336–1404ad739 衛兵所在建築（switch 0x1e、商店種類、市集種類）；只給 There are guards in … 句型的佔位用
+a blacksmith's shop	鐵匠鋪	铁匠铺	inner	FUN_1404988b0 1404ad336–1404ad739 衛兵所在建築（switch 0x1e、商店種類、市集種類）；只給 There are guards in … 句型的佔位用
+a armorsmith's shop	盔甲匠鋪	盔甲匠铺	inner	FUN_1404988b0 1404ad336–1404ad739 衛兵所在建築（switch 0x1e、商店種類、市集種類）；只給 There are guards in … 句型的佔位用；遊戲原文 a armorsmith's（錯字照抄）
+a metal craft shop	金屬工藝品店	金属工艺品店	inner	FUN_1404988b0 1404ad336–1404ad739 衛兵所在建築（switch 0x1e、商店種類、市集種類）；只給 There are guards in … 句型的佔位用
+a leather goods shop	皮件店	皮具店	inner	FUN_1404988b0 1404ad336–1404ad739 衛兵所在建築（switch 0x1e、商店種類、市集種類）；只給 There are guards in … 句型的佔位用
+a carpenter's shop	木匠鋪	木匠铺	inner	FUN_1404988b0 1404ad336–1404ad739 衛兵所在建築（switch 0x1e、商店種類、市集種類）；只給 There are guards in … 句型的佔位用
+a stone furniture shop	石製家具店	石制家具店	inner	FUN_1404988b0 1404ad336–1404ad739 衛兵所在建築（switch 0x1e、商店種類、市集種類）；只給 There are guards in … 句型的佔位用；家具為教育部標準寫法
+a metal furniture shop	金屬家具店	金属家具店	inner	FUN_1404988b0 1404ad336–1404ad739 衛兵所在建築（switch 0x1e、商店種類、市集種類）；只給 There are guards in … 句型的佔位用；家具為教育部標準寫法
+the imported goods market	進口商品市集	进口商品市场	inner	FUN_1404988b0 1404ad336–1404ad739 衛兵所在建築（switch 0x1e、商店種類、市集種類）；只給 There are guards in … 句型的佔位用
+the imported food market	進口食品市集	进口食品市场	inner	FUN_1404988b0 1404ad336–1404ad739 衛兵所在建築（switch 0x1e、商店種類、市集種類）；只給 There are guards in … 句型的佔位用
+the imported clothing market	進口服飾市集	进口服装市场	inner	FUN_1404988b0 1404ad336–1404ad739 衛兵所在建築（switch 0x1e、商店種類、市集種類）；只給 There are guards in … 句型的佔位用
+the meat market	肉品市集	肉类市场	inner	FUN_1404988b0 1404ad336–1404ad739 衛兵所在建築（switch 0x1e、商店種類、市集種類）；只給 There are guards in … 句型的佔位用
+the fruit and vegetable market	蔬果市集	果蔬市场	inner	FUN_1404988b0 1404ad336–1404ad739 衛兵所在建築（switch 0x1e、商店種類、市集種類）；只給 There are guards in … 句型的佔位用
+the cheese market	起司市集	奶酪市场	inner	FUN_1404988b0 1404ad336–1404ad739 衛兵所在建築（switch 0x1e、商店種類、市集種類）；只給 There are guards in … 句型的佔位用
+the processed goods market	加工品市集	加工品市场	inner	FUN_1404988b0 1404ad336–1404ad739 衛兵所在建築（switch 0x1e、商店種類、市集種類）；只給 There are guards in … 句型的佔位用
+There are guards patrolling very near.	附近有衛兵在巡邏。	附近有卫兵在巡逻。		FUN_1404988b0 1404acd86 問衛兵：方位片語 FUN_14147c4a0（very near／just／路程＋to the 方位／in the depths／aboveground／inaccessible from here），每種寫一條；nearly 排在 a day's 前
+There are guards patrolling in the depths.	地底深處有衛兵在巡邏。	地底深处有卫兵在巡逻。		FUN_1404988b0 1404acd86 問衛兵：方位片語 FUN_14147c4a0（very near／just／路程＋to the 方位／in the depths／aboveground／inaccessible from here），每種寫一條；nearly 排在 a day's 前
+There are guards patrolling aboveground.	地面上有衛兵在巡邏。	地面上有卫兵在巡逻。		FUN_1404988b0 1404acd86 問衛兵：方位片語 FUN_14147c4a0（very near／just／路程＋to the 方位／in the depths／aboveground／inaccessible from here），每種寫一條；nearly 排在 a day's 前
+There are guards patrolling inaccessible from here.	有衛兵在這裡到不了的地方巡邏。	有卫兵在这里到不了的地方巡逻。		FUN_1404988b0 1404acd86 問衛兵：方位片語 FUN_14147c4a0（very near／just／路程＋to the 方位／in the depths／aboveground／inaccessible from here），每種寫一條；nearly 排在 a day's 前
+There is a long-ranging patrol very near.	附近有一支長程巡邏隊。	附近有一支远程巡逻队。		FUN_1404988b0 1404ada1e 問衛兵：長程巡邏隊；方位片語 FUN_14147c4a0（very near／just／路程＋to the 方位／in the depths／aboveground／inaccessible from here），每種寫一條；nearly 排在 a day's 前
+There is a long-ranging patrol in the depths.	地底深處有一支長程巡邏隊。	地底深处有一支远程巡逻队。		FUN_1404988b0 1404ada1e 問衛兵：長程巡邏隊；方位片語 FUN_14147c4a0（very near／just／路程＋to the 方位／in the depths／aboveground／inaccessible from here），每種寫一條；nearly 排在 a day's 前
+There is a long-ranging patrol aboveground.	地面上有一支長程巡邏隊。	地面上有一支远程巡逻队。		FUN_1404988b0 1404ada1e 問衛兵：長程巡邏隊；方位片語 FUN_14147c4a0（very near／just／路程＋to the 方位／in the depths／aboveground／inaccessible from here），每種寫一條；nearly 排在 a day's 前
+There is a long-ranging patrol inaccessible from here.	有一支長程巡邏隊在這裡到不了的地方。	有一支远程巡逻队在这里到不了的地方。		FUN_1404988b0 1404ada1e 問衛兵：長程巡邏隊；方位片語 FUN_14147c4a0（very near／just／路程＋to the 方位／in the depths／aboveground／inaccessible from here），每種寫一條；nearly 排在 a day's 前

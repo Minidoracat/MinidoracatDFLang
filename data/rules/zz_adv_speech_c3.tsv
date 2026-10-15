@@ -1,0 +1,2 @@
+en	zh-Hant	zh-Hans	align	note
+It was {1}.	那是{1}。	那是{1}。		FUN_14066fe50 L893431-893439 case 0xe9 個人事件（交談時講述經歷過的事件集合）：It was＋空白＋事件集合名（FUN_14013cc50 取 world.history.event_collections，vtable+0x30 getName：The Raid of X、The Abduction of X、戰役／戰爭的「原名, "英文名"」等，見 _events.tsv FUN_140bc56b0-140bc79b0）＋.；名字用 {1} 不用 {%1}（同 sentences_causes_b 的 during {1}，{%n} 收不到專名）；通用樣板，錨點是句首 It was 與句尾句號，exe 裡其他 It was 句（It was great. 等、It was last rumored/seen …）都有整句條目或更長的句型，不會被它吃掉；找不到事件集合時畫成 It was.（speech_04 整句）

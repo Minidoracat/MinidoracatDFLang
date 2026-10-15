@@ -1,0 +1,85 @@
+en	zh-Hant	zh-Hans	align	note
+I don't remember clearly.	我記不太清楚了。	我记不太清楚了。		FUN_1404988b0 14049a052 交談回答
+What happened?	發生什麼事了？	发生什么事了？		FUN_1404988b0 14049a117 交談說出口的話（整句送出）
+The task is accomplished.	任務完成了。	任务完成了。		FUN_1404988b0 14049a3d1 家臣回報（玩家是家臣，對領主說）：接在 I am your loyal X. 後（兩個空白）；術語例外：Accomplished
+The need for my task seems to have passed.	看來這項任務已經沒必要了。	看来这项任务已经没必要了。		FUN_1404988b0 14049b551/14049b8ec/14049d2e3 家臣回報（玩家是家臣，對領主說）
+The enemy will be driven off.	敵人會被趕走的。	敌人会被赶走的。		FUN_1404988b0 14049b578/14049b913 家臣回報（玩家是家臣，對領主說）：驅逐任務進行中
+There will be no rest for the enemy.	敵人別想有喘息的機會。	敌人别想有喘息的机会。		FUN_1404988b0 14049d30a 家臣回報（玩家是家臣，對領主說）：討伐任務進行中
+I am a little confused.	我有點糊塗了。	我有点糊涂了。		FUN_1404988b0 14049d321 找不到任務細節時的退路句；遊戲原文開頭有兩個空白（整句取代、單獨送出），引擎去掉開頭空白再查
+I am sort of confused.	我好像有點糊塗了。	我好像有点糊涂了。		FUN_1404988b0 14049d338 同上（開頭兩個空白）
+I am confused.	我糊塗了。	我糊涂了。		FUN_1404988b0 14049d34f 等多處：條件不符時的退路句；原本由 zz_adv_speech 的 I am {%1}. 拼成「我是困惑。」，改寫整句
+I am very confused.	我完全糊塗了。	我完全糊涂了。		FUN_1404988b0 14049d366 退路句
+Commendable!	好樣的！	好样的！		FUN_1404988b0 14049d46f 領主對回報的家臣說：Commendable!  Your loyalty and bravery cannot be denied.（兩句逐句查）
+Your loyalty and bravery cannot be denied.	你的忠誠與英勇無庸置疑。	你的忠诚与英勇毋庸置疑。		FUN_1404988b0 14049d46f 同上第二句
+What do you command?	請問有何吩咐？	请问有何吩咐？		FUN_1404988b0 14049d888 家臣回報（玩家是家臣，對領主說）：I am your loyal X.  What do you command? 第二句
+Will you have me?	您願意收下我嗎？	您愿意收下我吗？		FUN_1404988b0 14049db78/1404a0eb7 玩家求職、自薦當家臣的第二句
+Will you have us?	您願意收下我們嗎？	您愿意收下我们吗？		FUN_1404988b0 14049deff 替同伴求職的第二句
+Make us proud!	別讓我們失望！	别让我们失望！		FUN_1404988b0 14049e1cd 答應求職的第二句
+I'll need to see something impressive before I consider it.	你得先讓我見識點真本事，我才會考慮。	你得先让我见识点真本事，我才会考虑。		FUN_1404988b0 14049e8d8 場所主人拒絕求職
+Can I perform with you?	我能跟你們一起表演嗎？	我能跟你们一起表演吗？		FUN_1404988b0 14049ea46 同上第二句
+You just aren't good enough yet, but you should keep performing.	你的功力還不夠，不過要繼續表演下去喔。	你的水平还不够，不过要继续表演下去。		FUN_1404988b0 14049ee36 表演團拒絕玩家
+The troupe could use your talent.	劇團正需要你這樣的人才。	剧团正需要你这样的人才。		FUN_1404988b0 14049ef8d 同上第二句
+It'll be great to perform with you.	能跟你一起表演一定很棒。	能跟你一起表演一定很棒。		FUN_1404988b0 14049f0ff 答應加入表演團：Yes!  It'll be great to perform with you.（Yes! 已有譯文）；術語例外：Great
+I'm sorry, but I can't join the troupe.	抱歉，我不能加入劇團。	抱歉，我不能加入剧团。		FUN_1404988b0 14049f2e0 拒絕加入表演團
+I cannot accept this honor.	我不能接受這份殊榮。	我不能接受这份殊荣。		FUN_1404988b0 14049fe1d 拒絕當家臣：I cannot accept this honor.  I am sorry.
+I am sorry.	很抱歉。	很抱歉。		FUN_1404988b0 14049fe1d/1404a0367/1404a0444/1404a093e 拒絕句的一句
+Gladly.	樂意之至。	乐意之至。		FUN_1404988b0 1404a0070/1404a0697 答應當家臣、收玩家為家臣的第一句（Gladly.  …）
+I do not think there is room for me.	我想這裡沒有我的位子。	我想这里没有我的位置。		FUN_1404988b0 1404a0367 I am sorry.  I do not think there is room for me.
+You are not worthy of such an honor yet.	你還配不上這份殊榮。	你还配不上这份殊荣。		FUN_1404988b0 1404a0444 You are not worthy of such an honor yet.  I am sorry.
+There is no room for you here.	這裡沒有你的位子。	这里没有你的位置。		FUN_1404988b0 1404a093e I am sorry.  There is no room for you here.
+Come with me and I'll bring you to safety.	跟我來，我帶你到安全的地方。	跟我来，我带你到安全的地方。		FUN_1404988b0 1404a0fd2 玩家救人
+Please help me!	救救我！	救救我！		FUN_1404988b0 1404a1097 交談回答（求救）
+I must obey the master!	我必須服從主人！	我必须服从主人！		FUN_1404988b0 1404a131a 敵對者拒絕交談（受主人控制者）；術語例外：Master
+Gwargh!	嘎啊！	嘎啊！		FUN_1404988b0 1404a1331 敵對者拒絕交談（怪物吼叫）
+Don't talk to me.	別跟我說話。	别跟我说话。		FUN_1404988b0 1404a138d/1404a13a4 拒絕交談
+Behold, mortal.	看哪，凡人。	看哪，凡人。		FUN_1404988b0 1404a17f4 神祇開口：Behold, mortal.  I am 名字／a divine being.  I know why you have come.（逐句查）
+I am a divine being.	我是神聖的存在。	我是神圣的存在。		FUN_1404988b0 1404a18e1 神祇查不到名字時：I am a divine being.
+I know why you have come.	我知道你為何而來。	我知道你为何而来。		FUN_1404988b0 1404a18f6 神祇開口的第三句
+Well, let's see...	嗯，我想想……	嗯，我想想……		FUN_1404988b0 1404a1dd8 回答附近有什麼麻煩：Well, let's see...＋（有麻煩時）  we've got 清單.；術語例外：well
+deaths	幾起死亡事件	几起死亡事件	inner	FUN_1404988b0 1404a1f03-1404a2103 麻煩清單項目（we've got …；複數／單數由件數決定）；conv2 的 Tell me about … 共用
+the death	那起死亡事件	那起死亡事件	inner	FUN_1404988b0 1404a1f03-1404a2103 麻煩清單項目（we've got …；複數／單數由件數決定）；conv2 的 Tell me about … 共用
+law-breaking	違法亂紀	违法乱纪	inner	FUN_1404988b0 1404a1f03-1404a2103 麻煩清單項目（we've got …；複數／單數由件數決定）；conv2 的 Tell me about … 共用
+the fighting	那場戰鬥	那场战斗	inner	FUN_1404988b0 1404a1f03-1404a2103 麻煩清單項目（we've got …；複數／單數由件數決定）；conv2 的 Tell me about … 共用
+armies on the march	四處行軍的軍隊	四处行军的军队	inner	FUN_1404988b0 1404a1f03-1404a2103 麻煩清單項目（we've got …；複數／單數由件數決定）；conv2 的 Tell me about … 共用
+the army on the march	那支行軍中的軍隊	那支行军中的军队	inner	FUN_1404988b0 1404a1f03-1404a2103 麻煩清單項目（we've got …；複數／單數由件數決定）；conv2 的 Tell me about … 共用
+abductions	幾起綁架案	几起绑架案	inner	FUN_1404988b0 1404a1f03-1404a2103 麻煩清單項目（we've got …；複數／單數由件數決定）；conv2 的 Tell me about … 共用
+the abduction	那起綁架案	那起绑架案	inner	FUN_1404988b0 1404a1f03-1404a2103 麻煩清單項目（we've got …；複數／單數由件數決定）；conv2 的 Tell me about … 共用
+occupations	幾處遭到佔領的地方	几处遭到占领的地方	inner	FUN_1404988b0 1404a1f03-1404a2103 麻煩清單項目（we've got …；複數／單數由件數決定）；conv2 的 Tell me about … 共用
+the occupation	那次佔領	那次占领	inner	FUN_1404988b0 1404a1f03-1404a2103 麻煩清單項目（we've got …；複數／單數由件數決定）；conv2 的 Tell me about … 共用
+beasts	幾頭野獸	几头野兽	inner	FUN_1404988b0 1404a1f03-1404a2103 麻煩清單項目（we've got …；複數／單數由件數決定）；conv2 的 Tell me about … 共用
+the beast	那頭野獸	那头野兽	inner	FUN_1404988b0 1404a1f03-1404a2103 麻煩清單項目（we've got …；複數／單數由件數決定）；conv2 的 Tell me about … 共用
+criminals	罪犯	罪犯	inner	FUN_1404988b0 1404a1f03-1404a2103 麻煩清單項目（we've got …；複數／單數由件數決定）；conv2 的 Tell me about … 共用
+bandits	盜匪	土匪	inner	FUN_1404988b0 1404a1f03-1404a2103 麻煩清單項目（we've got …；複數／單數由件數決定）；conv2 的 Tell me about … 共用
+skulking vermin	鬼鬼祟祟的鼠輩	鬼鬼祟祟的鼠辈	inner	FUN_1404988b0 1404a1f03-1404a2103 麻煩清單項目（we've got …；複數／單數由件數決定）；conv2 的 Tell me about … 共用
+bone-chilling horror	令人毛骨悚然的怪物	令人毛骨悚然的怪物	inner	FUN_1404988b0 1404a1f03-1404a2103 麻煩清單項目（we've got …；複數／單數由件數決定）；conv2 的 Tell me about … 共用
+ruffians	惡棍	恶棍	inner	FUN_1404988b0 1404a1f03-1404a2103 麻煩清單項目（we've got …；複數／單數由件數決定）；conv2 的 Tell me about … 共用
+open war	全面開戰	全面开战	inner	FUN_1404988b0 1404a1f03-1404a2103 麻煩清單項目（we've got …；複數／單數由件數決定）；conv2 的 Tell me about … 共用；全域已有 open war（開啟戰爭），這裡只在佔位裡用
+brewing trouble with our neighbors	與鄰邦之間醞釀中的紛爭	与邻邦之间酝酿中的纷争	inner	FUN_1404988b0 1404a1f03-1404a2103 麻煩清單項目（we've got …；複數／單數由件數決定）；conv2 的 Tell me about … 共用
+the missing treasure	那件下落不明的寶物	那件下落不明的宝物	inner	FUN_1404988b0 1404a1f03-1404a2103 麻煩清單項目（we've got …；複數／單數由件數決定）；conv2 的 Tell me about … 共用
+I've forgotten what trouble it was...	我忘了是什麼麻煩了……	我忘了是什么麻烦了……		FUN_1404988b0 1404a2310 回答麻煩時忘了
+Wait here until I return.	在這裡等我回來。	在这里等我回来。		FUN_1404988b0 1404a23e3 玩家對同伴
+Let's continue onward together.	我們一起繼續前進吧。	我们一起继续前进吧。		FUN_1404988b0 1404a2798 玩家對同伴
+What have you done?	你做了什麼？	你干了什么？		FUN_1404988b0 1404a2cec What have you done?  This is horrifying!
+This is horrifying!	太可怕了！	太可怕了！		FUN_1404988b0 1404a2cec 同上第二句
+Thank you.	謝謝你。	谢谢你。		FUN_1404988b0 1404a2f6c 收下動物：Thank you.  I will take excellent care of this majestic creature.
+I will take excellent care of this majestic creature.	我會好好照顧這隻威風凜凜的生物。	我会好好照顾这只威风凛凛的生物。		FUN_1404988b0 1404a2f6c 同上第二句
+What do you think of me?	你覺得我怎麼樣？	你觉得我怎么样？		FUN_1404988b0 1404a3e33 玩家問對方（問的人是自己時）
+What can you tell me about yourself?	能跟我說說你自己嗎？	能跟我说说你自己吗？		FUN_1404988b0 1404a3e59 玩家問對方本人
+Can you tell me where I can find myself?	你能告訴我上哪找我自己嗎？	你能告诉我去哪儿找我自己吗？		FUN_1404988b0 1404a42fa 玩家問人在哪（對象是自己；遊戲照實說出）
+Can you tell me where I can find you?	你能告訴我上哪找你嗎？	你能告诉我去哪儿找你吗？		FUN_1404988b0 1404a4320 對象是對方
+Please guide me to myself.	請帶我去找我自己。	请带我去找我自己。		FUN_1404988b0 1404a48e5 帶路對象是自己；術語例外：guide
+Please guide me to you.	請帶我去找你。	请带我去找你。		FUN_1404988b0 1404a490b 帶路對象是對方；術語例外：guide
+We can no longer travel together.	我們不能再一起旅行了。	我们不能再一起旅行了。		FUN_1404988b0 1404a4b65 同伴離隊
+I'm giving up on this hopeless venture.	我放棄這趟沒指望的冒險了。	我放弃这趟没指望的冒险了。		FUN_1404988b0 1404a51d7 同伴離隊的原因（開頭兩個空白，單獨送出）
+We were going to entertain the world!	我們本來要為全世界表演的！	我们本来要为全世界表演的！		FUN_1404988b0 1404a51f1 表演團同伴離隊（開頭兩個空白）
+It's a shame, but I'll have to make my own way now.	真可惜，不過現在我只能自己闖了。	真可惜，不过现在我只能自己闯了。		FUN_1404988b0 1404a51f1 同上第二句
+I'm returning on my own.	我自己回去了。	我自己回去了。		FUN_1404988b0 1404a520b 同伴離隊（開頭兩個空白）
+I hope you find what you are seeking here.	希望你能在這裡找到你要找的東西。	希望你能在这里找到你要找的东西。		FUN_1404988b0 1404a5225 同伴離隊（開頭兩個空白）
+They must be stopped by any means at our disposal.	我們必須不擇手段阻止他們。	我们必须不择手段阻止他们。		FUN_1404988b0 1404a53fe 對新勢力的看法
+They are terrific.	他們好極了。	他们好极了。		FUN_1404988b0 1404a54f6 對新勢力的看法；conv3 同一句也用
+I hate them.	我恨他們。	我恨他们。		FUN_1404988b0 1404a54c8 對新勢力的看法；原本被 speech_03 的 I hate {1}. 拼成「我恨them。」，改寫整句
+I am afraid of them.	我怕他們。	我怕他们。		FUN_1404988b0 1404a54df 對新勢力的看法；原本被通用句型拼成「我是them的害怕。」
+I don't know anything else about them.	關於他們，我就只知道這些了。	关于他们，我就只知道这些了。		FUN_1404988b0 1404a5466 對新勢力的看法；原本被 speech_03 的 I don't know {1}. 拼成半中半英
+Now we will have to build our own future.	現在我們只能自己打造未來了。	现在我们只能自己打造未来了。		FUN_1404988b0 1404a5532 同伴所屬團體沒有新勢力；術語例外：Build
+Are we close?	快到了嗎？	快到了吗？		FUN_1404988b0 1404a5aa0 玩家問帶路的同伴
+You are bound to obey me.	你受我約束，必須服從我。	你受我约束，必须服从我。		FUN_1404988b0 1404a5ca5 玩家對受約束者
