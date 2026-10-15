@@ -1,0 +1,263 @@
+en	zh-Hant	zh-Hans	align	note
+requested that you	要求你	要求你		FUN_140af1190 L1606077 協議欄第二行：〔人名〕要求你／投效／〔勢力〕
+offer your services to	投效	投效		FUN_140af1190 L1606082 協議欄第三行，下一行是勢力名
+asked that you	請你	请你		FUN_140af1190 L1606602 協議欄：〔人名〕請你／取回／〔物品〕
+Bring	帶著	带着		FUN_140af1190 L1606874 協議欄：帶著／〔物品〕／到／〔地點〕
+Climb	攀爬	攀爬		FUN_140af1190 L1607926／L1609851 移動速度欄與動作清單
+Continue action	繼續動作	继续动作		FUN_140af1190 L1608977 進行中動作的按鈕
+Stop action	停止動作	停止动作		FUN_140af1190 L1608988 進行中動作的按鈕
+Finish action	完成動作	完成动作		FUN_140af1190 L1608999 進行中動作的按鈕
+In conflict! 	有衝突！ 	有冲突！ 		FUN_140af1190 L1609037 進行中動作按鈕，後面接著畫 Finish anyway
+Finish anyway	仍要完成	仍要完成		FUN_140af1190 L1609041 接在 In conflict! 後
+Return to arena	返回競技場	返回竞技场		FUN_140af1190 L1609100 競技場模式按鈕
+Gui	導	导		FUN_140af1190 L1609626 同伴清單標記：嚮導（原文 3 格只放得下一字）
+Qst	任	任		FUN_140af1190 L1609638 同伴清單標記：任務（原文 3 格只放得下一字）
+Jump	跳躍	跳跃		FUN_140af1190 L1609831 動作清單
+Hold	抓住	抓住		FUN_140af1190 L1609838 動作清單：抓住地形或物品
+Release	放開	放开		FUN_140af1190 L1609845 動作清單
+Job	工	工		FUN_140af1190 L1609858 動作清單：工作（原文 3 格只放得下一字）
+Unsteady	站不穩	站不稳		FUN_140af1190 L1609870 動作清單：失去平衡
+Recover	恢復	恢复		FUN_140af1190 L1609934 動作清單
+Lie Down	躺下	躺下		FUN_140af1190 L1609946 動作清單
+Push Object	推動物品	推动物品		FUN_140af1190 L1609952 動作清單
+Suck Blood	吸血	吸血		FUN_140af1190 L1609958 動作清單（吸血鬼）
+Lead animal	牽引動物	牵引动物		FUN_140af1190 L1609976 動作清單
+Stop leading animal	停止牽引動物	停止牵引动物		FUN_140af1190 L1609982 動作清單
+Load ammo	裝填彈藥	装填弹药		FUN_140af1190 L1609996 動作清單：Load + ammo，弩
+Nock ammo	搭箭	搭箭		FUN_140af1190 L1609992 動作清單：Nock + ammo，弓
+Shoot weapon	射擊	射击		FUN_140af1190 L1610012 動作清單
+Throw item	投擲物品	投掷物品		FUN_140af1190 L1610018 動作清單
+Regaining balance	恢復平衡	恢复平衡		FUN_140af1190 L1610024 動作清單／FUN_140852640 狀態列
+and more	還有更多	还有更多		FUN_140af1190 L1610038 動作清單太長時
+ to act	 行動	 行动		FUN_140af1190 L1610058 動作清單底部：〔按鍵圖示〕 to act
+Tracks Visible: 	可見足跡：	可见足迹：		FUN_140af1190 L1610246 追蹤資訊，後接數字；track 是足跡；術語例外：track
+You haven't been able to act for a while.	你已經有一陣子無法行動了。	你已经有一阵子无法行动了。		FUN_140af1190 L1611944 長時間無法行動的提示
+You can continue waiting, or save/quit from	你可以繼續等待，或存檔／離開，	你可以继续等待，或保存/退出，		FUN_140af1190 L1611949 同上第二行，接下一行
+the settings menu.	請從設定選單操作。	请从设置菜单操作。		FUN_140af1190 L1611954 同上第三行
+Continue waiting	繼續等待	继续等待		FUN_140af1190 L1611965 同上按鈕
+smoke	煙霧	烟雾		FUN_140af1190 L1603544 氣味名：You smell {%1}. 與 Strongest Odor: 的值（首字大寫退回小寫）
+bug innards	蟲子內臟	虫子内脏		FUN_140af1190 L1603544 氣味名：You smell {%1}. 與 Strongest Odor: 的值（首字大寫退回小寫）
+cooked flesh	熟肉	熟肉		FUN_140af1190 L1603544 氣味名：You smell {%1}. 與 Strongest Odor: 的值（首字大寫退回小寫）
+filth	汙穢	污秽		FUN_140af1190 L1603544 氣味名：You smell {%1}. 與 Strongest Odor: 的值（首字大寫退回小寫）
+soot	煤灰	煤灰		FUN_140af1190 L1603544 氣味名：You smell {%1}. 與 Strongest Odor: 的值（首字大寫退回小寫）
+freshly-baked goods	新鮮烘焙食品	新鲜烘焙食品		FUN_140af1190 L1603544 氣味名：You smell {%1}. 與 Strongest Odor: 的值（首字大寫退回小寫）
+A dark, menacing cloud towers above you, crowned by an anvil.	一朵陰暗險惡的雲高聳在你頭頂，雲頂呈砧台狀。	一朵阴暗险恶的云高耸在你头顶，云顶呈砧台状。		FUN_140af1190 L1604343 天空提示：雲
+There are mounds of clouds above you, smooth on the bottom with prominent upward bulges.	你頭頂上聚著一團團雲，底部平整，向上高高隆起。	你头顶上聚着一团团云，底部平整，向上高高隆起。		FUN_140af1190 L1604347 天空提示：雲；smooth 是雲底平整；術語例外：smooth
+A dark, towering cloud rises into a striped sky.	一朵陰暗高聳的雲直入布滿條紋的天空。	一朵阴暗高耸的云直入布满条纹的天空。		FUN_140af1190 L1604356 天空提示：雲
+Mounds of clouds are clustered through a striped sky.	一團團雲聚集在布滿條紋的天空中。	一团团云聚集在布满条纹的天空中。		FUN_140af1190 L1604359 天空提示：雲
+There are scattered clouds underneath a striped sky.	布滿條紋的天空下散佈著雲朵。	布满条纹的天空下散布着云朵。		FUN_140af1190 L1604362 天空提示：雲
+The sky is striped with thin clouds.	天空布滿條紋般的薄雲。	天空布满条纹般的薄云。		FUN_140af1190 L1604364 天空提示：雲
+The sky above you is a uniform and dark gray.	你頭頂的天空一片均勻的暗灰。	你头顶的天空一片均匀的暗灰。		FUN_140af1190 L1604373 天空提示：雲；uniform 是均勻；術語例外：uniform
+The sky above you is gray.	你頭頂的天空灰濛濛的。	你头顶的天空灰蒙蒙的。		FUN_140af1190 L1604376 天空提示：雲
+The sky above you is hazy and white.	你頭頂的天空朦朧泛白。	你头顶的天空朦胧泛白。		FUN_140af1190 L1604380 天空提示：雲
+The sky above you is nearly black, ripped through with towering clouds.	你頭頂的天空近乎全黑，被高聳的雲層撕裂。	你头顶的天空近乎全黑，被高耸的云层撕裂。		FUN_140af1190 L1604385 天空提示：雲
+The sky above you is completely gray, with dark cloud pillars pressing through it.	你頭頂的天空一片灰，暗沉的雲柱從中穿出。	你头顶的天空一片灰，暗沉的云柱从中穿出。		FUN_140af1190 L1604390 天空提示：雲
+A towering gray cloud descends from the white sky above you.	一朵高聳的灰雲從你頭頂的白色天空垂降而下。	一朵高耸的灰云从你头顶的白色天空垂降而下。		FUN_140af1190 L1604395 天空提示：雲
+There is no wind here.	這裡沒有風。	这里没有风。		FUN_140af1190 L1604465 天空提示：風
+You cannot see the sky clearly from here, but the available sunlight indicates the dawn.	你在這裡看不清天空，但從透進來的日光看，現在是黎明。	你在这里看不清天空，但从透进来的日光看，现在是黎明。		FUN_140af1190 L1604572 天空提示：日光
+You cannot see the sky clearly from here, but the available sunlight indicates the day.	你在這裡看不清天空，但從透進來的日光看，現在是白天。	你在这里看不清天空，但从透进来的日光看，现在是白天。		FUN_140af1190 L1604576 天空提示：日光
+You cannot see the sky clearly from here, but the available sunlight indicates the sunset.	你在這裡看不清天空，但從透進來的日光看，現在是黃昏。	你在这里看不清天空，但从透进来的日光看，现在是黄昏。		FUN_140af1190 L1604580 天空提示：日光
+You cannot see the sky clearly from here, but the available sunlight indicates the night.	你在這裡看不清天空，但從透進來的日光看，現在是夜晚。	你在这里看不清天空，但从透进来的日光看，现在是夜晚。		FUN_140af1190 L1604584 天空提示：日光
+The stars are out.	星星出來了。	星星出来了。		FUN_140af1190 L1604661 天空提示
+The sky is alive with vortices of purple light and dark, boiling clouds.	天空翻騰著紫光漩渦與陰暗沸騰的雲。	天空翻腾着紫光漩涡与阴暗沸腾的云。		FUN_140af1190 L1604664 天空提示（異界）
+The area gives off a sickly light.	這一帶散發著病態的光。	这一带散发着病态的光。		FUN_140af1190 L1604667 天空提示（異界）
+The temperature cannot be judged.	無法判斷氣溫。	无法判断气温。		FUN_140af1190 L1605005 氣溫提示
+It is deathly cold.	冷得要命。	冷得要命。		FUN_140af1190 L1605011 氣溫提示
+The temperature is pleasant.	氣溫宜人。	气温宜人。		FUN_140af1190 L1605014 氣溫提示
+It is warm.	很溫暖。	很温暖。		FUN_140af1190 L1605026 氣溫提示
+It is scorching.	酷熱難耐。	酷热难耐。		FUN_140af1190 L1605036 氣溫提示
+It is cool.	很涼爽。	很凉爽。		FUN_140af1190 L1605044 氣溫提示
+The temperature is as it has been and always will be.	氣溫一如既往，永遠不變。	气温一如既往，永远不变。		FUN_140af1190 L1605104 氣溫提示（異界）
+Being dead is cold and clammy.	死了就是又冷又濕黏。	死了就是又冷又湿黏。		FUN_140af1190 L1605110 氣溫提示（死者）
+At your location:	就在你所在之處：	就在你所在之处：		FUN_140af1190 L1605614 追蹤提示：最新足跡位置；術語例外：location
+To the west:	在西方：	在西方：		FUN_140af1190 L1605570 追蹤提示：最新足跡在哪個方向
+To the east:	在東方：	在东方：		FUN_140af1190 L1605570 追蹤提示：最新足跡在哪個方向
+To the north:	在北方：	在北方：		FUN_140af1190 L1605570 追蹤提示：最新足跡在哪個方向
+To the south:	在南方：	在南方：		FUN_140af1190 L1605570 追蹤提示：最新足跡在哪個方向
+To the northwest:	在西北方：	在西北方：		FUN_140af1190 L1605570 追蹤提示：最新足跡在哪個方向
+To the southwest:	在西南方：	在西南方：		FUN_140af1190 L1605570 追蹤提示：最新足跡在哪個方向
+To the northeast:	在東北方：	在东北方：		FUN_140af1190 L1605570 追蹤提示：最新足跡在哪個方向
+To the southeast:	在東南方：	在东南方：		FUN_140af1190 L1605570 追蹤提示：最新足跡在哪個方向
+The sun is rising in the west.	太陽正從西方升起。	太阳正从西方升起。		FUN_140af1190 L1604589 天空提示：太陽位置（東西可能對調）
+The sun is rising in the west behind the clouds.	太陽正從西方升起，藏在雲層後。	太阳正从西方升起，藏在云层后。		FUN_140af1190 L1604657 天空提示：太陽位置＋雲層
+The sun is rising in the east.	太陽正從東方升起。	太阳正从东方升起。		FUN_140af1190 L1604589 天空提示：太陽位置（東西可能對調）
+The sun is rising in the east behind the clouds.	太陽正從東方升起，藏在雲層後。	太阳正从东方升起，藏在云层后。		FUN_140af1190 L1604657 天空提示：太陽位置＋雲層
+The sun is low in the western sky.	太陽低懸在西邊天空。	太阳低悬在西边天空。		FUN_140af1190 L1604589 天空提示：太陽位置（東西可能對調）
+The sun is low in the western sky behind the clouds.	太陽低懸在西邊天空，藏在雲層後。	太阳低悬在西边天空，藏在云层后。		FUN_140af1190 L1604657 天空提示：太陽位置＋雲層
+The sun is low in the eastern sky.	太陽低懸在東邊天空。	太阳低悬在东边天空。		FUN_140af1190 L1604589 天空提示：太陽位置（東西可能對調）
+The sun is low in the eastern sky behind the clouds.	太陽低懸在東邊天空，藏在雲層後。	太阳低悬在东边天空，藏在云层后。		FUN_140af1190 L1604657 天空提示：太陽位置＋雲層
+The sun is in the western sky.	太陽在西邊天空。	太阳在西边天空。		FUN_140af1190 L1604589 天空提示：太陽位置（東西可能對調）
+The sun is in the western sky behind the clouds.	太陽在西邊天空，藏在雲層後。	太阳在西边天空，藏在云层后。		FUN_140af1190 L1604657 天空提示：太陽位置＋雲層
+The sun is in the eastern sky.	太陽在東邊天空。	太阳在东边天空。		FUN_140af1190 L1604589 天空提示：太陽位置（東西可能對調）
+The sun is in the eastern sky behind the clouds.	太陽在東邊天空，藏在雲層後。	太阳在东边天空，藏在云层后。		FUN_140af1190 L1604657 天空提示：太陽位置＋雲層
+The sun is high in the western sky.	太陽高掛在西邊天空。	太阳高挂在西边天空。		FUN_140af1190 L1604589 天空提示：太陽位置（東西可能對調）
+The sun is high in the western sky behind the clouds.	太陽高掛在西邊天空，藏在雲層後。	太阳高挂在西边天空，藏在云层后。		FUN_140af1190 L1604657 天空提示：太陽位置＋雲層
+The sun is high in the eastern sky.	太陽高掛在東邊天空。	太阳高挂在东边天空。		FUN_140af1190 L1604589 天空提示：太陽位置（東西可能對調）
+The sun is high in the eastern sky behind the clouds.	太陽高掛在東邊天空，藏在雲層後。	太阳高挂在东边天空，藏在云层后。		FUN_140af1190 L1604657 天空提示：太陽位置＋雲層
+The sun is directly above you.	太陽就在你正上方。	太阳就在你正上方。		FUN_140af1190 L1604589 天空提示：太陽位置（東西可能對調）
+The sun is directly above you behind the clouds.	太陽就在你正上方，藏在雲層後。	太阳就在你正上方，藏在云层后。		FUN_140af1190 L1604657 天空提示：太陽位置＋雲層
+The sun is setting to the east.	太陽正往東方落下。	太阳正往东方落下。		FUN_140af1190 L1604589 天空提示：太陽位置（東西可能對調）
+The sun is setting to the east behind the clouds.	太陽正往東方落下，藏在雲層後。	太阳正往东方落下，藏在云层后。		FUN_140af1190 L1604657 天空提示：太陽位置＋雲層
+The sun is setting to the west.	太陽正往西方落下。	太阳正往西方落下。		FUN_140af1190 L1604589 天空提示：太陽位置（東西可能對調）
+The sun is setting to the west behind the clouds.	太陽正往西方落下，藏在雲層後。	太阳正往西方落下，藏在云层后。		FUN_140af1190 L1604657 天空提示：太陽位置＋雲層
+The moon is rising in the west bright behind the clouds.	月亮正從西方升起，在雲層後透出明亮的光。	月亮正从西方升起，在云层后透出明亮的光。		FUN_140af1190 L1604814 天空提示：月亮位置＋雲層
+The moon is rising in the west pale behind the clouds.	月亮正從西方升起，在雲層後透出黯淡的光。	月亮正从西方升起，在云层后透出黯淡的光。		FUN_140af1190 L1604814 天空提示：月亮位置＋雲層
+The moon is rising in the west hardly visible behind the clouds.	月亮正從西方升起，在雲層後幾乎看不見。	月亮正从西方升起，在云层后几乎看不见。		FUN_140af1190 L1604814 天空提示：月亮位置＋雲層
+The moon is rising in the east bright behind the clouds.	月亮正從東方升起，在雲層後透出明亮的光。	月亮正从东方升起，在云层后透出明亮的光。		FUN_140af1190 L1604814 天空提示：月亮位置＋雲層
+The moon is rising in the east pale behind the clouds.	月亮正從東方升起，在雲層後透出黯淡的光。	月亮正从东方升起，在云层后透出黯淡的光。		FUN_140af1190 L1604814 天空提示：月亮位置＋雲層
+The moon is rising in the east hardly visible behind the clouds.	月亮正從東方升起，在雲層後幾乎看不見。	月亮正从东方升起，在云层后几乎看不见。		FUN_140af1190 L1604814 天空提示：月亮位置＋雲層
+The moon is low in the western sky bright behind the clouds.	月亮低懸在西邊天空，在雲層後透出明亮的光。	月亮低悬在西边天空，在云层后透出明亮的光。		FUN_140af1190 L1604814 天空提示：月亮位置＋雲層
+The moon is low in the western sky pale behind the clouds.	月亮低懸在西邊天空，在雲層後透出黯淡的光。	月亮低悬在西边天空，在云层后透出黯淡的光。		FUN_140af1190 L1604814 天空提示：月亮位置＋雲層
+The moon is low in the western sky hardly visible behind the clouds.	月亮低懸在西邊天空，在雲層後幾乎看不見。	月亮低悬在西边天空，在云层后几乎看不见。		FUN_140af1190 L1604814 天空提示：月亮位置＋雲層
+The moon is low in the eastern sky bright behind the clouds.	月亮低懸在東邊天空，在雲層後透出明亮的光。	月亮低悬在东边天空，在云层后透出明亮的光。		FUN_140af1190 L1604814 天空提示：月亮位置＋雲層
+The moon is low in the eastern sky pale behind the clouds.	月亮低懸在東邊天空，在雲層後透出黯淡的光。	月亮低悬在东边天空，在云层后透出黯淡的光。		FUN_140af1190 L1604814 天空提示：月亮位置＋雲層
+The moon is low in the eastern sky hardly visible behind the clouds.	月亮低懸在東邊天空，在雲層後幾乎看不見。	月亮低悬在东边天空，在云层后几乎看不见。		FUN_140af1190 L1604814 天空提示：月亮位置＋雲層
+The moon is in the western sky bright behind the clouds.	月亮在西邊天空，在雲層後透出明亮的光。	月亮在西边天空，在云层后透出明亮的光。		FUN_140af1190 L1604814 天空提示：月亮位置＋雲層
+The moon is in the western sky pale behind the clouds.	月亮在西邊天空，在雲層後透出黯淡的光。	月亮在西边天空，在云层后透出黯淡的光。		FUN_140af1190 L1604814 天空提示：月亮位置＋雲層
+The moon is in the western sky hardly visible behind the clouds.	月亮在西邊天空，在雲層後幾乎看不見。	月亮在西边天空，在云层后几乎看不见。		FUN_140af1190 L1604814 天空提示：月亮位置＋雲層
+The moon is in the eastern sky bright behind the clouds.	月亮在東邊天空，在雲層後透出明亮的光。	月亮在东边天空，在云层后透出明亮的光。		FUN_140af1190 L1604814 天空提示：月亮位置＋雲層
+The moon is in the eastern sky pale behind the clouds.	月亮在東邊天空，在雲層後透出黯淡的光。	月亮在东边天空，在云层后透出黯淡的光。		FUN_140af1190 L1604814 天空提示：月亮位置＋雲層
+The moon is in the eastern sky hardly visible behind the clouds.	月亮在東邊天空，在雲層後幾乎看不見。	月亮在东边天空，在云层后几乎看不见。		FUN_140af1190 L1604814 天空提示：月亮位置＋雲層
+The moon is high in the western sky bright behind the clouds.	月亮高掛在西邊天空，在雲層後透出明亮的光。	月亮高挂在西边天空，在云层后透出明亮的光。		FUN_140af1190 L1604814 天空提示：月亮位置＋雲層
+The moon is high in the western sky pale behind the clouds.	月亮高掛在西邊天空，在雲層後透出黯淡的光。	月亮高挂在西边天空，在云层后透出黯淡的光。		FUN_140af1190 L1604814 天空提示：月亮位置＋雲層
+The moon is high in the western sky hardly visible behind the clouds.	月亮高掛在西邊天空，在雲層後幾乎看不見。	月亮高挂在西边天空，在云层后几乎看不见。		FUN_140af1190 L1604814 天空提示：月亮位置＋雲層
+The moon is high in the eastern sky bright behind the clouds.	月亮高掛在東邊天空，在雲層後透出明亮的光。	月亮高挂在东边天空，在云层后透出明亮的光。		FUN_140af1190 L1604814 天空提示：月亮位置＋雲層
+The moon is high in the eastern sky pale behind the clouds.	月亮高掛在東邊天空，在雲層後透出黯淡的光。	月亮高挂在东边天空，在云层后透出黯淡的光。		FUN_140af1190 L1604814 天空提示：月亮位置＋雲層
+The moon is high in the eastern sky hardly visible behind the clouds.	月亮高掛在東邊天空，在雲層後幾乎看不見。	月亮高挂在东边天空，在云层后几乎看不见。		FUN_140af1190 L1604814 天空提示：月亮位置＋雲層
+The moon is directly above you bright behind the clouds.	月亮就在你正上方，在雲層後透出明亮的光。	月亮就在你正上方，在云层后透出明亮的光。		FUN_140af1190 L1604814 天空提示：月亮位置＋雲層
+The moon is directly above you pale behind the clouds.	月亮就在你正上方，在雲層後透出黯淡的光。	月亮就在你正上方，在云层后透出黯淡的光。		FUN_140af1190 L1604814 天空提示：月亮位置＋雲層
+The moon is directly above you hardly visible behind the clouds.	月亮就在你正上方，在雲層後幾乎看不見。	月亮就在你正上方，在云层后几乎看不见。		FUN_140af1190 L1604814 天空提示：月亮位置＋雲層
+The moon is setting to the east bright behind the clouds.	月亮正往東方落下，在雲層後透出明亮的光。	月亮正往东方落下，在云层后透出明亮的光。		FUN_140af1190 L1604814 天空提示：月亮位置＋雲層
+The moon is setting to the east pale behind the clouds.	月亮正往東方落下，在雲層後透出黯淡的光。	月亮正往东方落下，在云层后透出黯淡的光。		FUN_140af1190 L1604814 天空提示：月亮位置＋雲層
+The moon is setting to the east hardly visible behind the clouds.	月亮正往東方落下，在雲層後幾乎看不見。	月亮正往东方落下，在云层后几乎看不见。		FUN_140af1190 L1604814 天空提示：月亮位置＋雲層
+The moon is setting to the west bright behind the clouds.	月亮正往西方落下，在雲層後透出明亮的光。	月亮正往西方落下，在云层后透出明亮的光。		FUN_140af1190 L1604814 天空提示：月亮位置＋雲層
+The moon is setting to the west pale behind the clouds.	月亮正往西方落下，在雲層後透出黯淡的光。	月亮正往西方落下，在云层后透出黯淡的光。		FUN_140af1190 L1604814 天空提示：月亮位置＋雲層
+The moon is setting to the west hardly visible behind the clouds.	月亮正往西方落下，在雲層後幾乎看不見。	月亮正往西方落下，在云层后几乎看不见。		FUN_140af1190 L1604814 天空提示：月亮位置＋雲層
+waxing crescent moon	蛾眉月	蛾眉月	inner	FUN_140af1190 L1604720 月相，只給 The {@1} … 句型用
+waxing half moon	上弦月	上弦月	inner	FUN_140af1190 L1604720 月相，只給 The {@1} … 句型用
+waxing gibbous moon	盈凸月	盈凸月	inner	FUN_140af1190 L1604720 月相，只給 The {@1} … 句型用
+waning gibbous moon	虧凸月	亏凸月	inner	FUN_140af1190 L1604720 月相，只給 The {@1} … 句型用
+waning half moon	下弦月	下弦月	inner	FUN_140af1190 L1604720 月相，只給 The {@1} … 句型用
+waning crescent moon	殘月	残月	inner	FUN_140af1190 L1604720 月相，只給 The {@1} … 句型用
+new moon	新月	新月	inner	FUN_140af1190 L1604720 月相，只給 The {@1} … 句型用
+ to view other pages	 檢視其他頁	 查看其他页		FUN_1407f3cb0 L1138783 查看清單：〔按鍵〕 to view other pages
+Miasma	瘴氣	瘴气		FUN_1407f3cb0 L1138965 查看清單：氣體
+Steam	蒸氣	蒸汽		FUN_1407f3cb0 L1138968 查看清單：氣體
+Lava Mist	熔岩霧氣	熔岩雾气		FUN_1407f3cb0 L1138982 查看清單：與 Magma Mist 同譯（術語 magma 熔岩，不用岩漿）
+Dragonfire	龍焰	龙焰		FUN_1407f3cb0 L1138992 查看清單：龍噴出的火
+A Web	蛛網	蛛网		FUN_1407f3cb0 L1138998 查看清單
+An Ocean Wave	海浪	海浪		FUN_1407f3cb0 L1139015 查看清單
+A Campfire	營火	营火		FUN_1407f3cb0 L1139055 查看清單
+A Fire	火焰	火焰		FUN_1407f3cb0 L1139164 查看清單
+Water [	水 [	水 [		FUN_1407f3cb0 L1139181 查看清單：後接深度數字與 /7]
+Salt water [	鹽水 [	盐水 [		FUN_1407f3cb0 L1139185 查看清單
+Stagnant water [	死水 [	死水 [		FUN_1407f3cb0 L1139190 查看清單
+Stagnant salt water [	停滯的鹽水 [	停滞的盐水 [		FUN_1407f3cb0 L1139195 查看清單
+Lava [	熔岩 [	熔岩 [		FUN_1407f3cb0 L1139218 查看清單（術語 magma 熔岩）
+Magma [	熔岩 [	熔岩 [		FUN_1407f3cb0 L1139222 查看清單
+broken vegetation	折斷的植被	折断的植被	inner	FUN_1407f3cb0 L1139253 Track/Spoor: 之後的足跡描述
+unintelligible	無法辨認	无法辨认	inner	FUN_1407f3cb0 L1139319 Track/Spoor: 之後的足跡描述
+The vegetation is heavily damaged here.	這裡的植被嚴重受損。	这里的植被严重受损。		FUN_1407f3cb0 L1139455 查看地格
+The vegetation is bent here.	這裡的植被被壓彎了。	这里的植被被压弯了。		FUN_1407f3cb0 L1139459 查看地格
+The vegetation has been slightly perturbed here.	這裡的植被稍微被擾動過。	这里的植被稍微被扰动过。		FUN_1407f3cb0 L1139463 查看地格
+The vegetation is broken here.	這裡的植被被折斷了。	这里的植被被折断了。		FUN_1407f3cb0 L1139467 查看地格
+This is an unintelligible mess.	這裡一團亂，無法辨認。	这里一团乱，无法辨认。		FUN_1407f3cb0 L1139622 查看地格
+north-northeast	北北東方	北北东方	inner	FUN_1407f3cb0 L1140056 據點方位：只給 a short walk to the {@1} 等句型用
+east-northeast	東北東方	东北东方	inner	FUN_1407f3cb0 L1140062 據點方位
+east-southeast	東南東方	东南东方	inner	FUN_1407f3cb0 L1140068 據點方位
+south-southeast	南南東方	南南东方	inner	FUN_1407f3cb0 L1140074 據點方位
+south-southwest	南南西方	南南西方	inner	FUN_1407f3cb0 L1140080 據點方位
+west-southwest	西南西方	西南西方	inner	FUN_1407f3cb0 L1140086 據點方位
+west-northwest	西北西方	西北西方	inner	FUN_1407f3cb0 L1140092 據點方位
+north-northwest	北北西方	北北西方	inner	FUN_1407f3cb0 L1140098 據點方位
+You must move away from surrounding obstacles such as the site's walls and rivers before you can travel.	你得先遠離據點的城牆、河流等周遭障礙，才能旅行。	你得先远离据点的城墙、河流等周围障碍，才能旅行。		FUN_1407f7020 L1142540 旅行時的公告
+You must move away from the river before you can travel.	你得先離開河邊，才能旅行。	你得先离开河边，才能旅行。		FUN_1407f7020 L1142775 旅行時的公告
+Would like to sleep or wait a while?	想睡一覺或等一會兒嗎？	想睡一觉或等一会儿吗？		FUN_1408733b0 L1211270 睡覺／等待視窗標題（原文少了 you）
+ Sleep	 睡覺	 睡觉		FUN_1408733b0 L1211323 睡覺／等待視窗選項
+ Wait	 等待	 等待		FUN_1408733b0 L1211340 睡覺／等待視窗選項
+Duration	時長	时长		FUN_1408733b0 L1211356 睡覺／等待視窗：時數表格標題
+in hours	（小時）	（小时）		FUN_1408733b0 L1211371 睡覺／等待視窗：Duration 下一行
+ Until dawn	 直到黎明	 直到黎明		FUN_1408733b0 L1211495 睡覺／等待視窗選項
+Cannot see dawn.	看不到黎明。	看不到黎明。		FUN_1408733b0 L1211516 睡覺／等待視窗：在地底
+You will sleep as necessary until dawn.	你會視需要睡到黎明。	你会视需要睡到黎明。		FUN_1408733b0 L1211664 睡覺／等待視窗說明
+You will wait, staying awake until dawn.	你會保持清醒，一直等到黎明。	你会保持清醒，一直等到黎明。		FUN_1408733b0 L1211624 睡覺／等待視窗說明
+ Go ahead	 開始	 开始		FUN_1408733b0 L1211702 睡覺／等待視窗按鈕
+Click a target or move the cursor and press 	點選目標，或移動游標後按 	点选目标，或移动光标后按 		FUN_140880120 L1218160 瞄準提示：後接按鍵圖示與「.」；游標與 settings.tsv 一致
+Delay warning: Ammo will be loaded/nocked before firing.	延遲警告：發射前會先裝填彈藥或搭箭。	延迟警告：发射前会先装填弹药或搭箭。		FUN_140880120 L1218191 瞄準提示
+You can prepare in advance with 	你可以預先按 	你可以预先按 		FUN_140880120 L1218208 瞄準提示：後接按鍵圖示
+ or from the inventory menu.	 或從物品欄選單準備。	 或从物品栏菜单准备。		FUN_140880120 L1218223 瞄準提示：接在按鍵圖示後
+Where will you aim?	你要瞄準哪裡？	你要瞄准哪里？		FUN_140880120 L1218301 瞄準提示
+Impossible throw	不可能擲中	不可能掷中		FUN_140880120 L1218562 瞄準清單：命中難度
+Impossible shot	不可能射中	不可能射中		FUN_140880120 L1218569 瞄準清單：命中難度
+Difficult throw	困難的投擲	困难的投掷		FUN_140880120 L1218588 瞄準清單：命中難度
+Difficult shot	困難的射擊	困难的射击		FUN_140880120 L1218595 瞄準清單：命中難度
+Tricky shot	棘手的射擊	棘手的射击		FUN_140880120 L1218607 瞄準清單：命中難度
+Tricky throw	棘手的投擲	棘手的投掷		FUN_140880120 L1218614 瞄準清單：命中難度
+Normal throw	一般投擲	一般投掷		FUN_140880120 L1218625 瞄準清單：命中難度
+Normal shot	一般射擊	一般射击		FUN_140880120 L1218632 瞄準清單：命中難度
+Easy throw	容易投擲	容易投掷		FUN_140880120 L1218643 瞄準清單：命中難度
+Easy shot	容易射擊	容易射击		FUN_140880120 L1218650 瞄準清單：命中難度
+Easier throw	較易投擲	较易投掷		FUN_140880120 L1218661 瞄準清單：命中難度
+Easier shot	較易射擊	较易射击		FUN_140880120 L1218669 瞄準清單：命中難度
+Simple throw	簡單投擲	简单投掷		FUN_140880120 L1218681 瞄準清單：命中難度
+Simple shot	簡單射擊	简单射击		FUN_140880120 L1218688 瞄準清單：命中難度
+Where will you jump?	你要跳到哪裡？	你要跳到哪里？		FUN_140881810 L1218901 跳躍提示
+What do you want to drop?	你要丟下什麼？	你要丢下什么？		FUN_1408819f0 L1219350 物品欄提示
+What do you want to wear?	你要穿戴什麼？	你要穿戴什么？		FUN_1408819f0 L1219360 物品欄提示
+What do you want to remove?	你要脫下什麼？	你要脱下什么？		FUN_1408819f0 L1219370 物品欄提示：脫下穿戴的物品
+What do you want to place?	你要放置什麼？	你要放置什么？		FUN_1408819f0 L1219380 物品欄提示
+What do you want to eat or drink?	你要吃或喝什麼？	你要吃或喝什么？		FUN_1408819f0 L1219390 物品欄提示
+With what do you want to interact?	你要和什麼互動？	你要和什么互动？		FUN_1408819f0 L1219400 物品欄提示
+What do you want to throw?	你要投擲什麼？	你要投掷什么？		FUN_1408819f0 L1219478 物品欄提示
+Where do you put 	要放到哪裡：	要放到哪里：		FUN_1408819f0 L1219420 物品欄提示：後接物品名與「?」
+What will you do with 	要如何處置：	要如何处置：		FUN_1408819f0 L1219454 物品欄提示：後接物品名與「?」
+Your inventory	你的物品	你的物品		FUN_1408819f0 L1219078 物品欄標題
+No recent announcements.	最近沒有通知。	最近没有通知。		FUN_140883f40 L1220521 冒險通知清單
+What do you want to do?	你想做什麼？	你想做什么？		FUN_140884460 L1220948 動作提示
+Where would you like to move?	你想移動到哪裡？	你想移动到哪里？		FUN_140884460 L1220958 動作提示
+Who or what would you like to shoot?	你想射擊誰或什麼？	你想射击谁或什么？		FUN_140884460 L1220968 動作提示
+At whom or what would you like to throw?	你想朝誰或什麼投擲？	你想朝谁或什么投掷？		FUN_140884460 L1220975 動作提示
+Charging	衝鋒中	冲锋中		FUN_140852640 L1193728 冒險狀態列
+upward	向上	向上		FUN_140852640 L1193846 冒險狀態列：動作方向，單獨畫出
+downward	向下	向下		FUN_140852640 L1193854 冒險狀態列：動作方向
+ (above)	 (上方)	 (上方)		FUN_140852640 L1194256 冒險狀態列：動作方向後綴
+ (below)	 (下方)	 (下方)		FUN_140852640 L1193867 冒險狀態列：動作方向後綴
+Attacking	攻擊中	攻击中		FUN_140852640 L1193899 冒險狀態列：目標不存在時
+Recovering from attacking	攻擊後恢復中	攻击后恢复中		FUN_140852640 L1193897 冒險狀態列：目標不存在時
+Jumping	跳躍中	跳跃中		FUN_140852640 L1194079 冒險狀態列
+Holding terrain	抓著地形	抓着地形		FUN_140852640 L1194086 冒險狀態列
+Releasing hold on terrain	放開抓著的地形	放开抓着的地形		FUN_140852640 L1194098 冒險狀態列
+Working	工作中	工作中		FUN_140852640 L1194121 冒險狀態列
+Talking	交談中	交谈中		FUN_140852640 L1194136 冒險狀態列
+Parrying	招架中	招架中		FUN_140852640 L1194157 冒險狀態列
+Blocking	格擋中	格挡中		FUN_140852640 L1194166 冒險狀態列
+Recovering from deflection	被格開後恢復中	被格开后恢复中		FUN_140852640 L1194276 冒險狀態列
+Standing Up	起身中	起身中		FUN_140852640 L1194316 冒險狀態列
+Lying Down	躺下中	躺下中		FUN_140852640 L1194325 冒險狀態列
+Pushing Object	推動物品中	推动物品中		FUN_140852640 L1194334 冒險狀態列
+Sucking Blood	吸血中	吸血中		FUN_140852640 L1194358 冒險狀態列
+Holding item	抓著物品	抓着物品		FUN_140852640 L1194367 冒險狀態列
+Releasing hold on item	放開抓著的物品	放开抓着的物品		FUN_140852640 L1194379 冒險狀態列
+Mounting	上坐騎中	上坐骑中		FUN_140852640 L1194392 冒險狀態列
+Dismounting	下坐騎中	下坐骑中		FUN_140852640 L1194401 冒險狀態列
+Leading animal	牽引動物中	牵引动物中		FUN_140852640 L1194410 冒險狀態列
+Nocking ammo	搭箭中	搭箭中		FUN_140852640 L1194459 冒險狀態列：Nocking + ammo
+Loading ammo	裝填彈藥中	装填弹药中		FUN_140852640 L1194498 冒險狀態列：Loading + ammo
+Shooting weapon	射擊中	射击中		FUN_140852640 L1194513 冒險狀態列
+Recovering after shooting	射擊後恢復中	射击后恢复中		FUN_140852640 L1194554 冒險狀態列
+Gain possession	取得所有權	取得所有权		FUN_1407e12e0 L1112587 冒險動作按鈕
+Pull it out	拔出來	拔出来		FUN_1407e1320 L1116480 冒險動作按鈕：拔出卡住的物品
+Cease nocking	停止搭箭	停止搭箭		FUN_1407e1340 L1116490 冒險動作按鈕
+Roll all	全部擲出	全部掷出		FUN_1407e1410 L1120417 冒險動作按鈕：擲骰
+Make Campfire	生營火	生营火		FUN_14083a330 L1179444 冒險動作：後面可能接 (方位)
+Attack error	攻擊錯誤	攻击错误		FUN_14083fe00 L1182779 冒險動作
+Attack creature	攻擊生物	攻击生物		FUN_14083fe00 L1182831 冒險動作：找不到目標名稱時
+Attack creatures	攻擊多個生物	攻击多个生物		FUN_14083fe00 L1182835 冒險動作：多個目標
+Combat error	戰鬥錯誤	战斗错误		FUN_140840030 L1182878 冒險動作
+Combat creature	與生物戰鬥	与生物战斗		FUN_140840030 L1182904 冒險動作：找不到目標名稱時
+Climb down	往下爬	往下爬		FUN_140842940 L1184637 冒險動作
+Path to here	前往此處	前往此处		FUN_140842ab0 L1184700 冒險移動選項
+Go below hatch	到活蓋下方	到活盖下方		FUN_140842ab0 L1184696 冒險移動選項
+Path to here (no climbing/jumping)	前往此處（不攀爬或跳躍）	前往此处（不攀爬或跳跃）		FUN_140842ab0 L1184704 冒險移動選項
+Go below hatch (no climbing/jumping)	到活蓋下方（不攀爬或跳躍）	到活盖下方（不攀爬或跳跃）		FUN_140842ab0 L1184704 冒險移動選項
+Charge Attack	衝鋒攻擊	冲锋攻击		整條寫出：adv_hud 的句型「Charge {%1}」（衝向某地）會把這個攻擊名稱拼成「衝向攻擊」

@@ -1,0 +1,225 @@
+en	zh-Hant	zh-Hans	align	note
+Agreements	協議	协议		FUN_1400c2110 L120317 冒險日誌分頁
+People	人物	人物		FUN_1400c2110 L120322 冒險日誌分頁
+Bestiary	生物圖鑑	生物图鉴		FUN_1400c2110 L120342 冒險日誌分頁
+Actors	參與者	参与者		FUN_1400c2110 L120494 權謀分頁的子分頁：涉入陰謀的人物
+Organizations	組織	组织		FUN_1400c2110 L120499 權謀分頁的子分頁
+Plots	陰謀	阴谋		FUN_1400c2110 L120505 權謀分頁的子分頁；術語 conspiracy＝陰謀
+Centered on location	以地點為中心	以地点为中心		FUN_1400c2110 L120702 事件地圖的置中方式
+Centered on last heard	以最後聽聞處為中心	以最后听闻处为中心		FUN_1400c2110 L120711 事件地圖置中在最後聽說的地點
+Centered on first heard	以最初聽聞處為中心	以最初听闻处为中心		FUN_1400c2110 L120721 事件地圖置中在最初聽說的地點
+ Showing pin,last	 排序：釘選、最近	 排序：置顶、最近		FUN_1400c2110 L120816 按鍵後的說明：事件清單依釘選、最近聽聞排序
+ Showing type,date	 排序：類型、日期	 排序：类型、日期		FUN_1400c2110 L120822 按鍵後的說明：事件清單依類型、日期排序
+ Showing all	 顯示：全部	 显示：全部		FUN_1400c2110 L122212 按鍵後的說明：人物、據點等清單顯示全部
+ Showing important	 顯示：重要	 显示：重要		FUN_1400c2110 L122219 按鍵後的說明：只顯示重要的
+: Toggle line	：切換單行	：切换单行		FUN_1400c2110 L123628 按鍵後的說明：清單每筆只顯示一行／完整內容
+One member	1 名成員	1 名成员		FUN_1400c2110 L123186 組織清單的成員數（另見句型 {#1} members）
+Org: 	屬：	属：		FUN_1400c2110 L123585 權謀參與者的所屬組織，後面接組織名（justify 3 接著畫）；「組織：」6 格放不下 5 格
+Drive	驅逐	驱逐		FUN_1400c2110 L121836 命令：Drive／勢力名／from／據點名，各畫一行
+from	從	从		FUN_1400c2110 L121847、L121790（DAT_1415ec70c）命令與取回神器的直式清單：Drive／勢力／from／據點；retrieve／神器／from／據點
+for	為	为		FUN_1400c2110 L121807（DAT_1415ec714）取回神器：…／for／勢力名
+Kill	擊殺	击杀		FUN_1400c2110 L121875（DAT_1415ec6ec）命令：Kill／目標名字
+Cause trouble for	找下列勢力的麻煩	找下列势力的麻烦		FUN_1400c2110 L121862 命令，下一行是勢力名
+Drive members of	驅逐下列勢力成員	驱逐下列势力成员		FUN_1400c2110 L121891 命令：Drive members of／勢力／out of／據點
+out of	離開	离开		FUN_1400c2110 L121902 同上
+Centered on target	以目標為中心	以目标为中心		FUN_1400c2110 L121996 命令地圖的置中方式
+Centered on commander	以指揮官為中心	以指挥官为中心		FUN_1400c2110 L122013 命令地圖的置中方式
+requested that	要求	要求		FUN_1400c2110 L120940、L121689 效力請求：X／requested that／you／serve 勢力（或 make an offer of service to／勢力），各畫一行
+serve 	效忠 	效忠 		FUN_1400c2110 L120960 同上，後面接勢力名（justify 3 接著畫）
+make an offer of service to	向下列勢力自薦效力	向下列势力自荐效力		FUN_1400c2110 L121709 同上，下一行是勢力名
+asked that	請求	请求		FUN_1400c2110 L121004、L121754 取回神器：X／asked that／you／retrieve／神器（／from 據點／for 勢力）
+retrieve 	取回 	取回 		FUN_1400c2110 L121024 同上（清單模式），後面接神器名
+agreed to join	同意加入	同意加入		FUN_1400c2110 L121232、L121425、L121473 協議詳情：X／agreed to join／you／…，各畫一行
+in insurrection against	起義反抗	起义反抗		FUN_1400c2110 L121252 起義協議：…／in insurrection against／勢力／thereby freeing／據點
+thereby freeing	藉此解放	借此解放		FUN_1400c2110 L121265 同上
+agreed to adventure with	同意陪同	同意陪同		FUN_1400c2110 L121295 冒險協議：X／agreed to adventure with／you／wherever the journey might lead
+wherever the journey might lead	四處冒險，不論旅途通往何方	四处冒险，无论旅途通往何方		FUN_1400c2110 L121313 同上，接在「同意陪同／你」之後
+agreed to guide	同意帶領	同意带领		FUN_1400c2110 L121335 嚮導協議：X／agreed to guide／you／to／目的地
+somebody unknown	某個不明人士	某个不明人士		FUN_1400c2110 L121372、L121506 目的地／救援對象不明
+in order to be brought safely away from	以便被護送離開	以便被护送离开		FUN_1400c2110 L121443 救援協議：X／agreed to join／you／…／據點
+in order to rescue	去營救	去营救		FUN_1400c2110 L121491 協助救援協議：X／agreed to join／you／in order to rescue／對象
+was bound to serve	受約束而服侍	受约束而服侍		FUN_1400c2110 L121547 契約勞役：X／was bound to serve／you／by invocation of True Name
+by invocation of True Name	因真名被喚出	因真名被唤出		FUN_1400c2110 L121565 同上
+agreed to entertain people with	同意與	同意与		FUN_1400c2110 L121587 表演協議：X／agreed to entertain people with／you／throughout the world
+throughout the world	在世界各地表演娛眾	在世界各地表演娱众		FUN_1400c2110 L121605 同上，接在「同意與／你」之後
+Overthrow Agreement	起義協議	起义协议		FUN_1400c2110 L121104；同傳說事件 an insurrection mission 起義任務 協議種類標題
+Adventuring Agreement	冒險協議	冒险协议		FUN_1400c2110 L121107 協議種類標題
+Guide Agreement	嚮導協議	向导协议		FUN_1400c2110 L121110；同 events_15 a guide agreement 協議種類標題
+Rescue Agreement	救援協議	救援协议		FUN_1400c2110 L121115（對方被護送離開） 協議種類標題
+Aid Rescue Agreement	協助救援協議	协助救援协议		FUN_1400c2110 L121118（對方協助你救人） 協議種類標題
+Bound Servitude	契約勞役	契约劳役		FUN_1400c2110 L121121；同 events_15 bound service 協議種類標題
+Entertainment Agreement	表演協議	表演协议		FUN_1400c2110 L121124 協議種類標題
+World Joining Agreement	降世協議	降世协议		FUN_1400c2110 L121128 協議種類 1（惡魔立約進入世界） 協議種類標題
+Residency Agreement	居留協議	居留协议		FUN_1400c2110 L121131；同 events_15 協議種類標題
+Grant of Citizenship	授予公民身分	授予公民身份		FUN_1400c2110 L121134 協議種類標題
+Parley Arrangement	談判安排	谈判安排		FUN_1400c2110 L121137；events_15 a parley 談判 協議種類標題
+Corruption	貪腐	贪腐		FUN_1400c2110 L121140；同 foiled corruption conspiracy 貪腐陰謀 協議種類標題
+Artifact Theft	竊取神器	窃取神器		FUN_1400c2110 L121143 協議種類標題
+Promise of Position	職位承諾	职位承诺		FUN_1400c2110 L121146；同 events_15 協議種類標題
+Assassination Plot	暗殺陰謀	暗杀阴谋		FUN_1400c2110 L121149；同 events_15 協議種類標題
+Abduction Plot	綁架陰謀	绑架阴谋		FUN_1400c2110 L121152；同 events_15 協議種類標題
+Sabotage Plot	破壞陰謀	破坏阴谋		FUN_1400c2110 L121155；同 events_15 協議種類標題
+Foiled Bribery Conspiracy	敗露的賄賂陰謀	败露的贿赂阴谋		FUN_1400c2110 L121161；同 events_15 協議種類標題
+Foiled Corruption Conspiracy	敗露的貪腐陰謀	败露的贪腐阴谋		FUN_1400c2110 L121164；同 events_15 協議種類標題
+Foiled Embezzlement Conspiracy	敗露的盜用公款陰謀	败露的挪用公款阴谋		FUN_1400c2110 L121168；同 events_15 協議種類標題
+Build Structure	興建建築	兴建建筑		FUN_1400c2110 L121172（建立神殿、公會大廳的協議） 協議種類標題
+Infiltration Plot	滲透陰謀	渗透阴谋		FUN_1400c2110 L121175；同 events_15 協議種類標題
+Framing Plot	栽贓陰謀	栽赃阴谋		FUN_1400c2110 L121178；同 events_15 協議種類標題
+War Starting Plot	挑起戰爭的陰謀	挑起战争的阴谋		FUN_1400c2110 L121181；同 events_15 協議種類標題
+Offer Service	效力請求	效力请求		FUN_1400c2110 L121184；同 events_15 a request to offer service 協議種類標題
+Retrieve Artifact	取回神器	取回神器		FUN_1400c2110 L121187 協議種類標題
+Sewer Access	下水道入口	下水道入口		FUN_14080d5e0 L1154590 旅行地圖右側／下方說明
+Abandoned shop	廢棄商店	废弃商店		FUN_14080d5e0 L1154751 旅行地圖右側／下方說明
+General imports	進口雜貨	进口杂货		FUN_14080d5e0 L1154759 商店種類 旅行地圖右側／下方說明
+Food imports	進口食品	进口食品		FUN_14080d5e0 L1154764 商店種類 旅行地圖右側／下方說明
+Clothing imports	進口衣物	进口衣物		FUN_14080d5e0 L1154769 商店種類 旅行地圖右側／下方說明
+Cloth shop	布料店	布料店		FUN_14080d5e0 L1154774 旅行地圖右側／下方說明
+Leather shop	皮革店	皮革店		FUN_14080d5e0 L1154779 旅行地圖右側／下方說明
+Woven clothing shop	布衣店	布衣店		FUN_14080d5e0 L1154784 旅行地圖右側／下方說明
+Leather clothing shop	皮衣店	皮衣店		FUN_14080d5e0 L1154789 旅行地圖右側／下方說明
+Bone carver's shop	骨雕店	骨雕店		FUN_14080d5e0 L1154794 旅行地圖右側／下方說明
+Gem cutter's shop	寶石店	宝石店		FUN_14080d5e0 L1154799 旅行地圖右側／下方說明
+Weaponsmith's shop	武器店	武器店		FUN_14080d5e0 L1154804 旅行地圖右側／下方說明
+Bowyer's shop	弓箭鋪	弓箭铺		FUN_14080d5e0 L1154809 旅行地圖右側／下方說明
+Blacksmith's shop	鐵匠鋪	铁匠铺		FUN_14080d5e0 L1154814 旅行地圖右側／下方說明
+Armorsmith's shop	盔甲店	盔甲店		FUN_14080d5e0 L1154819 旅行地圖右側／下方說明
+Metal craft shop	金屬工藝品店	金属工艺品店		FUN_14080d5e0 L1154824 旅行地圖右側／下方說明
+Leather goods shop	皮件店	皮具店		FUN_14080d5e0 L1154829 旅行地圖右側／下方說明
+Carpenter's shop	木匠鋪	木匠铺		FUN_14080d5e0 L1154834 旅行地圖右側／下方說明
+Stone furniture shop	石製家具店	石制家具店		FUN_14080d5e0 L1154839 旅行地圖右側／下方說明
+Metal furniture shop	金屬家具店	金属家具店		FUN_14080d5e0 L1154844 旅行地圖右側／下方說明
+Warehouse	倉庫	仓库		FUN_14080d5e0 L1154860 旅行地圖右側／下方說明
+Imported goods market	進口商品市場	进口商品市场		FUN_14080d5e0 L1154878 旅行地圖右側／下方說明
+Imported food market	進口食品市場	进口食品市场		FUN_14080d5e0 L1154883 旅行地圖右側／下方說明
+Imported clothing market	進口衣物市場	进口衣物市场		FUN_14080d5e0 L1154888 旅行地圖右側／下方說明
+Fruit and vegetable market	蔬果市場	果蔬市场		FUN_14080d5e0 L1154898 旅行地圖右側／下方說明
+Processed goods market	加工品市場	加工品市场		FUN_14080d5e0 L1154908 旅行地圖右側／下方說明
+Trenches	壕溝	壕沟		FUN_14080d5e0 L1154927 旅行地圖右側／下方說明
+Tree House	樹屋	树屋		FUN_14080d5e0 L1154938 精靈據點的樹 旅行地圖右側／下方說明
+The Home Tree	家園之樹	家园之树		FUN_14080d5e0 L1154944 旅行地圖右側／下方說明
+Shaping Tree	塑形樹	塑形树		FUN_14080d5e0 L1154950 旅行地圖右側／下方說明
+Market Tree	市集樹	市集树		FUN_14080d5e0 L1154956 旅行地圖右側／下方說明
+Tavern Tree	酒館樹	酒馆树		FUN_14080d5e0 L1154962 旅行地圖右側／下方說明
+Library Tree	圖書館樹	图书馆树		FUN_14080d5e0 L1154968 旅行地圖右側／下方說明
+Counting Tree	帳房樹	账房树		FUN_14080d5e0 L1154974；Counting House 帳房 旅行地圖右側／下方說明
+Guild Tree	公會樹	公会树		FUN_14080d5e0 L1154980 旅行地圖右側／下方說明
+Tower Tree	高塔樹	高塔树		FUN_14080d5e0 L1154986 旅行地圖右側／下方說明
+Civic Mound	市政土丘	市政土丘		FUN_14080d5e0 L1155008 旅行地圖右側／下方說明
+Castle Mound	城堡土丘	城堡土丘		FUN_14080d5e0 L1155014 旅行地圖右側／下方說明
+Drinking Mound	飲酒土丘	饮酒土丘		FUN_14080d5e0 L1155021 旅行地圖右側／下方說明
+Fortress Entrance	要塞入口	要塞入口		FUN_14080d5e0 L1155066 旅行地圖右側／下方說明
+Barrow	墳塚	坟冢		FUN_14080d5e0 L1155295 墓葬土丘 旅行地圖右側／下方說明
+Hillock	土丘屋	土丘屋		FUN_14080d5e0 L1155309 丘陵村落的一戶；複數 Hillocks 沿用既有「丘陵村落」（ann_10） 旅行地圖右側／下方說明
+House	房屋	房屋		FUN_14080d5e0 L1155314 旅行地圖右側／下方說明
+Houses	房屋群	房屋群		FUN_14080d5e0 L1155330 旅行地圖右側／下方說明
+Abandoned hillock	廢棄土丘屋	废弃土丘屋		FUN_14080d5e0 L1155343 旅行地圖右側／下方說明
+Abandoned house	廢棄房屋	废弃房屋		FUN_14080d5e0 L1155348 旅行地圖右側／下方說明
+Abandoned hillocks	廢棄土丘屋群	废弃土丘屋群		FUN_14080d5e0 L1155359 旅行地圖右側／下方說明
+Abandoned houses	廢棄房屋群	废弃房屋群		FUN_14080d5e0 L1155364 旅行地圖右側／下方說明
+Ruined hillock	土丘屋廢墟	土丘屋废墟		FUN_14080d5e0 L1155377 旅行地圖右側／下方說明
+Ruined house	房屋廢墟	房屋废墟		FUN_14080d5e0 L1155382 旅行地圖右側／下方說明
+Ruined hillocks	土丘屋廢墟群	土丘屋废墟群		FUN_14080d5e0 L1155393 旅行地圖右側／下方說明
+Ruined houses	房屋廢墟群	房屋废墟群		FUN_14080d5e0 L1155398 旅行地圖右側／下方說明
+No significant structures	無重要建築	无重要建筑		FUN_14080d5e0 L1155410 旅行地圖右側／下方說明
+Underground Stair	地下樓梯	地下楼梯		FUN_14080d5e0 L1156196 旅行地圖右側／下方說明
+Underground Farms	地下農場	地下农场		FUN_14080d5e0 L1156203 旅行地圖右側／下方說明
+Underground Fortress	地下要塞	地下要塞		FUN_14080d5e0 L1156211 旅行地圖右側／下方說明
+Multiple Constructions	多項建築物	多项建筑物		FUN_14080d5e0 L1158252 同一格有多個建造物 旅行地圖右側／下方說明
+Stream: 	小溪： 	小溪： 		FUN_14080d5e0 L1158347 後面接河名（另一個字串）；同 worldgen.tsv「Brook: 」溪流：  旅行地圖右側／下方說明
+Minor River: 	小河： 	小河： 		FUN_14080d5e0 L1158353 同上 旅行地圖右側／下方說明
+River: 	河流： 	河流： 		FUN_14080d5e0 L1158360 同上 旅行地圖右側／下方說明
+Major River: 	大河： 	大河： 		FUN_14080d5e0 L1158369 同上 旅行地圖右側／下方說明
+You should report the task as complete.	你該回報任務已完成。	你该汇报任务已完成。		FUN_14080d5e0 L1158515、L1158569、L1158704 地圖說明段落（mtb）的句子 旅行地圖右側／下方說明
+Glacier	冰河	冰川		FUN_14080d5e0 L1157745；也是 FUN_14075d5b0 地區類型 旅行地圖的生物群系
+Tundra	凍原	冻原		FUN_14080d5e0 L1157750；也是地區類型；同 legends_04 tundra titan 凍原 旅行地圖的生物群系
+Temperate Freshwater Swamp	溫帶淡水沼澤	温带淡水沼泽		FUN_14080d5e0 L1157755 旅行地圖的生物群系
+Temperate Saltwater Swamp	溫帶鹹水沼澤	温带咸水沼泽		FUN_14080d5e0 L1157760 旅行地圖的生物群系
+Temperate Freshwater Marsh	溫帶淡水濕地	温带淡水湿地		FUN_14080d5e0 L1157765；marsh 濕地、swamp 沼澤同 legends_04 泰坦 旅行地圖的生物群系
+Temperate Saltwater Marsh	溫帶鹹水濕地	温带咸水湿地		FUN_14080d5e0 L1157770 旅行地圖的生物群系
+Tropical Freshwater Swamp	熱帶淡水沼澤	热带淡水沼泽		FUN_14080d5e0 L1157775 旅行地圖的生物群系
+Tropical Saltwater Swamp	熱帶鹹水沼澤	热带咸水沼泽		FUN_14080d5e0 L1157780 旅行地圖的生物群系
+Mangrove Swamp	紅樹林沼澤	红树林沼泽		FUN_14080d5e0 L1157785 旅行地圖的生物群系
+Tropical Freshwater Marsh	熱帶淡水濕地	热带淡水湿地		FUN_14080d5e0 L1157790 旅行地圖的生物群系
+Tropical Saltwater Marsh	熱帶鹹水濕地	热带咸水湿地		FUN_14080d5e0 L1157795 旅行地圖的生物群系
+Taiga	寒林	寒林		FUN_14080d5e0 L1157800（DAT_1415ecb14）；原文 5 格，「針葉林」「泰加林」6 格放不下 旅行地圖的生物群系
+Temperate Conifer Forest	溫帶針葉林	温带针叶林		FUN_14080d5e0 L1157805 旅行地圖的生物群系
+Temperate Broadleaf Forest	溫帶闊葉林	温带阔叶林		FUN_14080d5e0 L1157810 旅行地圖的生物群系
+Tropical Coniferous Forest	熱帶針葉林	热带针叶林		FUN_14080d5e0 L1157815 旅行地圖的生物群系
+Tropical Dry Brdlf Forest	熱帶乾燥闊葉林	热带干燥阔叶林		FUN_14080d5e0 L1157820（Brdlf＝Broadleaf 縮寫） 旅行地圖的生物群系
+Tropical Moist Brdlf Forst	熱帶濕潤闊葉林	热带湿润阔叶林		FUN_14080d5e0 L1157825（原文縮寫 Brdlf、Forst） 旅行地圖的生物群系
+Temperate Grassland	溫帶草原	温带草原		FUN_14080d5e0 L1157830 旅行地圖的生物群系
+Tropical Grassland	熱帶草原	热带草原		FUN_14080d5e0 L1157845 旅行地圖的生物群系
+Tropical Savanna	熱帶稀樹草原	热带稀树草原		FUN_14080d5e0 L1157850；同 embark.tsv Temperate Savanna 溫帶稀樹草原 旅行地圖的生物群系
+Tropical Shrubland	熱帶灌木叢	热带灌木丛		FUN_14080d5e0 L1157855；同 worldgen.tsv Temperate Shrubland 旅行地圖的生物群系
+Badlands	惡地	劣地		FUN_14080d5e0 L1157860 旅行地圖的生物群系
+Sand Desert	沙漠	沙漠		FUN_14080d5e0 L1157870 旅行地圖的生物群系
+Tropical Ocean	熱帶海洋	热带海洋		FUN_14080d5e0 L1157875 旅行地圖的生物群系
+Temperate Ocean	溫帶海洋	温带海洋		FUN_14080d5e0 L1157880 旅行地圖的生物群系
+Arctic Ocean	極地海洋	极地海洋		FUN_14080d5e0 L1157885 生物群系，不是專有名詞北冰洋 旅行地圖的生物群系
+Temperate Freshwater Pool	溫帶淡水池	温带淡水池		FUN_14080d5e0 L1157890-1157975 旅行地圖的生物群系
+Temperate Freshwater Lake	溫帶淡水湖	温带淡水湖		FUN_14080d5e0 L1157890-1157975 旅行地圖的生物群系
+Temperate Freshwater River	溫帶淡水河	温带淡水河		FUN_14080d5e0 L1157890-1157975 旅行地圖的生物群系
+Temperate Brackish Pool	溫帶半鹹水池	温带微咸水池		FUN_14080d5e0 L1157890-1157975 旅行地圖的生物群系
+Temperate Brackish Lake	溫帶半鹹水湖	温带微咸水湖		FUN_14080d5e0 L1157890-1157975 旅行地圖的生物群系
+Temperate Brackish River	溫帶半鹹水河	温带微咸水河		FUN_14080d5e0 L1157890-1157975 旅行地圖的生物群系
+Temperate Saltwater Pool	溫帶鹹水池	温带咸水池		FUN_14080d5e0 L1157890-1157975 旅行地圖的生物群系
+Temperate Saltwater Lake	溫帶鹹水湖	温带咸水湖		FUN_14080d5e0 L1157890-1157975 旅行地圖的生物群系
+Temperate Saltwater River	溫帶鹹水河	温带咸水河		FUN_14080d5e0 L1157890-1157975 旅行地圖的生物群系
+Tropical Freshwater Pool	熱帶淡水池	热带淡水池		FUN_14080d5e0 L1157890-1157975 旅行地圖的生物群系
+Tropical Freshwater Lake	熱帶淡水湖	热带淡水湖		FUN_14080d5e0 L1157890-1157975 旅行地圖的生物群系
+Tropical Freshwater River	熱帶淡水河	热带淡水河		FUN_14080d5e0 L1157890-1157975 旅行地圖的生物群系
+Tropical Brackish Pool	熱帶半鹹水池	热带微咸水池		FUN_14080d5e0 L1157890-1157975 旅行地圖的生物群系
+Tropical Brackish Lake	熱帶半鹹水湖	热带微咸水湖		FUN_14080d5e0 L1157890-1157975 旅行地圖的生物群系
+Tropical Brackish River	熱帶半鹹水河	热带微咸水河		FUN_14080d5e0 L1157890-1157975 旅行地圖的生物群系
+Tropical Saltwater Pool	熱帶鹹水池	热带咸水池		FUN_14080d5e0 L1157890-1157975 旅行地圖的生物群系
+Tropical Saltwater Lake	熱帶鹹水湖	热带咸水湖		FUN_14080d5e0 L1157890-1157975 旅行地圖的生物群系
+Tropical Saltwater River	熱帶鹹水河	热带咸水河		FUN_14080d5e0 L1157890-1157975 旅行地圖的生物群系
+Subterranean Water	地下水域	地下水域		FUN_14080d5e0 L1157980 旅行地圖的生物群系
+Subterranean Chasm	地下裂谷	地下裂谷		FUN_14080d5e0 L1157985；chasm 同 names_terrain 裂谷 旅行地圖的生物群系
+Subterranean Magma	地下熔岩	地下熔岩		FUN_14080d5e0 L1157990 旅行地圖的生物群系
+Wetland	濕地	湿地		FUN_14075d5b0 case 0 地區類型名（世界生成進階參數 Minimum Initial … Count 用）
+Desert	荒漠	荒漠		FUN_14075d5b0 case 1（含沙漠、惡地、岩石荒地）；同 legends_04 desert titan 地區類型名（世界生成進階參數 Minimum Initial … Count 用）
+Forest	森林	森林		FUN_14075d5b0 case 2 地區類型名（世界生成進階參數 Minimum Initial … Count 用）
+Ocean	海洋	海洋		FUN_14075d5b0 case 4 地區類型名（世界生成進階參數 Minimum Initial … Count 用）
+Lake	湖泊	湖泊		FUN_14075d5b0 case 5（DAT_1416a22ac） 地區類型名（世界生成進階參數 Minimum Initial … Count 用）
+Grassland	草原	草原		FUN_14075d5b0 case 8 地區類型名（世界生成進階參數 Minimum Initial … Count 用）
+Hills	丘陵	丘陵		FUN_14075d5b0 case 9 地區類型名（世界生成進階參數 Minimum Initial … Count 用）
+Your death	你的死亡	你的死亡		FUN_1400d53a0 L131429 冒險日誌事件標題
+Your production order violation	你的違反生產令	你的违反生产令		FUN_1400d53a0 L131505-131584 事件標題：主詞＋罪名（罪名用語同 sentences_justice）
+Your export prohibition violation	你的違反出口禁令	你的违反出口禁令		FUN_1400d53a0 L131505-131584 事件標題：主詞＋罪名（罪名用語同 sentences_justice）
+Your job order violation	你的違反工作令	你的违反工作令		FUN_1400d53a0 L131505-131584 事件標題：主詞＋罪名（罪名用語同 sentences_justice）
+Your conspiracy to slow labor	你的怠工陰謀	你的怠工阴谋		FUN_1400d53a0 L131505-131584 事件標題：主詞＋罪名（罪名用語同 sentences_justice）
+Your crime of murder	你的謀殺罪行	你的谋杀罪行		FUN_1400d53a0 L131505-131584 事件標題：主詞＋罪名（罪名用語同 sentences_justice）
+Your disorderly conduct	你的擾亂秩序	你的扰乱秩序		FUN_1400d53a0 L131505-131584 事件標題：主詞＋罪名（罪名用語同 sentences_justice）
+Your building destruction	你的破壞建築	你的破坏建筑		FUN_1400d53a0 L131505-131584 事件標題：主詞＋罪名（罪名用語同 sentences_justice）
+Your vandalism	你的蓄意毀損	你的蓄意毁坏		FUN_1400d53a0 L131505-131584 事件標題：主詞＋罪名（罪名用語同 sentences_justice）
+Your crime of theft	你的竊盜罪行	你的盗窃罪行		FUN_1400d53a0 L131505-131584 事件標題：主詞＋罪名（罪名用語同 sentences_justice）
+Your crime of robbery	你的搶劫罪行	你的抢劫罪行		FUN_1400d53a0 L131505-131584 事件標題：主詞＋罪名（罪名用語同 sentences_justice）
+Your crime of blood-drinking	你的吸血罪行	你的吸血罪行		FUN_1400d53a0 L131505-131584 事件標題：主詞＋罪名（罪名用語同 sentences_justice）
+Your embezzlement	你的盜用公款	你的挪用公款		FUN_1400d53a0 L131505-131584 事件標題：主詞＋罪名（罪名用語同 sentences_justice）
+Your crime of attempted murder	你的謀殺未遂罪行	你的谋杀未遂罪行		FUN_1400d53a0 L131505-131584 事件標題：主詞＋罪名（罪名用語同 sentences_justice）
+Your crime of kidnapping	你的綁架罪行	你的绑架罪行		FUN_1400d53a0 L131505-131584 事件標題：主詞＋罪名（罪名用語同 sentences_justice）
+Your crime of attempted kidnapping	你的綁架未遂罪行	你的绑架未遂罪行		FUN_1400d53a0 L131505-131584 事件標題：主詞＋罪名（罪名用語同 sentences_justice）
+Your crime of attempted theft	你的竊盜未遂罪行	你的盗窃未遂罪行		FUN_1400d53a0 L131505-131584 事件標題：主詞＋罪名（罪名用語同 sentences_justice）
+Your crime of treason	你的叛國罪行	你的叛国罪行		FUN_1400d53a0 L131505-131584 事件標題：主詞＋罪名（罪名用語同 sentences_justice）
+Your crime of espionage	你的間諜罪行	你的间谍罪行		FUN_1400d53a0 L131505-131584 事件標題：主詞＋罪名（罪名用語同 sentences_justice）
+Your bribery	你的賄賂	你的贿赂		FUN_1400d53a0 L131505-131584 事件標題：主詞＋罪名（罪名用語同 sentences_justice）
+Your abduction	你遭綁架	你遭绑架		FUN_1400d7080 L132520 事件標題
+Your presence	你的行蹤	你的行踪		FUN_1400d7080 L132677 事件標題
+The insurrection	起義	起义		FUN_1400d7080 L132757 事件標題
+The overthrow 	政權遭推翻	政权被推翻		FUN_1400d7080 L132771 事件標題（結尾有空白）
+The failed insurrection 	起義失敗	起义失败		FUN_1400d7080 L132782 事件標題（結尾有空白）
+The insurrection crushed	起義遭鎮壓	起义被镇压		FUN_1400d7080 L132793 事件標題
+Your ascension	你的晉升	你的晋升		FUN_1400d7080 L132857 事件標題
+You have been ordered to clear the forces from this site.	你奉命肅清此地的敵軍。	你奉命肃清此地的敌军。		FUN_1400d8440 L133260 冒險日誌事件說明（FUN_1408e7440 依 58 格切行，整句一行）
+You have been ordered to cause trouble for these forces.	你奉命找這些勢力的麻煩。	你奉命找这些势力的麻烦。		FUN_1400d8440 L133358 冒險日誌事件說明（FUN_1408e7440 依 58 格切行，整句一行）
+You have been ordered to drive these forces out.	你奉命將這些勢力驅逐出去。	你奉命将这些势力驱逐出去。		FUN_1400d8440 L133402 冒險日誌事件說明（FUN_1408e7440 依 58 格切行，整句一行）
+You have been ordered to slay this creature.	你奉命殺死這個生物。	你奉命杀死这个生物。		FUN_1400d8440 L133469 冒險日誌事件說明（FUN_1408e7440 依 58 格切行，整句一行）
+This is common knowledge where you are from.	這在你的家鄉人盡皆知。	这在你的家乡人尽皆知。		FUN_1400d8440 L133927 冒險日誌事件說明（FUN_1408e7440 依 58 格切行，整句一行）
+Agreement concluded	協議已達成	协议已达成		FUN_1400c2110 L120902、L121613 協議詳情，下一行是日期；也用在 FUN_140af1190 冒險狀態欄（adv_hud）
+An order from	命令來自	命令来自		FUN_1400c2110 L121048、L121916 命令詳情，下一行是下令者；也用在 FUN_140af1190 協議欄
+Not yet completed	尚未完成	尚未完成		FUN_1400c2110 L121065、L121934 命令狀態；也用在 FUN_140af1190
+Complete: report back	已完成：回去回報	已完成：回去汇报		FUN_1400c2110 L121071、L121940 命令狀態；也用在 FUN_140af1190
+Finish reporting in	前去完成回報	前去完成汇报		FUN_1400c2110 L121078、L121947 命令狀態；也用在 FUN_140af1190
+retrieve	取回	取回		FUN_1400c2110 L121774 取回神器詳情，下一行是神器名；也用在 FUN_140af1190 協議欄
+Strongest Odor: 	最強氣味：	最强气味：		FUN_14080d5e0 L1156435、FUN_140af1190 L1610264 後面接氣味來源（首字大寫，退回小寫查）

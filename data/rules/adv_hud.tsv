@@ -1,0 +1,276 @@
+en	zh-Hant	zh-Hans	align	note
+There is a {%1}'s deep {%2} imprint in the {%3}.	這裡的{3}上有{1}深深的{2}印。	这里的{3}上有{1}深深的{2}印。		FUN_140af1190 L1605658 追蹤提示（wrap_text）：生物＋部位壓痕
+A {%1}'s deep {%2} imprint in the {%3} is here.	這裡的{3}上有{1}深深的{2}印。	这里的{3}上有{1}深深的{2}印。		FUN_1407f3cb0 L1139494 查看地格：生物＋部位壓痕
+A {%1}'s deep {%2} imprint in the {%3}.	{3}上有{1}深深的{2}印。	{3}上有{1}深深的{2}印。		FUN_1407f3cb0 L1139602 查看地格（字串過長時不接 is here）：生物＋部位壓痕
+There is a {%1}'s shallow {%2} imprint in the {%3}.	這裡的{3}上有{1}淺淺的{2}印。	这里的{3}上有{1}浅浅的{2}印。		FUN_140af1190 L1605658 追蹤提示（wrap_text）：生物＋部位壓痕
+A {%1}'s shallow {%2} imprint in the {%3} is here.	這裡的{3}上有{1}淺淺的{2}印。	这里的{3}上有{1}浅浅的{2}印。		FUN_1407f3cb0 L1139494 查看地格：生物＋部位壓痕
+A {%1}'s shallow {%2} imprint in the {%3}.	{3}上有{1}淺淺的{2}印。	{3}上有{1}浅浅的{2}印。		FUN_1407f3cb0 L1139602 查看地格（字串過長時不接 is here）：生物＋部位壓痕
+There is a {%1}'s vague {%2} imprint in the {%3}.	這裡的{3}上有{1}模糊的{2}印。	这里的{3}上有{1}模糊的{2}印。		FUN_140af1190 L1605658 追蹤提示（wrap_text）：生物＋部位壓痕
+A {%1}'s vague {%2} imprint in the {%3} is here.	這裡的{3}上有{1}模糊的{2}印。	这里的{3}上有{1}模糊的{2}印。		FUN_1407f3cb0 L1139494 查看地格：生物＋部位壓痕
+A {%1}'s vague {%2} imprint in the {%3}.	{3}上有{1}模糊的{2}印。	{3}上有{1}模糊的{2}印。		FUN_1407f3cb0 L1139602 查看地格（字串過長時不接 is here）：生物＋部位壓痕
+There is a {%1}'s {%2} imprint in the {%3}.	這裡的{3}上有{1}的{2}印。	这里的{3}上有{1}的{2}印。		FUN_140af1190 L1605658 追蹤提示（wrap_text）：生物＋部位壓痕
+A {%1}'s {%2} imprint in the {%3} is here.	這裡的{3}上有{1}的{2}印。	这里的{3}上有{1}的{2}印。		FUN_1407f3cb0 L1139494 查看地格：生物＋部位壓痕
+A {%1}'s {%2} imprint in the {%3}.	{3}上有{1}的{2}印。	{3}上有{1}的{2}印。		FUN_1407f3cb0 L1139602 查看地格（字串過長時不接 is here）：生物＋部位壓痕
+There is a {%1}'s thick {%2} print.	這裡有{1}留下的濃重{2}印痕。	这里有{1}留下的浓重{2}印痕。		FUN_140af1190 L1605658 追蹤提示（wrap_text）：生物＋沾染物的印（先比，沾染物名含空白時才不會被切開）
+A {%1}'s thick {%2} print is here.	這裡有{1}留下的濃重{2}印痕。	这里有{1}留下的浓重{2}印痕。		FUN_1407f3cb0 L1139494 查看地格：生物＋沾染物的印（先比，沾染物名含空白時才不會被切開）
+A {%1}'s thick {%2} print.	{1}留下的濃重{2}印痕。	{1}留下的浓重{2}印痕。		FUN_1407f3cb0 L1139602 查看地格（字串過長時不接 is here）：生物＋沾染物的印（先比，沾染物名含空白時才不會被切開）
+There is a {%1}'s light {%2} print.	這裡有{1}留下的淺淡{2}印痕。	这里有{1}留下的浅淡{2}印痕。		FUN_140af1190 L1605658 追蹤提示（wrap_text）：生物＋沾染物的印（先比，沾染物名含空白時才不會被切開）
+A {%1}'s light {%2} print is here.	這裡有{1}留下的淺淡{2}印痕。	这里有{1}留下的浅淡{2}印痕。		FUN_1407f3cb0 L1139494 查看地格：生物＋沾染物的印（先比，沾染物名含空白時才不會被切開）
+A {%1}'s light {%2} print.	{1}留下的淺淡{2}印痕。	{1}留下的浅淡{2}印痕。		FUN_1407f3cb0 L1139602 查看地格（字串過長時不接 is here）：生物＋沾染物的印（先比，沾染物名含空白時才不會被切開）
+There is a {%1}'s faint {%2} print.	這裡有{1}留下的隱約{2}印痕。	这里有{1}留下的隐约{2}印痕。		FUN_140af1190 L1605658 追蹤提示（wrap_text）：生物＋沾染物的印（先比，沾染物名含空白時才不會被切開）
+A {%1}'s faint {%2} print is here.	這裡有{1}留下的隱約{2}印痕。	这里有{1}留下的隐约{2}印痕。		FUN_1407f3cb0 L1139494 查看地格：生物＋沾染物的印（先比，沾染物名含空白時才不會被切開）
+A {%1}'s faint {%2} print.	{1}留下的隱約{2}印痕。	{1}留下的隐约{2}印痕。		FUN_1407f3cb0 L1139602 查看地格（字串過長時不接 is here）：生物＋沾染物的印（先比，沾染物名含空白時才不會被切開）
+There is a {%1}'s {%2} print.	這裡有{1}留下的{2}印痕。	这里有{1}留下的{2}印痕。		FUN_140af1190 L1605658 追蹤提示（wrap_text）：生物＋沾染物的印（先比，沾染物名含空白時才不會被切開）
+A {%1}'s {%2} print is here.	這裡有{1}留下的{2}印痕。	这里有{1}留下的{2}印痕。		FUN_1407f3cb0 L1139494 查看地格：生物＋沾染物的印（先比，沾染物名含空白時才不會被切開）
+A {%1}'s {%2} print.	{1}留下的{2}印痕。	{1}留下的{2}印痕。		FUN_1407f3cb0 L1139602 查看地格（字串過長時不接 is here）：生物＋沾染物的印（先比，沾染物名含空白時才不會被切開）
+There is a {%1}'s thick {%2} {%3} print.	這裡有{1}留下的濃重{2}{3}印。	这里有{1}留下的浓重{2}{3}印。		FUN_140af1190 L1605658 追蹤提示（wrap_text）：生物＋沾染物＋部位印
+A {%1}'s thick {%2} {%3} print is here.	這裡有{1}留下的濃重{2}{3}印。	这里有{1}留下的浓重{2}{3}印。		FUN_1407f3cb0 L1139494 查看地格：生物＋沾染物＋部位印
+A {%1}'s thick {%2} {%3} print.	{1}留下的濃重{2}{3}印。	{1}留下的浓重{2}{3}印。		FUN_1407f3cb0 L1139602 查看地格（字串過長時不接 is here）：生物＋沾染物＋部位印
+There is a {%1}'s light {%2} {%3} print.	這裡有{1}留下的淺淡{2}{3}印。	这里有{1}留下的浅淡{2}{3}印。		FUN_140af1190 L1605658 追蹤提示（wrap_text）：生物＋沾染物＋部位印
+A {%1}'s light {%2} {%3} print is here.	這裡有{1}留下的淺淡{2}{3}印。	这里有{1}留下的浅淡{2}{3}印。		FUN_1407f3cb0 L1139494 查看地格：生物＋沾染物＋部位印
+A {%1}'s light {%2} {%3} print.	{1}留下的淺淡{2}{3}印。	{1}留下的浅淡{2}{3}印。		FUN_1407f3cb0 L1139602 查看地格（字串過長時不接 is here）：生物＋沾染物＋部位印
+There is a {%1}'s faint {%2} {%3} print.	這裡有{1}留下的隱約{2}{3}印。	这里有{1}留下的隐约{2}{3}印。		FUN_140af1190 L1605658 追蹤提示（wrap_text）：生物＋沾染物＋部位印
+A {%1}'s faint {%2} {%3} print is here.	這裡有{1}留下的隱約{2}{3}印。	这里有{1}留下的隐约{2}{3}印。		FUN_1407f3cb0 L1139494 查看地格：生物＋沾染物＋部位印
+A {%1}'s faint {%2} {%3} print.	{1}留下的隱約{2}{3}印。	{1}留下的隐约{2}{3}印。		FUN_1407f3cb0 L1139602 查看地格（字串過長時不接 is here）：生物＋沾染物＋部位印
+There is a {%1}'s {%2} {%3} print.	這裡有{1}留下的{2}{3}印。	这里有{1}留下的{2}{3}印。		FUN_140af1190 L1605658 追蹤提示（wrap_text）：生物＋沾染物＋部位印
+A {%1}'s {%2} {%3} print is here.	這裡有{1}留下的{2}{3}印。	这里有{1}留下的{2}{3}印。		FUN_1407f3cb0 L1139494 查看地格：生物＋沾染物＋部位印
+A {%1}'s {%2} {%3} print.	{1}留下的{2}{3}印。	{1}留下的{2}{3}印。		FUN_1407f3cb0 L1139602 查看地格（字串過長時不接 is here）：生物＋沾染物＋部位印
+There is a deep left {%1} imprint in the {%2}.	這裡的{2}上有深深的左{1}印。	这里的{2}上有深深的左{1}印。		FUN_140af1190 L1605658 追蹤提示（wrap_text）：鞋類壓痕
+A deep left {%1} imprint in the {%2} is here.	這裡的{2}上有深深的左{1}印。	这里的{2}上有深深的左{1}印。		FUN_1407f3cb0 L1139494 查看地格：鞋類壓痕
+A deep left {%1} imprint in the {%2}.	{2}上有深深的左{1}印。	{2}上有深深的左{1}印。		FUN_1407f3cb0 L1139602 查看地格（字串過長時不接 is here）：鞋類壓痕
+There is a deep right {%1} imprint in the {%2}.	這裡的{2}上有深深的右{1}印。	这里的{2}上有深深的右{1}印。		FUN_140af1190 L1605658 追蹤提示（wrap_text）：鞋類壓痕
+A deep right {%1} imprint in the {%2} is here.	這裡的{2}上有深深的右{1}印。	这里的{2}上有深深的右{1}印。		FUN_1407f3cb0 L1139494 查看地格：鞋類壓痕
+A deep right {%1} imprint in the {%2}.	{2}上有深深的右{1}印。	{2}上有深深的右{1}印。		FUN_1407f3cb0 L1139602 查看地格（字串過長時不接 is here）：鞋類壓痕
+There is a deep {%1} imprint in the {%2}.	這裡的{2}上有深深的{1}印。	这里的{2}上有深深的{1}印。		FUN_140af1190 L1605658 追蹤提示（wrap_text）：鞋類壓痕
+A deep {%1} imprint in the {%2} is here.	這裡的{2}上有深深的{1}印。	这里的{2}上有深深的{1}印。		FUN_1407f3cb0 L1139494 查看地格：鞋類壓痕
+A deep {%1} imprint in the {%2}.	{2}上有深深的{1}印。	{2}上有深深的{1}印。		FUN_1407f3cb0 L1139602 查看地格（字串過長時不接 is here）：鞋類壓痕
+There is a shallow left {%1} imprint in the {%2}.	這裡的{2}上有淺淺的左{1}印。	这里的{2}上有浅浅的左{1}印。		FUN_140af1190 L1605658 追蹤提示（wrap_text）：鞋類壓痕
+A shallow left {%1} imprint in the {%2} is here.	這裡的{2}上有淺淺的左{1}印。	这里的{2}上有浅浅的左{1}印。		FUN_1407f3cb0 L1139494 查看地格：鞋類壓痕
+A shallow left {%1} imprint in the {%2}.	{2}上有淺淺的左{1}印。	{2}上有浅浅的左{1}印。		FUN_1407f3cb0 L1139602 查看地格（字串過長時不接 is here）：鞋類壓痕
+There is a shallow right {%1} imprint in the {%2}.	這裡的{2}上有淺淺的右{1}印。	这里的{2}上有浅浅的右{1}印。		FUN_140af1190 L1605658 追蹤提示（wrap_text）：鞋類壓痕
+A shallow right {%1} imprint in the {%2} is here.	這裡的{2}上有淺淺的右{1}印。	这里的{2}上有浅浅的右{1}印。		FUN_1407f3cb0 L1139494 查看地格：鞋類壓痕
+A shallow right {%1} imprint in the {%2}.	{2}上有淺淺的右{1}印。	{2}上有浅浅的右{1}印。		FUN_1407f3cb0 L1139602 查看地格（字串過長時不接 is here）：鞋類壓痕
+There is a shallow {%1} imprint in the {%2}.	這裡的{2}上有淺淺的{1}印。	这里的{2}上有浅浅的{1}印。		FUN_140af1190 L1605658 追蹤提示（wrap_text）：鞋類壓痕
+A shallow {%1} imprint in the {%2} is here.	這裡的{2}上有淺淺的{1}印。	这里的{2}上有浅浅的{1}印。		FUN_1407f3cb0 L1139494 查看地格：鞋類壓痕
+A shallow {%1} imprint in the {%2}.	{2}上有淺淺的{1}印。	{2}上有浅浅的{1}印。		FUN_1407f3cb0 L1139602 查看地格（字串過長時不接 is here）：鞋類壓痕
+There is a vague left {%1} imprint in the {%2}.	這裡的{2}上有模糊的左{1}印。	这里的{2}上有模糊的左{1}印。		FUN_140af1190 L1605658 追蹤提示（wrap_text）：鞋類壓痕
+A vague left {%1} imprint in the {%2} is here.	這裡的{2}上有模糊的左{1}印。	这里的{2}上有模糊的左{1}印。		FUN_1407f3cb0 L1139494 查看地格：鞋類壓痕
+A vague left {%1} imprint in the {%2}.	{2}上有模糊的左{1}印。	{2}上有模糊的左{1}印。		FUN_1407f3cb0 L1139602 查看地格（字串過長時不接 is here）：鞋類壓痕
+There is a vague right {%1} imprint in the {%2}.	這裡的{2}上有模糊的右{1}印。	这里的{2}上有模糊的右{1}印。		FUN_140af1190 L1605658 追蹤提示（wrap_text）：鞋類壓痕
+A vague right {%1} imprint in the {%2} is here.	這裡的{2}上有模糊的右{1}印。	这里的{2}上有模糊的右{1}印。		FUN_1407f3cb0 L1139494 查看地格：鞋類壓痕
+A vague right {%1} imprint in the {%2}.	{2}上有模糊的右{1}印。	{2}上有模糊的右{1}印。		FUN_1407f3cb0 L1139602 查看地格（字串過長時不接 is here）：鞋類壓痕
+There is a vague {%1} imprint in the {%2}.	這裡的{2}上有模糊的{1}印。	这里的{2}上有模糊的{1}印。		FUN_140af1190 L1605658 追蹤提示（wrap_text）：鞋類壓痕
+A vague {%1} imprint in the {%2} is here.	這裡的{2}上有模糊的{1}印。	这里的{2}上有模糊的{1}印。		FUN_1407f3cb0 L1139494 查看地格：鞋類壓痕
+A vague {%1} imprint in the {%2}.	{2}上有模糊的{1}印。	{2}上有模糊的{1}印。		FUN_1407f3cb0 L1139602 查看地格（字串過長時不接 is here）：鞋類壓痕
+There is a left {%1} imprint in the {%2}.	這裡的{2}上有左{1}印。	这里的{2}上有左{1}印。		FUN_140af1190 L1605658 追蹤提示（wrap_text）：鞋類壓痕
+A left {%1} imprint in the {%2} is here.	這裡的{2}上有左{1}印。	这里的{2}上有左{1}印。		FUN_1407f3cb0 L1139494 查看地格：鞋類壓痕
+A left {%1} imprint in the {%2}.	{2}上有左{1}印。	{2}上有左{1}印。		FUN_1407f3cb0 L1139602 查看地格（字串過長時不接 is here）：鞋類壓痕
+There is a right {%1} imprint in the {%2}.	這裡的{2}上有右{1}印。	这里的{2}上有右{1}印。		FUN_140af1190 L1605658 追蹤提示（wrap_text）：鞋類壓痕
+A right {%1} imprint in the {%2} is here.	這裡的{2}上有右{1}印。	这里的{2}上有右{1}印。		FUN_1407f3cb0 L1139494 查看地格：鞋類壓痕
+A right {%1} imprint in the {%2}.	{2}上有右{1}印。	{2}上有右{1}印。		FUN_1407f3cb0 L1139602 查看地格（字串過長時不接 is here）：鞋類壓痕
+There is a {%1} imprint in the {%2}.	這裡的{2}上有{1}的印痕。	这里的{2}上有{1}的印痕。		FUN_140af1190 L1605658 追蹤提示（wrap_text）：生物或鞋類壓痕（無部位）
+A {%1} imprint in the {%2} is here.	這裡的{2}上有{1}的印痕。	这里的{2}上有{1}的印痕。		FUN_1407f3cb0 L1139494 查看地格：生物或鞋類壓痕（無部位）
+A {%1} imprint in the {%2}.	{2}上有{1}的印痕。	{2}上有{1}的印痕。		FUN_1407f3cb0 L1139602 查看地格（字串過長時不接 is here）：生物或鞋類壓痕（無部位）
+There is a thick {%1} left {%2} print.	這裡有濃重的{1}左{2}印。	这里有浓重的{1}左{2}印。		FUN_140af1190 L1605658 追蹤提示（wrap_text）：沾染物＋鞋類印
+A thick {%1} left {%2} print is here.	這裡有濃重的{1}左{2}印。	这里有浓重的{1}左{2}印。		FUN_1407f3cb0 L1139494 查看地格：沾染物＋鞋類印
+A thick {%1} left {%2} print.	濃重的{1}左{2}印。	浓重的{1}左{2}印。		FUN_1407f3cb0 L1139602 查看地格（字串過長時不接 is here）：沾染物＋鞋類印
+There is a thick {%1} right {%2} print.	這裡有濃重的{1}右{2}印。	这里有浓重的{1}右{2}印。		FUN_140af1190 L1605658 追蹤提示（wrap_text）：沾染物＋鞋類印
+A thick {%1} right {%2} print is here.	這裡有濃重的{1}右{2}印。	这里有浓重的{1}右{2}印。		FUN_1407f3cb0 L1139494 查看地格：沾染物＋鞋類印
+A thick {%1} right {%2} print.	濃重的{1}右{2}印。	浓重的{1}右{2}印。		FUN_1407f3cb0 L1139602 查看地格（字串過長時不接 is here）：沾染物＋鞋類印
+There is a thick {%1} {%2} print.	這裡有濃重的{1}{2}印。	这里有浓重的{1}{2}印。		FUN_140af1190 L1605658 追蹤提示（wrap_text）：沾染物＋鞋類印
+A thick {%1} {%2} print is here.	這裡有濃重的{1}{2}印。	这里有浓重的{1}{2}印。		FUN_1407f3cb0 L1139494 查看地格：沾染物＋鞋類印
+A thick {%1} {%2} print.	濃重的{1}{2}印。	浓重的{1}{2}印。		FUN_1407f3cb0 L1139602 查看地格（字串過長時不接 is here）：沾染物＋鞋類印
+There is a light {%1} left {%2} print.	這裡有淺淡的{1}左{2}印。	这里有浅淡的{1}左{2}印。		FUN_140af1190 L1605658 追蹤提示（wrap_text）：沾染物＋鞋類印
+A light {%1} left {%2} print is here.	這裡有淺淡的{1}左{2}印。	这里有浅淡的{1}左{2}印。		FUN_1407f3cb0 L1139494 查看地格：沾染物＋鞋類印
+A light {%1} left {%2} print.	淺淡的{1}左{2}印。	浅淡的{1}左{2}印。		FUN_1407f3cb0 L1139602 查看地格（字串過長時不接 is here）：沾染物＋鞋類印
+There is a light {%1} right {%2} print.	這裡有淺淡的{1}右{2}印。	这里有浅淡的{1}右{2}印。		FUN_140af1190 L1605658 追蹤提示（wrap_text）：沾染物＋鞋類印
+A light {%1} right {%2} print is here.	這裡有淺淡的{1}右{2}印。	这里有浅淡的{1}右{2}印。		FUN_1407f3cb0 L1139494 查看地格：沾染物＋鞋類印
+A light {%1} right {%2} print.	淺淡的{1}右{2}印。	浅淡的{1}右{2}印。		FUN_1407f3cb0 L1139602 查看地格（字串過長時不接 is here）：沾染物＋鞋類印
+There is a light {%1} {%2} print.	這裡有淺淡的{1}{2}印。	这里有浅淡的{1}{2}印。		FUN_140af1190 L1605658 追蹤提示（wrap_text）：沾染物＋鞋類印
+A light {%1} {%2} print is here.	這裡有淺淡的{1}{2}印。	这里有浅淡的{1}{2}印。		FUN_1407f3cb0 L1139494 查看地格：沾染物＋鞋類印
+A light {%1} {%2} print.	淺淡的{1}{2}印。	浅淡的{1}{2}印。		FUN_1407f3cb0 L1139602 查看地格（字串過長時不接 is here）：沾染物＋鞋類印
+There is a faint {%1} left {%2} print.	這裡有隱約的{1}左{2}印。	这里有隐约的{1}左{2}印。		FUN_140af1190 L1605658 追蹤提示（wrap_text）：沾染物＋鞋類印
+A faint {%1} left {%2} print is here.	這裡有隱約的{1}左{2}印。	这里有隐约的{1}左{2}印。		FUN_1407f3cb0 L1139494 查看地格：沾染物＋鞋類印
+A faint {%1} left {%2} print.	隱約的{1}左{2}印。	隐约的{1}左{2}印。		FUN_1407f3cb0 L1139602 查看地格（字串過長時不接 is here）：沾染物＋鞋類印
+There is a faint {%1} right {%2} print.	這裡有隱約的{1}右{2}印。	这里有隐约的{1}右{2}印。		FUN_140af1190 L1605658 追蹤提示（wrap_text）：沾染物＋鞋類印
+A faint {%1} right {%2} print is here.	這裡有隱約的{1}右{2}印。	这里有隐约的{1}右{2}印。		FUN_1407f3cb0 L1139494 查看地格：沾染物＋鞋類印
+A faint {%1} right {%2} print.	隱約的{1}右{2}印。	隐约的{1}右{2}印。		FUN_1407f3cb0 L1139602 查看地格（字串過長時不接 is here）：沾染物＋鞋類印
+There is a faint {%1} {%2} print.	這裡有隱約的{1}{2}印。	这里有隐约的{1}{2}印。		FUN_140af1190 L1605658 追蹤提示（wrap_text）：沾染物＋鞋類印
+A faint {%1} {%2} print is here.	這裡有隱約的{1}{2}印。	这里有隐约的{1}{2}印。		FUN_1407f3cb0 L1139494 查看地格：沾染物＋鞋類印
+A faint {%1} {%2} print.	隱約的{1}{2}印。	隐约的{1}{2}印。		FUN_1407f3cb0 L1139602 查看地格（字串過長時不接 is here）：沾染物＋鞋類印
+There is a {%1} left {%2} print.	這裡有{1}左{2}印。	这里有{1}左{2}印。		FUN_140af1190 L1605658 追蹤提示（wrap_text）：沾染物＋鞋類印
+A {%1} left {%2} print is here.	這裡有{1}左{2}印。	这里有{1}左{2}印。		FUN_1407f3cb0 L1139494 查看地格：沾染物＋鞋類印
+A {%1} left {%2} print.	{1}左{2}印。	{1}左{2}印。		FUN_1407f3cb0 L1139602 查看地格（字串過長時不接 is here）：沾染物＋鞋類印
+There is a {%1} right {%2} print.	這裡有{1}右{2}印。	这里有{1}右{2}印。		FUN_140af1190 L1605658 追蹤提示（wrap_text）：沾染物＋鞋類印
+A {%1} right {%2} print is here.	這裡有{1}右{2}印。	这里有{1}右{2}印。		FUN_1407f3cb0 L1139494 查看地格：沾染物＋鞋類印
+A {%1} right {%2} print.	{1}右{2}印。	{1}右{2}印。		FUN_1407f3cb0 L1139602 查看地格（字串過長時不接 is here）：沾染物＋鞋類印
+{%1} is falling from the sky.	{1}從天而降。	{1}从天而降。		FUN_140af1190 L1604268 天氣提示：落下的物質名（首字大寫）
+{%1} is falling outside.	外面正飄落著{1}。	外面正飘落着{1}。		FUN_140af1190 L1604271 天氣提示：在室內時
+There is a gentle breeze blowing from the {@1}.	一陣微風從{1}吹來。	一阵微风从{1}吹来。		FUN_140af1190 L1604468 天空提示：風向（方位用 ann_10 的 north 等）
+There is a strong breeze blowing from the {@1}.	一陣強風從{1}吹來。	一阵强风从{1}吹来。		FUN_140af1190 L1604468 天空提示：風向（方位用 ann_10 的 north 等）
+There is a heavy wind blowing from the {@1}.	大風從{1}颳來。	大风从{1}刮来。		FUN_140af1190 L1604468 天空提示：風向（方位用 ann_10 的 north 等）
+There is a mighty wind blowing from the {@1}.	狂風從{1}颳來。	狂风从{1}刮来。		FUN_140af1190 L1604468 天空提示：風向（方位用 ann_10 的 north 等）
+The {@1} is rising in the west.	{1}正從西方升起。	{1}正从西方升起。		FUN_140af1190 L1604713 天空提示：月亮或月相（{@1} 收 moon、月相）
+The {@1} is rising in the east.	{1}正從東方升起。	{1}正从东方升起。		FUN_140af1190 L1604713 天空提示：月亮或月相（{@1} 收 moon、月相）
+The {@1} is low in the western sky.	{1}低懸在西邊天空。	{1}低悬在西边天空。		FUN_140af1190 L1604713 天空提示：月亮或月相（{@1} 收 moon、月相）
+The {@1} is low in the eastern sky.	{1}低懸在東邊天空。	{1}低悬在东边天空。		FUN_140af1190 L1604713 天空提示：月亮或月相（{@1} 收 moon、月相）
+The {@1} is in the western sky.	{1}在西邊天空。	{1}在西边天空。		FUN_140af1190 L1604713 天空提示：月亮或月相（{@1} 收 moon、月相）
+The {@1} is in the eastern sky.	{1}在東邊天空。	{1}在东边天空。		FUN_140af1190 L1604713 天空提示：月亮或月相（{@1} 收 moon、月相）
+The {@1} is high in the western sky.	{1}高掛在西邊天空。	{1}高挂在西边天空。		FUN_140af1190 L1604713 天空提示：月亮或月相（{@1} 收 moon、月相）
+The {@1} is high in the eastern sky.	{1}高掛在東邊天空。	{1}高挂在东边天空。		FUN_140af1190 L1604713 天空提示：月亮或月相（{@1} 收 moon、月相）
+The {@1} is directly above you.	{1}就在你正上方。	{1}就在你正上方。		FUN_140af1190 L1604713 天空提示：月亮或月相（{@1} 收 moon、月相）
+The {@1} is setting to the east.	{1}正往東方落下。	{1}正往东方落下。		FUN_140af1190 L1604713 天空提示：月亮或月相（{@1} 收 moon、月相）
+The {@1} is setting to the west.	{1}正往西方落下。	{1}正往西方落下。		FUN_140af1190 L1604713 天空提示：月亮或月相（{@1} 收 moon、月相）
+The {%1} of {2} is here.	{2}{1}就在這裡。	{2}{1}就在这里。		FUN_1407f3cb0 L1140021 據點方位提示（wrap_text）
+The {%1} of {2} is a short walk to the {@3}.	{2}{1}在{3}不遠處。	{2}{1}在{3}不远处。		FUN_1407f3cb0 L1140050 據點方位提示
+The {%1} of {2} is a half day's travel to the {@3}.	{2}{1}在{3}，約半天路程。	{2}{1}在{3}，约半天路程。		FUN_1407f3cb0 L1140050 據點方位提示
+The {%1} of {2} is nearly a day's travel to the {@3}.	{2}{1}在{3}，將近一天路程。	{2}{1}在{3}，将近一天路程。		FUN_1407f3cb0 L1140050 據點方位提示
+The {%1} of {2} is a day's travel to the {@3}.	{2}{1}在{3}，約一天路程。	{2}{1}在{3}，约一天路程。		FUN_1407f3cb0 L1140050 據點方位提示
+The {%1} of {2} is far to the {@3}.	{2}{1}遠在{3}。	{2}{1}远在{3}。		FUN_1407f3cb0 L1140050 據點方位提示
+The {%1} of {2} are here.	{2}{1}就在這裡。	{2}{1}就在这里。		FUN_1407f3cb0 L1140021 據點方位提示（wrap_text）
+The {%1} of {2} are a short walk to the {@3}.	{2}{1}在{3}不遠處。	{2}{1}在{3}不远处。		FUN_1407f3cb0 L1140050 據點方位提示
+The {%1} of {2} are a half day's travel to the {@3}.	{2}{1}在{3}，約半天路程。	{2}{1}在{3}，约半天路程。		FUN_1407f3cb0 L1140050 據點方位提示
+The {%1} of {2} are nearly a day's travel to the {@3}.	{2}{1}在{3}，將近一天路程。	{2}{1}在{3}，将近一天路程。		FUN_1407f3cb0 L1140050 據點方位提示
+The {%1} of {2} are a day's travel to the {@3}.	{2}{1}在{3}，約一天路程。	{2}{1}在{3}，约一天路程。		FUN_1407f3cb0 L1140050 據點方位提示
+The {%1} of {2} are far to the {@3}.	{2}{1}遠在{3}。	{2}{1}远在{3}。		FUN_1407f3cb0 L1140050 據點方位提示
+The {%1} is a short walk to the {@2}.	{1}在{2}不遠處。	{1}在{2}不远处。		FUN_1407f3cb0 L1140050 據點方位提示（無名稱）
+The {%1} is a half day's travel to the {@2}.	{1}在{2}，約半天路程。	{1}在{2}，约半天路程。		FUN_1407f3cb0 L1140050 據點方位提示（無名稱）
+The {%1} is nearly a day's travel to the {@2}.	{1}在{2}，將近一天路程。	{1}在{2}，将近一天路程。		FUN_1407f3cb0 L1140050 據點方位提示（無名稱）
+The {%1} is a day's travel to the {@2}.	{1}在{2}，約一天路程。	{1}在{2}，约一天路程。		FUN_1407f3cb0 L1140050 據點方位提示（無名稱）
+The {%1} is far to the {@2}.	{1}遠在{2}。	{1}远在{2}。		FUN_1407f3cb0 L1140050 據點方位提示（無名稱）
+The {%1} are a short walk to the {@2}.	{1}在{2}不遠處。	{1}在{2}不远处。		FUN_1407f3cb0 L1140050 據點方位提示（無名稱）
+The {%1} are a half day's travel to the {@2}.	{1}在{2}，約半天路程。	{1}在{2}，约半天路程。		FUN_1407f3cb0 L1140050 據點方位提示（無名稱）
+The {%1} are nearly a day's travel to the {@2}.	{1}在{2}，將近一天路程。	{1}在{2}，将近一天路程。		FUN_1407f3cb0 L1140050 據點方位提示（無名稱）
+The {%1} are a day's travel to the {@2}.	{1}在{2}，約一天路程。	{1}在{2}，约一天路程。		FUN_1407f3cb0 L1140050 據點方位提示（無名稱）
+The {%1} are far to the {@2}.	{1}遠在{2}。	{1}远在{2}。		FUN_1407f3cb0 L1140050 據點方位提示（無名稱）
+many {@1}	許多{1}	许多{1}		FUN_1407f3cb0 L1138921 查看清單：害蟲（{@1} 收複數生物名）
+a swarm of {@1}	一大群{1}	一大群{1}		FUN_1407f3cb0 L1138921 查看清單：害蟲（{@1} 收複數生物名）
+a colony of {@1}	一窩{1}	一窝{1}		FUN_1407f3cb0 L1138921 查看清單：害蟲（{@1} 收複數生物名）
+A thin layer of {%1}	一層薄薄的{1}	一层薄薄的{1}		FUN_1407f3cb0 L1139081 查看清單：地上的沾染物
+A small pile of {%1}	一小堆{1}	一小堆{1}		FUN_1407f3cb0 L1139081 查看清單：地上的沾染物
+A pile of {%1}	一堆{1}	一堆{1}		FUN_1407f3cb0 L1139081 查看清單：地上的沾染物
+A spattering of {%1}	零星濺落的{1}	零星溅落的{1}		FUN_1407f3cb0 L1139081 查看清單：地上的沾染物
+A smear of {%1}	一抹{1}	一抹{1}		FUN_1407f3cb0 L1139081 查看清單：地上的沾染物
+A pool of {%1}	一灘{1}	一滩{1}		FUN_1407f3cb0 L1139081 查看清單：地上的沾染物
+A dusting of {%1}	零星散落的{1}	零星散落的{1}		FUN_1407f3cb0 L1139081 查看清單：地上的沾染物
+You will wait, staying awake for {#1} hours.	你會保持清醒，等待 {1} 小時。	你会保持清醒，等待 {1} 小时。		FUN_1408733b0 L1211576 睡覺／等待說明
+You will wait, staying awake for {#1} hour.	你會保持清醒，等待 {1} 小時。	你会保持清醒，等待 {1} 小时。		FUN_1408733b0 L1211576 睡覺／等待說明
+You will sleep as necessary for {#1} hours.	你會在 {1} 小時內視需要睡覺。	你会在 {1} 小时内视需要睡觉。		FUN_1408733b0 L1211644 睡覺／等待說明
+You will sleep as necessary for {#1} hour.	你會在 {1} 小時內視需要睡覺。	你会在 {1} 小时内视需要睡觉。		FUN_1408733b0 L1211644 睡覺／等待說明
+Burden: {1}	負重：{1}	负重：{1}		FUN_1408819f0 L1219218 物品欄：負重 數字Γ/數字Γ
+Pick up how many? (0-{#1})	要撿起多少？(0-{1})	要捡起多少？(0-{1})		FUN_140884460 L1220676 撿起數量
+Remote: {%1}	尚遠：{1}	尚远：{1}		FUN_140852640 L1193928 冒險狀態列：攻擊距離命中還有多久
+Distant: {%1}	稍遠：{1}	稍远：{1}		FUN_140852640 L1193928 冒險狀態列：攻擊距離命中還有多久
+Starting: {%1}	起手：{1}	起手：{1}		FUN_140852640 L1193928 冒險狀態列：攻擊距離命中還有多久
+Incoming: {%1}	逼近：{1}	逼近：{1}		FUN_140852640 L1193928 冒險狀態列：攻擊距離命中還有多久
+IMMINENT: {%1}	即將命中：{1}	即将命中：{1}		FUN_140852640 L1193928 冒險狀態列：攻擊距離命中還有多久
+Attacking {1} with wrestling, aiming for {%2}	以摔角攻擊{1}，瞄準{2}	以摔跤攻击{1}，瞄准{2}		FUN_140852640 L1193959 冒險狀態列
+Attacking {1} with grab, aiming for {%2}	以擒抱攻擊{1}，瞄準{2}	以擒抱攻击{1}，瞄准{2}		FUN_140852640 L1193962 冒險狀態列
+Attacking {1} with {%2}, aiming for {%3}	以{2}攻擊{1}，瞄準{3}	以{2}攻击{1}，瞄准{3}		FUN_140852640 L1193966 冒險狀態列：{%2} 是武器或部位攻擊，由 zz_adv_hud 翻
+Attacking {1}, aiming for {%2}	攻擊{1}，瞄準{2}	攻击{1}，瞄准{2}		FUN_140852640 L1194058 冒險狀態列
+Attacking {1} with wrestling	以摔角攻擊{1}	以摔跤攻击{1}		FUN_140852640 L1193959 冒險狀態列
+Attacking {1} with grab	以擒抱攻擊{1}	以擒抱攻击{1}		FUN_140852640 L1193962 冒險狀態列
+Attacking {1} with {%2}	以{2}攻擊{1}	以{2}攻击{1}		FUN_140852640 L1193966 冒險狀態列：{%2} 是武器或部位攻擊，由 zz_adv_hud 翻
+Recovering from attacking {1} with wrestling, aiming for {%2}	以摔角攻擊{1}後恢復中，瞄準{2}	以摔跤攻击{1}后恢复中，瞄准{2}		FUN_140852640 L1193959 冒險狀態列
+Recovering from attacking {1} with grab, aiming for {%2}	以擒抱攻擊{1}後恢復中，瞄準{2}	以擒抱攻击{1}后恢复中，瞄准{2}		FUN_140852640 L1193962 冒險狀態列
+Recovering from attacking {1} with {%2}, aiming for {%3}	以{2}攻擊{1}後恢復中，瞄準{3}	以{2}攻击{1}后恢复中，瞄准{3}		FUN_140852640 L1193966 冒險狀態列
+Recovering from attacking {1}, aiming for {%2}	攻擊{1}後恢復中，瞄準{2}	攻击{1}后恢复中，瞄准{2}		FUN_140852640 L1194058 冒險狀態列
+Recovering from attacking {1} with wrestling	以摔角攻擊{1}後恢復中	以摔跤攻击{1}后恢复中		FUN_140852640 L1193959 冒險狀態列
+Recovering from attacking {1} with grab	以擒抱攻擊{1}後恢復中	以擒抱攻击{1}后恢复中		FUN_140852640 L1193962 冒險狀態列
+Recovering from attacking {1} with {%2}	以{2}攻擊{1}後恢復中	以{2}攻击{1}后恢复中		FUN_140852640 L1193966 冒險狀態列
+Attacking {1}	攻擊{1}	攻击{1}		FUN_140852640 L1193951 冒險狀態列：目標名（放在 with 句型後面）
+Recovering from attacking {1}	攻擊{1}後恢復中	攻击{1}后恢复中		FUN_140852640 L1193951 冒險狀態列
+Recovering from deflection with {%1}	{1}被格開後恢復中	{1}被格开后恢复中		FUN_140852640 L1194302 冒險狀態列
+Nock in {%1}	搭箭到{1}	搭箭到{1}		FUN_140834d50 L1175832 冒險動作：搭箭到弓上
+Load into {%1}	裝填到{1}	装填到{1}		FUN_140834d50 L1175836 冒險動作：裝填到弩
+Set on {%1}	放上{1}	放上{1}		FUN_140837ff0 L1177900 冒險動作：放到建築上；括號尾由 zz_adv_activity 接
+Put on {%1}	放上{1}	放上{1}		FUN_140837ff0 L1177903 冒險動作：Put + on + 建築
+Put in {%1}	放進{1}	放进{1}		FUN_140837ff0 L1177903 冒險動作：Put + in + 建築
+Attack {%1}	攻擊{1}	攻击{1}		FUN_14083fe00 L1182782 冒險動作：目標名；具名人物翻不出來時照英文
+Combat {%1}	迎戰{1}	迎战{1}		FUN_140840030 L1182881 冒險動作
+Move to {%1}	移動到{1}	移动到{1}		FUN_140841440 L1183841 冒險移動選項：地格名
+Charge {%1}	衝向{1}	冲向{1}		FUN_140841440 L1183839 冒險移動選項：生物或地格
+Climb to {%1}	攀到{1}	攀到{1}		FUN_140841900 L1184004 冒險移動選項
+Hold {%1}	抓住{1}	抓住{1}		FUN_140841bf0 L1184114 冒險移動選項：地格名
+Hang from {%1}	懸吊在{1}	悬吊在{1}		FUN_140841bf0 L1184112 冒險移動選項
+Climb down from {%1}	從{1}往下爬	从{1}往下爬		FUN_140842940 L1184660 冒險移動選項
+Climb {%1}	攀爬{1}	攀爬{1}		FUN_1408422b0 L1184380 冒險移動選項：物品名（梯子等）
+You smell {%1}.	你聞到{1}味。	你闻到{1}味。		FUN_140af1190 L1603625 氣味提示（wrap_text）：生物名或氣味名
+Track/Spoor: {%1}/NE/yours or companion's	足跡：{1}/東北/你或同伴的	足迹：{1}/东北/你或同伴的		FUN_1407f3cb0 L1139389 查看清單：足跡＋方向＋歸屬；track 是足跡；術語例外：track
+Track/Spoor: {%1}/NE	足跡：{1}/東北	足迹：{1}/东北		FUN_1407f3cb0 L1139389 查看清單：足跡＋方向；track 是足跡；術語例外：track
+Track/Spoor: {%1}/NW/yours or companion's	足跡：{1}/西北/你或同伴的	足迹：{1}/西北/你或同伴的		FUN_1407f3cb0 L1139389 查看清單：足跡＋方向＋歸屬；track 是足跡；術語例外：track
+Track/Spoor: {%1}/NW	足跡：{1}/西北	足迹：{1}/西北		FUN_1407f3cb0 L1139389 查看清單：足跡＋方向；track 是足跡；術語例外：track
+Track/Spoor: {%1}/SE/yours or companion's	足跡：{1}/東南/你或同伴的	足迹：{1}/东南/你或同伴的		FUN_1407f3cb0 L1139389 查看清單：足跡＋方向＋歸屬；track 是足跡；術語例外：track
+Track/Spoor: {%1}/SE	足跡：{1}/東南	足迹：{1}/东南		FUN_1407f3cb0 L1139389 查看清單：足跡＋方向；track 是足跡；術語例外：track
+Track/Spoor: {%1}/SW/yours or companion's	足跡：{1}/西南/你或同伴的	足迹：{1}/西南/你或同伴的		FUN_1407f3cb0 L1139389 查看清單：足跡＋方向＋歸屬；track 是足跡；術語例外：track
+Track/Spoor: {%1}/SW	足跡：{1}/西南	足迹：{1}/西南		FUN_1407f3cb0 L1139389 查看清單：足跡＋方向；track 是足跡；術語例外：track
+Track/Spoor: {%1}/N/yours or companion's	足跡：{1}/北/你或同伴的	足迹：{1}/北/你或同伴的		FUN_1407f3cb0 L1139389 查看清單：足跡＋方向＋歸屬；track 是足跡；術語例外：track
+Track/Spoor: {%1}/N	足跡：{1}/北	足迹：{1}/北		FUN_1407f3cb0 L1139389 查看清單：足跡＋方向；track 是足跡；術語例外：track
+Track/Spoor: {%1}/S/yours or companion's	足跡：{1}/南/你或同伴的	足迹：{1}/南/你或同伴的		FUN_1407f3cb0 L1139389 查看清單：足跡＋方向＋歸屬；track 是足跡；術語例外：track
+Track/Spoor: {%1}/S	足跡：{1}/南	足迹：{1}/南		FUN_1407f3cb0 L1139389 查看清單：足跡＋方向；track 是足跡；術語例外：track
+Track/Spoor: {%1}/E/yours or companion's	足跡：{1}/東/你或同伴的	足迹：{1}/东/你或同伴的		FUN_1407f3cb0 L1139389 查看清單：足跡＋方向＋歸屬；track 是足跡；術語例外：track
+Track/Spoor: {%1}/E	足跡：{1}/東	足迹：{1}/东		FUN_1407f3cb0 L1139389 查看清單：足跡＋方向；track 是足跡；術語例外：track
+Track/Spoor: {%1}/W/yours or companion's	足跡：{1}/西/你或同伴的	足迹：{1}/西/你或同伴的		FUN_1407f3cb0 L1139389 查看清單：足跡＋方向＋歸屬；track 是足跡；術語例外：track
+Track/Spoor: {%1}/W	足跡：{1}/西	足迹：{1}/西		FUN_1407f3cb0 L1139389 查看清單：足跡＋方向；track 是足跡；術語例外：track
+Track/Spoor: {%1}/yours or companion's	足跡：{1}/你或同伴的	足迹：{1}/你或同伴的		FUN_1407f3cb0 L1139415 查看清單：足跡＋歸屬；track 是足跡；術語例外：track
+Track/Spoor: {%1}	足跡：{1}	足迹：{1}		FUN_1407f3cb0 L1139249 查看清單：足跡，{%1} 由 zz_adv_hud 的足跡句型翻；track 是足跡；術語例外：track
+{%1} lands on one.	{1}停在 1 點。	{1}停在 1 点。		FUN_1408300d0 L1173039 擲骰結果：骰面是數字（FUN_14085da20 → FUN_14052e360 的英文數字）
+{%1} comes up one.	{1}擲出了 1。	{1}掷出了 1。		FUN_1408300d0 L1173045 擲骰結果：數字骰面
+{%1} shows one.	{1}顯示出 1。	{1}显示出 1。		FUN_1408300d0 L1173049 擲骰結果：數字骰面
+{%1} lands on two.	{1}停在 2 點。	{1}停在 2 点。		FUN_1408300d0 L1173039 擲骰結果：骰面是數字（FUN_14085da20 → FUN_14052e360 的英文數字）
+{%1} comes up two.	{1}擲出了 2。	{1}掷出了 2。		FUN_1408300d0 L1173045 擲骰結果：數字骰面
+{%1} shows two.	{1}顯示出 2。	{1}显示出 2。		FUN_1408300d0 L1173049 擲骰結果：數字骰面
+{%1} lands on three.	{1}停在 3 點。	{1}停在 3 点。		FUN_1408300d0 L1173039 擲骰結果：骰面是數字（FUN_14085da20 → FUN_14052e360 的英文數字）
+{%1} comes up three.	{1}擲出了 3。	{1}掷出了 3。		FUN_1408300d0 L1173045 擲骰結果：數字骰面
+{%1} shows three.	{1}顯示出 3。	{1}显示出 3。		FUN_1408300d0 L1173049 擲骰結果：數字骰面
+{%1} lands on four.	{1}停在 4 點。	{1}停在 4 点。		FUN_1408300d0 L1173039 擲骰結果：骰面是數字（FUN_14085da20 → FUN_14052e360 的英文數字）
+{%1} comes up four.	{1}擲出了 4。	{1}掷出了 4。		FUN_1408300d0 L1173045 擲骰結果：數字骰面
+{%1} shows four.	{1}顯示出 4。	{1}显示出 4。		FUN_1408300d0 L1173049 擲骰結果：數字骰面
+{%1} lands on five.	{1}停在 5 點。	{1}停在 5 点。		FUN_1408300d0 L1173039 擲骰結果：骰面是數字（FUN_14085da20 → FUN_14052e360 的英文數字）
+{%1} comes up five.	{1}擲出了 5。	{1}掷出了 5。		FUN_1408300d0 L1173045 擲骰結果：數字骰面
+{%1} shows five.	{1}顯示出 5。	{1}显示出 5。		FUN_1408300d0 L1173049 擲骰結果：數字骰面
+{%1} lands on six.	{1}停在 6 點。	{1}停在 6 点。		FUN_1408300d0 L1173039 擲骰結果：骰面是數字（FUN_14085da20 → FUN_14052e360 的英文數字）
+{%1} comes up six.	{1}擲出了 6。	{1}掷出了 6。		FUN_1408300d0 L1173045 擲骰結果：數字骰面
+{%1} shows six.	{1}顯示出 6。	{1}显示出 6。		FUN_1408300d0 L1173049 擲骰結果：數字骰面
+{%1} lands on seven.	{1}停在 7 點。	{1}停在 7 点。		FUN_1408300d0 L1173039 擲骰結果：骰面是數字（FUN_14085da20 → FUN_14052e360 的英文數字）
+{%1} comes up seven.	{1}擲出了 7。	{1}掷出了 7。		FUN_1408300d0 L1173045 擲骰結果：數字骰面
+{%1} shows seven.	{1}顯示出 7。	{1}显示出 7。		FUN_1408300d0 L1173049 擲骰結果：數字骰面
+{%1} lands on eight.	{1}停在 8 點。	{1}停在 8 点。		FUN_1408300d0 L1173039 擲骰結果：骰面是數字（FUN_14085da20 → FUN_14052e360 的英文數字）
+{%1} comes up eight.	{1}擲出了 8。	{1}掷出了 8。		FUN_1408300d0 L1173045 擲骰結果：數字骰面
+{%1} shows eight.	{1}顯示出 8。	{1}显示出 8。		FUN_1408300d0 L1173049 擲骰結果：數字骰面
+{%1} lands on nine.	{1}停在 9 點。	{1}停在 9 点。		FUN_1408300d0 L1173039 擲骰結果：骰面是數字（FUN_14085da20 → FUN_14052e360 的英文數字）
+{%1} comes up nine.	{1}擲出了 9。	{1}掷出了 9。		FUN_1408300d0 L1173045 擲骰結果：數字骰面
+{%1} shows nine.	{1}顯示出 9。	{1}显示出 9。		FUN_1408300d0 L1173049 擲骰結果：數字骰面
+{%1} lands on ten.	{1}停在 10 點。	{1}停在 10 点。		FUN_1408300d0 L1173039 擲骰結果：骰面是數字（FUN_14085da20 → FUN_14052e360 的英文數字）
+{%1} comes up ten.	{1}擲出了 10。	{1}掷出了 10。		FUN_1408300d0 L1173045 擲骰結果：數字骰面
+{%1} shows ten.	{1}顯示出 10。	{1}显示出 10。		FUN_1408300d0 L1173049 擲骰結果：數字骰面
+{%1} lands on eleven.	{1}停在 11 點。	{1}停在 11 点。		FUN_1408300d0 L1173039 擲骰結果：骰面是數字（FUN_14085da20 → FUN_14052e360 的英文數字）
+{%1} comes up eleven.	{1}擲出了 11。	{1}掷出了 11。		FUN_1408300d0 L1173045 擲骰結果：數字骰面
+{%1} shows eleven.	{1}顯示出 11。	{1}显示出 11。		FUN_1408300d0 L1173049 擲骰結果：數字骰面
+{%1} lands on twelve.	{1}停在 12 點。	{1}停在 12 点。		FUN_1408300d0 L1173039 擲骰結果：骰面是數字（FUN_14085da20 → FUN_14052e360 的英文數字）
+{%1} comes up twelve.	{1}擲出了 12。	{1}掷出了 12。		FUN_1408300d0 L1173045 擲骰結果：數字骰面
+{%1} shows twelve.	{1}顯示出 12。	{1}显示出 12。		FUN_1408300d0 L1173049 擲骰結果：數字骰面
+{%1} lands on thirteen.	{1}停在 13 點。	{1}停在 13 点。		FUN_1408300d0 L1173039 擲骰結果：骰面是數字（FUN_14085da20 → FUN_14052e360 的英文數字）
+{%1} comes up thirteen.	{1}擲出了 13。	{1}掷出了 13。		FUN_1408300d0 L1173045 擲骰結果：數字骰面
+{%1} shows thirteen.	{1}顯示出 13。	{1}显示出 13。		FUN_1408300d0 L1173049 擲骰結果：數字骰面
+{%1} lands on fourteen.	{1}停在 14 點。	{1}停在 14 点。		FUN_1408300d0 L1173039 擲骰結果：骰面是數字（FUN_14085da20 → FUN_14052e360 的英文數字）
+{%1} comes up fourteen.	{1}擲出了 14。	{1}掷出了 14。		FUN_1408300d0 L1173045 擲骰結果：數字骰面
+{%1} shows fourteen.	{1}顯示出 14。	{1}显示出 14。		FUN_1408300d0 L1173049 擲骰結果：數字骰面
+{%1} lands on fifteen.	{1}停在 15 點。	{1}停在 15 点。		FUN_1408300d0 L1173039 擲骰結果：骰面是數字（FUN_14085da20 → FUN_14052e360 的英文數字）
+{%1} comes up fifteen.	{1}擲出了 15。	{1}掷出了 15。		FUN_1408300d0 L1173045 擲骰結果：數字骰面
+{%1} shows fifteen.	{1}顯示出 15。	{1}显示出 15。		FUN_1408300d0 L1173049 擲骰結果：數字骰面
+{%1} lands on sixteen.	{1}停在 16 點。	{1}停在 16 点。		FUN_1408300d0 L1173039 擲骰結果：骰面是數字（FUN_14085da20 → FUN_14052e360 的英文數字）
+{%1} comes up sixteen.	{1}擲出了 16。	{1}掷出了 16。		FUN_1408300d0 L1173045 擲骰結果：數字骰面
+{%1} shows sixteen.	{1}顯示出 16。	{1}显示出 16。		FUN_1408300d0 L1173049 擲骰結果：數字骰面
+{%1} lands on seventeen.	{1}停在 17 點。	{1}停在 17 点。		FUN_1408300d0 L1173039 擲骰結果：骰面是數字（FUN_14085da20 → FUN_14052e360 的英文數字）
+{%1} comes up seventeen.	{1}擲出了 17。	{1}掷出了 17。		FUN_1408300d0 L1173045 擲骰結果：數字骰面
+{%1} shows seventeen.	{1}顯示出 17。	{1}显示出 17。		FUN_1408300d0 L1173049 擲骰結果：數字骰面
+{%1} lands on eighteen.	{1}停在 18 點。	{1}停在 18 点。		FUN_1408300d0 L1173039 擲骰結果：骰面是數字（FUN_14085da20 → FUN_14052e360 的英文數字）
+{%1} comes up eighteen.	{1}擲出了 18。	{1}掷出了 18。		FUN_1408300d0 L1173045 擲骰結果：數字骰面
+{%1} shows eighteen.	{1}顯示出 18。	{1}显示出 18。		FUN_1408300d0 L1173049 擲骰結果：數字骰面
+{%1} lands on nineteen.	{1}停在 19 點。	{1}停在 19 点。		FUN_1408300d0 L1173039 擲骰結果：骰面是數字（FUN_14085da20 → FUN_14052e360 的英文數字）
+{%1} comes up nineteen.	{1}擲出了 19。	{1}掷出了 19。		FUN_1408300d0 L1173045 擲骰結果：數字骰面
+{%1} shows nineteen.	{1}顯示出 19。	{1}显示出 19。		FUN_1408300d0 L1173049 擲骰結果：數字骰面
+{%1} lands on twenty.	{1}停在 20 點。	{1}停在 20 点。		FUN_1408300d0 L1173039 擲骰結果：骰面是數字（FUN_14085da20 → FUN_14052e360 的英文數字）
+{%1} comes up twenty.	{1}擲出了 20。	{1}掷出了 20。		FUN_1408300d0 L1173045 擲骰結果：數字骰面
+{%1} shows twenty.	{1}顯示出 20。	{1}显示出 20。		FUN_1408300d0 L1173049 擲骰結果：數字骰面

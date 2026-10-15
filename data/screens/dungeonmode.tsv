@@ -1,0 +1,22 @@
+en	zh-Hant	zh-Hans	align	row	note
+Move	移動	移动			FUN_140af1190 L1607919／L1609743、FUN_1407f7020 L1141394 冒險移動速度欄與動作清單；不放全域：大小寫退回會蓋過樂曲說明 inner 的 move（動作）
+Moving	移動中	移动中			FUN_140852640 L1193722 冒險狀態列目前動作；不放全域：舞蹈說明「moving quickly with the music」的 moving 會被 {@n} 撿成「移動中」
+to	到	到			FUN_140af1190 L1606887 協議欄「帶著〔物品〕／到／〔地點〕」單獨一行，原文 2 格只放得下一字；不放全域：「three to five」等句型會撿到 to 變成「三個到五」
+square	正中	正中			FUN_140878600 攻擊選單的命中品質；冒險模式畫面單獨畫出；全域字典裡同一個字另有意思（形狀名「方形」），放全域會改到別處，所以只在冒險畫面（dungeonmode/…）套用
+Simple	簡單	简单			FUN_140878600 攻擊選單的招式難度；冒險模式畫面單獨畫出；全域字典裡同一個字另有意思（音樂說明 first simple passage 的 simple），放全域會改到別處，所以只在冒險畫面（dungeonmode/…）套用
+Good	良好	良好			FUN_140874800 潛行評等；冒險模式畫面單獨畫出；全域字典裡同一個字另有意思（speech_05 的 This singer is no good.），放全域會改到別處，所以只在冒險畫面（dungeonmode/…）套用
+Clear	晴朗	晴朗			移動選單的天氣；冒險模式畫面單獨畫出；全域字典裡同一個字另有意思（按鈕「清除」），放全域會改到別處，所以只在冒險畫面（dungeonmode/…）套用
+Animated	活躍	活跃			FUN_140867e10 交談畫面的態度；冒險模式畫面單獨畫出；全域字典裡同一個字另有意思（事件句 were animated by 的 animated），放全域會改到別處，所以只在冒險畫面（dungeonmode/…）套用
+Butcher	屠宰	屠宰			FUN_14027bd70 L336679 合成／屠宰選單的選項（動詞）；全域 embark.tsv 的同字是職業「屠夫」，所以只在冒險畫面（dungeonmode/…）套用；術語例外：Butcher
+Hidden	已藏匿	已藏匿			FUN_141393900 L2604005 冒險物品欄狀態（正在藏匿這件物品）；冒險模式畫面單獨畫出；單字放全域會被大小寫退回搶到別處的小寫字，所以只在冒險畫面（dungeonmode/…）套用
+Blind	致盲	致盲			init.lua 神器力量 能力選單（CDI:ADV_NAME）；冒險模式畫面單獨畫出；單字放全域會被大小寫退回搶到別處的小寫字，所以只在冒險畫面（dungeonmode/…）套用
+Blister	使起泡	使起泡			init.lua 神器力量 能力選單（CDI:ADV_NAME）；冒險模式畫面單獨畫出；單字放全域會被大小寫退回搶到別處的小寫字，所以只在冒險畫面（dungeonmode/…）套用
+Curse	詛咒	诅咒			disturbance.lua 木乃伊詛咒 能力選單（CDI:ADV_NAME）；冒險模式畫面單獨畫出；單字放全域會被大小寫退回搶到別處的小寫字，所以只在冒險畫面（dungeonmode/…）套用
+Paralyze	使麻痺	使麻痹			init.lua 神器力量 能力選單（CDI:ADV_NAME）；冒險模式畫面單獨畫出；單字放全域會被大小寫退回搶到別處的小寫字，所以只在冒險畫面（dungeonmode/…）套用
+Rot	腐	腐			init.lua 神器力量 能力選單（CDI:ADV_NAME；原文 3 格只放得下一個字）；冒險模式畫面單獨畫出；單字放全域會被大小寫退回搶到別處的小寫字，所以只在冒險畫面（dungeonmode/…）套用
+Sicken	致病	致病			init.lua 神器力量 能力選單（CDI:ADV_NAME）；冒險模式畫面單獨畫出；單字放全域會被大小寫退回搶到別處的小寫字，所以只在冒險畫面（dungeonmode/…）套用
+Spit	噴吐	喷吐			creature_*.txt（羊駝等）能力選單（CDI:ADV_NAME）；冒險模式畫面單獨畫出；單字放全域會被大小寫退回搶到別處的小寫字，所以只在冒險畫面（dungeonmode/…）套用
+Suffocate	使窒息	使窒息			init.lua 神器力量 能力選單（CDI:ADV_NAME）；冒險模式畫面單獨畫出；單字放全域會被大小寫退回搶到別處的小寫字，所以只在冒險畫面（dungeonmode/…）套用
+Transform	變形	变形			shared_info.lua 鬼怪變身 能力選單（CDI:ADV_NAME）；冒險模式畫面單獨畫出；單字放全域會被大小寫退回搶到別處的小寫字，所以只在冒險畫面（dungeonmode/…）套用
+Vanish	消失	消失			interactions.lua 能力選單（CDI:ADV_NAME）；冒險模式畫面單獨畫出；單字放全域會被大小寫退回搶到別處的小寫字，所以只在冒險畫面（dungeonmode/…）套用
+Run	奔	奔			FUN_1408733b0 後的移動速度選單步態名（raws GAIT:WALK:Run）；原文 3 格只放得下一個字；不放全域：大小寫退回會蓋過舞蹈說明 inner 的 run（跑動）

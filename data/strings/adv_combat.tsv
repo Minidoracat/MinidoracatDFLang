@@ -1,0 +1,248 @@
+en	zh-Hant	zh-Hans	align	note
+Who will you attack?	你要攻擊誰？	你要攻击谁？		FUN_140878600 L1213852 攻擊選單：選目標標題
+Who will you wrestle?	你要和誰摔角？	你要和谁摔跤？		FUN_140878600 L1213852 攻擊選單：摔角選目標標題；wrestle 依 tooltips_6 繁摔角／簡摔跤
+Really start a conflict with 	真的要挑起衝突？對象：	真的要挑起冲突？对象：		FUN_140878600 L1213852 攻擊選單：確認框，後面單獨畫目標名與「?」
+Really attack 	真的要攻擊：	真的要攻击：		FUN_140878600 L1213852 攻擊選單：確認框，後面單獨畫目標名與「?」
+ has yielded.  Attack anyway?	 已經投降了。還是要攻擊嗎？	 已经投降了。还是要攻击吗？		FUN_140878600 L1213852 攻擊選單：確認框，前面單獨畫目標名
+What do you want to aim for?	你要瞄準哪裡？	你要瞄准哪里？		FUN_140878600 L1213852 攻擊選單：選部位標題
+Impossible strike	不可能命中	不可能命中		FUN_140878600 L1213852 攻擊選單 case 3：瞄準部位清單的命中難度
+Difficult strike	難以命中	难以命中		FUN_140878600 L1213852 攻擊選單 case 3：瞄準部位清單的命中難度
+Tricky strike	不易命中	不易命中		FUN_140878600 L1213852 攻擊選單 case 3：瞄準部位清單的命中難度
+Normal strike	正常命中	正常命中		FUN_140878600 L1213852 攻擊選單 case 3：瞄準部位清單的命中難度
+Easy strike	容易命中	容易命中		FUN_140878600 L1213852 攻擊選單 case 3：瞄準部位清單的命中難度
+Easier strike	更易命中	更易命中		FUN_140878600 L1213852 攻擊選單 case 3：瞄準部位清單的命中難度
+Simple strike	輕鬆命中	轻松命中		FUN_140878600 L1213852 攻擊選單 case 3：瞄準部位清單的命中難度
+can only graze	只能擦過	只能擦过		FUN_140878600 L1213852 攻擊選單 case 3/4：命中難度後的接觸品質（前面單獨畫「, 」）；同組的 square 已有「方形」譯文，見回報
+can't land squarely	難以打正	难以打正		FUN_140878600 L1213852 攻擊選單 case 3/4：命中難度後的接觸品質（前面單獨畫「, 」）；同組的 square 已有「方形」譯文，見回報
+can't quite connect	打不太正	打不太正		FUN_140878600 L1213852 攻擊選單 case 3/4：命中難度後的接觸品質（前面單獨畫「, 」）；同組的 square 已有「方形」譯文，見回報
+fairly solid	還算紮實	还算扎实		FUN_140878600 L1213852 攻擊選單 case 3/4：命中難度後的接觸品質（前面單獨畫「, 」）；同組的 square 已有「方形」譯文，見回報
+very square	非常正中	非常正中		FUN_140878600 L1213852 攻擊選單 case 3/4：命中難度後的接觸品質（前面單獨畫「, 」）；同組的 square 已有「方形」譯文，見回報
+direct hit	直接命中	直接命中		FUN_140878600 L1213852 攻擊選單 case 3/4：命中難度後的接觸品質（前面單獨畫「, 」）；同組的 square 已有「方形」譯文，見回報
+Impossible	不可能	不可能		FUN_140878600 L1213852 攻擊選單 case 4：攻擊選單招式難度；交談的說服機率也用
+Difficult	困難	困难		FUN_140878600 L1213852 攻擊選單 case 4：攻擊選單招式難度
+Tricky	棘手	棘手		FUN_140878600 L1213852 攻擊選單 case 4：攻擊選單招式難度
+Easy	容易	容易		FUN_140878600 L1213852 攻擊選單 case 4：攻擊選單招式難度
+Easier	較易	较易		FUN_140878600 L1213852 攻擊選單 case 4：攻擊選單招式難度
+Fast	快速	快速		FUN_140878600 L1213852 攻擊選單 case 4：攻擊選單招式速度
+V Fast	極快	极快		FUN_140878600 L1213852 攻擊選單 case 4：攻擊選單招式速度（Very Fast）
+Slow	緩慢	缓慢		FUN_140878600 L1213852 攻擊選單 case 4：攻擊選單招式速度
+V Slow	極慢	极慢		FUN_140878600 L1213852 攻擊選單 case 4：攻擊選單招式速度（Very Slow）
+VVSlow	龜速	龟速		FUN_140878600 L1213852 攻擊選單 case 4：攻擊選單招式速度（最慢）
+ strike	 攻擊	 攻击		FUN_140878600 L1213852 攻擊選單 case 4：攻擊選單：接在 Normal 或速度字後面單獨畫
+push	推撞	推撞		FUN_140878600 L1213852 攻擊選單 case 4：沒有可用部位時的招式名；也是冒險狀態列 with push 的攻擊方式（佔位裡也查這條）
+snatch at	撲抓	扑抓		攻擊招式動詞（raws ATTACK_VERB）：FUN_140878600 L1213852 攻擊選單 case 4 招式名
+stab at	刺	刺		攻擊招式動詞（raws ATTACK_VERB）：FUN_140878600 L1213852 攻擊選單 case 4 招式名
+Dodge NW	閃向西北	闪向西北		FUN_140878600 L1213852 攻擊選單 case 7：閃避方向（FUN_14074f220）
+Dodge NW/Above	閃向西北上方	闪向西北上方		FUN_140878600 L1213852 攻擊選單 case 7：閃避方向＋上下層（FUN_14074f220）
+Dodge NW/Below	閃向西北下方	闪向西北下方		FUN_140878600 L1213852 攻擊選單 case 7：閃避方向＋上下層（FUN_14074f220）
+Dodge NE	閃向東北	闪向东北		FUN_140878600 L1213852 攻擊選單 case 7：閃避方向（FUN_14074f220）
+Dodge NE/Above	閃向東北上方	闪向东北上方		FUN_140878600 L1213852 攻擊選單 case 7：閃避方向＋上下層（FUN_14074f220）
+Dodge NE/Below	閃向東北下方	闪向东北下方		FUN_140878600 L1213852 攻擊選單 case 7：閃避方向＋上下層（FUN_14074f220）
+Dodge SW	閃向西南	闪向西南		FUN_140878600 L1213852 攻擊選單 case 7：閃避方向（FUN_14074f220）
+Dodge SW/Above	閃向西南上方	闪向西南上方		FUN_140878600 L1213852 攻擊選單 case 7：閃避方向＋上下層（FUN_14074f220）
+Dodge SW/Below	閃向西南下方	闪向西南下方		FUN_140878600 L1213852 攻擊選單 case 7：閃避方向＋上下層（FUN_14074f220）
+Dodge SE	閃向東南	闪向东南		FUN_140878600 L1213852 攻擊選單 case 7：閃避方向（FUN_14074f220）
+Dodge SE/Above	閃向東南上方	闪向东南上方		FUN_140878600 L1213852 攻擊選單 case 7：閃避方向＋上下層（FUN_14074f220）
+Dodge SE/Below	閃向東南下方	闪向东南下方		FUN_140878600 L1213852 攻擊選單 case 7：閃避方向＋上下層（FUN_14074f220）
+Dodge West	閃向西	闪向西		FUN_140878600 L1213852 攻擊選單 case 7：閃避方向（FUN_14074f220）
+Dodge West/Above	閃向西上方	闪向西上方		FUN_140878600 L1213852 攻擊選單 case 7：閃避方向＋上下層（FUN_14074f220）
+Dodge West/Below	閃向西下方	闪向西下方		FUN_140878600 L1213852 攻擊選單 case 7：閃避方向＋上下層（FUN_14074f220）
+Dodge East	閃向東	闪向东		FUN_140878600 L1213852 攻擊選單 case 7：閃避方向（FUN_14074f220）
+Dodge East/Above	閃向東上方	闪向东上方		FUN_140878600 L1213852 攻擊選單 case 7：閃避方向＋上下層（FUN_14074f220）
+Dodge East/Below	閃向東下方	闪向东下方		FUN_140878600 L1213852 攻擊選單 case 7：閃避方向＋上下層（FUN_14074f220）
+Dodge North	閃向北	闪向北		FUN_140878600 L1213852 攻擊選單 case 7：閃避方向（FUN_14074f220）
+Dodge North/Above	閃向北上方	闪向北上方		FUN_140878600 L1213852 攻擊選單 case 7：閃避方向＋上下層（FUN_14074f220）
+Dodge North/Below	閃向北下方	闪向北下方		FUN_140878600 L1213852 攻擊選單 case 7：閃避方向＋上下層（FUN_14074f220）
+Dodge South	閃向南	闪向南		FUN_140878600 L1213852 攻擊選單 case 7：閃避方向（FUN_14074f220）
+Dodge South/Above	閃向南上方	闪向南上方		FUN_140878600 L1213852 攻擊選單 case 7：閃避方向＋上下層（FUN_14074f220）
+Dodge South/Below	閃向南下方	闪向南下方		FUN_140878600 L1213852 攻擊選單 case 7：閃避方向＋上下層（FUN_14074f220）
+Dodge Above	閃向上方	闪向上方		FUN_140878600 L1213852 攻擊選單 case 7：閃避方向（FUN_14074f220）
+Dodge Below	閃向下方	闪向下方		FUN_140878600 L1213852 攻擊選單 case 7：閃避方向（FUN_14074f220）
+Dodge Here	原地閃避	原地闪避		FUN_140878600 L1213852 攻擊選單 case 7：閃避方向（FUN_14074f220）
+No quick attack: enraged	無法快速攻擊：暴怒中	无法快速攻击：暴怒中		FUN_140878600 L1213852 攻擊選單 case 4：攻擊方式說明列（快捷鍵後）
+No heavy attack: enraged	無法重擊：暴怒中	无法重击：暴怒中		FUN_140878600 L1213852 攻擊選單 case 4：攻擊方式說明列（快捷鍵後）
+Forced wild attack: enraged	只能狂野攻擊：暴怒中	只能狂野攻击：暴怒中		FUN_140878600 L1213852 攻擊選單 case 4：攻擊方式說明列（快捷鍵後）
+No precise attack: enraged	無法精準攻擊：暴怒中	无法精准攻击：暴怒中		FUN_140878600 L1213852 攻擊選單 case 4：攻擊方式說明列（快捷鍵後）
+Quick attack: faster to strike and recover, but not powerful	快速攻擊：出手與恢復較快，但威力不大	快速攻击：出手和恢复较快，但威力不大		FUN_140878600 L1213852 攻擊選單 case 4：攻擊方式說明列（快捷鍵後）
+Heavy attack: slower to strike and recover, but hits harder	重擊：出手與恢復較慢，但打得更重	重击：出手和恢复较慢，但打得更重		FUN_140878600 L1213852 攻擊選單 case 4：攻擊方式說明列（快捷鍵後）
+Wild attack: fast strike, slow recovery, hard but unbalancing/inaccurate	狂野攻擊：出手快、恢復慢，力道強但會失去平衡、不準	狂野攻击：出手快、恢复慢，力道强但会失去平衡、不准		FUN_140878600 L1213852 攻擊選單 case 4：攻擊方式說明列（快捷鍵後）
+Precise attack: very slow to strike, improved accuracy	精準攻擊：出手很慢，但更準確	精准攻击：出手很慢，但更准确		FUN_140878600 L1213852 攻擊選單 case 4：攻擊方式說明列（快捷鍵後）
+No charge attack: no target	無法衝鋒：沒有目標	无法冲锋：没有目标		FUN_140878600 L1213852 攻擊選單 case 4：攻擊方式說明列（快捷鍵後）
+No charge attack: you are on the ground	無法衝鋒：你倒在地上	无法冲锋：你倒在地上		FUN_140878600 L1213852 攻擊選單 case 4：攻擊方式說明列（快捷鍵後）
+No charge attack: you are mounted	無法衝鋒：你正在騎乘	无法冲锋：你正在骑乘		FUN_140878600 L1213852 攻擊選單 case 4：攻擊方式說明列（快捷鍵後）
+No charge attack: you are chained	無法衝鋒：你被鎖鏈拴住	无法冲锋：你被锁链拴住		FUN_140878600 L1213852 攻擊選單 case 4：攻擊方式說明列（快捷鍵後）
+No charge attack: you are in uncontrolled flight	無法衝鋒：你正失控飛行	无法冲锋：你正失控飞行		FUN_140878600 L1213852 攻擊選單 case 4：攻擊方式說明列（快捷鍵後）
+No charge attack: you are on a vehicle	無法衝鋒：你在載具上	无法冲锋：你在载具上		FUN_140878600 L1213852 攻擊選單 case 4：攻擊方式說明列（快捷鍵後）
+No charge attack: you are on a projectile	無法衝鋒：你正被拋飛	无法冲锋：你正被抛飞		FUN_140878600 L1213852 攻擊選單 case 4：攻擊方式說明列（快捷鍵後）
+No charge attack: you are climbing	無法衝鋒：你正在攀爬	无法冲锋：你正在攀爬		FUN_140878600 L1213852 攻擊選單 case 4：攻擊方式說明列（快捷鍵後）
+No charge attack: target is on the ground	無法衝鋒：目標倒在地上	无法冲锋：目标倒在地上		FUN_140878600 L1213852 攻擊選單 case 4：攻擊方式說明列（快捷鍵後）
+No charge attack: target is mounted	無法衝鋒：目標正在騎乘	无法冲锋：目标正在骑乘		FUN_140878600 L1213852 攻擊選單 case 4：攻擊方式說明列（快捷鍵後）
+No charge attack: target is chained	無法衝鋒：目標被鎖鏈拴住	无法冲锋：目标被锁链拴住		FUN_140878600 L1213852 攻擊選單 case 4：攻擊方式說明列（快捷鍵後）
+No charge attack: target is in uncontrolled flight	無法衝鋒：目標正失控飛行	无法冲锋：目标正失控飞行		FUN_140878600 L1213852 攻擊選單 case 4：攻擊方式說明列（快捷鍵後）
+No charge attack: target is on a vehicle	無法衝鋒：目標在載具上	无法冲锋：目标在载具上		FUN_140878600 L1213852 攻擊選單 case 4：攻擊方式說明列（快捷鍵後）
+No charge attack: target is on a projectile	無法衝鋒：目標正被拋飛	无法冲锋：目标正被抛飞		FUN_140878600 L1213852 攻擊選單 case 4：攻擊方式說明列（快捷鍵後）
+No charge attack: target is climbing	無法衝鋒：目標正在攀爬	无法冲锋：目标正在攀爬		FUN_140878600 L1213852 攻擊選單 case 4：攻擊方式說明列（快捷鍵後）
+No charge attack: target shares your location	無法衝鋒：目標和你在同一格	无法冲锋：目标和你在同一格		FUN_140878600 L1213852 攻擊選單 case 4：攻擊方式說明列（快捷鍵後）；術語例外：location
+No charge attack: target's location inaccessible	無法衝鋒：到不了目標的位置	无法冲锋：到不了目标的位置		FUN_140878600 L1213852 攻擊選單 case 4：攻擊方式說明列（快捷鍵後）；術語例外：location
+No charge attack: target too far away	無法衝鋒：目標太遠	无法冲锋：目标太远		FUN_140878600 L1213852 攻擊選單 case 4：攻擊方式說明列（快捷鍵後）
+Charge attack: move toward your opponent	衝鋒攻擊：衝向你的對手	冲锋攻击：冲向你的对手		FUN_140878600 L1213852 攻擊選單 case 4：攻擊方式說明列（快捷鍵後）
+Multi-attack: choose another simultaneous action afterward	多重攻擊：之後再選一個同時進行的動作	多重攻击：之后再选一个同时进行的动作		FUN_140878600 L1213852 攻擊選單 case 4：攻擊方式說明列（快捷鍵後）
+Click a creature to start a new conversation	點選一個生物來開始新的交談	点击一个生物来开始新的对话		FUN_140867e10 L1205589 交談畫面：提示
+Toward you: 	對你：	对你：		FUN_140867e10 L1205589 交談畫面：對方態度列標籤
+Neutral attitude	態度中立	态度中立		FUN_140867e10 L1205589 交談畫面：對你的態度（「, 」分隔的單字）
+Negative attitude	態度負面	态度负面		FUN_140867e10 L1205589 交談畫面：對你的態度（「, 」分隔的單字）
+Positive attitude	態度正面	态度正面		FUN_140867e10 L1205589 交談畫面：對你的態度（「, 」分隔的單字）
+Acquiescent	順從	顺从		FUN_140867e10 L1205589 交談畫面：對你的態度（「, 」分隔的單字）
+Unassuming	謙遜	谦逊		FUN_140867e10 L1205589 交談畫面：對你的態度（「, 」分隔的單字）
+Confident	自信	自信		FUN_140867e10 L1205589 交談畫面：對你的態度（「, 」分隔的單字）
+Bold	大膽	大胆		FUN_140867e10 L1205589 交談畫面：對你的態度（「, 」分隔的單字）
+Relationship: 	關係：	关系：		FUN_140867e10 L1205589 交談畫面：關係列標籤
+Likes you	喜歡你	喜欢你		FUN_140867e10 L1205589 交談畫面：關係列的值
+Hates you	憎恨你	憎恨你		FUN_140867e10 L1205589 交談畫面：關係列的值
+Dislikes you	討厭你	讨厌你		FUN_140867e10 L1205589 交談畫面：關係列的值
+Loves you	愛你	爱你		FUN_140867e10 L1205589 交談畫面：關係列的值
+Scared of you	害怕你	害怕你		FUN_140867e10 L1205589 交談畫面：關係列的值
+No fear of you	不怕你	不怕你		FUN_140867e10 L1205589 交談畫面：關係列的值
+Terrified of you	極度怕你	极度怕你		FUN_140867e10 L1205589 交談畫面：關係列的值
+Respects you	尊敬你	尊敬你		FUN_140867e10 L1205589 交談畫面：關係列的值
+No respect for you	不尊重你	不尊重你		FUN_140867e10 L1205589 交談畫面：關係列的值
+Low respect for you	不太尊重你	不太尊重你		FUN_140867e10 L1205589 交談畫面：關係列的值
+Trusts you	信任你	信任你		FUN_140867e10 L1205589 交談畫面：關係列的值
+Distrusts you	不信任你	不信任你		FUN_140867e10 L1205589 交談畫面：關係列的值
+Neutral	中立	中立		FUN_140867e10 L1205589 交談畫面：關係列的值
+Loyal	忠誠	忠诚		FUN_140867e10 L1205589 交談畫面：關係列的值
+Highly Loyal	非常忠誠	非常忠诚		FUN_140867e10 L1205589 交談畫面：關係列的值
+General Mood: 	整體情緒：	整体情绪：		FUN_140867e10 L1205589 交談畫面：情緒列標籤；術語例外：general
+In Anguish	極度痛苦	极度痛苦		FUN_140867e10 L1205589 交談畫面：整體情緒（情緒名）
+Averse	反感	反感		FUN_140867e10 L1205589 交談畫面：整體情緒（情緒名）
+In Awe	敬畏	敬畏		FUN_140867e10 L1205589 交談畫面：整體情緒（情緒名）
+Empathetic	感同身受	感同身受		FUN_140867e10 L1205589 交談畫面：整體情緒（情緒名）
+Eexcited	興奮	兴奋		FUN_140867e10 L1205589 交談畫面：整體情緒（情緒名）；遊戲原文拼錯（Excited），照原文比對
+Ferocious	兇猛	凶猛		FUN_140867e10 L1205589 交談畫面：整體情緒（情緒名）
+Grateful	感激	感激		FUN_140867e10 L1205589 交談畫面：整體情緒（情緒名）
+Grimly Satisfied	冷然滿足	冷然满足		FUN_140867e10 L1205589 交談畫面：整體情緒（情緒名）
+Joyous	歡快	欢快		FUN_140867e10 L1205589 交談畫面：整體情緒（情緒名）
+Loving	慈愛	慈爱		FUN_140867e10 L1205589 交談畫面：整體情緒（情緒名）
+Enraged	暴怒	暴怒		FUN_140867e10 L1205589 交談畫面：整體情緒（情緒名）
+Triumphant	得意	得意		FUN_140867e10 L1205589 交談畫面：整體情緒（情緒名）
+Choose your tone/tact	選擇說話的語氣	选择说话的语气		FUN_140867e10 L1205589 交談畫面：說話語氣選單標題
+Persuade: 	說服：	说服：		FUN_140867e10 L1205589 交談畫面：說服技能列標籤，後接「技能等級 Persuader」
+Intimidate: 	威嚇：	威吓：		FUN_140867e10 L1205589 交談畫面：威嚇技能列標籤，後接「技能等級 Intimidator」
+Almost guaranteed	幾乎必成	几乎必成		FUN_140867e10 L1205589 交談畫面：說服／威嚇成功機率
+Likely success	很可能成功	很可能成功		FUN_140867e10 L1205589 交談畫面：說服／威嚇成功機率
+Favorable odds	勝算較大	胜算较大		FUN_140867e10 L1205589 交談畫面：說服／威嚇成功機率
+Even odds	勝算一半	胜算一半		FUN_140867e10 L1205589 交談畫面：說服／威嚇成功機率
+Unfavorable odds	勝算較小	胜算较小		FUN_140867e10 L1205589 交談畫面：說服／威嚇成功機率
+Likely failure	很可能失敗	很可能失败		FUN_140867e10 L1205589 交談畫面：說服／威嚇成功機率
+Nearly impossible	幾乎不可能	几乎不可能		FUN_140867e10 L1205589 交談畫面：說服／威嚇成功機率
+What do you want?	你想要什麼？	你想要什么？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+How will you respond to the adoption request?	你要怎麼回應收養請求？	你要怎么回应收养请求？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+How will you respond to the position offer?	你要怎麼回應職位邀請？	你要怎么回应职位邀请？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+What will you say about the conflict?	關於這場衝突，你要說什麼？	关于这场冲突，你要说什么？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+What will you say about the journey?	關於這趟旅程，你要說什麼？	关于这趟旅程，你要说什么？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+Which pet will you gift?	你要送出哪隻寵物？	你要送出哪只宠物？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+What do you want to know?	你想知道什麼？	你想知道什么？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+Where do you want to go?	你想去哪裡？	你想去哪里？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+About whom do you ask?	你要打聽誰？	你要打听谁？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+What will you say about services?	關於服務，你要說什麼？	关于服务，你要说什么？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+What will you say about the agreement?	關於這項協議，你要說什麼？	关于这项协议，你要说什么？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+What will you say about the trade?	關於這筆交易，你要說什麼？	关于这笔交易，你要说什么？		FUN_140867e10 L1205589 交談畫面：交談選單標題；術語例外：Trade
+What will you say about the request?	關於這項請求，你要說什麼？	关于这项请求，你要说什么？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+How will you respond?	你要怎麼回應？	你要怎么回应？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+How will you ask?	你要怎麼問？	你要怎么问？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+What will you say about the conclusion of the agreement?	關於協議的達成，你要說什麼？	关于协议的达成，你要说什么？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+What will you say about the rescue?	關於這次救援，你要說什麼？	关于这次救援，你要说什么？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+What will you say about the refusal to accept tribute?	關於拒絕接受貢品一事，你要說什麼？	关于拒绝接受贡品一事，你要说什么？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+What will you say about tribute agreement?	關於進貢協議，你要說什麼？	关于进贡协议，你要说什么？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+What will you say about the peace agreement?	關於和平協議，你要說什麼？	关于和平协议，你要说什么？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+What will you say about the refusal to give tribute?	關於拒絕進貢一事，你要說什麼？	关于拒绝进贡一事，你要说什么？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+What will you say about the new leadership?	關於新的領導者，你要說什麼？	关于新的领导者，你要说什么？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+What will you say about the occupation?	關於這次佔領，你要說什麼？	关于这次占领，你要说什么？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+What will you say about the trouble?	關於這場麻煩，你要說什麼？	关于这场麻烦，你要说什么？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+What will you say about the beast?	關於那頭野獸，你要說什麼？	关于那头野兽，你要说什么？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+What will you say about the refugees?	關於那些難民，你要說什麼？	关于那些难民，你要说什么？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+How will you respond to the offer of service?	你要怎麼回應效力的提議？	你要怎么回应效力的提议？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+What will you say about the tribute stoppage?	關於停止進貢一事，你要說什麼？	关于停止进贡一事，你要说什么？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+What will you say about the failed peace agreement?	關於破裂的和平協議，你要說什麼？	关于破裂的和平协议，你要说什么？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+What will you say about the gang?	關於那個幫派，你要說什麼？	关于那个帮派，你要说什么？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+What will you say about the claim?	關於這項主張，你要說什麼？	关于这项主张，你要说什么？		FUN_140867e10 L1205589 交談畫面：交談選單標題；術語例外：claim
+What will you say about the insurrection?	關於這場叛亂，你要說什麼？	关于这场叛乱，你要说什么？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+What will you say?	你要說什麼？	你要说什么？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+What will you say about the failed occupation?	關於失敗的佔領，你要說什麼？	关于失败的占领，你要说什么？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+What will you say about the army?	關於那支軍隊，你要說什麼？	关于那支军队，你要说什么？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+What will you say about the incident?	關於這起事件，你要說什麼？	关于这起事件，你要说什么？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+What will you say about the abduction?	關於這起綁架，你要說什麼？	关于这起绑架，你要说什么？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+What will you say about the site reclamation?	關於收復據點一事，你要說什麼？	关于收复据点一事，你要说什么？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+What will you say about the site's foundation?	關於據點的建立，你要說什麼？	关于据点的建立，你要说什么？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+What will you say about the end of the insurrection?	關於叛亂的結束，你要說什麼？	关于叛乱的结束，你要说什么？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+What will you say about the group?	關於這個團體，你要說什麼？	关于这个团体，你要说什么？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+How will you respond to the request for directions?	你要怎麼回應問路的請求？	你要怎么回应问路的请求？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+How will you respond to the request for information?	你要怎麼回應打聽消息的請求？	你要怎么回应打听消息的请求？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+What will you say about the missing treasure?	關於失蹤的寶物，你要說什麼？	关于失踪的宝物，你要说什么？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+How will you respond to the request for a guide?	你要怎麼回應帶路的請求？	你要怎么回应带路的请求？		FUN_140867e10 L1205589 交談畫面：交談選單標題；術語例外：guide
+How will you respond to the demand for tribute?	你要怎麼回應進貢的要求？	你要怎么回应进贡的要求？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+How will you respond to the offer of peace?	你要怎麼回應求和的提議？	你要怎么回应求和的提议？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+How will you respond to the demand to yield?	你要怎麼回應投降的要求？	你要怎么回应投降的要求？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+How will you respond to the request to cease hostilities?	你要怎麼回應停戰的請求？	你要怎么回应停战的请求？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+What will you say about your master?	關於你的主人，你要說什麼？	关于你的主人，你要说什么？		FUN_140867e10 L1205589 交談畫面：交談選單標題；術語例外：Master
+How will you respond to the accusation?	你要怎麼回應這項指控？	你要怎么回应这项指控？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+How will you respond about your profession?	問到你的職業，你要怎麼回答？	问到你的职业，你要怎么回答？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+What will you say about your plots and scheming?	關於你的陰謀詭計，你要說什麼？	关于你的阴谋诡计，你要说什么？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+What will you say about the site?	關於這個據點，你要說什麼？	关于这个据点，你要说什么？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+What will you say about the surrounding area?	關於周邊地區，你要說什麼？	关于周边地区，你要说什么？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+How will you respond to the invocation?	你要怎麼回應這番祈求？	你要怎么回应这番祈求？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+What will you say about the structure?	關於這座建築，你要說什麼？	关于这座建筑，你要说什么？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+What will you say about your family?	關於你的家人，你要說什麼？	关于你的家人，你要说什么？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+What will you say about how you are feeling?	關於你的感受，你要說什麼？	关于你的感受，你要说什么？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+How will you respond to the tribute cancellation?	你要怎麼回應取消進貢一事？	你要怎么回应取消进贡一事？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+How will you respond to the offer of tribute?	你要怎麼回應進貢的提議？	你要怎么回应进贡的提议？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+How will you respond to this flattery?	你要怎麼回應這番奉承？	你要怎么回应这番奉承？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+How will you respond to this passive reply?	你要怎麼回應這個消極的答覆？	你要怎么回应这个消极的答复？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+How will you respond to this statement of values?	你要怎麼回應這番價值觀的表態？	你要怎么回应这番价值观的表态？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+How will you respond to this dismissal?	你要怎麼回應這番打發？	你要怎么回应这番打发？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+What will you say about the artifact's location?	關於神器的下落，你要說什麼？	关于神器的下落，你要说什么？		FUN_140867e10 L1205589 交談畫面：交談選單標題；術語例外：location
+What will you say about the artifact's destruction?	關於神器的毀壞，你要說什麼？	关于神器的毁坏，你要说什么？		FUN_140867e10 L1205589 交談畫面：交談選單標題
+How will you move?	你要怎麼移動？	你要怎么移动？		FUN_140874800 L1211720 移動方式選單：標題（玩家本人）
+Walk	行走	行走		FUN_140874800 L1211720 移動方式選單：步態名（raws GAIT 名稱與 FUN_1406ce… 預設步態）
+Swim	游泳	游泳		FUN_140874800 L1211720 移動方式選單：步態名（raws GAIT 名稱與 FUN_1406ce… 預設步態）
+Crawl	爬行	爬行		FUN_140874800 L1211720 移動方式選單：步態名（raws GAIT 名稱與 FUN_1406ce… 預設步態）
+Creep	躡行	蹑行		FUN_140874800 L1211720 移動方式選單：步態名（raws GAIT 名稱與 FUN_1406ce… 預設步態）
+Wamble	蹣跚	蹒跚		FUN_140874800 L1211720 移動方式選單：步態名（raws GAIT 名稱與 FUN_1406ce… 預設步態）
+Stumble Bumble	跌跌撞撞	跌跌撞撞		FUN_140874800 L1211720 移動方式選單：步態名（raws GAIT 名稱與 FUN_1406ce… 預設步態）
+Speed: 	速度：	速度：		FUN_140874800 L1211720 移動方式選單：後面單獨畫數字
+Climb 	攀爬 	攀爬 		FUN_140874800 L1211720 移動方式選單：攀爬速度，後面單獨畫數字
+Visual Stealth Factors	視覺潛行因素	视觉潜行因素		FUN_140874800 L1211720 移動方式選單：右欄標題
+Fog/Rain/Snow	霧/雨/雪	雾/雨/雪		FUN_140874800 L1211720 移動方式選單：視覺潛行因素（天氣、遮蔽、植被、身形）；Non-Prone＝沒趴下
+By Obstacle	有遮蔽物	有遮蔽物		FUN_140874800 L1211720 移動方式選單：視覺潛行因素（天氣、遮蔽、植被、身形）；Non-Prone＝沒趴下
+Open Area	開闊地	开阔地		FUN_140874800 L1211720 移動方式選單：視覺潛行因素（天氣、遮蔽、植被、身形）；Non-Prone＝沒趴下
+In Vegetation	身處植被中	身处植被中		FUN_140874800 L1211720 移動方式選單：視覺潛行因素（天氣、遮蔽、植被、身形）；Non-Prone＝沒趴下
+Non-Prone In Vegetation	站立於植被中	站立于植被中		FUN_140874800 L1211720 移動方式選單：視覺潛行因素（天氣、遮蔽、植被、身形）；Non-Prone＝沒趴下
+No Suitable Vegetation	無合適植被	无合适植被		FUN_140874800 L1211720 移動方式選單：視覺潛行因素（天氣、遮蔽、植被、身形）；Non-Prone＝沒趴下
+Too Large For Vegetation	體型大過植被	体型大过植被		FUN_140874800 L1211720 移動方式選單：視覺潛行因素（天氣、遮蔽、植被、身形）；Non-Prone＝沒趴下
+Vanishing Profile	幾乎隱形	几乎隐形		FUN_140874800 L1211720 移動方式選單：視覺潛行因素（天氣、遮蔽、植被、身形）；Non-Prone＝沒趴下
+Minuscule Profile	極小身形	极小身形		FUN_140874800 L1211720 移動方式選單：視覺潛行因素（天氣、遮蔽、植被、身形）；Non-Prone＝沒趴下
+Tiny Profile	微小身形	微小身形		FUN_140874800 L1211720 移動方式選單：視覺潛行因素（天氣、遮蔽、植被、身形）；Non-Prone＝沒趴下
+Very Small Profile	很小身形	很小身形		FUN_140874800 L1211720 移動方式選單：視覺潛行因素（天氣、遮蔽、植被、身形）；Non-Prone＝沒趴下
+Small Profile	小身形	小身形		FUN_140874800 L1211720 移動方式選單：視覺潛行因素（天氣、遮蔽、植被、身形）；Non-Prone＝沒趴下
+Average Non-Prone Profile	中等站立身形	中等站立身形		FUN_140874800 L1211720 移動方式選單：視覺潛行因素（天氣、遮蔽、植被、身形）；Non-Prone＝沒趴下
+Average Profile	中等身形	中等身形		FUN_140874800 L1211720 移動方式選單：視覺潛行因素（天氣、遮蔽、植被、身形）；Non-Prone＝沒趴下
+Large Non-Prone Profile	大型站立身形	大型站立身形		FUN_140874800 L1211720 移動方式選單：視覺潛行因素（天氣、遮蔽、植被、身形）；Non-Prone＝沒趴下
+Very Large Non-Prone Profile	很大站立身形	很大站立身形		FUN_140874800 L1211720 移動方式選單：視覺潛行因素（天氣、遮蔽、植被、身形）；Non-Prone＝沒趴下
+Huge Non-Prone Profile	巨大站立身形	巨大站立身形		FUN_140874800 L1211720 移動方式選單：視覺潛行因素（天氣、遮蔽、植被、身形）；Non-Prone＝沒趴下
+Large Profile	大型身形	大型身形		FUN_140874800 L1211720 移動方式選單：視覺潛行因素（天氣、遮蔽、植被、身形）；Non-Prone＝沒趴下
+Very Large Profile	很大身形	很大身形		FUN_140874800 L1211720 移動方式選單：視覺潛行因素（天氣、遮蔽、植被、身形）；Non-Prone＝沒趴下
+Huge Profile	巨大身形	巨大身形		FUN_140874800 L1211720 移動方式選單：視覺潛行因素（天氣、遮蔽、植被、身形）；Non-Prone＝沒趴下
+Gigantic Profile	龐大身形	庞大身形		FUN_140874800 L1211720 移動方式選單：視覺潛行因素（天氣、遮蔽、植被、身形）；Non-Prone＝沒趴下
+Gargantuan Profile	極龐大身形	极庞大身形		FUN_140874800 L1211720 移動方式選單：視覺潛行因素（天氣、遮蔽、植被、身形）；Non-Prone＝沒趴下
+Visual Stealth (w/o Skill)	視覺潛行（不計技能）	视觉潜行（不计技能）		FUN_140874800 L1211720 移動方式選單：潛行評等標題
+Best Possible	最佳	最佳		FUN_140874800 L1211720 移動方式選單：潛行評等（Great 由 adv_activity 的技能等級「卓越」提供）
+Fantastic	極佳	极佳		FUN_140874800 L1211720 移動方式選單：潛行評等（Great 由 adv_activity 的技能等級「卓越」提供）
+Average	普通	普通		FUN_140874800 L1211720 移動方式選單：潛行評等（Great 由 adv_activity 的技能等級「卓越」提供）
+Poor	不佳	不佳		FUN_140874800 L1211720 移動方式選單：潛行評等（Great 由 adv_activity 的技能等級「卓越」提供）
+Awful	很差	很差		FUN_140874800 L1211720 移動方式選單：潛行評等（Great 由 adv_activity 的技能等級「卓越」提供）
+Terrible	極差	极差		FUN_140874800 L1211720 移動方式選單：潛行評等（Great 由 adv_activity 的技能等級「卓越」提供）
+Worst Possible	最差	最差		FUN_140874800 L1211720 移動方式選單：潛行評等（Great 由 adv_activity 的技能等級「卓越」提供）
+Quick movement and other actions decrease stealth.	快速移動等動作會降低潛行效果。	快速移动等动作会降低潜行效果。		FUN_140874800 L1211720 移動方式選單：說明
+ Swimming Preference	 游泳偏好	 游泳偏好		FUN_140874800 L1211720 移動方式選單：下方選項標題（開頭一個空白）
+When possible	盡量游泳	尽量游泳		FUN_140874800 L1211720 移動方式選單：游泳偏好選項
+When necessary	必要時才游	必要时才游		FUN_140874800 L1211720 移動方式選單：游泳偏好選項

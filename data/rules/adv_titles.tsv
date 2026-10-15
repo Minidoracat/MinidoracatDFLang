@@ -1,0 +1,5 @@
+en	zh-Hant	zh-Hans	align	note
+the justice {^1}	審判官{1}	审判官{1}		FUN_14096ece0 L1367988 市政官員 justice 的人物稱呼（the 職位 名字）：justice 的整句條目是 speech_01 的「正義」，{@1} 會撿到它，所以寫死；排在 zz_adv_talk 的 the {@1} {^2} 前
+the {@1} justice {^2}	{1}審判官{2}	{1}审判官{2}		FUN_14096ece0 L1367988 同上，前面帶種族（the 種族 職位 名字）
+the tunnel master {^1}	隧道總監{1}	隧道总监{1}		FUN_14096ece0 L1368018/1368065 市政官員 tunnel＋master（較進步的文明）的人物稱呼：tunnel master 的整句條目是 legends_04 生成生物名「隧道主宰」（同字不同義），稱呼另寫句型；術語例外：Master
+the {@1} tunnel master {^2}	{1}隧道總監{2}	{1}隧道总监{2}		FUN_14096ece0 L1368018/1368065 市政官員 tunnel＋master（較進步的文明）的人物稱呼：tunnel master 的整句條目是 legends_04 生成生物名「隧道主宰」（同字不同義），稱呼另寫句型；術語例外：Master；前面帶種族

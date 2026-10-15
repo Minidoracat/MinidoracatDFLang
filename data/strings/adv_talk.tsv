@@ -1,0 +1,298 @@
+en	zh-Hant	zh-Hans	align	note
+Greet listener	打招呼	打招呼		FUN_140697740 L918153 交談選單選項（wrap_text 0x4e 寬）
+Nevermind	算了	算了		FUN_140697740 L918164 交談選單選項（wrap_text 0x4e 寬）
+Trade or settle debts	交易或清償債務	交易或结清债务		FUN_140697740 L918172 交談選單選項（wrap_text 0x4e 寬）
+Ask listener to join you (new menu)	邀請對方加入你（新選單）	邀请对方加入你（新菜单）		FUN_140697740 L918195 交談選單選項（wrap_text 0x4e 寬）
+Ask about the surrounding area	詢問周遭地區	询问周边地区		FUN_140697740 L918203 交談選單選項（wrap_text 0x4e 寬）
+Say goodbye	道別	道别		FUN_140697740 L918215 交談選單選項（wrap_text 0x4e 寬）
+Ask about the structure you are in	詢問你所在的建築	询问你所在的建筑		FUN_140697740 L918238 交談選單選項（wrap_text 0x4e 寬）
+Ask about listener's family	詢問對方的家人	询问对方的家人		FUN_140697740 L918251 交談選單選項（wrap_text 0x4e 寬）
+Inquire about listener's profession	詢問對方的職業	询问对方的职业		FUN_140697740 L918259 交談選單選項（wrap_text 0x4e 寬）
+Ask for permission to stay for a day	請求留宿一天	请求借住一天		FUN_140697740 L918273 交談選單選項（wrap_text 0x4e 寬）
+Accuse listener of being a night creature	指控對方是暗夜生物	指控对方是暗夜生物		FUN_140697740 L918287 交談選單選項（wrap_text 0x4e 寬）
+Inquire about any troubles	打聽有沒有什麼麻煩	打听有没有什么麻烦		FUN_140697740 L918301 交談選單選項（wrap_text 0x4e 寬）
+Spread rumor of your abduction	散播傳聞：你遭到綁架	散布传闻：你遭到绑架		FUN_140697740 L919049 交談選單選項（wrap_text 0x4e 寬）
+Reply to greeting	回應問候	回应问候		FUN_140697740 L920610 交談選單選項（wrap_text 0x4e 寬）
+Refuse conversation	拒絕交談	拒绝交谈		FUN_140697740 L920624 交談選單選項（wrap_text 0x4e 寬）；術語例外：refuse
+Reply to greeting (impersonation)	回應問候（冒充身分）	回应问候（冒充身份）		FUN_140697740 L920635 交談選單選項（wrap_text 0x4e 寬）
+Bring up specific incident or rumor (new menu)	提起特定事件或傳聞（新選單）	提起特定事件或传闻（新菜单）		FUN_140697740 L920643 交談選單選項（wrap_text 0x4e 寬）
+Tell listener that nothing has changed	告訴對方一切照舊	告诉对方一切照旧		FUN_140697740 L920657 交談選單選項（wrap_text 0x4e 寬）
+Return to current topic (new menu)	回到目前的話題（新選單）	回到当前话题（新菜单）		FUN_140697740 L920665 交談選單選項（wrap_text 0x4e 寬）
+Change the subject (new menu)	換個話題（新選單）	换个话题（新菜单）		FUN_140697740 L920676 交談選單選項（wrap_text 0x4e 寬）
+Ask listener's course of action	詢問對方打算怎麼做	询问对方打算怎么办		FUN_140697740 L920690 交談選單選項（wrap_text 0x4e 寬）
+Request suggestion for course of action	請對方建議該怎麼做	请对方出主意该怎么办		FUN_140697740 L920698 交談選單選項（wrap_text 0x4e 寬）
+Ask listener to join you in an insurrection	邀請對方和你一起起義	邀请对方和你一起起义		FUN_140697740 L920706 交談選單選項（wrap_text 0x4e 寬）
+Ask listener to join you in a rescue	邀請對方和你一起去救人	邀请对方和你一起去救人		FUN_140697740 L920714 交談選單選項（wrap_text 0x4e 寬）
+Grant sleep permission	准許留宿	准许留宿		FUN_140697740 L921131 交談選單選項（wrap_text 0x4e 寬）
+Deny sleep permission	拒絕留宿	拒绝留宿		FUN_140697740 L921142 交談選單選項（wrap_text 0x4e 寬）
+Ask listener to join you on adventures	邀請對方和你一起冒險	邀请对方和你一起冒险		FUN_140697740 L921153 交談選單選項（wrap_text 0x4e 寬）
+Ask listener to guide you to a location	請對方帶你去某個地方	请对方带你去某个地方		FUN_140697740 L921161 交談選單選項（wrap_text 0x4e 寬）
+Respond to join request	回應加入的請求	回应加入请求		FUN_140697740 L921180 交談選單選項（wrap_text 0x4e 寬）
+Offer condolences	表達哀悼	表示哀悼		FUN_140697740 L921188 交談選單選項（wrap_text 0x4e 寬）
+State that you weren't acquainted	表示你們素不相識	表示你们素不相识		FUN_140697740 L921199 交談選單選項（wrap_text 0x4e 寬）
+Ask to be rescued	請求救援	请求救援		FUN_140697740 L921245 交談選單選項（wrap_text 0x4e 寬）
+Ask what happened	詢問發生了什麼事	询问发生了什么事		FUN_140697740 L921253 交談選單選項（wrap_text 0x4e 寬）
+Ask listener to join you and be rescued	請對方跟你走，好讓你救出去	请对方跟你走，好把对方救出去		FUN_140697740 L921264 交談選單選項（wrap_text 0x4e 寬）
+Say that you don't remember	說你不記得了	说你不记得了		FUN_140697740 L921272 交談選單選項（wrap_text 0x4e 寬）
+Say that you have no family	說你沒有家人	说你没有家人		FUN_140697740 L921280 交談選單選項（wrap_text 0x4e 寬）
+Refer listener to somebody older	請對方去問年紀大的人	让对方去问年纪大的人		FUN_140697740 L921311 交談選單選項（wrap_text 0x4e 寬）
+Ask listener to come closer	請對方靠近一點	请对方靠近一点		FUN_140697740 L921326 交談選單選項（wrap_text 0x4e 寬）
+Do business	做生意	做生意		FUN_140697740 L921334 交談選單選項（wrap_text 0x4e 寬）
+Ask listener to come to your store later	請對方晚點來你的店	请对方晚点来你的店		FUN_140697740 L921342 交談選單選項（wrap_text 0x4e 寬）
+Ask listener to come to the market later	請對方晚點來市集	请对方晚点来集市		FUN_140697740 L921350 交談選單選項（wrap_text 0x4e 寬）
+Tell listener to try a shopkeeper	叫對方去找店主	让对方去找店主		FUN_140697740 L921358 交談選單選項（wrap_text 0x4e 寬）
+Say something about the local area	談談這一帶	谈谈这一带		FUN_140697740 L921369 交談選單選項（wrap_text 0x4e 寬）
+Ask listener to wait until you've returned home	請對方等你回到家	请对方等你回到家		FUN_140697740 L921380 交談選單選項（wrap_text 0x4e 寬）
+Say something about your family	談談你的家人	谈谈你的家人		FUN_140697740 L921388 交談選單選項（wrap_text 0x4e 寬）
+State your age emphatically	強調你的年紀	强调你的年龄		FUN_140697740 L921396 交談選單選項（wrap_text 0x4e 寬）
+Say something about your profession	談談你的職業	谈谈你的职业		FUN_140697740 L921404 交談選單選項（wrap_text 0x4e 寬）
+Announce your night creature status	表明你是暗夜生物	表明你是暗夜生物		FUN_140697740 L921418 交談選單選項（wrap_text 0x4e 寬）
+State your incredulity	表示難以置信	表示难以置信		FUN_140697740 L921432 交談選單選項（wrap_text 0x4e 寬）
+Bypass greeting (new menu)	略過問候（新選單）	跳过问候（新菜单）		FUN_140697740 L921443 交談選單選項（wrap_text 0x4e 寬）
+Ask for a cease to hostilities	請求停戰	请求停战		FUN_140697740 L921454 交談選單選項（wrap_text 0x4e 寬）
+Demand that the listener yield	要求對方投降	要求对方投降		FUN_140697740 L921468 交談選單選項（wrap_text 0x4e 寬）
+Hawk your wares	叫賣你的貨物	叫卖你的货物		FUN_140697740 L921479 交談選單選項（wrap_text 0x4e 寬）
+Yield in terror	驚恐投降	惊恐投降		FUN_140697740 L921487 交談選單選項（wrap_text 0x4e 寬）
+Yield	投降	投降		FUN_140697740 L921498 交談選單選項（wrap_text 0x4e 寬）
+Make terrified outburst regarding fleeing conflict	驚恐地嚷著要逃離戰鬥	惊恐地嚷着要逃离战斗		FUN_140697740 L921521 交談選單選項（wrap_text 0x4e 寬）
+State intention to flee conflict	表明要逃離戰鬥	表明要逃离战斗		FUN_140697740 L921529 交談選單選項（wrap_text 0x4e 寬）
+Bring up the journey together	提起一同旅行的經歷	提起一起旅行的经历		FUN_140697740 L921537 交談選單選項（wrap_text 0x4e 寬）
+Summarize the many troubles	概述種種麻煩	概述种种麻烦		FUN_140697740 L921548 交談選單選項（wrap_text 0x4e 寬）
+Ask for directions (new menu)	問路（新選單）	问路（新菜单）		FUN_140697740 L921696 交談選單選項（wrap_text 0x4e 寬）
+Tell the listener that they've found you	告訴對方他們找到你了	告诉对方他们找到你了		FUN_140697740 L921865 交談選單選項（wrap_text 0x4e 寬）
+Profess total ignorance	推說一無所知	推说一无所知		FUN_140697740 L921906 交談選單選項（wrap_text 0x4e 寬）
+Ask favor, place request, make demand or issue order (new menu)	請託、提出請求、要求或下令（新選單）	请托、提出请求、要求或下令（新菜单）		FUN_140697740 L921934 交談選單選項（wrap_text 0x4e 寬）
+Ask listener to wait here	請對方在這裡等	请对方在这里等		FUN_140697740 L921951 交談選單選項（wrap_text 0x4e 寬）
+Ask listener to follow you	請對方跟著你	请对方跟着你		FUN_140697740 L921962 交談選單選項（wrap_text 0x4e 寬）
+Apologize for being otherwise occupied	為正在忙別的事致歉	为正在忙别的事道歉		FUN_140697740 L921973 交談選單選項（wrap_text 0x4e 寬）
+Comply with order	服從命令	服从命令		FUN_140697740 L921990 交談選單選項（wrap_text 0x4e 寬）
+Agree to follow	同意跟隨	同意跟随		FUN_140697740 L922001 交談選單選項（wrap_text 0x4e 寬）
+Exchange, give, take or show personal items	交換、贈送、拿取或展示個人物品	交换、赠送、拿取或展示个人物品		FUN_140697740 L922015 交談選單選項（wrap_text 0x4e 寬）
+Initiate bartering	開始以物易物	开始以物易物		FUN_140697740 L922038 交談選單選項（wrap_text 0x4e 寬）
+Agree to cease hostilities	同意停戰	同意停战		FUN_140697740 L922046 交談選單選項（wrap_text 0x4e 寬）
+Refuse to cease hostilities	拒絕停戰	拒绝停战		FUN_140697740 L922067 交談選單選項（wrap_text 0x4e 寬）；術語例外：refuse
+Refuse to yield	拒絕投降	拒绝投降		FUN_140697740 L922079 交談選單選項（wrap_text 0x4e 寬）；術語例外：refuse
+Brag about your past violent acts	吹噓你過去的暴力事蹟	吹嘘你过去的暴力事迹		FUN_140697740 L922090 交談選單選項（wrap_text 0x4e 寬）
+Claim this site for yourself (group naming menu)	將此地據為己有（團體命名選單）	将此地据为己有（团体命名菜单）		FUN_140697740 L922166 交談選單選項（wrap_text 0x4e 寬）
+Announce that you are hunting in your lair	宣告你正在巢穴裡狩獵	宣告你正在巢穴里狩猎		FUN_140697740 L922174 交談選單選項（wrap_text 0x4e 寬）
+Tell listener to enjoy peace and remain vigilant	叫對方享受和平，但保持警覺	让对方享受和平，但保持警惕		FUN_140697740 L922247 交談選單選項（wrap_text 0x4e 寬）
+Welcome yourself to your new home	歡迎自己來到新家	欢迎自己来到新家		FUN_140697740 L922279 交談選單選項（wrap_text 0x4e 寬）
+Ask listener why they are traveling	詢問對方為何旅行	询问对方为什么出门旅行		FUN_140697740 L922290 交談選單選項（wrap_text 0x4e 寬）
+Explain your current journey	說明你目前的旅程	说明你目前的旅程		FUN_140697740 L922301 交談選單選項（wrap_text 0x4e 寬）
+Ask about the local ruler	詢問本地的統治者	询问本地的统治者		FUN_140697740 L922312 交談選單選項（wrap_text 0x4e 寬）
+Complain about the agreement	抱怨這項協議	抱怨这项协议		FUN_140697740 L922323 交談選單選項（wrap_text 0x4e 寬）
+Cancel the agreement	取消協議	取消协议		FUN_140697740 L922331 交談選單選項（wrap_text 0x4e 寬）
+Ask how strong this group's hold over its lands is	詢問這個團體對領地的掌控有多穩固	询问这个团体对领地的控制有多稳固		FUN_140697740 L922711 交談選單選項（wrap_text 0x4e 寬）
+Ask about the position of this group's forces	詢問這個團體的兵力部署	询问这个团体的兵力部署		FUN_140697740 L922728 交談選單選項（wrap_text 0x4e 寬）
+Ask about other groups with a stake in this site	詢問還有哪些團體和此地有利害關係	询问还有哪些团体和此地有利害关系		FUN_140697740 L922751 交談選單選項（wrap_text 0x4e 寬）
+Ask if anybody fled from this site	詢問是否有人逃離此地	询问有没有人逃离此地		FUN_140697740 L922774 交談選單選項（wrap_text 0x4e 寬）
+Ask about this site's neighbors and trade partners	詢問此地的鄰居與貿易夥伴	询问此地的邻居和贸易伙伴		FUN_140697740 L922788 交談選單選項（wrap_text 0x4e 寬）
+Say something about this site's trade partners	談談此地的貿易夥伴	谈谈此地的贸易伙伴		FUN_140697740 L922802 交談選單選項（wrap_text 0x4e 寬）
+Raise alarm	發出警報	发出警报		FUN_140697740 L922810 交談選單選項（wrap_text 0x4e 寬）
+Agree to comply with demand	同意照要求去做	同意按要求去做		FUN_140697740 L922845 交談選單選項（wrap_text 0x4e 寬）
+Refuse to comply with demand	拒絕照要求去做	拒绝按要求去做		FUN_140697740 L922859 交談選單選項（wrap_text 0x4e 寬）；術語例外：refuse
+Ask listener to come to the trade depot later	請對方晚點來貿易站	请对方晚点来贸易站		FUN_140697740 L923088 交談選單選項（wrap_text 0x4e 寬）
+Comment on weather	聊聊天氣	聊聊天气		FUN_140697740 L923117 交談選單選項（wrap_text 0x4e 寬）
+Comment on natural surroundings	聊聊周遭的自然景色	聊聊周围的自然风光		FUN_140697740 L923125 交談選單選項（wrap_text 0x4e 寬）
+Accuse the speaker of being a troublemaker	指控對方是麻煩人物	指控对方是捣乱分子		FUN_140697740 L923194 交談選單選項（wrap_text 0x4e 寬）
+Agree to the adoption	同意收養	同意收养		FUN_140697740 L923215 交談選單選項（wrap_text 0x4e 寬）
+Refuse the adoption	拒絕收養	拒绝收养		FUN_140697740 L923226 交談選單選項（wrap_text 0x4e 寬）；術語例外：refuse
+Refuse to share this information	拒絕透露這項消息	拒绝透露这个消息		FUN_140697740 L923297 交談選單選項（wrap_text 0x4e 寬）；術語例外：refuse
+Accept the position	接受這個職位	接受这个职位		FUN_140697740 L923384 交談選單選項（wrap_text 0x4e 寬）
+Refuse the position	拒絕這個職位	拒绝这个职位		FUN_140697740 L923395 交談選單選項（wrap_text 0x4e 寬）；術語例外：refuse
+Invoke true name to banish listener	呼喚真名驅逐對方	呼唤真名驱逐对方		FUN_140697740 L923406 交談選單選項（wrap_text 0x4e 寬）
+Invoke true name to compel service from listener	呼喚真名迫使對方效命	呼唤真名迫使对方效命		FUN_140697740 L923423 交談選單選項（wrap_text 0x4e 寬）
+Grovel before your new master	在新主人面前卑躬屈膝	在新主人面前卑躬屈膝		FUN_140697740 L923440 交談選單選項（wrap_text 0x4e 寬）
+Demand an item (barter screen)	索要物品（以物易物畫面）	索要物品（以物易物界面）		FUN_140697740 L923451 交談選單選項（wrap_text 0x4e 寬）
+Offer encouragement	給予鼓勵	给予鼓励		FUN_140697740 L923488 交談選單選項（wrap_text 0x4e 寬）
+Praise listener for completing the task	稱讚對方完成了任務	称赞对方完成了任务		FUN_140697740 L923496 交談選單選項（wrap_text 0x4e 寬）
+Ask about somebody (new menu)	打聽某人（新選單）	打听某人（新菜单）		FUN_140697740 L923510 交談選單選項（wrap_text 0x4e 寬）
+Ask how listener is feeling	問對方感覺如何	问对方感觉怎么样		FUN_140697740 L923594 交談選單選項（wrap_text 0x4e 寬）
+Say something general about your emotional state or thoughts	大致談談你的心情或想法	大致谈谈你的心情或想法		FUN_140697740 L923605 交談選單選項（wrap_text 0x4e 寬）
+Ask about available services, drinks, rooms, etc.	詢問提供哪些服務、飲料、房間等	询问提供哪些服务、饮品、房间等		FUN_140697740 L923616 交談選單選項（wrap_text 0x4e 寬）
+List available services	列出提供的服務	列出提供的服务		FUN_140697740 L923633 交談選單選項（wrap_text 0x4e 寬）
+Confirm service order	確認服務訂單	确认服务订单		FUN_140697740 L923743 交談選單選項（wrap_text 0x4e 寬）
+Ask listener to join you as entertainer	邀請對方加入你擔任表演者	邀请对方加入你担任表演者		FUN_140697740 L923757 交談選單選項（wrap_text 0x4e 寬）
+Create a performance troupe together (group naming menu)	一起成立表演團（團體命名選單）	一起成立演出团（团体命名菜单）		FUN_140697740 L923912 交談選單選項（wrap_text 0x4e 寬）
+Yell out service order	大聲點單	大声点单		FUN_140697740 L923941 交談選單選項（wrap_text 0x4e 寬）
+Remind listener of pending service	提醒對方還有待辦的服務	提醒对方还有待办的服务		FUN_140697740 L923952 交談選單選項（wrap_text 0x4e 寬）
+Tell listener that no services are available	告訴對方目前沒有提供服務	告诉对方目前没有提供服务		FUN_140697740 L923963 交談選單選項（wrap_text 0x4e 寬）
+Tell listener both of you must be at location	告訴對方你們兩個都得到場	告诉对方你们两个都得到场		FUN_140697740 L923974 交談選單選項（wrap_text 0x4e 寬）
+Tell listener you don't work here	告訴對方你不在這裡工作	告诉对方你不在这里工作		FUN_140697740 L923985 交談選單選項（wrap_text 0x4e 寬）
+Express your emotions (new menu)	表達你的情緒（新選單）	表达你的情绪（新菜单）		FUN_140697740 L923996 交談選單選項（wrap_text 0x4e 寬）
+State your values (new menu)	表明你的價值觀（新選單）	表明你的价值观（新菜单）		FUN_140697740 L924010 交談選單選項（wrap_text 0x4e 寬）
+Mention services to listener	向對方介紹服務	向对方介绍服务		FUN_140697740 L924046 交談選單選項（wrap_text 0x4e 寬）
+Flatter the listener	奉承對方	奉承对方		FUN_140697740 L924097 交談選單選項（wrap_text 0x4e 寬）
+Dismiss the listener's argument	駁斥對方的論點	驳斥对方的论点		FUN_140697740 L924105 交談選單選項（wrap_text 0x4e 寬）
+Respond passively	消極回應	消极回应		FUN_140697740 L924113 交談選單選項（wrap_text 0x4e 寬）
+Acquiesce (changes your values)	默許（會改變你的價值觀）	默许（会改变你的价值观）		FUN_140697740 L924121 交談選單選項（wrap_text 0x4e 寬）
+Deride flattery	嘲笑奉承	嘲笑奉承		FUN_140697740 L924129 交談選單選項（wrap_text 0x4e 寬）
+Express outrage over dismissal	對被駁斥表示憤慨	对被驳斥表示愤慨		FUN_140697740 L924140 交談選單選項（wrap_text 0x4e 寬）
+Press the argument	堅持論點	坚持论点		FUN_140697740 L924151 交談選單選項（wrap_text 0x4e 寬）
+Agree to drop the argument	同意不再爭論	同意不再争论		FUN_140697740 L924165 交談選單選項（wrap_text 0x4e 寬）
+Provide the location of specific place	提供特定地點的位置	提供特定地点的位置		FUN_140697740 L924670 交談選單選項（wrap_text 0x4e 寬）
+Prophesize	預言	预言		FUN_140697740 L924684 交談選單選項（wrap_text 0x4e 寬）
+Say something about your family's ancestor	談談你家族的祖先	谈谈你家族的祖先		FUN_140697740 L924695 交談選單選項（wrap_text 0x4e 寬）
+Demand the listener's identity	要求對方表明身分	要求对方表明身份		FUN_140697740 L924757 交談選單選項（wrap_text 0x4e 寬）
+Investigate or interrogate (new menu)	調查或審訊（新選單）	调查或审讯（新菜单）		FUN_140697740 L924768 交談選單選項（wrap_text 0x4e 寬）
+Ask about the listener's master or boss	詢問對方的主人或上司	询问对方的主人或上司		FUN_140697740 L924779 交談選單選項（wrap_text 0x4e 寬）
+Ask about the listener's schemes and plots	詢問對方的計謀與陰謀	询问对方的计谋和阴谋		FUN_140697740 L924790 交談選單選項（wrap_text 0x4e 寬）
+Say something about your master(s)	談談你的主人	谈谈你的主人		FUN_140697740 L924804 交談選單選項（wrap_text 0x4e 寬）
+Say something about your schemes	談談你的計謀	谈谈你的计谋		FUN_140697740 L924818 交談選單選項（wrap_text 0x4e 寬）
+Refuse the interrogation	拒絕審訊	拒绝审讯		FUN_140697740 L924838 交談選單選項（wrap_text 0x4e 寬）；術語例外：refuse
+Make a flattering remark	說句恭維話	说句恭维话		FUN_140697740 L924849 交談選單選項（wrap_text 0x4e 寬）
+Try to calm the listener	試著安撫對方	试着安抚对方		FUN_140697740 L924857 交談選單選項（wrap_text 0x4e 寬）
+Tell a joke	說個笑話	讲个笑话		FUN_140697740 L924868 交談選單選項（wrap_text 0x4e 寬）
+Deride the attempt to calm	嘲笑對方的安撫	嘲笑对方的安抚		FUN_140697740 L924876 交談選單選項（wrap_text 0x4e 寬）
+Accept the compliment	接受恭維	接受恭维		FUN_140697740 L924887 交談選單選項（wrap_text 0x4e 寬）
+Accept calming	接受安撫	接受安抚		FUN_140697740 L924901 交談選單選項（wrap_text 0x4e 寬）
+State that calming was unneeded	表示不需要安撫	表示不需要安抚		FUN_140697740 L924912 交談選單選項（wrap_text 0x4e 寬）
+Approve of the joke	讚賞這個笑話	赞赏这个笑话		FUN_140697740 L924923 交談選單選項（wrap_text 0x4e 寬）
+Reject the joke	對笑話不以為然	对笑话不以为然		FUN_140697740 L924937 交談選單選項（wrap_text 0x4e 寬）
+Impatiently say goodbye	不耐煩地道別	不耐烦地道别		FUN_140697740 L924948 交談選單選項（wrap_text 0x4e 寬）
+Reject the compliment	拒絕恭維	拒绝恭维		FUN_140697740 L924965 交談選單選項（wrap_text 0x4e 寬）
+Reject the attempt to calm	拒絕安撫	拒绝安抚		FUN_140697740 L924976 交談選單選項（wrap_text 0x4e 寬）
+Mock the repeated failure of the interrogator	嘲笑審訊者屢屢失敗	嘲笑审讯者屡屡失败		FUN_140697740 L924988 交談選單選項（wrap_text 0x4e 寬）
+Name pet (new menu)	寵物取名（新選單）	宠物起名（新菜单）		FUN_140697740 L925002 交談選單選項（wrap_text 0x4e 寬）
+Gift a (large) pet or mount (new menu)	贈送（大型）寵物或坐騎（新選單）	赠送（大型）宠物或坐骑（新菜单）		FUN_140697740 L925010 交談選單選項（wrap_text 0x4e 寬）
+Express horror at the gift	對禮物表示驚恐	对礼物表示惊恐		FUN_140697740 L925040 交談選單選項（wrap_text 0x4e 寬）
+Express thanks for the gift	感謝這份禮物	感谢这份礼物		FUN_140697740 L925051 交談選單選項（wrap_text 0x4e 寬）
+Offer your service	自願效勞	主动效劳		FUN_140697740 L925062 交談選單選項（wrap_text 0x4e 寬）
+Exhort to finish current quest	督促完成目前的任務	督促完成当前的任务		FUN_140697740 L925103 交談選單選項（wrap_text 0x4e 寬）
+State opinion that it must be stopped with violent force	表示必須以武力制止	表示必须以武力制止		FUN_140697740 L920724 交談選單選項（wrap_text 0x4e 寬）
+State opinion that it is not your problem	表示這不關你的事	表示这不关你的事		FUN_140697740 L920733 交談選單選項（wrap_text 0x4e 寬）
+State opinion that it was inevitable	表示這是無可避免的	表示这是不可避免的		FUN_140697740 L920739 交談選單選項（wrap_text 0x4e 寬）
+State opinion that this is the life for you	表示這就是你想過的生活	表示这就是你想过的日子		FUN_140697740 L920745 交談選單選項（wrap_text 0x4e 寬）
+State opinion that it is terrifying	表示這很可怕	表示这很吓人		FUN_140697740 L920751 交談選單選項（wrap_text 0x4e 寬）
+State that you don't know anything about it	表示你對此一無所知	表示你对此一无所知		FUN_140697740 L920757 交談選單選項（wrap_text 0x4e 寬）
+State that you are right in all matters	表示你凡事都是對的	表示你凡事都是对的		FUN_140697740 L920763 交談選單選項（wrap_text 0x4e 寬）
+State that it is for the best	表示這樣最好	表示这样最好		FUN_140697740 L920769 交談選單選項（wrap_text 0x4e 寬）
+State that you don't care	表示你不在乎	表示你不在乎		FUN_140697740 L920775 交談選單選項（wrap_text 0x4e 寬）
+State your general hatred	表達你對一切的憎恨	表达你对一切的憎恨		FUN_140697740 L920781 交談選單選項（wrap_text 0x4e 寬）
+State your general fear	表達你對一切的恐懼	表达你对一切的恐惧		FUN_140697740 L920787 交談選單選項（wrap_text 0x4e 寬）
+State opinion that it is sad but not unexpected	表示這很遺憾，但不意外	表示这很遗憾，但不意外		FUN_140697740 L920799 交談選單選項（wrap_text 0x4e 寬）
+State opinion that it is terrible	表示這很糟糕	表示这很糟糕		FUN_140697740 L920808 交談選單選項（wrap_text 0x4e 寬）
+State that it is terrific	表示這太棒了	表示这太棒了		FUN_140697740 L920814 交談選單選項（wrap_text 0x4e 寬）
+State that you enjoyed performing	表示你很享受表演	表示你很享受表演		FUN_140697740 L920820 交談選單選項（wrap_text 0x4e 寬）
+State that it was legendary	表示那堪稱傳奇	表示那堪称传奇		FUN_140697740 L920829 交談選單選項（wrap_text 0x4e 寬）
+State that it was fantastic	表示那棒極了	表示那棒极了		FUN_140697740 L920835 交談選單選項（wrap_text 0x4e 寬）
+State that it was great	表示那很棒	表示那很棒		FUN_140697740 L920841 交談選單選項（wrap_text 0x4e 寬）
+State that it was good	表示那還不錯	表示那还不错		FUN_140697740 L920847 交談選單選項（wrap_text 0x4e 寬）
+State that it was okay	表示那還可以	表示那还行		FUN_140697740 L920853 交談選單選項（wrap_text 0x4e 寬）
+Agree completely	完全同意	完全同意		FUN_140697740 L920859 交談選單選項（wrap_text 0x4e 寬）
+State that this is fantastic	表示這棒極了	表示这棒极了		FUN_140697740 L920865 交談選單選項（wrap_text 0x4e 寬）
+State that this is great	表示這很棒	表示这很棒		FUN_140697740 L920871 交談選單選項（wrap_text 0x4e 寬）
+State that this is good	表示這還不錯	表示这还不错		FUN_140697740 L920877 交談選單選項（wrap_text 0x4e 寬）
+State that this is okay	表示這還可以	表示这还行		FUN_140697740 L920883 交談選單選項（wrap_text 0x4e 寬）
+State that this is no good	表示這不太好	表示这不太行		FUN_140697740 L920889 交談選單選項（wrap_text 0x4e 寬）
+State that this is your favorite dance	表示這是你最喜歡的舞蹈	表示这是你最喜欢的舞蹈		FUN_140697740 L920901 交談選單選項（wrap_text 0x4e 寬）
+State that this is your favorite music	表示這是你最喜歡的音樂	表示这是你最喜欢的音乐		FUN_140697740 L920910 交談選單選項（wrap_text 0x4e 寬）
+State that this is your favorite poetry	表示這是你最喜歡的詩歌	表示这是你最喜欢的诗歌		FUN_140697740 L920919 交談選單選項（wrap_text 0x4e 寬）
+State that you love reflective poetry	表示你熱愛沉思性的詩歌	表示你热爱沉思性的诗歌		FUN_140697740 L920928 交談選單選項（wrap_text 0x4e 寬）
+State that you hate reflective poetry	表示你討厭沉思性的詩歌	表示你讨厌沉思性的诗歌		FUN_140697740 L920937 交談選單選項（wrap_text 0x4e 寬）
+State that you love riddles	表示你熱愛謎語	表示你热爱谜语		FUN_140697740 L920946 交談選單選項（wrap_text 0x4e 寬）
+State that you hate riddles	表示你討厭謎語	表示你讨厌谜语		FUN_140697740 L920952 交談選單選項（wrap_text 0x4e 寬）
+State that you are embarrassed by this kind of humor	表示這種幽默讓你難為情	表示这种幽默让你难为情		FUN_140697740 L920958 交談選單選項（wrap_text 0x4e 寬）
+State your amusement	表示覺得很好笑	表示觉得很好笑		FUN_140697740 L920967 交談選單選項（wrap_text 0x4e 寬）
+State that you love raunchy poems	表示你熱愛下流的詩	表示你热爱下流的诗		FUN_140697740 L920976 交談選單選項（wrap_text 0x4e 寬）
+State that you love ribald poems	表示你熱愛粗鄙詼諧的詩	表示你热爱粗鄙诙谐的诗		FUN_140697740 L920985 交談選單選項（wrap_text 0x4e 寬）
+State that you disapprove of ribald poems	表示你不贊同粗鄙詼諧的詩	表示你不赞成粗鄙诙谐的诗		FUN_140697740 L920994 交談選單選項（wrap_text 0x4e 寬）
+State that you love light poems	表示你熱愛輕鬆明快的詩	表示你热爱轻松明快的诗		FUN_140697740 L921003 交談選單選項（wrap_text 0x4e 寬）
+State that you hate light poems	表示你討厭輕鬆明快的詩	表示你讨厌轻松明快的诗		FUN_140697740 L921012 交談選單選項（wrap_text 0x4e 寬）
+State that you love solemn poems	表示你熱愛莊嚴的詩	表示你热爱庄严的诗		FUN_140697740 L921021 交談選單選項（wrap_text 0x4e 寬）
+State that you hate solemn poems	表示你討厭莊嚴的詩	表示你讨厌庄严的诗		FUN_140697740 L921030 交談選單選項（wrap_text 0x4e 寬）
+State that listener's hunt saved you from an enemy	表示對方打獵讓你逃過敵人	表示对方打猎让你躲过了敌人		FUN_140697740 L921043 交談選單選項（wrap_text 0x4e 寬）
+State that listener had a good hunt	表示對方打獵收穫豐富	表示对方打猎收获不错		FUN_140697740 L921059 交談選單選項（wrap_text 0x4e 寬）
+State that listener saved you from an enemy	表示對方從敵人手中救了你	表示对方从敌人手里救了你		FUN_140697740 L921069 交談選單選項（wrap_text 0x4e 寬）
+State that they are outlaws	表示他們是不法之徒	表示他们是不法之徒		FUN_140697740 L921078 交談選單選項（wrap_text 0x4e 寬）
+State that listener protected the defenseless from outlaws	表示對方保護弱者不受不法之徒侵害	表示对方保护弱者不受不法之徒侵害		FUN_140697740 L921084 交談選單選項（wrap_text 0x4e 寬）
+State that you are conflicted	表示你很矛盾	表示你很纠结		FUN_140697740 L921096 交談選單選項（wrap_text 0x4e 寬）
+State that preaching is your calling	表示傳道是你的天職	表示传道是你的天职		FUN_140697740 L921102 交談選單選項（wrap_text 0x4e 寬）
+State that it accords with your faith	表示這符合你的信仰	表示这符合你的信仰		FUN_140697740 L921111 交談選單選項（wrap_text 0x4e 寬）
+Request free room	索取免費房間	申请免费房间		FUN_140697740 L923692 交談選單選項（拼接後的整句）
+Extend use of free room	延長使用免費房間	延长使用免费房间		FUN_140697740 L923723 交談選單選項（拼接後的整句）
+Bring up your death	提起你的死亡	提起你的死亡		FUN_140697740 L918317 交談選單選項（拼接後的整句）
+Ask for the whereabouts of yourself	詢問你自己的下落	询问你自己的下落		FUN_140697740 L921727 交談選單選項（拼接後的整句）
+Request a guide to yourself	請人帶路去找你自己	请人带路去找你自己		FUN_140697740 L921785 交談選單選項（拼接後的整句）
+Ask about yourself	打聽你自己的事	打听你自己的事		FUN_140697740 L923526 交談選單選項（拼接後的整句）
+Offer listener your position as something	將你的某個職位讓給對方	把你的某个职位让给对方		FUN_140697740 L923361 交談選單選項（拼接後的整句）
+Summarize the conflict in which many died	概述那場死傷慘重的衝突	概述那场死伤惨重的冲突		FUN_140697740 L922562 交談選單選項（拼接後的整句）
+Summarize the conflict in which you slew many foes	概述你殺死眾多敵人的那場衝突	概述你杀死众多敌人的那场冲突		FUN_140697740 L922662 交談選單選項（拼接後的整句）
+Ask about the deaths	詢問那些死亡事件	询问那些死亡事件		FUN_140697740 L921555 case 0x4b 詢問麻煩：Ask about＋固定片語
+Ask about the death	詢問那起死亡事件	询问那起死亡事件		FUN_140697740 L921555 case 0x4b 詢問麻煩：Ask about＋固定片語
+Ask about the law-breaking	詢問違法亂紀的事	询问违法乱纪的事		FUN_140697740 L921555 case 0x4b 詢問麻煩：Ask about＋固定片語
+Ask about the fighting	詢問那場戰鬥	询问那场战斗		FUN_140697740 L921555 case 0x4b 詢問麻煩：Ask about＋固定片語
+Ask about armies on the march	詢問行軍中的軍隊	询问行军中的军队		FUN_140697740 L921555 case 0x4b 詢問麻煩：Ask about＋固定片語
+Ask about the army on the march	詢問那支行軍中的軍隊	询问那支行军中的军队		FUN_140697740 L921555 case 0x4b 詢問麻煩：Ask about＋固定片語
+Ask about the abductions	詢問那些綁架事件	询问那些绑架事件		FUN_140697740 L921555 case 0x4b 詢問麻煩：Ask about＋固定片語
+Ask about the abduction	詢問那起綁架事件	询问那起绑架事件		FUN_140697740 L921555 case 0x4b 詢問麻煩：Ask about＋固定片語
+Ask about occupations	詢問那些佔領事件	询问那些占领事件		FUN_140697740 L921555 case 0x4b 詢問麻煩：Ask about＋固定片語
+Ask about the occupation	詢問那次佔領	询问那次占领		FUN_140697740 L921555 case 0x4b 詢問麻煩：Ask about＋固定片語
+Ask about the beasts	詢問那些野獸	询问那些野兽		FUN_140697740 L921555 case 0x4b 詢問麻煩：Ask about＋固定片語
+Ask about the beast	詢問那頭野獸	询问那头野兽		FUN_140697740 L921555 case 0x4b 詢問麻煩：Ask about＋固定片語
+Ask about the criminals	詢問那些罪犯	询问那些罪犯		FUN_140697740 L921555 case 0x4b 詢問麻煩：Ask about＋固定片語
+Ask about the bandits	詢問那些盜匪	询问那些土匪		FUN_140697740 L921555 case 0x4b 詢問麻煩：Ask about＋固定片語
+Ask about the skulking vermin	詢問那些鬼鬼祟祟的害蟲	询问那些鬼鬼祟祟的害虫		FUN_140697740 L921555 case 0x4b 詢問麻煩：Ask about＋固定片語
+Ask about the bone-chilling horror	詢問那令人毛骨悚然的恐怖存在	询问那令人毛骨悚然的恐怖存在		FUN_140697740 L921555 case 0x4b 詢問麻煩：Ask about＋固定片語
+Ask about the ruffians	詢問那些惡棍	询问那些恶棍		FUN_140697740 L921555 case 0x4b 詢問麻煩：Ask about＋固定片語
+Ask about the open war	詢問那場公開的戰爭	询问那场公开的战争		FUN_140697740 L921555 case 0x4b 詢問麻煩：Ask about＋固定片語
+Ask about the brewing trouble	詢問醞釀中的麻煩	询问酝酿中的麻烦		FUN_140697740 L921555 case 0x4b 詢問麻煩：Ask about＋固定片語
+Ask about the missing treasure	詢問失蹤的寶物	询问失踪的宝物		FUN_140697740 L921555 case 0x4b 詢問麻煩：Ask about＋固定片語
+your death	你的死亡	你的死亡	inner	FUN_140697740 L919078 散播傳聞 case 0xd/2/0：自己的死
+the object	那件物品	那件物品	inner	FUN_140697740 L922823 物品不存在時（要求對方放下／交易）
+many foes	眾多敵人	众多敌人	inner	FUN_140697740 L922662 衝突概述：你殺死的對象超過五個
+a creature died	一隻生物死亡	一只生物死亡	inner	FUN_140697740 L922519 衝突概述：死者清單
+creatures died	多隻生物死亡	多只生物死亡	inner	FUN_140697740 L922522 衝突概述：死者清單
+bonedoctor	骨科醫師	骨科医师	inner	FUN_140697740 L924249 Ask to be made a／Ask for … to made：遊戲把 bone 與 doctor 直接相接（少空白）
+tavern keepers	酒館老闆	酒馆老板	inner	FUN_140697740 L924287 職業複數（Ask for {1} to made {%2} for {3}、 work as {%1} for {2}）
+scholars	學者	学者	inner	FUN_140697740 L924302 職業複數
+monster slayers	怪物獵人	怪物猎人	inner	FUN_140697740 L924314 職業複數
+scribes	抄寫員	抄写员	inner	FUN_140697740 L924323 職業複數
+doctors	醫師	医师	inner	FUN_140697740 L924331 職業複數
+diagnosticians	診斷醫師	诊断医师	inner	FUN_140697740 L924521 職業複數
+surgeons	外科醫	外科医	inner	FUN_140697740 L924524 職業複數；同 Surgeon 術語
+bone doctors	骨科醫師	骨科医师	inner	FUN_140697740 L924527 職業複數
+in a time before time	太古之時	太古之时	inner	FUN_140675670 相對時間（交談選單 L922669 (This occurred …)；Adv03Speech 的傳聞句也借用，首字大寫時靠引擎退回小寫）
+in the future	未來	未来	inner	FUN_140675670 相對時間（交談選單 L922669 (This occurred …)；Adv03Speech 的傳聞句也借用，首字大寫時靠引擎退回小寫）
+a few years ago	幾年前	几年前	inner	FUN_140675670 相對時間（交談選單 L922669 (This occurred …)；Adv03Speech 的傳聞句也借用，首字大寫時靠引擎退回小寫）
+several years ago	好幾年前	好几年前	inner	FUN_140675670 相對時間（交談選單 L922669 (This occurred …)；Adv03Speech 的傳聞句也借用，首字大寫時靠引擎退回小寫）
+many years ago	許多年前	许多年前	inner	FUN_140675670 相對時間（交談選單 L922669 (This occurred …)；Adv03Speech 的傳聞句也借用，首字大寫時靠引擎退回小寫）
+long ago	很久以前	很久以前	inner	FUN_140675670 相對時間（交談選單 L922669 (This occurred …)；Adv03Speech 的傳聞句也借用，首字大寫時靠引擎退回小寫）
+long, long ago	很久很久以前	很久很久以前	inner	FUN_140675670 相對時間（交談選單 L922669 (This occurred …)；Adv03Speech 的傳聞句也借用，首字大寫時靠引擎退回小寫）
+just now	剛才	刚才	inner	FUN_140675670 相對時間（交談選單 L922669 (This occurred …)；Adv03Speech 的傳聞句也借用，首字大寫時靠引擎退回小寫）
+a few minutes ago	幾分鐘前	几分钟前	inner	FUN_140675670 相對時間（交談選單 L922669 (This occurred …)；Adv03Speech 的傳聞句也借用，首字大寫時靠引擎退回小寫）
+not a quarter hour ago	不到一刻鐘前	不到一刻钟前	inner	FUN_140675670 相對時間（交談選單 L922669 (This occurred …)；Adv03Speech 的傳聞句也借用，首字大寫時靠引擎退回小寫）
+not a half hour ago	不到半小時前	不到半小时前	inner	FUN_140675670 相對時間（交談選單 L922669 (This occurred …)；Adv03Speech 的傳聞句也借用，首字大寫時靠引擎退回小寫）
+not one hour ago	不到一小時前	不到一小时前	inner	FUN_140675670 相對時間（交談選單 L922669 (This occurred …)；Adv03Speech 的傳聞句也借用，首字大寫時靠引擎退回小寫）
+a few hours ago	幾小時前	几小时前	inner	FUN_140675670 相對時間（交談選單 L922669 (This occurred …)；Adv03Speech 的傳聞句也借用，首字大寫時靠引擎退回小寫）
+not one day ago	不到一天前	不到一天前	inner	FUN_140675670 相對時間（交談選單 L922669 (This occurred …)；Adv03Speech 的傳聞句也借用，首字大寫時靠引擎退回小寫）
+a few days ago	幾天前	几天前	inner	FUN_140675670 相對時間（交談選單 L922669 (This occurred …)；Adv03Speech 的傳聞句也借用，首字大寫時靠引擎退回小寫）
+several days ago	好幾天前	好几天前	inner	FUN_140675670 相對時間（交談選單 L922669 (This occurred …)；Adv03Speech 的傳聞句也借用，首字大寫時靠引擎退回小寫）
+a week ago	一週前	一周前	inner	FUN_140675670 相對時間（交談選單 L922669 (This occurred …)；Adv03Speech 的傳聞句也借用，首字大寫時靠引擎退回小寫）
+a few weeks ago	幾週前	几周前	inner	FUN_140675670 相對時間（交談選單 L922669 (This occurred …)；Adv03Speech 的傳聞句也借用，首字大寫時靠引擎退回小寫）
+a month ago	一個月前	一个月前	inner	FUN_140675670 相對時間（交談選單 L922669 (This occurred …)；Adv03Speech 的傳聞句也借用，首字大寫時靠引擎退回小寫）
+a few months ago	幾個月前	几个月前	inner	FUN_140675670 相對時間（交談選單 L922669 (This occurred …)；Adv03Speech 的傳聞句也借用，首字大寫時靠引擎退回小寫）
+months ago	好幾個月前	好几个月前	inner	FUN_140675670 相對時間（交談選單 L922669 (This occurred …)；Adv03Speech 的傳聞句也借用，首字大寫時靠引擎退回小寫）
+a year ago	一年前	一年前	inner	FUN_140675670 相對時間（交談選單 L922669 (This occurred …)；Adv03Speech 的傳聞句也借用，首字大寫時靠引擎退回小寫）
+your production order violation	你的違反生產命令案	你的违反生产命令案	inner	FUN_140697740 L918371／L919134 事件 crime：自己犯的罪（Bring up／Spread rumor of 的 {%1}）
+your export prohibition violation	你的違反出口禁令案	你的违反出口禁令案	inner	FUN_140697740 L918371／L919134 事件 crime：自己犯的罪（Bring up／Spread rumor of 的 {%1}）
+your job order violation	你的違反工作命令案	你的违反工作命令案	inner	FUN_140697740 L918371／L919134 事件 crime：自己犯的罪（Bring up／Spread rumor of 的 {%1}）
+your conspiracy to slow labor	你的怠工陰謀案	你的怠工阴谋案	inner	FUN_140697740 L918371／L919134 事件 crime：自己犯的罪（Bring up／Spread rumor of 的 {%1}）
+your crime of murder	你的謀殺罪行	你的谋杀罪行	inner	FUN_140697740 L918371／L919134 事件 crime：自己犯的罪（Bring up／Spread rumor of 的 {%1}）
+your disorderly conduct	你的擾亂秩序案	你的扰乱秩序案	inner	FUN_140697740 L918371／L919134 事件 crime：自己犯的罪（Bring up／Spread rumor of 的 {%1}）
+your building destruction	你的破壞建築案	你的破坏建筑案	inner	FUN_140697740 L918371／L919134 事件 crime：自己犯的罪（Bring up／Spread rumor of 的 {%1}）
+your vandalism	你的蓄意破壞案	你的故意破坏案	inner	FUN_140697740 L918371／L919134 事件 crime：自己犯的罪（Bring up／Spread rumor of 的 {%1}）
+your crime of theft	你的竊盜罪行	你的盗窃罪行	inner	FUN_140697740 L918371／L919134 事件 crime：自己犯的罪（Bring up／Spread rumor of 的 {%1}）
+your crime of robbery	你的搶劫罪行	你的抢劫罪行	inner	FUN_140697740 L918371／L919134 事件 crime：自己犯的罪（Bring up／Spread rumor of 的 {%1}）
+your crime of blood-drinking	你的吸血罪行	你的吸血罪行	inner	FUN_140697740 L918371／L919134 事件 crime：自己犯的罪（Bring up／Spread rumor of 的 {%1}）
+your embezzlement	你的盜用公款案	你的挪用公款案	inner	FUN_140697740 L918371／L919134 事件 crime：自己犯的罪（Bring up／Spread rumor of 的 {%1}）
+your crime of attempted murder	你的謀殺未遂罪行	你的谋杀未遂罪行	inner	FUN_140697740 L918371／L919134 事件 crime：自己犯的罪（Bring up／Spread rumor of 的 {%1}）
+your crime of kidnapping	你的綁架罪行	你的绑架罪行	inner	FUN_140697740 L918371／L919134 事件 crime：自己犯的罪（Bring up／Spread rumor of 的 {%1}）
+your crime of attempted kidnapping	你的綁架未遂罪行	你的绑架未遂罪行	inner	FUN_140697740 L918371／L919134 事件 crime：自己犯的罪（Bring up／Spread rumor of 的 {%1}）
+your crime of attempted theft	你的竊盜未遂罪行	你的盗窃未遂罪行	inner	FUN_140697740 L918371／L919134 事件 crime：自己犯的罪（Bring up／Spread rumor of 的 {%1}）
+your crime of treason	你的叛國罪行	你的叛国罪行	inner	FUN_140697740 L918371／L919134 事件 crime：自己犯的罪（Bring up／Spread rumor of 的 {%1}）
+your crime of espionage	你的間諜罪行	你的间谍罪行	inner	FUN_140697740 L918371／L919134 事件 crime：自己犯的罪（Bring up／Spread rumor of 的 {%1}）
+your bribery	你的賄賂案	你的贿赂案	inner	FUN_140697740 L918371／L919134 事件 crime：自己犯的罪（Bring up／Spread rumor of 的 {%1}）
+your presence	你的行蹤	你的行踪	inner	FUN_140697740 L919828 傳聞 4
+your ascension	你的晉升	你的晋升	inner	FUN_140697740 L920167 傳聞 0x10
+Keywords: 	關鍵字：	关键字：		FUN_140867e10 L1208118 交談選單每個選項下方的標籤；後面的關鍵字一個字一次 addst，引擎照英文畫（搜尋框只收英文）

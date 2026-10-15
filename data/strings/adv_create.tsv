@@ -1,0 +1,382 @@
+en	zh-Hant	zh-Hans	align	note
+Adventurer, choose your destiny!	冒險者，選擇你的命運！	冒险者，选择你的命运！	c	FUN_140622790 L846204 選擇命運畫面標題
+Chosen	天選者	天选者	c	FUN_140622790 L846257/848404 命運選項：受神明選召的冒險者；原文 6 格只放得下三字
+Ordinary	平凡	平凡	c	FUN_140622790 L846276/848418 命運選項：一般冒險者
+Include tutorial	包含教學	包含教程		FUN_140622790 L846599 選擇命運畫面勾選框
+Easy difficulty	簡單難度	简单难度	c	FUN_140622790 L846715–846953 難度按鈕
+Normal difficulty	普通難度	普通难度	c	FUN_140622790 L846715–846953 難度按鈕
+Hard difficulty	困難難度	困难难度	c	FUN_140622790 L846715–846953 難度按鈕
+Attribute points: 	屬性點數：	属性点数：		FUN_140622790 L846961 難度說明：後接數字
+Skill points: 	技能點數：	技能点数：		FUN_140622790 L846970 難度說明：後接數字
+Equipment/pet points: 	裝備／寵物點數：	装备／宠物点数：		FUN_140622790 L846979 難度說明：後接數字
+(Any unretired characters in your party will be unaffected.)	（隊伍中未退休的角色不受影響。）	（队伍中未退休的角色不受影响。）		FUN_140622790 L846991 難度說明
+Onward to character creation	前往建立角色	前往创建角色	c	FUN_140622790 L847018 按鈕
+Create Your Character	建立你的角色	创建你的角色		FUN_140622790 L847027/847610/848390 畫面標題
+There are no creatures available.	沒有可選的生物。	没有可选的生物。		FUN_140622790 L847039 種族清單為空
+Specific person	特定人物	特定人物		FUN_140622790 L847219 種族清單項目：扮演既有的歷史人物
+Intelligent wilderness creature	智慧野生生物	智慧野生生物		FUN_140622790 L847226 種族清單項目
+Intelligent wilderness creatures live in the indicated locations	智慧野生生物棲息的地點已標示在	智慧野生生物栖息的地点已标示在		FUN_140622790 L847288 地圖旁說明第 1 行；第 2 行是 above.，譯文把「上方。」留給第 2 行；術語例外：location；地圖上的地點，不是要塞場所
+above.	上方。	上方。		FUN_140622790 L847293 地圖旁說明第 2 行，接上一行「…已標示在」
+Select specific person	選擇特定人物	选择特定人物	c	FUN_140622790 L847486 按鈕：Select ＋ specific person
+Select intelligent wilderness creature	選擇智慧野生生物	选择智慧野生生物	c	FUN_140622790 L847486 按鈕
+Select outsider	選擇外來者	选择外来者	c	FUN_140622790 L848873 選擇文明畫面按鈕：Select ＋ outsider
+Back to difficulty selection	返回難度選擇	返回难度选择	c	FUN_140622790 L847540 按鈕
+(wipes any character data!)	（會清除所有角色資料！）	（会清除所有角色数据！）		FUN_140622790 L847545 上一個按鈕下方的警告
+ from an unknown place	 來自未知之地	 来自未知之地		FUN_140622790 L848208 特定人物清單第 2 行：人物名下方的出身地（找不到據點時）
+Outsider	外來者	外来者		FUN_140622790 L848549 文明清單：不屬於任何文明
+tiny population	人口極少	人口极少	inner	FUN_140622790 L848658–848743 文明說明的人口片語，接在 with a 後面（句型 This is a {%1} civilization …）
+population of a few dozen	人口有數十	人口有数十	inner	FUN_140622790 L848658–848743 文明說明的人口片語，接在 with a 後面（句型 This is a {%1} civilization …）
+population of some dozens	人口有幾十	人口有几十	inner	FUN_140622790 L848658–848743 文明說明的人口片語，接在 with a 後面（句型 This is a {%1} civilization …）
+population of roughly a hundred	人口約一百	人口约一百	inner	FUN_140622790 L848658–848743 文明說明的人口片語，接在 with a 後面（句型 This is a {%1} civilization …）
+population of well over a hundred	人口一百有餘	人口一百有余	inner	FUN_140622790 L848658–848743 文明說明的人口片語，接在 with a 後面（句型 This is a {%1} civilization …）；術語例外：well；副詞，不是水井
+population of a few hundred	人口有數百	人口有数百	inner	FUN_140622790 L848658–848743 文明說明的人口片語，接在 with a 後面（句型 This is a {%1} civilization …）
+population of several hundred	人口有好幾百	人口有好几百	inner	FUN_140622790 L848658–848743 文明說明的人口片語，接在 with a 後面（句型 This is a {%1} civilization …）
+population of a thousand	人口約一千	人口约一千	inner	FUN_140622790 L848658–848743 文明說明的人口片語，接在 with a 後面（句型 This is a {%1} civilization …）
+population of a few thousand	人口有數千	人口有数千	inner	FUN_140622790 L848658–848743 文明說明的人口片語，接在 with a 後面（句型 This is a {%1} civilization …）
+population of thousands	人口數以千計	人口数以千计	inner	FUN_140622790 L848658–848743 文明說明的人口片語，接在 with a 後面（句型 This is a {%1} civilization …）
+population of nearly ten thousand	人口將近一萬	人口将近一万	inner	FUN_140622790 L848658–848743 文明說明的人口片語，接在 with a 後面（句型 This is a {%1} civilization …）
+population of ten thousand	人口約一萬	人口约一万	inner	FUN_140622790 L848658–848743 文明說明的人口片語，接在 with a 後面（句型 This is a {%1} civilization …）
+population of well over ten thousand	人口一萬有餘	人口一万有余	inner	FUN_140622790 L848658–848743 文明說明的人口片語，接在 with a 後面（句型 This is a {%1} civilization …）；術語例外：well；副詞，不是水井
+population of nearly twenty thousand	人口將近兩萬	人口将近两万	inner	FUN_140622790 L848658–848743 文明說明的人口片語，接在 with a 後面（句型 This is a {%1} civilization …）
+population of twenty thousand	人口約兩萬	人口约两万	inner	FUN_140622790 L848658–848743 文明說明的人口片語，接在 with a 後面（句型 This is a {%1} civilization …）
+population of well over twenty thousand	人口兩萬有餘	人口两万有余	inner	FUN_140622790 L848658–848743 文明說明的人口片語，接在 with a 後面（句型 This is a {%1} civilization …）；術語例外：well；副詞，不是水井
+population in the tens of thousands	人口數以萬計	人口数以万计	inner	FUN_140622790 L848658–848743 文明說明的人口片語，接在 with a 後面（句型 This is a {%1} civilization …）
+population of nearly one hundred thousand	人口將近十萬	人口将近十万	inner	FUN_140622790 L848658–848743 文明說明的人口片語，接在 with a 後面（句型 This is a {%1} civilization …）
+population of one hundred thousand	人口約十萬	人口约十万	inner	FUN_140622790 L848658–848743 文明說明的人口片語，接在 with a 後面（句型 This is a {%1} civilization …）
+population of well over one hundred thousand	人口十萬有餘	人口十万有余	inner	FUN_140622790 L848658–848743 文明說明的人口片語，接在 with a 後面（句型 This is a {%1} civilization …）；術語例外：well；副詞，不是水井
+population of nearly two hundred thousand	人口將近二十萬	人口将近二十万	inner	FUN_140622790 L848658–848743 文明說明的人口片語，接在 with a 後面（句型 This is a {%1} civilization …）
+population of two hundred thousand	人口約二十萬	人口约二十万	inner	FUN_140622790 L848658–848743 文明說明的人口片語，接在 with a 後面（句型 This is a {%1} civilization …）
+population of well over two hundred thousand	人口二十萬有餘	人口二十万有余	inner	FUN_140622790 L848658–848743 文明說明的人口片語，接在 with a 後面（句型 This is a {%1} civilization …）；術語例外：well；副詞，不是水井
+population in the hundreds of thousands	人口數以十萬計	人口数以十万计	inner	FUN_140622790 L848658–848743 文明說明的人口片語，接在 with a 後面（句型 This is a {%1} civilization …）
+population of nearly one million	人口將近一百萬	人口将近一百万	inner	FUN_140622790 L848658–848743 文明說明的人口片語，接在 with a 後面（句型 This is a {%1} civilization …）
+population of one million	人口約一百萬	人口约一百万	inner	FUN_140622790 L848658–848743 文明說明的人口片語，接在 with a 後面（句型 This is a {%1} civilization …）
+population of well over one million	人口一百萬有餘	人口一百万有余	inner	FUN_140622790 L848658–848743 文明說明的人口片語，接在 with a 後面（句型 This is a {%1} civilization …）；術語例外：well；副詞，不是水井
+population of nearly two million	人口將近兩百萬	人口将近两百万	inner	FUN_140622790 L848658–848743 文明說明的人口片語，接在 with a 後面（句型 This is a {%1} civilization …）
+population in the millions	人口數以百萬計	人口数以百万计	inner	FUN_140622790 L848658–848743 文明說明的人口片語，接在 with a 後面（句型 This is a {%1} civilization …）
+Background	背景	背景		FUN_140622790 L849230–849260 建立角色分頁標籤
+Appearance	外貌	外貌		FUN_140622790 L849230–849260 建立角色分頁標籤
+Equipment	裝備	装备		FUN_140622790 L849230–849260 建立角色分頁標籤
+Mount and pets	坐騎與寵物	坐骑与宠物		FUN_140622790 L849230–849260 建立角色分頁標籤
+Name: 	名字：	名字：		FUN_140622790 L849284 後接角色名
+This character is ready to adventure!	此角色已準備好冒險！	此角色已准备好冒险！		FUN_140622790 L849304
+Accept attributes and skills	接受屬性與技能	接受属性与技能	c	FUN_140622790 L849360 按鈕；與既有 Accept personality「接受性格」一致
+Customize	自訂	自定义	c	FUN_140622790 L849388 切換按鈕：自己分配點數
+Archetypes	角色範本	角色模板	c	FUN_140622790 L849393/849417 切換按鈕與標題：預設的角色範本
+Your Attributes and Skills	你的屬性與技能	你的属性与技能		FUN_140622790 L849545 標題
+Attributes remaining: 	剩餘屬性點：	剩余属性点：		FUN_140622790 L849592 後接數字
+Skill remaining: 	剩餘技能點：	剩余技能点：		FUN_140622790 L849601 後接數字
+Toughness	韌性	韧性		FUN_140622790 L850368/850728/850825 屬性說明標題與「受以下屬性影響」清單（wrap_text）
+Endurance	耐力	耐力		FUN_140622790 L850368/850728/850825 屬性說明標題與「受以下屬性影響」清單（wrap_text）
+Recuperation	復原力	恢复力		FUN_140622790 L850368/850728/850825 屬性說明標題與「受以下屬性影響」清單（wrap_text）
+Disease Resistance	抗病力	抗病力		FUN_140622790 L850368/850728/850825 屬性說明標題與「受以下屬性影響」清單（wrap_text）
+Analytical Ability	分析能力	分析能力		FUN_140622790 L850368/850728/850825 屬性說明標題與「受以下屬性影響」清單（wrap_text）
+Focus	專注	专注		FUN_140622790 L850368/850728/850825 屬性說明標題與「受以下屬性影響」清單（wrap_text）；原文 5 格，只放得下「專注」
+Willpower	意志力	意志力		FUN_140622790 L850368/850728/850825 屬性說明標題與「受以下屬性影響」清單（wrap_text）；sentences_attributes 的小寫 willpower 是述語「意志力不錯」，這裡寫大寫整句蓋過大小寫退回
+Creativity	創造力	创造力		FUN_140622790 L850368/850728/850825 屬性說明標題與「受以下屬性影響」清單（wrap_text）
+Intuition	直覺	直觉		FUN_140622790 L850368/850728/850825 屬性說明標題與「受以下屬性影響」清單（wrap_text）
+Memory	記憶力	记忆力		FUN_140622790 L850368/850728/850825 屬性說明標題與「受以下屬性影響」清單（wrap_text）
+Linguistic Ability	語言能力	语言能力		FUN_140622790 L850368/850728/850825 屬性說明標題與「受以下屬性影響」清單（wrap_text）
+Spatial Sense	空間感	空间感		FUN_140622790 L850368/850728/850825 屬性說明標題與「受以下屬性影響」清單（wrap_text）
+Musicality	樂感	乐感		FUN_140622790 L850368/850728/850825 屬性說明標題與「受以下屬性影響」清單（wrap_text）
+Kinesthetic Sense	肢體感知	肢体感知		FUN_140622790 L850368/850728/850825 屬性說明標題與「受以下屬性影響」清單（wrap_text）
+Empathy	同理心	同理心		FUN_140622790 L850368/850728/850825 屬性說明標題與「受以下屬性影響」清單（wrap_text）；小寫 empathy 是情緒詞「共鳴」，屬性名寫大寫整句
+Social Awareness	社交意識	社交意识		FUN_140622790 L850368/850728/850825 屬性說明標題與「受以下屬性影響」清單（wrap_text）
+Very Low Strength	力量極低	力量极低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Very Low Agility	敏捷極低	敏捷极低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Very Low Toughness	韌性極低	韧性极低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Very Low Endurance	耐力極低	耐力极低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Very Low Recuperation	復原力極低	恢复力极低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Very Low Disease Resistance	抗病力極低	抗病力极低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Very Low Analytical Ability	分析能力極低	分析能力极低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Very Low Focus	專注力極低	专注力极低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Very Low Willpower	意志力極低	意志力极低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Very Low Creativity	創造力極低	创造力极低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Very Low Intuition	直覺極低	直觉极低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Very Low Patience	耐心極低	耐心极低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Very Low Memory	記憶力極低	记忆力极低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Very Low Linguistic Ability	語言能力極低	语言能力极低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Very Low Spatial Sense	空間感極低	空间感极低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Very Low Musicality	樂感極低	乐感极低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Very Low Kinesthetic Sense	肢體感知極低	肢体感知极低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Very Low Empathy	同理心極低	同理心极低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Very Low Social Awareness	社交意識極低	社交意识极低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Low Strength	力量低	力量低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Low Agility	敏捷低	敏捷低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Low Toughness	韌性低	韧性低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Low Endurance	耐力低	耐力低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Low Recuperation	復原力低	恢复力低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Low Disease Resistance	抗病力低	抗病力低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Low Analytical Ability	分析能力低	分析能力低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Low Focus	專注力低	专注力低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Low Willpower	意志力低	意志力低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Low Creativity	創造力低	创造力低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Low Intuition	直覺低	直觉低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Low Patience	耐心低	耐心低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Low Memory	記憶力低	记忆力低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Low Linguistic Ability	語言能力低	语言能力低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Low Spatial Sense	空間感低	空间感低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Low Musicality	樂感低	乐感低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Low Kinesthetic Sense	肢體感知低	肢体感知低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Low Empathy	同理心低	同理心低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Low Social Awareness	社交意識低	社交意识低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Below Average Strength	力量偏低	力量偏低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Below Average Agility	敏捷偏低	敏捷偏低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Below Average Toughness	韌性偏低	韧性偏低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Below Average Endurance	耐力偏低	耐力偏低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Below Average Recuperation	復原力偏低	恢复力偏低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Below Average Disease Resistance	抗病力偏低	抗病力偏低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Below Average Analytical Ability	分析能力偏低	分析能力偏低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Below Average Focus	專注力偏低	专注力偏低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Below Average Willpower	意志力偏低	意志力偏低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Below Average Creativity	創造力偏低	创造力偏低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Below Average Intuition	直覺偏低	直觉偏低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Below Average Patience	耐心偏低	耐心偏低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Below Average Memory	記憶力偏低	记忆力偏低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Below Average Linguistic Ability	語言能力偏低	语言能力偏低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Below Average Spatial Sense	空間感偏低	空间感偏低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Below Average Musicality	樂感偏低	乐感偏低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Below Average Kinesthetic Sense	肢體感知偏低	肢体感知偏低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Below Average Empathy	同理心偏低	同理心偏低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Below Average Social Awareness	社交意識偏低	社交意识偏低		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Average Strength	力量普通	力量普通		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Average Agility	敏捷普通	敏捷普通		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Average Toughness	韌性普通	韧性普通		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Average Endurance	耐力普通	耐力普通		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Average Recuperation	復原力普通	恢复力普通		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Average Disease Resistance	抗病力普通	抗病力普通		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Average Analytical Ability	分析能力普通	分析能力普通		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Average Focus	專注力普通	专注力普通		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Average Willpower	意志力普通	意志力普通		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Average Creativity	創造力普通	创造力普通		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Average Intuition	直覺普通	直觉普通		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Average Patience	耐心普通	耐心普通		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Average Memory	記憶力普通	记忆力普通		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Average Linguistic Ability	語言能力普通	语言能力普通		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Average Spatial Sense	空間感普通	空间感普通		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Average Musicality	樂感普通	乐感普通		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Average Kinesthetic Sense	肢體感知普通	肢体感知普通		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Average Empathy	同理心普通	同理心普通		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Average Social Awareness	社交意識普通	社交意识普通		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Above Average Strength	力量偏高	力量偏高		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Above Average Agility	敏捷偏高	敏捷偏高		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Above Average Toughness	韌性偏高	韧性偏高		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Above Average Endurance	耐力偏高	耐力偏高		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Above Average Recuperation	復原力偏高	恢复力偏高		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Above Average Disease Resistance	抗病力偏高	抗病力偏高		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Above Average Analytical Ability	分析能力偏高	分析能力偏高		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Above Average Focus	專注力偏高	专注力偏高		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Above Average Willpower	意志力偏高	意志力偏高		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Above Average Creativity	創造力偏高	创造力偏高		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Above Average Intuition	直覺偏高	直觉偏高		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Above Average Patience	耐心偏高	耐心偏高		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Above Average Memory	記憶力偏高	记忆力偏高		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Above Average Linguistic Ability	語言能力偏高	语言能力偏高		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Above Average Spatial Sense	空間感偏高	空间感偏高		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Above Average Musicality	樂感偏高	乐感偏高		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Above Average Kinesthetic Sense	肢體感知偏高	肢体感知偏高		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Above Average Empathy	同理心偏高	同理心偏高		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Above Average Social Awareness	社交意識偏高	社交意识偏高		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+High Strength	力量高	力量高		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+High Agility	敏捷高	敏捷高		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+High Toughness	韌性高	韧性高		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+High Endurance	耐力高	耐力高		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+High Recuperation	復原力高	恢复力高		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+High Disease Resistance	抗病力高	抗病力高		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+High Analytical Ability	分析能力高	分析能力高		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+High Focus	專注力高	专注力高		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+High Willpower	意志力高	意志力高		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+High Creativity	創造力高	创造力高		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+High Intuition	直覺高	直觉高		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+High Patience	耐心高	耐心高		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+High Memory	記憶力高	记忆力高		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+High Linguistic Ability	語言能力高	语言能力高		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+High Spatial Sense	空間感高	空间感高		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+High Musicality	樂感高	乐感高		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+High Kinesthetic Sense	肢體感知高	肢体感知高		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+High Empathy	同理心高	同理心高		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+High Social Awareness	社交意識高	社交意识高		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Superior Strength	力量卓越	力量卓越		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Superior Agility	敏捷卓越	敏捷卓越		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Superior Toughness	韌性卓越	韧性卓越		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Superior Endurance	耐力卓越	耐力卓越		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Superior Recuperation	復原力卓越	恢复力卓越		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Superior Disease Resistance	抗病力卓越	抗病力卓越		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Superior Analytical Ability	分析能力卓越	分析能力卓越		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Superior Focus	專注力卓越	专注力卓越		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Superior Willpower	意志力卓越	意志力卓越		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Superior Creativity	創造力卓越	创造力卓越		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Superior Intuition	直覺卓越	直觉卓越		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Superior Patience	耐心卓越	耐心卓越		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Superior Memory	記憶力卓越	记忆力卓越		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Superior Linguistic Ability	語言能力卓越	语言能力卓越		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Superior Spatial Sense	空間感卓越	空间感卓越		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Superior Musicality	樂感卓越	乐感卓越		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Superior Kinesthetic Sense	肢體感知卓越	肢体感知卓越		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Superior Empathy	同理心卓越	同理心卓越		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Superior Social Awareness	社交意識卓越	社交意识卓越		FUN_140622790 L849686–849832 屬性清單一列：等級＋空白＋屬性名，整條拼好再畫；整條寫出，不拆成「{@1} {@2}」
+Affects physical size, attack power, charging, armor ungainliness, throwing power, carrying capacity, and movement speed.	影響體型、攻擊力、衝撞、盔甲笨重程度、投擲力、負重能力與移動速度。	影响体型、攻击力、冲撞、盔甲笨重程度、投掷力、负重能力和移动速度。		FUN_140622790 L850372–850711 技能／屬性說明（wrap_text 寬 48）
+Affects movement speed.	影響移動速度。	影响移动速度。		FUN_140622790 L850372–850711 技能／屬性說明（wrap_text 寬 48）
+Affects breath.	影響閉氣能力。	影响憋气能力。		FUN_140622790 L850372–850711 技能／屬性說明（wrap_text 寬 48）
+Affects stamina recover, ability to remain standing when tired, and breath.	影響體力恢復、疲累時保持站立的能力與閉氣能力。	影响体力恢复、疲劳时保持站立的能力和憋气能力。		FUN_140622790 L850372–850711 技能／屬性說明（wrap_text 寬 48）
+Affects healing rate of damaged tissues.	影響受損組織的癒合速度。	影响受损组织的愈合速度。		FUN_140622790 L850372–850711 技能／屬性說明（wrap_text 寬 48）
+Affects resistance to poisons and infections.	影響對毒素與感染的抵抗力。	影响对毒素和感染的抵抗力。		FUN_140622790 L850372–850711 技能／屬性說明（wrap_text 寬 48）
+Crafting skill.	工藝技藝。	工艺技艺。		FUN_140622790 L850372–850711 技能／屬性說明（wrap_text 寬 48）
+Not useful unless you retire and subsequently become a resident in Fortress mode.	除非你退休，之後在要塞模式中成為居民，否則沒有用處。	除非你退休，之后在要塞模式中成为居民，否则没有用处。		FUN_140622790 L850372–850711 技能／屬性說明（wrap_text 寬 48）
+Requires an item with a sharp edge.	需要有利刃的物品。	需要有锋利刃口的物品。		FUN_140622790 L850372–850711 技能／屬性說明（wrap_text 寬 48）
+Affects ability to block melee and ranged attacks with a shield.	影響以盾牌格擋近戰與遠程攻擊的能力。	影响用盾牌格挡近战和远程攻击的能力。		FUN_140622790 L850372–850711 技能／屬性說明（wrap_text 寬 48）
+Affects ability to move quickly and dodge while armored.	影響穿戴護甲時快速移動與閃避的能力。	影响穿戴护甲时快速移动和闪避的能力。		FUN_140622790 L850372–850711 技能／屬性說明（wrap_text 寬 48）
+Ability to throw objects.	投擲物體的能力。	投掷物体的能力。		FUN_140622790 L850372–850711 技能／屬性說明（wrap_text 寬 48）；術語例外：object；崇拜對象、投擲的物體、雜物武器，不是物品欄的物品
+Affects ability to remain hidden while sneaking.	影響潛行時保持隱蔽的能力。	影响潜行时保持隐蔽的能力。		FUN_140622790 L850372–850711 技能／屬性說明（wrap_text 寬 48）
+Required to swim well without floundering.	要游得好、不手忙腳亂就需要它。	要游得好、不手忙脚乱就需要它。		FUN_140622790 L850372–850711 技能／屬性說明（wrap_text 寬 48）；術語例外：well；副詞，不是水井
+Affects ability to state values, press arguments, and persuasion tactics in interrogation.	影響陳述價值觀、據理力爭，以及審訊時說服手段的能力。	影响陈述价值观、据理力争，以及审讯时说服手段的能力。		FUN_140622790 L850372–850711 技能／屬性說明（wrap_text 寬 48）
+Allows insight into emotional states during conversations.	交談時能洞察對方的情緒狀態。	交谈时能洞察对方的情绪状态。		FUN_140622790 L850372–850711 技能／屬性說明（wrap_text 寬 48）
+Affects argument dismissal and intimidation tactics in interrogation.	影響駁斥論點，以及審訊時威嚇手段的效果。	影响驳斥论点，以及审讯时威吓手段的效果。		FUN_140622790 L850372–850711 技能／屬性說明（wrap_text 寬 48）
+Affects response to jokes.	影響別人對你說笑話的反應。	影响别人对你讲笑话的反应。		FUN_140622790 L850372–850711 技能／屬性說明（wrap_text 寬 48）
+Affects response to attempts at flattery in arguments and generally.	影響爭論中與平時奉承別人的效果。	影响争论中和平时奉承别人的效果。		FUN_140622790 L850372–850711 技能／屬性說明（wrap_text 寬 48）
+Affects attempts to calm people or to respond passively in arguments.	影響安撫他人，或在爭論中消極應對的效果。	影响安抚他人，或在争论中消极应对的效果。		FUN_140622790 L850372–850711 技能／屬性說明（wrap_text 寬 48）
+Affects ability to spot and interpret tracks and other spoor.	影響發現並判讀足跡與其他蹤跡的能力。	影响发现并判读足迹和其他踪迹的能力。		FUN_140622790 L850372–850711 技能／屬性說明（wrap_text 寬 48）；術語例外：track；足跡，不是軌道
+Affects ability to withstand pain and stress.	影響承受疼痛與壓力的能力。	影响承受疼痛和压力的能力。		FUN_140622790 L850372–850711 技能／屬性說明（wrap_text 寬 48）
+Affects trap detection, ambusher detection, charge defense, and provides enemy attack information.	影響發現陷阱、察覺伏兵、防禦衝撞，並提供敵方攻擊資訊。	影响发现陷阱、察觉伏兵、防御冲撞，并提供敌方攻击信息。		FUN_140622790 L850372–850711 技能／屬性說明（wrap_text 寬 48）；術語例外：Ambusher；察覺伏兵，不是職業名
+Has a minor affect on all writing (poetry and prose.)	對所有寫作（詩歌與散文）略有影響。	对所有写作（诗歌和散文）略有影响。		FUN_140622790 L850372–850711 技能／屬性說明（wrap_text 寬 48）
+Affects the quality of writing aside from poetry.	影響詩歌以外的寫作品質。	影响诗歌以外的写作质量。		FUN_140622790 L850372–850711 技能／屬性說明（wrap_text 寬 48）
+Affects the quality of poetry.	影響詩歌的品質。	影响诗歌的质量。		FUN_140622790 L850372–850711 技能／屬性說明（wrap_text 寬 48）
+A novice level is required to read anything.	至少要新手等級才能閱讀。	至少要新手等级才能阅读。		FUN_140622790 L850372–850711 技能／屬性說明（wrap_text 寬 48）
+Affects all spoken performances, from poetry recitals to preaching to storytelling to certain musical forms.	影響所有口說表演，從朗誦詩歌、講道、說故事到某些音樂形式。	影响所有口头表演，从朗诵诗歌、布道、讲故事到某些音乐形式。		FUN_140622790 L850372–850711 技能／屬性說明（wrap_text 寬 48）
+Affects maximum number of followers.	影響追隨者的人數上限。	影响追随者的人数上限。		FUN_140622790 L850372–850711 技能／屬性說明（wrap_text 寬 48）
+Affects charging, your combat opportunities, and enemy combat opportunities.	影響衝撞，以及你和敵人的戰鬥機會。	影响冲撞，以及你和敌人的战斗机会。		FUN_140622790 L850372–850711 技能／屬性說明（wrap_text 寬 48）
+Partially used in place of low melee skills.	近戰技能偏低時，可部分代替使用。	近战技能偏低时，可部分代替使用。		FUN_140622790 L850372–850711 技能／屬性說明（wrap_text 寬 48）
+Partially used in place of low ranged skills.	遠程技能偏低時，可部分代替使用。	远程技能偏低时，可部分代替使用。		FUN_140622790 L850372–850711 技能／屬性說明（wrap_text 寬 48）
+Affects wrestling and charging.	影響摔角與衝撞。	影响摔跤和冲撞。		FUN_140622790 L850372–850711 技能／屬性說明（wrap_text 寬 48）
+Affects attacks with mouths and teeth.	影響用嘴與牙齒的攻擊。	影响用嘴和牙齿的攻击。		FUN_140622790 L850372–850711 技能／屬性說明（wrap_text 寬 48）
+Affects attacks with hand-like appendages.	影響用手狀肢體的攻擊。	影响用手状肢体的攻击。		FUN_140622790 L850372–850711 技能／屬性說明（wrap_text 寬 48）
+Affects attacks with foot-like appendages.	影響用足狀肢體的攻擊。	影响用足状肢体的攻击。		FUN_140622790 L850372–850711 技能／屬性說明（wrap_text 寬 48）
+Affects ability to dodge melee and ranged attacks.	影響閃避近戰與遠程攻擊的能力。	影响闪避近战和远程攻击的能力。		FUN_140622790 L850372–850711 技能／屬性說明（wrap_text 寬 48）
+Ability to fight with objects not covered by other skills.	用其他技能未涵蓋的物品戰鬥的能力。	用其他技能未涵盖的物品战斗的能力。		FUN_140622790 L850372–850711 技能／屬性說明（wrap_text 寬 48）；術語例外：object；崇拜對象、投擲的物體、雜物武器，不是物品欄的物品
+Create a sharp rock with two rocks.	用兩塊石頭敲出一塊尖石。	用两块石头敲出一块尖石。		FUN_140622790 L850372–850711 技能／屬性說明（wrap_text 寬 48）
+Required to climb difficult surfaces safely.	要安全攀爬難爬的表面就需要它。	要安全攀爬难爬的表面就需要它。		FUN_140622790 L850372–850711 技能／屬性說明（wrap_text 寬 48）
+Performance skill.	表演技藝。	表演技艺。		FUN_140622790 L850372–850711 技能／屬性說明（wrap_text 寬 48）
+Partially used in place of low musical performance skills.	音樂表演技能偏低時，可部分代替使用。	音乐表演技能偏低时，可部分代替使用。		FUN_140622790 L850372–850711 技能／屬性說明（wrap_text 寬 48）
+Improves combat opportunities and ranged accuracy while mounted.	提高騎乘時的戰鬥機會與遠程命中率。	提高骑乘时的战斗机会和远程命中率。		FUN_140622790 L850372–850711 技能／屬性說明（wrap_text 寬 48）
+Affects ability to remain standing when tired.	影響疲累時保持站立的能力。	影响疲劳时保持站立的能力。		FUN_140622790 L850372–850711 技能／屬性說明（wrap_text 寬 48）
+Affects no skills.	不影響任何技能。	不影响任何技能。		FUN_140622790 L850451/850893 說明清單一行（FUN_1400bb8e0）
+Affects skills:	影響技能：	影响技能：		FUN_140622790 L850464/850906 說明清單一行，下接技能名
+Affected by attributes:	受以下屬性影響：	受以下属性影响：		FUN_140622790 L850721 說明清單一行，下接屬性名
+(etc)	等等	等等		FUN_140622790 L850989 清單過長時的結尾；原文 5 格放不下全形括號
+Accept background	接受背景	接受背景	c	FUN_140622790 L851029 按鈕
+Randomize background	隨機背景	随机背景	c	FUN_140622790 L851072 按鈕
+Occupation	職業	职业		FUN_140622790 L851197 背景分頁標題
+Beliefs	信仰	信仰		FUN_140622790 L851204 背景分頁標題
+Believe	相信	相信		FUN_140622790 L851571 信仰欄標題（與 Doubt「懷疑」相對）
+Object of worship	崇拜對象	崇拜对象		FUN_140622790 L851732 信仰清單第 2 行：崇拜對象種類；術語例外：object；崇拜對象、投擲的物體、雜物武器，不是物品欄的物品
+Force	神力	神力		FUN_140622790 L851742 信仰清單第 2 行：被崇拜的非人格力量；原文 5 格只放得下兩字
+Religion with temple	宗教（有神殿）	宗教（有神殿）		FUN_140622790 L851751＋851810 信仰清單第 2 行：Religion＋ with temple
+Religion with ruined temple	宗教（神殿已毀）	宗教（神殿已毁）		FUN_140622790 L851751＋851805 信仰清單第 2 行
+Note: This character's appearance is governed by local population information.	注意：此角色的外貌依當地族群資料決定。	注意：此角色的外貌由当地族群数据决定。		FUN_140622790 L852072 外貌分頁
+Certain shapes and colors might not occur without full randomization.	不完全隨機的話，某些外形與顏色可能不會出現。	不完全随机的话，某些外形和颜色可能不会出现。		FUN_140622790 L852078 外貌分頁
+Fully randomize appearance, without respecting population information	完全隨機外貌，不依照族群資料	完全随机外貌，不依照族群数据		FUN_140622790 L852115 外貌分頁按鈕說明
+Randomize appearance	隨機外貌	随机外貌	c	FUN_140622790 L852149 按鈕
+Randomize appearance, respecting local populations	隨機外貌，依照當地族群	随机外貌，依照当地族群	c	FUN_140622790 L852154 按鈕
+Accept appearance	接受外貌	接受外貌	c	FUN_140622790 L852181 按鈕
+Set your 	設定你的	设置你的		FUN_140622790 L852208 性格分頁說明，一段段接著畫：Set your ＋values＋ and ＋personality＋ here.  ＋[C]＋ denotes the default cultural value.
+ and 	 和 	 和 		FUN_140622790 L852216 同上一行的片段（DAT_1415e9110）；開頭空白依規定保留
+ here.  	 。 	 。 		FUN_140622790 L852224 同上一行的片段；開頭空白依規定保留
+ denotes the default cultural value.	 表示文化的預設值。	 表示文化的默认值。		FUN_140622790 L852232 同上一行，前面是黃色的 [C]
+Your personality facets might be restricted based on your creature type.	你的性格面向可能會因生物種類而受限。	你的性格层面可能会因生物种类而受限。		FUN_140622790 L852237
+No love   <->    Loves easily	無愛意    <->          易動情	无爱意    <->          易动情		FUN_140622790 L852273–852518 性格面向列標籤（兩端的傾向），箭頭位置對齊原文
+No hate   <->    Hates easily	無恨意    <->          易生恨	无恨意    <->          易生恨		FUN_140622790 L852273–852518 性格面向列標籤（兩端的傾向），箭頭位置對齊原文
+No envy   <->   Envies easily	不嫉妒    <->          愛嫉妒	不嫉妒    <->          爱嫉妒		FUN_140622790 L852273–852518 性格面向列標籤（兩端的傾向），箭頭位置對齊原文
+Cheerless <-> Easily cheerful	鬱鬱寡歡  <->          易開心	郁郁寡欢  <->          易开心		FUN_140622790 L852273–852518 性格面向列標籤（兩端的傾向），箭頭位置對齊原文
+No sadness   <->   Easily sad	不悲傷       <->       易悲傷	不悲伤       <->       易悲伤		FUN_140622790 L852273–852518 性格面向列標籤（兩端的傾向），箭頭位置對齊原文
+No anger  <->  Easily angered	不動怒    <->            易怒	不动怒    <->            易怒		FUN_140622790 L852273–852518 性格面向列標籤（兩端的傾向），箭頭位置對齊原文
+No anxiety  <->  Very anxious	不焦慮      <->        很焦慮	不焦虑      <->        很焦虑		FUN_140622790 L852273–852518 性格面向列標籤（兩端的傾向），箭頭位置對齊原文
+No lust      <->      Lustful	無慾望       <->       慾望強	无欲望       <->       欲望强		FUN_140622790 L852273–852518 性格面向列標籤（兩端的傾向），箭頭位置對齊原文
+Avoid fights <->  Like brawls	避免打鬥     <->       愛打架	避免打斗     <->       爱打架		FUN_140622790 L852273–852518 性格面向列標籤（兩端的傾向），箭頭位置對齊原文
+Quits easily <-> Too stubborn	輕易放棄     <->       太固執	轻易放弃     <->       太固执		FUN_140622790 L852273–852518 性格面向列標籤（兩端的傾向），箭頭位置對齊原文；術語例外：quit；性格：輕易放棄
+Meanness   <->   Wastefulness	吝嗇       <->           浪費	吝啬       <->           浪费		FUN_140622790 L852273–852518 性格面向列標籤（兩端的傾向），箭頭位置對齊原文
+Harmony      <->      Discord	和睦         <->         紛爭	和睦         <->         纷争		FUN_140622790 L852273–852518 性格面向列標籤（兩端的傾向），箭頭位置對齊原文
+Quarreler    <->    Flatterer	愛吵架       <->       愛奉承	爱吵架       <->       爱奉承		FUN_140622790 L852273–852518 性格面向列標籤（兩端的傾向），箭頭位置對齊原文
+Rude        <->        Polite	粗魯        <->          有禮	粗鲁        <->          有礼		FUN_140622790 L852273–852518 性格面向列標籤（兩端的傾向），箭頭位置對齊原文
+Overreliant <> Disdain advice	過度依賴    <>         不聽勸	过度依赖    <>         不听劝		FUN_140622790 L852273–852518 性格面向列標籤（兩端的傾向），箭頭位置對齊原文
+Fearful     <->      Fearless	膽小        <->          無畏	胆小        <->          无畏		FUN_140622790 L852273–852518 性格面向列標籤（兩端的傾向），箭頭位置對齊原文
+Pusillanimous - Overconfident	怯懦          -      過度自信	怯懦          -      过度自信		FUN_140622790 L852273–852518 性格面向列標籤（兩端的傾向），箭頭位置對齊原文
+Austere    <->    Extravagant	樸素       <->           張揚	朴素       <->           张扬		FUN_140622790 L852273–852518 性格面向列標籤（兩端的傾向），箭頭位置對齊原文
+Humorless      <->       Zany	無趣           <->       搞怪	无趣           <->       搞怪		FUN_140622790 L852273–852518 性格面向列標籤（兩端的傾向），箭頭位置對齊原文
+No self-esteem   <->    Proud	無自尊           <->     驕傲	无自尊           <->     骄傲		FUN_140622790 L852273–852518 性格面向列標籤（兩端的傾向），箭頭位置對齊原文
+Scatterbrained - Singleminded	散漫           -         專一	散漫           -         专一		FUN_140622790 L852273–852518 性格面向列標籤（兩端的傾向），箭頭位置對齊原文
+Incurious     <->     Curious	不好奇        <->        好奇	不好奇        <->        好奇		FUN_140622790 L852273–852518 性格面向列標籤（兩端的傾向），箭頭位置對齊原文
+Shameless     <->     Bashful	無恥          <->        害羞	无耻          <->        害羞		FUN_140622790 L852273–852518 性格面向列標籤（兩端的傾向），箭頭位置對齊原文
+Overshares    <->     Private	愛說私事      <->    注重隱私	爱说私事      <->    注重隐私		FUN_140622790 L852273–852518 性格面向列標籤（兩端的傾向），箭頭位置對齊原文
+Inattentive <-> Perfectionist	粗心        <->      完美主義	粗心        <->      完美主义		FUN_140622790 L852273–852518 性格面向列標籤（兩端的傾向），箭頭位置對齊原文
+Acquiescing <-> Resists ideas	順從        <->    抗拒新想法	顺从        <->    抗拒新想法		FUN_140622790 L852273–852518 性格面向列標籤（兩端的傾向），箭頭位置對齊原文
+Too deliberate <> Thoughtless	過於謹慎       <>        輕率	过于谨慎       <>        轻率		FUN_140622790 L852273–852518 性格面向列標籤（兩端的傾向），箭頭位置對齊原文
+Sloppy      <->       Orderly	邋遢        <->        有條理	邋遢        <->        有条理		FUN_140622790 L852273–852518 性格面向列標籤（兩端的傾向），箭頭位置對齊原文
+Distrustful <->  Too trusting	多疑        <->        太輕信	多疑        <->        太轻信		FUN_140622790 L852273–852518 性格面向列標籤（兩端的傾向），箭頭位置對齊原文
+Loner     <->      Gregarious	獨來獨往  <->          愛交際	独来独往  <->          爱交际		FUN_140622790 L852273–852518 性格面向列標籤（兩端的傾向），箭頭位置對齊原文
+Non-assertive <-> Overbearing	唯唯諾諾      <->        跋扈	唯唯诺诺      <->        跋扈		FUN_140622790 L852273–852518 性格面向列標籤（兩端的傾向），箭頭位置對齊原文
+Leisurely    <->     Frenetic	悠閒         <->         忙亂	悠闲         <->         忙乱		FUN_140622790 L852273–852518 性格面向列標籤（兩端的傾向），箭頭位置對齊原文
+Just facts - Flights of fancy	只重事實   -         天馬行空	只重事实   -         天马行空		FUN_140622790 L852273–852518 性格面向列標籤（兩端的傾向），箭頭位置對齊原文
+Merciful - Impartial -  Cruel	仁慈 - 公正 - 殘忍	仁慈 - 公正 - 残忍		FUN_140622790 L852273–852518 性格面向列標籤（兩端的傾向），箭頭位置對齊原文
+Despairs - Hopeful - Presumes	絕望 - 樂觀 - 盲目樂觀	绝望 - 乐观 - 盲目乐观		FUN_140622790 L852273–852518 性格面向列標籤（兩端的傾向），箭頭位置對齊原文
+     --> Vulnerable to stress	     --> 抗壓性低	     --> 抗压性差	r	FUN_140622790 L852313–852518 性格面向列的第二行（高分時的附帶傾向）；靠右對齊原文
+                   --> Greedy	                   --> 貪婪	                   --> 贪婪	r	FUN_140622790 L852313–852518 性格面向列的第二行（高分時的附帶傾向）；靠右對齊原文
+              --> Intemperate	              --> 放縱	              --> 放纵	r	FUN_140622790 L852313–852518 性格面向列的第二行（高分時的附帶傾向）；靠右對齊原文
+                     --> Vain	                     --> 虛榮	                     --> 虚荣	r	FUN_140622790 L852313–852518 性格面向列的第二行（高分時的附帶傾向）；靠右對齊原文
+                --> Ambitious	                --> 有野心	                --> 有野心	r	FUN_140622790 L852313–852518 性格面向列的第二行（高分時的附帶傾向）；靠右對齊原文
+       --> Sense of gratitude	       --> 懂得感恩	       --> 懂得感恩	r	FUN_140622790 L852313–852518 性格面向列的第二行（高分時的附帶傾向）；靠右對齊原文
+                 --> Vengeful	                 --> 記仇	                 --> 记仇	r	FUN_140622790 L852313–852518 性格面向列的第二行（高分時的附帶傾向）；靠右對齊原文
+    --> Tolerates differences	    --> 包容差異	    --> 包容差异	r	FUN_140622790 L852313–852518 性格面向列的第二行（高分時的附帶傾向）；靠右對齊原文
+    --> Emotionally obsessive	    --> 情感執著	    --> 情感执着	r	FUN_140622790 L852313–852518 性格面向列的第二行（高分時的附帶傾向）；靠右對齊原文
+       --> Swayed by emotions	       --> 易受情緒左右	       --> 易受情绪左右	r	FUN_140622790 L852313–852518 性格面向列的第二行（高分時的附帶傾向）；靠右對齊原文
+               --> Altruistic	               --> 熱心助人	               --> 热心助人	r	FUN_140622790 L852313–852518 性格面向列的第二行（高分時的附帶傾向）；靠右對齊原文
+                  --> Dutiful	                  --> 盡責	                  --> 尽责	r	FUN_140622790 L852313–852518 性格面向列的第二行（高分時的附帶傾向）；靠右對齊原文
+       --> Excitement-seeking	       --> 尋求刺激	       --> 寻求刺激	r	FUN_140622790 L852313–852518 性格面向列的第二行（高分時的附帶傾向）；靠右對齊原文
+     --> Inclined to abstract	     --> 傾向抽象思考	     --> 倾向抽象思考	r	FUN_140622790 L852313–852518 性格面向列的第二行（高分時的附帶傾向）；靠右對齊原文
+   --> Inclined to create art	   --> 傾向創作藝術	   --> 倾向创作艺术	r	FUN_140622790 L852313–852518 性格面向列的第二行（高分時的附帶傾向）；靠右對齊原文
+ N/A 	 中立	 中立		FUN_140622790 L852871 價值觀刻度：沒有傾向（--- 到 +++ 的中間）
+Socialize	社交	社交		FUN_140622790 L853049–853194 需求清單（其餘需求名已有譯文）
+Pray/Meditate	祈禱／冥想	祈祷／冥想		FUN_140622790 L853049–853194 需求清單（其餘需求名已有譯文）
+Think abstractly	抽象思考	抽象思考		FUN_140622790 L853049–853194 需求清單（其餘需求名已有譯文）
+Intense Need	極強需求	极强需求		FUN_140622790 L853209–853233 需求強度
+Strong Need	強烈需求	强烈需求		FUN_140622790 L853209–853233 需求強度
+Moderate Need	中等需求	中等需求		FUN_140622790 L853209–853233 需求強度
+Slight Need	輕微需求	轻微需求		FUN_140622790 L853209–853233 需求強度
+Full customization	完整自訂	完全自定义	c	FUN_140622790 L853278 按鈕
+Change dream/goal (if possible)	更改夢想／目標（若可行）	更改梦想／目标（如果可以）	c	FUN_140622790 L853304 按鈕
+Randomize personality	隨機性格	随机性格	c	FUN_140622790 L853330 按鈕
+Done customizing	完成自訂	完成自定义	c	FUN_140622790 L853385 按鈕
+Equipment and pet points remaining: 	剩餘裝備與寵物點數：	剩余装备和宠物点数：		FUN_140622790 L853394 後接數字
+Accept equipment	接受裝備	接受装备	c	FUN_140622790 L853426 按鈕
+Increase quality	提高品質	提高质量	c	FUN_140622790 L853448 按鈕
+Decrease quality	降低品質	降低质量	c	FUN_140622790 L853468 按鈕
+Ready to adventure!	準備出發冒險！	准备出发冒险！	c	FUN_140622790 L854688 按鈕
+Add a party member	加入隊伍成員	添加队伍成员	c	FUN_140622790 L854716 按鈕
+Adventure awaits	冒險即將展開	冒险即将展开		FUN_140622790 L855230 最後確認畫面標題（只有一名角色）
+Adventure awaits!  The party:	冒險即將展開！隊伍成員：	冒险即将展开！队伍成员：		FUN_140622790 L855235 最後確認畫面標題（多名角色）
+What would you like to do?	你想做什麼？	你想做什么？		FUN_140870260 L1209631 表演／創作選單上方提示
+Select memorized content or a form of prose.	選擇記住的內容或一種散文形式。	选择记住的内容或一种散文形式。		FUN_140870260 L1209621 表演／創作選單上方提示
+Choose a poetic form for the composition.	為作品選擇一種詩歌形式。	为作品选择一种诗歌形式。		FUN_140870260 L1209599 表演／創作選單上方提示
+Choose a dance form for the choreography.	為舞譜選擇一種舞蹈形式。	为舞谱选择一种舞蹈形式。		FUN_140870260 L1209643 表演／創作選單上方提示
+Choose a musical form for the composition.	為作品選擇一種音樂形式。	为作品选择一种音乐形式。		FUN_140870260 L1209613 表演／創作選單上方提示
+You must compose a piece first (or learn an improvisational form).	你得先創作一部作品（或學會一種即興形式）。	你得先创作一部作品（或学会一种即兴形式）。		FUN_140870260 L1209803 表演／創作選單上方提示
+You don't know anything specific about this, unfortunately.	很遺憾，你對此並不知道什麼具體的事。	很遗憾，你对此并不知道什么具体的事。		FUN_140870260 L1209786 表演／創作選單上方提示
+You don't believe anything relevant, unfortunately.	很遺憾，你沒有相關的信念。	很遗憾，你没有相关的信念。		FUN_140870260 L1209811 表演／創作選單上方提示
+Assume an appropriate identity first if you'd like to pretend.	想假扮的話，先換上合適的身分。	想假扮的话，先换上合适的身份。		FUN_140870260 L1209816 表演／創作選單上方提示
+Tell a story	講故事	讲故事		FUN_140854ec0 L1195195 表演選單項目
+Give a sermon	講道	布道		FUN_140854ec0 L1195204 表演選單項目
+Recite a poem	朗誦詩歌	朗诵诗歌		FUN_140854ec0 L1195217 表演選單項目
+Perform music	演奏音樂	演奏音乐		FUN_140854ec0 L1195229 表演選單項目
+Compose a poem	創作詩歌	创作诗歌		FUN_140854ec0 L1195259 表演選單項目
+Prepare choreography	編排舞蹈	编排舞蹈		FUN_140854ec0 L1195280 表演選單項目
+Write something down	寫點東西	写点东西		FUN_140854ec0 L1195297 表演選單項目
+Tell a story about a person or creature	講述人物或生物的故事	讲述人物或生物的故事		FUN_140854ec0 L1195304 表演選單項目
+Tell a story about a site	講述某個據點的故事	讲述某个据点的故事		FUN_140854ec0 L1195313 表演選單項目
+Tell a story about a civilization or organization	講述文明或組織的故事	讲述文明或组织的故事		FUN_140854ec0 L1195322 表演選單項目
+Tell a story about a region	講述某個地區的故事	讲述某个地区的故事		FUN_140854ec0 L1195330 表演選單項目
+Chant	吟誦	吟诵		FUN_140854ec0 L1195858 表演選單項目
+Speak	口述	口述		FUN_140854ec0 L1195860 表演選單項目
+Sing	歌唱	歌唱		FUN_140854ec0 L1195864 表演選單項目
+Give a sermon concerning a deity or object of worship	講道：關於神祇或崇拜對象	布道：关于神祇或崇拜对象		FUN_140854ec0 L1196060 表演選單項目；術語例外：object；崇拜對象、投擲的物體、雜物武器，不是物品欄的物品
+Give a sermon concerning a cosmic principle	講道：關於宇宙法則	布道：关于宇宙法则		FUN_140854ec0 L1196069 表演選單項目
+Give a sermon promoting a value	講道：宣揚某種價值觀	布道：宣扬某种价值观		FUN_140854ec0 L1196078 表演選單項目
+Give a sermon inveighing against a value	講道：抨擊某種價值觀	布道：抨击某种价值观		FUN_140854ec0 L1196086 表演選單項目
+Unknown	未知	未知		FUN_140854ec0 L1196191 表演選單項目

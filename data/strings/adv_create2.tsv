@@ -1,0 +1,49 @@
+en	zh-Hant	zh-Hans	align	note
+You are a wanderer of the wilderness.	你是在荒野中漂泊的流浪者。	你是在荒野中漂泊的流浪者。		FUN_14063c210 L860692–861607 背景分頁段落（wrap_text，句間兩空白逐句查）：沒有可選的出身據點時
+You are a stranger here.	你在這裡是個外地人。	你在这里是个外地人。		FUN_14063c210 L860692–861607 背景分頁段落（wrap_text，句間兩空白逐句查）：接在 Your wanderings have led you to … 後
+You emerged from the wilds and managed to prove yourself to the locals.	你從荒野中走出，設法向當地人證明了自己。	你从荒野中走出，设法向当地人证明了自己。		FUN_14063c210 L860692–861607 背景分頁段落（wrap_text，句間兩空白逐句查）：野外出身、取得職位時的第一句，下一句 Now you are finally a …
+Destiny is calling!	命運正在召喚你！	命运正在召唤你！		FUN_14063c210 L860692–861607 背景分頁段落（wrap_text，句間兩空白逐句查）：取得職位（newly-minted／finally a）句後
+Nobody lives there.	那裡無人居住。	那里无人居住。		FUN_14063dd90 L861893–861956 家鄉分頁據點說明第二句（wrap_text）：人口 0，沒有統治勢力
+Few live there.	那裡人煙稀少。	那里人烟稀少。		FUN_14063dd90 L861893–861956 家鄉分頁據點說明第二句（wrap_text）：人口 1–9，沒有統治勢力
+A few dozen or less live there.	那裡住著數十人或更少。	那里住着数十人或更少。		FUN_14063dd90 L861893–861956 家鄉分頁據點說明第二句（wrap_text）：人口 10–24，沒有統治勢力
+Some dozens live there.	那裡住著好幾十人。	那里住着好几十人。		FUN_14063dd90 L861893–861956 家鄉分頁據點說明第二句（wrap_text）：人口 25–79，沒有統治勢力
+Roughly a hundred live there.	那裡住著約一百人。	那里住着约一百人。		FUN_14063dd90 L861893–861956 家鄉分頁據點說明第二句（wrap_text）：人口 80–119，沒有統治勢力
+Well over a hundred live there.	那裡住著一百多人。	那里住着一百多人。		FUN_14063dd90 L861893–861956 家鄉分頁據點說明第二句（wrap_text）：人口 120–174，沒有統治勢力；術語例外：well
+A few hundred live there.	那裡住著數百人。	那里住着数百人。		FUN_14063dd90 L861893–861956 家鄉分頁據點說明第二句（wrap_text）：人口 175–249，沒有統治勢力
+Several hundred live there.	那裡住著好幾百人。	那里住着好几百人。		FUN_14063dd90 L861893–861956 家鄉分頁據點說明第二句（wrap_text）：人口 250–749，沒有統治勢力
+A thousand live there.	那裡住著約一千人。	那里住着约一千人。		FUN_14063dd90 L861893–861956 家鄉分頁據點說明第二句（wrap_text）：人口 750–1499，沒有統治勢力
+A few thousand live there.	那裡住著數千人。	那里住着数千人。		FUN_14063dd90 L861893–861956 家鄉分頁據點說明第二句（wrap_text）：人口 1500–2499，沒有統治勢力
+Thousands live there.	那裡住著成千上萬人。	那里住着成千上万人。		FUN_14063dd90 L861893–861956 家鄉分頁據點說明第二句（wrap_text）：人口 ≥2500，沒有統治勢力
+They worship at a temple.	他們在一座神殿參拜。	他们在一座神殿参拜。		FUN_14063dd90 L862289–862480 信仰分頁宗教說明下方的神殿句（wrap_text）：神殿沒有名字時（FUN_140b94090 寫 a temple）
+Their temple a temple is ruined.	他們的神殿已成廢墟。	他们的神殿已成废墟。		FUN_14063dd90 L862289–862480 信仰分頁宗教說明下方的神殿句（wrap_text）：神殿沒有名字且已毀（遊戲原樣拼成 Their temple a temple）
+For adventure.  Information and followers are easier to obtain, and a compass guides you.	適合冒險。情報和追隨者比較容易取得，還有羅盤為你指引方向。	适合冒险。情报和追随者更容易获得，还有罗盘为你指引方向。		FUN_140622790 選擇命運畫面說明（wrap_text；rdata 字串，反編譯碼沒有參照）；術語例外：guide
+For the most freedom.  All features are accessible but you'll receive no direction.	最自由的玩法。所有功能都能使用，但不會有任何指引。	最自由的玩法。所有功能都可以使用，但不会有任何指引。		FUN_140622790 選擇命運畫面說明（wrap_text；rdata 字串，反編譯碼沒有參照）
+For the most direction.  You'll have a supernatural parent or patron who is always involved.	指引最多的玩法。你會有一位始終參與其中的超自然父母或守護者。	指引最多的玩法。你会有一位始终参与其中的超自然父母或守护者。		FUN_140622790 選擇命運畫面說明（wrap_text；rdata 字串，反編譯碼沒有參照）（天選者）
+Chosen mode is only available in worlds with developed religions.  There are no temples available.  Try an older world.	天選者模式只能在宗教已發展成熟的世界使用。目前沒有可用的神殿。請換一個歷史更久的世界。	天选者模式只能在宗教已发展成熟的世界使用。目前没有可用的神殿。请换一个历史更久的世界。		FUN_140622790 選擇命運畫面說明（wrap_text；rdata 字串，反編譯碼沒有參照）：世界沒有神殿時
+Difficulty only affects starting skills and equipment.	難度只會影響初始技能與裝備。	难度只影响初始技能和装备。		FUN_140622790 選擇命運畫面說明（wrap_text；rdata 字串，反編譯碼沒有參照）：難度說明
+Hearthperson	家臣	家臣		FUN_140622790 背景分頁職業清單項目；譯名同 adv_speech 的 hearthperson
+ pts	 點	 点		FUN_140622790 L854464 點數後綴：數字另外畫，這段單獨畫出；保留開頭空白
+Go!	出發！	出发！		FUN_140622790 L849331/855300 開始冒險按鈕；寬度例外：按鈕框約 20 格寬，Go! 靠左畫（實機截圖），「出發！」放得下
+Blank slate	從零開始	从零开始		FUN_14063fa00 L863843 角色範本清單：不帶預設屬性與技能的空白範本；術語例外：Slate
+Start tutorial	開始教學	开始教程		FUN_1401e8b20 L252722 教學步驟勾選清單／按鈕（fn_top_addst） L253238 按鈕
+Skip tutorial	略過教學	跳过教程		FUN_1401e8b20 L252722 教學步驟勾選清單／按鈕（fn_top_addst） L253264 按鈕
+Move the camera up	向上移動視角	向上移动视角		FUN_1401e8b20 L252722 教學步驟勾選清單／按鈕（fn_top_addst） L253367/255905 步驟
+Move the camera down	向下移動視角	向下移动视角		FUN_1401e8b20 L252722 教學步驟勾選清單／按鈕（fn_top_addst） L253408/255952 步驟
+Start stairway	標記樓梯起點	标记楼梯起点		FUN_1401e8b20 L252722 教學步驟勾選清單／按鈕（fn_top_addst） L253706 要塞教學步驟：樓梯井的起點
+End stairway	標記樓梯終點	标记楼梯终点		FUN_1401e8b20 L252722 教學步驟勾選清單／按鈕（fn_top_addst） L253747 要塞教學步驟：樓梯井的終點
+Unpause	繼續	继续		FUN_1401e8b20 L252722 教學步驟勾選清單／按鈕（fn_top_addst） L253818 要塞教學步驟：取消暫停；原文 7 格，「取消暫停」要 8 格
+Finish mining	完成挖掘	完成挖掘		FUN_1401e8b20 L252722 教學步驟勾選清單／按鈕（fn_top_addst） L253867 要塞教學步驟
+Room completed (	房間挖掘進度（	房间挖掘进度（		FUN_1401e8b20 L252722 教學步驟勾選清單／按鈕（fn_top_addst） L253940 要塞教學步驟，後面另畫「數字 of 20)」
+Place All stockpile	劃設全類倉儲區	划设全类储物区		FUN_1401e8b20 L252722 教學步驟勾選清單／按鈕（fn_top_addst） L254085 要塞教學步驟；術語 stockpile
+Chop down tree	砍倒樹木	砍倒树木		FUN_1401e8b20 L252722 教學步驟勾選清單／按鈕（fn_top_addst） L254289 要塞教學步驟
+Stockpile wood	木材入倉儲區	木材入储物区		FUN_1401e8b20 L252722 教學步驟勾選清單／按鈕（fn_top_addst） L254333 要塞教學步驟：木材搬進倉儲區
+Place carpenter's workshop	放置木匠工坊	放置木匠工坊		FUN_1401e8b20 L252722 教學步驟勾選清單／按鈕（fn_top_addst） L254474 要塞教學步驟
+Construct workshop	建造工坊	建造工坊		FUN_1401e8b20 L252722 教學步驟勾選清單／按鈕（fn_top_addst） L254540 要塞教學步驟
+Click workshop	點選工坊	点击工坊		FUN_1401e8b20 L252722 教學步驟勾選清單／按鈕（fn_top_addst） L254587/254632 要塞教學步驟
+Add a "Make bed" task	新增「製作床」任務	添加“制作床”任务		FUN_1401e8b20 L252722 教學步驟勾選清單／按鈕（fn_top_addst） L254700 要塞教學步驟
+Make the bed	把床做出來	把床做出来		FUN_1401e8b20 L252722 教學步驟勾選清單／按鈕（fn_top_addst） L254745 要塞教學步驟：等工人做好床
+Place a bed	放置床	放置床		FUN_1401e8b20 L252722 教學步驟勾選清單／按鈕（fn_top_addst） L254810 要塞教學步驟
+Close the information sheet	關閉資訊頁	关闭信息页		FUN_1401e8b20 L252722 教學步驟勾選清單／按鈕（fn_top_addst） L254977 要塞教學步驟
+Click the help button	點選說明按鈕	点击帮助按钮		FUN_1401e8b20 L252722 教學步驟勾選清單／按鈕（fn_top_addst） L255137 教學最後一步
+Left click to move	按左鍵移動	点击左键移动		FUN_1401e8b20 L252722 教學步驟勾選清單／按鈕（fn_top_addst） L256224 冒險教學步驟
+Right click to move	按右鍵移動	点击右键移动		FUN_1401e8b20 L252722 教學步驟勾選清單／按鈕（fn_top_addst） L256299 冒險教學步驟

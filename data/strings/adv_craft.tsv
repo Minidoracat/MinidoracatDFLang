@@ -1,0 +1,51 @@
+en	zh-Hant	zh-Hans	align	note
+What do you want to do?  Items must be in a grasp or on the ground here.	你想做什麼？物品必須握在手中或放在這裡的地上。	你想做什么？物品必须拿在手里或放在这里的地上。		FUN_14027bd70 L336161 冒險合成／屠宰選單標題（模式 0）
+What do you want to butcher?	你想屠宰什麼？	你想屠宰什么？		FUN_14027bd70 L336161 冒險合成／屠宰選單標題（模式 1：選屍體）；術語例外：Butcher
+Select a butchery tool.	選擇屠宰工具。	选择屠宰工具。		FUN_14027bd70 L336161 冒險合成／屠宰選單標題（模式 2：選屠宰工具；SSE 內嵌字串）
+No carcass available.	沒有可屠宰的屍體。	没有可屠宰的尸体。		FUN_14027bd70 L336161 冒險合成／屠宰選單「屠宰」選項下一行／清單空時
+No butchery tool available.	沒有可用的屠宰工具。	没有可用的屠宰工具。		FUN_14027bd70 L336161 冒險合成／屠宰選單「屠宰」選項下一行／清單空時
+No available item.	沒有可用的物品。	没有可用的物品。		FUN_14027bd70 L336161 冒險合成／屠宰選單選反應材料時清單是空的（模式 3）
+You are not that hungry.	你沒那麼餓。	你没那么饿。		FUN_14027bd70 L336161 冒險合成／屠宰選單屍體清單：不能吃時的說明行
+Needs: nothing.	不需要材料。	不需要材料。		FUN_14027bd70 L336161 冒險合成／屠宰選單反應選項下一行：沒有任何材料；術語例外：needs
+Needs: 	需要：	需要：		FUN_1404257d0 L544209 要塞貴族房間需求：箱子／櫥櫃／武器架／盔甲架數量前的標籤（單獨畫出）；術語例外：needs
+Carve bone	雕刻骨頭	雕刻骨头		raws reaction_other.txt CATEGORY_NAME（ADV_BONE_CARVING）；冒險合成選單的分類
+Make crafts from bone using a sharp weapon or tool.	用鋒利的武器或工具把骨頭做成工藝品。	用锋利的武器或工具把骨头做成工艺品。		raws reaction_other.txt CATEGORY_DESCRIPTION；合成選單分類下一行
+Make furniture at a carpenter's workshop using logs and a sharp tool.	在木匠工坊用原木和鋒利的工具製作家具。	在木匠工坊用原木和锋利的工具制作家具。		raws reaction_adv_carpenter.txt CATEGORY_DESCRIPTION（Carpentry 分類）；合成選單分類下一行
+Make dye	製作染料	制作染料		raws reaction_dyes.txt CATEGORY_NAME（MAKE_DYE）
+Make dyes from plants and plant parts that don't require a mill.	用不需研磨的植物和植物部位製作染料。	用不需研磨的植物和植物部位制作染料。		raws reaction_dyes.txt CATEGORY_DESCRIPTION
+tool stone	石料	石料	inner	raws reaction_other.txt MAKE_SHARP_ROCK 的材料代號；合成標題「…: select tool stone (…)」的佔位
+hammerstone	錘石	锤石	inner	raws reaction_other.txt MAKE_SHARP_ROCK 的材料代號（敲打用石頭）；合成標題的佔位
+bone body part	骨頭	骨头	inner	FUN_140a2adb0：ANY_BONE_MATERIAL＋USE_BODY_COMPONENT 的材料描述（Unrotten bone body part 未腐爛的骨頭）
+plant logs	原木	原木	inner	FUN_140a2adb0：ANY_PLANT_MATERIAL＋WOOD（Plant logs）；避免「植物原木」
+plant branch	樹枝	树枝	inner	FUN_140a2adb0：ANY_PLANT_MATERIAL＋BRANCH（Plant branch）；避免「植物樹枝」
+Hauled	搬運中	搬运中		FUN_141393900 L2603999 冒險物品欄：物品名下一行的狀態（拿著搬運）
+In Mouth	叼在嘴裡	叼在嘴里		FUN_141393900 L2604000 冒險物品欄狀態
+Multigrasp	多手握持	多手握持		FUN_141393900 L2604024 冒險物品欄狀態：同時用多個抓握部位拿著
+Nocked	已搭弦	已搭弦		FUN_141393900 L2604523 冒險物品欄狀態（箭已搭在弓上；找不到弓時單獨畫出）
+On head	在頭上	在头上		FUN_141393900 L2604407 冒險物品欄狀態：寵物的位置（另有 Left shoulder／Right shoulder 由部位名翻）
+Select your combat preferences.	選擇你的戰鬥偏好。	选择你的战斗偏好。		FUN_140877270 L1213364 冒險戰鬥偏好畫面標題
+ Attack Preference	 攻擊偏好	 攻击偏好		FUN_140877270 L1213392 戰鬥偏好畫面欄名（前面是按鍵字，開頭空白照原文）
+ Dodge Preference	 閃避偏好	 闪避偏好		FUN_140877270 L1213403 戰鬥偏好畫面欄名
+ Charge Defense	 衝鋒防禦	 冲锋防御		FUN_140877270 L1213417 戰鬥偏好畫面欄名（被衝撞時的應對）
+Animate corpse	使屍體復甦	使尸体复苏		secret.lua／disturbance.lua 能力選單（互動名 CDI:ADV_NAME）
+Cause bleeding	使流血	使流血		init.lua 神器力量 能力選單（互動名 CDI:ADV_NAME）
+Cause dizziness	使暈眩	使晕眩		init.lua 神器力量 能力選單（互動名 CDI:ADV_NAME）
+Cause pain	造成疼痛	造成疼痛		init.lua 神器力量 能力選單（互動名 CDI:ADV_NAME）
+Create ghoul	製造食屍鬼	制造食尸鬼		secret.lua 死靈術 能力選單（互動名 CDI:ADV_NAME）
+Head bump	用頭蹭	用头蹭		creature_domestic.txt（貓）能力選單（互動名 CDI:ADV_NAME）
+Hurl fireball	投擲火球	投掷火球		creature_subterranean.txt、shared_info.lua 能力選單（互動名 CDI:ADV_NAME）
+Launch ice bolt	發射冰箭	发射冰箭		interactions.lua、item_power.lua 能力選單（互動名 CDI:ADV_NAME）
+Pet animal	撫摸動物	抚摸动物		creature_*.txt 能力選單（互動名 CDI:ADV_NAME）；術語例外：pet
+Propel away	推開	推开		interactions.lua、item_power.lua 能力選單（互動名 CDI:ADV_NAME）
+Raise fog	召喚霧氣	召唤雾气		interactions.lua 能力選單（互動名 CDI:ADV_NAME）
+Spit glob	吐出毒團	吐出毒团		shared_info.lua 生成生物的毒液 能力選單（互動名 CDI:ADV_NAME）
+Spit molten rock	噴吐熔岩	喷吐熔岩		creature_next_underground.txt 能力選單（互動名 CDI:ADV_NAME）
+Spray dust	噴灑粉塵	喷洒粉尘		shared_info.lua "Spray "..name（dust）能力選單（互動名 CDI:ADV_NAME）
+Spray vapor	噴灑蒸氣	喷洒蒸气		shared_info.lua "Spray "..name（vapor）能力選單（互動名 CDI:ADV_NAME）
+Spray gas	噴灑氣體	喷洒气体		shared_info.lua "Spray "..name（gas）能力選單（互動名 CDI:ADV_NAME）
+Spray jet of fire	噴射火焰	喷射火焰		creature_subterranean.txt、shared_info.lua 能力選單（互動名 CDI:ADV_NAME）
+Spray juice	噴灑汁液	喷洒汁液		creature_next_underground.txt 能力選單（互動名 CDI:ADV_NAME）
+Spray web	噴吐蛛網	喷吐蛛网		creature_subterranean.txt、shared_info.lua 能力選單（互動名 CDI:ADV_NAME）
+Squirt ink	噴出墨汁	喷出墨汁		creature_ocean_new.txt 能力選單（互動名 CDI:ADV_NAME）
+Summon bogeymen	召喚鬼怪	召唤鬼怪		secret.lua 死靈術 能力選單（互動名 CDI:ADV_NAME）
+Summon nightmare	召喚夢魘	召唤梦魇		secret.lua 死靈術 能力選單（互動名 CDI:ADV_NAME）

@@ -1,0 +1,212 @@
+en	zh-Hant	zh-Hans	align	note
+lords	領主	领主	inner	FUN_14096ece0 L1366025-1366036 程序生成的領主職位（CUSTOM_LAW_MAKER） 複數；單數 lord 在 events_14
+ladies	女領主	女领主	inner	FUN_14096ece0 L1366025-1366036 程序生成的領主職位（CUSTOM_LAW_MAKER） 女性複數；單數 lady 在 events_14
+lord consort	領主眷侶	领主眷侣		FUN_14096ece0 L1366025-1366036 程序生成的領主職位（CUSTOM_LAW_MAKER） 配偶稱呼（女領主的丈夫）；同 zz_legends_04 的 {@1} consort 譯法
+lords consort	領主眷侶	领主眷侣		FUN_14096ece0 L1366025-1366036 程序生成的領主職位（CUSTOM_LAW_MAKER） 配偶稱呼複數
+lady consort	領主夫人	领主夫人		FUN_14096ece0 L1366025-1366036 程序生成的領主職位（CUSTOM_LAW_MAKER） 配偶稱呼（領主的妻子）
+ladies consort	領主夫人	领主夫人		FUN_14096ece0 L1366025-1366036 程序生成的領主職位（CUSTOM_LAW_MAKER） 配偶稱呼複數
+hearthpeople	家臣	家臣	inner	FUN_14096ece0 L1366117 領主職位的小隊成員稱呼複數；單數 hearthperson 在 adv_speech
+law-giver	立法者	立法者	inner	FUN_14096ece0 L1366307 程序生成的立法者職位（CUSTOM_LAW_MAKER 第二種）
+law-givers	立法者	立法者	inner	FUN_14096ece0 L1366308 同上（複數）
+marshals	元帥	元帅	inner	FUN_14096ece0 L1366763-1366779 程序生成的軍事首長（CUSTOM_MILITARY_STRATEGY）複數；單數在 adv_speech
+field marshals	陸軍元帥	陆军元帅	inner	FUN_14096ece0 L1366763-1366779 程序生成的軍事首長（CUSTOM_MILITARY_STRATEGY）複數；單數在 adv_speech
+constables	統帥	统帅	inner	FUN_14096ece0 L1366763-1366779 程序生成的軍事首長（CUSTOM_MILITARY_STRATEGY）複數；單數在 adv_speech
+chancellor	宰相	宰相	inner	FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 0：不加前綴的職位名（單數）
+chancellors	宰相	宰相	inner	FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 0：不加前綴的職位名（複數）
+chief chancellor	首席宰相	首席宰相		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 0：前綴 chief（L1367652-1367670；royal 只在文明）＋chancellor（單數）
+chief chancellors	首席宰相	首席宰相		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 0：前綴 chief（L1367652-1367670；royal 只在文明）＋chancellor（複數）
+high chancellor	大宰相	大宰相		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 0：前綴 high（L1367652-1367670；royal 只在文明）＋chancellor（單數）
+high chancellors	大宰相	大宰相		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 0：前綴 high（L1367652-1367670；royal 只在文明）＋chancellor（複數）
+head chancellor	總宰相	总宰相		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 0：前綴 head（L1367652-1367670；royal 只在文明）＋chancellor（單數）
+head chancellors	總宰相	总宰相		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 0：前綴 head（L1367652-1367670；royal 只在文明）＋chancellor（複數）
+royal chancellor	王室宰相	王室宰相		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 0：前綴 royal（L1367652-1367670；royal 只在文明）＋chancellor（單數）
+royal chancellors	王室宰相	王室宰相		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 0：前綴 royal（L1367652-1367670；royal 只在文明）＋chancellor（複數）
+keepers of the seal	掌璽大臣	掌玺大臣	inner	FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 0：不加前綴的職位名（複數）
+chief keeper of the seal	首席掌璽大臣	首席掌玺大臣		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 0：前綴 chief（L1367652-1367670；royal 只在文明）＋keeper of the seal（單數）
+chief keepers of the seal	首席掌璽大臣	首席掌玺大臣		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 0：前綴 chief（L1367652-1367670；royal 只在文明）＋keeper of the seal（複數）
+high keeper of the seal	大掌璽大臣	大掌玺大臣		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 0：前綴 high（L1367652-1367670；royal 只在文明）＋keeper of the seal（單數）
+high keepers of the seal	大掌璽大臣	大掌玺大臣		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 0：前綴 high（L1367652-1367670；royal 只在文明）＋keeper of the seal（複數）
+head keeper of the seal	總掌璽大臣	总掌玺大臣		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 0：前綴 head（L1367652-1367670；royal 只在文明）＋keeper of the seal（單數）
+head keepers of the seal	總掌璽大臣	总掌玺大臣		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 0：前綴 head（L1367652-1367670；royal 只在文明）＋keeper of the seal（複數）
+royal keeper of the seal	王室掌璽大臣	王室掌玺大臣		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 0：前綴 royal（L1367652-1367670；royal 只在文明）＋keeper of the seal（單數）
+royal keepers of the seal	王室掌璽大臣	王室掌玺大臣		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 0：前綴 royal（L1367652-1367670；royal 只在文明）＋keeper of the seal（複數）
+justiciar	司法官	司法官	inner	FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 1：不加前綴的職位名（單數）
+justiciars	司法官	司法官	inner	FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 1：不加前綴的職位名（複數）
+chief justiciar	首席司法官	首席司法官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 1：前綴 chief（L1367652-1367670；royal 只在文明）＋justiciar（單數）
+chief justiciars	首席司法官	首席司法官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 1：前綴 chief（L1367652-1367670；royal 只在文明）＋justiciar（複數）
+high justiciar	大司法官	大司法官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 1：前綴 high（L1367652-1367670；royal 只在文明）＋justiciar（單數）
+high justiciars	大司法官	大司法官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 1：前綴 high（L1367652-1367670；royal 只在文明）＋justiciar（複數）
+head justiciar	總司法官	总司法官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 1：前綴 head（L1367652-1367670；royal 只在文明）＋justiciar（單數）
+head justiciars	總司法官	总司法官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 1：前綴 head（L1367652-1367670；royal 只在文明）＋justiciar（複數）
+royal justiciar	王室司法官	王室司法官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 1：前綴 royal（L1367652-1367670；royal 只在文明）＋justiciar（單數）
+royal justiciars	王室司法官	王室司法官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 1：前綴 royal（L1367652-1367670；royal 只在文明）＋justiciar（複數）
+chief treasurer	首席財務官	首席财务官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 2：前綴 chief（L1367652-1367670；royal 只在文明）＋treasurer（單數）
+chief treasurers	首席財務官	首席财务官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 2：前綴 chief（L1367652-1367670；royal 只在文明）＋treasurer（複數）
+high treasurer	大財務官	大财务官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 2：前綴 high（L1367652-1367670；royal 只在文明）＋treasurer（單數）
+high treasurers	大財務官	大财务官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 2：前綴 high（L1367652-1367670；royal 只在文明）＋treasurer（複數）
+head treasurer	總財務官	总财务官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 2：前綴 head（L1367652-1367670；royal 只在文明）＋treasurer（單數）
+head treasurers	總財務官	总财务官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 2：前綴 head（L1367652-1367670；royal 只在文明）＋treasurer（複數）
+royal treasurer	王室財務官	王室财务官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 2：前綴 royal（L1367652-1367670；royal 只在文明）＋treasurer（單數）
+royal treasurers	王室財務官	王室财务官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 2：前綴 royal（L1367652-1367670；royal 只在文明）＋treasurer（複數）
+chief counselor	首席參議	首席参议		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 3：前綴 chief（L1367652-1367670；royal 只在文明）＋counselor（單數）
+chief counselors	首席參議	首席参议		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 3：前綴 chief（L1367652-1367670；royal 只在文明）＋counselor（複數）
+high counselor	大參議	大参议		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 3：前綴 high（L1367652-1367670；royal 只在文明）＋counselor（單數）
+high counselors	大參議	大参议		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 3：前綴 high（L1367652-1367670；royal 只在文明）＋counselor（複數）
+head counselor	總參議	总参议		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 3：前綴 head（L1367652-1367670；royal 只在文明）＋counselor（單數）
+head counselors	總參議	总参议		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 3：前綴 head（L1367652-1367670；royal 只在文明）＋counselor（複數）
+royal counselor	王室參議	王室参议		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 3：前綴 royal（L1367652-1367670；royal 只在文明）＋counselor（單數）
+royal counselors	王室參議	王室参议		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 3：前綴 royal（L1367652-1367670；royal 只在文明）＋counselor（複數）
+chief advisor	首席顧問	首席顾问		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 3：前綴 chief（L1367652-1367670；royal 只在文明）＋advisor（單數）
+chief advisors	首席顧問	首席顾问		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 3：前綴 chief（L1367652-1367670；royal 只在文明）＋advisor（複數）
+high advisor	大顧問	大顾问		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 3：前綴 high（L1367652-1367670；royal 只在文明）＋advisor（單數）
+high advisors	大顧問	大顾问		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 3：前綴 high（L1367652-1367670；royal 只在文明）＋advisor（複數）
+head advisor	總顧問	总顾问		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 3：前綴 head（L1367652-1367670；royal 只在文明）＋advisor（單數）
+head advisors	總顧問	总顾问		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 3：前綴 head（L1367652-1367670；royal 只在文明）＋advisor（複數）
+royal advisor	王室顧問	王室顾问		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 3：前綴 royal（L1367652-1367670；royal 只在文明）＋advisor（單數）
+royal advisors	王室顧問	王室顾问		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 3：前綴 royal（L1367652-1367670；royal 只在文明）＋advisor（複數）
+chamberlain	內務官	内务官	inner	FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 4：不加前綴的職位名（單數）
+chamberlains	內務官	内务官	inner	FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 4：不加前綴的職位名（複數）
+chief chamberlain	首席內務官	首席内务官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 4：前綴 chief（L1367652-1367670；royal 只在文明）＋chamberlain（單數）
+chief chamberlains	首席內務官	首席内务官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 4：前綴 chief（L1367652-1367670；royal 只在文明）＋chamberlain（複數）
+high chamberlain	大內務官	大内务官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 4：前綴 high（L1367652-1367670；royal 只在文明）＋chamberlain（單數）
+high chamberlains	大內務官	大内务官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 4：前綴 high（L1367652-1367670；royal 只在文明）＋chamberlain（複數）
+head chamberlain	總內務官	总内务官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 4：前綴 head（L1367652-1367670；royal 只在文明）＋chamberlain（單數）
+head chamberlains	總內務官	总内务官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 4：前綴 head（L1367652-1367670；royal 只在文明）＋chamberlain（複數）
+royal chamberlain	王室內務官	王室内务官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 4：前綴 royal（L1367652-1367670；royal 只在文明）＋chamberlain（單數）
+royal chamberlains	王室內務官	王室内务官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 4：前綴 royal（L1367652-1367670；royal 只在文明）＋chamberlain（複數）
+chief butler	首席管家	首席管家		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 6：前綴 chief（L1367652-1367670；royal 只在文明）＋butler（單數）
+chief butlers	首席管家	首席管家		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 6：前綴 chief（L1367652-1367670；royal 只在文明）＋butler（複數）
+high butler	大管家	大管家		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 6：前綴 high（L1367652-1367670；royal 只在文明）＋butler（單數）
+high butlers	大管家	大管家		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 6：前綴 high（L1367652-1367670；royal 只在文明）＋butler（複數）
+head butler	總管家	总管家		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 6：前綴 head（L1367652-1367670；royal 只在文明）＋butler（單數）
+head butlers	總管家	总管家		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 6：前綴 head（L1367652-1367670；royal 只在文明）＋butler（複數）
+royal butler	王室管家	王室管家		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 6：前綴 royal（L1367652-1367670；royal 只在文明）＋butler（單數）
+royal butlers	王室管家	王室管家		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 6：前綴 royal（L1367652-1367670；royal 只在文明）＋butler（複數）
+chief cup-bearer	首席侍酒官	首席侍酒官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 6：前綴 chief（L1367652-1367670；royal 只在文明）＋cup-bearer（單數）
+chief cup-bearers	首席侍酒官	首席侍酒官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 6：前綴 chief（L1367652-1367670；royal 只在文明）＋cup-bearer（複數）
+high cup-bearer	大侍酒官	大侍酒官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 6：前綴 high（L1367652-1367670；royal 只在文明）＋cup-bearer（單數）
+high cup-bearers	大侍酒官	大侍酒官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 6：前綴 high（L1367652-1367670；royal 只在文明）＋cup-bearer（複數）
+head cup-bearer	總侍酒官	总侍酒官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 6：前綴 head（L1367652-1367670；royal 只在文明）＋cup-bearer（單數）
+head cup-bearers	總侍酒官	总侍酒官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 6：前綴 head（L1367652-1367670；royal 只在文明）＋cup-bearer（複數）
+royal cup-bearer	王室侍酒官	王室侍酒官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 6：前綴 royal（L1367652-1367670；royal 只在文明）＋cup-bearer（單數）
+royal cup-bearers	王室侍酒官	王室侍酒官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 6：前綴 royal（L1367652-1367670；royal 只在文明）＋cup-bearer（複數）
+chief doctor	首席醫師	首席医师		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 7：前綴 chief（L1367652-1367670；royal 只在文明）＋doctor（單數）；術語 Doctor 醫師
+chief doctors	首席醫師	首席医师		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 7：前綴 chief（L1367652-1367670；royal 只在文明）＋doctor（複數）；術語 Doctor 醫師
+high doctor	大醫師	大医师		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 7：前綴 high（L1367652-1367670；royal 只在文明）＋doctor（單數）；術語 Doctor 醫師
+high doctors	大醫師	大医师		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 7：前綴 high（L1367652-1367670；royal 只在文明）＋doctor（複數）；術語 Doctor 醫師
+head doctor	總醫師	总医师		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 7：前綴 head（L1367652-1367670；royal 只在文明）＋doctor（單數）；術語 Doctor 醫師
+head doctors	總醫師	总医师		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 7：前綴 head（L1367652-1367670；royal 只在文明）＋doctor（複數）；術語 Doctor 醫師
+royal doctor	王室醫師	王室医师		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 7：前綴 royal（L1367652-1367670；royal 只在文明）＋doctor（單數）；術語 Doctor 醫師
+royal doctors	王室醫師	王室医师		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 7：前綴 royal（L1367652-1367670；royal 只在文明）＋doctor（複數）；術語 Doctor 醫師
+chief executioner	首席行刑官	首席行刑官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 8：前綴 chief（L1367652-1367670；royal 只在文明）＋executioner（單數）
+chief executioners	首席行刑官	首席行刑官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 8：前綴 chief（L1367652-1367670；royal 只在文明）＋executioner（複數）
+high executioner	大行刑官	大行刑官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 8：前綴 high（L1367652-1367670；royal 只在文明）＋executioner（單數）
+high executioners	大行刑官	大行刑官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 8：前綴 high（L1367652-1367670；royal 只在文明）＋executioner（複數）
+head executioner	總行刑官	总行刑官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 8：前綴 head（L1367652-1367670；royal 只在文明）＋executioner（單數）
+head executioners	總行刑官	总行刑官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 8：前綴 head（L1367652-1367670；royal 只在文明）＋executioner（複數）
+royal executioner	王室行刑官	王室行刑官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 8：前綴 royal（L1367652-1367670；royal 只在文明）＋executioner（單數）
+royal executioners	王室行刑官	王室行刑官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 8：前綴 royal（L1367652-1367670；royal 只在文明）＋executioner（複數）
+chief chef	首席主廚	首席主厨		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 9：前綴 chief（L1367652-1367670；royal 只在文明）＋chef（單數）
+chief chefs	首席主廚	首席主厨		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 9：前綴 chief（L1367652-1367670；royal 只在文明）＋chef（複數）
+high chef	大主廚	大主厨		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 9：前綴 high（L1367652-1367670；royal 只在文明）＋chef（單數）
+high chefs	大主廚	大主厨		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 9：前綴 high（L1367652-1367670；royal 只在文明）＋chef（複數）
+head chef	總主廚	总主厨		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 9：前綴 head（L1367652-1367670；royal 只在文明）＋chef（單數）
+head chefs	總主廚	总主厨		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 9：前綴 head（L1367652-1367670；royal 只在文明）＋chef（複數）
+royal chef	王室主廚	王室主厨		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 9：前綴 royal（L1367652-1367670；royal 只在文明）＋chef（單數）
+royal chefs	王室主廚	王室主厨		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 9：前綴 royal（L1367652-1367670；royal 只在文明）＋chef（複數）
+chief housekeeper	首席總務	首席总务		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 10：前綴 chief（L1367652-1367670；royal 只在文明）＋housekeeper（單數）
+chief housekeepers	首席總務	首席总务		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 10：前綴 chief（L1367652-1367670；royal 只在文明）＋housekeeper（複數）
+high housekeeper	大總務	大总务		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 10：前綴 high（L1367652-1367670；royal 只在文明）＋housekeeper（單數）
+high housekeepers	大總務	大总务		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 10：前綴 high（L1367652-1367670；royal 只在文明）＋housekeeper（複數）
+head housekeeper	總務長	总务长		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 10：前綴 head（L1367652-1367670；royal 只在文明）＋housekeeper（單數）
+head housekeepers	總務長	总务长		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 10：前綴 head（L1367652-1367670；royal 只在文明）＋housekeeper（複數）
+royal housekeeper	王室總務	王室总务		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 10：前綴 royal（L1367652-1367670；royal 只在文明）＋housekeeper（單數）
+royal housekeepers	王室總務	王室总务		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 10：前綴 royal（L1367652-1367670；royal 只在文明）＋housekeeper（複數）
+masters of beasts	馴獸總管	驯兽总管	inner	FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 5 L1367747 複數（不加前綴）；單數在 adv_speech；術語例外：Master
+sewer commissioner	下水道專員	下水道专员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 0 sewer＋commissioner（單數）
+sewer commissioners	下水道專員	下水道专员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 0 sewer＋commissioner（複數）
+sewer official	下水道官員	下水道官员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 0 sewer＋official（單數）
+sewer officials	下水道官員	下水道官员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 0 sewer＋official（複數）
+sewer administrator	下水道管理者	下水道管理人员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 0 sewer＋administrator（單數）；術語 administrator
+sewer administrators	下水道管理者	下水道管理人员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 0 sewer＋administrator（複數）；術語 administrator
+sewer caretaker	下水道照管員	下水道照管员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 0 sewer＋caretaker（單數）
+sewer caretakers	下水道照管員	下水道照管员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 0 sewer＋caretaker（複數）
+sewer master	下水道總監	下水道总监		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 0 sewer＋master（較進步的文明，L1368065；複數也是 master）；整句蓋過 zz_legends_04 的 {@1} master；術語例外：Master
+grain commissioner	穀物專員	谷物专员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 1 grain＋commissioner（單數）
+grain commissioners	穀物專員	谷物专员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 1 grain＋commissioner（複數）
+grain official	穀物官員	谷物官员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 1 grain＋official（單數）
+grain officials	穀物官員	谷物官员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 1 grain＋official（複數）
+grain administrator	穀物管理者	谷物管理人员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 1 grain＋administrator（單數）；術語 administrator
+grain administrators	穀物管理者	谷物管理人员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 1 grain＋administrator（複數）；術語 administrator
+grain caretaker	穀物照管員	谷物照管员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 1 grain＋caretaker（單數）
+grain caretakers	穀物照管員	谷物照管员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 1 grain＋caretaker（複數）
+grain master	穀物總監	谷物总监		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 1 grain＋master（較進步的文明，L1368065；複數也是 master）；整句蓋過 zz_legends_04 的 {@1} master；術語例外：Master
+harvest commissioner	收成專員	收成专员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 1 harvest＋commissioner（單數）
+harvest commissioners	收成專員	收成专员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 1 harvest＋commissioner（複數）
+harvest official	收成官員	收成官员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 1 harvest＋official（單數）
+harvest officials	收成官員	收成官员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 1 harvest＋official（複數）
+harvest administrator	收成管理者	收成管理人员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 1 harvest＋administrator（單數）；術語 administrator
+harvest administrators	收成管理者	收成管理人员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 1 harvest＋administrator（複數）；術語 administrator
+harvest caretaker	收成照管員	收成照管员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 1 harvest＋caretaker（單數）
+harvest caretakers	收成照管員	收成照管员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 1 harvest＋caretaker（複數）
+harvest master	收成總監	收成总监		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 1 harvest＋master（較進步的文明，L1368065；複數也是 master）；整句蓋過 zz_legends_04 的 {@1} master；術語例外：Master
+fire commissioner	消防專員	消防专员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 2，DAT_1416a15bc fire＋commissioner（單數）
+fire commissioners	消防專員	消防专员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 2，DAT_1416a15bc fire＋commissioner（複數）
+fire official	消防官員	消防官员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 2，DAT_1416a15bc fire＋official（單數）
+fire officials	消防官員	消防官员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 2，DAT_1416a15bc fire＋official（複數）
+fire administrator	消防管理者	消防管理人员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 2，DAT_1416a15bc fire＋administrator（單數）；術語 administrator
+fire administrators	消防管理者	消防管理人员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 2，DAT_1416a15bc fire＋administrator（複數）；術語 administrator
+fire master	消防總監	消防总监		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 2，DAT_1416a15bc fire＋master（較進步的文明，L1368065；複數也是 master）；整句蓋過 zz_legends_04 的 {@1} master；術語例外：Master
+building commissioner	建築專員	建筑专员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 4 building＋commissioner（單數）
+building commissioners	建築專員	建筑专员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 4 building＋commissioner（複數）
+building official	建築官員	建筑官员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 4 building＋official（單數）
+building officials	建築官員	建筑官员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 4 building＋official（複數）
+building administrator	建築管理者	建筑管理人员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 4 building＋administrator（單數）；術語 administrator
+building administrators	建築管理者	建筑管理人员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 4 building＋administrator（複數）；術語 administrator
+building caretaker	建築照管員	建筑照管员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 4 building＋caretaker（單數）
+building caretakers	建築照管員	建筑照管员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 4 building＋caretaker（複數）
+building master	建築總監	建筑总监		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 4 building＋master（較進步的文明，L1368065；複數也是 master）；整句蓋過 zz_legends_04 的 {@1} master；術語例外：Master
+bridge commissioner	橋梁專員	桥梁专员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 5 bridge＋commissioner（單數）
+bridge commissioners	橋梁專員	桥梁专员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 5 bridge＋commissioner（複數）
+bridge official	橋梁官員	桥梁官员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 5 bridge＋official（單數）
+bridge officials	橋梁官員	桥梁官员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 5 bridge＋official（複數）
+bridge administrator	橋梁管理者	桥梁管理人员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 5 bridge＋administrator（單數）；術語 administrator
+bridge administrators	橋梁管理者	桥梁管理人员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 5 bridge＋administrator（複數）；術語 administrator
+bridge caretaker	橋梁照管員	桥梁照管员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 5 bridge＋caretaker（單數）
+bridge caretakers	橋梁照管員	桥梁照管员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 5 bridge＋caretaker（複數）
+bridge master	橋梁總監	桥梁总监		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 5 bridge＋master（較進步的文明，L1368065；複數也是 master）；整句蓋過 zz_legends_04 的 {@1} master；術語例外：Master
+road commissioner	道路專員	道路专员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 5 road＋commissioner（單數）
+road commissioners	道路專員	道路专员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 5 road＋commissioner（複數）
+road official	道路官員	道路官员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 5 road＋official（單數）
+road officials	道路官員	道路官员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 5 road＋official（複數）
+road administrator	道路管理者	道路管理人员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 5 road＋administrator（單數）；術語 administrator
+road administrators	道路管理者	道路管理人员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 5 road＋administrator（複數）；術語 administrator
+road caretaker	道路照管員	道路照管员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 5 road＋caretaker（單數）
+road caretakers	道路照管員	道路照管员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 5 road＋caretaker（複數）
+road master	道路總監	道路总监		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 5 road＋master（較進步的文明，L1368065；複數也是 master）；整句蓋過 zz_legends_04 的 {@1} master；術語例外：Master
+tunnel commissioner	隧道專員	隧道专员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 5 tunnel＋commissioner（單數）
+tunnel commissioners	隧道專員	隧道专员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 5 tunnel＋commissioner（複數）
+tunnel official	隧道官員	隧道官员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 5 tunnel＋official（單數）
+tunnel officials	隧道官員	隧道官员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 5 tunnel＋official（複數）
+tunnel administrator	隧道管理者	隧道管理人员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 5 tunnel＋administrator（單數）；術語 administrator
+tunnel administrators	隧道管理者	隧道管理人员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 5 tunnel＋administrator（複數）；術語 administrator
+tunnel caretaker	隧道照管員	隧道照管员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 5 tunnel＋caretaker（單數）
+tunnel caretakers	隧道照管員	隧道照管员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 5 tunnel＋caretaker（複數）
+judge	法官	法官	inner	FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 3 法官類（不接職稱）
+judges	法官	法官	inner	FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 3 法官類（不接職稱）複數
+justices	審判官	审判官	inner	FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 3 法官類（不接職稱）複數；單數 justice 已是 speech_01 的「正義」，稱呼另寫句型（rules/adv_titles）
+magistrate	地方官	地方官	inner	FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 3 法官類（不接職稱）
+magistrates	地方官	地方官	inner	FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 3 法官類（不接職稱）複數
+Retired	退休	退休		FUN_1401e65a0 L251986／L252638 結束畫面標題
+Abandoned	廢棄	废弃		FUN_1401e65a0 L252015 結束畫面標題
+Conquered	被征服	被征服		FUN_1401e65a0 L252020 結束畫面標題
+Dead	死亡	死亡		FUN_1401e65a0 L252446 結束畫面標題（DAT_141605d08）
+Dwarf Fortress	矮人要塞	矮人要塞		FUN_1401e65a0 L251798 結束畫面標題（要塞模式）；術語
+Dwarf Fortress Adventure	矮人要塞冒險	矮人要塞冒险		FUN_1401e65a0 L252279 結束畫面標題（冒險模式）
+You settle in this location...	你在此地定居下來……	你在此地定居下来……		FUN_1401e65a0 L252644 冒險者退休（wrap_text）
+Your adventure has come to an end.	你的冒險已經結束了。	你的冒险已经结束了。		FUN_1401e65a0 L252453 冒險者死亡（遊戲自己切行，一行一個字串）
+Your fortress has settled into the rhythm of day-to-day living, beyond your meticulous concern.	你的要塞已經步入日常生活的節奏，不再需要你事事費心了。	你的要塞已经步入日常生活的节奏，不再需要你事事操心了。		FUN_1401e65a0 L251992 要塞退休（wrap_text）
+Your settlement has been abandoned.	你的聚落已遭廢棄。	你的聚落已被废弃。		FUN_1401e65a0 L252016 要塞廢棄（wrap_text）；settlement 同 ann_00 的「聚落」
+Your strength has been broken.	你的勢力已被擊潰。	你的势力已被击溃。		FUN_1401e65a0 L252026 要塞被征服（遊戲自己切行）
+The game is open-ended and you can do whatever you choose. If you'd like a goal, try to join a village hearth and improve your reputation. [B] The guides here will suggest other possible avenues of play. [B] And remember: [C:2:0:1]Losing is fun, and now it's personal!	這個遊戲沒有終點，你想做什麼都可以。如果想要有個目標，可以試著加入村莊裡的家臣團，並提升你的名聲。[B]這裡的指南會建議其他可能的玩法。[B]記住：[C:2:0:1]失敗就是樂趣，而且這次輸的是你自己！	这个游戏没有终点，你想做什么都可以。如果想要有个目标，可以试着加入村庄里的家臣团，并提升你的声望。[B]这里的指南会建议其他可能的玩法。[B]记住：[C:2:0:1]失败就是乐趣，而且这次输的是你自己！		FUN_1401e65a0 L251124-251150 說明指南畫面開頭段落（冒險模式，段落框）；原文取自實機紀錄（結尾的 [C:7:0:0] 後面沒有字，紀錄不含）
+The game is open-ended and you can do whatever you choose. If you'd like a goal, try to become a barony, then a Mountainhome. [B] More likely, your dwarves will starve, unless you read the first few guides here! [B] And remember: [C:2:0:1]Losing is fun!	這個遊戲沒有終點，你想做什麼都可以。如果想要有個目標，可以試著晉升為男爵領，再成為山之家。[B]不過更可能的是，你的矮人會先餓死，除非你讀過這裡最前面的幾篇指南！[B]記住：[C:2:0:1]失敗就是樂趣！	这个游戏没有终点，你想做什么都可以。如果想要有个目标，可以试着晋升为男爵领，再成为山之家。[B]不过更可能的是，你的矮人会先饿死，除非你读过这里最前面的几篇指南！[B]记住：[C:2:0:1]失败就是乐趣！		FUN_1401e65a0 L251423-251451 說明指南畫面開頭段落（要塞模式，段落框）；照冒險模式那段的實機紀錄格式（單空白、[B] 前後空白、結尾換色標記不含）

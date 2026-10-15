@@ -79,6 +79,9 @@ enum Kind {
     Full,
     /// `{~n}`：比對同 `{n}`，譯文可以不寫（「伐木工用伐木工的右前臂…」的第二個主人）
     Skip,
+    /// `{^n}`：名字（見 is_name）：交談紀錄「The baron Urist: …」的講者、「the fire commissioner Medi」的人物。
+    /// 不會把「The poem is divided into…」的小寫片語、世界名稱「The Silver Union」的 Union 當成名字
+    Name,
 }
 
 enum Seg {
@@ -122,7 +125,7 @@ pub struct Rule {
 /// 一個佔位：編號、能收的片段、譯文裡的補字（`{3+時}`，原文不能有）。
 struct Placeholder(usize, Kind, String);
 
-/// 拆出 `{1}`～`{9}`、`{#1}`～`{#9}`、`{@1}`～`{@9}`、`{%1}`～`{%9}`，以及帶補字的 `{1+時}`；
+/// 拆出 `{1}`～`{9}`、`{#1}`～`{#9}`、`{@1}`～`{@9}`、`{%1}`～`{%9}`、`{~1}`～`{~9}`、`{^1}`～`{^9}`，以及帶補字的 `{1+時}`；
 /// 其餘依 `text` 轉換（原文轉 CP437 位元組、譯文保留字串）。
 fn split_placeholders<T>(s: &str, mut text: impl FnMut(&str) -> Option<T>) -> Option<Vec<Result<T, Placeholder>>> {
     let mut parts = Vec::new();
@@ -134,6 +137,7 @@ fn split_placeholders<T>(s: &str, mut text: impl FnMut(&str) -> Option<T>) -> Op
             Some(b'@') => Kind::Term,
             Some(b'%') => Kind::Full,
             Some(b'~') => Kind::Skip,
+            Some(b'^') => Kind::Name,
             _ => Kind::Any,
         };
         let d = i + 1 + usize::from(kind != Kind::Any);
@@ -316,12 +320,12 @@ fn match_at(segs: &[Seg], text: &[u8], pos: usize, caps: &mut [(usize, usize); 9
             match rest.first() {
                 None => {
                     caps[*i] = (pos, text.len());
-                    pos < stop && stop == text.len() && (matches!(kind, Kind::Any | Kind::Skip) || fits(*kind, &text[pos..]))
+                    pos < stop && stop == text.len() && accepts(*kind, text, pos, text.len(), fits)
                 }
                 Some(Seg::Lit(next)) => {
                     let mut end = pos + 1;
                     while end <= stop && end + next.len() <= text.len() {
-                        if text[end..].starts_with(next) && (matches!(kind, Kind::Any | Kind::Skip) || fits(*kind, &text[pos..end])) {
+                        if text[end..].starts_with(next) && accepts(*kind, text, pos, end, fits) {
                             caps[*i] = (pos, end);
                             if match_at(rest, text, end, caps, fits) {
                                 return true;
@@ -335,6 +339,27 @@ fn match_at(segs: &[Seg], text: &[u8], pos: usize, caps: &mut [(usize, usize); 9
             }
         }
     }
+}
+
+/// 佔位能不能收 text[pos..end]：`{^n}` 要看前一個字（見 is_name），`{#n}`、`{@n}`、`{%n}` 交給 fits。
+fn accepts(kind: Kind, text: &[u8], pos: usize, end: usize, fits: &mut dyn FnMut(Kind, &[u8]) -> bool) -> bool {
+    match kind {
+        Kind::Any | Kind::Skip => true,
+        Kind::Name => is_name(text, pos, end),
+        _ => fits(kind, &text[pos..end]),
+    }
+}
+
+/// `{^n}` 的名字：每個字都是大寫字母、CP437 0x80 以上（Ïtrem、òrdir）或引號加大寫（綽號）開頭，而且前一個字小寫開頭
+/// （稱呼的最後一個字：the dwarf、the Human baron）。世界生成的名稱每個字都大寫（The Silver Union），不會被拆成「銀Union」；
+/// 句型最後的名字也不會吞掉後面的「and Rith in a time before time」。
+fn is_name(text: &[u8], pos: usize, end: usize) -> bool {
+    let prev = text[..pos].trim_ascii_end().rsplit(|&c| c == b' ').next();
+    let capital = |w: &[u8]| match w {
+        [b'"', c, ..] | [c, ..] => c.is_ascii_uppercase() || *c >= 0x80,
+        [] => false,
+    };
+    prev.is_some_and(|w| w.first().is_some_and(u8::is_ascii_lowercase)) && text[pos..end].split(|&c| c == b' ').all(capital)
 }
 
 /// 句界：句末標點（. ! ? "）後面連續兩個空白，k 是第一個空白。遊戲拼段落時句間空兩格。
@@ -385,6 +410,8 @@ pub struct Dict {
     sorted_keys: Vec<Vec<u8>>,
     /// 只在某些畫面套用的整句：原文 → [(畫面, 限定列, 譯文)]。同一個英文在不同畫面（或同畫面不同列）意思不同時用（見 screen_entry）。
     pub screens: HashMap<Vec<u8>, Vec<(String, Option<i32>, Entry)>>,
+    /// 單獨畫出的小寫單字照原文的畫面（screens 檔原文寫 `*` 的列，見 keeps_word）
+    pub verbatim_screens: Vec<String>,
     pub rules: Vec<Rule>,
     /// 事件的原因、情境片語（字串檔與句型檔 align 寫 `tail`，見 strip_tail）：(原文, 譯文)，長的在前；含名字的放 tail_rules
     tails: Vec<(Vec<u8>, String)>,
@@ -523,12 +550,17 @@ impl Dict {
     }
 
     /// 依畫面套用的整句：`畫面<TAB>原文<TAB>譯文<TAB>對齊<TAB>限定列`，畫面是 DFHack 焦點字串的開頭（如 dwarfmode），
-    /// 限定列空白表示任何一列。
+    /// 限定列空白表示任何一列。原文寫 `*` 的列表示這個畫面上單獨畫出的小寫單字一律照原文（見 keeps_word）。
     pub fn load_screens_tsv(&mut self, content: &str) -> LoadReport {
         let mut report = LoadReport { loaded: 0, bad_source: 0, missing_glyphs: 0 };
         for line in content.lines().filter(|l| !l.is_empty() && !l.starts_with('#')) {
             let mut cols = line.split('\t');
             let (Some(screen), Some(en), Some(zh)) = (cols.next(), cols.next(), cols.next()) else { continue };
+            if en == "*" {
+                self.verbatim_screens.push(screen.to_owned());
+                report.loaded += 1;
+                continue;
+            }
             let align = cols.next().unwrap_or("");
             let row = match cols.next().unwrap_or("") {
                 "" => None,
@@ -557,10 +589,15 @@ impl Dict {
     /// 條目限定了列時，字串也要畫在那一列（y）。
     pub fn screen_entry<'a>(&'a self, key: &[u8], focus: &str, y: i32) -> Option<&'a Entry> {
         let list = self.screens.get(key)?;
-        let on = |screen: &str| {
-            focus.lines().any(|f| f.strip_prefix(screen).is_some_and(|rest| rest.is_empty() || rest.starts_with('/')))
-        };
-        list.iter().find(|(screen, row, _)| row.is_none_or(|r| r == y) && on(screen)).map(|(_, _, entry)| entry)
+        list.iter().find(|(screen, row, _)| row.is_none_or(|r| r == y) && on_screen(focus, screen)).map(|(_, _, entry)| entry)
+    }
+
+    /// 這個畫面上單獨畫出的小寫單字照原文、不查字典：交談選單把每個搜尋關鍵字分開畫（`duty`、`trade`），
+    /// 搜尋框只收英文，翻成中文反而對不上。
+    pub fn keeps_word(&self, key: &[u8], focus: &str) -> bool {
+        !key.is_empty()
+            && key.iter().all(u8::is_ascii_lowercase)
+            && self.verbatim_screens.iter().any(|screen| on_screen(focus, screen))
     }
 
     /// 句型規則檔，格式同 load_tsv；依檔案順序比對，先寫的優先，但清單句型一律最先，沒有英文字的樣板一律排在有英文字的後面，
@@ -778,17 +815,14 @@ impl Dict {
             }
         }
         let zh = found?;
-        let width = |c: char| if cp437::byte_of(c).is_some() { 1 } else { 2 };
-        if zh.chars().map(width).sum::<usize>() <= key.len() {
-            return Some(zh.to_owned());
-        }
-        let mut cells = 2; // 結尾的「…」
-        let mut out: String = zh.chars().take_while(|&c| {
-            cells += width(c);
-            cells <= key.len()
-        }).collect();
-        out.push('…');
-        Some(out)
+        Some(shorten(zh, key.len()))
+    }
+
+    /// 遊戲截短的字串（`開頭...`）用截短前原文的譯文 zh（見 hooks.rs 的 string_resize）：依截短後的格數截短、接「…」。
+    /// 同一個截短的字串可能是不同的原文（清單裡好幾個「the Human baro...」），所以不進快取。
+    pub fn cut_entry(&self, key: &[u8], zh: &str) -> Option<Arc<Entry>> {
+        let (entry, missing) = self.entry(key.len(), &shorten(zh, key.len()), "");
+        (missing == 0 && entry.shadow().len() <= key.len()).then(|| Arc::new(entry))
     }
 
     /// 第一條命中的句型：(譯文片段, 句型, 乾淨與否)。
@@ -808,7 +842,7 @@ impl Dict {
     /// 一條句型套整段 key 的譯文：(片段, 乾淨與否)。樣板沒有中文字、佔位也都照抄英文時不算命中。
     fn try_rule(&self, rule: &Rule, key: &[u8], depth: usize, memo: &mut Memo) -> Option<Found> {
         let mut fits = |kind: Kind, piece: &[u8]| match kind {
-            Kind::Any | Kind::Skip => true,
+            Kind::Any | Kind::Skip | Kind::Name => true,
             Kind::Number => is_number(piece),
             Kind::Term => lookup_inner(self, piece).is_some(),
             Kind::Full => matches!(self.piece(piece, depth + 1, memo), Some((_, true))),
@@ -924,6 +958,26 @@ impl Dict {
         cache.insert(key.to_vec(), (entry.clone(), (!settled).then_some(generation)));
         entry
     }
+}
+
+/// 譯文放不下 cells 格時截短，接「…」（中文字兩格、CP437 字一格）。
+fn shorten(zh: &str, cells: usize) -> String {
+    let width = |c: char| if cp437::byte_of(c).is_some() { 1 } else { 2 };
+    if zh.chars().map(width).sum::<usize>() <= cells {
+        return zh.to_owned();
+    }
+    let mut used = 2; // 結尾的「…」
+    let mut out: String = zh.chars().take_while(|&c| {
+        used += width(c);
+        used <= cells
+    }).collect();
+    out.push('…');
+    out
+}
+
+/// 焦點字串（可能有好幾個，以換行分隔）有一個以畫面開頭、而且剛好在 / 或結尾切開。
+fn on_screen(focus: &str, screen: &str) -> bool {
+    focus.lines().any(|f| f.strip_prefix(screen).is_some_and(|rest| rest.is_empty() || rest.starts_with('/')))
 }
 
 /// 連續空白收成一個；沒有連續空白時回傳 None。
@@ -1075,6 +1129,16 @@ mod tests {
         crate::names::insert(b"Bronzeretrytwo", "青銅");
         assert_eq!(text(two).as_deref(), Some("Slaxusnuk「青銅」"), "登記後重算，不沿用快取的翻不出來");
         assert_eq!(text(three).as_deref(), Some("Slaxusnuk，「青銅」，貪婪"), "夾著英文的結果也重算");
+    }
+
+    #[test]
+    fn verbatim_screens_keep_lone_lowercase_words() {
+        let mut d = Dict::default();
+        d.load_screens_tsv("dungeonmode/Conversation\t*\t*\t\t\n");
+        assert!(d.keeps_word(b"duty", "dungeonmode/Conversation"));
+        assert!(!d.keeps_word(b"Duty", "dungeonmode/Conversation"), "大寫開頭的選項名照常翻");
+        assert!(!d.keeps_word(b"ask about", "dungeonmode/Conversation"), "只管單獨的一個字");
+        assert!(!d.keeps_word(b"duty", "dwarfmode/Default"), "別的畫面照常翻");
     }
 
     #[test]
@@ -1266,6 +1330,17 @@ mod tests {
         d.load_tsv("woodcutter\t伐木工\nvulture\t禿鷲\nright hip\t右髖部\nright lower arm\t右前臂\n");
         assert_eq!(d.translate_text(b"The woodcutter locks the vulture's right hip with The woodcutter's right lower arm!").as_deref(),
                    Some("伐木工用右前臂鎖住了禿鷲的右髖部！"), "攻擊者自己的部位不必再寫一次主人");
+    }
+
+    #[test]
+    fn name_placeholders_take_names_after_lowercase_titles() {
+        let mut d = dict("The {@1} {^2}: {%3}\t{1}{2}：{3}\nthe {@1} {^2}\t{1}{2}\n");
+        d.load_tsv("baron\t男爵\npoem\t詩\nsilver\t銀\ngoblin\t哥布林\nHello.\t你好。\nfour parts\t四個部分\n");
+        assert_eq!(d.translate_text(b"The baron Urist: Hello.").as_deref(), Some("男爵Urist：你好。"));
+        assert_eq!(d.translate_text(b"The poem is divided into: four parts"), None, "小寫開頭的動詞片語不是講者名字");
+        assert_eq!(d.translate_text(b"the Silver Union"), None, "世界名稱每個字都大寫，不拆成「銀Union」");
+        assert_eq!(d.translate_text(b"the goblin Snodub \"Ax\" Monstrousentry").as_deref(), Some("哥布林Snodub \"Ax\" Monstrousentry"));
+        assert_eq!(d.translate_text(b"the goblin Snodub and Rith"), None, "名字不吞後面的小寫字");
     }
 
     #[test]

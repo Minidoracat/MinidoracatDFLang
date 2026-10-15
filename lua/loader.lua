@@ -253,9 +253,15 @@ local function start()
 
     ok, err = attach_hooks(engine, dir, hooks)
     if not ok then return fail('%s', err) end
-    -- 提示框等自動換行的文字（enable 時也補做遊戲啟動時就切好的提示）；找不到只有這些維持英文
-    ok, err = attach_hooks(engine, dir, {'wrap_text'})
+    -- 提示框等自動換行的文字：wrap_lines 實際切行（wrap_text 只登記位址，enable 時用來補做遊戲啟動時就切好的提示）；找不到只有這些維持英文
+    ok, err = attach_hooks(engine, dir, {'wrap_text', 'wrap_lines'})
     if not ok then fail('%s；提示框文字維持英文', err) end
+    -- 遊戲截成「開頭...」的清單字串：記下截短前的原文來翻；找不到只有截短的字串維持英文
+    ok, err = attach_hooks(engine, dir, {'string_resize'})
+    if not ok then fail('%s；截短的清單字串維持英文', err) end
+    -- 冒險者開局畫面的外觀、性格段落（遊戲自己切行）；找不到只有這幾段維持英文
+    ok, err = attach_hooks(engine, dir, {'adv_appearance', 'adv_personality'})
+    if not ok then fail('%s；冒險者開局畫面的外觀與性格維持英文', err) end
     -- 彩色文字框（人物頁的想法、記憶、性格）；找不到只有這些維持英文
     if ctb_ok then
         ok, err = attach_hooks(engine, dir, {'ctb_add_string'})

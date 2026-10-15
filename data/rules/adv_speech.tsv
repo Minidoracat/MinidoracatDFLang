@@ -1,0 +1,219 @@
+en	zh-Hant	zh-Hans	align	note
+You: {%1}	你：{1}	你：{1}		冒險交談紀錄：玩家說的話（實機「You: How are you feeling right now?」）
+Is that {%1} falling outside?	外面下的是{1}嗎？	外面下的是{1}吗？		FUN_1406774e0 L896520-897391 室內、外面下著物質雨（血雨等）：{1} 物質名（生物前綴＋狀態名）
+What is this?  {%1}?	這是什麼？是{1}嗎？	这是什么？是{1}吗？		FUN_1406774e0 L896646-896958 室外、天上下著物質：What is this?  ＋物質名（首字大寫）＋?，後面可接熱、冷、風；{1} 單獨成句無法分句翻，所以整句寫
+What is this?  {%1}?  It is hot.	這是什麼？是{1}嗎？好熱。	这是什么？是{1}吗？好热。		FUN_1406774e0 L896646-896958 室外、天上下著物質：What is this?  ＋物質名（首字大寫）＋?，後面可接熱、冷、風；{1} 單獨成句無法分句翻，所以整句寫
+What is this?  {%1}?  It is cold.	這是什麼？是{1}嗎？好冷。	这是什么？是{1}吗？好冷。		FUN_1406774e0 L896646-896958 室外、天上下著物質：What is this?  ＋物質名（首字大寫）＋?，後面可接熱、冷、風；{1} 單獨成句無法分句翻，所以整句寫
+What is this?  {%1}?  It is hot.  And what a wind!	這是什麼？是{1}嗎？好熱。風也好大！	这是什么？是{1}吗？好热。风也好大！		FUN_1406774e0 L896646-896958 室外、天上下著物質：What is this?  ＋物質名（首字大寫）＋?，後面可接熱、冷、風；{1} 單獨成句無法分句翻，所以整句寫
+What is this?  {%1}?  It is cold.  And what a wind!	這是什麼？是{1}嗎？好冷。風也好大！	这是什么？是{1}吗？好冷。风也好大！		FUN_1406774e0 L896646-896958 室外、天上下著物質：What is this?  ＋物質名（首字大寫）＋?，後面可接熱、冷、風；{1} 單獨成句無法分句翻，所以整句寫
+What is this?  {%1}?  And what a wind!	這是什麼？是{1}嗎？風也好大！	这是什么？是{1}吗？风也好大！		FUN_1406774e0 L896646-896958 室外、天上下著物質：What is this?  ＋物質名（首字大寫）＋?，後面可接熱、冷、風；{1} 單獨成句無法分句翻，所以整句寫
+I'm a true {%1} of {2}.	我是{2}道地的{1}。	我是{2}地道的{1}。		FUN_14067d390 L900508-900519 問候：{1} 種族名（FUN_14132e0c0），{2} 勢力名（FUN_140b92900）
+Hello {1}.	你好，{1}。	你好，{1}。		FUN_14067d390 L900542-900583 問候＋對方名字（依說話者性格由隨便到正式：Hey、Hello、Greetings、Salutations）
+Hey {1}.	嘿，{1}。	嘿，{1}。		FUN_14067d390 L900542-900583 問候＋對方名字（依說話者性格由隨便到正式：Hey、Hello、Greetings、Salutations）
+Greetings {1}.	您好，{1}。	您好，{1}。		FUN_14067d390 L900542-900583 問候＋對方名字（依說話者性格由隨便到正式：Hey、Hello、Greetings、Salutations）
+Salutations {1}.	向您致意，{1}。	向您致意，{1}。		FUN_14067d390 L900542-900583 問候＋對方名字（依說話者性格由隨便到正式：Hey、Hello、Greetings、Salutations）
+Welcome to {1}.	歡迎來到{1}。	欢迎来到{1}。		FUN_14067d390 L900975 對方第一次到說話者的據點：{1} 據點名
+You are welcome at {1}.	歡迎光臨{1}。	欢迎光临{1}。		FUN_14067d390 L901049 場所（圖書館、神殿）：{1} 場所名
+How are you, my {%1}?	我的{1}啊，你還好嗎？	我的{1}啊，你还好吗？		FUN_14067d390 L901210 對親人：{1} 親屬稱謂（FUN_14075a580）
+[{1} is dumbstruck for a moment.]  A legend?	[{1}一時愣住了。]傳奇人物？	[{1}一时愣住了。]传奇人物？		FUN_14067d390 L901964-901975 初見傳奇人物：方括號旁白句尾是 ] 不算句界，和下一句 A legend? 連成一段查
+I thought you called yourself {1}.	我還以為你叫{1}。	我还以为你叫{1}。		FUN_14067d390 L901987 對方先前自稱別的名字：{1} 名字
+{%1}, {2} was kidnapped from {3} by {4}.	{1}，{2}在{3}被{4}綁走了。	{1}，{2}在{3}被{4}绑走了。		FUN_140680970 L902130-902208 傳聞 case 1 綁架：{{1}} 時間（FUN_140675670，首字大寫），{2} 被綁者（可帶 my＋親屬稱謂），{3} 據點，{4} 綁匪
+{%1}, {2} was kidnapped from {3}.	{1}，{2}在{3}被人綁走了。	{1}，{2}在{3}被人绑走了。		FUN_140680970 L902173 case 1 沒有綁匪
+{%1}, {2} was kidnapped by {3}.	{1}，{2}被{3}綁走了。	{1}，{2}被{3}绑走了。		FUN_140680970 L902173 case 1 沒有據點
+{%1}, {2} was kidnapped.	{1}，{2}被人綁走了。	{1}，{2}被人绑走了。		FUN_140680970 L902173 case 1 沒有據點與綁匪
+I hear that {1} has been conquered by {2}.	我聽說{1}被{2}征服了。	我听说{1}被{2}征服了。		FUN_140680970 L902266-902285 case 3 據點被征服：{1} 據點，{2} 勢力
+I hear that {1} has been conquered.	我聽說{1}被征服了。	我听说{1}被征服了。		FUN_140680970 L902266 case 3 沒有征服者
+This place has been conquered by {1}.	這地方已經被{1}征服了。	这地方已经被{1}征服了。		FUN_140680970 L902271 case 3 說話者所在地
+I hear that refugees calling themselves {1} fled from {2} just before {%3} descended upon the place.	我聽說一群自稱{1}的難民在{3}殺到之前逃離了{2}。	我听说一群自称{1}的难民在{3}杀到之前逃离了{2}。		FUN_140680970 L902303-902328 case 7 難民逃離：{1} 團體，{2} 據點，{3} an army（of 勢力、led by 人物，見下面 inner）
+We banded up as {1} and escaped from {2} just before {%3} descended upon the place.	我們組成了{1}，趕在{3}殺到之前逃出了{2}。	我们组成了{1}，赶在{3}杀到之前逃出了{2}。		FUN_140680970 L902308 case 7 說話者是難民之一
+an army of {1} led by {2}	{2}率領的{1}大軍	{2}率领的{1}大军	inner	FUN_140680970 L902315-902321 case 7 軍隊：{1} 勢力，{2} 人物（FUN_140b92f10）
+an army of {1}	{1}的大軍	{1}的大军	inner	FUN_140680970 L902317 case 7 軍隊（沒有率領者）
+an army led by {1}	{1}率領的大軍	{1}率领的大军	inner	FUN_140680970 L902321 case 7 軍隊（沒有勢力）
+I hear that a group calling itself {1} moved on in search of a better future after the horrible mismanagement of {2} by {3}.	我聽說{3}把{2}治理得一塌糊塗，一群自稱{1}的人就離開去尋找更好的未來了。	我听说{3}把{2}治理得一塌糊涂，一群自称{1}的人就离开去寻找更好的未来了。		FUN_140680970 L902334-902347 case 8 出走：{1} 團體，{2} 據點，{3} 勢力
+We formed {1} in order to find better lives after the horrible mismanagement of {2} by {3}.	{3}把{2}治理得一塌糊塗，我們就組成了{1}，去找更好的生活。	{3}把{2}治理得一塌糊涂，我们就组成了{1}，去找更好的生活。		FUN_140680970 L902339 case 8 說話者是團體成員
+I hear that a group calling itself {1} reclaimed {2} on behalf of {3}.	我聽說一群自稱{1}的人代表{3}收復了{2}。	我听说一群自称{1}的人代表{3}收复了{2}。		FUN_140680970 L902353-902363 case 9 收復：{1} 團體，{2} 據點，{3} 勢力
+We reclaimed {1} on behalf of {2}.	我們代表{2}收復了{1}。	我们代表{2}收复了{1}。		FUN_140680970 L902358 case 9 說話者是團體成員
+I hear that a group calling itself {1} founded {2} after a long journey from the lands of {3}.	我聽說一群自稱{1}的人從{3}的土地長途跋涉而來，建立了{2}。	我听说一群自称{1}的人从{3}的土地长途跋涉而来，建立了{2}。		FUN_140680970 L902369-902379 case 10 建立據點：{1} 團體，{2} 據點，{3} 勢力
+We founded {1} after a long journey from the lands of {2}.	我們從{2}的土地長途跋涉而來，建立了{1}。	我们从{2}的土地长途跋涉而来，建立了{1}。		FUN_140680970 L902374 case 10 說話者是團體成員
+I hear that a group from {1} left to reclaim the ruins of {2}.	我聽說{1}有一群人出發去收復{2}的廢墟了。	我听说{1}有一群人出发去收复{2}的废墟了。		FUN_140680970 L902382-902388 case 0xb：{1} 勢力，{2} 據點
+I hear that a group from {1} left to reclaim the ruins.	我聽說{1}有一群人出發去收復廢墟了。	我听说{1}有一群人出发去收复废墟了。		FUN_140680970 L902384 case 0xb 沒有據點
+I hear that a group from {1} left to found a new settlement in {2}.	我聽說{1}有一群人出發到{2}建立新的聚落了。	我听说{1}有一群人出发到{2}建立新的聚落了。		FUN_140680970 L902392-902397 case 0xc：{1} 勢力，{2} 地區
+I hear that a group from {1} left to found a new settlement.	我聽說{1}有一群人出發去建立新的聚落了。	我听说{1}有一群人出发去建立新的聚落了。		FUN_140680970 L902394 case 0xc 沒有地區
+I hear that {1} gave up on their occupation of {2}.	我聽說{1}放棄佔領{2}了。	我听说{1}放弃占领{2}了。		FUN_140680970 L902404-902406 case 0xd 撤出：{1} 勢力，{2} 據點
+We had to pull out of {1}.	我們不得不撤出{1}。	我们不得不撤出{1}。		FUN_140680970 L902410 case 0xd 說話者的勢力；整句寫，免得 speech_03 的 {1} had {2}. 搶先
+I hear that there is an insurrection against {1} in {2}.	我聽說{2}爆發了反抗{1}的叛亂。	我听说{2}爆发了反抗{1}的叛乱。		FUN_140680970 L902415-902421 case 0xe 叛亂：{1} 勢力，{2} 據點
+I hear that {1} waited out an insurrection in {2}.	我聽說{1}在{2}熬過了一場叛亂。	我听说{1}在{2}熬过了一场叛乱。		FUN_140680970 L902430 case 0xf 叛亂結果 1：{1} 勢力，{2} 據點
+I hear that {1} crushed an insurrection in {2}.	我聽說{1}鎮壓了{2}的叛亂。	我听说{1}镇压了{2}的叛乱。		FUN_140680970 L902434 case 0xf 叛亂結果 2
+I hear that {1} lost {2} after an insurrection.	我聽說{1}在一場叛亂之後失去了{2}。	我听说{1}在一场叛乱之后失去了{2}。		FUN_140680970 L902438-902440 case 0xf 叛亂結果 0
+{%1}, I  became {@2} of {3}, replacing {@4} {@5} {6}.	{1}，我接替{4}的{5}{6}，成了{3}的{2}。	{1}，我接替{4}的{5}{6}，成了{3}的{2}。		FUN_140680970 L902478-902537 case 0x10 繼任者是說話者：遊戲在 I 後面多拼一個空白（I  became），佔位抓到「I 」翻不出來，所以另寫
+{%1}, I  became {@2} of {3}, replacing {4}.	{1}，我接替{4}，成了{3}的{2}。	{1}，我接替{4}，成了{3}的{2}。		FUN_140680970 L902478-902537 case 0x10 繼任者是說話者：遊戲在 I 後面多拼一個空白（I  became），佔位抓到「I 」翻不出來，所以另寫
+{%1}, I  became {@2} of {3}.	{1}，我成了{3}的{2}。	{1}，我成了{3}的{2}。		FUN_140680970 L902478-902537 case 0x10 繼任者是說話者：遊戲在 I 後面多拼一個空白（I  became），佔位抓到「I 」翻不出來，所以另寫
+{%1}, I  became ruler, replacing {@2} {@3} {4}.	{1}，我接替{2}的{3}{4}，成了統治者。	{1}，我接替{2}的{3}{4}，成了统治者。		FUN_140680970 L902478-902537 case 0x10 繼任者是說話者：遊戲在 I 後面多拼一個空白（I  became），佔位抓到「I 」翻不出來，所以另寫
+{%1}, I  became ruler, replacing {2}.	{1}，我接替{2}，成了統治者。	{1}，我接替{2}，成了统治者。		FUN_140680970 L902478-902537 case 0x10 繼任者是說話者：遊戲在 I 後面多拼一個空白（I  became），佔位抓到「I 」翻不出來，所以另寫
+{%1}, I  became ruler.	{1}，我成了統治者。	{1}，我成了统治者。		FUN_140680970 L902478-902537 case 0x10 繼任者是說話者：遊戲在 I 後面多拼一個空白（I  became），佔位抓到「I 」翻不出來，所以另寫
+{%1}, {2} became {@3} of {4}, replacing {@5} {@6} {7}.	{1}，{2}接替{5}的{6}{7}，成了{4}的{3}。	{1}，{2}接替{5}的{6}{7}，成了{4}的{3}。		FUN_140680970 L902465-902537 case 0x10 繼任：{{1}} 時間（FUN_140675670，首字大寫），{2} 繼任者（I、人物或 my＋親屬稱謂＋人物；I 後面遊戲多拼一個空白，引擎收成一個再查），{3} 職位名，{4} 勢力，{5} his/her/its，{6} 親屬稱謂，{7} 前任
+{%1}, {2} became {@3} of {4}, replacing {5}.	{1}，{2}接替{5}，成了{4}的{3}。	{1}，{2}接替{5}，成了{4}的{3}。		FUN_140680970 L902465-902537 case 0x10 繼任：{{1}} 時間（FUN_140675670，首字大寫），{2} 繼任者（I、人物或 my＋親屬稱謂＋人物；I 後面遊戲多拼一個空白，引擎收成一個再查），前任與繼任者不是親屬
+{%1}, {2} became {@3} of {4}.	{1}，{2}成了{4}的{3}。	{1}，{2}成了{4}的{3}。		FUN_140680970 L902465-902537 case 0x10 繼任：{{1}} 時間（FUN_140675670，首字大寫），{2} 繼任者（I、人物或 my＋親屬稱謂＋人物；I 後面遊戲多拼一個空白，引擎收成一個再查），沒有前任
+{%1}, {2} became ruler, replacing {@3} {@4} {5}.	{1}，{2}接替{3}的{4}{5}，成了統治者。	{1}，{2}接替{3}的{4}{5}，成了统治者。		FUN_140680970 L902465-902537 case 0x10 繼任：{{1}} 時間（FUN_140675670，首字大寫），{2} 繼任者（I、人物或 my＋親屬稱謂＋人物；I 後面遊戲多拼一個空白，引擎收成一個再查），找不到職位時寫 ruler
+{%1}, {2} became ruler, replacing {3}.	{1}，{2}接替{3}，成了統治者。	{1}，{2}接替{3}，成了统治者。		FUN_140680970 L902465-902537 case 0x10 繼任：{{1}} 時間（FUN_140675670，首字大寫），{2} 繼任者（I、人物或 my＋親屬稱謂＋人物；I 後面遊戲多拼一個空白，引擎收成一個再查），ruler、前任不是親屬
+{%1}, {2} became ruler.	{1}，{2}成了統治者。	{1}，{2}成了统治者。		FUN_140680970 L902465-902537 case 0x10 繼任：{{1}} 時間（FUN_140675670，首字大寫），{2} 繼任者（I、人物或 my＋親屬稱謂＋人物；I 後面遊戲多拼一個空白，引擎收成一個再查），ruler、沒有前任
+I hear {@1} has a real mean streak.	聽說{1}心腸可狠了。	听说{1}心肠可狠了。		FUN_140680970 L902543-902547 case 0x10 新統治者很殘忍：{1} he/she/it
+{%1}, {2} claimed {3} in the name of {4}.	{1}，{2}以{4}的名義宣布佔有{3}。	{1}，{2}以{4}的名义宣布占有{3}。		FUN_140680970 L902590-902626 case 0x11 宣告佔有：{{1}} 時間（FUN_140675670，首字大寫），{2} I／人物，{3} 據點，{4} 勢力
+{%1}, {2} agreed to my offer of tribute from {3} to {4}.	{1}，{2}答應了我提出的、由{3}向{4}進貢的提議。	{1}，{2}答应了我提出的、由{3}向{4}进贡的提议。		FUN_140680970 L902692-902749 case 0x12 進貢提議：{{1}} 時間（FUN_140675670，首字大寫），{2} I／人物（可帶 my＋親屬稱謂），對方是說話者時寫 my，否則人物＋'s，最後兩個佔位是勢力
+{%1}, {2} agreed to {3}'s offer of tribute from {4} to {5}.	{1}，{2}答應了{3}提出的、由{4}向{5}進貢的提議。	{1}，{2}答应了{3}提出的、由{4}向{5}进贡的提议。		FUN_140680970 L902692-902749 case 0x12 進貢提議：{{1}} 時間（FUN_140675670，首字大寫），{2} I／人物（可帶 my＋親屬稱謂），對方是說話者時寫 my，否則人物＋'s，最後兩個佔位是勢力
+{%1}, {2} refused my offer of tribute from {3} to {4}.	{1}，{2}拒絕了我提出的、由{3}向{4}進貢的提議。	{1}，{2}拒绝了我提出的、由{3}向{4}进贡的提议。		FUN_140680970 L902816-902873 case 0x13 進貢提議：{{1}} 時間（FUN_140675670，首字大寫），{2} I／人物（可帶 my＋親屬稱謂），對方是說話者時寫 my，否則人物＋'s，最後兩個佔位是勢力
+{%1}, {2} refused {3}'s offer of tribute from {4} to {5}.	{1}，{2}拒絕了{3}提出的、由{4}向{5}進貢的提議。	{1}，{2}拒绝了{3}提出的、由{4}向{5}进贡的提议。		FUN_140680970 L902816-902873 case 0x13 進貢提議：{{1}} 時間（FUN_140675670，首字大寫），{2} I／人物（可帶 my＋親屬稱謂），對方是說話者時寫 my，否則人物＋'s，最後兩個佔位是勢力
+{%1}, {2} agreed to my demand of tribute from {3} to {4}.	{1}，{2}答應了我提出的、由{3}向{4}進貢的要求。	{1}，{2}答应了我提出的、由{3}向{4}进贡的要求。		FUN_140680970 L902937-902994 case 0x14 進貢要求：{{1}} 時間（FUN_140675670，首字大寫），{2} I／人物（可帶 my＋親屬稱謂），對方是說話者時寫 my，否則人物＋'s，最後兩個佔位是勢力
+{%1}, {2} agreed to {3}'s demand of tribute from {4} to {5}.	{1}，{2}答應了{3}提出的、由{4}向{5}進貢的要求。	{1}，{2}答应了{3}提出的、由{4}向{5}进贡的要求。		FUN_140680970 L902937-902994 case 0x14 進貢要求：{{1}} 時間（FUN_140675670，首字大寫），{2} I／人物（可帶 my＋親屬稱謂），對方是說話者時寫 my，否則人物＋'s，最後兩個佔位是勢力
+{%1}, {2} refused my demand of tribute from {3} to {4}.	{1}，{2}拒絕了我提出的、由{3}向{4}進貢的要求。	{1}，{2}拒绝了我提出的、由{3}向{4}进贡的要求。		FUN_140680970 L903059-903116 case 0x15 進貢要求：{{1}} 時間（FUN_140675670，首字大寫），{2} I／人物（可帶 my＋親屬稱謂），對方是說話者時寫 my，否則人物＋'s，最後兩個佔位是勢力
+{%1}, {2} refused {3}'s demand of tribute from {4} to {5}.	{1}，{2}拒絕了{3}提出的、由{4}向{5}進貢的要求。	{1}，{2}拒绝了{3}提出的、由{4}向{5}进贡的要求。		FUN_140680970 L903059-903116 case 0x15 進貢要求：{{1}} 時間（FUN_140675670，首字大寫），{2} I／人物（可帶 my＋親屬稱謂），對方是說話者時寫 my，否則人物＋'s，最後兩個佔位是勢力
+{%1}, {2} accepted a peace offer from my to stop the conflict between {3} and {4}.	{1}，{2}接受了我提出的和談，結束{3}與{4}之間的衝突。	{1}，{2}接受了我提出的和谈，结束{3}与{4}之间的冲突。		FUN_140680970 L903183-903239 case 0x16 接受和談：{{1}} 時間（FUN_140675670，首字大寫），{2} I／人物；對方是說話者時遊戲只寫 my（from my to stop），否則人物＋'s；最後兩個佔位是勢力
+{%1}, {2} accepted a peace offer from {3}'s to stop the conflict between {4} and {5}.	{1}，{2}接受了{3}提出的和談，結束{4}與{5}之間的衝突。	{1}，{2}接受了{3}提出的和谈，结束{4}与{5}之间的冲突。		FUN_140680970 L903183-903239 case 0x16 接受和談：{{1}} 時間（FUN_140675670，首字大寫），{2} I／人物；對方是說話者時遊戲只寫 my（from my to stop），否則人物＋'s；最後兩個佔位是勢力
+{%1}, {2} refused an offer of peace from my regarding the conflict between {3} and {4}.	{1}，{2}拒絕了我針對{3}與{4}之間的衝突提出的和談。	{1}，{2}拒绝了我针对{3}与{4}之间的冲突提出的和谈。		FUN_140680970 L903302-903358 case 0x17 拒絕和談：同 case 0x16
+{%1}, {2} refused an offer of peace from {3}'s regarding the conflict between {4} and {5}.	{1}，{2}拒絕了{3}針對{4}與{5}之間的衝突提出的和談。	{1}，{2}拒绝了{3}针对{4}与{5}之间的冲突提出的和谈。		FUN_140680970 L903302-903358 case 0x17 拒絕和談：同 case 0x16
+{%1}, {2} informed me that tribute would no longer be offered {3} to {4}.	{1}，{2}通知我，{3}和{4}之間的進貢就此停止。	{1}，{2}通知我，{3}和{4}之间的进贡就此停止。		FUN_140680970 L903413-903468 case 0x18 停止進貢：{{1}} 時間（FUN_140675670，首字大寫），{2} I／人物，被通知者是說話者時寫 me；兩個勢力的先後在原文語意不明（offered X to Y），譯成兩者之間的進貢停止
+{%1}, {2} informed {3} that tribute would no longer be offered {4} to {5}.	{1}，{2}通知{3}，{4}和{5}之間的進貢就此停止。	{1}，{2}通知{3}，{4}和{5}之间的进贡就此停止。		FUN_140680970 L903413-903468 case 0x18 停止進貢：{{1}} 時間（FUN_140675670，首字大寫），{2} I／人物，被通知者是說話者時寫 me；兩個勢力的先後在原文語意不明（offered X to Y），譯成兩者之間的進貢停止
+I hear that {1} is in {2} in {3}.	我聽說{1}在{2}的{3}裡。	我听说{1}在{2}的{3}里。		FUN_140680970 L903485-903524 case 0x19 神器下落：{1} 神器，{2} 據點，{3} 場所
+I hear that {1} is not in {2}'s {3}.	我聽說{1}不在{2}的{3}裡。	我听说{1}不在{2}的{3}里。		FUN_140680970 L903645-903691 case 0x1d 神器不在：{1} 神器，{2} 據點，{3} 場所
+I hear that {1} is not in {2}.	我聽說{1}不在{2}。	我听说{1}不在{2}。		FUN_140680970 L903645-903793 case 0x1d/0x1e/0x1f 神器不在：{2} 據點、地區或地下區域
+I hear that {1} is in {2}.	我聽說{1}在{2}。	我听说{1}在{2}。		FUN_140680970 L903485-903595 case 0x19/0x1a/0x1b 神器下落：{2} 據點、地區或地下區域；寫在本檔其他 I hear that 句型後面
+I do not have {1}.	{1}不在我這裡。	{1}不在我这里。		FUN_140680970 L903815 case 0x20 說話者沒有神器：{1} 神器
+{1} does not possess {2}.	{2}不在{1}那裡。	{2}不在{1}那里。		FUN_140680970 L903825-903836 case 0x20 某人沒有神器：{1} 人物，{2} 神器
+I hear that {1} was destroyed.	我聽說{1}被毀了。	我听说{1}被毁了。		FUN_140680970 L903843-903867 case 0x21 神器被毀：{1} 神器（speech_03 的 {1} was destroyed. 會只翻後半）
+The army of {1} is marching on {2}!	{1}的大軍正朝{2}進軍！	{1}的大军正向{2}进军！		FUN_140680970 case 0 → FUN_1406896f0 L907339-907357 大軍進犯：{1} 勢力或人物，{2} 據點
+The army of {1} is marching here!	{1}的大軍正朝這裡殺過來！	{1}的大军正朝这里杀过来！		FUN_140680970 case 0 → FUN_1406896f0 L907354 進犯說話者所在地
+A bandit gang calling itself {1}, led by {2}, has been harassing people over in {3}.	有個自稱{1}的盜匪幫，由{2}帶頭，一直在{3}那邊騷擾百姓。	有个自称{1}的盗匪帮，由{2}带头，一直在{3}那边骚扰百姓。		FUN_140680970 case 6 → FUN_140689500 L907271-907290 盜匪：{1} 盜匪團名，{2} 首領，{3} 據點
+A bandit gang calling itself {1} has been harassing people over in {2}.	有個自稱{1}的盜匪幫一直在{2}那邊騷擾百姓。	有个自称{1}的盗匪帮一直在{2}那边骚扰百姓。		FUN_140680970 case 6 → FUN_140689500 L907271-907290 盜匪：{1} 盜匪團名，沒有首領
+A bandit gang calling itself {1}, led by {2}, has been harassing people right here on the streets of {3}!	有個自稱{1}的盜匪幫，由{2}帶頭，就在{3}的街上騷擾大家！	有个自称{1}的盗匪帮，由{2}带头，就在{3}的街上骚扰大家！		FUN_140680970 case 6 → FUN_140689500 L907271-907290 盜匪：{1} 盜匪團名，說話者所在地
+A bandit gang calling itself {1} has been harassing people right here on the streets of {2}!	有個自稱{1}的盜匪幫就在{2}的街上騷擾大家！	有个自称{1}的盗匪帮就在{2}的街上骚扰大家！		FUN_140680970 case 6 → FUN_140689500 L907271-907290 盜匪：{1} 盜匪團名，說話者所在地、沒有首領
+The creature is {1} the {%2}.	那生物是名叫{1}的{2}。	那生物是名叫{1}的{2}。		FUN_1406878f0 L906668 目標不在已知據點（或就在這裡）：{1} 名字（FUN_140a946e0），{2} 種族（說話者不同族時）或職業／職位／Slave／Prisoner／詛咒名（werewolf）；先比 the＋一段
+The creature is {1} the {%2} {%3}.	那生物是名叫{1}的{2}{3}。	那生物是名叫{1}的{2}{3}。		FUN_1406878f0 L906668 目標不在已知據點（或就在這裡）：{2} 種族＋{3} 職業／詛咒名（goblin Lasher、goblin werewolf）
+The creature is {1}.	那生物叫做{1}。	那生物叫做{1}。		FUN_1406878f0 L906668 目標不在已知據點（或就在這裡）：同族且無職業時只有名字；放在 the 句型後面
+This insidious evil is {1} the {%2}.	這陰險的邪惡就是名叫{1}的{2}。	这阴险的邪恶就是名叫{1}的{2}。		FUN_1406878f0 L906659 混入族人的邪惡（夜行生物）不在已知據點：{1} 名字（FUN_140a946e0），{2} 種族（說話者不同族時）或職業／職位／Slave／Prisoner／詛咒名（werewolf）；先比 the＋一段
+This insidious evil is {1} the {%2} {%3}.	這陰險的邪惡就是名叫{1}的{2}{3}。	这阴险的邪恶就是名叫{1}的{2}{3}。		FUN_1406878f0 L906659 混入族人的邪惡（夜行生物）不在已知據點：{2} 種族＋{3} 職業／詛咒名（goblin Lasher、goblin werewolf）
+This insidious evil is {1}.	這陰險的邪惡就是{1}。	这阴险的邪恶就是{1}。		FUN_1406878f0 L906659 混入族人的邪惡（夜行生物）不在已知據點：同族且無職業時只有名字；放在 the 句型後面
+Seek this place if you hunt {1} the {%2}.	想獵殺名叫{1}的{2}，就去這個地方找。	想猎杀名叫{1}的{2}，就去这个地方找。		FUN_1406878f0 L906672 前面 FUN_140690060 說了地點：{1} 名字（FUN_140a946e0），{2} 種族（說話者不同族時）或職業／職位／Slave／Prisoner／詛咒名（werewolf）；先比 the＋一段
+Seek this place if you hunt {1} the {%2} {%3}.	想獵殺名叫{1}的{2}{3}，就去這個地方找。	想猎杀名叫{1}的{2}{3}，就去这个地方找。		FUN_1406878f0 L906672 前面 FUN_140690060 說了地點：{2} 種族＋{3} 職業／詛咒名（goblin Lasher、goblin werewolf）
+Seek this place if you hunt {1}.	想獵殺{1}，就去這個地方找。	想猎杀{1}，就去这个地方找。		FUN_1406878f0 L906672 前面 FUN_140690060 說了地點：同族且無職業時只有名字；放在 the 句型後面
+Seek this place if you wish to confront {1} the {%2}.	想跟名叫{1}的{2}正面交鋒，就去這個地方。	想跟名叫{1}的{2}正面交锋，就去这个地方。		FUN_1406878f0 L906663 混入族人的邪惡，前面說了地點：{1} 名字（FUN_140a946e0），{2} 種族（說話者不同族時）或職業／職位／Slave／Prisoner／詛咒名（werewolf）；先比 the＋一段
+Seek this place if you wish to confront {1} the {%2} {%3}.	想跟名叫{1}的{2}{3}正面交鋒，就去這個地方。	想跟名叫{1}的{2}{3}正面交锋，就去这个地方。		FUN_1406878f0 L906663 混入族人的邪惡，前面說了地點：{2} 種族＋{3} 職業／詛咒名（goblin Lasher、goblin werewolf）
+Seek this place if you wish to confront {1}.	想跟{1}正面交鋒，就去這個地方。	想跟{1}正面交锋，就去这个地方。		FUN_1406878f0 L906663 混入族人的邪惡，前面說了地點：同族且無職業時只有名字；放在 the 句型後面
+I've heard of a place called {1}.	我聽說過一個叫{1}的地方。	我听说过一个叫{1}的地方。		FUN_140690060 L911595 地點不在任何地區（少見）：{1} 據點名
+{1} is very near.	{1}近在咫尺。	{1}近在咫尺。		FUN_140690060 L911623 + FUN_14147c4a0 地點方位（後面接 [You receive a detailed description.]）：{1} 據點名，{2} 方位
+{1} is just to the {@2}.	{1}就在{2}。	{1}就在{2}。		FUN_140690060 L911623 + FUN_14147c4a0 地點方位（後面接 [You receive a detailed description.]）：{1} 據點名，{2} 方位
+{1} is a short walk to the {@2}.	{1}在{2}不遠處。	{1}在{2}不远处。		FUN_140690060 L911623 + FUN_14147c4a0 地點方位（後面接 [You receive a detailed description.]）：{1} 據點名，{2} 方位
+{1} is a half day's travel to the {@2}.	{1}在{2}半天路程處。	{1}在{2}半天路程处。		FUN_140690060 L911623 + FUN_14147c4a0 地點方位（後面接 [You receive a detailed description.]）：{1} 據點名，{2} 方位
+{1} is nearly a day's travel to the {@2}.	{1}在{2}將近一天路程處。	{1}在{2}将近一天路程处。		FUN_140690060 L911623 + FUN_14147c4a0 地點方位（後面接 [You receive a detailed description.]）：{1} 據點名，{2} 方位
+{1} is a day's travel to the {@2}.	{1}在{2}一天路程處。	{1}在{2}一天路程处。		FUN_140690060 L911623 + FUN_14147c4a0 地點方位（後面接 [You receive a detailed description.]）：{1} 據點名，{2} 方位
+{1} is far to the {@2}.	{1}遠在{2}。	{1}远在{2}。		FUN_140690060 L911623 + FUN_14147c4a0 地點方位（後面接 [You receive a detailed description.]）：{1} 據點名，{2} 方位
+{1} is in the depths.	{1}在地底深處。	{1}在地下深处。		FUN_140690060 L911623 + FUN_14147c4a0 地點方位（後面接 [You receive a detailed description.]）：{1} 據點名，{2} 方位
+{1} is aboveground.	{1}在地面上。	{1}在地面上。		FUN_140690060 L911623 + FUN_14147c4a0 地點方位（後面接 [You receive a detailed description.]）：{1} 據點名，{2} 方位
+{1} is inaccessible from here.	從這裡沒辦法到{1}。	从这里没办法到{1}。		FUN_140690060 L911623 + FUN_14147c4a0 地點方位（後面接 [You receive a detailed description.]）：{1} 據點名，{2} 方位
+[You receive a detailed description.]  {%1}	[你得到了詳細的說明。]{1}	[你得到了详细的说明。]{1}		FUN_140690060 L911645 之後 FUN_1406878f0 接兩個空白與下一句；]  不算句界，整段要一起比
+Search first in {1}, {%2} here.	先去{1}找找看，那是這裡的{2}。	先去{1}找找看，那是这里的{2}。		FUN_140694910 L914786-914878：{1} 建築名，{2} 建築種類（a tavern、the catacombs…，冠詞由 articles.tsv 去掉）；here＝目標就在說話者所在據點
+Search first in {1}, {%2} there.	先去{1}找找看，那是當地的{2}。	先去{1}找找看，那是当地的{2}。		FUN_140694910 L914786-914878：{1} 建築名，{2} 建築種類（a tavern、the catacombs…，冠詞由 articles.tsv 去掉）；there＝目標在別的據點
+There are foul goings-on over at the {%1} of {2}.	{2}那座{1}有些見不得人的勾當。	{2}那座{1}有些见不得人的勾当。		FUN_140688fb0 L907119-907151 宗教團體：{1} 據點種類（FUN_1410cbe50），{2} 據點名
+They have a {%1} called {2} somewhere around here.	他們在這附近有一座{1}，叫做{2}。	他们在这附近有一座{1}，叫做{2}。		FUN_140688fb0 L907181-907215 團體據點：{1} 據點種類（FUN_1410cbe50，hillocks、camp…），called 後是據點名，in 後是地區名（FUN_140b94a40）
+They have a {%1} called {2} somewhere in {3}.	他們在{3}某處有一座{1}，叫做{2}。	他们在{3}某处有一座{1}，叫做{2}。		FUN_140688fb0 L907181-907215 團體據點：{1} 據點種類（FUN_1410cbe50，hillocks、camp…），called 後是據點名，in 後是地區名（FUN_140b94a40）
+They have a {%1} somewhere around here.	他們在這附近有一座{1}。	他们在这附近有一座{1}。		FUN_140688fb0 L907181-907215 團體據點：{1} 據點種類（FUN_1410cbe50，hillocks、camp…），called 後是據點名，in 後是地區名（FUN_140b94a40）
+They have a {%1} somewhere in {2}.	他們在{2}某處有一座{1}。	他们在{2}某处有一座{1}。		FUN_140688fb0 L907181-907215 團體據點：{1} 據點種類（FUN_1410cbe50，hillocks、camp…），called 後是據點名，in 後是地區名（FUN_140b94a40）
+Knowing no mercy, {1} {%2} and {%3}!	{1}毫不留情地{2}，還{3}！	{1}毫不留情地{2}，还{3}！		FUN_14065bfb0 L880039-880410：{1} 名字；{2}{3} 動詞片語（devoured／stole／destroyed／profaned…），多項以逗號接（lists.tsv）
+Knowing no mercy, {1} {%2}!	{1}毫不留情地{2}！	{1}毫不留情地{2}！		FUN_14065bfb0 L880039-880410 只有一項
+devoured a {%1}	吞吃了{1}	吞吃了{1}	inner	FUN_14065bfb0 L880105 單隻牲畜：a＋生物名，或有名字的牲畜；冠詞寫進句型當錨點（不寫 devoured {1}：會吃掉 speech_03 的 was destroyed in … 之類片段）；只給句型用
+devoured an {%1}	吞吃了{1}	吞吃了{1}	inner	FUN_14065bfb0 L880105 單隻牲畜：a＋生物名，或有名字的牲畜；冠詞寫進句型當錨點（不寫 devoured {1}：會吃掉 speech_03 的 was destroyed in … 之類片段）；只給句型用
+stole a {%1}	偷走了{1}	偷走了{1}	inner	FUN_14065bfb0 L880162 單件：神器名（無名時 Untitled）或 a＋物品描述；冠詞寫進句型當錨點（不寫 stole {1}：會吃掉 speech_03 的 was destroyed in … 之類片段）；只給句型用
+stole an {%1}	偷走了{1}	偷走了{1}	inner	FUN_14065bfb0 L880162 單件：神器名（無名時 Untitled）或 a＋物品描述；冠詞寫進句型當錨點（不寫 stole {1}：會吃掉 speech_03 的 was destroyed in … 之類片段）；只給句型用
+destroyed {@1}	摧毀了{1}	摧毁了{1}	inner	FUN_14065bfb0 L880236 單棟：a mead hall 等建築種類或建築名；{1} 只收字典裡的建築種類（a mead hall、the sewers…），不收名字，免得吃掉 was destroyed in … 片段；只給句型用
+profaned {@1}	褻瀆了{1}	亵渎了{1}	inner	FUN_14065bfb0 L880321 單棟（0）；{1} 只收字典裡的建築種類（a mead hall、the sewers…），不收名字，免得吃掉 was destroyed in … 片段；只給句型用
+disturbed {@1}	擾亂了{1}	扰乱了{1}	inner	FUN_14065bfb0 L880327 單棟（1）；{1} 只收字典裡的建築種類（a mead hall、the sewers…），不收名字，免得吃掉 was destroyed in … 片段；只給句型用
+prayed inside {@1}	在{1}裡祈禱	在{1}里祈祷	inner	FUN_14065bfb0 L880331 單棟（2）；{1} 只收字典裡的建築種類（a mead hall、the sewers…），不收名字，免得吃掉 was destroyed in … 片段；只給句型用
+This vile fiend murdered {%1}!	這個可惡的惡徒殺害了{1}！	这个可恶的恶徒杀害了{1}！		FUN_14065bfb0 L880469-880544 單一受害者：{1} my＋親屬＋名字（zz 檔 my {%1} {2}）；寫在 This vile fiend {%1}! 前，免得 sentences_deaths_01 的 inner murdered {1}（謀殺）先套
+This vile fiend murdered {1}!	這個可惡的惡徒殺害了{1}！	这个可恶的恶徒杀害了{1}！		FUN_14065bfb0 L880469-880544 單一受害者，非親屬：{1} 名字
+This vile fiend even murdered {%1}!	這個可惡的惡徒甚至殺害了{1}！	这个可恶的恶徒甚至杀害了{1}！		FUN_14065bfb0 L880469-880544 單一受害者：{1} my＋親屬＋名字（zz 檔 my {%1} {2}）；寫在 This vile fiend {%1}! 前，免得 sentences_deaths_01 的 inner murdered {1}（謀殺）先套
+This vile fiend even murdered {1}!	這個可惡的惡徒甚至殺害了{1}！	这个可恶的恶徒甚至杀害了{1}！		FUN_14065bfb0 L880469-880544 單一受害者，非親屬：{1} 名字
+This bloodsucking fiend murdered {%1}!	這個吸血的惡魔殺害了{1}！	这个吸血的恶魔杀害了{1}！		FUN_14065bfb0 L880467 夜行生物（吸血鬼）-880544 單一受害者：{1} my＋親屬＋名字（zz 檔 my {%1} {2}）；寫在 This bloodsucking fiend {%1}! 前，免得 sentences_deaths_01 的 inner murdered {1}（謀殺）先套
+This bloodsucking fiend murdered {1}!	這個吸血的惡魔殺害了{1}！	这个吸血的恶魔杀害了{1}！		FUN_14065bfb0 L880467 夜行生物（吸血鬼）-880544 單一受害者，非親屬：{1} 名字
+This bloodsucking fiend even murdered {%1}!	這個吸血的惡魔甚至殺害了{1}！	这个吸血的恶魔甚至杀害了{1}！		FUN_14065bfb0 L880467 夜行生物（吸血鬼）-880544 單一受害者：{1} my＋親屬＋名字（zz 檔 my {%1} {2}）；寫在 This bloodsucking fiend {%1}! 前，免得 sentences_deaths_01 的 inner murdered {1}（謀殺）先套
+This bloodsucking fiend even murdered {1}!	這個吸血的惡魔甚至殺害了{1}！	这个吸血的恶魔甚至杀害了{1}！		FUN_14065bfb0 L880467 夜行生物（吸血鬼）-880544 單一受害者，非親屬：{1} 名字
+This vile fiend {%1}!	這個可惡的惡徒{1}！	这个可恶的恶徒{1}！		FUN_14065bfb0 L880469：{1} 下列 murdered／has killed 片語
+This bloodsucking fiend {%1}!	這個吸血的惡魔{1}！	这个吸血的恶魔{1}！		FUN_14065bfb0 L880467 夜行生物（吸血鬼）：同上
+has killed somebody in {@2} lust for murder, among them {%3} and {%4}	嗜殺成性，已經殺了一個人，其中包括{3}和{4}	嗜杀成性，已经杀了一个人，其中包括{3}和{4}	inner	FUN_14065bfb0 L880570-880786：somebody＝一人；{2} his/her/its 不譯；among them 後是 my＋親屬清單（zz 檔）；只給句型用
+has killed somebody in {@2} lust for murder, among them {%3}	嗜殺成性，已經殺了一個人，其中包括{3}	嗜杀成性，已经杀了一个人，其中包括{3}	inner	FUN_14065bfb0 L880570-880786：somebody＝一人；{2} his/her/its 不譯；among them 後是 my＋親屬清單（zz 檔）；只給句型用
+has killed somebody in {@2} lust for murder	嗜殺成性，已經殺了一個人	嗜杀成性，已经杀了一个人	inner	FUN_14065bfb0 L880570-880786：somebody＝一人；{2} his/her/its 不譯；among them 後是 my＋親屬清單（zz 檔）；只給句型用
+has killed {%1} in {@2} lust for murder, among them {%3} and {%4}	嗜殺成性，已經殺了{1}人，其中包括{3}和{4}	嗜杀成性，已经杀了{1}人，其中包括{3}和{4}	inner	FUN_14065bfb0 L880570-880786：{1} 數字英文（two…ninety-nine）；{2} his/her/its 不譯；among them 後是 my＋親屬清單（zz 檔）；只給句型用
+has killed {%1} in {@2} lust for murder, among them {%3}	嗜殺成性，已經殺了{1}人，其中包括{3}	嗜杀成性，已经杀了{1}人，其中包括{3}	inner	FUN_14065bfb0 L880570-880786：{1} 數字英文（two…ninety-nine）；{2} his/her/its 不譯；among them 後是 my＋親屬清單（zz 檔）；只給句型用
+has killed {%1} in {@2} lust for murder	嗜殺成性，已經殺了{1}人	嗜杀成性，已经杀了{1}人	inner	FUN_14065bfb0 L880570-880786：{1} 數字英文（two…ninety-nine）；{2} his/her/its 不譯；among them 後是 my＋親屬清單（zz 檔）；只給句型用
+has killed {#1} in {@2} lust for murder, among them {%3} and {%4}	嗜殺成性，已經殺了 {1} 人，其中包括{3}和{4}	嗜杀成性，已经杀了 {1} 人，其中包括{3}和{4}	inner	FUN_14065bfb0 L880570-880786：{1} ≥100 時遊戲寫阿拉伯數字；{2} his/her/its 不譯；among them 後是 my＋親屬清單（zz 檔）；只給句型用
+has killed {#1} in {@2} lust for murder, among them {%3}	嗜殺成性，已經殺了 {1} 人，其中包括{3}	嗜杀成性，已经杀了 {1} 人，其中包括{3}	inner	FUN_14065bfb0 L880570-880786：{1} ≥100 時遊戲寫阿拉伯數字；{2} his/her/its 不譯；among them 後是 my＋親屬清單（zz 檔）；只給句型用
+has killed {#1} in {@2} lust for murder	嗜殺成性，已經殺了 {1} 人	嗜杀成性，已经杀了 {1} 人	inner	FUN_14065bfb0 L880570-880786：{1} ≥100 時遊戲寫阿拉伯數字；{2} his/her/its 不譯；among them 後是 my＋親屬清單（zz 檔）；只給句型用
+has even killed somebody in {@2} lust for murder, among them {%3} and {%4}	嗜殺成性，甚至殺了一個人，其中包括{3}和{4}	嗜杀成性，甚至杀了一个人，其中包括{3}和{4}	inner	FUN_14065bfb0 L880570-880786：somebody＝一人；{2} his/her/its 不譯；among them 後是 my＋親屬清單（zz 檔）；只給句型用
+has even killed somebody in {@2} lust for murder, among them {%3}	嗜殺成性，甚至殺了一個人，其中包括{3}	嗜杀成性，甚至杀了一个人，其中包括{3}	inner	FUN_14065bfb0 L880570-880786：somebody＝一人；{2} his/her/its 不譯；among them 後是 my＋親屬清單（zz 檔）；只給句型用
+has even killed somebody in {@2} lust for murder	嗜殺成性，甚至殺了一個人	嗜杀成性，甚至杀了一个人	inner	FUN_14065bfb0 L880570-880786：somebody＝一人；{2} his/her/its 不譯；among them 後是 my＋親屬清單（zz 檔）；只給句型用
+has even killed {%1} in {@2} lust for murder, among them {%3} and {%4}	嗜殺成性，甚至殺了{1}人，其中包括{3}和{4}	嗜杀成性，甚至杀了{1}人，其中包括{3}和{4}	inner	FUN_14065bfb0 L880570-880786：{1} 數字英文（two…ninety-nine）；{2} his/her/its 不譯；among them 後是 my＋親屬清單（zz 檔）；只給句型用
+has even killed {%1} in {@2} lust for murder, among them {%3}	嗜殺成性，甚至殺了{1}人，其中包括{3}	嗜杀成性，甚至杀了{1}人，其中包括{3}	inner	FUN_14065bfb0 L880570-880786：{1} 數字英文（two…ninety-nine）；{2} his/her/its 不譯；among them 後是 my＋親屬清單（zz 檔）；只給句型用
+has even killed {%1} in {@2} lust for murder	嗜殺成性，甚至殺了{1}人	嗜杀成性，甚至杀了{1}人	inner	FUN_14065bfb0 L880570-880786：{1} 數字英文（two…ninety-nine）；{2} his/her/its 不譯；among them 後是 my＋親屬清單（zz 檔）；只給句型用
+has even killed {#1} in {@2} lust for murder, among them {%3} and {%4}	嗜殺成性，甚至殺了 {1} 人，其中包括{3}和{4}	嗜杀成性，甚至杀了 {1} 人，其中包括{3}和{4}	inner	FUN_14065bfb0 L880570-880786：{1} ≥100 時遊戲寫阿拉伯數字；{2} his/her/its 不譯；among them 後是 my＋親屬清單（zz 檔）；只給句型用
+has even killed {#1} in {@2} lust for murder, among them {%3}	嗜殺成性，甚至殺了 {1} 人，其中包括{3}	嗜杀成性，甚至杀了 {1} 人，其中包括{3}	inner	FUN_14065bfb0 L880570-880786：{1} ≥100 時遊戲寫阿拉伯數字；{2} his/her/its 不譯；among them 後是 my＋親屬清單（zz 檔）；只給句型用
+has even killed {#1} in {@2} lust for murder	嗜殺成性，甚至殺了 {1} 人	嗜杀成性，甚至杀了 {1} 人	inner	FUN_14065bfb0 L880570-880786：{1} ≥100 時遊戲寫阿拉伯數字；{2} his/her/its 不譯；among them 後是 my＋親屬清單（zz 檔）；只給句型用
+[{1} pauses to regain {@2} composure.]  {%3}	[{1}停頓了一下，努力平復情緒。]{3}	[{1}停顿了一下，努力平复情绪。]{3}		FUN_14065bfb0 L880865-880992：{1} 說話者名字（FUN_140a94030），{2} his/her/its 不譯；後面接 It pains me… 句，]  不算句界，整段一起比
+[{1} pauses to regain {@2} composure.]	[{1}停頓了一下，努力平復情緒。]	[{1}停顿了一下，努力平复情绪。]		FUN_14065bfb0 L880865-880991 單獨出現時
+It pains me all the more, for the foul villain is my own {%1}.	更讓我心痛的是，那個萬惡的壞蛋正是我的{1}。	更让我心痛的是，那个万恶的坏蛋正是我的{1}。		FUN_14065bfb0 L880992-881065：{1} 親屬稱謂（FUN_14075a580）
+It pains me all the more, for the foul villain was once my own {%1}, now cursed.	更讓我心痛的是，那個萬惡的壞蛋原本是我的{1}，如今受了詛咒。	更让我心痛的是，那个万恶的坏蛋原本是我的{1}，如今受了诅咒。		FUN_14065bfb0 L881023/881046 受詛咒（夜行生物）
+It pains me all the more, for the foul villain was once my own {%1}, now twisted into monstrosity.	更讓我心痛的是，那個萬惡的壞蛋原本是我的{1}，如今已扭曲成了怪物。	更让我心痛的是，那个万恶的坏蛋原本是我的{1}，如今已扭曲成了怪物。		FUN_14065bfb0 L881023/881061 變成怪物
+It pains me all the more, for the foul villain was once my own {%1}.	更讓我心痛的是，那個萬惡的壞蛋原本是我的{1}。	更让我心痛的是，那个万恶的坏蛋原本是我的{1}。		FUN_14065bfb0 L881023 理論上不單獨出現，保險用
+It is said that {1}'s {%2} harms the creature.	據說{1}的{2}能傷到那生物。	据说{1}的{2}能伤到那生物。		FUN_14065bfb0 L881212-881304：{1} 歷史人物名（材料來自其身體），{2} 材料名；放在單純材料前
+It is said that {%1} harms the creature.	據說{1}能傷到那生物。	据说{1}能伤到那生物。		FUN_14065bfb0 L881212-881304：{1} 材料名（silver；無法取得時 unknown material）
+It it said that only {1}'s {%2} harms the creature.	據說只有{1}的{2}才能傷到那生物。	据说只有{1}的{2}才能伤到那生物。		FUN_14065bfb0 L881216 Beware!  後的句子，遊戲原文 It it（錯字照抄）
+It it said that only {%1} harms the creature.	據說只有{1}才能傷到那生物。	据说只有{1}才能伤到那生物。		FUN_14065bfb0 L881216 同上，材料名
+my second eldest son {1}	我的次子{1}	我的次子{1}	inner	FUN_14065bfb0 L880531-880544 murdered 的受害者：my＋排行親屬＋名字；既有句型會把 second … 拆成「第二…」，zz_adv_speech 的 my {@1} {2}／my {@1} 會把 second 拆成「第二」，所以排行稱謂逐條寫在這個非 zz 檔
+my third eldest son {1}	我的三子{1}	我的三子{1}	inner	FUN_14065bfb0 L880531-880544 murdered 的受害者：my＋排行親屬＋名字；既有句型會把 second … 拆成「第二…」，zz_adv_speech 的 my {@1} {2}／my {@1} 會把 second 拆成「第二」，所以排行稱謂逐條寫在這個非 zz 檔
+my fourth eldest son {1}	我的四子{1}	我的四子{1}	inner	FUN_14065bfb0 L880531-880544 murdered 的受害者：my＋排行親屬＋名字；既有句型會把 second … 拆成「第二…」，zz_adv_speech 的 my {@1} {2}／my {@1} 會把 second 拆成「第二」，所以排行稱謂逐條寫在這個非 zz 檔
+my fifth eldest son {1}	我的五子{1}	我的五子{1}	inner	FUN_14065bfb0 L880531-880544 murdered 的受害者：my＋排行親屬＋名字；既有句型會把 second … 拆成「第二…」，zz_adv_speech 的 my {@1} {2}／my {@1} 會把 second 拆成「第二」，所以排行稱謂逐條寫在這個非 zz 檔
+my sixth eldest son {1}	我的六子{1}	我的六子{1}	inner	FUN_14065bfb0 L880531-880544 murdered 的受害者：my＋排行親屬＋名字；既有句型會把 second … 拆成「第二…」，zz_adv_speech 的 my {@1} {2}／my {@1} 會把 second 拆成「第二」，所以排行稱謂逐條寫在這個非 zz 檔
+my seventh eldest son {1}	我的七子{1}	我的七子{1}	inner	FUN_14065bfb0 L880531-880544 murdered 的受害者：my＋排行親屬＋名字；既有句型會把 second … 拆成「第二…」，zz_adv_speech 的 my {@1} {2}／my {@1} 會把 second 拆成「第二」，所以排行稱謂逐條寫在這個非 zz 檔
+my eighth eldest son {1}	我的八子{1}	我的八子{1}	inner	FUN_14065bfb0 L880531-880544 murdered 的受害者：my＋排行親屬＋名字；既有句型會把 second … 拆成「第二…」，zz_adv_speech 的 my {@1} {2}／my {@1} 會把 second 拆成「第二」，所以排行稱謂逐條寫在這個非 zz 檔
+my ninth eldest son {1}	我的九子{1}	我的九子{1}	inner	FUN_14065bfb0 L880531-880544 murdered 的受害者：my＋排行親屬＋名字；既有句型會把 second … 拆成「第二…」，zz_adv_speech 的 my {@1} {2}／my {@1} 會把 second 拆成「第二」，所以排行稱謂逐條寫在這個非 zz 檔
+my tenth eldest son {1}	我的十子{1}	我的十子{1}	inner	FUN_14065bfb0 L880531-880544 murdered 的受害者：my＋排行親屬＋名字；既有句型會把 second … 拆成「第二…」，zz_adv_speech 的 my {@1} {2}／my {@1} 會把 second 拆成「第二」，所以排行稱謂逐條寫在這個非 zz 檔
+my second eldest daughter {1}	我的次女{1}	我的次女{1}	inner	FUN_14065bfb0 L880531-880544 murdered 的受害者：my＋排行親屬＋名字；既有句型會把 second … 拆成「第二…」，zz_adv_speech 的 my {@1} {2}／my {@1} 會把 second 拆成「第二」，所以排行稱謂逐條寫在這個非 zz 檔
+my third eldest daughter {1}	我的三女{1}	我的三女{1}	inner	FUN_14065bfb0 L880531-880544 murdered 的受害者：my＋排行親屬＋名字；既有句型會把 second … 拆成「第二…」，zz_adv_speech 的 my {@1} {2}／my {@1} 會把 second 拆成「第二」，所以排行稱謂逐條寫在這個非 zz 檔
+my fourth eldest daughter {1}	我的四女{1}	我的四女{1}	inner	FUN_14065bfb0 L880531-880544 murdered 的受害者：my＋排行親屬＋名字；既有句型會把 second … 拆成「第二…」，zz_adv_speech 的 my {@1} {2}／my {@1} 會把 second 拆成「第二」，所以排行稱謂逐條寫在這個非 zz 檔
+my fifth eldest daughter {1}	我的五女{1}	我的五女{1}	inner	FUN_14065bfb0 L880531-880544 murdered 的受害者：my＋排行親屬＋名字；既有句型會把 second … 拆成「第二…」，zz_adv_speech 的 my {@1} {2}／my {@1} 會把 second 拆成「第二」，所以排行稱謂逐條寫在這個非 zz 檔
+my sixth eldest daughter {1}	我的六女{1}	我的六女{1}	inner	FUN_14065bfb0 L880531-880544 murdered 的受害者：my＋排行親屬＋名字；既有句型會把 second … 拆成「第二…」，zz_adv_speech 的 my {@1} {2}／my {@1} 會把 second 拆成「第二」，所以排行稱謂逐條寫在這個非 zz 檔
+my seventh eldest daughter {1}	我的七女{1}	我的七女{1}	inner	FUN_14065bfb0 L880531-880544 murdered 的受害者：my＋排行親屬＋名字；既有句型會把 second … 拆成「第二…」，zz_adv_speech 的 my {@1} {2}／my {@1} 會把 second 拆成「第二」，所以排行稱謂逐條寫在這個非 zz 檔
+my eighth eldest daughter {1}	我的八女{1}	我的八女{1}	inner	FUN_14065bfb0 L880531-880544 murdered 的受害者：my＋排行親屬＋名字；既有句型會把 second … 拆成「第二…」，zz_adv_speech 的 my {@1} {2}／my {@1} 會把 second 拆成「第二」，所以排行稱謂逐條寫在這個非 zz 檔
+my ninth eldest daughter {1}	我的九女{1}	我的九女{1}	inner	FUN_14065bfb0 L880531-880544 murdered 的受害者：my＋排行親屬＋名字；既有句型會把 second … 拆成「第二…」，zz_adv_speech 的 my {@1} {2}／my {@1} 會把 second 拆成「第二」，所以排行稱謂逐條寫在這個非 zz 檔
+my tenth eldest daughter {1}	我的十女{1}	我的十女{1}	inner	FUN_14065bfb0 L880531-880544 murdered 的受害者：my＋排行親屬＋名字；既有句型會把 second … 拆成「第二…」，zz_adv_speech 的 my {@1} {2}／my {@1} 會把 second 拆成「第二」，所以排行稱謂逐條寫在這個非 zz 檔
+my second eldest child {1}	我的老二{1}	我的老二{1}	inner	FUN_14065bfb0 L880531-880544 murdered 的受害者：my＋排行親屬＋名字；既有句型會把 second … 拆成「第二…」，zz_adv_speech 的 my {@1} {2}／my {@1} 會把 second 拆成「第二」，所以排行稱謂逐條寫在這個非 zz 檔
+my third eldest child {1}	我的老三{1}	我的老三{1}	inner	FUN_14065bfb0 L880531-880544 murdered 的受害者：my＋排行親屬＋名字；既有句型會把 second … 拆成「第二…」，zz_adv_speech 的 my {@1} {2}／my {@1} 會把 second 拆成「第二」，所以排行稱謂逐條寫在這個非 zz 檔
+my fourth eldest child {1}	我的老四{1}	我的老四{1}	inner	FUN_14065bfb0 L880531-880544 murdered 的受害者：my＋排行親屬＋名字；既有句型會把 second … 拆成「第二…」，zz_adv_speech 的 my {@1} {2}／my {@1} 會把 second 拆成「第二」，所以排行稱謂逐條寫在這個非 zz 檔
+my fifth eldest child {1}	我的老五{1}	我的老五{1}	inner	FUN_14065bfb0 L880531-880544 murdered 的受害者：my＋排行親屬＋名字；既有句型會把 second … 拆成「第二…」，zz_adv_speech 的 my {@1} {2}／my {@1} 會把 second 拆成「第二」，所以排行稱謂逐條寫在這個非 zz 檔
+my sixth eldest child {1}	我的老六{1}	我的老六{1}	inner	FUN_14065bfb0 L880531-880544 murdered 的受害者：my＋排行親屬＋名字；既有句型會把 second … 拆成「第二…」，zz_adv_speech 的 my {@1} {2}／my {@1} 會把 second 拆成「第二」，所以排行稱謂逐條寫在這個非 zz 檔
+my seventh eldest child {1}	我的老七{1}	我的老七{1}	inner	FUN_14065bfb0 L880531-880544 murdered 的受害者：my＋排行親屬＋名字；既有句型會把 second … 拆成「第二…」，zz_adv_speech 的 my {@1} {2}／my {@1} 會把 second 拆成「第二」，所以排行稱謂逐條寫在這個非 zz 檔
+my eighth eldest child {1}	我的老八{1}	我的老八{1}	inner	FUN_14065bfb0 L880531-880544 murdered 的受害者：my＋排行親屬＋名字；既有句型會把 second … 拆成「第二…」，zz_adv_speech 的 my {@1} {2}／my {@1} 會把 second 拆成「第二」，所以排行稱謂逐條寫在這個非 zz 檔
+my ninth eldest child {1}	我的老九{1}	我的老九{1}	inner	FUN_14065bfb0 L880531-880544 murdered 的受害者：my＋排行親屬＋名字；既有句型會把 second … 拆成「第二…」，zz_adv_speech 的 my {@1} {2}／my {@1} 會把 second 拆成「第二」，所以排行稱謂逐條寫在這個非 zz 檔
+my tenth eldest child {1}	我的老十{1}	我的老十{1}	inner	FUN_14065bfb0 L880531-880544 murdered 的受害者：my＋排行親屬＋名字；既有句型會把 second … 拆成「第二…」，zz_adv_speech 的 my {@1} {2}／my {@1} 會把 second 拆成「第二」，所以排行稱謂逐條寫在這個非 zz 檔
+I am a slave of {1}.	我是{1}的奴隸。	我是{1}的奴隶。		FUN_140689de0 L908042 實體連結 4 奴隸：{1} 勢力名
+I am a prisoner of {1}.	我是{1}的囚犯。	我是{1}的囚犯。		FUN_140689de0 L908054 實體連結 6 囚犯：{1} 勢力名
+I am a {%1} of the captain of the guard {2}, as are you.	我是衛隊長{2}麾下的{1}，你也是。	我是卫队长{2}手下的{1}，你也是。		FUN_140689de0 L908061-908089 小隊連結：{1} 職位的小隊成員稱呼（position+0x218）、{2} 指揮官名；和玩家同小隊時加 , as are you；要排在 zz 的 {@2} 通用句前（captain 會被當成最短職位名）
+I am a {%1} of the captain of the guard {2}.	我是衛隊長{2}麾下的{1}。	我是卫队长{2}手下的{1}。		FUN_140689de0 L908061-908089 同上
+I am a {%1} of the ranger captain {2}, as are you.	我是遊俠隊長{2}麾下的{1}，你也是。	我是游侠队长{2}手下的{1}，你也是。		FUN_140689de0 L908061-908089 同上（ranger 會被當成最短職位名）
+I am a {%1} of the ranger captain {2}.	我是遊俠隊長{2}麾下的{1}。	我是游侠队长{2}手下的{1}。		FUN_140689de0 L908061-908089 同上
+I am a {%1} of the war leader {2}, as are you.	我是戰爭首領{2}麾下的{1}，你也是。	我是战争首领{2}手下的{1}，你也是。		FUN_140689de0 L908061-908089 同上（war 會被當成最短職位名）
+I am a {%1} of the war leader {2}.	我是戰爭首領{2}麾下的{1}。	我是战争首领{2}手下的{1}。		FUN_140689de0 L908061-908089 同上
+There is a great keep there named {1}.	那裡有一座雄偉的城堡，名叫{1}。	那里有一座雄伟的城堡，名叫{1}。		FUN_14068d170 L909713-909726 建築 1：{1} 建築名
+There is a temple to {1} there named {2}.	那裡有一座供奉{1}的神殿，名叫{2}。	那里有一座供奉{1}的神殿，名叫{2}。		FUN_14068d170 L909744-909826 建築 2：{1} 神祇名、{2} 神殿名
+There is a temple to {1} there.	那裡有一座供奉{1}的神殿。	那里有一座供奉{1}的神殿。		FUN_14068d170 L909744-909813 同上（無名字）
+There is a temple of {1} there named {2}.	那裡有一座屬於{1}的神殿，名叫{2}。	那里有一座属于{1}的神殿，名叫{2}。		FUN_14068d170 L909792-909826 建築 2：{1} 宗教勢力名、{2} 神殿名
+There is a temple of {1} there.	那裡有一座屬於{1}的神殿。	那里有一座属于{1}的神殿。		FUN_14068d170 L909792-909813 同上（無名字）；整句寫出，免得被 zz_legends_01 的 {1} is a {%2}. 切開
+There is a temple there named {1}.	那裡有一座神殿，名叫{1}。	那里有一座神殿，名叫{1}。		FUN_14068d170 L909744-909826 建築 2：無供奉對象，{1} 神殿名
+There is a tomb housing {1} there named {2}.	那裡有一座安葬著{1}的墓室，名叫{2}。	那里有一座安葬着{1}的墓室，名叫{2}。		FUN_14068d170 L909844-909906 建築 5：{1} 墓主名、{2} 陵墓名
+There is a tomb housing {1} there.	那裡有一座安葬著{1}的墓室。	那里有一座安葬着{1}的墓室。		FUN_14068d170 L909844-909892 同上（無名字）
+There is a tomb there named {1}.	那裡有一座墓室，名叫{1}。	那里有一座墓室，名叫{1}。		FUN_14068d170 L909844-909906 建築 5：無墓主，{1} 陵墓名
+There is a tavern there named {1}.	那裡有一間酒館，名叫{1}。	那里有一家酒馆，名叫{1}。		FUN_14068d170 L909921-909935 建築 8：{1} 酒館名
+There is a library there named {1}.	那裡有一座圖書館，名叫{1}。	那里有一座图书馆，名叫{1}。		FUN_14068d170 L909953-909967 建築 9：{1} 圖書館名
+[{1} looks around nervously and leans forward, speaking quietly.]  {%2}!	[{1}緊張地東張西望，湊上前壓低聲音說]{2}！	[{1}紧张地四下张望，凑上前压低声音说]{2}！		FUN_14068d170 L910219-910569 邪惡地區旁白＋邪惡生物「{2}!  It's terrifying.」的第一句：{2} 生物複數名（可能是句型拼出的名字，所以不靠 zz 的 {@1}!）；要排在下一條前
+[{1} looks around nervously and leans forward, speaking quietly.]  {%2}	[{1}緊張地東張西望，湊上前壓低聲音說]{2}	[{1}紧张地四下张望，凑上前压低声音说]{2}		FUN_14068d170 L910219-910255 邪惡地區旁白：{1} 說話者名；後面接傳聞句或「{生物複數}!」。旁白結尾是 .] 不是句界，-s 會和下一句連成一段，所以用 {%2} 收下一句
+[{1} looks around nervously and leans forward, speaking quietly.]	[{1}緊張地東張西望，湊上前壓低聲音說]	[{1}紧张地四下张望，凑上前压低声音说]		FUN_14068d170 L910219-910231 同上，後面沒有生物可說時旁白單獨結尾
+{%1} roam freely out there.	那裡有{1}四處遊蕩。	那里有{1}到处游荡。		FUN_14068d170 L910537 生物句 case 7：{1} 生物複數名（首字大寫）
+{%1} have been known to hunt out there.	聽說有{1}在那裡獵食。	听说有{1}在那里捕猎。		FUN_14068d170 L910553 生物句 case 7：{1} 生物複數名，大型掠食者
+I cannot give up my quest for {1}.	我不能放棄尋找{1}。	我不能放弃寻找{1}。		FUN_140694dc0 L915194 回答 0x1b：尋找神器的任務；{1} 神器名（FUN_140b94400，可能帶 LPAGE 連結）或 an unknown artifact

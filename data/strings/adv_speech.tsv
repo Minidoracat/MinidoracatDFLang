@@ -1,0 +1,247 @@
+en	zh-Hant	zh-Hans	align	note
+I wonder what the weather is like outside.	不知道外面天氣怎麼樣。	不知道外面天气怎么样。		FUN_1406774e0 L896478 天氣話題：說話者在室內、看不到外面
+Looks like rain outside.	看樣子外面在下雨。	看样子外面在下雨。		FUN_1406774e0 L896572 室內
+Looks to be snowing outside.	外面好像在下雪。	外面好像在下雪。		FUN_1406774e0 L896576 室內
+Look at the fog out there!	你看外面的霧多濃！	你看外面的雾多浓！		FUN_1406774e0 L896580 室內、濃霧
+There is a mist outside.	外面起了薄霧。	外面起了薄雾。		FUN_1406774e0 L896588 室內、薄霧
+Seems a pleasant enough night out there.	今晚外頭看來還挺舒服的。	今晚外头看来还挺舒服的。		FUN_1406774e0 L896591-896613 室內、天氣平常：Seems a pleasant enough＋時段（night/dawn/day/sunset）＋ out there.
+Seems a pleasant enough dawn out there.	這清晨外頭看來還挺舒服的。	这清晨外头看来还挺舒服的。		FUN_1406774e0 L896591-896613 室內、天氣平常：Seems a pleasant enough＋時段（night/dawn/day/sunset）＋ out there.
+Seems a pleasant enough day out there.	今天外頭看來還挺舒服的。	今天外头看来还挺舒服的。		FUN_1406774e0 L896591-896613 室內、天氣平常：Seems a pleasant enough＋時段（night/dawn/day/sunset）＋ out there.
+Seems a pleasant enough sunset out there.	這黃昏外頭看來還挺舒服的。	这黄昏外头看来还挺舒服的。		FUN_1406774e0 L896591-896613 室內、天氣平常：Seems a pleasant enough＋時段（night/dawn/day/sunset）＋ out there.
+It is hot.	好熱。	好热。		FUN_1406774e0 L897039 天氣句尾或單獨：熱
+It is cold.	好冷。	好冷。		FUN_1406774e0 L897048 天氣句尾或單獨：冷
+And what a wind!	風也好大！	风也好大！		FUN_1406774e0 L897072 接在別的天氣句後：風大
+What a wind!	風好大！	风好大！		FUN_1406774e0 L897068 單獨：風大
+Curse this fog!	這該死的霧！	这该死的雾！		FUN_1406774e0 L896980 室外、濃霧（與下句以兩個空白相接）
+I cannot see a thing.	我什麼都看不見。	我什么都看不见。		FUN_1406774e0 L896980 Curse this fog! 的下句
+I hope this fog lifts soon.	希望這霧快點散。	希望这雾快点散。		FUN_1406774e0 L896984 室外、起霧
+I hope this mist passes.	希望這薄霧快點散去。	希望这薄雾快点散去。		FUN_1406774e0 L896988 室外、薄霧
+The weather looks to be fine today.	今天天氣看來不錯。	今天天气看来不错。		FUN_1406774e0 L897016 室外白天、無雲
+The weather does not look too bad today.	今天天氣看來還不算太糟。	今天天气看来还不算太糟。		FUN_1406774e0 L897019 室外白天、有些雲
+Look at those clouds!	你看那些雲！	你看那些云！		FUN_1406774e0 L897023 室外白天、厚雲
+The stars are bold tonight.	今晚的星星好亮。	今晚的星星好亮。		FUN_1406774e0 L897027 室外夜晚、晴
+It is a starless night.	今晚一顆星星也看不到。	今晚一颗星星也看不到。		FUN_1406774e0 L897030 室外夜晚、有雲
+It is a nice temperature today.	今天的氣溫很舒服。	今天的气温很舒服。		FUN_1406774e0 L897081 沒有其他天氣可說時
+It is scorching hot!	熱死了！	热死了！		FUN_1406774e0 L896418 酷熱；整句條目蓋過既有通用句型誤套（原本譯成「牠熱！時感到酷熱」）
+It is freezing cold!	冷死了！	冷死了！		FUN_1406774e0 L896426 嚴寒；整句條目蓋過既有通用句型誤套（原本譯成「牠寒冷！時感到嚴寒」）
+Hello.	你好。	你好。		FUN_14067d390 L901855-901869 熟人問候 Hello.  It is good to see you.
+Hey.	嘿。	嘿。		FUN_14067d390 L901857 熟人問候 Hey.  It is good to see you.
+Salutations.	向您致意。	向您致意。		FUN_14067d390 L901865 熟人問候 Salutations.  It is good to see you.（Greetings. 已有譯文）
+It is good to see you.	見到你真好。	见到你真好。		FUN_14067d390 L901869 熟人問候的下句
+Welcome home, my child.	歡迎回家，孩子。	欢迎回家，孩子。		FUN_14067d390 L900983 對方是本據點的人
+What can I do for you?	有什麼我能為你效勞的？	有什么我能为你效劳的？		FUN_14067d390 L901036 This is ＋場所名＋.  What can I do for you? 的下句（場所主人）
+Please be respectful of the materials.	請愛惜這裡的資料。	请爱惜这里的资料。		FUN_14067d390 L901053 You are welcome at ＋場所名的下句（圖書館類場所）
+Are you ready to learn?	準備好學東西了嗎？	准备好学东西了吗？		FUN_14067d390 L901372-901447 問候後依對方身分或名聲補一句：case 1 對方的身分：學生
+Been in any good scraps today?	今天有打過什麼痛快的架嗎？	今天打过什么痛快的架没？		FUN_14067d390 L901372-901447 問候後依對方身分或名聲補一句：case 2 戰士
+Let's not hurt anybody.	我們別傷到任何人吧。	咱们别伤着任何人。		FUN_14067d390 L901372-901447 問候後依對方身分或名聲補一句：case 3
+Make any good deals lately?	最近有做成什麼好買賣嗎？	最近做成什么好买卖了吗？		FUN_14067d390 L901372-901447 問候後依對方身分或名聲補一句：case 4 商人
+It really is a pleasure to speak with you again.	能再跟你說說話真是太好了。	能再跟你说说话真是太好了。		FUN_14067d390 L901372-901447 問候後依對方身分或名聲補一句：case 5
+Long live the cause!	大業萬歲！	事业万岁！		FUN_14067d390 L901372-901447 問候後依對方身分或名聲補一句：case 8 同一陣營（叛軍、組織）
+Thank you for keeping us safe.	謝謝你保護我們的安全。	谢谢你保护我们的安全。		FUN_14067d390 L901372-901447 問候後依對方身分或名聲補一句：case 9 守衛
+Don't let the enemy rest.	別讓敵人有喘息的機會。	别让敌人有喘息的机会。		FUN_14067d390 L901372-901447 問候後依對方身分或名聲補一句：case 0xc
+Don't try to throw your weight around.	別想在這裡耍威風。	别想在这儿耍威风。		FUN_14067d390 L901372-901447 問候後依對方身分或名聲補一句：case 0xd
+I have nothing for you.	我沒什麼可以給你的。	我没什么可以给你的。		FUN_14067d390 L901372-901447 問候後依對方身分或名聲補一句：case 0xe
+I value your loyalty.	我很看重你的忠誠。	我很看重你的忠诚。		FUN_14067d390 L901372-901447 問候後依對方身分或名聲補一句：case 0xf
+Do you have a story to tell?	有什麼故事要說給我聽嗎？	有什么故事要讲给我听吗？		FUN_14067d390 L901372-901447 問候後依對方身分或名聲補一句：case 0x11 說書人
+Have you written a new poem?	你寫了新詩嗎？	你写了新诗吗？		FUN_14067d390 L901372-901447 問候後依對方身分或名聲補一句：case 0x12 詩人
+Is it time to make music?	該來演奏一曲了嗎？	该来演奏一曲了吗？		FUN_14067d390 L901372-901447 問候後依對方身分或名聲補一句：case 0x13 樂手
+Are you still dancing?	你還在跳舞嗎？	你还在跳舞吗？		FUN_14067d390 L901372-901447 問候後依對方身分或名聲補一句：case 0x14 舞者
+Are in a foul mood?	心情不好嗎？	心情不好吗？		FUN_14067d390 L901372-901447 問候後依對方身分或名聲補一句：case 0x15（原文漏了 you，照原文比對）
+You'll get nothing from me with your flattery.	拍馬屁沒用，我什麼都不會給你。	拍马屁没用，我什么都不会给你。		FUN_14067d390 L901372-901447 問候後依對方身分或名聲補一句：case 0x16
+Are you stalking a dangerous beast?	你在追蹤什麼危險的野獸嗎？	你在追踪什么危险的野兽吗？		FUN_14067d390 L901372-901447 問候後依對方身分或名聲補一句：case 0x17 獵人
+Thank you for all you do.	謝謝你一直以來的付出。	谢谢你一直以来的付出。		FUN_14067d390 L901372-901447 問候後依對方身分或名聲補一句：case 0x18
+Are you hunting for treasure?	你在尋寶嗎？	你在寻宝吗？		FUN_14067d390 L901372-901447 問候後依對方身分或名聲補一句：case 0x19
+Don't walk off with anything.	可別順手帶走什麼東西。	可别顺手拿走什么东西。		FUN_14067d390 L901372-901447 問候後依對方身分或名聲補一句：case 0x1a
+Thank you for protecting our wisdom.	謝謝你守護我們的智慧。	谢谢你守护我们的智慧。		FUN_14067d390 L901372-901447 問候後依對方身分或名聲補一句：case 0x1c
+Do you have wisdom to share, preacher?	傳道者，有什麼智慧要分享嗎？	传道者，有什么智慧要分享吗？		FUN_14067d390 L901372-901447 問候後依對方身分或名聲補一句：case 0x1e 傳道者
+And what exactly do you want?	那你到底想幹嘛？	那你到底想干嘛？		FUN_14067d390 L901372-901447 問候後依對方身分或名聲補一句：case -3 對方惡名昭彰
+It's great to have a friend like you!	有你這樣的朋友真好！	有你这样的朋友真好！		FUN_14067d390 L901372-901447 問候後依對方身分或名聲補一句：case -2 對方名聲好
+Traveling alone in the wilds?!	一個人在荒野裡闖蕩？！	一个人在荒野里闯荡？！		FUN_14067d390 L901505 對方獨自旅行（執行檔以內嵌常數組字串）；bogeyman 照 legends_04「鬼怪」
+You know better than that.	你明明知道不該這樣。	你明明知道不该这样。		FUN_14067d390 L901505 上句的下句（執行檔以內嵌常數組字串）；bogeyman 照 legends_04「鬼怪」
+Hopefully your friends can dissuade you from this foolishness.	希望你的朋友能勸你別幹這種傻事。	希望你的朋友能劝你别干这种傻事。		FUN_14067d390 L901519 對方獨自旅行、有朋友（執行檔以內嵌常數組字串）；bogeyman 照 legends_04「鬼怪」
+It is amazing how far you've come.	你能走到今天真是了不起。	你能走到今天真了不起。		FUN_14067d390 L901541 本地出身的名人（執行檔以內嵌常數組字串）；bogeyman 照 legends_04「鬼怪」
+Welcome home.	歡迎回家。	欢迎回家。		FUN_14067d390 L901541 上句的下句（執行檔以內嵌常數組字串）；bogeyman 照 legends_04「鬼怪」
+I know you can handle yourself, but be careful out there.	我知道你應付得來，但在外頭還是要小心。	我知道你应付得来，但在外头还是要小心。		FUN_14067d390 L901559（執行檔以內嵌常數組字串）；bogeyman 照 legends_04「鬼怪」
+It's good to see you have companions to travel with on your adventures.	很高興看到你冒險時有同伴一起上路。	很高兴看到你冒险时有同伴一起上路。		FUN_14067d390 L901576（執行檔以內嵌常數組字串）；bogeyman 照 legends_04「鬼怪」
+Don't travel alone at night, or the bogeyman will get you.	晚上別一個人趕路，不然鬼怪會把你抓走。	晚上别一个人赶路，不然鬼怪会把你抓走。		FUN_14067d390 L901626 夜間獨行（執行檔以內嵌常數組字串）；bogeyman 照 legends_04「鬼怪」
+The sun will set soon.	太陽快下山了。	太阳快下山了。		FUN_14067d390 L901643 黃昏獨行（執行檔以內嵌常數組字串）；bogeyman 照 legends_04「鬼怪」
+Be careful that the bogeyman doesn't get you.	小心別被鬼怪抓走。	小心别被鬼怪抓走。		FUN_14067d390 L901643 上句的下句（執行檔以內嵌常數組字串）；bogeyman 照 legends_04「鬼怪」
+You'd better stay indoors, or the bogeyman will get you.	你最好待在屋裡，不然鬼怪會把你抓走。	你最好待在屋里，不然鬼怪会把你抓走。		FUN_14067d390 L901665 Night is falling. 的下句（Night is falling. 已有譯文）（執行檔以內嵌常數組字串）；bogeyman 照 legends_04「鬼怪」
+Only a fool would travel alone at night!	只有傻瓜才會在晚上獨自趕路！	只有傻瓜才会在晚上独自赶路！		FUN_14067d390 L901685（執行檔以內嵌常數組字串）；bogeyman 照 legends_04「鬼怪」
+Take shelter or the bogeyman will get you.	快找地方躲起來，不然鬼怪會把你抓走。	快找地方躲起来，不然鬼怪会把你抓走。		FUN_14067d390 L901685 上句的下句（執行檔以內嵌常數組字串）；bogeyman 照 legends_04「鬼怪」
+I know you've seen your share of adventure, but be careful or the bogeyman may get you.	我知道你見過不少大風大浪，但還是小心點，鬼怪可能會把你抓走。	我知道你见过不少大风大浪，但还是小心点，鬼怪可能会把你抓走。		FUN_14067d390 L901723（執行檔以內嵌常數組字串）；bogeyman 照 legends_04「鬼怪」
+Only a hero such as yourself can travel at night.	只有你這樣的英雄才敢在夜裡趕路。	只有你这样的英雄才敢在夜里赶路。		FUN_14067d390 L901797（執行檔以內嵌常數組字串）；bogeyman 照 legends_04「鬼怪」
+The bogeyman would get me.	換作是我，早就被鬼怪抓走了。	换作是我，早就被鬼怪抓走了。		FUN_14067d390 L901797 上句的下句（執行檔以內嵌常數組字串）；bogeyman 照 legends_04「鬼怪」
+An honor as always.	一如既往，榮幸之至。	一如既往，荣幸之至。		FUN_14067d390 L901873 熟識的名人
+How can I be of service?	有什麼能為您效勞的？	有什么能为您效劳的？		FUN_14067d390 L901873 上句的下句
+It is good to finally meet you!	終於見到你了，真好！	终于见到你了，真好！		FUN_14067d390 L901935 初見、對方小有名氣
+Your name precedes you.	久仰大名。	久仰大名。		FUN_14067d390 L901941 初見、對方頗有名氣
+Thank you for all that you have done.	感謝你所做的一切。	感谢你所做的一切。		FUN_14067d390 L901941 上句的下句
+It is an honor.	真是榮幸。	真是荣幸。		FUN_14067d390 L901948 初見、對方很有名
+I am honored to be in your presence.	能見到您是我的榮幸。	能见到您是我的荣幸。		FUN_14067d390 L901955 初見、對方非常有名
+A legend?	傳奇人物？	传奇人物？		FUN_14067d390 L901975 初見傳奇人物（之後接 Here?  I can scarcely believe it.）
+Here?	在這裡？	在这里？		FUN_14067d390 L901975 A legend?  Here? 的第二句
+I can scarcely believe it.	簡直不敢相信。	简直不敢相信。		FUN_14067d390 L901975 第三句
+This place has been conquered.	這地方已經被征服了。	这地方已经被征服了。		FUN_140680970 L902271 case 3 說話者所在地、沒有征服者
+an army	大軍	大军	inner	FUN_140680970 L902315 case 7 軍隊（沒有勢力、率領者）；只給句型佔位用
+Best keep your head down.	最好低調點，別惹事。	最好低调点，别惹事。		FUN_140680970 L902553 case 0x10 殘忍的統治者管的就是說話者所在地
+Vanquishing a great beast on our behalf would bring us all much glory.	要是你能替我們打倒一頭巨獸，大家都會跟著沾光。	要是你能替我们打倒一头巨兽，大家都会跟着沾光。		FUN_1406878f0 L906251 任務建議開場：巨獸（MEGABEAST）；術語例外：Great
+Mastering the forces of nature would glorify us in the eyes of the world.	能駕馭自然之力，全世界都會對我們刮目相看。	能驾驭自然之力，全世界都会对我们刮目相看。		FUN_1406878f0 L906277 任務建議開場：泰坦類（自然之力）
+Sometimes animals just get out of control.	有時候動物就是會失控。	有时候动物就是会失控。		FUN_1406878f0 L906326 任務建議開場：野獸，威脅最低
+You might win fame by putting down a wild beast of great renown.	去宰了一頭赫赫有名的野獸，說不定你就出名了。	去宰了一头赫赫有名的野兽，说不定你就出名了。		FUN_1406878f0 L906330 任務建議開場：野獸，威脅中；術語例外：Great
+Creatures grow mighty out in the wildest regions.	在最荒涼的地方，生物都長得特別強大。	在最荒凉的地方，生物都长得特别强大。		FUN_1406878f0 L906335 任務建議開場：野獸，威脅高
+At the end of the world dwell the fiercest beasts of legend.	世界的盡頭住著傳說中最兇猛的野獸。	世界的尽头住着传说中最凶猛的野兽。		FUN_1406878f0 L906340 任務建議開場：野獸，威脅最高
+A vile beast from the caverns now walks the land.	有頭來自洞窟的邪惡野獸跑到地面上來了。	有头来自洞穴的邪恶野兽跑到地面上来了。		FUN_1406878f0 L906345 任務建議開場：地底生物，威脅中
+A lurking pest has come up from the underground.	有隻躲躲藏藏的害蟲從地底下冒出來了。	有只躲躲藏藏的害虫从地底下冒出来了。		FUN_1406878f0 L906347 任務建議開場：地底生物，威脅最低
+A great monster from the underground is said to have emerged from the darkness.	聽說有頭來自地底的巨大怪物從黑暗中爬出來了。	听说有头来自地底的巨大怪物从黑暗中爬出来了。		FUN_1406878f0 L906353 任務建議開場：地底生物，威脅高；術語例外：Great
+Something truly horrifying has vomited itself forth from the depths of the world.	有個真正駭人的東西從世界深處湧了出來。	有个真正骇人的东西从世界深处涌了出来。		FUN_1406878f0 L906359 任務建議開場：地底生物，威脅最高
+A force of evil has arisen in the world.	世上出現了一股邪惡的力量。	世上出现了一股邪恶的力量。		FUN_1406878f0 L906364 任務建議開場：夜行生物等；術語例外：world
+The world is safer for travelers when night creatures no longer stalk the darkness.	夜行生物不再潛伏在黑暗裡，旅人才能走得安心。	夜行生物不再潜伏在黑暗里，旅人才能走得安心。		FUN_1406878f0 L906368 任務建議開場：夜行生物；術語例外：world
+Terrible monstrosities live deep under the ground.	地底深處住著可怕的怪物。	地底深处住着可怕的怪物。		FUN_1406878f0 L906372 任務建議開場：地底怪物
+Not far from here, a fearsome creature has made its home.	離這裡不遠的地方，有頭可怕的生物在那裡安了窩。	离这里不远的地方，有头可怕的生物在那里安了窝。		FUN_1406878f0 L906376 任務建議開場：巢穴生物
+Demons from the underworld must not be permitted to walk freely upon the land.	絕不能讓冥界的惡魔在地面上橫行無阻。	绝不能让冥界的恶魔在地面上横行无阻。		FUN_1406878f0 L906380 任務建議開場：惡魔
+As you know, we are at war.  You might be able to strike our enemies where our armies cannot reach.	你也知道，我們正在打仗。我們的軍隊打不到的地方，也許你能去給敵人一擊。	你也知道，我们正在打仗。我们的军队打不到的地方，也许你能去给敌人一击。		FUN_1406878f0 L906392 任務建議開場：戰爭；整句
+As you know, we are at war.	你也知道，我們正在打仗。	你也知道，我们正在打仗。		FUN_1406878f0 L906392 同上，前句（報告逐句查時）
+You might be able to strike our enemies where our armies cannot reach.	我們的軍隊打不到的地方，也許你能去給敵人一擊。	我们的军队打不到的地方，也许你能去给敌人一击。		FUN_1406878f0 L906392 同上，後句
+A great beast threatens to bring ruin upon our people.	有頭巨獸揚言要讓我們的族人家破人亡。	有头巨兽扬言要让我们的族人家破人亡。		FUN_1406878f0 L906421 任務建議開場（受害者）：巨獸；術語例外：Great
+We have been under siege by an ancient force of nature.	我們一直被一股遠古的自然之力圍困著。	我们一直被一股远古的自然之力围困着。		FUN_1406878f0 L906441 受害者：泰坦類
+It is time to send our cursed enemy back to the underworld.	是時候把那個該死的敵人送回冥界了。	是时候把那个该死的敌人送回冥界了。		FUN_1406878f0 L906466 受害者：惡魔
+Our people have been tormented by a fearsome foe.	我們的族人一直受到一個可怕的敵人折磨。	我们的族人一直受到一个可怕的敌人折磨。		FUN_1406878f0 L906491 受害者：其他強敵
+A beast from the wilds has been harassing our people.	有頭荒野來的野獸一直在騷擾我們的族人。	有头荒野来的野兽一直在骚扰我们的族人。		FUN_1406878f0 L906536 受害者：野獸，威脅最低
+A ferocious wild animal has been set on us by nature.	大自然派了一頭兇猛的野獸來對付我們。	大自然派了一头凶猛的野兽来对付我们。		FUN_1406878f0 L906541 受害者：野獸，威脅中（天然生物）
+A ferocious unnatural beast has become the bane of our people.	一頭兇猛又不自然的野獸成了我們族人的禍害。	一头凶猛又不自然的野兽成了我们族人的祸害。		FUN_1406878f0 L906543 受害者：野獸，威脅中（非天然生物）
+A savage beast from the thick of the wilds hunts us at will.	一頭來自荒野深處的猛獸想獵我們就獵我們。	一头来自荒野深处的猛兽想猎我们就猎我们。		FUN_1406878f0 L906551 受害者：野獸，威脅高
+We are besieged by a terrifying monster from the harshest wilderness.	一頭來自最險惡荒野的恐怖怪物把我們團團圍住了。	一头来自最险恶荒野的恐怖怪物把我们团团围住了。		FUN_1406878f0 L906556 受害者：野獸，威脅最高
+A beast from underground has been assailing us.	有頭地底來的野獸一直在攻擊我們。	有头地底来的野兽一直在攻击我们。		FUN_1406878f0 L906562 受害者：地底生物，威脅中
+At times, creeping things slither out from below ground.	有時候會有爬蟲之類的東西從地底下溜出來。	有时候会有爬虫之类的东西从地底下溜出来。		FUN_1406878f0 L906564 受害者：地底生物，威脅最低
+A vile monster from the bowels of the earth has been preying on our people.	一頭來自大地深處的邪惡怪物一直在獵食我們的族人。	一头来自大地深处的邪恶怪物一直在猎食我们的族人。		FUN_1406878f0 L906568 受害者：地底生物，威脅高
+A terror most foul from the evil depths nigh the underworld plagues us.	一個來自冥界附近邪惡深淵、萬分汙穢的恐怖東西正在禍害我們。	一个来自冥界附近邪恶深渊、万分污秽的恐怖东西正在祸害我们。		FUN_1406878f0 L906574 受害者：地底生物，威脅最高
+The forces of darkness have descended upon us.	黑暗的勢力已經降臨到我們頭上了。	黑暗的势力已经降临到我们头上了。		FUN_1406878f0 L906579 受害者：夜行生物等
+A beast horrible beyond imagining threatens us.	一頭可怕到難以想像的野獸正威脅著我們。	一头可怕到难以想象的野兽正威胁着我们。		FUN_1406878f0 L906586 受害者：其他
+A night creature has infiltrated our communities and now makes prey of us.	有個夜行生物混進了我們的社群，現在把我們當成獵物。	有个夜行生物混进了我们的社群，现在把我们当成猎物。		FUN_1406878f0 L906634 受害者：混入族人的夜行生物（吸血鬼）
+An evil lurks within.	邪惡就潛伏在我們之中。	邪恶就潜伏在我们之中。		FUN_1406878f0 L906636 受害者：混入族人的邪惡
+Body corrupted beyond reckoning, he assumes a beastly form to terrorize us.	他的身軀已經腐化得不成樣子，還會化成獸形來恐嚇我們。	他的身躯已经腐化得不成样子，还会化成兽形来恐吓我们。		FUN_1406878f0 L906964-906988 狼人類（獸化詛咒）；he＝雄性
+Body corrupted beyond reckoning, she assumes a beastly form to terrorize us.	她的身軀已經腐化得不成樣子，還會化成獸形來恐嚇我們。	她的身躯已经腐化得不成样子，还会化成兽形来恐吓我们。		FUN_1406878f0 L906964-906988 同上；she＝雌性
+Body corrupted beyond reckoning, it assumes a beastly form to terrorize us.	牠的身軀已經腐化得不成樣子，還會化成獸形來恐嚇我們。	它的身躯已经腐化得不成样子，还会化成兽形来恐吓我们。		FUN_1406878f0 L906964-906988 同上；it＝無性別
+Slave	奴隸	奴隶		FUN_1406878f0 L906852 目標的職業改寫成 Slave（The creature is … the goblin Slave.）
+Prisoner	囚犯	囚犯		FUN_1406878f0 L906892 目標的職業改寫成 Prisoner（inline 0x72656e6f73697250）
+A small but organized military order have been causing us much hardship.	有支規模不大、卻很有組織的武裝團體一直讓我們吃盡苦頭。	有支规模不大、却很有组织的武装团体一直让我们吃尽苦头。		FUN_140688fb0 L907086 麻煩：武裝團體，成員 <10
+An organized military order have brought terror to our doorsteps.	一支有組織的武裝團體把恐懼帶到了我們家門口。	一支有组织的武装团体把恐惧带到了我们家门口。		FUN_140688fb0 L907090 武裝團體，成員 10–24
+A highly-organized military order is threatening our people.	一支組織嚴密的武裝團體正在威脅我們的族人。	一支组织严密的武装团体正在威胁我们的族人。		FUN_140688fb0 L907095 武裝團體，成員 ≥25
+Particular outlaws have been causing us much hardship.	有幾個亡命之徒一直讓我們吃盡苦頭。	有几个亡命之徒一直让我们吃尽苦头。		FUN_140688fb0 L907102 土匪，成員 <10
+Malicious outlaws have brought terror to our doorsteps.	一群惡毒的亡命之徒把恐懼帶到了我們家門口。	一群恶毒的亡命之徒把恐惧带到了我们家门口。		FUN_140688fb0 L907106 土匪，成員 10–24
+A marauding warband is threatening our people.	一支四處劫掠的戰團正在威脅我們的族人。	一支四处劫掠的战团正在威胁我们的族人。		FUN_140688fb0 L907111 土匪，成員 ≥25
+A lowly group of outcasts have perpetrated enough crimes against our community to gain notice.	有一小群卑賤的社會邊緣人，在我們這裡犯下的罪行多到讓人沒法不注意。	有一小群卑贱的社会边缘人，在我们这里犯下的罪行多到让人没法不注意。		FUN_140688fb0 L907159 犯罪集團，成員 <10
+A scheming criminal gang has eluded capture for far too long.	有個詭計多端的犯罪幫派逍遙法外太久了。	有个诡计多端的犯罪帮派逍遥法外太久了。		FUN_140688fb0 L907164 犯罪集團，成員 10–24
+A sprawling criminal organization has left our people living in fear.	一個龐大的犯罪組織讓我們的族人活在恐懼之中。	一个庞大的犯罪组织让我们的族人活在恐惧之中。		FUN_140688fb0 L907169 犯罪集團，成員 ≥25
+Our people have been pestered by skulking villains.	我們的族人一直被一些鬼鬼祟祟的惡棍騷擾。	我们的族人一直被一些鬼鬼祟祟的恶棍骚扰。		FUN_140688fb0 L907176 麻煩：小偷類團體
+There are foul goings-on here.	這裡有些見不得人的勾當。	这里有些见不得人的勾当。		FUN_140688fb0 L907119/907149 宗教團體（sVar1==1）在本地
+There are foul goings-on over at an unknown site.	某個不知名的據點那邊有些見不得人的勾當。	某个不知名的据点那边有些见不得人的勾当。		FUN_140688fb0 L907121 + FUN_140b93930 找不到據點時
+[You receive a detailed description.]	[你得到了詳細的說明。]	[你得到了详细的说明。]		FUN_140690060 L911645 交談：地點詳細說明（會在地圖上標出）
+I'm not sure exactly where to look.	我也不確定到底該去哪裡找。	我也不确定到底该去哪里找。		FUN_140694910 L914911 找不到建築時
+devoured our livestock	吞吃了我們的牲畜	吞吃了我们的牲畜	inner	FUN_14065bfb0 L880143 Knowing no mercy, … 的動詞片語（多隻）；只給句型用
+stole our treasures	偷走了我們的寶物	偷走了我们的宝物	inner	FUN_14065bfb0 L880217 同上（多件）
+destroyed our homes	摧毀了我們的家園	摧毁了我们的家园	inner	FUN_14065bfb0 L880300 同上（多棟）
+profaned our homes	褻瀆了我們的家園	亵渎了我们的家园	inner	FUN_14065bfb0 L880399 同上（多棟）
+Save us from this traitor!	救救我們，除掉這個叛徒吧！	救救我们，除掉这个叛徒吧！		FUN_14065bfb0 L881080 目標原是說話者的族人；術語例外：Save
+Save us from this horror!	救救我們，除掉這個恐怖的怪物吧！	救救我们，除掉这个恐怖的怪物吧！		FUN_14065bfb0 L881094；術語例外：Save
+Beware!	小心！	小心！		FUN_14065bfb0 L881216 Beware!  It it said that only … 的前句
+Other arms may not cut so deeply.	其他兵器可沒辦法砍得那麼深。	其他兵器可没法砍得那么深。		FUN_14065bfb0 L881306
+stole Untitled	偷走了無名神器	偷走了无名神器	inner	FUN_14065bfb0 L880173 被偷的神器沒有名字；只給句型用
+But mostly I just like to drink.	不過說真的，我最愛的還是喝酒。	不过说真的，我最爱的还是喝酒。		FUN_140689de0 L908934 自我介紹結尾：性格分支 0
+How I long for some excitement in my life...	真希望日子能過得刺激一點啊……	真想让日子过得刺激点啊……		FUN_140689de0 L908940 自我介紹結尾：性格分支 1
+I've always dreamed of seeing far-away places.	我一直夢想著能去看看遠方。	我一直梦想着能去远方看看。		FUN_140689de0 L908946 自我介紹結尾：性格分支 2
+I would give anything to be away from here.	只要能離開這裡，要我做什麼都行。	只要能离开这儿，让我干什么都行。		FUN_140689de0 L908952 自我介紹結尾：性格分支 3，後接「I can't stand the boredom!」
+I can't stand the boredom!	我快無聊死了！	我快闷死了！		FUN_140689de0 L908952 同上第二句
+Can you lead me to battle and a warrior's death?	你能帶我上戰場，讓我像個戰士一樣戰死嗎？	你能带我上战场，让我像个战士那样战死吗？		FUN_140689de0 L908958 自我介紹結尾：性格分支 4
+Please help me to escape from this place.	求求你，幫我逃離這個地方。	求求你，帮我逃出这个地方。		FUN_140689de0 L908967 自我介紹結尾：分支 9、10（囚犯、奴隸）
+I am a forgetful guard.	我是個健忘的衛兵。	我是个健忘的卫兵。		FUN_140689de0 L908068 小隊連結：查不到指揮職位時的固定說法
+There is a great keep there.	那裡有一座雄偉的城堡。	那里有一座雄伟的城堡。		FUN_14068d170 L909713 談論據點：建築 1 城堡（無名字）
+There is a temple there.	那裡有一座神殿。	那里有一座神殿。		FUN_14068d170 L909744 談論據點：建築 2 神殿（無供奉對象、無名字）
+There is a tomb there.	那裡有一座墓室。	那里有一座墓室。		FUN_14068d170 L909844 談論據點：建築 5 陵墓（無墓主、無名字）；術語 tomb 依 note 譯陵墓
+There is a tavern there.	那裡有一間酒館。	那里有一家酒馆。		FUN_14068d170 L909921 談論據點：建築 8 酒館（無名字）
+There is a library there.	那裡有一座圖書館。	那里有一座图书馆。		FUN_14068d170 L909953 談論據點：建築 9 圖書館（無名字）
+It is a place of great evil.	那是個邪惡至極的地方。	那是个极其邪恶的地方。		FUN_14068d170 L910124 談論地區 case 3：邪惡地區
+It is rumored that the dead rise and stalk the living!	聽說那裡的死人會爬起來追殺活人！	听说那里的死人会爬起来追杀活人！		FUN_14068d170 L910255 邪惡地區：說話者湊近低聲說的傳聞，前面是 [{1} looks around…] 旁白
+That place is blessed.	那是個受到祝福的地方。	那地方受过祝福。		FUN_14068d170 L910274 談論地區 case 4：善良地區，後面可能接生物句
+Savage beasts call it their home.	那裡是野獸的老巢。	那里是野兽的老窝。		FUN_14068d170 L910344 談論地區 case 5：野性地區，後面可能接生物句
+It's terrifying.	太可怕了。	太吓人了。		FUN_14068d170 L910569 生物句 case 7：邪惡生物「{生物複數}!  It's terrifying.」的第二句
+I don't know very much about it.	那裡的事我知道得不多。	那儿的事我知道得不多。		FUN_14068d170 L910814 談論據點／地區時什麼都沒說出來的收尾；整句寫出，免得被 speech_03 的 I don't know {1}. 譯成「我不認識…」
+Hey...	嘿……	嘿……		FUN_140694dc0 L915071 邀請同行的回答 0：「Hey...  that sounds like a great idea!」第一句
+that sounds like a great idea!	聽起來真是個好主意！	听起来是个好主意！		FUN_140694dc0 L915071 同上第二句（原文小寫開頭）
+Surely any place is better than this.	去哪裡都比待在這裡好。	去哪儿都比待在这儿强。		FUN_140694dc0 L915075 回答 1 第一句
+Let's set off immediately!	我們馬上出發吧！	咱们马上出发吧！		FUN_140694dc0 L915075 回答 1 第二句
+Nothing beats the open road.	沒有什麼比得上四處闖蕩。	什么都比不上四处闯荡。		FUN_140694dc0 L915082 回答 2（嚮導，param_3==0x23）第一句
+Let us be off!	我們出發吧！	我们出发吧！		FUN_140694dc0 L915082／915084 回答 2 第二句
+I've always wanted to travel the world.	我一直想去看看這個世界。	我一直想出去看看这个世界。		FUN_140694dc0 L915084 回答 2（同行）第一句
+Excitement!  Adventure!  I am thrilled to join you.	刺激！冒險！能跟你同行，我太興奮了。	刺激！冒险！能跟你一起走，我太兴奋了。		FUN_140694dc0 L915088 回答 3：整段指定，不接前文；整句寫出，免得 Excitement! 套到需求名「尋求刺激！」
+I am thrilled to join you.	能跟你同行，我太興奮了。	能跟你一起走，我太兴奋了。		FUN_140694dc0 L915088 回答 3 第三句（拆句時用）
+I will agree to guide you if you lead me to glory and death.	只要你能帶我走向榮耀與死亡，我就答應當你的嚮導。	只要你能带我走向荣耀和死亡，我就答应给你带路。		FUN_140694dc0 L915095 回答 4（嚮導）
+I will agree to travel with you if you lead me to glory and death.	只要你能帶我走向榮耀與死亡，我就答應跟你同行。	只要你能带我走向荣耀和死亡，我就答应跟你一起走。		FUN_140694dc0 L915097 回答 4（同行）
+I'm sorry.	抱歉。	对不起。		FUN_140694dc0 L915102／915124 回答 5、0xb 第一句
+My duty is here.	我的職責在這裡。	我的职责在这儿。		FUN_140694dc0 L915102 回答 5 第二句
+It is I that would lead you, but I have no need of your protection.	要說帶頭，也該是我帶你才對；何況我根本不需要你保護。	要说带头，也该是我带你才对；再说我根本不需要你保护。		FUN_140694dc0 L915106 回答 6
+Ha!	哈！	哈！		FUN_140694dc0 L915110 回答 7 第一句
+Such enthusiasm from one such as yourself.	像你這樣的人，還真有幹勁啊。	你这样的人，倒是挺有劲头啊。		FUN_140694dc0 L915110 回答 7 第二句（帶輕視）
+With a band so large, what share of the glory would I have?	隊伍這麼龐大，我能分到多少榮耀？	队伍这么庞大，我能分到多少荣耀？		FUN_140694dc0 L915114 回答 8
+Take me away from here.	帶我離開這裡。	带我离开这儿。		FUN_140694dc0 L915118 回答 9、10
+I can't go with you.	我不能跟你走。	我不能跟你走。		FUN_140694dc0 L915124 回答 0xb 第二句
+I have no interest in your objectives.	我對你的目標沒興趣。	我对你的目标没兴趣。		FUN_140694dc0 L915128 回答 0xc
+Let us leave as soon as possible.	我們盡快動身吧。	我们尽快动身吧。		FUN_140694dc0 L915132 回答 0xd
+This is a cause worthy of struggle.	這是值得奮鬥的大業。	这是值得为之奋斗的事业。		FUN_140694dc0 L915136 回答 0xe
+Keep practicing!	繼續練吧！	接着练吧！		FUN_140694dc0 L915140 回答 0xf（表演團）
+Maybe after you've improved.	等你功夫練好了再說吧。	等你水平提高了再说吧。		FUN_140694dc0 L915145 回答 0x10 第一句
+Prove you have what it takes.	證明你有這個本事。	证明你有这个本事。		FUN_140694dc0 L915145 回答 0x10 第二句
+The life of the traveling performer is a hard one.	巡迴表演者的日子可不好過。	四处巡演的表演者，日子可不好过。		FUN_140694dc0 L915145 回答 0x10 第三句；整句寫出，免得被 zz_legends_01 的 {1} is a {%2}. 切開
+Can you manage a troupe so large?	這麼大的劇團，你管得來嗎？	这么大的戏班子，你管得过来吗？		FUN_140694dc0 L915150 回答 0x11
+That's such a fantastic idea.	這主意太棒了。	这主意太棒了。		FUN_140694dc0 L915154 回答 0x12 第一句
+I can't wait to be off!	我等不及要出發了！	我等不及要出发了！		FUN_140694dc0 L915154 回答 0x12 第二句
+It's such a noble pursuit.	這是多麼崇高的志業。	这是多么崇高的追求。		FUN_140694dc0 L915158 回答 0x13 第一句
+Let's go immediately!	我們馬上走吧！	咱们马上走吧！		FUN_140694dc0 L915158 回答 0x13 第二句
+It would be so great to perform and make people happy.	能表演讓大家開心，那就太棒了。	能表演让大家开心，那就太好了。		FUN_140694dc0 L915162 回答 0x14
+I so love the performing arts.	我好愛表演藝術。	我太爱表演艺术了。		FUN_140694dc0 L915166 回答 0x15 第一句
+It's time to go!	該出發了！	该出发了！		FUN_140694dc0 L915166 回答 0x15 第二句
+I'd love to travel and create art.	我很想一邊旅行一邊創作。	我很想边旅行边搞创作。		FUN_140694dc0 L915170 回答 0x16
+The performing arts are so important.	表演藝術太重要了。	表演艺术太重要了。		FUN_140694dc0 L915174 回答 0x17 第一句；第二句 Let's go! 已有
+Let's spread the joy!	一起把歡樂散播出去吧！	一起把欢乐传播出去吧！		FUN_140694dc0 L915178 回答 0x18
+The performances will be great.	表演一定會很精彩。	演出一定会很精彩。		FUN_140694dc0 L915182 回答 0x19
+A demonstration of your skill might convince me.	露一手給我看看，說不定我會被說服。	露一手给我看看，说不定我就被说服了。		FUN_140694dc0 L915186 回答 0x1a
+I cannot abandon my pilgrimage.	我不能拋下我的朝聖之旅。	我不能扔下我的朝圣之旅。		FUN_140694dc0 L915201 回答 0x1b：朝聖
+I cannot, for I am on an important journey.	不行，我正踏上一段重要的旅程。	不行，我正在赶一段重要的路。		FUN_140694dc0 L915206 回答 0x1b：其他旅程
+I am unfit to brave danger with you.	我不夠格跟你一起出生入死。	我没本事跟你一起出生入死。		FUN_140694dc0 L915212 預設回答：能力不足
+I would...	我嘛……	我嘛……		FUN_140694dc0 L915215 預設回答「I would...  rather not.」第一句
+rather not.	還是算了吧。	还是算了吧。		FUN_140694dc0 L915215 同上第二句（原文小寫開頭）
+Can I help you with something?	有什麼需要幫忙的嗎？	有什么需要帮忙的吗？		FUN_140848580 L1188765 交談開場（說話者主動問候）
+hearthperson	家臣	家臣	inner	FUN_140689de0 L908071 小隊成員稱呼：程序生成的領主職位小隊名（FUN_14096ece0 L1366116），只給 I am a {%1}… 句型的佔位用；譯名照 adv_help 的「家臣團／家臣」
+marshal	元帥	元帅	inner	FUN_140689de0 L908079／908112 職位名：程序生成的軍事首長（FUN_14096ece0 L1366774），只給句型佔位用
+field marshal	陸軍元帥	陆军元帅	inner	FUN_140689de0 L908079／908112 職位名：程序生成（FUN_14096ece0 L1366771），只給句型佔位用
+constable	統帥	统帅	inner	FUN_140689de0 L908079／908112 職位名：程序生成的軍事首長（FUN_14096ece0 L1366778），只給句型佔位用
+keeper of the seal	掌璽大臣	掌玺大臣	inner	FUN_140689de0 L908112 職位名：程序生成的官員，只給句型佔位用
+master of beasts	馴獸總管	驯兽总管	inner	FUN_140689de0 L908112 職位名：程序生成（FUN_14096ece0 L1367746），只給句型佔位用
+my second eldest son	我的次子	我的次子	inner	FUN_14065bfb0 L880766 among them 清單項目：my＋排行親屬；同上
+my third eldest son	我的三子	我的三子	inner	FUN_14065bfb0 L880766 among them 清單項目：my＋排行親屬；同上
+my fourth eldest son	我的四子	我的四子	inner	FUN_14065bfb0 L880766 among them 清單項目：my＋排行親屬；同上
+my fifth eldest son	我的五子	我的五子	inner	FUN_14065bfb0 L880766 among them 清單項目：my＋排行親屬；同上
+my sixth eldest son	我的六子	我的六子	inner	FUN_14065bfb0 L880766 among them 清單項目：my＋排行親屬；同上
+my seventh eldest son	我的七子	我的七子	inner	FUN_14065bfb0 L880766 among them 清單項目：my＋排行親屬；同上
+my eighth eldest son	我的八子	我的八子	inner	FUN_14065bfb0 L880766 among them 清單項目：my＋排行親屬；同上
+my ninth eldest son	我的九子	我的九子	inner	FUN_14065bfb0 L880766 among them 清單項目：my＋排行親屬；同上
+my tenth eldest son	我的十子	我的十子	inner	FUN_14065bfb0 L880766 among them 清單項目：my＋排行親屬；同上
+my second eldest daughter	我的次女	我的次女	inner	FUN_14065bfb0 L880766 among them 清單項目：my＋排行親屬；同上
+my third eldest daughter	我的三女	我的三女	inner	FUN_14065bfb0 L880766 among them 清單項目：my＋排行親屬；同上
+my fourth eldest daughter	我的四女	我的四女	inner	FUN_14065bfb0 L880766 among them 清單項目：my＋排行親屬；同上
+my fifth eldest daughter	我的五女	我的五女	inner	FUN_14065bfb0 L880766 among them 清單項目：my＋排行親屬；同上
+my sixth eldest daughter	我的六女	我的六女	inner	FUN_14065bfb0 L880766 among them 清單項目：my＋排行親屬；同上
+my seventh eldest daughter	我的七女	我的七女	inner	FUN_14065bfb0 L880766 among them 清單項目：my＋排行親屬；同上
+my eighth eldest daughter	我的八女	我的八女	inner	FUN_14065bfb0 L880766 among them 清單項目：my＋排行親屬；同上
+my ninth eldest daughter	我的九女	我的九女	inner	FUN_14065bfb0 L880766 among them 清單項目：my＋排行親屬；同上
+my tenth eldest daughter	我的十女	我的十女	inner	FUN_14065bfb0 L880766 among them 清單項目：my＋排行親屬；同上
+my second eldest child	我的老二	我的老二	inner	FUN_14065bfb0 L880766 among them 清單項目：my＋排行親屬；同上
+my third eldest child	我的老三	我的老三	inner	FUN_14065bfb0 L880766 among them 清單項目：my＋排行親屬；同上
+my fourth eldest child	我的老四	我的老四	inner	FUN_14065bfb0 L880766 among them 清單項目：my＋排行親屬；同上
+my fifth eldest child	我的老五	我的老五	inner	FUN_14065bfb0 L880766 among them 清單項目：my＋排行親屬；同上
+my sixth eldest child	我的老六	我的老六	inner	FUN_14065bfb0 L880766 among them 清單項目：my＋排行親屬；同上
+my seventh eldest child	我的老七	我的老七	inner	FUN_14065bfb0 L880766 among them 清單項目：my＋排行親屬；同上
+my eighth eldest child	我的老八	我的老八	inner	FUN_14065bfb0 L880766 among them 清單項目：my＋排行親屬；同上
+my ninth eldest child	我的老九	我的老九	inner	FUN_14065bfb0 L880766 among them 清單項目：my＋排行親屬；同上
+my tenth eldest child	我的老十	我的老十	inner	FUN_14065bfb0 L880766 among them 清單項目：my＋排行親屬；同上

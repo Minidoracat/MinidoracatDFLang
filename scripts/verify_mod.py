@@ -39,14 +39,16 @@ HEADER = ["en", "zh-Hant", "zh-Hans", "align", "note"]
 # data/screens 多一欄 row：只在畫面第幾列套用（空白是任何一列），同畫面同字不同意思時用
 SCREEN_HEADER = ["en", "zh-Hant", "zh-Hans", "align", "row", "note"]
 NAME_HEADER = ["word", "pos", "en", "zh-Hant", "zh-Hans", "note"]
-HOOKS = ("addst", "addst_flag", "top_addst", "addcoloredst", "mtb_set_width", "add_anchored_tile", "wrap_text", "ctb_add_string",
-         "translate_name")
+HOOKS = ("addst", "addst_flag", "top_addst", "addcoloredst", "mtb_set_width", "add_anchored_tile", "wrap_text", "wrap_lines",
+         "ctb_add_string", "translate_name", "string_resize", "adv_appearance", "adv_personality")
 PACKAGE_SUFFIXES = {".txt", ".tsv", ".lua", ".dll", ".otf", ".md", ".png"}
-# {1}～{9}；{#1} 只收數字、{@1} 只收字典裡的字詞、{%1} 只收翻得出來的片段、{~1} 同 {1} 但譯文可省略；譯文可寫 {1+時}（佔位譯文沒有時間、原因助詞結尾時補字）
-PLACEHOLDER = re.compile(r"\{[#@%~]?([1-9])(?:\+([^{}]+))?\}")
+# {1}～{9}；{#1} 只收數字、{@1} 只收字典裡的字詞、{%1} 只收翻得出來的片段、{~1} 同 {1} 但譯文可省略、{^1} 只收大寫開頭的名字；
+# 譯文可寫 {1+時}（佔位譯文沒有時間、原因助詞結尾時補字）
+PLACEHOLDER = re.compile(r"\{[#@%~^]?([1-9])(?:\+([^{}]+))?\}")
 MARKUP = re.compile(r"\[(?:[RBP]|C:\d+:\d+:\d+)\]")  # 段落的換行與換色標記
 # 由引擎依框寬重新換行的檔案（檔名開頭）：譯文寬度不限
-WRAPPED = ("sentences_", "ann_", "speech_", "combat_", "desc_", "health_", "_events", "zz_events", "events_", "legends_", "zz_legends_")
+WRAPPED = ("sentences_", "ann_", "speech_", "combat_", "desc_", "health_", "_events", "zz_events", "events_", "legends_", "zz_legends_",
+           "adv_speech", "zz_adv_speech")
 
 results: list[tuple[bool, str]] = []
 
@@ -73,13 +75,13 @@ def placeholder_problem(r: dict, langs: list[str]) -> str | None:
         return "原文佔位不能帶補字（+…）"
     if len(set(en)) != len(en):
         return "原文佔位重複"
-    if re.search(r"\{[#@%~]?[1-9]\}\{[#@%~]?[1-9]\}", r["en"]):
+    if re.search(r"\{[#@%~^]?[1-9]\}\{[#@%~^]?[1-9]\}", r["en"]):
         return "原文佔位相鄰"
     # 只有空白、標點夾著佔位的樣板（{1} {2}、{1}, {2}）會套到幾乎所有字串。有英文字、有限定佔位
     # （{#n} 只收數字、{@n} 只收字典字詞、{%n} 只收翻得出來的片段），或開頭、結尾是固定字（外框 -{1}-、後綴 {1}, ♂）時，套得到的字串有限
     lits = PLACEHOLDER.split(r["en"])  # 佔位前後的固定字；只有空白不算（` {1} {2}` 一樣會套到幾乎所有字串）
     edges = bool(lits[0].strip() or lits[-1].strip())
-    if not re.search(r"[A-Za-z]", template(r["en"])) and not re.search(r"\{[#@%][1-9]\}", r["en"]) and not edges:
+    if not re.search(r"[A-Za-z]", template(r["en"])) and not re.search(r"\{[#@%^][1-9]\}", r["en"]) and not edges:
         return "原文樣板沒有英文字、限定佔位或頭尾固定字，會套到幾乎所有字串"
     # 譯文每個佔位最多一次、都要是原文有的；原文的佔位除了 {@n}、{~n} 都要用到（中文常省略重複的代名詞主詞、攻擊者自己的部位的主人）
     optional = set(re.findall(r"\{[@~]([1-9])\}", r["en"]))
@@ -122,13 +124,18 @@ def main() -> int:
     check(not bad_name_headers and not bad_names, f"names 字表（{len(name_files)} 檔、{len(names)} 條：代號＋詞性不重複、繁簡都有）",
           bad_name_headers + bad_names)
 
-    seen, dupes, bad_src, bad_align = set(), [], [], []
+    seen: dict[tuple, dict] = {}
+    dupes, bad_src, bad_align = [], [], []
     for r in rows:
         kind = r["file"].split("/")[0]
         key = (r["file"] if kind == "screens" else kind, r["en"], r["align"] == "tail")  # tail 片語自成一類（引擎另外存）
-        if key in seen:
+        first = seen.get(key)
+        # 同一條句型一份只給佔位用（inner）、一份整句也用，譯文相同時不衝突（傳說事件短語與冒險日誌標題共用）
+        same_rule = first is not None and kind == "rules" and (first["align"] == "inner") != (r["align"] == "inner") \
+            and all(first[lang] == r[lang] for lang in langs)
+        if first is not None and not same_rule:
             dupes.append(f"{r['file']}: {r['en']!r}")
-        seen.add(key)
+        seen.setdefault(key, r)
         if not r["en"] or not encodable(r["en"]):
             bad_src.append(f"{r['file']}: {r['en']!r}")
         if r["align"] not in ("", "c", "r") and not (kind in ("rules", "strings") and r["align"] in ("inner", "tail")):

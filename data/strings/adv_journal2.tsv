@@ -1,0 +1,110 @@
+en	zh-Hant	zh-Hans	align	note
+Vessel Crew	船員	船员		FUN_1400cea60 L127350 冒險日誌勢力說明的類型標題
+Migrating Group	遷徙群體	迁徙群体		FUN_1400cea60 L127350 冒險日誌勢力說明的類型標題
+Nomadic Group	遊牧群體	游牧群体		FUN_1400cea60 L127350 冒險日誌勢力說明的類型標題
+Outcast	流亡者	流亡者		FUN_1400cea60 L127350 冒險日誌勢力說明的類型標題
+Enemy	敵人	敌人		FUN_1400cea60 L127657-127918 勢力說明：你與該勢力的關係（忠誠度分級＋身分）
+Devoted	死忠	死忠		FUN_1400cea60 L127657-127918 勢力說明：你與該勢力的關係（忠誠度分級＋身分）；忠誠度分級：Devoted 100、Loyal 75+、Aligned 50+、Affiliated 25+、Associated
+Aligned	親近	亲近		FUN_1400cea60 L127657-127918 勢力說明：你與該勢力的關係（忠誠度分級＋身分）；忠誠度分級：Devoted 100、Loyal 75+、Aligned 50+、Affiliated 25+、Associated
+Affiliated	有關聯	有关联		FUN_1400cea60 L127657-127918 勢力說明：你與該勢力的關係（忠誠度分級＋身分）；忠誠度分級：Devoted 100、Loyal 75+、Aligned 50+、Affiliated 25+、Associated
+Associated	有往來	有往来		FUN_1400cea60 L127657-127918 勢力說明：你與該勢力的關係（忠誠度分級＋身分）；忠誠度分級：Devoted 100、Loyal 75+、Aligned 50+、Affiliated 25+、Associated
+Devoted member	死忠成員	死忠成员		FUN_1400cea60 L127657-127918 勢力說明：你與該勢力的關係（忠誠度分級＋身分）（同 Loyal member 忠誠成員）
+Devoted mercenary	死忠傭兵	死忠佣兵		FUN_1400cea60 L127657-127918 勢力說明：你與該勢力的關係（忠誠度分級＋身分）
+Devoted slave	死忠奴隸	死忠奴隶		FUN_1400cea60 L127657-127918 勢力說明：你與該勢力的關係（忠誠度分級＋身分）
+Loyal mercenary	忠誠傭兵	忠诚佣兵		FUN_1400cea60 L127657-127918 勢力說明：你與該勢力的關係（忠誠度分級＋身分）
+Loyal slave	忠誠奴隸	忠诚奴隶		FUN_1400cea60 L127657-127918 勢力說明：你與該勢力的關係（忠誠度分級＋身分）
+Aligned mercenary	親近傭兵	亲近佣兵		FUN_1400cea60 L127657-127918 勢力說明：你與該勢力的關係（忠誠度分級＋身分）
+Aligned slave	親近奴隸	亲近奴隶		FUN_1400cea60 L127657-127918 勢力說明：你與該勢力的關係（忠誠度分級＋身分）
+Affiliated mercenary	有關聯的傭兵	有关联的佣兵		FUN_1400cea60 L127657-127918 勢力說明：你與該勢力的關係（忠誠度分級＋身分）
+Affiliated slave	有關聯的奴隸	有关联的奴隶		FUN_1400cea60 L127657-127918 勢力說明：你與該勢力的關係（忠誠度分級＋身分）
+Associated mercenary	有往來的傭兵	有往来的佣兵		FUN_1400cea60 L127657-127918 勢力說明：你與該勢力的關係（忠誠度分級＋身分）
+Associated slave	有往來的奴隸	有往来的奴隶		FUN_1400cea60 L127657-127918 勢力說明：你與該勢力的關係（忠誠度分級＋身分）
+Former member	前成員	前成员		FUN_1400cea60 L127657-127918 勢力說明：你與該勢力的關係（忠誠度分級＋身分）：以前的身分
+Former mercenary	前傭兵	前佣兵		FUN_1400cea60 L127657-127918 勢力說明：你與該勢力的關係（忠誠度分級＋身分）：以前的身分
+Former slave	前奴隸	前奴隶		FUN_1400cea60 L127657-127918 勢力說明：你與該勢力的關係（忠誠度分級＋身分）：以前的身分
+Former prisoner	前囚犯	前囚犯		FUN_1400cea60 L127657-127918 勢力說明：你與該勢力的關係（忠誠度分級＋身分）：以前的身分
+soldier	士兵	士兵		FUN_1400cea60 L127562 勢力說明首字大寫單獨畫（Soldier）；同 events_14 的 inner 條目
+militia-dwarf	民兵	民兵		FUN_1400cea60 L127562 勢力說明首字大寫單獨畫（Militia-dwarf）；同 events_14 的 inner 條目
+Temperate Coniferous Forest	溫帶針葉林	温带针叶林		FUN_1400cff20 L128221 冒險日誌地區說明的生物群系（一行一個）
+Tropical Dry Broadleaf Forest	熱帶乾燥闊葉林	热带干燥阔叶林		FUN_1400cff20 L128221 冒險日誌地區說明的生物群系（一行一個）
+Tropical Moist Broadleaf Forest	熱帶濕潤闊葉林	热带湿润阔叶林		FUN_1400cff20 L128221 冒險日誌地區說明的生物群系（一行一個）
+You have known this person your entire life.	你從出生起就認識此人。	你从出生起就认识此人。		FUN_1400d1ef0 L129745-129761 人物說明：認識多久（對方比你年長）
+You have known this person since his birth.	你從他出生起就認識他。	你从他出生起就认识他。		FUN_1400d1ef0 L129745-129761 人物說明：認識多久（FUN_140aa4850 his/her/its）
+You have known this person since her birth.	你從她出生起就認識她。	你从她出生起就认识她。		FUN_1400d1ef0 L129745-129761 人物說明：認識多久
+You have known this person since its birth.	你從牠出生起就認識牠。	你从它出生起就认识它。		FUN_1400d1ef0 L129745-129761 人物說明：認識多久
+You have known each other your entire lives.	你們打從出生就認識彼此。	你们打从出生就认识彼此。		FUN_1400d1ef0 L129745-129761 人物說明：認識多久（同年出生）
+You last spoke in a time before time.	你們上次交談是在太古之時。	你们上次交谈是在太古之时。		FUN_1400d1ef0 L129773-129788 人物說明：上次交談（FUN_140675670 的時間片語）
+You last spoke in the future.	你們上次交談是在未來。	你们上次交谈是在未来。		FUN_1400d1ef0 L129773-129788 人物說明：上次交談（FUN_140675670 的時間片語）
+You last spoke a few years ago.	你們上次交談是幾年前。	你们上次交谈是几年前。		FUN_1400d1ef0 L129773-129788 人物說明：上次交談（FUN_140675670 的時間片語）
+You last spoke several years ago.	你們上次交談是好幾年前。	你们上次交谈是好几年前。		FUN_1400d1ef0 L129773-129788 人物說明：上次交談（FUN_140675670 的時間片語）
+You last spoke many years ago.	你們上次交談是許多年前。	你们上次交谈是许多年前。		FUN_1400d1ef0 L129773-129788 人物說明：上次交談（FUN_140675670 的時間片語）
+You last spoke long ago.	你們上次交談是很久以前。	你们上次交谈是很久以前。		FUN_1400d1ef0 L129773-129788 人物說明：上次交談（FUN_140675670 的時間片語）
+You last spoke long, long ago.	你們上次交談是很久很久以前。	你们上次交谈是很久很久以前。		FUN_1400d1ef0 L129773-129788 人物說明：上次交談（FUN_140675670 的時間片語）
+You last spoke just now.	你們剛剛才交談過。	你们刚刚才交谈过。		FUN_1400d1ef0 L129773-129788 人物說明：上次交談（FUN_140675670 的時間片語）
+You last spoke a few minutes ago.	你們上次交談是幾分鐘前。	你们上次交谈是几分钟前。		FUN_1400d1ef0 L129773-129788 人物說明：上次交談（FUN_140675670 的時間片語）
+You last spoke not a quarter hour ago.	你們上次交談是不到一刻鐘前。	你们上次交谈是不到一刻钟前。		FUN_1400d1ef0 L129773-129788 人物說明：上次交談（FUN_140675670 的時間片語）
+You last spoke not a half hour ago.	你們上次交談是不到半小時前。	你们上次交谈是不到半小时前。		FUN_1400d1ef0 L129773-129788 人物說明：上次交談（FUN_140675670 的時間片語）
+You last spoke not one hour ago.	你們上次交談是不到一小時前。	你们上次交谈是不到一小时前。		FUN_1400d1ef0 L129773-129788 人物說明：上次交談（FUN_140675670 的時間片語）
+You last spoke a few hours ago.	你們上次交談是幾小時前。	你们上次交谈是几小时前。		FUN_1400d1ef0 L129773-129788 人物說明：上次交談（FUN_140675670 的時間片語）
+You last spoke not one day ago.	你們上次交談是不到一天前。	你们上次交谈是不到一天前。		FUN_1400d1ef0 L129773-129788 人物說明：上次交談（FUN_140675670 的時間片語）
+You last spoke a few days ago.	你們上次交談是幾天前。	你们上次交谈是几天前。		FUN_1400d1ef0 L129773-129788 人物說明：上次交談（FUN_140675670 的時間片語）
+You last spoke several days ago.	你們上次交談是好幾天前。	你们上次交谈是好几天前。		FUN_1400d1ef0 L129773-129788 人物說明：上次交談（FUN_140675670 的時間片語）
+You last spoke a week ago.	你們上次交談是一週前。	你们上次交谈是一周前。		FUN_1400d1ef0 L129773-129788 人物說明：上次交談（FUN_140675670 的時間片語）
+You last spoke a few weeks ago.	你們上次交談是幾週前。	你们上次交谈是几周前。		FUN_1400d1ef0 L129773-129788 人物說明：上次交談（FUN_140675670 的時間片語）
+You last spoke a month ago.	你們上次交談是一個月前。	你们上次交谈是一个月前。		FUN_1400d1ef0 L129773-129788 人物說明：上次交談（FUN_140675670 的時間片語）
+You last spoke a few months ago.	你們上次交談是幾個月前。	你们上次交谈是几个月前。		FUN_1400d1ef0 L129773-129788 人物說明：上次交談（FUN_140675670 的時間片語）
+You last spoke months ago.	你們上次交談是好幾個月前。	你们上次交谈是好几个月前。		FUN_1400d1ef0 L129773-129788 人物說明：上次交談（FUN_140675670 的時間片語）
+You last spoke a year ago.	你們上次交談是一年前。	你们上次交谈是一年前。		FUN_1400d1ef0 L129773-129788 人物說明：上次交談（FUN_140675670 的時間片語）
+You have heard this name suggested as a potential guide to faraway places.	你聽人推薦過這個名字，說此人能帶路前往遠方。	你听人推荐过这个名字，说此人能带路去远方。		FUN_1400d1ef0 L129837 人物說明：可當嚮導的人選；術語例外：guide
+You worship this figure.	你崇拜祂。	你崇拜祂。		FUN_1400d1ef0 L129985-130286 人物說明：與你的關係（對象是神祇或神力）
+You are beloved.	你深受寵愛。	你深受宠爱。		FUN_1400d1ef0 L130010-130029 接在 You worship this figure. 後（前面兩個空白）：神祇對你的好感
+You are held in high regard.	你備受器重。	你备受器重。		FUN_1400d1ef0 L130010-130029 接在 You worship this figure. 後（前面兩個空白）：神祇對你的好感
+You are held in some esteem.	你頗受看重。	你颇受看重。		FUN_1400d1ef0 L130010-130029 接在 You worship this figure. 後（前面兩個空白）：神祇對你的好感
+You have been favorably noticed.	你已受到青睞。	你已受到青睐。		FUN_1400d1ef0 L130010-130029 接在 You worship this figure. 後（前面兩個空白）：神祇對你的好感
+You have attracted some positive interest.	你已引起些許好感。	你已引起些许好感。		FUN_1400d1ef0 L130010-130029 接在 You worship this figure. 後（前面兩個空白）：神祇對你的好感
+This is your prisoner.	這是你的囚犯。	这是你的囚犯。		FUN_1400d1ef0 L129985-130286 人物說明：與你的關係
+This is your jailor.	這是你的獄卒。	这是你的狱卒。		FUN_1400d1ef0 L129985-130286 人物說明：與你的關係
+This is your master.	這是你的師父。	这是你的师父。		FUN_1400d1ef0 L129985-130286 人物說明：與你的關係；術語例外：Master
+This is your apprentice.	這是你的學徒。	这是你的学徒。		FUN_1400d1ef0 L129985-130286 人物說明：與你的關係
+This is your traveling companion.	這是你的旅伴。	这是你的旅伴。		FUN_1400d1ef0 L129985-130286 人物說明：與你的關係
+This is your former master.	這是你的前師父。	这是你的前师父。		FUN_1400d1ef0 L129985-130286 人物說明：與你的關係；術語例外：Master
+This is your former apprentice.	這是你的前學徒。	这是你的前学徒。		FUN_1400d1ef0 L129985-130286 人物說明：與你的關係
+You have only heard tell of these creatures.	你只聽說過這種生物。	你只听说过这种生物。		FUN_1400d41a0 L130690-130720 冒險日誌生物圖鑑：遭遇程度
+You have encountered these creatures in the past but not recently.	你以前遇過這種生物，但最近沒有。	你以前遇到过这种生物，但最近没有。		FUN_1400d41a0 L130690-130720 冒險日誌生物圖鑑：遭遇程度
+You have recently encountered one of these creatures.	你最近遇過這種生物。	你最近遇到过这种生物。		FUN_1400d41a0 L130690-130720 冒險日誌生物圖鑑：遭遇程度
+This creature dwells underground.	這種生物棲息在地底。	这种生物栖息在地下。		FUN_1400d41a0 L131110 生物圖鑑：棲息地
+Embark with a group to start a settlement.	帶領一群人出發，建立聚落。	带领一群人出发，建立聚落。		FUN_141045060 L2408779-2409022 開新遊戲選模式的說明（FUN_1408e7310 依 49 格切行，整段查不到時逐句）
+Your citizens will build, mine, craft, trade, fight, and manage as you guide your outpost through its history.	你的公民會建造、採礦、製作、貿易、戰鬥與管理，而你將帶領前哨站走過它的歷史。	你的公民会建造、采矿、制作、贸易、战斗和管理，而你将带领前哨站走过它的历史。		FUN_141045060 L2408779-2409022 開新遊戲選模式的說明（FUN_1408e7310 依 49 格切行，整段查不到時逐句）；術語例外：guide
+Design the shape and purpose of the fortress by issuing orders for the residents to follow.	下達命令讓居民執行，決定要塞的樣貌與用途。	下达命令让居民执行，决定要塞的样貌和用途。		FUN_141045060 L2408779-2409022 開新遊戲選模式的說明（FUN_1408e7310 依 49 格切行，整段查不到時逐句）
+You can play a sequence of fortresses and adventurers in the same world.	你可以在同一個世界裡接連遊玩多座要塞與多位冒險者。	你可以在同一个世界里接连游玩多座要塞和多位冒险者。		FUN_141045060 L2408779-2409022 開新遊戲選模式的說明（FUN_1408e7310 依 49 格切行，整段查不到時逐句）
+Migrants from retired and abandoned fortresses may come to visit, along with any surviving adventurers.	退休與廢棄要塞的移民可能會前來拜訪，存活的冒險者也會來。	退休和废弃要塞的移民可能会前来拜访，幸存的冒险者也会来。		FUN_141045060 L2408779-2409022 開新遊戲選模式的說明（FUN_1408e7310 依 49 格切行，整段查不到時逐句）
+Directly control a single individual or party.	直接操控單一角色或一支隊伍。	直接操控单个角色或一支队伍。		FUN_141045060 L2408779-2409022 開新遊戲選模式的說明（FUN_1408e7310 依 49 格切行，整段查不到時逐句）
+Follow destiny or strike out on your own.	追隨命運，或自行闖蕩。	追随命运，或自行闯荡。		FUN_141045060 L2408779-2409022 開新遊戲選模式的說明（FUN_1408e7310 依 49 格切行，整段查不到時逐句）
+Explore, quest, fight, and perform.	探索、冒險、戰鬥、表演。	探索、冒险、战斗、表演。		FUN_141045060 L2408779-2409022 開新遊戲選模式的說明（FUN_1408e7310 依 49 格切行，整段查不到時逐句）
+Visit your own retired and ruined settlements.	造訪你自己退休或已成廢墟的聚落。	造访你自己退休或已成废墟的聚落。		FUN_141045060 L2408779-2409022 開新遊戲選模式的說明（FUN_1408e7310 依 49 格切行，整段查不到時逐句）
+Serve a deity or become a creature of the night.	侍奉神祇，或化身為暗夜生物。	侍奉神祇，或化身为暗夜生物。		FUN_141045060 L2408779-2409022 開新遊戲選模式的說明（FUN_1408e7310 依 49 格切行，整段查不到時逐句）
+Uncover locations and artifacts for the benefit of your future fortresses.	發掘地點與神器，造福你未來的要塞。	发掘地点和神器，造福你未来的要塞。		FUN_141045060 L2408779-2409022 開新遊戲選模式的說明（FUN_1408e7310 依 49 格切行，整段查不到時逐句）；術語例外：location
+Explore and investigate the history of the world as it stands.	探索並考察這個世界至今的歷史。	探索并考察这个世界至今的历史。		FUN_141045060 L2408779-2409022 開新遊戲選模式的說明（FUN_1408e7310 依 49 格切行，整段查不到時逐句）
+Events in other modes are incorporated here.	其他模式中發生的事件都會收錄在這裡。	其他模式中发生的事件都会收录在这里。		FUN_141045060 L2408779-2409022 開新遊戲選模式的說明（FUN_1408e7310 依 49 格切行，整段查不到時逐句）；術語例外：mod
+Move the cursor to view and press 	移動游標檢視，按 	移动光标查看，按 		FUN_140881570 L1218830-1218844 觀察模式提示，分三段畫：本段＋按鍵名（照英文）＋ to interact.；游標是台灣用字（OpenCC 的「遊標」不對）
+ to interact.	 即可互動。	 即可互动。		FUN_140881570 L1218830-1218844 觀察模式提示，分三段畫：本段＋按鍵名（照英文）＋ to interact.
+Sprint	衝刺	冲刺		FUN_1408733b0 後的移動速度選單：步態名（raws c_variation_default.txt 的 GAIT 名稱，fn_addst 單獨畫）
+Jog	跑	跑		FUN_1408733b0 後的移動速度選單：步態名（raws c_variation_default.txt 的 GAIT 名稱，fn_addst 單獨畫）；原文 3 格，只放得下一個字
+Stroll	漫步	漫步		FUN_1408733b0 後的移動速度選單：步態名（raws c_variation_default.txt 的 GAIT 名稱，fn_addst 單獨畫）
+Gallop	疾馳	疾驰		FUN_1408733b0 後的移動速度選單：步態名（raws c_variation_default.txt 的 GAIT 名稱，fn_addst 單獨畫）
+Canter	慢馳	慢驰		FUN_1408733b0 後的移動速度選單：步態名（raws c_variation_default.txt 的 GAIT 名稱，fn_addst 單獨畫）
+Trot	快步	快步		FUN_1408733b0 後的移動速度選單：步態名（raws c_variation_default.txt 的 GAIT 名稱，fn_addst 單獨畫）
+Fastest Walk	最快行走	最快行走		FUN_1408733b0 後的移動速度選單：步態名（raws c_variation_default.txt 的 GAIT 名稱，fn_addst 單獨畫）；同 Fast Walk 快速行走
+Faster Walk	更快行走	更快行走		FUN_1408733b0 後的移動速度選單：步態名（raws c_variation_default.txt 的 GAIT 名稱，fn_addst 單獨畫）；同 Fast Walk 快速行走
+Slowest Walk	最慢行走	最慢行走		FUN_1408733b0 後的移動速度選單：步態名（raws c_variation_default.txt 的 GAIT 名稱，fn_addst 單獨畫）；同 Fast Walk 快速行走
+Scramble	急爬	急爬		FUN_1408733b0 後的移動速度選單：步態名（raws c_variation_default.txt 的 GAIT 名稱，fn_addst 單獨畫）
+Faster Climb	更快攀爬	更快攀爬		FUN_1408733b0 後的移動速度選單：步態名（raws c_variation_default.txt 的 GAIT 名稱，fn_addst 單獨畫）
+Faster Crawl	更快爬行	更快爬行		FUN_1408733b0 後的移動速度選單：步態名（raws c_variation_default.txt 的 GAIT 名稱，fn_addst 單獨畫）
+Maximum Swim Speed	全速游泳	全速游泳		FUN_1408733b0 後的移動速度選單：步態名（raws c_variation_default.txt 的 GAIT 名稱，fn_addst 單獨畫）
+Faster Swim	更快游泳	更快游泳		FUN_1408733b0 後的移動速度選單：步態名（raws c_variation_default.txt 的 GAIT 名稱，fn_addst 單獨畫）
+Creeping Swim	潛泳	潜泳		FUN_1408733b0 後的移動速度選單：步態名（raws c_variation_default.txt 的 GAIT 名稱，fn_addst 單獨畫）；原本被 Creeping {%1} 句型拼成「蔓延的游泳」
+Maximum Flight Speed	全速飛行	全速飞行		FUN_1408733b0 後的移動速度選單：步態名（raws c_variation_default.txt 的 GAIT 名稱，fn_addst 單獨畫）
+Faster Flight	更快飛行	更快飞行		FUN_1408733b0 後的移動速度選單：步態名（raws c_variation_default.txt 的 GAIT 名稱，fn_addst 單獨畫）
+Fast Flight	快速飛行	快速飞行		FUN_1408733b0 後的移動速度選單：步態名（raws c_variation_default.txt 的 GAIT 名稱，fn_addst 單獨畫）
+Slow Flight	緩慢飛行	缓慢飞行		FUN_1408733b0 後的移動速度選單：步態名（raws c_variation_default.txt 的 GAIT 名稱，fn_addst 單獨畫）
+Hover	懸停	悬停		FUN_1408733b0 後的移動速度選單：步態名（raws c_variation_default.txt 的 GAIT 名稱，fn_addst 單獨畫）

@@ -1,6 +1,6 @@
 //! 自動換行的提示文字（工具列按鈕的提示框、訪客說明、人物頁的近期想法等）。
 //!
-//! 遊戲用 wrap_text 把一句英文依寬度切成好幾行（vector<string*>），再一行一行畫，整句比對只看得到片段。
+//! 遊戲用 wrap_text（內部是 wrap_lines，也有直接呼叫它的）把一句英文依寬度切成好幾行（vector<string*>），再一行一行畫，整句比對只看得到片段。
 //! 這裡在切好之後整段查字典（查不到就逐句查，見 Dict::translate_sentences）：有譯文就依中文規則重新換行，
 //! 第 k 行中文交給第 k 行英文（載體）畫，多出來的英文行不畫；中文行比英文多時掛在最後一行下面。
 //! 沒有譯文的行登記成「照畫英文」，不拿片段查字典。和段落一樣只在畫字時換（見 mtb.rs），遊戲資料不改。
@@ -36,7 +36,7 @@ unsafe fn read<T: Copy>(addr: usize) -> T {
 }
 
 /// MSVC std::string 的內容（16 bytes 內建緩衝區或長字串指標、長度、容量）
-unsafe fn str_bytes<'a>(s: usize) -> &'a [u8] {
+pub unsafe fn str_bytes<'a>(s: usize) -> &'a [u8] {
     unsafe {
         let (size, cap): (usize, usize) = (read(s + 16), read(s + 24));
         let data = if cap > 15 { read::<*const u8>(s) } else { s as *const u8 };
@@ -57,6 +57,22 @@ pub unsafe fn vec_items<'a>(v: usize) -> &'a [usize] {
 
 pub unsafe fn vec_len(v: usize) -> usize {
     unsafe { vec_items(v).len() }
+}
+
+/// 遊戲自己切好的行接回一句（開局畫面的外觀、性格段落，見 hooks.rs）：換行時遊戲把行首空白跳過，
+/// 句間的兩個空白在換行處可能只剩一個；句末標點後只剩一個空白、下一行大寫開頭時補回一個（逐句查要靠它切句）。
+pub unsafe fn join(lines: &[usize]) -> Vec<u8> {
+    let mut text: Vec<u8> = Vec::new();
+    for &s in lines {
+        let line = unsafe { str_bytes(s) };
+        if let [.., end, b' '] = text[..] {
+            if b".!?".contains(&end) && line.first().is_some_and(u8::is_ascii_uppercase) {
+                text.push(b' ');
+            }
+        }
+        text.extend_from_slice(line);
+    }
+    text
 }
 
 /// 一句切成 n 行時每行的計畫；沒有譯文或缺字圖時回傳 None。
@@ -195,5 +211,11 @@ mod tests {
         // 位址還在、內容變了（行字串釋放後給別的字串用）：計畫不算數
         en.0[0].0[2] = 4;
         assert_eq!(kinds(&addrs[..1]), ["none"]);
+    }
+
+    #[test]
+    fn joined_lines_restore_sentence_spacing_lost_at_breaks() {
+        let en = Strings::new(&["His beard is combed. ", "His hair is ", "auburn.  ", "He is old."]);
+        assert_eq!(unsafe { join(&en.addrs()) }, b"His beard is combed.  His hair is auburn.  He is old.", "句末只剩一個空白才補，句中照接");
     }
 }

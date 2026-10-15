@@ -1,0 +1,537 @@
+en	zh-Hant	zh-Hans	align	note
+Fail the struggle against great agony {%1}	{1+時}抵擋不住強烈的痛苦	{1+时}抵挡不住强烈的痛苦		FUN_1406b1c10 L927873 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+Fail the struggle against great alarm {%1}	{1+時}抵擋不住強烈的驚慌	{1+时}抵挡不住强烈的惊慌		FUN_1406b1c10 L927920 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+Fail the struggle against existential crisis {%1}	{1+時}抵擋不住存在危機	{1+时}抵挡不住存在危机		FUN_1406b1c10 L927948 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Fail the struggle against great anguish {%1}	{1+時}抵擋不住強烈的揪心之痛	{1+时}抵挡不住强烈的揪心之痛		FUN_1406b1c10 L927970 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+Fail the struggle against great despair {%1}	{1+時}抵擋不住強烈的絕望	{1+时}抵挡不住强烈的绝望		FUN_1406b1c10 L927983 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+Fail the struggle against great dismay {%1}	{1+時}抵擋不住強烈的驚惶	{1+时}抵挡不住强烈的惊惶		FUN_1406b1c10 L927996 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+Fail the struggle against great distress {%1}	{1+時}抵擋不住強烈的苦惱	{1+时}抵挡不住强烈的苦恼		FUN_1406b1c10 L928009 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+Fail the struggle against great fear {%1}	{1+時}抵擋不住強烈的恐懼	{1+时}抵挡不住强烈的恐惧		FUN_1406b1c10 L928055 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+Fail the struggle against great fright {%1}	{1+時}抵擋不住強烈的驚恐	{1+时}抵挡不住强烈的惊恐		FUN_1406b1c10 L928083 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+Fail the struggle against great grief {%1}	{1+時}抵擋不住強烈的悲痛	{1+时}抵挡不住强烈的悲痛		FUN_1406b1c10 L928130 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+Fail the struggle against great horror {%1}	{1+時}抵擋不住強烈的驚駭	{1+时}抵挡不住强烈的惊骇		FUN_1406b1c10 L928193 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+Fail the struggle against great misery {%1}	{1+時}抵擋不住強烈的悲慘感	{1+时}抵挡不住强烈的悲惨感		FUN_1406b1c10 L928221 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+Fail the struggle against great mortification {%1}	{1+時}抵擋不住強烈的羞愧難當之感	{1+时}抵挡不住强烈的羞愧难当之感		FUN_1406b1c10 L928234 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+Fail the struggle against great rage {%1}	{1+時}抵擋不住強烈的暴怒	{1+时}抵挡不住强烈的暴怒		FUN_1406b1c10 L928280、FUN_1406b31a0 L928987 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+Fail the struggle against great sadness {%1}	{1+時}抵擋不住強烈的悲傷	{1+时}抵挡不住强烈的悲伤		FUN_1406b1c10 L928344 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+Fail the internal struggle, completely shaken {%1}	{1+時}內心掙扎失敗，徹底心驚膽戰	{1+时}内心挣扎失败，彻底心惊胆战		FUN_1406b1c10 L928372 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Fail the struggle against great shock {%1}	{1+時}抵擋不住強烈的震驚	{1+时}抵挡不住强烈的震惊		FUN_1406b1c10 L928419 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+Fail the struggle against great terror {%1}	{1+時}抵擋不住極度的恐懼	{1+时}抵挡不住极度的恐惧		FUN_1406b1c10 L928498 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great acceptance {%1}	{1+時}表達強烈的坦然之情	{1+时}表达强烈的坦然之情		FUN_1406b31a0 L928579 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great adoration {%1}	{1+時}表達強烈的愛慕	{1+时}表达强烈的爱慕		FUN_1406b31a0 L928582 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great affection {%1}	{1+時}表達強烈的溫情	{1+时}表达强烈的温情		FUN_1406b31a0 L928585 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great agitation {%1}	{1+時}表達強烈的焦躁	{1+时}表达强烈的焦躁		FUN_1406b31a0 L928588 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great aggravation {%1}	{1+時}表達強烈的氣惱	{1+时}表达强烈的气恼		FUN_1406b31a0 L928591 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+Verbally struggle against great agony {%1}	{1+時}用言語對抗強烈的痛苦	{1+时}用言语对抗强烈的痛苦		FUN_1406b31a0 L928594 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+Verbally struggle against great alarm {%1}	{1+時}用言語對抗強烈的驚慌	{1+时}用言语对抗强烈的惊慌		FUN_1406b31a0 L928604 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great alienation {%1}	{1+時}表達強烈的疏離感	{1+时}表达强烈的疏离感		FUN_1406b31a0 L928614 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great amazement {%1}	{1+時}表達強烈的驚奇	{1+时}表达强烈的惊奇		FUN_1406b31a0 L928617 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great ambivalence {%1}	{1+時}表達強烈的矛盾心情	{1+时}表达强烈的矛盾心情		FUN_1406b31a0 L928620 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great amusement {%1}	{1+時}表達強烈的笑意	{1+时}表达强烈的笑意		FUN_1406b31a0 L928623 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great anger {%1}	{1+時}表達強烈的憤怒	{1+时}表达强烈的愤怒		FUN_1406b31a0 L928626 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+Verbally struggle against looming existential crisis {%1}	{1+時}用言語對抗逼近的存在危機	{1+时}用言语对抗逼近的存在危机		FUN_1406b31a0 L928629 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Verbally struggle against great anguish {%1}	{1+時}用言語對抗強烈的揪心之痛	{1+时}用言语对抗强烈的揪心之痛		FUN_1406b31a0 L928639 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great annoyance {%1}	{1+時}表達強烈的心煩	{1+时}表达强烈的心烦		FUN_1406b31a0 L928649 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great anxiety {%1}	{1+時}表達強烈的焦慮	{1+时}表达强烈的焦虑		FUN_1406b31a0 L928654 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great apathy {%1}	{1+時}表達強烈的冷漠	{1+时}表达强烈的冷漠		FUN_1406b31a0 L928657 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great arousal {%1}	{1+時}表達強烈的動情	{1+时}表达强烈的动情		FUN_1406b31a0 L928660 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great astonishment {%1}	{1+時}表達強烈的驚訝	{1+时}表达强烈的惊讶		FUN_1406b31a0 L928663 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great aversion {%1}	{1+時}表達強烈的反感	{1+时}表达强烈的反感		FUN_1406b31a0 L928666 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great awe {%1}	{1+時}表達強烈的敬畏	{1+时}表达强烈的敬畏		FUN_1406b31a0 L928669 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great bitterness {%1}	{1+時}表達強烈的苦澀	{1+时}表达强烈的苦涩		FUN_1406b31a0 L928672 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great bliss {%1}	{1+時}表達強烈的幸福感	{1+时}表达强烈的幸福感		FUN_1406b31a0 L928675 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great boredom {%1}	{1+時}表達強烈的無聊	{1+时}表达强烈的无聊		FUN_1406b31a0 L928678 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great caring {%1}	{1+時}表達強烈的憐惜	{1+时}表达强烈的怜惜		FUN_1406b31a0 L928681 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great confusion {%1}	{1+時}表達強烈的困惑	{1+时}表达强烈的困惑		FUN_1406b31a0 L928684 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great contempt {%1}	{1+時}表達強烈的輕蔑	{1+时}表达强烈的轻蔑		FUN_1406b31a0 L928687 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great contentment {%1}	{1+時}表達強烈的滿足	{1+时}表达强烈的满足		FUN_1406b31a0 L928690 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+Verbally struggle, greatly defeated {%1}	{1+時}用言語掙扎，感到徹底被擊垮	{1+时}用言语挣扎，感到彻底被击垮		FUN_1406b31a0 L928693 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great dejection {%1}	{1+時}表達強烈的沮喪	{1+时}表达强烈的沮丧		FUN_1406b31a0 L928703 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great delight {%1}	{1+時}表達強烈的欣喜	{1+时}表达强烈的欣喜		FUN_1406b31a0 L928706 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+Verbally struggle against great despair {%1}	{1+時}用言語對抗強烈的絕望	{1+时}用言语对抗强烈的绝望		FUN_1406b31a0 L928709 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great disappointment {%1}	{1+時}表達強烈的失望	{1+时}表达强烈的失望		FUN_1406b31a0 L928719 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great disgust {%1}	{1+時}表達強烈的厭惡	{1+时}表达强烈的厌恶		FUN_1406b31a0 L928722 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great disillusionment {%1}	{1+時}表達強烈的幻滅感	{1+时}表达强烈的幻灭感		FUN_1406b31a0 L928725 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great dislike {%1}	{1+時}表達強烈的厭煩	{1+时}表达强烈的厌烦		FUN_1406b31a0 L928728 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+Verbally struggle against great dismay {%1}	{1+時}用言語對抗強烈的驚惶	{1+时}用言语对抗强烈的惊惶		FUN_1406b31a0 L928731 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great displeasure {%1}	{1+時}表達強烈的不悅	{1+时}表达强烈的不悦		FUN_1406b31a0 L928741 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+Verbally struggle against great distress {%1}	{1+時}用言語對抗強烈的苦惱	{1+时}用言语对抗强烈的苦恼		FUN_1406b31a0 L928744 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+Verbally struggle against great doubt {%1}	{1+時}用言語對抗強烈的懷疑	{1+时}用言语对抗强烈的怀疑		FUN_1406b31a0 L928754 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great eagerness {%1}	{1+時}表達強烈的渴望	{1+时}表达强烈的渴望		FUN_1406b31a0 L928764 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great elation {%1}	{1+時}表達強烈的高興之情	{1+时}表达强烈的高兴之情		FUN_1406b31a0 L928767 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great embarrassment {%1}	{1+時}表達強烈的尷尬	{1+时}表达强烈的尴尬		FUN_1406b31a0 L928770 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great empathy {%1}	{1+時}表達強烈的共鳴	{1+时}表达强烈的共鸣		FUN_1406b31a0 L928773 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great emptiness {%1}	{1+時}表達強烈的空虛感	{1+时}表达强烈的空虚感		FUN_1406b31a0 L928776 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great enjoyment {%1}	{1+時}表達強烈的樂趣	{1+时}表达强烈的乐趣		FUN_1406b31a0 L928779 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great enthusiasm {%1}	{1+時}表達強烈的熱切之情	{1+时}表达强烈的热切之情		FUN_1406b31a0 L928782 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great euphoria {%1}	{1+時}表達強烈的狂喜	{1+时}表达强烈的狂喜		FUN_1406b31a0 L928785 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great exasperation {%1}	{1+時}表達強烈的惱怒	{1+时}表达强烈的恼怒		FUN_1406b31a0 L928788 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great excitement {%1}	{1+時}表達強烈的興奮	{1+时}表达强烈的兴奋		FUN_1406b31a0 L928791 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great exhilaration {%1}	{1+時}表達強烈的振奮	{1+时}表达强烈的振奋		FUN_1406b31a0 L928794 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings, greatly expectant {%1}	{1+時}表示自己非常期待	{1+时}表示自己非常期待		FUN_1406b31a0 L928797 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+Verbally struggle against great fear {%1}	{1+時}用言語對抗強烈的恐懼	{1+时}用言语对抗强烈的恐惧		FUN_1406b31a0 L928800 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great ferocity {%1}	{1+時}表達強烈的兇性	{1+时}表达强烈的凶性		FUN_1406b31a0 L928810 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great fondness {%1}	{1+時}表達強烈的喜愛	{1+时}表达强烈的喜爱		FUN_1406b31a0 L928813 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great freedom {%1}	{1+時}表達強烈的自由感	{1+时}表达强烈的自由感		FUN_1406b31a0 L928816 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+Verbally struggle against great fright {%1}	{1+時}用言語對抗強烈的驚恐	{1+时}用言语对抗强烈的惊恐		FUN_1406b31a0 L928819 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great frustration {%1}	{1+時}表達強烈的挫折感	{1+时}表达强烈的挫败感		FUN_1406b31a0 L928829 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great gaiety {%1}	{1+時}表達強烈的歡快	{1+时}表达强烈的欢快		FUN_1406b31a0 L928832 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great flee {%1}	{1+時}表達強烈的雀躍	{1+时}表达强烈的雀跃		FUN_1406b31a0 L928835 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great gloom {%1}	{1+時}表達強烈的陰鬱	{1+时}表达强烈的阴郁		FUN_1406b31a0 L928838 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great glumness {%1}	{1+時}表達強烈的鬱悶	{1+时}表达强烈的郁闷		FUN_1406b31a0 L928841 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great gratitude {%1}	{1+時}表達強烈的感激	{1+时}表达强烈的感激		FUN_1406b31a0 L928844 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+Verbally struggle against great grief {%1}	{1+時}用言語對抗強烈的悲痛	{1+时}用言语对抗强烈的悲痛		FUN_1406b31a0 L928847 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great grim satisfaction {%1}	{1+時}表達強烈的冷酷快意	{1+时}表达强烈的冷酷快意		FUN_1406b31a0 L928857 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great grouchiness {%1}	{1+時}表達強烈的煩躁	{1+时}表达强烈的烦躁		FUN_1406b31a0 L928860 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great grumpiness {%1}	{1+時}表達強烈的不爽	{1+时}表达强烈的不爽		FUN_1406b31a0 L928863 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great guilt {%1}	{1+時}表達強烈的內疚	{1+时}表达强烈的内疚		FUN_1406b31a0 L928866 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great happiness {%1}	{1+時}表達強烈的快樂	{1+时}表达强烈的快乐		FUN_1406b31a0 L928869 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great hatred {%1}	{1+時}表達強烈的憎恨	{1+时}表达强烈的憎恨		FUN_1406b31a0 L928872 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great hope {%1}	{1+時}表達強烈的希望	{1+时}表达强烈的希望		FUN_1406b31a0 L928875 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great hopelessness {%1}	{1+時}表達強烈的無望感	{1+时}表达强烈的无望感		FUN_1406b31a0 L928878 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+Verbally struggle against great horror {%1}	{1+時}用言語對抗強烈的驚駭	{1+时}用言语对抗强烈的惊骇		FUN_1406b31a0 L928881 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great humiliation {%1}	{1+時}表達強烈的屈辱	{1+时}表达强烈的屈辱		FUN_1406b31a0 L928891 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great insult {%1}	{1+時}表達強烈的受辱感	{1+时}表达强烈的受辱感		FUN_1406b31a0 L928894 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great interest {%1}	{1+時}表達強烈的興趣	{1+时}表达强烈的兴趣		FUN_1406b31a0 L928897 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great irritation {%1}	{1+時}表達強烈的惱火	{1+时}表达强烈的恼火		FUN_1406b31a0 L928900 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great isolation {%1}	{1+時}表達強烈的孤立感	{1+时}表达强烈的孤立感		FUN_1406b31a0 L928903 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great jolliness {%1}	{1+時}表達強烈的快活	{1+时}表达强烈的快活		FUN_1406b31a0 L928906 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great joviality {%1}	{1+時}表達強烈的開朗心情	{1+时}表达强烈的开朗心情		FUN_1406b31a0 L928909 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great joy {%1}	{1+時}表達強烈的喜悅	{1+时}表达强烈的喜悦		FUN_1406b31a0 L928912 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great jubilation {%1}	{1+時}表達強烈的歡欣	{1+时}表达强烈的欢欣		FUN_1406b31a0 L928915 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great loathing {%1}	{1+時}表達強烈的憎惡	{1+时}表达强烈的憎恶		FUN_1406b31a0 L928918 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great loneliness {%1}	{1+時}表達強烈的孤單感	{1+时}表达强烈的孤独感		FUN_1406b31a0 L928921 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great love {%1}	{1+時}表達強烈的愛意	{1+时}表达强烈的爱意		FUN_1406b31a0 L928924 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great lust {%1}	{1+時}表達強烈的情慾	{1+时}表达强烈的情欲		FUN_1406b31a0 L928927 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+Verbally struggle against great misery {%1}	{1+時}用言語對抗強烈的悲慘感	{1+时}用言语对抗强烈的悲惨感		FUN_1406b31a0 L928930 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+Verbally struggle against great mortification {%1}	{1+時}用言語對抗強烈的羞愧難當之感	{1+时}用言语对抗强烈的羞愧难当之感		FUN_1406b31a0 L928940 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great nervousness {%1}	{1+時}表達強烈的緊張	{1+时}表达强烈的紧张		FUN_1406b31a0 L928950 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great nostalgia {%1}	{1+時}表達強烈的懷舊之情	{1+时}表达强烈的怀旧之情		FUN_1406b31a0 L928953 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great optimism {%1}	{1+時}表達強烈的樂觀	{1+时}表达强烈的乐观		FUN_1406b31a0 L928956 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great outrage {%1}	{1+時}表達強烈的激憤	{1+时}表达强烈的激愤		FUN_1406b31a0 L928959 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great panic {%1}	{1+時}表達強烈的恐慌	{1+时}表达强烈的恐慌		FUN_1406b31a0 L928962 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great patience {%1}	{1+時}表達強烈的耐心	{1+时}表达强烈的耐心		FUN_1406b31a0 L928965 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great passion {%1}	{1+時}表達強烈的熱情	{1+时}表达强烈的热情		FUN_1406b31a0 L928968 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+Verbally struggle against great pessimism {%1}	{1+時}用言語對抗強烈的悲觀	{1+时}用言语对抗强烈的悲观		FUN_1406b31a0 L928971 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great pleasure {%1}	{1+時}表達強烈的愉悅	{1+时}表达强烈的愉悦		FUN_1406b31a0 L928981 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great pride {%1}	{1+時}表達強烈的自豪	{1+时}表达强烈的自豪		FUN_1406b31a0 L928984 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings, greatly enraptured {%1}	{1+時}表示自己深深陶醉	{1+时}表示自己深深陶醉		FUN_1406b31a0 L928997 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great rejection {%1}	{1+時}表達強烈的被拒絕感	{1+时}表达强烈的被拒绝感		FUN_1406b31a0 L929000 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great relief {%1}	{1+時}表達強烈的如釋重負之感	{1+时}表达强烈的如释重负之感		FUN_1406b31a0 L929003 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great regret {%1}	{1+時}表達強烈的後悔	{1+时}表达强烈的后悔		FUN_1406b31a0 L929006 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great remorse {%1}	{1+時}表達強烈的悔恨	{1+时}表达强烈的悔恨		FUN_1406b31a0 L929009 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great repentance {%1}	{1+時}表達強烈的懊悔	{1+时}表达强烈的懊悔		FUN_1406b31a0 L929012 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great resentment {%1}	{1+時}表達強烈的怨恨	{1+时}表达强烈的怨恨		FUN_1406b31a0 L929015 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great righteous indignation {%1}	{1+時}表達強烈的義憤	{1+时}表达强烈的义愤		FUN_1406b31a0 L929018 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+Verbally struggle against great sadness {%1}	{1+時}用言語對抗強烈的悲傷	{1+时}用言语对抗强烈的悲伤		FUN_1406b31a0 L929021 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great satisfaction {%1}	{1+時}表達強烈的滿意	{1+时}表达强烈的满意		FUN_1406b31a0 L929031 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great self-pity {%1}	{1+時}表達強烈的自憐	{1+时}表达强烈的自怜		FUN_1406b31a0 L929034 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great servility {%1}	{1+時}表達強烈的卑微感	{1+时}表达强烈的卑微感		FUN_1406b31a0 L929037 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+Verbally struggle, greatly shaken {%1}	{1+時}用言語掙扎，感到極度心驚	{1+时}用言语挣扎，感到极度心惊		FUN_1406b31a0 L929040 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great shame {%1}	{1+時}表達強烈的羞愧	{1+时}表达强烈的羞愧		FUN_1406b31a0 L929050 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+Verbally struggle against great shock {%1}	{1+時}用言語對抗強烈的震驚	{1+时}用言语对抗强烈的震惊		FUN_1406b31a0 L929053 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great suspicion {%1}	{1+時}表達強烈的疑心	{1+时}表达强烈的疑心		FUN_1406b31a0 L929063 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great sympathy {%1}	{1+時}表達強烈的同情	{1+时}表达强烈的同情		FUN_1406b31a0 L929066 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great tenderness {%1}	{1+時}表達強烈的柔情	{1+时}表达强烈的柔情		FUN_1406b31a0 L929069 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+Verbally struggle against great terror {%1}	{1+時}用言語對抗極度的恐懼	{1+时}用言语对抗极度的恐惧		FUN_1406b31a0 L929072 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings, greatly thrilled {%1}	{1+時}表示自己非常激動	{1+时}表示自己非常激动		FUN_1406b31a0 L929082 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great triumph {%1}	{1+時}表達強烈的勝利喜悅	{1+时}表达强烈的胜利喜悦		FUN_1406b31a0 L929085 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great uneasiness {%1}	{1+時}表達強烈的不安	{1+时}表达强烈的不安		FUN_1406b31a0 L929088 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great unhappiness {%1}	{1+時}表達強烈的不快樂	{1+时}表达强烈的不开心		FUN_1406b31a0 L929091 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great vengefulness {%1}	{1+時}表達強烈的復仇之心	{1+时}表达强烈的复仇之心		FUN_1406b31a0 L929094 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great wonder {%1}	{1+時}表達強烈的驚嘆	{1+时}表达强烈的惊叹		FUN_1406b31a0 L929097 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great worry {%1}	{1+時}表達強烈的擔心	{1+时}表达强烈的担心		FUN_1406b31a0 L929100 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great wrath {%1}	{1+時}表達強烈的狂怒	{1+时}表达强烈的狂怒		FUN_1406b31a0 L929103 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great zeal {%1}	{1+時}表達強烈的狂熱	{1+时}表达强烈的狂热		FUN_1406b31a0 L929106 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great restlessness {%1}	{1+時}表達強烈的坐立不安	{1+时}表达强烈的坐立不安		FUN_1406b31a0 L929109 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of great admiration {%1}	{1+時}表達強烈的欽佩	{1+时}表达强烈的钦佩		FUN_1406b31a0 L929112 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前；術語例外：Great
+State feelings of acceptance {%1}	{1+時}表達坦然之情	{1+时}表达坦然之情		FUN_1406b4290 L929164 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of adoration {%1}	{1+時}表達愛慕	{1+时}表达爱慕		FUN_1406b4290 L929167 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of affection {%1}	{1+時}表達溫情	{1+时}表达温情		FUN_1406b4290 L929170 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of agitation {%1}	{1+時}表達焦躁	{1+时}表达焦躁		FUN_1406b4290 L929173 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of aggravation {%1}	{1+時}表達氣惱	{1+时}表达气恼		FUN_1406b4290 L929176 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Verbally struggle against agony {%1}	{1+時}用言語對抗痛苦	{1+时}用言语对抗痛苦		FUN_1406b4290 L929179 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Verbally struggle against alarm {%1}	{1+時}用言語對抗驚慌	{1+时}用言语对抗惊慌		FUN_1406b4290 L929189 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of alienation {%1}	{1+時}表達疏離感	{1+时}表达疏离感		FUN_1406b4290 L929199 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of amazement {%1}	{1+時}表達驚奇	{1+时}表达惊奇		FUN_1406b4290 L929202 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of ambivalence {%1}	{1+時}表達矛盾心情	{1+时}表达矛盾心情		FUN_1406b4290 L929205 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of amusement {%1}	{1+時}表達笑意	{1+时}表达笑意		FUN_1406b4290 L929208 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of anger {%1}	{1+時}表達憤怒	{1+时}表达愤怒		FUN_1406b4290 L929211 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Verbally struggle against existential crisis {%1}	{1+時}用言語對抗存在危機	{1+时}用言语对抗存在危机		FUN_1406b4290 L929214 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Verbally struggle against anguish {%1}	{1+時}用言語對抗揪心之痛	{1+时}用言语对抗揪心之痛		FUN_1406b4290 L929224 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of annoyance {%1}	{1+時}表達心煩	{1+时}表达心烦		FUN_1406b4290 L929234 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of anxiety {%1}	{1+時}表達焦慮	{1+时}表达焦虑		FUN_1406b4290 L929239 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of apathy {%1}	{1+時}表達冷漠	{1+时}表达冷漠		FUN_1406b4290 L929242 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of arousal {%1}	{1+時}表達動情	{1+时}表达动情		FUN_1406b4290 L929245 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of astonishment {%1}	{1+時}表達驚訝	{1+时}表达惊讶		FUN_1406b4290 L929248 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of aversion {%1}	{1+時}表達反感	{1+时}表达反感		FUN_1406b4290 L929251 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of awe {%1}	{1+時}表達敬畏	{1+时}表达敬畏		FUN_1406b4290 L929254 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of bitterness {%1}	{1+時}表達苦澀	{1+时}表达苦涩		FUN_1406b4290 L929257 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of bliss {%1}	{1+時}表達幸福感	{1+时}表达幸福感		FUN_1406b4290 L929260 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of boredom {%1}	{1+時}表達無聊	{1+时}表达无聊		FUN_1406b4290 L929263 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of caring {%1}	{1+時}表達憐惜	{1+时}表达怜惜		FUN_1406b4290 L929266 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of confusion {%1}	{1+時}表達困惑	{1+时}表达困惑		FUN_1406b4290 L929269 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of contempt {%1}	{1+時}表達輕蔑	{1+时}表达轻蔑		FUN_1406b4290 L929272 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of contentment {%1}	{1+時}表達滿足	{1+时}表达满足		FUN_1406b4290 L929275 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Verbally struggle, defeated {%1}	{1+時}用言語掙扎，感到被擊垮	{1+时}用言语挣扎，感到被击垮		FUN_1406b4290 L929278 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of dejection {%1}	{1+時}表達沮喪	{1+时}表达沮丧		FUN_1406b4290 L929288 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of delight {%1}	{1+時}表達欣喜	{1+时}表达欣喜		FUN_1406b4290 L929291 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Verbally struggle against despair {%1}	{1+時}用言語對抗絕望	{1+时}用言语对抗绝望		FUN_1406b4290 L929294 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of disappointment {%1}	{1+時}表達失望	{1+时}表达失望		FUN_1406b4290 L929304 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of disgust {%1}	{1+時}表達厭惡	{1+时}表达厌恶		FUN_1406b4290 L929307 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of disillusionment {%1}	{1+時}表達幻滅感	{1+时}表达幻灭感		FUN_1406b4290 L929310 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of dislike {%1}	{1+時}表達厭煩	{1+时}表达厌烦		FUN_1406b4290 L929313 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Verbally struggle against dismay {%1}	{1+時}用言語對抗驚惶	{1+时}用言语对抗惊惶		FUN_1406b4290 L929316 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of displeasure {%1}	{1+時}表達不悅	{1+时}表达不悦		FUN_1406b4290 L929326 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Verbally struggle against distress {%1}	{1+時}用言語對抗苦惱	{1+时}用言语对抗苦恼		FUN_1406b4290 L929329 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Verbally struggle against doubt {%1}	{1+時}用言語對抗懷疑	{1+时}用言语对抗怀疑		FUN_1406b4290 L929339 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of eagerness {%1}	{1+時}表達渴望	{1+时}表达渴望		FUN_1406b4290 L929349 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of elation {%1}	{1+時}表達高興之情	{1+时}表达高兴之情		FUN_1406b4290 L929352 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of embarassment {%1}	{1+時}表達尷尬	{1+时}表达尴尬		FUN_1406b4290 L929355 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of empathy {%1}	{1+時}表達共鳴	{1+时}表达共鸣		FUN_1406b4290 L929358 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of emptiness {%1}	{1+時}表達空虛感	{1+时}表达空虚感		FUN_1406b4290 L929361 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of enjoyment {%1}	{1+時}表達樂趣	{1+时}表达乐趣		FUN_1406b4290 L929364 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of enthusiasm {%1}	{1+時}表達熱切之情	{1+时}表达热切之情		FUN_1406b4290 L929367 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of euphoria {%1}	{1+時}表達狂喜	{1+时}表达狂喜		FUN_1406b4290 L929370 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of exasperation {%1}	{1+時}表達惱怒	{1+时}表达恼怒		FUN_1406b4290 L929373 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of excitement {%1}	{1+時}表達興奮	{1+时}表达兴奋		FUN_1406b4290 L929376 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of exhilaration {%1}	{1+時}表達振奮	{1+时}表达振奋		FUN_1406b4290 L929379 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings, expectant {%1}	{1+時}表示自己很期待	{1+时}表示自己很期待		FUN_1406b4290 L929382 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Verbally struggle against fear {%1}	{1+時}用言語對抗恐懼	{1+时}用言语对抗恐惧		FUN_1406b4290 L929385 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of ferocity {%1}	{1+時}表達兇性	{1+时}表达凶性		FUN_1406b4290 L929395 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of fondness {%1}	{1+時}表達喜愛	{1+时}表达喜爱		FUN_1406b4290 L929398 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of freedom {%1}	{1+時}表達自由感	{1+时}表达自由感		FUN_1406b4290 L929401 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Verbally struggle against fright {%1}	{1+時}用言語對抗驚恐	{1+时}用言语对抗惊恐		FUN_1406b4290 L929404 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of frustration {%1}	{1+時}表達挫折感	{1+时}表达挫败感		FUN_1406b4290 L929414 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of gaiety {%1}	{1+時}表達歡快	{1+时}表达欢快		FUN_1406b4290 L929417 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of glee {%1}	{1+時}表達雀躍	{1+时}表达雀跃		FUN_1406b4290 L929420 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of gloom {%1}	{1+時}表達陰鬱	{1+时}表达阴郁		FUN_1406b4290 L929423 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of glumness {%1}	{1+時}表達鬱悶	{1+时}表达郁闷		FUN_1406b4290 L929426 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of gratitude {%1}	{1+時}表達感激	{1+时}表达感激		FUN_1406b4290 L929429 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Verbally struggle against grief {%1}	{1+時}用言語對抗悲痛	{1+时}用言语对抗悲痛		FUN_1406b4290 L929432 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of grim satisfaction {%1}	{1+時}表達冷酷的快意	{1+时}表达冷酷的快意		FUN_1406b4290 L929442 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of grouchiness {%1}	{1+時}表達煩躁	{1+时}表达烦躁		FUN_1406b4290 L929445 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of grumpiness {%1}	{1+時}表達不爽	{1+时}表达不爽		FUN_1406b4290 L929448 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of guilt {%1}	{1+時}表達內疚	{1+时}表达内疚		FUN_1406b4290 L929451 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of happiness {%1}	{1+時}表達快樂	{1+时}表达快乐		FUN_1406b4290 L929454 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of hatred {%1}	{1+時}表達憎恨	{1+时}表达憎恨		FUN_1406b4290 L929457 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of hope {%1}	{1+時}表達希望	{1+时}表达希望		FUN_1406b4290 L929460 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of hopelessness {%1}	{1+時}表達無望感	{1+时}表达无望感		FUN_1406b4290 L929463 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Verbally struggle against horror {%1}	{1+時}用言語對抗驚駭	{1+时}用言语对抗惊骇		FUN_1406b4290 L929466 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of humiliation {%1}	{1+時}表達屈辱	{1+时}表达屈辱		FUN_1406b4290 L929476 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of insult {%1}	{1+時}表達受辱感	{1+时}表达受辱感		FUN_1406b4290 L929479 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of interest {%1}	{1+時}表達興趣	{1+时}表达兴趣		FUN_1406b4290 L929482 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of irritation {%1}	{1+時}表達惱火	{1+时}表达恼火		FUN_1406b4290 L929485 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of isolation {%1}	{1+時}表達孤立感	{1+时}表达孤立感		FUN_1406b4290 L929488 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of jolliness {%1}	{1+時}表達快活	{1+时}表达快活		FUN_1406b4290 L929491 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of joviality {%1}	{1+時}表達開朗心情	{1+时}表达开朗心情		FUN_1406b4290 L929494 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of joy {%1}	{1+時}表達喜悅	{1+时}表达喜悦		FUN_1406b4290 L929497 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of jubilation {%1}	{1+時}表達歡欣	{1+时}表达欢欣		FUN_1406b4290 L929500 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of loathing {%1}	{1+時}表達憎惡	{1+时}表达憎恶		FUN_1406b4290 L929503 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of loneliness {%1}	{1+時}表達孤單感	{1+时}表达孤独感		FUN_1406b4290 L929506 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of love {%1}	{1+時}表達愛意	{1+时}表达爱意		FUN_1406b4290 L929509 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of lust {%1}	{1+時}表達情慾	{1+时}表达情欲		FUN_1406b4290 L929512 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Verbally struggle against misery {%1}	{1+時}用言語對抗悲慘感	{1+时}用言语对抗悲惨感		FUN_1406b4290 L929515 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Verbally struggle against mortification {%1}	{1+時}用言語對抗羞愧難當之感	{1+时}用言语对抗羞愧难当之感		FUN_1406b4290 L929525 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of nervousness {%1}	{1+時}表達緊張	{1+时}表达紧张		FUN_1406b4290 L929535 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of nostalgia {%1}	{1+時}表達懷舊之情	{1+时}表达怀旧之情		FUN_1406b4290 L929538 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of optimism {%1}	{1+時}表達樂觀	{1+时}表达乐观		FUN_1406b4290 L929541 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of outrage {%1}	{1+時}表達激憤	{1+时}表达激愤		FUN_1406b4290 L929544 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of panic {%1}	{1+時}表達恐慌	{1+时}表达恐慌		FUN_1406b4290 L929547 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of patience {%1}	{1+時}表達耐心	{1+时}表达耐心		FUN_1406b4290 L929550 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of passion {%1}	{1+時}表達熱情	{1+时}表达热情		FUN_1406b4290 L929553 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Verbally struggle against pessimism {%1}	{1+時}用言語對抗悲觀	{1+时}用言语对抗悲观		FUN_1406b4290 L929556 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of pleasure {%1}	{1+時}表達愉悅	{1+时}表达愉悦		FUN_1406b4290 L929566 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of pride {%1}	{1+時}表達自豪	{1+时}表达自豪		FUN_1406b4290 L929569 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Verbally struggle against rage {%1}	{1+時}用言語對抗暴怒	{1+时}用言语对抗暴怒		FUN_1406b4290 L929572 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings, enraptured {%1}	{1+時}表示自己很陶醉	{1+时}表示自己很陶醉		FUN_1406b4290 L929582 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of rejection {%1}	{1+時}表達被拒絕感	{1+时}表达被拒绝感		FUN_1406b4290 L929585 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of relief {%1}	{1+時}表達如釋重負之感	{1+时}表达如释重负之感		FUN_1406b4290 L929588 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of regret {%1}	{1+時}表達後悔	{1+时}表达后悔		FUN_1406b4290 L929591 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of remorse {%1}	{1+時}表達悔恨	{1+时}表达悔恨		FUN_1406b4290 L929594 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of repentance {%1}	{1+時}表達懊悔	{1+时}表达懊悔		FUN_1406b4290 L929597 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of resentment {%1}	{1+時}表達怨恨	{1+时}表达怨恨		FUN_1406b4290 L929600 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of righteous indignation {%1}	{1+時}表達義憤	{1+时}表达义愤		FUN_1406b4290 L929603 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Verbally struggle against sadness {%1}	{1+時}用言語對抗悲傷	{1+时}用言语对抗悲伤		FUN_1406b4290 L929606 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of satisfaction {%1}	{1+時}表達滿意	{1+时}表达满意		FUN_1406b4290 L929616 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of self-pity {%1}	{1+時}表達自憐	{1+时}表达自怜		FUN_1406b4290 L929619 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of servility {%1}	{1+時}表達卑微感	{1+时}表达卑微感		FUN_1406b4290 L929622 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Verbally struggle, shaken {%1}	{1+時}用言語掙扎，感到心驚	{1+时}用言语挣扎，感到心惊		FUN_1406b4290 L929625 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of shame {%1}	{1+時}表達羞愧	{1+时}表达羞愧		FUN_1406b4290 L929635 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Verbally struggle against shock {%1}	{1+時}用言語對抗震驚	{1+时}用言语对抗震惊		FUN_1406b4290 L929638 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of suspicion {%1}	{1+時}表達疑心	{1+时}表达疑心		FUN_1406b4290 L929648 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of sympathy {%1}	{1+時}表達同情	{1+时}表达同情		FUN_1406b4290 L929651 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of tenderness {%1}	{1+時}表達柔情	{1+时}表达柔情		FUN_1406b4290 L929654 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Verbally struggle against terror {%1}	{1+時}用言語對抗極度恐懼	{1+时}用言语对抗极度恐惧		FUN_1406b4290 L929657 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings, thrilled {%1}	{1+時}表示自己很激動	{1+时}表示自己很激动		FUN_1406b4290 L929667 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of triumph {%1}	{1+時}表達勝利的喜悅	{1+时}表达胜利的喜悦		FUN_1406b4290 L929670 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of uneasiness {%1}	{1+時}表達不安	{1+时}表达不安		FUN_1406b4290 L929673 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of unhappiness {%1}	{1+時}表達不快樂	{1+时}表达不开心		FUN_1406b4290 L929676 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of vengefulness {%1}	{1+時}表達復仇之心	{1+时}表达复仇之心		FUN_1406b4290 L929679 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of wonder {%1}	{1+時}表達驚嘆	{1+时}表达惊叹		FUN_1406b4290 L929682 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of worry {%1}	{1+時}表達擔心	{1+时}表达担心		FUN_1406b4290 L929685 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of wrath {%1}	{1+時}表達狂怒	{1+时}表达狂怒		FUN_1406b4290 L929688 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of zeal {%1}	{1+時}表達狂熱	{1+时}表达狂热		FUN_1406b4290 L929691 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of restlessness {%1}	{1+時}表達坐立不安	{1+时}表达坐立不安		FUN_1406b4290 L929694 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings of admiration {%1}	{1+時}表達欽佩	{1+时}表达钦佩		FUN_1406b4290 L929697 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of acceptance {%1}	{1+時}表達一絲坦然之情	{1+时}表达一丝坦然之情		FUN_1406b5380 L929749 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of adoration {%1}	{1+時}表達一絲愛慕	{1+时}表达一丝爱慕		FUN_1406b5380 L929752 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of affection {%1}	{1+時}表達一絲溫情	{1+时}表达一丝温情		FUN_1406b5380 L929755 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of agitation {%1}	{1+時}表達一絲焦躁	{1+时}表达一丝焦躁		FUN_1406b5380 L929758 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of aggravation {%1}	{1+時}表達一絲氣惱	{1+时}表达一丝气恼		FUN_1406b5380 L929761 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Dismiss minor feeling of agony {%1}	{1+時}拋開一絲痛苦	{1+时}抛开一丝痛苦		FUN_1406b5380 L929764 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Dismiss minor feeling of alarm {%1}	{1+時}拋開一絲驚慌	{1+时}抛开一丝惊慌		FUN_1406b5380 L929774 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of alienation {%1}	{1+時}表達一絲疏離感	{1+时}表达一丝疏离感		FUN_1406b5380 L929784 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of amazement {%1}	{1+時}表達一絲驚奇	{1+时}表达一丝惊奇		FUN_1406b5380 L929787 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of ambivalence {%1}	{1+時}表達一絲矛盾心情	{1+时}表达一丝矛盾心情		FUN_1406b5380 L929790 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of amusement {%1}	{1+時}表達一絲笑意	{1+时}表达一丝笑意		FUN_1406b5380 L929793 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of anger {%1}	{1+時}表達一絲憤怒	{1+时}表达一丝愤怒		FUN_1406b5380 L929796 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Dismiss minor existential crisis {%1}	{1+時}拋開輕微的存在危機	{1+时}抛开轻微的存在危机		FUN_1406b5380 L929799 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Dismiss minor feeling of anguish {%1}	{1+時}拋開一絲揪心之痛	{1+时}抛开一丝揪心之痛		FUN_1406b5380 L929809 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of annoyance {%1}	{1+時}表達一絲心煩	{1+时}表达一丝心烦		FUN_1406b5380 L929819 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of anxiety {%1}	{1+時}表達一絲焦慮	{1+时}表达一丝焦虑		FUN_1406b5380 L929824 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of apathy {%1}	{1+時}表達一絲冷漠	{1+时}表达一丝冷漠		FUN_1406b5380 L929827 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of arousal {%1}	{1+時}表達一絲動情	{1+时}表达一丝动情		FUN_1406b5380 L929830 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of astonishment {%1}	{1+時}表達一絲驚訝	{1+时}表达一丝惊讶		FUN_1406b5380 L929833 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of aversion {%1}	{1+時}表達一絲反感	{1+时}表达一丝反感		FUN_1406b5380 L929836 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of awe {%1}	{1+時}表達一絲敬畏	{1+时}表达一丝敬畏		FUN_1406b5380 L929839 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of bitterness {%1}	{1+時}表達一絲苦澀	{1+时}表达一丝苦涩		FUN_1406b5380 L929842 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of bliss {%1}	{1+時}表達一絲幸福感	{1+时}表达一丝幸福感		FUN_1406b5380 L929845 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of boredom {%1}	{1+時}表達一絲無聊	{1+时}表达一丝无聊		FUN_1406b5380 L929848 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of caring {%1}	{1+時}表達一絲憐惜	{1+时}表达一丝怜惜		FUN_1406b5380 L929851 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of confusion {%1}	{1+時}表達一絲困惑	{1+时}表达一丝困惑		FUN_1406b5380 L929854 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of contempt {%1}	{1+時}表達一絲輕蔑	{1+时}表达一丝轻蔑		FUN_1406b5380 L929857 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of contentment {%1}	{1+時}表達一絲滿足	{1+时}表达一丝满足		FUN_1406b5380 L929860 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Dismiss minor feeling of defeat {%1}	{1+時}拋開一絲被擊垮的感覺	{1+时}抛开一丝被击垮的感觉		FUN_1406b5380 L929863 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of dejection {%1}	{1+時}表達一絲沮喪	{1+时}表达一丝沮丧		FUN_1406b5380 L929873 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of delight {%1}	{1+時}表達一絲欣喜	{1+时}表达一丝欣喜		FUN_1406b5380 L929876 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Dismiss minor feeling of despair {%1}	{1+時}拋開一絲絕望	{1+时}抛开一丝绝望		FUN_1406b5380 L929879 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of disappointment {%1}	{1+時}表達一絲失望	{1+时}表达一丝失望		FUN_1406b5380 L929889 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of disgust {%1}	{1+時}表達一絲厭惡	{1+时}表达一丝厌恶		FUN_1406b5380 L929892 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of disillusionment {%1}	{1+時}表達一絲幻滅感	{1+时}表达一丝幻灭感		FUN_1406b5380 L929895 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of dislike {%1}	{1+時}表達一絲厭煩	{1+时}表达一丝厌烦		FUN_1406b5380 L929898 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Dismiss minor feeling of dismay {%1}	{1+時}拋開一絲驚惶	{1+时}抛开一丝惊惶		FUN_1406b5380 L929901 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of displeasure {%1}	{1+時}表達一絲不悅	{1+时}表达一丝不悦		FUN_1406b5380 L929911 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Dismiss minor feeling of distress {%1}	{1+時}拋開一絲苦惱	{1+时}抛开一丝苦恼		FUN_1406b5380 L929914 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Dismiss minor doubts {%1}	{1+時}拋開一絲懷疑	{1+时}抛开一丝怀疑		FUN_1406b5380 L929924 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of eagerness {%1}	{1+時}表達一絲渴望	{1+时}表达一丝渴望		FUN_1406b5380 L929934 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of elation {%1}	{1+時}表達一絲高興之情	{1+时}表达一丝高兴之情		FUN_1406b5380 L929937 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of embarrassment {%1}	{1+時}表達一絲尷尬	{1+时}表达一丝尴尬		FUN_1406b5380 L929940 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of empathy {%1}	{1+時}表達一絲共鳴	{1+时}表达一丝共鸣		FUN_1406b5380 L929943 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of emptiness {%1}	{1+時}表達一絲空虛感	{1+时}表达一丝空虚感		FUN_1406b5380 L929946 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of enjoyment {%1}	{1+時}表達一絲樂趣	{1+时}表达一丝乐趣		FUN_1406b5380 L929949 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of enthusiasm {%1}	{1+時}表達一絲熱切之情	{1+时}表达一丝热切之情		FUN_1406b5380 L929952 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of euphoria {%1}	{1+時}表達一絲狂喜	{1+时}表达一丝狂喜		FUN_1406b5380 L929955 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of exasperation {%1}	{1+時}表達一絲惱怒	{1+时}表达一丝恼怒		FUN_1406b5380 L929958 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of excitement {%1}	{1+時}表達一絲興奮	{1+时}表达一丝兴奋		FUN_1406b5380 L929961 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of exhilaration {%1}	{1+時}表達一絲振奮	{1+时}表达一丝振奋		FUN_1406b5380 L929964 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings, somewhat expectant {%1}	{1+時}表示自己有些期待	{1+时}表示自己有些期待		FUN_1406b5380 L929967 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Dismiss minor feeling of fear {%1}	{1+時}拋開一絲恐懼	{1+时}抛开一丝恐惧		FUN_1406b5380 L929970 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of ferocity {%1}	{1+時}表達一絲兇性	{1+时}表达一丝凶性		FUN_1406b5380 L929980 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of fondness {%1}	{1+時}表達一絲喜愛	{1+时}表达一丝喜爱		FUN_1406b5380 L929983 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of freedom {%1}	{1+時}表達一絲自由感	{1+时}表达一丝自由感		FUN_1406b5380 L929986 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Dismiss minor feeling of fright {%1}	{1+時}拋開一絲驚恐	{1+时}抛开一丝惊恐		FUN_1406b5380 L929989 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of frustration {%1}	{1+時}表達一絲挫折感	{1+时}表达一丝挫败感		FUN_1406b5380 L929999 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of gaiety {%1}	{1+時}表達一絲歡快	{1+时}表达一丝欢快		FUN_1406b5380 L930002 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of glee {%1}	{1+時}表達一絲雀躍	{1+时}表达一丝雀跃		FUN_1406b5380 L930005 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of gloom {%1}	{1+時}表達一絲陰鬱	{1+时}表达一丝阴郁		FUN_1406b5380 L930008 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of glumness {%1}	{1+時}表達一絲鬱悶	{1+时}表达一丝郁闷		FUN_1406b5380 L930011 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of gratitude {%1}	{1+時}表達一絲感激	{1+时}表达一丝感激		FUN_1406b5380 L930014 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Dismiss minor feeling of grief {%1}	{1+時}拋開一絲悲痛	{1+时}抛开一丝悲痛		FUN_1406b5380 L930017 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of grim satisfaction {%1}	{1+時}表達一絲冷酷的快意	{1+时}表达一丝冷酷的快意		FUN_1406b5380 L930027 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of grouchiness {%1}	{1+時}表達一絲煩躁	{1+时}表达一丝烦躁		FUN_1406b5380 L930030 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of grumpiness {%1}	{1+時}表達一絲不爽	{1+时}表达一丝不爽		FUN_1406b5380 L930033 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of guilt {%1}	{1+時}表達一絲內疚	{1+时}表达一丝内疚		FUN_1406b5380 L930036 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of happiness {%1}	{1+時}表達一絲快樂	{1+时}表达一丝快乐		FUN_1406b5380 L930039 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of hatred {%1}	{1+時}表達一絲憎恨	{1+时}表达一丝憎恨		FUN_1406b5380 L930042 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of hope {%1}	{1+時}表達一絲希望	{1+时}表达一丝希望		FUN_1406b5380 L930045 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of hopelessness {%1}	{1+時}表達一絲無望感	{1+时}表达一丝无望感		FUN_1406b5380 L930048 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Dismiss minor feeling of horror {%1}	{1+時}拋開一絲驚駭	{1+时}抛开一丝惊骇		FUN_1406b5380 L930051 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of humiliation {%1}	{1+時}表達一絲屈辱	{1+时}表达一丝屈辱		FUN_1406b5380 L930061 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of insult {%1}	{1+時}表達一絲受辱感	{1+时}表达一丝受辱感		FUN_1406b5380 L930064 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of interest {%1}	{1+時}表達一絲興趣	{1+时}表达一丝兴趣		FUN_1406b5380 L930067 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of irritation {%1}	{1+時}表達一絲惱火	{1+时}表达一丝恼火		FUN_1406b5380 L930070 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of isolation {%1}	{1+時}表達一絲孤立感	{1+时}表达一丝孤立感		FUN_1406b5380 L930073 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of jolliness {%1}	{1+時}表達一絲快活	{1+时}表达一丝快活		FUN_1406b5380 L930076 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of joviality {%1}	{1+時}表達一絲開朗心情	{1+时}表达一丝开朗心情		FUN_1406b5380 L930079 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of joy {%1}	{1+時}表達一絲喜悅	{1+时}表达一丝喜悦		FUN_1406b5380 L930082 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of jubilation {%1}	{1+時}表達一絲歡欣	{1+时}表达一丝欢欣		FUN_1406b5380 L930085 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of loathing {%1}	{1+時}表達一絲憎惡	{1+时}表达一丝憎恶		FUN_1406b5380 L930088 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of loneliness {%1}	{1+時}表達一絲孤單感	{1+时}表达一丝孤独感		FUN_1406b5380 L930091 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of love {%1}	{1+時}表達一絲愛意	{1+时}表达一丝爱意		FUN_1406b5380 L930094 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of lust {%1}	{1+時}表達一絲情慾	{1+时}表达一丝情欲		FUN_1406b5380 L930097 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Dismiss minor feeling of misery {%1}	{1+時}拋開一絲悲慘感	{1+时}抛开一丝悲惨感		FUN_1406b5380 L930100 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Dismiss minor feeling of mortification {%1}	{1+時}拋開一絲羞愧難當之感	{1+时}抛开一丝羞愧难当之感		FUN_1406b5380 L930110 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of nervousness {%1}	{1+時}表達一絲緊張	{1+时}表达一丝紧张		FUN_1406b5380 L930120 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of nostalgia {%1}	{1+時}表達一絲懷舊之情	{1+时}表达一丝怀旧之情		FUN_1406b5380 L930123 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of optimism {%1}	{1+時}表達一絲樂觀	{1+时}表达一丝乐观		FUN_1406b5380 L930126 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of outrage {%1}	{1+時}表達一絲激憤	{1+时}表达一丝激愤		FUN_1406b5380 L930129 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of panic {%1}	{1+時}表達一絲恐慌	{1+时}表达一丝恐慌		FUN_1406b5380 L930132 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of patience {%1}	{1+時}表達一絲耐心	{1+时}表达一丝耐心		FUN_1406b5380 L930135 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of passion {%1}	{1+時}表達一絲熱情	{1+时}表达一丝热情		FUN_1406b5380 L930138 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Dismiss minor feeling of pessimism {%1}	{1+時}拋開一絲悲觀	{1+时}抛开一丝悲观		FUN_1406b5380 L930141 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of pleasure {%1}	{1+時}表達一絲愉悅	{1+时}表达一丝愉悦		FUN_1406b5380 L930151 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of pride {%1}	{1+時}表達一絲自豪	{1+时}表达一丝自豪		FUN_1406b5380 L930154 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Dismiss minor feeling of rage {%1}	{1+時}拋開一絲暴怒	{1+时}抛开一丝暴怒		FUN_1406b5380 L930157 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings, somewhat enraptured {%1}	{1+時}表示自己有些陶醉	{1+时}表示自己有些陶醉		FUN_1406b5380 L930167 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of rejection {%1}	{1+時}表達一絲被拒絕感	{1+时}表达一丝被拒绝感		FUN_1406b5380 L930170 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of relief {%1}	{1+時}表達一絲如釋重負之感	{1+时}表达一丝如释重负之感		FUN_1406b5380 L930173 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of regret {%1}	{1+時}表達一絲後悔	{1+时}表达一丝后悔		FUN_1406b5380 L930176 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of remorse {%1}	{1+時}表達一絲悔恨	{1+时}表达一丝悔恨		FUN_1406b5380 L930179 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of repentance {%1}	{1+時}表達一絲懊悔	{1+时}表达一丝懊悔		FUN_1406b5380 L930182 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of resentment {%1}	{1+時}表達一絲怨恨	{1+时}表达一丝怨恨		FUN_1406b5380 L930185 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of righteous indignation {%1}	{1+時}表達一絲義憤	{1+时}表达一丝义愤		FUN_1406b5380 L930188 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Dismiss minor feeling of sadness {%1}	{1+時}拋開一絲悲傷	{1+时}抛开一丝悲伤		FUN_1406b5380 L930191 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of satisfaction {%1}	{1+時}表達一絲滿意	{1+时}表达一丝满意		FUN_1406b5380 L930201 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of self-pity {%1}	{1+時}表達一絲自憐	{1+时}表达一丝自怜		FUN_1406b5380 L930204 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of servility {%1}	{1+時}表達一絲卑微感	{1+时}表达一丝卑微感		FUN_1406b5380 L930207 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Dismiss minor feeling of being shaken {%1}	{1+時}拋開一絲心驚	{1+时}抛开一丝心惊		FUN_1406b5380 L930210 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of shame {%1}	{1+時}表達一絲羞愧	{1+时}表达一丝羞愧		FUN_1406b5380 L930220 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Dismiss minor feeling of shock {%1}	{1+時}拋開一絲震驚	{1+时}抛开一丝震惊		FUN_1406b5380 L930223 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of suspicion {%1}	{1+時}表達一絲疑心	{1+时}表达一丝疑心		FUN_1406b5380 L930233 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of sympathy {%1}	{1+時}表達一絲同情	{1+时}表达一丝同情		FUN_1406b5380 L930236 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of tenderness {%1}	{1+時}表達一絲柔情	{1+时}表达一丝柔情		FUN_1406b5380 L930239 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Dismiss minor feeling of terror {%1}	{1+時}拋開一絲極度恐懼	{1+时}抛开一丝极度恐惧		FUN_1406b5380 L930242 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State feelings, somewhat thrilled {%1}	{1+時}表示自己有些激動	{1+时}表示自己有些激动		FUN_1406b5380 L930252 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of triumph {%1}	{1+時}表達一絲勝利的喜悅	{1+时}表达一丝胜利的喜悦		FUN_1406b5380 L930255 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of uneasiness {%1}	{1+時}表達一絲不安	{1+时}表达一丝不安		FUN_1406b5380 L930258 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of unhappiness {%1}	{1+時}表達一絲不快樂	{1+时}表达一丝不开心		FUN_1406b5380 L930261 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of vengefulness {%1}	{1+時}表達一絲復仇之心	{1+时}表达一丝复仇之心		FUN_1406b5380 L930264 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of wonder {%1}	{1+時}表達一絲驚嘆	{1+时}表达一丝惊叹		FUN_1406b5380 L930267 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of worry {%1}	{1+時}表達一絲擔心	{1+时}表达一丝担心		FUN_1406b5380 L930270 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of wrath {%1}	{1+時}表達一絲狂怒	{1+时}表达一丝狂怒		FUN_1406b5380 L930273 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of zeal {%1}	{1+時}表達一絲狂熱	{1+时}表达一丝狂热		FUN_1406b5380 L930276 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of restlessness {%1}	{1+時}表達一絲坐立不安	{1+时}表达一丝坐立不安		FUN_1406b5380 L930279 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+State minor feeling of admiration {%1}	{1+時}表達一絲欽佩	{1+时}表达一丝钦佩		FUN_1406b5380 L930282 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of acceptance {%1}	{1+時}承認毫無坦然之情	{1+时}承认毫无坦然之情		FUN_1406b6470 L930335 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of adoration {%1}	{1+時}承認毫無愛慕	{1+时}承认毫无爱慕		FUN_1406b6470 L930338 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of affection {%1}	{1+時}承認毫無溫情	{1+时}承认毫无温情		FUN_1406b6470 L930341 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of agitation {%1}	{1+時}承認毫無焦躁	{1+时}承认毫无焦躁		FUN_1406b6470 L930344 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of aggravation {%1}	{1+時}承認毫無氣惱	{1+时}承认毫无气恼		FUN_1406b6470 L930347 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of agony {%1}	{1+時}承認毫無痛苦	{1+时}承认毫无痛苦		FUN_1406b6470 L930350 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of alarm {%1}	{1+時}承認毫無驚慌	{1+时}承认毫无惊慌		FUN_1406b6470 L930353 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of alienation {%1}	{1+時}承認毫無疏離感	{1+时}承认毫无疏离感		FUN_1406b6470 L930356 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of amazement {%1}	{1+時}承認毫無驚奇	{1+时}承认毫无惊奇		FUN_1406b6470 L930359 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of ambivalence {%1}	{1+時}承認毫無矛盾心情	{1+时}承认毫无矛盾心情		FUN_1406b6470 L930362 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of amusement {%1}	{1+時}承認毫無笑意	{1+时}承认毫无笑意		FUN_1406b6470 L930365 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of anger {%1}	{1+時}承認毫無憤怒	{1+时}承认毫无愤怒		FUN_1406b6470 L930368 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of existential crisis {%1}	{1+時}承認毫無存在危機	{1+时}承认毫无存在危机		FUN_1406b6470 L930371 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of anguish {%1}	{1+時}承認毫無揪心之痛	{1+时}承认毫无揪心之痛		FUN_1406b6470 L930374 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of annoyance {%1}	{1+時}承認毫無心煩	{1+时}承认毫无心烦		FUN_1406b6470 L930377 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of anxiety {%1}	{1+時}承認毫無焦慮	{1+时}承认毫无焦虑		FUN_1406b6470 L930382 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of apathy {%1}	{1+時}承認毫無冷漠	{1+时}承认毫无冷漠		FUN_1406b6470 L930385 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of arousal {%1}	{1+時}承認毫無動情	{1+时}承认毫无动情		FUN_1406b6470 L930388 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of astonishment {%1}	{1+時}承認毫無驚訝	{1+时}承认毫无惊讶		FUN_1406b6470 L930391 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of aversion {%1}	{1+時}承認毫無反感	{1+时}承认毫无反感		FUN_1406b6470 L930394 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of awe {%1}	{1+時}承認毫無敬畏	{1+时}承认毫无敬畏		FUN_1406b6470 L930397 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of bitterness {%1}	{1+時}承認毫無苦澀	{1+时}承认毫无苦涩		FUN_1406b6470 L930400 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of bliss {%1}	{1+時}承認毫無幸福感	{1+时}承认毫无幸福感		FUN_1406b6470 L930403 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of boredom {%1}	{1+時}承認一點也不無聊	{1+时}承认一点也不无聊		FUN_1406b6470 L930406 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of caring {%1}	{1+時}承認毫無憐惜	{1+时}承认毫无怜惜		FUN_1406b6470 L930409 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of confusion {%1}	{1+時}承認毫無困惑	{1+时}承认毫无困惑		FUN_1406b6470 L930412 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of contempt {%1}	{1+時}承認毫無輕蔑	{1+时}承认毫无轻蔑		FUN_1406b6470 L930415 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of contentment {%1}	{1+時}承認毫不滿足	{1+时}承认毫不满足		FUN_1406b6470 L930418 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of defeat {%1}	{1+時}承認沒有被擊垮的感覺	{1+时}承认没有被击垮的感觉		FUN_1406b6470 L930421 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of dejection {%1}	{1+時}承認毫無沮喪	{1+时}承认毫无沮丧		FUN_1406b6470 L930424 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of delight {%1}	{1+時}承認毫無欣喜	{1+时}承认毫无欣喜		FUN_1406b6470 L930427 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of despair {%1}	{1+時}承認毫無絕望	{1+时}承认毫无绝望		FUN_1406b6470 L930430 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of disappointment {%1}	{1+時}承認毫無失望	{1+时}承认毫无失望		FUN_1406b6470 L930433 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of disgust {%1}	{1+時}承認毫無厭惡	{1+时}承认毫无厌恶		FUN_1406b6470 L930436 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of disillusionment {%1}	{1+時}承認毫無幻滅感	{1+时}承认毫无幻灭感		FUN_1406b6470 L930439 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of dislike {%1}	{1+時}承認毫無厭煩	{1+时}承认毫无厌烦		FUN_1406b6470 L930442 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of dismay {%1}	{1+時}承認毫無驚惶	{1+时}承认毫无惊惶		FUN_1406b6470 L930445 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of displeasure {%1}	{1+時}承認毫無不悅	{1+时}承认毫无不悦		FUN_1406b6470 L930448 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of distress {%1}	{1+時}承認毫無苦惱	{1+时}承认毫无苦恼		FUN_1406b6470 L930451 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of doubt {%1}	{1+時}承認毫無懷疑	{1+时}承认毫无怀疑		FUN_1406b6470 L930454 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of eagerness {%1}	{1+時}承認毫無渴望	{1+时}承认毫无渴望		FUN_1406b6470 L930457 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of elation {%1}	{1+時}承認毫無高興之情	{1+时}承认毫无高兴之情		FUN_1406b6470 L930460 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of embarrassment {%1}	{1+時}承認毫無尷尬	{1+时}承认毫无尴尬		FUN_1406b6470 L930463 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of empathy {%1}	{1+時}承認毫無共鳴	{1+时}承认毫无共鸣		FUN_1406b6470 L930466 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of emptiness {%1}	{1+時}承認毫無空虛感	{1+时}承认毫无空虚感		FUN_1406b6470 L930469 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of enjoyment {%1}	{1+時}承認毫無樂趣	{1+时}承认毫无乐趣		FUN_1406b6470 L930472 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of enthusiasm {%1}	{1+時}承認毫無熱切之情	{1+时}承认毫无热切之情		FUN_1406b6470 L930475 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of euphoria {%1}	{1+時}承認毫無狂喜	{1+时}承认毫无狂喜		FUN_1406b6470 L930478 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of exasperation {%1}	{1+時}承認毫無惱怒	{1+时}承认毫无恼怒		FUN_1406b6470 L930481 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of excitement {%1}	{1+時}承認毫無興奮	{1+时}承认毫无兴奋		FUN_1406b6470 L930484 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of exhilaration {%1}	{1+時}承認毫無振奮	{1+时}承认毫无振奋		FUN_1406b6470 L930487 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of expectancy {%1}	{1+時}承認毫無期待	{1+时}承认毫无期待		FUN_1406b6470 L930490 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of fear {%1}	{1+時}承認毫無恐懼	{1+时}承认毫无恐惧		FUN_1406b6470 L930493 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of ferocity {%1}	{1+時}承認毫無兇性	{1+时}承认毫无凶性		FUN_1406b6470 L930496 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of fondness {%1}	{1+時}承認毫無喜愛	{1+时}承认毫无喜爱		FUN_1406b6470 L930499 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of freedom {%1}	{1+時}承認毫無自由感	{1+时}承认毫无自由感		FUN_1406b6470 L930502 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of fright {%1}	{1+時}承認毫無驚恐	{1+时}承认毫无惊恐		FUN_1406b6470 L930505 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of frustration {%1}	{1+時}承認毫無挫折感	{1+时}承认毫无挫败感		FUN_1406b6470 L930508 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of gaiety {%1}	{1+時}承認毫無歡快	{1+时}承认毫无欢快		FUN_1406b6470 L930511 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of glee {%1}	{1+時}承認毫無雀躍	{1+时}承认毫无雀跃		FUN_1406b6470 L930514 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of gloom {%1}	{1+時}承認毫無陰鬱	{1+时}承认毫无阴郁		FUN_1406b6470 L930517 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of glumness {%1}	{1+時}承認毫無鬱悶	{1+时}承认毫无郁闷		FUN_1406b6470 L930520 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of gratitude {%1}	{1+時}承認毫無感激	{1+时}承认毫无感激		FUN_1406b6470 L930523 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of grief {%1}	{1+時}承認毫無悲痛	{1+时}承认毫无悲痛		FUN_1406b6470 L930526 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of grim satisfaction {%1}	{1+時}承認毫無冷酷的快意	{1+时}承认毫无冷酷的快意		FUN_1406b6470 L930529 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of grouchiness {%1}	{1+時}承認毫無煩躁	{1+时}承认毫无烦躁		FUN_1406b6470 L930532 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of grumpiness {%1}	{1+時}承認沒有不爽	{1+时}承认没有不爽		FUN_1406b6470 L930535 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of guilt {%1}	{1+時}承認毫無內疚	{1+时}承认毫无内疚		FUN_1406b6470 L930538 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of happiness {%1}	{1+時}承認毫不快樂	{1+时}承认毫不快乐		FUN_1406b6470 L930541 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of hatred {%1}	{1+時}承認毫無憎恨	{1+时}承认毫无憎恨		FUN_1406b6470 L930544 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of hope {%1}	{1+時}承認毫無希望	{1+时}承认毫无希望		FUN_1406b6470 L930547 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of hopelessness {%1}	{1+時}承認並未感到無望	{1+时}承认并未感到无望		FUN_1406b6470 L930550 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of horror {%1}	{1+時}承認毫無驚駭	{1+时}承认毫无惊骇		FUN_1406b6470 L930553 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of humiliation {%1}	{1+時}承認毫無屈辱	{1+时}承认毫无屈辱		FUN_1406b6470 L930556 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of insult {%1}	{1+時}承認毫無受辱感	{1+时}承认毫无受辱感		FUN_1406b6470 L930559 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of interest {%1}	{1+時}承認毫無興趣	{1+时}承认毫无兴趣		FUN_1406b6470 L930562 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of irritation {%1}	{1+時}承認毫無惱火	{1+时}承认毫无恼火		FUN_1406b6470 L930565 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of isolation {%1}	{1+時}承認毫無孤立感	{1+时}承认毫无孤立感		FUN_1406b6470 L930568 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of jolliness {%1}	{1+時}承認毫無快活	{1+时}承认毫无快活		FUN_1406b6470 L930571 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of joviality {%1}	{1+時}承認毫無開朗心情	{1+时}承认毫无开朗心情		FUN_1406b6470 L930574 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of joy {%1}	{1+時}承認毫無喜悅	{1+时}承认毫无喜悦		FUN_1406b6470 L930577 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of jubilation {%1}	{1+時}承認毫無歡欣	{1+时}承认毫无欢欣		FUN_1406b6470 L930580 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of loathing {%1}	{1+時}承認毫無憎惡	{1+时}承认毫无憎恶		FUN_1406b6470 L930583 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of loneliness {%1}	{1+時}承認毫無孤單感	{1+时}承认毫无孤独感		FUN_1406b6470 L930586 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of love {%1}	{1+時}承認毫無愛意	{1+时}承认毫无爱意		FUN_1406b6470 L930589 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of lust {%1}	{1+時}承認毫無情慾	{1+时}承认毫无情欲		FUN_1406b6470 L930592 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of misery {%1}	{1+時}承認毫無悲慘感	{1+时}承认毫无悲惨感		FUN_1406b6470 L930595 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of mortification {%1}	{1+時}承認毫無羞愧難當之感	{1+时}承认毫无羞愧难当之感		FUN_1406b6470 L930598 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of nervousness {%1}	{1+時}承認毫不緊張	{1+时}承认毫不紧张		FUN_1406b6470 L930601 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of nostalgia {%1}	{1+時}承認毫無懷舊之情	{1+时}承认毫无怀旧之情		FUN_1406b6470 L930604 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of optimism {%1}	{1+時}承認毫無樂觀	{1+时}承认毫无乐观		FUN_1406b6470 L930607 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of outrage {%1}	{1+時}承認毫無激憤	{1+时}承认毫无激愤		FUN_1406b6470 L930610 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of panic {%1}	{1+時}承認毫無恐慌	{1+时}承认毫无恐慌		FUN_1406b6470 L930613 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of patience {%1}	{1+時}承認毫無耐心	{1+时}承认毫无耐心		FUN_1406b6470 L930616 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of passion {%1}	{1+時}承認毫無熱情	{1+时}承认毫无热情		FUN_1406b6470 L930619 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of pessimism {%1}	{1+時}承認毫無悲觀	{1+时}承认毫无悲观		FUN_1406b6470 L930622 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of pleasure {%1}	{1+時}承認毫無愉悅	{1+时}承认毫无愉悦		FUN_1406b6470 L930625 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of pride {%1}	{1+時}承認毫無自豪	{1+时}承认毫无自豪		FUN_1406b6470 L930628 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of rage {%1}	{1+時}承認毫無暴怒	{1+时}承认毫无暴怒		FUN_1406b6470 L930631 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of rapture {%1}	{1+時}承認毫不陶醉	{1+时}承认毫不陶醉		FUN_1406b6470 L930634 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of rejection {%1}	{1+時}承認毫無被拒絕感	{1+时}承认毫无被拒绝感		FUN_1406b6470 L930637 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of relief {%1}	{1+時}承認毫無如釋重負之感	{1+时}承认毫无如释重负之感		FUN_1406b6470 L930640 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of regret {%1}	{1+時}承認毫不後悔	{1+时}承认毫不后悔		FUN_1406b6470 L930643 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of remorse {%1}	{1+時}承認毫無悔恨	{1+时}承认毫无悔恨		FUN_1406b6470 L930646 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of repentance {%1}	{1+時}承認毫無懊悔	{1+时}承认毫无懊悔		FUN_1406b6470 L930649 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of resentment {%1}	{1+時}承認毫無怨恨	{1+时}承认毫无怨恨		FUN_1406b6470 L930652 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of righteous indignation {%1}	{1+時}承認毫無義憤	{1+时}承认毫无义愤		FUN_1406b6470 L930655 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of sadness {%1}	{1+時}承認毫無悲傷	{1+时}承认毫无悲伤		FUN_1406b6470 L930658 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of satisfaction {%1}	{1+時}承認毫不滿意	{1+时}承认毫不满意		FUN_1406b6470 L930661 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of self-pity {%1}	{1+時}承認毫無自憐	{1+时}承认毫无自怜		FUN_1406b6470 L930664 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of servility {%1}	{1+時}承認毫無卑微感	{1+时}承认毫无卑微感		FUN_1406b6470 L930667 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of being shaken {%1}	{1+時}承認毫不心驚	{1+时}承认毫不心惊		FUN_1406b6470 L930670 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of shame {%1}	{1+時}承認毫無羞愧	{1+时}承认毫无羞愧		FUN_1406b6470 L930673 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of shock {%1}	{1+時}承認毫無震驚	{1+时}承认毫无震惊		FUN_1406b6470 L930676 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of suspicion {%1}	{1+時}承認毫無疑心	{1+时}承认毫无疑心		FUN_1406b6470 L930679 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of sympathy {%1}	{1+時}承認毫無同情	{1+时}承认毫无同情		FUN_1406b6470 L930682 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of tenderness {%1}	{1+時}承認毫無柔情	{1+时}承认毫无柔情		FUN_1406b6470 L930685 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of terror {%1}	{1+時}承認並未極度恐懼	{1+时}承认并未极度恐惧		FUN_1406b6470 L930688 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of a thrill {%1}	{1+時}承認毫不激動	{1+时}承认毫不激动		FUN_1406b6470 L930691 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of triumph {%1}	{1+時}承認毫無勝利的喜悅	{1+时}承认毫无胜利的喜悦		FUN_1406b6470 L930694 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of uneasiness {%1}	{1+時}承認毫無不安	{1+时}承认毫无不安		FUN_1406b6470 L930697 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of unhappiness {%1}	{1+時}承認沒有不快樂	{1+时}承认没有不开心		FUN_1406b6470 L930700 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of vengefulness {%1}	{1+時}承認毫無復仇之心	{1+时}承认毫无复仇之心		FUN_1406b6470 L930703 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of wonder {%1}	{1+時}承認毫無驚嘆	{1+时}承认毫无惊叹		FUN_1406b6470 L930706 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of worry {%1}	{1+時}承認毫不擔心	{1+时}承认毫不担心		FUN_1406b6470 L930709 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of wrath {%1}	{1+時}承認毫無狂怒	{1+时}承认毫无狂怒		FUN_1406b6470 L930712 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of zeal {%1}	{1+時}承認毫無狂熱	{1+时}承认毫无狂热		FUN_1406b6470 L930715 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of restlessness {%1}	{1+時}承認並不坐立不安	{1+时}承认并不坐立不安		FUN_1406b6470 L930718 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Acknowledge lack of admiration {%1}	{1+時}承認毫無欽佩	{1+时}承认毫无钦佩		FUN_1406b6470 L930721 同上，遊戲在選項後接 fn_thought_composer 原因片語（含介系詞，本體由 sentences_causes_*／sentences_thoughts 介系詞句型翻），中文放在動作前
+Continue conversation with {1}, {2} and {3}	繼續與{1}、{2}和{3}交談	继续与{1}、{2}和{3}交谈		FUN_1406b7080 L930879 交談選單：繼續交談，對象名單用 ", " 與 " and " 接（反編譯碼漏了字串，取自執行檔反組譯 0x1406b70d1）；三人，排在兩人、一人前
+Continue conversation with {1} and {2}	繼續與{1}和{2}交談	继续与{1}和{2}交谈		同上，兩人（四人以上時 {1} 收下前面整串，逗號照原樣）
+Continue conversation with {1}	繼續與{1}交談	继续与{1}交谈		同上，一人

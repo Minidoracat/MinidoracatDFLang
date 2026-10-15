@@ -10,8 +10,6 @@ a demand of unconditional surrender	無條件投降的要求	无条件投降的�
 a declaration of war	宣戰	宣战	inner	FUN_140b95020 1707983 議題名（topicagreement_* 共用，Events15 的 topicagreement_made 也用）
 an alliance	結盟	结盟	inner	FUN_140b95020 1707983 議題名（topicagreement_* 共用，Events15 的 topicagreement_made 也用）
 a strengthening of trade ties	加強貿易往來	加强贸易往来	inner	FUN_140b95020 1707983 議題名（topicagreement_* 共用，Events15 的 topicagreement_made 也用）
-soldier	士兵	士兵	inner	職位名（entity_position name／squad[0]），raws 與執行檔（程序生成職位）裡、尚無條目的；remove/add_hf_entity_link 用；squad 名
-militia-dwarf	民兵	民兵	inner	職位名（entity_position name／squad[0]），raws 與執行檔（程序生成職位）裡、尚無條目的；remove/add_hf_entity_link 用；squad 名
 lord	領主	领主	inner	職位名（entity_position name／squad[0]），raws 與執行檔（程序生成職位）裡、尚無條目的；remove/add_hf_entity_link 用
 lady	女領主	女领主	inner	職位名（entity_position name／squad[0]），raws 與執行檔（程序生成職位）裡、尚無條目的；remove/add_hf_entity_link 用
 priest	祭司	祭司	inner	職位名（entity_position name／squad[0]），raws 與執行檔（程序生成職位）裡、尚無條目的；remove/add_hf_entity_link 用

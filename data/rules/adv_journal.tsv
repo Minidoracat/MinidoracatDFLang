@@ -1,0 +1,174 @@
+en	zh-Hant	zh-Hans	align	note
+{#1} members	{1} 名成員	{1} 名成员		FUN_1400c2110 L123194 組織清單的成員數（一人時是 One member）
+Shrine to {1}	{1}神龕	{1}神龛		FUN_14080d5e0 L1155259、L1156127 神龕：Shrine to＋神祇名
+Shrine of {1}	{1}神龕	{1}神龛		FUN_14080d5e0 L1155268 神龕：Shrine of＋宗教名
+Mountain: {1}	山峰：{1}	山峰：{1}		FUN_14080d5e0 L1158409 山峰名（整串一起畫，有截斷長度）
+Volcano: {1}	火山：{1}	火山：{1}		FUN_14080d5e0 L1158414 火山名（同上）
+This event occurred on the {#1}st {@2} in the year {#3}.	此事發生於 {3} 年{2}{1}日。	此事发生于 {3} 年{2}{1}日。		FUN_1400d4f50 L131269-131311 冒險日誌事件說明的日期句（FUN_1408e7440 依 58 格切行，整句一行時才整句畫出）
+This event occurred on the {#1}nd {@2} in the year {#3}.	此事發生於 {3} 年{2}{1}日。	此事发生于 {3} 年{2}{1}日。		FUN_1400d4f50 L131269-131311 冒險日誌事件說明的日期句（FUN_1408e7440 依 58 格切行，整句一行時才整句畫出）
+This event occurred on the {#1}rd {@2} in the year {#3}.	此事發生於 {3} 年{2}{1}日。	此事发生于 {3} 年{2}{1}日。		FUN_1400d4f50 L131269-131311 冒險日誌事件說明的日期句（FUN_1408e7440 依 58 格切行，整句一行時才整句畫出）
+This event occurred on the {#1}th {@2} in the year {#3}.	此事發生於 {3} 年{2}{1}日。	此事发生于 {3} 年{2}{1}日。		FUN_1400d4f50 L131269-131311 冒險日誌事件說明的日期句（FUN_1408e7440 依 58 格切行，整句一行時才整句畫出）
+Minimum Initial {@1} Square Count	初始{1}格數下限	初始{1}格数下限		FUN_14075d5b0 的呼叫者 L2087102 世界生成進階參數；{1} 是地區類型名
+Minimum Initial {@1} Region Count	初始{1}地區數下限	初始{1}地区数下限		FUN_14075d5b0 的呼叫者 L2087102 世界生成進階參數；{1} 是地區類型名
+You are a {%1} based in {2}.	你是以{2}為據點的{1}。	你是以{2}为据点的{1}。		FUN_14080d5e0 L1158475 地圖說明段落（mtb，青色）：{1} 職位名、{2} 據點
+You have been ordered to drive {1} from {2}.	你奉命將{1}逐出{2}。	你奉命将{1}逐出{2}。		FUN_14080d5e0 L1158504、L1158559 地圖說明段落（mtb，綠色）：{1} 勢力、{2} 據點；後面可能接 You should report the task as complete.
+{1} is rumored to be in {2}.	據傳{1}在{2}。	据说{1}在{2}。		FUN_14080d5e0 L1158675 地圖說明段落（mtb，紅色）：{1} 人物／生物、{2} 據點；後面沒有換色句時逐句查
+{1} is rumored to be in {2}. [C:2:0:1]You have been ordered to kill this creature. [B]	據傳{1}在{2}。[C:2:0:1]你奉命擊殺這個生物。[B]	据说{1}在{2}。[C:2:0:1]你奉命击杀这个生物。[B]		FUN_14080d5e0 L1158667-1158715 地圖說明段落（mtb）有換色句時只整段查：傳聞句＋各種附註組合（段落框收成單空白、[B] 前一個空白）
+{1} is rumored to be in {2}. [C:2:0:1]You have been ordered to kill this creature. You should report the task as complete. [B]	據傳{1}在{2}。[C:2:0:1]你奉命擊殺這個生物。你該回報任務已完成。[B]	据说{1}在{2}。[C:2:0:1]你奉命击杀这个生物。你该汇报任务已完成。[B]		FUN_14080d5e0 L1158667-1158715 地圖說明段落（mtb）有換色句時只整段查：傳聞句＋各種附註組合（段落框收成單空白、[B] 前一個空白）
+{1} is rumored to be in {2}. [C:5:0:1]This creature is known to be dead. [B]	據傳{1}在{2}。[C:5:0:1]已知這個生物已經死了。[B]	据说{1}在{2}。[C:5:0:1]已知这个生物已经死了。[B]		FUN_14080d5e0 L1158667-1158715 地圖說明段落（mtb）有換色句時只整段查：傳聞句＋各種附註組合（段落框收成單空白、[B] 前一個空白）
+{1} is rumored to be in {2}. [C:5:0:1]This creature is known to be dead. [C:2:0:1]You have been ordered to kill this creature. [B]	據傳{1}在{2}。[C:5:0:1]已知這個生物已經死了。[C:2:0:1]你奉命擊殺這個生物。[B]	据说{1}在{2}。[C:5:0:1]已知这个生物已经死了。[C:2:0:1]你奉命击杀这个生物。[B]		FUN_14080d5e0 L1158667-1158715 地圖說明段落（mtb）有換色句時只整段查：傳聞句＋各種附註組合（段落框收成單空白、[B] 前一個空白）
+{1} is rumored to be in {2}. [C:5:0:1]This creature is known to be dead. [C:2:0:1]You have been ordered to kill this creature. You should report the task as complete. [B]	據傳{1}在{2}。[C:5:0:1]已知這個生物已經死了。[C:2:0:1]你奉命擊殺這個生物。你該回報任務已完成。[B]	据说{1}在{2}。[C:5:0:1]已知这个生物已经死了。[C:2:0:1]你奉命击杀这个生物。你该汇报任务已完成。[B]		FUN_14080d5e0 L1158667-1158715 地圖說明段落（mtb）有換色句時只整段查：傳聞句＋各種附註組合（段落框收成單空白、[B] 前一個空白）
+{1} is rumored to be in {2}. [C:7:0:0]This is common knowledge where you are from. [B]	據傳{1}在{2}。[C:7:0:0]這在你的家鄉人盡皆知。[B]	据说{1}在{2}。[C:7:0:0]这在你的家乡人尽皆知。[B]		FUN_14080d5e0 L1158667-1158715 地圖說明段落（mtb）有換色句時只整段查：傳聞句＋各種附註組合（段落框收成單空白、[B] 前一個空白）
+{1} is rumored to be in {2}. [C:7:0:0]This is common knowledge where you are from. [C:2:0:1]You have been ordered to kill this creature. [B]	據傳{1}在{2}。[C:7:0:0]這在你的家鄉人盡皆知。[C:2:0:1]你奉命擊殺這個生物。[B]	据说{1}在{2}。[C:7:0:0]这在你的家乡人尽皆知。[C:2:0:1]你奉命击杀这个生物。[B]		FUN_14080d5e0 L1158667-1158715 地圖說明段落（mtb）有換色句時只整段查：傳聞句＋各種附註組合（段落框收成單空白、[B] 前一個空白）
+{1} is rumored to be in {2}. [C:7:0:0]This is common knowledge where you are from. [C:2:0:1]You have been ordered to kill this creature. You should report the task as complete. [B]	據傳{1}在{2}。[C:7:0:0]這在你的家鄉人盡皆知。[C:2:0:1]你奉命擊殺這個生物。你該回報任務已完成。[B]	据说{1}在{2}。[C:7:0:0]这在你的家乡人尽皆知。[C:2:0:1]你奉命击杀这个生物。你该汇报任务已完成。[B]		FUN_14080d5e0 L1158667-1158715 地圖說明段落（mtb）有換色句時只整段查：傳聞句＋各種附註組合（段落框收成單空白、[B] 前一個空白）
+{1} is rumored to be in {2}. [C:7:0:0]This is common knowledge where you are from. [C:5:0:1]This creature is known to be dead. [B]	據傳{1}在{2}。[C:7:0:0]這在你的家鄉人盡皆知。[C:5:0:1]已知這個生物已經死了。[B]	据说{1}在{2}。[C:7:0:0]这在你的家乡人尽皆知。[C:5:0:1]已知这个生物已经死了。[B]		FUN_14080d5e0 L1158667-1158715 地圖說明段落（mtb）有換色句時只整段查：傳聞句＋各種附註組合（段落框收成單空白、[B] 前一個空白）
+{1} is rumored to be in {2}. [C:7:0:0]This is common knowledge where you are from. [C:5:0:1]This creature is known to be dead. [C:2:0:1]You have been ordered to kill this creature. [B]	據傳{1}在{2}。[C:7:0:0]這在你的家鄉人盡皆知。[C:5:0:1]已知這個生物已經死了。[C:2:0:1]你奉命擊殺這個生物。[B]	据说{1}在{2}。[C:7:0:0]这在你的家乡人尽皆知。[C:5:0:1]已知这个生物已经死了。[C:2:0:1]你奉命击杀这个生物。[B]		FUN_14080d5e0 L1158667-1158715 地圖說明段落（mtb）有換色句時只整段查：傳聞句＋各種附註組合（段落框收成單空白、[B] 前一個空白）
+{1} is rumored to be in {2}. [C:7:0:0]This is common knowledge where you are from. [C:5:0:1]This creature is known to be dead. [C:2:0:1]You have been ordered to kill this creature. You should report the task as complete. [B]	據傳{1}在{2}。[C:7:0:0]這在你的家鄉人盡皆知。[C:5:0:1]已知這個生物已經死了。[C:2:0:1]你奉命擊殺這個生物。你該回報任務已完成。[B]	据说{1}在{2}。[C:7:0:0]这在你的家乡人尽皆知。[C:5:0:1]已知这个生物已经死了。[C:2:0:1]你奉命击杀这个生物。你该汇报任务已完成。[B]		FUN_14080d5e0 L1158667-1158715 地圖說明段落（mtb）有換色句時只整段查：傳聞句＋各種附註組合（段落框收成單空白、[B] 前一個空白）
+The death of {1}	{1}之死	{1}之死		FUN_1400d53a0 L131432 事件標題；{1} 人名或「a 生物」
+{1}'s production order violation	{1}的違反生產令	{1}的违反生产令		FUN_1400d53a0 L131505-131584 事件標題：主詞＋罪名（罪名用語同 sentences_justice）
+{1}'s export prohibition violation	{1}的違反出口禁令	{1}的违反出口禁令		FUN_1400d53a0 L131505-131584 事件標題：主詞＋罪名（罪名用語同 sentences_justice）
+{1}'s job order violation	{1}的違反工作令	{1}的违反工作令		FUN_1400d53a0 L131505-131584 事件標題：主詞＋罪名（罪名用語同 sentences_justice）
+{1}'s conspiracy to slow labor	{1}的怠工陰謀	{1}的怠工阴谋		FUN_1400d53a0 L131505-131584 事件標題：主詞＋罪名（罪名用語同 sentences_justice）
+{1}'s crime of murder	{1}的謀殺罪行	{1}的谋杀罪行		FUN_1400d53a0 L131505-131584 事件標題：主詞＋罪名（罪名用語同 sentences_justice）
+{1}'s disorderly conduct	{1}的擾亂秩序	{1}的扰乱秩序		FUN_1400d53a0 L131505-131584 事件標題：主詞＋罪名（罪名用語同 sentences_justice）
+{1}'s building destruction	{1}的破壞建築	{1}的破坏建筑		FUN_1400d53a0 L131505-131584 事件標題：主詞＋罪名（罪名用語同 sentences_justice）
+{1}'s vandalism	{1}的蓄意毀損	{1}的蓄意毁坏		FUN_1400d53a0 L131505-131584 事件標題：主詞＋罪名（罪名用語同 sentences_justice）
+{1}'s crime of theft	{1}的竊盜罪行	{1}的盗窃罪行		FUN_1400d53a0 L131505-131584 事件標題：主詞＋罪名（罪名用語同 sentences_justice）
+{1}'s crime of robbery	{1}的搶劫罪行	{1}的抢劫罪行		FUN_1400d53a0 L131505-131584 事件標題：主詞＋罪名（罪名用語同 sentences_justice）
+{1}'s crime of blood-drinking	{1}的吸血罪行	{1}的吸血罪行		FUN_1400d53a0 L131505-131584 事件標題：主詞＋罪名（罪名用語同 sentences_justice）
+{1}'s embezzlement	{1}的盜用公款	{1}的挪用公款		FUN_1400d53a0 L131505-131584 事件標題：主詞＋罪名（罪名用語同 sentences_justice）
+{1}'s crime of attempted murder	{1}的謀殺未遂罪行	{1}的谋杀未遂罪行		FUN_1400d53a0 L131505-131584 事件標題：主詞＋罪名（罪名用語同 sentences_justice）
+{1}'s crime of kidnapping	{1}的綁架罪行	{1}的绑架罪行		FUN_1400d53a0 L131505-131584 事件標題：主詞＋罪名（罪名用語同 sentences_justice）
+{1}'s crime of attempted kidnapping	{1}的綁架未遂罪行	{1}的绑架未遂罪行		FUN_1400d53a0 L131505-131584 事件標題：主詞＋罪名（罪名用語同 sentences_justice）
+{1}'s crime of attempted theft	{1}的竊盜未遂罪行	{1}的盗窃未遂罪行		FUN_1400d53a0 L131505-131584 事件標題：主詞＋罪名（罪名用語同 sentences_justice）
+{1}'s crime of treason	{1}的叛國罪行	{1}的叛国罪行		FUN_1400d53a0 L131505-131584 事件標題：主詞＋罪名（罪名用語同 sentences_justice）
+{1}'s crime of espionage	{1}的間諜罪行	{1}的间谍罪行		FUN_1400d53a0 L131505-131584 事件標題：主詞＋罪名（罪名用語同 sentences_justice）
+{1}'s bribery	{1}的賄賂	{1}的贿赂		FUN_1400d53a0 L131505-131584 事件標題：主詞＋罪名（罪名用語同 sentences_justice）
+Your attack on {1}	你對{1}的攻擊	你对{1}的攻击		FUN_1400d53a0 L131649 事件標題
+Your escalated attack on {1}	你對{1}的加強攻擊	你对{1}的加强攻击		FUN_1400d53a0 L131737 事件標題
+Your demand of submission from {1}	你要求{1}臣服	你要求{1}臣服		FUN_1400d53a0 L131994 事件標題
+{1}'s attack on you	{1}對你的攻擊	{1}对你的攻击		FUN_1400d53a0 L131649 事件標題
+{1}'s escalated attack on you	{1}對你的加強攻擊	{1}对你的加强攻击		FUN_1400d53a0 L131737 事件標題
+{1}'s demand of submission from you	{1}要求你臣服	{1}要求你臣服		FUN_1400d53a0 L131994 事件標題
+{1}'s attack on {2}	{1}對{2}的攻擊	{1}对{2}的攻击		FUN_1400d53a0 L131649 事件標題
+{1}'s escalated attack on {2}	{1}對{2}的加強攻擊	{1}对{2}的加强攻击		FUN_1400d53a0 L131737 事件標題
+{1}'s demand of submission from {2}	{1}要求{2}臣服	{1}要求{2}臣服		FUN_1400d53a0 L131994 事件標題
+Your reunion with {1}	你與{1}的重逢	你与{1}的重逢		FUN_1400d53a0 L131784 事件標題；{1} 人名或 somebody
+The reunion of {1} and {2}	{1}與{2}的重逢	{1}与{2}的重逢		FUN_1400d53a0 L131862 事件標題
+Your possession of {1} in {2} in {3}	你在{3}的{2}持有{1}	你在{3}的{2}持有{1}		FUN_1400d53a0 L132038-132337 事件標題（神器、作品）：主詞＋動作＋物品（＋ to 對象）（＋ in 建築 in 據點／in 地區）
+Your possession of {1} in {2}	你在{2}持有{1}	你在{2}持有{1}		FUN_1400d53a0 L132038-132337 事件標題（神器、作品）：主詞＋動作＋物品（＋ to 對象）（＋ in 建築 in 據點／in 地區）
+Your possession of {1}	你持有{1}	你持有{1}		FUN_1400d53a0 L132038-132337 事件標題（神器、作品）：主詞＋動作＋物品（＋ to 對象）（＋ in 建築 in 據點／in 地區）
+Your placement of {1} in {2} in {3}	你在{3}的{2}安置{1}	你在{3}的{2}安置{1}		FUN_1400d53a0 L132038-132337 事件標題（神器、作品）：主詞＋動作＋物品（＋ to 對象）（＋ in 建築 in 據點／in 地區）
+Your placement of {1} in {2}	你在{2}安置{1}	你在{2}安置{1}		FUN_1400d53a0 L132038-132337 事件標題（神器、作品）：主詞＋動作＋物品（＋ to 對象）（＋ in 建築 in 據點／in 地區）
+Your placement of {1}	你安置{1}	你安置{1}		FUN_1400d53a0 L132038-132337 事件標題（神器、作品）：主詞＋動作＋物品（＋ to 對象）（＋ in 建築 in 據點／in 地區）
+Your gaining of {1} in {2} in {3}	你在{3}的{2}獲得{1}	你在{3}的{2}获得{1}		FUN_1400d53a0 L132038-132337 事件標題（神器、作品）：主詞＋動作＋物品（＋ to 對象）（＋ in 建築 in 據點／in 地區）
+Your gaining of {1} in {2}	你在{2}獲得{1}	你在{2}获得{1}		FUN_1400d53a0 L132038-132337 事件標題（神器、作品）：主詞＋動作＋物品（＋ to 對象）（＋ in 建築 in 據點／in 地區）
+Your gaining of {1}	你獲得{1}	你获得{1}		FUN_1400d53a0 L132038-132337 事件標題（神器、作品）：主詞＋動作＋物品（＋ to 對象）（＋ in 建築 in 據點／in 地區）
+Your giving of {1} to you in {2} in {3}	你在{3}的{2}把{1}交給你	你在{3}的{2}把{1}交给你		FUN_1400d53a0 L132038-132337 事件標題（神器、作品）：主詞＋動作＋物品（＋ to 對象）（＋ in 建築 in 據點／in 地區）
+Your giving of {1} to you in {2}	你在{2}把{1}交給你	你在{2}把{1}交给你		FUN_1400d53a0 L132038-132337 事件標題（神器、作品）：主詞＋動作＋物品（＋ to 對象）（＋ in 建築 in 據點／in 地區）
+Your giving of {1} to you	你把{1}交給你	你把{1}交给你		FUN_1400d53a0 L132038-132337 事件標題（神器、作品）：主詞＋動作＋物品（＋ to 對象）（＋ in 建築 in 據點／in 地區）
+Your giving of {1} to {2} in {3} in {4}	你在{4}的{3}把{1}交給{2}	你在{4}的{3}把{1}交给{2}		FUN_1400d53a0 L132038-132337 事件標題（神器、作品）：主詞＋動作＋物品（＋ to 對象）（＋ in 建築 in 據點／in 地區）
+Your giving of {1} to {2} in {3}	你在{3}把{1}交給{2}	你在{3}把{1}交给{2}		FUN_1400d53a0 L132038-132337 事件標題（神器、作品）：主詞＋動作＋物品（＋ to 對象）（＋ in 建築 in 據點／in 地區）
+Your giving of {1} to {2}	你把{1}交給{2}	你把{1}交给{2}		FUN_1400d53a0 L132038-132337 事件標題（神器、作品）：主詞＋動作＋物品（＋ to 對象）（＋ in 建築 in 據點／in 地區）
+Your refusal to give {1} to you in {2} in {3}	你在{3}的{2}拒絕把{1}交給你	你在{3}的{2}拒绝把{1}交给你		FUN_1400d53a0 L132038-132337 事件標題（神器、作品）：主詞＋動作＋物品（＋ to 對象）（＋ in 建築 in 據點／in 地區）
+Your refusal to give {1} to you in {2}	你在{2}拒絕把{1}交給你	你在{2}拒绝把{1}交给你		FUN_1400d53a0 L132038-132337 事件標題（神器、作品）：主詞＋動作＋物品（＋ to 對象）（＋ in 建築 in 據點／in 地區）
+Your refusal to give {1} to you	你拒絕把{1}交給你	你拒绝把{1}交给你		FUN_1400d53a0 L132038-132337 事件標題（神器、作品）：主詞＋動作＋物品（＋ to 對象）（＋ in 建築 in 據點／in 地區）
+Your refusal to give {1} to {2} in {3} in {4}	你在{4}的{3}拒絕把{1}交給{2}	你在{4}的{3}拒绝把{1}交给{2}		FUN_1400d53a0 L132038-132337 事件標題（神器、作品）：主詞＋動作＋物品（＋ to 對象）（＋ in 建築 in 據點／in 地區）
+Your refusal to give {1} to {2} in {3}	你在{3}拒絕把{1}交給{2}	你在{3}拒绝把{1}交给{2}		FUN_1400d53a0 L132038-132337 事件標題（神器、作品）：主詞＋動作＋物品（＋ to 對象）（＋ in 建築 in 據點／in 地區）
+Your refusal to give {1} to {2}	你拒絕把{1}交給{2}	你拒绝把{1}交给{2}		FUN_1400d53a0 L132038-132337 事件標題（神器、作品）：主詞＋動作＋物品（＋ to 對象）（＋ in 建築 in 據點／in 地區）
+{1}'s possession of {2} in {3} in {4}	{1}在{4}的{3}持有{2}	{1}在{4}的{3}持有{2}		FUN_1400d53a0 L132038-132337 事件標題（神器、作品）：主詞＋動作＋物品（＋ to 對象）（＋ in 建築 in 據點／in 地區）
+{1}'s possession of {2} in {3}	{1}在{3}持有{2}	{1}在{3}持有{2}		FUN_1400d53a0 L132038-132337 事件標題（神器、作品）：主詞＋動作＋物品（＋ to 對象）（＋ in 建築 in 據點／in 地區）
+{1}'s possession of {2}	{1}持有{2}	{1}持有{2}		FUN_1400d53a0 L132038-132337 事件標題（神器、作品）：主詞＋動作＋物品（＋ to 對象）（＋ in 建築 in 據點／in 地區）
+{1}'s placement of {2} in {3} in {4}	{1}在{4}的{3}安置{2}	{1}在{4}的{3}安置{2}		FUN_1400d53a0 L132038-132337 事件標題（神器、作品）：主詞＋動作＋物品（＋ to 對象）（＋ in 建築 in 據點／in 地區）
+{1}'s placement of {2} in {3}	{1}在{3}安置{2}	{1}在{3}安置{2}		FUN_1400d53a0 L132038-132337 事件標題（神器、作品）：主詞＋動作＋物品（＋ to 對象）（＋ in 建築 in 據點／in 地區）
+{1}'s placement of {2}	{1}安置{2}	{1}安置{2}		FUN_1400d53a0 L132038-132337 事件標題（神器、作品）：主詞＋動作＋物品（＋ to 對象）（＋ in 建築 in 據點／in 地區）
+{1}'s gaining of {2} in {3} in {4}	{1}在{4}的{3}獲得{2}	{1}在{4}的{3}获得{2}		FUN_1400d53a0 L132038-132337 事件標題（神器、作品）：主詞＋動作＋物品（＋ to 對象）（＋ in 建築 in 據點／in 地區）
+{1}'s gaining of {2} in {3}	{1}在{3}獲得{2}	{1}在{3}获得{2}		FUN_1400d53a0 L132038-132337 事件標題（神器、作品）：主詞＋動作＋物品（＋ to 對象）（＋ in 建築 in 據點／in 地區）
+{1}'s gaining of {2}	{1}獲得{2}	{1}获得{2}		FUN_1400d53a0 L132038-132337 事件標題（神器、作品）：主詞＋動作＋物品（＋ to 對象）（＋ in 建築 in 據點／in 地區）
+{1}'s giving of {2} to you in {3} in {4}	{1}在{4}的{3}把{2}交給你	{1}在{4}的{3}把{2}交给你		FUN_1400d53a0 L132038-132337 事件標題（神器、作品）：主詞＋動作＋物品（＋ to 對象）（＋ in 建築 in 據點／in 地區）
+{1}'s giving of {2} to you in {3}	{1}在{3}把{2}交給你	{1}在{3}把{2}交给你		FUN_1400d53a0 L132038-132337 事件標題（神器、作品）：主詞＋動作＋物品（＋ to 對象）（＋ in 建築 in 據點／in 地區）
+{1}'s giving of {2} to you	{1}把{2}交給你	{1}把{2}交给你		FUN_1400d53a0 L132038-132337 事件標題（神器、作品）：主詞＋動作＋物品（＋ to 對象）（＋ in 建築 in 據點／in 地區）
+{1}'s giving of {2} to {3} in {4} in {5}	{1}在{5}的{4}把{2}交給{3}	{1}在{5}的{4}把{2}交给{3}		FUN_1400d53a0 L132038-132337 事件標題（神器、作品）：主詞＋動作＋物品（＋ to 對象）（＋ in 建築 in 據點／in 地區）
+{1}'s giving of {2} to {3} in {4}	{1}在{4}把{2}交給{3}	{1}在{4}把{2}交给{3}		FUN_1400d53a0 L132038-132337 事件標題（神器、作品）：主詞＋動作＋物品（＋ to 對象）（＋ in 建築 in 據點／in 地區）
+{1}'s giving of {2} to {3}	{1}把{2}交給{3}	{1}把{2}交给{3}		FUN_1400d53a0 L132038-132337 事件標題（神器、作品）：主詞＋動作＋物品（＋ to 對象）（＋ in 建築 in 據點／in 地區）
+{1}'s refusal to give {2} to you in {3} in {4}	{1}在{4}的{3}拒絕把{2}交給你	{1}在{4}的{3}拒绝把{2}交给你		FUN_1400d53a0 L132038-132337 事件標題（神器、作品）：主詞＋動作＋物品（＋ to 對象）（＋ in 建築 in 據點／in 地區）
+{1}'s refusal to give {2} to you in {3}	{1}在{3}拒絕把{2}交給你	{1}在{3}拒绝把{2}交给你		FUN_1400d53a0 L132038-132337 事件標題（神器、作品）：主詞＋動作＋物品（＋ to 對象）（＋ in 建築 in 據點／in 地區）
+{1}'s refusal to give {2} to you	{1}拒絕把{2}交給你	{1}拒绝把{2}交给你		FUN_1400d53a0 L132038-132337 事件標題（神器、作品）：主詞＋動作＋物品（＋ to 對象）（＋ in 建築 in 據點／in 地區）
+{1}'s refusal to give {2} to {3} in {4} in {5}	{1}在{5}的{4}拒絕把{2}交給{3}	{1}在{5}的{4}拒绝把{2}交给{3}		FUN_1400d53a0 L132038-132337 事件標題（神器、作品）：主詞＋動作＋物品（＋ to 對象）（＋ in 建築 in 據點／in 地區）
+{1}'s refusal to give {2} to {3} in {4}	{1}在{4}拒絕把{2}交給{3}	{1}在{4}拒绝把{2}交给{3}		FUN_1400d53a0 L132038-132337 事件標題（神器、作品）：主詞＋動作＋物品（＋ to 對象）（＋ in 建築 in 據點／in 地區）
+{1}'s refusal to give {2} to {3}	{1}拒絕把{2}交給{3}	{1}拒绝把{2}交给{3}		FUN_1400d53a0 L132038-132337 事件標題（神器、作品）：主詞＋動作＋物品（＋ to 對象）（＋ in 建築 in 據點／in 地區）
+Your self-identification to {1}	你向{1}表明身分	你向{1}表明身份		FUN_1400d53a0 L132391 事件標題
+Your refusal to identify to {1}	你拒絕向{1}表明身分	你拒绝向{1}表明身份		FUN_1400d53a0 L132437 事件標題
+{1}'s self-identification to {2}	{1}向{2}表明身分	{1}向{2}表明身份		FUN_1400d53a0 L132391 事件標題
+{1}'s refusal to identify to {2}	{1}拒絕向{2}表明身分	{1}拒绝向{2}表明身份		FUN_1400d53a0 L132437 事件標題
+{1}'s march toward {2}	{1}向{2}進軍	{1}向{2}进军		FUN_1400d7080 L132514 事件標題
+{1}'s march to reclaim {2}	{1}進軍收復{2}	{1}进军收复{2}		FUN_1400d7080 L132732 事件標題
+{1}'s march to found a site in {2}	{1}進軍{2}建立據點	{1}进军{2}建立据点		FUN_1400d7080 L132738 事件標題
+The abduction of {1}	{1}遭綁架	{1}遭绑架		FUN_1400d7080 L132523 事件標題
+The occupation of {1} by {2}	{2}佔領{1}	{2}占领{1}		FUN_1400d7080 L132592-132613 事件標題：據點 by 佔領者
+The occupation of {1}	{1}遭佔領	{1}遭占领		FUN_1400d7080 L132592 事件標題
+Your presence in {1}	你在{1}的行蹤	你在{1}的行踪		FUN_1400d7080 L132677 事件標題：據點或地區
+{1}'s presence in {2} in {3}	{1}在{2}的{3}的行蹤	{1}在{2}的{3}的行踪		FUN_140697740 L920394 交談選單（Adv01Talk 請求）：神器 in 據點 in 建築；要排在 {1}'s presence in {2} 前面
+{1}'s presence in {2}	{1}在{2}的行蹤	{1}在{2}的行踪		FUN_1400d7080 L132677、L132691 事件標題：人物或勢力
+{1}'s harassment of {2}	{1}騷擾{2}	{1}骚扰{2}		FUN_1400d7080 L132698-132753 事件標題：勢力＋harassment of 據點
+{1}'s abandonment of {2}	{1}放棄{2}	{1}放弃{2}		FUN_1400d7080 L132698-132753 事件標題：勢力＋abandonment of 據點
+{1}'s reclamation of {2}	{1}收復{2}	{1}收复{2}		FUN_1400d7080 L132698-132753 事件標題：勢力＋reclamation of 據點
+{1}'s foundation of {2}	{1}建立{2}	{1}建立{2}		FUN_1400d7080 L132698-132753 事件標題：勢力＋foundation of 據點
+{1}'s flight from {2}	{1}逃離{2}	{1}逃离{2}		FUN_1400d7080 L132702-132707 事件標題
+{1}'s withdrawal from  of {2}	{1}撤離{2}	{1}撤离{2}		FUN_1400d7080 L132745-132753 事件標題（遊戲把 's withdrawal from 和 of 接在一起，原文照抄）
+The insurrection in {1} against {2}	{1}反抗{2}的起義	{1}反抗{2}的起义		FUN_1400d7080 L132757-132764 事件標題
+The insurrection in {1}	{1}的起義	{1}的起义		FUN_1400d7080 L132757 事件標題
+The insurrection against {1}	反抗{1}的起義	反抗{1}的起义		FUN_1400d7080 L132757 事件標題
+The overthrow  of {1} in {2}	在{2}推翻{1}	在{2}推翻{1}		FUN_1400d7080 L132768-132778 事件標題（overthrow 後面兩個空白是原文）
+The overthrow  of {1}	推翻{1}	推翻{1}		FUN_1400d7080 L132771 事件標題
+The overthrow  in {1}	{1}的政權遭推翻	{1}的政权被推翻		FUN_1400d7080 L132771 事件標題
+The failed insurrection  against {1} in {2}	{2}反抗{1}的起義失敗	{2}反抗{1}的起义失败		FUN_1400d7080 L132782-132789 事件標題（兩個空白是原文）
+The failed insurrection  against {1}	反抗{1}的起義失敗	反抗{1}的起义失败		FUN_1400d7080 L132782 事件標題
+The failed insurrection  in {1}	{1}的起義失敗	{1}的起义失败		FUN_1400d7080 L132782 事件標題
+The insurrection crushed by {1} in {2}	{2}的起義遭{1}鎮壓	{2}的起义被{1}镇压		FUN_1400d7080 L132793-132800 事件標題
+The insurrection crushed by {1}	起義遭{1}鎮壓	起义被{1}镇压		FUN_1400d7080 L132793 事件標題
+The insurrection crushed in {1}	{1}的起義遭鎮壓	{1}的起义被镇压		FUN_1400d7080 L132793 事件標題
+Your ascension to {%1} of {2}	你晉升為{2}的{1}	你晋升为{2}的{1}		FUN_1400d7080 L132857-132902 事件標題：職位 of 勢力
+Your ascension to {%1}	你晉升為{1}	你晋升为{1}		FUN_1400d7080 L132857-132898 事件標題
+{1}'s ascension to {%2} of {3}	{1}晉升為{3}的{2}	{1}晋升为{3}的{2}		FUN_1400d7080 L132857-132902 事件標題：職位 of 勢力
+{1}'s ascension to {%2}	{1}晉升為{2}	{1}晋升为{2}		FUN_1400d7080 L132857-132898 事件標題
+{1}'s claim on {2}	{1}對{2}宣稱主權	{1}对{2}宣称主权		FUN_1400d7080 L132908-132911 事件標題
+{1}'s acceptance of {2}'s offer of tribute	{1}接受{2}的進貢提議	{1}接受{2}的进贡提议		FUN_1400d7080 L132914-132963 事件標題
+{1}'s refusal of {2}'s offer of tribute	{1}拒絕{2}的進貢提議	{1}拒绝{2}的进贡提议		FUN_1400d7080 L132914-132963 事件標題
+{1}'s acceptance of {2}'s demand for tribute	{1}接受{2}的納貢要求	{1}接受{2}的纳贡要求		FUN_1400d7080 L132914-132963 事件標題
+{1}'s refusal of {2}'s demand for tribute	{1}拒絕{2}的納貢要求	{1}拒绝{2}的纳贡要求		FUN_1400d7080 L132914-132963 事件標題
+{1}'s acceptance of {2}'s offer of peace	{1}接受{2}的和平提議	{1}接受{2}的和平提议		FUN_1400d7080 L132914-132963 事件標題
+{1}'s refusal of {2}'s offer of peace	{1}拒絕{2}的和平提議	{1}拒绝{2}的和平提议		FUN_1400d7080 L132914-132963 事件標題
+{1}'s cessation of tribute to {2}	{1}停止向{2}進貢	{1}停止向{2}进贡		FUN_1400d7080 L132969 事件標題
+The presence of {1} in {2} in {3}	{1}位於{2}的{3}	{1}位于{2}的{3}		FUN_1400d7080 L132973-132982 事件標題：神器 in 據點 in 建築
+The presence of {1} in {2}	{1}位於{2}	{1}位于{2}		FUN_1400d7080 L132973、L132986 事件標題
+The absence of {1} from {2}'s {3}	{1}不在{2}的{3}	{1}不在{2}的{3}		FUN_1400d7080 L133053-133062 事件標題：神器 from 據點's 建築
+The absence of {1} from {2}	{1}不在{2}	{1}不在{2}		FUN_1400d7080 L133053、L133067 事件標題
+Your lack of possession of {1}	你未持有{1}	你未持有{1}		FUN_1400d7080 L133077 事件標題
+{1}'s lack of possession of {2}	{1}未持有{2}	{1}未持有{2}		FUN_1400d7080 L133112 事件標題
+The destruction of {1}	{1}的毀滅	{1}的毁灭		FUN_1400d7080 L133119 事件標題
+You heard this on the {#1}st {@2} in the year {#3} from {4}.	你聽說此事是在 {3} 年{2}{1}日，從{4}那裡。	你听说此事是在 {3} 年{2}{1}日，从{4}那里。		FUN_1400d8440 L133522-133657、L133722-133851 事件說明：何時、從誰聽說（整句一行時才整句畫出）
+You heard this on the {#1}st {@2} in the year {#3}.	你聽說此事是在 {3} 年{2}{1}日。	你听说此事是在 {3} 年{2}{1}日。		FUN_1400d8440 同上（沒有消息來源）
+You last heard this on the {#1}st {@2} in the year {#3} from {4}.	你最後一次聽說此事是在 {3} 年{2}{1}日，從{4}那裡。	你最后一次听说此事是在 {3} 年{2}{1}日，从{4}那里。		FUN_1400d8440 L133522-133657、L133722-133851 事件說明：何時、從誰聽說（整句一行時才整句畫出）
+You last heard this on the {#1}st {@2} in the year {#3}.	你最後一次聽說此事是在 {3} 年{2}{1}日。	你最后一次听说此事是在 {3} 年{2}{1}日。		FUN_1400d8440 同上（沒有消息來源）
+You first heard this on the {#1}st {@2} in the year {#3} from {4}.	你最初聽說此事是在 {3} 年{2}{1}日，從{4}那裡。	你最初听说此事是在 {3} 年{2}{1}日，从{4}那里。		FUN_1400d8440 L133522-133657、L133722-133851 事件說明：何時、從誰聽說（整句一行時才整句畫出）
+You first heard this on the {#1}st {@2} in the year {#3}.	你最初聽說此事是在 {3} 年{2}{1}日。	你最初听说此事是在 {3} 年{2}{1}日。		FUN_1400d8440 同上（沒有消息來源）
+You heard this on the {#1}nd {@2} in the year {#3} from {4}.	你聽說此事是在 {3} 年{2}{1}日，從{4}那裡。	你听说此事是在 {3} 年{2}{1}日，从{4}那里。		FUN_1400d8440 L133522-133657、L133722-133851 事件說明：何時、從誰聽說（整句一行時才整句畫出）
+You heard this on the {#1}nd {@2} in the year {#3}.	你聽說此事是在 {3} 年{2}{1}日。	你听说此事是在 {3} 年{2}{1}日。		FUN_1400d8440 同上（沒有消息來源）
+You last heard this on the {#1}nd {@2} in the year {#3} from {4}.	你最後一次聽說此事是在 {3} 年{2}{1}日，從{4}那裡。	你最后一次听说此事是在 {3} 年{2}{1}日，从{4}那里。		FUN_1400d8440 L133522-133657、L133722-133851 事件說明：何時、從誰聽說（整句一行時才整句畫出）
+You last heard this on the {#1}nd {@2} in the year {#3}.	你最後一次聽說此事是在 {3} 年{2}{1}日。	你最后一次听说此事是在 {3} 年{2}{1}日。		FUN_1400d8440 同上（沒有消息來源）
+You first heard this on the {#1}nd {@2} in the year {#3} from {4}.	你最初聽說此事是在 {3} 年{2}{1}日，從{4}那裡。	你最初听说此事是在 {3} 年{2}{1}日，从{4}那里。		FUN_1400d8440 L133522-133657、L133722-133851 事件說明：何時、從誰聽說（整句一行時才整句畫出）
+You first heard this on the {#1}nd {@2} in the year {#3}.	你最初聽說此事是在 {3} 年{2}{1}日。	你最初听说此事是在 {3} 年{2}{1}日。		FUN_1400d8440 同上（沒有消息來源）
+You heard this on the {#1}rd {@2} in the year {#3} from {4}.	你聽說此事是在 {3} 年{2}{1}日，從{4}那裡。	你听说此事是在 {3} 年{2}{1}日，从{4}那里。		FUN_1400d8440 L133522-133657、L133722-133851 事件說明：何時、從誰聽說（整句一行時才整句畫出）
+You heard this on the {#1}rd {@2} in the year {#3}.	你聽說此事是在 {3} 年{2}{1}日。	你听说此事是在 {3} 年{2}{1}日。		FUN_1400d8440 同上（沒有消息來源）
+You last heard this on the {#1}rd {@2} in the year {#3} from {4}.	你最後一次聽說此事是在 {3} 年{2}{1}日，從{4}那裡。	你最后一次听说此事是在 {3} 年{2}{1}日，从{4}那里。		FUN_1400d8440 L133522-133657、L133722-133851 事件說明：何時、從誰聽說（整句一行時才整句畫出）
+You last heard this on the {#1}rd {@2} in the year {#3}.	你最後一次聽說此事是在 {3} 年{2}{1}日。	你最后一次听说此事是在 {3} 年{2}{1}日。		FUN_1400d8440 同上（沒有消息來源）
+You first heard this on the {#1}rd {@2} in the year {#3} from {4}.	你最初聽說此事是在 {3} 年{2}{1}日，從{4}那裡。	你最初听说此事是在 {3} 年{2}{1}日，从{4}那里。		FUN_1400d8440 L133522-133657、L133722-133851 事件說明：何時、從誰聽說（整句一行時才整句畫出）
+You first heard this on the {#1}rd {@2} in the year {#3}.	你最初聽說此事是在 {3} 年{2}{1}日。	你最初听说此事是在 {3} 年{2}{1}日。		FUN_1400d8440 同上（沒有消息來源）
+You heard this on the {#1}th {@2} in the year {#3} from {4}.	你聽說此事是在 {3} 年{2}{1}日，從{4}那裡。	你听说此事是在 {3} 年{2}{1}日，从{4}那里。		FUN_1400d8440 L133522-133657、L133722-133851 事件說明：何時、從誰聽說（整句一行時才整句畫出）
+You heard this on the {#1}th {@2} in the year {#3}.	你聽說此事是在 {3} 年{2}{1}日。	你听说此事是在 {3} 年{2}{1}日。		FUN_1400d8440 同上（沒有消息來源）
+You last heard this on the {#1}th {@2} in the year {#3} from {4}.	你最後一次聽說此事是在 {3} 年{2}{1}日，從{4}那裡。	你最后一次听说此事是在 {3} 年{2}{1}日，从{4}那里。		FUN_1400d8440 L133522-133657、L133722-133851 事件說明：何時、從誰聽說（整句一行時才整句畫出）
+You last heard this on the {#1}th {@2} in the year {#3}.	你最後一次聽說此事是在 {3} 年{2}{1}日。	你最后一次听说此事是在 {3} 年{2}{1}日。		FUN_1400d8440 同上（沒有消息來源）
+You first heard this on the {#1}th {@2} in the year {#3} from {4}.	你最初聽說此事是在 {3} 年{2}{1}日，從{4}那裡。	你最初听说此事是在 {3} 年{2}{1}日，从{4}那里。		FUN_1400d8440 L133522-133657、L133722-133851 事件說明：何時、從誰聽說（整句一行時才整句畫出）
+You first heard this on the {#1}th {@2} in the year {#3}.	你最初聽說此事是在 {3} 年{2}{1}日。	你最初听说此事是在 {3} 年{2}{1}日。		FUN_1400d8440 同上（沒有消息來源）
+The destruction of{1}	{1}的毀滅	{1}的毁灭		FUN_1400d53a0 L132170 事件標題（原文 of 後面沒有空白）

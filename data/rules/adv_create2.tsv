@@ -1,0 +1,57 @@
+en	zh-Hant	zh-Hans	align	note
+Your wanderings have led you to {1}, a {%2}.	你一路漂泊，來到了{2}{1}。	你一路漂泊，来到了{2}{1}。		FUN_14063c210 L860692–861607 背景分頁段落（wrap_text，句間兩空白逐句查）：沒有出身職業時（L860704）；{1} 據點名、{2} [dark ][種族形容詞 ]據點類型（既有句型翻）；下一句 You are a stranger here.
+You are a {%1} in {2}, a {%3}, and you have never strayed far from home.	你是{3}{2}的{1}，從未離家太遠。	你是{3}{2}的{1}，从未离家太远。		FUN_14063c210 L860692–861607 背景分頁段落（wrap_text，句間兩空白逐句查）：在家鄉出生（L860892–861035）；{1} 職業名、{2} 據點名、{3} 據點類型
+You emerged from the wilds and came to be a {%1} in {2}, a {%3}.	你從荒野中走出，成了{3}{2}的{1}。	你从荒野中走出，成了{3}{2}的{1}。		FUN_14063c210 L860692–861607 背景分頁段落（wrap_text，句間兩空白逐句查）：野外出身（L861038–861169）；{1} 職業名、{2} 據點名、{3} 據點類型
+You are a newly-minted {%1} of the great {2} in {3}, a {%4}.	你剛成為偉大的{2}麾下的{1}，住在{4}{3}。	你刚成为伟大的{2}麾下的{1}，住在{4}{3}。		FUN_14063c210 L860692–861607 背景分頁段落（wrap_text，句間兩空白逐句查）：取得職位（L861186–861287）；{1} 職位名（hearthperson）、{2} 領主名、{3} 據點名、{4} 據點類型；排在沒有領主的那條前；術語例外：Great
+You are a newly-minted {%1} in {2}, a {%3}.	你剛成為{3}{2}的{1}。	你刚成为{3}{2}的{1}。		FUN_14063c210 L860692–861607 背景分頁段落（wrap_text，句間兩空白逐句查）：同上，職位沒有在任者時
+Now you are finally a {%1} of the great {2} in {3}, a {%4}.	如今你終於成為偉大的{2}麾下的{1}，住在{4}{3}。	如今你终于成为伟大的{2}麾下的{1}，住在{4}{3}。		FUN_14063c210 L860692–861607 背景分頁段落（wrap_text，句間兩空白逐句查）：野外出身、取得職位（L861186）的第二句；欄位同 newly-minted；術語例外：Great
+Now you are finally a {%1} in {2}, a {%3}.	如今你終於成為{3}{2}的{1}。	如今你终于成为{3}{2}的{1}。		FUN_14063c210 L860692–861607 背景分頁段落（wrap_text，句間兩空白逐句查）：同上，職位沒有在任者時
+You are a dubious worshipper of {1}, the {%2}, and you belong to {3}.	你半信半疑地崇拜{2}{1}，也是{3}的一員。	你半信半疑地崇拜{2}{1}，也是{3}的一员。		FUN_14063c210 L860692–861607 背景分頁段落（wrap_text，句間兩空白逐句查）：信仰句（L861402–861604），虔誠度 <10；{1} 神名、{2} 神的說明（[種族 ]goddess／god／deity[ of 領域]、force[ which permeates 地名]、生物名，靠既有 inner 句型與本檔 force which permeates {1} 翻）、{3} 宗教勢力名
+You are a dubious worshipper of {1}, the {%2}.	你半信半疑地崇拜{2}{1}。	你半信半疑地崇拜{2}{1}。		FUN_14063c210 L860692–861607 背景分頁段落（wrap_text，句間兩空白逐句查）：信仰句（L861402–861604），虔誠度 <10；不屬於宗教勢力時
+You are a casual worshipper of {1}, the {%2}, and you belong to {3}.	你隨意地崇拜{2}{1}，也是{3}的一員。	你随意地崇拜{2}{1}，也是{3}的一员。		FUN_14063c210 L860692–861607 背景分頁段落（wrap_text，句間兩空白逐句查）：信仰句（L861402–861604），虔誠度 10–24；{1} 神名、{2} 神的說明（[種族 ]goddess／god／deity[ of 領域]、force[ which permeates 地名]、生物名，靠既有 inner 句型與本檔 force which permeates {1} 翻）、{3} 宗教勢力名
+You are a casual worshipper of {1}, the {%2}.	你隨意地崇拜{2}{1}。	你随意地崇拜{2}{1}。		FUN_14063c210 L860692–861607 背景分頁段落（wrap_text，句間兩空白逐句查）：信仰句（L861402–861604），虔誠度 10–24；不屬於宗教勢力時
+You are a worshipper of {1}, the {%2}, and you belong to {3}.	你崇拜{2}{1}，也是{3}的一員。	你崇拜{2}{1}，也是{3}的一员。		FUN_14063c210 L860692–861607 背景分頁段落（wrap_text，句間兩空白逐句查）：信仰句（L861402–861604），虔誠度 25–74（遊戲接空字串）；{1} 神名、{2} 神的說明（[種族 ]goddess／god／deity[ of 領域]、force[ which permeates 地名]、生物名，靠既有 inner 句型與本檔 force which permeates {1} 翻）、{3} 宗教勢力名
+You are a worshipper of {1}, the {%2}.	你崇拜{2}{1}。	你崇拜{2}{1}。		FUN_14063c210 L860692–861607 背景分頁段落（wrap_text，句間兩空白逐句查）：信仰句（L861402–861604），虔誠度 25–74（遊戲接空字串）；不屬於宗教勢力時
+You are a faithful worshipper of {1}, the {%2}, and you belong to {3}.	你虔誠地崇拜{2}{1}，也是{3}的一員。	你虔诚地崇拜{2}{1}，也是{3}的一员。		FUN_14063c210 L860692–861607 背景分頁段落（wrap_text，句間兩空白逐句查）：信仰句（L861402–861604），虔誠度 75–89；{1} 神名、{2} 神的說明（[種族 ]goddess／god／deity[ of 領域]、force[ which permeates 地名]、生物名，靠既有 inner 句型與本檔 force which permeates {1} 翻）、{3} 宗教勢力名
+You are a faithful worshipper of {1}, the {%2}.	你虔誠地崇拜{2}{1}。	你虔诚地崇拜{2}{1}。		FUN_14063c210 L860692–861607 背景分頁段落（wrap_text，句間兩空白逐句查）：信仰句（L861402–861604），虔誠度 75–89；不屬於宗教勢力時
+You are an ardent worshipper of {1}, the {%2}, and you belong to {3}.	你狂熱地崇拜{2}{1}，也是{3}的一員。	你狂热地崇拜{2}{1}，也是{3}的一员。		FUN_14063c210 L860692–861607 背景分頁段落（wrap_text，句間兩空白逐句查）：信仰句（L861402–861604），虔誠度 ≥90；{1} 神名、{2} 神的說明（[種族 ]goddess／god／deity[ of 領域]、force[ which permeates 地名]、生物名，靠既有 inner 句型與本檔 force which permeates {1} 翻）、{3} 宗教勢力名
+You are an ardent worshipper of {1}, the {%2}.	你狂熱地崇拜{2}{1}。	你狂热地崇拜{2}{1}。		FUN_14063c210 L860692–861607 背景分頁段落（wrap_text，句間兩空白逐句查）：信仰句（L861402–861604），虔誠度 ≥90；不屬於宗教勢力時
+force which permeates {1}	瀰漫於{1}的力量	弥漫于{1}的力量	inner	FUN_14063c210 L861500–861513 信仰句「, the force which permeates 地名」：只給 worshipper of／worship 句型的 {%n} 用；譯法同 legends_01 的力量首句
+{1} is the {@2} goddess of {%3} and {%4}.	{1}是掌管{3}與{4}的{2}女神。	{1}是掌管{3}与{4}的{2}女神。		FUN_14063dd90 L861971–862195 信仰分頁說明（wrap_text）：選了神祇；{2} 種族形容詞（和冒險者同族時省略）、{3}{4} 領域清單（倒序，最後一項前 and）；逐種寫死，不寫「{1} is the {%2}.」通用樣板
+{1} is the {@2} goddess of {%3}.	{1}是掌管{3}的{2}女神。	{1}是掌管{3}的{2}女神。		FUN_14063dd90 L861971–862195 信仰分頁說明（wrap_text）：同上，一個領域
+{1} is the {@2} goddess.	{1}是{2}女神。	{1}是{2}女神。		FUN_14063dd90 L861971–862195 信仰分頁說明（wrap_text）：同上，沒有領域
+{1} is the goddess of {%2} and {%3}.	{1}是掌管{2}與{3}的女神。	{1}是掌管{2}与{3}的女神。		FUN_14063dd90 L861971–862195 信仰分頁說明（wrap_text）：同上，和冒險者同族（不寫種族）
+{1} is the goddess of {%2}.	{1}是掌管{2}的女神。	{1}是掌管{2}的女神。		FUN_14063dd90 L861971–862195 信仰分頁說明（wrap_text）：同上，一個領域
+{1} is the goddess.	{1}是女神。	{1}是女神。		FUN_14063dd90 L861971–862195 信仰分頁說明（wrap_text）：同上，沒有領域
+{1} is the {@2} god of {%3} and {%4}.	{1}是掌管{3}與{4}的{2}神。	{1}是掌管{3}与{4}的{2}神。		FUN_14063dd90 L861971–862195 信仰分頁說明（wrap_text）：選了神祇；{2} 種族形容詞（和冒險者同族時省略）、{3}{4} 領域清單（倒序，最後一項前 and）；逐種寫死，不寫「{1} is the {%2}.」通用樣板
+{1} is the {@2} god of {%3}.	{1}是掌管{3}的{2}神。	{1}是掌管{3}的{2}神。		FUN_14063dd90 L861971–862195 信仰分頁說明（wrap_text）：同上，一個領域
+{1} is the {@2} god.	{1}是{2}神。	{1}是{2}神。		FUN_14063dd90 L861971–862195 信仰分頁說明（wrap_text）：同上，沒有領域
+{1} is the god of {%2} and {%3}.	{1}是掌管{2}與{3}的神。	{1}是掌管{2}与{3}的神。		FUN_14063dd90 L861971–862195 信仰分頁說明（wrap_text）：同上，和冒險者同族（不寫種族）
+{1} is the god of {%2}.	{1}是掌管{2}的神。	{1}是掌管{2}的神。		FUN_14063dd90 L861971–862195 信仰分頁說明（wrap_text）：同上，一個領域
+{1} is the god.	{1}是神。	{1}是神。		FUN_14063dd90 L861971–862195 信仰分頁說明（wrap_text）：同上，沒有領域
+{1} is the {@2} deity of {%3} and {%4}.	{1}是掌管{3}與{4}的{2}神祇。	{1}是掌管{3}与{4}的{2}神祇。		FUN_14063dd90 L861971–862195 信仰分頁說明（wrap_text）：選了神祇；{2} 種族形容詞（和冒險者同族時省略）、{3}{4} 領域清單（倒序，最後一項前 and）；逐種寫死，不寫「{1} is the {%2}.」通用樣板
+{1} is the {@2} deity of {%3}.	{1}是掌管{3}的{2}神祇。	{1}是掌管{3}的{2}神祇。		FUN_14063dd90 L861971–862195 信仰分頁說明（wrap_text）：同上，一個領域
+{1} is the {@2} deity.	{1}是{2}神祇。	{1}是{2}神祇。		FUN_14063dd90 L861971–862195 信仰分頁說明（wrap_text）：同上，沒有領域
+{1} is the deity of {%2} and {%3}.	{1}是掌管{2}與{3}的神祇。	{1}是掌管{2}与{3}的神祇。		FUN_14063dd90 L861971–862195 信仰分頁說明（wrap_text）：同上，和冒險者同族（不寫種族）
+{1} is the deity of {%2}.	{1}是掌管{2}的神祇。	{1}是掌管{2}的神祇。		FUN_14063dd90 L861971–862195 信仰分頁說明（wrap_text）：同上，一個領域
+{1} is the deity.	{1}是神祇。	{1}是神祇。		FUN_14063dd90 L861971–862195 信仰分頁說明（wrap_text）：同上，沒有領域
+{1} is the force which permeates {2}.	{1}是瀰漫於{2}的力量。	{1}是弥漫于{2}的力量。		FUN_14063dd90 L861971–862195 信仰分頁說明（wrap_text）：選了力量（force）；{2} 地名；譯法同 legends_01
+{1} is the force.	{1}是一股力量。	{1}是一股力量。		FUN_14063dd90 L861971–862195 信仰分頁說明（wrap_text）：同上，沒有所在地
+{1} is a religion whose adherents worship {2}, the {%3}.	{1}是一個宗教，信徒崇拜{3}{2}。	{1}是一个宗教，信徒崇拜{3}{2}。		FUN_14063dd90 L861971–862195 信仰分頁說明（wrap_text）：選了宗教（L862200–862216）；{2} 神名、{3} 神的說明（同 worshipper of 句型）；沒有神殿時才走 wrap_text，有神殿時見回報
+{1} is a religion whose adherents worship {2}, a {%3}.	{1}是一個宗教，信徒崇拜{3}{2}。	{1}是一个宗教，信徒崇拜{3}{2}。		FUN_14063dd90 L861971–862195 信仰分頁說明（wrap_text）：同上，崇拜對象不是神祇也不是力量（L862013–862068，, a ＋生物名）
+{1} is a religion.	{1}是一個宗教。	{1}是一个宗教。		FUN_14063dd90 L861971–862195 信仰分頁說明（wrap_text）：同上，崇拜對象查不到時
+{1} is a religion	{1}是一個宗教	{1}是一个宗教		FUN_14063dd90 L861971–862195 信仰分頁說明（wrap_text）：同上，崇拜對象的人物查不到時遊戲不加句號
+Nobody lives there and it is controlled by {1}.	那裡無人居住，由{1}掌控。	那里无人居住，由{1}掌控。		FUN_14063dd90 L861893–861956 家鄉分頁據點說明第二句（wrap_text）：人口 0；{1} 統治勢力名（FUN_140b92900）
+Few live there and it is controlled by {1}.	那裡人煙稀少，由{1}掌控。	那里人烟稀少，由{1}掌控。		FUN_14063dd90 L861893–861956 家鄉分頁據點說明第二句（wrap_text）：人口 1–9；{1} 統治勢力名（FUN_140b92900）
+A few dozen or less live there and it is controlled by {1}.	那裡住著數十人或更少，由{1}掌控。	那里住着数十人或更少，由{1}掌控。		FUN_14063dd90 L861893–861956 家鄉分頁據點說明第二句（wrap_text）：人口 10–24；{1} 統治勢力名（FUN_140b92900）
+Some dozens live there and it is controlled by {1}.	那裡住著好幾十人，由{1}掌控。	那里住着好几十人，由{1}掌控。		FUN_14063dd90 L861893–861956 家鄉分頁據點說明第二句（wrap_text）：人口 25–79；{1} 統治勢力名（FUN_140b92900）
+Roughly a hundred live there and it is controlled by {1}.	那裡住著約一百人，由{1}掌控。	那里住着约一百人，由{1}掌控。		FUN_14063dd90 L861893–861956 家鄉分頁據點說明第二句（wrap_text）：人口 80–119；{1} 統治勢力名（FUN_140b92900）
+Well over a hundred live there and it is controlled by {1}.	那裡住著一百多人，由{1}掌控。	那里住着一百多人，由{1}掌控。		FUN_14063dd90 L861893–861956 家鄉分頁據點說明第二句（wrap_text）：人口 120–174；{1} 統治勢力名（FUN_140b92900）；術語例外：well
+A few hundred live there and it is controlled by {1}.	那裡住著數百人，由{1}掌控。	那里住着数百人，由{1}掌控。		FUN_14063dd90 L861893–861956 家鄉分頁據點說明第二句（wrap_text）：人口 175–249；{1} 統治勢力名（FUN_140b92900）
+Several hundred live there and it is controlled by {1}.	那裡住著好幾百人，由{1}掌控。	那里住着好几百人，由{1}掌控。		FUN_14063dd90 L861893–861956 家鄉分頁據點說明第二句（wrap_text）：人口 250–749；{1} 統治勢力名（FUN_140b92900）
+A thousand live there and it is controlled by {1}.	那裡住著約一千人，由{1}掌控。	那里住着约一千人，由{1}掌控。		FUN_14063dd90 L861893–861956 家鄉分頁據點說明第二句（wrap_text）：人口 750–1499；{1} 統治勢力名（FUN_140b92900）
+A few thousand live there and it is controlled by {1}.	那裡住著數千人，由{1}掌控。	那里住着数千人，由{1}掌控。		FUN_14063dd90 L861893–861956 家鄉分頁據點說明第二句（wrap_text）：人口 1500–2499；{1} 統治勢力名（FUN_140b92900）
+Thousands live there and it is controlled by {1}.	那裡住著成千上萬人，由{1}掌控。	那里住着成千上万人，由{1}掌控。		FUN_14063dd90 L861893–861956 家鄉分頁據點說明第二句（wrap_text）：人口 ≥2500；{1} 統治勢力名（FUN_140b92900）
+They worship at {1}.	他們在{1}參拜。	他们在{1}参拜。		FUN_14063dd90 L862289–862480 信仰分頁宗教說明下方的神殿句（wrap_text）：{1} 神殿名
+Their temple {1} is ruined.	他們的神殿{1}已成廢墟。	他们的神殿{1}已成废墟。		FUN_14063dd90 L862289–862480 信仰分頁宗教說明下方的神殿句（wrap_text）：{1} 神殿名，神殿已毀
+{#1} of 20)	{1}/20格）	{1}/20格）		FUN_1401e8b20 L252722 教學步驟勾選清單／按鈕（fn_top_addst） L253944 房間挖掘進度：數字＋ of 20)，接在 Room completed ( 後面；譯文要有中文字，純標點外框不算命中

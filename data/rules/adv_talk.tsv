@@ -1,0 +1,187 @@
+en	zh-Hant	zh-Hans	align	note
+Start new conversation with {1}	與{1}展開新交談	与{1}开始新的交谈		FUN_1406b75a0 L931112 交談選單：{1} 對象稱呼（FUN_141331500）；遊戲依寬度把結尾截成「…」時（the Human baro...）照樣套上，截掉的名字照原文
+Bring up {%1}	提起{1}	提起{1}		FUN_140697740 L918345 等 case 0xc 提起事件：{1} 事件短語（同檔 inner 句型；攻擊用 _events.tsv 的 {1}'s attack on {2}）。整句條目（Bring up the journey together 等）先查
+Spread rumor of {%1}	散播傳聞：{1}	散布传闻：{1}		FUN_140697740 L919022 等 case 0xd 散播傳聞：{1} 傳聞短語（同檔 inner 句型）
+Summarize the conflict in which you slew {1}, {2}, {3}, {4} and {5}	概述你殺死{1}、{2}、{3}、{4}和{5}的那場衝突	概述你杀死{1}、{2}、{3}、{4}和{5}的那场冲突		FUN_140697740 L922567 case 0x76 衝突概述：你殺死的對象（最多五個，逗號與 and 相接；名字不一定翻得出來，所以逐個數量寫，不靠 lists.tsv）
+Summarize the conflict in which you slew {1}, {2}, {3} and {4}	概述你殺死{1}、{2}、{3}和{4}的那場衝突	概述你杀死{1}、{2}、{3}和{4}的那场冲突		FUN_140697740 L922567 case 0x76 衝突概述：你殺死的對象（最多五個，逗號與 and 相接；名字不一定翻得出來，所以逐個數量寫，不靠 lists.tsv）
+Summarize the conflict in which you slew {1}, {2} and {3}	概述你殺死{1}、{2}和{3}的那場衝突	概述你杀死{1}、{2}和{3}的那场冲突		FUN_140697740 L922567 case 0x76 衝突概述：你殺死的對象（最多五個，逗號與 and 相接；名字不一定翻得出來，所以逐個數量寫，不靠 lists.tsv）
+Summarize the conflict in which you slew {1} and {2}	概述你殺死{1}和{2}的那場衝突	概述你杀死{1}和{2}的那场冲突		FUN_140697740 L922567 case 0x76 衝突概述：你殺死的對象（最多五個，以逗號與 and 相接）
+Summarize the conflict in which you slew {@1} of {2}	概述你殺死{2}的{1}的那場衝突	概述你杀死{2}的{1}的那场冲突		FUN_140697740 L922641 case 0x76：你殺死的是某文明的生物（單一項）
+Summarize the conflict in which you slew {1}	概述你殺死{1}的那場衝突	概述你杀死{1}的那场冲突		FUN_140697740 L922567 case 0x76
+Summarize the conflict in which a {@1} of {2} attacked a {@3} of {4}	概述{2}的{1}攻擊{4}的{3}的那場衝突	概述{2}的{1}攻击{4}的{3}的那场冲突		FUN_140697740 L922388 case 0x76 攻擊者 attacked 被攻擊者：你／人名／the forces of 文明／a 生物名（of 文明）／somebody
+Summarize the conflict in which a {@1} of {2} attacked {3}	概述{2}的{1}攻擊{3}的那場衝突	概述{2}的{1}攻击{3}的那场冲突		FUN_140697740 L922388 case 0x76 攻擊者 attacked 被攻擊者：你／人名／the forces of 文明／a 生物名（of 文明）／somebody
+Summarize the conflict in which {1} attacked a {@2} of {3}	概述{1}攻擊{3}的{2}的那場衝突	概述{1}攻击{3}的{2}的那场冲突		FUN_140697740 L922388 case 0x76 攻擊者 attacked 被攻擊者：你／人名／the forces of 文明／a 生物名（of 文明）／somebody
+Summarize the conflict in which {1} attacked {2}	概述{1}攻擊{2}的那場衝突	概述{1}攻击{2}的那场冲突		FUN_140697740 L922388 case 0x76 攻擊者 attacked 被攻擊者：你／人名／the forces of 文明／a 生物名（of 文明）／somebody
+Summarize the conflict in which {%1} and {%2}	概述那場衝突：{1}，以及{2}	概述那场冲突：{1}，以及{2}		FUN_140697740 L922446–922543 case 0x76：遇害與死亡清單（逗號由 lists.tsv 接）
+Summarize the conflict in which {%1}	概述那場衝突：{1}	概述那场冲突：{1}		FUN_140697740 L922446–922543 case 0x76：只有一項
+ (This occurred {%1} in {2})	 （這是{1}在{2}發生的事）	 （这是{1}在{2}发生的事）		FUN_140697740 L922666 case 0x76 第二段：{1} 相對時間（FUN_140675670），{2} 據點、地區或地底層名
+ (This occurred {%1} at this location)	 （這是{1}在此地發生的事）	 （这是{1}在此地发生的事）		FUN_140697740 L922690 case 0x76 第二段
+ (This occurred {%1})	 （這是{1}發生的事）	 （这是{1}发生的事）		FUN_140697740 L922693 case 0x76 第二段：沒有地點
+Suggest traveling to {1} to find a relative	建議前往{1}尋找親人	建议去{1}寻找亲人		FUN_140697740 L921219 case 0x26
+Suggest traveling to {1}	建議前往{1}	建议去{1}		FUN_140697740 L921209 case 0x26：{1} 據點名
+Suggest talking to {1}	建議找{1}談談	建议找{1}谈谈		FUN_140697740 L921228 case 0x27：{1} 人名
+State {1}'s location to be {2}	說明{1}在{2}	说明{1}在{2}		FUN_140697740 L921287–921302 case 0x2e：{1} 人名，{2} 據點名
+State {1}'s location	說明{1}的所在	说明{1}的所在		FUN_140697740 L921293 case 0x2e：沒有據點
+Ask for directions to {1}	詢問前往{1}的路	询问去{1}的路		FUN_140697740 L921710 case 0x4d
+Ask for the whereabouts of {1}	詢問{1}的下落	询问{1}的下落		FUN_140697740 L921724 case 0x4e：{1} 人物稱呼（FUN_140b92f10）或身分名（FUN_140c3a590）
+Request a guide to {1}	請人帶路前往{1}	请人带路去{1}		FUN_140697740 L921768／L921782 case 0x4f、0x50：據點、人物或身分
+Provide directions to {1}	指點前往{1}的路	指点去{1}的路		FUN_140697740 L921826 case 0x51
+Provide the whereabouts of {1}	提供{1}的下落	提供{1}的下落		FUN_140697740 L921838 case 0x52
+Tell the listener that {1} is dead	告訴對方{1}已經死了	告诉对方{1}已经死了		FUN_140697740 L921876 case 0x54
+Recommend {1} as a guide	推薦{1}當嚮導	推荐{1}当向导		FUN_140697740 L921892 case 0x55
+Tell listener about {1}	向對方介紹{1}	向对方介绍{1}		FUN_140697740 L921918 case 0x57：{1} 建築名
+Go into {1}'s relationship with {2}	深入談{1}與{2}的關係	深入谈{1}和{2}的关系		FUN_140697740 L922106 case 0x67：{1}、{2} 文明名
+Give an order based on {1}'s relationship with {2}	依{1}與{2}的關係下令	按{1}和{2}的关系下令		FUN_140697740 L922263 case 0x6e
+Claim this site for yourself and {1}	將此地據為你與{1}所有	把此地据为你和{1}所有		FUN_140697740 L922143 case 0x68：{1} 團體名
+Summarize your views on the opposition to {1}	概述你對反抗{1}勢力的看法	概述你对反抗{1}势力的看法		FUN_140697740 L923172 case 0x93；排在 Summarize your views on {1} 前
+Summarize your views on {1}	概述你對{1}的看法	概述你对{1}的看法		FUN_140697740 L922704 case 0x77
+Summarize the hold of {1} on its territory	概述{1}對其領土的掌控	概述{1}对其领土的控制		FUN_140697740 L923138 case 0x91
+Summarize the local disposition of the forces of {1}	概述{1}軍隊在本地的部署	概述{1}军队在本地的部署		FUN_140697740 L923154 case 0x92
+Describe the refugees created by the attack of {1}	描述{1}的攻擊造成的難民	描述{1}的进攻造成的难民		FUN_140697740 L923181 case 0x94
+Demand that the listener drop {%1}	要求對方放下{1}	要求对方放下{1}		FUN_140697740 L922820 case 0x7f：{1} 物品名（FUN_140c65450）或 the object
+Ask the listener for the location of {%1}	詢問對方{1}在哪裡	询问对方{1}在哪里		FUN_140697740 L922869 case 0x82
+Suggest that the listener trade {%1}	建議對方交易{1}	建议对方交易{1}		FUN_140697740 L924705 case 0xde
+Accept that the listener will not trade {%1}	接受對方不交易{1}	接受对方不交易{1}		FUN_140697740 L924729 case 0xdf
+Demand that {1} pay homage to {2}	要求{1}向{2}稱臣	要求{1}向{2}称臣		FUN_140697740 L922895 case 0x83：{1}、{2} 文明名
+Agree to have {1} pay homage to {2}	同意讓{1}向{2}稱臣	同意让{1}向{2}称臣		FUN_140697740 L922918 case 0x84
+Refuse to have {1} pay homage to {2}	拒絕讓{1}向{2}稱臣	拒绝让{1}向{2}称臣		FUN_140697740 L922936 case 0x85；術語例外：refuse
+Offer to have {1} pay homage to {2}	提議讓{1}向{2}稱臣	提议让{1}向{2}称臣		FUN_140697740 L922954 case 0x86
+Agree to have {1} accept homage from {2}	同意讓{1}接受{2}稱臣	同意让{1}接受{2}称臣		FUN_140697740 L922977 case 0x87
+Refuse to have {1} accept homage from {2}	拒絕讓{1}接受{2}稱臣	拒绝让{1}接受{2}称臣		FUN_140697740 L922995 case 0x88；術語例外：refuse
+Cancel tribute from {1} to {2}	取消{1}對{2}的進貢	取消{1}对{2}的进贡		FUN_140697740 L923013 case 0x89
+Offer peace between {1} and {2}	提議{1}與{2}議和	提议{1}和{2}议和		FUN_140697740 L923036 case 0x8a
+Agree to make peace between {1} and {2}	同意{1}與{2}議和	同意{1}和{2}议和		FUN_140697740 L923053 case 0x8b
+Refuse to make peace between {1} and {2}	拒絕{1}與{2}議和	拒绝{1}和{2}议和		FUN_140697740 L923071 case 0x8c；術語例外：refuse
+Express astonishment at seeing {1}	對見到{1}表示驚訝	对见到{1}表示惊讶		FUN_140697740 L923098 case 0x8e
+Ask listener to adopt {1}	請對方收養{1}	请对方收养{1}		FUN_140697740 L923201 case 0x96
+Offer listener your position as someone of {1}	將你在{1}的某個職位讓給對方	把你在{1}的某个职位让给对方		FUN_140697740 L923367 case 0x9f：找不到職位時
+Offer listener your position as {%1} of {2}	將你身為{2}{1}的職位讓給對方	把你作为{2}{1}的职位让给对方		FUN_140697740 L923370 case 0x9f：{1} 職位名，{2} 文明或據點名
+Offer listener your position as {%1}	將你身為{1}的職位讓給對方	把你作为{1}的职位让给对方		FUN_140697740 L923370 case 0x9f
+Order free {%1}	點免費的{1}	点免费的{1}		FUN_140697740 L923648 case 0xb0 服務訂單：{1} 物品種類名（FUN_140a82c10）
+Order {%1} for {#2}	點{1}（{2}）	点{1}（{2}）		FUN_140697740 L923665 case 0xb0：{2} 價錢
+Rent room for {#1}	租房間（{1}）	租房间（{1}）		FUN_140697740 L923695 case 0xb1：{1} 價錢
+Extend room rental for {#1}	延長租房（{1}）	延长租房（{1}）		FUN_140697740 L923726 case 0xb2：{1} 價錢
+Ask to join {1}	請求加入{1}	请求加入{1}		FUN_140697740 L923767 case 0xb6：{1} 團體名
+Accept into {1}	接受對方加入{1}	接受对方加入{1}		FUN_140697740 L923788 case 0xb7
+Refuse request to join {1}	拒絕對方加入{1}的請求	拒绝对方加入{1}的请求		FUN_140697740 L923806 case 0xb8；術語例外：refuse
+Invite listener to join {1}	邀請對方加入{1}	邀请对方加入{1}		FUN_140697740 L923827 case 0xb9
+Accept invitation to join {1}	接受加入{1}的邀請	接受加入{1}的邀请		FUN_140697740 L923848 case 0xba
+Refuse invitation to join {1}	拒絕加入{1}的邀請	拒绝加入{1}的邀请		FUN_140697740 L923866 case 0xbb；術語例外：refuse
+Kick listener out of {1}	將對方逐出{1}	把对方赶出{1}		FUN_140697740 L923890 case 0xbc
+Leave {%1}	離開{1}	离开{1}		FUN_140697740 L923922 case 0xbe：{1} 團體名；用 {%1}（只收遊戲組過的名稱），免得切開「Leave editor and discard data」這類介面字串
+Provide the location of {1}	提供{1}的位置	提供{1}的位置		FUN_140697740 L924054 case 200：{1} 建築名；整句 Provide the location of specific place 先查
+Order listener to drive the forces of {1} from {2}	命令對方將{1}的軍隊逐出{2}	命令对方把{1}的军队赶出{2}		FUN_140697740 L924627 case 0xd8
+Order listener to drive {1} from {2}	命令對方將{1}逐出{2}	命令对方把{1}赶出{2}		FUN_140697740 L924612 case 0xd8：{1} 文明名，{2} 據點名
+Order listener to kill {1}	命令對方殺死{1}	命令对方杀死{1}		FUN_140697740 L924620 case 0xd8
+Discuss the missing artifact {1}	談談失蹤的神器{1}	谈谈失踪的神器{1}		FUN_140697740 L924643 case 0xd9
+Praise for returning {1}	稱讚對方歸還{1}	称赞对方归还{1}		FUN_140697740 L924649 case 0xda：{1} 神器名或 item
+Lay quest to retrieve {1}	交付取回{1}的任務	交付取回{1}的任务		FUN_140697740 L925069 case 0xfb：{1} 神器名或 item
+Charge to serve {%1}	命對方侍奉{1}	命对方侍奉{1}		FUN_140697740 L925091 case 0xfc：{1} 神祇領域名（FUN_140756690）
+Give {1} the {@2}	贈送{2}{1}	赠送{2}{1}		FUN_140697740 L925020 case 0xf7 贈送寵物：動物稱呼（FUN_140b92f10：名字 the 種類／the 種類／a 種類）；種類用 {@n}，免得切開「Give me a break.」這類句子
+Give the {@1}	贈送{1}	赠送{1}		FUN_140697740 L925020 case 0xf7 贈送寵物：動物稱呼（FUN_140b92f10：名字 the 種類／the 種類／a 種類）；種類用 {@n}，免得切開「Give me a break.」這類句子
+Give a {@1}	贈送{1}	赠送{1}		FUN_140697740 L925020 case 0xf7 贈送寵物：動物稱呼（FUN_140b92f10：名字 the 種類／the 種類／a 種類）；種類用 {@n}，免得切開「Give me a break.」這類句子
+Ask about {1}	打聽{1}	打听{1}		FUN_140697740 L923523 case 0xaa：{1} 人物稱呼或身分名；Ask about the deaths 等整句先查
+Give your opinion of {1}	說說你對{1}的看法	说说你对{1}的看法		FUN_140697740 L923564 case 0xab：{1} 人物稱呼或身分名
+Request duty or advice pertaining to service as a {%1}	請示{1}的職責或建議	请示{1}的职责或建议		FUN_140697740 L922186 case 0x6a：{1} 職位名（FUN_1415184a0）
+Ask to become a {%1}	請求成為{1}	请求成为{1}		FUN_140697740 L922210 case 0x6b
+Accept as a {%1}	接受對方成為{1}	接受对方成为{1}		FUN_140697740 L922231 case 0x6c
+Revoke listener's status as a {%1}	撤銷對方的{1}身分	撤销对方的{1}身份		FUN_140697740 L923239 case 0x99
+Invite listener to become a {%1}	邀請對方成為{1}	邀请对方成为{1}		FUN_140697740 L923260 case 0x9a
+Accept invitation to become a {%1}	接受成為{1}的邀請	接受成为{1}的邀请		FUN_140697740 L923281 case 0x9b
+Refuse invitation to become a {%1}	拒絕成為{1}的邀請	拒绝成为{1}的邀请		FUN_140697740 L923307 case 0x9d；術語例外：refuse
+Refuse request to become a {%1}	拒絕對方成為{1}的請求	拒绝对方成为{1}的请求		FUN_140697740 L923331 case 0x9e；術語例外：refuse
+Give report pertaining to service as a {%1}	回報身為{1}的任務	汇报作为{1}的任务		FUN_140697740 L923466 case 0xa6
+Ask to be made a {%1} for {2}	請求成為{2}的{1}	请求成为{2}的{1}		FUN_140697740 L924184 case 0xd2：{1} 職業，{2} 團體名
+Ask for {1} to made {%2} for {3}	請求讓{1}擔任{3}的{2}	请求让{1}担任{3}的{2}		FUN_140697740 L924280 case 0xd3：遊戲原文 to made（少 be）
+Grant listener work as {%1} for {2}	准許對方擔任{2}的{1}	准许对方担任{2}的{1}		FUN_140697740 L924380 case 0xd4
+Refuse listener work as {%1} for {2}	拒絕讓對方擔任{2}的{1}	拒绝让对方担任{2}的{1}		FUN_140697740 L924435 case 0xd5；術語例外：refuse
+ work as {%1} for {2}	 擔任{2}的{1}	 担任{2}的{1}		FUN_140697740 L924495／L924556 case 0xd6、0xd7：遊戲先接 Grant／Refuse＋團體名，再用指定（不是附加）寫入「 work as 」，所以畫出來只剩這段，開頭有空白
+State the value of {@1} (not your values)	表明{1}的價值（不合你的價值觀）	表明{1}的价值（不符合你的价值观）		FUN_140697740 L924023 case 0xc6：價值觀片語（FUN_140ee0380），對方價值觀與你不同時加括號
+State the value of {@1}	表明{1}的價值	表明{1}的价值		FUN_140697740 L924023 case 0xc6：價值觀片語（FUN_140ee0380）
+State the worthlessness of {@1} (not your values)	表明{1}毫無價值（不合你的價值觀）	表明{1}毫无价值（不符合你的价值观）		FUN_140697740 L924023 case 0xc6：價值觀片語（FUN_140ee0380），對方價值觀與你不同時加括號
+State the worthlessness of {@1}	表明{1}毫無價值	表明{1}毫无价值		FUN_140697740 L924023 case 0xc6：價值觀片語（FUN_140ee0380）
+State nuances of {@1} (not your values)	表明{1}的微妙之處（不合你的價值觀）	表明{1}的微妙之处（不符合你的价值观）		FUN_140697740 L924023 case 0xc6：價值觀片語（FUN_140ee0380），對方價值觀與你不同時加括號
+State nuances of {@1}	表明{1}的微妙之處	表明{1}的微妙之处		FUN_140697740 L924023 case 0xc6：價值觀片語（FUN_140ee0380）
+Argue the value of {@1} (not your values)	主張{1}的價值（不合你的價值觀）	主张{1}的价值（不符合你的价值观）		FUN_140697740 L924074 case 0xc9：價值觀片語（FUN_140ee0380），對方價值觀與你不同時加括號
+Argue the value of {@1}	主張{1}的價值	主张{1}的价值		FUN_140697740 L924074 case 0xc9：價值觀片語（FUN_140ee0380）
+Argue the worthlessness of {@1} (not your values)	主張{1}毫無價值（不合你的價值觀）	主张{1}毫无价值（不符合你的价值观）		FUN_140697740 L924074 case 0xc9：價值觀片語（FUN_140ee0380），對方價值觀與你不同時加括號
+Argue the worthlessness of {@1}	主張{1}毫無價值	主张{1}毫无价值		FUN_140697740 L924074 case 0xc9：價值觀片語（FUN_140ee0380）
+Argue nuances of {@1} (not your values)	主張{1}的微妙之處（不合你的價值觀）	主张{1}的微妙之处（不符合你的价值观）		FUN_140697740 L924074 case 0xc9：價值觀片語（FUN_140ee0380），對方價值觀與你不同時加括號
+Argue nuances of {@1}	主張{1}的微妙之處	主张{1}的微妙之处		FUN_140697740 L924074 case 0xc9：價值觀片語（FUN_140ee0380）
+the death of {1}	{1}的死亡	{1}的死亡	inner	FUN_140697740 L918323 事件 death（Bring up）：{1} 人名或 a＋生物名
+{1}'s death	{1}的死亡	{1}的死亡	inner	FUN_140697740 L919102 事件 death（Spread rumor of）
+your attack on {1}	你對{1}的攻擊	你对{1}的攻击	inner	FUN_140697740 L918559 事件 attack：{1}'s attack on {2} 用 _events.tsv 既有句型
+your escalated attack on {1}	你對{1}升級的攻擊	你对{1}升级的攻击	inner	FUN_140697740 L918607 事件 escalated attack
+your reunion with {1}	你與{1}的重逢	你与{1}的重逢	inner	FUN_140697740 L918639／L919410 事件 reunion
+the reunion of {1} and {2}	{1}與{2}的重逢	{1}与{2}的重逢	inner	FUN_140697740 L918665／L919433 事件 reunion
+your demand of submission from {1}	你要求{1}臣服	你要求{1}臣服	inner	FUN_140697740 L918716 事件 demand of submission
+your self-identification to {1}	你向{1}表明身分	你向{1}表明身份	inner	FUN_140697740 L918963 事件 self-identification：{1} 文明名
+your refusal to identify to {1}	你拒絕向{1}表明身分	你拒绝向{1}表明身份	inner	FUN_140697740 L919001 事件 refusal to identify
+your possession of {1} in {2} in {3}	你在{3}的{2}持有{1}	你在{3}的{2}持有{1}	inner	FUN_140697740 L918777–918848／L919547–919618 事件 artifact／written work（L918884）：{A} 神器或作品名；in 地點（in 建築 in 據點時先寫）
+your possession of {1} in {2}	你在{2}持有{1}	你在{2}持有{1}	inner	FUN_140697740 L918777–918848／L919547–919618 事件 artifact／written work（L918884）：{A} 神器或作品名；in 地點（in 建築 in 據點時先寫）
+your possession of {1}	你持有{1}	你持有{1}	inner	FUN_140697740 L918777–918848／L919547–919618 事件 artifact／written work（L918884）：{A} 神器或作品名；in 地點（in 建築 in 據點時先寫）
+your placement of {1} in {2} in {3}	你在{3}的{2}安放{1}	你在{3}的{2}安放{1}	inner	FUN_140697740 L918777–918848／L919547–919618 事件 artifact／written work（L918884）：{A} 神器或作品名；in 地點（in 建築 in 據點時先寫）
+your placement of {1} in {2}	你在{2}安放{1}	你在{2}安放{1}	inner	FUN_140697740 L918777–918848／L919547–919618 事件 artifact／written work（L918884）：{A} 神器或作品名；in 地點（in 建築 in 據點時先寫）
+your placement of {1}	你安放{1}	你安放{1}	inner	FUN_140697740 L918777–918848／L919547–919618 事件 artifact／written work（L918884）：{A} 神器或作品名；in 地點（in 建築 in 據點時先寫）
+your gaining of {1} in {2} in {3}	你在{3}的{2}取得{1}	你在{3}的{2}取得{1}	inner	FUN_140697740 L918777–918848／L919547–919618 事件 artifact／written work（L918884）：{A} 神器或作品名；in 地點（in 建築 in 據點時先寫）
+your gaining of {1} in {2}	你在{2}取得{1}	你在{2}取得{1}	inner	FUN_140697740 L918777–918848／L919547–919618 事件 artifact／written work（L918884）：{A} 神器或作品名；in 地點（in 建築 in 據點時先寫）
+your gaining of {1}	你取得{1}	你取得{1}	inner	FUN_140697740 L918777–918848／L919547–919618 事件 artifact／written work（L918884）：{A} 神器或作品名；in 地點（in 建築 in 據點時先寫）
+your giving of {1} to {2} in {3} in {4}	你在{4}的{3}將{1}交給{2}	你在{4}的{3}把{1}交给{2}	inner	FUN_140697740 L918777–918848／L919547–919618 事件 artifact／written work（L918884）：{A} 神器或作品名；in 地點（in 建築 in 據點時先寫）
+your giving of {1} to {2} in {3}	你在{3}將{1}交給{2}	你在{3}把{1}交给{2}	inner	FUN_140697740 L918777–918848／L919547–919618 事件 artifact／written work（L918884）：{A} 神器或作品名；in 地點（in 建築 in 據點時先寫）
+your giving of {1} to {2}	你將{1}交給{2}	你把{1}交给{2}	inner	FUN_140697740 L918777–918848／L919547–919618 事件 artifact／written work（L918884）：{A} 神器或作品名；in 地點（in 建築 in 據點時先寫）
+your refusal to give {1} to {2} in {3} in {4}	你在{4}的{3}拒絕將{1}交給{2}	你在{4}的{3}拒绝把{1}交给{2}	inner	FUN_140697740 L918777–918848／L919547–919618 事件 artifact／written work（L918884）：{A} 神器或作品名；in 地點（in 建築 in 據點時先寫）
+your refusal to give {1} to {2} in {3}	你在{3}拒絕將{1}交給{2}	你在{3}拒绝把{1}交给{2}	inner	FUN_140697740 L918777–918848／L919547–919618 事件 artifact／written work（L918884）：{A} 神器或作品名；in 地點（in 建築 in 據點時先寫）
+your refusal to give {1} to {2}	你拒絕將{1}交給{2}	你拒绝把{1}交给{2}	inner	FUN_140697740 L918777–918848／L919547–919618 事件 artifact／written work（L918884）：{A} 神器或作品名；in 地點（in 建築 in 據點時先寫）
+the telling of the story of {1} at {2}	在{2}講述{1}故事的那場表演	在{2}讲述{1}故事的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：結尾 at {2} 是場所名
+the telling of the story of {1}	講述{1}故事的那場表演	讲述{1}故事的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：{1} 作品名或 history／a poem／music／dance、講道主題
+your telling of the story of {1} at {2}	你在{2}講述{1}故事的那場表演	你在{2}讲述{1}故事的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：結尾 at {2} 是場所名
+your telling of the story of {1}	你講述{1}故事的那場表演	你讲述{1}故事的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：{1} 作品名或 history／a poem／music／dance、講道主題
+the recitation of {1} at {2}	在{2}朗誦{1}的那場表演	在{2}朗诵{1}的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：結尾 at {2} 是場所名
+the recitation of {1}	朗誦{1}的那場表演	朗诵{1}的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：{1} 作品名或 history／a poem／music／dance、講道主題
+your recitation of {1} at {2}	你在{2}朗誦{1}的那場表演	你在{2}朗诵{1}的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：結尾 at {2} 是場所名
+your recitation of {1}	你朗誦{1}的那場表演	你朗诵{1}的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：{1} 作品名或 history／a poem／music／dance、講道主題
+the performance of {1} at {2}	在{2}{1}的那場表演	在{2}{1}的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：結尾 at {2} 是場所名
+the performance of {1}	{1}的那場表演	{1}的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：{1} 作品名或 history／a poem／music／dance、講道主題
+your performance of {1} at {2}	你在{2}表演{1}的那場演出	你在{2}表演{1}的那场演出	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：結尾 at {2} 是場所名
+your performance of {1}	你表演{1}的那場演出	你表演{1}的那场演出	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：{1} 作品名或 history／a poem／music／dance、講道主題
+your singing of {1} at {2}	你在{2}演唱{1}的那場表演	你在{2}演唱{1}的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：結尾 at {2} 是場所名
+your singing of {1}	你演唱{1}的那場表演	你演唱{1}的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：{1} 作品名或 history／a poem／music／dance、講道主題
+your playing of {1} at {2}	你在{2}演奏{1}的那場表演	你在{2}演奏{1}的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：結尾 at {2} 是場所名
+your playing of {1}	你演奏{1}的那場表演	你演奏{1}的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：{1} 作品名或 history／a poem／music／dance、講道主題
+your speaking of {1} at {2}	你在{2}朗讀{1}的那場表演	你在{2}朗读{1}的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：結尾 at {2} 是場所名
+your speaking of {1}	你朗讀{1}的那場表演	你朗读{1}的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：{1} 作品名或 history／a poem／music／dance、講道主題
+your chanting of {1} at {2}	你在{2}吟誦{1}的那場表演	你在{2}吟诵{1}的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：結尾 at {2} 是場所名
+your chanting of {1}	你吟誦{1}的那場表演	你吟诵{1}的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：{1} 作品名或 history／a poem／music／dance、講道主題
+your dancing of {1} at {2}	你在{2}跳{1}的那場表演	你在{2}跳{1}的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：結尾 at {2} 是場所名
+your dancing of {1}	你跳{1}的那場表演	你跳{1}的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：{1} 作品名或 history／a poem／music／dance、講道主題
+the sermon on {1} at {2}	在{2}以{1}為題的講道	在{2}以{1}为题的布道	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：結尾 at {2} 是場所名
+the sermon on {1}	以{1}為題的講道	以{1}为题的布道	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：{1} 作品名或 history／a poem／music／dance、講道主題
+your sermon on {1} at {2}	你在{2}以{1}為題的講道	你在{2}以{1}为题的布道	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：結尾 at {2} 是場所名
+your sermon on {1}	你以{1}為題的講道	你以{1}为题的布道	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：{1} 作品名或 history／a poem／music／dance、講道主題
+{1}'s march	{1}的進軍	{1}的进军	inner	FUN_140697740 L919028／L919995 傳聞：沒有目的地時
+the abduction of {1}	{1}遭到綁架	{1}遭到绑架	inner	FUN_140697740 L919056 傳聞 1
+the occupation of {1} by {2}	{1}遭到{2}佔領	{1}遭到{2}占领	inner	FUN_140697740 L919786 傳聞 3：{1} 據點名，{2} 勢力名
+the occupation of {1}	{1}遭到佔領	{1}遭到占领	inner	FUN_140697740 L919786 傳聞 3
+your presence in {1}	你出現在{1}	你出现在{1}	inner	FUN_140697740 L919828 傳聞 4：{1} 據點或地區名
+{1}'s presence	{1}的行蹤	{1}的行踪	inner	FUN_140697740 L919828／L919860 傳聞 4、5
+{1}'s harassment	{1}的侵擾	{1}的侵扰	inner	FUN_140697740 L919882 傳聞 6
+{1}'s flight	{1}的逃亡	{1}的逃亡	inner	FUN_140697740 L919907 傳聞 7
+{1}'s abandonment	{1}的棄守	{1}的弃守	inner	FUN_140697740 L919929 傳聞 8
+{1}'s reclamation	{1}的收復	{1}的收复	inner	FUN_140697740 L919951 傳聞 9
+{1}'s foundation	{1}建立新據點	{1}建立新据点	inner	FUN_140697740 L919973 傳聞 10
+{1}'s withdrawal from 	{1}的撤離	{1}的撤离	inner	FUN_140697740 L920039 傳聞 0xd：沒有據點時結尾留著空白
+your ascension to {%1} of {2}	你晉升為{2}的{1}	你晋升为{2}的{1}	inner	FUN_140697740 L920167 傳聞 0x10：{1} 職位名，{2} 文明或據點名
+your ascension to {%1}	你晉升為{1}	你晋升为{1}	inner	FUN_140697740 L920167 傳聞 0x10
+{1}'s ascension	{1}的晉升	{1}的晋升	inner	FUN_140697740 L920167 傳聞 0x10
+{1}'s claim	{1}宣示主權	{1}宣示主权	inner	FUN_140697740 L920203 傳聞 0x11
+your lack of possession of {1}	你並未持有{1}	你并未持有{1}	inner	FUN_140697740 L920560 傳聞 0x20
+{1}'s absence from {2}'s {3}	{1}不在{2}的{3}	{1}不在{2}的{3}	inner	FUN_140697740 L920510 傳聞 0x1d：據點 {2} 的建築 {3}
+{1}'s absence from {2}	{1}不在{2}	{1}不在{2}	inner	FUN_140697740 L920502 傳聞 0x1d–0x1f
+{1}'s destruction	{1}遭到摧毀	{1}遭到摧毁	inner	FUN_140697740 L920599 傳聞 0x21：{1} 神器名
+{1} was slainby a {@2} of {3}	{1}被{3}的{2}殺害	{1}被{3}的{2}杀害	inner	FUN_140697740 L922458 衝突概述：遊戲在 slain 後直接接 by（少空白）
+{1} was slainby a {@2}	{1}被{2}殺害	{1}被{2}杀害	inner	FUN_140697740 L922458 衝突概述（少空白）
+{1} was slainby the forces of {2}	{1}被{2}的軍隊殺害	{1}被{2}的军队杀害	inner	FUN_140697740 L922453 衝突概述（少空白）
+{1} was slain by {2}	{1}被{2}殺害	{1}被{2}杀害	inner	FUN_140697740 L922476 衝突概述
+{1} was slain	{1}遇害	{1}遇害	inner	FUN_140697740 L922446 衝突概述：死因不明
+a member of {1} died	{1}的一名成員死亡	{1}的一名成员死亡	inner	FUN_140697740 L922527 衝突概述
+the forces of {1} died	{1}的部隊有人死亡	{1}的部队有人死亡	inner	FUN_140697740 L922530 衝突概述

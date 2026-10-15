@@ -2,10 +2,12 @@
 //!
 //! 版面、裁切、顏色都交給遊戲原本的函式處理；這裡只多做一件事：在佔位格的
 //! screentexpos 填字圖、在 screentexpos_flag 加 ADDCOLOR，讓渲染器用該格前景色為白色字圖上色。
-//! 另外攔段落排版函式（mtb_set_width），把自動換行的長文改寫成中文的行（見 mtb.rs）；
-//! 也攔錨定貼圖函式（add_anchored_tile），翻譯逐字畫成貼圖的分頁標籤（見 hook_add_anchored_tile）。
+//! 另外攔段落排版函式（mtb_set_width），把自動換行的長文改寫成中文的行（見 mtb.rs）；自動換行（wrap_lines）同理（見 lines.rs）；
+//! 也攔錨定貼圖函式（add_anchored_tile），翻譯逐字畫成貼圖的分頁標籤（見 hook_add_anchored_tile）；
+//! 以及 std::string::resize，記下遊戲截成「開頭...」之前的原文（見 lookup）。
 
-use std::collections::HashSet;
+use std::cell::RefCell;
+use std::collections::{HashSet, VecDeque};
 use std::ffi::CStr;
 use std::fs::File;
 use std::io::Write;
@@ -86,19 +88,23 @@ type ColoredFn = unsafe extern "C" fn(*mut u8, *const u8, *const u8);
 type SetWidthFn = unsafe extern "C" fn(*mut u8, i32);
 /// (gps, 貼圖, 錨點 x, 錨點 y, 寬幾格, 高幾格, 用畫面顏色上色)
 type AnchoredFn = unsafe extern "C" fn(*mut u8, i32, i32, i32, i32, i32, u8);
-/// (切好的行要接在後面的 vector<string*>, 原文, 寬幾格)
-type WrapFn = unsafe extern "C" fn(*mut u8, *const StdString, i32);
+/// (切好的行要接在後面的 vector<string*>, 要切的幾段字串（接成一句）vector<string*>, 寬幾格)
+type WrapFn = unsafe extern "C" fn(*mut u8, *const u8, i32);
 /// (color_text_boxst：開頭是 vector<color_text_linest*>, 含換色標記的原文)
 type CtbAddFn = unsafe extern "C" fn(*mut u8, *const StdString);
 /// (language_name, 輸出的英文名, 每段字首大寫, 只要第一段)
 type NameFn = unsafe extern "C" fn(*const u8, *mut StdString, u8, u8);
+/// (std::string, 新長度, 變長時的填充字元)
+type ResizeFn = unsafe extern "C" fn(*mut StdString, usize, u8);
+/// (viewscreen)
+type ScreenFn = unsafe extern "C" fn(*mut u8);
 
-pub const HOOKS: [&str; 9] = [
-    "addst", "addst_flag", "top_addst", "addcoloredst", "mtb_set_width", "add_anchored_tile", "wrap_text", "ctb_add_string",
-    "translate_name",
+pub const HOOKS: [&str; 12] = [
+    "addst", "addst_flag", "top_addst", "addcoloredst", "mtb_set_width", "add_anchored_tile", "wrap_lines", "ctb_add_string",
+    "translate_name", "string_resize", "adv_appearance", "adv_personality",
 ];
-static TRAMPOLINES: [AtomicUsize; 9] = [const { AtomicUsize::new(0) }; 9];
-/// wrap_text 的位址：enable 時從呼叫它的程式碼找出遊戲啟動時就切好的提示（見 lines.rs）
+static TRAMPOLINES: [AtomicUsize; 12] = [const { AtomicUsize::new(0) }; 12];
+/// wrap_text 的位址（只登記、不攔；它切行時呼叫 wrap_lines）：enable 時從呼叫它的程式碼找出遊戲啟動時就切好的提示（見 lines.rs）
 pub static WRAP_TEXT: OnceLock<usize> = OnceLock::new();
 
 struct Detours(Vec<RawDetour>);
@@ -107,6 +113,10 @@ unsafe impl Send for Detours {}
 static DETOURS: Mutex<Detours> = Mutex::new(Detours(Vec::new()));
 
 pub fn attach(name: &str, target: usize) -> Result<(), String> {
+    if name == "wrap_text" {
+        let _ = WRAP_TEXT.set(target);
+        return Ok(());
+    }
     let index = HOOKS.iter().position(|h| *h == name).ok_or_else(|| format!("unknown hook {name}"))?;
     let hook: *const () = match index {
         0 => hook_addst as *const (),
@@ -115,16 +125,16 @@ pub fn attach(name: &str, target: usize) -> Result<(), String> {
         3 => hook_addcoloredst as *const (),
         4 => hook_mtb_set_width as *const (),
         5 => hook_add_anchored_tile as *const (),
-        6 => hook_wrap_text as *const (),
+        6 => hook_wrap_lines as *const (),
         7 => hook_ctb_add_string as *const (),
-        _ => hook_translate_name as *const (),
+        8 => hook_translate_name as *const (),
+        9 => hook_string_resize as *const (),
+        10 => hook_adv_appearance as *const (),
+        _ => hook_adv_personality as *const (),
     };
     let detour = unsafe { RawDetour::new(target as *const (), hook) }.map_err(|e| e.to_string())?;
     TRAMPOLINES[index].store(detour.trampoline() as *const () as usize, Ordering::Release);
     DETOURS.lock().0.push(detour);
-    if name == "wrap_text" {
-        let _ = WRAP_TEXT.set(target);
-    }
     Ok(())
 }
 
@@ -242,7 +252,26 @@ fn lookup<'a>(dict: &'a Dict, key: &[u8], y: i32) -> Option<Found<'a>> {
     if let Some(entry) = screen.or_else(|| dict.entries.get(key)) {
         return Some(Found::Fixed(entry));
     }
+    // 遊戲截短的字串（`Start new conversation with the Human baro...`）：翻截短前的原文再截短
+    if let Some(e) = cut_original(key).and_then(|full| lookup(dict, &full, y)).and_then(|f| dict.cut_entry(key, &f.text)) {
+        return Some(Found::Rule(e));
+    }
     dict.rule_entry(key).map(Found::Rule)
+}
+
+// ---- 截短前的原文 ----
+
+thread_local! {
+    /// 這個執行緒最近被縮短的字串原文（新的在後）。遊戲在同一個執行緒縮短後馬上接「...」畫出來，留幾筆就夠；
+    /// 每個執行緒各記各的，世界生成等其他執行緒的縮短不會擠掉或混進畫面這邊的紀錄。
+    static CUTS: RefCell<VecDeque<Vec<u8>>> = const { RefCell::new(VecDeque::new()) };
+}
+const CUTS_KEEP: usize = 16;
+
+/// 截短的字串（`開頭...`）的原文：這個執行緒最近縮短過、比它長、開頭相同的那筆（同一清單好幾筆開頭相同時，剛縮短的就是正要畫的）。
+fn cut_original(key: &[u8]) -> Option<Vec<u8>> {
+    let head = key.strip_suffix(b"...")?;
+    CUTS.with_borrow(|cuts| cuts.iter().rev().find(|f| f.len() > key.len() && f.starts_with(head)).cloned())
 }
 
 /// 共用流程：查字典（整句、再句型規則），命中就讓 `write` 寫替身字串，再貼字圖。回傳 false 表示要照原樣呼叫原函式。
@@ -256,6 +285,9 @@ unsafe fn translate_call(gps: *mut u8, kind: &str, key: &[u8], space: i32, layer
     }
     let dict = unsafe { &*dict };
     let (x0, y): (i32, i32) = unsafe { (read(gps, layout.screenx), read(gps, layout.screeny)) };
+    if !dict.verbatim_screens.is_empty() && dict.keeps_word(key, &FOCUS.lock()) {
+        return false;
+    }
     let Some(entry) = lookup(dict, key, y) else {
         note_miss(kind, key);
         return false;
@@ -427,18 +459,73 @@ unsafe extern "C" fn hook_mtb_set_width(mtb: *mut u8, width: i32) {
     unsafe { crate::mtb::rewrite(mtb as usize, &*dict, |key| note_miss("mtb", key)) };
 }
 
-/// 自動換行：原函式把一句切成好幾行、接在 out 後面；替這次切出來的行訂畫字計畫（見 lines.rs）。
-unsafe extern "C" fn hook_wrap_text(out: *mut u8, text: *const StdString, width: i32) {
+/// 自動換行（wrap_text 內部真正切行的函式；宗教說明、冒險日誌等也直接呼叫它）：原函式把接成一句的幾段字串
+/// （vector<string*>）依寬度切成好幾行、接在 out 後面；替這次切出來的行訂畫字計畫（見 lines.rs）。
+unsafe extern "C" fn hook_wrap_lines(out: *mut u8, input: *const u8, width: i32) {
     let orig: WrapFn = unsafe { std::mem::transmute(TRAMPOLINES[6].load(Ordering::Acquire)) };
     let before = unsafe { crate::lines::vec_len(out as usize) };
-    unsafe { orig(out, text, width) };
+    unsafe { orig(out, input, width) };
     let dict = DICT.load(Ordering::Acquire);
     if dict.is_null() || !ENABLED.load(Ordering::Relaxed) {
         return;
     }
     unsafe {
+        let parts = crate::lines::vec_items(input as usize);
+        let text: Vec<u8> = parts.iter().flat_map(|&s| crate::lines::str_bytes(s)).copied().collect();
         let lines = crate::lines::vec_items(out as usize);
-        crate::lines::plan(&lines[before.min(lines.len())..], (*text).bytes(), width, &*dict, false);
+        crate::lines::plan(&lines[before.min(lines.len())..], &text, width, &*dict, false);
+    }
+}
+
+/// std::string::resize(新長度, 填充字元)：遊戲把放不下的字截成「開頭...」時先縮短字串（172 處都這樣寫），縮短前記下原文（見 lookup）。
+unsafe extern "C" fn hook_string_resize(s: *mut StdString, n: usize, fill: u8) {
+    let orig: ResizeFn = unsafe { std::mem::transmute(TRAMPOLINES[9].load(Ordering::Acquire)) };
+    if ENABLED.load(Ordering::Relaxed) && n >= 4 && n < unsafe { (*s).size } {
+        let full = unsafe { (*s).bytes() }.to_vec();
+        CUTS.with_borrow_mut(|cuts| {
+            if cuts.len() >= CUTS_KEEP {
+                cuts.pop_front();
+            }
+            cuts.push_back(full);
+        });
+    }
+    unsafe { orig(s, n, fill) };
+}
+
+/// 冒險者開局畫面的外觀段落：遊戲把 wrap_lines 的切行寫在自己函式裡（寬 77），切好的行放在冒險者資料的行清單，
+/// 後面接一行空白和 wrap_text 切的段落。原函式跑完後替外觀那段登記畫字計畫（見 plan_adventurer）。
+unsafe extern "C" fn hook_adv_appearance(vs: *mut u8) {
+    let orig: ScreenFn = unsafe { std::mem::transmute(TRAMPOLINES[10].load(Ordering::Acquire)) };
+    unsafe {
+        orig(vs);
+        plan_adventurer(vs, &[(0x1370, 77)]);
+    }
+}
+
+/// 冒險者開局畫面的性格、價值觀段落：同上，三個行清單各一段（寬 78）。
+unsafe extern "C" fn hook_adv_personality(vs: *mut u8) {
+    let orig: ScreenFn = unsafe { std::mem::transmute(TRAMPOLINES[11].load(Ordering::Acquire)) };
+    unsafe {
+        orig(vs);
+        plan_adventurer(vs, &[(0x1398, 78), (0x13b0, 78), (0x13c8, 78)]);
+    }
+}
+
+/// 開局畫面目前選的冒險者（viewscreen +0x330 的 vector、+0x348 的索引）的行清單 (位移, 寬)：每個清單第一個只有空白的行之前是一段。
+/// ponytail: 位移照 53.16 的 FUN_140639440／FUN_14063a7d0 寫死；改版時特徵碼對不上就不攔，只有這幾段維持英文。
+unsafe fn plan_adventurer(vs: *mut u8, lists: &[(usize, i32)]) {
+    let dict = DICT.load(Ordering::Acquire);
+    if dict.is_null() || !ENABLED.load(Ordering::Relaxed) {
+        return;
+    }
+    unsafe {
+        let advs = crate::lines::vec_items(vs as usize + 0x330);
+        let Some(&adv) = usize::try_from(read::<i32>(vs, 0x348)).ok().and_then(|i| advs.get(i)) else { return };
+        for &(offset, width) in lists {
+            let lines = crate::lines::vec_items(adv + offset);
+            let n = lines.iter().position(|&s| crate::lines::str_bytes(s) == b" ").unwrap_or(lines.len());
+            crate::lines::plan(&lines[..n], &crate::lines::join(&lines[..n]), width, &*dict, false);
+        }
     }
 }
 

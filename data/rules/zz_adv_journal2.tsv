@@ -1,0 +1,4 @@
+en	zh-Hant	zh-Hans	align	note
+{@1}, Dead	{1}(滅亡)	{1}(灭亡)		FUN_1400cea60 L127458-127460 勢力說明第二行：種族形容詞（首字大寫）＋, Dead（勢力已滅亡）。通用樣板，錨點：{@1} 只收字典裡的種族名
+{1} {@2} coins	{1} {2}幣	{1} {2}币		冒險物品欄的錢幣：鑄幣文明的原名＋金屬＋coins（Laroomon gold coins；數量 [11] 由 names.tsv 的 {%1} [{#2}] 接）；幣同 jobs.tsv Mint {@1} coins。通用樣板，錨點：{@2} 只收字典裡的材料名、結尾固定字 coins
+{1} {@2} coin	{1} {2}幣	{1} {2}币		同上，單枚（Laroomon silver coin）

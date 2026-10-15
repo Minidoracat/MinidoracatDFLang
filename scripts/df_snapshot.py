@@ -12,6 +12,8 @@ L2（53.16 實測約 40 分鐘，按需）：decompile，Ghidra headless 匯入 
   uv run scripts/df_snapshot.py verify [VERSION]
   uv run scripts/df_snapshot.py diff OLD NEW
   uv run scripts/df_snapshot.py decompile [VERSION] [--timeout 秒] [--export-only]
+  uv run scripts/df_snapshot.py redecompile [VERSION] [--timeout 秒] [--max-instructions N] [--only FUN…]
+                                                     全量匯出時失敗的函式，用較長逾時與指令上限重做並併回（--only 先做指定的）
   uv run scripts/df_snapshot.py status | where
 路徑：遊戲與 DFHack 由 scripts/dfpaths.py 從 Steam 找（DF_PATH／DFHACK_PATH 可覆寫）；
 Ghidra 用 GHIDRA_HOME，沒設就找 ../df-decompiled-reference/tools/ghidra。
@@ -437,6 +439,45 @@ def cmd_decompile(args) -> int:
     return rc or 1
 
 
+FAILED_RE = re.compile(r"// ============ (\S+) @ 0x([0-9a-f]+) ============\n// DECOMPILE FAILED[^\n]*\n\n")
+
+
+def cmd_redecompile(args) -> int:
+    snap = find_snapshot(args.version)
+    ghidra = find_ghidra()
+    out_c = snap / "ghidra" / "Dwarf Fortress.exe.c" if snap else None
+    if out_c is None or not out_c.is_file() or ghidra is None:
+        print("缺 L2 快照（先跑 decompile）或找不到 Ghidra（設 GHIDRA_HOME）", file=sys.stderr)
+        return 1
+    text = out_c.read_text(encoding="utf-8")
+    failed = {m.group(2): m for m in FAILED_RE.finditer(text)}
+    if args.only:
+        failed = {a: m for a, m in failed.items() if f"FUN_{a}" in args.only or f"0x{a}" in args.only}
+    if not failed:
+        print("沒有反編譯失敗的函式")
+        return 0
+    redo = out_c.with_name("redecompiled.c")
+    headless = ghidra / "support" / ("analyzeHeadless.bat" if sys.platform == "win32" else "analyzeHeadless")
+    cmd = [str(headless), str(snap / "ghidra" / "project"), "df", "-process", EXE.name, "-noanalysis",
+           "-scriptPath", str(ROOT / "scripts"), "-postScript", "GhidraRedecompile.java", str(redo), str(args.timeout),
+           str(args.max_instructions), *(f"0x{a}" for a in failed)]
+    env = dict(os.environ, GHIDRA_HEADLESS_MAXMEM=os.environ.get("GHIDRA_HEADLESS_MAXMEM", "32G"))
+    print(f"重做 {len(failed)} 個函式（每個最多 {args.timeout} 秒）", flush=True)
+    if subprocess.run(cmd, env=env).returncode != 0 or not redo.is_file():
+        print("REDECOMPILE FAILED", file=sys.stderr)
+        return 1
+    bodies = {}
+    for chunk in re.split(r"(?=// ============ \S+ @ 0x[0-9a-f]+ ============\n)", redo.read_text(encoding="utf-8")):
+        m = re.match(r"// ============ \S+ @ 0x([0-9a-f]+) ============\n", chunk)
+        if m and "// DECOMPILE FAILED" not in chunk[:m.end() + 40]:
+            bodies[m.group(1)] = chunk
+    merged = FAILED_RE.sub(lambda m: bodies.get(m.group(2), m.group(0)), text)
+    out_c.write_text(merged, encoding="utf-8", newline="\n")
+    redo.unlink()
+    print(f"併回 {len(bodies)}／{len(failed)} 個函式 -> {out_c}")
+    return 0
+
+
 def cmd_status(_args) -> int:
     snaps = sorted(p for p in SNAPSHOTS.glob("*") if (p / "VERSION.txt").is_file()) if SNAPSHOTS.is_dir() else []
     for p in snaps:
@@ -474,6 +515,13 @@ def main() -> int:
     p.add_argument("--timeout", type=int, default=14400, help="Ghidra 自動分析逾時秒數")
     p.add_argument("--export-only", action="store_true", help="沿用已分析的專案，只重跑匯出")
     p.set_defaults(fn=cmd_decompile)
+    p = sub.add_parser("redecompile")
+    p.add_argument("version", nargs="?")
+    p.add_argument("--timeout", type=int, default=3600, help="每個函式的反編譯逾時秒數")
+    p.add_argument("--max-instructions", type=int, default=1_000_000,
+                   help="每個函式最多處理的指令數（Flow exceeded maximum allowable instructions 時調高）")
+    p.add_argument("--only", nargs="+", metavar="FUN", help="只重做這些函式（FUN_14xxxxxxx 或 0x14xxxxxxx），先做重要的")
+    p.set_defaults(fn=cmd_redecompile)
     sub.add_parser("status").set_defaults(fn=cmd_status)
     sub.add_parser("where").set_defaults(fn=cmd_where)
     args = ap.parse_args()
