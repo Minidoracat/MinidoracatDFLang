@@ -1,0 +1,7 @@
+en	zh-Hant	zh-Hans	align	note
+The performance is at {%1} and {%2}.	表演進行到{1}和{2}。	表演进行到{1}和{2}。		FUN_14026b800 L326141 活動資訊（mtb，[B] 開頭） L326485 樂曲：樂段清單（{1} 可為逗號清單）
+The performance is at {%1}.	表演進行到{1}。	表演进行到{1}。		FUN_14026b800 L326141 活動資訊（mtb，[B] 開頭） L326313／326485：詩作（the second stanza、the third line…，ann_01 的 the {@1} line 等）或樂段
+The dance has reached the point where its accompaniment is at {%1} and {%2}.	舞蹈的伴奏已進行到{1}和{2}。	舞蹈的伴奏已进行到{1}和{2}。		FUN_14026b800 L326141 活動資訊（mtb，[B] 開頭） L326789 樂段清單
+The dance has reached the point where its accompaniment is at {%1}.	舞蹈的伴奏已進行到{1}。	舞蹈的伴奏已进行到{1}。		FUN_14026b800 L326141 活動資訊（mtb，[B] 開頭） L326789
+Thank you for returning this treasure to {1}.	謝謝你把這件寶物還給{1}。	谢谢你把这件宝物还给{1}。		FUN_140277500 L333147 冒險模式交易對話（wrap_text 0x44，兩空白分句） L333980：{1} FUN_140b92900 勢力名
+Thank you for returning this primordial remnant to {1}.	謝謝你把這件太古遺物還給{1}。	谢谢你把这件太古遗物还给{1}。		FUN_140277500 L333147 冒險模式交易對話（wrap_text 0x44，兩空白分句） L333854：{1} FUN_140b92900 勢力名

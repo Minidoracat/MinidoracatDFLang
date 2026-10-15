@@ -1,0 +1,29 @@
+en	zh-Hant	zh-Hans	align	note
+Activity	活動	活动		FUN_140075f70 L70900 活動基底類別的名稱（activity_entry getName 預設值）
+Training Session	訓練課程	训练课程		FUN_140076070 L70975 活動事件名稱（activity_event_training_sessionst）
+Activity Event	活動事件	活动事件		FUN_140076230 L71039 活動事件基底類別的名稱（getName 預設值）
+Read	閱讀	阅读		FUN_1400a2aa0 L100895 活動名稱：閱讀（沒有著作時單獨畫出）；FUN_1407e13d0 冒險模式動作選項同字同義
+Go to Combat Training	前往戰鬥訓練	前往战斗训练		FUN_1400a3060 L101222-101236 活動名稱（單位清單、單位頁的目前活動）
+Organize Combat Training	組織戰鬥訓練	组织战斗训练		FUN_1400a3060 L101222-101236 活動名稱（單位清單、單位頁的目前活動）
+Wait for Combat Training	等待戰鬥訓練	等待战斗训练		FUN_1400a3060 L101222-101236 活動名稱（單位清單、單位頁的目前活動）
+Listen to Story	聽故事	听故事		FUN_1400a3410 L101385 活動名稱（表演：說書）
+Tell Story	講故事	讲故事		FUN_1400a3410 L101391 活動名稱（表演：說書）
+Recite Poetry	朗誦詩歌	朗诵诗歌		FUN_1400a3410 L101398 活動名稱（表演：詩歌）
+Listen to Poetry	聆聽詩歌	聆听诗歌		FUN_1400a3410 L101403 活動名稱（表演：詩歌）
+Listen to Sermon	聆聽講道	聆听讲道		FUN_1400a3410 L101571 活動名稱（表演：講道；sermon 用語同 ann_01 表演公告）
+Watch Dance	觀賞舞蹈	观赏舞蹈		FUN_1400a3410 L101876 活動名稱（表演：舞蹈）
+Listen to Music	聆聽音樂	聆听音乐		FUN_1400a3410 L101886 活動名稱（表演：音樂）
+Promote Truth	宣揚誠實	宣扬诚实		FUN_1400a3410 L101596＋L101618 活動名稱：價值觀 truth 是「誠實」（單獨查是知識主題「真理」），這條另寫
+Inveigh Against Truth	抨擊誠實	抨击诚实		FUN_1400a3410 L101598＋L101618 活動名稱：價值觀 truth 是「誠實」，這條另寫
+Preach on Stars	以星辰為題講道	以星辰为题讲道		FUN_1400a3410 L101705 活動名稱：領域 stars 單獨查是形狀「星形」，這條另寫（同 ann_01 a sermon on stars）
+Serve Customer	招待客人	招待顾客		FUN_1400a47a0 L102280 活動名稱（酒館：查不到要端的飲食時）
+Go to Individual Combat Drill	前往個人戰鬥訓練	前往个人战斗训练		FUN_1400a49b0 L102374 活動名稱（軍事訓練）
+Individual Combat Drill	個人戰鬥訓練	个人战斗训练		FUN_1400a49b0 L102378 活動名稱（軍事訓練）
+Individual Combat Drill/Resting	個人戰鬥訓練/休息	个人战斗训练/休息		FUN_1400a49b0 L102378＋L102386 活動名稱：訓練中途休息
+Go to Sparring Match	前往對練比試	前往对练比试		FUN_1400a4bc0 L102573 活動名稱（對練）
+Go to Sparring Practice	前往對練	前往对练		FUN_1400a4bc0 L102510 活動名稱（對練）
+Spar	對練	对练		FUN_1400a4bc0 L102578 活動名稱（對練；同 sentences 的 a sparring session 對練）
+Watch Sparring Practice	觀看對練	观看对练		FUN_1400a4bc0 L102490 活動名稱（對練）
+Archery Practice	射箭練習	射箭练习		FUN_1400a4fd0 L102671 活動名稱（射箭）
+Go to Archery Practice	前往射箭練習	前往射箭练习		FUN_1400a4fd0 L102668＋L102671 活動名稱（射箭）
+Highest known in organization	已知的組織最高層	已知的组织最高层		FUN_1400d1840 L129264 權謀畫面／冒險日誌的人物卡：此人是已知的組織最高層

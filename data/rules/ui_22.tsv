@@ -1,0 +1,37 @@
+en	zh-Hant	zh-Hans	align	note
+Station at Point {#1}	駐守於地點 {1}	驻守于地点 {1}		FUN_1410f2800 L2513057-2513070 小隊命令說明：駐守點沒有名字時寫 Point 編號
+Station at {1}	駐守於{1}	驻守于{1}		FUN_1410f2800 L2513066 小隊命令說明：{1} 玩家取的地點名
+Fierce {@1}	兇猛{1}	凶猛{1}		FUN_14132f980 L2537553 單位顯示名前綴（同 Stray {@1} 流浪{1}）
+Stray Ghostly {@1}	流浪{1}鬼魂	流浪{1}鬼魂		FUN_14132f980 L2537555＋L2537570 單位顯示名：流浪動物的鬼魂（Stray 在 Ghostly 前面）
+Ghostly {@1}	{1}鬼魂	{1}鬼魂		FUN_14132f980 L2537570、FUN_141331500 L2539589 單位顯示名：鬼魂＋職業／生物名（Ghostly Miner）
+{1} (Semi-Wild)	{1} (半野化)	{1} (半野化)		FUN_141330880 L2538000-2538058／FUN_141330c30 L2538283-2538341 單位名稱後的訓練等級（名字, 職業, 性別 (等級)）；同 names.tsv {1} (Tame) 用半形括號
+{1} (Trained)	{1} (已訓練)	{1} (已训练)		FUN_141330880 L2538000-2538058／FUN_141330c30 L2538283-2538341 單位名稱後的訓練等級（名字, 職業, 性別 (等級)）；同 names.tsv {1} (Tame) 用半形括號
+{1} (-Trained-)	{1} (-已訓練-)	{1} (-已训练-)		FUN_141330880 L2538000-2538058／FUN_141330c30 L2538283-2538341 單位名稱後的訓練等級（名字, 職業, 性別 (等級)）；同 names.tsv {1} (Tame) 用半形括號；訓練有素
+{1} (+Trained+)	{1} (+已訓練+)	{1} (+已训练+)		FUN_141330880 L2538000-2538058／FUN_141330c30 L2538283-2538341 單位名稱後的訓練等級（名字, 職業, 性別 (等級)）；同 names.tsv {1} (Tame) 用半形括號；訓練熟練
+{1} (*Trained*)	{1} (*已訓練*)	{1} (*已训练*)		FUN_141330880 L2538000-2538058／FUN_141330c30 L2538283-2538341 單位名稱後的訓練等級（名字, 職業, 性別 (等級)）；同 names.tsv {1} (Tame) 用半形括號；訓練精良
+{1} (≡Trained≡)	{1} (≡已訓練≡)	{1} (≡已训练≡)		FUN_141330880 L2538000-2538058／FUN_141330c30 L2538283-2538341 單位名稱後的訓練等級（名字, 職業, 性別 (等級)）；同 names.tsv {1} (Tame) 用半形括號；訓練卓越（CP437 0xF0）
+{1} (☼Trained☼)	{1} (☼已訓練☼)	{1} (☼已训练☼)		FUN_141330880 L2538000-2538058／FUN_141330c30 L2538283-2538341 單位名稱後的訓練等級（名字, 職業, 性別 (等級)）；同 names.tsv {1} (Tame) 用半形括號；大師級訓練（CP437 0x0F）
+Make Request of {1}	向{1}提出請求	向{1}提出请求		FUN_14138f620 L2601305／FUN_14138ffd0 L2601729 單位目前活動欄：{1} 據點名（FUN_140b93930）
+{@1} (not following order)	{1}（未遵從命令）	{1}（未遵从命令）		FUN_14138f620 L2601436-2601508／FUN_14138ffd0 L2601836-2601908 單位目前活動欄：士兵（Soldier／Mercenary／Monster Slayer）無法執行小隊命令的原因；之後可能再接 (Caged)
+{@1} (activity cancelled)	{1}（活動已取消）	{1}（活动已取消）		FUN_14138f620 L2601436-2601508／FUN_14138ffd0 L2601836-2601908 單位目前活動欄：士兵（Soldier／Mercenary／Monster Slayer）無法執行小隊命令的原因；之後可能再接 (Caged)
+{@1} (no barracks)	{1}（無營房）	{1}（无营房）		FUN_14138f620 L2601436-2601508／FUN_14138ffd0 L2601836-2601908 單位目前活動欄：士兵（Soldier／Mercenary／Monster Slayer）無法執行小隊命令的原因；之後可能再接 (Caged)
+{@1} (improper barracks)	{1}（營房不適用）	{1}（营房不适用）		FUN_14138f620 L2601436-2601508／FUN_14138ffd0 L2601836-2601908 單位目前活動欄：士兵（Soldier／Mercenary／Monster Slayer）無法執行小隊命令的原因；之後可能再接 (Caged)
+{@1} (no activity)	{1}（無活動）	{1}（无活动）		FUN_14138f620 L2601436-2601508／FUN_14138ffd0 L2601836-2601908 單位目前活動欄：士兵（Soldier／Mercenary／Monster Slayer）無法執行小隊命令的原因；之後可能再接 (Caged)
+{@1} (cannot individually drill)	{1}（無法單獨操練）	{1}（无法单独操练）		FUN_14138f620 L2601436-2601508／FUN_14138ffd0 L2601836-2601908 單位目前活動欄：士兵（Soldier／Mercenary／Monster Slayer）無法執行小隊命令的原因；之後可能再接 (Caged)
+{@1} (does not exist)	{1}（不存在）	{1}（不存在）		FUN_14138f620 L2601436-2601508／FUN_14138ffd0 L2601836-2601908 單位目前活動欄：士兵（Soldier／Mercenary／Monster Slayer）無法執行小隊命令的原因；之後可能再接 (Caged)
+{@1} (no archery target)	{1}（無箭靶）	{1}（无箭靶）		FUN_14138f620 L2601436-2601508／FUN_14138ffd0 L2601836-2601908 單位目前活動欄：士兵（Soldier／Mercenary／Monster Slayer）無法執行小隊命令的原因；之後可能再接 (Caged)
+{@1} (improper building)	{1}（建築不適用）	{1}（建筑不适用）		FUN_14138f620 L2601436-2601508／FUN_14138ffd0 L2601836-2601908 單位目前活動欄：士兵（Soldier／Mercenary／Monster Slayer）無法執行小隊命令的原因；之後可能再接 (Caged)
+{@1} (unreachable location)	{1}（地點無法抵達）	{1}（地点无法到达）		FUN_14138f620 L2601436-2601508／FUN_14138ffd0 L2601836-2601908 單位目前活動欄：士兵（Soldier／Mercenary／Monster Slayer）無法執行小隊命令的原因；之後可能再接 (Caged)
+{@1} (invalid location)	{1}（地點無效）	{1}（地点无效）		FUN_14138f620 L2601436-2601508／FUN_14138ffd0 L2601836-2601908 單位目前活動欄：士兵（Soldier／Mercenary／Monster Slayer）無法執行小隊命令的原因；之後可能再接 (Caged)
+{@1} (no reachable valid target)	{1}（無可抵達的有效目標）	{1}（无可到达的有效目标）		FUN_14138f620 L2601436-2601508／FUN_14138ffd0 L2601836-2601908 單位目前活動欄：士兵（Soldier／Mercenary／Monster Slayer）無法執行小隊命令的原因；之後可能再接 (Caged)
+{@1} (no burrow)	{1}（無活動區）	{1}（无活动区）		FUN_14138f620 L2601436-2601508／FUN_14138ffd0 L2601836-2601908 單位目前活動欄：士兵（Soldier／Mercenary／Monster Slayer）無法執行小隊命令的原因；之後可能再接 (Caged)
+{@1} (not in squad)	{1}（不在小隊中）	{1}（不在小队中）		FUN_14138f620 L2601436-2601508／FUN_14138ffd0 L2601836-2601908 單位目前活動欄：士兵（Soldier／Mercenary／Monster Slayer）無法執行小隊命令的原因；之後可能再接 (Caged)
+{@1} (no patrol route)	{1}（無巡邏路線）	{1}（无巡逻路线）		FUN_14138f620 L2601436-2601508／FUN_14138ffd0 L2601836-2601908 單位目前活動欄：士兵（Soldier／Mercenary／Monster Slayer）無法執行小隊命令的原因；之後可能再接 (Caged)
+{@1} (no reachable point on route)	{1}（路線上無可抵達的點）	{1}（路线上无可到达的点）		FUN_14138f620 L2601436-2601508／FUN_14138ffd0 L2601836-2601908 單位目前活動欄：士兵（Soldier／Mercenary／Monster Slayer）無法執行小隊命令的原因；之後可能再接 (Caged)
+{@1} (invalid order)	{1}（命令無效）	{1}（命令无效）		FUN_14138f620 L2601436-2601508／FUN_14138ffd0 L2601836-2601908 單位目前活動欄：士兵（Soldier／Mercenary／Monster Slayer）無法執行小隊命令的原因；之後可能再接 (Caged)
+{@1} (no temple)	{1}（無神殿）	{1}（无神殿）		FUN_14138f620 L2601436-2601508／FUN_14138ffd0 L2601836-2601908 單位目前活動欄：士兵（Soldier／Mercenary／Monster Slayer）無法執行小隊命令的原因；之後可能再接 (Caged)
+{@1} (no library)	{1}（無圖書館）	{1}（无图书馆）		FUN_14138f620 L2601436-2601508／FUN_14138ffd0 L2601836-2601908 單位目前活動欄：士兵（Soldier／Mercenary／Monster Slayer）無法執行小隊命令的原因；之後可能再接 (Caged)
+{@1} (no item)	{1}（無物品）	{1}（无物品）		FUN_14138f620 L2601436-2601508／FUN_14138ffd0 L2601836-2601908 單位目前活動欄：士兵（Soldier／Mercenary／Monster Slayer）無法執行小隊命令的原因；之後可能再接 (Caged)
+{@1} (cannot leave site)	{1}（無法離開據點）	{1}（无法离开据点）		FUN_14138f620 L2601436-2601508／FUN_14138ffd0 L2601836-2601908 單位目前活動欄：士兵（Soldier／Mercenary／Monster Slayer）無法執行小隊命令的原因；之後可能再接 (Caged)
+{@1} (location no longer in zone)	{1}（地點已不在區域內）	{1}（地点已不在区域内）		FUN_14138f620 L2601436-2601508／FUN_14138ffd0 L2601836-2601908 單位目前活動欄：士兵（Soldier／Mercenary／Monster Slayer）無法執行小隊命令的原因；之後可能再接 (Caged)
+{@1} (cannot follow order)	{1}（無法遵從命令）	{1}（无法遵从命令）		FUN_14138f620 L2601436-2601508／FUN_14138ffd0 L2601836-2601908 單位目前活動欄：士兵（Soldier／Mercenary／Monster Slayer）無法執行小隊命令的原因；之後可能再接 (Caged)

@@ -1,0 +1,35 @@
+en	zh-Hant	zh-Hans	align	note
+Armor Stockpile #{#1}	盔甲倉儲區 #{1}	盔甲储物区 #{1}		FUN_140556e50 L710796 倉儲區預設名：類型＋Stockpile #＋編號；建築頁標題等處單獨畫出
+Weapon Stockpile #{#1}	武器倉儲區 #{1}	武器储物区 #{1}		FUN_140556e50 L710796 倉儲區預設名：類型＋Stockpile #＋編號；建築頁標題等處單獨畫出
+Animal Stockpile #{#1}	動物倉儲區 #{1}	动物储物区 #{1}		FUN_140556e50 L710796 倉儲區預設名：類型＋Stockpile #＋編號；建築頁標題等處單獨畫出
+Food Stockpile #{#1}	食物倉儲區 #{1}	食物储物区 #{1}		FUN_140556e50 L710796 倉儲區預設名：類型＋Stockpile #＋編號；建築頁標題等處單獨畫出
+Furniture Stockpile #{#1}	家具倉儲區 #{1}	家具储物区 #{1}		FUN_140556e50 L710796 倉儲區預設名：類型＋Stockpile #＋編號；建築頁標題等處單獨畫出
+Corpse Stockpile #{#1}	屍體倉儲區 #{1}	尸体储物区 #{1}		FUN_140556e50 L710796 倉儲區預設名：類型＋Stockpile #＋編號；建築頁標題等處單獨畫出
+Refuse Stockpile #{#1}	垃圾倉儲區 #{1}	垃圾储物区 #{1}		FUN_140556e50 L710796 倉儲區預設名：類型＋Stockpile #＋編號；建築頁標題等處單獨畫出
+Stone Stockpile #{#1}	石材倉儲區 #{1}	石材储物区 #{1}		FUN_140556e50 L710796 倉儲區預設名：類型＋Stockpile #＋編號；建築頁標題等處單獨畫出
+Ammo Stockpile #{#1}	彈藥倉儲區 #{1}	弹药储物区 #{1}		FUN_140556e50 L710796 倉儲區預設名：類型＋Stockpile #＋編號；建築頁標題等處單獨畫出
+Coins Stockpile #{#1}	錢幣倉儲區 #{1}	硬币储物区 #{1}		FUN_140556e50 L710796 倉儲區預設名：類型＋Stockpile #＋編號；建築頁標題等處單獨畫出
+Bar/Block Stockpile #{#1}	錠材／磚塊倉儲區 #{1}	锭材/砖块储物区 #{1}		FUN_140556e50 L710796 倉儲區預設名：類型＋Stockpile #＋編號；建築頁標題等處單獨畫出
+Gem Stockpile #{#1}	寶石倉儲區 #{1}	宝石储物区 #{1}		FUN_140556e50 L710796 倉儲區預設名：類型＋Stockpile #＋編號；建築頁標題等處單獨畫出
+Finished Goods Stockpile #{#1}	成品倉儲區 #{1}	成品储物区 #{1}		FUN_140556e50 L710796 倉儲區預設名：類型＋Stockpile #＋編號；建築頁標題等處單獨畫出
+Leather Stockpile #{#1}	皮革倉儲區 #{1}	皮革储物区 #{1}		FUN_140556e50 L710796 倉儲區預設名：類型＋Stockpile #＋編號；建築頁標題等處單獨畫出
+Cloth Stockpile #{#1}	布料倉儲區 #{1}	布料储物区 #{1}		FUN_140556e50 L710796 倉儲區預設名：類型＋Stockpile #＋編號；建築頁標題等處單獨畫出
+Wood Stockpile #{#1}	木材倉儲區 #{1}	木材储物区 #{1}		FUN_140556e50 L710796 倉儲區預設名：類型＋Stockpile #＋編號；建築頁標題等處單獨畫出
+Sheet Stockpile #{#1}	紙張倉儲區 #{1}	纸张储物区 #{1}		FUN_140556e50 L710796 倉儲區預設名：類型＋Stockpile #＋編號；建築頁標題等處單獨畫出
+Stockpile #{#1}	倉儲區 #{1}	储物区 #{1}		FUN_140556e50 L710796 倉儲區預設名：類型＋Stockpile #＋編號；建築頁標題等處單獨畫出（沒有類型時）
+Activity Zone #{#1}	活動區域 #{1}	活动区域 #{1}		FUN_14054f2b0 L704711 區域預設名：Activity Zone #＋編號
+Rough {%1} Road	粗糙{1}道路	粗糙{1}道路		FUN_140555fe0 L710101 道路建築名：材料＋ Road（沒有材料時是 Dirt Road，整句在別檔）；{1} 材料名；材料旗標時前加 Rough；排在 {%1} Road 前
+{%1} Road	{1}道路	{1}道路		FUN_140555fe0 L710101 道路建築名：材料＋ Road（沒有材料時是 Dirt Road，整句在別檔）；{1} 材料名
+Shared Cage ({%1})	混養籠子（{1}）	混养笼子（{1}）		FUN_140551cb0 L706762 籠子類建築名：內容物＋ Cage/Terrarium/Aquarium＋ (材料)；空的時是「材料 Cage」（既有句型）；Shared＝裝了不同種的生物；排在 {%1} Cage 前
+{%1} (♀) Cage ({%2})	{1}(♀)籠子（{2}）	{1}(♀)笼子（{2}）		FUN_140551cb0 L706762 籠子類建築名：內容物＋ Cage/Terrarium/Aquarium＋ (材料)；空的時是「材料 Cage」（既有句型）；單一物種、單一性別時生物名後接 (♀)／(♂)
+{%1} (♂) Cage ({%2})	{1}(♂)籠子（{2}）	{1}(♂)笼子（{2}）		FUN_140551cb0 L706762 籠子類建築名：內容物＋ Cage/Terrarium/Aquarium＋ (材料)；空的時是「材料 Cage」（既有句型）；單一物種、單一性別時生物名後接 (♀)／(♂)
+{%1} Cage ({%2})	{1}籠子（{2}）	{1}笼子（{2}）		FUN_140551cb0 L706762 籠子類建築名：內容物＋ Cage/Terrarium/Aquarium＋ (材料)；空的時是「材料 Cage」（既有句型）；{1} 生物名（首字大寫）
+Shared Terrarium ({%1})	混養飼養箱（{1}）	混养饲养箱（{1}）		FUN_140551cb0 L706762 籠子類建築名：內容物＋ Cage/Terrarium/Aquarium＋ (材料)；空的時是「材料 Cage」（既有句型）；Shared＝裝了不同種的生物；排在 {%1} Terrarium 前
+{%1} (♀) Terrarium ({%2})	{1}(♀)飼養箱（{2}）	{1}(♀)饲养箱（{2}）		FUN_140551cb0 L706762 籠子類建築名：內容物＋ Cage/Terrarium/Aquarium＋ (材料)；空的時是「材料 Cage」（既有句型）；單一物種、單一性別時生物名後接 (♀)／(♂)
+{%1} (♂) Terrarium ({%2})	{1}(♂)飼養箱（{2}）	{1}(♂)饲养箱（{2}）		FUN_140551cb0 L706762 籠子類建築名：內容物＋ Cage/Terrarium/Aquarium＋ (材料)；空的時是「材料 Cage」（既有句型）；單一物種、單一性別時生物名後接 (♀)／(♂)
+{%1} Terrarium ({%2})	{1}飼養箱（{2}）	{1}饲养箱（{2}）		FUN_140551cb0 L706762 籠子類建築名：內容物＋ Cage/Terrarium/Aquarium＋ (材料)；空的時是「材料 Cage」（既有句型）；{1} 生物名（首字大寫）
+Shared Aquarium ({%1})	混養水族箱（{1}）	混养水族箱（{1}）		FUN_140551cb0 L706762 籠子類建築名：內容物＋ Cage/Terrarium/Aquarium＋ (材料)；空的時是「材料 Cage」（既有句型）；Shared＝裝了不同種的生物；排在 {%1} Aquarium 前
+{%1} (♀) Aquarium ({%2})	{1}(♀)水族箱（{2}）	{1}(♀)水族箱（{2}）		FUN_140551cb0 L706762 籠子類建築名：內容物＋ Cage/Terrarium/Aquarium＋ (材料)；空的時是「材料 Cage」（既有句型）；單一物種、單一性別時生物名後接 (♀)／(♂)
+{%1} (♂) Aquarium ({%2})	{1}(♂)水族箱（{2}）	{1}(♂)水族箱（{2}）		FUN_140551cb0 L706762 籠子類建築名：內容物＋ Cage/Terrarium/Aquarium＋ (材料)；空的時是「材料 Cage」（既有句型）；單一物種、單一性別時生物名後接 (♀)／(♂)
+{%1} Aquarium ({%2})	{1}水族箱（{2}）	{1}水族箱（{2}）		FUN_140551cb0 L706762 籠子類建築名：內容物＋ Cage/Terrarium/Aquarium＋ (材料)；空的時是「材料 Cage」（既有句型）；{1} 生物名（首字大寫）
+{%1}'s corpse	{1}的屍體	{1}的尸体		FUN_14060e030 L832514-832523 活屍歷史人物的稱呼（curse+0x150：生物名＋'s corpse）；單獨畫出時用；傳說頁首句另有整句句型

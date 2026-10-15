@@ -19,5 +19,6 @@ Attempted to appeal to shared worship of {1} in order to elicit information.	試
 {1}'s lack of respect of interrogator	{1}不尊敬審訊者	{1}不尊敬审讯者		FUN_1402c1770 395675 審訊結果 despite 後的理由：配合的關係，{1} 受審者人名
 Interrogation Report: {1}, {@2}, {%3}	審訊報告：{1}，{2}，{3}	审讯报告：{1}，{2}，{3}		FUN_1402bc250 391263 審訊報告標題：{1} 人名，{2} 職業，{3} 季節與年（Spring 125）；清單用 addst、內頁用 wrap_text
 Interrogation Report: {1}, {%2}	審訊報告：{1}，{2}	审讯报告：{1}，{2}		FUN_1402bc250 391263 審訊報告標題：沒有職業時，{1} 人名，{2} 季節與年
+Officer: {1}.	承辦人：{1}。	承办人：{1}。		FUN_140472020 L595048-595097 司法畫面：刑罰欄的執法人員；{1}「人名, 職業」（FUN_141330c30）；寫在 Officer: {1} 前面，句號才不會被吞進名字（UI8 回報）
 Officer: {1}	承辦人：{1}	承办人：{1}		FUN_1404769d0 599120 審訊報告清單第二行：{1} 審訊官「人名, 職業」（addst，格數不超過原文）
 Prepared by {1}	撰寫者：{1}	撰写者：{1}		FUN_1404769d0 599201 審訊報告內頁標題下一行：{1} 審訊官「人名, 職業」（wrap_text）

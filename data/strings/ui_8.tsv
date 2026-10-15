@@ -1,0 +1,17 @@
+en	zh-Hant	zh-Hans	align	note
+No sentence pending.	沒有待執行的刑罰。	没有待执行的刑罚。		FUN_140472020 L594859／FUN_1404728a0 L595282 司法畫面：定罪後的刑罰欄（沒有刑罰時）
+Beating.	毆打。	殴打。		FUN_140472020 L594963 司法畫面：刑罰欄，體罰
+Officer: none assigned.	承辦人：未指派。	承办人：未指派。		FUN_140472020 L595048-595097 司法畫面：刑罰欄，尚未指派執法人員（Officer: ＋ none assigned ＋ .）；有人名時見回報
+Interrogate	審訊	审讯		FUN_140472ac0 L595534 司法畫面：案件的按鈕；術語 interrogation
+Interrogate suspects for wrongdoing.	審訊嫌犯，查明不法情事。	审讯嫌疑人，查明违法行为。		FUN_140472ac0 L595560 司法畫面：Interrogate 按鈕的提示
+Convict	定罪	定罪		FUN_140472ac0 L595624 司法畫面：案件的按鈕；動詞定罪；術語例外：convict
+Convict a suspect for this crime.	判定一名嫌犯犯下此罪行。	判定一名嫌疑人犯下此罪行。		FUN_140472ac0 L595692 司法畫面：Convict 按鈕的提示；動詞定罪；術語例外：convict
+No witnesses.	沒有目擊者。	没有目击者。		FUN_140472ac0 L595799 司法畫面：案件的目擊者欄
+Found the body.	發現了屍體。	发现了尸体。		FUN_140472ac0 L595968 司法畫面：目擊者證詞（謀殺案）
+Saw that the object was missing.	看到物品不見了。	看到物品不见了。		FUN_140472ac0 L595974 司法畫面：目擊者證詞（竊案）
+Saw that the object was disturbed.	看到物品被動過。	看到物品被动过。		FUN_140472ac0 L595978 司法畫面：目擊者證詞（物品被動過）
+Already interviewed	已審訊過	已审讯过		FUN_140474890 L596953 司法畫面：審訊對象清單，名字下方
+Interview Scheduled	已排定審訊	已安排审讯		FUN_140474890 L596972 司法畫面：審訊對象清單，名字下方
+Interrogations	審訊報告	审讯报告		FUN_1404769d0 L598894 司法畫面：情報分頁的子分頁（另有 Actors／Organizations／Plots）
+No interrogation reports.	沒有審訊報告。	没有审讯报告。		FUN_1404769d0 L598975 司法畫面：情報分頁，審訊報告清單為空
+Selected actor: 	選取的參與者：	选中的参与者：		FUN_1404769d0 L599837 司法畫面：情報分頁的參與者關係圖，後面另畫人名

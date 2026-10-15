@@ -1,0 +1,87 @@
+en	zh-Hant	zh-Hans	align	note
+Name your settlement	為你的聚落命名	为你的聚落命名		FUN_1401fc5c0 L262801 取名畫面標題
+Name your group	為你的團體命名	为你的团体命名		FUN_1401fc5c0 L262801 取名畫面標題
+Name the image	為圖像命名	为图像命名		FUN_1401fc5c0 L262801 取名畫面標題
+Name the location	為場所命名	为场所命名		FUN_1401fc5c0 L262801 取名畫面標題（神殿、酒館等場所）
+Name the squad	為小隊命名	为小队命名		FUN_1401fc5c0 L262801 取名畫面標題
+Name the symbol	為標誌命名	为标志命名		FUN_1401fc5c0 L262801 取名畫面標題；同畫面 Civilization symbol 譯文明標誌；術語例外：symbol
+Name 	命名 	命名 		FUN_1401fc5c0 L262801 取名畫面標題 case 6/7：單獨畫出，後面另畫名字
+Name your performance troupe	為你的表演團命名	为你的表演团命名		FUN_1401fc5c0 L262801 取名畫面標題
+Name your pet	為寵物命名	为宠物命名		FUN_1401fc5c0 L262801 取名畫面標題
+Name the identity	為身分命名	为身份命名		FUN_1401fc5c0 L262801 取名畫面標題（冒險模式假身分）
+Name yourself	為自己命名	为自己命名		FUN_1401fc5c0 L262801 取名畫面標題 case 10（暫存器組字）；原本被拆成「名稱自己」
+Given name	名字	名字		FUN_1401fc5c0 L262801 取名畫面名字欄空白時的提示
+Adjective	形容詞	形容词		FUN_1401fc5c0 L262801 取名畫面字表詞性欄（同 Singular Noun、Prefix）
+Prefix	字首	前缀		FUN_1401fc5c0 L262801 取名畫面字表詞性欄
+Image information	圖像資訊	图像信息	c	FUN_1401ffae0 L264816 圖像編輯器標題（置中，截到 78 字）
+Image information for engraving	雕刻的圖像資訊	雕刻的图像信息	c	FUN_1401ffae0 L264816 圖像編輯器標題（置中，截到 78 字）
+You won't perform your action if you leave.	離開的話，你就不會執行動作。	离开的话，你就不会执行动作。		FUN_140200070 L265059 圖像編輯器離開確認（Warning! 下一行）
+Don't perform action	不執行動作	不执行动作		FUN_140200070 L265059 圖像編輯器離開確認按鈕
+Keep working	繼續工作	继续工作		FUN_140200070 L265059 圖像編輯器離開確認按鈕
+Any image data you've changed will be lost.	你更改的圖像資料都會遺失。	你更改的图像数据都将丢失。		FUN_140200070 L265059 圖像編輯器離開確認
+Leave editor and discard data	離開編輯器並捨棄資料	离开编辑器并放弃数据		FUN_140200070 L265059 圖像編輯器離開確認按鈕
+Group commission	團體委託作品	团体委托作品		FUN_140200070 L265059 圖像編輯器現有圖像的來源標籤（同 Group symbol）
+Civilization symbol	文明標誌	文明标志		FUN_140200070 L265059 圖像編輯器現有圖像的來源標籤；術語例外：symbol
+Civ commission	文明委託作品	文明委托作品		FUN_140200070 L265059 圖像編輯器現有圖像的來源標籤
+Stop deleting	停止刪除	停止删除		FUN_140200070 L265059 圖像編輯器刪除元素模式按鈕
+Historical figure	歷史人物	历史人物		FUN_140200070 L265059 圖像編輯器圖像元素種類按鈕
+Object	物品	物品		FUN_140200070 L265059 圖像編輯器圖像元素種類按鈕（物品的圖像）
+Action or relationship	動作或關係	动作或关系		FUN_140200070 L265059 圖像編輯器圖像元素種類按鈕
+Delete element	刪除元素	删除元素		FUN_140200070 L265059 圖像編輯器按鈕
+Number:	數量：	数量：		FUN_140200070 L265059 圖像編輯器元素數量輸入框標籤
+(0 for unnumbered plural)	(0 表示複數但不標數量)	(0 表示复数但不标数量)		FUN_140200070 L265059 圖像編輯器數量輸入說明
+Untitled/unnamed	無題／無名	无题／无名		FUN_140200070 L265059 圖像編輯器現有圖像清單：沒有名字的圖像
+Choose X: 	選擇 X：	选择 X：		FUN_140200070 L265059 圖像編輯器動作元素：選 X（後接 X is engraving Y 這類動作）
+Choose Y: 	選擇 Y：	选择 Y：		FUN_140200070 L265059 圖像編輯器動作元素：選 Y
+Related to historical figure	與歷史人物相關	与历史人物相关		FUN_140200070 L265059 圖像編輯器選擇圖像主題按鈕
+Related to site	與據點相關	与据点相关		FUN_140200070 L265059 圖像編輯器選擇圖像主題按鈕
+Related to civilization or other group	與文明或其他團體相關	与文明或其他团体相关		FUN_140200070 L265059 圖像編輯器選擇圖像主題按鈕
+Existing image	現有圖像	现有图像		FUN_140200070 L265059 圖像編輯器按鈕
+Specify a new image	指定新圖像	指定新图像		FUN_140200070 L265059 圖像編輯器按鈕
+Allow artist to choose	讓藝術家自行決定	让艺术家自行决定		FUN_140200070 L265059 圖像編輯器按鈕（要塞）
+Let your mind wander	隨意發揮	随意发挥		FUN_140200070 L265059 圖像編輯器按鈕（冒險模式自己雕刻時）
+Setting material	設定材料	设置材料		FUN_1402143b0 L277939 工作細節：染色／裝飾標題
+Setting type	設定類型	设置类型		FUN_1402143b0 L277939 工作細節：染色／裝飾標題
+Covered	包覆	包覆		FUN_1402143b0 L277939 工作細節：染色／裝飾裝飾種類清單（Image、Covered、Hanging rings、Bands、Spikes）
+Hanging rings	吊環	吊环		FUN_1402143b0 L277939 工作細節：染色／裝飾裝飾種類；原本被拆成「懸空戒指」
+Bands	環帶	环带		FUN_1402143b0 L277939 工作細節：染色／裝飾裝飾種類
+Choose dye color	選擇染料顏色	选择染料颜色		FUN_1402143b0 L277939 工作細節：染色／裝飾標題
+Choosing colors to mix	選擇要混合的顏色	选择要混合的颜色		FUN_1402143b0 L277939 工作細節：染色／裝飾標題
+Setting mix color	設定混合色	设置混合色		FUN_1402143b0 L277939 工作細節：染色／裝飾標題
+Setting plant	設定植物	设置植物		FUN_1402143b0 L277939 工作細節：染色／裝飾標題
+For 	供 	供 		FUN_1402143b0 L277939 工作細節：染色／裝飾尺寸：單獨畫出，後面另畫種族名（For dwarves）
+Specify size	指定尺寸	指定尺寸		FUN_1402143b0 L277939 工作細節：染色／裝飾按鈕
+Specify type	指定類型	指定类型		FUN_1402143b0 L277939 工作細節：染色／裝飾按鈕
+Specify color	指定顏色	指定颜色		FUN_1402143b0 L277939 工作細節：染色／裝飾按鈕
+Specify plant	指定植物	指定植物		FUN_1402143b0 L277939 工作細節：染色／裝飾按鈕
+material	材料	材料	inner	FUN_1402143b0 L277939 工作細節：染色／裝飾Specify 後接的材料總稱；只給 Specify {@1} 用
+Audio has been manually disabled.	音訊已被手動停用。	音频已被手动禁用。		FUN_14022c130 L292331 設定：音訊／顯示／按鍵音訊分頁（停用音訊時）
+Check data/init/init_default.txt and prefs/init.txt for [SOUND:NO] or similar.	檢查 data/init/init_default.txt 與 prefs/init.txt 有無 [SOUND:NO] 等設定。	检查 data/init/init_default.txt 和 prefs/init.txt 中有无 [SOUND:NO] 等设置。		FUN_14022c130 L292331 設定：音訊／顯示／按鍵音訊分頁（停用音訊時）；檔名與代號照原文；術語例外：default
+Change it to [SOUND:YES] for audio.	改成 [SOUND:YES] 即可開啟音訊。	改为 [SOUND:YES] 即可开启音频。		FUN_14022c130 L292331 設定：音訊／顯示／按鍵音訊分頁（停用音訊時）
+No fullscreen resolutions detected.	未偵測到全螢幕解析度。	未检测到全屏分辨率。		FUN_14022c130 L292331 設定：音訊／顯示／按鍵顯示分頁
+Fast repeat	快速重複	快速重复		FUN_14022c130 L292331 設定：音訊／顯示／按鍵按鍵重複選項（Don't repeat／Delayed repeat／Fast repeat）
+Nearest-neighbor	最近鄰	最近邻		FUN_140237550 L299367 設定：縮放模式選項（Automatic／Nearest-neighbor／Lanczos）
+NO BINDING	未綁定	未绑定		FUN_140238720 L300194 按鍵設定沒有綁定按鍵時的按鍵欄（暫存器組字）
+(Select an item to demand)	（選擇要索取的物品）	（选择要索取的物品）		FUN_14026e080 L327614 冒險模式以物易物提示；原本被拆成「(選擇an item to demand)」
+Contains 1 item	內含 1 件物品	内含 1 件物品		FUN_14026e080 L327614 冒險模式以物易物容器內容數（單數）
+Cannot trade currency	無法交易貨幣	无法交易货币		FUN_14026e080 L327614 冒險模式以物易物
+You are offering 	你提供 	你提供 		FUN_14026e080 L327614 冒險模式以物易物單獨畫出，後面另畫數字與 ☼
+You are asking for 	你索要 	你索要 		FUN_14026e080 L327614 冒險模式以物易物單獨畫出，後面另畫數字與 ☼
+Show	顯示	显示		FUN_14026e080 L327614 冒險模式以物易物按鈕（暫存器組字）
+Ask for currency	索要貨幣	索要货币		FUN_14026e080 L327614 冒險模式以物易物按鈕
+Offer currency	提供貨幣	提供货币		FUN_14026e080 L327614 冒險模式以物易物按鈕
+Select an identity.	選擇一個身分。	选择一个身份。		FUN_14027a3f0 L335155 冒險模式假身分上方提示；原本被拆成「選擇an identity.」
+Your new identity:	你的新身分：	你的新身份：		FUN_14027a3f0 L335155 冒險模式假身分
+What is your identity's profession?	這個身分的職業是什麼？	这个身份的职业是什么？		FUN_14027a3f0 L335155 冒險模式假身分
+Whom does your identity worship?	這個身分崇拜誰？	这个身份崇拜谁？		FUN_14027a3f0 L335155 冒險模式假身分
+Where is your identity from?	這個身分來自哪裡？	这个身份来自哪里？		FUN_14027a3f0 L335155 冒險模式假身分；原本被拆成「your identity from在哪裡？」
+No name	無名字	无名字		FUN_14027a3f0 L335155 冒險模式假身分；原本被拆成「否名稱」
+No origin	無出身	无出身		FUN_14027a3f0 L335155 冒險模式假身分
+Origin: 	出身：	出身：		FUN_14027a3f0 L335155 冒險模式假身分單獨畫出，後面另畫地名
+Profession: 	職業：	职业：		FUN_14027a3f0 L335155 冒險模式假身分單獨畫出，後面另畫職業名
+New Identity	新身分	新身份		FUN_14027a3f0 L335155 冒險模式假身分按鈕
+Be Yourself	做回自己	做回自己		FUN_14027a3f0 L335155 冒險模式假身分按鈕
+Set origin	設定出身	设置出身		FUN_14027a3f0 L335155 冒險模式假身分按鈕
+Set profession	設定職業	设置职业		FUN_14027a3f0 L335155 冒險模式假身分按鈕
+Set worship	設定崇拜	设置崇拜		FUN_14027a3f0 L335155 冒險模式假身分按鈕
+Assume identity	使用假身分	使用假身份		FUN_14027a3f0 L335155 冒險模式假身分按鈕；同 Assume an identity

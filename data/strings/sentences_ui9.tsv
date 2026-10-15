@@ -1,0 +1,41 @@
+en	zh-Hant	zh-Hans	align	note
+The dance is punctuated by movement .	這支舞穿插著動作。	这支舞穿插着动作。		FUN_1404ea820 L620846／L622352 點綴清單結尾的 movement 沒有呼應標記時，遊戲寫「movement 」再接「.  」，段落框排成「movement .」（句點前多一個空白），照原樣比對；只有沒加形容詞的 movement
+The fluid dance is punctuated by movement .	這支流暢的舞蹈穿插著動作。	这支流畅的舞蹈穿插着动作。		FUN_1404ea820 L620846／L622352 點綴清單結尾的 movement 沒有呼應標記時，遊戲寫「movement 」再接「.  」，段落框排成「movement .」（句點前多一個空白），照原樣比對；只有沒加形容詞的 movement
+This section is punctuated by movement .	這一段穿插著動作。	这一段穿插着动作。		FUN_1404ea820 L620846／L622352 點綴清單結尾的 movement 沒有呼應標記時，遊戲寫「movement 」再接「.  」，段落框排成「movement .」（句點前多一個空白），照原樣比對；只有沒加形容詞的 movement
+This fluid section is punctuated by movement .	這段流暢的段落穿插著動作。	这段流畅的段落穿插着动作。		FUN_1404ea820 L620846／L622352 點綴清單結尾的 movement 沒有呼應標記時，遊戲寫「movement 」再接「.  」，段落框排成「movement .」（句點前多一個空白），照原樣比對；只有沒加形容詞的 movement
+large large moves	大幅的動作	大幅的动作	inner	FUN_1404ea820 L620820／L622324 點綴清單「, with … moves」：每個 large／aborted／partially realized 的 movement 各接一個形容詞（依出現順序、可重複），重複的合併，不同的用「或」接
+large aborted moves	大幅或中途打住的動作	大幅或中途打住的动作	inner	FUN_1404ea820 L620820／L622324 點綴清單「, with … moves」：每個 large／aborted／partially realized 的 movement 各接一個形容詞（依出現順序、可重複），重複的合併，不同的用「或」接
+large partially realized moves	大幅或只做一半的動作	大幅或只做一半的动作	inner	FUN_1404ea820 L620820／L622324 點綴清單「, with … moves」：每個 large／aborted／partially realized 的 movement 各接一個形容詞（依出現順序、可重複），重複的合併，不同的用「或」接
+aborted large moves	中途打住或大幅的動作	中途打住或大幅的动作	inner	FUN_1404ea820 L620820／L622324 點綴清單「, with … moves」：每個 large／aborted／partially realized 的 movement 各接一個形容詞（依出現順序、可重複），重複的合併，不同的用「或」接
+aborted aborted moves	中途打住的動作	中途打住的动作	inner	FUN_1404ea820 L620820／L622324 點綴清單「, with … moves」：每個 large／aborted／partially realized 的 movement 各接一個形容詞（依出現順序、可重複），重複的合併，不同的用「或」接
+aborted partially realized moves	中途打住或只做一半的動作	中途打住或只做一半的动作	inner	FUN_1404ea820 L620820／L622324 點綴清單「, with … moves」：每個 large／aborted／partially realized 的 movement 各接一個形容詞（依出現順序、可重複），重複的合併，不同的用「或」接
+partially realized large moves	只做一半或大幅的動作	只做一半或大幅的动作	inner	FUN_1404ea820 L620820／L622324 點綴清單「, with … moves」：每個 large／aborted／partially realized 的 movement 各接一個形容詞（依出現順序、可重複），重複的合併，不同的用「或」接
+partially realized aborted moves	只做一半或中途打住的動作	只做一半或中途打住的动作	inner	FUN_1404ea820 L620820／L622324 點綴清單「, with … moves」：每個 large／aborted／partially realized 的 movement 各接一個形容詞（依出現順序、可重複），重複的合併，不同的用「或」接
+partially realized partially realized moves	只做一半的動作	只做一半的动作	inner	FUN_1404ea820 L620820／L622324 點綴清單「, with … moves」：每個 large／aborted／partially realized 的 movement 各接一個形容詞（依出現順序、可重複），重複的合併，不同的用「或」接
+large large large moves	大幅的動作	大幅的动作	inner	FUN_1404ea820 L620820／L622324 點綴清單「, with … moves」：每個 large／aborted／partially realized 的 movement 各接一個形容詞（依出現順序、可重複），重複的合併，不同的用「或」接
+large large aborted moves	大幅或中途打住的動作	大幅或中途打住的动作	inner	FUN_1404ea820 L620820／L622324 點綴清單「, with … moves」：每個 large／aborted／partially realized 的 movement 各接一個形容詞（依出現順序、可重複），重複的合併，不同的用「或」接
+large large partially realized moves	大幅或只做一半的動作	大幅或只做一半的动作	inner	FUN_1404ea820 L620820／L622324 點綴清單「, with … moves」：每個 large／aborted／partially realized 的 movement 各接一個形容詞（依出現順序、可重複），重複的合併，不同的用「或」接
+large aborted large moves	大幅或中途打住的動作	大幅或中途打住的动作	inner	FUN_1404ea820 L620820／L622324 點綴清單「, with … moves」：每個 large／aborted／partially realized 的 movement 各接一個形容詞（依出現順序、可重複），重複的合併，不同的用「或」接
+large aborted aborted moves	大幅或中途打住的動作	大幅或中途打住的动作	inner	FUN_1404ea820 L620820／L622324 點綴清單「, with … moves」：每個 large／aborted／partially realized 的 movement 各接一個形容詞（依出現順序、可重複），重複的合併，不同的用「或」接
+large aborted partially realized moves	大幅、中途打住或只做一半的動作	大幅、中途打住或只做一半的动作	inner	FUN_1404ea820 L620820／L622324 點綴清單「, with … moves」：每個 large／aborted／partially realized 的 movement 各接一個形容詞（依出現順序、可重複），重複的合併，不同的用「或」接
+large partially realized large moves	大幅或只做一半的動作	大幅或只做一半的动作	inner	FUN_1404ea820 L620820／L622324 點綴清單「, with … moves」：每個 large／aborted／partially realized 的 movement 各接一個形容詞（依出現順序、可重複），重複的合併，不同的用「或」接
+large partially realized aborted moves	大幅、只做一半或中途打住的動作	大幅、只做一半或中途打住的动作	inner	FUN_1404ea820 L620820／L622324 點綴清單「, with … moves」：每個 large／aborted／partially realized 的 movement 各接一個形容詞（依出現順序、可重複），重複的合併，不同的用「或」接
+large partially realized partially realized moves	大幅或只做一半的動作	大幅或只做一半的动作	inner	FUN_1404ea820 L620820／L622324 點綴清單「, with … moves」：每個 large／aborted／partially realized 的 movement 各接一個形容詞（依出現順序、可重複），重複的合併，不同的用「或」接
+aborted large large moves	中途打住或大幅的動作	中途打住或大幅的动作	inner	FUN_1404ea820 L620820／L622324 點綴清單「, with … moves」：每個 large／aborted／partially realized 的 movement 各接一個形容詞（依出現順序、可重複），重複的合併，不同的用「或」接
+aborted large aborted moves	中途打住或大幅的動作	中途打住或大幅的动作	inner	FUN_1404ea820 L620820／L622324 點綴清單「, with … moves」：每個 large／aborted／partially realized 的 movement 各接一個形容詞（依出現順序、可重複），重複的合併，不同的用「或」接
+aborted large partially realized moves	中途打住、大幅或只做一半的動作	中途打住、大幅或只做一半的动作	inner	FUN_1404ea820 L620820／L622324 點綴清單「, with … moves」：每個 large／aborted／partially realized 的 movement 各接一個形容詞（依出現順序、可重複），重複的合併，不同的用「或」接
+aborted aborted large moves	中途打住或大幅的動作	中途打住或大幅的动作	inner	FUN_1404ea820 L620820／L622324 點綴清單「, with … moves」：每個 large／aborted／partially realized 的 movement 各接一個形容詞（依出現順序、可重複），重複的合併，不同的用「或」接
+aborted aborted aborted moves	中途打住的動作	中途打住的动作	inner	FUN_1404ea820 L620820／L622324 點綴清單「, with … moves」：每個 large／aborted／partially realized 的 movement 各接一個形容詞（依出現順序、可重複），重複的合併，不同的用「或」接
+aborted aborted partially realized moves	中途打住或只做一半的動作	中途打住或只做一半的动作	inner	FUN_1404ea820 L620820／L622324 點綴清單「, with … moves」：每個 large／aborted／partially realized 的 movement 各接一個形容詞（依出現順序、可重複），重複的合併，不同的用「或」接
+aborted partially realized large moves	中途打住、只做一半或大幅的動作	中途打住、只做一半或大幅的动作	inner	FUN_1404ea820 L620820／L622324 點綴清單「, with … moves」：每個 large／aborted／partially realized 的 movement 各接一個形容詞（依出現順序、可重複），重複的合併，不同的用「或」接
+aborted partially realized aborted moves	中途打住或只做一半的動作	中途打住或只做一半的动作	inner	FUN_1404ea820 L620820／L622324 點綴清單「, with … moves」：每個 large／aborted／partially realized 的 movement 各接一個形容詞（依出現順序、可重複），重複的合併，不同的用「或」接
+aborted partially realized partially realized moves	中途打住或只做一半的動作	中途打住或只做一半的动作	inner	FUN_1404ea820 L620820／L622324 點綴清單「, with … moves」：每個 large／aborted／partially realized 的 movement 各接一個形容詞（依出現順序、可重複），重複的合併，不同的用「或」接
+partially realized large large moves	只做一半或大幅的動作	只做一半或大幅的动作	inner	FUN_1404ea820 L620820／L622324 點綴清單「, with … moves」：每個 large／aborted／partially realized 的 movement 各接一個形容詞（依出現順序、可重複），重複的合併，不同的用「或」接
+partially realized large aborted moves	只做一半、大幅或中途打住的動作	只做一半、大幅或中途打住的动作	inner	FUN_1404ea820 L620820／L622324 點綴清單「, with … moves」：每個 large／aborted／partially realized 的 movement 各接一個形容詞（依出現順序、可重複），重複的合併，不同的用「或」接
+partially realized large partially realized moves	只做一半或大幅的動作	只做一半或大幅的动作	inner	FUN_1404ea820 L620820／L622324 點綴清單「, with … moves」：每個 large／aborted／partially realized 的 movement 各接一個形容詞（依出現順序、可重複），重複的合併，不同的用「或」接
+partially realized aborted large moves	只做一半、中途打住或大幅的動作	只做一半、中途打住或大幅的动作	inner	FUN_1404ea820 L620820／L622324 點綴清單「, with … moves」：每個 large／aborted／partially realized 的 movement 各接一個形容詞（依出現順序、可重複），重複的合併，不同的用「或」接
+partially realized aborted aborted moves	只做一半或中途打住的動作	只做一半或中途打住的动作	inner	FUN_1404ea820 L620820／L622324 點綴清單「, with … moves」：每個 large／aborted／partially realized 的 movement 各接一個形容詞（依出現順序、可重複），重複的合併，不同的用「或」接
+partially realized aborted partially realized moves	只做一半或中途打住的動作	只做一半或中途打住的动作	inner	FUN_1404ea820 L620820／L622324 點綴清單「, with … moves」：每個 large／aborted／partially realized 的 movement 各接一個形容詞（依出現順序、可重複），重複的合併，不同的用「或」接
+partially realized partially realized large moves	只做一半或大幅的動作	只做一半或大幅的动作	inner	FUN_1404ea820 L620820／L622324 點綴清單「, with … moves」：每個 large／aborted／partially realized 的 movement 各接一個形容詞（依出現順序、可重複），重複的合併，不同的用「或」接
+partially realized partially realized aborted moves	只做一半或中途打住的動作	只做一半或中途打住的动作	inner	FUN_1404ea820 L620820／L622324 點綴清單「, with … moves」：每個 large／aborted／partially realized 的 movement 各接一個形容詞（依出現順序、可重複），重複的合併，不同的用「或」接
+partially realized partially realized partially realized moves	只做一半的動作	只做一半的动作	inner	FUN_1404ea820 L620820／L622324 點綴清單「, with … moves」：每個 large／aborted／partially realized 的 movement 各接一個形容詞（依出現順序、可重複），重複的合併，不同的用「或」接

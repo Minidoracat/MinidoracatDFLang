@@ -1,0 +1,185 @@
+en	zh-Hant	zh-Hans	align	note
+Distance: 	距離：	距离：		FUN_14038a5b0 L458395 物品清單（位置）：距離標籤，後面另畫數字
+Amount of 	物品：	物品：		FUN_14038d940 工作指令詳情 L460365：條件第一列，後接物品描述（另畫）；第二列 available is＋比較詞＋數字，中文讀作「物品：X／可用數量至少 10」
+available is 	可用數量	可用数量		FUN_14038d940 工作指令詳情 L460427：條件第二列開頭，後接比較詞（at least…）、空白、數字
+at least	至少	至少		FUN_14038d940 工作指令詳情 L460433：條件比較詞（單獨畫在 available is 之後）
+at most	至多	至多		FUN_14038d940 工作指令詳情 L460433：條件比較詞（單獨畫在 available is 之後）
+greater than	大於	大于		FUN_14038d940 工作指令詳情 L460433：條件比較詞（單獨畫在 available is 之後）
+less than	小於	小于		FUN_14038d940 工作指令詳情 L460433：條件比較詞（單獨畫在 available is 之後）
+exactly	等於	等于		FUN_14038d940 工作指令詳情 L460433：條件比較詞（單獨畫在 available is 之後）
+must first be activated	必須先啟用	必须先启用		FUN_14038d940 工作指令詳情 L461037：條件為另一張指令，該指令名稱下一列
+must first be completed	必須先完成	必须先完成		FUN_14038d940 工作指令詳情 L461053：同上
+Satisfied for next check	下次檢查時已滿足	下次检查时已满足		FUN_14038d940 工作指令詳情 L461081：條件狀態
+Not satisfied for next check	下次檢查時未滿足	下次检查时未满足		FUN_14038d940 工作指令詳情 L461069：條件狀態
+Suggested conditions	建議條件	建议条件		FUN_14038d940 工作指令詳情 L461205：小標題
+No material	無材料	无材料		FUN_14038d940 工作指令詳情 L462361：材料欄
+One-time order	單次指令	一次性订单		FUN_14038d940 工作指令詳情 L460194：重複頻率
+Restarts if completed, checked daily	完成後重新開始，每日檢查	完成后重新开始，每天检查		FUN_14038d940 工作指令詳情 L460200：重複頻率
+Restarts if completed, conditions checked daily	完成後重新開始，每日檢查條件	完成后重新开始，每天检查条件		FUN_14038d940 工作指令詳情 L460234：重複頻率（有條件）
+Restarts if completed, checked monthly	完成後重新開始，每月檢查	完成后重新开始，每月检查		FUN_14038d940 工作指令詳情 L460200：重複頻率
+Restarts if completed, conditions checked monthly	完成後重新開始，每月檢查條件	完成后重新开始，每月检查条件		FUN_14038d940 工作指令詳情 L460234：重複頻率（有條件）
+Restarts if completed, checked seasonally	完成後重新開始，每季檢查	完成后重新开始，每季检查		FUN_14038d940 工作指令詳情 L460200：重複頻率
+Restarts if completed, conditions checked seasonally	完成後重新開始，每季檢查條件	完成后重新开始，每季检查条件		FUN_14038d940 工作指令詳情 L460234：重複頻率（有條件）
+Restarts if completed, checked yearly	完成後重新開始，每年檢查	完成后重新开始，每年检查		FUN_14038d940 工作指令詳情 L460200：重複頻率
+Restarts if completed, conditions checked yearly	完成後重新開始，每年檢查條件	完成后重新开始，每年检查条件		FUN_14038d940 工作指令詳情 L460234：重複頻率（有條件）
+One-time order, conditions checked daily	單次指令，每日檢查條件	一次性订单，每天检查条件		FUN_14038d940 工作指令詳情 L460229：重複頻率（有條件）
+There are no active work orders.	目前沒有進行中的工作指令。	目前没有进行中的工作订单。		FUN_140392f00 工作指令清單 L462873
+Can use any shop	可使用任何工坊	可使用任意工坊		FUN_140392f00 工作指令清單 L463260：工坊上限為 0
+_ shop(s) max	上限 _ 間	上限 _ 间		FUN_140392f00 工作指令清單 L463318：輸入框清空時，游標閃爍（_）
+0 = Can use any shop	0 = 可使用任何工坊	0 = 可使用任意工坊		FUN_140392f00 工作指令清單 L463340：輸入時的說明
+Must set colors	必須設定顏色	必须设置颜色		FUN_140392f00 工作指令清單 L463556：染色指令未設定顏色
+All work orders must be validated	所有工作指令都必須經過	所有工作订单都必须经过		FUN_140392f00 工作指令清單 L464139：三列說明第一列（第二列 by the manager…、第三列 active.）
+by the manager before they become	經理核准後才會	经理批准后才会		FUN_140392f00 工作指令清單 L464155：三列說明第二列
+active.	生效。	生效。		FUN_140392f00 工作指令清單 L464169：三列說明第三列
+  shop(s) max	  上限 間	  上限 间		FUN_140392f00 工作指令清單 L463318：輸入框清空時，游標閃爍（空白；開頭兩格是空的輸入與游標）
+Unnamed location	未命名場所	未命名场所		FUN_14039ac20 場所清單（區域／場所／倉儲區／工坊／農田／攻城器械） L469018／L469298：營房等指派的場所沒有名字時
+Unknown location	未知場所	未知场所		FUN_14039ac20 場所清單（區域／場所／倉儲區／工坊／農田／攻城器械） L469291
+Unloaded	未裝填	未装填		FUN_14039ac20 場所清單（區域／場所／倉儲區／工坊／農田／攻城器械） L469918：攻城器械彈藥狀態
+Loading	裝填中	装填中		FUN_14039ac20 場所清單（區域／場所／倉儲區／工坊／農田／攻城器械） L470009：攻城器械（弩砲）裝填中；執行檔另一處 Loading 只拼成「Loading ammo」
+Inactive load task	裝填工作未進行	装填任务未进行		FUN_14039ac20 場所清單（區域／場所／倉儲區／工坊／農田／攻城器械） L470024：弩砲沒有人在裝填
+No operator	無操作員	无操作员		FUN_14039ac20 場所清單（區域／場所／倉儲區／工坊／農田／攻城器械） L470046：投石機沒有操作員
+Operator present	操作員在場	操作员在场		FUN_14039ac20 場所清單（區域／場所／倉儲區／工坊／農田／攻城器械） L470068
+Operator assigned	已指派操作員	已分配操作员		FUN_14039ac20 場所清單（區域／場所／倉儲區／工坊／農田／攻城器械） L470077：已指派但不在器械旁
+Remove assignment	移除指派	取消分配		FUN_1403a4cf0 L474418／FUN_1403a6d10 L476255 單位選擇清單（小隊指派）最上面的特殊選項（FUN_14142d050）
+Select or create a route.	選擇或建立一條路線。	选择或创建一条路线。		FUN_1403aa430 搬運路線 L478749（舊譯被 Select {1} 接成半中半英）
+Create new route	建立新路線	创建新路线		FUN_1403aa430 搬運路線 L478920 按鈕
+Click the map to add points.	點選地圖以新增節點。	点击地图以添加节点。		FUN_1403aa430 搬運路線 L479091
+Select which burrows to defend.	選擇要防守的活動區。	选择要防守的活动区。		FUN_1403ab500 L479434 小隊命令：防守活動區（舊譯被 Select {1} 接成半中半英）
+Select how squads will use this space.	選擇小隊使用此空間的方式。	选择小队使用此空间的方式。		FUN_1403abea0 L479873 營房設定
+Select the squads to train here.	選擇要在此訓練的小隊。	选择要在此训练的小队。		FUN_1403abea0 L479883 營房設定
+Storage and tools	容器與工具	容器与工具		FUN_1403aef70 倉儲區「容器與工具」設定 L482335 標題
+Max barrels	桶上限	桶上限		FUN_1403aef70 倉儲區「容器與工具」設定 L482373
+Max bins	貨箱上限	货箱上限		FUN_1403aef70 倉儲區「容器與工具」設定 L482482
+Max wheelbarrows	手推車上限	独轮车上限		FUN_1403aef70 倉儲區「容器與工具」設定 L482582
+Select a stockpile or	選擇一個倉儲區或	选择一个储物区或		FUN_1403afd60 倉儲區連結 L482792：兩列說明第一列，第二列 workshop to＋take from／give to＋「.」
+Select a stockpile to	選擇一個倉儲區作為	选择一个储物区作为		FUN_1403afd60 倉儲區連結 L482856：兩列說明第一列，第二列 take from／give to／exchange with＋「.」
+workshop to 	工坊作為	工坊作为		FUN_1403afd60 倉儲區連結 L482802：第二列開頭，後接 take from／give to
+take from	取貨來源	取货来源		FUN_1403afd60 倉儲區連結 L482810：第二列，後接「.」
+give to	送貨處	送货处		FUN_1403afd60 倉儲區連結 L482826：第二列，後接「.」（7 格只放得下三字）
+exchange with	互換對象	互换对象		FUN_1403afd60 倉儲區連結 L482889：第二列，後接「.」
+Locations such as taverns, temples	像酒館、神殿	像酒馆、神殿		FUN_1403b9270 區域的場所指派 L487911：六列說明第 1 列（一列一條，中文依序接成一段）；術語例外：location
+and libraries can be created from	與圖書館這類場所，可以由	和图书馆这类场所，可以由		FUN_1403b9270 區域的場所指派 L487916：六列說明第 2 列（一列一條，中文依序接成一段）
+meeting area zones, dining rooms and	集會區、餐廳	集会区、餐厅		FUN_1403b9270 區域的場所指派 L487921：六列說明第 3 列（一列一條，中文依序接成一段）；術語例外：zone
+bedrooms.  These larger associations	與臥室等區域建立。這些	和卧室等区域创建。这些		FUN_1403b9270 區域的場所指派 L487926：六列說明第 4 列（一列一條，中文依序接成一段）
+of rooms can attract visitors from	較大的房間組合可以吸引	较大的房间组合可以吸引		FUN_1403b9270 區域的場所指派 L487931：六列說明第 5 列（一列一條，中文依序接成一段）
+outside the fortress.	要塞外的訪客。	要塞外的访客。		FUN_1403b9270 區域的場所指派 L487936：六列說明第 6 列（一列一條，中文依序接成一段）
+Add or choose a location.	新增或選擇場所。	添加或选择场所。		FUN_1403b9270 區域的場所指派 L487941
+Remove current location assignment	移除目前的場所指派	移除当前的场所分配		FUN_1403b9270 區域的場所指派 L487990
+New inn/tavern	新酒館	新酒馆		FUN_1403b9270 區域的場所指派 L488027 按鈕
+New temple	新神殿	新神殿		FUN_1403b9270 區域的場所指派 L488039 按鈕
+New library	新圖書館	新图书馆		FUN_1403b9270 區域的場所指派 L488047 按鈕
+New guildhall	新公會大廳	新公会大厅		FUN_1403b9270 區域的場所指派 L488064 按鈕
+New hospital	新醫院	新医院		FUN_1403b9270 區域的場所指派 L488072 按鈕
+Have shrine	已有神龕	已有神龛		FUN_1403b9270 區域的場所指派 L488779：神殿側欄，信徒已有／想要的神殿等級
+Have temple	已有神殿	已有神殿		FUN_1403b9270 區域的場所指派 L488779：神殿側欄，信徒已有／想要的神殿等級
+Have temple complex	已有神殿建築群	已有神殿建筑群		FUN_1403b9270 區域的場所指派 L488779：神殿側欄，信徒已有／想要的神殿等級
+Have meeting place	已有集會廳	已有集会厅		FUN_1403b9270 區域的場所指派 L489262：公會側欄，公會已有／想要的場所等級
+Have guildhall	已有公會大廳	已有公会大厅		FUN_1403b9270 區域的場所指派 L489262：公會側欄，公會已有／想要的場所等級
+Have grand guildhall	已有宏偉公會大廳	已有宏伟公会大厅		FUN_1403b9270 區域的場所指派 L489262：公會側欄，公會已有／想要的場所等級
+Want shrine	想要神龕	想要神龛		FUN_1403b9270 區域的場所指派 L488826：神殿側欄，信徒已有／想要的神殿等級
+Want temple	想要神殿	想要神殿		FUN_1403b9270 區域的場所指派 L488826：神殿側欄，信徒已有／想要的神殿等級
+Want temple complex	想要神殿建築群	想要神殿建筑群		FUN_1403b9270 區域的場所指派 L488826：神殿側欄，信徒已有／想要的神殿等級
+Want meeting place	想要集會廳	想要集会厅		FUN_1403b9270 區域的場所指派 L489299：公會側欄，公會已有／想要的場所等級
+Want guildhall	想要公會大廳	想要公会大厅		FUN_1403b9270 區域的場所指派 L489299：公會側欄，公會已有／想要的場所等級
+Want grand guildhall	想要宏偉公會大廳	想要宏伟公会大厅		FUN_1403b9270 區域的場所指派 L489299：公會側欄，公會已有／想要的場所等級
+No worshippers	沒有信徒	没有信徒		FUN_1403b9270 區域的場所指派 L488959（舊譯被 No {1} 接成「否信徒」）
+No workers	沒有工人	没有工人		FUN_1403b9270 區域的場所指派 L489431（舊譯被 No {1} 接成「否工人」）
+No members	沒有成員	没有成员		FUN_1403b9270 區域的場所指派 L489535
+Guild:	公會：	公会：		FUN_1403b9270 區域的場所指派 L489495：後面另畫公會名
+Clothes	服裝	服装		FUN_1403bd3a0 建造選單項目名稱（FUN_140310910 選單項，滑過時顯示） L491099：裁縫工坊的按鈕（衣物與皮革分類）
+Farm plot	農田	农田		FUN_1403bd3a0 建造選單項目名稱（FUN_140310910 選單項，滑過時顯示） L491132
+Wood furnace	燒炭爐	烧炭炉		FUN_1403bd3a0 建造選單項目名稱（FUN_140310910 選單項，滑過時顯示） L490964（Wood Furnace 已有同譯名，大小寫不同）；術語例外：furnace
+Select a rectangle	選取一個矩形範圍，	选取一个矩形范围，		FUN_1403eafc3 0x1403ec810 區域建立說明（逐列畫）：第 1 列；第 2 列 which contains＋家具（同列另畫）、第 3 列 in order to form、第 4 列 tombs. 等
+which contains 	需包含	需包含		FUN_1403eafc3 0x1403ec810 區域建立說明（逐列畫）：第 2 列開頭，後接 coffins／chairs／beds／tables（既有名稱條目）
+in order to form	才能形成	才能形成		FUN_1403eafc3 0x1403ec810 區域建立說明（逐列畫）：第 3 列
+tombs.	墓室。	墓室。		FUN_1403eafc3 0x1403ec810 區域建立說明（逐列畫）：第 4 列
+throne rooms/studies.	王座廳／書房。	王座厅／书房。		FUN_1403eafc3 0x1403ec810 區域建立說明（逐列畫）：第 4 列（椅子）
+bedrooms.	臥室。	卧室。		FUN_1403eafc3 0x1403ec810 區域建立說明（逐列畫）：第 4 列
+dining halls.	餐廳。	餐厅。		FUN_1403eafc3 0x1403ec810 區域建立說明（逐列畫）：第 4 列
+Rooms with multiple beds	有多張床的房間	有多张床的房间		FUN_1403eafc3 0x1403ec810 區域建立說明（逐列畫） 0x1403ecb27：臥室說明第 6 列，下接 will be made into／dormitories.
+will be made into	會被設為	会被设为		FUN_1403eafc3 0x1403ec810 區域建立說明（逐列畫） 0x1403ecb76
+dormitories.	宿舍。	宿舍。		FUN_1403eafc3 0x1403ec810 區域建立說明（逐列畫） 0x1403ecbc5
+Undo	復原	撤销		FUN_1403eafc3 0x1403ecd85 區域繪製按鈕 0x1403ed020
+Select another rectangle	選取另一個矩形範圍	选取另一个矩形范围		FUN_1403eafc3 0x1403ed089：第 1 列，下接 to continue.
+to continue.	以繼續。	以继续。		FUN_1403eafc3 0x1403ed0d8：第 2 列
+Tomb created.	墓室已建立。	墓室已建立。		FUN_1403eafc3 0x1403ed2ff 區域建立結果（數量＋種類＋s＋ created.，首字大寫）
+Office created.	辦公室已建立。	办公室已建立。		FUN_1403eafc3 0x1403ed2ff 區域建立結果（數量＋種類＋s＋ created.，首字大寫）
+Bedroom created.	臥室已建立。	卧室已建立。		FUN_1403eafc3 0x1403ed2ff 區域建立結果（數量＋種類＋s＋ created.，首字大寫）
+Dining hall created.	餐廳已建立。	餐厅已建立。		FUN_1403eafc3 0x1403ed2ff 區域建立結果（數量＋種類＋s＋ created.，首字大寫）
+Dormitory created.	宿舍已建立。	宿舍已建立。		FUN_1403eafc3 0x1403ed2ff 區域建立結果（數量＋種類＋s＋ created.，首字大寫）
+Coffin rejected (already in use.)	棺材未納入（已在使用中）	棺材未纳入（已在使用中）		FUN_1403eafc3 0x1403ed50c 區域建立時未納入的家具（數量＋家具＋s＋原因，首字大寫）
+Coffin rejected (not enclosed.)	棺材未納入（沒有圍起來）	棺材未纳入（没有围起来）		FUN_1403eafc3 0x1403ed50c 區域建立時未納入的家具（數量＋家具＋s＋原因，首字大寫）
+Chair rejected (already in use.)	椅子未納入（已在使用中）	椅子未纳入（已在使用中）		FUN_1403eafc3 0x1403ed50c 區域建立時未納入的家具（數量＋家具＋s＋原因，首字大寫）
+Chair rejected (not enclosed.)	椅子未納入（沒有圍起來）	椅子未纳入（没有围起来）		FUN_1403eafc3 0x1403ed50c 區域建立時未納入的家具（數量＋家具＋s＋原因，首字大寫）
+Bed rejected (already in use.)	床未納入（已在使用中）	床未纳入（已在使用中）		FUN_1403eafc3 0x1403ed50c 區域建立時未納入的家具（數量＋家具＋s＋原因，首字大寫）
+Bed rejected (not enclosed.)	床未納入（沒有圍起來）	床未纳入（没有围起来）		FUN_1403eafc3 0x1403ed50c 區域建立時未納入的家具（數量＋家具＋s＋原因，首字大寫）
+Table rejected (already in use.)	桌子未納入（已在使用中）	桌子未纳入（已在使用中）		FUN_1403eafc3 0x1403ed50c 區域建立時未納入的家具（數量＋家具＋s＋原因，首字大寫）
+Table rejected (not enclosed.)	桌子未納入（沒有圍起來）	桌子未纳入（没有围起来）		FUN_1403eafc3 0x1403ed50c 區域建立時未納入的家具（數量＋家具＋s＋原因，首字大寫）
+to paint the zone.	以繪製區域。	以绘制区域。		FUN_1403eafc3 0x1403ed6e9：接在 Click in the play area 下一列
+to paint the burrow.	以繪製活動區。	以绘制活动区。		FUN_1403eafc3 0x1403f04f2：接在 Click in the play area 下一列
+Click an existing zone to select it.	點選現有區域以選取。	点击现有区域以选中。		FUN_1403eafc3 0x1403ebbc8 區域選單說明
+Nobody assigned	尚未指派任何人	尚未分配任何人		FUN_1403eafc3 0x1403eff17 活動區清單
+Click a tile to position the stop.	點選一格以放置停靠站。	点击一格以放置停靠站。		FUN_1403eafc3 0x1403f0c4c 搬運路線：新增站點；術語例外：Position
+Building track stops is recommended!	建議建造軌道停靠站！	建议建造轨道停靠站！		FUN_1403eafc3 0x1403f0cb2 搬運路線：新增站點
+Indep	獨立	独立		FUN_1403eafc3 L513258 競技場上方隊伍列：沒有隊伍的生物（independent）
+Create a creature to begin.	建立一個生物以開始。	创建一个生物以开始。		FUN_1403eafc3 L513347 競技場：還沒有生物時
+Conflict Level	衝突等級	冲突等级		FUN_1403eafc3 L514612 衝突等級（競技場、冒險模式單位清單共用）：標題
+Horseplay	嬉鬧	嬉闹		FUN_1403eafc3 L514612 衝突等級（競技場、冒險模式單位清單共用）
+Brawl	鬥毆	斗殴		FUN_1403eafc3 L514612 衝突等級（競技場、冒險模式單位清單共用）
+Non-lethal	非致命	非致命		FUN_1403eafc3 L514612 衝突等級（競技場、冒險模式單位清單共用）
+Lethal	致命	致命		FUN_1403eafc3 L514612 衝突等級（競技場、冒險模式單位清單共用）
+No Quarter	格殺勿論	格杀勿论		FUN_1403eafc3 L514612 衝突等級（競技場、冒險模式單位清單共用）
+Morale/Fear 	士氣／恐懼 	士气／恐惧 		FUN_1403eafc3 L514686 競技場：後接 On／Off
+Accepted petition:	已接受的請願：	已接受的请愿：		FUN_1403eafc3 L515244 請願／協議（神殿、公會）：標題
+Build a temple complex	建造神殿建築群	建造神殿建筑群		FUN_1403eafc3 L515244 請願／協議（神殿、公會） L515258
+Build a grand guildhall	建造宏偉公會大廳	建造宏伟公会大厅		FUN_1403eafc3 L515244 請願／協議（神殿、公會） L515487
+A priest must then be elevated.	接著必須拔擢一名祭司。	接着必须提拔一名祭司。		FUN_1403eafc3 L515244 請願／協議（神殿、公會） L515314
+A high priest must then be elevated.	接著必須拔擢一名大祭司。	接着必须提拔一名大祭司。		FUN_1403eafc3 L515244 請願／協議（神殿、公會） L515320
+No temple location currently assigned to a zone.	目前沒有區域被指派為神殿場所。	目前没有区域被分配为神殿场所。		FUN_1403eafc3 L515244 請願／協議（神殿、公會） L515338
+No guildhall location currently assigned to a zone.	目前沒有區域被指派為公會大廳場所。	目前没有区域被分配为公会大厅场所。		FUN_1403eafc3 L515244 請願／協議（神殿、公會） L515559
+Current temple location:	目前的神殿場所：	当前的神殿场所：		FUN_1403eafc3 L515244 請願／協議（神殿、公會） L515403：下一列是場所名, 價值☼
+Current top temple location:	目前最佳的神殿場所：	当前最佳的神殿场所：		FUN_1403eafc3 L515244 請願／協議（神殿、公會） L515408：有兩處以上時
+Current guildhall location:	目前的公會大廳場所：	当前的公会大厅场所：		FUN_1403eafc3 L515244 請願／協議（神殿、公會） L515618
+Current top guildhall location:	目前最佳的公會大廳場所：	当前最佳的公会大厅场所：		FUN_1403eafc3 L515244 請願／協議（神殿、公會） L515623
+Created Wealth:	創造的財富：	创造的财富：		FUN_1403eafc3 L515733 財富／貿易資訊
+Trade Information:	貿易資訊：	贸易信息：		FUN_1403eafc3 L515733 財富／貿易資訊
+Weapons:	武器：	武器：		FUN_1403eafc3 L515733 財富／貿易資訊
+Armor and Garb:	盔甲與衣著：	盔甲与衣着：		FUN_1403eafc3 L515733 財富／貿易資訊
+Furniture:	家具：	家具：		FUN_1403eafc3 L515733 財富／貿易資訊
+Other Objects:	其他物品：	其他物品：		FUN_1403eafc3 L515733 財富／貿易資訊
+Architecture:	建築：	建筑：		FUN_1403eafc3 L515733 財富／貿易資訊
+Displayed:	展示品：	展示品：		FUN_1403eafc3 L515733 財富／貿易資訊
+Held/Worn:	持有穿戴：	持有穿戴：		FUN_1403eafc3 L515733 財富／貿易資訊
+Imported Wealth:	進口財富：	进口财富：		FUN_1403eafc3 L515733 財富／貿易資訊
+Exported Wealth:	出口財富：	出口财富：		FUN_1403eafc3 L515733 財富／貿易資訊
+You need a broker with	需要一位交易員	需要一位交易员		FUN_1403eafc3 L515733 財富／貿易資訊 L515741：兩列說明第一列
+the appraisal skill.	具備估價技能。	具备估价技能。		FUN_1403eafc3 L515733 財富／貿易資訊 L515745：兩列說明第二列
+A bookkeeper helps	簿記員能幫助	簿记员能帮助		FUN_1403eafc3 L515733 財富／貿易資訊 L515749：兩列說明第一列
+with accuracy.	提高準確度。	提高准确度。		FUN_1403eafc3 L515733 財富／貿易資訊 L515753：兩列說明第二列
+Left click for recenter and expand options.  Right click to dismiss.	按左鍵可重新置中並展開選項。按右鍵關閉。	单击左键可重新居中并展开选项。单击右键关闭。		FUN_1403eafc3 L516533 通知提示列
+Loud movement	大聲的動靜	大声的动静	inner	FUN_140406860 L522186 查看清單：聽到的聲音（只接進「(heard)」句型）
+Quiet movement	輕微的動靜	轻微的动静	inner	FUN_140406860 L522186 查看清單：聽到的聲音（只接進「(heard)」句型）
+Heavy combat	激烈的戰鬥	激烈的战斗	inner	FUN_140406860 L522186 查看清單：聽到的聲音（只接進「(heard)」句型）
+Light combat	輕微的戰鬥	轻微的战斗	inner	FUN_140406860 L522186 查看清單：聽到的聲音（只接進「(heard)」句型）
+Loud vocalization	大聲的叫喊	大声的叫喊	inner	FUN_140406860 L522186 查看清單：聽到的聲音（只接進「(heard)」句型）
+Quiet vocalization	輕聲的低語	轻声的低语	inner	FUN_140406860 L522186 查看清單：聽到的聲音（只接進「(heard)」句型）
+Loud grinding	大聲的研磨聲	大声的研磨声	inner	FUN_140406860 L522186 查看清單：聽到的聲音（只接進「(heard)」句型）
+Quiet grinding	輕微的研磨聲	轻微的研磨声	inner	FUN_140406860 L522186 查看清單：聽到的聲音（只接進「(heard)」句型）
+Storytelling	說故事	讲故事	inner	FUN_140406860 L522186 查看清單：聽到的聲音（只接進「(heard)」句型）
+Poem recitation	吟詩	吟诗	inner	FUN_140406860 L522186 查看清單：聽到的聲音（只接進「(heard)」句型）
+Musical voice	歌聲	歌声	inner	FUN_140406860 L522186 查看清單：聽到的聲音（只接進「(heard)」句型）
+Dancing	跳舞	跳舞	inner	FUN_140406860 L522186 查看清單：聽到的聲音（只接進「(heard)」句型）
+Preaching	佈道	布道	inner	FUN_140406860 L522186 查看清單：聽到的聲音（只接進「(heard)」句型）
+Creature (remembered)	生物（記憶中）	生物（记忆中）		FUN_140406860 L522247 查看清單：記得的地形與東西
+Object (remembered)	物品（記憶中）	物品（记忆中）		FUN_140406860 L522247 查看清單：記得的地形與東西
+Structure (remembered)	建築（記憶中）	建筑（记忆中）		FUN_140406860 L522247 查看清單：記得的地形與東西
+Wall (remembered)	牆壁（記憶中）	墙壁（记忆中）		FUN_140406860 L522247 查看清單：記得的地形與東西
+Upward stair (remembered)	上行樓梯（記憶中）	上行楼梯（记忆中）		FUN_140406860 L522247 查看清單：記得的地形與東西
+Downward stair (remembered)	下行樓梯（記憶中）	下行楼梯（记忆中）		FUN_140406860 L522247 查看清單：記得的地形與東西
+Updown stair (remembered)	上下樓梯（記憶中）	上下楼梯（记忆中）		FUN_140406860 L522247 查看清單：記得的地形與東西
+Upward ramp (remembered)	上行斜坡（記憶中）	上行斜坡（记忆中）		FUN_140406860 L522247 查看清單：記得的地形與東西
+Downward ramp (remembered)	下行斜坡（記憶中）	下行斜坡（记忆中）		FUN_140406860 L522247 查看清單：記得的地形與東西
+Floor (remembered)	地板（記憶中）	地板（记忆中）		FUN_140406860 L522247 查看清單：記得的地形與東西
+Open air (remembered)	懸空處（記憶中）	悬空处（记忆中）		FUN_140406860 L522247 查看清單：記得的地形與東西
+Blood of the living (sensed)	生者之血（感知）	生者之血（感知）		FUN_140406860 L522297 查看清單：感知到的生者血液（夜行生物等）
+Select a report to view the full text.  Right click to close.	選擇一則報告以檢視全文。按右鍵關閉。	选择一条报告以查看全文。右键关闭。		FUN_14040d5f0 L526456 單位報告清單說明

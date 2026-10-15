@@ -20,3 +20,13 @@ Suffocate	使窒息	使窒息			init.lua 神器力量 能力選單（CDI:ADV_NAM
 Transform	變形	变形			shared_info.lua 鬼怪變身 能力選單（CDI:ADV_NAME）；冒險模式畫面單獨畫出；單字放全域會被大小寫退回搶到別處的小寫字，所以只在冒險畫面（dungeonmode/…）套用
 Vanish	消失	消失			interactions.lua 能力選單（CDI:ADV_NAME）；冒險模式畫面單獨畫出；單字放全域會被大小寫退回搶到別處的小寫字，所以只在冒險畫面（dungeonmode/…）套用
 Run	奔	奔			FUN_1408733b0 後的移動速度選單步態名（raws GAIT:WALK:Run）；原文 3 格只放得下一個字；不放全域：大小寫退回會蓋過舞蹈說明 inner 的 run（跑動）
+Above	上層	上层			FUN_14074f220 方位（UI12）
+Below	下層	下层			FUN_14074f220 方位（UI12）
+Here	這裡	这里			FUN_14074f220 方位（UI12）
+Roll	擲骰	掷骰			FUN_1407e13f0 冒險動作按鈕（UI12）
+Temperate	溫和	温和			FUN_14080d5e0 L1158019 旅行地圖側欄「Temperature: Temperate」（UI12）；人物頁是「節制」
+Distant	遠方	远方			FUN_14086ddb0 L1208785 冒險模式同伴畫面（UI13）
+Ground	倒地	倒地			FUN_14086ddb0 L1209005 冒險模式同伴畫面：同伴倒在地上（UI13）
+Nearby	附近	附近			FUN_14086ddb0 L1209025 冒險模式同伴畫面（UI13）
+Give	給予	给予			FUN_14026e080 L329783 冒險模式以物易物畫面按鈕（UI4）
+Demand	索取	索要			FUN_14026e080 L329809 冒險模式以物易物畫面按鈕（UI4）

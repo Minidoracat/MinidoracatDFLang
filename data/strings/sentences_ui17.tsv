@@ -1,0 +1,14 @@
+en	zh-Hant	zh-Hans	align	note
+The causes of the conflict are debated by scholars and very little is truly known.	這場衝突的起因在學者間眾說紛紜，真相幾乎無從得知。	这场冲突的起因在学者间众说纷纭，真相几乎无从得知。		FUN_140d46d00 L1982515 戰爭頁：沒有已知起因
+Attacker was victorious.	攻方獲勝。	攻方获胜。		FUN_140d46d00 L1983192 戰役頁結果（[B] 之間單獨一段）
+Attacker was uncontested.	攻方未遭抵抗。	攻方未遭抵抗。		FUN_140d46d00 L1983190 戰役頁結果：守方人數為 0
+Defender was victorious.	守方獲勝。	守方获胜。		FUN_140d46d00 L1983199 戰役頁結果
+A fearsome beast attacks!	一頭可怕的野獸來襲！	一头可怕的野兽来袭！		FUN_140d46d00 L1983234-1983255 獸襲頁標題：單一攻擊者、種族不同（beast）
+A fair	市集	市集	inner	FUN_140d46d00 L1983295 節慶頁：接在 occurred in ＋日期前（zz_ui_17 的 {%1} occurred in …）
+unknown creature	未知生物	未知生物	inner	FUN_140d46d00 L1983086-1983090 戰役頁兵力清單：數字＋ unknown creature(s)
+unknown creatures	未知生物	未知生物	inner	FUN_140d46d00 L1983086-1983090 同上（複數）
+creatures	生物	生物	inner	FUN_140d46d00 L1983081-1983090 戰役頁兵力清單：只有不明兵力時「數字 creatures」
+This artwork has been lost.	這件藝術品已佚失。	这件艺术品已佚失。		FUN_140d4bf70 L1985454 傳說模式藝術品頁（段落框）：找不到作品時
+A foot race occurred in a time before time.	太古之時，舉行了賽跑。	太古之时，举行了赛跑。		FUN_140d46d00 L1983495-1983505 比賽頁：A ＋生物名＋ race（FUN_140aa3bd0 單數）；外框寫進 occurred in 整句（articles.tsv 的 A {%1} 排在前面，inner「A {%1} race」比不到）；foot／flying／horse 逐條寫在通用句前
+A flying race occurred in a time before time.	太古之時，舉行了飛行競速賽。	太古之时，举行了飞行竞速赛。		FUN_140d46d00 L1983495-1983505 比賽頁：A ＋生物名＋ race（FUN_140aa3bd0 單數）；外框寫進 occurred in 整句（articles.tsv 的 A {%1} 排在前面，inner「A {%1} race」比不到）；foot／flying／horse 逐條寫在通用句前
+A horse race occurred in a time before time.	太古之時，舉行了賽馬。	太古之时，举行了赛马。		FUN_140d46d00 L1983495-1983505 比賽頁：A ＋生物名＋ race（FUN_140aa3bd0 單數）；外框寫進 occurred in 整句（articles.tsv 的 A {%1} 排在前面，inner「A {%1} race」比不到）；foot／flying／horse 逐條寫在通用句前

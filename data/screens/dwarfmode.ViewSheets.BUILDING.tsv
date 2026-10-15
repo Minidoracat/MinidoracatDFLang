@@ -2,3 +2,14 @@ en	zh-Hant	zh-Hans	align	row	note
 Any	全	全			DFHack hack/lua/plugins/buildingplan/mechanisms.lua L45 機械裝置耐熱選項（全域沒有 Any）
 Free	卸下	卸下			DFHack hack/lua/plugins/buildingplan/unlink_mechanisms.lua L558 卸下未連結機械裝置的按鈕（全域 Free 是自由）
 Master	大師	大师			DFHack hack/lua/plugins/orders.lua L318 工坊技能限制 overlay 的技能等級選項（df.skill_rating 的 caption）：全域的 Master 只有 inner（句中的小寫 master 常是「主人」，不能經大小寫退回），這個畫面單獨畫的照技能等級翻
+Workshop	工坊	工坊			FUN_14054d320 建築名稱單獨畫在建築頁標題（UI10）；全域只有 inner（fort_2），單字不放全域
+Stockpile	倉儲區	储物区			FUN_14054d320 建築名稱單獨畫在建築頁標題（UI10）；全域只有 inner（fort_2），單字不放全域
+Furnace	熔爐	熔炉			FUN_14054d320 建築名稱單獨畫在建築頁標題（UI10）；全域只有 inner（fort_2），單字不放全域
+Trap	陷阱	陷阱			FUN_14054d320 建築名稱單獨畫在建築頁標題（UI10）；全域只有 inner（fort_2），單字不放全域
+Nest	巢	巢			FUN_14054d320 建築名稱單獨畫在建築頁標題（UI10）；全域只有 inner（fort_2），單字不放全域
+Zone	區域	区域			FUN_14054d320 建築名稱單獨畫在建築頁標題（UI10）；全域只有 inner（fort_2），單字不放全域
+Shop	工坊	工坊			FUN_14054d320 建築名稱單獨畫在建築頁標題（UI10）；全域只有 inner（fort_2），單字不放全域
+Construction	建造物	建造物			FUN_14054d320 建築名稱單獨畫在建築頁標題（UI10）（勞動名稱的 Construction 是「建造」）；全域只有 inner（fort_2），單字不放全域
+Still	釀酒	酿酒			FUN_14054d320 建築名稱單獨畫在建築頁標題（UI10）；全域只有 inner（fort_2），單字不放全域
+Loom	織機	织机			FUN_14054d320 建築名稱單獨畫在建築頁標題（UI10）；全域只有 inner（fort_2），單字不放全域
+Fishery	漁獲	渔获			FUN_14054d320 建築名稱單獨畫在建築頁標題（UI10）；全域只有 inner（fort_2），單字不放全域

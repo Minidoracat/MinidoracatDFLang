@@ -1,0 +1,89 @@
+en	zh-Hant	zh-Hans	align	note
+Civilizations can attack	文明可發動攻擊	文明可发动攻击		FUN_141077a80 L2437273 自訂難度設定：參數標籤
+Megabeasts can attack	巨獸可發動攻擊	巨兽可发动攻击		FUN_141077a80 L2437288 自訂難度設定：參數標籤
+Werebeasts can attack	獸化人可發動攻擊	兽化人可发动攻击		FUN_141077a80 L2437302 自訂難度設定：參數標籤
+Curious wilderness creatures can come to cause trouble	好奇的野生生物可能前來搗亂	好奇的野生生物可能前来捣乱		FUN_141077a80 L2437316 自訂難度設定：參數標籤
+Enemy/merchant population trigger 1	敵人／商人人口門檻 1	敌人/商人人口门槛 1		FUN_141077a80 L2437331 自訂難度設定：參數標籤（清單漏收的同畫面字串）
+Enemy/merchant population trigger 2	敵人／商人人口門檻 2	敌人/商人人口门槛 2		FUN_141077a80 L2437339 自訂難度設定：參數標籤（清單漏收的同畫面字串）
+Enemy/merchant population trigger 3	敵人／商人人口門檻 3	敌人/商人人口门槛 3		FUN_141077a80 L2437347 自訂難度設定：參數標籤（清單漏收的同畫面字串）
+Enemy/merchant population trigger 4	敵人／商人人口門檻 4	敌人/商人人口门槛 4		FUN_141077a80 L2437355 自訂難度設定：參數標籤（清單漏收的同畫面字串）
+Enemy/merchant population trigger 5	敵人／商人人口門檻 5	敌人/商人人口门槛 5		FUN_141077a80 L2437363 自訂難度設定：參數標籤（清單漏收的同畫面字串）
+Enemy/merchant production trigger 1	敵人／商人生產門檻 1	敌人/商人生产门槛 1		FUN_141077a80 L2437371 自訂難度設定：參數標籤（清單漏收的同畫面字串）
+Enemy/merchant production trigger 2	敵人／商人生產門檻 2	敌人/商人生产门槛 2		FUN_141077a80 L2437382 自訂難度設定：參數標籤（清單漏收的同畫面字串）
+Enemy/merchant production trigger 3	敵人／商人生產門檻 3	敌人/商人生产门槛 3		FUN_141077a80 L2437393 自訂難度設定：參數標籤（清單漏收的同畫面字串）
+Enemy/merchant production trigger 4	敵人／商人生產門檻 4	敌人/商人生产门槛 4		FUN_141077a80 L2437404 自訂難度設定：參數標籤（清單漏收的同畫面字串）
+Enemy/merchant production trigger 5	敵人／商人生產門檻 5	敌人/商人生产门槛 5		FUN_141077a80 L2437415 自訂難度設定：參數標籤（清單漏收的同畫面字串）
+Enemy/merchant trade trigger 1	敵人／商人貿易門檻 1	敌人/商人贸易门槛 1		FUN_141077a80 L2437426 自訂難度設定：參數標籤（清單漏收的同畫面字串）
+Enemy/merchant trade trigger 2	敵人／商人貿易門檻 2	敌人/商人贸易门槛 2		FUN_141077a80 L2437437 自訂難度設定：參數標籤（清單漏收的同畫面字串）
+Enemy/merchant trade trigger 3	敵人／商人貿易門檻 3	敌人/商人贸易门槛 3		FUN_141077a80 L2437448 自訂難度設定：參數標籤（清單漏收的同畫面字串）
+Enemy/merchant trade trigger 4	敵人／商人貿易門檻 4	敌人/商人贸易门槛 4		FUN_141077a80 L2437459 自訂難度設定：參數標籤（清單漏收的同畫面字串）
+Enemy/merchant trade trigger 5	敵人／商人貿易門檻 5	敌人/商人贸易门槛 5		FUN_141077a80 L2437470 自訂難度設定：參數標籤（清單漏收的同畫面字串）
+Megabeast attack period (seasons)	巨獸攻擊間隔（季）	巨兽攻击间隔（季）		FUN_141077a80 L2437481 自訂難度設定：參數標籤
+Forgotten beast sensitivity (less = sooner)	遺忘巨獸敏感度（越小越早）	遗忘巨兽敏感度（越小越早）		FUN_141077a80 L2437489 自訂難度設定：參數標籤
+Forgotten beast irritation minimum (less = sooner)	遺忘巨獸激怒下限（越小越早）	遗忘巨兽激怒下限（越小越早）		FUN_141077a80 L2437497 自訂難度設定：參數標籤
+Forgotten beast wealth divisor (more = safer)	遺忘巨獸財富除數（越大越安全）	遗忘巨兽财富除数（越大越安全）		FUN_141077a80 L2437505 自訂難度設定：參數標籤
+Wilderness sensitivity (less = sooner)	荒野敏感度（越小越早）	荒野敏感度（越小越早）		FUN_141077a80 L2437513 自訂難度設定：參數標籤
+Wilderness irritation minimum (less = sooner)	荒野激怒下限（越小越早）	荒野激怒下限（越小越早）		FUN_141077a80 L2437521 自訂難度設定：參數標籤
+Wilderness irritation decay (more = safer)	荒野激怒消退（越大越安全）	荒野激怒消退（越大越安全）		FUN_141077a80 L2437529 自訂難度設定：參數標籤
+Werebeast attack period (seasons)	獸化人攻擊間隔（季）	兽化人攻击间隔（季）		FUN_141077a80 L2437540 自訂難度設定：參數標籤
+Vampire migrant fraction (more = safer)	吸血鬼移民比例（越大越安全）	吸血鬼移民比例（越大越安全）		FUN_141077a80 L2437548 自訂難度設定：參數標籤
+Invasion creature cap (excluding mounts)	入侵生物上限（不含坐騎）	入侵生物上限（不含坐骑）		FUN_141077a80 L2437556 自訂難度設定：參數標籤
+Invasion difficulty (first)	入侵難度（第一次）	入侵难度（第一次）		FUN_141077a80 L2437567 自訂難度設定：參數標籤
+Invasion difficulty (second)	入侵難度（第二次）	入侵难度（第二次）		FUN_141077a80 L2437578 自訂難度設定：參數標籤
+Invasion difficulty (third)	入侵難度（第三次）	入侵难度（第三次）		FUN_141077a80 L2437589 自訂難度設定：參數標籤
+Invasion difficulty (fourth+ scaling)	入侵難度（第四次起遞增）	入侵难度（第四次起递增）		FUN_141077a80 L2437600 自訂難度設定：參數標籤
+Minimum raids before first siege (per civ)	首次圍攻前的最少襲擊次數（每個文明）	首次围攻前的最少袭击次数（每个文明）		FUN_141077a80 L2437611 自訂難度設定：參數標籤
+Minimum raids between sieges (per civ)	兩次圍攻間的最少襲擊次數（每個文明）	两次围攻间的最少袭击次数（每个文明）		FUN_141077a80 L2437622 自訂難度設定：參數標籤
+Siege frequency (percentage, otherwise raid)	圍攻頻率（百分比，其餘為襲擊）	围攻频率（百分比，其余为袭击）		FUN_141077a80 L2437633 自訂難度設定：參數標籤
+Cavern dweller scale (increase per attack)	洞穴生物規模（每次攻擊遞增）	洞穴生物规模（每次攻击递增）		FUN_141077a80 L2437644 自訂難度設定：參數標籤
+Cavern dweller maximum attackers	洞穴生物攻擊者上限	洞穴生物攻击者上限		FUN_141077a80 L2437655 自訂難度設定：參數標籤
+Diplomacy tree-fell count	外交伐木數量	外交伐木数量		FUN_141077a80 L2437666 自訂難度設定：參數標籤
+Diplomacy tree-fell count (untamed wilds)	外交伐木數量（未開化荒野）	外交伐木数量（未开化荒野）		FUN_141077a80 L2437674 自訂難度設定：參數標籤
+Invaders can break constructed walls	入侵者可破壞建造的牆壁	入侵者可破坏建造的墙壁		FUN_141077a80 L2437681 自訂難度設定：參數標籤
+Invaders can dig natural walls	入侵者可挖掘天然牆壁	入侵者可挖掘天然墙壁		FUN_141077a80 L2437695 自訂難度設定：參數標籤
+Invaders can build floors and stairs	入侵者可建造地板與樓梯	入侵者可建造地板和楼梯		FUN_141077a80 L2437709 自訂難度設定：參數標籤
+Invaders can free creatures from cages	入侵者可從籠子放出生物	入侵者可从笼子里放出生物		FUN_141077a80 L2437723 自訂難度設定：參數標籤
+Invader deconstruction speed (smaller = slower)	入侵者拆除速度（越小越慢）	入侵者拆除速度（越小越慢）		FUN_141077a80 L2437738 自訂難度設定：參數標籤
+Invader deconstruction aversion (smaller = more deconstruct)	入侵者拆除抗拒度（越小越常拆除）	入侵者拆除抗拒度（越小越常拆除）		FUN_141077a80 L2437746 自訂難度設定：參數標籤
+Invader digging speed (smaller = slower)	入侵者挖掘速度（越小越慢）	入侵者挖掘速度（越小越慢）		FUN_141077a80 L2437754 自訂難度設定：參數標籤
+Invader horizontal digging aversion (smaller = more digging)	入侵者水平挖掘抗拒度（越小越常挖掘）	入侵者水平挖掘抗拒度（越小越常挖掘）		FUN_141077a80 L2437762 自訂難度設定：參數標籤
+Invader vertical digging aversion (smaller = more digging)	入侵者垂直挖掘抗拒度（越小越常挖掘）	入侵者垂直挖掘抗拒度（越小越常挖掘）		FUN_141077a80 L2437770 自訂難度設定：參數標籤
+Invader days to delay vertical natural wall digging	入侵者延後垂直挖掘天然牆壁的天數	入侵者推迟垂直挖掘天然墙壁的天数		FUN_141077a80 L2437778 自訂難度設定：參數標籤
+Invader construction speed (smaller = slower)	入侵者建造速度（越小越慢）	入侵者建造速度（越小越慢）		FUN_141077a80 L2437786 自訂難度設定：參數標籤
+Invader construction aversion (smaller = more construction)	入侵者建造抗拒度（越小越常建造）	入侵者建造抗拒度（越小越常建造）		FUN_141077a80 L2437794 自訂難度設定：參數標籤
+Invader death aversion (one death)	入侵者死亡抗拒度（1 人陣亡）	入侵者死亡抗拒度（1 人阵亡）		FUN_141077a80 L2437802 自訂難度設定：參數標籤；括號是累計陣亡人數
+Invader death aversion (two deaths)	入侵者死亡抗拒度（2 人陣亡）	入侵者死亡抗拒度（2 人阵亡）		FUN_141077a80 L2437810 自訂難度設定：參數標籤；括號是累計陣亡人數
+Invader death aversion (three deaths)	入侵者死亡抗拒度（3 人陣亡）	入侵者死亡抗拒度（3 人阵亡）		FUN_141077a80 L2437818 自訂難度設定：參數標籤；括號是累計陣亡人數
+Invader death aversion (four deaths)	入侵者死亡抗拒度（4 人陣亡）	入侵者死亡抗拒度（4 人阵亡）		FUN_141077a80 L2437826 自訂難度設定：參數標籤；括號是累計陣亡人數
+Invader death aversion (five deaths)	入侵者死亡抗拒度（5 人陣亡）	入侵者死亡抗拒度（5 人阵亡）		FUN_141077a80 L2437834 自訂難度設定：參數標籤；括號是累計陣亡人數
+Invader death aversion (six deaths)	入侵者死亡抗拒度（6 人陣亡）	入侵者死亡抗拒度（6 人阵亡）		FUN_141077a80 L2437842 自訂難度設定：參數標籤；括號是累計陣亡人數
+Invader death aversion (seven deaths)	入侵者死亡抗拒度（7 人陣亡）	入侵者死亡抗拒度（7 人阵亡）		FUN_141077a80 L2437850 自訂難度設定：參數標籤；括號是累計陣亡人數
+Invader death aversion (eight deaths)	入侵者死亡抗拒度（8 人陣亡）	入侵者死亡抗拒度（8 人阵亡）		FUN_141077a80 L2437858 自訂難度設定：參數標籤；括號是累計陣亡人數
+Invader death aversion (nine deaths)	入侵者死亡抗拒度（9 人陣亡）	入侵者死亡抗拒度（9 人阵亡）		FUN_141077a80 L2437866 自訂難度設定：參數標籤；括號是累計陣亡人數
+Invader death aversion (ten+ deaths)	入侵者死亡抗拒度（10 人以上陣亡）	入侵者死亡抗拒度（10 人以上阵亡）		FUN_141077a80 L2437874 自訂難度設定：參數標籤；括號是累計陣亡人數
+Economy population trigger 1	經濟人口門檻 1	经济人口门槛 1		FUN_141077a80 L2437882 自訂難度設定：參數標籤
+Economy population trigger 2	經濟人口門檻 2	经济人口门槛 2		FUN_141077a80 L2437890 自訂難度設定：參數標籤
+Economy population trigger 3	經濟人口門檻 3	经济人口门槛 3		FUN_141077a80 L2437898 自訂難度設定：參數標籤
+Economy population trigger 4	經濟人口門檻 4	经济人口门槛 4		FUN_141077a80 L2437906 自訂難度設定：參數標籤
+Economy population trigger 5	經濟人口門檻 5	经济人口门槛 5		FUN_141077a80 L2437914 自訂難度設定：參數標籤
+Economy production trigger 1	經濟生產門檻 1	经济生产门槛 1		FUN_141077a80 L2437922 自訂難度設定：參數標籤
+Economy production trigger 2	經濟生產門檻 2	经济生产门槛 2		FUN_141077a80 L2437933 自訂難度設定：參數標籤
+Economy production trigger 3	經濟生產門檻 3	经济生产门槛 3		FUN_141077a80 L2437944 自訂難度設定：參數標籤
+Economy production trigger 4	經濟生產門檻 4	经济生产门槛 4		FUN_141077a80 L2437955 自訂難度設定：參數標籤
+Economy production trigger 5	經濟生產門檻 5	经济生产门槛 5		FUN_141077a80 L2437966 自訂難度設定：參數標籤
+Economy trade trigger 1	經濟貿易門檻 1	经济贸易门槛 1		FUN_141077a80 L2437977 自訂難度設定：參數標籤
+Economy trade trigger 2	經濟貿易門檻 2	经济贸易门槛 2		FUN_141077a80 L2437988 自訂難度設定：參數標籤
+Economy trade trigger 3	經濟貿易門檻 3	经济贸易门槛 3		FUN_141077a80 L2437999 自訂難度設定：參數標籤
+Economy trade trigger 4	經濟貿易門檻 4	经济贸易门槛 4		FUN_141077a80 L2438010 自訂難度設定：參數標籤
+Economy trade trigger 5	經濟貿易門檻 5	经济贸易门槛 5		FUN_141077a80 L2438021 自訂難度設定：參數標籤
+Value of temple	神殿價值	神殿价值		FUN_141077a80 L2438199 自訂難度設定：參數標籤
+Value of temple complex	神殿建築群價值	神殿建筑群价值		FUN_141077a80 L2438233 自訂難度設定：參數標籤
+Priesthood unit count	祭司團人數	祭司团人数		FUN_141077a80 L2438268 自訂難度設定：參數標籤
+High priesthood unit count	大祭司團人數	大祭司团人数		FUN_141077a80 L2438303 自訂難度設定：參數標籤
+Value of guildhall	公會大廳價值	公会大厅价值		FUN_141077a80 L2438338 自訂難度設定：參數標籤
+Value of grand guildhall	宏偉公會大廳價值	宏伟公会大厅价值		FUN_141077a80 L2438373 自訂難度設定：參數標籤
+Guild unit count	公會人數	公会人数		FUN_141077a80 L2438408 自訂難度設定：參數標籤
+Grand guild unit count	宏偉公會人數	宏伟公会人数		FUN_141077a80 L2438443 自訂難度設定：參數標籤
+Mandate period (more = fewer)	命令間隔（越大越少）	命令间隔（越大越少）		FUN_141077a80 L2438478 自訂難度設定：參數標籤
+Demand period (more = fewer)	要求間隔（越大越少）	要求间隔（越大越少）		FUN_141077a80 L2438513 自訂難度設定：參數標籤
+Citizen/resident dig speed (more = faster)	公民／居民挖掘速度（越大越快）	公民/居民挖掘速度（越大越快）		FUN_141077a80 L2438548 自訂難度設定：參數標籤（清單漏收的同畫面字串）

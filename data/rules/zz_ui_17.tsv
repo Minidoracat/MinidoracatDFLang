@@ -1,0 +1,4 @@
+en	zh-Hant	zh-Hans	align	note
+{%1} occurred in {#2}.	{2}年，舉行了{1}。	{2}年，举行了{1}。		FUN_140d46d00 L1983284-1983669 節慶、表演、比賽、遊行、儀式頁首句：{1} 活動名（events_18/19 的 inner A concert、A procession…、本批 inner 句型），{2} 年（FUN_140b92640）；錨點 occurred in＋數字
+{%1} occurred in the {@2} of {#3}.	{3}年{2}，舉行了{1}。	{3}年{2}，举行了{1}。		FUN_140d46d00 同上：日期 the 季節 of 年
+{%1} occurred in a time before time.	太古之時，舉行了{1}。	太古之时，举行了{1}。		FUN_140d46d00 同上：日期 a time before time

@@ -1,0 +1,27 @@
+en	zh-Hant	zh-Hans	align	note
+The telling of the story of {%1} at {2}	在{2}講述{1}的故事	在{2}讲述{1}的故事		FUN_14065f420 L881917 冒險日誌事件標題（FUN_1400d53a0 L132034 case 6，param_3=1 首字大寫）：表演；{1} 事件短語或 history，{2} 場所名（FUN_140a946e0）；排在沒有 at 那條前
+The telling of the story of {%1}	講述{1}的故事	讲述{1}的故事		FUN_14065f420 L881917 冒險日誌事件標題（FUN_1400d53a0 L132034 case 6，param_3=1 首字大寫）：表演；{1} 事件短語或 history
+Your telling of the story of {%1} at {2}	你在{2}講述{1}的故事	你在{2}讲述{1}的故事		FUN_14065f420 L881917 冒險日誌事件標題（FUN_1400d53a0 L132034 case 6，param_3=1 首字大寫）：表演；玩家表演
+Your telling of the story of {%1}	你講述{1}的故事	你讲述{1}的故事		FUN_14065f420 L881917 冒險日誌事件標題（FUN_1400d53a0 L132034 case 6，param_3=1 首字大寫）：表演；玩家表演
+The recitation of {1} at {2}	在{2}朗誦{1}	在{2}朗诵{1}		FUN_14065f420 L881917 冒險日誌事件標題（FUN_1400d53a0 L132034 case 6，param_3=1 首字大寫）：表演；{1} 詩名或 a poem
+The recitation of {1}	朗誦{1}	朗诵{1}		FUN_14065f420 L881917 冒險日誌事件標題（FUN_1400d53a0 L132034 case 6，param_3=1 首字大寫）：表演；{1} 詩名或 a poem
+Your recitation of {1} at {2}	你在{2}朗誦{1}	你在{2}朗诵{1}		FUN_14065f420 L881917 冒險日誌事件標題（FUN_1400d53a0 L132034 case 6，param_3=1 首字大寫）：表演；玩家表演
+Your recitation of {1}	你朗誦{1}	你朗诵{1}		FUN_14065f420 L881917 冒險日誌事件標題（FUN_1400d53a0 L132034 case 6，param_3=1 首字大寫）：表演；玩家表演
+The performance of {1} at {2}	在{2}的{1}表演	在{2}的{1}表演		FUN_14065f420 L881917 冒險日誌事件標題（FUN_1400d53a0 L132034 case 6，param_3=1 首字大寫）：表演；{1} 樂曲或舞蹈形式名，或 music／dance
+The performance of {1}	{1}表演	{1}表演		FUN_14065f420 L881917 冒險日誌事件標題（FUN_1400d53a0 L132034 case 6，param_3=1 首字大寫）：表演；{1} 樂曲或舞蹈形式名，或 music／dance
+Your performance of {1} at {2}	你在{2}表演{1}	你在{2}表演{1}		FUN_14065f420 L881917 冒險日誌事件標題（FUN_1400d53a0 L132034 case 6，param_3=1 首字大寫）：表演；玩家表演
+Your performance of {1}	你表演{1}	你表演{1}		FUN_14065f420 L881917 冒險日誌事件標題（FUN_1400d53a0 L132034 case 6，param_3=1 首字大寫）：表演；玩家表演；{1} 作品名或 music／dance
+Your playing of {1} at {2}	你在{2}演奏{1}	你在{2}演奏{1}		FUN_14065f420 L881917 冒險日誌事件標題（FUN_1400d53a0 L132034 case 6，param_3=1 首字大寫）：表演；玩家表演
+Your playing of {1}	你演奏{1}	你演奏{1}		FUN_14065f420 L881917 冒險日誌事件標題（FUN_1400d53a0 L132034 case 6，param_3=1 首字大寫）：表演；玩家表演；{1} 作品名或 music／dance
+Your singing of {1} at {2}	你在{2}演唱{1}	你在{2}演唱{1}		FUN_14065f420 L881917 冒險日誌事件標題（FUN_1400d53a0 L132034 case 6，param_3=1 首字大寫）：表演；玩家表演
+Your singing of {1}	你演唱{1}	你演唱{1}		FUN_14065f420 L881917 冒險日誌事件標題（FUN_1400d53a0 L132034 case 6，param_3=1 首字大寫）：表演；玩家表演；{1} 作品名或 music／dance
+Your speaking of {1} at {2}	你在{2}朗讀{1}	你在{2}朗读{1}		FUN_14065f420 L881917 冒險日誌事件標題（FUN_1400d53a0 L132034 case 6，param_3=1 首字大寫）：表演；玩家表演
+Your speaking of {1}	你朗讀{1}	你朗读{1}		FUN_14065f420 L881917 冒險日誌事件標題（FUN_1400d53a0 L132034 case 6，param_3=1 首字大寫）：表演；玩家表演；{1} 作品名或 music／dance
+Your chanting of {1} at {2}	你在{2}吟誦{1}	你在{2}吟诵{1}		FUN_14065f420 L881917 冒險日誌事件標題（FUN_1400d53a0 L132034 case 6，param_3=1 首字大寫）：表演；玩家表演
+Your chanting of {1}	你吟誦{1}	你吟诵{1}		FUN_14065f420 L881917 冒險日誌事件標題（FUN_1400d53a0 L132034 case 6，param_3=1 首字大寫）：表演；玩家表演；{1} 作品名或 music／dance
+Your dancing of {1} at {2}	你在{2}跳{1}	你在{2}跳{1}		FUN_14065f420 L881917 冒險日誌事件標題（FUN_1400d53a0 L132034 case 6，param_3=1 首字大寫）：表演；玩家表演
+Your dancing of {1}	你跳{1}	你跳{1}		FUN_14065f420 L881917 冒險日誌事件標題（FUN_1400d53a0 L132034 case 6，param_3=1 首字大寫）：表演；玩家表演；{1} 作品名或 music／dance
+The sermon on {1} at {2}	在{2}以{1}為題的講道	在{2}以{1}为题的布道		FUN_14065f420 L881917 冒險日誌事件標題（FUN_1400d53a0 L132034 case 6，param_3=1 首字大寫）：表演；{1} 神名、領域或價值觀片語（the value of law，ann_01）
+The sermon on {1}	以{1}為題的講道	以{1}为题的布道		FUN_14065f420 L881917 冒險日誌事件標題（FUN_1400d53a0 L132034 case 6，param_3=1 首字大寫）：表演；{1} 神名、領域或價值觀片語
+Your sermon on {1} at {2}	你在{2}以{1}為題的講道	你在{2}以{1}为题的布道		FUN_14065f420 L881917 冒險日誌事件標題（FUN_1400d53a0 L132034 case 6，param_3=1 首字大寫）：表演；玩家表演
+Your sermon on {1}	你以{1}為題的講道	你以{1}为题的布道		FUN_14065f420 L881917 冒險日誌事件標題（FUN_1400d53a0 L132034 case 6，param_3=1 首字大寫）：表演；玩家表演

@@ -1,0 +1,6 @@
+en	zh-Hant	zh-Hans	align	note
+Item successfully submitted. (File id {#1})	工作坊物品已成功提交。（檔案 ID {1}）	创意工坊物品已成功提交。（文件 ID {1}）		FUN_140da30c0 L2042817-2042819 Steam 工作坊上傳狀態：{1} 檔案編號（FUN_14052c1f0）
+Ore of {%1} ({#2}%)	{1}礦石（{2}%）	{1}矿石（{2}%）		FUN_140d97510 L2035247-2035301 材料用途清單項目：Ore of ＋金屬名＋機率（<100 才畫）
+Ore of {%1}	{1}礦石	{1}矿石		FUN_140d97510 同上：機率 100
+Extract {%1} strands ({#2}%)	抽取{1}絲（{2}%）	抽取{1}丝（{2}%）		FUN_140d97510 L2035154-2035191 材料用途清單項目：Extract ＋材料名＋ strands＋機率
+Extract {%1} strands	抽取{1}絲	抽取{1}丝		FUN_140d97510 同上：機率 100；Extract metal strands（工作名）有整句先比

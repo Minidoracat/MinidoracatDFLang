@@ -1,0 +1,12 @@
+en	zh-Hant	zh-Hans	align	note
+Newer compatible version of mod detected:	偵測到較新的相容模組版本：	检测到较新的兼容模组版本：		FUN_1407c6cc0 L1096332 標題畫面載入存檔時的模組更新對話框（fn_addst 單獨畫出）：標題列；下一列是模組名＋版本＋「 (save uses 」…
+Failed to install mod:	模組安裝失敗：	模组安装失败：		FUN_1407c6cc0 L1096332 標題畫面載入存檔時的模組更新對話框（fn_addst 單獨畫出）：安裝失敗時的標題列（畫面上的提示，不是只寫進 errorlog）
+Failed to find compatible mod:	找不到相容的模組：	找不到兼容的模组：		FUN_1407c6cc0 L1096332 標題畫面載入存檔時的模組更新對話框（fn_addst 單獨畫出）：找不到相容版本時的標題列
+ (save uses 	 (存檔使用 	 (存档使用 		FUN_1407c6cc0 L1096332 標題畫面載入存檔時的模組更新對話框（fn_addst 單獨畫出）：「模組名 新版本 (save uses 舊版本, not found)」逐段畫出，前後的空白照原文；括號維持半形，跟後面單獨畫出的「)」成對
+, not found	，找不到	，找不到		FUN_1407c6cc0 L1096332 標題畫面載入存檔時的模組更新對話框（fn_addst 單獨畫出）：接在存檔使用的版本號後，存檔用的版本已不在模組資料夾
+Back to title	回到標題畫面	返回主菜单		FUN_1407c6cc0 L1096332 標題畫面載入存檔時的模組更新對話框（fn_addst 單獨畫出）：按鈕；同 worldgen.tsv「Back to title menu」
+Update	更新	更新		FUN_1407c6cc0 L1096332 標題畫面載入存檔時的模組更新對話框（fn_addst 單獨畫出）：按鈕（更新這個模組）
+Update all	全部更新	全部更新		FUN_1407c6cc0 L1096332 標題畫面載入存檔時的模組更新對話框（fn_addst 單獨畫出）：按鈕
+Don't update	不更新	不更新		FUN_1407c6cc0 L1096332 標題畫面載入存檔時的模組更新對話框（fn_addst 單獨畫出）：按鈕
+Don't update any	全部不更新	全部不更新		FUN_1407c6cc0 L1096332 標題畫面載入存檔時的模組更新對話框（fn_addst 單獨畫出）：按鈕
+Ally: 	盟友：	盟友：		FUN_1407e4860 L1130808 冒險模式單位清單（觀察、攻擊目標等）名字前的關係前綴；衝突等級 Horseplay／Brawl／Lethal…由 UI6 批次寫

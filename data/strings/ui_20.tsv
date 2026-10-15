@@ -1,0 +1,65 @@
+en	zh-Hant	zh-Hans	align	note
+Imported Food	進口食品	进口食品		FUN_140ff7e00 14100af23–14100b104（反組譯） 據點地圖建立時替市場攤位區（abstract building）取的名稱：有名字時是「名字 / 類型」（句型見 rules/ui_20），沒有名字只畫類型；對齊 adv_journal 的 Imported food market（同見 FUN_140289050 L358933）
+Imported Clothing	進口衣物	进口衣物		FUN_140ff7e00 14100af23–14100b104（反組譯） 同上，市場攤位類型
+Imported Goods	進口商品	进口商品		FUN_140ff7e00 14100af23–14100b104（反組譯） 同上，市場攤位類型
+The Arena	競技場	竞技场		FUN_140fb1850 L2332837／2332910／2333002 物件測試競技場的世界名、地區名與地底區名（競技場世界）；沒看到畫在畫面上（猜：世界名欄位），整條寫出無副作用
+Fishermen	漁夫	渔夫		FUN_1410696f0 L2428678 預設工作分組名（文明沒有自訂漁夫職業名時）；對齊 professions 的 Fisherman 與 info.tsv 的 Miners 礦工
+ Clear find results 	 清除搜尋結果 	 清除搜索结果 		FUN_141046410 L2409882 選出發地點：有搜尋結果時的按鈕（前後空白照原文）
+X Dimension	X 軸尺寸	X 轴尺寸		FUN_141046410 L2413758–2414021 尋找出發地點視窗：條件欄名（fn_addst，值在右邊第 18 格）：出發範圍東西向大小
+Y Dimension	Y 軸尺寸	Y 轴尺寸		FUN_141046410 L2413758–2414021 尋找出發地點視窗：條件欄名（fn_addst，值在右邊第 18 格）：出發範圍南北向大小
+Savagery	野性	野性		FUN_141046410 L2413758–2414021 尋找出發地點視窗：條件欄名（fn_addst，值在右邊第 18 格）；值 N/A／Calm／Wilderness／Untamed wilds；對齊 world_1 的 Savagery Mesh Size 野性
+Temperature	氣溫	气温		FUN_141046410 L2413758–2414021 尋找出發地點視窗：條件欄名（fn_addst，值在右邊第 18 格）；對齊 embark.tsv 的 Temperature: 氣溫
+Drainage	排水	排水		FUN_141046410 L2413758–2414021 尋找出發地點視窗：條件欄名（fn_addst，值在右邊第 18 格）；對齊 world_1 的 Drainage Mesh Size 排水
+Aquifer (Light)	輕度含水層	轻度含水层		FUN_141046410 L2413758–2414021 尋找出發地點視窗：條件欄名（fn_addst，值在右邊第 18 格）；對齊 embark.tsv 的 Light aquifer
+Aquifer (Heavy)	重度含水層	重度含水层		FUN_141046410 L2413758–2414021 尋找出發地點視窗：條件欄名（fn_addst，值在右邊第 18 格）；對齊 embark.tsv 的 Heavy aquifer
+Underground River	地下河	地下河		FUN_141046410 L2413758–2414021 尋找出發地點視窗：條件欄名（fn_addst，值在右邊第 18 格）
+Underground Pool	地下水池	地下水池		FUN_141046410 L2413758–2414021 尋找出發地點視窗：條件欄名（fn_addst，值在右邊第 18 格）
+Magma Pool	熔岩池	熔岩池		FUN_141046410 L2413758–2414021 尋找出發地點視窗：條件欄名（fn_addst，值在右邊第 18 格）；magma 照 glossary 用「熔岩」
+Magma Pipe	熔岩管	熔岩管		FUN_141046410 L2413758–2414021 尋找出發地點視窗：條件欄名（fn_addst，值在右邊第 18 格）；magma 照 glossary 用「熔岩」
+Bottomless Pit	無底深坑	无底深坑		FUN_141046410 L2413758–2414021 尋找出發地點視窗：條件欄名（fn_addst，值在右邊第 18 格）
+Other Features	其他地貌	其他地貌		FUN_141046410 L2413758–2414021 尋找出發地點視窗：條件欄名（fn_addst，值在右邊第 18 格）
+ Little	 極淺	 极浅		FUN_141046410 L2414008 尋找出發地點：Soil 條件的值，前面先畫 ≤ 符號；對齊 embark.tsv 的 Little soil 土層極淺
+ Some	 淺	 浅		FUN_141046410 L2414014 同上 Some soil 土層淺
+ Deep	 深	 深		FUN_141046410 L2414021 同上 Deep soil 土層深
+No match.	無符合。	无匹配。		FUN_141046410 L2414199 尋找出發地點：搜尋結果（紅字）
+Partial match.	部分符合。	部分匹配。		FUN_141046410 L2414206 尋找出發地點：搜尋結果（黃字）
+Match found!	找到符合！	找到匹配！		FUN_141046410 L2414213 尋找出發地點：搜尋結果
+Begin	開始	开始		FUN_141046410 L2414320 尋找出發地點：開始搜尋的按鈕
+Stop	停止	停止		FUN_141046410 L2414420 尋找出發地點：搜尋中停止的按鈕
+Ruin	廢墟	废墟		FUN_141046410 L2414571 收復／重啟清單：據點狀態（無人）
+Inhabited	有人居住	有人居住		FUN_141046410 L2414577 收復／重啟清單：據點狀態（退休要塞，可重啟）
+Reclaim!	收復！	收复！		FUN_141046410 L2414726 收復／重啟清單：確認按鈕；對齊 Reclaim/unretire 收復／重啟要塞
+Unretire	重啟要塞	重启要塞		FUN_141046410 L2414731 收復／重啟清單：確認按鈕（選到退休要塞時）；單寫「重啟」像重新開機，補「要塞」
+Must embark on map.	必須在地圖上出發。	必须在地图上出发。		FUN_141046410 L2413635 選出發範圍：範圍超出地圖時的紅字提示
+Nearest site: Here	最近據點：就在這裡	最近据点：就在这里		FUN_141077080 L2437154 出發地點資訊的鄰近文明：最近據點就在選取範圍內（不接方位）；整條寫，不寫全域的 Here
+No trade	無貿易	无贸易		FUN_141077080 L2436970 鄰近文明的外交狀態（no trade 經 FUN_14052d650 首字大寫，後接 , 與人數；句型由 professions 的 {1}, {@2} 接）；原本被拆成「否貿易」；照術語 trade 用「貿易」
+a thousand	約一千	约一千		FUN_141077080 L2436975–2437108 出發地點資訊的鄰近文明人數（FUN_14052d650 首字大寫後單獨畫；有外交狀態時接在 War／Hostile／No trade, 後面，靠大小寫退回查這條）
+two thousand	約兩千	约两千		FUN_141077080 L2436975–2437108 出發地點資訊的鄰近文明人數（FUN_14052d650 首字大寫後單獨畫；有外交狀態時接在 War／Hostile／No trade, 後面，靠大小寫退回查這條）
+three thousand	約三千	约三千		FUN_141077080 L2436975–2437108 出發地點資訊的鄰近文明人數（FUN_14052d650 首字大寫後單獨畫；有外交狀態時接在 War／Hostile／No trade, 後面，靠大小寫退回查這條）
+four thousand	約四千	约四千		FUN_141077080 L2436975–2437108 出發地點資訊的鄰近文明人數（FUN_14052d650 首字大寫後單獨畫；有外交狀態時接在 War／Hostile／No trade, 後面，靠大小寫退回查這條）
+five thousand	約五千	约五千		FUN_141077080 L2436975–2437108 出發地點資訊的鄰近文明人數（FUN_14052d650 首字大寫後單獨畫；有外交狀態時接在 War／Hostile／No trade, 後面，靠大小寫退回查這條）
+six thousand	約六千	约六千		FUN_141077080 L2436975–2437108 出發地點資訊的鄰近文明人數（FUN_14052d650 首字大寫後單獨畫；有外交狀態時接在 War／Hostile／No trade, 後面，靠大小寫退回查這條）
+seven thousand	約七千	约七千		FUN_141077080 L2436975–2437108 出發地點資訊的鄰近文明人數（FUN_14052d650 首字大寫後單獨畫；有外交狀態時接在 War／Hostile／No trade, 後面，靠大小寫退回查這條）
+eight thousand	約八千	约八千		FUN_141077080 L2436975–2437108 出發地點資訊的鄰近文明人數（FUN_14052d650 首字大寫後單獨畫；有外交狀態時接在 War／Hostile／No trade, 後面，靠大小寫退回查這條）
+nine thousand	約九千	约九千		FUN_141077080 L2436975–2437108 出發地點資訊的鄰近文明人數（FUN_14052d650 首字大寫後單獨畫；有外交狀態時接在 War／Hostile／No trade, 後面，靠大小寫退回查這條）
+ten thousand	約一萬	约一万		FUN_141077080 L2436975–2437108 出發地點資訊的鄰近文明人數（FUN_14052d650 首字大寫後單獨畫；有外交狀態時接在 War／Hostile／No trade, 後面，靠大小寫退回查這條）
+twenty thousand	約兩萬	约两万		FUN_141077080 L2436975–2437108 出發地點資訊的鄰近文明人數（FUN_14052d650 首字大寫後單獨畫；有外交狀態時接在 War／Hostile／No trade, 後面，靠大小寫退回查這條）
+thirty thousand	約三萬	约三万		FUN_141077080 L2436975–2437108 出發地點資訊的鄰近文明人數（FUN_14052d650 首字大寫後單獨畫；有外交狀態時接在 War／Hostile／No trade, 後面，靠大小寫退回查這條）
+forty thousand	約四萬	约四万		FUN_141077080 L2436975–2437108 出發地點資訊的鄰近文明人數（FUN_14052d650 首字大寫後單獨畫；有外交狀態時接在 War／Hostile／No trade, 後面，靠大小寫退回查這條）
+fifty thousand	約五萬	约五万		FUN_141077080 L2436975–2437108 出發地點資訊的鄰近文明人數（FUN_14052d650 首字大寫後單獨畫；有外交狀態時接在 War／Hostile／No trade, 後面，靠大小寫退回查這條）
+sixty thousand	約六萬	约六万		FUN_141077080 L2436975–2437108 出發地點資訊的鄰近文明人數（FUN_14052d650 首字大寫後單獨畫；有外交狀態時接在 War／Hostile／No trade, 後面，靠大小寫退回查這條）
+seventy thousand	約七萬	约七万		FUN_141077080 L2436975–2437108 出發地點資訊的鄰近文明人數（FUN_14052d650 首字大寫後單獨畫；有外交狀態時接在 War／Hostile／No trade, 後面，靠大小寫退回查這條）
+eighty thousand	約八萬	约八万		FUN_141077080 L2436975–2437108 出發地點資訊的鄰近文明人數（FUN_14052d650 首字大寫後單獨畫；有外交狀態時接在 War／Hostile／No trade, 後面，靠大小寫退回查這條）
+ninety thousand	約九萬	约九万		FUN_141077080 L2436975–2437108 出發地點資訊的鄰近文明人數（FUN_14052d650 首字大寫後單獨畫；有外交狀態時接在 War／Hostile／No trade, 後面，靠大小寫退回查這條）
+hundred thousand	約十萬	约十万		FUN_141077080 L2436975–2437108 出發地點資訊的鄰近文明人數（FUN_14052d650 首字大寫後單獨畫；有外交狀態時接在 War／Hostile／No trade, 後面，靠大小寫退回查這條）
+hundred thousands	數十萬	数十万		FUN_141077080 L2436975–2437108 出發地點資訊的鄰近文明人數（FUN_14052d650 首字大寫後單獨畫；有外交狀態時接在 War／Hostile／No trade, 後面，靠大小寫退回查這條）
+one million	約一百萬	约一百万		FUN_141077080 L2436975–2437108 出發地點資訊的鄰近文明人數（FUN_14052d650 首字大寫後單獨畫；有外交狀態時接在 War／Hostile／No trade, 後面，靠大小寫退回查這條）
+millions	數百萬	数百万		FUN_141077080 L2436975–2437108 出發地點資訊的鄰近文明人數（FUN_14052d650 首字大寫後單獨畫；有外交狀態時接在 War／Hostile／No trade, 後面，靠大小寫退回查這條）
+dozens	數十	数十		FUN_141077080 L2436975–2437108 出發地點資訊的鄰近文明人數（FUN_14052d650 首字大寫後單獨畫；有外交狀態時接在 War／Hostile／No trade, 後面，靠大小寫退回查這條）
+hundreds	數百	数百		FUN_141077080 L2436975–2437108 出發地點資訊的鄰近文明人數（FUN_14052d650 首字大寫後單獨畫；有外交狀態時接在 War／Hostile／No trade, 後面，靠大小寫退回查這條）
+thousands	數千	数千		FUN_141077080 L2436975–2437108 出發地點資訊的鄰近文明人數（FUN_14052d650 首字大寫後單獨畫；有外交狀態時接在 War／Hostile／No trade, 後面，靠大小寫退回查這條）
+Embark preparations were not completed.	出發準備尚未完成。	出发准备尚未完成。		FUN_1410591e0 L2420295 謹慎準備：無法出發時的標題，下面列原因
+Overwrite	覆寫	覆盖		FUN_1410591e0 L2424112 儲存出發設定檔：名稱重複時的按鈕
+Prepare using a saved embark profile:	使用已儲存的出發設定檔：	使用已保存的出发配置：		FUN_1410591e0 L2421789 出發準備選擇畫面：設定檔清單標題
+To save these settings, choose a name for this embark profile:	要儲存這些設定，請替這個出發設定檔命名：	要保存这些设置，请为这个出发配置命名：		FUN_1410591e0 L2424167 謹慎準備：儲存設定檔的命名提示
+Warning!  The following embark profile name is already in use:	警告！以下出發設定檔名稱已被使用：	警告！以下出发配置名称已被使用：		FUN_1410591e0 L2424071 謹慎準備：設定檔名稱重複（紅字）

@@ -1,0 +1,34 @@
+en	zh-Hant	zh-Hans	align	note
+Cage Trap	籠子陷阱	笼子陷阱		FUN_14054d320 L703583 建築種類名（getName 預設名，各 vtable getName 同字：FUN_14054ee80/f330/f390/f5b0/fa20）；建築頁標題、建築被推倒等處單獨畫出；與 fort_2.tsv 的 inner 條目同譯
+Stone-Fall Trap	落石陷阱	落石陷阱		FUN_14054d320 L703583 建築種類名（getName 預設名，各 vtable getName 同字：FUN_14054ee80/f330/f390/f5b0/fa20）；建築頁標題、建築被推倒等處單獨畫出；與 fort_2.tsv 的 inner 條目同譯
+Weapon Trap	武器陷阱	武器陷阱		FUN_14054d320 L703583 建築種類名（getName 預設名，各 vtable getName 同字：FUN_14054ee80/f330/f390/f5b0/fa20）；建築頁標題、建築被推倒等處單獨畫出；與 fort_2.tsv 的 inner 條目同譯
+Up Stair	上樓梯	上楼梯		FUN_14054d320 L703583 建築種類名（getName 預設名，各 vtable getName 同字：FUN_14054ee80/f330/f390/f5b0/fa20）；建築頁標題、建築被推倒等處單獨畫出；與 fort_2.tsv 的 inner 條目同譯
+Down Stair	下樓梯	下楼梯		FUN_14054d320 L703583 建築種類名（getName 預設名，各 vtable getName 同字：FUN_14054ee80/f330/f390/f5b0/fa20）；建築頁標題、建築被推倒等處單獨畫出；與 fort_2.tsv 的 inner 條目同譯
+Up/Down Stair	上下樓梯	上下楼梯		FUN_14054d320 L703583 建築種類名（getName 預設名，各 vtable getName 同字：FUN_14054ee80/f330/f390/f5b0/fa20）；建築頁標題、建築被推倒等處單獨畫出；與 fort_2.tsv 的 inner 條目同譯
+Farm Plot	農田	农田		FUN_14054d320 L703583 建築種類名（getName 預設名，各 vtable getName 同字：FUN_14054ee80/f330/f390/f5b0/fa20）；建築頁標題、建築被推倒等處單獨畫出；與 fort_2.tsv 的 inner 條目同譯
+Wood Furnace	燒炭爐	烧炭炉		FUN_14054d320 L703583 建築種類名（getName 預設名，各 vtable getName 同字：FUN_14054ee80/f330/f390/f5b0/fa20）；建築頁標題、建築被推倒等處單獨畫出；與 fort_2.tsv 的 inner 條目同譯；術語表 furnace 註明 Wood Furnace 定案燒炭爐；術語例外：furnace
+Smelter	冶煉爐	冶炼炉		FUN_14054d320 L703583 建築種類名（getName 預設名，各 vtable getName 同字：FUN_14054ee80/f330/f390/f5b0/fa20）；建築頁標題、建築被推倒等處單獨畫出；與 fort_2.tsv 的 inner 條目同譯；單字但只有建築一義
+Restraint	束縛具	束缚具		FUN_14054d320 L703583 建築種類名（getName 預設名，各 vtable getName 同字：FUN_14054ee80/f330/f390/f5b0/fa20）；建築頁標題、建築被推倒等處單獨畫出；與 fort_2.tsv 的 inner 條目同譯；單字但只有建築一義
+Upright Spear/Spike	直立長矛／尖刺	直立长矛/尖刺		FUN_14054d320 L703583 建築種類名（getName 預設名，各 vtable getName 同字：FUN_14054ee80/f330/f390/f5b0/fa20）；建築頁標題、建築被推倒等處單獨畫出；與 fort_2.tsv 的 inner 條目同譯
+Siege Engine	攻城器械	攻城器械		FUN_14054d320 L703583 建築種類名：攻城器械的預設名（Catapult、Ballista、Bolt Thrower 以外）
+Vermin Catcher's Shop	小動物捕捉工坊	小动物捕捉工坊		FUN_14054d320／FUN_14054fa20 L705099 工坊名：捕捉小動物（vermin）當寵物的工坊；工坊名一律「…工坊」
+Vacant Shop	空置商店	空置商店		FUN_14054e9e0 L704273 據點商店建築名：沒有店主
+General Store	雜貨店	杂货店		FUN_14054e9e0 L704273 據點商店建築名；general 是雜貨，不是將軍；術語例外：general
+Clothing Shop	服飾店	服装店		FUN_14054e9e0 L704273 據點商店建築名
+Exotic Clothing Shop	異國服飾店	异域服装店		FUN_14054e9e0 L704273 據點商店建築名
+Track/Ramp (N)	軌道斜坡(北)	轨道斜坡(北)		FUN_14054d320／FUN_14054ee80 L704566 建造中的建築名：軌道＋斜坡（方向寫法同 names_terrain.tsv 的 Track (…)）
+Track/Ramp (S)	軌道斜坡(南)	轨道斜坡(南)		FUN_14054d320／FUN_14054ee80 L704566 建造中的建築名：軌道＋斜坡（方向寫法同 names_terrain.tsv 的 Track (…)）
+Track/Ramp (E)	軌道斜坡(東)	轨道斜坡(东)		FUN_14054d320／FUN_14054ee80 L704566 建造中的建築名：軌道＋斜坡（方向寫法同 names_terrain.tsv 的 Track (…)）
+Track/Ramp (W)	軌道斜坡(西)	轨道斜坡(西)		FUN_14054d320／FUN_14054ee80 L704566 建造中的建築名：軌道＋斜坡（方向寫法同 names_terrain.tsv 的 Track (…)）
+Track/Ramp (NS)	軌道斜坡(南北)	轨道斜坡(南北)		FUN_14054d320／FUN_14054ee80 L704566 建造中的建築名：軌道＋斜坡（方向寫法同 names_terrain.tsv 的 Track (…)）
+Track/Ramp (NE)	軌道斜坡(東北)	轨道斜坡(东北)		FUN_14054d320／FUN_14054ee80 L704566 建造中的建築名：軌道＋斜坡（方向寫法同 names_terrain.tsv 的 Track (…)）
+Track/Ramp (NW)	軌道斜坡(西北)	轨道斜坡(西北)		FUN_14054d320／FUN_14054ee80 L704566 建造中的建築名：軌道＋斜坡（方向寫法同 names_terrain.tsv 的 Track (…)）
+Track/Ramp (SE)	軌道斜坡(東南)	轨道斜坡(东南)		FUN_14054d320／FUN_14054ee80 L704566 建造中的建築名：軌道＋斜坡（方向寫法同 names_terrain.tsv 的 Track (…)）
+Track/Ramp (SW)	軌道斜坡(西南)	轨道斜坡(西南)		FUN_14054d320／FUN_14054ee80 L704566 建造中的建築名：軌道＋斜坡（方向寫法同 names_terrain.tsv 的 Track (…)）
+Track/Ramp (EW)	軌道斜坡(東西)	轨道斜坡(东西)		FUN_14054d320／FUN_14054ee80 L704566 建造中的建築名：軌道＋斜坡（方向寫法同 names_terrain.tsv 的 Track (…)）
+Track/Ramp (NSE)	軌道斜坡(北南東)	轨道斜坡(北南东)		FUN_14054d320／FUN_14054ee80 L704566 建造中的建築名：軌道＋斜坡（方向寫法同 names_terrain.tsv 的 Track (…)）
+Track/Ramp (NSW)	軌道斜坡(北南西)	轨道斜坡(北南西)		FUN_14054d320／FUN_14054ee80 L704566 建造中的建築名：軌道＋斜坡（方向寫法同 names_terrain.tsv 的 Track (…)）
+Track/Ramp (NEW)	軌道斜坡(北東西)	轨道斜坡(北东西)		FUN_14054d320／FUN_14054ee80 L704566 建造中的建築名：軌道＋斜坡（方向寫法同 names_terrain.tsv 的 Track (…)）
+Track/Ramp (SEW)	軌道斜坡(南東西)	轨道斜坡(南东西)		FUN_14054d320／FUN_14054ee80 L704566 建造中的建築名：軌道＋斜坡（方向寫法同 names_terrain.tsv 的 Track (…)）
+Track/Ramp (NSEW)	軌道斜坡(十字)	轨道斜坡(十字)		FUN_14054d320／FUN_14054ee80 L704566 建造中的建築名：軌道＋斜坡（方向寫法同 names_terrain.tsv 的 Track (…)）
+zeroth	第零	第零		FUN_14052eb70 L668216 序數 0（首字大寫 Zeroth 經大小寫退回查到）；同 ann_01.tsv 的 first…nineteenth

@@ -93,18 +93,7 @@ Click an icon to set stockpile type.	點選圖示以設定倉儲區類型。	点
 Warning: stockpile has no type.	警告：倉儲區沒有類型。	警告：储物区没有类型。		FUN_1403d6950 1403e7752 倉儲區面板警告
 Click an existing stockpile to select it.	點選既有的倉儲區以選取。	点击已有的储物区以选中。		FUN_1403d6950 1403e78c0 倉儲區面板說明
 Overlapping	重疊	重叠		FUN_1403d6950 1403e9379 區域清單：區域互相重疊的標示
-Farm Plot	農田	农田	inner	FUN_14054d320 建築名稱（大寫寫法），接進 FUN_1403d6950 1403e53ba「Click a tile to place the {%1}.」等放置提示；照按鍵設定「Hotkey: Building, …」的譯名；只給佔位用
-Wood Furnace	燒炭爐	烧炭炉	inner	FUN_14054d320 建築名稱（大寫寫法），接進 FUN_1403d6950 1403e53ba「Click a tile to place the {%1}.」等放置提示；照術語 Wood Furnace；只給佔位用
-Smelter	冶煉爐	冶炼炉	inner	FUN_14054d320 建築名稱（大寫寫法），接進 FUN_1403d6950 1403e53ba「Click a tile to place the {%1}.」等放置提示；照按鍵設定「Hotkey: Building, …」的譯名；只給佔位用
 Magma Smelter	熔岩冶煉爐	熔岩冶炼炉	inner	FUN_14054d320 建築名稱（大寫寫法），接進 FUN_1403d6950 1403e53ba「Click a tile to place the {%1}.」等放置提示；照按鍵設定「Hotkey: Building, …」的譯名；只給佔位用
-Cage Trap	籠子陷阱	笼子陷阱	inner	FUN_14054d320 建築名稱（大寫寫法），接進 FUN_1403d6950 1403e53ba「Click a tile to place the {%1}.」等放置提示；照按鍵設定「Hotkey: Building, …」的譯名；只給佔位用
-Stone-Fall Trap	落石陷阱	落石陷阱	inner	FUN_14054d320 建築名稱（大寫寫法），接進 FUN_1403d6950 1403e53ba「Click a tile to place the {%1}.」等放置提示；照按鍵設定「Hotkey: Building, …」的譯名；只給佔位用
-Weapon Trap	武器陷阱	武器陷阱	inner	FUN_14054d320 建築名稱（大寫寫法），接進 FUN_1403d6950 1403e53ba「Click a tile to place the {%1}.」等放置提示；照按鍵設定「Hotkey: Building, …」的譯名；只給佔位用
-Restraint	束縛具	束缚具	inner	FUN_14054d320 建築名稱（大寫寫法），接進 FUN_1403d6950 1403e53ba「Click a tile to place the {%1}.」等放置提示；照按鍵設定「Hotkey: Building, …」的譯名；只給佔位用
-Upright Spear/Spike	直立長矛／尖刺	直立长矛/尖刺	inner	FUN_14054d320 建築名稱（大寫寫法），接進 FUN_1403d6950 1403e53ba「Click a tile to place the {%1}.」等放置提示；照按鍵設定「Hotkey: Building, …」的譯名；只給佔位用
-Up Stair	上樓梯	上楼梯	inner	FUN_14054d320 建築名稱（大寫寫法），接進 FUN_1403d6950 1403e53ba「Click a tile to place the {%1}.」等放置提示；照按鍵設定「Hotkey: Building, …」的譯名；只給佔位用
-Down Stair	下樓梯	下楼梯	inner	FUN_14054d320 建築名稱（大寫寫法），接進 FUN_1403d6950 1403e53ba「Click a tile to place the {%1}.」等放置提示；照按鍵設定「Hotkey: Building, …」的譯名；只給佔位用
-Up/Down Stair	上下樓梯	上下楼梯	inner	FUN_14054d320 建築名稱（大寫寫法），接進 FUN_1403d6950 1403e53ba「Click a tile to place the {%1}.」等放置提示；照按鍵設定「Hotkey: Building, …」的譯名；只給佔位用
 Siege Workshop	攻城器械工坊	攻城器械工坊	inner	FUN_14054d320 建築名稱（大寫寫法），接進 FUN_1403d6950 1403e53ba「Click a tile to place the {%1}.」等放置提示；照按鍵設定「Hotkey: Building, …」的譯名；只給佔位用
 Fishery	漁獲處理	渔获处理	inner	FUN_14054d320 建築名稱（大寫寫法），接進 FUN_1403d6950 1403e53ba「Click a tile to place the {%1}.」等放置提示；照按鍵設定「Hotkey: Building, …」的譯名；只給佔位用；寬度例外：inner，只接進放置提示的句型，不單獨畫
 Still	釀酒坊	酿酒坊	inner	FUN_14054d320 建築名稱（大寫寫法），接進 FUN_1403d6950 1403e53ba「Click a tile to place the {%1}.」等放置提示；照按鍵設定「Hotkey: Building, …」的譯名；只給佔位用；寬度例外：inner，只接進放置提示的句型，不單獨畫

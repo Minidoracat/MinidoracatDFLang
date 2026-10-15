@@ -14,7 +14,7 @@
 3. 繁簡同步：同一條兩欄同時有譯文或同時留空（繁簡分開翻，但兩包要涵蓋同一批句子）
 4. 開頭空白：譯文開頭的空白數與原文相同（那是遊戲的縮排）；只套在佔位裡的 inner 句型不算（不會單獨畫出）
 5. 寬度：譯文格數不超過原文（CP437 字一格，其他字兩格），超出會蓋到旁邊的介面；句型只算樣板本身，
-   佔位填入後超寬的情況由引擎在執行時退回英文。名稱檔（strings/names_*.tsv）至少可用 6 格：
+   佔位填入後超寬的情況由引擎在執行時退回英文；align 寫 inner 的只接進佔位、不單獨畫，不限。名稱檔（strings/names_*.tsv）至少可用 6 格：
    短英文名（ogre、hydra、kiwi）的通行中文名多半是三個字。sentences_*、ann_*、speech_*、combat_*、desc_*、health_*、事件句（_events、zz_events、events_*）不限：
    人物頁、訪客說明、公告、說話句、戰報、外觀與健康、傳說模式的段落由引擎依框寬重新換行
 6. 文字檔 UTF-8、無 BOM、LF（遊戲端逐位元組讀，BOM 與 \\r 會黏進原文或譯文）
@@ -156,9 +156,9 @@ def main() -> int:
               if r[lang] and r.get("align") != "inner" and leading_spaces(r[lang]) != leading_spaces(r["en"])]
     check(not indent, "譯文開頭空白與原文相同（inner 句型除外）", indent)
     def room(r: dict) -> int | None:
-        """譯文最多幾格；None 是不限：WRAPPED 開頭的檔案由引擎依框寬重新換行；
+        """譯文最多幾格；None 是不限：WRAPPED 開頭的檔案由引擎依框寬重新換行；inner 只接進句型的佔位，不單獨畫；
         note 寫「寬度例外」的條目已在實機確認右邊有空位（欄名「Adv」只有 3 格，「冒險」要 4 格）"""
-        if r["file"].split("/")[1].startswith(WRAPPED) or "寬度例外" in (r.get("note") or ""):
+        if r["file"].split("/")[1].startswith(WRAPPED) or r.get("align") == "inner" or "寬度例外" in (r.get("note") or ""):
             return None
         en = cells(template(r["en"]))
         return max(en, 6) if r["file"].startswith("strings/names_") else en

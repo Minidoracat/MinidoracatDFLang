@@ -1,0 +1,9 @@
+en	zh-Hant	zh-Hans	align	note
+Toggle auto-pause on new report.	切換有新報告時自動暫停。	切换有新报告时自动暂停。		FUN_1414219c0 L2693847 提示框：通知清單的自動暫停按鈕
+You can recenter on the locations of the announcements. You may also toggle pausing when there is a new announcement.	可以將視角移到通知發生的位置，也可以切換有新通知時是否暫停。	可以将镜头移到通知发生的位置，也可以切换有新通知时是否暂停。		FUN_1414219c0 L2693769 提示框：通知清單說明；術語例外：location
+Sort units by name.	依名字排序單位。	按名字排序单位。		FUN_141425200 L2696410 提示框：單位清單排序按鈕
+Sort units by profession category.	依職業類別排序單位。	按职业类别排序单位。		FUN_141425200 L2696444 提示框：單位清單排序按鈕
+Sort units by profession name.	依職業名稱排序單位。	按职业名称排序单位。		FUN_141425200 L2696481 提示框：單位清單排序按鈕
+Sort units by job.	依工作排序單位。	按工作排序单位。		FUN_141425200 L2696655 提示框：單位清單排序按鈕
+Sort units by stress level.	依壓力程度排序單位。	按压力程度排序单位。		FUN_14142df80 L2703716 提示框：單位清單排序按鈕
+Sort units by skills.	依技能排序單位。	按技能排序单位。		FUN_14142e160 L2703830 提示框：單位清單排序按鈕

@@ -19,7 +19,7 @@ en	zh-Hant	zh-Hans	align	note
 {1} suffered heat stroke.	{1}中暑而死。	{1}中暑而死。		DFHack hack/scripts/gui/unit-info-viewer.lua L114-169 死因：{1} 單位名（L331 名字接死因再接句號）；放 zz_：開頭是任意佔位，會遮住遊戲本體更專門的死因句（{1} was scared to death.）
 {1} died of hypothermia.	{1}失溫而死。	{1}失温而死。		DFHack hack/scripts/gui/unit-info-viewer.lua L114-169 死因：{1} 單位名（L331 名字接死因再接句號）；放 zz_：開頭是任意佔位，會遮住遊戲本體更專門的死因句（{1} was scared to death.）
 {1} experienced death by SPIKE.	{1}被尖刺刺死了。	{1}被尖刺刺死了。		DFHack hack/scripts/gui/unit-info-viewer.lua L114-169 死因：{1} 單位名（L331 名字接死因再接句號）；放 zz_：開頭是任意佔位，會遮住遊戲本體更專門的死因句（{1} was scared to death.）
-{1} experienced death by ENCASE_LAVA.	{1}被岩漿封住而死。	{1}被岩浆封住而死。		DFHack hack/scripts/gui/unit-info-viewer.lua L114-169 死因：{1} 單位名（L331 名字接死因再接句號）；放 zz_：開頭是任意佔位，會遮住遊戲本體更專門的死因句（{1} was scared to death.）
+{1} experienced death by ENCASE_LAVA.	{1}被熔岩封住而死。	{1}被熔岩封住而死。		DFHack hack/scripts/gui/unit-info-viewer.lua L114-169 死因：{1} 單位名（L331 名字接死因再接句號）；放 zz_：開頭是任意佔位，會遮住遊戲本體更專門的死因句（{1} was scared to death.）
 {1} experienced death by ENCASE_MAGMA.	{1}被熔岩封住而死。	{1}被熔岩封住而死。		DFHack hack/scripts/gui/unit-info-viewer.lua L114-169 死因：{1} 單位名（L331 名字接死因再接句號）；放 zz_：開頭是任意佔位，會遮住遊戲本體更專門的死因句（{1} was scared to death.）
 {1} was preserved in ice.	{1}被封存在冰中。	{1}被封存在冰中。		DFHack hack/scripts/gui/unit-info-viewer.lua L114-169 死因：{1} 單位名（L331 名字接死因再接句號）；放 zz_：開頭是任意佔位，會遮住遊戲本體更專門的死因句（{1} was scared to death.）
 {1} became headless.	{1}身首異處。	{1}身首异处。		DFHack hack/scripts/gui/unit-info-viewer.lua L114-169 死因：{1} 單位名（L331 名字接死因再接句號）；放 zz_：開頭是任意佔位，會遮住遊戲本體更專門的死因句（{1} was scared to death.）

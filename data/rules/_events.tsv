@@ -2,6 +2,766 @@ en	zh-Hant	zh-Hans	align	note
 ☺{#1}☻ and ☺{#2}☻	☺{1}☻和☺{2}☻	☺{1}☻和☺{2}☻	inner	連結人名清單：傳說頁的人名、地名是連結，字典裡寫成 ☺序號☻，{#n} 只收一個連結；兩人（「A and B」）
 ☺{#1}☻ and others	☺{1}☻等人	☺{1}☻等人	inner	連結人名清單：傳說頁的人名、地名是連結，字典裡寫成 ☺序號☻，{#n} 只收一個連結；「A and others」
 ☺{#1}☻, {%2}	☺{1}☻、{2}	☺{1}☻、{2}	inner	連結人名清單：傳說頁的人名、地名是連結，字典裡寫成 ☺序號☻，{#n} 只收一個連結；三人以上一人一層：後段（「B and C」「B, C and D」「B and others」）要翻得出來；只有兩人用逗號接（「A, B」）時譯文沒有中文字，引擎不收，照原樣
+the burning of {1}'s {%2}  by {3} as a means of torture	{1}的{2}遭{3}以酷刑燒傷	{1}的{2}遭{3}以酷刑烧伤	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語，照遊戲原樣（部位後兩個空白）另寫一份：data/events/06.tsv 的單空白版只在整句收成單空白重查時才命中，本檔排在最前的 the burning of {1}（hist_figure_died）會先吃掉整句；譯文同 06.tsv
+the burning of {1}'s {%2}  by {3} as a means of torture in {#4}	{4}年{1}的{2}遭{3}以酷刑燒傷	{4}年{1}的{2}遭{3}以酷刑烧伤	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1}'s {%2}  by {3} as a means of torture 加上結尾的日期
+the burning of {1}'s {%2}  by {3} as a means of torture in the {@4} of {#5}	{5}年{4}{1}的{2}遭{3}以酷刑燒傷	{5}年{4}{1}的{2}遭{3}以酷刑烧伤	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1}'s {%2}  by {3} as a means of torture 加上結尾的日期
+the burning of {1}'s {%2}  by {3} as a means of torture in a time before time	太古之時{1}的{2}遭{3}以酷刑燒傷	太古之时{1}的{2}遭{3}以酷刑烧伤	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1}'s {%2}  by {3} as a means of torture 加上結尾的日期
+the burning of {1}'s {%2}  by {3} in {#4}	{4}年{1}的{2}被{3}燒傷	{4}年{1}的{2}被{3}烧伤	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1}'s {%2}  by {3} 加上結尾的日期
+the burning of {1}'s {%2}  by {3} in the {@4} of {#5}	{5}年{4}{1}的{2}被{3}燒傷	{5}年{4}{1}的{2}被{3}烧伤	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1}'s {%2}  by {3} 加上結尾的日期
+the burning of {1}'s {%2}  by {3} in a time before time	太古之時{1}的{2}被{3}燒傷	太古之时{1}的{2}被{3}烧伤	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1}'s {%2}  by {3} 加上結尾的日期
+the burning of {1}'s {%2}  by {3}	{1}的{2}被{3}燒傷	{1}的{2}被{3}烧伤	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語，照遊戲原樣（部位後兩個空白）另寫一份：data/events/06.tsv 的單空白版只在整句收成單空白重查時才命中，本檔排在最前的 the burning of {1}（hist_figure_died）會先吃掉整句；譯文同 06.tsv
+the burning of {1}'s {%2} 	{1}的{2}被燒傷	{1}的{2}被烧伤	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語，照遊戲原樣（部位後兩個空白）另寫一份：data/events/06.tsv 的單空白版只在整句收成單空白重查時才命中，本檔排在最前的 the burning of {1}（hist_figure_died）會先吃掉整句；譯文同 06.tsv；結尾的空白是遊戲寫的，後面接日期
+the passing of {1} in {2} in {#3}	{3}年{1}在{2}壽終正寢	{3}年{1}在{2}寿终正寝	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the passing of {1} in {2} 加上結尾的日期
+the passing of {1} in {2} in the {@3} of {#4}	{4}年{3}{1}在{2}壽終正寢	{4}年{3}{1}在{2}寿终正寝	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the passing of {1} in {2} 加上結尾的日期
+the passing of {1} in {2} in a time before time	太古之時{1}在{2}壽終正寢	太古之时{1}在{2}寿终正寝	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the passing of {1} in {2} 加上結尾的日期
+the passing of corruptly-obtained funds by {1} to {2} via {3} in {#4}	{4}年{1}經由{3}將不法所得轉交給{2}	{4}年{1}经由{3}将不法所得转交给{2}	inner	自動產生（scripts/gen_events.py）：02.tsv the passing of corruptly-obtained funds by {1} to {2} via {3} 加上結尾的日期
+the passing of corruptly-obtained funds by {1} to {2} via {3} in the {@4} of {#5}	{5}年{4}{1}經由{3}將不法所得轉交給{2}	{5}年{4}{1}经由{3}将不法所得转交给{2}	inner	自動產生（scripts/gen_events.py）：02.tsv the passing of corruptly-obtained funds by {1} to {2} via {3} 加上結尾的日期
+the passing of corruptly-obtained funds by {1} to {2} via {3} in a time before time	太古之時{1}經由{3}將不法所得轉交給{2}	太古之时{1}经由{3}将不法所得转交给{2}	inner	自動產生（scripts/gen_events.py）：02.tsv the passing of corruptly-obtained funds by {1} to {2} via {3} 加上結尾的日期
+the passing of corruptly-obtained funds by {1} via {2} in {#3}	{3}年{1}經由{2}轉交不法所得	{3}年{1}经由{2}转交不法所得	inner	自動產生（scripts/gen_events.py）：02.tsv the passing of corruptly-obtained funds by {1} via {2} 加上結尾的日期
+the passing of corruptly-obtained funds by {1} via {2} in the {@3} of {#4}	{4}年{3}{1}經由{2}轉交不法所得	{4}年{3}{1}经由{2}转交不法所得	inner	自動產生（scripts/gen_events.py）：02.tsv the passing of corruptly-obtained funds by {1} via {2} 加上結尾的日期
+the passing of corruptly-obtained funds by {1} via {2} in a time before time	太古之時{1}經由{2}轉交不法所得	太古之时{1}经由{2}转交不法所得	inner	自動產生（scripts/gen_events.py）：02.tsv the passing of corruptly-obtained funds by {1} via {2} 加上結尾的日期
+the passing of corruptly-obtained funds by {1} to {2} in {#3}	{3}年{1}將不法所得轉交給{2}	{3}年{1}将不法所得转交给{2}	inner	自動產生（scripts/gen_events.py）：02.tsv the passing of corruptly-obtained funds by {1} to {2} 加上結尾的日期
+the passing of corruptly-obtained funds by {1} to {2} in the {@3} of {#4}	{4}年{3}{1}將不法所得轉交給{2}	{4}年{3}{1}将不法所得转交给{2}	inner	自動產生（scripts/gen_events.py）：02.tsv the passing of corruptly-obtained funds by {1} to {2} 加上結尾的日期
+the passing of corruptly-obtained funds by {1} to {2} in a time before time	太古之時{1}將不法所得轉交給{2}	太古之时{1}将不法所得转交给{2}	inner	自動產生（scripts/gen_events.py）：02.tsv the passing of corruptly-obtained funds by {1} to {2} 加上結尾的日期
+the passing of corruptly-obtained funds by {1} in {#2}	{2}年{1}轉交不法所得	{2}年{1}转交不法所得	inner	自動產生（scripts/gen_events.py）：02.tsv the passing of corruptly-obtained funds by {1} 加上結尾的日期
+the passing of {1} in {#2}	{2}年{1}壽終正寢	{2}年{1}寿终正寝	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the passing of {1} 加上結尾的日期
+the passing of corruptly-obtained funds by {1} in the {@2} of {#3}	{3}年{2}{1}轉交不法所得	{3}年{2}{1}转交不法所得	inner	自動產生（scripts/gen_events.py）：02.tsv the passing of corruptly-obtained funds by {1} 加上結尾的日期
+the passing of {1} in the {@2} of {#3}	{3}年{2}{1}壽終正寢	{3}年{2}{1}寿终正寝	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the passing of {1} 加上結尾的日期
+the passing of corruptly-obtained funds by {1} in a time before time	太古之時{1}轉交不法所得	太古之时{1}转交不法所得	inner	自動產生（scripts/gen_events.py）：02.tsv the passing of corruptly-obtained funds by {1} 加上結尾的日期
+the passing of {1} in a time before time	太古之時{1}壽終正寢	太古之时{1}寿终正寝	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the passing of {1} 加上結尾的日期
+the passing of {1} in {2}	{1}在{2}壽終正寢	{1}在{2}寿终正寝	inner	FUN_140b73780 case 0 hist_figure_died 短語：{1} 死者；結尾 in {2} 是地點
+the passing of corruptly-obtained funds by {1} to {2} via {3}	{1}經由{3}將不法所得轉交給{2}	{1}经由{3}将不法所得转交给{2}	inner	FUN_1402ad7f0 381631-381742 case 5 (0xf9)；短語
+the passing of corruptly-obtained funds by {1} via {2}	{1}經由{2}轉交不法所得	{1}经由{2}转交不法所得	inner	FUN_1402ad7f0 381631-381742 case 5 (0xf9)；短語
+the passing of corruptly-obtained funds by {1} to {2}	{1}將不法所得轉交給{2}	{1}将不法所得转交给{2}	inner	FUN_1402ad7f0 381631-381742 case 5 (0xf9)；短語
+the passing of corruptly-obtained funds by {1}	{1}轉交不法所得	{1}转交不法所得	inner	FUN_1402ad7f0 381631-381742 case 5 (0xf9)；短語
+the passing of {1}	{1}壽終正寢	{1}寿终正寝	inner	FUN_140b73780 case 0 hist_figure_died 短語：{1} 死者
+the starvation of {1} in {2} in {#3}	{3}年{1}在{2}餓死	{3}年{1}在{2}饿死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the starvation of {1} in {2} 加上結尾的日期
+the starvation of {1} in {2} in the {@3} of {#4}	{4}年{3}{1}在{2}餓死	{4}年{3}{1}在{2}饿死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the starvation of {1} in {2} 加上結尾的日期
+the starvation of {1} in {2} in a time before time	太古之時{1}在{2}餓死	太古之时{1}在{2}饿死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the starvation of {1} in {2} 加上結尾的日期
+the starvation of {1} in {#2}	{2}年{1}餓死	{2}年{1}饿死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the starvation of {1} 加上結尾的日期
+the starvation of {1} in the {@2} of {#3}	{3}年{2}{1}餓死	{3}年{2}{1}饿死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the starvation of {1} 加上結尾的日期
+the starvation of {1} in a time before time	太古之時{1}餓死	太古之时{1}饿死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the starvation of {1} 加上結尾的日期
+the starvation of {1} in {2}	{1}在{2}餓死	{1}在{2}饿死	inner	FUN_140b73780 case 1/0x17/0x18 hist_figure_died 短語：{1} 死者；結尾 in {2} 是地點
+the starvation of {1}	{1}餓死	{1}饿死	inner	FUN_140b73780 case 1/0x17/0x18 hist_figure_died 短語：{1} 死者
+the dehydration of {1} in {2} in {#3}	{3}年{1}在{2}渴死	{3}年{1}在{2}渴死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the dehydration of {1} in {2} 加上結尾的日期
+the dehydration of {1} in {2} in the {@3} of {#4}	{4}年{3}{1}在{2}渴死	{4}年{3}{1}在{2}渴死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the dehydration of {1} in {2} 加上結尾的日期
+the dehydration of {1} in {2} in a time before time	太古之時{1}在{2}渴死	太古之时{1}在{2}渴死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the dehydration of {1} in {2} 加上結尾的日期
+the dehydration of {1} in {#2}	{2}年{1}渴死	{2}年{1}渴死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the dehydration of {1} 加上結尾的日期
+the dehydration of {1} in the {@2} of {#3}	{3}年{2}{1}渴死	{3}年{2}{1}渴死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the dehydration of {1} 加上結尾的日期
+the dehydration of {1} in a time before time	太古之時{1}渴死	太古之时{1}渴死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the dehydration of {1} 加上結尾的日期
+the dehydration of {1} in {2}	{1}在{2}渴死	{1}在{2}渴死	inner	FUN_140b73780 case 2 hist_figure_died 短語：{1} 死者；結尾 in {2} 是地點
+the dehydration of {1}	{1}渴死	{1}渴死	inner	FUN_140b73780 case 2 hist_figure_died 短語：{1} 死者
+the drowning of {1} by {2} in {3} in {#4}	{4}年{1}在{3}被{2}處以溺刑	{4}年{1}在{3}被{2}处以溺刑	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the drowning of {1} by {2} in {3} 加上結尾的日期
+the drowning of {1} in {2} in {#3}	{3}年{1}在{2}溺死	{3}年{1}在{2}溺死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the drowning of {1} in {2} 加上結尾的日期
+the drowning of {1} by {2} in {3} in the {@4} of {#5}	{5}年{4}{1}在{3}被{2}處以溺刑	{5}年{4}{1}在{3}被{2}处以溺刑	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the drowning of {1} by {2} in {3} 加上結尾的日期
+the drowning of {1} in {2} in the {@3} of {#4}	{4}年{3}{1}在{2}溺死	{4}年{3}{1}在{2}溺死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the drowning of {1} in {2} 加上結尾的日期
+the drowning of {1} by {2} in {3} in a time before time	太古之時{1}在{3}被{2}處以溺刑	太古之时{1}在{3}被{2}处以溺刑	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the drowning of {1} by {2} in {3} 加上結尾的日期
+the drowning of {1} in {2} in a time before time	太古之時{1}在{2}溺死	太古之时{1}在{2}溺死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the drowning of {1} in {2} 加上結尾的日期
+the drowning of {1} by {2} in {#3}	{3}年{1}被{2}處以溺刑	{3}年{1}被{2}处以溺刑	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the drowning of {1} by {2} 加上結尾的日期
+the drowning of {1} in {#2}	{2}年{1}溺死	{2}年{1}溺死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the drowning of {1} 加上結尾的日期
+the drowning of {1} by {2} in the {@3} of {#4}	{4}年{3}{1}被{2}處以溺刑	{4}年{3}{1}被{2}处以溺刑	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the drowning of {1} by {2} 加上結尾的日期
+the drowning of {1} in the {@2} of {#3}	{3}年{2}{1}溺死	{3}年{2}{1}溺死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the drowning of {1} 加上結尾的日期
+the drowning of {1} by {2} in a time before time	太古之時{1}被{2}處以溺刑	太古之时{1}被{2}处以溺刑	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the drowning of {1} by {2} 加上結尾的日期
+the drowning of {1} by {2} in {3}	{1}在{3}被{2}處以溺刑	{1}在{3}被{2}处以溺刑	inner	FUN_140b73780 case 0x22 hist_figure_died 短語：{2} 兇手（人名或 a 種族）；結尾 in {3} 是地點
+the drowning of {1} in a time before time	太古之時{1}溺死	太古之时{1}溺死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the drowning of {1} 加上結尾的日期
+the drowning of {1} in {2}	{1}在{2}溺死	{1}在{2}溺死	inner	FUN_140b73780 case 5/0x35 hist_figure_died 短語：{1} 死者；結尾 in {2} 是地點
+the drowning of {1} by {2}	{1}被{2}處以溺刑	{1}被{2}处以溺刑	inner	FUN_140b73780 case 0x22 hist_figure_died 短語：{2} 兇手（人名或 a 種族）
+the drowning of {1}	{1}溺死	{1}溺死	inner	FUN_140b73780 case 5/0x35 hist_figure_died 短語：{1} 死者
+the scuttling of {1} in {2} in {#3}	{3}年{1}在{2}被拆毀	{3}年{1}在{2}被拆毁	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the scuttling of {1} in {2} 加上結尾的日期
+the scuttling of {1} in {2} in the {@3} of {#4}	{4}年{3}{1}在{2}被拆毀	{4}年{3}{1}在{2}被拆毁	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the scuttling of {1} in {2} 加上結尾的日期
+the scuttling of {1} in {2} in a time before time	太古之時{1}在{2}被拆毀	太古之时{1}在{2}被拆毁	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the scuttling of {1} in {2} 加上結尾的日期
+the scuttling of {1} in {#2}	{2}年{1}被拆毀	{2}年{1}被拆毁	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the scuttling of {1} 加上結尾的日期
+the scuttling of {1} in the {@2} of {#3}	{3}年{2}{1}被拆毀	{3}年{2}{1}被拆毁	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the scuttling of {1} 加上結尾的日期
+the scuttling of {1} in a time before time	太古之時{1}被拆毀	太古之时{1}被拆毁	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the scuttling of {1} 加上結尾的日期
+the scuttling of {1} in {2}	{1}在{2}被拆毀	{1}在{2}被拆毁	inner	FUN_140b73780 case 8 hist_figure_died 短語：{1} 死者；結尾 in {2} 是地點
+the scuttling of {1}	{1}被拆毀	{1}被拆毁	inner	FUN_140b73780 case 8 hist_figure_died 短語：{1} 死者
+the scalding of {1} in {2} in {#3}	{3}年{1}在{2}被燙死	{3}年{1}在{2}被烫死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the scalding of {1} in {2} 加上結尾的日期
+the scalding of {1} in {2} in the {@3} of {#4}	{4}年{3}{1}在{2}被燙死	{4}年{3}{1}在{2}被烫死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the scalding of {1} in {2} 加上結尾的日期
+the scalding of {1} in {2} in a time before time	太古之時{1}在{2}被燙死	太古之时{1}在{2}被烫死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the scalding of {1} in {2} 加上結尾的日期
+the scalding of {1} in {#2}	{2}年{1}被燙死	{2}年{1}被烫死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the scalding of {1} 加上結尾的日期
+the scalding of {1} in the {@2} of {#3}	{3}年{2}{1}被燙死	{3}年{2}{1}被烫死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the scalding of {1} 加上結尾的日期
+the scalding of {1} in a time before time	太古之時{1}被燙死	太古之时{1}被烫死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the scalding of {1} 加上結尾的日期
+the scalding of {1} in {2}	{1}在{2}被燙死	{1}在{2}被烫死	inner	FUN_140b73780 case 0xe hist_figure_died 短語：{1} 死者；結尾 in {2} 是地點
+the scalding of {1}	{1}被燙死	{1}被烫死	inner	FUN_140b73780 case 0xe hist_figure_died 短語：{1} 死者
+the vanishment of {1} in {2} in {#3}	{3}年{1}在{2}消失	{3}年{1}在{2}消失	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the vanishment of {1} in {2} 加上結尾的日期
+the vanishment of {1} in {2} in the {@3} of {#4}	{4}年{3}{1}在{2}消失	{4}年{3}{1}在{2}消失	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the vanishment of {1} in {2} 加上結尾的日期
+the vanishment of {1} in {2} in a time before time	太古之時{1}在{2}消失	太古之时{1}在{2}消失	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the vanishment of {1} in {2} 加上結尾的日期
+the vanishment of {1} in {#2}	{2}年{1}消失	{2}年{1}消失	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the vanishment of {1} 加上結尾的日期
+the vanishment of {1} in the {@2} of {#3}	{3}年{2}{1}消失	{3}年{2}{1}消失	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the vanishment of {1} 加上結尾的日期
+the vanishment of {1} in a time before time	太古之時{1}消失	太古之时{1}消失	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the vanishment of {1} 加上結尾的日期
+the vanishment of {1} in {2}	{1}在{2}消失	{1}在{2}消失	inner	FUN_140b73780 case 0x16 hist_figure_died 短語：{1} 死者；結尾 in {2} 是地點
+the vanishment of {1}	{1}消失	{1}消失	inner	FUN_140b73780 case 0x16 hist_figure_died 短語：{1} 死者
+the heat-induced death of {1} in {2} in {#3}	{3}年{1}在{2}熱死	{3}年{1}在{2}热死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the heat-induced death of {1} in {2} 加上結尾的日期
+the heat-induced death of {1} in {2} in the {@3} of {#4}	{4}年{3}{1}在{2}熱死	{4}年{3}{1}在{2}热死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the heat-induced death of {1} in {2} 加上結尾的日期
+the heat-induced death of {1} in {2} in a time before time	太古之時{1}在{2}熱死	太古之时{1}在{2}热死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the heat-induced death of {1} in {2} 加上結尾的日期
+the heat-induced death of {1} in {#2}	{2}年{1}熱死	{2}年{1}热死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the heat-induced death of {1} 加上結尾的日期
+the heat-induced death of {1} in the {@2} of {#3}	{3}年{2}{1}熱死	{3}年{2}{1}热死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the heat-induced death of {1} 加上結尾的日期
+the heat-induced death of {1} in a time before time	太古之時{1}熱死	太古之时{1}热死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the heat-induced death of {1} 加上結尾的日期
+the heat-induced death of {1} in {2}	{1}在{2}熱死	{1}在{2}热死	inner	FUN_140b73780 case 0x19 hist_figure_died 短語：{1} 死者；結尾 in {2} 是地點
+the heat-induced death of {1}	{1}熱死	{1}热死	inner	FUN_140b73780 case 0x19 hist_figure_died 短語：{1} 死者
+the freezing of {1} in {2} in {#3}	{3}年{1}在{2}凍死	{3}年{1}在{2}冻死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the freezing of {1} in {2} 加上結尾的日期
+the freezing of {1} in {2} in the {@3} of {#4}	{4}年{3}{1}在{2}凍死	{4}年{3}{1}在{2}冻死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the freezing of {1} in {2} 加上結尾的日期
+the freezing of {1} in {2} in a time before time	太古之時{1}在{2}凍死	太古之时{1}在{2}冻死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the freezing of {1} in {2} 加上結尾的日期
+the freezing of {1} in {#2}	{2}年{1}凍死	{2}年{1}冻死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the freezing of {1} 加上結尾的日期
+the freezing of {1} in the {@2} of {#3}	{3}年{2}{1}凍死	{3}年{2}{1}冻死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the freezing of {1} 加上結尾的日期
+the freezing of {1} in a time before time	太古之時{1}凍死	太古之时{1}冻死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the freezing of {1} 加上結尾的日期
+the freezing of {1} in {2}	{1}在{2}凍死	{1}在{2}冻死	inner	FUN_140b73780 case 0x1a/0x2a hist_figure_died 短語：{1} 死者；結尾 in {2} 是地點
+the freezing of {1}	{1}凍死	{1}冻死	inner	FUN_140b73780 case 0x1a/0x2a hist_figure_died 短語：{1} 死者
+the boiling of {1} in {2} in {#3}	{3}年{1}在{2}沸騰蒸發	{3}年{1}在{2}沸腾蒸发	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the boiling of {1} in {2} 加上結尾的日期
+the boiling of {1} in {2} in the {@3} of {#4}	{4}年{3}{1}在{2}沸騰蒸發	{4}年{3}{1}在{2}沸腾蒸发	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the boiling of {1} in {2} 加上結尾的日期
+the boiling of {1} in {2} in a time before time	太古之時{1}在{2}沸騰蒸發	太古之时{1}在{2}沸腾蒸发	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the boiling of {1} in {2} 加上結尾的日期
+the boiling of {1} in {#2}	{2}年{1}沸騰蒸發	{2}年{1}沸腾蒸发	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the boiling of {1} 加上結尾的日期
+the boiling of {1} in the {@2} of {#3}	{3}年{2}{1}沸騰蒸發	{3}年{2}{1}沸腾蒸发	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the boiling of {1} 加上結尾的日期
+the boiling of {1} in a time before time	太古之時{1}沸騰蒸發	太古之时{1}沸腾蒸发	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the boiling of {1} 加上結尾的日期
+the boiling of {1} in {2}	{1}在{2}沸騰蒸發	{1}在{2}沸腾蒸发	inner	FUN_140b73780 case 0x27 hist_figure_died 短語：{1} 死者；結尾 in {2} 是地點
+the boiling of {1}	{1}沸騰蒸發	{1}沸腾蒸发	inner	FUN_140b73780 case 0x27 hist_figure_died 短語：{1} 死者
+the melting of {1} in {2} in {#3}	{3}年{1}在{2}融化	{3}年{1}在{2}融化	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the melting of {1} in {2} 加上結尾的日期
+the melting of {1} in {2} in the {@3} of {#4}	{4}年{3}{1}在{2}融化	{4}年{3}{1}在{2}融化	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the melting of {1} in {2} 加上結尾的日期
+the melting of {1} in {2} in a time before time	太古之時{1}在{2}融化	太古之时{1}在{2}融化	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the melting of {1} in {2} 加上結尾的日期
+the melting of {1} in {#2}	{2}年{1}融化	{2}年{1}融化	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the melting of {1} 加上結尾的日期
+the melting of {1} in the {@2} of {#3}	{3}年{2}{1}融化	{3}年{2}{1}融化	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the melting of {1} 加上結尾的日期
+the melting of {1} in a time before time	太古之時{1}融化	太古之时{1}融化	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the melting of {1} 加上結尾的日期
+the melting of {1} in {2}	{1}在{2}融化	{1}在{2}融化	inner	FUN_140b73780 case 0x28 hist_figure_died 短語：{1} 死者；結尾 in {2} 是地點
+the melting of {1}	{1}融化	{1}融化	inner	FUN_140b73780 case 0x28 hist_figure_died 短語：{1} 死者
+the condensation of {1} in {2} in {#3}	{3}年{1}在{2}凝結	{3}年{1}在{2}凝结	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the condensation of {1} in {2} 加上結尾的日期
+the condensation of {1} in {2} in the {@3} of {#4}	{4}年{3}{1}在{2}凝結	{4}年{3}{1}在{2}凝结	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the condensation of {1} in {2} 加上結尾的日期
+the condensation of {1} in {2} in a time before time	太古之時{1}在{2}凝結	太古之时{1}在{2}凝结	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the condensation of {1} in {2} 加上結尾的日期
+the condensation of {1} in {#2}	{2}年{1}凝結	{2}年{1}凝结	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the condensation of {1} 加上結尾的日期
+the condensation of {1} in the {@2} of {#3}	{3}年{2}{1}凝結	{3}年{2}{1}凝结	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the condensation of {1} 加上結尾的日期
+the condensation of {1} in a time before time	太古之時{1}凝結	太古之时{1}凝结	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the condensation of {1} 加上結尾的日期
+the condensation of {1} in {2}	{1}在{2}凝結	{1}在{2}凝结	inner	FUN_140b73780 case 0x29 hist_figure_died 短語：{1} 死者；結尾 in {2} 是地點
+the condensation of {1}	{1}凝結	{1}凝结	inner	FUN_140b73780 case 0x29 hist_figure_died 短語：{1} 死者
+the fatal illness of {1} in {2} in {#3}	{3}年{1}在{2}死於感染	{3}年{1}在{2}死于感染	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the fatal illness of {1} in {2} 加上結尾的日期
+the fatal illness of {1} in {2} in the {@3} of {#4}	{4}年{3}{1}在{2}死於感染	{4}年{3}{1}在{2}死于感染	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the fatal illness of {1} in {2} 加上結尾的日期
+the fatal illness of {1} in {2} in a time before time	太古之時{1}在{2}死於感染	太古之时{1}在{2}死于感染	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the fatal illness of {1} in {2} 加上結尾的日期
+the fatal illness of {1} in {#2}	{2}年{1}死於感染	{2}年{1}死于感染	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the fatal illness of {1} 加上結尾的日期
+the fatal illness of {1} in the {@2} of {#3}	{3}年{2}{1}死於感染	{3}年{2}{1}死于感染	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the fatal illness of {1} 加上結尾的日期
+the fatal illness of {1} in a time before time	太古之時{1}死於感染	太古之时{1}死于感染	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the fatal illness of {1} 加上結尾的日期
+the fatal illness of {1} in {2}	{1}在{2}死於感染	{1}在{2}死于感染	inner	FUN_140b73780 case 0x2b hist_figure_died 短語：{1} 死者；結尾 in {2} 是地點
+the fatal illness of {1}	{1}死於感染	{1}死于感染	inner	FUN_140b73780 case 0x2b hist_figure_died 短語：{1} 死者
+the putting to rest of {1} in {2} in {#3}	{3}年{1}在{2}得到安息	{3}年{1}在{2}得到安息	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the putting to rest of {1} in {2} 加上結尾的日期
+the putting to rest of {1} in {2} in the {@3} of {#4}	{4}年{3}{1}在{2}得到安息	{4}年{3}{1}在{2}得到安息	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the putting to rest of {1} in {2} 加上結尾的日期
+the putting to rest of {1} in {2} in a time before time	太古之時{1}在{2}得到安息	太古之时{1}在{2}得到安息	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the putting to rest of {1} in {2} 加上結尾的日期
+the putting to rest of {1} in {#2}	{2}年{1}得到安息	{2}年{1}得到安息	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the putting to rest of {1} 加上結尾的日期
+the putting to rest of {1} in the {@2} of {#3}	{3}年{2}{1}得到安息	{3}年{2}{1}得到安息	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the putting to rest of {1} 加上結尾的日期
+the putting to rest of {1} in a time before time	太古之時{1}得到安息	太古之时{1}得到安息	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the putting to rest of {1} 加上結尾的日期
+the putting to rest of {1} in {2}	{1}在{2}得到安息	{1}在{2}得到安息	inner	FUN_140b73780 case 0x2c hist_figure_died 短語：{1} 死者；結尾 in {2} 是地點
+the putting to rest of {1}	{1}得到安息	{1}得到安息	inner	FUN_140b73780 case 0x2c hist_figure_died 短語：{1} 死者
+the death in the dark of {1} in {2} in {#3}	{3}年{1}在{2}死在黑暗之中	{3}年{1}在{2}死在黑暗之中	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the death in the dark of {1} in {2} 加上結尾的日期
+the death in the dark of {1} in {2} in the {@3} of {#4}	{4}年{3}{1}在{2}死在黑暗之中	{4}年{3}{1}在{2}死在黑暗之中	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the death in the dark of {1} in {2} 加上結尾的日期
+the death in the dark of {1} in {2} in a time before time	太古之時{1}在{2}死在黑暗之中	太古之时{1}在{2}死在黑暗之中	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the death in the dark of {1} in {2} 加上結尾的日期
+the death in the dark of {1} in {#2}	{2}年{1}死在黑暗之中	{2}年{1}死在黑暗之中	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the death in the dark of {1} 加上結尾的日期
+the death in the dark of {1} in the {@2} of {#3}	{3}年{2}{1}死在黑暗之中	{3}年{2}{1}死在黑暗之中	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the death in the dark of {1} 加上結尾的日期
+the death in the dark of {1} in a time before time	太古之時{1}死在黑暗之中	太古之时{1}死在黑暗之中	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the death in the dark of {1} 加上結尾的日期
+the death in the dark of {1} in {2}	{1}在{2}死在黑暗之中	{1}在{2}死在黑暗之中	inner	FUN_140b73780 case 0x2e hist_figure_died 短語：{1} 死者；結尾 in {2} 是地點
+the death in the dark of {1}	{1}死在黑暗之中	{1}死在黑暗之中	inner	FUN_140b73780 case 0x2e hist_figure_died 短語：{1} 死者
+the collision of {1} with an obstacle, after the death strike by {2} in {3} in {#4}	{4}年{1}在{3}撞上障礙物，由{2}給予致命一擊	{4}年{1}在{3}撞上障碍物，由{2}给予致命一击	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the collision of {1} with an obstacle, after the death strike by {2} in {3} 加上結尾的日期
+the collision of {1} with an obstacle, after the death strike by {2} in {3} in the {@4} of {#5}	{5}年{4}{1}在{3}撞上障礙物，由{2}給予致命一擊	{5}年{4}{1}在{3}撞上障碍物，由{2}给予致命一击	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the collision of {1} with an obstacle, after the death strike by {2} in {3} 加上結尾的日期
+the collision of {1} with an obstacle, after the death strike by {2} in {3} in a time before time	太古之時{1}在{3}撞上障礙物，由{2}給予致命一擊	太古之时{1}在{3}撞上障碍物，由{2}给予致命一击	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the collision of {1} with an obstacle, after the death strike by {2} in {3} 加上結尾的日期
+the collision of {1} with an obstacle, after the death strike by {2} in {#3}	{3}年{1}撞上障礙物，由{2}給予致命一擊	{3}年{1}撞上障碍物，由{2}给予致命一击	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the collision of {1} with an obstacle, after the death strike by {2} 加上結尾的日期
+the collision of {1} with an obstacle, after the death strike by {2} in the {@3} of {#4}	{4}年{3}{1}撞上障礙物，由{2}給予致命一擊	{4}年{3}{1}撞上障碍物，由{2}给予致命一击	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the collision of {1} with an obstacle, after the death strike by {2} 加上結尾的日期
+the collision of {1} with an obstacle, after the death strike by {2} in a time before time	太古之時{1}撞上障礙物，由{2}給予致命一擊	太古之时{1}撞上障碍物，由{2}给予致命一击	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the collision of {1} with an obstacle, after the death strike by {2} 加上結尾的日期
+the collision of {1} with an obstacle, after the death strike by {2} in {3}	{1}在{3}撞上障礙物，由{2}給予致命一擊	{1}在{3}撞上障碍物，由{2}给予致命一击	inner	FUN_140b73780 case 9 hist_figure_died 短語：{1} 死者、{2} 兇手（人名或 a 種族）；結尾 in {3} 是地點
+the collision of {1} with an obstacle, after the death strike by {2}	{1}撞上障礙物，由{2}給予致命一擊	{1}撞上障碍物，由{2}给予致命一击	inner	FUN_140b73780 case 9 hist_figure_died 短語：{1} 死者、{2} 兇手（人名或 a 種族）
+the collision of {1} with an obstacle in {2} in {#3}	{3}年{1}在{2}撞上障礙物而死	{3}年{1}在{2}撞上障碍物而死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the collision of {1} with an obstacle in {2} 加上結尾的日期
+the collision of {1} with an obstacle in {2} in the {@3} of {#4}	{4}年{3}{1}在{2}撞上障礙物而死	{4}年{3}{1}在{2}撞上障碍物而死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the collision of {1} with an obstacle in {2} 加上結尾的日期
+the collision of {1} with an obstacle in {2} in a time before time	太古之時{1}在{2}撞上障礙物而死	太古之时{1}在{2}撞上障碍物而死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the collision of {1} with an obstacle in {2} 加上結尾的日期
+the collision of {1} with an obstacle in {#2}	{2}年{1}撞上障礙物而死	{2}年{1}撞上障碍物而死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the collision of {1} with an obstacle 加上結尾的日期
+the collision of {1} with an obstacle in the {@2} of {#3}	{3}年{2}{1}撞上障礙物而死	{3}年{2}{1}撞上障碍物而死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the collision of {1} with an obstacle 加上結尾的日期
+the collision of {1} with an obstacle in a time before time	太古之時{1}撞上障礙物而死	太古之时{1}撞上障碍物而死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the collision of {1} with an obstacle 加上結尾的日期
+the collision of {1} with an obstacle in {2}	{1}在{2}撞上障礙物而死	{1}在{2}撞上障碍物而死	inner	FUN_140b73780 case 9 hist_figure_died 短語：{1} 死者；結尾 in {2} 是地點
+the collision of {1} with an obstacle	{1}撞上障礙物而死	{1}撞上障碍物而死	inner	FUN_140b73780 case 9 hist_figure_died 短語：{1} 死者
+the burning of {1} in magma in {2} in {#3}	{3}年{1}於{2}在熔岩中燒成灰	{3}年{1}于{2}在熔岩中烧成灰	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1} in magma in {2} 加上結尾的日期
+the burning of {1} in magma in {2} in the {@3} of {#4}	{4}年{3}{1}於{2}在熔岩中燒成灰	{4}年{3}{1}于{2}在熔岩中烧成灰	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1} in magma in {2} 加上結尾的日期
+the burning of {1} in magma in {2} in a time before time	太古之時{1}於{2}在熔岩中燒成灰	太古之时{1}于{2}在熔岩中烧成灰	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1} in magma in {2} 加上結尾的日期
+the burning of {1} in magma in {#2}	{2}年{1}在熔岩中燒成灰	{2}年{1}在熔岩中烧成灰	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1} in magma 加上結尾的日期
+the burning of {1} in magma in the {@2} of {#3}	{3}年{2}{1}在熔岩中燒成灰	{3}年{2}{1}在熔岩中烧成灰	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1} in magma 加上結尾的日期
+the burning of {1} in magma in a time before time	太古之時{1}在熔岩中燒成灰	太古之时{1}在熔岩中烧成灰	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1} in magma 加上結尾的日期
+the burning of {1} in magma in {2}	{1}於{2}在熔岩中燒成灰	{1}于{2}在熔岩中烧成灰	inner	FUN_140b73780 case 0xa hist_figure_died 短語：{1} 死者；結尾 in {2} 是地點
+the burning of {1} in magma	{1}在熔岩中燒成灰	{1}在熔岩中烧成灰	inner	FUN_140b73780 case 0xa hist_figure_died 短語：{1} 死者
+the burning of {1} in a magma mist in {2} in {#3}	{3}年{1}於{2}在熔岩霧中燒成灰	{3}年{1}于{2}在熔岩雾中烧成灰	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1} in a magma mist in {2} 加上結尾的日期
+the burning of {1} in a magma mist in {2} in the {@3} of {#4}	{4}年{3}{1}於{2}在熔岩霧中燒成灰	{4}年{3}{1}于{2}在熔岩雾中烧成灰	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1} in a magma mist in {2} 加上結尾的日期
+the burning of {1} in a magma mist in {2} in a time before time	太古之時{1}於{2}在熔岩霧中燒成灰	太古之时{1}于{2}在熔岩雾中烧成灰	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1} in a magma mist in {2} 加上結尾的日期
+the burning of {1} in a magma mist in {#2}	{2}年{1}在熔岩霧中燒成灰	{2}年{1}在熔岩雾中烧成灰	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1} in a magma mist 加上結尾的日期
+the burning of {1} in a magma mist in the {@2} of {#3}	{3}年{2}{1}在熔岩霧中燒成灰	{3}年{2}{1}在熔岩雾中烧成灰	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1} in a magma mist 加上結尾的日期
+the burning of {1} in a magma mist in a time before time	太古之時{1}在熔岩霧中燒成灰	太古之时{1}在熔岩雾中烧成灰	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1} in a magma mist 加上結尾的日期
+the burning of {1} in a magma mist in {2}	{1}於{2}在熔岩霧中燒成灰	{1}于{2}在熔岩雾中烧成灰	inner	FUN_140b73780 case 0xb hist_figure_died 短語：{1} 死者；結尾 in {2} 是地點
+the burning of {1} in a magma mist	{1}在熔岩霧中燒成灰	{1}在熔岩雾中烧成灰	inner	FUN_140b73780 case 0xb hist_figure_died 短語：{1} 死者
+the burning of {1} in dragon fire in {2} in {#3}	{3}年{1}於{2}在龍焰中燒成灰	{3}年{1}于{2}在龙焰中烧成灰	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1} in dragon fire in {2} 加上結尾的日期
+the burning of {1} in dragon fire in {2} in the {@3} of {#4}	{4}年{3}{1}於{2}在龍焰中燒成灰	{4}年{3}{1}于{2}在龙焰中烧成灰	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1} in dragon fire in {2} 加上結尾的日期
+the burning of {1} in dragon fire in {2} in a time before time	太古之時{1}於{2}在龍焰中燒成灰	太古之时{1}于{2}在龙焰中烧成灰	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1} in dragon fire in {2} 加上結尾的日期
+the burning of {1} in dragon fire in {#2}	{2}年{1}在龍焰中燒成灰	{2}年{1}在龙焰中烧成灰	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1} in dragon fire 加上結尾的日期
+the burning of {1} in dragon fire in the {@2} of {#3}	{3}年{2}{1}在龍焰中燒成灰	{3}年{2}{1}在龙焰中烧成灰	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1} in dragon fire 加上結尾的日期
+the burning of {1} in dragon fire in a time before time	太古之時{1}在龍焰中燒成灰	太古之时{1}在龙焰中烧成灰	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1} in dragon fire 加上結尾的日期
+the burning of {1} in dragon fire in {2}	{1}於{2}在龍焰中燒成灰	{1}于{2}在龙焰中烧成灰	inner	FUN_140b73780 case 0xc hist_figure_died 短語：{1} 死者；結尾 in {2} 是地點
+the burning of {1} in dragon fire	{1}在龍焰中燒成灰	{1}在龙焰中烧成灰	inner	FUN_140b73780 case 0xc hist_figure_died 短語：{1} 死者
+the crushing of {1} under a collapsing ceiling in {2} in {#3}	{3}年{1}在{2}被崩塌的頂板壓死	{3}年{1}在{2}被崩塌的顶板压死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the crushing of {1} under a collapsing ceiling in {2} 加上結尾的日期
+the crushing of {1} under a collapsing ceiling in {2} in the {@3} of {#4}	{4}年{3}{1}在{2}被崩塌的頂板壓死	{4}年{3}{1}在{2}被崩塌的顶板压死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the crushing of {1} under a collapsing ceiling in {2} 加上結尾的日期
+the crushing of {1} under a collapsing ceiling in {2} in a time before time	太古之時{1}在{2}被崩塌的頂板壓死	太古之时{1}在{2}被崩塌的顶板压死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the crushing of {1} under a collapsing ceiling in {2} 加上結尾的日期
+the crushing of {1} under a collapsing ceiling in {#2}	{2}年{1}被崩塌的頂板壓死	{2}年{1}被崩塌的顶板压死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the crushing of {1} under a collapsing ceiling 加上結尾的日期
+the crushing of {1} under a collapsing ceiling in the {@2} of {#3}	{3}年{2}{1}被崩塌的頂板壓死	{3}年{2}{1}被崩塌的顶板压死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the crushing of {1} under a collapsing ceiling 加上結尾的日期
+the crushing of {1} under a collapsing ceiling in a time before time	太古之時{1}被崩塌的頂板壓死	太古之时{1}被崩塌的顶板压死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the crushing of {1} under a collapsing ceiling 加上結尾的日期
+the crushing of {1} under a collapsing ceiling in {2}	{1}在{2}被崩塌的頂板壓死	{1}在{2}被崩塌的顶板压死	inner	FUN_140b73780 case 0xf hist_figure_died 短語：{1} 死者；結尾 in {2} 是地點
+the crushing of {1} under a collapsing ceiling	{1}被崩塌的頂板壓死	{1}被崩塌的顶板压死	inner	FUN_140b73780 case 0xf hist_figure_died 短語：{1} 死者
+the crushing of {1} under a drawbridge in {2} in {#3}	{3}年{1}在{2}被升降橋壓死	{3}年{1}在{2}被升降桥压死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the crushing of {1} under a drawbridge in {2} 加上結尾的日期
+the crushing of {1} under a drawbridge in {2} in the {@3} of {#4}	{4}年{3}{1}在{2}被升降橋壓死	{4}年{3}{1}在{2}被升降桥压死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the crushing of {1} under a drawbridge in {2} 加上結尾的日期
+the crushing of {1} under a drawbridge in {2} in a time before time	太古之時{1}在{2}被升降橋壓死	太古之时{1}在{2}被升降桥压死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the crushing of {1} under a drawbridge in {2} 加上結尾的日期
+the crushing of {1} under a drawbridge in {#2}	{2}年{1}被升降橋壓死	{2}年{1}被升降桥压死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the crushing of {1} under a drawbridge 加上結尾的日期
+the crushing of {1} under a drawbridge in the {@2} of {#3}	{3}年{2}{1}被升降橋壓死	{3}年{2}{1}被升降桥压死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the crushing of {1} under a drawbridge 加上結尾的日期
+the crushing of {1} under a drawbridge in a time before time	太古之時{1}被升降橋壓死	太古之时{1}被升降桥压死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the crushing of {1} under a drawbridge 加上結尾的日期
+the crushing of {1} under a drawbridge in {2}	{1}在{2}被升降橋壓死	{1}在{2}被升降桥压死	inner	FUN_140b73780 case 0x10 hist_figure_died 短語：{1} 死者；結尾 in {2} 是地點
+the crushing of {1} under a drawbridge	{1}被升降橋壓死	{1}被升降桥压死	inner	FUN_140b73780 case 0x10 hist_figure_died 短語：{1} 死者
+the crushing of {1} by falling rocks in {2} in {#3}	{3}年{1}在{2}被落石砸死	{3}年{1}在{2}被落石砸死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the crushing of {1} by falling rocks in {2} 加上結尾的日期
+the crushing of {1} by falling rocks in {2} in the {@3} of {#4}	{4}年{3}{1}在{2}被落石砸死	{4}年{3}{1}在{2}被落石砸死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the crushing of {1} by falling rocks in {2} 加上結尾的日期
+the crushing of {1} by falling rocks in {2} in a time before time	太古之時{1}在{2}被落石砸死	太古之时{1}在{2}被落石砸死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the crushing of {1} by falling rocks in {2} 加上結尾的日期
+the crushing of {1} by falling rocks in {#2}	{2}年{1}被落石砸死	{2}年{1}被落石砸死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the crushing of {1} by falling rocks 加上結尾的日期
+the crushing of {1} by falling rocks in the {@2} of {#3}	{3}年{2}{1}被落石砸死	{3}年{2}{1}被落石砸死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the crushing of {1} by falling rocks 加上結尾的日期
+the crushing of {1} by falling rocks in a time before time	太古之時{1}被落石砸死	太古之时{1}被落石砸死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the crushing of {1} by falling rocks 加上結尾的日期
+the crushing of {1} by falling rocks in {2}	{1}在{2}被落石砸死	{1}在{2}被落石砸死	inner	FUN_140b73780 case 0x11 hist_figure_died 短語：{1} 死者；結尾 in {2} 是地點
+the crushing of {1} by falling rocks	{1}被落石砸死	{1}被落石砸死	inner	FUN_140b73780 case 0x11 hist_figure_died 短語：{1} 死者
+the fall of {1} into a deep chasm in {2} in {#3}	{3}年{1}在{2}墜入深深的裂谷	{3}年{1}在{2}坠入深深的裂谷	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the fall of {1} into a deep chasm in {2} 加上結尾的日期
+the fall of {1} into a deep chasm in {2} in the {@3} of {#4}	{4}年{3}{1}在{2}墜入深深的裂谷	{4}年{3}{1}在{2}坠入深深的裂谷	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the fall of {1} into a deep chasm in {2} 加上結尾的日期
+the fall of {1} into a deep chasm in {2} in a time before time	太古之時{1}在{2}墜入深深的裂谷	太古之时{1}在{2}坠入深深的裂谷	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the fall of {1} into a deep chasm in {2} 加上結尾的日期
+the fall of {1} into a deep chasm in {#2}	{2}年{1}墜入深深的裂谷	{2}年{1}坠入深深的裂谷	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the fall of {1} into a deep chasm 加上結尾的日期
+the fall of {1} into a deep chasm in the {@2} of {#3}	{3}年{2}{1}墜入深深的裂谷	{3}年{2}{1}坠入深深的裂谷	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the fall of {1} into a deep chasm 加上結尾的日期
+the fall of {1} into a deep chasm in a time before time	太古之時{1}墜入深深的裂谷	太古之时{1}坠入深深的裂谷	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the fall of {1} into a deep chasm 加上結尾的日期
+the fall of {1} into a deep chasm in {2}	{1}在{2}墜入深深的裂谷	{1}在{2}坠入深深的裂谷	inner	FUN_140b73780 case 0x12 hist_figure_died 短語：{1} 死者；結尾 in {2} 是地點
+the fall of {1} into a deep chasm	{1}墜入深深的裂谷	{1}坠入深深的裂谷	inner	FUN_140b73780 case 0x12 hist_figure_died 短語：{1} 死者
+the death of {1} in a cage in {2} in {#3}	{3}年{1}死在{2}的籠子裡	{3}年{1}死在{2}的笼子里	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the death of {1} in a cage in {2} 加上結尾的日期
+the death of {1} in a cage in {2} in the {@3} of {#4}	{4}年{3}{1}死在{2}的籠子裡	{4}年{3}{1}死在{2}的笼子里	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the death of {1} in a cage in {2} 加上結尾的日期
+the death of {1} in a cage in {2} in a time before time	太古之時{1}死在{2}的籠子裡	太古之时{1}死在{2}的笼子里	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the death of {1} in a cage in {2} 加上結尾的日期
+the death of {1} in a cage in {#2}	{2}年{1}死在籠子裡	{2}年{1}死在笼子里	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the death of {1} in a cage 加上結尾的日期
+the death of {1} in a cage in the {@2} of {#3}	{3}年{2}{1}死在籠子裡	{3}年{2}{1}死在笼子里	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the death of {1} in a cage 加上結尾的日期
+the death of {1} in a cage in a time before time	太古之時{1}死在籠子裡	太古之时{1}死在笼子里	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the death of {1} in a cage 加上結尾的日期
+the death of {1} in a cage in {2}	{1}死在{2}的籠子裡	{1}死在{2}的笼子里	inner	FUN_140b73780 case 0x13 hist_figure_died 短語：{1} 死者；結尾 in {2} 是地點
+the death of {1} in a cage	{1}死在籠子裡	{1}死在笼子里	inner	FUN_140b73780 case 0x13 hist_figure_died 短語：{1} 死者
+the killing of {1} by a trap in {2} in {#3}	{3}年{1}在{2}被陷阱殺死	{3}年{1}在{2}被陷阱杀死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} by a trap in {2} 加上結尾的日期
+the killing of {1} by a trap in {2} in the {@3} of {#4}	{4}年{3}{1}在{2}被陷阱殺死	{4}年{3}{1}在{2}被陷阱杀死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} by a trap in {2} 加上結尾的日期
+the killing of {1} by a trap in {2} in a time before time	太古之時{1}在{2}被陷阱殺死	太古之时{1}在{2}被陷阱杀死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} by a trap in {2} 加上結尾的日期
+the killing of {1} by a trap in {#2}	{2}年{1}被陷阱殺死	{2}年{1}被陷阱杀死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} by a trap 加上結尾的日期
+the killing of {1} by a trap in the {@2} of {#3}	{3}年{2}{1}被陷阱殺死	{3}年{2}{1}被陷阱杀死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} by a trap 加上結尾的日期
+the killing of {1} by a trap in a time before time	太古之時{1}被陷阱殺死	太古之时{1}被陷阱杀死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} by a trap 加上結尾的日期
+the killing of {1} by a trap in {2}	{1}在{2}被陷阱殺死	{1}在{2}被陷阱杀死	inner	FUN_140b73780 case 0x15 hist_figure_died 短語：{1} 死者；結尾 in {2} 是地點
+the killing of {1} by a trap	{1}被陷阱殺死	{1}被陷阱杀死	inner	FUN_140b73780 case 0x15 hist_figure_died 短語：{1} 死者
+the impalement of {1} on spikes, after the death strike by {2} in {3} in {#4}	{4}年{1}在{3}被尖刺刺穿，由{2}給予致命一擊	{4}年{1}在{3}被尖刺刺穿，由{2}给予致命一击	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the impalement of {1} on spikes, after the death strike by {2} in {3} 加上結尾的日期
+the impalement of {1} on spikes, after the death strike by {2} in {3} in the {@4} of {#5}	{5}年{4}{1}在{3}被尖刺刺穿，由{2}給予致命一擊	{5}年{4}{1}在{3}被尖刺刺穿，由{2}给予致命一击	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the impalement of {1} on spikes, after the death strike by {2} in {3} 加上結尾的日期
+the impalement of {1} on spikes, after the death strike by {2} in {3} in a time before time	太古之時{1}在{3}被尖刺刺穿，由{2}給予致命一擊	太古之时{1}在{3}被尖刺刺穿，由{2}给予致命一击	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the impalement of {1} on spikes, after the death strike by {2} in {3} 加上結尾的日期
+the impalement of {1} on spikes, after the death strike by {2} in {#3}	{3}年{1}被尖刺刺穿，由{2}給予致命一擊	{3}年{1}被尖刺刺穿，由{2}给予致命一击	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the impalement of {1} on spikes, after the death strike by {2} 加上結尾的日期
+the impalement of {1} on spikes, after the death strike by {2} in the {@3} of {#4}	{4}年{3}{1}被尖刺刺穿，由{2}給予致命一擊	{4}年{3}{1}被尖刺刺穿，由{2}给予致命一击	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the impalement of {1} on spikes, after the death strike by {2} 加上結尾的日期
+the impalement of {1} on spikes, after the death strike by {2} in a time before time	太古之時{1}被尖刺刺穿，由{2}給予致命一擊	太古之时{1}被尖刺刺穿，由{2}给予致命一击	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the impalement of {1} on spikes, after the death strike by {2} 加上結尾的日期
+the impalement of {1} on spikes, after the death strike by {2} in {3}	{1}在{3}被尖刺刺穿，由{2}給予致命一擊	{1}在{3}被尖刺刺穿，由{2}给予致命一击	inner	FUN_140b73780 case 0x1b hist_figure_died 短語：{1} 死者、{2} 兇手（人名或 a 種族）；結尾 in {3} 是地點
+the impalement of {1} on spikes, after the death strike by {2}	{1}被尖刺刺穿，由{2}給予致命一擊	{1}被尖刺刺穿，由{2}给予致命一击	inner	FUN_140b73780 case 0x1b hist_figure_died 短語：{1} 死者、{2} 兇手（人名或 a 種族）
+the impalement of {1} on spikes in {2} in {#3}	{3}年{1}在{2}被尖刺刺穿	{3}年{1}在{2}被尖刺刺穿	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the impalement of {1} on spikes in {2} 加上結尾的日期
+the impalement of {1} on spikes in {2} in the {@3} of {#4}	{4}年{3}{1}在{2}被尖刺刺穿	{4}年{3}{1}在{2}被尖刺刺穿	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the impalement of {1} on spikes in {2} 加上結尾的日期
+the impalement of {1} on spikes in {2} in a time before time	太古之時{1}在{2}被尖刺刺穿	太古之时{1}在{2}被尖刺刺穿	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the impalement of {1} on spikes in {2} 加上結尾的日期
+the impalement of {1} on spikes in {#2}	{2}年{1}被尖刺刺穿	{2}年{1}被尖刺刺穿	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the impalement of {1} on spikes 加上結尾的日期
+the impalement of {1} on spikes in the {@2} of {#3}	{3}年{2}{1}被尖刺刺穿	{3}年{2}{1}被尖刺刺穿	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the impalement of {1} on spikes 加上結尾的日期
+the impalement of {1} on spikes in a time before time	太古之時{1}被尖刺刺穿	太古之时{1}被尖刺刺穿	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the impalement of {1} on spikes 加上結尾的日期
+the impalement of {1} on spikes in {2}	{1}在{2}被尖刺刺穿	{1}在{2}被尖刺刺穿	inner	FUN_140b73780 case 0x1b hist_figure_died 短語：{1} 死者；結尾 in {2} 是地點
+the impalement of {1} on spikes	{1}被尖刺刺穿	{1}被尖刺刺穿	inner	FUN_140b73780 case 0x1b hist_figure_died 短語：{1} 死者
+the encasement of {1} in cooling lava in {2} in {#3}	{3}年{1}在{2}被冷卻的熔岩封在裡面	{3}年{1}在{2}被冷却的熔岩封在里面	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the encasement of {1} in cooling lava in {2} 加上結尾的日期
+the encasement of {1} in cooling lava in {2} in the {@3} of {#4}	{4}年{3}{1}在{2}被冷卻的熔岩封在裡面	{4}年{3}{1}在{2}被冷却的熔岩封在里面	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the encasement of {1} in cooling lava in {2} 加上結尾的日期
+the encasement of {1} in cooling lava in {2} in a time before time	太古之時{1}在{2}被冷卻的熔岩封在裡面	太古之时{1}在{2}被冷却的熔岩封在里面	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the encasement of {1} in cooling lava in {2} 加上結尾的日期
+the encasement of {1} in cooling lava in {#2}	{2}年{1}被冷卻的熔岩封在裡面	{2}年{1}被冷却的熔岩封在里面	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the encasement of {1} in cooling lava 加上結尾的日期
+the encasement of {1} in cooling lava in the {@2} of {#3}	{3}年{2}{1}被冷卻的熔岩封在裡面	{3}年{2}{1}被冷却的熔岩封在里面	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the encasement of {1} in cooling lava 加上結尾的日期
+the encasement of {1} in cooling lava in a time before time	太古之時{1}被冷卻的熔岩封在裡面	太古之时{1}被冷却的熔岩封在里面	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the encasement of {1} in cooling lava 加上結尾的日期
+the encasement of {1} in cooling lava in {2}	{1}在{2}被冷卻的熔岩封在裡面	{1}在{2}被冷却的熔岩封在里面	inner	FUN_140b73780 case 0x1c hist_figure_died 短語：{1} 死者；結尾 in {2} 是地點
+the encasement of {1} in cooling lava	{1}被冷卻的熔岩封在裡面	{1}被冷却的熔岩封在里面	inner	FUN_140b73780 case 0x1c hist_figure_died 短語：{1} 死者
+the encasement of {1} in cooling magma in {2} in {#3}	{3}年{1}在{2}被冷卻的熔岩封在裡面	{3}年{1}在{2}被冷却的熔岩封在里面	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the encasement of {1} in cooling magma in {2} 加上結尾的日期
+the encasement of {1} in cooling magma in {2} in the {@3} of {#4}	{4}年{3}{1}在{2}被冷卻的熔岩封在裡面	{4}年{3}{1}在{2}被冷却的熔岩封在里面	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the encasement of {1} in cooling magma in {2} 加上結尾的日期
+the encasement of {1} in cooling magma in {2} in a time before time	太古之時{1}在{2}被冷卻的熔岩封在裡面	太古之时{1}在{2}被冷却的熔岩封在里面	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the encasement of {1} in cooling magma in {2} 加上結尾的日期
+the encasement of {1} in cooling magma in {#2}	{2}年{1}被冷卻的熔岩封在裡面	{2}年{1}被冷却的熔岩封在里面	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the encasement of {1} in cooling magma 加上結尾的日期
+the encasement of {1} in cooling magma in the {@2} of {#3}	{3}年{2}{1}被冷卻的熔岩封在裡面	{3}年{2}{1}被冷却的熔岩封在里面	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the encasement of {1} in cooling magma 加上結尾的日期
+the encasement of {1} in cooling magma in a time before time	太古之時{1}被冷卻的熔岩封在裡面	太古之时{1}被冷却的熔岩封在里面	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the encasement of {1} in cooling magma 加上結尾的日期
+the encasement of {1} in cooling magma in {2}	{1}在{2}被冷卻的熔岩封在裡面	{1}在{2}被冷却的熔岩封在里面	inner	FUN_140b73780 case 0x1d hist_figure_died 短語：{1} 死者；結尾 in {2} 是地點
+the encasement of {1} in cooling magma	{1}被冷卻的熔岩封在裡面	{1}被冷却的熔岩封在里面	inner	FUN_140b73780 case 0x1d hist_figure_died 短語：{1} 死者
+the encasement of {1} in ice in {2} in {#3}	{3}年{1}在{2}被封在冰裡	{3}年{1}在{2}被封在冰里	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the encasement of {1} in ice in {2} 加上結尾的日期
+the encasement of {1} in ice in {2} in the {@3} of {#4}	{4}年{3}{1}在{2}被封在冰裡	{4}年{3}{1}在{2}被封在冰里	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the encasement of {1} in ice in {2} 加上結尾的日期
+the encasement of {1} in ice in {2} in a time before time	太古之時{1}在{2}被封在冰裡	太古之时{1}在{2}被封在冰里	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the encasement of {1} in ice in {2} 加上結尾的日期
+the encasement of {1} in ice in {#2}	{2}年{1}被封在冰裡	{2}年{1}被封在冰里	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the encasement of {1} in ice 加上結尾的日期
+the encasement of {1} in ice in the {@2} of {#3}	{3}年{2}{1}被封在冰裡	{3}年{2}{1}被封在冰里	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the encasement of {1} in ice 加上結尾的日期
+the encasement of {1} in ice in a time before time	太古之時{1}被封在冰裡	太古之时{1}被封在冰里	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the encasement of {1} in ice 加上結尾的日期
+the encasement of {1} in ice in {2}	{1}在{2}被封在冰裡	{1}在{2}被封在冰里	inner	FUN_140b73780 case 0x1e hist_figure_died 短語：{1} 死者；結尾 in {2} 是地點
+the encasement of {1} in ice	{1}被封在冰裡	{1}被封在冰里	inner	FUN_140b73780 case 0x1e hist_figure_died 短語：{1} 死者
+the killing of {1} by a vehicle in {2} in {#3}	{3}年{1}在{2}被礦車撞死	{3}年{1}在{2}被矿车撞死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} by a vehicle in {2} 加上結尾的日期
+the killing of {1} by a vehicle in {2} in the {@3} of {#4}	{4}年{3}{1}在{2}被礦車撞死	{4}年{3}{1}在{2}被矿车撞死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} by a vehicle in {2} 加上結尾的日期
+the killing of {1} by a vehicle in {2} in a time before time	太古之時{1}在{2}被礦車撞死	太古之时{1}在{2}被矿车撞死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} by a vehicle in {2} 加上結尾的日期
+the killing of {1} by a vehicle in {#2}	{2}年{1}被礦車撞死	{2}年{1}被矿车撞死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} by a vehicle 加上結尾的日期
+the killing of {1} by a vehicle in the {@2} of {#3}	{3}年{2}{1}被礦車撞死	{3}年{2}{1}被矿车撞死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} by a vehicle 加上結尾的日期
+the killing of {1} by a vehicle in a time before time	太古之時{1}被礦車撞死	太古之时{1}被矿车撞死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} by a vehicle 加上結尾的日期
+the killing of {1} by a vehicle in {2}	{1}在{2}被礦車撞死	{1}在{2}被矿车撞死	inner	FUN_140b73780 case 0x32 hist_figure_died 短語：{1} 死者；結尾 in {2} 是地點
+the killing of {1} by a vehicle	{1}被礦車撞死	{1}被矿车撞死	inner	FUN_140b73780 case 0x32 hist_figure_died 短語：{1} 死者
+the killing of {1} by a flying object in {2} in {#3}	{3}年{1}在{2}被飛來的物體砸死	{3}年{1}在{2}被飞来的物体砸死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} by a flying object in {2} 加上結尾的日期
+the killing of {1} by a flying object in {2} in the {@3} of {#4}	{4}年{3}{1}在{2}被飛來的物體砸死	{4}年{3}{1}在{2}被飞来的物体砸死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} by a flying object in {2} 加上結尾的日期
+the killing of {1} by a flying object in {2} in a time before time	太古之時{1}在{2}被飛來的物體砸死	太古之时{1}在{2}被飞来的物体砸死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} by a flying object in {2} 加上結尾的日期
+the killing of {1} by a flying object in {#2}	{2}年{1}被飛來的物體砸死	{2}年{1}被飞来的物体砸死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} by a flying object 加上結尾的日期
+the killing of {1} by a flying object in the {@2} of {#3}	{3}年{2}{1}被飛來的物體砸死	{3}年{2}{1}被飞来的物体砸死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} by a flying object 加上結尾的日期
+the killing of {1} by a flying object in a time before time	太古之時{1}被飛來的物體砸死	太古之时{1}被飞来的物体砸死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} by a flying object 加上結尾的日期
+the killing of {1} by a flying object in {2}	{1}在{2}被飛來的物體砸死	{1}在{2}被飞来的物体砸死	inner	FUN_140b73780 case 0x33 hist_figure_died 短語：{1} 死者；結尾 in {2} 是地點；術語例外：object
+the killing of {1} by a flying object	{1}被飛來的物體砸死	{1}被飞来的物体砸死	inner	FUN_140b73780 case 0x33 hist_figure_died 短語：{1} 死者；術語例外：object
+the leap of {1} from a great height in {2} in {#3}	{3}年{1}在{2}從高處跳下身亡	{3}年{1}在{2}从高处跳下身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the leap of {1} from a great height in {2} 加上結尾的日期
+the leap of {1} from a great height in {2} in the {@3} of {#4}	{4}年{3}{1}在{2}從高處跳下身亡	{4}年{3}{1}在{2}从高处跳下身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the leap of {1} from a great height in {2} 加上結尾的日期
+the leap of {1} from a great height in {2} in a time before time	太古之時{1}在{2}從高處跳下身亡	太古之时{1}在{2}从高处跳下身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the leap of {1} from a great height in {2} 加上結尾的日期
+the leap of {1} from a great height in {#2}	{2}年{1}從高處跳下身亡	{2}年{1}从高处跳下身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the leap of {1} from a great height 加上結尾的日期
+the leap of {1} from a great height in the {@2} of {#3}	{3}年{2}{1}從高處跳下身亡	{3}年{2}{1}从高处跳下身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the leap of {1} from a great height 加上結尾的日期
+the leap of {1} from a great height in a time before time	太古之時{1}從高處跳下身亡	太古之时{1}从高处跳下身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the leap of {1} from a great height 加上結尾的日期
+the leap of {1} from a great height in {2}	{1}在{2}從高處跳下身亡	{1}在{2}从高处跳下身亡	inner	FUN_140b73780 case 0x34 hist_figure_died 短語：{1} 死者；結尾 in {2} 是地點；術語例外：Great
+the leap of {1} from a great height	{1}從高處跳下身亡	{1}从高处跳下身亡	inner	FUN_140b73780 case 0x34 hist_figure_died 短語：{1} 死者；術語例外：Great
+the burning of {1} in {2}'s dragon fire in {3} in {#4}	{4}年{1}於{3}在{2}的龍焰中燒成灰	{4}年{1}于{3}在{2}的龙焰中烧成灰	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1} in {2}'s dragon fire in {3} 加上結尾的日期
+the burning of {1} in {2}'s dragon fire in {3} in the {@4} of {#5}	{5}年{4}{1}於{3}在{2}的龍焰中燒成灰	{5}年{4}{1}于{3}在{2}的龙焰中烧成灰	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1} in {2}'s dragon fire in {3} 加上結尾的日期
+the burning of {1} in {2}'s dragon fire in {3} in a time before time	太古之時{1}於{3}在{2}的龍焰中燒成灰	太古之时{1}于{3}在{2}的龙焰中烧成灰	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1} in {2}'s dragon fire in {3} 加上結尾的日期
+the burning of {1} in {2}'s dragon fire in {#3}	{3}年{1}在{2}的龍焰中燒成灰	{3}年{1}在{2}的龙焰中烧成灰	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1} in {2}'s dragon fire 加上結尾的日期
+the burning of {1} in {2}'s dragon fire in the {@3} of {#4}	{4}年{3}{1}在{2}的龍焰中燒成灰	{4}年{3}{1}在{2}的龙焰中烧成灰	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1} in {2}'s dragon fire 加上結尾的日期
+the burning of {1} in {2}'s dragon fire in a time before time	太古之時{1}在{2}的龍焰中燒成灰	太古之时{1}在{2}的龙焰中烧成灰	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1} in {2}'s dragon fire 加上結尾的日期
+the burning of {1} in {2}'s dragon fire in {3}	{1}於{3}在{2}的龍焰中燒成灰	{1}于{3}在{2}的龙焰中烧成灰	inner	FUN_140b73780 case 0xc hist_figure_died 短語：{2} 噴火者（人名或種族）；結尾 in {3} 是地點
+the burning of {1} in {2}'s dragon fire	{1}在{2}的龍焰中燒成灰	{1}在{2}的龙焰中烧成灰	inner	FUN_140b73780 case 0xc hist_figure_died 短語：{2} 噴火者（人名或種族）
+the burning of {1} in {2}'s fire in {3} in {#4}	{4}年{1}在{3}被{2}的火焰燒死	{4}年{1}在{3}被{2}的火焰烧死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1} in {2}'s fire in {3} 加上結尾的日期
+the burning of {1} in {2}'s fire in {3} in the {@4} of {#5}	{5}年{4}{1}在{3}被{2}的火焰燒死	{5}年{4}{1}在{3}被{2}的火焰烧死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1} in {2}'s fire in {3} 加上結尾的日期
+the burning of {1} in {2}'s fire in {3} in a time before time	太古之時{1}在{3}被{2}的火焰燒死	太古之时{1}在{3}被{2}的火焰烧死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1} in {2}'s fire in {3} 加上結尾的日期
+the burning of {1} in {2}'s fire in {#3}	{3}年{1}被{2}的火焰燒死	{3}年{1}被{2}的火焰烧死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1} in {2}'s fire 加上結尾的日期
+the burning of {1} in {2}'s fire in the {@3} of {#4}	{4}年{3}{1}被{2}的火焰燒死	{4}年{3}{1}被{2}的火焰烧死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1} in {2}'s fire 加上結尾的日期
+the burning of {1} in {2}'s fire in a time before time	太古之時{1}被{2}的火焰燒死	太古之时{1}被{2}的火焰烧死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1} in {2}'s fire 加上結尾的日期
+the burning of {1} in {2}'s fire in {3}	{1}在{3}被{2}的火焰燒死	{1}在{3}被{2}的火焰烧死	inner	FUN_140b73780 case 0xd hist_figure_died 短語：{2} 放火者（人名或 a 種族）；結尾 in {3} 是地點
+the burning of {1} in {2}'s fire	{1}被{2}的火焰燒死	{1}被{2}的火焰烧死	inner	FUN_140b73780 case 0xd hist_figure_died 短語：{2} 放火者（人名或 a 種族）
+the burning of {1}'s {%2}  in {#3}	{3}年{1}的{2}被燒傷	{3}年{1}的{2}被烧伤	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1}'s {%2}  加上結尾的日期
+the burning of {1}'s {%2}  in the {@3} of {#4}	{4}年{3}{1}的{2}被燒傷	{4}年{3}{1}的{2}被烧伤	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1}'s {%2}  加上結尾的日期
+the burning of {1}'s {%2}  in a time before time	太古之時{1}的{2}被燒傷	太古之时{1}的{2}被烧伤	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1}'s {%2}  加上結尾的日期
+the burning of {1} alive by {2} in {3} in {#4}	{4}年{1}在{3}被{2}活活燒死	{4}年{1}在{3}被{2}活活烧死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1} alive by {2} in {3} 加上結尾的日期
+the burning of {1} alive by {2} in {3} in the {@4} of {#5}	{5}年{4}{1}在{3}被{2}活活燒死	{5}年{4}{1}在{3}被{2}活活烧死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1} alive by {2} in {3} 加上結尾的日期
+the burning of {1} alive by {2} in {3} in a time before time	太古之時{1}在{3}被{2}活活燒死	太古之时{1}在{3}被{2}活活烧死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1} alive by {2} in {3} 加上結尾的日期
+the burning of {1} alive by {2} in {#3}	{3}年{1}被{2}活活燒死	{3}年{1}被{2}活活烧死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1} alive by {2} 加上結尾的日期
+the burning of {1} alive by {2} in the {@3} of {#4}	{4}年{3}{1}被{2}活活燒死	{4}年{3}{1}被{2}活活烧死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1} alive by {2} 加上結尾的日期
+the burning of {1} alive by {2} in a time before time	太古之時{1}被{2}活活燒死	太古之时{1}被{2}活活烧死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1} alive by {2} 加上結尾的日期
+the burning of {1} alive by {2} in {3}	{1}在{3}被{2}活活燒死	{1}在{3}被{2}活活烧死	inner	FUN_140b73780 case 0x23 hist_figure_died 短語：{2} 兇手（人名或 a 種族）；結尾 in {3} 是地點
+the burning of {1} alive in {2} in {#3}	{3}年{1}在{2}被活活燒死	{3}年{1}在{2}被活活烧死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1} alive in {2} 加上結尾的日期
+the burning of {1} in {2} in {#3}	{3}年{1}在{2}被燒死	{3}年{1}在{2}被烧死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1} in {2} 加上結尾的日期
+the burning of {1} alive in {2} in the {@3} of {#4}	{4}年{3}{1}在{2}被活活燒死	{4}年{3}{1}在{2}被活活烧死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1} alive in {2} 加上結尾的日期
+the burning of {1} in {2} in the {@3} of {#4}	{4}年{3}{1}在{2}被燒死	{4}年{3}{1}在{2}被烧死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1} in {2} 加上結尾的日期
+the burning of {1} alive in {2} in a time before time	太古之時{1}在{2}被活活燒死	太古之时{1}在{2}被活活烧死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1} alive in {2} 加上結尾的日期
+the burning of {1} in {2} in a time before time	太古之時{1}在{2}被燒死	太古之时{1}在{2}被烧死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1} in {2} 加上結尾的日期
+the burning of {1} alive in {#2}	{2}年{1}被活活燒死	{2}年{1}被活活烧死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1} alive 加上結尾的日期
+the burning of {1} alive in the {@2} of {#3}	{3}年{2}{1}被活活燒死	{3}年{2}{1}被活活烧死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1} alive 加上結尾的日期
+the burning of {1} alive in a time before time	太古之時{1}被活活燒死	太古之时{1}被活活烧死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1} alive 加上結尾的日期
+the burning of {1} alive in {2}	{1}在{2}被活活燒死	{1}在{2}被活活烧死	inner	FUN_140b73780 case 0x23 hist_figure_died 短語：沒有兇手；結尾 in {2} 是地點
+the burning of {1}'s {%2} by {3} as a means of torture in {#4}	{4}年{1}的{2}遭{3}以酷刑燒傷	{4}年{1}的{2}遭{3}以酷刑烧伤	inner	自動產生（scripts/gen_events.py）：06.tsv the burning of {1}'s {%2} by {3} as a means of torture 加上結尾的日期
+the burning of {1}'s {%2} by {3} as a means of torture in the {@4} of {#5}	{5}年{4}{1}的{2}遭{3}以酷刑燒傷	{5}年{4}{1}的{2}遭{3}以酷刑烧伤	inner	自動產生（scripts/gen_events.py）：06.tsv the burning of {1}'s {%2} by {3} as a means of torture 加上結尾的日期
+the burning of {1}'s {%2} by {3} as a means of torture in a time before time	太古之時{1}的{2}遭{3}以酷刑燒傷	太古之时{1}的{2}遭{3}以酷刑烧伤	inner	自動產生（scripts/gen_events.py）：06.tsv the burning of {1}'s {%2} by {3} as a means of torture 加上結尾的日期
+the burning of {1}'s {%2} by {3} in {#4}	{4}年{1}的{2}被{3}燒傷	{4}年{1}的{2}被{3}烧伤	inner	自動產生（scripts/gen_events.py）：06.tsv the burning of {1}'s {%2} by {3} 加上結尾的日期
+the burning of {1}'s {%2} by {3} in the {@4} of {#5}	{5}年{4}{1}的{2}被{3}燒傷	{5}年{4}{1}的{2}被{3}烧伤	inner	自動產生（scripts/gen_events.py）：06.tsv the burning of {1}'s {%2} by {3} 加上結尾的日期
+the burning of {1}'s {%2} by {3} in a time before time	太古之時{1}的{2}被{3}燒傷	太古之时{1}的{2}被{3}烧伤	inner	自動產生（scripts/gen_events.py）：06.tsv the burning of {1}'s {%2} by {3} 加上結尾的日期
+the burning of {1}'s {%2} in {#3}	{3}年{1}的{2}被燒傷	{3}年{1}的{2}被烧伤	inner	自動產生（scripts/gen_events.py）：06.tsv the burning of {1}'s {%2} 加上結尾的日期
+the burning of {1} in {#2}	{2}年{1}被燒死	{2}年{1}被烧死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1} 加上結尾的日期
+the burning of {1}'s {%2} in the {@3} of {#4}	{4}年{3}{1}的{2}被燒傷	{4}年{3}{1}的{2}被烧伤	inner	自動產生（scripts/gen_events.py）：06.tsv the burning of {1}'s {%2} 加上結尾的日期
+the burning of {1} in the {@2} of {#3}	{3}年{2}{1}被燒死	{3}年{2}{1}被烧死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1} 加上結尾的日期
+the burning of {1}'s {%2} in a time before time	太古之時{1}的{2}被燒傷	太古之时{1}的{2}被烧伤	inner	自動產生（scripts/gen_events.py）：06.tsv the burning of {1}'s {%2} 加上結尾的日期
+the burning of {1} in a time before time	太古之時{1}被燒死	太古之时{1}被烧死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burning of {1} 加上結尾的日期
+the burning of {1} in {2}	{1}在{2}被燒死	{1}在{2}被烧死	inner	FUN_140b73780 case 0xd hist_figure_died 短語：沒有放火者；結尾 in {2} 是地點
+the burning of {1} alive by {2}	{1}被{2}活活燒死	{1}被{2}活活烧死	inner	FUN_140b73780 case 0x23 hist_figure_died 短語：{2} 兇手（人名或 a 種族）
+the burning of {1} alive	{1}被活活燒死	{1}被活活烧死	inner	FUN_140b73780 case 0x23 hist_figure_died 短語：沒有兇手
+the burning of {1}'s {%2} by {3} as a means of torture	{1}的{2}遭{3}以酷刑燒傷	{1}的{2}遭{3}以酷刑烧伤	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：燒；加害者＋酷刑
+the burning of {1}'s {%2} by {3}	{1}的{2}被{3}燒傷	{1}的{2}被{3}烧伤	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：燒；加害者
+the burning of {1}'s {%2}	{1}的{2}被燒傷	{1}的{2}被烧伤	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：燒
+the burning of {1}	{1}被燒死	{1}被烧死	inner	FUN_140b73780 case 0xd hist_figure_died 短語：沒有放火者
+the murder of {1} by {2} in {3} in {#4}	{4}年{1}在{3}被{2}謀殺	{4}年{1}在{3}被{2}谋杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the murder of {1} by {2} in {3} 加上結尾的日期
+the murder of {1} by {2} in {3} in the {@4} of {#5}	{5}年{4}{1}在{3}被{2}謀殺	{5}年{4}{1}在{3}被{2}谋杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the murder of {1} by {2} in {3} 加上結尾的日期
+the murder of {1} by {2} in {3} in a time before time	太古之時{1}在{3}被{2}謀殺	太古之时{1}在{3}被{2}谋杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the murder of {1} by {2} in {3} 加上結尾的日期
+the murder of {1} by {2} in {#3}	{3}年{1}被{2}謀殺	{3}年{1}被{2}谋杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the murder of {1} by {2} 加上結尾的日期
+the murder of {1} by {2} in the {@3} of {#4}	{4}年{3}{1}被{2}謀殺	{4}年{3}{1}被{2}谋杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the murder of {1} by {2} 加上結尾的日期
+the murder of {1} by {2} in a time before time	太古之時{1}被{2}謀殺	太古之时{1}被{2}谋杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the murder of {1} by {2} 加上結尾的日期
+the murder of {1} by {2} in {3}	{1}在{3}被{2}謀殺	{1}在{3}被{2}谋杀	inner	FUN_140b73780 case 0x14 hist_figure_died 短語：{2} 兇手（人名或 a 種族）；結尾 in {3} 是地點
+the murder of {1} by {2}	{1}被{2}謀殺	{1}被{2}谋杀	inner	FUN_140b73780 case 0x14 hist_figure_died 短語：{2} 兇手（人名或 a 種族）
+the murder of {1} in {2} in {#3}	{3}年{1}在{2}被謀殺	{3}年{1}在{2}被谋杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the murder of {1} in {2} 加上結尾的日期
+the murder of {1} in {2} in the {@3} of {#4}	{4}年{3}{1}在{2}被謀殺	{4}年{3}{1}在{2}被谋杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the murder of {1} in {2} 加上結尾的日期
+the murder of {1} in {2} in a time before time	太古之時{1}在{2}被謀殺	太古之时{1}在{2}被谋杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the murder of {1} in {2} 加上結尾的日期
+the murder of {1} in {#2}	{2}年{1}被謀殺	{2}年{1}被谋杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the murder of {1} 加上結尾的日期
+the murder of {1} in the {@2} of {#3}	{3}年{2}{1}被謀殺	{3}年{2}{1}被谋杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the murder of {1} 加上結尾的日期
+the murder of {1} in a time before time	太古之時{1}被謀殺	太古之时{1}被谋杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the murder of {1} 加上結尾的日期
+the murder of {1} in {2}	{1}在{2}被謀殺	{1}在{2}被谋杀	inner	FUN_140b73780 case 0x14 hist_figure_died 短語：沒有兇手；結尾 in {2} 是地點
+the murder of {1}	{1}被謀殺	{1}被谋杀	inner	FUN_140b73780 case 0x14 hist_figure_died 短語：沒有兇手
+the beheading of {1} by {2} in {3} in {#4}	{4}年{1}在{3}被{2}斬首	{4}年{1}在{3}被{2}斩首	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the beheading of {1} by {2} in {3} 加上結尾的日期
+the beheading of {1} by {2} in {3} in the {@4} of {#5}	{5}年{4}{1}在{3}被{2}斬首	{5}年{4}{1}在{3}被{2}斩首	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the beheading of {1} by {2} in {3} 加上結尾的日期
+the beheading of {1} by {2} in {3} in a time before time	太古之時{1}在{3}被{2}斬首	太古之时{1}在{3}被{2}斩首	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the beheading of {1} by {2} in {3} 加上結尾的日期
+the beheading of {1} by {2} in {#3}	{3}年{1}被{2}斬首	{3}年{1}被{2}斩首	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the beheading of {1} by {2} 加上結尾的日期
+the beheading of {1} by {2} in the {@3} of {#4}	{4}年{3}{1}被{2}斬首	{4}年{3}{1}被{2}斩首	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the beheading of {1} by {2} 加上結尾的日期
+the beheading of {1} by {2} in a time before time	太古之時{1}被{2}斬首	太古之时{1}被{2}斩首	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the beheading of {1} by {2} 加上結尾的日期
+the beheading of {1} by {2} in {3}	{1}在{3}被{2}斬首	{1}在{3}被{2}斩首	inner	FUN_140b73780 case 0x1f hist_figure_died 短語：{2} 兇手（人名或 a 種族）；結尾 in {3} 是地點
+the beheading of {1} by {2}	{1}被{2}斬首	{1}被{2}斩首	inner	FUN_140b73780 case 0x1f hist_figure_died 短語：{2} 兇手（人名或 a 種族）
+the beheading of {1} in {2} in {#3}	{3}年{1}在{2}被斬首	{3}年{1}在{2}被斩首	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the beheading of {1} in {2} 加上結尾的日期
+the beheading of {1} in {2} in the {@3} of {#4}	{4}年{3}{1}在{2}被斬首	{4}年{3}{1}在{2}被斩首	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the beheading of {1} in {2} 加上結尾的日期
+the beheading of {1} in {2} in a time before time	太古之時{1}在{2}被斬首	太古之时{1}在{2}被斩首	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the beheading of {1} in {2} 加上結尾的日期
+the beheading of {1} in {#2}	{2}年{1}被斬首	{2}年{1}被斩首	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the beheading of {1} 加上結尾的日期
+the beheading of {1} in the {@2} of {#3}	{3}年{2}{1}被斬首	{3}年{2}{1}被斩首	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the beheading of {1} 加上結尾的日期
+the beheading of {1} in a time before time	太古之時{1}被斬首	太古之时{1}被斩首	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the beheading of {1} 加上結尾的日期
+the beheading of {1} in {2}	{1}在{2}被斬首	{1}在{2}被斩首	inner	FUN_140b73780 case 0x1f hist_figure_died 短語：沒有兇手；結尾 in {2} 是地點
+the beheading of {1}	{1}被斬首	{1}被斩首	inner	FUN_140b73780 case 0x1f hist_figure_died 短語：沒有兇手
+the crucifixion of {1} by {2} in {3} in {#4}	{4}年{1}在{3}被{2}釘上十字架	{4}年{1}在{3}被{2}钉上十字架	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the crucifixion of {1} by {2} in {3} 加上結尾的日期
+the crucifixion of {1} by {2} in {3} in the {@4} of {#5}	{5}年{4}{1}在{3}被{2}釘上十字架	{5}年{4}{1}在{3}被{2}钉上十字架	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the crucifixion of {1} by {2} in {3} 加上結尾的日期
+the crucifixion of {1} by {2} in {3} in a time before time	太古之時{1}在{3}被{2}釘上十字架	太古之时{1}在{3}被{2}钉上十字架	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the crucifixion of {1} by {2} in {3} 加上結尾的日期
+the crucifixion of {1} by {2} in {#3}	{3}年{1}被{2}釘上十字架	{3}年{1}被{2}钉上十字架	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the crucifixion of {1} by {2} 加上結尾的日期
+the crucifixion of {1} by {2} in the {@3} of {#4}	{4}年{3}{1}被{2}釘上十字架	{4}年{3}{1}被{2}钉上十字架	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the crucifixion of {1} by {2} 加上結尾的日期
+the crucifixion of {1} by {2} in a time before time	太古之時{1}被{2}釘上十字架	太古之时{1}被{2}钉上十字架	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the crucifixion of {1} by {2} 加上結尾的日期
+the crucifixion of {1} by {2} in {3}	{1}在{3}被{2}釘上十字架	{1}在{3}被{2}钉上十字架	inner	FUN_140b73780 case 0x20 hist_figure_died 短語：{2} 兇手（人名或 a 種族）；結尾 in {3} 是地點
+the crucifixion of {1} by {2}	{1}被{2}釘上十字架	{1}被{2}钉上十字架	inner	FUN_140b73780 case 0x20 hist_figure_died 短語：{2} 兇手（人名或 a 種族）
+the crucifixion of {1} in {2} in {#3}	{3}年{1}在{2}被釘上十字架	{3}年{1}在{2}被钉上十字架	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the crucifixion of {1} in {2} 加上結尾的日期
+the crucifixion of {1} in {2} in the {@3} of {#4}	{4}年{3}{1}在{2}被釘上十字架	{4}年{3}{1}在{2}被钉上十字架	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the crucifixion of {1} in {2} 加上結尾的日期
+the crucifixion of {1} in {2} in a time before time	太古之時{1}在{2}被釘上十字架	太古之时{1}在{2}被钉上十字架	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the crucifixion of {1} in {2} 加上結尾的日期
+the crucifixion of {1} in {#2}	{2}年{1}被釘上十字架	{2}年{1}被钉上十字架	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the crucifixion of {1} 加上結尾的日期
+the crucifixion of {1} in the {@2} of {#3}	{3}年{2}{1}被釘上十字架	{3}年{2}{1}被钉上十字架	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the crucifixion of {1} 加上結尾的日期
+the crucifixion of {1} in a time before time	太古之時{1}被釘上十字架	太古之时{1}被钉上十字架	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the crucifixion of {1} 加上結尾的日期
+the crucifixion of {1} in {2}	{1}在{2}被釘上十字架	{1}在{2}被钉上十字架	inner	FUN_140b73780 case 0x20 hist_figure_died 短語：沒有兇手；結尾 in {2} 是地點
+the crucifixion of {1}	{1}被釘上十字架	{1}被钉上十字架	inner	FUN_140b73780 case 0x20 hist_figure_died 短語：沒有兇手
+the burial of {1} alive by {2} in {3} in {#4}	{4}年{1}在{3}被{2}活埋	{4}年{1}在{3}被{2}活埋	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burial of {1} alive by {2} in {3} 加上結尾的日期
+the burial of {1} alive by {2} in {3} in the {@4} of {#5}	{5}年{4}{1}在{3}被{2}活埋	{5}年{4}{1}在{3}被{2}活埋	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burial of {1} alive by {2} in {3} 加上結尾的日期
+the burial of {1} alive by {2} in {3} in a time before time	太古之時{1}在{3}被{2}活埋	太古之时{1}在{3}被{2}活埋	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burial of {1} alive by {2} in {3} 加上結尾的日期
+the burial of {1} alive by {2} in {#3}	{3}年{1}被{2}活埋	{3}年{1}被{2}活埋	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burial of {1} alive by {2} 加上結尾的日期
+the burial of {1} alive by {2} in the {@3} of {#4}	{4}年{3}{1}被{2}活埋	{4}年{3}{1}被{2}活埋	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burial of {1} alive by {2} 加上結尾的日期
+the burial of {1} alive by {2} in a time before time	太古之時{1}被{2}活埋	太古之时{1}被{2}活埋	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burial of {1} alive by {2} 加上結尾的日期
+the burial of {1} alive by {2} in {3}	{1}在{3}被{2}活埋	{1}在{3}被{2}活埋	inner	FUN_140b73780 case 0x21 hist_figure_died 短語：{2} 兇手（人名或 a 種族）；結尾 in {3} 是地點
+the burial of {1} alive by {2}	{1}被{2}活埋	{1}被{2}活埋	inner	FUN_140b73780 case 0x21 hist_figure_died 短語：{2} 兇手（人名或 a 種族）
+the burial of {1} alive in {2} in {#3}	{3}年{1}在{2}被活埋	{3}年{1}在{2}被活埋	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burial of {1} alive in {2} 加上結尾的日期
+the burial of {1} alive in {2} in the {@3} of {#4}	{4}年{3}{1}在{2}被活埋	{4}年{3}{1}在{2}被活埋	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burial of {1} alive in {2} 加上結尾的日期
+the burial of {1} alive in {2} in a time before time	太古之時{1}在{2}被活埋	太古之时{1}在{2}被活埋	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burial of {1} alive in {2} 加上結尾的日期
+the burial of {1} alive in {#2}	{2}年{1}被活埋	{2}年{1}被活埋	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burial of {1} alive 加上結尾的日期
+the burial of {1} alive in the {@2} of {#3}	{3}年{2}{1}被活埋	{3}年{2}{1}被活埋	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burial of {1} alive 加上結尾的日期
+the burial of {1} alive in a time before time	太古之時{1}被活埋	太古之时{1}被活埋	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the burial of {1} alive 加上結尾的日期
+the burial of {1} alive in {2}	{1}在{2}被活埋	{1}在{2}被活埋	inner	FUN_140b73780 case 0x21 hist_figure_died 短語：沒有兇手；結尾 in {2} 是地點
+the burial of {1} alive	{1}被活埋	{1}被活埋	inner	FUN_140b73780 case 0x21 hist_figure_died 短語：沒有兇手
+the feeding of {1} to beasts by {2} in {3} in {#4}	{4}年{1}在{3}被{2}拿去餵野獸	{4}年{1}在{3}被{2}拿去喂野兽	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the feeding of {1} to beasts by {2} in {3} 加上結尾的日期
+the feeding of {1} to beasts by {2} in {3} in the {@4} of {#5}	{5}年{4}{1}在{3}被{2}拿去餵野獸	{5}年{4}{1}在{3}被{2}拿去喂野兽	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the feeding of {1} to beasts by {2} in {3} 加上結尾的日期
+the feeding of {1} to beasts by {2} in {3} in a time before time	太古之時{1}在{3}被{2}拿去餵野獸	太古之时{1}在{3}被{2}拿去喂野兽	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the feeding of {1} to beasts by {2} in {3} 加上結尾的日期
+the feeding of {1} to beasts by {2} in {#3}	{3}年{1}被{2}拿去餵野獸	{3}年{1}被{2}拿去喂野兽	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the feeding of {1} to beasts by {2} 加上結尾的日期
+the feeding of {1} to beasts by {2} in the {@3} of {#4}	{4}年{3}{1}被{2}拿去餵野獸	{4}年{3}{1}被{2}拿去喂野兽	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the feeding of {1} to beasts by {2} 加上結尾的日期
+the feeding of {1} to beasts by {2} in a time before time	太古之時{1}被{2}拿去餵野獸	太古之时{1}被{2}拿去喂野兽	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the feeding of {1} to beasts by {2} 加上結尾的日期
+the feeding of {1} to beasts by {2} in {3}	{1}在{3}被{2}拿去餵野獸	{1}在{3}被{2}拿去喂野兽	inner	FUN_140b73780 case 0x24 hist_figure_died 短語：{2} 兇手（人名或 a 種族）；結尾 in {3} 是地點
+the feeding of {1} to beasts by {2}	{1}被{2}拿去餵野獸	{1}被{2}拿去喂野兽	inner	FUN_140b73780 case 0x24 hist_figure_died 短語：{2} 兇手（人名或 a 種族）
+the feeding of {1} to beasts in {2} in {#3}	{3}年{1}在{2}被拿去餵野獸	{3}年{1}在{2}被拿去喂野兽	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the feeding of {1} to beasts in {2} 加上結尾的日期
+the feeding of {1} to beasts in {2} in the {@3} of {#4}	{4}年{3}{1}在{2}被拿去餵野獸	{4}年{3}{1}在{2}被拿去喂野兽	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the feeding of {1} to beasts in {2} 加上結尾的日期
+the feeding of {1} to beasts in {2} in a time before time	太古之時{1}在{2}被拿去餵野獸	太古之时{1}在{2}被拿去喂野兽	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the feeding of {1} to beasts in {2} 加上結尾的日期
+the feeding of {1} to beasts in {#2}	{2}年{1}被拿去餵野獸	{2}年{1}被拿去喂野兽	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the feeding of {1} to beasts 加上結尾的日期
+the feeding of {1} to beasts in the {@2} of {#3}	{3}年{2}{1}被拿去餵野獸	{3}年{2}{1}被拿去喂野兽	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the feeding of {1} to beasts 加上結尾的日期
+the feeding of {1} to beasts in a time before time	太古之時{1}被拿去餵野獸	太古之时{1}被拿去喂野兽	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the feeding of {1} to beasts 加上結尾的日期
+the feeding of {1} to beasts in {2}	{1}在{2}被拿去餵野獸	{1}在{2}被拿去喂野兽	inner	FUN_140b73780 case 0x24 hist_figure_died 短語：沒有兇手；結尾 in {2} 是地點
+the feeding of {1} to beasts	{1}被拿去餵野獸	{1}被拿去喂野兽	inner	FUN_140b73780 case 0x24 hist_figure_died 短語：沒有兇手
+the hacking of {1} to pieces by {2} in {3} in {#4}	{4}年{1}在{3}被{2}砍成碎塊	{4}年{1}在{3}被{2}砍成碎块	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the hacking of {1} to pieces by {2} in {3} 加上結尾的日期
+the hacking of {1} to pieces by {2} in {3} in the {@4} of {#5}	{5}年{4}{1}在{3}被{2}砍成碎塊	{5}年{4}{1}在{3}被{2}砍成碎块	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the hacking of {1} to pieces by {2} in {3} 加上結尾的日期
+the hacking of {1} to pieces by {2} in {3} in a time before time	太古之時{1}在{3}被{2}砍成碎塊	太古之时{1}在{3}被{2}砍成碎块	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the hacking of {1} to pieces by {2} in {3} 加上結尾的日期
+the hacking of {1} to pieces by {2} in {#3}	{3}年{1}被{2}砍成碎塊	{3}年{1}被{2}砍成碎块	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the hacking of {1} to pieces by {2} 加上結尾的日期
+the hacking of {1} to pieces by {2} in the {@3} of {#4}	{4}年{3}{1}被{2}砍成碎塊	{4}年{3}{1}被{2}砍成碎块	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the hacking of {1} to pieces by {2} 加上結尾的日期
+the hacking of {1} to pieces by {2} in a time before time	太古之時{1}被{2}砍成碎塊	太古之时{1}被{2}砍成碎块	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the hacking of {1} to pieces by {2} 加上結尾的日期
+the hacking of {1} to pieces by {2} in {3}	{1}在{3}被{2}砍成碎塊	{1}在{3}被{2}砍成碎块	inner	FUN_140b73780 case 0x25 hist_figure_died 短語：{2} 兇手（人名或 a 種族）；結尾 in {3} 是地點
+the hacking of {1} to pieces by {2}	{1}被{2}砍成碎塊	{1}被{2}砍成碎块	inner	FUN_140b73780 case 0x25 hist_figure_died 短語：{2} 兇手（人名或 a 種族）
+the hacking of {1} to pieces in {2} in {#3}	{3}年{1}在{2}被砍成碎塊	{3}年{1}在{2}被砍成碎块	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the hacking of {1} to pieces in {2} 加上結尾的日期
+the hacking of {1} to pieces in {2} in the {@3} of {#4}	{4}年{3}{1}在{2}被砍成碎塊	{4}年{3}{1}在{2}被砍成碎块	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the hacking of {1} to pieces in {2} 加上結尾的日期
+the hacking of {1} to pieces in {2} in a time before time	太古之時{1}在{2}被砍成碎塊	太古之时{1}在{2}被砍成碎块	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the hacking of {1} to pieces in {2} 加上結尾的日期
+the hacking of {1} to pieces in {#2}	{2}年{1}被砍成碎塊	{2}年{1}被砍成碎块	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the hacking of {1} to pieces 加上結尾的日期
+the hacking of {1} to pieces in the {@2} of {#3}	{3}年{2}{1}被砍成碎塊	{3}年{2}{1}被砍成碎块	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the hacking of {1} to pieces 加上結尾的日期
+the hacking of {1} to pieces in a time before time	太古之時{1}被砍成碎塊	太古之时{1}被砍成碎块	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the hacking of {1} to pieces 加上結尾的日期
+the hacking of {1} to pieces in {2}	{1}在{2}被砍成碎塊	{1}在{2}被砍成碎块	inner	FUN_140b73780 case 0x25 hist_figure_died 短語：沒有兇手；結尾 in {2} 是地點
+the hacking of {1} to pieces	{1}被砍成碎塊	{1}被砍成碎块	inner	FUN_140b73780 case 0x25 hist_figure_died 短語：沒有兇手
+the leaving of {1} out in the air by {2} in {3} in {#4}	{4}年{1}在{3}被{2}留在戶外處決	{4}年{1}在{3}被{2}留在户外处决	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the leaving of {1} out in the air by {2} in {3} 加上結尾的日期
+the leaving of {1} out in the air by {2} in {3} in the {@4} of {#5}	{5}年{4}{1}在{3}被{2}留在戶外處決	{5}年{4}{1}在{3}被{2}留在户外处决	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the leaving of {1} out in the air by {2} in {3} 加上結尾的日期
+the leaving of {1} out in the air by {2} in {3} in a time before time	太古之時{1}在{3}被{2}留在戶外處決	太古之时{1}在{3}被{2}留在户外处决	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the leaving of {1} out in the air by {2} in {3} 加上結尾的日期
+the leaving of {1} out in the air by {2} in {#3}	{3}年{1}被{2}留在戶外處決	{3}年{1}被{2}留在户外处决	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the leaving of {1} out in the air by {2} 加上結尾的日期
+the leaving of {1} out in the air by {2} in the {@3} of {#4}	{4}年{3}{1}被{2}留在戶外處決	{4}年{3}{1}被{2}留在户外处决	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the leaving of {1} out in the air by {2} 加上結尾的日期
+the leaving of {1} out in the air by {2} in a time before time	太古之時{1}被{2}留在戶外處決	太古之时{1}被{2}留在户外处决	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the leaving of {1} out in the air by {2} 加上結尾的日期
+the leaving of {1} out in the air by {2} in {3}	{1}在{3}被{2}留在戶外處決	{1}在{3}被{2}留在户外处决	inner	FUN_140b73780 case 0x26 hist_figure_died 短語：{2} 兇手（人名或 a 種族）；結尾 in {3} 是地點
+the leaving of {1} out in the air by {2}	{1}被{2}留在戶外處決	{1}被{2}留在户外处决	inner	FUN_140b73780 case 0x26 hist_figure_died 短語：{2} 兇手（人名或 a 種族）
+the leaving of {1} out in the air in {2} in {#3}	{3}年{1}在{2}被留在戶外處決	{3}年{1}在{2}被留在户外处决	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the leaving of {1} out in the air in {2} 加上結尾的日期
+the leaving of {1} out in the air in {2} in the {@3} of {#4}	{4}年{3}{1}在{2}被留在戶外處決	{4}年{3}{1}在{2}被留在户外处决	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the leaving of {1} out in the air in {2} 加上結尾的日期
+the leaving of {1} out in the air in {2} in a time before time	太古之時{1}在{2}被留在戶外處決	太古之时{1}在{2}被留在户外处决	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the leaving of {1} out in the air in {2} 加上結尾的日期
+the leaving of {1} out in the air in {#2}	{2}年{1}被留在戶外處決	{2}年{1}被留在户外处决	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the leaving of {1} out in the air 加上結尾的日期
+the leaving of {1} out in the air in the {@2} of {#3}	{3}年{2}{1}被留在戶外處決	{3}年{2}{1}被留在户外处决	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the leaving of {1} out in the air 加上結尾的日期
+the leaving of {1} out in the air in a time before time	太古之時{1}被留在戶外處決	太古之时{1}被留在户外处决	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the leaving of {1} out in the air 加上結尾的日期
+the leaving of {1} out in the air in {2}	{1}在{2}被留在戶外處決	{1}在{2}被留在户外处决	inner	FUN_140b73780 case 0x26 hist_figure_died 短語：沒有兇手；結尾 in {2} 是地點
+the leaving of {1} out in the air	{1}被留在戶外處決	{1}被留在户外处决	inner	FUN_140b73780 case 0x26 hist_figure_died 短語：沒有兇手
+the execution of {1} by {2} in {3} in {#4}	{4}年{1}在{3}被{2}處決	{4}年{1}在{3}被{2}处决	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the execution of {1} by {2} in {3} 加上結尾的日期
+the execution of {1} by {2} in {3} in the {@4} of {#5}	{5}年{4}{1}在{3}被{2}處決	{5}年{4}{1}在{3}被{2}处决	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the execution of {1} by {2} in {3} 加上結尾的日期
+the execution of {1} by {2} in {3} in a time before time	太古之時{1}在{3}被{2}處決	太古之时{1}在{3}被{2}处决	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the execution of {1} by {2} in {3} 加上結尾的日期
+the execution of {1} by {2} in {#3}	{3}年{1}被{2}處決	{3}年{1}被{2}处决	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the execution of {1} by {2} 加上結尾的日期
+the execution of {1} by {2} in the {@3} of {#4}	{4}年{3}{1}被{2}處決	{4}年{3}{1}被{2}处决	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the execution of {1} by {2} 加上結尾的日期
+the execution of {1} by {2} in a time before time	太古之時{1}被{2}處決	太古之时{1}被{2}处决	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the execution of {1} by {2} 加上結尾的日期
+the execution of {1} by {2} in {3}	{1}在{3}被{2}處決	{1}在{3}被{2}处决	inner	FUN_140b73780 case 0x36 hist_figure_died 短語：{2} 兇手（人名或 a 種族）；結尾 in {3} 是地點
+the execution of {1} by {2}	{1}被{2}處決	{1}被{2}处决	inner	FUN_140b73780 case 0x36 hist_figure_died 短語：{2} 兇手（人名或 a 種族）
+the execution of {1} in {2} in {#3}	{3}年{1}在{2}被處決	{3}年{1}在{2}被处决	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the execution of {1} in {2} 加上結尾的日期
+the execution of {1} in {2} in the {@3} of {#4}	{4}年{3}{1}在{2}被處決	{4}年{3}{1}在{2}被处决	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the execution of {1} in {2} 加上結尾的日期
+the execution of {1} in {2} in a time before time	太古之時{1}在{2}被處決	太古之时{1}在{2}被处决	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the execution of {1} in {2} 加上結尾的日期
+the execution of {1} in {#2}	{2}年{1}被處決	{2}年{1}被处决	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the execution of {1} 加上結尾的日期
+the execution of {1} in the {@2} of {#3}	{3}年{2}{1}被處決	{3}年{2}{1}被处决	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the execution of {1} 加上結尾的日期
+the execution of {1} in a time before time	太古之時{1}被處決	太古之时{1}被处决	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the execution of {1} 加上結尾的日期
+the execution of {1} in {2}	{1}在{2}被處決	{1}在{2}被处决	inner	FUN_140b73780 case 0x36 hist_figure_died 短語：沒有兇手；結尾 in {2} 是地點
+the execution of {1}	{1}被處決	{1}被处决	inner	FUN_140b73780 case 0x36 hist_figure_died 短語：沒有兇手
+the scaring of {1} to death  by {2} in {3} in {#4}	{4}年{1}在{3}被{2}嚇死	{4}年{1}在{3}被{2}吓死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the scaring of {1} to death  by {2} in {3} 加上結尾的日期
+the scaring of {1} to death  by {2} in {3} in the {@4} of {#5}	{5}年{4}{1}在{3}被{2}嚇死	{5}年{4}{1}在{3}被{2}吓死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the scaring of {1} to death  by {2} in {3} 加上結尾的日期
+the scaring of {1} to death  by {2} in {3} in a time before time	太古之時{1}在{3}被{2}嚇死	太古之时{1}在{3}被{2}吓死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the scaring of {1} to death  by {2} in {3} 加上結尾的日期
+the scaring of {1} to death  by {2} in {#3}	{3}年{1}被{2}嚇死	{3}年{1}被{2}吓死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the scaring of {1} to death  by {2} 加上結尾的日期
+the scaring of {1} to death  by {2} in the {@3} of {#4}	{4}年{3}{1}被{2}嚇死	{4}年{3}{1}被{2}吓死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the scaring of {1} to death  by {2} 加上結尾的日期
+the scaring of {1} to death  by {2} in a time before time	太古之時{1}被{2}嚇死	太古之时{1}被{2}吓死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the scaring of {1} to death  by {2} 加上結尾的日期
+the scaring of {1} to death  by {2} in {3}	{1}在{3}被{2}嚇死	{1}在{3}被{2}吓死	inner	FUN_140b73780 case 0x2d hist_figure_died 短語：to death 後遊戲多寫一個空白；{2} 兇手（人名或 a 種族）；結尾 in {3} 是地點
+the scaring of {1} to death  by {2}	{1}被{2}嚇死	{1}被{2}吓死	inner	FUN_140b73780 case 0x2d hist_figure_died 短語：to death 後遊戲多寫一個空白；{2} 兇手（人名或 a 種族）
+the scaring of {1} to death  in {2} in {#3}	{3}年{1}在{2}被嚇死	{3}年{1}在{2}被吓死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the scaring of {1} to death  in {2} 加上結尾的日期
+the scaring of {1} to death  in {2} in the {@3} of {#4}	{4}年{3}{1}在{2}被嚇死	{4}年{3}{1}在{2}被吓死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the scaring of {1} to death  in {2} 加上結尾的日期
+the scaring of {1} to death  in {2} in a time before time	太古之時{1}在{2}被嚇死	太古之时{1}在{2}被吓死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the scaring of {1} to death  in {2} 加上結尾的日期
+the scaring of {1} to death  in {#2}	{2}年{1}被嚇死	{2}年{1}被吓死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the scaring of {1} to death  加上結尾的日期
+the scaring of {1} to death  in the {@2} of {#3}	{3}年{2}{1}被嚇死	{3}年{2}{1}被吓死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the scaring of {1} to death  加上結尾的日期
+the scaring of {1} to death  in a time before time	太古之時{1}被嚇死	太古之时{1}被吓死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the scaring of {1} to death  加上結尾的日期
+the scaring of {1} to death  in {2}	{1}在{2}被嚇死	{1}在{2}被吓死	inner	FUN_140b73780 case 0x2d hist_figure_died 短語：to death 後遊戲多寫一個空白；沒有兇手；結尾 in {2} 是地點
+the scaring of {1} to death 	{1}被嚇死	{1}被吓死	inner	FUN_140b73780 case 0x2d hist_figure_died 短語：to death 後遊戲多寫一個空白；沒有兇手
+the draining of {1}'s blood by {2} in {3} in {#4}	{4}年{1}在{3}被{2}吸乾了血	{4}年{1}在{3}被{2}吸干了血	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the draining of {1}'s blood by {2} in {3} 加上結尾的日期
+the draining of {1}'s blood by {2} in {3} in the {@4} of {#5}	{5}年{4}{1}在{3}被{2}吸乾了血	{5}年{4}{1}在{3}被{2}吸干了血	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the draining of {1}'s blood by {2} in {3} 加上結尾的日期
+the draining of {1}'s blood by {2} in {3} in a time before time	太古之時{1}在{3}被{2}吸乾了血	太古之时{1}在{3}被{2}吸干了血	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the draining of {1}'s blood by {2} in {3} 加上結尾的日期
+the draining of {1}'s blood by {2} in {#3}	{3}年{1}被{2}吸乾了血	{3}年{1}被{2}吸干了血	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the draining of {1}'s blood by {2} 加上結尾的日期
+the draining of {1}'s blood by {2} in the {@3} of {#4}	{4}年{3}{1}被{2}吸乾了血	{4}年{3}{1}被{2}吸干了血	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the draining of {1}'s blood by {2} 加上結尾的日期
+the draining of {1}'s blood by {2} in a time before time	太古之時{1}被{2}吸乾了血	太古之时{1}被{2}吸干了血	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the draining of {1}'s blood by {2} 加上結尾的日期
+the draining of {1}'s blood by {2} in {3}	{1}在{3}被{2}吸乾了血	{1}在{3}被{2}吸干了血	inner	FUN_140b73780 case 0x30 hist_figure_died 短語：死者寫成所有格（X's blood）；{2} 兇手（人名或 a 種族）；結尾 in {3} 是地點
+the draining of {1}'s blood by {2}	{1}被{2}吸乾了血	{1}被{2}吸干了血	inner	FUN_140b73780 case 0x30 hist_figure_died 短語：死者寫成所有格（X's blood）；{2} 兇手（人名或 a 種族）
+the draining of {1}'s blood in {2} in {#3}	{3}年{1}在{2}被吸乾了血	{3}年{1}在{2}被吸干了血	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the draining of {1}'s blood in {2} 加上結尾的日期
+the draining of {1}'s blood in {2} in the {@3} of {#4}	{4}年{3}{1}在{2}被吸乾了血	{4}年{3}{1}在{2}被吸干了血	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the draining of {1}'s blood in {2} 加上結尾的日期
+the draining of {1}'s blood in {2} in a time before time	太古之時{1}在{2}被吸乾了血	太古之时{1}在{2}被吸干了血	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the draining of {1}'s blood in {2} 加上結尾的日期
+the draining of {1}'s blood in {#2}	{2}年{1}被吸乾了血	{2}年{1}被吸干了血	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the draining of {1}'s blood 加上結尾的日期
+the draining of {1}'s blood in the {@2} of {#3}	{3}年{2}{1}被吸乾了血	{3}年{2}{1}被吸干了血	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the draining of {1}'s blood 加上結尾的日期
+the draining of {1}'s blood in a time before time	太古之時{1}被吸乾了血	太古之时{1}被吸干了血	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the draining of {1}'s blood 加上結尾的日期
+the draining of {1}'s blood in {2}	{1}在{2}被吸乾了血	{1}在{2}被吸干了血	inner	FUN_140b73780 case 0x30 hist_figure_died 短語：死者寫成所有格（X's blood）；沒有兇手；結尾 in {2} 是地點
+the draining of {1}'s blood	{1}被吸乾了血	{1}被吸干了血	inner	FUN_140b73780 case 0x30 hist_figure_died 短語：死者寫成所有格（X's blood）；沒有兇手
+the shooting of {1} by {2} with {3} from {4} in {5} in {#6}	{6}年{1}在{5}被{2}用{4}射出的{3}射殺	{6}年{1}在{5}被{2}用{4}射出的{3}射杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the shooting of {1} by {2} with {3} from {4} in {5} 加上結尾的日期
+the shooting of {1} by {2} with {3} from {4} in {5} in the {@6} of {#7}	{7}年{6}{1}在{5}被{2}用{4}射出的{3}射殺	{7}年{6}{1}在{5}被{2}用{4}射出的{3}射杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the shooting of {1} by {2} with {3} from {4} in {5} 加上結尾的日期
+the shooting of {1} by {2} with {3} from {4} in {5} in a time before time	太古之時{1}在{5}被{2}用{4}射出的{3}射殺	太古之时{1}在{5}被{2}用{4}射出的{3}射杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the shooting of {1} by {2} with {3} from {4} in {5} 加上結尾的日期
+the shooting of {1} by {2} with {3} from {4} in {#5}	{5}年{1}被{2}用{4}射出的{3}射殺	{5}年{1}被{2}用{4}射出的{3}射杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the shooting of {1} by {2} with {3} from {4} 加上結尾的日期
+the shooting of {1} by {2} with {3} from {4} in the {@5} of {#6}	{6}年{5}{1}被{2}用{4}射出的{3}射殺	{6}年{5}{1}被{2}用{4}射出的{3}射杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the shooting of {1} by {2} with {3} from {4} 加上結尾的日期
+the shooting of {1} by {2} with {3} from {4} in a time before time	太古之時{1}被{2}用{4}射出的{3}射殺	太古之时{1}被{2}用{4}射出的{3}射杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the shooting of {1} by {2} with {3} from {4} 加上結尾的日期
+the shooting of {1} by {2} with {3} from {4} in {5}	{1}在{5}被{2}用{4}射出的{3}射殺	{1}在{5}被{2}用{4}射出的{3}射杀	inner	FUN_140b73780 case 3 hist_figure_died 短語：{1} 死者、{2} 兇手（人名或 a 種族）、{3} 武器、{4} 射擊武器；結尾 in {5} 是地點
+the shooting of {1} by {2} with {3} from {4}	{1}被{2}用{4}射出的{3}射殺	{1}被{2}用{4}射出的{3}射杀	inner	FUN_140b73780 case 3 hist_figure_died 短語：{1} 死者、{2} 兇手（人名或 a 種族）、{3} 武器、{4} 射擊武器
+the shooting of {1} by {2} with {3} in {4} in {#5}	{5}年{1}在{4}被{2}用{3}射殺	{5}年{1}在{4}被{2}用{3}射杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the shooting of {1} by {2} with {3} in {4} 加上結尾的日期
+the shooting of {1} by {2} with {3} in {4} in the {@5} of {#6}	{6}年{5}{1}在{4}被{2}用{3}射殺	{6}年{5}{1}在{4}被{2}用{3}射杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the shooting of {1} by {2} with {3} in {4} 加上結尾的日期
+the shooting of {1} by {2} with {3} in {4} in a time before time	太古之時{1}在{4}被{2}用{3}射殺	太古之时{1}在{4}被{2}用{3}射杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the shooting of {1} by {2} with {3} in {4} 加上結尾的日期
+the shooting of {1} by {2} with {3} in {#4}	{4}年{1}被{2}用{3}射殺	{4}年{1}被{2}用{3}射杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the shooting of {1} by {2} with {3} 加上結尾的日期
+the shooting of {1} by {2} with {3} in the {@4} of {#5}	{5}年{4}{1}被{2}用{3}射殺	{5}年{4}{1}被{2}用{3}射杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the shooting of {1} by {2} with {3} 加上結尾的日期
+the shooting of {1} by {2} with {3} in a time before time	太古之時{1}被{2}用{3}射殺	太古之时{1}被{2}用{3}射杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the shooting of {1} by {2} with {3} 加上結尾的日期
+the shooting of {1} by {2} with {3} in {4}	{1}在{4}被{2}用{3}射殺	{1}在{4}被{2}用{3}射杀	inner	FUN_140b73780 case 3 hist_figure_died 短語：{1} 死者、{2} 兇手、{3} 武器（或只有射擊武器）；結尾 in {4} 是地點
+the shooting of {1} by {2} with {3}	{1}被{2}用{3}射殺	{1}被{2}用{3}射杀	inner	FUN_140b73780 case 3 hist_figure_died 短語：{1} 死者、{2} 兇手、{3} 武器（或只有射擊武器）
+the shooting of {1} by {2} in {3} in {#4}	{4}年{1}在{3}被{2}射殺	{4}年{1}在{3}被{2}射杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the shooting of {1} by {2} in {3} 加上結尾的日期
+the shooting of {1} by {2} in {3} in the {@4} of {#5}	{5}年{4}{1}在{3}被{2}射殺	{5}年{4}{1}在{3}被{2}射杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the shooting of {1} by {2} in {3} 加上結尾的日期
+the shooting of {1} by {2} in {3} in a time before time	太古之時{1}在{3}被{2}射殺	太古之时{1}在{3}被{2}射杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the shooting of {1} by {2} in {3} 加上結尾的日期
+the shooting of {1} by {2} in {#3}	{3}年{1}被{2}射殺	{3}年{1}被{2}射杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the shooting of {1} by {2} 加上結尾的日期
+the shooting of {1} by {2} in the {@3} of {#4}	{4}年{3}{1}被{2}射殺	{4}年{3}{1}被{2}射杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the shooting of {1} by {2} 加上結尾的日期
+the shooting of {1} by {2} in a time before time	太古之時{1}被{2}射殺	太古之时{1}被{2}射杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the shooting of {1} by {2} 加上結尾的日期
+the shooting of {1} by {2} in {3}	{1}在{3}被{2}射殺	{1}在{3}被{2}射杀	inner	FUN_140b73780 case 3 hist_figure_died 短語：{1} 死者、{2} 兇手；結尾 in {3} 是地點
+the shooting of {1} by {2}	{1}被{2}射殺	{1}被{2}射杀	inner	FUN_140b73780 case 3 hist_figure_died 短語：{1} 死者、{2} 兇手
+the shooting of {1} with {2} from {3} in {4} in {#5}	{5}年{1}在{4}被{3}射出的{2}射殺	{5}年{1}在{4}被{3}射出的{2}射杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the shooting of {1} with {2} from {3} in {4} 加上結尾的日期
+the shooting of {1} with {2} from {3} in {4} in the {@5} of {#6}	{6}年{5}{1}在{4}被{3}射出的{2}射殺	{6}年{5}{1}在{4}被{3}射出的{2}射杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the shooting of {1} with {2} from {3} in {4} 加上結尾的日期
+the shooting of {1} with {2} from {3} in {4} in a time before time	太古之時{1}在{4}被{3}射出的{2}射殺	太古之时{1}在{4}被{3}射出的{2}射杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the shooting of {1} with {2} from {3} in {4} 加上結尾的日期
+the shooting of {1} with {2} from {3} in {#4}	{4}年{1}被{3}射出的{2}射殺	{4}年{1}被{3}射出的{2}射杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the shooting of {1} with {2} from {3} 加上結尾的日期
+the shooting of {1} with {2} from {3} in the {@4} of {#5}	{5}年{4}{1}被{3}射出的{2}射殺	{5}年{4}{1}被{3}射出的{2}射杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the shooting of {1} with {2} from {3} 加上結尾的日期
+the shooting of {1} with {2} from {3} in a time before time	太古之時{1}被{3}射出的{2}射殺	太古之时{1}被{3}射出的{2}射杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the shooting of {1} with {2} from {3} 加上結尾的日期
+the shooting of {1} with {2} from {3} in {4}	{1}在{4}被{3}射出的{2}射殺	{1}在{4}被{3}射出的{2}射杀	inner	FUN_140b73780 case 3 hist_figure_died 短語：{1} 死者；沒有兇手：{2} 武器、{3} 射擊武器；結尾 in {4} 是地點
+the shooting of {1} with {2} from {3}	{1}被{3}射出的{2}射殺	{1}被{3}射出的{2}射杀	inner	FUN_140b73780 case 3 hist_figure_died 短語：{1} 死者；沒有兇手：{2} 武器、{3} 射擊武器
+the shooting of {1} with {2} in {3} in {#4}	{4}年{1}在{3}被{2}射殺	{4}年{1}在{3}被{2}射杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the shooting of {1} with {2} in {3} 加上結尾的日期
+the shooting of {1} with {2} in {3} in the {@4} of {#5}	{5}年{4}{1}在{3}被{2}射殺	{5}年{4}{1}在{3}被{2}射杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the shooting of {1} with {2} in {3} 加上結尾的日期
+the shooting of {1} with {2} in {3} in a time before time	太古之時{1}在{3}被{2}射殺	太古之时{1}在{3}被{2}射杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the shooting of {1} with {2} in {3} 加上結尾的日期
+the shooting of {1} with {2} in {#3}	{3}年{1}被{2}射殺	{3}年{1}被{2}射杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the shooting of {1} with {2} 加上結尾的日期
+the shooting of {1} with {2} in the {@3} of {#4}	{4}年{3}{1}被{2}射殺	{4}年{3}{1}被{2}射杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the shooting of {1} with {2} 加上結尾的日期
+the shooting of {1} with {2} in a time before time	太古之時{1}被{2}射殺	太古之时{1}被{2}射杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the shooting of {1} with {2} 加上結尾的日期
+the shooting of {1} with {2} in {3}	{1}在{3}被{2}射殺	{1}在{3}被{2}射杀	inner	FUN_140b73780 case 3 hist_figure_died 短語：{1} 死者；沒有兇手：{2} 武器（或只有射擊武器）；結尾 in {3} 是地點
+the shooting of {1} with {2}	{1}被{2}射殺	{1}被{2}射杀	inner	FUN_140b73780 case 3 hist_figure_died 短語：{1} 死者；沒有兇手：{2} 武器（或只有射擊武器）
+the shooting of {1} in {2} in {#3}	{3}年{1}在{2}被射殺	{3}年{1}在{2}被射杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the shooting of {1} in {2} 加上結尾的日期
+the shooting of {1} in {2} in the {@3} of {#4}	{4}年{3}{1}在{2}被射殺	{4}年{3}{1}在{2}被射杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the shooting of {1} in {2} 加上結尾的日期
+the shooting of {1} in {2} in a time before time	太古之時{1}在{2}被射殺	太古之时{1}在{2}被射杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the shooting of {1} in {2} 加上結尾的日期
+the shooting of {1} in {#2}	{2}年{1}被射殺	{2}年{1}被射杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the shooting of {1} 加上結尾的日期
+the shooting of {1} in the {@2} of {#3}	{3}年{2}{1}被射殺	{3}年{2}{1}被射杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the shooting of {1} 加上結尾的日期
+the shooting of {1} in a time before time	太古之時{1}被射殺	太古之时{1}被射杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the shooting of {1} 加上結尾的日期
+the shooting of {1} in {2}	{1}在{2}被射殺	{1}在{2}被射杀	inner	FUN_140b73780 case 3 hist_figure_died 短語：{1} 死者；沒有兇手與武器；結尾 in {2} 是地點
+the shooting of {1}	{1}被射殺	{1}被射杀	inner	FUN_140b73780 case 3 hist_figure_died 短語：{1} 死者；沒有兇手與武器
+the mortal wounding of {1} by {2} with {3} from {4} in {5} in {#6}	{6}年{1}在{5}被{2}用{4}射出的{3}重創致死	{6}年{1}在{5}被{2}用{4}射出的{3}重创致死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the mortal wounding of {1} by {2} with {3} from {4} in {5} 加上結尾的日期
+the mortal wounding of {1} by {2} with {3} from {4} in {5} in the {@6} of {#7}	{7}年{6}{1}在{5}被{2}用{4}射出的{3}重創致死	{7}年{6}{1}在{5}被{2}用{4}射出的{3}重创致死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the mortal wounding of {1} by {2} with {3} from {4} in {5} 加上結尾的日期
+the mortal wounding of {1} by {2} with {3} from {4} in {5} in a time before time	太古之時{1}在{5}被{2}用{4}射出的{3}重創致死	太古之时{1}在{5}被{2}用{4}射出的{3}重创致死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the mortal wounding of {1} by {2} with {3} from {4} in {5} 加上結尾的日期
+the mortal wounding of {1} by {2} with {3} from {4} in {#5}	{5}年{1}被{2}用{4}射出的{3}重創致死	{5}年{1}被{2}用{4}射出的{3}重创致死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the mortal wounding of {1} by {2} with {3} from {4} 加上結尾的日期
+the mortal wounding of {1} by {2} with {3} from {4} in the {@5} of {#6}	{6}年{5}{1}被{2}用{4}射出的{3}重創致死	{6}年{5}{1}被{2}用{4}射出的{3}重创致死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the mortal wounding of {1} by {2} with {3} from {4} 加上結尾的日期
+the mortal wounding of {1} by {2} with {3} from {4} in a time before time	太古之時{1}被{2}用{4}射出的{3}重創致死	太古之时{1}被{2}用{4}射出的{3}重创致死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the mortal wounding of {1} by {2} with {3} from {4} 加上結尾的日期
+the mortal wounding of {1} by {2} with {3} from {4} in {5}	{1}在{5}被{2}用{4}射出的{3}重創致死	{1}在{5}被{2}用{4}射出的{3}重创致死	inner	FUN_140b73780 case 4/6 hist_figure_died 短語：{1} 死者、{2} 兇手（人名或 a 種族）、{3} 武器、{4} 射擊武器；結尾 in {5} 是地點
+the mortal wounding of {1} by {2} with {3} from {4}	{1}被{2}用{4}射出的{3}重創致死	{1}被{2}用{4}射出的{3}重创致死	inner	FUN_140b73780 case 4/6 hist_figure_died 短語：{1} 死者、{2} 兇手（人名或 a 種族）、{3} 武器、{4} 射擊武器
+the mortal wounding of {1} by {2} with {3} in {4} in {#5}	{5}年{1}在{4}被{2}用{3}重創致死	{5}年{1}在{4}被{2}用{3}重创致死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the mortal wounding of {1} by {2} with {3} in {4} 加上結尾的日期
+the mortal wounding of {1} by {2} with {3} in {4} in the {@5} of {#6}	{6}年{5}{1}在{4}被{2}用{3}重創致死	{6}年{5}{1}在{4}被{2}用{3}重创致死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the mortal wounding of {1} by {2} with {3} in {4} 加上結尾的日期
+the mortal wounding of {1} by {2} with {3} in {4} in a time before time	太古之時{1}在{4}被{2}用{3}重創致死	太古之时{1}在{4}被{2}用{3}重创致死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the mortal wounding of {1} by {2} with {3} in {4} 加上結尾的日期
+the mortal wounding of {1} by {2} with {3} in {#4}	{4}年{1}被{2}用{3}重創致死	{4}年{1}被{2}用{3}重创致死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the mortal wounding of {1} by {2} with {3} 加上結尾的日期
+the mortal wounding of {1} by {2} with {3} in the {@4} of {#5}	{5}年{4}{1}被{2}用{3}重創致死	{5}年{4}{1}被{2}用{3}重创致死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the mortal wounding of {1} by {2} with {3} 加上結尾的日期
+the mortal wounding of {1} by {2} with {3} in a time before time	太古之時{1}被{2}用{3}重創致死	太古之时{1}被{2}用{3}重创致死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the mortal wounding of {1} by {2} with {3} 加上結尾的日期
+the mortal wounding of {1} by {2} with {3} in {4}	{1}在{4}被{2}用{3}重創致死	{1}在{4}被{2}用{3}重创致死	inner	FUN_140b73780 case 4/6 hist_figure_died 短語：{1} 死者、{2} 兇手、{3} 武器（或只有射擊武器）；結尾 in {4} 是地點
+the mortal wounding of {1} by {2} with {3}	{1}被{2}用{3}重創致死	{1}被{2}用{3}重创致死	inner	FUN_140b73780 case 4/6 hist_figure_died 短語：{1} 死者、{2} 兇手、{3} 武器（或只有射擊武器）
+the mortal wounding of {1} by {2} in {3} in {#4}	{4}年{1}在{3}被{2}重創致死	{4}年{1}在{3}被{2}重创致死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the mortal wounding of {1} by {2} in {3} 加上結尾的日期
+the mortal wounding of {1} by {2} in {3} in the {@4} of {#5}	{5}年{4}{1}在{3}被{2}重創致死	{5}年{4}{1}在{3}被{2}重创致死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the mortal wounding of {1} by {2} in {3} 加上結尾的日期
+the mortal wounding of {1} by {2} in {3} in a time before time	太古之時{1}在{3}被{2}重創致死	太古之时{1}在{3}被{2}重创致死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the mortal wounding of {1} by {2} in {3} 加上結尾的日期
+the mortal wounding of {1} by {2} in {#3}	{3}年{1}被{2}重創致死	{3}年{1}被{2}重创致死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the mortal wounding of {1} by {2} 加上結尾的日期
+the mortal wounding of {1} by {2} in the {@3} of {#4}	{4}年{3}{1}被{2}重創致死	{4}年{3}{1}被{2}重创致死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the mortal wounding of {1} by {2} 加上結尾的日期
+the mortal wounding of {1} by {2} in a time before time	太古之時{1}被{2}重創致死	太古之时{1}被{2}重创致死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the mortal wounding of {1} by {2} 加上結尾的日期
+the mortal wounding of {1} by {2} in {3}	{1}在{3}被{2}重創致死	{1}在{3}被{2}重创致死	inner	FUN_140b73780 case 4/6 hist_figure_died 短語：{1} 死者、{2} 兇手；結尾 in {3} 是地點
+the mortal wounding of {1} by {2}	{1}被{2}重創致死	{1}被{2}重创致死	inner	FUN_140b73780 case 4/6 hist_figure_died 短語：{1} 死者、{2} 兇手
+the mortal wounding of {1} with {2} from {3} in {4} in {#5}	{5}年{1}在{4}被{3}射出的{2}重創致死	{5}年{1}在{4}被{3}射出的{2}重创致死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the mortal wounding of {1} with {2} from {3} in {4} 加上結尾的日期
+the mortal wounding of {1} with {2} from {3} in {4} in the {@5} of {#6}	{6}年{5}{1}在{4}被{3}射出的{2}重創致死	{6}年{5}{1}在{4}被{3}射出的{2}重创致死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the mortal wounding of {1} with {2} from {3} in {4} 加上結尾的日期
+the mortal wounding of {1} with {2} from {3} in {4} in a time before time	太古之時{1}在{4}被{3}射出的{2}重創致死	太古之时{1}在{4}被{3}射出的{2}重创致死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the mortal wounding of {1} with {2} from {3} in {4} 加上結尾的日期
+the mortal wounding of {1} with {2} from {3} in {#4}	{4}年{1}被{3}射出的{2}重創致死	{4}年{1}被{3}射出的{2}重创致死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the mortal wounding of {1} with {2} from {3} 加上結尾的日期
+the mortal wounding of {1} with {2} from {3} in the {@4} of {#5}	{5}年{4}{1}被{3}射出的{2}重創致死	{5}年{4}{1}被{3}射出的{2}重创致死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the mortal wounding of {1} with {2} from {3} 加上結尾的日期
+the mortal wounding of {1} with {2} from {3} in a time before time	太古之時{1}被{3}射出的{2}重創致死	太古之时{1}被{3}射出的{2}重创致死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the mortal wounding of {1} with {2} from {3} 加上結尾的日期
+the mortal wounding of {1} with {2} from {3} in {4}	{1}在{4}被{3}射出的{2}重創致死	{1}在{4}被{3}射出的{2}重创致死	inner	FUN_140b73780 case 4/6 hist_figure_died 短語：{1} 死者；沒有兇手：{2} 武器、{3} 射擊武器；結尾 in {4} 是地點
+the mortal wounding of {1} with {2} from {3}	{1}被{3}射出的{2}重創致死	{1}被{3}射出的{2}重创致死	inner	FUN_140b73780 case 4/6 hist_figure_died 短語：{1} 死者；沒有兇手：{2} 武器、{3} 射擊武器
+the mortal wounding of {1} with {2} in {3} in {#4}	{4}年{1}在{3}被{2}重創致死	{4}年{1}在{3}被{2}重创致死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the mortal wounding of {1} with {2} in {3} 加上結尾的日期
+the mortal wounding of {1} with {2} in {3} in the {@4} of {#5}	{5}年{4}{1}在{3}被{2}重創致死	{5}年{4}{1}在{3}被{2}重创致死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the mortal wounding of {1} with {2} in {3} 加上結尾的日期
+the mortal wounding of {1} with {2} in {3} in a time before time	太古之時{1}在{3}被{2}重創致死	太古之时{1}在{3}被{2}重创致死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the mortal wounding of {1} with {2} in {3} 加上結尾的日期
+the mortal wounding of {1} with {2} in {#3}	{3}年{1}被{2}重創致死	{3}年{1}被{2}重创致死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the mortal wounding of {1} with {2} 加上結尾的日期
+the mortal wounding of {1} with {2} in the {@3} of {#4}	{4}年{3}{1}被{2}重創致死	{4}年{3}{1}被{2}重创致死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the mortal wounding of {1} with {2} 加上結尾的日期
+the mortal wounding of {1} with {2} in a time before time	太古之時{1}被{2}重創致死	太古之时{1}被{2}重创致死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the mortal wounding of {1} with {2} 加上結尾的日期
+the mortal wounding of {1} with {2} in {3}	{1}在{3}被{2}重創致死	{1}在{3}被{2}重创致死	inner	FUN_140b73780 case 4/6 hist_figure_died 短語：{1} 死者；沒有兇手：{2} 武器（或只有射擊武器）；結尾 in {3} 是地點
+the mortal wounding of {1} with {2}	{1}被{2}重創致死	{1}被{2}重创致死	inner	FUN_140b73780 case 4/6 hist_figure_died 短語：{1} 死者；沒有兇手：{2} 武器（或只有射擊武器）
+the mortal wounding of {1} in {2} in {#3}	{3}年{1}在{2}受重創而死	{3}年{1}在{2}受重创而死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the mortal wounding of {1} in {2} 加上結尾的日期
+the mortal wounding of {1} in {2} in the {@3} of {#4}	{4}年{3}{1}在{2}受重創而死	{4}年{3}{1}在{2}受重创而死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the mortal wounding of {1} in {2} 加上結尾的日期
+the mortal wounding of {1} in {2} in a time before time	太古之時{1}在{2}受重創而死	太古之时{1}在{2}受重创而死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the mortal wounding of {1} in {2} 加上結尾的日期
+the mortal wounding of {1} in {#2}	{2}年{1}受重創而死	{2}年{1}受重创而死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the mortal wounding of {1} 加上結尾的日期
+the mortal wounding of {1} in the {@2} of {#3}	{3}年{2}{1}受重創而死	{3}年{2}{1}受重创而死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the mortal wounding of {1} 加上結尾的日期
+the mortal wounding of {1} in a time before time	太古之時{1}受重創而死	太古之时{1}受重创而死	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the mortal wounding of {1} 加上結尾的日期
+the mortal wounding of {1} in {2}	{1}在{2}受重創而死	{1}在{2}受重创而死	inner	FUN_140b73780 case 4/6 hist_figure_died 短語：{1} 死者；沒有兇手與武器；結尾 in {2} 是地點
+the mortal wounding of {1}	{1}受重創而死	{1}受重创而死	inner	FUN_140b73780 case 4/6 hist_figure_died 短語：{1} 死者；沒有兇手與武器
+the killing of {1} by {2} with {3} from {4} in {5} in {#6}	{6}年{1}在{5}被{2}用{4}射出的{3}擊倒身亡	{6}年{1}在{5}被{2}用{4}射出的{3}击倒身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} by {2} with {3} from {4} in {5} 加上結尾的日期
+the killing of {1} by {2} with {3} from {4} in {5} in the {@6} of {#7}	{7}年{6}{1}在{5}被{2}用{4}射出的{3}擊倒身亡	{7}年{6}{1}在{5}被{2}用{4}射出的{3}击倒身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} by {2} with {3} from {4} in {5} 加上結尾的日期
+the killing of {1} by {2} with {3} from {4} in {5} in a time before time	太古之時{1}在{5}被{2}用{4}射出的{3}擊倒身亡	太古之时{1}在{5}被{2}用{4}射出的{3}击倒身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} by {2} with {3} from {4} in {5} 加上結尾的日期
+the killing of {1} by {2} with {3} from {4} in {#5}	{5}年{1}被{2}用{4}射出的{3}擊倒身亡	{5}年{1}被{2}用{4}射出的{3}击倒身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} by {2} with {3} from {4} 加上結尾的日期
+the killing of {1} by {2} with {3} from {4} in the {@5} of {#6}	{6}年{5}{1}被{2}用{4}射出的{3}擊倒身亡	{6}年{5}{1}被{2}用{4}射出的{3}击倒身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} by {2} with {3} from {4} 加上結尾的日期
+the killing of {1} by {2} with {3} from {4} in a time before time	太古之時{1}被{2}用{4}射出的{3}擊倒身亡	太古之时{1}被{2}用{4}射出的{3}击倒身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} by {2} with {3} from {4} 加上結尾的日期
+the killing of {1} by {2} with {3} from {4} in {5}	{1}在{5}被{2}用{4}射出的{3}擊倒身亡	{1}在{5}被{2}用{4}射出的{3}击倒身亡	inner	FUN_140b73780 case 7 hist_figure_died 短語：{1} 死者、{2} 兇手（人名或 a 種族）、{3} 武器、{4} 射擊武器；結尾 in {5} 是地點
+the killing of {1} by {2} with {3} from {4}	{1}被{2}用{4}射出的{3}擊倒身亡	{1}被{2}用{4}射出的{3}击倒身亡	inner	FUN_140b73780 case 7 hist_figure_died 短語：{1} 死者、{2} 兇手（人名或 a 種族）、{3} 武器、{4} 射擊武器
+the killing of {1} by {2} with {3} in {4} in {#5}	{5}年{1}在{4}被{2}用{3}擊倒身亡	{5}年{1}在{4}被{2}用{3}击倒身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} by {2} with {3} in {4} 加上結尾的日期
+the killing of {1} by {2} with {3} in {4} in the {@5} of {#6}	{6}年{5}{1}在{4}被{2}用{3}擊倒身亡	{6}年{5}{1}在{4}被{2}用{3}击倒身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} by {2} with {3} in {4} 加上結尾的日期
+the killing of {1} by {2} with {3} in {4} in a time before time	太古之時{1}在{4}被{2}用{3}擊倒身亡	太古之时{1}在{4}被{2}用{3}击倒身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} by {2} with {3} in {4} 加上結尾的日期
+the killing of {1} by {2} with {3} in {#4}	{4}年{1}被{2}用{3}擊倒身亡	{4}年{1}被{2}用{3}击倒身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} by {2} with {3} 加上結尾的日期
+the killing of {1} by {2} with {3} in the {@4} of {#5}	{5}年{4}{1}被{2}用{3}擊倒身亡	{5}年{4}{1}被{2}用{3}击倒身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} by {2} with {3} 加上結尾的日期
+the killing of {1} by {2} with {3} in a time before time	太古之時{1}被{2}用{3}擊倒身亡	太古之时{1}被{2}用{3}击倒身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} by {2} with {3} 加上結尾的日期
+the killing of {1} by {2} with {3} in {4}	{1}在{4}被{2}用{3}擊倒身亡	{1}在{4}被{2}用{3}击倒身亡	inner	FUN_140b73780 case 7 hist_figure_died 短語：{1} 死者、{2} 兇手、{3} 武器（或只有射擊武器）；結尾 in {4} 是地點
+the killing of {1} by {2} with {3}	{1}被{2}用{3}擊倒身亡	{1}被{2}用{3}击倒身亡	inner	FUN_140b73780 case 7 hist_figure_died 短語：{1} 死者、{2} 兇手、{3} 武器（或只有射擊武器）
+the killing of {1} by {2} in {3} in {#4}	{4}年{1}在{3}被{2}擊倒身亡	{4}年{1}在{3}被{2}击倒身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} by {2} in {3} 加上結尾的日期
+the killing of {1} by {2} in {3} in the {@4} of {#5}	{5}年{4}{1}在{3}被{2}擊倒身亡	{5}年{4}{1}在{3}被{2}击倒身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} by {2} in {3} 加上結尾的日期
+the killing of {1} by {2} in {3} in a time before time	太古之時{1}在{3}被{2}擊倒身亡	太古之时{1}在{3}被{2}击倒身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} by {2} in {3} 加上結尾的日期
+the killing of {1} by {2} in {#3}	{3}年{1}被{2}擊倒身亡	{3}年{1}被{2}击倒身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} by {2} 加上結尾的日期
+the killing of {1} by {2} in the {@3} of {#4}	{4}年{3}{1}被{2}擊倒身亡	{4}年{3}{1}被{2}击倒身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} by {2} 加上結尾的日期
+the killing of {1} by {2} in a time before time	太古之時{1}被{2}擊倒身亡	太古之时{1}被{2}击倒身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} by {2} 加上結尾的日期
+the killing of {1} by {2} in {3}	{1}在{3}被{2}擊倒身亡	{1}在{3}被{2}击倒身亡	inner	FUN_140b73780 case 7 hist_figure_died 短語：{1} 死者、{2} 兇手；結尾 in {3} 是地點
+the killing of {1} by {2}	{1}被{2}擊倒身亡	{1}被{2}击倒身亡	inner	FUN_140b73780 case 7 hist_figure_died 短語：{1} 死者、{2} 兇手
+the killing of {1} with {2} from {3} in {4} in {#5}	{5}年{1}在{4}被{3}射出的{2}擊倒身亡	{5}年{1}在{4}被{3}射出的{2}击倒身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} with {2} from {3} in {4} 加上結尾的日期
+the killing of {1} with {2} from {3} in {4} in the {@5} of {#6}	{6}年{5}{1}在{4}被{3}射出的{2}擊倒身亡	{6}年{5}{1}在{4}被{3}射出的{2}击倒身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} with {2} from {3} in {4} 加上結尾的日期
+the killing of {1} with {2} from {3} in {4} in a time before time	太古之時{1}在{4}被{3}射出的{2}擊倒身亡	太古之时{1}在{4}被{3}射出的{2}击倒身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} with {2} from {3} in {4} 加上結尾的日期
+the killing of {1} with {2} from {3} in {#4}	{4}年{1}被{3}射出的{2}擊倒身亡	{4}年{1}被{3}射出的{2}击倒身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} with {2} from {3} 加上結尾的日期
+the killing of {1} with {2} from {3} in the {@4} of {#5}	{5}年{4}{1}被{3}射出的{2}擊倒身亡	{5}年{4}{1}被{3}射出的{2}击倒身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} with {2} from {3} 加上結尾的日期
+the killing of {1} with {2} from {3} in a time before time	太古之時{1}被{3}射出的{2}擊倒身亡	太古之时{1}被{3}射出的{2}击倒身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} with {2} from {3} 加上結尾的日期
+the killing of {1} with {2} from {3} in {4}	{1}在{4}被{3}射出的{2}擊倒身亡	{1}在{4}被{3}射出的{2}击倒身亡	inner	FUN_140b73780 case 7 hist_figure_died 短語：{1} 死者；沒有兇手：{2} 武器、{3} 射擊武器；結尾 in {4} 是地點
+the killing of {1} with {2} from {3}	{1}被{3}射出的{2}擊倒身亡	{1}被{3}射出的{2}击倒身亡	inner	FUN_140b73780 case 7 hist_figure_died 短語：{1} 死者；沒有兇手：{2} 武器、{3} 射擊武器
+the killing of {1} with {2} in {3} in {#4}	{4}年{1}在{3}被{2}擊倒身亡	{4}年{1}在{3}被{2}击倒身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} with {2} in {3} 加上結尾的日期
+the killing of {1} with {2} in {3} in the {@4} of {#5}	{5}年{4}{1}在{3}被{2}擊倒身亡	{5}年{4}{1}在{3}被{2}击倒身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} with {2} in {3} 加上結尾的日期
+the killing of {1} with {2} in {3} in a time before time	太古之時{1}在{3}被{2}擊倒身亡	太古之时{1}在{3}被{2}击倒身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} with {2} in {3} 加上結尾的日期
+the killing of {1} with {2} in {#3}	{3}年{1}被{2}擊倒身亡	{3}年{1}被{2}击倒身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} with {2} 加上結尾的日期
+the killing of {1} with {2} in the {@3} of {#4}	{4}年{3}{1}被{2}擊倒身亡	{4}年{3}{1}被{2}击倒身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} with {2} 加上結尾的日期
+the killing of {1} with {2} in a time before time	太古之時{1}被{2}擊倒身亡	太古之时{1}被{2}击倒身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} with {2} 加上結尾的日期
+the killing of {1} with {2} in {3}	{1}在{3}被{2}擊倒身亡	{1}在{3}被{2}击倒身亡	inner	FUN_140b73780 case 7 hist_figure_died 短語：{1} 死者；沒有兇手：{2} 武器（或只有射擊武器）；結尾 in {3} 是地點
+the killing of {1} with {2}	{1}被{2}擊倒身亡	{1}被{2}击倒身亡	inner	FUN_140b73780 case 7 hist_figure_died 短語：{1} 死者；沒有兇手：{2} 武器（或只有射擊武器）
+the killing of {1} in {2} in {#3}	{3}年{1}在{2}被擊倒身亡	{3}年{1}在{2}被击倒身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} in {2} 加上結尾的日期
+the killing of {1} in {2} in the {@3} of {#4}	{4}年{3}{1}在{2}被擊倒身亡	{4}年{3}{1}在{2}被击倒身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} in {2} 加上結尾的日期
+the killing of {1} in {2} in a time before time	太古之時{1}在{2}被擊倒身亡	太古之时{1}在{2}被击倒身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} in {2} 加上結尾的日期
+the killing of {1} in {#2}	{2}年{1}被擊倒身亡	{2}年{1}被击倒身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} 加上結尾的日期
+the killing of {1} in the {@2} of {#3}	{3}年{2}{1}被擊倒身亡	{3}年{2}{1}被击倒身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} 加上結尾的日期
+the killing of {1} in a time before time	太古之時{1}被擊倒身亡	太古之时{1}被击倒身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the killing of {1} 加上結尾的日期
+the killing of {1} in {2}	{1}在{2}被擊倒身亡	{1}在{2}被击倒身亡	inner	FUN_140b73780 case 7 hist_figure_died 短語：{1} 死者；沒有兇手與武器；結尾 in {2} 是地點
+the killing of {1}	{1}被擊倒身亡	{1}被击倒身亡	inner	FUN_140b73780 case 7 hist_figure_died 短語：{1} 死者；沒有兇手與武器
+the slaughter of {1} by {2} with {3} from {4} in {5} in {#6}	{6}年{1}在{5}被{2}用{4}射出的{3}宰殺	{6}年{1}在{5}被{2}用{4}射出的{3}宰杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the slaughter of {1} by {2} with {3} from {4} in {5} 加上結尾的日期
+the slaughter of {1} by {2} with {3} from {4} in {5} in the {@6} of {#7}	{7}年{6}{1}在{5}被{2}用{4}射出的{3}宰殺	{7}年{6}{1}在{5}被{2}用{4}射出的{3}宰杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the slaughter of {1} by {2} with {3} from {4} in {5} 加上結尾的日期
+the slaughter of {1} by {2} with {3} from {4} in {5} in a time before time	太古之時{1}在{5}被{2}用{4}射出的{3}宰殺	太古之时{1}在{5}被{2}用{4}射出的{3}宰杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the slaughter of {1} by {2} with {3} from {4} in {5} 加上結尾的日期
+the slaughter of {1} by {2} with {3} from {4} in {#5}	{5}年{1}被{2}用{4}射出的{3}宰殺	{5}年{1}被{2}用{4}射出的{3}宰杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the slaughter of {1} by {2} with {3} from {4} 加上結尾的日期
+the slaughter of {1} by {2} with {3} from {4} in the {@5} of {#6}	{6}年{5}{1}被{2}用{4}射出的{3}宰殺	{6}年{5}{1}被{2}用{4}射出的{3}宰杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the slaughter of {1} by {2} with {3} from {4} 加上結尾的日期
+the slaughter of {1} by {2} with {3} from {4} in a time before time	太古之時{1}被{2}用{4}射出的{3}宰殺	太古之时{1}被{2}用{4}射出的{3}宰杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the slaughter of {1} by {2} with {3} from {4} 加上結尾的日期
+the slaughter of {1} by {2} with {3} from {4} in {5}	{1}在{5}被{2}用{4}射出的{3}宰殺	{1}在{5}被{2}用{4}射出的{3}宰杀	inner	FUN_140b73780 case 0x31 hist_figure_died 短語：{1} 死者、{2} 兇手（人名或 a 種族）、{3} 武器、{4} 射擊武器；結尾 in {5} 是地點
+the slaughter of {1} by {2} with {3} from {4}	{1}被{2}用{4}射出的{3}宰殺	{1}被{2}用{4}射出的{3}宰杀	inner	FUN_140b73780 case 0x31 hist_figure_died 短語：{1} 死者、{2} 兇手（人名或 a 種族）、{3} 武器、{4} 射擊武器
+the slaughter of {1} by {2} with {3} in {4} in {#5}	{5}年{1}在{4}被{2}用{3}宰殺	{5}年{1}在{4}被{2}用{3}宰杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the slaughter of {1} by {2} with {3} in {4} 加上結尾的日期
+the slaughter of {1} by {2} with {3} in {4} in the {@5} of {#6}	{6}年{5}{1}在{4}被{2}用{3}宰殺	{6}年{5}{1}在{4}被{2}用{3}宰杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the slaughter of {1} by {2} with {3} in {4} 加上結尾的日期
+the slaughter of {1} by {2} with {3} in {4} in a time before time	太古之時{1}在{4}被{2}用{3}宰殺	太古之时{1}在{4}被{2}用{3}宰杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the slaughter of {1} by {2} with {3} in {4} 加上結尾的日期
+the slaughter of {1} by {2} with {3} in {#4}	{4}年{1}被{2}用{3}宰殺	{4}年{1}被{2}用{3}宰杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the slaughter of {1} by {2} with {3} 加上結尾的日期
+the slaughter of {1} by {2} with {3} in the {@4} of {#5}	{5}年{4}{1}被{2}用{3}宰殺	{5}年{4}{1}被{2}用{3}宰杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the slaughter of {1} by {2} with {3} 加上結尾的日期
+the slaughter of {1} by {2} with {3} in a time before time	太古之時{1}被{2}用{3}宰殺	太古之时{1}被{2}用{3}宰杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the slaughter of {1} by {2} with {3} 加上結尾的日期
+the slaughter of {1} by {2} with {3} in {4}	{1}在{4}被{2}用{3}宰殺	{1}在{4}被{2}用{3}宰杀	inner	FUN_140b73780 case 0x31 hist_figure_died 短語：{1} 死者、{2} 兇手、{3} 武器（或只有射擊武器）；結尾 in {4} 是地點
+the slaughter of {1} by {2} with {3}	{1}被{2}用{3}宰殺	{1}被{2}用{3}宰杀	inner	FUN_140b73780 case 0x31 hist_figure_died 短語：{1} 死者、{2} 兇手、{3} 武器（或只有射擊武器）
+the slaughter of {1} by {2} in {3} in {#4}	{4}年{1}在{3}被{2}宰殺	{4}年{1}在{3}被{2}宰杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the slaughter of {1} by {2} in {3} 加上結尾的日期
+the slaughter of {1} by {2} in {3} in the {@4} of {#5}	{5}年{4}{1}在{3}被{2}宰殺	{5}年{4}{1}在{3}被{2}宰杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the slaughter of {1} by {2} in {3} 加上結尾的日期
+the slaughter of {1} by {2} in {3} in a time before time	太古之時{1}在{3}被{2}宰殺	太古之时{1}在{3}被{2}宰杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the slaughter of {1} by {2} in {3} 加上結尾的日期
+the slaughter of {1} by {2} in {#3}	{3}年{1}被{2}宰殺	{3}年{1}被{2}宰杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the slaughter of {1} by {2} 加上結尾的日期
+the slaughter of {1} by {2} in the {@3} of {#4}	{4}年{3}{1}被{2}宰殺	{4}年{3}{1}被{2}宰杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the slaughter of {1} by {2} 加上結尾的日期
+the slaughter of {1} by {2} in a time before time	太古之時{1}被{2}宰殺	太古之时{1}被{2}宰杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the slaughter of {1} by {2} 加上結尾的日期
+the slaughter of {1} by {2} in {3}	{1}在{3}被{2}宰殺	{1}在{3}被{2}宰杀	inner	FUN_140b73780 case 0x31 hist_figure_died 短語：{1} 死者、{2} 兇手；結尾 in {3} 是地點
+the slaughter of {1} by {2}	{1}被{2}宰殺	{1}被{2}宰杀	inner	FUN_140b73780 case 0x31 hist_figure_died 短語：{1} 死者、{2} 兇手
+the slaughter of {1} with {2} from {3} in {4} in {#5}	{5}年{1}在{4}被{3}射出的{2}宰殺	{5}年{1}在{4}被{3}射出的{2}宰杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the slaughter of {1} with {2} from {3} in {4} 加上結尾的日期
+the slaughter of {1} with {2} from {3} in {4} in the {@5} of {#6}	{6}年{5}{1}在{4}被{3}射出的{2}宰殺	{6}年{5}{1}在{4}被{3}射出的{2}宰杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the slaughter of {1} with {2} from {3} in {4} 加上結尾的日期
+the slaughter of {1} with {2} from {3} in {4} in a time before time	太古之時{1}在{4}被{3}射出的{2}宰殺	太古之时{1}在{4}被{3}射出的{2}宰杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the slaughter of {1} with {2} from {3} in {4} 加上結尾的日期
+the slaughter of {1} with {2} from {3} in {#4}	{4}年{1}被{3}射出的{2}宰殺	{4}年{1}被{3}射出的{2}宰杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the slaughter of {1} with {2} from {3} 加上結尾的日期
+the slaughter of {1} with {2} from {3} in the {@4} of {#5}	{5}年{4}{1}被{3}射出的{2}宰殺	{5}年{4}{1}被{3}射出的{2}宰杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the slaughter of {1} with {2} from {3} 加上結尾的日期
+the slaughter of {1} with {2} from {3} in a time before time	太古之時{1}被{3}射出的{2}宰殺	太古之时{1}被{3}射出的{2}宰杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the slaughter of {1} with {2} from {3} 加上結尾的日期
+the slaughter of {1} with {2} from {3} in {4}	{1}在{4}被{3}射出的{2}宰殺	{1}在{4}被{3}射出的{2}宰杀	inner	FUN_140b73780 case 0x31 hist_figure_died 短語：{1} 死者；沒有兇手：{2} 武器、{3} 射擊武器；結尾 in {4} 是地點
+the slaughter of {1} with {2} from {3}	{1}被{3}射出的{2}宰殺	{1}被{3}射出的{2}宰杀	inner	FUN_140b73780 case 0x31 hist_figure_died 短語：{1} 死者；沒有兇手：{2} 武器、{3} 射擊武器
+the slaughter of {1} with {2} in {3} in {#4}	{4}年{1}在{3}被{2}宰殺	{4}年{1}在{3}被{2}宰杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the slaughter of {1} with {2} in {3} 加上結尾的日期
+the slaughter of {1} with {2} in {3} in the {@4} of {#5}	{5}年{4}{1}在{3}被{2}宰殺	{5}年{4}{1}在{3}被{2}宰杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the slaughter of {1} with {2} in {3} 加上結尾的日期
+the slaughter of {1} with {2} in {3} in a time before time	太古之時{1}在{3}被{2}宰殺	太古之时{1}在{3}被{2}宰杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the slaughter of {1} with {2} in {3} 加上結尾的日期
+the slaughter of {1} with {2} in {#3}	{3}年{1}被{2}宰殺	{3}年{1}被{2}宰杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the slaughter of {1} with {2} 加上結尾的日期
+the slaughter of {1} with {2} in the {@3} of {#4}	{4}年{3}{1}被{2}宰殺	{4}年{3}{1}被{2}宰杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the slaughter of {1} with {2} 加上結尾的日期
+the slaughter of {1} with {2} in a time before time	太古之時{1}被{2}宰殺	太古之时{1}被{2}宰杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the slaughter of {1} with {2} 加上結尾的日期
+the slaughter of {1} with {2} in {3}	{1}在{3}被{2}宰殺	{1}在{3}被{2}宰杀	inner	FUN_140b73780 case 0x31 hist_figure_died 短語：{1} 死者；沒有兇手：{2} 武器（或只有射擊武器）；結尾 in {3} 是地點
+the slaughter of {1} with {2}	{1}被{2}宰殺	{1}被{2}宰杀	inner	FUN_140b73780 case 0x31 hist_figure_died 短語：{1} 死者；沒有兇手：{2} 武器（或只有射擊武器）
+the slaughter of {1} in {2} in {#3}	{3}年{1}在{2}被宰殺	{3}年{1}在{2}被宰杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the slaughter of {1} in {2} 加上結尾的日期
+the slaughter of {1} in {2} in the {@3} of {#4}	{4}年{3}{1}在{2}被宰殺	{4}年{3}{1}在{2}被宰杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the slaughter of {1} in {2} 加上結尾的日期
+the slaughter of {1} in {2} in a time before time	太古之時{1}在{2}被宰殺	太古之时{1}在{2}被宰杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the slaughter of {1} in {2} 加上結尾的日期
+the slaughter of {1} in {#2}	{2}年{1}被宰殺	{2}年{1}被宰杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the slaughter of {1} 加上結尾的日期
+the slaughter of {1} in the {@2} of {#3}	{3}年{2}{1}被宰殺	{3}年{2}{1}被宰杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the slaughter of {1} 加上結尾的日期
+the slaughter of {1} in a time before time	太古之時{1}被宰殺	太古之时{1}被宰杀	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the slaughter of {1} 加上結尾的日期
+the slaughter of {1} in {2}	{1}在{2}被宰殺	{1}在{2}被宰杀	inner	FUN_140b73780 case 0x31 hist_figure_died 短語：{1} 死者；沒有兇手與武器；結尾 in {2} 是地點
+the slaughter of {1}	{1}被宰殺	{1}被宰杀	inner	FUN_140b73780 case 0x31 hist_figure_died 短語：{1} 死者；沒有兇手與武器
+the collapse of {1} after an attack by {2} attack with {3} from {4} in {5} in {#6}	{6}年{1}在{5}遭{2}以{4}射出的{3}攻擊後倒地身亡	{6}年{1}在{5}遭{2}以{4}射出的{3}攻击后倒地身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the collapse of {1} after an attack by {2} attack with {3} from {4} in {5} 加上結尾的日期
+the collapse of {1} after an attack by {2} attack with {3} from {4} in {5} in the {@6} of {#7}	{7}年{6}{1}在{5}遭{2}以{4}射出的{3}攻擊後倒地身亡	{7}年{6}{1}在{5}遭{2}以{4}射出的{3}攻击后倒地身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the collapse of {1} after an attack by {2} attack with {3} from {4} in {5} 加上結尾的日期
+the collapse of {1} after an attack by {2} attack with {3} from {4} in {5} in a time before time	太古之時{1}在{5}遭{2}以{4}射出的{3}攻擊後倒地身亡	太古之时{1}在{5}遭{2}以{4}射出的{3}攻击后倒地身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the collapse of {1} after an attack by {2} attack with {3} from {4} in {5} 加上結尾的日期
+the collapse of {1} after an attack by {2} attack with {3} from {4} in {#5}	{5}年{1}遭{2}以{4}射出的{3}攻擊後倒地身亡	{5}年{1}遭{2}以{4}射出的{3}攻击后倒地身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the collapse of {1} after an attack by {2} attack with {3} from {4} 加上結尾的日期
+the collapse of {1} after an attack by {2} attack with {3} from {4} in the {@5} of {#6}	{6}年{5}{1}遭{2}以{4}射出的{3}攻擊後倒地身亡	{6}年{5}{1}遭{2}以{4}射出的{3}攻击后倒地身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the collapse of {1} after an attack by {2} attack with {3} from {4} 加上結尾的日期
+the collapse of {1} after an attack by {2} attack with {3} from {4} in a time before time	太古之時{1}遭{2}以{4}射出的{3}攻擊後倒地身亡	太古之时{1}遭{2}以{4}射出的{3}攻击后倒地身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the collapse of {1} after an attack by {2} attack with {3} from {4} 加上結尾的日期
+the collapse of {1} after an attack by {2} attack with {3} from {4} in {5}	{1}在{5}遭{2}以{4}射出的{3}攻擊後倒地身亡	{1}在{5}遭{2}以{4}射出的{3}攻击后倒地身亡	inner	FUN_140b73780 case 0x2f hist_figure_died 短語：{1} 死者、{2} 兇手、{3} 武器、{4} 射擊武器（遊戲寫 attack 兩次）；結尾 in {5} 是地點
+the collapse of {1} after an attack by {2} attack with {3} from {4}	{1}遭{2}以{4}射出的{3}攻擊後倒地身亡	{1}遭{2}以{4}射出的{3}攻击后倒地身亡	inner	FUN_140b73780 case 0x2f hist_figure_died 短語：{1} 死者、{2} 兇手、{3} 武器、{4} 射擊武器（遊戲寫 attack 兩次）
+the collapse of {1} after an attack attack with {2} from {3} in {4} in {#5}	{5}年{1}在{4}遭{3}射出的{2}攻擊後倒地身亡	{5}年{1}在{4}遭{3}射出的{2}攻击后倒地身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the collapse of {1} after an attack attack with {2} from {3} in {4} 加上結尾的日期
+the collapse of {1} after an attack attack with {2} from {3} in {4} in the {@5} of {#6}	{6}年{5}{1}在{4}遭{3}射出的{2}攻擊後倒地身亡	{6}年{5}{1}在{4}遭{3}射出的{2}攻击后倒地身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the collapse of {1} after an attack attack with {2} from {3} in {4} 加上結尾的日期
+the collapse of {1} after an attack attack with {2} from {3} in {4} in a time before time	太古之時{1}在{4}遭{3}射出的{2}攻擊後倒地身亡	太古之时{1}在{4}遭{3}射出的{2}攻击后倒地身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the collapse of {1} after an attack attack with {2} from {3} in {4} 加上結尾的日期
+the collapse of {1} after an attack attack with {2} from {3} in {#4}	{4}年{1}遭{3}射出的{2}攻擊後倒地身亡	{4}年{1}遭{3}射出的{2}攻击后倒地身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the collapse of {1} after an attack attack with {2} from {3} 加上結尾的日期
+the collapse of {1} after an attack attack with {2} from {3} in the {@4} of {#5}	{5}年{4}{1}遭{3}射出的{2}攻擊後倒地身亡	{5}年{4}{1}遭{3}射出的{2}攻击后倒地身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the collapse of {1} after an attack attack with {2} from {3} 加上結尾的日期
+the collapse of {1} after an attack attack with {2} from {3} in a time before time	太古之時{1}遭{3}射出的{2}攻擊後倒地身亡	太古之时{1}遭{3}射出的{2}攻击后倒地身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the collapse of {1} after an attack attack with {2} from {3} 加上結尾的日期
+the collapse of {1} after an attack attack with {2} from {3} in {4}	{1}在{4}遭{3}射出的{2}攻擊後倒地身亡	{1}在{4}遭{3}射出的{2}攻击后倒地身亡	inner	FUN_140b73780 case 0x2f hist_figure_died 短語：{1} 死者；沒有兇手：{2} 武器、{3} 射擊武器（遊戲寫 attack 兩次）；結尾 in {4} 是地點
+the collapse of {1} after an attack attack with {2} from {3}	{1}遭{3}射出的{2}攻擊後倒地身亡	{1}遭{3}射出的{2}攻击后倒地身亡	inner	FUN_140b73780 case 0x2f hist_figure_died 短語：{1} 死者；沒有兇手：{2} 武器、{3} 射擊武器（遊戲寫 attack 兩次）
+the collapse of {1} after an attack by {2} with {3} in {4} in {#5}	{5}年{1}在{4}遭{2}以{3}攻擊後倒地身亡	{5}年{1}在{4}遭{2}以{3}攻击后倒地身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the collapse of {1} after an attack by {2} with {3} in {4} 加上結尾的日期
+the collapse of {1} after an attack by {2} with {3} in {4} in the {@5} of {#6}	{6}年{5}{1}在{4}遭{2}以{3}攻擊後倒地身亡	{6}年{5}{1}在{4}遭{2}以{3}攻击后倒地身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the collapse of {1} after an attack by {2} with {3} in {4} 加上結尾的日期
+the collapse of {1} after an attack by {2} with {3} in {4} in a time before time	太古之時{1}在{4}遭{2}以{3}攻擊後倒地身亡	太古之时{1}在{4}遭{2}以{3}攻击后倒地身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the collapse of {1} after an attack by {2} with {3} in {4} 加上結尾的日期
+the collapse of {1} after an attack by {2} with {3} in {#4}	{4}年{1}遭{2}以{3}攻擊後倒地身亡	{4}年{1}遭{2}以{3}攻击后倒地身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the collapse of {1} after an attack by {2} with {3} 加上結尾的日期
+the collapse of {1} after an attack by {2} with {3} in the {@4} of {#5}	{5}年{4}{1}遭{2}以{3}攻擊後倒地身亡	{5}年{4}{1}遭{2}以{3}攻击后倒地身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the collapse of {1} after an attack by {2} with {3} 加上結尾的日期
+the collapse of {1} after an attack by {2} with {3} in a time before time	太古之時{1}遭{2}以{3}攻擊後倒地身亡	太古之时{1}遭{2}以{3}攻击后倒地身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the collapse of {1} after an attack by {2} with {3} 加上結尾的日期
+the collapse of {1} after an attack by {2} with {3} in {4}	{1}在{4}遭{2}以{3}攻擊後倒地身亡	{1}在{4}遭{2}以{3}攻击后倒地身亡	inner	FUN_140b73780 case 0x2f hist_figure_died 短語：{1} 死者、{2} 兇手、{3} 武器（或只有射擊武器）；結尾 in {4} 是地點
+the collapse of {1} after an attack by {2} with {3}	{1}遭{2}以{3}攻擊後倒地身亡	{1}遭{2}以{3}攻击后倒地身亡	inner	FUN_140b73780 case 0x2f hist_figure_died 短語：{1} 死者、{2} 兇手、{3} 武器（或只有射擊武器）
+the collapse of {1} after an attack by {2} in {3} in {#4}	{4}年{1}在{3}遭{2}攻擊後倒地身亡	{4}年{1}在{3}遭{2}攻击后倒地身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the collapse of {1} after an attack by {2} in {3} 加上結尾的日期
+the collapse of {1} after an attack by {2} in {3} in the {@4} of {#5}	{5}年{4}{1}在{3}遭{2}攻擊後倒地身亡	{5}年{4}{1}在{3}遭{2}攻击后倒地身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the collapse of {1} after an attack by {2} in {3} 加上結尾的日期
+the collapse of {1} after an attack by {2} in {3} in a time before time	太古之時{1}在{3}遭{2}攻擊後倒地身亡	太古之时{1}在{3}遭{2}攻击后倒地身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the collapse of {1} after an attack by {2} in {3} 加上結尾的日期
+the collapse of {1} after an attack by {2} in {#3}	{3}年{1}遭{2}攻擊後倒地身亡	{3}年{1}遭{2}攻击后倒地身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the collapse of {1} after an attack by {2} 加上結尾的日期
+the collapse of {1} after an attack by {2} in the {@3} of {#4}	{4}年{3}{1}遭{2}攻擊後倒地身亡	{4}年{3}{1}遭{2}攻击后倒地身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the collapse of {1} after an attack by {2} 加上結尾的日期
+the collapse of {1} after an attack by {2} in a time before time	太古之時{1}遭{2}攻擊後倒地身亡	太古之时{1}遭{2}攻击后倒地身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the collapse of {1} after an attack by {2} 加上結尾的日期
+the collapse of {1} after an attack by {2} in {3}	{1}在{3}遭{2}攻擊後倒地身亡	{1}在{3}遭{2}攻击后倒地身亡	inner	FUN_140b73780 case 0x2f hist_figure_died 短語：{1} 死者、{2} 兇手（人名或 a 種族）；結尾 in {3} 是地點
+the collapse of {1} after an attack by {2}	{1}遭{2}攻擊後倒地身亡	{1}遭{2}攻击后倒地身亡	inner	FUN_140b73780 case 0x2f hist_figure_died 短語：{1} 死者、{2} 兇手（人名或 a 種族）
+the collapse of {1} after an attack with {2} in {3} in {#4}	{4}年{1}在{3}遭{2}攻擊後倒地身亡	{4}年{1}在{3}遭{2}攻击后倒地身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the collapse of {1} after an attack with {2} in {3} 加上結尾的日期
+the collapse of {1} after an attack with {2} in {3} in the {@4} of {#5}	{5}年{4}{1}在{3}遭{2}攻擊後倒地身亡	{5}年{4}{1}在{3}遭{2}攻击后倒地身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the collapse of {1} after an attack with {2} in {3} 加上結尾的日期
+the collapse of {1} after an attack with {2} in {3} in a time before time	太古之時{1}在{3}遭{2}攻擊後倒地身亡	太古之时{1}在{3}遭{2}攻击后倒地身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the collapse of {1} after an attack with {2} in {3} 加上結尾的日期
+the collapse of {1} after an attack with {2} in {#3}	{3}年{1}遭{2}攻擊後倒地身亡	{3}年{1}遭{2}攻击后倒地身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the collapse of {1} after an attack with {2} 加上結尾的日期
+the collapse of {1} after an attack with {2} in the {@3} of {#4}	{4}年{3}{1}遭{2}攻擊後倒地身亡	{4}年{3}{1}遭{2}攻击后倒地身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the collapse of {1} after an attack with {2} 加上結尾的日期
+the collapse of {1} after an attack with {2} in a time before time	太古之時{1}遭{2}攻擊後倒地身亡	太古之时{1}遭{2}攻击后倒地身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the collapse of {1} after an attack with {2} 加上結尾的日期
+the collapse of {1} after an attack with {2} in {3}	{1}在{3}遭{2}攻擊後倒地身亡	{1}在{3}遭{2}攻击后倒地身亡	inner	FUN_140b73780 case 0x2f hist_figure_died 短語：{1} 死者；沒有兇手：{2} 武器（或只有射擊武器）；結尾 in {3} 是地點
+the collapse of {1} after an attack with {2}	{1}遭{2}攻擊後倒地身亡	{1}遭{2}攻击后倒地身亡	inner	FUN_140b73780 case 0x2f hist_figure_died 短語：{1} 死者；沒有兇手：{2} 武器（或只有射擊武器）
+the collapse of {1} in {2} in {#3}	{3}年{1}在{2}倒地身亡	{3}年{1}在{2}倒地身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the collapse of {1} in {2} 加上結尾的日期
+the collapse of {1} in {2} in the {@3} of {#4}	{4}年{3}{1}在{2}倒地身亡	{4}年{3}{1}在{2}倒地身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the collapse of {1} in {2} 加上結尾的日期
+the collapse of {1} in {2} in a time before time	太古之時{1}在{2}倒地身亡	太古之时{1}在{2}倒地身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the collapse of {1} in {2} 加上結尾的日期
+the collapse of {1} in {#2}	{2}年{1}倒地身亡	{2}年{1}倒地身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the collapse of {1} 加上結尾的日期
+the collapse of {1} in the {@2} of {#3}	{3}年{2}{1}倒地身亡	{3}年{2}{1}倒地身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the collapse of {1} 加上結尾的日期
+the collapse of {1} in a time before time	太古之時{1}倒地身亡	太古之时{1}倒地身亡	inner	自動產生（scripts/gen_events.py）：00_ui15.tsv the collapse of {1} 加上結尾的日期
+the collapse of {1} in {2}	{1}在{2}倒地身亡	{1}在{2}倒地身亡	inner	FUN_140b73780 case 0x2f hist_figure_died 短語：{1} 死者；沒有兇手與武器；結尾 in {2} 是地點
+the collapse of {1}	{1}倒地身亡	{1}倒地身亡	inner	FUN_140b73780 case 0x2f hist_figure_died 短語：{1} 死者；沒有兇手與武器
 {1}, as {2},	化身{2}的{1}	化身{2}的{1}	inner	同上 L379354/L379475 人物以假身分出面（FUN_140c3a590 身分名或 a secret identity）
 in order to have an agent in {1} in {#2}	{2}年以便在{1}安插眼線	{2}年以便在{1}安插眼线	inner	自動產生（scripts/gen_events.py）：01.tsv in order to have an agent in {1} 加上結尾的日期
 in order to have an agent in {1} in the {@2} of {#3}	{3}年{2}以便在{1}安插眼線	{3}年{2}以便在{1}安插眼线	inner	自動產生（scripts/gen_events.py）：01.tsv in order to have an agent in {1} 加上結尾的日期
@@ -214,10 +974,6 @@ the agreement between {1} and {2} and become a citizen of {3} in {#4}	{4}年{1}�
 the agreement between {1} and {2} and become a citizen of {3} in the {@4} of {#5}	{5}年{4}{1}與{2}關於成為{3}公民的協議	{5}年{4}{1}与{2}关于成为{3}公民的协议	inner	自動產生（scripts/gen_events.py）：02.tsv the agreement between {1} and {2} and become a citizen of {3} 加上結尾的日期
 the agreement between {1} and {2} and become a citizen of {3} in a time before time	太古之時{1}與{2}關於成為{3}公民的協議	太古之时{1}与{2}关于成为{3}公民的协议	inner	自動產生（scripts/gen_events.py）：02.tsv the agreement between {1} and {2} and become a citizen of {3} 加上結尾的日期
 the agreement between {1} and {2} and become a citizen of {3}	{1}與{2}關於成為{3}公民的協議	{1}与{2}关于成为{3}公民的协议	inner	FUN_1402ad7f0 381564-381591 case 3；短語
-the passing of corruptly-obtained funds by {1} to {2} via {3} in {#4}	{4}年{1}經由{3}將不法所得轉交給{2}	{4}年{1}经由{3}将不法所得转交给{2}	inner	自動產生（scripts/gen_events.py）：02.tsv the passing of corruptly-obtained funds by {1} to {2} via {3} 加上結尾的日期
-the passing of corruptly-obtained funds by {1} to {2} via {3} in the {@4} of {#5}	{5}年{4}{1}經由{3}將不法所得轉交給{2}	{5}年{4}{1}经由{3}将不法所得转交给{2}	inner	自動產生（scripts/gen_events.py）：02.tsv the passing of corruptly-obtained funds by {1} to {2} via {3} 加上結尾的日期
-the passing of corruptly-obtained funds by {1} to {2} via {3} in a time before time	太古之時{1}經由{3}將不法所得轉交給{2}	太古之时{1}经由{3}将不法所得转交给{2}	inner	自動產生（scripts/gen_events.py）：02.tsv the passing of corruptly-obtained funds by {1} to {2} via {3} 加上結尾的日期
-the passing of corruptly-obtained funds by {1} to {2} via {3}	{1}經由{3}將不法所得轉交給{2}	{1}经由{3}将不法所得转交给{2}	inner	FUN_1402ad7f0 381631-381742 case 5 (0xf9)；短語
 the plot of {1} to assassinate {2} under the influence of {3} in {#4}	{4}年{1}在{3}影響下刺殺{2}的陰謀	{4}年{1}在{3}影响下刺杀{2}的阴谋	inner	自動產生（scripts/gen_events.py）：02.tsv the plot of {1} to assassinate {2} under the influence of {3} 加上結尾的日期
 the plot of {1} to assassinate {2} under the influence of {3} in the {@4} of {#5}	{5}年{4}{1}在{3}影響下刺殺{2}的陰謀	{5}年{4}{1}在{3}影响下刺杀{2}的阴谋	inner	自動產生（scripts/gen_events.py）：02.tsv the plot of {1} to assassinate {2} under the influence of {3} 加上結尾的日期
 the plot of {1} to assassinate {2} under the influence of {3} in a time before time	太古之時{1}在{3}影響下刺殺{2}的陰謀	太古之时{1}在{3}影响下刺杀{2}的阴谋	inner	自動產生（scripts/gen_events.py）：02.tsv the plot of {1} to assassinate {2} under the influence of {3} 加上結尾的日期
@@ -328,14 +1084,6 @@ the agreement between {1} and {2} to work as a mercenary	{1}與{2}關於擔任�
 the joining of {1} with {2} to live a life of adventure	{1}加入{2}過冒險生活	{1}加入{2}过冒险生活	inner	FUN_1402ad7f0 381394-381456 case 0 reason 1；短語
 the permanent joining by {1} of {2} to the living world	{1}協助{2}永久成為生者世界的一部分	{1}协助{2}永久成为生者世界的一部分	inner	FUN_1402ad7f0 381457-381517 case 1；短語
 the agreement between {1} and {2} to eradicate monsters	{1}與{2}關於剷除怪物的協議	{1}与{2}关于铲除怪物的协议	inner	FUN_1402ad7f0 381518-381563 case 2；短語
-the passing of corruptly-obtained funds by {1} via {2} in {#3}	{3}年{1}經由{2}轉交不法所得	{3}年{1}经由{2}转交不法所得	inner	自動產生（scripts/gen_events.py）：02.tsv the passing of corruptly-obtained funds by {1} via {2} 加上結尾的日期
-the passing of corruptly-obtained funds by {1} via {2} in the {@3} of {#4}	{4}年{3}{1}經由{2}轉交不法所得	{4}年{3}{1}经由{2}转交不法所得	inner	自動產生（scripts/gen_events.py）：02.tsv the passing of corruptly-obtained funds by {1} via {2} 加上結尾的日期
-the passing of corruptly-obtained funds by {1} via {2} in a time before time	太古之時{1}經由{2}轉交不法所得	太古之时{1}经由{2}转交不法所得	inner	自動產生（scripts/gen_events.py）：02.tsv the passing of corruptly-obtained funds by {1} via {2} 加上結尾的日期
-the passing of corruptly-obtained funds by {1} via {2}	{1}經由{2}轉交不法所得	{1}经由{2}转交不法所得	inner	FUN_1402ad7f0 381631-381742 case 5 (0xf9)；短語
-the passing of corruptly-obtained funds by {1} to {2} in {#3}	{3}年{1}將不法所得轉交給{2}	{3}年{1}将不法所得转交给{2}	inner	自動產生（scripts/gen_events.py）：02.tsv the passing of corruptly-obtained funds by {1} to {2} 加上結尾的日期
-the passing of corruptly-obtained funds by {1} to {2} in the {@3} of {#4}	{4}年{3}{1}將不法所得轉交給{2}	{4}年{3}{1}将不法所得转交给{2}	inner	自動產生（scripts/gen_events.py）：02.tsv the passing of corruptly-obtained funds by {1} to {2} 加上結尾的日期
-the passing of corruptly-obtained funds by {1} to {2} in a time before time	太古之時{1}將不法所得轉交給{2}	太古之时{1}将不法所得转交给{2}	inner	自動產生（scripts/gen_events.py）：02.tsv the passing of corruptly-obtained funds by {1} to {2} 加上結尾的日期
-the passing of corruptly-obtained funds by {1} to {2}	{1}將不法所得轉交給{2}	{1}将不法所得转交给{2}	inner	FUN_1402ad7f0 381631-381742 case 5 (0xf9)；短語
 the agreement by {1} to establish a guildhall for {2} in {#3}	{3}年{1}為{2}興建公會大廳的協議	{3}年{1}为{2}兴建公会大厅的协议	inner	自動產生（scripts/gen_events.py）：02.tsv the agreement by {1} to establish a guildhall for {2} 加上結尾的日期
 the agreement by {1} to establish a guildhall for {2} in the {@3} of {#4}	{4}年{3}{1}為{2}興建公會大廳的協議	{4}年{3}{1}为{2}兴建公会大厅的协议	inner	自動產生（scripts/gen_events.py）：02.tsv the agreement by {1} to establish a guildhall for {2} 加上結尾的日期
 the agreement by {1} to establish a guildhall for {2} in a time before time	太古之時{1}為{2}興建公會大廳的協議	太古之时{1}为{2}兴建公会大厅的协议	inner	自動產生（scripts/gen_events.py）：02.tsv the agreement by {1} to establish a guildhall for {2} 加上結尾的日期
@@ -437,10 +1185,6 @@ the bribery of{1} via {2} in {#3}	{3}年{1}經由{2}收受賄賂	{3}年{1}经由
 the bribery of{1} via {2} in the {@3} of {#4}	{4}年{3}{1}經由{2}收受賄賂	{4}年{3}{1}经由{2}收受贿赂	inner	自動產生（scripts/gen_events.py）：02.tsv the bribery of{1} via {2} 加上結尾的日期
 the bribery of{1} via {2} in a time before time	太古之時{1}經由{2}收受賄賂	太古之时{1}经由{2}收受贿赂	inner	自動產生（scripts/gen_events.py）：02.tsv the bribery of{1} via {2} 加上結尾的日期
 the bribery of{1} via {2}	{1}經由{2}收受賄賂	{1}经由{2}收受贿赂	inner	FUN_1402ad7f0 381631-381742 case 5（原文 of 後無空白照抄）；短語
-the passing of corruptly-obtained funds by {1} in {#2}	{2}年{1}轉交不法所得	{2}年{1}转交不法所得	inner	自動產生（scripts/gen_events.py）：02.tsv the passing of corruptly-obtained funds by {1} 加上結尾的日期
-the passing of corruptly-obtained funds by {1} in the {@2} of {#3}	{3}年{2}{1}轉交不法所得	{3}年{2}{1}转交不法所得	inner	自動產生（scripts/gen_events.py）：02.tsv the passing of corruptly-obtained funds by {1} 加上結尾的日期
-the passing of corruptly-obtained funds by {1} in a time before time	太古之時{1}轉交不法所得	太古之时{1}转交不法所得	inner	自動產生（scripts/gen_events.py）：02.tsv the passing of corruptly-obtained funds by {1} 加上結尾的日期
-the passing of corruptly-obtained funds by {1}	{1}轉交不法所得	{1}转交不法所得	inner	FUN_1402ad7f0 381631-381742 case 5 (0xf9)；短語
 the embezzlement conspiracy concocted by {1} in {#2}	{2}年{1}策劃的盜用公款陰謀	{2}年{1}策划的挪用公款阴谋	inner	自動產生（scripts/gen_events.py）：02.tsv the embezzlement conspiracy concocted by {1} 加上結尾的日期
 the embezzlement conspiracy concocted by {1} in the {@2} of {#3}	{3}年{2}{1}策劃的盜用公款陰謀	{3}年{2}{1}策划的挪用公款阴谋	inner	自動產生（scripts/gen_events.py）：02.tsv the embezzlement conspiracy concocted by {1} 加上結尾的日期
 the embezzlement conspiracy concocted by {1} in a time before time	太古之時{1}策劃的盜用公款陰謀	太古之时{1}策划的挪用公款阴谋	inner	自動產生（scripts/gen_events.py）：02.tsv the embezzlement conspiracy concocted by {1} 加上結尾的日期
@@ -1659,18 +2403,6 @@ the ripping of {1}'s {%2} in {#3}	{3}年{1}的{2}被撕裂	{3}年{1}的{2}被撕
 the ripping of {1}'s {%2} in the {@3} of {#4}	{4}年{3}{1}的{2}被撕裂	{4}年{3}{1}的{2}被撕裂	inner	自動產生（scripts/gen_events.py）：06.tsv the ripping of {1}'s {%2} 加上結尾的日期
 the ripping of {1}'s {%2} in a time before time	太古之時{1}的{2}被撕裂	太古之时{1}的{2}被撕裂	inner	自動產生（scripts/gen_events.py）：06.tsv the ripping of {1}'s {%2} 加上結尾的日期
 the ripping of {1}'s {%2}	{1}的{2}被撕裂	{1}的{2}被撕裂	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：撕
-the burning of {1}'s {%2} by {3} as a means of torture	{1}的{2}遭{3}以酷刑燒傷	{1}的{2}遭{3}以酷刑烧伤	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：燒；加害者＋酷刑
-the burning of {1}'s {%2} by {3} as a means of torture in {#4}	{4}年{1}的{2}遭{3}以酷刑燒傷	{4}年{1}的{2}遭{3}以酷刑烧伤	inner	自動產生（scripts/gen_events.py）：06.tsv the burning of {1}'s {%2} by {3} as a means of torture 加上結尾的日期
-the burning of {1}'s {%2} by {3} as a means of torture in the {@4} of {#5}	{5}年{4}{1}的{2}遭{3}以酷刑燒傷	{5}年{4}{1}的{2}遭{3}以酷刑烧伤	inner	自動產生（scripts/gen_events.py）：06.tsv the burning of {1}'s {%2} by {3} as a means of torture 加上結尾的日期
-the burning of {1}'s {%2} by {3} as a means of torture in a time before time	太古之時{1}的{2}遭{3}以酷刑燒傷	太古之时{1}的{2}遭{3}以酷刑烧伤	inner	自動產生（scripts/gen_events.py）：06.tsv the burning of {1}'s {%2} by {3} as a means of torture 加上結尾的日期
-the burning of {1}'s {%2} by {3} in {#4}	{4}年{1}的{2}被{3}燒傷	{4}年{1}的{2}被{3}烧伤	inner	自動產生（scripts/gen_events.py）：06.tsv the burning of {1}'s {%2} by {3} 加上結尾的日期
-the burning of {1}'s {%2} by {3} in the {@4} of {#5}	{5}年{4}{1}的{2}被{3}燒傷	{5}年{4}{1}的{2}被{3}烧伤	inner	自動產生（scripts/gen_events.py）：06.tsv the burning of {1}'s {%2} by {3} 加上結尾的日期
-the burning of {1}'s {%2} by {3} in a time before time	太古之時{1}的{2}被{3}燒傷	太古之时{1}的{2}被{3}烧伤	inner	自動產生（scripts/gen_events.py）：06.tsv the burning of {1}'s {%2} by {3} 加上結尾的日期
-the burning of {1}'s {%2} by {3}	{1}的{2}被{3}燒傷	{1}的{2}被{3}烧伤	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：燒；加害者
-the burning of {1}'s {%2} in {#3}	{3}年{1}的{2}被燒傷	{3}年{1}的{2}被烧伤	inner	自動產生（scripts/gen_events.py）：06.tsv the burning of {1}'s {%2} 加上結尾的日期
-the burning of {1}'s {%2} in the {@3} of {#4}	{4}年{3}{1}的{2}被燒傷	{4}年{3}{1}的{2}被烧伤	inner	自動產生（scripts/gen_events.py）：06.tsv the burning of {1}'s {%2} 加上結尾的日期
-the burning of {1}'s {%2} in a time before time	太古之時{1}的{2}被燒傷	太古之时{1}的{2}被烧伤	inner	自動產生（scripts/gen_events.py）：06.tsv the burning of {1}'s {%2} 加上結尾的日期
-the burning of {1}'s {%2}	{1}的{2}被燒傷	{1}的{2}被烧伤	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：燒
 the breaking away of {1}'s {%2} by {3} as a means of torture	{1}的{2}遭{3}以酷刑打斷	{1}的{2}遭{3}以酷刑打断	inner	FUN_140b6b540 1683249 hist_figure_wounded 短語（部位後原文多一個空白，引擎收成一個再查；日期由 _events_00 處理）：斷肢：鈍擊；加害者＋酷刑
 the breaking away of {1}'s {%2} by {3} as a means of torture in {#4}	{4}年{1}的{2}遭{3}以酷刑打斷	{4}年{1}的{2}遭{3}以酷刑打断	inner	自動產生（scripts/gen_events.py）：06.tsv the breaking away of {1}'s {%2} by {3} as a means of torture 加上結尾的日期
 the breaking away of {1}'s {%2} by {3} as a means of torture in the {@4} of {#5}	{5}年{4}{1}的{2}遭{3}以酷刑打斷	{5}年{4}{1}的{2}遭{3}以酷刑打断	inner	自動產生（scripts/gen_events.py）：06.tsv the breaking away of {1}'s {%2} by {3} as a means of torture 加上結尾的日期

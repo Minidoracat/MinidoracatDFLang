@@ -1,0 +1,55 @@
+en	zh-Hant	zh-Hans	align	note
+World	世界	世界		FUN_1400ed7c0 L146194 報告視窗（announcements_interfacest）分頁／報告分類名
+Environment	環境	环境		同上
+Arrivals	抵達	抵达		同上：移民、商隊等抵達
+Attacks	攻擊	攻击		同上：襲擊類報告；不寫「襲擊」，免得別處的攻擊清單標題也變成襲擊
+Nobles	貴族	贵族		同上
+Animal	動物	动物		同上
+Life changes	人生變化	人生变化		同上：出生、婚姻等
+Strange moods	奇異心境	奇异心境		同上；術語 strange mood
+Profession changes	職業變更	职业变更		同上
+Mental state	精神狀態	精神状态		同上
+Masterpieces	傑作	杰作		同上
+Job failures	工作失敗	工作失败		同上
+Ghosts	鬼魂	鬼魂		同上
+Wildlife	野生動物	野生动物		同上
+Crime	罪行	罪行		同上；術語 crime
+Curses	詛咒	诅咒		同上
+Sparring	對練	对练		同上；FUN_1400ee8e0／FUN_1400ef6b0 單位報告分頁 Combat／Sparring／Hunting
+Creature	生物	生物		FUN_1400f2ff0 L151396 物件測試競技場：生物設定分頁（Creature／Skills／Equipment／Conditions）
+No team/side	無陣營	无阵营		FUN_1400f2ff0 L151180 物件測試競技場生物清單：沒有隊伍（上一列 Independent）
+Tame/mountable	馴服／可騎乘	驯服／可骑乘		FUN_1400f2ff0 L152177 物件測試競技場 Conditions 分頁：可切換的馴服狀態；術語 tame
+Set the weather, temperature, and time.	設定天氣、氣溫與時間。	设置天气、气温和时间。		FUN_1400f9c70 L155411 物件測試競技場天氣選單說明
+No cumulus clouds	無積雲	无积云		FUN_1400f9c70 L155476 競技場天氣選單：積雲欄（欄寬約 21 格）
+Scattered cumulus	零星積雲	零星积云		同上
+Many cumulus (rain)	大量積雲（降雨）	大量积云（降雨）		同上
+Cumulonimbus (rain)	積雨雲（降雨）	积雨云（降雨）		同上
+Cirrus	卷雲	卷云		FUN_1400f9c70 L155504 競技場天氣選單：卷雲
+No stratus	無層雲	无层云		FUN_1400f9c70 L155511 競技場天氣選單：層雲欄
+Altostratus	高層雲	高层云		同上
+Stratus (rain)	層雲（降雨）	层云（降雨）		同上
+Nimbostratus (rain)	雨層雲（降雨）	雨层云（降雨）		同上
+No fog	無霧	无雾		FUN_1400f9c70 L155539 競技場天氣選單：霧欄（No fog／Thin mist／Fog／Thick fog）；整句寫出，免得被 No {1} 之類句型拼成「否濃霧」
+Thin mist	薄霧	薄雾		同上；原本被拼成「單薄霧氣」
+Thick fog	濃霧	浓雾		同上；原本被拼成「茂密濃霧」
+Subterranean	地底	地下		FUN_1400f9c70 L155695 競技場天氣選單溫度欄：地底的溫度（Cool 與 Freezing 之間，欄寬 20 格）
+Below freezing	冰點以下	冰点以下		FUN_1400f9c70 L155709 競技場天氣選單溫度欄
+Deathly cold	致命嚴寒	致命严寒		同上；上一級 Freezing 是「嚴寒」
+Absolute zero	絕對零度	绝对零度		同上
+Morning	早上	早上		FUN_1400f9c70 L155811 競技場天氣選單時間欄：Dawn→Morning→Late morning→Noon→…→Late night→Early morning
+Late morning	上午稍晚	上午稍晚		同上
+Early afternoon	午後	午后		同上
+Late afternoon	下午稍晚	下午稍晚		同上
+Early evening	傍晚	傍晚		同上
+Evening	晚上	晚上		同上；下一個是 Dusk 黃昏
+Midnight	午夜	午夜		同上
+Late night	深夜	深夜		同上：午夜之後
+Early morning	凌晨	凌晨		同上：深夜之後、黎明之前
+Add new recenter location	新增視角位置	新增镜头位置		FUN_1401dbcf0 L245826 視角快捷鍵位置選單：清單最後一列；用詞同 tooltips_4 Delete this recenter location.；術語例外：location；視角快捷鍵的位置，不是場所
+Unnamed recenter location	未命名的視角位置	未命名的镜头位置		FUN_1401dbcf0 L245210 視角快捷鍵位置選單：沒取名的位置；術語例外：location；視角快捷鍵的位置，不是場所
+Really clear?	確定要清除？	确定要清除？		FUN_1401dbcf0 L245244 視角快捷鍵位置選單：清除確認
+Really overwrite?	確定要覆寫？	确定要覆盖？		FUN_1401dbcf0 L245271 視角快捷鍵位置選單：覆寫確認
+Recenter to 	視角移到 	镜头移到 		FUN_1401dbcf0 L245287 視角快捷鍵位置選單：位置類型，後面另畫 elevation …, position …
+Not yet assigned	尚未指定	尚未指定		FUN_1401dbcf0 L245513 視角快捷鍵位置選單：還沒設定目標
+Two Coins	Two Coins	Two Coins		FUN_1401ddd50 L248678 暫停選單音樂曲名（Track playing:），保留原文（同 Dolomite）；整句寫出，免得被句型拼成「兩錢幣」
+Sparring Site	對練場地	对练场地		FUN_140750010 L1022503 路徑目標名（round18 samples_fort5，Sparring Partner 同類）；加了 Sparring 後會被拼成「對練據點」，所以整句寫出

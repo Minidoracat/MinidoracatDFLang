@@ -1,0 +1,60 @@
+en	zh-Hant	zh-Hans	align	note
+No access	無法抵達	无法到达		FUN_140aafd10 L1559852／FUN_140ab10b0 L1561263 建造放置：工地周圍沒有可走到的格子
+Disconnected	未連接	未连接		FUN_140ab10b0 L1560197 建造放置：機械／軌道未連接
+Need trigger type	需要觸發類型	需要触发类型		FUN_140ab10b0 L1560206 建造放置：壓力板未設觸發條件
+Needs walkable perimeter	周圍需可通行	周围需可通行		FUN_140ab10b0 L1560493 建造放置；術語例外：needs
+Needs to be anchored on edge	需固定在邊緣	需固定在边缘		FUN_140ab10b0 L1560688 建造放置的錯誤清單（g_buildreq 錯誤字串，單獨一行）；術語例外：needs
+Blocked at this location	此處受阻	此处受阻		FUN_140ab10b0 L1560688 建造放置的錯誤清單（g_buildreq 錯誤字串，單獨一行）；術語例外：location
+Hidden, cannot build at this location	尚未探明，無法在此建造	尚未探明，无法在此建造		FUN_140ab10b0 L1560688 建造放置的錯誤清單（g_buildreq 錯誤字串，單獨一行）；術語例外：location
+Needs adjacent wall	需要鄰接牆壁	需要邻接墙壁		FUN_140ab10b0 L1560688 建造放置的錯誤清單（g_buildreq 錯誤字串，單獨一行）；術語例外：needs
+Off map	地圖外	地图外		FUN_140ab10b0 L1560688 建造放置的錯誤清單（g_buildreq 錯誤字串，單獨一行）
+Water at this location	此處有水	此处有水		FUN_140ab10b0 L1560688 建造放置的錯誤清單（g_buildreq 錯誤字串，單獨一行）；術語例外：location
+Lava/Magma at this location	此處有熔岩	此处有熔岩		FUN_140ab10b0 L1560688 建造放置的錯誤清單（g_buildreq 錯誤字串，單獨一行）；術語 magma 熔岩；術語例外：location
+Building present	已有建築	已有建筑		FUN_140ab10b0 L1560688 建造放置的錯誤清單（g_buildreq 錯誤字串，單獨一行）
+Must be inside	必須在室內	必须在室内		FUN_140ab10b0 L1560688 建造放置的錯誤清單（g_buildreq 錯誤字串，單獨一行）
+Too close to edge	太靠近邊緣	太靠近边缘		FUN_140ab10b0 L1560688 建造放置的錯誤清單（g_buildreq 錯誤字串，單獨一行）
+Must be outside	必須在室外	必须在室外		FUN_140ab10b0 L1560688 建造放置的錯誤清單（g_buildreq 錯誤字串，單獨一行）
+Surrounded by empty space	四周懸空	四周悬空		FUN_140ab10b0 L1560688 建造放置的錯誤清單（g_buildreq 錯誤字串，單獨一行）；empty space 同 open space 懸空處
+Cannot build at highest level	無法在最高層建造	无法在最高层建造		FUN_140ab10b0 L1560688 建造放置的錯誤清單（g_buildreq 錯誤字串，單獨一行）
+Must remove construction	須先移除建築結構	须先移除建筑结构		FUN_140ab10b0 L1560688 建造放置的錯誤清單（g_buildreq 錯誤字串，單獨一行）；construction 同建造選單 Constructions 建築結構
+Need soil or mud at location	此處需要土壤或泥巴	此处需要土壤或泥巴		FUN_140ab10b0 L1560688 建造放置的錯誤清單（g_buildreq 錯誤字串，單獨一行）；術語例外：location
+Need soil at location	此處需要土壤	此处需要土壤		FUN_140ab10b0 L1560773 建造放置；術語例外：location
+Needs ground or near machine	需在地面或靠近機器	需在地面或靠近机器		FUN_140ab10b0 L1560814 建造放置：機械零件；術語例外：needs
+No mud/soil for farm	農田沒有泥巴或土壤	农田没有泥巴或土壤		FUN_140ab10b0 L1560832 建造放置的提醒清單：農田；術語 farm plot 農田
+Mud is left by water	水退後會留下泥巴	水退后会留下泥巴		FUN_140ab10b0 L1560848 建造放置的提醒清單：農田（緊接 No mud/soil for farm）
+Mountainhome	山之家	山之家		FUN_140ab39d0 L1561772 左上要塞名稱列第二行：要塞等級（成為山之家）；同公告譯名
+Capital	首都	首都		FUN_140ab39d0 L1561775 左上要塞等級：君主遷入
+Metropolis	大都會	大都市		FUN_140ab39d0 L1561779 左上要塞等級（第 5 級）
+City	城市	城市		FUN_140ab39d0 L1561783 左上要塞等級（第 4 級）
+Village	村鎮	村镇		FUN_140ab39d0 L1561791 左上要塞等級（第 2 級，介於 Hamlet 村莊與 Town 城鎮之間）
+Royal Throne Room	皇家王座廳	皇家王座厅		FUN_140ab4f20 L1562603 房間等級名：貴族面板需求欄單獨畫出、「Needs: 」後接（L544607／L544616），FUN_1403a8730 接在「Has 」後
+Opulent Throne Room	豪華王座廳	豪华王座厅		FUN_140ab4f20 L1562603 房間等級名：貴族面板需求欄單獨畫出、「Needs: 」後接（L544607／L544616），FUN_1403a8730 接在「Has 」後
+Throne Room	王座廳	王座厅		FUN_140ab4f20 L1562603 房間等級名：貴族面板需求欄單獨畫出、「Needs: 」後接（L544607／L544616），FUN_1403a8730 接在「Has 」後
+Splendid Study	華麗書房	华丽书房		FUN_140ab4f20 L1562603 房間等級名：貴族面板需求欄單獨畫出、「Needs: 」後接（L544607／L544616），FUN_1403a8730 接在「Has 」後
+Decent Study	體面書房	体面书房		FUN_140ab4f20 L1562603 房間等級名：貴族面板需求欄單獨畫出、「Needs: 」後接（L544607／L544616），FUN_1403a8730 接在「Has 」後
+Modest Study	樸素書房	朴素书房		FUN_140ab4f20 L1562603 房間等級名：貴族面板需求欄單獨畫出、「Needs: 」後接（L544607／L544616），FUN_1403a8730 接在「Has 」後
+Meager Study	簡陋書房	简陋书房		FUN_140ab4f20 L1562603 房間等級名：貴族面板需求欄單獨畫出、「Needs: 」後接（L544607／L544616），FUN_1403a8730 接在「Has 」後
+Royal Bedroom	皇家臥室	皇家卧室		FUN_140ab4f20 L1562603 房間等級名：貴族面板需求欄單獨畫出、「Needs: 」後接（L544607／L544616），FUN_1403a8730 接在「Has 」後
+Grand Bedroom	宏偉臥室	宏伟卧室		FUN_140ab4f20 L1562603 房間等級名：貴族面板需求欄單獨畫出、「Needs: 」後接（L544607／L544616），FUN_1403a8730 接在「Has 」後
+Great Bedroom	上等臥室	上等卧室		FUN_140ab4f20 L1562603 房間等級名：貴族面板需求欄單獨畫出、「Needs: 」後接（L544607／L544616），FUN_1403a8730 接在「Has 」後；術語例外：Great
+Fine Quarters	精緻住處	精致住处		FUN_140ab4f20 L1562603 房間等級名：貴族面板需求欄單獨畫出、「Needs: 」後接（L544607／L544616），FUN_1403a8730 接在「Has 」後
+Decent Quarters	體面住處	体面住处		FUN_140ab4f20 L1562603 房間等級名：貴族面板需求欄單獨畫出、「Needs: 」後接（L544607／L544616），FUN_1403a8730 接在「Has 」後
+Quarters	住處	住处		FUN_140ab4f20 L1562603 房間等級名：貴族面板需求欄單獨畫出、「Needs: 」後接（L544607／L544616），FUN_1403a8730 接在「Has 」後
+Modest Quarters	樸素住處	朴素住处		FUN_140ab4f20 L1562603 房間等級名：貴族面板需求欄單獨畫出、「Needs: 」後接（L544607／L544616），FUN_1403a8730 接在「Has 」後
+Meager Quarters	簡陋住處	简陋住处		FUN_140ab4f20 L1562603 房間等級名：貴族面板需求欄單獨畫出、「Needs: 」後接（L544607／L544616），FUN_1403a8730 接在「Has 」後
+Royal Dining Room	皇家餐廳	皇家餐厅		FUN_140ab4f20 L1562603 房間等級名：貴族面板需求欄單獨畫出、「Needs: 」後接（L544607／L544616），FUN_1403a8730 接在「Has 」後
+Grand Dining Room	宏偉餐廳	宏伟餐厅		FUN_140ab4f20 L1562603 房間等級名：貴族面板需求欄單獨畫出、「Needs: 」後接（L544607／L544616），FUN_1403a8730 接在「Has 」後
+Great Dining Room	上等餐廳	上等餐厅		FUN_140ab4f20 L1562603 房間等級名：貴族面板需求欄單獨畫出、「Needs: 」後接（L544607／L544616），FUN_1403a8730 接在「Has 」後；術語例外：Great
+Fine Dining Room	精緻餐廳	精致餐厅		FUN_140ab4f20 L1562603 房間等級名：貴族面板需求欄單獨畫出、「Needs: 」後接（L544607／L544616），FUN_1403a8730 接在「Has 」後
+Decent Dining Room	體面餐廳	体面餐厅		FUN_140ab4f20 L1562603 房間等級名：貴族面板需求欄單獨畫出、「Needs: 」後接（L544607／L544616），FUN_1403a8730 接在「Has 」後
+Dining Room	餐廳	餐厅		FUN_140ab4f20 L1562603 房間等級名：貴族面板需求欄單獨畫出、「Needs: 」後接（L544607／L544616），FUN_1403a8730 接在「Has 」後
+Modest Dining Room	樸素餐廳	朴素餐厅		FUN_140ab4f20 L1562603 房間等級名：貴族面板需求欄單獨畫出、「Needs: 」後接（L544607／L544616），FUN_1403a8730 接在「Has 」後
+Meager Dining Room	簡陋餐廳	简陋餐厅		FUN_140ab4f20 L1562603 房間等級名：貴族面板需求欄單獨畫出、「Needs: 」後接（L544607／L544616），FUN_1403a8730 接在「Has 」後
+Royal Mausoleum	皇家陵墓	皇家陵墓		FUN_140ab4f20 L1562603 房間等級名：貴族面板需求欄單獨畫出、「Needs: 」後接（L544607／L544616），FUN_1403a8730 接在「Has 」後
+Grand Mausoleum	宏偉陵墓	宏伟陵墓		FUN_140ab4f20 L1562603 房間等級名：貴族面板需求欄單獨畫出、「Needs: 」後接（L544607／L544616），FUN_1403a8730 接在「Has 」後
+Mausoleum	陵墓	陵墓		FUN_140ab4f20 L1562603 房間等級名：貴族面板需求欄單獨畫出、「Needs: 」後接（L544607／L544616），FUN_1403a8730 接在「Has 」後
+Fine Tomb	精緻墓室	精致墓室		FUN_140ab4f20 L1562603 房間等級名：貴族面板需求欄單獨畫出、「Needs: 」後接（L544607／L544616），FUN_1403a8730 接在「Has 」後
+Burial Chamber	墓穴	墓穴		FUN_140ab4f20 L1562603 房間等級名：貴族面板需求欄單獨畫出、「Needs: 」後接（L544607／L544616），FUN_1403a8730 接在「Has 」後
+Servant's Burial Chamber	僕役墓穴	仆役墓穴		FUN_140ab4f20 L1562603 房間等級名：貴族面板需求欄單獨畫出、「Needs: 」後接（L544607／L544616），FUN_1403a8730 接在「Has 」後
+Grave	墳墓	坟墓		FUN_140ab4f20 L1562603 房間等級名：貴族面板需求欄單獨畫出、「Needs: 」後接（L544607／L544616），FUN_1403a8730 接在「Has 」後
+Has Study	已有書房	已有书房		FUN_1403a8730 L477435 房間狀態：Has ＋房間等級（Study 單字不放全域，見回報）

@@ -1366,7 +1366,7 @@ golden servant	黃金僕從	黄金仆从		mythical.lua 263-286 顯示名：前�
 grave servant	墳墓僕從	坟墓仆从		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 hidden servant	隱匿僕從	隐匿仆从		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 ice servant	冰僕從	冰仆从		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
-lava servant	岩漿僕從	岩浆仆从		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
+lava servant	熔岩僕從	熔岩仆从		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 lunar servant	月輪僕從	月轮仆从		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 marsh servant	濕地僕從	湿地仆从		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 morning servant	晨曦僕從	晨曦仆从		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
@@ -1404,7 +1404,7 @@ servant of forests	森林僕從	森林仆从		mythical.lua 263-286 顯示名：�
 servant of gales	狂風僕從	狂风仆从		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 servant of grasses	草叢僕從	草丛仆从		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 servant of ice	冰僕從	冰仆从		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
-servant of lava	岩漿僕從	岩浆仆从		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
+servant of lava	熔岩僕從	熔岩仆从		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 servant of noon	正午僕從	正午仆从		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 servant of rains	雨水僕從	雨水仆从		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 servant of root	樹根僕從	树根仆从		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
@@ -1450,7 +1450,7 @@ golden follower	黃金追隨者	黄金追随者		mythical.lua 263-286 顯示名�
 grave follower	墳墓追隨者	坟墓追随者		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 hidden follower	隱匿追隨者	隐匿追随者		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 ice follower	冰追隨者	冰追随者		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
-lava follower	岩漿追隨者	岩浆追随者		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
+lava follower	熔岩追隨者	熔岩追随者		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 lunar follower	月輪追隨者	月轮追随者		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 marsh follower	濕地追隨者	湿地追随者		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 morning follower	晨曦追隨者	晨曦追随者		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
@@ -1488,7 +1488,7 @@ follower of forests	森林追隨者	森林追随者		mythical.lua 263-286 顯示
 follower of gales	狂風追隨者	狂风追随者		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 follower of grasses	草叢追隨者	草丛追随者		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 follower of ice	冰追隨者	冰追随者		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
-follower of lava	岩漿追隨者	岩浆追随者		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
+follower of lava	熔岩追隨者	熔岩追随者		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 follower of noon	正午追隨者	正午追随者		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 follower of rains	雨水追隨者	雨水追随者		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 follower of root	樹根追隨者	树根追随者		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
@@ -1534,7 +1534,7 @@ golden cultist	黃金邪教徒	黄金邪教徒		mythical.lua 263-286 顯示名�
 grave cultist	墳墓邪教徒	坟墓邪教徒		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 hidden cultist	隱匿邪教徒	隐匿邪教徒		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 ice cultist	冰邪教徒	冰邪教徒		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
-lava cultist	岩漿邪教徒	岩浆邪教徒		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
+lava cultist	熔岩邪教徒	熔岩邪教徒		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 lunar cultist	月輪邪教徒	月轮邪教徒		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 marsh cultist	濕地邪教徒	湿地邪教徒		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 morning cultist	晨曦邪教徒	晨曦邪教徒		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
@@ -1572,7 +1572,7 @@ cultist of forests	森林邪教徒	森林邪教徒		mythical.lua 263-286 顯示�
 cultist of gales	狂風邪教徒	狂风邪教徒		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 cultist of grasses	草叢邪教徒	草丛邪教徒		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 cultist of ice	冰邪教徒	冰邪教徒		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
-cultist of lava	岩漿邪教徒	岩浆邪教徒		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
+cultist of lava	熔岩邪教徒	熔岩邪教徒		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 cultist of noon	正午邪教徒	正午邪教徒		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 cultist of rains	雨水邪教徒	雨水邪教徒		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 cultist of root	樹根邪教徒	树根邪教徒		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
@@ -1618,7 +1618,7 @@ golden worshipper	黃金信徒	黄金信徒		mythical.lua 263-286 顯示名：�
 grave worshipper	墳墓信徒	坟墓信徒		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 hidden worshipper	隱匿信徒	隐匿信徒		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 ice worshipper	冰信徒	冰信徒		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
-lava worshipper	岩漿信徒	岩浆信徒		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
+lava worshipper	熔岩信徒	熔岩信徒		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 lunar worshipper	月輪信徒	月轮信徒		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 marsh worshipper	濕地信徒	湿地信徒		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 morning worshipper	晨曦信徒	晨曦信徒		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
@@ -1656,7 +1656,7 @@ worshipper of forests	森林信徒	森林信徒		mythical.lua 263-286 顯示名�
 worshipper of gales	狂風信徒	狂风信徒		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 worshipper of grasses	草叢信徒	草丛信徒		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 worshipper of ice	冰信徒	冰信徒		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
-worshipper of lava	岩漿信徒	岩浆信徒		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
+worshipper of lava	熔岩信徒	熔岩信徒		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 worshipper of noon	正午信徒	正午信徒		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 worshipper of rains	雨水信徒	雨水信徒		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 worshipper of root	樹根信徒	树根信徒		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
@@ -1702,7 +1702,7 @@ golden adept	黃金術士	黄金术士		mythical.lua 263-286 顯示名：前置�
 grave adept	墳墓術士	坟墓术士		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）；神話力量的修行者，不是技能等級；術語例外：Adept；死靈法術的「術士」，不是技能等級；術語例外：adept
 hidden adept	隱匿術士	隐匿术士		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）；神話力量的修行者，不是技能等級；術語例外：Adept；死靈法術的「術士」，不是技能等級；術語例外：adept
 ice adept	冰術士	冰术士		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）；神話力量的修行者，不是技能等級；術語例外：Adept；死靈法術的「術士」，不是技能等級；術語例外：adept
-lava adept	岩漿術士	岩浆术士		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）；神話力量的修行者，不是技能等級；術語例外：Adept；死靈法術的「術士」，不是技能等級；術語例外：adept
+lava adept	熔岩術士	熔岩术士		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）；神話力量的修行者，不是技能等級；術語例外：Adept；死靈法術的「術士」，不是技能等級；術語例外：adept
 lunar adept	月輪術士	月轮术士		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）；神話力量的修行者，不是技能等級；術語例外：Adept；死靈法術的「術士」，不是技能等級；術語例外：adept
 marsh adept	濕地術士	湿地术士		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）；神話力量的修行者，不是技能等級；術語例外：Adept；死靈法術的「術士」，不是技能等級；術語例外：adept
 morning adept	晨曦術士	晨曦术士		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）；神話力量的修行者，不是技能等級；術語例外：Adept；死靈法術的「術士」，不是技能等級；術語例外：adept
@@ -1740,7 +1740,7 @@ adept of forests	森林術士	森林术士		mythical.lua 263-286 顯示名：名
 adept of gales	狂風術士	狂风术士		mythical.lua 263-286 顯示名：名詞＋後置片語（270）；神話力量的修行者，不是技能等級；術語例外：Adept；死靈法術的「術士」，不是技能等級；術語例外：adept
 adept of grasses	草叢術士	草丛术士		mythical.lua 263-286 顯示名：名詞＋後置片語（270）；神話力量的修行者，不是技能等級；術語例外：Adept；死靈法術的「術士」，不是技能等級；術語例外：adept
 adept of ice	冰術士	冰术士		mythical.lua 263-286 顯示名：名詞＋後置片語（270）；神話力量的修行者，不是技能等級；術語例外：Adept；死靈法術的「術士」，不是技能等級；術語例外：adept
-adept of lava	岩漿術士	岩浆术士		mythical.lua 263-286 顯示名：名詞＋後置片語（270）；神話力量的修行者，不是技能等級；術語例外：Adept；死靈法術的「術士」，不是技能等級；術語例外：adept
+adept of lava	熔岩術士	熔岩术士		mythical.lua 263-286 顯示名：名詞＋後置片語（270）；神話力量的修行者，不是技能等級；術語例外：Adept；死靈法術的「術士」，不是技能等級；術語例外：adept
 adept of noon	正午術士	正午术士		mythical.lua 263-286 顯示名：名詞＋後置片語（270）；神話力量的修行者，不是技能等級；術語例外：Adept；死靈法術的「術士」，不是技能等級；術語例外：adept
 adept of rains	雨水術士	雨水术士		mythical.lua 263-286 顯示名：名詞＋後置片語（270）；神話力量的修行者，不是技能等級；術語例外：Adept；死靈法術的「術士」，不是技能等級；術語例外：adept
 adept of root	樹根術士	树根术士		mythical.lua 263-286 顯示名：名詞＋後置片語（270）；神話力量的修行者，不是技能等級；術語例外：Adept；死靈法術的「術士」，不是技能等級；術語例外：adept
@@ -1786,7 +1786,7 @@ golden priest	黃金祭司	黄金祭司		mythical.lua 263-286 顯示名：前置
 grave priest	墳墓祭司	坟墓祭司		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 hidden priest	隱匿祭司	隐匿祭司		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 ice priest	冰祭司	冰祭司		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
-lava priest	岩漿祭司	岩浆祭司		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
+lava priest	熔岩祭司	熔岩祭司		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 lunar priest	月輪祭司	月轮祭司		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 marsh priest	濕地祭司	湿地祭司		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 morning priest	晨曦祭司	晨曦祭司		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
@@ -1824,7 +1824,7 @@ priest of forests	森林祭司	森林祭司		mythical.lua 263-286 顯示名：�
 priest of gales	狂風祭司	狂风祭司		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 priest of grasses	草叢祭司	草丛祭司		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 priest of ice	冰祭司	冰祭司		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
-priest of lava	岩漿祭司	岩浆祭司		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
+priest of lava	熔岩祭司	熔岩祭司		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 priest of noon	正午祭司	正午祭司		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 priest of rains	雨水祭司	雨水祭司		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 priest of root	樹根祭司	树根祭司		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
@@ -1870,7 +1870,7 @@ golden cleric	黃金神官	黄金神官		mythical.lua 263-286 顯示名：前置
 grave cleric	墳墓神官	坟墓神官		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 hidden cleric	隱匿神官	隐匿神官		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 ice cleric	冰神官	冰神官		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
-lava cleric	岩漿神官	岩浆神官		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
+lava cleric	熔岩神官	熔岩神官		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 lunar cleric	月輪神官	月轮神官		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 marsh cleric	濕地神官	湿地神官		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 morning cleric	晨曦神官	晨曦神官		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
@@ -1908,7 +1908,7 @@ cleric of forests	森林神官	森林神官		mythical.lua 263-286 顯示名：�
 cleric of gales	狂風神官	狂风神官		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 cleric of grasses	草叢神官	草丛神官		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 cleric of ice	冰神官	冰神官		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
-cleric of lava	岩漿神官	岩浆神官		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
+cleric of lava	熔岩神官	熔岩神官		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 cleric of noon	正午神官	正午神官		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 cleric of rains	雨水神官	雨水神官		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 cleric of root	樹根神官	树根神官		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
@@ -1954,7 +1954,7 @@ golden shaman	黃金薩滿	黄金萨满		mythical.lua 263-286 顯示名：前置
 grave shaman	墳墓薩滿	坟墓萨满		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 hidden shaman	隱匿薩滿	隐匿萨满		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 ice shaman	冰薩滿	冰萨满		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
-lava shaman	岩漿薩滿	岩浆萨满		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
+lava shaman	熔岩薩滿	熔岩萨满		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 lunar shaman	月輪薩滿	月轮萨满		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 marsh shaman	濕地薩滿	湿地萨满		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 morning shaman	晨曦薩滿	晨曦萨满		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
@@ -1992,7 +1992,7 @@ shaman of forests	森林薩滿	森林萨满		mythical.lua 263-286 顯示名：�
 shaman of gales	狂風薩滿	狂风萨满		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 shaman of grasses	草叢薩滿	草丛萨满		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 shaman of ice	冰薩滿	冰萨满		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
-shaman of lava	岩漿薩滿	岩浆萨满		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
+shaman of lava	熔岩薩滿	熔岩萨满		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 shaman of noon	正午薩滿	正午萨满		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 shaman of rains	雨水薩滿	雨水萨满		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 shaman of root	樹根薩滿	树根萨满		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
@@ -2038,7 +2038,7 @@ golden lord	黃金領主	黄金领主		mythical.lua 263-286 顯示名：前置�
 grave lord	墳墓領主	坟墓领主		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 hidden lord	隱匿領主	隐匿领主		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 ice lord	冰領主	冰领主		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
-lava lord	岩漿領主	岩浆领主		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
+lava lord	熔岩領主	熔岩领主		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 lunar lord	月輪領主	月轮领主		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 marsh lord	濕地領主	湿地领主		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 morning lord	晨曦領主	晨曦领主		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
@@ -2076,7 +2076,7 @@ lord of forests	森林領主	森林领主		mythical.lua 263-286 顯示名：名�
 lord of gales	狂風領主	狂风领主		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 lord of grasses	草叢領主	草丛领主		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 lord of ice	冰領主	冰领主		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
-lord of lava	岩漿領主	岩浆领主		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
+lord of lava	熔岩領主	熔岩领主		mythical.lua 263-286 顯示名：名詞＋後置片語（270）；lava、magma 都譯熔岩（術語表）
 lord of noon	正午領主	正午领主		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 lord of rains	雨水領主	雨水领主		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 lord of root	樹根領主	树根领主		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
@@ -2122,7 +2122,7 @@ golden master	黃金主宰	黄金主宰		mythical.lua 263-286 顯示名：前置
 grave master	墳墓主宰	坟墓主宰		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 hidden master	隱匿主宰	隐匿主宰		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 ice master	冰主宰	冰主宰		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
-lava master	岩漿主宰	岩浆主宰		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
+lava master	熔岩主宰	熔岩主宰		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 lunar master	月輪主宰	月轮主宰		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 marsh master	濕地主宰	湿地主宰		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 morning master	晨曦主宰	晨曦主宰		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
@@ -2160,7 +2160,7 @@ master of forests	森林主宰	森林主宰		mythical.lua 263-286 顯示名：�
 master of gales	狂風主宰	狂风主宰		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 master of grasses	草叢主宰	草丛主宰		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 master of ice	冰主宰	冰主宰		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
-master of lava	岩漿主宰	岩浆主宰		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
+master of lava	熔岩主宰	熔岩主宰		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 master of noon	正午主宰	正午主宰		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 master of rains	雨水主宰	雨水主宰		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 master of root	樹根主宰	树根主宰		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
@@ -2206,7 +2206,7 @@ golden ancient	黃金古老者	黄金古老者		mythical.lua 263-286 顯示名�
 grave ancient	墳墓古老者	坟墓古老者		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 hidden ancient	隱匿古老者	隐匿古老者		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 ice ancient	冰古老者	冰古老者		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
-lava ancient	岩漿古老者	岩浆古老者		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
+lava ancient	熔岩古老者	熔岩古老者		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 lunar ancient	月輪古老者	月轮古老者		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 marsh ancient	濕地古老者	湿地古老者		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 morning ancient	晨曦古老者	晨曦古老者		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
@@ -2244,7 +2244,7 @@ ancient of forests	森林古老者	森林古老者		mythical.lua 263-286 顯示�
 ancient of gales	狂風古老者	狂风古老者		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 ancient of grasses	草叢古老者	草丛古老者		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 ancient of ice	冰古老者	冰古老者		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
-ancient of lava	岩漿古老者	岩浆古老者		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
+ancient of lava	熔岩古老者	熔岩古老者		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 ancient of noon	正午古老者	正午古老者		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 ancient of rains	雨水古老者	雨水古老者		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 ancient of root	樹根古老者	树根古老者		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
@@ -2290,7 +2290,7 @@ golden elder	黃金長老	黄金长老		mythical.lua 263-286 顯示名：前置�
 grave elder	墳墓長老	坟墓长老		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 hidden elder	隱匿長老	隐匿长老		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 ice elder	冰長老	冰长老		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
-lava elder	岩漿長老	岩浆长老		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
+lava elder	熔岩長老	熔岩长老		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 lunar elder	月輪長老	月轮长老		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 marsh elder	濕地長老	湿地长老		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
 morning elder	晨曦長老	晨曦长老		mythical.lua 263-286 顯示名：前置形容詞＋名詞（273）
@@ -2328,7 +2328,7 @@ elder of forests	森林長老	森林长老		mythical.lua 263-286 顯示名：名
 elder of gales	狂風長老	狂风长老		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 elder of grasses	草叢長老	草丛长老		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 elder of ice	冰長老	冰长老		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
-elder of lava	岩漿長老	岩浆长老		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
+elder of lava	熔岩長老	熔岩长老		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 elder of noon	正午長老	正午长老		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 elder of rains	雨水長老	雨水长老		mythical.lua 263-286 顯示名：名詞＋後置片語（270）
 elder of root	樹根長老	树根长老		mythical.lua 263-286 顯示名：名詞＋後置片語（270）

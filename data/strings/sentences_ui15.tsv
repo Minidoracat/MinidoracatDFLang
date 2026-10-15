@@ -1,0 +1,5 @@
+en	zh-Hant	zh-Hans	align	note
+Nameless	無名氏	无名氏		FUN_140b92f10 L1706888／FUN_1402b6760 審訊紀錄、陰謀清單裡沒有名字的人物（UI5 同字交由本檔）
+an unidentified creature	某個身分不明的生物	某个身份不明的生物		FUN_140b92f10 L1706863 審訊紀錄裡查不到身分的人物
+interrogator	審訊者	审讯者	inner	FUN_140b92f10 L1706851 審訊紀錄：人物就是審訊者時寫這個字（接在事件句裡）
+subject	受審者	受审者	inner	FUN_140b92f10 L1706856 審訊紀錄：人物就是受審者時寫這個字（接在事件句裡）

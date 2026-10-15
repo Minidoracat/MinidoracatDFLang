@@ -18,6 +18,9 @@ You straps {%1} to {@2} {%3}.	你把{1}綁到{3}上。	你把{1}绑到{3}上。	
 {1} straps {%2} to {@3} {%4}.	{1}把{2}綁到{4}上。	{1}把{2}绑到{4}上。		FUN_141502780:2866180；{2} 物品、{4} 身體部位
 {1} comes out of {@2} shell.	{1}從殼裡探出頭來。	{1}从壳里探出头来。		FUN_141502780:2866284；raws RETRACT_INTO_BP 的字串（<pro_pos> 換成 his/her/its），原版只有龜類的 shell
 {1} retracts into {@2} shell.	{1}縮進殼裡。	{1}缩进壳里。		FUN_141502780:2867012；同上
+{%1} flounders in the water!	{1}在水裡掙扎！	{1}在水里挣扎！		FUN_1415059c0:2867954；玩家本人見 strings；{%1} 版排在前面：開頭是 {1} 的句型排序在後，會被 combat_02 的「{%1} {@2} {%3} in the {%4}!」搶先（The giant cave spider 拆成 giant／cave／spider flounders）
+{%1} flounders in the lava!	{1}在熔岩裡掙扎！	{1}在熔岩里挣扎！		FUN_1415059c0:2867965；同上；{%1} 版排在前面：開頭是 {1} 的句型排序在後，會被 combat_02 的「{%1} {@2} {%3} in the {%4}!」搶先（The giant cave spider 拆成 giant／cave／spider flounders）
+{%1} flounders in the magma!	{1}在熔岩裡掙扎！	{1}在熔岩里挣扎！		FUN_1415059c0:2867967；同上；{%1} 版排在前面：開頭是 {1} 的句型排序在後，會被 combat_02 的「{%1} {@2} {%3} in the {%4}!」搶先（The giant cave spider 拆成 giant／cave／spider flounders）
 {1} flounders in the water!	{1}在水裡掙扎！	{1}在水里挣扎！		FUN_1415059c0:2867954；玩家本人見 strings
 {1} flounders in the lava!	{1}在熔岩裡掙扎！	{1}在熔岩里挣扎！		FUN_1415059c0:2867965；同上
 {1} flounders in the magma!	{1}在熔岩裡掙扎！	{1}在熔岩里挣扎！		FUN_1415059c0:2867967；同上

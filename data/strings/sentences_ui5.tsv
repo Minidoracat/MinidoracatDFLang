@@ -1,0 +1,67 @@
+en	zh-Hant	zh-Hans	align	note
+FPS has dropped below 50. Multithreading is not on, and may improve performance. Do you wish to enable it? (You can always turn it off or on in the options later.)	FPS 已降到 50 以下。目前沒有開啟多執行緒，開啟後可能改善效能。要啟用嗎？（之後隨時可以在選項中開關。）	FPS 已降到 50 以下。目前没有开启多线程，开启后可能提升性能。要启用吗？（之后随时可以在选项中开关。）		FUN_1402839d0 L341835 是／否確認視窗（confirm_modal_yesno，Warning Text Scroll 文字框）；多執行緒用語同 settings Enable multithreading
+Greetings from the Mountainhomes.	來自山之家的問候。	来自山之家的问候。		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）：本族商隊（整句，免得被通用問候句型拆成半中半英）
+Greetings from the outer lands.	來自外地的問候。	来自外地的问候。		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）：本族商隊（冒險者建立的文明）
+Your efforts are legend there.	你們的功績在那裡已成傳奇。	你们的功绩在那里已成传奇。		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+Let us trade!	我們來交易吧！	我们来交易吧！		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+Let's make a deal!	來談筆生意吧！	来谈笔生意吧！		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+Greetings from our mountain halls to yours.	我們的山中殿堂向你們的殿堂致意。	我们的山中殿堂向你们的殿堂致意。		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）：矮人外族商隊
+Let us strengthen our bonds in trade.	讓我們透過貿易加深情誼。	让我们通过贸易加深情谊。		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+We are enchanted by your more ethical works.	你們那些較合乎道德的作品令我們著迷。	你们那些更合乎道德的作品令我们着迷。		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）：精靈商隊
+We've come to trade.	我們是來交易的。	我们是来交易的。		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+These goods are too heavy and cheap for me to consider.	這些貨又重又不值錢，我不考慮。	这些货又重又不值钱，我不考虑。		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+I cannot take so much -- and at such cost!	我拿不了這麼多，而且還這麼貴！	我拿不了这么多，而且还这么贵！		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+Do not tempt me!	別誘惑我了！	别诱惑我了！		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+My beasts of burden cannot possibly haul such a load.	我的馱獸不可能拖得動這麼多貨。	我的驮兽不可能拉得动这么多货。		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+I wish I could take so much, but my animals...	我也很想全部帶走，可是我的牲口……	我也很想全部带走，可是我的牲口……		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+I must make a profit.	我總得賺錢才行。	我总得赚钱才行。		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+There is simply not enough value here.	這些東西的價值根本不夠。	这些东西的价值根本不够。		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+I won't trade at a loss.	我不做賠本生意。	我不做赔本生意。		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+Ah, wonderful.	啊，太好了。	啊，太好了。		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+Thank you for your business.	感謝惠顧。	感谢惠顾。		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+I will see that our leader gets this offering.	我會把這份獻禮交給我們的領袖。	我会把这份献礼交给我们的首领。		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+You are too kind.	您太客氣了。	您太客气了。		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+Take what you wish.	想拿什麼就拿吧。	想拿什么就拿吧。		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）：要塞扣押貨物時
+I can't stop you.	我攔不住你。	我拦不住你。		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+You wish to make an offering to our leader?	你想向我們的領袖獻禮？	你想向我们的首领献礼？		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+This would please us greatly.	這會讓我們非常高興。	这会让我们非常高兴。		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+What do you offer?	你要獻上什麼？	你要献上什么？		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+You wish to make an offering?	你想獻禮？	你想献礼？		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+We love gifts.	我們最喜歡禮物了。	我们最喜欢礼物了。		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+Obviously, your copious wit is matched only by your industry!	看來你們的機智就跟你們的勤奮一樣過人！	看来你们的机智就跟你们的勤奋一样过人！		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+[Laughs uproariously]  You had me going there.	（放聲大笑）你剛剛差點就唬住我了。	（放声大笑）你刚刚差点就唬住我了。		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）：[ ] 是動作描寫；句子在 there. 後切開
+[Chuckles]  How droll.	（輕笑）真是逗趣。	（轻笑）真是逗趣。		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）：[ ] 是動作描寫
+I am a merchant, yes.	沒錯，我是商人。	没错，我是商人。		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+You see, I wish to trade.	你瞧，我想做生意。	你瞧，我想做生意。		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+Which of my goods do you desire?	你想要我的哪些貨？	你想要我的哪些货？		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+Yes, and trade we will!	沒錯，我們這就來交易！	没错，我们这就来交易！		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+Simply tell me what interests you and what you're prepared to offer in exchange.	只要告訴我你對什麼有興趣，又打算拿什麼來換。	只要告诉我你对什么感兴趣，又打算拿什么来换。		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+Ah, but my goods are not free!	啊，可是我的貨不是白送的！	啊，可是我的货不是白送的！		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+What do you offer in trade?	你要拿什麼來換？	你要拿什么来换？		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+These _are_ fine items, aren't they?	這些貨『真的』很不錯吧？	这些货‘真的’很不错吧？		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）（原文 _are_ 強調，用引號）
+Now, what do offer for them?	那麼，你要出什麼來換？	那么，你要出什么来换？		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）（原文少了 you，照抄）
+For me?	給我的？	给我的？		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+At no price?	不用錢？	不要钱？		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+I can accept your offer, or perhaps you wish to trade.	我可以接受，或者你想交易？	我可以接受，或者你想交易？		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+My stones, are you giving me those?	我的老天，你要把這些送給我？	我的老天，你要把这些送给我？		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）（My stones 是矮人的驚嘆語）
+Do you wish to trade or to make an offering to our leader?	你是想交易，還是想向我們的領袖獻禮？	你是想交易，还是想向我们的首领献礼？		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+Are these gifts?	這些是禮物嗎？	这些是礼物吗？		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+Do you wish to trade?	你想交易嗎？	你想交易吗？		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+You truly despise life, don't you?	你真的很蔑視生命，對吧？	你真的很蔑视生命，对吧？		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）：精靈看到動物製品
+I am beside myself with grief.	我悲痛欲絕。	我悲痛欲绝。		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+Perhaps we will show you how they suffered.	或許我們該讓你嘗嘗牠們受過的苦。	或许我们该让你尝尝它们受过的苦。		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+I see your low race still revels in death.	看來你們這低等種族還是以殺戮為樂。	看来你们这低等种族还是以杀戮为乐。		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+That poor, gentle creature...	那可憐又溫馴的生物……	那可怜又温驯的生物……		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+Once a beautiful tree, and now?	曾經是一棵美麗的樹，現在呢？	曾经是一棵美丽的树，现在呢？		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）：精靈看到木製品
+It is a rude bauble, fit only for your kind.	不過是個粗陋的小玩意，只配給你們這種人。	不过是个粗陋的小玩意，只配给你们这种人。		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+Please understand the journey must be profitable.	請體諒，這趟旅程總得有賺頭。	请体谅，这趟旅程总得有赚头。		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+Perhaps you'd consider tossing in a little extra?	要不要考慮再多添一點？	要不要考虑再多添一点？		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+You'll need more goods to make this arrangement.	你得拿出更多貨物才談得成。	你得拿出更多货物才谈得成。		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+All I see here is not enough.	我看這些還不夠。	我看这些还不够。		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+Even with your combined trade goods, such as they are, I can't fathom you ending up with the items you desire.	就算把你們那點貨全加起來，我也想不出你們要怎麼換到想要的東西。	就算把你们那点货全加起来，我也想不出你们要怎么换到想要的东西。		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+A hairy drunkard has come hither to once more disrespect the sanctity of life, I see.	看來又有個毛茸茸的醉鬼跑來褻瀆生命的神聖了。	看来又有个毛茸茸的醉鬼跑来亵渎生命的神圣了。		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）：精靈對矮人
+Your childish games have made me tired.	你們幼稚的把戲讓我累了。	你们幼稚的把戏让我累了。		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+Perhaps next time I visit you'll take this seriously.	也許下次我來時，你們會認真一點。	也许下次我来时，你们会认真一点。		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+Leave it to the besotted dullard to miss the finer points of discourse.	果然是爛醉的蠢材，聽不懂話裡的細膩之處。	果然是烂醉的蠢材，听不懂话里的细腻之处。		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+I'm leaving.	我走了。	我走了。		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）
+Do reflect.	好好反省吧。	好好反省吧。		FUN_140384850 L455176-455372 交易畫面：商人說的話（前後加引號、wrap_text 逐句）

@@ -1,0 +1,13 @@
+en	zh-Hant	zh-Hans	align	note
+Tree	樹木	树木		FUN_140e7d330 L2174464 地圖游標地形名稱：沒有植物資料的樹（L2176371）；與 FUN_140200070 L266881 的 Tree 標籤同義
+Level Ice Floor	平整冰面	平整冰面		FUN_140e7d330 L2174464 地圖游標地形名稱：未雕刻的冰地板（L2176612，Level＋ Ice Floor）
+Sculpted Ice Floor	浮雕冰面	浮雕冰面		FUN_140e7d330 L2174464 地圖游標地形名稱：雕刻過的冰地板（L2176612）
+Cluster	晶簇	晶簇	inner	FUN_140e7d330 L2174464 地圖游標地形名稱：寶石礦脈的牆（材料＋ Cluster，L2175292）；只給句型佔位用
+tower-cap cap	塔帽菇菌蓋	塔帽菇菌盖		FUN_140e7d330 L2174464 地圖游標地形名稱：巨菇樹的菌蓋（FUN_1413ffd20 樹名＋ cap）；整句寫出，免得 cap 套到頭盔「帽子」
+Dead tower-cap cap	枯死塔帽菇菌蓋	枯死塔帽菇菌盖		FUN_140e7d330 L2174464 地圖游標地形名稱：枯死的巨菇樹菌蓋；整句寫出，免得 terrain.tsv 的 Dead {@1} {@2} 把 cap 譯成「帽子」
+black-cap cap	黑帽菇菌蓋	黑帽菇菌盖		FUN_140e7d330 L2174464 地圖游標地形名稱：巨菇樹的菌蓋（FUN_1413ffd20 樹名＋ cap）；整句寫出，免得 cap 套到頭盔「帽子」
+Dead black-cap cap	枯死黑帽菇菌蓋	枯死黑帽菇菌盖		FUN_140e7d330 L2174464 地圖游標地形名稱：枯死的巨菇樹菌蓋；整句寫出，免得 terrain.tsv 的 Dead {@1} {@2} 把 cap 譯成「帽子」
+nether-cap cap	冥帽菇菌蓋	冥帽菇菌盖		FUN_140e7d330 L2174464 地圖游標地形名稱：巨菇樹的菌蓋（FUN_1413ffd20 樹名＋ cap）；整句寫出，免得 cap 套到頭盔「帽子」
+Dead nether-cap cap	枯死冥帽菇菌蓋	枯死冥帽菇菌盖		FUN_140e7d330 L2174464 地圖游標地形名稱：枯死的巨菇樹菌蓋；整句寫出，免得 terrain.tsv 的 Dead {@1} {@2} 把 cap 譯成「帽子」
+goblin-cap cap	哥布林帽菇菌蓋	哥布林帽菇菌盖		FUN_140e7d330 L2174464 地圖游標地形名稱：巨菇樹的菌蓋（FUN_1413ffd20 樹名＋ cap）；整句寫出，免得 cap 套到頭盔「帽子」
+Dead goblin-cap cap	枯死哥布林帽菇菌蓋	枯死哥布林帽菇菌盖		FUN_140e7d330 L2174464 地圖游標地形名稱：枯死的巨菇樹菌蓋；整句寫出，免得 terrain.tsv 的 Dead {@1} {@2} 把 cap 譯成「帽子」

@@ -269,6 +269,7 @@ shaman of {%1}	{1}薩滿	{1}萨满		mythical.lua 263-286 顯示名：名詞 of �
 {@1} shaman	{1}薩滿	{1}萨满		mythical.lua 263-286 顯示名：形容詞＋名詞
 {@1} lord below	{1}地底領主	{1}地底领主		mythical.lua 263-286 顯示名；前接種族
 {@1} lord mud	{1}泥沼領主	{1}泥沼领主		mythical.lua 263-286 顯示名；前接種族
+{@1} lord of bones	{1}骸骨領主	{1}骸骨领主		mythical.lua 263-286 顯示名：種族＋lord of bones；整句條目是「骸骨領主」，下一條會把 bones 拆成「骨頭」
 {@1} lord of {%2}	{1}{2}領主	{1}{2}领主		mythical.lua 263-286 顯示名：種族＋名詞 of 片語
 lord of {%1}	{1}領主	{1}领主		mythical.lua 263-286 顯示名：名詞 of 片語
 {@1} {@2} lord	{1}{2}領主	{1}{2}领主		mythical.lua 263-286 顯示名：種族＋形容詞＋名詞

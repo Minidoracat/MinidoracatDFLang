@@ -1,2 +1,6 @@
 en	zh-Hant	zh-Hans	align	row	note
 Temperate	溫和	温和			地點資訊的氣溫值（不是溫帶）；同一個字在人格特質是「節制」，所以只在選出發地點畫面套用
+Elevation	海拔	海拔			FUN_141046410 L2413778 尋找出發地點的條件欄（UI20）；全域會搶走事件短語 the elevation of
+Spirit	善惡	善恶			FUN_141046410 L2413773 尋找出發地點的條件欄，值為 Good／Normal／Evil（UI20）；全域是「鬥志」
+Good	善良	善良			FUN_141046410 L2413917 善惡欄的值（UI20）
+Evil	邪惡	邪恶			FUN_141046410 L2413928 善惡欄的值（UI20）；全域是「邪惡的」

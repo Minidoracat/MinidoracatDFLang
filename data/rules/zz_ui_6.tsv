@@ -1,0 +1,2 @@
+en	zh-Hant	zh-Hans	align	note
+{1} assigned	已指派{1}	已分配{1}		FUN_14039ac20 場所清單（區域／場所／倉儲區／工坊／農田／攻城器械） L469002：營房只指派一個小隊時「小隊名 assigned」（小隊名由名稱引擎譯好；數字的「{#1} assigned」在 ui_6.tsv）；錨點：結尾固定字 assigned，放 zz 讓既有整句、句型先比

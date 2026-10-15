@@ -1,0 +1,16 @@
+en	zh-Hant	zh-Hans	align	note
+It is a valuable treasure to us.	它是我們珍貴的寶物。	它是我们珍贵的宝物。		FUN_14065a250 L878753 神器下落（冒險模式問神器，講者＋冒號＋說的話，wrap 寬 68，句間兩空白）：L879102 勢力聲索、沒有職位象徵時接在 be returned. 後
+Last I heard, I had it.	據我所知，它最後在我手上。	据我所知，它最后在我手上。		FUN_14065a250 L878753 神器下落（冒險模式問神器，講者＋冒號＋說的話，wrap 寬 68，句間兩空白）：L879590 下落：說話者自己持有（聽說）
+Last I remember, I had it.	我記得它最後在我手上。	我记得它最后在我手上。		FUN_14065a250 L878753 神器下落（冒險模式問神器，講者＋冒號＋說的話，wrap 寬 68，句間兩空白）：L879594 下落：說話者自己持有（親眼）
+Last I heard, you held it.	據我所知，它最後在你手上。	据我所知，它最后在你手上。		FUN_14065a250 L878753 神器下落（冒險模式問神器，講者＋冒號＋說的話，wrap 寬 68，句間兩空白）：L879609 下落：對方持有
+I have no idea where it is.	我不知道它在哪裡。	我不知道它在哪里。		FUN_14065a250 L878753 神器下落（冒險模式問神器，講者＋冒號＋說的話，wrap 寬 68，句間兩空白）：L879668 下落不明；蓋過 zz_adv_speech 的 I have {1}.
+This is the throne room.	這是王座廳。	这是王座厅。		FUN_14065e930 L881427 回答場所在哪（交談）：L881667 人在場所裡；This is {1}. 的場所名 throne room 沒有單獨條目，整句寫
+This is the treasury.	這是寶庫。	这是宝库。		FUN_14065e930 L881427 回答場所在哪（交談）：L881673 人在場所裡；treasury 不寫單字條目（名稱字表另有 府庫），整句寫
+The throne room is right around here.	王座廳就在這附近。	王座厅就在这附近。		FUN_14065e930 L881427 回答場所在哪（交談）：L881635 排在方位那條前
+The treasury is right around here.	寶庫就在這附近。	宝库就在这附近。		FUN_14065e930 L881427 回答場所在哪（交談）：L881635 排在方位那條前
+The library is right around here.	圖書館就在這附近。	图书馆就在这附近。		FUN_14065e930 L881427 回答場所在哪（交談）：L881635 排在方位那條前
+The counting house is right around here.	帳房就在這附近。	账房就在这附近。		FUN_14065e930 L881427 回答場所在哪（交談）：L881635 排在方位那條前
+The guildhall is right around here.	公會大廳就在這附近。	公会大厅就在这附近。		FUN_14065e930 L881427 回答場所在哪（交談）：L881635 排在方位那條前
+The tower is right around here.	高塔就在這附近。	高塔就在这附近。		FUN_14065e930 L881427 回答場所在哪（交談）：L881635 排在方位那條前
+The dormitory is right around here.	宿舍就在這附近。	宿舍就在这附近。		FUN_14065e930 L881427 回答場所在哪（交談）：L881635 排在方位那條前
+The dining hall is right around here.	餐廳就在這附近。	餐厅就在这附近。		FUN_14065e930 L881427 回答場所在哪（交談）：L881635 排在方位那條前

@@ -1,0 +1,63 @@
+en	zh-Hant	zh-Hans	align	note
+{@1}, no slabs engraved	{1}，尚無雕刻石板	{1}，尚无雕刻石板		FUN_1408c5680 L1264891-1264903 要塞：亡者紀念狀態＋「, 」＋石板數（雕刻紀念石板的對象清單）；{@1} 只收 ui_13 的狀態詞
+{@1}, slab engraved	{1}，已雕刻石板	{1}，已雕刻石板		FUN_1408c5680 L1264891-1264903 要塞：亡者紀念狀態＋「, 」＋石板數（雕刻紀念石板的對象清單）；{@1} 只收 ui_13 的狀態詞
+{@1}, {#2} slabs engraved	{1}，已雕刻 {2} 塊石板	{1}，已雕刻 {2} 块石板		FUN_1408c5680 L1264891-1264903 要塞：亡者紀念狀態＋「, 」＋石板數（雕刻紀念石板的對象清單）；{@1} 只收 ui_13 的狀態詞
+{#1} slabs engraved	已雕刻 {1} 塊石板	已雕刻 {1} 块石板		FUN_1408c1d10 L1262012 要塞：亡者的石板數（兩塊以上）
+At least {#1} dye available	至少有 {1} 份染料	至少有 {1} 份染料		FUN_1408c5680 L1267627-1267693 要塞工坊染色工作：選擇顏色清單的存量說明
+At least {#1} cloth/dye available	至少有 {1} 份布/染料	至少有 {1} 份布/染料		FUN_1408c5680 L1267627-1267693 要塞工坊染色工作：選擇顏色清單的存量說明
+At least {#1} leather/dye available	至少有 {1} 份皮革/染料	至少有 {1} 份皮革/染料		FUN_1408c5680 L1267627-1267693 要塞工坊染色工作：選擇顏色清單的存量說明
+At least {#1} thread/dye available	至少有 {1} 份線/染料	至少有 {1} 份线/染料		FUN_1408c5680 L1267627-1267693 要塞工坊染色工作：選擇顏色清單的存量說明
+At least {#1} available	至少有 {1} 個可用	至少有 {1} 个可用		FUN_1408c5680 L1267864 要塞工坊工作選單：材料存量說明
+{#1} available	{1} 個可用	{1} 个可用		FUN_1408c5680 L1267965／L1268083 要塞工坊工作選單：材料存量說明；{#1} 只收數字
+{@1} (opens menu)	{1}（開啟選單）	{1}（打开菜单）		FUN_1408c2ab0 L1262519 要塞工坊「新增工作」：分類名＋ (opens menu)；{@1} 只收字典裡的分類名（Armor、Furniture、Trap components、Engrave memorial slab 與 ui_13 的分類）
+Traveling through {1}	正穿越{1}	正在穿越{1}		FUN_14086ddb0 L1208762 冒險模式同伴畫面：同伴不在本地時的位置；{1} 地區名（FUN_140b94a40）
+Mission Report: {%1} (Set out {@2} {#3})	派遣報告：{1}（{3} 年{2}出發）	派遣报告：{1}（{3} 年{2}出发）		FUN_1409df530 L1433411-1433491 要塞派遣報告標題：派遣名稱（rules/world_01 的 Raid {1} 等）＋出發季節與年份；術語 missions 派遣
+Tribute Report: {1}, {@2} {#3}	貢品報告：{1}，{3} 年{2}	贡品报告：{1}，{3} 年{2}		FUN_140a092c0 L1457227-1457250 要塞貢品報告標題：{1} 勢力名（FUN_140b92900），{2} 季節
+Perfect {%1} of the Axe	斧術之至臻{1}	斧术之至臻{1}		FUN_140939980 L1337405-1337428 世界生成的武藝職位名（最高一級）：Perfect／Ultimate／Exalted＋生物名（首字大寫）＋ of ＋（徒手的 Grappling 不加 the）＋武器字；武器逐一寫死，不寫通用的 of 句型
+Perfect {%1} of the Sword	劍術之至臻{1}	剑术之至臻{1}		FUN_140939980 L1337405-1337428 世界生成的武藝職位名（最高一級）：Perfect／Ultimate／Exalted＋生物名（首字大寫）＋ of ＋（徒手的 Grappling 不加 the）＋武器字；武器逐一寫死，不寫通用的 of 句型
+Perfect {%1} of the Blade	刀術之至臻{1}	刀术之至臻{1}		FUN_140939980 L1337405-1337428 世界生成的武藝職位名（最高一級）：Perfect／Ultimate／Exalted＋生物名（首字大寫）＋ of ＋（徒手的 Grappling 不加 the）＋武器字；武器逐一寫死，不寫通用的 of 句型
+Perfect {%1} of the Mace	釘錘之至臻{1}	钉锤之至臻{1}		FUN_140939980 L1337405-1337428 世界生成的武藝職位名（最高一級）：Perfect／Ultimate／Exalted＋生物名（首字大寫）＋ of ＋（徒手的 Grappling 不加 the）＋武器字；武器逐一寫死，不寫通用的 of 句型
+Perfect {%1} of the Hammer	錘術之至臻{1}	锤术之至臻{1}		FUN_140939980 L1337405-1337428 世界生成的武藝職位名（最高一級）：Perfect／Ultimate／Exalted＋生物名（首字大寫）＋ of ＋（徒手的 Grappling 不加 the）＋武器字；武器逐一寫死，不寫通用的 of 句型
+Perfect {%1} of the Spear	矛術之至臻{1}	矛术之至臻{1}		FUN_140939980 L1337405-1337428 世界生成的武藝職位名（最高一級）：Perfect／Ultimate／Exalted＋生物名（首字大寫）＋ of ＋（徒手的 Grappling 不加 the）＋武器字；武器逐一寫死，不寫通用的 of 句型
+Perfect {%1} of the Crossbow	弩術之至臻{1}	弩术之至臻{1}		FUN_140939980 L1337405-1337428 世界生成的武藝職位名（最高一級）：Perfect／Ultimate／Exalted＋生物名（首字大寫）＋ of ＋（徒手的 Grappling 不加 the）＋武器字；武器逐一寫死，不寫通用的 of 句型
+Perfect {%1} of the Pike	槍術之至臻{1}	枪术之至臻{1}		FUN_140939980 L1337405-1337428 世界生成的武藝職位名（最高一級）：Perfect／Ultimate／Exalted＋生物名（首字大寫）＋ of ＋（徒手的 Grappling 不加 the）＋武器字；武器逐一寫死，不寫通用的 of 句型
+Perfect {%1} of the Whip	鞭術之至臻{1}	鞭术之至臻{1}		FUN_140939980 L1337405-1337428 世界生成的武藝職位名（最高一級）：Perfect／Ultimate／Exalted＋生物名（首字大寫）＋ of ＋（徒手的 Grappling 不加 the）＋武器字；武器逐一寫死，不寫通用的 of 句型
+Perfect {%1} of the Lash	鞭法之至臻{1}	鞭法之至臻{1}		FUN_140939980 L1337405-1337428 世界生成的武藝職位名（最高一級）：Perfect／Ultimate／Exalted＋生物名（首字大寫）＋ of ＋（徒手的 Grappling 不加 the）＋武器字；武器逐一寫死，不寫通用的 of 句型
+Perfect {%1} of the Bow	弓術之至臻{1}	弓术之至臻{1}		FUN_140939980 L1337405-1337428 世界生成的武藝職位名（最高一級）：Perfect／Ultimate／Exalted＋生物名（首字大寫）＋ of ＋（徒手的 Grappling 不加 the）＋武器字；武器逐一寫死，不寫通用的 of 句型
+Perfect {%1} of the Blowgun	吹箭術之至臻{1}	吹箭术之至臻{1}		FUN_140939980 L1337405-1337428 世界生成的武藝職位名（最高一級）：Perfect／Ultimate／Exalted＋生物名（首字大寫）＋ of ＋（徒手的 Grappling 不加 the）＋武器字；武器逐一寫死，不寫通用的 of 句型
+Perfect {%1} of Grappling	擒拿術之至臻{1}	擒拿术之至臻{1}		FUN_140939980 L1337405-1337428 世界生成的武藝職位名（最高一級）：Perfect／Ultimate／Exalted＋生物名（首字大寫）＋ of ＋（徒手的 Grappling 不加 the）＋武器字；武器逐一寫死，不寫通用的 of 句型
+Perfect {%1} of the Tooth	噬咬術之至臻{1}	噬咬术之至臻{1}		FUN_140939980 L1337405-1337428 世界生成的武藝職位名（最高一級）：Perfect／Ultimate／Exalted＋生物名（首字大寫）＋ of ＋（徒手的 Grappling 不加 the）＋武器字；武器逐一寫死，不寫通用的 of 句型
+Perfect {%1} of the Strike	拳術之至臻{1}	拳术之至臻{1}		FUN_140939980 L1337405-1337428 世界生成的武藝職位名（最高一級）：Perfect／Ultimate／Exalted＋生物名（首字大寫）＋ of ＋（徒手的 Grappling 不加 the）＋武器字；武器逐一寫死，不寫通用的 of 句型
+Perfect {%1} of the Kick	腿法之至臻{1}	腿法之至臻{1}		FUN_140939980 L1337405-1337428 世界生成的武藝職位名（最高一級）：Perfect／Ultimate／Exalted＋生物名（首字大寫）＋ of ＋（徒手的 Grappling 不加 the）＋武器字；武器逐一寫死，不寫通用的 of 句型
+Ultimate {%1} of the Axe	斧術之究極{1}	斧术之究极{1}		FUN_140939980 L1337405-1337428 世界生成的武藝職位名（最高一級）：Perfect／Ultimate／Exalted＋生物名（首字大寫）＋ of ＋（徒手的 Grappling 不加 the）＋武器字；武器逐一寫死，不寫通用的 of 句型
+Ultimate {%1} of the Sword	劍術之究極{1}	剑术之究极{1}		FUN_140939980 L1337405-1337428 世界生成的武藝職位名（最高一級）：Perfect／Ultimate／Exalted＋生物名（首字大寫）＋ of ＋（徒手的 Grappling 不加 the）＋武器字；武器逐一寫死，不寫通用的 of 句型
+Ultimate {%1} of the Blade	刀術之究極{1}	刀术之究极{1}		FUN_140939980 L1337405-1337428 世界生成的武藝職位名（最高一級）：Perfect／Ultimate／Exalted＋生物名（首字大寫）＋ of ＋（徒手的 Grappling 不加 the）＋武器字；武器逐一寫死，不寫通用的 of 句型
+Ultimate {%1} of the Mace	釘錘之究極{1}	钉锤之究极{1}		FUN_140939980 L1337405-1337428 世界生成的武藝職位名（最高一級）：Perfect／Ultimate／Exalted＋生物名（首字大寫）＋ of ＋（徒手的 Grappling 不加 the）＋武器字；武器逐一寫死，不寫通用的 of 句型
+Ultimate {%1} of the Hammer	錘術之究極{1}	锤术之究极{1}		FUN_140939980 L1337405-1337428 世界生成的武藝職位名（最高一級）：Perfect／Ultimate／Exalted＋生物名（首字大寫）＋ of ＋（徒手的 Grappling 不加 the）＋武器字；武器逐一寫死，不寫通用的 of 句型
+Ultimate {%1} of the Spear	矛術之究極{1}	矛术之究极{1}		FUN_140939980 L1337405-1337428 世界生成的武藝職位名（最高一級）：Perfect／Ultimate／Exalted＋生物名（首字大寫）＋ of ＋（徒手的 Grappling 不加 the）＋武器字；武器逐一寫死，不寫通用的 of 句型
+Ultimate {%1} of the Crossbow	弩術之究極{1}	弩术之究极{1}		FUN_140939980 L1337405-1337428 世界生成的武藝職位名（最高一級）：Perfect／Ultimate／Exalted＋生物名（首字大寫）＋ of ＋（徒手的 Grappling 不加 the）＋武器字；武器逐一寫死，不寫通用的 of 句型
+Ultimate {%1} of the Pike	槍術之究極{1}	枪术之究极{1}		FUN_140939980 L1337405-1337428 世界生成的武藝職位名（最高一級）：Perfect／Ultimate／Exalted＋生物名（首字大寫）＋ of ＋（徒手的 Grappling 不加 the）＋武器字；武器逐一寫死，不寫通用的 of 句型
+Ultimate {%1} of the Whip	鞭術之究極{1}	鞭术之究极{1}		FUN_140939980 L1337405-1337428 世界生成的武藝職位名（最高一級）：Perfect／Ultimate／Exalted＋生物名（首字大寫）＋ of ＋（徒手的 Grappling 不加 the）＋武器字；武器逐一寫死，不寫通用的 of 句型
+Ultimate {%1} of the Lash	鞭法之究極{1}	鞭法之究极{1}		FUN_140939980 L1337405-1337428 世界生成的武藝職位名（最高一級）：Perfect／Ultimate／Exalted＋生物名（首字大寫）＋ of ＋（徒手的 Grappling 不加 the）＋武器字；武器逐一寫死，不寫通用的 of 句型
+Ultimate {%1} of the Bow	弓術之究極{1}	弓术之究极{1}		FUN_140939980 L1337405-1337428 世界生成的武藝職位名（最高一級）：Perfect／Ultimate／Exalted＋生物名（首字大寫）＋ of ＋（徒手的 Grappling 不加 the）＋武器字；武器逐一寫死，不寫通用的 of 句型
+Ultimate {%1} of the Blowgun	吹箭術之究極{1}	吹箭术之究极{1}		FUN_140939980 L1337405-1337428 世界生成的武藝職位名（最高一級）：Perfect／Ultimate／Exalted＋生物名（首字大寫）＋ of ＋（徒手的 Grappling 不加 the）＋武器字；武器逐一寫死，不寫通用的 of 句型
+Ultimate {%1} of Grappling	擒拿術之究極{1}	擒拿术之究极{1}		FUN_140939980 L1337405-1337428 世界生成的武藝職位名（最高一級）：Perfect／Ultimate／Exalted＋生物名（首字大寫）＋ of ＋（徒手的 Grappling 不加 the）＋武器字；武器逐一寫死，不寫通用的 of 句型
+Ultimate {%1} of the Tooth	噬咬術之究極{1}	噬咬术之究极{1}		FUN_140939980 L1337405-1337428 世界生成的武藝職位名（最高一級）：Perfect／Ultimate／Exalted＋生物名（首字大寫）＋ of ＋（徒手的 Grappling 不加 the）＋武器字；武器逐一寫死，不寫通用的 of 句型
+Ultimate {%1} of the Strike	拳術之究極{1}	拳术之究极{1}		FUN_140939980 L1337405-1337428 世界生成的武藝職位名（最高一級）：Perfect／Ultimate／Exalted＋生物名（首字大寫）＋ of ＋（徒手的 Grappling 不加 the）＋武器字；武器逐一寫死，不寫通用的 of 句型
+Ultimate {%1} of the Kick	腿法之究極{1}	腿法之究极{1}		FUN_140939980 L1337405-1337428 世界生成的武藝職位名（最高一級）：Perfect／Ultimate／Exalted＋生物名（首字大寫）＋ of ＋（徒手的 Grappling 不加 the）＋武器字；武器逐一寫死，不寫通用的 of 句型
+Exalted {%1} of the Axe	斧術之崇高{1}	斧术之崇高{1}		FUN_140939980 L1337405-1337428 世界生成的武藝職位名（最高一級）：Perfect／Ultimate／Exalted＋生物名（首字大寫）＋ of ＋（徒手的 Grappling 不加 the）＋武器字；武器逐一寫死，不寫通用的 of 句型
+Exalted {%1} of the Sword	劍術之崇高{1}	剑术之崇高{1}		FUN_140939980 L1337405-1337428 世界生成的武藝職位名（最高一級）：Perfect／Ultimate／Exalted＋生物名（首字大寫）＋ of ＋（徒手的 Grappling 不加 the）＋武器字；武器逐一寫死，不寫通用的 of 句型
+Exalted {%1} of the Blade	刀術之崇高{1}	刀术之崇高{1}		FUN_140939980 L1337405-1337428 世界生成的武藝職位名（最高一級）：Perfect／Ultimate／Exalted＋生物名（首字大寫）＋ of ＋（徒手的 Grappling 不加 the）＋武器字；武器逐一寫死，不寫通用的 of 句型
+Exalted {%1} of the Mace	釘錘之崇高{1}	钉锤之崇高{1}		FUN_140939980 L1337405-1337428 世界生成的武藝職位名（最高一級）：Perfect／Ultimate／Exalted＋生物名（首字大寫）＋ of ＋（徒手的 Grappling 不加 the）＋武器字；武器逐一寫死，不寫通用的 of 句型
+Exalted {%1} of the Hammer	錘術之崇高{1}	锤术之崇高{1}		FUN_140939980 L1337405-1337428 世界生成的武藝職位名（最高一級）：Perfect／Ultimate／Exalted＋生物名（首字大寫）＋ of ＋（徒手的 Grappling 不加 the）＋武器字；武器逐一寫死，不寫通用的 of 句型
+Exalted {%1} of the Spear	矛術之崇高{1}	矛术之崇高{1}		FUN_140939980 L1337405-1337428 世界生成的武藝職位名（最高一級）：Perfect／Ultimate／Exalted＋生物名（首字大寫）＋ of ＋（徒手的 Grappling 不加 the）＋武器字；武器逐一寫死，不寫通用的 of 句型
+Exalted {%1} of the Crossbow	弩術之崇高{1}	弩术之崇高{1}		FUN_140939980 L1337405-1337428 世界生成的武藝職位名（最高一級）：Perfect／Ultimate／Exalted＋生物名（首字大寫）＋ of ＋（徒手的 Grappling 不加 the）＋武器字；武器逐一寫死，不寫通用的 of 句型
+Exalted {%1} of the Pike	槍術之崇高{1}	枪术之崇高{1}		FUN_140939980 L1337405-1337428 世界生成的武藝職位名（最高一級）：Perfect／Ultimate／Exalted＋生物名（首字大寫）＋ of ＋（徒手的 Grappling 不加 the）＋武器字；武器逐一寫死，不寫通用的 of 句型
+Exalted {%1} of the Whip	鞭術之崇高{1}	鞭术之崇高{1}		FUN_140939980 L1337405-1337428 世界生成的武藝職位名（最高一級）：Perfect／Ultimate／Exalted＋生物名（首字大寫）＋ of ＋（徒手的 Grappling 不加 the）＋武器字；武器逐一寫死，不寫通用的 of 句型
+Exalted {%1} of the Lash	鞭法之崇高{1}	鞭法之崇高{1}		FUN_140939980 L1337405-1337428 世界生成的武藝職位名（最高一級）：Perfect／Ultimate／Exalted＋生物名（首字大寫）＋ of ＋（徒手的 Grappling 不加 the）＋武器字；武器逐一寫死，不寫通用的 of 句型
+Exalted {%1} of the Bow	弓術之崇高{1}	弓术之崇高{1}		FUN_140939980 L1337405-1337428 世界生成的武藝職位名（最高一級）：Perfect／Ultimate／Exalted＋生物名（首字大寫）＋ of ＋（徒手的 Grappling 不加 the）＋武器字；武器逐一寫死，不寫通用的 of 句型
+Exalted {%1} of the Blowgun	吹箭術之崇高{1}	吹箭术之崇高{1}		FUN_140939980 L1337405-1337428 世界生成的武藝職位名（最高一級）：Perfect／Ultimate／Exalted＋生物名（首字大寫）＋ of ＋（徒手的 Grappling 不加 the）＋武器字；武器逐一寫死，不寫通用的 of 句型
+Exalted {%1} of Grappling	擒拿術之崇高{1}	擒拿术之崇高{1}		FUN_140939980 L1337405-1337428 世界生成的武藝職位名（最高一級）：Perfect／Ultimate／Exalted＋生物名（首字大寫）＋ of ＋（徒手的 Grappling 不加 the）＋武器字；武器逐一寫死，不寫通用的 of 句型
+Exalted {%1} of the Tooth	噬咬術之崇高{1}	噬咬术之崇高{1}		FUN_140939980 L1337405-1337428 世界生成的武藝職位名（最高一級）：Perfect／Ultimate／Exalted＋生物名（首字大寫）＋ of ＋（徒手的 Grappling 不加 the）＋武器字；武器逐一寫死，不寫通用的 of 句型
+Exalted {%1} of the Strike	拳術之崇高{1}	拳术之崇高{1}		FUN_140939980 L1337405-1337428 世界生成的武藝職位名（最高一級）：Perfect／Ultimate／Exalted＋生物名（首字大寫）＋ of ＋（徒手的 Grappling 不加 the）＋武器字；武器逐一寫死，不寫通用的 of 句型
+Exalted {%1} of the Kick	腿法之崇高{1}	腿法之崇高{1}		FUN_140939980 L1337405-1337428 世界生成的武藝職位名（最高一級）：Perfect／Ultimate／Exalted＋生物名（首字大寫）＋ of ＋（徒手的 Grappling 不加 the）＋武器字；武器逐一寫死，不寫通用的 of 句型

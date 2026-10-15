@@ -1,4 +1,36 @@
 en	zh-Hant	zh-Hans	align	note
+Snow-covered Dead thick {@1} branches	覆雪的枯死{1}粗枝	覆雪的枯死{1}粗枝		FUN_140e7d330 L2176050-2176160 地圖游標：樹的格子先接地形前綴（L2175465-2175501 Muddy／Snow-covered／Mossy），再接 Dead（L2176146），再接 FUN_1413ffd20 的部位名；排在「Snow-covered Dead {%1}」「Snow-covered {%1}」前：佔位裡 desc_01 的 inner「thick {%1}」「smooth {%1}」（外觀形容詞）會先比中
+Snow-covered Dead smooth {@1} branches	覆雪的枯死的光滑{1}樹枝	覆雪的枯死的光滑{1}树枝		FUN_140e7d330 L2176050-2176160 地圖游標：樹的格子先接地形前綴（L2175465-2175501 Muddy／Snow-covered／Mossy），再接 Dead（L2176146），再接 FUN_1413ffd20 的部位名；排在「Snow-covered Dead {%1}」「Snow-covered {%1}」前：佔位裡 desc_01 的 inner「thick {%1}」「smooth {%1}」（外觀形容詞）會先比中；樹皮光滑，不是磨平；術語例外：smooth
+Snow-covered thick {@1} branches	覆雪的{1}粗枝	覆雪的{1}粗枝		FUN_140e7d330 L2176050-2176160 地圖游標：樹的格子先接地形前綴（L2175465-2175501 Muddy／Snow-covered／Mossy），再接 Dead（L2176146），再接 FUN_1413ffd20 的部位名；排在「Snow-covered Dead {%1}」「Snow-covered {%1}」前：佔位裡 desc_01 的 inner「thick {%1}」「smooth {%1}」（外觀形容詞）會先比中
+Snow-covered smooth {@1} branches	覆雪的光滑{1}樹枝	覆雪的光滑{1}树枝		FUN_140e7d330 L2176050-2176160 地圖游標：樹的格子先接地形前綴（L2175465-2175501 Muddy／Snow-covered／Mossy），再接 Dead（L2176146），再接 FUN_1413ffd20 的部位名；排在「Snow-covered Dead {%1}」「Snow-covered {%1}」前：佔位裡 desc_01 的 inner「thick {%1}」「smooth {%1}」（外觀形容詞）會先比中；樹皮光滑，不是磨平；術語例外：smooth
+Snow-covered Dead {%1}	覆雪的枯死{1}	覆雪的枯死{1}		FUN_140e7d330 L2176050-2176160 地圖游標：樹的格子先接地形前綴（L2175465-2175501 Muddy／Snow-covered／Mossy），再接 Dead（L2176146），再接 FUN_1413ffd20 的部位名；排在「Snow-covered {@1} {@2}」前，免得 Dead 被當成字典裡的「死亡」（Dead Shrub、Dead tower-cap cap）
+Snow-covered {@1} trunk	覆雪的{1}樹幹	覆雪的{1}树干		FUN_140e7d330 L2176050-2176160 地圖游標：樹的格子先接地形前綴（L2175465-2175501 Muddy／Snow-covered／Mossy），再接 Dead（L2176146），再接 FUN_1413ffd20 的部位名；排在「Snow-covered {@1} {@2}」前，免得 trunk 譯成身體部位「象鼻」
+Snow-covered {@1} twigs	覆雪的{1}細枝	覆雪的{1}细枝		FUN_140e7d330 L2176050-2176160 地圖游標：樹的格子先接地形前綴（L2175465-2175501 Muddy／Snow-covered／Mossy），再接 Dead（L2176146），再接 FUN_1413ffd20 的部位名；排在「Snow-covered {@1} {@2}」前
+Snow-covered {@1} cap	覆雪的{1}菌蓋	覆雪的{1}菌盖		FUN_140e7d330 L2176050-2176160 地圖游標：樹的格子先接地形前綴（L2175465-2175501 Muddy／Snow-covered／Mossy），再接 Dead（L2176146），再接 FUN_1413ffd20 的部位名；巨菇樹菌蓋；排在「Snow-covered {@1} {@2}」前，免得 cap 譯成頭盔「帽子」
+Muddy Dead thick {@1} branches	泥濘的枯死{1}粗枝	泥泞的枯死{1}粗枝		FUN_140e7d330 L2176050-2176160 地圖游標：樹的格子先接地形前綴（L2175465-2175501 Muddy／Snow-covered／Mossy），再接 Dead（L2176146），再接 FUN_1413ffd20 的部位名；排在「Muddy Dead {%1}」「Muddy {%1}」前：佔位裡 desc_01 的 inner「thick {%1}」「smooth {%1}」（外觀形容詞）會先比中
+Muddy Dead smooth {@1} branches	泥濘的枯死的光滑{1}樹枝	泥泞的枯死的光滑{1}树枝		FUN_140e7d330 L2176050-2176160 地圖游標：樹的格子先接地形前綴（L2175465-2175501 Muddy／Snow-covered／Mossy），再接 Dead（L2176146），再接 FUN_1413ffd20 的部位名；排在「Muddy Dead {%1}」「Muddy {%1}」前：佔位裡 desc_01 的 inner「thick {%1}」「smooth {%1}」（外觀形容詞）會先比中；樹皮光滑，不是磨平；術語例外：smooth
+Muddy thick {@1} branches	泥濘的{1}粗枝	泥泞的{1}粗枝		FUN_140e7d330 L2176050-2176160 地圖游標：樹的格子先接地形前綴（L2175465-2175501 Muddy／Snow-covered／Mossy），再接 Dead（L2176146），再接 FUN_1413ffd20 的部位名；排在「Muddy Dead {%1}」「Muddy {%1}」前：佔位裡 desc_01 的 inner「thick {%1}」「smooth {%1}」（外觀形容詞）會先比中
+Muddy smooth {@1} branches	泥濘的光滑{1}樹枝	泥泞的光滑{1}树枝		FUN_140e7d330 L2176050-2176160 地圖游標：樹的格子先接地形前綴（L2175465-2175501 Muddy／Snow-covered／Mossy），再接 Dead（L2176146），再接 FUN_1413ffd20 的部位名；排在「Muddy Dead {%1}」「Muddy {%1}」前：佔位裡 desc_01 的 inner「thick {%1}」「smooth {%1}」（外觀形容詞）會先比中；樹皮光滑，不是磨平；術語例外：smooth
+Muddy Dead {%1}	泥濘的枯死{1}	泥泞的枯死{1}		FUN_140e7d330 L2176050-2176160 地圖游標：樹的格子先接地形前綴（L2175465-2175501 Muddy／Snow-covered／Mossy），再接 Dead（L2176146），再接 FUN_1413ffd20 的部位名；排在「Muddy {@1} {@2}」前，免得 Dead 被當成字典裡的「死亡」（Dead Shrub、Dead tower-cap cap）
+Muddy {@1} trunk	泥濘的{1}樹幹	泥泞的{1}树干		FUN_140e7d330 L2176050-2176160 地圖游標：樹的格子先接地形前綴（L2175465-2175501 Muddy／Snow-covered／Mossy），再接 Dead（L2176146），再接 FUN_1413ffd20 的部位名；排在「Muddy {@1} {@2}」前，免得 trunk 譯成身體部位「象鼻」
+Muddy {@1} twigs	泥濘的{1}細枝	泥泞的{1}细枝		FUN_140e7d330 L2176050-2176160 地圖游標：樹的格子先接地形前綴（L2175465-2175501 Muddy／Snow-covered／Mossy），再接 Dead（L2176146），再接 FUN_1413ffd20 的部位名；排在「Muddy {@1} {@2}」前
+Muddy {@1} cap	泥濘的{1}菌蓋	泥泞的{1}菌盖		FUN_140e7d330 L2176050-2176160 地圖游標：樹的格子先接地形前綴（L2175465-2175501 Muddy／Snow-covered／Mossy），再接 Dead（L2176146），再接 FUN_1413ffd20 的部位名；巨菇樹菌蓋；排在「Muddy {@1} {@2}」前，免得 cap 譯成頭盔「帽子」
+Mossy Dead thick {@1} branches	長苔的枯死{1}粗枝	长苔的枯死{1}粗枝		FUN_140e7d330 L2176050-2176160 地圖游標：樹的格子先接地形前綴（L2175465-2175501 Muddy／Snow-covered／Mossy），再接 Dead（L2176146），再接 FUN_1413ffd20 的部位名；排在「Mossy Dead {%1}」「Mossy {%1}」前：佔位裡 desc_01 的 inner「thick {%1}」「smooth {%1}」（外觀形容詞）會先比中
+Mossy Dead smooth {@1} branches	長苔的枯死的光滑{1}樹枝	长苔的枯死的光滑{1}树枝		FUN_140e7d330 L2176050-2176160 地圖游標：樹的格子先接地形前綴（L2175465-2175501 Muddy／Snow-covered／Mossy），再接 Dead（L2176146），再接 FUN_1413ffd20 的部位名；排在「Mossy Dead {%1}」「Mossy {%1}」前：佔位裡 desc_01 的 inner「thick {%1}」「smooth {%1}」（外觀形容詞）會先比中；樹皮光滑，不是磨平；術語例外：smooth
+Mossy thick {@1} branches	長苔的{1}粗枝	长苔的{1}粗枝		FUN_140e7d330 L2176050-2176160 地圖游標：樹的格子先接地形前綴（L2175465-2175501 Muddy／Snow-covered／Mossy），再接 Dead（L2176146），再接 FUN_1413ffd20 的部位名；排在「Mossy Dead {%1}」「Mossy {%1}」前：佔位裡 desc_01 的 inner「thick {%1}」「smooth {%1}」（外觀形容詞）會先比中
+Mossy smooth {@1} branches	長苔的光滑{1}樹枝	长苔的光滑{1}树枝		FUN_140e7d330 L2176050-2176160 地圖游標：樹的格子先接地形前綴（L2175465-2175501 Muddy／Snow-covered／Mossy），再接 Dead（L2176146），再接 FUN_1413ffd20 的部位名；排在「Mossy Dead {%1}」「Mossy {%1}」前：佔位裡 desc_01 的 inner「thick {%1}」「smooth {%1}」（外觀形容詞）會先比中；樹皮光滑，不是磨平；術語例外：smooth
+Mossy Dead {%1}	長苔的枯死{1}	长苔的枯死{1}		FUN_140e7d330 L2176050-2176160 地圖游標：樹的格子先接地形前綴（L2175465-2175501 Muddy／Snow-covered／Mossy），再接 Dead（L2176146），再接 FUN_1413ffd20 的部位名；排在「Mossy {@1} {@2}」前，免得 Dead 被當成字典裡的「死亡」（Dead Shrub、Dead tower-cap cap）
+Mossy {@1} trunk	長苔的{1}樹幹	长苔的{1}树干		FUN_140e7d330 L2176050-2176160 地圖游標：樹的格子先接地形前綴（L2175465-2175501 Muddy／Snow-covered／Mossy），再接 Dead（L2176146），再接 FUN_1413ffd20 的部位名；排在「Mossy {@1} {@2}」前，免得 trunk 譯成身體部位「象鼻」
+Mossy {@1} twigs	長苔的{1}細枝	长苔的{1}细枝		FUN_140e7d330 L2176050-2176160 地圖游標：樹的格子先接地形前綴（L2175465-2175501 Muddy／Snow-covered／Mossy），再接 Dead（L2176146），再接 FUN_1413ffd20 的部位名；排在「Mossy {@1} {@2}」前
+Mossy {@1} cap	長苔的{1}菌蓋	长苔的{1}菌盖		FUN_140e7d330 L2176050-2176160 地圖游標：樹的格子先接地形前綴（L2175465-2175501 Muddy／Snow-covered／Mossy），再接 Dead（L2176146），再接 FUN_1413ffd20 的部位名；巨菇樹菌蓋；排在「Mossy {@1} {@2}」前，免得 cap 譯成頭盔「帽子」
+Dead {@1} trunk	枯死{1}樹幹	枯死{1}树干		FUN_140e7d330 L2176050-2176160 地圖游標：樹的格子先接地形前綴（L2175465-2175501 Muddy／Snow-covered／Mossy），再接 Dead（L2176146），再接 FUN_1413ffd20 的部位名；排在「Dead {@1} {@2}」前，免得 trunk 譯成「象鼻」
+Dead {@1} twigs	枯死{1}細枝	枯死{1}细枝		FUN_140e7d330 L2176050-2176160 地圖游標：樹的格子先接地形前綴（L2175465-2175501 Muddy／Snow-covered／Mossy），再接 Dead（L2176146），再接 FUN_1413ffd20 的部位名；排在「Dead {@1} {@2}」前
+Dead thick {@1} branches	枯死{1}粗枝	枯死{1}粗枝		FUN_140e7d330 L2176050-2176160 地圖游標：樹的格子先接地形前綴（L2175465-2175501 Muddy／Snow-covered／Mossy），再接 Dead（L2176146），再接 FUN_1413ffd20 的部位名；「Dead {@1} {@2}」接不到三段，逐條寫
+Dead smooth {@1} branches	枯死的光滑{1}樹枝	枯死的光滑{1}树枝		FUN_140e7d330 L2176050-2176160 地圖游標：樹的格子先接地形前綴（L2175465-2175501 Muddy／Snow-covered／Mossy），再接 Dead（L2176146），再接 FUN_1413ffd20 的部位名；樹皮光滑，不是磨平；術語例外：smooth
+{@1} trunk	{1}樹幹	{1}树干		FUN_140e7d330 L2174464 地圖游標地形名稱：樹的部位（FUN_1413ffd20「樹名 trunk」）；trunk 全域是身體部位「象鼻」；從 ui_19 搬來，和前綴版放在一起
+{@1} twigs	{1}細枝	{1}细枝		FUN_140e7d330 L2174464 地圖游標地形名稱：樹的部位（FUN_1413ffd20「樹名 twigs」）；從 ui_19 搬來，和前綴版放在一起
+thick {@1} branches	{1}粗枝	{1}粗枝		FUN_140e7d330 L2174464 地圖游標地形名稱：樹的部位（FUN_1413ffd20「thick 樹名 branches」）；從 ui_19 搬來，和前綴版放在一起
+smooth {@1} branches	光滑的{1}樹枝	光滑的{1}树枝		FUN_140e7d330 L2174464 地圖游標地形名稱：樹的部位（FUN_1413ffd20「smooth 樹名 branches」）；樹皮光滑，不是磨平；術語例外：smooth；從 ui_19 搬來，和前綴版放在一起
 Snow-covered {@1}, {@2}	覆雪的{1}，{2}	覆雪的{1}，{2}		地圖游標：覆雪的植物＋生長部位（Snow-covered Foxtail millet plants, foxtail millet leaves）；限定佔位只收字典裡的名稱，免得套到同字開頭的句子
 Snow-covered {@1} {@2}	覆雪的{1}{2}	覆雪的{1}{2}		地圖游標：地形前綴（Snow-covered chalk Pebbles）：前綴＋材料＋地形；限定佔位只收字典裡的名稱，免得套到同字開頭的句子
 Snow-covered {@1}	覆雪的{1}	覆雪的{1}		地圖游標：地形前綴（Snow-covered chalk Pebbles）；限定佔位只收字典裡的名稱，免得套到同字開頭的句子
@@ -23,6 +55,16 @@ Shoddy {@1} {@2}	粗劣的{1}{2}	粗劣的{1}{2}		地圖游標：做工粗劣的
 Shoddy {@1}	粗劣的{1}	粗劣的{1}		地圖游標：做工粗劣的建造物；限定佔位只收字典裡的名稱，免得套到同字開頭的句子
 Unusable {@1} {@2}	不能用的{1}{2}	不能用的{1}{2}		地圖游標：地形前綴：前綴＋材料＋地形；限定佔位只收字典裡的名稱，免得套到同字開頭的句子
 Unusable {@1}	不能用的{1}	不能用的{1}		地圖游標：地形前綴；限定佔位只收字典裡的名稱，免得套到同字開頭的句子
+Dense Dry {@1}	茂密的乾枯{1}	茂密的干枯{1}		FUN_140e7d330 L2174464 地圖游標地形名稱：草的密度＋狀態＋草名（L2177104、L2177221）；排在兩個佔位那條前面，免得 needle grass 被拆成 needle＋grass；從 ui_19 搬來，排在「Dense {@1}」「Dense {@1} {@2}」前，免得 Dead 被當成字典裡的「死亡」
+Dense Dry {@1} {@2}	茂密的乾枯{1}{2}	茂密的干枯{1}{2}		FUN_140e7d330 L2174464 地圖游標地形名稱：草的密度＋狀態＋草名＋坡、樓梯（L2175944、L2176782）；從 ui_19 搬來，排在「Dense {@1}」「Dense {@1} {@2}」前，免得 Dead 被當成字典裡的「死亡」
+Dense Dead {@1}	茂密的枯死{1}	茂密的枯死{1}		FUN_140e7d330 L2174464 地圖游標地形名稱：草的密度＋狀態＋草名（L2177104、L2177221）；排在兩個佔位那條前面，免得 needle grass 被拆成 needle＋grass；從 ui_19 搬來，排在「Dense {@1}」「Dense {@1} {@2}」前，免得 Dead 被當成字典裡的「死亡」
+Dense Dead {@1} {@2}	茂密的枯死{1}{2}	茂密的枯死{1}{2}		FUN_140e7d330 L2174464 地圖游標地形名稱：草的密度＋狀態＋草名＋坡、樓梯（L2175944、L2176782）；從 ui_19 搬來，排在「Dense {@1}」「Dense {@1} {@2}」前，免得 Dead 被當成字典裡的「死亡」
+Dense Dry {@1}, {%2}	茂密的乾枯{1}，{2}	茂密的干枯{1}，{2}		FUN_140e7d330 L2174464 地圖游標地形名稱：乾草＋生長部位（L2177113 起）；從 ui_19 搬來，排在「Dense {@1}」「Dense {@1} {@2}」前，免得 Dead 被當成字典裡的「死亡」
+Sparse Dry {@1}	稀疏的乾枯{1}	稀疏的干枯{1}		FUN_140e7d330 L2174464 地圖游標地形名稱：草的密度＋狀態＋草名（L2177104、L2177221）；排在兩個佔位那條前面，免得 needle grass 被拆成 needle＋grass；從 ui_19 搬來，排在「Dense {@1}」「Dense {@1} {@2}」前，免得 Dead 被當成字典裡的「死亡」
+Sparse Dry {@1} {@2}	稀疏的乾枯{1}{2}	稀疏的干枯{1}{2}		FUN_140e7d330 L2174464 地圖游標地形名稱：草的密度＋狀態＋草名＋坡、樓梯（L2175944、L2176782）；從 ui_19 搬來，排在「Dense {@1}」「Dense {@1} {@2}」前，免得 Dead 被當成字典裡的「死亡」
+Sparse Dead {@1}	稀疏的枯死{1}	稀疏的枯死{1}		FUN_140e7d330 L2174464 地圖游標地形名稱：草的密度＋狀態＋草名（L2177104、L2177221）；排在兩個佔位那條前面，免得 needle grass 被拆成 needle＋grass；從 ui_19 搬來，排在「Dense {@1}」「Dense {@1} {@2}」前，免得 Dead 被當成字典裡的「死亡」
+Sparse Dead {@1} {@2}	稀疏的枯死{1}{2}	稀疏的枯死{1}{2}		FUN_140e7d330 L2174464 地圖游標地形名稱：草的密度＋狀態＋草名＋坡、樓梯（L2175944、L2176782）；從 ui_19 搬來，排在「Dense {@1}」「Dense {@1} {@2}」前，免得 Dead 被當成字典裡的「死亡」
+Sparse Dry {@1}, {%2}	稀疏的乾枯{1}，{2}	稀疏的干枯{1}，{2}		FUN_140e7d330 L2174464 地圖游標地形名稱：乾草＋生長部位（L2177113 起）；從 ui_19 搬來，排在「Dense {@1}」「Dense {@1} {@2}」前，免得 Dead 被當成字典裡的「死亡」
 Dense {@1}	茂密的{1}	茂密的{1}		地圖游標：草的密度（Dense needle grass）；限定佔位只收字典裡的名稱，免得套到同字開頭的句子
 Sparse {@1}	稀疏的{1}	稀疏的{1}		地圖游標：草的密度；限定佔位只收字典裡的名稱，免得套到同字開頭的句子
 Dry {@1}	乾枯{1}	干枯{1}		地圖游標：乾枯的草；放不下「的」；限定佔位只收字典裡的名稱，免得套到同字開頭的句子

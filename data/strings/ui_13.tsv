@@ -1,0 +1,109 @@
+en	zh-Hant	zh-Hans	align	note
+Air	空中	空中	inner	FUN_140841440 L1183965／FUN_140841900 L1184060／FUN_140841bf0／FUN_1408422b0 冒險移動選項：括號尾的液體後綴（/Air、/Water、/Lava|/Magma 依序接），接進 zz_adv_hud 的「releasing hold/{%2})」「holding NW/{%2})」「from NW/{%2})」；譯法同 zz_adv_activity；只在佔位裡用
+Air/Water	空中/水中	空中/水中	inner	FUN_140841440 L1183965／FUN_140841900 L1184060／FUN_140841bf0／FUN_1408422b0 冒險移動選項：括號尾的液體後綴（/Air、/Water、/Lava|/Magma 依序接），接進 zz_adv_hud 的「releasing hold/{%2})」「holding NW/{%2})」「from NW/{%2})」；譯法同 zz_adv_activity；只在佔位裡用
+Air/Lava	空中/熔岩	空中/熔岩	inner	FUN_140841440 L1183965／FUN_140841900 L1184060／FUN_140841bf0／FUN_1408422b0 冒險移動選項：括號尾的液體後綴（/Air、/Water、/Lava|/Magma 依序接），接進 zz_adv_hud 的「releasing hold/{%2})」「holding NW/{%2})」「from NW/{%2})」；譯法同 zz_adv_activity；只在佔位裡用；術語 magma／lava 都是熔岩
+Air/Magma	空中/熔岩	空中/熔岩	inner	FUN_140841440 L1183965／FUN_140841900 L1184060／FUN_140841bf0／FUN_1408422b0 冒險移動選項：括號尾的液體後綴（/Air、/Water、/Lava|/Magma 依序接），接進 zz_adv_hud 的「releasing hold/{%2})」「holding NW/{%2})」「from NW/{%2})」；譯法同 zz_adv_activity；只在佔位裡用；術語 magma／lava 都是熔岩
+Water/Lava	水中/熔岩	水中/熔岩	inner	FUN_140841440 L1183965／FUN_140841900 L1184060／FUN_140841bf0／FUN_1408422b0 冒險移動選項：括號尾的液體後綴（/Air、/Water、/Lava|/Magma 依序接），接進 zz_adv_hud 的「releasing hold/{%2})」「holding NW/{%2})」「from NW/{%2})」；譯法同 zz_adv_activity；只在佔位裡用；術語 magma／lava 都是熔岩
+Water/Magma	水中/熔岩	水中/熔岩	inner	FUN_140841440 L1183965／FUN_140841900 L1184060／FUN_140841bf0／FUN_1408422b0 冒險移動選項：括號尾的液體後綴（/Air、/Water、/Lava|/Magma 依序接），接進 zz_adv_hud 的「releasing hold/{%2})」「holding NW/{%2})」「from NW/{%2})」；譯法同 zz_adv_activity；只在佔位裡用；術語 magma／lava 都是熔岩
+Air/Water/Lava	空中/水中/熔岩	空中/水中/熔岩	inner	FUN_140841440 L1183965／FUN_140841900 L1184060／FUN_140841bf0／FUN_1408422b0 冒險移動選項：括號尾的液體後綴（/Air、/Water、/Lava|/Magma 依序接），接進 zz_adv_hud 的「releasing hold/{%2})」「holding NW/{%2})」「from NW/{%2})」；譯法同 zz_adv_activity；只在佔位裡用；術語 magma／lava 都是熔岩
+Air/Water/Magma	空中/水中/熔岩	空中/水中/熔岩	inner	FUN_140841440 L1183965／FUN_140841900 L1184060／FUN_140841bf0／FUN_1408422b0 冒險移動選項：括號尾的液體後綴（/Air、/Water、/Lava|/Magma 依序接），接進 zz_adv_hud 的「releasing hold/{%2})」「holding NW/{%2})」「from NW/{%2})」；譯法同 zz_adv_activity；只在佔位裡用；術語 magma／lava 都是熔岩
+Would you like to take an action?	你想採取行動嗎？	你想采取行动吗？		FUN_1408a68a0 L1244687 冒險模式：選擇行動視窗標題
+Do not alter actions	不改變行動	不改变行动		FUN_1408a68a0 L1244800 冒險模式：選擇行動清單的第一個選項
+In party nearby	同隊，在附近	同队，在附近		FUN_14086ddb0 L1208654 冒險模式同伴畫面：同伴狀態
+In party: 	同隊：	同队：		FUN_14086ddb0 L1209157 冒險模式同伴畫面：後面另畫方位與距離
+Visible: 	可見：	可见：		FUN_14086ddb0 L1209151 冒險模式同伴畫面：後面另畫方位與距離
+Not visible	看不見	看不见		FUN_14086ddb0 L1208822 冒險模式同伴畫面：同伴狀態
+Low Light	光線昏暗	光线昏暗		FUN_140874800 L1212708 冒險模式移動方式畫面「Visual Stealth Factors」：光照（原本拼成「低光明」）
+No slabs engraved	尚無雕刻石板	尚无雕刻石板		FUN_1408c1d10 L1261983-1262095／FUN_1408c5680 L1264869-1264901 要塞：亡者的紀念狀態（雕刻紀念石板的對象清單）；slab 石板
+Slab engraved	已雕刻石板	已雕刻石板		FUN_1408c1d10 L1261983-1262095／FUN_1408c5680 L1264869-1264901 要塞：亡者的紀念狀態（雕刻紀念石板的對象清單）；slab 石板
+Not memorialized	未受紀念	未受纪念		FUN_1408c1d10 L1261983-1262095／FUN_1408c5680 L1264869-1264901 要塞：亡者的紀念狀態（雕刻紀念石板的對象清單）；slab 石板
+Memorialized	已受紀念	已受纪念		FUN_1408c1d10 L1261983-1262095／FUN_1408c5680 L1264869-1264901 要塞：亡者的紀念狀態（雕刻紀念石板的對象清單）；slab 石板
+Entombed	已安葬	已安葬		FUN_1408c1d10 L1261983-1262095／FUN_1408c5680 L1264869-1264901 要塞：亡者的紀念狀態（雕刻紀念石板的對象清單）；slab 石板
+Entombed and memorialized	已安葬並受紀念	已安葬并受纪念		FUN_1408c1d10 L1261983-1262095／FUN_1408c5680 L1264869-1264901 要塞：亡者的紀念狀態（雕刻紀念石板的對象清單）；slab 石板
+Ghost	鬼魂	鬼魂		FUN_1408c1d10 L1261983-1262095／FUN_1408c5680 L1264869-1264901 要塞：亡者的紀念狀態（雕刻紀念石板的對象清單）；slab 石板：成為鬼魂、尚未受紀念
+Weapons and ammunition	武器與彈藥	武器与弹药		FUN_1408c2ab0 L1262465 要塞工坊「新增工作」的分類項目（後接 (opens menu)，見 rules/ui_13）
+Siege equipment	攻城裝備	攻城装备		FUN_1408c2ab0 L1262465 要塞工坊「新增工作」的分類項目（後接 (opens menu)，見 rules/ui_13）；術語 equipment 裝備
+Other objects	其他物品	其他物品		FUN_1408c2ab0 L1262465 要塞工坊「新增工作」的分類項目（後接 (opens menu)，見 rules/ui_13）
+Metal clothing	金屬衣物	金属衣物		FUN_1408c2ab0 L1262465 要塞工坊「新增工作」的分類項目（後接 (opens menu)，見 rules/ui_13）
+Mix dye	調染料	调染料		FUN_1408c2ab0 L1262465 要塞工坊「新增工作」的分類項目（後接 (opens menu)，見 rules/ui_13）
+Dye cloth a specific color	將布染成指定顏色	将布染成指定颜色		FUN_1408c2ab0 L1262465 要塞工坊「新增工作」的分類項目（後接 (opens menu)，見 rules/ui_13）
+Dye thread a specific color	將線染成指定顏色	将线染成指定颜色		FUN_1408c2ab0 L1262465 要塞工坊「新增工作」的分類項目（後接 (opens menu)，見 rules/ui_13）
+Dye leather a specific color	將皮革染成指定顏色	将皮革染成指定颜色		FUN_1408c2ab0 L1262465 要塞工坊「新增工作」的分類項目（後接 (opens menu)，見 rules/ui_13）
+Produces:	產出：	产出：		FUN_1408c2ca0 L1262727 要塞工坊工作說明：產出物列標題
+Requires:	需要：	需要：		FUN_1408c2ca0 L1263025 要塞工坊工作說明：需求列標題（wrap_text 寬 29）
+Melee, leather armor	近戰，皮甲	近战，皮甲		FUN_14099abe0 L1392806-1393588 要塞軍事：預設制服名稱；Archer 射手（術語表 draft）
+Melee, metal armor	近戰，金屬甲	近战，金属甲		FUN_14099abe0 L1392806-1393588 要塞軍事：預設制服名稱；Archer 射手（術語表 draft）
+Archers, leather armor	射手，皮甲	射手，皮甲		FUN_14099abe0 L1392806-1393588 要塞軍事：預設制服名稱；Archer 射手（術語表 draft）
+Archers, metal armor	射手，金屬甲	射手，金属甲		FUN_14099abe0 L1392806-1393588 要塞軍事：預設制服名稱；Archer 射手（術語表 draft）
+Axe Master	斧術大師	斧术大师		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」
+Axe Adept	斧術老練	斧术老练		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」；術語 Adept 老練
+Axe Bearer	持斧者	持斧者		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」
+Axe Initiate	斧術入門弟子	斧术入门弟子		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」
+Sword Master	劍術大師	剑术大师		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」
+Sword Adept	劍術老練	剑术老练		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」；術語 Adept 老練
+Sword Bearer	持劍者	持剑者		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」
+Sword Initiate	劍術入門弟子	剑术入门弟子		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」
+Blade Master	刀術大師	刀术大师		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」
+Blade Adept	刀術老練	刀术老练		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」；術語 Adept 老練
+Blade Bearer	持刀者	持刀者		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」
+Blade Initiate	刀術入門弟子	刀术入门弟子		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」
+Mace Master	釘錘大師	钉锤大师		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」
+Mace Adept	釘錘老練	钉锤老练		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」；術語 Adept 老練
+Mace Bearer	持錘者	持锤者		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」
+Mace Initiate	釘錘入門弟子	钉锤入门弟子		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」
+Hammer Master	錘術大師	锤术大师		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」
+Hammer Adept	錘術老練	锤术老练		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」；術語 Adept 老練
+Hammer Bearer	持錘者	持锤者		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」
+Hammer Initiate	錘術入門弟子	锤术入门弟子		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」
+Spear Master	矛術大師	矛术大师		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」
+Spear Adept	矛術老練	矛术老练		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」；術語 Adept 老練
+Spear Bearer	持矛者	持矛者		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」
+Spear Initiate	矛術入門弟子	矛术入门弟子		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」
+Crossbow Master	弩術大師	弩术大师		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」
+Crossbow Adept	弩術老練	弩术老练		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」；術語 Adept 老練
+Crossbow Bearer	持弩者	持弩者		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」
+Crossbow Initiate	弩術入門弟子	弩术入门弟子		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」
+Pike Master	槍術大師	枪术大师		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」
+Pike Adept	槍術老練	枪术老练		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」；術語 Adept 老練
+Pike Bearer	持槍者	持枪者		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」
+Pike Initiate	槍術入門弟子	枪术入门弟子		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」
+Whip Master	鞭術大師	鞭术大师		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」
+Whip Adept	鞭術老練	鞭术老练		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」；術語 Adept 老練
+Whip Bearer	持鞭者	持鞭者		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」
+Whip Initiate	鞭術入門弟子	鞭术入门弟子		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」
+Lash Master	鞭法大師	鞭法大师		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」
+Lash Adept	鞭法老練	鞭法老练		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」；術語 Adept 老練
+Lash Bearer	持鞭者	持鞭者		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」
+Lash Initiate	鞭法入門弟子	鞭法入门弟子		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」
+Bow Master	弓術大師	弓术大师		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」
+Bow Adept	弓術老練	弓术老练		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」；術語 Adept 老練
+Bow Bearer	持弓者	持弓者		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」
+Bow Initiate	弓術入門弟子	弓术入门弟子		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」
+Blowgun Master	吹箭術大師	吹箭术大师		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」
+Blowgun Adept	吹箭術老練	吹箭术老练		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」；術語 Adept 老練
+Blowgun Bearer	持吹箭者	持吹箭者		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」
+Blowgun Initiate	吹箭術入門弟子	吹箭术入门弟子		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」
+Grappling Master	擒拿術大師	擒拿术大师		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」
+Grappling Adept	擒拿術老練	擒拿术老练		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」；術語 Adept 老練
+Grappling Novice	擒拿術新手	擒拿术新手		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」
+Grappling Initiate	擒拿術入門弟子	擒拿术入门弟子		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」
+Tooth Master	噬咬術大師	噬咬术大师		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」
+Tooth Adept	噬咬術老練	噬咬术老练		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」；術語 Adept 老練
+Tooth Novice	噬咬術新手	噬咬术新手		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」
+Tooth Initiate	噬咬術入門弟子	噬咬术入门弟子		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」
+Strike Master	拳術大師	拳术大师		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」
+Strike Adept	拳術老練	拳术老练		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」；術語 Adept 老練
+Strike Novice	拳術新手	拳术新手		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」
+Strike Initiate	拳術入門弟子	拳术入门弟子		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」
+Kick Master	腿法大師	腿法大师		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」
+Kick Adept	腿法老練	腿法老练		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」；術語 Adept 老練
+Kick Novice	腿法新手	腿法新手		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」
+Kick Initiate	腿法入門弟子	腿法入门弟子		FUN_140939980 L1336924-1337060 世界生成的武藝職位名（武器字首字大寫＋Master／Adept／Bearer 或徒手的 Novice）；L1337288 等級最低的「武器 Initiate」
+Grandmaster	宗師	宗师		FUN_140939980 L1336589 世界生成的軍事職位名（未開化勢力的最高軍職，對應 General）
+Sergeant	中士	中士		FUN_140939980 L1336727 世界生成的軍事職位名（General／Captain／Sergeant／Soldier 一組）
+Initiate	入門弟子	入门弟子		FUN_140939980 L1336870 世界生成的軍事職位名（Grandmaster／Master／Adept／Novice／Initiate 一組）
+commanders	指揮官	指挥官	inner	FUN_140939980 L1336324-1336447 世界生成的傭兵團首領職位名（小寫，接進傳說事件句）；單數條目已在 events_14
+overlord	霸主	霸主	inner	FUN_140939980 L1336324-1336447 世界生成的傭兵團首領職位名（小寫，接進傳說事件句）；單數條目已在 events_14
+overlords	霸主	霸主	inner	FUN_140939980 L1336324-1336447 世界生成的傭兵團首領職位名（小寫，接進傳說事件句）；單數條目已在 events_14
+warlords	軍閥	军阀	inner	FUN_140939980 L1336324-1336447 世界生成的傭兵團首領職位名（小寫，接進傳說事件句）；單數條目已在 events_14
+leaders	領袖	领袖	inner	FUN_140939980 L1336324-1336447 世界生成的傭兵團首領職位名（小寫，接進傳說事件句）；單數條目已在 events_14

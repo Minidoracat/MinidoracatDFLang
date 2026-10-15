@@ -1,0 +1,32 @@
+en	zh-Hant	zh-Hans	align	note
+Tame	馴服	驯服		FUN_141425c40 L2697837 生物清單（單位清單）每位單位的狀態欄：動物馴養等級；術語 tame
+Trained	已訓練	已训练		FUN_141425c40 L2697840 跳躍表 生物清單（單位清單）每位單位的狀態欄：動物訓練等級
+Well-trained	訓練有素	训练有素		FUN_141425c40 L2697840 跳躍表 生物清單（單位清單）每位單位的狀態欄：動物訓練等級；術語例外：well
+Skillfully trained	訓練熟練	训练熟练		FUN_141425c40 L2697840 跳躍表 生物清單（單位清單）每位單位的狀態欄：動物訓練等級
+Expertly trained	訓練精良	训练精良		FUN_141425c40 L2697840 跳躍表 生物清單（單位清單）每位單位的狀態欄：動物訓練等級
+Exceptionally trained	訓練卓越	训练卓越		FUN_141425c40 L2697840 跳躍表 生物清單（單位清單）每位單位的狀態欄：動物訓練等級
+Masterfully trained	大師級訓練	大师级训练		FUN_141425c40 L2697840 跳躍表 生物清單（單位清單）每位單位的狀態欄：動物訓練等級
+Wild Animal	野生動物	野生动物		FUN_141425c40 L2697878 生物清單（單位清單）每位單位的狀態欄
+Opposed to life	敵視生命	敌视生命		FUN_141425c40 L2697884 生物清單（單位清單）每位單位的狀態欄：不死生物（OPPOSED_TO_LIFE）
+Undead	亡靈	亡灵		FUN_141425c40 L2697885 生物清單（單位清單）每位單位的狀態欄；同 Undead attack 的亡靈
+Invader	入侵者	入侵者		FUN_141425c40 L2697909 生物清單（單位清單）每位單位的狀態欄
+Visitor	訪客	访客		FUN_141425c40 L2697923 生物清單（單位清單）每位單位的狀態欄
+Friendly	友善	友善		FUN_141425c40 L2697925 生物清單（單位清單）每位單位的狀態欄
+Underworld	冥界	冥界		FUN_141425c40 L2697940 生物清單（單位清單）每位單位的狀態欄：來自冥界的生物
+Uninvited Guest	不速之客	不速之客		FUN_141425c40 L2697979 生物清單（單位清單）每位單位的狀態欄
+Chained Guest	被鎖住的訪客	被锁住的访客		FUN_141425c40 L2697977 生物清單（單位清單）每位單位的狀態欄；同 Chained Prisoner 被鎖住的囚犯
+Caged Guest	籠中訪客	笼中访客		FUN_141425c40 L2697983 生物清單（單位清單）每位單位的狀態欄；同 Caged Prisoner 籠中囚犯
+Current Resident	常住居民	常住居民		FUN_141425c40 L2697988 生物清單（單位清單）每位單位的狀態欄；術語 resident
+Agitated Chained Creature	被鎖住的躁動生物	被锁住的躁动生物		FUN_141425c40 L2698001 生物清單（單位清單）每位單位的狀態欄；整條寫出：原本被拼成怪譯文
+Agitated Wilderness Creature	躁動的野生生物	躁动的野生生物		FUN_141425c40 L2698003 生物清單（單位清單）每位單位的狀態欄；整條寫出
+Agitated Caged Creature	籠中躁動生物	笼中躁动生物		FUN_141425c40 L2698007 生物清單（單位清單）每位單位的狀態欄；整條寫出：原本被拼成「焦躁被關進籠子生物」
+Missing	失蹤	失踪		FUN_141425c40 L跳躍表 生物清單（單位清單）每位單位的狀態欄：失蹤的單位；同 dfhack.lua.advfinder 的 Missing
+Tame (Small)	馴服（小型）	驯服（小型）		FUN_14142b280 L2701660 生物清單：小型動物（籠中小生物物品）的狀態；術語 tame
+Wild Animal (Small)	野生動物（小型）	野生动物（小型）		FUN_14142b280 L2701675 生物清單：小型野生動物（籠中小生物物品）的狀態
+Off duty	非執勤	非值勤		FUN_1414d3710 L2834071（另見 L1092139、L2429545）軍事排程名稱；整條寫出：原本被拼成「關責任」
+Staggered training	輪班訓練	轮班训练		FUN_1414d3710 L2834073 軍事排程名稱：小隊輪流訓練
+Constant training	持續訓練	持续训练		FUN_1414d3710 L2834075 軍事排程名稱
+Ready	待命	待命		FUN_1414d3710 L2834077 軍事排程名稱；執行檔裡的 "Ready" 只有這組排程名
+No alert	無警報	无警报		FUN_1414d3710 L2834079 軍事警戒名稱；術語 alert；整條寫出：原本被拼成「否警報」
+missing item	遺失物品	丢失物品		FUN_140450140 L573250/L574297 物品不存在時畫出的占位標籤；整條寫出，免得全域 Missing「失蹤」拼成「失蹤物品」
+Undead Hunt	獵殺亡靈	猎杀亡灵		L1022088/L1022698（FUN_14074fbc0、FUN_140750010）活動種類名；整條寫出，免得全域 Undead 拼成語意含糊的「亡靈狩獵」

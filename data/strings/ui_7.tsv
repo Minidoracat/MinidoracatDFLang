@@ -1,0 +1,182 @@
+en	zh-Hant	zh-Hans	align	note
+Elevate whom?	要提拔誰？	要提拔谁？		FUN_140415d60 L531526 外交會談（回應選項／對方回覆）：L532607
+Flattering, but we'd rather maintain our distance from the homeland.	過獎了，但我們寧可和母國保持距離。	过奖了，不过我们宁愿和母国保持距离。		FUN_140415d60 L531526 外交會談（回應選項／對方回覆）：L532095
+Give up this childish errand.  We do not part with our treasures lightly.	放棄這幼稚的差事吧。我們不會輕易交出珍寶。	放弃这种幼稚的差事吧。我们不会轻易交出宝物。		FUN_140415d60 L531526 外交會談（回應選項／對方回覆）：L531880
+I can scarcely believe this good news!  I have some recommendations.	真不敢相信有這種好消息！我有幾位人選要推薦。	简直不敢相信有这种好消息！我有几个人选要推荐。		FUN_140415d60 L531526 外交會談（回應選項／對方回覆）：L532060
+I hear the call.  Let us stop this war.	我聽見呼喚了。停止這場戰爭吧。	我听到召唤了。停止这场战争吧。		FUN_140415d60 L531526 外交會談（回應選項／對方回覆）：L531987
+Make requests for next year's caravan.  They'll charge more for these items.	向明年的商隊提出需求。這些物品的價格會比較高。	向明年的商队提出需求。这些物品会卖得更贵。		FUN_140415d60 L531526 外交會談（回應選項／對方回覆）：L532169
+No positions available	沒有可用的職位	没有可用的职位		FUN_140415d60 L531526 外交會談（回應選項／對方回覆）：L532614
+No recommendations available	沒有可推薦的人選	没有可推荐的人选		FUN_140415d60 L531526 外交會談（回應選項／對方回覆）：L532982
+Our needs exceed your allowances.  Relax.  They're only trees.	我們的需求超過你們的限額。放輕鬆，不過是些樹罷了。	我们的需求超过你们的限额。放轻松，不过是些树而已。		FUN_140415d60 L531526 外交會談（回應選項／對方回覆）：L533140
+Sadly, we do not possess this object.  Best of luck in your search.	很遺憾，我們沒有這件物品。祝你找得順利。	很遗憾，我们没有这件东西。祝你寻找顺利。		FUN_140415d60 L531526 外交會談（回應選項／對方回覆）：L531838；術語例外：object
+We can abide by this.  Let us work toward mutual co-existence.	我們可以遵守。讓我們一起努力和平共存。	我们可以遵守。让我们一起努力和平共处。		FUN_140415d60 L531526 外交會談（回應選項／對方回覆）：L533106
+We can grant this request.  Let's discuss the specifics, though...	我們可以答應這項請求。不過，先來談談細節……	我们可以答应这个请求。不过，先谈谈细节……		FUN_140415d60 L531526 外交會談（回應選項／對方回覆）：L533175
+We cannot stop production just because of your quaint sensibilities.	我們不能因為你們那點古怪的多愁善感就停止生產。	我们不能因为你们那点古怪的多愁善感就停止生产。		FUN_140415d60 L531526 外交會談（回應選項／對方回覆）：L533209
+We will drown out the call with the screams of your dying.  Begone.	我們會用你們垂死的慘叫淹沒這聲呼喚。滾吧。	我们会用你们临死的惨叫淹没这声召唤。滚吧。		FUN_140415d60 L531526 外交會談（回應選項／對方回覆）：L532022
+We will gladly do as you ask and strengthen our bonds of friendship.	我們樂意照辦，並加深彼此的友誼。	我们乐意照办，并加深彼此的友谊。		FUN_140415d60 L531526 外交會談（回應選項／對方回覆）：L531830
+Your claim is worthless here.  Trade your lives if you must.	你們的主張在這裡一文不值。真要的話，就拿命來換吧。	你们的主张在这里一文不值。真想要，就拿命来换吧。		FUN_140415d60 L531526 外交會談（回應選項／對方回覆）：L531890；術語例外：claim
+There are no petitions that need your attention.	沒有需要你處理的請願。	没有需要你处理的请愿。		FUN_140418680 L533216 請願畫面：L533359
+You do not have an official capable of handling these matters.	你沒有能處理這些事務的官員。	你没有能处理这些事务的官员。		FUN_140418680 L533216 請願畫面：L533331
+desires citizenship.	希望成為公民。	希望成为公民。		FUN_140418680 L533216 請願畫面：L533525 第 2 行（第 1 行人名）
+wishes to join	希望加入	希望加入		FUN_140418680 L533216 請願畫面：L533531 第 2 行，下一行勢力名、再下一行 as a citizen of
+as a citizen of	並入籍於	并入籍于		FUN_140418680 L533216 請願畫面：L533549 接在勢力名下一行，下一行據點名
+Do you approve this request?	你批准這項請求嗎？	你批准这项请求吗？		FUN_140418680 L533216 請願畫面：L533570
+Approve	批准	批准		FUN_140418680 L533216 請願畫面：L533597 按鈕
+Future such petitions: accept	日後同類請願：接受	以后同类请愿：接受		FUN_140418680 L533216 請願畫面：L533692 常規命令狀態
+Future such petitions: prompt	日後同類請願：詢問	以后同类请愿：询问		FUN_140418680 L533216 請願畫面：L533667 常規命令狀態
+Future such petitions: reject	日後同類請願：拒絕	以后同类请愿：拒绝		FUN_140418680 L533216 請願畫面：L533703 常規命令狀態
+This can also be changed in	也可以在以下位置變更：	也可以在以下位置更改：		FUN_140418680 L533216 請願畫面：L533716 下一行 Labor -> Standing orders -> Petitions.
+Labor -> Standing orders -> Petitions.	勞動 -> 常規命令 -> 請願。	劳动 -> 常规命令 -> 请愿。		FUN_140418680 L533216 請願畫面：L533739 選單路徑，用 Labor／Standing orders／Petitions 既有譯名
+wishes to parley	希望和談	希望和谈		FUN_140418680 L533216 請願畫面：L533801 和談請願三行連讀：希望和談／以避免／人員傷亡。
+in order to avert	以避免	以避免		FUN_140418680 L533216 請願畫面：L533807 同上第 2 行
+loss of life.	人員傷亡。	人员伤亡。		FUN_140418680 L533216 請願畫面：L533813 同上第 3 行
+has many worshippers here	在此地有許多信徒	在此地有许多信徒		FUN_140418680 L533216 請願畫面：L533942 神殿請願：第 1 行神名，下一行 and now requires
+has many worshippers in	有許多信徒，位於	有许多信徒，位于		FUN_140418680 L533216 請願畫面：L533949 神殿請願：下一行據點名
+and now requires	現在需要	现在需要		FUN_140418680 L533216 請願畫面：L533964 下一行需要的建築
+a temple complex and high priest	一座神殿建築群與大祭司	一座神殿建筑群和大祭司		FUN_140418680 L533216 請願畫面：L533972
+a temple and priest	一座神殿與祭司	一座神殿和祭司		FUN_140418680 L533216 請願畫面：L533980
+The location must be built and furnished,	該場所必須建好並布置完成，	该场所必须建好并布置完成，		FUN_140418680 L533216 請願畫面：L533991 下一行 with the new position… 或 with the hall designated for a
+with the new position appointed by you.	並由你任命新職位。	并由你任命新职位。		FUN_140418680 L533216 請願畫面：L533997
+has many members here	在此地有許多成員	在此地有许多成员		FUN_140418680 L533216 請願畫面：L534135 公會請願：第 1 行公會名
+has many members in	有許多成員，位於	有许多成员，位于		FUN_140418680 L533216 請願畫面：L534140 公會請願：下一行據點名
+a grand guildhall	一座宏偉公會大廳	一座宏伟公会大厅		FUN_140418680 L533216 請願畫面：L534170 後面另畫句號；a guildhall 已有
+with the hall designated for a	大廳專供以下職業：	大厅专供以下职业：		FUN_140418680 L533216 請願畫面：L534221 下一行「職業 guild.」
+wishes to reside here	希望在此地居住	希望在此居住		FUN_140418680 L533216 請願畫面：L534383 居留請願：下一行 for the purpose of
+wishes to reside in	希望居住於	希望居住于		FUN_140418680 L533216 請願畫面：L534390 居留請願：下一行據點名
+for the purpose of	目的是	目的是		FUN_140418680 L533216 請願畫面：L534405 下一行居留目的
+eradicating monsters.	剷除怪物。	铲除怪物。		FUN_140418680 L533216 請願畫面：L534413
+entertaining citizens and visitors.	娛樂居民與訪客。	娱乐居民和访客。		FUN_140418680 L533216 請願畫面：L534421
+soldiering.	從軍。	从军。		FUN_140418680 L533216 請願畫面：L534427
+study.	研究。	研究。		FUN_140418680 L533216 請願畫面：L534433；術語例外：study
+sanctuary.	尋求庇護。	寻求庇护。		FUN_140418680 L533216 請願畫面：L534439
+You have no vehicles.	你沒有車輛。	你没有车辆。		FUN_14041e860 L536821 貨運路線車輛畫面：L536959
+Inaccessible from first stop	從第一站無法抵達	从第一站无法到达		FUN_14041e860 L536821 貨運路線車輛畫面：L537322
+Choose symbols for the position holder to carry or wear.	選擇職位持有者要攜帶或穿戴的象徵物。	选择职位持有者要携带或穿戴的象征物。		FUN_1404257d0 L541859 貴族與管理者畫面：L542057；術語例外：symbol
+No relevant skills	沒有相關技能	没有相关技能		FUN_1404257d0 L541859 貴族與管理者畫面：L542653 任命候選人
+Leave Vacant	保持空缺	保持空缺		FUN_1404257d0 L541859 貴族與管理者畫面：L542577 任命候選人清單第一項
+Throne Room/Office	王座廳／辦公室	王座厅／办公室		FUN_1404257d0 L541859 貴族與管理者畫面：L544448 同上
+Export of 	出口：	出口：		FUN_1404257d0 L541859 貴族與管理者畫面：L544520 命令清單：Export of 、物品名、 Prohibited 三段分畫，拼成「出口：物品（禁止）」
+ Prohibited	 （禁止）	 （禁止）		FUN_1404257d0 L541859 貴族與管理者畫面：L544545 同上
+Make 	製作 	制作 		FUN_1404257d0 L541859 貴族與管理者畫面：L544539 命令清單：Make 、物品名、 (數/數) 分畫
+Lowest Precision	最低精確度	最低精确度		FUN_1404257d0 L541859 貴族與管理者畫面：L544671 簿記員精確度設定
+Low Precision	低精確度	低精确度		FUN_1404257d0 L541859 貴族與管理者畫面：L544679
+Medium Precision	中精確度	中精确度		FUN_1404257d0 L541859 貴族與管理者畫面：L544685
+High Precision	高精確度	高精确度		FUN_1404257d0 L541859 貴族與管理者畫面：L544691
+Highest Precision	最高精確度	最高精确度		FUN_1404257d0 L541859 貴族與管理者畫面：L544697
+Stocks amount display: 	庫存數量顯示：	库存数量显示：		FUN_1404257d0 L541859 貴族與管理者畫面：L544704
+All counts accurate	所有數量皆精確	所有数量都精确		FUN_1404257d0 L541859 貴族與管理者畫面：L544730
+Your bookkeeper needs to work in an office to improve precision.	簿記員需要在辦公室工作才能提高精確度。	簿记员需要在办公室工作才能提高精确度。		FUN_1404257d0 L541859 貴族與管理者畫面：L544742 句號另接（DAT_1415e85b4）；術語例外：needs
+Your bookkeeper has done enough work to attain low precision.	簿記員的工作量已達到低精確度。	簿记员的工作量已达到低精确度。		FUN_1404257d0 L541859 貴族與管理者畫面：L544747 Your bookkeeper has done enough work to attain ＋精確度＋句號
+Your bookkeeper has done enough work to attain medium precision.	簿記員的工作量已達到中精確度。	簿记员的工作量已达到中精确度。		FUN_1404257d0 L541859 貴族與管理者畫面：L544747 同上
+Your bookkeeper has done enough work to attain high precision.	簿記員的工作量已達到高精確度。	簿记员的工作量已达到高精确度。		FUN_1404257d0 L541859 貴族與管理者畫面：L544747 同上
+Your bookkeeper has done enough work to attain highest precision.	簿記員的工作量已達到最高精確度。	簿记员的工作量已达到最高精确度。		FUN_1404257d0 L541859 貴族與管理者畫面：L544747 同上
+No food to cook or brew (are you in trouble?)	沒有可烹煮或釀造的食物（你是不是有麻煩了？）	没有可烹饪或酿造的食物（你是不是有麻烦了？）		FUN_14042adc0 L545136 廚房：L545167；術語例外：Cook
+Custom Detail	自訂工作分組	自定工作分组		FUN_14042f8a0 L548965 工作分組：預設名稱 L549041 （編號用完時）
+Brew	釀造	酿造		FUN_14042fcc0 L549200 勞動＞廚房分頁欄名：L549793 同列 Cook 欄目前被翻成職業「廚師」，見回報
+Number	數量	数量		FUN_14042fcc0 L549200 勞動＞廚房分頁欄名：L549637
+You have no appropriate ingredients.	你沒有合適的食材。	你没有合适的食材。		FUN_140431ea0 L550925 勞動＞廚房：L550986
+You know of no appropriate stones.	沒有已知的合適石材。	没有已知的合适石料。		FUN_140438090 L555414 勞動＞石材用途：L555622
+Choose a symbol for the burrow.	為活動區選擇標誌。	为活动区选择标志。		FUN_14043a110 L556761 選擇標誌畫面：L556898；術語例外：symbol
+Choose a symbol for the detail.	為工作分組選擇標誌。	为工作分组选择标志。		FUN_14043a110 L556761 選擇標誌畫面：L556910；術語例外：symbol
+Choose a symbol for the squad.	為小隊選擇標誌。	为小队选择标志。		FUN_14043a110 L556761 選擇標誌畫面：L556920；術語例外：symbol
+Foreground	前景	前景		FUN_14043a110 L556761 選擇標誌畫面：L557005 顏色欄（Background 已有）
+Really disband?	確定要解散？	确定要解散？		FUN_1404411f0 L561122 軍事＞小隊畫面：L561341
+Disband	解散	解散		FUN_1404411f0 L561122 軍事＞小隊畫面：L561593 按鈕
+You must appoint	你必須先任命	你必须先任命		FUN_1404411f0 L561122 軍事＞小隊畫面：L561752 三行連讀：你必須先任命／某個人／才能建立小隊。
+somebody first	某個人	某个人		FUN_1404411f0 L561122 軍事＞小隊畫面：L561756 同上第 2 行；整條寫出，原本被拼成「某人第一」
+Create new squad	建立新小隊	创建新小队		FUN_1404411f0 L561122 軍事＞小隊畫面：L561803
+No special orders	沒有特別命令	没有特别命令		FUN_1404411f0 L561122 軍事＞小隊畫面：L562094
+Multiple orders	多項命令	多项命令		FUN_1404411f0 L561122 軍事＞小隊畫面：L562100 另見 FUN_140449e70 L567113
+Routine:	例行：	例行：		FUN_1404411f0 L561122 軍事＞小隊畫面：L562148 後面直接接例行任務名稱
+Back to squads	返回小隊	返回小队		FUN_1404411f0 L561122 軍事＞小隊畫面：L562229
+Assign leader	指派隊長	指派队长		FUN_1404411f0 L561122 軍事＞小隊畫面：L562454
+Cannot appoint	無法任命，	无法任命，		FUN_1404411f0 L561122 軍事＞小隊畫面：L562470 三行連讀：無法任命，／直到指揮官／選定為止
+until commander	直到指揮官	直到指挥官		FUN_1404411f0 L561122 軍事＞小隊畫面：L562474 同上第 2 行
+is selected	選定為止	选定为止		FUN_1404411f0 L561122 軍事＞小隊畫面：L562478 同上第 3 行
+Done editing	完成編輯	完成编辑		FUN_1404411f0 L561122 軍事＞小隊畫面：L562760
+(unnamed orders)	（未命名命令）	（未命名命令）		FUN_1404411f0 L561122 軍事＞小隊畫面：L562814
+Editing routine 	編輯例行任務：	编辑例行任务：		FUN_1404411f0 L561122 軍事＞小隊畫面：L562876 後面另畫例行任務名稱
+Equip/always	裝備／一律	装备／始终		FUN_1404411f0 L561122 軍事＞小隊畫面：L562966
+Equip/orders only	裝備／僅限命令	装备／仅限命令		FUN_1404411f0 L561122 軍事＞小隊畫面：L562972
+Sleep/room at will	睡眠／隨意回房	睡眠／随意回房		FUN_1404411f0 L561122 軍事＞小隊畫面：L563013
+Sleep/barracks at will	睡眠／隨意睡營房	睡眠／随意睡营房		FUN_1404411f0 L561122 軍事＞小隊畫面：L563021
+Sleep/barracks at need	睡眠／需要時睡營房	睡眠／需要时睡营房		FUN_1404411f0 L561122 軍事＞小隊畫面：L563027
+Minimum number of	最少需要幾名	最少需要几名		FUN_1404411f0 L561122 軍事＞小隊畫面：L563039 三行連讀：最少需要幾名／士兵來執行／新命令，右邊畫數字
+soldiers to follow	士兵來執行	士兵来执行		FUN_1404411f0 L561122 軍事＞小隊畫面：L563043 同上第 2 行
+new order	新命令	新命令		FUN_1404411f0 L561122 軍事＞小隊畫面：L563047 同上第 3 行
+At least 	至少 	至少 		FUN_1404411f0 L561122 軍事＞小隊畫面：L563313 後面另畫數字
+Move: click on the map.	移動：點選地圖。	移动：点击地图。		FUN_1404411f0 L561122 軍事＞小隊畫面：L563897
+Vacant position	空缺職位	空缺职位		FUN_1404411f0 L561122 軍事＞小隊畫面：L563407 另見 FUN_140448990 L565630
+Equip	裝備	装备		FUN_1404411f0 L561122 軍事＞小隊畫面：L564131 小隊按鈕
+Schedule	排程	日程		FUN_1404411f0 L561122 軍事＞小隊畫面：L564164 小隊按鈕
+Choose a uniform for the	選擇制服給	选择制服给		FUN_140446d60 L564283 制服指派畫面：L564399 下一行 selected squads.／selected positions.，或「名字's」再下一行 squad.
+selected squads.	選定的小隊。	选定的小队。		FUN_140446d60 L564283 制服指派畫面：L564421
+selected positions.	選定的職位。	选定的职位。		FUN_140446d60 L564283 制服指派畫面：L564438
+squad.	小隊。	小队。		FUN_140446d60 L564283 制服指派畫面：L564498 接在「名字's」下一行
+Create which squad?	要建立哪個小隊？	要创建哪个小队？		FUN_140448990 L565421 建立小隊畫面：L565506
+View monthly schedule	檢視每月排程	查看每月日程		FUN_140449e70 L566312 軍事＞排程畫面：L566906
+Military routines	軍事例行任務	军事例行任务		FUN_140449e70 L566312 軍事＞排程畫面：L568243
+Monthly orders	每月命令	每月命令		FUN_140449e70 L566312 軍事＞排程畫面：L567025 格子內容，超過 18 格遊戲截成…
+Add new routine	新增例行任務	新增例行任务		FUN_140449e70 L566312 軍事＞排程畫面：L568482
+Current month	本月	本月		FUN_140449e70 L566312 軍事＞排程畫面：L567757
+Really delete this routine?	確定要刪除這項例行任務？	确定要删除这项例行任务？		FUN_140449e70 L566312 軍事＞排程畫面：L568500
+Add/edit routines (columns)	新增／編輯例行任務（欄）	新增／编辑例行任务（列）		FUN_140449e70 L566312 軍事＞排程畫面：L566514
+Assign uniform	指派制服	分配制服		FUN_140450140 L570304 軍事＞裝備（制服）畫面：L570682
+Supplies	補給	补给		FUN_140450140 L570304 軍事＞裝備（制服）畫面：L570791
+Update equipment	更新裝備	更新装备		FUN_140450140 L570304 軍事＞裝備（制服）畫面：L570835
+Details	詳情	详情		FUN_140450140 L570304 軍事＞裝備（制服）畫面：L571135 按鈕（其他函式的 Details 是元件名，不畫）
+Supplies carried by each squad member	每位小隊成員攜帶的補給	每名小队成员携带的补给		FUN_140450140 L570304 軍事＞裝備（制服）畫面：L571230
+Select material.	選擇材料。	选择材料。		FUN_140450140 L570304 軍事＞裝備（制服）畫面：L572833 整條寫出，原本被 Select {1}. 拼成「選擇material.」
+Select color.	選擇顏色。	选择颜色。		FUN_140450140 L570304 軍事＞裝備（制服）畫面：L573019 整條寫出，原本被拼成「選擇color.」
+Mat	材	材		FUN_140450140 L570304 軍事＞裝備（制服）畫面：L572596 彈藥列的材料按鈕（框內 3 格）
+Amt	量	量		FUN_140450140 L570304 軍事＞裝備（制服）畫面：L572631 彈藥列的數量按鈕（框內 3 格）
+any color	任何顏色	任何颜色		FUN_140450140 L570304 軍事＞裝備（制服）畫面：L573096
+Adding uniform	新增制服中	添加制服中		FUN_140450140 L570304 軍事＞裝備（制服）畫面：L573457
+(enter name here)	（在此輸入名稱）	（在此输入名称）		FUN_140450140 L570304 軍事＞裝備（制服）畫面：L573582
+Confirm and save uniform	確認並儲存制服	确认并保存制服		FUN_140450140 L570304 軍事＞裝備（制服）畫面：L573626
+New bodywear	新增身體裝備	新增身体装备		FUN_140450140 L570304 軍事＞裝備（制服）畫面：L573659
+New headwear	新增頭部裝備	新增头部装备		FUN_140450140 L570304 軍事＞裝備（制服）畫面：L573691
+New legwear	新增褲裝	新增裤装		FUN_140450140 L570304 軍事＞裝備（制服）畫面：L573723
+New handwear	新增手部裝備	新增手部装备		FUN_140450140 L570304 軍事＞裝備（制服）畫面：L573755
+New footwear	新增足部裝備	新增足部装备		FUN_140450140 L570304 軍事＞裝備（制服）畫面：L573787
+New shield	新增盾牌	新增盾牌		FUN_140450140 L570304 軍事＞裝備（制服）畫面：L573819
+New weapon	新增武器	新增武器		FUN_140450140 L570304 軍事＞裝備（制服）畫面：L573851
+Uniform worn over clothing	制服穿在衣服外面	制服穿在衣服外面		FUN_140450140 L570304 軍事＞裝備（制服）畫面：L573885
+Uniform replaces clothing	制服取代衣服	制服取代衣服		FUN_140450140 L570304 軍事＞裝備（制服）畫面：L573890
+Partial matches okay	部分符合即可	部分符合即可		FUN_140450140 L570304 軍事＞裝備（制服）畫面：L573926
+Exact matches only	必須完全符合	必须完全符合		FUN_140450140 L570304 軍事＞裝備（制服）畫面：L573931
+individual choice	個人選擇	个人选择		FUN_140450140 L570304 軍事＞裝備（制服）畫面：L574200 制服項目：沒有指定物品
+individual choice, weapon	個人選擇（武器）	个人选择（武器）		FUN_140450140 L570304 軍事＞裝備（制服）畫面：L574204
+indiv choice, melee	個人選擇（近戰）	个人选择（近战）		FUN_140450140 L570304 軍事＞裝備（制服）畫面：L574195
+indiv choice, ranged	個人選擇（遠程）	个人选择（远程）		FUN_140450140 L570304 軍事＞裝備（制服）畫面：L574096
+specific armor	指定護甲	指定护甲		FUN_140450140 L570304 軍事＞裝備（制服）畫面：L574688 新增制服項目的選項
+specific helm	指定頭盔	指定头盔		FUN_140450140 L570304 軍事＞裝備（制服）畫面：L574691
+specific pants	指定褲子	指定裤子		FUN_140450140 L570304 軍事＞裝備（制服）畫面：L574694
+specific gloves	指定手套	指定手套		FUN_140450140 L570304 軍事＞裝備（制服）畫面：L574697
+specific shoes	指定鞋子	指定鞋子		FUN_140450140 L570304 軍事＞裝備（制服）畫面：L574700
+specific shield	指定盾牌	指定盾牌		FUN_140450140 L570304 軍事＞裝備（制服）畫面：L574703
+specific weapon	指定武器	指定武器		FUN_140450140 L570304 軍事＞裝備（制服）畫面：L574706
+No assigned items	沒有已指派物品	没有已分配物品		FUN_140450140 L570304 軍事＞裝備（制服）畫面：L574328 整條寫出，原本被拼成「否已指派物品」
+No water	沒有水	没有水		FUN_140450140 L570304 軍事＞裝備（制服）畫面：L571649 補給欄；整條寫出，原本被拼成「否水」
+Attempted kidnapping	綁架未遂	绑架未遂		FUN_14046d660 L591268 司法畫面：罪名：L591451
+Attempted murder	謀殺未遂	谋杀未遂		FUN_14046d660 L591268 司法畫面：罪名：L591444
+Attempted theft	竊盜未遂	盗窃未遂		FUN_14046d660 L591268 司法畫面：罪名：L591457
+Blood-drinking	吸血	吸血		FUN_14046d660 L591268 司法畫面：罪名：L591436
+Bribery	賄賂	贿赂		FUN_14046d660 L591268 司法畫面：罪名：L591519
+Building destruction	破壞建築	破坏建筑		FUN_14046d660 L591268 司法畫面：罪名：L591370
+Conspiracy to alow labor	陰謀怠工	阴谋怠工		FUN_14046d660 L591268 司法畫面：罪名：L591327 原文 alow 是遊戲錯字（slow）；術語例外：Labor
+Disorderly conduct	擾亂秩序	扰乱秩序		FUN_14046d660 L591268 司法畫面：罪名：L591367
+Embezzlement	盜用公款	挪用公款		FUN_14046d660 L591268 司法畫面：罪名：L591440；和 events_02 的 embezzlement 同譯
+Espionage	間諜活動	间谍活动		FUN_14046d660 L591268 司法畫面：罪名：L591464
+Kidnapping	綁架	绑架		FUN_14046d660 L591268 司法畫面：罪名：L591448
+Robbery	搶劫	抢劫		FUN_14046d660 L591268 司法畫面：罪名：L591432
+Treason	叛國	叛国		FUN_14046d660 L591268 司法畫面：罪名：L591461
+Vandalism	蓄意破壞	蓄意破坏		FUN_14046d660 L591268 司法畫面：罪名：L591374
+Violation of export prohibition	違反出口禁令	违反出口禁令		FUN_14046d660 L591268 司法畫面：罪名：L591319
+Violation of job order	違反工作命令	违反工作命令		FUN_14046d660 L591268 司法畫面：罪名：L591323
+Violation of production order	違反生產命令	违反生产命令		FUN_14046d660 L591268 司法畫面：罪名：L591315
+Unsolved.	未破案。	未破案。		FUN_14046db60 L591530 司法畫面：案件說明 L591721
+Unknown convict.	罪犯不明。	罪犯不明。		FUN_14046db60 L591530 司法畫面：案件說明 L591766 整條寫出，原本被拼成「未知定罪。」
+Sort units by how involved they are in the crime.	依各單位涉入罪行的程度排序。	按各单位涉入罪行的程度排序。		FUN_14046e5a0 L592040 司法畫面：單位清單排序欄 L592231 欄名提示
+No witnesses	沒有目擊者	没有目击者		FUN_14046eb60 L592342 司法畫面：目擊者數 L592415
+1 witness	目擊 1 人	目击 1 人		FUN_14046eb60 L592342 司法畫面：目擊者數 L592426
