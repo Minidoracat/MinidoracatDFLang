@@ -1,0 +1,216 @@
+en	zh-Hant	zh-Hans	align	note
+{$1}: {$2} In The End	{1}：到頭來{2}	{1}：到头来{2}		text_book_art.txt 書名樣板 [NAME]: [PHRASE]，[PHRASE] 帶結尾詞 In The End：結尾詞句型排在冒號前面會把「主題: 片語」整串當成主詞（到頭來和平：…），所以冒號句型帶結尾詞的寫死、排在結尾詞句型前
+{$1}: {$2} In The Beginning	{1}：起初{2}	{1}：起初{2}		text_book_art.txt 書名樣板 [NAME]: [PHRASE]，[PHRASE] 帶結尾詞 In The Beginning：結尾詞句型排在冒號前面會把「主題: 片語」整串當成主詞（到頭來和平：…），所以冒號句型帶結尾詞的寫死、排在結尾詞句型前
+{$1}: {$2} Afterward	{1}：此後{2}	{1}：此后{2}		text_book_art.txt 書名樣板 [NAME]: [PHRASE]，[PHRASE] 帶結尾詞 Afterward：結尾詞句型排在冒號前面會把「主題: 片語」整串當成主詞（到頭來和平：…），所以冒號句型帶結尾詞的寫死、排在結尾詞句型前
+{$1}: {$2} There	{1}：在那裡{2}	{1}：在那里{2}		text_book_art.txt 書名樣板 [NAME]: [PHRASE]，[PHRASE] 帶結尾詞 There：結尾詞句型排在冒號前面會把「主題: 片語」整串當成主詞（到頭來和平：…），所以冒號句型帶結尾詞的寫死、排在結尾詞句型前
+{$1} Will Tell	{1}將會訴說	{1}将会诉说		FUN_140ee35f0 L2248277–2248372 [PHRASE] 動詞（主詞不是 The Sands／The Wise 時加 s）；{$1} 是主詞（titles_phrase.tsv）；排在書名樣板前：The Wise Can Say 不給 The {=1} {$2} 搶走
+{$1} Can Say	{1}說得清	{1}说得清		FUN_140ee35f0 L2248277–2248372 [PHRASE] 動詞（主詞不是 The Sands／The Wise 時加 s）；{$1} 是主詞（titles_phrase.tsv）；排在書名樣板前：The Wise Can Say 不給 The {=1} {$2} 搶走
+{$1} Foretells	{1}預言	{1}预言		FUN_140ee35f0 L2248277–2248372 [PHRASE] 動詞（主詞不是 The Sands／The Wise 時加 s）；{$1} 是主詞（titles_phrase.tsv）；排在書名樣板前：The Wise Can Say 不給 The {=1} {$2} 搶走
+{$1} Foretell	{1}預言	{1}预言		FUN_140ee35f0 L2248277–2248372 [PHRASE] 動詞（主詞不是 The Sands／The Wise 時加 s）；{$1} 是主詞（titles_phrase.tsv）；排在書名樣板前：The Wise Can Say 不給 The {=1} {$2} 搶走
+{$1} Knows	{1}知曉	{1}知晓		FUN_140ee35f0 L2248277–2248372 [PHRASE] 動詞（主詞不是 The Sands／The Wise 時加 s）；{$1} 是主詞（titles_phrase.tsv）；排在書名樣板前：The Wise Can Say 不給 The {=1} {$2} 搶走
+{$1} Know	{1}知曉	{1}知晓		FUN_140ee35f0 L2248277–2248372 [PHRASE] 動詞（主詞不是 The Sands／The Wise 時加 s）；{$1} 是主詞（titles_phrase.tsv）；排在書名樣板前：The Wise Can Say 不給 The {=1} {$2} 搶走
+{$1} Mourns	{1}哀悼	{1}哀悼		FUN_140ee35f0 L2248277–2248372 [PHRASE] 動詞（主詞不是 The Sands／The Wise 時加 s）；{$1} 是主詞（titles_phrase.tsv）；排在書名樣板前：The Wise Can Say 不給 The {=1} {$2} 搶走
+{$1} Mourn	{1}哀悼	{1}哀悼		FUN_140ee35f0 L2248277–2248372 [PHRASE] 動詞（主詞不是 The Sands／The Wise 時加 s）；{$1} 是主詞（titles_phrase.tsv）；排在書名樣板前：The Wise Can Say 不給 The {=1} {$2} 搶走
+{$1} Weeps	{1}哭泣	{1}哭泣		FUN_140ee35f0 L2248277–2248372 [PHRASE] 動詞（主詞不是 The Sands／The Wise 時加 s）；{$1} 是主詞（titles_phrase.tsv）；排在書名樣板前：The Wise Can Say 不給 The {=1} {$2} 搶走
+{$1} Weep	{1}哭泣	{1}哭泣		FUN_140ee35f0 L2248277–2248372 [PHRASE] 動詞（主詞不是 The Sands／The Wise 時加 s）；{$1} 是主詞（titles_phrase.tsv）；排在書名樣板前：The Wise Can Say 不給 The {=1} {$2} 搶走
+{$1} Laughs	{1}歡笑	{1}欢笑		FUN_140ee35f0 L2248277–2248372 [PHRASE] 動詞（主詞不是 The Sands／The Wise 時加 s）；{$1} 是主詞（titles_phrase.tsv）；排在書名樣板前：The Wise Can Say 不給 The {=1} {$2} 搶走
+{$1} Laugh	{1}歡笑	{1}欢笑		FUN_140ee35f0 L2248277–2248372 [PHRASE] 動詞（主詞不是 The Sands／The Wise 時加 s）；{$1} 是主詞（titles_phrase.tsv）；排在書名樣板前：The Wise Can Say 不給 The {=1} {$2} 搶走
+{$1} For The Beginning Practitioner	給初學者的{1}	给初学者的{1}		text_book_instruction.txt 書名樣板 [NAME] For The Beginning Practitioner
+{$1} In The Time of My Ancestors	先祖時代的{1}	先祖时代的{1}		text_book_instruction.txt 書名樣板 [NAME] In The Time of My Ancestors
+{$1}: Natural or Supernatural?	{1}：自然還是超自然？	{1}：自然还是超自然？		text_book_instruction.txt 書名樣板 [NAME]: Natural or Supernatural?
+{$1}: Principles and Practice	{1}：原理與實務	{1}：原理与实务		text_book_instruction.txt 書名樣板 [NAME]: Principles and Practice
+{$1} and The Coming Troubles	{1}與將臨的禍亂	{1}与将临的祸乱		text_book_instruction.txt 書名樣板 [NAME] and The Coming Troubles
+{$1}: Problems And Solutions	{1}：問題與解答	{1}：问题与解答		text_book_instruction.txt 書名樣板 [NAME]: Problems And Solutions
+First {$1}, Then The World!	先是{1}，然後是全世界！	先是{1}，然后是全世界！		text_book_instruction.txt 書名樣板 First [NAME], Then The World!
+The Hidden Meaning of {$1}	{1}的深意	{1}的深意		text_book_instruction.txt 書名樣板 The Hidden Meaning of [NAME]
+The Interpretation of {$1}	{1}的解析	{1}的解析		text_book_instruction.txt 書名樣板 The Interpretation of [NAME]
+The Wizard's Guide to {$1}	巫師的{1}指南	巫师的{1}指南		text_book_instruction.txt 書名樣板 The Wizard's Guide to [NAME]
+{$1}: A Brief Introduction	{1}簡介	{1}简介		text_book_instruction.txt 書名樣板 [NAME]: A Brief Introduction
+{$1}: The Definitive Guide	{1}權威指南	{1}权威指南		text_book_instruction.txt 書名樣板 [NAME]: The Definitive Guide
+A Humble Offering to {$1}	謹獻給{1}	谨献给{1}		text_book_instruction.txt 書名樣板 A Humble Offering to [NAME]
+Misconceptions About {$1}	關於{1}的誤解	关于{1}的误解		text_book_instruction.txt 書名樣板 Misconceptions About [NAME]
+The Possibilities of {$1}	{1}的可能性	{1}的可能性		text_book_instruction.txt 書名樣板 The Possibilities of [NAME]
+{$1} and Other Travesties	{1}與其他荒唐事	{1}与其他荒唐事		text_book_instruction.txt 書名樣板 [NAME] and Other Travesties
+Never Underestimate {$1}	切莫小看{1}	切莫小看{1}		text_book_instruction.txt 書名樣板 Never Underestimate [NAME]
+Start Your Day With {$1}	以{1}開啟一天	以{1}开启一天		text_book_instruction.txt 書名樣板 Start Your Day With [NAME]
+Can {$1} Save The World?	{1}能拯救世界嗎？	{1}能拯救世界吗？		text_book_instruction.txt 書名樣板 Can [NAME] Save The World?；術語例外：save
+An Introduction to {$1}	{1}導論	{1}导论		text_book_instruction.txt 書名樣板 An Introduction to [NAME]
+Interpretations of {$1}	{1}詮釋	{1}诠释		text_book_instruction.txt 書名樣板 Interpretations of [NAME]
+It All Begins With {$1}	一切始於{1}	一切始于{1}		text_book_instruction.txt 書名樣板 It All Begins With [NAME]
+An Exploration of {$1}	{1}探究	{1}探究		text_book_instruction.txt 書名樣板 An Exploration of [NAME]
+The World Without {$1}	沒有{1}的世界	没有{1}的世界		text_book_instruction.txt 書名樣板 The World Without [NAME]
+{$1} In The Modern Era	現代的{1}	现代的{1}		text_book_instruction.txt 書名樣板 [NAME] In The Modern Era
+{$1}: Before and After	{1}：之前與之後	{1}：之前与之后		text_book_instruction.txt 書名樣板 [NAME]: Before and After
+{$1}: Fact or Fiction?	{1}：事實還是虛構？	{1}：事实还是虚构？		text_book_instruction.txt 書名樣板 [NAME]: Fact or Fiction?
+Do We Understand {$1}?	我們了解{1}嗎？	我们了解{1}吗？		text_book_instruction.txt 書名樣板 Do We Understand [NAME]?
+It Must Have Been {$1}	一定是{1}	一定是{1}		text_book_art.txt 書名樣板 It Must Have Been [NAME]
+The Journey into {$1}	深入{1}之旅	深入{1}之旅		text_book_instruction.txt 書名樣板 The Journey into [NAME]
+The Knowledge of {$1}	{1}的學問	{1}的学问		text_book_instruction.txt 書名樣板 The Knowledge of [NAME]
+The Mysteries of {$1}	{1}的奧祕	{1}的奥秘		text_book_instruction.txt 書名樣板 The Mysteries of [NAME]
+{$1} and Other Topics	{1}與其他話題	{1}与其他话题		text_book_instruction.txt 書名樣板 [NAME] and Other Topics
+{$1} and The Universe	{1}與宇宙	{1}与宇宙		text_book_instruction.txt 書名樣板 [NAME] and The Universe
+{$1} Came Full Circle	{1}回到原點	{1}回到原点		text_book_instruction.txt 書名樣板 [NAME] Came Full Circle
+{$1}: A Brief History	{1}簡史	{1}简史		text_book_instruction.txt 書名樣板 [NAME]: A Brief History
+{$1}: Common Practice	{1}慣例	{1}惯例		text_book_instruction.txt 書名樣板 [NAME]: Common Practice
+{$1}: Further Musings	{1}隨想續篇	{1}随想续篇		text_book_instruction.txt 書名樣板 [NAME]: Further Musings
+{$1}: My Only Mistake	{1}：我唯一的錯誤	{1}：我唯一的错误		text_book_instruction.txt 書名樣板 [NAME]: My Only Mistake
+{$1} and Nothing More	{1}，僅此而已	{1}，仅此而已		text_book_art.txt 書名樣板 [NAME] and Nothing More
+A Meditation on {$1}	對{1}的沉思	对{1}的沉思		text_book_instruction.txt 書名樣板 A Meditation on [NAME]
+Explorations of {$1}	{1}探索記	{1}探索记		text_book_instruction.txt 書名樣板 Explorations of [NAME]
+For the Love of {$1}	出於對{1}的熱愛	出于对{1}的热爱		text_book_instruction.txt 書名樣板 For the Love of [NAME]
+Introduction to {$1}	{1}入門	{1}入门		text_book_instruction.txt 書名樣板 Introduction to [NAME]
+Questions About {$1}	關於{1}的疑問	关于{1}的疑问		text_book_instruction.txt 書名樣板 Questions About [NAME]
+The Truth About {$1}	{1}的真相	{1}的真相		text_book_instruction.txt 書名樣板 The Truth About [NAME]
+Time Spent With {$1}	與{1}共度的時光	与{1}共度的时光		text_book_instruction.txt 書名樣板 Time Spent With [NAME]
+{$1}: A New Approach	{1}新論	{1}新论		text_book_instruction.txt 書名樣板 [NAME]: A New Approach
+The Sun Sets on {$1}	{1}的落日	{1}的落日		text_book_art.txt 書名樣板 The Sun Sets on [NAME]
+An Offering to {$1}	獻給{1}	献给{1}		text_book_instruction.txt 書名樣板 An Offering to [NAME]
+Foundations of {$1}	{1}基礎	{1}基础		text_book_instruction.txt 書名樣板 Foundations of [NAME]
+Meditations on {$1}	{1}冥想錄	{1}冥想录		text_book_instruction.txt 書名樣板 Meditations on [NAME]
+My Thoughts on {$1}	我對{1}的想法	我对{1}的想法		text_book_instruction.txt 書名樣板 My Thoughts on [NAME]
+Reflections on {$1}	對{1}的反思	对{1}的反思		text_book_instruction.txt 書名樣板 Reflections on [NAME]
+The History of {$1}	{1}的歷史	{1}的历史		text_book_instruction.txt 書名樣板 The History of [NAME]
+The Meaning of {$1}	{1}的意義	{1}的意义		text_book_instruction.txt 書名樣板 The Meaning of [NAME]
+The Mystery of {$1}	{1}的謎團	{1}的谜团		text_book_instruction.txt 書名樣板 The Mystery of [NAME]
+The Pursuit of {$1}	對{1}的追求	对{1}的追求		text_book_instruction.txt 書名樣板 The Pursuit of [NAME]
+The Unabridged {$1}	無刪節版{1}	无删节版{1}		text_book_instruction.txt 書名樣板 The Unabridged [NO_ART_NAME]；[NO_ART_NAME] 的去冠詞寫法由引擎自動收
+The Unabridged {@1}	無刪節版{1}	无删节版{1}		text_book_instruction.txt 書名樣板 The Unabridged [NO_ART_NAME]；[NO_ART_NAME] 的去冠詞寫法由引擎自動收；{@1} 版：[NO_ART_NAME] 是「the＋一般字典的字」去掉 the（the Dwarves → Dwarves）時 {$1} 不收單字，改由這條收字典詞；排在 {$1} 版後面
+{$1} When It Counts	關鍵時刻的{1}	关键时刻的{1}		text_book_instruction.txt 書名樣板 [NAME] When It Counts
+{$1} Without Limits	{1}無極限	{1}无极限		text_book_instruction.txt 書名樣板 [NAME] Without Limits
+A Treatise on {$1}	論{1}	论{1}		text_book_instruction.txt 書名樣板 A Treatise on [NAME]
+Captivated by {$1}	醉心於{1}	醉心于{1}		text_book_instruction.txt 書名樣板 Captivated by [NAME]
+Commentary on {$1}	{1}評注	{1}评注		text_book_instruction.txt 書名樣板 Commentary on [NAME]
+In Pursuit of {$1}	追尋{1}	追寻{1}		text_book_instruction.txt 書名樣板 In Pursuit of [NAME]
+Principles of {$1}	{1}原理	{1}原理		text_book_instruction.txt 書名樣板 Principles of [NAME]
+The Future of {$1}	{1}的未來	{1}的未来		text_book_instruction.txt 書名樣板 The Future of [NAME]
+The Secret of {$1}	{1}的祕密	{1}的秘密		text_book_instruction.txt 書名樣板 The Secret of [NAME]
+The Student's {$1}	學生版{1}	学生版{1}		text_book_instruction.txt 書名樣板 The Student's [NO_ART_NAME]；[NO_ART_NAME] 的去冠詞寫法由引擎自動收
+The Student's {@1}	學生版{1}	学生版{1}		text_book_instruction.txt 書名樣板 The Student's [NO_ART_NAME]；[NO_ART_NAME] 的去冠詞寫法由引擎自動收；{@1} 版：[NO_ART_NAME] 是「the＋一般字典的字」去掉 the（the Dwarves → Dwarves）時 {$1} 不收單字，改由這條收字典詞；排在 {$1} 版後面
+Understanding {$1}	理解{1}	理解{1}		text_book_instruction.txt 書名樣板 Understanding [NAME]
+{$1} After The End	終結之後的{1}	终结之后的{1}		text_book_instruction.txt 書名樣板 [NAME] After The End
+{$1} Within Reason	適度的{1}	适度的{1}		text_book_instruction.txt 書名樣板 [NAME] Within Reason
+To {$1} and Glory!	為了{1}與榮耀！	为了{1}与荣耀！		text_book_instruction.txt 書名樣板 To [NAME] and Glory!
+Common Sense {$1}	{1}常識	{1}常识		text_book_instruction.txt 書名樣板 Common Sense [NO_ART_NAME]；[NO_ART_NAME] 的去冠詞寫法由引擎自動收
+Common Sense {@1}	{1}常識	{1}常识		text_book_instruction.txt 書名樣板 Common Sense [NO_ART_NAME]；[NO_ART_NAME] 的去冠詞寫法由引擎自動收；{@1} 版：[NO_ART_NAME] 是「the＋一般字典的字」去掉 the（the Dwarves → Dwarves）時 {$1} 不收單字，改由這條收字典詞；排在 {$1} 版後面
+Discourse on {$1}	{1}論述	{1}论述		text_book_instruction.txt 書名樣板 Discourse on [NAME]
+Doubts About {$1}	對{1}的質疑	对{1}的质疑		text_book_instruction.txt 書名樣板 Doubts About [NAME]
+Inquiries on {$1}	{1}考	{1}考		text_book_instruction.txt 書名樣板 Inquiries on [NAME]
+Mysteries of {$1}	{1}之謎	{1}之谜		text_book_instruction.txt 書名樣板 Mysteries of [NAME]
+The Study of {$1}	{1}研究	{1}研究		text_book_instruction.txt 書名樣板 The Study of [NAME]；術語例外：study
+The Way With {$1}	與{1}相處之道	与{1}相处之道		text_book_instruction.txt 書名樣板 The Way With [NAME]
+The World of {$1}	{1}的世界	{1}的世界		text_book_instruction.txt 書名樣板 The World of [NAME]
+{$1} For Everyone	人人都懂的{1}	人人都懂的{1}		text_book_instruction.txt 書名樣板 [NAME] For Everyone
+{$1} For Students	給學生的{1}	给学生的{1}		text_book_instruction.txt 書名樣板 [NAME] For Students
+{$1} The Easy Way	{1}輕鬆學	{1}轻松学		text_book_instruction.txt 書名樣板 [NAME] The Easy Way
+Could It Be {$1}?	難道是{1}？	难道是{1}？		text_book_instruction.txt 書名樣板 Could It Be [NAME]?
+Do You Know {$1}?	你知道{1}嗎？	你知道{1}吗？		text_book_instruction.txt 書名樣板 Do You Know [NAME]?
+The Birth of {$1}	{1}的誕生	{1}的诞生		text_book_art.txt 書名樣板 The Birth of [NAME]
+And {$1} Sang '{$2}!'	{1}唱道「{2}！」	{1}唱道“{2}！”		text_book_art.txt 書名樣板 And [ANY_PRONOUN] Sang '[NAME]!'；{$1} 是七個代名詞（titles_phrase.tsv）；縮短：樣板本身不能比英文寬（單獨畫的作品清單放不下就照英文）
+A Course on {$1}	{1}課程	{1}课程		text_book_instruction.txt 書名樣板 A Course on [NAME]
+A Record of {$1}	{1}記事	{1}记事		text_book_instruction.txt 書名樣板 A Record of [NAME]
+At One With {$1}	與{1}合一	与{1}合一		text_book_instruction.txt 書名樣板 At One With [NAME]
+Discovering {$1}	發現{1}	发现{1}		text_book_instruction.txt 書名樣板 Discovering [NAME]
+Elements of {$1}	{1}要義	{1}要义		text_book_instruction.txt 書名樣板 Elements of [NAME]
+Pathways to {$1}	通往{1}之路	通往{1}之路		text_book_instruction.txt 書名樣板 Pathways to [NAME]
+The Book of {$1}	{1}之書	{1}之书		text_book_instruction.txt 書名樣板 The Book of [NAME]
+The Nuanced {$1}	細說{1}	细说{1}		text_book_instruction.txt 書名樣板 The Nuanced [NO_ART_NAME]；[NO_ART_NAME] 的去冠詞寫法由引擎自動收
+The Nuanced {@1}	細說{1}	细说{1}		text_book_instruction.txt 書名樣板 The Nuanced [NO_ART_NAME]；[NO_ART_NAME] 的去冠詞寫法由引擎自動收；{@1} 版：[NO_ART_NAME] 是「the＋一般字典的字」去掉 the（the Dwarves → Dwarves）時 {$1} 不收單字，改由這條收字典詞；排在 {$1} 版後面
+Thoughts on {$1}	關於{1}的想法	关于{1}的想法		text_book_instruction.txt 書名樣板 Thoughts on [NAME]
+Traditional {$1}	傳統{1}	传统{1}		text_book_instruction.txt 書名樣板 Traditional [NO_ART_NAME]；[NO_ART_NAME] 的去冠詞寫法由引擎自動收
+Traditional {@1}	傳統{1}	传统{1}		text_book_instruction.txt 書名樣板 Traditional [NO_ART_NAME]；[NO_ART_NAME] 的去冠詞寫法由引擎自動收；{@1} 版：[NO_ART_NAME] 是「the＋一般字典的字」去掉 the（the Dwarves → Dwarves）時 {$1} 不收單字，改由這條收字典詞；排在 {$1} 版後面
+Treatise on {$1}	{1}論	{1}论		text_book_instruction.txt 書名樣板 Treatise on [NAME]
+{$1} In Practice	{1}實務	{1}实务		text_book_instruction.txt 書名樣板 [NAME] In Practice
+{$1} Interpreted	{1}解讀	{1}解读		text_book_instruction.txt 書名樣板 [NAME] Interpreted
+{$1}: A Quandary	{1}：一道難題	{1}：一道难题		text_book_instruction.txt 書名樣板 [NAME]: A Quandary
+Did {$1} Falter?	{1}動搖了嗎？	{1}动摇了吗？		text_book_instruction.txt 書名樣板 Did [NAME] Falter?
+{$1} Ever Onward	{1}，勇往直前	{1}，勇往直前		text_book_art.txt 書名樣板 [NAME] Ever Onward
+A World of {$1}	充滿{1}的世界	充满{1}的世界		text_book_instruction.txt 書名樣板 A World of [NAME]
+Concerning {$1}	有關{1}	有关{1}		text_book_instruction.txt 書名樣板 Concerning [NAME]
+Journey to {$1}	{1}之旅	{1}之旅		text_book_instruction.txt 書名樣板 Journey to [NAME]
+Musings on {$1}	{1}隨想	{1}随想		text_book_instruction.txt 書名樣板 Musings on [NAME]
+Records of {$1}	{1}紀錄	{1}纪录		text_book_instruction.txt 書名樣板 Records of [NAME]
+The Art of {$1}	{1}的藝術	{1}的艺术		text_book_instruction.txt 書名樣板 The Art of [NAME]
+Uncovering {$1}	揭開{1}的面紗	揭开{1}的面纱		text_book_instruction.txt 書名樣板 Uncovering [NAME]
+Victory By {$1}	以{1}致勝	以{1}致胜		text_book_instruction.txt 書名樣板 Victory By [NAME]
+{$1} and Beyond	{1}與彼方	{1}与彼方		text_book_instruction.txt 書名樣板 [NAME] and Beyond
+{$1} Might Help	{1}或許有用	{1}或许有用		text_book_instruction.txt 書名樣板 [NAME] Might Help
+{$1} Questioned	受質疑的{1}	受质疑的{1}		text_book_instruction.txt 書名樣板 [NAME] Questioned
+{$1} Understood	讀懂{1}	读懂{1}		text_book_instruction.txt 書名樣板 [NAME] Understood
+{$1}: The Truth	{1}：真相	{1}：真相		text_book_instruction.txt 書名樣板 [NAME]: The Truth
+Dreams of {$1}	{1}之夢	{1}之梦		text_book_instruction.txt 書名樣板 Dreams of [NAME]
+Errors In {$1}	{1}中的謬誤	{1}中的谬误		text_book_instruction.txt 書名樣板 Errors In [NAME]
+Exploring {$1}	探索{1}	探索{1}		text_book_instruction.txt 書名樣板 Exploring [NAME]
+Life With {$1}	與{1}共處	与{1}共处		text_book_instruction.txt 書名樣板 Life With [NAME]
+Master of {$1}	{1}大師	{1}大师		text_book_instruction.txt 書名樣板 Master of [NAME]
+Mastering {$1}	精通{1}	精通{1}		text_book_instruction.txt 書名樣板 Mastering [NAME]
+The Great {$1}	偉大的{1}	伟大的{1}		text_book_instruction.txt 書名樣板 The Great [NO_ART_NAME]；[NO_ART_NAME] 的去冠詞寫法由引擎自動收；術語例外：great
+The Great {@1}	偉大的{1}	伟大的{1}		text_book_instruction.txt 書名樣板 The Great [NO_ART_NAME]；[NO_ART_NAME] 的去冠詞寫法由引擎自動收；{@1} 版：[NO_ART_NAME] 是「the＋一般字典的字」去掉 the（the Dwarves → Dwarves）時 {$1} 不收單字，改由這條收字典詞；排在 {$1} 版後面；術語例外：great
+{$1} Explained	{1}詳解	{1}详解		text_book_instruction.txt 書名樣板 [NAME] Explained
+{$1} In Theory	{1}理論	{1}理论		text_book_instruction.txt 書名樣板 [NAME] In Theory
+{$1} Uncovered	{1}揭祕	{1}揭秘		text_book_instruction.txt 書名樣板 [NAME] Uncovered
+{$1}, Abridged	{1}節本	{1}节本		text_book_instruction.txt 書名樣板 [NAME], Abridged
+{$1} and the {=2} {&3}	{1}與{2}{3}	{1}与{2}{3}		text_book_art.txt 書名樣板 [NAME] and the [ADJ] [NOUN]
+The {=1} {&2} and {$3}	{1}{2}與{3}	{1}{2}与{3}		text_book_art.txt 書名樣板 The [ADJ] [NOUN] and [NAME]
+My Friend {$1}	我的朋友{1}	我的朋友{1}		text_book_art.txt 書名樣板 My Friend [NAME]
+Question {$1}	質疑{1}	质疑{1}		text_book_instruction.txt 書名樣板 Question [NAME]
+The True {$1}	真正的{1}	真正的{1}		text_book_instruction.txt 書名樣板 The True [NO_ART_NAME]；[NO_ART_NAME] 的去冠詞寫法由引擎自動收
+The True {@1}	真正的{1}	真正的{1}		text_book_instruction.txt 書名樣板 The True [NO_ART_NAME]；[NO_ART_NAME] 的去冠詞寫法由引擎自動收；{@1} 版：[NO_ART_NAME] 是「the＋一般字典的字」去掉 the（the Dwarves → Dwarves）時 {$1} 不收單字，改由這條收字典詞；排在 {$1} 版後面
+{$1} and More	{1}及其他	{1}及其他		text_book_instruction.txt 書名樣板 [NAME] and More
+{$1}, My Life	{1}，此生	{1}，此生		text_book_instruction.txt 書名樣板 [NAME], My Life；縮短：樣板本身不能比英文寬（單獨畫的作品清單放不下就照英文）
+{$1}, My Love	{1}，我的愛	{1}，我的爱		text_book_instruction.txt 書名樣板 [NAME], My Love
+The {$1} Book	{1}全書	{1}全书		text_book_instruction.txt 書名樣板 The [NO_ART_NAME] Book；[NO_ART_NAME] 的去冠詞寫法由引擎自動收
+The {@1} Book	{1}全書	{1}全书		text_book_instruction.txt 書名樣板 The [NO_ART_NAME] Book；[NO_ART_NAME] 的去冠詞寫法由引擎自動收；{@1} 版：[NO_ART_NAME] 是「the＋一般字典的字」去掉 the（the Dwarves → Dwarves）時 {$1} 不收單字，改由這條收字典詞；排在 {$1} 版後面
+{$1} and the {&2}	{1}與{2}	{1}与{2}		text_book_art.txt 書名樣板 [NAME] and the [NOUN]
+The {&1} and {$2}	{1}與{2}	{1}与{2}		text_book_art.txt 書名樣板 The [NOUN] and [NAME]
+Against {$1}	反對{1}	反对{1}		text_book_instruction.txt 書名樣板 Against [NAME]
+Book of {$1}	{1}之書	{1}之书		text_book_instruction.txt 書名樣板 Book of [NAME]
+Classic {$1}	經典{1}	经典{1}		text_book_instruction.txt 書名樣板 Classic [NO_ART_NAME]；[NO_ART_NAME] 的去冠詞寫法由引擎自動收
+Classic {@1}	經典{1}	经典{1}		text_book_instruction.txt 書名樣板 Classic [NO_ART_NAME]；[NO_ART_NAME] 的去冠詞寫法由引擎自動收；{@1} 版：[NO_ART_NAME] 是「the＋一般字典的字」去掉 the（the Dwarves → Dwarves）時 {$1} 不收單字，改由這條收字典詞；排在 {$1} 版後面
+Factual {$1}	{1}實錄	{1}实录		text_book_instruction.txt 書名樣板 Factual [NO_ART_NAME]；[NO_ART_NAME] 的去冠詞寫法由引擎自動收
+Factual {@1}	{1}實錄	{1}实录		text_book_instruction.txt 書名樣板 Factual [NO_ART_NAME]；[NO_ART_NAME] 的去冠詞寫法由引擎自動收；{@1} 版：[NO_ART_NAME] 是「the＋一般字典的字」去掉 the（the Dwarves → Dwarves）時 {$1} 不收單字，改由這條收字典詞；排在 {$1} 版後面
+Give Me {$1}	給我{1}	给我{1}		text_book_instruction.txt 書名樣板 Give Me [NAME]
+Strange {$1}	奇異的{1}	奇异的{1}		text_book_instruction.txt 書名樣板 Strange [NO_ART_NAME]；[NO_ART_NAME] 的去冠詞寫法由引擎自動收
+Strange {@1}	奇異的{1}	奇异的{1}		text_book_instruction.txt 書名樣板 Strange [NO_ART_NAME]；[NO_ART_NAME] 的去冠詞寫法由引擎自動收；{@1} 版：[NO_ART_NAME] 是「the＋一般字典的字」去掉 the（the Dwarves → Dwarves）時 {$1} 不收單字，改由這條收字典詞；排在 {$1} 版後面
+Uncanny {$1}	詭異的{1}	诡异的{1}		text_book_instruction.txt 書名樣板 Uncanny [NO_ART_NAME]；[NO_ART_NAME] 的去冠詞寫法由引擎自動收
+Uncanny {@1}	詭異的{1}	诡异的{1}		text_book_instruction.txt 書名樣板 Uncanny [NO_ART_NAME]；[NO_ART_NAME] 的去冠詞寫法由引擎自動收；{@1} 版：[NO_ART_NAME] 是「the＋一般字典的字」去掉 the（the Dwarves → Dwarves）時 {$1} 不收單字，改由這條收字典詞；排在 {$1} 版後面
+Unknown {$1}	未知的{1}	未知的{1}		text_book_instruction.txt 書名樣板 Unknown [NO_ART_NAME]；[NO_ART_NAME] 的去冠詞寫法由引擎自動收
+Unusual {$1}	不尋常的{1}	不寻常的{1}		text_book_instruction.txt 書名樣板 Unusual [NO_ART_NAME]；[NO_ART_NAME] 的去冠詞寫法由引擎自動收
+Unusual {@1}	不尋常的{1}	不寻常的{1}		text_book_instruction.txt 書名樣板 Unusual [NO_ART_NAME]；[NO_ART_NAME] 的去冠詞寫法由引擎自動收；{@1} 版：[NO_ART_NAME] 是「the＋一般字典的字」去掉 the（the Dwarves → Dwarves）時 {$1} 不收單字，改由這條收字典詞；排在 {$1} 版後面
+{$1} Exposed	{1}大揭密	{1}大揭秘		text_book_instruction.txt 書名樣板 [NAME] Exposed
+Before {$1}	{1}之前	{1}之前		text_book_instruction.txt 書名樣板 Before [NAME]
+Better {$1}	更好的{1}	更好的{1}		text_book_instruction.txt 書名樣板 Better [NO_ART_NAME]；[NO_ART_NAME] 的去冠詞寫法由引擎自動收
+Better {@1}	更好的{1}	更好的{1}		text_book_instruction.txt 書名樣板 Better [NO_ART_NAME]；[NO_ART_NAME] 的去冠詞寫法由引擎自動收；{@1} 版：[NO_ART_NAME] 是「the＋一般字典的字」去掉 the（the Dwarves → Dwarves）時 {$1} 不收單字，改由這條收字典詞；排在 {$1} 版後面
+Beyond {$1}	超越{1}	超越{1}		text_book_instruction.txt 書名樣板 Beyond [NAME]
+Choose {$1}	選擇{1}	选择{1}		text_book_instruction.txt 書名樣板 Choose [NAME]
+Secret {$1}	祕傳{1}	秘传{1}		text_book_instruction.txt 書名樣板 Secret [NO_ART_NAME]；[NO_ART_NAME] 的去冠詞寫法由引擎自動收
+Secret {@1}	祕傳{1}	秘传{1}		text_book_instruction.txt 書名樣板 Secret [NO_ART_NAME]；[NO_ART_NAME] 的去冠詞寫法由引擎自動收；{@1} 版：[NO_ART_NAME] 是「the＋一般字典的字」去掉 the（the Dwarves → Dwarves）時 {$1} 不收單字，改由這條收字典詞；排在 {$1} 版後面
+Useful {$1}	實用{1}	实用{1}		text_book_instruction.txt 書名樣板 Useful [NO_ART_NAME]；[NO_ART_NAME] 的去冠詞寫法由引擎自動收
+Useful {@1}	實用{1}	实用{1}		text_book_instruction.txt 書名樣板 Useful [NO_ART_NAME]；[NO_ART_NAME] 的去冠詞寫法由引擎自動收；{@1} 版：[NO_ART_NAME] 是「the＋一般字典的字」去掉 the（the Dwarves → Dwarves）時 {$1} 不收單字，改由這條收字典詞；排在 {$1} 版後面
+We See {$1}	我們見{1}	我们见{1}		text_book_art.txt 書名樣板 We See [NAME]；縮短：樣板本身不能比英文寬（單獨畫的作品清單放不下就照英文）
+About {$1}	關於{1}	关于{1}		text_book_instruction.txt 書名樣板 About [NAME]
+After {$1}	{1}之後	{1}之后		text_book_instruction.txt 書名樣板 After [NAME]
+Great {$1}	偉大的{1}	伟大的{1}		text_book_instruction.txt 書名樣板 Great [NO_ART_NAME]；[NO_ART_NAME] 的去冠詞寫法由引擎自動收；術語例外：great
+It Is {$1}	就是{1}	就是{1}		text_book_instruction.txt 書名樣板 It Is [NAME]
+More {$1}	更多{1}	更多{1}		text_book_instruction.txt 書名樣板 More [NO_ART_NAME]；[NO_ART_NAME] 的去冠詞寫法由引擎自動收
+More {@1}	更多{1}	更多{1}		text_book_instruction.txt 書名樣板 More [NO_ART_NAME]；[NO_ART_NAME] 的去冠詞寫法由引擎自動收；{@1} 版：[NO_ART_NAME] 是「the＋一般字典的字」去掉 the（the Dwarves → Dwarves）時 {$1} 不收單字，改由這條收字典詞；排在 {$1} 版後面
+True {$1}	真實{1}	真实{1}		text_book_instruction.txt 書名樣板 True [NO_ART_NAME]；[NO_ART_NAME] 的去冠詞寫法由引擎自動收；縮短：樣板本身不能比英文寬（單獨畫的作品清單放不下就照英文）
+True {@1}	真實{1}	真实{1}		text_book_instruction.txt 書名樣板 True [NO_ART_NAME]；[NO_ART_NAME] 的去冠詞寫法由引擎自動收；{@1} 版：[NO_ART_NAME] 是「the＋一般字典的字」去掉 the（the Dwarves → Dwarves）時 {$1} 不收單字，改由這條收字典詞；排在 {$1} 版後面；縮短，同 True {$1}
+The {=1} {$2}	{1}之{2}	{1}之{2}		text_book_art.txt 書名樣板 The [ADJ] [NO_ART_NAME]；[NO_ART_NAME] 的去冠詞寫法由引擎自動收
+New {$1}	新{1}	新{1}		text_book_instruction.txt 書名樣板 New [NO_ART_NAME]；[NO_ART_NAME] 的去冠詞寫法由引擎自動收
+New {@1}	新{1}	新{1}		text_book_instruction.txt 書名樣板 New [NO_ART_NAME]；[NO_ART_NAME] 的去冠詞寫法由引擎自動收；{@1} 版：[NO_ART_NAME] 是「the＋一般字典的字」去掉 the（the Dwarves → Dwarves）時 {$1} 不收單字，改由這條收字典詞；排在 {$1} 版後面
+Of {$1}	說{1}	说{1}		text_book_instruction.txt 書名樣板 Of [NAME]
+On {$1}	談{1}	谈{1}		text_book_instruction.txt 書名樣板 On [NAME]
+{$1}: {$2}	{1}：{2}	{1}：{2}		text_book_art.txt 書名樣板 [NAME]: [PHRASE]；{$2} 是 [PHRASE]（上面的開頭詞、動詞、結尾詞句型）
+{=1} {$2}	{1}{2}	{1}{2}		text_book_art.txt 書名樣板 [ADJ] [NO_ART_NAME]；[NO_ART_NAME] 的去冠詞寫法由引擎自動收；樣板只有一個空白，中文直接相接才不比英文寬（隨機字照名稱的組法直接相接）
+{$1} {=2}	{2}{1}	{2}{1}		text_book_art.txt 書名樣板 [NAME] [ADJ]；樣板只有一個空白，中文直接相接才不比英文寬（隨機字照名稱的組法直接相接）
+{$1} In The End	到頭來{1}	到头来{1}		FUN_140ee35f0 L2248277–2248372 [PHRASE] 結尾詞（jump table 0x140ee4850）；中文放句首當時間／地點副詞；排在書名樣板與開頭詞前面之後：書名樣板先比，巢狀的片語書名（A Treatise on Nobody Knows There）才不會被結尾詞整串包住；開頭詞排在結尾詞後，結尾詞包在最外層（到頭來唯有時間將會訴說）
+{$1} In The Beginning	起初{1}	起初{1}		FUN_140ee35f0 L2248277–2248372 [PHRASE] 結尾詞（jump table 0x140ee4850）；中文放句首當時間／地點副詞；排在書名樣板與開頭詞前面之後：書名樣板先比，巢狀的片語書名（A Treatise on Nobody Knows There）才不會被結尾詞整串包住；開頭詞排在結尾詞後，結尾詞包在最外層（到頭來唯有時間將會訴說）
+{$1} Afterward	此後{1}	此后{1}		FUN_140ee35f0 L2248277–2248372 [PHRASE] 結尾詞（jump table 0x140ee4850）；中文放句首當時間／地點副詞；排在書名樣板與開頭詞前面之後：書名樣板先比，巢狀的片語書名（A Treatise on Nobody Knows There）才不會被結尾詞整串包住；開頭詞排在結尾詞後，結尾詞包在最外層（到頭來唯有時間將會訴說）
+{$1} There	在那裡{1}	在那里{1}		FUN_140ee35f0 L2248277–2248372 [PHRASE] 結尾詞（jump table 0x140ee4850）；中文放句首當時間／地點副詞；排在書名樣板與開頭詞前面之後：書名樣板先比，巢狀的片語書名（A Treatise on Nobody Knows There）才不會被結尾詞整串包住；開頭詞排在結尾詞後，結尾詞包在最外層（到頭來唯有時間將會訴說）
+Only {$1}	唯有{1}	唯有{1}		FUN_140ee35f0 L2248277–2248372 [PHRASE] 開頭詞（jump table 0x140ee4818）
+Suddenly {$1}	忽然{1}	忽然{1}		FUN_140ee35f0 L2248277–2248372 [PHRASE] 開頭詞（jump table 0x140ee4818）
+Surely {$1}	想必{1}	想必{1}		FUN_140ee35f0 L2248277–2248372 [PHRASE] 開頭詞（jump table 0x140ee4818）
+Then {$1}	於是{1}	于是{1}		FUN_140ee35f0 L2248277–2248372 [PHRASE] 開頭詞（jump table 0x140ee4818）
+Slowly {$1}	漸漸{1}	渐渐{1}		FUN_140ee35f0 L2248277–2248372 [PHRASE] 開頭詞（jump table 0x140ee4818）
+{$1} In the Age	那個時代的{1}	那个时代的{1}		text_book_instruction.txt 書名樣板 [NAME] In [ANY_AGE]，世界沒有紀元時 [ANY_AGE] 是小寫的 the Age（FUN_140bb8e10 L1734733）；排在 {$1} In {%2} 前面；排在 [PHRASE] 結尾詞後面：{%2} 會收 In The End 的 The End
+{$1} In {%2}	{2}的{1}	{2}的{1}		text_book_instruction.txt 書名樣板 [NAME] In [ANY_AGE]；{%2} 紀元名（The [序數 ]<紀元名>、Unknown Age，一般字典；沒有紀元時的 the Age 見上一條）；排在 [PHRASE] 結尾詞後面：{%2} 會收 In The End 的 The End

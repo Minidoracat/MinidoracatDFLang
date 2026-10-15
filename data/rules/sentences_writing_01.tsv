@@ -1,9 +1,13 @@
 en	zh-Hant	zh-Hans	align	note
+Written on the item is {%1} entitled {$2}, authored by {3}.	物品上寫有{1}《{2}》，作者為{3}。	物品上写有{1}《{2}》，作者为{3}。		FUN_140cc6a10 物品上的書寫內容（要塞物品頁、傳說神器頁） 1909949–1910124；{1} a／an＋著作形式（冠詞句型去冠詞），{2} 書名，{3} 作者（傳說頁是連結）；書名用詞版：{$2} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 Written on the item is {%1} entitled {2}, authored by {3}.	物品上寫有{1}《{2}》，作者為{3}。	物品上写有{1}《{2}》，作者为{3}。		FUN_140cc6a10 物品上的書寫內容（要塞物品頁、傳說神器頁） 1909949–1910124；{1} a／an＋著作形式（冠詞句型去冠詞），{2} 書名，{3} 作者（傳說頁是連結）
+Written on the item is {%1} entitled {$2}.	物品上寫有{1}《{2}》。	物品上写有{1}《{2}》。		FUN_140cc6a10 物品上的書寫內容（要塞物品頁、傳說神器頁） 1910080；作者不明；書名用詞版：{$2} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 Written on the item is {%1} entitled {2}.	物品上寫有{1}《{2}》。	物品上写有{1}《{2}》。		FUN_140cc6a10 物品上的書寫內容（要塞物品頁、傳說神器頁） 1910080；作者不明
 Written on the item is an untitled {@1}, authored by {2}.	物品上寫有無題的{1}，作者為{2}。	物品上写有无题的{1}，作者为{2}。		FUN_140cc6a10 物品上的書寫內容（要塞物品頁、傳說神器頁） 1909951；{1} 著作形式，{2} 作者（傳說頁是連結）
 Written on the item is an untitled {@1}.	物品上寫有無題的{1}。	物品上写有无题的{1}。		FUN_140cc6a10 物品上的書寫內容（要塞物品頁、傳說神器頁） 1909951；無書名、作者不明
+The written portion consists of a {#1} page {@2} entitled {$3}, authored by {4}.	書中寫有 {1} 頁的{2}《{3}》，作者為{4}。	书中写有 {1} 页的{2}《{3}》，作者为{4}。		FUN_140cc7020 書（codex）的書寫內容；{1} 頁數，{2} 著作形式，{3} 書名，{4} 作者（傳說頁是連結）；1910200–1910389；書名用詞版：{$3} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 The written portion consists of a {#1} page {@2} entitled {3}, authored by {4}.	書中寫有 {1} 頁的{2}《{3}》，作者為{4}。	书中写有 {1} 页的{2}《{3}》，作者为{4}。		FUN_140cc7020 書（codex）的書寫內容；{1} 頁數，{2} 著作形式，{3} 書名，{4} 作者（傳說頁是連結）；1910200–1910389
+The written portion consists of a {#1} page {@2} entitled {$3}.	書中寫有 {1} 頁的{2}《{3}》。	书中写有 {1} 页的{2}《{3}》。		FUN_140cc7020 書（codex）的書寫內容；{1} 頁數，作者不明；書名用詞版：{$3} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 The written portion consists of a {#1} page {@2} entitled {3}.	書中寫有 {1} 頁的{2}《{3}》。	书中写有 {1} 页的{2}《{3}》。		FUN_140cc7020 書（codex）的書寫內容；{1} 頁數，作者不明
 The written portion consists of a {#1} page untitled {@2}, authored by {3}.	書中寫有 {1} 頁的無題{2}，作者為{3}。	书中写有 {1} 页的无题{2}，作者为{3}。		FUN_140cc7020 書（codex）的書寫內容；{1} 頁數，無書名 1910233；{3} 作者（傳說頁是連結）
 The written portion consists of a {#1} page untitled {@2}.	書中寫有 {1} 頁的無題{2}。	书中写有 {1} 页的无题{2}。		FUN_140cc7020 書（codex）的書寫內容；{1} 頁數，無書名、作者不明
@@ -15,7 +19,9 @@ It concerns {1} and {2}.	以{1}與{2}為主題。	以{1}与{2}为主题。		FUN_
 It concerns {1}.	以{1}為主題。	以{1}为主题。		FUN_140e76400 2171635 已提過的段落／詩行（It，譯文省略主詞）；著作描述（FUN_140cc5d50）也用；排在 It concerns the lineage of {1}.、It concerns {1} and {2}. 後面（同一類句型照檔案順序比對）
 The writing conveys a moral lesson regarding {1}.	文中就{1}傳達了道德教誨。	文中就{1}传达了道德教诲。		FUN_140cc5d50 著作描述 1909484；{1} 參照描述
 The overall text emphasizes {1}.	全文強調{1}。	全文强调{1}。		FUN_140cc5d50 著作描述 1909508；{1} 參照描述
+For lyrics, the composer has selected {$1}.	作曲者選用了《{1}》作為歌詞。	作曲者选用了《{1}》作为歌词。		FUN_140cc5d50 著作描述 1909532；{1} 參照描述（多為著作名）；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 For lyrics, the composer has selected {1}.	作曲者選用了《{1}》作為歌詞。	作曲者选用了《{1}》作为歌词。		FUN_140cc5d50 著作描述 1909532；{1} 參照描述（多為著作名）
+For musical accompaniment, the choreographer has selected {$1}.	編舞者選用了《{1}》作為伴奏音樂。	编舞者选用了《{1}》作为伴奏音乐。		FUN_140cc5d50 著作描述 1909556；{1} 參照描述（多為樂曲名）；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 For musical accompaniment, the choreographer has selected {1}.	編舞者選用了《{1}》作為伴奏音樂。	编舞者选用了《{1}》作为伴奏音乐。		FUN_140cc5d50 著作描述 1909556；{1} 參照描述（多為樂曲名）
 The writing {%1} and it {%2}.	行文{1}，而且{2}。	行文{1}，而且{2}。		FUN_140cc5d50 著作描述 1909582–1909633 兩種文風同向；{1}{2} FUN_140cc5520 文風片語
 The writing {%1} yet it {%2}.	行文{1}，但{2}。	行文{1}，但{2}。		FUN_140cc5d50 著作描述 1909626 兩種文風一好一壞

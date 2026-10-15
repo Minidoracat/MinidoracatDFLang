@@ -1,0 +1,2 @@
+en	zh-Hant	zh-Hans	align	note
+{$1}'s {@2} {@3}	{1}的{2}{3}	{1}的{2}{3}		FUN_140eec930 L2254291–2254366 神器 ref 的材料寫法：材料是某個歷史人物身上的生物材料時，前面接「<人物英文名>'s 」（DAT_1415edb24），再接「材料前綴 材料名」，整串每字大寫（`Urist Tunedbridge's Dwarf Bone`）；{1} 是遊戲組過的人名。材料兩段都限定 {@n}：寫成 `{$1}'s {%2}` 或 `{$1}'s {@2}` 會搶走 `Urist McDwarf's vandalism`、`Has Servant's Burial Chamber` 這類介面與事件字串（本檔排在 ui_、zz_ 之前）

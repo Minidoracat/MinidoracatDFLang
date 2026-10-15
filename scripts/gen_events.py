@@ -28,7 +28,7 @@ EARLY = RULES / "_events.tsv"
 LATE = RULES / "zz_events.tsv"
 OUTS = (EARLY, LATE)
 HEADER = ["en", "zh-Hant", "zh-Hans", "align", "note"]
-PH = re.compile(r"\{([#@%~^]?)([1-9])((?:\+[^{}]+)?)\}")
+PH = re.compile(r"\{([#@%~^$&=]?)([1-9])((?:\+[^{}]+)?)\}")
 
 # 完整句開頭的日期（FUN_140b92640 寫年份、季節或 a time before time）：原文前綴、繁中、簡中、前綴用掉幾個佔位
 DATES = [
@@ -51,16 +51,16 @@ def shift(text: str, n: int) -> str:
 
 
 def top(text: str) -> int:
-    return max((int(n) for n in re.findall(r"\{[#@%~^]?(\d+)", text)), default=0)
+    return max((int(n) for n in re.findall(r"\{[#@%~^$&=]?(\d+)", text)), default=0)
 
 
 class Shapes:
     """一批句型的樣板形狀，用來判斷誰比較通用：A 的樣板套得上 B 的原文（佔位當成任意片段，{#n} 只對數字）時 A 比 B 通用。"""
 
     def __init__(self, rows: list[dict]):
-        parts = [re.split(r"(\{[#@%~^]?[1-9]\})", r["en"]) for r in rows]
+        parts = [re.split(r"(\{[#@%~^$&=]?[1-9]\})", r["en"]) for r in rows]
         # 原文樣板：數字佔位寫成 \1，其他佔位寫成 \0
-        self.tpl = [re.sub(r"\{#[1-9]\}", "\1", re.sub(r"\{[@%~^]?[1-9]\}", "\0", r["en"])) for r in rows]
+        self.tpl = [re.sub(r"\{#[1-9]\}", "\1", re.sub(r"\{[@%~^$&=]?[1-9]\}", "\0", r["en"])) for r in rows]
         self.rx = [re.compile("".join((r"(?:\x01|\d[\d,]*)" if p.startswith("{#") else "(?s:.+?)") if k % 2 else re.escape(p)
                                       for k, p in enumerate(ps))) for ps in parts]
         self.words = [set(re.findall(r"[A-Za-z]+", "".join(ps[::2]))) for ps in parts]

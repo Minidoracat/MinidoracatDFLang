@@ -15,7 +15,7 @@ mod image;
 mod lines;
 mod lua;
 mod mtb;
-mod names;
+pub mod names;
 mod scan;
 
 use std::ffi::{c_int, CStr};

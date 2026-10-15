@@ -33,6 +33,8 @@ pub static NAME_LAYOUT: OnceLock<NameLayout> = OnceLock::new();
 
 /// 字表：字的代號 → 名詞、形容詞、字首、動詞的中文（空字串表示沒有這個詞性）
 static WORDS: OnceLock<HashMap<Vec<u8>, [String; 4]>> = OnceLock::new();
+/// 書名的隨機字（[NOUN]、[ADJ]，見 Dict 的 `{&n}`、`{=n}`）：英文詞形（小寫）→ 名詞、形容詞的中文；同一詞形有好幾個字時用先讀到的
+static FORMS: OnceLock<[HashMap<Vec<u8>, String>; 2]> = OnceLock::new();
 
 /// 英文名 → 中文名。ponytail: 滿了整張清掉，畫面上的名字下次遊戲再組名字時補回來
 static NAMES: LazyLock<Mutex<HashMap<Vec<u8>, Arc<str>>>> = LazyLock::new(|| Mutex::new(HashMap::new()));
@@ -40,9 +42,11 @@ const NAMES_LIMIT: usize = 200_000;
 /// 每登記一個新名字加一：字典記成翻不出來的字串，在這之後可能翻得出來了（見 Dict::rule_entry）
 static GENERATION: AtomicU64 = AtomicU64::new(0);
 
-/// 讀 `代號<TAB>詞性<TAB>中文` 一行一條（詞性 NOUN／ADJ／PREFIX／VERB）；回傳載入條數。只能載入一次。
+/// 讀 `代號<TAB>詞性<TAB>中文[<TAB>英文詞形]` 一行一條（詞性 NOUN／ADJ／PREFIX／VERB；英文詞形以 / 分隔，名詞是單數/複數）；
+/// 回傳載入條數。只能載入一次。
 pub fn load_words(content: &str) -> usize {
     let mut table: HashMap<Vec<u8>, [String; 4]> = HashMap::new();
+    let mut forms: [HashMap<Vec<u8>, String>; 2] = Default::default();
     let mut n = 0;
     for line in content.lines() {
         let mut cols = line.split('\t');
@@ -52,10 +56,36 @@ pub fn load_words(content: &str) -> usize {
             continue;
         }
         table.entry(token.as_bytes().to_vec()).or_default()[i] = zh.to_owned();
+        if let (Some(en), Some(class)) = (cols.next(), forms.get_mut(i)) {
+            for form in en.split('/').filter(|f| !f.is_empty()) {
+                class.entry(form.to_ascii_lowercase().into_bytes()).or_insert_with(|| zh.to_owned());
+            }
+        }
         n += 1;
     }
     let _ = WORDS.set(table);
+    let _ = FORMS.set(forms);
     n
+}
+
+/// 書名的隨機字：名詞（單數或複數）或形容詞的英文詞形的中文。遊戲把書名的隨機字每個字改大寫開頭（FUN_14052d3c0），
+/// 小寫開頭的不收（介面字串 `good food`、`new moon` 不會被書名樣板 `{=1} {$2}` 比走），其餘字母不分大小寫。
+pub fn word_form(form: &[u8], adj: bool) -> Option<&'static str> {
+    if form.len() > 64 || form.contains(&b' ') || !form.first().is_some_and(u8::is_ascii_uppercase) {
+        return None;
+    }
+    let mut buf = [0u8; 64];
+    let lower = &mut buf[..form.len()];
+    lower.copy_from_slice(form);
+    lower.make_ascii_lowercase();
+    FORMS.get()?[usize::from(adj)].get(&*lower).map(String::as_str)
+}
+
+/// 測試用：只設書名的隨機字（字表 WORDS 給名稱的測試設）。
+#[cfg(test)]
+pub fn set_forms(nouns: &[(&str, &str)], adjs: &[(&str, &str)]) {
+    let map = |v: &[(&str, &str)]| v.iter().map(|(en, zh)| (en.as_bytes().to_vec(), (*zh).to_owned())).collect();
+    let _ = FORMS.set([map(nouns), map(adjs)]);
 }
 
 /// 字典查詞用：遊戲組過的英文名的中文。

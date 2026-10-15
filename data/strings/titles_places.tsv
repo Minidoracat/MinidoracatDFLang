@@ -1,0 +1,325 @@
+en	zh-Hant	zh-Hans	align	note
+Rules	規則	规则	title	FUN_140ee5920 L2249297 價值觀 case 0
+Customs	習俗	习俗	title	FUN_140ee5920 L2249297 價值觀 case 0
+Law	法律	法律	title	FUN_140ee5920 L2249297 價值觀 case 0；inline DAT_1415e8844
+Lawlessness	無法無天	无法无天	title	FUN_140ee5920 L2249297 價值觀 case 0
+Loyalty	忠誠	忠诚	title	FUN_140ee5920 L2249297 價值觀 case 1；同神祇領域 loyalty
+Betrayal	背叛	背叛	title	FUN_140ee5920 L2249297 價值觀 case 1
+Fidelity	忠貞	忠贞	title	FUN_140ee5920 L2249297 價值觀 case 1
+Family	家庭	家庭	title	FUN_140ee5920 L2249297 價值觀 case 2；inline 常數；同神祇領域 family
+Kin	親族	亲族	title	FUN_140ee5920 L2249297 價值觀 case 2；inline 常數
+Friendship	友誼	友谊	title	FUN_140ee5920 L2249297 價值觀 case 3
+Friends	朋友	朋友	title	FUN_140ee5920 L2249297 價值觀 case 3
+Power	權力	权力	title	FUN_140ee5920 L2249297 價值觀 case 4
+Might	強權	强权	title	FUN_140ee5920 L2249297 價值觀 case 4
+Tyranny	暴政	暴政	title	FUN_140ee5920 L2249297 價值觀 case 4
+Mastery	主宰	主宰	title	FUN_140ee5920 L2249297 價值觀 case 4
+the Truth	真理	真理	title	FUN_140ee5920 L2249297 價值觀 case 5；知識主題也有（哲學）
+Truth	真理	真理	title	FUN_140ee5920 L2249297 價值觀 case 5；同神祇領域 truth
+Honesty	誠實	诚实	title	FUN_140ee5920 L2249297 價值觀 case 5
+Lies	謊言	谎言	title	FUN_140ee5920 L2249297 價值觀 case 5；inline DAT_14173b318；同神祇領域 lies
+the Lie	謊言	谎言	title	FUN_140ee5920 L2249297 價值觀 case 5
+Cunning	狡黠	狡黠	title	FUN_140ee5920 L2249297 價值觀 case 6
+Strategems	計謀	计谋	title	FUN_140ee5920 L2249297 價值觀 case 6；原文拼字如此
+Schemes	陰謀	阴谋	title	FUN_140ee5920 L2249297 價值觀 case 6
+Plans	計畫	计划	title	FUN_140ee5920 L2249297 價值觀 case 6
+Eloquence	口才	口才	title	FUN_140ee5920 L2249297 價值觀 case 7
+Words	言詞	言词	title	FUN_140ee5920 L2249297 價值觀 case 7；知識主題也有
+the Word	話語	话语	title	FUN_140ee5920 L2249297 價值觀 case 7；知識主題也有
+Fairness	公平	公平	title	FUN_140ee5920 L2249297 價值觀 case 8；inline 常數
+Equality	平等	平等	title	FUN_140ee5920 L2249297 價值觀 case 8；inline 常數
+Decorum	禮節	礼节	title	FUN_140ee5920 L2249297 價值觀 case 9
+Manners	禮儀	礼仪	title	FUN_140ee5920 L2249297 價值觀 case 9
+Politeness	禮貌	礼貌	title	FUN_140ee5920 L2249297 價值觀 case 9
+Tradition	傳統	传统	title	FUN_140ee5920 L2249297 價值觀 case 10
+Ritual	儀式	仪式	title	FUN_140ee5920 L2249297 價值觀 case 10
+Art	藝術	艺术	title	FUN_140ee5920 L2249297 價值觀 case 11；inline DAT_14171219c；同神祇領域 art、知識主題（美學）
+Artwork	藝術品	艺术品	title	FUN_140ee5920 L2249297 價值觀 case 11；一般字典「美術」，書名指作品
+Creation	創造	创造	title	FUN_140ee5920 L2249297 價值觀 case 11；據點 case 10 與神祇領域 creation 也用
+Creativity	創造力	创造力	title	FUN_140ee5920 L2249297 價值觀 case 11
+Cooperation	合作	合作	title	FUN_140ee5920 L2249297 價值觀 case 12/18
+Union	團結	团结	title	FUN_140ee5920 L2249297 價值觀 case 12/18；case 12、18 都有
+Harmony	和諧	和谐	title	FUN_140ee5920 L2249297 價值觀 case 12/18
+Independence	獨立	独立	title	FUN_140ee5920 L2249297 價值觀 case 13
+the Individual	個人	个人	title	FUN_140ee5920 L2249297 價值觀 case 13；知識主題也有
+Emotions	情感	情感	title	FUN_140ee5920 L2249297 價值觀 case 14
+Complaints	抱怨	抱怨	title	FUN_140ee5920 L2249297 價值觀 case 14
+Introspection	內省	内省	title	FUN_140ee5920 L2249297 價值觀 case 15
+Self-Examination	自我省思	自我反省	title	FUN_140ee5920 L2249297 價值觀 case 15
+Willpower	意志力	意志力	title	FUN_140ee5920 L2249297 價值觀 case 16
+Self-Control	自制	自制	title	FUN_140ee5920 L2249297 價值觀 case 16
+Quiet	安靜	安静	title	FUN_140ee5920 L2249297 價值觀 case 17
+Tranquility	寧靜	宁静	title	FUN_140ee5920 L2249297 價值觀 case 17
+Merriment	歡樂	欢乐	title	FUN_140ee5920 L2249297 價值觀 case 19
+Gaiety	歡快	欢快	title	FUN_140ee5920 L2249297 價值觀 case 19
+Joy	喜悅	喜悦	title	FUN_140ee5920 L2249297 價值觀 case 19；inline DAT_14173b400
+the Festival	慶典	庆典	title	FUN_140ee5920 L2249297 價值觀 case 19
+Crafts	工藝	工艺	title	FUN_140ee5920 L2249297 價值觀 case 20；一般字典「工藝品」是物品，書名指手藝；同神祇領域 crafts
+Quality	品質	品质	title	FUN_140ee5920 L2249297 價值觀 case 20
+Martial Prowess	武藝	武艺	title	FUN_140ee5920 L2249297 價值觀 case 21
+Battle	戰役	战役	title	FUN_140ee5920 L2249297 價值觀 case 21
+Combat	戰鬥	战斗	title	FUN_140ee5920 L2249297 價值觀 case 21
+Skill	技藝	技艺	title	FUN_140ee5920 L2249297 價值觀 case 22
+Training	訓練	训练	title	FUN_140ee5920 L2249297 價值觀 case 22；知識主題也有
+Practice	練習	练习	title	FUN_140ee5920 L2249297 價值觀 case 22
+Study	研習	研习	title	FUN_140ee5920 L2249297 價值觀 case 22；價值觀的學習，不是房間；術語例外：study
+Hard Work	勤奮	勤奋	title	FUN_140ee5920 L2249297 價值觀 case 23
+Toil	辛勞	辛劳	title	FUN_140ee5920 L2249297 價值觀 case 23；inline DAT_141618cf4
+Sacrifice	犧牲	牺牲	title	FUN_140ee5920 L2249297 價值觀 case 24；同神祇領域 sacrifice
+Altruism	利他	利他	title	FUN_140ee5920 L2249297 價值觀 case 24
+Competition	競爭	竞争	title	FUN_140ee5920 L2249297 價值觀 case 25
+the Competitor	競爭者	竞争者	title	FUN_140ee5920 L2249297 價值觀 case 25
+Perseverance	毅力	毅力	title	FUN_140ee5920 L2249297 價值觀 case 26
+Stubborness	倔強	倔强	title	FUN_140ee5920 L2249297 價值觀 case 26；原文拼字如此
+Leisure	閒暇	闲暇	title	FUN_140ee5920 L2249297 價值觀 case 27
+Rest	休養	休养	title	FUN_140ee5920 L2249297 價值觀 case 27；inline DAT_1416a0908；知識主題（醫學：休養）也有，一般字典「休息」
+Trade	貿易	贸易	title	FUN_140ee5920 L2249297 價值觀 case 28；同神祇領域 trade、知識主題（地理）
+Commerce	商業	商业	title	FUN_140ee5920 L2249297 價值觀 case 28
+Caravans	商隊	商队	title	FUN_140ee5920 L2249297 價值觀 case 28
+the Economy	經濟	经济	title	FUN_140ee5920 L2249297 價值觀 case 28；知識主題也有
+Romance	浪漫	浪漫	title	FUN_140ee5920 L2249297 價值觀 case 29
+Love	愛	爱	title	FUN_140ee5920 L2249297 價值觀 case 29；inline 常數；同神祇領域 love（一般字典「愛意」）
+Nature	自然	自然	title	FUN_140ee5920 L2249297 價值觀 case 30；同神祇領域 nature
+the Wilds	荒野	荒野	title	FUN_140ee5920 L2249297 價值觀 case 30
+Peace	和平	和平	title	FUN_140ee5920 L2249297 價值觀 case 31；同地區、神祇領域 peace
+War	戰爭	战争	title	FUN_140ee5920 L2249297 價值觀 case 31；inline DAT_1416036fc；同神祇領域 war（一般字典「戰」是按鈕）
+Knowledge	知識	知识	title	FUN_140ee5920 L2249297 價值觀 case 32；知識主題也有
+Ignorance	無知	无知	title	FUN_140ee5920 L2249297 價值觀 case 32
+Values	價值觀	价值观	title	FUN_140ee5920 L2249297 價值觀 default
+the Mead Hall	蜜酒大廳	蜜酒大厅	title	FUN_140eed820 L2254755 抽象建築；inline 常數
+the Keep	城堡主樓	城堡主楼	title	FUN_140eed820 L2254755 抽象建築；inline 常數；據點 case 8 也有
+the Temple	神殿	神殿	title	FUN_140eed820 L2254755 抽象建築；inline 常數
+the Tower	高塔	高塔	title	FUN_140eed820 L2254755 抽象建築；inline 常數；據點 case 8 也有
+the Market	市場	市场	title	FUN_140eed820 L2254755 抽象建築；inline 常數；據點 case 5 也有
+the Tomb	墓室	墓室	title	FUN_140eed820 L2254755 抽象建築；inline 常數；據點 case 10 也有
+the Dungeon	地牢	地牢	title	FUN_140eed820 L2254755 抽象建築；inline 常數
+the Sewers	下水道	下水道	title	FUN_140eed820 L2254755 抽象建築；inline 常數
+the Catacombs	地下墓穴	地下墓穴	title	FUN_140eed820 L2254755 抽象建築；inline 常數
+the Spire	尖塔	尖塔	title	FUN_140eed820 L2254755 抽象建築；inline 常數
+the Tavern	酒館	酒馆	title	FUN_140eed820 L2254755 抽象建築；inline 常數
+the Library	圖書館	图书馆	title	FUN_140eed820 L2254755 抽象建築；inline 常數
+the Counting House	帳房	账房	title	FUN_140eed820 L2254755 抽象建築；inline 常數
+the Guildhall	公會大廳	公会大厅	title	FUN_140eed820 L2254755 抽象建築；inline 常數
+the Hospital	醫院	医院	title	FUN_140eed820 L2254755 抽象建築；inline 常數；知識主題也有
+the Mountain Halls	山中大廳	山中大厅	title	FUN_140ef19b0 L2257643 據點
+the Mountainhome	山之家	山之家	title	FUN_140ef19b0 L2257643 據點
+the Pits	坑穴	坑穴	title	FUN_140ef19b0 L2257643 據點；inline 0x7374695020656874（L2257813）
+the Trenches	壕溝	壕沟	title	FUN_140ef19b0 L2257643 據點
+the Gutter	陰溝	阴沟	title	FUN_140ef19b0 L2257643 據點
+the Fortress	要塞	要塞	title	FUN_140ef19b0 L2257643 據點
+the Dark Fortress	黑暗要塞	黑暗要塞	title	FUN_140ef19b0 L2257643 據點
+the Cave	洞穴	洞穴	title	FUN_140ef19b0 L2257643 據點；case 2 jump table
+the Pit	深坑	深坑	title	FUN_140ef19b0 L2257643 據點；case 2 jump table
+the Dark	幽暗	幽暗	title	FUN_140ef19b0 L2257643 據點；case 2 jump table
+the Darkness	黑暗	黑暗	title	FUN_140ef19b0 L2257643 據點；case 2 jump table；地區、地層也有
+the Hole	坑洞	坑洞	title	FUN_140ef19b0 L2257643 據點；case 2 jump table
+the Cavern	洞窟	洞窟	title	FUN_140ef19b0 L2257643 據點；case 2 jump table
+the Trees	樹林	树林	title	FUN_140ef19b0 L2257643 據點；地區 case 2 也有
+the Forest	森林	森林	title	FUN_140ef19b0 L2257643 據點；地區 case 2 也有
+the Forest Retreat	森林隱居地	森林隐居地	title	FUN_140ef19b0 L2257643 據點
+the Farm	農莊	农庄	title	FUN_140ef19b0 L2257643 據點；inline 0x6d72614620656874（L2258075）
+the Village	村鎮	村镇	title	FUN_140ef19b0 L2257643 據點
+the Hamlet	村莊	村庄	title	FUN_140ef19b0 L2257643 據點
+the City	城市	城市	title	FUN_140ef19b0 L2257643 據點；inline 0x7974694320656874（L2258117）
+the Town	城鎮	城镇	title	FUN_140ef19b0 L2257643 據點
+the Place	此地	此地	title	FUN_140ef19b0 L2257643 據點；default
+the Lair	巢穴	巢穴	title	FUN_140ef19b0 L2257643 據點；inline 0x7269614c20656874（L2258205）
+the Burrow	地穴	地穴	title	FUN_140ef19b0 L2257643 據點；據點的洞穴，不是活動區；術語例外：burrow
+the Labyrinth	迷宮	迷宫	title	FUN_140ef19b0 L2257643 據點
+the Maze	迷陣	迷阵	title	FUN_140ef19b0 L2257643 據點
+the Tunnels	隧道	隧道	title	FUN_140ef19b0 L2257643 據點
+the Shrine	神龕	神龛	title	FUN_140ef19b0 L2257643 據點
+the Monastery	修道院	修道院	title	FUN_140ef19b0 L2257643 據點
+the Fort	堡壘	堡垒	title	FUN_140ef19b0 L2257643 據點
+the Castle	城堡	城堡	title	FUN_140ef19b0 L2257643 據點
+the Camp	營地	营地	title	FUN_140ef19b0 L2257643 據點；inline 0x706d614320656874（L2258332）
+the Burial	墓葬	墓葬	title	FUN_140ef19b0 L2257643 據點
+the Mausoleum	陵墓	陵墓	title	FUN_140ef19b0 L2257643 據點
+the Vault	寶庫	宝库	title	FUN_140ef19b0 L2257643 據點
+the Mystery	謎團	谜团	title	FUN_140ef19b0 L2257643 據點；事件名詞也有
+the Primordial	太初	太初	title	FUN_140ef19b0 L2257643 據點
+the Monument	紀念碑	纪念碑	title	FUN_140ef19b0 L2257643 據點
+the Wetland	濕地	湿地	title	FUN_140ef2ec0 L2258537 地區；case 0 jump table
+the Marsh	沼澤	沼泽	title	FUN_140ef2ec0 L2258537 地區；case 0 jump table
+the Swamp	沼地	沼地	title	FUN_140ef2ec0 L2258537 地區；case 0 jump table
+the Bog	泥沼	泥沼	title	FUN_140ef2ec0 L2258537 地區；case 0 jump table
+the Mire	泥淖	泥淖	title	FUN_140ef2ec0 L2258537 地區；case 0 jump table
+the Murk	晦暗	晦暗	title	FUN_140ef2ec0 L2258537 地區；case 0 jump table
+the Desert	荒漠	荒漠	title	FUN_140ef2ec0 L2258537 地區
+the Sand	黃沙	黄沙	title	FUN_140ef2ec0 L2258537 地區
+the Rocks	岩石	岩石	title	FUN_140ef2ec0 L2258537 地區
+the Canopy	樹冠	树冠	title	FUN_140ef2ec0 L2258537 地區
+the Undergrowth	灌叢	灌丛	title	FUN_140ef2ec0 L2258537 地區
+the Mountains	群山	群山	title	FUN_140ef2ec0 L2258537 地區
+the Peaks	群峰	群峰	title	FUN_140ef2ec0 L2258537 地區
+the Mountain	高山	高山	title	FUN_140ef2ec0 L2258537 地區
+the Ocean	海洋	海洋	title	FUN_140ef2ec0 L2258537 地區
+the Waves	波濤	波涛	title	FUN_140ef2ec0 L2258537 地區
+the Deep	深海	深海	title	FUN_140ef2ec0 L2258537 地區
+the Sea	大海	大海	title	FUN_140ef2ec0 L2258537 地區
+the Lake	湖泊	湖泊	title	FUN_140ef2ec0 L2258537 地區；inline 0x656b614c20656874（L2258835）
+the Waters	水域	水域	title	FUN_140ef2ec0 L2258537 地區
+the Glacier	冰河	冰川	title	FUN_140ef2ec0 L2258537 地區
+the Ice	寒冰	寒冰	title	FUN_140ef2ec0 L2258537 地區
+the Tundra	凍原	冻原	title	FUN_140ef2ec0 L2258537 地區
+the Frozen Wastes	冰封荒原	冰封荒原	title	FUN_140ef2ec0 L2258537 地區
+the Grassland	草原	草原	title	FUN_140ef2ec0 L2258537 地區
+the Plains	平原	平原	title	FUN_140ef2ec0 L2258537 地區
+the Savanna	莽原	稀树草原	title	FUN_140ef2ec0 L2258537 地區
+the Shrubland	灌木地	灌木地	title	FUN_140ef2ec0 L2258537 地區
+the Hills	丘陵	丘陵	title	FUN_140ef2ec0 L2258537 地區
+the World	世界	世界	title	FUN_140ef2ec0 L2258537 地區
+the Universe	宇宙	宇宙	title	FUN_140ef2ec0 L2258537 地區
+the Region	此地區	此地区	title	FUN_140ef2ec0 L2258537 地區
+Goodness	良善	良善	title	FUN_140ef2ec0 L2258537 地區；inline 0x7373656e646f6f47（L2259188）
+the Joy	喜悅	喜悦	title	FUN_140ef2ec0 L2258537 地區
+Evil	邪惡	邪恶	title	FUN_140ef2ec0 L2258537 地區；inline 0x6c697645（L2259279）
+the Horror	恐怖	恐怖	title	FUN_140ef2ec0 L2258537 地區
+the Depths	深淵	深渊	title	FUN_140ef4510 L2259482 地層；inline 常數；事件名詞也有
+the Underground	地底	地底	title	FUN_140ef4510 L2259482 地層；inline 常數
+the Caverns	洞穴	洞穴	title	FUN_140ef4510 L2259482 地層；inline 常數
+the Fire	火焰	火焰	title	FUN_140ef4510 L2259482 地層；inline 0x6572694620656874（L2259610）
+the Flames	烈焰	烈焰	title	FUN_140ef4510 L2259482 地層；inline 常數
+the Magma	熔岩	熔岩	title	FUN_140ef4510 L2259482 地層；inline 常數
+the Fiery Depths	火焰深淵	火焰深渊	title	FUN_140ef4510 L2259482 地層；inline 常數
+the Underworld	冥界	冥界	title	FUN_140ef4510 L2259482 地層；inline 常數
+Hell	地獄	地狱	title	FUN_140ef4510 L2259482 地層；inline 0x6c6c6548（L2259649）
+Civilization	文明	文明	title	FUN_140ef5420 L2260141 勢力
+the People	人民	人民	title	FUN_140ef5420 L2260141 勢力
+the Group	群體	群体	title	FUN_140ef5420 L2260141 勢力
+the Settlement	聚落	聚落	title	FUN_140ef5420 L2260141 勢力
+the Vessel	船隊	船队	title	FUN_140ef5420 L2260141 勢力
+the Journey	旅程	旅程	title	FUN_140ef5420 L2260141 勢力
+the Migration	遷徙	迁徙	title	FUN_140ef5420 L2260141 勢力
+the Religion	宗教	宗教	title	FUN_140ef5420 L2260141 勢力
+the Faith	信仰	信仰	title	FUN_140ef5420 L2260141 勢力
+Beliefs	信念	信念	title	FUN_140ef5420 L2260141 勢力
+the Fighters	戰士	战士	title	FUN_140ef5420 L2260141 勢力
+the Company	團隊	团队	title	FUN_140ef5420 L2260141 勢力；case 6（傭兵）、case 9（商人）共用
+the Outcasts	棄民	弃民	title	FUN_140ef5420 L2260141 勢力
+the Criminals	罪犯	罪犯	title	FUN_140ef5420 L2260141 勢力
+the Performance	演出	演出	title	FUN_140ef5420 L2260141 勢力
+the Show	表演	表演	title	FUN_140ef5420 L2260141 勢力
+Entertainment	娛樂	娱乐	title	FUN_140ef5420 L2260141 勢力
+the Troupe	劇團	剧团	title	FUN_140ef5420 L2260141 勢力
+the Merchants	商人	商人	title	FUN_140ef5420 L2260141 勢力
+the Traders	行商	行商	title	FUN_140ef5420 L2260141 勢力
+the Guild	公會	公会	title	FUN_140ef5420 L2260141 勢力
+the Artisans	工匠	工匠	title	FUN_140ef5420 L2260141 勢力
+Agriculture	農業	农业	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Animals	動物	动物	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Balance	平衡	平衡	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Beauty	美	美	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Birth	誕生	诞生	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Blight	凋零	凋零	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Boundaries	邊界	边界	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Caverns	洞穴	洞穴	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Chaos	混沌	混沌	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Charity	慈善	慈善	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Children	孩童	孩童	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Coasts	海岸	海岸	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Consolation	慰藉	慰藉	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Courage	勇氣	勇气	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Dance	舞蹈	舞蹈	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Darkness	黑暗	黑暗	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Dawn	黎明	黎明	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Day	白晝	白昼	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Death	死亡	死亡	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Deformity	畸形	畸形	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Depravity	墮落	堕落	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Discipline	紀律	纪律	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Disease	疾病	疾病	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Dreams	夢境	梦境	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Dusk	黃昏	黄昏	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Duty	責任	责任	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Earth	大地	大地	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Fame	名聲	名声	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Fate	命運	命运	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Fertility	豐饒	丰饶	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Festivals	節慶	节庆	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Fire	火	火	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）；知識主題也有
+Fish	魚類	鱼类	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Fishing	捕魚	捕鱼	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Food	食物	食物	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Forgiveness	寬恕	宽恕	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Fortresses	要塞	要塞	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Freedom	自由	自由	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Gambling	賭博	赌博	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Games	遊戲	游戏	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Generosity	慷慨	慷慨	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Happiness	幸福	幸福	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）；知識主題也有
+Healing	治癒	治愈	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）；知識主題也有
+Hospitality	待客之道	待客之道	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Hunting	狩獵	狩猎	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Inspiration	靈感	灵感	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Jealousy	嫉妒	嫉妒	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Jewels	珠寶	珠宝	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Justice	正義	正义	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Labor	勞動	劳动	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Lakes	湖泊	湖泊	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Laws	法律	法律	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）；知識主題也有
+Light	光明	光明	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Lightning	閃電	闪电	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Longevity	長壽	长寿	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Luck	運氣	运气	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Lust	情慾	情欲	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Marriage	婚姻	婚姻	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Mercy	慈悲	慈悲	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Metals	金屬	金属	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）；知識主題也有
+Minerals	礦物	矿物	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）；知識主題也有
+Misery	苦難	苦难	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Mist	霧氣	雾气	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Moon	月亮	月亮	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Mountains	山脈	山脉	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）（一般字典也有「山峰」）
+Muck	汙泥	污泥	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Murder	謀殺	谋杀	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Music	音樂	音乐	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Night	夜晚	夜晚	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Nightmares	噩夢	噩梦	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Oaths	誓言	誓言	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Oceans	海洋	海洋	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Order	秩序	秩序	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Painting	繪畫	绘画	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Persuasion	說服	说服	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Plants	植物	植物	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Poetry	詩歌	诗歌	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Pregnancy	懷孕	怀孕	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Rain	雨水	雨水	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Rainbows	彩虹	彩虹	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）；知識主題也有
+Rebirth	重生	重生	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Revelry	狂歡	狂欢	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Revenge	復仇	复仇	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Rivers	河流	河流	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Rulership	統治	统治	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Rumors	謠言	谣言	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Salt	鹽	盐	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Scholarship	學術	学术	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Seasons	季節	季节	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Silence	寂靜	寂静	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Sky	天空	天空	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Song	歌謠	歌谣	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Speech	言語	言语	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Stars	星辰	星辰	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Storms	風暴	风暴	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Strength	力量	力量	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Suicide	自殺	自杀	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Sun	太陽	太阳	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Theft	竊盜	盗窃	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Thralldom	奴役	奴役	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Thunder	雷鳴	雷鸣	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Torture	酷刑	酷刑	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Travelers	旅人	旅人	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Treachery	背叛	背叛	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Trees	樹木	树木	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Trickery	詭計	诡计	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Twilight	曙暮光	曙暮光	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）；知識主題也有
+Valor	英勇	英勇	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Victory	勝利	胜利	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Volcanos	火山	火山	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Water	水	水	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Wealth	財富	财富	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Weather	天氣	天气	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Wind	風	风	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Wisdom	智慧	智慧	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Writing	寫作	写作	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）
+Youth	青春	青春	title	FUN_140756690 L1026675 神祇領域（FUN_140ef14d0 每字大寫）

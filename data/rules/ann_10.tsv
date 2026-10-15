@@ -16,8 +16,11 @@ nearly a day's travel to the {@1}	{1}將近一天路程處	{1}将近一天路程
 a day's travel to the {@1}	{1}一天路程處	{1}一天路程处		FUN_14147c4a0 方位片語
 far to the {@1}	遠在{1}	远在{1}		FUN_14147c4a0 方位片語
 {1} has engraved a masterpiece!	{1}雕刻出一件傑作！	{1}雕刻出一件杰作！		FUN_141486440 2771865：MASTERPIECE_ENGRAVING；{1} 人名（FUN_140a94030）
+You have authored {$1}.	你寫成了《{1}》。	你写成了《{1}》。		FUN_14148da20 2776691：冒險模式；{1} 作品名；後面接 FUN_140cc5d50 的作品說明（另成句）；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 You have authored {1}.	你寫成了《{1}》。	你写成了《{1}》。		FUN_14148da20 2776691：冒險模式；{1} 作品名；後面接 FUN_140cc5d50 的作品說明（另成句）
+You have written {$1} on to {%2}.	你把《{1}》寫到了{2}上。	你把《{1}》写到了{2}上。		FUN_14148da20 2776708：{2} 物品名（FUN_140c65450）；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 You have written {1} on to {%2}.	你把《{1}》寫到了{2}上。	你把《{1}》写到了{2}上。		FUN_14148da20 2776708：{2} 物品名（FUN_140c65450）
+You have composed {$1}.	你創作了《{1}》。	你创作了《{1}》。		FUN_14148da20 2776857：COMPOSITION_COMPLETE；後面接作品說明；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 You have composed {1}.	你創作了《{1}》。	你创作了《{1}》。		FUN_14148da20 2776857：COMPOSITION_COMPLETE；後面接作品說明
 You have struck {%1}!  Praise the miners!	你挖到了{1}！讚美礦工！	你挖到了{1}！赞美矿工！		FUN_1414a2b50 2789369：STRUCK_DEEP_METAL（彈出框，整則）；{1} 材料名（FUN_1414d1920）
 {%1}!  Praise the miners!	{1}！讚美礦工！	{1}！赞美矿工！		FUN_1414a2b50 2788981：寶石火山壁（彈出框）；{1} 材料名首字大寫

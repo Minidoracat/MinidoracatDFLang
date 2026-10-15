@@ -88,7 +88,9 @@ In a time before time, {1} was created.	太古之時，{1}問世。	太古之时
 {1} received its name.	{1}得名。	{1}得名。	inner	FUN_140b89cf0 1700841 artifact_created 完整句（命名旗標）
 a work was authored by {1} in {2}.	{1}在{2}撰寫了一部作品。	{1}在{2}撰写了一部作品。	inner	FUN_140b898b0 1700679 written_content_composed 完整句：找不到作品時；排在 {1} was authored 前面
 a work was authored by {1}.	{1}撰寫了一部作品。	{1}撰写了一部作品。	inner	FUN_140b898b0 1700679 written_content_composed 完整句：找不到作品時
+{$1} was authored by {2} in {3}.	{2}在{3}撰寫了《{1}》。	{2}在{3}撰写了《{1}》。	inner	FUN_140b898b0 1700679 written_content_composed 完整句：{1} 作品標題（不是連結）；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 {1} was authored by {2} in {3}.	{2}在{3}撰寫了《{1}》。	{2}在{3}撰写了《{1}》。	inner	FUN_140b898b0 1700679 written_content_composed 完整句：{1} 作品標題（不是連結）
+{$1} was authored by {2}.	{2}撰寫了《{1}》。	{2}撰写了《{1}》。	inner	FUN_140b898b0 1700679 written_content_composed 完整句；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 {1} was authored by {2}.	{2}撰寫了《{1}》。	{2}撰写了《{1}》。	inner	FUN_140b898b0 1700679 written_content_composed 完整句
 {1}, {%2}, was made from {3}, {%4} and {5}, {%6} in {7} by {8}.	{8}在{7}以{3}（{4}）和{5}（{6}）製成了{1}（{2}）。	{8}在{7}以{3}（{4}）和{5}（{6}）制成了{1}（{2}）。	inner	FUN_140b8a2d0 1700994 artifact_transformed 完整句：兩件原料神器；8 個佔位，gen_dates.py 不產生，帶日期的版本寫在下面
 {1}, {%2}, was made from {3}, {%4} and {5}, {%6} by {7}.	{7}以{3}（{4}）和{5}（{6}）製成了{1}（{2}）。	{7}以{3}（{4}）和{5}（{6}）制成了{1}（{2}）。	inner	FUN_140b8a2d0 1700994 artifact_transformed 完整句：兩件原料神器
@@ -148,7 +150,9 @@ the naming of {1} in {2}	{1}在{2}得名	{1}在{2}得名	inner	FUN_140b89e90 170
 the naming of {1}	{1}得名	{1}得名	inner	FUN_140b89e90 1700893 artifact_created 短語（命名旗標）
 the authoring of a work by {1} in {2}	{1}在{2}撰寫一部作品	{1}在{2}撰写一部作品	inner	FUN_140b89af0 1700764 written_content_composed 短語：找不到作品時
 the authoring of a work by {1}	{1}撰寫一部作品	{1}撰写一部作品	inner	FUN_140b89af0 1700764 written_content_composed 短語：找不到作品時
+the authoring of {$1} by {2} in {3}	{2}在{3}撰寫《{1}》	{2}在{3}撰写《{1}》	inner	FUN_140b89af0 1700764 written_content_composed 短語；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 the authoring of {1} by {2} in {3}	{2}在{3}撰寫《{1}》	{2}在{3}撰写《{1}》	inner	FUN_140b89af0 1700764 written_content_composed 短語
+the authoring of {$1} by {2}	{2}撰寫《{1}》	{2}撰写《{1}》	inner	FUN_140b89af0 1700764 written_content_composed 短語；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 the authoring of {1} by {2}	{2}撰寫《{1}》	{2}撰写《{1}》	inner	FUN_140b89af0 1700764 written_content_composed 短語
 the disappearance of {1} in {2} in {3}	{1}在{3}的{2}遺失	{1}在{3}的{2}遗失	inner	FUN_140b8aa10 1701259 artifact_lost 短語
 the disappearance of {1} in {2}	{1}在{2}遺失	{1}在{2}遗失	inner	FUN_140b8aa10 1701259 artifact_lost 短語

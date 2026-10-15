@@ -72,8 +72,8 @@ def dict_lines(kind: str, rows: list[dict], lang: str) -> str:
 
 
 def name_lines(rows: list[dict], lang: str) -> str:
-    """dist 的 dflang/names.tsv：字的代號<TAB>詞性<TAB>中文（世界生成名稱的字表，見引擎 names.rs）。"""
-    return "".join(f"{r['word']}\t{r['pos']}\t{r[lang]}\n" for r in rows if r[lang].strip())
+    """dist 的 dflang/names.tsv：字的代號<TAB>詞性<TAB>中文<TAB>英文詞形（世界生成名稱的字表；英文詞形給書名的隨機字用，見引擎 names.rs）。"""
+    return "".join(f"{r['word']}\t{r['pos']}\t{r[lang]}\t{r['en']}\n" for r in rows if r[lang].strip())
 
 
 def fetch_fonts(sources: dict[str, str]) -> None:

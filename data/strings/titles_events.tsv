@@ -1,0 +1,183 @@
+en	zh-Hant	zh-Hans	align	note
+Bondage	枷鎖	枷锁	title	FUN_140eeddc0 L2255016 事件名詞 0x7d HF 遭奴役
+Chance	機運	机运	title	FUN_140eeddc0 L2255016 事件名詞 0x72 賭博
+Change	變化	变化	title	FUN_140eeddc0 L2255016 事件名詞 0x41 改變生物種類
+Concealment	隱匿	隐匿	title	FUN_140eeddc0 L2255016 事件名詞 0x10 神器被藏
+Construction	建設	建设	title	FUN_140eeddc0 L2255016 事件名詞 2 建立據點
+Copy	複製	复制	title	FUN_140eeddc0 L2255016 事件名詞 100 神器被複製
+Debauchery	放蕩	放荡	title	FUN_140eeddc0 L2255016 事件名詞 0x69 狂歡
+Deceit	欺瞞	欺瞒	title	FUN_140eeddc0 L2255016 事件名詞 0x3f 冒用身分
+Destruction	毀滅	毁灭	title	FUN_140eeddc0 L2255016 事件名詞 1/0x18/0x24/0x36/0x6a 摧毀據點、0x57 神器被毀（inline 常數 L2255124）
+Duplicate	複製品	复制品	title	FUN_140eeddc0 L2255016 事件名詞 100 神器被複製
+Equipment	裝備	装备	title	FUN_140eeddc0 L2255016 事件名詞 0x69 購買
+Expulsion	驅逐	驱逐	title	FUN_140eeddc0 L2255016 事件名詞 0x6f 驅逐 HF
+Failure	失敗	失败	title	FUN_140eeddc0 L2255016 事件名詞 0x69 簡單行動
+First Contact	初次接觸	初次接触	title	FUN_140eeddc0 L2255016 事件名詞 6 等多種事件的預設（inline 常數 L2255233）
+Genius	天才	天才	title	FUN_140eeddc0 L2255016 事件名詞 0x12、0x25–0x2a 傑作（inline 常數 L2255550）
+Greed	貪婪	贪婪	title	FUN_140eeddc0 L2255016 事件名詞 0x11 神器被占有
+Horror	恐怖	恐怖	title	FUN_140eeddc0 L2255016 事件名詞 0x69 恐怖實驗
+Hunger	飢餓	饥饿	title	FUN_140eeddc0 L2255016 事件名詞 0x37 吞食
+Initiation	入會	入会	title	FUN_140eeddc0 L2255016 事件名詞 0x62 招募入團
+Insanity	瘋狂	疯狂	title	FUN_140eeddc0 L2255016 事件名詞 0x5e 心境：瘋狂
+Intrigue	權謀	权谋	title	FUN_140eeddc0 L2255016 事件名詞 0x80 結成陰謀關係
+Loss	失落	失落	title	FUN_140eeddc0 L2255016 事件名詞 0x5e 心境；也在 text_secret_death.txt
+Masterpiece	傑作	杰作	title	FUN_140eeddc0 L2255016 事件名詞 0x25–0x2a 傑作（inline 常數 L2255511）
+Meeting	相遇	相遇	title	FUN_140eeddc0 L2255016 事件名詞 99 結成名聲關係
+Melancholy	憂鬱	忧郁	title	FUN_140eeddc0 L2255016 事件名詞 0x5e 心境：憂鬱
+Neighbors	鄰里	邻里	title	FUN_140eeddc0 L2255016 事件名詞 0x4c 據點糾紛
+Perfection	完美	完美	title	FUN_140eeddc0 L2255016 事件名詞 0x56 神器被改造
+Persecution	迫害	迫害	title	FUN_140eeddc0 L2255016 事件名詞 0x79 迫害（inline 常數 L2256355）
+Pillage	劫掠	劫掠	title	FUN_140eeddc0 L2255016 事件名詞 0x2f 洗劫據點
+Plunder	掠奪	掠夺	title	FUN_140eeddc0 L2255016 事件名詞 0x2f 洗劫據點
+Possession	附身	附身	title	FUN_140eeddc0 L2255016 事件名詞 0x5e 心境：附身
+Preaching	佈道	布道	title	FUN_140eeddc0 L2255016 事件名詞 0x77/0x78 傳道
+Rage	狂怒	狂怒	title	FUN_140eeddc0 L2255016 事件名詞 0x5e 心境：狂暴
+Ruin	敗亡	败亡	title	FUN_140eeddc0 L2255016 事件名詞 0x74 實體解散；也在 text_secret_death.txt；一般字典的 Ruin 是廢墟，書名另譯
+Sabotage	破壞	破坏	title	FUN_140eeddc0 L2255016 事件名詞 0x7e 破壞（inline 常數 L2256442，不在清單上）
+Secrets	秘密	秘密	title	FUN_140eeddc0 L2255016 事件名詞 0x5e 心境：秘密
+Squabbling	爭吵	争吵	title	FUN_140eeddc0 L2255016 事件名詞 0x4c 據點糾紛
+Storage	收藏	收藏	title	FUN_140eeddc0 L2255016 事件名詞 0x4a 神器被收藏
+Suspicion	猜疑	猜疑	title	FUN_140eeddc0 L2255016 事件名詞 0x81 收買失敗
+Tactics	戰術	战术	title	FUN_140eeddc0 L2255016 事件名詞 0x6c 戰術局勢
+Terror	恐懼	恐惧	title	FUN_140eeddc0 L2255016 事件名詞 0x6b 實體逃離據點（L2256212，不在清單上）
+Tragedy	悲劇	悲剧	title	FUN_140eeddc0 L2255016 事件名詞 0x13/0x19/0x2b 神器遺失、據點消亡、傑作遺失
+Transformation	蛻變	蜕变	title	FUN_140eeddc0 L2255016 事件名詞 0x56 神器被改造；一般字典的變形是狼人變身，書名另譯
+Treasure	寶藏	宝藏	title	FUN_140eeddc0 L2255016 事件名詞 0x5f 神器所有權主張
+the Abduction	劫持	劫持	title	FUN_140eeddc0 L2255016 事件名詞 0x34 HF 被擄
+the Agreement	協議	协议	title	FUN_140eeddc0 L2255016 事件名詞 8/9/10/0x4b/0x4d 協議（inline 常數 L2255287）
+the Alliance	同盟	同盟	title	FUN_140eeddc0 L2255016 事件名詞 0x7b 結盟
+the Attack	襲擊	袭击	title	FUN_140eeddc0 L2255016 事件名詞 0 攻擊據點
+the Author	作者	作者	title	FUN_140eeddc0 L2255016 事件名詞 0x5d 寫成作品
+the Battle	戰役	战役	title	FUN_140eeddc0 L2255016 事件名詞 0x2e 野戰
+the Betrayal	背叛	背叛	title	FUN_140eeddc0 L2255016 事件名詞 0x7f 實體被推翻
+the Bond	紐帶	纽带	title	FUN_140eeddc0 L2255016 事件名詞 99 結成名聲關係；也是知識主題（歷史：社群紐帶）
+the Breach	突破	突破	title	FUN_140eeddc0 L2255016 事件名詞 0x7a 突破地下層
+the Brooding	沉思	沉思	title	FUN_140eeddc0 L2255016 事件名詞 0x5e 心境：陰鬱
+the Building	建築	建筑	title	FUN_140eeddc0 L2255016 事件名詞 0x76 改建建築
+the Caravan	商隊	商队	title	FUN_140eeddc0 L2255016 事件名詞 0xf/0x70 商人、貿易
+the Ceremony	典禮	典礼	title	FUN_140eeddc0 L2255016 事件名詞 0x54 典禮（inline 常數 L2255938）
+the Claim	認領	认领	title	FUN_140eeddc0 L2255016 事件名詞 0x5f 神器所有權主張
+the Clash	交鋒	交锋	title	FUN_140eeddc0 L2255016 事件名詞 0x2e 野戰
+the Companion	同伴	同伴	title	FUN_140eeddc0 L2255016 事件名詞 0x3e 新寵物
+the Competition	比賽	比赛	title	FUN_140eeddc0 L2255016 事件名詞 0x52 比賽（inline 常數 L2255881）
+the Composition	創作	创作	title	FUN_140eeddc0 L2255016 事件名詞 0x5d 寫成作品
+the Confrontation	對峙	对峙	title	FUN_140eeddc0 L2255016 事件名詞 0x47 HF 被質問
+the Construction	工程	工程	title	FUN_140eeddc0 L2255016 事件名詞 0x3a 建造世界建築（道路、橋梁）
+the Conviction	定罪	定罪	title	FUN_140eeddc0 L2255016 事件名詞 0x82 HF 被定罪
+the Coup	政變	政变	title	FUN_140eeddc0 L2255016 事件名詞 0x7f 實體被推翻
+the Crime	罪行	罪行	title	FUN_140eeddc0 L2255016 事件名詞 0x82 HF 被定罪
+the Dance	舞蹈	舞蹈	title	FUN_140eeddc0 L2255016 事件名詞 0x5c 舞蹈形式；FUN_140ee5000 L2248830 舞蹈形式 fallback
+the Deal	交易	交易	title	FUN_140eeddc0 L2255016 事件名詞 8/9/10/0x4b/0x4d 協議（inline 常數 L2255317、L2255327，不在清單上）
+the Denial	拒絕	拒绝	title	FUN_140eeddc0 L2255016 事件名詞 0x58 HF 關係被拒
+the Desecration	褻瀆	亵渎	title	FUN_140eeddc0 L2255016 事件名詞 0x33 屍體被褻瀆
+the Devouring	吞噬	吞噬	title	FUN_140eeddc0 L2255016 事件名詞 0x37 吞食
+the Diplomat	外交官	外交官	title	FUN_140eeddc0 L2255016 事件名詞 0xd 外交官遇害
+the Discovery	發現	发现	title	FUN_140eeddc0 L2255016 事件名詞 0x14/0x15 神器被尋獲（inline 常數 L2255428）、0x55 發現知識
+the Dispute	紛爭	纷争	title	FUN_140eeddc0 L2255016 事件名詞 0x4c 據點糾紛
+the Dissolution	解散	解散	title	FUN_140eeddc0 L2255016 事件名詞 0x74 實體解散
+the Duel	決鬥	决斗	title	FUN_140eeddc0 L2255016 事件名詞 0x39 簡單戰鬥
+the Enlightenment	啟蒙	启蒙	title	FUN_140eeddc0 L2255016 事件名詞 0x1a
+the Enslavement	奴役	奴役	title	FUN_140eeddc0 L2255016 事件名詞 0x7d HF 遭奴役
+the Equipment	裝備	装备	title	FUN_140eeddc0 L2255016 事件名詞 0x75 實體購買裝備
+the Explorer	探險家	探险家	title	FUN_140eeddc0 L2255016 事件名詞 0x3c 登頂
+the Failure	失敗	失败	title	FUN_140eeddc0 L2255016 事件名詞 0x83 陷害失敗
+the Fall	衰落	衰落	title	FUN_140eeddc0 L2255016 事件名詞 0x74 實體解散
+the Flight	逃亡	逃亡	title	FUN_140eeddc0 L2255016 事件名詞 0x6b 實體逃離據點
+the Founders	創始者	创始者	title	FUN_140eeddc0 L2255016 事件名詞 2 建立據點
+the Gamble	賭局	赌局	title	FUN_140eeddc0 L2255016 事件名詞 0x72 賭博
+the Gift	禮物	礼物	title	FUN_140eeddc0 L2255016 事件名詞 0x60 神器被贈與
+the Holy City	聖城	圣城	title	FUN_140eeddc0 L2255016 事件名詞 0x71 據點旗標
+the Honor	榮譽	荣誉	title	FUN_140eeddc0 L2255016 事件名詞 0x73 獲得榮譽
+the Impersonation	冒名頂替	冒名顶替	title	FUN_140eeddc0 L2255016 事件名詞 0x3f 冒用身分
+the Improvements	改良	改良	title	FUN_140eeddc0 L2255016 事件名詞 0x76 改建建築
+the Infiltration	滲透	渗透	title	FUN_140eeddc0 L2255016 事件名詞 0x65 潛入據點
+the Insurrection	起義	起义	title	FUN_140eeddc0 L2255016 事件名詞 0x4e 叛亂開始
+the Interrogation	審訊	审讯	title	FUN_140eeddc0 L2255016 事件名詞 0x84 HF 被審問
+the Invasion	入侵	入侵	title	FUN_140eeddc0 L2255016 事件名詞 0 攻擊據點
+the Joining	歸附	归附	title	FUN_140eeddc0 L2255016 事件名詞 0x59 族群併入實體
+the Kidnapping	綁架	绑架	title	FUN_140eeddc0 L2255016 事件名詞 0x34 HF 被擄
+the Knowledge	知識	知识	title	FUN_140eeddc0 L2255016 事件名詞 0x55 發現知識
+the Maiming	致殘	致残	title	FUN_140eeddc0 L2255016 事件名詞 0x38 HF 受傷
+the Music	音樂	音乐	title	FUN_140eeddc0 L2255016 事件名詞 0x5b 音樂形式；FUN_140ee4c90 L2248659 音樂形式 fallback
+the Obsession	執念	执念	title	FUN_140eeddc0 L2255016 事件名詞 0x49 HF 有了秘密目標
+the Offering	獻禮	献礼	title	FUN_140eeddc0 L2255016 事件名詞 0x60 神器被贈與
+the Overthrow	推翻	推翻	title	FUN_140eeddc0 L2255016 事件名詞 0x4f 叛亂結束
+the Party	宴會	宴会	title	FUN_140eeddc0 L2255016 事件名詞 0x69 狂歡
+the Pet	寵物	宠物	title	FUN_140eeddc0 L2255016 事件名詞 0x3e 新寵物
+the Poetry	詩歌	诗歌	title	FUN_140eeddc0 L2255016 事件名詞 0x5a 詩歌形式；FUN_140ee49a0 L2248518 詩歌形式 fallback
+the Prestige	威望	威望	title	FUN_140eeddc0 L2255016 事件名詞 0x73 獲得榮譽
+the Price	代價	代价	title	FUN_140eeddc0 L2255016 事件名詞 0x7c 贖回 HF
+the Procession	遊行	游行	title	FUN_140eeddc0 L2255016 事件名詞 0x53 遊行（inline 常數 L2255910）
+the Punishment	懲罰	惩罚	title	FUN_140eeddc0 L2255016 事件名詞 0x4f 叛亂結束、0x82 定罪
+the Purchase	採購	采购	title	FUN_140eeddc0 L2255016 事件名詞 0x69 購買
+the Questioning	盤問	盘问	title	FUN_140eeddc0 L2255016 事件名詞 0x84 HF 被審問
+the Raid	突襲	突袭	title	FUN_140eeddc0 L2255016 事件名詞 0x65 潛入據點
+the Rampage	肆虐	肆虐	title	FUN_140eeddc0 L2255016 事件名詞 0x50 HF 攻擊據點
+the Rank	位階	等级	title	FUN_140eeddc0 L2255016 事件名詞 0x73 獲得榮譽
+the Ransom	贖金	赎金	title	FUN_140eeddc0 L2255016 事件名詞 0x7c 贖回 HF
+the Razing	夷平	夷平	title	FUN_140eeddc0 L2255016 事件名詞 1/0x18/0x24/0x36/0x6a 摧毀據點（inline 常數 L2255154）
+the Rebellion	叛亂	叛乱	title	FUN_140eeddc0 L2255016 事件名詞 0x4e 叛亂開始
+the Reclamation	收復	收复	title	FUN_140eeddc0 L2255016 事件名詞 0x17 收復據點
+the Rescue	救援	救援	title	FUN_140eeddc0 L2255016 事件名詞 0x68 HF 獲釋
+the Resettlement	重新定居	重新定居	title	FUN_140eeddc0 L2255016 事件名詞 0x17 收復據點
+the Resurrection	復活	复活	title	FUN_140eeddc0 L2255016 事件名詞 0x42 HF 復生
+the Reunion	團聚	团聚	title	FUN_140eeddc0 L2255016 事件名詞 0x3b HF 重逢
+the Revolt	造反	造反	title	FUN_140eeddc0 L2255016 事件名詞 0x4e 叛亂開始
+the Revolution	革命	革命	title	FUN_140eeddc0 L2255016 事件名詞 0x4e 叛亂開始
+the Search	搜查	搜查	title	FUN_140eeddc0 L2255016 事件名詞 0x67 實體搜查據點
+the Secret	秘密	秘密	title	FUN_140eeddc0 L2255016 事件名詞 0x43 HF 學到秘密
+the Seekers	追尋者	追寻者	title	FUN_140eeddc0 L2255016 事件名詞 0x67 實體搜查據點
+the Sermon	講道	讲道	title	FUN_140eeddc0 L2255016 事件名詞 0x77/0x78 傳道
+the Struggle	搏鬥	搏斗	title	FUN_140eeddc0 L2255016 事件名詞 0x39 簡單戰鬥
+the Summit	頂峰	顶峰	title	FUN_140eeddc0 L2255016 事件名詞 0x3c 登頂
+the Surrender	投降	投降	title	FUN_140eeddc0 L2255016 事件名詞 0x6d/0x6e 部隊交戰、據點投降
+the Theft	竊盜	盗窃	title	FUN_140eeddc0 L2255016 事件名詞 0x35 物品被竊
+the Thief	竊賊	窃贼	title	FUN_140eeddc0 L2255016 事件名詞 0x35 物品被竊
+the Time	時光	时光	title	FUN_140eeddc0 L2255016 事件名詞 預設值（inline 常數 L2255080，不在清單上）
+the Traveler	旅人	旅人	title	FUN_140eeddc0 L2255016 事件名詞 0x3d HF 旅行
+the Treasure	寶藏	宝藏	title	FUN_140eeddc0 L2255016 事件名詞 0x14/0x15 神器被尋獲（inline 常數 L2255458）；FUN_140eec930 L2254067 神器 fallback；FUN_140ef4ec0 L2259894 item_type ref
+the Treaty	條約	条约	title	FUN_140eeddc0 L2255016 事件名詞 0x7b 結盟
+the Tribute	貢品	贡品	title	FUN_140eeddc0 L2255016 事件名詞 0x31 被迫納貢
+the Uprising	暴動	暴动	title	FUN_140eeddc0 L2255016 事件名詞 0x4e 叛亂開始
+the Wound	傷口	伤口	title	FUN_140eeddc0 L2255016 事件名詞 0x38 HF 受傷
+the Wounding	負傷	负伤	title	FUN_140eeddc0 L2255016 事件名詞 0x38 HF 受傷
+the Words	話語	话语	title	FUN_140ee49a0 L2248518 詩歌形式 fallback（inline 常數 L2248602）；也是知識主題（哲學）
+the Verse	詩句	诗句	title	FUN_140ee49a0 L2248518 詩歌形式 fallback（inline 常數 L2248611）；一般字典的 Verse 是樂段「主歌」，書名另譯
+the Poem	詩篇	诗篇	title	FUN_140ee49a0 L2248518 詩歌形式 fallback（inline 常數 L2248617，不在清單上）
+the Notes	音符	音符	title	FUN_140ee4c90 L2248659 音樂形式 fallback（inline 常數 L2248775）
+the Rhythm	節奏	节奏	title	FUN_140ee4c90 L2248659 音樂形式 fallback（L2248781）；舞蹈形式 fallback 同字（L2248957）
+the Voice	嗓音	嗓音	title	FUN_140ee4c90 L2248659 音樂形式 fallback（L2248786）；也是知識主題（醫學）
+the Steps	舞步	舞步	title	FUN_140ee5000 L2248830 舞蹈形式 fallback（L2248946）
+the Moves	舞姿	舞姿	title	FUN_140ee5000 L2248830 舞蹈形式 fallback（L2248951）
+the Dwarf Language	矮人語	矮人语	title	FUN_140ee5600 L2249149 語言：the＋每字大寫(語言 id)＋ Language；vanilla 只有 TRANSLATION:DWARF/ELF/HUMAN/GOBLIN
+the Elf Language	精靈語	精灵语	title	FUN_140ee5600 L2249149 語言：the＋每字大寫(語言 id)＋ Language；vanilla 只有 TRANSLATION:DWARF/ELF/HUMAN/GOBLIN
+the Human Language	人類語	人类语	title	FUN_140ee5600 L2249149 語言：the＋每字大寫(語言 id)＋ Language；vanilla 只有 TRANSLATION:DWARF/ELF/HUMAN/GOBLIN
+the Goblin Language	哥布林語	哥布林语	title	FUN_140ee5600 L2249149 語言：the＋每字大寫(語言 id)＋ Language；vanilla 只有 TRANSLATION:DWARF/ELF/HUMAN/GOBLIN
+the Artifact	神器	神器	title	FUN_140eec930 L2254067 神器 fallback（inline 常數 L2254472）；指這件神器本身，用遊戲術語
+Unknown Material	不明材料	不明材料	title	FUN_140eec930 L2254067 神器：找不到材料時（L2254347），整串再每字大寫
+the Spirit	亡靈	亡灵	title	FUN_140ef0a90 L2256954 歷史人物 fallback（inline 常數 L2257225）；一般字典 Spirit 是鬥志，書名另譯
+the Ghost	鬼魂	鬼魂	title	FUN_140ef0a90 L2256954 歷史人物 fallback（L2257238）
+the Dead	亡者	亡者	title	FUN_140ef0a90 L2256954 歷史人物 fallback（inline 常數 L2257232，不在清單上）
+the Corpse	屍體	尸体	title	FUN_140ef0a90 L2256954 歷史人物 fallback（L2257213）
+the Creatures	生物	生物	title	FUN_140ef4ac0 L2259725 entity_pop ref；也是知識主題（博物學）；去 the 的 Creatures 由引擎自動產生
+the Creature	生物	生物	title	FUN_140ef4cd0 L2259813 creature ref
+the Coins	錢幣	钱币	title	FUN_140ef5000 L2259954 coinbatch ref
+the Art	藝術	艺术	title	FUN_140ef5140 L2260014 entity_art_image ref
+Annihilation	殲滅	歼灭	title	text_secret_death.txt SECRET_DEATH（BOOK_NAME 文字組；FUN_140eec1f0 L2253718）
+Bereavement	喪親	丧亲	title	text_secret_death.txt SECRET_DEATH（BOOK_NAME 文字組；FUN_140eec1f0 L2253718）
+Demise	亡故	亡故	title	text_secret_death.txt SECRET_DEATH（BOOK_NAME 文字組；FUN_140eec1f0 L2253718）
+Departure	離世	离世	title	text_secret_death.txt SECRET_DEATH（BOOK_NAME 文字組；FUN_140eec1f0 L2253718）
+Doom	厄運	厄运	title	text_secret_death.txt SECRET_DEATH（BOOK_NAME 文字組；FUN_140eec1f0 L2253718）
+Dying	臨終	临终	title	text_secret_death.txt SECRET_DEATH（BOOK_NAME 文字組；FUN_140eec1f0 L2253718）
+Eternal Rest	長眠	长眠	title	text_secret_death.txt SECRET_DEATH（BOOK_NAME 文字組；FUN_140eec1f0 L2253718）
+Expiration	氣絕	气绝	title	text_secret_death.txt SECRET_DEATH（BOOK_NAME 文字組；FUN_140eec1f0 L2253718）
+Extinction	滅絕	灭绝	title	text_secret_death.txt SECRET_DEATH（BOOK_NAME 文字組；FUN_140eec1f0 L2253718）
+Mortality	必死之軀	必死之躯	title	text_secret_death.txt SECRET_DEATH（BOOK_NAME 文字組；FUN_140eec1f0 L2253718）
+Immortality	永生	永生	title	text_secret_death.txt SECRET_DEATH（BOOK_NAME 文字組；FUN_140eec1f0 L2253718）
+Oblivion	湮沒	湮没	title	text_secret_death.txt SECRET_DEATH（BOOK_NAME 文字組；FUN_140eec1f0 L2253718）
+Parting	別離	别离	title	text_secret_death.txt SECRET_DEATH（BOOK_NAME 文字組；FUN_140eec1f0 L2253718）
+Ruination	覆滅	覆灭	title	text_secret_death.txt SECRET_DEATH（BOOK_NAME 文字組；FUN_140eec1f0 L2253718）
+Sleep	安眠	安眠	title	text_secret_death.txt SECRET_DEATH（BOOK_NAME 文字組；FUN_140eec1f0 L2253718）
+the Afterlife	來世	来世	title	text_secret_death.txt SECRET_DEATH（BOOK_NAME 文字組；FUN_140eec1f0 L2253718）
+the End	終結	终结	title	text_secret_death.txt SECRET_DEATH（BOOK_NAME 文字組；FUN_140eec1f0 L2253718）
+the Grave	墳墓	坟墓	title	text_secret_death.txt SECRET_DEATH（BOOK_NAME 文字組；FUN_140eec1f0 L2253718）

@@ -31,8 +31,11 @@ discussing {%1}	討論{1}	讨论{1}		fn_thought_composer 0xba：{1} 知識主題
 learning about {%1}	學習{1}	学习{1}		fn_thought_composer 0xbf/0xc0：知識主題長名或小寫技能名
 teaching {%1}	教授{1}	教授{1}		fn_thought_composer 0xc6/0xc7：知識主題長名或小寫技能名
 improving {%1}	提升{1}技能	提升{1}技能		fn_thought_composer 0xd7（upon）：小寫技能名
+learning {$1}	學習{1}	学习{1}		fn_thought_composer 0xc1–0xc5：書名、秘密名、詩歌／樂曲／舞蹈形式名（專名照抄）；須排在 learning about 後；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 learning {1}	學習{1}	学习{1}		fn_thought_composer 0xc1–0xc5：書名、秘密名、詩歌／樂曲／舞蹈形式名（專名照抄）；須排在 learning about 後
+reading {$1}	閱讀{1}	阅读{1}		fn_thought_composer 0xc8：書名；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 reading {1}	閱讀{1}	阅读{1}		fn_thought_composer 0xc8：書名
+writing {$1}	撰寫{1}	撰写{1}		fn_thought_composer 0xc9：書名；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 writing {1}	撰寫{1}	撰写{1}		fn_thought_composer 0xc9：書名
 playing with a {@1}	玩{1}	玩{1}		fn_thought_composer 0xd0：玩具名
 realizing the worthlessness of {@1}	領悟到{1}毫無價值	领悟到{1}毫无价值		fn_thought_composer 0xd9：FUN_140ee0380 價值觀

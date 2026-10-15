@@ -5296,13 +5296,21 @@ the authoring of a work by {1} in the {@2} of {#3}	{3}年{2}{1}撰寫一部作�
 the authoring of a work by {1} in a time before time	太古之時{1}撰寫一部作品	太古之时{1}撰写一部作品	inner	自動產生（scripts/gen_events.py）：17.tsv the authoring of a work by {1} 加上結尾的日期
 the authoring of a work by {1} in {2}	{1}在{2}撰寫一部作品	{1}在{2}撰写一部作品	inner	FUN_140b89af0 1700764 written_content_composed 短語：找不到作品時
 the authoring of a work by {1}	{1}撰寫一部作品	{1}撰写一部作品	inner	FUN_140b89af0 1700764 written_content_composed 短語：找不到作品時
+the authoring of {$1} by {2} in {3} in {#4}	{4}年{2}在{3}撰寫《{1}》	{4}年{2}在{3}撰写《{1}》	inner	自動產生（scripts/gen_events.py）：17.tsv the authoring of {$1} by {2} in {3} 加上結尾的日期
+the authoring of {$1} by {2} in {3} in the {@4} of {#5}	{5}年{4}{2}在{3}撰寫《{1}》	{5}年{4}{2}在{3}撰写《{1}》	inner	自動產生（scripts/gen_events.py）：17.tsv the authoring of {$1} by {2} in {3} 加上結尾的日期
+the authoring of {$1} by {2} in {3} in a time before time	太古之時{2}在{3}撰寫《{1}》	太古之时{2}在{3}撰写《{1}》	inner	自動產生（scripts/gen_events.py）：17.tsv the authoring of {$1} by {2} in {3} 加上結尾的日期
 the authoring of {1} by {2} in {3} in {#4}	{4}年{2}在{3}撰寫《{1}》	{4}年{2}在{3}撰写《{1}》	inner	自動產生（scripts/gen_events.py）：17.tsv the authoring of {1} by {2} in {3} 加上結尾的日期
 the authoring of {1} by {2} in {3} in the {@4} of {#5}	{5}年{4}{2}在{3}撰寫《{1}》	{5}年{4}{2}在{3}撰写《{1}》	inner	自動產生（scripts/gen_events.py）：17.tsv the authoring of {1} by {2} in {3} 加上結尾的日期
 the authoring of {1} by {2} in {3} in a time before time	太古之時{2}在{3}撰寫《{1}》	太古之时{2}在{3}撰写《{1}》	inner	自動產生（scripts/gen_events.py）：17.tsv the authoring of {1} by {2} in {3} 加上結尾的日期
+the authoring of {$1} by {2} in {#3}	{3}年{2}撰寫《{1}》	{3}年{2}撰写《{1}》	inner	自動產生（scripts/gen_events.py）：17.tsv the authoring of {$1} by {2} 加上結尾的日期
+the authoring of {$1} by {2} in the {@3} of {#4}	{4}年{3}{2}撰寫《{1}》	{4}年{3}{2}撰写《{1}》	inner	自動產生（scripts/gen_events.py）：17.tsv the authoring of {$1} by {2} 加上結尾的日期
+the authoring of {$1} by {2} in a time before time	太古之時{2}撰寫《{1}》	太古之时{2}撰写《{1}》	inner	自動產生（scripts/gen_events.py）：17.tsv the authoring of {$1} by {2} 加上結尾的日期
 the authoring of {1} by {2} in {#3}	{3}年{2}撰寫《{1}》	{3}年{2}撰写《{1}》	inner	自動產生（scripts/gen_events.py）：17.tsv the authoring of {1} by {2} 加上結尾的日期
 the authoring of {1} by {2} in the {@3} of {#4}	{4}年{3}{2}撰寫《{1}》	{4}年{3}{2}撰写《{1}》	inner	自動產生（scripts/gen_events.py）：17.tsv the authoring of {1} by {2} 加上結尾的日期
 the authoring of {1} by {2} in a time before time	太古之時{2}撰寫《{1}》	太古之时{2}撰写《{1}》	inner	自動產生（scripts/gen_events.py）：17.tsv the authoring of {1} by {2} 加上結尾的日期
+the authoring of {$1} by {2} in {3}	{2}在{3}撰寫《{1}》	{2}在{3}撰写《{1}》	inner	FUN_140b89af0 1700764 written_content_composed 短語；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 the authoring of {1} by {2} in {3}	{2}在{3}撰寫《{1}》	{2}在{3}撰写《{1}》	inner	FUN_140b89af0 1700764 written_content_composed 短語
+the authoring of {$1} by {2}	{2}撰寫《{1}》	{2}撰写《{1}》	inner	FUN_140b89af0 1700764 written_content_composed 短語；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 the authoring of {1} by {2}	{2}撰寫《{1}》	{2}撰写《{1}》	inner	FUN_140b89af0 1700764 written_content_composed 短語
 the disappearance of {1} in {2} in {3} in {#4}	{4}年{1}在{3}的{2}遺失	{4}年{1}在{3}的{2}遗失	inner	自動產生（scripts/gen_events.py）：17.tsv the disappearance of {1} in {2} in {3} 加上結尾的日期
 the disappearance of {1} in {2} in {3} in the {@4} of {#5}	{5}年{4}{1}在{3}的{2}遺失	{5}年{4}{1}在{3}的{2}遗失	inner	自動產生（scripts/gen_events.py）：17.tsv the disappearance of {1} in {2} in {3} 加上結尾的日期
@@ -9893,9 +9901,15 @@ In a time before time, a work was authored by {1} in {2}.	太古之時，{1}在{
 In {#1}, a work was authored by {2}.	{1}年，{2}撰寫了一部作品。	{1}年，{2}撰写了一部作品。		自動產生（scripts/gen_events.py）：17.tsv a work was authored by {1}.
 In the {@1} of {#2}, a work was authored by {3}.	{2}年{1}，{3}撰寫了一部作品。	{2}年{1}，{3}撰写了一部作品。		自動產生（scripts/gen_events.py）：17.tsv a work was authored by {1}.
 In a time before time, a work was authored by {1}.	太古之時，{1}撰寫了一部作品。	太古之时，{1}撰写了一部作品。		自動產生（scripts/gen_events.py）：17.tsv a work was authored by {1}.
+In {#1}, {$2} was authored by {3} in {4}.	{1}年，{3}在{4}撰寫了《{2}》。	{1}年，{3}在{4}撰写了《{2}》。		自動產生（scripts/gen_events.py）：17.tsv {$1} was authored by {2} in {3}.
+In the {@1} of {#2}, {$3} was authored by {4} in {5}.	{2}年{1}，{4}在{5}撰寫了《{3}》。	{2}年{1}，{4}在{5}撰写了《{3}》。		自動產生（scripts/gen_events.py）：17.tsv {$1} was authored by {2} in {3}.
+In a time before time, {$1} was authored by {2} in {3}.	太古之時，{2}在{3}撰寫了《{1}》。	太古之时，{2}在{3}撰写了《{1}》。		自動產生（scripts/gen_events.py）：17.tsv {$1} was authored by {2} in {3}.
 In {#1}, {2} was authored by {3} in {4}.	{1}年，{3}在{4}撰寫了《{2}》。	{1}年，{3}在{4}撰写了《{2}》。		自動產生（scripts/gen_events.py）：17.tsv {1} was authored by {2} in {3}.
 In the {@1} of {#2}, {3} was authored by {4} in {5}.	{2}年{1}，{4}在{5}撰寫了《{3}》。	{2}年{1}，{4}在{5}撰写了《{3}》。		自動產生（scripts/gen_events.py）：17.tsv {1} was authored by {2} in {3}.
 In a time before time, {1} was authored by {2} in {3}.	太古之時，{2}在{3}撰寫了《{1}》。	太古之时，{2}在{3}撰写了《{1}》。		自動產生（scripts/gen_events.py）：17.tsv {1} was authored by {2} in {3}.
+In {#1}, {$2} was authored by {3}.	{1}年，{3}撰寫了《{2}》。	{1}年，{3}撰写了《{2}》。		自動產生（scripts/gen_events.py）：17.tsv {$1} was authored by {2}.
+In the {@1} of {#2}, {$3} was authored by {4}.	{2}年{1}，{4}撰寫了《{3}》。	{2}年{1}，{4}撰写了《{3}》。		自動產生（scripts/gen_events.py）：17.tsv {$1} was authored by {2}.
+In a time before time, {$1} was authored by {2}.	太古之時，{2}撰寫了《{1}》。	太古之时，{2}撰写了《{1}》。		自動產生（scripts/gen_events.py）：17.tsv {$1} was authored by {2}.
 In {#1}, {2} was authored by {3}.	{1}年，{3}撰寫了《{2}》。	{1}年，{3}撰写了《{2}》。		自動產生（scripts/gen_events.py）：17.tsv {1} was authored by {2}.
 In the {@1} of {#2}, {3} was authored by {4}.	{2}年{1}，{4}撰寫了《{3}》。	{2}年{1}，{4}撰写了《{3}》。		自動產生（scripts/gen_events.py）：17.tsv {1} was authored by {2}.
 In a time before time, {1} was authored by {2}.	太古之時，{2}撰寫了《{1}》。	太古之时，{2}撰写了《{1}》。		自動產生（scripts/gen_events.py）：17.tsv {1} was authored by {2}.

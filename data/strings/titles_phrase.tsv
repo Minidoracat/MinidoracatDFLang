@@ -1,0 +1,17 @@
+en	zh-Hant	zh-Hans	align	note
+It	它	它	title	FUN_140ee35f0 L2248277–2248372 [PHRASE] 主詞（jump table 0x140ee4818）；也是 [ANY_PRONOUN]
+The Day	白晝	白昼	title	FUN_140ee35f0 L2248277–2248372 [PHRASE] 主詞（jump table 0x140ee4818）
+The Night	黑夜	黑夜	title	FUN_140ee35f0 L2248277–2248372 [PHRASE] 主詞（jump table 0x140ee4818）
+The Sands	黃沙	黄沙	title	FUN_140ee35f0 L2248277–2248372 [PHRASE] 主詞（jump table 0x140ee4818）；複數主詞，動詞不加 s
+The Wise	智者	智者	title	FUN_140ee35f0 L2248277–2248372 [PHRASE] 主詞（jump table 0x140ee4818）；複數主詞，動詞不加 s
+The Dirt	塵土	尘土	title	FUN_140ee35f0 L2248277–2248372 [PHRASE] 主詞（jump table 0x140ee4818）
+The Fool	愚者	愚者	title	FUN_140ee35f0 L2248277–2248372 [PHRASE] 主詞（jump table 0x140ee4818）
+Nobody	無人	无人	title	FUN_140ee35f0 L2248277–2248372 [PHRASE] 主詞（jump table 0x140ee4818）
+The Future	未來	未来	title	FUN_140ee35f0 L2248277–2248372 [PHRASE] 主詞（jump table 0x140ee4818）
+The Past	過去	过去	title	FUN_140ee35f0 L2248277–2248372 [PHRASE] 主詞（jump table 0x140ee4818）
+He	他	他	title	FUN_140ee35f0 L2247845 [ANY_PRONOUN] 七選一（jump table 0x140ee47fc，常數 0x140ee38ef）
+She	她	她	title	FUN_140ee35f0 L2247845 [ANY_PRONOUN] 七選一（jump table 0x140ee47fc，常數 0x140ee38ef）
+I	我	我	title	FUN_140ee35f0 L2247845 [ANY_PRONOUN] 七選一（jump table 0x140ee47fc，常數 0x140ee38ef）
+You	你	你	title	FUN_140ee35f0 L2247845 [ANY_PRONOUN] 七選一（jump table 0x140ee47fc，常數 0x140ee38ef）
+We	我們	我们	title	FUN_140ee35f0 L2247845 [ANY_PRONOUN] 七選一（jump table 0x140ee47fc，常數 0x140ee38ef）
+They	他們	他们	title	FUN_140ee35f0 L2247845 [ANY_PRONOUN] 七選一（jump table 0x140ee47fc，常數 0x140ee38ef）

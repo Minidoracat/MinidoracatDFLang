@@ -9,14 +9,20 @@ You pick up {%1}.	你撿起了{1}。	你捡起了{1}。		FUN_14007de50 L76131 �
 {1} gives you {%2}.	{1}給了你{2}。	{1}给了你{2}。		FUN_1400884e0 L83642 冒險模式收禮；{2} 物品名
 {1} has discovered {%2}.	{1}有了新發現：{2}。	{1}有了新发现：{2}。		FUN_14008b670 L85451／FUN_140090280 L89409 學者研究發現；{2} 知識主題（FUN_140ee0830，已在 sentences_causes_b）
 {1} has become a student of {2}.	{1}拜{2}為師。	{1}拜{2}为师。		FUN_140090280 L89587 拜師；{1}{2} FUN_141331500 稱呼
+You are in the middle of dancing {$1}.	你正在跳《{1}》。	你正在跳《{1}》。		FUN_1400ac470 L105535／106243 表演進行中；{1} 舞蹈作品名；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 You are in the middle of dancing {1}.	你正在跳《{1}》。	你正在跳《{1}》。		FUN_1400ac470 L105535／106243 表演進行中；{1} 舞蹈作品名
+{1} is in the middle of dancing {$2}.	{1}正在跳《{2}》。	{1}正在跳《{2}》。		FUN_1400ac470 L105535／106243；比通用的 in the middle of {%2} 先比對；書名用詞版：{$2} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 {1} is in the middle of dancing {2}.	{1}正在跳《{2}》。	{1}正在跳《{2}》。		FUN_1400ac470 L105535／106243；比通用的 in the middle of {%2} 先比對
+{1} are in the middle of dancing {$2}.	{1}正在跳《{2}》。	{1}正在跳《{2}》。		FUN_1400ac470 L105535／106243；{1} The performers；書名用詞版：{$2} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 {1} are in the middle of dancing {2}.	{1}正在跳《{2}》。	{1}正在跳《{2}》。		FUN_1400ac470 L105535／106243；{1} The performers
 You are in the middle of {%1}.	你正在{1}。	你正在{1}。		FUN_1400ac470 L105535／106243 表演進行中（玩家）；{1} 表演片段（下列 the story of… 等）
 {1} is in the middle of {%2}.	{1}正在{2}。	{1}正在{2}。		FUN_1400ac470 L105535／106243；{1} 生物稱呼
 {1} are in the middle of {%2}.	{1}正在{2}。	{1}正在{2}。		FUN_1400ac470 L105535／106243；{1} The performers
+You begin dancing {$1}.	你開始跳《{1}》。	你开始跳《{1}》。		FUN_1400ac470 L106958 開始表演；{1} 舞蹈作品名；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 You begin dancing {1}.	你開始跳《{1}》。	你开始跳《{1}》。		FUN_1400ac470 L106958 開始表演；{1} 舞蹈作品名
+{1} begins dancing {$2}.	{1}開始跳《{2}》。	{1}开始跳《{2}》。		FUN_1400ac470 L106958；書名用詞版：{$2} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 {1} begins dancing {2}.	{1}開始跳《{2}》。	{1}开始跳《{2}》。		FUN_1400ac470 L106958
+{1} begin dancing {$2}.	{1}開始跳《{2}》。	{1}开始跳《{2}》。		FUN_1400ac470 L106958；{1} The performers；書名用詞版：{$2} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 {1} begin dancing {2}.	{1}開始跳《{2}》。	{1}开始跳《{2}》。		FUN_1400ac470 L106958；{1} The performers
 You begin playing with {%1}.	你開始玩{1}。	你开始玩{1}。		FUN_1400ac470 L107165 兒童玩玩具（玩家）；{1} a toy 或物品名
 You are playing with {%1}.	你正在玩{1}。	你正在玩{1}。		FUN_1400ac470 L107165
@@ -33,8 +39,10 @@ You begin {%1}.	你開始{1}。	你开始{1}。		FUN_1400ac470 L106958 開始表
 {1} begin {%2}.	{1}開始{2}。	{1}开始{2}。		FUN_1400ac470 L106958；{1} The performers
 the story of {%1}	講述{1}的故事	讲述{1}的故事		FUN_1400ac470 表演片段；{1} 歷史事件描述（事件句本輪未譯，命中不了就整句照英文）
 an improvised recital of {1}	即興朗誦《{1}》	即兴朗诵《{1}》		FUN_1400ac470 表演片段；{1} 詩體名（FUN_140a946e0）
+reciting the poem {$1}	朗誦詩作《{1}》	朗诵诗作《{1}》		FUN_1400ac470 表演片段；{1} 作品名；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 reciting the poem {1}	朗誦詩作《{1}》	朗诵诗作《{1}》		FUN_1400ac470 表演片段；{1} 作品名
 improvised music, {1}	即興演奏《{1}》	即兴演奏《{1}》		FUN_1400ac470 表演片段；{1} 曲式名（FUN_140a946e0）
+the musical composition {$1}	演奏樂曲《{1}》	演奏乐曲《{1}》		FUN_1400ac470 表演片段；{1} 作品名；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 the musical composition {1}	演奏樂曲《{1}》	演奏乐曲《{1}》		FUN_1400ac470 表演片段；{1} 作品名
 an improvised dance, {1}	即興跳《{1}》	即兴跳《{1}》		FUN_1400ac470 表演片段；{1} 舞式名（FUN_140a946e0）
 a sermon on {1}	以{1}為題講道	以{1}为题讲道		FUN_1400ac470 表演片段；{1} 神祇領域名（FUN_140756690，strings 在 speech_01）、人名（FUN_140b92f10）或價值觀片語（下列）
@@ -53,6 +61,7 @@ The music enters {%1} and {%2}.	音樂進入{1}和{2}。	音乐进入{1}和{2}�
 The music enters {%1}.	音樂進入{1}。	音乐进入{1}。		FUN_1400ac470 L106603 樂曲進入新段落
 The dance enters a new section with {%1} and {%2}.	舞蹈進入包含{1}和{2}的新段落。	舞蹈进入包含{1}和{2}的新段落。		FUN_1400ac470 L106603 舞蹈進入新段落
 The dance enters a new section with {%1}.	舞蹈進入包含{1}的新段落。	舞蹈进入包含{1}的新段落。		FUN_1400ac470 L106603 舞蹈進入新段落
+You've learned {$1}.	你學會了《{1}》。	你学会了《{1}》。		FUN_1400ac470 L107314 冒險模式從表演學會作品；{1} 作品名；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 You've learned {1}.	你學會了《{1}》。	你学会了《{1}》。		FUN_1400ac470 L107314 冒險模式從表演學會作品；{1} 作品名
 You feel like you know the basic rules of {1} now.	你覺得自己現在懂得《{1}》的基本規則了。	你觉得自己现在懂得《{1}》的基本规则了。		FUN_1400ac470 L107359／107381／107403 學會詩體／曲式／舞式；{1} 形式名
 {1} mumbles, having completely forgotten the words.	{1}含糊地念著，詞句全忘光了。	{1}含糊地念着，词句全忘光了。		FUN_1400b1bf0 L108717 朗誦品質；{1} 生物稱呼

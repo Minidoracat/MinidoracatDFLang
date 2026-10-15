@@ -41,9 +41,12 @@ I just don't understand {%1}.	我就是搞不懂{1}。	我就是搞不懂{1}。	
 I've been mulling over {%1}.	我一直在琢磨{1}。	我一直在琢磨{1}。		FUN_14066fe50 case 0xb9：{1} 知識主題
 I've been discussing {%1}.	我一直在討論{1}。	我一直在讨论{1}。		FUN_14066fe50 case 0xba：{1} 知識主題
 I learned about {%1}.	我學了一些{1}的知識。	我学了一些{1}的知识。		FUN_14066fe50 case 0xbf/0xc0：{1} 知識主題或技能名；須排在 I learned {1}. 前
+I learned {$1}.	我學會了{1}。	我学会了{1}。		FUN_14066fe50 case 0xc1-0xc5：{1} 書名、秘密名、詩歌／音樂／舞蹈形式名；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 I learned {1}.	我學會了{1}。	我学会了{1}。		FUN_14066fe50 case 0xc1-0xc5：{1} 書名、秘密名、詩歌／音樂／舞蹈形式名
 I taught {%1}.	我教了{1}。	我教了{1}。		FUN_14066fe50 case 0xc6/0xc7：{1} 知識主題或技能名
+I read {$1}.	我讀了{1}。	我读了{1}。		FUN_14066fe50 case 0xc8：{1} 書名或 an untitled composition；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 I read {1}.	我讀了{1}。	我读了{1}。		FUN_14066fe50 case 0xc8：{1} 書名或 an untitled composition
+I wrote {$1}.	我寫了{1}。	我写了{1}。		FUN_14066fe50 case 0xc9：{1} 書名或 an untitled composition；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 I wrote {1}.	我寫了{1}。	我写了{1}。		FUN_14066fe50 case 0xc9：{1} 書名或 an untitled composition
 I can now reside in {1}.	我現在可以住在{1}了。	我现在可以住在{1}了。		FUN_14066fe50 case 0xca：{1} 地名
 I am now part of {1}.	我現在是{1}的一員了。	我现在是{1}的一员了。		FUN_14066fe50 case 0xcb：{1} 勢力名

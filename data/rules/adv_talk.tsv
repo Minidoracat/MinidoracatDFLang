@@ -117,46 +117,85 @@ the reunion of {1} and {2}	{1}與{2}的重逢	{1}与{2}的重逢	inner	FUN_14069
 your demand of submission from {1}	你要求{1}臣服	你要求{1}臣服	inner	FUN_140697740 L918716 事件 demand of submission
 your self-identification to {1}	你向{1}表明身分	你向{1}表明身份	inner	FUN_140697740 L918963 事件 self-identification：{1} 文明名
 your refusal to identify to {1}	你拒絕向{1}表明身分	你拒绝向{1}表明身份	inner	FUN_140697740 L919001 事件 refusal to identify
+your possession of {$1} in {2} in {3}	你在{3}的{2}持有{1}	你在{3}的{2}持有{1}	inner	FUN_140697740 L918777–918848／L919547–919618 事件 artifact／written work（L918884）：{A} 神器或作品名；in 地點（in 建築 in 據點時先寫）；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 your possession of {1} in {2} in {3}	你在{3}的{2}持有{1}	你在{3}的{2}持有{1}	inner	FUN_140697740 L918777–918848／L919547–919618 事件 artifact／written work（L918884）：{A} 神器或作品名；in 地點（in 建築 in 據點時先寫）
+your possession of {$1} in {2}	你在{2}持有{1}	你在{2}持有{1}	inner	FUN_140697740 L918777–918848／L919547–919618 事件 artifact／written work（L918884）：{A} 神器或作品名；in 地點（in 建築 in 據點時先寫）；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 your possession of {1} in {2}	你在{2}持有{1}	你在{2}持有{1}	inner	FUN_140697740 L918777–918848／L919547–919618 事件 artifact／written work（L918884）：{A} 神器或作品名；in 地點（in 建築 in 據點時先寫）
+your possession of {$1}	你持有{1}	你持有{1}	inner	FUN_140697740 L918777–918848／L919547–919618 事件 artifact／written work（L918884）：{A} 神器或作品名；in 地點（in 建築 in 據點時先寫）；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 your possession of {1}	你持有{1}	你持有{1}	inner	FUN_140697740 L918777–918848／L919547–919618 事件 artifact／written work（L918884）：{A} 神器或作品名；in 地點（in 建築 in 據點時先寫）
+your placement of {$1} in {2} in {3}	你在{3}的{2}安放{1}	你在{3}的{2}安放{1}	inner	FUN_140697740 L918777–918848／L919547–919618 事件 artifact／written work（L918884）：{A} 神器或作品名；in 地點（in 建築 in 據點時先寫）；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 your placement of {1} in {2} in {3}	你在{3}的{2}安放{1}	你在{3}的{2}安放{1}	inner	FUN_140697740 L918777–918848／L919547–919618 事件 artifact／written work（L918884）：{A} 神器或作品名；in 地點（in 建築 in 據點時先寫）
+your placement of {$1} in {2}	你在{2}安放{1}	你在{2}安放{1}	inner	FUN_140697740 L918777–918848／L919547–919618 事件 artifact／written work（L918884）：{A} 神器或作品名；in 地點（in 建築 in 據點時先寫）；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 your placement of {1} in {2}	你在{2}安放{1}	你在{2}安放{1}	inner	FUN_140697740 L918777–918848／L919547–919618 事件 artifact／written work（L918884）：{A} 神器或作品名；in 地點（in 建築 in 據點時先寫）
+your placement of {$1}	你安放{1}	你安放{1}	inner	FUN_140697740 L918777–918848／L919547–919618 事件 artifact／written work（L918884）：{A} 神器或作品名；in 地點（in 建築 in 據點時先寫）；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 your placement of {1}	你安放{1}	你安放{1}	inner	FUN_140697740 L918777–918848／L919547–919618 事件 artifact／written work（L918884）：{A} 神器或作品名；in 地點（in 建築 in 據點時先寫）
+your gaining of {$1} in {2} in {3}	你在{3}的{2}取得{1}	你在{3}的{2}取得{1}	inner	FUN_140697740 L918777–918848／L919547–919618 事件 artifact／written work（L918884）：{A} 神器或作品名；in 地點（in 建築 in 據點時先寫）；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 your gaining of {1} in {2} in {3}	你在{3}的{2}取得{1}	你在{3}的{2}取得{1}	inner	FUN_140697740 L918777–918848／L919547–919618 事件 artifact／written work（L918884）：{A} 神器或作品名；in 地點（in 建築 in 據點時先寫）
+your gaining of {$1} in {2}	你在{2}取得{1}	你在{2}取得{1}	inner	FUN_140697740 L918777–918848／L919547–919618 事件 artifact／written work（L918884）：{A} 神器或作品名；in 地點（in 建築 in 據點時先寫）；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 your gaining of {1} in {2}	你在{2}取得{1}	你在{2}取得{1}	inner	FUN_140697740 L918777–918848／L919547–919618 事件 artifact／written work（L918884）：{A} 神器或作品名；in 地點（in 建築 in 據點時先寫）
+your gaining of {$1}	你取得{1}	你取得{1}	inner	FUN_140697740 L918777–918848／L919547–919618 事件 artifact／written work（L918884）：{A} 神器或作品名；in 地點（in 建築 in 據點時先寫）；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 your gaining of {1}	你取得{1}	你取得{1}	inner	FUN_140697740 L918777–918848／L919547–919618 事件 artifact／written work（L918884）：{A} 神器或作品名；in 地點（in 建築 in 據點時先寫）
+your giving of {$1} to {2} in {3} in {4}	你在{4}的{3}將{1}交給{2}	你在{4}的{3}把{1}交给{2}	inner	FUN_140697740 L918777–918848／L919547–919618 事件 artifact／written work（L918884）：{A} 神器或作品名；in 地點（in 建築 in 據點時先寫）；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 your giving of {1} to {2} in {3} in {4}	你在{4}的{3}將{1}交給{2}	你在{4}的{3}把{1}交给{2}	inner	FUN_140697740 L918777–918848／L919547–919618 事件 artifact／written work（L918884）：{A} 神器或作品名；in 地點（in 建築 in 據點時先寫）
+your giving of {$1} to {2} in {3}	你在{3}將{1}交給{2}	你在{3}把{1}交给{2}	inner	FUN_140697740 L918777–918848／L919547–919618 事件 artifact／written work（L918884）：{A} 神器或作品名；in 地點（in 建築 in 據點時先寫）；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 your giving of {1} to {2} in {3}	你在{3}將{1}交給{2}	你在{3}把{1}交给{2}	inner	FUN_140697740 L918777–918848／L919547–919618 事件 artifact／written work（L918884）：{A} 神器或作品名；in 地點（in 建築 in 據點時先寫）
+your giving of {$1} to {2}	你將{1}交給{2}	你把{1}交给{2}	inner	FUN_140697740 L918777–918848／L919547–919618 事件 artifact／written work（L918884）：{A} 神器或作品名；in 地點（in 建築 in 據點時先寫）；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 your giving of {1} to {2}	你將{1}交給{2}	你把{1}交给{2}	inner	FUN_140697740 L918777–918848／L919547–919618 事件 artifact／written work（L918884）：{A} 神器或作品名；in 地點（in 建築 in 據點時先寫）
+your refusal to give {$1} to {2} in {3} in {4}	你在{4}的{3}拒絕將{1}交給{2}	你在{4}的{3}拒绝把{1}交给{2}	inner	FUN_140697740 L918777–918848／L919547–919618 事件 artifact／written work（L918884）：{A} 神器或作品名；in 地點（in 建築 in 據點時先寫）；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 your refusal to give {1} to {2} in {3} in {4}	你在{4}的{3}拒絕將{1}交給{2}	你在{4}的{3}拒绝把{1}交给{2}	inner	FUN_140697740 L918777–918848／L919547–919618 事件 artifact／written work（L918884）：{A} 神器或作品名；in 地點（in 建築 in 據點時先寫）
+your refusal to give {$1} to {2} in {3}	你在{3}拒絕將{1}交給{2}	你在{3}拒绝把{1}交给{2}	inner	FUN_140697740 L918777–918848／L919547–919618 事件 artifact／written work（L918884）：{A} 神器或作品名；in 地點（in 建築 in 據點時先寫）；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 your refusal to give {1} to {2} in {3}	你在{3}拒絕將{1}交給{2}	你在{3}拒绝把{1}交给{2}	inner	FUN_140697740 L918777–918848／L919547–919618 事件 artifact／written work（L918884）：{A} 神器或作品名；in 地點（in 建築 in 據點時先寫）
+your refusal to give {$1} to {2}	你拒絕將{1}交給{2}	你拒绝把{1}交给{2}	inner	FUN_140697740 L918777–918848／L919547–919618 事件 artifact／written work（L918884）：{A} 神器或作品名；in 地點（in 建築 in 據點時先寫）；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 your refusal to give {1} to {2}	你拒絕將{1}交給{2}	你拒绝把{1}交给{2}	inner	FUN_140697740 L918777–918848／L919547–919618 事件 artifact／written work（L918884）：{A} 神器或作品名；in 地點（in 建築 in 據點時先寫）
+the telling of the story of {$1} at {2}	在{2}講述{1}故事的那場表演	在{2}讲述{1}故事的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：結尾 at {2} 是場所名；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 the telling of the story of {1} at {2}	在{2}講述{1}故事的那場表演	在{2}讲述{1}故事的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：結尾 at {2} 是場所名
+the telling of the story of {$1}	講述{1}故事的那場表演	讲述{1}故事的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：{1} 作品名或 history／a poem／music／dance、講道主題；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 the telling of the story of {1}	講述{1}故事的那場表演	讲述{1}故事的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：{1} 作品名或 history／a poem／music／dance、講道主題
+your telling of the story of {$1} at {2}	你在{2}講述{1}故事的那場表演	你在{2}讲述{1}故事的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：結尾 at {2} 是場所名；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 your telling of the story of {1} at {2}	你在{2}講述{1}故事的那場表演	你在{2}讲述{1}故事的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：結尾 at {2} 是場所名
+your telling of the story of {$1}	你講述{1}故事的那場表演	你讲述{1}故事的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：{1} 作品名或 history／a poem／music／dance、講道主題；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 your telling of the story of {1}	你講述{1}故事的那場表演	你讲述{1}故事的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：{1} 作品名或 history／a poem／music／dance、講道主題
+the recitation of {$1} at {2}	在{2}朗誦{1}的那場表演	在{2}朗诵{1}的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：結尾 at {2} 是場所名；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 the recitation of {1} at {2}	在{2}朗誦{1}的那場表演	在{2}朗诵{1}的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：結尾 at {2} 是場所名
+the recitation of {$1}	朗誦{1}的那場表演	朗诵{1}的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：{1} 作品名或 history／a poem／music／dance、講道主題；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 the recitation of {1}	朗誦{1}的那場表演	朗诵{1}的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：{1} 作品名或 history／a poem／music／dance、講道主題
+your recitation of {$1} at {2}	你在{2}朗誦{1}的那場表演	你在{2}朗诵{1}的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：結尾 at {2} 是場所名；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 your recitation of {1} at {2}	你在{2}朗誦{1}的那場表演	你在{2}朗诵{1}的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：結尾 at {2} 是場所名
+your recitation of {$1}	你朗誦{1}的那場表演	你朗诵{1}的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：{1} 作品名或 history／a poem／music／dance、講道主題；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 your recitation of {1}	你朗誦{1}的那場表演	你朗诵{1}的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：{1} 作品名或 history／a poem／music／dance、講道主題
+the performance of {$1} at {2}	在{2}{1}的那場表演	在{2}{1}的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：結尾 at {2} 是場所名；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 the performance of {1} at {2}	在{2}{1}的那場表演	在{2}{1}的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：結尾 at {2} 是場所名
+the performance of {$1}	{1}的那場表演	{1}的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：{1} 作品名或 history／a poem／music／dance、講道主題；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 the performance of {1}	{1}的那場表演	{1}的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：{1} 作品名或 history／a poem／music／dance、講道主題
+your performance of {$1} at {2}	你在{2}表演{1}的那場演出	你在{2}表演{1}的那场演出	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：結尾 at {2} 是場所名；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 your performance of {1} at {2}	你在{2}表演{1}的那場演出	你在{2}表演{1}的那场演出	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：結尾 at {2} 是場所名
+your performance of {$1}	你表演{1}的那場演出	你表演{1}的那场演出	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：{1} 作品名或 history／a poem／music／dance、講道主題；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 your performance of {1}	你表演{1}的那場演出	你表演{1}的那场演出	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：{1} 作品名或 history／a poem／music／dance、講道主題
+your singing of {$1} at {2}	你在{2}演唱{1}的那場表演	你在{2}演唱{1}的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：結尾 at {2} 是場所名；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 your singing of {1} at {2}	你在{2}演唱{1}的那場表演	你在{2}演唱{1}的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：結尾 at {2} 是場所名
+your singing of {$1}	你演唱{1}的那場表演	你演唱{1}的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：{1} 作品名或 history／a poem／music／dance、講道主題；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 your singing of {1}	你演唱{1}的那場表演	你演唱{1}的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：{1} 作品名或 history／a poem／music／dance、講道主題
+your playing of {$1} at {2}	你在{2}演奏{1}的那場表演	你在{2}演奏{1}的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：結尾 at {2} 是場所名；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 your playing of {1} at {2}	你在{2}演奏{1}的那場表演	你在{2}演奏{1}的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：結尾 at {2} 是場所名
+your playing of {$1}	你演奏{1}的那場表演	你演奏{1}的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：{1} 作品名或 history／a poem／music／dance、講道主題；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 your playing of {1}	你演奏{1}的那場表演	你演奏{1}的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：{1} 作品名或 history／a poem／music／dance、講道主題
+your speaking of {$1} at {2}	你在{2}朗讀{1}的那場表演	你在{2}朗读{1}的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：結尾 at {2} 是場所名；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 your speaking of {1} at {2}	你在{2}朗讀{1}的那場表演	你在{2}朗读{1}的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：結尾 at {2} 是場所名
+your speaking of {$1}	你朗讀{1}的那場表演	你朗读{1}的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：{1} 作品名或 history／a poem／music／dance、講道主題；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 your speaking of {1}	你朗讀{1}的那場表演	你朗读{1}的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：{1} 作品名或 history／a poem／music／dance、講道主題
+your chanting of {$1} at {2}	你在{2}吟誦{1}的那場表演	你在{2}吟诵{1}的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：結尾 at {2} 是場所名；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 your chanting of {1} at {2}	你在{2}吟誦{1}的那場表演	你在{2}吟诵{1}的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：結尾 at {2} 是場所名
+your chanting of {$1}	你吟誦{1}的那場表演	你吟诵{1}的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：{1} 作品名或 history／a poem／music／dance、講道主題；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 your chanting of {1}	你吟誦{1}的那場表演	你吟诵{1}的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：{1} 作品名或 history／a poem／music／dance、講道主題
+your dancing of {$1} at {2}	你在{2}跳{1}的那場表演	你在{2}跳{1}的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：結尾 at {2} 是場所名；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 your dancing of {1} at {2}	你在{2}跳{1}的那場表演	你在{2}跳{1}的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：結尾 at {2} 是場所名
+your dancing of {$1}	你跳{1}的那場表演	你跳{1}的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：{1} 作品名或 history／a poem／music／dance、講道主題；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 your dancing of {1}	你跳{1}的那場表演	你跳{1}的那场表演	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：{1} 作品名或 history／a poem／music／dance、講道主題
 the sermon on {1} at {2}	在{2}以{1}為題的講道	在{2}以{1}为题的布道	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：結尾 at {2} 是場所名
+the sermon on {$1}	以{1}為題的講道	以{1}为题的布道	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：{1} 作品名或 history／a poem／music／dance、講道主題；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 the sermon on {1}	以{1}為題的講道	以{1}为题的布道	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：{1} 作品名或 history／a poem／music／dance、講道主題
 your sermon on {1} at {2}	你在{2}以{1}為題的講道	你在{2}以{1}为题的布道	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：結尾 at {2} 是場所名
+your sermon on {$1}	你以{1}為題的講道	你以{1}为题的布道	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：{1} 作品名或 history／a poem／music／dance、講道主題；書名用詞版：{$1} 收作品標題，書名用詞優先於一般字典（Floating Bodies 是浮體不是飄渺身體），排在原句前；不是書名（神器名、an untitled work…）時照下一條原句
 your sermon on {1}	你以{1}為題的講道	你以{1}为题的布道	inner	FUN_140697740 FUN_14065f420 表演事件（L918738 Bring up 的 case 6）：{1} 作品名或 history／a poem／music／dance、講道主題
 {1}'s march	{1}的進軍	{1}的进军	inner	FUN_140697740 L919028／L919995 傳聞：沒有目的地時
 the abduction of {1}	{1}遭到綁架	{1}遭到绑架	inner	FUN_140697740 L919056 傳聞 1

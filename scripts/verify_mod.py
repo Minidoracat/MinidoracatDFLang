@@ -7,14 +7,15 @@
 1. data/strings/*.tsv（整句）、data/rules/*.tsv（句型）與 data/screens/*.tsv（依畫面套用的整句，檔名是畫面）：
    欄位 en, zh-Hant, zh-Hans, align, note（screens 在 align 後多一欄 row：限定第幾列，空白或非負整數）；
    原文能用 CP437 表示（遊戲只會畫 CP437），同一類不重複（screens 是同一個畫面檔裡不重複）；align 只能是空、c、r（句型與字串另可寫 inner：只用在佔位裡；
-   tail：事件句尾的原因片語，引擎去掉再翻）；data/rules/_events.tsv、zz_events.tsv 與 data/events 一致（由 scripts/gen_events.py 產生）；
+   tail：事件句尾的原因片語，引擎去掉再翻；字串另可寫 title：書名用詞，只給書名句型的 {$n} 用，自成一類）；data/rules/_events.tsv、zz_events.tsv 與 data/events 一致（由 scripts/gen_events.py 產生）；
    screens 的檔名只用英數、底線、點
-2. 句型佔位：原文至少一個 {1}～{9}、每個只出現一次、不能相鄰；樣板要有英文字、限定佔位（{#n}、{@n}、{%n}）或頭尾固定字，
+2. 句型佔位：原文至少一個 {1}～{9}、每個只出現一次、不能相鄰；樣板要有英文字、限定佔位（{#n}、{@n}、{%n}，書名的 {$n}、{&n}、{=n}）或頭尾固定字，
    否則會套到幾乎所有字串；兩種譯文用的佔位都是原文有的、各最多一次，除了 {@n} 都要用到
 3. 繁簡同步：同一條兩欄同時有譯文或同時留空（繁簡分開翻，但兩包要涵蓋同一批句子）
-4. 開頭空白：譯文開頭的空白數與原文相同（那是遊戲的縮排）；只套在佔位裡的 inner 句型不算（不會單獨畫出）
+4. 開頭空白：譯文開頭的空白數與原文相同（那是遊戲的縮排）；只套在佔位裡的 inner 句型與書名用詞（title）不算（不會單獨畫出）；
+   置中（align c）的不算：引擎會重新置中，中文字兩格寬、原文格數是單數時多半格只能偏一邊，可以用開頭空白往右挪一格
 5. 寬度：譯文格數不超過原文（CP437 字一格，其他字兩格），超出會蓋到旁邊的介面；句型只算樣板本身，
-   佔位填入後超寬的情況由引擎在執行時退回英文；align 寫 inner 的只接進佔位、不單獨畫，不限。名稱檔（strings/names_*.tsv）至少可用 6 格：
+   佔位填入後超寬的情況由引擎在執行時退回英文；align 寫 inner、title 的只接進佔位、不單獨畫，不限。名稱檔（strings/names_*.tsv）至少可用 6 格：
    短英文名（ogre、hydra、kiwi）的通行中文名多半是三個字。sentences_*、ann_*、speech_*、combat_*、desc_*、health_*、事件句（_events、zz_events、events_*）不限：
    人物頁、訪客說明、公告、說話句、戰報、外觀與健康、傳說模式的段落由引擎依框寬重新換行
 6. 文字檔 UTF-8、無 BOM、LF（遊戲端逐位元組讀，BOM 與 \\r 會黏進原文或譯文）
@@ -43,8 +44,8 @@ HOOKS = ("addst", "addst_flag", "top_addst", "addcoloredst", "mtb_set_width", "a
          "ctb_add_string", "translate_name", "string_resize", "adv_appearance", "adv_personality", "adv_log", "adv_talk_log")
 PACKAGE_SUFFIXES = {".txt", ".tsv", ".lua", ".dll", ".otf", ".md", ".png"}
 # {1}～{9}；{#1} 只收數字、{@1} 只收字典裡的字詞、{%1} 只收翻得出來的片段、{~1} 同 {1} 但譯文可省略、{^1} 只收大寫開頭的名字；
-# 譯文可寫 {1+時}（佔位譯文沒有時間、原因助詞結尾時補字）
-PLACEHOLDER = re.compile(r"\{[#@%~^]?([1-9])(?:\+([^{}]+))?\}")
+# 書名句型的 {$1} 收書名的主題、{&1}、{=1} 收 raws 字表的名詞、形容詞；譯文可寫 {1+時}（佔位譯文沒有時間、原因助詞結尾時補字）
+PLACEHOLDER = re.compile(r"\{[#@%~^$&=]?([1-9])(?:\+([^{}]+))?\}")
 MARKUP = re.compile(r"\[(?:[RBP]|C:\d+:\d+:\d+)\]")  # 段落的換行與換色標記
 # 由引擎依框寬重新換行的檔案（檔名開頭）：譯文寬度不限
 WRAPPED = ("sentences_", "ann_", "speech_", "combat_", "desc_", "health_", "_events", "zz_events", "events_", "legends_", "zz_legends_",
@@ -75,13 +76,13 @@ def placeholder_problem(r: dict, langs: list[str]) -> str | None:
         return "原文佔位不能帶補字（+…）"
     if len(set(en)) != len(en):
         return "原文佔位重複"
-    if re.search(r"\{[#@%~^]?[1-9]\}\{[#@%~^]?[1-9]\}", r["en"]):
+    if re.search(r"\{[#@%~^$&=]?[1-9]\}\{[#@%~^$&=]?[1-9]\}", r["en"]):
         return "原文佔位相鄰"
     # 只有空白、標點夾著佔位的樣板（{1} {2}、{1}, {2}）會套到幾乎所有字串。有英文字、有限定佔位
     # （{#n} 只收數字、{@n} 只收字典字詞、{%n} 只收翻得出來的片段），或開頭、結尾是固定字（外框 -{1}-、後綴 {1}, ♂）時，套得到的字串有限
     lits = PLACEHOLDER.split(r["en"])  # 佔位前後的固定字；只有空白不算（` {1} {2}` 一樣會套到幾乎所有字串）
     edges = bool(lits[0].strip() or lits[-1].strip())
-    if not re.search(r"[A-Za-z]", template(r["en"])) and not re.search(r"\{[#@%^][1-9]\}", r["en"]) and not edges:
+    if not re.search(r"[A-Za-z]", template(r["en"])) and not re.search(r"\{[#@%^$&=][1-9]\}", r["en"]) and not edges:
         return "原文樣板沒有英文字、限定佔位或頭尾固定字，會套到幾乎所有字串"
     # 譯文每個佔位最多一次、都要是原文有的；原文的佔位除了 {@n}、{~n} 都要用到（中文常省略重複的代名詞主詞、攻擊者自己的部位的主人）
     optional = set(re.findall(r"\{[@~]([1-9])\}", r["en"]))
@@ -128,7 +129,7 @@ def main() -> int:
     dupes, bad_src, bad_align = [], [], []
     for r in rows:
         kind = r["file"].split("/")[0]
-        key = (r["file"] if kind == "screens" else kind, r["en"], r["align"] == "tail")  # tail 片語自成一類（引擎另外存）
+        key = (r["file"] if kind == "screens" else kind, r["en"], r["align"] if r["align"] in ("tail", "title") else "")  # tail 片語、書名用詞自成一類（引擎另外存）
         first = seen.get(key)
         # 同一條句型一份只給佔位用（inner）、一份整句也用，譯文相同時不衝突（傳說事件短語與冒險日誌標題共用）
         same_rule = first is not None and kind == "rules" and (first["align"] == "inner") != (r["align"] == "inner") \
@@ -138,7 +139,8 @@ def main() -> int:
         seen.setdefault(key, r)
         if not r["en"] or not encodable(r["en"]):
             bad_src.append(f"{r['file']}: {r['en']!r}")
-        if r["align"] not in ("", "c", "r") and not (kind in ("rules", "strings") and r["align"] in ("inner", "tail")):
+        if r["align"] not in ("", "c", "r") and not (kind in ("rules", "strings") and r["align"] in ("inner", "tail")) \
+                and not (kind == "strings" and r["align"] == "title"):
             bad_align.append(f"{r['file']}: {r['en']!r} align={r['align']!r}")
     check(not dupes, "原文不重複", dupes)
     check(not bad_src, "原文能用 CP437 表示", bad_src)
@@ -153,12 +155,12 @@ def main() -> int:
     unpaired = [f"{r['file']}: {r['en']!r}" for r in rows if bool(r["zh-Hant"].strip()) != bool(r["zh-Hans"].strip())]
     check(not unpaired, "繁簡兩欄同時有譯文或同時留空", unpaired)
     indent = [f"{r['file']}: {r['en']!r} [{lang}]" for r in rows for lang in langs
-              if r[lang] and r.get("align") != "inner" and leading_spaces(r[lang]) != leading_spaces(r["en"])]
-    check(not indent, "譯文開頭空白與原文相同（inner 句型除外）", indent)
+              if r[lang] and r.get("align") not in ("inner", "title", "c") and leading_spaces(r[lang]) != leading_spaces(r["en"])]
+    check(not indent, "譯文開頭空白與原文相同（inner、置中除外）", indent)
     def room(r: dict) -> int | None:
         """譯文最多幾格；None 是不限：WRAPPED 開頭的檔案由引擎依框寬重新換行；inner 只接進句型的佔位，不單獨畫；
         note 寫「寬度例外」的條目已在實機確認右邊有空位（欄名「Adv」只有 3 格，「冒險」要 4 格）"""
-        if r["file"].split("/")[1].startswith(WRAPPED) or r.get("align") == "inner" or "寬度例外" in (r.get("note") or ""):
+        if r["file"].split("/")[1].startswith(WRAPPED) or r.get("align") in ("inner", "title") or "寬度例外" in (r.get("note") or ""):
             return None
         en = cells(template(r["en"]))
         return max(en, 6) if r["file"].startswith("strings/names_") else en

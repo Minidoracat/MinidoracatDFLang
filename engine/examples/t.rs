@@ -39,6 +39,27 @@ fn engine_tsv(dir: &Path, lang: &str) -> String {
     out
 }
 
+/// data/names/*.tsv（欄位 word, pos, en, zh-Hant, zh-Hans, note）換成引擎讀的「代號<TAB>詞性<TAB>譯文<TAB>英文詞形」（書名的隨機字要用）
+fn names_tsv(dir: &Path, lang: &str) -> String {
+    let mut files: Vec<_> = std::fs::read_dir(dir).expect("data/names 目錄").filter_map(|e| e.ok().map(|e| e.path())).collect();
+    files.retain(|p| p.extension().is_some_and(|x| x == "tsv"));
+    files.sort();
+    let mut out = String::new();
+    for path in files {
+        let content = std::fs::read_to_string(&path).expect("UTF-8 TSV");
+        let mut lines = content.lines();
+        let header: Vec<&str> = lines.next().unwrap_or("").split('\t').collect();
+        let col = |name: &str| header.iter().position(|h| *h == name);
+        let (Some(word), Some(pos), Some(en), Some(zh)) = (col("word"), col("pos"), col("en"), col(lang)) else { continue };
+        for line in lines {
+            let cells: Vec<&str> = line.split('\t').collect();
+            let get = |i: usize| cells.get(i).copied().unwrap_or("");
+            out.push_str(&format!("{}\t{}\t{}\t{}\n", get(word), get(pos), get(zh), get(en)));
+        }
+    }
+    out
+}
+
 /// 樣本裡的 `☺名稱☻` 換成引擎的連結記號 `☺序號☻`（見 dict::LINK_OPEN）：回傳記號化的原文與名稱。
 fn link_tokens(raw: &[u8]) -> (Vec<u8>, Vec<String>) {
     let mut key = Vec::with_capacity(raw.len());
@@ -70,6 +91,7 @@ fn main() {
     let data = Path::new(env!("CARGO_MANIFEST_DIR")).join("../data");
     let mut dict = Dict::default();
     dict.load_tsv(&engine_tsv(&data.join("strings"), &lang));
+    dflang::names::load_words(&names_tsv(&data.join("names"), &lang));
     let report = dict.load_rules_tsv(&engine_tsv(&data.join("rules"), &lang));
     if report.bad_source > 0 {
         eprintln!("警告：{} 條句型寫法不合規定，沒有載入", report.bad_source);
