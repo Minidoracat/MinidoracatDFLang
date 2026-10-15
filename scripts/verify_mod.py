@@ -6,7 +6,7 @@
 
 1. data/strings/*.tsv（整句）、data/rules/*.tsv（句型）與 data/screens/*.tsv（依畫面套用的整句，檔名是畫面）：
    欄位 en, zh-Hant, zh-Hans, align, note（screens 在 align 後多一欄 row：限定第幾列，空白或非負整數）；
-   原文能用 CP437 表示（遊戲只會畫 CP437），同一類不重複（screens 是同一個畫面檔裡不重複）；align 只能是空、c、r（句型另可寫 inner：只用在佔位裡）；
+   原文能用 CP437 表示（遊戲只會畫 CP437），同一類不重複（screens 是同一個畫面檔裡不重複）；align 只能是空、c、r（句型與字串另可寫 inner：只用在佔位裡）；
    screens 的檔名只用英數、底線、點
 2. 句型佔位：原文至少一個 {1}～{9}、每個只出現一次、不能相鄰；樣板要有英文字、限定佔位（{#n}、{@n}、{%n}）或頭尾固定字，
    否則會套到幾乎所有字串；兩種譯文用的佔位都是原文有的、各最多一次，除了 {@n} 都要用到
@@ -110,11 +110,11 @@ def main() -> int:
         seen.add(key)
         if not r["en"] or not encodable(r["en"]):
             bad_src.append(f"{r['file']}: {r['en']!r}")
-        if r["align"] not in ("", "c", "r") and not (kind == "rules" and r["align"] == "inner"):
+        if r["align"] not in ("", "c", "r") and not (kind in ("rules", "strings") and r["align"] == "inner"):
             bad_align.append(f"{r['file']}: {r['en']!r} align={r['align']!r}")
     check(not dupes, "原文不重複", dupes)
     check(not bad_src, "原文能用 CP437 表示", bad_src)
-    check(not bad_align, "align 只能是空、c、r（句型另可寫 inner）", bad_align)
+    check(not bad_align, "align 只能是空、c、r（句型與字串另可寫 inner）", bad_align)
     bad_ph = [f"{r['file']}: {r['en']!r} {p}" for r in data["rules"] if (p := placeholder_problem(r, langs))]
     check(not bad_ph, f"句型佔位寫法（{len(data['rules'])} 條）", bad_ph)
 

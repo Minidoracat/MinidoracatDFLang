@@ -1,0 +1,428 @@
+en	zh-Hant	zh-Hans	align	note
+one	一	一	inner	FUN_14052e360 英文數字字（詩歌形式的段數、音節數、行號）；two 作數量用「兩」
+two	兩	两	inner	FUN_14052e360 英文數字字（詩歌形式的段數、音節數、行號）；two 作數量用「兩」
+three	三	三	inner	FUN_14052e360 英文數字字（詩歌形式的段數、音節數、行號）；two 作數量用「兩」
+four	四	四	inner	FUN_14052e360 英文數字字（詩歌形式的段數、音節數、行號）；two 作數量用「兩」
+five	五	五	inner	FUN_14052e360 英文數字字（詩歌形式的段數、音節數、行號）；two 作數量用「兩」
+six	六	六	inner	FUN_14052e360 英文數字字（詩歌形式的段數、音節數、行號）；two 作數量用「兩」
+seven	七	七	inner	FUN_14052e360 英文數字字（詩歌形式的段數、音節數、行號）；two 作數量用「兩」
+eight	八	八	inner	FUN_14052e360 英文數字字（詩歌形式的段數、音節數、行號）；two 作數量用「兩」
+nine	九	九	inner	FUN_14052e360 英文數字字（詩歌形式的段數、音節數、行號）；two 作數量用「兩」
+ten	十	十	inner	FUN_14052e360 英文數字字（詩歌形式的段數、音節數、行號）；two 作數量用「兩」
+eleven	十一	十一	inner	FUN_14052e360 英文數字字（詩歌形式的段數、音節數、行號）；two 作數量用「兩」
+twelve	十二	十二	inner	FUN_14052e360 英文數字字（詩歌形式的段數、音節數、行號）；two 作數量用「兩」
+thirteen	十三	十三	inner	FUN_14052e360 英文數字字（詩歌形式的段數、音節數、行號）；two 作數量用「兩」
+fourteen	十四	十四	inner	FUN_14052e360 英文數字字（詩歌形式的段數、音節數、行號）；two 作數量用「兩」
+fifteen	十五	十五	inner	FUN_14052e360 英文數字字（詩歌形式的段數、音節數、行號）；two 作數量用「兩」
+sixteen	十六	十六	inner	FUN_14052e360 英文數字字（詩歌形式的段數、音節數、行號）；two 作數量用「兩」
+seventeen	十七	十七	inner	FUN_14052e360 英文數字字（詩歌形式的段數、音節數、行號）；two 作數量用「兩」
+eighteen	十八	十八	inner	FUN_14052e360 英文數字字（詩歌形式的段數、音節數、行號）；two 作數量用「兩」
+nineteen	十九	十九	inner	FUN_14052e360 英文數字字（詩歌形式的段數、音節數、行號）；two 作數量用「兩」
+twenty	二十	二十	inner	FUN_14052e360 英文數字字（整十）
+twenty-two	二十二	二十二	inner	FUN_14052e360 英文數字字；個位 two 不用「兩」
+thirty	三十	三十	inner	FUN_14052e360 英文數字字（整十）
+thirty-two	三十二	三十二	inner	FUN_14052e360 英文數字字；個位 two 不用「兩」
+forty	四十	四十	inner	FUN_14052e360 英文數字字（整十）
+forty-two	四十二	四十二	inner	FUN_14052e360 英文數字字；個位 two 不用「兩」
+fifty	五十	五十	inner	FUN_14052e360 英文數字字（整十）
+fifty-two	五十二	五十二	inner	FUN_14052e360 英文數字字；個位 two 不用「兩」
+sixty	六十	六十	inner	FUN_14052e360 英文數字字（整十）
+sixty-two	六十二	六十二	inner	FUN_14052e360 英文數字字；個位 two 不用「兩」
+seventy	七十	七十	inner	FUN_14052e360 英文數字字（整十）
+seventy-two	七十二	七十二	inner	FUN_14052e360 英文數字字；個位 two 不用「兩」
+eighty	八十	八十	inner	FUN_14052e360 英文數字字（整十）
+eighty-two	八十二	八十二	inner	FUN_14052e360 英文數字字；個位 two 不用「兩」
+ninety	九十	九十	inner	FUN_14052e360 英文數字字（整十）
+ninety-two	九十二	九十二	inner	FUN_14052e360 英文數字字；個位 two 不用「兩」
+a poetic narrative	一種敘事詩體	一种叙事诗体	inner	FUN_140e76400 2169951–2169980 詩歌形式的種類（基調＋poetic＋narrative/riddle/form）
+a dramatic poetic form	一種戲劇性的詩歌形式	一种戏剧性的诗歌形式	inner	FUN_140e76400 2169951–2169980 詩歌形式的種類（基調＋poetic＋narrative/riddle/form）
+a reflective poetic form	一種沉思性的詩歌形式	一种沉思性的诗歌形式	inner	FUN_140e76400 2169951–2169980 詩歌形式的種類（基調＋poetic＋narrative/riddle/form）
+a poetic riddle	一種詩謎	一种诗谜	inner	FUN_140e76400 2169951–2169980 詩歌形式的種類（基調＋poetic＋narrative/riddle/form）
+a ribald poetic form	一種粗鄙詼諧的詩歌形式	一种粗鄙诙谐的诗歌形式	inner	FUN_140e76400 2169951–2169980 詩歌形式的種類（基調＋poetic＋narrative/riddle/form）
+a light poetic form	一種輕鬆明快的詩歌形式	一种轻松明快的诗歌形式	inner	FUN_140e76400 2169951–2169980 詩歌形式的種類（基調＋poetic＋narrative/riddle/form）
+a solemn poetic form	一種莊嚴的詩歌形式	一种庄严的诗歌形式	inner	FUN_140e76400 2169951–2169980 詩歌形式的種類（基調＋poetic＋narrative/riddle/form）
+a poetic form	一種詩歌形式	一种诗歌形式	inner	FUN_140e76400 2169951–2169980 詩歌形式的種類（基調＋poetic＋narrative/riddle/form）
+to renounce	表示棄絕	表示弃绝	inner	FUN_140e76400 2170007 用意 to renounce（沒有主題）
+to beseech	表示懇求	表示恳求	inner	FUN_140e76400 2170044 用意 to beseech（沒有主題）
+a chosen subject	所選的主題	所选的主题	inner	FUN_140e76400 2170048 用意的受詞（沒有指定主題）
+the subject of the poem	詩的主題	诗的主题	inner	FUN_140e76400 2171779 段落／詩行用意的受詞（沒有指定主題）
+to amuse the audience	娛樂聽眾	娱乐听众	inner	FUN_140e76400 2170001／2171704 用意（不及物）
+to make an apology	表達歉意	表达歉意	inner	FUN_140e76400 2170001／2171704 用意（不及物）
+to teach a moral lesson	傳達道德教訓	传达道德教训	inner	FUN_140e76400 2170001／2171704 用意（不及物）
+to make an assertion	提出主張	提出主张	inner	FUN_140e76400 2170001／2171704 用意（不及物）
+to make a counter-assertion	提出反論	提出反论	inner	FUN_140e76400 2170001／2171704 用意（不及物）
+to make a concession	做出讓步	做出让步	inner	FUN_140e76400 2170001／2171704 用意（不及物）
+to synthesize previous ideas	綜合先前的想法	综合先前的想法	inner	FUN_140e76400 2170001／2171704 用意（不及物）
+to develop the previous idea	發展前一個想法	发展前一个想法	inner	FUN_140e76400 2170001／2171704 用意（不及物）
+to invert the previous assertion	翻轉前一個主張	翻转前一个主张	inner	FUN_140e76400 2170001／2171704 用意（不及物）
+to undercut the previous assertion	削弱前一個主張	削弱前一个主张	inner	FUN_140e76400 2170001／2171704 用意（不及物）
+to move away from previous ideas	擺脫先前的想法	摆脱先前的想法	inner	FUN_140e76400 2170001／2171704 用意（不及物）
+to reflect on previous ideas	反思先前的想法	反思先前的想法	inner	FUN_140e76400 2170001／2171704 用意（不及物）
+to console the audience	安慰聽眾	安慰听众	inner	FUN_140e76400 2170001／2171704 用意（不及物）
+to refuse consolation	拒絕安慰	拒绝安慰	inner	FUN_140e76400 2170001／2171704 用意（不及物）
+to offer a different perspective	提供不同的觀點	提供不同的观点	inner	FUN_140e76400 2170001／2171704 用意（不及物）
+the past	過去	过去	inner	FUN_140e76080 2169670 詩歌形式的主題（religion、nature、family、war、mining、death 字典已有）
+current events	時事	时事	inner	FUN_140e76080 2169670 詩歌形式的主題（religion、nature、family、war、mining、death 字典已有）
+the future	未來	未来	inner	FUN_140e76080 2169670 詩歌形式的主題（religion、nature、family、war、mining、death 字典已有）
+someone recently deceased	某位新近過世的人	某位新近过世的人	inner	FUN_140e76080 2169670 詩歌形式的主題（religion、nature、family、war、mining、death 字典已有）
+someone recently retired	某位新近退休的人	某位新近退休的人	inner	FUN_140e76080 2169670 詩歌形式的主題（religion、nature、family、war、mining、death 字典已有）
+a specific place	某個特定地點	某个特定地点	inner	FUN_140e76080 2169670 詩歌形式的主題（religion、nature、family、war、mining、death 字典已有）
+a specific wilderness region	某片特定的荒野地區	某片特定的荒野地区	inner	FUN_140e76080 2169670 詩歌形式的主題（religion、nature、family、war、mining、death 字典已有）
+alcoholic beverages	酒類飲品	酒类饮品	inner	FUN_140e76080 2169670 詩歌形式的主題（religion、nature、family、war、mining、death 字典已有）
+a journey	旅程	旅程	inner	FUN_140e76080 2169670 詩歌形式的主題（religion、nature、family、war、mining、death 字典已有）
+the hunt	狩獵	狩猎	inner	FUN_140e76080 2169670 詩歌形式的主題（religion、nature、family、war、mining、death 字典已有）
+immortality	永生	永生	inner	FUN_140e76080 2169670 詩歌形式的主題（religion、nature、family、war、mining、death 字典已有）
+someone's character	某人的品格	某人的品格	inner	FUN_140e76080 2169670 詩歌形式的主題（religion、nature、family、war、mining、death 字典已有）
+a historical figure	某位歷史人物	某位历史人物	inner	FUN_140e76080 2169670 詩歌形式的主題（religion、nature、family、war、mining、death 字典已有）
+the concept of death	死亡這個概念	死亡这个概念	inner	FUN_140e76080 2169670 詩歌形式的主題（religion、nature、family、war、mining、death 字典已有）
+the concept of family	家庭這個概念	家庭这个概念	inner	FUN_140e76080 2169670 詩歌形式的主題（religion、nature、family、war、mining、death 字典已有）
+the concept of hunting	狩獵這個概念	狩猎这个概念	inner	FUN_140e76080 2169670 詩歌形式的主題（religion、nature、family、war、mining、death 字典已有）
+the concept of nature	自然這個概念	自然这个概念	inner	FUN_140e76080 2169670 詩歌形式的主題（religion、nature、family、war、mining、death 字典已有）
+the concept of war	戰爭這個概念	战争这个概念	inner	FUN_140e76080 2169670 詩歌形式的主題（religion、nature、family、war、mining、death 字典已有）
+an abstract concept	某個抽象概念	某个抽象概念	inner	FUN_140e76080 2169670 詩歌形式的主題（religion、nature、family、war、mining、death 字典已有）
+the author	作者	作者	inner	FUN_140e76400 2170567／2171812 敘述視角（a historical figure 同主題；歷史人物名、a＋生物名照原文／冠詞句型）
+a soldier	士兵	士兵	inner	FUN_140e76400 2170567／2171812 敘述視角（a historical figure 同主題；歷史人物名、a＋生物名照原文／冠詞句型）
+a traveler	旅人	旅人	inner	FUN_140e76400 2170567／2171812 敘述視角（a historical figure 同主題；歷史人物名、a＋生物名照原文／冠詞句型）
+a relative of the author	作者的親屬	作者的亲属	inner	FUN_140e76400 2170567／2171812 敘述視角（a historical figure 同主題；歷史人物名、a＋生物名照原文／冠詞句型）
+a party to a debate	辯論的一方	辩论的一方	inner	FUN_140e76400 2170567／2171812 敘述視角（a historical figure 同主題；歷史人物名、a＋生物名照原文／冠詞句型）
+a fictional poet	虛構的詩人	虚构的诗人	inner	FUN_140e76400 2170567／2171812 敘述視角（a historical figure 同主題；歷史人物名、a＋生物名照原文／冠詞句型）
+an animal	動物	动物	inner	FUN_140e76400 2170567／2171812 敘述視角（a historical figure 同主題；歷史人物名、a＋生物名照原文／冠詞句型）
+couplet	對句	对句	inner	FUN_140e76400 2170107 詩節名稱（單數）
+couplets	對句	对句	inner	FUN_140e76400 2170107 詩節名稱（複數）
+a couplet	一個對句	一个对句	inner	FUN_140e76400 2170190 一個詩節
+each couplet	每個對句	每个对句	inner	FUN_140e76400 2172184 平行句：每個詩節
+tercet	三行詩節	三行诗节	inner	FUN_140e76400 2170107 詩節名稱（單數）
+tercets	三行詩節	三行诗节	inner	FUN_140e76400 2170107 詩節名稱（複數）
+a tercet	一個三行詩節	一个三行诗节	inner	FUN_140e76400 2170190 一個詩節
+each tercet	每個三行詩節	每个三行诗节	inner	FUN_140e76400 2172184 平行句：每個詩節
+quatrain	四行詩節	四行诗节	inner	FUN_140e76400 2170107 詩節名稱（單數）
+quatrains	四行詩節	四行诗节	inner	FUN_140e76400 2170107 詩節名稱（複數）
+a quatrain	一個四行詩節	一个四行诗节	inner	FUN_140e76400 2170190 一個詩節
+each quatrain	每個四行詩節	每个四行诗节	inner	FUN_140e76400 2172184 平行句：每個詩節
+quintain	五行詩節	五行诗节	inner	FUN_140e76400 2170107 詩節名稱（單數）
+quintains	五行詩節	五行诗节	inner	FUN_140e76400 2170107 詩節名稱（複數）
+a quintain	一個五行詩節	一个五行诗节	inner	FUN_140e76400 2170190 一個詩節
+each quintain	每個五行詩節	每个五行诗节	inner	FUN_140e76400 2172184 平行句：每個詩節
+sexain	六行詩節	六行诗节	inner	FUN_140e76400 2170107 詩節名稱（單數）
+sexains	六行詩節	六行诗节	inner	FUN_140e76400 2170107 詩節名稱（複數）
+a sexain	一個六行詩節	一个六行诗节	inner	FUN_140e76400 2170190 一個詩節
+each sexain	每個六行詩節	每个六行诗节	inner	FUN_140e76400 2172184 平行句：每個詩節
+septet	七行詩節	七行诗节	inner	FUN_140e76400 2170107 詩節名稱（單數）
+septets	七行詩節	七行诗节	inner	FUN_140e76400 2170107 詩節名稱（複數）
+a septet	一個七行詩節	一个七行诗节	inner	FUN_140e76400 2170190 一個詩節
+each septet	每個七行詩節	每个七行诗节	inner	FUN_140e76400 2172184 平行句：每個詩節
+octet	八行詩節	八行诗节	inner	FUN_140e76400 2170107 詩節名稱（單數）
+octets	八行詩節	八行诗节	inner	FUN_140e76400 2170107 詩節名稱（複數）
+an octet	一個八行詩節	一个八行诗节	inner	FUN_140e76400 2170190 一個詩節
+each octet	每個八行詩節	每个八行诗节	inner	FUN_140e76400 2172184 平行句：每個詩節
+stanza	詩節	诗节	inner	FUN_140e76400 2172192 平行句：九行以上的詩節（the stanza）
+each stanza	每個詩節	每个诗节	inner	FUN_140e76400 2172184 平行句：每個詩節
+brief verse paragraph	簡短的詩段	简短的诗段	inner	FUN_140e76400 2170267／2170521 詩段（不分行數的段落）
+brief verse paragraphs	簡短的詩段	简短的诗段	inner	FUN_140e76400 2170267／2170521 詩段（複數）
+a brief verse paragraph	一個簡短的詩段	一个简短的诗段	inner	FUN_140e76400 2170190 一個詩段
+verse paragraph	詩段	诗段	inner	FUN_140e76400 2170267／2170521 詩段（不分行數的段落）
+verse paragraphs	詩段	诗段	inner	FUN_140e76400 2170267／2170521 詩段（複數）
+a verse paragraph	一個詩段	一个诗段	inner	FUN_140e76400 2170190 一個詩段
+long verse paragraph	長詩段	长诗段	inner	FUN_140e76400 2170267／2170521 詩段（不分行數的段落）
+long verse paragraphs	長詩段	长诗段	inner	FUN_140e76400 2170267／2170521 詩段（複數）
+a long verse paragraph	一個長詩段	一个长诗段	inner	FUN_140e76400 2170190 一個詩段
+full verse paragraph	完整的詩段	完整的诗段	inner	FUN_140e76400 2170267／2170521 詩段（不分行數的段落）
+full verse paragraphs	完整的詩段	完整的诗段	inner	FUN_140e76400 2170267／2170521 詩段（複數）
+a full verse paragraph	一個完整的詩段	一个完整的诗段	inner	FUN_140e76400 2170190 一個詩段
+lengthy verse paragraph	冗長的詩段	冗长的诗段	inner	FUN_140e76400 2170267／2170521 詩段（不分行數的段落）
+lengthy verse paragraphs	冗長的詩段	冗长的诗段	inner	FUN_140e76400 2170267／2170521 詩段（複數）
+a lengthy verse paragraph	一個冗長的詩段	一个冗长的诗段	inner	FUN_140e76400 2170190 一個詩段
+each verse paragraph	每個詩段	每个诗段	inner	FUN_140e76400 2172225 平行句：每個詩段
+a single line	單獨一行	单独一行	inner	FUN_140e76400 2170146–2170555 詩的結構：單行為單位
+a line	一行	一行	inner	FUN_140e76400 2170146–2170555 詩的結構：單行為單位
+another line	另一行	另一行	inner	FUN_140e76400 2170146–2170555 詩的結構：單行為單位
+another one line	另外一行	另外一行	inner	FUN_140e76400 2170146–2170555 詩的結構：單行為單位
+a series of lines	一系列詩行	一系列诗行	inner	FUN_140e76400 2170146–2170555 詩的結構：單行為單位
+numerous series of lines	許多系列的詩行	许多系列的诗行	inner	FUN_140e76400 2170146–2170555 詩的結構：單行為單位
+an extremely long series of lines	極長的一系列詩行	极长的一系列诗行	inner	FUN_140e76400 2170146–2170555 詩的結構：單行為單位
+another series of lines	另一系列詩行	另一系列诗行	inner	FUN_140e76400 2170146–2170555 詩的結構：單行為單位
+another numerous series of lines	另外許多系列的詩行	另外许多系列的诗行	inner	FUN_140e76400 2170146–2170555 詩的結構：單行為單位
+another extremely long series of lines	另一極長系列的詩行	另一极长系列的诗行	inner	FUN_140e76400 2170146–2170555 詩的結構：單行為單位
+internal rhyme	行內韻	行内韵	inner	FUN_140e76400 2170735／2171996 修辭手法（清單項目）
+alliteration	頭韻	头韵	inner	FUN_140e76400 2170735／2171996 修辭手法（清單項目）
+onomatopoeia	擬聲	拟声	inner	FUN_140e76400 2170735／2171996 修辭手法（清單項目）
+antanaclasis	同詞異義反覆	同词异义反复	inner	FUN_140e76400 2170735／2171996 修辭手法（清單項目）
+assonance	母音韻	元音韵	inner	FUN_140e76400 2170735／2171996 修辭手法（清單項目）
+consonance	子音韻	辅音韵	inner	FUN_140e76400 2170735／2171996 修辭手法（清單項目）
+elision	省音	省音	inner	FUN_140e76400 2170735／2171996 修辭手法（清單項目）
+epenthesis	增音	增音	inner	FUN_140e76400 2170735／2171996 修辭手法（清單項目）
+synchysis	錯綜語序	错综语序	inner	FUN_140e76400 2170735／2171996 修辭手法（清單項目）
+allegory	寓言	寓言	inner	FUN_140e76400 2170735／2171996 修辭手法（清單項目）
+ambiguity	歧義	歧义	inner	FUN_140e76400 2170735／2171996 修辭手法（清單項目）
+symbolism	象徵	象征	inner	FUN_140e76400 2170735／2171996 修辭手法（清單項目）
+metaphor	隱喻	隐喻	inner	FUN_140e76400 2170735／2171996 修辭手法（清單項目）
+simile	明喻	明喻	inner	FUN_140e76400 2170735／2171996 修辭手法（清單項目）
+metonymy	轉喻	转喻	inner	FUN_140e76400 2170735／2171996 修辭手法（清單項目）
+vivid imagery	生動的意象	生动的意象	inner	FUN_140e76400 2170735／2171996 修辭手法（清單項目）
+juxtaposition	並置	并置	inner	FUN_140e76400 2170735／2171996 修辭手法（清單項目）
+often share an underlying meaning	往往有相同的深層含義	往往有相同的深层含义	inner	FUN_140e76400 2170848／2172107 對仗：某些詩行……（清單項目）
+they often share an underlying meaning	往往有相同的深層含義	往往有相同的深层含义	inner	FUN_140e76400 2170841 對仗：第二項起以 they 開頭
+often contrast underlying meaning	往往有相反的深層含義	往往有相反的深层含义	inner	FUN_140e76400 2170848／2172107 對仗：某些詩行……（清單項目）
+they often contrast underlying meaning	往往有相反的深層含義	往往有相反的深层含义	inner	FUN_140e76400 2170841 對仗：第二項起以 they 開頭
+are required to maintain phrasing	必須保持相同的措辭	必须保持相同的措辞	inner	FUN_140e76400 2170848／2172107 對仗：某些詩行……（清單項目）
+they are required to maintain phrasing	必須保持相同的措辭	必须保持相同的措辞	inner	FUN_140e76400 2170841 對仗：第二項起以 they 開頭
+have similar grammatical structures	有相似的文法結構	有相似的语法结构	inner	FUN_140e76400 2170848／2172107 對仗：某些詩行……（清單項目）
+they have similar grammatical structures	有相似的文法結構	有相似的语法结构	inner	FUN_140e76400 2170841 對仗：第二項起以 they 開頭
+use the same placement of allusions	在相同的位置用典	在相同的位置用典	inner	FUN_140e76400 2170848／2172107 對仗：某些詩行……（清單項目）
+they use the same placement of allusions	在相同的位置用典	在相同的位置用典	inner	FUN_140e76400 2170841 對仗：第二項起以 they 開頭
+sometimes have reversed word orders	有時詞序顛倒	有时词序颠倒	inner	FUN_140e76400 2170848／2172107 對仗：某些詩行……（清單項目）
+they sometimes have reversed word orders	有時詞序顛倒	有时词序颠倒	inner	FUN_140e76400 2170841 對仗：第二項起以 they 開頭
+reverse grammatical structures	互相顛倒文法結構	互相颠倒语法结构	inner	FUN_140e76400 2170848／2172107 對仗：某些詩行……（清單項目）
+they reverse grammatical structures	互相顛倒文法結構	互相颠倒语法结构	inner	FUN_140e76400 2170841 對仗：第二項起以 they 開頭
+present different views of the same subject	對同一主題呈現不同的觀點	对同一主题呈现不同的观点	inner	FUN_140e76400 2172130 對仗（段落）：某些詩行……
+lines with different readings depending on word breaks	依斷詞不同而有不同讀法的詩行	依断词不同而有不同读法的诗行	inner	FUN_140e76400 2170928／2172327 視覺呈現的特色（清單項目）
+lines which can be read backwards as well as forwards	可以正讀也可以倒讀的詩行	可以正读也可以倒读的诗行	inner	FUN_140e76400 2170928／2172327 視覺呈現的特色（清單項目）
+lines which can be read orthogonally across the standard lines	可以橫跨一般詩行垂直讀出的詩行	可以横跨一般诗行垂直读出的诗行	inner	FUN_140e76400 2170928／2172327 視覺呈現的特色（清單項目）
+lines which emerge when reading along certain prescribed paths across the body of the poem	沿著詩中特定路徑閱讀時浮現的詩行	沿着诗中特定路径阅读时浮现的诗行	inner	FUN_140e76400 2170928／2172327 視覺呈現的特色（清單項目）
+even lines which emerge when reading along certain prescribed paths across the body of the poem	甚至是沿著詩中特定路徑閱讀時浮現的詩行	甚至是沿着诗中特定路径阅读时浮现的诗行	inner	FUN_140e76400 2170928／2172327 視覺呈現的特色（清單項目）
+lines which emerge when reading along certain prescribed paths	沿著特定路徑閱讀時浮現的詩行	沿着特定路径阅读时浮现的诗行	inner	FUN_140e76400 2170928／2172327 視覺呈現的特色（清單項目）
+unstressed-unstressed	輕輕	轻轻	inner	FUN_140e76400 2171037／2171143／2171272 重音／音長／聲調模式
+unstressed-stressed	輕重	轻重	inner	FUN_140e76400 2171037／2171143／2171272 重音／音長／聲調模式
+stressed-unstressed	重輕	重轻	inner	FUN_140e76400 2171037／2171143／2171272 重音／音長／聲調模式
+stressed-stressed	重重	重重	inner	FUN_140e76400 2171037／2171143／2171272 重音／音長／聲調模式
+unstressed-unstressed-unstressed	輕輕輕	轻轻轻	inner	FUN_140e76400 2171037／2171143／2171272 重音／音長／聲調模式
+stressed-unstressed-unstressed	重輕輕	重轻轻	inner	FUN_140e76400 2171037／2171143／2171272 重音／音長／聲調模式
+unstressed-stressed-unstressed	輕重輕	轻重轻	inner	FUN_140e76400 2171037／2171143／2171272 重音／音長／聲調模式
+unstressed-unstressed-stressed	輕輕重	轻轻重	inner	FUN_140e76400 2171037／2171143／2171272 重音／音長／聲調模式
+unstressed-stressed-stressed	輕重重	轻重重	inner	FUN_140e76400 2171037／2171143／2171272 重音／音長／聲調模式
+stressed-stressed-unstressed	重重輕	重重轻	inner	FUN_140e76400 2171037／2171143／2171272 重音／音長／聲調模式
+stressed-unstressed-stressed	重輕重	重轻重	inner	FUN_140e76400 2171037／2171143／2171272 重音／音長／聲調模式
+stressed-stressed-stressed	重重重	重重重	inner	FUN_140e76400 2171037／2171143／2171272 重音／音長／聲調模式
+short-short	短短	短短	inner	FUN_140e76400 2171037／2171143／2171272 重音／音長／聲調模式
+short-long	短長	短长	inner	FUN_140e76400 2171037／2171143／2171272 重音／音長／聲調模式
+long-short	長短	长短	inner	FUN_140e76400 2171037／2171143／2171272 重音／音長／聲調模式
+long-long	長長	长长	inner	FUN_140e76400 2171037／2171143／2171272 重音／音長／聲調模式
+short-short-short	短短短	短短短	inner	FUN_140e76400 2171037／2171143／2171272 重音／音長／聲調模式
+long-short-short	長短短	长短短	inner	FUN_140e76400 2171037／2171143／2171272 重音／音長／聲調模式
+short-long-short	短長短	短长短	inner	FUN_140e76400 2171037／2171143／2171272 重音／音長／聲調模式
+short-short-long	短短長	短短长	inner	FUN_140e76400 2171037／2171143／2171272 重音／音長／聲調模式
+short-long-long	短長長	短长长	inner	FUN_140e76400 2171037／2171143／2171272 重音／音長／聲調模式
+long-long-short	長長短	长长短	inner	FUN_140e76400 2171037／2171143／2171272 重音／音長／聲調模式
+long-short-long	長短長	长短长	inner	FUN_140e76400 2171037／2171143／2171272 重音／音長／聲調模式
+long-long-long	長長長	长长长	inner	FUN_140e76400 2171037／2171143／2171272 重音／音長／聲調模式
+even-even	平平	平平	inner	FUN_140e76400 2171037／2171143／2171272 重音／音長／聲調模式
+even-uneven	平仄	平仄	inner	FUN_140e76400 2171037／2171143／2171272 重音／音長／聲調模式
+uneven-even	仄平	仄平	inner	FUN_140e76400 2171037／2171143／2171272 重音／音長／聲調模式
+uneven-uneven	仄仄	仄仄	inner	FUN_140e76400 2171037／2171143／2171272 重音／音長／聲調模式
+even-even-even	平平平	平平平	inner	FUN_140e76400 2171037／2171143／2171272 重音／音長／聲調模式
+uneven-even-even	仄平平	仄平平	inner	FUN_140e76400 2171037／2171143／2171272 重音／音長／聲調模式
+even-uneven-even	平仄平	平仄平	inner	FUN_140e76400 2171037／2171143／2171272 重音／音長／聲調模式
+even-even-uneven	平平仄	平平仄	inner	FUN_140e76400 2171037／2171143／2171272 重音／音長／聲調模式
+even-uneven-uneven	平仄仄	平仄仄	inner	FUN_140e76400 2171037／2171143／2171272 重音／音長／聲調模式
+uneven-uneven-even	仄仄平	仄仄平	inner	FUN_140e76400 2171037／2171143／2171272 重音／音長／聲調模式
+uneven-even-uneven	仄平仄	仄平仄	inner	FUN_140e76400 2171037／2171143／2171272 重音／音長／聲調模式
+uneven-uneven-uneven	仄仄仄	仄仄仄	inner	FUN_140e76400 2171037／2171143／2171272 重音／音長／聲調模式
+pyrrhic	抑抑格	抑抑格	inner	FUN_140e76400 2171080 音步名稱
+iambic	抑揚格	抑扬格	inner	FUN_140e76400 2171080 音步名稱
+trochaic	揚抑格	扬抑格	inner	FUN_140e76400 2171080 音步名稱
+spondaic	揚揚格	扬扬格	inner	FUN_140e76400 2171080 音步名稱
+tribrachic	抑抑抑格	抑抑抑格	inner	FUN_140e76400 2171080 音步名稱
+dactylic	揚抑抑格	扬抑抑格	inner	FUN_140e76400 2171080 音步名稱
+amphibrachic	抑揚抑格	抑扬抑格	inner	FUN_140e76400 2171080 音步名稱
+anapaestic	抑抑揚格	抑抑扬格	inner	FUN_140e76400 2171080 音步名稱
+bacchic	抑揚揚格	抑扬扬格	inner	FUN_140e76400 2171080 音步名稱
+antibacchic	揚揚抑格	扬扬抑格	inner	FUN_140e76400 2171080 音步名稱
+cretic	揚抑揚格	扬抑扬格	inner	FUN_140e76400 2171080 音步名稱
+molossic	揚揚揚格	扬扬扬格	inner	FUN_140e76400 2171080 音步名稱
+monometer	單音步	单音步	inner	FUN_140e76400 2171230 格律（音步數）
+dimeter	雙音步	双音步	inner	FUN_140e76400 2171230 格律（音步數）
+trimeter	三音步	三音步	inner	FUN_140e76400 2171230 格律（音步數）
+tetrameter	四音步	四音步	inner	FUN_140e76400 2171230 格律（音步數）
+pentameter	五音步	五音步	inner	FUN_140e76400 2171230 格律（音步數）
+hexameter	六音步	六音步	inner	FUN_140e76400 2171230 格律（音步數）
+heptameter	七音步	七音步	inner	FUN_140e76400 2171230 格律（音步數）
+octameter	八音步	八音步	inner	FUN_140e76400 2171230 格律（音步數）
+an initial caesura	行首停頓	行首停顿	inner	FUN_140e76400 2171341 停頓（caesura）位置
+a medial caesura	句中停頓	句中停顿	inner	FUN_140e76400 2171341 停頓（caesura）位置
+a terminal caesura	行末停頓	行末停顿	inner	FUN_140e76400 2171341 停頓（caesura）位置
+line two	第二行	第二行	inner	FUN_140e76400 2173939 疊句所在行（行號 two 不用「兩」）
+The poem is divided into two distinct lines.	這首詩分成兩個不同的詩行。	这首诗分成两个不同的诗行。		FUN_140e76400 2170090–2170558 第三句：詩的結構
+The ending of each line of the poem shares the same rhyme.	這首詩每行結尾都押同一個韻。	这首诗每行结尾都押同一个韵。		FUN_140e76400 2171408 押韻
+The ending of each line of the poem shares the same rhyme, though the rhyming doesn't have to be perfect.	這首詩每行結尾都押同一個韻，但押韻不必完全工整。	这首诗每行结尾都押同一个韵，但押韵不必完全工整。		FUN_140e76400 2171547 押韻
+The ending of each line of this part shares the same rhyme.	這部分每行結尾都押同一個韻。	这部分每行结尾都押同一个韵。		FUN_140e76400 2173880 段落押韻
+In this part of the poem, the end rhymes don't need to match perfectly.	這部分的行末韻腳不必完全吻合。	这部分的行末韵脚不必完全吻合。		FUN_140e76400 2174146 押韻
+As a rule throughout the poem, the end rhymes don't generally match perfectly.	整首詩的行末韻腳照例通常不完全吻合。	整首诗的行末韵脚照例通常不完全吻合。		FUN_140e76400 2174152 押韻
+It is a narrative.	是敘事體。	是叙事体。		FUN_140e76400 2171635 已提過的段落／詩行（It，譯文省略主詞）
+It is dramatic.	富有戲劇性。	富有戏剧性。		FUN_140e76400 2171635 已提過的段落／詩行（It，譯文省略主詞）
+It is reflective.	帶有沉思意味。	带有沉思意味。		FUN_140e76400 2171635 已提過的段落／詩行（It，譯文省略主詞）
+It is a riddle.	是一則謎語。	是一则谜语。		FUN_140e76400 2171635 已提過的段落／詩行（It，譯文省略主詞）
+It is ribald.	粗鄙詼諧。	粗鄙诙谐。		FUN_140e76400 2171635 已提過的段落／詩行（It，譯文省略主詞）
+It is light.	輕鬆明快。	轻松明快。		FUN_140e76400 2171635 已提過的段落／詩行（It，譯文省略主詞）
+It is solemn.	莊嚴肅穆。	庄严肃穆。		FUN_140e76400 2171635 已提過的段落／詩行（It，譯文省略主詞）
+It has an initial caesura in each line.	每行都有行首停頓。	每行都有行首停顿。		FUN_140e76400 2171635 已提過的段落／詩行（It，譯文省略主詞）
+It has an initial caesura.	有行首停頓。	有行首停顿。		FUN_140e76400 2171635 已提過的段落／詩行（It，譯文省略主詞）
+It has a medial caesura in each line.	每行都有句中停頓。	每行都有句中停顿。		FUN_140e76400 2171635 已提過的段落／詩行（It，譯文省略主詞）
+It has a medial caesura.	有句中停頓。	有句中停顿。		FUN_140e76400 2171635 已提過的段落／詩行（It，譯文省略主詞）
+It has a terminal caesura in each line.	每行都有行末停頓。	每行都有行末停顿。		FUN_140e76400 2171635 已提過的段落／詩行（It，譯文省略主詞）
+It has a terminal caesura.	有行末停頓。	有行末停顿。		FUN_140e76400 2171635 已提過的段落／詩行（It，譯文省略主詞）
+It has different readings depending on word breaks and can be read backwards as well as forwards.	依斷詞不同而有不同讀法，也可以正讀和倒讀。	依断词不同而有不同读法，也可以正读和倒读。		FUN_140e76400 2171635 已提過的段落／詩行（It，譯文省略主詞）
+It has different readings depending on word breaks.	依斷詞不同而有不同讀法。	依断词不同而有不同读法。		FUN_140e76400 2171635 已提過的段落／詩行（It，譯文省略主詞）
+It can be read backwards as well as forwards.	可以正讀也可以倒讀。	可以正读也可以倒读。		FUN_140e76400 2171635 已提過的段落／詩行（It，譯文省略主詞）
+The poem has an initial caesura.	這首詩有行首停頓。	这首诗有行首停顿。		FUN_140e76400 2171332 停頓（全詩單行時）；寫成整句，免得冠詞＋其他檔的「{@1} has {%2}.」先套成「詩歌…」
+The poem has a medial caesura.	這首詩有句中停頓。	这首诗有句中停顿。		FUN_140e76400 2171332 停頓（全詩單行時）；寫成整句，免得冠詞＋其他檔的「{@1} has {%2}.」先套成「詩歌…」
+The poem has a terminal caesura.	這首詩有行末停頓。	这首诗有行末停顿。		FUN_140e76400 2171332 停頓（全詩單行時）；寫成整句，免得冠詞＋其他檔的「{@1} has {%2}.」先套成「詩歌…」
+another brief verse paragraph	另一個簡短的詩段	另一个简短的诗段	inner	FUN_140e76400 2170342 另一個詩段（寫成整句，免得被其他檔的 another {%1} {%2} 拆開）
+another verse paragraph	另一個詩段	另一个诗段	inner	FUN_140e76400 2170342 另一個詩段（寫成整句，免得被其他檔的 another {%1} {%2} 拆開）
+another long verse paragraph	另一個長詩段	另一个长诗段	inner	FUN_140e76400 2170342 另一個詩段（寫成整句，免得被其他檔的 another {%1} {%2} 拆開）
+another full verse paragraph	另一個完整的詩段	另一个完整的诗段	inner	FUN_140e76400 2170342 另一個詩段（寫成整句，免得被其他檔的 another {%1} {%2} 拆開）
+another lengthy verse paragraph	另一個冗長的詩段	另一个冗长的诗段	inner	FUN_140e76400 2170342 另一個詩段（寫成整句，免得被其他檔的 another {%1} {%2} 拆開）
+The rules of the form are applied by poets to produce individual poems which can be recited.	詩人依循這種形式的規則，創作出可供朗誦的單篇詩作。	诗人依循这种形式的规则，创作出可供朗诵的单篇诗作。		FUN_140e76400 2170084 第二句：用法
+The form guides poets during improvised performances.	詩人即興表演時以這種形式為依循。	诗人即兴表演时以这种形式为依循。		FUN_140e76400 2170084 第二句：用法
+a single couplet	單獨一個對句	单独一个对句	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another one couplet	另一個對句	另一个对句	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another couplet	另一個對句	另一个对句	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+a series of couplets	一系列對句	一系列对句	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+numerous series of couplets	許多系列的對句	许多系列的对句	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+an extremely long series of couplets	極長的一系列對句	极长的一系列对句	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another series of couplets	另一系列對句	另一系列对句	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another numerous series of couplets	另外許多系列的對句	另外许多系列的对句	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another extremely long series of couplets	另一極長系列的對句	另一极长系列的对句	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+a single tercet	單獨一個三行詩節	单独一个三行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another one tercet	另一個三行詩節	另一个三行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another tercet	另一個三行詩節	另一个三行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+a series of tercets	一系列三行詩節	一系列三行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+numerous series of tercets	許多系列的三行詩節	许多系列的三行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+an extremely long series of tercets	極長的一系列三行詩節	极长的一系列三行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another series of tercets	另一系列三行詩節	另一系列三行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another numerous series of tercets	另外許多系列的三行詩節	另外许多系列的三行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another extremely long series of tercets	另一極長系列的三行詩節	另一极长系列的三行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+a single quatrain	單獨一個四行詩節	单独一个四行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another one quatrain	另一個四行詩節	另一个四行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another quatrain	另一個四行詩節	另一个四行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+a series of quatrains	一系列四行詩節	一系列四行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+numerous series of quatrains	許多系列的四行詩節	许多系列的四行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+an extremely long series of quatrains	極長的一系列四行詩節	极长的一系列四行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another series of quatrains	另一系列四行詩節	另一系列四行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another numerous series of quatrains	另外許多系列的四行詩節	另外许多系列的四行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another extremely long series of quatrains	另一極長系列的四行詩節	另一极长系列的四行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+a single quintain	單獨一個五行詩節	单独一个五行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another one quintain	另一個五行詩節	另一个五行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another quintain	另一個五行詩節	另一个五行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+a series of quintains	一系列五行詩節	一系列五行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+numerous series of quintains	許多系列的五行詩節	许多系列的五行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+an extremely long series of quintains	極長的一系列五行詩節	极长的一系列五行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another series of quintains	另一系列五行詩節	另一系列五行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another numerous series of quintains	另外許多系列的五行詩節	另外许多系列的五行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another extremely long series of quintains	另一極長系列的五行詩節	另一极长系列的五行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+a single sexain	單獨一個六行詩節	单独一个六行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another one sexain	另一個六行詩節	另一个六行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another sexain	另一個六行詩節	另一个六行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+a series of sexains	一系列六行詩節	一系列六行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+numerous series of sexains	許多系列的六行詩節	许多系列的六行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+an extremely long series of sexains	極長的一系列六行詩節	极长的一系列六行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another series of sexains	另一系列六行詩節	另一系列六行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another numerous series of sexains	另外許多系列的六行詩節	另外许多系列的六行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another extremely long series of sexains	另一極長系列的六行詩節	另一极长系列的六行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+a single septet	單獨一個七行詩節	单独一个七行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another one septet	另一個七行詩節	另一个七行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another septet	另一個七行詩節	另一个七行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+a series of septets	一系列七行詩節	一系列七行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+numerous series of septets	許多系列的七行詩節	许多系列的七行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+an extremely long series of septets	極長的一系列七行詩節	极长的一系列七行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another series of septets	另一系列七行詩節	另一系列七行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another numerous series of septets	另外許多系列的七行詩節	另外许多系列的七行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another extremely long series of septets	另一極長系列的七行詩節	另一极长系列的七行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+a single octet	單獨一個八行詩節	单独一个八行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another one octet	另一個八行詩節	另一个八行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another octet	另一個八行詩節	另一个八行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+a series of octets	一系列八行詩節	一系列八行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+numerous series of octets	許多系列的八行詩節	许多系列的八行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+an extremely long series of octets	極長的一系列八行詩節	极长的一系列八行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another series of octets	另一系列八行詩節	另一系列八行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another numerous series of octets	另外許多系列的八行詩節	另外许多系列的八行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another extremely long series of octets	另一極長系列的八行詩節	另一极长系列的八行诗节	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+a single brief verse paragraph	單獨一個簡短的詩段	单独一个简短的诗段	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another one brief verse paragraph	另一個簡短的詩段	另一个简短的诗段	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+a series of brief verse paragraphs	一系列簡短的詩段	一系列简短的诗段	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+numerous series of brief verse paragraphs	許多系列的簡短的詩段	许多系列的简短的诗段	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+an extremely long series of brief verse paragraphs	極長的一系列簡短的詩段	极长的一系列简短的诗段	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another series of brief verse paragraphs	另一系列簡短的詩段	另一系列简短的诗段	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another numerous series of brief verse paragraphs	另外許多系列的簡短的詩段	另外许多系列的简短的诗段	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another extremely long series of brief verse paragraphs	另一極長系列的簡短的詩段	另一极长系列的简短的诗段	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+a single verse paragraph	單獨一個詩段	单独一个诗段	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another one verse paragraph	另一個詩段	另一个诗段	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+a series of verse paragraphs	一系列詩段	一系列诗段	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+numerous series of verse paragraphs	許多系列的詩段	许多系列的诗段	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+an extremely long series of verse paragraphs	極長的一系列詩段	极长的一系列诗段	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another series of verse paragraphs	另一系列詩段	另一系列诗段	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another numerous series of verse paragraphs	另外許多系列的詩段	另外许多系列的诗段	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another extremely long series of verse paragraphs	另一極長系列的詩段	另一极长系列的诗段	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+a single long verse paragraph	單獨一個長詩段	单独一个长诗段	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another one long verse paragraph	另一個長詩段	另一个长诗段	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+a series of long verse paragraphs	一系列長詩段	一系列长诗段	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+numerous series of long verse paragraphs	許多系列的長詩段	许多系列的长诗段	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+an extremely long series of long verse paragraphs	極長的一系列長詩段	极长的一系列长诗段	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another series of long verse paragraphs	另一系列長詩段	另一系列长诗段	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another numerous series of long verse paragraphs	另外許多系列的長詩段	另外许多系列的长诗段	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another extremely long series of long verse paragraphs	另一極長系列的長詩段	另一极长系列的长诗段	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+a single full verse paragraph	單獨一個完整的詩段	单独一个完整的诗段	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another one full verse paragraph	另一個完整的詩段	另一个完整的诗段	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+a series of full verse paragraphs	一系列完整的詩段	一系列完整的诗段	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+numerous series of full verse paragraphs	許多系列的完整的詩段	许多系列的完整的诗段	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+an extremely long series of full verse paragraphs	極長的一系列完整的詩段	极长的一系列完整的诗段	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another series of full verse paragraphs	另一系列完整的詩段	另一系列完整的诗段	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another numerous series of full verse paragraphs	另外許多系列的完整的詩段	另外许多系列的完整的诗段	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another extremely long series of full verse paragraphs	另一極長系列的完整的詩段	另一极长系列的完整的诗段	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+a single lengthy verse paragraph	單獨一個冗長的詩段	单独一个冗长的诗段	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another one lengthy verse paragraph	另一個冗長的詩段	另一个冗长的诗段	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+a series of lengthy verse paragraphs	一系列冗長的詩段	一系列冗长的诗段	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+numerous series of lengthy verse paragraphs	許多系列的冗長的詩段	许多系列的冗长的诗段	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+an extremely long series of lengthy verse paragraphs	極長的一系列冗長的詩段	极长的一系列冗长的诗段	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another series of lengthy verse paragraphs	另一系列冗長的詩段	另一系列冗长的诗段	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another numerous series of lengthy verse paragraphs	另外許多系列的冗長的詩段	另外许多系列的冗长的诗段	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+another extremely long series of lengthy verse paragraphs	另一極長系列的冗長的詩段	另一极长系列的冗长的诗段	inner	FUN_140e76400 2170146–2170555 詩的結構：數量＋詩節／詩段（逐一寫出單位，不用通用外框，免得套進別處的「another」「two」）
+two lines	兩行	两行	inner	FUN_140e76400 2170146–2170555 詩的結構：行數（逐一寫出，不用 {@1} lines，免得套到 battle lines 這類）
+another two lines	另外兩行	另外两行	inner	FUN_140e76400 2170146–2170555 詩的結構：行數（逐一寫出，不用 {@1} lines，免得套到 battle lines 這類）
+three lines	三行	三行	inner	FUN_140e76400 2170146–2170555 詩的結構：行數（逐一寫出，不用 {@1} lines，免得套到 battle lines 這類）
+another three lines	另外三行	另外三行	inner	FUN_140e76400 2170146–2170555 詩的結構：行數（逐一寫出，不用 {@1} lines，免得套到 battle lines 這類）
+four lines	四行	四行	inner	FUN_140e76400 2170146–2170555 詩的結構：行數（逐一寫出，不用 {@1} lines，免得套到 battle lines 這類）
+another four lines	另外四行	另外四行	inner	FUN_140e76400 2170146–2170555 詩的結構：行數（逐一寫出，不用 {@1} lines，免得套到 battle lines 這類）
+five lines	五行	五行	inner	FUN_140e76400 2170146–2170555 詩的結構：行數（逐一寫出，不用 {@1} lines，免得套到 battle lines 這類）
+another five lines	另外五行	另外五行	inner	FUN_140e76400 2170146–2170555 詩的結構：行數（逐一寫出，不用 {@1} lines，免得套到 battle lines 這類）
+six lines	六行	六行	inner	FUN_140e76400 2170146–2170555 詩的結構：行數（逐一寫出，不用 {@1} lines，免得套到 battle lines 這類）
+another six lines	另外六行	另外六行	inner	FUN_140e76400 2170146–2170555 詩的結構：行數（逐一寫出，不用 {@1} lines，免得套到 battle lines 這類）
+seven lines	七行	七行	inner	FUN_140e76400 2170146–2170555 詩的結構：行數（逐一寫出，不用 {@1} lines，免得套到 battle lines 這類）
+another seven lines	另外七行	另外七行	inner	FUN_140e76400 2170146–2170555 詩的結構：行數（逐一寫出，不用 {@1} lines，免得套到 battle lines 這類）
+eight lines	八行	八行	inner	FUN_140e76400 2170146–2170555 詩的結構：行數（逐一寫出，不用 {@1} lines，免得套到 battle lines 這類）
+another eight lines	另外八行	另外八行	inner	FUN_140e76400 2170146–2170555 詩的結構：行數（逐一寫出，不用 {@1} lines，免得套到 battle lines 這類）
+nine lines	九行	九行	inner	FUN_140e76400 2170146–2170555 詩的結構：行數（逐一寫出，不用 {@1} lines，免得套到 battle lines 這類）
+another nine lines	另外九行	另外九行	inner	FUN_140e76400 2170146–2170555 詩的結構：行數（逐一寫出，不用 {@1} lines，免得套到 battle lines 這類）
+line one	第一行	第一行	inner	FUN_140e76400 2173939 疊句所在行（行號逐一寫出，不用通用 line {%1}）
+line three	第三行	第三行	inner	FUN_140e76400 2173939 疊句所在行（行號逐一寫出，不用通用 line {%1}）
+line four	第四行	第四行	inner	FUN_140e76400 2173939 疊句所在行（行號逐一寫出，不用通用 line {%1}）
+line five	第五行	第五行	inner	FUN_140e76400 2173939 疊句所在行（行號逐一寫出，不用通用 line {%1}）
+line six	第六行	第六行	inner	FUN_140e76400 2173939 疊句所在行（行號逐一寫出，不用通用 line {%1}）
+line seven	第七行	第七行	inner	FUN_140e76400 2173939 疊句所在行（行號逐一寫出，不用通用 line {%1}）
+line eight	第八行	第八行	inner	FUN_140e76400 2173939 疊句所在行（行號逐一寫出，不用通用 line {%1}）
+line nine	第九行	第九行	inner	FUN_140e76400 2173939 疊句所在行（行號逐一寫出，不用通用 line {%1}）
+line ten	第十行	第十行	inner	FUN_140e76400 2173939 疊句所在行（行號逐一寫出，不用通用 line {%1}）
+line eleven	第十一行	第十一行	inner	FUN_140e76400 2173939 疊句所在行（行號逐一寫出，不用通用 line {%1}）
+line twelve	第十二行	第十二行	inner	FUN_140e76400 2173939 疊句所在行（行號逐一寫出，不用通用 line {%1}）
+line thirteen	第十三行	第十三行	inner	FUN_140e76400 2173939 疊句所在行（行號逐一寫出，不用通用 line {%1}）
+line fourteen	第十四行	第十四行	inner	FUN_140e76400 2173939 疊句所在行（行號逐一寫出，不用通用 line {%1}）
+line fifteen	第十五行	第十五行	inner	FUN_140e76400 2173939 疊句所在行（行號逐一寫出，不用通用 line {%1}）
+line sixteen	第十六行	第十六行	inner	FUN_140e76400 2173939 疊句所在行（行號逐一寫出，不用通用 line {%1}）
+line seventeen	第十七行	第十七行	inner	FUN_140e76400 2173939 疊句所在行（行號逐一寫出，不用通用 line {%1}）
+line eighteen	第十八行	第十八行	inner	FUN_140e76400 2173939 疊句所在行（行號逐一寫出，不用通用 line {%1}）
+line nineteen	第十九行	第十九行	inner	FUN_140e76400 2173939 疊句所在行（行號逐一寫出，不用通用 line {%1}）
+line twenty	第二十行	第二十行	inner	FUN_140e76400 2173939 疊句所在行（行號逐一寫出，不用通用 line {%1}）
+line twenty-two	第二十二行	第二十二行	inner	FUN_140e76400 2173939 疊句所在行（行號逐一寫出，不用通用 line {%1}）
+line thirty	第三十行	第三十行	inner	FUN_140e76400 2173939 疊句所在行（行號逐一寫出，不用通用 line {%1}）
+line thirty-two	第三十二行	第三十二行	inner	FUN_140e76400 2173939 疊句所在行（行號逐一寫出，不用通用 line {%1}）
+line forty	第四十行	第四十行	inner	FUN_140e76400 2173939 疊句所在行（行號逐一寫出，不用通用 line {%1}）
+line forty-two	第四十二行	第四十二行	inner	FUN_140e76400 2173939 疊句所在行（行號逐一寫出，不用通用 line {%1}）
+line fifty	第五十行	第五十行	inner	FUN_140e76400 2173939 疊句所在行（行號逐一寫出，不用通用 line {%1}）
+line fifty-two	第五十二行	第五十二行	inner	FUN_140e76400 2173939 疊句所在行（行號逐一寫出，不用通用 line {%1}）
+line sixty	第六十行	第六十行	inner	FUN_140e76400 2173939 疊句所在行（行號逐一寫出，不用通用 line {%1}）
+line sixty-two	第六十二行	第六十二行	inner	FUN_140e76400 2173939 疊句所在行（行號逐一寫出，不用通用 line {%1}）
+line seventy	第七十行	第七十行	inner	FUN_140e76400 2173939 疊句所在行（行號逐一寫出，不用通用 line {%1}）
+line seventy-two	第七十二行	第七十二行	inner	FUN_140e76400 2173939 疊句所在行（行號逐一寫出，不用通用 line {%1}）
+line eighty	第八十行	第八十行	inner	FUN_140e76400 2173939 疊句所在行（行號逐一寫出，不用通用 line {%1}）
+line eighty-two	第八十二行	第八十二行	inner	FUN_140e76400 2173939 疊句所在行（行號逐一寫出，不用通用 line {%1}）
+line ninety	第九十行	第九十行	inner	FUN_140e76400 2173939 疊句所在行（行號逐一寫出，不用通用 line {%1}）
+line ninety-two	第九十二行	第九十二行	inner	FUN_140e76400 2173939 疊句所在行（行號逐一寫出，不用通用 line {%1}）

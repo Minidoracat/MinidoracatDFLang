@@ -1,0 +1,490 @@
+en	zh-Hant	zh-Hans	align	note
+{@1} move	{1}的動作	{1}的动作	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} move from the lead	領舞者{1}的動作	领舞者{1}的动作	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} move from the follower	跟舞者{1}的動作	跟舞者{1}的动作	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} moves	{1}的動作	{1}的动作	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} moves of the lead	領舞者{1}的動作	领舞者{1}的动作	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} moves of the follower	跟舞者{1}的動作	跟舞者{1}的动作	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} facial expression	{1}的臉部表情	{1}的面部表情	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} facial expression from the lead	領舞者{1}的臉部表情	领舞者{1}的面部表情	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} facial expression from the follower	跟舞者{1}的臉部表情	跟舞者{1}的面部表情	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} facial expressions	{1}的臉部表情	{1}的面部表情	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} facial expressions of the lead	領舞者{1}的臉部表情	领舞者{1}的面部表情	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} facial expressions of the follower	跟舞者{1}的臉部表情	跟舞者{1}的面部表情	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} hand gesture	{1}的手勢	{1}的手势	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} hand gesture from the lead	領舞者{1}的手勢	领舞者{1}的手势	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} hand gesture from the follower	跟舞者{1}的手勢	跟舞者{1}的手势	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} hand gestures	{1}的手勢	{1}的手势	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} hand gestures of the lead	領舞者{1}的手勢	领舞者{1}的手势	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} hand gestures of the follower	跟舞者{1}的手勢	跟舞者{1}的手势	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} straight walk	{1}地直線行走	{1}地直线行走	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} straight walk from the lead	領舞者{1}地直線行走	领舞者{1}地直线行走	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} straight walk from the follower	跟舞者{1}地直線行走	跟舞者{1}地直线行走	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} straight walks	{1}地直線行走	{1}地直线行走	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} straight walks of the lead	領舞者{1}地直線行走	领舞者{1}地直线行走	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} straight walks of the follower	跟舞者{1}地直線行走	跟舞者{1}地直线行走	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} curved walk	{1}地沿弧線行走	{1}地沿弧线行走	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} curved walk from the lead	領舞者{1}地沿弧線行走	领舞者{1}地沿弧线行走	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} curved walk from the follower	跟舞者{1}地沿弧線行走	跟舞者{1}地沿弧线行走	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} curved walks	{1}地沿弧線行走	{1}地沿弧线行走	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} curved walks of the lead	領舞者{1}地沿弧線行走	领舞者{1}地沿弧线行走	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} curved walks of the follower	跟舞者{1}地沿弧線行走	跟舞者{1}地沿弧线行走	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} run	{1}的跑動	{1}的跑动	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} run from the lead	領舞者{1}的跑動	领舞者{1}的跑动	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} run from the follower	跟舞者{1}的跑動	跟舞者{1}的跑动	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} runs	{1}的跑動	{1}的跑动	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} runs of the lead	領舞者{1}的跑動	领舞者{1}的跑动	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} runs of the follower	跟舞者{1}的跑動	跟舞者{1}的跑动	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} leap	{1}的跳躍	{1}的跳跃	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} leap from the lead	領舞者{1}的跳躍	领舞者{1}的跳跃	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} leap from the follower	跟舞者{1}的跳躍	跟舞者{1}的跳跃	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} leaps	{1}的跳躍	{1}的跳跃	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} leaps of the lead	領舞者{1}的跳躍	领舞者{1}的跳跃	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} leaps of the follower	跟舞者{1}的跳躍	跟舞者{1}的跳跃	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} kick	{1}的踢腿	{1}的踢腿	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} kick from the lead	領舞者{1}的踢腿	领舞者{1}的踢腿	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} kick from the follower	跟舞者{1}的踢腿	跟舞者{1}的踢腿	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} kicks	{1}的踢腿	{1}的踢腿	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} kicks of the lead	領舞者{1}的踢腿	领舞者{1}的踢腿	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} kicks of the follower	跟舞者{1}的踢腿	跟舞者{1}的踢腿	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} left kick	{1}的左踢腿	{1}的左踢腿	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} left kick from the lead	領舞者{1}的左踢腿	领舞者{1}的左踢腿	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} left kick from the follower	跟舞者{1}的左踢腿	跟舞者{1}的左踢腿	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} left kicks	{1}的左踢腿	{1}的左踢腿	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} left kicks of the lead	領舞者{1}的左踢腿	领舞者{1}的左踢腿	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} left kicks of the follower	跟舞者{1}的左踢腿	跟舞者{1}的左踢腿	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} right kick	{1}的右踢腿	{1}的右踢腿	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} right kick from the lead	領舞者{1}的右踢腿	领舞者{1}的右踢腿	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} right kick from the follower	跟舞者{1}的右踢腿	跟舞者{1}的右踢腿	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} right kicks	{1}的右踢腿	{1}的右踢腿	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} right kicks of the lead	領舞者{1}的右踢腿	领舞者{1}的右踢腿	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} right kicks of the follower	跟舞者{1}的右踢腿	跟舞者{1}的右踢腿	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} leg lift	{1}地抬腿	{1}地抬腿	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} leg lift from the lead	領舞者{1}地抬腿	领舞者{1}地抬腿	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} leg lift from the follower	跟舞者{1}地抬腿	跟舞者{1}地抬腿	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} leg lifts	{1}地抬腿	{1}地抬腿	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} leg lifts of the lead	領舞者{1}地抬腿	领舞者{1}地抬腿	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} leg lifts of the follower	跟舞者{1}地抬腿	跟舞者{1}地抬腿	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} left leg lift	{1}地抬左腿	{1}地抬左腿	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} left leg lift from the lead	領舞者{1}地抬左腿	领舞者{1}地抬左腿	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} left leg lift from the follower	跟舞者{1}地抬左腿	跟舞者{1}地抬左腿	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} left leg lifts	{1}地抬左腿	{1}地抬左腿	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} left leg lifts of the lead	領舞者{1}地抬左腿	领舞者{1}地抬左腿	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} left leg lifts of the follower	跟舞者{1}地抬左腿	跟舞者{1}地抬左腿	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} right leg lift	{1}地抬右腿	{1}地抬右腿	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} right leg lift from the lead	領舞者{1}地抬右腿	领舞者{1}地抬右腿	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} right leg lift from the follower	跟舞者{1}地抬右腿	跟舞者{1}地抬右腿	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} right leg lifts	{1}地抬右腿	{1}地抬右腿	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} right leg lifts of the lead	領舞者{1}地抬右腿	领舞者{1}地抬右腿	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} right leg lifts of the follower	跟舞者{1}地抬右腿	跟舞者{1}地抬右腿	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} body level	{1}的身體高低	{1}的身体高低	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} body level from the lead	領舞者{1}的身體高低	领舞者{1}的身体高低	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} body level from the follower	跟舞者{1}的身體高低	跟舞者{1}的身体高低	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} body level of the lead	領舞者{1}的身體高低	领舞者{1}的身体高低	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} body level of the follower	跟舞者{1}的身體高低	跟舞者{1}的身体高低	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} body level change	{1}地變換身體高低	{1}地变换身体高低	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} body level change from the lead	領舞者{1}地變換身體高低	领舞者{1}地变换身体高低	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} body level change from the follower	跟舞者{1}地變換身體高低	跟舞者{1}地变换身体高低	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} body level changes	{1}地變換身體高低	{1}地变换身体高低	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} body level changes of the lead	領舞者{1}地變換身體高低	领舞者{1}地变换身体高低	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} body level changes of the follower	跟舞者{1}地變換身體高低	跟舞者{1}地变换身体高低	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} arm carriage	{1}的手臂姿態	{1}的手臂姿态	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} arm carriage from the lead	領舞者{1}的手臂姿態	领舞者{1}的手臂姿态	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} arm carriage from the follower	跟舞者{1}的手臂姿態	跟舞者{1}的手臂姿态	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} arm carriage of the lead	領舞者{1}的手臂姿態	领舞者{1}的手臂姿态	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} arm carriage of the follower	跟舞者{1}的手臂姿態	跟舞者{1}的手臂姿态	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} raised left arm	{1}地舉左臂	{1}地举左臂	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} raised left arm from the lead	領舞者{1}地舉左臂	领舞者{1}地举左臂	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} raised left arm from the follower	跟舞者{1}地舉左臂	跟舞者{1}地举左臂	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} raised left arms	{1}地舉左臂	{1}地举左臂	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} raised left arms of the lead	領舞者{1}地舉左臂	领舞者{1}地举左臂	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} raised left arms of the follower	跟舞者{1}地舉左臂	跟舞者{1}地举左臂	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} raised right arm	{1}地舉右臂	{1}地举右臂	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} raised right arm from the lead	領舞者{1}地舉右臂	领舞者{1}地举右臂	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} raised right arm from the follower	跟舞者{1}地舉右臂	跟舞者{1}地举右臂	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} raised right arms	{1}地舉右臂	{1}地举右臂	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} raised right arms of the lead	領舞者{1}地舉右臂	领舞者{1}地举右臂	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} raised right arms of the follower	跟舞者{1}地舉右臂	跟舞者{1}地举右臂	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} raised arm	{1}地舉臂	{1}地举臂	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} raised arm from the lead	領舞者{1}地舉臂	领舞者{1}地举臂	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} raised arm from the follower	跟舞者{1}地舉臂	跟舞者{1}地举臂	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} raised arms	{1}地舉臂	{1}地举臂	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} raised arms of the lead	領舞者{1}地舉臂	领舞者{1}地举臂	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} raised arms of the follower	跟舞者{1}地舉臂	跟舞者{1}地举臂	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} spin	{1}的旋轉	{1}的旋转	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} spin from the lead	領舞者{1}的旋轉	领舞者{1}的旋转	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} spin from the follower	跟舞者{1}的旋轉	跟舞者{1}的旋转	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} spins	{1}的旋轉	{1}的旋转	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} spins of the lead	領舞者{1}的旋轉	领舞者{1}的旋转	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} spins of the follower	跟舞者{1}的旋轉	跟舞者{1}的旋转	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} independent body movement	{1}地讓身體各部位獨立擺動	{1}地让身体各部位独立摆动	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} independent body movement from the lead	領舞者{1}地讓身體各部位獨立擺動	领舞者{1}地让身体各部位独立摆动	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} independent body movement from the follower	跟舞者{1}地讓身體各部位獨立擺動	跟舞者{1}地让身体各部位独立摆动	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} independent body movement of the lead	領舞者{1}地讓身體各部位獨立擺動	领舞者{1}地让身体各部位独立摆动	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} independent body movement of the follower	跟舞者{1}地讓身體各部位獨立擺動	跟舞者{1}地让身体各部位独立摆动	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} sway	{1}的搖擺	{1}的摇摆	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} sway from the lead	領舞者{1}的搖擺	领舞者{1}的摇摆	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} sway from the follower	跟舞者{1}的搖擺	跟舞者{1}的摇摆	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} sway of the lead	領舞者{1}的搖擺	领舞者{1}的摇摆	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} sway of the follower	跟舞者{1}的搖擺	跟舞者{1}的摇摆	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} forward bend	{1}地向前彎身	{1}地向前弯身	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} forward bend from the lead	領舞者{1}地向前彎身	领舞者{1}地向前弯身	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} forward bend from the follower	跟舞者{1}地向前彎身	跟舞者{1}地向前弯身	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} forward bends	{1}地向前彎身	{1}地向前弯身	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} forward bends of the lead	領舞者{1}地向前彎身	领舞者{1}地向前弯身	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} forward bends of the follower	跟舞者{1}地向前彎身	跟舞者{1}地向前弯身	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} backward bend	{1}地向後仰身	{1}地向后仰身	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} backward bend from the lead	領舞者{1}地向後仰身	领舞者{1}地向后仰身	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} backward bend from the follower	跟舞者{1}地向後仰身	跟舞者{1}地向后仰身	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} backward bends	{1}地向後仰身	{1}地向后仰身	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} backward bends of the lead	領舞者{1}地向後仰身	领舞者{1}地向后仰身	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} backward bends of the follower	跟舞者{1}地向後仰身	跟舞者{1}地向后仰身	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} leftward bend	{1}地向左彎身	{1}地向左弯身	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} leftward bend from the lead	領舞者{1}地向左彎身	领舞者{1}地向左弯身	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} leftward bend from the follower	跟舞者{1}地向左彎身	跟舞者{1}地向左弯身	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} leftward bends	{1}地向左彎身	{1}地向左弯身	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} leftward bends of the lead	領舞者{1}地向左彎身	领舞者{1}地向左弯身	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} leftward bends of the follower	跟舞者{1}地向左彎身	跟舞者{1}地向左弯身	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} rightward bend	{1}地向右彎身	{1}地向右弯身	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} rightward bend from the lead	領舞者{1}地向右彎身	领舞者{1}地向右弯身	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} rightward bend from the follower	跟舞者{1}地向右彎身	跟舞者{1}地向右弯身	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} rightward bends	{1}地向右彎身	{1}地向右弯身	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} rightward bends of the lead	領舞者{1}地向右彎身	领舞者{1}地向右弯身	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} rightward bends of the follower	跟舞者{1}地向右彎身	跟舞者{1}地向右弯身	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} footwork	{1}的步法	{1}的步法	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} footwork from the lead	領舞者{1}的步法	领舞者{1}的步法	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} footwork from the follower	跟舞者{1}的步法	跟舞者{1}的步法	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} footwork of the lead	領舞者{1}的步法	领舞者{1}的步法	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} footwork of the follower	跟舞者{1}的步法	跟舞者{1}的步法	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} movement along the line of dance	{1}地沿舞程線移動	{1}地沿舞程线移动	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} movement along the line of dance from the lead	領舞者{1}地沿舞程線移動	领舞者{1}地沿舞程线移动	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} movement along the line of dance from the follower	跟舞者{1}地沿舞程線移動	跟舞者{1}地沿舞程线移动	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} movement along the line of dance of the lead	領舞者{1}地沿舞程線移動	领舞者{1}地沿舞程线移动	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} movement along the line of dance of the follower	跟舞者{1}地沿舞程線移動	跟舞者{1}地沿舞程线移动	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} repeated kick	{1}的連續踢腿	{1}的连续踢腿	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} repeated kick from the lead	領舞者{1}的連續踢腿	领舞者{1}的连续踢腿	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} repeated kick from the follower	跟舞者{1}的連續踢腿	跟舞者{1}的连续踢腿	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} repeated kicks	{1}的連續踢腿	{1}的连续踢腿	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} repeated kicks of the lead	領舞者{1}的連續踢腿	领舞者{1}的连续踢腿	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} repeated kicks of the follower	跟舞者{1}的連續踢腿	跟舞者{1}的连续踢腿	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} repeated left kick	{1}的連續左踢腿	{1}的连续左踢腿	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} repeated left kick from the lead	領舞者{1}的連續左踢腿	领舞者{1}的连续左踢腿	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} repeated left kick from the follower	跟舞者{1}的連續左踢腿	跟舞者{1}的连续左踢腿	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} repeated left kicks	{1}的連續左踢腿	{1}的连续左踢腿	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} repeated left kicks of the lead	領舞者{1}的連續左踢腿	领舞者{1}的连续左踢腿	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} repeated left kicks of the follower	跟舞者{1}的連續左踢腿	跟舞者{1}的连续左踢腿	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} repeated right kick	{1}的連續右踢腿	{1}的连续右踢腿	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} repeated right kick from the lead	領舞者{1}的連續右踢腿	领舞者{1}的连续右踢腿	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} repeated right kick from the follower	跟舞者{1}的連續右踢腿	跟舞者{1}的连续右踢腿	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} repeated right kicks	{1}的連續右踢腿	{1}的连续右踢腿	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} repeated right kicks of the lead	領舞者{1}的連續右踢腿	领舞者{1}的连续右踢腿	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} repeated right kicks of the follower	跟舞者{1}的連續右踢腿	跟舞者{1}的连续右踢腿	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} eighth turn	{1}地轉八分之一圈	{1}地转八分之一圈	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} eighth turn from the lead	領舞者{1}地轉八分之一圈	领舞者{1}地转八分之一圈	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} eighth turn from the follower	跟舞者{1}地轉八分之一圈	跟舞者{1}地转八分之一圈	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} eighth turns	{1}地轉八分之一圈	{1}地转八分之一圈	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} eighth turns of the lead	領舞者{1}地轉八分之一圈	领舞者{1}地转八分之一圈	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} eighth turns of the follower	跟舞者{1}地轉八分之一圈	跟舞者{1}地转八分之一圈	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} eighth quarter turn	{1}地轉四分之一圈	{1}地转四分之一圈	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} eighth quarter turn from the lead	領舞者{1}地轉四分之一圈	领舞者{1}地转四分之一圈	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} eighth quarter turn from the follower	跟舞者{1}地轉四分之一圈	跟舞者{1}地转四分之一圈	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} quarter turns	{1}地轉四分之一圈	{1}地转四分之一圈	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} quarter turns of the lead	領舞者{1}地轉四分之一圈	领舞者{1}地转四分之一圈	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} quarter turns of the follower	跟舞者{1}地轉四分之一圈	跟舞者{1}地转四分之一圈	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} eighth half turn	{1}地轉半圈	{1}地转半圈	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} eighth half turn from the lead	領舞者{1}地轉半圈	领舞者{1}地转半圈	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} eighth half turn from the follower	跟舞者{1}地轉半圈	跟舞者{1}地转半圈	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} half turns	{1}地轉半圈	{1}地转半圈	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} half turns of the lead	領舞者{1}地轉半圈	领舞者{1}地转半圈	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} half turns of the follower	跟舞者{1}地轉半圈	跟舞者{1}地转半圈	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} clockwise eighth turn	{1}地順時針轉八分之一圈	{1}地顺时针转八分之一圈	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} clockwise eighth turn from the lead	領舞者{1}地順時針轉八分之一圈	领舞者{1}地顺时针转八分之一圈	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} clockwise eighth turn from the follower	跟舞者{1}地順時針轉八分之一圈	跟舞者{1}地顺时针转八分之一圈	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} clockwise eighth turns	{1}地順時針轉八分之一圈	{1}地顺时针转八分之一圈	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} clockwise eighth turns of the lead	領舞者{1}地順時針轉八分之一圈	领舞者{1}地顺时针转八分之一圈	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} clockwise eighth turns of the follower	跟舞者{1}地順時針轉八分之一圈	跟舞者{1}地顺时针转八分之一圈	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} clockwise eighth quarter turn	{1}地順時針轉四分之一圈	{1}地顺时针转四分之一圈	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} clockwise eighth quarter turn from the lead	領舞者{1}地順時針轉四分之一圈	领舞者{1}地顺时针转四分之一圈	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} clockwise eighth quarter turn from the follower	跟舞者{1}地順時針轉四分之一圈	跟舞者{1}地顺时针转四分之一圈	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} clockwise quarter turns	{1}地順時針轉四分之一圈	{1}地顺时针转四分之一圈	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} clockwise quarter turns of the lead	領舞者{1}地順時針轉四分之一圈	领舞者{1}地顺时针转四分之一圈	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} clockwise quarter turns of the follower	跟舞者{1}地順時針轉四分之一圈	跟舞者{1}地顺时针转四分之一圈	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} clockwise eighth half turn	{1}地順時針轉半圈	{1}地顺时针转半圈	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} clockwise eighth half turn from the lead	領舞者{1}地順時針轉半圈	领舞者{1}地顺时针转半圈	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} clockwise eighth half turn from the follower	跟舞者{1}地順時針轉半圈	跟舞者{1}地顺时针转半圈	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} clockwise half turns	{1}地順時針轉半圈	{1}地顺时针转半圈	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} clockwise half turns of the lead	領舞者{1}地順時針轉半圈	领舞者{1}地顺时针转半圈	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} clockwise half turns of the follower	跟舞者{1}地順時針轉半圈	跟舞者{1}地顺时针转半圈	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} counterclockwise eighth turn	{1}地逆時針轉八分之一圈	{1}地逆时针转八分之一圈	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} counterclockwise eighth turn from the lead	領舞者{1}地逆時針轉八分之一圈	领舞者{1}地逆时针转八分之一圈	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} counterclockwise eighth turn from the follower	跟舞者{1}地逆時針轉八分之一圈	跟舞者{1}地逆时针转八分之一圈	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} counterclockwise eighth turns	{1}地逆時針轉八分之一圈	{1}地逆时针转八分之一圈	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} counterclockwise eighth turns of the lead	領舞者{1}地逆時針轉八分之一圈	领舞者{1}地逆时针转八分之一圈	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} counterclockwise eighth turns of the follower	跟舞者{1}地逆時針轉八分之一圈	跟舞者{1}地逆时针转八分之一圈	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} counterclockwise eighth quarter turn	{1}地逆時針轉四分之一圈	{1}地逆时针转四分之一圈	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} counterclockwise eighth quarter turn from the lead	領舞者{1}地逆時針轉四分之一圈	领舞者{1}地逆时针转四分之一圈	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} counterclockwise eighth quarter turn from the follower	跟舞者{1}地逆時針轉四分之一圈	跟舞者{1}地逆时针转四分之一圈	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} counterclockwise quarter turns	{1}地逆時針轉四分之一圈	{1}地逆时针转四分之一圈	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} counterclockwise quarter turns of the lead	領舞者{1}地逆時針轉四分之一圈	领舞者{1}地逆时针转四分之一圈	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} counterclockwise quarter turns of the follower	跟舞者{1}地逆時針轉四分之一圈	跟舞者{1}地逆时针转四分之一圈	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} counterclockwise eighth half turn	{1}地逆時針轉半圈	{1}地逆时针转半圈	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} counterclockwise eighth half turn from the lead	領舞者{1}地逆時針轉半圈	领舞者{1}地逆时针转半圈	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} counterclockwise eighth half turn from the follower	跟舞者{1}地逆時針轉半圈	跟舞者{1}地逆时针转半圈	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} counterclockwise half turns	{1}地逆時針轉半圈	{1}地逆时针转半圈	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} counterclockwise half turns of the lead	領舞者{1}地逆時針轉半圈	领舞者{1}地逆时针转半圈	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} counterclockwise half turns of the follower	跟舞者{1}地逆時針轉半圈	跟舞者{1}地逆时针转半圈	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} turns	{1}地轉身	{1}地转身	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} turns of the lead	領舞者{1}地轉身	领舞者{1}地转身	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} turns of the follower	跟舞者{1}地轉身	跟舞者{1}地转身	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} clockwise turns	{1}地順時針轉身	{1}地顺时针转身	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} clockwise turns of the lead	領舞者{1}地順時針轉身	领舞者{1}地顺时针转身	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} clockwise turns of the follower	跟舞者{1}地順時針轉身	跟舞者{1}地顺时针转身	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} counterclockwise turns	{1}地逆時針轉身	{1}地逆时针转身	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋動作名（名詞寫死；動詞性動作用「地」）
+{@1} counterclockwise turns of the lead	領舞者{1}地逆時針轉身	领舞者{1}地逆时针转身	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{@1} counterclockwise turns of the follower	跟舞者{1}地逆時針轉身	跟舞者{1}地逆时针转身	inner	FUN_1404e99f0 L619459／FUN_1404ea820 L620776 動作由領舞者／跟舞者做（所有格整句寫出，避免「領舞者的優雅的…」重複「的」與 desc_01 high {%1} 先套）
+{1} is a sacred solo dance {%3}.	{1}是一種{3}神聖獨舞。	{1}是一种{3}神圣独舞。		FUN_1404ea820 L619604 舞蹈形式說明首句：{1} 形式名；{3} 人數與起源（見 inner 規則）
+{1} is a sacred solo dance.	{1}是一種神聖獨舞。	{1}是一种神圣独舞。		FUN_1404ea820 L619604 舞蹈形式說明首句：{1} 形式名；{3} 人數與起源（見 inner 規則）
+{1} is a sacred group dance {%3}.	{1}是一種{3}神聖群舞。	{1}是一种{3}神圣群舞。		FUN_1404ea820 L619604 舞蹈形式說明首句：{1} 形式名；{3} 人數與起源（見 inner 規則）
+{1} is a sacred group dance.	{1}是一種神聖群舞。	{1}是一种神圣群舞。		FUN_1404ea820 L619604 舞蹈形式說明首句：{1} 形式名；{3} 人數與起源（見 inner 規則）
+{1} is a sacred dance {%3}.	{1}是一種{3}神聖舞蹈。	{1}是一种{3}神圣舞蹈。		FUN_1404ea820 L619604 舞蹈形式說明首句：{1} 形式名；{3} 人數與起源（見 inner 規則）
+{1} is a sacred dance.	{1}是一種神聖舞蹈。	{1}是一种神圣舞蹈。		FUN_1404ea820 L619604 舞蹈形式說明首句：{1} 形式名；{3} 人數與起源（見 inner 規則）
+{1} is a solo celebration dance {%3}.	{1}是一種{3}單人慶典舞。	{1}是一种{3}单人庆典舞。		FUN_1404ea820 L619604 舞蹈形式說明首句：{1} 形式名；{3} 人數與起源（見 inner 規則）
+{1} is a solo celebration dance.	{1}是一種單人慶典舞。	{1}是一种单人庆典舞。		FUN_1404ea820 L619604 舞蹈形式說明首句：{1} 形式名；{3} 人數與起源（見 inner 規則）
+{1} is a group celebration dance {%3}.	{1}是一種{3}團體慶典舞。	{1}是一种{3}集体庆典舞。		FUN_1404ea820 L619604 舞蹈形式說明首句：{1} 形式名；{3} 人數與起源（見 inner 規則）
+{1} is a group celebration dance.	{1}是一種團體慶典舞。	{1}是一种集体庆典舞。		FUN_1404ea820 L619604 舞蹈形式說明首句：{1} 形式名；{3} 人數與起源（見 inner 規則）
+{1} is a celebration dance {%3}.	{1}是一種{3}慶典舞。	{1}是一种{3}庆典舞。		FUN_1404ea820 L619604 舞蹈形式說明首句：{1} 形式名；{3} 人數與起源（見 inner 規則）
+{1} is a celebration dance.	{1}是一種慶典舞。	{1}是一种庆典舞。		FUN_1404ea820 L619604 舞蹈形式說明首句：{1} 形式名；{3} 人數與起源（見 inner 規則）
+{1} is a participation dance {%3}.	{1}是一種{3}參與式舞蹈。	{1}是一种{3}参与式舞蹈。		FUN_1404ea820 L619604 舞蹈形式說明首句：{1} 形式名；{3} 人數與起源（見 inner 規則）
+{1} is a participation dance.	{1}是一種參與式舞蹈。	{1}是一种参与式舞蹈。		FUN_1404ea820 L619604 舞蹈形式說明首句：{1} 形式名；{3} 人數與起源（見 inner 規則）
+{1} is a social partner dance {%3}.	{1}是一種{3}雙人交誼舞。	{1}是一种{3}双人交谊舞。		FUN_1404ea820 L619604 舞蹈形式說明首句：{1} 形式名；{3} 人數與起源（見 inner 規則）
+{1} is a social partner dance.	{1}是一種雙人交誼舞。	{1}是一种双人交谊舞。		FUN_1404ea820 L619604 舞蹈形式說明首句：{1} 形式名；{3} 人數與起源（見 inner 規則）
+{1} is a social group dance {%3}.	{1}是一種{3}團體交誼舞。	{1}是一种{3}集体交谊舞。		FUN_1404ea820 L619604 舞蹈形式說明首句：{1} 形式名；{3} 人數與起源（見 inner 規則）
+{1} is a social group dance.	{1}是一種團體交誼舞。	{1}是一种集体交谊舞。		FUN_1404ea820 L619604 舞蹈形式說明首句：{1} 形式名；{3} 人數與起源（見 inner 規則）
+{1} is a social dance {%3}.	{1}是一種{3}交誼舞。	{1}是一种{3}交谊舞。		FUN_1404ea820 L619604 舞蹈形式說明首句：{1} 形式名；{3} 人數與起源（見 inner 規則）
+{1} is a social dance.	{1}是一種交誼舞。	{1}是一种交谊舞。		FUN_1404ea820 L619604 舞蹈形式說明首句：{1} 形式名；{3} 人數與起源（見 inner 規則）
+{1} is a solo performance dance {%3}.	{1}是一種{3}單人表演舞。	{1}是一种{3}单人表演舞。		FUN_1404ea820 L619604 舞蹈形式說明首句：{1} 形式名；{3} 人數與起源（見 inner 規則）
+{1} is a solo performance dance.	{1}是一種單人表演舞。	{1}是一种单人表演舞。		FUN_1404ea820 L619604 舞蹈形式說明首句：{1} 形式名；{3} 人數與起源（見 inner 規則）
+{1} is a group performance dance {%3}.	{1}是一種{3}團體表演舞。	{1}是一种{3}集体表演舞。		FUN_1404ea820 L619604 舞蹈形式說明首句：{1} 形式名；{3} 人數與起源（見 inner 規則）
+{1} is a group performance dance.	{1}是一種團體表演舞。	{1}是一种集体表演舞。		FUN_1404ea820 L619604 舞蹈形式說明首句：{1} 形式名；{3} 人數與起源（見 inner 規則）
+{1} is a performance partner dance {%3}.	{1}是一種{3}雙人表演舞。	{1}是一种{3}双人表演舞。		FUN_1404ea820 L619604 舞蹈形式說明首句：{1} 形式名；{3} 人數與起源（見 inner 規則）
+{1} is a performance partner dance.	{1}是一種雙人表演舞。	{1}是一种双人表演舞。		FUN_1404ea820 L619604 舞蹈形式說明首句：{1} 形式名；{3} 人數與起源（見 inner 規則）
+{1} is a performance dance {%3}.	{1}是一種{3}表演舞。	{1}是一种{3}表演舞。		FUN_1404ea820 L619604 舞蹈形式說明首句：{1} 形式名；{3} 人數與起源（見 inner 規則）
+{1} is a performance dance.	{1}是一種表演舞。	{1}是一种表演舞。		FUN_1404ea820 L619604 舞蹈形式說明首句：{1} 形式名；{3} 人數與起源（見 inner 規則）
+{1} is a war dance {%3}.	{1}是一種{3}戰舞。	{1}是一种{3}战舞。		FUN_1404ea820 L619604 舞蹈形式說明首句：{1} 形式名；{3} 人數與起源（見 inner 規則）
+{1} is a war dance.	{1}是一種戰舞。	{1}是一种战舞。		FUN_1404ea820 L619604 舞蹈形式說明首句：{1} 形式名；{3} 人數與起源（見 inner 規則）
+for {%1} to {%2} pairs originally devised by {3}	由{3}首創、供{1}到{2}對舞伴跳的	由{3}首创、供{1}到{2}对舞伴跳的	inner	FUN_1404ea820 L619670＋L619695 人數＋起源固定組合（排在單獨的人數句型前，不讓人數佔位吞進起源片語；人數用 {%n} 才收得到 twenty-two 這類句型拼出的數字）
+for {%1} to {%2} pairs which grew out of the performances of {3}	從{3}的表演中發展而來、供{1}到{2}對舞伴跳的	从{3}的表演中发展而来、供{1}到{2}对舞伴跳的	inner	FUN_1404ea820 L619670＋L619695 人數＋起源固定組合（排在單獨的人數句型前，不讓人數佔位吞進起源片語；人數用 {%n} 才收得到 twenty-two 這類句型拼出的數字）
+for {%1} to {%2} pairs originating in {3}	源自{3}、供{1}到{2}對舞伴跳的	源自{3}、供{1}到{2}对舞伴跳的	inner	FUN_1404ea820 L619670＋L619695 人數＋起源固定組合（排在單獨的人數句型前，不讓人數佔位吞進起源片語；人數用 {%n} 才收得到 twenty-two 這類句型拼出的數字）
+for {%1} to {%2} dancers originally devised by {3}	由{3}首創、供{1}到{2}名舞者跳的	由{3}首创、供{1}到{2}名舞者跳的	inner	FUN_1404ea820 L619670＋L619695 人數＋起源固定組合（排在單獨的人數句型前，不讓人數佔位吞進起源片語；人數用 {%n} 才收得到 twenty-two 這類句型拼出的數字）
+for {%1} to {%2} dancers which grew out of the performances of {3}	從{3}的表演中發展而來、供{1}到{2}名舞者跳的	从{3}的表演中发展而来、供{1}到{2}名舞者跳的	inner	FUN_1404ea820 L619670＋L619695 人數＋起源固定組合（排在單獨的人數句型前，不讓人數佔位吞進起源片語；人數用 {%n} 才收得到 twenty-two 這類句型拼出的數字）
+for {%1} to {%2} dancers originating in {3}	源自{3}、供{1}到{2}名舞者跳的	源自{3}、供{1}到{2}名舞者跳的	inner	FUN_1404ea820 L619670＋L619695 人數＋起源固定組合（排在單獨的人數句型前，不讓人數佔位吞進起源片語；人數用 {%n} 才收得到 twenty-two 這類句型拼出的數字）
+for {%1} to {%2} originally devised by {3}	由{3}首創、供{1}到{2}人跳的	由{3}首创、供{1}到{2}人跳的	inner	FUN_1404ea820 L619670＋L619695 人數＋起源固定組合（排在單獨的人數句型前，不讓人數佔位吞進起源片語；人數用 {%n} 才收得到 twenty-two 這類句型拼出的數字）
+for {%1} to {%2} which grew out of the performances of {3}	從{3}的表演中發展而來、供{1}到{2}人跳的	从{3}的表演中发展而来、供{1}到{2}人跳的	inner	FUN_1404ea820 L619670＋L619695 人數＋起源固定組合（排在單獨的人數句型前，不讓人數佔位吞進起源片語；人數用 {%n} 才收得到 twenty-two 這類句型拼出的數字）
+for {%1} to {%2} originating in {3}	源自{3}、供{1}到{2}人跳的	源自{3}、供{1}到{2}人跳的	inner	FUN_1404ea820 L619670＋L619695 人數＋起源固定組合（排在單獨的人數句型前，不讓人數佔位吞進起源片語；人數用 {%n} 才收得到 twenty-two 這類句型拼出的數字）
+for a single pair originally devised by {1}	由{1}首創、限一對舞伴跳的	由{1}首创、限一对舞伴跳的	inner	FUN_1404ea820 L619670＋L619695 人數＋起源固定組合（排在單獨的人數句型前，不讓人數佔位吞進起源片語；人數用 {%n} 才收得到 twenty-two 這類句型拼出的數字）
+for a single pair which grew out of the performances of {1}	從{1}的表演中發展而來、限一對舞伴跳的	从{1}的表演中发展而来、限一对舞伴跳的	inner	FUN_1404ea820 L619670＋L619695 人數＋起源固定組合（排在單獨的人數句型前，不讓人數佔位吞進起源片語；人數用 {%n} 才收得到 twenty-two 這類句型拼出的數字）
+for a single pair originating in {1}	源自{1}、限一對舞伴跳的	源自{1}、限一对舞伴跳的	inner	FUN_1404ea820 L619670＋L619695 人數＋起源固定組合（排在單獨的人數句型前，不讓人數佔位吞進起源片語；人數用 {%n} 才收得到 twenty-two 這類句型拼出的數字）
+for {%1} to {%2} pairs	供{1}到{2}對舞伴跳的	供{1}到{2}对舞伴跳的	inner	FUN_1404ea820 L619670 人數（數字字）；接在舞種前
+for {%1} to {%2} dancers	供{1}到{2}名舞者跳的	供{1}到{2}名舞者跳的	inner	FUN_1404ea820 L619670 人數；接在舞種前
+for {%1} to {%2}	供{1}到{2}人跳的	供{1}到{2}人跳的	inner	FUN_1404ea820 L619670 人數（獨舞而上限大於 1）；接在舞種前
+originally devised by {1}	由{1}首創的	由{1}首创的	inner	FUN_1404ea820 L619695 起源：{1} 歷史人物名；接在舞種前
+which grew out of the performances of {1}	從{1}的表演中發展而來的	从{1}的表演中发展而来的	inner	FUN_1404ea820 L619707 起源；接在舞種前
+originating in {1}	源自{1}的	源自{1}的	inner	FUN_1404ea820 L619709 起源：{1} 文明名；接在舞種前
+The {@1} section is distinct.	{1}段自成一格。	{1}段自成一格。		FUN_1404ea820 L621024 沒有對應樂段的段落（序數 FUN_14052eb70 轉小寫）；段落以 [B] 開頭
+The dance begins with the {%1} of the music.	舞蹈從音樂的{1}開始。	舞蹈从音乐的{1}开始。		FUN_1404ea820 L621031 第一段對應的樂段；段落以 [B] 開頭
+The dance enters a new section with the {%1} of the music.	舞蹈隨著音樂的{1}進入新的段落。	舞蹈随着音乐的{1}进入新的段落。		FUN_1404ea820 L621035 後續段落對應的樂段；段落以 [B] 開頭
+The {1} the fundamental dance position.	「{1}」是基本舞姿。	“{1}”是基本舞姿。		FUN_1404e99f0 L618871 特殊舞姿標題（遊戲漏了 is），後接動作步驟句；術語例外：Position；段落以 [B] 開頭；術語例外：Position
+The {1} is one of the fundamental dance positions.	「{1}」是基本舞姿之一。	“{1}”是基本舞姿之一。		FUN_1404e99f0 L618875 特殊舞姿標題（多個），後接動作步驟句；術語例外：Position；段落以 [B] 開頭；術語例外：Position
+The {1} the fundamental dance move.	「{1}」是基本舞步。	“{1}”是基本舞步。		FUN_1404e99f0 L618871 特殊舞步標題（遊戲漏了 is），後接動作步驟句；段落以 [B] 開頭
+The {1} is one of the fundamental dance moves.	「{1}」是基本舞步之一。	“{1}”是基本舞步之一。		FUN_1404e99f0 L618875 特殊舞步標題（多個），後接動作步驟句；段落以 [B] 開頭
+The dance is accompanied by a composition of {1} as the dancer acts out {2}.	這支舞以一首{1}形式的樂曲伴奏，舞者同時演繹{2}。	这支舞以一首{1}形式的乐曲伴奏，舞者同时演绎{2}。		FUN_1404ea820 L619727 伴奏與演繹：{1} 音樂形式名，{2} 演繹的作品或故事
+The dance is accompanied by {1} as the dancer acts out {2}.	這支舞以{1}伴奏，舞者同時演繹{2}。	这支舞以{1}伴奏，舞者同时演绎{2}。		FUN_1404ea820 L619761 伴奏與演繹：{1} 樂曲或音樂形式名
+as the dancer acts out {1}.	舞者演繹{1}。	舞者演绎{1}。		FUN_1404ea820 L619793 沒有伴奏時只剩演繹子句（接在上一句句點後）
+The dance is accompanied by a composition of {1} as the dancers act out {2}.	這支舞以一首{1}形式的樂曲伴奏，舞者們同時演繹{2}。	这支舞以一首{1}形式的乐曲伴奏，舞者们同时演绎{2}。		FUN_1404ea820 L619727 伴奏與演繹：{1} 音樂形式名，{2} 演繹的作品或故事
+The dance is accompanied by {1} as the dancers act out {2}.	這支舞以{1}伴奏，舞者們同時演繹{2}。	这支舞以{1}伴奏，舞者们同时演绎{2}。		FUN_1404ea820 L619761 伴奏與演繹：{1} 樂曲或音樂形式名
+as the dancers act out {1}.	舞者們演繹{1}。	舞者们演绎{1}。		FUN_1404ea820 L619793 沒有伴奏時只剩演繹子句（接在上一句句點後）
+The dance is accompanied by a composition of {1}.	這支舞以一首{1}形式的樂曲伴奏。	这支舞以一首{1}形式的乐曲伴奏。		FUN_1404ea820 L619727 伴奏：{1} 音樂形式名
+The dance is accompanied by {1}.	這支舞以{1}伴奏。	这支舞以{1}伴奏。		FUN_1404ea820 L619761 伴奏：{1} 樂曲名
+composition of {1}	{1}形式的作品	{1}形式的作品	inner	FUN_1404ea820 L619745 演繹對象（前面的 a 由 articles 去掉）：{1} 詩歌形式名
+story of {1}	{1}的故事	{1}的故事	inner	FUN_1404ea820 L619801 演繹對象 the story of（the 由 articles 去掉）：{1} 歷史人物名
+The dancers perform {%1}.	舞者們{1}。	舞者们{1}。		FUN_1404ea820 L619836／L621169 隊形、路線與速度
+The dancer performs {%1}.	舞者{1}。	舞者{1}。		FUN_1404ea820 L619834／L621167 隊形（獨舞）
+{@1} along a clockwise circle	{1}，沿順時針方向繞圈	{1}，沿顺时针方向绕圈	inner	FUN_1404ea820 L619865 隊形＋路線
+{@1} turning clockwise	{1}，順時針轉動	{1}，顺时针转动	inner	FUN_1404ea820 L619865 隊形＋路線
+{@1} along a counterclockwise circle	{1}，沿逆時針方向繞圈	{1}，沿逆时针方向绕圈	inner	FUN_1404ea820 L619865 隊形＋路線
+{@1} turning counterclockwise	{1}，逆時針轉動	{1}，逆时针转动	inner	FUN_1404ea820 L619865 隊形＋路線
+{@1} along an improvised path	{1}，沿著即興的路線移動	{1}，沿着即兴的路线移动	inner	FUN_1404ea820 L619865 隊形＋路線
+{@1} along an intricate path	{1}，沿著繁複的路線移動	{1}，沿着复杂的路线移动	inner	FUN_1404ea820 L619865 隊形＋路線
+{%1}, moving {%2}	{1}，{2}	{1}，{2}	inner	FUN_1404ea820 L619896 隊形後接移動方式
+{@1} with the music	隨著音樂{1}移動	随着音乐{1}移动	inner	FUN_1404ea820 L619933 速度＋移動方式
+to the music's {1} rhythm	隨著音樂的{1}節奏移動	随着音乐的{1}节奏移动	inner	FUN_1404ea820 L619942 移動方式：{1} 節奏名
+{@1} to the music's {2} rhythm	隨著音樂的{2}節奏{1}移動	随着音乐的{2}节奏{1}移动	inner	FUN_1404ea820 L619942 速度＋節奏
+to the {1} rhythm	隨著{1}節奏移動	随着{1}节奏移动	inner	FUN_1404ea820 L621322 段落的移動方式：{1} 節奏名
+{@1} to the {2} rhythm	隨著{2}節奏{1}移動	随着{2}节奏{1}移动	inner	FUN_1404ea820 L621322 段落的速度＋節奏
+The partners {@1}, communicating intent {@2}.	舞伴{1}，{2}傳達意圖。	舞伴{1}，{2}传达意图。		FUN_1404ea820 L619960／L621360 舞伴接觸與傳達意圖的方式
+The partners {@1}, communicating intent.	舞伴{1}，並傳達意圖。	舞伴{1}，并传达意图。		FUN_1404ea820 L619977 傳達方式未定時
+There are partner changes throughout the dance {%1} and {%2}.	整支舞中會交換舞伴：{1}，以及{2}。	整支舞中会交换舞伴：{1}，以及{2}。		FUN_1404ea820 L620052 換舞伴方式（多項，以 , 與 and 連接）
+There are partner changes throughout the dance {%1}.	整支舞中會交換舞伴：{1}。	整支舞中会交换舞伴：{1}。		FUN_1404ea820 L620052 換舞伴方式
+There are partner changes {%1} and {%2}.	這一段會交換舞伴：{1}，以及{2}。	这一段会交换舞伴：{1}，以及{2}。		FUN_1404ea820 L621500 段落的換舞伴方式（多項）
+There are partner changes {%1}.	這一段會交換舞伴：{1}。	这一段会交换舞伴：{1}。		FUN_1404ea820 L621500 段落的換舞伴方式
+{%1},{%2}	{1}、{2}	{1}、{2}	inner	FUN_1404ea820 L620087／L621536 換舞伴方式清單：遊戲用不帶空白的逗號（DAT_1415fd504）接項目
+The dancers imitate the movement of the {%1}.	舞者們模仿{1}的動作。	舞者们模仿{1}的动作。		FUN_1404ea820 L620136／L621450 {1} 生物名（單數；未知時是 creature）
+This dance is a refined artform, with {%1} to be mastered.	這支舞是一門精緻的藝術，有{1}需要精通。	这支舞是一门精致的艺术，有{1}需要掌握。		FUN_1404ea820 L620144 特殊舞姿與舞步數量
+{%1} special position	{1}個特殊舞姿	{1}个特殊舞姿	inner	FUN_1404ea820 L620150 特殊舞姿數量（數字字）；術語例外：Position；術語例外：Position
+{%1} specific move	{1}個特定舞步	{1}个特定舞步	inner	FUN_1404ea820 L620165 特定舞步數量
+{%1} special position and {%2} specific move	{1}個特殊舞姿和{2}個特定舞步	{1}个特殊舞姿和{2}个特定舞步	inner	FUN_1404ea820 L620156 舞姿與舞步數量；術語例外：Position；術語例外：Position
+{%1} special position and {%2} specific moves	{1}個特殊舞姿和{2}個特定舞步	{1}个特殊舞姿和{2}个特定舞步	inner	FUN_1404ea820 L620156 舞姿與舞步數量；術語例外：Position；術語例外：Position
+{%1} special positions and {%2} specific move	{1}個特殊舞姿和{2}個特定舞步	{1}个特殊舞姿和{2}个特定舞步	inner	FUN_1404ea820 L620156 舞姿與舞步數量；術語例外：Position；術語例外：Position
+{%1} special positions and {%2} specific moves	{1}個特殊舞姿和{2}個特定舞步	{1}个特殊舞姿和{2}个特定舞步	inner	FUN_1404ea820 L620156 舞姿與舞步數量；術語例外：Position；術語例外：Position
+{%1} special positions	{1}個特殊舞姿	{1}个特殊舞姿	inner	FUN_1404ea820 L620150 特殊舞姿數量（數字字）；術語例外：Position；術語例外：Position
+{%1} specific moves	{1}個特定舞步	{1}个特定舞步	inner	FUN_1404ea820 L620165 特定舞步數量
+The entire dance has a basic movement called the {1}.	整支舞有一個基本動作，名為「{1}」。	整支舞有一个基本动作，名为“{1}”。		FUN_1404ea820 L620175＋FUN_1404e99f0 L618896 基本動作：{1} 動作名，後接動作步驟句
+There is a basic movement called the {1}.	這一段有一個基本動作，名為「{1}」。	这一段有一个基本动作，名为“{1}”。		FUN_1404ea820 L621553＋FUN_1404e99f0 L618896 段落的基本動作
+movement {@1} by group members	由群舞成員{1}的動作	由群舞成员{1}的动作	inner	FUN_1404ea820 L620846 點綴清單的 movement 由群舞成員呼應（movement 全域是「移動」，寫死）
+{%1} {@2} by group members	由群舞成員{2}的{1}	由群舞成员{2}的{1}	inner	FUN_1404ea820 L620768／FUN_1404e99f0 L619453 動作由群舞成員呼應
+{%1} from the lead	領舞者的{1}	领舞者的{1}	inner	FUN_1404e99f0 L619465 動作由領舞者做
+{%1} from the follower	跟舞者的{1}	跟舞者的{1}	inner	FUN_1404e99f0 L619459 動作由跟舞者做
+{%1} of the lead	領舞者的{1}	领舞者的{1}	inner	FUN_1404ea820 L620780 動作由領舞者做（點綴清單）
+{%1} of the follower	跟舞者的{1}	跟舞者的{1}	inner	FUN_1404ea820 L620776 動作由跟舞者做（點綴清單）
+series of {%1} {%2} in {%3}	一連串{1}個{2}（走成{3}）	一连串{1}个{2}（走成{3}）	inner	FUN_1404e99f0 L618976 一連串舞步：{1} 數字字，{2} （形容詞＋）steps，{3} 圖形（a/an 由 articles 去掉）
+There is {%1} with {%2} and {%3}.	包含{1}，搭配{2}和{3}。	包含{1}，搭配{2}和{3}。		FUN_1404e99f0 L618953 動作步驟（should be 是舞姿；First／Then／Finally 是分段）
+There is {%1} with {%2}.	包含{1}，搭配{2}。	包含{1}，搭配{2}。		FUN_1404e99f0 L618953 動作步驟（should be 是舞姿；First／Then／Finally 是分段）
+There is {%1}.	包含{1}。	包含{1}。		FUN_1404e99f0 L618953 動作步驟（should be 是舞姿；First／Then／Finally 是分段）
+There should be {%1} with {%2} and {%3}.	應呈現{1}，搭配{2}和{3}。	应呈现{1}，搭配{2}和{3}。		FUN_1404e99f0 L618953 動作步驟（should be 是舞姿；First／Then／Finally 是分段）
+There should be {%1} with {%2}.	應呈現{1}，搭配{2}。	应呈现{1}，搭配{2}。		FUN_1404e99f0 L618953 動作步驟（should be 是舞姿；First／Then／Finally 是分段）
+There should be {%1}.	應呈現{1}。	应呈现{1}。		FUN_1404e99f0 L618953 動作步驟（should be 是舞姿；First／Then／Finally 是分段）
+Then there is {%1} with {%2} and {%3}.	接著是{1}，搭配{2}和{3}。	接着是{1}，搭配{2}和{3}。		FUN_1404e99f0 L618953 動作步驟（should be 是舞姿；First／Then／Finally 是分段）
+Then there is {%1} with {%2}.	接著是{1}，搭配{2}。	接着是{1}，搭配{2}。		FUN_1404e99f0 L618953 動作步驟（should be 是舞姿；First／Then／Finally 是分段）
+Then there is {%1}.	接著是{1}。	接着是{1}。		FUN_1404e99f0 L618953 動作步驟（should be 是舞姿；First／Then／Finally 是分段）
+Then there should be {%1} with {%2} and {%3}.	接著應呈現{1}，搭配{2}和{3}。	接着应呈现{1}，搭配{2}和{3}。		FUN_1404e99f0 L618953 動作步驟（should be 是舞姿；First／Then／Finally 是分段）
+Then there should be {%1} with {%2}.	接著應呈現{1}，搭配{2}。	接着应呈现{1}，搭配{2}。		FUN_1404e99f0 L618953 動作步驟（should be 是舞姿；First／Then／Finally 是分段）
+Then there should be {%1}.	接著應呈現{1}。	接着应呈现{1}。		FUN_1404e99f0 L618953 動作步驟（should be 是舞姿；First／Then／Finally 是分段）
+Finally, there is {%1} with {%2} and {%3}.	最後是{1}，搭配{2}和{3}。	最后是{1}，搭配{2}和{3}。		FUN_1404e99f0 L618953 動作步驟（should be 是舞姿；First／Then／Finally 是分段）
+Finally, there is {%1} with {%2}.	最後是{1}，搭配{2}。	最后是{1}，搭配{2}。		FUN_1404e99f0 L618953 動作步驟（should be 是舞姿；First／Then／Finally 是分段）
+Finally, there is {%1}.	最後是{1}。	最后是{1}。		FUN_1404e99f0 L618953 動作步驟（should be 是舞姿；First／Then／Finally 是分段）
+Finally, there should be {%1} with {%2} and {%3}.	最後應呈現{1}，搭配{2}和{3}。	最后应呈现{1}，搭配{2}和{3}。		FUN_1404e99f0 L618953 動作步驟（should be 是舞姿；First／Then／Finally 是分段）
+Finally, there should be {%1} with {%2}.	最後應呈現{1}，搭配{2}。	最后应呈现{1}，搭配{2}。		FUN_1404e99f0 L618953 動作步驟（should be 是舞姿；First／Then／Finally 是分段）
+Finally, there should be {%1}.	最後應呈現{1}。	最后应呈现{1}。		FUN_1404e99f0 L618953 動作步驟（should be 是舞姿；First／Then／Finally 是分段）
+The dance is fluid, {%1} and {%2}.	這支舞風格流暢、{1}而{2}。	这支舞风格流畅、{1}而{2}。		FUN_1404ea820 L620258／L621638 風格形容詞（含 fluid，單字已是「體液」）
+The dance is {%1}, fluid and {%2}.	這支舞風格{1}、流暢而{2}。	这支舞风格{1}、流畅而{2}。		FUN_1404ea820 L620258／L621638 風格形容詞（含 fluid，單字已是「體液」）
+The dance is fluid and {%1}.	這支舞風格流暢而{1}。	这支舞风格流畅而{1}。		FUN_1404ea820 L620258／L621638 風格形容詞（含 fluid，單字已是「體液」）
+The dance is {%1} and fluid.	這支舞風格{1}而流暢。	这支舞风格{1}而流畅。		FUN_1404ea820 L620258／L621638 風格形容詞（含 fluid，單字已是「體液」）
+The dance is {%1} and {%2}.	這支舞風格{1}而{2}。	这支舞风格{1}而{2}。		FUN_1404ea820 L620258／L621638 風格形容詞
+This section is fluid, {%1} and {%2}.	這一段風格流暢、{1}而{2}。	这一段风格流畅、{1}而{2}。		FUN_1404ea820 L620258／L621638 段落風格形容詞（含 fluid，單字已是「體液」）
+This section is {%1}, fluid and {%2}.	這一段風格{1}、流暢而{2}。	这一段风格{1}、流畅而{2}。		FUN_1404ea820 L620258／L621638 段落風格形容詞（含 fluid，單字已是「體液」）
+This section is fluid and {%1}.	這一段風格流暢而{1}。	这一段风格流畅而{1}。		FUN_1404ea820 L620258／L621638 段落風格形容詞（含 fluid，單字已是「體液」）
+This section is {%1} and fluid.	這一段風格{1}而流暢。	这一段风格{1}而流畅。		FUN_1404ea820 L620258／L621638 段落風格形容詞（含 fluid，單字已是「體液」）
+This section is {%1} and {%2}.	這一段風格{1}而{2}。	这一段风格{1}而{2}。		FUN_1404ea820 L620258／L621638 段落風格形容詞
+The dance is punctuated by {%1} and {%2}, with {%3} and movement.	這支舞穿插著{1}和{2}，並帶有{3}和動作。	这支舞穿插着{1}和{2}，并带有{3}和动作。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（with 後是 movement，全域是「移動」）
+The dance is punctuated by {%1} and {%2}, with {%3} and {%4}.	這支舞穿插著{1}和{2}，並帶有{3}和{4}。	这支舞穿插着{1}和{2}，并带有{3}和{4}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）
+The dance is punctuated by {%1}, with {%3} and movement.	這支舞穿插著{1}，並帶有{3}和動作。	这支舞穿插着{1}，并带有{3}和动作。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（with 後是 movement，全域是「移動」）
+The dance is punctuated by {%1}, with {%3} and {%4}.	這支舞穿插著{1}，並帶有{3}和{4}。	这支舞穿插着{1}，并带有{3}和{4}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）
+The dance is punctuated by {%1} and {%2}, with movement.	這支舞穿插著{1}和{2}，並帶有動作。	这支舞穿插着{1}和{2}，并带有动作。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（with 後是 movement）
+The dance is punctuated by {%1} and {%2}, with {%3}.	這支舞穿插著{1}和{2}，並帶有{3}。	这支舞穿插着{1}和{2}，并带有{3}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）
+The dance is punctuated by {%1}, with movement.	這支舞穿插著{1}，並帶有動作。	这支舞穿插着{1}，并带有动作。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（with 後是 movement）
+The dance is punctuated by {%1}, with {%3}.	這支舞穿插著{1}，並帶有{3}。	这支舞穿插着{1}，并带有{3}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）
+The dance is punctuated by {%1} and {%2}.	這支舞穿插著{1}和{2}。	这支舞穿插着{1}和{2}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）
+The dance is punctuated by {%1}.	這支舞穿插著{1}。	这支舞穿插着{1}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）
+The fluid dance is punctuated by {%1} and {%2}, with {%3} and movement.	這支流暢的舞蹈穿插著{1}和{2}，並帶有{3}和動作。	这支流畅的舞蹈穿插着{1}和{2}，并带有{3}和动作。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（with 後是 movement，全域是「移動」）
+The fluid dance is punctuated by {%1} and {%2}, with {%3} and {%4}.	這支流暢的舞蹈穿插著{1}和{2}，並帶有{3}和{4}。	这支流畅的舞蹈穿插着{1}和{2}，并带有{3}和{4}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）
+The fluid dance is punctuated by {%1}, with {%3} and movement.	這支流暢的舞蹈穿插著{1}，並帶有{3}和動作。	这支流畅的舞蹈穿插着{1}，并带有{3}和动作。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（with 後是 movement，全域是「移動」）
+The fluid dance is punctuated by {%1}, with {%3} and {%4}.	這支流暢的舞蹈穿插著{1}，並帶有{3}和{4}。	这支流畅的舞蹈穿插着{1}，并带有{3}和{4}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）
+The fluid dance is punctuated by {%1} and {%2}, with movement.	這支流暢的舞蹈穿插著{1}和{2}，並帶有動作。	这支流畅的舞蹈穿插着{1}和{2}，并带有动作。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（with 後是 movement）
+The fluid dance is punctuated by {%1} and {%2}, with {%3}.	這支流暢的舞蹈穿插著{1}和{2}，並帶有{3}。	这支流畅的舞蹈穿插着{1}和{2}，并带有{3}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）
+The fluid dance is punctuated by {%1}, with movement.	這支流暢的舞蹈穿插著{1}，並帶有動作。	这支流畅的舞蹈穿插着{1}，并带有动作。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（with 後是 movement）
+The fluid dance is punctuated by {%1}, with {%3}.	這支流暢的舞蹈穿插著{1}，並帶有{3}。	这支流畅的舞蹈穿插着{1}，并带有{3}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）
+The fluid dance is punctuated by {%1} and {%2}.	這支流暢的舞蹈穿插著{1}和{2}。	这支流畅的舞蹈穿插着{1}和{2}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）
+The fluid dance is punctuated by {%1}.	這支流暢的舞蹈穿插著{1}。	这支流畅的舞蹈穿插着{1}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）
+The fluid {%8} dance is punctuated by {%1} and {%2}, with {%3} and movement.	這支流暢、{8}的舞蹈穿插著{1}和{2}，並帶有{3}和動作。	这支流畅、{8}的舞蹈穿插着{1}和{2}，并带有{3}和动作。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（名稱形容詞含 fluid，全域是「體液」）（with 後是 movement，全域是「移動」）
+The fluid {%8} dance is punctuated by {%1} and {%2}, with {%3} and {%4}.	這支流暢、{8}的舞蹈穿插著{1}和{2}，並帶有{3}和{4}。	这支流畅、{8}的舞蹈穿插着{1}和{2}，并带有{3}和{4}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（名稱形容詞含 fluid，全域是「體液」）
+The {%8} fluid dance is punctuated by {%1} and {%2}, with {%3} and movement.	這支{8}、流暢的舞蹈穿插著{1}和{2}，並帶有{3}和動作。	这支{8}、流畅的舞蹈穿插着{1}和{2}，并带有{3}和动作。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（名稱形容詞含 fluid，全域是「體液」）（with 後是 movement，全域是「移動」）
+The {%8} fluid dance is punctuated by {%1} and {%2}, with {%3} and {%4}.	這支{8}、流暢的舞蹈穿插著{1}和{2}，並帶有{3}和{4}。	这支{8}、流畅的舞蹈穿插着{1}和{2}，并带有{3}和{4}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（名稱形容詞含 fluid，全域是「體液」）
+The {%8} dance is punctuated by {%1} and {%2}, with {%3} and movement.	這支{8}的舞蹈穿插著{1}和{2}，並帶有{3}和動作。	这支{8}的舞蹈穿插着{1}和{2}，并带有{3}和动作。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（with 後是 movement，全域是「移動」）
+The {%8} dance is punctuated by {%1} and {%2}, with {%3} and {%4}.	這支{8}的舞蹈穿插著{1}和{2}，並帶有{3}和{4}。	这支{8}的舞蹈穿插着{1}和{2}，并带有{3}和{4}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）
+The fluid {%8} dance is punctuated by {%1}, with {%3} and movement.	這支流暢、{8}的舞蹈穿插著{1}，並帶有{3}和動作。	这支流畅、{8}的舞蹈穿插着{1}，并带有{3}和动作。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（名稱形容詞含 fluid，全域是「體液」）（with 後是 movement，全域是「移動」）
+The fluid {%8} dance is punctuated by {%1}, with {%3} and {%4}.	這支流暢、{8}的舞蹈穿插著{1}，並帶有{3}和{4}。	这支流畅、{8}的舞蹈穿插着{1}，并带有{3}和{4}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（名稱形容詞含 fluid，全域是「體液」）
+The {%8} fluid dance is punctuated by {%1}, with {%3} and movement.	這支{8}、流暢的舞蹈穿插著{1}，並帶有{3}和動作。	这支{8}、流畅的舞蹈穿插着{1}，并带有{3}和动作。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（名稱形容詞含 fluid，全域是「體液」）（with 後是 movement，全域是「移動」）
+The {%8} fluid dance is punctuated by {%1}, with {%3} and {%4}.	這支{8}、流暢的舞蹈穿插著{1}，並帶有{3}和{4}。	这支{8}、流畅的舞蹈穿插着{1}，并带有{3}和{4}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（名稱形容詞含 fluid，全域是「體液」）
+The {%8} dance is punctuated by {%1}, with {%3} and movement.	這支{8}的舞蹈穿插著{1}，並帶有{3}和動作。	这支{8}的舞蹈穿插着{1}，并带有{3}和动作。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（with 後是 movement，全域是「移動」）
+The {%8} dance is punctuated by {%1}, with {%3} and {%4}.	這支{8}的舞蹈穿插著{1}，並帶有{3}和{4}。	这支{8}的舞蹈穿插着{1}，并带有{3}和{4}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）
+The fluid {%8} dance is punctuated by {%1} and {%2}, with movement.	這支流暢、{8}的舞蹈穿插著{1}和{2}，並帶有動作。	这支流畅、{8}的舞蹈穿插着{1}和{2}，并带有动作。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（名稱形容詞含 fluid，全域是「體液」）（with 後是 movement）
+The fluid {%8} dance is punctuated by {%1} and {%2}, with {%3}.	這支流暢、{8}的舞蹈穿插著{1}和{2}，並帶有{3}。	这支流畅、{8}的舞蹈穿插着{1}和{2}，并带有{3}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（名稱形容詞含 fluid，全域是「體液」）
+The {%8} fluid dance is punctuated by {%1} and {%2}, with movement.	這支{8}、流暢的舞蹈穿插著{1}和{2}，並帶有動作。	这支{8}、流畅的舞蹈穿插着{1}和{2}，并带有动作。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（名稱形容詞含 fluid，全域是「體液」）（with 後是 movement）
+The {%8} fluid dance is punctuated by {%1} and {%2}, with {%3}.	這支{8}、流暢的舞蹈穿插著{1}和{2}，並帶有{3}。	这支{8}、流畅的舞蹈穿插着{1}和{2}，并带有{3}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（名稱形容詞含 fluid，全域是「體液」）
+The {%8} dance is punctuated by {%1} and {%2}, with movement.	這支{8}的舞蹈穿插著{1}和{2}，並帶有動作。	这支{8}的舞蹈穿插着{1}和{2}，并带有动作。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（with 後是 movement）
+The {%8} dance is punctuated by {%1} and {%2}, with {%3}.	這支{8}的舞蹈穿插著{1}和{2}，並帶有{3}。	这支{8}的舞蹈穿插着{1}和{2}，并带有{3}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）
+The fluid {%8} dance is punctuated by {%1}, with movement.	這支流暢、{8}的舞蹈穿插著{1}，並帶有動作。	这支流畅、{8}的舞蹈穿插着{1}，并带有动作。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（名稱形容詞含 fluid，全域是「體液」）（with 後是 movement）
+The fluid {%8} dance is punctuated by {%1}, with {%3}.	這支流暢、{8}的舞蹈穿插著{1}，並帶有{3}。	这支流畅、{8}的舞蹈穿插着{1}，并带有{3}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（名稱形容詞含 fluid，全域是「體液」）
+The {%8} fluid dance is punctuated by {%1}, with movement.	這支{8}、流暢的舞蹈穿插著{1}，並帶有動作。	这支{8}、流畅的舞蹈穿插着{1}，并带有动作。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（名稱形容詞含 fluid，全域是「體液」）（with 後是 movement）
+The {%8} fluid dance is punctuated by {%1}, with {%3}.	這支{8}、流暢的舞蹈穿插著{1}，並帶有{3}。	这支{8}、流畅的舞蹈穿插着{1}，并带有{3}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（名稱形容詞含 fluid，全域是「體液」）
+The {%8} dance is punctuated by {%1}, with movement.	這支{8}的舞蹈穿插著{1}，並帶有動作。	这支{8}的舞蹈穿插着{1}，并带有动作。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（with 後是 movement）
+The {%8} dance is punctuated by {%1}, with {%3}.	這支{8}的舞蹈穿插著{1}，並帶有{3}。	这支{8}的舞蹈穿插着{1}，并带有{3}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）
+The fluid {%8} dance is punctuated by {%1} and {%2}.	這支流暢、{8}的舞蹈穿插著{1}和{2}。	这支流畅、{8}的舞蹈穿插着{1}和{2}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（名稱形容詞含 fluid，全域是「體液」）
+The {%8} fluid dance is punctuated by {%1} and {%2}.	這支{8}、流暢的舞蹈穿插著{1}和{2}。	这支{8}、流畅的舞蹈穿插着{1}和{2}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（名稱形容詞含 fluid，全域是「體液」）
+The {%8} dance is punctuated by {%1} and {%2}.	這支{8}的舞蹈穿插著{1}和{2}。	这支{8}的舞蹈穿插着{1}和{2}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）
+The fluid {%8} dance is punctuated by {%1}.	這支流暢、{8}的舞蹈穿插著{1}。	这支流畅、{8}的舞蹈穿插着{1}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（名稱形容詞含 fluid，全域是「體液」）
+The {%8} fluid dance is punctuated by {%1}.	這支{8}、流暢的舞蹈穿插著{1}。	这支{8}、流畅的舞蹈穿插着{1}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（名稱形容詞含 fluid，全域是「體液」）
+The {%8} dance is punctuated by {%1}.	這支{8}的舞蹈穿插著{1}。	这支{8}的舞蹈穿插着{1}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）
+This section is punctuated by {%1} and {%2}, with {%3} and movement.	這一段穿插著{1}和{2}，並帶有{3}和動作。	这一段穿插着{1}和{2}，并带有{3}和动作。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（with 後是 movement，全域是「移動」）
+This section is punctuated by {%1} and {%2}, with {%3} and {%4}.	這一段穿插著{1}和{2}，並帶有{3}和{4}。	这一段穿插着{1}和{2}，并带有{3}和{4}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）
+This section is punctuated by {%1}, with {%3} and movement.	這一段穿插著{1}，並帶有{3}和動作。	这一段穿插着{1}，并带有{3}和动作。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（with 後是 movement，全域是「移動」）
+This section is punctuated by {%1}, with {%3} and {%4}.	這一段穿插著{1}，並帶有{3}和{4}。	这一段穿插着{1}，并带有{3}和{4}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）
+This section is punctuated by {%1} and {%2}, with movement.	這一段穿插著{1}和{2}，並帶有動作。	这一段穿插着{1}和{2}，并带有动作。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（with 後是 movement）
+This section is punctuated by {%1} and {%2}, with {%3}.	這一段穿插著{1}和{2}，並帶有{3}。	这一段穿插着{1}和{2}，并带有{3}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）
+This section is punctuated by {%1}, with movement.	這一段穿插著{1}，並帶有動作。	这一段穿插着{1}，并带有动作。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（with 後是 movement）
+This section is punctuated by {%1}, with {%3}.	這一段穿插著{1}，並帶有{3}。	这一段穿插着{1}，并带有{3}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）
+This section is punctuated by {%1} and {%2}.	這一段穿插著{1}和{2}。	这一段穿插着{1}和{2}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）
+This section is punctuated by {%1}.	這一段穿插著{1}。	这一段穿插着{1}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）
+This fluid section is punctuated by {%1} and {%2}, with {%3} and movement.	這段流暢的段落穿插著{1}和{2}，並帶有{3}和動作。	这段流畅的段落穿插着{1}和{2}，并带有{3}和动作。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（with 後是 movement，全域是「移動」）
+This fluid section is punctuated by {%1} and {%2}, with {%3} and {%4}.	這段流暢的段落穿插著{1}和{2}，並帶有{3}和{4}。	这段流畅的段落穿插着{1}和{2}，并带有{3}和{4}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）
+This fluid section is punctuated by {%1}, with {%3} and movement.	這段流暢的段落穿插著{1}，並帶有{3}和動作。	这段流畅的段落穿插着{1}，并带有{3}和动作。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（with 後是 movement，全域是「移動」）
+This fluid section is punctuated by {%1}, with {%3} and {%4}.	這段流暢的段落穿插著{1}，並帶有{3}和{4}。	这段流畅的段落穿插着{1}，并带有{3}和{4}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）
+This fluid section is punctuated by {%1} and {%2}, with movement.	這段流暢的段落穿插著{1}和{2}，並帶有動作。	这段流畅的段落穿插着{1}和{2}，并带有动作。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（with 後是 movement）
+This fluid section is punctuated by {%1} and {%2}, with {%3}.	這段流暢的段落穿插著{1}和{2}，並帶有{3}。	这段流畅的段落穿插着{1}和{2}，并带有{3}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）
+This fluid section is punctuated by {%1}, with movement.	這段流暢的段落穿插著{1}，並帶有動作。	这段流畅的段落穿插着{1}，并带有动作。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（with 後是 movement）
+This fluid section is punctuated by {%1}, with {%3}.	這段流暢的段落穿插著{1}，並帶有{3}。	这段流畅的段落穿插着{1}，并带有{3}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）
+This fluid section is punctuated by {%1} and {%2}.	這段流暢的段落穿插著{1}和{2}。	这段流畅的段落穿插着{1}和{2}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）
+This fluid section is punctuated by {%1}.	這段流暢的段落穿插著{1}。	这段流畅的段落穿插着{1}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）
+This fluid {%8} section is punctuated by {%1} and {%2}, with {%3} and movement.	這段流暢、{8}的段落穿插著{1}和{2}，並帶有{3}和動作。	这段流畅、{8}的段落穿插着{1}和{2}，并带有{3}和动作。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（名稱形容詞含 fluid，全域是「體液」）（with 後是 movement，全域是「移動」）
+This fluid {%8} section is punctuated by {%1} and {%2}, with {%3} and {%4}.	這段流暢、{8}的段落穿插著{1}和{2}，並帶有{3}和{4}。	这段流畅、{8}的段落穿插着{1}和{2}，并带有{3}和{4}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（名稱形容詞含 fluid，全域是「體液」）
+This {%8} fluid section is punctuated by {%1} and {%2}, with {%3} and movement.	這段{8}、流暢的段落穿插著{1}和{2}，並帶有{3}和動作。	这段{8}、流畅的段落穿插着{1}和{2}，并带有{3}和动作。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（名稱形容詞含 fluid，全域是「體液」）（with 後是 movement，全域是「移動」）
+This {%8} fluid section is punctuated by {%1} and {%2}, with {%3} and {%4}.	這段{8}、流暢的段落穿插著{1}和{2}，並帶有{3}和{4}。	这段{8}、流畅的段落穿插着{1}和{2}，并带有{3}和{4}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（名稱形容詞含 fluid，全域是「體液」）
+This {%8} section is punctuated by {%1} and {%2}, with {%3} and movement.	這段{8}的段落穿插著{1}和{2}，並帶有{3}和動作。	这段{8}的段落穿插着{1}和{2}，并带有{3}和动作。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（with 後是 movement，全域是「移動」）
+This {%8} section is punctuated by {%1} and {%2}, with {%3} and {%4}.	這段{8}的段落穿插著{1}和{2}，並帶有{3}和{4}。	这段{8}的段落穿插着{1}和{2}，并带有{3}和{4}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）
+This fluid {%8} section is punctuated by {%1}, with {%3} and movement.	這段流暢、{8}的段落穿插著{1}，並帶有{3}和動作。	这段流畅、{8}的段落穿插着{1}，并带有{3}和动作。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（名稱形容詞含 fluid，全域是「體液」）（with 後是 movement，全域是「移動」）
+This fluid {%8} section is punctuated by {%1}, with {%3} and {%4}.	這段流暢、{8}的段落穿插著{1}，並帶有{3}和{4}。	这段流畅、{8}的段落穿插着{1}，并带有{3}和{4}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（名稱形容詞含 fluid，全域是「體液」）
+This {%8} fluid section is punctuated by {%1}, with {%3} and movement.	這段{8}、流暢的段落穿插著{1}，並帶有{3}和動作。	这段{8}、流畅的段落穿插着{1}，并带有{3}和动作。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（名稱形容詞含 fluid，全域是「體液」）（with 後是 movement，全域是「移動」）
+This {%8} fluid section is punctuated by {%1}, with {%3} and {%4}.	這段{8}、流暢的段落穿插著{1}，並帶有{3}和{4}。	这段{8}、流畅的段落穿插着{1}，并带有{3}和{4}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（名稱形容詞含 fluid，全域是「體液」）
+This {%8} section is punctuated by {%1}, with {%3} and movement.	這段{8}的段落穿插著{1}，並帶有{3}和動作。	这段{8}的段落穿插着{1}，并带有{3}和动作。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（with 後是 movement，全域是「移動」）
+This {%8} section is punctuated by {%1}, with {%3} and {%4}.	這段{8}的段落穿插著{1}，並帶有{3}和{4}。	这段{8}的段落穿插着{1}，并带有{3}和{4}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）
+This fluid {%8} section is punctuated by {%1} and {%2}, with movement.	這段流暢、{8}的段落穿插著{1}和{2}，並帶有動作。	这段流畅、{8}的段落穿插着{1}和{2}，并带有动作。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（名稱形容詞含 fluid，全域是「體液」）（with 後是 movement）
+This fluid {%8} section is punctuated by {%1} and {%2}, with {%3}.	這段流暢、{8}的段落穿插著{1}和{2}，並帶有{3}。	这段流畅、{8}的段落穿插着{1}和{2}，并带有{3}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（名稱形容詞含 fluid，全域是「體液」）
+This {%8} fluid section is punctuated by {%1} and {%2}, with movement.	這段{8}、流暢的段落穿插著{1}和{2}，並帶有動作。	这段{8}、流畅的段落穿插着{1}和{2}，并带有动作。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（名稱形容詞含 fluid，全域是「體液」）（with 後是 movement）
+This {%8} fluid section is punctuated by {%1} and {%2}, with {%3}.	這段{8}、流暢的段落穿插著{1}和{2}，並帶有{3}。	这段{8}、流畅的段落穿插着{1}和{2}，并带有{3}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（名稱形容詞含 fluid，全域是「體液」）
+This {%8} section is punctuated by {%1} and {%2}, with movement.	這段{8}的段落穿插著{1}和{2}，並帶有動作。	这段{8}的段落穿插着{1}和{2}，并带有动作。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（with 後是 movement）
+This {%8} section is punctuated by {%1} and {%2}, with {%3}.	這段{8}的段落穿插著{1}和{2}，並帶有{3}。	这段{8}的段落穿插着{1}和{2}，并带有{3}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）
+This fluid {%8} section is punctuated by {%1}, with movement.	這段流暢、{8}的段落穿插著{1}，並帶有動作。	这段流畅、{8}的段落穿插着{1}，并带有动作。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（名稱形容詞含 fluid，全域是「體液」）（with 後是 movement）
+This fluid {%8} section is punctuated by {%1}, with {%3}.	這段流暢、{8}的段落穿插著{1}，並帶有{3}。	这段流畅、{8}的段落穿插着{1}，并带有{3}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（名稱形容詞含 fluid，全域是「體液」）
+This {%8} fluid section is punctuated by {%1}, with movement.	這段{8}、流暢的段落穿插著{1}，並帶有動作。	这段{8}、流畅的段落穿插着{1}，并带有动作。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（名稱形容詞含 fluid，全域是「體液」）（with 後是 movement）
+This {%8} fluid section is punctuated by {%1}, with {%3}.	這段{8}、流暢的段落穿插著{1}，並帶有{3}。	这段{8}、流畅的段落穿插着{1}，并带有{3}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（名稱形容詞含 fluid，全域是「體液」）
+This {%8} section is punctuated by {%1}, with movement.	這段{8}的段落穿插著{1}，並帶有動作。	这段{8}的段落穿插着{1}，并带有动作。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（with 後是 movement）
+This {%8} section is punctuated by {%1}, with {%3}.	這段{8}的段落穿插著{1}，並帶有{3}。	这段{8}的段落穿插着{1}，并带有{3}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）
+This fluid {%8} section is punctuated by {%1} and {%2}.	這段流暢、{8}的段落穿插著{1}和{2}。	这段流畅、{8}的段落穿插着{1}和{2}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（名稱形容詞含 fluid，全域是「體液」）
+This {%8} fluid section is punctuated by {%1} and {%2}.	這段{8}、流暢的段落穿插著{1}和{2}。	这段{8}、流畅的段落穿插着{1}和{2}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（名稱形容詞含 fluid，全域是「體液」）
+This {%8} section is punctuated by {%1} and {%2}.	這段{8}的段落穿插著{1}和{2}。	这段{8}的段落穿插着{1}和{2}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）
+This fluid {%8} section is punctuated by {%1}.	這段流暢、{8}的段落穿插著{1}。	这段流畅、{8}的段落穿插着{1}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（名稱形容詞含 fluid，全域是「體液」）
+This {%8} fluid section is punctuated by {%1}.	這段{8}、流暢的段落穿插著{1}。	这段{8}、流畅的段落穿插着{1}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）（名稱形容詞含 fluid，全域是「體液」）
+This {%8} section is punctuated by {%1}.	這段{8}的段落穿插著{1}。	这段{8}的段落穿插着{1}。		FUN_1404ea820 L620415／L621833 點綴動作清單（with 後是 large／aborted moves 與 movement）
+The dance is {%1}.	這支舞風格{1}。	这支舞风格{1}。		FUN_1404ea820 L620258／L621638 風格形容詞（單一或逗號清單）
+This section is {%1}.	這一段風格{1}。	这一段风格{1}。		FUN_1404ea820 L620258／L621638 段落風格形容詞（單一或逗號清單）
+First, there is {%1} with {%2} and {%3}.	首先是{1}，搭配{2}和{3}。	首先是{1}，搭配{2}和{3}。		FUN_1404e99f0 L618953 動作步驟（should be 是舞姿；First／Then／Finally 是分段）
+First, there is {%1} with {%2}.	首先是{1}，搭配{2}。	首先是{1}，搭配{2}。		FUN_1404e99f0 L618953 動作步驟（should be 是舞姿；First／Then／Finally 是分段）
+First, there is {%1}.	首先是{1}。	首先是{1}。		FUN_1404e99f0 L618953 動作步驟（should be 是舞姿；First／Then／Finally 是分段）
+First, there should be {%1} with {%2} and {%3}.	首先應呈現{1}，搭配{2}和{3}。	首先应呈现{1}，搭配{2}和{3}。		FUN_1404e99f0 L618953 動作步驟（should be 是舞姿；First／Then／Finally 是分段）
+First, there should be {%1} with {%2}.	首先應呈現{1}，搭配{2}。	首先应呈现{1}，搭配{2}。		FUN_1404e99f0 L618953 動作步驟（should be 是舞姿；First／Then／Finally 是分段）
+First, there should be {%1}.	首先應呈現{1}。	首先应呈现{1}。		FUN_1404e99f0 L618953 動作步驟（should be 是舞姿；First／Then／Finally 是分段）
+The rules of the form are applied by choreographers to produce individual dances which can be performed.   as the dancer acts out {1}.	編舞者運用這個形式的規則，編出可供演出的各支舞蹈。舞者演繹{1}。	编舞者运用这一形式的规则，编出可供演出的各支舞蹈。舞者演绎{1}。		FUN_1404ea820 L619715＋L619793 沒有伴奏時演繹子句直接接在形式用法句後（遊戲拼成「.   as the …」，小寫開頭不算句界，整句寫出）
+The rules of the form are applied by choreographers to produce individual dances which can be performed.   as the dancers act out {1}.	編舞者運用這個形式的規則，編出可供演出的各支舞蹈。舞者們演繹{1}。	编舞者运用这一形式的规则，编出可供演出的各支舞蹈。舞者们演绎{1}。		FUN_1404ea820 L619715＋L619793 沒有伴奏時演繹子句直接接在形式用法句後（遊戲拼成「.   as the …」，小寫開頭不算句界，整句寫出）
+The form guides dancers during improvised performances.   as the dancer acts out {1}.	這個形式在即興表演中引導舞者。舞者演繹{1}。	这一形式在即兴表演中引导舞者。舞者演绎{1}。		FUN_1404ea820 L619715＋L619793 沒有伴奏時演繹子句直接接在形式用法句後（遊戲拼成「.   as the …」，小寫開頭不算句界，整句寫出）；術語例外：guide
+The form guides dancers during improvised performances.   as the dancers act out {1}.	這個形式在即興表演中引導舞者。舞者們演繹{1}。	这一形式在即兴表演中引导舞者。舞者们演绎{1}。		FUN_1404ea820 L619715＋L619793 沒有伴奏時演繹子句直接接在形式用法句後（遊戲拼成「.   as the …」，小寫開頭不算句界，整句寫出）；術語例外：guide
+{@1} steps	{1}的舞步	{1}的舞步	inner	FUN_1404e99f0 L618993／FUN_1404ea820 L620271 動作形容詞＋舞蹈動作名（名詞寫死，{@1} 是形容詞）

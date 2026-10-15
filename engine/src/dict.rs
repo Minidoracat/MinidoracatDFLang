@@ -187,6 +187,20 @@ fn lookup_name<'a>(d: &'a Dict, key: &[u8]) -> Option<&'a Entry> {
     })
 }
 
+/// 佔位裡的查詞：先照 lookup_name，再查只在佔位裡用的詞（字串檔 align 寫 inner；含大寫時退回全小寫）。
+fn lookup_inner<'a>(d: &'a Dict, key: &[u8]) -> Option<&'a Entry> {
+    lookup_name(d, key).or_else(|| d.inner.get(key)).or_else(|| {
+        if key.len() > 64 || !key.iter().any(u8::is_ascii_uppercase) || !key.iter().any(u8::is_ascii_lowercase) {
+            return None;
+        }
+        let mut buf = [0u8; 64];
+        let lower = &mut buf[..key.len()];
+        lower.copy_from_slice(key);
+        lower.make_ascii_lowercase();
+        d.inner.get(&*lower)
+    })
+}
+
 impl Rule {
     /// 原文樣板必須能轉成 CP437、每個佔位只出現一次、佔位不能相鄰（相鄰時切點不唯一），也不能帶補字；
     /// 譯文每個佔位最多用一次，而且都要是原文有的；原文的佔位除了 `{@n}`、`{~n}` 都要用到（譯文裡的 `#`、`@`、`%`、`~` 寫不寫都可以）。
@@ -259,7 +273,7 @@ fn match_at(segs: &[Seg], text: &[u8], pos: usize, caps: &mut [(usize, usize); 9
         Seg::Lit(lit) => text[pos..].starts_with(lit) && match_at(rest, text, pos + lit.len(), caps, fits),
         Seg::Cap(i, kind) => {
             // 佔位不跨句：抓的片段不能含句界（人名、清單項目都不會跨句；跨了就是把下一句也吞進來）
-            let stop = (pos + 1..text.len()).find(|&k| is_boundary(text, k)).unwrap_or(text.len());
+            let stop = (pos + 1..text.len()).find(|&k| is_boundary(text, k) || is_box_break(text, k)).unwrap_or(text.len());
             match rest.first() {
                 None => {
                     caps[*i] = (pos, text.len());
@@ -289,6 +303,12 @@ fn is_boundary(text: &[u8], k: usize) -> bool {
     k > 0 && text[k] == b' ' && text.get(k + 1) == Some(&b' ') && b".!?\"".contains(&text[k - 1])
 }
 
+/// 段落框（mtb）的句界：遊戲排段落時把句間兩個空白收成一個，留下「句末標點、一個空白、大寫字母或 [B] 這類標記」。
+/// 佔位不跨這種句界，段落框整段查詞時才不會把後面整串吞進來；translate_paragraph 也在這裡還原成兩個空白再切句。
+fn is_box_break(text: &[u8], k: usize) -> bool {
+    k > 0 && text[k] == b' ' && b".!?".contains(&text[k - 1]) && text.get(k + 1).is_some_and(|c| c.is_ascii_uppercase() || *c == b'[')
+}
+
 /// 樣板固定字的顏色位置：夾在兩個佔位之間、這兩個佔位在原文裡也相鄰時，用原文兩者之間那段字的位置
 /// （「笨拙、虛弱」的「、」對應原文紅色的「 and 」）；其餘用句首（0）。
 fn literal_at(output: &[Out], p: usize, caps: &[(usize, usize); 9]) -> usize {
@@ -304,6 +324,9 @@ fn literal_at(output: &[Out], p: usize, caps: &[(usize, usize); 9]) -> usize {
 #[derive(Default)]
 pub struct Dict {
     pub entries: HashMap<Vec<u8>, Entry>,
+    /// 只在佔位裡用的詞（字串檔 align 寫 inner）：句型的 {@n}、{%n} 抓到時查得到，整句查詢與介面單獨畫出時不用。
+    /// 樂器音色的 dark、full、round 這類一般單字：句型要用，介面上單獨出現時不該翻成音色。
+    inner: HashMap<Vec<u8>, Entry>,
     /// 全部小寫的原文 → 原文：只收含大小寫字母、而且全小寫寫法本身沒有條目的（見 lookup_name）。
     /// 兩條原文只差大小寫、譯文又不同時不收，結果才不看雜湊表的順序。
     folded: HashMap<Vec<u8>, Vec<u8>>,
@@ -398,8 +421,17 @@ impl Dict {
             };
             let (entry, missing) = self.entry(key.len(), zh, align);
             report.missing_glyphs += missing;
-            self.entries.insert(key, entry);
             report.loaded += 1;
+            if align == "inner" {
+                // 句中常把首字大寫的片語寫成小寫（「In the simple passage」對 `The simple passage`）：另存一份小寫的，原樣的條目優先
+                let lower = key.to_ascii_lowercase();
+                if lower != key {
+                    self.inner.entry(lower).or_insert_with(|| entry.clone());
+                }
+                self.inner.insert(key, entry);
+                continue;
+            }
+            self.entries.insert(key, entry);
             if let Some(key) = box_form(en).and_then(|f| cp437::encode(&f)).filter(|k| !self.entries.contains_key(k)) {
                 let (entry, _) = self.entry(key.len(), zh, align);
                 self.entries.insert(key, entry);
@@ -526,6 +558,12 @@ impl Dict {
         let mut missing = Vec::new();
         for (start, end) in sentence_spans(text) {
             let sentence = &text[start..end];
+            // 沒有英文字的句子照原樣：遊戲某個分支沒寫字、只接了句號（「.」），或音樂形式的節奏示意行（「| x - x | x x x |」，
+            // 只有單一字母和符號）。至少兩個字母連在一起才算英文
+            if !sentence.windows(2).any(|w| w[0].is_ascii_alphabetic() && w[1].is_ascii_alphabetic()) {
+                out.push((cp437::decode(sentence), start));
+                continue;
+            }
             // 遊戲偶爾在句子中間多拼一個空白（「The force pulls the left ankle,  shattering…」）：照原樣查不到時收成一個再查，
             // 譯文位置都記在句首（只影響彩色文字框的上色）
             let found = self.piece(sentence, 0, &mut memo).map(|(p, _)| p.into_iter().map(|(t, at)| (t, at + start)).collect::<Vec<_>>())
@@ -541,9 +579,42 @@ impl Dict {
         if missing.is_empty() && !out.is_empty() { Ok(out) } else { Err(missing) }
     }
 
+    /// 段落框（mtb）的一整段：先整段查；查不到時在 [B]／[R]／[P] 處分段，每段把單空白句界還原成兩個空白再逐句查
+    /// （和彩色文字框一樣），每段都翻得出來才算。有換色標記的段落只整段查（逐句時顏色對不回去）。
+    pub fn translate_paragraph(&self, key: &[u8]) -> Option<String> {
+        if let Some(t) = self.translate_text(key) {
+            return Some(t);
+        }
+        if key.windows(3).any(|w| w == b"[C:") {
+            return None;
+        }
+        let mut out = String::new();
+        let mut rest = key;
+        loop {
+            let mark = [b"[B]", b"[R]", b"[P]"].iter()
+                .filter_map(|m| rest.windows(3).position(|w| w == *m).map(|i| (i, *m)))
+                .min_by_key(|&(i, _)| i);
+            let body = mark.map_or(rest, |(i, _)| &rest[..i]).trim_ascii();
+            if !body.is_empty() {
+                let mut restored = Vec::with_capacity(body.len() + 8);
+                for (k, &c) in body.iter().enumerate() {
+                    restored.push(c);
+                    if is_box_break(body, k) {
+                        restored.push(b' ');
+                    }
+                }
+                out.push_str(&concat(self.translate_sentences(&restored).ok()?));
+            }
+            let Some((i, m)) = mark else { break };
+            out.push_str(std::str::from_utf8(m).unwrap_or_default());
+            rest = &rest[i + 3..];
+        }
+        Some(out)
+    }
+
     /// 一個片段的譯文：整句字典（含大寫退回小寫），再套句型。
     fn piece(&self, key: &[u8], depth: usize, memo: &mut Memo) -> Option<Found> {
-        if let Some(e) = lookup_name(self, key) {
+        if let Some(e) = if depth > 0 { lookup_inner(self, key) } else { lookup_name(self, key) } {
             return Some((vec![(e.text.clone(), 0)], true));
         }
         if depth > MAX_DEPTH {
@@ -569,7 +640,7 @@ impl Dict {
             let mut fits = |kind: Kind, piece: &[u8]| match kind {
                 Kind::Any | Kind::Skip => true,
                 Kind::Number => is_number(piece),
-                Kind::Term => lookup_name(self, piece).is_some(),
+                Kind::Term => lookup_inner(self, piece).is_some(),
                 Kind::Full => matches!(self.piece(piece, depth + 1, memo), Some((_, true))),
             };
             let Some(caps) = rule.matches(key, &mut fits) else { continue };
@@ -835,7 +906,8 @@ mod tests {
         let text = b"Urist is visiting.  Labor ends.";
         assert_eq!(d.translate_text(text), None, "整段比對時 {{1}} 不能抓到「Urist is visiting.  Labor ends」");
         assert_eq!(d.translate_sentences(text).map(|p| p.into_iter().map(|(t, _)| t).collect::<String>()), Ok("Urist來訪了。勞動結束。".into()));
-        assert!(d.translate_text(b"Dr. Urist is visiting.").is_some(), "句點後只有一個空白不算句界");
+        assert_eq!(d.translate_text(b"Labor ends. Urist is visiting."), None,
+                   "段落框把句間空白收成一個時也不跨句（遊戲的名稱不含「Dr.」這類縮寫，句點後接大寫就當句界）");
     }
 
     #[test]
@@ -950,6 +1022,25 @@ mod tests {
     }
 
     #[test]
+    fn punctuation_only_sentences_pass_through() {
+        let mut d = dict("");
+        d.load_tsv("He is slow to anger.\t他不容易動怒。\n");
+        assert_eq!(d.translate_sentences(b"He is slow to anger.  .  He is slow to anger.").map(concat),
+                   Ok("他不容易動怒。.他不容易動怒。".to_owned()), "遊戲沒寫字只接句號的分支不讓整段變回英文");
+        assert_eq!(d.translate_sentences(b"He is slow to anger.  | x - x | x x x |").map(concat),
+                   Ok("他不容易動怒。| x - x | x x x |".to_owned()), "節奏示意行只有單一字母和符號");
+    }
+
+    #[test]
+    fn box_paragraphs_fall_back_to_blocks_and_sentences() {
+        let mut d = dict("{1} is visiting.\t{1}來訪了。\n");
+        d.load_tsv("Labor ends.\t勞動結束。\n");
+        assert_eq!(d.translate_paragraph(b"Labor ends. Urist is visiting. [B] Labor ends.").as_deref(), Some("勞動結束。Urist來訪了。[B]勞動結束。"),
+                   "段落框的單空白句界還原後逐句查，[B] 照原樣接回");
+        assert_eq!(d.translate_paragraph(b"Labor ends. Urist is visiting. [B] Nobody knows."), None, "缺一句就整段照英文");
+    }
+
+    #[test]
     fn number_captures_count_as_clean() {
         let mut d = dict("{%1} [{#2}]\t{1} [{2}]\n{1} has stolen {%2}!\t{1}偷走了{2}！\n");
         d.load_tsv("plump helmets\t肉盔菇\n");
@@ -964,5 +1055,14 @@ mod tests {
         assert_eq!(d.translate_text(b"Her hair is gold.").as_deref(), Some("她的頭髮是金色。"));
         assert_eq!(d.translate_text(b"Her hair is dark tan.").as_deref(), Some("她的頭髮是深黃褐色。"));
         assert_eq!(d.translate_text(b"Her hair is red.").as_deref(), Some("她的頭髮是紅色。"), "已經有「色」就不再補");
+    }
+
+    #[test]
+    fn inner_words_are_used_only_inside_placeholders() {
+        let mut d = dict("It has a {@1} timbre.\t音色{1}。\n");
+        d.load_tsv("dark\t暗沉\tinner\n");
+        assert_eq!(d.translate_text(b"It has a dark timbre.").as_deref(), Some("音色暗沉。"));
+        assert_eq!(d.translate_text(b"dark"), None, "介面上單獨出現的 dark 不翻成音色");
+        assert_eq!(d.translate_text(b"Dark"), None);
     }
 }

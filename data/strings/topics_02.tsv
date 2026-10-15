@@ -1,0 +1,10 @@
+en	zh-Hant	zh-Hans	align	note
+inscribed triangles	內接三角形	内接三角形		FUN_140ef8fb0 知識主題短名（工作名 Ponder/Discuss/Teach/Learn/Write about、說話句 I just don't understand 等） L2262594
+incommensurable ratios	不可通約比	不可公度比		FUN_140ef8fb0 知識主題短名（工作名 Ponder/Discuss/Teach/Learn/Write about、說話句 I just don't understand 等） L2262606
+hospital staff	醫院人員	医院人员		FUN_140ef8fb0 知識主題短名（工作名 Ponder/Discuss/Teach/Learn/Write about、說話句 I just don't understand 等） L2263446
+the windlass	絞盤	绞盘		FUN_140ef8fb0 知識主題短名（工作名 Ponder/Discuss/Teach/Learn/Write about、說話句 I just don't understand 等） L2263522
+the wedge	楔子	楔子		FUN_140ef8fb0 知識主題短名（工作名 Ponder/Discuss/Teach/Learn/Write about、說話句 I just don't understand 等） L2263536
+time	時間	时间		FUN_140ef8fb0 知識主題短名（工作名 Ponder/Discuss/Teach/Learn/Write about、說話句 I just don't understand 等） L2262449（DAT_1416d3444）
+ores	礦石	矿石		FUN_140ef8fb0 知識主題短名（工作名 Ponder/Discuss/Teach/Learn/Write about、說話句 I just don't understand 等） L2263005（DAT_141742b64）
+Write	寫作	写作		FUN_1400a2c20 L100994 活動名：寫作（沒有知識主題時）
+Teach Hospital Staff	講授「醫院人員」	讲授“医院人员”		FUN_1400a27d0 L100781 活動名（單行標籤）：主題 hospital staff 單獨講授時的整句，引號標出主題，免得讀成「講授醫院的人員任用」；比 rules/topics_02 的 Teach {%1} 先命中

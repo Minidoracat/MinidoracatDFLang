@@ -1,0 +1,382 @@
+en	zh-Hant	zh-Hans	align	note
+The rules of the form are applied by composers to produce individual pieces of music which can be performed.	作曲者依照這種形式的規則創作出可供演出的樂曲。	作曲者依照这种形式的规则创作出可供演出的乐曲。		FUN_140dd5ce0 2075059 作曲型
+The form guides musicians during improvised performances.	這種形式在即興演出時引導樂手。	这种形式在即兴演出时引导乐手。		FUN_140dd5ce0 2075063 即興型
+A singer recites nonsensical words and sounds.	一名歌手吟誦無意義的字詞與聲音。	一名歌手吟诵无意义的字词与声音。		FUN_140dd5ce0 2075188-2075230 人聲：人數、聲部、吟誦內容（詩歌形式／著作）
+A speaker recites nonsensical words and sounds.	一名朗誦者吟誦無意義的字詞與聲音。	一名朗诵者吟诵无意义的字词与声音。		FUN_140dd5ce0 2075188-2075230 人聲：人數、聲部、吟誦內容（詩歌形式／著作）
+A chanter recites nonsensical words and sounds.	一名吟唱者吟誦無意義的字詞與聲音。	一名吟唱者吟诵无意义的字词与声音。		FUN_140dd5ce0 2075188-2075230 人聲：人數、聲部、吟誦內容（詩歌形式／著作）
+The musical voices join in melody and counterpoint, harmony and rhythm.	各聲部在旋律與對位、和聲與節奏中交織。	各声部在旋律与对位、和声与节奏中交织。		FUN_140dd5ce0 2075282-2075319 聲部分工
+The musical voices bring melody, counterpoint and rhythm.	各聲部帶來旋律、對位與節奏。	各声部带来旋律、对位与节奏。		FUN_140dd5ce0 2075282-2075319 聲部分工
+The musical voices cover melody, harmony and rhythm.	各聲部涵蓋旋律、和聲與節奏。	各声部涵盖旋律、和声与节奏。		FUN_140dd5ce0 2075282-2075319 聲部分工
+The music is melody and rhythm without harmony.	這種音樂只有旋律與節奏，沒有和聲。	这种音乐只有旋律与节奏，没有和声。		FUN_140dd5ce0 2075282-2075319 聲部分工
+The musical voices join in melody, counterpoint and harmony.	各聲部在旋律、對位與和聲中交織。	各声部在旋律、对位与和声中交织。		FUN_140dd5ce0 2075282-2075319 聲部分工
+The musical voices bring melody and counterpoint.	各聲部帶來旋律與對位。	各声部带来旋律与对位。		FUN_140dd5ce0 2075282-2075319 聲部分工
+The musical voices bring melody with harmony.	各聲部帶來旋律與和聲。	各声部带来旋律与和声。		FUN_140dd5ce0 2075282-2075319 聲部分工
+The musical voices are joined in melody.	各聲部齊奏同一旋律。	各声部齐奏同一旋律。		FUN_140dd5ce0 2075282-2075319 聲部分工
+The musical voices are purely rhythmic.	各聲部純粹只有節奏。	各声部纯粹只有节奏。		FUN_140dd5ce0 2075282-2075319 聲部分工
+stress the rhythm	強調節奏	强调节奏	inner	FUN_140dd5ce0 2075328-2075446／2076525-2076643／2077711-2077826 表現指示（接在 should 後）
+be stately	莊嚴	庄严	inner	FUN_140dd5ce0 2075328-2075446／2076525-2076643／2077711-2077826 表現指示（接在 should 後）
+be bright	明亮	明亮	inner	FUN_140dd5ce0 2075328-2075446／2076525-2076643／2077711-2077826 表現指示（接在 should 後）
+be lively	活潑	活泼	inner	FUN_140dd5ce0 2075328-2075446／2076525-2076643／2077711-2077826 表現指示（接在 should 後）
+be made with skill	展現技巧	展现技巧	inner	FUN_140dd5ce0 2075328-2075446／2076525-2076643／2077711-2077826 表現指示（接在 should 後）
+perform with skill	展現技巧	展现技巧	inner	FUN_140dd5ce0 2075328-2075446／2076525-2076643／2077711-2077826 表現指示（接在 should 後）
+be vigorous	雄健有力	雄健有力	inner	FUN_140dd5ce0 2075328-2075446／2076525-2076643／2077711-2077826 表現指示（接在 should 後）
+be spirited	精神抖擻	精神抖擞	inner	FUN_140dd5ce0 2075328-2075446／2076525-2076643／2077711-2077826 表現指示（接在 should 後）
+be delicate	細膩	细腻	inner	FUN_140dd5ce0 2075328-2075446／2076525-2076643／2077711-2077826 表現指示（接在 should 後）
+be fiery	火熱	火热	inner	FUN_140dd5ce0 2075328-2075446／2076525-2076643／2077711-2077826 表現指示（接在 should 後）
+bring a sense of motion	帶來律動感	带来律动感	inner	FUN_140dd5ce0 2075328-2075446／2076525-2076643／2077711-2077826 表現指示（接在 should 後）
+be made with feeling	飽含感情	饱含感情	inner	FUN_140dd5ce0 2075328-2075446／2076525-2076643／2077711-2077826 表現指示（接在 should 後）
+perform with feeling	飽含感情	饱含感情	inner	FUN_140dd5ce0 2075328-2075446／2076525-2076643／2077711-2077826 表現指示（接在 should 後）
+feel agitated	帶有不安感	带有不安感	inner	FUN_140dd5ce0 2075328-2075446／2076525-2076643／2077711-2077826 表現指示（接在 should 後）
+be passionate	充滿激情	充满激情	inner	FUN_140dd5ce0 2075328-2075446／2076525-2076643／2077711-2077826 表現指示（接在 should 後）
+sparkle	閃耀生輝	闪耀生辉	inner	FUN_140dd5ce0 2075328-2075446／2076525-2076643／2077711-2077826 表現指示（接在 should 後）
+be broad	寬廣	宽广	inner	FUN_140dd5ce0 2075328-2075446／2076525-2076643／2077711-2077826 表現指示（接在 should 後）
+be made sweetly	甜美	甜美	inner	FUN_140dd5ce0 2075328-2075446／2076525-2076643／2077711-2077826 表現指示（接在 should 後）
+perform sweetly	甜美	甜美	inner	FUN_140dd5ce0 2075328-2075446／2076525-2076643／2077711-2077826 表現指示（接在 should 後）
+be strong	強勁	强劲	inner	FUN_140dd5ce0 2075328-2075446／2076525-2076643／2077711-2077826 表現指示（接在 should 後）
+be energetic	充滿活力	充满活力	inner	FUN_140dd5ce0 2075328-2075446／2076525-2076643／2077711-2077826 表現指示（接在 should 後）
+be forceful	鏗鏘有力	铿锵有力	inner	FUN_140dd5ce0 2075328-2075446／2076525-2076643／2077711-2077826 表現指示（接在 should 後）
+feel heroic	帶有英雄氣概	带有英雄气概	inner	FUN_140dd5ce0 2075328-2075446／2076525-2076643／2077711-2077826 表現指示（接在 should 後）
+be made expressively	富有表現力	富有表现力	inner	FUN_140dd5ce0 2075328-2075446／2076525-2076643／2077711-2077826 表現指示（接在 should 後）
+perform expressively	富有表現力	富有表现力	inner	FUN_140dd5ce0 2075328-2075446／2076525-2076643／2077711-2077826 表現指示（接在 should 後）
+feel furious	帶有狂怒感	带有狂怒感	inner	FUN_140dd5ce0 2075328-2075446／2076525-2076643／2077711-2077826 表現指示（接在 should 後）
+be joyful	歡快	欢快	inner	FUN_140dd5ce0 2075328-2075446／2076525-2076643／2077711-2077826 表現指示（接在 should 後）
+be grand	宏偉	宏伟	inner	FUN_140dd5ce0 2075328-2075446／2076525-2076643／2077711-2077826 表現指示（接在 should 後）
+be merry	愉悅	愉悦	inner	FUN_140dd5ce0 2075328-2075446／2076525-2076643／2077711-2077826 表現指示（接在 should 後）
+be graceful	優雅	优雅	inner	FUN_140dd5ce0 2075328-2075446／2076525-2076643／2077711-2077826 表現指示（接在 should 後）
+build as it proceeds	逐步推向高潮	逐步推向高潮	inner	FUN_140dd5ce0 2075328-2075446／2076525-2076643／2077711-2077826 表現指示（接在 should 後）
+build as the performance proceeds	逐步推向高潮	逐步推向高潮	inner	FUN_140dd5ce0 2075328-2075446／2076525-2076643／2077711-2077826 表現指示（接在 should 後）
+evoke tears	催人淚下	催人泪下	inner	FUN_140dd5ce0 2075328-2075446／2076525-2076643／2077711-2077826 表現指示（接在 should 後）
+be melancholic	憂鬱	忧郁	inner	FUN_140dd5ce0 2075328-2075446／2076525-2076643／2077711-2077826 表現指示（接在 should 後）
+feel mournful	帶有哀傷感	带有哀伤感	inner	FUN_140dd5ce0 2075328-2075446／2076525-2076643／2077711-2077826 表現指示（接在 should 後）
+be made with a light touch	輕巧	轻巧	inner	FUN_140dd5ce0 2075328-2075446／2076525-2076643／2077711-2077826 表現指示（接在 should 後）
+perform with a light touch	輕巧	轻巧	inner	FUN_140dd5ce0 2075328-2075446／2076525-2076643／2077711-2077826 表現指示（接在 should 後）
+feel heavy	帶有沉重感	带有沉重感	inner	FUN_140dd5ce0 2075328-2075446／2076525-2076643／2077711-2077826 表現指示（接在 should 後）
+feel mysterious	帶有神祕感	带有神秘感	inner	FUN_140dd5ce0 2075328-2075446／2076525-2076643／2077711-2077826 表現指示（接在 should 後）
+be jumpy	跳躍	跳跃	inner	FUN_140dd5ce0 2075328-2075446／2076525-2076643／2077711-2077826 表現指示（接在 should 後）
+feel playful	帶有俏皮感	带有俏皮感	inner	FUN_140dd5ce0 2075328-2075446／2076525-2076643／2077711-2077826 表現指示（接在 should 後）
+feel tender	帶有溫柔感	带有温柔感	inner	FUN_140dd5ce0 2075328-2075446／2076525-2076643／2077711-2077826 表現指示（接在 should 後）
+feel calm	帶有平靜感	带有平静感	inner	FUN_140dd5ce0 2075328-2075446／2076525-2076643／2077711-2077826 表現指示（接在 should 後）
+be triumphant	帶有凱旋氣勢	带有凯旋气势	inner	FUN_140dd5ce0 2075328-2075446／2076525-2076643／2077711-2077826 表現指示（接在 should 後）
+be in whispered undertones	如耳語般低聲	如耳语般低声	inner	FUN_140dd5ce0 2075517-2075553／2076661-2076697／2077913-2077949 力度（接在 is to 後）
+be very soft	非常輕柔	非常轻柔	inner	FUN_140dd5ce0 2075517-2075553／2076661-2076697／2077913-2077949 力度（接在 is to 後）
+be soft	輕柔	轻柔	inner	FUN_140dd5ce0 2075517-2075553／2076661-2076697／2077913-2077949 力度（接在 is to 後）
+be moderately soft	稍輕	稍轻	inner	FUN_140dd5ce0 2075517-2075553／2076661-2076697／2077913-2077949 力度（接在 is to 後）
+be moderately loud	稍響	稍响	inner	FUN_140dd5ce0 2075517-2075553／2076661-2076697／2077913-2077949 力度（接在 is to 後）
+be loud	響亮	响亮	inner	FUN_140dd5ce0 2075517-2075553／2076661-2076697／2077913-2077949 力度（接在 is to 後）
+be very loud	非常響亮	非常响亮	inner	FUN_140dd5ce0 2075517-2075553／2076661-2076697／2077913-2077949 力度（接在 is to 後）
+become louder and louder	越來越響	越来越响	inner	FUN_140dd5ce0 2075517-2075553／2076661-2076697／2077913-2077949 力度（接在 is to 後）
+become softer and softer	越來越輕	越来越轻	inner	FUN_140dd5ce0 2075517-2075553／2076661-2076697／2077913-2077949 力度（接在 is to 後）
+fade into silence	漸漸歸於寂靜	渐渐归于寂静	inner	FUN_140dd5ce0 2075517-2075553／2076661-2076697／2077913-2077949 力度（接在 is to 後）
+start loud then be immediately soft	先強後立即轉弱	先强后立即转弱	inner	FUN_140dd5ce0 2075517-2075553／2076661-2076697／2077913-2077949 力度（接在 is to 後）
+The entire performance	整場演出	整场演出	inner	FUN_140dd5ce0 2075325 整體表現句主詞
+The passage	這個樂段	这个乐段	inner	FUN_140dd5ce0 2077703 等 樂段句主詞（單一樂段）
+Each passage	每個樂段	每个乐段	inner	FUN_140dd5ce0 2077706 等 樂段句主詞（多個同類樂段）
+does the main melody	負責主旋律	负责主旋律	inner	FUN_140dd5ce0 2076489-2076506 聲部分工（接在 always 後）
+does the counterpoint melody	負責對位旋律	负责对位旋律	inner	FUN_140dd5ce0 2076489-2076506 聲部分工（接在 always 後）
+does harmony	負責和聲	负责和声	inner	FUN_140dd5ce0 2076489-2076506 聲部分工（接在 always 後）
+provides the rhythm	提供節奏	提供节奏	inner	FUN_140dd5ce0 2076489-2076506 聲部分工（接在 always 後）
+glides from note to note	在音符間滑奏	在音符间滑奏	inner	FUN_140dd5ce0 2076713-2076835 聲部技法（接在 always 後）
+uses grace notes	使用倚音	使用倚音	inner	FUN_140dd5ce0 2076713-2076835 聲部技法（接在 always 後）
+uses mordents	使用波音	使用波音	inner	FUN_140dd5ce0 2076713-2076835 聲部技法（接在 always 後）
+makes trills	奏出顫音	奏出颤音	inner	FUN_140dd5ce0 2076713-2076835 聲部技法（接在 always 後）
+plays rapid runs	演奏快速音群	演奏快速音群	inner	FUN_140dd5ce0 2076713-2076835 聲部技法（接在 always 後）
+spreads syllables over many notes	把音節延展到許多音上	把音节延展到许多音上	inner	FUN_140dd5ce0 2076713-2076835 聲部技法（接在 always 後）
+matches notes and syllables	讓音符與音節一一對應	让音符与音节一一对应	inner	FUN_140dd5ce0 2076713-2076835 聲部技法（接在 always 後）
+locally improvises	局部即興	局部即兴	inner	FUN_140dd5ce0 2076713-2076835 聲部技法（接在 always 後）
+plays arpeggios	演奏琶音	演奏琶音	inner	FUN_140dd5ce0 2076713-2076835 聲部技法（接在 always 後）
+syncopates	使用切分音	使用切分音	inner	FUN_140dd5ce0 2076713-2076835 聲部技法（接在 always 後）
+adds fills	加入過門	加入过门	inner	FUN_140dd5ce0 2076713-2076835 聲部技法（接在 always 後）
+modulates frequently	頻繁轉調	频繁转调	inner	FUN_140dd5ce0 2076713-2076835 聲部技法（接在 always 後）
+plays staccato	以斷奏演奏	以断奏演奏	inner	FUN_140dd5ce0 2076713-2076835 聲部技法（接在 always 後）
+plays legato	以圓滑奏演奏	以连奏演奏	inner	FUN_140dd5ce0 2076713-2076835 聲部技法（接在 always 後）
+the low register	低音域	低音域	inner	FUN_140dd5ce0 2076847-2077023／2078052-2078213 音域片段（the [音色 ]低／中／高／最高 register）
+the clear low register	清澈的低音域	清澈的低音域	inner	FUN_140dd5ce0 2076847-2077023／2078052-2078213 音域片段（the [音色 ]低／中／高／最高 register）；音色字在別處另有意思，這裡寫死
+the light low register	輕盈的低音域	轻盈的低音域	inner	FUN_140dd5ce0 2076847-2077023／2078052-2078213 音域片段（the [音色 ]低／中／高／最高 register）；音色字在別處另有意思，這裡寫死
+the fluid low register	流暢的低音域	流畅的低音域	inner	FUN_140dd5ce0 2076847-2077023／2078052-2078213 音域片段（the [音色 ]低／中／高／最高 register）；音色字在別處另有意思，這裡寫死
+the liquid low register	流動的低音域	流动的低音域	inner	FUN_140dd5ce0 2076847-2077023／2078052-2078213 音域片段（the [音色 ]低／中／高／最高 register）；音色字在別處另有意思，這裡寫死
+the strong low register	強勁的低音域	强劲的低音域	inner	FUN_140dd5ce0 2076847-2077023／2078052-2078213 音域片段（the [音色 ]低／中／高／最高 register）；音色字在別處另有意思，這裡寫死
+the focused low register	集中的低音域	集中的低音域	inner	FUN_140dd5ce0 2076847-2077023／2078052-2078213 音域片段（the [音色 ]低／中／高／最高 register）；音色字在別處另有意思，這裡寫死
+the eerie low register	詭異的低音域	诡异的低音域	inner	FUN_140dd5ce0 2076847-2077023／2078052-2078213 音域片段（the [音色 ]低／中／高／最高 register）；音色字在別處另有意思，這裡寫死
+the middle register	中音域	中音域	inner	FUN_140dd5ce0 2076847-2077023／2078052-2078213 音域片段（the [音色 ]低／中／高／最高 register）
+the clear middle register	清澈的中音域	清澈的中音域	inner	FUN_140dd5ce0 2076847-2077023／2078052-2078213 音域片段（the [音色 ]低／中／高／最高 register）；音色字在別處另有意思，這裡寫死
+the light middle register	輕盈的中音域	轻盈的中音域	inner	FUN_140dd5ce0 2076847-2077023／2078052-2078213 音域片段（the [音色 ]低／中／高／最高 register）；音色字在別處另有意思，這裡寫死
+the fluid middle register	流暢的中音域	流畅的中音域	inner	FUN_140dd5ce0 2076847-2077023／2078052-2078213 音域片段（the [音色 ]低／中／高／最高 register）；音色字在別處另有意思，這裡寫死
+the liquid middle register	流動的中音域	流动的中音域	inner	FUN_140dd5ce0 2076847-2077023／2078052-2078213 音域片段（the [音色 ]低／中／高／最高 register）；音色字在別處另有意思，這裡寫死
+the strong middle register	強勁的中音域	强劲的中音域	inner	FUN_140dd5ce0 2076847-2077023／2078052-2078213 音域片段（the [音色 ]低／中／高／最高 register）；音色字在別處另有意思，這裡寫死
+the focused middle register	集中的中音域	集中的中音域	inner	FUN_140dd5ce0 2076847-2077023／2078052-2078213 音域片段（the [音色 ]低／中／高／最高 register）；音色字在別處另有意思，這裡寫死
+the eerie middle register	詭異的中音域	诡异的中音域	inner	FUN_140dd5ce0 2076847-2077023／2078052-2078213 音域片段（the [音色 ]低／中／高／最高 register）；音色字在別處另有意思，這裡寫死
+the high register	高音域	高音域	inner	FUN_140dd5ce0 2076847-2077023／2078052-2078213 音域片段（the [音色 ]低／中／高／最高 register）
+the clear high register	清澈的高音域	清澈的高音域	inner	FUN_140dd5ce0 2076847-2077023／2078052-2078213 音域片段（the [音色 ]低／中／高／最高 register）；音色字在別處另有意思，這裡寫死
+the light high register	輕盈的高音域	轻盈的高音域	inner	FUN_140dd5ce0 2076847-2077023／2078052-2078213 音域片段（the [音色 ]低／中／高／最高 register）；音色字在別處另有意思，這裡寫死
+the fluid high register	流暢的高音域	流畅的高音域	inner	FUN_140dd5ce0 2076847-2077023／2078052-2078213 音域片段（the [音色 ]低／中／高／最高 register）；音色字在別處另有意思，這裡寫死
+the liquid high register	流動的高音域	流动的高音域	inner	FUN_140dd5ce0 2076847-2077023／2078052-2078213 音域片段（the [音色 ]低／中／高／最高 register）；音色字在別處另有意思，這裡寫死
+the strong high register	強勁的高音域	强劲的高音域	inner	FUN_140dd5ce0 2076847-2077023／2078052-2078213 音域片段（the [音色 ]低／中／高／最高 register）；音色字在別處另有意思，這裡寫死
+the focused high register	集中的高音域	集中的高音域	inner	FUN_140dd5ce0 2076847-2077023／2078052-2078213 音域片段（the [音色 ]低／中／高／最高 register）；音色字在別處另有意思，這裡寫死
+the eerie high register	詭異的高音域	诡异的高音域	inner	FUN_140dd5ce0 2076847-2077023／2078052-2078213 音域片段（the [音色 ]低／中／高／最高 register）；音色字在別處另有意思，這裡寫死
+the top register	最高音域	最高音域	inner	FUN_140dd5ce0 2076847-2077023／2078052-2078213 音域片段（the [音色 ]低／中／高／最高 register）
+the clear top register	清澈的最高音域	清澈的最高音域	inner	FUN_140dd5ce0 2076847-2077023／2078052-2078213 音域片段（the [音色 ]低／中／高／最高 register）；音色字在別處另有意思，這裡寫死
+the light top register	輕盈的最高音域	轻盈的最高音域	inner	FUN_140dd5ce0 2076847-2077023／2078052-2078213 音域片段（the [音色 ]低／中／高／最高 register）；音色字在別處另有意思，這裡寫死
+the fluid top register	流暢的最高音域	流畅的最高音域	inner	FUN_140dd5ce0 2076847-2077023／2078052-2078213 音域片段（the [音色 ]低／中／高／最高 register）；音色字在別處另有意思，這裡寫死
+the liquid top register	流動的最高音域	流动的最高音域	inner	FUN_140dd5ce0 2076847-2077023／2078052-2078213 音域片段（the [音色 ]低／中／高／最高 register）；音色字在別處另有意思，這裡寫死
+the strong top register	強勁的最高音域	强劲的最高音域	inner	FUN_140dd5ce0 2076847-2077023／2078052-2078213 音域片段（the [音色 ]低／中／高／最高 register）；音色字在別處另有意思，這裡寫死
+the focused top register	集中的最高音域	集中的最高音域	inner	FUN_140dd5ce0 2076847-2077023／2078052-2078213 音域片段（the [音色 ]低／中／高／最高 register）；音色字在別處另有意思，這裡寫死
+the eerie top register	詭異的最高音域	诡异的最高音域	inner	FUN_140dd5ce0 2076847-2077023／2078052-2078213 音域片段（the [音色 ]低／中／高／最高 register）；音色字在別處另有意思，這裡寫死
+The voice uses its entire range.	這個聲部使用整個音域。	这个声部使用整个音域。		FUN_140dd5ce0 2076841-2077023 聲部音域句
+The clear voice uses its entire range.	這個聲部音色清澈，使用整個音域。	这个声部音色清澈，使用整个音域。		FUN_140dd5ce0 2076841-2077023 聲部音域句；音色寫死
+The light voice uses its entire range.	這個聲部音色輕盈，使用整個音域。	这个声部音色轻盈，使用整个音域。		FUN_140dd5ce0 2076841-2077023 聲部音域句；音色寫死
+The fluid voice uses its entire range.	這個聲部音色流暢，使用整個音域。	这个声部音色流畅，使用整个音域。		FUN_140dd5ce0 2076841-2077023 聲部音域句；音色寫死
+The liquid voice uses its entire range.	這個聲部音色流動，使用整個音域。	这个声部音色流动，使用整个音域。		FUN_140dd5ce0 2076841-2077023 聲部音域句；音色寫死
+The strong voice uses its entire range.	這個聲部音色強勁，使用整個音域。	这个声部音色强劲，使用整个音域。		FUN_140dd5ce0 2076841-2077023 聲部音域句；音色寫死
+The focused voice uses its entire range.	這個聲部音色集中，使用整個音域。	这个声部音色集中，使用整个音域。		FUN_140dd5ce0 2076841-2077023 聲部音域句；音色寫死
+The eerie voice uses its entire range.	這個聲部音色詭異，使用整個音域。	这个声部音色诡异，使用整个音域。		FUN_140dd5ce0 2076841-2077023 聲部音域句；音色寫死
+The simple passage	簡單樂段	简单乐段	inner	FUN_140dd5ce0 2077515-2077558 樂段段落主詞（The／Each of the＋[序數]＋樂段種類；synthesis 等不加 s 照遊戲）
+Each of the simple passages	每個簡單樂段	每个简单乐段	inner	FUN_140dd5ce0 2077515-2077558 樂段段落主詞（The／Each of the＋[序數]＋樂段種類；synthesis 等不加 s 照遊戲）
+Each of the introductions	每段前奏	每段前奏	inner	FUN_140dd5ce0 2077515-2077558 樂段段落主詞（The／Each of the＋[序數]＋樂段種類；synthesis 等不加 s 照遊戲）
+The exposition	呈示部	呈示部	inner	FUN_140dd5ce0 2077515-2077558 樂段段落主詞（The／Each of the＋[序數]＋樂段種類；synthesis 等不加 s 照遊戲）
+Each of the expositions	每段呈示部	每段呈示部	inner	FUN_140dd5ce0 2077515-2077558 樂段段落主詞（The／Each of the＋[序數]＋樂段種類；synthesis 等不加 s 照遊戲）
+The recapitulation	再現部	再现部	inner	FUN_140dd5ce0 2077515-2077558 樂段段落主詞（The／Each of the＋[序數]＋樂段種類；synthesis 等不加 s 照遊戲）
+Each of the recapitulations	每段再現部	每段再现部	inner	FUN_140dd5ce0 2077515-2077558 樂段段落主詞（The／Each of the＋[序數]＋樂段種類；synthesis 等不加 s 照遊戲）
+The synthesis	融合段	融合段	inner	FUN_140dd5ce0 2077515-2077558 樂段段落主詞（The／Each of the＋[序數]＋樂段種類；synthesis 等不加 s 照遊戲）
+Each of the synthesis	每段融合段	每段融合段	inner	FUN_140dd5ce0 2077515-2077558 樂段段落主詞（The／Each of the＋[序數]＋樂段種類；synthesis 等不加 s 照遊戲）
+The verse	主歌	主歌	inner	FUN_140dd5ce0 2077515-2077558 樂段段落主詞（The／Each of the＋[序數]＋樂段種類；synthesis 等不加 s 照遊戲）
+Each of the verses	每段主歌	每段主歌	inner	FUN_140dd5ce0 2077515-2077558 樂段段落主詞（The／Each of the＋[序數]＋樂段種類；synthesis 等不加 s 照遊戲）
+The chorus	副歌	副歌	inner	FUN_140dd5ce0 2077515-2077558 樂段段落主詞（The／Each of the＋[序數]＋樂段種類；synthesis 等不加 s 照遊戲）
+Each of the chorus	每段副歌	每段副歌	inner	FUN_140dd5ce0 2077515-2077558 樂段段落主詞（The／Each of the＋[序數]＋樂段種類；synthesis 等不加 s 照遊戲）
+Each of the finale	每段終曲	每段终曲	inner	FUN_140dd5ce0 2077515-2077558 樂段段落主詞（The／Each of the＋[序數]＋樂段種類；synthesis 等不加 s 照遊戲）
+Each of the coda	每段尾聲	每段尾声	inner	FUN_140dd5ce0 2077515-2077558 樂段段落主詞（The／Each of the＋[序數]＋樂段種類；synthesis 等不加 s 照遊戲）
+The bridge-passage	橋段	桥段	inner	FUN_140dd5ce0 2077515-2077558 樂段段落主詞（The／Each of the＋[序數]＋樂段種類；synthesis 等不加 s 照遊戲）
+Each of the bridge-passages	每段橋段	每段桥段	inner	FUN_140dd5ce0 2077515-2077558 樂段段落主詞（The／Each of the＋[序數]＋樂段種類；synthesis 等不加 s 照遊戲）
+Each of the themes	每個主題	每个主题	inner	FUN_140dd5ce0 2077515-2077558 樂段段落主詞（The／Each of the＋[序數]＋樂段種類；synthesis 等不加 s 照遊戲）
+The series of variations	變奏段	变奏段	inner	FUN_140dd5ce0 2077515-2077558 樂段段落主詞（The／Each of the＋[序數]＋樂段種類；synthesis 等不加 s 照遊戲）
+Each of the series of variations	每段變奏段	每段变奏段	inner	FUN_140dd5ce0 2077515-2077558 樂段段落主詞（The／Each of the＋[序數]＋樂段種類；synthesis 等不加 s 照遊戲）
+singer	歌手	歌手	inner	FUN_140dd5ce0 2077610-2077630／2077996-2078031 人聲聲部名（給樂段句與聲部句的 {n} 佔位）
+singers	歌手	歌手	inner	FUN_140dd5ce0 2077610-2077630／2077996-2078031 人聲聲部名（給樂段句與聲部句的 {n} 佔位）
+speaker	朗誦者	朗诵者	inner	FUN_140dd5ce0 2077610-2077630／2077996-2078031 人聲聲部名（給樂段句與聲部句的 {n} 佔位）
+speakers	朗誦者	朗诵者	inner	FUN_140dd5ce0 2077610-2077630／2077996-2078031 人聲聲部名（給樂段句與聲部句的 {n} 佔位）
+chanter	吟唱者	吟唱者	inner	FUN_140dd5ce0 2077610-2077630／2077996-2078031 人聲聲部名（給樂段句與聲部句的 {n} 佔位）
+chanters	吟唱者	吟唱者	inner	FUN_140dd5ce0 2077610-2077630／2077996-2078031 人聲聲部名（給樂段句與聲部句的 {n} 佔位）
+singer's voice	歌手的聲音	歌手的声音	inner	FUN_140dd5ce0 2077610-2077630／2077996-2078031 人聲聲部名（給樂段句與聲部句的 {n} 佔位）
+singers' voices	歌手的聲音	歌手的声音	inner	FUN_140dd5ce0 2077610-2077630／2077996-2078031 人聲聲部名（給樂段句與聲部句的 {n} 佔位）
+speaker's voice	朗誦者的聲音	朗诵者的声音	inner	FUN_140dd5ce0 2077610-2077630／2077996-2078031 人聲聲部名（給樂段句與聲部句的 {n} 佔位）
+speakers' voices	朗誦者的聲音	朗诵者的声音	inner	FUN_140dd5ce0 2077610-2077630／2077996-2078031 人聲聲部名（給樂段句與聲部句的 {n} 佔位）
+chanter's voice	吟唱者的聲音	吟唱者的声音	inner	FUN_140dd5ce0 2077610-2077630／2077996-2078031 人聲聲部名（給樂段句與聲部句的 {n} 佔位）
+chanters' voices	吟唱者的聲音	吟唱者的声音	inner	FUN_140dd5ce0 2077610-2077630／2077996-2078031 人聲聲部名（給樂段句與聲部句的 {n} 佔位）
+short phrases	短樂句	短乐句	inner	FUN_140dd5ce0 2075636-2075681／2078259-2078361 樂句長度
+mid-length phrases	中等長度的樂句	中等长度的乐句	inner	FUN_140dd5ce0 2075636-2075681／2078259-2078361 樂句長度
+long phrases	長樂句	长乐句	inner	FUN_140dd5ce0 2075636-2075681／2078259-2078361 樂句長度
+phrases of varied length	長短不一的樂句	长短不一的乐句	inner	FUN_140dd5ce0 2075636-2075681／2078259-2078361 樂句長度
+Only one pitch is ever played at a time.	任何時候都只奏出一個音高。	任何时候都只奏出一个音高。		FUN_140dd5ce0 2075689 織體
+Never more than an interval sounds at once.	同時響起的音從不超過一個音程。	同时响起的音从不超过一个音程。		FUN_140dd5ce0 2075695 織體
+Chords, seldom-used, are sparse -- intervals and single pitches are favored.	和弦很少使用且稀疏——偏好音程與單音。	和弦很少使用且稀疏——偏好音程与单音。		FUN_140dd5ce0 2075699 織體
+Pitches are densely packed in clusters as music moves from chord to chord.	音樂從一個和弦進行到另一個和弦時，音高密集地堆疊成音簇。	音乐从一个和弦进行到另一个和弦时，音高密集地堆叠成音簇。		FUN_140dd5ce0 2075703 織體
+The music is broadly layered with chords spanning the range.	音樂以橫跨整個音域的和弦寬廣地層層堆疊。	音乐以横跨整个音域的和弦宽广地层层堆叠。		FUN_140dd5ce0 2075707 織體
+The music repeats for as long as necessary.	音樂視需要反覆演奏。	音乐视需要反复演奏。		FUN_140dd5ce0 2075712 織體
+This passage is richly layered with full chords making use of the available range.	這個樂段以運用可用音域的完整和弦豐富地層層堆疊。	这个乐段以运用可用音域的完整和弦丰富地层层堆叠。		FUN_140dd5ce0 2078371 織體
+Chords are packed close together in dense clusters in this passage.	這個樂段的和弦緊密地擠成密集的音簇。	这个乐段的和弦紧密地挤成密集的音簇。		FUN_140dd5ce0 2078371 織體
+This passage typically has some sparse chords.	這個樂段通常有一些稀疏的和弦。	这个乐段通常有一些稀疏的和弦。		FUN_140dd5ce0 2078371 織體
+This passage features only melodic tones and intervals.	這個樂段只有旋律音與音程。	这个乐段只有旋律音与音程。		FUN_140dd5ce0 2078371 織體
+Only one pitch is ever played at a time in this passage.	這個樂段任何時候都只奏出一個音高。	这个乐段任何时候都只奏出一个音高。		FUN_140dd5ce0 2078371 織體
+It is performed without preference for a scale and in free rhythm.	這種音樂演奏時不偏好特定音階，採用自由節奏。	这种音乐演奏时不偏好特定音阶，采用自由节奏。		FUN_140dd5ce0 2075734-2075800 形式整體的音階與節奏
+It is performed without preference for a scale.	這種音樂演奏時不偏好特定音階。	这种音乐演奏时不偏好特定音阶。		FUN_140dd5ce0 2075734-2075800 形式整體的音階與節奏
+It is performed in free rhythm.	這種音樂演奏時採用自由節奏。	这种音乐演奏时采用自由节奏。		FUN_140dd5ce0 2075734-2075800 形式整體的音階與節奏
+glide from note to note	在音符間滑奏	在音符间滑奏	inner	FUN_140dd5ce0 2075801-2075996 形式整體技法
+use grace notes	使用倚音	使用倚音	inner	FUN_140dd5ce0 2075801-2075996 形式整體技法
+use mordents	使用波音	使用波音	inner	FUN_140dd5ce0 2075801-2075996 形式整體技法
+make trills	奏出顫音	奏出颤音	inner	FUN_140dd5ce0 2075801-2075996 形式整體技法
+play rapid runs	演奏快速音群	演奏快速音群	inner	FUN_140dd5ce0 2075801-2075996 形式整體技法
+spread syllables over many notes	把音節延展到許多音上	把音节延展到许多音上	inner	FUN_140dd5ce0 2075801-2075996 形式整體技法
+match notes and syllables	讓音符與音節一一對應	让音符与音节一一对应	inner	FUN_140dd5ce0 2075801-2075996 形式整體技法
+locally improvise	局部即興	局部即兴	inner	FUN_140dd5ce0 2075801-2075996 形式整體技法
+syncopate	使用切分音	使用切分音	inner	FUN_140dd5ce0 2075801-2075996 形式整體技法
+add fills	加入過門	加入过门	inner	FUN_140dd5ce0 2075801-2075996 形式整體技法
+alternate tension and repose	讓緊張與舒緩交替	让紧张与舒缓交替	inner	FUN_140dd5ce0 2075801-2075996 形式整體技法
+modulate frequently	頻繁轉調	频繁转调	inner	FUN_140dd5ce0 2075801-2075996 形式整體技法
+play arpeggios	演奏琶音	演奏琶音	inner	FUN_140dd5ce0 2075801-2075996 形式整體技法
+play staccato	以斷奏演奏	以断奏演奏	inner	FUN_140dd5ce0 2075801-2075996 形式整體技法
+play legato	以圓滑奏演奏	以连奏演奏	inner	FUN_140dd5ce0 2075801-2075996 形式整體技法
+freely adjust the beats	自由調整節拍	自由调整节拍	inner	FUN_140dd5ce0 2075801-2075996 形式整體技法
+glides	滑音	滑音	inner	FUN_140dd5ce0 2078460-2078671／2076117-2076235 技法名詞（樂段技法、旋律型裝飾）
+grace notes	倚音	倚音	inner	FUN_140dd5ce0 2078460-2078671／2076117-2076235 技法名詞（樂段技法、旋律型裝飾）
+mordents	波音	波音	inner	FUN_140dd5ce0 2078460-2078671／2076117-2076235 技法名詞（樂段技法、旋律型裝飾）
+trills	顫音	颤音	inner	FUN_140dd5ce0 2078460-2078671／2076117-2076235 技法名詞（樂段技法、旋律型裝飾）
+rapid runs	快速音群	快速音群	inner	FUN_140dd5ce0 2078460-2078671／2076117-2076235 技法名詞（樂段技法、旋律型裝飾）
+locally improvisation	局部即興	局部即兴	inner	FUN_140dd5ce0 2078460-2078671／2076117-2076235 技法名詞（樂段技法、旋律型裝飾）
+melismatic phrasing	一字多音的花腔式樂句	一字多音的花腔式乐句	inner	FUN_140dd5ce0 2078460-2078671／2076117-2076235 技法名詞（樂段技法、旋律型裝飾）
+syllabic phrasing	一字一音的樂句	一字一音的乐句	inner	FUN_140dd5ce0 2078460-2078671／2076117-2076235 技法名詞（樂段技法、旋律型裝飾）
+syncopation	切分音	切分音	inner	FUN_140dd5ce0 2078460-2078671／2076117-2076235 技法名詞（樂段技法、旋律型裝飾）
+frequent modulation	頻繁轉調	频繁转调	inner	FUN_140dd5ce0 2078460-2078671／2076117-2076235 技法名詞（樂段技法、旋律型裝飾）
+alternation between tension and repose	緊張與舒緩的交替	紧张与舒缓的交替	inner	FUN_140dd5ce0 2078460-2078671／2076117-2076235 技法名詞（樂段技法、旋律型裝飾）
+fills	過門	过门	inner	FUN_140dd5ce0 2078460-2078671／2076117-2076235 技法名詞（樂段技法、旋律型裝飾）
+arpeggios	琶音	琶音	inner	FUN_140dd5ce0 2078460-2078671／2076117-2076235 技法名詞（樂段技法、旋律型裝飾）
+free adjustment of the beats	節拍的自由調整	节拍的自由调整	inner	FUN_140dd5ce0 2078460-2078671／2076117-2076235 技法名詞（樂段技法、旋律型裝飾）
+legato	圓滑奏	连奏	inner	FUN_140dd5ce0 2078460-2078671／2076117-2076235 技法名詞（樂段技法、旋律型裝飾）
+staccato	斷奏	断奏	inner	FUN_140dd5ce0 2078460-2078671／2076117-2076235 技法名詞（樂段技法、旋律型裝飾）
+unrelated passages	不相關的樂段	不相关的乐段	inner	FUN_140dd5ce0 2077112-2077309 結構清單的樂段名稱
+synthesis of previous passages	先前樂段的融合段	先前乐段的融合段	inner	FUN_140dd5ce0 2077112-2077309 結構清單的樂段名稱
+series of variations	變奏段	变奏段	inner	FUN_140dd5ce0 2077112-2077309 結構清單的樂段名稱
+exposition of the previous passage	上一樂段的呈示部	上一乐段的呈示部	inner	FUN_140dd5ce0 2077112-2077309 結構清單的樂段名稱
+recapitulation of the previous passage	上一樂段的再現部	上一乐段的再现部	inner	FUN_140dd5ce0 2077112-2077309 結構清單的樂段名稱
+series of variations on the theme	主題的變奏段	主题的变奏段	inner	FUN_140dd5ce0 2077112-2077309 結構清單的樂段名稱
+series of variations on the first theme	第一主題的變奏段	第一主题的变奏段	inner	FUN_140dd5ce0 2077112-2077309 結構清單的樂段名稱
+series of variations on the second theme	第二主題的變奏段	第二主题的变奏段	inner	FUN_140dd5ce0 2077112-2077309 結構清單的樂段名稱
+The tonic note is fixed only at the time of performance.	主音只在演奏時才確定。	主音只在演奏时才确定。		FUN_140dd5ce0 2078955-2079079 音階系統
+The tonic note is a fixed tone passed from teacher to student.	主音是師徒相傳的固定音。	主音是师徒相传的固定音。		FUN_140dd5ce0 2078955-2079079 音階系統
+Every note is named.	每個音都有名稱。	每个音都有名称。		FUN_140dd5ce0 2078955-2079079 音階系統
+A single note in the fundamental scale is named.	基本音階中只有一個音有名稱。	基本音阶中只有一个音有名称。		FUN_140dd5ce0 2078955-2079079 音階系統
+Preferred notes in the fundamental scale are named.	基本音階中的偏好音有名稱。	基本音阶中的偏好音有名称。		FUN_140dd5ce0 2078955-2079079 音階系統
+After a scale is constructed, notes are named according to degree.	音階構成後，各音依音級命名。	音阶构成后，各音依音级命名。		FUN_140dd5ce0 2078955-2079079 音階系統
+After a scale is constructed, the root note of chords are named.	音階構成後，和弦的根音會被命名。	音阶构成后，和弦的根音会被命名。		FUN_140dd5ce0 2078955-2079079 音階系統
+constructed by selection of degrees from the fundamental scale	從基本音階中挑選音級構成	从基本音阶中挑选音级构成	inner	FUN_140dd5ce0 2079094-2079191 各音階的構成（接在 scale is 後）
+thought of as joined chords spanning a perfect fifth and a perfect fourth	被視為分別橫跨完全五度與完全四度的兩個相連和弦	被视为分别横跨完全五度与完全四度的两个相连和弦	inner	FUN_140dd5ce0 2079094-2079191 各音階的構成（接在 scale is 後）
+thought of as two disjoint chords spanning a perfect fifth and a major third	被視為分別橫跨完全五度與大三度的兩個不相連和弦	被视为分别横跨完全五度与大三度的两个不相连和弦	inner	FUN_140dd5ce0 2079094-2079191 各音階的構成（接在 scale is 後）
+thought of as two disjoint chords spanning a tritone and a perfect fourth	被視為分別橫跨三全音與完全四度的兩個不相連和弦	被视为分别横跨三全音与完全四度的两个不相连和弦	inner	FUN_140dd5ce0 2079094-2079191 各音階的構成（接在 scale is 後）
+thought of as two disjoint chords drawn from the fundamental division of the perfect fourth	被視為取自完全四度基本劃分的兩個不相連和弦	被视为取自完全四度基本划分的两个不相连和弦	inner	FUN_140dd5ce0 2079094-2079191 各音階的構成（接在 scale is 後）
+thought of as two disjoint chords spanning two perfect fourths	被視為各橫跨一個完全四度的兩個不相連和弦	被视为各横跨一个完全四度的两个不相连和弦	inner	FUN_140dd5ce0 2079094-2079191 各音階的構成（接在 scale is 後）
+The rhythm system is fundamentally polyrhythmic.	這套節奏系統本質上是複節奏。	这套节奏系统本质上是复节奏。		FUN_140dd5ce0 2079340-2079654 節奏說明
+There are always multiple rhythm lines, and each of their bars is played over the same period of time, regardless of the number of beats.	總是有多條節奏線，不論拍數多少，各線的每個小節都在相同的時間內奏完。	总是有多条节奏线，不论拍数多少，各线的每个小节都在相同的时间内奏完。		FUN_140dd5ce0 2079340-2079654 節奏說明
+The rhythm lines are thought of as one, without a primary-subordinate relationship, though individual lines can be named.	這些節奏線被視為一體，沒有主從之分，但各條線可以有自己的名稱。	这些节奏线被视为一体，没有主从之分，但各条线可以有自己的名称。		FUN_140dd5ce0 2079340-2079654 節奏說明
+The rhythm system is fundamentally polymetric.	這套節奏系統本質上是多重節拍。	这套节奏系统本质上是多重节拍。		FUN_140dd5ce0 2079340-2079654 節奏說明
+There are always multiple rhythm lines, and the beats are always played together, even if one rhythm line completes (and then repeats) before the other is finished.	總是有多條節奏線，而且各線的拍子總是一起演奏，即使某條節奏線在另一條結束前就已奏完（並重新開始）。	总是有多条节奏线，而且各线的拍子总是一起演奏，即使某条节奏线在另一条结束前就已奏完（并重新开始）。		FUN_140dd5ce0 2079340-2079654 節奏說明
+The patterns are to be played in the same beat, allowing one to repeat before the other is concluded.	這些節奏型要按同一拍演奏，允許其中一個在另一個結束前就重複。	这些节奏型要按同一拍演奏，允许其中一个在另一个结束前就重复。		FUN_140dd5ce0 2079340-2079654 節奏說明
+The patterns are to be played over the same period of time, concluding together regardless of beat number.	這些節奏型要在相同的時間內演奏，不論拍數多少都一起結束。	这些节奏型要在相同的时间内演奏，不论拍数多少都一起结束。		FUN_140dd5ce0 2079340-2079654 節奏說明
+As stated above, they are to be played in polymeter.	如上所述，它們要以多重節拍演奏。	如上所述，它们要以多重节拍演奏。		FUN_140dd5ce0 2079340-2079654 節奏說明
+As stated above, they are to be played in polyrhythm.	如上所述，它們要以複節奏演奏。	如上所述，它们要以复节奏演奏。		FUN_140dd5ce0 2079340-2079654 節奏說明
+The beat is stressed as follows:	各拍的強弱如下：	各拍的强弱如下：		FUN_140dd5ce0 2079340-2079654 節奏說明
+where x is a beat, - is silent and | indicates a bar.	其中 x 是一拍，- 表示休止，| 表示小節線。	其中 x 是一拍，- 表示休止，| 表示小节线。		FUN_140dd5ce0 2079340-2079654 節奏說明
+where x is a beat and | indicates a bar.	其中 x 是一拍，| 表示小節線。	其中 x 是一拍，| 表示小节线。		FUN_140dd5ce0 2079340-2079654 節奏說明
+! marks the primary accent	! 表示主重音	! 表示主重音	inner	FUN_140dd5ce0 2079639-2079648 重音記號說明（清單項）
+X marks an accented beat	X 表示重拍	X 表示重拍	inner	FUN_140dd5ce0 2079639-2079648 重音記號說明（清單項）
+` marks a beat as early	` 表示提前的拍	` 表示提前的拍	inner	FUN_140dd5ce0 2079639-2079648 重音記號說明（清單項）
+' marks a beat as late	' 表示延後的拍	' 表示延后的拍	inner	FUN_140dd5ce0 2079639-2079648 重音記號說明（清單項）
+A singer recites nonsensical words and sounds	一名歌手吟誦無意義的字詞與聲音	一名歌手吟诵无意义的字词与声音	inner	FUN_140dd5ce0 2075188-2075230 人聲：人數、聲部、吟誦內容（詩歌形式／著作）
+A speaker recites nonsensical words and sounds	一名朗誦者吟誦無意義的字詞與聲音	一名朗诵者吟诵无意义的字词与声音	inner	FUN_140dd5ce0 2075188-2075230 人聲：人數、聲部、吟誦內容（詩歌形式／著作）
+A chanter recites nonsensical words and sounds	一名吟唱者吟誦無意義的字詞與聲音	一名吟唱者吟诵无意义的字词与声音	inner	FUN_140dd5ce0 2075188-2075230 人聲：人數、聲部、吟誦內容（詩歌形式／著作）
+always include a rising-falling melody pattern	總是加入先上行後下行旋律型	总是加入先上行后下行旋律型	inner	FUN_140dd5ce0 2076019-2076248／2078697-2078927 旋律型：頻率＋include a＋走向＋melody pattern＋[with 音級][as well as／with 裝飾]
+always include a falling-rising melody pattern	總是加入先下行後上行旋律型	总是加入先下行后上行旋律型	inner	FUN_140dd5ce0 2076019-2076248／2078697-2078927 旋律型：頻率＋include a＋走向＋melody pattern＋[with 音級][as well as／with 裝飾]
+always include a rising melody pattern	總是加入上行旋律型	总是加入上行旋律型	inner	FUN_140dd5ce0 2076019-2076248／2078697-2078927 旋律型：頻率＋include a＋走向＋melody pattern＋[with 音級][as well as／with 裝飾]
+always include a falling melody pattern	總是加入下行旋律型	总是加入下行旋律型	inner	FUN_140dd5ce0 2076019-2076248／2078697-2078927 旋律型：頻率＋include a＋走向＋melody pattern＋[with 音級][as well as／with 裝飾]
+often include a rising-falling melody pattern	經常加入先上行後下行旋律型	经常加入先上行后下行旋律型	inner	FUN_140dd5ce0 2076019-2076248／2078697-2078927 旋律型：頻率＋include a＋走向＋melody pattern＋[with 音級][as well as／with 裝飾]
+often include a falling-rising melody pattern	經常加入先下行後上行旋律型	经常加入先下行后上行旋律型	inner	FUN_140dd5ce0 2076019-2076248／2078697-2078927 旋律型：頻率＋include a＋走向＋melody pattern＋[with 音級][as well as／with 裝飾]
+often include a rising melody pattern	經常加入上行旋律型	经常加入上行旋律型	inner	FUN_140dd5ce0 2076019-2076248／2078697-2078927 旋律型：頻率＋include a＋走向＋melody pattern＋[with 音級][as well as／with 裝飾]
+often include a falling melody pattern	經常加入下行旋律型	经常加入下行旋律型	inner	FUN_140dd5ce0 2076019-2076248／2078697-2078927 旋律型：頻率＋include a＋走向＋melody pattern＋[with 音級][as well as／with 裝飾]
+sometimes include a rising-falling melody pattern	有時加入先上行後下行旋律型	有时加入先上行后下行旋律型	inner	FUN_140dd5ce0 2076019-2076248／2078697-2078927 旋律型：頻率＋include a＋走向＋melody pattern＋[with 音級][as well as／with 裝飾]
+sometimes include a falling-rising melody pattern	有時加入先下行後上行旋律型	有时加入先下行后上行旋律型	inner	FUN_140dd5ce0 2076019-2076248／2078697-2078927 旋律型：頻率＋include a＋走向＋melody pattern＋[with 音級][as well as／with 裝飾]
+sometimes include a rising melody pattern	有時加入上行旋律型	有时加入上行旋律型	inner	FUN_140dd5ce0 2076019-2076248／2078697-2078927 旋律型：頻率＋include a＋走向＋melody pattern＋[with 音級][as well as／with 裝飾]
+sometimes include a falling melody pattern	有時加入下行旋律型	有时加入下行旋律型	inner	FUN_140dd5ce0 2076019-2076248／2078697-2078927 旋律型：頻率＋include a＋走向＋melody pattern＋[with 音級][as well as／with 裝飾]
+brief passage	簡短的樂段	简短的乐段	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+brief passages	簡短的樂段	简短的乐段	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+brief unrelated passages	簡短的不相關的樂段	简短的不相关的乐段	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+brief introduction	簡短的前奏	简短的前奏	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+brief verse	簡短的主歌	简短的主歌	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+brief verses	簡短的主歌	简短的主歌	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+brief chorus	簡短的副歌	简短的副歌	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+brief finale	簡短的終曲	简短的终曲	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+brief coda	簡短的尾聲	简短的尾声	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+brief bridge-passage	簡短的橋段	简短的桥段	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+brief bridge-passages	簡短的橋段	简短的桥段	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+brief theme	簡短的主題	简短的主题	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+brief themes	簡短的主題	简短的主题	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+brief first theme	簡短的第一主題	简短的第一主题	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+brief first themes	簡短的第一主題	简短的第一主题	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+brief second theme	簡短的第二主題	简短的第二主题	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+brief second themes	簡短的第二主題	简短的第二主题	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+brief series of variations	簡短的變奏段	简短的变奏段	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+brief synthesis of the two themes	簡短的兩個主題的融合	简短的两个主题的融合	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+brief synthesis of previous passages	簡短的先前樂段的融合段	简短的先前乐段的融合段	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+brief exposition of the theme	簡短的主題的呈示部	简短的主题的呈示部	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+brief exposition of the first theme	簡短的第一主題的呈示部	简短的第一主题的呈示部	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+brief exposition of the second theme	簡短的第二主題的呈示部	简短的第二主题的呈示部	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+brief exposition of the previous passage	簡短的上一樂段的呈示部	简短的上一乐段的呈示部	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+brief recapitulation of the theme	簡短的主題的再現部	简短的主题的再现部	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+brief recapitulation of the first theme	簡短的第一主題的再現部	简短的第一主题的再现部	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+brief recapitulation of the second theme	簡短的第二主題的再現部	简短的第二主题的再现部	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+brief recapitulation of the previous passage	簡短的上一樂段的再現部	简短的上一乐段的再现部	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+brief series of variations on the theme	簡短的主題的變奏段	简短的主题的变奏段	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+brief series of variations on the first theme	簡短的第一主題的變奏段	简短的第一主题的变奏段	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+brief series of variations on the second theme	簡短的第二主題的變奏段	简短的第二主题的变奏段	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+lengthy passage	較長的樂段	较长的乐段	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+lengthy passages	較長的樂段	较长的乐段	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+lengthy unrelated passages	較長的不相關的樂段	较长的不相关的乐段	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+lengthy introduction	較長的前奏	较长的前奏	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+lengthy verse	較長的主歌	较长的主歌	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+lengthy verses	較長的主歌	较长的主歌	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+lengthy chorus	較長的副歌	较长的副歌	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+lengthy finale	較長的終曲	较长的终曲	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+lengthy coda	較長的尾聲	较长的尾声	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+lengthy bridge-passage	較長的橋段	较长的桥段	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+lengthy bridge-passages	較長的橋段	较长的桥段	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+lengthy theme	較長的主題	较长的主题	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+lengthy themes	較長的主題	较长的主题	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+lengthy first theme	較長的第一主題	较长的第一主题	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+lengthy first themes	較長的第一主題	较长的第一主题	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+lengthy second theme	較長的第二主題	较长的第二主题	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+lengthy second themes	較長的第二主題	较长的第二主题	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+lengthy series of variations	較長的變奏段	较长的变奏段	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+lengthy synthesis of the two themes	較長的兩個主題的融合	较长的两个主题的融合	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+lengthy synthesis of previous passages	較長的先前樂段的融合段	较长的先前乐段的融合段	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+lengthy exposition of the theme	較長的主題的呈示部	较长的主题的呈示部	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+lengthy exposition of the first theme	較長的第一主題的呈示部	较长的第一主题的呈示部	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+lengthy exposition of the second theme	較長的第二主題的呈示部	较长的第二主题的呈示部	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+lengthy exposition of the previous passage	較長的上一樂段的呈示部	较长的上一乐段的呈示部	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+lengthy recapitulation of the theme	較長的主題的再現部	较长的主题的再现部	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+lengthy recapitulation of the first theme	較長的第一主題的再現部	较长的第一主题的再现部	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+lengthy recapitulation of the second theme	較長的第二主題的再現部	较长的第二主题的再现部	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+lengthy recapitulation of the previous passage	較長的上一樂段的再現部	较长的上一乐段的再现部	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+lengthy series of variations on the theme	較長的主題的變奏段	较长的主题的变奏段	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+lengthy series of variations on the first theme	較長的第一主題的變奏段	较长的第一主题的变奏段	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+lengthy series of variations on the second theme	較長的第二主題的變奏段	较长的第二主题的变奏段	inner	FUN_140dd5ce0 2077165-2077176 結構清單：長短＋樂段名稱（寫死，不用通用外框）
+should stress the rhythm	應強調節奏	应强调节奏	inner	FUN_140dd5ce0 2076523-2076656 聲部表現（清單項；寫死）
+should be stately	應莊嚴	应庄严	inner	FUN_140dd5ce0 2076523-2076656 聲部表現（清單項；寫死）
+should be bright	應明亮	应明亮	inner	FUN_140dd5ce0 2076523-2076656 聲部表現（清單項；寫死）
+should be lively	應活潑	应活泼	inner	FUN_140dd5ce0 2076523-2076656 聲部表現（清單項；寫死）
+should be made with skill	應展現技巧	应展现技巧	inner	FUN_140dd5ce0 2076523-2076656 聲部表現（清單項；寫死）
+should perform with skill	應展現技巧	应展现技巧	inner	FUN_140dd5ce0 2076523-2076656 聲部表現（清單項；寫死）
+should be vigorous	應雄健有力	应雄健有力	inner	FUN_140dd5ce0 2076523-2076656 聲部表現（清單項；寫死）
+should be spirited	應精神抖擻	应精神抖擞	inner	FUN_140dd5ce0 2076523-2076656 聲部表現（清單項；寫死）
+should be delicate	應細膩	应细腻	inner	FUN_140dd5ce0 2076523-2076656 聲部表現（清單項；寫死）
+should be fiery	應火熱	应火热	inner	FUN_140dd5ce0 2076523-2076656 聲部表現（清單項；寫死）
+should bring a sense of motion	應帶來律動感	应带来律动感	inner	FUN_140dd5ce0 2076523-2076656 聲部表現（清單項；寫死）
+should be made with feeling	應飽含感情	应饱含感情	inner	FUN_140dd5ce0 2076523-2076656 聲部表現（清單項；寫死）
+should perform with feeling	應飽含感情	应饱含感情	inner	FUN_140dd5ce0 2076523-2076656 聲部表現（清單項；寫死）
+should feel agitated	應帶有不安感	应带有不安感	inner	FUN_140dd5ce0 2076523-2076656 聲部表現（清單項；寫死）
+should be passionate	應充滿激情	应充满激情	inner	FUN_140dd5ce0 2076523-2076656 聲部表現（清單項；寫死）
+should sparkle	應閃耀生輝	应闪耀生辉	inner	FUN_140dd5ce0 2076523-2076656 聲部表現（清單項；寫死）
+should be broad	應寬廣	应宽广	inner	FUN_140dd5ce0 2076523-2076656 聲部表現（清單項；寫死）
+should be made sweetly	應甜美	应甜美	inner	FUN_140dd5ce0 2076523-2076656 聲部表現（清單項；寫死）
+should perform sweetly	應甜美	应甜美	inner	FUN_140dd5ce0 2076523-2076656 聲部表現（清單項；寫死）
+should be strong	應強勁	应强劲	inner	FUN_140dd5ce0 2076523-2076656 聲部表現（清單項；寫死）
+should be energetic	應充滿活力	应充满活力	inner	FUN_140dd5ce0 2076523-2076656 聲部表現（清單項；寫死）
+should be forceful	應鏗鏘有力	应铿锵有力	inner	FUN_140dd5ce0 2076523-2076656 聲部表現（清單項；寫死）
+should feel heroic	應帶有英雄氣概	应带有英雄气概	inner	FUN_140dd5ce0 2076523-2076656 聲部表現（清單項；寫死）
+should be made expressively	應富有表現力	应富有表现力	inner	FUN_140dd5ce0 2076523-2076656 聲部表現（清單項；寫死）
+should perform expressively	應富有表現力	应富有表现力	inner	FUN_140dd5ce0 2076523-2076656 聲部表現（清單項；寫死）
+should feel furious	應帶有狂怒感	应带有狂怒感	inner	FUN_140dd5ce0 2076523-2076656 聲部表現（清單項；寫死）
+should be joyful	應歡快	应欢快	inner	FUN_140dd5ce0 2076523-2076656 聲部表現（清單項；寫死）
+should be grand	應宏偉	应宏伟	inner	FUN_140dd5ce0 2076523-2076656 聲部表現（清單項；寫死）
+should be merry	應愉悅	应愉悦	inner	FUN_140dd5ce0 2076523-2076656 聲部表現（清單項；寫死）
+should be graceful	應優雅	应优雅	inner	FUN_140dd5ce0 2076523-2076656 聲部表現（清單項；寫死）
+should build as it proceeds	應逐步推向高潮	应逐步推向高潮	inner	FUN_140dd5ce0 2076523-2076656 聲部表現（清單項；寫死）
+should build as the performance proceeds	應逐步推向高潮	应逐步推向高潮	inner	FUN_140dd5ce0 2076523-2076656 聲部表現（清單項；寫死）
+should evoke tears	應催人淚下	应催人泪下	inner	FUN_140dd5ce0 2076523-2076656 聲部表現（清單項；寫死）
+should be melancholic	應憂鬱	应忧郁	inner	FUN_140dd5ce0 2076523-2076656 聲部表現（清單項；寫死）
+should feel mournful	應帶有哀傷感	应带有哀伤感	inner	FUN_140dd5ce0 2076523-2076656 聲部表現（清單項；寫死）
+should be made with a light touch	應輕巧	应轻巧	inner	FUN_140dd5ce0 2076523-2076656 聲部表現（清單項；寫死）
+should perform with a light touch	應輕巧	应轻巧	inner	FUN_140dd5ce0 2076523-2076656 聲部表現（清單項；寫死）
+should feel heavy	應帶有沉重感	应带有沉重感	inner	FUN_140dd5ce0 2076523-2076656 聲部表現（清單項；寫死）
+should feel mysterious	應帶有神祕感	应带有神秘感	inner	FUN_140dd5ce0 2076523-2076656 聲部表現（清單項；寫死）
+should be jumpy	應跳躍	应跳跃	inner	FUN_140dd5ce0 2076523-2076656 聲部表現（清單項；寫死）
+should feel playful	應帶有俏皮感	应带有俏皮感	inner	FUN_140dd5ce0 2076523-2076656 聲部表現（清單項；寫死）
+should feel tender	應帶有溫柔感	应带有温柔感	inner	FUN_140dd5ce0 2076523-2076656 聲部表現（清單項；寫死）
+should feel calm	應帶有平靜感	应带有平静感	inner	FUN_140dd5ce0 2076523-2076656 聲部表現（清單項；寫死）
+should be triumphant	應帶有凱旋氣勢	应带有凯旋气势	inner	FUN_140dd5ce0 2076523-2076656 聲部表現（清單項；寫死）
+is to be in whispered undertones	要如耳語般低聲	要如耳语般低声	inner	FUN_140dd5ce0 2076659-2076712 聲部力度（清單項；寫死）
+is to be very soft	要非常輕柔	要非常轻柔	inner	FUN_140dd5ce0 2076659-2076712 聲部力度（清單項；寫死）
+is to be soft	要輕柔	要轻柔	inner	FUN_140dd5ce0 2076659-2076712 聲部力度（清單項；寫死）
+is to be moderately soft	要稍輕	要稍轻	inner	FUN_140dd5ce0 2076659-2076712 聲部力度（清單項；寫死）
+is to be moderately loud	要稍響	要稍响	inner	FUN_140dd5ce0 2076659-2076712 聲部力度（清單項；寫死）
+is to be loud	要響亮	要响亮	inner	FUN_140dd5ce0 2076659-2076712 聲部力度（清單項；寫死）
+is to be very loud	要非常響亮	要非常响亮	inner	FUN_140dd5ce0 2076659-2076712 聲部力度（清單項；寫死）
+is to become louder and louder	要越來越響	要越来越响	inner	FUN_140dd5ce0 2076659-2076712 聲部力度（清單項；寫死）
+is to become softer and softer	要越來越輕	要越来越轻	inner	FUN_140dd5ce0 2076659-2076712 聲部力度（清單項；寫死）
+is to fade into silence	要漸漸歸於寂靜	要渐渐归于寂静	inner	FUN_140dd5ce0 2076659-2076712 聲部力度（清單項；寫死）
+is to start loud then be immediately soft	要先強後立即轉弱	要先强后立即转弱	inner	FUN_140dd5ce0 2076659-2076712 聲部力度（清單項；寫死）

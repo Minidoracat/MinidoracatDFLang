@@ -335,7 +335,7 @@ pub unsafe fn rewrite(mtb: usize, dict: &Dict, note_miss: impl FnOnce(&[u8])) ->
         let pal = palette(l);
         let plans = plain_text(words, l, pal.as_ref())
             .and_then(|key| {
-                let t = dict.translate_text(&key);
+                let t = dict.translate_paragraph(&key);
                 if t.is_none() {
                     note_miss(&key);
                 }

@@ -1,0 +1,830 @@
+en	zh-Hant	zh-Hans	align	note
+{@1} hundred one	{1}百零一	{1}百零一	inner	FUN_14052e360 百位數（管風琴管數最多 492）；百位後接 1–9 補「零」、10–19 寫「一十」
+{@1} hundred two	{1}百零二	{1}百零二	inner	FUN_14052e360 百位數（管風琴管數最多 492）；百位後接 1–9 補「零」、10–19 寫「一十」
+{@1} hundred three	{1}百零三	{1}百零三	inner	FUN_14052e360 百位數（管風琴管數最多 492）；百位後接 1–9 補「零」、10–19 寫「一十」
+{@1} hundred four	{1}百零四	{1}百零四	inner	FUN_14052e360 百位數（管風琴管數最多 492）；百位後接 1–9 補「零」、10–19 寫「一十」
+{@1} hundred five	{1}百零五	{1}百零五	inner	FUN_14052e360 百位數（管風琴管數最多 492）；百位後接 1–9 補「零」、10–19 寫「一十」
+{@1} hundred six	{1}百零六	{1}百零六	inner	FUN_14052e360 百位數（管風琴管數最多 492）；百位後接 1–9 補「零」、10–19 寫「一十」
+{@1} hundred seven	{1}百零七	{1}百零七	inner	FUN_14052e360 百位數（管風琴管數最多 492）；百位後接 1–9 補「零」、10–19 寫「一十」
+{@1} hundred eight	{1}百零八	{1}百零八	inner	FUN_14052e360 百位數（管風琴管數最多 492）；百位後接 1–9 補「零」、10–19 寫「一十」
+{@1} hundred nine	{1}百零九	{1}百零九	inner	FUN_14052e360 百位數（管風琴管數最多 492）；百位後接 1–9 補「零」、10–19 寫「一十」
+{@1} hundred ten	{1}百一十	{1}百一十	inner	FUN_14052e360 百位數（管風琴管數最多 492）；百位後接 1–9 補「零」、10–19 寫「一十」
+{@1} hundred eleven	{1}百一十一	{1}百一十一	inner	FUN_14052e360 百位數（管風琴管數最多 492）；百位後接 1–9 補「零」、10–19 寫「一十」
+{@1} hundred twelve	{1}百一十二	{1}百一十二	inner	FUN_14052e360 百位數（管風琴管數最多 492）；百位後接 1–9 補「零」、10–19 寫「一十」
+{@1} hundred thirteen	{1}百一十三	{1}百一十三	inner	FUN_14052e360 百位數（管風琴管數最多 492）；百位後接 1–9 補「零」、10–19 寫「一十」
+{@1} hundred fourteen	{1}百一十四	{1}百一十四	inner	FUN_14052e360 百位數（管風琴管數最多 492）；百位後接 1–9 補「零」、10–19 寫「一十」
+{@1} hundred fifteen	{1}百一十五	{1}百一十五	inner	FUN_14052e360 百位數（管風琴管數最多 492）；百位後接 1–9 補「零」、10–19 寫「一十」
+{@1} hundred sixteen	{1}百一十六	{1}百一十六	inner	FUN_14052e360 百位數（管風琴管數最多 492）；百位後接 1–9 補「零」、10–19 寫「一十」
+{@1} hundred seventeen	{1}百一十七	{1}百一十七	inner	FUN_14052e360 百位數（管風琴管數最多 492）；百位後接 1–9 補「零」、10–19 寫「一十」
+{@1} hundred eighteen	{1}百一十八	{1}百一十八	inner	FUN_14052e360 百位數（管風琴管數最多 492）；百位後接 1–9 補「零」、10–19 寫「一十」
+{@1} hundred nineteen	{1}百一十九	{1}百一十九	inner	FUN_14052e360 百位數（管風琴管數最多 492）；百位後接 1–9 補「零」、10–19 寫「一十」
+{@1} hundred {%2}	{1}百{2}	{1}百{2}	inner	FUN_14052e360 百位數（管風琴管數最多 492）；百位後接 1–9 補「零」、10–19 寫「一十」
+{@1} hundred	{1}百	{1}百	inner	FUN_14052e360 百位數（管風琴管數最多 492）；百位後接 1–9 補「零」、10–19 寫「一十」
+The {1} is a {@2} shell musical instrument which uses a shell pump to send water into a chamber, ultimately supplying air to blow through any of {%3} shell pipes.	{1}是一種{2}殼製樂器，用殼製幫浦把水送進腔室來供氣，吹響{3}根殼管中的任何一根。	{1}是一种{2}壳制乐器，用壳制水泵把水送进腔室来供气，吹响{3}根壳管中的任意一根。		FUN_140ebe8a0 2231476–2231637 鍵盤樂器說明：水力風琴首句；{1} 樂器名（生成的字）、{2} 大小、{3}{4}{6} 材質、{5} 管數；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} shell musical instrument which uses a shell pump to send water into a chamber, ultimately supplying air to blow through any of {%3} {@4} pipes.	{1}是一種{2}殼製樂器，用殼製幫浦把水送進腔室來供氣，吹響{3}根{4}管中的任何一根。	{1}是一种{2}壳制乐器，用壳制水泵把水送进腔室来供气，吹响{3}根{4}管中的任意一根。		FUN_140ebe8a0 2231476–2231637 鍵盤樂器說明：水力風琴首句；{1} 樂器名（生成的字）、{2} 大小、{3}{4}{6} 材質、{5} 管數；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} shell musical instrument which uses a {@3} pump to send water into a chamber, ultimately supplying air to blow through any of {%4} shell pipes.	{1}是一種{2}殼製樂器，用{3}製幫浦把水送進腔室來供氣，吹響{4}根殼管中的任何一根。	{1}是一种{2}壳制乐器，用{3}制水泵把水送进腔室来供气，吹响{4}根壳管中的任意一根。		FUN_140ebe8a0 2231476–2231637 鍵盤樂器說明：水力風琴首句；{1} 樂器名（生成的字）、{2} 大小、{3}{4}{6} 材質、{5} 管數；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} {@3} musical instrument which uses a shell pump to send water into a chamber, ultimately supplying air to blow through any of {%4} shell pipes.	{1}是一種{2}{3}製樂器，用殼製幫浦把水送進腔室來供氣，吹響{4}根殼管中的任何一根。	{1}是一种{2}{3}制乐器，用壳制水泵把水送进腔室来供气，吹响{4}根壳管中的任意一根。		FUN_140ebe8a0 2231476–2231637 鍵盤樂器說明：水力風琴首句；{1} 樂器名（生成的字）、{2} 大小、{3}{4}{6} 材質、{5} 管數；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} shell musical instrument which uses a {@3} pump to send water into a chamber, ultimately supplying air to blow through any of {%4} {@5} pipes.	{1}是一種{2}殼製樂器，用{3}製幫浦把水送進腔室來供氣，吹響{4}根{5}管中的任何一根。	{1}是一种{2}壳制乐器，用{3}制水泵把水送进腔室来供气，吹响{4}根{5}管中的任意一根。		FUN_140ebe8a0 2231476–2231637 鍵盤樂器說明：水力風琴首句；{1} 樂器名（生成的字）、{2} 大小、{3}{4}{6} 材質、{5} 管數；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} {@3} musical instrument which uses a shell pump to send water into a chamber, ultimately supplying air to blow through any of {%4} {@5} pipes.	{1}是一種{2}{3}製樂器，用殼製幫浦把水送進腔室來供氣，吹響{4}根{5}管中的任何一根。	{1}是一种{2}{3}制乐器，用壳制水泵把水送进腔室来供气，吹响{4}根{5}管中的任意一根。		FUN_140ebe8a0 2231476–2231637 鍵盤樂器說明：水力風琴首句；{1} 樂器名（生成的字）、{2} 大小、{3}{4}{6} 材質、{5} 管數；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} {@3} musical instrument which uses a {@4} pump to send water into a chamber, ultimately supplying air to blow through any of {%5} shell pipes.	{1}是一種{2}{3}製樂器，用{4}製幫浦把水送進腔室來供氣，吹響{5}根殼管中的任何一根。	{1}是一种{2}{3}制乐器，用{4}制水泵把水送进腔室来供气，吹响{5}根壳管中的任意一根。		FUN_140ebe8a0 2231476–2231637 鍵盤樂器說明：水力風琴首句；{1} 樂器名（生成的字）、{2} 大小、{3}{4}{6} 材質、{5} 管數；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} {@3} musical instrument which uses a {@4} pump to send water into a chamber, ultimately supplying air to blow through any of {%5} {@6} pipes.	{1}是一種{2}{3}製樂器，用{4}製幫浦把水送進腔室來供氣，吹響{5}根{6}管中的任何一根。	{1}是一种{2}{3}制乐器，用{4}制水泵把水送进腔室来供气，吹响{5}根{6}管中的任意一根。		FUN_140ebe8a0 2231476–2231637 鍵盤樂器說明：水力風琴首句；{1} 樂器名（生成的字）、{2} 大小、{3}{4}{6} 材質、{5} 管數
+The {1} is a {@2} shell musical instrument which uses a {@3} bellows to pressurize air, ultimately blowing it through any of {%4} shell pipes.	{1}是一種{2}殼製樂器，用{3}風箱為空氣加壓，再吹進{4}根殼管中的任何一根。	{1}是一种{2}壳制乐器，用{3}风箱给空气加压，再吹进{4}根壳管中的任意一根。		FUN_140ebe8a0 2231476–2231637 鍵盤樂器說明：管風琴首句；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} shell musical instrument which uses a {@3} bellows to pressurize air, ultimately blowing it through any of {%4} {@5} pipes.	{1}是一種{2}殼製樂器，用{3}風箱為空氣加壓，再吹進{4}根{5}管中的任何一根。	{1}是一种{2}壳制乐器，用{3}风箱给空气加压，再吹进{4}根{5}管中的任意一根。		FUN_140ebe8a0 2231476–2231637 鍵盤樂器說明：管風琴首句；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} {@3} musical instrument which uses a {@4} bellows to pressurize air, ultimately blowing it through any of {%5} shell pipes.	{1}是一種{2}{3}製樂器，用{4}風箱為空氣加壓，再吹進{5}根殼管中的任何一根。	{1}是一种{2}{3}制乐器，用{4}风箱给空气加压，再吹进{5}根壳管中的任意一根。		FUN_140ebe8a0 2231476–2231637 鍵盤樂器說明：管風琴首句；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} {@3} musical instrument which uses a {@4} bellows to pressurize air, ultimately blowing it through any of {%5} {@6} pipes.	{1}是一種{2}{3}製樂器，用{4}風箱為空氣加壓，再吹進{5}根{6}管中的任何一根。	{1}是一种{2}{3}制乐器，用{4}风箱给空气加压，再吹进{5}根{6}管中的任意一根。		FUN_140ebe8a0 2231476–2231637 鍵盤樂器說明：管風琴首句
+The {1} is a {@2} shell musical instrument which houses {%3} {@4} strings.	{1}是一種{2}殼製樂器，內有{3}根{4}弦。	{1}是一种{2}壳制乐器，内有{3}根{4}弦。		FUN_140ebe8a0 2231476–2231637 鍵盤樂器說明：鍵盤弦樂器首句；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} {@3} musical instrument which houses {%4} {@5} strings.	{1}是一種{2}{3}製樂器，內有{4}根{5}弦。	{1}是一种{2}{3}制乐器，内有{4}根{5}弦。		FUN_140ebe8a0 2231476–2231637 鍵盤樂器說明：鍵盤弦樂器首句
+The {1} is a {@2} shell musical instrument above which hang {%3} shell bells.	{1}是一種{2}殼製樂器，上方懸掛著{3}個殼鐘。	{1}是一种{2}壳制乐器，上方悬挂着{3}个壳钟。		FUN_140ebe8a0 2231476–2231637 鍵盤樂器說明：鍵盤鐘琴首句；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} shell musical instrument above which hang {%3} {@4} bells.	{1}是一種{2}殼製樂器，上方懸掛著{3}個{4}鐘。	{1}是一种{2}壳制乐器，上方悬挂着{3}个{4}钟。		FUN_140ebe8a0 2231476–2231637 鍵盤樂器說明：鍵盤鐘琴首句；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} {@3} musical instrument above which hang {%4} shell bells.	{1}是一種{2}{3}製樂器，上方懸掛著{4}個殼鐘。	{1}是一种{2}{3}制乐器，上方悬挂着{4}个壳钟。		FUN_140ebe8a0 2231476–2231637 鍵盤樂器說明：鍵盤鐘琴首句；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} {@3} musical instrument above which hang {%4} {@5} bells.	{1}是一種{2}{3}製樂器，上方懸掛著{4}個{5}鐘。	{1}是一种{2}{3}制乐器，上方悬挂着{4}个{5}钟。		FUN_140ebe8a0 2231476–2231637 鍵盤樂器說明：鍵盤鐘琴首句
+The {1} is a {@2} shell musical instrument.	{1}是一種{2}殼製樂器。	{1}是一种{2}壳制乐器。		FUN_140ebe8a0 2231476–2231637 鍵盤樂器說明：簧風琴首句（後接 The musician uses a … bellows）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} {@3} musical instrument.	{1}是一種{2}{3}製樂器。	{1}是一种{2}{3}制乐器。		FUN_140ebe8a0 2231476–2231637 鍵盤樂器說明：簧風琴首句（後接 The musician uses a … bellows）
+The musician directs air through chosen pipes by playing a {@1} keyboard and a pedalboard.	演奏者彈奏{1}鍵盤與踏板鍵盤，把空氣導入選定的管子。	演奏者弹奏{1}键盘和脚键盘，把空气导入选定的管子。		FUN_140ebe8a0 2231476–2231637 鍵盤樂器說明
+The musician directs air through chosen pipes by playing a {@1} keyboard.	演奏者彈奏{1}鍵盤，把空氣導入選定的管子。	演奏者弹奏{1}键盘，把空气导入选定的管子。		FUN_140ebe8a0 2231476–2231637 鍵盤樂器說明
+The musician uses a {@1} bellows to send air over interior reeds.	演奏者用{1}風箱把空氣送過內部的簧片。	演奏者用{1}风箱把空气送过内部的簧片。		FUN_140ebe8a0 2231476–2231637 鍵盤樂器說明：簧風琴
+The desired pitch is selected using a {@1} keyboard.	以{1}鍵盤選擇想要的音高。	用{1}键盘选择想要的音高。		FUN_140ebe8a0 2231476–2231637 鍵盤樂器說明：簧風琴
+The musician uses a {@1} keyboard and a pedalboard to select which of these strings are plucked.	演奏者用{1}鍵盤與踏板鍵盤選擇要撥響哪些弦。	演奏者用{1}键盘和脚键盘选择要拨响哪些弦。		FUN_140ebe8a0 2231476–2231637 鍵盤樂器說明：鍵盤弦樂器
+The musician uses a {@1} keyboard and a pedalboard to select which of these strings are struck.	演奏者用{1}鍵盤與踏板鍵盤選擇要敲響哪些弦。	演奏者用{1}键盘和脚键盘选择要敲响哪些弦。		FUN_140ebe8a0 2231476–2231637 鍵盤樂器說明：鍵盤弦樂器
+The musician uses a {@1} keyboard and a pedalboard to select which of these bells are struck.	演奏者用{1}鍵盤與踏板鍵盤選擇要敲響哪些鐘。	演奏者用{1}键盘和脚键盘选择要敲响哪些钟。		FUN_140ebe8a0 2231476–2231637 鍵盤樂器說明：鍵盤鐘琴
+The musician uses a {@1} keyboard to select which of these strings are plucked.	演奏者用{1}鍵盤選擇要撥響哪些弦。	演奏者用{1}键盘选择要拨响哪些弦。		FUN_140ebe8a0 2231476–2231637 鍵盤樂器說明：鍵盤弦樂器
+The musician uses a {@1} keyboard to select which of these strings are struck.	演奏者用{1}鍵盤選擇要敲響哪些弦。	演奏者用{1}键盘选择要敲响哪些弦。		FUN_140ebe8a0 2231476–2231637 鍵盤樂器說明：鍵盤弦樂器
+The musician uses a {@1} keyboard to select which of these bells are struck.	演奏者用{1}鍵盤選擇要敲響哪些鐘。	演奏者用{1}键盘选择要敲响哪些钟。		FUN_140ebe8a0 2231476–2231637 鍵盤樂器說明：鍵盤鐘琴
+The {1} is a {@2} {@3}-stringed instrument with a shell neck connecting to a shell body.	{1}是一種{2}{3}弦樂器，殼製琴頸連接殼製琴身。	{1}是一种{2}{3}弦乐器，壳制琴颈连接壳制琴身。		FUN_140ebe8a0 2228324–2228587 弦樂器說明：首句（有琴頸）；{3} 弦的材質；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} {@3}-stringed instrument with a shell neck connecting to a {@4} body.	{1}是一種{2}{3}弦樂器，殼製琴頸連接{4}製琴身。	{1}是一种{2}{3}弦乐器，壳制琴颈连接{4}制琴身。		FUN_140ebe8a0 2228324–2228587 弦樂器說明：首句（有琴頸）；{3} 弦的材質；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} {@3}-stringed instrument with a {@4} neck connecting to a shell body.	{1}是一種{2}{3}弦樂器，{4}製琴頸連接殼製琴身。	{1}是一种{2}{3}弦乐器，{4}制琴颈连接壳制琴身。		FUN_140ebe8a0 2228324–2228587 弦樂器說明：首句（有琴頸）；{3} 弦的材質；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} {@3}-stringed instrument with a {@4} neck connecting to a {@5} body.	{1}是一種{2}{3}弦樂器，{4}製琴頸連接{5}製琴身。	{1}是一种{2}{3}弦乐器，{4}制琴颈连接{5}制琴身。		FUN_140ebe8a0 2228324–2228587 弦樂器說明：首句（有琴頸）；{3} 弦的材質
+The {1} is a {@2} {@3}-stringed instrument with a shell frame and a shell body.	{1}是一種{2}{3}弦樂器，有殼製框架與殼製琴身。	{1}是一种{2}{3}弦乐器，有壳制框架和壳制琴身。		FUN_140ebe8a0 2228324–2228587 弦樂器說明：首句（框架，豎琴類）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} {@3}-stringed instrument with a shell frame and a {@4} body.	{1}是一種{2}{3}弦樂器，有殼製框架與{4}製琴身。	{1}是一种{2}{3}弦乐器，有壳制框架和{4}制琴身。		FUN_140ebe8a0 2228324–2228587 弦樂器說明：首句（框架，豎琴類）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} {@3}-stringed instrument with a {@4} frame and a shell body.	{1}是一種{2}{3}弦樂器，有{4}製框架與殼製琴身。	{1}是一种{2}{3}弦乐器，有{4}制框架和壳制琴身。		FUN_140ebe8a0 2228324–2228587 弦樂器說明：首句（框架，豎琴類）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} {@3}-stringed instrument with a {@4} frame and a {@5} body.	{1}是一種{2}{3}弦樂器，有{4}製框架與{5}製琴身。	{1}是一种{2}{3}弦乐器，有{4}制框架和{5}制琴身。		FUN_140ebe8a0 2228324–2228587 弦樂器說明：首句（框架，豎琴類）
+The {1} is a {@2} {@3}-stringed instrument with a shell yoke and a shell body.	{1}是一種{2}{3}弦樂器，有殼製琴軛與殼製琴身。	{1}是一种{2}{3}弦乐器，有壳制琴轭和壳制琴身。		FUN_140ebe8a0 2228324–2228587 弦樂器說明：首句（琴軛，里拉琴類）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} {@3}-stringed instrument with a shell yoke and a {@4} body.	{1}是一種{2}{3}弦樂器，有殼製琴軛與{4}製琴身。	{1}是一种{2}{3}弦乐器，有壳制琴轭和{4}制琴身。		FUN_140ebe8a0 2228324–2228587 弦樂器說明：首句（琴軛，里拉琴類）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} {@3}-stringed instrument with a {@4} yoke and a shell body.	{1}是一種{2}{3}弦樂器，有{4}製琴軛與殼製琴身。	{1}是一种{2}{3}弦乐器，有{4}制琴轭和壳制琴身。		FUN_140ebe8a0 2228324–2228587 弦樂器說明：首句（琴軛，里拉琴類）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} {@3}-stringed instrument with a {@4} yoke and a {@5} body.	{1}是一種{2}{3}弦樂器，有{4}製琴軛與{5}製琴身。	{1}是一种{2}{3}弦乐器，有{4}制琴轭和{5}制琴身。		FUN_140ebe8a0 2228324–2228587 弦樂器說明：首句（琴軛，里拉琴類）
+The {1} is a {@2} {@3}-stringed instrument with a shell body.	{1}是一種{2}{3}弦樂器，有殼製琴身。	{1}是一种{2}{3}弦乐器，有壳制琴身。		FUN_140ebe8a0 2228324–2228587 弦樂器說明：首句（平放，齊特琴類）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} {@3}-stringed instrument with a {@4} body.	{1}是一種{2}{3}弦樂器，有{4}製琴身。	{1}是一种{2}{3}弦乐器，有{4}制琴身。		FUN_140ebe8a0 2228324–2228587 弦樂器說明：首句（平放，齊特琴類）
+The strings are tied from the top of the neck down over the body and the musician {%1}.	琴弦從琴頸頂端往下繫過琴身，演奏者{1}。	琴弦从琴颈顶端往下系过琴身，演奏者{1}。		FUN_140ebe8a0 2228324–2228587 弦樂器說明：演奏方式；{1} 見本檔 plays/picks/strikes/plucks 句型
+The strings are suspended from the frame down to the body and the musician {%1}.	琴弦從框架往下張到琴身，演奏者{1}。	琴弦从框架往下张到琴身，演奏者{1}。		FUN_140ebe8a0 2228324–2228587 弦樂器說明：演奏方式；{1} 見本檔 plays/picks/strikes/plucks 句型
+The strings are suspended from the yoke down to the body and the musician {%1}.	琴弦從琴軛往下張到琴身，演奏者{1}。	琴弦从琴轭往下张到琴身，演奏者{1}。		FUN_140ebe8a0 2228324–2228587 弦樂器說明：演奏方式；{1} 見本檔 plays/picks/strikes/plucks 句型
+The instrument rests flat as the musician {%1}.	樂器平放，演奏者{1}。	乐器平放，演奏者{1}。		FUN_140ebe8a0 2228324–2228587 弦樂器說明：演奏方式；{1} 見本檔 plays/picks/strikes/plucks 句型
+plays {%1} with a shell bow	用殼弓拉奏{1}	用壳弓拉奏{1}	inner	FUN_140ebe8a0 2228324–2228587 弦樂器說明：拉弦；殼製版本（shell 的全域譯名是身體部位「外殼」）
+plays {%1} with a {@2} bow	用{2}弓拉奏{1}	用{2}弓拉奏{1}	inner	FUN_140ebe8a0 2228324–2228587 弦樂器說明：拉弦
+picks {%1} with a shell plectrum	用殼撥片撥奏{1}	用壳拨片拨奏{1}	inner	FUN_140ebe8a0 2228324–2228587 弦樂器說明：撥片；殼製版本（shell 的全域譯名是身體部位「外殼」）
+picks {%1} with a {@2} plectrum	用{2}撥片撥奏{1}	用{2}拨片拨奏{1}	inner	FUN_140ebe8a0 2228324–2228587 弦樂器說明：撥片
+strikes {%1} with shell hammers	用殼琴槌敲擊{1}	用壳琴槌敲击{1}	inner	FUN_140ebe8a0 2228324–2228587 弦樂器說明：琴槌；殼製版本（shell 的全域譯名是身體部位「外殼」）
+strikes {%1} with {@2} hammers	用{2}琴槌敲擊{1}	用{2}琴槌敲击{1}	inner	FUN_140ebe8a0 2228324–2228587 弦樂器說明：琴槌
+plucks {%1}	撥奏{1}	拨奏{1}	inner	FUN_140ebe8a0 2228324–2228587 弦樂器說明：手指撥弦
+the {%1} main strings	{1}根主弦	{1}根主弦	inner	FUN_140ebe8a0 2228324–2228587 弦樂器說明：主弦數
+the {%1} strings	{1}根弦	{1}根弦	inner	FUN_140ebe8a0 2228324–2228587 弦樂器說明：弦數
+{%1} other strings vibrate in sympathy and are rarely played themselves.	另有{1}根弦會跟著共鳴，本身很少彈奏。	另有{1}根弦会跟着共鸣，本身很少弹奏。		FUN_140ebe8a0 2228324–2228587 弦樂器說明：共鳴弦；{1} 首字大寫的數字（Two）
+{%1} drone strings are occasionally struck.	偶爾會敲響{1}根持續音弦。	偶尔会敲响{1}根持续音弦。		FUN_140ebe8a0 2228324–2228587 弦樂器說明：持續音弦；{1} 首字大寫的數字
+{%1} drone strings are occasionally plucked.	偶爾會撥響{1}根持續音弦。	偶尔会拨响{1}根持续音弦。		FUN_140ebe8a0 2228324–2228587 弦樂器說明：持續音弦；{1} 首字大寫的數字
+A {@1} bowl is attached to the neck to provide additional overtones.	琴頸上裝著{1}製共鳴碗，提供額外的泛音。	琴颈上装着{1}制共鸣碗，提供额外的泛音。		FUN_140ebe8a0 2228324–2228587 弦樂器說明
+The {1} is a {@2} wind instrument through which constant air flow is maintained by use of a {@3} bag, itself supplied by a shell blowpipe.	{1}是一種{2}管樂器，以{3}氣袋維持穩定的氣流，氣袋本身由殼吹管供氣。	{1}是一种{2}管乐器，用{3}气袋维持稳定的气流，气袋本身由壳吹管供气。		FUN_140ebe8a0 2229499–2229815 管樂器說明：風笛類首句；術語例外：bag；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} wind instrument through which constant air flow is maintained by use of a {@3} bag, itself supplied by a {@4} blowpipe.	{1}是一種{2}管樂器，以{3}氣袋維持穩定的氣流，氣袋本身由{4}吹管供氣。	{1}是一种{2}管乐器，用{3}气袋维持稳定的气流，气袋本身由{4}吹管供气。		FUN_140ebe8a0 2229499–2229815 管樂器說明：風笛類首句；術語例外：bag
+The {1} is a {@2} wind instrument through which constant air flow is maintained by use of a {@3} bag, itself supplied by a {@4} bellows.	{1}是一種{2}管樂器，以{3}氣袋維持穩定的氣流，氣袋本身由{4}風箱供氣。	{1}是一种{2}管乐器，用{3}气袋维持稳定的气流，气袋本身由{4}风箱供气。		FUN_140ebe8a0 2229499–2229815 管樂器說明：風笛類首句；術語例外：bag
+The musician selects the pitch by pressing keys to stop holes in the {@1} melody pipe attached to the bag.	演奏者按鍵封住接在氣袋上的{1}旋律管的音孔來選擇音高。	演奏者按键封住接在气袋上的{1}旋律管的音孔来选择音高。		FUN_140ebe8a0 2229499–2229815 管樂器說明：風笛類；術語例外：bag
+The musician selects the pitch by stopping holes in the {@1} melody pipe attached to the bag.	演奏者按住接在氣袋上的{1}旋律管的音孔來選擇音高。	演奏者按住接在气袋上的{1}旋律管的音孔来选择音高。		FUN_140ebe8a0 2229499–2229815 管樂器說明：風笛類；術語例外：bag
+A {@1} drone pipe provides constant accompaniment.	一根{1}持續音管提供不間斷的伴奏。	一根{1}持续音管提供不间断的伴奏。		FUN_140ebe8a0 2229499–2229815 管樂器說明：風笛類
+{%1} shell drone pipes provide constant accompaniment.	{1}根殼持續音管提供不間斷的伴奏。	{1}根壳持续音管提供不间断的伴奏。		FUN_140ebe8a0 2229499–2229815 管樂器說明：風笛類；{1} 首字大寫的數字；殼製版本（shell 的全域譯名是身體部位「外殼」）
+{%1} {@2} drone pipes provide constant accompaniment.	{1}根{2}持續音管提供不間斷的伴奏。	{1}根{2}持续音管提供不间断的伴奏。		FUN_140ebe8a0 2229499–2229815 管樂器說明：風笛類；{1} 首字大寫的數字
+The {1} is a {@2} straight shell horn.	{1}是一種{2}殼製直管號角。	{1}是一种{2}壳制直管号角。		FUN_140ebe8a0 2229499–2229815 管樂器說明：號角類首句；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} straight {@3} horn.	{1}是一種{2}{3}製直管號角。	{1}是一种{2}{3}制直管号角。		FUN_140ebe8a0 2229499–2229815 管樂器說明：號角類首句
+The {1} is a {@2} curved shell horn.	{1}是一種{2}殼製彎管號角。	{1}是一种{2}壳制弯管号角。		FUN_140ebe8a0 2229499–2229815 管樂器說明：號角類首句；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} curved {@3} horn.	{1}是一種{2}{3}製彎管號角。	{1}是一种{2}{3}制弯管号角。		FUN_140ebe8a0 2229499–2229815 管樂器說明：號角類首句
+The {1} is a {@2} looping shell horn.	{1}是一種{2}殼製盤管號角。	{1}是一种{2}壳制盘管号角。		FUN_140ebe8a0 2229499–2229815 管樂器說明：號角類首句；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} looping {@3} horn.	{1}是一種{2}{3}製盤管號角。	{1}是一种{2}{3}制盘管号角。		FUN_140ebe8a0 2229499–2229815 管樂器說明：號角類首句
+The {1} is a {@2} conical bore shell wind instrument.	{1}是一種{2}錐形管腔的殼製管樂器。	{1}是一种{2}锥形管腔的壳制管乐器。		FUN_140ebe8a0 2229499–2229815 管樂器說明：單管木管類首句；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} conical bore {@3} wind instrument.	{1}是一種{2}錐形管腔的{3}製管樂器。	{1}是一种{2}锥形管腔的{3}制管乐器。		FUN_140ebe8a0 2229499–2229815 管樂器說明：單管木管類首句
+The {1} is a {@2} conical bore shell wind instrument with a flared bell.	{1}是一種{2}錐形管腔的殼製管樂器，管口呈喇叭狀。	{1}是一种{2}锥形管腔的壳制管乐器，管口呈喇叭状。		FUN_140ebe8a0 2229499–2229815 管樂器說明：單管木管類首句；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} conical bore {@3} wind instrument with a flared bell.	{1}是一種{2}錐形管腔的{3}製管樂器，管口呈喇叭狀。	{1}是一种{2}锥形管腔的{3}制管乐器，管口呈喇叭状。		FUN_140ebe8a0 2229499–2229815 管樂器說明：單管木管類首句
+The {1} is a {@2} cylindrical bore shell wind instrument.	{1}是一種{2}圓柱形管腔的殼製管樂器。	{1}是一种{2}圆柱形管腔的壳制管乐器。		FUN_140ebe8a0 2229499–2229815 管樂器說明：單管木管類首句；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} cylindrical bore {@3} wind instrument.	{1}是一種{2}圓柱形管腔的{3}製管樂器。	{1}是一种{2}圆柱形管腔的{3}制管乐器。		FUN_140ebe8a0 2229499–2229815 管樂器說明：單管木管類首句
+The {1} is a {@2} cylindrical bore shell wind instrument with a flared bell.	{1}是一種{2}圓柱形管腔的殼製管樂器，管口呈喇叭狀。	{1}是一种{2}圆柱形管腔的壳制管乐器，管口呈喇叭状。		FUN_140ebe8a0 2229499–2229815 管樂器說明：單管木管類首句；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} cylindrical bore {@3} wind instrument with a flared bell.	{1}是一種{2}圓柱形管腔的{3}製管樂器，管口呈喇叭狀。	{1}是一种{2}圆柱形管腔的{3}制管乐器，管口呈喇叭状。		FUN_140ebe8a0 2229499–2229815 管樂器說明：單管木管類首句
+The {1} is a {@2} globular shell wind instrument.	{1}是一種{2}球形的殼製管樂器。	{1}是一种{2}球形的壳制管乐器。		FUN_140ebe8a0 2229499–2229815 管樂器說明：單管木管類首句；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} globular {@3} wind instrument.	{1}是一種{2}球形的{3}製管樂器。	{1}是一种{2}球形的{3}制管乐器。		FUN_140ebe8a0 2229499–2229815 管樂器說明：單管木管類首句
+The {1} is a {@2} globular shell wind instrument with a flared bell.	{1}是一種{2}球形的殼製管樂器，管口呈喇叭狀。	{1}是一种{2}球形的壳制管乐器，管口呈喇叭状。		FUN_140ebe8a0 2229499–2229815 管樂器說明：單管木管類首句；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} globular {@3} wind instrument with a flared bell.	{1}是一種{2}球形的{3}製管樂器，管口呈喇叭狀。	{1}是一种{2}球形的{3}制管乐器，管口呈喇叭状。		FUN_140ebe8a0 2229499–2229815 管樂器說明：單管木管類首句
+The {1} is a {@2} closed cylindrical shell wind instrument.	{1}是一種{2}閉口圓柱形的殼製管樂器。	{1}是一种{2}闭口圆柱形的壳制管乐器。		FUN_140ebe8a0 2229499–2229815 管樂器說明：單管木管類首句；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} closed cylindrical {@3} wind instrument.	{1}是一種{2}閉口圓柱形的{3}製管樂器。	{1}是一种{2}闭口圆柱形的{3}制管乐器。		FUN_140ebe8a0 2229499–2229815 管樂器說明：單管木管類首句
+The {1} is a {@2} closed cylindrical shell wind instrument with a flared bell.	{1}是一種{2}閉口圓柱形的殼製管樂器，管口呈喇叭狀。	{1}是一种{2}闭口圆柱形的壳制管乐器，管口呈喇叭状。		FUN_140ebe8a0 2229499–2229815 管樂器說明：單管木管類首句；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} closed cylindrical {@3} wind instrument with a flared bell.	{1}是一種{2}閉口圓柱形的{3}製管樂器，管口呈喇叭狀。	{1}是一种{2}闭口圆柱形的{3}制管乐器，管口呈喇叭状。		FUN_140ebe8a0 2229499–2229815 管樂器說明：單管木管類首句
+The {1} is a {@2} wind instrument consisting of {%3} adjacent conical shell pipes.	{1}是一種{2}管樂器，由{3}根並排的錐形殼管組成。	{1}是一种{2}管乐器，由{3}根并排的锥形壳管组成。		FUN_140ebe8a0 2229499–2229815 管樂器說明：排笛類首句；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} wind instrument consisting of {%3} adjacent conical {@4} pipes.	{1}是一種{2}管樂器，由{3}根並排的錐形{4}管組成。	{1}是一种{2}管乐器，由{3}根并排的锥形{4}管组成。		FUN_140ebe8a0 2229499–2229815 管樂器說明：排笛類首句
+The {1} is a {@2} wind instrument consisting of {%3} adjacent cylindrical shell pipes.	{1}是一種{2}管樂器，由{3}根並排的圓柱形殼管組成。	{1}是一种{2}管乐器，由{3}根并排的圆柱形壳管组成。		FUN_140ebe8a0 2229499–2229815 管樂器說明：排笛類首句；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} wind instrument consisting of {%3} adjacent cylindrical {@4} pipes.	{1}是一種{2}管樂器，由{3}根並排的圓柱形{4}管組成。	{1}是一种{2}管乐器，由{3}根并排的圆柱形{4}管组成。		FUN_140ebe8a0 2229499–2229815 管樂器說明：排笛類首句
+The {1} is a {@2} wind instrument consisting of {%3} adjacent closed shell pipes.	{1}是一種{2}管樂器，由{3}根並排的閉口殼管組成。	{1}是一种{2}管乐器，由{3}根并排的闭口壳管组成。		FUN_140ebe8a0 2229499–2229815 管樂器說明：排笛類首句；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} wind instrument consisting of {%3} adjacent closed {@4} pipes.	{1}是一種{2}管樂器，由{3}根並排的閉口{4}管組成。	{1}是一种{2}管乐器，由{3}根并排的闭口{4}管组成。		FUN_140ebe8a0 2229499–2229815 管樂器說明：排笛類首句
+The {1} is a {@2} shell wind instrument consisting of a central wind chest and {%3} conical shell pipes, fitted with free reeds.	{1}是一種{2}殼製管樂器，由中央的氣室與{3}根錐形殼管組成，管內裝有自由簧片。	{1}是一种{2}壳制管乐器，由中央的气室和{3}根锥形壳管组成，管内装有自由簧片。		FUN_140ebe8a0 2229499–2229815 管樂器說明：笙類首句；術語例外：chest；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} shell wind instrument consisting of a central wind chest and {%3} conical {@4} pipes, fitted with free reeds.	{1}是一種{2}殼製管樂器，由中央的氣室與{3}根錐形{4}管組成，管內裝有自由簧片。	{1}是一种{2}壳制管乐器，由中央的气室和{3}根锥形{4}管组成，管内装有自由簧片。		FUN_140ebe8a0 2229499–2229815 管樂器說明：笙類首句；術語例外：chest；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} {@3} wind instrument consisting of a central wind chest and {%4} conical shell pipes, fitted with free reeds.	{1}是一種{2}{3}製管樂器，由中央的氣室與{4}根錐形殼管組成，管內裝有自由簧片。	{1}是一种{2}{3}制管乐器，由中央的气室和{4}根锥形壳管组成，管内装有自由簧片。		FUN_140ebe8a0 2229499–2229815 管樂器說明：笙類首句；術語例外：chest；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} {@3} wind instrument consisting of a central wind chest and {%4} conical {@5} pipes, fitted with free reeds.	{1}是一種{2}{3}製管樂器，由中央的氣室與{4}根錐形{5}管組成，管內裝有自由簧片。	{1}是一种{2}{3}制管乐器，由中央的气室和{4}根锥形{5}管组成，管内装有自由簧片。		FUN_140ebe8a0 2229499–2229815 管樂器說明：笙類首句；術語例外：chest
+The {1} is a {@2} shell wind instrument consisting of a central wind chest and {%3} conical shell pipes with flared bells, fitted with free reeds.	{1}是一種{2}殼製管樂器，由中央的氣室與{3}根錐形殼管組成，管口呈喇叭狀，管內裝有自由簧片。	{1}是一种{2}壳制管乐器，由中央的气室和{3}根锥形壳管组成，管口呈喇叭状，管内装有自由簧片。		FUN_140ebe8a0 2229499–2229815 管樂器說明：笙類首句；術語例外：chest；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} shell wind instrument consisting of a central wind chest and {%3} conical {@4} pipes with flared bells, fitted with free reeds.	{1}是一種{2}殼製管樂器，由中央的氣室與{3}根錐形{4}管組成，管口呈喇叭狀，管內裝有自由簧片。	{1}是一种{2}壳制管乐器，由中央的气室和{3}根锥形{4}管组成，管口呈喇叭状，管内装有自由簧片。		FUN_140ebe8a0 2229499–2229815 管樂器說明：笙類首句；術語例外：chest；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} {@3} wind instrument consisting of a central wind chest and {%4} conical shell pipes with flared bells, fitted with free reeds.	{1}是一種{2}{3}製管樂器，由中央的氣室與{4}根錐形殼管組成，管口呈喇叭狀，管內裝有自由簧片。	{1}是一种{2}{3}制管乐器，由中央的气室和{4}根锥形壳管组成，管口呈喇叭状，管内装有自由簧片。		FUN_140ebe8a0 2229499–2229815 管樂器說明：笙類首句；術語例外：chest；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} {@3} wind instrument consisting of a central wind chest and {%4} conical {@5} pipes with flared bells, fitted with free reeds.	{1}是一種{2}{3}製管樂器，由中央的氣室與{4}根錐形{5}管組成，管口呈喇叭狀，管內裝有自由簧片。	{1}是一种{2}{3}制管乐器，由中央的气室和{4}根锥形{5}管组成，管口呈喇叭状，管内装有自由簧片。		FUN_140ebe8a0 2229499–2229815 管樂器說明：笙類首句；術語例外：chest
+The {1} is a {@2} shell wind instrument consisting of a central wind chest and {%3} cylindrical shell pipes, fitted with free reeds.	{1}是一種{2}殼製管樂器，由中央的氣室與{3}根圓柱形殼管組成，管內裝有自由簧片。	{1}是一种{2}壳制管乐器，由中央的气室和{3}根圆柱形壳管组成，管内装有自由簧片。		FUN_140ebe8a0 2229499–2229815 管樂器說明：笙類首句；術語例外：chest；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} shell wind instrument consisting of a central wind chest and {%3} cylindrical {@4} pipes, fitted with free reeds.	{1}是一種{2}殼製管樂器，由中央的氣室與{3}根圓柱形{4}管組成，管內裝有自由簧片。	{1}是一种{2}壳制管乐器，由中央的气室和{3}根圆柱形{4}管组成，管内装有自由簧片。		FUN_140ebe8a0 2229499–2229815 管樂器說明：笙類首句；術語例外：chest；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} {@3} wind instrument consisting of a central wind chest and {%4} cylindrical shell pipes, fitted with free reeds.	{1}是一種{2}{3}製管樂器，由中央的氣室與{4}根圓柱形殼管組成，管內裝有自由簧片。	{1}是一种{2}{3}制管乐器，由中央的气室和{4}根圆柱形壳管组成，管内装有自由簧片。		FUN_140ebe8a0 2229499–2229815 管樂器說明：笙類首句；術語例外：chest；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} {@3} wind instrument consisting of a central wind chest and {%4} cylindrical {@5} pipes, fitted with free reeds.	{1}是一種{2}{3}製管樂器，由中央的氣室與{4}根圓柱形{5}管組成，管內裝有自由簧片。	{1}是一种{2}{3}制管乐器，由中央的气室和{4}根圆柱形{5}管组成，管内装有自由簧片。		FUN_140ebe8a0 2229499–2229815 管樂器說明：笙類首句；術語例外：chest
+The {1} is a {@2} shell wind instrument consisting of a central wind chest and {%3} cylindrical shell pipes with flared bells, fitted with free reeds.	{1}是一種{2}殼製管樂器，由中央的氣室與{3}根圓柱形殼管組成，管口呈喇叭狀，管內裝有自由簧片。	{1}是一种{2}壳制管乐器，由中央的气室和{3}根圆柱形壳管组成，管口呈喇叭状，管内装有自由簧片。		FUN_140ebe8a0 2229499–2229815 管樂器說明：笙類首句；術語例外：chest；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} shell wind instrument consisting of a central wind chest and {%3} cylindrical {@4} pipes with flared bells, fitted with free reeds.	{1}是一種{2}殼製管樂器，由中央的氣室與{3}根圓柱形{4}管組成，管口呈喇叭狀，管內裝有自由簧片。	{1}是一种{2}壳制管乐器，由中央的气室和{3}根圆柱形{4}管组成，管口呈喇叭状，管内装有自由簧片。		FUN_140ebe8a0 2229499–2229815 管樂器說明：笙類首句；術語例外：chest；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} {@3} wind instrument consisting of a central wind chest and {%4} cylindrical shell pipes with flared bells, fitted with free reeds.	{1}是一種{2}{3}製管樂器，由中央的氣室與{4}根圓柱形殼管組成，管口呈喇叭狀，管內裝有自由簧片。	{1}是一种{2}{3}制管乐器，由中央的气室和{4}根圆柱形壳管组成，管口呈喇叭状，管内装有自由簧片。		FUN_140ebe8a0 2229499–2229815 管樂器說明：笙類首句；術語例外：chest；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The {1} is a {@2} {@3} wind instrument consisting of a central wind chest and {%4} cylindrical {@5} pipes with flared bells, fitted with free reeds.	{1}是一種{2}{3}製管樂器，由中央的氣室與{4}根圓柱形{5}管組成，管口呈喇叭狀，管內裝有自由簧片。	{1}是一种{2}{3}制管乐器，由中央的气室和{4}根圆柱形{5}管组成，管口呈喇叭状，管内装有自由簧片。		FUN_140ebe8a0 2229499–2229815 管樂器說明：笙類首句；術語例外：chest
+The {1} is a {@2} percussion instrument.	{1}是一種{2}打擊樂器。	{1}是一种{2}打击乐器。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：首句
+It consists of a bowl-shaped shell drum with a {@1} head.	由一面碗形殼鼓構成，蒙著{1}鼓皮。	由一面碗形壳鼓构成，蒙着{1}鼓皮。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of a bowl-shaped {@1} drum with a shell head.	由一面碗形{1}鼓構成，蒙著殼鼓皮。	由一面碗形{1}鼓构成，蒙着壳鼓皮。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of a bowl-shaped {@1} drum with a {@2} head.	由一面碗形{1}鼓構成，蒙著{2}鼓皮。	由一面碗形{1}鼓构成，蒙着{2}鼓皮。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面）
+It consists of a bowl-shaped shell drum with a shell head which rests on a {@1} stand.	由一面碗形殼鼓構成，蒙著殼鼓皮，架在{1}鼓架上。	由一面碗形壳鼓构成，蒙着壳鼓皮，架在{1}鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of a bowl-shaped shell drum with a {@1} head which rests on a shell stand.	由一面碗形殼鼓構成，蒙著{1}鼓皮，架在殼鼓架上。	由一面碗形壳鼓构成，蒙着{1}鼓皮，架在壳鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of a bowl-shaped {@1} drum with a shell head which rests on a shell stand.	由一面碗形{1}鼓構成，蒙著殼鼓皮，架在殼鼓架上。	由一面碗形{1}鼓构成，蒙着壳鼓皮，架在壳鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of a bowl-shaped shell drum with a {@1} head which rests on a {@2} stand.	由一面碗形殼鼓構成，蒙著{1}鼓皮，架在{2}鼓架上。	由一面碗形壳鼓构成，蒙着{1}鼓皮，架在{2}鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of a bowl-shaped {@1} drum with a shell head which rests on a {@2} stand.	由一面碗形{1}鼓構成，蒙著殼鼓皮，架在{2}鼓架上。	由一面碗形{1}鼓构成，蒙着壳鼓皮，架在{2}鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of a bowl-shaped {@1} drum with a {@2} head which rests on a shell stand.	由一面碗形{1}鼓構成，蒙著{2}鼓皮，架在殼鼓架上。	由一面碗形{1}鼓构成，蒙着{2}鼓皮，架在壳鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of a bowl-shaped {@1} drum with a {@2} head which rests on a {@3} stand.	由一面碗形{1}鼓構成，蒙著{2}鼓皮，架在{3}鼓架上。	由一面碗形{1}鼓构成，蒙着{2}鼓皮，架在{3}鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面，放置型）
+It consists of {%1} bowl-shaped shell drums with shell heads.	由{1}面碗形殼鼓組成，蒙著殼鼓皮。	由{1}面碗形壳鼓组成，蒙着壳鼓皮。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} bowl-shaped shell drums with {@2} heads.	由{1}面碗形殼鼓組成，蒙著{2}鼓皮。	由{1}面碗形壳鼓组成，蒙着{2}鼓皮。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} bowl-shaped {@2} drums with shell heads.	由{1}面碗形{2}鼓組成，蒙著殼鼓皮。	由{1}面碗形{2}鼓组成，蒙着壳鼓皮。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} bowl-shaped {@2} drums with {@3} heads.	由{1}面碗形{2}鼓組成，蒙著{3}鼓皮。	由{1}面碗形{2}鼓组成，蒙着{3}鼓皮。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面）
+It consists of {%1} bowl-shaped shell drums with shell heads which rest on a shell stand.	由{1}面碗形殼鼓組成，蒙著殼鼓皮，架在殼鼓架上。	由{1}面碗形壳鼓组成，蒙着壳鼓皮，架在壳鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} bowl-shaped shell drums with shell heads which rest on a {@2} stand.	由{1}面碗形殼鼓組成，蒙著殼鼓皮，架在{2}鼓架上。	由{1}面碗形壳鼓组成，蒙着壳鼓皮，架在{2}鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} bowl-shaped shell drums with {@2} heads which rest on a shell stand.	由{1}面碗形殼鼓組成，蒙著{2}鼓皮，架在殼鼓架上。	由{1}面碗形壳鼓组成，蒙着{2}鼓皮，架在壳鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} bowl-shaped {@2} drums with shell heads which rest on a shell stand.	由{1}面碗形{2}鼓組成，蒙著殼鼓皮，架在殼鼓架上。	由{1}面碗形{2}鼓组成，蒙着壳鼓皮，架在壳鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} bowl-shaped shell drums with {@2} heads which rest on a {@3} stand.	由{1}面碗形殼鼓組成，蒙著{2}鼓皮，架在{3}鼓架上。	由{1}面碗形壳鼓组成，蒙着{2}鼓皮，架在{3}鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} bowl-shaped {@2} drums with shell heads which rest on a {@3} stand.	由{1}面碗形{2}鼓組成，蒙著殼鼓皮，架在{3}鼓架上。	由{1}面碗形{2}鼓组成，蒙着壳鼓皮，架在{3}鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} bowl-shaped {@2} drums with {@3} heads which rest on a shell stand.	由{1}面碗形{2}鼓組成，蒙著{3}鼓皮，架在殼鼓架上。	由{1}面碗形{2}鼓组成，蒙着{3}鼓皮，架在壳鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} bowl-shaped {@2} drums with {@3} heads which rest on a {@4} stand.	由{1}面碗形{2}鼓組成，蒙著{3}鼓皮，架在{4}鼓架上。	由{1}面碗形{2}鼓组成，蒙着{3}鼓皮，架在{4}鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面，放置型）
+It consists of a tube shell drum with a {@1} head.	由一面筒形殼鼓構成，蒙著{1}鼓皮。	由一面筒形壳鼓构成，蒙着{1}鼓皮。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of a tube {@1} drum with a shell head.	由一面筒形{1}鼓構成，蒙著殼鼓皮。	由一面筒形{1}鼓构成，蒙着壳鼓皮。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of a tube {@1} drum with a {@2} head.	由一面筒形{1}鼓構成，蒙著{2}鼓皮。	由一面筒形{1}鼓构成，蒙着{2}鼓皮。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面）
+It consists of a tube shell drum with a shell head which rests on a {@1} stand.	由一面筒形殼鼓構成，蒙著殼鼓皮，架在{1}鼓架上。	由一面筒形壳鼓构成，蒙着壳鼓皮，架在{1}鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of a tube shell drum with a {@1} head which rests on a shell stand.	由一面筒形殼鼓構成，蒙著{1}鼓皮，架在殼鼓架上。	由一面筒形壳鼓构成，蒙着{1}鼓皮，架在壳鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of a tube {@1} drum with a shell head which rests on a shell stand.	由一面筒形{1}鼓構成，蒙著殼鼓皮，架在殼鼓架上。	由一面筒形{1}鼓构成，蒙着壳鼓皮，架在壳鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of a tube shell drum with a {@1} head which rests on a {@2} stand.	由一面筒形殼鼓構成，蒙著{1}鼓皮，架在{2}鼓架上。	由一面筒形壳鼓构成，蒙着{1}鼓皮，架在{2}鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of a tube {@1} drum with a shell head which rests on a {@2} stand.	由一面筒形{1}鼓構成，蒙著殼鼓皮，架在{2}鼓架上。	由一面筒形{1}鼓构成，蒙着壳鼓皮，架在{2}鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of a tube {@1} drum with a {@2} head which rests on a shell stand.	由一面筒形{1}鼓構成，蒙著{2}鼓皮，架在殼鼓架上。	由一面筒形{1}鼓构成，蒙着{2}鼓皮，架在壳鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of a tube {@1} drum with a {@2} head which rests on a {@3} stand.	由一面筒形{1}鼓構成，蒙著{2}鼓皮，架在{3}鼓架上。	由一面筒形{1}鼓构成，蒙着{2}鼓皮，架在{3}鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面，放置型）
+It consists of {%1} tube shell drums with shell heads.	由{1}面筒形殼鼓組成，蒙著殼鼓皮。	由{1}面筒形壳鼓组成，蒙着壳鼓皮。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} tube shell drums with {@2} heads.	由{1}面筒形殼鼓組成，蒙著{2}鼓皮。	由{1}面筒形壳鼓组成，蒙着{2}鼓皮。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} tube {@2} drums with shell heads.	由{1}面筒形{2}鼓組成，蒙著殼鼓皮。	由{1}面筒形{2}鼓组成，蒙着壳鼓皮。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} tube {@2} drums with {@3} heads.	由{1}面筒形{2}鼓組成，蒙著{3}鼓皮。	由{1}面筒形{2}鼓组成，蒙着{3}鼓皮。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面）
+It consists of {%1} tube shell drums with shell heads which rest on a shell stand.	由{1}面筒形殼鼓組成，蒙著殼鼓皮，架在殼鼓架上。	由{1}面筒形壳鼓组成，蒙着壳鼓皮，架在壳鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} tube shell drums with shell heads which rest on a {@2} stand.	由{1}面筒形殼鼓組成，蒙著殼鼓皮，架在{2}鼓架上。	由{1}面筒形壳鼓组成，蒙着壳鼓皮，架在{2}鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} tube shell drums with {@2} heads which rest on a shell stand.	由{1}面筒形殼鼓組成，蒙著{2}鼓皮，架在殼鼓架上。	由{1}面筒形壳鼓组成，蒙着{2}鼓皮，架在壳鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} tube {@2} drums with shell heads which rest on a shell stand.	由{1}面筒形{2}鼓組成，蒙著殼鼓皮，架在殼鼓架上。	由{1}面筒形{2}鼓组成，蒙着壳鼓皮，架在壳鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} tube shell drums with {@2} heads which rest on a {@3} stand.	由{1}面筒形殼鼓組成，蒙著{2}鼓皮，架在{3}鼓架上。	由{1}面筒形壳鼓组成，蒙着{2}鼓皮，架在{3}鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} tube {@2} drums with shell heads which rest on a {@3} stand.	由{1}面筒形{2}鼓組成，蒙著殼鼓皮，架在{3}鼓架上。	由{1}面筒形{2}鼓组成，蒙着壳鼓皮，架在{3}鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} tube {@2} drums with {@3} heads which rest on a shell stand.	由{1}面筒形{2}鼓組成，蒙著{3}鼓皮，架在殼鼓架上。	由{1}面筒形{2}鼓组成，蒙着{3}鼓皮，架在壳鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} tube {@2} drums with {@3} heads which rest on a {@4} stand.	由{1}面筒形{2}鼓組成，蒙著{3}鼓皮，架在{4}鼓架上。	由{1}面筒形{2}鼓组成，蒙着{3}鼓皮，架在{4}鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面，放置型）
+It consists of a barrel shell drum with a {@1} head.	由一面桶形殼鼓構成，蒙著{1}鼓皮。	由一面桶形壳鼓构成，蒙着{1}鼓皮。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of a barrel {@1} drum with a shell head.	由一面桶形{1}鼓構成，蒙著殼鼓皮。	由一面桶形{1}鼓构成，蒙着壳鼓皮。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of a barrel {@1} drum with a {@2} head.	由一面桶形{1}鼓構成，蒙著{2}鼓皮。	由一面桶形{1}鼓构成，蒙着{2}鼓皮。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面）
+It consists of a barrel shell drum with a shell head which rests on a {@1} stand.	由一面桶形殼鼓構成，蒙著殼鼓皮，架在{1}鼓架上。	由一面桶形壳鼓构成，蒙着壳鼓皮，架在{1}鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of a barrel shell drum with a {@1} head which rests on a shell stand.	由一面桶形殼鼓構成，蒙著{1}鼓皮，架在殼鼓架上。	由一面桶形壳鼓构成，蒙着{1}鼓皮，架在壳鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of a barrel {@1} drum with a shell head which rests on a shell stand.	由一面桶形{1}鼓構成，蒙著殼鼓皮，架在殼鼓架上。	由一面桶形{1}鼓构成，蒙着壳鼓皮，架在壳鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of a barrel shell drum with a {@1} head which rests on a {@2} stand.	由一面桶形殼鼓構成，蒙著{1}鼓皮，架在{2}鼓架上。	由一面桶形壳鼓构成，蒙着{1}鼓皮，架在{2}鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of a barrel {@1} drum with a shell head which rests on a {@2} stand.	由一面桶形{1}鼓構成，蒙著殼鼓皮，架在{2}鼓架上。	由一面桶形{1}鼓构成，蒙着壳鼓皮，架在{2}鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of a barrel {@1} drum with a {@2} head which rests on a shell stand.	由一面桶形{1}鼓構成，蒙著{2}鼓皮，架在殼鼓架上。	由一面桶形{1}鼓构成，蒙着{2}鼓皮，架在壳鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of a barrel {@1} drum with a {@2} head which rests on a {@3} stand.	由一面桶形{1}鼓構成，蒙著{2}鼓皮，架在{3}鼓架上。	由一面桶形{1}鼓构成，蒙着{2}鼓皮，架在{3}鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面，放置型）
+It consists of {%1} barrel shell drums with shell heads.	由{1}面桶形殼鼓組成，蒙著殼鼓皮。	由{1}面桶形壳鼓组成，蒙着壳鼓皮。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} barrel shell drums with {@2} heads.	由{1}面桶形殼鼓組成，蒙著{2}鼓皮。	由{1}面桶形壳鼓组成，蒙着{2}鼓皮。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} barrel {@2} drums with shell heads.	由{1}面桶形{2}鼓組成，蒙著殼鼓皮。	由{1}面桶形{2}鼓组成，蒙着壳鼓皮。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} barrel {@2} drums with {@3} heads.	由{1}面桶形{2}鼓組成，蒙著{3}鼓皮。	由{1}面桶形{2}鼓组成，蒙着{3}鼓皮。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面）
+It consists of {%1} barrel shell drums with shell heads which rest on a shell stand.	由{1}面桶形殼鼓組成，蒙著殼鼓皮，架在殼鼓架上。	由{1}面桶形壳鼓组成，蒙着壳鼓皮，架在壳鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} barrel shell drums with shell heads which rest on a {@2} stand.	由{1}面桶形殼鼓組成，蒙著殼鼓皮，架在{2}鼓架上。	由{1}面桶形壳鼓组成，蒙着壳鼓皮，架在{2}鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} barrel shell drums with {@2} heads which rest on a shell stand.	由{1}面桶形殼鼓組成，蒙著{2}鼓皮，架在殼鼓架上。	由{1}面桶形壳鼓组成，蒙着{2}鼓皮，架在壳鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} barrel {@2} drums with shell heads which rest on a shell stand.	由{1}面桶形{2}鼓組成，蒙著殼鼓皮，架在殼鼓架上。	由{1}面桶形{2}鼓组成，蒙着壳鼓皮，架在壳鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} barrel shell drums with {@2} heads which rest on a {@3} stand.	由{1}面桶形殼鼓組成，蒙著{2}鼓皮，架在{3}鼓架上。	由{1}面桶形壳鼓组成，蒙着{2}鼓皮，架在{3}鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} barrel {@2} drums with shell heads which rest on a {@3} stand.	由{1}面桶形{2}鼓組成，蒙著殼鼓皮，架在{3}鼓架上。	由{1}面桶形{2}鼓组成，蒙着壳鼓皮，架在{3}鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} barrel {@2} drums with {@3} heads which rest on a shell stand.	由{1}面桶形{2}鼓組成，蒙著{3}鼓皮，架在殼鼓架上。	由{1}面桶形{2}鼓组成，蒙着{3}鼓皮，架在壳鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} barrel {@2} drums with {@3} heads which rest on a {@4} stand.	由{1}面桶形{2}鼓組成，蒙著{3}鼓皮，架在{4}鼓架上。	由{1}面桶形{2}鼓组成，蒙着{3}鼓皮，架在{4}鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面，放置型）
+It consists of a goblet shell drum with a {@1} head.	由一面高腳杯形殼鼓構成，蒙著{1}鼓皮。	由一面高脚杯形壳鼓构成，蒙着{1}鼓皮。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of a goblet {@1} drum with a shell head.	由一面高腳杯形{1}鼓構成，蒙著殼鼓皮。	由一面高脚杯形{1}鼓构成，蒙着壳鼓皮。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of a goblet {@1} drum with a {@2} head.	由一面高腳杯形{1}鼓構成，蒙著{2}鼓皮。	由一面高脚杯形{1}鼓构成，蒙着{2}鼓皮。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面）
+It consists of a goblet shell drum with a shell head which rests on a {@1} stand.	由一面高腳杯形殼鼓構成，蒙著殼鼓皮，架在{1}鼓架上。	由一面高脚杯形壳鼓构成，蒙着壳鼓皮，架在{1}鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of a goblet shell drum with a {@1} head which rests on a shell stand.	由一面高腳杯形殼鼓構成，蒙著{1}鼓皮，架在殼鼓架上。	由一面高脚杯形壳鼓构成，蒙着{1}鼓皮，架在壳鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of a goblet {@1} drum with a shell head which rests on a shell stand.	由一面高腳杯形{1}鼓構成，蒙著殼鼓皮，架在殼鼓架上。	由一面高脚杯形{1}鼓构成，蒙着壳鼓皮，架在壳鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of a goblet shell drum with a {@1} head which rests on a {@2} stand.	由一面高腳杯形殼鼓構成，蒙著{1}鼓皮，架在{2}鼓架上。	由一面高脚杯形壳鼓构成，蒙着{1}鼓皮，架在{2}鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of a goblet {@1} drum with a shell head which rests on a {@2} stand.	由一面高腳杯形{1}鼓構成，蒙著殼鼓皮，架在{2}鼓架上。	由一面高脚杯形{1}鼓构成，蒙着壳鼓皮，架在{2}鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of a goblet {@1} drum with a {@2} head which rests on a shell stand.	由一面高腳杯形{1}鼓構成，蒙著{2}鼓皮，架在殼鼓架上。	由一面高脚杯形{1}鼓构成，蒙着{2}鼓皮，架在壳鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of a goblet {@1} drum with a {@2} head which rests on a {@3} stand.	由一面高腳杯形{1}鼓構成，蒙著{2}鼓皮，架在{3}鼓架上。	由一面高脚杯形{1}鼓构成，蒙着{2}鼓皮，架在{3}鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面，放置型）
+It consists of {%1} goblet shell drums with shell heads.	由{1}面高腳杯形殼鼓組成，蒙著殼鼓皮。	由{1}面高脚杯形壳鼓组成，蒙着壳鼓皮。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} goblet shell drums with {@2} heads.	由{1}面高腳杯形殼鼓組成，蒙著{2}鼓皮。	由{1}面高脚杯形壳鼓组成，蒙着{2}鼓皮。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} goblet {@2} drums with shell heads.	由{1}面高腳杯形{2}鼓組成，蒙著殼鼓皮。	由{1}面高脚杯形{2}鼓组成，蒙着壳鼓皮。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} goblet {@2} drums with {@3} heads.	由{1}面高腳杯形{2}鼓組成，蒙著{3}鼓皮。	由{1}面高脚杯形{2}鼓组成，蒙着{3}鼓皮。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面）
+It consists of {%1} goblet shell drums with shell heads which rest on a shell stand.	由{1}面高腳杯形殼鼓組成，蒙著殼鼓皮，架在殼鼓架上。	由{1}面高脚杯形壳鼓组成，蒙着壳鼓皮，架在壳鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} goblet shell drums with shell heads which rest on a {@2} stand.	由{1}面高腳杯形殼鼓組成，蒙著殼鼓皮，架在{2}鼓架上。	由{1}面高脚杯形壳鼓组成，蒙着壳鼓皮，架在{2}鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} goblet shell drums with {@2} heads which rest on a shell stand.	由{1}面高腳杯形殼鼓組成，蒙著{2}鼓皮，架在殼鼓架上。	由{1}面高脚杯形壳鼓组成，蒙着{2}鼓皮，架在壳鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} goblet {@2} drums with shell heads which rest on a shell stand.	由{1}面高腳杯形{2}鼓組成，蒙著殼鼓皮，架在殼鼓架上。	由{1}面高脚杯形{2}鼓组成，蒙着壳鼓皮，架在壳鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} goblet shell drums with {@2} heads which rest on a {@3} stand.	由{1}面高腳杯形殼鼓組成，蒙著{2}鼓皮，架在{3}鼓架上。	由{1}面高脚杯形壳鼓组成，蒙着{2}鼓皮，架在{3}鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} goblet {@2} drums with shell heads which rest on a {@3} stand.	由{1}面高腳杯形{2}鼓組成，蒙著殼鼓皮，架在{3}鼓架上。	由{1}面高脚杯形{2}鼓组成，蒙着壳鼓皮，架在{3}鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} goblet {@2} drums with {@3} heads which rest on a shell stand.	由{1}面高腳杯形{2}鼓組成，蒙著{3}鼓皮，架在殼鼓架上。	由{1}面高脚杯形{2}鼓组成，蒙着{3}鼓皮，架在壳鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} goblet {@2} drums with {@3} heads which rest on a {@4} stand.	由{1}面高腳杯形{2}鼓組成，蒙著{3}鼓皮，架在{4}鼓架上。	由{1}面高脚杯形{2}鼓组成，蒙着{3}鼓皮，架在{4}鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面，放置型）
+It consists of an hourglass shell drum with a {@1} head.	由一面沙漏形殼鼓構成，蒙著{1}鼓皮。	由一面沙漏形壳鼓构成，蒙着{1}鼓皮。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of an hourglass {@1} drum with a shell head.	由一面沙漏形{1}鼓構成，蒙著殼鼓皮。	由一面沙漏形{1}鼓构成，蒙着壳鼓皮。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of an hourglass {@1} drum with a {@2} head.	由一面沙漏形{1}鼓構成，蒙著{2}鼓皮。	由一面沙漏形{1}鼓构成，蒙着{2}鼓皮。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面）
+It consists of an hourglass shell drum with a shell head which rests on a {@1} stand.	由一面沙漏形殼鼓構成，蒙著殼鼓皮，架在{1}鼓架上。	由一面沙漏形壳鼓构成，蒙着壳鼓皮，架在{1}鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of an hourglass shell drum with a {@1} head which rests on a shell stand.	由一面沙漏形殼鼓構成，蒙著{1}鼓皮，架在殼鼓架上。	由一面沙漏形壳鼓构成，蒙着{1}鼓皮，架在壳鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of an hourglass {@1} drum with a shell head which rests on a shell stand.	由一面沙漏形{1}鼓構成，蒙著殼鼓皮，架在殼鼓架上。	由一面沙漏形{1}鼓构成，蒙着壳鼓皮，架在壳鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of an hourglass shell drum with a {@1} head which rests on a {@2} stand.	由一面沙漏形殼鼓構成，蒙著{1}鼓皮，架在{2}鼓架上。	由一面沙漏形壳鼓构成，蒙着{1}鼓皮，架在{2}鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of an hourglass {@1} drum with a shell head which rests on a {@2} stand.	由一面沙漏形{1}鼓構成，蒙著殼鼓皮，架在{2}鼓架上。	由一面沙漏形{1}鼓构成，蒙着壳鼓皮，架在{2}鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of an hourglass {@1} drum with a {@2} head which rests on a shell stand.	由一面沙漏形{1}鼓構成，蒙著{2}鼓皮，架在殼鼓架上。	由一面沙漏形{1}鼓构成，蒙着{2}鼓皮，架在壳鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of an hourglass {@1} drum with a {@2} head which rests on a {@3} stand.	由一面沙漏形{1}鼓構成，蒙著{2}鼓皮，架在{3}鼓架上。	由一面沙漏形{1}鼓构成，蒙着{2}鼓皮，架在{3}鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（一面，放置型）
+It consists of {%1} hourglass shell drums with shell heads.	由{1}面沙漏形殼鼓組成，蒙著殼鼓皮。	由{1}面沙漏形壳鼓组成，蒙着壳鼓皮。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} hourglass shell drums with {@2} heads.	由{1}面沙漏形殼鼓組成，蒙著{2}鼓皮。	由{1}面沙漏形壳鼓组成，蒙着{2}鼓皮。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} hourglass {@2} drums with shell heads.	由{1}面沙漏形{2}鼓組成，蒙著殼鼓皮。	由{1}面沙漏形{2}鼓组成，蒙着壳鼓皮。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} hourglass {@2} drums with {@3} heads.	由{1}面沙漏形{2}鼓組成，蒙著{3}鼓皮。	由{1}面沙漏形{2}鼓组成，蒙着{3}鼓皮。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面）
+It consists of {%1} hourglass shell drums with shell heads which rest on a shell stand.	由{1}面沙漏形殼鼓組成，蒙著殼鼓皮，架在殼鼓架上。	由{1}面沙漏形壳鼓组成，蒙着壳鼓皮，架在壳鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} hourglass shell drums with shell heads which rest on a {@2} stand.	由{1}面沙漏形殼鼓組成，蒙著殼鼓皮，架在{2}鼓架上。	由{1}面沙漏形壳鼓组成，蒙着壳鼓皮，架在{2}鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} hourglass shell drums with {@2} heads which rest on a shell stand.	由{1}面沙漏形殼鼓組成，蒙著{2}鼓皮，架在殼鼓架上。	由{1}面沙漏形壳鼓组成，蒙着{2}鼓皮，架在壳鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} hourglass {@2} drums with shell heads which rest on a shell stand.	由{1}面沙漏形{2}鼓組成，蒙著殼鼓皮，架在殼鼓架上。	由{1}面沙漏形{2}鼓组成，蒙着壳鼓皮，架在壳鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} hourglass shell drums with {@2} heads which rest on a {@3} stand.	由{1}面沙漏形殼鼓組成，蒙著{2}鼓皮，架在{3}鼓架上。	由{1}面沙漏形壳鼓组成，蒙着{2}鼓皮，架在{3}鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} hourglass {@2} drums with shell heads which rest on a {@3} stand.	由{1}面沙漏形{2}鼓組成，蒙著殼鼓皮，架在{3}鼓架上。	由{1}面沙漏形{2}鼓组成，蒙着壳鼓皮，架在{3}鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} hourglass {@2} drums with {@3} heads which rest on a shell stand.	由{1}面沙漏形{2}鼓組成，蒙著{3}鼓皮，架在殼鼓架上。	由{1}面沙漏形{2}鼓组成，蒙着{3}鼓皮，架在壳鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} hourglass {@2} drums with {@3} heads which rest on a {@4} stand.	由{1}面沙漏形{2}鼓組成，蒙著{3}鼓皮，架在{4}鼓架上。	由{1}面沙漏形{2}鼓组成，蒙着{3}鼓皮，架在{4}鼓架上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：鼓（多面，放置型）
+It consists of a {@1} bar.	由一根{1}音條構成。	由一根{1}音条构成。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（一件）
+It consists of a shell bar attached to a {@1} stand.	由一根殼音條構成，裝在{1}架子上。	由一根壳音条构成，装在{1}架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（一件，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of a {@1} bar attached to a shell stand.	由一根{1}音條構成，裝在殼架子上。	由一根{1}音条构成，装在壳架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（一件，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of a {@1} bar attached to a {@2} stand.	由一根{1}音條構成，裝在{2}架子上。	由一根{1}音条构成，装在{2}架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（一件，放置型）
+It consists of {%1} shell bars.	由{1}根殼音條組成。	由{1}根壳音条组成。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（多件）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} {@2} bars.	由{1}根{2}音條組成。	由{1}根{2}音条组成。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（多件）
+It consists of {%1} shell bars attached to a shell stand.	由{1}根殼音條組成，裝在殼架子上。	由{1}根壳音条组成，装在壳架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（多件，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} shell bars attached to a {@2} stand.	由{1}根殼音條組成，裝在{2}架子上。	由{1}根壳音条组成，装在{2}架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（多件，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} {@2} bars attached to a shell stand.	由{1}根{2}音條組成，裝在殼架子上。	由{1}根{2}音条组成，装在壳架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（多件，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} {@2} bars attached to a {@3} stand.	由{1}根{2}音條組成，裝在{3}架子上。	由{1}根{2}音条组成，装在{3}架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（多件，放置型）
+It consists of a {@1} chime.	由一根{1}管鐘構成。	由一根{1}管钟构成。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（一件）
+It consists of a shell chime attached to a {@1} stand.	由一根殼管鐘構成，裝在{1}架子上。	由一根壳管钟构成，装在{1}架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（一件，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of a {@1} chime attached to a shell stand.	由一根{1}管鐘構成，裝在殼架子上。	由一根{1}管钟构成，装在壳架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（一件，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of a {@1} chime attached to a {@2} stand.	由一根{1}管鐘構成，裝在{2}架子上。	由一根{1}管钟构成，装在{2}架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（一件，放置型）
+It consists of {%1} shell chimes.	由{1}根殼管鐘組成。	由{1}根壳管钟组成。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（多件）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} {@2} chimes.	由{1}根{2}管鐘組成。	由{1}根{2}管钟组成。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（多件）
+It consists of {%1} shell chimes attached to a shell stand.	由{1}根殼管鐘組成，裝在殼架子上。	由{1}根壳管钟组成，装在壳架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（多件，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} shell chimes attached to a {@2} stand.	由{1}根殼管鐘組成，裝在{2}架子上。	由{1}根壳管钟组成，装在{2}架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（多件，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} {@2} chimes attached to a shell stand.	由{1}根{2}管鐘組成，裝在殼架子上。	由{1}根{2}管钟组成，装在壳架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（多件，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} {@2} chimes attached to a {@3} stand.	由{1}根{2}管鐘組成，裝在{3}架子上。	由{1}根{2}管钟组成，装在{3}架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（多件，放置型）
+It consists of a {@1} block.	由一塊{1}響塊構成。	由一块{1}响块构成。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（一件）
+It consists of a shell block attached to a {@1} stand.	由一塊殼響塊構成，裝在{1}架子上。	由一块壳响块构成，装在{1}架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（一件，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of a {@1} block attached to a shell stand.	由一塊{1}響塊構成，裝在殼架子上。	由一块{1}响块构成，装在壳架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（一件，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of a {@1} block attached to a {@2} stand.	由一塊{1}響塊構成，裝在{2}架子上。	由一块{1}响块构成，装在{2}架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（一件，放置型）
+It consists of {%1} shell blocks.	由{1}塊殼響塊組成。	由{1}块壳响块组成。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（多件）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} {@2} blocks.	由{1}塊{2}響塊組成。	由{1}块{2}响块组成。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（多件）
+It consists of {%1} shell blocks attached to a shell stand.	由{1}塊殼響塊組成，裝在殼架子上。	由{1}块壳响块组成，装在壳架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（多件，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} shell blocks attached to a {@2} stand.	由{1}塊殼響塊組成，裝在{2}架子上。	由{1}块壳响块组成，装在{2}架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（多件，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} {@2} blocks attached to a shell stand.	由{1}塊{2}響塊組成，裝在殼架子上。	由{1}块{2}响块组成，装在壳架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（多件，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} {@2} blocks attached to a {@3} stand.	由{1}塊{2}響塊組成，裝在{3}架子上。	由{1}块{2}响块组成，装在{3}架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（多件，放置型）
+It consists of a {@1} bowl.	由一個{1}缽構成。	由一个{1}钵构成。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（一件）
+It consists of a shell bowl attached to a {@1} stand.	由一個殼缽構成，裝在{1}架子上。	由一个壳钵构成，装在{1}架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（一件，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of a {@1} bowl attached to a shell stand.	由一個{1}缽構成，裝在殼架子上。	由一个{1}钵构成，装在壳架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（一件，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of a {@1} bowl attached to a {@2} stand.	由一個{1}缽構成，裝在{2}架子上。	由一个{1}钵构成，装在{2}架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（一件，放置型）
+It consists of {%1} shell bowls.	由{1}個殼缽組成。	由{1}个壳钵组成。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（多件）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} {@2} bowls.	由{1}個{2}缽組成。	由{1}个{2}钵组成。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（多件）
+It consists of {%1} shell bowls attached to a shell stand.	由{1}個殼缽組成，裝在殼架子上。	由{1}个壳钵组成，装在壳架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（多件，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} shell bowls attached to a {@2} stand.	由{1}個殼缽組成，裝在{2}架子上。	由{1}个壳钵组成，装在{2}架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（多件，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} {@2} bowls attached to a shell stand.	由{1}個{2}缽組成，裝在殼架子上。	由{1}个{2}钵组成，装在壳架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（多件，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} {@2} bowls attached to a {@3} stand.	由{1}個{2}缽組成，裝在{3}架子上。	由{1}个{2}钵组成，装在{3}架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（多件，放置型）
+It consists of a {@1} triangle.	由一個{1}三角鐵構成。	由一个{1}三角铁构成。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（一件）
+It consists of a shell triangle attached to a {@1} stand.	由一個殼三角鐵構成，裝在{1}架子上。	由一个壳三角铁构成，装在{1}架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（一件，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of a {@1} triangle attached to a shell stand.	由一個{1}三角鐵構成，裝在殼架子上。	由一个{1}三角铁构成，装在壳架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（一件，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of a {@1} triangle attached to a {@2} stand.	由一個{1}三角鐵構成，裝在{2}架子上。	由一个{1}三角铁构成，装在{2}架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（一件，放置型）
+It consists of {%1} shell triangles.	由{1}個殼三角鐵組成。	由{1}个壳三角铁组成。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（多件）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} {@2} triangles.	由{1}個{2}三角鐵組成。	由{1}个{2}三角铁组成。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（多件）
+It consists of {%1} shell triangles attached to a shell stand.	由{1}個殼三角鐵組成，裝在殼架子上。	由{1}个壳三角铁组成，装在壳架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（多件，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} shell triangles attached to a {@2} stand.	由{1}個殼三角鐵組成，裝在{2}架子上。	由{1}个壳三角铁组成，装在{2}架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（多件，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} {@2} triangles attached to a shell stand.	由{1}個{2}三角鐵組成，裝在殼架子上。	由{1}个{2}三角铁组成，装在壳架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（多件，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} {@2} triangles attached to a {@3} stand.	由{1}個{2}三角鐵組成，裝在{3}架子上。	由{1}个{2}三角铁组成，装在{3}架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（多件，放置型）
+It consists of a {@1} bell.	由一個{1}鈴構成。	由一个{1}铃构成。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（一件）
+It consists of a shell bell attached to a {@1} stand.	由一個殼鈴構成，裝在{1}架子上。	由一个壳铃构成，装在{1}架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（一件，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of a {@1} bell attached to a shell stand.	由一個{1}鈴構成，裝在殼架子上。	由一个{1}铃构成，装在壳架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（一件，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of a {@1} bell attached to a {@2} stand.	由一個{1}鈴構成，裝在{2}架子上。	由一个{1}铃构成，装在{2}架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（一件，放置型）
+It consists of {%1} shell bells.	由{1}個殼鈴組成。	由{1}个壳铃组成。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（多件）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} {@2} bells.	由{1}個{2}鈴組成。	由{1}个{2}铃组成。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（多件）
+It consists of {%1} shell bells attached to a shell stand.	由{1}個殼鈴組成，裝在殼架子上。	由{1}个壳铃组成，装在壳架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（多件，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} shell bells attached to a {@2} stand.	由{1}個殼鈴組成，裝在{2}架子上。	由{1}个壳铃组成，装在{2}架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（多件，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} {@2} bells attached to a shell stand.	由{1}個{2}鈴組成，裝在殼架子上。	由{1}个{2}铃组成，装在壳架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（多件，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} {@2} bells attached to a {@3} stand.	由{1}個{2}鈴組成，裝在{3}架子上。	由{1}个{2}铃组成，装在{3}架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（多件，放置型）
+It consists of a {@1} ring.	由一個{1}響環構成。	由一个{1}响环构成。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（一件）
+It consists of a shell ring attached to a {@1} stand.	由一個殼響環構成，裝在{1}架子上。	由一个壳响环构成，装在{1}架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（一件，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of a {@1} ring attached to a shell stand.	由一個{1}響環構成，裝在殼架子上。	由一个{1}响环构成，装在壳架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（一件，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of a {@1} ring attached to a {@2} stand.	由一個{1}響環構成，裝在{2}架子上。	由一个{1}响环构成，装在{2}架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（一件，放置型）
+It consists of {%1} shell rings.	由{1}個殼響環組成。	由{1}个壳响环组成。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（多件）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} {@2} rings.	由{1}個{2}響環組成。	由{1}个{2}响环组成。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（多件）
+It consists of {%1} shell rings attached to a shell stand.	由{1}個殼響環組成，裝在殼架子上。	由{1}个壳响环组成，装在壳架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（多件，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} shell rings attached to a {@2} stand.	由{1}個殼響環組成，裝在{2}架子上。	由{1}个壳响环组成，装在{2}架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（多件，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} {@2} rings attached to a shell stand.	由{1}個{2}響環組成，裝在殼架子上。	由{1}个{2}响环组成，装在壳架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（多件，放置型）；殼製版本（shell 的全域譯名是身體部位「外殼」）
+It consists of {%1} {@2} rings attached to a {@3} stand.	由{1}個{2}響環組成，裝在{3}架子上。	由{1}个{2}响环组成，装在{3}架子上。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：非鼓類（多件，放置型）
+The musician strikes the {~1} with a shell mallet.	演奏者用殼槌敲擊發聲。	演奏者用壳槌敲击发声。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：用槌演奏；受詞（鼓面、音條等）前句已交代，譯文省略；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The musician strikes the {~1} with a {@2} mallet.	演奏者用{2}槌敲擊發聲。	演奏者用{2}槌敲击发声。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：用槌演奏；受詞（鼓面、音條等）前句已交代，譯文省略
+The musician strikes the {~1} with shell mallets.	演奏者用殼槌敲擊發聲。	演奏者用壳槌敲击发声。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：用槌演奏（成對）；受詞譯文省略；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The musician strikes the {~1} with {@2} mallets.	演奏者用{2}槌敲擊發聲。	演奏者用{2}槌敲击发声。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：用槌演奏（成對）；受詞譯文省略
+The musician strikes the {~1} with a shell hammer.	演奏者用殼錘敲擊發聲。	演奏者用壳锤敲击发声。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：用槌演奏；受詞（鼓面、音條等）前句已交代，譯文省略；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The musician strikes the {~1} with a {@2} hammer.	演奏者用{2}錘敲擊發聲。	演奏者用{2}锤敲击发声。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：用槌演奏；受詞（鼓面、音條等）前句已交代，譯文省略
+The musician strikes the {~1} with shell hammers.	演奏者用殼錘敲擊發聲。	演奏者用壳锤敲击发声。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：用槌演奏（成對）；受詞譯文省略；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The musician strikes the {~1} with {@2} hammers.	演奏者用{2}錘敲擊發聲。	演奏者用{2}锤敲击发声。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：用槌演奏（成對）；受詞譯文省略
+The musician strikes the {~1} with a shell stick.	演奏者用殼棒敲擊發聲。	演奏者用壳棒敲击发声。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：用槌演奏；受詞（鼓面、音條等）前句已交代，譯文省略；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The musician strikes the {~1} with a {@2} stick.	演奏者用{2}棒敲擊發聲。	演奏者用{2}棒敲击发声。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：用槌演奏；受詞（鼓面、音條等）前句已交代，譯文省略
+The musician strikes the {~1} with shell sticks.	演奏者用殼棒敲擊發聲。	演奏者用壳棒敲击发声。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：用槌演奏（成對）；受詞譯文省略；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The musician strikes the {~1} with {@2} sticks.	演奏者用{2}棒敲擊發聲。	演奏者用{2}棒敲击发声。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：用槌演奏（成對）；受詞譯文省略
+The musician scrapes the {~1} with a shell mallet.	演奏者用殼槌刮擦發聲。	演奏者用壳槌刮擦发声。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：用槌演奏；受詞（鼓面、音條等）前句已交代，譯文省略；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The musician scrapes the {~1} with a {@2} mallet.	演奏者用{2}槌刮擦發聲。	演奏者用{2}槌刮擦发声。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：用槌演奏；受詞（鼓面、音條等）前句已交代，譯文省略
+The musician scrapes the {~1} with shell mallets.	演奏者用殼槌刮擦發聲。	演奏者用壳槌刮擦发声。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：用槌演奏（成對）；受詞譯文省略；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The musician scrapes the {~1} with {@2} mallets.	演奏者用{2}槌刮擦發聲。	演奏者用{2}槌刮擦发声。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：用槌演奏（成對）；受詞譯文省略
+The musician scrapes the {~1} with a shell hammer.	演奏者用殼錘刮擦發聲。	演奏者用壳锤刮擦发声。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：用槌演奏；受詞（鼓面、音條等）前句已交代，譯文省略；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The musician scrapes the {~1} with a {@2} hammer.	演奏者用{2}錘刮擦發聲。	演奏者用{2}锤刮擦发声。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：用槌演奏；受詞（鼓面、音條等）前句已交代，譯文省略
+The musician scrapes the {~1} with shell hammers.	演奏者用殼錘刮擦發聲。	演奏者用壳锤刮擦发声。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：用槌演奏（成對）；受詞譯文省略；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The musician scrapes the {~1} with {@2} hammers.	演奏者用{2}錘刮擦發聲。	演奏者用{2}锤刮擦发声。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：用槌演奏（成對）；受詞譯文省略
+The musician scrapes the {~1} with a shell stick.	演奏者用殼棒刮擦發聲。	演奏者用壳棒刮擦发声。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：用槌演奏；受詞（鼓面、音條等）前句已交代，譯文省略；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The musician scrapes the {~1} with a {@2} stick.	演奏者用{2}棒刮擦發聲。	演奏者用{2}棒刮擦发声。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：用槌演奏；受詞（鼓面、音條等）前句已交代，譯文省略
+The musician scrapes the {~1} with shell sticks.	演奏者用殼棒刮擦發聲。	演奏者用壳棒刮擦发声。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：用槌演奏（成對）；受詞譯文省略；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The musician scrapes the {~1} with {@2} sticks.	演奏者用{2}棒刮擦發聲。	演奏者用{2}棒刮擦发声。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：用槌演奏（成對）；受詞譯文省略
+The musician rubs around the lip of the {~1} with a shell mallet.	演奏者用殼槌沿著缽緣摩擦發聲。	演奏者用壳槌沿着钵缘摩擦发声。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：用槌演奏；受詞（鼓面、音條等）前句已交代，譯文省略；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The musician rubs around the lip of the {~1} with a {@2} mallet.	演奏者用{2}槌沿著缽緣摩擦發聲。	演奏者用{2}槌沿着钵缘摩擦发声。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：用槌演奏；受詞（鼓面、音條等）前句已交代，譯文省略
+The musician rubs around the lip of the {~1} with shell mallets.	演奏者用殼槌沿著缽緣摩擦發聲。	演奏者用壳槌沿着钵缘摩擦发声。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：用槌演奏（成對）；受詞譯文省略；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The musician rubs around the lip of the {~1} with {@2} mallets.	演奏者用{2}槌沿著缽緣摩擦發聲。	演奏者用{2}槌沿着钵缘摩擦发声。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：用槌演奏（成對）；受詞譯文省略
+The musician rubs around the lip of the {~1} with a shell hammer.	演奏者用殼錘沿著缽緣摩擦發聲。	演奏者用壳锤沿着钵缘摩擦发声。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：用槌演奏；受詞（鼓面、音條等）前句已交代，譯文省略；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The musician rubs around the lip of the {~1} with a {@2} hammer.	演奏者用{2}錘沿著缽緣摩擦發聲。	演奏者用{2}锤沿着钵缘摩擦发声。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：用槌演奏；受詞（鼓面、音條等）前句已交代，譯文省略
+The musician rubs around the lip of the {~1} with shell hammers.	演奏者用殼錘沿著缽緣摩擦發聲。	演奏者用壳锤沿着钵缘摩擦发声。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：用槌演奏（成對）；受詞譯文省略；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The musician rubs around the lip of the {~1} with {@2} hammers.	演奏者用{2}錘沿著缽緣摩擦發聲。	演奏者用{2}锤沿着钵缘摩擦发声。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：用槌演奏（成對）；受詞譯文省略
+The musician rubs around the lip of the {~1} with a shell stick.	演奏者用殼棒沿著缽緣摩擦發聲。	演奏者用壳棒沿着钵缘摩擦发声。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：用槌演奏；受詞（鼓面、音條等）前句已交代，譯文省略；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The musician rubs around the lip of the {~1} with a {@2} stick.	演奏者用{2}棒沿著缽緣摩擦發聲。	演奏者用{2}棒沿着钵缘摩擦发声。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：用槌演奏；受詞（鼓面、音條等）前句已交代，譯文省略
+The musician rubs around the lip of the {~1} with shell sticks.	演奏者用殼棒沿著缽緣摩擦發聲。	演奏者用壳棒沿着钵缘摩擦发声。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：用槌演奏（成對）；受詞譯文省略；殼製版本（shell 的全域譯名是身體部位「外殼」）
+The musician rubs around the lip of the {~1} with {@2} sticks.	演奏者用{2}棒沿著缽緣摩擦發聲。	演奏者用{2}棒沿着钵缘摩擦发声。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：用槌演奏（成對）；受詞譯文省略
+The musician strikes the {~1} together.	演奏者把它們互相敲擊發聲。	演奏者把它们互相敲击发声。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：互擊（多件）
+The musician strikes the {~1}.	演奏者徒手敲擊發聲。	演奏者徒手敲击发声。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：徒手演奏；受詞譯文省略
+The musician scrapes the {~1}.	演奏者徒手刮擦發聲。	演奏者徒手刮擦发声。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：徒手演奏；受詞譯文省略
+The musician plucks the {~1}.	演奏者徒手撥動發聲。	演奏者徒手拨动发声。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：徒手演奏；受詞譯文省略
+The musician shakes the {~1}.	演奏者徒手搖動發聲。	演奏者徒手摇动发声。		FUN_140ebe8a0 2230601–2230820 打擊樂器說明：徒手演奏；受詞譯文省略
+The instrument has a single {%1}.	這件樂器只有單一的{1}。	这件乐器只有单一的{1}。		FUN_140eb6fe0 2220862 樂器音域句（鍵盤、弦、管、打擊樂器共用）：{1} 音高＋pitch
+The instrument has less than an octave of range, with {%1}.	這件樂器的音域不到一個八度，落在{1}。	这件乐器的音域不到一个八度，落在{1}。		FUN_140eb6fe0 2220862 樂器音域句（鍵盤、弦、管、打擊樂器共用）：{1} a/an＋音高＋pitch；術語例外：range
+The instrument has a {@1} octave range with {%2}.	這件樂器的音域有{1}個八度，都在{2}範圍內。	这件乐器的音域有{1}个八度，都在{2}范围内。		FUN_140eb6fe0 2220862 樂器音域句（鍵盤、弦、管、打擊樂器共用）：N 個八度，兩端同一音高字；術語例外：range
+The instrument has a {@1} octave range going from {%2} to {%3}.	這件樂器的音域有{1}個八度，從{2}到{3}。	这件乐器的音域有{1}个八度，从{2}到{3}。		FUN_140eb6fe0 2220862 樂器音域句（鍵盤、弦、管、打擊樂器共用）：N 個八度；{2} a/an＋音高字、{3} a/an＋音高字＋pitch；術語例外：range
+The instrument has an {@1} octave range with {%2}.	這件樂器的音域有{1}個八度，都在{2}範圍內。	这件乐器的音域有{1}个八度，都在{2}范围内。		FUN_140eb6fe0 2220862 樂器音域句（鍵盤、弦、管、打擊樂器共用）：N 個八度（eight、eleven 前用 an），兩端同一音高字；術語例外：range
+The instrument has an {@1} octave range going from {%2} to {%3}.	這件樂器的音域有{1}個八度，從{2}到{3}。	这件乐器的音域有{1}个八度，从{2}到{3}。		FUN_140eb6fe0 2220862 樂器音域句（鍵盤、弦、管、打擊樂器共用）：N 個八度（eight、eleven 前用 an）；{2} a/an＋音高字、{3} a/an＋音高字＋pitch；術語例外：range
+The instrument has a {@1}-and-a-half octave range with {%2}.	這件樂器的音域有{1}個半八度，都在{2}範圍內。	这件乐器的音域有{1}个半八度，都在{2}范围内。		FUN_140eb6fe0 2220862 樂器音域句（鍵盤、弦、管、打擊樂器共用）：N 個半八度，兩端同一音高字；術語例外：range
+The instrument has a {@1}-and-a-half octave range going from {%2} to {%3}.	這件樂器的音域有{1}個半八度，從{2}到{3}。	这件乐器的音域有{1}个半八度，从{2}到{3}。		FUN_140eb6fe0 2220862 樂器音域句（鍵盤、弦、管、打擊樂器共用）：N 個半八度；{2} a/an＋音高字、{3} a/an＋音高字＋pitch；術語例外：range
+The instrument has an {@1}-and-a-half octave range with {%2}.	這件樂器的音域有{1}個半八度，都在{2}範圍內。	这件乐器的音域有{1}个半八度，都在{2}范围内。		FUN_140eb6fe0 2220862 樂器音域句（鍵盤、弦、管、打擊樂器共用）：N 個半八度（an），兩端同一音高字；術語例外：range
+The instrument has an {@1}-and-a-half octave range going from {%2} to {%3}.	這件樂器的音域有{1}個半八度，從{2}到{3}。	这件乐器的音域有{1}个半八度，从{2}到{3}。		FUN_140eb6fe0 2220862 樂器音域句（鍵盤、弦、管、打擊樂器共用）：N 個半八度（an）；{2} a/an＋音高字、{3} a/an＋音高字＋pitch；術語例外：range
+The instrument has a nearly {@1} octave range with {%2}.	這件樂器的音域有將近{1}個八度，都在{2}範圍內。	这件乐器的音域有将近{1}个八度，都在{2}范围内。		FUN_140eb6fe0 2220862 樂器音域句（鍵盤、弦、管、打擊樂器共用）：將近 N 個八度，兩端同一音高字；術語例外：range
+The instrument has a nearly {@1} octave range going from {%2} to {%3}.	這件樂器的音域有將近{1}個八度，從{2}到{3}。	这件乐器的音域有将近{1}个八度，从{2}到{3}。		FUN_140eb6fe0 2220862 樂器音域句（鍵盤、弦、管、打擊樂器共用）：將近 N 個八度；{2} a/an＋音高字、{3} a/an＋音高字＋pitch；術語例外：range
+It has {%1} registers.	它有{1}個音區。	它有{1}个音区。		FUN_140eb8af0 2222331 樂器音色與音區句
+The {1} keyboard allows the musician to select the pitch of the instrument.	演奏者用{1}鍵盤選擇樂器的音高。	演奏者用{1}键盘选择乐器的音高。		FUN_140ebe8a0 2226742 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）；{1} 樂器名
+The {1} body is the housing for the workings of the instrument.	{1}機身容納樂器內部的機構。	{1}机身容纳乐器内部的机构。		FUN_140ebe8a0 2226823 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The {1} case is the housing for the workings of the instrument.	{1}琴箱容納樂器內部的機構。	{1}琴箱容纳乐器内部的机构。		FUN_140ebe8a0 2226823 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）；術語例外：case
+The {1} chest is the housing for the workings of the instrument.	{1}箱體容納樂器內部的機構。	{1}箱体容纳乐器内部的机构。		FUN_140ebe8a0 2226823 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）；術語例外：chest
+The {1} console is the housing for the workings of the instrument.	{1}演奏台容納樂器內部的機構。	{1}演奏台容纳乐器内部的机构。		FUN_140ebe8a0 2226823 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The {1} bells vibrate, producing the sound of the instrument.	{1}鐘振動，發出樂器的聲音。	{1}钟振动，发出乐器的声音。		FUN_140ebe8a0 2226917 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The {1} pipes vibrate, producing the sound of the instrument.	{1}管振動，發出樂器的聲音。	{1}管振动，发出乐器的声音。		FUN_140ebe8a0 2226917 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The {1} strings vibrate, producing the sound of the instrument.	{1}弦振動，發出樂器的聲音。	{1}弦振动，发出乐器的声音。		FUN_140ebe8a0 2226917 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The {1} pump is used to supply air to the instrument.	{1}幫浦用來為樂器供氣。	{1}水泵用来给乐器供气。		FUN_140ebe8a0 2226991 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The {1} bellows is used to send air through the instrument.	{1}風箱用來把空氣送進樂器。	{1}风箱用来把空气送进乐器。		FUN_140ebe8a0 2226991 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）；管樂器 2228773 也用
+The {1} neck allows the musician room to stop strings and select the pitch of the instrument.	{1}琴頸讓演奏者有空間按弦、選擇樂器的音高。	{1}琴颈让演奏者有空间按弦、选择乐器的音高。		FUN_140ebe8a0 2227369 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The {1} neck allows the musician room to stop the string and select the pitch of the instrument.	{1}琴頸讓演奏者有空間按弦、選擇樂器的音高。	{1}琴颈让演奏者有空间按弦、选择乐器的音高。		FUN_140ebe8a0 2227369 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）；只有一根弦
+The {1} body of the instrument vibrates with the string, producing sound.	樂器的{1}琴身隨著琴弦振動發聲。	乐器的{1}琴身随着琴弦振动发声。		FUN_140ebe8a0 2227421 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）；只有一根弦
+The {1} body of the instrument vibrates with the strings, producing sound.	樂器的{1}琴身隨著琴弦振動發聲。	乐器的{1}琴身随着琴弦振动发声。		FUN_140ebe8a0 2227421 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The strings of the instrument are attached to the {1} frame.	樂器的琴弦繫在{1}框架上。	乐器的琴弦系在{1}框架上。		FUN_140ebe8a0 2227526 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The strings of the instrument are attached to the {1} yoke.	樂器的琴弦繫在{1}琴軛上。	乐器的琴弦系在{1}琴轭上。		FUN_140ebe8a0 2227767 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The {1} sound-chest of the instrument vibrates with the strings, producing sound.	樂器的{1}共鳴箱隨著琴弦振動發聲。	乐器的{1}共鸣箱随着琴弦振动发声。		FUN_140ebe8a0 2227814 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）；術語例外：chest
+The {1} strings vibrate, causing the instrument to produce sound.	{1}弦振動，讓樂器發出聲音。	{1}弦振动，让乐器发出声音。		FUN_140ebe8a0 2227889 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The {1} string vibrates, causing the instrument to produce sound.	{1}弦振動，讓樂器發出聲音。	{1}弦振动，让乐器发出声音。		FUN_140ebe8a0 2227889 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）；只有一根弦
+The {1} plectrum plucks the string of the instrument.	{1}撥片撥動樂器的琴弦。	{1}拨片拨动乐器的琴弦。		FUN_140ebe8a0 2227984 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The {1} plectrum plucks the strings of the instrument.	{1}撥片撥動樂器的琴弦。	{1}拨片拨动乐器的琴弦。		FUN_140ebe8a0 2227984 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The {1} hammers strike the string of the instrument.	{1}琴槌敲擊樂器的琴弦。	{1}琴槌敲击乐器的琴弦。		FUN_140ebe8a0 2227984 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The {1} hammers strike the strings of the instrument.	{1}琴槌敲擊樂器的琴弦。	{1}琴槌敲击乐器的琴弦。		FUN_140ebe8a0 2227984 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The {1} bow is drawn across the string of the instrument.	{1}弓拉過樂器的琴弦。	{1}弓拉过乐器的琴弦。		FUN_140ebe8a0 2227984 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The {1} bow is drawn across the strings of the instrument.	{1}弓拉過樂器的琴弦。	{1}弓拉过乐器的琴弦。		FUN_140ebe8a0 2227984 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The {1} neck bowl vibrates with the rest of the instrument, producing sound.	{1}共鳴碗隨著樂器其他部分振動發聲。	{1}共鸣碗随着乐器其他部分振动发声。		FUN_140ebe8a0 2228050 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The {1} blowpipe is used by the musician to send air into the instrument.	演奏者用{1}吹管把空氣送進樂器。	演奏者用{1}吹管把空气送进乐器。		FUN_140ebe8a0 2228814 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The {1} bag is used by the musician to control the steady flow of air through the instrument.	演奏者用{1}氣袋控制流經樂器的穩定氣流。	演奏者用{1}气袋控制流经乐器的稳定气流。		FUN_140ebe8a0 2228862 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）；術語例外：bag
+The {1} melody pipe is used by the musician to select the pitch of the instrument.	演奏者用{1}旋律管選擇樂器的音高。	演奏者用{1}旋律管选择乐器的音高。		FUN_140ebe8a0 2228909 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The {1} drone pipes produce a constant pitch with the flow of air out of the instrument.	{1}持續音管隨著流出樂器的氣流發出恆定的音高。	{1}持续音管随着流出乐器的气流发出恒定的音高。		FUN_140ebe8a0 2228960 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The {1} drone pipe produces a constant pitch with the flow of air out of the instrument.	{1}持續音管隨著流出樂器的氣流發出恆定的音高。	{1}持续音管随着流出乐器的气流发出恒定的音高。		FUN_140ebe8a0 2228960 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The {1} wind chest is the body of the instrument.	{1}氣室是樂器的主體。	{1}气室是乐器的主体。		FUN_140ebe8a0 2229103 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）；術語例外：chest
+The musician uses the {1} pipes to select the pitch as the air leaves the instrument.	空氣離開樂器時，演奏者用{1}管選擇音高。	空气离开乐器时，演奏者用{1}管选择音高。		FUN_140ebe8a0 2229148 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The bowl-shaped {1} drum makes up the bulk of the instrument.	碗形{1}鼓構成樂器的主體。	碗形{1}鼓构成乐器的主体。		FUN_140ebe8a0 2230137 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）；{1} 樂器名
+The bowl-shaped {1} drums make up the bulk of the instrument.	碗形{1}鼓構成樂器的主體。	碗形{1}鼓构成乐器的主体。		FUN_140ebe8a0 2230137 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The tube {1} drum makes up the bulk of the instrument.	筒形{1}鼓構成樂器的主體。	筒形{1}鼓构成乐器的主体。		FUN_140ebe8a0 2230137 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）；{1} 樂器名
+The tube {1} drums make up the bulk of the instrument.	筒形{1}鼓構成樂器的主體。	筒形{1}鼓构成乐器的主体。		FUN_140ebe8a0 2230137 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The barrel {1} drum makes up the bulk of the instrument.	桶形{1}鼓構成樂器的主體。	桶形{1}鼓构成乐器的主体。		FUN_140ebe8a0 2230137 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）；{1} 樂器名
+The barrel {1} drums make up the bulk of the instrument.	桶形{1}鼓構成樂器的主體。	桶形{1}鼓构成乐器的主体。		FUN_140ebe8a0 2230137 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The goblet {1} drum makes up the bulk of the instrument.	高腳杯形{1}鼓構成樂器的主體。	高脚杯形{1}鼓构成乐器的主体。		FUN_140ebe8a0 2230137 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）；{1} 樂器名
+The goblet {1} drums make up the bulk of the instrument.	高腳杯形{1}鼓構成樂器的主體。	高脚杯形{1}鼓构成乐器的主体。		FUN_140ebe8a0 2230137 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The hourglass {1} drum makes up the bulk of the instrument.	沙漏形{1}鼓構成樂器的主體。	沙漏形{1}鼓构成乐器的主体。		FUN_140ebe8a0 2230137 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）；{1} 樂器名
+The hourglass {1} drums make up the bulk of the instrument.	沙漏形{1}鼓構成樂器的主體。	沙漏形{1}鼓构成乐器的主体。		FUN_140ebe8a0 2230137 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The {1} bar makes up the bulk of the instrument.	{1}音條構成樂器的主體。	{1}音条构成乐器的主体。		FUN_140ebe8a0 2230137 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The {1} bars make up the bulk of the instrument.	{1}音條構成樂器的主體。	{1}音条构成乐器的主体。		FUN_140ebe8a0 2230137 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The {1} chime makes up the bulk of the instrument.	{1}管鐘構成樂器的主體。	{1}管钟构成乐器的主体。		FUN_140ebe8a0 2230137 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The {1} chimes make up the bulk of the instrument.	{1}管鐘構成樂器的主體。	{1}管钟构成乐器的主体。		FUN_140ebe8a0 2230137 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The {1} block makes up the bulk of the instrument.	{1}響塊構成樂器的主體。	{1}响块构成乐器的主体。		FUN_140ebe8a0 2230137 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The {1} blocks make up the bulk of the instrument.	{1}響塊構成樂器的主體。	{1}响块构成乐器的主体。		FUN_140ebe8a0 2230137 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The {1} bowl makes up the bulk of the instrument.	{1}缽構成樂器的主體。	{1}钵构成乐器的主体。		FUN_140ebe8a0 2230137 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The {1} bowls make up the bulk of the instrument.	{1}缽構成樂器的主體。	{1}钵构成乐器的主体。		FUN_140ebe8a0 2230137 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The {1} triangle makes up the bulk of the instrument.	{1}三角鐵構成樂器的主體。	{1}三角铁构成乐器的主体。		FUN_140ebe8a0 2230137 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The {1} triangles make up the bulk of the instrument.	{1}三角鐵構成樂器的主體。	{1}三角铁构成乐器的主体。		FUN_140ebe8a0 2230137 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The {1} bell makes up the bulk of the instrument.	{1}鈴構成樂器的主體。	{1}铃构成乐器的主体。		FUN_140ebe8a0 2230137 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The {1} bells make up the bulk of the instrument.	{1}鈴構成樂器的主體。	{1}铃构成乐器的主体。		FUN_140ebe8a0 2230137 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The {1} ring makes up the bulk of the instrument.	{1}響環構成樂器的主體。	{1}响环构成乐器的主体。		FUN_140ebe8a0 2230137 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The {1} rings make up the bulk of the instrument.	{1}響環構成樂器的主體。	{1}响环构成乐器的主体。		FUN_140ebe8a0 2230137 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The {1} stand is used to support the instrument.	{1}架子用來支撐樂器。	{1}架子用来支撑乐器。		FUN_140ebe8a0 2230203 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The {1} head is stretched over the instrument and used to produce sound.	{1}鼓皮繃在樂器上，用來發聲。	{1}鼓皮绷在乐器上，用来发声。		FUN_140ebe8a0 2230262 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The {1} heads are stretched over the instrument and used to produce sound.	{1}鼓皮繃在樂器上，用來發聲。	{1}鼓皮绷在乐器上，用来发声。		FUN_140ebe8a0 2230262 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The {1} mallet is used by the musician to strike the instrument and produce sound.	演奏者用{1}槌敲擊樂器發聲。	演奏者用{1}槌敲击乐器发声。		FUN_140ebe8a0 2230325 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The {1} mallets are used by the musician to strike the instrument and produce sound.	演奏者用{1}槌敲擊樂器發聲。	演奏者用{1}槌敲击乐器发声。		FUN_140ebe8a0 2230325 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The {1} hammer is used by the musician to strike the instrument and produce sound.	演奏者用{1}錘敲擊樂器發聲。	演奏者用{1}锤敲击乐器发声。		FUN_140ebe8a0 2230325 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The {1} hammers are used by the musician to strike the instrument and produce sound.	演奏者用{1}錘敲擊樂器發聲。	演奏者用{1}锤敲击乐器发声。		FUN_140ebe8a0 2230325 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The {1} stick is used by the musician to strike the instrument and produce sound.	演奏者用{1}棒敲擊樂器發聲。	演奏者用{1}棒敲击乐器发声。		FUN_140ebe8a0 2230325 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+The {1} sticks are used by the musician to strike the instrument and produce sound.	演奏者用{1}棒敲擊樂器發聲。	演奏者用{1}棒敲击乐器发声。		FUN_140ebe8a0 2230325 零件說明（ITEM_TOOL DESCRIPTION，物品說明頁）
+has a {@1} light fluid eerie liquid timbre	有{1}輕盈流暢詭異流動的音色	有{1}轻盈流畅诡异流动的音色	inner	FUN_140eb8af0 音色片語：light、fluid、eerie、liquid 的全域譯名另有意思（光明；體液；詭異的；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} fluid eerie liquid timbre	有清澈{1}流暢詭異流動的音色	有清澈{1}流畅诡异流动的音色	inner	FUN_140eb8af0 音色片語：clear、fluid、eerie、liquid 的全域譯名另有意思（透明／Clear 清除；體液；詭異的；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} light eerie liquid timbre	有清澈{1}輕盈詭異流動的音色	有清澈{1}轻盈诡异流动的音色	inner	FUN_140eb8af0 音色片語：clear、light、eerie、liquid 的全域譯名另有意思（透明／Clear 清除；光明；詭異的；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} light fluid eerie timbre	有清澈{1}輕盈流暢詭異的音色	有清澈{1}轻盈流畅诡异的音色	inner	FUN_140eb8af0 音色片語：clear、light、fluid、eerie 的全域譯名另有意思（透明／Clear 清除；光明；體液；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} light fluid liquid timbre	有清澈{1}輕盈流暢流動的音色	有清澈{1}轻盈流畅流动的音色	inner	FUN_140eb8af0 音色片語：clear、light、fluid、liquid 的全域譯名另有意思（透明／Clear 清除；光明；體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} strong fluid liquid timbre	有清澈{1}強勁流暢流動的音色	有清澈{1}强劲流畅流动的音色	inner	FUN_140eb8af0 音色片語：clear、strong、fluid、liquid 的全域譯名另有意思（透明／Clear 清除；Strong 強壯；體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear fluid eerie {@1} liquid timbre	有清澈流暢詭異{1}流動的音色	有清澈流畅诡异{1}流动的音色	inner	FUN_140eb8af0 音色片語：clear、fluid、eerie、liquid 的全域譯名另有意思（透明／Clear 清除；體液；詭異的；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear light {@1} fluid eerie timbre	有清澈輕盈{1}流暢詭異的音色	有清澈轻盈{1}流畅诡异的音色	inner	FUN_140eb8af0 音色片語：clear、light、fluid、eerie 的全域譯名另有意思（透明／Clear 清除；光明；體液；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear light {@1} fluid liquid timbre	有清澈輕盈{1}流暢流動的音色	有清澈轻盈{1}流畅流动的音色	inner	FUN_140eb8af0 音色片語：clear、light、fluid、liquid 的全域譯名另有意思（透明／Clear 清除；光明；體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear light eerie {@1} liquid timbre	有清澈輕盈詭異{1}流動的音色	有清澈轻盈诡异{1}流动的音色	inner	FUN_140eb8af0 音色片語：clear、light、eerie、liquid 的全域譯名另有意思（透明／Clear 清除；光明；詭異的；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear light fluid {@1} liquid timbre	有清澈輕盈流暢{1}流動的音色	有清澈轻盈流畅{1}流动的音色	inner	FUN_140eb8af0 音色片語：clear、light、fluid、liquid 的全域譯名另有意思（透明／Clear 清除；光明；體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear light fluid eerie {@1} timbre	有清澈輕盈流暢詭異{1}的音色	有清澈轻盈流畅诡异{1}的音色	inner	FUN_140eb8af0 音色片語：clear、light、fluid、eerie 的全域譯名另有意思（透明／Clear 清除；光明；體液；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear strong {@1} fluid liquid timbre	有清澈強勁{1}流暢流動的音色	有清澈强劲{1}流畅流动的音色	inner	FUN_140eb8af0 音色片語：clear、strong、fluid、liquid 的全域譯名另有意思（透明／Clear 清除；Strong 強壯；體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear strong fluid {@1} liquid timbre	有清澈強勁流暢{1}流動的音色	有清澈强劲流畅{1}流动的音色	inner	FUN_140eb8af0 音色片語：clear、strong、fluid、liquid 的全域譯名另有意思（透明／Clear 清除；Strong 強壯；體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a light fluid eerie {@1} liquid timbre	有輕盈流暢詭異{1}流動的音色	有轻盈流畅诡异{1}流动的音色	inner	FUN_140eb8af0 音色片語：light、fluid、eerie、liquid 的全域譯名另有意思（光明；體液；詭異的；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} fluid eerie liquid timbre	有{1}流暢詭異流動的音色	有{1}流畅诡异流动的音色	inner	FUN_140eb8af0 音色片語：fluid、eerie、liquid 的全域譯名另有意思（體液；詭異的；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} light eerie liquid timbre	有{1}輕盈詭異流動的音色	有{1}轻盈诡异流动的音色	inner	FUN_140eb8af0 音色片語：light、eerie、liquid 的全域譯名另有意思（光明；詭異的；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} light fluid eerie timbre	有{1}輕盈流暢詭異的音色	有{1}轻盈流畅诡异的音色	inner	FUN_140eb8af0 音色片語：light、fluid、eerie 的全域譯名另有意思（光明；體液；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} light fluid liquid timbre	有{1}輕盈流暢流動的音色	有{1}轻盈流畅流动的音色	inner	FUN_140eb8af0 音色片語：light、fluid、liquid 的全域譯名另有意思（光明；體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} strong fluid liquid timbre	有{1}強勁流暢流動的音色	有{1}强劲流畅流动的音色	inner	FUN_140eb8af0 音色片語：strong、fluid、liquid 的全域譯名另有意思（Strong 強壯；體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} eerie liquid timbre	有清澈{1}詭異流動的音色	有清澈{1}诡异流动的音色	inner	FUN_140eb8af0 音色片語：clear、eerie、liquid 的全域譯名另有意思（透明／Clear 清除；詭異的；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} fluid eerie timbre	有清澈{1}流暢詭異的音色	有清澈{1}流畅诡异的音色	inner	FUN_140eb8af0 音色片語：clear、fluid、eerie 的全域譯名另有意思（透明／Clear 清除；體液；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} fluid liquid timbre	有清澈{1}流暢流動的音色	有清澈{1}流畅流动的音色	inner	FUN_140eb8af0 音色片語：clear、fluid、liquid 的全域譯名另有意思（透明／Clear 清除；體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} light eerie timbre	有清澈{1}輕盈詭異的音色	有清澈{1}轻盈诡异的音色	inner	FUN_140eb8af0 音色片語：clear、light、eerie 的全域譯名另有意思（透明／Clear 清除；光明；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} light fluid timbre	有清澈{1}輕盈流暢的音色	有清澈{1}轻盈流畅的音色	inner	FUN_140eb8af0 音色片語：clear、light、fluid 的全域譯名另有意思（透明／Clear 清除；光明；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} light focused timbre	有清澈{1}輕盈集中的音色	有清澈{1}轻盈集中的音色	inner	FUN_140eb8af0 音色片語：clear、light、focused 的全域譯名另有意思（透明／Clear 清除；光明；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} light liquid timbre	有清澈{1}輕盈流動的音色	有清澈{1}轻盈流动的音色	inner	FUN_140eb8af0 音色片語：clear、light、liquid 的全域譯名另有意思（透明／Clear 清除；光明；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} strong fluid timbre	有清澈{1}強勁流暢的音色	有清澈{1}强劲流畅的音色	inner	FUN_140eb8af0 音色片語：clear、strong、fluid 的全域譯名另有意思（透明／Clear 清除；Strong 強壯；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} strong focused timbre	有清澈{1}強勁集中的音色	有清澈{1}强劲集中的音色	inner	FUN_140eb8af0 音色片語：clear、strong、focused 的全域譯名另有意思（透明／Clear 清除；Strong 強壯；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} strong liquid timbre	有清澈{1}強勁流動的音色	有清澈{1}强劲流动的音色	inner	FUN_140eb8af0 音色片語：clear、strong、liquid 的全域譯名另有意思（透明／Clear 清除；Strong 強壯；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear eerie {@1} liquid timbre	有清澈詭異{1}流動的音色	有清澈诡异{1}流动的音色	inner	FUN_140eb8af0 音色片語：clear、eerie、liquid 的全域譯名另有意思（透明／Clear 清除；詭異的；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear fluid {@1} liquid timbre	有清澈流暢{1}流動的音色	有清澈流畅{1}流动的音色	inner	FUN_140eb8af0 音色片語：clear、fluid、liquid 的全域譯名另有意思（透明／Clear 清除；體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear fluid eerie {@1} timbre	有清澈流暢詭異{1}的音色	有清澈流畅诡异{1}的音色	inner	FUN_140eb8af0 音色片語：clear、fluid、eerie 的全域譯名另有意思（透明／Clear 清除；體液；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear fluid liquid {@1} timbre	有清澈流暢流動{1}的音色	有清澈流畅流动{1}的音色	inner	FUN_140eb8af0 音色片語：clear、fluid、liquid 的全域譯名另有意思（透明／Clear 清除；體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear light {@1} eerie timbre	有清澈輕盈{1}詭異的音色	有清澈轻盈{1}诡异的音色	inner	FUN_140eb8af0 音色片語：clear、light、eerie 的全域譯名另有意思（透明／Clear 清除；光明；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear light {@1} fluid timbre	有清澈輕盈{1}流暢的音色	有清澈轻盈{1}流畅的音色	inner	FUN_140eb8af0 音色片語：clear、light、fluid 的全域譯名另有意思（透明／Clear 清除；光明；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear light {@1} liquid timbre	有清澈輕盈{1}流動的音色	有清澈轻盈{1}流动的音色	inner	FUN_140eb8af0 音色片語：clear、light、liquid 的全域譯名另有意思（透明／Clear 清除；光明；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear light eerie {@1} timbre	有清澈輕盈詭異{1}的音色	有清澈轻盈诡异{1}的音色	inner	FUN_140eb8af0 音色片語：clear、light、eerie 的全域譯名另有意思（透明／Clear 清除；光明；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear light fluid {@1} timbre	有清澈輕盈流暢{1}的音色	有清澈轻盈流畅{1}的音色	inner	FUN_140eb8af0 音色片語：clear、light、fluid 的全域譯名另有意思（透明／Clear 清除；光明；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear light focused {@1} timbre	有清澈輕盈集中{1}的音色	有清澈轻盈集中{1}的音色	inner	FUN_140eb8af0 音色片語：clear、light、focused 的全域譯名另有意思（透明／Clear 清除；光明；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear strong {@1} fluid timbre	有清澈強勁{1}流暢的音色	有清澈强劲{1}流畅的音色	inner	FUN_140eb8af0 音色片語：clear、strong、fluid 的全域譯名另有意思（透明／Clear 清除；Strong 強壯；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear strong {@1} focused timbre	有清澈強勁{1}集中的音色	有清澈强劲{1}集中的音色	inner	FUN_140eb8af0 音色片語：clear、strong、focused 的全域譯名另有意思（透明／Clear 清除；Strong 強壯；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear strong {@1} liquid timbre	有清澈強勁{1}流動的音色	有清澈强劲{1}流动的音色	inner	FUN_140eb8af0 音色片語：clear、strong、liquid 的全域譯名另有意思（透明／Clear 清除；Strong 強壯；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear strong fluid {@1} timbre	有清澈強勁流暢{1}的音色	有清澈强劲流畅{1}的音色	inner	FUN_140eb8af0 音色片語：clear、strong、fluid 的全域譯名另有意思（透明／Clear 清除；Strong 強壯；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear strong focused {@1} timbre	有清澈強勁集中{1}的音色	有清澈强劲集中{1}的音色	inner	FUN_140eb8af0 音色片語：clear、strong、focused 的全域譯名另有意思（透明／Clear 清除；Strong 強壯；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a fluid eerie {@1} liquid timbre	有流暢詭異{1}流動的音色	有流畅诡异{1}流动的音色	inner	FUN_140eb8af0 音色片語：fluid、eerie、liquid 的全域譯名另有意思（體液；詭異的；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a light {@1} fluid eerie timbre	有輕盈{1}流暢詭異的音色	有轻盈{1}流畅诡异的音色	inner	FUN_140eb8af0 音色片語：light、fluid、eerie 的全域譯名另有意思（光明；體液；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a light {@1} fluid liquid timbre	有輕盈{1}流暢流動的音色	有轻盈{1}流畅流动的音色	inner	FUN_140eb8af0 音色片語：light、fluid、liquid 的全域譯名另有意思（光明；體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a light eerie {@1} liquid timbre	有輕盈詭異{1}流動的音色	有轻盈诡异{1}流动的音色	inner	FUN_140eb8af0 音色片語：light、eerie、liquid 的全域譯名另有意思（光明；詭異的；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a light fluid {@1} liquid timbre	有輕盈流暢{1}流動的音色	有轻盈流畅{1}流动的音色	inner	FUN_140eb8af0 音色片語：light、fluid、liquid 的全域譯名另有意思（光明；體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a light fluid eerie {@1} timbre	有輕盈流暢詭異{1}的音色	有轻盈流畅诡异{1}的音色	inner	FUN_140eb8af0 音色片語：light、fluid、eerie 的全域譯名另有意思（光明；體液；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a light fluid liquid {@1} timbre	有輕盈流暢流動{1}的音色	有轻盈流畅流动{1}的音色	inner	FUN_140eb8af0 音色片語：light、fluid、liquid 的全域譯名另有意思（光明；體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a strong {@1} fluid liquid timbre	有強勁{1}流暢流動的音色	有强劲{1}流畅流动的音色	inner	FUN_140eb8af0 音色片語：strong、fluid、liquid 的全域譯名另有意思（Strong 強壯；體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a strong fluid {@1} liquid timbre	有強勁流暢{1}流動的音色	有强劲流畅{1}流动的音色	inner	FUN_140eb8af0 音色片語：strong、fluid、liquid 的全域譯名另有意思（Strong 強壯；體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} fluid eerie liquid timbre	有{1}{2}流暢詭異流動的音色	有{1}{2}流畅诡异流动的音色	inner	FUN_140eb8af0 音色片語：fluid、eerie、liquid 的全域譯名另有意思（體液；詭異的；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} light eerie liquid timbre	有{1}{2}輕盈詭異流動的音色	有{1}{2}轻盈诡异流动的音色	inner	FUN_140eb8af0 音色片語：light、eerie、liquid 的全域譯名另有意思（光明；詭異的；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} light fluid eerie timbre	有{1}{2}輕盈流暢詭異的音色	有{1}{2}轻盈流畅诡异的音色	inner	FUN_140eb8af0 音色片語：light、fluid、eerie 的全域譯名另有意思（光明；體液；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} light fluid liquid timbre	有{1}{2}輕盈流暢流動的音色	有{1}{2}轻盈流畅流动的音色	inner	FUN_140eb8af0 音色片語：light、fluid、liquid 的全域譯名另有意思（光明；體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} strong fluid liquid timbre	有{1}{2}強勁流暢流動的音色	有{1}{2}强劲流畅流动的音色	inner	FUN_140eb8af0 音色片語：strong、fluid、liquid 的全域譯名另有意思（Strong 強壯；體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} fluid eerie {@2} liquid timbre	有{1}流暢詭異{2}流動的音色	有{1}流畅诡异{2}流动的音色	inner	FUN_140eb8af0 音色片語：fluid、eerie、liquid 的全域譯名另有意思（體液；詭異的；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} light {@2} fluid eerie timbre	有{1}輕盈{2}流暢詭異的音色	有{1}轻盈{2}流畅诡异的音色	inner	FUN_140eb8af0 音色片語：light、fluid、eerie 的全域譯名另有意思（光明；體液；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} light {@2} fluid liquid timbre	有{1}輕盈{2}流暢流動的音色	有{1}轻盈{2}流畅流动的音色	inner	FUN_140eb8af0 音色片語：light、fluid、liquid 的全域譯名另有意思（光明；體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} light eerie {@2} liquid timbre	有{1}輕盈詭異{2}流動的音色	有{1}轻盈诡异{2}流动的音色	inner	FUN_140eb8af0 音色片語：light、eerie、liquid 的全域譯名另有意思（光明；詭異的；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} light fluid {@2} liquid timbre	有{1}輕盈流暢{2}流動的音色	有{1}轻盈流畅{2}流动的音色	inner	FUN_140eb8af0 音色片語：light、fluid、liquid 的全域譯名另有意思（光明；體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} light fluid eerie {@2} timbre	有{1}輕盈流暢詭異{2}的音色	有{1}轻盈流畅诡异{2}的音色	inner	FUN_140eb8af0 音色片語：light、fluid、eerie 的全域譯名另有意思（光明；體液；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} light fluid liquid {@2} timbre	有{1}輕盈流暢流動{2}的音色	有{1}轻盈流畅流动{2}的音色	inner	FUN_140eb8af0 音色片語：light、fluid、liquid 的全域譯名另有意思（光明；體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} strong {@2} fluid liquid timbre	有{1}強勁{2}流暢流動的音色	有{1}强劲{2}流畅流动的音色	inner	FUN_140eb8af0 音色片語：strong、fluid、liquid 的全域譯名另有意思（Strong 強壯；體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} strong fluid {@2} liquid timbre	有{1}強勁流暢{2}流動的音色	有{1}强劲流畅{2}流动的音色	inner	FUN_140eb8af0 音色片語：strong、fluid、liquid 的全域譯名另有意思（Strong 強壯；體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} {@2} eerie liquid timbre	有清澈{1}{2}詭異流動的音色	有清澈{1}{2}诡异流动的音色	inner	FUN_140eb8af0 音色片語：clear、eerie、liquid 的全域譯名另有意思（透明／Clear 清除；詭異的；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} {@2} fluid eerie timbre	有清澈{1}{2}流暢詭異的音色	有清澈{1}{2}流畅诡异的音色	inner	FUN_140eb8af0 音色片語：clear、fluid、eerie 的全域譯名另有意思（透明／Clear 清除；體液；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} {@2} fluid liquid timbre	有清澈{1}{2}流暢流動的音色	有清澈{1}{2}流畅流动的音色	inner	FUN_140eb8af0 音色片語：clear、fluid、liquid 的全域譯名另有意思（透明／Clear 清除；體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} {@2} light eerie timbre	有清澈{1}{2}輕盈詭異的音色	有清澈{1}{2}轻盈诡异的音色	inner	FUN_140eb8af0 音色片語：clear、light、eerie 的全域譯名另有意思（透明／Clear 清除；光明；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} {@2} light fluid timbre	有清澈{1}{2}輕盈流暢的音色	有清澈{1}{2}轻盈流畅的音色	inner	FUN_140eb8af0 音色片語：clear、light、fluid 的全域譯名另有意思（透明／Clear 清除；光明；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} {@2} light focused timbre	有清澈{1}{2}輕盈集中的音色	有清澈{1}{2}轻盈集中的音色	inner	FUN_140eb8af0 音色片語：clear、light、focused 的全域譯名另有意思（透明／Clear 清除；光明；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} {@2} light liquid timbre	有清澈{1}{2}輕盈流動的音色	有清澈{1}{2}轻盈流动的音色	inner	FUN_140eb8af0 音色片語：clear、light、liquid 的全域譯名另有意思（透明／Clear 清除；光明；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} {@2} strong fluid timbre	有清澈{1}{2}強勁流暢的音色	有清澈{1}{2}强劲流畅的音色	inner	FUN_140eb8af0 音色片語：clear、strong、fluid 的全域譯名另有意思（透明／Clear 清除；Strong 強壯；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} {@2} strong focused timbre	有清澈{1}{2}強勁集中的音色	有清澈{1}{2}强劲集中的音色	inner	FUN_140eb8af0 音色片語：clear、strong、focused 的全域譯名另有意思（透明／Clear 清除；Strong 強壯；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} {@2} strong liquid timbre	有清澈{1}{2}強勁流動的音色	有清澈{1}{2}强劲流动的音色	inner	FUN_140eb8af0 音色片語：clear、strong、liquid 的全域譯名另有意思（透明／Clear 清除；Strong 強壯；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} eerie {@2} liquid timbre	有清澈{1}詭異{2}流動的音色	有清澈{1}诡异{2}流动的音色	inner	FUN_140eb8af0 音色片語：clear、eerie、liquid 的全域譯名另有意思（透明／Clear 清除；詭異的；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} fluid {@2} liquid timbre	有清澈{1}流暢{2}流動的音色	有清澈{1}流畅{2}流动的音色	inner	FUN_140eb8af0 音色片語：clear、fluid、liquid 的全域譯名另有意思（透明／Clear 清除；體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} fluid eerie {@2} timbre	有清澈{1}流暢詭異{2}的音色	有清澈{1}流畅诡异{2}的音色	inner	FUN_140eb8af0 音色片語：clear、fluid、eerie 的全域譯名另有意思（透明／Clear 清除；體液；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} fluid liquid {@2} timbre	有清澈{1}流暢流動{2}的音色	有清澈{1}流畅流动{2}的音色	inner	FUN_140eb8af0 音色片語：clear、fluid、liquid 的全域譯名另有意思（透明／Clear 清除；體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} light {@2} eerie timbre	有清澈{1}輕盈{2}詭異的音色	有清澈{1}轻盈{2}诡异的音色	inner	FUN_140eb8af0 音色片語：clear、light、eerie 的全域譯名另有意思（透明／Clear 清除；光明；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} light {@2} fluid timbre	有清澈{1}輕盈{2}流暢的音色	有清澈{1}轻盈{2}流畅的音色	inner	FUN_140eb8af0 音色片語：clear、light、fluid 的全域譯名另有意思（透明／Clear 清除；光明；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} light {@2} liquid timbre	有清澈{1}輕盈{2}流動的音色	有清澈{1}轻盈{2}流动的音色	inner	FUN_140eb8af0 音色片語：clear、light、liquid 的全域譯名另有意思（透明／Clear 清除；光明；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} light eerie {@2} timbre	有清澈{1}輕盈詭異{2}的音色	有清澈{1}轻盈诡异{2}的音色	inner	FUN_140eb8af0 音色片語：clear、light、eerie 的全域譯名另有意思（透明／Clear 清除；光明；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} light fluid {@2} timbre	有清澈{1}輕盈流暢{2}的音色	有清澈{1}轻盈流畅{2}的音色	inner	FUN_140eb8af0 音色片語：clear、light、fluid 的全域譯名另有意思（透明／Clear 清除；光明；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} light focused {@2} timbre	有清澈{1}輕盈集中{2}的音色	有清澈{1}轻盈集中{2}的音色	inner	FUN_140eb8af0 音色片語：clear、light、focused 的全域譯名另有意思（透明／Clear 清除；光明；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} strong {@2} fluid timbre	有清澈{1}強勁{2}流暢的音色	有清澈{1}强劲{2}流畅的音色	inner	FUN_140eb8af0 音色片語：clear、strong、fluid 的全域譯名另有意思（透明／Clear 清除；Strong 強壯；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} strong {@2} focused timbre	有清澈{1}強勁{2}集中的音色	有清澈{1}强劲{2}集中的音色	inner	FUN_140eb8af0 音色片語：clear、strong、focused 的全域譯名另有意思（透明／Clear 清除；Strong 強壯；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} strong {@2} liquid timbre	有清澈{1}強勁{2}流動的音色	有清澈{1}强劲{2}流动的音色	inner	FUN_140eb8af0 音色片語：clear、strong、liquid 的全域譯名另有意思（透明／Clear 清除；Strong 強壯；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} strong fluid {@2} timbre	有清澈{1}強勁流暢{2}的音色	有清澈{1}强劲流畅{2}的音色	inner	FUN_140eb8af0 音色片語：clear、strong、fluid 的全域譯名另有意思（透明／Clear 清除；Strong 強壯；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} strong focused {@2} timbre	有清澈{1}強勁集中{2}的音色	有清澈{1}强劲集中{2}的音色	inner	FUN_140eb8af0 音色片語：clear、strong、focused 的全域譯名另有意思（透明／Clear 清除；Strong 強壯；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear eerie {@1} {@2} liquid timbre	有清澈詭異{1}{2}流動的音色	有清澈诡异{1}{2}流动的音色	inner	FUN_140eb8af0 音色片語：clear、eerie、liquid 的全域譯名另有意思（透明／Clear 清除；詭異的；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear fluid {@1} {@2} liquid timbre	有清澈流暢{1}{2}流動的音色	有清澈流畅{1}{2}流动的音色	inner	FUN_140eb8af0 音色片語：clear、fluid、liquid 的全域譯名另有意思（透明／Clear 清除；體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear fluid {@1} liquid {@2} timbre	有清澈流暢{1}流動{2}的音色	有清澈流畅{1}流动{2}的音色	inner	FUN_140eb8af0 音色片語：clear、fluid、liquid 的全域譯名另有意思（透明／Clear 清除；體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear fluid eerie {@1} {@2} timbre	有清澈流暢詭異{1}{2}的音色	有清澈流畅诡异{1}{2}的音色	inner	FUN_140eb8af0 音色片語：clear、fluid、eerie 的全域譯名另有意思（透明／Clear 清除；體液；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear light {@1} {@2} liquid timbre	有清澈輕盈{1}{2}流動的音色	有清澈轻盈{1}{2}流动的音色	inner	FUN_140eb8af0 音色片語：clear、light、liquid 的全域譯名另有意思（透明／Clear 清除；光明；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear light {@1} eerie {@2} timbre	有清澈輕盈{1}詭異{2}的音色	有清澈轻盈{1}诡异{2}的音色	inner	FUN_140eb8af0 音色片語：clear、light、eerie 的全域譯名另有意思（透明／Clear 清除；光明；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear light {@1} fluid {@2} timbre	有清澈輕盈{1}流暢{2}的音色	有清澈轻盈{1}流畅{2}的音色	inner	FUN_140eb8af0 音色片語：clear、light、fluid 的全域譯名另有意思（透明／Clear 清除；光明；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear light eerie {@1} {@2} timbre	有清澈輕盈詭異{1}{2}的音色	有清澈轻盈诡异{1}{2}的音色	inner	FUN_140eb8af0 音色片語：clear、light、eerie 的全域譯名另有意思（透明／Clear 清除；光明；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear light fluid {@1} {@2} timbre	有清澈輕盈流暢{1}{2}的音色	有清澈轻盈流畅{1}{2}的音色	inner	FUN_140eb8af0 音色片語：clear、light、fluid 的全域譯名另有意思（透明／Clear 清除；光明；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear light focused {@1} {@2} timbre	有清澈輕盈集中{1}{2}的音色	有清澈轻盈集中{1}{2}的音色	inner	FUN_140eb8af0 音色片語：clear、light、focused 的全域譯名另有意思（透明／Clear 清除；光明；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear strong {@1} {@2} fluid timbre	有清澈強勁{1}{2}流暢的音色	有清澈强劲{1}{2}流畅的音色	inner	FUN_140eb8af0 音色片語：clear、strong、fluid 的全域譯名另有意思（透明／Clear 清除；Strong 強壯；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear strong {@1} {@2} focused timbre	有清澈強勁{1}{2}集中的音色	有清澈强劲{1}{2}集中的音色	inner	FUN_140eb8af0 音色片語：clear、strong、focused 的全域譯名另有意思（透明／Clear 清除；Strong 強壯；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear strong {@1} {@2} liquid timbre	有清澈強勁{1}{2}流動的音色	有清澈强劲{1}{2}流动的音色	inner	FUN_140eb8af0 音色片語：clear、strong、liquid 的全域譯名另有意思（透明／Clear 清除；Strong 強壯；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear strong {@1} fluid {@2} timbre	有清澈強勁{1}流暢{2}的音色	有清澈强劲{1}流畅{2}的音色	inner	FUN_140eb8af0 音色片語：clear、strong、fluid 的全域譯名另有意思（透明／Clear 清除；Strong 強壯；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear strong {@1} focused {@2} timbre	有清澈強勁{1}集中{2}的音色	有清澈强劲{1}集中{2}的音色	inner	FUN_140eb8af0 音色片語：clear、strong、focused 的全域譯名另有意思（透明／Clear 清除；Strong 強壯；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear strong fluid {@1} {@2} timbre	有清澈強勁流暢{1}{2}的音色	有清澈强劲流畅{1}{2}的音色	inner	FUN_140eb8af0 音色片語：clear、strong、fluid 的全域譯名另有意思（透明／Clear 清除；Strong 強壯；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear strong focused {@1} {@2} timbre	有清澈強勁集中{1}{2}的音色	有清澈强劲集中{1}{2}的音色	inner	FUN_140eb8af0 音色片語：clear、strong、focused 的全域譯名另有意思（透明／Clear 清除；Strong 強壯；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a fluid eerie {@1} {@2} liquid timbre	有流暢詭異{1}{2}流動的音色	有流畅诡异{1}{2}流动的音色	inner	FUN_140eb8af0 音色片語：fluid、eerie、liquid 的全域譯名另有意思（體液；詭異的；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a light {@1} fluid {@2} liquid timbre	有輕盈{1}流暢{2}流動的音色	有轻盈{1}流畅{2}流动的音色	inner	FUN_140eb8af0 音色片語：light、fluid、liquid 的全域譯名另有意思（光明；體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a light {@1} fluid eerie {@2} timbre	有輕盈{1}流暢詭異{2}的音色	有轻盈{1}流畅诡异{2}的音色	inner	FUN_140eb8af0 音色片語：light、fluid、eerie 的全域譯名另有意思（光明；體液；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a light {@1} fluid liquid {@2} timbre	有輕盈{1}流暢流動{2}的音色	有轻盈{1}流畅流动{2}的音色	inner	FUN_140eb8af0 音色片語：light、fluid、liquid 的全域譯名另有意思（光明；體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a light fluid {@1} {@2} liquid timbre	有輕盈流暢{1}{2}流動的音色	有轻盈流畅{1}{2}流动的音色	inner	FUN_140eb8af0 音色片語：light、fluid、liquid 的全域譯名另有意思（光明；體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a light fluid {@1} liquid {@2} timbre	有輕盈流暢{1}流動{2}的音色	有轻盈流畅{1}流动{2}的音色	inner	FUN_140eb8af0 音色片語：light、fluid、liquid 的全域譯名另有意思（光明；體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a light fluid eerie {@1} {@2} timbre	有輕盈流暢詭異{1}{2}的音色	有轻盈流畅诡异{1}{2}的音色	inner	FUN_140eb8af0 音色片語：light、fluid、eerie 的全域譯名另有意思（光明；體液；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a strong {@1} {@2} fluid liquid timbre	有強勁{1}{2}流暢流動的音色	有强劲{1}{2}流畅流动的音色	inner	FUN_140eb8af0 音色片語：strong、fluid、liquid 的全域譯名另有意思（Strong 強壯；體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a strong {@1} fluid {@2} liquid timbre	有強勁{1}流暢{2}流動的音色	有强劲{1}流畅{2}流动的音色	inner	FUN_140eb8af0 音色片語：strong、fluid、liquid 的全域譯名另有意思（Strong 強壯；體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a strong fluid {@1} {@2} liquid timbre	有強勁流暢{1}{2}流動的音色	有强劲流畅{1}{2}流动的音色	inner	FUN_140eb8af0 音色片語：strong、fluid、liquid 的全域譯名另有意思（Strong 強壯；體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} eerie liquid timbre	有{1}詭異流動的音色	有{1}诡异流动的音色	inner	FUN_140eb8af0 音色片語：eerie、liquid 的全域譯名另有意思（詭異的；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} fluid eerie timbre	有{1}流暢詭異的音色	有{1}流畅诡异的音色	inner	FUN_140eb8af0 音色片語：fluid、eerie 的全域譯名另有意思（體液；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} fluid liquid timbre	有{1}流暢流動的音色	有{1}流畅流动的音色	inner	FUN_140eb8af0 音色片語：fluid、liquid 的全域譯名另有意思（體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} light eerie timbre	有{1}輕盈詭異的音色	有{1}轻盈诡异的音色	inner	FUN_140eb8af0 音色片語：light、eerie 的全域譯名另有意思（光明；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} light fluid timbre	有{1}輕盈流暢的音色	有{1}轻盈流畅的音色	inner	FUN_140eb8af0 音色片語：light、fluid 的全域譯名另有意思（光明；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} light focused timbre	有{1}輕盈集中的音色	有{1}轻盈集中的音色	inner	FUN_140eb8af0 音色片語：light、focused 的全域譯名另有意思（光明；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} light liquid timbre	有{1}輕盈流動的音色	有{1}轻盈流动的音色	inner	FUN_140eb8af0 音色片語：light、liquid 的全域譯名另有意思（光明；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} strong fluid timbre	有{1}強勁流暢的音色	有{1}强劲流畅的音色	inner	FUN_140eb8af0 音色片語：strong、fluid 的全域譯名另有意思（Strong 強壯；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} strong focused timbre	有{1}強勁集中的音色	有{1}强劲集中的音色	inner	FUN_140eb8af0 音色片語：strong、focused 的全域譯名另有意思（Strong 強壯；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} strong liquid timbre	有{1}強勁流動的音色	有{1}强劲流动的音色	inner	FUN_140eb8af0 音色片語：strong、liquid 的全域譯名另有意思（Strong 強壯；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} eerie timbre	有清澈{1}詭異的音色	有清澈{1}诡异的音色	inner	FUN_140eb8af0 音色片語：clear、eerie 的全域譯名另有意思（透明／Clear 清除；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} fluid timbre	有清澈{1}流暢的音色	有清澈{1}流畅的音色	inner	FUN_140eb8af0 音色片語：clear、fluid 的全域譯名另有意思（透明／Clear 清除；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} focused timbre	有清澈{1}集中的音色	有清澈{1}集中的音色	inner	FUN_140eb8af0 音色片語：clear、focused 的全域譯名另有意思（透明／Clear 清除；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} light timbre	有清澈{1}輕盈的音色	有清澈{1}轻盈的音色	inner	FUN_140eb8af0 音色片語：clear、light 的全域譯名另有意思（透明／Clear 清除；光明），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} liquid timbre	有清澈{1}流動的音色	有清澈{1}流动的音色	inner	FUN_140eb8af0 音色片語：clear、liquid 的全域譯名另有意思（透明／Clear 清除；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} strong timbre	有清澈{1}強勁的音色	有清澈{1}强劲的音色	inner	FUN_140eb8af0 音色片語：clear、strong 的全域譯名另有意思（透明／Clear 清除；Strong 強壯），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear eerie {@1} timbre	有清澈詭異{1}的音色	有清澈诡异{1}的音色	inner	FUN_140eb8af0 音色片語：clear、eerie 的全域譯名另有意思（透明／Clear 清除；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear fluid {@1} timbre	有清澈流暢{1}的音色	有清澈流畅{1}的音色	inner	FUN_140eb8af0 音色片語：clear、fluid 的全域譯名另有意思（透明／Clear 清除；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear focused {@1} timbre	有清澈集中{1}的音色	有清澈集中{1}的音色	inner	FUN_140eb8af0 音色片語：clear、focused 的全域譯名另有意思（透明／Clear 清除；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear light {@1} timbre	有清澈輕盈{1}的音色	有清澈轻盈{1}的音色	inner	FUN_140eb8af0 音色片語：clear、light 的全域譯名另有意思（透明／Clear 清除；光明），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear liquid {@1} timbre	有清澈流動{1}的音色	有清澈流动{1}的音色	inner	FUN_140eb8af0 音色片語：clear、liquid 的全域譯名另有意思（透明／Clear 清除；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear strong {@1} timbre	有清澈強勁{1}的音色	有清澈强劲{1}的音色	inner	FUN_140eb8af0 音色片語：clear、strong 的全域譯名另有意思（透明／Clear 清除；Strong 強壯），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a eerie {@1} liquid timbre	有詭異{1}流動的音色	有诡异{1}流动的音色	inner	FUN_140eb8af0 音色片語：eerie、liquid 的全域譯名另有意思（詭異的；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a fluid {@1} liquid timbre	有流暢{1}流動的音色	有流畅{1}流动的音色	inner	FUN_140eb8af0 音色片語：fluid、liquid 的全域譯名另有意思（體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a fluid eerie {@1} timbre	有流暢詭異{1}的音色	有流畅诡异{1}的音色	inner	FUN_140eb8af0 音色片語：fluid、eerie 的全域譯名另有意思（體液；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a fluid liquid {@1} timbre	有流暢流動{1}的音色	有流畅流动{1}的音色	inner	FUN_140eb8af0 音色片語：fluid、liquid 的全域譯名另有意思（體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a light {@1} eerie timbre	有輕盈{1}詭異的音色	有轻盈{1}诡异的音色	inner	FUN_140eb8af0 音色片語：light、eerie 的全域譯名另有意思（光明；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a light {@1} fluid timbre	有輕盈{1}流暢的音色	有轻盈{1}流畅的音色	inner	FUN_140eb8af0 音色片語：light、fluid 的全域譯名另有意思（光明；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a light {@1} liquid timbre	有輕盈{1}流動的音色	有轻盈{1}流动的音色	inner	FUN_140eb8af0 音色片語：light、liquid 的全域譯名另有意思（光明；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a light eerie {@1} timbre	有輕盈詭異{1}的音色	有轻盈诡异{1}的音色	inner	FUN_140eb8af0 音色片語：light、eerie 的全域譯名另有意思（光明；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a light fluid {@1} timbre	有輕盈流暢{1}的音色	有轻盈流畅{1}的音色	inner	FUN_140eb8af0 音色片語：light、fluid 的全域譯名另有意思（光明；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a light focused {@1} timbre	有輕盈集中{1}的音色	有轻盈集中{1}的音色	inner	FUN_140eb8af0 音色片語：light、focused 的全域譯名另有意思（光明；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a light liquid {@1} timbre	有輕盈流動{1}的音色	有轻盈流动{1}的音色	inner	FUN_140eb8af0 音色片語：light、liquid 的全域譯名另有意思（光明；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a strong {@1} fluid timbre	有強勁{1}流暢的音色	有强劲{1}流畅的音色	inner	FUN_140eb8af0 音色片語：strong、fluid 的全域譯名另有意思（Strong 強壯；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a strong {@1} focused timbre	有強勁{1}集中的音色	有强劲{1}集中的音色	inner	FUN_140eb8af0 音色片語：strong、focused 的全域譯名另有意思（Strong 強壯；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a strong {@1} liquid timbre	有強勁{1}流動的音色	有强劲{1}流动的音色	inner	FUN_140eb8af0 音色片語：strong、liquid 的全域譯名另有意思（Strong 強壯；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a strong fluid {@1} timbre	有強勁流暢{1}的音色	有强劲流畅{1}的音色	inner	FUN_140eb8af0 音色片語：strong、fluid 的全域譯名另有意思（Strong 強壯；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a strong focused {@1} timbre	有強勁集中{1}的音色	有强劲集中{1}的音色	inner	FUN_140eb8af0 音色片語：strong、focused 的全域譯名另有意思（Strong 強壯；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} eerie liquid timbre	有{1}{2}詭異流動的音色	有{1}{2}诡异流动的音色	inner	FUN_140eb8af0 音色片語：eerie、liquid 的全域譯名另有意思（詭異的；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} fluid eerie timbre	有{1}{2}流暢詭異的音色	有{1}{2}流畅诡异的音色	inner	FUN_140eb8af0 音色片語：fluid、eerie 的全域譯名另有意思（體液；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} fluid liquid timbre	有{1}{2}流暢流動的音色	有{1}{2}流畅流动的音色	inner	FUN_140eb8af0 音色片語：fluid、liquid 的全域譯名另有意思（體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} light eerie timbre	有{1}{2}輕盈詭異的音色	有{1}{2}轻盈诡异的音色	inner	FUN_140eb8af0 音色片語：light、eerie 的全域譯名另有意思（光明；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} light fluid timbre	有{1}{2}輕盈流暢的音色	有{1}{2}轻盈流畅的音色	inner	FUN_140eb8af0 音色片語：light、fluid 的全域譯名另有意思（光明；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} light focused timbre	有{1}{2}輕盈集中的音色	有{1}{2}轻盈集中的音色	inner	FUN_140eb8af0 音色片語：light、focused 的全域譯名另有意思（光明；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} light liquid timbre	有{1}{2}輕盈流動的音色	有{1}{2}轻盈流动的音色	inner	FUN_140eb8af0 音色片語：light、liquid 的全域譯名另有意思（光明；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} strong fluid timbre	有{1}{2}強勁流暢的音色	有{1}{2}强劲流畅的音色	inner	FUN_140eb8af0 音色片語：strong、fluid 的全域譯名另有意思（Strong 強壯；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} strong focused timbre	有{1}{2}強勁集中的音色	有{1}{2}强劲集中的音色	inner	FUN_140eb8af0 音色片語：strong、focused 的全域譯名另有意思（Strong 強壯；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} strong liquid timbre	有{1}{2}強勁流動的音色	有{1}{2}强劲流动的音色	inner	FUN_140eb8af0 音色片語：strong、liquid 的全域譯名另有意思（Strong 強壯；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} eerie {@2} liquid timbre	有{1}詭異{2}流動的音色	有{1}诡异{2}流动的音色	inner	FUN_140eb8af0 音色片語：eerie、liquid 的全域譯名另有意思（詭異的；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} fluid {@2} liquid timbre	有{1}流暢{2}流動的音色	有{1}流畅{2}流动的音色	inner	FUN_140eb8af0 音色片語：fluid、liquid 的全域譯名另有意思（體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} fluid eerie {@2} timbre	有{1}流暢詭異{2}的音色	有{1}流畅诡异{2}的音色	inner	FUN_140eb8af0 音色片語：fluid、eerie 的全域譯名另有意思（體液；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} fluid liquid {@2} timbre	有{1}流暢流動{2}的音色	有{1}流畅流动{2}的音色	inner	FUN_140eb8af0 音色片語：fluid、liquid 的全域譯名另有意思（體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} light {@2} eerie timbre	有{1}輕盈{2}詭異的音色	有{1}轻盈{2}诡异的音色	inner	FUN_140eb8af0 音色片語：light、eerie 的全域譯名另有意思（光明；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} light {@2} fluid timbre	有{1}輕盈{2}流暢的音色	有{1}轻盈{2}流畅的音色	inner	FUN_140eb8af0 音色片語：light、fluid 的全域譯名另有意思（光明；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} light {@2} liquid timbre	有{1}輕盈{2}流動的音色	有{1}轻盈{2}流动的音色	inner	FUN_140eb8af0 音色片語：light、liquid 的全域譯名另有意思（光明；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} light eerie {@2} timbre	有{1}輕盈詭異{2}的音色	有{1}轻盈诡异{2}的音色	inner	FUN_140eb8af0 音色片語：light、eerie 的全域譯名另有意思（光明；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} light fluid {@2} timbre	有{1}輕盈流暢{2}的音色	有{1}轻盈流畅{2}的音色	inner	FUN_140eb8af0 音色片語：light、fluid 的全域譯名另有意思（光明；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} light focused {@2} timbre	有{1}輕盈集中{2}的音色	有{1}轻盈集中{2}的音色	inner	FUN_140eb8af0 音色片語：light、focused 的全域譯名另有意思（光明；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} light liquid {@2} timbre	有{1}輕盈流動{2}的音色	有{1}轻盈流动{2}的音色	inner	FUN_140eb8af0 音色片語：light、liquid 的全域譯名另有意思（光明；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} strong {@2} fluid timbre	有{1}強勁{2}流暢的音色	有{1}强劲{2}流畅的音色	inner	FUN_140eb8af0 音色片語：strong、fluid 的全域譯名另有意思（Strong 強壯；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} strong {@2} focused timbre	有{1}強勁{2}集中的音色	有{1}强劲{2}集中的音色	inner	FUN_140eb8af0 音色片語：strong、focused 的全域譯名另有意思（Strong 強壯；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} strong {@2} liquid timbre	有{1}強勁{2}流動的音色	有{1}强劲{2}流动的音色	inner	FUN_140eb8af0 音色片語：strong、liquid 的全域譯名另有意思（Strong 強壯；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} strong fluid {@2} timbre	有{1}強勁流暢{2}的音色	有{1}强劲流畅{2}的音色	inner	FUN_140eb8af0 音色片語：strong、fluid 的全域譯名另有意思（Strong 強壯；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} strong focused {@2} timbre	有{1}強勁集中{2}的音色	有{1}强劲集中{2}的音色	inner	FUN_140eb8af0 音色片語：strong、focused 的全域譯名另有意思（Strong 強壯；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} {@2} eerie timbre	有清澈{1}{2}詭異的音色	有清澈{1}{2}诡异的音色	inner	FUN_140eb8af0 音色片語：clear、eerie 的全域譯名另有意思（透明／Clear 清除；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} {@2} fluid timbre	有清澈{1}{2}流暢的音色	有清澈{1}{2}流畅的音色	inner	FUN_140eb8af0 音色片語：clear、fluid 的全域譯名另有意思（透明／Clear 清除；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} {@2} focused timbre	有清澈{1}{2}集中的音色	有清澈{1}{2}集中的音色	inner	FUN_140eb8af0 音色片語：clear、focused 的全域譯名另有意思（透明／Clear 清除；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} {@2} light timbre	有清澈{1}{2}輕盈的音色	有清澈{1}{2}轻盈的音色	inner	FUN_140eb8af0 音色片語：clear、light 的全域譯名另有意思（透明／Clear 清除；光明），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} {@2} liquid timbre	有清澈{1}{2}流動的音色	有清澈{1}{2}流动的音色	inner	FUN_140eb8af0 音色片語：clear、liquid 的全域譯名另有意思（透明／Clear 清除；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} {@2} strong timbre	有清澈{1}{2}強勁的音色	有清澈{1}{2}强劲的音色	inner	FUN_140eb8af0 音色片語：clear、strong 的全域譯名另有意思（透明／Clear 清除；Strong 強壯），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} eerie {@2} timbre	有清澈{1}詭異{2}的音色	有清澈{1}诡异{2}的音色	inner	FUN_140eb8af0 音色片語：clear、eerie 的全域譯名另有意思（透明／Clear 清除；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} fluid {@2} timbre	有清澈{1}流暢{2}的音色	有清澈{1}流畅{2}的音色	inner	FUN_140eb8af0 音色片語：clear、fluid 的全域譯名另有意思（透明／Clear 清除；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} focused {@2} timbre	有清澈{1}集中{2}的音色	有清澈{1}集中{2}的音色	inner	FUN_140eb8af0 音色片語：clear、focused 的全域譯名另有意思（透明／Clear 清除；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} light {@2} timbre	有清澈{1}輕盈{2}的音色	有清澈{1}轻盈{2}的音色	inner	FUN_140eb8af0 音色片語：clear、light 的全域譯名另有意思（透明／Clear 清除；光明），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} liquid {@2} timbre	有清澈{1}流動{2}的音色	有清澈{1}流动{2}的音色	inner	FUN_140eb8af0 音色片語：clear、liquid 的全域譯名另有意思（透明／Clear 清除；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} strong {@2} timbre	有清澈{1}強勁{2}的音色	有清澈{1}强劲{2}的音色	inner	FUN_140eb8af0 音色片語：clear、strong 的全域譯名另有意思（透明／Clear 清除；Strong 強壯），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear eerie {@1} {@2} timbre	有清澈詭異{1}{2}的音色	有清澈诡异{1}{2}的音色	inner	FUN_140eb8af0 音色片語：clear、eerie 的全域譯名另有意思（透明／Clear 清除；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear fluid {@1} {@2} timbre	有清澈流暢{1}{2}的音色	有清澈流畅{1}{2}的音色	inner	FUN_140eb8af0 音色片語：clear、fluid 的全域譯名另有意思（透明／Clear 清除；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear focused {@1} {@2} timbre	有清澈集中{1}{2}的音色	有清澈集中{1}{2}的音色	inner	FUN_140eb8af0 音色片語：clear、focused 的全域譯名另有意思（透明／Clear 清除；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear light {@1} {@2} timbre	有清澈輕盈{1}{2}的音色	有清澈轻盈{1}{2}的音色	inner	FUN_140eb8af0 音色片語：clear、light 的全域譯名另有意思（透明／Clear 清除；光明），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear strong {@1} {@2} timbre	有清澈強勁{1}{2}的音色	有清澈强劲{1}{2}的音色	inner	FUN_140eb8af0 音色片語：clear、strong 的全域譯名另有意思（透明／Clear 清除；Strong 強壯），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a eerie {@1} {@2} liquid timbre	有詭異{1}{2}流動的音色	有诡异{1}{2}流动的音色	inner	FUN_140eb8af0 音色片語：eerie、liquid 的全域譯名另有意思（詭異的；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a fluid {@1} {@2} liquid timbre	有流暢{1}{2}流動的音色	有流畅{1}{2}流动的音色	inner	FUN_140eb8af0 音色片語：fluid、liquid 的全域譯名另有意思（體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a fluid {@1} liquid {@2} timbre	有流暢{1}流動{2}的音色	有流畅{1}流动{2}的音色	inner	FUN_140eb8af0 音色片語：fluid、liquid 的全域譯名另有意思（體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a fluid eerie {@1} {@2} timbre	有流暢詭異{1}{2}的音色	有流畅诡异{1}{2}的音色	inner	FUN_140eb8af0 音色片語：fluid、eerie 的全域譯名另有意思（體液；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a light {@1} {@2} liquid timbre	有輕盈{1}{2}流動的音色	有轻盈{1}{2}流动的音色	inner	FUN_140eb8af0 音色片語：light、liquid 的全域譯名另有意思（光明；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a light {@1} eerie {@2} timbre	有輕盈{1}詭異{2}的音色	有轻盈{1}诡异{2}的音色	inner	FUN_140eb8af0 音色片語：light、eerie 的全域譯名另有意思（光明；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a light {@1} fluid {@2} timbre	有輕盈{1}流暢{2}的音色	有轻盈{1}流畅{2}的音色	inner	FUN_140eb8af0 音色片語：light、fluid 的全域譯名另有意思（光明；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a light {@1} liquid {@2} timbre	有輕盈{1}流動{2}的音色	有轻盈{1}流动{2}的音色	inner	FUN_140eb8af0 音色片語：light、liquid 的全域譯名另有意思（光明；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a light eerie {@1} {@2} timbre	有輕盈詭異{1}{2}的音色	有轻盈诡异{1}{2}的音色	inner	FUN_140eb8af0 音色片語：light、eerie 的全域譯名另有意思（光明；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a light fluid {@1} {@2} timbre	有輕盈流暢{1}{2}的音色	有轻盈流畅{1}{2}的音色	inner	FUN_140eb8af0 音色片語：light、fluid 的全域譯名另有意思（光明；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a light focused {@1} {@2} timbre	有輕盈集中{1}{2}的音色	有轻盈集中{1}{2}的音色	inner	FUN_140eb8af0 音色片語：light、focused 的全域譯名另有意思（光明；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a strong {@1} {@2} fluid timbre	有強勁{1}{2}流暢的音色	有强劲{1}{2}流畅的音色	inner	FUN_140eb8af0 音色片語：strong、fluid 的全域譯名另有意思（Strong 強壯；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a strong {@1} {@2} focused timbre	有強勁{1}{2}集中的音色	有强劲{1}{2}集中的音色	inner	FUN_140eb8af0 音色片語：strong、focused 的全域譯名另有意思（Strong 強壯；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a strong {@1} {@2} liquid timbre	有強勁{1}{2}流動的音色	有强劲{1}{2}流动的音色	inner	FUN_140eb8af0 音色片語：strong、liquid 的全域譯名另有意思（Strong 強壯；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a strong {@1} fluid {@2} timbre	有強勁{1}流暢{2}的音色	有强劲{1}流畅{2}的音色	inner	FUN_140eb8af0 音色片語：strong、fluid 的全域譯名另有意思（Strong 強壯；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a strong {@1} focused {@2} timbre	有強勁{1}集中{2}的音色	有强劲{1}集中{2}的音色	inner	FUN_140eb8af0 音色片語：strong、focused 的全域譯名另有意思（Strong 強壯；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a strong fluid {@1} {@2} timbre	有強勁流暢{1}{2}的音色	有强劲流畅{1}{2}的音色	inner	FUN_140eb8af0 音色片語：strong、fluid 的全域譯名另有意思（Strong 強壯；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a strong focused {@1} {@2} timbre	有強勁集中{1}{2}的音色	有强劲集中{1}{2}的音色	inner	FUN_140eb8af0 音色片語：strong、focused 的全域譯名另有意思（Strong 強壯；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} {@3} eerie liquid timbre	有{1}{2}{3}詭異流動的音色	有{1}{2}{3}诡异流动的音色	inner	FUN_140eb8af0 音色片語：eerie、liquid 的全域譯名另有意思（詭異的；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} {@3} fluid eerie timbre	有{1}{2}{3}流暢詭異的音色	有{1}{2}{3}流畅诡异的音色	inner	FUN_140eb8af0 音色片語：fluid、eerie 的全域譯名另有意思（體液；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} {@3} fluid liquid timbre	有{1}{2}{3}流暢流動的音色	有{1}{2}{3}流畅流动的音色	inner	FUN_140eb8af0 音色片語：fluid、liquid 的全域譯名另有意思（體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} {@3} light eerie timbre	有{1}{2}{3}輕盈詭異的音色	有{1}{2}{3}轻盈诡异的音色	inner	FUN_140eb8af0 音色片語：light、eerie 的全域譯名另有意思（光明；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} {@3} light fluid timbre	有{1}{2}{3}輕盈流暢的音色	有{1}{2}{3}轻盈流畅的音色	inner	FUN_140eb8af0 音色片語：light、fluid 的全域譯名另有意思（光明；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} {@3} light focused timbre	有{1}{2}{3}輕盈集中的音色	有{1}{2}{3}轻盈集中的音色	inner	FUN_140eb8af0 音色片語：light、focused 的全域譯名另有意思（光明；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} {@3} light liquid timbre	有{1}{2}{3}輕盈流動的音色	有{1}{2}{3}轻盈流动的音色	inner	FUN_140eb8af0 音色片語：light、liquid 的全域譯名另有意思（光明；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} {@3} strong fluid timbre	有{1}{2}{3}強勁流暢的音色	有{1}{2}{3}强劲流畅的音色	inner	FUN_140eb8af0 音色片語：strong、fluid 的全域譯名另有意思（Strong 強壯；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} {@3} strong focused timbre	有{1}{2}{3}強勁集中的音色	有{1}{2}{3}强劲集中的音色	inner	FUN_140eb8af0 音色片語：strong、focused 的全域譯名另有意思（Strong 強壯；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} {@3} strong liquid timbre	有{1}{2}{3}強勁流動的音色	有{1}{2}{3}强劲流动的音色	inner	FUN_140eb8af0 音色片語：strong、liquid 的全域譯名另有意思（Strong 強壯；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} eerie {@3} liquid timbre	有{1}{2}詭異{3}流動的音色	有{1}{2}诡异{3}流动的音色	inner	FUN_140eb8af0 音色片語：eerie、liquid 的全域譯名另有意思（詭異的；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} fluid {@3} liquid timbre	有{1}{2}流暢{3}流動的音色	有{1}{2}流畅{3}流动的音色	inner	FUN_140eb8af0 音色片語：fluid、liquid 的全域譯名另有意思（體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} fluid eerie {@3} timbre	有{1}{2}流暢詭異{3}的音色	有{1}{2}流畅诡异{3}的音色	inner	FUN_140eb8af0 音色片語：fluid、eerie 的全域譯名另有意思（體液；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} fluid liquid {@3} timbre	有{1}{2}流暢流動{3}的音色	有{1}{2}流畅流动{3}的音色	inner	FUN_140eb8af0 音色片語：fluid、liquid 的全域譯名另有意思（體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} light {@3} eerie timbre	有{1}{2}輕盈{3}詭異的音色	有{1}{2}轻盈{3}诡异的音色	inner	FUN_140eb8af0 音色片語：light、eerie 的全域譯名另有意思（光明；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} light {@3} fluid timbre	有{1}{2}輕盈{3}流暢的音色	有{1}{2}轻盈{3}流畅的音色	inner	FUN_140eb8af0 音色片語：light、fluid 的全域譯名另有意思（光明；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} light {@3} liquid timbre	有{1}{2}輕盈{3}流動的音色	有{1}{2}轻盈{3}流动的音色	inner	FUN_140eb8af0 音色片語：light、liquid 的全域譯名另有意思（光明；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} light eerie {@3} timbre	有{1}{2}輕盈詭異{3}的音色	有{1}{2}轻盈诡异{3}的音色	inner	FUN_140eb8af0 音色片語：light、eerie 的全域譯名另有意思（光明；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} light fluid {@3} timbre	有{1}{2}輕盈流暢{3}的音色	有{1}{2}轻盈流畅{3}的音色	inner	FUN_140eb8af0 音色片語：light、fluid 的全域譯名另有意思（光明；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} light focused {@3} timbre	有{1}{2}輕盈集中{3}的音色	有{1}{2}轻盈集中{3}的音色	inner	FUN_140eb8af0 音色片語：light、focused 的全域譯名另有意思（光明；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} light liquid {@3} timbre	有{1}{2}輕盈流動{3}的音色	有{1}{2}轻盈流动{3}的音色	inner	FUN_140eb8af0 音色片語：light、liquid 的全域譯名另有意思（光明；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} strong {@3} fluid timbre	有{1}{2}強勁{3}流暢的音色	有{1}{2}强劲{3}流畅的音色	inner	FUN_140eb8af0 音色片語：strong、fluid 的全域譯名另有意思（Strong 強壯；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} strong {@3} focused timbre	有{1}{2}強勁{3}集中的音色	有{1}{2}强劲{3}集中的音色	inner	FUN_140eb8af0 音色片語：strong、focused 的全域譯名另有意思（Strong 強壯；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} strong {@3} liquid timbre	有{1}{2}強勁{3}流動的音色	有{1}{2}强劲{3}流动的音色	inner	FUN_140eb8af0 音色片語：strong、liquid 的全域譯名另有意思（Strong 強壯；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} strong fluid {@3} timbre	有{1}{2}強勁流暢{3}的音色	有{1}{2}强劲流畅{3}的音色	inner	FUN_140eb8af0 音色片語：strong、fluid 的全域譯名另有意思（Strong 強壯；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} strong focused {@3} timbre	有{1}{2}強勁集中{3}的音色	有{1}{2}强劲集中{3}的音色	inner	FUN_140eb8af0 音色片語：strong、focused 的全域譯名另有意思（Strong 強壯；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} eerie {@2} {@3} liquid timbre	有{1}詭異{2}{3}流動的音色	有{1}诡异{2}{3}流动的音色	inner	FUN_140eb8af0 音色片語：eerie、liquid 的全域譯名另有意思（詭異的；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} fluid {@2} {@3} liquid timbre	有{1}流暢{2}{3}流動的音色	有{1}流畅{2}{3}流动的音色	inner	FUN_140eb8af0 音色片語：fluid、liquid 的全域譯名另有意思（體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} fluid {@2} liquid {@3} timbre	有{1}流暢{2}流動{3}的音色	有{1}流畅{2}流动{3}的音色	inner	FUN_140eb8af0 音色片語：fluid、liquid 的全域譯名另有意思（體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} fluid eerie {@2} {@3} timbre	有{1}流暢詭異{2}{3}的音色	有{1}流畅诡异{2}{3}的音色	inner	FUN_140eb8af0 音色片語：fluid、eerie 的全域譯名另有意思（體液；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} light {@2} {@3} liquid timbre	有{1}輕盈{2}{3}流動的音色	有{1}轻盈{2}{3}流动的音色	inner	FUN_140eb8af0 音色片語：light、liquid 的全域譯名另有意思（光明；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} light {@2} eerie {@3} timbre	有{1}輕盈{2}詭異{3}的音色	有{1}轻盈{2}诡异{3}的音色	inner	FUN_140eb8af0 音色片語：light、eerie 的全域譯名另有意思（光明；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} light {@2} fluid {@3} timbre	有{1}輕盈{2}流暢{3}的音色	有{1}轻盈{2}流畅{3}的音色	inner	FUN_140eb8af0 音色片語：light、fluid 的全域譯名另有意思（光明；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} light {@2} liquid {@3} timbre	有{1}輕盈{2}流動{3}的音色	有{1}轻盈{2}流动{3}的音色	inner	FUN_140eb8af0 音色片語：light、liquid 的全域譯名另有意思（光明；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} light eerie {@2} {@3} timbre	有{1}輕盈詭異{2}{3}的音色	有{1}轻盈诡异{2}{3}的音色	inner	FUN_140eb8af0 音色片語：light、eerie 的全域譯名另有意思（光明；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} light fluid {@2} {@3} timbre	有{1}輕盈流暢{2}{3}的音色	有{1}轻盈流畅{2}{3}的音色	inner	FUN_140eb8af0 音色片語：light、fluid 的全域譯名另有意思（光明；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} light focused {@2} {@3} timbre	有{1}輕盈集中{2}{3}的音色	有{1}轻盈集中{2}{3}的音色	inner	FUN_140eb8af0 音色片語：light、focused 的全域譯名另有意思（光明；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} strong {@2} {@3} fluid timbre	有{1}強勁{2}{3}流暢的音色	有{1}强劲{2}{3}流畅的音色	inner	FUN_140eb8af0 音色片語：strong、fluid 的全域譯名另有意思（Strong 強壯；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} strong {@2} {@3} focused timbre	有{1}強勁{2}{3}集中的音色	有{1}强劲{2}{3}集中的音色	inner	FUN_140eb8af0 音色片語：strong、focused 的全域譯名另有意思（Strong 強壯；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} strong {@2} {@3} liquid timbre	有{1}強勁{2}{3}流動的音色	有{1}强劲{2}{3}流动的音色	inner	FUN_140eb8af0 音色片語：strong、liquid 的全域譯名另有意思（Strong 強壯；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} strong {@2} fluid {@3} timbre	有{1}強勁{2}流暢{3}的音色	有{1}强劲{2}流畅{3}的音色	inner	FUN_140eb8af0 音色片語：strong、fluid 的全域譯名另有意思（Strong 強壯；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} strong {@2} focused {@3} timbre	有{1}強勁{2}集中{3}的音色	有{1}强劲{2}集中{3}的音色	inner	FUN_140eb8af0 音色片語：strong、focused 的全域譯名另有意思（Strong 強壯；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} strong fluid {@2} {@3} timbre	有{1}強勁流暢{2}{3}的音色	有{1}强劲流畅{2}{3}的音色	inner	FUN_140eb8af0 音色片語：strong、fluid 的全域譯名另有意思（Strong 強壯；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} strong focused {@2} {@3} timbre	有{1}強勁集中{2}{3}的音色	有{1}强劲集中{2}{3}的音色	inner	FUN_140eb8af0 音色片語：strong、focused 的全域譯名另有意思（Strong 強壯；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} {@2} {@3} eerie timbre	有清澈{1}{2}{3}詭異的音色	有清澈{1}{2}{3}诡异的音色	inner	FUN_140eb8af0 音色片語：clear、eerie 的全域譯名另有意思（透明／Clear 清除；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} {@2} {@3} fluid timbre	有清澈{1}{2}{3}流暢的音色	有清澈{1}{2}{3}流畅的音色	inner	FUN_140eb8af0 音色片語：clear、fluid 的全域譯名另有意思（透明／Clear 清除；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} {@2} {@3} focused timbre	有清澈{1}{2}{3}集中的音色	有清澈{1}{2}{3}集中的音色	inner	FUN_140eb8af0 音色片語：clear、focused 的全域譯名另有意思（透明／Clear 清除；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} {@2} {@3} light timbre	有清澈{1}{2}{3}輕盈的音色	有清澈{1}{2}{3}轻盈的音色	inner	FUN_140eb8af0 音色片語：clear、light 的全域譯名另有意思（透明／Clear 清除；光明），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} {@2} {@3} liquid timbre	有清澈{1}{2}{3}流動的音色	有清澈{1}{2}{3}流动的音色	inner	FUN_140eb8af0 音色片語：clear、liquid 的全域譯名另有意思（透明／Clear 清除；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} {@2} {@3} strong timbre	有清澈{1}{2}{3}強勁的音色	有清澈{1}{2}{3}强劲的音色	inner	FUN_140eb8af0 音色片語：clear、strong 的全域譯名另有意思（透明／Clear 清除；Strong 強壯），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} {@2} eerie {@3} timbre	有清澈{1}{2}詭異{3}的音色	有清澈{1}{2}诡异{3}的音色	inner	FUN_140eb8af0 音色片語：clear、eerie 的全域譯名另有意思（透明／Clear 清除；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} {@2} fluid {@3} timbre	有清澈{1}{2}流暢{3}的音色	有清澈{1}{2}流畅{3}的音色	inner	FUN_140eb8af0 音色片語：clear、fluid 的全域譯名另有意思（透明／Clear 清除；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} {@2} focused {@3} timbre	有清澈{1}{2}集中{3}的音色	有清澈{1}{2}集中{3}的音色	inner	FUN_140eb8af0 音色片語：clear、focused 的全域譯名另有意思（透明／Clear 清除；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} {@2} light {@3} timbre	有清澈{1}{2}輕盈{3}的音色	有清澈{1}{2}轻盈{3}的音色	inner	FUN_140eb8af0 音色片語：clear、light 的全域譯名另有意思（透明／Clear 清除；光明），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} {@2} liquid {@3} timbre	有清澈{1}{2}流動{3}的音色	有清澈{1}{2}流动{3}的音色	inner	FUN_140eb8af0 音色片語：clear、liquid 的全域譯名另有意思（透明／Clear 清除；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} {@2} strong {@3} timbre	有清澈{1}{2}強勁{3}的音色	有清澈{1}{2}强劲{3}的音色	inner	FUN_140eb8af0 音色片語：clear、strong 的全域譯名另有意思（透明／Clear 清除；Strong 強壯），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} eerie {@2} {@3} timbre	有清澈{1}詭異{2}{3}的音色	有清澈{1}诡异{2}{3}的音色	inner	FUN_140eb8af0 音色片語：clear、eerie 的全域譯名另有意思（透明／Clear 清除；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} fluid {@2} {@3} timbre	有清澈{1}流暢{2}{3}的音色	有清澈{1}流畅{2}{3}的音色	inner	FUN_140eb8af0 音色片語：clear、fluid 的全域譯名另有意思（透明／Clear 清除；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} focused {@2} {@3} timbre	有清澈{1}集中{2}{3}的音色	有清澈{1}集中{2}{3}的音色	inner	FUN_140eb8af0 音色片語：clear、focused 的全域譯名另有意思（透明／Clear 清除；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} light {@2} {@3} timbre	有清澈{1}輕盈{2}{3}的音色	有清澈{1}轻盈{2}{3}的音色	inner	FUN_140eb8af0 音色片語：clear、light 的全域譯名另有意思（透明／Clear 清除；光明），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} strong {@2} {@3} timbre	有清澈{1}強勁{2}{3}的音色	有清澈{1}强劲{2}{3}的音色	inner	FUN_140eb8af0 音色片語：clear、strong 的全域譯名另有意思（透明／Clear 清除；Strong 強壯），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear eerie {@1} {@2} {@3} timbre	有清澈詭異{1}{2}{3}的音色	有清澈诡异{1}{2}{3}的音色	inner	FUN_140eb8af0 音色片語：clear、eerie 的全域譯名另有意思（透明／Clear 清除；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear fluid {@1} {@2} {@3} timbre	有清澈流暢{1}{2}{3}的音色	有清澈流畅{1}{2}{3}的音色	inner	FUN_140eb8af0 音色片語：clear、fluid 的全域譯名另有意思（透明／Clear 清除；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear focused {@1} {@2} {@3} timbre	有清澈集中{1}{2}{3}的音色	有清澈集中{1}{2}{3}的音色	inner	FUN_140eb8af0 音色片語：clear、focused 的全域譯名另有意思（透明／Clear 清除；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear light {@1} {@2} {@3} timbre	有清澈輕盈{1}{2}{3}的音色	有清澈轻盈{1}{2}{3}的音色	inner	FUN_140eb8af0 音色片語：clear、light 的全域譯名另有意思（透明／Clear 清除；光明），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear strong {@1} {@2} {@3} timbre	有清澈強勁{1}{2}{3}的音色	有清澈强劲{1}{2}{3}的音色	inner	FUN_140eb8af0 音色片語：clear、strong 的全域譯名另有意思（透明／Clear 清除；Strong 強壯），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a fluid {@1} {@2} {@3} liquid timbre	有流暢{1}{2}{3}流動的音色	有流畅{1}{2}{3}流动的音色	inner	FUN_140eb8af0 音色片語：fluid、liquid 的全域譯名另有意思（體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a fluid {@1} {@2} liquid {@3} timbre	有流暢{1}{2}流動{3}的音色	有流畅{1}{2}流动{3}的音色	inner	FUN_140eb8af0 音色片語：fluid、liquid 的全域譯名另有意思（體液；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a light {@1} {@2} {@3} liquid timbre	有輕盈{1}{2}{3}流動的音色	有轻盈{1}{2}{3}流动的音色	inner	FUN_140eb8af0 音色片語：light、liquid 的全域譯名另有意思（光明；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a light {@1} {@2} liquid {@3} timbre	有輕盈{1}{2}流動{3}的音色	有轻盈{1}{2}流动{3}的音色	inner	FUN_140eb8af0 音色片語：light、liquid 的全域譯名另有意思（光明；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a light {@1} eerie {@2} {@3} timbre	有輕盈{1}詭異{2}{3}的音色	有轻盈{1}诡异{2}{3}的音色	inner	FUN_140eb8af0 音色片語：light、eerie 的全域譯名另有意思（光明；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a light {@1} fluid {@2} {@3} timbre	有輕盈{1}流暢{2}{3}的音色	有轻盈{1}流畅{2}{3}的音色	inner	FUN_140eb8af0 音色片語：light、fluid 的全域譯名另有意思（光明；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a light eerie {@1} {@2} {@3} timbre	有輕盈詭異{1}{2}{3}的音色	有轻盈诡异{1}{2}{3}的音色	inner	FUN_140eb8af0 音色片語：light、eerie 的全域譯名另有意思（光明；詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a light fluid {@1} {@2} {@3} timbre	有輕盈流暢{1}{2}{3}的音色	有轻盈流畅{1}{2}{3}的音色	inner	FUN_140eb8af0 音色片語：light、fluid 的全域譯名另有意思（光明；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a light focused {@1} {@2} {@3} timbre	有輕盈集中{1}{2}{3}的音色	有轻盈集中{1}{2}{3}的音色	inner	FUN_140eb8af0 音色片語：light、focused 的全域譯名另有意思（光明；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a strong {@1} {@2} {@3} fluid timbre	有強勁{1}{2}{3}流暢的音色	有强劲{1}{2}{3}流畅的音色	inner	FUN_140eb8af0 音色片語：strong、fluid 的全域譯名另有意思（Strong 強壯；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a strong {@1} {@2} {@3} liquid timbre	有強勁{1}{2}{3}流動的音色	有强劲{1}{2}{3}流动的音色	inner	FUN_140eb8af0 音色片語：strong、liquid 的全域譯名另有意思（Strong 強壯；液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a strong {@1} {@2} fluid {@3} timbre	有強勁{1}{2}流暢{3}的音色	有强劲{1}{2}流畅{3}的音色	inner	FUN_140eb8af0 音色片語：strong、fluid 的全域譯名另有意思（Strong 強壯；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a strong {@1} {@2} focused {@3} timbre	有強勁{1}{2}集中{3}的音色	有强劲{1}{2}集中{3}的音色	inner	FUN_140eb8af0 音色片語：strong、focused 的全域譯名另有意思（Strong 強壯；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a strong {@1} fluid {@2} {@3} timbre	有強勁{1}流暢{2}{3}的音色	有强劲{1}流畅{2}{3}的音色	inner	FUN_140eb8af0 音色片語：strong、fluid 的全域譯名另有意思（Strong 強壯；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a strong {@1} focused {@2} {@3} timbre	有強勁{1}集中{2}{3}的音色	有强劲{1}集中{2}{3}的音色	inner	FUN_140eb8af0 音色片語：strong、focused 的全域譯名另有意思（Strong 強壯；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a strong fluid {@1} {@2} {@3} timbre	有強勁流暢{1}{2}{3}的音色	有强劲流畅{1}{2}{3}的音色	inner	FUN_140eb8af0 音色片語：strong、fluid 的全域譯名另有意思（Strong 強壯；體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a strong focused {@1} {@2} {@3} timbre	有強勁集中{1}{2}{3}的音色	有强劲集中{1}{2}{3}的音色	inner	FUN_140eb8af0 音色片語：strong、focused 的全域譯名另有意思（Strong 強壯；Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} eerie timbre	有{1}詭異的音色	有{1}诡异的音色	inner	FUN_140eb8af0 音色片語：eerie 的全域譯名另有意思（詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} fluid timbre	有{1}流暢的音色	有{1}流畅的音色	inner	FUN_140eb8af0 音色片語：fluid 的全域譯名另有意思（體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} focused timbre	有{1}集中的音色	有{1}集中的音色	inner	FUN_140eb8af0 音色片語：focused 的全域譯名另有意思（Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} light timbre	有{1}輕盈的音色	有{1}轻盈的音色	inner	FUN_140eb8af0 音色片語：light 的全域譯名另有意思（光明），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} liquid timbre	有{1}流動的音色	有{1}流动的音色	inner	FUN_140eb8af0 音色片語：liquid 的全域譯名另有意思（液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} strong timbre	有{1}強勁的音色	有{1}强劲的音色	inner	FUN_140eb8af0 音色片語：strong 的全域譯名另有意思（Strong 強壯），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} timbre	有清澈{1}的音色	有清澈{1}的音色	inner	FUN_140eb8af0 音色片語：clear 的全域譯名另有意思（透明／Clear 清除），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a eerie {@1} timbre	有詭異{1}的音色	有诡异{1}的音色	inner	FUN_140eb8af0 音色片語：eerie 的全域譯名另有意思（詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a fluid {@1} timbre	有流暢{1}的音色	有流畅{1}的音色	inner	FUN_140eb8af0 音色片語：fluid 的全域譯名另有意思（體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a focused {@1} timbre	有集中{1}的音色	有集中{1}的音色	inner	FUN_140eb8af0 音色片語：focused 的全域譯名另有意思（Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a light {@1} timbre	有輕盈{1}的音色	有轻盈{1}的音色	inner	FUN_140eb8af0 音色片語：light 的全域譯名另有意思（光明），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a liquid {@1} timbre	有流動{1}的音色	有流动{1}的音色	inner	FUN_140eb8af0 音色片語：liquid 的全域譯名另有意思（液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a strong {@1} timbre	有強勁{1}的音色	有强劲{1}的音色	inner	FUN_140eb8af0 音色片語：strong 的全域譯名另有意思（Strong 強壯），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} eerie timbre	有{1}{2}詭異的音色	有{1}{2}诡异的音色	inner	FUN_140eb8af0 音色片語：eerie 的全域譯名另有意思（詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} fluid timbre	有{1}{2}流暢的音色	有{1}{2}流畅的音色	inner	FUN_140eb8af0 音色片語：fluid 的全域譯名另有意思（體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} focused timbre	有{1}{2}集中的音色	有{1}{2}集中的音色	inner	FUN_140eb8af0 音色片語：focused 的全域譯名另有意思（Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} light timbre	有{1}{2}輕盈的音色	有{1}{2}轻盈的音色	inner	FUN_140eb8af0 音色片語：light 的全域譯名另有意思（光明），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} liquid timbre	有{1}{2}流動的音色	有{1}{2}流动的音色	inner	FUN_140eb8af0 音色片語：liquid 的全域譯名另有意思（液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} strong timbre	有{1}{2}強勁的音色	有{1}{2}强劲的音色	inner	FUN_140eb8af0 音色片語：strong 的全域譯名另有意思（Strong 強壯），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} eerie {@2} timbre	有{1}詭異{2}的音色	有{1}诡异{2}的音色	inner	FUN_140eb8af0 音色片語：eerie 的全域譯名另有意思（詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} fluid {@2} timbre	有{1}流暢{2}的音色	有{1}流畅{2}的音色	inner	FUN_140eb8af0 音色片語：fluid 的全域譯名另有意思（體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} focused {@2} timbre	有{1}集中{2}的音色	有{1}集中{2}的音色	inner	FUN_140eb8af0 音色片語：focused 的全域譯名另有意思（Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} light {@2} timbre	有{1}輕盈{2}的音色	有{1}轻盈{2}的音色	inner	FUN_140eb8af0 音色片語：light 的全域譯名另有意思（光明），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} liquid {@2} timbre	有{1}流動{2}的音色	有{1}流动{2}的音色	inner	FUN_140eb8af0 音色片語：liquid 的全域譯名另有意思（液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} strong {@2} timbre	有{1}強勁{2}的音色	有{1}强劲{2}的音色	inner	FUN_140eb8af0 音色片語：strong 的全域譯名另有意思（Strong 強壯），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} {@2} timbre	有清澈{1}{2}的音色	有清澈{1}{2}的音色	inner	FUN_140eb8af0 音色片語：clear 的全域譯名另有意思（透明／Clear 清除），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a eerie {@1} {@2} timbre	有詭異{1}{2}的音色	有诡异{1}{2}的音色	inner	FUN_140eb8af0 音色片語：eerie 的全域譯名另有意思（詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a fluid {@1} {@2} timbre	有流暢{1}{2}的音色	有流畅{1}{2}的音色	inner	FUN_140eb8af0 音色片語：fluid 的全域譯名另有意思（體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a focused {@1} {@2} timbre	有集中{1}{2}的音色	有集中{1}{2}的音色	inner	FUN_140eb8af0 音色片語：focused 的全域譯名另有意思（Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a light {@1} {@2} timbre	有輕盈{1}{2}的音色	有轻盈{1}{2}的音色	inner	FUN_140eb8af0 音色片語：light 的全域譯名另有意思（光明），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a strong {@1} {@2} timbre	有強勁{1}{2}的音色	有强劲{1}{2}的音色	inner	FUN_140eb8af0 音色片語：strong 的全域譯名另有意思（Strong 強壯），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} {@3} eerie timbre	有{1}{2}{3}詭異的音色	有{1}{2}{3}诡异的音色	inner	FUN_140eb8af0 音色片語：eerie 的全域譯名另有意思（詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} {@3} fluid timbre	有{1}{2}{3}流暢的音色	有{1}{2}{3}流畅的音色	inner	FUN_140eb8af0 音色片語：fluid 的全域譯名另有意思（體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} {@3} focused timbre	有{1}{2}{3}集中的音色	有{1}{2}{3}集中的音色	inner	FUN_140eb8af0 音色片語：focused 的全域譯名另有意思（Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} {@3} light timbre	有{1}{2}{3}輕盈的音色	有{1}{2}{3}轻盈的音色	inner	FUN_140eb8af0 音色片語：light 的全域譯名另有意思（光明），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} {@3} liquid timbre	有{1}{2}{3}流動的音色	有{1}{2}{3}流动的音色	inner	FUN_140eb8af0 音色片語：liquid 的全域譯名另有意思（液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} {@3} strong timbre	有{1}{2}{3}強勁的音色	有{1}{2}{3}强劲的音色	inner	FUN_140eb8af0 音色片語：strong 的全域譯名另有意思（Strong 強壯），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} eerie {@3} timbre	有{1}{2}詭異{3}的音色	有{1}{2}诡异{3}的音色	inner	FUN_140eb8af0 音色片語：eerie 的全域譯名另有意思（詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} fluid {@3} timbre	有{1}{2}流暢{3}的音色	有{1}{2}流畅{3}的音色	inner	FUN_140eb8af0 音色片語：fluid 的全域譯名另有意思（體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} focused {@3} timbre	有{1}{2}集中{3}的音色	有{1}{2}集中{3}的音色	inner	FUN_140eb8af0 音色片語：focused 的全域譯名另有意思（Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} light {@3} timbre	有{1}{2}輕盈{3}的音色	有{1}{2}轻盈{3}的音色	inner	FUN_140eb8af0 音色片語：light 的全域譯名另有意思（光明），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} liquid {@3} timbre	有{1}{2}流動{3}的音色	有{1}{2}流动{3}的音色	inner	FUN_140eb8af0 音色片語：liquid 的全域譯名另有意思（液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} strong {@3} timbre	有{1}{2}強勁{3}的音色	有{1}{2}强劲{3}的音色	inner	FUN_140eb8af0 音色片語：strong 的全域譯名另有意思（Strong 強壯），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} eerie {@2} {@3} timbre	有{1}詭異{2}{3}的音色	有{1}诡异{2}{3}的音色	inner	FUN_140eb8af0 音色片語：eerie 的全域譯名另有意思（詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} fluid {@2} {@3} timbre	有{1}流暢{2}{3}的音色	有{1}流畅{2}{3}的音色	inner	FUN_140eb8af0 音色片語：fluid 的全域譯名另有意思（體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} focused {@2} {@3} timbre	有{1}集中{2}{3}的音色	有{1}集中{2}{3}的音色	inner	FUN_140eb8af0 音色片語：focused 的全域譯名另有意思（Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} light {@2} {@3} timbre	有{1}輕盈{2}{3}的音色	有{1}轻盈{2}{3}的音色	inner	FUN_140eb8af0 音色片語：light 的全域譯名另有意思（光明），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} strong {@2} {@3} timbre	有{1}強勁{2}{3}的音色	有{1}强劲{2}{3}的音色	inner	FUN_140eb8af0 音色片語：strong 的全域譯名另有意思（Strong 強壯），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} {@2} {@3} timbre	有清澈{1}{2}{3}的音色	有清澈{1}{2}{3}的音色	inner	FUN_140eb8af0 音色片語：clear 的全域譯名另有意思（透明／Clear 清除），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a eerie {@1} {@2} {@3} timbre	有詭異{1}{2}{3}的音色	有诡异{1}{2}{3}的音色	inner	FUN_140eb8af0 音色片語：eerie 的全域譯名另有意思（詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a fluid {@1} {@2} {@3} timbre	有流暢{1}{2}{3}的音色	有流畅{1}{2}{3}的音色	inner	FUN_140eb8af0 音色片語：fluid 的全域譯名另有意思（體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a focused {@1} {@2} {@3} timbre	有集中{1}{2}{3}的音色	有集中{1}{2}{3}的音色	inner	FUN_140eb8af0 音色片語：focused 的全域譯名另有意思（Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a light {@1} {@2} {@3} timbre	有輕盈{1}{2}{3}的音色	有轻盈{1}{2}{3}的音色	inner	FUN_140eb8af0 音色片語：light 的全域譯名另有意思（光明），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a strong {@1} {@2} {@3} timbre	有強勁{1}{2}{3}的音色	有强劲{1}{2}{3}的音色	inner	FUN_140eb8af0 音色片語：strong 的全域譯名另有意思（Strong 強壯），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} {@3} {@4} eerie timbre	有{1}{2}{3}{4}詭異的音色	有{1}{2}{3}{4}诡异的音色	inner	FUN_140eb8af0 音色片語：eerie 的全域譯名另有意思（詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} {@3} {@4} fluid timbre	有{1}{2}{3}{4}流暢的音色	有{1}{2}{3}{4}流畅的音色	inner	FUN_140eb8af0 音色片語：fluid 的全域譯名另有意思（體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} {@3} {@4} focused timbre	有{1}{2}{3}{4}集中的音色	有{1}{2}{3}{4}集中的音色	inner	FUN_140eb8af0 音色片語：focused 的全域譯名另有意思（Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} {@3} {@4} light timbre	有{1}{2}{3}{4}輕盈的音色	有{1}{2}{3}{4}轻盈的音色	inner	FUN_140eb8af0 音色片語：light 的全域譯名另有意思（光明），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} {@3} {@4} liquid timbre	有{1}{2}{3}{4}流動的音色	有{1}{2}{3}{4}流动的音色	inner	FUN_140eb8af0 音色片語：liquid 的全域譯名另有意思（液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} {@3} {@4} strong timbre	有{1}{2}{3}{4}強勁的音色	有{1}{2}{3}{4}强劲的音色	inner	FUN_140eb8af0 音色片語：strong 的全域譯名另有意思（Strong 強壯），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} {@3} eerie {@4} timbre	有{1}{2}{3}詭異{4}的音色	有{1}{2}{3}诡异{4}的音色	inner	FUN_140eb8af0 音色片語：eerie 的全域譯名另有意思（詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} {@3} fluid {@4} timbre	有{1}{2}{3}流暢{4}的音色	有{1}{2}{3}流畅{4}的音色	inner	FUN_140eb8af0 音色片語：fluid 的全域譯名另有意思（體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} {@3} focused {@4} timbre	有{1}{2}{3}集中{4}的音色	有{1}{2}{3}集中{4}的音色	inner	FUN_140eb8af0 音色片語：focused 的全域譯名另有意思（Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} {@3} light {@4} timbre	有{1}{2}{3}輕盈{4}的音色	有{1}{2}{3}轻盈{4}的音色	inner	FUN_140eb8af0 音色片語：light 的全域譯名另有意思（光明），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} {@3} liquid {@4} timbre	有{1}{2}{3}流動{4}的音色	有{1}{2}{3}流动{4}的音色	inner	FUN_140eb8af0 音色片語：liquid 的全域譯名另有意思（液體），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} {@3} strong {@4} timbre	有{1}{2}{3}強勁{4}的音色	有{1}{2}{3}强劲{4}的音色	inner	FUN_140eb8af0 音色片語：strong 的全域譯名另有意思（Strong 強壯），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} eerie {@3} {@4} timbre	有{1}{2}詭異{3}{4}的音色	有{1}{2}诡异{3}{4}的音色	inner	FUN_140eb8af0 音色片語：eerie 的全域譯名另有意思（詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} fluid {@3} {@4} timbre	有{1}{2}流暢{3}{4}的音色	有{1}{2}流畅{3}{4}的音色	inner	FUN_140eb8af0 音色片語：fluid 的全域譯名另有意思（體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} focused {@3} {@4} timbre	有{1}{2}集中{3}{4}的音色	有{1}{2}集中{3}{4}的音色	inner	FUN_140eb8af0 音色片語：focused 的全域譯名另有意思（Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} light {@3} {@4} timbre	有{1}{2}輕盈{3}{4}的音色	有{1}{2}轻盈{3}{4}的音色	inner	FUN_140eb8af0 音色片語：light 的全域譯名另有意思（光明），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} {@2} strong {@3} {@4} timbre	有{1}{2}強勁{3}{4}的音色	有{1}{2}强劲{3}{4}的音色	inner	FUN_140eb8af0 音色片語：strong 的全域譯名另有意思（Strong 強壯），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} eerie {@2} {@3} {@4} timbre	有{1}詭異{2}{3}{4}的音色	有{1}诡异{2}{3}{4}的音色	inner	FUN_140eb8af0 音色片語：eerie 的全域譯名另有意思（詭異的），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} fluid {@2} {@3} {@4} timbre	有{1}流暢{2}{3}{4}的音色	有{1}流畅{2}{3}{4}的音色	inner	FUN_140eb8af0 音色片語：fluid 的全域譯名另有意思（體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} focused {@2} {@3} {@4} timbre	有{1}集中{2}{3}{4}的音色	有{1}集中{2}{3}{4}的音色	inner	FUN_140eb8af0 音色片語：focused 的全域譯名另有意思（Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} light {@2} {@3} {@4} timbre	有{1}輕盈{2}{3}{4}的音色	有{1}轻盈{2}{3}{4}的音色	inner	FUN_140eb8af0 音色片語：light 的全域譯名另有意思（光明），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} strong {@2} {@3} {@4} timbre	有{1}強勁{2}{3}{4}的音色	有{1}强劲{2}{3}{4}的音色	inner	FUN_140eb8af0 音色片語：strong 的全域譯名另有意思（Strong 強壯），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a clear {@1} {@2} {@3} {@4} timbre	有清澈{1}{2}{3}{4}的音色	有清澈{1}{2}{3}{4}的音色	inner	FUN_140eb8af0 音色片語：clear 的全域譯名另有意思（透明／Clear 清除），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a fluid {@1} {@2} {@3} {@4} timbre	有流暢{1}{2}{3}{4}的音色	有流畅{1}{2}{3}{4}的音色	inner	FUN_140eb8af0 音色片語：fluid 的全域譯名另有意思（體液），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a focused {@1} {@2} {@3} {@4} timbre	有集中{1}{2}{3}{4}的音色	有集中{1}{2}{3}{4}的音色	inner	FUN_140eb8af0 音色片語：focused 的全域譯名另有意思（Focused 專注），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a light {@1} {@2} {@3} {@4} timbre	有輕盈{1}{2}{3}{4}的音色	有轻盈{1}{2}{3}{4}的音色	inner	FUN_140eb8af0 音色片語：light 的全域譯名另有意思（光明），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a strong {@1} {@2} {@3} {@4} timbre	有強勁{1}{2}{3}{4}的音色	有强劲{1}{2}{3}{4}的音色	inner	FUN_140eb8af0 音色片語：strong 的全域譯名另有意思（Strong 強壯），在音色句型裡寫死；依 FUN_140eb79d0 選字規則（同向相容、依編號排序）窮舉含這類字的位置組合，專用句型排在通用 has a {@1} … timbre 之前
+has a {@1} timbre	有{1}的音色	有{1}的音色	inner	FUN_140eb8af0 音色片語「has a＋形容詞（空白分隔）＋timbre」；形容詞用 {@n} 只收整句字典，避開 desc_01 外觀形容詞句型（round {%1} 等）（1 個形容詞）
+has a {@1} {@2} timbre	有{1}{2}的音色	有{1}{2}的音色	inner	FUN_140eb8af0 音色片語「has a＋形容詞（空白分隔）＋timbre」；形容詞用 {@n} 只收整句字典，避開 desc_01 外觀形容詞句型（round {%1} 等）（2 個形容詞）
+has a {@1} {@2} {@3} timbre	有{1}{2}{3}的音色	有{1}{2}{3}的音色	inner	FUN_140eb8af0 音色片語「has a＋形容詞（空白分隔）＋timbre」；形容詞用 {@n} 只收整句字典，避開 desc_01 外觀形容詞句型（round {%1} 等）（3 個形容詞）
+has a {@1} {@2} {@3} {@4} timbre	有{1}{2}{3}{4}的音色	有{1}{2}{3}{4}的音色	inner	FUN_140eb8af0 音色片語「has a＋形容詞（空白分隔）＋timbre」；形容詞用 {@n} 只收整句字典，避開 desc_01 外觀形容詞句型（round {%1} 等）（4 個形容詞）
+has a {@1} {@2} {@3} {@4} {@5} timbre	有{1}{2}{3}{4}{5}的音色	有{1}{2}{3}{4}{5}的音色	inner	FUN_140eb8af0 音色片語「has a＋形容詞（空白分隔）＋timbre」；形容詞用 {@n} 只收整句字典，避開 desc_01 外觀形容詞句型（round {%1} 等）（5 個形容詞）
+At all pitches, the instrument {%1}.	這件樂器在各個音高都{1}。	这件乐器在各个音高都{1}。		FUN_140eb8af0 2222331 樂器音色與音區句：{1} 見本檔 has a … timbre
+The low register {%1}.	低音區{1}。	低音区{1}。		FUN_140eb8af0 2222331 樂器音色與音區句：{1} 見本檔 has a … timbre
+The middle register begins at {%1} and {%2}.	中音區從{1}開始，{2}。	中音区从{1}开始，{2}。		FUN_140eb8af0 2222331 樂器音色與音區句：{1} 音高字＋pitch（沒有冠詞）；{2} 見本檔 has a … timbre
+The high register begins at {%1} and {%2}.	高音區從{1}開始，{2}。	高音区从{1}开始，{2}。		FUN_140eb8af0 2222331 樂器音色與音區句：{1} 音高字＋pitch（沒有冠詞）；{2} 見本檔 has a … timbre
+The top register begins at {%1} and {%2}.	最高音區從{1}開始，{2}。	最高音区从{1}开始，{2}。		FUN_140eb8af0 2222331 樂器音色與音區句：{1} 音高字＋pitch（沒有冠詞）；{2} 見本檔 has a … timbre
+The instrument {%1}.	這件樂器{1}。	这件乐器{1}。		FUN_140eb8af0 2222331 樂器音色與音區句：沒有分音區時的音色句；{1} 見本檔 has a … timbre。放在本檔其他 The instrument 句之後

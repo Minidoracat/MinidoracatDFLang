@@ -1,0 +1,19 @@
+en	zh-Hant	zh-Hans	align	note
+The topic being considered is {%1}.	思索的主題是{1}。	思索的主题是{1}。		L327043 FUN_14026b800 活動說明（mtb，[B] 開頭）；{1} FUN_140ee0ca0 主題全名
+The topic being discussed is {%1}.	討論的主題是{1}。	讨论的主题是{1}。		L327063 FUN_14026b800 活動說明（mtb，[B] 開頭）；{1} FUN_140ee0ca0 主題全名
+The topic being written about is {%1}.	撰寫的主題是{1}。	撰写的主题是{1}。		L327112 FUN_14026b800 活動說明（mtb，[B] 開頭）；{1} FUN_140ee0ca0 主題全名
+The topic being taught is {%1}.	講授的主題是{1}。	讲授的主题是{1}。		L327192 FUN_14026b800 活動說明（mtb，[B] 開頭）；{1} FUN_140ee0ca0 主題全名
+was the very first to discover {%1}	率先發現了{1}	率先发现了{1}		FUN_140b6f500 L1685752 傳說事件 knowledge discovered 片語，外框 In {#1}, {2} {%3}. 在 sentences_deaths_01；{1} 主題（discourse on…／FUN_140ee0ca0）；人名有連結
+independently discovered {%1}	獨立發現了{1}	独立发现了{1}		FUN_140b6f500 L1685754 同上（非首位發現）
+the initial discovery of {%1} by the {@2} {3} in the {%4} of {#5}	{2}{3}於{5}年{4}首度發現{1}	{2}{3}于{5}年{4}首度发现{1}		FUN_140b72460 L1687430 傳說事件名詞片語（拼進 the story of…、A festival commemorating… 等）；{1} 主題，日期 FUN_140b92640；人名有連結（季節日期）
+the initial discovery of {%1} by the {@2} {3} in a time before time	{2}{3}於太古之時首度發現{1}	{2}{3}于太古之时首度发现{1}		FUN_140b72460 L1687430 傳說事件名詞片語（拼進 the story of…、A festival commemorating… 等）；{1} 主題，日期 FUN_140b92640；人名有連結（太古）
+the initial discovery of {%1} by the {@2} {3} in {#4}	{2}{3}於{4}年首度發現{1}	{2}{3}于{4}年首度发现{1}		FUN_140b72460 L1687430 傳說事件名詞片語（拼進 the story of…、A festival commemorating… 等）；{1} 主題，日期 FUN_140b92640；人名有連結
+the initial discovery of {%1} by {2} in the {%3} of {#4}	{2}於{4}年{3}首度發現{1}	{2}于{4}年{3}首度发现{1}		FUN_140b72460 L1687430 傳說事件名詞片語（拼進 the story of…、A festival commemorating… 等）；{1} 主題，日期 FUN_140b92640；人名有連結（季節日期）
+the initial discovery of {%1} by {2} in a time before time	{2}於太古之時首度發現{1}	{2}于太古之时首度发现{1}		FUN_140b72460 L1687430 傳說事件名詞片語（拼進 the story of…、A festival commemorating… 等）；{1} 主題，日期 FUN_140b92640；人名有連結（太古）
+the initial discovery of {%1} by {2} in {#3}	{2}於{3}年首度發現{1}	{2}于{3}年首度发现{1}		FUN_140b72460 L1687430 傳說事件名詞片語（拼進 the story of…、A festival commemorating… 等）；{1} 主題，日期 FUN_140b92640；人名有連結
+the independent discovery of {%1} by the {@2} {3} in the {%4} of {#5}	{2}{3}於{5}年{4}獨立發現{1}	{2}{3}于{5}年{4}独立发现{1}		FUN_140b72460 L1687430 傳說事件名詞片語（拼進 the story of…、A festival commemorating… 等）；{1} 主題，日期 FUN_140b92640；人名有連結（季節日期）
+the independent discovery of {%1} by the {@2} {3} in a time before time	{2}{3}於太古之時獨立發現{1}	{2}{3}于太古之时独立发现{1}		FUN_140b72460 L1687430 傳說事件名詞片語（拼進 the story of…、A festival commemorating… 等）；{1} 主題，日期 FUN_140b92640；人名有連結（太古）
+the independent discovery of {%1} by the {@2} {3} in {#4}	{2}{3}於{4}年獨立發現{1}	{2}{3}于{4}年独立发现{1}		FUN_140b72460 L1687430 傳說事件名詞片語（拼進 the story of…、A festival commemorating… 等）；{1} 主題，日期 FUN_140b92640；人名有連結
+the independent discovery of {%1} by {2} in the {%3} of {#4}	{2}於{4}年{3}獨立發現{1}	{2}于{4}年{3}独立发现{1}		FUN_140b72460 L1687430 傳說事件名詞片語（拼進 the story of…、A festival commemorating… 等）；{1} 主題，日期 FUN_140b92640；人名有連結（季節日期）
+the independent discovery of {%1} by {2} in a time before time	{2}於太古之時獨立發現{1}	{2}于太古之时独立发现{1}		FUN_140b72460 L1687430 傳說事件名詞片語（拼進 the story of…、A festival commemorating… 等）；{1} 主題，日期 FUN_140b92640；人名有連結（太古）
+the independent discovery of {%1} by {2} in {#3}	{2}於{3}年獨立發現{1}	{2}于{3}年独立发现{1}		FUN_140b72460 L1687430 傳說事件名詞片語（拼進 the story of…、A festival commemorating… 等）；{1} 主題，日期 FUN_140b92640；人名有連結
