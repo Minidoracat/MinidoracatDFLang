@@ -1,5 +1,7 @@
 # 文字檔一律 LF：TSV 與 info.txt 由遊戲端逐位元組讀取，CRLF 會讓 \r 黏進譯文
 * text=auto eol=lf
+# Windows 批次檔用 CRLF：cmd 讀 LF 的批次檔時 goto、標籤會錯位
+*.cmd text eol=crlf
 *.png binary
 *.otf binary
 *.dll binary

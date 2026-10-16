@@ -3,7 +3,8 @@
 # ///
 """本機實機測試：把 dist/ 的工作坊包掛進遊戲、啟動、下 DFHack 指令、收尾還原。
 
-用法（repo 根目錄，先跑 scripts/build.py）：
+用法（repo 根目錄，先跑 scripts/build.py；play 自己會建置）：
+  uv run scripts/dev_game.py play [--lang zh-Hant|zh-Hans]     啟動器（scripts/dev-play.cmd 雙擊執行）：建置、掛包、開遊戲，遊戲關掉後自動 down
   uv run scripts/dev_game.py up [--lang zh-Hant|zh-Hans|both] [--with-dfi18n]   掛包、遮蔽 DFI18n（--with-dfi18n 不遮蔽）、啟動，等到 DFHack 回應；
                                                                只測一種語言時寫進測試用的 dflang.json，載入的不是 dist 的包就失敗
   uv run scripts/dev_game.py run dflang status                 轉給 dfhack-run
@@ -55,9 +56,42 @@ def dfhack(*args: str, quiet: bool = False) -> subprocess.CompletedProcess:
     return result
 
 
+def game_running() -> bool:
+    out = subprocess.run(["tasklist", "/FI", "IMAGENAME eq Dwarf Fortress.exe", "/NH"], capture_output=True, text=True).stdout
+    return "Dwarf Fortress.exe" in out
+
+
 def kill_game() -> None:
     subprocess.run(["taskkill", "/IM", "Dwarf Fortress.exe", "/F"], capture_output=True)
     time.sleep(3)
+
+
+def play(langs: list[str] | None) -> int:
+    """啟動器：建置、掛上 dist、開遊戲，等遊戲關掉再 down。up 與 down 都會強制關遊戲，所以遊戲開著時不動手"""
+    if game_running():
+        print("遊戲正在執行：先存檔、關掉遊戲，再開啟動器", file=sys.stderr)
+        return 1
+    # 上次的視窗在遊戲開著時被關掉：掛載與暫移的玩家設定還在，先還原再開始
+    if SHADOW.exists() or BACKUP.exists() or any(os.path.isjunction(MODS / item["folder"]) for item in ITEMS):
+        print("上次的測試沒有收尾，先還原")
+        down()
+    if not langs:
+        langs = ["zh-Hans"] if input("要測哪一包？1 繁體中文（預設）  2 简体中文：").strip() == "2" else ["zh-Hant"]
+    if subprocess.run(["uv", "run", str(ROOT / "scripts/build.py")], cwd=ROOT).returncode != 0:
+        print("建置失敗，沒有開遊戲", file=sys.stderr)
+        return 1
+    started = False
+    try:
+        started = up(langs) == 0
+        if started:
+            print("\n遊戲關掉後會自動還原（拆掉掛載、放回你自己的 dflang 設定）。這個視窗先別關；"
+                  "在這裡按 Ctrl+C 會直接關掉遊戲再還原，沒存檔的進度會不見")
+            while game_running():
+                time.sleep(3)
+    except KeyboardInterrupt:
+        print("\n中斷：關掉遊戲並還原")
+    down()
+    return 0 if started else 1
 
 
 def up(langs: list[str], with_dfi18n: bool = False) -> int:
@@ -362,9 +396,11 @@ def sweep() -> int:
 
 def main() -> int:
     args = sys.argv[1:]
-    if not args or args[0] not in ("up", "run", "click", "mouse", "sweep", "down"):
+    if not args or args[0] not in ("play", "up", "run", "click", "mouse", "sweep", "down"):
         print(__doc__)
         return 2
+    if args[0] == "play":
+        return play([args[2]] if len(args) > 2 and args[1] == "--lang" else None)
     if args[0] == "up":
         lang = args[2] if len(args) > 2 and args[1] == "--lang" else "zh-Hant"
         return up(["zh-Hant", "zh-Hans"] if lang == "both" else [lang], "--with-dfi18n" in args)

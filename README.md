@@ -101,7 +101,8 @@ scripts/
   terms.py                 術語一致與兩岸用語檢查
   lookup.py                查一句原文的現有譯文、術語、參考譯名與遊戲字串
   inventory.py             全文盤點：分類全部遊戲文字、對照實機紀錄，排出待翻清單（temp/inventory/）
-  dev_game.py              本機實機測試：掛包、啟動、下指令、還原
+  dev_game.py              本機實機測試：掛包、啟動、下指令、量分頁置中、還原
+  dev-play.cmd             啟動器（雙擊）：建置、開遊戲，遊戲關掉後自動還原
   publish_workshop.py      兩包各自上傳工作坊（預設只檢查）
   make_patterns.py         產生／驗證特徵碼
   df_snapshot.py           遊戲文字盤點與 Ghidra 反編譯快照（產物在 repo 外，不公開）
@@ -122,8 +123,10 @@ uv run scripts/verify_mod.py                  # 必須全部 PASS
 uv run scripts/terms.py check                 # 術語與兩岸用語
 cargo test --manifest-path engine/Cargo.toml --lib   # 句型比對的單元測試
 uv run scripts/inventory.py                   # 待翻清單（需要反編譯快照）
+uv run scripts/dev_game.py play               # 啟動器：建置、掛進遊戲並啟動，遊戲關掉後自動還原（scripts/dev-play.cmd 雙擊同）
 uv run scripts/dev_game.py up --lang both     # 掛進遊戲並啟動
 uv run scripts/dev_game.py run dflang status
+uv run scripts/dev_game.py sweep              # 從目前畫面把分頁一路點開，量分頁標籤置中、收集未翻譯紀錄
 uv run scripts/dev_game.py down               # 關遊戲、還原 mods/ 與設定
 ```
 
