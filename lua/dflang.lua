@@ -16,6 +16,7 @@ Usage:
   dflang misses on|off              Log text on screen that has no translation to dfhack-config/dflang-misses.tsv, also after restarting the game, until off
   dflang overlay on|off             Full-line text rendering (default on); off draws each Chinese character as a two-cell glyph (after restarting the game)
   dflang overlay size [13-16]       Chinese text size in 16ths of the cell height (default 14; after restarting the game); without a number, show the setting
+  dflang bold on|off                Bold Chinese text (default on); off uses the regular weight (after restarting the game)
 ]]
 local CONFIG_FILE = 'dfhack-config/dflang.json'
 local MISSES_FILE = 'dfhack-config/dflang-misses.tsv'
@@ -132,6 +133,13 @@ function set_overlay_size(n)
     config:write()
 end
 
+-- 字重：遊戲啟動時選 dflang/fonts/bold/ 或 regular/ 交給引擎畫字圖集與整句貼圖（lua/loader.lua 的 load_glyphs）。預設粗體，只記關
+function set_bold(on)
+    local config = json.open(CONFIG_FILE)
+    if on then config.data.bold = nil else config.data.bold = false end
+    config:write()
+end
+
 -- 未翻譯紀錄立即開關（引擎沒啟用時只改設定）；設定會記住，之後每次啟動都自動記錄，直到關閉
 function set_misses(on)
     local state = dfhack.BASE_G.DFLANG
@@ -210,7 +218,7 @@ DFLangWindow = defclass(DFLangWindow, widgets.Window)
 DFLangWindow.ATTRS{
     frame_title = 'DFLang Settings',
     -- 高度要放得下英文的回報說明（翻譯關掉時照英文畫，四到五列）
-    frame = {w = 70, h = 24},
+    frame = {w = 70, h = 25},
 }
 
 function DFLangWindow:init()
@@ -279,14 +287,22 @@ function DFLangWindow:init()
             enabled = function() return self.subviews.overlay:getOptionValue() end,
             on_change = function(n) set_overlay_size(n) self:changed() end,
         },
+        widgets.ToggleHotkeyLabel{
+            frame = {t = 6, l = 0},
+            key = 'CUSTOM_B',
+            label = 'Bold text:',
+            label_width = LABEL_WIDTH,
+            initial_option = config.bold ~= false,
+            on_change = function(on) set_bold(on) self:changed() end,
+        },
         widgets.Label{
-            frame = {t = 6, l = 3},
+            frame = {t = 7, l = 3},
             text = {{text = 'Restart the game to apply these changes.', pen = COLOR_YELLOW}},
             visible = function() return self.restart end,
         },
         widgets.ToggleHotkeyLabel{
             view_id = 'misses',
-            frame = {t = 8, l = 0},
+            frame = {t = 9, l = 0},
             key = 'CUSTOM_M',
             label = 'Log untranslated text:',
             label_width = LABEL_WIDTH,
@@ -302,11 +318,11 @@ function DFLangWindow:init()
             end,
         },
         widgets.Label{
-            frame = {t = 9, l = 3},
+            frame = {t = 10, l = 3},
             text = {'Log file (in the game folder):', ' ', MISSES_FILE},
         },
         widgets.Label{
-            frame = {t = 10, l = 3},
+            frame = {t = 11, l = 3},
             text = {{text = function()
                         local kb = self:kb_now()
                         return kb and ('Log size: %d KB'):format(kb) or 'No log file yet'
@@ -315,14 +331,14 @@ function DFLangWindow:init()
                      pen = COLOR_YELLOW}},
         },
         widgets.HotkeyLabel{
-            frame = {t = 11, l = 0},
+            frame = {t = 12, l = 0},
             key = 'CUSTOM_F',
             label = 'Open the log folder',
             auto_width = true,
             on_activate = open_misses_folder,
         },
         widgets.HotkeyLabel{
-            frame = {t = 12, l = 0},
+            frame = {t = 13, l = 0},
             key = 'CUSTOM_C',
             label = 'Clear the log',
             auto_width = true,
@@ -337,14 +353,14 @@ function DFLangWindow:init()
             end,
         },
         widgets.WrappedLabel{
-            frame = {t = 14, l = 0, r = 0},
+            frame = {t = 15, l = 0, r = 0},
             text_to_wrap = REPORT_HELP,
             text_pen = COLOR_GREY,
         },
     }
 end
 
--- 語言、整句貼圖、字身要重開遊戲才生效：在視窗裡改過、而且和這次啟動時的設定不同（或引擎沒在跑）時顯示黃字
+-- 語言、整句貼圖、字身、字重要重開遊戲才生效：在視窗裡改過、而且和這次啟動時的設定不同（或引擎沒在跑）時顯示黃字
 function DFLangWindow:changed()
     local state = dfhack.BASE_G.DFLANG
     local started = state and state.started
@@ -354,7 +370,7 @@ function DFLangWindow:changed()
     end
     local config = json.open(CONFIG_FILE).data
     self.restart = next_lang() ~= state.lang or (config.overlay ~= false) ~= started.overlay
-        or (config.overlay_size or DEFAULT_SIZE) ~= started.overlay_size
+        or (config.overlay_size or DEFAULT_SIZE) ~= started.overlay_size or (config.bold ~= false) ~= (started.bold ~= false)
 end
 
 -- 紀錄檔大小與是否到了引擎的上限（misses_full：舊版引擎沒有這個欄位，當成沒滿）
@@ -448,6 +464,11 @@ elseif cmd == 'overlay' and (args[2] == 'on' or args[2] == 'off') then
     set_overlay(on)
     print(on and 'Full-line text rendering: on (after restarting the game).'
         or 'Full-line text rendering: off, back to two-cell glyphs (after restarting the game).')
+elseif cmd == 'bold' and (args[2] == 'on' or args[2] == 'off') then
+    local on = args[2] == 'on'
+    set_bold(on)
+    print(on and 'Bold text: on (after restarting the game).'
+        or 'Bold text: off, using the regular weight (after restarting the game).')
 elseif cmd == 'overlay' and args[2] == 'size' then
     if not args[3] then
         print(('Chinese text size: %d/16 of the cell height.'):format(json.open(CONFIG_FILE).data.overlay_size or DEFAULT_SIZE))

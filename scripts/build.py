@@ -6,9 +6,9 @@
 
 每包內容：info.txt、scripts_modinstalled/（載入器與 dflang 指令）、dflang/（引擎 DLL、整句字典 strings.tsv、
 句型規則 rules.tsv、依畫面套用的整句 screens.tsv、字型子集、特徵碼、標題畫面吉祥物 mascot.png、授權與致謝）。字型是 workshop.json 指定的
-思源黑體（Noto Sans CJK），只留本包譯文與吉祥物標籤（mascot_label）用到的非 CP437 字；主字型沒有的字依
-fallback_fonts 依序補成第二、第三份字型，全部都沒有就建置失敗。
-引擎在遊戲啟動時依當下的文字格大小把這些字畫成字圖集，所以字型檔就是字圖的唯一來源。
+思源黑體（Noto Sans CJK）Bold 與 Regular 兩種字重（fonts 的 bold、regular，各自 dflang/fonts/<字重>/），都只留本包譯文與吉祥物標籤
+（mascot_label）用到的非 CP437 字；每種字重的第一份字型沒有的字依清單順序補成第二、第三份字型，任一字重有字全部都沒有就建置失敗。
+引擎在遊戲啟動時依當下的文字格大小把玩家選的字重（dfhack-config/dflang.json 的 bold，預設粗體）畫成字圖集，所以字型檔就是字圖的唯一來源。
 
 用法（repo 根目錄）：
   uv run scripts/build.py --fetch-fonts   # 首次：下載思源黑體與授權到 temp/fonts/
@@ -32,6 +32,8 @@ from cp437 import BYTE_OF
 ROOT = Path(__file__).resolve().parents[1]
 DIST = ROOT / "dist"
 KINDS = ("strings", "rules", "screens")
+# workshop.json 每包的 fonts 要有的字重，也是 dist 的 dflang/fonts/ 底下的資料夾名（lua/loader.lua 照這兩個名字找）
+WEIGHTS = ("bold", "regular")
 FONTS = ROOT / "temp/fonts"
 FONT_LICENSE_URL = "https://raw.githubusercontent.com/notofonts/noto-cjk/main/Sans/LICENSE"
 PACKAGE_LICENSE = """程式（dflang/dflang.dll、scripts_modinstalled/*.lua）：MIT License，全文附在下方。
@@ -198,15 +200,16 @@ def build_item(item: dict, config: dict, texts: dict[str, list[dict]], names: li
     data = out / "dflang"
     data.mkdir(parents=True)
 
-    # 標題畫面吉祥物的名牌（語言標籤、作者名）由引擎在遊戲裡用同一套字型畫，字型子集也要有這些字（含英數）；
+    # 標題畫面吉祥物的名牌（語言標籤、作者名）由引擎在遊戲裡用粗體子集畫（不跟著字重設定），字型子集也要有這些字（含英數）；
     # 整句貼圖把遊戲畫的英數、空白、CP437 的拉丁字母（矮人名字的 ë、ü…）、♂♀ 與譯名的間隔號 ·
-    # 也用這套字型畫，和引擎 overlay.rs 的 is_text 同一組
+    # 也用玩家選的字重畫，和引擎 overlay.rs 的 is_text 同一組。兩種字重用同一份字集，切換字重不會少字
     ascii = "".join(map(chr, range(0x20, 0x7F))) + "ÇüéâäàåçêëèïîìÄÅÉæÆôöòûùÿÖÜáíóúñÑ♂♀·"
     tag_chars = [c for c in dict.fromkeys(item["mascot_label"] + config["author"] + ascii) if c not in chars]
-    missing = subset_fonts(chars + tag_chars, [item["font"], *item["fallback_fonts"]], data / "fonts")
-    if missing:
-        print(f"FAIL {lang}: 沒有字型能畫 {''.join(missing)}", file=sys.stderr)
-        return 1
+    for weight in WEIGHTS:
+        missing = subset_fonts(chars + tag_chars, item["fonts"][weight], data / "fonts" / weight)
+        if missing:
+            print(f"FAIL {lang}: {weight} 沒有字型能畫 {''.join(missing)}", file=sys.stderr)
+            return 1
     write_text(data / "glyphs.txt", "".join(chars) + "\n")
     for kind in KINDS:
         write_text(data / f"{kind}.tsv", dict_lines(kind, texts[kind], lang))

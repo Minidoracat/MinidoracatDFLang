@@ -10,6 +10,7 @@ Usage:	用法：	用法：		lua/dflang.lua USAGE（dflang 不加參數或參數�
   dflang misses on|off              Log text on screen that has no translation to dfhack-config/dflang-misses.tsv, also after restarting the game, until off	  dflang misses on|off              把畫面上沒翻到的字記到 dfhack-config/dflang-misses.tsv；重開遊戲後照樣記錄，直到 off	  dflang misses on|off              把画面上没翻译到的文字记录到 dfhack-config/dflang-misses.tsv；重启游戏后照样记录，直到 off		lua/dflang.lua USAGE（dflang 不加參數或參數不對時印出；DFHack 主控台、launcher 輸出）
   dflang overlay on|off             Full-line text rendering (default on); off draws each Chinese character as a two-cell glyph (after restarting the game)	  dflang overlay on|off             整句貼圖（預設開）；off 改回一字兩格的字圖（重開遊戲生效）	  dflang overlay on|off             整句贴图（默认开）；off 改回一字两格的字图（重启游戏生效）		lua/dflang.lua USAGE（dflang 不加參數或參數不對時印出；DFHack 主控台、launcher 輸出）
   dflang overlay size [13-16]       Chinese text size in 16ths of the cell height (default 14; after restarting the game); without a number, show the setting	  dflang overlay size [13-16]       中文字身：格高的十六分之幾（預設 14，重開遊戲生效）；不加數字顯示目前設定	  dflang overlay size [13-16]       中文字身：格高的十六分之几（默认 14，重启游戏生效）；不加数字显示当前设置		lua/dflang.lua USAGE（dflang 不加參數或參數不對時印出；DFHack 主控台、launcher 輸出）
+  dflang bold on|off                Bold Chinese text (default on); off uses the regular weight (after restarting the game)	  dflang bold on|off                中文用粗體（預設開）；off 改用一般粗細（重開遊戲生效）	  dflang bold on|off                中文用粗体（默认开）；off 改用常规粗细（重启游戏生效）		lua/dflang.lua USAGE（dflang 不加參數或參數不對時印出；DFHack 主控台、launcher 輸出）
 DFLang zh-Hant: translation on	DFLang zh-Hant：翻譯開啟	DFLang zh-Hant：翻译开启		lua/dflang.lua dflang status 第 1 行
 DFLang zh-Hant: translation off	DFLang zh-Hant：翻譯關閉	DFLang zh-Hant：翻译关闭		lua/dflang.lua dflang status 第 1 行（dflang off 之後）
 DFLang zh-Hans: translation on	DFLang zh-Hans：翻譯開啟	DFLang zh-Hans：翻译开启		lua/dflang.lua dflang status 第 1 行
@@ -26,6 +27,8 @@ Logging untranslated text to dfhack-config/dflang-misses.tsv, also after restart
 Stopped logging untranslated text.	已停止記錄未翻譯的字。	已停止记录未翻译的文字。		lua/dflang.lua dflang misses off
 Full-line text rendering: on (after restarting the game).	整句貼圖：開（重開遊戲後生效）。	整句贴图：开（重启游戏后生效）。		lua/dflang.lua dflang overlay on
 Full-line text rendering: off, back to two-cell glyphs (after restarting the game).	整句貼圖：關，改回一字兩格的字圖（重開遊戲後生效）。	整句贴图：关，改回一字两格的字图（重启游戏后生效）。		lua/dflang.lua dflang overlay off
+Bold text: on (after restarting the game).	粗體字：開（重開遊戲後生效）。	粗体字：开（重启游戏后生效）。		lua/dflang.lua dflang bold on
+Bold text: off, using the regular weight (after restarting the game).	粗體字：關，改用一般粗細（重開遊戲後生效）。	粗体字：关，改用常规粗细（重启游戏后生效）。		lua/dflang.lua dflang bold off
 DFLang Settings	DFLang 設定	DFLang 设置	c	lua/dflang.lua 設定視窗（dflang ui、Ctrl-Shift-L）的視窗標題
 Translation engine:	翻譯引擎：	翻译引擎：		lua/dflang.lua 設定視窗：引擎狀態的標籤
 Running (Traditional Chinese)	運作中（繁體中文）	运行中（繁体中文）		lua/dflang.lua 設定視窗：引擎狀態
@@ -38,7 +41,8 @@ Other translation mod	其他翻譯 MOD	其他翻译模组		lua/dflang.lua 設定
 Full-line text rendering:	整句貼圖：	整句贴图：		lua/dflang.lua 設定視窗：整句貼圖開關（重開遊戲生效）
 Chinese text size:	中文字身：	中文字身：		lua/dflang.lua 設定視窗：整句貼圖字身（dflang overlay size，重開遊戲生效）
 14/16 (default)	14/16（預設）	14/16（默认）		lua/dflang.lua 設定視窗：字身選項，格高的十六分之幾
-Restart the game to apply these changes.	重開遊戲後，上面的變更才會生效。	重启游戏后，上面的更改才会生效。		lua/dflang.lua 設定視窗：改了語言、整句貼圖或字身後的黃字提示
+Bold text:	粗體字：	粗体字：		lua/dflang.lua 設定視窗：字重開關（關＝思源黑體 Regular；dflang bold，重開遊戲生效）
+Restart the game to apply these changes.	重開遊戲後，上面的變更才會生效。	重启游戏后，上面的更改才会生效。		lua/dflang.lua 設定視窗：改了語言、整句貼圖、字身或粗體字後的黃字提示
 Log untranslated text:	記錄未翻譯的字：	记录未翻译的文字：		lua/dflang.lua 設定視窗：未翻譯紀錄開關（dflang misses，立即生效）
 Log file (in the game folder):	紀錄檔（在遊戲目錄）：	记录文件（在游戏目录）：		lua/dflang.lua 設定視窗：後面接紀錄檔的相對路徑
 No log file yet	還沒有紀錄檔	还没有记录文件		lua/dflang.lua 設定視窗：紀錄檔不存在

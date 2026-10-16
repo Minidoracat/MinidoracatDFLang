@@ -118,11 +118,11 @@ local function cell_size()
     return 16, 24
 end
 
--- 本包的字型檔，檔名開頭的序號就是補字順序
-local function font_files(dir)
-    local fonts = {}
-    for _, name in ipairs(dfhack.filesystem.listdir(dir .. 'fonts') or {}) do
-        if name:match('%.[ot]tf$') then table.insert(fonts, dir .. 'fonts/' .. name) end
+-- 本包某個字重（bold、regular，見 scripts/build.py 的 WEIGHTS）的字型檔，檔名開頭的序號就是補字順序
+local function font_files(dir, weight)
+    local fonts, sub = {}, dir .. 'fonts/' .. weight .. '/'
+    for _, name in ipairs(dfhack.filesystem.listdir(sub) or {}) do
+        if name:match('%.[ot]tf$') then table.insert(fonts, sub .. name) end
     end
     table.sort(fonts)
     return fonts
@@ -131,11 +131,13 @@ end
 local function load_glyphs(engine, dir)
     local chars = (read_file(dir .. 'glyphs.txt') or ''):match('^([^\n]*)')
     if not chars or chars == '' then return nil, 'glyphs.txt 是空的' end
-    local fonts = font_files(dir)
+    -- 字重（dflang bold on|off，預設粗體、只記 bold = false）：字圖集與整句貼圖都用這組字型
+    local config = json.open(CONFIG_FILE).data
+    local fonts = font_files(dir, config.bold == false and 'regular' or 'bold')
     local w, h = cell_size()
     local png = ATLAS_FILE:format(LANG)
     -- 整句貼圖的字身（dflang overlay size，十六分之幾格高）：段落量字寬也照這個大小，所以在畫字圖集時一起交給引擎
-    local tiles, missing = engine.render_atlas(png, w, h, chars, fonts, json.open(CONFIG_FILE).data.overlay_size)
+    local tiles, missing = engine.render_atlas(png, w, h, chars, fonts, config.overlay_size)
     if not tiles then return nil, missing end
     if missing ~= '' then fail('沒有字型能畫：%s', missing) end
     -- 字圖集最後一列可能沒排滿；每字取八張：左右兩格、半格位移的上下列各左右兩格（分頁標籤這類文字）、錨定貼圖標籤用的小一號字，
@@ -201,7 +203,8 @@ local function load_mascot(engine, dir)
     if not dfhack.filesystem.isfile(src) then return nil end
     local w, h = cell_size()
     local png = MASCOT_FILE:format(LANG)
-    local cols, err = engine.render_mascot(src, png, w, h, MASCOT_ROWS, MASCOT_LABEL, AUTHOR, font_files(dir))
+    -- 名牌是設計過的樣子，一律用粗體，不跟著字重設定
+    local cols, err = engine.render_mascot(src, png, w, h, MASCOT_ROWS, MASCOT_LABEL, AUTHOR, font_files(dir, 'bold'))
     if not cols then
         fail('吉祥物圖片讀取失敗：%s', err)
         return nil
@@ -544,11 +547,12 @@ local function start()
     -- 每字八張，保留範圍（約 8,800 張可用）放不下，後面的落在 DFHack 的動態範圍：遊戲重載貼圖後 texpos 會變，
     -- 最後一張一定在動態範圍（或全部都在保留範圍、永遠不變），看它就知道要不要重查
     local last = dfhack.textures.getTexposByHandle(handles[#handles])
-    -- started：這次啟動時的整句貼圖設定，設定視窗（dflang ui）用來判斷改過的設定要不要提示重開
+    -- started：這次啟動時的整句貼圖、字身、字重設定，設定視窗（dflang ui）用來判斷改過的設定要不要提示重開
     local config = json.open(CONFIG_FILE).data
     dfhack.BASE_G.DFLANG = {engine = engine, lang = LANG, dir = dir, config = CONFIG_FILE,
                             mascot = load_mascot(engine, dir),
-                            started = {overlay = config.overlay ~= false, overlay_size = config.overlay_size or 14}}
+                            started = {overlay = config.overlay ~= false, overlay_size = config.overlay_size or 14,
+                                       bold = config.bold ~= false}}
     dfhack.onStateChange.dflang = function(sc)
         if sc ~= SC_VIEWSCREEN_CHANGED and sc ~= SC_WORLD_LOADED and sc ~= SC_WORLD_UNLOADED then return end
         local now = dfhack.textures.getTexposByHandle(handles[#handles])

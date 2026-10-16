@@ -41,7 +41,7 @@
 2. 訂閱[繁中](https://steamcommunity.com/sharedfiles/filedetails/?id=3820630135)或[簡中](https://steamcommunity.com/sharedfiles/filedetails/?id=3820630318)項目，正常啟動遊戲。
 3. 兩個都訂閱時預設繁中；按 `Ctrl-Shift-L` 打開「DFLang 設定」視窗切換語言，重開遊戲生效（也可以在 DFHack 主控台輸入 `dflang lang zh-Hans` 或 `dflang lang zh-Hant`）。
 
-遊戲中任何畫面按 `Ctrl-Shift-L`（或在標題畫面點吉祥物）開「DFLang 設定」視窗，再按一次關掉：顯示引擎狀態，可以暫時改看英文、切換語言、開關整句貼圖、調整中文字身、開關未翻譯紀錄。語言、整句貼圖、字身重開遊戲才生效，改了視窗會以黃字提示。快捷鍵只在遊戲執行時註冊，不寫進 DFHack 的設定檔；想換鍵用 DFHack 的 `gui/keybinds`。原本的 `dflang` 指令照樣能用（`dflang` 不加參數看用法）。
+遊戲中任何畫面按 `Ctrl-Shift-L`（或在標題畫面點吉祥物）開「DFLang 設定」視窗，再按一次關掉：顯示引擎狀態，可以暫時改看英文、切換語言、開關整句貼圖、調整中文字身、切換粗體字、開關未翻譯紀錄。語言、整句貼圖、字身、粗體字重開遊戲才生效，改了視窗會以黃字提示。快捷鍵只在遊戲執行時註冊，不寫進 DFHack 的設定檔；想換鍵用 DFHack 的 `gui/keybinds`。原本的 `dflang` 指令照樣能用（`dflang` 不加參數看用法）。
 
 翻譯引擎一次只能有一個在運作。同時裝了 DFCN 或 DFI18n 時，本 MOD 讓位，標題畫面跳出中文說明讓你選要用哪一個，重開遊戲生效：
 
@@ -51,7 +51,7 @@
 
 裝了 dfzh 時本 MOD 不啟動，標題畫面用英文說明怎麼移除。`dflang status` 查看狀態。
 
-畫面上的字預設由本 MOD 照字型實際字寬整行畫（整句貼圖）。想改回一字兩格的字圖（例如和別的畫面 MOD 衝突時），在設定視窗（`Ctrl-Shift-L`）關掉「整句貼圖」或在 DFHack 主控台輸入 `dflang overlay off`，重開遊戲生效；`dflang overlay on` 改回來。中文字的大小跟著遊戲的介面縮放；想只調整中文，在設定視窗或用 `dflang overlay size 15`（13～16，格高的十六分之幾，預設 14），重開遊戲生效，數字越大相鄰兩列的字越靠近。
+畫面上的字預設由本 MOD 照字型實際字寬整行畫（整句貼圖）。想改回一字兩格的字圖（例如和別的畫面 MOD 衝突時），在設定視窗（`Ctrl-Shift-L`）關掉「整句貼圖」或在 DFHack 主控台輸入 `dflang overlay off`，重開遊戲生效；`dflang overlay on` 改回來。中文字的大小跟著遊戲的介面縮放；想只調整中文，在設定視窗或用 `dflang overlay size 15`（13～16，格高的十六分之幾，預設 14），重開遊戲生效，數字越大相鄰兩列的字越靠近。字預設是思源黑體粗體（Bold）；覺得太粗，在設定視窗關掉「粗體字」或輸入 `dflang bold off` 改用一般粗細（Regular），重開遊戲生效，`dflang bold on` 改回來。整句貼圖和一字兩格的字圖都照這個設定，標題畫面吉祥物的名牌一律是粗體。
 
 標題畫面左下角會出現本 MOD 的貓娘吉祥物和「繁體中文／简体中文」名牌，點一下開設定視窗。要移動或關掉，在 DFHack 主控台輸入 `gui/overlay`，找 `dflang_zh_hant.mascot`（簡中包是 `dflang_zh_hans.mascot`）。
 
@@ -140,6 +140,6 @@ git tag -a v0.2.0 -m "0.2.0" && git push origin v0.2.0                          
 - 譯文與術語表（`data/`、`glossary/`）：[CC BY 4.0](LICENSE-CC-BY-4.0.txt)。轉載或改作請註明出處。
 - 其餘程式與文件：[MIT](LICENSE)。
 - 吉祥物圖（`art/`）與工作坊封面（`docs/steam/cover-*.gif`）：© Minidoracat，保留所有權利，不在上述授權範圍內。
-- 字型：思源黑體（Noto Sans CJK TC／SC Bold），SIL Open Font License 1.1，工作坊包內附授權全文。
+- 字型：思源黑體（Noto Sans CJK TC／SC Bold、Regular），SIL Open Font License 1.1，工作坊包內附授權全文。
 - 引擎靜態連結的開源 Rust 套件（skrifa、zeno、png、retour 等）各依原授權，包內 `dflang/THIRD-PARTY-LICENSES.txt` 附授權全文（建置時產生）。
 - 致謝與參考來源見 [CREDITS.md](CREDITS.md)。
