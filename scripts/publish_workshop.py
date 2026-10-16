@@ -13,7 +13,7 @@
 每次上傳的內容：dist/<folder>/ 整個資料夾、標題（steam_title）、說明（steam_description 檔）、標籤（tags）、
 封面（preview，512 動態 GIF）、更新說明（--note）。標題與說明放在預設（english）欄位，任何語言的 Steam 用戶端都看得到同一份中文。
 首次建立時另外上傳 screenshots 資料夾裡的截圖（依檔名排序，一張一次提交；放在 temp/，不進 git）。
-ponytail: 截圖只在 --create 時傳；之後增刪截圖到工作坊頁面的「新增／編輯圖片與影片」做，免得重複上傳。
+更新時加 --screenshots：先刪掉項目上現有的截圖（查得到幾張就刪幾張），再照樣一張張上傳資料夾裡的截圖；--check-screenshots 只查目前有幾張（不改任何東西）。
 """
 import argparse
 import ctypes
@@ -78,6 +78,18 @@ class Steam:
         d.SteamAPI_ISteamUGC_SubmitItemUpdate.argtypes = [ctypes.c_void_p, ctypes.c_uint64, ctypes.c_char_p]
         d.SteamAPI_ISteamUGC_SubmitItemUpdate.restype = ctypes.c_uint64
         d.SteamAPI_ISteamUtils_IsAPICallCompleted.argtypes = [ctypes.c_void_p, ctypes.c_uint64, ctypes.POINTER(ctypes.c_bool)]
+        d.SteamAPI_ISteamUGC_CreateQueryUGCDetailsRequest.argtypes = [ctypes.c_void_p, ctypes.POINTER(ctypes.c_uint64), ctypes.c_uint32]
+        d.SteamAPI_ISteamUGC_CreateQueryUGCDetailsRequest.restype = ctypes.c_uint64
+        d.SteamAPI_ISteamUGC_SetReturnAdditionalPreviews.argtypes = [ctypes.c_void_p, ctypes.c_uint64, ctypes.c_bool]
+        d.SteamAPI_ISteamUGC_SetReturnAdditionalPreviews.restype = ctypes.c_bool
+        d.SteamAPI_ISteamUGC_SendQueryUGCRequest.argtypes = [ctypes.c_void_p, ctypes.c_uint64]
+        d.SteamAPI_ISteamUGC_SendQueryUGCRequest.restype = ctypes.c_uint64
+        d.SteamAPI_ISteamUGC_GetQueryUGCNumAdditionalPreviews.argtypes = [ctypes.c_void_p, ctypes.c_uint64, ctypes.c_uint32]
+        d.SteamAPI_ISteamUGC_GetQueryUGCNumAdditionalPreviews.restype = ctypes.c_uint32
+        d.SteamAPI_ISteamUGC_ReleaseQueryUGCRequest.argtypes = [ctypes.c_void_p, ctypes.c_uint64]
+        d.SteamAPI_ISteamUGC_ReleaseQueryUGCRequest.restype = ctypes.c_bool
+        d.SteamAPI_ISteamUGC_RemoveItemPreview.argtypes = [ctypes.c_void_p, ctypes.c_uint64, ctypes.c_uint32]
+        d.SteamAPI_ISteamUGC_RemoveItemPreview.restype = ctypes.c_bool
         d.SteamAPI_ISteamUtils_IsAPICallCompleted.restype = ctypes.c_bool
         d.SteamAPI_ISteamUtils_GetAPICallResult.argtypes = [
             ctypes.c_void_p, ctypes.c_uint64, ctypes.c_void_p, ctypes.c_int, ctypes.c_int, ctypes.POINTER(ctypes.c_bool)]
@@ -158,13 +170,37 @@ class Steam:
             raise RuntimeError(f"AddItemPreviewFile 拒絕：{path.name}")
         self.submit(handle, "")
 
+    def count_screenshots(self, file_id: int) -> int:
+        """項目上現有幾張額外預覽圖（截圖）。SteamUGCQueryCompleted_t（k_iSteamUGCCallbacks + 1）：handle@0、EResult@8、
+        回傳筆數@12、總筆數@16、是否快取@20、下一頁游標 char[256]@21，對齊 8 共 280 bytes"""
+        d, ugc = self.dll, self.ugc
+        ids = (ctypes.c_uint64 * 1)(file_id)
+        query = d.SteamAPI_ISteamUGC_CreateQueryUGCDetailsRequest(ugc, ids, 1)
+        if query in INVALID_HANDLE:
+            raise RuntimeError("CreateQueryUGCDetailsRequest 失敗")
+        try:
+            d.SteamAPI_ISteamUGC_SetReturnAdditionalPreviews(ugc, query, True)
+            raw = self.wait(d.SteamAPI_ISteamUGC_SendQueryUGCRequest(ugc, query), 3401, 280)
+            if int.from_bytes(raw[8:12], "little") != 1 or int.from_bytes(raw[12:16], "little") != 1:
+                raise RuntimeError(f"查詢項目失敗：EResult={int.from_bytes(raw[8:12], 'little')}")
+            return d.SteamAPI_ISteamUGC_GetQueryUGCNumAdditionalPreviews(ugc, query, 0)
+        finally:
+            d.SteamAPI_ISteamUGC_ReleaseQueryUGCRequest(ugc, query)
+
+    def remove_screenshots(self, app_id: int, file_id: int, count: int) -> None:
+        # 從最後一張往前刪，前面的編號不會因為刪掉後面的而移動
+        handle = self.start(app_id, file_id)
+        if not all(self.dll.SteamAPI_ISteamUGC_RemoveItemPreview(self.ugc, handle, i) for i in reversed(range(count))):
+            raise RuntimeError("RemoveItemPreview 拒絕")
+        self.submit(handle, "")
+
 
 def screenshots(item: dict) -> list[Path]:
     folder = ROOT / item["screenshots"]
     return sorted(p for p in folder.iterdir() if p.suffix.lower() in IMAGE_SUFFIXES) if folder.is_dir() else []
 
 
-def preflight(items: list[dict], create: bool, note: str | None) -> list[str]:
+def preflight(items: list[dict], create: bool, note: str | None, with_shots: bool) -> list[str]:
     problems = []
     if subprocess.run(["uv", "run", "scripts/verify_mod.py"], cwd=ROOT, capture_output=True).returncode != 0:
         problems.append("verify_mod.py 沒有全過")
@@ -180,12 +216,12 @@ def preflight(items: list[dict], create: bool, note: str | None) -> list[str]:
         if not create and not note:
             problems.append("更新要附 --note 更新說明")
         cover = ROOT / item["preview"]
-        shots = screenshots(item) if create else []
+        shots = screenshots(item) if with_shots else []
         if not cover.is_file():
             problems.append(f"{item['lang']}：缺封面 {item['preview']}")
         elif cover.stat().st_size > PREVIEW_LIMIT:
             problems.append(f"{item['lang']}：封面 {cover.stat().st_size:,} bytes，超過 {PREVIEW_LIMIT:,}")
-        if create and not shots:
+        if with_shots and not shots:
             problems.append(f"{item['lang']}：{item['screenshots']} 沒有截圖")
         problems += [f"{item['lang']}：截圖 {p.name} {p.stat().st_size:,} bytes，超過 {SHOT_LIMIT:,}" for p in shots if p.stat().st_size > SHOT_LIMIT]
     return problems
@@ -196,16 +232,28 @@ def main() -> int:
     ap.add_argument("--item", required=True, choices=["zh-Hant", "zh-Hans", "all"])
     ap.add_argument("--create", action="store_true", help="首次建立工作坊項目（私人可見）")
     ap.add_argument("--note", help="更新說明（Change Notes）")
+    ap.add_argument("--screenshots", action="store_true", help="更新時也換掉截圖：刪掉項目上現有的，再傳 screenshots 資料夾的")
+    ap.add_argument("--check-screenshots", action="store_true", help="只查項目上現有幾張截圖，不改任何東西")
     ap.add_argument("--yes", action="store_true", help="真的上傳；沒加只做檢查")
     args = ap.parse_args()
     config = json.loads(CONFIG.read_text(encoding="utf-8"))
     items = [i for i in config["items"] if args.item in ("all", i["lang"])]
 
-    problems = preflight(items, args.create, args.note)
+    if args.check_screenshots:
+        steam = Steam(config["app_id"])
+        try:
+            for item in items:
+                print(f"{item['lang']}：{item['published_file_id']} 現有截圖 {steam.count_screenshots(int(item['published_file_id']))} 張")
+        finally:
+            steam.close()
+        return 0
+
+    with_shots = args.create or args.screenshots
+    problems = preflight(items, args.create, args.note, with_shots)
     for item in items:
         target = "新建（私人）" if args.create else f"更新 {item['published_file_id']}"
         print(f"{item['lang']}：{target} ← dist/{item['folder']}  標題「{item['steam_title']}」  封面 {item['preview']}"
-              + (f"  截圖 {len(screenshots(item))} 張" if args.create else ""))
+              + (f"  截圖 {len(screenshots(item))} 張" + ("（先刪掉現有的）" if args.screenshots and not args.create else "") if with_shots else ""))
     if problems:
         print("\n".join("FAIL " + p for p in problems))
         return 1
@@ -223,7 +271,12 @@ def main() -> int:
             file_id = int(item["published_file_id"])
             steam.update(config["app_id"], file_id, item, ROOT / "dist" / item["folder"], args.note or "初次上傳", private=args.create)
             print(f"{item['lang']}：內容、標題、說明、封面已上傳")
-            shots = screenshots(item) if args.create else []
+            if args.screenshots and not args.create:
+                old = steam.count_screenshots(file_id)
+                if old:
+                    steam.remove_screenshots(config["app_id"], file_id, old)
+                print(f"{item['lang']}：刪掉舊截圖 {old} 張")
+            shots = screenshots(item) if with_shots else []
             for k, shot in enumerate(shots, 1):
                 steam.add_screenshot(config["app_id"], file_id, shot)  # 中途失敗時前面幾張已生效，剩下的到工作坊頁面補
                 print(f"{item['lang']}：截圖 {k}/{len(shots)} {shot.name}")
