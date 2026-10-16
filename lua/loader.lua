@@ -5,21 +5,19 @@
 local LANG = '@LANG@'
 local MOD_ID = '@MOD_ID@'
 local PACKAGES = {['zh-Hant'] = 'cat_df_lang_zh_hant', ['zh-Hans'] = 'cat_df_lang_zh_hans'}
--- 會攔同一批寫字函式的其他翻譯引擎。DFHack 模組看它的載入腳本在不在（不只看 MOD ID）；DFCN 是遊戲啟動時由 dfhooks 載入的 DLL，
--- 看遊戲目錄有沒有它的 dfhooks_dfcn.ini（只訂閱、沒照它的說明複製這個檔就不會啟用）。
--- notice：本 MOD 讓位時標題畫面的說明。DFI18n 的說明畫成中文、讓玩家選（見 notify）；其他兩個沒有實測過本包字圖疊在它們畫面上的樣子，照英文
+-- 會攔同一批寫字函式的其他翻譯引擎，依序檢查。DFCN 是遊戲啟動時由 dfhooks 載入的 DLL，看遊戲目錄有沒有它的入口檔
+-- （check：dflang.lua 的 dfcn_installed；只訂閱、沒照它的說明複製入口檔就不會啟用）；放最前面：同時也裝了 DFI18n 時，
+-- 只停用 DFI18n 解決不了 DFCN。DFHack 模組看它的載入腳本在不在（不只看 MOD ID）。
+-- off：玩家在標題畫面的說明選「改用 DFLang」時呼叫的 dflang.lua 函式（見 notify），off_failed 是失敗時的訊息。
+-- dfzh 沒有實測過本包字圖疊在它畫面上的樣子、也不知道怎麼安全停用，照英文說明請玩家自己移除
 local CONFLICTS = {
-    {id = 'dfi18n', script = 'scripts_modinstalled/dfi18n_loader.lua', name = 'DFI18n'},
+    {check = 'dfcn_installed', name = 'DFCN', off = 'disable_dfcn', off_failed = 'Could not rename the DFCN files in the game folder.'},
+    {id = 'dfi18n', script = 'scripts_modinstalled/dfi18n_loader.lua', name = 'DFI18n', off = 'hide_dfi18n',
+        off_failed = 'Could not write to the mods folder.'},
     {id = 'dfzh_loader', script = 'scripts_modinstalled/dfzh_loader.lua', name = 'dfzh', notice = table.concat({
         'dfzh is also installed. Only one translation engine can run',
         'at a time, so DFLang is not running. To use DFLang, remove',
         'dfzh by following its own instructions, then restart the game.'}, '\n')},
-    {file = 'dfhooks_dfcn.ini', name = 'DFCN', notice = table.concat({
-        'DFCN is also installed (dfhooks_dfcn.ini in the game folder).',
-        'Only one translation engine can run at a time, so DFLang',
-        'is not running. To use DFLang, move dfhooks_dfcn.ini out',
-        'of the game folder and restart the game. Keep dfhooks.dll:',
-        'DFHack needs it.'}, '\n')},
 }
 local HOOKS = {'addst', 'addst_flag', 'top_addst', 'addcoloredst', 'add_anchored_tile'}
 local GPS_FIELDS = {'screenx', 'screeny', 'dimx', 'dimy', 'clipx', 'clipy', 'screen', 'screen_limit',
@@ -58,19 +56,32 @@ local function read_file(path)
     return s
 end
 
--- 兩包都裝時只啟用一包：dfhack-config/dflang.json 的 lang 優先，沒有就用繁體；off 是兩包都不啟用（改用其他翻譯引擎）
-local function chosen_lang()
-    local pref = json.open(CONFIG_FILE).data.lang
-    if pref == 'off' then return 'off' end
-    if pref and PACKAGES[pref] and mod_dir(PACKAGES[pref]) then return pref end
+local function default_lang()
     return mod_dir(PACKAGES['zh-Hant']) and 'zh-Hant' or 'zh-Hans'
 end
 
+-- 兩包都裝時只啟用一包：dfhack-config/dflang.json 的 lang 優先，沒有就用繁體；off 是改用其他翻譯引擎（見 start）
+local function chosen_lang()
+    local pref = json.open(CONFIG_FILE).data.lang
+    if pref == 'off' or pref and PACKAGES[pref] and mod_dir(PACKAGES[pref]) then return pref end
+    return default_lang()
+end
+
+-- 本包的 dflang.lua（偵測、停用其他翻譯引擎的函式）。兩包、新舊版的 dflang.lua 可能同時在 DFHack 的腳本路徑上，
+-- reqscript('dflang') 不一定找到本包這一份（實測找到舊版、沒有新函式），照路徑載入
+local own_dflang
+local function dflang()
+    if not own_dflang then
+        own_dflang = setmetatable({dfhack_flags = {module = true}}, {__index = _G})
+        assert(loadfile(mod_dir(MOD_ID) .. 'scripts_modinstalled/dflang.lua', 't', own_dflang))()
+    end
+    return own_dflang
+end
+
 local function conflict()
-    local install = dfhack.filesystem.getInstallDir():gsub('[/\\]?$', '/')
     for _, c in ipairs(CONFLICTS) do
-        if c.file then
-            if dfhack.filesystem.isfile(install .. c.file) then return c end
+        if c.check then
+            if dflang()[c.check]() then return c end
         else
             local dir = mod_dir(c.id)
             if dir and dfhack.filesystem.isfile(dir .. c.script) then return c end
@@ -288,9 +299,10 @@ local function install_typing()
 end
 
 -- 本 MOD 讓位時在標題畫面跳出說明：主控台的訊息玩家看不到，也不知道怎麼停用別的 MOD。
--- DFI18n（實測過）：只包住 DFHack 的畫字函式、不掛遊戲的 hook，用本包的字圖把說明畫成中文，讓玩家選要用哪一個；
--- 選「改用 DFLang」就照 dflang.lua 的 hide_dfi18n 停用 DFI18n，重開遊戲生效。DFI18n 的字畫在 DFHack 視窗之後，
+-- DFCN、DFI18n（都實測過）：只包住 DFHack 的畫字函式、不掛遊戲的 hook，用本包的字圖把說明畫成中文，讓玩家選要用哪一個；
+-- 選「改用 DFLang」就呼叫 dflang.lua 對應的停用函式，重開遊戲生效。DFI18n 的字畫在 DFHack 視窗之後，
 -- 標題選單的中文會透到說明框上，所以說明開著時用它自己的 dfi18n disable 暫停翻譯，關掉後恢復、拆掉本包的包裝
+-- （DFCN 沒有從 Lua 暫停的方法，它自己會避開 DFHack 視窗蓋住的格子）
 local NOTICE_TITLE = 'DFLang: another translation mod is active'
 
 local function notice_engine(dir)
@@ -323,22 +335,22 @@ local function notify(c, dir)
         if c.notice then return dialogs.showMessage(NOTICE_TITLE, c.notice, COLOR_WHITE) end
         local engine = notice_engine(dir)
         local text = table.concat({
-            'DFI18n is also installed. Only one translation engine',
+            ('%s is also installed. Only one translation engine'):format(c.name),
             'can run at a time, so DFLang is not running.',
             '',
             'Choose the one to use; it takes effect after you',
             'restart the game. To switch again later, type',
-            'dflang lang off (back to DFI18n) or',
+            ('dflang lang off (back to %s) or'):format(c.name),
             ('dflang lang %s (DFLang) in the DFHack console.'):format(LANG)}, '\n')
-        dialogs.showListPrompt(NOTICE_TITLE, text, COLOR_WHITE, {'Turn off DFI18n and use DFLang', 'Keep using DFI18n'},
+        dialogs.showListPrompt(NOTICE_TITLE, text, COLOR_WHITE,
+            {('Turn off %s and use DFLang'):format(c.name), ('Keep using %s'):format(c.name)},
             function(choice)
-                local dflang = reqscript('dflang')
                 if choice ~= 1 then
-                    dflang.set_lang('off')
+                    dflang().set_lang('off')
                     return release_notice(engine)
                 end
-                dialogs.showMessage('DFLang', dflang.hide_dfi18n() and 'DFI18n has been turned off.\nRestart the game to use DFLang.'
-                    or 'Could not write to the mods folder.', COLOR_WHITE, function() release_notice(engine) end)
+                dialogs.showMessage('DFLang', dflang()[c.off]() and ('%s has been turned off.\nRestart the game to use DFLang.'):format(c.name)
+                    or c.off_failed, COLOR_WHITE, function() release_notice(engine) end)
             end,
             function() release_notice(engine) end)
     end
@@ -347,8 +359,13 @@ end
 
 local function start()
     if dfhack.BASE_G.DFLANG then return end
+    local other = conflict()
     local lang = chosen_lang()
-    if lang == 'off' then return log('已設定為不啟用（dflang lang %s 可重新啟用）', LANG) end
+    if lang == 'off' then
+        if other then return log('已設定為改用 %s，本 MOD 不啟用（dflang lang %s 可改回）', other.name, LANG) end
+        -- 選了改用的翻譯 MOD 已經移除：照常啟用，免得玩家以為本 MOD 壞了
+        lang = default_lang()
+    end
     if lang ~= LANG then
         log('另一個語言包啟用中，本包不載入（dflang lang %s 可切換）', LANG)
         return
@@ -356,7 +373,6 @@ local function start()
     local dir = mod_dir(MOD_ID)
     if not dir then return fail('找不到本 MOD 的目錄（%s）', MOD_ID) end
     dir = dir .. 'dflang/'
-    local other = conflict()
     if other then
         fail('偵測到 %s：兩個翻譯引擎會攔同一批函式，本 MOD 不啟動；標題畫面會說明怎麼切換。', other.name)
         return notify(other, dir)

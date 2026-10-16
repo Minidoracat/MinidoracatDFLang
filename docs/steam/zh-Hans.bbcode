@@ -36,7 +36,7 @@
 [h2]注意[/h2]
 [list]
 [*] 同时订阅繁体中文版时，默认启用繁体；在 DFHack 控制台输入 [b]dflang lang zh-Hans[/b] 可切换，重启游戏生效。
-[*] 翻译引擎一次只能有一个在运行。同时装了 DFI18n 时，标题画面会弹出说明让你选择要用哪一个，重启游戏生效；之后想改回 DFI18n，在 DFHack 控制台输入 [b]dflang lang off[/b]。（选择本模组时，会在游戏的 mods 文件夹放一个 dflang-hide-dfi18n 让 DFI18n 不加载，DFI18n 本身不会被修改。）装了 dfzh 或 DFCN 时本模组不会启动，标题画面会用英文说明怎么移除它们。
+[*] 翻译引擎一次只能有一个在运行。同时装了 DFCN 或 DFI18n 时，标题画面会弹出说明让你选择要用哪一个，重启游戏生效；之后想改回，在 DFHack 控制台输入 [b]dflang lang off[/b]。选择本模组时，DFI18n 是在游戏的 mods 文件夹放一个 dflang-hide-dfi18n 让它不加载；DFCN 是把游戏目录的 dfhooks_dfcn.ini 改名为 dfhooks_dfcn.ini.disabled-by-dflang。两者的文件都不会被删除；取消订阅本模组前想用回 DFCN，先输入 [b]dflang lang off[/b]。装了 dfzh 时本模组不会启动，标题画面会用英文说明怎么移除。
 [*] 输入 [b]dflang status[/b] 可查看引擎状态。
 [*] 游戏运行中改变窗口大小或分辨率时，中文字会被缩放而变模糊，重启游戏即可恢复清晰。
 [*] 译文错误或没有翻译到的地方，欢迎到 GitHub 提交 Issue 反馈（附截图更好）。

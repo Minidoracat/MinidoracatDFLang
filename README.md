@@ -40,7 +40,13 @@
 2. 訂閱[繁中](https://steamcommunity.com/sharedfiles/filedetails/?id=3820630135)或[簡中](https://steamcommunity.com/sharedfiles/filedetails/?id=3820630318)項目，正常啟動遊戲。
 3. 兩個都訂閱時預設繁中；在 DFHack 主控台輸入 `dflang lang zh-Hans` 或 `dflang lang zh-Hant` 切換，重開遊戲生效。
 
-翻譯引擎一次只能有一個在運作。同時裝了 DFI18n 時，本 MOD 讓位，標題畫面跳出說明讓你選要用哪一個：選「關閉 DFI18n」會在遊戲的 `mods` 資料夾放一個 `dflang-hide-dfi18n`（ID 和 DFI18n 相同、版本較高，DFHack 就不載入 DFI18n；DFI18n 本身的檔案不動；遊戲裡找不到本 MOD 時，這個資料夾會在下次啟動時自己刪掉），重開遊戲生效；之後要改回 DFI18n，在 DFHack 主控台輸入 `dflang lang off`。裝了 dfzh 或 DFCN 時本 MOD 不啟動，標題畫面用英文說明怎麼移除它們。`dflang status` 查看狀態。
+翻譯引擎一次只能有一個在運作。同時裝了 DFCN 或 DFI18n 時，本 MOD 讓位，標題畫面跳出中文說明讓你選要用哪一個，重開遊戲生效：
+
+- 選「關閉 DFI18n」：在遊戲的 `mods` 資料夾放一個 `dflang-hide-dfi18n`（ID 和 DFI18n 相同、版本較高，DFHack 就不載入 DFI18n；DFI18n 本身的檔案不動）。遊戲裡找不到本 MOD 時，這個資料夾會在下次啟動時自己刪掉。
+- 選「關閉 DFCN」：把遊戲目錄的 `dfhooks_dfcn.ini`（舊版 DFCN 是 `dfhooks_dfcn.dll`）改名成加上 `.disabled-by-dflang` 的檔名，dfhooks 就不載入 DFCN。退訂本 MOD 前想用回 DFCN，先輸入 `dflang lang off`，或自己把檔名改回來。
+- 選「繼續用」，或之後在 DFHack 主控台輸入 `dflang lang off`：改用另一個翻譯 MOD，之前停用的會恢復。偵測不到其他翻譯 MOD 時，本 MOD 照常啟用。
+
+裝了 dfzh 時本 MOD 不啟動，標題畫面用英文說明怎麼移除。`dflang status` 查看狀態。
 
 標題畫面左下角會出現本 MOD 的貓娘吉祥物和「繁體中文／简体中文」名牌。要移動或關掉，在 DFHack 主控台輸入 `gui/overlay`，找 `dflang_zh_hant.mascot`（簡中包是 `dflang_zh_hans.mascot`）。
 
@@ -58,7 +64,7 @@ flowchart LR
 ```
 
 - DF 本身不載入 MOD 的原生程式；DFHack 會執行每個已安裝 MOD 的 `scripts_modinstalled/`，引擎就從這裡以 Lua `package.loadlib` 載入，只用 Lua C API，不綁 DFHack 版本。
-- 中文字由遊戲自己的繪圖流程畫出：每個中文字佔兩格，字圖在遊戲啟動時依當下的文字格大小從思源黑體（Noto Sans CJK Medium）畫成，套用字型的 hinting，縮放不會糊。
+- 中文字由遊戲自己的繪圖流程畫出：每個中文字佔兩格，字圖在遊戲啟動時依當下的文字格大小從思源黑體（Noto Sans CJK Bold）畫成，套用字型的 hinting，縮放不會糊。
 - 遊戲執行時拼出的句子（名字、數字、隨機字詞）用句型規則翻譯，例如 `Histories of {1} and {2}` →「{1}與{2}的歷史」。同一個英文在不同畫面意思不同時，用只在該畫面套用的依畫面譯文。
 - 名稱（生物、植物、材料、物品）各自翻好，遊戲拼出的物品名由句型接起來；遊戲把名稱改成大寫（`Stray One-humped Camel`）時，整句查不到就改查全部小寫的寫法。
 - 自動換行的段落（說明、教學、彈出視窗）與提示框整句查字典、依中文規則重新換行，畫字時才換成中文；遊戲資料與存檔維持英文，移除本 MOD 不留痕跡。
@@ -117,5 +123,5 @@ uv run scripts/dev_game.py down               # 關遊戲、還原 mods/ 與設�
 - 譯文與術語表（`data/`、`glossary/`）：[CC BY 4.0](LICENSE-CC-BY-4.0.txt)。轉載或改作請註明出處。
 - 其餘程式與文件：[MIT](LICENSE)。
 - 吉祥物圖（`art/`）與工作坊封面（`docs/steam/cover-*.gif`）：© Minidoracat，保留所有權利，不在上述授權範圍內。
-- 字型：思源黑體（Noto Sans CJK TC／SC Medium），SIL Open Font License 1.1，工作坊包內附授權全文。
+- 字型：思源黑體（Noto Sans CJK TC／SC Bold），SIL Open Font License 1.1，工作坊包內附授權全文。
 - 致謝與參考來源見 [CREDITS.md](CREDITS.md)。

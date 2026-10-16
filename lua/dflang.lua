@@ -1,4 +1,5 @@
--- dflang：DFLang 中文化引擎指令（在 DFHack 主控台或 dfhack-run 執行）。也當模組用：載入器在標題畫面的切換說明裡呼叫 hide_dfi18n()。
+-- dflang：DFLang 中文化引擎指令（在 DFHack 主控台或 dfhack-run 執行）。也當模組用：載入器用 dfcn_installed() 偵測 DFCN，
+-- 在標題畫面的切換說明裡呼叫 hide_dfi18n()、disable_dfcn()。
 --@ module = true
 
 local USAGE = [[
@@ -7,7 +8,8 @@ local USAGE = [[
   dflang on | off                   開關翻譯
   dflang t <英文原文>                查目前語言的譯文（整句字典、再句型規則）
   dflang lang zh-Hant|zh-Hans       繁、簡兩包都裝時選擇語言，重開遊戲生效
-  dflang lang off                   不啟用 DFLang、改用 DFI18n 等其他翻譯（之前停用的 DFI18n 會恢復），重開遊戲生效
+  dflang lang off                   改用 DFI18n、DFCN 等其他翻譯（之前停用的 DFI18n、DFCN 會恢復），重開遊戲生效；
+                                    偵測不到其他翻譯 MOD 時本 MOD 照常啟用
   dflang misses on|off              把畫面上沒翻到的字串去重記錄到 dfhack-config/dflang-misses.tsv；
                                     設定會記住，之後每次啟動都自動記錄，直到 off
 ]]
@@ -65,6 +67,45 @@ function unhide_dfi18n()
     return dfhack.filesystem.rmdir(HIDE_DIR)
 end
 
+-- 停用 DFCN：dfhooks 只載入遊戲目錄裡主檔名以 dfhooks_ 開頭、副檔名是 .ini（第一行寫 DLL 路徑）或 .dll 的檔案
+-- （DFHack/dfhooks 的 ChainLoader.cpp），DFCN 的入口檔加上 DFCN_OFF 這個副檔名就不會載入；改回原檔名就恢復，DFCN 其他檔案不動。
+-- 舊版 DFCN 直接把 dfhooks_dfcn.dll 放在遊戲目錄，一起處理
+local DFCN_FILES = {'dfhooks_dfcn.ini', 'dfhooks_dfcn.dll'}
+local DFCN_OFF = '.disabled-by-dflang'
+
+local function install_dir()
+    return (dfhack.filesystem.getInstallDir():gsub('[/\\]?$', '/'))
+end
+
+function dfcn_installed()
+    local dir = install_dir()
+    for _, name in ipairs(DFCN_FILES) do
+        if dfhack.filesystem.isfile(dir .. name) then return true end
+    end
+    return false
+end
+
+function disable_dfcn()
+    local dir, ok = install_dir(), true
+    for _, name in ipairs(DFCN_FILES) do
+        if dfhack.filesystem.isfile(dir .. name) then
+            os.remove(dir .. name .. DFCN_OFF)  -- 之前停用過、玩家又照 DFCN 的說明重新複製一份
+            ok = os.rename(dir .. name, dir .. name .. DFCN_OFF) and ok
+        end
+    end
+    return ok
+end
+
+function enable_dfcn()
+    local dir, any = install_dir(), false
+    for _, name in ipairs(DFCN_FILES) do
+        if dfhack.filesystem.isfile(dir .. name .. DFCN_OFF) and not dfhack.filesystem.isfile(dir .. name) then
+            any = os.rename(dir .. name .. DFCN_OFF, dir .. name) and true or any
+        end
+    end
+    return any
+end
+
 function set_lang(lang)
     local config = json.open(CONFIG_FILE)
     config.data.lang = lang
@@ -82,7 +123,11 @@ if cmd == 'lang' then
     if lang ~= 'zh-Hant' and lang ~= 'zh-Hans' and lang ~= 'off' then qerror(USAGE) end
     set_lang(lang)
     if lang == 'off' then
-        print(unhide_dfi18n() and '已設定為不啟用 DFLang，並恢復 DFI18n；重開遊戲後生效。' or '已設定為不啟用 DFLang，重開遊戲後生效。')
+        local back = {}
+        if unhide_dfi18n() then table.insert(back, 'DFI18n') end
+        if enable_dfcn() then table.insert(back, 'DFCN') end
+        print(#back > 0 and ('已設定為改用其他翻譯，並恢復 %s；重開遊戲後生效。'):format(table.concat(back, '、'))
+            or '已設定為改用其他翻譯，重開遊戲後生效（偵測不到其他翻譯 MOD 時本 MOD 照常啟用）。')
     else
         print(('已設定為 %s，重開遊戲後生效。'):format(lang))
     end
