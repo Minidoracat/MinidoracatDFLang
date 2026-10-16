@@ -1181,6 +1181,11 @@ impl Dict {
         Some((out, clean))
     }
 
+    /// status 用：句型結果快取的筆數
+    pub fn cache_len(&self) -> usize {
+        self.cache.lock().len()
+    }
+
     /// hook 用：整句字典沒有時，先試首字小寫的名稱、遊戲組過的世界生成名稱，再套句型規則並換算成替身字串，
     /// 最後試被截斷的字串。譯文比原文寬或缺字圖時放棄，照畫英文。
     pub fn rule_entry(&self, key: &[u8]) -> Option<Arc<Entry>> {

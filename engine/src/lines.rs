@@ -120,6 +120,12 @@ pub unsafe fn line_plan(s: usize) -> Option<Plan> {
     (*line.text == *unsafe { str_bytes(s) }).then(|| line.plan.clone())
 }
 
+/// status 用：(登記的行數, 計畫快取筆數)
+pub fn counts() -> (usize, usize) {
+    let lines = LINES.lock().len();
+    (lines, PLANS.lock().len())
+}
+
 /// 這幾行都已經照現在的內容登記過畫字計畫（每幀重畫的框不必每幀重算、重登記）。
 pub unsafe fn planned(lines: &[usize]) -> bool {
     let table = LINES.lock();

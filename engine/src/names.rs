@@ -99,6 +99,11 @@ pub fn generation() -> u64 {
     GENERATION.load(Ordering::Acquire)
 }
 
+/// status 用：登記的英文名筆數
+pub fn count() -> usize {
+    NAMES.lock().len()
+}
+
 const NOUN: usize = 0;
 const ADJ: usize = 1;
 const PREFIX: usize = 2;

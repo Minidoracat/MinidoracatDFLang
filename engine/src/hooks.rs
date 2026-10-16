@@ -10,7 +10,7 @@ use std::cell::RefCell;
 use std::collections::{HashMap, HashSet, VecDeque};
 use std::ffi::CStr;
 use std::fs::File;
-use std::io::Write;
+use std::io::{Read, Write};
 use std::sync::atomic::{AtomicBool, AtomicPtr, AtomicU64, AtomicUsize, Ordering};
 use std::sync::{Arc, LazyLock, OnceLock};
 
@@ -157,6 +157,10 @@ pub fn set_enabled(on: bool) -> Result<(), String> {
         unsafe { if on { d.enable() } else { d.disable() } }.map_err(|e| e.to_string())?;
     }
     ENABLED.store(on, Ordering::Release);
+    if !on {
+        // render_things 的 hook 停了，整句貼圖不會再換幀：清掉收到一半的字與最後一幀（見 overlay::record）
+        crate::overlay::reset();
+    }
     Ok(())
 }
 
@@ -166,22 +170,72 @@ pub fn hook_count() -> usize {
 
 // ---- 未翻譯字串記錄（翻譯補漏用） ----
 
+/// 紀錄檔最多幾筆（不重複的原文）、幾位元組，到了就不再寫（status 的 misses_full）。
+/// 開發期八十多次實機測試合計才 2,854 筆不重複、215 KB；一般遊玩每小時約一百到一千筆，兩萬筆約幾十小時，
+/// 再多大多是一直變的數字、名字。位元組上限防傳說頁的整段（一段可到 7 KB）把檔案撐大。
+const MISS_LIMIT: usize = 20_000;
+const MISS_BYTES: u64 = 4 << 20;
+
 struct MissLog {
+    /// 檔案裡已有的原文（CP437）：開檔時讀進來，跨次啟動不重寫
     seen: HashSet<Vec<u8>>,
     file: File,
+    bytes: u64,
+}
+
+impl MissLog {
+    /// 開檔（沒有就建），讀進已記過的原文。上次寫到一半、最後一行沒換行時先補換行。
+    fn open(path: &str) -> std::io::Result<MissLog> {
+        let mut file = File::options().create(true).read(true).append(true).open(path)?;
+        let mut old = Vec::new();
+        file.read_to_end(&mut old)?;
+        if old.last().is_some_and(|&b| b != b'\n') {
+            file.write_all(b"\n")?;
+            old.push(b'\n');
+        }
+        let seen = String::from_utf8_lossy(&old)
+            .lines()
+            .filter_map(|line| cp437::encode(line.split_once('\t')?.1))
+            .collect();
+        Ok(MissLog { seen, file, bytes: old.len() as u64 })
+    }
+
+    fn full(&self) -> bool {
+        self.seen.len() >= MISS_LIMIT || self.bytes >= MISS_BYTES
+    }
+
+    /// 沒記過的原文寫一行（一次寫入）；回傳之後還能不能再記（滿了是 false）
+    fn note(&mut self, kind: &str, key: &[u8]) -> bool {
+        if self.full() {
+            return false;
+        }
+        // 先查再複製：同一個字串每幀都會來，只有第一次配置
+        if !self.seen.contains(key) {
+            let line = format!("{kind}\t{}\n", cp437::decode(key));
+            if self.file.write_all(line.as_bytes()).is_ok() {
+                self.bytes += line.len() as u64;
+            }
+            self.seen.insert(key.to_vec());
+        }
+        !self.full()
+    }
 }
 
 static MISS_LOG: Mutex<Option<MissLog>> = Mutex::new(None);
+/// 正在記而且還沒滿；note_miss 只看它，關著或滿了就不鎖 MISS_LOG
 static MISS_LOG_ON: AtomicBool = AtomicBool::new(false);
 
+/// 開始記到 path（nil 停止）。已有的紀錄照留，記過的原文不再寫。
 pub fn log_misses(path: Option<&str>) -> std::io::Result<()> {
     let mut log = MISS_LOG.lock();
-    *log = match path {
-        Some(p) => Some(MissLog { seen: HashSet::new(), file: File::options().create(true).append(true).open(p)? }),
-        None => None,
-    };
-    MISS_LOG_ON.store(log.is_some(), Ordering::Release);
+    *log = path.map(MissLog::open).transpose()?;
+    MISS_LOG_ON.store(log.as_ref().is_some_and(|l| !l.full()), Ordering::Release);
     Ok(())
+}
+
+/// status 用：(正在記, 檔案裡有幾筆, 滿了沒)
+pub fn miss_log_state() -> (bool, usize, bool) {
+    MISS_LOG.lock().as_ref().map_or((false, 0, false), |l| (true, l.seen.len(), l.full()))
 }
 
 fn note_miss(kind: &str, key: &[u8]) {
@@ -189,11 +243,14 @@ fn note_miss(kind: &str, key: &[u8]) {
     if !MISS_LOG_ON.load(Ordering::Relaxed) || !key.iter().any(u8::is_ascii_alphabetic) {
         return;
     }
-    if let Some(log) = MISS_LOG.lock().as_mut() {
-        if log.seen.insert(key.to_vec()) {
-            let _ = writeln!(log.file, "{kind}\t{}", cp437::decode(key));
-        }
+    if MISS_LOG.lock().as_mut().is_some_and(|log| !log.note(kind, key)) {
+        MISS_LOG_ON.store(false, Ordering::Release);
     }
+}
+
+/// status 用：DFHack 段落行的筆數
+pub fn dh_lines_len() -> usize {
+    DH_LINES.lock().len()
 }
 
 // ---- 貼字圖 ----
@@ -1216,7 +1273,7 @@ fn label_tiles(n: usize, entry: &Entry, dict: &Dict, font: impl Fn(u8) -> i32) -
 
 #[cfg(test)]
 mod tests {
-    use super::{label_tiles, placed_align, wrap_plan, Columns};
+    use super::{label_tiles, placed_align, wrap_plan, Columns, MissLog, MISS_BYTES, MISS_LIMIT};
     use crate::dict::Dict;
     use std::collections::HashMap;
 
@@ -1301,5 +1358,64 @@ mod tests {
         assert_eq!(wrap_plan(&d, b"First line.\nThird line.", 20, &lines(&["First line.", "Third line."])), None, "有一段翻不出來就整段照英文");
         assert_eq!(wrap_plan(&d, b"First line.", 20, &lines(&["First", "line.", "extra"])), None, "英文行對不回原文就照英文");
         assert_eq!(wrap_plan(&d, b"  First line.", 20, &lines(&["  First line."])), Some(vec![(0, row("  第一行。"))]), "段首縮排照留");
+    }
+
+    /// 測試用的紀錄檔（每個測試一個檔名），結束時刪掉
+    struct TempLog(std::path::PathBuf);
+
+    impl TempLog {
+        fn new(name: &str, content: &[u8]) -> TempLog {
+            let path = std::env::temp_dir().join(format!("dflang-misses-{}-{name}.tsv", std::process::id()));
+            std::fs::write(&path, content).unwrap();
+            TempLog(path)
+        }
+
+        fn path(&self) -> &str {
+            self.0.to_str().unwrap()
+        }
+
+        fn text(&self) -> String {
+            std::fs::read_to_string(&self.0).unwrap()
+        }
+    }
+
+    impl Drop for TempLog {
+        fn drop(&mut self) {
+            let _ = std::fs::remove_file(&self.0);
+        }
+    }
+
+    #[test]
+    fn miss_log_keeps_strings_already_in_the_file() {
+        // 上次寫到一半（最後一行沒換行）；CP437 的 ë（0x89）照解碼後的字比對
+        let tmp = TempLog::new("reopen", "addst\tHello\nmtb\tUrist ë".as_bytes());
+        let mut log = MissLog::open(tmp.path()).unwrap();
+        assert_eq!(log.seen.len(), 2);
+        assert!(log.note("addst", b"Hello") && log.note("wrap", b"Urist \x89"), "記過的不再寫");
+        assert!(log.note("dfhack", b"New one") && log.note("addst", b"New one"));
+        drop(log);
+        let mut log = MissLog::open(tmp.path()).unwrap();
+        assert_eq!(log.seen.len(), 3, "重開時讀回這次新記的");
+        assert!(log.note("addst", b"New one"));
+        drop(log);
+        assert_eq!(tmp.text(), "addst\tHello\nmtb\tUrist ë\ndfhack\tNew one\n", "補上換行、每句只記一次");
+    }
+
+    #[test]
+    fn miss_log_stops_at_the_limit() {
+        let lines: String = (0..MISS_LIMIT - 1).map(|i| format!("addst\tLine {i}\n")).collect();
+        let tmp = TempLog::new("limit", lines.as_bytes());
+        let mut log = MissLog::open(tmp.path()).unwrap();
+        assert!(!log.full());
+        assert!(!log.note("addst", b"Last one"), "記到上限就回報滿了");
+        assert!(!log.note("addst", b"Too many"));
+        drop(log);
+        let text = tmp.text();
+        assert!(text.ends_with("addst\tLast one\n") && !text.contains("Too many"), "滿了之後不再寫");
+        assert!(MissLog::open(tmp.path()).unwrap().full(), "重開時照樣是滿的");
+
+        let big = TempLog::new("bytes", format!("mtb\t{}\n", "a".repeat(MISS_BYTES as usize)).as_bytes());
+        let mut log = MissLog::open(big.path()).unwrap();
+        assert!(log.full() && !log.note("addst", b"More"), "檔案大小到上限也停");
     }
 }

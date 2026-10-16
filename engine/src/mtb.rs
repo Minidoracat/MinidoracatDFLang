@@ -683,6 +683,13 @@ pub unsafe fn word_plan(s: usize) -> Option<Plan> {
     unsafe { (read::<i32>(w, l.word_px) == *px && read::<i32>(w, l.word_py) == *py).then(|| plan.clone()) }
 }
 
+/// status 用：(登記的單字數, 段落數)
+pub fn counts() -> (usize, usize) {
+    // 一次只鎖一個（rewrite 是先鎖 STATES 再鎖 WORDS，同時鎖兩個要照同樣順序）
+    let states = STATES.lock().len();
+    (WORDS.lock().len(), states)
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;

@@ -82,6 +82,12 @@ fn size_for(row: Row, rows: Option<(bool, bool)>, grow: bool) -> usize {
 
 /// 自己建的一行貼圖上限，滿了丟掉最久沒用的
 const CACHE_LIMIT: usize = 2048;
+/// 目前快取的貼圖張數（status 用；快取在主執行緒的 thread_local 裡，別的執行緒看不到）
+static TEXTURES: AtomicUsize = AtomicUsize::new(0);
+
+pub fn texture_count() -> usize {
+    TEXTURES.load(Ordering::Relaxed)
+}
 
 /// 交給整句貼圖畫的一般字元：可見 ASCII、CP437 的拉丁字母（矮人名字的 ë、ü…）、♂♀ 與譯名的間隔號 ·（names.rs）；
 /// 方框、箭頭、☼ 這類圖形字元與 ¢£¥₧ƒ 照遊戲原樣畫。字型子集要有這些字（scripts/build.py）。
@@ -190,7 +196,8 @@ static FRAME: Mutex<Option<Arc<Vec<Run>>>> = Mutex::new(None);
 /// pad 是結尾補位的格數（見 Run::pad），text 是照字寬縮短的段落（見 Run::text），dfhack 是 DFHack 畫的字。
 #[allow(clippy::too_many_arguments)]
 pub fn record(gps: *mut u8, top: bool, row: Row, x0: i32, y: i32, shadow: &[u8], glyphs: &[(usize, u32)], align: u8, pad: usize, text: Option<&str>, dfhack: bool) {
-    if !ON.load(Ordering::Relaxed) {
+    // 翻譯關著時 render_things 的 hook 也停了，BUILD 不會每幀清：不記，免得 DFHack 照畫的字一直堆
+    if !ON.load(Ordering::Relaxed) || !crate::hooks::ENABLED.load(Ordering::Acquire) {
         return;
     }
     if glyphs.is_empty() && text.is_none() && !shadow.iter().any(|&b| b != b' ' && is_text(b)) {
@@ -204,7 +211,7 @@ pub fn record(gps: *mut u8, top: bool, row: Row, x0: i32, y: i32, shadow: &[u8],
 /// 錨定貼圖標籤（出發準備畫面的分頁，見 hooks.rs finish_label）換好貼圖時呼叫（非同步執行緒）：(x0, y) 起每格換上的貼圖、
 /// 譯文，lift 是遊戲畫這張貼圖時往下位移的像素。分頁寬度照英文標籤算，譯文在標籤寬度裡置中。
 pub fn record_label(gps: *mut u8, x0: i32, y: i32, tiles: &[i32], text: &str, lift: i32) {
-    if !ON.load(Ordering::Relaxed) {
+    if !ON.load(Ordering::Relaxed) || !crate::hooks::ENABLED.load(Ordering::Acquire) {
         return;
     }
     GPS.store(gps as usize, Ordering::Relaxed);
@@ -221,7 +228,22 @@ pub fn frame_begin() {
 
 pub fn frame_end() {
     let runs = std::mem::take(&mut *BUILD.lock());
-    *FRAME.lock() = Some(Arc::new(runs));
+    // 握著 FRAME 再看開關：翻譯剛關掉時，關之前就開始的這一幀不能蓋掉 reset 放的空幀
+    let mut frame = FRAME.lock();
+    *frame = Some(Arc::new(if crate::hooks::ENABLED.load(Ordering::Acquire) { runs } else { Vec::new() }));
+}
+
+/// 翻譯關掉時呼叫（ENABLED 已設成 false 之後）：丟掉還沒收完的字，最後一幀換成空的（update_all 照空的一幀清掉格子的記號，
+/// 遊戲照原樣畫）。再開時 render_things 的 hook 跟著恢復，下一幀照常收。
+pub fn reset() {
+    *BUILD.lock() = Vec::new();
+    *FRAME.lock() = Some(Arc::new(Vec::new()));
+}
+
+/// status 用：本幀收到幾段字、還沒收完的有幾段（翻譯關著時兩個都應該是 0）
+pub fn run_counts() -> (usize, usize) {
+    let frame = FRAME.lock().as_ref().map_or(0, |f| f.len());
+    (frame, BUILD.lock().len())
 }
 
 /// 除錯：update_all 每幀的耗時（微秒，指數平均）：[整個 update_all, 其中整句貼圖自己花的（核對＋貼圖）]
@@ -1119,6 +1141,7 @@ impl State {
             }
         }
         self.cache.insert(key, Strip { tex, ranges: ranges.clone(), last: frame });
+        TEXTURES.store(self.cache.len(), Ordering::Relaxed);
         Some((tex, ranges))
     }
 }
@@ -1231,5 +1254,35 @@ mod tests {
         assert_eq!(per_cell(SNUG), 13.0 / 16.0);
         // 超出 13～16 的設定不算（不改全域的字身）
         assert!(!set_em(12) && !set_em(17));
+    }
+
+    /// 翻譯關掉後 render_things 的 hook 不跑、BUILD 不會每幀清：DFHack 照畫的字不能再記；開回來照常收
+    #[test]
+    fn runs_stop_piling_up_while_translation_is_off() {
+        let gps = std::ptr::null_mut();
+        let plain = || record(gps, false, Row::Whole, 0, 0, b"DFHack 53.16-r2", &[], b'l', 0, None, true);
+        ON.store(true, Ordering::Release);
+        crate::hooks::set_enabled(true).unwrap();
+        frame_begin();
+        plain();
+        frame_end();
+        assert_eq!(run_counts(), (1, 0));
+        plain();
+        crate::hooks::set_enabled(false).unwrap();
+        assert_eq!(run_counts(), (0, 0), "關掉時清掉收到一半的字與最後一幀");
+        for _ in 0..1000 {
+            plain();
+            record_label(gps, 0, 0, &[1, 2], "分頁", 0);
+        }
+        assert_eq!(run_counts(), (0, 0), "關著時不記");
+        frame_end();
+        assert_eq!(run_counts(), (0, 0), "關之前就開始的一幀不蓋掉空幀");
+        crate::hooks::set_enabled(true).unwrap();
+        frame_begin();
+        plain();
+        frame_end();
+        assert_eq!(run_counts(), (1, 0), "開回來照常收");
+        crate::hooks::set_enabled(false).unwrap();
+        ON.store(false, Ordering::Release);
     }
 }

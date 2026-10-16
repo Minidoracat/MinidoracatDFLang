@@ -518,25 +518,52 @@ unsafe extern "C" fn disable(l: lua::State) -> c_int {
     }
 }
 
-/// status() → {enabled, hooks, entries, rules, glyphs, wraps, hits, misses}
+/// status() → {enabled, hooks, entries, rules, glyphs, wraps, hits, misses,
+///   misses_logging, misses_logged, misses_full（未翻譯紀錄：在記嗎、檔案裡幾筆、到上限了沒）,
+///   cache_rules, cache_names, cache_mtb_words, cache_mtb_paragraphs, cache_wrap_lines, cache_wrap_plans,
+///   cache_ctb_lines, cache_ctb_plans, cache_dfhack_lines（各快取目前筆數）,
+///   textures（整句貼圖快取的貼圖張數）, overlay_runs（最後一幀收到的字段）, overlay_pending（還沒收完的字段，翻譯關著時應為 0）}
 unsafe extern "C" fn status(l: lua::State) -> c_int {
     unsafe {
         let dict = hooks::DICT.load(Ordering::Acquire);
-        let (entries, rules, glyphs) =
-            if dict.is_null() { (0, 0, 0) } else { ((*dict).entries.len(), (*dict).rules.len(), (*dict).glyph_of.len()) };
+        let (entries, rules, glyphs, cache_rules) = if dict.is_null() {
+            (0, 0, 0, 0)
+        } else {
+            ((*dict).entries.len(), (*dict).rules.len(), (*dict).glyph_of.len(), (*dict).cache_len())
+        };
+        let (logging, logged, full) = hooks::miss_log_state();
+        let (mtb_words, mtb_paragraphs) = mtb::counts();
+        let (wrap_lines, wrap_plans) = lines::counts();
+        let (ctb_lines, ctb_plans) = ctb::counts();
+        let (overlay_runs, overlay_pending) = overlay::run_counts();
         lua::new_table(l);
-        lua::push_bool(l, hooks::ENABLED.load(Ordering::Acquire));
-        lua::set_field(l, c"enabled");
+        for (name, v) in [(c"enabled", hooks::ENABLED.load(Ordering::Acquire)), (c"misses_logging", logging), (c"misses_full", full)] {
+            lua::push_bool(l, v);
+            lua::set_field(l, name);
+        }
         for (name, v) in [
-            (c"hooks", hooks::hook_count() as i64),
-            (c"entries", entries as i64),
-            (c"rules", rules as i64),
-            (c"glyphs", glyphs as i64),
-            (c"wraps", STATIC_WRAPS.load(Ordering::Relaxed) as i64),
-            (c"hits", hooks::HITS.load(Ordering::Relaxed) as i64),
-            (c"misses", hooks::MISSES.load(Ordering::Relaxed) as i64),
+            (c"hooks", hooks::hook_count()),
+            (c"entries", entries),
+            (c"rules", rules),
+            (c"glyphs", glyphs),
+            (c"wraps", STATIC_WRAPS.load(Ordering::Relaxed)),
+            (c"hits", hooks::HITS.load(Ordering::Relaxed) as usize),
+            (c"misses", hooks::MISSES.load(Ordering::Relaxed) as usize),
+            (c"misses_logged", logged),
+            (c"cache_rules", cache_rules),
+            (c"cache_names", names::count()),
+            (c"cache_mtb_words", mtb_words),
+            (c"cache_mtb_paragraphs", mtb_paragraphs),
+            (c"cache_wrap_lines", wrap_lines),
+            (c"cache_wrap_plans", wrap_plans),
+            (c"cache_ctb_lines", ctb_lines),
+            (c"cache_ctb_plans", ctb_plans),
+            (c"cache_dfhack_lines", hooks::dh_lines_len()),
+            (c"textures", overlay::texture_count()),
+            (c"overlay_runs", overlay_runs),
+            (c"overlay_pending", overlay_pending),
         ] {
-            lua::push_int(l, v);
+            lua::push_int(l, v as i64);
             lua::set_field(l, name);
         }
         1

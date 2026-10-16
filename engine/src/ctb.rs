@@ -214,6 +214,12 @@ pub unsafe fn line_plan(s: usize) -> Option<Plan> {
     (*line.text == *unsafe { cstr(s) }).then(|| line.plan.clone())
 }
 
+/// status 用：(登記的行數, 計畫快取筆數)
+pub fn counts() -> (usize, usize) {
+    let lines = LINES.lock().len();
+    (lines, PLANS.lock().len())
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
