@@ -417,13 +417,16 @@ marble	大理石	大理石		INORGANIC:MARBLE STATE_NAME_ADJ
 hematite	赤鐵礦	赤铁矿		INORGANIC:HEMATITE STATE_NAME_ADJ
 limonite	褐鐵礦	褐铁矿		INORGANIC:LIMONITE STATE_NAME_ADJ
 garnierite	矽鎂鎳礦	硅镁镍矿		INORGANIC:GARNIERITE STATE_NAME_ADJ；兩岸用字不同（矽／硅）
+gold nuggets	自然金塊	自然金块		INORGANIC:NATIVE_GOLD STONE_NAME：這種礦的石塊名（石材用途清單、物品名）；接「自然金」，看得出是原礦，不和金屬錠（錠）、磚塊混淆
 native gold	自然金	自然金		INORGANIC:NATIVE_GOLD STATE_NAME
 native gold dust	自然金粉	自然金粉		INORGANIC:NATIVE_GOLD STATE_NAME
 molten native gold	熔融自然金	熔融自然金		INORGANIC:NATIVE_GOLD STATE_NAME_ADJ
 boiling native gold	沸騰的自然金	沸腾的自然金		INORGANIC:NATIVE_GOLD STATE_NAME_ADJ
+silver nuggets	自然銀塊	自然银块		INORGANIC:NATIVE_SILVER STONE_NAME：同 gold nuggets
 native silver	自然銀	自然银		INORGANIC:NATIVE_SILVER STATE_NAME_ADJ
 molten native silver	熔融自然銀	熔融自然银		INORGANIC:NATIVE_SILVER STATE_NAME_ADJ
 boiling native silver	沸騰的自然銀	沸腾的自然银		INORGANIC:NATIVE_SILVER STATE_NAME_ADJ
+copper nuggets	自然銅塊	自然铜块		INORGANIC:NATIVE_COPPER STONE_NAME：同 gold nuggets
 native copper	自然銅	自然铜		INORGANIC:NATIVE_COPPER STATE_NAME_ADJ
 molten native copper	熔融自然銅	熔融自然铜		INORGANIC:NATIVE_COPPER STATE_NAME_ADJ
 boiling native copper	沸騰的自然銅	沸腾的自然铜		INORGANIC:NATIVE_COPPER STATE_NAME_ADJ
@@ -433,6 +436,7 @@ sphalerite	閃鋅礦	闪锌矿		INORGANIC:SPHALERITE STATE_NAME_ADJ
 cassiterite	錫石	锡石		INORGANIC:CASSITERITE STATE_NAME_ADJ
 bituminous coal	煙煤	烟煤		INORGANIC:COAL_BITUMINOUS STATE_NAME_ADJ
 lignite	褐煤	褐煤		INORGANIC:LIGNITE STATE_NAME_ADJ
+platinum nuggets	自然鉑塊	自然铂块		INORGANIC:NATIVE_PLATINUM STONE_NAME：同 gold nuggets
 native platinum	自然鉑	自然铂		INORGANIC:NATIVE_PLATINUM STATE_NAME_ADJ
 molten native platinum	熔融自然鉑	熔融自然铂		INORGANIC:NATIVE_PLATINUM STATE_NAME_ADJ
 boiling native platinum	沸騰的自然鉑	沸腾的自然铂		INORGANIC:NATIVE_PLATINUM STATE_NAME_ADJ
