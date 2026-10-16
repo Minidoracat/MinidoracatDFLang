@@ -32,8 +32,8 @@
   - 第二十三輪：上架前收尾。簡中實機抽查主要畫面（標題、設定、建立世界、出發準備、要塞、傳說、冒險、競技場）；中文字改小一號並對齊英文字身，分頁標籤這類下移半格的文字照英文位置畫，出發準備畫面的分頁標籤不再壓到下緣；補世界生成參數組名稱、工作名「Fish」（釣魚）、勞動分頁排序鈕；簡中引號不放行首；工作坊說明改寫。
   - 第二十四輪：標題畫面存檔清單的世界名、堡壘名（存檔只存英文，引擎把英文拆回名稱字表組中文）、交談畫面頭像下每個字都大寫的稱呼（「哥布林猛獸獵人 名字」）、攻擊選單的無名生物（「洞穴鱷魚」）。
   - 第二十五輪（0.2.0）：整句貼圖。畫面上的字改由引擎照字型的實際字寬整行畫成貼圖（中文不再一字佔兩格，英數也用同一套字型），換解析度、介面縮放後照當下格子大小重畫、不會糊；段落照字寬重新換行、填滿框寬；按鈕、說明視窗標題、分頁標籤依遊戲擺英文的位置置中或靠左；出發準備畫面的分頁標籤、只有一列高的排序按鈕也照字寬畫；DFHack 讀畫面找英文字定位的疊加介面（人物頁的心情）照樣找得到位置。同時裝 DFCN 時說明改成中文、可一鍵停用，字型換成粗體。
-  - 整句 44,049 條、句型 25,258 條（其中 10,344 條由事件句樣板產生）、依畫面譯文 319 條、名稱字表 3,301 條，繁簡分開翻。
-- 已發布到 Steam 工作坊（0.1.1，2026-10-16）：[繁體中文](https://steamcommunity.com/sharedfiles/filedetails/?id=3820630135)、[简体中文](https://steamcommunity.com/sharedfiles/filedetails/?id=3820630318)。
+  - 整句 44,068 條、句型 25,309 條（其中 10,395 條由事件句樣板產生）、依畫面譯文 319 條、名稱字表 3,301 條，繁簡分開翻。
+- 已發布到 Steam 工作坊（0.2.0，2026-10-16）：[繁體中文](https://steamcommunity.com/sharedfiles/filedetails/?id=3820630135)、[简体中文](https://steamcommunity.com/sharedfiles/filedetails/?id=3820630318)。
 
 ## 玩家安裝
 
@@ -122,6 +122,13 @@ uv run scripts/dev_game.py down               # 關遊戲、還原 mods/ 與設�
 ```
 
 遊戲更新後先跑 `uv run scripts/make_patterns.py --check`。特徵碼找不到函式時引擎不啟動、遊戲維持英文，DFHack 主控台顯示 `[DFLang zh-Hant] addst 的特徵碼命中 0 次，這版遊戲可能還不支援`。重新定位的步驟見 [docs/analysis.md](docs/analysis.md) 的「遊戲更新」。
+
+發布（要先取得維護者同意；版本號在 `scripts/workshop.json`）：
+
+```bash
+uv run scripts/publish_workshop.py --item zh-Hant --note "繁中更新說明" [--screenshots] --yes   # 簡中另跑一次 --item zh-Hans
+git tag -a v0.2.0 -m "0.2.0" && git push origin v0.2.0                                    # 每次發布都打 tag，版本號照 workshop.json
+```
 
 ## 授權
 
