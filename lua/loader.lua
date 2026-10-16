@@ -1,9 +1,11 @@
 -- DFLang 中文化（@LANG@）載入器：DFHack 啟動時當模組執行，載入本包 dflang/ 底下的引擎、字典與字圖集。
--- scripts/build.py 依語言換掉 @LANG@、@MOD_ID@、@MASCOT_LABEL@、@AUTHOR@ 並改檔名；兩包檔名不同，DFHack 才會兩支都執行。
+-- scripts/build.py 依語言換掉 @LANG@、@MOD_ID@、@VERSION@、@MASCOT_LABEL@、@AUTHOR@ 並改檔名；兩包檔名不同，DFHack 才會兩支都執行。
 --@module = true
 
 local LANG = '@LANG@'
 local MOD_ID = '@MOD_ID@'
+-- workshop.json 的 version.displayed（設定視窗的標題顯示，玩家回報時看得到自己裝的是哪一版）
+local VERSION = '@VERSION@'
 local PACKAGES = {['zh-Hant'] = 'cat_df_lang_zh_hant', ['zh-Hans'] = 'cat_df_lang_zh_hans'}
 -- 會攔同一批寫字函式的其他翻譯引擎，依序檢查。DFCN 是遊戲啟動時由 dfhooks 載入的 DLL，看遊戲目錄有沒有它的入口檔
 -- （check：dflang.lua 的 dfcn_installed；只訂閱、沒照它的說明複製入口檔就不會啟用）；放最前面：同時也裝了 DFI18n 時，
@@ -549,7 +551,7 @@ local function start()
     local last = dfhack.textures.getTexposByHandle(handles[#handles])
     -- started：這次啟動時的整句貼圖、字身、字重設定，設定視窗（dflang ui）用來判斷改過的設定要不要提示重開
     local config = json.open(CONFIG_FILE).data
-    dfhack.BASE_G.DFLANG = {engine = engine, lang = LANG, dir = dir, config = CONFIG_FILE,
+    dfhack.BASE_G.DFLANG = {engine = engine, lang = LANG, version = VERSION, dir = dir, config = CONFIG_FILE,
                             mascot = load_mascot(engine, dir),
                             started = {overlay = config.overlay ~= false, overlay_size = config.overlay_size or 14,
                                        bold = config.bold ~= false}}

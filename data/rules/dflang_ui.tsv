@@ -5,3 +5,4 @@ This session: {#1} hits, {#2} misses	本次命中 {1} 次、未命中 {2} 次	�
 Chinese text size: {#1}/16 of the cell height.	中文字身：{1}/16 格高。	中文字身：{1}/16 格高。		lua/dflang.lua dflang overlay size（不加數字）
 Chinese text size: {#1}/16 of the cell height (after restarting the game).	中文字身：{1}/16 格高（重開遊戲後生效）。	中文字身：{1}/16 格高（重启游戏后生效）。		lua/dflang.lua dflang overlay size <數字>
 Log size: {#1} KB	紀錄大小：{1} KB	记录大小：{1} KB		lua/dflang.lua 設定視窗：未翻譯紀錄檔大小（無條件進位）
+DFLang Settings v{1}	DFLang 設定 v{1}	DFLang 设置 v{1}	c	lua/dflang.lua 設定視窗標題帶版本號（{1} 是 workshop.json 的 version.displayed，照抄）；沒有版本號時用字串檔的 DFLang Settings

@@ -225,6 +225,8 @@ function DFLangWindow:init()
     local config = json.open(CONFIG_FILE).data
     local state = dfhack.BASE_G.DFLANG
     local status = state and state.engine.status()
+    -- 標題帶版本號（舊版載入器沒有 version，照原本的標題）
+    if state and state.version then self.frame_title = ('DFLang Settings v%s'):format(state.version) end
     local langs = {}
     for _, lang in ipairs{'zh-Hant', 'zh-Hans'} do
         if installed(lang) then table.insert(langs, {label = LANG_NAMES[lang], value = lang}) end

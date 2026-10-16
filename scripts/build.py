@@ -225,7 +225,7 @@ def build_item(item: dict, config: dict, texts: dict[str, list[dict]], names: li
 
     suffix = lang.lower().replace("-", "_")
     loader = ((ROOT / "lua/loader.lua").read_text(encoding="utf-8")
-              .replace("@LANG@", lang).replace("@MOD_ID@", item["id"])
+              .replace("@LANG@", lang).replace("@MOD_ID@", item["id"]).replace("@VERSION@", config["version"]["displayed"])
               .replace("@MASCOT_LABEL@", item["mascot_label"]).replace("@AUTHOR@", config["author"]))
     write_text(out / f"scripts_modinstalled/dflang_{suffix}.lua", loader)
     shutil.copy2(ROOT / "lua/dflang.lua", out / "scripts_modinstalled/dflang.lua")

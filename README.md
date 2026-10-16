@@ -42,7 +42,7 @@
 2. 訂閱[繁中](https://steamcommunity.com/sharedfiles/filedetails/?id=3820630135)或[簡中](https://steamcommunity.com/sharedfiles/filedetails/?id=3820630318)項目，正常啟動遊戲。
 3. 兩個都訂閱時預設繁中；按 `Ctrl-Shift-L` 打開「DFLang 設定」視窗切換語言，重開遊戲生效（也可以在 DFHack 主控台輸入 `dflang lang zh-Hans` 或 `dflang lang zh-Hant`）。
 
-遊戲中任何畫面按 `Ctrl-Shift-L`（或在標題畫面點吉祥物）開「DFLang 設定」視窗，再按一次關掉：顯示引擎狀態，可以暫時改看英文、切換語言、開關整句貼圖、調整中文字身、切換粗體字、開關未翻譯紀錄。語言、整句貼圖、字身、粗體字重開遊戲才生效，改了視窗會以黃字提示。快捷鍵只在遊戲執行時註冊，不寫進 DFHack 的設定檔；想換鍵用 DFHack 的 `gui/keybinds`。原本的 `dflang` 指令照樣能用（`dflang` 不加參數看用法）。
+遊戲中任何畫面按 `Ctrl-Shift-L`（或在標題畫面點吉祥物）開「DFLang 設定」視窗，再按一次關掉：視窗標題顯示目前的版本號（例「DFLang 設定 v0.3.0」，回報問題時請一起附上），顯示引擎狀態，可以暫時改看英文、切換語言、開關整句貼圖、調整中文字身、切換粗體字、開關未翻譯紀錄。語言、整句貼圖、字身、粗體字重開遊戲才生效，改了視窗會以黃字提示。快捷鍵只在遊戲執行時註冊，不寫進 DFHack 的設定檔；想換鍵用 DFHack 的 `gui/keybinds`。原本的 `dflang` 指令照樣能用（`dflang` 不加參數看用法）。
 
 翻譯引擎一次只能有一個在運作。同時裝了 DFCN 或 DFI18n 時，本 MOD 讓位，標題畫面跳出中文說明讓你選要用哪一個，重開遊戲生效：
 
