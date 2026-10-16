@@ -224,3 +224,8 @@ your lack of possession of {1}	你並未持有{1}	你并未持有{1}	inner	FUN_1
 {1} was slain	{1}遇害	{1}遇害	inner	FUN_140697740 L922446 衝突概述：死因不明
 a member of {1} died	{1}的一名成員死亡	{1}的一名成员死亡	inner	FUN_140697740 L922527 衝突概述
 the forces of {1} died	{1}的部隊有人死亡	{1}的部队有人死亡	inner	FUN_140697740 L922530 衝突概述
+The Dwarf {@1} {*2}	矮人{1}{2}	矮人{1}{2}		交談畫面頭像下的稱呼：每個字都大寫（「The Dwarf Merchant Momuz Kogannog」）；{*2} 只收每個字大寫、第一個字不在字典裡的名字，職位才不會被切開；放在 world_01 的 `The {%1} Of {2}`（地圖標題）前面，「The Human Master Of Beasts Iddim」才不會被它拆成「人類大師 Beasts Iddim」（第二十四輪）
+The Human {@1} {*2}	人類{1}{2}	人类{1}{2}		交談畫面頭像下的稱呼：每個字都大寫（「The Dwarf Merchant Momuz Kogannog」）；{*2} 只收每個字大寫、第一個字不在字典裡的名字，職位才不會被切開；放在 world_01 的 `The {%1} Of {2}`（地圖標題）前面，「The Human Master Of Beasts Iddim」才不會被它拆成「人類大師 Beasts Iddim」（第二十四輪）
+The Elf {@1} {*2}	精靈{1}{2}	精灵{1}{2}		交談畫面頭像下的稱呼：每個字都大寫（「The Dwarf Merchant Momuz Kogannog」）；{*2} 只收每個字大寫、第一個字不在字典裡的名字，職位才不會被切開；放在 world_01 的 `The {%1} Of {2}`（地圖標題）前面，「The Human Master Of Beasts Iddim」才不會被它拆成「人類大師 Beasts Iddim」（第二十四輪）
+The Goblin {@1} {*2}	哥布林{1}{2}	哥布林{1}{2}		交談畫面頭像下的稱呼：每個字都大寫（「The Dwarf Merchant Momuz Kogannog」）；{*2} 只收每個字大寫、第一個字不在字典裡的名字，職位才不會被切開；放在 world_01 的 `The {%1} Of {2}`（地圖標題）前面，「The Human Master Of Beasts Iddim」才不會被它拆成「人類大師 Beasts Iddim」（第二十四輪）
+The Kobold {@1} {*2}	狗頭人{1}{2}	狗头人{1}{2}		交談畫面頭像下的稱呼：每個字都大寫（「The Dwarf Merchant Momuz Kogannog」）；{*2} 只收每個字大寫、第一個字不在字典裡的名字，職位才不會被切開；放在 world_01 的 `The {%1} Of {2}`（地圖標題）前面，「The Human Master Of Beasts Iddim」才不會被它拆成「人類大師 Beasts Iddim」（第二十四輪）

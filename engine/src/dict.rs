@@ -89,6 +89,13 @@ enum Kind {
     /// `{&n}`、`{=n}`：書名的隨機名詞、形容詞（raws 字表的英文詞形，見 names::word_form）
     Noun,
     Adj,
+    /// `{*n}`：人名：每個字大寫開頭（見 capital），第一個字不是字典裡的詞；不看前一個字。給每個字都大寫的稱呼
+    /// （交談畫面頭像下的「The Dwarf Merchant Momuz Kogannog」）：職位與名字都大寫，`{^n}` 分不出來；第一個字查得到就不收，
+    /// 「The Goblin Beast Hunter Ala」才不會被切成 Beast＋「Hunter Ala」
+    Proper,
+    /// `{?n}`：遊戲組的英文名（存檔清單的世界名、堡壘名）：比對同 `{n}`；名稱表沒有時拆回字表的字組中文（見 names::parse），
+    /// 拆不開照抄
+    EnName,
 }
 
 enum Seg {
@@ -106,6 +113,10 @@ enum Out {
 const PARTICLES: &str = "時时後后中而間间前際际近地";
 /// `{n+色}`：顏色當述語時補「色」（金→金色、深黃褐→深黃褐色），譯文已經以「色」結尾就不補。
 const COLOR: &str = "色";
+/// 句子才有的字：單獨畫出的「the 生物」（見 piece 的冠詞）不會有，有就是切行或片段（「the dwarf is singing well」），不拆冠詞。
+/// ponytail: 只擋常見的虛詞與 be、have；其他小寫片段若剛好整段翻得出來仍會被翻，靠回歸檢查
+const SENTENCE_WORDS: [&[u8]; 20] = [b"is", b"are", b"was", b"were", b"be", b"has", b"have", b"had", b"of", b"the", b"to", b"and", b"in", b"on",
+                                     b"a", b"an", b"for", b"with", b"by", b"from"];
 
 pub struct Rule {
     pattern: Vec<Seg>,
@@ -134,7 +145,7 @@ pub struct Rule {
 /// 一個佔位：編號、能收的片段、譯文裡的補字（`{3+時}`，原文不能有）。
 struct Placeholder(usize, Kind, String);
 
-/// 拆出 `{1}`～`{9}`、`{#1}`～`{#9}`、`{@1}`～`{@9}`、`{%1}`～`{%9}`、`{~1}`～`{~9}`、`{^1}`～`{^9}`、書名用的 `{$n}`、`{&n}`、`{=n}`，以及帶補字的 `{1+時}`；
+/// 拆出 `{1}`～`{9}`、`{#1}`～`{#9}`、`{@1}`～`{@9}`、`{%1}`～`{%9}`、`{~1}`～`{~9}`、`{^1}`～`{^9}`、`{*n}`、`{?n}`、書名用的 `{$n}`、`{&n}`、`{=n}`，以及帶補字的 `{1+時}`；
 /// 其餘依 `text` 轉換（原文轉 CP437 位元組、譯文保留字串）。
 fn split_placeholders<T>(s: &str, mut text: impl FnMut(&str) -> Option<T>) -> Option<Vec<Result<T, Placeholder>>> {
     let mut parts = Vec::new();
@@ -150,6 +161,8 @@ fn split_placeholders<T>(s: &str, mut text: impl FnMut(&str) -> Option<T>) -> Op
             Some(b'$') => Kind::Title,
             Some(b'&') => Kind::Noun,
             Some(b'=') => Kind::Adj,
+            Some(b'*') => Kind::Proper,
+            Some(b'?') => Kind::EnName,
             _ => Kind::Any,
         };
         let d = i + 1 + usize::from(kind != Kind::Any);
@@ -303,7 +316,7 @@ impl Rule {
                 Seg::Cap(_, kind) => *kind == Kind::Full,
                 Seg::Lit(l) => !l.iter().any(u8::is_ascii_alphabetic),
             }),
-            loose: matches!(pattern.first(), Some(Seg::Cap(_, Kind::Any | Kind::Skip))),
+            loose: matches!(pattern.first(), Some(Seg::Cap(_, Kind::Any | Kind::Skip | Kind::EnName))),
             inner: align == "inner",
             title: pattern.iter().any(|s| matches!(s, Seg::Cap(_, Kind::Title | Kind::Noun | Kind::Adj))),
             pattern,
@@ -370,24 +383,45 @@ fn match_at(segs: &[Seg], text: &[u8], pos: usize, caps: &mut [(usize, usize); 9
     }
 }
 
-/// 佔位能不能收 text[pos..end]：`{^n}` 要看前一個字（見 is_name），`{#n}`、`{@n}`、`{%n}` 交給 fits。
+/// 佔位能不能收 text[pos..end]：`{^n}`、`{*n}` 要看前一個字（見 is_name、is_proper），`{#n}`、`{@n}`、`{%n}` 交給 fits。
 fn accepts(kind: Kind, text: &[u8], pos: usize, end: usize, fits: &mut dyn FnMut(Kind, &[u8]) -> bool) -> bool {
     match kind {
-        Kind::Any | Kind::Skip => true,
+        Kind::Any | Kind::Skip | Kind::EnName => true,
         Kind::Name => is_name(text, pos, end),
+        Kind::Proper => is_proper(text, pos, end, &mut |w| fits(Kind::Term, w)),
         _ => fits(kind, &text[pos..end]),
     }
 }
 
-/// `{^n}` 的名字：每個字都是大寫字母、CP437 0x80 以上（Ïtrem、òrdir）或引號加大寫（綽號）開頭，而且前一個字小寫開頭
+/// `{*n}` 的名字：每個字都大寫開頭（見 capital），只有字母、引號、連字號（說話的「Urist: Hello.」不算），沒有 Of、The、And
+/// （地圖標題「The Human Hamlet Of Kelral」的 Of Kelral 不是名字）；而且職位已經完了：名字的第一個字（Hunter）、或前面的字接
+/// 名字開頭的幾個字（Fire Commissioner、Master Of Beasts）查得到 `term`（字典詞），就是佔位切太早，把職位的後半當成名字
+fn is_proper(text: &[u8], pos: usize, end: usize, term: &mut dyn FnMut(&[u8]) -> bool) -> bool {
+    let name = &text[pos..end];
+    let mut words = name.split(|&c| c == b' ');
+    if !name.iter().all(|&c| c.is_ascii_alphabetic() || c >= 0x80 || b" \"'-".contains(&c))
+        || !words.all(|w| capital(w) && !w.eq_ignore_ascii_case(b"of") && !w.eq_ignore_ascii_case(b"the") && !w.eq_ignore_ascii_case(b"and"))
+    {
+        return false;
+    }
+    let word_ends: Vec<usize> = name.iter().enumerate().filter(|&(_, &c)| c == b' ').map(|(i, _)| pos + i).chain([end]).collect();
+    let starts: Vec<usize> = text[..pos].iter().enumerate().filter(|&(_, &c)| c == b' ').map(|(i, _)| i + 1).chain([0]).filter(|&s| s < pos).collect();
+    !term(&text[pos..word_ends[0]]) && !starts.iter().any(|&s| word_ends.iter().any(|&e| term(&text[s..e])))
+}
+
+/// 名字的一個字：大寫字母、CP437 0x80 以上（Ïtrem、òrdir）或引號加大寫（綽號）開頭
+fn capital(w: &[u8]) -> bool {
+    match w {
+        [b'"', c, ..] | [c, ..] => c.is_ascii_uppercase() || *c >= 0x80,
+        [] => false,
+    }
+}
+
+/// `{^n}` 的名字：每個字都大寫開頭（見 capital），而且前一個字小寫開頭
 /// （稱呼的最後一個字：the dwarf、the Human baron）。世界生成的名稱每個字都大寫（The Silver Union），不會被拆成「銀Union」；
 /// 句型最後的名字也不會吞掉後面的「and Rith in a time before time」。
 fn is_name(text: &[u8], pos: usize, end: usize) -> bool {
     let prev = text[..pos].trim_ascii_end().rsplit(|&c| c == b' ').next();
-    let capital = |w: &[u8]| match w {
-        [b'"', c, ..] | [c, ..] => c.is_ascii_uppercase() || *c >= 0x80,
-        [] => false,
-    };
     prev.is_some_and(|w| w.first().is_some_and(u8::is_ascii_lowercase)) && text[pos..end].split(|&c| c == b' ').all(capital)
 }
 
@@ -845,11 +879,29 @@ impl Dict {
             // 先記成翻不出來：佔位抓到整段（`{%1}.` 這類）又遞迴回同一段時就此打住
             memo.insert(key.to_vec(), None);
         }
-        let found = self.strip_tail(key, depth, memo).or_else(|| self.apply_rules(key, depth, memo).map(|(p, _, clean)| (p, clean)));
+        let mut found = self.strip_tail(key, depth, memo).or_else(|| self.apply_rules(key, depth, memo).map(|(p, _, clean)| (p, clean)));
+        if depth == 0 && found.is_none() {
+            found = self.bare_creature(key, memo).map(|p| (p, true));
+        }
         if depth > 0 {
             memo.insert(key.to_vec(), found.clone());
         }
         found
+    }
+
+    /// 單獨畫出的「the 生物」（冒險模式攻擊選單：the cave crocodile、The cave crocodile）：冠詞後面全是小寫字時去掉冠詞再查，
+    /// 要整段翻成中文（句型照抄的英文不算）。只給整句這層、別的都翻不出來時用（佔位裡有 inner 的 `the {%1}`）；
+    /// 後面大寫開頭的書名、地名（The Attack、The Silver Union）不拆
+    fn bare_creature(&self, key: &[u8], memo: &mut Memo) -> Option<Pieces> {
+        let rest = key.strip_prefix(b"the ").or_else(|| key.strip_prefix(b"The "))?;
+        if !rest.first().is_some_and(u8::is_ascii_lowercase)
+            || !rest.iter().all(|&c| c.is_ascii_lowercase() || c == b' ' || c == b'-')
+            || rest.split(|&c| c == b' ').any(|w| SENTENCE_WORDS.contains(&w))
+        {
+            return None;
+        }
+        let (pieces, _) = self.piece(rest, 1, memo)?;
+        (!pieces.iter().any(|(t, _)| t.chars().any(|c| c.is_ascii_alphabetic()))).then_some(pieces)
     }
 
     /// 稱呼加世界生成名稱（`the goblin Snodub Monstrousentry`、連結字 `dwarf Urist`）：名字是遊戲組過的名稱（names.rs），
@@ -977,7 +1029,7 @@ impl Dict {
     /// 一條句型套整段 key 的譯文：(片段, 乾淨與否)。樣板沒有中文字、佔位也都照抄英文時不算命中。
     fn try_rule(&self, rule: &Rule, key: &[u8], depth: usize, memo: &mut Memo) -> Option<Found> {
         let mut fits = |kind: Kind, piece: &[u8]| match kind {
-            Kind::Any | Kind::Skip | Kind::Name => true,
+            Kind::Any | Kind::Skip | Kind::Name | Kind::EnName | Kind::Proper => true,
             Kind::Number => is_number(piece),
             Kind::Term => lookup_inner(self, piece).is_some(),
             Kind::Full => matches!(self.piece(piece, depth + 1, memo), Some((_, true))),
@@ -1002,6 +1054,9 @@ impl Dict {
                     let sub = match kind {
                         Some(Kind::Title) => self.title_of(piece, depth, memo).map(|zh| (vec![(zh, 0)], true)),
                         Some(k @ (Kind::Noun | Kind::Adj)) => crate::names::word_form(piece, k == Kind::Adj).map(|zh| (vec![(zh.to_owned(), 0)], true)),
+                        // 遊戲組的名字照名稱的字表翻（「The Bloody Desert」是「血腥沙漠」，不是一般字典的「血腥荒漠」），和遊戲內組的一致
+                        Some(Kind::EnName) => crate::names::get(piece).map(|zh| zh.to_string()).or_else(|| crate::names::parse(piece))
+                            .map(|zh| (vec![(zh, 0)], true)).or_else(|| self.piece(piece, depth + 1, memo)),
                         // 任意佔位抓到只有主題的書名（`entitled {2}` 的 The Anatomy of the Eye）
                         _ => self.piece(piece, depth + 1, memo).or_else(|| self.title_vocab(piece).map(|zh| (vec![(zh.to_owned(), 0)], true))),
                     };
@@ -1097,6 +1152,7 @@ impl Dict {
         let entry = lookup_name(self, key).map(|e| Arc::new(e.clone()))
             .or_else(|| crate::names::get(key).and_then(|zh| fits(&zh, "")))
             .or_else(|| self.apply_rules(key, 0, &mut Memo::new()).and_then(|(pieces, rule, _)| fits(&concat(pieces), &rule.align)))
+            .or_else(|| self.bare_creature(key, &mut Memo::new()).and_then(|pieces| fits(&concat(pieces), "")))
             // 只有主題的書名（作品清單）；單字的書名用詞（Peace、Change）單獨畫出時多半是介面字，不查
             .or_else(|| self.title_vocab(key).filter(|_| key.contains(&b' ')).and_then(|zh| fits(zh, "")))
             .or_else(|| self.truncated(key).and_then(|zh| fits(&zh, "")));
@@ -1656,5 +1712,24 @@ mod tests {
         assert_eq!((d.tile(1, 0, Row::Top), d.tile(1, 0, Row::Bottom), d.tile(1, 0, Row::Label)), (Some(20), None, Some(20)),
                    "只有一般字圖：上列與標籤畫一般的字、下列不畫");
         assert!(!d.set_glyphs("關鍵", vec![0; 12]), "數量不是 2 或 8 倍");
+    }
+
+    #[test]
+    fn capitalized_titles_end_before_the_name_and_bare_creatures_drop_the_article() {
+        let mut d = dict("The Human {@1} {*2}\t人類{1}{2}\n{1}, \"{?2}\"\t{1}「{2}」\n");
+        d.load_tsv("Fire Commissioner\t消防專員\nfire\t火\nhunter\t獵人\nBeast Hunter\t猛獸獵人\nbeast\t野獸\nMaster Of Beasts\t萬獸之主\n\
+                    master\t大師\ncave crocodile\t洞穴鱷魚\nattack\t攻擊\ndwarf\t矮人\nhappy\t快樂\n");
+        assert!(d.set_glyphs("洞穴鱷魚", vec![0; 8]));
+        let t = |s: &[u8]| d.translate_text(s);
+        assert_eq!(t(b"The Human Fire Commissioner Medi Wuspin").as_deref(), Some("人類消防專員Medi Wuspin"), "職位比到完整的 Fire Commissioner 才接名字");
+        assert_eq!(t(b"The Human Beast Hunter Ala").as_deref(), Some("人類猛獸獵人Ala"), "名字的第一個字 Hunter 查得到，不在 Beast 後面切");
+        assert_eq!(t(b"The Human Master Of Beasts Iddim").as_deref(), Some("人類萬獸之主Iddim"), "三個字的職位");
+        assert_eq!(t(b"The Human Beast was seen"), None, "小寫的字不是名字");
+        assert_eq!(t(b"The cave crocodile").as_deref(), Some("洞穴鱷魚"), "單獨畫出的生物去掉冠詞");
+        assert_eq!(d.rule_entry(b"The cave crocodile").map(|e| e.text.clone()).as_deref(), Some("洞穴鱷魚"), "畫字 hook 走的路也要拆");
+        assert_eq!(t(b"The Attack"), None, "大寫開頭的書名、地名不拆冠詞");
+        assert_eq!(t(b"the dwarf is happy"), None, "有句子才有的字（is）就不拆");
+        crate::names::insert(b"The Planet of Destiny", "命運之星");
+        assert_eq!(t(b"Thadar Tetha, \"The Planet of Destiny\"").as_deref(), Some("Thadar Tetha「命運之星」"), "{{?n}} 先查名稱表");
     }
 }

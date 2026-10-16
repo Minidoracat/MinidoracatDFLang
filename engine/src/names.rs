@@ -33,8 +33,10 @@ pub static NAME_LAYOUT: OnceLock<NameLayout> = OnceLock::new();
 
 /// 字表：字的代號 → 名詞、形容詞、字首、動詞的中文（空字串表示沒有這個詞性）
 static WORDS: OnceLock<HashMap<Vec<u8>, [String; 4]>> = OnceLock::new();
-/// 書名的隨機字（[NOUN]、[ADJ]，見 Dict 的 `{&n}`、`{=n}`）：英文詞形（小寫）→ 名詞、形容詞的中文；同一詞形有好幾個字時用先讀到的
-static FORMS: OnceLock<[HashMap<Vec<u8>, String>; 2]> = OnceLock::new();
+/// 英文詞形（小寫）→ 中文，名詞、形容詞、字首、動詞各一張；同一詞形有好幾個字時用先讀到的
+type Forms = [HashMap<Vec<u8>, String>; 4];
+/// 書名的隨機字（[NOUN]、[ADJ]，見 Dict 的 `{&n}`、`{=n}`）與拆英文名（見 parse）用
+static FORMS: OnceLock<Forms> = OnceLock::new();
 
 /// 英文名 → 中文名。ponytail: 滿了整張清掉，畫面上的名字下次遊戲再組名字時補回來
 static NAMES: LazyLock<Mutex<HashMap<Vec<u8>, Arc<str>>>> = LazyLock::new(|| Mutex::new(HashMap::new()));
@@ -46,7 +48,7 @@ static GENERATION: AtomicU64 = AtomicU64::new(0);
 /// 回傳載入條數。只能載入一次。
 pub fn load_words(content: &str) -> usize {
     let mut table: HashMap<Vec<u8>, [String; 4]> = HashMap::new();
-    let mut forms: [HashMap<Vec<u8>, String>; 2] = Default::default();
+    let mut forms: Forms = Default::default();
     let mut n = 0;
     for line in content.lines() {
         let mut cols = line.split('\t');
@@ -85,7 +87,7 @@ pub fn word_form(form: &[u8], adj: bool) -> Option<&'static str> {
 #[cfg(test)]
 pub fn set_forms(nouns: &[(&str, &str)], adjs: &[(&str, &str)]) {
     let map = |v: &[(&str, &str)]| v.iter().map(|(en, zh)| (en.as_bytes().to_vec(), (*zh).to_owned())).collect();
-    let _ = FORMS.set([map(nouns), map(adjs)]);
+    let _ = FORMS.set([map(nouns), map(adjs), HashMap::new(), HashMap::new()]);
 }
 
 /// 字典查詞用：遊戲組過的英文名的中文。
@@ -95,6 +97,88 @@ pub fn get(english: &[u8]) -> Option<Arc<str>> {
 
 pub fn generation() -> u64 {
     GENERATION.load(Ordering::Acquire)
+}
+
+const NOUN: usize = 0;
+const ADJ: usize = 1;
+const PREFIX: usize = 2;
+const VERB: usize = 3;
+/// 拆英文名時各位置先試的詞性（見 parse）：同一個詞形在不同詞性中文不同時（veil 名詞「面紗」、動詞「遮掩」），照遊戲在這個位置
+/// 最常用的詞性挑。實測一個世界的 2,434 個名字：複合字前後半都是名詞最多、動詞次之；the 片語前面是形容詞、最後一個是名詞；
+/// of 後面名詞多於動詞（現在分詞，of Enchanting）
+const COMPOUND: [usize; 4] = [NOUN, VERB, ADJ, PREFIX];
+const DESCRIBER: [usize; 4] = [ADJ, NOUN, VERB, PREFIX];
+const SUBJECT: [usize; 4] = [NOUN, ADJ, VERB, PREFIX];
+const OF: [usize; 4] = [NOUN, VERB, ADJ, PREFIX];
+
+/// 遊戲組好、這次執行卻還沒登記的英文名的中文：標題畫面的存檔清單只存組好的字串（`Thadar Tetha, "The Planet of Destiny"`），
+/// 那時字表還沒載入，遊戲也不會再組一次。照 compose 的組法倒過來切：[原名、綽號] [複合字] [the 字 字 字-字] [of 字]，
+/// 每個字查英文詞形；複合字從前半最短的切法試起。字表的字遊戲都改成大寫開頭，小寫開頭（介面片語）的不拆。
+/// ponytail: 同一個詞形在不同詞性中文不同時只能照位置猜，實測約八成和遊戲組的一樣（世界名、地區名幾乎都對，複合字的堡壘名、
+/// 人名差最多）；要完全一致得在讀檔時記下存檔清單上的名字
+pub fn parse(english: &[u8]) -> Option<String> {
+    parse_with(FORMS.get()?, english)
+}
+
+fn parse_with(forms: &Forms, english: &[u8]) -> Option<String> {
+    let zh = |form: &[u8], order: &[usize; 4]| order.iter().find_map(|&c| forms[c].get(form).map(String::as_str));
+    let lower = english.to_ascii_lowercase();
+    let originals: Vec<&[u8]> = english.split(|&c| c == b' ').collect();
+    let mut tokens: Vec<&[u8]> = lower.split(|&c| c == b' ').collect();
+    let capital = |k: usize| originals[k].first().is_some_and(u8::is_ascii_uppercase);
+    let n = tokens.len();
+    let of = if n >= 2 && tokens[n - 2] == b"of" {
+        let w = capital(n - 1).then(|| zh(tokens[n - 1], &OF)).flatten()?;
+        tokens.truncate(n - 2);
+        Some(w)
+    } else {
+        None
+    };
+    // the 片語：字依序接，最後一個可能是「words[4]-words[5]」
+    let mut phrase = String::new();
+    if let Some(t) = tokens.iter().position(|w| *w == b"the") {
+        let words = &tokens[t + 1..];
+        if words.is_empty() {
+            return None;
+        }
+        for (k, w) in words.iter().enumerate() {
+            let last = k + 1 == words.len();
+            if !capital(t + 1 + k) {
+                return None;
+            }
+            match w.iter().position(|&c| c == b'-') {
+                Some(h) if last => {
+                    phrase.push_str(zh(&w[..h], &SUBJECT)?);
+                    phrase.push_str(zh(&w[h + 1..], &SUBJECT)?);
+                }
+                Some(_) => return None,
+                None => phrase.push_str(zh(w, if last { &SUBJECT } else { &DESCRIBER })?),
+            }
+        }
+        tokens.truncate(t);
+    }
+    // 剩下的最後一個字是複合字（切不開就當原名），再前面是原名、綽號
+    let mut head = tokens.len();
+    let mut compound = String::new();
+    if let Some(&w) = tokens.last().filter(|_| capital(head - 1)) {
+        let split = (1..w.len()).find_map(|i| Some(format!("{}{}", zh(&w[..i], &COMPOUND)?, zh(&w[i..], &COMPOUND)?)));
+        if let Some(c) = split.or_else(|| zh(w, &COMPOUND).map(str::to_owned)) {
+            compound = c;
+            head -= 1;
+        }
+    }
+    let rest = match of {
+        Some(of) if phrase.is_empty() => of.to_owned(),
+        Some(of) => format!("{of}之{phrase}"),
+        None => phrase,
+    };
+    let zh = match (compound.is_empty(), rest.is_empty()) {
+        (false, false) => format!("{compound}·{rest}"),
+        (false, true) => compound,
+        (true, false) => rest,
+        (true, true) => return None,
+    };
+    Some(if head == 0 { zh } else { format!("{} {zh}", cp437::decode(&originals[..head].join(&b' '))) })
 }
 
 /// 測試用：直接登記一個名字（不經 translate_name）。
@@ -323,5 +407,21 @@ mod tests {
             assert_eq!(get(b"Burnaxe"), None);
         }
         drop(f);
+    }
+
+    #[test]
+    fn english_names_are_split_back_into_words() {
+        let mut forms: Forms = Default::default();
+        for (c, en, zh) in [(NOUN, "planet", "星"), (NOUN, "metal", "金屬"), (NOUN, "silver", "銀"), (ADJ, "infinite", "無盡"),
+                            (VERB, "enchanting", "施咒"), (NOUN, "veil", "面紗"), (VERB, "veil", "遮掩")] {
+            forms[c].insert(en.as_bytes().to_vec(), zh.to_owned());
+        }
+        let p = |s: &[u8]| parse_with(&forms, s);
+        assert_eq!(p(b"The Infinite Planet of Enchanting").as_deref(), Some("施咒之無盡星"), "形容詞＋名詞、of 後面的現在分詞");
+        assert_eq!(p(b"Metalsilver").as_deref(), Some("金屬銀"), "複合字拆成前後兩半");
+        assert_eq!(p(b"Silverveil").as_deref(), Some("銀面紗"), "名詞、動詞同形時複合字先當名詞");
+        assert_eq!(p(b"Urist Metalsilver the Infinite").as_deref(), Some("Urist 金屬銀·無盡"), "原名照原文");
+        assert_eq!(p(b"list of planets"), None, "小寫開頭的片語不是名字");
+        assert_eq!(p(b"The Shiny Planet"), None, "有字查不到就整個照英文");
     }
 }
