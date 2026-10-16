@@ -52,3 +52,6 @@ Clear the log	清除紀錄	清除记录		lua/dflang.lua 設定視窗：按鈕
 Clear untranslated text log	清除未翻譯紀錄	清除未翻译记录	c	lua/dflang.lua 設定視窗：清除紀錄的確認框標題
 Delete everything in dflang-misses.tsv?	刪除 dflang-misses.tsv 的所有內容？	删除 dflang-misses.tsv 的所有内容？		lua/dflang.lua 設定視窗：清除紀錄的確認訊息
 Logging stays on after restarting the game until you turn it off. To report untranslated text, attach dflang-misses.tsv to a GitHub issue, or paste its lines into the bug report discussion on the Workshop page. The log may contain names from your world.	開啟後重開遊戲也會繼續記錄，直到關閉。回報沒翻到的字：把 dflang-misses.tsv 附到 GitHub Issue，或把內容貼到工作坊頁面的「問題回報」討論串。紀錄裡可能有你世界裡的名字。	开启后重启游戏也会继续记录，直到关闭。反馈没有翻译到的文字：把 dflang-misses.tsv 附到 GitHub Issue，或把内容贴到创意工坊页面的“问题反馈”讨论帖。记录里可能有你世界中的名字。		lua/dflang.lua 設定視窗：未翻譯紀錄的說明（WrappedLabel 整段一條）；Workshop 是 Steam 工作坊，術語例外：workshop
+DFLang settings	中文化設定	汉化设置		lua/loader.lua 標題畫面吉祥物名牌下方的快捷鍵提示（Ctrl-Shift-L: 這段）；點一下開設定視窗。英文寫短，黑底照英文格數畫
+DFLang mascot on the title page; click it to open the Chinese translation settings.	DFLang 標題畫面吉祥物；點一下開啟中文化設定。	DFLang 标题画面吉祥物；点击打开汉化设置。		lua/loader.lua overlay 小工具說明（gui/overlay 顯示）
+DFLang hotkey hint on the title page: the key that opens the Chinese translation settings.	DFLang 標題畫面快捷鍵提示：開啟中文化設定的按鍵。	DFLang 标题画面快捷键提示：打开汉化设置的按键。		lua/loader.lua overlay 小工具說明（gui/overlay 顯示）

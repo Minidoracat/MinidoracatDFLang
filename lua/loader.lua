@@ -583,9 +583,16 @@ if not ok then fail('無法註冊快捷鍵 %s：%s', HOTKEY, err) end
 -- 兩包都裝時兩個小工具都會註冊，只有被選用的那包畫圖。
 local overlay = require('plugins.overlay')
 
+-- 只有被選用的那包（DFLANG.lang 是本包語言）才畫、才收點擊
+local function active()
+    local state = dfhack.BASE_G.DFLANG
+    return state and state.lang == LANG and state
+end
+
 MascotOverlay = defclass(MascotOverlay, overlay.OverlayWidget)
 MascotOverlay.ATTRS{
-    desc = 'DFLang 中文化吉祥物，顯示在標題畫面左下角。',
+    -- gui/overlay 照 CP437 畫說明：寫英文，譯文在 data/strings/dflang_ui.tsv
+    desc = 'DFLang mascot on the title page; click it to open the Chinese translation settings.',
     default_pos = {x = 21, y = -5},
     default_enabled = true,
     viewscreens = 'title/Default',
@@ -595,8 +602,8 @@ MascotOverlay.ATTRS{
 -- 畫在頂層（screentexpos_top）：主層有貼圖的格子會先填底色，圖片透明處會變成黑框；頂層直接疊在標題背景上。
 -- 標題畫面本來沒開頂層，要設 top_in_use；遊戲每幀會清空頂層，離開標題畫面後不會殘留。
 function MascotOverlay:onRenderBody()
-    local state = dfhack.BASE_G.DFLANG
-    local mascot = state and state.lang == LANG and state.mascot
+    local state = active()
+    local mascot = state and state.mascot
     if not mascot then return end
     local gps, rect = df.global.gps, self.frame_rect
     gps.top_in_use = true
@@ -612,11 +619,44 @@ end
 
 -- 點吉祥物開設定視窗（同 Ctrl-Shift-L）。呼叫本包的 dflang.lua，不經腳本路徑（兩包、新舊版可能同時在路徑上）
 function MascotOverlay:onInput(keys)
-    local state = dfhack.BASE_G.DFLANG
-    if keys._MOUSE_L and state and state.lang == LANG and state.mascot and self:getMousePos() then
+    local state = active()
+    if keys._MOUSE_L and state and state.mascot and self:getMousePos() then
         dflang().show_ui()
         return true
     end
 end
 
-OVERLAY_WIDGETS = {mascot = MascotOverlay}
+-- 名牌正下方提示設定視窗的快捷鍵，樣式照 DFHack 標題畫面的「?: 快速入門指南」（綠色按鍵名＋白字、黑底）；點一下也開視窗。
+-- 顯示實際綁到 dflang ui 的鍵（玩家可能改綁），沒有綁定就不畫。三段各自畫，說明那段由引擎查字典畫成中文；
+-- 黑底照英文的格數畫，英文寫短一點，中文後面才不會拖一長段黑底
+local HINT_TEXT = 'DFLang settings'
+
+local function bound_key()
+    for _, bind in ipairs(dfhack.hotkey.listAllKeybinds()) do
+        if bind.command == HOTKEY_COMMAND then return (bind.spec:gsub('@.*', '')) end
+    end
+end
+
+HintOverlay = defclass(HintOverlay, overlay.OverlayWidget)
+HintOverlay.ATTRS{
+    desc = 'DFLang hotkey hint on the title page: the key that opens the Chinese translation settings.',
+    default_pos = {x = 21, y = -4},
+    default_enabled = true,
+    viewscreens = 'title/Default',
+    frame = {w = 48, h = 1},
+}
+
+function HintOverlay:onRenderBody(dc)
+    local key = active() and bound_key()
+    if not key then return end
+    dc:pen(COLOR_LIGHTGREEN):string(key):pen(COLOR_WHITE):string(': '):string(HINT_TEXT)
+end
+
+function HintOverlay:onInput(keys)
+    if keys._MOUSE_L and active() and self:getMousePos() then
+        dflang().show_ui()
+        return true
+    end
+end
+
+OVERLAY_WIDGETS = {mascot = MascotOverlay, hint = HintOverlay}

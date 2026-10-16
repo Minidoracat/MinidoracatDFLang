@@ -53,7 +53,7 @@
 
 畫面上的字預設由本 MOD 照字型實際字寬整行畫（整句貼圖）。想改回一字兩格的字圖（例如和別的畫面 MOD 衝突時），在設定視窗（`Ctrl-Shift-L`）關掉「整句貼圖」或在 DFHack 主控台輸入 `dflang overlay off`，重開遊戲生效；`dflang overlay on` 改回來。中文字的大小跟著遊戲的介面縮放；想只調整中文，在設定視窗或用 `dflang overlay size 15`（13～16，格高的十六分之幾，預設 14），重開遊戲生效，數字越大相鄰兩列的字越靠近。字預設是思源黑體粗體（Bold）；覺得太粗，在設定視窗關掉「粗體字」或輸入 `dflang bold off` 改用一般粗細（Regular），重開遊戲生效，`dflang bold on` 改回來。整句貼圖和一字兩格的字圖都照這個設定，標題畫面吉祥物的名牌一律是粗體。
 
-標題畫面左下角會出現本 MOD 的貓娘吉祥物和「繁體中文／简体中文」名牌，點一下開設定視窗。要移動或關掉，在 DFHack 主控台輸入 `gui/overlay`，找 `dflang_zh_hant.mascot`（簡中包是 `dflang_zh_hans.mascot`）。
+標題畫面左下角會出現本 MOD 的貓娘吉祥物和「繁體中文／简体中文」名牌，名牌下方提示設定視窗的快捷鍵（`Ctrl-Shift-L：中文化設定`），點吉祥物或提示都會開設定視窗。要移動或關掉，在 DFHack 主控台輸入 `gui/overlay`，找 `dflang_zh_hant.mascot`、`dflang_zh_hant.hint`（簡中包是 `dflang_zh_hans.*`）。
 
 回報沒翻到的字：在設定視窗打開「記錄未翻譯的字」（預設關；立即生效，之後每次啟動都會繼續記錄，直到關掉），照平常玩到沒翻的畫面，再按「開啟紀錄所在資料夾」找到遊戲目錄的 `dfhack-config/dflang-misses.tsv`，附到 [GitHub Issues](https://github.com/Minidoracat/MinidoracatDFLang/issues)，或把內容貼到工作坊的「問題回報」討論串（[繁中](https://steamcommunity.com/workshop/filedetails/discussion/3820630135/574929940135291802/)、[簡中](https://steamcommunity.com/workshop/filedetails/discussion/3820630318/574929940135291861/)；討論串不能附檔，內容太長時貼相關畫面的幾行）。紀錄會記下畫面上所有沒翻到的英文，包括你世界裡的名字；回報完可以按「清除紀錄」。
 
