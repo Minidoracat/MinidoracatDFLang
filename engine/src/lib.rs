@@ -16,6 +16,7 @@ mod lines;
 mod lua;
 mod mtb;
 pub mod names;
+mod overlay;
 mod scan;
 
 use std::ffi::{c_int, CStr};
@@ -62,8 +63,36 @@ pub unsafe extern "C" fn luaopen_dflang(l: lua::State) -> c_int {
         lua::set_fn(l, c"dh_translate", dh_translate);
         lua::set_fn(l, c"dh_stamp", dh_stamp);
         lua::set_fn(l, c"dh_wrap", dh_wrap);
+        lua::set_fn(l, c"overlay_install", overlay_install);
+        lua::set_fn(l, c"set_overlay", set_overlay);
+        lua::set_fn(l, c"overlay_dump", overlay_dump);
     }
     1
+}
+unsafe extern "C" fn overlay_dump(l: lua::State) -> c_int {
+    unsafe { lua::push_str(l, &overlay::dump()) };
+    1
+}
+
+
+/// overlay_install(renderer 位址)：實驗的整句貼圖，換掉 renderer vtable 的三個槽（見 overlay.rs）
+unsafe extern "C" fn overlay_install(l: lua::State) -> c_int {
+    unsafe {
+        let Some(addr) = lua::arg_int(l, 1) else { return fail(l, "overlay_install: expects the renderer address") };
+        match overlay::install(addr as usize) {
+            Ok(()) => ok(l),
+            Err(e) => fail(l, &e),
+        }
+    }
+}
+
+/// set_overlay(true/1 或 false/0)：開關實驗的整句貼圖
+unsafe extern "C" fn set_overlay(l: lua::State) -> c_int {
+    unsafe {
+        let on = lua::arg_int(l, 1).is_some_and(|v| v != 0);
+        overlay::ON.store(on, Ordering::Release);
+        ok(l)
+    }
 }
 
 /// Lua 慣例的失敗回傳：nil, 訊息。
@@ -251,6 +280,7 @@ unsafe extern "C" fn render_atlas(l: lua::State) -> c_int {
         let paths: Option<Vec<String>> = (1..=lua::len(l, 5) as i64).map(|i| lua::index_str(l, 5, i)).collect();
         let Some(paths) = paths else { return fail(l, "render_atlas: font paths must be strings") };
         let paths: Vec<&str> = paths.iter().map(String::as_str).collect();
+        let _ = overlay::FONT_PATHS.set(paths.iter().map(|p| p.to_string()).collect());
         let result = atlas::load_fonts(&paths).and_then(|fonts| {
             let chars: Vec<char> = chars.chars().collect();
             atlas::render(&fonts, &chars, cell_w as usize, cell_h as usize, std::path::Path::new(out))

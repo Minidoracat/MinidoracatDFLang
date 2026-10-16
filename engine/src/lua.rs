@@ -20,7 +20,7 @@ unsafe extern "system" {
 }
 
 /// 在模組匯出表裡找名稱為 `name` 或以 `?name@@` 開頭的匯出。
-unsafe fn export(module: *const u8, name: &str) -> Option<*mut c_void> {
+pub(crate) unsafe fn export(module: *const u8, name: &str) -> Option<*mut c_void> {
     unsafe {
         let pe = module.add(*(module.add(0x3c) as *const u32) as usize);
         let dir_rva = *(pe.add(24 + 112) as *const u32) as usize; // PE32+ 選用標頭的第 0 個資料目錄

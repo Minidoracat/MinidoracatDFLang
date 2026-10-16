@@ -103,12 +103,14 @@ type ScreenFn = unsafe extern "C" fn(*mut u8);
 type LogFn = unsafe extern "C" fn(*mut u8, i32, i32);
 /// (交談畫面, ?, 框左緣, 框右緣)
 type TalkLogFn = unsafe extern "C" fn(*mut u8, u32, i32, i32);
+/// render_things()：非同步執行緒每幀把畫面寫進緩衝區（實驗的整句貼圖在這裡收一幀的句子，見 overlay.rs）
+type RenderThingsFn = unsafe extern "C" fn();
 
-pub const HOOKS: [&str; 14] = [
+pub const HOOKS: [&str; 15] = [
     "addst", "addst_flag", "top_addst", "addcoloredst", "mtb_set_width", "add_anchored_tile", "wrap_lines", "ctb_add_string",
-    "translate_name", "string_resize", "adv_appearance", "adv_personality", "adv_log", "adv_talk_log",
+    "translate_name", "string_resize", "adv_appearance", "adv_personality", "adv_log", "adv_talk_log", "render_things",
 ];
-static TRAMPOLINES: [AtomicUsize; 14] = [const { AtomicUsize::new(0) }; 14];
+static TRAMPOLINES: [AtomicUsize; 15] = [const { AtomicUsize::new(0) }; 15];
 /// wrap_text 的位址（只登記、不攔；它切行時呼叫 wrap_lines）：enable 時從呼叫它的程式碼找出遊戲啟動時就切好的提示（見 lines.rs）
 pub static WRAP_TEXT: OnceLock<usize> = OnceLock::new();
 
@@ -137,7 +139,8 @@ pub fn attach(name: &str, target: usize) -> Result<(), String> {
         10 => hook_adv_appearance as *const (),
         11 => hook_adv_personality as *const (),
         12 => hook_adv_log as *const (),
-        _ => hook_adv_talk_log as *const (),
+        13 => hook_adv_talk_log as *const (),
+        _ => hook_render_things as *const (),
     };
     let detour = unsafe { RawDetour::new(target as *const (), hook) }.map_err(|e| e.to_string())?;
     TRAMPOLINES[index].store(detour.trampoline() as *const () as usize, Ordering::Release);
@@ -203,7 +206,8 @@ unsafe fn write<T>(gps: *mut u8, offset: usize, v: T) {
 
 /// 把 (x0 + 格位, y) 上的佔位格換成字圖。條件與遊戲 addchar 相同：在裁切框內（`clip`）、不超出畫面緩衝區。
 /// DFHack 的 paintString 不看遊戲的裁切框（裁切由它的 Lua Painter 先做），貼它的字時 `clip` 給 false。
-unsafe fn paint(gps: *mut u8, layer: &Layer, x0: i32, y: i32, glyphs: &[(usize, u32)], dict: &Dict, clip: bool) {
+/// `shadow` 是這次寫進畫面的替身字串（glyphs 的格位從它開頭算）、`align` 是譯文對原文的對齊（Entry::align），實驗的整句貼圖（overlay.rs）用。
+unsafe fn paint(gps: *mut u8, layer: &Layer, x0: i32, y: i32, shadow: &[u8], glyphs: &[(usize, u32)], align: u8, dict: &Dict, clip: bool) {
     let Some(layout) = LAYOUT.get() else { return };
     unsafe {
         let dimx: i32 = read(gps, layout.dimx);
@@ -223,6 +227,8 @@ unsafe fn paint(gps: *mut u8, layer: &Layer, x0: i32, y: i32, glyphs: &[(usize, 
         if screen.is_null() || tex.is_null() || flag.is_null() {
             return;
         }
+        // 整句的列別（一般、半格位移的上列或下列）；同一句混了不同列別就不交給整句貼圖
+        let mut kind: Option<Option<Row>> = None;
         for &(offset, glyph) in glyphs {
             for half in 0..2 {
                 let x = x0 + offset as i32 + half;
@@ -242,10 +248,18 @@ unsafe fn paint(gps: *mut u8, layer: &Layer, x0: i32, y: i32, glyphs: &[(usize, 
                 } else {
                     Row::Whole
                 };
+                kind = match kind {
+                    None => Some(Some(row)),
+                    Some(Some(k)) if k == row => kind,
+                    _ => Some(None),
+                };
                 let Some(t) = dict.tile(glyph, half as usize, row) else { continue };
                 *tex.add(index) = t;
                 *flag.add(index) |= FLAG_ADDCOLOR;
             }
+        }
+        if let Some(Some(row)) = kind {
+            crate::overlay::record(gps, layer.screen == layout.top.screen, row, x0, y, shadow, glyphs, align);
         }
     }
 }
@@ -315,7 +329,7 @@ unsafe fn translate_call(gps: *mut u8, kind: &str, key: &[u8], space: i32, layer
     let (cells, glyphs) = entry.fit(space);
     unsafe {
         write(&entry.shadow()[..cells]);
-        paint(gps, &layer(layout), x0, y, &entry.glyphs[..glyphs], dict, true);
+        paint(gps, &layer(layout), x0, y, &entry.shadow()[..cells], &entry.glyphs[..glyphs], entry.align, dict, true);
     }
     true
 }
@@ -325,8 +339,8 @@ unsafe fn translate_call(gps: *mut u8, kind: &str, key: &[u8], space: i32, layer
 // DFHack 的介面（overlay、gui/ 腳本）不經遊戲的畫字函式，直接寫畫面緩衝區。Lua 依序呼叫：dfhack_translate 查字典、
 // 原本的 paintString 畫影子字串（格數、顏色、裁切、點擊範圍都照英文），dfhack_stamp 貼字圖。都在主執行緒。
 
-/// dfhack_translate 查到、等 dfhack_stamp 貼上的字圖 (格位, 字圖編號)
-static DH_PENDING: Mutex<Vec<(usize, u32)>> = Mutex::new(Vec::new());
+/// dfhack_translate 查到、等 dfhack_stamp 貼上的 (影子字串, (格位, 字圖編號), 對齊)
+static DH_PENDING: Mutex<(Vec<u8>, Vec<(usize, u32)>, u8)> = Mutex::new((Vec::new(), Vec::new(), b'l'));
 
 /// DFHack 自動換行的段落（string:wrap 切的，見 dfhack_wrap）：英文行 → 同一列要畫的中文（None：中文行比英文少，這一行畫空白）。
 /// ponytail: 以英文行的文字當鍵、全部畫面共用：不同段落（或同一段的兩行）剛好有同一行英文時用最後登記的，別處單獨畫出同樣英文的字串
@@ -345,7 +359,7 @@ pub fn dfhack_translate(text: &[u8], y: i32) -> Option<Vec<u8>> {
         let shadow = row.as_ref().map_or(&[][..], |e| e.shadow());
         let mut out = vec![b' '; text.len().max(shadow.len())];
         out[..shadow.len()].copy_from_slice(shadow);
-        *DH_PENDING.lock() = row.map_or_else(Vec::new, |e| e.glyphs.clone());
+        *DH_PENDING.lock() = (out.clone(), row.map_or_else(Vec::new, |e| e.glyphs.clone()), b'l');
         return Some(out);
     }
     let dict = unsafe { &*dict };
@@ -365,7 +379,7 @@ pub fn dfhack_translate(text: &[u8], y: i32) -> Option<Vec<u8>> {
     HITS.fetch_add(1, Ordering::Relaxed);
     let mut out = vec![b' '; text.len()];
     out[lead..lead + shadow.len()].copy_from_slice(shadow);
-    *DH_PENDING.lock() = entry.glyphs.iter().map(|&(offset, glyph)| (offset + lead, glyph)).collect();
+    *DH_PENDING.lock() = (out.clone(), entry.glyphs.iter().map(|&(offset, glyph)| (offset + lead, glyph)).collect(), entry.align);
     Some(out)
 }
 
@@ -461,14 +475,14 @@ fn wrap_plan(dict: &Dict, text: &[u8], width: usize, lines: &[Vec<u8>]) -> Optio
 
 /// 把 dfhack_translate 查到的字圖貼在 (x, y)：DFHack 在頂層開著時（`top_in_use`）只寫頂層，字圖跟著貼頂層。
 pub fn dfhack_stamp(gps: usize, x: i32, y: i32, top: bool) {
-    let glyphs = std::mem::take(&mut *DH_PENDING.lock());
+    let (shadow, glyphs, align) = std::mem::take(&mut *DH_PENDING.lock());
     let dict = DICT.load(Ordering::Acquire);
     let Some(layout) = LAYOUT.get() else { return };
     if dict.is_null() || gps == 0 || glyphs.is_empty() {
         return;
     }
     let layer = if top { layout.top } else { layout.main };
-    unsafe { paint(gps as *mut u8, &layer, x, y, &glyphs, &*dict, false) };
+    unsafe { paint(gps as *mut u8, &layer, x, y, &shadow, &glyphs, align, &*dict, false) };
 }
 
 fn main_layer(l: &Layout) -> Layer {
@@ -514,7 +528,7 @@ unsafe fn paragraph_word(gps: *mut u8, s: *const StdString, layer: fn(&Layout) -
                 }
             }
             draw(&StdString::borrowed(p.entry.shadow()));
-            paint(gps, &layer(layout), x + p.dx, y + p.dy, &p.entry.glyphs, dict, true);
+            paint(gps, &layer(layout), x + p.dx, y + p.dy, p.entry.shadow(), &p.entry.glyphs, p.entry.align, dict, true);
         }
         for (off, c) in layout.color.iter().zip(color) {
             write(gps, *off, c);
@@ -523,6 +537,13 @@ unsafe fn paragraph_word(gps: *mut u8, s: *const StdString, layer: fn(&Layout) -
         write(gps, layout.screeny, y);
     }
     true
+}
+
+unsafe extern "C" fn hook_render_things() {
+    let orig: RenderThingsFn = unsafe { std::mem::transmute(TRAMPOLINES[14].load(Ordering::Acquire)) };
+    crate::overlay::frame_begin();
+    unsafe { orig() };
+    crate::overlay::frame_end();
 }
 
 unsafe extern "C" fn hook_addst(gps: *mut u8, s: *const StdString, just: i32, space: i32) {
@@ -610,7 +631,7 @@ unsafe fn colored_line(gps: *mut u8, s: *const u8, draw: impl Fn(*const u8, *con
             let text: Vec<u8> = shadow.iter().copied().chain([0]).collect();
             let cols: Vec<u8> = std::iter::repeat_n(p.color, shadow.len()).chain([0]).collect();
             draw(text.as_ptr(), cols.as_ptr());
-            paint(gps, &layout.main, x + p.dx, y + p.dy, &p.entry.glyphs, dict, true);
+            paint(gps, &layout.main, x + p.dx, y + p.dy, shadow, &p.entry.glyphs, p.entry.align, dict, true);
         }
         write(gps, layout.screenx, x);
         write(gps, layout.screeny, y);

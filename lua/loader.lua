@@ -459,6 +459,14 @@ local function start()
         ok, err = attach_hooks(engine, dir, {'translate_name'})
         if not ok then fail('%s；世界生成的名稱維持英文', err) end
     end
+    -- 實驗（overlay-prototype 分支）：主層譯文改成整句一張貼圖（見 engine/src/overlay.rs）；dflang overlay on|off 切換
+    ok, err = attach_hooks(engine, dir, {'render_things'})
+    if ok then ok, err = engine.overlay_install(select(2, df.sizeof(df.global.enabler.renderer))) end
+    if not ok then
+        fail('%s；整句貼圖不能用', err)
+    elseif json.open(CONFIG_FILE).data.overlay then
+        engine.set_overlay(1)
+    end
     ok, err = engine.enable()
     if not ok then return fail('%s', err) end
     -- DFHack 自己的視窗（overlay、gui/ 腳本）不經遊戲的畫字函式：包住 dfhack.screen.paintString，有譯文就畫影子字串

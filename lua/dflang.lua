@@ -159,6 +159,14 @@ elseif cmd == 'misses' and (args[2] == 'on' or args[2] == 'off') then
     config.data.misses = on or nil
     config:write()
     print(on and ('記錄到 ' .. MISSES_FILE .. '，之後每次啟動都會自動記錄') or '已停止記錄')
+elseif cmd == 'overlay' and (args[2] == 'on' or args[2] == 'off') then
+    -- 實驗（overlay-prototype 分支）：主層譯文改成整句一張貼圖，字距照字型
+    local on = args[2] == 'on'
+    check(engine.set_overlay(on and 1 or 0))
+    local config = json.open(CONFIG_FILE)
+    config.data.overlay = on or nil
+    config:write()
+    print(on and '整句貼圖：開' or '整句貼圖：關')
 else
     print(USAGE)
 end

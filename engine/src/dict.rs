@@ -43,6 +43,8 @@ pub struct Entry {
     /// (替身字串內的格位, 字圖編號)；每個字圖佔 offset 與 offset+1 兩格。
     pub glyphs: Vec<(usize, u32)>,
     pub text: String,
+    /// 對原文的對齊：b'c' 置中、b'r' 靠右、b'l' 靠左（見 entry；實驗的整句貼圖依這個擺字）
+    pub align: u8,
 }
 
 impl Entry {
@@ -586,7 +588,12 @@ impl Dict {
             shadow.resize(en_cells.max(shadow.len()), b' ');
         }
         shadow.push(0);
-        (Entry { shadow, glyphs, text: text.to_owned() }, missing)
+        let align = match align {
+            "c" => b'c',
+            "r" => b'r',
+            _ => b'l',
+        };
+        (Entry { shadow, glyphs, text: text.to_owned(), align }, missing)
     }
 
     /// 讀 `原文<TAB>譯文[<TAB>對齊]` 一行一條的 UTF-8 檔；空行與 # 開頭的行略過。
