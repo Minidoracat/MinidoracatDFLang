@@ -415,7 +415,8 @@ fn cut_original(key: &[u8]) -> Option<Vec<u8>> {
 }
 
 /// 共用流程：查字典（整句、再句型規則），命中就讓 `write` 寫替身字串，再貼字圖。回傳 false 表示要照原樣呼叫原函式。
-unsafe fn translate_call(gps: *mut u8, kind: &str, key: &[u8], space: i32, layer: fn(&Layout) -> Layer,
+/// half：遊戲畫成半格位移的兩列（分頁標籤，addst_flag 的 TOP_OF_TEXT／BOTTOM_OF_TEXT）。
+unsafe fn translate_call(gps: *mut u8, kind: &str, key: &[u8], space: i32, half: bool, layer: fn(&Layout) -> Layer,
                          write: impl FnOnce(&[u8])) -> bool {
     flush_label();
     let dict = DICT.load(Ordering::Acquire);
@@ -440,7 +441,7 @@ unsafe fn translate_call(gps: *mut u8, kind: &str, key: &[u8], space: i32, layer
     let n = key.len();
     let lay = layer(layout);
     let lower = |x: i32| unsafe { lower_at(gps, layout, &lay, x, y) };
-    let column = COLUMNS.lock().note(lower, x0, n as i32);
+    let column = COLUMNS.lock().note(lower, lay.screen == layout.top.screen, half, x0, n as i32);
     let fits = cells == entry.shadow().len() && (space <= 0 || space as usize >= n);
     let align = if fits { placed_align(lower, x0, n as i32, dimx, column, entry.align) } else { entry.align };
     // 字串檔的對齊和遊戲實際的不同（靠左、置中、靠右互換）時，譯文在原文寬度裡重排
@@ -483,7 +484,7 @@ unsafe fn lower_at(gps: *const u8, layout: &Layout, layer: &Layer, x: i32, y: i3
 }
 
 /// 遊戲畫從 x0 起 n 格原文的對齊方式（listed 是字串檔寫的）。字畫在按鈕或視窗上（lower 是這一列字底下的貼圖編號，
-/// 起點那格有貼圖）時：同一種按鈕、同一個起點畫過長短很不一樣的字（column，見 Columns）是靠左排的清單（字串檔寫靠右的
+/// 起點那格有貼圖）時：同一種按鈕、同一個起點，畫面上同時有長短很不一樣的字（column，見 Columns）是靠左排的清單（字串檔寫靠右的
 /// 點數欄也照靠左）；否則原文在同一張中段貼圖的範圍裡、或在整排連著的貼圖（視窗：說明視窗左上角的問號框也算進去）裡
 /// 左右剩的格數差兩格以內是置中（遊戲置中時有時偏一格；原文太長蓋到右緣時右邊是負的），右邊只剩一格以內、左邊空很多的是靠右
 /// （存檔清單的「Folder: region1」）。在按鈕上但不是這兩種的是靠左（字串檔寫置中也照靠左，靠右照寫的）。
@@ -516,33 +517,44 @@ fn placed_align(lower: impl Fn(i32) -> i32, x0: i32, n: i32, dimx: i32, column: 
     listed
 }
 
-/// 按鈕上的字從哪一格開始：(按鈕中段的左緣, 右緣, 起點) → 第一次見到的原文長度、是否見過長短差兩格以上的字。
+/// 按鈕上的字從哪一格開始：(頂層, 半格位移, 按鈕中段的左緣, 右緣, 起點) → 見過的最短、最長原文，分這一幀與上一幀記。
 /// 靠左排的清單（工作分組、建造選單、冒險角色的按鈕、按鍵設定的連發選項、建立世界的選項）每一項都從按鈕左緣算起的同一格開始，
 /// 選取中的按鈕貼圖不同也一樣；置中的按鈕字長短差兩格以上，起點就不會相同（只差一格的可能因為整數除剛好同一格，
 /// 像「Fortress」與「Legends」）。右緣也比：清單的按鈕一樣寬，左緣剛好同一格的別種框（冒險角色的「Name」標籤和下面的分頁）
-/// 不算同一欄。一直記著：換分頁時同一顆按鈕換字（冒險角色每一頁底下的「Accept …」），之前見過別的長度就知道是靠左
-pub struct Columns(HashMap<(i32, i32, i32), (i32, bool)>);
+/// 不算同一欄。頂層（彈出視窗、提示框）和主層、半格位移的分頁標籤和一般列也分開算。
+/// 只看畫面上現在有的字：這一幀，加上上一幀（清單前面幾項畫的時候，後面幾項這一幀還沒畫到）。以前記一整局，別的畫面、
+/// 提示框剛好畫在同一個位置、長度不同的字，會讓之後的分頁標籤一直靠左（人物頁的「想法」）
+#[derive(Default)]
+pub struct Columns {
+    now: HashMap<ColumnKey, (i32, i32)>,
+    last: HashMap<ColumnKey, (i32, i32)>,
+}
 
-pub static COLUMNS: LazyLock<Mutex<Columns>> = LazyLock::new(|| Mutex::new(Columns(HashMap::new())));
+type ColumnKey = (bool, bool, i32, i32, i32);
+
+pub static COLUMNS: LazyLock<Mutex<Columns>> = LazyLock::new(|| Mutex::new(Columns::default()));
 
 impl Columns {
-    /// 記下這一筆（lower 是這一列字底下的貼圖編號；不在按鈕上的不記），回傳這個起點是不是靠左排的清單
-    fn note(&mut self, lower: impl Fn(i32) -> i32, x0: i32, n: i32) -> bool {
+    /// 記下這一筆（lower 是這一列字底下的貼圖編號，不在按鈕上的不記；top：畫在頂層；half：半格位移的列），
+    /// 回傳這個起點是不是靠左排的清單
+    fn note(&mut self, lower: impl Fn(i32) -> i32, top: bool, half: bool, x0: i32, n: i32) -> bool {
         let mid = lower(x0);
         if mid == 0 {
             return false;
         }
         let left = x0 - (1..).take_while(|&d| lower(x0 - d) == mid).count() as i32;
-        let key = (left, x0 + (0..).take_while(|&d| lower(x0 + d) == mid).count() as i32, x0);
-        // ponytail: 換畫面、改解析度留下的舊位置不清，記滿了整個清掉重記
-        if self.0.len() >= 4096 && !self.0.contains_key(&key) {
-            self.0.clear();
-        }
-        let e = self.0.entry(key).or_insert((n, false));
-        if (e.0 - n).abs() >= 2 {
-            e.1 = true;
-        }
-        e.1
+        let right = x0 + (0..).take_while(|&d| lower(x0 + d) == mid).count() as i32;
+        let key = (top, half, left, right, x0);
+        let e = self.now.entry(key).or_insert((n, n));
+        *e = (e.0.min(n), e.1.max(n));
+        let (shortest, longest) = self.last.get(&key).map_or(*e, |&(s, l)| (s.min(e.0), l.max(e.1)));
+        longest - shortest >= 2
+    }
+
+    /// 一幀畫完（render_things 結束）：這一幀變成上一幀
+    fn next_frame(&mut self) {
+        std::mem::swap(&mut self.now, &mut self.last);
+        self.now.clear();
     }
 }
 
@@ -734,18 +746,22 @@ fn top_layer(l: &Layout) -> Layer {
     l.top
 }
 
-/// 遊戲照原樣畫的字（沒有譯文）：記下按鈕上的字從哪一格開始（見 Columns），也交給整句貼圖（overlay.rs），
-/// 不用遊戲的點陣字，版面不動。(x0, y) 是畫之前的游標；space > 0 時遊戲最多畫 space 格；dfhack 是 DFHack 畫的字。
+/// 遊戲照原樣畫的字（沒有譯文）：記下按鈕上的字從哪一格開始（見 Columns；DFHack 的字不記，它的對齊不看 placed_align），
+/// 也交給整句貼圖（overlay.rs），不用遊戲的點陣字，版面不動。(x0, y) 是畫之前的游標；space > 0 時遊戲最多畫 space 格；
+/// dfhack 是 DFHack 畫的字。
 unsafe fn record_plain(gps: *mut u8, layer: fn(&Layout) -> Layer, x0: i32, y: i32, text: &[u8], space: i32, dfhack: bool) {
     let Some(layout) = LAYOUT.get() else { return };
     let layer = layer(layout);
+    let top = layer.screen == layout.top.screen;
     let n = if space > 0 { text.len().min(space as usize) } else { text.len() };
-    unsafe { COLUMNS.lock().note(|x| lower_at(gps, layout, &layer, x, y), x0, n as i32) };
+    let row = unsafe { row_of(gps, layout, &layer, x0, y) };
+    if !dfhack {
+        unsafe { COLUMNS.lock().note(|x| lower_at(gps, layout, &layer, x, y), top, row != Row::Whole, x0, n as i32) };
+    }
     if !crate::overlay::ON.load(Ordering::Relaxed) {
         return;
     }
-    let row = unsafe { row_of(gps, layout, &layer, x0, y) };
-    crate::overlay::record(gps, layer.screen == layout.top.screen, row, x0, y, &text[..n], &[], b'l', 0, None, dfhack);
+    crate::overlay::record(gps, top, row, x0, y, &text[..n], &[], b'l', 0, None, dfhack);
 }
 
 /// (x, y) 那一格的列別（一般、半格位移的上列或下列）；格子不在畫面裡時當一般列
@@ -834,6 +850,7 @@ unsafe extern "C" fn hook_render_things() {
     ENGLISH.lock().begin();
     unsafe { orig() };
     ENGLISH.lock().end();
+    COLUMNS.lock().next_frame();
     crate::overlay::frame_end();
 }
 
@@ -891,7 +908,7 @@ unsafe extern "C" fn hook_addst(gps: *mut u8, s: *const StdString, just: i32, sp
     let key = unsafe { (*s).bytes() };
     let done = unsafe {
         paragraph_word(gps, s, main_layer, |st| orig(gps, st, just, space))
-            || translate_call(gps, "addst", key, space, main_layer, |b| orig(gps, &StdString::borrowed(b), just, space))
+            || translate_call(gps, "addst", key, space, false, main_layer, |b| orig(gps, &StdString::borrowed(b), just, space))
     };
     if !done {
         let (x0, y) = unsafe { cursor(gps) };
@@ -905,7 +922,8 @@ unsafe extern "C" fn hook_addst_flag(gps: *mut u8, s: *const StdString, just: i3
     let key = unsafe { (*s).bytes() };
     let done = unsafe {
         paragraph_word(gps, s, main_layer, |st| orig(gps, st, just, space, sflag))
-            || translate_call(gps, "addst_flag", key, space, main_layer, |b| orig(gps, &StdString::borrowed(b), just, space, sflag))
+            || translate_call(gps, "addst_flag", key, space, sflag & (FLAG_TOP_OF_TEXT | FLAG_BOTTOM_OF_TEXT) != 0, main_layer,
+                              |b| orig(gps, &StdString::borrowed(b), just, space, sflag))
     };
     if !done {
         let (x0, y) = unsafe { cursor(gps) };
@@ -919,7 +937,7 @@ unsafe extern "C" fn hook_top_addst(gps: *mut u8, s: *const StdString, just: i32
     let key = unsafe { (*s).bytes() };
     let done = unsafe {
         paragraph_word(gps, s, top_layer, |st| orig(gps, st, just, space))
-            || translate_call(gps, "top_addst", key, 0, top_layer, |b| orig(gps, &StdString::borrowed(b), just, space))
+            || translate_call(gps, "top_addst", key, 0, false, top_layer, |b| orig(gps, &StdString::borrowed(b), just, space))
     };
     if !done {
         let (x0, y) = unsafe { cursor(gps) };
@@ -935,7 +953,7 @@ unsafe extern "C" fn hook_addcoloredst(gps: *mut u8, s: *const u8, colors: *cons
     }
     let key = unsafe { CStr::from_ptr(s.cast()).to_bytes() };
     let done = unsafe {
-        translate_call(gps, "addcoloredst", key, 0, main_layer, |b| {
+        translate_call(gps, "addcoloredst", key, 0, false, main_layer, |b| {
             // 顏色字串與文字逐字對應；譯文長度不同，整句改用原文第一個字的顏色
             let first = if key.is_empty() { 0 } else { *colors };
             let mut text = b.to_vec();
@@ -1275,7 +1293,6 @@ fn label_tiles(n: usize, entry: &Entry, dict: &Dict, font: impl Fn(u8) -> i32) -
 mod tests {
     use super::{label_tiles, placed_align, wrap_plan, Columns, MissLog, MISS_BYTES, MISS_LIMIT};
     use crate::dict::Dict;
-    use std::collections::HashMap;
 
     #[test]
     fn alignment_follows_where_the_game_put_the_english() {
@@ -1312,22 +1329,37 @@ mod tests {
 
     #[test]
     fn a_start_shared_by_texts_of_different_length_is_a_left_aligned_list() {
-        let mut c = Columns(HashMap::new());
+        let mut c = Columns::default();
         // 工作分組：按鈕中段 8–33 格，字都從第 13 格開始；選取中的那一項按鈕貼圖不同，左緣一樣在第 8 格
         let item = |x: i32| if (8..=33).contains(&x) { 78 } else { 0 };
         let selected = |x: i32| if (8..=33).contains(&x) { 92 } else { 0 };
-        assert!(!c.note(item, 13, 6), "清單第一項還看不出來");
-        assert!(c.note(selected, 13, 15), "同一欄（按鈕左緣、起點都一樣）、長度差兩格以上；選取中的按鈕貼圖不同也算");
+        assert!(!c.note(item, false, false, 13, 6), "清單第一項還看不出來");
+        assert!(c.note(selected, false, false, 13, 15), "同一欄（按鈕左緣、起點都一樣）、長度差兩格以上；選取中的按鈕貼圖不同也算");
         let keys = |x: i32| if (38..=60).contains(&x) { 90 } else { 0 };
-        assert!(!c.note(keys, 40, 14));
-        assert!(c.note(keys, 40, 12), "按鍵設定的「Delayed repeat」與「Don't repeat」差兩格");
+        assert!(!c.note(keys, false, false, 40, 14));
+        assert!(c.note(keys, false, false, 40, 12), "按鍵設定的「Delayed repeat」與「Don't repeat」差兩格");
         let menu = |x: i32| if (76..=114).contains(&x) { 814 } else { 0 };
-        assert!(!c.note(menu, 91, 8));
-        assert!(!c.note(menu, 91, 7), "只差一格：置中的按鈕整數除剛好同一格（Fortress、Legends）");
-        assert!(!c.note(|_| 0, 13, 30), "不在按鈕上不記");
-        assert!(c.note(item, 13, 6), "記住看過的長度：之後再畫第一項就知道（換分頁時同一顆按鈕換字也是）");
+        assert!(!c.note(menu, false, false, 91, 8));
+        assert!(!c.note(menu, false, false, 91, 7), "只差一格：置中的按鈕整數除剛好同一格（Fortress、Legends）");
+        assert!(!c.note(|_| 0, false, false, 13, 30), "不在按鈕上不記");
         let narrow = |x: i32| if (8..=20).contains(&x) { 78 } else { 0 };
-        assert!(!c.note(narrow, 13, 15), "左緣、起點相同但按鈕寬度不同的是別種框");
+        assert!(!c.note(narrow, false, false, 13, 15), "左緣、起點相同但按鈕寬度不同的是別種框");
+        c.next_frame();
+        assert!(c.note(item, false, false, 13, 6), "下一幀先畫第一項：後面幾項這一幀還沒畫到，看上一幀的");
+    }
+
+    #[test]
+    fn only_texts_on_screen_now_make_a_list() {
+        let mut c = Columns::default();
+        // 人物頁的「想法」分頁：半格位移的兩列，中段 129–135 格，Thoughts 8 格從第 129 格起
+        let tab = |x: i32| if (129..=135).contains(&x) { 126523 } else { 0 };
+        assert!(!c.note(tab, false, true, 129, 8));
+        assert!(!c.note(tab, false, false, 129, 2), "同一位置的一般列（清單、按鈕）和分頁標籤不算同一欄");
+        assert!(!c.note(tab, true, true, 129, 2), "頂層（提示框、說明視窗）也不算");
+        assert!(c.note(tab, false, true, 129, 2), "同一種字同一幀長短差兩格是清單");
+        c.next_frame();
+        c.next_frame();
+        assert!(!c.note(tab, false, true, 129, 8), "以前別的畫面在同一位置畫過長度不同的字，不影響現在的分頁標籤");
     }
 
     #[test]

@@ -4,7 +4,8 @@
 """本機實機測試：把 dist/ 的工作坊包掛進遊戲、啟動、下 DFHack 指令、收尾還原。
 
 用法（repo 根目錄，先跑 scripts/build.py）：
-  uv run scripts/dev_game.py up [--lang zh-Hant|zh-Hans|both] [--with-dfi18n]   掛包、遮蔽 DFI18n（--with-dfi18n 不遮蔽）、啟動，等到 DFHack 回應
+  uv run scripts/dev_game.py up [--lang zh-Hant|zh-Hans|both] [--with-dfi18n]   掛包、遮蔽 DFI18n（--with-dfi18n 不遮蔽）、啟動，等到 DFHack 回應；
+                                                               只測一種語言時寫進測試用的 dflang.json，載入的不是 dist 的包就失敗
   uv run scripts/dev_game.py run dflang status                 轉給 dfhack-run
   uv run scripts/dev_game.py click X Y                         以文字格座標模擬滑鼠左鍵（不動真滑鼠、不搶焦點）
   uv run scripts/dev_game.py mouse PX PY [r]                   以畫面像素座標按住滑鼠三幀再放開（地圖點擊用）
@@ -56,9 +57,10 @@ def kill_game() -> None:
 
 def up(langs: list[str], with_dfi18n: bool = False) -> int:
     kill_game()
-    # 遮蔽 MOD 還在表示測試進行中（up 了兩次沒有 down），這時的 dflang* 是測試自己產生的，不是玩家的，不備份
+    # 遮蔽 MOD 或掛載連結還在表示測試進行中（up 了兩次沒有 down），這時的 dflang* 是測試自己產生的，不是玩家的，不備份
+    testing = SHADOW.exists() or any(os.path.isjunction(MODS / item["folder"]) for item in ITEMS)
     user_files = list(CONFIG_DIR.glob("dflang*"))
-    if user_files and not BACKUP.exists() and not SHADOW.exists():
+    if user_files and not BACKUP.exists() and not testing:
         BACKUP.mkdir(parents=True)
         for f in user_files:
             shutil.move(f, BACKUP / f.name)
@@ -78,12 +80,23 @@ def up(langs: list[str], with_dfi18n: bool = False) -> int:
             return 1
         if not link.exists():
             subprocess.run(["cmd", "/c", "mklink", "/J", str(link), str(src)], check=True, capture_output=True)
+    if len(langs) == 1:
+        # 玩家訂閱了本 MOD 時，工作坊的副本（mods/<ID> (<版本>)）讓另一種語言也算已安裝，載入器會照預設選繁中：指定要測的語言
+        config = CONFIG_DIR / "dflang.json"
+        data = json.loads(config.read_text(encoding="utf-8")) if config.is_file() else {}
+        config.write_text(json.dumps({**data, "lang": langs[0]}), encoding="utf-8")
     os.startfile("steam://rungameid/975370")
     deadline = time.time() + 180
     while time.time() < deadline:
         time.sleep(3)
         if "ready" in dfhack("lua", "print('ready')", quiet=True).stdout:
             time.sleep(5)  # 等標題畫面畫出第一幀
+            # 同 ID 的包 DFHack 載入版本最高的，同版本取最後列出的（mods/ 的掛載連結排在工作坊副本後面）；
+            # 工作坊的版本比 dist 新時會載入工作坊的包，測到的就不是這次建置的 DLL
+            loaded = dfhack("lua", "local s = dfhack.BASE_G.DFLANG; print(s and s.dir or '')", quiet=True).stdout.strip()
+            if loaded and not any(f"/mods/{item['folder']}/" in loaded for item in ITEMS if item["lang"] in langs):
+                print(f"載入的不是 dist 的包：{loaded}", file=sys.stderr)
+                return 1
             return dfhack("dflang", "status").returncode
     print("等不到 DFHack 回應", file=sys.stderr)
     return 1
