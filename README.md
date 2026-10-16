@@ -32,12 +32,12 @@
   - 第二十三輪：上架前收尾。簡中實機抽查主要畫面（標題、設定、建立世界、出發準備、要塞、傳說、冒險、競技場）；中文字改小一號並對齊英文字身，分頁標籤這類下移半格的文字照英文位置畫，出發準備畫面的分頁標籤不再壓到下緣；補世界生成參數組名稱、工作名「Fish」（釣魚）、勞動分頁排序鈕；簡中引號不放行首；工作坊說明改寫。
   - 第二十四輪：標題畫面存檔清單的世界名、堡壘名（存檔只存英文，引擎把英文拆回名稱字表組中文）、交談畫面頭像下每個字都大寫的稱呼（「哥布林猛獸獵人 名字」）、攻擊選單的無名生物（「洞穴鱷魚」）。
   - 整句 44,049 條、句型 25,258 條（其中 10,344 條由事件句樣板產生）、依畫面譯文 319 條、名稱字表 3,301 條，繁簡分開翻。
-- 尚未發布到 Steam 工作坊：上傳腳本、說明文、動態 GIF 封面（`docs/steam/cover-*.gif`）與繁簡各 12 張截圖已備妥（截圖在 `temp/`，不進 git），等作者同意後發布。
+- 已發布到 Steam 工作坊（0.1.0，2026-10-16）：[繁體中文](https://steamcommunity.com/sharedfiles/filedetails/?id=3820630135)、[简体中文](https://steamcommunity.com/sharedfiles/filedetails/?id=3820630318)。
 
-## 玩家安裝（發布後）
+## 玩家安裝
 
 1. Steam 安裝 [DFHack](https://store.steampowered.com/app/2346660/)（免費）。
-2. 訂閱繁中或簡中項目，正常啟動遊戲。
+2. 訂閱[繁中](https://steamcommunity.com/sharedfiles/filedetails/?id=3820630135)或[簡中](https://steamcommunity.com/sharedfiles/filedetails/?id=3820630318)項目，正常啟動遊戲。
 3. 兩個都訂閱時預設繁中；在 DFHack 主控台輸入 `dflang lang zh-Hans` 或 `dflang lang zh-Hant` 切換，重開遊戲生效。
 
 不能和 DFI18n、dfzh、DFCN 等其他翻譯引擎同時使用；偵測到 DFI18n、dfzh 時本 MOD 不啟動。`dflang status` 查看狀態。
