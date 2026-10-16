@@ -544,8 +544,11 @@ local function start()
     -- 每字八張，保留範圍（約 8,800 張可用）放不下，後面的落在 DFHack 的動態範圍：遊戲重載貼圖後 texpos 會變，
     -- 最後一張一定在動態範圍（或全部都在保留範圍、永遠不變），看它就知道要不要重查
     local last = dfhack.textures.getTexposByHandle(handles[#handles])
+    -- started：這次啟動時的整句貼圖設定，設定視窗（dflang ui）用來判斷改過的設定要不要提示重開
+    local config = json.open(CONFIG_FILE).data
     dfhack.BASE_G.DFLANG = {engine = engine, lang = LANG, dir = dir, config = CONFIG_FILE,
-                            mascot = load_mascot(engine, dir)}
+                            mascot = load_mascot(engine, dir),
+                            started = {overlay = config.overlay ~= false, overlay_size = config.overlay_size or 14}}
     dfhack.onStateChange.dflang = function(sc)
         if sc ~= SC_VIEWSCREEN_CHANGED and sc ~= SC_WORLD_LOADED and sc ~= SC_WORLD_UNLOADED then return end
         local now = dfhack.textures.getTexposByHandle(handles[#handles])
@@ -558,6 +561,19 @@ end
 
 local ok, err = pcall(start)
 if not ok then fail('啟動失敗：%s', err) end
+
+-- 設定視窗的快捷鍵：只在記憶體註冊、不寫進 init 檔，MOD 移除後下次啟動就沒有（玩家在 gui/keybinds 存過檔的除外，
+-- 按了只會顯示找不到指令）。已經有綁到同一個指令的（另一包先註冊了、或玩家自己存的鍵）就不再加。
+-- 讓位給其他翻譯 MOD 時也註冊：視窗裡可以改回 DFLang
+local HOTKEY, HOTKEY_COMMAND = 'Ctrl-Shift-L', 'dflang ui'
+local function bind_hotkey()
+    for _, bind in ipairs(dfhack.hotkey.listAllKeybinds()) do
+        if bind.command == HOTKEY_COMMAND then return end
+    end
+    if not dfhack.hotkey.addKeybind(HOTKEY, HOTKEY_COMMAND) then fail('無法註冊快捷鍵 %s', HOTKEY) end
+end
+ok, err = pcall(bind_hotkey)
+if not ok then fail('無法註冊快捷鍵 %s：%s', HOTKEY, err) end
 
 -- DFHack overlay 會掃描所有模組腳本的 OVERLAY_WIDGETS；玩家可在 gui/overlay 移動或關閉這個圖示。
 -- 兩包都裝時兩個小工具都會註冊，只有被選用的那包畫圖。
@@ -587,6 +603,15 @@ function MascotOverlay:onRenderBody()
             gps.screentexpos_top[index] = dfhack.textures.getTexposByHandle(handle)
             gps.screentexpos_top_flag[index] = 0
         end
+    end
+end
+
+-- 點吉祥物開設定視窗（同 Ctrl-Shift-L）。呼叫本包的 dflang.lua，不經腳本路徑（兩包、新舊版可能同時在路徑上）
+function MascotOverlay:onInput(keys)
+    local state = dfhack.BASE_G.DFLANG
+    if keys._MOUSE_L and state and state.lang == LANG and state.mascot and self:getMousePos() then
+        dflang().show_ui()
+        return true
     end
 end
 

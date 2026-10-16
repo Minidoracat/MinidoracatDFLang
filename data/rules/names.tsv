@@ -20,6 +20,22 @@ x{1}x	x{1}x	x{1}x		物品磨損外框（稍舊）
 «{1}»	«{1}»	«{1}»		物品有裝飾時的外框
 ({1})	({1})	({1})		庫存清單裡的單件物品外框（(llama wool shirt)）；全形括號放不下，照用半形
 {#1} {2}	{1} {2}	{1} {2}		數量＋名稱（5 plump helmet spawn、2 iron picks）；中文不加量詞
+giant {@1} axe blade	巨型{1}斧刃	巨型{1}斧刃		陷阱零件夾材料：ADJECTIVE 在材料前（FUN_140a82c10 case 0x44：形容詞＋材料＋名稱），giant oaken axe blade
+giant {@1} axe blades	巨型{1}斧刃	巨型{1}斧刃		同上，複數
+enormous {@1} corkscrew	巨型{1}螺旋鑽	巨型{1}螺旋钻		陷阱零件夾材料（enormous iron corkscrew）
+enormous {@1} corkscrews	巨型{1}螺旋鑽	巨型{1}螺旋钻		同上，複數
+spiked {@1} ball	{1}尖刺球	{1}尖刺球		陷阱零件夾材料（spiked oaken ball）；中文材料放前面
+spiked {@1} balls	{1}尖刺球	{1}尖刺球		同上，複數
+large, serrated {@1} disc	大型{1}鋸齒圓盤	大型{1}锯齿圆盘		陷阱零件夾材料（large, serrated steel disc）
+large, serrated {@1} discs	大型{1}鋸齒圓盤	大型{1}锯齿圆盘		同上，複數
+menacing {@1} spike	猙獰{1}尖刺	狰狞{1}尖刺		陷阱零件夾材料（menacing iron spike）
+menacing {@1} spikes	猙獰{1}尖刺	狰狞{1}尖刺		同上，複數
+short {%1} skirt	{1}短裙	{1}短裙		ITEM_PANTS_SKIRT_SHORT 夾材料（FUN_140a82c10 case 0x3c：形容詞＋材料＋名稱，short pig tail fiber skirt）；材料常是兩段（yak leather），用 {%1}，前後都有固定字
+short {%1} skirts	{1}短裙	{1}短裙		同上，複數
+long {%1} skirt	{1}長裙	{1}长裙		ITEM_PANTS_SKIRT_LONG 夾材料（long silk skirt）
+long {%1} skirts	{1}長裙	{1}长裙		同上，複數
+large {@1} pot	{1}大罐	{1}大罐		ITEM_TOOL_LARGE_POT 夾材料（工具名：形容詞＋材料＋名稱，large ceramic pot）；不寫會變成「大陶瓷大罐」
+large {@1} pots	{1}大罐	{1}大罐		同上，複數
 {@1} {@2}	{1}{2}	{1}{2}		材料＋物品、生物＋材料（copper battle axes、yak leather）：兩段都是字典裡的名稱才接
 {@1} {@2} {@3}	{1}{2}{3}	{1}{2}{3}		三段名稱相接（llama wool shirt、giant cave spider silk tunic）；兩段的規則先試
 {%1} [{#2}]	{1} [{2}]	{1} [{2}]		一疊物品的數量（plump helmets [5]，被偷的公告與物品清單）

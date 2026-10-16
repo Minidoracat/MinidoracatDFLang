@@ -322,6 +322,10 @@ thong	丁字褲	丁字裤		ITEM_PANTS:ITEM_PANTS_THONG NAME；內衣
 thongs	丁字褲	丁字裤		ITEM_PANTS:ITEM_PANTS_THONG NAME
 skirt	裙子	裙子		ITEM_PANTS:ITEM_PANTS_SKIRT NAME
 skirts	裙子	裙子		ITEM_PANTS:ITEM_PANTS_SKIRT NAME
+short skirt	短裙	短裙		ITEM_PANTS_SKIRT_SHORT 的 ADJECTIVE＋NAME（工坊「產出：Short skirt」退回小寫查到）；夾材料的寫在 rules/names.tsv
+short skirts	短裙	短裙		同上，複數
+long skirt	長裙	长裙		ITEM_PANTS_SKIRT_LONG 的 ADJECTIVE＋NAME
+long skirts	長裙	长裙		同上，複數
 braies	襯褲	衬裤		ITEM_PANTS:ITEM_PANTS_BRAIES NAME；中世紀寬鬆內褲
 shield	盾牌	盾牌		ITEM_SHIELD:ITEM_SHIELD_SHIELD NAME
 shields	盾牌	盾牌		ITEM_SHIELD:ITEM_SHIELD_SHIELD NAME
@@ -367,6 +371,8 @@ jug	壺	壶		ITEM_TOOL:ITEM_TOOL_JUG NAME
 jugs	壺	壶		ITEM_TOOL:ITEM_TOOL_JUG NAME
 pot	大罐	大罐		ITEM_TOOL:ITEM_TOOL_LARGE_POT NAME；大罐（ITEM_TOOL_LARGE_POT）
 pots	大罐	大罐		ITEM_TOOL:ITEM_TOOL_LARGE_POT NAME；大罐（ITEM_TOOL_LARGE_POT）
+large pot	大罐	大罐		ITEM_TOOL_LARGE_POT 的 ADJECTIVE＋NAME（反應原料說明 glazable large pot、工作物品條件）；不寫會被拆成「大」＋「大罐」
+large pots	大罐	大罐		同上，複數
 hive	蜂箱	蜂箱		ITEM_TOOL:ITEM_TOOL_HIVE NAME
 hives	蜂箱	蜂箱		ITEM_TOOL:ITEM_TOOL_HIVE NAME
 honeycomb	蜂巢	蜂巢		ITEM_TOOL:ITEM_TOOL_HONEYCOMB NAME
@@ -417,8 +423,17 @@ ball	球	球		ITEM_TRAPCOMP:ITEM_TRAPCOMP_SPIKEDBALL NAME；尖刺球陷阱零�
 balls	球	球		ITEM_TRAPCOMP:ITEM_TRAPCOMP_SPIKEDBALL NAME；尖刺球陷阱零件，spiked 另接
 disc	圓盤	圆盘		ITEM_TRAPCOMP:ITEM_TRAPCOMP_LARGESERRATEDDISC NAME；大型鋸齒圓盤陷阱零件
 discs	圓盤	圆盘		ITEM_TRAPCOMP:ITEM_TRAPCOMP_LARGESERRATEDDISC NAME；大型鋸齒圓盤陷阱零件
-spike	尖刺	尖刺		ITEM_TRAPCOMP:ITEM_TRAPCOMP_MENACINGSPIKE NAME；險惡尖刺陷阱零件
-spikes	尖刺	尖刺		ITEM_TRAPCOMP:ITEM_TRAPCOMP_MENACINGSPIKE NAME；險惡尖刺陷阱零件
+spike	尖刺	尖刺		ITEM_TRAPCOMP:ITEM_TRAPCOMP_MENACINGSPIKE NAME；猙獰尖刺陷阱零件
+spikes	尖刺	尖刺		ITEM_TRAPCOMP:ITEM_TRAPCOMP_MENACINGSPIKE NAME；猙獰尖刺陷阱零件
+giant axe blade	巨型斧刃	巨型斧刃		陷阱零件全名（ADJECTIVE＋NAME）：工坊「產出：」畫成 Giant axe blade，引擎退回小寫查到；夾材料的寫在 rules/names.tsv
+giant axe blades	巨型斧刃	巨型斧刃		同上，複數
+enormous corkscrew	巨型螺旋鑽	巨型螺旋钻		陷阱零件全名；enormous 照 giant 的派生名稱譯「巨型」
+enormous corkscrews	巨型螺旋鑽	巨型螺旋钻		同上，複數
+spiked ball	尖刺球	尖刺球		陷阱零件全名（工坊「產出：Spiked ball」）
+spiked balls	尖刺球	尖刺球		同上，複數
+large, serrated disc	大型鋸齒圓盤	大型锯齿圆盘		陷阱零件全名；中文不留逗號
+large, serrated discs	大型鋸齒圓盤	大型锯齿圆盘		同上，複數
+menacing spike	猙獰尖刺	狰狞尖刺		陷阱零件全名；menacing 譯「猙獰」（外觀嚇人）；複數 menacing spikes 和釘背龍的偏好 PREFSTRING 同字，條目在 sentences_preferences.tsv（同一譯名）
 whip	鞭子	鞭子		ITEM_WEAPON:ITEM_WEAPON_WHIP NAME
 whips	鞭子	鞭子		ITEM_WEAPON:ITEM_WEAPON_WHIP NAME
 battle axe	戰斧	战斧		ITEM_WEAPON:ITEM_WEAPON_AXE_BATTLE NAME

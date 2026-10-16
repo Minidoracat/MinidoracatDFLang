@@ -225,7 +225,7 @@ DFHack 的視窗與 overlay（控制面板、launcher、快捷鍵選單、標題
 - Lua 先用 `:wrap(寬度)` 切行再畫的文字（`WrappedLabel` 的 `text_to_wrap`、確認對話框的訊息）整段寫一條（切行前的完整字串）：DFHack 句間只有一個空白，逐句查不到。引擎整段翻、依中文重新換行。
 - 按鍵提示（`Enter: Toggle enabled`）分成按鍵名、`: `、說明三段畫，只翻說明；按鍵名、工具名、指令名不翻。
 - 檔案：`data/strings/dfhack_<批次>.tsv`、`data/rules/dfhack_<批次>.tsv`。通用的單字（`Enabled`、`Gameplay`）放 `data/screens/dfhack.lua.<focus>.tsv`，`<focus>` 是那個視窗的 `focus_path`（控制面板是 `control-panel`）。overlay 沒有自己的焦點，單字寫成整句或句型。
-- 主控台輸出（`print`）、錯誤訊息不翻：引擎只翻遊戲畫面上的字。輸入框（`EditField`、`TextArea`）裡玩家打的字也不翻：引擎畫輸入框內容時不查字典。
+- 主控台輸出（`print`）、錯誤訊息不翻：引擎只翻遊戲畫面上的字。例外是本 MOD 自己的 `dflang` 指令：輸出寫英文、譯文放 `data/strings/dflang_ui.tsv`（數字用 `data/rules/dflang_ui.tsv` 的句型），在遊戲裡的 launcher 畫成中文；寫中文會被 DFHack 照 CP437 畫成亂碼。輸入框（`EditField`、`TextArea`）裡玩家打的字也不翻：引擎畫輸入框內容時不查字典。
 
 ## 按鍵設定
 

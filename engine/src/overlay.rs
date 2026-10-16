@@ -39,24 +39,26 @@ pub static FONT_PATHS: OnceLock<Vec<String>> = OnceLock::new();
 static GPS: AtomicUsize = AtomicUsize::new(0);
 
 /// 字身相對格高（十六分之幾）、往上提的比例。遊戲的點陣字（16 像素高的格子）字頂在第 2 列、基線在第 12 列，按鈕與方框的上下緣線畫在
-/// 格子最上、最下兩三列。預設 13/16、上提一像素：16 像素的格子裡中文筆畫（hinting 後，覆蓋率 > 1/4）落在第 2～14 列，
-/// 相鄰兩列的字之間空 3 列；14 是第 1～14 列（空 2 列）、15 是 1～15（空 1 列）、16 是 0～15（兩列相黏）。
-/// 玩家可用 dflang overlay size 13～16 改（set_em，啟動時畫字圖集前設定一次）；框的邊緣列照預設大小畫（見 size_for）。
+/// 格子最上、最下兩三列。上提一像素時，16 像素的格子裡中文筆畫（hinting 後，覆蓋率 > 1/4）在 13 是第 2～14 列（相鄰兩列的字之間空 3 列），
+/// 14 是第 1～14 列（空 2 列、字底不變）、15 是 1～15（空 1 列）、16 是 0～15（兩列相黏）。預設 14：比 13 大、字底不會多壓到下緣線。
+/// 玩家可用 dflang overlay size 13～16 改（set_em，啟動時畫字圖集前設定一次）；框的邊緣列照 13 畫（SNUG_EM，見 size_for）。
 /// 段落量字寬也用這個大小（lib.rs render_atlas → atlas::advances）
-pub const DEFAULT_EM: u8 = 13;
+pub const DEFAULT_EM: u8 = 14;
+/// 實測緣線畫在字的同一格裡也不壓線的大小（冒險角色名字框的兩列、存檔清單排序標題、出發準備分頁），也是設定的下限
+const SNUG_EM: u8 = 13;
 static EM: OnceLock<u8> = OnceLock::new();
 const RAISE_PER_CELL: f32 = 1.0 / 16.0;
 /// 只有一列高的按鈕（排序標題這類，見 size_for）：上下緣線畫在字的同一格裡，字改小一號（和錨定貼圖標籤一樣）放在兩條線中間
 const SMALL_EM_PER_CELL: f32 = 0.75;
 const SMALL_RAISE_PER_CELL: f32 = 1.0 / 16.0;
-/// 字的三種大小（State::glyphs 的索引）：玩家設定的大小、小一號、預設大小（框的邊緣列，見 size_for）
+/// 字的三種大小（State::glyphs 的索引）：玩家設定的大小、小一號、框的邊緣列（SNUG_EM，見 size_for）
 const NORMAL: usize = 0;
 const SMALL: usize = 1;
 const SNUG: usize = 2;
 
 /// 設定字身（十六分之幾格高，13～16）：啟動時畫字圖集前呼叫一次；超出範圍或已經設過的不算
 pub fn set_em(sixteenths: u8) -> bool {
-    (DEFAULT_EM..=16).contains(&sixteenths) && EM.set(sixteenths).is_ok()
+    (SNUG_EM..=16).contains(&sixteenths) && EM.set(sixteenths).is_ok()
 }
 
 pub fn em_per_cell() -> f32 {
@@ -64,13 +66,13 @@ pub fn em_per_cell() -> f32 {
 }
 
 fn per_cell(size: usize) -> f32 {
-    [em_per_cell(), SMALL_EM_PER_CELL, f32::from(DEFAULT_EM) / 16.0][size]
+    [em_per_cell(), SMALL_EM_PER_CELL, f32::from(SNUG_EM) / 16.0][size]
 }
 
 /// 一行用哪種大小。rows 是字底下的框在上一列、下一列還有沒有同一組的貼圖（State::box_rows；字底下沒有框是 None），
-/// grow 是玩家把字設得比預設大：
+/// grow 是字身比 13（SNUG_EM）大（預設 14 就是）：
 /// - 只有一列高的按鈕（上下都不是同一組：排序標題這類）：上下緣線畫在字的同一格裡，小一號
-/// - 框的最上、最下一列（冒險角色名字框的兩列）、錨定貼圖標籤：緣線畫在字的同一格裡、標籤從固定的上緣畫，照實測不壓線的預設大小
+/// - 框的最上、最下一列（冒險角色名字框的兩列）、錨定貼圖標籤：緣線畫在字的同一格裡、標籤從固定的上緣畫，照實測不壓線的 13
 /// - 其他（框的中間列、沒有框、半格位移的分頁標籤）：玩家設定的大小
 fn size_for(row: Row, rows: Option<(bool, bool)>, grow: bool) -> usize {
     match (row, rows) {

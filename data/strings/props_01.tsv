@@ -31,3 +31,5 @@ drink	酒類	酒类		FUN_140a82c10；物品種類 DRINK 的通稱（小寫；大
 honey	蜂蜜	蜂蜜		反應原料代號（CONTAINS:honey），FUN_140a2adb0 1479120 接成 honey-containing
 oil	油	油		反應原料代號（CONTAINS:oil），FUN_140a2adb0 1479120 接成 oil-containing
 milk liquid	奶	奶		FUN_140a2adb0 工作物品條件：milk 性質＋liquid 物品名（通用句型會拼成「奶液體」）
+fat renderable glob	可熬煉的脂肪團塊	可熬炼的脂肪团块	inner	FUN_140a2adb0 工作物品條件：REACTION_CLASS:FAT（fat ）＋RENDER_MAT（renderable ）＋glob（RENDER_FAT 的原料，工坊紅字 [Requires Unrotten fat renderable glob]）；fat {@1} 只收字典名稱，整條寫出
+tallow fatty glob	多脂的獸脂團塊	多脂的兽脂团块	inner	FUN_140a2adb0 工作物品條件：REACTION_CLASS:TALLOW（tallow ）＋SOAP_MAT（fatty ）＋glob（MAKE_SOAP_FROM_TALLOW 的原料）；整條寫出，免得通用句型把 fatty 拼成「脂肪」

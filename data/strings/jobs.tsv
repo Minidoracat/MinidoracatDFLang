@@ -169,3 +169,6 @@ Engrave memorial slab	雕刻紀念石板	雕刻纪念石板		工作名稱
 No patient	沒有病人	没有病人		工作取消原因（Diagnose Patient 等醫療工作找不到病人）；不寫整句時會被 {@1} {@2} 接成「否有耐心」
 Geld animal	閹割動物	阉割动物		FUN_140d032b0 1955824-1955844 工作名稱：沒有指定動物時接 animal；整條寫出（句型 Geld {1}／Slaughter {1} 的 {1} 不會把 animal 當動物）
 Slaughter animal	屠宰動物	屠宰动物		FUN_140d032b0 （Slaughter 同一函式） 工作名稱：沒有指定動物時接 animal；整條寫出（句型 Geld {1}／Slaughter {1} 的 {1} 不會把 animal 當動物）
+[Requires fuel]	[需要燃料]	[需要燃料]		FUN_1408c3fe0 L1263775/1263805/1263900 工坊任務清單：熔爐、窯等需要燃料而沒有時，接在任務名後的紅字；方括號照原文半形
+[Requires ore]	[需要礦石]	[需要矿石]		FUN_1408c3fe0 L1263813 工坊任務清單：冶煉沒有礦石時的紅字
+[Requires ore, fuel]	[需要礦石、燃料]	[需要矿石、燃料]		FUN_1408c3fe0 L1263800 工坊任務清單：礦石和燃料都缺

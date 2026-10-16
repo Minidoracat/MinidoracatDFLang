@@ -402,7 +402,7 @@ ferocious bite	兇猛的咬合	凶猛的咬合		偏好：CREATURE:JURASSIC_TORVO
 short arms	短小的前肢	短小的前肢		偏好：CREATURE:JURASSIC_TORVOSAURUS PREFSTRING
 back plates	背部骨板	背部骨板		偏好：CREATURE:JURASSIC_STEGOSAURUS PREFSTRING
 tail spikes	尾刺	尾刺		偏好：CREATURE:JURASSIC_STEGOSAURUS PREFSTRING
-menacing spikes	嚇人的尖刺	吓人的尖刺		偏好：CREATURE:JURASSIC_KENTROSAURUS PREFSTRING
+menacing spikes	猙獰尖刺	狰狞尖刺		偏好：CREATURE:JURASSIC_KENTROSAURUS PREFSTRING；同字也是陷阱零件 menacing spike 的複數（names_items_domestic），兩處共用「猙獰尖刺」
 graceful flight	優雅的飛姿	优雅的飞姿		偏好：CREATURE:JURASSIC_PTERODACTYLUS PREFSTRING
 round heads	圓圓的腦袋	圆圆的脑袋		偏好：CREATURE:JURASSIC_JEHOLOPTERUS PREFSTRING
 head crests	頭冠	头冠		偏好：CREATURE:JURASSIC_DILOPHOSAURUS PREFSTRING

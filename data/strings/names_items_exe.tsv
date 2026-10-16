@@ -126,6 +126,9 @@ coffins	棺材	棺材		exe 物品名
 armor stand	盔甲架	盔甲架		exe 物品名
 weapon rack	武器架	武器架		exe 物品名
 glass	玻璃	玻璃		exe 物品名
+green glass	綠玻璃	绿玻璃		exe 內建材料名（GLASS_GREEN，0x01712aa8）：接物品名成工作名與物品名（Make green glass table、giant green glass axe blade）；譯法同 raw green glass 綠玻璃原石
+clear glass	透明玻璃	透明玻璃		exe 內建材料名（GLASS_CLEAR，0x01712ae0）；同 raw clear glass
+ivory/tooth	象牙／牙質	象牙／牙质		exe 材料類別名（FUN_1414d1920 job_material_category bit 9 tooth，0x01789150）：工坊工作名 Make ivory/tooth amulet、Make large ivory/tooth gem、Decorate with ivory/tooth 的材料段；譯法同 props_01 的 ivory/tooth {%1}；其他類別名（plant、yarn、wood(en)、cloth、silk、bone、leather、shell、soap、horn、pearl）早有條目
 wool	羊毛	羊毛		exe 物品名
 yarn	毛線	毛线		exe 物品名
 lye	鹼液	碱液		exe 物品名

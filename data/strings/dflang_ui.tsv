@@ -1,0 +1,50 @@
+en	zh-Hant	zh-Hans	align	note
+DFLang Chinese translation: settings window (Ctrl-Shift-L) and engine commands.	DFLang 中文化：設定視窗（Ctrl-Shift-L）與引擎指令。	DFLang 中文化：设置窗口（Ctrl-Shift-L）与引擎命令。		lua/dflang.lua 第一行註解：DFHack 的指令簡介（launcher 指令清單、Ctrl-Shift-C 快捷鍵選單；helpdb 會補句號）；指令名、按鍵照原文
+Usage:	用法：	用法：		lua/dflang.lua USAGE（dflang 不加參數或參數不對時印出；DFHack 主控台、launcher 輸出）第 1 行
+  dflang ui                         Open the settings window (hotkey: Ctrl-Shift-L)	  dflang ui                         開啟設定視窗（快捷鍵：Ctrl-Shift-L）	  dflang ui                         打开设置窗口（快捷键：Ctrl-Shift-L）		lua/dflang.lua USAGE（dflang 不加參數或參數不對時印出；DFHack 主控台、launcher 輸出）；指令照原文
+  dflang status                     Show the engine status	  dflang status                     引擎狀態	  dflang status                     引擎状态		lua/dflang.lua USAGE（dflang 不加參數或參數不對時印出；DFHack 主控台、launcher 輸出）
+  dflang on | off                   Turn the translation on or off	  dflang on | off                   開關翻譯	  dflang on | off                   开关翻译		lua/dflang.lua USAGE（dflang 不加參數或參數不對時印出；DFHack 主控台、launcher 輸出）
+  dflang t <English text>           Look up the translation in the current language	  dflang t <英文原文>               查目前語言的譯文	  dflang t <英文原文>               查当前语言的译文		lua/dflang.lua USAGE（dflang 不加參數或參數不對時印出；DFHack 主控台、launcher 輸出）
+  dflang lang zh-Hant|zh-Hans       With both packs installed, choose the language (after restarting the game)	  dflang lang zh-Hant|zh-Hans       繁、簡兩包都裝時選擇語言（重開遊戲生效）	  dflang lang zh-Hant|zh-Hans       繁、简两包都装时选择语言（重启游戏生效）		lua/dflang.lua USAGE（dflang 不加參數或參數不對時印出；DFHack 主控台、launcher 輸出）
+  dflang lang off                   Use DFI18n, DFCN or another translation mod and restore the ones DFLang turned off (after restarting the game); without one, DFLang stays on	  dflang lang off                   改用 DFI18n、DFCN 等其他翻譯，並恢復之前停用的（重開遊戲生效）；沒有其他翻譯 MOD 時本 MOD 照常啟用	  dflang lang off                   改用 DFI18n、DFCN 等其他翻译，并恢复之前禁用的（重启游戏生效）；没有其他翻译模组时本模组照常启用		lua/dflang.lua USAGE（dflang 不加參數或參數不對時印出；DFHack 主控台、launcher 輸出）
+  dflang misses on|off              Log text on screen that has no translation to dfhack-config/dflang-misses.tsv, also after restarting the game, until off	  dflang misses on|off              把畫面上沒翻到的字記到 dfhack-config/dflang-misses.tsv；重開遊戲後照樣記錄，直到 off	  dflang misses on|off              把画面上没翻译到的文字记录到 dfhack-config/dflang-misses.tsv；重启游戏后照样记录，直到 off		lua/dflang.lua USAGE（dflang 不加參數或參數不對時印出；DFHack 主控台、launcher 輸出）
+  dflang overlay on|off             Full-line text rendering (default on); off draws each Chinese character as a two-cell glyph (after restarting the game)	  dflang overlay on|off             整句貼圖（預設開）；off 改回一字兩格的字圖（重開遊戲生效）	  dflang overlay on|off             整句贴图（默认开）；off 改回一字两格的字图（重启游戏生效）		lua/dflang.lua USAGE（dflang 不加參數或參數不對時印出；DFHack 主控台、launcher 輸出）
+  dflang overlay size [13-16]       Chinese text size in 16ths of the cell height (default 14; after restarting the game); without a number, show the setting	  dflang overlay size [13-16]       中文字身：格高的十六分之幾（預設 14，重開遊戲生效）；不加數字顯示目前設定	  dflang overlay size [13-16]       中文字身：格高的十六分之几（默认 14，重启游戏生效）；不加数字显示当前设置		lua/dflang.lua USAGE（dflang 不加參數或參數不對時印出；DFHack 主控台、launcher 輸出）
+DFLang zh-Hant: translation on	DFLang zh-Hant：翻譯開啟	DFLang zh-Hant：翻译开启		lua/dflang.lua dflang status 第 1 行
+DFLang zh-Hant: translation off	DFLang zh-Hant：翻譯關閉	DFLang zh-Hant：翻译关闭		lua/dflang.lua dflang status 第 1 行（dflang off 之後）
+DFLang zh-Hans: translation on	DFLang zh-Hans：翻譯開啟	DFLang zh-Hans：翻译开启		lua/dflang.lua dflang status 第 1 行
+DFLang zh-Hans: translation off	DFLang zh-Hans：翻譯關閉	DFLang zh-Hans：翻译关闭		lua/dflang.lua dflang status 第 1 行（dflang off 之後）
+Language set to zh-Hant. Restart the game to apply.	已設定為 zh-Hant，重開遊戲後生效。	已设置为 zh-Hant，重启游戏后生效。		lua/dflang.lua dflang lang zh-Hant
+Language set to zh-Hans. Restart the game to apply.	已設定為 zh-Hans，重開遊戲後生效。	已设置为 zh-Hans，重启游戏后生效。		lua/dflang.lua dflang lang zh-Hans
+Switched to the other translation mod (DFI18n restored). Restart the game to apply.	已設定為改用其他翻譯 MOD，並恢復 DFI18n；重開遊戲後生效。	已设置为改用其他翻译模组，并恢复 DFI18n；重启游戏后生效。		lua/dflang.lua dflang lang off
+Switched to the other translation mod (DFCN restored). Restart the game to apply.	已設定為改用其他翻譯 MOD，並恢復 DFCN；重開遊戲後生效。	已设置为改用其他翻译模组，并恢复 DFCN；重启游戏后生效。		lua/dflang.lua dflang lang off
+Switched to the other translation mod (DFI18n and DFCN restored). Restart the game to apply.	已設定為改用其他翻譯 MOD，並恢復 DFI18n 與 DFCN；重開遊戲後生效。	已设置为改用其他翻译模组，并恢复 DFI18n 与 DFCN；重启游戏后生效。		lua/dflang.lua dflang lang off
+Switched to the other translation mod. Restart the game to apply. Without one, DFLang stays on.	已設定為改用其他翻譯 MOD，重開遊戲後生效；沒有其他翻譯 MOD 時本 MOD 照常啟用。	已设置为改用其他翻译模组，重启游戏后生效；没有其他翻译模组时本模组照常启用。		lua/dflang.lua dflang lang off（沒有恢復任何 MOD）
+The DFLang engine is not running; see the [DFLang] lines in stderr.log in the game folder.	DFLang 引擎沒有啟用；原因見遊戲目錄 stderr.log 裡 [DFLang] 開頭的訊息。	DFLang 引擎没有启用；原因见游戏目录 stderr.log 里 [DFLang] 开头的消息。		lua/dflang.lua 引擎沒啟用時的錯誤（qerror）；另一包啟用中時這段字也照另一包的字典
+(Neither the dictionary nor the patterns have this text.)	（字典與句型都沒有這句）	（字典与句型都没有这句）		lua/dflang.lua dflang t 查不到
+Logging untranslated text to dfhack-config/dflang-misses.tsv, also after restarting the game.	記錄未翻譯的字到 dfhack-config/dflang-misses.tsv，重開遊戲後照樣記錄。	记录未翻译的文字到 dfhack-config/dflang-misses.tsv，重启游戏后照样记录。		lua/dflang.lua dflang misses on
+Stopped logging untranslated text.	已停止記錄未翻譯的字。	已停止记录未翻译的文字。		lua/dflang.lua dflang misses off
+Full-line text rendering: on (after restarting the game).	整句貼圖：開（重開遊戲後生效）。	整句贴图：开（重启游戏后生效）。		lua/dflang.lua dflang overlay on
+Full-line text rendering: off, back to two-cell glyphs (after restarting the game).	整句貼圖：關，改回一字兩格的字圖（重開遊戲後生效）。	整句贴图：关，改回一字两格的字图（重启游戏后生效）。		lua/dflang.lua dflang overlay off
+DFLang Settings	DFLang 設定	DFLang 设置	c	lua/dflang.lua 設定視窗（dflang ui、Ctrl-Shift-L）的視窗標題
+Translation engine:	翻譯引擎：	翻译引擎：		lua/dflang.lua 設定視窗：引擎狀態的標籤
+Running (Traditional Chinese)	運作中（繁體中文）	运行中（繁体中文）		lua/dflang.lua 設定視窗：引擎狀態
+Running (Simplified Chinese)	運作中（簡體中文）	运行中（简体中文）		lua/dflang.lua 設定視窗：引擎狀態
+Not running (see stderr.log in the game folder)	沒有啟動（原因見遊戲目錄的 stderr.log）	没有启动（原因见游戏目录的 stderr.log）		lua/dflang.lua 設定視窗：引擎狀態（讓位、載入失敗）
+Show translation:	顯示中文：	显示中文：		lua/dflang.lua 設定視窗：暫時看英文的開關（dflang on|off，立即生效、不記住）
+Traditional Chinese	繁體中文	繁体中文		lua/dflang.lua 設定視窗：語言選項（Language: 已有通用條目）
+Simplified Chinese	簡體中文	简体中文		lua/dflang.lua 設定視窗：語言選項
+Other translation mod	其他翻譯 MOD	其他翻译模组		lua/dflang.lua 設定視窗：語言選項（dflang lang off 之後才列出）
+Full-line text rendering:	整句貼圖：	整句贴图：		lua/dflang.lua 設定視窗：整句貼圖開關（重開遊戲生效）
+Chinese text size:	中文字身：	中文字身：		lua/dflang.lua 設定視窗：整句貼圖字身（dflang overlay size，重開遊戲生效）
+14/16 (default)	14/16（預設）	14/16（默认）		lua/dflang.lua 設定視窗：字身選項，格高的十六分之幾
+Restart the game to apply these changes.	重開遊戲後，上面的變更才會生效。	重启游戏后，上面的更改才会生效。		lua/dflang.lua 設定視窗：改了語言、整句貼圖或字身後的黃字提示
+Log untranslated text:	記錄未翻譯的字：	记录未翻译的文字：		lua/dflang.lua 設定視窗：未翻譯紀錄開關（dflang misses，立即生效）
+Log file (in the game folder):	紀錄檔（在遊戲目錄）：	记录文件（在游戏目录）：		lua/dflang.lua 設定視窗：後面接紀錄檔的相對路徑
+No log file yet	還沒有紀錄檔	还没有记录文件		lua/dflang.lua 設定視窗：紀錄檔不存在
+(full; clear the log to keep logging)	（已滿，清除紀錄才會繼續記）	（已满，清除记录才会继续记录）		lua/dflang.lua 設定視窗：紀錄到了引擎的上限
+Open the log folder	開啟紀錄所在資料夾	打开记录所在文件夹		lua/dflang.lua 設定視窗：按鈕，用檔案總管開 dfhack-config
+Clear the log	清除紀錄	清除记录		lua/dflang.lua 設定視窗：按鈕
+Clear untranslated text log	清除未翻譯紀錄	清除未翻译记录	c	lua/dflang.lua 設定視窗：清除紀錄的確認框標題
+Delete everything in dflang-misses.tsv?	刪除 dflang-misses.tsv 的所有內容？	删除 dflang-misses.tsv 的所有内容？		lua/dflang.lua 設定視窗：清除紀錄的確認訊息
+Logging stays on after restarting the game until you turn it off. To report untranslated text, attach dflang-misses.tsv to a GitHub issue, or paste its lines into the bug report discussion on the Workshop page. The log may contain names from your world.	開啟後重開遊戲也會繼續記錄，直到關閉。回報沒翻到的字：把 dflang-misses.tsv 附到 GitHub Issue，或把內容貼到工作坊頁面的「問題回報」討論串。紀錄裡可能有你世界裡的名字。	开启后重启游戏也会继续记录，直到关闭。反馈没有翻译到的文字：把 dflang-misses.tsv 附到 GitHub Issue，或把内容贴到创意工坊页面的“问题反馈”讨论帖。记录里可能有你世界中的名字。		lua/dflang.lua 設定視窗：未翻譯紀錄的說明（WrappedLabel 整段一條）；Workshop 是 Steam 工作坊，術語例外：workshop

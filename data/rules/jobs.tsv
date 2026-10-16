@@ -1,6 +1,14 @@
 en	zh-Hant	zh-Hans	align	note
 Make giant {@1} axe blade	製作巨型{1}斧刃	制作巨型{1}斧刃		工作名稱：材料插在 giant axe blade 中間（Make giant oaken axe blade）；要排在三段名稱前，免得 giant 被當成巨人
 Forge giant {@1} axe blade	鍛造巨型{1}斧刃	锻造巨型{1}斧刃		工作名稱：Forge giant iron axe blade
+Make enormous {@1} corkscrew	製作巨型{1}螺旋鑽	制作巨型{1}螺旋钻		工作名稱：陷阱零件，材料插在 enormous corkscrew 中間（木匠工坊 Make enormous wooden corkscrew）；和上兩條一樣排在三段名稱前
+Forge enormous {@1} corkscrew	鍛造巨型{1}螺旋鑽	锻造巨型{1}螺旋钻		工作名稱：Forge enormous iron corkscrew
+Make spiked {@1} ball	製作{1}尖刺球	制作{1}尖刺球		工作名稱：Make spiked wooden ball
+Forge spiked {@1} ball	鍛造{1}尖刺球	锻造{1}尖刺球		工作名稱：Forge spiked iron ball
+Make large, serrated {@1} disc	製作大型{1}鋸齒圓盤	制作大型{1}锯齿圆盘		工作名稱：Make large, serrated wooden disc
+Forge large, serrated {@1} disc	鍛造大型{1}鋸齒圓盤	锻造大型{1}锯齿圆盘		工作名稱：Forge large, serrated iron disc
+Make menacing {@1} spike	製作猙獰{1}尖刺	制作狰狞{1}尖刺		工作名稱：Make menacing wooden spike
+Forge menacing {@1} spike	鍛造猙獰{1}尖刺	锻造狰狞{1}尖刺		工作名稱：Forge menacing iron spike
 Make three {@1} {@2} {@3}	製作 3 個{1}{2}{3}	制作 3 个{1}{2}{3}		工作名稱：材料是兩段（yak leather）時
 Make five {@1} {@2} {@3}	製作 5 支{1}{2}{3}	制作 5 支{1}{2}{3}		工作名稱
 Make twenty-five {@1} {@2} {@3}	製作 25 支{1}{2}{3}	制作 25 支{1}{2}{3}		工作名稱
@@ -14,6 +22,9 @@ Make twenty-five {@1} {@2}	製作 25 支{1}{2}	制作 25 支{1}{2}		工作名稱
 Forge twenty-five {@1} {@2}	鍛造 25 支{1}{2}	锻造 25 支{1}{2}		工作名稱：Forge twenty-five iron bolts
 Make pair of {@1} {@2}	製作一雙{1}{2}	制作一双{1}{2}		工作名稱：手套、鞋子成對
 Forge pair of {@1} {@2}	鍛造一雙{1}{2}	锻造一双{1}{2}		工作名稱：Forge pair of iron gauntlets
+Make large {@1} pot	製作{1}大罐	制作{1}大罐		工作名稱：大罐（ITEM_TOOL_LARGE_POT，ADJECTIVE large 在材料前：Make large rock pot）；排在 Make large {@1} {@2} 前，免得變成「大型石頭大罐」
+Make short {%1} skirt	製作{1}短裙	制作{1}短裙		工作名稱：短裙（ADJECTIVE short 在材料前）
+Make long {%1} skirt	製作{1}長裙	制作{1}长裙		工作名稱：長裙（ADJECTIVE long 在材料前）
 Make large {@1} {@2}	製作大型{1}{2}	制作大型{1}{2}		工作名稱
 Make {@1} {@2}	製作{1}{2}	制作{1}{2}		工作名稱：Make 材料＋物品（Make rock table）
 Make {@1} {@2} {@3}	製作{1}{2}{3}	制作{1}{2}{3}		工作名稱：三段名稱（Make giant cave spider silk shirt）
@@ -51,3 +62,4 @@ Make {1} drum	製作{1}鼓	制作{1}鼓		樂器零件的工作（工坊、物品
 Make {1} keyboard	製作{1}鍵盤	制作{1}键盘		樂器零件的工作（工坊、物品頁「用途」）：{1} 是世界生成的樂器名，照原文
 Make {1} sound-chest	製作{1}共鳴箱	制作{1}共鸣箱		樂器零件的工作（工坊、物品頁「用途」）：{1} 是世界生成的樂器名，照原文；術語例外：chest；樂器的共鳴箱
 Make {1} strings	製作{1}琴弦	制作{1}琴弦		樂器零件的工作（工坊、物品頁「用途」）：{1} 是世界生成的樂器名，照原文
+[Requires {%1}]	[需要{1}]	[需要{1}]		FUN_1408c3fe0 L1263874 工坊任務清單：反應缺原料時的紅字，「[Requires 」＋試劑說明（試劑 vtable +0x38＝FUN_140edc660→FUN_140a2adb0 工作物品條件，數量固定 1、單數，FUN_14052d650 只把第一個字母大寫）＋「]」：MAKE WOODEN DISPLAY CASE 缺窗戶時是 [Requires Window]；說明翻不出來整條照英文
