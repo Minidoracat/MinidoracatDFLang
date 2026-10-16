@@ -1,5 +1,6 @@
 # AI 工具本機設定（不進版控）
 .claude/
+.omp/
 .mcp.json
 CLAUDE.md
 AGENTS.md
