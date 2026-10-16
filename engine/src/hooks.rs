@@ -493,6 +493,49 @@ fn top_layer(l: &Layout) -> Layer {
     l.top
 }
 
+/// 遊戲照原樣畫的字（沒有譯文）也交給實驗的整句貼圖（overlay.rs）：不用遊戲的點陣字，版面不動。
+/// (x0, y) 是畫之前的游標；space > 0 時遊戲最多畫 space 格。
+unsafe fn record_plain(gps: *mut u8, layer: fn(&Layout) -> Layer, x0: i32, y: i32, text: &[u8], space: i32) {
+    if !crate::overlay::ON.load(Ordering::Relaxed) {
+        return;
+    }
+    let Some(layout) = LAYOUT.get() else { return };
+    let layer = layer(layout);
+    let n = if space > 0 { text.len().min(space as usize) } else { text.len() };
+    let row = unsafe { row_of(gps, layout, &layer, x0, y) };
+    crate::overlay::record(gps, layer.screen == layout.top.screen, row, x0, y, &text[..n], &[], b'l');
+}
+
+/// (x, y) 那一格的列別（一般、半格位移的上列或下列）；格子不在畫面裡時當一般列
+unsafe fn row_of(gps: *const u8, layout: &Layout, layer: &Layer, x: i32, y: i32) -> Row {
+    unsafe {
+        let dimx: i32 = read(gps, layout.dimx);
+        let dimy: i32 = read(gps, layout.dimy);
+        let flag: *const u32 = read(gps, layer.flag);
+        if flag.is_null() || x < 0 || y < 0 || x >= dimx || y >= dimy {
+            return Row::Whole;
+        }
+        let f = *flag.add((x * dimy + y) as usize);
+        if f & FLAG_BOTTOM_OF_TEXT != 0 {
+            Row::Bottom
+        } else if f & FLAG_TOP_OF_TEXT != 0 {
+            Row::Top
+        } else {
+            Row::Whole
+        }
+    }
+}
+
+/// 目前的游標 (screenx, screeny)
+unsafe fn cursor(gps: *const u8) -> (i32, i32) {
+    LAYOUT.get().map_or((0, 0), |l| unsafe { (read(gps, l.screenx), read(gps, l.screeny)) })
+}
+
+/// DFHack 照原樣畫的一段字（Lua 包住的 paintString 沒有譯文時，見 lua/loader.lua）
+pub fn dfhack_plain(gps: usize, x: i32, y: i32, top: bool, text: &[u8]) {
+    unsafe { record_plain(gps as *mut u8, if top { top_layer } else { main_layer }, x, y, text, 0) };
+}
+
 /// 段落單字與自動換行的行（見 mtb.rs、lines.rs）：照畫英文、不畫，或在載體的座標上畫幾段中文。回傳 false 表示都不是。
 /// `draw` 用遊戲原本的寫字函式畫一個字串（載體本身，或中文段的替身字串）。
 unsafe fn paragraph_word(gps: *mut u8, s: *const StdString, layer: fn(&Layout) -> Layer, draw: impl Fn(&StdString)) -> bool {
@@ -502,12 +545,16 @@ unsafe fn paragraph_word(gps: *mut u8, s: *const StdString, layer: fn(&Layout) -
     let dict = DICT.load(Ordering::Acquire);
     let pieces = match plan {
         Plan::Plain => {
+            let (x0, y) = unsafe { cursor(gps) };
             unsafe { draw(&*s) };
+            unsafe { record_plain(gps, layer, x0, y, (*s).bytes(), 0) };
             return true;
         }
         Plan::Missing(text) => {
             note_miss("wrap", &text);
+            let (x0, y) = unsafe { cursor(gps) };
             unsafe { draw(&*s) };
+            unsafe { record_plain(gps, layer, x0, y, (*s).bytes(), 0) };
             return true;
         }
         Plan::Skip => return true,
@@ -554,7 +601,9 @@ unsafe extern "C" fn hook_addst(gps: *mut u8, s: *const StdString, just: i32, sp
             || translate_call(gps, "addst", key, space, main_layer, |b| orig(gps, &StdString::borrowed(b), just, space))
     };
     if !done {
-        unsafe { orig(gps, s, just, space) }
+        let (x0, y) = unsafe { cursor(gps) };
+        unsafe { orig(gps, s, just, space) };
+        unsafe { record_plain(gps, main_layer, x0, y, key, space) };
     }
 }
 
@@ -566,7 +615,9 @@ unsafe extern "C" fn hook_addst_flag(gps: *mut u8, s: *const StdString, just: i3
             || translate_call(gps, "addst_flag", key, space, main_layer, |b| orig(gps, &StdString::borrowed(b), just, space, sflag))
     };
     if !done {
-        unsafe { orig(gps, s, just, space, sflag) }
+        let (x0, y) = unsafe { cursor(gps) };
+        unsafe { orig(gps, s, just, space, sflag) };
+        unsafe { record_plain(gps, main_layer, x0, y, key, space) };
     }
 }
 
@@ -578,7 +629,9 @@ unsafe extern "C" fn hook_top_addst(gps: *mut u8, s: *const StdString, just: i32
             || translate_call(gps, "top_addst", key, 0, top_layer, |b| orig(gps, &StdString::borrowed(b), just, space))
     };
     if !done {
-        unsafe { orig(gps, s, just, space) }
+        let (x0, y) = unsafe { cursor(gps) };
+        unsafe { orig(gps, s, just, space) };
+        unsafe { record_plain(gps, top_layer, x0, y, key, space) };
     }
 }
 
@@ -600,7 +653,9 @@ unsafe extern "C" fn hook_addcoloredst(gps: *mut u8, s: *const u8, colors: *cons
         })
     };
     if !done {
-        unsafe { orig(gps, s, colors) }
+        let (x0, y) = unsafe { cursor(gps) };
+        unsafe { orig(gps, s, colors) };
+        unsafe { record_plain(gps, main_layer, x0, y, key, 0) };
     }
 }
 
@@ -612,7 +667,9 @@ unsafe fn colored_line(gps: *mut u8, s: *const u8, draw: impl Fn(*const u8, *con
     let pieces = match plan {
         crate::ctb::Plan::English => {
             let color = crate::ctb::CTB_LAYOUT.get().map_or(0, |l| l.color);
+            let (x0, y) = unsafe { cursor(gps) };
             draw(s, unsafe { s.add(color) });
+            unsafe { record_plain(gps, main_layer, x0, y, CStr::from_ptr(s.cast()).to_bytes(), 0) };
             return true;
         }
         crate::ctb::Plan::Skip => return true,

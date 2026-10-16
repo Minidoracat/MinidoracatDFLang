@@ -222,10 +222,18 @@ local function install_paint_string(engine, stamp)
     if screen.dflang_paint_string then return end -- 只包一層
     local orig = screen.paintString
     screen.dflang_paint_string = orig
+    -- 沒有譯文、照原樣畫的字也告訴引擎：實驗的整句貼圖用本包的字型重畫，不用遊戲的點陣字（見 engine/src/overlay.rs）
+    local gps = df.global.gps
+    local _, gps_addr = df.sizeof(gps)
+    local function plain(x, y, text) engine.dh_plain(gps_addr, x, y, gps.top_in_use and 1 or 0, text) end
     screen.paintString = function(pen, x, y, text, map)
-        if typing or map or type(text) ~= 'string' then return orig(pen, x, y, text, map) end
-        local shadow = engine.dh_translate(text, y)
-        if not shadow then return orig(pen, x, y, text, map) end
+        if map or type(text) ~= 'string' then return orig(pen, x, y, text, map) end
+        local shadow = not typing and engine.dh_translate(text, y)
+        if not shadow then
+            local ok = orig(pen, x, y, text, map)
+            plain(x, y, text)
+            return ok
+        end
         local ok = orig(pen, x, y, shadow, map)
         stamp(x, y)
         return ok

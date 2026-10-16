@@ -66,6 +66,7 @@ pub unsafe extern "C" fn luaopen_dflang(l: lua::State) -> c_int {
         lua::set_fn(l, c"overlay_install", overlay_install);
         lua::set_fn(l, c"set_overlay", set_overlay);
         lua::set_fn(l, c"overlay_dump", overlay_dump);
+        lua::set_fn(l, c"dh_plain", dh_plain);
     }
     1
 }
@@ -73,6 +74,18 @@ unsafe extern "C" fn overlay_dump(l: lua::State) -> c_int {
     unsafe { lua::push_str(l, &overlay::dump()) };
     1
 }
+/// dh_plain(gps 位址, x, y, 頂層 0/1, 字)：DFHack 照原樣畫的一段字，交給實驗的整句貼圖（見 hooks::dfhack_plain）
+unsafe extern "C" fn dh_plain(l: lua::State) -> c_int {
+    unsafe {
+        if let (Some(gps), Some(x), Some(y), Some(top), Some(text)) =
+            (lua::arg_int(l, 1), lua::arg_int(l, 2), lua::arg_int(l, 3), lua::arg_int(l, 4), lua::arg_bytes(l, 5))
+        {
+            hooks::dfhack_plain(gps as usize, x as i32, y as i32, top != 0, text);
+        }
+    }
+    0
+}
+
 
 
 /// overlay_install(renderer 位址)：實驗的整句貼圖，換掉 renderer vtable 的三個槽（見 overlay.rs）
