@@ -439,6 +439,8 @@ struct State {
     left_numbers: bool,
     /// 接成一行的字畫在框的右邊（見 right_in_box）：緊排以後也靠右
     right_box: bool,
+    /// 置中的一段字畫在按鈕、分頁上，而且原文在這張框裡置中（見 box_shift）：框的正中間比原文的正中間偏多少（兩倍，格數）
+    box_shift: i32,
     chars: Vec<char>,
     /// 從格子讀回來、接在本幀某一行旁邊的字（見 begin）
     extra: Vec<Run>,
@@ -469,6 +471,15 @@ fn layer_of(top: bool, row: Row) -> usize {
 /// 字的點陣與一行貼圖在格子上方多留的列數：字往上提以後，重音符號、較高的中文字上緣會超出格子
 fn margin(dy: i32) -> i32 {
     dy / 4
+}
+
+/// 置中的字從哪個像素起畫（相對這一段的第一格）：span 是原文佔的寬度、width 是字寬，shift 是框的正中間比原文的正中間
+/// 偏多少的兩倍（像素，見 box_shift）。字不超出原文的格子（格子以外不是這一段的，貼不上）；比原文寬時照原文的正中間
+fn centered_start(span: i32, width: i32, shift: i32) -> i32 {
+    if width >= span {
+        return (span - width) / 2;
+    }
+    ((span + shift - width) / 2).clamp(0, span - width)
 }
 
 fn fonts() -> Option<&'static [atlas::Font]> {
@@ -718,6 +729,19 @@ impl State {
         unsafe { self.box_margins(gps, line) }.is_some_and(|(left, right)| right <= 1 && left >= 4)
     }
 
+    /// 置中的一段字對準框的正中間，不是原文的正中間：遊戲的分頁把英文從中段起點畫起、最後一格壓進右邊框，
+    /// 英文本身比分頁正中偏右半格，比英文短的中文看得出來。原文在框裡置中（hooks.rs 的 centered_in，和判斷置中同一個條件）
+    /// 才換：說明視窗的標題置中在整排（含問號框），不在中段那張框裡置中，照原文的正中間。DFHack 的字位置由 DFHack 算好，不動
+    unsafe fn box_shift(&self, gps: *const u8, line: &Line, run: &Run) -> i32 {
+        if line.kind != Kind::Single || run.align != b'c' || run.dfhack {
+            return 0;
+        }
+        match unsafe { self.box_margins(gps, line) } {
+            Some((left, right)) if crate::hooks::centered_in((left, right)) => right - left,
+            _ => 0,
+        }
+    }
+
     /// 這一層畫完：每行的貼圖照「格子還算數」切段貼上。Single、Mono 依格子的前景色分段上色（字在原格附近），
     /// Chain 的字已經移位，改成每段用自己第一個算數格的顏色。
     unsafe fn flush(&mut self, r: *mut u8, top: bool) {
@@ -765,8 +789,9 @@ impl State {
             self.right_box = line.kind == Kind::Chain
                 && !line.runs.iter().any(|&ri| run_at(&runs, &extra, ri).dfhack)
                 && unsafe { self.right_in_box(gps, line) };
+            self.box_shift = unsafe { self.box_shift(gps, line, run_at(&runs, &extra, line.runs[0])) };
             let strip = unsafe { self.strip(sdl, rend, line, &runs, &extra, dx, dy, mono) };
-            (self.size, self.left_numbers, self.right_box) = (NORMAL, false, false);
+            (self.size, self.left_numbers, self.right_box, self.box_shift) = (NORMAL, false, false, 0);
             let Some((tex, ranges)) = strip else { continue };
             // 半格位移的文字：貼圖往下移半格，上列畫貼圖的上半段、下列畫下半段（見 atlas::render 的上下列字圖）；
             // 錨定貼圖標籤照遊戲畫那張貼圖的位置往下移。貼圖上面多留 margin 列（字的上緣超出格子的部分），畫在格子上方
@@ -910,7 +935,7 @@ impl State {
     #[allow(clippy::too_many_arguments)]
     unsafe fn strip(&mut self, sdl: &Sdl, rend: *mut c_void, line: &Line, base: &[Run], extra: &[Run], dx: i32, dy: i32, mono: bool) -> Option<(Tex, Vec<(i32, i32)>)> {
         let mut h = std::collections::hash_map::DefaultHasher::new();
-        (line.kind as u8, line.row as u8, mono, self.size, self.left_numbers, self.right_box, dx, dy).hash(&mut h);
+        (line.kind as u8, line.row as u8, mono, self.size, self.left_numbers, self.right_box, self.box_shift, dx, dy).hash(&mut h);
         for &ri in &line.runs {
             let run = run_at(base, extra, ri);
             (&run.shadow, &run.glyphs, run.align, run.x0 - line.x0, &run.text).hash(&mut h);
@@ -1023,10 +1048,10 @@ impl State {
                         pen += self.advance(c, dy) - self.squeeze(c, items.get(j + 1).map(|&(_, n)| n), dy);
                     }
                     let width = pen.ceil() as i32;
-                    // 分頁標籤（半格位移的列）也照對齊：置中的已由 placed_align 判斷、補到英文標籤的寬度；
+                    // 分頁標籤（半格位移的列）也照對齊：置中的已由 placed_align 判斷、補到英文標籤的寬度，對準框的正中間（box_shift）；
                     // 冒險裝備清單的分類標題這類半格位移的字靠左
                     let start = match run.align {
-                        b'c' => ((span - width) / 2) as f32,
+                        b'c' => centered_start(span, width, self.box_shift * dx) as f32,
                         b'r' => (end as i32 * dx - width) as f32,
                         _ => (lead as i32 * dx) as f32 - self.lead_trim(items[first].1, dy),
                     };
@@ -1235,6 +1260,18 @@ unsafe extern "C" fn hook_update_anchor_tile(r: *mut u8, x: i32, y: i32) {
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn centered_text_lines_up_with_the_box_center() {
+        // 人物頁的「想法」：英文 8 格（80 px）從中段起點畫、壓進右邊框一格（左 0、右 −1），「想法」寬 25 px：
+        // 對準分頁中段的正中間，比英文的正中間往左半格（5 px）
+        let (left, right) = (0, -1);
+        assert!(crate::hooks::centered_in((left, right)));
+        assert_eq!(centered_start(80, 25, (right - left) * 10), 22);
+        assert_eq!(centered_start(80, 25, 0), 27, "不在框裡置中的（說明視窗的標題、畫面正中間的字）照原文的正中間");
+        assert_eq!(centered_start(80, 75, -30), 0, "對準框以後超出原文的格子就貼齊");
+        assert_eq!(centered_start(80, 90, -10), -5, "字比原文寬時照原文的正中間");
+    }
 
     #[test]
     fn box_edge_rows_keep_default_size_when_grown() {

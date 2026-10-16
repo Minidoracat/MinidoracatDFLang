@@ -496,11 +496,6 @@ fn placed_align(lower: impl Fn(i32) -> i32, x0: i32, n: i32, dimx: i32, column: 
             let left = (1..).take_while(|&d| inside(x0 - d)).count() as i32;
             (left, (0..).take_while(|&d| inside(x0 + d)).count() as i32 - n)
         };
-        // 左右剩的格數差一格以內；兩旁都還很寬時差兩格也算（選擇遊戲模式的 Legends 左 15 右 17），兩旁窄時差兩格就是靠左
-        let centered_in = |(left, right): (i32, i32)| {
-            let gap = (left - right).abs();
-            gap <= 1 || (gap <= 2 && left.min(right) >= 4)
-        };
         let button = margins(&|x| lower(x) == mid);
         let centered = !column && (centered_in(button) || centered_in(margins(&|x| lower(x) != 0)));
         return match listed {
@@ -515,6 +510,13 @@ fn placed_align(lower: impl Fn(i32) -> i32, x0: i32, n: i32, dimx: i32, column: 
         return b'c';
     }
     listed
+}
+
+/// 原文在框裡左右剩的格數 (左, 右) 看起來是置中：差一格以內；兩旁都還很寬時差兩格也算（選擇遊戲模式的 Legends 左 15 右 17），
+/// 兩旁窄時差兩格就是靠左。整句貼圖也用它判斷置中的字要不要對準這張框的正中間（overlay.rs 的 box_shift）
+pub(crate) fn centered_in((left, right): (i32, i32)) -> bool {
+    let gap = (left - right).abs();
+    gap <= 1 || (gap <= 2 && left.min(right) >= 4)
 }
 
 /// 按鈕上的字從哪一格開始：(頂層, 半格位移, 按鈕中段的左緣, 右緣, 起點) → 見過的最短、最長原文，分這一幀與上一幀記。
