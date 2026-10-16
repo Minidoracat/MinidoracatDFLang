@@ -33,9 +33,8 @@
   - 第二十四輪：標題畫面存檔清單的世界名、堡壘名（存檔只存英文，引擎把英文拆回名稱字表組中文）、交談畫面頭像下每個字都大寫的稱呼（「哥布林猛獸獵人 名字」）、攻擊選單的無名生物（「洞穴鱷魚」）。
   - 第二十五輪（0.2.0）：整句貼圖。畫面上的字改由引擎照字型的實際字寬整行畫成貼圖（中文不再一字佔兩格，英數也用同一套字型），換解析度、介面縮放後照當下格子大小重畫、不會糊；段落照字寬重新換行、填滿框寬；按鈕、說明視窗標題、分頁標籤依遊戲擺英文的位置置中或靠左；出發準備畫面的分頁標籤、只有一列高的排序按鈕也照字寬畫；DFHack 讀畫面找英文字定位的疊加介面（人物頁的心情）照樣找得到位置。同時裝 DFCN 時說明改成中文、可一鍵停用，字型換成粗體。
   - 第二十六輪（0.3.0）：`Ctrl-Shift-L` 開「DFLang 設定」視窗（標題畫面點吉祥物或名牌下方的提示也開）：暫時改看英文、切換繁簡、整句貼圖、中文字型大小（預設改大一號，13～16 可調）、粗體或一般粗細、未翻譯紀錄（預設關、跨次啟動去重、有上限）；`dflang` 指令的輸出在遊戲裡的 launcher 顯示中文。補木匠工坊的陷阱零件、工坊的「[需要…]」紅字、工匠工坊的象牙／牙質任務，並照遊戲組工作名的方式把所有材料類別盤點一次。修正 `dflang off` 關掉翻譯後記憶體一直增加。
-  - 0.3.1：設定視窗標題顯示版本號（例「DFLang 設定 v0.3.1」），回報問題時請一起附上。
-  - 整句 44,147 條、句型 25,344 條（其中 10,395 條由事件句樣板產生）、依畫面譯文 319 條、名稱字表 3,301 條，繁簡分開翻。
-- 已發布到 Steam 工作坊（0.3.1，2026-10-17）：[繁體中文](https://steamcommunity.com/sharedfiles/filedetails/?id=3820630135)、[简体中文](https://steamcommunity.com/sharedfiles/filedetails/?id=3820630318)。
+  - 整句 44,149 條、句型 25,344 條（其中 10,395 條由事件句樣板產生）、依畫面譯文 339 條、名稱字表 3,301 條，繁簡分開翻。
+- 已發布到 Steam 工作坊（0.3.2，2026-10-17）：[繁體中文](https://steamcommunity.com/sharedfiles/filedetails/?id=3820630135)、[简体中文](https://steamcommunity.com/sharedfiles/filedetails/?id=3820630318)。各版本的變更見 [CHANGELOG.md](CHANGELOG.md)。
 
 ## 玩家安裝
 
@@ -43,7 +42,7 @@
 2. 訂閱[繁中](https://steamcommunity.com/sharedfiles/filedetails/?id=3820630135)或[簡中](https://steamcommunity.com/sharedfiles/filedetails/?id=3820630318)項目，正常啟動遊戲。
 3. 兩個都訂閱時預設繁中；按 `Ctrl-Shift-L` 打開「DFLang 設定」視窗切換語言，重開遊戲生效（也可以在 DFHack 主控台輸入 `dflang lang zh-Hans` 或 `dflang lang zh-Hant`）。
 
-遊戲中任何畫面按 `Ctrl-Shift-L`（或在標題畫面點吉祥物）開「DFLang 設定」視窗，再按一次關掉：視窗標題顯示目前的版本號（例「DFLang 設定 v0.3.1」，回報問題時請一起附上），顯示引擎狀態，可以暫時改看英文、切換語言、開關整句貼圖、調整中文字型大小、切換粗體字、開關未翻譯紀錄。語言、整句貼圖、字型大小、粗體字重開遊戲才生效，改了視窗會以黃字提示。快捷鍵只在遊戲執行時註冊，不寫進 DFHack 的設定檔；想換鍵用 DFHack 的 `gui/keybinds`。原本的 `dflang` 指令照樣能用（`dflang` 不加參數看用法）。
+遊戲中任何畫面按 `Ctrl-Shift-L`（或在標題畫面點吉祥物）開「DFLang 設定」視窗，再按一次關掉：視窗標題顯示目前的版本號（例「DFLang 設定 v0.3.2」，回報問題時請一起附上），顯示引擎狀態，可以暫時改看英文、切換語言、開關整句貼圖、調整中文字型大小、切換粗體字、開關未翻譯紀錄。語言、整句貼圖、字型大小、粗體字重開遊戲才生效，改了視窗會以黃字提示。快捷鍵只在遊戲執行時註冊，不寫進 DFHack 的設定檔；想換鍵用 DFHack 的 `gui/keybinds`。原本的 `dflang` 指令照樣能用（`dflang` 不加參數看用法）。
 
 翻譯引擎一次只能有一個在運作。同時裝了 DFCN 或 DFI18n 時，本 MOD 讓位，標題畫面跳出中文說明讓你選要用哪一個，重開遊戲生效：
 
@@ -107,7 +106,8 @@ scripts/
   make_patterns.py         產生／驗證特徵碼
   df_snapshot.py           遊戲文字盤點與 Ghidra 反編譯快照（產物在 repo 外，不公開）
   workshop.json            兩個工作坊項目的設定
-docs/                      分析、翻譯指南、工作坊說明文
+docs/                      分析、翻譯指南、工作坊說明與每版的更新說明（steam/）
+CHANGELOG.md               各版本的變更（發版前先記）
 dist/                      建置產物（不進 git）
 ```
 
@@ -132,12 +132,12 @@ uv run scripts/dev_game.py down               # 關遊戲、還原 mods/ 與設�
 
 遊戲更新後先跑 `uv run scripts/make_patterns.py --check`。特徵碼找不到函式時引擎不啟動、遊戲維持英文，DFHack 主控台顯示 `[DFLang zh-Hant] addst 的特徵碼命中 0 次，這版遊戲可能還不支援`。重新定位的步驟見 [docs/analysis.md](docs/analysis.md) 的「遊戲更新」。
 
-發布（要先取得維護者同意；版本號在 `scripts/workshop.json`）：
+發布（要先取得維護者同意；版本號在 `scripts/workshop.json`）：先在 [CHANGELOG.md](CHANGELOG.md) 記這一版（寫玩家看得到的變化），再整理成兩包的工作坊更新說明 `docs/steam/changelog-zh-Hant.bbcode`、`changelog-zh-Hans.bbcode`（只放這一版，第一行要有版本號）。上傳腳本會檢查兩者都有這一版。
 
 ```bash
-uv run scripts/publish_workshop.py --item zh-Hant --note "繁中更新說明" [--screenshots] --yes   # 簡中另跑一次 --item zh-Hans
-uv run scripts/publish_workshop.py --item all --description-only --yes                     # 只改了 docs/steam/*.bbcode：只換說明，不算發布新版
-git tag -a v0.3.1 -m "0.3.1" && git push origin v0.3.1                                    # 每次發布都打 tag，版本號照 workshop.json
+uv run scripts/publish_workshop.py --item all [--screenshots] --yes             # 兩包各自上傳，更新說明讀各包的 changelog 檔
+uv run scripts/publish_workshop.py --item all --description-only --yes          # 只改了 docs/steam/*.bbcode 的說明：只換說明，不算發布新版
+git tag -a v0.3.2 -m "0.3.2" && git push origin v0.3.2                         # 每次發布都打 tag，版本號照 workshop.json
 ```
 
 ## 授權

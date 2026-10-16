@@ -2,8 +2,8 @@
   "app_id": 975370,
   "author": "Minidoracat",
   "version": {
-    "numeric": 5,
-    "displayed": "0.3.1",
+    "numeric": 6,
+    "displayed": "0.3.2",
     "earliest_compatible_numeric": 1,
     "earliest_compatible_displayed": "0.1.0"
   },
@@ -33,6 +33,7 @@
       "mascot_label": "繁體中文",
       "steam_title": "矮人要塞 繁體中文化 Dwarf Fortress Traditional Chinese by Minidoracat",
       "steam_description": "docs/steam/zh-Hant.bbcode",
+      "steam_changelog": "docs/steam/changelog-zh-Hant.bbcode",
       "preview": "docs/steam/cover-zh-Hant.gif",
       "screenshots": "temp/steam/screenshots/zh-Hant",
       "tags": [
@@ -60,6 +61,7 @@
       "mascot_label": "简体中文",
       "steam_title": "矮人要塞 简体中文化 Dwarf Fortress Simplified Chinese by Minidoracat",
       "steam_description": "docs/steam/zh-Hans.bbcode",
+      "steam_changelog": "docs/steam/changelog-zh-Hans.bbcode",
       "preview": "docs/steam/cover-zh-Hans.gif",
       "screenshots": "temp/steam/screenshots/zh-Hans",
       "tags": [

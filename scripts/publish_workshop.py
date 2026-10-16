@@ -6,13 +6,14 @@
 預設只檢查並列出會做的事；加 --yes 才真的連 Steam 上傳。上傳是對外發布，執行前要有使用者明確同意。
 
 用法（repo 根目錄，Steam 用戶端要開著並登入擁有 Dwarf Fortress 的帳號）：
-  uv run scripts/publish_workshop.py --item zh-Hant --note "更新說明"          # 檢查
-  uv run scripts/publish_workshop.py --item all --note "更新說明" --yes        # 兩包各自上傳
+  uv run scripts/publish_workshop.py --item all                   # 檢查
+  uv run scripts/publish_workshop.py --item all --yes             # 兩包各自上傳
   uv run scripts/publish_workshop.py --item zh-Hans --create --yes             # 首次建立項目（設為私人），ID 寫回 workshop.json
   uv run scripts/publish_workshop.py --item all --description-only --yes     # 只換說明（不傳內容、封面，不留更新說明）
 
 每次上傳的內容：dist/<folder>/ 整個資料夾、標題（steam_title）、說明（steam_description 檔）、標籤（tags）、
-封面（preview，512 動態 GIF）、更新說明（--note）。標題與說明放在預設（english）欄位，任何語言的 Steam 用戶端都看得到同一份中文。
+封面（preview，512 動態 GIF）、更新說明（steam_changelog 檔：本版這一則，第一行要有版本號；CHANGELOG.md 也要先記這一版）。
+標題與說明放在預設（english）欄位，任何語言的 Steam 用戶端都看得到同一份中文。
 首次建立時另外上傳 screenshots 資料夾裡的截圖（依檔名排序，一張一次提交；放在 temp/，不進 git）。
 更新時加 --screenshots：先刪掉項目上現有的截圖（查得到幾張就刪幾張），再照樣一張張上傳資料夾裡的截圖；--check-screenshots 只查目前有幾張（不改任何東西）。
 """
@@ -208,10 +209,14 @@ def screenshots(item: dict) -> list[Path]:
     return sorted(p for p in folder.iterdir() if p.suffix.lower() in IMAGE_SUFFIXES) if folder.is_dir() else []
 
 
-def preflight(items: list[dict], create: bool, note: str | None, with_shots: bool) -> list[str]:
+def preflight(items: list[dict], create: bool, version: str, with_shots: bool) -> list[str]:
     problems = []
     if subprocess.run(["uv", "run", "scripts/verify_mod.py"], cwd=ROOT, capture_output=True).returncode != 0:
         problems.append("verify_mod.py 沒有全過")
+    # 發版前先在 CHANGELOG.md 記這一版，工作坊的更新說明再由它整理成玩家看得懂的重點
+    changelog = ROOT / "CHANGELOG.md"
+    if not create and f"## [{version}]" not in (changelog.read_text(encoding="utf-8") if changelog.is_file() else ""):
+        problems.append(f"CHANGELOG.md 沒有 {version} 這一版")
     for item in items:
         if not (ROOT / "dist" / item["folder"] / "info.txt").is_file():
             problems.append(f"{item['lang']}：dist/{item['folder']} 沒建置，先跑 scripts/build.py")
@@ -221,8 +226,9 @@ def preflight(items: list[dict], create: bool, note: str | None, with_shots: boo
             problems.append(f"{item['lang']}：已有 published_file_id，不能再 --create")
         if not create and not item["published_file_id"]:
             problems.append(f"{item['lang']}：還沒有 published_file_id，首次請用 --create")
-        if not create and not note:
-            problems.append("更新要附 --note 更新說明")
+        notes = ROOT / item["steam_changelog"]
+        if not create and version not in (notes.read_text(encoding="utf-8").split("\n", 1)[0] if notes.is_file() else ""):
+            problems.append(f"{item['lang']}：更新說明 {item['steam_changelog']} 的第一行沒有 {version}，先寫這一版的")
         cover = ROOT / item["preview"]
         shots = screenshots(item) if with_shots else []
         if not cover.is_file():
@@ -239,7 +245,6 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--item", required=True, choices=["zh-Hant", "zh-Hans", "all"])
     ap.add_argument("--create", action="store_true", help="首次建立工作坊項目（私人可見）")
-    ap.add_argument("--note", help="更新說明（Change Notes）")
     ap.add_argument("--screenshots", action="store_true", help="更新時也換掉截圖：刪掉項目上現有的，再傳 screenshots 資料夾的")
     ap.add_argument("--check-screenshots", action="store_true", help="只查項目上現有幾張截圖，不改任何東西")
     ap.add_argument("--description-only", action="store_true", help="只換說明（steam_description 檔），不傳內容與封面")
@@ -273,7 +278,7 @@ def main() -> int:
         return 0
 
     with_shots = args.create or args.screenshots
-    problems = preflight(items, args.create, args.note, with_shots)
+    problems = preflight(items, args.create, config["version"]["displayed"], with_shots)
     for item in items:
         target = "新建（私人）" if args.create else f"更新 {item['published_file_id']}"
         print(f"{item['lang']}：{target} ← dist/{item['folder']}  標題「{item['steam_title']}」  封面 {item['preview']}"
@@ -293,7 +298,8 @@ def main() -> int:
                 CONFIG.write_text(json.dumps(config, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
                 print(f"{item['lang']}：已建立 {item['published_file_id']}，寫回 workshop.json")
             file_id = int(item["published_file_id"])
-            steam.update(config["app_id"], file_id, item, ROOT / "dist" / item["folder"], args.note or "初次上傳", private=args.create)
+            notes = "初次上傳" if args.create else (ROOT / item["steam_changelog"]).read_text(encoding="utf-8")
+            steam.update(config["app_id"], file_id, item, ROOT / "dist" / item["folder"], notes, private=args.create)
             print(f"{item['lang']}：內容、標題、說明、封面已上傳")
             if args.screenshots and not args.create:
                 old = steam.count_screenshots(file_id)

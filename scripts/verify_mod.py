@@ -25,7 +25,7 @@
 9. scripts/workshop.json：繁、簡各一項；ID、名稱、說明、作者只用 ASCII（DF 以 CP437 讀 info.txt）
 10. engine/patterns.tsv 有引擎要 hook 的九個函式（四個畫字函式、段落排版、錨定貼圖、自動換行、彩色文字框、世界生成名稱）
 11. dist/ 已建置時：每包檔案齊全（含 dflang/fonts/bold/、regular/ 各至少一份字型、fonts/ 底下沒有其他東西）、沒有雜檔，
-    且字典、句型與 data/ 一致（沒建置則略過）
+    且字典、句型與 data/ 一致，info.txt（版本號）與 workshop.json 一致：改了版本號沒重建就上傳，包裡還是舊版號（沒建置則略過）
 """
 import re
 import sys
@@ -33,7 +33,7 @@ from pathlib import Path
 
 from fontTools.ttLib import TTFont
 
-from build import DIST, FONTS, KINDS, WEIGHTS, dict_lines, load_config, name_lines, read_rows
+from build import DIST, FONTS, KINDS, WEIGHTS, dict_lines, info_txt, load_config, name_lines, read_rows
 from gen_events import build as build_events
 from cp437 import BYTE_OF, cells, encodable
 
@@ -238,11 +238,12 @@ def main() -> int:
         stale = []
         built_files = {f"dflang/{kind}.tsv": dict_lines(kind, data[kind], item["lang"]) for kind in KINDS}
         built_files["dflang/names.tsv"] = name_lines(names, item["lang"])
+        built_files["info.txt"] = info_txt(item, config)
         for path, expected in built_files.items():
             built = out / path
             if built.is_file() and built.read_text(encoding="utf-8") != expected:
                 stale.append(f"{path} 過期，重跑 build.py")
-        check(not lacking and not stray and not stale, f"{item['lang']} dist 檔案齊全、無雜檔、字典與句型和 data/ 一致",
+        check(not lacking and not stray and not stale, f"{item['lang']} dist 檔案齊全、無雜檔、字典、句型與版本和 data/、workshop.json 一致",
               lacking + stray + stale)
 
     for ok, msg in results:
