@@ -204,8 +204,9 @@ local function install_paint_string(engine, stamp)
     end
 end
 
--- 圖形模式的分頁標籤一格一字畫兩列（上下各半格），不經 paintString：標籤有譯文時上列畫影子字串、下列留白，
--- 字圖貼在上列（和遊戲的分頁標籤一樣，中文比英文高半格）。函式不在就略過，分頁照英文
+-- 圖形模式的分頁標籤一格一字畫兩列（上列標 top_of_text、下列標 bottom_of_text，字往下位移半格），不經 paintString：
+-- 標籤有譯文時兩列都畫影子字串，上下列各貼一次字圖，引擎依格子的旗標貼字的上半與下半（見 engine/src/hooks.rs paint）。
+-- 函式不在就略過，分頁照英文
 local function install_tab(engine, stamp)
     local ok, TabBar = pcall(require, 'gui.widgets.tab_bar')
     local Tab = ok and type(TabBar) == 'table' and TabBar.Tab
@@ -218,17 +219,17 @@ local function install_tab(engine, stamp)
         -- 標籤整個畫得出來才換（分頁列捲動時左右會被切掉一截，影子字串畫了字圖卻貼不上），否則照英文
         dc:seek(2, 0)
         local x, y = dc.x, dc.y
-        if y < dc.clip_y1 or y > dc.clip_y2 or x < dc.clip_x1 or x + #shadow - 1 > dc.clip_x2 then return orig(self, dc) end
+        if y < dc.clip_y1 or y + 1 > dc.clip_y2 or x < dc.clip_x1 or x + #shadow - 1 > dc.clip_x2 then return orig(self, dc) end
         local pens = self.get_pens()
-        dc:seek(0, 0)
-        dc:char(nil, pens.lt):char(nil, pens.lt2)
-        for i = 1, #shadow do dc:char(shadow:sub(i, i), pens.t) end
-        dc:char(nil, pens.rt2):char(nil, pens.rt)
-        dc:seek(0, 1)
-        dc:char(nil, pens.lb):char(nil, pens.lb2)
-        for _ = 1, #shadow do dc:char(' ', pens.b) end
-        dc:char(nil, pens.rb2):char(nil, pens.rb)
+        for row, p in ipairs{{pens.lt, pens.lt2, pens.t, pens.rt2, pens.rt}, {pens.lb, pens.lb2, pens.b, pens.rb2, pens.rb}} do
+            dc:seek(0, row - 1)
+            dc:char(nil, p[1]):char(nil, p[2])
+            for i = 1, #shadow do dc:char(shadow:sub(i, i), p[3]) end
+            dc:char(nil, p[4]):char(nil, p[5])
+        end
         stamp(x, y)
+        engine.dh_translate(self.label, -1) -- 貼過的字圖會被清掉，下列再查一次
+        stamp(x, y + 1)
     end
 end
 

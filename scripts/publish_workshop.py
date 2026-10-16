@@ -10,8 +10,10 @@
   uv run scripts/publish_workshop.py --item all --note "更新說明" --yes        # 兩包各自上傳
   uv run scripts/publish_workshop.py --item zh-Hans --create --yes             # 首次建立項目（設為私人），ID 寫回 workshop.json
 
-每次上傳的內容：dist/<folder>/ 整個資料夾、標題（steam_title）、說明（steam_description 檔）、
-說明語言槽（steam_language）、標籤（tags）、預覽圖（preview，有設才傳）、更新說明（--note）。
+每次上傳的內容：dist/<folder>/ 整個資料夾、標題（steam_title）、說明（steam_description 檔）、標籤（tags）、
+封面（preview）、更新說明（--note）。標題與說明放在預設（english）欄位，任何語言的 Steam 用戶端都看得到同一份中文。
+首次建立時另外上傳 screenshots 資料夾裡的截圖（依檔名排序；放在 temp/，不進 git）。封面與截圖都要小於 1 MB。
+ponytail: 截圖只在 --create 時傳；之後增刪截圖到工作坊頁面的「新增／編輯圖片與影片」做，免得重複上傳。
 """
 import argparse
 import ctypes
@@ -31,6 +33,9 @@ STEAM_API = DF / "steam_api64.dll"
 INVALID_HANDLE = (0, 0xFFFFFFFFFFFFFFFF)
 VISIBILITY_PRIVATE = 2  # k_ERemoteStoragePublishedFileVisibilityPrivate
 FILE_TYPE_COMMUNITY = 0  # k_EWorkshopFileTypeCommunity
+PREVIEW_TYPE_IMAGE = 0  # k_EItemPreviewType_Image
+PREVIEW_LIMIT = 1024 * 1024  # 封面與截圖都要小於 1 MB（ISteamUGC::AddItemPreviewFile）
+IMAGE_SUFFIXES = (".jpg", ".jpeg", ".png")
 
 
 class StringArray(ctypes.Structure):
@@ -57,12 +62,14 @@ class Steam:
         d.SteamAPI_ISteamUGC_CreateItem.restype = ctypes.c_uint64
         d.SteamAPI_ISteamUGC_StartItemUpdate.argtypes = [ctypes.c_void_p, ctypes.c_uint32, ctypes.c_uint64]
         d.SteamAPI_ISteamUGC_StartItemUpdate.restype = ctypes.c_uint64
-        for name in ("SetItemUpdateLanguage", "SetItemTitle", "SetItemDescription", "SetItemContent", "SetItemPreview"):
+        for name in ("SetItemTitle", "SetItemDescription", "SetItemContent", "SetItemPreview"):
             fn = getattr(d, "SteamAPI_ISteamUGC_" + name)
             fn.argtypes = [ctypes.c_void_p, ctypes.c_uint64, ctypes.c_char_p]
             fn.restype = ctypes.c_bool
         d.SteamAPI_ISteamUGC_SetItemTags.argtypes = [ctypes.c_void_p, ctypes.c_uint64, ctypes.POINTER(StringArray)]
         d.SteamAPI_ISteamUGC_SetItemTags.restype = ctypes.c_bool
+        d.SteamAPI_ISteamUGC_AddItemPreviewFile.argtypes = [ctypes.c_void_p, ctypes.c_uint64, ctypes.c_char_p, ctypes.c_int]
+        d.SteamAPI_ISteamUGC_AddItemPreviewFile.restype = ctypes.c_bool
         d.SteamAPI_ISteamUGC_SetItemVisibility.argtypes = [ctypes.c_void_p, ctypes.c_uint64, ctypes.c_int]
         d.SteamAPI_ISteamUGC_SetItemVisibility.restype = ctypes.c_bool
         d.SteamAPI_ISteamUGC_SubmitItemUpdate.argtypes = [ctypes.c_void_p, ctypes.c_uint64, ctypes.c_char_p]
@@ -109,7 +116,7 @@ class Steam:
             raise RuntimeError("需要先到 Steam 網頁接受工作坊法律協議")
         return int.from_bytes(raw[8:16], "little")
 
-    def update(self, app_id: int, file_id: int, item: dict, content: Path, note: str, private: bool) -> None:
+    def update(self, app_id: int, file_id: int, item: dict, content: Path, note: str, private: bool, shots: list[Path]) -> None:
         d, ugc = self.dll, self.ugc
         handle = d.SteamAPI_ISteamUGC_StartItemUpdate(ugc, app_id, file_id)
         if handle in INVALID_HANDLE:
@@ -117,14 +124,13 @@ class Steam:
         tags = [t.encode() for t in item["tags"]]
         array = StringArray((ctypes.c_char_p * len(tags))(*tags), len(tags))
         steps = [
-            d.SteamAPI_ISteamUGC_SetItemUpdateLanguage(ugc, handle, item["steam_language"].encode()),
             d.SteamAPI_ISteamUGC_SetItemTitle(ugc, handle, item["steam_title"].encode("utf-8")),
             d.SteamAPI_ISteamUGC_SetItemDescription(ugc, handle, (ROOT / item["steam_description"]).read_text(encoding="utf-8").encode("utf-8")),
             d.SteamAPI_ISteamUGC_SetItemContent(ugc, handle, str(content).encode("utf-8")),
             d.SteamAPI_ISteamUGC_SetItemTags(ugc, handle, ctypes.byref(array)),
+            d.SteamAPI_ISteamUGC_SetItemPreview(ugc, handle, str(ROOT / item["preview"]).encode("utf-8")),
         ]
-        if item.get("preview"):
-            steps.append(d.SteamAPI_ISteamUGC_SetItemPreview(ugc, handle, str(ROOT / item["preview"]).encode("utf-8")))
+        steps += [d.SteamAPI_ISteamUGC_AddItemPreviewFile(ugc, handle, str(p).encode("utf-8"), PREVIEW_TYPE_IMAGE) for p in shots]
         if private:
             steps.append(d.SteamAPI_ISteamUGC_SetItemVisibility(ugc, handle, VISIBILITY_PRIVATE))
         if not all(steps):
@@ -135,6 +141,11 @@ class Steam:
             raise RuntimeError(f"SubmitItemUpdate EResult={int.from_bytes(raw[:4], 'little')}")
         if raw[4]:
             raise RuntimeError("需要先到 Steam 網頁接受工作坊法律協議")
+
+
+def screenshots(item: dict) -> list[Path]:
+    folder = ROOT / item["screenshots"]
+    return sorted(p for p in folder.iterdir() if p.suffix.lower() in IMAGE_SUFFIXES) if folder.is_dir() else []
 
 
 def preflight(items: list[dict], create: bool, note: str | None) -> list[str]:
@@ -152,8 +163,12 @@ def preflight(items: list[dict], create: bool, note: str | None) -> list[str]:
             problems.append(f"{item['lang']}：還沒有 published_file_id，首次請用 --create")
         if not create and not note:
             problems.append("更新要附 --note 更新說明")
-        if not item.get("preview"):
-            print(f"注意 {item['lang']}：workshop.json 沒有設 preview，工作坊頁面不會有封面圖")
+        images = [ROOT / item["preview"]] + (screenshots(item) if create else [])
+        if not images[0].is_file():
+            problems.append(f"{item['lang']}：缺封面 {item['preview']}")
+        if create and len(images) == 1:
+            problems.append(f"{item['lang']}：{item['screenshots']} 沒有截圖")
+        problems += [f"{item['lang']}：{p.relative_to(ROOT)} 超過 1 MB" for p in images if p.is_file() and p.stat().st_size >= PREVIEW_LIMIT]
     return problems
 
 
@@ -170,7 +185,8 @@ def main() -> int:
     problems = preflight(items, args.create, args.note)
     for item in items:
         target = "新建（私人）" if args.create else f"更新 {item['published_file_id']}"
-        print(f"{item['lang']}：{target} ← dist/{item['folder']}  標題「{item['steam_title']}」  語言槽 {item['steam_language']}")
+        print(f"{item['lang']}：{target} ← dist/{item['folder']}  標題「{item['steam_title']}」  封面 {item['preview']}"
+              + (f"  截圖 {len(screenshots(item))} 張" if args.create else ""))
     if problems:
         print("\n".join("FAIL " + p for p in problems))
         return 1
@@ -186,7 +202,7 @@ def main() -> int:
                 CONFIG.write_text(json.dumps(config, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
                 print(f"{item['lang']}：已建立 {item['published_file_id']}，寫回 workshop.json")
             steam.update(config["app_id"], int(item["published_file_id"]), item, ROOT / "dist" / item["folder"],
-                         args.note or "初次上傳", private=args.create)
+                         args.note or "初次上傳", private=args.create, shots=screenshots(item) if args.create else [])
             print(f"{item['lang']}：上傳完成 https://steamcommunity.com/sharedfiles/filedetails/?id={item['published_file_id']}")
     finally:
         steam.close()
