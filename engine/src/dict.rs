@@ -939,8 +939,22 @@ impl Dict {
 
     /// 稱呼加世界生成名稱（`the goblin Snodub Monstrousentry`、連結字 `dwarf Urist`）：名字是遊戲組過的名稱（names.rs），
     /// 稱呼（開頭的 the 去掉）查字典或句型，接成「哥布林＋中文名」。名字一定大寫開頭（含 CP437 的 Ï、Ö 這類，0x80 以上），其他位置不查。
-    /// 連結字（link）一定是名字：第一個大寫字起只有一個字、遊戲沒組過英文名的原名（`the forgotten beast Ubbul`）照抄。
+    /// 連結字（link）一定是名字：第一個大寫字起只有一個字、遊戲沒組過英文名的原名（`the forgotten beast Ubbul`）照抄；
+    /// 也收名字在前、小寫稱呼在後的（傳說人物頁擊殺清單的 `Caraca Talonmagic the elf`），同樣接成「精靈＋中文名」。
     pub fn titled_name(&self, text: &[u8], link: bool) -> Option<String> {
+        if link {
+            let mut from = 0;
+            while let Some(i) = text[from..].windows(5).position(|w| w == b" the ") {
+                let at = from + i;
+                let (name, title) = (&text[..at], &text[at + 5..]);
+                if title.first().is_some_and(u8::is_ascii_lowercase) {
+                    if let (Some(zh), Some(t)) = (crate::names::get(name), self.translate_text(title)) {
+                        return Some(t + &zh);
+                    }
+                }
+                from = at + 1;
+            }
+        }
         let mut loose = link;
         let mut start = 0;
         while let Some(i) = text[start..].iter().position(|&c| c == b' ') {
@@ -1415,10 +1429,13 @@ mod tests {
     #[test]
     fn link_titles_keep_a_lone_native_name() {
         let mut d = dict("");
-        d.load_tsv("forgotten beast\t貪婪\ndwarf\t勞動\n");
+        d.load_tsv("forgotten beast\t貪婪\ndwarf\t勞動\nelf\t精靈\n");
         assert_eq!(d.titled_name(b"the forgotten beast Ubbul", true).as_deref(), Some("貪婪Ubbul"));
         assert_eq!(d.titled_name(b"the forgotten beast Ubbul", false), None, "句子裡的名字要是遊戲組過的");
         assert_eq!(d.titled_name(b"the dwarf Urist McDwarf", true), None, "第一個大寫字起不只一個字");
+        crate::names::insert(b"Caraca Talonmagic", "Caraca 利爪魔法");
+        assert_eq!(d.titled_name(b"Caraca Talonmagic the elf", true).as_deref(), Some("精靈Caraca 利爪魔法"), "名字在前、小寫稱呼在後（擊殺清單）");
+        assert_eq!(d.titled_name(b"Caraca Talonmagic the Golden", true), None, "the 後面大寫開頭是名字的一部分，不當稱呼");
     }
 
     #[test]

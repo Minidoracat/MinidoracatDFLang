@@ -299,8 +299,16 @@ unsafe fn paint(gps: *mut u8, layer: &Layer, x0: i32, y: i32, p: Paint, dict: &D
                 *flag.add(index) |= FLAG_ADDCOLOR;
             }
         }
-        if let Some(Some(row)) = kind {
-            crate::overlay::record(gps, top, row, x0, y, p.shadow, p.glyphs, p.align, p.pad, None, dfhack);
+        match kind {
+            Some(Some(row)) => crate::overlay::record(gps, top, row, x0, y, p.shadow, p.glyphs, p.align, p.pad, None, dfhack),
+            // 沒有字圖的字串（傳說頁去掉黏著標點、照英文畫的連結字，只有英數的譯文）：也交給整句貼圖，
+            // 和旁邊的段落文字接成一行緊排，不然會照遊戲的點陣字或從格子讀回來、留下英文字寬的空隙
+            None if p.glyphs.is_empty() => {
+                if let Some(index) = cell(0) {
+                    crate::overlay::record(gps, top, row_at(index), x0, y, p.shadow, &[], p.align, p.pad, None, dfhack);
+                }
+            }
+            _ => {}
         }
     }
 }

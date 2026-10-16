@@ -199,7 +199,7 @@ fn note_time(total: f64, ours: f64) {
     t[1] = t[1] * 0.95 + ours * 0.05;
 }
 
-/// 除錯：耗時，加上本幀記下的字（頂層, 列別, x0, y, 替身字串, 字圖數, 對齊, 補位格數, 能不能接在前一段後面）
+/// 除錯：耗時，加上本幀記下的字（頂層, 列別, x0, y, 替身字串, 字圖數, 對齊, 補位格數, 能不能接在前一段後面, 照字寬縮短的段落文字）
 pub fn dump() -> String {
     let t = *TIMING.lock();
     let head = format!("update_all {:.0} us, overlay {:.0} us\n", t[0], t[1]);
@@ -210,8 +210,9 @@ pub fn dump() -> String {
         .map(|(i, r)| {
             let chain = i > 0 && chainable(&runs[i - 1], r);
             format!(
-                "{}\t{:?}\t{}\t{}\t[{}]\t{}\t{}\t{}\t{}\n",
-                r.top as u8, r.row, r.x0, r.y, crate::cp437::decode(&r.shadow), r.glyphs.len(), r.align as char, r.pad, if chain { "C" } else { "" }
+                "{}\t{:?}\t{}\t{}\t[{}]\t{}\t{}\t{}\t{}\t{}\n",
+                r.top as u8, r.row, r.x0, r.y, crate::cp437::decode(&r.shadow), r.glyphs.len(), r.align as char, r.pad, if chain { "C" } else { "" },
+                r.text.as_deref().unwrap_or("")
             )
         })
         .collect::<String>()

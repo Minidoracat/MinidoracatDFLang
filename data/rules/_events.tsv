@@ -7483,8 +7483,14 @@ In a time before time, {1}, as {2}, and {3} formed a friendship in {4}.	太古�
 In a time before time, {1} and {2}, as {3}, formed a friendship in {4}.	太古之時，{1}與化身{3}的{2}在{4}結為朋友。	太古之时，{1}与化身{3}的{2}在{4}结为朋友。		自動產生（scripts/gen_events.py）：11.tsv {1} and {2}, as {3}, formed a friendship in {4}.
 In a time before time, {1} and {2} formed a friendship in {3}.	太古之時，{1}與{2}在{3}結為朋友。	太古之时，{1}与{2}在{3}结为朋友。		自動產生（scripts/gen_events.py）：11.tsv {1} and {2} formed a friendship in {3}.
 In a time before time, {1} formed {2} in {3}.	太古之時，{1}在{3}成立了{2}。	太古之时，{1}在{3}成立了{2}。		自動產生（scripts/gen_events.py）：05.tsv {1} formed {2} in {3}.
+In {#1}, {2} formed a grudge against {3} over the latter's romantic relationship.	{1}年，{2}因{3}的戀情而對其懷恨在心。	{1}年，{2}因{3}的恋情而对其怀恨在心。		自動產生（scripts/gen_events.py）：21.tsv {1} formed a grudge against {2} over the latter's romantic relationship.
+In {#1}, {2} formed a grudge against {3}.	{1}年，{2}對{3}懷恨在心。	{1}年，{2}对{3}怀恨在心。		自動產生（scripts/gen_events.py）：21.tsv {1} formed a grudge against {2}.
 In {#1}, {2} formed {3}.	{1}年，{2}成立了{3}。	{1}年，{2}成立了{3}。		自動產生（scripts/gen_events.py）：05.tsv {1} formed {2}.
+In the {@1} of {#2}, {3} formed a grudge against {4} over the latter's romantic relationship.	{2}年{1}，{3}因{4}的戀情而對其懷恨在心。	{2}年{1}，{3}因{4}的恋情而对其怀恨在心。		自動產生（scripts/gen_events.py）：21.tsv {1} formed a grudge against {2} over the latter's romantic relationship.
+In the {@1} of {#2}, {3} formed a grudge against {4}.	{2}年{1}，{3}對{4}懷恨在心。	{2}年{1}，{3}对{4}怀恨在心。		自動產生（scripts/gen_events.py）：21.tsv {1} formed a grudge against {2}.
 In the {@1} of {#2}, {3} formed {4}.	{2}年{1}，{3}成立了{4}。	{2}年{1}，{3}成立了{4}。		自動產生（scripts/gen_events.py）：05.tsv {1} formed {2}.
+In a time before time, {1} formed a grudge against {2} over the latter's romantic relationship.	太古之時，{1}因{2}的戀情而對其懷恨在心。	太古之时，{1}因{2}的恋情而对其怀恨在心。		自動產生（scripts/gen_events.py）：21.tsv {1} formed a grudge against {2} over the latter's romantic relationship.
+In a time before time, {1} formed a grudge against {2}.	太古之時，{1}對{2}懷恨在心。	太古之时，{1}对{2}怀恨在心。		自動產生（scripts/gen_events.py）：21.tsv {1} formed a grudge against {2}.
 In a time before time, {1} formed {2}.	太古之時，{1}成立了{2}。	太古之时，{1}成立了{2}。		自動產生（scripts/gen_events.py）：05.tsv {1} formed {2}.
 In {#1}, {2} became the primary criminal organization in {3} in {4}.	{1}年，{2}在{4}的{3}成為頭號犯罪組織。	{1}年，{2}在{4}的{3}成为头号犯罪组织。		自動產生（scripts/gen_events.py）：05.tsv {1} became the primary criminal organization in {2} in {3}.
 In the {@1} of {#2}, {3} became the primary criminal organization in {4} in {5}.	{2}年{1}，{3}在{5}的{4}成為頭號犯罪組織。	{2}年{1}，{3}在{5}的{4}成为头号犯罪组织。		自動產生（scripts/gen_events.py）：05.tsv {1} became the primary criminal organization in {2} in {3}.
@@ -10066,8 +10072,14 @@ In a time before time, {1} held {%2} in {3}.	太古之時，{1}在{3}舉辦了{2
 In {#1}, {2} held {%3} as part of {4}.	{1}年，{2}舉辦了{3}，作為{4}的一環。	{1}年，{2}举办了{3}，作为{4}的一环。		自動產生（scripts/gen_events.py）：18.tsv {1} held {%2} as part of {3}.
 In the {@1} of {#2}, {3} held {%4} as part of {5}.	{2}年{1}，{3}舉辦了{4}，作為{5}的一環。	{2}年{1}，{3}举办了{4}，作为{5}的一环。		自動產生（scripts/gen_events.py）：18.tsv {1} held {%2} as part of {3}.
 In a time before time, {1} held {%2} as part of {3}.	太古之時，{1}舉辦了{2}，作為{3}的一環。	太古之时，{1}举办了{2}，作为{3}的一环。		自動產生（scripts/gen_events.py）：18.tsv {1} held {%2} as part of {3}.
+In {#1}, {2} held a deep hatred of {3} due to religious persecution.	{1}年，{2}因宗教迫害而對{3}恨之入骨。	{1}年，{2}因宗教迫害而对{3}恨之入骨。		自動產生（scripts/gen_events.py）：21.tsv {1} held a deep hatred of {2} due to religious persecution.
+In {#1}, {2} held a deep hatred of {3} due to persecution.	{1}年，{2}因遭受迫害而對{3}恨之入骨。	{1}年，{2}因遭受迫害而对{3}恨之入骨。		自動產生（scripts/gen_events.py）：21.tsv {1} held a deep hatred of {2} due to persecution.
 In {#1}, {2} held {%3}.	{1}年，{2}舉辦了{3}。	{1}年，{2}举办了{3}。		自動產生（scripts/gen_events.py）：18.tsv {1} held {%2}.
+In the {@1} of {#2}, {3} held a deep hatred of {4} due to religious persecution.	{2}年{1}，{3}因宗教迫害而對{4}恨之入骨。	{2}年{1}，{3}因宗教迫害而对{4}恨之入骨。		自動產生（scripts/gen_events.py）：21.tsv {1} held a deep hatred of {2} due to religious persecution.
+In the {@1} of {#2}, {3} held a deep hatred of {4} due to persecution.	{2}年{1}，{3}因遭受迫害而對{4}恨之入骨。	{2}年{1}，{3}因遭受迫害而对{4}恨之入骨。		自動產生（scripts/gen_events.py）：21.tsv {1} held a deep hatred of {2} due to persecution.
 In the {@1} of {#2}, {3} held {%4}.	{2}年{1}，{3}舉辦了{4}。	{2}年{1}，{3}举办了{4}。		自動產生（scripts/gen_events.py）：18.tsv {1} held {%2}.
+In a time before time, {1} held a deep hatred of {2} due to religious persecution.	太古之時，{1}因宗教迫害而對{2}恨之入骨。	太古之时，{1}因宗教迫害而对{2}恨之入骨。		自動產生（scripts/gen_events.py）：21.tsv {1} held a deep hatred of {2} due to religious persecution.
+In a time before time, {1} held a deep hatred of {2} due to persecution.	太古之時，{1}因遭受迫害而對{2}恨之入骨。	太古之时，{1}因遭受迫害而对{2}恨之入骨。		自動產生（scripts/gen_events.py）：21.tsv {1} held a deep hatred of {2} due to persecution.
 In a time before time, {1} held {%2}.	太古之時，{1}舉辦了{2}。	太古之时，{1}举办了{2}。		自動產生（scripts/gen_events.py）：18.tsv {1} held {%2}.
 In {#1}, there was a performance in {2} as part of {3}.	{1}年，{2}舉行了一場表演，作為{3}的一環。	{1}年，{2}举行了一场表演，作为{3}的一环。		自動產生（scripts/gen_events.py）：18.tsv there was a performance in {1} as part of {2}.
 In the {@1} of {#2}, there was a performance in {3} as part of {4}.	{2}年{1}，{3}舉行了一場表演，作為{4}的一環。	{2}年{1}，{3}举行了一场表演，作为{4}的一环。		自動產生（scripts/gen_events.py）：18.tsv there was a performance in {1} as part of {2}.
@@ -10105,6 +10117,45 @@ In a time before time, there was a ceremony in {1}.	太古之時，{1}舉行了�
 In {#1}, there was a ceremony as part of {2}.	{1}年，舉行了一場儀式，作為{2}的一環。	{1}年，举行了一场仪式，作为{2}的一环。		自動產生（scripts/gen_events.py）：19.tsv there was a ceremony as part of {1}.
 In the {@1} of {#2}, there was a ceremony as part of {3}.	{2}年{1}，舉行了一場儀式，作為{3}的一環。	{2}年{1}，举行了一场仪式，作为{3}的一环。		自動產生（scripts/gen_events.py）：19.tsv there was a ceremony as part of {1}.
 In a time before time, there was a ceremony as part of {1}.	太古之時，舉行了一場儀式，作為{1}的一環。	太古之时，举行了一场仪式，作为{1}的一环。		自動產生（scripts/gen_events.py）：19.tsv there was a ceremony as part of {1}.
+In {#1}, {2} and {3} became childhood friends.	{1}年，{2}與{3}成了兒時玩伴。	{1}年，{2}与{3}成了儿时玩伴。		自動產生（scripts/gen_events.py）：21.tsv {1} and {2} became childhood friends.
+In the {@1} of {#2}, {3} and {4} became childhood friends.	{2}年{1}，{3}與{4}成了兒時玩伴。	{2}年{1}，{3}与{4}成了儿时玩伴。		自動產生（scripts/gen_events.py）：21.tsv {1} and {2} became childhood friends.
+In a time before time, {1} and {2} became childhood friends.	太古之時，{1}與{2}成了兒時玩伴。	太古之时，{1}与{2}成了儿时玩伴。		自動產生（scripts/gen_events.py）：21.tsv {1} and {2} became childhood friends.
+In {#1}, {2} and {3} cemented a bond of friendship amidst the horror of combat.	{1}年，{2}與{3}在慘烈的戰鬥中結下深厚的友誼。	{1}年，{2}与{3}在惨烈的战斗中结下深厚的友谊。		自動產生（scripts/gen_events.py）：21.tsv {1} and {2} cemented a bond of friendship amidst the horror of combat.
+In the {@1} of {#2}, {3} and {4} cemented a bond of friendship amidst the horror of combat.	{2}年{1}，{3}與{4}在慘烈的戰鬥中結下深厚的友誼。	{2}年{1}，{3}与{4}在惨烈的战斗中结下深厚的友谊。		自動產生（scripts/gen_events.py）：21.tsv {1} and {2} cemented a bond of friendship amidst the horror of combat.
+In a time before time, {1} and {2} cemented a bond of friendship amidst the horror of combat.	太古之時，{1}與{2}在慘烈的戰鬥中結下深厚的友誼。	太古之时，{1}与{2}在惨烈的战斗中结下深厚的友谊。		自動產生（scripts/gen_events.py）：21.tsv {1} and {2} cemented a bond of friendship amidst the horror of combat.
+In {#1}, {2} became infatuated with {3}.	{1}年，{2}迷戀上了{3}。	{1}年，{2}迷恋上了{3}。		自動產生（scripts/gen_events.py）：21.tsv {1} became infatuated with {2}.
+In the {@1} of {#2}, {3} became infatuated with {4}.	{2}年{1}，{3}迷戀上了{4}。	{2}年{1}，{3}迷恋上了{4}。		自動產生（scripts/gen_events.py）：21.tsv {1} became infatuated with {2}.
+In a time before time, {1} became infatuated with {2}.	太古之時，{1}迷戀上了{2}。	太古之时，{1}迷恋上了{2}。		自動產生（scripts/gen_events.py）：21.tsv {1} became infatuated with {2}.
+In {#1}, {2} and {3} became lovers.	{1}年，{2}與{3}成了戀人。	{1}年，{2}与{3}成了恋人。		自動產生（scripts/gen_events.py）：21.tsv {1} and {2} became lovers.
+In the {@1} of {#2}, {3} and {4} became lovers.	{2}年{1}，{3}與{4}成了戀人。	{2}年{1}，{3}与{4}成了恋人。		自動產生（scripts/gen_events.py）：21.tsv {1} and {2} became lovers.
+In a time before time, {1} and {2} became lovers.	太古之時，{1}與{2}成了戀人。	太古之时，{1}与{2}成了恋人。		自動產生（scripts/gen_events.py）：21.tsv {1} and {2} became lovers.
+In {#1}, {2} and {3} broke up.	{1}年，{2}與{3}分手了。	{1}年，{2}与{3}分手了。		自動產生（scripts/gen_events.py）：21.tsv {1} and {2} broke up.
+In the {@1} of {#2}, {3} and {4} broke up.	{2}年{1}，{3}與{4}分手了。	{2}年{1}，{3}与{4}分手了。		自動產生（scripts/gen_events.py）：21.tsv {1} and {2} broke up.
+In a time before time, {1} and {2} broke up.	太古之時，{1}與{2}分手了。	太古之时，{1}与{2}分手了。		自動產生（scripts/gen_events.py）：21.tsv {1} and {2} broke up.
+In {#1}, {2} and {3} became friends due to a shared scholarly interest.	{1}年，{2}與{3}因共同的學術興趣成為朋友。	{1}年，{2}与{3}因共同的学术兴趣成为朋友。		自動產生（scripts/gen_events.py）：21.tsv {1} and {2} became friends due to a shared scholarly interest.
+In the {@1} of {#2}, {3} and {4} became friends due to a shared scholarly interest.	{2}年{1}，{3}與{4}因共同的學術興趣成為朋友。	{2}年{1}，{3}与{4}因共同的学术兴趣成为朋友。		自動產生（scripts/gen_events.py）：21.tsv {1} and {2} became friends due to a shared scholarly interest.
+In a time before time, {1} and {2} became friends due to a shared scholarly interest.	太古之時，{1}與{2}因共同的學術興趣成為朋友。	太古之时，{1}与{2}因共同的学术兴趣成为朋友。		自動產生（scripts/gen_events.py）：21.tsv {1} and {2} became friends due to a shared scholarly interest.
+In {#1}, {2} and {3} became friends due to a shared artistic interest.	{1}年，{2}與{3}因共同的藝術興趣成為朋友。	{1}年，{2}与{3}因共同的艺术兴趣成为朋友。		自動產生（scripts/gen_events.py）：21.tsv {1} and {2} became friends due to a shared artistic interest.
+In the {@1} of {#2}, {3} and {4} became friends due to a shared artistic interest.	{2}年{1}，{3}與{4}因共同的藝術興趣成為朋友。	{2}年{1}，{3}与{4}因共同的艺术兴趣成为朋友。		自動產生（scripts/gen_events.py）：21.tsv {1} and {2} became friends due to a shared artistic interest.
+In a time before time, {1} and {2} became friends due to a shared artistic interest.	太古之時，{1}與{2}因共同的藝術興趣成為朋友。	太古之时，{1}与{2}因共同的艺术兴趣成为朋友。		自動產生（scripts/gen_events.py）：21.tsv {1} and {2} became friends due to a shared artistic interest.
+In {#1}, {2} and {3} became friends.	{1}年，{2}與{3}成為朋友。	{1}年，{2}与{3}成为朋友。		自動產生（scripts/gen_events.py）：21.tsv {1} and {2} became friends.
+In the {@1} of {#2}, {3} and {4} became friends.	{2}年{1}，{3}與{4}成為朋友。	{2}年{1}，{3}与{4}成为朋友。		自動產生（scripts/gen_events.py）：21.tsv {1} and {2} became friends.
+In a time before time, {1} and {2} became friends.	太古之時，{1}與{2}成為朋友。	太古之时，{1}与{2}成为朋友。		自動產生（scripts/gen_events.py）：21.tsv {1} and {2} became friends.
+In {#1}, {2} and {3} become friends over a shared love of athletics.	{1}年，{2}與{3}因同樣熱愛體育而成為朋友。	{1}年，{2}与{3}因同样热爱体育而成为朋友。		自動產生（scripts/gen_events.py）：21.tsv {1} and {2} become friends over a shared love of athletics.
+In the {@1} of {#2}, {3} and {4} become friends over a shared love of athletics.	{2}年{1}，{3}與{4}因同樣熱愛體育而成為朋友。	{2}年{1}，{3}与{4}因同样热爱体育而成为朋友。		自動產生（scripts/gen_events.py）：21.tsv {1} and {2} become friends over a shared love of athletics.
+In a time before time, {1} and {2} become friends over a shared love of athletics.	太古之時，{1}與{2}因同樣熱愛體育而成為朋友。	太古之时，{1}与{2}因同样热爱体育而成为朋友。		自動產生（scripts/gen_events.py）：21.tsv {1} and {2} become friends over a shared love of athletics.
+In {#1}, {2} and {3} developed an athletic rivalry.	{1}年，{2}與{3}在體育上成了對手。	{1}年，{2}与{3}在体育上成了对手。		自動產生（scripts/gen_events.py）：21.tsv {1} and {2} developed an athletic rivalry.
+In the {@1} of {#2}, {3} and {4} developed an athletic rivalry.	{2}年{1}，{3}與{4}在體育上成了對手。	{2}年{1}，{3}与{4}在体育上成了对手。		自動產生（scripts/gen_events.py）：21.tsv {1} and {2} developed an athletic rivalry.
+In a time before time, {1} and {2} developed an athletic rivalry.	太古之時，{1}與{2}在體育上成了對手。	太古之时，{1}与{2}在体育上成了对手。		自動產生（scripts/gen_events.py）：21.tsv {1} and {2} developed an athletic rivalry.
+In {#1}, {2} and {3} developed a business rivalry.	{1}年，{2}與{3}在生意上成了對手。	{1}年，{2}与{3}在生意上成了对手。		自動產生（scripts/gen_events.py）：21.tsv {1} and {2} developed a business rivalry.
+In the {@1} of {#2}, {3} and {4} developed a business rivalry.	{2}年{1}，{3}與{4}在生意上成了對手。	{2}年{1}，{3}与{4}在生意上成了对手。		自動產生（scripts/gen_events.py）：21.tsv {1} and {2} developed a business rivalry.
+In a time before time, {1} and {2} developed a business rivalry.	太古之時，{1}與{2}在生意上成了對手。	太古之时，{1}与{2}在生意上成了对手。		自動產生（scripts/gen_events.py）：21.tsv {1} and {2} developed a business rivalry.
+In {#1}, {2} was bent toward supernatural vengeance upon {3}.	{1}年，{2}一心要以超自然的力量向{3}復仇。	{1}年，{2}一心要以超自然的力量向{3}复仇。		自動產生（scripts/gen_events.py）：21.tsv {1} was bent toward supernatural vengeance upon {2}.
+In the {@1} of {#2}, {3} was bent toward supernatural vengeance upon {4}.	{2}年{1}，{3}一心要以超自然的力量向{4}復仇。	{2}年{1}，{3}一心要以超自然的力量向{4}复仇。		自動產生（scripts/gen_events.py）：21.tsv {1} was bent toward supernatural vengeance upon {2}.
+In a time before time, {1} was bent toward supernatural vengeance upon {2}.	太古之時，{1}一心要以超自然的力量向{2}復仇。	太古之时，{1}一心要以超自然的力量向{2}复仇。		自動產生（scripts/gen_events.py）：21.tsv {1} was bent toward supernatural vengeance upon {2}.
+In {#1}, {2} recognized {3} as a capable and connected lieutenant with more autonomy to act on plots in the web of intrigue.	{1}年，{2}認可{3}是能幹又有人脈的副將，讓其在陰謀網中有更多自主行事的空間。	{1}年，{2}认可{3}是能干又有人脉的副将，让其在阴谋网中有更多自主行事的空间。		自動產生（scripts/gen_events.py）：21.tsv {1} recognized {2} as a capable and connected lieutenant with more autonomy to act on plots in the web of intrigue.
+In the {@1} of {#2}, {3} recognized {4} as a capable and connected lieutenant with more autonomy to act on plots in the web of intrigue.	{2}年{1}，{3}認可{4}是能幹又有人脈的副將，讓其在陰謀網中有更多自主行事的空間。	{2}年{1}，{3}认可{4}是能干又有人脉的副将，让其在阴谋网中有更多自主行事的空间。		自動產生（scripts/gen_events.py）：21.tsv {1} recognized {2} as a capable and connected lieutenant with more autonomy to act on plots in the web of intrigue.
+In a time before time, {1} recognized {2} as a capable and connected lieutenant with more autonomy to act on plots in the web of intrigue.	太古之時，{1}認可{2}是能幹又有人脈的副將，讓其在陰謀網中有更多自主行事的空間。	太古之时，{1}认可{2}是能干又有人脉的副将，让其在阴谋网中有更多自主行事的空间。		自動產生（scripts/gen_events.py）：21.tsv {1} recognized {2} as a capable and connected lieutenant with more autonomy to act on plots in the web of intrigue.
 {1}, as {2}, in {#3}	{3}年化身{2}的{1}	{3}年化身{2}的{1}	inner	自動產生（scripts/gen_events.py）：01.tsv {1}, as {2}, 加上結尾的日期
 {1}, as {2}, in the {@3} of {#4}	{4}年{3}化身{2}的{1}	{4}年{3}化身{2}的{1}	inner	自動產生（scripts/gen_events.py）：01.tsv {1}, as {2}, 加上結尾的日期
 {1}, as {2}, in a time before time	太古之時化身{2}的{1}	太古之时化身{2}的{1}	inner	自動產生（scripts/gen_events.py）：01.tsv {1}, as {2}, 加上結尾的日期

@@ -223,7 +223,9 @@ unsafe fn word<'a>(l: &NameLayout, id: i32, pos: i16) -> Option<(&'a [u8], &'sta
 /// 照遊戲的組法拼出英文名的字表部分（不含原名與綽號，小寫）與中文；有字缺中文時回傳 None。
 /// 遊戲的組法（translate_name）：words[0]+words[1] 接成一個字；words[2]、words[3]、words[4] 各自前面空一格，
 /// 第一個前面接 the，words[4] 後面接「-」再直接接 words[5]；有 words[6] 時接「of words[6]」。
-unsafe fn compose(l: &NameLayout, name: usize) -> Option<(Vec<u8>, String)> {
+/// 第三項是只有複合字的寫法（後面還有 the／of 片語時）：遊戲「只要第一段」時只輸出這段（傳說事件句的 `Silverwarm`）
+#[allow(clippy::type_complexity)]
+unsafe fn compose(l: &NameLayout, name: usize) -> Option<(Vec<u8>, String, Option<(Vec<u8>, String)>)> {
     let (ids, pos): ([i32; 7], [i16; 7]) = unsafe { (read(name, l.words), read(name, l.parts)) };
     let mut words: [Option<(&[u8], &str)>; 7] = [None; 7];
     for i in 0..7 {
@@ -242,6 +244,7 @@ unsafe fn compose(l: &NameLayout, name: usize) -> Option<(Vec<u8>, String)> {
     if words[0..2].iter().any(Option::is_some) {
         en.extend(words[0..2].iter().flatten().flat_map(|w| w.0));
     }
+    let first_len = en.len();
     // the 片語（words[2..6]）：遊戲只在 words[2]、words[3]、words[5] 有字時才拼
     let mut phrase = String::new();
     if words[2].is_some() || words[3].is_some() || words[5].is_some() {
@@ -270,6 +273,7 @@ unsafe fn compose(l: &NameLayout, name: usize) -> Option<(Vec<u8>, String)> {
         return None;
     }
     en.make_ascii_lowercase();
+    let first = (!compound.is_empty() && en.len() > first_len).then(|| (en[..first_len].to_vec(), compound.clone()));
     let rest = match of {
         Some(of) if phrase.is_empty() => of.to_owned(),
         Some(of) => format!("{of}之{phrase}"),
@@ -280,20 +284,20 @@ unsafe fn compose(l: &NameLayout, name: usize) -> Option<(Vec<u8>, String)> {
         (false, true) => compound,
         _ => rest,
     };
-    Some((en, zh))
+    Some((en, zh, first))
 }
 
 /// hook 用：原函式把 name 轉成英文 out 之後呼叫，登記這個英文名的中文。
 /// 開頭的原名、綽號照原文：英文輸出扣掉字表部分剩下的就是這段，中文名接在它後面、空一格。
+/// 遊戲只要第一段時（傳說事件句的人名）輸出只有複合字，對上就登記複合字的中文。
 pub unsafe fn note(name: usize, out: &[u8]) {
     let Some(l) = NAME_LAYOUT.get() else { return };
     if out.is_empty() || NAMES.lock().contains_key(out) {
         return;
     }
-    let Some((en, zh)) = (unsafe { compose(l, name) }) else { return };
-    if out.len() < en.len() || !out[out.len() - en.len()..].eq_ignore_ascii_case(&en) {
-        return;
-    }
+    let Some((en, zh, first)) = (unsafe { compose(l, name) }) else { return };
+    let ends = |en: &[u8]| out.len() >= en.len() && out[out.len() - en.len()..].eq_ignore_ascii_case(en);
+    let Some((en, zh)) = [Some((en, zh)), first].into_iter().flatten().find(|(en, _)| ends(en)) else { return };
     let head = &out[..out.len() - en.len()];
     let zh = match head.strip_suffix(b" ") {
         Some(head) => format!("{} {zh}", cp437::decode(head)),
@@ -398,6 +402,12 @@ mod tests {
             let n = name([-1, -1, 4, -1, -1, 5, -1], [0, 0, 2, 0, 0, 0, 0]);
             note(&raw const n as usize, b"Urist the Bronze Guild");
             assert_eq!(get(b"Urist the Bronze Guild").as_deref(), Some("Urist 青銅公會"));
+            // 只要第一段：傳說事件句只寫複合字（龍「Silverwarm the Golden」寫成 `Silverwarm`）
+            let n = name([0, 3, 4, -1, -1, 5, -1], [4, 0, 2, 0, 0, 0, 0]);
+            note(&raw const n as usize, b"Scorchdestiny");
+            assert_eq!(get(b"Scorchdestiny").as_deref(), Some("焦命運"));
+            note(&raw const n as usize, b"Scorchdestiny the Bronze Guild");
+            assert_eq!(get(b"Scorchdestiny the Bronze Guild").as_deref(), Some("焦命運·青銅公會"));
             // 字表缺中文（ROOT 沒有譯名）、或英文和遊戲輸出對不上：不登記
             let n = name([0, 6, -1, -1, -1, -1, -1], [4, 0, 0, 0, 0, 0, 0]);
             note(&raw const n as usize, b"Scorchroot");
