@@ -11,8 +11,8 @@
   uv run scripts/publish_workshop.py --item zh-Hans --create --yes             # 首次建立項目（設為私人），ID 寫回 workshop.json
 
 每次上傳的內容：dist/<folder>/ 整個資料夾、標題（steam_title）、說明（steam_description 檔）、標籤（tags）、
-封面（preview）、更新說明（--note）。標題與說明放在預設（english）欄位，任何語言的 Steam 用戶端都看得到同一份中文。
-首次建立時另外上傳 screenshots 資料夾裡的截圖（依檔名排序；放在 temp/，不進 git）。封面與截圖都要小於 1 MB。
+封面（preview，512 動態 GIF）、更新說明（--note）。標題與說明放在預設（english）欄位，任何語言的 Steam 用戶端都看得到同一份中文。
+首次建立時另外上傳 screenshots 資料夾裡的截圖（依檔名排序，一張一次提交；放在 temp/，不進 git）。
 ponytail: 截圖只在 --create 時傳；之後增刪截圖到工作坊頁面的「新增／編輯圖片與影片」做，免得重複上傳。
 """
 import argparse
@@ -34,7 +34,10 @@ INVALID_HANDLE = (0, 0xFFFFFFFFFFFFFFFF)
 VISIBILITY_PRIVATE = 2  # k_ERemoteStoragePublishedFileVisibilityPrivate
 FILE_TYPE_COMMUNITY = 0  # k_EWorkshopFileTypeCommunity
 PREVIEW_TYPE_IMAGE = 0  # k_EItemPreviewType_Image
-PREVIEW_LIMIT = 1024 * 1024  # 封面與截圖都要小於 1 MB（ISteamUGC::AddItemPreviewFile）
+# 大小上限照家族 PZ MOD 的實測（pz-mod-template 的 publish_workshop.py）：封面 1,024,000 bytes；
+# 截圖（AddItemPreviewFile）274 KB 成功、314 KB 回 EResult 25，網頁上傳的 2 MB 上限不適用
+PREVIEW_LIMIT = 1_024_000
+SHOT_LIMIT = 280_000
 IMAGE_SUFFIXES = (".jpg", ".jpeg", ".png")
 
 
@@ -116,11 +119,23 @@ class Steam:
             raise RuntimeError("需要先到 Steam 網頁接受工作坊法律協議")
         return int.from_bytes(raw[8:16], "little")
 
-    def update(self, app_id: int, file_id: int, item: dict, content: Path, note: str, private: bool, shots: list[Path]) -> None:
-        d, ugc = self.dll, self.ugc
-        handle = d.SteamAPI_ISteamUGC_StartItemUpdate(ugc, app_id, file_id)
+    def start(self, app_id: int, file_id: int) -> int:
+        handle = self.dll.SteamAPI_ISteamUGC_StartItemUpdate(self.ugc, app_id, file_id)
         if handle in INVALID_HANDLE:
             raise RuntimeError("StartItemUpdate 失敗")
+        return handle
+
+    def submit(self, handle: int, note: str) -> None:
+        # SubmitItemUpdateResult_t（k_iSteamUGCCallbacks + 4）：EResult@0、需要接受協議@4、PublishedFileId@8
+        raw = self.wait(self.dll.SteamAPI_ISteamUGC_SubmitItemUpdate(self.ugc, handle, note.encode("utf-8")), 3404, 16)
+        if int.from_bytes(raw[:4], "little") != 1:
+            raise RuntimeError(f"SubmitItemUpdate EResult={int.from_bytes(raw[:4], 'little')}")
+        if raw[4]:
+            raise RuntimeError("需要先到 Steam 網頁接受工作坊法律協議")
+
+    def update(self, app_id: int, file_id: int, item: dict, content: Path, note: str, private: bool) -> None:
+        d, ugc = self.dll, self.ugc
+        handle = self.start(app_id, file_id)
         tags = [t.encode() for t in item["tags"]]
         array = StringArray((ctypes.c_char_p * len(tags))(*tags), len(tags))
         steps = [
@@ -130,17 +145,18 @@ class Steam:
             d.SteamAPI_ISteamUGC_SetItemTags(ugc, handle, ctypes.byref(array)),
             d.SteamAPI_ISteamUGC_SetItemPreview(ugc, handle, str(ROOT / item["preview"]).encode("utf-8")),
         ]
-        steps += [d.SteamAPI_ISteamUGC_AddItemPreviewFile(ugc, handle, str(p).encode("utf-8"), PREVIEW_TYPE_IMAGE) for p in shots]
         if private:
             steps.append(d.SteamAPI_ISteamUGC_SetItemVisibility(ugc, handle, VISIBILITY_PRIVATE))
         if not all(steps):
             raise RuntimeError(f"Steam 拒絕了部分欄位：{steps}")
-        # SubmitItemUpdateResult_t（k_iSteamUGCCallbacks + 4）：EResult@0、需要接受協議@4、PublishedFileId@8
-        raw = self.wait(d.SteamAPI_ISteamUGC_SubmitItemUpdate(ugc, handle, note.encode("utf-8")), 3404, 16)
-        if int.from_bytes(raw[:4], "little") != 1:
-            raise RuntimeError(f"SubmitItemUpdate EResult={int.from_bytes(raw[:4], 'little')}")
-        if raw[4]:
-            raise RuntimeError("需要先到 Steam 網頁接受工作坊法律協議")
+        self.submit(handle, note)
+
+    def add_screenshot(self, app_id: int, file_id: int, path: Path) -> None:
+        # 一次提交只能帶一張（家族 PZ MOD 實測多張同批回 EResult 25），每張各自提交，更新說明留空
+        handle = self.start(app_id, file_id)
+        if not self.dll.SteamAPI_ISteamUGC_AddItemPreviewFile(self.ugc, handle, str(path).encode("utf-8"), PREVIEW_TYPE_IMAGE):
+            raise RuntimeError(f"AddItemPreviewFile 拒絕：{path.name}")
+        self.submit(handle, "")
 
 
 def screenshots(item: dict) -> list[Path]:
@@ -163,12 +179,15 @@ def preflight(items: list[dict], create: bool, note: str | None) -> list[str]:
             problems.append(f"{item['lang']}：還沒有 published_file_id，首次請用 --create")
         if not create and not note:
             problems.append("更新要附 --note 更新說明")
-        images = [ROOT / item["preview"]] + (screenshots(item) if create else [])
-        if not images[0].is_file():
+        cover = ROOT / item["preview"]
+        shots = screenshots(item) if create else []
+        if not cover.is_file():
             problems.append(f"{item['lang']}：缺封面 {item['preview']}")
-        if create and len(images) == 1:
+        elif cover.stat().st_size > PREVIEW_LIMIT:
+            problems.append(f"{item['lang']}：封面 {cover.stat().st_size:,} bytes，超過 {PREVIEW_LIMIT:,}")
+        if create and not shots:
             problems.append(f"{item['lang']}：{item['screenshots']} 沒有截圖")
-        problems += [f"{item['lang']}：{p.relative_to(ROOT)} 超過 1 MB" for p in images if p.is_file() and p.stat().st_size >= PREVIEW_LIMIT]
+        problems += [f"{item['lang']}：截圖 {p.name} {p.stat().st_size:,} bytes，超過 {SHOT_LIMIT:,}" for p in shots if p.stat().st_size > SHOT_LIMIT]
     return problems
 
 
@@ -201,9 +220,14 @@ def main() -> int:
                 item["published_file_id"] = steam.create(config["app_id"])
                 CONFIG.write_text(json.dumps(config, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
                 print(f"{item['lang']}：已建立 {item['published_file_id']}，寫回 workshop.json")
-            steam.update(config["app_id"], int(item["published_file_id"]), item, ROOT / "dist" / item["folder"],
-                         args.note or "初次上傳", private=args.create, shots=screenshots(item) if args.create else [])
-            print(f"{item['lang']}：上傳完成 https://steamcommunity.com/sharedfiles/filedetails/?id={item['published_file_id']}")
+            file_id = int(item["published_file_id"])
+            steam.update(config["app_id"], file_id, item, ROOT / "dist" / item["folder"], args.note or "初次上傳", private=args.create)
+            print(f"{item['lang']}：內容、標題、說明、封面已上傳")
+            shots = screenshots(item) if args.create else []
+            for k, shot in enumerate(shots, 1):
+                steam.add_screenshot(config["app_id"], file_id, shot)  # 中途失敗時前面幾張已生效，剩下的到工作坊頁面補
+                print(f"{item['lang']}：截圖 {k}/{len(shots)} {shot.name}")
+            print(f"{item['lang']}：上傳完成 https://steamcommunity.com/sharedfiles/filedetails/?id={file_id}")
     finally:
         steam.close()
     return 0

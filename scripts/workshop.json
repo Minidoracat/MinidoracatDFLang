@@ -25,7 +25,7 @@
       "mascot_label": "繁體中文",
       "steam_title": "矮人要塞 繁體中文化 Dwarf Fortress Traditional Chinese by Minidoracat",
       "steam_description": "docs/steam/zh-Hant.bbcode",
-      "preview": "docs/steam/cover-zh-Hant.jpg",
+      "preview": "docs/steam/cover-zh-Hant.gif",
       "screenshots": "temp/steam/screenshots/zh-Hant",
       "tags": [
         "dfhack",
@@ -46,7 +46,7 @@
       "mascot_label": "简体中文",
       "steam_title": "矮人要塞 简体中文化 Dwarf Fortress Simplified Chinese by Minidoracat",
       "steam_description": "docs/steam/zh-Hans.bbcode",
-      "preview": "docs/steam/cover-zh-Hans.jpg",
+      "preview": "docs/steam/cover-zh-Hans.gif",
       "screenshots": "temp/steam/screenshots/zh-Hans",
       "tags": [
         "dfhack",
