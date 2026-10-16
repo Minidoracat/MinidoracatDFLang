@@ -36,7 +36,7 @@
 [h2]注意[/h2]
 [list]
 [*] 同時訂閱簡體中文版時，預設啟用繁體；在 DFHack 主控台輸入 [b]dflang lang zh-Hans[/b] 可切換，重開遊戲生效。
-[*] 不能和 DFI18n、dfzh、DFCN 等其他翻譯引擎同時使用；偵測到 DFI18n、dfzh 時本 MOD 不會啟動。
+[*] 翻譯引擎一次只能有一個在運作。同時裝了 DFI18n 時，標題畫面會跳出說明讓你選要用哪一個，重開遊戲生效；之後想改回 DFI18n，在 DFHack 主控台輸入 [b]dflang lang off[/b]。（選了本 MOD 時，會在遊戲的 mods 資料夾放一個 dflang-hide-dfi18n 讓 DFI18n 不載入，DFI18n 本身不會被修改。）裝了 dfzh 或 DFCN 時本 MOD 不會啟動，標題畫面會用英文說明怎麼移除它們。
 [*] 輸入 [b]dflang status[/b] 可查看引擎狀態。
 [*] 遊戲執行中改變視窗大小或解析度時，中文字會被縮放而變糊，重開遊戲就會恢復清晰。
 [*] 譯文錯誤或沒翻到的地方，歡迎到 GitHub 開 Issue 回報（附截圖更好）。

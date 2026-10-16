@@ -145,12 +145,13 @@ pub fn attach(name: &str, target: usize) -> Result<(), String> {
     Ok(())
 }
 
+/// 沒有掛遊戲的 hook 也能開：本 MOD 讓給別的翻譯引擎時，只用 DFHack 視窗那條路（Lua 包住的 paintString）把標題畫面的切換說明畫成中文
 pub fn set_enabled(on: bool) -> Result<(), String> {
     let detours = DETOURS.lock();
     for d in &detours.0 {
         unsafe { if on { d.enable() } else { d.disable() } }.map_err(|e| e.to_string())?;
     }
-    ENABLED.store(on && !detours.0.is_empty(), Ordering::Release);
+    ENABLED.store(on, Ordering::Release);
     Ok(())
 }
 

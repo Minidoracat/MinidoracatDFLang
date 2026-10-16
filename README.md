@@ -40,7 +40,7 @@
 2. 訂閱[繁中](https://steamcommunity.com/sharedfiles/filedetails/?id=3820630135)或[簡中](https://steamcommunity.com/sharedfiles/filedetails/?id=3820630318)項目，正常啟動遊戲。
 3. 兩個都訂閱時預設繁中；在 DFHack 主控台輸入 `dflang lang zh-Hans` 或 `dflang lang zh-Hant` 切換，重開遊戲生效。
 
-不能和 DFI18n、dfzh、DFCN 等其他翻譯引擎同時使用；偵測到 DFI18n、dfzh 時本 MOD 不啟動。`dflang status` 查看狀態。
+翻譯引擎一次只能有一個在運作。同時裝了 DFI18n 時，本 MOD 讓位，標題畫面跳出說明讓你選要用哪一個：選「關閉 DFI18n」會在遊戲的 `mods` 資料夾放一個 `dflang-hide-dfi18n`（ID 和 DFI18n 相同、版本較高，DFHack 就不載入 DFI18n；DFI18n 本身的檔案不動；遊戲裡找不到本 MOD 時，這個資料夾會在下次啟動時自己刪掉），重開遊戲生效；之後要改回 DFI18n，在 DFHack 主控台輸入 `dflang lang off`。裝了 dfzh 或 DFCN 時本 MOD 不啟動，標題畫面用英文說明怎麼移除它們。`dflang status` 查看狀態。
 
 標題畫面左下角會出現本 MOD 的貓娘吉祥物和「繁體中文／简体中文」名牌。要移動或關掉，在 DFHack 主控台輸入 `gui/overlay`，找 `dflang_zh_hant.mascot`（簡中包是 `dflang_zh_hans.mascot`）。
 

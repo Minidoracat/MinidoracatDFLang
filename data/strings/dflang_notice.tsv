@@ -1,0 +1,14 @@
+en	zh-Hant	zh-Hans	align	note
+DFLang: another translation mod is active	DFLang：另一個翻譯 MOD 正在運作	DFLang：另一个翻译模组正在运行		lua/loader.lua notify：本 MOD 讓位給其他翻譯引擎時，標題畫面說明的視窗標題
+DFI18n is also installed. Only one translation engine	另外也裝了 DFI18n。翻譯引擎一次只能有一個在運作，	另外也装了 DFI18n。翻译引擎一次只能有一个在运行，		lua/loader.lua notify：讓位說明第 1 行（Label 依換行逐行畫，每行各自對照，中文依序讀成一段）
+can run at a time, so DFLang is not running.	所以 DFLang 沒有啟動。	所以 DFLang 没有启动。		lua/loader.lua notify：讓位說明第 2 行
+Choose the one to use; it takes effect after you	請選擇要用哪一個，重開遊戲後生效。	请选择要用哪一个，重启游戏后生效。		lua/loader.lua notify：讓位說明第 4 行
+restart the game. To switch again later, type	之後要再切換，在 DFHack 主控台輸入	之后要再切换，在 DFHack 控制台输入		lua/loader.lua notify：讓位說明第 5 行
+dflang lang off (back to DFI18n) or	dflang lang off（改回 DFI18n）或	dflang lang off（改回 DFI18n）或		lua/loader.lua notify：讓位說明第 6 行；指令照原文
+dflang lang zh-Hant (DFLang) in the DFHack console.	dflang lang zh-Hant（改用 DFLang）。	dflang lang zh-Hant（改用 DFLang）。		lua/loader.lua notify：繁中包的讓位說明第 7 行；指令照原文
+dflang lang zh-Hans (DFLang) in the DFHack console.	dflang lang zh-Hans（改用 DFLang）。	dflang lang zh-Hans（改用 DFLang）。		lua/loader.lua notify：簡中包的讓位說明第 7 行；指令照原文
+Turn off DFI18n and use DFLang	關閉 DFI18n，改用 DFLang	关闭 DFI18n，改用 DFLang		lua/loader.lua notify：讓位說明的選項，停用 DFI18n（重開遊戲生效）
+Keep using DFI18n	繼續用 DFI18n	继续用 DFI18n		lua/loader.lua notify：讓位說明的選項，之後不再詢問（dflang lang off）
+DFI18n has been turned off.	已關閉 DFI18n。	已关闭 DFI18n。		lua/loader.lua notify：停用 DFI18n 後的訊息第 1 行
+Restart the game to use DFLang.	重開遊戲後就會改用 DFLang。	重启游戏后就会改用 DFLang。		lua/loader.lua notify：停用 DFI18n 後的訊息第 2 行
+Could not write to the mods folder.	無法寫入 mods 資料夾。	无法写入 mods 文件夹。		lua/loader.lua notify：停用 DFI18n 失敗（mods 資料夾寫不進去）

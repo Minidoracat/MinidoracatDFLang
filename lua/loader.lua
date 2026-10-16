@@ -5,10 +5,21 @@
 local LANG = '@LANG@'
 local MOD_ID = '@MOD_ID@'
 local PACKAGES = {['zh-Hant'] = 'cat_df_lang_zh_hant', ['zh-Hans'] = 'cat_df_lang_zh_hans'}
--- 會攔同一批寫字函式的其他翻譯引擎；看它的載入腳本在不在，不只看 MOD ID
+-- 會攔同一批寫字函式的其他翻譯引擎。DFHack 模組看它的載入腳本在不在（不只看 MOD ID）；DFCN 是遊戲啟動時由 dfhooks 載入的 DLL，
+-- 看遊戲目錄有沒有它的 dfhooks_dfcn.ini（只訂閱、沒照它的說明複製這個檔就不會啟用）。
+-- notice：本 MOD 讓位時標題畫面的說明。DFI18n 的說明畫成中文、讓玩家選（見 notify）；其他兩個沒有實測過本包字圖疊在它們畫面上的樣子，照英文
 local CONFLICTS = {
     {id = 'dfi18n', script = 'scripts_modinstalled/dfi18n_loader.lua', name = 'DFI18n'},
-    {id = 'dfzh_loader', script = 'scripts_modinstalled/dfzh_loader.lua', name = 'dfzh'},
+    {id = 'dfzh_loader', script = 'scripts_modinstalled/dfzh_loader.lua', name = 'dfzh', notice = table.concat({
+        'dfzh is also installed. Only one translation engine can run',
+        'at a time, so DFLang is not running. To use DFLang, remove',
+        'dfzh by following its own instructions, then restart the game.'}, '\n')},
+    {file = 'dfhooks_dfcn.ini', name = 'DFCN', notice = table.concat({
+        'DFCN is also installed (dfhooks_dfcn.ini in the game folder).',
+        'Only one translation engine can run at a time, so DFLang',
+        'is not running. To use DFLang, move dfhooks_dfcn.ini out',
+        'of the game folder and restart the game. Keep dfhooks.dll:',
+        'DFHack needs it.'}, '\n')},
 }
 local HOOKS = {'addst', 'addst_flag', 'top_addst', 'addcoloredst', 'add_anchored_tile'}
 local GPS_FIELDS = {'screenx', 'screeny', 'dimx', 'dimy', 'clipx', 'clipy', 'screen', 'screen_limit',
@@ -47,17 +58,23 @@ local function read_file(path)
     return s
 end
 
--- 兩包都裝時只啟用一包：dfhack-config/dflang.json 的 lang 優先，沒有就用繁體
+-- 兩包都裝時只啟用一包：dfhack-config/dflang.json 的 lang 優先，沒有就用繁體；off 是兩包都不啟用（改用其他翻譯引擎）
 local function chosen_lang()
     local pref = json.open(CONFIG_FILE).data.lang
+    if pref == 'off' then return 'off' end
     if pref and PACKAGES[pref] and mod_dir(PACKAGES[pref]) then return pref end
     return mod_dir(PACKAGES['zh-Hant']) and 'zh-Hant' or 'zh-Hans'
 end
 
 local function conflict()
+    local install = dfhack.filesystem.getInstallDir():gsub('[/\\]?$', '/')
     for _, c in ipairs(CONFLICTS) do
-        local dir = mod_dir(c.id)
-        if dir and dfhack.filesystem.isfile(dir .. c.script) then return c.name end
+        if c.file then
+            if dfhack.filesystem.isfile(install .. c.file) then return c end
+        else
+            local dir = mod_dir(c.id)
+            if dir and dfhack.filesystem.isfile(dir .. c.script) then return c end
+        end
     end
 end
 
@@ -270,20 +287,80 @@ local function install_typing()
     end
 end
 
+-- 本 MOD 讓位時在標題畫面跳出說明：主控台的訊息玩家看不到，也不知道怎麼停用別的 MOD。
+-- DFI18n（實測過）：只包住 DFHack 的畫字函式、不掛遊戲的 hook，用本包的字圖把說明畫成中文，讓玩家選要用哪一個；
+-- 選「改用 DFLang」就照 dflang.lua 的 hide_dfi18n 停用 DFI18n，重開遊戲生效。DFI18n 的字畫在 DFHack 視窗之後，
+-- 標題選單的中文會透到說明框上，所以說明開著時用它自己的 dfi18n disable 暫停翻譯，關掉後恢復、拆掉本包的包裝
+local NOTICE_TITLE = 'DFLang: another translation mod is active'
+
+local function notice_engine(dir)
+    local open = package.loadlib(dir .. 'dflang.dll', 'luaopen_dflang')
+    local engine = open and open()
+    local layout = engine and gps_layout()
+    if not layout or not engine.set_layout(layout) or not load_glyphs(engine, dir)
+            or not engine.load(dir .. 'strings.tsv') or not engine.enable() then
+        return nil
+    end
+    install_paint_string(engine, stamper(engine))
+    install_wrap(engine)
+    dfhack.run_command_silent('dfi18n', 'disable')
+    return engine
+end
+
+local function release_notice(engine)
+    if not engine then return end
+    engine.disable()
+    local screen = dfhack.screen
+    if screen.dflang_paint_string then screen.paintString, screen.dflang_paint_string = screen.dflang_paint_string, nil end
+    if string.dflang_wrap then string.wrap, string.dflang_wrap = string.dflang_wrap, nil end
+    dfhack.run_command_silent('dfi18n', 'enable')
+end
+
+local function notify(c, dir)
+    local dialogs = require('gui.dialogs')
+    local function show()
+        if not dfhack.gui.matchFocusString('title/Default') then return dfhack.timeout(10, 'frames', show) end
+        if c.notice then return dialogs.showMessage(NOTICE_TITLE, c.notice, COLOR_WHITE) end
+        local engine = notice_engine(dir)
+        local text = table.concat({
+            'DFI18n is also installed. Only one translation engine',
+            'can run at a time, so DFLang is not running.',
+            '',
+            'Choose the one to use; it takes effect after you',
+            'restart the game. To switch again later, type',
+            'dflang lang off (back to DFI18n) or',
+            ('dflang lang %s (DFLang) in the DFHack console.'):format(LANG)}, '\n')
+        dialogs.showListPrompt(NOTICE_TITLE, text, COLOR_WHITE, {'Turn off DFI18n and use DFLang', 'Keep using DFI18n'},
+            function(choice)
+                local dflang = reqscript('dflang')
+                if choice ~= 1 then
+                    dflang.set_lang('off')
+                    return release_notice(engine)
+                end
+                dialogs.showMessage('DFLang', dflang.hide_dfi18n() and 'DFI18n has been turned off.\nRestart the game to use DFLang.'
+                    or 'Could not write to the mods folder.', COLOR_WHITE, function() release_notice(engine) end)
+            end,
+            function() release_notice(engine) end)
+    end
+    dfhack.timeout(1, 'frames', show)
+end
+
 local function start()
     if dfhack.BASE_G.DFLANG then return end
-    if chosen_lang() ~= LANG then
+    local lang = chosen_lang()
+    if lang == 'off' then return log('已設定為不啟用（dflang lang %s 可重新啟用）', LANG) end
+    if lang ~= LANG then
         log('另一個語言包啟用中，本包不載入（dflang lang %s 可切換）', LANG)
-        return
-    end
-    local other = conflict()
-    if other then
-        fail('偵測到 %s：兩個翻譯引擎會攔同一批函式。請退訂其中一個再重開遊戲。', other)
         return
     end
     local dir = mod_dir(MOD_ID)
     if not dir then return fail('找不到本 MOD 的目錄（%s）', MOD_ID) end
     dir = dir .. 'dflang/'
+    local other = conflict()
+    if other then
+        fail('偵測到 %s：兩個翻譯引擎會攔同一批函式，本 MOD 不啟動；標題畫面會說明怎麼切換。', other.name)
+        return notify(other, dir)
+    end
 
     local open, err = package.loadlib(dir .. 'dflang.dll', 'luaopen_dflang')
     if not open then return fail('載入引擎失敗：%s', err) end

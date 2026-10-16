@@ -4,7 +4,7 @@
 """本機實機測試：把 dist/ 的工作坊包掛進遊戲、啟動、下 DFHack 指令、收尾還原。
 
 用法（repo 根目錄，先跑 scripts/build.py）：
-  uv run scripts/dev_game.py up [--lang zh-Hant|zh-Hans|both]   掛包、遮蔽 DFI18n、啟動，等到 DFHack 回應
+  uv run scripts/dev_game.py up [--lang zh-Hant|zh-Hans|both] [--with-dfi18n]   掛包、遮蔽 DFI18n（--with-dfi18n 不遮蔽）、啟動，等到 DFHack 回應
   uv run scripts/dev_game.py run dflang status                 轉給 dfhack-run
   uv run scripts/dev_game.py click X Y                         以文字格座標模擬滑鼠左鍵（不動真滑鼠、不搶焦點）
   uv run scripts/dev_game.py mouse PX PY [r]                   以畫面像素座標按住滑鼠三幀再放開（地圖點擊用）
@@ -54,7 +54,7 @@ def kill_game() -> None:
     time.sleep(3)
 
 
-def up(langs: list[str]) -> int:
+def up(langs: list[str], with_dfi18n: bool = False) -> int:
     kill_game()
     # 遮蔽 MOD 還在表示測試進行中（up 了兩次沒有 down），這時的 dflang* 是測試自己產生的，不是玩家的，不備份
     user_files = list(CONFIG_DIR.glob("dflang*"))
@@ -62,12 +62,13 @@ def up(langs: list[str]) -> int:
         BACKUP.mkdir(parents=True)
         for f in user_files:
             shutil.move(f, BACKUP / f.name)
-    SHADOW.mkdir(parents=True, exist_ok=True)
-    (SHADOW / "info.txt").write_text(
-        "[ID:dfi18n]\n[NUMERIC_VERSION:999]\n[DISPLAYED_VERSION:test-shadow]\n"
-        "[EARLIEST_COMPATIBLE_NUMERIC_VERSION:1]\n[EARLIEST_COMPATIBLE_DISPLAYED_VERSION:test]\n"
-        "[AUTHOR:DFLang test]\n[NAME:DFLang test shadow for DFI18n]\n"
-        "[DESCRIPTION:Temporary local stub that hides DFI18n scripts during DFLang tests.]\n", encoding="ascii")
+    if not with_dfi18n:
+        SHADOW.mkdir(parents=True, exist_ok=True)
+        (SHADOW / "info.txt").write_text(
+            "[ID:dfi18n]\n[NUMERIC_VERSION:999]\n[DISPLAYED_VERSION:test-shadow]\n"
+            "[EARLIEST_COMPATIBLE_NUMERIC_VERSION:1]\n[EARLIEST_COMPATIBLE_DISPLAYED_VERSION:test]\n"
+            "[AUTHOR:DFLang test]\n[NAME:DFLang test shadow for DFI18n]\n"
+            "[DESCRIPTION:Temporary local stub that hides DFI18n scripts during DFLang tests.]\n", encoding="ascii")
     for item in ITEMS:
         if item["lang"] not in langs:
             continue
@@ -129,7 +130,7 @@ def main() -> int:
         return 2
     if args[0] == "up":
         lang = args[2] if len(args) > 2 and args[1] == "--lang" else "zh-Hant"
-        return up(["zh-Hant", "zh-Hans"] if lang == "both" else [lang])
+        return up(["zh-Hant", "zh-Hans"] if lang == "both" else [lang], "--with-dfi18n" in args)
     if args[0] == "run":
         return dfhack(*args[1:]).returncode
     if args[0] == "click":
