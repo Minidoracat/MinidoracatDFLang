@@ -9,6 +9,7 @@
   uv run scripts/publish_workshop.py --item zh-Hant --note "更新說明"          # 檢查
   uv run scripts/publish_workshop.py --item all --note "更新說明" --yes        # 兩包各自上傳
   uv run scripts/publish_workshop.py --item zh-Hans --create --yes             # 首次建立項目（設為私人），ID 寫回 workshop.json
+  uv run scripts/publish_workshop.py --item all --description-only --yes     # 只換說明（不傳內容、封面，不留更新說明）
 
 每次上傳的內容：dist/<folder>/ 整個資料夾、標題（steam_title）、說明（steam_description 檔）、標籤（tags）、
 封面（preview，512 動態 GIF）、更新說明（--note）。標題與說明放在預設（english）欄位，任何語言的 Steam 用戶端都看得到同一份中文。
@@ -163,6 +164,13 @@ class Steam:
             raise RuntimeError(f"Steam 拒絕了部分欄位：{steps}")
         self.submit(handle, note)
 
+    def set_description(self, app_id: int, file_id: int, item: dict) -> None:
+        handle = self.start(app_id, file_id)
+        text = (ROOT / item["steam_description"]).read_text(encoding="utf-8")
+        if not self.dll.SteamAPI_ISteamUGC_SetItemDescription(self.ugc, handle, text.encode("utf-8")):
+            raise RuntimeError("Steam 拒絕了說明")
+        self.submit(handle, "")
+
     def add_screenshot(self, app_id: int, file_id: int, path: Path) -> None:
         # 一次提交只能帶一張（家族 PZ MOD 實測多張同批回 EResult 25），每張各自提交，更新說明留空
         handle = self.start(app_id, file_id)
@@ -234,6 +242,7 @@ def main() -> int:
     ap.add_argument("--note", help="更新說明（Change Notes）")
     ap.add_argument("--screenshots", action="store_true", help="更新時也換掉截圖：刪掉項目上現有的，再傳 screenshots 資料夾的")
     ap.add_argument("--check-screenshots", action="store_true", help="只查項目上現有幾張截圖，不改任何東西")
+    ap.add_argument("--description-only", action="store_true", help="只換說明（steam_description 檔），不傳內容與封面")
     ap.add_argument("--yes", action="store_true", help="真的上傳；沒加只做檢查")
     args = ap.parse_args()
     config = json.loads(CONFIG.read_text(encoding="utf-8"))
@@ -244,6 +253,21 @@ def main() -> int:
         try:
             for item in items:
                 print(f"{item['lang']}：{item['published_file_id']} 現有截圖 {steam.count_screenshots(int(item['published_file_id']))} 張")
+        finally:
+            steam.close()
+        return 0
+
+    if args.description_only:
+        for item in items:
+            print(f"{item['lang']}：只換說明 {item['published_file_id']} ← {item['steam_description']}")
+        if not args.yes:
+            print("加 --yes 才會上傳。")
+            return 0
+        steam = Steam(config["app_id"])
+        try:
+            for item in items:
+                steam.set_description(config["app_id"], int(item["published_file_id"]), item)
+                print(f"{item['lang']}：說明已更新")
         finally:
             steam.close()
         return 0

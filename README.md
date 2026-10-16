@@ -127,6 +127,7 @@ uv run scripts/dev_game.py down               # 關遊戲、還原 mods/ 與設�
 
 ```bash
 uv run scripts/publish_workshop.py --item zh-Hant --note "繁中更新說明" [--screenshots] --yes   # 簡中另跑一次 --item zh-Hans
+uv run scripts/publish_workshop.py --item all --description-only --yes                     # 只改了 docs/steam/*.bbcode：只換說明，不算發布新版
 git tag -a v0.2.0 -m "0.2.0" && git push origin v0.2.0                                    # 每次發布都打 tag，版本號照 workshop.json
 ```
 
