@@ -21,8 +21,8 @@ local CONFLICTS = {
 }
 local HOOKS = {'addst', 'addst_flag', 'top_addst', 'addcoloredst', 'add_anchored_tile'}
 local GPS_FIELDS = {'screenx', 'screeny', 'dimx', 'dimy', 'clipx', 'clipy', 'screen', 'screen_limit',
-                    'screentexpos', 'screentexpos_flag', 'screen_top', 'screen_top_limit',
-                    'screentexpos_top', 'screentexpos_top_flag', 'screentexpos_anchored',
+                    'screentexpos', 'screentexpos_flag', 'screentexpos_lower', 'screen_top', 'screen_top_limit',
+                    'screentexpos_top', 'screentexpos_top_flag', 'screentexpos_top_lower', 'screentexpos_anchored',
                     'screen_color_r', 'screen_color_g', 'screen_color_b'}
 local CONFIG_FILE = 'dfhack-config/dflang.json'
 -- 每次啟動依當下格子大小重畫的字圖集（相對於遊戲目錄）；可直接打開檢查字形
@@ -137,9 +137,10 @@ local function load_glyphs(engine, dir)
     local tiles, missing = engine.render_atlas(png, w, h, chars, fonts)
     if not tiles then return nil, missing end
     if missing ~= '' then fail('沒有字型能畫：%s', missing) end
-    -- 字圖集最後一列可能沒排滿；每字取八張：左右兩格、半格位移的上下列各左右兩格（分頁標籤這類文字）、錨定貼圖標籤用的小一號字
+    -- 字圖集最後一列可能沒排滿；每字取八張：左右兩格、半格位移的上下列各左右兩格（分頁標籤這類文字）、錨定貼圖標籤用的小一號字，
+    -- 最後再一張透明記號（整句貼圖排段落時的佔位格，見 engine/src/atlas.rs）
     local loaded = dfhack.textures.loadTileset(png, w, h, true)
-    local handles = table.move(loaded, 1, utf8.len(chars) * 8, 1, {})
+    local handles = table.move(loaded, 1, utf8.len(chars) * 8 + 1, 1, {})
     local n, err = engine.set_glyphs(chars, resolve(handles))
     if not n then return nil, err end
     return handles, n
@@ -209,6 +210,8 @@ end
 
 -- 玩家在 DFHack 輸入框打的字（搜尋框、gm-editor 的欄位、gui/journal）照原樣畫：畫輸入框內容與切行時為 true，不查字典（見 install_typing）
 local typing = false
+-- DFHack 依英文長度置中的字（視窗標題、分頁標籤）畫的時候為 true：譯文在原文寬度的正中間（見 engine/src/hooks.rs dfhack_translate）
+local centered = false
 
 -- 回傳貼字圖的函式：把 engine.dh_translate 查到的字圖貼在 (x, y)；DFHack 在頂層開著時只寫頂層，字圖跟著貼頂層
 local function stamper(engine)
@@ -222,13 +225,13 @@ local function install_paint_string(engine, stamp)
     if screen.dflang_paint_string then return end -- 只包一層
     local orig = screen.paintString
     screen.dflang_paint_string = orig
-    -- 沒有譯文、照原樣畫的字也告訴引擎：實驗的整句貼圖用本包的字型重畫，不用遊戲的點陣字（見 engine/src/overlay.rs）
+    -- 沒有譯文、照原樣畫的字也告訴引擎：整句貼圖用本包的字型重畫，不用遊戲的點陣字（見 engine/src/overlay.rs）
     local gps = df.global.gps
     local _, gps_addr = df.sizeof(gps)
     local function plain(x, y, text) engine.dh_plain(gps_addr, x, y, gps.top_in_use and 1 or 0, text) end
     screen.paintString = function(pen, x, y, text, map)
         if map or type(text) ~= 'string' then return orig(pen, x, y, text, map) end
-        local shadow = not typing and engine.dh_translate(text, y)
+        local shadow = not typing and engine.dh_translate(text, y, centered and 1)
         if not shadow then
             local ok = orig(pen, x, y, text, map)
             plain(x, y, text)
@@ -240,9 +243,37 @@ local function install_paint_string(engine, stamp)
     end
 end
 
+-- DFHack 的視窗框（gui.paint_frame）依英文標題長度把標題置中、「PAUSE FORCED」畫成有底色的小框：畫框時 centered 為 true。
+-- 函式不在就略過，標題照原文起點畫
+local function install_frame()
+    local gui = require('gui')
+    local orig = gui.paint_frame
+    if type(orig) ~= 'function' or gui.dflang_paint_frame then return end
+    gui.dflang_paint_frame = orig
+    gui.paint_frame = function(...)
+        centered = true
+        return dfhack.with_finalize(function() centered = false end, orig, ...)
+    end
+end
+
+-- DFHack 有些腳本讀畫面上的字找版面位置（overall-mood 找人物頁的「Overview」分頁、stressicons 找頂列的「Pop」）：
+-- 翻成中文的格子回報原本的英文字元，腳本才找得到（見 engine/src/hooks.rs 的 English）。讀地圖緩衝區時照原樣
+local function install_read_tile(engine)
+    local screen = dfhack.screen
+    if screen.dflang_read_tile then return end
+    local orig = screen.readTile
+    screen.dflang_read_tile = orig
+    screen.readTile = function(x, y, map, ...)
+        local pen = orig(x, y, map, ...)
+        local ch = pen and not map and engine.english_at(x, y)
+        if ch then pen.ch = ch end
+        return pen
+    end
+end
+
 -- 圖形模式的分頁標籤一格一字畫兩列（上列標 top_of_text、下列標 bottom_of_text，字往下位移半格），不經 paintString：
 -- 標籤有譯文時兩列都畫影子字串，上下列各貼一次字圖，引擎依格子的旗標貼字的上半與下半（見 engine/src/hooks.rs paint）。
--- 函式不在就略過，分頁照英文
+-- 分頁寬度照英文標籤算，譯文在標籤寬度裡置中。函式不在就略過，分頁照英文
 local function install_tab(engine, stamp)
     local ok, TabBar = pcall(require, 'gui.widgets.tab_bar')
     local Tab = ok and type(TabBar) == 'table' and TabBar.Tab
@@ -250,7 +281,7 @@ local function install_tab(engine, stamp)
     local orig = Tab.onRenderBody
     Tab.dflang_render = orig
     Tab.onRenderBody = function(self, dc)
-        local shadow = dfhack.screen.inGraphicsMode() and type(self.label) == 'string' and engine.dh_translate(self.label, -1)
+        local shadow = dfhack.screen.inGraphicsMode() and type(self.label) == 'string' and engine.dh_translate(self.label, -1, 1)
         if not shadow or #shadow ~= #self.label then return orig(self, dc) end
         -- 標籤整個畫得出來才換（分頁列捲動時左右會被切掉一截，影子字串畫了字圖卻貼不上），否則照英文
         dc:seek(2, 0)
@@ -264,7 +295,7 @@ local function install_tab(engine, stamp)
             dc:char(nil, p[4]):char(nil, p[5])
         end
         stamp(x, y)
-        engine.dh_translate(self.label, -1) -- 貼過的字圖會被清掉，下列再查一次
+        engine.dh_translate(self.label, -1, 1) -- 貼過的字圖會被清掉，下列再查一次
         stamp(x, y + 1)
     end
 end
@@ -322,6 +353,7 @@ local function notice_engine(dir)
         return nil
     end
     install_paint_string(engine, stamper(engine))
+    install_frame()
     install_wrap(engine)
     dfhack.run_command_silent('dfi18n', 'disable')
     return engine
@@ -333,6 +365,8 @@ local function release_notice(engine)
     local screen = dfhack.screen
     if screen.dflang_paint_string then screen.paintString, screen.dflang_paint_string = screen.dflang_paint_string, nil end
     if string.dflang_wrap then string.wrap, string.dflang_wrap = string.dflang_wrap, nil end
+    local gui = require('gui')
+    if gui.dflang_paint_frame then gui.paint_frame, gui.dflang_paint_frame = gui.dflang_paint_frame, nil end
     dfhack.run_command_silent('dfi18n', 'enable')
 end
 
@@ -467,12 +501,13 @@ local function start()
         ok, err = attach_hooks(engine, dir, {'translate_name'})
         if not ok then fail('%s；世界生成的名稱維持英文', err) end
     end
-    -- 實驗（overlay-prototype 分支）：主層譯文改成整句一張貼圖（見 engine/src/overlay.rs）；dflang overlay on|off 切換
+    -- 整句貼圖：畫面上的字改用本包的字型、照字寬整句畫（見 engine/src/overlay.rs）。預設開啟；
+    -- dflang overlay off 改回一字兩格的字圖（重開遊戲生效）。掛不上時照一字兩格
     ok, err = attach_hooks(engine, dir, {'render_things'})
     if ok then ok, err = engine.overlay_install(select(2, df.sizeof(df.global.enabler.renderer))) end
     if not ok then
-        fail('%s；整句貼圖不能用', err)
-    elseif json.open(CONFIG_FILE).data.overlay then
+        fail('%s；整句貼圖不能用，改用一字兩格的字圖', err)
+    elseif json.open(CONFIG_FILE).data.overlay ~= false then
         engine.set_overlay(1)
     end
     ok, err = engine.enable()
@@ -483,11 +518,19 @@ local function start()
     install_paint_string(engine, stamp)
     install_wrap(engine)
     install_tab(engine, stamp)
+    install_frame()
+    install_read_tile(engine)
     install_typing()
-    -- 依畫面套用的譯文要知道現在在哪個畫面：每幀把 DFHack 的焦點字串告訴引擎（'frames' 計時器在世界卸載後也繼續）
+    -- 依畫面套用的譯文要知道現在在哪個畫面：每幀把 DFHack 的焦點字串告訴引擎（'frames' 計時器在世界卸載後也繼續）。
+    -- DFHack 的視窗開著時也加上底下遊戲畫面的焦點：遊戲照樣畫的上方資訊列（「酒類」）才不會換成別的譯法
     if screens > 0 then
         local function track_focus()
-            engine.set_focus(table.concat(dfhack.gui.getCurFocus(true), '\n'))
+            local focus = dfhack.gui.getCurFocus(true)
+            local dfvs = dfhack.gui.getDFViewscreen(true)
+            if dfvs and dfvs ~= dfhack.gui.getCurViewscreen(true) then
+                for _, f in ipairs(dfhack.gui.getFocusStrings(dfvs)) do table.insert(focus, f) end
+            end
+            engine.set_focus(table.concat(focus, '\n'))
             dfhack.timeout(1, 'frames', track_focus)
         end
         track_focus()

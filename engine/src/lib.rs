@@ -14,6 +14,7 @@ mod hooks;
 mod image;
 mod lines;
 mod lua;
+mod metrics;
 mod mtb;
 pub mod names;
 mod overlay;
@@ -67,14 +68,17 @@ pub unsafe extern "C" fn luaopen_dflang(l: lua::State) -> c_int {
         lua::set_fn(l, c"set_overlay", set_overlay);
         lua::set_fn(l, c"overlay_dump", overlay_dump);
         lua::set_fn(l, c"dh_plain", dh_plain);
+        lua::set_fn(l, c"english_at", english_at);
     }
     1
 }
+/// overlay_dump()：除錯，整句貼圖的耗時與本幀記下的字（見 overlay::dump）
 unsafe extern "C" fn overlay_dump(l: lua::State) -> c_int {
     unsafe { lua::push_str(l, &overlay::dump()) };
     1
 }
-/// dh_plain(gps 位址, x, y, 頂層 0/1, 字)：DFHack 照原樣畫的一段字，交給實驗的整句貼圖（見 hooks::dfhack_plain）
+
+/// dh_plain(gps 位址, x, y, 頂層 0/1, 字)：DFHack 照原樣畫的一段字，交給整句貼圖（見 hooks::dfhack_plain）
 unsafe extern "C" fn dh_plain(l: lua::State) -> c_int {
     unsafe {
         if let (Some(gps), Some(x), Some(y), Some(top), Some(text)) =
@@ -86,9 +90,22 @@ unsafe extern "C" fn dh_plain(l: lua::State) -> c_int {
     0
 }
 
+/// english_at(x, y)：上一幀 (x, y) 翻譯前的英文字元（CP437 位元組），沒翻譯是 nil（見 hooks::English）
+unsafe extern "C" fn english_at(l: lua::State) -> c_int {
+    unsafe {
+        let ch = match (lua::arg_int(l, 1), lua::arg_int(l, 2)) {
+            (Some(x), Some(y)) => hooks::ENGLISH.lock().at(x as i32, y as i32),
+            _ => None,
+        };
+        match ch {
+            Some(b) => lua::push_int(l, b as i64),
+            None => lua::push_nil(l),
+        }
+    }
+    1
+}
 
-
-/// overlay_install(renderer 位址)：實驗的整句貼圖，換掉 renderer vtable 的三個槽（見 overlay.rs）
+/// overlay_install(renderer 位址)：整句貼圖，換掉 renderer vtable 的四個槽（見 overlay.rs）
 unsafe extern "C" fn overlay_install(l: lua::State) -> c_int {
     unsafe {
         let Some(addr) = lua::arg_int(l, 1) else { return fail(l, "overlay_install: expects the renderer address") };
@@ -99,11 +116,12 @@ unsafe extern "C" fn overlay_install(l: lua::State) -> c_int {
     }
 }
 
-/// set_overlay(true/1 或 false/0)：開關實驗的整句貼圖
+/// set_overlay(1 或 0)：整句貼圖開關，遊戲啟動時（啟用引擎前）呼叫一次：段落換行與替身字串也跟著改用字型的實際字寬（見 metrics.rs）
 unsafe extern "C" fn set_overlay(l: lua::State) -> c_int {
     unsafe {
         let on = lua::arg_int(l, 1).is_some_and(|v| v != 0);
         overlay::ON.store(on, Ordering::Release);
+        metrics::set_compact(on);
         ok(l)
     }
 }
@@ -117,11 +135,12 @@ unsafe fn fail(l: lua::State, msg: &str) -> c_int {
     2
 }
 
-/// dh_translate(text, y)：DFHack 要畫的一段字（CP437）有譯文就回傳影子字串，否則 nil（見 hooks::dfhack_translate）。
+/// dh_translate(text, y[, 置中 1])：DFHack 要畫的一段字（CP437）有譯文就回傳影子字串，否則 nil（見 hooks::dfhack_translate）。
 unsafe extern "C" fn dh_translate(l: lua::State) -> c_int {
     unsafe {
         let y = lua::arg_int(l, 2).unwrap_or(-1) as i32;
-        match lua::arg_bytes(l, 1).and_then(|text| hooks::dfhack_translate(text, y)) {
+        let center = lua::arg_int(l, 3).is_some_and(|c| c != 0);
+        match lua::arg_bytes(l, 1).and_then(|text| hooks::dfhack_translate(text, y, center)) {
             Some(shadow) => lua::push_bytes(l, &shadow),
             None => lua::push_nil(l),
         }
@@ -179,12 +198,14 @@ unsafe extern "C" fn set_layout(l: lua::State) -> c_int {
                     limit: f(c"screen_limit")?,
                     texpos: f(c"screentexpos")?,
                     flag: f(c"screentexpos_flag")?,
+                    lower: f(c"screentexpos_lower")?,
                 },
                 top: Layer {
                     screen: f(c"screen_top")?,
                     limit: f(c"screen_top_limit")?,
                     texpos: f(c"screentexpos_top")?,
                     flag: f(c"screentexpos_top_flag")?,
+                    lower: f(c"screentexpos_top_lower")?,
                 },
                 anchored: f(c"screentexpos_anchored")?,
                 color: [f(c"screen_color_r")?, f(c"screen_color_g")?, f(c"screen_color_b")?],
@@ -296,7 +317,11 @@ unsafe extern "C" fn render_atlas(l: lua::State) -> c_int {
         let _ = overlay::FONT_PATHS.set(paths.iter().map(|p| p.to_string()).collect());
         let result = atlas::load_fonts(&paths).and_then(|fonts| {
             let chars: Vec<char> = chars.chars().collect();
-            atlas::render(&fonts, &chars, cell_w as usize, cell_h as usize, std::path::Path::new(out))
+            let report = atlas::render(&fonts, &chars, cell_w as usize, cell_h as usize, std::path::Path::new(out))?;
+            // 段落照字型實際字寬換行用（整句貼圖開著時，見 metrics.rs）：字圖集的字、英數與 CP437 的拉丁字母
+            let latin = (0x20u8..=0xff).filter(|&b| overlay::is_text(b)).map(|b| cp437::TABLE[b as usize]);
+            metrics::set_advances(atlas::advances(&fonts, chars.iter().copied().chain(latin), cell_w as usize, cell_h as usize, overlay::EM_PER_CELL)?);
+            Ok(report)
         });
         match result {
             Ok(report) => {

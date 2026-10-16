@@ -247,7 +247,7 @@ Adds productivity actions to the stocks page.	在庫存頁面加上便利操作�
 expand all	全部展開	全部展开		DFHack hack/lua/plugins/stocks.lua L86 庫存頁疊加介面的快捷鍵說明
 remove empties	移除空項目	移除空项		DFHack hack/lua/plugins/stocks.lua L99 庫存頁疊加介面的快捷鍵說明
 Show the viewed unit's current and long-term mood on their sheet.	在單位資訊頁顯示目前與長期心情。	在单位信息页显示当前与长期心情。		DFHack hack/scripts/internal/unit-info-viewer/overall-mood.lua L51 疊加介面說明（控制面板顯示）
-Mood:	心情	心情		DFHack hack/scripts/internal/unit-info-viewer/overall-mood.lua L85 人物頁疊加介面標籤（後接心情等級）
+Mood:	心情：	心情：		DFHack hack/scripts/internal/unit-info-viewer/overall-mood.lua L85 人物頁疊加介面標籤（後接心情等級）；寬度例外：畫的是「Mood: 」，6 格放得下「心情：」（實機確認「心情：滿足」）
 Long-term mood:	長期心情：	长期心情：		DFHack hack/scripts/internal/unit-info-viewer/overall-mood.lua L88 人物頁疊加介面標籤
 Displeased	不悅	不悦		DFHack hack/scripts/internal/unit-info-viewer/overall-mood.lua L35 人物頁疊加介面的心情等級（疊加介面沒有焦點，單字只能放 strings）
 Pleased	愉快	愉快		DFHack hack/scripts/internal/unit-info-viewer/overall-mood.lua L37 人物頁疊加介面的心情等級（疊加介面沒有焦點，單字只能放 strings）

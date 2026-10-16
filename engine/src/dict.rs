@@ -43,8 +43,11 @@ pub struct Entry {
     /// (替身字串內的格位, 字圖編號)；每個字圖佔 offset 與 offset+1 兩格。
     pub glyphs: Vec<(usize, u32)>,
     pub text: String,
-    /// 對原文的對齊：b'c' 置中、b'r' 靠右、b'l' 靠左（見 entry；實驗的整句貼圖依這個擺字）
+    /// 對原文的對齊：b'c' 置中、b'r' 靠右、b'l' 靠左（見 entry；整句貼圖依這個擺字）
     pub align: u8,
+    /// 段落的一段照字型實際字寬縮短的替身字串（整句貼圖開著時，見 para_entry）：開頭這麼多格是照原樣的空白（縮排），
+    /// 之後的格子貼透明記號，字由整句貼圖照 text 畫；None 是一般譯文（中文一字兩格）
+    pub compact: Option<usize>,
 }
 
 impl Entry {
@@ -525,10 +528,11 @@ pub enum Row {
 }
 
 impl Dict {
-    /// texpos 是每字左右兩格（2n，測試用），或完整字圖集（8n，見 glyph_of）。
+    /// texpos 是每字左右兩格（2n，測試用），或完整字圖集（8n，見 glyph_of；後面可再接一張透明記號，見 marker）。
     pub fn set_glyphs(&mut self, chars: &str, texpos: Vec<i32>) -> bool {
         let chars: Vec<char> = chars.chars().collect();
-        if texpos.len() != chars.len() * 2 && texpos.len() != chars.len() * 8 {
+        let n = chars.len();
+        if ![2 * n, 8 * n, 8 * n + 1].contains(&texpos.len()) {
             return false;
         }
         self.glyph_of = chars.into_iter().enumerate().map(|(i, c)| (c, i as u32)).collect();
@@ -539,7 +543,7 @@ impl Dict {
     /// 字圖 glyph 的左（half 0）或右半格畫在 row 時的 texpos。只有一般字圖時，上列與標籤畫一般的字、下列不畫（None）。
     pub fn tile(&self, glyph: u32, half: usize, row: Row) -> Option<i32> {
         let (g, n) = (glyph as usize, self.glyph_of.len());
-        let full = self.texpos.len() == n * 8;
+        let full = self.texpos.len() >= n * 8;
         let i = match row {
             Row::Top if full => 2 * n + 4 * g,
             Row::Bottom if full => 2 * n + 4 * g + 2,
@@ -550,10 +554,32 @@ impl Dict {
         self.texpos.get(i + half).copied()
     }
 
+    /// 透明記號貼圖的 texpos（字圖集最後一張，見 atlas::render）：段落照字寬縮短時（Entry::compact）佔位格貼它
+    pub fn marker(&self) -> Option<i32> {
+        let n = self.glyph_of.len() * 8;
+        (self.texpos.len() == n + 1).then(|| self.texpos[n])
+    }
+
     /// 任一段文字的替身字串與字圖（段落換行後的一段，見 mtb.rs）；缺字圖時回傳 None。
     pub fn text_entry(&self, text: &str) -> Option<Entry> {
         let (entry, missing) = self.entry(0, text, "");
         (missing == 0).then_some(entry)
+    }
+
+    /// 段落換行後的一段（mtb、lines、ctb、DFHack 段落）：整句貼圖開著時照字型的實際字寬縮短替身字串（見 Entry::compact），
+    /// 否則同 text_entry。缺字（字圖集沒有、也不是 CP437 的字）時回傳 None。
+    pub fn para_entry(&self, text: &str) -> Option<Entry> {
+        if !crate::metrics::compact() || self.marker().is_none() {
+            return self.text_entry(text);
+        }
+        if text.chars().any(|c| cp437::byte_of(c).is_none() && !self.glyph_of.contains_key(&c)) {
+            return None;
+        }
+        let lead = text.len() - text.trim_start_matches(' ').len();
+        let body = &text[lead..];
+        let mut shadow = vec![b' '; lead + crate::metrics::cells(crate::metrics::width(body))];
+        shadow.push(0);
+        Some(Entry { shadow, glyphs: Vec::new(), text: body.to_owned(), align: b'l', compact: Some(lead) })
     }
 
     /// `align` 是呼叫端對原文的對齊方式：遊戲先用原文長度算好起點再寫字，
@@ -593,7 +619,7 @@ impl Dict {
             "r" => b'r',
             _ => b'l',
         };
-        (Entry { shadow, glyphs, text: text.to_owned(), align }, missing)
+        (Entry { shadow, glyphs, text: text.to_owned(), align, compact: None }, missing)
     }
 
     /// 讀 `原文<TAB>譯文[<TAB>對齊]` 一行一條的 UTF-8 檔；空行與 # 開頭的行略過。

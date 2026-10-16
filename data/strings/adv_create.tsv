@@ -61,7 +61,7 @@ Name: 	名字：	名字：		FUN_140622790 L849284 後接角色名
 This character is ready to adventure!	此角色已準備好冒險！	此角色已准备好冒险！		FUN_140622790 L849304
 Accept attributes and skills	接受屬性與技能	接受属性与技能	c	FUN_140622790 L849360 按鈕；與既有 Accept personality「接受性格」一致
 Customize	自訂	自定义	c	FUN_140622790 L849388 切換按鈕：自己分配點數
-Archetypes	角色範本	角色模板	c	FUN_140622790 L849393/849417 切換按鈕與標題：預設的角色範本
+Archetypes	角色範本	角色模板		FUN_140622790 L849393/849417 切換按鈕與標題：預設的角色範本（標題靠左對齊清單；按鈕上的置中由引擎看按鈕判斷）
 Your Attributes and Skills	你的屬性與技能	你的属性与技能		FUN_140622790 L849545 標題
 Attributes remaining: 	剩餘屬性點：	剩余属性点：		FUN_140622790 L849592 後接數字
 Skill remaining: 	剩餘技能點：	剩余技能点：		FUN_140622790 L849601 後接數字
@@ -346,8 +346,8 @@ Randomize personality	隨機性格	随机性格	c	FUN_140622790 L853330 按鈕
 Done customizing	完成自訂	完成自定义	c	FUN_140622790 L853385 按鈕
 Equipment and pet points remaining: 	剩餘裝備與寵物點數：	剩余装备和宠物点数：		FUN_140622790 L853394 後接數字
 Accept equipment	接受裝備	接受装备	c	FUN_140622790 L853426 按鈕
-Increase quality	提高品質	提高质量	c	FUN_140622790 L853448 按鈕
-Decrease quality	降低品質	降低质量	c	FUN_140622790 L853468 按鈕
+Increase quality	提高品質	提高质量		FUN_140622790 L853448 物品清單下方的圖例：接在「＋」圖示後面（靠左）
+Decrease quality	降低品質	降低质量		FUN_140622790 L853468 物品清單下方的圖例：接在「－」圖示後面（靠左）
 Ready to adventure!	準備出發冒險！	准备出发冒险！	c	FUN_140622790 L854688 按鈕
 Add a party member	加入隊伍成員	添加队伍成员	c	FUN_140622790 L854716 按鈕
 Adventure awaits	冒險即將展開	冒险即将展开		FUN_140622790 L855230 最後確認畫面標題（只有一名角色）

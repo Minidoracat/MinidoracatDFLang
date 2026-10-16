@@ -50,6 +50,8 @@ pub struct Layer {
     pub limit: usize,
     pub texpos: usize,
     pub flag: usize,
+    /// screentexpos_lower／screentexpos_top_lower：字底下的貼圖（按鈕、面板的九宮格底圖）
+    pub lower: usize,
 }
 
 pub static LAYOUT: OnceLock<Layout> = OnceLock::new();
@@ -103,7 +105,7 @@ type ScreenFn = unsafe extern "C" fn(*mut u8);
 type LogFn = unsafe extern "C" fn(*mut u8, i32, i32);
 /// (交談畫面, ?, 框左緣, 框右緣)
 type TalkLogFn = unsafe extern "C" fn(*mut u8, u32, i32, i32);
-/// render_things()：非同步執行緒每幀把畫面寫進緩衝區（實驗的整句貼圖在這裡收一幀的句子，見 overlay.rs）
+/// render_things()：非同步執行緒每幀把畫面寫進緩衝區（整句貼圖在這裡收一幀的句子，見 overlay.rs）
 type RenderThingsFn = unsafe extern "C" fn();
 
 pub const HOOKS: [&str; 15] = [
@@ -204,14 +206,33 @@ unsafe fn write<T>(gps: *mut u8, offset: usize, v: T) {
     unsafe { *(gps.add(offset) as *mut T) = v }
 }
 
-/// 把 (x0 + 格位, y) 上的佔位格換成字圖。條件與遊戲 addchar 相同：在裁切框內（`clip`）、不超出畫面緩衝區。
-/// DFHack 的 paintString 不看遊戲的裁切框（裁切由它的 Lua Painter 先做），貼它的字時 `clip` 給 false。
-/// `shadow` 是這次寫進畫面的替身字串（glyphs 的格位從它開頭算）、`align` 是譯文對原文的對齊（Entry::align），實驗的整句貼圖（overlay.rs）用。
-unsafe fn paint(gps: *mut u8, layer: &Layer, x0: i32, y: i32, shadow: &[u8], glyphs: &[(usize, u32)], align: u8, dict: &Dict, clip: bool) {
+/// 要貼的一段字：寫進畫面的替身字串（glyphs 的格位從它開頭算）、對原文的對齊（Entry::align）、
+/// 結尾有幾格是補到原文寬度的空白（不是譯文本身的空白，見 overlay.rs 的 Chain），
+/// 以及段落照字型實際字寬縮短時的 (縮排格數, 記號格數, 文字)（Entry::compact）。整句貼圖（overlay.rs）都會用到。
+struct Paint<'a> {
+    shadow: &'a [u8],
+    glyphs: &'a [(usize, u32)],
+    align: u8,
+    pad: usize,
+    compact: Option<(usize, usize, &'a str)>,
+}
+
+impl<'a> Paint<'a> {
+    fn of(entry: &'a Entry) -> Paint<'a> {
+        let shadow = entry.shadow();
+        let compact = entry.compact.map(|lead| (lead, shadow.len() - lead, entry.text.as_str()));
+        Paint { shadow, glyphs: &entry.glyphs, align: entry.align, pad: 0, compact }
+    }
+}
+
+/// 把 (x0 + 格位, y) 上的佔位格換成字圖（段落照字寬縮短的換成透明記號）。條件與遊戲 addchar 相同：在裁切框內（`clip`）、不超出畫面緩衝區。
+/// DFHack 的 paintString 不看遊戲的裁切框（裁切由它的 Lua Painter 先做），貼它的字時 `clip` 給 false，整句貼圖也記成 DFHack 的字。
+unsafe fn paint(gps: *mut u8, layer: &Layer, x0: i32, y: i32, p: Paint, dict: &Dict, clip: bool) {
     let Some(layout) = LAYOUT.get() else { return };
     unsafe {
         let dimx: i32 = read(gps, layout.dimx);
         let dimy: i32 = read(gps, layout.dimy);
+        let dfhack = !clip;
         let clip: [i32; 4] = if clip {
             [read(gps, layout.clipx), read(gps, layout.clipx + 4), read(gps, layout.clipy), read(gps, layout.clipy + 4)]
         } else {
@@ -227,39 +248,59 @@ unsafe fn paint(gps: *mut u8, layer: &Layer, x0: i32, y: i32, shadow: &[u8], gly
         if screen.is_null() || tex.is_null() || flag.is_null() {
             return;
         }
-        // 整句的列別（一般、半格位移的上列或下列）；同一句混了不同列別就不交給整句貼圖
+        // 能貼的格子：(格位, 那一格在畫面緩衝區的索引)
+        let cell = |k: usize| -> Option<usize> {
+            let x = x0 + k as i32;
+            if x < 0 || x >= dimx || x < clip[0] || x > clip[1] {
+                return None;
+            }
+            let index = (x * dimy + y) as usize;
+            (screen.add(index * 8) < limit).then_some(index)
+        };
+        // 半格位移的文字（分頁標籤等）遊戲在上下兩列各寫一次，字圖也分上下兩半（見 atlas::render）
+        let row_at = |index: usize| {
+            let f = *flag.add(index);
+            if f & FLAG_BOTTOM_OF_TEXT != 0 {
+                Row::Bottom
+            } else if f & FLAG_TOP_OF_TEXT != 0 {
+                Row::Top
+            } else {
+                Row::Whole
+            }
+        };
+        let top = layer.screen == layout.top.screen;
+        if let Some((lead, cells, text)) = p.compact {
+            let Some(marker) = dict.marker() else { return };
+            let mut row = None;
+            for k in lead..lead + cells {
+                let Some(index) = cell(k) else { continue };
+                row.get_or_insert(row_at(index));
+                *tex.add(index) = marker;
+            }
+            if let Some(row) = row {
+                let shadow = &p.shadow[lead..(lead + cells).min(p.shadow.len())];
+                crate::overlay::record(gps, top, row, x0 + lead as i32, y, shadow, &[], b'l', 0, Some(text), dfhack);
+            }
+            return;
+        }
+        // 整句的列別；同一句混了不同列別就不交給整句貼圖
         let mut kind: Option<Option<Row>> = None;
-        for &(offset, glyph) in glyphs {
+        for &(offset, glyph) in p.glyphs {
             for half in 0..2 {
-                let x = x0 + offset as i32 + half;
-                if x < 0 || x >= dimx || x < clip[0] || x > clip[1] {
-                    continue;
-                }
-                let index = (x * dimy + y) as usize;
-                if screen.add(index * 8) >= limit {
-                    continue;
-                }
-                // 半格位移的文字（分頁標籤等）遊戲在上下兩列各寫一次，字圖也分上下兩半（見 atlas::render）
-                let f = *flag.add(index);
-                let row = if f & FLAG_BOTTOM_OF_TEXT != 0 {
-                    Row::Bottom
-                } else if f & FLAG_TOP_OF_TEXT != 0 {
-                    Row::Top
-                } else {
-                    Row::Whole
-                };
+                let Some(index) = cell(offset + half) else { continue };
+                let row = row_at(index);
                 kind = match kind {
                     None => Some(Some(row)),
                     Some(Some(k)) if k == row => kind,
                     _ => Some(None),
                 };
-                let Some(t) = dict.tile(glyph, half as usize, row) else { continue };
+                let Some(t) = dict.tile(glyph, half, row) else { continue };
                 *tex.add(index) = t;
                 *flag.add(index) |= FLAG_ADDCOLOR;
             }
         }
         if let Some(Some(row)) = kind {
-            crate::overlay::record(gps, layer.screen == layout.top.screen, row, x0, y, shadow, glyphs, align);
+            crate::overlay::record(gps, top, row, x0, y, p.shadow, p.glyphs, p.align, p.pad, None, dfhack);
         }
     }
 }
@@ -302,8 +343,9 @@ thread_local! {
 const CUTS_KEEP: usize = 16;
 
 /// 截短的字串（`開頭...`）的原文：這個執行緒最近縮短過、比它長、開頭相同的那筆（同一清單好幾筆開頭相同時，剛縮短的就是正要畫的）。
+/// 開頭要有字母：單獨的「...」（搜尋框沒輸入時的提示）不是截短的字串，不然會配上隨便一筆剛縮短的名字（「M…」）
 fn cut_original(key: &[u8]) -> Option<Vec<u8>> {
-    let head = key.strip_suffix(b"...")?;
+    let head = key.strip_suffix(b"...").filter(|h| h.iter().any(u8::is_ascii_alphabetic))?;
     CUTS.with_borrow(|cuts| cuts.iter().rev().find(|f| f.len() > key.len() && f.starts_with(head)).cloned())
 }
 
@@ -326,12 +368,117 @@ unsafe fn translate_call(gps: *mut u8, kind: &str, key: &[u8], space: i32, layer
         return false;
     };
     HITS.fetch_add(1, Ordering::Relaxed);
+    let (dimx, dimy): (i32, i32) = unsafe { (read(gps, layout.dimx), read(gps, layout.dimy)) };
+    ENGLISH.lock().note(x0, y, key, dimx, dimy);
     let (cells, glyphs) = entry.fit(space);
+    let (shadow, glyphs) = (&entry.shadow()[..cells], &entry.glyphs[..glyphs]);
+    let n = key.len();
+    let lay = layer(layout);
+    let lower = |x: i32| unsafe { lower_at(gps, layout, &lay, x, y) };
+    let column = COLUMNS.lock().note(lower, x0, n as i32);
+    let fits = cells == entry.shadow().len() && (space <= 0 || space as usize >= n);
+    let align = if fits { placed_align(lower, x0, n as i32, dimx, column, entry.align) } else { entry.align };
+    // 字串檔的對齊和遊戲實際的不同（靠左、置中、靠右互換）時，譯文在原文寬度裡重排
+    let relayout = align != entry.align;
     unsafe {
-        write(&entry.shadow()[..cells]);
-        paint(gps, &layer(layout), x0, y, &entry.shadow()[..cells], &entry.glyphs[..glyphs], entry.align, dict, true);
+        if relayout {
+            // 譯文實際佔的格子（字圖格的替身是空白，要算進去；置中的譯文前後補了空白，見 Dict::entry）
+            let start = glyphs.iter().map(|g| g.0).chain(shadow.iter().position(|&c| c != b' ')).min().unwrap_or(0);
+            let end = glyphs.iter().map(|g| g.0 + 2).chain(shadow.iter().rposition(|&c| c != b' ').map(|p| p + 1)).max().unwrap_or(0);
+            let body = &shadow[start..end.max(start)];
+            let at = match align {
+                b'c' => n.saturating_sub(body.len()) / 2,
+                b'r' => n.saturating_sub(body.len()),
+                _ => 0,
+            };
+            let mut out = vec![b' '; n.max(at + body.len())];
+            out[at..at + body.len()].copy_from_slice(body);
+            let moved: Vec<(usize, u32)> = glyphs.iter().map(|&(off, g)| (off - start + at, g)).collect();
+            write(&out);
+            let pad = out.len() - at - body.len();
+            paint(gps, &lay, x0, y, Paint { shadow: &out, glyphs: &moved, align, pad, compact: None }, dict, true);
+        } else {
+            write(shadow);
+            paint(gps, &lay, x0, y, Paint { shadow, glyphs, align: entry.align, pad: 0, compact: None }, dict, true);
+        }
     }
     true
+}
+
+/// (x, y) 字底下（lower 層：按鈕、面板的九宮格底圖）的貼圖編號；畫面外是 0
+unsafe fn lower_at(gps: *const u8, layout: &Layout, layer: &Layer, x: i32, y: i32) -> i32 {
+    unsafe {
+        let (dimx, dimy): (i32, i32) = (read(gps, layout.dimx), read(gps, layout.dimy));
+        let lower: *const i32 = read(gps, layer.lower);
+        if lower.is_null() || !(0..dimx).contains(&x) || !(0..dimy).contains(&y) {
+            return 0;
+        }
+        *lower.add((x * dimy + y) as usize)
+    }
+}
+
+/// 遊戲畫從 x0 起 n 格原文的對齊方式（listed 是字串檔寫的）。字畫在按鈕或視窗上（lower 是這一列字底下的貼圖編號，
+/// 起點那格有貼圖）時：同一種按鈕、同一個起點畫過長短很不一樣的字（column，見 Columns）是靠左排的清單（字串檔寫靠右的
+/// 點數欄也照靠左）；否則原文在同一張中段貼圖的範圍裡、或在整排連著的貼圖（視窗：說明視窗左上角的問號框也算進去）裡
+/// 左右剩的格數差兩格以內是置中（遊戲置中時有時偏一格；原文太長蓋到右緣時右邊是負的），右邊只剩一格以內、左邊空很多的是靠右
+/// （存檔清單的「Folder: region1」）。在按鈕上但不是這兩種的是靠左（字串檔寫置中也照靠左，靠右照寫的）。
+/// 不在按鈕上時，原文在畫面正中間（容許差一格：有些畫面照少一兩欄的寬度置中；左右各留一些，不是整列）的算置中，其他照字串檔。
+fn placed_align(lower: impl Fn(i32) -> i32, x0: i32, n: i32, dimx: i32, column: bool, listed: u8) -> u8 {
+    let mid = lower(x0);
+    if mid != 0 {
+        let margins = |inside: &dyn Fn(i32) -> bool| {
+            let left = (1..).take_while(|&d| inside(x0 - d)).count() as i32;
+            (left, (0..).take_while(|&d| inside(x0 + d)).count() as i32 - n)
+        };
+        // 左右剩的格數差一格以內；兩旁都還很寬時差兩格也算（選擇遊戲模式的 Legends 左 15 右 17），兩旁窄時差兩格就是靠左
+        let centered_in = |(left, right): (i32, i32)| {
+            let gap = (left - right).abs();
+            gap <= 1 || (gap <= 2 && left.min(right) >= 4)
+        };
+        let button = margins(&|x| lower(x) == mid);
+        let centered = !column && (centered_in(button) || centered_in(margins(&|x| lower(x) != 0)));
+        return match listed {
+            _ if centered => b'c',
+            _ if !column && button.1 <= 1 && button.0 >= 4 => b'r',
+            b'c' => b'l',
+            b'r' if column => b'l',
+            _ => listed,
+        };
+    }
+    if listed == b'l' && x0 > 0 && x0 + n < dimx && (2 * x0 + n - dimx).abs() <= 2 {
+        return b'c';
+    }
+    listed
+}
+
+/// 按鈕上的字從哪一格開始：(按鈕中段的左緣, 右緣, 起點) → 第一次見到的原文長度、是否見過長短差兩格以上的字。
+/// 靠左排的清單（工作分組、建造選單、冒險角色的按鈕、按鍵設定的連發選項、建立世界的選項）每一項都從按鈕左緣算起的同一格開始，
+/// 選取中的按鈕貼圖不同也一樣；置中的按鈕字長短差兩格以上，起點就不會相同（只差一格的可能因為整數除剛好同一格，
+/// 像「Fortress」與「Legends」）。右緣也比：清單的按鈕一樣寬，左緣剛好同一格的別種框（冒險角色的「Name」標籤和下面的分頁）
+/// 不算同一欄。一直記著：換分頁時同一顆按鈕換字（冒險角色每一頁底下的「Accept …」），之前見過別的長度就知道是靠左
+pub struct Columns(HashMap<(i32, i32, i32), (i32, bool)>);
+
+pub static COLUMNS: LazyLock<Mutex<Columns>> = LazyLock::new(|| Mutex::new(Columns(HashMap::new())));
+
+impl Columns {
+    /// 記下這一筆（lower 是這一列字底下的貼圖編號；不在按鈕上的不記），回傳這個起點是不是靠左排的清單
+    fn note(&mut self, lower: impl Fn(i32) -> i32, x0: i32, n: i32) -> bool {
+        let mid = lower(x0);
+        if mid == 0 {
+            return false;
+        }
+        let left = x0 - (1..).take_while(|&d| lower(x0 - d) == mid).count() as i32;
+        let key = (left, x0 + (0..).take_while(|&d| lower(x0 + d) == mid).count() as i32, x0);
+        // ponytail: 換畫面、改解析度留下的舊位置不清，記滿了整個清掉重記
+        if self.0.len() >= 4096 && !self.0.contains_key(&key) {
+            self.0.clear();
+        }
+        let e = self.0.entry(key).or_insert((n, false));
+        if (e.0 - n).abs() >= 2 {
+            e.1 = true;
+        }
+        e.1
+    }
 }
 
 // ---- DFHack 視窗的字（Lua 包住 dfhack.screen.paintString，見 lua/loader.lua） ----
@@ -339,8 +486,16 @@ unsafe fn translate_call(gps: *mut u8, kind: &str, key: &[u8], space: i32, layer
 // DFHack 的介面（overlay、gui/ 腳本）不經遊戲的畫字函式，直接寫畫面緩衝區。Lua 依序呼叫：dfhack_translate 查字典、
 // 原本的 paintString 畫影子字串（格數、顏色、裁切、點擊範圍都照英文），dfhack_stamp 貼字圖。都在主執行緒。
 
-/// dfhack_translate 查到、等 dfhack_stamp 貼上的 (影子字串, (格位, 字圖編號), 對齊)
-static DH_PENDING: Mutex<(Vec<u8>, Vec<(usize, u32)>, u8)> = Mutex::new((Vec::new(), Vec::new(), b'l'));
+/// dfhack_translate 查到、等 dfhack_stamp 貼上的譯文（影子字串、字圖格位都從 paintString 那段字的開頭算；pad 見 Paint）
+struct Pending {
+    shadow: Vec<u8>,
+    glyphs: Vec<(usize, u32)>,
+    align: u8,
+    pad: usize,
+    compact: Option<(usize, usize, String)>,
+}
+
+static DH_PENDING: Mutex<Option<Pending>> = Mutex::new(None);
 
 /// DFHack 自動換行的段落（string:wrap 切的，見 dfhack_wrap）：英文行 → 同一列要畫的中文（None：中文行比英文少，這一行畫空白）。
 /// ponytail: 以英文行的文字當鍵、全部畫面共用：不同段落（或同一段的兩行）剛好有同一行英文時用最後登記的，別處單獨畫出同樣英文的字串
@@ -350,7 +505,8 @@ const DH_LINES_LIMIT: usize = 20_000;
 
 /// DFHack 要畫的一段字：有譯文就回傳影子字串（補到原長，頭尾空白照原文，視窗標題前後各有兩個空白），字圖留給 dfhack_stamp；
 /// 沒有譯文、或譯文比原文寬時回傳 None，照畫英文。段落的一行（dfhack_wrap 登記過的）畫同一列的中文。
-pub fn dfhack_translate(text: &[u8], y: i32) -> Option<Vec<u8>> {
+/// `center`：DFHack 依英文長度置中的字（分頁標籤、視窗標題，見 lua/loader.lua）：譯文放在原文（不含頭尾空白）的正中間，整句貼圖也置中畫。
+pub fn dfhack_translate(text: &[u8], y: i32, center: bool) -> Option<Vec<u8>> {
     let dict = DICT.load(Ordering::Acquire);
     if dict.is_null() || !ENABLED.load(Ordering::Relaxed) {
         return None;
@@ -359,7 +515,14 @@ pub fn dfhack_translate(text: &[u8], y: i32) -> Option<Vec<u8>> {
         let shadow = row.as_ref().map_or(&[][..], |e| e.shadow());
         let mut out = vec![b' '; text.len().max(shadow.len())];
         out[..shadow.len()].copy_from_slice(shadow);
-        *DH_PENDING.lock() = (out.clone(), row.map_or_else(Vec::new, |e| e.glyphs.clone()), b'l');
+        let pad = out.len() - shadow.len();
+        *DH_PENDING.lock() = row.map(|e| Pending {
+            shadow: out.clone(),
+            glyphs: e.glyphs.clone(),
+            align: b'l',
+            pad,
+            compact: e.compact.map(|lead| (lead, e.shadow().len() - lead, e.text.clone())),
+        });
         return Some(out);
     }
     let dict = unsafe { &*dict };
@@ -372,14 +535,24 @@ pub fn dfhack_translate(text: &[u8], y: i32) -> Option<Vec<u8>> {
         note_miss("dfhack", key);
         return None;
     };
-    let shadow = entry.shadow();
-    if lead + shadow.len() > text.len() {
+    // DFHack 的字位置由它的元件算好，字串檔的置中、靠右（給遊戲自己的按鈕用的，前面已補好空白）不套用：
+    // 取譯文實際佔的格子（字圖格的替身是空白，要算進去），靠左放在原文起點，或依 center 放在原文正中間
+    let (shadow, glyphs) = (entry.shadow(), &entry.glyphs);
+    let start = glyphs.iter().map(|g| g.0).chain(shadow.iter().position(|&c| c != b' ')).min().unwrap_or(0);
+    let end = glyphs.iter().map(|g| g.0 + 2).chain(shadow.iter().rposition(|&c| c != b' ').map(|p| p + 1)).max().unwrap_or(0);
+    let body = &shadow[start..end.max(start)];
+    let at = if center { lead + key.len().saturating_sub(body.len()) / 2 } else { lead };
+    if at + body.len() > text.len() {
         return None;
     }
     HITS.fetch_add(1, Ordering::Relaxed);
     let mut out = vec![b' '; text.len()];
-    out[lead..lead + shadow.len()].copy_from_slice(shadow);
-    *DH_PENDING.lock() = (out.clone(), entry.glyphs.iter().map(|&(offset, glyph)| (offset + lead, glyph)).collect(), entry.align);
+    out[at..at + body.len()].copy_from_slice(body);
+    let glyphs: Vec<(usize, u32)> = glyphs.iter().map(|&(offset, glyph)| (offset - start + at, glyph)).collect();
+    let align = if center { b'c' } else { b'l' };
+    // 譯文比原文短、空出來的格子才算補位；英文原本結尾的空白（欄位對齊、標籤與值之間）照算（見 Paint::pad）
+    let pad = (lead + key.len()).saturating_sub(at + body.len());
+    *DH_PENDING.lock() = Some(Pending { shadow: out.clone(), glyphs, align, pad, compact: None });
     Some(out)
 }
 
@@ -396,7 +569,7 @@ pub fn dfhack_wrap(text: &[u8], width: usize, lines: &[Vec<u8>]) -> bool {
     for (k, row) in plan {
         let entry = match row {
             Some(row) => {
-                let Some(entry) = dict.text_entry(&row) else { return false };
+                let Some(entry) = dict.para_entry(&row) else { return false };
                 Some(Arc::new(entry))
             }
             None => None,
@@ -418,7 +591,8 @@ pub fn dfhack_wrap(text: &[u8], width: usize, lines: &[Vec<u8>]) -> bool {
 /// 段落間的空行對得上。英文的空行（Painter 不畫空字串）不列。翻不出來的段落記進未翻譯紀錄；有段落翻不出來、某段中文比英文多列、
 /// 或英文行對不回原文時回傳 None，整段照英文。
 fn wrap_plan(dict: &Dict, text: &[u8], width: usize, lines: &[Vec<u8>]) -> Option<Vec<(usize, Option<String>)>> {
-    let cells = |s: &str| s.chars().map(|c| if cp437::byte_of(c).is_some() { 1 } else { 2 }).sum::<usize>();
+    // 一列已經佔幾格：整句貼圖開著時照字型的實際字寬（見 metrics::cells_of），和 para_entry 的替身字串一樣長
+    let cells = crate::metrics::cells_of;
     let solid = |s: &[u8]| s.iter().filter(|c| !c.is_ascii_whitespace()).count();
     let mut plan = Vec::new();
     let mut next = 0;
@@ -475,14 +649,16 @@ fn wrap_plan(dict: &Dict, text: &[u8], width: usize, lines: &[Vec<u8>]) -> Optio
 
 /// 把 dfhack_translate 查到的字圖貼在 (x, y)：DFHack 在頂層開著時（`top_in_use`）只寫頂層，字圖跟著貼頂層。
 pub fn dfhack_stamp(gps: usize, x: i32, y: i32, top: bool) {
-    let (shadow, glyphs, align) = std::mem::take(&mut *DH_PENDING.lock());
+    let Some(p) = DH_PENDING.lock().take() else { return };
     let dict = DICT.load(Ordering::Acquire);
     let Some(layout) = LAYOUT.get() else { return };
-    if dict.is_null() || gps == 0 || glyphs.is_empty() {
+    if dict.is_null() || gps == 0 || (p.glyphs.is_empty() && p.compact.is_none()) {
         return;
     }
     let layer = if top { layout.top } else { layout.main };
-    unsafe { paint(gps as *mut u8, &layer, x, y, &shadow, &glyphs, align, &*dict, false) };
+    let compact = p.compact.as_ref().map(|(lead, cells, text)| (*lead, *cells, text.as_str()));
+    let paint_of = Paint { shadow: &p.shadow, glyphs: &p.glyphs, align: p.align, pad: p.pad, compact };
+    unsafe { paint(gps as *mut u8, &layer, x, y, paint_of, &*dict, false) };
 }
 
 fn main_layer(l: &Layout) -> Layer {
@@ -493,17 +669,18 @@ fn top_layer(l: &Layout) -> Layer {
     l.top
 }
 
-/// 遊戲照原樣畫的字（沒有譯文）也交給實驗的整句貼圖（overlay.rs）：不用遊戲的點陣字，版面不動。
-/// (x0, y) 是畫之前的游標；space > 0 時遊戲最多畫 space 格。
-unsafe fn record_plain(gps: *mut u8, layer: fn(&Layout) -> Layer, x0: i32, y: i32, text: &[u8], space: i32) {
-    if !crate::overlay::ON.load(Ordering::Relaxed) {
-        return;
-    }
+/// 遊戲照原樣畫的字（沒有譯文）：記下按鈕上的字從哪一格開始（見 Columns），也交給整句貼圖（overlay.rs），
+/// 不用遊戲的點陣字，版面不動。(x0, y) 是畫之前的游標；space > 0 時遊戲最多畫 space 格；dfhack 是 DFHack 畫的字。
+unsafe fn record_plain(gps: *mut u8, layer: fn(&Layout) -> Layer, x0: i32, y: i32, text: &[u8], space: i32, dfhack: bool) {
     let Some(layout) = LAYOUT.get() else { return };
     let layer = layer(layout);
     let n = if space > 0 { text.len().min(space as usize) } else { text.len() };
+    unsafe { COLUMNS.lock().note(|x| lower_at(gps, layout, &layer, x, y), x0, n as i32) };
+    if !crate::overlay::ON.load(Ordering::Relaxed) {
+        return;
+    }
     let row = unsafe { row_of(gps, layout, &layer, x0, y) };
-    crate::overlay::record(gps, layer.screen == layout.top.screen, row, x0, y, &text[..n], &[], b'l');
+    crate::overlay::record(gps, layer.screen == layout.top.screen, row, x0, y, &text[..n], &[], b'l', 0, None, dfhack);
 }
 
 /// (x, y) 那一格的列別（一般、半格位移的上列或下列）；格子不在畫面裡時當一般列
@@ -533,7 +710,7 @@ unsafe fn cursor(gps: *const u8) -> (i32, i32) {
 
 /// DFHack 照原樣畫的一段字（Lua 包住的 paintString 沒有譯文時，見 lua/loader.lua）
 pub fn dfhack_plain(gps: usize, x: i32, y: i32, top: bool, text: &[u8]) {
-    unsafe { record_plain(gps as *mut u8, if top { top_layer } else { main_layer }, x, y, text, 0) };
+    unsafe { record_plain(gps as *mut u8, if top { top_layer } else { main_layer }, x, y, text, 0, true) };
 }
 
 /// 段落單字與自動換行的行（見 mtb.rs、lines.rs）：照畫英文、不畫，或在載體的座標上畫幾段中文。回傳 false 表示都不是。
@@ -547,14 +724,14 @@ unsafe fn paragraph_word(gps: *mut u8, s: *const StdString, layer: fn(&Layout) -
         Plan::Plain => {
             let (x0, y) = unsafe { cursor(gps) };
             unsafe { draw(&*s) };
-            unsafe { record_plain(gps, layer, x0, y, (*s).bytes(), 0) };
+            unsafe { record_plain(gps, layer, x0, y, (*s).bytes(), 0, false) };
             return true;
         }
         Plan::Missing(text) => {
             note_miss("wrap", &text);
             let (x0, y) = unsafe { cursor(gps) };
             unsafe { draw(&*s) };
-            unsafe { record_plain(gps, layer, x0, y, (*s).bytes(), 0) };
+            unsafe { record_plain(gps, layer, x0, y, (*s).bytes(), 0, false) };
             return true;
         }
         Plan::Skip => return true,
@@ -575,7 +752,7 @@ unsafe fn paragraph_word(gps: *mut u8, s: *const StdString, layer: fn(&Layout) -
                 }
             }
             draw(&StdString::borrowed(p.entry.shadow()));
-            paint(gps, &layer(layout), x + p.dx, y + p.dy, p.entry.shadow(), &p.entry.glyphs, p.entry.align, dict, true);
+            paint(gps, &layer(layout), x + p.dx, y + p.dy, Paint::of(&p.entry), dict, true);
         }
         for (off, c) in layout.color.iter().zip(color) {
             write(gps, *off, c);
@@ -589,8 +766,59 @@ unsafe fn paragraph_word(gps: *mut u8, s: *const StdString, layer: fn(&Layout) -
 unsafe extern "C" fn hook_render_things() {
     let orig: RenderThingsFn = unsafe { std::mem::transmute(TRAMPOLINES[14].load(Ordering::Acquire)) };
     crate::overlay::frame_begin();
+    ENGLISH.lock().begin();
     unsafe { orig() };
+    ENGLISH.lock().end();
     crate::overlay::frame_end();
+}
+
+// ---- 翻譯前的英文字元 ----
+//
+// DFHack 有些腳本讀畫面上的字找版面位置（overall-mood 找人物頁的「Overview」分頁、stressicons 找頂列的「Pop」）。
+// 翻成中文以後找不到，疊加介面就畫到預設位置。這裡記下每一幀翻譯過的格子原本是哪個英文字元，
+// Lua 包住 dfhack.screen.readTile 回報英文（見 lua/loader.lua 的 install_read_tile）。
+
+/// [這一幀正在寫的, 上一幀寫完的]：(x*dimy+y → 英文字元，0 是沒翻譯；dimy)
+pub struct English([(Vec<u8>, i32); 2]);
+
+pub static ENGLISH: Mutex<English> = Mutex::new(English([(Vec::new(), 0), (Vec::new(), 0)]));
+
+impl English {
+    fn begin(&mut self) {
+        self.0[0].0.fill(0);
+    }
+
+    fn end(&mut self) {
+        self.0.swap(0, 1);
+    }
+
+    /// 原文 key 從 (x0, y) 起寫在這一幀的畫面上（譯文較短時，原文的格數照樣記滿）
+    fn note(&mut self, x0: i32, y: i32, key: &[u8], dimx: i32, dimy: i32) {
+        let (cells, d) = &mut self.0[0];
+        let size = (dimx * dimy).max(0) as usize;
+        if *d != dimy || cells.len() != size {
+            *cells = vec![0; size];
+            *d = dimy;
+        }
+        if !(0..dimy).contains(&y) {
+            return;
+        }
+        for (k, &b) in key.iter().enumerate() {
+            let x = x0 + k as i32;
+            if (0..dimx).contains(&x) {
+                cells[(x * dimy + y) as usize] = b;
+            }
+        }
+    }
+
+    /// 上一幀 (x, y) 原本的英文字元
+    pub fn at(&self, x: i32, y: i32) -> Option<u8> {
+        let (cells, dimy) = &self.0[1];
+        if x < 0 || y < 0 || y >= *dimy {
+            return None;
+        }
+        cells.get((x * dimy + y) as usize).copied().filter(|&b| b != 0)
+    }
 }
 
 unsafe extern "C" fn hook_addst(gps: *mut u8, s: *const StdString, just: i32, space: i32) {
@@ -603,7 +831,7 @@ unsafe extern "C" fn hook_addst(gps: *mut u8, s: *const StdString, just: i32, sp
     if !done {
         let (x0, y) = unsafe { cursor(gps) };
         unsafe { orig(gps, s, just, space) };
-        unsafe { record_plain(gps, main_layer, x0, y, key, space) };
+        unsafe { record_plain(gps, main_layer, x0, y, key, space, false) };
     }
 }
 
@@ -617,7 +845,7 @@ unsafe extern "C" fn hook_addst_flag(gps: *mut u8, s: *const StdString, just: i3
     if !done {
         let (x0, y) = unsafe { cursor(gps) };
         unsafe { orig(gps, s, just, space, sflag) };
-        unsafe { record_plain(gps, main_layer, x0, y, key, space) };
+        unsafe { record_plain(gps, main_layer, x0, y, key, space, false) };
     }
 }
 
@@ -631,7 +859,7 @@ unsafe extern "C" fn hook_top_addst(gps: *mut u8, s: *const StdString, just: i32
     if !done {
         let (x0, y) = unsafe { cursor(gps) };
         unsafe { orig(gps, s, just, space) };
-        unsafe { record_plain(gps, top_layer, x0, y, key, space) };
+        unsafe { record_plain(gps, top_layer, x0, y, key, space, false) };
     }
 }
 
@@ -655,7 +883,7 @@ unsafe extern "C" fn hook_addcoloredst(gps: *mut u8, s: *const u8, colors: *cons
     if !done {
         let (x0, y) = unsafe { cursor(gps) };
         unsafe { orig(gps, s, colors) };
-        unsafe { record_plain(gps, main_layer, x0, y, key, 0) };
+        unsafe { record_plain(gps, main_layer, x0, y, key, 0, false) };
     }
 }
 
@@ -669,7 +897,7 @@ unsafe fn colored_line(gps: *mut u8, s: *const u8, draw: impl Fn(*const u8, *con
             let color = crate::ctb::CTB_LAYOUT.get().map_or(0, |l| l.color);
             let (x0, y) = unsafe { cursor(gps) };
             draw(s, unsafe { s.add(color) });
-            unsafe { record_plain(gps, main_layer, x0, y, CStr::from_ptr(s.cast()).to_bytes(), 0) };
+            unsafe { record_plain(gps, main_layer, x0, y, CStr::from_ptr(s.cast()).to_bytes(), 0, false) };
             return true;
         }
         crate::ctb::Plan::Skip => return true,
@@ -688,7 +916,7 @@ unsafe fn colored_line(gps: *mut u8, s: *const u8, draw: impl Fn(*const u8, *con
             let text: Vec<u8> = shadow.iter().copied().chain([0]).collect();
             let cols: Vec<u8> = std::iter::repeat_n(p.color, shadow.len()).chain([0]).collect();
             draw(text.as_ptr(), cols.as_ptr());
-            paint(gps, &layout.main, x + p.dx, y + p.dy, shadow, &p.entry.glyphs, p.entry.align, dict, true);
+            paint(gps, &layout.main, x + p.dx, y + p.dy, Paint::of(&p.entry), dict, true);
         }
         write(gps, layout.screenx, x);
         write(gps, layout.screeny, y);
@@ -872,6 +1100,8 @@ struct Label {
     gps: usize,
     x0: i32,
     y: i32,
+    /// 遊戲畫這些字的貼圖時往下位移的像素（add_anchored_tile 的 ay）
+    lift: i32,
     /// 這個標籤用的字型表位址
     font: usize,
     text: Vec<u8>,
@@ -907,7 +1137,7 @@ unsafe extern "C" fn hook_add_anchored_tile(gps: *mut u8, texpos: i32, ax: i32, 
     match label.as_mut() {
         Some(l) if l.y == y && l.font == font && l.x0 + l.text.len() as i32 == x => l.text.push(ch),
         _ => {
-            let done = label.replace(Label { gps: gps as usize, x0: x, y, font, text: vec![ch] });
+            let done = label.replace(Label { gps: gps as usize, x0: x, y, lift: ay, font, text: vec![ch] });
             LABEL_PENDING.store(true, Ordering::Release);
             drop(label);
             if let Some(done) = done {
@@ -958,6 +1188,7 @@ unsafe fn finish_label(label: Label) {
             }
         }
     }
+    crate::overlay::record_label(label.gps as *mut u8, label.x0, label.y, &tiles, &entry.text, label.lift);
 }
 
 /// 標籤每一格換成的貼圖：譯文在原文寬度裡置中，中文字放標籤用字圖（小一號，見 atlas::render）的左右半格，
@@ -977,8 +1208,62 @@ fn label_tiles(n: usize, entry: &Entry, dict: &Dict, font: impl Fn(u8) -> i32) -
 
 #[cfg(test)]
 mod tests {
-    use super::{label_tiles, wrap_plan};
+    use super::{label_tiles, placed_align, wrap_plan, Columns};
     use crate::dict::Dict;
+    use std::collections::HashMap;
+
+    #[test]
+    fn alignment_follows_where_the_game_put_the_english() {
+        // 一列 40 格；按鈕：第 2 格左緣、3–14 格中段、第 15 格右緣
+        let button = |x: i32| match x {
+            2 => 7,
+            3..=14 => 8,
+            15 => 9,
+            _ => 0,
+        };
+        assert_eq!(placed_align(button, 4, 10, 40, false, b'l'), b'c', "Export XML：兩旁各剩一格是置中");
+        assert_eq!(placed_align(button, 4, 8, 40, false, b'l'), b'l', "兩旁窄（左 1 右 3）差兩格是靠左（建立世界的「Everywhere」）");
+        let wide = |x: i32| if (76..=114).contains(&x) { 814 } else { 0 };
+        assert_eq!(placed_align(wide, 91, 7, 192, false, b'c'), b'c', "兩旁寬時差兩格也算置中（選擇遊戲模式的 Legends 左 15 右 17）");
+        assert_eq!(placed_align(button, 4, 6, 40, false, b'c'), b'l', "冒險角色的「隨機性格」：遊戲靠左畫在按鈕上，字串檔寫置中也照靠左");
+        assert_eq!(placed_align(button, 4, 9, 40, true, b'l'), b'l', "靠左排的清單裡剛好看起來置中的一項（工作分組的 Plant gatherers）");
+        assert_eq!(placed_align(button, 8, 6, 40, false, b'r'), b'r', "不置中時靠右照字串檔");
+        assert_eq!(placed_align(button, 8, 6, 40, false, b'l'), b'r', "右邊只剩一格、左邊空很多是靠右（存檔清單的「Folder: region1」）");
+        assert_eq!(placed_align(button, 4, 3, 40, true, b'r'), b'l', "字串檔寫靠右的點數，在長短不同的同一欄裡是靠左（冒險裝備的「100 pts」）");
+        // 說明視窗：1–6 格是問號框（各格貼圖不同），7–40 格是視窗本體；標題在整排（1–40）的正中間
+        let window = |x: i32| match x {
+            1..=6 => 50 + x,
+            7..=40 => 8,
+            _ => 0,
+        };
+        assert_eq!(placed_align(window, 16, 10, 80, false, b'l'), b'c', "說明視窗的標題（工作指令、冒險模式）");
+        // 沒有按鈕：原文在畫面正中間算置中（差一格也算），整列的字不算
+        assert_eq!(placed_align(|_| 0, 15, 10, 40, false, b'l'), b'c');
+        assert_eq!(placed_align(|_| 0, 14, 10, 40, false, b'l'), b'c');
+        assert_eq!(placed_align(|_| 0, 2, 10, 40, false, b'l'), b'l');
+        assert_eq!(placed_align(|_| 0, 0, 40, 40, false, b'l'), b'l');
+        assert_eq!(placed_align(|_| 0, 2, 10, 40, false, b'c'), b'c', "其他照字串檔");
+    }
+
+    #[test]
+    fn a_start_shared_by_texts_of_different_length_is_a_left_aligned_list() {
+        let mut c = Columns(HashMap::new());
+        // 工作分組：按鈕中段 8–33 格，字都從第 13 格開始；選取中的那一項按鈕貼圖不同，左緣一樣在第 8 格
+        let item = |x: i32| if (8..=33).contains(&x) { 78 } else { 0 };
+        let selected = |x: i32| if (8..=33).contains(&x) { 92 } else { 0 };
+        assert!(!c.note(item, 13, 6), "清單第一項還看不出來");
+        assert!(c.note(selected, 13, 15), "同一欄（按鈕左緣、起點都一樣）、長度差兩格以上；選取中的按鈕貼圖不同也算");
+        let keys = |x: i32| if (38..=60).contains(&x) { 90 } else { 0 };
+        assert!(!c.note(keys, 40, 14));
+        assert!(c.note(keys, 40, 12), "按鍵設定的「Delayed repeat」與「Don't repeat」差兩格");
+        let menu = |x: i32| if (76..=114).contains(&x) { 814 } else { 0 };
+        assert!(!c.note(menu, 91, 8));
+        assert!(!c.note(menu, 91, 7), "只差一格：置中的按鈕整數除剛好同一格（Fortress、Legends）");
+        assert!(!c.note(|_| 0, 13, 30), "不在按鈕上不記");
+        assert!(c.note(item, 13, 6), "記住看過的長度：之後再畫第一項就知道（換分頁時同一顆按鈕換字也是）");
+        let narrow = |x: i32| if (8..=20).contains(&x) { 78 } else { 0 };
+        assert!(!c.note(narrow, 13, 15), "左緣、起點相同但按鈕寬度不同的是別種框");
+    }
 
     #[test]
     fn label_is_centered_in_the_english_width() {

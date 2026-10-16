@@ -163,7 +163,7 @@ fn compute(translation: &str, width: i32, n: usize, base: u8, dict: &Dict) -> Op
     let mut pieces: Vec<Vec<Piece>> = (0..n).map(|_| Vec::new()).collect();
     for (px, py, t, c) in segments {
         let carrier = (py as usize).min(n - 1);
-        pieces[carrier].push(Piece { dx: px, dy: py - carrier as i32, color: color_byte(c), entry: dict.text_entry(&t)? });
+        pieces[carrier].push(Piece { dx: px, dy: py - carrier as i32, color: color_byte(c), entry: dict.para_entry(&t)? });
     }
     Some(pieces.into_iter().map(|p| if p.is_empty() { Plan::Skip } else { Plan::Draw(p.into()) }).collect())
 }

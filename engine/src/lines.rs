@@ -83,7 +83,7 @@ fn compute(text: &[u8], width: i32, n: usize, dict: &Dict) -> Option<Arc<[Plan]>
     let mut pieces: Vec<Vec<Piece>> = (0..n).map(|_| Vec::new()).collect();
     for (px, py, t, _) in segments {
         let carrier = (py as usize).min(n - 1);
-        pieces[carrier].push(Piece { dx: px, dy: py - carrier as i32, color: None, entry: dict.text_entry(&t)? });
+        pieces[carrier].push(Piece { dx: px, dy: py - carrier as i32, color: None, entry: dict.para_entry(&t)? });
     }
     Some(pieces.into_iter().map(|p| if p.is_empty() { Plan::Skip } else { Plan::Draw(p.into()) }).collect())
 }

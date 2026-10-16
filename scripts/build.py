@@ -145,9 +145,9 @@ def build_item(item: dict, config: dict, texts: dict[str, list[dict]], names: li
     data.mkdir(parents=True)
 
     # 標題畫面吉祥物的名牌（語言標籤、作者名）由引擎在遊戲裡用同一套字型畫，字型子集也要有這些字（含英數）；
-    # 實驗的整句貼圖（overlay-prototype）把遊戲畫的英數、空白、CP437 的拉丁字母（矮人名字的 ë、ü…）與 ♂♀
+    # 整句貼圖把遊戲畫的英數、空白、CP437 的拉丁字母（矮人名字的 ë、ü…）、♂♀ 與譯名的間隔號 ·
     # 也用這套字型畫，和引擎 overlay.rs 的 is_text 同一組
-    ascii = "".join(map(chr, range(0x20, 0x7F))) + "ÇüéâäàåçêëèïîìÄÅÉæÆôöòûùÿÖÜáíóúñÑ♂♀"
+    ascii = "".join(map(chr, range(0x20, 0x7F))) + "ÇüéâäàåçêëèïîìÄÅÉæÆôöòûùÿÖÜáíóúñÑ♂♀·"
     tag_chars = [c for c in dict.fromkeys(item["mascot_label"] + config["author"] + ascii) if c not in chars]
     missing = subset_fonts(chars + tag_chars, [item["font"], *item["fallback_fonts"]], data / "fonts")
     if missing:

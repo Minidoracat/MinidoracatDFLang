@@ -6,6 +6,7 @@
 //! 字的原點取整數像素，hinting 才不會被小數位移抵銷；覆蓋率先換算成 ALPHA_EXPONENT 次方再存成 alpha。
 //! 字型依序找：第一個含有該字的字型負責畫（主字型之後的字型用來補字）。
 
+use std::collections::HashMap;
 use std::path::Path;
 
 use skrifa::instance::{LocationRef, Size};
@@ -147,10 +148,10 @@ const LABEL_RAISE_PER_CELL: f32 = 2.0 / 16.0;
 
 /// 字圖集：前 2n 張是每字左右兩格；之後每字四張（2n + 4i 起：上列左、上列右、下列左、下列右）是同一個字往下位移半格、
 /// 跨在兩列中間的樣子，遊戲畫半格位移的文字時，上列格子標 TOP_OF_TEXT、下列標 BOTTOM_OF_TEXT（見 hooks.rs paint）；
-/// 最後每字兩張（6n + 2i 起）是錨定貼圖標籤用的小一號字。
+/// 再來每字兩張（6n + 2i 起）是錨定貼圖標籤用的小一號字；最後一張（8n）全透明，是整句貼圖排段落時佔位格的記號（見 Dict::marker）。
 pub fn render(fonts: &[Font], chars: &[char], cell_w: usize, cell_h: usize, out: &Path) -> Result<Report, String> {
     let n = chars.len();
-    let tiles = n * 8;
+    let tiles = n * 8 + 1;
     let width = TILES_PER_ROW.min(tiles.max(2)) * cell_w;
     let height = tiles.div_ceil(TILES_PER_ROW).max(1) * cell_h;
     let mut rgba = vec![0u8; width * height * 4];
@@ -196,4 +197,19 @@ pub fn render(fonts: &[Font], chars: &[char], cell_w: usize, cell_h: usize, out:
 
     crate::image::write_png(out, width, height, &rgba)?;
     Ok(Report { tiles, missing })
+}
+
+/// 排段落用的字寬（metrics.rs 的單位）：字型的實際字寬除以格寬，和整句貼圖畫字時一樣（字身 em_per_cell 格高，見 overlay.rs）；
+/// 空白至少三分之一字寬（overlay.rs 的 advance）。無條件進位：一行累加起來不比畫出來的短，行尾的字才不會超出記號格被切掉。
+pub fn advances(fonts: &[Font], chars: impl Iterator<Item = char>, cell_w: usize, cell_h: usize, em_per_cell: f32) -> Result<HashMap<char, u16>, String> {
+    let em = (cell_h as f32 * em_per_cell).round();
+    let glyphs = Glyphs::with_px(fonts, em)?;
+    let unit = cell_w as f32 / crate::metrics::UNIT as f32;
+    Ok(chars
+        .filter_map(|c| {
+            let adv = glyphs.advance(c)?;
+            let adv = if c == ' ' { adv.max(em / 3.0) } else { adv };
+            Some((c, (adv / unit).ceil().max(1.0) as u16))
+        })
+        .collect())
 }

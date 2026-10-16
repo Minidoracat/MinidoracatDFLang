@@ -12,6 +12,8 @@ local USAGE = [[
                                     偵測不到其他翻譯 MOD 時本 MOD 照常啟用
   dflang misses on|off              把畫面上沒翻到的字串去重記錄到 dfhack-config/dflang-misses.tsv；
                                     設定會記住，之後每次啟動都自動記錄，直到 off
+  dflang overlay on|off             整句貼圖（預設開）：字改用本包字型照字寬整句畫；off 改回一字兩格的字圖，
+                                    重開遊戲生效
 ]]
 local CONFIG_FILE = 'dfhack-config/dflang.json'
 local MISSES_FILE = 'dfhack-config/dflang-misses.tsv'
@@ -160,13 +162,12 @@ elseif cmd == 'misses' and (args[2] == 'on' or args[2] == 'off') then
     config:write()
     print(on and ('記錄到 ' .. MISSES_FILE .. '，之後每次啟動都會自動記錄') or '已停止記錄')
 elseif cmd == 'overlay' and (args[2] == 'on' or args[2] == 'off') then
-    -- 實驗（overlay-prototype 分支）：主層譯文改成整句一張貼圖，字距照字型
+    -- 整句貼圖會改段落的換行與替身字串，遊戲啟動時決定（見 engine/src/metrics.rs），中途切換要重開遊戲。預設開，只記關
     local on = args[2] == 'on'
-    check(engine.set_overlay(on and 1 or 0))
     local config = json.open(CONFIG_FILE)
-    config.data.overlay = on or nil
+    if on then config.data.overlay = nil else config.data.overlay = false end
     config:write()
-    print(on and '整句貼圖：開' or '整句貼圖：關')
+    print(on and '整句貼圖：開（重開遊戲後生效）' or '整句貼圖：關，改回一字兩格的字圖（重開遊戲後生效）')
 else
     print(USAGE)
 end

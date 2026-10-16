@@ -19,6 +19,7 @@ use parking_lot::Mutex;
 
 use crate::cp437;
 use crate::dict::{self, Dict, Entry, LINK_CLOSE, LINK_OPEN};
+use crate::metrics::{self, UNIT};
 
 /// markup_text_boxst／markup_text_wordst 的欄位位移，由 Lua 依 DFHack 的結構定義傳入。
 #[derive(Clone, Copy)]
@@ -234,7 +235,8 @@ unsafe fn readable(key: &[u8], words: &[usize], links: &[Link], l: &MtbLayout) -
     out
 }
 
-/// 換行的最小單位：中文字（兩格）、連在一起的英數（不拆開）、空白、換行標記、換色標記、連結字。
+/// 換行的最小單位：中文字、連在一起的英數（不拆開）、空白、換行標記、換色標記、連結字。寬度是 metrics 的單位
+/// （一般中文兩格、英數一格；整句貼圖開著時是字型的實際字寬）。
 #[derive(Debug, PartialEq)]
 enum Atom {
     Text(String, usize),
@@ -243,7 +245,7 @@ enum Atom {
     Blank,
     Indent,
     Color([u8; 3]),
-    /// 第幾個連結的第幾個字、格數
+    /// 第幾個連結的第幾個字、寬度
     Link(usize, usize, usize),
 }
 
@@ -264,13 +266,13 @@ fn link_marker(s: &str) -> Option<(usize, usize)> {
     Some((body[..end].parse().ok()?, open.len_utf8() + end + close.len_utf8()))
 }
 
-/// links[k] 是第 k 個連結各字的格數：連結記號展開成這些字，字間一個空白（遊戲照英文畫，可以在字間換行）。
+/// links[k] 是第 k 個連結各字的寬度（單位）：連結記號展開成這些字，字間一個空白（遊戲照英文畫，可以在字間換行）。
 fn atoms(text: &str, links: &[Vec<usize>]) -> Vec<Atom> {
     let mut out = Vec::new();
     let mut run = String::new();
     let flush = |run: &mut String, out: &mut Vec<Atom>| {
         if !run.is_empty() {
-            let n = run.chars().count();
+            let n = metrics::width(run);
             out.push(Atom::Text(std::mem::take(run), n));
         }
     };
@@ -311,7 +313,7 @@ fn atoms(text: &str, links: &[Vec<usize>]) -> Vec<Atom> {
             Some(_) if !NO_START.contains(ch) && !NO_END.contains(ch) => run.push(ch),
             _ => {
                 flush(&mut run, &mut out);
-                let w = if cp437::byte_of(ch).is_some() { 1 } else { 2 };
+                let w = metrics::units(ch);
                 out.push(Atom::Text(ch.to_string(), w));
             }
         }
@@ -333,15 +335,20 @@ pub fn wrap(text: &str, width: usize, base: [u8; 3], rgb: impl Fn([u8; 3]) -> [u
     wrap_links(text, width, base, rgb, &[]).0
 }
 
-/// 同 wrap，另外排譯文裡的連結記號：links[k] 是第 k 個連結各字的格數。回傳的段不含連結字，連結字的位置另外回傳。
+/// 同 wrap，另外排譯文裡的連結記號：links[k] 是第 k 個連結各字的寬度（metrics 的單位）。回傳的段不含連結字，連結字的位置另外回傳。
+/// 寬度都用 metrics 的單位量；回傳的位置是格數。整句貼圖開著時字寬不是整格，但每一段字（換色、連結字前後）
+/// 還是從整格畫起，排版時起點先補到下一格，段才不會超出框寬。
 fn wrap_links(text: &str, width: usize, base: [u8; 3], rgb: impl Fn([u8; 3]) -> [u8; 3], links: &[Vec<usize>]) -> (Vec<Segment>, Vec<Placed>) {
-    /// 一行裡的各段：(文字, 格數, 顏色, 連結字)；連結字的文字是空的
+    /// 一行裡的各段：(文字, 寬度, 顏色, 連結字)；連結字的文字是空的
     struct Line {
         px: usize,
         py: i32,
         parts: Vec<(String, usize, [u8; 3], Option<(usize, usize)>)>,
     }
-    let width = width.max(4);
+    let compact = metrics::compact();
+    let to_cell = |x: usize| if compact { x.next_multiple_of(UNIT) } else { x };
+    let width = width.max(4) * UNIT;
+    let space_w = metrics::units(' ');
     let mut lines: Vec<Line> = Vec::new();
     let (mut x, mut y, mut remaining) = (0usize, 0i32, width);
     let mut space = false;
@@ -365,7 +372,7 @@ fn wrap_links(text: &str, width: usize, base: [u8; 3], rgb: impl Fn([u8; 3]) -> 
             }
             Atom::Indent => {
                 remaining = width;
-                x = 4;
+                x = 4 * UNIT;
                 y += 1;
                 new_line(&mut lines, x, y);
                 continue;
@@ -377,9 +384,13 @@ fn wrap_links(text: &str, width: usize, base: [u8; 3], rgb: impl Fn([u8; 3]) -> 
             Atom::Text(t, w) => (t, w, None),
             Atom::Link(k, j, w) => (String::new(), w, Some((k, j))),
         };
-        let gap = usize::from(space);
+        let gap = if space { space_w } else { 0 };
         space = false;
-        if remaining < w + gap {
+        // 在同一行另起一段（換色、連結字前後）：起點補到下一格
+        let starts = |p: &(String, usize, [u8; 3], Option<(usize, usize)>)| p.2 != color || p.3.is_some() || link.is_some();
+        let new_seg = lines.last().is_some_and(|l| l.py == y && l.parts.last().is_some_and(starts));
+        let pad = if new_seg { to_cell(x + gap) - (x + gap) } else { 0 };
+        if remaining < w + gap + pad {
             // 換行；標點不放行首：把上一行最後一個字一起帶下來
             let carry = if link.is_none() && NO_START.contains(t.as_str()) {
                 lines.last_mut().filter(|l| l.parts.len() > 1).and_then(|l| l.parts.pop())
@@ -394,16 +405,24 @@ fn wrap_links(text: &str, width: usize, base: [u8; 3], rgb: impl Fn([u8; 3]) -> 
             remaining = width;
             new_line(&mut lines, 0, y);
             if let Some(c) = carry {
+                let split = starts(&c);
                 x += c.1;
                 remaining -= c.1.min(remaining);
                 lines.last_mut().unwrap().parts.push(c);
+                if split {
+                    let pad = to_cell(x) - x;
+                    lines.last_mut().unwrap().parts.last_mut().unwrap().1 += pad;
+                    x += pad;
+                    remaining -= pad.min(remaining);
+                }
             }
             if w > remaining && link.is_none() {
                 // 比整行還長的英數：硬切（連結字由遊戲照英文整個畫，不切）
                 let mut chunk = String::new();
                 for ch in t.chars() {
-                    if remaining == 0 {
-                        let n = chunk.chars().count();
+                    let u = metrics::units(ch);
+                    if u > remaining && !chunk.is_empty() {
+                        let n = metrics::width(&chunk);
                         lines.last_mut().unwrap().parts.push((std::mem::take(&mut chunk), n, color, None));
                         y += 1;
                         x = 0;
@@ -411,22 +430,26 @@ fn wrap_links(text: &str, width: usize, base: [u8; 3], rgb: impl Fn([u8; 3]) -> 
                         new_line(&mut lines, 0, y);
                     }
                     chunk.push(ch);
-                    remaining -= 1;
+                    remaining = remaining.saturating_sub(u);
                 }
-                let n = chunk.chars().count();
+                let n = metrics::width(&chunk);
                 x += n;
                 lines.last_mut().unwrap().parts.push((chunk, n, color, None));
                 continue;
             }
         } else if lines.last().is_none_or(|l| l.py != y) {
             new_line(&mut lines, x, y);
-        } else if gap == 1 {
-            // 空白跟前一個字同色，才不會多拆出一段；空白也佔一格
+        } else if gap > 0 {
+            // 空白跟前一個字同色，才不會多拆出一段；空白也佔寬度（另起一段補的寬度算在空白裡）
             let line = lines.last_mut().unwrap();
             let prev = line.parts.last().map_or(color, |p| p.2);
-            line.parts.push((" ".to_owned(), 1, prev, None));
-            x += 1;
-            remaining -= 1;
+            line.parts.push((" ".to_owned(), gap + pad, prev, None));
+            x += gap + pad;
+            remaining -= gap + pad;
+        } else if pad > 0 {
+            lines.last_mut().unwrap().parts.last_mut().unwrap().1 += pad;
+            x += pad;
+            remaining -= pad;
         }
         x += w;
         remaining = remaining.saturating_sub(w);
@@ -435,21 +458,22 @@ fn wrap_links(text: &str, width: usize, base: [u8; 3], rgb: impl Fn([u8; 3]) -> 
     let mut out: Vec<Segment> = Vec::new();
     let mut placed: Vec<Placed> = Vec::new();
     for line in lines {
-        let mut px = line.px as i32;
+        let mut px = line.px;
         // 這一段能不能接在 out 最後一段後面：同一行、中間沒有連結字
         let mut join = false;
         for (text, w, c, link) in line.parts {
+            let cell = metrics::cells(px) as i32;
             if let Some((k, j)) = link {
-                placed.push((k, j, px, line.py));
+                placed.push((k, j, cell, line.py));
                 join = false;
             } else if join && out.last().is_some_and(|seg| seg.3 == c) {
                 out.last_mut().unwrap().2.push_str(&text);
             } else if join || text != " " {
                 // 連結字後面的空白不必畫
-                out.push((px, line.py, text, c));
+                out.push((cell, line.py, text, c));
                 join = true;
             }
-            px += w as i32;
+            px += w;
         }
     }
     (out, placed)
@@ -538,7 +562,7 @@ unsafe fn plan_words(words: &[usize], width: i32, translation: &str, dict: &Dict
         let segments = wrap(translation, width.max(1) as usize, base, |c| pal.map_or(base, |p| marker_rgb(p, c)));
         let mut pieces: Vec<Vec<Piece>> = (0..words.len()).map(|_| Vec::new()).collect();
         for (px, py, text, color) in segments {
-            let entry = dict.text_entry(&text)?;
+            let entry = dict.para_entry(&text)?;
             // 那列英文是空行時往下找，再沒有就用最後一個單字
             let &(i, wx, wy) = drawable.iter().find(|d| d.2 == py).or_else(|| drawable.iter().find(|d| d.2 > py))
                 .or(drawable.last())?;
@@ -572,8 +596,8 @@ unsafe fn plan_links(words: &[usize], width: i32, translation: &str, dict: &Dict
             .map(|k| link_name(dict, &(0..k.words.len()).map(|j| k.name(j, words, l)).collect::<Vec<_>>().join(&b' ')))
             .collect();
         let widths: Vec<Vec<usize>> = links.iter().zip(&named).map(|(k, zh)| match zh {
-            Some(zh) => vec![zh.chars().map(|c| if cp437::byte_of(c).is_some() { 1 } else { 2 }).sum()],
-            None => (0..k.words.len()).map(|j| k.name(j, words, l).len()).collect(),
+            Some(zh) => vec![metrics::width(zh)],
+            None => (0..k.words.len()).map(|j| k.name(j, words, l).len() * UNIT).collect(),
         }).collect();
         let (segments, placed) = wrap_links(translation, width.max(1) as usize, base, |c| pal.map_or(base, |p| marker_rgb(p, c)), &widths);
         let mut pos: Vec<(i32, i32)> = words.iter().map(|&w| (read(w, l.word_px), read(w, l.word_py))).collect();
@@ -581,7 +605,7 @@ unsafe fn plan_links(words: &[usize], width: i32, translation: &str, dict: &Dict
         for (k, j, px, py) in placed {
             let link = &links[k];
             if let Some(zh) = &named[k] {
-                let entry = dict.text_entry(zh)?;
+                let entry = dict.para_entry(zh)?;
                 for &i in &link.words {
                     pos[i] = (px, py);
                     link_plans[i] = Some(Plan::Skip);
@@ -603,7 +627,7 @@ unsafe fn plan_links(words: &[usize], width: i32, translation: &str, dict: &Dict
         // 每一列的中文：(列, [(px, 字, 顏色)])；換行後的段依列排好
         let mut rows: Vec<(i32, Vec<(i32, Entry, [u8; 3])>)> = Vec::new();
         for (px, py, text, color) in segments {
-            let entry = dict.text_entry(&text)?;
+            let entry = dict.para_entry(&text)?;
             match rows.last_mut() {
                 Some((row, pieces)) if *row == py => pieces.push((px, entry, color)),
                 _ => rows.push((py, vec![(px, entry, color)])),
@@ -716,10 +740,26 @@ mod tests {
     #[test]
     fn link_words_are_laid_out_inside_the_chinese_text() {
         // 「由」＋連結兩字（Urist 5 格、McDwarf 7 格，字間一格）＋「製作的雕像」，寬 20 格
-        let (segs, placed) = wrap_links("由☺0☻製作的雕像", 20, GRAY, |c| c, &[vec![5, 7]]);
+        let (segs, placed) = wrap_links("由☺0☻製作的雕像", 20, GRAY, |c| c, &[vec![5 * UNIT, 7 * UNIT]]);
         let segs: Vec<String> = segs.into_iter().map(|(px, py, t, _)| format!("{px},{py}:{t}")).collect();
         assert_eq!(segs, ["0,0:由", "15,0:製作", "0,1:的雕像"], "連結字後面另起一段，不和前面的中文接在一起");
         assert_eq!(placed, [(0, 0, 2, 0), (0, 1, 8, 0)]);
+    }
+
+    #[test]
+    fn compact_widths_fill_lines_and_keep_color_segments_inside_the_box() {
+        // 整句貼圖開著時中文一字 1.375 格、空白約 0.3 格：寬 10 格一行放得下 7 個字（一字兩格只能放 5 個）
+        const RED: [u8; 3] = [4, 0, 1];
+        let (cjk, space) = ((UNIT * 11 / 8) as u16, (UNIT * 5 / 16) as u16);
+        crate::metrics::test_compact(|| "他很有幽默感。不太在意".chars().map(|c| (c, cjk)).chain([(' ', space)]).collect());
+        let first: String = wrap("他很有幽默感。不太在意", 10, GRAY, |c| c).into_iter().filter(|s| s.1 == 0).map(|s| s.2).collect();
+        assert_eq!(first, "他很有幽默感。");
+        // 換色的段從整格開始畫：「有幽默」接在「他很」（2.75 格）後面從第 3 格畫起；「感」從第 8 格起放得下，
+        // 但「。」不放行首，把「感」一起帶到下一列
+        assert_eq!(
+            wrap("他很[C:4:0:1]有幽默[C:7:0:0]感。", 10, GRAY, |c| c),
+            [(0, 0, "他很".to_owned(), GRAY), (3, 0, "有幽默".to_owned(), RED), (0, 1, "感。".to_owned(), GRAY)]
+        );
     }
 
     /// 假的段落：單字 56 bytes（MSVC std::string 32 bytes＋顏色、連結、座標、旗標），段落只用單字向量與寬度。
