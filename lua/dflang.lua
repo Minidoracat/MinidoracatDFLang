@@ -14,6 +14,8 @@ local USAGE = [[
                                     設定會記住，之後每次啟動都自動記錄，直到 off
   dflang overlay on|off             整句貼圖（預設開）：字改用本包字型照字寬整句畫；off 改回一字兩格的字圖，
                                     重開遊戲生效
+  dflang overlay size [13～16]      整句貼圖的中文字大小：格高的十六分之幾（預設 13），重開遊戲生效；
+                                    框的最上、最下一列仍照 13 畫。不加數字顯示目前設定
 ]]
 local CONFIG_FILE = 'dfhack-config/dflang.json'
 local MISSES_FILE = 'dfhack-config/dflang-misses.tsv'
@@ -168,6 +170,18 @@ elseif cmd == 'overlay' and (args[2] == 'on' or args[2] == 'off') then
     if on then config.data.overlay = nil else config.data.overlay = false end
     config:write()
     print(on and '整句貼圖：開（重開遊戲後生效）' or '整句貼圖：關，改回一字兩格的字圖（重開遊戲後生效）')
+elseif cmd == 'overlay' and args[2] == 'size' then
+    -- 字身也決定段落的換行（見 engine/src/metrics.rs），遊戲啟動時畫字圖集前交給引擎（lua/loader.lua 的 load_glyphs）
+    local config = json.open(CONFIG_FILE)
+    if not args[3] then
+        print(('整句貼圖字身：%d/16 格高'):format(config.data.overlay_size or 13))
+        return
+    end
+    local n = math.tointeger(tonumber(args[3]))
+    if not n or n < 13 or n > 16 then qerror(USAGE) end
+    config.data.overlay_size = n ~= 13 and n or nil
+    config:write()
+    print(('整句貼圖字身：%d/16 格高（重開遊戲後生效）'):format(n))
 else
     print(USAGE)
 end

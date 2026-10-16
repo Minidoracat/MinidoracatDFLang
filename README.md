@@ -49,7 +49,7 @@
 
 裝了 dfzh 時本 MOD 不啟動，標題畫面用英文說明怎麼移除。`dflang status` 查看狀態。
 
-畫面上的字預設由本 MOD 照字型實際字寬整行畫（整句貼圖）。想改回一字兩格的字圖（例如和別的畫面 MOD 衝突時），在 DFHack 主控台輸入 `dflang overlay off`，重開遊戲生效；`dflang overlay on` 改回來。
+畫面上的字預設由本 MOD 照字型實際字寬整行畫（整句貼圖）。想改回一字兩格的字圖（例如和別的畫面 MOD 衝突時），在 DFHack 主控台輸入 `dflang overlay off`，重開遊戲生效；`dflang overlay on` 改回來。中文字的大小跟著遊戲的介面縮放；想只放大中文，輸入 `dflang overlay size 14`（13～16，格高的十六分之幾，預設 13），重開遊戲生效，數字越大相鄰兩列的字越靠近。
 
 標題畫面左下角會出現本 MOD 的貓娘吉祥物和「繁體中文／简体中文」名牌。要移動或關掉，在 DFHack 主控台輸入 `gui/overlay`，找 `dflang_zh_hant.mascot`（簡中包是 `dflang_zh_hans.mascot`）。
 

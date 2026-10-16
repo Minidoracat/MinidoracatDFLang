@@ -300,7 +300,8 @@ unsafe extern "C" fn load_names(l: lua::State) -> c_int {
     }
 }
 
-/// render_atlas(輸出 PNG, 格寬, 格高, 字串, {字型路徑...}) → 貼圖數, 沒有字型能畫的字
+/// render_atlas(輸出 PNG, 格寬, 格高, 字串, {字型路徑...}, 整句貼圖字身?) → 貼圖數, 沒有字型能畫的字
+/// 字身是十六分之幾格高（13～16，dflang overlay size），省略或超出範圍照預設（見 overlay::set_em）
 unsafe extern "C" fn render_atlas(l: lua::State) -> c_int {
     unsafe {
         let (Some(out), Some(cell_w), Some(cell_h), Some(chars)) =
@@ -315,12 +316,15 @@ unsafe extern "C" fn render_atlas(l: lua::State) -> c_int {
         let Some(paths) = paths else { return fail(l, "render_atlas: font paths must be strings") };
         let paths: Vec<&str> = paths.iter().map(String::as_str).collect();
         let _ = overlay::FONT_PATHS.set(paths.iter().map(|p| p.to_string()).collect());
+        if let Some(em) = lua::arg_int(l, 6).and_then(|v| u8::try_from(v).ok()) {
+            overlay::set_em(em);
+        }
         let result = atlas::load_fonts(&paths).and_then(|fonts| {
             let chars: Vec<char> = chars.chars().collect();
             let report = atlas::render(&fonts, &chars, cell_w as usize, cell_h as usize, std::path::Path::new(out))?;
             // 段落照字型實際字寬換行用（整句貼圖開著時，見 metrics.rs）：字圖集的字、英數與 CP437 的拉丁字母
             let latin = (0x20u8..=0xff).filter(|&b| overlay::is_text(b)).map(|b| cp437::TABLE[b as usize]);
-            metrics::set_advances(atlas::advances(&fonts, chars.iter().copied().chain(latin), cell_w as usize, cell_h as usize, overlay::EM_PER_CELL)?);
+            metrics::set_advances(atlas::advances(&fonts, chars.iter().copied().chain(latin), cell_w as usize, cell_h as usize, overlay::em_per_cell())?);
             Ok(report)
         });
         match result {

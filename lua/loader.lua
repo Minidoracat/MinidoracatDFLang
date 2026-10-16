@@ -134,7 +134,8 @@ local function load_glyphs(engine, dir)
     local fonts = font_files(dir)
     local w, h = cell_size()
     local png = ATLAS_FILE:format(LANG)
-    local tiles, missing = engine.render_atlas(png, w, h, chars, fonts)
+    -- 整句貼圖的字身（dflang overlay size，十六分之幾格高）：段落量字寬也照這個大小，所以在畫字圖集時一起交給引擎
+    local tiles, missing = engine.render_atlas(png, w, h, chars, fonts, json.open(CONFIG_FILE).data.overlay_size)
     if not tiles then return nil, missing end
     if missing ~= '' then fail('沒有字型能畫：%s', missing) end
     -- 字圖集最後一列可能沒排滿；每字取八張：左右兩格、半格位移的上下列各左右兩格（分頁標籤這類文字）、錨定貼圖標籤用的小一號字，

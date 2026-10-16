@@ -18,7 +18,7 @@
 //! - 其他沒有譯文的字：單一空白隔開的字詞接成一組，從原本的格子畫起（數字對齊原本的結尾，數值框裡靠左的照起始格），
 //!   彩色文字每個字留在原格。
 //! - 方框、箭頭、品質記號這類圖形字元照遊戲原樣畫（見 is_text），兩旁的字從自己原本的格子畫起。
-//! - 只有一列高的按鈕（排序標題）上下緣線畫在字的同一格裡，字改小一號（見 single_row_button）。
+//! - 只有一列高的按鈕（排序標題）上下緣線畫在字的同一格裡，字改小一號；框的邊緣列照預設大小（見 size_for）。
 
 use std::cell::RefCell;
 use std::collections::HashMap;
@@ -38,14 +38,48 @@ pub static ON: AtomicBool = AtomicBool::new(false);
 pub static FONT_PATHS: OnceLock<Vec<String>> = OnceLock::new();
 static GPS: AtomicUsize = AtomicUsize::new(0);
 
-/// 字身相對格高、往上提的比例。遊戲的點陣字（16 像素高的格子）字頂在第 2 列、基線在第 12 列，按鈕與方框的上下緣線畫在格子最上、
-/// 最下兩三列；中文字用 13 像素、上提一像素，字身落在第 1～13 列，和點陣字一樣不壓到緣線（14 像素會壓到）。
+/// 字身相對格高（十六分之幾）、往上提的比例。遊戲的點陣字（16 像素高的格子）字頂在第 2 列、基線在第 12 列，按鈕與方框的上下緣線畫在
+/// 格子最上、最下兩三列。預設 13/16、上提一像素：16 像素的格子裡中文筆畫（hinting 後，覆蓋率 > 1/4）落在第 2～14 列，
+/// 相鄰兩列的字之間空 3 列；14 是第 1～14 列（空 2 列）、15 是 1～15（空 1 列）、16 是 0～15（兩列相黏）。
+/// 玩家可用 dflang overlay size 13～16 改（set_em，啟動時畫字圖集前設定一次）；框的邊緣列照預設大小畫（見 size_for）。
 /// 段落量字寬也用這個大小（lib.rs render_atlas → atlas::advances）
-pub const EM_PER_CELL: f32 = 13.0 / 16.0;
+pub const DEFAULT_EM: u8 = 13;
+static EM: OnceLock<u8> = OnceLock::new();
 const RAISE_PER_CELL: f32 = 1.0 / 16.0;
-/// 只有一列高的按鈕（排序標題這類，見 single_row_button）：上下緣線畫在字的同一格裡，字改小一號（和錨定貼圖標籤一樣）放在兩條線中間
+/// 只有一列高的按鈕（排序標題這類，見 size_for）：上下緣線畫在字的同一格裡，字改小一號（和錨定貼圖標籤一樣）放在兩條線中間
 const SMALL_EM_PER_CELL: f32 = 0.75;
 const SMALL_RAISE_PER_CELL: f32 = 1.0 / 16.0;
+/// 字的三種大小（State::glyphs 的索引）：玩家設定的大小、小一號、預設大小（框的邊緣列，見 size_for）
+const NORMAL: usize = 0;
+const SMALL: usize = 1;
+const SNUG: usize = 2;
+
+/// 設定字身（十六分之幾格高，13～16）：啟動時畫字圖集前呼叫一次；超出範圍或已經設過的不算
+pub fn set_em(sixteenths: u8) -> bool {
+    (DEFAULT_EM..=16).contains(&sixteenths) && EM.set(sixteenths).is_ok()
+}
+
+pub fn em_per_cell() -> f32 {
+    f32::from(*EM.get().unwrap_or(&DEFAULT_EM)) / 16.0
+}
+
+fn per_cell(size: usize) -> f32 {
+    [em_per_cell(), SMALL_EM_PER_CELL, f32::from(DEFAULT_EM) / 16.0][size]
+}
+
+/// 一行用哪種大小。rows 是字底下的框在上一列、下一列還有沒有同一組的貼圖（State::box_rows；字底下沒有框是 None），
+/// grow 是玩家把字設得比預設大：
+/// - 只有一列高的按鈕（上下都不是同一組：排序標題這類）：上下緣線畫在字的同一格裡，小一號
+/// - 框的最上、最下一列（冒險角色名字框的兩列）、錨定貼圖標籤：緣線畫在字的同一格裡、標籤從固定的上緣畫，照實測不壓線的預設大小
+/// - 其他（框的中間列、沒有框、半格位移的分頁標籤）：玩家設定的大小
+fn size_for(row: Row, rows: Option<(bool, bool)>, grow: bool) -> usize {
+    match (row, rows) {
+        (Row::Whole, Some((false, false))) => SMALL,
+        (Row::Label, _) | (Row::Whole, Some((true, false) | (false, true))) if grow => SNUG,
+        _ => NORMAL,
+    }
+}
+
 /// 自己建的一行貼圖上限，滿了丟掉最久沒用的
 const CACHE_LIMIT: usize = 2048;
 
@@ -373,10 +407,10 @@ struct State {
     top_pass: bool,
     frame: u64,
     cache: HashMap<u64, Strip>,
-    /// [一般, 小一號]：字型（依目前格高）與字的點陣快取；small 選用哪一組（見 single_row_button）
-    glyphs: [Option<(i32, Glyphs<'static>)>; 2],
-    boxes: [HashMap<char, Option<GlyphBox>>; 2],
-    small: bool,
+    /// [玩家設定的大小, 小一號, 預設大小]：字型（依目前格高）與字的點陣快取；size 選用哪一組（見 size_for）
+    glyphs: [Option<(i32, Glyphs<'static>)>; 3],
+    boxes: [HashMap<char, Option<GlyphBox>>; 3],
+    size: usize,
     /// 這一行沒有譯文、畫在數值框的左邊（見 left_in_box）：數字照起始格畫
     left_numbers: bool,
     /// 接成一行的字畫在框的右邊（見 right_in_box）：緊排以後也靠右
@@ -637,17 +671,6 @@ impl State {
         (mid != 0).then(|| (same(line.y - 1), same(line.y + 1)))
     }
 
-    /// 這一行畫在只有一列高的按鈕上（排序標題這類：按鈕的上下緣線畫在字的同一格裡）：上下兩列沒有同一組的貼圖
-    unsafe fn single_row_button(&self, gps: *const u8, line: &Line) -> bool {
-        (unsafe { self.box_rows(gps, line) }) == Some((false, false))
-    }
-
-    /// 這一行是框的最下一列、框的下緣線畫在這一列的格子裡（冒險角色名字框的第二列）：上一列還是同一組、下一列不是。
-    /// 字往上挪一點，字底才不會壓到下緣線
-    unsafe fn bottom_of_box(&self, gps: *const u8, line: &Line) -> bool {
-        (unsafe { self.box_rows(gps, line) }) == Some((true, false))
-    }
-
     /// 這一行在字底下那張框（lower 層同一種貼圖連成的一段）裡左右各剩幾格；起點那格沒有框是 None
     unsafe fn box_margins(&self, gps: *const u8, line: &Line) -> Option<(i32, i32)> {
         let at = |x: i32| unsafe { self.lower(gps, line.top, x, line.y) };
@@ -710,14 +733,16 @@ impl State {
                     .map(|k| unsafe { self.fg(gps, line.x0 + k, line.y, top) });
                 colors.next().is_some_and(|c| colors.any(|o| o != c))
             };
-            self.small = line.row == Row::Whole && unsafe { self.single_row_button(gps, line) };
-            let lift = if line.row == Row::Whole && unsafe { self.bottom_of_box(gps, line) } { (dy / 16).max(1) } else { 0 };
+            let rows = if line.row == Row::Whole { unsafe { self.box_rows(gps, line) } } else { None };
+            self.size = size_for(line.row, rows, em_per_cell() > per_cell(SNUG));
+            // 框的下緣線畫在這一列的格子裡（冒險角色名字框的第二列：上一列還是同一組、下一列不是）：字往上挪一點，字底才不會壓到下緣線
+            let lift = if rows == Some((true, false)) { (dy / 16).max(1) } else { 0 };
             self.left_numbers = line.kind == Kind::Mono && unsafe { self.left_in_box(gps, line) };
             self.right_box = line.kind == Kind::Chain
                 && !line.runs.iter().any(|&ri| run_at(&runs, &extra, ri).dfhack)
                 && unsafe { self.right_in_box(gps, line) };
             let strip = unsafe { self.strip(sdl, rend, line, &runs, &extra, dx, dy, mono) };
-            (self.small, self.left_numbers, self.right_box) = (false, false, false);
+            (self.size, self.left_numbers, self.right_box) = (NORMAL, false, false);
             let Some((tex, ranges)) = strip else { continue };
             // 半格位移的文字：貼圖往下移半格，上列畫貼圖的上半段、下列畫下半段（見 atlas::render 的上下列字圖）；
             // 錨定貼圖標籤照遊戲畫那張貼圖的位置往下移。貼圖上面多留 margin 列（字的上緣超出格子的部分），畫在格子上方
@@ -800,9 +825,9 @@ impl State {
                 self.chars[g as usize] = c;
             }
         }
-        for (s, per_cell) in [EM_PER_CELL, SMALL_EM_PER_CELL].into_iter().enumerate() {
+        for s in [NORMAL, SMALL, SNUG] {
             if self.glyphs[s].as_ref().is_none_or(|(h, _)| *h != dy) {
-                let em = (dy as f32 * per_cell).round();
+                let em = (dy as f32 * per_cell(s)).round();
                 self.glyphs[s] = Some((dy, Glyphs::with_px(fonts()?, em).ok()?));
                 self.boxes[s].clear();
             }
@@ -810,9 +835,9 @@ impl State {
         Some(())
     }
 
-    /// 一個字的點陣（快取，大小照 small）：高度是格高加上方的 margin 列；字型沒有這個字時是 None
+    /// 一個字的點陣（快取，大小照 size）：高度是格高加上方的 margin 列；字型沒有這個字時是 None
     fn glyph_box(&mut self, c: char, dy: i32) -> Option<&GlyphBox> {
-        let s = self.small as usize;
+        let s = self.size;
         if !self.boxes[s].contains_key(&c) {
             let glyphs = &self.glyphs[s].as_ref()?.1;
             let made = glyphs.advance(c).and_then(|adv| {
@@ -821,7 +846,7 @@ impl State {
                 let mut mask = vec![0u8; w * (dy + m) as usize];
                 // Glyphs::draw 把字身放在方框正中間：方框多了上面 m 列，基線要多往下 m / 2 才落在格子裡同一個位置。
                 // 小一號的字放在按鈕上下緣線中間（比格子正中間高一點）
-                let raise = if s == 1 { SMALL_RAISE_PER_CELL } else { RAISE_PER_CELL };
+                let raise = if s == SMALL { SMALL_RAISE_PER_CELL } else { RAISE_PER_CELL };
                 let shift = m as f32 / 2.0 - (dy as f32 * raise).round();
                 glyphs.draw(c, w, (dy + m) as usize, shift, &mut mask).ok()?.then_some(())?;
                 Some(GlyphBox { mask, w, org: ((w as f32 - adv) / 2.0).round() as i32, adv })
@@ -831,10 +856,10 @@ impl State {
         self.boxes[s].get(&c)?.as_ref()
     }
 
-    /// 字寬（像素，大小照 small）：空白至少三分之一字寬（字型的空白只有約 0.22 字寬，中英數字之間看起來黏在一起）
+    /// 字寬（像素，大小照 size）：空白至少三分之一字寬（字型的空白只有約 0.22 字寬，中英數字之間看起來黏在一起）
     fn advance(&mut self, c: char, dy: i32) -> f32 {
-        let s = self.small as usize;
-        let em = (dy as f32 * if s == 1 { SMALL_EM_PER_CELL } else { EM_PER_CELL }).round();
+        let s = self.size;
+        let em = (dy as f32 * per_cell(s)).round();
         let adv = self.glyph_box(c, dy).map_or(em * 0.5, |g| g.adv);
         if c == ' ' {
             let space = self.glyphs[s].as_ref().and_then(|(_, g)| g.advance(' ')).unwrap_or(0.0);
@@ -861,7 +886,7 @@ impl State {
     #[allow(clippy::too_many_arguments)]
     unsafe fn strip(&mut self, sdl: &Sdl, rend: *mut c_void, line: &Line, base: &[Run], extra: &[Run], dx: i32, dy: i32, mono: bool) -> Option<(Tex, Vec<(i32, i32)>)> {
         let mut h = std::collections::hash_map::DefaultHasher::new();
-        (line.kind as u8, line.row as u8, mono, self.small, self.left_numbers, self.right_box, dx, dy).hash(&mut h);
+        (line.kind as u8, line.row as u8, mono, self.size, self.left_numbers, self.right_box, dx, dy).hash(&mut h);
         for &ri in &line.runs {
             let run = run_at(base, extra, ri);
             (&run.shadow, &run.glyphs, run.align, run.x0 - line.x0, &run.text).hash(&mut h);
@@ -1180,4 +1205,31 @@ unsafe extern "C" fn hook_update_anchor_tile(r: *mut u8, x: i32, y: i32) {
         return;
     }
     unsafe { orig(r, x, y) }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn box_edge_rows_keep_default_size_when_grown() {
+        let (whole, label) = (Row::Whole, Row::Label);
+        // 一列高的按鈕一律小一號
+        assert_eq!(size_for(whole, Some((false, false)), false), SMALL);
+        assert_eq!(size_for(whole, Some((false, false)), true), SMALL);
+        // 框的最上、最下一列與錨定標籤：放大時照預設大小，沒放大時就是一般大小
+        for rows in [Some((true, false)), Some((false, true))] {
+            assert_eq!(size_for(whole, rows, true), SNUG);
+            assert_eq!(size_for(whole, rows, false), NORMAL);
+        }
+        assert_eq!(size_for(label, None, true), SNUG);
+        assert_eq!(size_for(label, None, false), NORMAL);
+        // 框的中間列、沒有框、半格位移的分頁標籤照玩家設定
+        assert_eq!(size_for(whole, Some((true, true)), true), NORMAL);
+        assert_eq!(size_for(whole, None, true), NORMAL);
+        assert_eq!(size_for(Row::Top, None, true), NORMAL);
+        assert_eq!(per_cell(SNUG), 13.0 / 16.0);
+        // 超出 13～16 的設定不算（不改全域的字身）
+        assert!(!set_em(12) && !set_em(17));
+    }
 }
