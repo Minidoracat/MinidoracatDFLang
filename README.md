@@ -129,4 +129,5 @@ uv run scripts/dev_game.py down               # 關遊戲、還原 mods/ 與設�
 - 其餘程式與文件：[MIT](LICENSE)。
 - 吉祥物圖（`art/`）與工作坊封面（`docs/steam/cover-*.gif`）：© Minidoracat，保留所有權利，不在上述授權範圍內。
 - 字型：思源黑體（Noto Sans CJK TC／SC Bold），SIL Open Font License 1.1，工作坊包內附授權全文。
+- 引擎靜態連結的開源 Rust 套件（skrifa、zeno、png、retour 等）各依原授權，包內 `dflang/THIRD-PARTY-LICENSES.txt` 附授權全文（建置時產生）。
 - 致謝與參考來源見 [CREDITS.md](CREDITS.md)。

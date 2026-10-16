@@ -221,7 +221,8 @@ def main() -> int:
         suffix = item["lang"].lower().replace("-", "_")
         required = ["info.txt", f"scripts_modinstalled/dflang_{suffix}.lua", "scripts_modinstalled/dflang.lua",
                     "dflang/dflang.dll", *(f"dflang/{kind}.tsv" for kind in KINDS), "dflang/names.tsv", "dflang/glyphs.txt",
-                    "dflang/patterns.tsv", "dflang/LICENSE.txt", "dflang/LICENSE-fonts.txt", "dflang/CREDITS.md", "dflang/mascot.png"]
+                    "dflang/patterns.tsv", "dflang/LICENSE.txt", "dflang/LICENSE-fonts.txt", "dflang/THIRD-PARTY-LICENSES.txt",
+                    "dflang/CREDITS.md", "dflang/mascot.png"]
         lacking = [p for p in required if not (out / p).is_file()] + ([] if list((out / "dflang/fonts").glob("*.otf")) else ["dflang/fonts/*.otf"])
         stray = [p.relative_to(out).as_posix() for p in out.rglob("*") if p.is_file() and p.suffix not in PACKAGE_SUFFIXES]
         stale = []

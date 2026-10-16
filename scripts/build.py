@@ -35,11 +35,65 @@ KINDS = ("strings", "rules", "screens")
 FONTS = ROOT / "temp/fonts"
 FONT_LICENSE_URL = "https://raw.githubusercontent.com/notofonts/noto-cjk/main/Sans/LICENSE"
 PACKAGE_LICENSE = """程式（dflang/dflang.dll、scripts_modinstalled/*.lua）：MIT License，全文附在下方。
+dflang.dll 靜態連結的開源 Rust 套件（字型解析、PNG、函式 hook 等）：各自的授權與著作權聲明見 THIRD-PARTY-LICENSES.txt。
 譯文（dflang/strings.tsv、dflang/rules.tsv、dflang/screens.tsv）：CC BY 4.0，https://creativecommons.org/licenses/by/4.0/
 字型（dflang/fonts/）：SIL Open Font License 1.1，全文見 LICENSE-fonts.txt。
 吉祥物圖（dflang/mascot.png）：© Minidoracat，保留所有權利，不適用上述授權。
 
 """
+MIT_TEXT = """Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
+documentation files (the "Software"), to deal in the Software without restriction, including without limitation the
+rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit
+persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the
+Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."""
+# 套件裡另外帶著別人的 C 原始碼、授權寫在原始檔開頭的（libudis86-sys 內含 udis86，BSD 2-Clause）
+BUNDLED_NOTICES = {"libudis86-sys": "libudis86/udis86.c"}
+
+
+def third_party_licenses() -> str:
+    """dflang.dll 靜態連結的 Rust 套件（不含只在編譯時執行的 proc-macro 與 build 相依）：名稱、版本、授權、來源與授權檔全文。
+    同樣的授權全文只寫一次，前面列出用它的套件。套件沒附授權檔時照 Cargo.toml 的作者寫 MIT 聲明"""
+    meta = json.loads(subprocess.run(
+        ["cargo", "metadata", "--format-version", "1", "--manifest-path", str(ROOT / "engine/Cargo.toml"),
+         "--filter-platform", "x86_64-pc-windows-msvc"], check=True, capture_output=True, text=True, encoding="utf-8").stdout)
+    packages = {p["id"]: p for p in meta["packages"]}
+    nodes = {n["id"]: n for n in meta["resolve"]["nodes"]}
+    linked, todo = set(), [meta["resolve"]["root"]]
+    while todo:
+        for dep in nodes[todo.pop()]["deps"]:
+            pkg = packages[dep["pkg"]]
+            normal = any(k["kind"] is None for k in dep["dep_kinds"])
+            proc_macro = any("proc-macro" in t["kind"] for t in pkg["targets"])
+            if normal and not proc_macro and dep["pkg"] not in linked:
+                linked.add(dep["pkg"])
+                todo.append(dep["pkg"])
+    texts: dict[str, list[str]] = {}
+    listing = []
+    for p in sorted((packages[i] for i in linked), key=lambda p: (p["name"], p["version"])):
+        crate = f"{p['name']} {p['version']}"
+        listing.append(f"{crate}  授權：{p['license']}  來源：{p.get('repository') or 'https://crates.io/crates/' + p['name']}")
+        folder = Path(p["manifest_path"]).parent
+        files = sorted(f for f in folder.iterdir() if f.is_file() and f.name.upper().startswith(("LICENSE", "LICENCE", "COPYING", "NOTICE")))
+        found = [f.read_text(encoding="utf-8", errors="replace").strip() for f in files]
+        if not found:
+            found = [f"Copyright (c) {', '.join(a.split(' <')[0] for a in p['authors'])}\n\n{MIT_TEXT}"] if "MIT" in (p["license"] or "") else []
+        if p["name"] in BUNDLED_NOTICES:
+            header = (folder / BUNDLED_NOTICES[p["name"]]).read_text(encoding="utf-8").split("*/")[0]
+            found.append("\n".join(line.strip(" */") for line in header.splitlines()).strip())
+        if not found:
+            raise SystemExit(f"FAIL {crate}：找不到授權檔，也沒辦法照 Cargo.toml 寫聲明")
+        for text in found:
+            texts.setdefault(text, []).append(crate)
+    blocks = [f"=== {'、'.join(crates)} ===\n\n{text}\n" for text, crates in texts.items()]
+    return ("dflang.dll 相依的開源 Rust 套件（cargo metadata 的相依圖，可能多列幾個實際沒連結進去的）。本檔由 scripts/build.py 產生。\n\n"
+            + "\n".join(listing) + "\n\n" + "\n".join(blocks))
 
 
 def load_config() -> dict:
@@ -131,7 +185,7 @@ def write_text(path: Path, text: str) -> None:
     path.write_text(text, encoding="utf-8", newline="\n")
 
 
-def build_item(item: dict, config: dict, texts: dict[str, list[dict]], names: list[dict], dll: Path) -> int:
+def build_item(item: dict, config: dict, texts: dict[str, list[dict]], names: list[dict], dll: Path, notices: str) -> int:
     lang = item["lang"]
     chars = sorted({c for rows in [*texts.values(), names] for r in rows for c in r[lang] if c not in BYTE_OF})
     out = DIST / item["folder"]
@@ -161,6 +215,7 @@ def build_item(item: dict, config: dict, texts: dict[str, list[dict]], names: li
     write_text(data / "patterns.tsv", "".join(f"{line}\n" for line in patterns if line and not line.startswith("#")))
     shutil.copy2(dll, data / "dflang.dll")
     write_text(data / "LICENSE.txt", PACKAGE_LICENSE + (ROOT / "LICENSE").read_text(encoding="utf-8"))
+    write_text(data / "THIRD-PARTY-LICENSES.txt", notices)
     shutil.copy2(FONTS / "LICENSE", data / "LICENSE-fonts.txt")
     shutil.copy2(ROOT / "CREDITS.md", data / "CREDITS.md")
     shutil.copy2(ROOT / "art/mascot.png", data / "mascot.png")
@@ -189,7 +244,8 @@ def main() -> int:
     dll = ROOT / "engine/target/release/dflang.dll" if args.skip_engine else build_engine()
     texts = {kind: read_rows(kind) for kind in KINDS}
     names = read_rows("names")
-    return max(build_item(item, config, texts, names, dll) for item in config["items"])
+    notices = third_party_licenses()
+    return max(build_item(item, config, texts, names, dll, notices) for item in config["items"])
 
 
 if __name__ == "__main__":
