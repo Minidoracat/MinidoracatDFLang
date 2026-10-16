@@ -9,6 +9,9 @@ AGENTS.md
 .codex/
 .gitnexus/
 
+# 本機開發紀錄（各輪實機驗證、決策、發布紀錄），不公開；docs/ 只放整理過的文件
+notes/
+
 # 系統與 IDE
 .DS_Store
 Thumbs.db

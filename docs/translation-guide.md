@@ -177,7 +177,7 @@ raws 裡的生物、植物、材料、物品、身體部位名稱，以及執行
 
 ## 傳說模式的事件句
 
-傳說頁、審訊紀錄、神器頁的一句句歷史事件（「In 1, ☺Onsmost☻ settled in ☺Mangemined☻.」）與藝術品、故事裡的事件短語（「the founding of ☺X☻ in 3」）由每種歷史事件的兩個描述函式拼出（見 `docs/analysis.md` 第十四輪）。句型寫在 `data/events/*.tsv`，改完跑：
+傳說頁、審訊紀錄、神器頁的一句句歷史事件（「In 1, ☺Onsmost☻ settled in ☺Mangemined☻.」）與藝術品、故事裡的事件短語（「the founding of ☺X☻ in 3」）由每種歷史事件的兩個描述函式拼出（見 `docs/analysis.md` 第 15 點）。句型寫在 `data/events/*.tsv`，改完跑：
 
 ```
 uv run scripts/gen_events.py
