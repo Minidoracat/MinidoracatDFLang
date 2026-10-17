@@ -139,8 +139,8 @@ uv run scripts/dev_game.py down               # 關遊戲、還原 mods/ 與設�
 
 ```bash
 uv run scripts/publish_workshop.py [--screenshots] --yes             # 上傳內容、封面、繁簡兩種語系的標題與說明、更新說明
-uv run scripts/publish_workshop.py --description-only --yes          # 只改了 docs/steam/*.bbcode 的說明：只換說明，不算發布新版
-uv run scripts/publish_workshop.py --retire --yes                    # 已合併的簡中項目：換成「已合併、請改訂閱」的標題與說明
+uv run scripts/publish_workshop.py --description-only [--screenshots] --yes   # 只換說明（加 --screenshots 連截圖一起換），不傳內容、不算發布新版
+uv run scripts/publish_workshop.py --retire --yes                    # 已合併的簡中項目：換成「已合併、請改訂閱」的標題與說明，設成不公開列出
 git tag -a v0.5.0 -m "0.5.0" && git push origin v0.5.0                         # 每次發布都打 tag，版本號照 workshop.json
 ```
 

@@ -9,15 +9,18 @@
   uv run scripts/publish_workshop.py                            # 檢查
   uv run scripts/publish_workshop.py --yes                      # 上傳
   uv run scripts/publish_workshop.py --description-only --yes   # 只換各語言的標題與說明（不傳內容、封面，不留更新說明）
+  uv run scripts/publish_workshop.py --description-only --screenshots --yes   # 同上，連截圖一起換（兩次發版之間更新相簿用）
   uv run scripts/publish_workshop.py --check-screenshots        # 只查項目上現有幾張截圖（不改任何東西）
-  uv run scripts/publish_workshop.py --retire --yes             # 停用的簡中項目換成「已合併」的標題與說明
+  uv run scripts/publish_workshop.py --retire --yes             # 停用的簡中項目換成「已合併」的標題與說明，設成不公開列出
 
 每次上傳的內容（workshop.json 的 workshop）：dist/<folder>/ 整個資料夾、標籤（tags）、封面（preview，512 動態 GIF）、
 更新說明（每種語言的 steam_changelog 檔：本版這一則，第一行要有版本號，依 languages 順序串起來、中間隔一條橫線；CHANGELOG.md 也要先記這一版）。
 標題（steam_title）與說明（steam_description 檔）依 Steam 語言分開放：languages 的第一個放在預設（english）欄位，沒有對應在地化欄位的
 用戶端看這份；每種語言再各自提交一次，放進它的 steam_language（tchinese、schinese）在地化欄位。更新說明與截圖不分語言，大家看同一份。
-加 --screenshots：先刪掉項目上現有的截圖（查得到幾張就刪幾張），再把 screenshots 資料夾裡的截圖依檔名排序一張張上傳（放在 temp/，不進 git）。
---retire：停用的項目（retired）只換預設欄位的標題與說明，請玩家改訂閱合併後的項目；它的內容不再上傳。
+加 --screenshots：先刪掉項目上現有的截圖（查得到幾張就刪幾張），再把 screenshots 資料夾裡的截圖依檔名排序一張張上傳（放在 temp/，不進 git）；
+和 --description-only 一起用時只換說明與截圖，不傳內容，更新說明不會多一筆。
+--retire：停用的項目（retired）只換預設欄位的標題與說明，並設成不公開列出（Unlisted：有連結看得到、搜尋與瀏覽列表找不到，
+已訂閱的人照舊看得到）；它的內容不再上傳。不設成私人：私人只有作者看得到，還沒改訂閱的玩家看不到改訂閱的說明。
 """
 import argparse
 import ctypes
@@ -36,6 +39,7 @@ CONFIG = ROOT / "scripts/workshop.json"
 STEAM_API = DF / "steam_api64.dll"
 INVALID_HANDLE = (0, 0xFFFFFFFFFFFFFFFF)
 PREVIEW_TYPE_IMAGE = 0  # k_EItemPreviewType_Image
+VISIBILITY_UNLISTED = 3  # k_ERemoteStoragePublishedFileVisibilityUnlisted
 # 大小上限照家族 PZ MOD 的實測（pz-mod-template 的 publish_workshop.py）：封面 1,024,000 bytes；
 # 截圖（AddItemPreviewFile）274 KB 成功、314 KB 回 EResult 25，網頁上傳的 2 MB 上限不適用
 PREVIEW_LIMIT = 1_024_000
@@ -71,6 +75,8 @@ class Steam:
             fn.restype = ctypes.c_bool
         d.SteamAPI_ISteamUGC_SetItemUpdateLanguage.argtypes = [ctypes.c_void_p, ctypes.c_uint64, ctypes.c_char_p]
         d.SteamAPI_ISteamUGC_SetItemUpdateLanguage.restype = ctypes.c_bool
+        d.SteamAPI_ISteamUGC_SetItemVisibility.argtypes = [ctypes.c_void_p, ctypes.c_uint64, ctypes.c_int]
+        d.SteamAPI_ISteamUGC_SetItemVisibility.restype = ctypes.c_bool
         d.SteamAPI_ISteamUGC_SetItemTags.argtypes = [ctypes.c_void_p, ctypes.c_uint64, ctypes.POINTER(StringArray)]
         d.SteamAPI_ISteamUGC_SetItemTags.restype = ctypes.c_bool
         d.SteamAPI_ISteamUGC_AddItemPreviewFile.argtypes = [ctypes.c_void_p, ctypes.c_uint64, ctypes.c_char_p, ctypes.c_int]
@@ -153,13 +159,17 @@ class Steam:
             raise RuntimeError(f"Steam 拒絕了部分欄位：{steps}")
         self.submit(handle, note)
 
-    def set_text(self, app_id: int, file_id: int, title: str, description: str, steam_language: str | None = None) -> None:
-        """只換標題與說明，更新說明留空；steam_language（tchinese、schinese…）是那個語言的在地化欄位，None 是預設（english）欄位"""
+    def set_text(self, app_id: int, file_id: int, title: str, description: str, steam_language: str | None = None,
+                 visibility: int | None = None) -> None:
+        """只換標題與說明（visibility 有給時一起換可見性），更新說明留空；steam_language（tchinese、schinese…）是那個語言的
+        在地化欄位，None 是預設（english）欄位"""
         d, ugc = self.dll, self.ugc
         handle = self.start(app_id, file_id)
         steps = [] if steam_language is None else [d.SteamAPI_ISteamUGC_SetItemUpdateLanguage(ugc, handle, steam_language.encode())]
         steps += [d.SteamAPI_ISteamUGC_SetItemTitle(ugc, handle, title.encode("utf-8")),
                   d.SteamAPI_ISteamUGC_SetItemDescription(ugc, handle, description.encode("utf-8"))]
+        if visibility is not None:
+            steps.append(d.SteamAPI_ISteamUGC_SetItemVisibility(ugc, handle, visibility))
         if not all(steps):
             raise RuntimeError(f"Steam 拒絕了標題或說明（{steam_language or 'english'}）：{steps}")
         self.submit(handle, "")
@@ -212,6 +222,25 @@ def localize(steam: Steam, app_id: int, file_id: int, languages: list[dict]) -> 
         print(f"{language['lang']}（{language['steam_language']}）：標題、說明已更新")
 
 
+def shot_problems(workshop: dict) -> list[str]:
+    shots = screenshots(workshop)
+    if not shots:
+        return [f"{workshop['screenshots']} 沒有截圖"]
+    return [f"截圖 {p.name} {p.stat().st_size:,} bytes，超過 {SHOT_LIMIT:,}" for p in shots if p.stat().st_size > SHOT_LIMIT]
+
+
+def replace_screenshots(steam: Steam, app_id: int, file_id: int, workshop: dict) -> None:
+    """先刪掉項目上現有的截圖，再照檔名順序一張張上傳 screenshots 資料夾的"""
+    old = steam.count_screenshots(file_id)
+    if old:
+        steam.remove_screenshots(app_id, file_id, old)
+    print(f"刪掉舊截圖 {old} 張")
+    shots = screenshots(workshop)
+    for k, shot in enumerate(shots, 1):
+        steam.add_screenshot(app_id, file_id, shot)  # 中途失敗時前面幾張已生效，剩下的到工作坊頁面補
+        print(f"截圖 {k}/{len(shots)} {shot.name}")
+
+
 def preflight(config: dict, with_shots: bool) -> list[str]:
     problems = []
     if subprocess.run(["uv", "run", "scripts/verify_mod.py"], cwd=ROOT, capture_output=True).returncode != 0:
@@ -232,23 +261,21 @@ def preflight(config: dict, with_shots: bool) -> list[str]:
             problems.append(f"{lang}：更新說明 {language['steam_changelog']} 的第一行沒有 {version}，先寫這一版的")
     workshop = config["workshop"]
     cover = ROOT / workshop["preview"]
-    shots = screenshots(workshop) if with_shots else []
     if not cover.is_file():
         problems.append(f"缺封面 {workshop['preview']}")
     elif cover.stat().st_size > PREVIEW_LIMIT:
         problems.append(f"封面 {cover.stat().st_size:,} bytes，超過 {PREVIEW_LIMIT:,}")
-    if with_shots and not shots:
-        problems.append(f"{workshop['screenshots']} 沒有截圖")
-    problems += [f"截圖 {p.name} {p.stat().st_size:,} bytes，超過 {SHOT_LIMIT:,}" for p in shots if p.stat().st_size > SHOT_LIMIT]
+    if with_shots:
+        problems += shot_problems(workshop)
     return problems
 
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--screenshots", action="store_true", help="也換掉截圖：刪掉項目上現有的，再傳 screenshots 資料夾的")
+    ap.add_argument("--screenshots", action="store_true", help="也換掉截圖：刪掉項目上現有的，再傳 screenshots 資料夾的（可以和 --description-only 一起用）")
     ap.add_argument("--check-screenshots", action="store_true", help="只查項目上現有幾張截圖，不改任何東西")
     ap.add_argument("--description-only", action="store_true", help="只換各語言的標題與說明（steam_title、steam_description 檔），不傳內容與封面")
-    ap.add_argument("--retire", action="store_true", help="停用的項目（retired）換成「已合併」的標題與說明")
+    ap.add_argument("--retire", action="store_true", help="停用的項目（retired）換成「已合併」的標題與說明，設成不公開列出")
     ap.add_argument("--yes", action="store_true", help="真的上傳；沒加只做檢查")
     args = ap.parse_args()
     config = json.loads(CONFIG.read_text(encoding="utf-8"))
@@ -275,10 +302,11 @@ def main() -> int:
             return 0
         steam = Steam(app_id)
         try:
-            steam.set_text(app_id, int(retired["published_file_id"]), retired["steam_title"], read(retired["steam_description"]))
+            steam.set_text(app_id, int(retired["published_file_id"]), retired["steam_title"], read(retired["steam_description"]),
+                           visibility=VISIBILITY_UNLISTED)
         finally:
             steam.close()
-        print(f"停用項目已更新 https://steamcommunity.com/sharedfiles/filedetails/?id={retired['published_file_id']}")
+        print(f"停用項目已更新（不公開列出） https://steamcommunity.com/sharedfiles/filedetails/?id={retired['published_file_id']}")
         return 0
 
     for language in languages:
@@ -287,6 +315,12 @@ def main() -> int:
               + ("" if args.description_only else f"  更新說明 ← {language['steam_changelog']}"))
 
     if args.description_only:
+        if args.screenshots:
+            print(f"截圖 {len(screenshots(workshop))} 張（先刪掉現有的）")
+            problems = shot_problems(workshop)
+            if problems:
+                print("\n".join("FAIL " + p for p in problems))
+                return 1
         if not args.yes:
             print("加 --yes 才會上傳。")
             return 0
@@ -295,6 +329,8 @@ def main() -> int:
             steam.set_text(app_id, file_id, default["steam_title"], read(default["steam_description"]))
             print("預設（english）欄位：標題、說明已更新")
             localize(steam, app_id, file_id, languages)
+            if args.screenshots:
+                replace_screenshots(steam, app_id, file_id, workshop)
         finally:
             steam.close()
         return 0
@@ -316,14 +352,7 @@ def main() -> int:
         print("內容、標籤、封面、更新說明與預設欄位的標題、說明已上傳")
         localize(steam, app_id, file_id, languages)
         if args.screenshots:
-            old = steam.count_screenshots(file_id)
-            if old:
-                steam.remove_screenshots(app_id, file_id, old)
-            print(f"刪掉舊截圖 {old} 張")
-            shots = screenshots(workshop)
-            for k, shot in enumerate(shots, 1):
-                steam.add_screenshot(app_id, file_id, shot)  # 中途失敗時前面幾張已生效，剩下的到工作坊頁面補
-                print(f"截圖 {k}/{len(shots)} {shot.name}")
+            replace_screenshots(steam, app_id, file_id, workshop)
         print(f"上傳完成 https://steamcommunity.com/sharedfiles/filedetails/?id={file_id}")
     finally:
         steam.close()
