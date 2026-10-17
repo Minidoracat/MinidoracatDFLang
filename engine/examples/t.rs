@@ -123,15 +123,15 @@ fn main() {
         }
         if wrap {
             match dict.translate_sentences(&raw) {
-                Ok(p) => println!("{}", p.into_iter().map(|(t, _)| t).collect::<String>()),
-                Err(missing) => println!("缺：{}", missing.iter().map(|m| cp437::decode(m)).collect::<Vec<_>>().join("｜")),
+                (Some(p), _) => println!("{}", p.into_iter().map(|(t, _)| t).collect::<String>()),
+                (None, missing) => println!("缺：{}", missing.iter().map(|m| cp437::decode(m)).collect::<Vec<_>>().join("｜")),
             }
             continue;
         }
         match ctb::translate(&raw, 7, &dict) {
-            Ok(zh) if text.contains("[C:") => println!("{zh}"),
-            Ok(zh) => println!("{}", ctb::strip_colors(&zh)),
-            Err(missing) => {
+            (Some(zh), _) if text.contains("[C:") => println!("{zh}"),
+            (Some(zh), _) => println!("{}", ctb::strip_colors(&zh)),
+            (None, missing) => {
                 let missing: Vec<String> = missing.iter().map(|m| cp437::decode(m)).collect();
                 println!("缺：{}", missing.join("｜"));
             }

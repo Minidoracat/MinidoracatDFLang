@@ -14,7 +14,8 @@
 //!   placed_align：按鈕上置中、畫面正中間），半格位移的列（分頁標籤）也一樣；錨定貼圖標籤一律置中。
 //! - 遊戲接著游標連續寫的幾段（「範圍：」＋「114」＋「至」＋「768」），或只隔一格空白的幾段（DFHack 的「標籤」＋「值」、
 //!   傳說的「黑暗」＋「要塞」）裡有譯文時接成一行緊排，每段用自己的顏色；段落文字和緊貼在旁邊的連結字也接成一行。
-//! - 段落照字型的實際字寬換行（metrics.rs）：格子貼透明記號，字照段落文字從第一格緊排。
+//! - 段落照字型的實際字寬換行（metrics.rs）：格子貼透明記號，字照段落文字從第一格緊排。比格子寬的一行（換了格子大小後的段落、
+//!   比原文寬一點的名字與按鍵名）壓成長體放進格子：字距與字形本身一起橫向縮放（見 State::strip）。
 //! - 其他沒有譯文的字：單一空白隔開的字詞接成一組，從原本的格子畫起（數字對齊原本的結尾，數值框裡靠左的照起始格），
 //!   彩色文字每個字留在原格。
 //! - 方框、箭頭、品質記號這類圖形字元照遊戲原樣畫（見 is_text），兩旁的字從自己原本的格子畫起。
@@ -482,6 +483,23 @@ fn centered_start(span: i32, width: i32, shift: i32) -> i32 {
     ((span + shift - width) / 2).clamp(0, span - width)
 }
 
+/// 一個字的點陣：高度是格高加上方的 margin 列，s 是大小（見 size_for），kx 是字形橫向縮放（長體，見 State::strip）。
+/// 字寬照 atlas::narrow（間隔號半個字寬）：點陣仍照字型的字寬置中畫，org 照排版的字寬算，點落在半個字寬的正中間
+fn glyph_box(glyphs: &Glyphs, c: char, dy: i32, s: usize, kx: f32) -> Option<GlyphBox> {
+    let em = (dy as f32 * per_cell(s)).round();
+    let full = glyphs.advance(c)?;
+    let w = full.ceil() as usize + 4;
+    let m = margin(dy);
+    let mut mask = vec![0u8; w * (dy + m) as usize];
+    // Glyphs::draw 把字身放在方框正中間：方框多了上面 m 列，基線要多往下 m / 2 才落在格子裡同一個位置。
+    // 小一號的字放在按鈕上下緣線中間（比格子正中間高一點）
+    let raise = if s == SMALL { SMALL_RAISE_PER_CELL } else { RAISE_PER_CELL };
+    let shift = m as f32 / 2.0 - (dy as f32 * raise).round();
+    glyphs.draw_scaled(c, kx, w, (dy + m) as usize, shift, &mut mask).ok()?.then_some(())?;
+    let adv = atlas::narrow(c, full, em) * kx;
+    Some(GlyphBox { mask, w, org: ((w as f32 - adv) / 2.0).round() as i32, adv })
+}
+
 fn fonts() -> Option<&'static [atlas::Font]> {
     static FONTS: OnceLock<Option<&'static [atlas::Font]>> = OnceLock::new();
     *FONTS.get_or_init(|| {
@@ -884,22 +902,11 @@ impl State {
         Some(())
     }
 
-    /// 一個字的點陣（快取，大小照 size）：高度是格高加上方的 margin 列；字型沒有這個字時是 None
+    /// 一個字的點陣（快取，大小照 size）；字型沒有這個字時是 None
     fn glyph_box(&mut self, c: char, dy: i32) -> Option<&GlyphBox> {
         let s = self.size;
         if !self.boxes[s].contains_key(&c) {
-            let glyphs = &self.glyphs[s].as_ref()?.1;
-            let made = glyphs.advance(c).and_then(|adv| {
-                let w = adv.ceil() as usize + 4;
-                let m = margin(dy);
-                let mut mask = vec![0u8; w * (dy + m) as usize];
-                // Glyphs::draw 把字身放在方框正中間：方框多了上面 m 列，基線要多往下 m / 2 才落在格子裡同一個位置。
-                // 小一號的字放在按鈕上下緣線中間（比格子正中間高一點）
-                let raise = if s == SMALL { SMALL_RAISE_PER_CELL } else { RAISE_PER_CELL };
-                let shift = m as f32 / 2.0 - (dy as f32 * raise).round();
-                glyphs.draw(c, w, (dy + m) as usize, shift, &mut mask).ok()?.then_some(())?;
-                Some(GlyphBox { mask, w, org: ((w as f32 - adv) / 2.0).round() as i32, adv })
-            });
+            let made = glyph_box(&self.glyphs[s].as_ref()?.1, c, dy, s, 1.0);
             self.boxes[s].insert(c, made);
         }
         self.boxes[s].get(&c)?.as_ref()
@@ -1121,13 +1128,15 @@ impl State {
                 ranges.extend(ranges_px.into_iter().map(|(a, b)| if a <= b { (a.floor() as i32, b.ceil() as i32) } else { (0, 0) }));
             }
         }
-        // 段落照啟動時的格子大小量字寬（metrics.rs）；之後調整視窗或介面縮放，字和格子的比例變了，一行可能比記號格寬一點：
-        // 整行等比例縮回格子裡，行尾的字才不會被切掉
+        // 比記號格寬的一行壓成長體放回格子裡：字距與字形本身一起橫向縮放（只縮字距的話，粗體的相鄰兩字縮到約 93% 就黏在一起；
+        // 照原寬畫好再整行重新取樣，筆畫會糊）：
+        // - 段落照啟動時的格子大小量字寬（metrics.rs）；之後調整視窗或介面縮放，字和格子的比例變了，一行可能比記號格寬一點
+        // - 名字、按鍵名比原文寬一點時照原文的格數交過來（Dict::rule_entry 的 SQUEEZE）
+        let mut k = 1.0f32;
         if line.runs.iter().any(|&ri| run_at(base, extra, ri).text.is_some()) {
             let width = placed.iter().map(|&(x, c)| x + self.advance(c, dy)).fold(0.0f32, f32::max);
             if width > span as f32 {
-                let k = span as f32 / width;
-                placed.iter_mut().for_each(|p| p.0 *= k);
+                k = span as f32 / width;
                 ranges.iter_mut().for_each(|r| *r = ((r.0 as f32 * k).floor() as i32, (r.1 as f32 * k).ceil() as i32));
             }
         }
@@ -1137,8 +1146,16 @@ impl State {
             if c == ' ' {
                 continue;
             }
-            let Some(g) = self.glyph_box(c, dy) else { continue };
-            let left = x.round() as i32 - g.org;
+            // 長體的字只在建這一行的貼圖時畫一次，不進快取
+            let condensed;
+            let g = if k < 1.0 {
+                condensed = self.glyphs[self.size].as_ref().and_then(|(_, glyphs)| glyph_box(glyphs, c, dy, self.size, k));
+                condensed.as_ref()
+            } else {
+                self.glyph_box(c, dy)
+            };
+            let Some(g) = g else { continue };
+            let left = (x * k).round() as i32 - g.org;
             for yy in 0..hgt {
                 for xx in 0..g.w {
                     let tx = left + xx as i32;

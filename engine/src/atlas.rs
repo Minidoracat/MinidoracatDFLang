@@ -45,16 +45,17 @@ pub fn load_fonts(paths: &[&str]) -> Result<Vec<Font>, String> {
         .collect()
 }
 
-/// 收集字形輪廓：字型座標 y 朝上，點陣 y 朝下；(x, y) 是原點（基線左端）在方框裡的位置。
+/// 收集字形輪廓：字型座標 y 朝上，點陣 y 朝下；(x, y) 是原點（基線左端）在方框裡的位置，kx 是橫向縮放（長體）。
 struct Pen {
     path: Vec<Command>,
     x: f32,
     y: f32,
+    kx: f32,
 }
 
 impl Pen {
     fn at(&self, x: f32, y: f32) -> [f32; 2] {
-        [self.x + x, self.y - y]
+        [self.x + x * self.kx, self.y - y]
     }
 }
 
@@ -121,6 +122,11 @@ impl<'a> Glyphs<'a> {
     /// 把 ch 的覆蓋率畫進 box_w×box_h 的遮罩（先清空）：水平依字寬置中，垂直讓「上緣到下緣」的中線落在方框中線再往下移 dy 像素
     /// （負數往上）。沒有字型能畫時回傳 false。
     pub fn draw(&self, ch: char, box_w: usize, box_h: usize, dy: f32, mask: &mut [u8]) -> Result<bool, String> {
+        self.draw_scaled(ch, 1.0, box_w, box_h, dy, mask)
+    }
+
+    /// 同 draw，字形橫向縮放成 kx 倍（長體）：hinting 對齊的橫筆不動，只有寬度變窄
+    pub fn draw_scaled(&self, ch: char, kx: f32, box_w: usize, box_h: usize, dy: f32, mask: &mut [u8]) -> Result<bool, String> {
         let location = LocationRef::default();
         let found = self.refs.iter().enumerate().find_map(|(f, font)| {
             let gid = font.charmap().map(ch).filter(|g| g.to_u32() != 0)?;
@@ -131,8 +137,9 @@ impl<'a> Glyphs<'a> {
         let advance = self.refs[f].glyph_metrics(self.size, location).advance_width(gid).unwrap_or(self.size.ppem().unwrap_or(0.0));
         let mut pen = Pen {
             path: Vec::new(),
-            x: ((box_w as f32 - advance) / 2.0).round(),
+            x: ((box_w as f32 - advance * kx) / 2.0).round(),
             y: (box_h as f32 / 2.0 + (metrics.ascent + metrics.descent) / 2.0 + dy).round(),
+            kx,
         };
         glyph.draw(DrawSettings::hinted(&self.hinting[f], false), &mut pen).map_err(|e| format!("{ch}: {e}"))?;
         mask[..box_w * box_h].fill(0);
@@ -199,15 +206,21 @@ pub fn render(fonts: &[Font], chars: &[char], cell_w: usize, cell_h: usize, out:
     Ok(Report { tiles, missing })
 }
 
+/// 間隔號「·」在中文字型裡是全形（一個字寬），名字（「里戈斯·尼爾杜姆」「焦命運·青銅公會」）裡佔太寬：排版當半個字寬、
+/// 點畫在正中間（一字兩格時是 CP437 的「·」，本來就只佔一格）。整句貼圖畫字（overlay.rs 的 glyph_box）與量字寬（advances）共用。
+pub fn narrow(ch: char, advance: f32, em: f32) -> f32 {
+    if ch == '·' { advance.min(em / 2.0) } else { advance }
+}
+
 /// 排段落用的字寬（metrics.rs 的單位）：字型的實際字寬除以格寬，和整句貼圖畫字時一樣（字身 em_per_cell 格高，見 overlay.rs）；
-/// 空白至少三分之一字寬（overlay.rs 的 advance）。無條件進位：一行累加起來不比畫出來的短，行尾的字才不會超出記號格被切掉。
+/// 空白至少三分之一字寬（overlay.rs 的 advance）、間隔號半個字寬（narrow）。無條件進位：一行累加起來不比畫出來的短，行尾的字才不會超出記號格被切掉。
 pub fn advances(fonts: &[Font], chars: impl Iterator<Item = char>, cell_w: usize, cell_h: usize, em_per_cell: f32) -> Result<HashMap<char, u16>, String> {
     let em = (cell_h as f32 * em_per_cell).round();
     let glyphs = Glyphs::with_px(fonts, em)?;
     let unit = cell_w as f32 / crate::metrics::UNIT as f32;
     Ok(chars
         .filter_map(|c| {
-            let adv = glyphs.advance(c)?;
+            let adv = narrow(c, glyphs.advance(c)?, em);
             let adv = if c == ' ' { adv.max(em / 3.0) } else { adv };
             Some((c, (adv / unit).ceil().max(1.0) as u16))
         })

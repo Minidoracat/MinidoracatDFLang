@@ -97,6 +97,8 @@ type WrapFn = unsafe extern "C" fn(*mut u8, *const u8, i32);
 type CtbAddFn = unsafe extern "C" fn(*mut u8, *const StdString);
 /// (language_name, 輸出的英文名, 每段字首大寫, 只要第一段)
 type NameFn = unsafe extern "C" fn(*const u8, *mut StdString, u8, u8);
+/// (language_name, 輸出的原名)
+type NativeNameFn = unsafe extern "C" fn(*const u8, *mut StdString);
 /// (std::string, 新長度, 變長時的填充字元)
 type ResizeFn = unsafe extern "C" fn(*mut StdString, usize, u8);
 /// (viewscreen)
@@ -108,11 +110,11 @@ type TalkLogFn = unsafe extern "C" fn(*mut u8, u32, i32, i32);
 /// render_things()：非同步執行緒每幀把畫面寫進緩衝區（整句貼圖在這裡收一幀的句子，見 overlay.rs）
 type RenderThingsFn = unsafe extern "C" fn();
 
-pub const HOOKS: [&str; 15] = [
+pub const HOOKS: [&str; 16] = [
     "addst", "addst_flag", "top_addst", "addcoloredst", "mtb_set_width", "add_anchored_tile", "wrap_lines", "ctb_add_string",
-    "translate_name", "string_resize", "adv_appearance", "adv_personality", "adv_log", "adv_talk_log", "render_things",
+    "translate_name", "string_resize", "adv_appearance", "adv_personality", "adv_log", "adv_talk_log", "render_things", "native_name",
 ];
-static TRAMPOLINES: [AtomicUsize; 15] = [const { AtomicUsize::new(0) }; 15];
+static TRAMPOLINES: [AtomicUsize; 16] = [const { AtomicUsize::new(0) }; 16];
 /// wrap_text 的位址（只登記、不攔；它切行時呼叫 wrap_lines）：enable 時從呼叫它的程式碼找出遊戲啟動時就切好的提示（見 lines.rs）
 pub static WRAP_TEXT: OnceLock<usize> = OnceLock::new();
 
@@ -142,7 +144,8 @@ pub fn attach(name: &str, target: usize) -> Result<(), String> {
         11 => hook_adv_personality as *const (),
         12 => hook_adv_log as *const (),
         13 => hook_adv_talk_log as *const (),
-        _ => hook_render_things as *const (),
+        14 => hook_render_things as *const (),
+        _ => hook_native_name as *const (),
     };
     let detour = unsafe { RawDetour::new(target as *const (), hook) }.map_err(|e| e.to_string())?;
     TRAMPOLINES[index].store(detour.trampoline() as *const () as usize, Ordering::Release);
@@ -433,6 +436,10 @@ unsafe fn translate_call(gps: *mut u8, kind: &str, key: &[u8], space: i32, half:
         note_miss(kind, key);
         return false;
     };
+    // 照字型實際字寬縮短的譯文（音譯的名字、按鍵名，見 Dict::rule_entry）：遊戲限制的長度放不下就照英文
+    if entry.compact.is_some() && space > 0 && entry.shadow().len() > space as usize {
+        return false;
+    }
     HITS.fetch_add(1, Ordering::Relaxed);
     let (dimx, dimy): (i32, i32) = unsafe { (read(gps, layout.dimx), read(gps, layout.dimy)) };
     ENGLISH.lock().note(x0, y, key, dimx, dimy);
@@ -447,7 +454,11 @@ unsafe fn translate_call(gps: *mut u8, kind: &str, key: &[u8], space: i32, half:
     // 字串檔的對齊和遊戲實際的不同（靠左、置中、靠右互換）時，譯文在原文寬度裡重排
     let relayout = align != entry.align;
     unsafe {
-        if relayout {
+        if entry.compact.is_some() {
+            // 從原文的起點靠左畫：格子貼透明記號，字由整句貼圖照實際字寬畫（同段落，見 paint）
+            write(entry.shadow());
+            paint(gps, &lay, x0, y, Paint::of(&entry), dict, true);
+        } else if relayout {
             // 譯文實際佔的格子（字圖格的替身是空白，要算進去；置中的譯文前後補了空白，見 Dict::entry）
             let start = glyphs.iter().map(|g| g.0).chain(shadow.iter().position(|&c| c != b' ')).min().unwrap_or(0);
             let end = glyphs.iter().map(|g| g.0 + 2).chain(shadow.iter().rposition(|&c| c != b' ').map(|p| p + 1)).max().unwrap_or(0);
@@ -614,25 +625,40 @@ pub fn dfhack_translate(text: &[u8], y: i32, center: bool) -> Option<Vec<u8>> {
         note_miss("dfhack", key);
         return None;
     };
-    // DFHack 的字位置由它的元件算好，字串檔的置中、靠右（給遊戲自己的按鈕用的，前面已補好空白）不套用：
-    // 取譯文實際佔的格子（字圖格的替身是空白，要算進去），靠左放在原文起點，或依 center 放在原文正中間
+    let pending = dfhack_place(&entry, text.len(), lead, key.len(), center)?;
+    HITS.fetch_add(1, Ordering::Relaxed);
+    let out = pending.shadow.clone();
+    *DH_PENDING.lock() = Some(pending);
+    Some(out)
+}
+
+/// DFHack 要畫的一段字（`text_len` 格：開頭 `lead` 格空白、原文 `key_len` 格）換成譯文 entry 時要寫的替身字串與要貼的字。
+/// DFHack 的字位置由它的元件算好，字串檔的置中、靠右（給遊戲自己的按鈕用的，前面已補好空白）不套用：取譯文實際佔的格子
+/// （字圖格的替身是空白，要算進去；照字型實際字寬縮短的譯文是全部記號格），靠左放在原文起點，或依 center 放在原文正中間。
+/// 放不進原文的格子時 None。
+fn dfhack_place(entry: &Entry, text_len: usize, lead: usize, key_len: usize, center: bool) -> Option<Pending> {
     let (shadow, glyphs) = (entry.shadow(), &entry.glyphs);
-    let start = glyphs.iter().map(|g| g.0).chain(shadow.iter().position(|&c| c != b' ')).min().unwrap_or(0);
-    let end = glyphs.iter().map(|g| g.0 + 2).chain(shadow.iter().rposition(|&c| c != b' ').map(|p| p + 1)).max().unwrap_or(0);
+    // 照字型實際字寬縮短的譯文（音譯的名字、按鍵名，見 Dict::rule_entry）：替身全是空白，字由整句貼圖照 text 畫在記號格
+    let cells = entry.compact.map(|indent| shadow.len() - indent);
+    let (start, end) = match cells {
+        Some(n) => (shadow.len() - n, shadow.len()),
+        None => (
+            glyphs.iter().map(|g| g.0).chain(shadow.iter().position(|&c| c != b' ')).min().unwrap_or(0),
+            glyphs.iter().map(|g| g.0 + 2).chain(shadow.iter().rposition(|&c| c != b' ').map(|p| p + 1)).max().unwrap_or(0),
+        ),
+    };
     let body = &shadow[start..end.max(start)];
-    let at = if center { lead + key.len().saturating_sub(body.len()) / 2 } else { lead };
-    if at + body.len() > text.len() {
+    let at = if center { lead + key_len.saturating_sub(body.len()) / 2 } else { lead };
+    if at + body.len() > text_len {
         return None;
     }
-    HITS.fetch_add(1, Ordering::Relaxed);
-    let mut out = vec![b' '; text.len()];
+    let mut out = vec![b' '; text_len];
     out[at..at + body.len()].copy_from_slice(body);
-    let glyphs: Vec<(usize, u32)> = glyphs.iter().map(|&(offset, glyph)| (offset - start + at, glyph)).collect();
+    let glyphs = glyphs.iter().map(|&(offset, glyph)| (offset - start + at, glyph)).collect();
     let align = if center { b'c' } else { b'l' };
     // 譯文比原文短、空出來的格子才算補位；英文原本結尾的空白（欄位對齊、標籤與值之間）照算（見 Paint::pad）
-    let pad = (lead + key.len()).saturating_sub(at + body.len());
-    *DH_PENDING.lock() = Some(Pending { shadow: out.clone(), glyphs, align, pad, compact: None });
-    Some(out)
+    let pad = (lead + key_len).saturating_sub(at + body.len());
+    Some(Pending { shadow: out, glyphs, align, pad, compact: cells.map(|n| (at, n, entry.text.clone())) })
 }
 
 /// DFHack 的 string:wrap（WrappedLabel、確認對話框都用它）把整段英文 text（`\n` 分段）依 width 格切成 lines，之後一行行畫：整段有譯文時依中文規則以同樣寬度重新換行，
@@ -687,13 +713,11 @@ fn wrap_plan(dict: &Dict, text: &[u8], width: usize, lines: &[Vec<u8>]) -> Optio
             return None;
         }
         let zh = if para.iter().any(u8::is_ascii_alphabetic) {
-            match dict.translate_sentences(para) {
-                Ok(pieces) => pieces.into_iter().map(|(t, _)| t).collect::<String>(),
-                Err(_) => {
-                    note_miss("dfhack", para);
-                    return None;
-                }
+            let (pieces, missing) = dict.translate_sentences(para);
+            if !missing.is_empty() {
+                note_miss("dfhack", para);
             }
+            pieces?.into_iter().map(|(t, _)| t).collect::<String>()
         } else {
             cp437::decode(para)
         };
@@ -1034,7 +1058,7 @@ unsafe extern "C" fn hook_wrap_lines(out: *mut u8, input: *const u8, width: i32)
         let parts = crate::lines::vec_items(input as usize);
         let text: Vec<u8> = parts.iter().flat_map(|&s| crate::lines::str_bytes(s)).copied().collect();
         let lines = crate::lines::vec_items(out as usize);
-        crate::lines::plan(&lines[before.min(lines.len())..], &text, width, &*dict, false);
+        crate::lines::plan(&lines[before.min(lines.len())..], &text, width, &*dict, false, |s| note_miss("wrap", s));
     }
 }
 
@@ -1121,7 +1145,7 @@ unsafe fn plan_report_lines(vec: usize) {
             };
             if text.iter().any(u8::is_ascii_alphabetic) && !unsafe { crate::lines::planned(lines) } {
                 let width = lines.iter().map(|&s| unsafe { crate::lines::str_bytes(s) }.len()).max().unwrap_or(0) as i32;
-                unsafe { crate::lines::plan(lines, text, width, dict, false) };
+                unsafe { crate::lines::plan(lines, text, width, dict, false, |s| note_miss("wrap", s)) };
             }
         }
         i = j;
@@ -1141,7 +1165,7 @@ unsafe fn plan_adventurer(vs: *mut u8, lists: &[(usize, i32)]) {
         for &(offset, width) in lists {
             let lines = crate::lines::vec_items(adv + offset);
             let n = lines.iter().position(|&s| crate::lines::str_bytes(s) == b" ").unwrap_or(lines.len());
-            crate::lines::plan(&lines[..n], &crate::lines::join(&lines[..n]), width, &*dict, false);
+            crate::lines::plan(&lines[..n], &crate::lines::join(&lines[..n]), width, &*dict, false, |s| note_miss("wrap", s));
         }
     }
 }
@@ -1171,6 +1195,15 @@ unsafe extern "C" fn hook_translate_name(name: *const u8, out: *mut StdString, c
     unsafe { orig(name, out, capitalize, only_first) };
     if ENABLED.load(Ordering::Relaxed) {
         unsafe { crate::names::note(name as usize, (*out).bytes()) };
+    }
+}
+
+/// 名字轉原文（名字音譯開著時才掛）：原函式照跑、原文照用；登記這個原名的音譯（見 names::note_native）。
+unsafe extern "C" fn hook_native_name(name: *const u8, out: *mut StdString) {
+    let orig: NativeNameFn = unsafe { std::mem::transmute(TRAMPOLINES[15].load(Ordering::Acquire)) };
+    unsafe { orig(name, out) };
+    if ENABLED.load(Ordering::Relaxed) {
+        crate::names::note_native(unsafe { (*out).bytes() });
     }
 }
 
@@ -1293,8 +1326,23 @@ fn label_tiles(n: usize, entry: &Entry, dict: &Dict, font: impl Fn(u8) -> i32) -
 
 #[cfg(test)]
 mod tests {
-    use super::{label_tiles, placed_align, wrap_plan, Columns, MissLog, MISS_BYTES, MISS_LIMIT};
+    use super::{dfhack_place, label_tiles, placed_align, wrap_plan, Columns, MissLog, MISS_BYTES, MISS_LIMIT};
     use crate::dict::Dict;
+
+    #[test]
+    fn dfhack_names_narrowed_by_font_width_are_drawn_by_the_overlay() {
+        // 整句貼圖開著：「幽默感不太在意」照字寬 10 格（一字兩格要 14 格）。DFHack 畫「 Abcdefghij 」（開頭一格空白）時，
+        // 字要交給整句貼圖畫在原文那 10 格，不能只寫一整段空白替身
+        crate::metrics::test_compact();
+        let mut d = Dict::default();
+        let chars = "他很有幽默感。不太在意";
+        assert!(d.set_glyphs(chars, vec![0; chars.chars().count() * 8 + 1]));
+        let entry = d.para_entry("幽默感不太在意").expect("compact entry");
+        let p = dfhack_place(&entry, 12, 1, 10, false).expect("fits");
+        assert_eq!(p.shadow, b"            ");
+        assert_eq!(p.compact, Some((1, 10, "幽默感不太在意".to_owned())));
+        assert!(dfhack_place(&entry, 10, 1, 8, false).is_none(), "放不進原文的格子照英文");
+    }
 
     #[test]
     fn alignment_follows_where_the_game_put_the_english() {

@@ -1,11 +1,50 @@
 en	zh-Hant	zh-Hans	align	row	note
-Dolomite	Dolomite	Dolomite			FUN_1401ddd50 暫停選單的音樂曲名（正在播放／上一首），照英文（第二十輪定案）；寫在這裡不寫全域：全域條目會擋住大寫退回，石材用途清單的 Dolomite（白雲岩）也變成英文
-Obsidian	Obsidian	Obsidian			同 Dolomite；不寫會退回小寫翻成「黑曜石」；術語例外：Obsidian
-Two Coins	Two Coins	Two Coins			同 Dolomite；不寫會被句型拼成「兩錢幣」
-Night Creature	Night Creature	Night Creature			同 Dolomite；不寫會翻成「暗夜生物」；術語例外：creature
-Forgotten Beast	Forgotten Beast	Forgotten Beast			同 Dolomite；不寫會翻成「遺忘巨獸」；術語例外：forgotten beast
-First Year	First Year	First Year			同 Dolomite；不寫會翻成「初年週期」
-Strange Moods	Strange Moods	Strange Moods			同 Dolomite；不寫會翻成「奇異心境」；術語例外：strange mood
-Mountainhome	Mountainhome	Mountainhome			同 Dolomite；不寫會翻成「山之家」；術語例外：Mountainhome
-Dwarf Fortress	Dwarf Fortress	Dwarf Fortress			同 Dolomite；不寫會翻成「矮人要塞」（遊戲名稱在別的畫面照翻）；術語例外：Dwarf Fortress、fortress
-Dwarf Fortress Adventure	Dwarf Fortress Adventure	Dwarf Fortress Adventure			同 Dolomite；不寫會翻成「矮人要塞冒險」；術語例外：Dwarf Fortress、fortress
+Dwarf Fortress	矮人要塞	矮人要塞	music		FUN_1401ddd50 暫停選單的配樂曲名（正在播放／上一首）。align music：設定視窗「配樂曲名翻成中文」開著才用譯文，關著照原文；寫在依畫面譯文不寫全域：全域條目會擋住大寫退回（石材用途清單的 Dolomite 是「白雲岩」），曲名 Night Creature、Forgotten Beast 也不該被全域字典翻成別的
+Dwarf Fortress Adventure	矮人要塞：冒險	矮人要塞：冒险	music		同 Dwarf Fortress
+Koganusan	科甘烏桑	科甘乌桑	music		同 Dwarf Fortress；矮人語（kogan 船），照名字音譯表音譯
+Expansive Cavern	廣闊洞穴	广阔洞穴	music		同 Dwarf Fortress
+Classic DF Main Theme	經典 DF 主題曲	经典 DF 主题曲	music		同 Dwarf Fortress
+Classic DF Title Theme	經典 DF 標題曲	经典 DF 标题曲	music		同 Dwarf Fortress
+Strike It Again	再度開鑿	再度开凿	music		同 Dwarf Fortress
+The Capital	首都	首都	music		同 Dwarf Fortress
+Bruising The Fat	挫傷脂肪	挫伤脂肪	music		同 Dwarf Fortress
+Life of Adventure	冒險人生	冒险人生	music		同 Dwarf Fortress
+Beyond The Gates	城門之外	城门之外	music		同 Dwarf Fortress
+Hamlet Memoirs	村莊回憶錄	村庄回忆录	music		同 Dwarf Fortress
+Night Creature	夜行生物	夜行生物	music		同 Dwarf Fortress
+Into The Pits	墜入深坑	坠入深坑	music		同 Dwarf Fortress
+Sisters of War	戰爭姊妹	战争姐妹	music		同 Dwarf Fortress
+Cannibal	食人者	食人者	music		同 Dwarf Fortress
+Pony Rider	小馬騎士	小马骑士	music		同 Dwarf Fortress
+Two Coins	兩枚硬幣	两枚硬币	music		同 Dwarf Fortress
+Losing is Fun	失敗就是樂趣	失败就是乐趣	music		同 Dwarf Fortress；同指南結尾的「失敗就是樂趣」
+Danger Room	危險房間	危险房间	music		同 Dwarf Fortress
+Death Spiral	死亡螺旋	死亡螺旋	music		同 Dwarf Fortress
+Hill Dwarf	丘陵矮人	丘陵矮人	music		同 Dwarf Fortress
+Forgotten Beast	遺忘巨獸	遗忘巨兽	music		同 Dwarf Fortress
+Drink & Industry	美酒與勤勉	美酒与勤勉	music		同 Dwarf Fortress；術語 Industry 勤勉
+Vile Force of Darkness	邪惡的黑暗大軍	邪恶的黑暗大军	music		同 Dwarf Fortress；同圍城公告的「邪惡的黑暗大軍」
+First Year	第一年	第一年	music		同 Dwarf Fortress
+Another Year	又一年	又一年	music		同 Dwarf Fortress
+Strike the Earth!	開鑿大地！	开凿大地！	music		同 Dwarf Fortress；術語 Strike the earth! 開鑿大地！
+Strange Moods	奇異心境	奇异心境	music		同 Dwarf Fortress
+Winter Entombs You	寒冬將你埋葬	寒冬将你埋葬	music		同 Dwarf Fortress
+Craftsdwarfship	矮人工藝	矮人工艺	music		同 Dwarf Fortress；craftsdwarfship 在價值觀句是「工藝」
+Mountainhome	山之家	山之家	music		同 Dwarf Fortress
+Haunted Lands	鬧鬼之地	闹鬼之地	music		同 Dwarf Fortress
+Cages & Chains	籠子與鎖鏈	笼子与锁链	music		同 Dwarf Fortress；術語 cage 籠子
+The Tavern Part I	酒館 第一部	酒馆 第一部	music		同 Dwarf Fortress
+The Tavern Part II	酒館 第二部	酒馆 第二部	music		同 Dwarf Fortress
+Toady One	Toady 一	Toady 一	music		同 Dwarf Fortress；Toady One 是作者 Tarn Adams 的網名；Toady 照原文、序數翻成中文
+Toady Two	Toady 二	Toady 二	music		同 Dwarf Fortress
+Toady Three	Toady 三	Toady 三	music		同 Dwarf Fortress
+Toady Four	Toady 四	Toady 四	music		同 Dwarf Fortress
+Toady Five	Toady 五	Toady 五	music		同 Dwarf Fortress
+Toady Six	Toady 六	Toady 六	music		同 Dwarf Fortress
+Roldeth	羅爾德斯	罗尔德斯	music		同 Dwarf Fortress；矮人語（苦惱），照名字音譯表音譯；寬度例外：暫停選單底下一行是「上一首：」＋曲名＋「 - 作曲者」照游標接著畫，曲名多一格只是後面的作曲者往右挪一格，框右邊還很寬（第二十八輪實機看過）
+Dolomite	白雲岩	白云岩	music		同 Dwarf Fortress；同石材名「白雲岩」；OpenCC 把岩改成巖是誤判，台灣也寫白雲岩
+Obsidian	黑曜石	黑曜石	music		同 Dwarf Fortress
+Suite Espagnole Part I	西班牙組曲 第一部	西班牙组曲 第一部	music		同 Dwarf Fortress；阿爾貝尼茲的《西班牙組曲》
+Suite Espagnole Part II	西班牙組曲 第二部	西班牙组曲 第二部	music		同 Dwarf Fortress
+Suite Espagnole Part III	西班牙組曲 第三部	西班牙组曲 第三部	music		同 Dwarf Fortress
+Nabidas	納比達斯	纳比达斯	music		同 Dwarf Fortress；插曲名，矮人語（nabid 鹽），照名字音譯表音譯；寬度例外：暫停選單底下一行是「正在播放間奏：」＋曲名＋「 - 作曲者」照游標接著畫，曲名多一格只是後面的作曲者往右挪一格，框右邊還很寬（第二十八輪實機看過）

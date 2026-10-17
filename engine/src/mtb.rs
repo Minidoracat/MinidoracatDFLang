@@ -757,8 +757,7 @@ mod tests {
     fn compact_widths_fill_lines_and_keep_color_segments_inside_the_box() {
         // 整句貼圖開著時中文一字 1.375 格、空白約 0.3 格：寬 10 格一行放得下 7 個字（一字兩格只能放 5 個）
         const RED: [u8; 3] = [4, 0, 1];
-        let (cjk, space) = ((UNIT * 11 / 8) as u16, (UNIT * 5 / 16) as u16);
-        crate::metrics::test_compact(|| "他很有幽默感。不太在意".chars().map(|c| (c, cjk)).chain([(' ', space)]).collect());
+        crate::metrics::test_compact();
         let first: String = wrap("他很有幽默感。不太在意", 10, GRAY, |c| c).into_iter().filter(|s| s.1 == 0).map(|s| s.2).collect();
         assert_eq!(first, "他很有幽默感。");
         // 換色的段從整格開始畫：「有幽默」接在「他很」（2.75 格）後面從第 3 格畫起；「感」從第 8 格起放得下，

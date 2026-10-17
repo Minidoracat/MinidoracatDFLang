@@ -1,0 +1,66 @@
+en	zh-Hant	zh-Hans	align	note
+Backspace	退格鍵	退格键	key	按鍵名（設定的按鍵分頁綠字欄、DFHack 快捷鍵提示），align key：設定視窗「按鍵名翻成中文」開著才用，修飾鍵 Shift+、Ctrl+、Alt+ 照原文接在前面；引擎照字型實際字寬比，比英文寬就照英文
+Enter	Enter	回车	key	繁中照鍵帽上的 Enter；簡中用大陸慣稱「回车」
+Space	空白鍵	空格键	key	兩岸用語不同（空白鍵／空格键）；一字兩格時比英文寬，只在整句貼圖照實際字寬放得下
+Delete	刪除鍵	删除键	key	全域 Delete 是存讀檔畫面的「刪除」鈕，按鍵名不進一般字典，只在按鍵寫法裡用
+Insert	插入鍵	插入键	key	
+Page Up	上一頁	上一页	key	
+Page Down	下一頁	下一页	key	
+Up	↑	↑	key	方向鍵用 CP437 的箭頭
+Down	↓	↓	key	
+Left	←	←	key	
+Right	→	→	key	
+Exclaim	!	!	key	符號鍵直接寫符號
+Quotedbl	"	"	key	
+Hash	#	#	key	
+Dollar	$	$	key	
+Percent	%	%	key	
+Ampersand	&	&	key	
+Quote	'	'	key	
+Leftparen	(	(	key	
+Rightparen	)	)	key	
+Asterisk	*	*	key	
+Plus	+	+	key	
+Comma	,	,	key	
+Minus	-	-	key	
+Period	.	.	key	
+Slash	/	/	key	全域 Slash 是攻擊動詞「砍」，按鍵名不進一般字典
+Colon	:	:	key	
+Semicolon	;	;	key	
+Less	<	<	key	
+Equals	=	=	key	
+Greater	>	>	key	
+Question	?	?	key	
+At	@	@	key	
+Leftbracket	[	[	key	
+Backslash	\	\	key	
+Rightbracket	]	]	key	
+Caret	^	^	key	
+Underscore	_	_	key	
+Backquote	`	`	key	
+Numpad 0	小鍵盤 0	小键盘 0	key	數字鍵盤：台灣、大陸都常稱小鍵盤／小键盘
+Numpad 1	小鍵盤 1	小键盘 1	key	
+Numpad 2	小鍵盤 2	小键盘 2	key	
+Numpad 3	小鍵盤 3	小键盘 3	key	
+Numpad 4	小鍵盤 4	小键盘 4	key	
+Numpad 5	小鍵盤 5	小键盘 5	key	
+Numpad 6	小鍵盤 6	小键盘 6	key	
+Numpad 7	小鍵盤 7	小键盘 7	key	
+Numpad 8	小鍵盤 8	小键盘 8	key	
+Numpad 9	小鍵盤 9	小键盘 9	key	
+Numpad Period	小鍵盤 .	小键盘 .	key	
+Numpad Divide	小鍵盤 /	小键盘 /	key	
+Numpad Multiply	小鍵盤 *	小键盘 *	key	
+Numpad Plus	小鍵盤 +	小键盘 +	key	
+Numpad Minus	小鍵盤 -	小键盘 -	key	
+Numpad Enter	小鍵盤 Enter	小键盘回车	key	
+Numpad Equals	小鍵盤 =	小键盘 =	key	
+Mwheel up	滾輪向上	滚轮向上	key	滑鼠滾輪（Ctrl+Mwheel up）
+Mwheel down	滾輪向下	滚轮向下	key	
+Capslock	大寫鎖定	大写锁定	key	
+Numlock	數字鎖定	数字锁定	key	
+Scrollock	捲動鎖定	滚动锁定	key	
+Print	截圖	截屏	key	Print Screen 鍵；兩岸用語不同
+Menu	選單	菜单	key	
+Help	說明	帮助	key	
+Pause	暫停	暂停	key	

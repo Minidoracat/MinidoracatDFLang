@@ -140,6 +140,20 @@ function set_bold(on)
     config:write()
 end
 
+-- 也翻成中文的選項與預設值（names 原生語言名字音譯、keys 按鍵名、music 配樂曲名、partial 段落缺句時其餘照翻）：
+-- 遊戲啟動時交給引擎（lua/loader.lua 的 start）。按鍵名預設開，其他預設關；dflang.json 只記和預設不同的
+local OPTIONS = {names = false, keys = true, music = false, partial = false}
+function option_on(config, name)
+    if config[name] == nil then return OPTIONS[name] end
+    return config[name] == true
+end
+function set_option(name, on)
+    if OPTIONS[name] == nil then return end
+    local config = json.open(CONFIG_FILE)
+    if on == OPTIONS[name] then config.data[name] = nil else config.data[name] = on end
+    config:write()
+end
+
 -- 未翻譯紀錄立即開關（引擎沒啟用時只改設定）；設定會記住，之後每次啟動都自動記錄，直到關閉
 function set_misses(on)
     local state = dfhack.BASE_G.DFLANG
@@ -202,8 +216,8 @@ local gui = require('gui')
 local widgets = require('gui.widgets')
 local dialogs = require('gui.dialogs')
 
--- 最長的英文標籤（Full-line text rendering:）25 字再多兩格：標籤和值之間要有兩格以上空白，整句貼圖才不會把值接在中文標籤後面
-local LABEL_WIDTH = 27
+-- 最長的英文標籤（Partly translated paragraphs:）29 字再多兩格：標籤和值之間要有兩格以上空白，整句貼圖才不會把值接在中文標籤後面
+local LABEL_WIDTH = 31
 local REPORT_HELP = 'Logging stays on after restarting the game until you turn it off. To report untranslated text, '
     .. 'attach dflang-misses.tsv to a GitHub issue, or paste its lines into the bug report discussion on the '
     .. 'Workshop page. The log may contain names from your world.'
@@ -214,11 +228,23 @@ local function engine_status()
     return ('Running (%s)'):format(LANG_NAMES[state.lang]), COLOR_LIGHTGREEN
 end
 
+-- 也翻成中文的選項開關（見 set_option）：重開遊戲生效
+local function option_toggle(window, t, name, key, label)
+    return widgets.ToggleHotkeyLabel{
+        frame = {t = t, l = 0},
+        key = key,
+        label = label,
+        label_width = LABEL_WIDTH,
+        initial_option = option_on(json.open(CONFIG_FILE).data, name),
+        on_change = function(on) set_option(name, on) window:changed() end,
+    }
+end
+
 DFLangWindow = defclass(DFLangWindow, widgets.Window)
 DFLangWindow.ATTRS{
     frame_title = 'DFLang Settings',
     -- 高度要放得下英文的回報說明（翻譯關掉時照英文畫，四到五列）
-    frame = {w = 70, h = 25},
+    frame = {w = 70, h = 29},
 }
 
 function DFLangWindow:init()
@@ -297,14 +323,19 @@ function DFLangWindow:init()
             initial_option = config.bold ~= false,
             on_change = function(on) set_bold(on) self:changed() end,
         },
+        -- 平常照原文的部分也翻成中文：原生語言的名字（音譯）、按鍵名、配樂曲名，以及段落缺句時其餘照翻（預設值見 OPTIONS）
+        option_toggle(self, 7, 'names', 'CUSTOM_N', 'Transliterate native names:'),
+        option_toggle(self, 8, 'keys', 'CUSTOM_K', 'Translate key names:'),
+        option_toggle(self, 9, 'music', 'CUSTOM_U', 'Translate music titles:'),
+        option_toggle(self, 10, 'partial', 'CUSTOM_P', 'Partly translated paragraphs:'),
         widgets.Label{
-            frame = {t = 7, l = 3},
+            frame = {t = 11, l = 3},
             text = {{text = 'Restart the game to apply these changes.', pen = COLOR_YELLOW}},
             visible = function() return self.restart end,
         },
         widgets.ToggleHotkeyLabel{
             view_id = 'misses',
-            frame = {t = 9, l = 0},
+            frame = {t = 13, l = 0},
             key = 'CUSTOM_M',
             label = 'Log untranslated text:',
             label_width = LABEL_WIDTH,
@@ -320,11 +351,11 @@ function DFLangWindow:init()
             end,
         },
         widgets.Label{
-            frame = {t = 10, l = 3},
+            frame = {t = 14, l = 3},
             text = {'Log file (in the game folder):', ' ', MISSES_FILE},
         },
         widgets.Label{
-            frame = {t = 11, l = 3},
+            frame = {t = 15, l = 3},
             text = {{text = function()
                         local kb = self:kb_now()
                         return kb and ('Log size: %d KB'):format(kb) or 'No log file yet'
@@ -333,14 +364,14 @@ function DFLangWindow:init()
                      pen = COLOR_YELLOW}},
         },
         widgets.HotkeyLabel{
-            frame = {t = 12, l = 0},
+            frame = {t = 16, l = 0},
             key = 'CUSTOM_F',
             label = 'Open the log folder',
             auto_width = true,
             on_activate = open_misses_folder,
         },
         widgets.HotkeyLabel{
-            frame = {t = 13, l = 0},
+            frame = {t = 17, l = 0},
             key = 'CUSTOM_C',
             label = 'Clear the log',
             auto_width = true,
@@ -355,14 +386,14 @@ function DFLangWindow:init()
             end,
         },
         widgets.WrappedLabel{
-            frame = {t = 15, l = 0, r = 0},
+            frame = {t = 19, l = 0, r = 0},
             text_to_wrap = REPORT_HELP,
             text_pen = COLOR_GREY,
         },
     }
 end
 
--- 語言、整句貼圖、字身、字重要重開遊戲才生效：在視窗裡改過、而且和這次啟動時的設定不同（或引擎沒在跑）時顯示黃字
+-- 語言、整句貼圖、字身、字重與也翻成中文的選項要重開遊戲才生效：在視窗裡改過、而且和這次啟動時的設定不同（或引擎沒在跑）時顯示黃字
 function DFLangWindow:changed()
     local state = dfhack.BASE_G.DFLANG
     local started = state and state.started
@@ -373,6 +404,9 @@ function DFLangWindow:changed()
     local config = json.open(CONFIG_FILE).data
     self.restart = next_lang() ~= state.lang or (config.overlay ~= false) ~= started.overlay
         or (config.overlay_size or DEFAULT_SIZE) ~= started.overlay_size or (config.bold ~= false) ~= (started.bold ~= false)
+    for name in pairs(OPTIONS) do
+        self.restart = self.restart or option_on(config, name) ~= (started[name] == true)
+    end
 end
 
 -- 紀錄檔大小與是否到了引擎的上限（misses_full：舊版引擎沒有這個欄位，當成沒滿）

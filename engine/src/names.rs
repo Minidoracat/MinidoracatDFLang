@@ -5,6 +5,9 @@
 //! （world.raws.language.words）。hook 讓原函式照跑、英文照用（版面、寬度、存檔都不動），另外依同樣的結構
 //! 組出中文名，登記「英文 → 中文」；字典查不到一段英文時（整句、佔位抓到的片段、傳說頁的連結字）再查這張表。
 //! 組中文時也照遊戲的規則拼一次英文，和原函式的輸出（不分大小寫）對得上才登記：遊戲改版或 MOD 改了字表時寧可照英文。
+//!
+//! 原名照原文；名字音譯開著時（見 translit.rs）英文名開頭的原名也音譯，另外攔組原名的函式（native_name），
+//! 把整個原名（「Rigòth Nildum」）的音譯登記進同一張表。
 
 use std::collections::HashMap;
 use std::sync::atomic::{AtomicU64, Ordering};
@@ -90,9 +93,52 @@ pub fn set_forms(nouns: &[(&str, &str)], adjs: &[(&str, &str)]) {
     let _ = FORMS.set([map(nouns), map(adjs), HashMap::new(), HashMap::new()]);
 }
 
-/// 字典查詞用：遊戲組過的英文名的中文。
+/// 字典查詞用：遊戲組過的英文名（名字音譯開著時也有原名）的中文。
 pub fn get(english: &[u8]) -> Option<Arc<str>> {
     NAMES.lock().get(english).cloned()
+}
+
+fn register(english: &[u8], zh: String) {
+    let mut names = NAMES.lock();
+    if names.len() >= NAMES_LIMIT {
+        names.clear();
+    }
+    names.insert(english.to_vec(), zh.into());
+    GENERATION.fetch_add(1, Ordering::Release);
+}
+
+/// hook 用：組原名的函式（native_name）把名字轉成原文 out 之後呼叫；名字音譯開著時登記整個原名的音譯。
+pub fn note_native(out: &[u8]) {
+    if let Some(table) = crate::translit::table() {
+        note_native_in(table, out);
+    }
+}
+
+/// 整個原名，和只有名的寫法：傳說頁的事件句、相關人物清單的連結字只寫名（`Onsmost`），遊戲不經過組原名的函式
+fn note_native_in(table: &crate::translit::Table, out: &[u8]) {
+    let first = out.split(|&c| c == b' ').next().filter(|f| f.len() < out.len() && f.first().is_some_and(|&c| c.is_ascii_alphabetic() || c >= 0x80));
+    for name in std::iter::once(out).chain(first) {
+        if name.is_empty() || NAMES.lock().contains_key(name) {
+            continue;
+        }
+        if let Some(zh) = crate::translit::name_with(table, name) {
+            register(name, zh);
+        }
+    }
+}
+
+/// 英文名開頭的原名、綽號（head，不含結尾的空白）接上字表組的中文名：名字音譯開著時原名也音譯、以「·」相接
+/// （「翁斯莫斯特·年輕意志·鑲寶」；綽號在最後時空一格），否則照原文空一格（「Onsmost 年輕意志·鑲寶」）。
+fn with_head(head: &[u8], zh: &str) -> String {
+    with_head_in(crate::translit::table(), head, zh)
+}
+
+fn with_head_in(table: Option<&crate::translit::Table>, head: &[u8], zh: &str) -> String {
+    match table.and_then(|t| crate::translit::name_with(t, head)) {
+        Some(h) if head.ends_with(b"'") || head.ends_with(b"\"") => format!("{h} {zh}"),
+        Some(h) => format!("{h}·{zh}"),
+        None => format!("{} {zh}", cp437::decode(head)),
+    }
 }
 
 pub fn generation() -> u64 {
@@ -183,7 +229,7 @@ fn parse_with(forms: &Forms, english: &[u8]) -> Option<String> {
         (true, false) => rest,
         (true, true) => return None,
     };
-    Some(if head == 0 { zh } else { format!("{} {zh}", cp437::decode(&originals[..head].join(&b' '))) })
+    Some(if head == 0 { zh } else { with_head(&originals[..head].join(&b' '), &zh) })
 }
 
 /// 測試用：直接登記一個名字（不經 translate_name）。
@@ -305,16 +351,11 @@ pub unsafe fn note(name: usize, out: &[u8]) {
     let Some((en, zh)) = [Some((en, zh)), first].into_iter().flatten().find(|(en, _)| ends(en)) else { return };
     let head = &out[..out.len() - en.len()];
     let zh = match head.strip_suffix(b" ") {
-        Some(head) => format!("{} {zh}", cp437::decode(head)),
+        Some(head) => with_head(head, &zh),
         None if head.is_empty() => zh,
         None => return,
     };
-    let mut names = NAMES.lock();
-    if names.len() >= NAMES_LIMIT {
-        names.clear();
-    }
-    names.insert(out.to_vec(), zh.into());
-    GENERATION.fetch_add(1, Ordering::Release);
+    register(out, zh);
 }
 
 #[cfg(test)]
@@ -438,5 +479,26 @@ mod tests {
         assert_eq!(p(b"Urist Metalsilver the Infinite").as_deref(), Some("Urist 金屬銀·無盡"), "原名照原文");
         assert_eq!(p(b"list of planets"), None, "小寫開頭的片語不是名字");
         assert_eq!(p(b"The Shiny Planet"), None, "有字查不到就整個照英文");
+    }
+
+    #[test]
+    fn transliterated_heads_join_the_chinese_name() {
+        let table: crate::translit::Table =
+            [("u", "烏"), ("ri", "里"), ("s", "斯"), ("t", "特")].into_iter().map(|(k, v)| (k.as_bytes().to_vec(), v.to_owned())).collect();
+        assert_eq!(with_head_in(Some(&table), b"Urist", "青銅公會"), "烏里斯特·青銅公會");
+        assert_eq!(with_head_in(Some(&table), b"Urist `Bob'", "青銅公會"), "烏里斯特 `Bob' 青銅公會", "綽號在最後時空一格");
+        assert_eq!(with_head_in(Some(&table), b"Kib", "青銅公會"), "Kib 青銅公會", "音譯不出來時原名照原文");
+        assert_eq!(with_head_in(None, b"Urist", "青銅公會"), "Urist 青銅公會", "選項關著");
+    }
+
+    #[test]
+    fn native_first_names_are_registered_with_the_whole_name() {
+        let table: crate::translit::Table = [("on", "翁"), ("s", "斯"), ("mo", "莫"), ("t", "特"), ("e", "埃"), ("to", "托"), ("g", "格")]
+            .into_iter().map(|(k, v)| (k.as_bytes().to_vec(), v.to_owned())).collect();
+        note_native_in(&table, b"Onsmost Etog");
+        assert_eq!(get(b"Onsmost Etog").as_deref(), Some("翁斯莫斯特·埃托格"));
+        assert_eq!(get(b"Onsmost").as_deref(), Some("翁斯莫斯特"), "傳說頁事件句的連結字只寫名");
+        note_native_in(&table, b"`Gem' Etog");
+        assert_eq!(get(b"`Gem'"), None, "開頭是綽號時不另外登記");
     }
 }

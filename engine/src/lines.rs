@@ -3,7 +3,8 @@
 //! 遊戲用 wrap_text（內部是 wrap_lines，也有直接呼叫它的）把一句英文依寬度切成好幾行（vector<string*>），再一行一行畫，整句比對只看得到片段。
 //! 這裡在切好之後整段查字典（查不到就逐句查，見 Dict::translate_sentences）：有譯文就依中文規則重新換行，
 //! 第 k 行中文交給第 k 行英文（載體）畫，多出來的英文行不畫；中文行比英文多時掛在最後一行下面。
-//! 沒有譯文的行登記成「照畫英文」，不拿片段查字典。和段落一樣只在畫字時換（見 mtb.rs），遊戲資料不改。
+//! 沒有譯文的行登記成「照畫英文」，不拿片段查字典（段落缺句時其餘照翻開著時，有幾句翻得出來就照翻、其餘照原文接在譯文裡）。
+//! 和段落一樣只在畫字時換（見 mtb.rs），遊戲資料不改。
 //! 大部分提示在遊戲啟動時（靜態初始化，早於本引擎載入）就切好了：enable 時從呼叫 wrap_text 的程式碼找出來補做。
 
 use std::collections::HashMap;
@@ -75,21 +76,25 @@ pub unsafe fn join(lines: &[usize]) -> Vec<u8> {
     text
 }
 
-/// 一句切成 n 行時每行的計畫；沒有譯文或缺字圖時回傳 None。
-fn compute(text: &[u8], width: i32, n: usize, dict: &Dict) -> Option<Arc<[Plan]>> {
-    let translation: String = dict.translate_sentences(text).ok()?.into_iter().map(|(t, _)| t).collect();
+/// 一句切成 n 行時每行的計畫（沒有譯文或缺字圖時是 None），以及查不到的句子（段落缺句時其餘照翻開著、照原文接在譯文裡的句子）。
+fn compute(text: &[u8], width: i32, n: usize, dict: &Dict) -> (Option<Arc<[Plan]>>, Vec<Vec<u8>>) {
+    let (pieces, missing) = dict.translate_sentences(text);
+    let Some(pieces) = pieces else { return (None, missing) };
+    let translation: String = pieces.into_iter().map(|(t, _)| t).collect();
     // 提示文字沒有換色；顏色沿用遊戲畫這一行時的顏色
     let segments = crate::mtb::wrap(&translation, width.max(1) as usize, [0; 3], |c| c);
     let mut pieces: Vec<Vec<Piece>> = (0..n).map(|_| Vec::new()).collect();
     for (px, py, t, _) in segments {
         let carrier = (py as usize).min(n - 1);
-        pieces[carrier].push(Piece { dx: px, dy: py - carrier as i32, color: None, entry: dict.para_entry(&t)? });
+        let Some(entry) = dict.para_entry(&t) else { return (None, missing) };
+        pieces[carrier].push(Piece { dx: px, dy: py - carrier as i32, color: None, entry });
     }
-    Some(pieces.into_iter().map(|p| if p.is_empty() { Plan::Skip } else { Plan::Draw(p.into()) }).collect())
+    (Some(pieces.into_iter().map(|p| if p.is_empty() { Plan::Skip } else { Plan::Draw(p.into()) }).collect()), missing)
 }
 
 /// 原文 text 切成的這幾行（字串位址）登記畫字計畫；回傳這句有沒有譯文。
-pub unsafe fn plan(lines: &[usize], text: &[u8], width: i32, dict: &Dict, keep: bool) -> bool {
+/// 段落缺句時其餘照翻開著、照原文接在譯文裡的句子在第一次算計畫時交給 note_miss（整句沒有譯文的照舊畫到時才記）。
+pub unsafe fn plan(lines: &[usize], text: &[u8], width: i32, dict: &Dict, keep: bool, mut note_miss: impl FnMut(&[u8])) -> bool {
     if lines.is_empty() {
         return false;
     }
@@ -98,7 +103,16 @@ pub unsafe fn plan(lines: &[usize], text: &[u8], width: i32, dict: &Dict, keep: 
         if cache.len() > PLANS_LIMIT {
             cache.clear();
         }
-        cache.entry((text.to_vec(), width, lines.len())).or_insert_with(|| compute(text, width, lines.len(), dict)).clone()
+        cache
+            .entry((text.to_vec(), width, lines.len()))
+            .or_insert_with(|| {
+                let (plans, missing) = compute(text, width, lines.len(), dict);
+                if plans.is_some() {
+                    missing.iter().for_each(|m| note_miss(m));
+                }
+                plans
+            })
+            .clone()
     };
     let translated = plans.is_some();
     // 沒有譯文：每一行照畫英文，畫到時才把整句記成未翻譯（啟動時補登記的提示不是每句都會看到）
@@ -134,7 +148,7 @@ pub unsafe fn planned(lines: &[usize]) -> bool {
 
 /// 遊戲啟動時就切好的提示：從呼叫 wrap_text 的程式碼找出 (切好的行, 原文, 寬度)，補登記。
 /// 只在切好的行和原文的單字完全相同時才算（找錯字串常數、或同一個 vector 接了好幾句時就略過）。
-/// 回傳有譯文的句數。
+/// 回傳有譯文的句數。這時還沒畫到，段落缺句時其餘照翻接上的原文句子不記進未翻譯紀錄。
 pub unsafe fn plan_static(wrap_text: usize, dict: &Dict) -> usize {
     let words = |b: &[u8]| b.split(|&c| c == b' ').filter(|w| !w.is_empty()).map(<[u8]>::to_vec).collect::<Vec<_>>();
     let mut translated = 0;
@@ -142,7 +156,7 @@ pub unsafe fn plan_static(wrap_text: usize, dict: &Dict) -> usize {
         let lines = unsafe { vec_items(vector) };
         let Some(text) = crate::scan::rdata_cstr(string).filter(|t| !lines.is_empty() && t.len() < 4096) else { continue };
         let joined: Vec<u8> = lines.iter().flat_map(|&s| unsafe { str_bytes(s) }.iter().copied()).collect();
-        if words(&joined) == words(text) && unsafe { plan(lines, text, width, dict, true) } {
+        if words(&joined) == words(text) && unsafe { plan(lines, text, width, dict, true, |_| {}) } {
             translated += 1;
         }
     }
@@ -196,7 +210,7 @@ mod tests {
         // 英文切成 3 行；中文 22 格在寬 12 格切成 2 行：第 1、2 行英文各畫一行中文，第 3 行不畫
         let en = Strings::new(&["Establish ", "burrows to ", "organize work."]);
         let addrs = en.addrs();
-        assert!(unsafe { plan(&addrs, b"Establish burrows to organize work.", 12, &d, false) });
+        assert!(unsafe { plan(&addrs, b"Establish burrows to organize work.", 12, &d, false, |_| {}) });
         assert_eq!(kinds(&addrs), ["0,0", "0,0", "skip"]);
     }
 
@@ -208,7 +222,7 @@ mod tests {
         // 英文 1 行、中文在寬 4 格切成 3 行：都由唯一的英文行畫，往下 0、1、2 列
         let en = Strings::new(&["one two"]);
         let addrs = en.addrs();
-        assert!(unsafe { plan(&addrs, b"one two", 4, &d, false) });
+        assert!(unsafe { plan(&addrs, b"one two", 4, &d, false, |_| {}) });
         assert_eq!(kinds(&addrs), ["0,0 0,1 0,2"]);
     }
 
@@ -217,7 +231,7 @@ mod tests {
         let d = Dict::default();
         let mut en = Strings::new(&["Hold left ", "button."]);
         let addrs = en.addrs();
-        assert!(!unsafe { plan(&addrs, b"Hold left button.", 10, &d, false) });
+        assert!(!unsafe { plan(&addrs, b"Hold left button.", 10, &d, false, |_| {}) });
         // 畫到時記整句，不記片段
         assert_eq!(kinds(&addrs), ["missing Hold left button.", "missing Hold left button."]);
         // 位址還在、內容變了（行字串釋放後給別的字串用）：計畫不算數

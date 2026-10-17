@@ -38,10 +38,12 @@ thread_local! {
     static TEST_COMPACT: std::cell::Cell<bool> = const { std::cell::Cell::new(false) };
 }
 
-/// 測試用：這個執行緒改用 compact 字寬（字寬表全程只設一次）
+/// 測試用：這個執行緒改用 compact 字寬。字寬表全程只設一次，各測試共用這一份：
+/// 「他很有幽默感。不太在意」一字 1.375 格（88 單位）、空白約 0.3 格（20 單位）
 #[cfg(test)]
-pub fn test_compact(advances: impl FnOnce() -> HashMap<char, u16>) {
-    let _ = ADVANCES.set(advances());
+pub fn test_compact() {
+    let (cjk, space) = ((UNIT * 11 / 8) as u16, (UNIT * 5 / 16) as u16);
+    let _ = ADVANCES.set("他很有幽默感。不太在意".chars().map(|c| (c, cjk)).chain([(' ', space)]).collect());
     TEST_COMPACT.with(|c| c.set(true));
 }
 

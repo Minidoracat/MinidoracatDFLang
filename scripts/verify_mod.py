@@ -7,7 +7,8 @@
 1. data/strings/*.tsv（整句）、data/rules/*.tsv（句型）與 data/screens/*.tsv（依畫面套用的整句，檔名是畫面）：
    欄位 en, zh-Hant, zh-Hans, align, note（screens 在 align 後多一欄 row：限定第幾列，空白或非負整數）；
    原文能用 CP437 表示（遊戲只會畫 CP437），同一類不重複（screens 是同一個畫面檔裡不重複）；align 只能是空、c、r（句型與字串另可寫 inner：只用在佔位裡；
-   tail：事件句尾的原因片語，引擎去掉再翻；字串另可寫 title：書名用詞，只給書名句型的 {$n} 用，自成一類）；data/rules/_events.tsv、zz_events.tsv 與 data/events 一致（由 scripts/gen_events.py 產生）；
+   tail：事件句尾的原因片語，引擎去掉再翻；字串另可寫 title：書名用詞，只給書名句型的 {$n} 用，自成一類；key：按鍵名，按鍵名選項開著才用；
+   screens 另可寫 music：配樂曲名，選項關著時照原文）；data/rules/_events.tsv、zz_events.tsv 與 data/events 一致（由 scripts/gen_events.py 產生）；
    screens 的檔名只用英數、底線、點
 2. 句型佔位：原文至少一個 {1}～{9}、每個只出現一次、不能相鄰；樣板要有英文字、限定佔位（{#n}、{@n}、{%n}，書名的 {$n}、{&n}、{=n}）或頭尾固定字，
    否則會套到幾乎所有字串；兩種譯文用的佔位都是原文有的、各最多一次，除了 {@n} 都要用到
@@ -15,17 +16,19 @@
 4. 開頭空白：譯文開頭的空白數與原文相同（那是遊戲的縮排）；只套在佔位裡的 inner 句型與書名用詞（title）不算（不會單獨畫出）；
    置中（align c）的不算：引擎會重新置中，中文字兩格寬、原文格數是單數時多半格只能偏一邊，可以用開頭空白往右挪一格
 5. 寬度：譯文格數不超過原文（CP437 字一格，其他字兩格），超出會蓋到旁邊的介面；句型只算樣板本身，
-   佔位填入後超寬的情況由引擎在執行時退回英文；align 寫 inner、title 的只接進佔位、不單獨畫，不限。名稱檔（strings/names_*.tsv）至少可用 6 格：
+   佔位填入後超寬的情況由引擎在執行時退回英文；align 寫 inner、title 的只接進佔位、不單獨畫，不限；key 的按鍵名由引擎照字型實際字寬比，
+   放不下照英文，也不限。名稱檔（strings/names_*.tsv）至少可用 6 格：
    短英文名（ogre、hydra、kiwi）的通行中文名多半是三個字。sentences_*、ann_*、speech_*、combat_*、desc_*、health_*、事件句（_events、zz_events、events_*）不限：
    人物頁、訪客說明、公告、說話句、戰報、外觀與健康、傳說模式的段落由引擎依框寬重新換行
 6. 文字檔 UTF-8、無 BOM、LF（遊戲端逐位元組讀，BOM 與 \\r 會黏進原文或譯文）
-7. 字型：workshop.json 每包的 fonts 正好有 bold、regular 兩種字重；每種字重都要能畫譯文與吉祥物名牌（語言標籤、作者名）用到的字
+7. 字型：workshop.json 每包的 fonts 正好有 bold、regular 兩種字重；每種字重都要能畫譯文、名字音譯表與吉祥物名牌（語言標籤、作者名）用到的字
    （該字重的字型清單 temp/fonts/ 至少一份有）
 8. 吉祥物：art/mascot.png 是 8-bit RGBA PNG（引擎只讀這種）；每包的 mascot_label 是全形字
 9. scripts/workshop.json：繁、簡各一項；ID、名稱、說明、作者只用 ASCII（DF 以 CP437 讀 info.txt）
-10. engine/patterns.tsv 有引擎要 hook 的九個函式（四個畫字函式、段落排版、錨定貼圖、自動換行、彩色文字框、世界生成名稱）
+10. engine/patterns.tsv 有引擎要 hook 的函式（四個畫字函式、段落排版、錨定貼圖、自動換行、彩色文字框、世界生成名稱與原名）
 11. dist/ 已建置時：每包檔案齊全（含 dflang/fonts/bold/、regular/ 各至少一份字型、fonts/ 底下沒有其他東西）、沒有雜檔，
-    且字典、句型與 data/ 一致，info.txt（版本號）與 workshop.json 一致：改了版本號沒重建就上傳，包裡還是舊版號（沒建置則略過）
+    且字典、句型、名字音譯表與 data/ 一致，info.txt（版本號）與 workshop.json 一致：改了版本號沒重建就上傳，包裡還是舊版號（沒建置則略過）
+12. 名字音譯表 data/translit/translit.tsv：欄位 en, zh-Hant, zh-Hans, note；音節只有小寫英文字母、不重複，繁簡都有
 """
 import re
 import sys
@@ -33,7 +36,7 @@ from pathlib import Path
 
 from fontTools.ttLib import TTFont
 
-from build import DIST, FONTS, KINDS, WEIGHTS, dict_lines, info_txt, load_config, name_lines, read_rows
+from build import DIST, FONTS, KINDS, WEIGHTS, dict_lines, info_txt, load_config, name_lines, read_rows, translit_lines
 from gen_events import build as build_events
 from cp437 import BYTE_OF, cells, encodable
 
@@ -42,13 +45,14 @@ HEADER = ["en", "zh-Hant", "zh-Hans", "align", "note"]
 # data/screens 多一欄 row：只在畫面第幾列套用（空白是任何一列），同畫面同字不同意思時用
 SCREEN_HEADER = ["en", "zh-Hant", "zh-Hans", "align", "row", "note"]
 NAME_HEADER = ["word", "pos", "en", "zh-Hant", "zh-Hans", "note"]
+TRANSLIT_HEADER = ["en", "zh-Hant", "zh-Hans", "note"]
 HOOKS = ("addst", "addst_flag", "top_addst", "addcoloredst", "mtb_set_width", "add_anchored_tile", "wrap_text", "wrap_lines",
-         "ctb_add_string", "translate_name", "string_resize", "adv_appearance", "adv_personality", "adv_log", "adv_talk_log")
+         "ctb_add_string", "translate_name", "native_name", "string_resize", "adv_appearance", "adv_personality", "adv_log", "adv_talk_log")
 PACKAGE_SUFFIXES = {".txt", ".tsv", ".lua", ".dll", ".otf", ".md", ".png"}
 # {1}～{9}；{#1} 只收數字、{@1} 只收字典裡的字詞、{%1} 只收翻得出來的片段、{~1} 同 {1} 但譯文可省略、{^1} 只收大寫開頭的名字、
-# {*1} 只收每個字大寫、第一個字不在字典裡的人名、{?1} 同 {1} 但遊戲組的英文名拆回中文；
+# {*1} 只收每個字大寫、第一個字不在字典裡的人名、{?1} 同 {1} 但遊戲組的英文名拆回中文、{!1} 同 {1} 但原名在名字音譯開著時音譯；
 # 書名句型的 {$1} 收書名的主題、{&1}、{=1} 收 raws 字表的名詞、形容詞；譯文可寫 {1+時}（佔位譯文沒有時間、原因助詞結尾時補字）
-PLACEHOLDER = re.compile(r"\{[#@%~^$&=*?]?([1-9])(?:\+([^{}]+))?\}")
+PLACEHOLDER = re.compile(r"\{[#@%~^$&=*?!]?([1-9])(?:\+([^{}]+))?\}")
 MARKUP = re.compile(r"\[(?:[RBP]|C:\d+:\d+:\d+)\]")  # 段落的換行與換色標記
 # 由引擎依框寬重新換行的檔案（檔名開頭）：譯文寬度不限
 WRAPPED = ("sentences_", "ann_", "speech_", "combat_", "desc_", "health_", "_events", "zz_events", "events_", "legends_", "zz_legends_",
@@ -127,12 +131,26 @@ def main() -> int:
         seen_names.add(key)
     check(not bad_name_headers and not bad_names, f"names 字表（{len(name_files)} 檔、{len(names)} 條：代號＋詞性不重複、繁簡都有）",
           bad_name_headers + bad_names)
+    # 名字音譯表（見引擎 translit.rs）：音節是小寫英文字母，繁簡都要有
+    translit_files = sorted((ROOT / "data/translit").glob("*.tsv"))
+    bad_translit_headers = [f"translit/{f.name}" for f in translit_files
+                            if f.read_text(encoding="utf-8").split("\n", 1)[0].split("\t") != TRANSLIT_HEADER]
+    translit = [r for r in read_rows("translit") if f"translit/{r['file']}" not in bad_translit_headers]
+    seen_syllables: set[str] = set()
+    bad_translit = []
+    for r in translit:
+        if None in r.values() or None in r or not re.fullmatch(r"[a-z]+", r["en"]) or r["en"] in seen_syllables \
+                or any(not r[lang].strip() for lang in langs):
+            bad_translit.append(f"translit/{r['file']}: {r.get('en')!r}")
+        seen_syllables.add(r["en"])
+    check(translit_files and not bad_translit_headers and not bad_translit,
+          f"名字音譯表（{len(translit)} 個音節：小寫英文字母、不重複、繁簡都有）", bad_translit_headers + bad_translit)
 
     seen: dict[tuple, dict] = {}
     dupes, bad_src, bad_align = [], [], []
     for r in rows:
         kind = r["file"].split("/")[0]
-        key = (r["file"] if kind == "screens" else kind, r["en"], r["align"] if r["align"] in ("tail", "title") else "")  # tail 片語、書名用詞自成一類（引擎另外存）
+        key = (r["file"] if kind == "screens" else kind, r["en"], r["align"] if r["align"] in ("tail", "title", "key") else "")  # tail 片語、書名用詞、按鍵名自成一類（引擎另外存）
         first = seen.get(key)
         # 同一條句型一份只給佔位用（inner）、一份整句也用，譯文相同時不衝突（傳說事件短語與冒險日誌標題共用）
         same_rule = first is not None and kind == "rules" and (first["align"] == "inner") != (r["align"] == "inner") \
@@ -143,11 +161,11 @@ def main() -> int:
         if not r["en"] or not encodable(r["en"]):
             bad_src.append(f"{r['file']}: {r['en']!r}")
         if r["align"] not in ("", "c", "r") and not (kind in ("rules", "strings") and r["align"] in ("inner", "tail")) \
-                and not (kind == "strings" and r["align"] == "title"):
+                and not (kind == "strings" and r["align"] in ("title", "key")) and not (kind == "screens" and r["align"] == "music"):
             bad_align.append(f"{r['file']}: {r['en']!r} align={r['align']!r}")
     check(not dupes, "原文不重複", dupes)
     check(not bad_src, "原文能用 CP437 表示", bad_src)
-    check(not bad_align, "align 只能是空、c、r（句型與字串另可寫 inner、tail）", bad_align)
+    check(not bad_align, "align 只能是空、c、r（句型與字串另可寫 inner、tail，字串另可寫 title、key，依畫面譯文另可寫 music）", bad_align)
     bad_ph = [f"{r['file']}: {r['en']!r} {p}" for r in data["rules"] if (p := placeholder_problem(r, langs))]
     check(not bad_ph, f"句型佔位寫法（{len(data['rules'])} 條）", bad_ph)
     events, _ = build_events()
@@ -161,9 +179,9 @@ def main() -> int:
               if r[lang] and r.get("align") not in ("inner", "title", "c") and leading_spaces(r[lang]) != leading_spaces(r["en"])]
     check(not indent, "譯文開頭空白與原文相同（inner、置中除外）", indent)
     def room(r: dict) -> int | None:
-        """譯文最多幾格；None 是不限：WRAPPED 開頭的檔案由引擎依框寬重新換行；inner 只接進句型的佔位，不單獨畫；
-        note 寫「寬度例外」的條目已在實機確認右邊有空位（欄名「Adv」只有 3 格，「冒險」要 4 格）"""
-        if r["file"].split("/")[1].startswith(WRAPPED) or r.get("align") in ("inner", "title") or "寬度例外" in (r.get("note") or ""):
+        """譯文最多幾格；None 是不限：WRAPPED 開頭的檔案由引擎依框寬重新換行；inner 只接進句型的佔位，不單獨畫；key 的按鍵名由引擎
+        照字型實際字寬比、放不下照英文；note 寫「寬度例外」的條目已在實機確認右邊有空位（欄名「Adv」只有 3 格，「冒險」要 4 格）"""
+        if r["file"].split("/")[1].startswith(WRAPPED) or r.get("align") in ("inner", "title", "key") or "寬度例外" in (r.get("note") or ""):
             return None
         en = cells(template(r["en"]))
         return max(en, 6) if r["file"].startswith("strings/names_") else en
@@ -193,7 +211,7 @@ def main() -> int:
         if sorted(item.get("fonts", {})) != sorted(WEIGHTS):
             check(False, f"{lang} 字型：workshop.json 的 fonts 要正好有 {'、'.join(WEIGHTS)}（lua/loader.lua 照這些資料夾名找）")
             continue
-        used = {c for r in rows for c in r[lang] if c not in BYTE_OF}
+        used = {c for r in [*rows, *translit] for c in r[lang] if c not in BYTE_OF}
         used |= set(item.get("mascot_label", "") + config["author"]) - {" "}  # 名牌由引擎用字型畫，英數也要有
         for weight in WEIGHTS:
             fonts = [FONTS / f for f in item["fonts"][weight]]
@@ -227,9 +245,9 @@ def main() -> int:
             continue
         suffix = item["lang"].lower().replace("-", "_")
         required = ["info.txt", f"scripts_modinstalled/dflang_{suffix}.lua", "scripts_modinstalled/dflang.lua",
-                    "dflang/dflang.dll", *(f"dflang/{kind}.tsv" for kind in KINDS), "dflang/names.tsv", "dflang/glyphs.txt",
-                    "dflang/patterns.tsv", "dflang/LICENSE.txt", "dflang/LICENSE-fonts.txt", "dflang/THIRD-PARTY-LICENSES.txt",
-                    "dflang/CREDITS.md", "dflang/mascot.png"]
+                    "dflang/dflang.dll", *(f"dflang/{kind}.tsv" for kind in KINDS), "dflang/names.tsv", "dflang/translit.tsv",
+                    "dflang/glyphs.txt", "dflang/patterns.tsv", "dflang/LICENSE.txt", "dflang/LICENSE-fonts.txt",
+                    "dflang/THIRD-PARTY-LICENSES.txt", "dflang/CREDITS.md", "dflang/mascot.png"]
         font_dir = out / "dflang/fonts"
         lacking = [p for p in required if not (out / p).is_file()] + [f"dflang/fonts/{w}/*.otf" for w in WEIGHTS
                                                                       if not list((font_dir / w).glob("*.otf"))]
@@ -238,12 +256,13 @@ def main() -> int:
         stale = []
         built_files = {f"dflang/{kind}.tsv": dict_lines(kind, data[kind], item["lang"]) for kind in KINDS}
         built_files["dflang/names.tsv"] = name_lines(names, item["lang"])
+        built_files["dflang/translit.tsv"] = translit_lines(translit, item["lang"])
         built_files["info.txt"] = info_txt(item, config)
         for path, expected in built_files.items():
             built = out / path
             if built.is_file() and built.read_text(encoding="utf-8") != expected:
                 stale.append(f"{path} 過期，重跑 build.py")
-        check(not lacking and not stray and not stale, f"{item['lang']} dist 檔案齊全、無雜檔、字典、句型與版本和 data/、workshop.json 一致",
+        check(not lacking and not stray and not stale, f"{item['lang']} dist 檔案齊全、無雜檔，字典、句型、名字音譯表與版本和 data/、workshop.json 一致",
               lacking + stray + stale)
 
     for ok, msg in results:

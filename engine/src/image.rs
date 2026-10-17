@@ -153,7 +153,7 @@ fn text_line(glyphs: &Glyphs, text: &str, cell_w: usize, line_h: usize) -> Resul
 }
 
 /// 吉祥物圖縮成高 rows 格；底部置中疊一個名牌，壓住圖的下緣半個名牌高。
-/// 名牌第一行是語言標籤（label，和介面上的中文字同大），第二行是作者名（credit，小一號，可空）。
+/// 名牌第一行是語言標籤（label，和介面上的中文字同大），第二行小一號（credit：作者名與版本號，可空）。
 /// 輸出寬補透明到整格，回傳寬幾格。
 pub fn mascot(src: &Path, out: &Path, cell_w: usize, cell_h: usize, rows: usize, label: &str, credit: &str, fonts: &[Font])
     -> Result<usize, String> {

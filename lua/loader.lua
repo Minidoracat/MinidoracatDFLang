@@ -4,7 +4,7 @@
 
 local LANG = '@LANG@'
 local MOD_ID = '@MOD_ID@'
--- workshop.json 的 version.displayed（設定視窗的標題顯示，玩家回報時看得到自己裝的是哪一版）
+-- workshop.json 的 version.displayed（標題畫面的名牌、設定視窗的標題顯示，玩家回報時看得到自己裝的是哪一版）
 local VERSION = '@VERSION@'
 local PACKAGES = {['zh-Hant'] = 'cat_df_lang_zh_hant', ['zh-Hans'] = 'cat_df_lang_zh_hans'}
 -- 會攔同一批寫字函式的其他翻譯引擎，依序檢查。DFCN 是遊戲啟動時由 dfhooks 載入的 DLL，看遊戲目錄有沒有它的入口檔
@@ -31,7 +31,7 @@ local CONFIG_FILE = 'dfhack-config/dflang.json'
 local ATLAS_FILE = 'dfhack-config/dflang-atlas-%s.png'
 -- dflang misses on 之後每次啟動都把畫面上沒翻到的字串記到這裡（dflang.lua 共用同一個路徑）
 local MISSES_FILE = 'dfhack-config/dflang-misses.tsv'
--- 標題畫面左下角的吉祥物：本包 dflang/mascot.png 依目前格子大小縮成高 MASCOT_ROWS 格，底部疊上名牌（語言標籤＋作者名）
+-- 標題畫面左下角的吉祥物：本包 dflang/mascot.png 依目前格子大小縮成高 MASCOT_ROWS 格，底部疊上名牌（語言標籤＋作者名與版本號）
 local MASCOT_FILE = 'dfhack-config/dflang-mascot-%s.png'
 local MASCOT_ROWS = 12
 local MASCOT_LABEL = '@MASCOT_LABEL@'
@@ -205,8 +205,8 @@ local function load_mascot(engine, dir)
     if not dfhack.filesystem.isfile(src) then return nil end
     local w, h = cell_size()
     local png = MASCOT_FILE:format(LANG)
-    -- 名牌是設計過的樣子，一律用粗體，不跟著字重設定
-    local cols, err = engine.render_mascot(src, png, w, h, MASCOT_ROWS, MASCOT_LABEL, AUTHOR, font_files(dir, 'bold'))
+    -- 名牌是設計過的樣子，一律用粗體，不跟著字重設定。第二行是作者名與版本號（回報問題時，標題畫面就看得到自己裝的是哪一版）
+    local cols, err = engine.render_mascot(src, png, w, h, MASCOT_ROWS, MASCOT_LABEL, ('%s v%s'):format(AUTHOR, VERSION), font_files(dir, 'bold'))
     if not cols then
         fail('吉祥物圖片讀取失敗：%s', err)
         return nil
@@ -459,6 +459,12 @@ local function start()
 
     local handles, glyphs = load_glyphs(engine, dir)
     if not handles then return fail('%s', glyphs) end
+    -- 設定視窗裡「也翻成中文」的選項（預設值見 dflang.lua 的 OPTIONS）：按鍵名、配樂曲名、段落缺句時其餘照翻在載入字典前交給引擎
+    -- （按鍵名與曲名的條目照選項取捨），名字音譯另外載音譯表、攔組原名的函式（見下面）
+    local config = json.open(CONFIG_FILE).data
+    local function on(name) return dflang().option_on(config, name) end
+    ok, err = engine.set_options{keys = on('keys') and 1 or 0, music = on('music') and 1 or 0, partial = on('partial') and 1 or 0}
+    if not ok then return fail('%s', err) end
     local loaded, bad, missing_glyphs = engine.load(dir .. 'strings.tsv')
     if not loaded then return fail('%s', bad) end
     if bad > 0 or missing_glyphs > 0 then
@@ -481,6 +487,13 @@ local function start()
             fail('%s；世界生成的名稱維持英文', err)
             names_ok = false
         end
+    end
+    -- 原生語言的名字音譯（見引擎 translit.rs）：開著才載音譯表；載不到只有原名照原文
+    local translit_ok = false
+    if on('names') then
+        local syllables
+        syllables, err = engine.load_translit(dir .. 'translit.tsv')
+        if syllables then translit_ok = true else fail('%s；原名照原文', err) end
     end
 
     ok, err = attach_hooks(engine, dir, hooks)
@@ -506,6 +519,11 @@ local function start()
     if names_ok then
         ok, err = attach_hooks(engine, dir, {'translate_name'})
         if not ok then fail('%s；世界生成的名稱維持英文', err) end
+    end
+    -- 原名（攔遊戲把名字轉成原文的函式，名字音譯開著才掛）；找不到只有原名照原文
+    if translit_ok then
+        ok, err = attach_hooks(engine, dir, {'native_name'})
+        if not ok then fail('%s；原名照原文', err) end
     end
     -- 整句貼圖：畫面上的字改用本包的字型、照字寬整句畫（見 engine/src/overlay.rs）。預設開啟；
     -- dflang overlay off 改回一字兩格的字圖（重開遊戲生效）。掛不上時照一字兩格
@@ -549,12 +567,12 @@ local function start()
     -- 每字八張，保留範圍（約 8,800 張可用）放不下，後面的落在 DFHack 的動態範圍：遊戲重載貼圖後 texpos 會變，
     -- 最後一張一定在動態範圍（或全部都在保留範圍、永遠不變），看它就知道要不要重查
     local last = dfhack.textures.getTexposByHandle(handles[#handles])
-    -- started：這次啟動時的整句貼圖、字身、字重設定，設定視窗（dflang ui）用來判斷改過的設定要不要提示重開
-    local config = json.open(CONFIG_FILE).data
+    -- started：這次啟動時的整句貼圖、字身、字重與「也翻成中文」的選項，設定視窗（dflang ui）用來判斷改過的設定要不要提示重開
     dfhack.BASE_G.DFLANG = {engine = engine, lang = LANG, version = VERSION, dir = dir, config = CONFIG_FILE,
                             mascot = load_mascot(engine, dir),
                             started = {overlay = config.overlay ~= false, overlay_size = config.overlay_size or 14,
-                                       bold = config.bold ~= false}}
+                                       bold = config.bold ~= false, names = on('names'), keys = on('keys'),
+                                       music = on('music'), partial = on('partial')}}
     dfhack.onStateChange.dflang = function(sc)
         if sc ~= SC_VIEWSCREEN_CHANGED and sc ~= SC_WORLD_LOADED and sc ~= SC_WORLD_UNLOADED then return end
         local now = dfhack.textures.getTexposByHandle(handles[#handles])

@@ -5,9 +5,10 @@
 """組出繁、簡兩個工作坊包到 dist/<folder>/（內容就是上傳到工作坊的資料夾）。
 
 每包內容：info.txt、scripts_modinstalled/（載入器與 dflang 指令）、dflang/（引擎 DLL、整句字典 strings.tsv、
-句型規則 rules.tsv、依畫面套用的整句 screens.tsv、字型子集、特徵碼、標題畫面吉祥物 mascot.png、授權與致謝）。字型是 workshop.json 指定的
-思源黑體（Noto Sans CJK）Bold 與 Regular 兩種字重（fonts 的 bold、regular，各自 dflang/fonts/<字重>/），都只留本包譯文與吉祥物標籤
-（mascot_label）用到的非 CP437 字；每種字重的第一份字型沒有的字依清單順序補成第二、第三份字型，任一字重有字全部都沒有就建置失敗。
+句型規則 rules.tsv、依畫面套用的整句 screens.tsv、名稱字表 names.tsv、名字音譯表 translit.tsv、字型子集、特徵碼、標題畫面吉祥物 mascot.png、
+授權與致謝）。字型是 workshop.json 指定的思源黑體（Noto Sans CJK）Bold 與 Regular 兩種字重（fonts 的 bold、regular，各自 dflang/fonts/<字重>/），
+都只留本包譯文、名字音譯表與吉祥物標籤（mascot_label）用到的非 CP437 字；每種字重的第一份字型沒有的字依清單順序補成第二、第三份字型，
+任一字重有字全部都沒有就建置失敗。
 引擎在遊戲啟動時依當下的文字格大小把玩家選的字重（dfhack-config/dflang.json 的 bold，預設粗體）畫成字圖集，所以字型檔就是字圖的唯一來源。
 
 用法（repo 根目錄）：
@@ -132,6 +133,11 @@ def name_lines(rows: list[dict], lang: str) -> str:
     return "".join(f"{r['word']}\t{r['pos']}\t{r[lang]}\t{r['en']}\n" for r in rows if r[lang].strip())
 
 
+def translit_lines(rows: list[dict], lang: str) -> str:
+    """dist 的 dflang/translit.tsv：音節<TAB>中文（原生語言名字的音譯表，設定視窗的名字音譯開著才載入，見引擎 translit.rs）。"""
+    return "".join(f"{r['en']}\t{r[lang]}\n" for r in rows if r[lang].strip())
+
+
 def fetch_fonts(sources: dict[str, str]) -> None:
     """workshop.json 的 font_sources：字型檔名 → 下載網址；已下載的略過。"""
     FONTS.mkdir(parents=True, exist_ok=True)
@@ -187,9 +193,10 @@ def write_text(path: Path, text: str) -> None:
     path.write_text(text, encoding="utf-8", newline="\n")
 
 
-def build_item(item: dict, config: dict, texts: dict[str, list[dict]], names: list[dict], dll: Path, notices: str) -> int:
+def build_item(item: dict, config: dict, texts: dict[str, list[dict]], names: list[dict], translit: list[dict], dll: Path,
+               notices: str) -> int:
     lang = item["lang"]
-    chars = sorted({c for rows in [*texts.values(), names] for r in rows for c in r[lang] if c not in BYTE_OF})
+    chars = sorted({c for rows in [*texts.values(), names, translit] for r in rows for c in r[lang] if c not in BYTE_OF})
     out = DIST / item["folder"]
     try:
         if out.exists():
@@ -214,6 +221,7 @@ def build_item(item: dict, config: dict, texts: dict[str, list[dict]], names: li
     for kind in KINDS:
         write_text(data / f"{kind}.tsv", dict_lines(kind, texts[kind], lang))
     write_text(data / "names.tsv", name_lines(names, lang))
+    write_text(data / "translit.tsv", translit_lines(translit, lang))
     patterns = (ROOT / "engine/patterns.tsv").read_text(encoding="utf-8").splitlines()
     write_text(data / "patterns.tsv", "".join(f"{line}\n" for line in patterns if line and not line.startswith("#")))
     shutil.copy2(dll, data / "dflang.dll")
@@ -247,8 +255,9 @@ def main() -> int:
     dll = ROOT / "engine/target/release/dflang.dll" if args.skip_engine else build_engine()
     texts = {kind: read_rows(kind) for kind in KINDS}
     names = read_rows("names")
+    translit = read_rows("translit")
     notices = third_party_licenses()
-    return max(build_item(item, config, texts, names, dll, notices) for item in config["items"])
+    return max(build_item(item, config, texts, names, translit, dll, notices) for item in config["items"])
 
 
 if __name__ == "__main__":

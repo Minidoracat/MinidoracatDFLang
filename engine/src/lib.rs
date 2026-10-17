@@ -2,9 +2,9 @@
 //!
 //! DFHack 的 Lua 以 `package.loadlib(dll, "luaopen_dflang")` 載入，回傳一張函式表；
 //! 不連結 dfhack.dll，所以不綁 DFHack 版本，也不依賴其他 MOD。載入順序（見 lua/loader.lua）：
-//! set_layout／set_mtb_layout／set_ctb_layout／set_fonts → render_atlas → set_glyphs → load／load_rules／load_screens
-//! → scan/attach → enable（enable 時補登記遊戲啟動時就切好的提示文字，見 lines.rs）；之後每幀 set_focus（依畫面套用的譯文用）。
-//! dict、ctb 也給 examples/t.rs（離線查譯文）用。
+//! set_layout／set_mtb_layout／set_ctb_layout／set_fonts → render_atlas → set_glyphs → set_options → load／load_rules／load_screens
+//! （名字音譯開著時再 load_translit）→ scan/attach → enable（enable 時補登記遊戲啟動時就切好的提示文字，見 lines.rs）；
+//! 之後每幀 set_focus（依畫面套用的譯文用）。dict、ctb 也給 examples/t.rs（離線查譯文）用。
 
 mod atlas;
 pub mod cp437;
@@ -19,6 +19,7 @@ mod mtb;
 pub mod names;
 mod overlay;
 mod scan;
+mod translit;
 
 use std::ffi::{c_int, CStr};
 use std::sync::atomic::{AtomicUsize, Ordering};
@@ -45,6 +46,8 @@ pub unsafe extern "C" fn luaopen_dflang(l: lua::State) -> c_int {
         lua::set_fn(l, c"set_ctb_layout", set_ctb_layout);
         lua::set_fn(l, c"set_name_layout", set_name_layout);
         lua::set_fn(l, c"load_names", load_names);
+        lua::set_fn(l, c"load_translit", load_translit);
+        lua::set_fn(l, c"set_options", set_options);
         lua::set_fn(l, c"render_atlas", render_atlas);
         lua::set_fn(l, c"render_mascot", render_mascot);
         lua::set_fn(l, c"set_glyphs", set_glyphs);
@@ -297,6 +300,36 @@ unsafe extern "C" fn load_names(l: lua::State) -> c_int {
             }
             Err(e) => fail(l, &format!("load_names: {e}")),
         }
+    }
+}
+
+/// load_translit(路徑) → 載入條數（名字音譯表：音節<TAB>中文，見 translit.rs；設定視窗的名字音譯開著才載）
+unsafe extern "C" fn load_translit(l: lua::State) -> c_int {
+    unsafe {
+        let Some(path) = lua::arg_str(l, 1) else { return fail(l, "load_translit: expects a path") };
+        match std::fs::read_to_string(path) {
+            Ok(content) => {
+                lua::push_int(l, translit::load(&content) as i64);
+                1
+            }
+            Err(e) => fail(l, &format!("load_translit: {e}")),
+        }
+    }
+}
+
+/// set_options{keys, music, partial = 1 或 0}：設定視窗的選項（按鍵名、配樂曲名翻成中文，段落缺句時其餘照翻，見 dict::Options）。
+/// set_glyphs 之後、load 之前呼叫：按鍵名與曲名的條目在載入時就照選項取捨
+unsafe extern "C" fn set_options(l: lua::State) -> c_int {
+    unsafe {
+        if lua::arg_type(l, 1) != lua::TTABLE {
+            return fail(l, "set_options expects a table");
+        }
+        let on = |name: &CStr| lua::field_int(l, 1, name) == Some(1);
+        let options = dict::Options { keys: on(c"keys"), music: on(c"music"), partial: on(c"partial") };
+        let mut staging = STAGING.lock();
+        let Some(dict) = staging.as_mut() else { return fail(l, "set_options: call set_glyphs first") };
+        dict.options = options;
+        ok(l)
     }
 }
 
@@ -578,7 +611,7 @@ unsafe extern "C" fn translate(l: lua::State) -> c_int {
             .and_then(|s| Some((s.contains("[C:"), cp437::encode(s)?)))
             .filter(|_| !dict.is_null())
             .and_then(|(colored, key)| {
-                let zh = ctb::translate(&key, 7, &*dict).ok()?;
+                let zh = ctb::translate(&key, 7, &*dict).0?;
                 Some(if colored { zh } else { ctb::strip_colors(&zh) })
             });
         match text {

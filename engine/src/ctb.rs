@@ -6,7 +6,8 @@
 //! 每段逐句查字典（Dict::translate_sentences）；都有譯文就依中文規則以同樣框寬重新換行，
 //! 第 k 行中文交給第 k 行英文（載體）畫，多出來的英文行不畫。譯文依原文位置的顏色上色：
 //! 佔位的譯文用佔位原文的顏色，句型的固定字用比對範圍開頭的顏色。
-//! 沒有譯文的段落整段照畫英文，不拿行片段查字典（免得一段裡有的行中文、有的行英文）。和段落一樣只在畫字時換，遊戲資料不改。
+//! 沒有譯文的段落整段照畫英文，不拿行片段查字典（免得一段裡有的行中文、有的行英文）；段落缺句時其餘照翻開著時，
+//! 缺的句子照原文接在譯文裡一起重新換行（見 translate）。和段落一樣只在畫字時換，遊戲資料不改。
 
 use std::collections::HashMap;
 use std::sync::{Arc, LazyLock, OnceLock};
@@ -118,31 +119,39 @@ pub fn blocks(raw: &[u8], base: u8) -> Vec<Block> {
     out
 }
 
-/// 整段的中文（含換色、分段標記，交給 mtb::wrap 換行）；有一句翻不出來時回傳查不到的句子。
-pub fn translate(raw: &[u8], base: u8, dict: &Dict) -> Result<String, Vec<Vec<u8>>> {
+/// 整段的中文（含換色、分段標記，交給 mtb::wrap 換行）與查不到的句子。每句都翻得出來才有中文；段落缺句時其餘照翻
+/// （options.partial）開著時至少一句有譯文就有中文，翻不出來的句子、整段都翻不出來的段照原文（每個字照原文的顏色）。
+pub fn translate(raw: &[u8], base: u8, dict: &Dict) -> (Option<String>, Vec<Vec<u8>>) {
     let mut out = String::new();
     let mut missing = Vec::new();
     let mut current: Option<u8> = None;
+    let mut translated = false;
     for (k, block) in blocks(raw, base).iter().enumerate() {
-        match dict.translate_sentences(&block.text) {
-            Ok(pieces) => {
-                if k > 0 {
-                    out.push_str(if block.blank_before { "[B]" } else { "[R]" });
-                }
-                for (text, at) in pieces {
-                    let c = block.colors.get(at).copied().unwrap_or(base);
-                    if current != Some(c) {
-                        let [fg, bg, bright] = color_parts(c);
-                        out.push_str(&format!("[C:{fg}:{bg}:{bright}]"));
-                        current = Some(c);
-                    }
-                    out.push_str(&text);
-                }
+        let (pieces, m) = dict.translate_sentences(&block.text);
+        missing.extend(m);
+        let pieces = match pieces {
+            Some(p) => {
+                translated = true;
+                p
             }
-            Err(m) => missing.extend(m),
+            None if dict.options.partial => crate::dict::english_pieces(&block.text, 0),
+            None => continue,
+        };
+        if k > 0 {
+            out.push_str(if block.blank_before { "[B]" } else { "[R]" });
+        }
+        for (text, at) in pieces {
+            let c = block.colors.get(at).copied().unwrap_or(base);
+            if current != Some(c) {
+                let [fg, bg, bright] = color_parts(c);
+                out.push_str(&format!("[C:{fg}:{bg}:{bright}]"));
+                current = Some(c);
+            }
+            out.push_str(&text);
         }
     }
-    if missing.is_empty() { Ok(out) } else { Err(missing) }
+    let ok = missing.is_empty() || (dict.options.partial && translated);
+    (ok.then_some(out), missing)
 }
 
 /// 去掉換色標記（原文沒有標記時，查詢工具與 dflang t 的輸出不顯示引擎加上的標記）
@@ -187,12 +196,10 @@ pub unsafe fn plan(lines: &[usize], raw: &[u8], width: i32, dict: &Dict) -> Vec<
         }
         cache
             .entry((raw.to_vec(), width, lines.len(), base))
-            .or_insert_with(|| match translate(raw, base, dict) {
-                Ok(t) => compute(&t, width, lines.len(), base, dict),
-                Err(m) => {
-                    missing = m;
-                    None
-                }
+            .or_insert_with(|| {
+                let (t, m) = translate(raw, base, dict);
+                missing = m;
+                t.and_then(|t| compute(&t, width, lines.len(), base, dict))
             })
             .clone()
     };
@@ -248,9 +255,9 @@ mod tests {
     #[test]
     fn captures_keep_their_source_color_and_literals_take_the_sentence_color() {
         let d = dict();
-        let zh = translate(b"[C:7:0:1]He feels [C:2:0:1]joy [C:7:0:1]while in conflict.", 7, &d).unwrap();
+        let zh = translate(b"[C:7:0:1]He feels [C:2:0:1]joy [C:7:0:1]while in conflict.", 7, &d).0.unwrap();
         assert_eq!(zh, "[C:7:0:1]他在衝突中感到[C:2:0:1]喜悅[C:7:0:1]。");
-        let two = translate(b"[C:7:0:1]He feels [C:2:0:1]joy [C:7:0:1]while in conflict.  He is slow to anger.", 7, &d).unwrap();
+        let two = translate(b"[C:7:0:1]He feels [C:2:0:1]joy [C:7:0:1]while in conflict.  He is slow to anger.", 7, &d).0.unwrap();
         assert!(two.ends_with("。他很慢才生氣。"), "{two}");
     }
 
@@ -259,7 +266,7 @@ mod tests {
         let mut d = Dict::default();
         d.load_tsv("he\t他\nclumsy\t笨拙\nweak\t虛弱\n");
         d.load_rules_tsv("{@1} is {@2} and {@3}.\t{1}{2}、{3}。\n");
-        let zh = translate(b"[C:7:0:1]He is [C:4:0:1]clumsy and weak.", 7, &d).unwrap();
+        let zh = translate(b"[C:7:0:1]He is [C:4:0:1]clumsy and weak.", 7, &d).0.unwrap();
         assert_eq!(zh, "[C:7:0:1]他[C:4:0:1]笨拙、虛弱[C:7:0:1]。", "「、」對應原文紅色的 and，句末標點用句首的顏色");
     }
 
@@ -267,13 +274,23 @@ mod tests {
     fn untranslated_sentence_keeps_the_paragraph_english() {
         let d = dict();
         let r = translate(b"[C:7:0:1]He is slow to anger.  He is quick to forgive.", 7, &d);
-        assert_eq!(r, Err(vec![b"He is quick to forgive.".to_vec()]));
+        assert_eq!(r, (None, vec![b"He is quick to forgive.".to_vec()]));
+    }
+
+    #[test]
+    fn partial_option_draws_missing_sentences_in_their_source_colors() {
+        let mut d = dict();
+        d.options.partial = true;
+        let (zh, missing) = translate(b"[C:7:0:1]He is slow to anger.  He is [C:4:0:1]clumsy.[R][C:7:0:1]Nobody knows.", 7, &d);
+        assert_eq!(missing, vec![b"He is clumsy.".to_vec(), b"Nobody knows.".to_vec()]);
+        assert_eq!(zh.as_deref(), Some("[C:7:0:1]他很慢才生氣。 He is[C:4:0:1] clumsy.[R][C:7:0:1]Nobody knows."),
+                   "照原文的字保留原文的顏色；整段翻不出來的段照原文");
     }
 
     #[test]
     fn chinese_is_drawn_by_the_english_lines_in_order() {
         let d = dict();
-        let zh = translate(b"[C:7:0:1]He feels [C:2:0:1]joy [C:7:0:1]while in conflict.", 7, &d).unwrap();
+        let zh = translate(b"[C:7:0:1]He feels [C:2:0:1]joy [C:7:0:1]while in conflict.", 7, &d).0.unwrap();
         let plans = compute(&zh, 20, 3, 7 + 64, &d).unwrap();
         let Plan::Draw(first) = &plans[0] else { panic!("第一行要畫") };
         assert_eq!((first[0].dx, first[0].dy, first[0].color), (0, 0, 7 + 64));
