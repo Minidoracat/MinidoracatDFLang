@@ -354,6 +354,50 @@ impl Rule {
     }
 }
 
+/// 句型索引用開頭、結尾固定字的前（後）幾個位元組
+const INDEX_BYTES: usize = 4;
+
+/// 句型索引：Rule::matches 第一步就比開頭、結尾的固定字，對不上的句型不會命中。照開頭固定字（沒有的照結尾固定字）
+/// 前（後）最多 INDEX_BYTES 個位元組、轉小寫分組（書名句型的固定字可以比到大寫，見 lit_eq），兩頭都沒有固定字的另外列；
+/// 查一段原文只比可能對得上的幾組。沒有索引時每查一段都要掃過兩萬多條句型（沒命中快取的一句約 0.3 ms）
+#[derive(Default)]
+struct RuleIndex {
+    head: HashMap<Vec<u8>, Vec<u32>>,
+    tail: HashMap<Vec<u8>, Vec<u32>>,
+    free: Vec<u32>,
+}
+
+impl RuleIndex {
+    fn build(rules: &[Rule]) -> RuleIndex {
+        let mut index = RuleIndex::default();
+        for (i, r) in rules.iter().enumerate() {
+            let i = i as u32;
+            if !r.prefix.is_empty() {
+                index.head.entry(r.prefix[..r.prefix.len().min(INDEX_BYTES)].to_ascii_lowercase()).or_default().push(i);
+            } else if !r.suffix.is_empty() {
+                index.tail.entry(r.suffix[r.suffix.len() - r.suffix.len().min(INDEX_BYTES)..].to_ascii_lowercase()).or_default().push(i);
+            } else {
+                index.free.push(i);
+            }
+        }
+        index
+    }
+
+    /// 開頭或結尾可能和 key 對得上的句型序號，照 rules 的順序（各組不重疊）
+    fn candidates(&self, key: &[u8]) -> Vec<u32> {
+        let n = key.len().min(INDEX_BYTES);
+        let head = key[..n].to_ascii_lowercase();
+        let tail = key[key.len() - n..].to_ascii_lowercase();
+        let mut out = self.free.clone();
+        for k in 1..=n {
+            out.extend(self.head.get(&head[..k]).into_iter().flatten());
+            out.extend(self.tail.get(&tail[n - k..]).into_iter().flatten());
+        }
+        out.sort_unstable();
+        out
+    }
+}
+
 /// 原文 text 和固定字 lit 相同；fold 時 lit 的小寫字母在原文可以是大寫（見 Rule::matches）
 fn lit_eq(text: &[u8], lit: &[u8], fold: bool) -> bool {
     text.len() == lit.len() && text.iter().zip(lit).all(|(&t, &l)| t == l || (fold && l.is_ascii_lowercase() && t == l.to_ascii_uppercase()))
@@ -543,6 +587,7 @@ pub struct Dict {
     /// 事件的原因、情境片語（字串檔與句型檔 align 寫 `tail`，見 strip_tail）：(原文, 譯文)，長的在前；含名字的放 tail_rules
     tails: Vec<(Vec<u8>, String)>,
     tail_rules: Vec<Rule>,
+    rule_index: RuleIndex,
     /// 原文 → 句型規則的結果。翻不出來的也要記住（免得每幀重比）。翻不出來或譯文還夾著英文的，另記當時名稱表的版本
     /// （names::generation）：之後登記了新名字（清單先畫、名字後登記），版本不同就重算；全中文的結果不再重算
     cache: Mutex<HashMap<Vec<u8>, (Option<Arc<Entry>>, Option<u64>)>>,
@@ -859,6 +904,7 @@ impl Dict {
         }
         // 穩定排序：同一類維持檔案順序
         self.rules.sort_by_key(|r| (!r.list, !r.specific, r.loose));
+        self.rule_index = RuleIndex::build(&self.rules);
         self.cache.lock().clear();
         report
     }
@@ -1132,7 +1178,8 @@ impl Dict {
         capital[0].make_ascii_uppercase();
         let tries: &[&[u8]] = if capital == key { &[key] } else { &[key, &capital] };
         tries.iter().find_map(|k| {
-            self.rules.iter().filter(|r| r.title).find_map(|rule| match self.try_rule(rule, k, depth + 1, memo) {
+            let rules = self.rule_index.candidates(k);
+            rules.iter().map(|&i| &self.rules[i as usize]).filter(|r| r.title).find_map(|rule| match self.try_rule(rule, k, depth + 1, memo) {
                 Some((out, true)) => Some(concat(out)),
                 _ => None,
             })
@@ -1169,11 +1216,19 @@ impl Dict {
 
     /// 第一條命中的句型：(譯文片段, 句型, 乾淨與否)。
     fn apply_rules(&self, key: &[u8], depth: usize, memo: &mut Memo) -> Option<(Pieces, &Rule, bool)> {
-        // 清單與冠詞外框只會是句子的一部分：最外層（整句）不套，免得把「人名 likes 甲, 乙」當成一項
-        let ends_with_comma_entry = self.comma_keys.iter().any(|k| {
-            key.len() > k.len() && key.ends_with(k) && !key[..key.len() - k.len()].ends_with(b", ")
-        });
-        for rule in self.rules.iter().filter(|r| depth > 0 || !(r.list || r.inner)).filter(|r| !(r.list && ends_with_comma_entry)) {
+        // key 以含逗號的條目結尾時不套清單句型（見 comma_keys）；比到清單句型才算
+        let mut comma = None;
+        let mut ends_with_comma_entry = || {
+            *comma.get_or_insert_with(|| {
+                self.comma_keys.iter().any(|k| key.len() > k.len() && key.ends_with(k) && !key[..key.len() - k.len()].ends_with(b", "))
+            })
+        };
+        for &i in &self.rule_index.candidates(key) {
+            let rule = &self.rules[i as usize];
+            // 清單與冠詞外框只會是句子的一部分：最外層（整句）不套，免得把「人名 likes 甲, 乙」當成一項
+            if (depth == 0 && (rule.list || rule.inner)) || (rule.list && ends_with_comma_entry()) {
+                continue;
+            }
             if let Some((out, clean)) = self.try_rule(rule, key, depth, memo) {
                 return Some((out, rule, clean));
             }

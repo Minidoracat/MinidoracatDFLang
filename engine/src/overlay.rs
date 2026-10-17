@@ -216,7 +216,7 @@ static FRAME: Mutex<Option<Arc<Vec<Run>>>> = Mutex::new(None);
 /// pad 是結尾補位的格數（見 Run::pad），text 是照字寬縮短的段落（見 Run::text），dfhack 是 DFHack 畫的字。
 #[allow(clippy::too_many_arguments)]
 pub fn record(gps: *mut u8, top: bool, row: Row, x0: i32, y: i32, shadow: &[u8], glyphs: &[(usize, u32)], align: u8, pad: usize, text: Option<&str>, dfhack: bool) {
-    // 翻譯關著時 render_things 的 hook 也停了，BUILD 不會每幀清：不記，免得 DFHack 照畫的字一直堆
+    // 翻譯關著時不記（整句貼圖不畫），免得 DFHack 照畫的字白白堆進這一幀
     if !ON.load(Ordering::Relaxed) || !crate::hooks::ENABLED.load(Ordering::Acquire) {
         return;
     }
@@ -254,7 +254,7 @@ pub fn frame_end() {
 }
 
 /// 翻譯關掉時呼叫（ENABLED 已設成 false 之後）：丟掉還沒收完的字，最後一幀換成空的（update_all 照空的一幀清掉格子的記號，
-/// 遊戲照原樣畫）。再開時 render_things 的 hook 跟著恢復，下一幀照常收。
+/// 遊戲照原樣畫）。之後 render_things 的 hook 照跑，frame_end 每幀都放空的一幀；再開時下一幀照常收。
 pub fn reset() {
     *BUILD.lock() = Vec::new();
     *FRAME.lock() = Some(Arc::new(Vec::new()));
@@ -266,8 +266,8 @@ pub fn run_counts() -> (usize, usize) {
     (frame, BUILD.lock().len())
 }
 
-/// 除錯：update_all 每幀的耗時（微秒，指數平均）：[整個 update_all, 其中整句貼圖自己花的（核對＋貼圖）]
-static TIMING: Mutex<[f64; 2]> = Mutex::new([0.0; 2]);
+/// 除錯：每幀的耗時（微秒，指數平均）：[整個 update_all, 其中整句貼圖自己花的（核對＋貼圖）, 整個 render_things（含畫字 hook）]
+static TIMING: Mutex<[f64; 3]> = Mutex::new([0.0; 3]);
 
 fn note_time(total: f64, ours: f64) {
     let mut t = TIMING.lock();
@@ -275,10 +275,16 @@ fn note_time(total: f64, ours: f64) {
     t[1] = t[1] * 0.95 + ours * 0.05;
 }
 
+/// render_things 跑完時呼叫（非同步執行緒）：翻譯關著時也量，對照得出畫字 hook 多花的時間
+pub fn note_render(spent: std::time::Duration) {
+    let mut t = TIMING.lock();
+    t[2] = t[2] * 0.95 + spent.as_secs_f64() * 1e6 * 0.05;
+}
+
 /// 除錯：耗時，加上本幀記下的字（頂層, 列別, x0, y, 替身字串, 字圖數, 對齊, 補位格數, 能不能接在前一段後面, 照字寬縮短的段落文字）
 pub fn dump() -> String {
     let t = *TIMING.lock();
-    let head = format!("update_all {:.0} us, overlay {:.0} us\n", t[0], t[1]);
+    let head = format!("update_all {:.0} us, overlay {:.0} us, render_things {:.0} us\n", t[0], t[1], t[2]);
     let Some(runs) = FRAME.lock().clone() else { return head };
     head + &runs
         .iter()
@@ -1351,7 +1357,7 @@ mod tests {
         assert!(!set_em(12) && !set_em(17));
     }
 
-    /// 翻譯關掉後 render_things 的 hook 不跑、BUILD 不會每幀清：DFHack 照畫的字不能再記；開回來照常收
+    /// 翻譯關掉後 DFHack 照畫的字不記、每幀都是空的一幀；開回來照常收
     #[test]
     fn runs_stop_piling_up_while_translation_is_off() {
         let gps = std::ptr::null_mut();

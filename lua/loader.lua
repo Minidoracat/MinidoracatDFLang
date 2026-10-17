@@ -695,13 +695,14 @@ local function start()
     install_read_tile(engine)
     install_typing()
     -- 依畫面套用的譯文要知道現在在哪個畫面：每幀把 DFHack 的焦點字串告訴引擎（'frames' 計時器在世界卸載後也繼續）。
-    -- DFHack 的視窗開著時也加上底下遊戲畫面的焦點：遊戲照樣畫的上方資訊列（「酒類」）才不會換成別的譯法
+    -- DFHack 的視窗開著時（焦點是 dfhack/…）也加上底下遊戲畫面的焦點：遊戲照樣畫的上方資訊列（「酒類」）才不會換成別的譯法。
+    -- 只在那時才找底下的畫面：dfhack.gui 每呼叫一次約 40 µs，計時器每個模擬幀都跑
     if screens > 0 then
         local function track_focus()
             local focus = dfhack.gui.getCurFocus(true)
-            local dfvs = dfhack.gui.getDFViewscreen(true)
-            if dfvs and dfvs ~= dfhack.gui.getCurViewscreen(true) then
-                for _, f in ipairs(dfhack.gui.getFocusStrings(dfvs)) do table.insert(focus, f) end
+            if (focus[1] or ''):find('^dfhack/') then
+                local dfvs = dfhack.gui.getDFViewscreen(true)
+                for _, f in ipairs(dfvs and dfhack.gui.getFocusStrings(dfvs) or {}) do table.insert(focus, f) end
             end
             engine.set_focus(table.concat(focus, '\n'))
             dfhack.timeout(1, 'frames', track_focus)

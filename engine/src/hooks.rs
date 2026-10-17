@@ -144,7 +144,8 @@ static TRAMPOLINES: [AtomicUsize; 16] = [const { AtomicUsize::new(0) }; 16];
 /// wrap_text 的位址（只登記、不攔；它切行時呼叫 wrap_lines）：enable 時從呼叫它的程式碼找出遊戲啟動時就切好的提示（見 lines.rs）
 pub static WRAP_TEXT: OnceLock<usize> = OnceLock::new();
 
-struct Detours(Vec<RawDetour>);
+/// (HOOKS 的序號, detour)
+struct Detours(Vec<(usize, RawDetour)>);
 // RawDetour 只在持有鎖時由 Lua 指令啟停；遊戲執行緒只讀 TRAMPOLINES。
 unsafe impl Send for Detours {}
 static DETOURS: Mutex<Detours> = Mutex::new(Detours(Vec::new()));
@@ -175,19 +176,23 @@ pub fn attach(name: &str, target: usize) -> Result<(), String> {
     };
     let detour = unsafe { RawDetour::new(target as *const (), hook) }.map_err(|e| e.to_string())?;
     TRAMPOLINES[index].store(detour.trampoline() as *const () as usize, Ordering::Release);
-    DETOURS.lock().0.push(detour);
+    DETOURS.lock().0.push((index, detour));
     Ok(())
 }
 
-/// 沒有掛遊戲的 hook 也能開：本 MOD 讓給別的翻譯引擎時，只用 DFHack 視窗那條路（Lua 包住的 paintString）把標題畫面的切換說明畫成中文
+/// 沒有掛遊戲的 hook 也能開：本 MOD 讓給別的翻譯引擎時，只用 DFHack 視窗那條路（Lua 包住的 paintString）把標題畫面的切換說明畫成中文。
+/// 關掉時 render_things 的 hook 不拆：其他 hook 都拆了，它照跑只換幀、計時（關著時量得到遊戲本身畫一幀多久，見 overlay::dump）
 pub fn set_enabled(on: bool) -> Result<(), String> {
     let detours = DETOURS.lock();
-    for d in &detours.0 {
+    for (index, d) in &detours.0 {
+        if !on && HOOKS[*index] == "render_things" {
+            continue;
+        }
         unsafe { if on { d.enable() } else { d.disable() } }.map_err(|e| e.to_string())?;
     }
     ENABLED.store(on, Ordering::Release);
     if !on {
-        // render_things 的 hook 停了，整句貼圖不會再換幀：清掉收到一半的字與最後一幀（見 overlay::record）
+        // 清掉收到一半的字與最後一幀（之後每幀 frame_end 都放空的一幀，見 overlay::record）
         crate::overlay::reset();
     }
     Ok(())
@@ -955,12 +960,14 @@ unsafe fn paragraph_word(gps: *mut u8, s: *const StdString, layer: fn(&Layout) -
 
 unsafe extern "C" fn hook_render_things() {
     let orig: RenderThingsFn = unsafe { std::mem::transmute(TRAMPOLINES[14].load(Ordering::Acquire)) };
+    let t0 = std::time::Instant::now();
     crate::overlay::frame_begin();
     ENGLISH.lock().begin();
     unsafe { orig() };
     ENGLISH.lock().end();
     COLUMNS.lock().next_frame();
     crate::overlay::frame_end();
+    crate::overlay::note_render(t0.elapsed());
 }
 
 // ---- 翻譯前的英文字元 ----
