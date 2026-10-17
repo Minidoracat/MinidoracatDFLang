@@ -2,7 +2,6 @@ en	zh-Hant	zh-Hans	align	note
 Hooks: {#1}, translations: {#2}, patterns: {#3}, glyphs: {#4}	hook {1} 個、譯文 {2} 條、句型 {3} 條、字圖 {4} 個	hook {1} 个、译文 {2} 条、句型 {3} 条、字图 {4} 个		lua/dflang.lua dflang status 第 2 行
 Tooltips translated at startup: {#1}	啟動時切好的提示有譯文：{1} 處	启动时切好的提示有译文：{1} 处		lua/dflang.lua dflang status 第 3 行
 This session: {#1} hits, {#2} misses	本次命中 {1} 次、未命中 {2} 次	本次命中 {1} 次、未命中 {2} 次		lua/dflang.lua dflang status 第 4 行
-Chinese text size: {#1}/16 of the cell height.	中文字型大小：{1}/16 格高。	中文字体大小：{1}/16 格高。		lua/dflang.lua dflang overlay size（不加數字）
-Chinese text size: {#1}/16 of the cell height (after restarting the game).	中文字型大小：{1}/16 格高（重開遊戲後生效）。	中文字体大小：{1}/16 格高（重启游戏后生效）。		lua/dflang.lua dflang overlay size <數字>
+Chinese text size: {#1}/16 of the cell height.	中文字型大小：{1}/16 格高。	中文字体大小：{1}/16 格高。		lua/dflang.lua dflang overlay size（不加數字時顯示設定；加數字時改了立即生效）
 Log size: {#1} KB	紀錄大小：{1} KB	记录大小：{1} KB		lua/dflang.lua 設定視窗：未翻譯紀錄檔大小（無條件進位）
 DFLang Settings v{1}	DFLang 設定 v{1}	DFLang 设置 v{1}	c	lua/dflang.lua 設定視窗標題帶版本號（{1} 是 workshop.json 的 version.displayed，照抄）；沒有版本號時用字串檔的 DFLang Settings

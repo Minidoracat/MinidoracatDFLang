@@ -2,8 +2,8 @@
   "app_id": 975370,
   "author": "Minidoracat",
   "version": {
-    "numeric": 7,
-    "displayed": "0.4.0",
+    "numeric": 8,
+    "displayed": "0.5.0",
     "earliest_compatible_numeric": 1,
     "earliest_compatible_displayed": "0.1.0"
   },
@@ -13,11 +13,13 @@
     "NotoSansCJKtc-Regular.otf": "https://raw.githubusercontent.com/notofonts/noto-cjk/main/Sans/OTF/TraditionalChinese/NotoSansCJKtc-Regular.otf",
     "NotoSansCJKsc-Regular.otf": "https://raw.githubusercontent.com/notofonts/noto-cjk/main/Sans/OTF/SimplifiedChinese/NotoSansCJKsc-Regular.otf"
   },
-  "items": [
+  "id": "cat_df_lang_zh_hant",
+  "folder": "MinidoracatDFLang",
+  "name": "Minidoracat DF Chinese - Traditional & Simplified",
+  "description": "Traditional and Simplified Chinese translation for Dwarf Fortress. Requires DFHack.",
+  "languages": [
     {
       "lang": "zh-Hant",
-      "id": "cat_df_lang_zh_hant",
-      "folder": "MinidoracatDFLang-zh-Hant",
       "fonts": {
         "bold": [
           "NotoSansCJKtc-Bold.otf",
@@ -28,24 +30,14 @@
           "NotoSansCJKsc-Regular.otf"
         ]
       },
-      "name": "Minidoracat DF Chinese - Traditional (zh-Hant)",
-      "description": "Traditional Chinese translation for Dwarf Fortress. Requires DFHack.",
       "mascot_label": "繁體中文",
-      "steam_title": "矮人要塞 繁體中文化 Dwarf Fortress Traditional Chinese by Minidoracat",
+      "steam_language": "tchinese",
+      "steam_title": "矮人要塞 繁體／簡體中文化 Dwarf Fortress Chinese by Minidoracat",
       "steam_description": "docs/steam/zh-Hant.bbcode",
-      "steam_changelog": "docs/steam/changelog-zh-Hant.bbcode",
-      "preview": "docs/steam/cover-zh-Hant.gif",
-      "screenshots": "temp/steam/screenshots/zh-Hant",
-      "tags": [
-        "dfhack",
-        "ui"
-      ],
-      "published_file_id": 3820630135
+      "steam_changelog": "docs/steam/changelog-zh-Hant.bbcode"
     },
     {
       "lang": "zh-Hans",
-      "id": "cat_df_lang_zh_hans",
-      "folder": "MinidoracatDFLang-zh-Hans",
       "fonts": {
         "bold": [
           "NotoSansCJKsc-Bold.otf",
@@ -56,19 +48,25 @@
           "NotoSansCJKtc-Regular.otf"
         ]
       },
-      "name": "Minidoracat DF Chinese - Simplified (zh-Hans)",
-      "description": "Simplified Chinese translation for Dwarf Fortress. Requires DFHack.",
       "mascot_label": "简体中文",
-      "steam_title": "矮人要塞 简体中文化 Dwarf Fortress Simplified Chinese by Minidoracat",
+      "steam_language": "schinese",
+      "steam_title": "矮人要塞 简体／繁体中文化 Dwarf Fortress Chinese by Minidoracat",
       "steam_description": "docs/steam/zh-Hans.bbcode",
-      "steam_changelog": "docs/steam/changelog-zh-Hans.bbcode",
-      "preview": "docs/steam/cover-zh-Hans.gif",
-      "screenshots": "temp/steam/screenshots/zh-Hans",
-      "tags": [
-        "dfhack",
-        "ui"
-      ],
-      "published_file_id": 3820630318
+      "steam_changelog": "docs/steam/changelog-zh-Hans.bbcode"
     }
-  ]
+  ],
+  "workshop": {
+    "published_file_id": 3820630135,
+    "preview": "docs/steam/cover-zh-Hant.gif",
+    "screenshots": "temp/steam/screenshots/zh-Hant",
+    "tags": [
+      "dfhack",
+      "ui"
+    ]
+  },
+  "retired": {
+    "published_file_id": 3820630318,
+    "steam_title": "【已合并】矮人要塞 简体中文化 Dwarf Fortress Simplified Chinese by Minidoracat",
+    "steam_description": "docs/steam/retired-zh-Hans.bbcode"
+  }
 }

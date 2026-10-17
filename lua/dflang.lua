@@ -11,26 +11,28 @@ Usage:
   dflang status                     Show the engine status
   dflang on | off                   Turn the translation on or off
   dflang t <English text>           Look up the translation in the current language
-  dflang lang zh-Hant|zh-Hans       With both packs installed, choose the language (after restarting the game)
+  dflang lang zh-Hant|zh-Hans       Choose Traditional or Simplified Chinese; until you choose, it follows the Steam or Windows language
   dflang lang off                   Use DFI18n, DFCN or another translation mod and restore the ones DFLang turned off (after restarting the game); without one, DFLang stays on
   dflang misses on|off              Log text on screen that has no translation to dfhack-config/dflang-misses.tsv, also after restarting the game, until off
-  dflang overlay on|off             Full-line text rendering (default on); off draws each Chinese character as a two-cell glyph (after restarting the game)
-  dflang overlay size [13-16]       Chinese text size in 16ths of the cell height (default 14; after restarting the game); without a number, show the setting
-  dflang bold on|off                Bold Chinese text (default on); off uses the regular weight (after restarting the game)
+  dflang overlay on|off             Full-line text rendering (default on); off draws each Chinese character as a two-cell glyph
+  dflang overlay size [13-16]       Chinese text size in 16ths of the cell height (default 14); without a number, show the setting
+  dflang bold on|off                Bold Chinese text (default on); off uses the regular weight
 ]]
 local CONFIG_FILE = 'dfhack-config/dflang.json'
 local MISSES_FILE = 'dfhack-config/dflang-misses.tsv'
 
 local json = require('json')
 
--- 停用 DFI18n：在 mods/ 放一個 ID 也是 dfi18n、版本極大、沒有 DFI18n 腳本的 MOD。DFHack 每個 ID 只載入最高版本，
+-- 停用 DFI18n：在 mods/ 放一個 ID 也是 dfi18n、版本號最大、沒有 DFI18n 腳本的 MOD。DFHack 每個 ID 只載入版本號最大的那一份，
 -- DFI18n 的腳本就不會執行；DFI18n 自己的檔案不動，刪掉這個資料夾就恢復。info.txt 只能用 ASCII（遊戲的模組清單照 CP437 顯示）。
--- 資料夾裡的小腳本在 DFLang 兩包都不在之後刪掉這個資料夾，免得玩家退訂 DFLang 後 DFI18n 一直不載入
+-- 版本號用 999999999：DFHack 挑版本時把版本號當字串比（script-manager.lua 的 get_mod_paths），遊戲照數字比，兩種比法都要贏過
+-- DFI18n。以前的 2000000000 照字串比會輸給 21～29、3～9 這類版本號（DFI18n 在 2026-10 是 20）；九位數，留在 32 位元整數範圍內。
+-- 資料夾裡的小腳本在 DFLang（含已合併的簡中項目）都不在之後刪掉這個資料夾，免得玩家退訂 DFLang 後 DFI18n 一直不載入
 local HIDE_DIR = dfhack.filesystem.getBaseDir() .. 'mods/dflang-hide-dfi18n/'
 local HIDE_FILES = {
     ['info.txt'] = [[
 [ID:dfi18n]
-[NUMERIC_VERSION:2000000000]
+[NUMERIC_VERSION:999999999]
 [DISPLAYED_VERSION:off]
 [EARLIEST_COMPATIBLE_NUMERIC_VERSION:1]
 [EARLIEST_COMPATIBLE_DISPLAYED_VERSION:off]
@@ -63,6 +65,16 @@ function hide_dfi18n()
         f:close()
     end
     return true
+end
+
+-- 以前寫的遮蔽資料夾（版本號 2000000000）換成現在的寫法，DFI18n 之後升版也蓋得住。載入器在本 MOD 照常啟動時呼叫：
+-- 那時遮蔽正在生效（或 DFI18n 已經移除），換掉不影響這一次遊戲裡已經在跑的腳本
+function update_hide_dfi18n()
+    local f = io.open(HIDE_DIR .. 'info.txt', 'rb')
+    if not f then return end
+    local old = f:read('a')
+    f:close()
+    if old ~= HIDE_FILES['info.txt'] then hide_dfi18n() end
 end
 
 function unhide_dfi18n()
@@ -117,15 +129,14 @@ function set_lang(lang)
     config:write()
 end
 
--- 整句貼圖會改段落的換行與替身字串，遊戲啟動時決定（見 engine/src/metrics.rs），中途切換要重開遊戲。預設開，只記關
+-- 整句貼圖：預設開，只記關。這些設定改了以後由 apply_now 立即套用
 function set_overlay(on)
     local config = json.open(CONFIG_FILE)
     if on then config.data.overlay = nil else config.data.overlay = false end
     config:write()
 end
 
--- 字身也決定段落的換行（見 engine/src/metrics.rs），遊戲啟動時畫字圖集前交給引擎（lua/loader.lua 的 load_glyphs）。
--- 預設 14（engine/src/overlay.rs 的 DEFAULT_EM），只記其他值
+-- 整句貼圖的字身（十六分之幾格高），段落量字寬也照它。預設 14（engine/src/overlay.rs 的 DEFAULT_EM），只記其他值
 local DEFAULT_SIZE = 14
 function set_overlay_size(n)
     local config = json.open(CONFIG_FILE)
@@ -133,7 +144,7 @@ function set_overlay_size(n)
     config:write()
 end
 
--- 字重：遊戲啟動時選 dflang/fonts/bold/ 或 regular/ 交給引擎畫字圖集與整句貼圖（lua/loader.lua 的 load_glyphs）。預設粗體，只記關
+-- 字重：dflang/fonts/bold/ 或 regular/，字圖集與整句貼圖都用它。預設粗體，只記關
 function set_bold(on)
     local config = json.open(CONFIG_FILE)
     if on then config.data.bold = nil else config.data.bold = false end
@@ -141,7 +152,7 @@ function set_bold(on)
 end
 
 -- 也翻成中文的選項與預設值（names 原生語言名字音譯、keys 按鍵名、music 配樂曲名、partial 段落缺句時其餘照翻）：
--- 遊戲啟動時交給引擎（lua/loader.lua 的 start）。按鍵名預設開，其他預設關；dflang.json 只記和預設不同的
+-- 遊戲啟動時與改了以後交給引擎（lua/loader.lua 的 wanted）。按鍵名預設開，其他預設關；dflang.json 只記和預設不同的
 local OPTIONS = {names = false, keys = true, music = false, partial = false}
 function option_on(config, name)
     if config[name] == nil then return OPTIONS[name] end
@@ -152,6 +163,27 @@ function set_option(name, on)
     local config = json.open(CONFIG_FILE)
     if on == OPTIONS[name] then config.data[name] = nil else config.data[name] = on end
     config:write()
+end
+
+-- 改過 dflang.json 之後立即套用（載入器的 apply，見 lua/loader.lua）。回傳 true 表示有設定要重開遊戲才生效：改用其他翻譯 MOD，
+-- 或引擎沒在跑、舊版載入器不能即時套用。套用到一半出錯時錯誤寫進 stderr.log，也當成要重開。
+-- 遊戲讀取中沒辦法換的語言、字重記在 DFLANG.pending，讀完自動套用（見 pending）
+function apply_now()
+    local state = dfhack.BASE_G.DFLANG
+    if not (state and state.apply) then return true end
+    local ok, restart = pcall(state.apply)
+    if not ok then
+        dfhack.printerr('[DFLang] ' .. tostring(restart))
+        return true
+    end
+    return restart
+end
+
+-- 語言或字重的變更還擱著：DFHack 在遊戲讀取 raws、存檔時（開過建立世界的設定畫面後也常是）不能註冊新字圖，載入或建立世界後自動套用
+local PENDING_NOTE = 'Language and bold text will change after a world loads.'
+local function pending()
+    local state = dfhack.BASE_G.DFLANG
+    return state ~= nil and state.pending == true
 end
 
 -- 未翻譯紀錄立即開關（引擎沒啟用時只改設定）；設定會記住，之後每次啟動都自動記錄，直到關閉
@@ -196,18 +228,13 @@ local function open_misses_folder()
     end
 end
 
-local PACKAGES = {['zh-Hant'] = 'cat_df_lang_zh_hant', ['zh-Hans'] = 'cat_df_lang_zh_hans'}
 local LANG_NAMES = {['zh-Hant'] = 'Traditional Chinese', ['zh-Hans'] = 'Simplified Chinese', off = 'Other translation mod'}
 
-local function installed(lang)
-    return require('script-manager').getModSourcePath(PACKAGES[lang]) ~= nil
-end
-
--- 下次啟動用的語言，和 lua/loader.lua 的 chosen_lang 同一套規則
-local function next_lang()
-    local pref = json.open(CONFIG_FILE).data.lang
-    if pref == 'off' or pref and PACKAGES[pref] and installed(pref) then return pref end
-    return installed('zh-Hant') and 'zh-Hant' or 'zh-Hans'
+-- 設定視窗語言那一列目前的值：玩家選過的，沒選過就是引擎現在用的（照系統判斷，見 lua/loader.lua 的 chosen_lang）
+local function current_lang(config)
+    if LANG_NAMES[config.lang] then return config.lang end
+    local state = dfhack.BASE_G.DFLANG
+    return state and state.lang or 'zh-Hant'
 end
 
 -- 設定視窗（dflang ui、Ctrl-Shift-L、點標題畫面的吉祥物）。字都寫英文，引擎照 data/strings/dflang_ui.tsv 畫成中文；
@@ -228,7 +255,7 @@ local function engine_status()
     return ('Running (%s)'):format(LANG_NAMES[state.lang]), COLOR_LIGHTGREEN
 end
 
--- 也翻成中文的選項開關（見 set_option）：重開遊戲生效
+-- 也翻成中文的選項開關（見 set_option）：改了立即套用
 local function option_toggle(window, t, name, key, label)
     return widgets.ToggleHotkeyLabel{
         frame = {t = t, l = 0},
@@ -253,10 +280,7 @@ function DFLangWindow:init()
     local status = state and state.engine.status()
     -- 標題帶版本號（舊版載入器沒有 version，照原本的標題）
     if state and state.version then self.frame_title = ('DFLang Settings v%s'):format(state.version) end
-    local langs = {}
-    for _, lang in ipairs{'zh-Hant', 'zh-Hans'} do
-        if installed(lang) then table.insert(langs, {label = LANG_NAMES[lang], value = lang}) end
-    end
+    local langs = {{label = LANG_NAMES['zh-Hant'], value = 'zh-Hant'}, {label = LANG_NAMES['zh-Hans'], value = 'zh-Hans'}}
     if config.lang == 'off' then table.insert(langs, {label = LANG_NAMES.off, value = 'off'}) end
     self.restart = false
     self:refresh_kb()
@@ -292,7 +316,7 @@ function DFLangWindow:init()
             label = 'Language:',
             label_width = LABEL_WIDTH,
             options = langs,
-            initial_option = next_lang(),
+            initial_option = current_lang(config),
             on_change = function(lang) set_lang(lang) self:changed() end,
         },
         widgets.ToggleHotkeyLabel{
@@ -332,6 +356,11 @@ function DFLangWindow:init()
             frame = {t = 11, l = 3},
             text = {{text = 'Restart the game to apply these changes.', pen = COLOR_YELLOW}},
             visible = function() return self.restart end,
+        },
+        widgets.Label{
+            frame = {t = 11, l = 3},
+            text = {{text = PENDING_NOTE, pen = COLOR_YELLOW}},
+            visible = function() return not self.restart and pending() end,
         },
         widgets.ToggleHotkeyLabel{
             view_id = 'misses',
@@ -393,20 +422,9 @@ function DFLangWindow:init()
     }
 end
 
--- 語言、整句貼圖、字身、字重與也翻成中文的選項要重開遊戲才生效：在視窗裡改過、而且和這次啟動時的設定不同（或引擎沒在跑）時顯示黃字
+-- 立即套用剛改的設定（見 apply_now）；要重開遊戲才生效的（改用其他翻譯 MOD、引擎沒在跑）顯示黃字
 function DFLangWindow:changed()
-    local state = dfhack.BASE_G.DFLANG
-    local started = state and state.started
-    if not started then
-        self.restart = true
-        return
-    end
-    local config = json.open(CONFIG_FILE).data
-    self.restart = next_lang() ~= state.lang or (config.overlay ~= false) ~= started.overlay
-        or (config.overlay_size or DEFAULT_SIZE) ~= started.overlay_size or (config.bold ~= false) ~= (started.bold ~= false)
-    for name in pairs(OPTIONS) do
-        self.restart = self.restart or option_on(config, name) ~= (started[name] == true)
-    end
+    self.restart = apply_now()
 end
 
 -- 紀錄檔大小與是否到了引擎的上限（misses_full：舊版引擎沒有這個欄位，當成沒滿）
@@ -464,8 +482,11 @@ if cmd == 'lang' then
         local back = dfi18n and dfcn and 'DFI18n and DFCN' or dfi18n and 'DFI18n' or dfcn and 'DFCN'
         print(back and ('Switched to the other translation mod (%s restored). Restart the game to apply.'):format(back)
             or 'Switched to the other translation mod. Restart the game to apply. Without one, DFLang stays on.')
-    else
+    elseif apply_now() then
         print(('Language set to %s. Restart the game to apply.'):format(lang))
+    else
+        print(('Language set to %s.'):format(lang))
+        if pending() then print(PENDING_NOTE) end
     end
     return
 end
@@ -495,16 +516,17 @@ elseif cmd == 'misses' and (args[2] == 'on' or args[2] == 'off') then
     check(set_misses(on))
     print(on and 'Logging untranslated text to dfhack-config/dflang-misses.tsv, also after restarting the game.'
         or 'Stopped logging untranslated text.')
+-- 外觀的設定改了立即套用；要重開遊戲才生效時（引擎太舊不能即時套用、套用失敗）另外提示
 elseif cmd == 'overlay' and (args[2] == 'on' or args[2] == 'off') then
     local on = args[2] == 'on'
     set_overlay(on)
-    print(on and 'Full-line text rendering: on (after restarting the game).'
-        or 'Full-line text rendering: off, back to two-cell glyphs (after restarting the game).')
+    print(on and 'Full-line text rendering: on.' or 'Full-line text rendering: off, back to two-cell glyphs.')
+    if apply_now() then print('Restart the game to apply these changes.') end
 elseif cmd == 'bold' and (args[2] == 'on' or args[2] == 'off') then
     local on = args[2] == 'on'
     set_bold(on)
-    print(on and 'Bold text: on (after restarting the game).'
-        or 'Bold text: off, using the regular weight (after restarting the game).')
+    print(on and 'Bold text: on.' or 'Bold text: off, using the regular weight.')
+    if apply_now() then print('Restart the game to apply these changes.') elseif pending() then print(PENDING_NOTE) end
 elseif cmd == 'overlay' and args[2] == 'size' then
     if not args[3] then
         print(('Chinese text size: %d/16 of the cell height.'):format(json.open(CONFIG_FILE).data.overlay_size or DEFAULT_SIZE))
@@ -513,7 +535,8 @@ elseif cmd == 'overlay' and args[2] == 'size' then
     local n = math.tointeger(tonumber(args[3]))
     if not n or n < 13 or n > 16 then qerror(USAGE) end
     set_overlay_size(n)
-    print(('Chinese text size: %d/16 of the cell height (after restarting the game).'):format(n))
+    print(('Chinese text size: %d/16 of the cell height.'):format(n))
+    if apply_now() then print('Restart the game to apply these changes.') end
 else
     print(USAGE)
 end

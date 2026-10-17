@@ -1,5 +1,5 @@
 //! 整句貼圖：畫面上的字改成一行一張貼圖，用本包的字型畫，不受「一個中文字佔兩格」與遊戲點陣字限制。
-//! 預設開啟；dflang overlay off 改回一字兩格的字圖（lua/dflang.lua）。
+//! 預設開啟；設定視窗或 dflang overlay off 改回一字兩格的字圖（lua/dflang.lua），隨時可切。
 //!
 //! DF 53.16 每幀由非同步執行緒在 render_things 裡把字寫進畫面緩衝區，主執行緒再用 renderer 的 vtable 逐格畫
 //! （update_all → 每格 update_tile → 錨定貼圖 → 頂層開著時每格 update_top_tile），兩邊交棒、不會同時跑；
@@ -25,29 +25,31 @@ use std::cell::RefCell;
 use std::collections::HashMap;
 use std::ffi::c_void;
 use std::hash::{Hash, Hasher};
-use std::sync::atomic::{AtomicBool, AtomicUsize, Ordering};
+use std::sync::atomic::{AtomicBool, AtomicU8, AtomicU64, AtomicUsize, Ordering};
 use std::sync::{Arc, OnceLock};
 
-use parking_lot::Mutex;
+use parking_lot::{Mutex, RwLock};
 
 use crate::atlas::{self, Glyphs};
 use crate::dict::Row;
 use crate::hooks::{DICT, LAYOUT};
 
 pub static ON: AtomicBool = AtomicBool::new(false);
-/// render_atlas 用的字型檔，主執行緒第一次畫字時載入
-pub static FONT_PATHS: OnceLock<Vec<String>> = OnceLock::new();
+/// 整句貼圖用的字型（lib.rs 的 set_typeface 換：遊戲啟動時、換字重或語言時）
+static TYPEFACE: RwLock<Option<Arc<Vec<atlas::Font>>>> = RwLock::new(None);
+/// 字型、字的大小或字典（語言）換過幾次：主執行緒看到變了，就丟掉照舊樣子畫的點陣與貼圖（見 State::ready）
+static STYLE: AtomicU64 = AtomicU64::new(0);
 static GPS: AtomicUsize = AtomicUsize::new(0);
 
 /// 字身相對格高（十六分之幾）、往上提的比例。遊戲的點陣字（16 像素高的格子）字頂在第 2 列、基線在第 12 列，按鈕與方框的上下緣線畫在
 /// 格子最上、最下兩三列。上提一像素時，16 像素的格子裡中文筆畫（hinting 後，覆蓋率 > 1/4）在 13 是第 2～14 列（相鄰兩列的字之間空 3 列），
 /// 14 是第 1～14 列（空 2 列、字底不變）、15 是 1～15（空 1 列）、16 是 0～15（兩列相黏）。預設 14：比 13 大、字底不會多壓到下緣線。
-/// 玩家可用 dflang overlay size 13～16 改（set_em，啟動時畫字圖集前設定一次）；框的邊緣列照 13 畫（SNUG_EM，見 size_for）。
-/// 段落量字寬也用這個大小（lib.rs render_atlas → atlas::advances）
+/// 玩家可用設定視窗或 dflang overlay size 改成 13～16（set_em，隨時可改）；框的邊緣列照 13 畫（SNUG_EM，見 size_for）。
+/// 段落量字寬也用這個大小（lib.rs set_typeface → atlas::advances）
 pub const DEFAULT_EM: u8 = 14;
 /// 實測緣線畫在字的同一格裡也不壓線的大小（冒險角色名字框的兩列、存檔清單排序標題、出發準備分頁），也是設定的下限
 const SNUG_EM: u8 = 13;
-static EM: OnceLock<u8> = OnceLock::new();
+static EM: AtomicU8 = AtomicU8::new(DEFAULT_EM);
 const RAISE_PER_CELL: f32 = 1.0 / 16.0;
 /// 只有一列高的按鈕（排序標題這類，見 size_for）：上下緣線畫在字的同一格裡，字改小一號（和錨定貼圖標籤一樣）放在兩條線中間
 const SMALL_EM_PER_CELL: f32 = 0.75;
@@ -57,13 +59,28 @@ const NORMAL: usize = 0;
 const SMALL: usize = 1;
 const SNUG: usize = 2;
 
-/// 設定字身（十六分之幾格高，13～16）：啟動時畫字圖集前呼叫一次；超出範圍或已經設過的不算
+/// 設定字身（十六分之幾格高，13～16）；超出範圍的不算。段落的字寬要另外重量（lib.rs 的 set_typeface）
 pub fn set_em(sixteenths: u8) -> bool {
-    (SNUG_EM..=16).contains(&sixteenths) && EM.set(sixteenths).is_ok()
+    let ok = (SNUG_EM..=16).contains(&sixteenths);
+    if ok && EM.swap(sixteenths, Ordering::Relaxed) != sixteenths {
+        restyle();
+    }
+    ok
 }
 
 pub fn em_per_cell() -> f32 {
-    f32::from(*EM.get().unwrap_or(&DEFAULT_EM)) / 16.0
+    f32::from(EM.load(Ordering::Relaxed)) / 16.0
+}
+
+/// 換字型（字重或語言換了）
+pub fn set_typeface(fonts: Arc<Vec<atlas::Font>>) {
+    *TYPEFACE.write() = Some(fonts);
+    restyle();
+}
+
+/// 字的樣子變了（字型、字的大小、字典的字圖編號）：主執行緒下一次畫字前丟掉快取（見 State::ready）
+pub fn restyle() {
+    STYLE.fetch_add(1, Ordering::Release);
 }
 
 fn per_cell(size: usize) -> f32 {
@@ -432,7 +449,8 @@ struct State {
     top_pass: bool,
     frame: u64,
     cache: HashMap<u64, Strip>,
-    /// [玩家設定的大小, 小一號, 預設大小]：字型（依目前格高）與字的點陣快取；size 選用哪一組（見 size_for）
+    /// [玩家設定的大小, 小一號, 預設大小]：字型（依目前格高）與字的點陣快取；size 選用哪一組（見 size_for）。
+    /// Glyphs 借用 typeface 的字型資料：換字型時先清掉這裡（見 ready），typeface 也宣告在後面、後釋放
     glyphs: [Option<(i32, Glyphs<'static>)>; 3],
     boxes: [HashMap<char, Option<GlyphBox>>; 3],
     size: usize,
@@ -447,6 +465,13 @@ struct State {
     extra: Vec<Run>,
     /// 除錯：頂層開始前貼主層花的時間（update_all 結束時併入耗時）
     spent: std::time::Duration,
+    /// 目前畫字用的字型（TYPEFACE 的那一份）與 STYLE：STYLE 變了就重新準備（見 restyle_if_needed）
+    typeface: Option<Arc<Vec<atlas::Font>>>,
+    style: u64,
+    /// 這一幀用的字典（begin 時取）：核對格子與 glyph 編號換回字都用這一份，換語言時一幀裡不會混用兩份字典；
+    /// chars 是照 chars_dict 那一份建的。字典換下來也不釋放（lib.rs 的 LOADED），留著指標不會懸空
+    dict: usize,
+    chars_dict: usize,
 }
 
 thread_local! {
@@ -500,14 +525,6 @@ fn glyph_box(glyphs: &Glyphs, c: char, dy: i32, s: usize, kx: f32) -> Option<Gly
     Some(GlyphBox { mask, w, org: ((w as f32 - adv) / 2.0).round() as i32, adv })
 }
 
-fn fonts() -> Option<&'static [atlas::Font]> {
-    static FONTS: OnceLock<Option<&'static [atlas::Font]>> = OnceLock::new();
-    *FONTS.get_or_init(|| {
-        let paths: Vec<&str> = FONT_PATHS.get()?.iter().map(String::as_str).collect();
-        atlas::load_fonts(&paths).ok().map(|f| &*Box::leak(f.into_boxed_slice()))
-    })
-}
-
 impl State {
     /// update_all 開始：逐格核對本幀每段字的格子還是不是它寫的，再把連續的幾段接成行。
     unsafe fn begin(&mut self) {
@@ -515,10 +532,13 @@ impl State {
         self.flushed = false;
         self.top_pass = false;
         self.lines.clear();
+        // 先取字典再看 STYLE：換字典前會先 restyle（lib.rs 的 publish_dict），看到新字典就一定看到作廢，不會用舊字典畫的貼圖
+        let dict = DICT.load(Ordering::Acquire);
+        self.restyle_if_needed();
+        self.dict = dict as usize;
         self.runs = FRAME.lock().clone();
         let gps = GPS.load(Ordering::Relaxed) as *const u8;
         let (Some(l), Some(runs)) = (LAYOUT.get(), self.runs.clone()) else { return };
-        let dict = DICT.load(Ordering::Acquire);
         if gps.is_null() || dict.is_null() {
             return;
         }
@@ -879,23 +899,42 @@ impl State {
         self.extra = extra;
     }
 
-    /// 字型（依目前格高）與 glyph id → 字 的對照；第一次用時準備
-    fn ready(&mut self, dy: i32) -> Option<()> {
-        if self.chars.is_empty() {
-            let dict = DICT.load(Ordering::Acquire);
-            if dict.is_null() {
-                return None;
+    /// 字型、字的大小或字典換了（STYLE 變了）：照舊樣子畫的點陣與貼圖都丟掉，換上新字型。只在每幀開頭（begin）看，
+    /// 一幀裡用的都是同一套；Glyphs 借用舊字型，要在換掉字型之前丟掉
+    fn restyle_if_needed(&mut self) {
+        let style = STYLE.load(Ordering::Acquire);
+        if self.typeface.is_some() && self.style == style {
+            return;
+        }
+        if let Some(sdl) = sdl() {
+            for strip in self.cache.values() {
+                unsafe { (sdl.destroy)(strip.tex) };
             }
-            let dict = unsafe { &*dict };
+        }
+        self.cache.clear();
+        TEXTURES.store(0, Ordering::Relaxed);
+        self.glyphs = [None, None, None];
+        self.boxes.iter_mut().for_each(HashMap::clear);
+        self.typeface = TYPEFACE.read().clone();
+        self.style = style;
+    }
+
+    /// 字型（依目前格高）與 glyph id → 字 的對照（照這一幀的字典）；第一次用時、或格高、字典換了以後重新準備
+    fn ready(&mut self, dy: i32) -> Option<()> {
+        if self.chars_dict != self.dict || self.chars.is_empty() {
+            let dict = unsafe { (self.dict as *const crate::dict::Dict).as_ref() }?;
             self.chars = vec![' '; dict.glyph_of.len()];
             for (&c, &g) in &dict.glyph_of {
                 self.chars[g as usize] = c;
             }
+            self.chars_dict = self.dict;
         }
+        // self.typeface 持有這份字型，換字型前會先清掉 glyphs（見上面），借用活不過它
+        let fonts: &'static [atlas::Font] = unsafe { &*std::ptr::from_ref(self.typeface.as_deref()?.as_slice()) };
         for s in [NORMAL, SMALL, SNUG] {
             if self.glyphs[s].as_ref().is_none_or(|(h, _)| *h != dy) {
                 let em = (dy as f32 * per_cell(s)).round();
-                self.glyphs[s] = Some((dy, Glyphs::with_px(fonts()?, em).ok()?));
+                self.glyphs[s] = Some((dy, Glyphs::with_px(fonts, em).ok()?));
                 self.boxes[s].clear();
             }
         }

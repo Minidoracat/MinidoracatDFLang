@@ -5,8 +5,8 @@ can run at a time, so DFLang is not running.	所以 DFLang 沒有啟動。	所�
 Choose the one to use; it takes effect after you	請選擇要用哪一個，重開遊戲後生效。	请选择要用哪一个，重启游戏后生效。		lua/loader.lua notify：讓位說明第 4 行
 restart the game. To switch again later, type	之後要再切換，在 DFHack 主控台輸入	之后要再切换，在 DFHack 控制台输入		lua/loader.lua notify：讓位說明第 5 行
 dflang lang off (back to DFI18n) or	dflang lang off（改回 DFI18n）或	dflang lang off（改回 DFI18n）或		lua/loader.lua notify：DFI18n 的讓位說明第 6 行；指令照原文
-dflang lang zh-Hant (DFLang) in the DFHack console.	dflang lang zh-Hant（改用 DFLang）。	dflang lang zh-Hant（改用 DFLang）。		lua/loader.lua notify：繁中包的讓位說明第 7 行；指令照原文
-dflang lang zh-Hans (DFLang) in the DFHack console.	dflang lang zh-Hans（改用 DFLang）。	dflang lang zh-Hans（改用 DFLang）。		lua/loader.lua notify：簡中包的讓位說明第 7 行；指令照原文
+dflang lang zh-Hant (DFLang) in the DFHack console.	dflang lang zh-Hant（改用 DFLang）。	dflang lang zh-Hant（改用 DFLang）。		lua/loader.lua notify：讓位說明第 7 行（語言是繁中時）；指令照原文
+dflang lang zh-Hans (DFLang) in the DFHack console.	dflang lang zh-Hans（改用 DFLang）。	dflang lang zh-Hans（改用 DFLang）。		lua/loader.lua notify：讓位說明第 7 行（語言是簡中時）；指令照原文
 Turn off DFI18n and use DFLang	關閉 DFI18n，改用 DFLang	关闭 DFI18n，改用 DFLang		lua/loader.lua notify：讓位說明的選項，停用 DFI18n（重開遊戲生效）
 Keep using DFI18n	繼續用 DFI18n	继续用 DFI18n		lua/loader.lua notify：讓位說明的選項，之後不再詢問（dflang lang off）
 DFI18n has been turned off.	已關閉 DFI18n。	已关闭 DFI18n。		lua/loader.lua notify：停用 DFI18n 後的訊息第 1 行

@@ -4,9 +4,9 @@
 """本機實機測試：把 dist/ 的工作坊包掛進遊戲、啟動、下 DFHack 指令、收尾還原。
 
 用法（repo 根目錄，先跑 scripts/build.py；play 自己會建置）：
-  uv run scripts/dev_game.py play [--lang zh-Hant|zh-Hans]     啟動器（scripts/dev-play.cmd 雙擊執行）：建置、掛包、開遊戲，遊戲關掉後自動 down
-  uv run scripts/dev_game.py up [--lang zh-Hant|zh-Hans|both] [--with-dfi18n]   掛包、遮蔽 DFI18n（--with-dfi18n 不遮蔽）、啟動，等到 DFHack 回應；
-                                                               只測一種語言時寫進測試用的 dflang.json，載入的不是 dist 的包就失敗
+  uv run scripts/dev_game.py play [--lang zh-Hant|zh-Hans|auto]     啟動器（scripts/dev-play.cmd 雙擊執行）：建置、掛包、開遊戲，遊戲關掉後自動 down
+  uv run scripts/dev_game.py up [--lang zh-Hant|zh-Hans|auto] [--with-dfi18n]   掛包、遮蔽 DFI18n（--with-dfi18n 不遮蔽）、啟動，等到 DFHack 回應；
+                                                               要測的語言寫進測試用的 dflang.json（auto 不寫，照系統判斷），載入的不是 dist 的包就失敗
   uv run scripts/dev_game.py run dflang status                 轉給 dfhack-run
   uv run scripts/dev_game.py click X Y                         以文字格座標模擬滑鼠左鍵（不動真滑鼠、不搶焦點）
   uv run scripts/dev_game.py mouse PX PY [r]                   以畫面像素座標按住滑鼠三幀再放開（地圖點擊用）
@@ -45,7 +45,10 @@ CONFIG_DIR = DF / "dfhack-config"
 BACKUP = ROOT / "temp/dfhack-config-backup"
 MISSES_ARCHIVE = ROOT / "temp/misses"
 DFHACK_RUN = DFHACK / "hack/dfhack-run.exe"
-ITEMS = json.loads((ROOT / "scripts/workshop.json").read_text(encoding="utf-8"))["items"]
+WORKSHOP = json.loads((ROOT / "scripts/workshop.json").read_text(encoding="utf-8"))
+FOLDER = WORKSHOP["folder"]
+LANGS = [language["lang"] for language in WORKSHOP["languages"]]
+LINK = MODS / FOLDER
 
 
 def dfhack(*args: str, quiet: bool = False) -> subprocess.CompletedProcess:
@@ -66,23 +69,23 @@ def kill_game() -> None:
     time.sleep(3)
 
 
-def play(langs: list[str] | None) -> int:
+def play(lang: str | None) -> int:
     """啟動器：建置、掛上 dist、開遊戲，等遊戲關掉再 down。up 與 down 都會強制關遊戲，所以遊戲開著時不動手"""
     if game_running():
         print("遊戲正在執行：先存檔、關掉遊戲，再開啟動器", file=sys.stderr)
         return 1
     # 上次的視窗在遊戲開著時被關掉：掛載與暫移的玩家設定還在，先還原再開始
-    if SHADOW.exists() or BACKUP.exists() or any(os.path.isjunction(MODS / item["folder"]) for item in ITEMS):
+    if SHADOW.exists() or BACKUP.exists() or os.path.isjunction(LINK):
         print("上次的測試沒有收尾，先還原")
         down()
-    if not langs:
-        langs = ["zh-Hans"] if input("要測哪一包？1 繁體中文（預設）  2 简体中文：").strip() == "2" else ["zh-Hant"]
+    if not lang:
+        lang = {"2": "zh-Hans", "3": "auto"}.get(input("要測哪種語言？1 繁體中文（預設）  2 简体中文  3 照系統判斷：").strip(), "zh-Hant")
     if subprocess.run(["uv", "run", str(ROOT / "scripts/build.py")], cwd=ROOT).returncode != 0:
         print("建置失敗，沒有開遊戲", file=sys.stderr)
         return 1
     started = False
     try:
-        started = up(langs) == 0
+        started = up(lang) == 0
         if started:
             print("\n遊戲關掉後會自動還原（拆掉掛載、放回你自己的 dflang 設定）。這個視窗先別關；"
                   "在這裡按 Ctrl+C 會直接關掉遊戲再還原，沒存檔的進度會不見")
@@ -94,10 +97,13 @@ def play(langs: list[str] | None) -> int:
     return 0 if started else 1
 
 
-def up(langs: list[str], with_dfi18n: bool = False) -> int:
+def up(lang: str, with_dfi18n: bool = False) -> int:
+    if lang not in (*LANGS, "auto"):
+        print(f"--lang 只能是 {'、'.join(LANGS)} 或 auto", file=sys.stderr)
+        return 2
     kill_game()
     # 遮蔽 MOD 或掛載連結還在表示測試進行中（up 了兩次沒有 down），這時的 dflang* 是測試自己產生的，不是玩家的，不備份
-    testing = SHADOW.exists() or any(os.path.isjunction(MODS / item["folder"]) for item in ITEMS)
+    testing = SHADOW.exists() or os.path.isjunction(LINK)
     user_files = list(CONFIG_DIR.glob("dflang*"))
     if user_files and not BACKUP.exists() and not testing:
         BACKUP.mkdir(parents=True)
@@ -110,20 +116,20 @@ def up(langs: list[str], with_dfi18n: bool = False) -> int:
             "[EARLIEST_COMPATIBLE_NUMERIC_VERSION:1]\n[EARLIEST_COMPATIBLE_DISPLAYED_VERSION:test]\n"
             "[AUTHOR:DFLang test]\n[NAME:DFLang test shadow for DFI18n]\n"
             "[DESCRIPTION:Temporary local stub that hides DFI18n scripts during DFLang tests.]\n", encoding="ascii")
-    for item in ITEMS:
-        if item["lang"] not in langs:
-            continue
-        src, link = ROOT / "dist" / item["folder"], MODS / item["folder"]
-        if not src.is_dir():
-            print(f"缺 {src}；先跑 uv run scripts/build.py", file=sys.stderr)
-            return 1
-        if not link.exists():
-            subprocess.run(["cmd", "/c", "mklink", "/J", str(link), str(src)], check=True, capture_output=True)
-    if len(langs) == 1:
-        # 玩家訂閱了本 MOD 時，工作坊的副本（mods/<ID> (<版本>)）讓另一種語言也算已安裝，載入器會照預設選繁中：指定要測的語言
-        config = CONFIG_DIR / "dflang.json"
-        data = json.loads(config.read_text(encoding="utf-8")) if config.is_file() else {}
-        config.write_text(json.dumps({**data, "lang": langs[0]}), encoding="utf-8")
+    src = ROOT / "dist" / FOLDER
+    if not src.is_dir():
+        print(f"缺 {src}；先跑 uv run scripts/build.py", file=sys.stderr)
+        return 1
+    if not LINK.exists():
+        subprocess.run(["cmd", "/c", "mklink", "/J", str(LINK), str(src)], check=True, capture_output=True)
+    # 指定語言寫進測試用的 dflang.json；auto 拿掉 lang，遊戲照系統判斷
+    config = CONFIG_DIR / "dflang.json"
+    data = json.loads(config.read_text(encoding="utf-8")) if config.is_file() else {}
+    data.pop("lang", None)
+    if lang != "auto":
+        data["lang"] = lang
+    if data or config.is_file():
+        config.write_text(json.dumps(data), encoding="utf-8")
     os.startfile("steam://rungameid/975370")
     deadline = time.time() + 180
     while time.time() < deadline:
@@ -133,7 +139,7 @@ def up(langs: list[str], with_dfi18n: bool = False) -> int:
             # 同 ID 的包 DFHack 載入版本最高的，同版本取最後列出的（mods/ 的掛載連結排在工作坊副本後面）；
             # 工作坊的版本比 dist 新時會載入工作坊的包，測到的就不是這次建置的 DLL
             loaded = loaded_package()
-            if loaded and not is_dist(loaded, langs):
+            if loaded and not is_dist(loaded):
                 print(f"載入的不是 dist 的包：{loaded}", file=sys.stderr)
                 return 1
             return dfhack("dflang", "status").returncode
@@ -143,10 +149,8 @@ def up(langs: list[str], with_dfi18n: bool = False) -> int:
 
 def down() -> int:
     kill_game()
-    for item in ITEMS:
-        link = MODS / item["folder"]
-        if os.path.isjunction(link):
-            os.rmdir(link)  # 只移除連結，不動 dist/
+    if os.path.isjunction(LINK):
+        os.rmdir(LINK)  # 只移除連結，不動 dist/
     shutil.rmtree(SHADOW, ignore_errors=True)
     misses = CONFIG_DIR / "dflang-misses.tsv"
     if misses.is_file() and misses.stat().st_size:
@@ -180,8 +184,8 @@ def loaded_package() -> str:
     return dfhack("lua", "local s = dfhack.BASE_G.DFLANG; print(s and s.dir or '')", quiet=True).stdout.strip()
 
 
-def is_dist(path: str, langs: list[str]) -> bool:
-    return any(f"/mods/{item['folder']}/" in path for item in ITEMS if item["lang"] in langs)
+def is_dist(path: str) -> bool:
+    return f"/mods/{FOLDER}/" in path
 
 
 # ---- sweep：從目前畫面把分頁一路點開，量每個分頁標籤的字有沒有置中 ----
@@ -289,7 +293,7 @@ def ink_center(img: bytes, w: int, x_lo: int, x_hi: int, y_lo: int, y_hi: int) -
 
 def sweep() -> int:
     loaded = loaded_package()
-    if not is_dist(loaded, [item["lang"] for item in ITEMS]):
+    if not is_dist(loaded):
         print(f"載入的不是 dist 的包（{loaded or '引擎沒在跑'}）：先跑 up", file=sys.stderr)
         return 1
     misses = CONFIG_DIR / "dflang-misses.tsv"
@@ -399,11 +403,9 @@ def main() -> int:
     if not args or args[0] not in ("play", "up", "run", "click", "mouse", "sweep", "down"):
         print(__doc__)
         return 2
-    if args[0] == "play":
-        return play([args[2]] if len(args) > 2 and args[1] == "--lang" else None)
-    if args[0] == "up":
-        lang = args[2] if len(args) > 2 and args[1] == "--lang" else "zh-Hant"
-        return up(["zh-Hant", "zh-Hans"] if lang == "both" else [lang], "--with-dfi18n" in args)
+    if args[0] in ("play", "up"):
+        lang = args[2] if len(args) > 2 and args[1] == "--lang" else None
+        return play(lang) if args[0] == "play" else up(lang or "zh-Hant", "--with-dfi18n" in args)
     if args[0] == "run":
         return dfhack(*args[1:]).returncode
     if args[0] == "click":

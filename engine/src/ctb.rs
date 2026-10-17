@@ -8,6 +8,7 @@
 //! 佔位的譯文用佔位原文的顏色，句型的固定字用比對範圍開頭的顏色。
 //! 沒有譯文的段落整段照畫英文，不拿行片段查字典（免得一段裡有的行中文、有的行英文）；段落缺句時其餘照翻開著時，
 //! 缺的句子照原文接在譯文裡一起重新換行（見 translate）。和段落一樣只在畫字時換，遊戲資料不改。
+//! 玩家在設定視窗改了選項或語言以後，畫到一行時照新的設定重算整段（見 line_plan），不必等遊戲重建這個框。
 
 use std::collections::HashMap;
 use std::sync::{Arc, LazyLock, OnceLock};
@@ -15,6 +16,7 @@ use std::sync::{Arc, LazyLock, OnceLock};
 use parking_lot::Mutex;
 
 use crate::dict::{Dict, Entry};
+use crate::hooks::Stamp;
 
 /// color_text_boxst.width、color_text_linest.color 的位移（行的文字在位移 0），由 Lua 依 DFHack 的結構定義傳入。
 #[derive(Clone, Copy)]
@@ -43,18 +45,29 @@ pub enum Plan {
     Draw(Arc<[Piece]>),
 }
 
+/// 一段切成的幾行：登記時的原文、框寬、底色與每一行的位址（設定換了以後照它重算，見 line_plan）
+struct Group {
+    raw: Box<[u8]>,
+    width: i32,
+    base: u8,
+    lines: Box<[usize]>,
+}
+
 struct Line {
     /// 登記時的英文：行釋放後位址可能給別的行用，內容相同才照計畫畫
     text: Box<[u8]>,
     plan: Plan,
+    group: Arc<Group>,
+    /// 計畫照哪一版設定、哪一份字典算的
+    stamp: Stamp,
 }
 
 static LINES: LazyLock<Mutex<HashMap<usize, Line>>> = LazyLock::new(|| Mutex::new(HashMap::new()));
 /// ponytail: 行釋放時沒有通知，超過上限整批清掉；當時畫面上的框要等下次重建（切分頁）才恢復中文。
 const LINES_LIMIT: usize = 50_000;
 
-/// 同一段原文、同框寬、同行數、同底色算出來的計畫（None 是沒有譯文）
-type Key = (Vec<u8>, i32, usize, u8);
+/// 同一段原文、同框寬、同行數、同底色、同一版設定算出來的計畫（None 是沒有譯文）
+type Key = (Vec<u8>, i32, usize, u8, Stamp);
 static PLANS: LazyLock<Mutex<HashMap<Key, Option<Arc<[Plan]>>>>> = LazyLock::new(|| Mutex::new(HashMap::new()));
 const PLANS_LIMIT: usize = 5_000;
 
@@ -134,7 +147,7 @@ pub fn translate(raw: &[u8], base: u8, dict: &Dict) -> (Option<String>, Vec<Vec<
                 translated = true;
                 p
             }
-            None if dict.options.partial => crate::dict::english_pieces(&block.text, 0),
+            None if dict.options().partial => crate::dict::english_pieces(&block.text, 0),
             None => continue,
         };
         if k > 0 {
@@ -150,7 +163,7 @@ pub fn translate(raw: &[u8], base: u8, dict: &Dict) -> (Option<String>, Vec<Vec<
             out.push_str(&text);
         }
     }
-    let ok = missing.is_empty() || (dict.options.partial && translated);
+    let ok = missing.is_empty() || (dict.options().partial && translated);
     (ok.then_some(out), missing)
 }
 
@@ -181,6 +194,24 @@ unsafe fn cstr<'a>(p: usize) -> &'a [u8] {
     unsafe { std::ffi::CStr::from_ptr(p as *const std::ffi::c_char) }.to_bytes()
 }
 
+/// 一段排成 n 行的計畫（快取）與第一次算時查不到的句子（給未翻譯紀錄）
+fn cached(raw: &[u8], width: i32, n: usize, base: u8, dict: &Dict, stamp: Stamp) -> (Option<Arc<[Plan]>>, Vec<Vec<u8>>) {
+    let mut missing = Vec::new();
+    let mut cache = PLANS.lock();
+    if cache.len() > PLANS_LIMIT {
+        cache.clear();
+    }
+    let plans = cache
+        .entry((raw.to_vec(), width, n, base, stamp))
+        .or_insert_with(|| {
+            let (t, m) = translate(raw, base, dict);
+            missing = m;
+            t.and_then(|t| compute(&t, width, n, base, dict))
+        })
+        .clone();
+    (plans, missing)
+}
+
 /// add_string 剛切好的這幾行（行的位址）登記畫字計畫。回傳查不到的句子（給未翻譯紀錄）。
 pub unsafe fn plan(lines: &[usize], raw: &[u8], width: i32, dict: &Dict) -> Vec<Vec<u8>> {
     let Some(layout) = CTB_LAYOUT.get() else { return Vec::new() };
@@ -188,37 +219,39 @@ pub unsafe fn plan(lines: &[usize], raw: &[u8], width: i32, dict: &Dict) -> Vec<
         return Vec::new();
     }
     let base = unsafe { *((lines[0] + layout.color) as *const u8) };
-    let mut missing = Vec::new();
-    let plans = {
-        let mut cache = PLANS.lock();
-        if cache.len() > PLANS_LIMIT {
-            cache.clear();
-        }
-        cache
-            .entry((raw.to_vec(), width, lines.len(), base))
-            .or_insert_with(|| {
-                let (t, m) = translate(raw, base, dict);
-                missing = m;
-                t.and_then(|t| compute(&t, width, lines.len(), base, dict))
-            })
-            .clone()
-    };
+    // 先記版本再算：算到一半玩家改了設定，這份計畫就算舊的，畫到時重算
+    let stamp = Stamp::of(dict);
+    let (plans, missing) = cached(raw, width, lines.len(), base, dict, stamp);
+    let group = Arc::new(Group { raw: raw.into(), width, base, lines: lines.into() });
     let mut table = LINES.lock();
     if table.len() + lines.len() > LINES_LIMIT {
         table.clear();
     }
     for (k, &s) in lines.iter().enumerate() {
         let plan = plans.as_ref().map_or(Plan::English, |p| p[k].clone());
-        table.insert(s, Line { text: unsafe { cstr(s) }.into(), plan });
+        table.insert(s, Line { text: unsafe { cstr(s) }.into(), plan, group: group.clone(), stamp });
     }
     missing
 }
 
-/// 畫字 hook 用：這個字串是彩色文字框的一行時，回傳它的畫字計畫。
-pub unsafe fn line_plan(s: usize) -> Option<Plan> {
-    let table = LINES.lock();
-    let line = table.get(&s)?;
-    (*line.text == *unsafe { cstr(s) }).then(|| line.plan.clone())
+/// 畫字 hook 用：這個字串是彩色文字框的一行時，回傳它的畫字計畫。玩家改過設定或語言（dict 是現在的字典）時，
+/// 照現在的設定重算這一行所屬的整段，同一段的其他行一起換。
+pub unsafe fn line_plan(s: usize, dict: &Dict) -> Option<Plan> {
+    let mut table = LINES.lock();
+    let line = table.get(&s).filter(|l| *l.text == *unsafe { cstr(s) })?;
+    let stamp = Stamp::of(dict);
+    if line.stamp == stamp {
+        return Some(line.plan.clone());
+    }
+    let group = line.group.clone();
+    let (plans, _) = cached(&group.raw, group.width, group.lines.len(), group.base, dict, stamp);
+    for (k, addr) in group.lines.iter().enumerate() {
+        if let Some(l) = table.get_mut(addr).filter(|l| Arc::ptr_eq(&l.group, &group)) {
+            l.plan = plans.as_ref().map_or(Plan::English, |p| p[k].clone());
+            l.stamp = stamp;
+        }
+    }
+    table.get(&s).map(|l| l.plan.clone())
 }
 
 /// status 用：(登記的行數, 計畫快取筆數)
@@ -279,8 +312,8 @@ mod tests {
 
     #[test]
     fn partial_option_draws_missing_sentences_in_their_source_colors() {
-        let mut d = dict();
-        d.options.partial = true;
+        let d = dict();
+        d.set_options(crate::dict::Options { partial: true, ..Default::default() });
         let (zh, missing) = translate(b"[C:7:0:1]He is slow to anger.  He is [C:4:0:1]clumsy.[R][C:7:0:1]Nobody knows.", 7, &d);
         assert_eq!(missing, vec![b"He is clumsy.".to_vec(), b"Nobody knows.".to_vec()]);
         assert_eq!(zh.as_deref(), Some("[C:7:0:1]他很慢才生氣。 He is[C:4:0:1] clumsy.[R][C:7:0:1]Nobody knows."),

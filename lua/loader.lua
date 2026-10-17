@@ -1,12 +1,16 @@
--- DFLang 中文化（@LANG@）載入器：DFHack 啟動時當模組執行，載入本包 dflang/ 底下的引擎、字典與字圖集。
--- scripts/build.py 依語言換掉 @LANG@、@MOD_ID@、@VERSION@、@MASCOT_LABEL@、@AUTHOR@ 並改檔名；兩包檔名不同，DFHack 才會兩支都執行。
+-- DFLang 中文化載入器：DFHack 啟動時當模組執行，載入本包 dflang/ 底下的引擎，以及 dflang/<語言>/ 的字典、字型與字圖集。
+-- scripts/build.py 換掉 @MOD_ID@、@VERSION@、@AUTHOR@、@LANGS@。檔名沿用合併前繁中包的 dflang_zh_hant.lua：標題畫面的小工具名稱
+-- （dflang_zh_hant.mascot、.hint）和玩家在 gui/overlay 存的位置不變
 --@module = true
 
-local LANG = '@LANG@'
 local MOD_ID = '@MOD_ID@'
 -- workshop.json 的 version.displayed（標題畫面的名牌、設定視窗的標題顯示，玩家回報時看得到自己裝的是哪一版）
 local VERSION = '@VERSION@'
-local PACKAGES = {['zh-Hant'] = 'cat_df_lang_zh_hant', ['zh-Hans'] = 'cat_df_lang_zh_hans'}
+-- 本包的語言（workshop.json 的 languages）：lang 也是 dflang/ 底下的資料夾名，label 是標題畫面名牌的語言標籤；
+-- 第一種是系統判斷不出中文時用的
+local LANGS = @LANGS@
+local LABELS = {}
+for _, l in ipairs(LANGS) do LABELS[l.lang] = l.label end
 -- 會攔同一批寫字函式的其他翻譯引擎，依序檢查。DFCN 是遊戲啟動時由 dfhooks 載入的 DLL，看遊戲目錄有沒有它的入口檔
 -- （check：dflang.lua 的 dfcn_installed；只訂閱、沒照它的說明複製入口檔就不會啟用）；放最前面：同時也裝了 DFI18n 時，
 -- 只停用 DFI18n 解決不了 DFCN。DFHack 模組看它的載入腳本在不在（不只看 MOD ID）。
@@ -27,21 +31,24 @@ local GPS_FIELDS = {'screenx', 'screeny', 'dimx', 'dimy', 'clipx', 'clipy', 'scr
                     'screentexpos_top', 'screentexpos_top_flag', 'screentexpos_top_lower', 'screentexpos_anchored',
                     'screen_color_r', 'screen_color_g', 'screen_color_b'}
 local CONFIG_FILE = 'dfhack-config/dflang.json'
--- 每次啟動依當下格子大小重畫的字圖集（相對於遊戲目錄）；可直接打開檢查字形
+-- 依遊戲啟動時的格子大小畫的字圖集（相對於遊戲目錄；語言、字重各一張，%s 是「語言-字重」）；可直接打開檢查字形
 local ATLAS_FILE = 'dfhack-config/dflang-atlas-%s.png'
 -- dflang misses on 之後每次啟動都把畫面上沒翻到的字串記到這裡（dflang.lua 共用同一個路徑）
 local MISSES_FILE = 'dfhack-config/dflang-misses.tsv'
 -- 標題畫面左下角的吉祥物：本包 dflang/mascot.png 依目前格子大小縮成高 MASCOT_ROWS 格，底部疊上名牌（語言標籤＋作者名與版本號）
 local MASCOT_FILE = 'dfhack-config/dflang-mascot-%s.png'
 local MASCOT_ROWS = 12
-local MASCOT_LABEL = '@MASCOT_LABEL@'
 local AUTHOR = '@AUTHOR@'
 
 local json = require('json')
 local scriptmanager = require('script-manager')
 
-local function log(fmt, ...) print(('[DFLang %s] ' .. fmt):format(LANG, ...)) end
-local function fail(fmt, ...) dfhack.printerr(('[DFLang %s] ' .. fmt):format(LANG, ...)) end
+local function log(fmt, ...) print(('[DFLang] ' .. fmt):format(...)) end
+local function fail(fmt, ...) dfhack.printerr(('[DFLang] ' .. fmt):format(...)) end
+
+-- 本包的 dflang/ 資料夾（start 時設）：引擎、特徵碼、吉祥物圖；各語言的字典與字型在底下的語言資料夾
+local base
+local function lang_dir(lang) return base .. lang .. '/' end
 
 local function mod_dir(id)
     local path = scriptmanager.getModSourcePath(id)
@@ -58,18 +65,13 @@ local function read_file(path)
     return s
 end
 
-local function default_lang()
-    return mod_dir(PACKAGES['zh-Hant']) and 'zh-Hant' or 'zh-Hans'
+-- 用哪種語言：dfhack-config/dflang.json 的 lang（玩家在設定視窗或 dflang lang 選的），沒選過或選了 off（改用其他翻譯引擎，見 start）
+-- 就照系統判斷（引擎的 system_lang：Steam 介面語言、Windows 顯示語言與地區格式），判斷不出中文用第一種
+local function chosen_lang(engine, config)
+    return LABELS[config.lang] and config.lang or engine.system_lang() or LANGS[1].lang
 end
 
--- 兩包都裝時只啟用一包：dfhack-config/dflang.json 的 lang 優先，沒有就用繁體；off 是改用其他翻譯引擎（見 start）
-local function chosen_lang()
-    local pref = json.open(CONFIG_FILE).data.lang
-    if pref == 'off' or pref and PACKAGES[pref] and mod_dir(PACKAGES[pref]) then return pref end
-    return default_lang()
-end
-
--- 本包的 dflang.lua（偵測、停用其他翻譯引擎的函式）。兩包、新舊版的 dflang.lua 可能同時在 DFHack 的腳本路徑上，
+-- 本包的 dflang.lua（偵測、停用其他翻譯引擎的函式）。新舊版、已合併的簡中項目的 dflang.lua 可能同時在 DFHack 的腳本路徑上，
 -- reqscript('dflang') 不一定找到本包這一份（實測找到舊版、沒有新函式），照路徑載入
 local own_dflang
 local function dflang()
@@ -78,6 +80,24 @@ local function dflang()
         assert(loadfile(mod_dir(MOD_ID) .. 'scripts_modinstalled/dflang.lua', 't', own_dflang))()
     end
     return own_dflang
+end
+
+-- 合併前（0.4.0 以前）一種語言一個包，每次啟動都寫一張 dflang-atlas-<語言>.png（沒有字重）。玩家沒選過語言時照最後寫入的那張
+-- 沿用同一種語言、記進 dflang.json，不讓更新後的系統判斷換掉；這些舊暫存檔新版用不到，一併刪掉
+local function keep_old_lang(config)
+    local lang, newest
+    for _, l in ipairs(LANGS) do
+        local path = ATLAS_FILE:format(l.lang)
+        local t = dfhack.filesystem.mtime(path)
+        if t >= 0 then
+            if not newest or t > newest then lang, newest = l.lang, t end
+            os.remove(path)
+        end
+    end
+    if lang and config.lang == nil then
+        dflang().set_lang(lang)
+        config.lang = lang
+    end
 end
 
 local function conflict()
@@ -120,7 +140,14 @@ local function cell_size()
     return 16, 24
 end
 
--- 本包某個字重（bold、regular，見 scripts/build.py 的 WEIGHTS）的字型檔，檔名開頭的序號就是補字順序
+-- 字圖集、字寬一律照遊戲啟動時的格子大小（遊戲中途換字重、語言時畫的字圖集也一樣，和啟動時畫的一致）
+local cell
+local function cell_px()
+    cell = cell or {cell_size()}
+    return cell[1], cell[2]
+end
+
+-- 一種語言（資料夾 dir）某個字重（bold、regular，見 scripts/build.py 的 WEIGHTS）的字型檔，檔名開頭的序號就是補字順序
 local function font_files(dir, weight)
     local fonts, sub = {}, dir .. 'fonts/' .. weight .. '/'
     for _, name in ipairs(dfhack.filesystem.listdir(sub) or {}) do
@@ -130,25 +157,98 @@ local function font_files(dir, weight)
     return fonts
 end
 
-local function load_glyphs(engine, dir)
+-- 一種語言的字圖集用字（glyphs.txt 第一行）
+local function glyph_chars(dir)
     local chars = (read_file(dir .. 'glyphs.txt') or ''):match('^([^\n]*)')
-    if not chars or chars == '' then return nil, 'glyphs.txt 是空的' end
-    -- 字重（dflang bold on|off，預設粗體、只記 bold = false）：字圖集與整句貼圖都用這組字型
-    local config = json.open(CONFIG_FILE).data
-    local fonts = font_files(dir, config.bold == false and 'regular' or 'bold')
-    local w, h = cell_size()
-    local png = ATLAS_FILE:format(LANG)
-    -- 整句貼圖的字身（dflang overlay size，十六分之幾格高）：段落量字寬也照這個大小，所以在畫字圖集時一起交給引擎
-    local tiles, missing = engine.render_atlas(png, w, h, chars, fonts, config.overlay_size)
+    if chars and chars ~= '' then return chars end
+end
+
+-- 畫好、註冊過的字圖集：「語言-字重」→ 貼圖 handle；切回之前用過的語言、字重直接用這份
+local atlases = {}
+-- 註冊失敗過的字圖集再畫時換檔名用的序號：DFHack 依路徑記住載入過的貼圖，失敗的也照樣記著
+local atlas_tries = {}
+-- 遊戲讀取中、DFHack 沒辦法註冊新字圖時 atlas 回傳的訊息（apply 看到它就等一下再套用）
+local LOADING = 'DFHack cannot register new textures while the game is loading'
+
+local function atlas_name(lang, weight) return lang .. '-' .. weight end
+
+-- DFHack 在遊戲讀取 raws 或存檔時（Textures.cpp 的 loading_state；開過建立世界的設定畫面後常常一直是，直到載入或建立世界）
+-- 新貼圖一律放保留範圍，保留範圍滿了就註冊失敗（handle 是 0），而且畫好的貼圖不會釋放。先註冊一張 1×1 的試試：
+-- 落在動態範圍（init_texture_size 以後）才是能註冊的時候。試的這張不刪：DFHack 53.16-r2 的 dfhack.textures.deleteHandle
+-- 會讓遊戲當掉（實測當在它呼叫的 SDL_FreeSurface），留著只多一張 1×1 的貼圖
+local function textures_ready()
+    local handle = dfhack.textures.createTile({0}, 1, 1, false)
+    local texpos = handle ~= 0 and dfhack.textures.getTexposByHandle(handle)
+    return texpos and texpos >= df.global.enabler.textures.init_texture_size or false
+end
+
+-- lang 這種語言（資料夾 dir）的 chars 照 weight 字重畫成字圖集（見 engine/src/atlas.rs）並註冊，回傳貼圖 handle；失敗回傳 nil, 訊息
+local function atlas(engine, lang, dir, chars, weight)
+    local name = atlas_name(lang, weight)
+    if atlases[name] then return atlases[name] end
+    local png = ATLAS_FILE:format(atlas_tries[name] and ('%s-%d'):format(name, atlas_tries[name]) or name)
+    local w, h = cell_px()
+    local tiles, missing = engine.render_atlas(png, w, h, chars, font_files(dir, weight))
     if not tiles then return nil, missing end
     if missing ~= '' then fail('沒有字型能畫：%s', missing) end
     -- 字圖集最後一列可能沒排滿；每字取八張：左右兩格、半格位移的上下列各左右兩格（分頁標籤這類文字）、錨定貼圖標籤用的小一號字，
     -- 最後再一張透明記號（整句貼圖排段落時的佔位格，見 engine/src/atlas.rs）
-    local loaded = dfhack.textures.loadTileset(png, w, h, true)
-    local handles = table.move(loaded, 1, utf8.len(chars) * 8 + 1, 1, {})
+    local n = utf8.len(chars) * 8 + 1
+    local handles = table.move(dfhack.textures.loadTileset(png, w, h, true), 1, n, 1, {})
+    for i = 1, n do
+        if (handles[i] or 0) == 0 then
+            -- 剛好碰上遊戲開始讀取（見 textures_ready）：這一批不用（不刪，理由同上），下次換檔名重畫
+            atlas_tries[name] = (atlas_tries[name] or 0) + 1
+            return nil, LOADING
+        end
+    end
+    atlases[name] = handles
+    return handles
+end
+
+-- 設定視窗的選項（dflang.json，預設值見 dflang.lua）：遊戲啟動時、玩家改了設定以後照這份套用（見 apply）
+local function wanted(config)
+    local function on(name) return dflang().option_on(config, name) end
+    return {overlay = config.overlay ~= false, overlay_size = config.overlay_size or 14, bold = config.bold ~= false,
+            names = on('names'), keys = on('keys'), music = on('music'), partial = on('partial')}
+end
+
+-- 整句貼圖用的字型（字重）與字身（十六分之幾格高），引擎照它量段落的字寬
+local function typeface(engine, dir, chars, s)
+    local w, h = cell_px()
+    return engine.set_typeface(font_files(dir, s.bold and 'bold' or 'regular'), chars, w, h, s.overlay_size)
+end
+
+-- 按鍵名、配樂曲名、段落缺句時其餘照翻（見 engine/src/dict.rs 的 Options）
+local function options(s)
+    return {keys = s.keys and 1 or 0, music = s.music and 1 or 0, partial = s.partial and 1 or 0}
+end
+
+-- 一種語言（資料夾 dir）的字典載入引擎並換上（記在 dir 底下，換語言時直接換回來）：回傳譯文、句型、依畫面譯文的條數；失敗回傳 nil, 訊息
+local function load_dict(engine, dir, chars, handles, s)
     local n, err = engine.set_glyphs(chars, resolve(handles))
     if not n then return nil, err end
-    return handles, n
+    local ok
+    ok, err = engine.set_options(options(s))
+    if not ok then return nil, err end
+    local loaded, bad, missing_glyphs = engine.load(dir .. 'strings.tsv')
+    if not loaded then return nil, bad end
+    if bad > 0 or missing_glyphs > 0 then
+        fail('字典有 %d 條原文無法比對、%d 個字沒有字圖', bad, missing_glyphs)
+    end
+    local rules, bad_rules, missing_rule_glyphs = engine.load_rules(dir .. 'rules.tsv')
+    if not rules then return nil, bad_rules end
+    if bad_rules > 0 or missing_rule_glyphs > 0 then
+        fail('句型有 %d 條寫法不對、%d 個字沒有字圖', bad_rules, missing_rule_glyphs)
+    end
+    local screens, bad_screens, missing_screen_glyphs = engine.load_screens(dir .. 'screens.tsv')
+    if not screens then return nil, bad_screens end
+    if bad_screens > 0 or missing_screen_glyphs > 0 then
+        fail('依畫面的譯文有 %d 條原文無法比對、%d 個字沒有字圖', bad_screens, missing_screen_glyphs)
+    end
+    ok, err = engine.commit(dir)
+    if not ok then return nil, err end
+    return loaded, rules, screens
 end
 
 -- 段落排版（教學、說明、彈出視窗的長文）用的結構位移與調色盤位址；這版 DFHack 沒有這些定義就回傳 nil，段落維持英文
@@ -182,9 +282,9 @@ local function name_layout()
     return ok and layout or nil
 end
 
-local function attach_hooks(engine, dir, hooks)
+local function attach_hooks(engine, hooks)
     local patterns = {}
-    for name, pattern in (read_file(dir .. 'patterns.tsv') or ''):gmatch('([%w_]+)\t([^\t\n]+)') do
+    for name, pattern in (read_file(base .. 'patterns.tsv') or ''):gmatch('([%w_]+)\t([^\t\n]+)') do
         patterns[name] = pattern
     end
     for _, name in ipairs(hooks) do
@@ -199,14 +299,15 @@ local function attach_hooks(engine, dir, hooks)
     return true
 end
 
--- 吉祥物圖不是必要的；讀不到就略過，翻譯照常啟用
-local function load_mascot(engine, dir)
-    local src = dir .. 'mascot.png'
+-- 吉祥物圖不是必要的；讀不到就略過，翻譯照常啟用。名牌第一行是 lang 的語言標籤，用那種語言的字型畫
+local function load_mascot(engine, lang)
+    local src = base .. 'mascot.png'
     if not dfhack.filesystem.isfile(src) then return nil end
-    local w, h = cell_size()
-    local png = MASCOT_FILE:format(LANG)
+    local w, h = cell_px()
+    local png = MASCOT_FILE:format(lang)
     -- 名牌是設計過的樣子，一律用粗體，不跟著字重設定。第二行是作者名與版本號（回報問題時，標題畫面就看得到自己裝的是哪一版）
-    local cols, err = engine.render_mascot(src, png, w, h, MASCOT_ROWS, MASCOT_LABEL, ('%s v%s'):format(AUTHOR, VERSION), font_files(dir, 'bold'))
+    local cols, err = engine.render_mascot(src, png, w, h, MASCOT_ROWS, LABELS[lang], ('%s v%s'):format(AUTHOR, VERSION),
+        font_files(lang_dir(lang), 'bold'))
     if not cols then
         fail('吉祥物圖片讀取失敗：%s', err)
         return nil
@@ -350,12 +451,14 @@ end
 -- （DFCN 沒有從 Lua 暫停的方法，它自己會避開 DFHack 視窗蓋住的格子）
 local NOTICE_TITLE = 'DFLang: another translation mod is active'
 
-local function notice_engine(dir)
-    local open = package.loadlib(dir .. 'dflang.dll', 'luaopen_dflang')
-    local engine = open and open()
-    local layout = engine and gps_layout()
-    if not layout or not engine.set_layout(layout) or not load_glyphs(engine, dir)
-            or not engine.load(dir .. 'strings.tsv') or not engine.enable() then
+-- engine 是載入過、還沒啟用的引擎；只換 DFHack 的畫字函式，用 lang 的字典與字圖把說明畫成中文
+local function notice_engine(engine, lang)
+    local dir = lang_dir(lang)
+    local layout = gps_layout()
+    local chars = glyph_chars(dir)
+    local weight = json.open(CONFIG_FILE).data.bold == false and 'regular' or 'bold'
+    local handles = layout and chars and engine.set_layout(layout) and atlas(engine, lang, dir, chars, weight)
+    if not handles or not engine.set_glyphs(chars, resolve(handles)) or not engine.load(dir .. 'strings.tsv') or not engine.enable() then
         return nil
     end
     install_paint_string(engine, stamper(engine))
@@ -376,12 +479,12 @@ local function release_notice(engine)
     dfhack.run_command_silent('dfi18n', 'enable')
 end
 
-local function notify(c, dir)
+local function notify(c, engine, lang)
     local dialogs = require('gui.dialogs')
     local function show()
         if not dfhack.gui.matchFocusString('title/Default') then return dfhack.timeout(10, 'frames', show) end
         if c.notice then return dialogs.showMessage(NOTICE_TITLE, c.notice, COLOR_WHITE) end
-        local engine = notice_engine(dir)
+        local notice = notice_engine(engine, lang)
         local text = table.concat({
             ('%s is also installed. Only one translation engine'):format(c.name),
             'can run at a time, so DFLang is not running.',
@@ -389,47 +492,107 @@ local function notify(c, dir)
             'Choose the one to use; it takes effect after you',
             'restart the game. To switch again later, type',
             ('dflang lang off (back to %s) or'):format(c.name),
-            ('dflang lang %s (DFLang) in the DFHack console.'):format(LANG)}, '\n')
+            ('dflang lang %s (DFLang) in the DFHack console.'):format(lang)}, '\n')
         dialogs.showListPrompt(NOTICE_TITLE, text, COLOR_WHITE,
             {('Turn off %s and use DFLang'):format(c.name), ('Keep using %s'):format(c.name)},
             function(choice)
                 if choice ~= 1 then
                     dflang().set_lang('off')
-                    return release_notice(engine)
+                    return release_notice(notice)
                 end
                 dialogs.showMessage('DFLang', dflang()[c.off]() and ('%s has been turned off.\nRestart the game to use DFLang.'):format(c.name)
-                    or c.off_failed, COLOR_WHITE, function() release_notice(engine) end)
+                    or c.off_failed, COLOR_WHITE, function() release_notice(notice) end)
             end,
-            function() release_notice(engine) end)
+            function() release_notice(notice) end)
     end
     dfhack.timeout(1, 'frames', show)
 end
 
+-- 換上 lang 這種語言的字典、字型、名稱字表、音譯表與名牌，和 s 這組設定。all 為 true 時不管有沒有變一律重新換上
+-- （換回原本的設定時用）。中途出錯拋出錯誤，已經換上的由 apply 換回來
+local function use(state, lang, s, all)
+    local engine, cur = state.engine, state.current
+    local new_lang = all or lang ~= state.lang
+    local same = true
+    for k, v in pairs(s) do same = same and cur[k] == v end
+    if not new_lang and same then return end
+    local dir = lang_dir(lang)
+    local chars = new_lang and assert(glyph_chars(dir), dir .. 'glyphs.txt 是空的') or state.chars
+    local new_weight = new_lang or s.bold ~= cur.bold
+    if new_weight then
+        local handles = assert(atlas(engine, lang, dir, chars, s.bold and 'bold' or 'regular'))
+        if new_lang and not engine.use_dict(dir) then
+            assert(load_dict(engine, dir, chars, handles, s))
+        else
+            assert(engine.update_texpos(resolve(handles)))
+        end
+        state.handles, state.last = handles, dfhack.textures.getTexposByHandle(handles[#handles])
+    end
+    if new_weight or s.overlay_size ~= cur.overlay_size then
+        assert(typeface(engine, dir, chars, s))
+    end
+    if new_lang then
+        if state.names_ok then assert(engine.load_names(dir .. 'names.tsv')) end
+        assert(engine.load_translit(dir .. 'translit.tsv'))
+        state.mascot = load_mascot(engine, lang)
+    end
+    state.lang, state.dir, state.chars = lang, dir, chars
+    engine.set_overlay(s.overlay and state.overlay_ok and 1 or 0)
+    engine.set_translit(s.names and 1 or 0)
+    assert(engine.set_options(options(s)))
+    -- 算好的譯文與段落、提示的畫字計畫照新設定重算（世界生成名稱查的時候就照目前語言的字表組，不用重新登記）
+    engine.refresh()
+    state.current = s
+end
+
+-- 套用 dflang.json 的設定（設定視窗、dflang 指令改了以後呼叫，見 lua/dflang.lua），不必重開遊戲。回傳 true 表示有設定要重開遊戲才生效：
+-- 改用其他翻譯 MOD（dflang lang off），重開之前照舊翻譯，其他設定照套。
+-- 換語言、字重要註冊新的字圖集，DFHack 正在讀取時註冊不了（見 textures_ready）：這兩項先照舊、其他照新設定，記下 state.pending，
+-- 畫面切換或世界載入後再套用一次（見 start 的 onStateChange）。
+-- 中途出錯（讀不到檔案）時換回原本的語言與設定（都載入過，從快取取），再拋出錯誤
+local function apply()
+    local state = dfhack.BASE_G.DFLANG
+    local config = json.open(CONFIG_FILE).data
+    local want = wanted(config)
+    local lang = config.lang == 'off' and state.lang or chosen_lang(state.engine, config)
+    state.pending = not atlases[atlas_name(lang, want.bold and 'bold' or 'regular')] and not textures_ready() or nil
+    if state.pending then
+        lang, want.bold = state.lang, state.current.bold
+    end
+    local prev_lang, prev = state.lang, state.current
+    local ok, err = pcall(use, state, lang, want)
+    if not ok then
+        use(state, prev_lang, prev, true)
+        if err ~= LOADING then error(err, 0) end
+        state.pending = true
+    end
+    return config.lang == 'off'
+end
+
 local function start()
     if dfhack.BASE_G.DFLANG then return end
+    local mod = mod_dir(MOD_ID)
+    if not mod then return fail('找不到本 MOD 的目錄（%s）', MOD_ID) end
+    base = mod .. 'dflang/'
+    local config = json.open(CONFIG_FILE).data
+    keep_old_lang(config)
     local other = conflict()
-    local lang = chosen_lang()
-    if lang == 'off' then
-        if other then return log('已設定為改用 %s，本 MOD 不啟用（dflang lang %s 可改回）', other.name, LANG) end
-        -- 選了改用的翻譯 MOD 已經移除：照常啟用，免得玩家以為本 MOD 壞了
-        lang = default_lang()
-    end
-    if lang ~= LANG then
-        log('另一個語言包啟用中，本包不載入（dflang lang %s 可切換）', LANG)
-        return
-    end
-    local dir = mod_dir(MOD_ID)
-    if not dir then return fail('找不到本 MOD 的目錄（%s）', MOD_ID) end
-    dir = dir .. 'dflang/'
-    if other then
-        fail('偵測到 %s：兩個翻譯引擎會攔同一批函式，本 MOD 不啟動；標題畫面會說明怎麼切換。', other.name)
-        return notify(other, dir)
+    -- 選了改用的翻譯 MOD 已經移除：照常啟用（照系統判斷語言），免得玩家以為本 MOD 壞了
+    if config.lang == 'off' and other then
+        return log('已設定為改用 %s，本 MOD 不啟用（dflang lang zh-Hant 或 zh-Hans 可改回）', other.name)
     end
 
-    local open, err = package.loadlib(dir .. 'dflang.dll', 'luaopen_dflang')
+    local open, err = package.loadlib(base .. 'dflang.dll', 'luaopen_dflang')
     if not open then return fail('載入引擎失敗：%s', err) end
     local engine = open()
     if not engine then return fail('引擎找不到 DFHack 的 lua53.dll') end
+    local lang = chosen_lang(engine, config)
+    if other then
+        fail('偵測到 %s：兩個翻譯引擎會攔同一批函式，本 MOD 不啟動；標題畫面會說明怎麼切換。', other.name)
+        return notify(other, engine, lang)
+    end
+    -- 之前選過「關閉 DFI18n」的：遮蔽資料夾換成現在的版本號（見 dflang.lua 的 update_hide_dfi18n）
+    dflang().update_hide_dfi18n()
 
     local layout, missing = gps_layout()
     if not layout then return fail('這版 DFHack 的 gps 沒有欄位 %s', missing) end
@@ -457,29 +620,19 @@ local function start()
     local names_ok = name and engine.set_name_layout(name)
     if not names_ok then fail('這版 DFHack 沒有名稱的結構定義，世界生成的名稱維持英文') end
 
-    local handles, glyphs = load_glyphs(engine, dir)
-    if not handles then return fail('%s', glyphs) end
-    -- 設定視窗裡「也翻成中文」的選項（預設值見 dflang.lua 的 OPTIONS）：按鍵名、配樂曲名、段落缺句時其餘照翻在載入字典前交給引擎
-    -- （按鍵名與曲名的條目照選項取捨），名字音譯另外載音譯表、攔組原名的函式（見下面）
-    local config = json.open(CONFIG_FILE).data
-    local function on(name) return dflang().option_on(config, name) end
-    ok, err = engine.set_options{keys = on('keys') and 1 or 0, music = on('music') and 1 or 0, partial = on('partial') and 1 or 0}
+    -- 字圖集、整句貼圖的字型與字身（設定視窗的字重、中文字型大小；段落量字寬也照它），再載入字典：
+    -- 「也翻成中文」的選項（按鍵名、配樂曲名、段落缺句時其餘照翻）一起交給引擎，名字音譯見下面。之後都可以在遊戲中途改（見 apply）
+    local s = wanted(config)
+    local dir = lang_dir(lang)
+    local chars = glyph_chars(dir)
+    if not chars then return fail('%sglyphs.txt 是空的', dir) end
+    local handles
+    handles, err = atlas(engine, lang, dir, chars, s.bold and 'bold' or 'regular')
+    if not handles then return fail('%s', err) end
+    ok, err = typeface(engine, dir, chars, s)
     if not ok then return fail('%s', err) end
-    local loaded, bad, missing_glyphs = engine.load(dir .. 'strings.tsv')
-    if not loaded then return fail('%s', bad) end
-    if bad > 0 or missing_glyphs > 0 then
-        fail('字典有 %d 條原文無法比對、%d 個字沒有字圖', bad, missing_glyphs)
-    end
-    local rules, bad_rules, missing_rule_glyphs = engine.load_rules(dir .. 'rules.tsv')
-    if not rules then return fail('%s', bad_rules) end
-    if bad_rules > 0 or missing_rule_glyphs > 0 then
-        fail('句型有 %d 條寫法不對、%d 個字沒有字圖', bad_rules, missing_rule_glyphs)
-    end
-    local screens, bad_screens, missing_screen_glyphs = engine.load_screens(dir .. 'screens.tsv')
-    if not screens then return fail('%s', bad_screens) end
-    if bad_screens > 0 or missing_screen_glyphs > 0 then
-        fail('依畫面的譯文有 %d 條原文無法比對、%d 個字沒有字圖', bad_screens, missing_screen_glyphs)
-    end
+    local loaded, rules, screens = load_dict(engine, dir, chars, handles, s)
+    if not loaded then return fail('%s', rules) end
     if names_ok then
         local words
         words, err = engine.load_names(dir .. 'names.tsv')
@@ -488,52 +641,48 @@ local function start()
             names_ok = false
         end
     end
-    -- 原生語言的名字音譯（見引擎 translit.rs）：開著才載音譯表；載不到只有原名照原文
-    local translit_ok = false
-    if on('names') then
-        local syllables
-        syllables, err = engine.load_translit(dir .. 'translit.tsv')
-        if syllables then translit_ok = true else fail('%s；原名照原文', err) end
-    end
+    -- 原生語言的名字音譯（見引擎 translit.rs）：音譯表一律載入，開關照設定、隨時可切；載不到只有原名照原文
+    local syllables
+    syllables, err = engine.load_translit(dir .. 'translit.tsv')
+    if not syllables then fail('%s；原名照原文', err) end
+    engine.set_translit(s.names and 1 or 0)
 
-    ok, err = attach_hooks(engine, dir, hooks)
+    ok, err = attach_hooks(engine, hooks)
     if not ok then return fail('%s', err) end
     -- 提示框等自動換行的文字：wrap_lines 實際切行（wrap_text 只登記位址，enable 時用來補做遊戲啟動時就切好的提示）；找不到只有這些維持英文
-    ok, err = attach_hooks(engine, dir, {'wrap_text', 'wrap_lines'})
+    ok, err = attach_hooks(engine, {'wrap_text', 'wrap_lines'})
     if not ok then fail('%s；提示框文字維持英文', err) end
     -- 遊戲截成「開頭...」的清單字串：記下截短前的原文來翻；找不到只有截短的字串維持英文
-    ok, err = attach_hooks(engine, dir, {'string_resize'})
+    ok, err = attach_hooks(engine, {'string_resize'})
     if not ok then fail('%s；截短的清單字串維持英文', err) end
     -- 冒險者開局畫面的外觀、性格段落（遊戲自己切行）；找不到只有這幾段維持英文
-    ok, err = attach_hooks(engine, dir, {'adv_appearance', 'adv_personality'})
+    ok, err = attach_hooks(engine, {'adv_appearance', 'adv_personality'})
     if not ok then fail('%s；冒險者開局畫面的外觀與性格維持英文', err) end
     -- 冒險模式上方的訊息框（交談紀錄，遊戲自己切行）；找不到只有這個框維持英文
-    ok, err = attach_hooks(engine, dir, {'adv_log', 'adv_talk_log'})
+    ok, err = attach_hooks(engine, {'adv_log', 'adv_talk_log'})
     if not ok then fail('%s；冒險模式的交談紀錄維持英文', err) end
     -- 彩色文字框（人物頁的想法、記憶、性格）；找不到只有這些維持英文
     if ctb_ok then
-        ok, err = attach_hooks(engine, dir, {'ctb_add_string'})
+        ok, err = attach_hooks(engine, {'ctb_add_string'})
         if not ok then fail('%s；人物頁的想法與性格維持英文', err) end
     end
     -- 世界生成的名稱（攔遊戲把名字轉成英文的函式）；找不到只有名稱維持英文
     if names_ok then
-        ok, err = attach_hooks(engine, dir, {'translate_name'})
+        ok, err = attach_hooks(engine, {'translate_name'})
         if not ok then fail('%s；世界生成的名稱維持英文', err) end
     end
-    -- 原名（攔遊戲把名字轉成原文的函式，名字音譯開著才掛）；找不到只有原名照原文
-    if translit_ok then
-        ok, err = attach_hooks(engine, dir, {'native_name'})
+    -- 原名（攔遊戲把名字轉成原文的函式）：名字音譯關著也掛，記下的原名在打開選項時就查得到音譯；找不到只有原名照原文
+    if syllables then
+        ok, err = attach_hooks(engine, {'native_name'})
         if not ok then fail('%s；原名照原文', err) end
     end
-    -- 整句貼圖：畫面上的字改用本包的字型、照字寬整句畫（見 engine/src/overlay.rs）。預設開啟；
-    -- dflang overlay off 改回一字兩格的字圖（重開遊戲生效）。掛不上時照一字兩格
-    ok, err = attach_hooks(engine, dir, {'render_things'})
+    -- 整句貼圖：畫面上的字改用本包的字型、照字寬整句畫（見 engine/src/overlay.rs）。預設開啟，設定視窗或
+    -- dflang overlay off 隨時改回一字兩格的字圖。掛不上時一律一字兩格
+    ok, err = attach_hooks(engine, {'render_things'})
     if ok then ok, err = engine.overlay_install(select(2, df.sizeof(df.global.enabler.renderer))) end
-    if not ok then
-        fail('%s；整句貼圖不能用，改用一字兩格的字圖', err)
-    elseif json.open(CONFIG_FILE).data.overlay ~= false then
-        engine.set_overlay(1)
-    end
+    local overlay_ok = ok
+    if not overlay_ok then fail('%s；整句貼圖不能用，改用一字兩格的字圖', err) end
+    engine.set_overlay(s.overlay and overlay_ok and 1 or 0)
     ok, err = engine.enable()
     if not ok then return fail('%s', err) end
     -- DFHack 自己的視窗（overlay、gui/ 腳本）不經遊戲的畫字函式：包住 dfhack.screen.paintString，有譯文就畫影子字串
@@ -565,29 +714,36 @@ local function start()
     end
 
     -- 每字八張，保留範圍（約 8,800 張可用）放不下，後面的落在 DFHack 的動態範圍：遊戲重載貼圖後 texpos 會變，
-    -- 最後一張一定在動態範圍（或全部都在保留範圍、永遠不變），看它就知道要不要重查
-    local last = dfhack.textures.getTexposByHandle(handles[#handles])
-    -- started：這次啟動時的整句貼圖、字身、字重與「也翻成中文」的選項，設定視窗（dflang ui）用來判斷改過的設定要不要提示重開
-    dfhack.BASE_G.DFLANG = {engine = engine, lang = LANG, version = VERSION, dir = dir, config = CONFIG_FILE,
-                            mascot = load_mascot(engine, dir),
-                            started = {overlay = config.overlay ~= false, overlay_size = config.overlay_size or 14,
-                                       bold = config.bold ~= false, names = on('names'), keys = on('keys'),
-                                       music = on('music'), partial = on('partial')}}
+    -- 最後一張一定在動態範圍（或全部都在保留範圍、永遠不變），看它就知道要不要重查。
+    -- handles、chars、dir、lang 是目前用的字圖集與語言（遊戲中途換字重、語言時換，見 use）；current 是目前套用的設定
+    local state = {engine = engine, lang = lang, version = VERSION, dir = dir, config = CONFIG_FILE, chars = chars,
+                   handles = handles, last = dfhack.textures.getTexposByHandle(handles[#handles]),
+                   mascot = load_mascot(engine, lang), current = s, names_ok = names_ok, overlay_ok = overlay_ok, apply = apply}
+    dfhack.BASE_G.DFLANG = state
     dfhack.onStateChange.dflang = function(sc)
         if sc ~= SC_VIEWSCREEN_CHANGED and sc ~= SC_WORLD_LOADED and sc ~= SC_WORLD_UNLOADED then return end
-        local now = dfhack.textures.getTexposByHandle(handles[#handles])
-        if now == last then return end
-        last = now
-        engine.update_texpos(resolve(handles))
+        local now = dfhack.textures.getTexposByHandle(state.handles[#state.handles])
+        if now ~= state.last then
+            state.last = now
+            engine.update_texpos(resolve(state.handles))
+        end
+        -- 遊戲讀取時擱著的換語言、字重（見 apply）：畫面切換、世界載入後再試
+        if state.pending then
+            local ok, err = pcall(apply)
+            if not ok then
+                state.pending = nil
+                fail('%s', err)
+            end
+        end
     end
-    log('已啟用：%d 條譯文、%d 條句型、%d 個字圖', loaded, rules, glyphs)
+    log('已啟用：%d 條譯文、%d 條句型、%d 個字圖', loaded, rules, utf8.len(chars))
 end
 
 local ok, err = pcall(start)
 if not ok then fail('啟動失敗：%s', err) end
 
 -- 設定視窗的快捷鍵：只在記憶體註冊、不寫進 init 檔，MOD 移除後下次啟動就沒有（玩家在 gui/keybinds 存過檔的除外，
--- 按了只會顯示找不到指令）。已經有綁到同一個指令的（另一包先註冊了、或玩家自己存的鍵）就不再加。
+-- 按了只會顯示找不到指令）。已經有綁到同一個指令的（玩家自己存的鍵）就不再加。
 -- 讓位給其他翻譯 MOD 時也註冊：視窗裡可以改回 DFLang
 local HOTKEY, HOTKEY_COMMAND = 'Ctrl-Shift-L', 'dflang ui'
 local function bind_hotkey()
@@ -599,15 +755,10 @@ end
 ok, err = pcall(bind_hotkey)
 if not ok then fail('無法註冊快捷鍵 %s：%s', HOTKEY, err) end
 
--- DFHack overlay 會掃描所有模組腳本的 OVERLAY_WIDGETS；玩家可在 gui/overlay 移動或關閉這個圖示。
--- 兩包都裝時兩個小工具都會註冊，只有被選用的那包畫圖。
+-- DFHack overlay 會掃描所有模組腳本的 OVERLAY_WIDGETS；玩家可在 gui/overlay 移動或關閉這個圖示。引擎沒在跑（讓位給其他翻譯 MOD）時不畫
 local overlay = require('plugins.overlay')
 
--- 只有被選用的那包（DFLANG.lang 是本包語言）才畫、才收點擊
-local function active()
-    local state = dfhack.BASE_G.DFLANG
-    return state and state.lang == LANG and state
-end
+local function active() return dfhack.BASE_G.DFLANG end
 
 MascotOverlay = defclass(MascotOverlay, overlay.OverlayWidget)
 MascotOverlay.ATTRS{
@@ -637,7 +788,7 @@ function MascotOverlay:onRenderBody()
     end
 end
 
--- 點吉祥物開設定視窗（同 Ctrl-Shift-L）。呼叫本包的 dflang.lua，不經腳本路徑（兩包、新舊版可能同時在路徑上）
+-- 點吉祥物開設定視窗（同 Ctrl-Shift-L）。呼叫本包的 dflang.lua，不經腳本路徑（新舊版、已合併的簡中項目可能同時在路徑上）
 function MascotOverlay:onInput(keys)
     local state = active()
     if keys._MOUSE_L and state and state.mascot and self:getMousePos() then

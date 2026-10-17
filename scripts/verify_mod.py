@@ -12,7 +12,7 @@
    screens 的檔名只用英數、底線、點
 2. 句型佔位：原文至少一個 {1}～{9}、每個只出現一次、不能相鄰；樣板要有英文字、限定佔位（{#n}、{@n}、{%n}，書名的 {$n}、{&n}、{=n}）或頭尾固定字，
    否則會套到幾乎所有字串；兩種譯文用的佔位都是原文有的、各最多一次，除了 {@n} 都要用到
-3. 繁簡同步：同一條兩欄同時有譯文或同時留空（繁簡分開翻，但兩包要涵蓋同一批句子）
+3. 繁簡同步：同一條兩欄同時有譯文或同時留空（繁簡分開翻，但包裡兩種語言要涵蓋同一批句子）
 4. 開頭空白：譯文開頭的空白數與原文相同（那是遊戲的縮排）；只套在佔位裡的 inner 句型與書名用詞（title）不算（不會單獨畫出）；
    置中（align c）的不算：引擎會重新置中，中文字兩格寬、原文格數是單數時多半格只能偏一邊，可以用開頭空白往右挪一格
 5. 寬度：譯文格數不超過原文（CP437 字一格，其他字兩格），超出會蓋到旁邊的介面；句型只算樣板本身，
@@ -21,13 +21,14 @@
    短英文名（ogre、hydra、kiwi）的通行中文名多半是三個字。sentences_*、ann_*、speech_*、combat_*、desc_*、health_*、事件句（_events、zz_events、events_*）不限：
    人物頁、訪客說明、公告、說話句、戰報、外觀與健康、傳說模式的段落由引擎依框寬重新換行
 6. 文字檔 UTF-8、無 BOM、LF（遊戲端逐位元組讀，BOM 與 \\r 會黏進原文或譯文）
-7. 字型：workshop.json 每包的 fonts 正好有 bold、regular 兩種字重；每種字重都要能畫譯文、名字音譯表與吉祥物名牌（語言標籤、作者名）用到的字
+7. 字型：workshop.json 每種語言的 fonts 正好有 bold、regular 兩種字重；每種字重都要能畫該語言譯文、名字音譯表與吉祥物名牌（語言標籤、作者名）用到的字
    （該字重的字型清單 temp/fonts/ 至少一份有）
-8. 吉祥物：art/mascot.png 是 8-bit RGBA PNG（引擎只讀這種）；每包的 mascot_label 是全形字
-9. scripts/workshop.json：繁、簡各一項；ID、名稱、說明、作者只用 ASCII（DF 以 CP437 讀 info.txt）
+8. 吉祥物：art/mascot.png 是 8-bit RGBA PNG（引擎只讀這種）；每種語言的 mascot_label 是全形字
+9. scripts/workshop.json：languages 正好是繁、簡兩種；ID、名稱、說明、作者只用 ASCII（DF 以 CP437 讀 info.txt）
 10. engine/patterns.tsv 有引擎要 hook 的函式（四個畫字函式、段落排版、錨定貼圖、自動換行、彩色文字框、世界生成名稱與原名）
-11. dist/ 已建置時：每包檔案齊全（含 dflang/fonts/bold/、regular/ 各至少一份字型、fonts/ 底下沒有其他東西）、沒有雜檔，
-    且字典、句型、名字音譯表與 data/ 一致，info.txt（版本號）與 workshop.json 一致：改了版本號沒重建就上傳，包裡還是舊版號（沒建置則略過）
+11. dist/ 已建置時：包裡檔案齊全（共用檔、兩個載入器與 dflang 指令、每種語言的 dflang/<語言>/，含 fonts/bold/、regular/ 各至少一份字型、
+    fonts/ 底下沒有其他東西）、dflang/ 底下除了各語言沒有別的資料夾、沒有雜檔，且每種語言的字典、句型、名字音譯表與 data/ 一致，
+    info.txt（版本號）與 workshop.json 一致：改了版本號沒重建就上傳，包裡還是舊版號（沒建置則略過）
 12. 名字音譯表 data/translit/translit.tsv：欄位 en, zh-Hant, zh-Hans, note；音節只有小寫英文字母、不重複，繁簡都有
 """
 import re
@@ -36,7 +37,8 @@ from pathlib import Path
 
 from fontTools.ttLib import TTFont
 
-from build import DIST, FONTS, KINDS, WEIGHTS, dict_lines, info_txt, load_config, name_lines, read_rows, translit_lines
+from build import (DIST, FONTS, KINDS, LOADER, RETIRED_LOADER, WEIGHTS, dict_lines, info_txt, load_config, name_lines, read_rows,
+                   translit_lines)
 from gen_events import build as build_events
 from cp437 import BYTE_OF, cells, encodable
 
@@ -102,7 +104,7 @@ def placeholder_problem(r: dict, langs: list[str]) -> str | None:
 
 def main() -> int:
     config = load_config()
-    langs = [item["lang"] for item in config["items"]]
+    langs = [language["lang"] for language in config["languages"]]
     data: dict[str, list[dict]] = {}
     for kind in KINDS:
         files = sorted((ROOT / "data" / kind).glob("*.tsv"))
@@ -206,15 +208,15 @@ def main() -> int:
             bad_enc.append(f"{f.name}: BOM 或 CR")
     check(not bad_enc, "文字檔 UTF-8、無 BOM、LF", bad_enc)
 
-    for item in config["items"]:
-        lang = item["lang"]
-        if sorted(item.get("fonts", {})) != sorted(WEIGHTS):
+    for language in config["languages"]:
+        lang = language["lang"]
+        if sorted(language.get("fonts", {})) != sorted(WEIGHTS):
             check(False, f"{lang} 字型：workshop.json 的 fonts 要正好有 {'、'.join(WEIGHTS)}（lua/loader.lua 照這些資料夾名找）")
             continue
         used = {c for r in [*rows, *translit] for c in r[lang] if c not in BYTE_OF}
-        used |= set(item.get("mascot_label", "") + config["author"]) - {" "}  # 名牌由引擎用字型畫，英數也要有
+        used |= set(language.get("mascot_label", "") + config["author"]) - {" "}  # 名牌由引擎用字型畫，英數也要有
         for weight in WEIGHTS:
-            fonts = [FONTS / f for f in item["fonts"][weight]]
+            fonts = [FONTS / f for f in language["fonts"][weight]]
             if not fonts or not all(f.is_file() for f in fonts):
                 check(False, f"{lang} {weight} 字型：temp/fonts/ 缺字型，先跑 uv run scripts/build.py --fetch-fonts")
                 continue
@@ -226,43 +228,40 @@ def main() -> int:
     with mascot.open("rb") as fh:  # PNG IHDR：寬、高各 4 bytes，再來是 bit depth 與 color type
         head = fh.read(26)
     rgba8 = head[:8] == b"\x89PNG\r\n\x1a\n" and head[24] == 8 and head[25] == 6
-    labels = [f"{item['lang']}: {item.get('mascot_label')!r}" for item in config["items"]
-              if not item.get("mascot_label") or any(c in BYTE_OF for c in item["mascot_label"])]
-    check(rgba8 and not labels, "art/mascot.png 是 8-bit RGBA PNG；每包都有全形字的 mascot_label", labels)
+    labels = [f"{language['lang']}: {language.get('mascot_label')!r}" for language in config["languages"]
+              if not language.get("mascot_label") or any(c in BYTE_OF for c in language["mascot_label"])]
+    check(rgba8 and not labels, "art/mascot.png 是 8-bit RGBA PNG；每種語言都有全形字的 mascot_label", labels)
 
-    meta = [f"{item['lang']}.{k}" for item in config["items"] for k in ("id", "name", "description")
-            if not item[k].isascii()] + ([] if config["author"].isascii() and config["author"] else ["author"])
-    check(sorted(langs) == ["zh-Hans", "zh-Hant"] and not meta, "workshop.json 繁簡各一項、info.txt 欄位為 ASCII", meta)
+    meta = [k for k in ("id", "name", "description") if not config[k].isascii()] \
+        + ([] if config["author"].isascii() and config["author"] else ["author"])
+    check(sorted(langs) == ["zh-Hans", "zh-Hant"] and not meta, "workshop.json 的 languages 正好是繁、簡兩種、info.txt 欄位為 ASCII", meta)
 
     patterns = {line.split("\t")[0] for line in (ROOT / "engine/patterns.tsv").read_text(encoding="utf-8").splitlines()
                 if line and not line.startswith("#")}
     check(all(h in patterns for h in HOOKS), f"engine/patterns.tsv 含 {len(HOOKS)} 個 hook 函式", [h for h in HOOKS if h not in patterns])
 
-    for item in config["items"]:
-        out = DIST / item["folder"]
-        if not out.is_dir():
-            results.append((True, f"{item['lang']} dist 未建置，略過"))
-            continue
-        suffix = item["lang"].lower().replace("-", "_")
-        required = ["info.txt", f"scripts_modinstalled/dflang_{suffix}.lua", "scripts_modinstalled/dflang.lua",
-                    "dflang/dflang.dll", *(f"dflang/{kind}.tsv" for kind in KINDS), "dflang/names.tsv", "dflang/translit.tsv",
-                    "dflang/glyphs.txt", "dflang/patterns.tsv", "dflang/LICENSE.txt", "dflang/LICENSE-fonts.txt",
+    out = DIST / config["folder"]
+    if not out.is_dir():
+        results.append((True, "dist 未建置，略過"))
+    else:
+        required = ["info.txt", f"scripts_modinstalled/{LOADER}", f"scripts_modinstalled/{RETIRED_LOADER}", "scripts_modinstalled/dflang.lua",
+                    "dflang/dflang.dll", "dflang/patterns.tsv", "dflang/LICENSE.txt", "dflang/LICENSE-fonts.txt",
                     "dflang/THIRD-PARTY-LICENSES.txt", "dflang/CREDITS.md", "dflang/mascot.png"]
-        font_dir = out / "dflang/fonts"
-        lacking = [p for p in required if not (out / p).is_file()] + [f"dflang/fonts/{w}/*.otf" for w in WEIGHTS
-                                                                      if not list((font_dir / w).glob("*.otf"))]
+        built_files = {"info.txt": info_txt(config)}
+        for lang in langs:
+            folder = f"dflang/{lang}"
+            required += [*(f"{folder}/{kind}.tsv" for kind in KINDS), f"{folder}/names.tsv", f"{folder}/translit.tsv", f"{folder}/glyphs.txt"]
+            built_files |= {f"{folder}/{kind}.tsv": dict_lines(kind, data[kind], lang) for kind in KINDS}
+            built_files[f"{folder}/names.tsv"] = name_lines(names, lang)
+            built_files[f"{folder}/translit.tsv"] = translit_lines(translit, lang)
+        lacking = [p for p in required if not (out / p).is_file()] + [f"dflang/{lang}/fonts/{w}/*.otf" for lang in langs for w in WEIGHTS
+                                                                      if not list((out / "dflang" / lang / "fonts" / w).glob("*.otf"))]
         stray = [p.relative_to(out).as_posix() for p in out.rglob("*") if p.is_file() and p.suffix not in PACKAGE_SUFFIXES]
-        stray += [p.relative_to(out).as_posix() for p in font_dir.glob("*") if p.name not in WEIGHTS]
-        stale = []
-        built_files = {f"dflang/{kind}.tsv": dict_lines(kind, data[kind], item["lang"]) for kind in KINDS}
-        built_files["dflang/names.tsv"] = name_lines(names, item["lang"])
-        built_files["dflang/translit.tsv"] = translit_lines(translit, item["lang"])
-        built_files["info.txt"] = info_txt(item, config)
-        for path, expected in built_files.items():
-            built = out / path
-            if built.is_file() and built.read_text(encoding="utf-8") != expected:
-                stale.append(f"{path} 過期，重跑 build.py")
-        check(not lacking and not stray and not stale, f"{item['lang']} dist 檔案齊全、無雜檔，字典、句型、名字音譯表與版本和 data/、workshop.json 一致",
+        stray += [p.relative_to(out).as_posix() for lang in langs for p in (out / "dflang" / lang / "fonts").glob("*") if p.name not in WEIGHTS]
+        stray += [p.relative_to(out).as_posix() for p in (out / "dflang").glob("*") if p.is_dir() and p.name not in langs]
+        stale = [f"{path} 過期，重跑 build.py" for path, expected in built_files.items()
+                 if (out / path).is_file() and (out / path).read_text(encoding="utf-8") != expected]
+        check(not lacking and not stray and not stale, "dist 檔案齊全、無雜檔，各語言的字典、句型、名字音譯表與版本和 data/、workshop.json 一致",
               lacking + stray + stale)
 
     for ok, msg in results:

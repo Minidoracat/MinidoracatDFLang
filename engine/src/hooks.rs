@@ -55,6 +55,7 @@ pub struct Layer {
 }
 
 pub static LAYOUT: OnceLock<Layout> = OnceLock::new();
+/// 目前的字典；換語言時換成另一份（lib.rs 的 use_dict、commit），舊的照留，遊戲執行緒可能還在讀
 pub static DICT: AtomicPtr<Dict> = AtomicPtr::new(std::ptr::null_mut());
 pub static ENABLED: AtomicBool = AtomicBool::new(false);
 pub static HITS: AtomicU64 = AtomicU64::new(0);
@@ -63,6 +64,31 @@ pub static MISSES: AtomicU64 = AtomicU64::new(0);
 pub static FOCUS: Mutex<String> = Mutex::new(String::new());
 /// 遊戲字型表 init.font.small_font_texpos、large_font_texpos 的位址（各 256 個 texpos，依 CP437 字元排）
 pub static FONTS: OnceLock<[usize; 2]> = OnceLock::new();
+/// 設定換過幾次（lib.rs 的 refresh）：段落、提示、彩色文字框、DFHack 段落登記的畫字計畫記下算的時候是第幾版（見 Stamp）
+static EPOCH: AtomicU64 = AtomicU64::new(0);
+
+/// 算畫字計畫時的設定版本與字典（字典換了就是換了語言，舊計畫的字圖編號對不上）。版本不同的計畫要照現在的設定重算
+#[derive(Clone, Copy, PartialEq, Eq, Hash, Debug)]
+pub struct Stamp {
+    epoch: u64,
+    dict: usize,
+}
+
+impl Stamp {
+    pub fn of(dict: &Dict) -> Stamp {
+        Stamp { epoch: EPOCH.load(Ordering::Acquire), dict: std::ptr::from_ref(dict) as usize }
+    }
+
+    /// 計畫是照這份字典算的（字圖編號對得上）
+    pub fn same_dict(self, dict: &Dict) -> bool {
+        self.dict == std::ptr::from_ref(dict) as usize
+    }
+}
+
+/// 設定換了（選項、名字音譯、整句貼圖、字型、字的大小）：之前算好的畫字計畫都算舊的
+pub fn bump_epoch() {
+    EPOCH.fetch_add(1, Ordering::AcqRel);
+}
 
 #[repr(C)]
 pub struct StdString {
@@ -587,11 +613,60 @@ struct Pending {
 
 static DH_PENDING: Mutex<Option<Pending>> = Mutex::new(None);
 
-/// DFHack 自動換行的段落（string:wrap 切的，見 dfhack_wrap）：英文行 → 同一列要畫的中文（None：中文行比英文少，這一行畫空白）。
+/// DFHack 的一段（dfhack_wrap 登記時的整段英文、寬度與切好的英文行）：設定換了以後照它重算（見 dh_line）
+struct DhPara {
+    text: Vec<u8>,
+    width: usize,
+    lines: Vec<Vec<u8>>,
+}
+
+/// 段落的一行：要畫的（Some(None)：中文行比英文少，這一行畫空白；None：這一段現在翻不出來，照原樣查，設定換了以後再試），
+/// 和它屬於哪一段、照哪一版設定算的
+struct DhLine {
+    row: Option<Option<Arc<Entry>>>,
+    para: Arc<DhPara>,
+    stamp: Stamp,
+}
+
+/// DFHack 自動換行的段落（string:wrap 切的，見 dfhack_wrap）：英文行 → 同一列要畫的中文。
 /// ponytail: 以英文行的文字當鍵、全部畫面共用：不同段落（或同一段的兩行）剛好有同一行英文時用最後登記的，別處單獨畫出同樣英文的字串
 /// 也會換成這裡的中文或空白；表滿了整批清掉。真的撞到再改成依段落（WrappedLabel）登記。
-static DH_LINES: LazyLock<Mutex<HashMap<Vec<u8>, Option<Arc<Entry>>>>> = LazyLock::new(|| Mutex::new(HashMap::new()));
+static DH_LINES: LazyLock<Mutex<HashMap<Vec<u8>, DhLine>>> = LazyLock::new(|| Mutex::new(HashMap::new()));
 const DH_LINES_LIMIT: usize = 20_000;
+
+/// 一段的每一行：(英文第幾行, 要畫的)。翻得出來時是 Some(中文，None 是畫空白)；整段翻不出來、或有字缺字圖時每一行都是 None。
+/// 只列有字的英文行（string:wrap 不畫空行）
+fn dh_rows(dict: &Dict, para: &DhPara) -> Vec<(usize, Option<Option<Arc<Entry>>>)> {
+    let translated: Option<Vec<_>> = wrap_plan(dict, &para.text, para.width, &para.lines).and_then(|plan| {
+        plan.into_iter()
+            .map(|(k, row)| Some((k, Some(match row {
+                Some(row) => Some(Arc::new(dict.para_entry(&row)?)),
+                None => None,
+            }))))
+            .collect()
+    });
+    translated.unwrap_or_else(|| {
+        para.lines.iter().enumerate().filter(|(_, l)| l.iter().any(|c| !c.is_ascii_whitespace())).map(|(k, _)| (k, None)).collect()
+    })
+}
+
+/// 登記過的段落行：Some(這一行要畫的中文，None 是畫空白)；沒登記、或這一段翻不出來時 None（照原樣查）。
+/// 玩家改過設定或語言時照現在的設定重算整段
+fn dh_line(dict: &Dict, text: &[u8]) -> Option<Option<Arc<Entry>>> {
+    let mut table = DH_LINES.lock();
+    let line = table.get(text)?;
+    let stamp = Stamp::of(dict);
+    if line.stamp != stamp {
+        let para = line.para.clone();
+        for (k, row) in dh_rows(dict, &para) {
+            if let Some(l) = table.get_mut(&para.lines[k]).filter(|l| Arc::ptr_eq(&l.para, &para)) {
+                l.row = row;
+                l.stamp = stamp;
+            }
+        }
+    }
+    table.get(text)?.row.clone()
+}
 
 /// DFHack 要畫的一段字：有譯文就回傳影子字串（補到原長，頭尾空白照原文，視窗標題前後各有兩個空白），字圖留給 dfhack_stamp；
 /// 沒有譯文、或譯文比原文寬時回傳 None，照畫英文。段落的一行（dfhack_wrap 登記過的）畫同一列的中文。
@@ -601,7 +676,8 @@ pub fn dfhack_translate(text: &[u8], y: i32, center: bool) -> Option<Vec<u8>> {
     if dict.is_null() || !ENABLED.load(Ordering::Relaxed) {
         return None;
     }
-    if let Some(row) = DH_LINES.lock().get(text).cloned() {
+    let dict = unsafe { &*dict };
+    if let Some(row) = dh_line(dict, text) {
         let shadow = row.as_ref().map_or(&[][..], |e| e.shadow());
         let mut out = vec![b' '; text.len().max(shadow.len())];
         out[..shadow.len()].copy_from_slice(shadow);
@@ -615,7 +691,6 @@ pub fn dfhack_translate(text: &[u8], y: i32, center: bool) -> Option<Vec<u8>> {
         });
         return Some(out);
     }
-    let dict = unsafe { &*dict };
     let lead = text.iter().take_while(|&&c| c == b' ').count();
     let key = text[lead..].trim_ascii_end();
     if !key.iter().any(u8::is_ascii_alphabetic) || (!dict.verbatim_screens.is_empty() && dict.keeps_word(key, &FOCUS.lock(), true)) {
@@ -662,33 +737,38 @@ fn dfhack_place(entry: &Entry, text_len: usize, lead: usize, key_len: usize, cen
 }
 
 /// DFHack 的 string:wrap（WrappedLabel、確認對話框都用它）把整段英文 text（`\n` 分段）依 width 格切成 lines，之後一行行畫：整段有譯文時依中文規則以同樣寬度重新換行，
-/// 登記每一行英文要畫的中文（見 wrap_plan），回傳 true。缺一句就整段照英文，翻不出來的那一段記進未翻譯紀錄。
+/// 登記每一行英文要畫的中文（見 wrap_plan），回傳 true。缺一句就整段照英文，翻不出來的那一段記進未翻譯紀錄；
+/// 這種段落也記下來（每一行照原樣查），玩家改了設定（段落缺句時其餘照翻）以後畫到時再試，不必等 DFHack 重新切行
 pub fn dfhack_wrap(text: &[u8], width: usize, lines: &[Vec<u8>]) -> bool {
     let dict = DICT.load(Ordering::Acquire);
     if dict.is_null() || !ENABLED.load(Ordering::Relaxed) || lines.is_empty() || width == 0 {
         return false;
     }
     let dict = unsafe { &*dict };
-    let Some(plan) = wrap_plan(dict, text, width, lines) else { return false };
-    let mut entries = Vec::with_capacity(plan.len());
-    for (k, row) in plan {
-        let entry = match row {
-            Some(row) => {
-                let Some(entry) = dict.para_entry(&row) else { return false };
-                Some(Arc::new(entry))
-            }
-            None => None,
-        };
-        entries.push((k, entry));
-    }
+    // 先記版本再算：算到一半玩家改了設定，這一段就算舊的，畫到時重算
+    let stamp = Stamp::of(dict);
+    let para = Arc::new(DhPara { text: text.to_vec(), width, lines: lines.to_vec() });
+    let rows = dh_rows(dict, &para);
+    let translated = rows.iter().any(|(_, row)| row.is_some());
     let mut table = DH_LINES.lock();
-    if table.len() + entries.len() > DH_LINES_LIMIT {
+    if table.len() + rows.len() > DH_LINES_LIMIT {
         table.clear();
     }
-    for (k, entry) in entries {
-        table.insert(lines[k].clone(), entry);
+    for (k, row) in rows {
+        let line = DhLine { row, para: para.clone(), stamp };
+        if translated {
+            table.insert(lines[k].clone(), line);
+        } else {
+            // 翻不出來的段落不蓋掉別段登記的同一行英文
+            table.entry(lines[k].clone()).or_insert(line);
+        }
     }
-    true
+    translated
+}
+
+/// refresh 用：清掉 dh_translate 查到、還沒貼的字（舊設定的字圖）
+pub fn clear_pending() {
+    *DH_PENDING.lock() = None;
 }
 
 /// dfhack_wrap 的對照：(英文第幾行, 那一行要畫的中文；None 是畫空白)。string:wrap 一段一段切（原文的 `\n` 分段），
@@ -823,10 +903,14 @@ pub fn dfhack_plain(gps: usize, x: i32, y: i32, top: bool, text: &[u8]) {
 /// 段落單字與自動換行的行（見 mtb.rs、lines.rs）：照畫英文、不畫，或在載體的座標上畫幾段中文。回傳 false 表示都不是。
 /// `draw` 用遊戲原本的寫字函式畫一個字串（載體本身，或中文段的替身字串）。
 unsafe fn paragraph_word(gps: *mut u8, s: *const StdString, layer: fn(&Layout) -> Layer, draw: impl Fn(&StdString)) -> bool {
-    let plan = unsafe { crate::mtb::word_plan(s as usize).or_else(|| crate::lines::line_plan(s as usize)) };
+    let dict = DICT.load(Ordering::Acquire);
+    if dict.is_null() {
+        return false;
+    }
+    let dict = unsafe { &*dict };
+    let plan = unsafe { crate::mtb::word_plan(s as usize, dict).or_else(|| crate::lines::line_plan(s as usize, dict)) };
     let Some(plan) = plan else { return false };
     flush_label();
-    let dict = DICT.load(Ordering::Acquire);
     let pieces = match plan {
         Plan::Plain => {
             let (x0, y) = unsafe { cursor(gps) };
@@ -844,8 +928,7 @@ unsafe fn paragraph_word(gps: *mut u8, s: *const StdString, layer: fn(&Layout) -
         Plan::Skip => return true,
         Plan::Draw(pieces) => pieces,
     };
-    let Some(layout) = LAYOUT.get().filter(|_| !dict.is_null()) else { return true };
-    let dict = unsafe { &*dict };
+    let Some(layout) = LAYOUT.get() else { return true };
     HITS.fetch_add(1, Ordering::Relaxed);
     unsafe {
         let (x, y): (i32, i32) = (read(gps, layout.screenx), read(gps, layout.screeny));
@@ -999,7 +1082,12 @@ unsafe extern "C" fn hook_addcoloredst(gps: *mut u8, s: *const u8, colors: *cons
 /// 彩色文字框的一行（見 ctb.rs）：照畫英文、不畫，或在這行的座標上畫幾段中文。回傳 false 表示不是框裡的行。
 /// `draw` 用遊戲原本的 addcoloredst 畫（文字, 每字顏色）。
 unsafe fn colored_line(gps: *mut u8, s: *const u8, draw: impl Fn(*const u8, *const u8)) -> bool {
-    let Some(plan) = (unsafe { crate::ctb::line_plan(s as usize) }) else { return false };
+    let dict = DICT.load(Ordering::Acquire);
+    if dict.is_null() {
+        return false;
+    }
+    let dict = unsafe { &*dict };
+    let Some(plan) = (unsafe { crate::ctb::line_plan(s as usize, dict) }) else { return false };
     flush_label();
     let pieces = match plan {
         crate::ctb::Plan::English => {
@@ -1012,9 +1100,7 @@ unsafe fn colored_line(gps: *mut u8, s: *const u8, draw: impl Fn(*const u8, *con
         crate::ctb::Plan::Skip => return true,
         crate::ctb::Plan::Draw(pieces) => pieces,
     };
-    let dict = DICT.load(Ordering::Acquire);
-    let Some(layout) = LAYOUT.get().filter(|_| !dict.is_null()) else { return true };
-    let dict = unsafe { &*dict };
+    let Some(layout) = LAYOUT.get() else { return true };
     HITS.fetch_add(1, Ordering::Relaxed);
     unsafe {
         let (x, y): (i32, i32) = (read(gps, layout.screenx), read(gps, layout.screeny));
@@ -1041,7 +1127,14 @@ unsafe extern "C" fn hook_mtb_set_width(mtb: *mut u8, width: i32) {
     if dict.is_null() || !ENABLED.load(Ordering::Relaxed) {
         return;
     }
-    unsafe { crate::mtb::rewrite(mtb as usize, &*dict, |key| note_miss("mtb", key)) };
+    // 重訂連結段落的計畫前讓遊戲照英文重排：排版函式只在寬度和上次不同時才排，先把記下的寬度改成別的值
+    let relayout = || unsafe {
+        if let Some(l) = crate::mtb::MTB_LAYOUT.get() {
+            *(mtb.add(l.current_width) as *mut i32) = !width;
+            orig(mtb, width);
+        }
+    };
+    unsafe { crate::mtb::rewrite(mtb as usize, &*dict, |key| note_miss("mtb", key), relayout) };
 }
 
 /// 自動換行（wrap_text 內部真正切行的函式；宗教說明、冒險日誌等也直接呼叫它）：原函式把接成一句的幾段字串
@@ -1198,7 +1291,7 @@ unsafe extern "C" fn hook_translate_name(name: *const u8, out: *mut StdString, c
     }
 }
 
-/// 名字轉原文（名字音譯開著時才掛）：原函式照跑、原文照用；登記這個原名的音譯（見 names::note_native）。
+/// 名字轉原文：原函式照跑、原文照用；記下這個原名（名字音譯關著也記，打開選項就查得到音譯，見 names::note_native）。
 unsafe extern "C" fn hook_native_name(name: *const u8, out: *mut StdString) {
     let orig: NativeNameFn = unsafe { std::mem::transmute(TRAMPOLINES[15].load(Ordering::Acquire)) };
     unsafe { orig(name, out) };

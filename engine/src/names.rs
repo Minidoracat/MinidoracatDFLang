@@ -7,13 +7,14 @@
 //! 組中文時也照遊戲的規則拼一次英文，和原函式的輸出（不分大小寫）對得上才登記：遊戲改版或 MOD 改了字表時寧可照英文。
 //!
 //! 原名照原文；名字音譯開著時（見 translit.rs）英文名開頭的原名也音譯，另外攔組原名的函式（native_name），
-//! 把整個原名（「Rigòth Nildum」）的音譯登記進同一張表。
+//! 把整個原名（「Rigòth Nildum」）也登記起來。開頭的原名和整個原名都照原文存，查的時候才依名字音譯的開關換成音譯，
+//! 遊戲中途切換選項不必等遊戲再組一次名字。
 
-use std::collections::HashMap;
+use std::collections::{HashMap, HashSet};
 use std::sync::atomic::{AtomicU64, Ordering};
 use std::sync::{Arc, LazyLock, OnceLock};
 
-use parking_lot::Mutex;
+use parking_lot::{Mutex, RwLock};
 
 use crate::cp437;
 
@@ -35,24 +36,51 @@ pub struct NameLayout {
 pub static NAME_LAYOUT: OnceLock<NameLayout> = OnceLock::new();
 
 /// 字表：字的代號 → 名詞、形容詞、字首、動詞的中文（空字串表示沒有這個詞性）
-static WORDS: OnceLock<HashMap<Vec<u8>, [String; 4]>> = OnceLock::new();
+type Words = HashMap<Vec<u8>, [String; 4]>;
 /// 英文詞形（小寫）→ 中文，名詞、形容詞、字首、動詞各一張；同一詞形有好幾個字時用先讀到的
 type Forms = [HashMap<Vec<u8>, String>; 4];
-/// 書名的隨機字（[NOUN]、[ADJ]，見 Dict 的 `{&n}`、`{=n}`）與拆英文名（見 parse）用
-static FORMS: OnceLock<Forms> = OnceLock::new();
+
+/// 一種語言的名稱字表（names.tsv）
+pub struct WordTable {
+    words: Arc<Words>,
+    /// 書名的隨機字（[NOUN]、[ADJ]，見 Dict 的 `{&n}`、`{=n}`）與拆英文名（見 parse）用
+    forms: Arc<Forms>,
+}
+
+impl WordTable {
+    /// 字數（status、載入紀錄用）
+    pub fn word_count(&self) -> usize {
+        self.words.len()
+    }
+}
+
+/// 目前語言的字表與英文詞形（切換語言時換一份，見 lib.rs 的 load_names）
+static WORDS: RwLock<Option<Arc<Words>>> = RwLock::new(None);
+static FORMS: RwLock<Option<Arc<Forms>>> = RwLock::new(None);
+
+/// 名字裡的一個字：(位置 0～6，詞性類別：名詞、形容詞、字首、動詞，字的代號)。中文查的時候才照目前語言的字表組（見 chinese）
+type Word = (u8, u8, Box<[u8]>);
+
+/// 遊戲組過的英文名：開頭照原文的原名、綽號（head，不含結尾的空白；沒有原名時是空的）、字表的字，
+/// 以及遊戲是不是只輸出了第一段（複合字，見 compose）。存字的代號不存中文，切換語言後照新的字表組
+struct Name {
+    head: Box<[u8]>,
+    words: Box<[Word]>,
+    first: bool,
+}
 
 /// 英文名 → 中文名。ponytail: 滿了整張清掉，畫面上的名字下次遊戲再組名字時補回來
-static NAMES: LazyLock<Mutex<HashMap<Vec<u8>, Arc<str>>>> = LazyLock::new(|| Mutex::new(HashMap::new()));
+static NAMES: LazyLock<Mutex<HashMap<Vec<u8>, Name>>> = LazyLock::new(|| Mutex::new(HashMap::new()));
 const NAMES_LIMIT: usize = 200_000;
+/// 遊戲組過的原名（整個原名，和只有名的寫法）：名字音譯開著時查得到音譯（見 get）。關著時也照記，打開選項就有
+static NATIVES: LazyLock<Mutex<HashSet<Vec<u8>>>> = LazyLock::new(|| Mutex::new(HashSet::new()));
 /// 每登記一個新名字加一：字典記成翻不出來的字串，在這之後可能翻得出來了（見 Dict::rule_entry）
 static GENERATION: AtomicU64 = AtomicU64::new(0);
 
-/// 讀 `代號<TAB>詞性<TAB>中文[<TAB>英文詞形]` 一行一條（詞性 NOUN／ADJ／PREFIX／VERB；英文詞形以 / 分隔，名詞是單數/複數）；
-/// 回傳載入條數。只能載入一次。
-pub fn load_words(content: &str) -> usize {
-    let mut table: HashMap<Vec<u8>, [String; 4]> = HashMap::new();
+/// 讀 `代號<TAB>詞性<TAB>中文[<TAB>英文詞形]` 一行一條（詞性 NOUN／ADJ／PREFIX／VERB；英文詞形以 / 分隔，名詞是單數/複數）。
+pub fn parse_table(content: &str) -> WordTable {
+    let mut words: Words = HashMap::new();
     let mut forms: Forms = Default::default();
-    let mut n = 0;
     for line in content.lines() {
         let mut cols = line.split('\t');
         let (Some(token), Some(pos), Some(zh)) = (cols.next(), cols.next(), cols.next()) else { continue };
@@ -60,22 +88,32 @@ pub fn load_words(content: &str) -> usize {
         if zh.is_empty() {
             continue;
         }
-        table.entry(token.as_bytes().to_vec()).or_default()[i] = zh.to_owned();
+        words.entry(token.as_bytes().to_vec()).or_default()[i] = zh.to_owned();
         if let (Some(en), Some(class)) = (cols.next(), forms.get_mut(i)) {
             for form in en.split('/').filter(|f| !f.is_empty()) {
                 class.entry(form.to_ascii_lowercase().into_bytes()).or_insert_with(|| zh.to_owned());
             }
         }
-        n += 1;
     }
-    let _ = WORDS.set(table);
-    let _ = FORMS.set(forms);
-    n
+    WordTable { words: Arc::new(words), forms: Arc::new(forms) }
+}
+
+/// 換成這一份字表（目前語言的）
+pub fn set_table(table: &WordTable) {
+    *WORDS.write() = Some(table.words.clone());
+    *FORMS.write() = Some(table.forms.clone());
+}
+
+/// 讀字表並換上（離線工具 examples/t.rs 用）；回傳字數。
+pub fn load_words(content: &str) -> usize {
+    let table = parse_table(content);
+    set_table(&table);
+    table.word_count()
 }
 
 /// 書名的隨機字：名詞（單數或複數）或形容詞的英文詞形的中文。遊戲把書名的隨機字每個字改大寫開頭（FUN_14052d3c0），
 /// 小寫開頭的不收（介面字串 `good food`、`new moon` 不會被書名樣板 `{=1} {$2}` 比走），其餘字母不分大小寫。
-pub fn word_form(form: &[u8], adj: bool) -> Option<&'static str> {
+pub fn word_form(form: &[u8], adj: bool) -> Option<String> {
     if form.len() > 64 || form.contains(&b' ') || !form.first().is_some_and(u8::is_ascii_uppercase) {
         return None;
     }
@@ -83,54 +121,103 @@ pub fn word_form(form: &[u8], adj: bool) -> Option<&'static str> {
     let lower = &mut buf[..form.len()];
     lower.copy_from_slice(form);
     lower.make_ascii_lowercase();
-    FORMS.get()?[usize::from(adj)].get(&*lower).map(String::as_str)
+    FORMS.read().as_ref()?[usize::from(adj)].get(&*lower).cloned()
 }
 
-/// 測試用：只設書名的隨機字（字表 WORDS 給名稱的測試設）。
+/// 測試用：只設書名的隨機字（字表 WORDS 給名稱的測試設）。先設的算數，各測試共用。
 #[cfg(test)]
 pub fn set_forms(nouns: &[(&str, &str)], adjs: &[(&str, &str)]) {
     let map = |v: &[(&str, &str)]| v.iter().map(|(en, zh)| (en.as_bytes().to_vec(), (*zh).to_owned())).collect();
-    let _ = FORMS.set([map(nouns), map(adjs), HashMap::new(), HashMap::new()]);
+    FORMS.write().get_or_insert_with(|| Arc::new([map(nouns), map(adjs), HashMap::new(), HashMap::new()]));
 }
 
 /// 字典查詞用：遊戲組過的英文名（名字音譯開著時也有原名）的中文。
 pub fn get(english: &[u8]) -> Option<Arc<str>> {
-    NAMES.lock().get(english).cloned()
+    get_with(crate::translit::table().as_deref(), english)
 }
 
-fn register(english: &[u8], zh: String) {
+/// 同 get，音譯表由呼叫端給（None 是名字音譯關著；測試用，免得動到全域的開關）
+fn get_with(table: Option<&crate::translit::Table>, english: &[u8]) -> Option<Arc<str>> {
+    #[cfg(test)]
+    if let Some(zh) = FIXED.lock().get(english) {
+        return Some(zh.clone());
+    }
+    if let Some(name) = NAMES.lock().get(english) {
+        let zh = chinese(WORDS.read().as_deref()?, &name.words, name.first)?;
+        return Some(if name.head.is_empty() { zh.into() } else { with_head_in(table, &name.head, &zh).into() });
+    }
+    let table = table?;
+    if !NATIVES.lock().contains(english) {
+        return None;
+    }
+    crate::translit::name_with(table, english).map(Into::into)
+}
+
+/// 字表組的中文名（照 table 這一種語言）：複合字＋「of 字之 the 片語」，first 時只有複合字。有字查不到中文時 None
+fn chinese(table: &Words, words: &[Word], first: bool) -> Option<String> {
+    let mut zh: [Option<&str>; 7] = [None; 7];
+    for (slot, class, token) in words {
+        let s = table.get(&**token)?[usize::from(*class)].as_str();
+        if s.is_empty() {
+            return None;
+        }
+        zh[usize::from(*slot)] = Some(s);
+    }
+    let compound: String = zh[0..2].iter().flatten().copied().collect();
+    if first {
+        return (!compound.is_empty()).then_some(compound);
+    }
+    // the 片語（words[2..6]）：遊戲只在 words[2]、words[3]、words[5] 有字時才拼
+    let phrase: String = if zh[2].is_some() || zh[3].is_some() || zh[5].is_some() { zh[2..6].iter().flatten().copied().collect() } else { String::new() };
+    let rest = match zh[6] {
+        Some(of) if phrase.is_empty() => of.to_owned(),
+        Some(of) => format!("{of}之{phrase}"),
+        None => phrase,
+    };
+    let name = match (compound.is_empty(), rest.is_empty()) {
+        (false, false) => format!("{compound}·{rest}"),
+        (false, true) => compound,
+        _ => rest,
+    };
+    (!name.is_empty()).then_some(name)
+}
+
+fn register(english: &[u8], name: Name) {
     let mut names = NAMES.lock();
     if names.len() >= NAMES_LIMIT {
         names.clear();
     }
-    names.insert(english.to_vec(), zh.into());
+    names.insert(english.to_vec(), name);
     GENERATION.fetch_add(1, Ordering::Release);
 }
 
-/// hook 用：組原名的函式（native_name）把名字轉成原文 out 之後呼叫；名字音譯開著時登記整個原名的音譯。
+/// hook 用：組原名的函式（native_name）把名字轉成原文 out 之後呼叫：記下整個原名，和只有名的寫法
+/// （傳說頁的事件句、相關人物清單的連結字只寫名 `Onsmost`，遊戲不經過組原名的函式）。名字音譯關著也記，打開選項就查得到。
 pub fn note_native(out: &[u8]) {
-    if let Some(table) = crate::translit::table() {
-        note_native_in(table, out);
-    }
-}
-
-/// 整個原名，和只有名的寫法：傳說頁的事件句、相關人物清單的連結字只寫名（`Onsmost`），遊戲不經過組原名的函式
-fn note_native_in(table: &crate::translit::Table, out: &[u8]) {
     let first = out.split(|&c| c == b' ').next().filter(|f| f.len() < out.len() && f.first().is_some_and(|&c| c.is_ascii_alphabetic() || c >= 0x80));
+    let mut natives = NATIVES.lock();
+    let mut added = false;
     for name in std::iter::once(out).chain(first) {
-        if name.is_empty() || NAMES.lock().contains_key(name) {
+        if name.is_empty() || natives.contains(name) {
             continue;
         }
-        if let Some(zh) = crate::translit::name_with(table, name) {
-            register(name, zh);
+        if natives.len() >= NAMES_LIMIT {
+            natives.clear();
         }
+        natives.insert(name.to_vec());
+        added = true;
+    }
+    drop(natives);
+    // 名字音譯開著時才有新的譯文：字典記成翻不出來的字串要重算
+    if added && crate::translit::table().is_some() {
+        GENERATION.fetch_add(1, Ordering::Release);
     }
 }
 
 /// 英文名開頭的原名、綽號（head，不含結尾的空白）接上字表組的中文名：名字音譯開著時原名也音譯、以「·」相接
 /// （「翁斯莫斯特·年輕意志·鑲寶」；綽號在最後時空一格），否則照原文空一格（「Onsmost 年輕意志·鑲寶」）。
 fn with_head(head: &[u8], zh: &str) -> String {
-    with_head_in(crate::translit::table(), head, zh)
+    with_head_in(crate::translit::table().as_deref(), head, zh)
 }
 
 fn with_head_in(table: Option<&crate::translit::Table>, head: &[u8], zh: &str) -> String {
@@ -143,6 +230,11 @@ fn with_head_in(table: Option<&crate::translit::Table>, head: &[u8], zh: &str) -
 
 pub fn generation() -> u64 {
     GENERATION.load(Ordering::Acquire)
+}
+
+/// 換了語言（字表）：字典記成翻不出來的字串可能翻得出來了
+pub fn changed() {
+    GENERATION.fetch_add(1, Ordering::Release);
 }
 
 /// status 用：登記的英文名筆數
@@ -168,7 +260,8 @@ const OF: [usize; 4] = [NOUN, VERB, ADJ, PREFIX];
 /// ponytail: 同一個詞形在不同詞性中文不同時只能照位置猜，實測約八成和遊戲組的一樣（世界名、地區名幾乎都對，複合字的堡壘名、
 /// 人名差最多）；要完全一致得在讀檔時記下存檔清單上的名字
 pub fn parse(english: &[u8]) -> Option<String> {
-    parse_with(FORMS.get()?, english)
+    let forms = FORMS.read().clone()?;
+    parse_with(&forms, english)
 }
 
 fn parse_with(forms: &Forms, english: &[u8]) -> Option<String> {
@@ -232,10 +325,13 @@ fn parse_with(forms: &Forms, english: &[u8]) -> Option<String> {
     Some(if head == 0 { zh } else { with_head(&originals[..head].join(&b' '), &zh) })
 }
 
-/// 測試用：直接登記一個名字（不經 translate_name）。
+/// 測試用：直接登記一個名字的中文（不經 translate_name，不看字表）。
+#[cfg(test)]
+static FIXED: LazyLock<Mutex<HashMap<Vec<u8>, Arc<str>>>> = LazyLock::new(|| Mutex::new(HashMap::new()));
+
 #[cfg(test)]
 pub fn insert(english: &[u8], zh: &str) {
-    NAMES.lock().insert(english.to_vec(), zh.into());
+    FIXED.lock().insert(english.to_vec(), zh.into());
     GENERATION.fetch_add(1, Ordering::Release);
 }
 
@@ -252,8 +348,8 @@ unsafe fn str_bytes<'a>(s: usize) -> &'a [u8] {
     }
 }
 
-/// 名字裡的一個字：(英文詞形, 中文)。parts_of_speech：0 名詞、1 名詞複數、2 形容詞、3 字首、4–8 動詞各形。
-unsafe fn word<'a>(l: &NameLayout, id: i32, pos: i16) -> Option<(&'a [u8], &'static str)> {
+/// 名字裡的一個字：(英文詞形, 詞性類別, 字的代號)。parts_of_speech：0 名詞、1 名詞複數、2 形容詞、3 字首、4–8 動詞各形。
+unsafe fn word<'a>(l: &NameLayout, id: i32, pos: i16) -> Option<(&'a [u8], u8, &'a [u8])> {
     let class = match pos {
         0 | 1 => 0,
         2 => 1,
@@ -265,23 +361,24 @@ unsafe fn word<'a>(l: &NameLayout, id: i32, pos: i16) -> Option<(&'a [u8], &'sta
         let (begin, end): (usize, usize) = (read(l.word_vec, 0), read(l.word_vec, 8));
         let id = usize::try_from(id).ok().filter(|&i| i < (end - begin) / 8)?;
         let w: usize = read(begin, id * 8);
-        let form = str_bytes(w + l.word_forms + pos as usize * 32);
-        let zh = WORDS.get()?.get(str_bytes(w + l.word_token))?[class].as_str();
-        (!zh.is_empty()).then_some((form, zh))
+        Some((str_bytes(w + l.word_forms + pos as usize * 32), class, str_bytes(w + l.word_token)))
     }
 }
 
-/// 照遊戲的組法拼出英文名的字表部分（不含原名與綽號，小寫）與中文；有字缺中文時回傳 None。
+/// 照遊戲的組法拼出英文名的字表部分（不含原名與綽號，小寫），與各位置的字（中文見 chinese）。
 /// 遊戲的組法（translate_name）：words[0]+words[1] 接成一個字；words[2]、words[3]、words[4] 各自前面空一格，
 /// 第一個前面接 the，words[4] 後面接「-」再直接接 words[5]；有 words[6] 時接「of words[6]」。
-/// 第三項是只有複合字的寫法（後面還有 the／of 片語時）：遊戲「只要第一段」時只輸出這段（傳說事件句的 `Silverwarm`）
+/// 第三項是只有複合字的英文（後面還有 the／of 片語時）：遊戲「只要第一段」時只輸出這段（傳說事件句的 `Silverwarm`）
 #[allow(clippy::type_complexity)]
-unsafe fn compose(l: &NameLayout, name: usize) -> Option<(Vec<u8>, String, Option<(Vec<u8>, String)>)> {
+unsafe fn compose(l: &NameLayout, name: usize) -> Option<(Vec<u8>, Vec<Word>, Option<Vec<u8>>)> {
     let (ids, pos): ([i32; 7], [i16; 7]) = unsafe { (read(name, l.words), read(name, l.parts)) };
-    let mut words: [Option<(&[u8], &str)>; 7] = [None; 7];
+    let mut forms: [Option<&[u8]>; 7] = [None; 7];
+    let mut words = Vec::new();
     for i in 0..7 {
         if ids[i] != -1 {
-            words[i] = Some(unsafe { word(l, ids[i], pos[i]) }?);
+            let (form, class, token) = unsafe { word(l, ids[i], pos[i]) }?;
+            forms[i] = Some(form);
+            words.push((i as u8, class, token.into()));
         }
     }
     let mut en: Vec<u8> = Vec::new();
@@ -291,17 +388,13 @@ unsafe fn compose(l: &NameLayout, name: usize) -> Option<(Vec<u8>, String, Optio
         }
     };
     // 複合字
-    let compound: String = words[0..2].iter().flatten().map(|w| w.1).collect();
-    if words[0..2].iter().any(Option::is_some) {
-        en.extend(words[0..2].iter().flatten().flat_map(|w| w.0));
-    }
+    en.extend(forms[0..2].iter().flatten().flat_map(|f| f.iter()));
     let first_len = en.len();
     // the 片語（words[2..6]）：遊戲只在 words[2]、words[3]、words[5] 有字時才拼
-    let mut phrase = String::new();
-    if words[2].is_some() || words[3].is_some() || words[5].is_some() {
+    if forms[2].is_some() || forms[3].is_some() || forms[5].is_some() {
         let mut the = false;
-        for (i, w) in words.iter().enumerate().take(6).skip(2) {
-            let Some((form, zh)) = w else { continue };
+        for (i, f) in forms.iter().enumerate().take(6).skip(2) {
+            let Some(form) = f else { continue };
             space(&mut en);
             if !std::mem::replace(&mut the, true) {
                 en.extend_from_slice(b"the ");
@@ -310,52 +403,44 @@ unsafe fn compose(l: &NameLayout, name: usize) -> Option<(Vec<u8>, String, Optio
             if i == 4 {
                 en.push(b'-');
             }
-            phrase.push_str(zh);
         }
     }
     // of 片語
-    let of = words[6].map(|(form, zh)| {
+    if let Some(form) = forms[6] {
         space(&mut en);
         en.extend_from_slice(b"of ");
         en.extend_from_slice(form);
-        zh
-    });
+    }
     if en.is_empty() {
         return None;
     }
     en.make_ascii_lowercase();
-    let first = (!compound.is_empty() && en.len() > first_len).then(|| (en[..first_len].to_vec(), compound.clone()));
-    let rest = match of {
-        Some(of) if phrase.is_empty() => of.to_owned(),
-        Some(of) => format!("{of}之{phrase}"),
-        None => phrase,
-    };
-    let zh = match (compound.is_empty(), rest.is_empty()) {
-        (false, false) => format!("{compound}·{rest}"),
-        (false, true) => compound,
-        _ => rest,
-    };
-    Some((en, zh, first))
+    let first = (first_len > 0 && en.len() > first_len).then(|| en[..first_len].to_vec());
+    Some((en, words, first))
 }
 
-/// hook 用：原函式把 name 轉成英文 out 之後呼叫，登記這個英文名的中文。
-/// 開頭的原名、綽號照原文：英文輸出扣掉字表部分剩下的就是這段，中文名接在它後面、空一格。
-/// 遊戲只要第一段時（傳說事件句的人名）輸出只有複合字，對上就登記複合字的中文。
+/// hook 用：原函式把 name 轉成英文 out 之後呼叫，登記這個英文名（中文查的時候才照目前語言的字表組，見 get）。
+/// 開頭的原名、綽號照原文存（英文輸出扣掉字表部分剩下的就是這段）。遊戲只要第一段時（傳說事件句的人名）輸出只有複合字，
+/// 對上就登記複合字。目前語言的字表有字缺中文時不登記。
 pub unsafe fn note(name: usize, out: &[u8]) {
     let Some(l) = NAME_LAYOUT.get() else { return };
     if out.is_empty() || NAMES.lock().contains_key(out) {
         return;
     }
-    let Some((en, zh, first)) = (unsafe { compose(l, name) }) else { return };
+    let Some((en, words, first)) = (unsafe { compose(l, name) }) else { return };
     let ends = |en: &[u8]| out.len() >= en.len() && out[out.len() - en.len()..].eq_ignore_ascii_case(en);
-    let Some((en, zh)) = [Some((en, zh)), first].into_iter().flatten().find(|(en, _)| ends(en)) else { return };
+    let Some((en, first)) = [Some((en, false)), first.map(|f| (f, true))].into_iter().flatten().find(|(en, _)| ends(en)) else { return };
     let head = &out[..out.len() - en.len()];
-    let zh = match head.strip_suffix(b" ") {
-        Some(head) => with_head(head, &zh),
-        None if head.is_empty() => zh,
+    let head = match head.strip_suffix(b" ") {
+        Some(head) => head,
+        None if head.is_empty() => head,
         None => return,
     };
-    register(out, zh);
+    if WORDS.read().as_deref().is_none_or(|table| chinese(table, &words, first).is_none()) {
+        return;
+    }
+    let words = words.into_iter().filter(|w| !first || w.0 < 2).collect();
+    register(out, Name { head: head.into(), words, first });
 }
 
 #[cfg(test)]
@@ -416,14 +501,16 @@ mod tests {
 
     #[test]
     fn names_follow_the_game_structure_and_keep_native_parts() {
-        let _ = WORDS.set(
-            [("SCORCH", 3, "焦"), ("AXE", 0, "斧"), ("PLANET", 0, "星"), ("DESTINY", 0, "命運"), ("BRONZE", 1, "青銅"), ("GUILD", 0, "公會")]
-                .into_iter()
-                .fold(HashMap::new(), |mut m: HashMap<Vec<u8>, [String; 4]>, (t, i, zh)| {
-                    m.entry(t.as_bytes().to_vec()).or_default()[i] = zh.to_owned();
-                    m
-                }),
-        );
+        WORDS.write().get_or_insert_with(|| {
+            Arc::new(
+                [("SCORCH", 3, "焦"), ("AXE", 0, "斧"), ("PLANET", 0, "星"), ("DESTINY", 0, "命運"), ("BRONZE", 1, "青銅"), ("GUILD", 0, "公會")]
+                    .into_iter()
+                    .fold(HashMap::new(), |mut m: Words, (t, i, zh)| {
+                        m.entry(t.as_bytes().to_vec()).or_default()[i] = zh.to_owned();
+                        m
+                    }),
+            )
+        });
         let mut scorch = N;
         scorch[4] = "scorch";
         let f = Fake::new(&[
@@ -448,6 +535,10 @@ mod tests {
             let n = name([-1, -1, 4, -1, -1, 5, -1], [0, 0, 2, 0, 0, 0, 0]);
             note(&raw const n as usize, b"Urist the Bronze Guild");
             assert_eq!(get(b"Urist the Bronze Guild").as_deref(), Some("Urist 青銅公會"));
+            // 遊戲中途打開名字音譯：不必等遊戲再組一次，原名就換成音譯
+            let table: crate::translit::Table =
+                [("u", "烏"), ("ri", "里"), ("s", "斯"), ("t", "特")].into_iter().map(|(k, v)| (k.as_bytes().to_vec(), v.to_owned())).collect();
+            assert_eq!(get_with(Some(&table), b"Urist the Bronze Guild").as_deref(), Some("烏里斯特·青銅公會"));
             // 只要第一段：傳說事件句只寫複合字（龍「Silverwarm the Golden」寫成 `Silverwarm`）
             let n = name([0, 3, 4, -1, -1, 5, -1], [4, 0, 2, 0, 0, 0, 0]);
             note(&raw const n as usize, b"Scorchdestiny");
@@ -461,6 +552,18 @@ mod tests {
             let n = name([0, 1, -1, -1, -1, -1, -1], [4, 0, 0, 0, 0, 0, 0]);
             note(&raw const n as usize, b"Burnaxe");
             assert_eq!(get(b"Burnaxe"), None);
+            // 換語言（換一份字表）：已登記的名字不必等遊戲再組一次，照新的字表組中文；字表缺字的照英文
+            let hans: Words = [("SCORCH", 3, "焦"), ("DESTINY", 0, "命运"), ("BRONZE", 1, "青铜"), ("GUILD", 0, "公会")]
+                .into_iter()
+                .fold(HashMap::new(), |mut m: Words, (t, i, zh)| {
+                    m.entry(t.as_bytes().to_vec()).or_default()[i] = zh.to_owned();
+                    m
+                });
+            let hant = WORDS.write().replace(Arc::new(hans));
+            assert_eq!(get(b"Scorchdestiny the Bronze Guild").as_deref(), Some("焦命运·青铜公会"));
+            assert_eq!(get(b"Scorchaxe"), None);
+            *WORDS.write() = hant;
+            assert_eq!(get(b"Scorchdestiny the Bronze Guild").as_deref(), Some("焦命運·青銅公會"));
         }
         drop(f);
     }
@@ -492,13 +595,14 @@ mod tests {
     }
 
     #[test]
-    fn native_first_names_are_registered_with_the_whole_name() {
+    fn native_names_seen_while_off_are_transliterated_once_turned_on() {
         let table: crate::translit::Table = [("on", "翁"), ("s", "斯"), ("mo", "莫"), ("t", "特"), ("e", "埃"), ("to", "托"), ("g", "格")]
             .into_iter().map(|(k, v)| (k.as_bytes().to_vec(), v.to_owned())).collect();
-        note_native_in(&table, b"Onsmost Etog");
-        assert_eq!(get(b"Onsmost Etog").as_deref(), Some("翁斯莫斯特·埃托格"));
-        assert_eq!(get(b"Onsmost").as_deref(), Some("翁斯莫斯特"), "傳說頁事件句的連結字只寫名");
-        note_native_in(&table, b"`Gem' Etog");
-        assert_eq!(get(b"`Gem'"), None, "開頭是綽號時不另外登記");
+        note_native(b"Onsmost Etog");
+        assert_eq!(get_with(None, b"Onsmost Etog"), None, "名字音譯關著時原名照原文");
+        assert_eq!(get_with(Some(&table), b"Onsmost Etog").as_deref(), Some("翁斯莫斯特·埃托格"), "打開後不必等遊戲再組一次");
+        assert_eq!(get_with(Some(&table), b"Onsmost").as_deref(), Some("翁斯莫斯特"), "傳說頁事件句的連結字只寫名");
+        note_native(b"`Gem' Etog");
+        assert_eq!(get_with(Some(&table), b"`Gem'"), None, "開頭是綽號時不另外登記");
     }
 }

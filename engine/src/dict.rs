@@ -10,6 +10,7 @@
 
 use std::collections::HashMap;
 use std::sync::Arc;
+use std::sync::atomic::{AtomicI32, AtomicU8, Ordering};
 
 use parking_lot::Mutex;
 
@@ -482,8 +483,9 @@ fn literal_at(output: &[Out], p: usize, caps: &[(usize, usize); 9]) -> usize {
     if end <= next && !caps.iter().any(|&(s, _)| end <= s && s < next) { end } else { 0 }
 }
 
-/// 設定視窗的選項（遊戲啟動時決定，載入字典前由 lib.rs 的 set_options 設好；名字音譯另見 translit.rs）
-#[derive(Default, Clone, Copy)]
+/// 設定視窗的選項（名字音譯另見 translit.rs）：隨時可改（lib.rs 的 set_options），下一次查詢起照新的選項；
+/// 已經算好的譯文要另外清掉（lib.rs 的 refresh）
+#[derive(Default, Clone, Copy, PartialEq, Debug)]
 pub struct Options {
     /// 按鍵名翻成中文：字串檔 align 寫 `key` 的條目（見 key_text）
     pub keys: bool,
@@ -493,11 +495,31 @@ pub struct Options {
     pub partial: bool,
 }
 
+impl Options {
+    fn bits(self) -> u8 {
+        u8::from(self.keys) | u8::from(self.music) << 1 | u8::from(self.partial) << 2
+    }
+
+    fn from_bits(bits: u8) -> Options {
+        Options { keys: bits & 1 != 0, music: bits & 2 != 0, partial: bits & 4 != 0 }
+    }
+}
+
+/// 只在某個畫面套用的一條（見 screen_entry）。配樂曲名（align 寫 `music`）另存一條照原文的，選項關著時用它，
+/// 擋住全域字典（曲名 Dolomite 會被翻成石材名「白雲岩」）
+pub struct ScreenEntry {
+    screen: String,
+    row: Option<i32>,
+    entry: Entry,
+    music_off: Option<Entry>,
+}
+
 #[derive(Default)]
 pub struct Dict {
-    pub options: Options,
+    /// Options 的位元（見 options）：遊戲執行緒查字典時，Lua 那邊可能正在改
+    options: AtomicU8,
     pub entries: HashMap<Vec<u8>, Entry>,
-    /// 按鍵名（字串檔 align 寫 `key`，按鍵名選項開著才載入）：Enter、Leftbracket、Numpad 5 → 譯文（見 key_text）
+    /// 按鍵名（字串檔 align 寫 `key`）：Enter、Leftbracket、Numpad 5 → 譯文；按鍵名選項開著才用（見 key_text）
     keys: HashMap<Vec<u8>, String>,
     /// 只在佔位裡用的詞（字串檔 align 寫 inner）：句型的 {@n}、{%n} 抓到時查得到，整句查詢與介面單獨畫出時不用。
     /// 樂器音色的 dark、full、round 這類一般單字：句型要用，介面上單獨出現時不該翻成音色。
@@ -513,8 +535,8 @@ pub struct Dict {
     comma_keys: Vec<Vec<u8>>,
     /// 整句字典的原文排序過：遊戲把放不下的字截成「開頭...」時，從開頭找回原句（見 truncated）
     sorted_keys: Vec<Vec<u8>>,
-    /// 只在某些畫面套用的整句：原文 → [(畫面, 限定列, 譯文)]。同一個英文在不同畫面（或同畫面不同列）意思不同時用（見 screen_entry）。
-    pub screens: HashMap<Vec<u8>, Vec<(String, Option<i32>, Entry)>>,
+    /// 只在某些畫面套用的整句：原文 → 各畫面的條目。同一個英文在不同畫面（或同畫面不同列）意思不同時用（見 screen_entry）。
+    pub screens: HashMap<Vec<u8>, Vec<ScreenEntry>>,
     /// 單獨畫出的全小寫字串照原文的畫面（screens 檔原文寫 `*` 的列，見 keeps_word）
     pub verbatim_screens: Vec<String>,
     pub rules: Vec<Rule>,
@@ -527,7 +549,8 @@ pub struct Dict {
     /// 字 → 字圖編號；字圖 i 的左右半格在 texpos[2i]、texpos[2i+1]。完整字圖集（長度 8n，見 atlas::render）另有：
     /// 字圖 i 往下位移半格的上列左右在 [2n+4i]、[2n+4i+1]，下列左右在 [2n+4i+2]、[2n+4i+3]；錨定貼圖標籤用的小一號字在 [6n+2i]、[6n+2i+1]（見 Dict::tile）。
     pub glyph_of: HashMap<char, u32>,
-    pub texpos: Vec<i32>,
+    /// 每張字圖的 texpos：DFHack 重載貼圖、換了字重時就地換新（見 set_texpos），遊戲執行緒照樣在讀
+    texpos: Vec<AtomicI32>,
 }
 
 pub struct LoadReport {
@@ -556,8 +579,33 @@ impl Dict {
             return false;
         }
         self.glyph_of = chars.into_iter().enumerate().map(|(i, c)| (c, i as u32)).collect();
-        self.texpos = texpos;
+        self.texpos = texpos.into_iter().map(AtomicI32::new).collect();
         true
+    }
+
+    /// 換上同一組字的新 texpos（DFHack 重載動態範圍的貼圖、換了字重的字圖集）：張數不同時回傳 false。
+    /// 一張一張換，遊戲執行緒同時在讀頂多這一幀有幾格還是舊字圖
+    pub fn set_texpos(&self, texpos: &[i32]) -> bool {
+        if texpos.len() != self.texpos.len() {
+            return false;
+        }
+        for (slot, &t) in self.texpos.iter().zip(texpos) {
+            slot.store(t, Ordering::Relaxed);
+        }
+        true
+    }
+
+    pub fn options(&self) -> Options {
+        Options::from_bits(self.options.load(Ordering::Relaxed))
+    }
+
+    pub fn set_options(&self, options: Options) {
+        self.options.store(options.bits(), Ordering::Relaxed);
+    }
+
+    /// 清掉句型結果：選項、名字音譯、整句貼圖、字型換了以後，算好的替身字串與譯文都可能不對了
+    pub fn clear_cache(&self) {
+        self.cache.lock().clear();
     }
 
     /// 字圖 glyph 的左（half 0）或右半格畫在 row 時的 texpos。只有一般字圖時，上列與標籤畫一般的字、下列不畫（None）。
@@ -571,13 +619,13 @@ impl Dict {
             Row::Bottom => return None,
             _ => 2 * g,
         };
-        self.texpos.get(i + half).copied()
+        self.texpos.get(i + half).map(|t| t.load(Ordering::Relaxed))
     }
 
     /// 透明記號貼圖的 texpos（字圖集最後一張，見 atlas::render）：段落照字寬縮短時（Entry::compact）佔位格貼它
     pub fn marker(&self) -> Option<i32> {
         let n = self.glyph_of.len() * 8;
-        (self.texpos.len() == n + 1).then(|| self.texpos[n])
+        (self.texpos.len() == n + 1).then(|| self.texpos[n].load(Ordering::Relaxed))
     }
 
     /// 任一段文字的替身字串與字圖（段落換行後的一段，見 mtb.rs）；缺字圖時回傳 None。
@@ -663,9 +711,7 @@ impl Dict {
             report.loaded += 1;
             if align == "key" {
                 // 按鍵名不進一般字典：Delete、Slash 這類字在介面上另有意思（刪除鈕、攻擊選單的「砍」），只在按鍵寫法裡用（見 key_text）
-                if self.options.keys {
-                    self.keys.insert(key, entry.text);
-                }
+                self.keys.insert(key, entry.text);
                 continue;
             }
             if align == "tail" {
@@ -734,8 +780,8 @@ impl Dict {
                 continue;
             }
             let align = cols.next().unwrap_or("");
-            // 配樂曲名：選項關著時照原文（全域字典會把曲名 Dolomite 翻成石材名「白雲岩」），開著時用譯文
-            let (zh, align) = if align == "music" { (if self.options.music { zh } else { en }, "") } else { (zh, align) };
+            let music = align == "music";
+            let align = if music { "" } else { align };
             let row = match cols.next().unwrap_or("") {
                 "" => None,
                 r => match r.parse::<i32>() {
@@ -752,7 +798,8 @@ impl Dict {
             };
             let (entry, missing) = self.entry(key.len(), zh, align);
             report.missing_glyphs += missing;
-            self.screens.entry(key).or_default().push((screen.to_owned(), row, entry));
+            let music_off = music.then(|| self.entry(key.len(), en, "").0);
+            self.screens.entry(key).or_default().push(ScreenEntry { screen: screen.to_owned(), row, entry, music_off });
             report.loaded += 1;
         }
         report
@@ -763,7 +810,13 @@ impl Dict {
     /// 條目限定了列時，字串也要畫在那一列（y）。
     pub fn screen_entry<'a>(&'a self, key: &[u8], focus: &str, y: i32) -> Option<&'a Entry> {
         let list = self.screens.get(key)?;
-        list.iter().find(|(screen, row, _)| row.is_none_or(|r| r == y) && on_screen(focus, screen)).map(|(_, _, entry)| entry)
+        let music = self.options().music;
+        list.iter()
+            .find(|s| s.row.is_none_or(|r| r == y) && on_screen(focus, &s.screen))
+            .map(|s| match &s.music_off {
+                Some(original) if !music => original,
+                _ => &s.entry,
+            })
     }
 
     /// 這個畫面上單獨畫出的全小寫字串照原文、不查字典：交談選單把每個搜尋關鍵字分開畫（`duty`、`trade`），
@@ -867,7 +920,7 @@ impl Dict {
                 }
                 None => {
                     missing.push(sentence.to_vec());
-                    if self.options.partial {
+                    if self.options().partial {
                         if !out.is_empty() {
                             out.push((" ".to_owned(), start));
                         }
@@ -877,7 +930,7 @@ impl Dict {
                 }
             }
         }
-        let ok = !out.is_empty() && (missing.is_empty() || (self.options.partial && translated));
+        let ok = !out.is_empty() && (missing.is_empty() || (self.options().partial && translated));
         (ok.then_some(out), missing)
     }
 
@@ -890,7 +943,7 @@ impl Dict {
             return (Some(t), true);
         }
         let records = key.contains(&LINK_OPEN);
-        let keep = records || self.options.partial;
+        let keep = records || self.options().partial;
         let colored = |s: &[u8]| s.windows(3).any(|w| w == b"[C:");
         if !keep && colored(key) {
             return (None, false);
@@ -1059,8 +1112,8 @@ impl Dict {
 
     fn title_lookup(&self, key: &[u8], depth: usize, memo: &mut Memo) -> Option<String> {
         // 書名用詞；沒有主題的作品（詩、樂曲）主題就是一個隨機名詞（FUN_140ee4870 拿 [NOUN] 當 [NAME]：「My Friend Glands」）
-        if let Some(zh) = self.title_vocab(key).or_else(|| crate::names::word_form(key, false)) {
-            return Some(zh.to_owned());
+        if let Some(zh) = self.title_vocab(key).map(str::to_owned).or_else(|| crate::names::word_form(key, false)) {
+            return Some(zh);
         }
         // 「the 種族」「the 物品種類」「the 職位」（人物、神器沒有名字時）
         if let Some(rest) = key.strip_prefix(b"the ").or_else(|| key.strip_prefix(b"The ")) {
@@ -1155,7 +1208,7 @@ impl Dict {
                     });
                     let sub = match kind {
                         Some(Kind::Title) => self.title_of(piece, depth, memo).map(|zh| (vec![(zh, 0)], true)),
-                        Some(k @ (Kind::Noun | Kind::Adj)) => crate::names::word_form(piece, k == Kind::Adj).map(|zh| (vec![(zh.to_owned(), 0)], true)),
+                        Some(k @ (Kind::Noun | Kind::Adj)) => crate::names::word_form(piece, k == Kind::Adj).map(|zh| (vec![(zh, 0)], true)),
                         // 遊戲組的名字照名稱的字表翻（「The Bloody Desert」是「血腥沙漠」，不是一般字典的「血腥荒漠」），和遊戲內組的一致
                         Some(Kind::EnName) => crate::names::get(piece).map(|zh| zh.to_string()).or_else(|| crate::names::parse(piece))
                             .map(|zh| (vec![(zh, 0)], true)).or_else(|| self.piece(piece, depth + 1, memo)),
@@ -1247,7 +1300,7 @@ impl Dict {
     /// 按鍵名選項開著時，按鍵的寫法（`Shift+Enter`、`Ctrl+Mwheel up`、`Leftbracket`）：修飾鍵（Shift+、Ctrl+、Alt+）照原文，
     /// 最後的按鍵查 align 寫 `key` 的條目；字母、數字、F 鍵沒有條目，整個照原文。
     fn key_text(&self, key: &[u8]) -> Option<String> {
-        if self.keys.is_empty() {
+        if self.keys.is_empty() || !self.options().keys {
             return None;
         }
         let mut rest = key;
@@ -1457,27 +1510,27 @@ mod tests {
     }
 
     #[test]
-    fn key_names_and_music_titles_follow_the_options() {
+    fn key_names_and_music_titles_follow_the_options_while_running() {
         let keys = "Slash\t砍\nLeftbracket\t[\tkey\nSlash\t/\tkey\n";
         let zh = |d: &Dict, k: &[u8]| d.rule_entry(k).map(|e| e.text.clone());
         let mut d = dict("");
         d.load_tsv(keys);
         assert_eq!(zh(&d, b"Ctrl+Leftbracket"), None, "選項關著時按鍵名照原文");
-        let mut d = dict("");
-        d.options.keys = true;
-        d.load_tsv(keys);
+        // 遊戲中途打開：清掉算好的結果就照新選項（lib.rs 的 refresh）
+        d.set_options(Options { keys: true, ..Options::default() });
+        d.clear_cache();
         assert_eq!(zh(&d, b"Ctrl+Leftbracket").as_deref(), Some("Ctrl+["), "修飾鍵照原文，按鍵查 key 條目");
         assert_eq!(zh(&d, b"Alt+Shift+Slash").as_deref(), Some("Alt+Shift+/"));
         assert_eq!(d.entries.get(&b"Slash"[..]).map(|e| e.text.as_str()), Some("砍"), "按鍵名不進一般字典（攻擊選單的 Slash）");
         assert_eq!(zh(&d, b"Ctrl+d"), None, "沒有條目的按鍵（字母）照原文");
+        d.set_options(Options::default());
+        d.clear_cache();
+        assert_eq!(zh(&d, b"Ctrl+Leftbracket"), None, "再關掉又照原文");
         let screens = "dwarfmode/Options\tDolomite\t白雲岩\tmusic\t\n";
         let title = |d: &Dict| d.screen_entry(b"Dolomite", "dwarfmode/Options", 3).map(|e| e.text.clone());
-        let mut d = dict("");
         d.load_screens_tsv(screens);
         assert_eq!(title(&d).as_deref(), Some("Dolomite"), "選項關著時曲名照原文（擋住全域字典的石材名）");
-        let mut d = dict("");
-        d.options.music = true;
-        d.load_screens_tsv(screens);
+        d.set_options(Options { music: true, ..Options::default() });
         assert_eq!(title(&d).as_deref(), Some("白雲岩"));
     }
 
@@ -1488,7 +1541,7 @@ mod tests {
         let mut d = Dict::default();
         let chars = "他很有幽默感。不太在意";
         assert!(d.set_glyphs(chars, vec![0; chars.chars().count() * 8 + 1]));
-        d.options.keys = true;
+        d.set_options(Options { keys: true, ..Options::default() });
         d.load_tsv("Abcdefghij\t幽默感不太在意\tkey\nAbcdefghi\t幽默感不太在意\tkey\nAbcdefgh\t幽默感不太在意\tkey\n");
         let cells = |k: &[u8]| d.rule_entry(k).map(|e| e.shadow().len());
         assert_eq!(cells(b"Abcdefghij"), Some(10), "放得下照實際字寬");
@@ -1675,7 +1728,7 @@ mod tests {
     fn partial_option_keeps_missing_sentences_in_english() {
         let mut d = dict("");
         d.load_tsv("Labor ends.\t勞動結束。\n");
-        d.options.partial = true;
+        d.set_options(Options { partial: true, ..Options::default() });
         let (pieces, missing) = d.translate_sentences(b"Labor ends.  Greed went home.  Labor ends.");
         assert_eq!(missing, vec![b"Greed went home.".to_vec()], "缺的句子照樣回報，給未翻譯紀錄");
         let pieces = pieces.expect("至少一句有譯文");

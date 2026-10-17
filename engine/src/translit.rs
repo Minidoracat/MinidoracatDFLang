@@ -1,4 +1,4 @@
-//! 原生語言名字的音譯（設定視窗的「原生語言的名字音譯」，載入 translit.tsv 才開）。
+//! 原生語言名字的音譯（設定視窗的「原生語言的名字音譯」，隨時可開關，見 set_on）。
 //!
 //! 原名（矮人語、精靈語、哥布林語、人類語的字：Urist、Rigòth Nildum）沒有中文字義可查，照拼法切成音節再查音譯表
 //! （data/translit/translit.tsv）：子音（th、sh 這類雙字母算一個）接母音是一節；母音後面的 n（或 ng）不接母音時
@@ -7,37 +7,54 @@
 //! 名字裡有一節查不到（MOD 加的語言用了表上沒有的拼法）就整個名字照原文。
 
 use std::collections::HashMap;
-use std::sync::OnceLock;
+use std::sync::Arc;
+use std::sync::atomic::{AtomicBool, Ordering};
+
+use parking_lot::RwLock;
 
 use crate::cp437;
 
 /// 音節（小寫 ASCII，如 ba、ban、th）→ 中文
 pub type Table = HashMap<Vec<u8>, String>;
 
-static TABLE: OnceLock<Table> = OnceLock::new();
+/// 目前語言的音譯表（切換語言時換一份，見 lib.rs 的 load_translit）
+static TABLE: RwLock<Option<Arc<Table>>> = RwLock::new(None);
+/// 名字音譯開著（設定視窗的選項）
+static ON: AtomicBool = AtomicBool::new(false);
 
-/// 讀 `音節<TAB>中文` 一行一條；回傳載入條數。只能載入一次（遊戲啟動時，選項開著才載）。
-pub fn load(content: &str) -> usize {
-    let table: Table = content
+/// 讀 `音節<TAB>中文` 一行一條。
+pub fn parse(content: &str) -> Table {
+    content
         .lines()
         .filter_map(|line| {
             let (key, zh) = line.split_once('\t')?;
             (!key.is_empty() && !zh.is_empty()).then(|| (key.as_bytes().to_vec(), zh.to_owned()))
         })
-        .collect();
-    let n = table.len();
-    let _ = TABLE.set(table);
-    n
+        .collect()
 }
 
-/// 音譯表（選項關著時是 None）
-pub fn table() -> Option<&'static Table> {
-    TABLE.get()
+/// 換成這一份音譯表（目前語言的）
+pub fn set_table(table: Arc<Table>) {
+    *TABLE.write() = Some(table);
+}
+
+/// 名字音譯開關
+pub fn set_on(on: bool) {
+    ON.store(on, Ordering::Release);
+}
+
+/// 音譯表（選項關著、或還沒載入時是 None）
+pub fn table() -> Option<Arc<Table>> {
+    if !ON.load(Ordering::Acquire) {
+        return None;
+    }
+    TABLE.read().clone()
 }
 
 /// 原文名字（CP437，以空白隔開的幾個字）的音譯；選項關著、或有字譯不出來時回傳 None。
 pub fn name(native: &[u8]) -> Option<String> {
-    name_with(TABLE.get()?, native)
+    let table = table()?;
+    name_with(&table, native)
 }
 
 /// 同 name，音譯表由呼叫端給（測試用，免得動到全域的表）。

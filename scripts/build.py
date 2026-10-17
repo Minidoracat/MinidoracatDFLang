@@ -2,13 +2,14 @@
 # requires-python = ">=3.11"
 # dependencies = ["fonttools>=4.50"]
 # ///
-"""組出繁、簡兩個工作坊包到 dist/<folder>/（內容就是上傳到工作坊的資料夾）。
+"""組出繁、簡兩種語言合在一起的工作坊包到 dist/<folder>/（內容就是上傳到工作坊的資料夾）；遊戲裡由載入器挑語言
+（第一次啟動照系統判斷，設定視窗可以隨時切換）。
 
-每包內容：info.txt、scripts_modinstalled/（載入器與 dflang 指令）、dflang/（引擎 DLL、整句字典 strings.tsv、
-句型規則 rules.tsv、依畫面套用的整句 screens.tsv、名稱字表 names.tsv、名字音譯表 translit.tsv、字型子集、特徵碼、標題畫面吉祥物 mascot.png、
-授權與致謝）。字型是 workshop.json 指定的思源黑體（Noto Sans CJK）Bold 與 Regular 兩種字重（fonts 的 bold、regular，各自 dflang/fonts/<字重>/），
-都只留本包譯文、名字音譯表與吉祥物標籤（mascot_label）用到的非 CP437 字；每種字重的第一份字型沒有的字依清單順序補成第二、第三份字型，
-任一字重有字全部都沒有就建置失敗。
+包的內容：info.txt、scripts_modinstalled/（載入器、停用簡中項目的同名腳本與 dflang 指令）、dflang/（兩種語言共用的引擎 DLL、特徵碼、
+標題畫面吉祥物 mascot.png、授權與致謝；每種語言各一個 dflang/<語言>/：整句字典 strings.tsv、句型規則 rules.tsv、依畫面套用的整句 screens.tsv、
+名稱字表 names.tsv、名字音譯表 translit.tsv、字型子集）。字型是 workshop.json 每種語言指定的思源黑體（Noto Sans CJK）Bold 與 Regular 兩種字重
+（fonts 的 bold、regular，各自 dflang/<語言>/fonts/<字重>/），都只留該語言譯文、名字音譯表與吉祥物標籤（mascot_label）用到的非 CP437 字；
+每種字重的第一份字型沒有的字依清單順序補成第二、第三份字型，任一字重有字全部都沒有就建置失敗。
 引擎在遊戲啟動時依當下的文字格大小把玩家選的字重（dfhack-config/dflang.json 的 bold，預設粗體）畫成字圖集，所以字型檔就是字圖的唯一來源。
 
 用法（repo 根目錄）：
@@ -33,14 +34,18 @@ from cp437 import BYTE_OF
 ROOT = Path(__file__).resolve().parents[1]
 DIST = ROOT / "dist"
 KINDS = ("strings", "rules", "screens")
-# workshop.json 每包的 fonts 要有的字重，也是 dist 的 dflang/fonts/ 底下的資料夾名（lua/loader.lua 照這兩個名字找）
+# workshop.json 每種語言的 fonts 要有的字重，也是 dist 的 dflang/<語言>/fonts/ 底下的資料夾名（lua/loader.lua 照這兩個名字找）
 WEIGHTS = ("bold", "regular")
 FONTS = ROOT / "temp/fonts"
 FONT_LICENSE_URL = "https://raw.githubusercontent.com/notofonts/noto-cjk/main/Sans/LICENSE"
+# 沿用原繁中包的載入器檔名：DFHack overlay 小工具名稱與玩家存下的位置（dflang_zh_hant.mascot、.hint）不變
+LOADER = "dflang_zh_hant.lua"
+# 和停用的簡中項目的載入器同名：DFHack 同名腳本只執行腳本路徑上的第一份，本包排在前面，停用項目的載入器就不會一起跑
+RETIRED_LOADER = "dflang_zh_hans.lua"
 PACKAGE_LICENSE = """程式（dflang/dflang.dll、scripts_modinstalled/*.lua）：MIT License，全文附在下方。
 dflang.dll 靜態連結的開源 Rust 套件（字型解析、PNG、函式 hook 等）：各自的授權與著作權聲明見 THIRD-PARTY-LICENSES.txt。
-譯文（dflang/strings.tsv、dflang/rules.tsv、dflang/screens.tsv）：CC BY 4.0，https://creativecommons.org/licenses/by/4.0/
-字型（dflang/fonts/）：SIL Open Font License 1.1，全文見 LICENSE-fonts.txt。
+譯文（dflang/<語言>/strings.tsv、rules.tsv、screens.tsv）：CC BY 4.0，https://creativecommons.org/licenses/by/4.0/
+字型（dflang/<語言>/fonts/）：SIL Open Font License 1.1，全文見 LICENSE-fonts.txt。
 吉祥物圖（dflang/mascot.png）：© Minidoracat，保留所有權利，不適用上述授權。
 
 """
@@ -119,7 +124,7 @@ def screen_of(file: str) -> str:
 
 
 def dict_lines(kind: str, rows: list[dict], lang: str) -> str:
-    """dist 的 dflang/<kind>.tsv：原文<TAB>譯文<TAB>對齊；screens 前面多一欄畫面、後面多一欄限定列。沒有譯文的列不放；
+    """dist 的 dflang/<語言>/<kind>.tsv：原文<TAB>譯文<TAB>對齊；screens 前面多一欄畫面、後面多一欄限定列。沒有譯文的列不放；
     screens 原文寫 `*` 的列（這個畫面的全小寫字串照原文）不看譯文欄，一律放。"""
     def line(r: dict) -> str:
         if kind == "screens":
@@ -129,12 +134,12 @@ def dict_lines(kind: str, rows: list[dict], lang: str) -> str:
 
 
 def name_lines(rows: list[dict], lang: str) -> str:
-    """dist 的 dflang/names.tsv：字的代號<TAB>詞性<TAB>中文<TAB>英文詞形（世界生成名稱的字表；英文詞形給書名的隨機字用，見引擎 names.rs）。"""
+    """dist 的 dflang/<語言>/names.tsv：字的代號<TAB>詞性<TAB>中文<TAB>英文詞形（世界生成名稱的字表；英文詞形給書名的隨機字用，見引擎 names.rs）。"""
     return "".join(f"{r['word']}\t{r['pos']}\t{r[lang]}\t{r['en']}\n" for r in rows if r[lang].strip())
 
 
 def translit_lines(rows: list[dict], lang: str) -> str:
-    """dist 的 dflang/translit.tsv：音節<TAB>中文（原生語言名字的音譯表，設定視窗的名字音譯開著才載入，見引擎 translit.rs）。"""
+    """dist 的 dflang/<語言>/translit.tsv：音節<TAB>中文（原生語言名字的音譯表，設定視窗的名字音譯開著才載入，見引擎 translit.rs）。"""
     return "".join(f"{r['en']}\t{r[lang]}\n" for r in rows if r[lang].strip())
 
 
@@ -174,17 +179,17 @@ def build_engine() -> Path:
     return ROOT / "engine/target/release/dflang.dll"
 
 
-def info_txt(item: dict, config: dict) -> str:
+def info_txt(config: dict) -> str:
     version = config["version"]
     return "".join(f"[{k}:{v}]\n" for k, v in [
-        ("ID", item["id"]),
+        ("ID", config["id"]),
         ("NUMERIC_VERSION", version["numeric"]),
         ("DISPLAYED_VERSION", version["displayed"]),
         ("EARLIEST_COMPATIBLE_NUMERIC_VERSION", version["earliest_compatible_numeric"]),
         ("EARLIEST_COMPATIBLE_DISPLAYED_VERSION", version["earliest_compatible_displayed"]),
         ("AUTHOR", config["author"]),
-        ("NAME", item["name"]),
-        ("DESCRIPTION", item["description"]),
+        ("NAME", config["name"]),
+        ("DESCRIPTION", config["description"]),
     ])
 
 
@@ -193,27 +198,18 @@ def write_text(path: Path, text: str) -> None:
     path.write_text(text, encoding="utf-8", newline="\n")
 
 
-def build_item(item: dict, config: dict, texts: dict[str, list[dict]], names: list[dict], translit: list[dict], dll: Path,
-               notices: str) -> int:
-    lang = item["lang"]
+def build_language(language: dict, config: dict, texts: dict[str, list[dict]], names: list[dict], translit: list[dict],
+                   data: Path) -> int:
+    """一種語言的 dflang/<語言>/：字典、句型、名稱字表、音譯表與字型子集。"""
+    lang = language["lang"]
     chars = sorted({c for rows in [*texts.values(), names, translit] for r in rows for c in r[lang] if c not in BYTE_OF})
-    out = DIST / item["folder"]
-    try:
-        if out.exists():
-            shutil.rmtree(out)
-    except PermissionError as e:
-        print(f"FAIL {lang}: 無法清除 {out}（遊戲執行中會鎖住 dflang.dll，先關遊戲）：{e}", file=sys.stderr)
-        return 1
-    data = out / "dflang"
-    data.mkdir(parents=True)
-
     # 標題畫面吉祥物的名牌（語言標籤、作者名）由引擎在遊戲裡用粗體子集畫（不跟著字重設定），字型子集也要有這些字（含英數）；
     # 整句貼圖把遊戲畫的英數、空白、CP437 的拉丁字母（矮人名字的 ë、ü…）、♂♀ 與譯名的間隔號 ·
     # 也用玩家選的字重畫，和引擎 overlay.rs 的 is_text 同一組。兩種字重用同一份字集，切換字重不會少字
     ascii = "".join(map(chr, range(0x20, 0x7F))) + "ÇüéâäàåçêëèïîìÄÅÉæÆôöòûùÿÖÜáíóúñÑ♂♀·"
-    tag_chars = [c for c in dict.fromkeys(item["mascot_label"] + config["author"] + ascii) if c not in chars]
+    tag_chars = [c for c in dict.fromkeys(language["mascot_label"] + config["author"] + ascii) if c not in chars]
     for weight in WEIGHTS:
-        missing = subset_fonts(chars + tag_chars, item["fonts"][weight], data / "fonts" / weight)
+        missing = subset_fonts(chars + tag_chars, language["fonts"][weight], data / "fonts" / weight)
         if missing:
             print(f"FAIL {lang}: {weight} 沒有字型能畫 {''.join(missing)}", file=sys.stderr)
             return 1
@@ -222,6 +218,26 @@ def build_item(item: dict, config: dict, texts: dict[str, list[dict]], names: li
         write_text(data / f"{kind}.tsv", dict_lines(kind, texts[kind], lang))
     write_text(data / "names.tsv", name_lines(names, lang))
     write_text(data / "translit.tsv", translit_lines(translit, lang))
+    counts = "、".join(f"{sum(1 for r in texts[kind] if r[lang].strip())} 條{name}"
+                      for kind, name in zip(KINDS, ("譯文", "句型", "依畫面譯文")))
+    print(f"{lang}: {counts}、{sum(1 for r in names if r[lang].strip())} 個名稱用字、{len(chars)} 個字 -> {data.relative_to(ROOT)}")
+    return 0
+
+
+def build(config: dict, texts: dict[str, list[dict]], names: list[dict], translit: list[dict], dll: Path, notices: str) -> int:
+    out = DIST / config["folder"]
+    try:
+        if out.exists():
+            shutil.rmtree(out)
+    except PermissionError as e:
+        print(f"FAIL: 無法清除 {out}（遊戲執行中會鎖住 dflang.dll，先關遊戲）：{e}", file=sys.stderr)
+        return 1
+    data = out / "dflang"
+    data.mkdir(parents=True)
+    for language in config["languages"]:
+        if build_language(language, config, texts, names, translit, data / language["lang"]):
+            return 1
+
     patterns = (ROOT / "engine/patterns.tsv").read_text(encoding="utf-8").splitlines()
     write_text(data / "patterns.tsv", "".join(f"{line}\n" for line in patterns if line and not line.startswith("#")))
     shutil.copy2(dll, data / "dflang.dll")
@@ -231,16 +247,14 @@ def build_item(item: dict, config: dict, texts: dict[str, list[dict]], names: li
     shutil.copy2(ROOT / "CREDITS.md", data / "CREDITS.md")
     shutil.copy2(ROOT / "art/mascot.png", data / "mascot.png")
 
-    suffix = lang.lower().replace("-", "_")
+    langs = ", ".join(f"{{lang = '{x['lang']}', label = '{x['mascot_label']}'}}" for x in config["languages"])
     loader = ((ROOT / "lua/loader.lua").read_text(encoding="utf-8")
-              .replace("@LANG@", lang).replace("@MOD_ID@", item["id"]).replace("@VERSION@", config["version"]["displayed"])
-              .replace("@MASCOT_LABEL@", item["mascot_label"]).replace("@AUTHOR@", config["author"]))
-    write_text(out / f"scripts_modinstalled/dflang_{suffix}.lua", loader)
+              .replace("@MOD_ID@", config["id"]).replace("@VERSION@", config["version"]["displayed"])
+              .replace("@AUTHOR@", config["author"]).replace("@LANGS@", f"{{{langs}}}"))
+    write_text(out / "scripts_modinstalled" / LOADER, loader)
+    shutil.copy2(ROOT / "lua/retired_zh_hans.lua", out / "scripts_modinstalled" / RETIRED_LOADER)
     shutil.copy2(ROOT / "lua/dflang.lua", out / "scripts_modinstalled/dflang.lua")
-    write_text(out / "info.txt", info_txt(item, config))
-    counts = "、".join(f"{sum(1 for r in texts[kind] if r[lang].strip())} 條{name}"
-                      for kind, name in zip(KINDS, ("譯文", "句型", "依畫面譯文")))
-    print(f"{lang}: {counts}、{sum(1 for r in names if r[lang].strip())} 個名稱用字、{len(chars)} 個字 -> {out.relative_to(ROOT)}")
+    write_text(out / "info.txt", info_txt(config))
     return 0
 
 
@@ -256,8 +270,7 @@ def main() -> int:
     texts = {kind: read_rows(kind) for kind in KINDS}
     names = read_rows("names")
     translit = read_rows("translit")
-    notices = third_party_licenses()
-    return max(build_item(item, config, texts, names, translit, dll, notices) for item in config["items"])
+    return build(config, texts, names, translit, dll, third_party_licenses())
 
 
 if __name__ == "__main__":

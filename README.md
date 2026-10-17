@@ -1,17 +1,17 @@
 # MinidoracatDFLang
 
-《矮人要塞》（Dwarf Fortress，Steam 版）的繁體中文與簡體中文化。翻譯引擎、字典與字型都是本專案自己做的，裝好 DFHack、訂閱一個工作坊項目就能玩。
+《矮人要塞》（Dwarf Fortress，Steam 版）的繁體中文與簡體中文化。翻譯引擎、字典與字型都是本專案自己做的，裝好 DFHack、訂閱工作坊項目就能玩；繁簡都在同一個項目裡，遊戲中隨時切換。
 
 繁體中文與簡體中文是分開、逐句翻譯的：繁中用台灣用語，簡中用中國大陸用語，不是用工具互相轉換。
 
-- 工作坊：[繁體中文](https://steamcommunity.com/sharedfiles/filedetails/?id=3820630135)、[简体中文](https://steamcommunity.com/sharedfiles/filedetails/?id=3820630318)
-- 目前版本 0.4.0（Dwarf Fortress 53.16＋DFHack 53.16-r2），各版本的變更見 [CHANGELOG.md](CHANGELOG.md)
+- 工作坊：[繁體／簡體中文](https://steamcommunity.com/sharedfiles/filedetails/?id=3820630135)（原本的[簡體中文項目](https://steamcommunity.com/sharedfiles/filedetails/?id=3820630318)已合併進來，停在 0.4.0）
+- 目前版本 0.5.0（Dwarf Fortress 53.16＋DFHack 53.16-r2），各版本的變更見 [CHANGELOG.md](CHANGELOG.md)
 
 ## 安裝
 
 1. Steam 安裝 [DFHack](https://store.steampowered.com/app/2346660/)（免費）。
-2. 訂閱繁中或簡中項目，正常啟動遊戲，標題畫面就是中文。建立新世界時不用勾選本 MOD。
-3. 兩個都訂閱時預設繁中，可以在設定視窗切換。
+2. 訂閱本 MOD，正常啟動遊戲，標題畫面就是中文。建立新世界時不用勾選本 MOD。
+3. 第一次啟動時照 Steam 的介面語言選繁中或簡中（Steam 不是中文時看 Windows 的顯示語言與地區格式，都不是中文時用繁中）；想換就在設定視窗切換，之後會記住。
 
 ## 翻譯範圍
 
@@ -34,7 +34,7 @@
 | 項目 | 說明 | 預設 |
 |---|---|---|
 | 顯示中文 | 關掉暫時改看英文 | 開 |
-| 語言 | 繁中、簡中都訂閱時切換 | 繁中 |
+| 語言 | 繁中或簡中；沒選過時照 Steam 或 Windows 的語言 | 照系統 |
 | 整句貼圖 | 照字型的實際字寬整行畫字，調整視窗或介面縮放後也清楚；和其他改畫面的 MOD 衝突時可以關掉，改回一字兩格的舊畫法 | 開 |
 | 中文字型大小 | 13～16（格高的十六分之幾），數字越大字越大 | 14 |
 | 粗體字 | 關掉改用一般粗細 | 開 |
@@ -44,7 +44,7 @@
 | 段落缺句時其餘照翻 | 一整段有句子沒翻到時，翻得出來的先顯示中文（關著時整段照英文） | 關 |
 | 記錄未翻譯的字 | 見下方「回報問題」 | 關 |
 
-「顯示中文」與「記錄未翻譯的字」立即生效，其他改了要重開遊戲，視窗會以黃字提示。DFHack 主控台的 `dflang` 指令也能改這些設定（`dflang` 不加參數看用法）。快捷鍵只在遊戲執行時註冊，想換鍵用 DFHack 的 `gui/keybinds`；標題畫面的吉祥物與提示可以用 `gui/overlay` 移動或關掉（`dflang_zh_hant.mascot`、`dflang_zh_hant.hint`，簡中包是 `dflang_zh_hans.*`）。
+設定改了立即生效，不用重開遊戲，畫面上已經排好的長文（彈出視窗、人物頁的性格、傳說頁）也跟著換。只有在語言選「其他翻譯 MOD」（改用 DFI18n、DFCN）時要重開，視窗會以黃字提示。遊戲正在讀取時，以及打開過「建立新世界」的設定畫面之後，換語言與粗體字可能要等載入或建立世界後才自動切換，其他設定照樣立即生效，視窗同樣以黃字提示。DFHack 主控台的 `dflang` 指令也能改這些設定（`dflang` 不加參數看用法）。快捷鍵只在遊戲執行時註冊，想換鍵用 DFHack 的 `gui/keybinds`；標題畫面的吉祥物與提示可以用 `gui/overlay` 移動或關掉（`dflang_zh_hant.mascot`、`dflang_zh_hant.hint`）。
 
 ## 和其他翻譯 MOD 一起裝時：本 MOD 優先讓位
 
@@ -93,9 +93,9 @@ data/screens/*.tsv         依畫面譯文：檔名是 DFHack 焦點字串的開
 glossary/terms.tsv         術語表；locale.tsv 兩岸用語規則
 art/mascot.png             標題畫面吉祥物（透明背景 RGBA PNG；名牌文字由引擎在遊戲裡畫）
 engine/                    Rust 引擎（cdylib dflang.dll）與特徵碼 patterns.tsv
-lua/                       DFHack 載入器範本與 dflang 指令
+lua/                       DFHack 載入器範本、dflang 指令、蓋掉舊簡中項目載入器的空檔（retired_zh_hans.lua）
 scripts/
-  build.py                 組出 dist/ 下的兩個工作坊包（含編譯引擎、裁字型）
+  build.py                 組出 dist/ 下的工作坊包（繁簡兩種語言各一個資料夾；含編譯引擎、裁字型）
   gen_events.py            由 data/events 產生事件句的句型（日期、原因的各種組合）
   verify_mod.py            發版前驗證閘門
   terms.py                 術語一致與兩岸用語檢查
@@ -103,10 +103,10 @@ scripts/
   inventory.py             全文盤點：分類全部遊戲文字、對照實機紀錄，排出待翻清單（temp/inventory/）
   dev_game.py              本機實機測試：掛包、啟動、下指令、量分頁置中、還原
   dev-play.cmd             啟動器（雙擊）：建置、開遊戲，遊戲關掉後自動還原
-  publish_workshop.py      兩包各自上傳工作坊（預設只檢查）
+  publish_workshop.py      上傳工作坊（預設只檢查；標題與說明分繁簡兩種語系）
   make_patterns.py         產生／驗證特徵碼
   df_snapshot.py           遊戲文字盤點與 Ghidra 反編譯快照（產物在 repo 外，不公開）
-  workshop.json            兩個工作坊項目的設定與版本號
+  workshop.json            工作坊項目的設定、兩種語言與版本號
 docs/                      分析、翻譯指南、工作坊說明與每版的更新說明（steam/）
 CHANGELOG.md               各版本的變更（發版前先記）
 dist/                      建置產物（不進 git）
@@ -119,26 +119,27 @@ dist/                      建置產物（不進 git）
 ```bash
 uv run scripts/build.py --fetch-fonts         # 首次：下載思源黑體到 temp/fonts/
 uv run scripts/gen_events.py                  # 改過 data/events 後重產事件句型
-uv run scripts/build.py                       # 建置兩包（遊戲要先關：執行中會鎖住 DLL）
+uv run scripts/build.py                       # 建置（遊戲要先關：執行中會鎖住 DLL）
 uv run scripts/verify_mod.py                  # 必須全部 PASS
 uv run scripts/terms.py check                 # 術語與兩岸用語
 cargo test --manifest-path engine/Cargo.toml --lib   # 引擎的單元測試
 uv run scripts/inventory.py                   # 待翻清單（需要反編譯快照）
 uv run scripts/dev_game.py play               # 啟動器：建置、掛進遊戲並啟動，遊戲關掉後自動還原（scripts/dev-play.cmd 雙擊同）
-uv run scripts/dev_game.py up --lang both     # 掛進遊戲並啟動
+uv run scripts/dev_game.py up --lang auto     # 掛進遊戲並啟動（auto 照系統判斷語言，也可指定 zh-Hant、zh-Hans）
 uv run scripts/dev_game.py run dflang status
 uv run scripts/dev_game.py sweep              # 從目前畫面把分頁一路點開，量分頁標籤置中、收集未翻譯紀錄
 uv run scripts/dev_game.py down               # 關遊戲、還原 mods/ 與設定
 ```
 
-遊戲更新後先跑 `uv run scripts/make_patterns.py --check`。特徵碼找不到函式時引擎不啟動、遊戲維持英文，DFHack 主控台顯示 `[DFLang zh-Hant] addst 的特徵碼命中 0 次，這版遊戲可能還不支援`。重新定位的步驟見 [docs/analysis.md](docs/analysis.md) 的「遊戲更新」。
+遊戲更新後先跑 `uv run scripts/make_patterns.py --check`。特徵碼找不到函式時引擎不啟動、遊戲維持英文，DFHack 主控台顯示 `[DFLang] addst 的特徵碼命中 0 次，這版遊戲可能還不支援`。重新定位的步驟見 [docs/analysis.md](docs/analysis.md) 的「遊戲更新」。
 
-發布（要先取得維護者同意）：改 `scripts/workshop.json` 的版本號，在 [CHANGELOG.md](CHANGELOG.md) 記這一版，再整理成兩包的工作坊更新說明 `docs/steam/changelog-zh-Hant.bbcode`、`changelog-zh-Hans.bbcode`（只放這一版，第一行要有版本號），上傳腳本會檢查兩者都有這一版。
+發布（要先取得維護者同意）：改 `scripts/workshop.json` 的版本號，在 [CHANGELOG.md](CHANGELOG.md) 記這一版，再整理成繁簡兩份工作坊更新說明 `docs/steam/changelog-zh-Hant.bbcode`、`changelog-zh-Hans.bbcode`（只放這一版，第一行要有版本號），上傳腳本會檢查兩者都有這一版，上傳時兩份接在一起。
 
 ```bash
-uv run scripts/publish_workshop.py --item all [--screenshots] --yes             # 兩包各自上傳，更新說明讀各包的 changelog 檔
-uv run scripts/publish_workshop.py --item all --description-only --yes          # 只改了 docs/steam/*.bbcode 的說明：只換說明，不算發布新版
-git tag -a v0.4.0 -m "0.4.0" && git push origin v0.4.0                         # 每次發布都打 tag，版本號照 workshop.json
+uv run scripts/publish_workshop.py [--screenshots] --yes             # 上傳內容、封面、繁簡兩種語系的標題與說明、更新說明
+uv run scripts/publish_workshop.py --description-only --yes          # 只改了 docs/steam/*.bbcode 的說明：只換說明，不算發布新版
+uv run scripts/publish_workshop.py --retire --yes                    # 已合併的簡中項目：換成「已合併、請改訂閱」的標題與說明
+git tag -a v0.5.0 -m "0.5.0" && git push origin v0.5.0                         # 每次發布都打 tag，版本號照 workshop.json
 ```
 
 ## 授權

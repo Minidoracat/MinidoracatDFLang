@@ -2,9 +2,11 @@
 //!
 //! DFHack 的 Lua 以 `package.loadlib(dll, "luaopen_dflang")` 載入，回傳一張函式表；
 //! 不連結 dfhack.dll，所以不綁 DFHack 版本，也不依賴其他 MOD。載入順序（見 lua/loader.lua）：
-//! set_layout／set_mtb_layout／set_ctb_layout／set_fonts → render_atlas → set_glyphs → set_options → load／load_rules／load_screens
-//! （名字音譯開著時再 load_translit）→ scan/attach → enable（enable 時補登記遊戲啟動時就切好的提示文字，見 lines.rs）；
-//! 之後每幀 set_focus（依畫面套用的譯文用）。dict、ctb 也給 examples/t.rs（離線查譯文）用。
+//! set_layout／set_mtb_layout／set_ctb_layout／set_fonts → render_atlas → set_typeface → set_glyphs → set_options
+//! → load／load_rules／load_screens → commit → load_names／load_translit → scan/attach → enable
+//! （enable 時補登記遊戲啟動時就切好的提示文字，見 lines.rs）；之後每幀 set_focus（依畫面套用的譯文用）。
+//! 設定視窗的選項隨時可改：set_options、set_translit、set_overlay、set_typeface（字重、字的大小），換語言時
+//! use_dict（或載入另一種語言的字典再 commit）、load_names、load_translit，最後 refresh。dict、ctb 也給 examples/t.rs（離線查譯文）用。
 
 mod atlas;
 pub mod cp437;
@@ -13,6 +15,7 @@ pub mod dict;
 mod hooks;
 mod image;
 mod lines;
+mod locale;
 mod lua;
 mod metrics;
 mod mtb;
@@ -21,16 +24,25 @@ mod overlay;
 mod scan;
 mod translit;
 
+use std::collections::HashMap;
 use std::ffi::{c_int, CStr};
 use std::sync::atomic::{AtomicUsize, Ordering};
+use std::sync::{Arc, LazyLock};
 
 use parking_lot::Mutex;
 
 use dict::Dict;
 use hooks::{Layer, Layout};
 
-/// 載入中、尚未啟用的字典；enable 時才交給 hook。
+/// 載入中、尚未啟用的字典；commit（或 enable）時才交給 hook。
 static STAGING: Mutex<Option<Dict>> = Mutex::new(None);
+/// 交給過 hook 的字典（依資料夾）：換語言時換成另一份（use_dict），換下來的照留，遊戲執行緒可能還在讀；
+/// 一種語言一份，份數有上限
+static LOADED: Mutex<Vec<(String, Box<Dict>)>> = Mutex::new(Vec::new());
+/// 讀過的字型、名稱字表、音譯表（依檔案路徑）：切回來直接用。語言、字重各兩種，份數有上限
+static TYPEFACES: LazyLock<Mutex<HashMap<String, Arc<Vec<atlas::Font>>>>> = LazyLock::new(|| Mutex::new(HashMap::new()));
+static NAME_TABLES: LazyLock<Mutex<HashMap<String, names::WordTable>>> = LazyLock::new(|| Mutex::new(HashMap::new()));
+static TRANSLIT_TABLES: LazyLock<Mutex<HashMap<String, Arc<translit::Table>>>> = LazyLock::new(|| Mutex::new(HashMap::new()));
 /// 遊戲啟動時就切好、而且有譯文的提示句數（status 顯示）
 static STATIC_WRAPS: AtomicUsize = AtomicUsize::new(0);
 
@@ -47,7 +59,9 @@ pub unsafe extern "C" fn luaopen_dflang(l: lua::State) -> c_int {
         lua::set_fn(l, c"set_name_layout", set_name_layout);
         lua::set_fn(l, c"load_names", load_names);
         lua::set_fn(l, c"load_translit", load_translit);
+        lua::set_fn(l, c"set_translit", set_translit);
         lua::set_fn(l, c"set_options", set_options);
+        lua::set_fn(l, c"set_typeface", set_typeface);
         lua::set_fn(l, c"render_atlas", render_atlas);
         lua::set_fn(l, c"render_mascot", render_mascot);
         lua::set_fn(l, c"set_glyphs", set_glyphs);
@@ -60,6 +74,9 @@ pub unsafe extern "C" fn luaopen_dflang(l: lua::State) -> c_int {
         lua::set_fn(l, c"attach", attach);
         lua::set_fn(l, c"enable", enable);
         lua::set_fn(l, c"disable", disable);
+        lua::set_fn(l, c"commit", commit);
+        lua::set_fn(l, c"use_dict", use_dict);
+        lua::set_fn(l, c"refresh", refresh);
         lua::set_fn(l, c"status", status);
         lua::set_fn(l, c"translate", translate);
         lua::set_fn(l, c"log_misses", log_misses);
@@ -72,6 +89,18 @@ pub unsafe extern "C" fn luaopen_dflang(l: lua::State) -> c_int {
         lua::set_fn(l, c"overlay_dump", overlay_dump);
         lua::set_fn(l, c"dh_plain", dh_plain);
         lua::set_fn(l, c"english_at", english_at);
+        lua::set_fn(l, c"system_lang", system_lang);
+    }
+    1
+}
+
+/// system_lang() → 'zh-Hant'、'zh-Hans' 或 nil：玩家還沒選過語言時照 Steam 介面語言、Windows 顯示語言與地區格式判斷（見 locale.rs）
+unsafe extern "C" fn system_lang(l: lua::State) -> c_int {
+    unsafe {
+        match locale::system_lang() {
+            Some(lang) => lua::push_str(l, lang),
+            None => lua::push_nil(l),
+        }
     }
     1
 }
@@ -119,7 +148,8 @@ unsafe extern "C" fn overlay_install(l: lua::State) -> c_int {
     }
 }
 
-/// set_overlay(1 或 0)：整句貼圖開關，遊戲啟動時（啟用引擎前）呼叫一次：段落換行與替身字串也跟著改用字型的實際字寬（見 metrics.rs）
+/// set_overlay(1 或 0)：整句貼圖開關，隨時可切：段落換行與替身字串也跟著改用字型的實際字寬（見 metrics.rs）；
+/// 遊戲中途切換後要 refresh
 unsafe extern "C" fn set_overlay(l: lua::State) -> c_int {
     unsafe {
         let on = lua::arg_int(l, 1).is_some_and(|v| v != 0);
@@ -289,36 +319,56 @@ unsafe extern "C" fn set_name_layout(l: lua::State) -> c_int {
     }
 }
 
-/// load_names(路徑) → 載入條數（世界生成名稱的字表：代號<TAB>詞性<TAB>中文）
+/// load_names(路徑) → 字數（世界生成名稱的字表：代號<TAB>詞性<TAB>中文），換成這一份（換語言時載另一種語言的）
 unsafe extern "C" fn load_names(l: lua::State) -> c_int {
     unsafe {
         let Some(path) = lua::arg_str(l, 1) else { return fail(l, "load_names: expects a path") };
-        match std::fs::read_to_string(path) {
-            Ok(content) => {
-                lua::push_int(l, names::load_words(&content) as i64);
-                1
+        let mut tables = NAME_TABLES.lock();
+        if !tables.contains_key(path) {
+            match std::fs::read_to_string(path) {
+                Ok(content) => {
+                    tables.insert(path.to_owned(), names::parse_table(&content));
+                }
+                Err(e) => return fail(l, &format!("load_names: {e}")),
             }
-            Err(e) => fail(l, &format!("load_names: {e}")),
         }
+        let table = &tables[path];
+        names::set_table(table);
+        lua::push_int(l, table.word_count() as i64);
+        1
     }
 }
 
-/// load_translit(路徑) → 載入條數（名字音譯表：音節<TAB>中文，見 translit.rs；設定視窗的名字音譯開著才載）
+/// load_translit(路徑) → 音節數（名字音譯表：音節<TAB>中文，見 translit.rs），換成這一份；開關另見 set_translit
 unsafe extern "C" fn load_translit(l: lua::State) -> c_int {
     unsafe {
         let Some(path) = lua::arg_str(l, 1) else { return fail(l, "load_translit: expects a path") };
-        match std::fs::read_to_string(path) {
-            Ok(content) => {
-                lua::push_int(l, translit::load(&content) as i64);
-                1
+        let mut tables = TRANSLIT_TABLES.lock();
+        if !tables.contains_key(path) {
+            match std::fs::read_to_string(path) {
+                Ok(content) => {
+                    tables.insert(path.to_owned(), Arc::new(translit::parse(&content)));
+                }
+                Err(e) => return fail(l, &format!("load_translit: {e}")),
             }
-            Err(e) => fail(l, &format!("load_translit: {e}")),
         }
+        let table = tables[path].clone();
+        lua::push_int(l, table.len() as i64);
+        translit::set_table(table);
+        1
+    }
+}
+
+/// set_translit(1 或 0)：名字音譯開關（設定視窗的選項），隨時可切；遊戲中途切換後要 refresh
+unsafe extern "C" fn set_translit(l: lua::State) -> c_int {
+    unsafe {
+        translit::set_on(lua::arg_int(l, 1).is_some_and(|v| v != 0));
+        ok(l)
     }
 }
 
 /// set_options{keys, music, partial = 1 或 0}：設定視窗的選項（按鍵名、配樂曲名翻成中文，段落缺句時其餘照翻，見 dict::Options）。
-/// set_glyphs 之後、load 之前呼叫：按鍵名與曲名的條目在載入時就照選項取捨
+/// 交給已啟用的字典與載入中的字典（set_glyphs 之後）；遊戲中途改了要 refresh
 unsafe extern "C" fn set_options(l: lua::State) -> c_int {
     unsafe {
         if lua::arg_type(l, 1) != lua::TTABLE {
@@ -326,15 +376,31 @@ unsafe extern "C" fn set_options(l: lua::State) -> c_int {
         }
         let on = |name: &CStr| lua::field_int(l, 1, name) == Some(1);
         let options = dict::Options { keys: on(c"keys"), music: on(c"music"), partial: on(c"partial") };
-        let mut staging = STAGING.lock();
-        let Some(dict) = staging.as_mut() else { return fail(l, "set_options: call set_glyphs first") };
-        dict.options = options;
+        let staging = STAGING.lock();
+        if let Some(dict) = staging.as_ref() {
+            dict.set_options(options);
+        }
+        let dict = hooks::DICT.load(Ordering::Acquire);
+        if !dict.is_null() {
+            (*dict).set_options(options);
+        } else if staging.is_none() {
+            return fail(l, "set_options: call set_glyphs first");
+        }
         ok(l)
     }
 }
 
-/// render_atlas(輸出 PNG, 格寬, 格高, 字串, {字型路徑...}, 整句貼圖字身?) → 貼圖數, 沒有字型能畫的字
-/// 字身是十六分之幾格高（13～16，dflang overlay size），省略或超出範圍照預設（見 overlay::set_em）
+/// 第 i 個參數：字串陣列
+unsafe fn str_list(l: lua::State, i: c_int) -> Option<Vec<String>> {
+    unsafe {
+        if lua::arg_type(l, i) != lua::TTABLE {
+            return None;
+        }
+        (1..=lua::len(l, i) as i64).map(|k| lua::index_str(l, i, k)).collect()
+    }
+}
+
+/// render_atlas(輸出 PNG, 格寬, 格高, 字串, {字型路徑...}) → 貼圖數, 沒有字型能畫的字
 unsafe extern "C" fn render_atlas(l: lua::State) -> c_int {
     unsafe {
         let (Some(out), Some(cell_w), Some(cell_h), Some(chars)) =
@@ -342,23 +408,13 @@ unsafe extern "C" fn render_atlas(l: lua::State) -> c_int {
         else {
             return fail(l, "render_atlas: expects (png, cell_w, cell_h, chars, fonts)");
         };
-        if lua::arg_type(l, 5) != lua::TTABLE || cell_w < 1 || cell_h < 1 {
+        let Some(paths) = str_list(l, 5).filter(|_| cell_w >= 1 && cell_h >= 1) else {
             return fail(l, "render_atlas: bad cell size or font list");
-        }
-        let paths: Option<Vec<String>> = (1..=lua::len(l, 5) as i64).map(|i| lua::index_str(l, 5, i)).collect();
-        let Some(paths) = paths else { return fail(l, "render_atlas: font paths must be strings") };
+        };
         let paths: Vec<&str> = paths.iter().map(String::as_str).collect();
-        let _ = overlay::FONT_PATHS.set(paths.iter().map(|p| p.to_string()).collect());
-        if let Some(em) = lua::arg_int(l, 6).and_then(|v| u8::try_from(v).ok()) {
-            overlay::set_em(em);
-        }
         let result = atlas::load_fonts(&paths).and_then(|fonts| {
             let chars: Vec<char> = chars.chars().collect();
-            let report = atlas::render(&fonts, &chars, cell_w as usize, cell_h as usize, std::path::Path::new(out))?;
-            // 段落照字型實際字寬換行用（整句貼圖開著時，見 metrics.rs）：字圖集的字、英數與 CP437 的拉丁字母
-            let latin = (0x20u8..=0xff).filter(|&b| overlay::is_text(b)).map(|b| cp437::TABLE[b as usize]);
-            metrics::set_advances(atlas::advances(&fonts, chars.iter().copied().chain(latin), cell_w as usize, cell_h as usize, overlay::em_per_cell())?);
-            Ok(report)
+            atlas::render(&fonts, &chars, cell_w as usize, cell_h as usize, std::path::Path::new(out))
         });
         match result {
             Ok(report) => {
@@ -368,6 +424,41 @@ unsafe extern "C" fn render_atlas(l: lua::State) -> c_int {
             }
             Err(e) => fail(l, &e),
         }
+    }
+}
+
+/// set_typeface({字型路徑...}, 字串, 格寬, 格高, 字身?)：整句貼圖用的字型與字身（十六分之幾格高，13～16，見 overlay::set_em；
+/// 省略或超出範圍時不改），並照它量段落用的字寬（metrics.rs：字圖集的字、英數與 CP437 的拉丁字母）。
+/// 遊戲啟動時、換字重、字的大小或語言時呼叫；遊戲中途換了要 refresh
+unsafe extern "C" fn set_typeface(l: lua::State) -> c_int {
+    unsafe {
+        let (Some(paths), Some(chars), Some(cell_w), Some(cell_h)) = (str_list(l, 1), lua::arg_str(l, 2), lua::arg_int(l, 3), lua::arg_int(l, 4))
+        else {
+            return fail(l, "set_typeface: expects (fonts, chars, cell_w, cell_h, em)");
+        };
+        if cell_w < 1 || cell_h < 1 {
+            return fail(l, "set_typeface: bad cell size");
+        }
+        if let Some(em) = lua::arg_int(l, 5).and_then(|v| u8::try_from(v).ok()) {
+            overlay::set_em(em);
+        }
+        let key = paths.join("\n");
+        let cached = TYPEFACES.lock().get(&key).cloned();
+        let fonts = match cached {
+            Some(fonts) => fonts,
+            None => match atlas::load_fonts(&paths.iter().map(String::as_str).collect::<Vec<_>>()) {
+                Ok(fonts) => TYPEFACES.lock().entry(key).or_insert_with(|| Arc::new(fonts)).clone(),
+                Err(e) => return fail(l, &e),
+            },
+        };
+        let latin = (0x20u8..=0xff).filter(|&b| overlay::is_text(b)).map(|b| cp437::TABLE[b as usize]);
+        match atlas::advances(&fonts, chars.chars().chain(latin), cell_w as usize, cell_h as usize, overlay::em_per_cell()) {
+            Ok(advances) => metrics::set_advances(advances),
+            Err(e) => return fail(l, &e),
+        }
+        overlay::set_typeface(fonts);
+        metrics::set_compact(overlay::ON.load(Ordering::Acquire));
+        ok(l)
     }
 }
 
@@ -406,7 +497,8 @@ unsafe extern "C" fn render_mascot(l: lua::State) -> c_int {
     }
 }
 
-/// set_glyphs(字串, {texpos...})：字圖集裡依序的字，與每字八張貼圖的 texpos（左右兩格、半格位移的上下列、錨定標籤用；見 atlas::render）。
+/// set_glyphs(字串, {texpos...})：開始載入一份新字典：字圖集裡依序的字，與每字八張貼圖的 texpos
+/// （左右兩格、半格位移的上下列、錨定標籤用；見 atlas::render）。之前載入到一半的（換語言失敗的）丟掉。
 unsafe extern "C" fn set_glyphs(l: lua::State) -> c_int {
     unsafe {
         let Some(chars) = lua::arg_str(l, 1) else { return fail(l, "set_glyphs: arg 1 must be a UTF-8 string") };
@@ -422,7 +514,7 @@ unsafe extern "C" fn set_glyphs(l: lua::State) -> c_int {
             }
         }
         let mut staging = STAGING.lock();
-        let dict = staging.get_or_insert_with(Dict::default);
+        let dict = staging.insert(Dict::default());
         if !dict.set_glyphs(chars, texpos) {
             return fail(l, "set_glyphs: texpos count must be 8 times the glyph count");
         }
@@ -519,14 +611,33 @@ unsafe extern "C" fn attach(l: lua::State) -> c_int {
     }
 }
 
+/// 載入中的字典交給 hook，記在 dir 底下（換語言時用 use_dict 換回來）；回傳 false 表示沒有載入中的字典
+fn commit_staging(dir: &str) -> bool {
+    let Some(dict) = STAGING.lock().take() else { return false };
+    let dict = Box::new(dict);
+    let ptr = std::ptr::from_ref(&*dict).cast_mut();
+    // 換下來的字典照留在 LOADED：遊戲執行緒可能正在讀它
+    LOADED.lock().push((dir.to_owned(), dict));
+    publish_dict(ptr);
+    true
+}
+
+/// 換上另一份字典。整句貼圖照舊字典畫的點陣與貼圖先作廢（restyle 在換指標之前：主執行緒看到新字典時一定也看到作廢，
+/// 見 overlay.rs 的 State::begin），再換指標，最後清掉上一幀記下的字（舊字典的字圖編號）
+fn publish_dict(dict: *mut Dict) {
+    overlay::restyle();
+    hooks::DICT.store(dict, Ordering::Release);
+    overlay::reset();
+}
+
 unsafe extern "C" fn enable(l: lua::State) -> c_int {
     unsafe {
         if hooks::LAYOUT.get().is_none() {
             return fail(l, "enable: call set_layout first");
         }
-        if let Some(dict) = STAGING.lock().take() {
-            // 舊字典刻意不釋放：遊戲執行緒可能正在讀它；重新載入是少見的開發操作
-            hooks::DICT.swap(Box::into_raw(Box::new(dict)), Ordering::AcqRel);
+        // 還沒有字典時（標題畫面的讓位說明只載字串檔）才把載入中的換上；換語言載到一半失敗的不換上
+        if hooks::DICT.load(Ordering::Acquire).is_null() {
+            commit_staging("");
         }
         let dict = hooks::DICT.load(Ordering::Acquire);
         if dict.is_null() {
@@ -548,6 +659,45 @@ unsafe extern "C" fn disable(l: lua::State) -> c_int {
             Ok(()) => ok(l),
             Err(e) => fail(l, &e),
         }
+    }
+}
+
+/// commit(資料夾)：載入中的字典（set_glyphs、load…）換上，記在這個資料夾底下；不動翻譯開關
+unsafe extern "C" fn commit(l: lua::State) -> c_int {
+    unsafe {
+        let Some(dir) = lua::arg_str(l, 1) else { return fail(l, "commit: expects a folder") };
+        if !commit_staging(dir) {
+            return fail(l, "commit: no dictionary is being loaded");
+        }
+        ok(l)
+    }
+}
+
+/// use_dict(資料夾) → 有沒有換：之前從這個資料夾載入過的字典換回來（換語言），沒載入過回傳 false
+unsafe extern "C" fn use_dict(l: lua::State) -> c_int {
+    unsafe {
+        let Some(dir) = lua::arg_str(l, 1) else { return fail(l, "use_dict: expects a folder") };
+        let found = LOADED.lock().iter().rev().find(|(d, _)| d == dir).map(|(_, dict)| std::ptr::from_ref(&**dict).cast_mut());
+        if let Some(dict) = found {
+            publish_dict(dict);
+        }
+        lua::push_bool(l, found.is_some());
+        1
+    }
+}
+
+/// refresh()：設定或語言換了以後呼叫，之前算好的譯文、畫字計畫都照新的設定重算（段落、提示等畫到時重算，見 hooks::Stamp）。
+/// 世界生成名稱存的是字的代號，查的時候照目前語言的字表組中文（names.rs），不必重新登記
+unsafe extern "C" fn refresh(l: lua::State) -> c_int {
+    unsafe {
+        hooks::bump_epoch();
+        hooks::clear_pending();
+        names::changed();
+        let dict = hooks::DICT.load(Ordering::Acquire);
+        if !dict.is_null() {
+            (*dict).clear_cache();
+        }
+        ok(l)
     }
 }
 
@@ -633,23 +783,17 @@ unsafe extern "C" fn log_misses(l: lua::State) -> c_int {
     }
 }
 
-/// update_texpos({texpos...})：DFHack 重新註冊動態範圍的貼圖後，把新 texpos 寫回已啟用的字典。
-/// Lua 端在遊戲狀態切換時呼叫，那時遊戲執行緒停在 DFHack 的更新點，不會同時畫字。
+/// update_texpos({texpos...})：DFHack 重新註冊動態範圍的貼圖後、或換了字重的字圖集，把新 texpos 寫回已啟用的字典（同一組字）。
 unsafe extern "C" fn update_texpos(l: lua::State) -> c_int {
     unsafe {
         let dict = hooks::DICT.load(Ordering::Acquire);
         if dict.is_null() || lua::arg_type(l, 1) != lua::TTABLE {
             return fail(l, "update_texpos: engine not enabled or arg is not a table");
         }
-        let texpos = &mut (&mut *dict).texpos;
-        if lua::len(l, 1) != texpos.len() {
+        let texpos: Option<Vec<i32>> = (1..=lua::len(l, 1) as i64).map(|i| lua::index_int(l, 1, i).map(|v| v as i32)).collect();
+        let Some(texpos) = texpos else { return fail(l, "update_texpos: texpos must be integers") };
+        if !(*dict).set_texpos(&texpos) {
             return fail(l, "update_texpos: texpos count changed");
-        }
-        for (i, slot) in texpos.iter_mut().enumerate() {
-            match lua::index_int(l, 1, i as i64 + 1) {
-                Some(v) => *slot = v as i32,
-                None => return fail(l, "update_texpos: texpos must be integers"),
-            }
         }
         ok(l)
     }

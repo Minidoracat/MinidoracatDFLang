@@ -6,6 +6,7 @@
 //! 沒有譯文的行登記成「照畫英文」，不拿片段查字典（段落缺句時其餘照翻開著時，有幾句翻得出來就照翻、其餘照原文接在譯文裡）。
 //! 和段落一樣只在畫字時換（見 mtb.rs），遊戲資料不改。
 //! 大部分提示在遊戲啟動時（靜態初始化，早於本引擎載入）就切好了：enable 時從呼叫 wrap_text 的程式碼找出來補做。
+//! 玩家在設定視窗改了選項或語言以後，畫到一行時照新的設定重算整句（見 line_plan），不必等遊戲重切。
 
 use std::collections::HashMap;
 use std::sync::{Arc, LazyLock};
@@ -13,7 +14,15 @@ use std::sync::{Arc, LazyLock};
 use parking_lot::Mutex;
 
 use crate::dict::Dict;
+use crate::hooks::Stamp;
 use crate::mtb::{Piece, Plan};
+
+/// 一句切成的幾行：登記時的原文、寬度與每一行的位址（設定換了以後照它重算，見 line_plan）
+struct Group {
+    text: Box<[u8]>,
+    width: i32,
+    lines: Box<[usize]>,
+}
 
 struct Line {
     /// 登記時的英文：行字串釋放後位址可能給別的字串用，內容相同才照計畫畫
@@ -21,14 +30,17 @@ struct Line {
     plan: Plan,
     /// 啟動時就切好的提示（常駐），清表時保留
     keep: bool,
+    group: Arc<Group>,
+    /// 計畫照哪一版設定、哪一份字典算的
+    stamp: Stamp,
 }
 
 static LINES: LazyLock<Mutex<HashMap<usize, Line>>> = LazyLock::new(|| Mutex::new(HashMap::new()));
 /// ponytail: 行字串釋放時沒有通知，執行時切的行只在超過上限時整批清掉（常駐的保留）。
 const LINES_LIMIT: usize = 100_000;
 
-/// 同一句、同寬、同行數算出來的計畫（None 是沒有譯文）：每幀重切的提示不必每次重算
-type Key = (Vec<u8>, i32, usize);
+/// 同一句、同寬、同行數、同一版設定算出來的計畫（None 是沒有譯文）：每幀重切的提示不必每次重算
+type Key = (Vec<u8>, i32, usize, Stamp);
 static PLANS: LazyLock<Mutex<HashMap<Key, Option<Arc<[Plan]>>>>> = LazyLock::new(|| Mutex::new(HashMap::new()));
 const PLANS_LIMIT: usize = 20_000;
 
@@ -92,46 +104,70 @@ fn compute(text: &[u8], width: i32, n: usize, dict: &Dict) -> (Option<Arc<[Plan]
     (Some(pieces.into_iter().map(|p| if p.is_empty() { Plan::Skip } else { Plan::Draw(p.into()) }).collect()), missing)
 }
 
+/// 一句切成 n 行的計畫（快取）。第一次算時，段落缺句時其餘照翻開著、照原文接在譯文裡的句子交給 note_miss
+/// （整句沒有譯文的照舊畫到時才記）。
+fn cached(text: &[u8], width: i32, n: usize, dict: &Dict, stamp: Stamp, note_miss: &mut impl FnMut(&[u8])) -> Option<Arc<[Plan]>> {
+    let mut cache = PLANS.lock();
+    if cache.len() > PLANS_LIMIT {
+        cache.clear();
+    }
+    cache
+        .entry((text.to_vec(), width, n, stamp))
+        .or_insert_with(|| {
+            let (plans, missing) = compute(text, width, n, dict);
+            if plans.is_some() {
+                missing.iter().for_each(|m| note_miss(m));
+            }
+            plans
+        })
+        .clone()
+}
+
+/// 沒有譯文：每一行照畫英文，畫到時才把整句記成未翻譯（啟動時補登記的提示不是每句都會看到）
+fn english(text: &[u8], n: usize) -> Arc<[Plan]> {
+    vec![Plan::Missing(text.into()); n].into()
+}
+
 /// 原文 text 切成的這幾行（字串位址）登記畫字計畫；回傳這句有沒有譯文。
-/// 段落缺句時其餘照翻開著、照原文接在譯文裡的句子在第一次算計畫時交給 note_miss（整句沒有譯文的照舊畫到時才記）。
 pub unsafe fn plan(lines: &[usize], text: &[u8], width: i32, dict: &Dict, keep: bool, mut note_miss: impl FnMut(&[u8])) -> bool {
     if lines.is_empty() {
         return false;
     }
-    let plans = {
-        let mut cache = PLANS.lock();
-        if cache.len() > PLANS_LIMIT {
-            cache.clear();
-        }
-        cache
-            .entry((text.to_vec(), width, lines.len()))
-            .or_insert_with(|| {
-                let (plans, missing) = compute(text, width, lines.len(), dict);
-                if plans.is_some() {
-                    missing.iter().for_each(|m| note_miss(m));
-                }
-                plans
-            })
-            .clone()
-    };
+    // 先記版本再算：算到一半玩家改了設定，這份計畫就算舊的，畫到時重算
+    let stamp = Stamp::of(dict);
+    let plans = cached(text, width, lines.len(), dict, stamp, &mut note_miss);
     let translated = plans.is_some();
-    // 沒有譯文：每一行照畫英文，畫到時才把整句記成未翻譯（啟動時補登記的提示不是每句都會看到）
-    let plans = plans.unwrap_or_else(|| vec![Plan::Missing(text.into()); lines.len()].into());
+    let plans = plans.unwrap_or_else(|| english(text, lines.len()));
+    let group = Arc::new(Group { text: text.into(), width, lines: lines.into() });
     let mut table = LINES.lock();
     if table.len() + lines.len() > LINES_LIMIT {
         table.retain(|_, l| l.keep);
     }
     for (&s, plan) in lines.iter().zip(plans.iter()) {
-        table.insert(s, Line { text: unsafe { str_bytes(s) }.into(), plan: plan.clone(), keep });
+        table.insert(s, Line { text: unsafe { str_bytes(s) }.into(), plan: plan.clone(), keep, group: group.clone(), stamp });
     }
     translated
 }
 
-/// 畫字 hook 用：這個字串是自動換行的一行時，回傳它的畫字計畫。
-pub unsafe fn line_plan(s: usize) -> Option<Plan> {
-    let table = LINES.lock();
-    let line = table.get(&s)?;
-    (*line.text == *unsafe { str_bytes(s) }).then(|| line.plan.clone())
+/// 畫字 hook 用：這個字串是自動換行的一行時，回傳它的畫字計畫。玩家改過設定或語言（dict 是現在的字典）時，
+/// 照現在的設定重算這一行所屬的整句，同一句的其他行一起換。
+pub unsafe fn line_plan(s: usize, dict: &Dict) -> Option<Plan> {
+    let mut table = LINES.lock();
+    let line = table.get(&s).filter(|l| *l.text == *unsafe { str_bytes(s) })?;
+    let stamp = Stamp::of(dict);
+    if line.stamp == stamp {
+        return Some(line.plan.clone());
+    }
+    let group = line.group.clone();
+    let plans = cached(&group.text, group.width, group.lines.len(), dict, stamp, &mut |_| {})
+        .unwrap_or_else(|| english(&group.text, group.lines.len()));
+    for (addr, plan) in group.lines.iter().zip(plans.iter()) {
+        if let Some(l) = table.get_mut(addr).filter(|l| Arc::ptr_eq(&l.group, &group)) {
+            l.plan = plan.clone();
+            l.stamp = stamp;
+        }
+    }
+    table.get(&s).map(|l| l.plan.clone())
 }
 
 /// status 用：(登記的行數, 計畫快取筆數)
@@ -189,10 +225,10 @@ mod tests {
         }
     }
 
-    fn kinds(addrs: &[usize]) -> Vec<String> {
+    fn kinds(addrs: &[usize], d: &Dict) -> Vec<String> {
         addrs
             .iter()
-            .map(|&s| match unsafe { line_plan(s) } {
+            .map(|&s| match unsafe { line_plan(s, d) } {
                 Some(Plan::Plain) => "plain".to_owned(),
                 Some(Plan::Missing(t)) => format!("missing {}", String::from_utf8_lossy(&t)),
                 Some(Plan::Skip) => "skip".to_owned(),
@@ -211,7 +247,7 @@ mod tests {
         let en = Strings::new(&["Establish ", "burrows to ", "organize work."]);
         let addrs = en.addrs();
         assert!(unsafe { plan(&addrs, b"Establish burrows to organize work.", 12, &d, false, |_| {}) });
-        assert_eq!(kinds(&addrs), ["0,0", "0,0", "skip"]);
+        assert_eq!(kinds(&addrs, &d), ["0,0", "0,0", "skip"]);
     }
 
     #[test]
@@ -223,7 +259,7 @@ mod tests {
         let en = Strings::new(&["one two"]);
         let addrs = en.addrs();
         assert!(unsafe { plan(&addrs, b"one two", 4, &d, false, |_| {}) });
-        assert_eq!(kinds(&addrs), ["0,0 0,1 0,2"]);
+        assert_eq!(kinds(&addrs, &d), ["0,0 0,1 0,2"]);
     }
 
     #[test]
@@ -233,10 +269,24 @@ mod tests {
         let addrs = en.addrs();
         assert!(!unsafe { plan(&addrs, b"Hold left button.", 10, &d, false, |_| {}) });
         // 畫到時記整句，不記片段
-        assert_eq!(kinds(&addrs), ["missing Hold left button.", "missing Hold left button."]);
+        assert_eq!(kinds(&addrs, &d), ["missing Hold left button.", "missing Hold left button."]);
         // 位址還在、內容變了（行字串釋放後給別的字串用）：計畫不算數
         en.0[0].0[2] = 4;
-        assert_eq!(kinds(&addrs[..1]), ["none"]);
+        assert_eq!(kinds(&addrs[..1], &d), ["none"]);
+    }
+
+    #[test]
+    fn planned_lines_follow_a_settings_change_without_rewrapping() {
+        let mut d = Dict::default();
+        assert!(d.set_glyphs("勞動結束。", vec![0; 10]));
+        d.load_tsv("Labor ends.\t勞動結束。\n");
+        let en = Strings::new(&["Labor ends.  ", "Greed went home."]);
+        let addrs = en.addrs();
+        assert!(!unsafe { plan(&addrs, b"Labor ends.  Greed went home.", 30, &d, false, |_| {}) }, "缺一句就整句照英文");
+        // 遊戲中途打開「段落缺句時其餘照翻」（lib.rs 的 refresh）：遊戲不會重切這段，畫到時照新設定重算
+        d.set_options(crate::dict::Options { partial: true, ..Default::default() });
+        crate::hooks::bump_epoch();
+        assert_eq!(kinds(&addrs, &d), ["0,0", "skip"]);
     }
 
     #[test]

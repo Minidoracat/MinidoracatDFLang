@@ -1,11 +1,13 @@
 //! 排段落用的字寬（一格 = UNIT 單位）。
 //!
 //! 一般：英數一格、中文兩格（字圖集一字兩格）。整句貼圖開著時（compact，見 overlay.rs）改用字型的實際字寬：
-//! 段落照字寬換行、填滿框寬，替身字串也照字寬縮短（見 Dict::para_entry）。字寬在畫字圖集時依當下的格子大小量好（set_advances）。
+//! 段落照字寬換行、填滿框寬，替身字串也照字寬縮短（見 Dict::para_entry）。字寬在換字型、字重、字的大小時依當下的格子大小量好（set_advances）。
 
 use std::collections::HashMap;
-use std::sync::OnceLock;
+use std::sync::Arc;
 use std::sync::atomic::{AtomicBool, Ordering};
+
+use parking_lot::RwLock;
 
 use crate::cp437;
 
@@ -13,16 +15,16 @@ use crate::cp437;
 pub const UNIT: usize = 64;
 
 static COMPACT: AtomicBool = AtomicBool::new(false);
-static ADVANCES: OnceLock<HashMap<char, u16>> = OnceLock::new();
+static ADVANCES: RwLock<Option<Arc<HashMap<char, u16>>>> = RwLock::new(None);
 
-/// 量好的字寬（單位）；畫字圖集時呼叫一次
+/// 量好的字寬（單位）：遊戲啟動時、玩家換字重、字的大小或語言時換一份（lib.rs 的 set_typeface）
 pub fn set_advances(advances: HashMap<char, u16>) {
-    let _ = ADVANCES.set(advances);
+    *ADVANCES.write() = Some(Arc::new(advances));
 }
 
-/// 整句貼圖開著（遊戲啟動時決定；換行與替身字串都跟著改，中途切換要重開遊戲）
+/// 整句貼圖開著：換行與替身字串都照字寬（隨時可切；切完要重算段落，見 lib.rs 的 refresh）
 pub fn set_compact(on: bool) {
-    COMPACT.store(on && ADVANCES.get().is_some(), Ordering::Release);
+    COMPACT.store(on && ADVANCES.read().is_some(), Ordering::Release);
 }
 pub fn compact() -> bool {
     #[cfg(test)]
@@ -43,7 +45,10 @@ thread_local! {
 #[cfg(test)]
 pub fn test_compact() {
     let (cjk, space) = ((UNIT * 11 / 8) as u16, (UNIT * 5 / 16) as u16);
-    let _ = ADVANCES.set("他很有幽默感。不太在意".chars().map(|c| (c, cjk)).chain([(' ', space)]).collect());
+    let mut advances = ADVANCES.write();
+    if advances.is_none() {
+        *advances = Some(Arc::new("他很有幽默感。不太在意".chars().map(|c| (c, cjk)).chain([(' ', space)]).collect()));
+    }
     TEST_COMPACT.with(|c| c.set(true));
 }
 
@@ -55,7 +60,7 @@ pub fn grid(c: char) -> usize {
 /// 目前排版用的字寬
 pub fn units(c: char) -> usize {
     if compact() {
-        if let Some(&u) = ADVANCES.get().and_then(|a| a.get(&c)) {
+        if let Some(&u) = ADVANCES.read().as_ref().and_then(|a| a.get(&c)) {
             return u as usize;
         }
     }
@@ -63,7 +68,11 @@ pub fn units(c: char) -> usize {
 }
 
 pub fn width(s: &str) -> usize {
-    s.chars().map(units).sum()
+    if !compact() {
+        return s.chars().map(grid).sum();
+    }
+    let advances = ADVANCES.read();
+    s.chars().map(|c| advances.as_ref().and_then(|a| a.get(&c)).map_or_else(|| grid(c), |&u| u as usize)).sum()
 }
 
 /// 單位換成格數（無條件進位）

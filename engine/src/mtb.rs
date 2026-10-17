@@ -11,6 +11,9 @@
 //!
 //! 有連結的段落（傳說頁面、物品說明裡可以點的人名、地名）：連結字由遊戲照英文畫、依座標判斷點擊，
 //! 所以照中文排版把連結字搬到中文裡名字的位置（只改座標，見 plan_links）。這種段落是畫面開啟時才產生的，不進存檔。
+//!
+//! 玩家在設定視窗改了選項或語言以後，遊戲下次對這個段落排版（多數畫面每幀都會呼叫排版函式）時照新的設定重訂計畫；
+//! 還沒重排的段落照舊計畫畫，但字典換了（換語言）或整句貼圖關掉了（舊計畫的字要靠整句貼圖畫）時照畫英文（見 word_plan）。
 
 use std::collections::HashMap;
 use std::sync::{Arc, LazyLock, OnceLock};
@@ -19,6 +22,7 @@ use parking_lot::Mutex;
 
 use crate::cp437;
 use crate::dict::{self, Dict, Entry, LINK_CLOSE, LINK_OPEN};
+use crate::hooks::Stamp;
 use crate::metrics::{self, UNIT};
 
 /// markup_text_boxst／markup_text_wordst 的欄位位移，由 Lua 依 DFHack 的結構定義傳入。
@@ -60,11 +64,14 @@ const NO_START: &str = "，。、；：！？）」』》〉】〕”’…‥�
 /// 不能放在行尾的標點，換行時移到下一行
 const NO_END: &str = "（「『《〈【〔“‘([{";
 
-/// 每個段落（以 markup_text_boxst 位址區分）上次排版的單字清單與寬度：都沒變就不重做。
+/// 每個段落（以 markup_text_boxst 位址區分）上次排版的單字清單與寬度：都沒變、設定也沒換就不重做。
 struct State {
     words: Vec<usize>,
     width: i32,
     translated: bool,
+    stamp: Stamp,
+    /// 有連結的段落：單字的座標照中文排版搬過（見 plan_links），重訂計畫前要讓遊戲照英文重排
+    moved: bool,
 }
 
 static STATES: LazyLock<Mutex<HashMap<usize, State>>> = LazyLock::new(|| Mutex::new(HashMap::new()));
@@ -90,8 +97,19 @@ pub enum Plan {
     Draw(Arc<[Piece]>),
 }
 
-/// 段落單字的畫字計畫：字串位址 → (排版後的座標, 計畫)。
-static WORDS: LazyLock<Mutex<HashMap<usize, (i32, i32, Plan)>>> = LazyLock::new(|| Mutex::new(HashMap::new()));
+/// 段落單字的畫字計畫：字串位址 → 計畫
+struct Word {
+    /// 排版後的座標（單字釋放後位址可能給別的字串用，座標也相同才算，見 word_plan）
+    px: i32,
+    py: i32,
+    plan: Plan,
+    /// 計畫照哪一份字典算的：換了語言，舊計畫的字圖編號就對不上了
+    stamp: Stamp,
+    /// 這個段落的中文照字型實際字寬排（整句貼圖開著時）：整句貼圖關掉後舊計畫畫不出字
+    compact: bool,
+}
+
+static WORDS: LazyLock<Mutex<HashMap<usize, Word>>> = LazyLock::new(|| Mutex::new(HashMap::new()));
 /// ponytail: 段落釋放時沒有通知，舊單字只在同一段落重排時撤掉；超過上限整張清掉，
 /// 當時畫面上的段落要等下次重排才恢復中文。要精確就 hook 段落的解構函式。
 const WORDS_LIMIT: usize = 200_000;
@@ -480,7 +498,8 @@ fn wrap_links(text: &str, width: usize, base: [u8; 3], rgb: impl Fn([u8; 3]) -> 
 }
 
 /// 排版函式跑完後呼叫：依譯文訂好這個段落每個單字的畫字計畫。回傳 true 表示這段有譯文。
-pub unsafe fn rewrite(mtb: usize, dict: &Dict, note_miss: impl FnOnce(&[u8])) -> bool {
+/// relayout 讓遊戲照英文重排一次這個段落（玩家改了設定以後重訂連結段落的計畫用，見 State::moved）。
+pub unsafe fn rewrite(mtb: usize, dict: &Dict, note_miss: impl FnOnce(&[u8]), relayout: impl FnOnce()) -> bool {
     let Some(l) = MTB_LAYOUT.get() else { return false };
     unsafe {
         let begin: usize = read(mtb, l.words);
@@ -490,9 +509,16 @@ pub unsafe fn rewrite(mtb: usize, dict: &Dict, note_miss: impl FnOnce(&[u8])) ->
         }
         let words = std::slice::from_raw_parts(begin as *const usize, (end - begin) / 8);
         let width: i32 = read(mtb, l.current_width);
+        let stamp = Stamp::of(dict);
         let mut states = STATES.lock();
         if let Some(s) = states.get(&mtb).filter(|s| s.words == words && s.width == width) {
-            return s.translated; // 已排過、寬度沒變：計畫還有效
+            if s.stamp == stamp {
+                return s.translated; // 已排過、寬度沒變、設定也沒換：計畫還有效
+            }
+            // 設定或語言換過：重訂計畫。連結字的座標照中文搬過，先讓遊戲照英文重排
+            if s.moved {
+                relayout();
+            }
         }
         let pal = palette(l);
         // (每個單字的計畫, 有連結時每個單字的新座標)
@@ -518,6 +544,11 @@ pub unsafe fn rewrite(mtb: usize, dict: &Dict, note_miss: impl FnOnce(&[u8])) ->
             }
         });
         let translated = planned.is_some();
+        let moved = matches!(planned, Some((_, Some(_))));
+        // 這段的中文照字型實際字寬排（整句貼圖開著時，見 Dict::para_entry）：整句貼圖關掉後舊計畫畫不出字
+        let compact = planned.as_ref().is_some_and(|(plans, _)| {
+            plans.iter().any(|p| matches!(p, Plan::Draw(pieces) if pieces.iter().any(|piece| piece.entry.compact.is_some())))
+        });
         let mut table = WORDS.lock();
         if let Some(old) = states.remove(&mtb) {
             for w in old.words {
@@ -534,9 +565,9 @@ pub unsafe fn rewrite(mtb: usize, dict: &Dict, note_miss: impl FnOnce(&[u8])) ->
                 write(w, l.word_px, pos[i].0);
                 write(w, l.word_py, pos[i].1);
             }
-            table.insert(w + l.word_str, (read(w, l.word_px), read(w, l.word_py), plan));
+            table.insert(w + l.word_str, Word { px: read(w, l.word_px), py: read(w, l.word_py), plan, stamp, compact });
         }
-        states.insert(mtb, State { words: words.to_vec(), width, translated });
+        states.insert(mtb, State { words: words.to_vec(), width, translated, stamp, moved });
         translated
     }
 }
@@ -675,12 +706,18 @@ fn link_name(dict: &Dict, text: &[u8]) -> Option<String> {
 
 /// 畫字 hook 用：這個字串是段落單字時，回傳它的畫字計畫。
 /// 單字釋放後位址可能給別的字串用，所以座標也要和排版時相同才算；讀的位置在原本單字結構的範圍內。
-pub unsafe fn word_plan(s: usize) -> Option<Plan> {
+/// 玩家改了設定、遊戲還沒重排的段落照舊計畫畫；但 dict（現在的字典）換了語言、或整句貼圖關掉而舊計畫照字寬排時，
+/// 舊計畫畫不出來，整段照畫英文。
+pub unsafe fn word_plan(s: usize, dict: &Dict) -> Option<Plan> {
     let l = MTB_LAYOUT.get()?;
     let table = WORDS.lock();
-    let (px, py, plan) = table.get(&s)?;
+    let word = table.get(&s)?;
     let w = s - l.word_str;
-    unsafe { (read::<i32>(w, l.word_px) == *px && read::<i32>(w, l.word_py) == *py).then(|| plan.clone()) }
+    if unsafe { read::<i32>(w, l.word_px) != word.px || read::<i32>(w, l.word_py) != word.py } {
+        return None;
+    }
+    let unusable = !word.stamp.same_dict(dict) || (word.compact && !crate::overlay::ON.load(std::sync::atomic::Ordering::Relaxed));
+    Some(if unusable { Plan::Plain } else { word.plan.clone() })
 }
 
 /// status 用：(登記的單字數, 段落數)
@@ -830,8 +867,8 @@ mod tests {
         }
     }
 
-    fn plan_of(w: usize) -> &'static str {
-        match unsafe { word_plan(w) } {
+    fn plan_of(w: usize, d: &Dict) -> &'static str {
+        match unsafe { word_plan(w, d) } {
             Some(Plan::Plain) => "plain",
             Some(Plan::Missing(_)) => "missing",
             Some(Plan::Skip) => "skip",
@@ -856,17 +893,48 @@ mod tests {
         unsafe {
             let p = Fake::new(&[("A", 7), ("mug", 7), ("by", 7), ("Urist", 7), (".", 7)], 10);
             set_link(&p, 3, 0);
-            assert!(rewrite(p.mtb, &d, |_| {}));
+            assert!(rewrite(p.mtb, &d, |_| {}, || {}));
             // 寬 10 格：第 0 列「這是Urist」、第 1 列「製作的杯」、第 2 列「子。」（「。」不放行首）
-            assert_eq!((plan_of(p.words[3]), pos(p.words[3])), ("plain", (4, 0)), "連結字搬到「這是」後面，遊戲照這裡畫、判斷點擊");
+            assert_eq!((plan_of(p.words[3], &d), pos(p.words[3])), ("plain", (4, 0)), "連結字搬到「這是」後面，遊戲照這裡畫、判斷點擊");
             assert_eq!(str_bytes(p.words[3]), b"Urist", "字串不動");
-            assert_eq!((plan_of(p.words[0]), pos(p.words[0])), ("draw", (0, 0)));
+            assert_eq!((plan_of(p.words[0], &d), pos(p.words[0])), ("draw", (0, 0)));
             // 畫字迴圈照單字順序掃、碰到列超出框底的就停：第 1 列的載體要在連結字（第 0 列）後面，
             // 連結字前面不畫的單字搬到第 -1 列
-            assert_eq!((plan_of(p.words[1]), pos(p.words[1]).1), ("skip", -1));
-            assert_eq!((plan_of(p.words[4]), pos(p.words[4])), ("draw", (0, 1)));
-            let Some(Plan::Draw(rest)) = word_plan(p.words[4]) else { panic!("「.」要畫第 1 列") };
+            assert_eq!((plan_of(p.words[1], &d), pos(p.words[1]).1), ("skip", -1));
+            assert_eq!((plan_of(p.words[4], &d), pos(p.words[4])), ("draw", (0, 1)));
+            let Some(Plan::Draw(rest)) = word_plan(p.words[4], &d) else { panic!("「.」要畫第 1 列") };
             assert_eq!(rest.iter().map(|p| (p.dx, p.dy)).collect::<Vec<_>>(), [(0, 0), (0, 1)], "後面沒有單字了，第 2 列也由它畫");
+        }
+    }
+
+    #[test]
+    fn moved_link_paragraphs_are_laid_out_in_english_again_after_a_language_switch() {
+        let dict = || {
+            let mut d = Dict::default();
+            assert!(d.set_glyphs("這是製作的杯子。", vec![0; 16]));
+            d.load_rules_tsv("A mug by {1}.\t這是{1}製作的杯子。\n");
+            d
+        };
+        let (d, other) = (dict(), dict());
+        unsafe {
+            let p = Fake::new(&[("A", 7), ("mug", 7), ("by", 7), ("Urist", 7), (".", 7)], 10);
+            set_link(&p, 3, 0);
+            let english: Vec<(i32, i32)> = p.words.iter().map(|&w| pos(w)).collect();
+            assert!(rewrite(p.mtb, &d, |_| {}, || panic!("第一次排版不必重排")));
+            // 換了語言、遊戲還沒重排：舊計畫的字圖編號對不上，整段照畫英文
+            assert_eq!(p.words.iter().map(|&w| plan_of(w, &other)).collect::<Vec<_>>(), ["plain"; 5]);
+            // 遊戲下次排版（寬度沒變）：先讓遊戲照英文重排，再照新的字典訂計畫，連結字不會從搬過的位置再搬一次
+            let mut relaid = false;
+            assert!(rewrite(p.mtb, &other, |_| {}, || {
+                relaid = true;
+                for (&w, &(x, y)) in p.words.iter().zip(&english) {
+                    write(w, 40, x);
+                    write(w, 44, y);
+                }
+            }));
+            assert!(relaid);
+            assert_eq!((plan_of(p.words[3], &other), pos(p.words[3])), ("plain", (4, 0)));
+            assert_eq!((plan_of(p.words[0], &other), pos(p.words[0])), ("draw", (0, 0)));
         }
     }
 
@@ -878,9 +946,9 @@ mod tests {
             set_link(&p, 2, 0);
             set_link(&p, 3, 0);
             let mut logged = String::new();
-            assert!(!rewrite(p.mtb, &d, |k| logged = cp437::decode(k)));
+            assert!(!rewrite(p.mtb, &d, |k| logged = cp437::decode(k), || {}));
             assert_eq!(logged, "Made by ☺Urist McDwarf☻.", "未翻譯紀錄寫名字，t -m 可以直接查");
-            assert_eq!((plan_of(p.words[2]), pos(p.words[2])), ("plain", (8, 0)));
+            assert_eq!((plan_of(p.words[2], &d), pos(p.words[2])), ("plain", (8, 0)));
         }
     }
 
@@ -898,12 +966,12 @@ mod tests {
             let p = Fake::new(&[("In", 7), ("1,", 7), ("Onsmost", 7), ("settled", 7), ("in", 7), ("Mangemined.", 7)], 40);
             set_link(&p, 2, 0);
             set_link(&p, 5, 1);
-            assert!(rewrite(p.mtb, &d, |_| {}));
+            assert!(rewrite(p.mtb, &d, |_| {}, || {}));
             // 「1年，」5 格、Onsmost 7 格、「定居於」6 格，Mangemined 10 格後面接「。」
-            assert_eq!((plan_of(p.words[2]), pos(p.words[2])), ("plain", (5, 0)));
-            let Some(Plan::Draw(name)) = word_plan(p.words[5]) else { panic!("帶句號的連結字改由 hook 畫名字") };
+            assert_eq!((plan_of(p.words[2], &d), pos(p.words[2])), ("plain", (5, 0)));
+            let Some(Plan::Draw(name)) = word_plan(p.words[5], &d) else { panic!("帶句號的連結字改由 hook 畫名字") };
             assert_eq!((name[0].entry.text.as_str(), name[0].color, pos(p.words[5])), ("Mangemined", None, (18, 0)));
-            let Some(Plan::Draw(row)) = word_plan(p.words[0]) else { panic!("第一個單字畫中文") };
+            let Some(Plan::Draw(row)) = word_plan(p.words[0], &d) else { panic!("第一個單字畫中文") };
             assert_eq!(row.iter().map(|p| (p.dx, p.entry.text.as_str())).collect::<Vec<_>>(), [(0, "1年，"), (12, "定居於"), (28, "。")]);
         }
     }
@@ -916,15 +984,15 @@ mod tests {
         unsafe {
             // 段落沒譯文：單字照畫英文，不拿 All 去查字典
             let plain = Fake::new(&[("Fish", 7), ("All", 7)], 40);
-            assert!(!rewrite(plain.mtb, &d, |_| {}));
-            assert_eq!(plan_of(plain.words[1]), "plain");
+            assert!(!rewrite(plain.mtb, &d, |_| {}, || {}));
+            assert_eq!(plan_of(plain.words[1], &d), "plain");
             // 單字釋放後同一位址給了別的字串（座標對不上）：不算
             write(plain.words[1], 40, 99i32);
-            assert_eq!(plan_of(plain.words[1]), "none");
+            assert_eq!(plan_of(plain.words[1], &d), "none");
             // 遊戲依新寬度重排後重新登記
             write(plain.mtb, 48, 30i32);
-            assert!(!rewrite(plain.mtb, &d, |_| {}));
-            assert_eq!(plan_of(plain.words[1]), "plain");
+            assert!(!rewrite(plain.mtb, &d, |_| {}, || {}));
+            assert_eq!(plan_of(plain.words[1], &d), "plain");
         }
     }
 
@@ -935,9 +1003,9 @@ mod tests {
         d.load_tsv("All Fish\t全魚\n");
         unsafe {
             let p = Fake::new(&[("All", 7), ("Fish", 7)], 40);
-            assert!(rewrite(p.mtb, &d, |_| {}));
+            assert!(rewrite(p.mtb, &d, |_| {}, || {}));
             // 第一個單字畫整行中文，第二個不畫；遊戲的單字字串不動（會存進存檔）
-            assert_eq!((plan_of(p.words[0]), plan_of(p.words[1])), ("draw", "skip"));
+            assert_eq!((plan_of(p.words[0], &d), plan_of(p.words[1], &d)), ("draw", "skip"));
             assert_eq!(str_bytes(p.words[0]), b"All");
             assert_eq!(str_bytes(p.words[1]), b"Fish");
         }
@@ -951,9 +1019,9 @@ mod tests {
         d.load_tsv("Okay. [C:2:0:1]Strike\t開鑿[C:2:0:1]大地\n");
         unsafe {
             let p = Fake::new(&[("Okay", 7), (".", 7), ("Strike", 10)], 40);
-            assert!(rewrite(p.mtb, &d, |_| {}));
+            assert!(rewrite(p.mtb, &d, |_| {}, || {}));
             // 「開鑿」維持第一個字的顏色，「大地」換成調色盤第 10 格；兩段都在第 0 列，由第一個單字畫
-            let Some(Plan::Draw(pieces)) = word_plan(p.words[0]) else { panic!("第一個單字要畫中文") };
+            let Some(Plan::Draw(pieces)) = word_plan(p.words[0], &d) else { panic!("第一個單字要畫中文") };
             let colors: Vec<Option<[u8; 3]>> = pieces.iter().map(|p| p.color).collect();
             assert_eq!(colors, [Some(PALETTE[7]), Some(PALETTE[10])]);
             assert_eq!(pieces[1].dx, 4, "「大地」接在「開鑿」（4 格）後面");
