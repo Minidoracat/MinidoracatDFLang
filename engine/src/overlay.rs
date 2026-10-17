@@ -12,8 +12,10 @@
 //! 一行怎麼排：
 //! - 譯文：依字型的字寬緊排，依對齊置中、靠右，或從第一個非空白格起。對齊照遊戲實際把原文擺在哪裡（hooks.rs 的
 //!   placed_align：按鈕上置中、畫面正中間），半格位移的列（分頁標籤）也一樣；錨定貼圖標籤一律置中。
-//! - 遊戲接著游標連續寫的幾段（「範圍：」＋「114」＋「至」＋「768」），或只隔一格空白的幾段（DFHack 的「標籤」＋「值」、
-//!   傳說的「黑暗」＋「要塞」）裡有譯文時接成一行緊排，每段用自己的顏色；段落文字和緊貼在旁邊的連結字也接成一行。
+//! - 遊戲接著游標連續寫的幾段（「範圍：」＋「114」＋「至」＋「768」、「v」＋「53.16」）、只隔一格空白的幾段（DFHack 的
+//!   「標籤」＋「值」、傳說的「黑暗」＋「要塞」、段落照英文逐字畫的字），或下一段從譯文原文的結尾畫起的（遊戲照英文字寬排好
+//!   每個字：選擇出發地點的金屬清單）接成一行緊排，每段用自己的顏色；隔一格的兩段都只有數字時不接（頂部資訊列的心情人數各自
+//!   對準一個表情）。段落文字和緊貼在旁邊的連結字也接成一行。
 //! - 段落照字型的實際字寬換行（metrics.rs）：格子貼透明記號，字照段落文字從第一格緊排。比格子寬的一行（換了格子大小後的段落、
 //!   比原文寬一點的名字與按鍵名）壓成長體放進格子：字距與字形本身一起橫向縮放（見 State::strip）。
 //! - 其他沒有譯文的字：單一空白隔開的字詞接成一組，從原本的格子畫起（數字對齊原本的結尾，數值框裡靠左的照起始格），
@@ -156,6 +158,9 @@ struct Run {
     align: u8,
     /// 結尾有幾格是補到原文寬度的空白（不是譯文本身的空白）：接成一行緊排時不佔位
     pad: usize,
+    /// 原文比寫下的替身字串長出來的格數（靠左的譯文比英文短，遊戲只寫了譯文那幾格；見 hooks.rs 的 Paint::tail）：
+    /// 遊戲照英文字寬排位置時，下一段從原文的結尾畫起（見 chainable），接成一行時這幾格和 pad 一樣不佔位
+    tail: usize,
     /// 照字型實際字寬縮短的段落（Entry::compact）：格子貼的是透明記號，字照這段文字從第一格緊排；
     /// 錨定貼圖標籤（anchor）也照這段文字畫
     text: Option<String>,
@@ -213,9 +218,10 @@ static BUILD: Mutex<Vec<Run>> = Mutex::new(Vec::new());
 static FRAME: Mutex<Option<Arc<Vec<Run>>>> = Mutex::new(None);
 
 /// 寫字時呼叫（非同步執行緒）：一段字；top 是頂層，row 是一般列或半格位移的上下列，glyphs 空的是沒有譯文的字，
-/// pad 是結尾補位的格數（見 Run::pad），text 是照字寬縮短的段落（見 Run::text），dfhack 是 DFHack 畫的字。
+/// pad 是結尾補位的格數（見 Run::pad），tail 是原文比替身字串長出來的格數（見 Run::tail），
+/// text 是照字寬縮短的段落（見 Run::text），dfhack 是 DFHack 畫的字。
 #[allow(clippy::too_many_arguments)]
-pub fn record(gps: *mut u8, top: bool, row: Row, x0: i32, y: i32, shadow: &[u8], glyphs: &[(usize, u32)], align: u8, pad: usize, text: Option<&str>, dfhack: bool) {
+pub fn record(gps: *mut u8, top: bool, row: Row, x0: i32, y: i32, shadow: &[u8], glyphs: &[(usize, u32)], align: u8, pad: usize, tail: usize, text: Option<&str>, dfhack: bool) {
     // 翻譯關著時不記（整句貼圖不畫），免得 DFHack 照畫的字白白堆進這一幀
     if !ON.load(Ordering::Relaxed) || !crate::hooks::ENABLED.load(Ordering::Acquire) {
         return;
@@ -225,7 +231,7 @@ pub fn record(gps: *mut u8, top: bool, row: Row, x0: i32, y: i32, shadow: &[u8],
     }
     GPS.store(gps as usize, Ordering::Relaxed);
     let (shadow, glyphs, text) = (shadow.to_vec(), glyphs.to_vec(), text.map(str::to_owned));
-    BUILD.lock().push(Run { top, row, x0, y, shadow, glyphs, align, pad, text, anchor: None, dfhack });
+    BUILD.lock().push(Run { top, row, x0, y, shadow, glyphs, align, pad, tail, text, anchor: None, dfhack });
 }
 
 /// 錨定貼圖標籤（出發準備畫面的分頁，見 hooks.rs finish_label）換好貼圖時呼叫（非同步執行緒）：(x0, y) 起每格換上的貼圖、
@@ -237,7 +243,7 @@ pub fn record_label(gps: *mut u8, x0: i32, y: i32, tiles: &[i32], text: &str, li
     GPS.store(gps as usize, Ordering::Relaxed);
     let shadow = vec![b' '; tiles.len()];
     let anchor = Some((tiles.to_vec(), lift));
-    let run = Run { top: false, row: Row::Label, x0, y, shadow, glyphs: Vec::new(), align: b'c', pad: 0, text: Some(text.to_owned()), anchor, dfhack: false };
+    let run = Run { top: false, row: Row::Label, x0, y, shadow, glyphs: Vec::new(), align: b'c', pad: 0, tail: 0, text: Some(text.to_owned()), anchor, dfhack: false };
     BUILD.lock().push(run);
 }
 
@@ -409,22 +415,36 @@ struct Line {
     kind: Kind,
 }
 
-/// 遊戲接著游標寫的下一段可以接成同一行：同一層、同一列、b 從 a 結尾那格（或隔一格空白：DFHack 的「標籤」「 」「值」
-/// 分三段畫，空白那段沒有字不記）開始、都靠左、a 結尾連同中間的空格不超過一格空白
-/// （譯文較短空出來的補位不算，見 Run::pad：「標籤：」後面接的值才會跟著靠過來；欄位補位的空白照算，欄位不接）、
-/// 兩段都只有一般字元（中間夾著方框、圖形字元的不接，免得緊排後蓋到）
+/// 接成一行（Chain）時每一格是什麼：字或照算的空白、譯文補到原文寬度的空白（Run::pad）、前一段原文比譯文長出來的格子（Run::tail）
+#[derive(Clone, Copy, PartialEq)]
+enum Fill {
+    Text,
+    Pad,
+    Tail,
+}
+
+/// 下一段可以接成同一行：同一層、同一列、都靠左、兩段都只有一般字元（中間夾著方框、圖形字元的不接，免得緊排後蓋到），
+/// 而且 b 緊接在 a 後面，a 結尾連同中間的空格不超過一格空白（譯文較短空出來的補位不算，見 Run::pad：「標籤：」後面接的值
+/// 才會跟著靠過來；欄位補位的空白照算，欄位不接）：
+/// - b 從 a 寫的結尾那格畫起（遊戲接著游標寫的：「v」＋「53.16」），或隔一格空白（DFHack 的「標籤」「 」「值」分三段畫，
+///   空白那段沒有字不記；段落照英文逐字畫的字）。隔一格的兩段都只有數字時不接：各自對準別的東西，頂部資訊列的心情人數
+///   （「210」「52」「78」各自對準一個表情）接成一行緊排會整排往左擠。
+/// - b 從 a 原文的結尾（再隔零或一格）畫起：遊戲照英文字寬排好每個字的位置（見 Run::tail：選擇出發地點的金屬清單）。
+///   不限寬度畫的表格欄，英文剛好排到下一欄前一格的那一列也會接上（一般欄位限了寬度，不記 Run::tail；
+///   實機走過要塞的資訊面板、庫存、人物頁各分頁與 DFHack 視窗都沒有這種列）。
 fn chainable(a: &Run, b: &Run) -> bool {
     let all_text = |r: &Run| r.shadow.iter().all(|&c| is_text(c));
+    let spaces = a.trailing_pad().saturating_sub(a.pad) as i32;
+    let near = |gap: i32| (0..=1).contains(&gap) && spaces + gap < 2;
     let gap = b.x0 - a.end();
-    a.top == b.top
-        && a.row == b.row
-        && a.y == b.y
-        && (0..=1).contains(&gap)
-        && a.align == b'l'
-        && b.align == b'l'
-        && a.trailing_pad().saturating_sub(a.pad) + (gap as usize) < 2
-        && all_text(a)
-        && all_text(b)
+    let numbers = gap == 1 && is_number(&a.shadow) && is_number(&b.shadow);
+    let next = (near(gap) && !numbers) || (a.tail > 0 && near(gap - a.tail as i32));
+    a.top == b.top && a.row == b.row && a.y == b.y && next && a.align == b'l' && b.align == b'l' && all_text(a) && all_text(b)
+}
+
+/// 只有數字的一段（數量、日期，可夾小數點、正負號這類符號）：遊戲照欄位或圖示的位置擺（見 chainable、strip 的 Mono）
+fn is_number(s: &[u8]) -> bool {
+    s.iter().any(u8::is_ascii_digit) && s.iter().all(|b| b.is_ascii_digit() || b".,-+%/:".contains(b))
 }
 
 /// 一個字點陣化後的方框：遮罩寬 w、高為格高；org 是字的原點在方框裡的 x
@@ -644,18 +664,20 @@ impl State {
             }
         }
         self.lines = lines.into_iter().flatten().collect();
-        // 隔一格空白接起來的兩段（見 chainable）：中間那格是空白就算後一段的，緊排以後跨過那格的字才不會被切掉
+        // 接起來的兩段中間空著的格子（隔一格空白、前一段原文比譯文長出來的格子，見 chainable）：是空白就算後一段的，
+        // 緊排以後跨過這些格子的字才不會被切掉
         for line in self.lines.iter().filter(|l| l.kind == Kind::Chain) {
+            if line.y < 0 || line.y >= dimy {
+                continue;
+            }
             for pair in line.runs.windows(2) {
                 let (a, b) = (&runs[pair[0]], &runs[pair[1]]);
-                let x = a.end();
-                if b.x0 != x + 1 || x < 0 || x >= dimx || line.y < 0 || line.y >= dimy {
-                    continue;
-                }
-                let idx = (x * dimy + line.y) as usize;
-                let Some((c, t)) = (unsafe { cell(gps, idx, line.top) }) else { continue };
-                if unsafe { (*c == b' ' || *c == 0) && *t == 0 } {
-                    self.owner[line.top as usize][idx] = pair[1] as u32 + 1;
+                for x in a.end().max(0)..b.x0.min(dimx) {
+                    let idx = (x * dimy + line.y) as usize;
+                    let Some((c, t)) = (unsafe { cell(gps, idx, line.top) }) else { continue };
+                    if unsafe { (*c == b' ' || *c == 0) && *t == 0 } {
+                        self.owner[line.top as usize][idx] = pair[1] as u32 + 1;
+                    }
                 }
             }
         }
@@ -694,7 +716,7 @@ impl State {
                 for k in 0..bytes.len() as i32 {
                     owner[((x + k) * dimy + y) as usize] = id as u32 + 1;
                 }
-                extra.push(Run { top, row: Row::Whole, x0: x, y, shadow: bytes, glyphs: Vec::new(), align: b'l', pad: 0, text: None, anchor: None, dfhack: false });
+                extra.push(Run { top, row: Row::Whole, x0: x, y, shadow: bytes, glyphs: Vec::new(), align: b'l', pad: 0, tail: 0, text: None, anchor: None, dfhack: false });
                 id
             };
             let (nl, nr) = (left.len() as i32, right.len() as i32);
@@ -1048,8 +1070,7 @@ impl State {
                         rel.push((pen, c));
                         pen += self.advance(c, dy);
                     }
-                    let numeric = group.iter().any(char::is_ascii_digit)
-                        && group.iter().all(|&c| c.is_ascii_digit() || ".,-+%/:".contains(c));
+                    let numeric = is_number(&s[start..end]);
                     let x = if numeric && !self.left_numbers { end as f32 * dx as f32 - pen } else { start as f32 * dx as f32 };
                     placed.extend(rel.into_iter().map(|(p, c)| (x + p, c)));
                     k = end.max(start + 1);
@@ -1114,19 +1135,20 @@ impl State {
             // 接成一行：從第一個非空白格起緊排；譯文補到原文寬度的空白不佔位；兩格以上的空白（欄位補位）
             // 跳到下一個字原本的格子（不往回），欄位不跑掉
             Kind::Chain => {
-                // (第幾段, 格位, 字, 是譯文結尾的補位空白)；兩段中間空著的格子（DFHack 標籤與值之間的空白）算一般空白
-                let mut all: Vec<(usize, i32, char, bool)> = Vec::new();
-                let mut prev_end: Option<i32> = None;
+                // (第幾段, 格位, 字, 這格是什麼)；兩段中間空著的格子（DFHack 標籤與值之間的空白）算一般空白，
+                // 前一段原文比譯文長出來的格子（Run::tail）另外標出來
+                let mut all: Vec<(usize, i32, char, Fill)> = Vec::new();
+                let mut prev_end: Option<(i32, i32)> = None;
                 for (i, &ri) in line.runs.iter().enumerate() {
                     let run = run_at(base, extra, ri);
-                    if let Some(end) = prev_end {
-                        all.extend((end..run.x0).map(|x| (i, x - line.x0, ' ', false)));
+                    if let Some((end, tail_end)) = prev_end {
+                        all.extend((end..run.x0).map(|x| (i, x - line.x0, ' ', if x < tail_end { Fill::Tail } else { Fill::Text })));
                     }
-                    prev_end = Some(run.end());
+                    prev_end = Some((run.end(), run.end() + run.tail as i32));
                     let items = run.items(&chars);
                     // 結尾補位的空白（Run::pad）不佔位；譯文本身結尾的空白（「 至 」）照算
                     let last = items.len().saturating_sub(run.pad);
-                    all.extend(items.into_iter().enumerate().map(|(j, (k, c))| (i, run.x0 - line.x0 + k as i32, c, j >= last)));
+                    all.extend(items.into_iter().enumerate().map(|(j, (k, c))| (i, run.x0 - line.x0 + k as i32, c, if j >= last { Fill::Pad } else { Fill::Text })));
                 }
                 let mut ranges_px: Vec<(f32, f32)> = vec![(f32::MAX, f32::MIN); line.runs.len()];
                 let mut pen: Option<f32> = None;
@@ -1135,15 +1157,19 @@ impl State {
                     let (i, cell, c, _) = all[n];
                     if c == ' ' {
                         let gap = all[n..].iter().take_while(|&&(_, _, c, _)| c == ' ').count();
-                        // 只剩譯文補位的空白（後面還有字）：不佔位
-                        let pad_only = all[n..n + gap].iter().all(|&(_, _, _, pad)| pad) && n + gap < all.len();
+                        // 只剩補位的空白（後面還有字）：不佔位
+                        let pad_only = all[n..n + gap].iter().all(|&(_, _, _, f)| f != Fill::Text) && n + gap < all.len();
                         if let (Some(p), false) = (pen.as_mut(), pad_only) {
-                            let real = all[n..n + gap].iter().filter(|&&(_, _, _, pad)| !pad).count();
+                            let real = all[n..n + gap].iter().filter(|&&(_, _, _, f)| f == Fill::Text).count();
+                            let (before, after) = (placed.last().map(|&(_, c)| c), all.get(n + gap).map(|&(_, _, c, _)| c));
+                            // 遊戲照英文字寬一個個排的詞（前一段有 Run::tail：金屬清單「鐵 金 銀」）是分開的幾項，中文字中間的空白照留
+                            let words = all[n..n + gap].iter().any(|&(_, _, _, f)| f == Fill::Tail);
+                            let drop = if words { before.is_some_and(full_width_punctuation) } else { drop_space(before, after) };
                             if real >= 2 {
                                 if let Some(&(_, next, _, _)) = all.get(n + gap) {
                                     *p = p.max(next as f32 * dx as f32);
                                 }
-                            } else if real == 1 && !drop_space(placed.last().map(|&(_, c)| c), all.get(n + gap).map(|&(_, _, c, _)| c)) {
+                            } else if real == 1 && !drop {
                                 // 一個空白照字型的空白寬；接在全形標點後面（「長期心情：」＋空白＋「滿足」）、夾在兩個中文字中間
                                 // （傳說的「Dark」「Fortress」各自翻成「黑暗」「要塞」）的不留
                                 let r = &mut ranges_px[i];
@@ -1361,7 +1387,7 @@ mod tests {
     #[test]
     fn runs_stop_piling_up_while_translation_is_off() {
         let gps = std::ptr::null_mut();
-        let plain = || record(gps, false, Row::Whole, 0, 0, b"DFHack 53.16-r2", &[], b'l', 0, None, true);
+        let plain = || record(gps, false, Row::Whole, 0, 0, b"DFHack 53.16-r2", &[], b'l', 0, 0, None, true);
         ON.store(true, Ordering::Release);
         crate::hooks::set_enabled(true).unwrap();
         frame_begin();
@@ -1385,5 +1411,26 @@ mod tests {
         assert_eq!(run_counts(), (1, 0), "開回來照常收");
         crate::hooks::set_enabled(false).unwrap();
         ON.store(false, Ordering::Release);
+    }
+
+    /// 一段靠左的字；glyphs 有東西的是譯文（一字兩格），tail 見 Run::tail
+    fn run(x0: i32, shadow: &[u8], glyphs: &[(usize, u32)], tail: usize) -> Run {
+        Run { top: false, row: Row::Whole, x0, y: 2, shadow: shadow.to_vec(), glyphs: glyphs.to_vec(), align: b'l', pad: 0, tail, text: None, anchor: None, dfhack: false }
+    }
+
+    #[test]
+    fn neighbours_close_up_except_numbers_set_apart() {
+        // 頂部資訊列的心情人數：遊戲把每個數字各自對準一個表情，隔一格：不接，各自留在原格
+        assert!(!chainable(&run(38, b"210", &[], 0), &run(42, b"52", &[], 0)));
+        // 遊戲接著游標寫的（「v」＋「53.16」）、段落照英文逐字畫的字（傳說頁沒翻的「"The Crazed Conflict"」）：接
+        assert!(chainable(&run(0, b"v", &[], 0), &run(1, b"53.16", &[], 0)));
+        assert!(chainable(&run(21, b"\"The", &[], 0), &run(26, b"Crazed", &[], 0)));
+        // 隔一格空白、有譯文：「標籤：」＋值、傳說的「黑暗」＋「要塞」
+        assert!(chainable(&run(0, b"      ", &[(0, 1), (2, 2), (4, 3)], 0), &run(7, b"12", &[], 0)));
+        assert!(chainable(&run(0, b"    ", &[(0, 1), (2, 2)], 0), &run(5, b"    ", &[(0, 3), (2, 4)], 0)));
+        // 選擇出發地點的金屬清單：「Iron」只寫了「鐵」兩格，「Gold」照英文排在原文結尾隔一格：接
+        assert!(chainable(&run(154, b"  ", &[(0, 1)], 2), &run(159, b"  ", &[(0, 2)], 2)));
+        // 上方資訊列的庫存標題照英文各自置中在一欄上（「Drink」→「酒水」，下一個「Seeds」離原文結尾兩格）：不接
+        assert!(!chainable(&run(81, b"    ", &[(0, 1), (2, 2)], 1), &run(88, b"    ", &[(0, 3), (2, 4)], 1)));
     }
 }

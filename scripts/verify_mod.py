@@ -24,7 +24,9 @@
 7. 字型：workshop.json 每種語言的 fonts 正好有 bold、regular 兩種字重；每種字重都要能畫該語言譯文、名字音譯表與吉祥物名牌（語言標籤、作者名）用到的字
    （該字重的字型清單 temp/fonts/ 至少一份有）
 8. 吉祥物：art/mascot.png 是 8-bit RGBA PNG（引擎只讀這種）；每種語言的 mascot_label 是全形字
-9. scripts/workshop.json：languages 正好是繁、簡兩種；ID、名稱、說明、作者只用 ASCII（DF 以 CP437 讀 info.txt）
+9. scripts/workshop.json：languages 正好是繁、簡兩種；ID、名稱、說明、作者只用 ASCII（DF 以 CP437 讀 info.txt）；
+   數字版本號（version.numeric）是 9 開頭的四位數：DFHack 挑同一個 MOD 的哪一版執行時把它當字串比（'10' < '9'），
+   遊戲留在 mods/ 的舊版副本（0.5.1 以前是個位數）位數不同就可能贏過新版，玩家更新後照樣跑舊版
 10. engine/patterns.tsv 有引擎要 hook 的函式（四個畫字函式、段落排版、錨定貼圖、自動換行、彩色文字框、世界生成名稱與原名）
 11. dist/ 已建置時：包裡檔案齊全（共用檔、兩個載入器與 dflang 指令、每種語言的 dflang/<語言>/，含 fonts/bold/、regular/ 各至少一份字型、
     fonts/ 底下沒有其他東西）、dflang/ 底下除了各語言沒有別的資料夾、沒有雜檔，且每種語言的字典、句型、名字音譯表與 data/ 一致，
@@ -235,6 +237,8 @@ def main() -> int:
     meta = [k for k in ("id", "name", "description") if not config[k].isascii()] \
         + ([] if config["author"].isascii() and config["author"] else ["author"])
     check(sorted(langs) == ["zh-Hans", "zh-Hant"] and not meta, "workshop.json 的 languages 正好是繁、簡兩種、info.txt 欄位為 ASCII", meta)
+    numeric = config["version"]["numeric"]
+    check(isinstance(numeric, int) and 9000 <= numeric <= 9999, f"workshop.json 的數字版本號 {numeric} 是 9 開頭的四位數（DFHack 照字串比版本）")
 
     patterns = {line.split("\t")[0] for line in (ROOT / "engine/patterns.tsv").read_text(encoding="utf-8").splitlines()
                 if line and not line.startswith("#")}

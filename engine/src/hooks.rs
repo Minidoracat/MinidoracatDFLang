@@ -298,13 +298,15 @@ unsafe fn write<T>(gps: *mut u8, offset: usize, v: T) {
 }
 
 /// 要貼的一段字：寫進畫面的替身字串（glyphs 的格位從它開頭算）、對原文的對齊（Entry::align）、
-/// 結尾有幾格是補到原文寬度的空白（不是譯文本身的空白，見 overlay.rs 的 Chain），
+/// 結尾有幾格是補到原文寬度的空白（不是譯文本身的空白，見 overlay.rs 的 Chain）、
+/// 原文比替身字串長出來、遊戲沒寫的格數（tail，靠左的譯文比英文短時；見 overlay.rs 的 chainable），
 /// 以及段落照字型實際字寬縮短時的 (縮排格數, 記號格數, 文字)（Entry::compact）。整句貼圖（overlay.rs）都會用到。
 struct Paint<'a> {
     shadow: &'a [u8],
     glyphs: &'a [(usize, u32)],
     align: u8,
     pad: usize,
+    tail: usize,
     compact: Option<(usize, usize, &'a str)>,
 }
 
@@ -312,7 +314,7 @@ impl<'a> Paint<'a> {
     fn of(entry: &'a Entry) -> Paint<'a> {
         let shadow = entry.shadow();
         let compact = entry.compact.map(|lead| (lead, shadow.len() - lead, entry.text.as_str()));
-        Paint { shadow, glyphs: &entry.glyphs, align: entry.align, pad: 0, compact }
+        Paint { shadow, glyphs: &entry.glyphs, align: entry.align, pad: 0, tail: 0, compact }
     }
 }
 
@@ -370,7 +372,7 @@ unsafe fn paint(gps: *mut u8, layer: &Layer, x0: i32, y: i32, p: Paint, dict: &D
             }
             if let Some(row) = row {
                 let shadow = &p.shadow[lead..(lead + cells).min(p.shadow.len())];
-                crate::overlay::record(gps, top, row, x0 + lead as i32, y, shadow, &[], b'l', 0, Some(text), dfhack);
+                crate::overlay::record(gps, top, row, x0 + lead as i32, y, shadow, &[], b'l', 0, 0, Some(text), dfhack);
             }
             return;
         }
@@ -391,12 +393,12 @@ unsafe fn paint(gps: *mut u8, layer: &Layer, x0: i32, y: i32, p: Paint, dict: &D
             }
         }
         match kind {
-            Some(Some(row)) => crate::overlay::record(gps, top, row, x0, y, p.shadow, p.glyphs, p.align, p.pad, None, dfhack),
+            Some(Some(row)) => crate::overlay::record(gps, top, row, x0, y, p.shadow, p.glyphs, p.align, p.pad, p.tail, None, dfhack),
             // 沒有字圖的字串（傳說頁去掉黏著標點、照英文畫的連結字，只有英數的譯文）：也交給整句貼圖，
             // 和旁邊的段落文字接成一行緊排，不然會照遊戲的點陣字或從格子讀回來、留下英文字寬的空隙
             None if p.glyphs.is_empty() => {
                 if let Some(index) = cell(0) {
-                    crate::overlay::record(gps, top, row_at(index), x0, y, p.shadow, &[], p.align, p.pad, None, dfhack);
+                    crate::overlay::record(gps, top, row_at(index), x0, y, p.shadow, &[], p.align, p.pad, p.tail, None, dfhack);
                 }
             }
             _ => {}
@@ -504,10 +506,14 @@ unsafe fn translate_call(gps: *mut u8, kind: &str, key: &[u8], space: i32, half:
             let moved: Vec<(usize, u32)> = glyphs.iter().map(|&(off, g)| (off - start + at, g)).collect();
             write(&out);
             let pad = out.len() - at - body.len();
-            paint(gps, &lay, x0, y, Paint { shadow: &out, glyphs: &moved, align, pad, compact: None }, dict, true);
+            paint(gps, &lay, x0, y, Paint { shadow: &out, glyphs: &moved, align, pad, tail: 0, compact: None }, dict, true);
         } else {
             write(shadow);
-            paint(gps, &lay, x0, y, Paint { shadow, glyphs, align: entry.align, pad: 0, compact: None }, dict, true);
+            // 譯文比原文短時遊戲只寫了譯文那幾格：原文本來畫到哪一格也記下（Paint::tail），遊戲照英文字寬排的下一段
+            // （選擇出發地點的金屬清單：addst 不限寬度，下一個從英文長度＋1 格起畫）才接得上。限了寬度的是表格的欄，
+            // 下一欄的位置是固定的，不記
+            let tail = if space > 0 { 0 } else { n.saturating_sub(cells) };
+            paint(gps, &lay, x0, y, Paint { shadow, glyphs, align: entry.align, pad: 0, tail, compact: None }, dict, true);
         }
     }
     true
@@ -845,7 +851,7 @@ pub fn dfhack_stamp(gps: usize, x: i32, y: i32, top: bool) {
     }
     let layer = if top { layout.top } else { layout.main };
     let compact = p.compact.as_ref().map(|(lead, cells, text)| (*lead, *cells, text.as_str()));
-    let paint_of = Paint { shadow: &p.shadow, glyphs: &p.glyphs, align: p.align, pad: p.pad, compact };
+    let paint_of = Paint { shadow: &p.shadow, glyphs: &p.glyphs, align: p.align, pad: p.pad, tail: 0, compact };
     unsafe { paint(gps as *mut u8, &layer, x, y, paint_of, &*dict, false) };
 }
 
@@ -872,7 +878,7 @@ unsafe fn record_plain(gps: *mut u8, layer: fn(&Layout) -> Layer, x0: i32, y: i3
     if !crate::overlay::ON.load(Ordering::Relaxed) {
         return;
     }
-    crate::overlay::record(gps, top, row, x0, y, &text[..n], &[], b'l', 0, None, dfhack);
+    crate::overlay::record(gps, top, row, x0, y, &text[..n], &[], b'l', 0, 0, None, dfhack);
 }
 
 /// (x, y) 那一格的列別（一般、半格位移的上列或下列）；格子不在畫面裡時當一般列
