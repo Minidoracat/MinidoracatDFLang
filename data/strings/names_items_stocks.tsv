@@ -6,7 +6,10 @@ right gauntlets	右護手	右护手		同上，右
 left mittens	左連指手套	左连指手套		ITEM_GLOVES:ITEM_GLOVES_MITTENS 複數（cave spider silk left mittens）；同 combat_02 的 left mitten
 right mittens	右連指手套	右连指手套		同上，右
 goblet	高腳杯	高脚杯		FUN_140a82c10 case 0xc 物品名（copper goblet）；同 names_items_jobs 的 goblets
-mug	杯	杯		ITEM_TOOL:ITEM_TOOL_MUG NAME（pink jade mug）；names_items_jobs 的 mugs 是「馬克杯」，單數接材料時（shale mug 9 格）三個字放不下、句型會照畫英文，所以只寫「杯」
+mug	馬克杯	马克杯		ITEM_TOOL:ITEM_TOOL_MUG NAME（pink jade mug）；同 names_items_jobs 的 mugs 與教學；cup 是「杯子」、goblet 是「高腳杯」。接材料時一字兩格（整句貼圖關著）可能放不下（shale mug 9 格，「頁岩馬克杯」10 格），那時照畫英文；整句貼圖照字寬量放得下
+limb/body cast	肢體固定具	肢体固定具		FUN_140a82c10 case 0x55 物品名（材料＋limb/body cast，石膏做的骨科固定具）；cast 單獨是「固定具」（names_items_exe）
+limb/body casts	肢體固定具	肢体固定具		同上，複數；庫存分類「Limb/body casts」大寫開頭也查得到（實機 perf-fort 庫存左欄照英文）
+Shields/bucklers	盾牌／小圓盾	盾牌/小圆盾		庫存分類：盾牌類，遊戲把 raws 兩種盾的複數名（shields、bucklers）用斜線接起來（實機 perf-fort 庫存左欄照英文）；譯名同 names_items_domestic
 chests	箱子	箱子		物品名 chest 的複數（dwarf bone chests）
 sarcophagi	棺材	棺材		物品名 sarcophagus 的複數（silver sarcophagi）
 forgotten beasts	遺忘巨獸	遗忘巨兽		遺忘巨獸的複數：藝術品主題（copper figurine of forgotten beasts）

@@ -197,6 +197,7 @@ bin	貨箱	货箱	game	approved
 bag	袋子	袋子	game	approved		
 barrel	桶	桶	game	approved		
 chest	箱子	箱子	game	approved		raws 裡只有家具 chest（BOX）；身體部位叫 upper body
+mug	馬克杯	马克杯	game	approved		酒館飲具（ITEM_TOOL_MUG）；cup 是杯子、goblet 是高腳杯。量詞「for a mug」（一杯）寫術語例外
 cabinet	櫥櫃	橱柜	game	approved		
 ore	礦石	矿石	game	draft		工作名稱「Smelt hematite ore」譯「冶煉赤鐵礦」：礦物名本身已有「礦」，不再接「礦石」
 metal bar	金屬錠	金属锭	game	approved		en 寫單數，同時涵蓋 metal bars

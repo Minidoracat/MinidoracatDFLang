@@ -17,7 +17,7 @@ Your room is {1}.	你的房間在{1}。	你的房间在{1}。		FUN_1404988b0 140
 I'd like the {%1}.	我要{1}。	我要{1}。		FUN_1404988b0 1404b806a-1404b8136 玩家點酒：{1} 酒名（FUN_140a82c10）
 We rent out a room for {#1} a night.	我們有一間房出租，一晚 {1}。	我们有一间房出租，一晚 {1}。		FUN_1404988b0 1404b7b4e-1404b7bd0 酒館老闆：{1} 價錢（FUN_14052c130 整數）
 We rent out rooms for {#1} a night.	我們有房間出租，一晚 {1}。	我们有房间出租，一晚 {1}。		FUN_1404988b0 1404b7b4e-1404b7bd0 同上，複數
-All drinks cost {#1} for a mug.	酒一律一杯 {1}。	酒一律一杯 {1}。		FUN_1404988b0 1404b783e-1404b7875 接在 We have … 酒單後：{1} 價錢（FUN_14052c130 整數）
+All drinks cost {#1} for a mug.	酒一律一杯 {1}。	酒一律一杯 {1}。		FUN_1404988b0 1404b783e-1404b7875 接在 We have … 酒單後：{1} 價錢（FUN_14052c130 整數）；術語例外：mug；這裡是量詞「一杯」
 {%1} for {#2}	{1}（一杯 {2}）	{1}（一杯 {2}）	inner	FUN_1404988b0 1404b7734-1404b779f We have 酒單的一項：酒名（FUN_140a82c10）＋ for ＋價錢；只給佔位用
 {%1} for free	{1}（免費）	{1}（免费）	inner	FUN_1404988b0 1404b7759-1404b77b6 酒單的一項：價錢 0 時 for free；只給佔位用
 Would you agree to become someone of {1}, taking over my duties and responsibilities?	你願意接下我在{1}的位子，承擔我的職責與重擔嗎？	你愿意接下我在{1}的位子，承担我的职责和重担吗？		FUN_1404988b0 1404b9931-1404b9b14 沒有職位時 someone＋ of ＋勢力名；寫在 {%1} of {2} 那條前
