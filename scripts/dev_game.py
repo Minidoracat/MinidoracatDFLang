@@ -5,13 +5,20 @@
 
 用法（repo 根目錄，先跑 scripts/build.py；play 自己會建置）：
   uv run scripts/dev_game.py play [--lang zh-Hant|zh-Hans|auto]     啟動器（scripts/dev-play.cmd 雙擊執行）：建置、掛包、開遊戲，遊戲關掉後自動 down
-  uv run scripts/dev_game.py up [--lang zh-Hant|zh-Hans|auto] [--with-dfi18n]   掛包、遮蔽 DFI18n（--with-dfi18n 不遮蔽）、啟動，等到 DFHack 回應；
-                                                               要測的語言寫進測試用的 dflang.json（auto 不寫，照系統判斷），載入的不是 dist 的包就失敗
+  uv run scripts/dev_game.py up [--lang zh-Hant|zh-Hans|auto] [--with-dfi18n] [--save 名稱]...
+                                                               掛包、遮蔽 DFI18n（--with-dfi18n 不遮蔽）、啟動，等到 DFHack 回應；
+                                                               要測的語言寫進測試用的 dflang.json（auto 不寫，照系統判斷），載入的不是 dist 的包就失敗；
+                                                               --save 把 temp/test-world/<名稱> 複製進遊戲的 save/
   uv run scripts/dev_game.py run dflang status                 轉給 dfhack-run
   uv run scripts/dev_game.py click X Y                         以文字格座標模擬滑鼠左鍵（不動真滑鼠、不搶焦點）
   uv run scripts/dev_game.py mouse PX PY [r]                   以畫面像素座標按住滑鼠三幀再放開（地圖點擊用）
+  uv run scripts/dev_game.py key A_TRAVEL [LEAVESCREEN ...]    依序送遊戲按鍵（df.interface_key 的名稱），最後印出焦點
+  uv run scripts/dev_game.py shot 檔名.png [--crop X Y W H] [--wait 秒]
+                                                               遊戲視窗截圖：原解析度，座標和 mouse 一樣是畫面像素；
+                                                               預設先等 1 秒（狀態剛變時遊戲可能還沒畫新的一幀）
+  uv run scripts/dev_game.py screen                            焦點與這一幀畫面上的字（中文、沒翻的英文），一段一行
   uv run scripts/dev_game.py sweep                             從目前畫面把分頁一路點開：量每個分頁標籤有沒有置中、收集未翻譯紀錄
-  uv run scripts/dev_game.py down                              關遊戲、拆掛載、移除遮蔽，還原 dflang 設定檔
+  uv run scripts/dev_game.py down                              關遊戲、拆掛載、移除遮蔽，還原 dflang 設定檔，移走 --save 的測試存檔
 
 點擊方式依畫面而異：標題選單、設定用 click（DFHack simulateInput）；世界地圖與出發地圖在遊戲邏輯迴圈裡讀滑鼠，
 要用 mouse 讓按鍵狀態維持幾幀；出發準備畫面的按鈕兩種都不收，改用 computer 對遊戲視窗先移過去再點。
@@ -23,16 +30,25 @@
 遊戲目錄 dfhack-config/ 裡原有的 dflang* 檔（玩家自己的語言設定、未翻譯紀錄）在 up 時移到
 temp/dfhack-config-backup/，down 時放回；測試期間的未翻譯紀錄（dflang misses on）在 down 時另存到
 temp/misses/<時間>.tsv，給 scripts/inventory.py 用。
+
+開發用的 DFHack 腳本 scripts/dev_lua/<名稱>.lua 在 up 時裝成 dfhack-config/scripts/dflang-dev-<名稱>.lua
+（`run dflang-dev-<名稱>` 執行），down 時刪掉；它們寫在 dfhack-config/ 的 dflang-*.tsv 在 down 時另存到 temp/dumps/。
+--save 放進去的測試存檔記在 temp/dev-game-saves.json：down 時和來源相同就刪掉，被遊戲存過的搬到 temp/saves/；
+save/ 已有同名的存檔（可能是玩家自己的）時 up 失敗，不覆蓋。
 """
 import ctypes
 import ctypes.wintypes as wt
+import filecmp
 import functools
 import json
 import os
+import re
 import shutil
+import struct
 import subprocess
 import sys
 import time
+import zlib
 from collections import Counter
 from pathlib import Path
 
@@ -49,6 +65,13 @@ WORKSHOP = json.loads((ROOT / "scripts/workshop.json").read_text(encoding="utf-8
 FOLDER = WORKSHOP["folder"]
 LANGS = [language["lang"] for language in WORKSHOP["languages"]]
 LINK = MODS / FOLDER
+SAVES = MODS.parent / "save"
+TEST_WORLDS = ROOT / "temp/test-world"
+SAVE_STATE = ROOT / "temp/dev-game-saves.json"
+SAVE_KEEP = ROOT / "temp/saves"
+DEV_LUA = ROOT / "scripts/dev_lua"
+DEV_SCRIPTS = CONFIG_DIR / "scripts"  # DFHack 的腳本路徑之一
+DUMPS_ARCHIVE = ROOT / "temp/dumps"
 
 
 def dfhack(*args: str, quiet: bool = False) -> subprocess.CompletedProcess:
@@ -97,10 +120,12 @@ def play(lang: str | None) -> int:
     return 0 if started else 1
 
 
-def up(lang: str, with_dfi18n: bool = False) -> int:
+def up(lang: str, with_dfi18n: bool = False, saves: list[str] | None = None) -> int:
     if lang not in (*LANGS, "auto"):
         print(f"--lang 只能是 {'、'.join(LANGS)} 或 auto", file=sys.stderr)
         return 2
+    if saves and not install_saves(saves):
+        return 1
     kill_game()
     # 遮蔽 MOD 或掛載連結還在表示測試進行中（up 了兩次沒有 down），這時的 dflang* 是測試自己產生的，不是玩家的，不備份
     testing = SHADOW.exists() or os.path.isjunction(LINK)
@@ -130,6 +155,7 @@ def up(lang: str, with_dfi18n: bool = False) -> int:
         data["lang"] = lang
     if data or config.is_file():
         config.write_text(json.dumps(data), encoding="utf-8")
+    install_dev_lua()
     os.startfile("steam://rungameid/975370")
     deadline = time.time() + 180
     while time.time() < deadline:
@@ -152,18 +178,79 @@ def down() -> int:
     if os.path.isjunction(LINK):
         os.rmdir(LINK)  # 只移除連結，不動 dist/
     shutil.rmtree(SHADOW, ignore_errors=True)
+    stamp = time.strftime("%Y%m%d-%H%M%S")
     misses = CONFIG_DIR / "dflang-misses.tsv"
     if misses.is_file() and misses.stat().st_size:
         MISSES_ARCHIVE.mkdir(parents=True, exist_ok=True)
-        shutil.copy2(misses, MISSES_ARCHIVE / time.strftime("%Y%m%d-%H%M%S.tsv"))
+        shutil.copy2(misses, MISSES_ARCHIVE / f"{stamp}.tsv")
+    for f in CONFIG_DIR.glob("dflang-*.tsv"):  # dev_lua 腳本的輸出（dflang-dump.tsv、dflang-jobnames.tsv）
+        if f != misses and f.stat().st_size:
+            DUMPS_ARCHIVE.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(f, DUMPS_ARCHIVE / f"{stamp}-{f.name}")
     for f in CONFIG_DIR.glob("dflang*"):
+        f.unlink()
+    for f in DEV_SCRIPTS.glob("dflang-dev-*.lua"):
         f.unlink()
     if BACKUP.is_dir():
         for f in BACKUP.iterdir():
             shutil.move(f, CONFIG_DIR / f.name)
         BACKUP.rmdir()
+    remove_saves()
     print("已還原：", sorted(p.name for p in MODS.iterdir()))
     return 0
+
+
+def install_dev_lua() -> None:
+    """scripts/dev_lua/<名稱>.lua 裝成 DFHack 腳本 dflang-dev-<名稱>（down 刪掉）"""
+    DEV_SCRIPTS.mkdir(parents=True, exist_ok=True)
+    for f in DEV_LUA.glob("*.lua"):
+        shutil.copy2(f, DEV_SCRIPTS / f"dflang-dev-{f.name}")
+
+
+def install_saves(names: list[str]) -> bool:
+    """測試存檔從 temp/test-world/ 複製進遊戲的 save/，記在 SAVE_STATE 給 down 移走。玩家自己的同名存檔（region1 是遊戲的預設名稱）不覆蓋"""
+    ours = set(json.loads(SAVE_STATE.read_text(encoding="utf-8"))) if SAVE_STATE.is_file() else set()
+    for name in names:
+        if not (TEST_WORLDS / name).is_dir():
+            have = "、".join(sorted(p.name for p in TEST_WORLDS.iterdir() if p.is_dir())) if TEST_WORLDS.is_dir() else "沒有"
+            print(f"沒有測試存檔 temp/test-world/{name}（有：{have}）", file=sys.stderr)
+            return False
+        if (SAVES / name).exists() and name not in ours:
+            print(f"遊戲的 save/ 已經有 {name}（可能是玩家自己的存檔），不覆蓋", file=sys.stderr)
+            return False
+    for name in names:
+        if not (SAVES / name).exists():
+            shutil.copytree(TEST_WORLDS / name, SAVES / name)
+        ours.add(name)
+    SAVE_STATE.parent.mkdir(parents=True, exist_ok=True)
+    SAVE_STATE.write_text(json.dumps(sorted(ours)), encoding="utf-8")
+    return True
+
+
+def same_tree(a: Path, b: Path) -> bool:
+    def files(d: Path) -> list[Path]:
+        return sorted(p.relative_to(d) for p in d.rglob("*") if p.is_file())
+    names = files(a)
+    return names == files(b) and all(filecmp.cmp(a / n, b / n, shallow=False) for n in names)
+
+
+def remove_saves() -> None:
+    """up --save 放進去的測試存檔移出遊戲的 save/：和來源相同就刪掉，被遊戲存過的搬到 temp/saves/（也許是故意存的進度）"""
+    if not SAVE_STATE.is_file():
+        return
+    for name in json.loads(SAVE_STATE.read_text(encoding="utf-8")):
+        dst = SAVES / name
+        if not dst.is_dir():
+            continue
+        if same_tree(dst, TEST_WORLDS / name):
+            shutil.rmtree(dst)
+            print(f"已移走測試存檔 {name}")
+        else:
+            keep = SAVE_KEEP / f"{name}-{time.strftime('%Y%m%d-%H%M%S')}"
+            keep.parent.mkdir(parents=True, exist_ok=True)
+            shutil.move(dst, keep)
+            print(f"測試存檔 {name} 被遊戲存過，搬到 {keep.relative_to(ROOT).as_posix()}")
+    SAVE_STATE.unlink()
 
 
 # 先移過去停兩幀（地圖依上一幀的游標位置算出指著哪一格），再按住三幀、放開後位置再留幾幀。
@@ -186,6 +273,29 @@ def loaded_package() -> str:
 
 def is_dist(path: str) -> bool:
     return f"/mods/{FOLDER}/" in path
+
+
+FOCUS_LUA = "print(table.concat(dfhack.gui.getCurFocus(true), '|'))"
+KEY_LUA = ("local gui = require('gui'); if df.interface_key['{name}'] == nil then print('NOKEY') "
+           "else gui.simulateInput(dfhack.gui.getDFViewscreen(true), '{name}') end")
+SCREEN_LUA = ("local s = dfhack.BASE_G.DFLANG; " + FOCUS_LUA + "; "
+              "if not (s and s.engine and s.engine.screen_text) then print('（引擎沒有 screen_text：先跑 build.py 再 up）') "
+              "else local t = s.engine.screen_text(); print(t ~= '' and t or '（這一幀沒有記下的字：整句貼圖或翻譯關著）') end")
+
+
+def key(names: list[str]) -> int:
+    """依序送遊戲按鍵（給目前的遊戲畫面，不是 DFHack 視窗），中間留幾幀讓遊戲處理；最後印出焦點"""
+    for name in names:
+        if not re.fullmatch(r"[A-Z0-9_]+", name) or "NOKEY" in dfhack("lua", KEY_LUA.format(name=name), quiet=True).stdout:
+            print(f"沒有這個按鍵：{name}（名稱照 df.interface_key，例 A_TRAVEL、LEAVESCREEN）", file=sys.stderr)
+            return 2
+        time.sleep(0.3)
+    return dfhack("lua", FOCUS_LUA).returncode
+
+
+def screen() -> int:
+    """焦點和這一幀畫面上的字（engine.screen_text）：確認走到哪個畫面、還有沒有英文時用，不必截圖"""
+    return dfhack("lua", SCREEN_LUA).returncode
 
 
 # ---- sweep：從目前畫面把分頁一路點開，量每個分頁標籤的字有沒有置中 ----
@@ -277,6 +387,44 @@ def capture() -> tuple[int, bytes] | None:
     gdi32.DeleteDC(dc)
     user32.ReleaseDC(hwnd, window_dc)
     return (w, data) if data else None
+
+
+def png(img: bytes, w: int, box: tuple[int, int, int, int]) -> bytes:
+    """BGRA 畫面的一塊轉成 PNG（RGB）；不用額外套件"""
+    x0, y0, cw, ch = box
+    raw = bytearray()
+    for y in range(y0, y0 + ch):
+        row = img[(y * w + x0) * 4:(y * w + x0 + cw) * 4]
+        rgb = bytearray(cw * 3)
+        rgb[0::3], rgb[1::3], rgb[2::3] = row[2::4], row[1::4], row[0::4]
+        raw += b"\0" + rgb
+
+    def chunk(tag: bytes, data: bytes) -> bytes:
+        return struct.pack(">I", len(data)) + tag + data + struct.pack(">I", zlib.crc32(tag + data))
+    return (b"\x89PNG\r\n\x1a\n" + chunk(b"IHDR", struct.pack(">IIBBBBB", cw, ch, 8, 2, 0, 0, 0))
+            + chunk(b"IDAT", zlib.compress(bytes(raw), 6)) + chunk(b"IEND", b""))
+
+
+def shot(path: str, crop: tuple[int, int, int, int] | None, wait: float) -> int:
+    """遊戲視窗截圖存成 PNG：原解析度，crop 是畫面像素 X Y W H（看字的清晰度用）"""
+    time.sleep(wait)
+    got = capture()
+    if not got:
+        print("截不到遊戲視窗（遊戲沒開？）", file=sys.stderr)
+        return 1
+    w, img = got
+    h = len(img) // (w * 4)
+    x, y, cw, ch = crop or (0, 0, w, h)
+    x, y = max(0, x), max(0, y)
+    cw, ch = min(cw, w - x), min(ch, h - y)
+    if cw <= 0 or ch <= 0:
+        print(f"裁切範圍在畫面外（畫面 {w}×{h}）", file=sys.stderr)
+        return 2
+    out = Path(path)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_bytes(png(img, w, (x, y, cw, ch)))
+    print(f"{out.resolve()}  {cw}×{ch}")
+    return 0
 
 
 def ink_center(img: bytes, w: int, x_lo: int, x_hi: int, y_lo: int, y_hi: int) -> float | None:
@@ -398,14 +546,20 @@ def sweep() -> int:
     return 1 if fails or count["stopped"] else 0
 
 
+def option(args: list[str], name: str, count: int = 1) -> list[str] | None:
+    """args 裡 name 後面的 count 個值；沒有這個旗標時 None"""
+    if name not in args:
+        return None
+    i = args.index(name)
+    return args[i + 1:i + 1 + count] if len(args) > i + count else None
+
+
 def main() -> int:
-    args = sys.argv[1:]
-    if not args or args[0] not in ("play", "up", "run", "click", "mouse", "sweep", "down"):
-        print(__doc__)
-        return 2
+    args = sys.argv[1:] or [""]
     if args[0] in ("play", "up"):
-        lang = args[2] if len(args) > 2 and args[1] == "--lang" else None
-        return play(lang) if args[0] == "play" else up(lang or "zh-Hant", "--with-dfi18n" in args)
+        lang = (option(args, "--lang") or [None])[0]
+        saves = [args[i + 1] for i, a in enumerate(args[:-1]) if a == "--save"]
+        return play(lang) if args[0] == "play" else up(lang or "zh-Hant", "--with-dfi18n" in args, saves)
     if args[0] == "run":
         return dfhack(*args[1:]).returncode
     if args[0] == "click":
@@ -415,9 +569,22 @@ def main() -> int:
     if args[0] == "mouse":
         right = "true" if args[3:4] == ["r"] else "false"
         return dfhack("lua", MOUSE_HOLD.format(px=int(args[1]), py=int(args[2]), right=right)).returncode
+    if args[0] == "key" and args[1:]:
+        return key(args[1:])
+    if args[0] == "shot":
+        if len(args) < 2 or args[1].startswith("--"):
+            print(__doc__)
+            return 2
+        crop = option(args, "--crop", 4)
+        return shot(args[1], tuple(map(int, crop)) if crop else None, float((option(args, "--wait") or ["1"])[0]))
+    if args[0] == "screen":
+        return screen()
     if args[0] == "sweep":
         return sweep()
-    return down()
+    if args[0] == "down":
+        return down()
+    print(__doc__)
+    return 2
 
 
 if __name__ == "__main__":

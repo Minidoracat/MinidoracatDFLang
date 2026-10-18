@@ -88,6 +88,7 @@ pub unsafe extern "C" fn luaopen_dflang(l: lua::State) -> c_int {
         lua::set_fn(l, c"overlay_install", overlay_install);
         lua::set_fn(l, c"set_overlay", set_overlay);
         lua::set_fn(l, c"overlay_dump", overlay_dump);
+        lua::set_fn(l, c"screen_text", screen_text);
         lua::set_fn(l, c"dh_plain", dh_plain);
         lua::set_fn(l, c"english_at", english_at);
         lua::set_fn(l, c"system_lang", system_lang);
@@ -108,6 +109,15 @@ unsafe extern "C" fn system_lang(l: lua::State) -> c_int {
 /// overlay_dump()：除錯，整句貼圖的耗時與本幀記下的字（見 overlay::dump）
 unsafe extern "C" fn overlay_dump(l: lua::State) -> c_int {
     unsafe { lua::push_str(l, &overlay::dump()) };
+    1
+}
+
+/// screen_text()：除錯，本幀畫面上的字，一段一行（見 overlay::screen_text）；還沒有字典時是空字串
+unsafe extern "C" fn screen_text(l: lua::State) -> c_int {
+    unsafe {
+        let dict = hooks::DICT.load(Ordering::Acquire);
+        lua::push_str(l, &if dict.is_null() { String::new() } else { overlay::screen_text(&*dict) });
+    }
     1
 }
 

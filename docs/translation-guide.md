@@ -52,7 +52,7 @@
 - 查整句字典時大小寫不同也找得到（`the woodcutter` 對到職業 `Woodcutter`、`Trade Depot` 對到 `Trade depot`），完全相同的寫法優先；只差大小寫的兩條譯文不同時不猜。
 - 只換標點、不含中文字的外框規則（例：`-{1}-`、`（{1}）`、`{1}，♂`，全形標點不算中文字），至少要有一個佔位翻得出來才算命中，否則照畫英文。
 - 樣板本身的格數由 `verify_mod.py` 檢查；填入片段後如果比原文寬，引擎當場放棄、照畫英文，不會蓋到旁邊。整句貼圖開著時，靠左的句型結果（清單的「名字，種族，♀ (馴服)」）一字兩格算放不下的，改照字型實際字寬再比，壓到九成放得下就畫（`docs/analysis.md` 第 2 點）；置中、靠右的照舊照格數。
-- 片段的翻譯是全域的：在 `data/strings` 加 `Labor` → 「勞動」，所有單獨畫出的 `Labor` 也會變成「勞動」。一詞多義時改寫成更長的句型，或放進 `data/screens` 限定畫面。只給句型用的片語（音色字 `dark`、`full`，樂段名、舞步名）在字串檔的 `align` 寫 `inner`：佔位抓到時查得到，介面上單獨畫出的同一個字不受影響。同一個原文可以同時有 `inner` 和一般條目（佔位裡和單獨畫出時用法不同），兩條譯文相同時 `verify_mod.py` 不算重複。常見英文單字的條目（含 `inner`）也會改變別的句型怎麼切：`Lava` 有了譯文後 `{%4}` 比得到「lava」，上面的戰報句型就拆錯公告；`Bones` 讓「human lord of bones」改用 `{@1} lord of {%2}` 拆成「人類骨頭領主」；`Change` 搶走傳說模式的領域名 change。加單字條目後拿舊樣本跑一次回歸。
+- 片段的翻譯是全域的：在 `data/strings` 加 `Labor` → 「勞動」，所有單獨畫出的 `Labor` 也會變成「勞動」。一詞多義時改寫成更長的句型，或放進 `data/screens` 限定畫面。只給句型用的片語（音色字 `dark`、`full`，樂段名、舞步名）在字串檔的 `align` 寫 `inner`：佔位抓到時查得到，介面上單獨畫出的同一個字不受影響。同一個原文可以同時有 `inner` 和一般條目（佔位裡和單獨畫出時用法不同），兩條譯文相同時 `verify_mod.py` 不算重複。常見英文單字的條目（含 `inner`）也會改變別的句型怎麼切：`Lava` 有了譯文後 `{%4}` 比得到「lava」，上面的戰報句型就拆錯公告；`Bones` 讓「human lord of bones」改用 `{@1} lord of {%2}` 拆成「人類骨頭領主」；`Change` 搶走傳說模式的領域名 change。加單字條目後跑一次 `uv run scripts/regress.py`（見「人物頁與訪客說明」）。
 - 樣板有中文字時，佔位翻不出來也算命中，會畫成半中半英（`{1}來訪了。`）。只在開頭寫一個常見英文字的樣板（`Make {1}`、`Smooth {1}`）會套到同字開頭、還沒翻的句子（`Make sure…` 變成「製作sure…」），這類樣板的佔位改用 `{@n}`，只收字典裡的名稱：`Make {@1} {@2}`（材料＋物品）、`Smooth {@1} {@2}`（材料＋地形）。
 
 ## 一詞多義
@@ -110,6 +110,7 @@
   ```
 
   輸出譯文，或「缺：」加查不到的句子；原文含換色標記時，譯文也標出顏色。遊戲裡用 `dflang t "<原文>"` 查，結果相同。
+- 改了句型或常見單字，跑 `uv run scripts/regress.py`：拿前幾輪的樣本（`temp/round*/samples_*.txt`）與介面字串（`temp/round6/corpus.txt`）比較 HEAD 和目前工作目錄的譯文，分成 fixed（原本缺、現在有）、broke（原本有、現在缺）、changed。broke 要修（結束碼 1）；changed 逐條看是不是新樣板切開了別的句子。發版前加 `--base <上一版的 tag>` 和上一版比。
 
 ## 公告與說話句
 
@@ -216,7 +217,7 @@ uv run scripts/gen_events.py
 - 通用樣板一律要有錨點，不寫 `{@1} of {2}`、`A {%1}.`、`It {%1}.`、`large {%1}` 這種：它們會在佔位裡切開別處的片語（墓碑「The Siege of Boatmurdered」變「Boatmurdered攻城」、戰報「large copper dagger」變「大型銅匕首」、性格句「He is not the type…」半中半英）。錨點的寫法：只收一個連結的 `☺{#1}☻ ({%2})`、把變化的字寫進整句（職位＋ of 寫進相關清單的括號句型，生物首句照結尾的固定字 `composed of ice`、`with external ribs` 與體型詞逐條寫）。
 - 組合出來的生成生物名（天使稱呼「領域形容詞＋稱號」207 × 31 條）整條寫出，不拆成形容詞與「{@1} Angel」句型：拆開的形容詞（animal、twisting）和稱號（Hand、Spirit）會被別處的佔位撿走（舞步「Twisting Hand」變「扭動手下」）。
 - 被截短的標籤（`Historical f...`）不用另寫：引擎會找開頭相同的整句（見 `docs/analysis.md` 第 17 點）。開頭相同、譯文不同的整句有兩條以上時照英文。反過來，本來就以刪節號結尾的字串（載入進度 `Items...`、`Text...`）一定要寫成整句條目，不然會被當成開頭相同的長句（`Items designated for dumping…`）的截短。
-- 寫完跑前幾輪的樣本與介面字串前後比對（和上一輪的 `t.exe` 比），舊樣本有任何一行改變都要查清楚是不是新樣板切開的。
+- 寫完跑 `uv run scripts/regress.py`（見「人物頁與訪客說明」），舊樣本有任何一行改變都要查清楚是不是新樣板切開的。
 
 ## 冒險模式
 
@@ -264,8 +265,9 @@ DFHack 的視窗與 overlay（控制面板、launcher、快捷鍵選單、標題
 - 遊戲專有名詞與介面固定詞收在 `glossary/terms.tsv`，原文出現該英文詞（整詞，含複數）時，譯文要用表中譯名；同一詞有多個可接受譯名時以 `|` 分隔。
 - 新術語由代理或譯者加成 `draft`；確認後改 `approved`。`approved` 不一致會讓 `terms.py check` 失敗，`draft` 只提醒。
 - `approved` 會套用到所有字串，`category`、`note` 不會縮小範圍。遊戲裡另有別的意思的詞（例：`quit` 也用在性格描述 `Quits easily`，`range` 也是 `Archery range` 射箭場）維持 `draft`，在 `note` 寫出反例。
-- 同字不同義的條目在 `note` 寫 `術語例外：<英文術語或 avoid 字詞>`（多個用「、」分隔），`terms.py check` 就不檢查那一項：動詞 `pet` 是撫摸、生物說明的 `creature` 可以寫成「動物」、软体动物的「软体」不是軟體。
+- 同字不同義的條目在 `note` 寫 `術語例外：<英文術語或 avoid 字詞>`（多個用「、」分隔），`terms.py check` 就不檢查那一項：動詞 `pet` 是撫摸、生物說明的 `creature` 可以寫成「動物」、软体动物的「软体」不是軟體。說明寫在「；」後面（`術語例外：guide；牽車，不是說明指南`）：例外詞對不上術語表的英文或 `locale.tsv` 的 avoid 字詞時（多抓了說明或括號，例外不會生效）`terms.py check` 報 FAIL。
 - 改譯名前先跑 `uv run scripts/terms.py impact <英文>`，列出所有受影響的句子一起改。
+- 寫完一批先跑 `uv run scripts/terms.py check --since HEAD`，只列這批新增或改過的列；改了術語表或用語規則時不加 `--since`，整份重查。
 
 ## 版面
 

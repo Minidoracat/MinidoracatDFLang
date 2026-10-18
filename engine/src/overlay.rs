@@ -306,6 +306,34 @@ pub fn dump() -> String {
         .collect::<String>()
 }
 
+/// 除錯：本幀畫面上的字，一段一行「x,y 旗標 內容」（文字格，和 dev_game.py click 同單位、同順序），依列、起始格排序；
+/// 中文從字圖換回字，沒翻的照英文。
+/// 旗標 T 是頂層（彈出視窗）、D 是 DFHack 畫的字。半格位移的下列和上列是同一段字，不重複列。
+/// 給 dev_game.py screen：確認走到哪個畫面、還有沒有英文時不必截圖。
+pub fn screen_text(dict: &crate::dict::Dict) -> String {
+    let Some(runs) = FRAME.lock().clone() else { return String::new() };
+    let mut chars = vec![' '; dict.glyph_of.len()];
+    for (&c, &g) in &dict.glyph_of {
+        if let Some(slot) = chars.get_mut(g as usize) {
+            *slot = c;
+        }
+    }
+    let mut lines: Vec<(i32, i32, String)> = runs
+        .iter()
+        .filter(|r| r.row != Row::Bottom)
+        .filter_map(|r| {
+            let text: String = r.items(&chars).into_iter().map(|(_, c)| c).collect();
+            let body = text.trim_start_matches(' ');
+            let x = r.x0 + (text.len() - body.len()) as i32;
+            let body = body.trim_end();
+            let flags = format!("{}{}", if r.top { 'T' } else { ' ' }, if r.dfhack { 'D' } else { ' ' });
+            (!body.is_empty()).then(|| (r.y, x, format!("{x:>3},{:<2} {flags} {body}\n", r.y)))
+        })
+        .collect();
+    lines.sort_by_key(|&(y, x, _)| (y, x));
+    lines.into_iter().map(|(_, _, line)| line).collect()
+}
+
 // ---- SDL ----
 
 #[repr(C)]

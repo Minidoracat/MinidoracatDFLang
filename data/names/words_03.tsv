@@ -132,7 +132,7 @@ STRAP	VERB	strap/straps/strapped/strapped/strapping	束	束	standard_verb
 STRAPPING_ADJ	ADJ	strapping	魁梧	魁梧	adj_dist,front_compound_adj
 STRAW	NOUN	straw/straws	稻草	稻草	front_compound_noun_plur,front_compound_noun_sing,of_noun_plur,of_noun_sing,rear_compound_noun_plur,rear_compound_noun_sing,the_compound_noun_plur,the_compound_noun_sing,the_noun_plur,the_noun_sing
 STRAY	NOUN	stray/strays	流浪者	流浪者	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_compound_noun_sing,the_noun_plur,the_noun_sing
-STRAY	VERB	stray/strays/strayed/strayed/straying	迷途	迷途	standard_verb；術語例外：stray（動詞走失，不是無主家畜）
+STRAY	VERB	stray/strays/strayed/strayed/straying	迷途	迷途	standard_verb；術語例外：stray；動詞走失，不是無主家畜
 STRENGTH	NOUN	strength/strengths	力量	力量	front_compound_noun_sing,of_noun_sing,rear_compound_noun_plur,rear_compound_noun_sing,the_compound_noun_sing,the_noun_sing
 STRENGTH	ADJ	strong	強	强	adj_dist,front_compound_adj,rear_compound_adj,the_compound_adj
 STRETCH	VERB	stretch/stretches/stretched/stretched/stretching	伸	伸	standard_verb
@@ -203,7 +203,7 @@ TIGHT	ADJ	tight	緊	紧	adj_dist
 TIME	NOUN	time/times	時光	时光	front_compound_noun_sing,of_noun_sing,rear_compound_noun_plur,rear_compound_noun_sing,the_compound_noun_sing,the_noun_plur,the_noun_sing
 TOAD	NOUN	toad/toads	蟾蜍	蟾蜍	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_compound_noun_sing,the_noun_sing
 TOE	NOUN	toe/toes	趾	趾	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_compound_noun_sing,the_noun_plur,the_noun_sing
-TOMB	NOUN	tomb/tombs	陵墓	陵墓	front_compound_noun_plur,front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_compound_noun_plur,the_compound_noun_sing,the_noun_plur,the_noun_sing；術語例外：tomb（名稱用陵墓）
+TOMB	NOUN	tomb/tombs	陵墓	陵墓	front_compound_noun_plur,front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_compound_noun_plur,the_compound_noun_sing,the_noun_plur,the_noun_sing；術語例外：tomb；名稱用陵墓
 TOME	NOUN	tome/tomes	典籍	典籍	front_compound_noun_plur,front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_compound_noun_plur,the_compound_noun_sing,the_noun_plur,the_noun_sing
 TONGUE	NOUN	tongue/tongues	舌	舌	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_compound_noun_sing,the_noun_plur,the_noun_sing
 TOOTH	NOUN	tooth/teeth	牙	牙	front_compound_noun_plur,front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_compound_noun_plur,the_compound_noun_sing,the_noun_plur,the_noun_sing
@@ -383,7 +383,7 @@ GRANITE	ADJ	granite	花崗岩	花岗岩	adj_dist,front_compound_adj,rear_compoun
 FANCY	NOUN	fanciness/fancinesses	華美	华美	of_noun_sing
 FANCY	ADJ	fancy	華麗	华丽	adj_dist,front_compound_adj,the_compound_adj
 FARM	NOUN	farm/farms	農莊	农庄	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_compound_noun_sing,the_noun_sing
-FARM	VERB	farm/farms/farmed/farmed/farming	耕	耕	standard_verb；術語例外：farming（動詞耕作，非 Farming 技能）
+FARM	VERB	farm/farms/farmed/farmed/farming	耕	耕	standard_verb；術語例外：farming；動詞耕作，非 Farming 技能
 FIELD	NOUN	field/fields	原野	原野	front_compound_noun_sing,of_noun_plur,rear_compound_noun_plur,rear_compound_noun_sing,the_compound_noun_sing,the_noun_plur,the_noun_sing
 FROTH	NOUN	froth/froths	泡沫	泡沫	front_compound_noun_sing,of_noun_plur,of_noun_sing,rear_compound_noun_plur,rear_compound_noun_sing,the_compound_noun_sing,the_noun_plur,the_noun_sing
 FROTH	ADJ	frothy	泡沫	泡沫	adj_dist,front_compound_adj,rear_compound_adj,the_compound_adj

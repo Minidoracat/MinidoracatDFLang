@@ -212,7 +212,7 @@ DF 53.16，Ryzen 9 9950X3D，1080p，畫面上限 50 幀；210 位居民、三�
 
 ## 遊戲更新
 
-1. `uv run scripts/make_patterns.py --check`：`engine/patterns.tsv` 的每個函式（引擎掛的十七個 hook、只登記位址的 `wrap_text` 與其他標過的函式）在新 exe 各恰好命中一次就不用改引擎；接著建置並實機看一次標題畫面。開局畫面的外觀與性格段落、冒險模式的訊息框、交談紀錄與通知清單另外寫死了資料的位移（第 18、20 點），改版後要實機看一次。世界生成名稱的字表用字的代號對，raws 改了字表要補 `data/names`；原生語言的字（raws 的 `language_*.txt`）改了拼法時，名字音譯表沒有的音節會讓那個名字照原文，要補 `data/translit`（第 23 點）；書名樣板取自 raws 的 `text_book_*.txt`，改了要補 `data/rules/titles.tsv`（第 21 點）；神造材料與神話物質的名稱由 raws 的 `vanilla_procedural/scripts/generators/divine.lua`、`materials.lua` 從固定字表組成，改了要補 `data/strings/names_divine_materials.tsv`。
+1. `uv run scripts/make_patterns.py --check`：`engine/patterns.tsv` 的每個函式（引擎掛的 hook，即 `engine/src/hooks.rs` 的 `HOOKS`；只登記位址的 `wrap_text`；其他標過的函式）在新 exe 各恰好命中一次就不用改引擎；接著建置並實機看一次標題畫面。開局畫面的外觀與性格段落、冒險模式的訊息框、交談紀錄與通知清單另外寫死了資料的位移（第 18、20 點），改版後要實機看一次。世界生成名稱的字表用字的代號對，raws 改了字表要補 `data/names`；原生語言的字（raws 的 `language_*.txt`）改了拼法時，名字音譯表沒有的音節會讓那個名字照原文，要補 `data/translit`（第 23 點）；書名樣板取自 raws 的 `text_book_*.txt`，改了要補 `data/rules/titles.tsv`（第 21 點）；神造材料與神話物質的名稱由 raws 的 `vanilla_procedural/scripts/generators/divine.lua`、`materials.lua` 從固定字表組成，改了要補 `data/strings/names_divine_materials.tsv`。
 2. 有失敗時跑 `uv run scripts/df_snapshot.py snapshot`；`VERSION.txt` 的 `warnings` 列出找不到的函式。
 3. 找不到的函式：刪掉 `engine/patterns.tsv` 那一行再跑 snapshot，會改用已訂閱的 DFI18n `configs/functions.lua` 試著定位；仍找不到時跑 `decompile`，在 Ghidra 對照舊版反編譯（呼叫者、引用的字串）找到新位址，把函式開頭位元組手寫成特徵碼放回 `patterns.tsv`，`--check` 確認唯一後再跑 snapshot。
 4. 函式都標到後 `uv run scripts/make_patterns.py` 重產特徵碼，`--check` 全過。

@@ -5,7 +5,7 @@ en	zh-Hant	zh-Hans	align	note
 {@1} Age of {%2} and {%3}	{1}個{2}與{3}時代	{1}个{2}与{3}时代	inner	同上：兩股勢力
 {@1} Age of {%2}	{1}個{2}時代	{1}个{2}时代	inner	同上：固定紀元名的詞或複數生物名
 {@1} Age of {2}	{1}個{2}時代	{1}个{2}时代	inner	同上：人物名
-{%1} was a time when the ☺{#2}☻, the ☺{#3}☻ and the ☺{#4}☻ were the only great powers in the world.	{1}，世上僅有的強權是☺{2}☻、☺{3}☻和☺{4}☻。	{1}，世上仅有的强权是☺{2}☻、☺{3}☻和☺{4}☻。		FUN_140d499e0 1983789-1983962 紀元頁首句（case 0，Age of Three Powers）：{1} 紀元名（FUN_140bb8e10，legendsui 的 The Age of 句型），三個歷史人物連結（連結字是「種族 名字」）；沒有 again；術語例外：world、Great（in the world 是「世上」，great powers 是「強權」）
+{%1} was a time when the ☺{#2}☻, the ☺{#3}☻ and the ☺{#4}☻ were the only great powers in the world.	{1}，世上僅有的強權是☺{2}☻、☺{3}☻和☺{4}☻。	{1}，世上仅有的强权是☺{2}☻、☺{3}☻和☺{4}☻。		FUN_140d499e0 1983789-1983962 紀元頁首句（case 0，Age of Three Powers）：{1} 紀元名（FUN_140bb8e10，legendsui 的 The Age of 句型），三個歷史人物連結（連結字是「種族 名字」）；沒有 again；術語例外：world、Great；in the world 是「世上」，great powers 是「強權」
 {%1} was a time when the ☺{#2}☻ and the ☺{#3}☻ were the only great powers in the world.	{1}，世上僅有的強權是☺{2}☻和☺{3}☻。	{1}，世上仅有的强权是☺{2}☻和☺{3}☻。		FUN_140d499e0 1983963-1984094 紀元頁首句（case 1，Age of Two …）：同類紀元第 2 次起加 again、第 3 次起 yet again（+0x14 計數）；術語例外：world、Great
 {%1} was a time when again the ☺{#2}☻ and the ☺{#3}☻ were the only great powers in the world.	{1}，世上僅有的強權再度是☺{2}☻和☺{3}☻。	{1}，世上仅有的强权再度是☺{2}☻和☺{3}☻。		FUN_140d499e0 1983963-1984094 紀元頁首句（case 1，Age of Two …）：同類紀元第 2 次起加 again、第 3 次起 yet again（+0x14 計數）；術語例外：world、Great
 {%1} was a time when yet again the ☺{#2}☻ and the ☺{#3}☻ were the only great powers in the world.	{1}，世上僅有的強權又一次是☺{2}☻和☺{3}☻。	{1}，世上仅有的强权又一次是☺{2}☻和☺{3}☻。		FUN_140d499e0 1983963-1984094 紀元頁首句（case 1，Age of Two …）：同類紀元第 2 次起加 again、第 3 次起 yet again（+0x14 計數）；術語例外：world、Great

@@ -101,9 +101,11 @@ scripts/
   gen_events.py            由 data/events 產生事件句的句型（日期、原因的各種組合）
   verify_mod.py            發版前驗證閘門
   terms.py                 術語一致與兩岸用語檢查
+  regress.py               譯文回歸比對：同一批樣本在某個 git 版本與目前工作目錄的譯文差異
   lookup.py                查一句原文的現有譯文、術語、參考譯名與遊戲字串
   inventory.py             全文盤點：分類全部遊戲文字、對照實機紀錄，排出待翻清單（temp/inventory/）
-  dev_game.py              本機實機測試：掛包、啟動、下指令、量分頁置中、還原
+  dev_game.py              本機實機測試：掛包、啟動、下指令、送按鍵、截圖、列出畫面上的字、量分頁置中、還原
+  dev_lua/                 實機測試用的 DFHack 腳本（dev_game.py up 裝成 dflang-dev-<名稱>，down 刪掉）
   dev-play.cmd             啟動器（雙擊）：建置、開遊戲，遊戲關掉後自動還原
   publish_workshop.py      上傳工作坊（預設只檢查；標題與說明分繁簡兩種語系）
   make_patterns.py         產生／驗證特徵碼
@@ -124,11 +126,14 @@ uv run scripts/gen_events.py                  # 改過 data/events 後重產事�
 uv run scripts/build.py                       # 建置（遊戲要先關：執行中會鎖住 DLL）
 uv run scripts/verify_mod.py                  # 必須全部 PASS
 uv run scripts/terms.py check                 # 術語與兩岸用語
+uv run scripts/regress.py                     # 改句型後：舊樣本的譯文和 HEAD 比（--base v0.5.2 和舊版比）
 cargo test --manifest-path engine/Cargo.toml --lib   # 引擎的單元測試
 uv run scripts/inventory.py                   # 待翻清單（需要反編譯快照）
 uv run scripts/dev_game.py play               # 啟動器：建置、掛進遊戲並啟動，遊戲關掉後自動還原（scripts/dev-play.cmd 雙擊同）
 uv run scripts/dev_game.py up --lang auto     # 掛進遊戲並啟動（auto 照系統判斷語言，也可指定 zh-Hant、zh-Hans）
 uv run scripts/dev_game.py run dflang status
+uv run scripts/dev_game.py screen             # 目前的畫面（焦點）與畫面上的每段字
+uv run scripts/dev_game.py shot temp/a.png    # 遊戲視窗截圖（原解析度；--crop X Y W H 只截一塊）
 uv run scripts/dev_game.py sweep              # 從目前畫面把分頁一路點開，量分頁標籤置中、收集未翻譯紀錄
 uv run scripts/dev_game.py down               # 關遊戲、還原 mods/ 與設定
 ```
