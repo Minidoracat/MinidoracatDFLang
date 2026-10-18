@@ -44,6 +44,10 @@ Polish {@1}	拋光{1}	抛光{1}		工作名稱
 Encrust {@1} with {@2}	用{2}鑲嵌{1}	用{2}镶嵌{1}		工作名稱：Encrust finished goods with amethyst
 Decorate with {@1}	用{1}裝飾	用{1}装饰		工作名稱
 Stud with {@1}	用{1}鑲釘	用{1}镶钉		工作名稱
+Cut {%1}	切割{1}	切割{1}		工作名稱：材料由句型組成時（Cut yak leather：yak leather 是 names 的 {@1} {@2}，不是字典條目）；排在 {@1} 版後面，免得 zz_legends_04 的「{%1} leather」把 Cut yak 當成生物名
+Polish {%1}	拋光{1}	抛光{1}		同上
+Decorate with {%1}	用{1}裝飾	用{1}装饰		同上（Decorate with yak leather，原本被拆成「用犛牛裝飾皮革」）
+Stud with {%1}	用{1}鑲釘	用{1}镶钉		同上
 Train {1} to hunt	訓練{1}狩獵	训练{1}狩猎		工作名稱：訓練動物
 Train {1} for war	訓練{1}作戰	训练{1}作战		工作名稱：訓練動物
 Slaughter {1}	屠宰{1}	屠宰{1}		工作名稱；後面可能是動物的稱呼或名字
@@ -56,10 +60,5 @@ Mill {@1}	研磨{1}	研磨{1}		工作名稱
 Process {@1}	加工{1}	加工{1}		工作名稱
 Extract from {@1}	從{1}萃取	从{1}提取		工作名稱
 Bait trap with {@1}	用{1}當陷阱誘餌	用{1}做陷阱诱饵		工作名稱
-Make {1} pipes	製作{1}音管	制作{1}音管		樂器零件的工作（工坊、物品頁「用途」）：{1} 是世界生成的樂器名，照原文
-Make {1} body	製作{1}主體	制作{1}主体		樂器零件的工作（工坊、物品頁「用途」）：{1} 是世界生成的樂器名，照原文
-Make {1} drum	製作{1}鼓	制作{1}鼓		樂器零件的工作（工坊、物品頁「用途」）：{1} 是世界生成的樂器名，照原文
-Make {1} keyboard	製作{1}鍵盤	制作{1}键盘		樂器零件的工作（工坊、物品頁「用途」）：{1} 是世界生成的樂器名，照原文
-Make {1} sound-chest	製作{1}共鳴箱	制作{1}共鸣箱		樂器零件的工作（工坊、物品頁「用途」）：{1} 是世界生成的樂器名，照原文；術語例外：chest；樂器的共鳴箱
-Make {1} strings	製作{1}琴弦	制作{1}琴弦		樂器零件的工作（工坊、物品頁「用途」）：{1} 是世界生成的樂器名，照原文
+{1} (engrave memorial)	{1}（雕刻紀念石板）	{1}（雕刻纪念石板）		FUN_140d032b0 case 0xd3 工作名稱：石工工坊「雕刻紀念石板」清單的每一項＝亡者名字（FUN_141330c30）或生物描述（FUN_140aa3bd0，Stray Blue Peachick (Tame)）＋ (engrave memorial)
 [Requires {%1}]	[需要{1}]	[需要{1}]		FUN_1408c3fe0 L1263874 工坊任務清單：反應缺原料時的紅字，「[Requires 」＋試劑說明（試劑 vtable +0x38＝FUN_140edc660→FUN_140a2adb0 工作物品條件，數量固定 1、單數，FUN_14052d650 只把第一個字母大寫）＋「]」：MAKE WOODEN DISPLAY CASE 缺窗戶時是 [Requires Window]；說明翻不出來整條照英文

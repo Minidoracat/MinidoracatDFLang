@@ -1,0 +1,21 @@
+en	zh-Hant	zh-Hans	align	note
+the flat of his {%1}	{1}的刃面	{1}的刃面	inner	戰報的武器部位（raws 武器 [ATTACK:…:slap:slaps:flat]、pommel、handle、shaft、helve）：「with the flat of his 武器」接在 combat_02 的 with {%5} 外框；放在 articles.tsv 前（檔名 _ 開頭），冠詞外框才不會先把 the 去掉、整段翻不出來（對練報告「slaps … with the flat of his Lunoshur」）
+the flat of her {%1}	{1}的刃面	{1}的刃面	inner	同上
+the flat of its {%1}	{1}的刃面	{1}的刃面	inner	同上
+the flat of your {%1}	{1}的刃面	{1}的刃面	inner	同上
+the pommel of his {%1}	{1}的柄頭	{1}的柄头	inner	同上
+the pommel of her {%1}	{1}的柄頭	{1}的柄头	inner	同上
+the pommel of its {%1}	{1}的柄頭	{1}的柄头	inner	同上
+the pommel of your {%1}	{1}的柄頭	{1}的柄头	inner	同上
+the handle of his {%1}	{1}的握柄	{1}的握柄	inner	同上
+the handle of her {%1}	{1}的握柄	{1}的握柄	inner	同上
+the handle of its {%1}	{1}的握柄	{1}的握柄	inner	同上
+the handle of your {%1}	{1}的握柄	{1}的握柄	inner	同上
+the shaft of his {%1}	{1}的桿身	{1}的杆身	inner	同上
+the shaft of her {%1}	{1}的桿身	{1}的杆身	inner	同上
+the shaft of its {%1}	{1}的桿身	{1}的杆身	inner	同上
+the shaft of your {%1}	{1}的桿身	{1}的杆身	inner	同上
+the helve of his {%1}	{1}的斧柄	{1}的斧柄	inner	同上
+the helve of her {%1}	{1}的斧柄	{1}的斧柄	inner	同上
+the helve of its {%1}	{1}的斧柄	{1}的斧柄	inner	同上
+the helve of your {%1}	{1}的斧柄	{1}的斧柄	inner	同上

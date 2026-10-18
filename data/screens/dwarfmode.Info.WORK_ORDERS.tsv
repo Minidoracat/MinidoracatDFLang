@@ -1,2 +1,5 @@
 en	zh-Hant	zh-Hans	align	row	note
 clear	清除	清除			DFHack hack/lua/plugins/orders.lua 工作指令 overlay 的按鈕（清除全部工作指令）；全域 names_inorganic_colors.tsv 的 clear 是顏色「透明」，所以只在工作指令畫面套用
+Still	釀酒	酿酒			FUN_14054fa20 建立工作指令左欄的工坊清單（getName）；同 dwarfmode.Info.BUILDINGS 的依畫面譯文，全域只有 fort_2 的 inner
+Loom	織機	织机			同上
+Fishery	漁獲	渔获			同上

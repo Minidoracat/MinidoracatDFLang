@@ -2,6 +2,21 @@
 
 所有重要的變更都記錄在這裡。格式依 [Keep a Changelog](https://keepachangelog.com/zh-TW/1.1.0/)，版本號照 `scripts/workshop.json`。每一版的工作坊更新說明（`docs/steam/changelog-*.bbcode`）由這裡整理成玩家看得懂的重點。
 
+## [Unreleased]
+
+### 修正
+
+- **工坊的樂器工作整排照英文**：工匠工坊「新增任務」的「製作樂器」分類，與樂器、樂器零件的工作（「Assemble astesh」「Make bukog hammers」「Forge dizesh drone pipes」），缺零件時的紅字（「[Requires Astesh bellows]」），建立工作指令的全部工作清單裡的同一批工作，以及「柳木 nimo」這類「材料＋樂器」的物品名，都照英文。樂器是世界生成時造的，名字是矮人語這類原生語言的字。現在這些都是中文，樂器名照原文（「組裝astesh」「製作bukog槌」「[需要astesh風箱]」）。
+  > 技術要點：讀檔時 `lua/loader.lua` 的 `note_world_names` 把樂器名（單複數）與神器的原名交給新的 `engine.note_native`（`names::note_native`）。新佔位 `{'n}` 只收登記過的原名（`names::is_native`，第一個字母被遊戲改大寫也收，照登記的寫法畫），句型在 `data/rules/instruments.tsv`（零件名照 FUN_140ebe8a0 的 `[INSTRUMENT_PIECE:…]`），取代 jobs.tsv 原本六條 `Make {1} pipes` 這類任意佔位的句型（「Make dizesh drone pipes」原本被拆成「dizesh drone音管」）。
+- **對練、戰鬥報告裡有神器武器的整句照英文**：兵器或盾牌是有名字的神器時（「with his Sherikdan」「blocked with ûd ìtdùn」），整則報告照英文；對練時用刀面拍、用柄頭打的報告（「with the flat of his …」「with the pommel of his …」）也照英文。大型要塞實測一個存檔裡的 474 種報告，現在全部是中文（「劍術大師用Sherikdan刺了劍術大師的左腳，只輕輕碰了一下！」「用鋼短劍的柄頭擊打」）。報告裡的品質記號 ≡ 原本在整句貼圖下看不見（「被　鋼盾牌　擋下了」），現在照常顯示。
+  > 技術要點：佔位抓到的片段是登記過的原名時（`names::is_native`），名字音譯關著也算翻好、照原文（`Dict::piece`，只在佔位裡，整句只是原名時不算）。武器部位 flat、pommel、handle、shaft、helve 寫成 `the 部位 of his {%1}` 的 inner 句型（`data/rules/_combat_parts.tsv`，排在 articles.tsv 前）。字型子集加 ≡«»：整句貼圖把譯文裡夾的這些 CP437 記號也用本包字型畫（`scripts/build.py`）。
+- **對練警報清單的劍術大師照英文**：「The Swordmaster Aban Rìtharurvad正在對練。」現在是「劍術大師Aban Rìtharurvad正在對練。」；軍事職業名遊戲寫成大寫（Swordmaster、Swordsdwarf、Elite Marksdwarf…）時原本拆不開。
+  > 技術要點：`data/rules/military_titles.tsv` 逐一寫出 37 個軍事職業（`The Swordmaster {*1}`）。不寫成 `The {@1} {*2}`：`{@1}` 會收世界名稱的形容詞，把「The Pale Horde」切成「蒼白Horde」。
+- **工坊任務提示框「需要：」的長條件照英文**：「Non-economic hard stone」「Unrotten ivory/tooth body」這種被遊戲切成兩行的條件，第一行照英文、第二行單獨翻（「石塊」）。現在兩行都是中文。
+  > 技術要點：遊戲在 FUN_1408c2ca0 自己照 29 格切行，切點的一個空白留在行尾；畫字 hook 整行查不到時去掉行尾那一個空白再查（`hooks.rs` 的 `lookup`；兩格以上的空白是欄位補位，不去）。截短前的原文、去掉行尾空白、截斷處前面那段這幾種換寫法再查的最多三層（`LOOKUP_DEPTH`）：原文本身又以「 ...」「... 」結尾時會繞回原來的寫法，原本沒有上限。
+- **其他照英文的地方**：石工工坊「雕刻紀念石板」清單的每一項（「Bomrek Kosothudist（雕刻紀念石板）」）、場所詳情的神殿職位（「Sacred Torch」→「神聖之火炬」；「Holy Bite」從「神聖噬咬」改成「聖噬咬」，和同一列的人名＋職位一致）、建立工作指令左欄的釀酒、織機、漁獲，倉儲區自訂設定的未處理的魚（「未處理的生鯷魚，♂」）、大罐、天使帶的武器盔甲型號（「鼓脹胸甲」「細刃」「荷葉邊斗篷」）與世界生成生物的肉、脂肪、皮革、羊皮紙、絲線（「河狸惡鬼肉」「切碎的河狸惡鬼肝臟」）。天使身上的材料原本拆錯成「Nocam meat之浩劫」「kosh leather之鬥士」，現在是「Nocam之浩劫肉」「kosh之鬥士皮革」。
+  > 技術要點：生成生物的材料句型（`{%1} meat`、`{%1} leather`…）放在 zz_legends_04.tsv 天使名「{名詞} of {1}」前面；同時補 jobs.tsv 的 `Cut／Polish／Decorate with／Stud with {%1}`，材料由句型組成的工作（「Decorate with yak leather」）才不會被材料句型拆成「用犛牛裝飾皮革」。天使型號形容詞寫成 inner（`names_items_angel.tsv`），long、short、blade 這類常見字不單獨寫（會把「plant long sword」拆成「植物長劍術」、「axe blade」拆成「斧頭刃」）。
+
 ## [0.5.3] - 2026-10-18
 
 ### 修正

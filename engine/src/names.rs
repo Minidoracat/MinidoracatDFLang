@@ -73,7 +73,8 @@ struct Name {
 /// 英文名 → 中文名。ponytail: 滿了整張清掉，畫面上的名字下次遊戲再組名字時補回來
 static NAMES: LazyLock<Mutex<HashMap<Vec<u8>, Name>>> = LazyLock::new(|| Mutex::new(HashMap::new()));
 const NAMES_LIMIT: usize = 200_000;
-/// 遊戲組過的原名（整個原名，和只有名的寫法）：名字音譯開著時查得到音譯（見 get）。關著時也照記，打開選項就有
+/// 遊戲組過的原名（整個原名，和只有名的寫法），與讀檔時登記的神器原名、樂器名：名字音譯開著時查得到音譯（見 get）。
+/// 關著時也照記，打開選項就有；句型的片段是這裡的原名時照原文也算翻好（見 is_native、Dict::piece）
 static NATIVES: LazyLock<Mutex<HashSet<Vec<u8>>>> = LazyLock::new(|| Mutex::new(HashSet::new()));
 /// 每登記一個新名字加一：字典記成翻不出來的字串，在這之後可能翻得出來了（見 Dict::rule_entry）
 static GENERATION: AtomicU64 = AtomicU64::new(0);
@@ -220,10 +221,32 @@ pub fn note_native(out: &[u8]) {
         added = true;
     }
     drop(natives);
-    // 名字音譯開著時才有新的譯文：字典記成翻不出來的字串要重算
-    if added && crate::translit::table().is_some() {
+    // 新的原名讓字典記成翻不出來的字串可能翻得出來（名字音譯開著時有音譯；關著時佔位裡的原名也算翻好，見 is_native）：要重算。
+    // 只有第一次記到的原名才換版本，遊戲每幀重組同一個名字不會一直重算
+    if added {
         GENERATION.fetch_add(1, Ordering::Release);
     }
+}
+
+/// 登記過的原名（見 note_native：遊戲組過的原名、讀檔時登記的神器原名與樂器名）。第一個字母大寫的寫法也算
+/// （「[Requires Astesh bellows]」「Produces: Talin body」把樂器名的第一個字母改大寫）
+pub fn is_native(word: &[u8]) -> bool {
+    let natives = NATIVES.lock();
+    natives.contains(word) || lower_first(word).is_some_and(|w| natives.contains(&w))
+}
+
+/// 登記過的原名要畫的字：名字音譯開著時是音譯（見 get），否則照原文；只有第一個字母大寫和登記的不同時照登記的寫法
+/// （「[需要astesh風箱]」和同一張清單的「組裝astesh」一致）
+pub fn native_text(word: &[u8]) -> String {
+    let word = match lower_first(word) {
+        Some(lower) if !NATIVES.lock().contains(word) => lower,
+        _ => word.to_vec(),
+    };
+    get(&word).map_or_else(|| cp437::decode(&word), |zh| zh.to_string())
+}
+
+fn lower_first(word: &[u8]) -> Option<Vec<u8>> {
+    word.first().filter(|c| c.is_ascii_uppercase()).map(|c| [&[c.to_ascii_lowercase()][..], &word[1..]].concat())
 }
 
 /// 英文名開頭的原名、綽號（head，不含結尾的空白）接上字表組的中文名：名字音譯開著時原名也音譯、以「·」相接

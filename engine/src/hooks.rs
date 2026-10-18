@@ -427,21 +427,40 @@ impl std::ops::Deref for Found<'_> {
 }
 
 fn lookup<'a>(dict: &'a Dict, key: &[u8], y: i32) -> Option<Found<'a>> {
+    lookup_in(dict, key, y, 0)
+}
+
+/// 換一種寫法再查（截短前的原文、去掉行尾空白、截斷處前面那段）最多幾層：原文本身又以「...」「 ...」或空白結尾時
+/// （「Abc ... ...」截成「Abc ...」、「Xyz... 」截成「Xyz...」），寫法換來換去會繞回原來那個，不設上限就把堆疊用完
+const LOOKUP_DEPTH: u8 = 3;
+
+fn lookup_in<'a>(dict: &'a Dict, key: &[u8], y: i32, depth: u8) -> Option<Found<'a>> {
     let screen = if dict.screens.is_empty() { None } else { dict.screen_entry(key, &FOCUS.lock(), y) };
     if let Some(entry) = screen.or_else(|| dict.entries.get(key)) {
         return Some(Found::Fixed(entry));
     }
+    let deeper = depth < LOOKUP_DEPTH;
     // 遊戲截短的字串（`Start new conversation with the Human baro...`）：翻截短前的原文再截短
-    if let Some(e) = cut_original(key).and_then(|full| lookup(dict, &full, y)).and_then(|f| dict.cut_entry(key, &f.text)) {
+    if let Some(e) = deeper.then(|| cut_original(key)).flatten().and_then(|full| lookup_in(dict, &full, y, depth + 1))
+        .and_then(|f| dict.cut_entry(key, &f.text))
+    {
         return Some(Found::Rule(e));
     }
     if let Some(e) = dict.rule_entry(key) {
         return Some(Found::Rule(e));
     }
+    if !deeper {
+        return None;
+    }
+    // 遊戲自己依寬度切開的一行（工坊任務提示框「需要：」的物品條件：FUN_1408c2ca0 照 29 格切）：切點的一個空白留在行尾，
+    // 整行查不到時去掉它再查
+    if let Some(line) = key.strip_suffix(b" ").filter(|l| !l.ends_with(b" ") && l.iter().any(u8::is_ascii_alphabetic)) {
+        return lookup_in(dict, line, y, depth + 1);
+    }
     // 遊戲直接改長度截短、沒經過 resize 的字串（冒險同伴清單的名字欄寫死 33 格：「Zebna Histekuthros, Donkey, ♂ ...」）：
     // 截在字與字之間時翻前面完整的那段，接「…」；截在字中間的照英文
     let head = key.strip_suffix(b" ...").filter(|h| h.iter().any(u8::is_ascii_alphabetic))?;
-    lookup(dict, head, y).and_then(|f| dict.cut_entry(key, &format!("{}…", f.text))).map(Found::Rule)
+    lookup_in(dict, head, y, depth + 1).and_then(|f| dict.cut_entry(key, &format!("{}…", f.text))).map(Found::Rule)
 }
 
 // ---- 截短前的原文 ----
@@ -1451,7 +1470,7 @@ fn label_tiles(n: usize, entry: &Entry, dict: &Dict, font: impl Fn(u8) -> i32) -
 
 #[cfg(test)]
 mod tests {
-    use super::{dfhack_place, label_tiles, lookup, placed_align, wrap_plan, Columns, MissLog, MISS_BYTES, MISS_LIMIT};
+    use super::{dfhack_place, label_tiles, lookup, placed_align, wrap_plan, Columns, MissLog, CUTS, MISS_BYTES, MISS_LIMIT};
     use crate::dict::Dict;
 
     #[test]
@@ -1465,6 +1484,27 @@ mod tests {
         assert_eq!(text(b"Zebna, Donkey ...").as_deref(), Some("斑驢…"), "截在字與字之間：翻前面那段，接「…」");
         assert_eq!(text(b"Zebna, Mule ..."), None, "前面那段翻不出來照英文");
         assert_eq!(text(b"Zebna, Mu..."), None, "截在字中間不猜");
+    }
+
+    #[test]
+    fn a_line_cut_by_the_game_keeps_the_space_at_the_cut_and_still_translates() {
+        // 工坊任務提示框「需要：」：遊戲照 29 格自己切行，切點的一個空白留在行尾（「Non-economic hard stone 」、下一行「boulders」）
+        let mut d = Dict::default();
+        let chars = "非經濟堅硬石頭";
+        assert!(d.set_glyphs(chars, vec![0; chars.chars().count() * 2]));
+        d.load_tsv("Non-economic hard stone\t非經濟堅硬石頭\n");
+        let text = |k: &[u8]| lookup(&d, k, 0).map(|f| f.text.clone());
+        assert_eq!(text(b"Non-economic hard stone ").as_deref(), Some("非經濟堅硬石頭"));
+        assert_eq!(text(b"Non-economic hard stone  "), None, "兩格以上的空白是欄位補位，不當成切點");
+    }
+
+    #[test]
+    fn rewriting_the_key_stops_when_the_original_leads_back_to_it() {
+        // 截短前的原文本身又以「 ...」或「... 」結尾：找原文 → 去掉結尾 → 又找到同一筆原文，會繞回來；層數有上限，不會把堆疊用完
+        let d = Dict::default();
+        CUTS.with_borrow_mut(|cuts| cuts.extend([b"Abc ... ...".to_vec(), b"Xyz... ".to_vec()]));
+        assert!(lookup(&d, b"Abc ...", 0).is_none());
+        assert!(lookup(&d, b"Xyz...", 0).is_none());
     }
 
     #[test]

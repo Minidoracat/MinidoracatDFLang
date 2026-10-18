@@ -381,6 +381,16 @@ were{@1} {@2}	{1}獸化人{2}	{1}兽化人{2}		獸化人＋職業（沒有名字
 Were{@1} {@2}	{1}獸化人{2}	{1}兽化人{2}		同上，生物清單每個字大寫（Wereape Crossbowman）
 Were{@1}	{1}獸化人	{1}兽化人		獸化人稱呼首字大寫（Wereape）；{@1} 只收字典裡的 rcp 名，句首的 Were you… 不會被比走
 were{%1}	{1}獸化人	{1}兽化人		creatures.lua 1248 獸化人稱呼＝were＋rcp 名（連寫）；譯名沿用 settings_ann 的 Werebeast 獸化人
+{%1} meat	{1}肉	{1}肉		生成生物（天使、惡魔、夜行生物、實驗體）身上的材料：生物名＋材料（倉儲區自訂設定「食物＞肉類」：Beaver fiend meat、Catastrophe of Nocam meat）；vanilla 生物的材料字典裡有整條（cow meat 牛肉）。排在天使名「{名詞} of {1}」前：否則 {1} 會把材料一起吞掉（「Nocam meat之浩劫」）；放在這個檔案，前面檔案的句型先比
+{%1} sweetbread	{1}胸腺	{1}胸腺		同上（cow sweetbread 牛胸腺）
+{%1} tripe	{1}肚	{1}肚		同上（cow tripe 牛肚）
+{%1} fat	{1}脂肪	{1}脂肪		同上（「食物＞脂肪」：cow fat 牛脂肪）
+{%1} tallow	{1}獸脂	{1}兽脂		同上（cow tallow 牛獸脂）
+{%1} leather	{1}皮革	{1}皮革		同上（「皮革」：cow leather 牛皮革）
+{%1} parchment sheet	{1}羊皮紙	{1}羊皮纸		同上（「紙張＞羊皮紙」）
+{%1} silk thread	{1}絲線	{1}丝线		同上（「布料＞線（絲）」：giant cave spider silk thread 巨型洞穴蜘蛛絲線）
+{%1} silk cloth	{1}絲布料	{1}丝布料		同上（「布料＞布料（絲）」：giant cave spider silk cloth 巨型洞穴蜘蛛絲布料）
+Chopped {%1} liver	切碎的{1}肝臟	切碎的{1}肝脏		同上（「食物＞肉類」：Chopped cow liver 切碎的牛肝臟）
 {1}'s Angel	{1}之天使	{1}之天使		creatures.lua 2003-2078 天使：神名／領域名詞's 名詞（2070）
 Angel of {1}	{1}之天使	{1}之天使		creatures.lua 2003-2078 天使：名詞 of 神的稱號／領域名詞（2073）
 {1}'s Soldier	{1}之士兵	{1}之士兵		creatures.lua 2003-2078 天使：神名／領域名詞's 名詞（2070）

@@ -110,6 +110,9 @@ enum Kind {
     EnName,
     /// `{!n}`：原名（存檔清單的「原名, "英文名"」）：比對同 `{n}`；名稱表沒有時，名字音譯開著就音譯（見 translit.rs），否則照抄
     Native,
+    /// `{'n}`：登記過的原名（見 names::is_native：樂器名、神器原名）：程序生成樂器的工作名與零件名（「Assemble astesh」
+    /// 「Make bukog hammers」「Talin body」）。一般的字不收，所以不會套到同字開頭的句子（`Make sure…`）或物品（leather bag）
+    World,
 }
 
 enum Seg {
@@ -182,6 +185,7 @@ fn split_placeholders<T>(s: &str, mut text: impl FnMut(&str) -> Option<T>) -> Op
             Some(b'?') => Kind::EnName,
             Some(b'!') => Kind::Native,
             Some(b'_') => Kind::Word,
+            Some(b'\'') => Kind::World,
             _ => Kind::Any,
         };
         let d = i + 1 + usize::from(kind != Kind::Any);
@@ -1064,6 +1068,11 @@ impl Dict {
         if let Some(zh) = crate::names::get(key) {
             return Some((vec![(zh.to_string(), 0)], true));
         }
+        // 佔位抓到登記過的原名（戰報「with his Sherikdan」的神器原名、樂器名）：名字音譯關著時照原文，也算翻好；
+        // 整句只是一個原名時不算（照原樣畫）
+        if depth > 0 && crate::names::is_native(key) {
+            return Some((vec![(crate::names::native_text(key), 0)], true));
+        }
         // 「the goblin 名字」（傳說頁故事裡不是連結的人物）
         if let Some(zh) = key.starts_with(b"the ").then(|| self.titled_name(key, false)).flatten() {
             return Some((vec![(zh, 0)], true));
@@ -1261,6 +1270,7 @@ impl Dict {
             Kind::Title => self.title_of(piece, depth, memo).is_some(),
             Kind::Noun | Kind::Adj => crate::names::word_form(piece, kind == Kind::Adj).is_some(),
             Kind::Word => crate::names::lower_noun(piece).is_some(),
+            Kind::World => crate::names::is_native(piece),
         };
         let caps = rule.matches(key, &mut fits)?;
         let mut out = Pieces::new();
@@ -1281,6 +1291,7 @@ impl Dict {
                         Some(Kind::Title) => self.title_of(piece, depth, memo).map(|zh| (vec![(zh, 0)], true)),
                         Some(k @ (Kind::Noun | Kind::Adj)) => crate::names::word_form(piece, k == Kind::Adj).map(|zh| (vec![(zh, 0)], true)),
                         Some(Kind::Word) => crate::names::lower_noun(piece).map(|zh| (vec![(zh, 0)], true)),
+                        Some(Kind::World) => Some((vec![(crate::names::native_text(piece), 0)], true)),
                         // 遊戲組的名字照名稱的字表翻（「The Bloody Desert」是「血腥沙漠」，不是一般字典的「血腥荒漠」），和遊戲內組的一致
                         Some(Kind::EnName) => crate::names::get(piece).map(|zh| zh.to_string()).or_else(|| crate::names::parse(piece))
                             .map(|zh| (vec![(zh, 0)], true)).or_else(|| self.piece(piece, depth + 1, memo)),
@@ -1869,6 +1880,23 @@ mod tests {
     fn rejects_bad_placeholder_layouts() {
         let r = dict("").load_rules_tsv("{1}{2}\t{1}{2}\n{1} x\t{2}\n{1} y\t{1}{1}\nno placeholder\t沒有\n{1} z {@2}\t{2}\n{1+x} w\t{1}\n");
         assert_eq!((r.loaded, r.bad_source), (0, 6), "倒數第二條漏了任意佔位 {{1}}；最後一條原文帶補字");
+    }
+
+    #[test]
+    fn registered_natives_fill_world_placeholders_and_count_as_translated_pieces() {
+        // 讀檔時登記的樂器名、神器原名：{'n} 只收登記過的原名（第一個字母被遊戲改大寫也收，照登記的寫法畫）；
+        // {%n} 也把它當成翻好的片段（戰報「with his Sherikdan」），名字音譯關著時照原文
+        crate::names::note_native(b"qxtesh");
+        crate::names::note_native(b"Qxerikdan");
+        let mut d = Dict::default();
+        let chars = "組裝需要風箱用";
+        assert!(d.set_glyphs(chars, vec![0; chars.chars().count() * 2]));
+        d.load_rules_tsv("Assemble {'1}\t組裝{1}\n[Requires {%1}]\t[需要{1}]\n{'1} bellows\t{1}風箱\nwith his {%1}\t用{1}\n");
+        assert_eq!(d.translate_text(b"Assemble qxtesh").as_deref(), Some("組裝qxtesh"));
+        assert_eq!(d.translate_text(b"Assemble sure"), None, "沒登記的字不收（Make sure… 不會被當成樂器）");
+        assert_eq!(d.translate_text(b"[Requires Qxtesh bellows]").as_deref(), Some("[需要qxtesh風箱]"), "大寫開頭照登記的小寫畫");
+        assert_eq!(d.translate_text(b"with his Qxerikdan").as_deref(), Some("用Qxerikdan"));
+        assert_eq!(d.translate_text(b"with his Qxzzzz"), None, "沒登記的原名照舊翻不出來");
     }
 
     #[test]

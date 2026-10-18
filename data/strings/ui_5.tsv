@@ -23,6 +23,7 @@ Rotten raw hide	腐爛生皮	腐烂生皮		FUN_14035fd70 跳躍表 倉儲區設�
 Coal	煤炭	煤炭		FUN_14035fd70 跳躍表 倉儲區設定（錠／磚塊）：燃料煤
 Coral	珊瑚	珊瑚		FUN_14035fd70 跳躍表 倉儲區設定（成品材料）
 Plant growth (?)	植物部位(?)	植物部位(?)		FUN_14035fd70 跳躍表 倉儲區設定：查不到名稱的植物生長部位（原文的 (?) 照留）
+large pots/food storage	大罐／食物儲存容器	大罐／食物储存容器		FUN_14035fd70 跳躍表 倉儲區設定（家具＞類型）：大罐，遊戲把第一個字母改大寫（exe 0x1629b10）；food storage 同 props_01「食物儲存容器」
 Additional options	其他選項	其他选项		FUN_14037e230 L451136-451747 倉儲區設定：分類／項目標籤（addst，依欄寬截斷）
 Bars: metal	錠：金屬	锭：金属		FUN_14037e230 L451136-451747 倉儲區設定：分類／項目標籤（addst，依欄寬截斷）
 Bars: other materials	錠：其他材料	锭：其他材料		FUN_14037e230 L451136-451747 倉儲區設定：分類／項目標籤（addst，依欄寬截斷）

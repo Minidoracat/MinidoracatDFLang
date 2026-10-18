@@ -1,0 +1,204 @@
+en	zh-Hant	zh-Hans	align	note
+Assemble {'1}	組裝{1}	组装{1}		世界生成的樂器（FUN_140ebe8a0 2231346 起的反應 [NAME:assemble 樂器名]，遊戲把第一個字母改大寫）：工坊「新增任務」與建立工作指令的清單；{'1} 只收讀檔時登記的樂器名（lua/loader.lua note_world_names），照原文
+Make {'1}	製作{1}	制作{1}		同上：[NAME:make 樂器名]（單件式樂器）；本檔排在 jobs.tsv 前
+Forge {'1}	鍛造{1}	锻造{1}		同上：[NAME:forge 樂器名]（金屬匠鍛爐）
+Make {'1} drone pipes	製作{1}持續音管	制作{1}持续音管		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:drone pipes]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} drone pipes	鍛造{1}持續音管	锻造{1}持续音管		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:drone pipes]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} melody pipe	製作{1}旋律管	制作{1}旋律管		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:melody pipe]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} melody pipes	製作{1}旋律管	制作{1}旋律管		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:melody pipe]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} melody pipe	鍛造{1}旋律管	锻造{1}旋律管		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:melody pipe]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} melody pipes	鍛造{1}旋律管	锻造{1}旋律管		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:melody pipe]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} neck bowl	製作{1}共鳴碗	制作{1}共鸣碗		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:neck bowl]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} neck bowls	製作{1}共鳴碗	制作{1}共鸣碗		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:neck bowl]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} neck bowl	鍛造{1}共鳴碗	锻造{1}共鸣碗		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:neck bowl]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} neck bowls	鍛造{1}共鳴碗	锻造{1}共鸣碗		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:neck bowl]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} wind chest	製作{1}氣箱	制作{1}气箱		術語例外：chest；樂器的箱體、共鳴箱、氣箱，不是儲物的箱子；樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:wind chest]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} wind chests	製作{1}氣箱	制作{1}气箱		術語例外：chest；樂器的箱體、共鳴箱、氣箱，不是儲物的箱子；樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:wind chest]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} wind chest	鍛造{1}氣箱	锻造{1}气箱		術語例外：chest；樂器的箱體、共鳴箱、氣箱，不是儲物的箱子；樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:wind chest]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} wind chests	鍛造{1}氣箱	锻造{1}气箱		術語例外：chest；樂器的箱體、共鳴箱、氣箱，不是儲物的箱子；樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:wind chest]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} sound-chest	製作{1}共鳴箱	制作{1}共鸣箱		術語例外：chest；樂器的箱體、共鳴箱、氣箱，不是儲物的箱子；樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:sound-chest]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} sound-chests	製作{1}共鳴箱	制作{1}共鸣箱		術語例外：chest；樂器的箱體、共鳴箱、氣箱，不是儲物的箱子；樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:sound-chest]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} sound-chest	鍛造{1}共鳴箱	锻造{1}共鸣箱		術語例外：chest；樂器的箱體、共鳴箱、氣箱，不是儲物的箱子；樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:sound-chest]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} sound-chests	鍛造{1}共鳴箱	锻造{1}共鸣箱		術語例外：chest；樂器的箱體、共鳴箱、氣箱，不是儲物的箱子；樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:sound-chest]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} keyboard	製作{1}鍵盤	制作{1}键盘		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:keyboard]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} keyboards	製作{1}鍵盤	制作{1}键盘		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:keyboard]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} keyboard	鍛造{1}鍵盤	锻造{1}键盘		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:keyboard]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} keyboards	鍛造{1}鍵盤	锻造{1}键盘		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:keyboard]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} case	製作{1}琴殼	制作{1}琴壳		術語例外：case；樂器的琴殼，不是案件；樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:case]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} cases	製作{1}琴殼	制作{1}琴壳		術語例外：case；樂器的琴殼，不是案件；樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:case]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} case	鍛造{1}琴殼	锻造{1}琴壳		術語例外：case；樂器的琴殼，不是案件；樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:case]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} cases	鍛造{1}琴殼	锻造{1}琴壳		術語例外：case；樂器的琴殼，不是案件；樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:case]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} pipe	製作{1}音管	制作{1}音管		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:pipe]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} pipes	製作{1}音管	制作{1}音管		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:pipe]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} pipe	鍛造{1}音管	锻造{1}音管		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:pipe]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} pipes	鍛造{1}音管	锻造{1}音管		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:pipe]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} blowpipe	製作{1}吹管	制作{1}吹管		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:blowpipe]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} blowpipes	製作{1}吹管	制作{1}吹管		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:blowpipe]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} blowpipe	鍛造{1}吹管	锻造{1}吹管		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:blowpipe]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} blowpipes	鍛造{1}吹管	锻造{1}吹管		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:blowpipe]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} string	製作{1}琴弦	制作{1}琴弦		OpenCC 誤判：「弦」是教育部標準字，「絃」是異體；樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:string]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} strings	製作{1}琴弦	制作{1}琴弦		OpenCC 誤判：「弦」是教育部標準字，「絃」是異體；樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:string]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} string	鍛造{1}琴弦	锻造{1}琴弦		OpenCC 誤判：「弦」是教育部標準字，「絃」是異體；樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:string]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} strings	鍛造{1}琴弦	锻造{1}琴弦		OpenCC 誤判：「弦」是教育部標準字，「絃」是異體；樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:string]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} body	製作{1}主體	制作{1}主体		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:body]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} bodies	製作{1}主體	制作{1}主体		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:body]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} body	鍛造{1}主體	锻造{1}主体		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:body]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} bodies	鍛造{1}主體	锻造{1}主体		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:body]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} chest	製作{1}箱體	制作{1}箱体		術語例外：chest；樂器的箱體、共鳴箱、氣箱，不是儲物的箱子；樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:chest]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} chests	製作{1}箱體	制作{1}箱体		術語例外：chest；樂器的箱體、共鳴箱、氣箱，不是儲物的箱子；樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:chest]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} chest	鍛造{1}箱體	锻造{1}箱体		術語例外：chest；樂器的箱體、共鳴箱、氣箱，不是儲物的箱子；樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:chest]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} chests	鍛造{1}箱體	锻造{1}箱体		術語例外：chest；樂器的箱體、共鳴箱、氣箱，不是儲物的箱子；樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:chest]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} console	製作{1}演奏台	制作{1}演奏台		OpenCC 誤判：本專案繁中用「台」（砧台、舞台）；樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:console]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} consoles	製作{1}演奏台	制作{1}演奏台		OpenCC 誤判：本專案繁中用「台」（砧台、舞台）；樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:console]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} console	鍛造{1}演奏台	锻造{1}演奏台		OpenCC 誤判：本專案繁中用「台」（砧台、舞台）；樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:console]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} consoles	鍛造{1}演奏台	锻造{1}演奏台		OpenCC 誤判：本專案繁中用「台」（砧台、舞台）；樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:console]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} pump	製作{1}幫浦	制作{1}泵		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:pump]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} pumps	製作{1}幫浦	制作{1}泵		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:pump]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} pump	鍛造{1}幫浦	锻造{1}泵		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:pump]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} pumps	鍛造{1}幫浦	锻造{1}泵		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:pump]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} bellows	製作{1}風箱	制作{1}风箱		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:bellows]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} bellows	鍛造{1}風箱	锻造{1}风箱		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:bellows]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} neck	製作{1}琴頸	制作{1}琴颈		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:neck]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} necks	製作{1}琴頸	制作{1}琴颈		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:neck]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} neck	鍛造{1}琴頸	锻造{1}琴颈		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:neck]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} necks	鍛造{1}琴頸	锻造{1}琴颈		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:neck]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} frame	製作{1}框架	制作{1}框架		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:frame]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} frames	製作{1}框架	制作{1}框架		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:frame]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} frame	鍛造{1}框架	锻造{1}框架		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:frame]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} frames	鍛造{1}框架	锻造{1}框架		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:frame]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} yoke	製作{1}琴軛	制作{1}琴轭		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:yoke]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} yokes	製作{1}琴軛	制作{1}琴轭		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:yoke]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} yoke	鍛造{1}琴軛	锻造{1}琴轭		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:yoke]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} yokes	鍛造{1}琴軛	锻造{1}琴轭		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:yoke]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} plectrum	製作{1}撥片	制作{1}拨片		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:plectrum]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} plectra	製作{1}撥片	制作{1}拨片		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:plectrum]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} plectrum	鍛造{1}撥片	锻造{1}拨片		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:plectrum]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} plectra	鍛造{1}撥片	锻造{1}拨片		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:plectrum]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} hammer	製作{1}槌	制作{1}槌		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:hammer]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} hammers	製作{1}槌	制作{1}槌		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:hammer]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} hammer	鍛造{1}槌	锻造{1}槌		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:hammer]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} hammers	鍛造{1}槌	锻造{1}槌		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:hammer]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} mallet	製作{1}槌	制作{1}槌		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:mallet]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} mallets	製作{1}槌	制作{1}槌		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:mallet]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} mallet	鍛造{1}槌	锻造{1}槌		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:mallet]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} mallets	鍛造{1}槌	锻造{1}槌		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:mallet]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} stick	製作{1}鼓棒	制作{1}鼓棒		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:stick]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} sticks	製作{1}鼓棒	制作{1}鼓棒		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:stick]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} stick	鍛造{1}鼓棒	锻造{1}鼓棒		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:stick]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} sticks	鍛造{1}鼓棒	锻造{1}鼓棒		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:stick]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} bow	製作{1}琴弓	制作{1}琴弓		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:bow]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} bows	製作{1}琴弓	制作{1}琴弓		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:bow]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} bow	鍛造{1}琴弓	锻造{1}琴弓		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:bow]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} bows	鍛造{1}琴弓	锻造{1}琴弓		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:bow]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} bag	製作{1}氣囊	制作{1}气囊		術語例外：bag；風笛的氣囊，不是袋子；樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:bag]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} bags	製作{1}氣囊	制作{1}气囊		術語例外：bag；風笛的氣囊，不是袋子；樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:bag]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} bag	鍛造{1}氣囊	锻造{1}气囊		術語例外：bag；風笛的氣囊，不是袋子；樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:bag]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} bags	鍛造{1}氣囊	锻造{1}气囊		術語例外：bag；風笛的氣囊，不是袋子；樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:bag]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} stand	製作{1}支架	制作{1}支架		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:stand]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} stands	製作{1}支架	制作{1}支架		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:stand]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} stand	鍛造{1}支架	锻造{1}支架		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:stand]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} stands	鍛造{1}支架	锻造{1}支架		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:stand]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} head	製作{1}鼓面	制作{1}鼓面		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:head]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} heads	製作{1}鼓面	制作{1}鼓面		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:head]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} head	鍛造{1}鼓面	锻造{1}鼓面		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:head]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} heads	鍛造{1}鼓面	锻造{1}鼓面		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:head]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} drum	製作{1}鼓	制作{1}鼓		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:drum]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} drums	製作{1}鼓	制作{1}鼓		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:drum]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} drum	鍛造{1}鼓	锻造{1}鼓		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:drum]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} drums	鍛造{1}鼓	锻造{1}鼓		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:drum]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} bar	製作{1}音條	制作{1}音条		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:bar]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} bars	製作{1}音條	制作{1}音条		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:bar]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} bar	鍛造{1}音條	锻造{1}音条		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:bar]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} bars	鍛造{1}音條	锻造{1}音条		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:bar]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} bell	製作{1}鐘	制作{1}钟		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:bell]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} bells	製作{1}鐘	制作{1}钟		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:bell]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} bell	鍛造{1}鐘	锻造{1}钟		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:bell]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} bells	鍛造{1}鐘	锻造{1}钟		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:bell]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} block	製作{1}音塊	制作{1}音块		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:block]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} blocks	製作{1}音塊	制作{1}音块		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:block]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} block	鍛造{1}音塊	锻造{1}音块		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:block]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} blocks	鍛造{1}音塊	锻造{1}音块		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:block]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} bowl	製作{1}音缽	制作{1}音钵		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:bowl]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} bowls	製作{1}音缽	制作{1}音钵		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:bowl]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} bowl	鍛造{1}音缽	锻造{1}音钵		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:bowl]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} bowls	鍛造{1}音缽	锻造{1}音钵		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:bowl]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} chime	製作{1}管鐘	制作{1}管钟		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:chime]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} chimes	製作{1}管鐘	制作{1}管钟		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:chime]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} chime	鍛造{1}管鐘	锻造{1}管钟		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:chime]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} chimes	鍛造{1}管鐘	锻造{1}管钟		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:chime]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} ring	製作{1}音環	制作{1}音环		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:ring]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} rings	製作{1}音環	制作{1}音环		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:ring]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} ring	鍛造{1}音環	锻造{1}音环		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:ring]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} rings	鍛造{1}音環	锻造{1}音环		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:ring]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} triangle	製作{1}三角鐵	制作{1}三角铁		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:triangle]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Make {'1} triangles	製作{1}三角鐵	制作{1}三角铁		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:triangle]，反應名 make 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} triangle	鍛造{1}三角鐵	锻造{1}三角铁		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:triangle]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+Forge {'1} triangles	鍛造{1}三角鐵	锻造{1}三角铁		樂器零件的工作（FUN_140ebe8a0 2227035–2230424 [INSTRUMENT_PIECE:…:triangle]，反應名 forge 樂器名 零件名）：工坊、建立工作指令、物品頁「用途」
+{'1} drone pipes	{1}持續音管	{1}持续音管		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} melody pipe	{1}旋律管	{1}旋律管		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} melody pipes	{1}旋律管	{1}旋律管		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} neck bowl	{1}共鳴碗	{1}共鸣碗		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} neck bowls	{1}共鳴碗	{1}共鸣碗		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} wind chest	{1}氣箱	{1}气箱		術語例外：chest；樂器的箱體、共鳴箱、氣箱，不是儲物的箱子；樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} wind chests	{1}氣箱	{1}气箱		術語例外：chest；樂器的箱體、共鳴箱、氣箱，不是儲物的箱子；樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} sound-chest	{1}共鳴箱	{1}共鸣箱		術語例外：chest；樂器的箱體、共鳴箱、氣箱，不是儲物的箱子；樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} sound-chests	{1}共鳴箱	{1}共鸣箱		術語例外：chest；樂器的箱體、共鳴箱、氣箱，不是儲物的箱子；樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} keyboard	{1}鍵盤	{1}键盘		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} keyboards	{1}鍵盤	{1}键盘		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} case	{1}琴殼	{1}琴壳		術語例外：case；樂器的琴殼，不是案件；樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} cases	{1}琴殼	{1}琴壳		術語例外：case；樂器的琴殼，不是案件；樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} pipe	{1}音管	{1}音管		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} pipes	{1}音管	{1}音管		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} blowpipe	{1}吹管	{1}吹管		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} blowpipes	{1}吹管	{1}吹管		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} string	{1}琴弦	{1}琴弦		OpenCC 誤判：「弦」是教育部標準字，「絃」是異體；樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} strings	{1}琴弦	{1}琴弦		OpenCC 誤判：「弦」是教育部標準字，「絃」是異體；樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} body	{1}主體	{1}主体		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} bodies	{1}主體	{1}主体		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} chest	{1}箱體	{1}箱体		術語例外：chest；樂器的箱體、共鳴箱、氣箱，不是儲物的箱子；樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} chests	{1}箱體	{1}箱体		術語例外：chest；樂器的箱體、共鳴箱、氣箱，不是儲物的箱子；樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} console	{1}演奏台	{1}演奏台		OpenCC 誤判：本專案繁中用「台」（砧台、舞台）；樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} consoles	{1}演奏台	{1}演奏台		OpenCC 誤判：本專案繁中用「台」（砧台、舞台）；樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} pump	{1}幫浦	{1}泵		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} pumps	{1}幫浦	{1}泵		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} bellows	{1}風箱	{1}风箱		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} neck	{1}琴頸	{1}琴颈		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} necks	{1}琴頸	{1}琴颈		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} frame	{1}框架	{1}框架		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} frames	{1}框架	{1}框架		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} yoke	{1}琴軛	{1}琴轭		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} yokes	{1}琴軛	{1}琴轭		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} plectrum	{1}撥片	{1}拨片		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} plectra	{1}撥片	{1}拨片		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} hammer	{1}槌	{1}槌		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} hammers	{1}槌	{1}槌		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} mallet	{1}槌	{1}槌		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} mallets	{1}槌	{1}槌		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} stick	{1}鼓棒	{1}鼓棒		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} sticks	{1}鼓棒	{1}鼓棒		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} bow	{1}琴弓	{1}琴弓		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} bows	{1}琴弓	{1}琴弓		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} bag	{1}氣囊	{1}气囊		術語例外：bag；風笛的氣囊，不是袋子；樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} bags	{1}氣囊	{1}气囊		術語例外：bag；風笛的氣囊，不是袋子；樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} stand	{1}支架	{1}支架		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} stands	{1}支架	{1}支架		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} head	{1}鼓面	{1}鼓面		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} heads	{1}鼓面	{1}鼓面		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} drum	{1}鼓	{1}鼓		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} drums	{1}鼓	{1}鼓		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} bar	{1}音條	{1}音条		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} bars	{1}音條	{1}音条		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} bell	{1}鐘	{1}钟		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} bells	{1}鐘	{1}钟		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} block	{1}音塊	{1}音块		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} blocks	{1}音塊	{1}音块		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} bowl	{1}音缽	{1}音钵		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} bowls	{1}音缽	{1}音钵		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} chime	{1}管鐘	{1}管钟		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} chimes	{1}管鐘	{1}管钟		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} ring	{1}音環	{1}音环		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} rings	{1}音環	{1}音环		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} triangle	{1}三角鐵	{1}三角铁		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{'1} triangles	{1}三角鐵	{1}三角铁		樂器零件的物品名（工坊任務提示框「產出：Talin body」、缺原料的「[Requires Astesh bellows]」）：{'1} 只收登記過的樂器名，所以不會套到 upper body、leather bag
+{@1} {'2}	{1}{2}	{1}{2}		材料＋樂器的物品名（willow nimo、iron emgash）：{@1} 是字典裡的材料；同 names.tsv 的 {@1} {@2}
+{@1} {@2} {'3}	{1}{2}{3}	{1}{2}{3}		兩段材料＋樂器（donkey bone unol、finger lime wood oséfi）

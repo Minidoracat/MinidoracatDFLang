@@ -59,6 +59,7 @@ pub unsafe extern "C" fn luaopen_dflang(l: lua::State) -> c_int {
         lua::set_fn(l, c"set_name_layout", set_name_layout);
         lua::set_fn(l, c"load_names", load_names);
         lua::set_fn(l, c"note_name", note_name);
+        lua::set_fn(l, c"note_native", note_native);
         lua::set_fn(l, c"load_translit", load_translit);
         lua::set_fn(l, c"set_translit", set_translit);
         lua::set_fn(l, c"set_options", set_options);
@@ -360,6 +361,20 @@ unsafe extern "C" fn note_name(l: lua::State) -> c_int {
                 1
             }
             _ => fail(l, "note_name: expects an address and a string"),
+        }
+    }
+}
+
+/// note_native(原名)：讀檔時 Lua 登記遊戲這次還沒組過的原名（神器的原名、樂器名，見 names::note_native）：
+/// 戰報「with his Sherikdan」、工坊的樂器工作「Assemble astesh」裡的原名照原文也算翻好
+unsafe extern "C" fn note_native(l: lua::State) -> c_int {
+    unsafe {
+        match lua::arg_bytes(l, 1) {
+            Some(native) => {
+                names::note_native(native);
+                0
+            }
+            None => fail(l, "note_native: expects a string"),
         }
     }
 }

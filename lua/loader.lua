@@ -578,6 +578,14 @@ local function note_world_names(engine)
     local function note(name)
         return not name.has_name or engine.note_name(select(2, df.sizeof(name)), dfhack.translation.translateName(name, true))
     end
+    -- 原名：戰報只寫神器的原名（「with his Sherikdan」）；樂器名是世界生成的原生語言字（工坊的「Assemble astesh」「Make bukog hammers」）
+    for _, a in ipairs(w.artifacts.all) do
+        if a.name.has_name then engine.note_native(dfhack.translation.translateName(a.name, false)) end
+    end
+    for _, d in ipairs(w.raws.itemdefs.instruments) do
+        engine.note_native(d.name)
+        engine.note_native(d.name_plural)
+    end
     for _, list in ipairs{w.entities.all, data.sites, w.artifacts.all, data.regions, data.underground_regions,
                           data.landmasses, data.mountain_peaks, data.rivers, w.musical_forms.all, w.poetic_forms.all,
                           w.dance_forms.all, w.identities.all} do
