@@ -86,6 +86,7 @@ pub unsafe extern "C" fn luaopen_dflang(l: lua::State) -> c_int {
         lua::set_fn(l, c"dh_translate", dh_translate);
         lua::set_fn(l, c"dh_stamp", dh_stamp);
         lua::set_fn(l, c"dh_wrap", dh_wrap);
+        lua::set_fn(l, c"dh_button", dh_button);
         lua::set_fn(l, c"overlay_install", overlay_install);
         lua::set_fn(l, c"set_overlay", set_overlay);
         lua::set_fn(l, c"overlay_dump", overlay_dump);
@@ -186,6 +187,23 @@ unsafe extern "C" fn dh_translate(l: lua::State) -> c_int {
         let y = lua::arg_int(l, 2).unwrap_or(-1) as i32;
         let center = lua::arg_int(l, 3).is_some_and(|c| c != 0);
         match lua::arg_bytes(l, 1).and_then(|text| hooks::dfhack_translate(text, y, center)) {
+            Some(shadow) => lua::push_bytes(l, &shadow),
+            None => lua::push_nil(l),
+        }
+        1
+    }
+}
+
+/// dh_button(整句英文, 第幾列（0 起）, 有字的列數, 這一列幾格, y)：DFHack 大按鈕這一列要畫的影子字串，翻不出來時 nil（見 hooks::dfhack_button）。
+unsafe extern "C" fn dh_button(l: lua::State) -> c_int {
+    unsafe {
+        let shadow = match (lua::arg_bytes(l, 1), lua::arg_int(l, 2), lua::arg_int(l, 3), lua::arg_int(l, 4)) {
+            (Some(phrase), Some(row), Some(rows), Some(cells)) if row >= 0 && rows > 0 && cells > 0 => {
+                hooks::dfhack_button(phrase, row as usize, rows as usize, cells as usize, lua::arg_int(l, 5).unwrap_or(-1) as i32)
+            }
+            _ => None,
+        };
+        match shadow {
             Some(shadow) => lua::push_bytes(l, &shadow),
             None => lua::push_nil(l),
         }

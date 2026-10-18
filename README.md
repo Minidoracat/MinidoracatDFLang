@@ -121,7 +121,7 @@ dist/                      建置產物（不進 git）
 需要 Windows、[uv](https://docs.astral.sh/uv/)、Rust（stable，MSVC 工具鏈）、Steam 版 Dwarf Fortress 與 DFHack。遊戲與 DFHack 位置從 Steam 自動偵測，可用環境變數 `DF_PATH`、`DFHACK_PATH` 指定。
 
 ```bash
-uv run scripts/build.py --fetch-fonts         # 首次：下載思源黑體到 temp/fonts/
+uv run scripts/build.py --fetch-fonts         # 首次：下載字型與授權到 temp/fonts/
 uv run scripts/gen_events.py                  # 改過 data/events 後重產事件句型
 uv run scripts/build.py                       # 建置（遊戲要先關：執行中會鎖住 DLL）
 uv run scripts/verify_mod.py                  # 必須全部 PASS
@@ -154,6 +154,6 @@ git tag -a v0.5.3 -m "0.5.3" && git push origin v0.5.3                         #
 - 譯文與術語表（`data/`、`glossary/`）：[CC BY 4.0](LICENSE-CC-BY-4.0.txt)。轉載或改作請註明出處。
 - 其餘程式與文件：[MIT](LICENSE)。
 - 吉祥物圖（`art/`）與工作坊封面（`docs/steam/cover-*.gif`）：© Minidoracat，保留所有權利，不在上述授權範圍內。
-- 字型：思源黑體（Noto Sans CJK TC／SC Bold、Regular），SIL Open Font License 1.1，工作坊包內附授權全文。
+- 字型：思源黑體（Noto Sans CJK TC／SC Bold、Regular）與補 ☼ 用的 Noto Sans Symbols 2，SIL Open Font License 1.1，工作坊包內附授權全文。
 - 引擎靜態連結的開源 Rust 套件（skrifa、zeno、png、retour 等）各依原授權，包內 `dflang/THIRD-PARTY-LICENSES.txt` 附授權全文（建置時產生）。
 - 致謝與參考來源見 [CREDITS.md](CREDITS.md)。

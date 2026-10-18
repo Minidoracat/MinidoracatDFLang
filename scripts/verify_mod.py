@@ -50,7 +50,7 @@ HEADER = ["en", "zh-Hant", "zh-Hans", "align", "note"]
 SCREEN_HEADER = ["en", "zh-Hant", "zh-Hans", "align", "row", "note"]
 NAME_HEADER = ["word", "pos", "en", "zh-Hant", "zh-Hans", "note"]
 TRANSLIT_HEADER = ["en", "zh-Hant", "zh-Hans", "note"]
-PACKAGE_SUFFIXES = {".txt", ".tsv", ".lua", ".dll", ".otf", ".md", ".png"}
+PACKAGE_SUFFIXES = {".txt", ".tsv", ".lua", ".dll", ".otf", ".ttf", ".md", ".png"}
 # {1}～{9}；{#1} 只收數字、{@1} 只收字典裡的字詞、{%1} 只收翻得出來的片段、{~1} 同 {1} 但譯文可省略、{^1} 只收大寫開頭的名字、
 # {*1} 只收每個字大寫、第一個字不在字典裡的人名、{?1} 同 {1} 但遊戲組的英文名拆回中文、{!1} 同 {1} 但原名在名字音譯開著時音譯；
 # 書名句型的 {$1} 收書名的主題、{&1}、{=1} 收 raws 字表的名詞、形容詞；{_1} 收 raws 字表名詞的小寫詞形（程序生成的職位名）；

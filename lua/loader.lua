@@ -407,6 +407,72 @@ local function install_tab(engine, stamp)
     end
 end
 
+-- DFHack 的大按鈕（widgets.makeButtonLabelText：civ-alert 的「Activate civilian alert」、buildingplan 選料的「Autoselect」）一格一字畫圖格，不經 paintString。
+-- 只有字的按鈕（沒有圖格、框線字元）照原樣畫完後，英文有字的列串成一句查譯文，每一列換成平分到的中文、放在那一列正中間，
+-- 字色照英文畫好的格子（滑過時的顏色也是），見 engine/src/hooks.rs 的 dfhack_button。函式不在就略過，按鈕照英文
+local function install_button(engine, stamp)
+    local ok, widgets = pcall(require, 'gui.widgets')
+    local Label = ok and type(widgets) == 'table' and widgets.Label
+    if type(Label) ~= 'table' or type(Label.onRenderBody) ~= 'function' or Label.dflang_render then return end
+    local orig = Label.onRenderBody
+    Label.dflang_render = orig
+    local screen = dfhack.screen
+    -- Label 的 text 表 → 按鈕的英文列；不是只有字的按鈕記 false。text 換了就重算
+    local rows_of = setmetatable({}, {__mode = 'k'})
+    local function button_rows(text)
+        local first = type(text) == 'table' and text[1]
+        if type(first) ~= 'table' or first.width ~= 1 or not first.htile then return nil end
+        if rows_of[text] == nil then
+            local rows = {''}
+            for _, token in ipairs(text) do
+                -- 按鈕的每格是 dfhack.pen（ch 是字碼）；讀不到的（不是 pen）就不是按鈕
+                local pen = type(token) == 'table' and token.tile
+                local ch, tile
+                if type(pen) == 'userdata' then
+                    local got, c, t = pcall(function() return pen.ch, pen.tile end)
+                    if got then ch, tile = c, t end
+                end
+                if token == NEWLINE then
+                    table.insert(rows, '')
+                elseif type(ch) ~= 'number' or ch < 32 or ch > 126 or (tile or 0) ~= 0 then
+                    rows = nil
+                    break
+                else
+                    rows[#rows] = rows[#rows] .. string.char(ch)
+                end
+            end
+            rows_of[text] = rows ~= nil and table.concat(rows):find('%a') ~= nil and rows
+        end
+        return rows_of[text] or nil
+    end
+    Label.onRenderBody = function(self, dc)
+        orig(self, dc)
+        local rows = button_rows(self.text)
+        if not rows or (self.start_line_num or 1) ~= 1 then return end
+        local words = {}
+        for _, row in ipairs(rows) do
+            local word = row:match('^%s*(.-)%s*$')
+            if word ~= '' then table.insert(words, word) end
+        end
+        local phrase, k = table.concat(words, ' '), 0
+        local paint = screen.dflang_paint_string or screen.paintString
+        for i, row in ipairs(rows) do
+            if row:find('%S') then
+                dc:seek(0, i - 1)
+                local x, y = dc.x, dc.y
+                if y < dc.clip_y1 or y > dc.clip_y2 or x < dc.clip_x1 or x + #row - 1 > dc.clip_x2 then return end
+                local shadow = engine.dh_button(phrase, k, #words, #row, y)
+                if not shadow then return end
+                local p = screen.readTile(x, y)
+                if not p then return end
+                paint(dfhack.pen.parse{fg = p.fg, bg = p.bg, bold = p.bold}, x, y, shadow)
+                stamp(x, y)
+                k = k + 1
+            end
+        end
+    end
+end
+
 -- DFHack 的說明段落（WrappedLabel、確認對話框…）在 Lua 先用 string:wrap 切成英文行再一行行畫：原函式切完後把整段與英文行交給引擎，
 -- 整段有譯文就依中文規則以同樣寬度重新換行，登記每一行要畫的中文（見 engine/src/hooks.rs 的 dfhack_wrap）。函式不在就略過，這些段落照英文
 local function install_wrap(engine)
@@ -733,6 +799,7 @@ local function start()
     install_paint_string(engine, stamp)
     install_wrap(engine)
     install_tab(engine, stamp)
+    install_button(engine, stamp)
     install_frame()
     install_read_tile(engine)
     install_typing()

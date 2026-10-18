@@ -14,6 +14,10 @@
   > 技術要點：`data/rules/military_titles.tsv` 逐一寫出 37 個軍事職業（`The Swordmaster {*1}`）。不寫成 `The {@1} {*2}`：`{@1}` 會收世界名稱的形容詞，把「The Pale Horde」切成「蒼白Horde」。
 - **工坊任務提示框「需要：」的長條件照英文**：「Non-economic hard stone」「Unrotten ivory/tooth body」這種被遊戲切成兩行的條件，第一行照英文、第二行單獨翻（「石塊」）。現在兩行都是中文。
   > 技術要點：遊戲在 FUN_1408c2ca0 自己照 29 格切行，切點的一個空白留在行尾；畫字 hook 整行查不到時去掉行尾那一個空白再查（`hooks.rs` 的 `lookup`；兩格以上的空白是欄位補位，不去）。截短前的原文、去掉行尾空白、截斷處前面那段這幾種換寫法再查的最多三層（`LOOKUP_DEPTH`）：原文本身又以「 ...」「... 」結尾時會繞回原來的寫法，原本沒有上限。
+- **小隊面板的平民警報大按鈕照英文**：DFHack 加在小隊面板右下的紅色大按鈕「Activate civilian alert」、警報發布後的「Clear civilian alert」照英文。現在是「發布／平民／警報」「解除／平民／警報」。
+  > 技術要點：DFHack 的 `widgets.makeButtonLabelText` 一格一字畫圖格、不經 `paintString`。`lua/loader.lua` 的 `install_button` 包住 `Label.onRenderBody`：只有字的按鈕照原樣畫完後，英文有字的列串成一句查譯文，譯文依列數平分、每列放在那一列正中間，字色照英文畫好的格子（`hooks.rs` 的 `dfhack_button`、新綁定 `engine.dh_button`）。buildingplan 選料視窗的「Autoselect」「Continue」也是這種按鈕。
+- **品質記號 ☼、≡ 與裝飾外框 «» 和中文中間空一段**：場所詳情的「神殿，2664 ☼ （升級需 10000 ☼）」、庫存的「≡鐵弩箭 [25]≡」「«-一袋韭蔥種子（巨型洞穴蜘蛛絲製）-»」，記號和前後的字中間空了一大段。現在接在一起（「神殿，2664☼（升級需 10000☼）」）。
+  > 技術要點：整句貼圖把 ☼ ≡ « » 當一般字元跟著字緊排（`overlay.rs` 的 `is_text`；帶 ☼ 的價值照數字對齊結尾格）。思源黑體沒有 ☼，字型子集改用 Noto Sans Symbols 2 補：補字字型的垂直度量改成主字型的，☼ 縮到大寫字母高、粗體疊字加粗（`scripts/build.py` 的 `match_metrics`、`fit_symbol`）；授權全文併進 `dflang/LICENSE-fonts.txt`。
 - **其他照英文的地方**：石工工坊「雕刻紀念石板」清單的每一項（「Bomrek Kosothudist（雕刻紀念石板）」）、場所詳情的神殿職位（「Sacred Torch」→「神聖之火炬」；「Holy Bite」從「神聖噬咬」改成「聖噬咬」，和同一列的人名＋職位一致）、建立工作指令左欄的釀酒、織機、漁獲，倉儲區自訂設定的未處理的魚（「未處理的生鯷魚，♂」）、大罐、天使帶的武器盔甲型號（「鼓脹胸甲」「細刃」「荷葉邊斗篷」）與世界生成生物的肉、脂肪、皮革、羊皮紙、絲線（「河狸惡鬼肉」「切碎的河狸惡鬼肝臟」）。天使身上的材料原本拆錯成「Nocam meat之浩劫」「kosh leather之鬥士」，現在是「Nocam之浩劫肉」「kosh之鬥士皮革」。
   > 技術要點：生成生物的材料句型（`{%1} meat`、`{%1} leather`…）放在 zz_legends_04.tsv 天使名「{名詞} of {1}」前面；同時補 jobs.tsv 的 `Cut／Polish／Decorate with／Stud with {%1}`，材料由句型組成的工作（「Decorate with yak leather」）才不會被材料句型拆成「用犛牛裝飾皮革」。天使型號形容詞寫成 inner（`names_items_angel.tsv`），long、short、blade 這類常見字不單獨寫（會把「plant long sword」拆成「植物長劍術」、「axe blade」拆成「斧頭刃」）。
 

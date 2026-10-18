@@ -20,7 +20,7 @@
 //!   比原文寬一點的名字與按鍵名）壓成長體放進格子：字距與字形本身一起橫向縮放（見 State::strip）。
 //! - 其他沒有譯文的字：單一空白隔開的字詞接成一組，從原本的格子畫起（數字對齊原本的結尾，數值框裡靠左的照起始格），
 //!   彩色文字每個字留在原格。
-//! - 方框、箭頭、品質記號這類圖形字元照遊戲原樣畫（見 is_text），兩旁的字從自己原本的格子畫起。
+//! - 方框、箭頭這類圖形字元照遊戲原樣畫（見 is_text），兩旁的字從自己原本的格子畫起；品質記號 ≡、☼ 與裝飾外框 «» 跟著字一起緊排。
 //! - 只有一列高的按鈕（排序標題）上下緣線畫在字的同一格裡，字改小一號；框的邊緣列照預設大小（見 size_for）。
 
 use std::cell::RefCell;
@@ -111,10 +111,11 @@ pub fn texture_count() -> usize {
     TEXTURES.load(Ordering::Relaxed)
 }
 
-/// 交給整句貼圖畫的一般字元：可見 ASCII、CP437 的拉丁字母（矮人名字的 ë、ü…）、♂♀ 與譯名的間隔號 ·（names.rs）；
-/// 方框、箭頭、☼ 這類圖形字元與 ¢£¥₧ƒ 照遊戲原樣畫。字型子集要有這些字（scripts/build.py）。
+/// 交給整句貼圖畫的一般字元：可見 ASCII、CP437 的拉丁字母（矮人名字的 ë、ü…）、♂♀、譯名的間隔號 ·（names.rs）、
+/// 品質記號 ≡ ☼ 與裝飾外框 «»（遊戲照原格畫的話，緊排後和中文中間空一段：「神殿，2664 ☼」）；
+/// 方框、箭頭這類圖形字元與 ¢£¥₧ƒ 照遊戲原樣畫。字型子集要有這些字（scripts/build.py）。
 pub fn is_text(b: u8) -> bool {
-    (0x20..=0x7e).contains(&b) || (0x80..=0x9a).contains(&b) || (0xa0..=0xa5).contains(&b) || matches!(b, 0x0b | 0x0c | 0xfa)
+    (0x20..=0x7e).contains(&b) || (0x80..=0x9a).contains(&b) || (0xa0..=0xa5).contains(&b) || matches!(b, 0x0b | 0x0c | 0x0f | 0xae | 0xaf | 0xf0 | 0xfa)
 }
 
 /// 全形標點（「：」「，」「。」「）」…；簡中的引號“”‘’在中文字型裡也是全形）
@@ -470,9 +471,9 @@ fn chainable(a: &Run, b: &Run) -> bool {
     a.top == b.top && a.row == b.row && a.y == b.y && next && a.align == b'l' && b.align == b'l' && all_text(a) && all_text(b)
 }
 
-/// 只有數字的一段（數量、日期，可夾小數點、正負號這類符號）：遊戲照欄位或圖示的位置擺（見 chainable、strip 的 Mono）
+/// 只有數字的一段（數量、日期、價值，可夾小數點、正負號、☼ 這類符號）：遊戲照欄位或圖示的位置擺（見 chainable、strip 的 Mono）
 fn is_number(s: &[u8]) -> bool {
-    s.iter().any(u8::is_ascii_digit) && s.iter().all(|b| b.is_ascii_digit() || b".,-+%/:".contains(b))
+    s.iter().any(u8::is_ascii_digit) && s.iter().all(|b| b.is_ascii_digit() || b".,-+%/:\x0f".contains(b))
 }
 
 /// 一個字點陣化後的方框：遮罩寬 w、高為格高；org 是字的原點在方框裡的 x
@@ -1108,14 +1109,14 @@ impl State {
             Kind::Single => {
                 let run = run_at(base, extra, line.runs[0]);
                 let items = run.items(&chars);
-                // 遊戲照原樣畫在原格的圖形字元（品質記號 ≡、☼ 這類）：那幾格不算數，字不能整句緊排跨過去
+                // 遊戲照原樣畫在原格的圖形字元（方框、箭頭這類，見 is_text）：那幾格不算數，字不能整句緊排跨過去
                 let graphic = |&(k, _): &(usize, char)| {
                     run.text.is_none() && !run.glyphs.iter().any(|&(off, _)| off == k) && !is_text(run.shadow[k])
                 };
                 let first = items.iter().position(|&(_, c)| c != ' ');
                 let last = items.iter().rposition(|&(_, c)| c != ' ');
                 if items.iter().any(graphic) {
-                    // 圖形字元隔開的每段字從自己原本的起始格緊排；兩邊都夾著圖形字元的段放在中間（≡銅斧≡）
+                    // 圖形字元隔開的每段字從自己原本的起始格緊排；兩邊都夾著圖形字元的段放在中間
                     let mut i = 0;
                     while i < items.len() {
                         if graphic(&items[i]) || items[i].1 == ' ' {

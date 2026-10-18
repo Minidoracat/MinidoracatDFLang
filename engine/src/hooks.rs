@@ -747,6 +747,37 @@ pub fn dfhack_translate(text: &[u8], y: i32, center: bool) -> Option<Vec<u8>> {
     Some(out)
 }
 
+/// DFHack 的大按鈕（widgets.makeButtonLabelText 一格一字畫圖格，見 lua/loader.lua 的 install_button）的第 `row` 列（從 0 算）：
+/// 英文有字的 `rows` 列串成一句 `phrase` 查譯文，譯文依列數平分（每列 ⌈字數／列數⌉ 字），這一列分到的放在 `cells` 格的正中間。
+/// 回傳影子字串，字圖留給 dfhack_stamp；這一列沒分到字時是一整列空白。整句翻不出來、或放不進時 None，按鈕照英文
+pub fn dfhack_button(phrase: &[u8], row: usize, rows: usize, cells: usize, y: i32) -> Option<Vec<u8>> {
+    let dict = DICT.load(Ordering::Acquire);
+    if dict.is_null() || !ENABLED.load(Ordering::Relaxed) {
+        return None;
+    }
+    let pending = button_row(unsafe { &*dict }, phrase, row, rows, cells, y);
+    let out = pending.as_ref().map(|p| p.shadow.clone());
+    *DH_PENDING.lock() = pending;
+    out
+}
+
+fn button_row(dict: &Dict, phrase: &[u8], row: usize, rows: usize, cells: usize, y: i32) -> Option<Pending> {
+    let Some(entry) = lookup(dict, phrase, y) else {
+        if row == 0 {
+            note_miss("dfhack", phrase);
+        }
+        return None;
+    };
+    let chars: Vec<char> = entry.text.chars().collect();
+    let per = chars.len().div_ceil(rows.max(1));
+    let part: String = chars.iter().skip(row * per).take(per).collect();
+    let pending = dfhack_place(&dict.para_entry(&part)?, cells, 0, cells, true)?;
+    if row == 0 {
+        HITS.fetch_add(1, Ordering::Relaxed);
+    }
+    Some(pending)
+}
+
 /// DFHack 要畫的一段字（`text_len` 格：開頭 `lead` 格空白、原文 `key_len` 格）換成譯文 entry 時要寫的替身字串與要貼的字。
 /// DFHack 的字位置由它的元件算好，字串檔的置中、靠右（給遊戲自己的按鈕用的，前面已補好空白）不套用：取譯文實際佔的格子
 /// （字圖格的替身是空白，要算進去；照字型實際字寬縮短的譯文是全部記號格），靠左放在原文起點，或依 center 放在原文正中間。
@@ -1470,7 +1501,7 @@ fn label_tiles(n: usize, entry: &Entry, dict: &Dict, font: impl Fn(u8) -> i32) -
 
 #[cfg(test)]
 mod tests {
-    use super::{dfhack_place, label_tiles, lookup, placed_align, wrap_plan, Columns, MissLog, CUTS, MISS_BYTES, MISS_LIMIT};
+    use super::{button_row, dfhack_place, label_tiles, lookup, placed_align, wrap_plan, Columns, MissLog, CUTS, MISS_BYTES, MISS_LIMIT};
     use crate::dict::Dict;
 
     #[test]
@@ -1520,6 +1551,24 @@ mod tests {
         assert_eq!(p.shadow, b"            ");
         assert_eq!(p.compact, Some((1, 10, "幽默感不太在意".to_owned())));
         assert!(dfhack_place(&entry, 10, 1, 8, false).is_none(), "放不進原文的格子照英文");
+    }
+
+    #[test]
+    fn a_big_button_splits_the_translation_evenly_over_its_rows_and_centers_each_row() {
+        // civ-alert 的大按鈕：「 Activate 」「 civilian 」「  alert   」三列各 10 格，查整句「Activate civilian alert」
+        let mut d = Dict::default();
+        let chars = "發布平民警報繼續";
+        assert!(d.set_glyphs(chars, vec![0; chars.chars().count() * 2]));
+        d.load_tsv("Activate civilian alert\t發布平民警報\nContinue\t繼續\n");
+        let cells = |phrase: &[u8], row, rows, width| {
+            button_row(&d, phrase, row, rows, width, 0).map(|p| (p.shadow.len(), p.glyphs.iter().map(|g| g.0).collect::<Vec<_>>()))
+        };
+        for row in 0..3 {
+            assert_eq!(cells(b"Activate civilian alert", row, 3, 10), Some((10, vec![3, 5])), "每列分到兩個字，放在 10 格正中間");
+        }
+        assert_eq!(cells(b"Continue", 0, 1, 15), Some((15, vec![5, 7])));
+        assert_eq!(cells(b"Continue", 2, 3, 15), Some((15, vec![])), "分不到字的列畫空白");
+        assert_eq!(cells(b"Clear civilian alert", 0, 3, 10), None, "整句翻不出來照英文");
     }
 
     #[test]

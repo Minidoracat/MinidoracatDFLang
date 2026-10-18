@@ -17,6 +17,7 @@
 ## 字型
 
 - 思源黑體（Source Han Sans）的 Google 發行版 Noto Sans CJK TC／SC Bold、Regular，© Adobe，SIL Open Font License 1.1。
+- Noto Sans Symbols 2 Regular（只取 ☼，建置時縮放、加粗），© The Noto Project Authors，SIL Open Font License 1.1。
 - 工作坊包內附的字型（`dflang/fonts/`）是只留本包用字的子集；遊戲啟動時引擎依當下文字格大小把它畫成字圖集。授權全文見 `dflang/LICENSE-fonts.txt`。
 
 ## 吉祥物

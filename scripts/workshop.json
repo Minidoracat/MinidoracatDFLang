@@ -11,7 +11,8 @@
     "NotoSansCJKtc-Bold.otf": "https://raw.githubusercontent.com/notofonts/noto-cjk/main/Sans/OTF/TraditionalChinese/NotoSansCJKtc-Bold.otf",
     "NotoSansCJKsc-Bold.otf": "https://raw.githubusercontent.com/notofonts/noto-cjk/main/Sans/OTF/SimplifiedChinese/NotoSansCJKsc-Bold.otf",
     "NotoSansCJKtc-Regular.otf": "https://raw.githubusercontent.com/notofonts/noto-cjk/main/Sans/OTF/TraditionalChinese/NotoSansCJKtc-Regular.otf",
-    "NotoSansCJKsc-Regular.otf": "https://raw.githubusercontent.com/notofonts/noto-cjk/main/Sans/OTF/SimplifiedChinese/NotoSansCJKsc-Regular.otf"
+    "NotoSansCJKsc-Regular.otf": "https://raw.githubusercontent.com/notofonts/noto-cjk/main/Sans/OTF/SimplifiedChinese/NotoSansCJKsc-Regular.otf",
+    "NotoSansSymbols2-Regular.ttf": "https://raw.githubusercontent.com/notofonts/notofonts.github.io/main/fonts/NotoSansSymbols2/unhinted/ttf/NotoSansSymbols2-Regular.ttf"
   },
   "id": "cat_df_lang_zh_hant",
   "folder": "MinidoracatDFLang",
@@ -23,11 +24,13 @@
       "fonts": {
         "bold": [
           "NotoSansCJKtc-Bold.otf",
-          "NotoSansCJKsc-Bold.otf"
+          "NotoSansCJKsc-Bold.otf",
+          "NotoSansSymbols2-Regular.ttf"
         ],
         "regular": [
           "NotoSansCJKtc-Regular.otf",
-          "NotoSansCJKsc-Regular.otf"
+          "NotoSansCJKsc-Regular.otf",
+          "NotoSansSymbols2-Regular.ttf"
         ]
       },
       "mascot_label": "繁體中文",
@@ -41,11 +44,13 @@
       "fonts": {
         "bold": [
           "NotoSansCJKsc-Bold.otf",
-          "NotoSansCJKtc-Bold.otf"
+          "NotoSansCJKtc-Bold.otf",
+          "NotoSansSymbols2-Regular.ttf"
         ],
         "regular": [
           "NotoSansCJKsc-Regular.otf",
-          "NotoSansCJKtc-Regular.otf"
+          "NotoSansCJKtc-Regular.otf",
+          "NotoSansSymbols2-Regular.ttf"
         ]
       },
       "mascot_label": "简体中文",

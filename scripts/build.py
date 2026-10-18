@@ -9,11 +9,11 @@
 標題畫面吉祥物 mascot.png、授權與致謝；每種語言各一個 dflang/<語言>/：整句字典 strings.tsv、句型規則 rules.tsv、依畫面套用的整句 screens.tsv、
 名稱字表 names.tsv、名字音譯表 translit.tsv、字型子集）。字型是 workshop.json 每種語言指定的思源黑體（Noto Sans CJK）Bold 與 Regular 兩種字重
 （fonts 的 bold、regular，各自 dflang/<語言>/fonts/<字重>/），都只留該語言譯文、名字音譯表與吉祥物標籤（mascot_label）用到的非 CP437 字；
-每種字重的第一份字型沒有的字依清單順序補成第二、第三份字型，任一字重有字全部都沒有就建置失敗。
+每種字重的第一份字型沒有的字依清單順序補成第二、第三份字型（品質記號 ☼ 由 Noto Sans Symbols 2 補），任一字重有字全部都沒有就建置失敗。
 引擎在遊戲啟動時依當下的文字格大小把玩家選的字重（dfhack-config/dflang.json 的 bold，預設粗體）畫成字圖集，所以字型檔就是字圖的唯一來源。
 
 用法（repo 根目錄）：
-  uv run scripts/build.py --fetch-fonts   # 首次：下載思源黑體與授權到 temp/fonts/
+  uv run scripts/build.py --fetch-fonts   # 首次：下載字型與授權到 temp/fonts/（已下載的略過）
   uv run scripts/build.py                 # 改了譯文、引擎或 Lua 後重跑（先關遊戲：執行中會鎖住 DLL）
   uv run scripts/build.py --skip-engine   # 沿用 engine/target 已編好的 DLL
 """
@@ -27,6 +27,9 @@ import urllib.request
 from pathlib import Path
 
 from fontTools import subset
+from fontTools.pens.boundsPen import BoundsPen
+from fontTools.pens.transformPen import TransformPen
+from fontTools.pens.ttGlyphPen import TTGlyphPen
 from fontTools.ttLib import TTFont
 
 from cp437 import BYTE_OF
@@ -37,7 +40,11 @@ KINDS = ("strings", "rules", "screens")
 # workshop.json 每種語言的 fonts 要有的字重，也是 dist 的 dflang/<語言>/fonts/ 底下的資料夾名（lua/loader.lua 照這兩個名字找）
 WEIGHTS = ("bold", "regular")
 FONTS = ROOT / "temp/fonts"
-FONT_LICENSE_URL = "https://raw.githubusercontent.com/notofonts/noto-cjk/main/Sans/LICENSE"
+# 字型的授權全文：temp/fonts/ 的檔名 → (包裡 LICENSE-fonts.txt 的段落標題, 下載網址)
+FONT_LICENSES = {
+    "LICENSE": ("Noto Sans CJK", "https://raw.githubusercontent.com/notofonts/noto-cjk/main/Sans/LICENSE"),
+    "OFL-NotoSansSymbols2.txt": ("Noto Sans Symbols 2", "https://raw.githubusercontent.com/notofonts/symbols/main/OFL.txt"),
+}
 # 沿用原繁中包的載入器檔名：DFHack overlay 小工具名稱與玩家存下的位置（dflang_zh_hant.mascot、.hint）不變
 LOADER = "dflang_zh_hant.lua"
 # 和停用的簡中項目的載入器同名：DFHack 同名腳本只執行腳本路徑上的第一份，本包排在前面，停用項目的載入器就不會一起跑
@@ -146,16 +153,51 @@ def translit_lines(rows: list[dict], lang: str) -> str:
 def fetch_fonts(sources: dict[str, str]) -> None:
     """workshop.json 的 font_sources：字型檔名 → 下載網址；已下載的略過。"""
     FONTS.mkdir(parents=True, exist_ok=True)
-    for name, url in [*sorted(sources.items()), ("LICENSE", FONT_LICENSE_URL)]:
+    for name, url in [*sorted(sources.items()), *((name, url) for name, (_, url) in FONT_LICENSES.items())]:
         dest = FONTS / name
         if not dest.is_file():
             print(f"downloading {name} ...")
             urllib.request.urlretrieve(url, dest)
 
 
+def match_metrics(font: TTFont, primary: TTFont) -> None:
+    """補字字型的垂直度量改成第一份字型的：引擎照每份字型自己的 ascent、descent 放基線（engine/src/atlas.rs 的 draw_scaled），
+    不一樣時補的字會上下跑掉"""
+    if font["head"].unitsPerEm != primary["head"].unitsPerEm:
+        raise ValueError(f"補字字型的 unitsPerEm 和第一份字型不同：{font['head'].unitsPerEm} ≠ {primary['head'].unitsPerEm}")
+    for table, fields in (("hhea", ("ascent", "descent", "lineGap")),
+                          ("OS/2", ("sTypoAscender", "sTypoDescender", "sTypoLineGap", "usWinAscent", "usWinDescent"))):
+        for field in fields:
+            setattr(font[table], field, getattr(primary[table], field))
+    use_typo = 1 << 7
+    font["OS/2"].fsSelection = font["OS/2"].fsSelection & ~use_typo | primary["OS/2"].fsSelection & use_typo
+
+
+def fit_symbol(font: TTFont, ch: str, primary: TTFont) -> None:
+    """補字字型的 CP437 符號（☼：Symbols 2 的比中文字還大）縮到和第一份字型的大寫字母一樣高、放在大寫字母高度的正中間，
+    字寬照縮過的字身，左右各留一點空，和數字接在一起（「2664☼」）。Symbols 2 只有細體：第一份字型比 Regular 粗多少，
+    就往右、往上各疊一份字形加粗多少（字重每多 100 加 10 單位，Bold 加 30）"""
+    name = font.getBestCmap()[ord(ch)]
+    glyphs = font.getGlyphSet()
+    bounds = BoundsPen(glyphs)
+    glyphs[name].draw(bounds)
+    x0, y0, x1, y1 = bounds.bounds
+    cap = primary["OS/2"].sCapHeight
+    k = cap / (y1 - y0)
+    side = round(cap * 0.08)
+    bold = max(0, primary["OS/2"].usWeightClass - 400) // 10
+    pen = TTGlyphPen(glyphs)
+    for dx, dy in {(dx, dy) for dx in (0, bold) for dy in (0, bold)}:
+        glyphs[name].draw(TransformPen(pen, (k, 0, 0, k, side + dx - x0 * k, cap / 2 + dy - bold / 2 - (y0 + y1) / 2 * k)))
+    font["glyf"][name] = pen.glyph()
+    font["hmtx"][name] = (round((x1 - x0) * k) + 2 * side + bold, side)
+
+
 def subset_fonts(chars: list[str], fonts: list[str], out_dir: Path) -> list[str]:
-    """依序讓每份字型負責它有、前面字型沒有的字，各存成 <序號>-<原檔名>；回傳沒有字型能畫的字。"""
+    """依序讓每份字型負責它有、前面字型沒有的字，各存成 <序號>-<原檔名>；回傳沒有字型能畫的字。
+    補字字型照第一份字型的垂直度量（match_metrics）；補到 CP437 符號的照 fit_symbol 改字形，字形改過就不留 hinting（對不上了）"""
     out_dir.mkdir(parents=True, exist_ok=True)
+    primary = TTFont(FONTS / fonts[0])
     remaining = list(chars)
     for i, name in enumerate(fonts):
         font = TTFont(FONTS / name)
@@ -163,12 +205,18 @@ def subset_fonts(chars: list[str], fonts: list[str], out_dir: Path) -> list[str]
         take = [c for c in remaining if ord(c) in cmap]
         if not take:
             continue
+        symbols = [c for c in take if c in BYTE_OF] if i else []
         options = subset.Options()
         options.name_IDs = ["*"]
         options.notdef_outline = True
+        options.hinting = not symbols
         subsetter = subset.Subsetter(options)
         subsetter.populate(unicodes=[ord(c) for c in take])
         subsetter.subset(font)
+        if i:
+            match_metrics(font, primary)
+        for c in symbols:
+            fit_symbol(font, c, primary)
         font.save(out_dir / f"{i}-{name}")
         remaining = [c for c in remaining if c not in take]
     return remaining
@@ -204,10 +252,10 @@ def build_language(language: dict, config: dict, texts: dict[str, list[dict]], n
     lang = language["lang"]
     chars = sorted({c for rows in [*texts.values(), names, translit] for r in rows for c in r[lang] if c not in BYTE_OF})
     # 標題畫面吉祥物的名牌（語言標籤、作者名）由引擎在遊戲裡用粗體子集畫（不跟著字重設定），字型子集也要有這些字（含英數）；
-    # 整句貼圖把遊戲畫的英數、空白、CP437 的拉丁字母（矮人名字的 ë、ü…）、♂♀ 與譯名的間隔號 ·
-    # 也用玩家選的字重畫，和引擎 overlay.rs 的 is_text 同一組；譯文裡夾的品質記號 ≡ 與神器外框 «»（「被≡鋼盾牌≡擋下了」）
-    # 整句一起畫，字型子集也要有（☼ 字型沒有，照舊空著）。兩種字重用同一份字集，切換字重不會少字
-    ascii = "".join(map(chr, range(0x20, 0x7F))) + "ÇüéâäàåçêëèïîìÄÅÉæÆôöòûùÿÖÜáíóúñÑ♂♀·≡«»"
+    # 整句貼圖把遊戲畫的英數、空白、CP437 的拉丁字母（矮人名字的 ë、ü…）、♂♀、譯名的間隔號 ·、品質記號 ≡ ☼ 與裝飾外框 «»
+    # 也用玩家選的字重畫（「神殿，2664☼」「被≡鋼盾牌≡擋下了」），和引擎 overlay.rs 的 is_text 同一組，字型子集也要有。
+    # 兩種字重用同一份字集，切換字重不會少字
+    ascii = "".join(map(chr, range(0x20, 0x7F))) + "ÇüéâäàåçêëèïîìÄÅÉæÆôöòûùÿÖÜáíóúñÑ♂♀·≡☼«»"
     tag_chars = [c for c in dict.fromkeys(language["mascot_label"] + config["author"] + ascii) if c not in chars]
     for weight in WEIGHTS:
         missing = subset_fonts(chars + tag_chars, language["fonts"][weight], data / "fonts" / weight)
@@ -244,7 +292,8 @@ def build(config: dict, texts: dict[str, list[dict]], names: list[dict], transli
     shutil.copy2(dll, data / "dflang.dll")
     write_text(data / "LICENSE.txt", PACKAGE_LICENSE + (ROOT / "LICENSE").read_text(encoding="utf-8"))
     write_text(data / "THIRD-PARTY-LICENSES.txt", notices)
-    shutil.copy2(FONTS / "LICENSE", data / "LICENSE-fonts.txt")
+    write_text(data / "LICENSE-fonts.txt", "\n\n".join(f"== {title} ==\n\n{(FONTS / name).read_text(encoding='utf-8').strip()}\n"
+                                                     for name, (title, _) in FONT_LICENSES.items()))
     shutil.copy2(ROOT / "CREDITS.md", data / "CREDITS.md")
     shutil.copy2(ROOT / "art/mascot.png", data / "mascot.png")
 

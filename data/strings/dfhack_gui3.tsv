@@ -234,6 +234,8 @@ Adds a button for activating a civilian alert when the squads panel is open.	開
 Click to configure	點選進行設定	点击进行设置		DFHack hack/scripts/gui/civ-alert.lua L183 疊加介面提示第一行
 civilian alert	平民警報	平民警报		DFHack hack/scripts/gui/civ-alert.lua L184 疊加介面提示第二行（原文前後空白補齊）
 Civilian alert	平民警報	平民警报	c	DFHack hack/scripts/gui/civ-alert.lua L202 視窗標題
+Activate civilian alert	發布平民警報	发布平民警报		DFHack hack/scripts/gui/civ-alert.lua L83 小隊面板的紅色大按鈕（一格一字畫三列；整句查，譯文平分成三列，見 lua/loader.lua install_button）
+Clear civilian alert	解除平民警報	解除平民警报		DFHack hack/scripts/gui/civ-alert.lua L96 平民警報發布中的大按鈕（同上）
 Choose the burrow(s) where you want your civilians to hide during danger.	選擇危險時平民要躲藏的活動區。	选择危险时平民要躲藏的活动区。		DFHack hack/scripts/gui/civ-alert.lua L217 WrappedLabel
 Sound alarm! Citizens run to safety!	拉響警報！公民快去避難！	拉响警报！公民快去避难！		DFHack hack/scripts/gui/civ-alert.lua L222 快捷鍵說明
 All clear! Citizens return to normal	解除警報！公民恢復正常	解除警报！公民恢复正常		DFHack hack/scripts/gui/civ-alert.lua L229 快捷鍵說明
