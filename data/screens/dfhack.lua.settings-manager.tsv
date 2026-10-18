@@ -1,0 +1,10 @@
+en	zh-Hant	zh-Hans	align	row	note
+The "	「	“			DFHack hack/scripts/gui/settings-manager.lua L319 自動還原提示第一行：「The \"」＋指令（照英文）＋「\" command」
+" command	」指令	”命令			DFHack hack/scripts/gui/settings-manager.lua L319 同上
+has been	已	已			DFHack hack/scripts/gui/settings-manager.lua L320 同上第二行：已＋啟用／停用＋，見＋自動化 -> 自動啟動＋分頁：（第三行是 gui/control-panel 按鈕與「.」）
+enabled	啟用	启用			DFHack hack/scripts/gui/settings-manager.lua L321 同上（接在「已」後面，全域的 enabled 是「已啟用」）
+disabled	停用	禁用			DFHack hack/scripts/gui/settings-manager.lua L321 同上
+in the	，見	，见			DFHack hack/scripts/gui/settings-manager.lua L322 同上（原文 " in the "）
+Automation	自動化	自动化			DFHack hack/scripts/gui/settings-manager.lua L323 同上，控制面板分頁名（照 dfhack.lua.control-panel.tsv）
+Autostart	自動啟動	自动启动			DFHack hack/scripts/gui/settings-manager.lua L324 同上，控制面板子分頁名
+tab of	分頁：	页面：			DFHack hack/scripts/gui/settings-manager.lua L324 同上（原文 " tab of "，只有 6 格，簡中放不下「标签页：」）

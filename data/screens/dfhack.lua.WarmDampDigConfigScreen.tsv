@@ -1,0 +1,6 @@
+en	zh-Hant	zh-Hans	align	row	note
+Mark/unmark	將	将			DFHack hack/lua/plugins/dig.lua L68 潮濕／溫熱挖掘設定下半第一行：將＋格數＋格／本層目前已標示的地塊／切換標記為：（下面是 Damp dig、Warm dig 按鈕）
+tile	格	格			DFHack hack/lua/plugins/dig.lua L70 同上（原文 " tile"，格數 1 時）
+tiles	格	格			DFHack hack/lua/plugins/dig.lua L70 同上（原文 " tiles"）
+currently designated on	本層目前已標示的地塊	本层目前已标记的地块			DFHack hack/lua/plugins/dig.lua L72 同上第二行
+this level for:	切換標記為：	切换标记为：			DFHack hack/lua/plugins/dig.lua L73 同上第三行

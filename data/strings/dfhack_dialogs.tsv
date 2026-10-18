@@ -1,0 +1,55 @@
+en	zh-Hant	zh-Hans	align	note
+This script allows you to jump into legends	這個腳本能讓你從進行中的遊戲	这个脚本能让你从进行中的游戏		DFHack hack/scripts/open-legends.lua L116 進傳說模式警告第一行（Label 用 NEWLINE 一行一段畫；中文照同樣順序讀得通，第三行的短片段見 data/screens/dfhack.lua.open-legends.tsv）
+mode from a active game, but beware that this	直接跳到傳說模式，但請注意，這是	直接跳到传说模式，但请注意，这是		DFHack hack/scripts/open-legends.lua L117 同上第二行（下一行「一條」「不歸路」「.」）
+Returning to play from legends mode	從傳說模式回到遊戲繼續玩	从传说模式回到游戏继续玩		DFHack hack/scripts/open-legends.lua L120 同上第二段第一行
+would make the game unstable, so to protect	會讓遊戲變得不穩定，因此為了保護	会让游戏变得不稳定，因此为了保护		DFHack hack/scripts/open-legends.lua L121 同上
+your savegame, Dwarf Fortress will exit when	你的存檔，矮人要塞會在你瀏覽	你的存档，矮人要塞会在你浏览		DFHack hack/scripts/open-legends.lua L122 同上
+you are done browsing.	完畢後直接結束。	完毕后直接退出。		DFHack hack/scripts/open-legends.lua L123 同上最後一行
+DF when you're done to avoid save corruption.	矮人要塞，以免存檔損毀。	矮人要塞，以免存档损坏。		DFHack hack/scripts/open-legends.lua L131 open-legends --no-autoquit 警告第三行（前兩行的片段見 data/screens/dfhack.lua.open-legends.tsv）
+When you return to fort mode, automatic	回到要塞模式後，自動進行的	回到要塞模式后，自动进行的		DFHack hack/scripts/open-legends.lua L137 --no-autoquit 且在要塞模式時的說明第一行（整條擋住通用句型 {1}, automatic）
+autosaves will be disabled until you restart	自動存檔都會停用，直到你重新啟動	自动存档都会停用，直到你重新启动		DFHack hack/scripts/open-legends.lua L138 同上
+DF to avoid accidentally overwriting good	矮人要塞為止，以免不小心覆寫掉正常的	矮人要塞为止，以免不小心覆盖掉正常的		DFHack hack/scripts/open-legends.lua L139 同上（最後一行 savegames. 見 data/screens/dfhack.lua.open-legends.tsv）
+Alternately, exit out of this dialog and	或者，你也可以關閉這個視窗，	或者，你也可以关闭这个窗口，		DFHack hack/scripts/open-legends.lua L158 要塞模式的寫法（'Alternately,' .. ' exit out…' 拼成一段）
+You can exit out of this dialog and	你也可以關閉這個視窗，	你也可以关闭这个窗口，		DFHack hack/scripts/open-legends.lua L158 冒險模式的寫法（'You can' .. ' exit out…' 拼成一段）
+create a named save of your choice.	再建立一個自訂名稱的存檔。	再创建一个自定义名称的存档。		DFHack hack/scripts/open-legends.lua L159 接在上一行後面
+Dwarf Fortress is in a non-playable state	矮人要塞目前處於無法遊玩的狀態，	矮人要塞目前处于无法游玩的状态，		DFHack hack/scripts/open-legends.lua L66 離開傳說模式的是否對話框（訊息以 \n 分兩段，string.wrap 一段一段翻）
+and will now exit to protect your savegame.	為了保護你的存檔，現在將結束遊戲。	为了保护你的存档，现在将退出游戏。		DFHack hack/scripts/open-legends.lua L66 同上第二段
+Please load a fort to see the fort-mode tools. Alternately,	請載入要塞以檢視要塞模式的工具。或者，	请加载要塞以查看要塞模式的工具。或者，		DFHack hack/scripts/gui/control-panel.lua L367 控制面板沒載入要塞時的提示第一行（Label 用 NEWLINE 一行一段畫，中文照同樣順序讀得通）
+please switch to the "Autostart" tab to configure which	請切換到「自動啟動」分頁，設定出發時	请切换到“自动启动”标签页，设置出发时		DFHack hack/scripts/gui/control-panel.lua L368 同上第二行
+tools should be run or enabled on embark.	要執行或啟用哪些工具。	要运行或启用哪些工具。		DFHack hack/scripts/gui/control-panel.lua L369 同上第三行
+Are you sure you want to restore Enabled	確定要恢復「已啟用」分頁中	确定要恢复“已启用”标签页中		DFHack hack/scripts/gui/control-panel.lua L469 恢復預設確認框第一段（'…restore %s\ndefaults for %s tools?'，%s 是子分頁名 Enabled／Autostart；\n 前後各自翻，逐條寫死）
+Are you sure you want to restore Autostart	確定要恢復「自動啟動」分頁中	确定要恢复“自动启动”标签页中		DFHack hack/scripts/gui/control-panel.lua L469 同上（子分頁 Autostart）
+defaults for automation tools?	自動化工具的預設值嗎？	自动化工具的默认值吗？		DFHack hack/scripts/gui/control-panel.lua L469 同上第二段（群組 automation）
+defaults for bugfix tools?	錯誤修正工具的預設值嗎？	错误修正工具的默认值吗？		DFHack hack/scripts/gui/control-panel.lua L469 同上第二段（群組 bugfix）
+defaults for gameplay tools?	遊戲玩法工具的預設值嗎？	游戏玩法工具的默认值吗？		DFHack hack/scripts/gui/control-panel.lua L469 同上第二段（群組 gameplay）
+Any embark warnings	所有出發警告	所有出发警告		DFHack hack/scripts/gui/embark-anywhere.lua L50 不顧警告出發的確認面板第一行（Label 用 NEWLINE 拆兩行）
+have been bypassed.	都已略過。	都已跳过。		DFHack hack/scripts/gui/embark-anywhere.lua L51 同上第二行
+Dwarves (AOPD) is not responsible for all the damage	協會（AOPD）對於這個工具可能（而且一定會）	协会（AOPD）对于这个工具可能（而且一定会）		DFHack hack/scripts/gui/gm-editor.lua L138 說明頁免責聲明第一行的第三段（前兩段 Association Of、Psychic 見 data/screens/dfhack.lua.gm-editor.tsv，接成「矮人通靈協會（AOPD）…」）
+that this tool can (and will) cause to you and your loved dwarves	給你、你心愛的矮人以及（或）存檔帶來的	给你、你心爱的矮人以及（或）存档带来的		DFHack hack/scripts/gui/gm-editor.lua L139 同上第二行
+and/or saves. Please use with caution.	一切損害，概不負責。請小心使用。	一切损害，概不负责。请小心使用。		DFHack hack/scripts/gui/gm-editor.lua L140 同上第三行（第四行 Magma not included. 在 dfhack_gui3.tsv）
+This field has no ref-target specified. If you	這個欄位沒有指定 ref-target。如果你	这个字段没有指定 ref-target。如果你		DFHack hack/scripts/gui/gm-editor.lua L308 訊息框（以 \n 分兩段，string.wrap 一段一段翻）
+know what it should be, please report it!	知道它應該是什麼，請回報！	知道它应该是什么，请报告！		DFHack hack/scripts/gui/gm-editor.lua L309 同上第二段
+The world.nemesis.global vector	這個存檔的 world.nemesis.global	这个存档的 world.nemesis.global		DFHack hack/scripts/internal/notify/notifications.lua L454 nemesis 未排序訊息框（一句以 \n 拆成數段，string.wrap 一段一段翻；中文照同樣順序讀得通）
+of this savegame is not sorted.	向量沒有排序。	向量没有排序。		DFHack hack/scripts/internal/notify/notifications.lua L455 同上
+Some attempts to lookup the	查詢某個單位或	查询某个单位或		DFHack hack/scripts/internal/notify/notifications.lua L455 同上
+nemesis record for a unit or	歷史人物的 nemesis 紀錄時，	历史人物的 nemesis 记录时，		DFHack hack/scripts/internal/notify/notifications.lua L456 同上
+historical figure will fail.	有時會失敗。	有时会失败。		DFHack hack/scripts/internal/notify/notifications.lua L456 同上
+This should be reported to	這應該當作錯誤	这应该作为错误		DFHack hack/scripts/internal/notify/notifications.lua L457 同上
+Bay 12 Games as a bug.	回報給 Bay 12 Games。	报告给 Bay 12 Games。		DFHack hack/scripts/internal/notify/notifications.lua L457 同上最後一段
+This save game contains units which are missing	這個存檔有些單位缺少	这个存档有些单位缺少		DFHack hack/scripts/internal/notify/notifications.lua L465 缺少 nemesis 紀錄訊息框（Label 用 NEWLINE 一行一段畫，中文照同樣順序讀得通）
+their assigned nemesis records.	它們所屬的 nemesis 紀錄。	它们所属的 nemesis 记录。		DFHack hack/scripts/internal/notify/notifications.lua L466 同上
+Missing nemesis records have been known to cause	已知缺少 nemesis 紀錄會在	已知缺少 nemesis 记录会在		DFHack hack/scripts/internal/notify/notifications.lua L468 同上
+crashes during game save and when retiring forts.	存檔與讓要塞退休時造成當機。	存档和让要塞退休时导致崩溃。		DFHack hack/scripts/internal/notify/notifications.lua L469 同上
+Units with missing nemesis records will	缺少 nemesis 紀錄的單位	缺少 nemesis 记录的单位		DFHack hack/scripts/internal/notify/notifications.lua L471 同上
+permanently disappear	會永久消失	会永久消失		DFHack hack/scripts/internal/notify/notifications.lua L473 同上（有受影響單位時紅字，後接 if they leave the map or）
+if they leave the map or	，只要他們離開地圖或	，只要他们离开地图或		DFHack hack/scripts/internal/notify/notifications.lua L474 同上（原文 " if they leave the map or"）
+if the fort is retired.	要塞退休。	要塞退休。		DFHack hack/scripts/internal/notify/notifications.lua L475 同上
+Please send a messenger to a holding or a squad out on a mission	請派信使前往屬地，或派小隊出一趟	请派信使前往属地，或派小队执行一项		DFHack hack/scripts/internal/notify/notifications.lua L517 受困小隊訊息框（一句以 \n 拆成數段，string.wrap 一段一段翻；中文照同樣順序讀得通）
+that will return to the fort (e.g. a Demand one-time tribute mission,	會返回要塞的任務（例如「要求一次性貢品」任務，	会返回要塞的任务（例如“要求一次性贡品”任务，		DFHack hack/scripts/internal/notify/notifications.lua L518 同上；任務名照 world_01.tsv
+but not a Conquer and occupy mission). They will rescue the stuck	但不能是「征服並佔領」任務）。他們會在回程時救出	但不能是“征服并占领”任务）。他们会在回程时救出		DFHack hack/scripts/internal/notify/notifications.lua L519 同上
+squad on their way home.	受困的小隊。	被困的小队。		DFHack hack/scripts/internal/notify/notifications.lua L520 同上
+Please enable fix/stuck-squad in the DFHack control panel to enable	請在 DFHack 控制面板啟用小隊救援工具 fix/stuck-squad，	请在 DFHack 控制面板启用小队救援工具 fix/stuck-squad，		DFHack hack/scripts/internal/notify/notifications.lua L523 同上（沒排定 fix/stuck-squad 時接在後面）
+missions to rescue stuck squads.	讓派遣任務能救援受困的小隊。	让派遣任务能救援被困的小队。		DFHack hack/scripts/internal/notify/notifications.lua L524 同上
+that would offend the merchants:	它們會冒犯商人：	它们会冒犯商人：		DFHack hack/scripts/internal/caravan/trade.lua L829 交易道德警告第二行（第一行的片段見 data/screens/dfhack.lua.caravan.trade.ethics.tsv）
+Plan constructions on tiles with existing	框選時，也在已有	框选时，也在已有		DFHack hack/lua/plugins/buildingplan/filterselection.lua L516 「多格重建」選項說明第一行（原文開頭兩個空白，Label 用 NEWLINE 拆兩行）
+constructed floors/ramps when using box select.	建成地板／斜坡的格子上規劃建造。	建成地板／斜坡的格子上规划建造。		DFHack hack/lua/plugins/buildingplan/filterselection.lua L517 同上第二行（原文開頭兩個空白）

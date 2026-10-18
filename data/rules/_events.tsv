@@ -6014,6 +6014,7 @@ The {%1} Rampage in {2}	{1}在{2}的肆虐	{1}在{2}的肆虐		FUN_140bc6880 174
 The {%1} Purge in {2}	{2}的{1}肅清	{2}的{1}肃清		FUN_140bc5e60 1744308 肅清（purgest）；形容詞取自集合的 adjective 字串；{1} 形容詞（Vampire）
 The {%1} Race of {2}	{2}的{1}競速賽	{2}的{1}竞速赛		FUN_140bc7270 1745093 比賽（competitionst）；of 後是節慶名（世界生成的名稱）；{1} 生物名（每字首大寫，查不到時 Creature）
 The {%1} Race	{1}競速賽	{1}竞速赛		FUN_140bc7270 1745093 比賽（competitionst）；of 後是節慶名（世界生成的名稱）；{1} 生物名（每字首大寫，查不到時 Creature）
+and brought to {1}	並帶到{1}	并带到{1}	tail	FUN_140b8b080 L1701564 item_stolen 句尾的 and brought to 目的地：接在原因、情境（FUN_140b5a6c0）後面，原因夾在句中；寫成 tail 先去掉，剩下的照常翻（原因再當句尾的 tail 去掉），接成「…，在擊敗X之後，並帶到Y。」；排在第一條，否則 after defeating {1} 這類會把 and brought to 吞進 {1}；18.tsv 不另寫 and brought to 的子句
 after the death of {1}	在{1}死後	在{1}死后	tail	FUN_140b5a6c0 circumstance 4 Death：人物（FUN_140b92f10）
 after praying to {1} in a dedicated temple	在專屬神殿中向{1}祈禱之後	在专属神殿中向{1}祈祷之后	tail	FUN_140b5a6c0 circumstance 279：人物（神）
 after praying to {1}	在向{1}祈禱之後	在向{1}祈祷之后	tail	FUN_140b5a6c0 circumstance 181：人物（神）
@@ -9976,75 +9977,75 @@ In a time before time, {1} was found by {2}.	太古之時，{2}發現了{1}。	�
 In {#1}, {2} was recovered by {3} from {4} in {5}.	{1}年，{3}從{5}的{4}取回了{2}。	{1}年，{3}从{5}的{4}取回了{2}。		自動產生（scripts/gen_events.py）：18.tsv {1} was recovered by {2} from {3} in {4}.
 In the {@1} of {#2}, {3} was recovered by {4} from {5} in {6}.	{2}年{1}，{4}從{6}的{5}取回了{3}。	{2}年{1}，{4}从{6}的{5}取回了{3}。		自動產生（scripts/gen_events.py）：18.tsv {1} was recovered by {2} from {3} in {4}.
 In a time before time, {1} was recovered by {2} from {3} in {4}.	太古之時，{2}從{4}的{3}取回了{1}。	太古之时，{2}从{4}的{3}取回了{1}。		自動產生（scripts/gen_events.py）：18.tsv {1} was recovered by {2} from {3} in {4}.
-In {#1}, {2} was recovered by {3} and brought to {4}.	{1}年，{3}取回了{2}，並帶到{4}。	{1}年，{3}取回了{2}，并带到{4}。		自動產生（scripts/gen_events.py）：18.tsv {1} was recovered by {2} and brought to {3}.
-In the {@1} of {#2}, {3} was recovered by {4} and brought to {5}.	{2}年{1}，{4}取回了{3}，並帶到{5}。	{2}年{1}，{4}取回了{3}，并带到{5}。		自動產生（scripts/gen_events.py）：18.tsv {1} was recovered by {2} and brought to {3}.
-In a time before time, {1} was recovered by {2} and brought to {3}.	太古之時，{2}取回了{1}，並帶到{3}。	太古之时，{2}取回了{1}，并带到{3}。		自動產生（scripts/gen_events.py）：18.tsv {1} was recovered by {2} and brought to {3}.
+In {#1}, {2} was recovered by {3} during {%4}.	{1}年，{3}在{4}期間取回了{2}。	{1}年，{3}在{4}期间取回了{2}。		自動產生（scripts/gen_events.py）：18.tsv {1} was recovered by {2} during {%3}.
+In the {@1} of {#2}, {3} was recovered by {4} during {%5}.	{2}年{1}，{4}在{5}期間取回了{3}。	{2}年{1}，{4}在{5}期间取回了{3}。		自動產生（scripts/gen_events.py）：18.tsv {1} was recovered by {2} during {%3}.
+In a time before time, {1} was recovered by {2} during {%3}.	太古之時，{2}在{3}期間取回了{1}。	太古之时，{2}在{3}期间取回了{1}。		自動產生（scripts/gen_events.py）：18.tsv {1} was recovered by {2} during {%3}.
 In {#1}, {2} was recovered by {3} in {4}.	{1}年，{3}在{4}取回了{2}。	{1}年，{3}在{4}取回了{2}。		自動產生（scripts/gen_events.py）：18.tsv {1} was recovered by {2} in {3}.
 In the {@1} of {#2}, {3} was recovered by {4} in {5}.	{2}年{1}，{4}在{5}取回了{3}。	{2}年{1}，{4}在{5}取回了{3}。		自動產生（scripts/gen_events.py）：18.tsv {1} was recovered by {2} in {3}.
 In a time before time, {1} was recovered by {2} in {3}.	太古之時，{2}在{3}取回了{1}。	太古之时，{2}在{3}取回了{1}。		自動產生（scripts/gen_events.py）：18.tsv {1} was recovered by {2} in {3}.
-In {#1}, {2} was stolen from {3} in {4} by {5} and brought to {6}.	{1}年，{5}從{4}的{3}偷走了{2}，並帶到{6}。	{1}年，{5}从{4}的{3}偷走了{2}，并带到{6}。		自動產生（scripts/gen_events.py）：18.tsv {1} was stolen from {2} in {3} by {4} and brought to {5}.
-In the {@1} of {#2}, {3} was stolen from {4} in {5} by {6} and brought to {7}.	{2}年{1}，{6}從{5}的{4}偷走了{3}，並帶到{7}。	{2}年{1}，{6}从{5}的{4}偷走了{3}，并带到{7}。		自動產生（scripts/gen_events.py）：18.tsv {1} was stolen from {2} in {3} by {4} and brought to {5}.
-In a time before time, {1} was stolen from {2} in {3} by {4} and brought to {5}.	太古之時，{4}從{3}的{2}偷走了{1}，並帶到{5}。	太古之时，{4}从{3}的{2}偷走了{1}，并带到{5}。		自動產生（scripts/gen_events.py）：18.tsv {1} was stolen from {2} in {3} by {4} and brought to {5}.
+In {#1}, {2} was stolen from {3} in {4} by {5} during {%6}.	{1}年，{5}在{6}期間從{4}的{3}偷走了{2}。	{1}年，{5}在{6}期间从{4}的{3}偷走了{2}。		自動產生（scripts/gen_events.py）：18.tsv {1} was stolen from {2} in {3} by {4} during {%5}.
+In the {@1} of {#2}, {3} was stolen from {4} in {5} by {6} during {%7}.	{2}年{1}，{6}在{7}期間從{5}的{4}偷走了{3}。	{2}年{1}，{6}在{7}期间从{5}的{4}偷走了{3}。		自動產生（scripts/gen_events.py）：18.tsv {1} was stolen from {2} in {3} by {4} during {%5}.
+In a time before time, {1} was stolen from {2} in {3} by {4} during {%5}.	太古之時，{4}在{5}期間從{3}的{2}偷走了{1}。	太古之时，{4}在{5}期间从{3}的{2}偷走了{1}。		自動產生（scripts/gen_events.py）：18.tsv {1} was stolen from {2} in {3} by {4} during {%5}.
 In {#1}, {2} was stolen from {3} in {4} by {5}.	{1}年，{5}從{4}的{3}偷走了{2}。	{1}年，{5}从{4}的{3}偷走了{2}。		自動產生（scripts/gen_events.py）：18.tsv {1} was stolen from {2} in {3} by {4}.
 In the {@1} of {#2}, {3} was stolen from {4} in {5} by {6}.	{2}年{1}，{6}從{5}的{4}偷走了{3}。	{2}年{1}，{6}从{5}的{4}偷走了{3}。		自動產生（scripts/gen_events.py）：18.tsv {1} was stolen from {2} in {3} by {4}.
 In a time before time, {1} was stolen from {2} in {3} by {4}.	太古之時，{4}從{3}的{2}偷走了{1}。	太古之时，{4}从{3}的{2}偷走了{1}。		自動產生（scripts/gen_events.py）：18.tsv {1} was stolen from {2} in {3} by {4}.
-In {#1}, {2} was stolen from {3} by {4} and brought to {5}.	{1}年，{4}從{3}偷走了{2}，並帶到{5}。	{1}年，{4}从{3}偷走了{2}，并带到{5}。		自動產生（scripts/gen_events.py）：18.tsv {1} was stolen from {2} by {3} and brought to {4}.
-In the {@1} of {#2}, {3} was stolen from {4} by {5} and brought to {6}.	{2}年{1}，{5}從{4}偷走了{3}，並帶到{6}。	{2}年{1}，{5}从{4}偷走了{3}，并带到{6}。		自動產生（scripts/gen_events.py）：18.tsv {1} was stolen from {2} by {3} and brought to {4}.
-In a time before time, {1} was stolen from {2} by {3} and brought to {4}.	太古之時，{3}從{2}偷走了{1}，並帶到{4}。	太古之时，{3}从{2}偷走了{1}，并带到{4}。		自動產生（scripts/gen_events.py）：18.tsv {1} was stolen from {2} by {3} and brought to {4}.
+In {#1}, {2} was stolen from {3} by {4} during {%5}.	{1}年，{4}在{5}期間從{3}偷走了{2}。	{1}年，{4}在{5}期间从{3}偷走了{2}。		自動產生（scripts/gen_events.py）：18.tsv {1} was stolen from {2} by {3} during {%4}.
+In the {@1} of {#2}, {3} was stolen from {4} by {5} during {%6}.	{2}年{1}，{5}在{6}期間從{4}偷走了{3}。	{2}年{1}，{5}在{6}期间从{4}偷走了{3}。		自動產生（scripts/gen_events.py）：18.tsv {1} was stolen from {2} by {3} during {%4}.
+In a time before time, {1} was stolen from {2} by {3} during {%4}.	太古之時，{3}在{4}期間從{2}偷走了{1}。	太古之时，{3}在{4}期间从{2}偷走了{1}。		自動產生（scripts/gen_events.py）：18.tsv {1} was stolen from {2} by {3} during {%4}.
 In {#1}, {2} was stolen from {3} by {4}.	{1}年，{4}從{3}偷走了{2}。	{1}年，{4}从{3}偷走了{2}。		自動產生（scripts/gen_events.py）：18.tsv {1} was stolen from {2} by {3}.
 In the {@1} of {#2}, {3} was stolen from {4} by {5}.	{2}年{1}，{5}從{4}偷走了{3}。	{2}年{1}，{5}从{4}偷走了{3}。		自動產生（scripts/gen_events.py）：18.tsv {1} was stolen from {2} by {3}.
 In a time before time, {1} was stolen from {2} by {3}.	太古之時，{3}從{2}偷走了{1}。	太古之时，{3}从{2}偷走了{1}。		自動產生（scripts/gen_events.py）：18.tsv {1} was stolen from {2} by {3}.
-In {#1}, {2} was stolen by {3} and brought to {4}.	{1}年，{3}偷走了{2}，並帶到{4}。	{1}年，{3}偷走了{2}，并带到{4}。		自動產生（scripts/gen_events.py）：18.tsv {1} was stolen by {2} and brought to {3}.
-In the {@1} of {#2}, {3} was stolen by {4} and brought to {5}.	{2}年{1}，{4}偷走了{3}，並帶到{5}。	{2}年{1}，{4}偷走了{3}，并带到{5}。		自動產生（scripts/gen_events.py）：18.tsv {1} was stolen by {2} and brought to {3}.
-In a time before time, {1} was stolen by {2} and brought to {3}.	太古之時，{2}偷走了{1}，並帶到{3}。	太古之时，{2}偷走了{1}，并带到{3}。		自動產生（scripts/gen_events.py）：18.tsv {1} was stolen by {2} and brought to {3}.
+In {#1}, {2} was stolen by {3} during {%4}.	{1}年，{3}在{4}期間偷走了{2}。	{1}年，{3}在{4}期间偷走了{2}。		自動產生（scripts/gen_events.py）：18.tsv {1} was stolen by {2} during {%3}.
+In the {@1} of {#2}, {3} was stolen by {4} during {%5}.	{2}年{1}，{4}在{5}期間偷走了{3}。	{2}年{1}，{4}在{5}期间偷走了{3}。		自動產生（scripts/gen_events.py）：18.tsv {1} was stolen by {2} during {%3}.
+In a time before time, {1} was stolen by {2} during {%3}.	太古之時，{2}在{3}期間偷走了{1}。	太古之时，{2}在{3}期间偷走了{1}。		自動產生（scripts/gen_events.py）：18.tsv {1} was stolen by {2} during {%3}.
 In {#1}, {2} was stolen by {3}.	{1}年，{3}偷走了{2}。	{1}年，{3}偷走了{2}。		自動產生（scripts/gen_events.py）：18.tsv {1} was stolen by {2}.
 In the {@1} of {#2}, {3} was stolen by {4}.	{2}年{1}，{4}偷走了{3}。	{2}年{1}，{4}偷走了{3}。		自動產生（scripts/gen_events.py）：18.tsv {1} was stolen by {2}.
 In a time before time, {1} was stolen by {2}.	太古之時，{2}偷走了{1}。	太古之时，{2}偷走了{1}。		自動產生（scripts/gen_events.py）：18.tsv {1} was stolen by {2}.
-In {#1}, {2} was confiscated from {3} in {4} by {5} and brought to {6}.	{1}年，{5}從{4}的{3}沒收了{2}，並帶到{6}。	{1}年，{5}从{4}的{3}没收了{2}，并带到{6}。		自動產生（scripts/gen_events.py）：18.tsv {1} was confiscated from {2} in {3} by {4} and brought to {5}.
-In the {@1} of {#2}, {3} was confiscated from {4} in {5} by {6} and brought to {7}.	{2}年{1}，{6}從{5}的{4}沒收了{3}，並帶到{7}。	{2}年{1}，{6}从{5}的{4}没收了{3}，并带到{7}。		自動產生（scripts/gen_events.py）：18.tsv {1} was confiscated from {2} in {3} by {4} and brought to {5}.
-In a time before time, {1} was confiscated from {2} in {3} by {4} and brought to {5}.	太古之時，{4}從{3}的{2}沒收了{1}，並帶到{5}。	太古之时，{4}从{3}的{2}没收了{1}，并带到{5}。		自動產生（scripts/gen_events.py）：18.tsv {1} was confiscated from {2} in {3} by {4} and brought to {5}.
+In {#1}, {2} was confiscated from {3} in {4} by {5} during {%6}.	{1}年，{5}在{6}期間從{4}的{3}沒收了{2}。	{1}年，{5}在{6}期间从{4}的{3}没收了{2}。		自動產生（scripts/gen_events.py）：18.tsv {1} was confiscated from {2} in {3} by {4} during {%5}.
+In the {@1} of {#2}, {3} was confiscated from {4} in {5} by {6} during {%7}.	{2}年{1}，{6}在{7}期間從{5}的{4}沒收了{3}。	{2}年{1}，{6}在{7}期间从{5}的{4}没收了{3}。		自動產生（scripts/gen_events.py）：18.tsv {1} was confiscated from {2} in {3} by {4} during {%5}.
+In a time before time, {1} was confiscated from {2} in {3} by {4} during {%5}.	太古之時，{4}在{5}期間從{3}的{2}沒收了{1}。	太古之时，{4}在{5}期间从{3}的{2}没收了{1}。		自動產生（scripts/gen_events.py）：18.tsv {1} was confiscated from {2} in {3} by {4} during {%5}.
 In {#1}, {2} was confiscated from {3} in {4} by {5}.	{1}年，{5}從{4}的{3}沒收了{2}。	{1}年，{5}从{4}的{3}没收了{2}。		自動產生（scripts/gen_events.py）：18.tsv {1} was confiscated from {2} in {3} by {4}.
 In the {@1} of {#2}, {3} was confiscated from {4} in {5} by {6}.	{2}年{1}，{6}從{5}的{4}沒收了{3}。	{2}年{1}，{6}从{5}的{4}没收了{3}。		自動產生（scripts/gen_events.py）：18.tsv {1} was confiscated from {2} in {3} by {4}.
 In a time before time, {1} was confiscated from {2} in {3} by {4}.	太古之時，{4}從{3}的{2}沒收了{1}。	太古之时，{4}从{3}的{2}没收了{1}。		自動產生（scripts/gen_events.py）：18.tsv {1} was confiscated from {2} in {3} by {4}.
-In {#1}, {2} was confiscated from {3} by {4} and brought to {5}.	{1}年，{4}從{3}沒收了{2}，並帶到{5}。	{1}年，{4}从{3}没收了{2}，并带到{5}。		自動產生（scripts/gen_events.py）：18.tsv {1} was confiscated from {2} by {3} and brought to {4}.
-In the {@1} of {#2}, {3} was confiscated from {4} by {5} and brought to {6}.	{2}年{1}，{5}從{4}沒收了{3}，並帶到{6}。	{2}年{1}，{5}从{4}没收了{3}，并带到{6}。		自動產生（scripts/gen_events.py）：18.tsv {1} was confiscated from {2} by {3} and brought to {4}.
-In a time before time, {1} was confiscated from {2} by {3} and brought to {4}.	太古之時，{3}從{2}沒收了{1}，並帶到{4}。	太古之时，{3}从{2}没收了{1}，并带到{4}。		自動產生（scripts/gen_events.py）：18.tsv {1} was confiscated from {2} by {3} and brought to {4}.
+In {#1}, {2} was confiscated from {3} by {4} during {%5}.	{1}年，{4}在{5}期間從{3}沒收了{2}。	{1}年，{4}在{5}期间从{3}没收了{2}。		自動產生（scripts/gen_events.py）：18.tsv {1} was confiscated from {2} by {3} during {%4}.
+In the {@1} of {#2}, {3} was confiscated from {4} by {5} during {%6}.	{2}年{1}，{5}在{6}期間從{4}沒收了{3}。	{2}年{1}，{5}在{6}期间从{4}没收了{3}。		自動產生（scripts/gen_events.py）：18.tsv {1} was confiscated from {2} by {3} during {%4}.
+In a time before time, {1} was confiscated from {2} by {3} during {%4}.	太古之時，{3}在{4}期間從{2}沒收了{1}。	太古之时，{3}在{4}期间从{2}没收了{1}。		自動產生（scripts/gen_events.py）：18.tsv {1} was confiscated from {2} by {3} during {%4}.
 In {#1}, {2} was confiscated from {3} by {4}.	{1}年，{4}從{3}沒收了{2}。	{1}年，{4}从{3}没收了{2}。		自動產生（scripts/gen_events.py）：18.tsv {1} was confiscated from {2} by {3}.
 In the {@1} of {#2}, {3} was confiscated from {4} by {5}.	{2}年{1}，{5}從{4}沒收了{3}。	{2}年{1}，{5}从{4}没收了{3}。		自動產生（scripts/gen_events.py）：18.tsv {1} was confiscated from {2} by {3}.
 In a time before time, {1} was confiscated from {2} by {3}.	太古之時，{3}從{2}沒收了{1}。	太古之时，{3}从{2}没收了{1}。		自動產生（scripts/gen_events.py）：18.tsv {1} was confiscated from {2} by {3}.
-In {#1}, {2} was confiscated by {3} and brought to {4}.	{1}年，{3}沒收了{2}，並帶到{4}。	{1}年，{3}没收了{2}，并带到{4}。		自動產生（scripts/gen_events.py）：18.tsv {1} was confiscated by {2} and brought to {3}.
-In the {@1} of {#2}, {3} was confiscated by {4} and brought to {5}.	{2}年{1}，{4}沒收了{3}，並帶到{5}。	{2}年{1}，{4}没收了{3}，并带到{5}。		自動產生（scripts/gen_events.py）：18.tsv {1} was confiscated by {2} and brought to {3}.
-In a time before time, {1} was confiscated by {2} and brought to {3}.	太古之時，{2}沒收了{1}，並帶到{3}。	太古之时，{2}没收了{1}，并带到{3}。		自動產生（scripts/gen_events.py）：18.tsv {1} was confiscated by {2} and brought to {3}.
+In {#1}, {2} was confiscated by {3} during {%4}.	{1}年，{3}在{4}期間沒收了{2}。	{1}年，{3}在{4}期间没收了{2}。		自動產生（scripts/gen_events.py）：18.tsv {1} was confiscated by {2} during {%3}.
+In the {@1} of {#2}, {3} was confiscated by {4} during {%5}.	{2}年{1}，{4}在{5}期間沒收了{3}。	{2}年{1}，{4}在{5}期间没收了{3}。		自動產生（scripts/gen_events.py）：18.tsv {1} was confiscated by {2} during {%3}.
+In a time before time, {1} was confiscated by {2} during {%3}.	太古之時，{2}在{3}期間沒收了{1}。	太古之时，{2}在{3}期间没收了{1}。		自動產生（scripts/gen_events.py）：18.tsv {1} was confiscated by {2} during {%3}.
 In {#1}, {2} was confiscated by {3}.	{1}年，{3}沒收了{2}。	{1}年，{3}没收了{2}。		自動產生（scripts/gen_events.py）：18.tsv {1} was confiscated by {2}.
 In the {@1} of {#2}, {3} was confiscated by {4}.	{2}年{1}，{4}沒收了{3}。	{2}年{1}，{4}没收了{3}。		自動產生（scripts/gen_events.py）：18.tsv {1} was confiscated by {2}.
 In a time before time, {1} was confiscated by {2}.	太古之時，{2}沒收了{1}。	太古之时，{2}没收了{1}。		自動產生（scripts/gen_events.py）：18.tsv {1} was confiscated by {2}.
-In {#1}, {2} was looted from {3} in {4} by {5} and brought to {6}.	{1}年，{5}從{4}的{3}掠走了{2}，並帶到{6}。	{1}年，{5}从{4}的{3}掠走了{2}，并带到{6}。		自動產生（scripts/gen_events.py）：18.tsv {1} was looted from {2} in {3} by {4} and brought to {5}.
-In the {@1} of {#2}, {3} was looted from {4} in {5} by {6} and brought to {7}.	{2}年{1}，{6}從{5}的{4}掠走了{3}，並帶到{7}。	{2}年{1}，{6}从{5}的{4}掠走了{3}，并带到{7}。		自動產生（scripts/gen_events.py）：18.tsv {1} was looted from {2} in {3} by {4} and brought to {5}.
-In a time before time, {1} was looted from {2} in {3} by {4} and brought to {5}.	太古之時，{4}從{3}的{2}掠走了{1}，並帶到{5}。	太古之时，{4}从{3}的{2}掠走了{1}，并带到{5}。		自動產生（scripts/gen_events.py）：18.tsv {1} was looted from {2} in {3} by {4} and brought to {5}.
+In {#1}, {2} was looted from {3} in {4} by {5} during {%6}.	{1}年，{5}在{6}期間從{4}的{3}掠走了{2}。	{1}年，{5}在{6}期间从{4}的{3}掠走了{2}。		自動產生（scripts/gen_events.py）：18.tsv {1} was looted from {2} in {3} by {4} during {%5}.
+In the {@1} of {#2}, {3} was looted from {4} in {5} by {6} during {%7}.	{2}年{1}，{6}在{7}期間從{5}的{4}掠走了{3}。	{2}年{1}，{6}在{7}期间从{5}的{4}掠走了{3}。		自動產生（scripts/gen_events.py）：18.tsv {1} was looted from {2} in {3} by {4} during {%5}.
+In a time before time, {1} was looted from {2} in {3} by {4} during {%5}.	太古之時，{4}在{5}期間從{3}的{2}掠走了{1}。	太古之时，{4}在{5}期间从{3}的{2}掠走了{1}。		自動產生（scripts/gen_events.py）：18.tsv {1} was looted from {2} in {3} by {4} during {%5}.
 In {#1}, {2} was looted from {3} in {4} by {5}.	{1}年，{5}從{4}的{3}掠走了{2}。	{1}年，{5}从{4}的{3}掠走了{2}。		自動產生（scripts/gen_events.py）：18.tsv {1} was looted from {2} in {3} by {4}.
 In the {@1} of {#2}, {3} was looted from {4} in {5} by {6}.	{2}年{1}，{6}從{5}的{4}掠走了{3}。	{2}年{1}，{6}从{5}的{4}掠走了{3}。		自動產生（scripts/gen_events.py）：18.tsv {1} was looted from {2} in {3} by {4}.
 In a time before time, {1} was looted from {2} in {3} by {4}.	太古之時，{4}從{3}的{2}掠走了{1}。	太古之时，{4}从{3}的{2}掠走了{1}。		自動產生（scripts/gen_events.py）：18.tsv {1} was looted from {2} in {3} by {4}.
-In {#1}, {2} was looted from {3} by {4} and brought to {5}.	{1}年，{4}從{3}掠走了{2}，並帶到{5}。	{1}年，{4}从{3}掠走了{2}，并带到{5}。		自動產生（scripts/gen_events.py）：18.tsv {1} was looted from {2} by {3} and brought to {4}.
-In the {@1} of {#2}, {3} was looted from {4} by {5} and brought to {6}.	{2}年{1}，{5}從{4}掠走了{3}，並帶到{6}。	{2}年{1}，{5}从{4}掠走了{3}，并带到{6}。		自動產生（scripts/gen_events.py）：18.tsv {1} was looted from {2} by {3} and brought to {4}.
-In a time before time, {1} was looted from {2} by {3} and brought to {4}.	太古之時，{3}從{2}掠走了{1}，並帶到{4}。	太古之时，{3}从{2}掠走了{1}，并带到{4}。		自動產生（scripts/gen_events.py）：18.tsv {1} was looted from {2} by {3} and brought to {4}.
+In {#1}, {2} was looted from {3} by {4} during {%5}.	{1}年，{4}在{5}期間從{3}掠走了{2}。	{1}年，{4}在{5}期间从{3}掠走了{2}。		自動產生（scripts/gen_events.py）：18.tsv {1} was looted from {2} by {3} during {%4}.
+In the {@1} of {#2}, {3} was looted from {4} by {5} during {%6}.	{2}年{1}，{5}在{6}期間從{4}掠走了{3}。	{2}年{1}，{5}在{6}期间从{4}掠走了{3}。		自動產生（scripts/gen_events.py）：18.tsv {1} was looted from {2} by {3} during {%4}.
+In a time before time, {1} was looted from {2} by {3} during {%4}.	太古之時，{3}在{4}期間從{2}掠走了{1}。	太古之时，{3}在{4}期间从{2}掠走了{1}。		自動產生（scripts/gen_events.py）：18.tsv {1} was looted from {2} by {3} during {%4}.
 In {#1}, {2} was looted from {3} by {4}.	{1}年，{4}從{3}掠走了{2}。	{1}年，{4}从{3}掠走了{2}。		自動產生（scripts/gen_events.py）：18.tsv {1} was looted from {2} by {3}.
 In the {@1} of {#2}, {3} was looted from {4} by {5}.	{2}年{1}，{5}從{4}掠走了{3}。	{2}年{1}，{5}从{4}掠走了{3}。		自動產生（scripts/gen_events.py）：18.tsv {1} was looted from {2} by {3}.
 In a time before time, {1} was looted from {2} by {3}.	太古之時，{3}從{2}掠走了{1}。	太古之时，{3}从{2}掠走了{1}。		自動產生（scripts/gen_events.py）：18.tsv {1} was looted from {2} by {3}.
-In {#1}, {2} was looted by {3} and brought to {4}.	{1}年，{3}掠走了{2}，並帶到{4}。	{1}年，{3}掠走了{2}，并带到{4}。		自動產生（scripts/gen_events.py）：18.tsv {1} was looted by {2} and brought to {3}.
-In the {@1} of {#2}, {3} was looted by {4} and brought to {5}.	{2}年{1}，{4}掠走了{3}，並帶到{5}。	{2}年{1}，{4}掠走了{3}，并带到{5}。		自動產生（scripts/gen_events.py）：18.tsv {1} was looted by {2} and brought to {3}.
-In a time before time, {1} was looted by {2} and brought to {3}.	太古之時，{2}掠走了{1}，並帶到{3}。	太古之时，{2}掠走了{1}，并带到{3}。		自動產生（scripts/gen_events.py）：18.tsv {1} was looted by {2} and brought to {3}.
+In {#1}, {2} was looted by {3} during {%4}.	{1}年，{3}在{4}期間掠走了{2}。	{1}年，{3}在{4}期间掠走了{2}。		自動產生（scripts/gen_events.py）：18.tsv {1} was looted by {2} during {%3}.
+In the {@1} of {#2}, {3} was looted by {4} during {%5}.	{2}年{1}，{4}在{5}期間掠走了{3}。	{2}年{1}，{4}在{5}期间掠走了{3}。		自動產生（scripts/gen_events.py）：18.tsv {1} was looted by {2} during {%3}.
+In a time before time, {1} was looted by {2} during {%3}.	太古之時，{2}在{3}期間掠走了{1}。	太古之时，{2}在{3}期间掠走了{1}。		自動產生（scripts/gen_events.py）：18.tsv {1} was looted by {2} during {%3}.
 In {#1}, {2} was looted by {3}.	{1}年，{3}掠走了{2}。	{1}年，{3}掠走了{2}。		自動產生（scripts/gen_events.py）：18.tsv {1} was looted by {2}.
 In the {@1} of {#2}, {3} was looted by {4}.	{2}年{1}，{4}掠走了{3}。	{2}年{1}，{4}掠走了{3}。		自動產生（scripts/gen_events.py）：18.tsv {1} was looted by {2}.
 In a time before time, {1} was looted by {2}.	太古之時，{2}掠走了{1}。	太古之时，{2}掠走了{1}。		自動產生（scripts/gen_events.py）：18.tsv {1} was looted by {2}.
-In {#1}, {2} was recovered from {3} in {4} by {5} and brought to {6}.	{1}年，{5}從{4}的{3}取回了{2}，並帶到{6}。	{1}年，{5}从{4}的{3}取回了{2}，并带到{6}。		自動產生（scripts/gen_events.py）：18.tsv {1} was recovered from {2} in {3} by {4} and brought to {5}.
-In the {@1} of {#2}, {3} was recovered from {4} in {5} by {6} and brought to {7}.	{2}年{1}，{6}從{5}的{4}取回了{3}，並帶到{7}。	{2}年{1}，{6}从{5}的{4}取回了{3}，并带到{7}。		自動產生（scripts/gen_events.py）：18.tsv {1} was recovered from {2} in {3} by {4} and brought to {5}.
-In a time before time, {1} was recovered from {2} in {3} by {4} and brought to {5}.	太古之時，{4}從{3}的{2}取回了{1}，並帶到{5}。	太古之时，{4}从{3}的{2}取回了{1}，并带到{5}。		自動產生（scripts/gen_events.py）：18.tsv {1} was recovered from {2} in {3} by {4} and brought to {5}.
+In {#1}, {2} was recovered from {3} in {4} by {5} during {%6}.	{1}年，{5}在{6}期間從{4}的{3}取回了{2}。	{1}年，{5}在{6}期间从{4}的{3}取回了{2}。		自動產生（scripts/gen_events.py）：18.tsv {1} was recovered from {2} in {3} by {4} during {%5}.
+In the {@1} of {#2}, {3} was recovered from {4} in {5} by {6} during {%7}.	{2}年{1}，{6}在{7}期間從{5}的{4}取回了{3}。	{2}年{1}，{6}在{7}期间从{5}的{4}取回了{3}。		自動產生（scripts/gen_events.py）：18.tsv {1} was recovered from {2} in {3} by {4} during {%5}.
+In a time before time, {1} was recovered from {2} in {3} by {4} during {%5}.	太古之時，{4}在{5}期間從{3}的{2}取回了{1}。	太古之时，{4}在{5}期间从{3}的{2}取回了{1}。		自動產生（scripts/gen_events.py）：18.tsv {1} was recovered from {2} in {3} by {4} during {%5}.
 In {#1}, {2} was recovered from {3} in {4} by {5}.	{1}年，{5}從{4}的{3}取回了{2}。	{1}年，{5}从{4}的{3}取回了{2}。		自動產生（scripts/gen_events.py）：18.tsv {1} was recovered from {2} in {3} by {4}.
 In the {@1} of {#2}, {3} was recovered from {4} in {5} by {6}.	{2}年{1}，{6}從{5}的{4}取回了{3}。	{2}年{1}，{6}从{5}的{4}取回了{3}。		自動產生（scripts/gen_events.py）：18.tsv {1} was recovered from {2} in {3} by {4}.
 In a time before time, {1} was recovered from {2} in {3} by {4}.	太古之時，{4}從{3}的{2}取回了{1}。	太古之时，{4}从{3}的{2}取回了{1}。		自動產生（scripts/gen_events.py）：18.tsv {1} was recovered from {2} in {3} by {4}.
-In {#1}, {2} was recovered from {3} by {4} and brought to {5}.	{1}年，{4}從{3}取回了{2}，並帶到{5}。	{1}年，{4}从{3}取回了{2}，并带到{5}。		自動產生（scripts/gen_events.py）：18.tsv {1} was recovered from {2} by {3} and brought to {4}.
-In the {@1} of {#2}, {3} was recovered from {4} by {5} and brought to {6}.	{2}年{1}，{5}從{4}取回了{3}，並帶到{6}。	{2}年{1}，{5}从{4}取回了{3}，并带到{6}。		自動產生（scripts/gen_events.py）：18.tsv {1} was recovered from {2} by {3} and brought to {4}.
-In a time before time, {1} was recovered from {2} by {3} and brought to {4}.	太古之時，{3}從{2}取回了{1}，並帶到{4}。	太古之时，{3}从{2}取回了{1}，并带到{4}。		自動產生（scripts/gen_events.py）：18.tsv {1} was recovered from {2} by {3} and brought to {4}.
+In {#1}, {2} was recovered from {3} by {4} during {%5}.	{1}年，{4}在{5}期間從{3}取回了{2}。	{1}年，{4}在{5}期间从{3}取回了{2}。		自動產生（scripts/gen_events.py）：18.tsv {1} was recovered from {2} by {3} during {%4}.
+In the {@1} of {#2}, {3} was recovered from {4} by {5} during {%6}.	{2}年{1}，{5}在{6}期間從{4}取回了{3}。	{2}年{1}，{5}在{6}期间从{4}取回了{3}。		自動產生（scripts/gen_events.py）：18.tsv {1} was recovered from {2} by {3} during {%4}.
+In a time before time, {1} was recovered from {2} by {3} during {%4}.	太古之時，{3}在{4}期間從{2}取回了{1}。	太古之时，{3}在{4}期间从{2}取回了{1}。		自動產生（scripts/gen_events.py）：18.tsv {1} was recovered from {2} by {3} during {%4}.
 In {#1}, {2} was recovered from {3} by {4}.	{1}年，{4}從{3}取回了{2}。	{1}年，{4}从{3}取回了{2}。		自動產生（scripts/gen_events.py）：18.tsv {1} was recovered from {2} by {3}.
 In the {@1} of {#2}, {3} was recovered from {4} by {5}.	{2}年{1}，{5}從{4}取回了{3}。	{2}年{1}，{5}从{4}取回了{3}。		自動產生（scripts/gen_events.py）：18.tsv {1} was recovered from {2} by {3}.
 In a time before time, {1} was recovered from {2} by {3}.	太古之時，{3}從{2}取回了{1}。	太古之时，{3}从{2}取回了{1}。		自動產生（scripts/gen_events.py）：18.tsv {1} was recovered from {2} by {3}.

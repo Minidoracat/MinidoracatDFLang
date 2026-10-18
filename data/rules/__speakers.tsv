@@ -4,6 +4,8 @@ The Dwarf {@1} {^2}: Help!	矮人{1}{2}：救命！	矮人{1}{2}：救命！		�
 The Elf {@1} {^2}: Help!	精靈{1}{2}：救命！	精灵{1}{2}：救命！		同上
 The Goblin {@1} {^2}: Help!	哥布林{1}{2}：救命！	哥布林{1}{2}：救命！		同上
 The {@1} {^2}: Help!	{1}{2}：救命！	{1}{2}：救命！		同上
+{*1}: Help!	{1}：救命	{1}：救命		同上，講者只有名字（見最後一條 {*1}: {%2}）；樣板的英文只有 7 格，「：救命！」8 格超過，省掉驚嘆號
+{*1}: I don't know very much about the outside world.	{1}：我對外面的世界所知不多。	{1}：我对外面的世界所知不多。		外交會談對話框（同 sentences_ui7.tsv 的 {1}: I don't know…）：排在 {*1}: {%2} 前；台詞單獨查會被 speech_03 的 I don't know {1}. 翻成「我不認識very much…」，所以整句寫在這裡
 The Human {@1} {^2}: {%3}	人類{1}{2}：{3}	人类{1}{2}：{3}		冒險模式的人物稱呼：種族和玩家不同時寫成 the 種族 職位 名字（FUN_141331500）；種族逐一寫出，不用 {@n}：任意字詞會把「the attack on Zon」的 on 當成職位（交談紀錄的講者）。講者句型放在檔名最前面的這個檔：台詞以 The 開頭時（The Basic Society is skirmishing with us.），開頭固定字也是 The 的台詞句型會先比，把整個講者吞進佔位（「magistrate Orid Ikislada（對矛手…）」）
 The Dwarf {@1} {^2}: {%3}	矮人{1}{2}：{3}	矮人{1}{2}：{3}		同上
 The Elf {@1} {^2}: {%3}	精靈{1}{2}：{3}	精灵{1}{2}：{3}		同上
@@ -20,3 +22,4 @@ The elf {@1} {^2}: {%3}	精靈{1}{2}：{3}	精灵{1}{2}：{3}		同上
 The goblin {@1} {^2}: {%3}	哥布林{1}{2}：{3}	哥布林{1}{2}：{3}		同上
 The kobold {@1} {^2}: {%3}	狗頭人{1}{2}：{3}	狗头人{1}{2}：{3}		同上
 The {@1} {^2}: {%3}	{1}{2}：{3}	{1}{2}：{3}		交談紀錄的講者（FUN_1404988b0 一帶；the 職位／種族 職位 名字＋冒號＋說的話）。名字用 {^n}：只收大寫開頭，免得把「The poem is divided into four distinct parts: …」的小寫動詞片語當成名字
+{*1}: {%2}	{1}：{2}	{1}：{2}	speech	交談紀錄的講者只有名字、沒有職位或種族時（FUN_140684a10 L904419 一帶：講者名字＋冒號＋台詞）。名字用 {*n}：每個字大寫、沒有 Of／The／And、第一個字不是字典裡的詞，所以「Folder: …」「Nearest site: …」「The poem is divided into four distinct parts: …」不會被當成講者；align 寫 speech，只套以 . ! ? " 結尾的字串，書名「Suitorbasin: My Only Mistake」不會被當成台詞（交給 titles.tsv 的 {$1}: … 樣板）

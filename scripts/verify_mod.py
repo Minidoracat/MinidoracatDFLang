@@ -72,10 +72,11 @@ def check(ok: bool, msg: str, problems=()) -> None:
 
 def engine_hooks() -> list[str]:
     """引擎要掛的函式：engine/src/hooks.rs 的 HOOKS，加上 attach 另外處理、只登記位址的（`if name == "wrap_text"`）。
-    從原始碼讀，不在這裡另抄一份：抄的那份曾漏掉 render_things。"""
+    從原始碼讀，不在這裡另抄一份：抄的那份曾漏掉 render_things。dfhack_ 開頭的是 dfhack.dll 的匯出函式，照匯出名找（lua/loader.lua），不用特徵碼"""
     src = (ROOT / "engine/src/hooks.rs").read_text(encoding="utf-8")
     body = re.search(r"pub const HOOKS: \[&str; \d+\] = \[(.*?)\];", src, re.S)
-    return re.findall(r'"(\w+)"', body.group(1)) + re.findall(r'if name == "(\w+)"', src) if body else []
+    hooks = re.findall(r'"(\w+)"', body.group(1)) + re.findall(r'if name == "(\w+)"', src) if body else []
+    return [h for h in hooks if not h.startswith("dfhack_")]
 
 
 def leading_spaces(s: str) -> int:
@@ -162,7 +163,9 @@ def main() -> int:
     dupes, bad_src, bad_align = [], [], []
     for r in rows:
         kind = r["file"].split("/")[0]
-        key = (r["file"] if kind == "screens" else kind, r["en"], r["align"] if r["align"] in ("tail", "title", "key") else "")  # tail 片語、書名用詞、按鍵名自成一類（引擎另外存）
+        # tail 片語、書名用詞、按鍵名自成一類（引擎另外存）；依畫面譯文限定列的（row）和不限列的分開算
+        key = (r["file"] if kind == "screens" else kind, r["en"], r["align"] if r["align"] in ("tail", "title", "key") else "",
+               r.get("row", "") if kind == "screens" else "")
         first = seen.get(key)
         # 同一條句型一份只給佔位用（inner）、一份整句也用，譯文相同時不衝突（傳說事件短語與冒險日誌標題共用）
         same_rule = first is not None and kind == "rules" and (first["align"] == "inner") != (r["align"] == "inner") \
@@ -173,11 +176,12 @@ def main() -> int:
         if not r["en"] or not encodable(r["en"]):
             bad_src.append(f"{r['file']}: {r['en']!r}")
         if r["align"] not in ("", "c", "r") and not (kind in ("rules", "strings") and r["align"] in ("inner", "tail")) \
-                and not (kind == "strings" and r["align"] in ("title", "key")) and not (kind == "screens" and r["align"] == "music"):
+                and not (kind == "strings" and r["align"] in ("title", "key")) and not (kind == "screens" and r["align"] == "music") \
+                and not (kind == "rules" and r["align"] == "speech"):
             bad_align.append(f"{r['file']}: {r['en']!r} align={r['align']!r}")
     check(not dupes, "原文不重複", dupes)
     check(not bad_src, "原文能用 CP437 表示", bad_src)
-    check(not bad_align, "align 只能是空、c、r（句型與字串另可寫 inner、tail，字串另可寫 title、key，依畫面譯文另可寫 music）", bad_align)
+    check(not bad_align, "align 只能是空、c、r（句型與字串另可寫 inner、tail，字串另可寫 title、key，句型另可寫 speech，依畫面譯文另可寫 music）", bad_align)
     bad_ph = [f"{r['file']}: {r['en']!r} {p}" for r in data["rules"] if (p := placeholder_problem(r, langs))]
     check(not bad_ph, f"句型佔位寫法（{len(data['rules'])} 條）", bad_ph)
     events, _ = build_events()

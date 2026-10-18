@@ -1,4 +1,5 @@
 en	zh-Hant	zh-Hans	align	note
+and brought to {1}	並帶到{1}	并带到{1}	tail	FUN_140b8b080 L1701564 item_stolen 句尾的 and brought to 目的地：接在原因、情境（FUN_140b5a6c0）後面，原因夾在句中；寫成 tail 先去掉，剩下的照常翻（原因再當句尾的 tail 去掉），接成「…，在擊敗X之後，並帶到Y。」；排在第一條，否則 after defeating {1} 這類會把 and brought to 吞進 {1}；18.tsv 不另寫 and brought to 的子句
 after the death of {1}	在{1}死後	在{1}死后	tail	FUN_140b5a6c0 circumstance 4 Death：人物（FUN_140b92f10）
 after praying to {1} in a dedicated temple	在專屬神殿中向{1}祈禱之後	在专属神殿中向{1}祈祷之后	tail	FUN_140b5a6c0 circumstance 279：人物（神）
 after praying to {1}	在向{1}祈禱之後	在向{1}祈祷之后	tail	FUN_140b5a6c0 circumstance 181：人物（神）

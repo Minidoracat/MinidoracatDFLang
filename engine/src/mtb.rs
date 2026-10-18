@@ -978,11 +978,12 @@ mod tests {
         d.load_rules_tsv("In {#1}, {2} settled in {3}.\t{1}年，{2}定居於{3}。\n");
         unsafe {
             // 遊戲把 [/LPAGE] 後面的句號算進連結字「Mangemined.」：句型看到的句號在記號外面，中文版面裡不畫這個句號
-            let p = Fake::new(&[("In", 7), ("1,", 7), ("Onsmost", 7), ("settled", 7), ("in", 7), ("Mangemined.", 7)], 40);
+            // 人名不用 Onsmost：names.rs 的測試會把它登記成原名（is_native），平行跑時這個連結字就不再是照畫英文
+            let p = Fake::new(&[("In", 7), ("1,", 7), ("Kadolil", 7), ("settled", 7), ("in", 7), ("Mangemined.", 7)], 40);
             set_link(&p, 2, 0);
             set_link(&p, 5, 1);
             assert!(rewrite(p.mtb, &d, |_| {}, || {}));
-            // 「1年，」5 格、Onsmost 7 格、「定居於」6 格，Mangemined 10 格後面接「。」
+            // 「1年，」5 格、Kadolil 7 格、「定居於」6 格，Mangemined 10 格後面接「。」
             assert_eq!((plan_of(p.words[2], &d), pos(p.words[2])), ("plain", (5, 0)));
             let Some(Plan::Draw(name)) = word_plan(p.words[5], &d) else { panic!("帶句號的連結字改由 hook 畫名字") };
             assert_eq!((name[0].entry.text.as_str(), name[0].color, pos(p.words[5])), ("Mangemined", None, (18, 0)));

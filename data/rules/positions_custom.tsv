@@ -15,3 +15,5 @@ absolute {_1}	無上之{1}	无上之{1}		FUN_14095bf90 L1360123 HIGHEST_PRIEST �
 exalted {_1}	尊貴之{1}	尊贵之{1}		FUN_14095bf90 L1359973 HIGH_PRIEST 職位名：前綴＋職位名字的 the 名詞（raws 字表，language_word 單數或複數）；{_n} 只收字表名詞的小寫詞形；寫法同 professions.tsv 的 holy／sacred（單獨畫出：貴族、神殿職位清單）
 {*1}, head	{1}，首長	{1}，首长		FUN_1405d7f80 L797761 商會首領（CUSTOM_COMPANY_LEADER）單數 head；全域 head 是身體部位「頭部」，既有的 {*1}, {@2} 會畫成「頭部」，所以「人名, head」寫死在這裡
 {*1}, justice	{1}，審判官	{1}，审判官		FUN_14096ece0 L1367988 市政官員（CUSTOM_MARKET_OFFICIAL_）法官類單數 justice；全域 justice 是神祇領域「正義」，「人名, justice」寫死在這裡
+{*1}, {@2}	{1}，{2}	{1}，{2}		同 professions.tsv 的 {1}, {@2}（人名＋職業／職位），寫在下一條 {*1}, {_2} 前：開頭是不限定 {1} 的樣板引擎排在後面，不先寫這條的話 judge、kings、master 這類字典裡有的職位會先被字表的字義搶走（判官、王、宗師）
+{*1}, {_2}	{1}，{2}	{1}，{2}		神殿職位名不加前綴時（FUN_14095bf90 L1359956 HIGH_PRIEST 的 random 3 落空；professions.tsv 的祭司也可能不接 holy／sacred）就是職位名字的 the 名詞：生物清單的「人名, torch」；{*1} 每個字大寫的人名、{_2} 只收字表名詞的小寫詞形，整串都要對上，所以不會套到「…of the lead, high leaps」這類逗號清單

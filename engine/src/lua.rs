@@ -44,6 +44,16 @@ pub(crate) unsafe fn export(module: *const u8, name: &str) -> Option<*mut c_void
     }
 }
 
+/// 已載入的模組 `module`（如 dfhack.dll）的匯出（見 export）；模組沒載入或找不到時 None
+pub(crate) fn module_export(module: &str, name: &str) -> Option<usize> {
+    let wide: Vec<u16> = module.encode_utf16().chain([0]).collect();
+    let handle = unsafe { GetModuleHandleW(wide.as_ptr()) } as *const u8;
+    if handle.is_null() {
+        return None;
+    }
+    unsafe { export(handle, name) }.map(|p| p as usize)
+}
+
 macro_rules! lua_api {
     ($($name:ident: fn($($arg:ty),*) $(-> $ret:ty)?;)*) => {
         #[allow(non_snake_case)]

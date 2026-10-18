@@ -137,13 +137,17 @@ type TalkLogFn = unsafe extern "C" fn(*mut u8, u32, i32, i32);
 type AnnouncementsFn = unsafe extern "C" fn(*mut u8, u64, i32, i32);
 /// render_things()：非同步執行緒每幀把畫面寫進緩衝區（整句貼圖在這裡收一幀的句子，見 overlay.rs）
 type RenderThingsFn = unsafe extern "C" fn();
+/// FUN_1408c2ca0(工作選項, vector<string*>* 提示框的行清單)：工坊「新增任務」的提示框（產出／需要）
+type ToolTipFn = unsafe extern "C" fn(*mut u8, *mut u8);
+/// FUN_14036a9c0(交易畫面, 神器, 勢力, 勢力, 交出, 奪取)：交易時交出或被奪神器，商人說的話切成行放進交易畫面 +0x3c0
+type TradeSpeechFn = unsafe extern "C" fn(*mut u8, usize, usize, usize, u8, u8);
 
-pub const HOOKS: [&str; 17] = [
+pub const HOOKS: [&str; 21] = [
     "addst", "addst_flag", "top_addst", "addcoloredst", "mtb_set_width", "add_anchored_tile", "wrap_lines", "ctb_add_string",
     "translate_name", "string_resize", "adv_appearance", "adv_personality", "adv_log", "adv_talk_log", "render_things", "native_name",
-    "adv_announcements",
+    "adv_announcements", "tool_tip", "world_site_history", "trade_artifact_speech", "dfhack_mtb_set_width",
 ];
-static TRAMPOLINES: [AtomicUsize; 17] = [const { AtomicUsize::new(0) }; 17];
+static TRAMPOLINES: [AtomicUsize; 21] = [const { AtomicUsize::new(0) }; 21];
 /// wrap_text 的位址（只登記、不攔；它切行時呼叫 wrap_lines）：enable 時從呼叫它的程式碼找出遊戲啟動時就切好的提示（見 lines.rs）
 pub static WRAP_TEXT: OnceLock<usize> = OnceLock::new();
 
@@ -176,7 +180,11 @@ pub fn attach(name: &str, target: usize) -> Result<(), String> {
         13 => hook_adv_talk_log as *const (),
         14 => hook_render_things as *const (),
         15 => hook_native_name as *const (),
-        _ => hook_adv_announcements as *const (),
+        16 => hook_adv_announcements as *const (),
+        17 => hook_tool_tip as *const (),
+        18 => hook_world_site_history as *const (),
+        19 => hook_trade_artifact_speech as *const (),
+        _ => hook_dfhack_mtb_set_width as *const (),
     };
     let detour = unsafe { RawDetour::new(target as *const (), hook) }.map_err(|e| e.to_string())?;
     TRAMPOLINES[index].store(detour.trampoline() as *const () as usize, Ordering::Release);
@@ -457,9 +465,15 @@ fn lookup_in<'a>(dict: &'a Dict, key: &[u8], y: i32, depth: u8) -> Option<Found<
     if let Some(line) = key.strip_suffix(b" ").filter(|l| !l.ends_with(b" ") && l.iter().any(u8::is_ascii_alphabetic)) {
         return lookup_in(dict, line, y, depth + 1);
     }
+    // 截在字中間、最後一段是逗號後的職業或名字（物品頁「Owner: X, Stonecr...」、傳說人物分頁「名字, "綽號片...」，見 Dict::complete_cut）：
+    // 補完整再翻、截回原來的格數
+    if let Some(e) = dict.complete_cut(key).and_then(|full| lookup_in(dict, &full, y, depth + 1)).and_then(|f| dict.cut_entry(key, &f.text)) {
+        return Some(Found::Rule(e));
+    }
     // 遊戲直接改長度截短、沒經過 resize 的字串（冒險同伴清單的名字欄寫死 33 格：「Zebna Histekuthros, Donkey, ♂ ...」）：
-    // 截在字與字之間時翻前面完整的那段，接「…」；截在字中間的照英文
+    // 截在字與字之間時翻前面完整的那段（截在逗號後的去掉逗號：傳說分頁「名字, ...」），接「…」；截在字中間的照英文
     let head = key.strip_suffix(b" ...").filter(|h| h.iter().any(u8::is_ascii_alphabetic))?;
+    let head = head.strip_suffix(b",").unwrap_or(head);
     lookup_in(dict, head, y, depth + 1).and_then(|f| dict.cut_entry(key, &format!("{}…", f.text))).map(Found::Rule)
 }
 
@@ -492,6 +506,10 @@ unsafe fn translate_call(gps: *mut u8, kind: &str, key: &[u8], space: i32, half:
     let dict = unsafe { &*dict };
     let (x0, y): (i32, i32) = unsafe { (read(gps, layout.screenx), read(gps, layout.screeny)) };
     if !dict.verbatim_screens.is_empty() && dict.keeps_word(key, &FOCUS.lock(), false) {
+        return false;
+    }
+    // 玩家取的名字（倉儲區、小隊排程…）照原樣畫，不記未翻譯
+    if dict.keeps_player_name(key) {
         return false;
     }
     let Some(entry) = lookup(dict, key, y) else {
@@ -717,23 +735,25 @@ pub fn dfhack_translate(text: &[u8], y: i32, center: bool) -> Option<Vec<u8>> {
         return None;
     }
     let dict = unsafe { &*dict };
-    if let Some(row) = dh_line(dict, text) {
+    let lead = text.iter().take_while(|&&c| c == b' ').count();
+    // 有縮排的段落（launcher 工具說明的清單、範例說明：helpdb 的 format_block 在每一行前面補縮排的空白）登記的是補空白前的行
+    let line = dh_line(dict, text).map(|row| (row, 0)).or_else(|| (lead > 0).then(|| dh_line(dict, &text[lead..])).flatten().map(|row| (row, lead)));
+    if let Some((row, at)) = line {
         let shadow = row.as_ref().map_or(&[][..], |e| e.shadow());
-        let mut out = vec![b' '; text.len().max(shadow.len())];
-        out[..shadow.len()].copy_from_slice(shadow);
-        let pad = out.len() - shadow.len();
+        let mut out = vec![b' '; text.len().max(at + shadow.len())];
+        out[at..at + shadow.len()].copy_from_slice(shadow);
+        let pad = out.len() - at - shadow.len();
         *DH_PENDING.lock() = row.map(|e| Pending {
             shadow: out.clone(),
-            glyphs: e.glyphs.clone(),
+            glyphs: e.glyphs.iter().map(|&(offset, glyph)| (offset + at, glyph)).collect(),
             align: b'l',
             pad,
-            compact: e.compact.map(|lead| (lead, e.shadow().len() - lead, e.text.clone())),
+            compact: e.compact.map(|indent| (at + indent, e.shadow().len() - indent, e.text.clone())),
         });
         return Some(out);
     }
-    let lead = text.iter().take_while(|&&c| c == b' ').count();
     let key = text[lead..].trim_ascii_end();
-    if !key.iter().any(u8::is_ascii_alphabetic) || (!dict.verbatim_screens.is_empty() && dict.keeps_word(key, &FOCUS.lock(), true)) {
+    if !key.iter().any(u8::is_ascii_alphabetic) || keeps_command(dict, key) || dict.keeps_player_name(key) {
         return None;
     }
     let Some(entry) = lookup(dict, key, y) else {
@@ -842,6 +862,14 @@ pub fn clear_pending() {
     *DH_PENDING.lock() = None;
 }
 
+/// DFHack 單獨畫出、或說明段落裡單獨一段的指令（launcher 說明窗格的「misery clear」「"enable misery"」）：這個畫面的 `*` 列
+/// 讓全小寫的字照原文時（見 Dict::keeps_word），前後用雙引號包住的也照原文，不會被字典翻成「苦難透明」
+fn keeps_command(dict: &Dict, text: &[u8]) -> bool {
+    let text = text.trim_ascii();
+    let bare = text.strip_prefix(b"\"").and_then(|t| t.strip_suffix(b"\"")).unwrap_or(text);
+    !dict.verbatim_screens.is_empty() && dict.keeps_word(bare, &FOCUS.lock(), true)
+}
+
 /// dfhack_wrap 的對照：(英文第幾行, 那一行要畫的中文；None 是畫空白)。string:wrap 一段一段切（原文的 `\n` 分段），
 /// 這裡也每段各自翻、各自依 width 格換行，中文列依序放進同一段的英文行：前一段中文比較短時，後一段照樣從自己的第一行畫起，
 /// 段落間的空行對得上。英文的空行（Painter 不畫空字串）不列。翻不出來的段落記進未翻譯紀錄；有段落翻不出來、某段中文比英文多列、
@@ -863,7 +891,7 @@ fn wrap_plan(dict: &Dict, text: &[u8], width: usize, lines: &[Vec<u8>]) -> Optio
         if got != need {
             return None;
         }
-        let zh = if para.iter().any(u8::is_ascii_alphabetic) {
+        let zh = if para.iter().any(u8::is_ascii_alphabetic) && !keeps_command(dict, para) {
             let (pieces, missing) = dict.translate_sentences(para);
             if !missing.is_empty() {
                 note_miss("dfhack", para);
@@ -1195,6 +1223,11 @@ unsafe fn colored_line(gps: *mut u8, s: *const u8, draw: impl Fn(*const u8, *con
 /// 段落排版：原函式依寬度排完英文單字後，整段有譯文就訂好每個單字的畫字計畫（見 mtb.rs）。
 unsafe extern "C" fn hook_mtb_set_width(mtb: *mut u8, width: i32) {
     let orig: SetWidthFn = unsafe { std::mem::transmute(TRAMPOLINES[4].load(Ordering::Acquire)) };
+    unsafe { set_width_then_rewrite(mtb, width, orig) };
+}
+
+/// 段落排版（遊戲的與 DFHack 的 MTB_set_width 共用）：orig 依寬度排完英文單字後，整段有譯文就訂好每個單字的畫字計畫
+unsafe fn set_width_then_rewrite(mtb: *mut u8, width: i32, orig: SetWidthFn) {
     unsafe { orig(mtb, width) };
     let dict = DICT.load(Ordering::Acquire);
     if dict.is_null() || !ENABLED.load(Ordering::Relaxed) {
@@ -1288,6 +1321,150 @@ unsafe extern "C" fn hook_adv_announcements(panel: *mut u8, a: u64, left: i32, r
         plan_report_lines(panel as usize + 8);
         orig(panel, a, left, right);
     }
+}
+
+/// 工坊「新增任務」的提示框（FUN_1408c2ca0：「Produces:」產出、「Requires:」需要）：遊戲把需要的每個條件照 29 格自己切行，
+/// 切在空白處時空白留在行尾；前 30 字沒有空白的長條件從字中間切開（「C」「alcite/limestone/chalk/marbl 」「e boulders」）。
+/// 原函式跑完後把「Requires:」底下切開的幾行依字典接回整句（見 tool_tip_groups），替兩行以上的一組登記畫字計畫；單獨一行的照舊由畫字 hook 翻
+unsafe extern "C" fn hook_tool_tip(job: *mut u8, out: *mut u8) {
+    let orig: ToolTipFn = unsafe { std::mem::transmute(TRAMPOLINES[17].load(Ordering::Acquire)) };
+    unsafe { orig(job, out) };
+    let dict = DICT.load(Ordering::Acquire);
+    if dict.is_null() || !ENABLED.load(Ordering::Relaxed) {
+        return;
+    }
+    let dict = unsafe { &*dict };
+    let items = unsafe { crate::lines::vec_items(out as usize) };
+    let texts: Vec<&[u8]> = items.iter().map(|&s| unsafe { crate::lines::str_bytes(s) }).collect();
+    let Some(start) = texts.iter().position(|t| *t == b"Requires:").map(|k| k + 1) else { return };
+    let end = texts[start..].iter().position(|t| t.is_empty()).map_or(texts.len(), |k| start + k);
+    for (a, b, text) in tool_tip_groups(&texts[start..end], |t| dict.translate_sentences(t).0.is_some()) {
+        let group = &items[start + a..start + b];
+        if group.len() > 1 && !unsafe { crate::lines::planned(group) } {
+            unsafe { crate::lines::plan(group, &text, 29, dict, false, |s| note_miss("wrap", s)) };
+        }
+    }
+}
+
+/// 提示框「需要：」底下的條件行分組（見 hook_tool_tip）：從每一行起往後試接成一句（最多 6 行），行尾是空白的行還沒完、
+/// 字從中間切開的第一行（只剩一個字、下一行 29 字以遊戲插進去的空白結尾）也還沒完；接起來 found（字典查得到）就成一組，
+/// 字從中間切開的那組另試去掉插進去的空白。都查不到時這一行自成一組。回傳 (起行, 迄行（不含）, 接回的原文)
+fn tool_tip_groups(lines: &[&[u8]], found: impl Fn(&[u8]) -> bool) -> Vec<(usize, usize, Vec<u8>)> {
+    let cut_word = |k: usize| lines[k].len() == 1 && lines.get(k + 1).is_some_and(|l| l.len() == 29 && l.ends_with(b" "));
+    let mut out = Vec::new();
+    let mut k = 0;
+    while k < lines.len() {
+        let mut hit = None;
+        for m in k..lines.len().min(k + 6) {
+            if (lines[m].ends_with(b" ") && m + 1 < lines.len()) || (m == k && cut_word(k)) {
+                continue;
+            }
+            let text = lines[k..=m].concat();
+            if found(&text) {
+                hit = Some((m, text));
+                break;
+            }
+            if cut_word(k) {
+                let mut fixed = lines[k].to_vec();
+                fixed.extend_from_slice(&lines[k + 1][..28]);
+                for line in &lines[k + 2..=m] {
+                    fixed.extend_from_slice(line);
+                }
+                if found(&fixed) {
+                    hit = Some((m, fixed));
+                    break;
+                }
+            }
+        }
+        let (m, text) = hit.unwrap_or_else(|| (k, lines[k].to_vec()));
+        out.push((k, m + 1, text));
+        k = m + 1;
+    }
+    out
+}
+
+/// 世界地圖上據點的歷史（FUN_1401c17e0 畫世界畫面）：遊戲把每則事件照 53 格自己切行（內嵌的切行迴圈，wrap_lines 的 hook 攔不到），
+/// 切好的行在畫面 +0x8388、每行的顏色在 +0x83a0（同一則事件同色），一行行用 addst 畫。畫之前把同一則事件的幾行接回整句登記畫字計畫：
+/// 相鄰兩行同色、而且下一行的第一個字放不進上一行（遊戲是被迫換行），才算同一則。
+/// ponytail: 位移照 53.16 寫死；相鄰兩則同色、上一則最後一行又剛好很滿時會接成一句，翻譯照逐句不受影響，只是兩則的分行不見
+unsafe extern "C" fn hook_world_site_history(vs: *mut u8) {
+    let orig: ScreenFn = unsafe { std::mem::transmute(TRAMPOLINES[18].load(Ordering::Acquire)) };
+    unsafe {
+        plan_site_history(vs as usize);
+        orig(vs);
+    }
+}
+
+unsafe fn plan_site_history(vs: usize) {
+    let dict = DICT.load(Ordering::Acquire);
+    if dict.is_null() || !ENABLED.load(Ordering::Relaxed) {
+        return;
+    }
+    let dict = unsafe { &*dict };
+    let lines = unsafe { crate::lines::vec_items(vs + 0x8388) };
+    let colors: &[i32] = unsafe {
+        let (begin, end): (usize, usize) = (read(vs as *const u8, 0x83a0), read(vs as *const u8, 0x83a8));
+        if begin == 0 || end < begin || (end - begin) / 4 != lines.len() {
+            return;
+        }
+        std::slice::from_raw_parts(begin as *const i32, lines.len())
+    };
+    let texts: Vec<&[u8]> = lines.iter().map(|&s| unsafe { crate::lines::str_bytes(s) }).collect();
+    for (a, b) in history_events(&texts, colors, 53) {
+        let group = &lines[a..b];
+        if group.len() > 1 && !unsafe { crate::lines::planned(group) } {
+            unsafe { crate::lines::plan(group, &crate::lines::join(group), 53, dict, false, |s| note_miss("wrap", s)) };
+        }
+    }
+}
+
+/// 據點歷史的行依事件分組（見 hook_world_site_history）：(起行, 迄行（不含）)。遊戲切行時把切點的空白留在上一行行尾，
+/// 比的時候先去掉
+fn history_events(lines: &[&[u8]], colors: &[i32], width: usize) -> Vec<(usize, usize)> {
+    let forced = |prev: &[u8], next: &[u8]| prev.trim_ascii_end().len() + 1 + next.split(|&c| c == b' ').next().map_or(0, <[u8]>::len) > width;
+    let mut out = Vec::new();
+    let mut i = 0;
+    while i < lines.len() {
+        let mut j = i + 1;
+        while j < lines.len() && colors[j] == colors[i] && !lines[j].is_empty() && forced(lines[j - 1], lines[j]) {
+            j += 1;
+        }
+        out.push((i, j));
+        i = j;
+    }
+    out
+}
+
+/// 交易畫面交出或被奪神器時商人說的話（FUN_14036a9c0）：遊戲照 68 格自己切行，接在交易畫面 +0x3c0 的行清單後面
+/// （清單原本有字時先接一行空行）。原函式跑完後把新加的幾行接回整句登記畫字計畫
+unsafe extern "C" fn hook_trade_artifact_speech(trade: *mut u8, item: usize, civ_a: usize, civ_b: usize, give: u8, seize: u8) {
+    let orig: TradeSpeechFn = unsafe { std::mem::transmute(TRAMPOLINES[19].load(Ordering::Acquire)) };
+    let list = trade as usize + 0x3c0;
+    let before = unsafe { crate::lines::vec_len(list) };
+    unsafe { orig(trade, item, civ_a, civ_b, give, seize) };
+    let dict = DICT.load(Ordering::Acquire);
+    if dict.is_null() || !ENABLED.load(Ordering::Relaxed) {
+        return;
+    }
+    unsafe {
+        let items = crate::lines::vec_items(list);
+        let mut added = &items[before.min(items.len())..];
+        if let [first, rest @ ..] = added {
+            if crate::lines::str_bytes(*first).is_empty() {
+                added = rest;
+            }
+        }
+        if added.len() > 1 && !crate::lines::planned(added) {
+            crate::lines::plan(added, &crate::lines::join(added), 68, &*dict, false, |s| note_miss("wrap", s));
+        }
+    }
+}
+
+/// DFHack 的段落排版（dfhack.dll 匯出的 Gui::MTB_set_width）：dfhack.gui.showPopupAnnouncement 開的彈出視窗用 DFHack 自己的
+/// 排版、不經遊戲的 mtb_set_width；參數與段落結構和遊戲的相同，照樣訂畫字計畫（見 set_width_then_rewrite）
+unsafe extern "C" fn hook_dfhack_mtb_set_width(mtb: *mut u8, width: i32) {
+    let orig: SetWidthFn = unsafe { std::mem::transmute(TRAMPOLINES[20].load(Ordering::Acquire)) };
+    unsafe { set_width_then_rewrite(mtb, width, orig) };
 }
 
 /// 報告切成的行清單（vector<行*>）：每行開頭是那一行的 std::string，+0x20 指回報告，報告 +8 是整則原文。
@@ -1501,7 +1678,7 @@ fn label_tiles(n: usize, entry: &Entry, dict: &Dict, font: impl Fn(u8) -> i32) -
 
 #[cfg(test)]
 mod tests {
-    use super::{button_row, dfhack_place, label_tiles, lookup, placed_align, wrap_plan, Columns, MissLog, CUTS, MISS_BYTES, MISS_LIMIT};
+    use super::{button_row, dfhack_place, history_events, label_tiles, lookup, placed_align, tool_tip_groups, wrap_plan, Columns, MissLog, CUTS, MISS_BYTES, MISS_LIMIT};
     use crate::dict::Dict;
 
     #[test]
@@ -1536,6 +1713,28 @@ mod tests {
         CUTS.with_borrow_mut(|cuts| cuts.extend([b"Abc ... ...".to_vec(), b"Xyz... ".to_vec()]));
         assert!(lookup(&d, b"Abc ...", 0).is_none());
         assert!(lookup(&d, b"Xyz...", 0).is_none());
+    }
+
+    #[test]
+    fn tool_tip_conditions_cut_by_the_game_are_joined_back() {
+        // 工坊提示框「需要：」：遊戲照 29 格切行；前 30 字沒有空白的字從中間切開，還插進一個空白
+        let known: &[&[u8]] = &[b"Calcite/limestone/chalk/marble boulders", b"Non-economic hard stone boulders", b"Bone", b"Bone blocks", b"Wood log"];
+        let found = |t: &[u8]| known.contains(&t);
+        let groups = |lines: &[&[u8]]| tool_tip_groups(lines, found).into_iter().map(|(a, b, t)| (a, b, String::from_utf8(t).unwrap())).collect::<Vec<_>>();
+        assert_eq!(groups(&[b"Wood log", b"C", b"alcite/limestone/chalk/marbl ", b"e boulders"]),
+                   [(0, 1, "Wood log".into()), (1, 4, "Calcite/limestone/chalk/marble boulders".into())], "去掉遊戲插進去的空白");
+        assert_eq!(groups(&[b"Non-economic hard ", b"stone boulders"]), [(0, 2, "Non-economic hard stone boulders".into())]);
+        assert_eq!(groups(&[b"Bone ", b"blocks"]), [(0, 2, "Bone blocks".into())], "行尾是空白的行還沒完，短的 Bone 不先命中");
+        assert_eq!(groups(&[b"Abc", b"def"]), [(0, 1, "Abc".into()), (1, 2, "def".into())], "查不到就一行一組");
+    }
+
+    #[test]
+    fn site_history_lines_join_only_where_the_game_was_forced_to_wrap() {
+        // 據點歷史寬 10：「aaaa bbbb」後面接的「cccc」放不下才換行（同一則）；「dd」放得下卻換行，是下一則
+        let lines: &[&[u8]] = &[b"aaaa bbbb", b"cccc", b"dd ee", b"ff"];
+        assert_eq!(history_events(lines, &[7, 7, 7, 7], 10), [(0, 2), (2, 3), (3, 4)]);
+        assert_eq!(history_events(lines, &[7, 3, 3, 3], 10), [(0, 1), (1, 2), (2, 3), (3, 4)], "顏色不同就是不同則");
+        assert_eq!(history_events(&[b"aaaa bbb ", b"c"], &[7, 7], 10), [(0, 1), (1, 2)], "行尾留著切點的空白：去掉再比，c 放得下就是下一則");
     }
 
     #[test]

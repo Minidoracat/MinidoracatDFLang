@@ -1,0 +1,9 @@
+en	zh-Hant	zh-Hans	align	row	note
+is a	一條	一条			DFHack hack/scripts/open-legends.lua L118 警告第三行第一段，後接紅字 ONE WAY TRIP 與「.」（接上一行「這是」）
+ONE WAY TRIP	不歸路	不归路			DFHack hack/scripts/open-legends.lua L118 同上紅字（「這是一條不歸路.」；結尾的「.」沒有英文字，引擎照原樣畫）
+You have opted for a	你選擇了	你选择了			DFHack hack/scripts/open-legends.lua L129 --no-autoquit 警告第一行第一段（原文結尾空白），後接紅字 two-way ticket
+two-way ticket	來回票	往返票			DFHack hack/scripts/open-legends.lua L129 同上紅字
+to legends	進入傳說	进入传说			DFHack hack/scripts/open-legends.lua L129 同上第三段（原文 " to legends"，下一行接 mode.）
+mode. Remember to	模式。看完後記得	模式。看完后记得			DFHack hack/scripts/open-legends.lua L130 同上第二行第一段（原文結尾空白），後接紅字 quit to desktop and restart
+quit to desktop and restart	結束遊戲並重新啟動	退出游戏并重新启动			DFHack hack/scripts/open-legends.lua L130 同上紅字（下一行接「矮人要塞，以免存檔損毀。」）
+savegames.	存檔。	存档。			DFHack hack/scripts/open-legends.lua L140 自動存檔停用說明的最後一行

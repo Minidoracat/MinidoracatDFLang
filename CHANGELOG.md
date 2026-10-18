@@ -15,11 +15,35 @@
 - **工坊任務提示框「需要：」的長條件照英文**：「Non-economic hard stone」「Unrotten ivory/tooth body」這種被遊戲切成兩行的條件，第一行照英文、第二行單獨翻（「石塊」）。現在兩行都是中文。
   > 技術要點：遊戲在 FUN_1408c2ca0 自己照 29 格切行，切點的一個空白留在行尾；畫字 hook 整行查不到時去掉行尾那一個空白再查（`hooks.rs` 的 `lookup`；兩格以上的空白是欄位補位，不去）。截短前的原文、去掉行尾空白、截斷處前面那段這幾種換寫法再查的最多三層（`LOOKUP_DEPTH`）：原文本身又以「 ...」「... 」結尾時會繞回原來的寫法，原本沒有上限。
 - **小隊面板的平民警報大按鈕照英文**：DFHack 加在小隊面板右下的紅色大按鈕「Activate civilian alert」、警報發布後的「Clear civilian alert」照英文。現在是「發布／平民／警報」「解除／平民／警報」。
-  > 技術要點：DFHack 的 `widgets.makeButtonLabelText` 一格一字畫圖格、不經 `paintString`。`lua/loader.lua` 的 `install_button` 包住 `Label.onRenderBody`：只有字的按鈕照原樣畫完後，英文有字的列串成一句查譯文，譯文依列數平分、每列放在那一列正中間，字色照英文畫好的格子（`hooks.rs` 的 `dfhack_button`、新綁定 `engine.dh_button`）。buildingplan 選料視窗的「Autoselect」「Continue」也是這種按鈕。
+  > 技術要點：DFHack 的 `widgets.makeButtonLabelText` 一格一字畫圖格、不經 `paintString`。`lua/loader.lua` 的 `install_label` 包住 `Label.onRenderBody`：只有字的按鈕照原樣畫完後，英文有字的列串成一句查譯文，譯文依列數平分、每列放在那一列正中間，字色照英文畫好的格子（`hooks.rs` 的 `dfhack_button`、新綁定 `engine.dh_button`）。buildingplan 選料視窗的「Autoselect」「Continue」也是這種按鈕。
 - **品質記號 ☼、≡ 與裝飾外框 «» 和中文中間空一段**：場所詳情的「神殿，2664 ☼ （升級需 10000 ☼）」、庫存的「≡鐵弩箭 [25]≡」「«-一袋韭蔥種子（巨型洞穴蜘蛛絲製）-»」，記號和前後的字中間空了一大段。現在接在一起（「神殿，2664☼（升級需 10000☼）」）。
   > 技術要點：整句貼圖把 ☼ ≡ « » 當一般字元跟著字緊排（`overlay.rs` 的 `is_text`；帶 ☼ 的價值照數字對齊結尾格）。思源黑體沒有 ☼，字型子集改用 Noto Sans Symbols 2 補：補字字型的垂直度量改成主字型的，☼ 縮到大寫字母高、粗體疊字加粗（`scripts/build.py` 的 `match_metrics`、`fit_symbol`）；授權全文併進 `dflang/LICENSE-fonts.txt`。
 - **其他照英文的地方**：石工工坊「雕刻紀念石板」清單的每一項（「Bomrek Kosothudist（雕刻紀念石板）」）、場所詳情的神殿職位（「Sacred Torch」→「神聖之火炬」；「Holy Bite」從「神聖噬咬」改成「聖噬咬」，和同一列的人名＋職位一致）、建立工作指令左欄的釀酒、織機、漁獲，倉儲區自訂設定的未處理的魚（「未處理的生鯷魚，♂」）、大罐、天使帶的武器盔甲型號（「鼓脹胸甲」「細刃」「荷葉邊斗篷」）與世界生成生物的肉、脂肪、皮革、羊皮紙、絲線（「河狸惡鬼肉」「切碎的河狸惡鬼肝臟」）。天使身上的材料原本拆錯成「Nocam meat之浩劫」「kosh leather之鬥士」，現在是「Nocam之浩劫肉」「kosh之鬥士皮革」。
   > 技術要點：生成生物的材料句型（`{%1} meat`、`{%1} leather`…）放在 zz_legends_04.tsv 天使名「{名詞} of {1}」前面；同時補 jobs.tsv 的 `Cut／Polish／Decorate with／Stud with {%1}`，材料由句型組成的工作（「Decorate with yak leather」）才不會被材料句型拆成「用犛牛裝飾皮革」。天使型號形容詞寫成 inner（`names_items_angel.tsv`），long、short、blade 這類常見字不單獨寫（會把「plant long sword」拆成「植物長劍術」、「axe blade」拆成「斧頭刃」）。
+- **DFHack 啟動器的工具說明整頁照英文**：在啟動器選一個工具時，右邊的說明（用法、參數、範例）整頁是英文。現在約三千段說明都是中文，指令名、參數照英文（「指令："autobutcher"」「自動屠宰多餘的牲畜。」）。
+  > 技術要點：helpdb 的段落寫在 `data/strings/dfhack_docs_01..14.tsv`；標題與短句（`Usage`、`Phases`、`Notes`）放 `data/screens/dfhack.lua.launcher.tsv`，放全域時 `Phases` 會把書名「Great Phases」切成「卓越階段」。縮排的行去掉前導空白再查已登記的換行結果（`hooks.rs` 的 `dfhack_translate`）；引號裡全小寫的指令在 `*` 畫面照原文（`keeps_command`）。`data/rules/dfhack_docs.tsv` 補 `Command: "{1}"`、`Tags: {1}`、`Keybinding: {1}`。
+- **DFHack 的彈出訊息逐字變成半中半英**：用 DFHack 開的彈出訊息（`showPopupAnnouncement`，例如一些腳本的提示）原本逐字查字典，夾成「Although 牠 is a grim reminder…」。現在整段翻、依中文換行，底下的「More」是「更多」。
+  > 技術要點：這種視窗的段落由 dfhack.dll 自己的一份 `DFHack::Gui::MTB_set_width` 排版，不經遊戲的 `mtb_set_width`；引擎從 dfhack.dll 的匯出表以修飾名前綴找到它（新綁定 `engine.dfhack_export`、`lua.rs` 的 `module_export`）掛 `dfhack_mtb_set_width`，和遊戲的段落共用 `set_width_then_rewrite`。
+- **DFHack 視窗還有幾處英文**：開啟傳說模式的警告、GM 編輯器、設定管理員、交易時的道德警告（「你選了 3 件交易品」原本多一個「s」）、快速入門、暖濕挖掘設定，以及「所有出發警告都已略過。」這種作者手動斷成幾列的說明，現在是中文。
+  > 技術要點：`install_label` 也在 Label 畫之前把每列只有一段字、以句末標點結尾的多列說明接回一段交給 `dh_wrap`，整段有譯文就依中文重新換行，查不到時每列照舊各自查。DFHack 另畫的複數 `s` 寫依畫面譯文、譯文一格空白（`dfhack.lua.caravan.trade.ethics.tsv`，align `c`）。gui/settings-manager 的 init 設定編輯器在 53.16-r2 的腳本第 877 行之後，不會執行，不翻。
+- **玩家自己取的名字被翻成怪中文**：小隊排程的「Dense Training」變成「茂密的訓練」，倉儲區、區域的名字也會被拆開翻。現在玩家取的名字照原樣顯示；和遊戲用語同字的（倉儲區取名「Gems」）照翻。
+  > 技術要點：讀檔後每 100 幀 `lua/loader.lua` 的 `track_player_names` 收倉儲區、區域、活動區、工作細項、警戒狀態、制服、公民自訂職業、小隊與小隊排程每月的名稱，交給新的 `engine.set_player_names`（`names::set_player_names`，內容沒變不動、換了回傳 true 就 `engine.refresh()` 清掉翻好的快取與段落計畫；世界卸載時送空的）；畫字時整段是玩家取的名字、又沒有同字的整句條目就照原文（`Dict::keeps_player_name`），佔位裡的也照抄。
+- **擊殺紀錄照英文**：人物頁軍事分頁的「擊殺」清單（「Eléde Spinewood the elf, d. 255」）照英文。現在是「精靈Eléde 脊森林，255年歿」「在貿涉水擊殺三個哥布林（♂）」。
+  > 技術要點：`data/rules/sentences_kills_fort.tsv` 的 `{1}, b. {#2} d. {#3}` 這類句型；「名字 the 種族」只在名字登記過時拆開（`Dict::name_then_title`，稱呼只收小寫字母、空白、連字號），沒登記的整段照英文。地點寫 `{^n}`，不會套到「Two dwarves in danger」這類一般句子。
+- **被遊戲截短的職業、綽號照英文**：物品頁「Owner: 名字, Stonecr...」、傳說模式分頁「原名, "英文名...」這種截在字中間的字串照英文。現在找唯一對得上的職業或登記過的名字補回、翻好後照原本的寬度截短；有兩個以上對得上（Stone… 可能是石雕匠或石匠）時照英文。
+  > 技術要點：`Dict::complete_cut`（逗號後的片段補成字典裡唯一以它開頭的整句，或 `names::complete` 名稱表裡唯一的名字），結果記在 `completions`；`hooks.rs` 的 `lookup_in` 在截短前原文查不到時試它。
+- **清單裡首字大寫的材料與物品照英文**：倉儲區自訂設定、庫存裡遊戲把首字改大寫的項目（「Experiment of Ebdi fat」「Enormous clear glass corkscrew」）照英文。現在是中文（「Ebdi之實驗體脂肪」「巨型透明玻璃螺旋鑽」）。
+  > 技術要點：整段照原樣比不到句型時，首字改小寫再比一次（`Dict::apply_rules`）。只在整段改：佔位裡的片段本來就大寫（書名「The Fire: My Only Mistake」），改小寫會被只給佔位用的 `my {@1} {2}` 切成「我的僅限Mistake」；介系詞、冠詞開頭的也不改（「At your location」不會被想法原因的 `at {1}` 翻成「因…而」）。
+- **傳說模式還有幾處英文**：神器被偷的事件裡「在某事件期間」「並帶到某地」（「…在Rislu Strepuv「斥之圍城」期間從…偷走了…」）、交談紀錄裡只有名字的講者（「Kogannog：基本結社和我們時有零星衝突」）、只有一個字的書名（「Gallows」）、天使惡魔這類生成生物的複數（「Fighters of Nocam」「Swamp titans」）、圖像描述裡有名字的元素，現在是中文。「Night trolls」從「夜晚巨魔」改成和單數一致的「暗夜巨魔」。
+  > 技術要點：`data/events/tails.tsv` 第一列加 tail `and brought to {1}`（先去掉它、再去掉原因），`data/events/18.tsv` 的 12 條「… and brought to」子句換成「… during {%n}.」；`__speakers.tsv` 加 `{*1}: {%2}`，align 新值 `speech`：只套以 `.`、`!`、`?` 或引號結尾的字串（`Rule.speech`），當成有錨點的句型排序。單字書名讀檔時由 `note_world_names` 整批交給新的 `engine.set_titles`（`names::set_titles`，世界卸載時清空並 `engine.refresh()`），單獨畫出時才查書名用詞與字表名詞（`Dict::whole_title`）。複數名稱 7,559 條從單數條目照遊戲的複數表產生（`data/strings/legends_04.tsv`、`zz_legends_04.tsv`）。
+- **要塞的一些單字照英文**：生物清單表頭的排序鈕「Cat」、標題畫面存檔清單「Nishrodim「貿涉水」, 要塞」的半形逗號、世界畫面的路程（「Six days' travel」）、單獨畫出的職位名（judge、chieftain…）、倉儲區自訂設定裡冰凍的邪惡天氣物質（「冰凍的噁心稠液」）、獸人與巨型動物的毒液乳汁（「沸騰的眼鏡王蛇人毒液」「大王魷墨汁」）、「材料＋樂器名＋零件名」（「bone talin body」）。現在是中文（「類」「，」「六天路程」）。
+  > 技術要點：`Cat` 寫在 `dwarfmode.Info.CREATURES.tsv`、限定第 10 列（表頭），其他列的動物名 Cat 照英文；`verify_mod.py` 允許同一個依畫面譯文檔裡限定列與不限列的同一原文各一條。存檔清單的逗號在 `title.tsv`（存檔清單的焦點是 `title/Default`）。路程的數字是英文數字字（FUN_14052e360），句型 `{%1} days' travel`。職位名寫在 `data/screens/dwarfmode.tsv`；`positions_custom.tsv` 加 `{*1}, {_2}`。材料在 `data/rules/stockpile_materials.tsv`、`data/strings/stockpile_materials.tsv`，零件在 `instruments.tsv`。
+- **遊戲先切成好幾行才畫的長句照英文**：工坊任務提示框裡沒有空白可切的長條件（「Calcite/limestone/chalk/marble boulders」被切成只有「C」的第一行和兩段半個字）、世界地圖上據點的歷史、交易時交出或被奪神器時商人的話，只有一行的翻得到。現在這三種都接回整句再翻、依中文換行。
+  > 技術要點：hook 三個切行迴圈（`engine/patterns.tsv` 的 `fn_tool_tip`、`fn_world_site_history`、`fn_trade_artifact_speech`；`hooks.rs` 的 `hook_tool_tip`、`hook_world_site_history`、`hook_trade_artifact_speech`）：提示框只接兩行以上的條件組（`tool_tip_groups`），據點歷史只在遊戲被迫切行的地方接（`plan_site_history`），兩者有單元測試。三者都還沒實機看過：提示框與世界地圖的據點要真滑鼠停留或點擊才出現（`dev_game.py` 的滑鼠做不到），交易神器的台詞沒找到畫字迴圈。
+
+### 變更
+
+- **DFHack 的 widget 統一譯成「元件」**：控制面板、說明文件裡原本「小工具」「元件」混用（簡中「小部件」「组件」），現在一律「元件／组件」。
 
 ## [0.5.3] - 2026-10-18
 

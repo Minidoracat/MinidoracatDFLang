@@ -9,6 +9,7 @@ Nearest site: {1} east	最近據點：往東{1}	最近据点：向东{1}		同上
 Nearest site: {1} west	最近據點：往西{1}	最近据点：向西{1}		同上
 Nearest site: {1}	最近據點：{1}	最近据点：{1}		同上，沒有方位時
 {#1} days' travel	{1} 天路程	{1} 天路程		距離（數天）
+{%1} days' travel	{1}天路程	{1}天路程		FUN_1401c17e0 L232318-232350 世界畫面滑過地圖時的路程：兩天以上是英文數字字（FUN_14052e360，首字改大寫：Six days' travel）
 Hostile, {1}	敵對，{1}	敌对，{1}		鄰近文明人數前加敵對；{1} 是 a hundred 等（strings，小寫）
   Prepare for the Journey to {1}  	  準備前往{1}的旅程  	  准备前往{1}的旅程  	c	謹慎準備畫面標題；{1} 是地區名
   Prepare for the Expedition to {1}  	  準備遠征{1}  	  准备远征{1}  	c	同上，收復要塞時

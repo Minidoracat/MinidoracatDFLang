@@ -60,6 +60,9 @@ pub unsafe extern "C" fn luaopen_dflang(l: lua::State) -> c_int {
         lua::set_fn(l, c"load_names", load_names);
         lua::set_fn(l, c"note_name", note_name);
         lua::set_fn(l, c"note_native", note_native);
+        lua::set_fn(l, c"set_titles", set_titles);
+        lua::set_fn(l, c"set_player_names", set_player_names);
+        lua::set_fn(l, c"dfhack_export", dfhack_export);
         lua::set_fn(l, c"load_translit", load_translit);
         lua::set_fn(l, c"set_translit", set_translit);
         lua::set_fn(l, c"set_options", set_options);
@@ -394,6 +397,45 @@ unsafe extern "C" fn note_native(l: lua::State) -> c_int {
             }
             None => fail(l, "note_native: expects a string"),
         }
+    }
+}
+
+/// set_titles(書名，以 \n 分隔)：這個世界只有一個字的書名整批換成這一份（見 names::set_titles）：單獨畫出的「Perishment」當書名翻
+unsafe extern "C" fn set_titles(l: lua::State) -> c_int {
+    unsafe {
+        match lua::arg_bytes(l, 1) {
+            Some(list) => {
+                names::set_titles(list);
+                0
+            }
+            None => fail(l, "set_titles: expects a string"),
+        }
+    }
+}
+
+/// set_player_names(名字，以 \n 分隔)：玩家取的名字（倉儲區、區域、小隊、排程、制服…）整批換成這一份，照原樣畫（見 names::set_player_names）。
+/// 回傳有沒有換
+unsafe extern "C" fn set_player_names(l: lua::State) -> c_int {
+    unsafe {
+        match lua::arg_bytes(l, 1) {
+            Some(list) => {
+                lua::push_bool(l, names::set_player_names(list));
+                1
+            }
+            None => fail(l, "set_player_names: expects a string"),
+        }
+    }
+}
+
+/// dfhack_export(名稱) → dfhack.dll 匯出函式的位址（匯出名，或 C++ 修飾名的開頭，如 `MTB_set_width@Gui@DFHack`）；找不到時 nil。
+/// 給 DFHack 自己的、不經遊戲函式的排版（dfhack.gui.showPopupAnnouncement 的彈出視窗）掛 hook
+unsafe extern "C" fn dfhack_export(l: lua::State) -> c_int {
+    unsafe {
+        match lua::arg_str(l, 1).and_then(|name| lua::module_export("dfhack.dll", name)) {
+            Some(addr) => lua::push_int(l, addr as i64),
+            None => lua::push_nil(l),
+        }
+        1
     }
 }
 

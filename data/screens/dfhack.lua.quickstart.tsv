@@ -1,0 +1,3 @@
+en	zh-Hant	zh-Hans	align	row	note
+Page	頁次	页次			DFHack hack/scripts/quickstart-guide.lua L88 底部頁碼：頁次＋目前頁＋／＋總頁數
+of	／	／			DFHack hack/scripts/quickstart-guide.lua L90 同上（原文 " of "）

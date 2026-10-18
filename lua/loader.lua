@@ -407,10 +407,13 @@ local function install_tab(engine, stamp)
     end
 end
 
--- DFHack 的大按鈕（widgets.makeButtonLabelText：civ-alert 的「Activate civilian alert」、buildingplan 選料的「Autoselect」）一格一字畫圖格，不經 paintString。
+-- DFHack 的 Label 有兩種字不是一段一段查得到的：
+-- 大按鈕（widgets.makeButtonLabelText：civ-alert 的「Activate civilian alert」、buildingplan 選料的「Autoselect」）一格一字畫圖格，不經 paintString。
 -- 只有字的按鈕（沒有圖格、框線字元）照原樣畫完後，英文有字的列串成一句查譯文，每一列換成平分到的中文、放在那一列正中間，
--- 字色照英文畫好的格子（滑過時的顏色也是），見 engine/src/hooks.rs 的 dfhack_button。函式不在就略過，按鈕照英文
-local function install_button(engine, stamp)
+-- 字色照英文畫好的格子（滑過時的顏色也是），見 engine/src/hooks.rs 的 dfhack_button。
+-- 作者手動斷成好幾列的說明（每列只有一段字，open-legends 的警告、確認框）：畫之前接回一段交給 dh_wrap，整段有譯文就依中文重新換行、
+-- 登記每一列要畫的中文（見 engine/src/hooks.rs 的 dfhack_wrap）；整段查不到時每列照舊各自查。函式不在就略過，照英文
+local function install_label(engine, stamp)
     local ok, widgets = pcall(require, 'gui.widgets')
     local Label = ok and type(widgets) == 'table' and widgets.Label
     if type(Label) ~= 'table' or type(Label.onRenderBody) ~= 'function' or Label.dflang_render then return end
@@ -445,7 +448,35 @@ local function install_button(engine, stamp)
         end
         return rows_of[text] or nil
     end
+    -- Label 的 text_lines 表 → 登記過了沒（weak 鍵，text 換了就是新的表）。最後以句末標點結尾的才接，清單、表格不接
+    local paragraphs = setmetatable({}, {__mode = 'k'})
+    local function register_paragraph(self)
+        local lines = self.text_lines
+        if type(lines) ~= 'table' or #lines < 2 or paragraphs[lines] ~= nil then return end
+        paragraphs[lines] = false
+        local texts, paras, para, width = {}, {}, {}, 0
+        for _, line in ipairs(lines) do
+            local token = line[1]
+            if #line > 1 or (token and (type(token) ~= 'table' or token.key or token.tile or token.width or type(token.text) ~= 'string')) then
+                return
+            end
+            local text = token and token.text or ''
+            if text:find('%S') then
+                table.insert(texts, text)
+                table.insert(para, text:match('^%s*(.-)%s*$'))
+                width = math.max(width, #text)
+            elseif #para > 0 then
+                table.insert(paras, table.concat(para, ' '))
+                para = {}
+            end
+        end
+        if #para > 0 then table.insert(paras, table.concat(para, ' ')) end
+        local whole = table.concat(paras, '\n')
+        if #texts < 2 or not whole:find('[%.!%?:%)]$') then return end
+        paragraphs[lines] = engine.dh_wrap(whole, width, texts)
+    end
     Label.onRenderBody = function(self, dc)
+        register_paragraph(self)
         orig(self, dc)
         local rows = button_rows(self.text)
         if not rows or (self.start_line_num or 1) ~= 1 then return end
@@ -652,6 +683,12 @@ local function note_world_names(engine)
         engine.note_native(d.name)
         engine.note_native(d.name_plural)
     end
+    -- 只有一個字的書名（「Perishment」）：單獨畫出的單字是這個世界的書名時才當書名翻，整批換掉上一個世界的（見 engine/src/names.rs 的 set_titles）
+    local titles = {}
+    for _, wc in ipairs(w.written_contents.all) do
+        if wc.title ~= '' and not wc.title:find(' ', 1, true) then table.insert(titles, wc.title) end
+    end
+    engine.set_titles(table.concat(titles, '\n'))
     for _, list in ipairs{w.entities.all, data.sites, w.artifacts.all, data.regions, data.underground_regions,
                           data.landmasses, data.mountain_peaks, data.rivers, w.musical_forms.all, w.poetic_forms.all,
                           w.dance_forms.all, w.identities.all} do
@@ -672,6 +709,61 @@ local function note_world_names(engine)
     for _, f in ipairs(w.history.figures) do
         if not note(f.name) then return end
     end
+end
+
+-- 玩家取的名字照原樣畫（見 engine/src/names.rs 的 set_player_names）：倉儲區、區域、活動區、工作細項、警戒狀態、制服、公民的自訂職業、
+-- 本要塞的小隊與小隊排程每個月的名稱（「Dense Training」）。讀不到的一類（欄位隨版本改了）略過，其他照收
+local function player_names()
+    local names = {}
+    local function add(s)
+        if type(s) == 'string' and s ~= '' then table.insert(names, s) end
+    end
+    local function each(list, field)
+        pcall(function()
+            for _, x in ipairs(list()) do add(x[field]) end
+        end)
+    end
+    local buildings, plotinfo = df.global.world.buildings.other, df.global.plotinfo
+    each(function() return buildings.STOCKPILE end, 'name')
+    each(function() return buildings.ANY_ZONE end, 'name')
+    each(function() return plotinfo.burrows.list end, 'name')
+    each(function() return plotinfo.labor_info.work_details end, 'name')
+    each(function() return plotinfo.alerts.routines end, 'name')
+    each(function() return plotinfo.main.fortress_entity.uniforms end, 'name')
+    each(function() return dfhack.units.getCitizens() end, 'custom_profession')
+    local function squads()
+        local list = {}
+        for _, id in ipairs(plotinfo.main.fortress_entity.squads) do table.insert(list, df.squad.find(id)) end
+        return list
+    end
+    each(squads, 'alias')
+    each(function()
+        local months = {}
+        for _, squad in ipairs(squads()) do
+            for _, routine in ipairs(squad.schedule.routine) do
+                for m = 0, 11 do table.insert(months, routine.month[m]) end
+            end
+        end
+        return months
+    end, 'name')
+    return table.concat(names, '\n')
+end
+
+-- 遊戲沒有改名事件：讀檔後每 100 幀重送一次，內容沒變引擎不動；世界卸載就停（下次讀檔再開）。
+-- 換了（讀檔後第一次、玩家改名）就清掉翻好的快取與段落計畫：翻好的整句不會因為名稱表換版本重算（engine.refresh）
+local function track_player_names(engine, state)
+    if state.player_names then return end
+    state.player_names = true
+    local function send()
+        if not dfhack.isMapLoaded() then
+            state.player_names = false
+            return
+        end
+        local ok, list = pcall(player_names)
+        if ok and engine.set_player_names(list) then engine.refresh() end
+        dfhack.timeout(100, 'frames', send)
+    end
+    send()
 end
 
 local function start()
@@ -769,6 +861,19 @@ local function start()
     -- 冒險模式的通知清單（整份通知，遊戲自己切行）；找不到只有這份清單的多行通知維持英文
     ok, err = attach_hooks(engine, {'adv_announcements'})
     if not ok then fail('%s；冒險模式通知清單的多行通知維持英文', err) end
+    -- 遊戲自己切行的幾處：工坊新增任務提示框的條件（字從中間切開）、世界地圖的據點歷史、交易時神器的商人台詞；找不到只有這幾處維持原樣
+    ok, err = attach_hooks(engine, {'tool_tip'})
+    if not ok then fail('%s；工坊提示框被切開的長條件維持英文', err) end
+    ok, err = attach_hooks(engine, {'world_site_history'})
+    if not ok then fail('%s；世界地圖據點歷史的多行事件維持英文', err) end
+    ok, err = attach_hooks(engine, {'trade_artifact_speech'})
+    if not ok then fail('%s；交易時神器的商人台詞維持英文', err) end
+    -- DFHack 自己的段落排版（dfhack.gui.showPopupAnnouncement 的彈出視窗不經遊戲的 mtb_set_width）：照 dfhack.dll 的匯出名找
+    if mtb then
+        local addr = engine.dfhack_export('MTB_set_width@Gui@DFHack')
+        if addr then ok, err = engine.attach('dfhack_mtb_set_width', addr) else ok, err = nil, '找不到 dfhack.dll 的 MTB_set_width' end
+        if not ok then fail('%s；DFHack 彈出視窗的段落維持英文', err) end
+    end
     -- 彩色文字框（人物頁的想法、記憶、性格）；找不到只有這些維持英文
     if ctb_ok then
         ok, err = attach_hooks(engine, {'ctb_add_string'})
@@ -799,7 +904,7 @@ local function start()
     install_paint_string(engine, stamp)
     install_wrap(engine)
     install_tab(engine, stamp)
-    install_button(engine, stamp)
+    install_label(engine, stamp)
     install_frame()
     install_read_tile(engine)
     install_typing()
@@ -848,6 +953,13 @@ local function start()
         if sc == SC_WORLD_LOADED and state.names_ok then
             local ok, err = pcall(note_world_names, engine)
             if not ok then fail('登記世界裡的名字時出錯（%s），沒畫過的名字維持英文', err) end
+        end
+        if sc == SC_WORLD_LOADED then track_player_names(engine, state) end
+        -- 上一個世界的玩家取的名字、單字書名不留到標題畫面與下一個世界；照它們翻好的快取一起清掉
+        if sc == SC_WORLD_UNLOADED then
+            engine.set_player_names('')
+            engine.set_titles('')
+            engine.refresh()
         end
     end
     log('已啟用：%d 條譯文、%d 條句型、%d 個字圖', loaded, rules, utf8.len(chars))

@@ -334,3 +334,10 @@ Downward Stairway	下行樓梯	下行楼梯	game	approved
 Up/Down Stairway	上下樓梯	上下楼梯	game	approved		
 Upward Slope	上坡	上坡	game	approved		地圖游標（silt Upward Slope 粉砂上坡）
 Downward Slope	下坡	下坡	game	approved		
+plugin	外掛	插件	ui	draft		DFHack 的外掛程式（說明文件、控制面板）；指令名照英文
+tick	刻	刻	game	draft		遊戲時間單位（DFHack 說明文件）；指令參數裡的 tick 照英文
+biome	生物群系	生物群系	game	draft		地區的生態類型（DFHack 說明文件；少數舊譯「生態域」）
+z-level	Z 層	Z 层	game	draft		地圖的高度層（DFHack 說明文件）
+widget	元件	组件	ui	draft		DFHack 的 overlay 元件（控制面板、說明文件）；2026-10-19 從「小工具／小部件」統一
+combat hardened	戰鬥麻木	战斗麻木	game	draft		看慣戰鬥、不再因死亡受壓力的性格狀態（DFHack 說明文件）
+Marker Mode	藍圖模式	蓝图模式	ui	draft		建造標記成藍圖、不派工的模式（DFHack 說明文件、quickfort）

@@ -1,0 +1,4 @@
+en	zh-Hant	zh-Hans	align	note
+Command: "{1}"	指令："{1}"	命令："{1}"		DFHack hack/docs/docs/tools/*.txt 工具說明開頭的指令名（launcher 說明窗格；指令名照原文）
+Tags: {1}	標籤：{1}	标签：{1}		DFHack hack/docs/docs/tools/*.txt 標籤行（標籤名是 launcher 篩選用的識別字，照原文）
+Keybinding: {1}	快捷鍵：{1}	快捷键：{1}		DFHack hack/docs/docs/tools/*.txt 預設快捷鍵（按鍵與畫面焦點照原文）

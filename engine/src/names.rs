@@ -149,6 +149,20 @@ pub fn get(english: &[u8]) -> Option<Arc<str>> {
     get_with(crate::translit::table().as_deref(), english)
 }
 
+/// 名稱表裡唯一以 prefix 開頭、比它長的英文名（傳說人物分頁截短的「名字, "綽號…」補回完整的綽號，見 Dict::complete_cut）；
+/// 有兩個以上時 None。名稱表最多 20 萬筆，整張掃過：呼叫端要記住結果
+pub fn complete(prefix: &[u8]) -> Option<Vec<u8>> {
+    let names = NAMES.lock();
+    let keys = names.keys();
+    #[cfg(test)]
+    let fixed = FIXED.lock();
+    #[cfg(test)]
+    let keys = keys.chain(fixed.keys());
+    let mut found = keys.filter(|k| k.len() > prefix.len() && k.starts_with(prefix));
+    let first = found.next()?.clone();
+    found.next().is_none().then_some(first)
+}
+
 /// 同 get，音譯表由呼叫端給（None 是名字音譯關著；測試用，免得動到全域的開關）
 fn get_with(table: Option<&crate::translit::Table>, english: &[u8]) -> Option<Arc<str>> {
     #[cfg(test)]
@@ -247,6 +261,53 @@ pub fn native_text(word: &[u8]) -> String {
 
 fn lower_first(word: &[u8]) -> Option<Vec<u8>> {
     word.first().filter(|c| c.is_ascii_uppercase()).map(|c| [&[c.to_ascii_lowercase()][..], &word[1..]].concat())
+}
+
+/// 玩家自己取的名字（倉儲區、區域、小隊、小隊排程、制服、活動區、工作細項；lua/loader.lua 的 track_player_names 讀檔後定時整批送來）：
+/// 照原樣畫、不查字典，「Dense training」不會被地形句型翻成「茂密的訓練」。存首字改小寫的寫法，遊戲把首字改大寫畫也認得
+static PLAYER: LazyLock<Mutex<HashSet<Vec<u8>>>> = LazyLock::new(|| Mutex::new(HashSet::new()));
+
+/// 換成這一批玩家取的名字（`\n` 分隔，CP437）；和上一批相同時不動。回傳有沒有換
+pub fn set_player_names(list: &[u8]) -> bool {
+    let names: HashSet<Vec<u8>> = list.split(|&c| c == b'\n').filter(|n| n.iter().any(u8::is_ascii_alphabetic))
+        .map(|n| lower_first(n).unwrap_or_else(|| n.to_vec())).collect();
+    let mut current = PLAYER.lock();
+    if *current == names {
+        return false;
+    }
+    *current = names;
+    drop(current);
+    // 句型快取裡翻好的結果（佔位抓到玩家取的名字）要重算
+    GENERATION.fetch_add(1, Ordering::Release);
+    true
+}
+
+/// 整段就是玩家取的名字（首字大小寫不論）
+pub fn is_player(text: &[u8]) -> bool {
+    let names = PLAYER.lock();
+    !names.is_empty() && names.contains(lower_first(text).as_deref().unwrap_or(text))
+}
+
+/// 這個世界裡只有一個字的書名（存小寫）：單獨畫出的單字是書名時才當書名翻（Dict::whole_title），介面上同字的單字
+/// （Peace、Change）照常查字典
+static TITLES: LazyLock<Mutex<HashSet<Vec<u8>>>> = LazyLock::new(|| Mutex::new(HashSet::new()));
+
+/// 換成這一批單字書名（`\n` 分隔，CP437；lua/loader.lua 的 note_world_names 讀檔時送來，世界卸載時送空的）。
+/// 和上一批不同時換名稱表版本：先前翻不出來、或照上一個世界翻的快取要重算
+pub fn set_titles(list: &[u8]) {
+    let titles: HashSet<Vec<u8>> = list.split(|&c| c == b'\n').filter(|t| !t.is_empty()).map(<[u8]>::to_ascii_lowercase).collect();
+    let mut current = TITLES.lock();
+    if *current != titles {
+        *current = titles;
+        drop(current);
+        GENERATION.fetch_add(1, Ordering::Release);
+    }
+}
+
+/// 這個字是不是這個世界的單字書名（不分大小寫）
+pub fn is_title(word: &[u8]) -> bool {
+    let titles = TITLES.lock();
+    !titles.is_empty() && titles.contains(&word.to_ascii_lowercase())
 }
 
 /// 英文名開頭的原名、綽號（head，不含結尾的空白）接上字表組的中文名：名字音譯開著時原名也音譯、以「·」相接

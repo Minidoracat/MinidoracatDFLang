@@ -1,0 +1,5 @@
+en	zh-Hant	zh-Hans	align	row	note
+You have	你選了	你选了			DFHack hack/scripts/internal/caravan/trade.lua L824 交易道德警告第一行：你選了＋件數＋件＋（複數時另畫的 s 換成空白）＋交易品，
+item	件	件			DFHack hack/scripts/internal/caravan/trade.lua L826 同上（原文 " item"，只有 4 格）
+s	 	 	c		DFHack hack/scripts/internal/caravan/trade.lua L827 同上，件數不是 1 時在 item 後面另畫的 s：中文不分單複數，畫成一格空白（align 寫 c：譯文只有空白）
+selected for trade	交易品，	交易品，			DFHack hack/scripts/internal/caravan/trade.lua L828 同上（原文 " selected for trade"）

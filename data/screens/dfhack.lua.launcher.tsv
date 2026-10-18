@@ -2,3 +2,153 @@ en	zh-Hant	zh-Hans	align	row	note
 *	*	*			這個畫面單獨畫出的全小寫字串照英文：工具名（reveal、zone、burrow、tailor）剛好是字典字詞時不翻
 Output	輸出	输出			DFHack hack/scripts/gui/launcher.lua L673 說明面板分頁標籤（限啟動器畫面）
 Custom	自訂	自定义			DFHack hack/scripts/gui/launcher.lua L113 標籤篩選狀態（限啟動器畫面）
+Usage	用法	用法			啟動器說明頁的標題或短句（自 dfhack_docs_01.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/3dveins.txt
+Example	範例	示例			啟動器說明頁的標題或短句（自 dfhack_docs_01.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/3dveins.txt
+Examples	範例	示例			啟動器說明頁的標題或短句（自 dfhack_docs_01.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/adaptation.txt
+Overlays	疊加介面	叠加界面			啟動器說明頁的標題或短句（自 dfhack_docs_01.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/advtools.txt
+The surface	地表	地表			啟動器說明頁的標題或短句（自 dfhack_docs_01.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/agitation-rebalance.txt
+Presets	方案	方案			啟動器說明頁的標題或短句（自 dfhack_docs_01.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/agitation-rebalance.txt
+Features	功能	功能			啟動器說明頁的標題或短句（自 dfhack_docs_01.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/agitation-rebalance.txt
+Caveat	注意	注意			啟動器說明頁的標題或短句（自 dfhack_docs_01.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/agitation-rebalance.txt
+Lists all configured aliases	列出所有已設定的別名	列出所有已配置的别名			啟動器說明頁的標題或短句（自 dfhack_docs_01.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/alias.txt
+Adds an alias	新增別名	添加别名			啟動器說明頁的標題或短句（自 dfhack_docs_01.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/alias.txt
+Removes the specified alias	移除指定的別名	移除指定的别名			啟動器說明頁的標題或短句（自 dfhack_docs_01.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/alias.txt
+Selection options	選取選項	选择选项			啟動器說明頁的標題或短句（自 dfhack_docs_01.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/animal-control.txt
+Command options	指令選項	命令选项			啟動器說明頁的標題或短句（自 dfhack_docs_01.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/animal-control.txt
+Column abbreviations	欄位縮寫	列名缩写			啟動器說明頁的標題或短句（自 dfhack_docs_01.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/animal-control.txt
+Tiers	等級	等级			啟動器說明頁的標題或短句（自 dfhack_docs_01.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/assign-attributes.txt
+Belief strengths	價值觀強度	价值观强度			啟動器說明頁的標題或短句（自 dfhack_docs_01.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/assign-beliefs.txt
+Facet strengths	特質強度	特质强度			啟動器說明頁的標題或短句（自 dfhack_docs_01.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/assign-facets.txt
+Skill ranks	技能等級	技能等级			啟動器說明頁的標題或短句（自 dfhack_docs_02.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/assign-skills.txt
+Commands	指令	命令			啟動器說明頁的標題或短句（自 dfhack_docs_02.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/autochop.txt
+Enable the script	啟用腳本	启用脚本			啟動器說明頁的標題或短句（自 dfhack_docs_02.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/autofish.txt
+Disable the script	停用腳本	停用脚本			啟動器說明頁的標題或短句（自 dfhack_docs_02.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/autofish.txt
+Positional Parameters	位置參數	位置参数			啟動器說明頁的標題或短句（自 dfhack_docs_02.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/autofish.txt
+Advanced usage	進階用法	高级用法			啟動器說明頁的標題或短句（自 dfhack_docs_02.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/autolabor.txt
+Config file format	設定檔格式	配置文件格式			啟動器說明頁的標題或短句（自 dfhack_docs_02.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/autonick.txt
+Current status of script	腳本目前的狀態	脚本当前的状态			啟動器說明頁的標題或短句（自 dfhack_docs_03.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/autotraining.txt
+Positional parameters	位置參數	位置参数			啟動器說明頁的標題或短句（自 dfhack_docs_03.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/blueprint.txt
+Phases	階段	阶段			啟動器說明頁的標題或短句（自 dfhack_docs_03.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/blueprint.txt
+Output formats	輸出格式	输出格式			啟動器說明頁的標題或短句（自 dfhack_docs_03.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/blueprint.txt
+Splitting output into multiple files	把輸出拆成多個檔案	把输出拆成多个文件			啟動器說明頁的標題或短句（自 dfhack_docs_03.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/blueprint.txt
+Types	類型	类型			啟動器說明頁的標題或短句（自 dfhack_docs_03.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/brainwash.txt
+Building placement	擺放建築	摆放建筑			啟動器說明頁的標題或短句（自 dfhack_docs_03.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/buildingplan.txt
+Setting quality and material filters	設定品質與材料篩選	设置品质和材料筛选			啟動器說明頁的標題或短句（自 dfhack_docs_03.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/buildingplan.txt
+Choosing specific items	選擇特定物品	选择特定物品			啟動器說明頁的標題或短句（自 dfhack_docs_03.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/buildingplan.txt
+Queueing work orders	排入工作指令	排入工作订单			啟動器說明頁的標題或短句（自 dfhack_docs_03.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/buildingplan.txt
+Lever linking	連結拉桿	连接拉杆			啟動器說明頁的標題或短句（自 dfhack_docs_03.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/buildingplan.txt
+Mechanism unlinking	斷開機械裝置	断开机械装置			啟動器說明頁的標題或短句（自 dfhack_docs_03.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/buildingplan.txt
+Note	注意	注意			啟動器說明頁的標題或短句（自 dfhack_docs_03.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/burrow.txt
+Overlay	疊加層	叠加层			啟動器說明頁的標題或短句（自 dfhack_docs_03.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/burrow.txt
+Trade screen	貿易畫面	贸易界面			啟動器說明頁的標題或短句（自 dfhack_docs_03.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/caravan.txt
+Troubleshooting	疑難排解	故障排除			啟動器說明頁的標題或短句（自 dfhack_docs_04.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/channel-safely.txt
+Unit options	單位選項	单位选项			啟動器說明頁的標題或短句（自 dfhack_docs_04.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/combat-harden.txt
+Displays help	顯示說明	显示帮助			啟動器說明頁的標題或短句（自 dfhack_docs_04.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/combine.txt
+Notes	備註	备注			啟動器說明頁的標題或短句（自 dfhack_docs_04.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/combine.txt
+Deep embarks for mods	模組的深層出發	模组的深层出发			啟動器說明頁的標題或短句（自 dfhack_docs_04.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/deep-embark.txt
+Selection criteria	選取條件	选择条件			啟動器說明頁的標題或短句（自 dfhack_docs_05.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/dwarf-op.txt
+Data tables	資料表	数据表			啟動器說明頁的標題或短句（自 dfhack_docs_05.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/dwarf-op.txt
+Widget configuration	元件設定	组件设置			啟動器說明頁的標題或短句（自 dfhack_docs_05.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/dwarfmonitor.txt
+Notes on file formats	檔案格式說明	文件格式说明			啟動器說明頁的標題或短句（自 dfhack_docs_06.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/export-world-map.txt
+Methods	方式	方式			啟動器說明頁的標題或短句（自 dfhack_docs_06.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/exterminate.txt
+Technical details	技術細節	技术细节			啟動器說明頁的標題或短句（自 dfhack_docs_06.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/exterminate.txt
+Event types	事件類型	事件类型			啟動器說明頁的標題或短句（自 dfhack_docs_06.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/force.txt
+Menu overlay widget	選單疊加介面元件	菜单叠加界面组件			啟動器說明頁的標題或短句（自 dfhack_docs_07.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/hotkeys.txt
+Interactive interpreter	互動式直譯器	交互式解释器			啟動器說明頁的標題或短句（自 dfhack_docs_08.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/liquids.txt
+print this list of commands	輸出這份指令清單	输出这份命令列表			啟動器說明頁的標題或短句（自 dfhack_docs_08.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/liquids.txt
+put liquid	放置液體	放置液体			啟動器說明頁的標題或短句（自 dfhack_docs_08.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/liquids.txt
+switch to magma	切換為熔岩	切换为熔岩			啟動器說明頁的標題或短句（自 dfhack_docs_08.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/liquids.txt
+switch to water	切換為水	切换为水			啟動器說明頁的標題或短句（自 dfhack_docs_08.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/liquids.txt
+make obsidian wall instead	改為製造黑曜石牆	改为制造黑曜石墙			啟動器說明頁的標題或短句（自 dfhack_docs_08.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/liquids.txt
+make obsidian floors	製造黑曜石地板	制造黑曜石地板			啟動器說明頁的標題或短句（自 dfhack_docs_08.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/liquids.txt
+make a river source	製造河流源頭	制造河流源头			啟動器說明頁的標題或短句（自 dfhack_docs_08.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/liquids.txt
+flow bits only	只改流動位元	只改流动位			啟動器說明頁的標題或短句（自 dfhack_docs_08.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/liquids.txt
+only add mode	只增加模式	只增加模式			啟動器說明頁的標題或短句（自 dfhack_docs_08.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/liquids.txt
+set mode	設定模式	设置模式			啟動器說明頁的標題或短句（自 dfhack_docs_08.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/liquids.txt
+only remove mode	只移除模式	只移除模式			啟動器說明頁的標題或短句（自 dfhack_docs_08.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/liquids.txt
+make the spawned liquid flow	讓生成的液體流動	让生成的液体流动			啟動器說明頁的標題或短句（自 dfhack_docs_08.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/liquids.txt
+make the spawned liquid static	讓生成的液體靜止	让生成的液体静止			啟動器說明頁的標題或短句（自 dfhack_docs_08.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/liquids.txt
+don't change permaflow state	不改變永久流動狀態	不改变永久流动状态			啟動器說明頁的標題或短句（自 dfhack_docs_08.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/liquids.txt
+set liquid amount	設定液體量	设置液体量			啟動器說明頁的標題或短句（自 dfhack_docs_08.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/liquids.txt
+Single tile	單一格子	单个格子			啟動器說明頁的標題或短句（自 dfhack_docs_08.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/liquids.txt
+List discovered	列出已發現礦石	列出已发现矿石			啟動器說明頁的標題或短句（自 dfhack_docs_08.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/locate-ore.txt
+Professions	職業	职业			啟動器說明頁的標題或短句（自 dfhack_docs_09.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/manipulator.txt
+The professions library	職業庫	职业库			啟動器說明頁的標題或短句（自 dfhack_docs_09.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/manipulator.txt；術語例外：library；職業的集合，不是圖書館
+A note on autohauler	autohauler 說明	autohauler 说明			啟動器說明頁的標題或短句（自 dfhack_docs_09.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/manipulator.txt
+Setting up custom keybindings	自訂按鍵設定	自定义按键设置			啟動器說明頁的標題或短句（自 dfhack_docs_09.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/markdown.txt
+Creating a Note	建立筆記	创建笔记			啟動器說明頁的標題或短句（自 dfhack_docs_09.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/notes.txt
+Editing or Deleting a Note	編輯或刪除筆記	编辑或删除笔记			啟動器說明頁的標題或短句（自 dfhack_docs_09.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/notes.txt
+Managing Notes Visibility	管理筆記的顯示	管理笔记的显示			啟動器說明頁的標題或短句（自 dfhack_docs_09.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/notes.txt
+The orders library	工作指令庫	工作订单库			啟動器說明頁的標題或短句（自 dfhack_docs_09.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/orders.txt；術語例外：library；工作指令庫，不是圖書館
+Widget position	元件位置	组件位置			啟動器說明頁的標題或短句（自 dfhack_docs_09.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/overlay.txt；術語例外：Position；畫面位置，不是職位
+top left corner	左上角	左上角			啟動器說明頁的標題或短句（自 dfhack_docs_09.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/overlay.txt
+top right corner	右上角	右上角			啟動器說明頁的標題或短句（自 dfhack_docs_09.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/overlay.txt
+lower left corner	左下角	左下角			啟動器說明頁的標題或短句（自 dfhack_docs_09.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/overlay.txt
+lower right corner	右下角	右下角			啟動器說明頁的標題或短句（自 dfhack_docs_09.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/overlay.txt
+Grow Options	生長選項	生长选项			啟動器說明頁的標題或短句（自 dfhack_docs_09.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/plant.txt
+Goth mode	哥德模式	哥特模式			啟動器說明頁的標題或短句（自 dfhack_docs_10.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/pref-adjust.txt
+show preferences of all units	顯示所有單位的偏好	显示所有单位的偏好			啟動器說明頁的標題或短句（自 dfhack_docs_10.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/prefchange.txt
+clear preferences of selected unit	清除選取單位的偏好	清除选中单位的偏好			啟動器說明頁的標題或短句（自 dfhack_docs_10.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/prefchange.txt
+clear preferences of all units	清除所有單位的偏好	清除所有单位的偏好			啟動器說明頁的標題或短句（自 dfhack_docs_10.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/prefchange.txt
+enable the plugin	啟用外掛	启用插件			啟動器說明頁的標題或短句（自 dfhack_docs_10.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/preserve-tombs.txt
+Pre-embark estimate	出發前估算	出发前估算			啟動器說明頁的標題或短句（自 dfhack_docs_10.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/prospector.txt
+Transformations	變換	变换			啟動器說明頁的標題或短句（自 dfhack_docs_10.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/quickfort.txt
+Configuration	設定	配置			啟動器說明頁的標題或短句（自 dfhack_docs_10.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/quickfort.txt
+Registering commands	註冊指令	注册命令			啟動器說明頁的標題或短句（自 dfhack_docs_11.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/repeat.txt
+Caveats	須知	须知			啟動器說明頁的標題或短句（自 dfhack_docs_11.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/reveal.txt
+Make a dwarf romantically inaccessible	讓矮人對戀愛毫無興趣	让矮人对恋爱毫无兴趣			啟動器說明頁的標題或短句（自 dfhack_docs_11.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/set-orientation.txt
+Interest options	興趣選項	兴趣选项			啟動器說明頁的標題或短句（自 dfhack_docs_11.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/set-orientation.txt
+Squad assignment overlay	小隊指派疊加介面	小队指派叠加界面			啟動器說明頁的標題或短句（自 dfhack_docs_11.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/sort.txt
+Annotations and sort orders	註記與排序方式	标注与排序方式			啟動器說明頁的標題或短句（自 dfhack_docs_11.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/sort.txt
+Filters	篩選	筛选			啟動器說明頁的標題或短句（自 dfhack_docs_11.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/sort.txt
+Info tabs overlay	資訊頁疊加介面	信息页叠加界面			啟動器說明頁的標題或短句（自 dfhack_docs_11.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/sort.txt
+Work animals overlay	工作動物疊加介面	工作动物叠加界面			啟動器說明頁的標題或短句（自 dfhack_docs_11.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/sort.txt
+Interrogation overlay	審訊疊加介面	审讯叠加界面			啟動器說明頁的標題或短句（自 dfhack_docs_11.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/sort.txt
+Candidates overlay	候選人疊加介面	候选人叠加界面			啟動器說明頁的標題或短句（自 dfhack_docs_11.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/sort.txt
+Location selection overlay	場所選擇疊加介面	场所选择叠加界面			啟動器說明頁的標題或短句（自 dfhack_docs_11.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/sort.txt
+Slab engraving overlay	雕刻石板疊加介面	雕刻石板叠加界面			啟動器說明頁的標題或短句（自 dfhack_docs_11.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/sort.txt
+World overlay	世界疊加介面	世界叠加界面			啟動器說明頁的標題或短句（自 dfhack_docs_11.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/sort.txt
+Stress icons overlay	壓力圖示疊加介面	压力图标叠加界面			啟動器說明頁的標題或短句（自 dfhack_docs_11.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/sort.txt
+Rationale	設計理由	设计理由			啟動器說明頁的標題或短句（自 dfhack_docs_12.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/steam-engine.txt
+Construction	建造	建造			啟動器說明頁的標題或短句（自 dfhack_docs_12.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/steam-engine.txt
+Operation	運作	运作			啟動器說明頁的標題或短句（自 dfhack_docs_12.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/steam-engine.txt
+Explosions	爆炸	爆炸			啟動器說明頁的標題或短句（自 dfhack_docs_12.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/steam-engine.txt
+Configuration elements	設定元素	设置元素			啟動器說明頁的標題或短句（自 dfhack_docs_12.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/stockpiles.txt
+Top-level categories	頂層分類	顶层分类			啟動器說明頁的標題或短句（自 dfhack_docs_12.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/stockpiles.txt
+Cross-category stockpile adjustments	跨分類倉儲區調整	跨分类储物区调整			啟動器說明頁的標題或短句（自 dfhack_docs_12.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/stockpiles.txt
+Ammo stockpile adjustments	彈藥倉儲區調整	弹药储物区调整			啟動器說明頁的標題或短句（自 dfhack_docs_12.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/stockpiles.txt
+Animal stockpile adjustments	動物倉儲區調整	动物储物区调整			啟動器說明頁的標題或短句（自 dfhack_docs_12.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/stockpiles.txt
+Armor stockpile adjustments	盔甲倉儲區調整	盔甲储物区调整			啟動器說明頁的標題或短句（自 dfhack_docs_12.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/stockpiles.txt
+Bar stockpile adjustments	錠／磚塊倉儲區調整	锭/砖块储物区调整			啟動器說明頁的標題或短句（自 dfhack_docs_12.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/stockpiles.txt
+Cloth stockpile adjustments	布料倉儲區調整	布料储物区调整			啟動器說明頁的標題或短句（自 dfhack_docs_12.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/stockpiles.txt
+Corpse stockpile adjustments	屍體倉儲區調整	尸体储物区调整			啟動器說明頁的標題或短句（自 dfhack_docs_12.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/stockpiles.txt
+Finished goods stockpile adjustments	成品倉儲區調整	成品储物区调整			啟動器說明頁的標題或短句（自 dfhack_docs_12.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/stockpiles.txt
+Food stockpile adjustments	食物倉儲區調整	食物储物区调整			啟動器說明頁的標題或短句（自 dfhack_docs_12.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/stockpiles.txt
+Furniture stockpile adjustments	家具倉儲區調整	家具储物区调整			啟動器說明頁的標題或短句（自 dfhack_docs_12.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/stockpiles.txt
+Gem stockpile adjustments	寶石倉儲區調整	宝石储物区调整			啟動器說明頁的標題或短句（自 dfhack_docs_12.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/stockpiles.txt
+Refuse stockpile adjustments	垃圾倉儲區調整	垃圾储物区调整			啟動器說明頁的標題或短句（自 dfhack_docs_12.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/stockpiles.txt
+Sheet stockpile adjustments	紙張倉儲區調整	纸张储物区调整			啟動器說明頁的標題或短句（自 dfhack_docs_12.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/stockpiles.txt
+Stone stockpile adjustments	石材倉儲區調整	石材储物区调整			啟動器說明頁的標題或短句（自 dfhack_docs_12.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/stockpiles.txt
+Weapon stockpile adjustments	武器倉儲區調整	武器储物区调整			啟動器說明頁的標題或短句（自 dfhack_docs_12.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/stockpiles.txt
+Controls	操作方式	操作方式			啟動器說明頁的標題或短句（自 dfhack_docs_13.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/stonesense.txt
+Recenter screen	畫面重新置中	画面重新居中			啟動器說明頁的標題或短句（自 dfhack_docs_13.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/stonesense.txt
+Move up and down	上下移動	上下移动			啟動器說明頁的標題或短句（自 dfhack_docs_13.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/stonesense.txt
+Streaming Stonesense on Windows	在 Windows 上直播 Stonesense	在 Windows 上直播 Stonesense			啟動器說明頁的標題或短句（自 dfhack_docs_13.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/stonesense.txt
+Known Issues	已知問題	已知问题			啟動器說明頁的標題或短句（自 dfhack_docs_13.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/stonesense.txt
+Yellow cubes and missing sprites	黃色方塊與缺少的貼圖	黄色方块与缺失的贴图			啟動器說明頁的標題或短句（自 dfhack_docs_13.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/stonesense.txt
+Useful links	實用連結	实用链接			啟動器說明頁的標題或短句（自 dfhack_docs_13.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/stonesense.txt
+Display the current status	顯示目前狀態	显示当前状态			啟動器說明頁的標題或短句（自 dfhack_docs_13.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/suspendmanager.txt
+Levels	等級	等级			啟動器說明頁的標題或短句（自 dfhack_docs_13.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/tame.txt
+Brush commands	筆刷指令	笔刷命令			啟動器說明頁的標題或短句（自 dfhack_docs_13.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/tiletypes.txt
+Filter and paint commands	篩選與繪製指令	筛选和绘制命令			啟動器說明頁的標題或短句（自 dfhack_docs_13.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/tiletypes.txt
+Limitations	限制	限制			啟動器說明頁的標題或短句（自 dfhack_docs_14.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/timestream.txt
+Strategy options	策略選項	策略选项			啟動器說明頁的標題或短句（自 dfhack_docs_14.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/uniform-unstick.txt
+Info for modded items	模組物品的資訊	模组物品的信息			啟動器說明頁的標題或短句（自 dfhack_docs_14.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/view-item-info.txt
+Constraint format	限制條件格式	约束条件格式			啟動器說明頁的標題或短句（自 dfhack_docs_14.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/workflow.txt
+JSON string specification	JSON 字串規格	JSON 字符串规范			啟動器說明頁的標題或短句（自 dfhack_docs_14.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/workorder.txt
+Usage with single units	對單一單位使用	对单个单位使用			啟動器說明頁的標題或短句（自 dfhack_docs_14.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/zone.txt
+Matching with filters	用篩選條件比對	用筛选条件匹配			啟動器說明頁的標題或短句（自 dfhack_docs_14.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/zone.txt
+Mass-renaming	批次改名	批量改名			啟動器說明頁的標題或短句（自 dfhack_docs_14.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/zone.txt
+Animal Assignment	動物指派	动物分配			啟動器說明頁的標題或短句（自 dfhack_docs_14.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/zone.txt
+Location retirement	撤除場所	撤除场所			啟動器說明頁的標題或短句（自 dfhack_docs_14.tsv 移來：只放這個畫面，免得單字條目改變遊戲句型怎麼切，例 Phases 讓書名 Great Phases 變成「卓越階段」）；DFHack docs tools/zone.txt
+adamantine.	精金。	精金。			啟動器說明頁的短句（自 dfhack_docs_12.tsv 移來：只放這個畫面，單字條目會改變遊戲句型怎麼切）；DFHack docs tools/stockpiles.txt，上一行「* "thread" and "cloth" settings files…」的結尾

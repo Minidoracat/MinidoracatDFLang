@@ -17,7 +17,7 @@
 | `en` | 遊戲畫面上的英文原文，逐字相同，包含開頭與結尾的空白 |
 | `zh-Hant` | 台灣繁體中文 |
 | `zh-Hans` | 中國大陸簡體中文 |
-| `align` | 原文置中填 `c`、靠右填 `r`，靠左留空；只在佔位裡用的條目與句型填 `inner`；事件句尾的原因片語填 `tail`（見「傳說模式的事件句」）；按鍵名填 `key`（見「按鍵設定」）；暫停選單的配樂曲名填 `music`（見「一詞多義」） |
+| `align` | 原文置中填 `c`、靠右填 `r`，靠左留空；只在佔位裡用的條目與句型填 `inner`；事件句尾的原因片語填 `tail`（見「傳說模式的事件句」）；只套完整台詞的講者句型填 `speech`（見「冒險模式」）；按鍵名填 `key`（見「按鍵設定」）；暫停選單的配樂曲名填 `music`（見「一詞多義」） |
 | `note` | 出現位置、語境、決策理由 |
 
 一個檔案放同一個畫面或同一類字串，檔名用英文小寫（`title.tsv`、`settings.tsv`）。
@@ -63,8 +63,9 @@
 
 - 檔名是 DFHack 焦點字串的開頭，`/` 寫成 `.`：`dwarfmode.tsv` 套用到 `dwarfmode/Default`、`dwarfmode/Info/…` 等所有要塞畫面；`choose_start_site.tsv` 只套用在選出發地點。開頭要在 `/` 或結尾切開，`dwarfmode` 不符合 `dwarfmodeX`。
 - 焦點字串在 DFHack 主控台執行 `:lua printall(dfhack.gui.getCurFocus(true))` 查看。
-- 欄位比 `data/strings` 多一欄 `row`（放在 `align` 與 `note` 之間）：空白是任何一列；填數字時只在字串畫在畫面那一列時套用，給同一畫面、同一個字、意思不同的情況。例：`Temperate` 在選出發地點是氣候「溫和」（`choose_start_site.tsv`）；`Drink` 在要塞上方資訊列（第 0 列）是存量「酒類」（`dwarfmode.tsv`，row 填 0），同畫面的工作名稱 `Drink` 是「喝」（`data/strings/jobs.tsv`）。
+- 欄位比 `data/strings` 多一欄 `row`（放在 `align` 與 `note` 之間）：空白是任何一列；填數字時只在字串畫在畫面那一列時套用，給同一畫面、同一個字、意思不同的情況。例：`Temperate` 在選出發地點是氣候「溫和」（`choose_start_site.tsv`）；`Drink` 在要塞上方資訊列（第 0 列）是存量「酒類」（`dwarfmode.tsv`，row 填 0），同畫面的工作名稱 `Drink` 是「喝」（`data/strings/jobs.tsv`）。同一個檔可以把同一個原文寫兩列：限定列的寫在前面，不限列的寫在後面（`dwarfmode.Info.CREATURES.tsv` 的 `Cat`：第 10 列的表頭排序鈕是「類」，其他列的動物名照英文）。
 - `en` 欄只寫 `*` 的列（譯文欄也寫 `*`）：這個畫面上單獨畫出、全小寫的字串一律照英文畫，不查字典；遊戲畫的只管單字，DFHack 畫的連以空白隔開的幾個字也算。冒險模式的交談選單（`dungeonmode.Conversation.tsv`）用它：每個選項下面的「關鍵字：」後面是搜尋框比對用的英文關鍵字（`greet hello listener`），翻成中文就搜不到；DFHack 的 launcher、控制面板、快捷鍵選單列的工具名與指令（`reveal`、`spectate toggle`）也要照英文。
+- 玩家取的名字（倉儲區、區域、活動區、小隊與小隊排程、制服、工作細項、公民的自訂職業）不用寫：引擎讀檔後每隔一陣子收一次（`lua/loader.lua` 的 `track_player_names`），照原文畫，不會被句型拆成「茂密的訓練」（小隊排程「Dense Training」）。和整句條目同字的（倉儲區「Gems」）照翻。
 - 暫停選單的配樂曲名（正在播放、上一首）寫在 `dwarfmode.Options.tsv`、`dungeonmode.Options.tsv`，`align` 填 `music`：設定視窗的「配樂曲名翻成中文」關著時照英文畫（全域條目會擋住大寫退回，石材用途清單的 `Dolomite` 也會變成英文，所以寫在依畫面譯文），開著時用譯文。曲名照字面翻，原生語言的字（`Koganusan`、`Roldeth`）照音譯表音譯；作曲者、插曲代號（`df9`、`stia`）照原文。
 
 ## 段落
@@ -191,7 +192,7 @@ raws 裡的生物、植物、材料、物品、身體部位名稱，以及執行
   - 樣板的固定字可以比到原文的大寫寫法（傳說模式編年史把作品名每個字改大寫：`Commentary On The Goblin`），反過來不行：介面的 `on fire` 不會被 `On {$1}` 比走。
   - 只有空白的樣板（`[ADJ] [NO_ART_NAME]`）中文直接相接（`{1}{2}`），和名稱的組法一樣，也不比英文寬。
 - 句子裡整個書名放在佔位的（`entitled {2}`、`I read {1}`、`You have authored {1}`），在原本那條前面另寫一條 `{$n}` 的（`entitled {$2}`）：只有主題的書名（`Floating Bodies`）才會用書名用詞，不會先被一般字典翻成別的意思；原本那條留著，給拆不開的書名照英文。
-- 只有一個字的書名（`Perishment`）單獨畫在清單上時照英文：單字的書名用詞和介面字分不開。
+- 只有一個字的書名（`Perishment`）不用寫：讀檔時引擎登記這個世界的單字書名，單獨畫出時才查書名用詞與字表名詞；介面上同字的單字照常查字典。
 
 ## 傳說模式的事件句
 
@@ -207,7 +208,7 @@ uv run scripts/gen_events.py
 - 短語寫不含日期的 inner 句型、不加句號：`the founding of {1}` →「{1}的建立」；產生器加上結尾的三種日期（`… in {#2}` →「{2}年{1}的建立」）。沒有佔位的短語是字串，日期版要自己寫。
 - 排序：同一類句型照順序比，先寫的優先。產生器把「樣板套得上另一條原文」的通用句型排在那一條後面（`{1} destroyed {2}.` 排在 `{1} was destroyed by {2}.` 後），其餘照原檔順序；比其他規則檔某條通用的放進 `zz_events.tsv`，讓既有的死因、想法、說明先比。樣板比不出來的衝突（片段搶走句子裡的字）要自己處理：把通用句型挪到檔尾（`data/events/13.tsv` 檔尾的 `{1} imprisoned {2}.`），或用連結記號限定（`{1} left ☺{#2}☻.` 只收一個連結，免得搶走死因「was left out in the air」）。
 - 不要寫只有標點與一兩個英文字的通用片段（`{@1} by {2}` →「{1}，由{2}判決」）：佔位裡的片段遇到它就會被切開，舞蹈說明、死因、陰謀都中過。逐條寫死（罪名＋判決者每個罪名一條）。
-- 事件的原因與情境（FUN_140b5a6c0 接在句號前的 `for an insurrection`、`in order to sanctify X`）寫成 align `tail`：不含名字的在 `data/strings/events_tails.tsv`，含名字的在 `data/events/tails.tsv`。引擎看到句尾（短語則是結尾日期前）是這種片語時先去掉、其餘照常翻，再在句號前補「，片語」，最多兩段；所以譯文寫成接在逗號後讀得通的說法（「為了發動叛亂」「在找到X之後」）。子句不要另寫帶原因的版本。
+- 事件的原因與情境（FUN_140b5a6c0 接在句號前的 `for an insurrection`、`in order to sanctify X`）寫成 align `tail`：不含名字的在 `data/strings/events_tails.tsv`，含名字的在 `data/events/tails.tsv`。引擎看到句尾（短語則是結尾日期前）是這種片語時先去掉、其餘照常翻，再在句號前補「，片語」，最多兩段；所以譯文寫成接在逗號後讀得通的說法（「為了發動叛亂」「在找到X之後」）。子句不要另寫帶原因的版本。原因後面還接著字的（item_stolen 的「… 原因 and brought to Y.」）把那段也寫成 tail（`and brought to {1}` →「並帶到{1}」），放在 `tails.tsv` 第一列：先去掉它、再去掉原因；排在後面時 `after defeating {1}` 這類會把整段吞進佔位。
 - 連結人名清單（`☺A☻, ☺B☻ and ☺C☻`、`and others`）由 `data/events/common.tsv` 接成「A、B和C」「A等人」，子句用一個 `{n}` 接住整串即可。
 - 樣本：完整句照傳說頁的樣子寫（含日期、`☺名字☻`），用 `-m`；短語套進「The artwork relates to {短語}.」用 `-s`。夾英文不算缺，要逐句看輸出。
 
@@ -233,7 +234,7 @@ uv run scripts/gen_events.py
 - 遊戲截成「開頭...」的清單字串（交談選單「Start new conversation with the Human baro...」、開局的「From Stukos òrdir, The Razor of Incinera...」）不用另寫：引擎記下截短前的原文來翻；記不到原文、又截在字與字之間的（同伴清單「Zebna Histekuthros, Donkey, ♂ ...」），引擎翻前面那段、接「…」（見 `docs/analysis.md` 第 17 點）。
 - 開局畫面的外觀、性格段落和人物頁是同一批句子，引擎逐句查，不用整段寫。
 - 交談紀錄（畫面上方有頭像的框、按鍵開的整份通知清單）每一則是「講者: 內容」，遊戲自己切行；引擎整則查、查不到就逐句查，再依中文重新換行（見 `docs/analysis.md` 第 20 點）。所以交談內容一句一條（兩個空白隔開的每一句都要能單獨翻），講者句型已經有，只翻冒號後面的句子；檔名用 `adv_speech_*`，不檢查格數。
-- 講者句型（`The {@1} {^2}: {%3}`、`The {@1} {^2} (to {3}): {%4}` 等）寫在檔名排最前面的 `data/rules/__speakers.tsv`：台詞以 The 開頭時（`The Basic Society is skirmishing with us.`），其他檔案開頭也是固定字 The 的台詞句型會先比，把整個講者吞進佔位（「magistrate Orid Ikislada（對矛手…）：…」）。帶固定台詞的講者句型（`The {@1} {^2}: Help!`）也寫在這個檔，排在通用的講者句型前面。
+- 講者句型（`The {@1} {^2}: {%3}`、`The {@1} {^2} (to {3}): {%4}` 等）寫在檔名排最前面的 `data/rules/__speakers.tsv`：台詞以 The 開頭時（`The Basic Society is skirmishing with us.`），其他檔案開頭也是固定字 The 的台詞句型會先比，把整個講者吞進佔位（「magistrate Orid Ikislada（對矛手…）：…」）。帶固定台詞的講者句型（`The {@1} {^2}: Help!`）也寫在這個檔，排在通用的講者句型前面。只有人名的講者（`Urist: …`）寫 `{*1}: {%2}`、align `speech`：只套以 `.`、`!`、`?` 或引號結尾的整句，免得套到書名「Suitorbasin: My Only Mistake」、「Folder: …」；引擎把它當成有錨點的句型排序。
 
 ## DFHack 視窗
 
@@ -242,6 +243,9 @@ DFHack 的視窗與 overlay（控制面板、launcher、快捷鍵選單、標題
 - 一段就是 Lua 裡傳給 `label=`、`text=` 的那個字串，或 `..` 拼出來的結果：`{text='Last save: '}, {text=n..' mins ago'}` 是兩段，寫 `Last save:` 與句型 `{#1} mins ago`。
 - 視窗標題（`frame_title`）前後的兩個空白引擎自己處理，條目寫標題本身，標題置中，`align` 寫 `c`。
 - Lua 先用 `:wrap(寬度)` 切行再畫的文字（`WrappedLabel` 的 `text_to_wrap`、確認對話框的訊息）整段寫一條（切行前的完整字串）：DFHack 句間只有一個空白，逐句查不到。引擎整段翻、依中文重新換行。
+- 作者手動斷成幾列、每列只有一段字的 Label（`text={'第一行', NEWLINE, '第二行'}`，最後以句末標點結尾）：引擎畫之前把各列接回一段（空列分段）查整段，所以整段寫一條；整段查不到時每列照舊各自查。同一列有好幾段字（換色的字、動態的數字）的不接。
+- DFHack 另畫的單字母複數 `s`（`{text=function() return n == 1 and '' or 's' end}`）寫依畫面譯文，譯文一格空白、align 寫 `c`（`dfhack.lua.caravan.trade.ethics.tsv`）。
+- launcher 說明窗格的工具說明（helpdb）寫在 `data/strings/dfhack_docs_NN.tsv`，一段（說明文件的一個段落或一個項目）一條；標題與短句（`Usage`、`Phases`、`Notes`）放 `data/screens/dfhack.lua.launcher.tsv`：`Phases` 放全域時，書名「Great Phases」被切成「卓越階段」。
 - 按鍵提示（`Enter: Toggle enabled`）分成按鍵名、`: `、說明三段畫，只翻說明；工具名、指令名不翻。按鍵名照原文，設定視窗的「按鍵名翻成中文」開著時照按鍵名條目畫（見「按鍵設定」）。
 - 檔案：`data/strings/dfhack_<批次>.tsv`、`data/rules/dfhack_<批次>.tsv`。通用的單字（`Enabled`、`Gameplay`）放 `data/screens/dfhack.lua.<focus>.tsv`，`<focus>` 是那個視窗的 `focus_path`（控制面板是 `control-panel`）。overlay 沒有自己的焦點，單字寫成整句或句型。
 - 主控台輸出（`print`）、錯誤訊息不翻：引擎只翻遊戲畫面上的字。例外是本 MOD 自己的 `dflang` 指令：輸出寫英文、譯文放 `data/strings/dflang_ui.tsv`（數字用 `data/rules/dflang_ui.tsv` 的句型），在遊戲裡的 launcher 畫成中文；寫中文會被 DFHack 照 CP437 畫成亂碼。輸入框（`EditField`、`TextArea`）裡玩家打的字也不翻：引擎畫輸入框內容時不查字典。

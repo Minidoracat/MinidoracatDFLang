@@ -92,7 +92,7 @@ GameMaster's Editor	GM 編輯器	GM 编辑器	c	DFHack hack/scripts/gui/gm-edito
 GameMaster's Editor (Read only)	GM 編輯器（唯讀）	GM 编辑器（只读）	c	DFHack hack/scripts/gui/gm-editor.lua L659 視窗標題
 GameMaster's Editor (Live updates)	GM 編輯器（即時更新）	GM 编辑器（实时更新）	c	DFHack hack/scripts/gui/gm-editor.lua L664 視窗標題
 GameMaster's Editor (Read only) (Live updates)	GM 編輯器（唯讀）（即時更新）	GM 编辑器（只读）（实时更新）	c	DFHack hack/scripts/gui/gm-editor.lua L664 視窗標題
-Magma not included.	不含熔岩。	不含熔岩。		DFHack hack/scripts/gui/gm-editor.lua L141 說明頁免責聲明的最後一行（前三行跨 token 斷句，不翻）
+Magma not included.	不含熔岩。	不含熔岩。		DFHack hack/scripts/gui/gm-editor.lua L141 說明頁免責聲明的最後一行（前三行有黃字、一句分成好幾段畫，譯文在 data/screens/dfhack.lua.gm-editor.tsv）
 Test function	測試函式	测试函数	c	DFHack hack/scripts/gui/gm-editor.lua L238 輸入對話框標題
 Input function that tests(k,v as argument):	輸入測試函式（參數為 k, v）：	输入测试函数（参数为 k, v）：		DFHack hack/scripts/gui/gm-editor.lua L238 輸入對話框提示
 Error!	錯誤！	错误！	c	DFHack hack/scripts/gui/gm-editor.lua L244 訊息對話框標題
@@ -244,7 +244,8 @@ Embark Anywhere	隨處出發	随处出发	c	DFHack hack/scripts/gui/embark-anywh
 Click anywhere on the map to ignore warnings and embark wherever you want.	點選地圖上任何地方，即可忽略警告、在任意位置出發。	点击地图上任何地方，即可忽略警告、在任意位置出发。		DFHack hack/scripts/gui/embark-anywhere.lua L15 WrappedLabel
 There may be unforeseen consequences when embarking where the game doesn't expect.	在遊戲預期之外的地點出發，可能會有意想不到的後果。	在游戏预期之外的地点出发，可能会有意想不到的后果。		DFHack hack/scripts/gui/embark-anywhere.lua L18 WrappedLabel
 Right click on this window to cancel.	在此視窗上按右鍵即可取消。	在此窗口上点右键即可取消。		DFHack hack/scripts/gui/embark-anywhere.lua L22 WrappedLabel
-Good luck!	祝好運！	祝好运！		DFHack hack/scripts/gui/embark-anywhere.lua L53 確認出發面板（前兩行一句拆在兩個 token，不翻）
+Good luck!	祝好運！	祝好运！		DFHack hack/scripts/gui/embark-anywhere.lua L53 確認出發面板的最後一行（前兩行見下一條）
+Any embark warnings have been bypassed.	所有出發警告都已略過。	所有出发警告都已跳过。		DFHack hack/scripts/gui/embark-anywhere.lua L50-51 確認出發面板：作者手動斷成兩列（「Any embark warnings」「have been bypassed.」），引擎接回一段查、依中文重新換行（lua/loader.lua 的 install_label）
 Adds productivity actions to the stocks page.	在庫存頁面加上便利操作。	在库存页面加上便利操作。		DFHack hack/lua/plugins/stocks.lua L72 疊加介面說明（控制面板顯示）
 expand all	全部展開	全部展开		DFHack hack/lua/plugins/stocks.lua L86 庫存頁疊加介面的快捷鍵說明
 remove empties	移除空項目	移除空项		DFHack hack/lua/plugins/stocks.lua L99 庫存頁疊加介面的快捷鍵說明

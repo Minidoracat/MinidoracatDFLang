@@ -1,0 +1,17 @@
+en	zh-Hant	zh-Hans	align	note
+frozen {@1} slime	冰凍的{1}黏液	冰冻的{1}黏液		evil.lua materials.rain：邪惡天氣雨的物質（rain_adjs＋rain_names）固態 STATE_NAME_ADJ「frozen 形容詞 slime」（倉儲區自訂設定）；照名稱的派生寫法；{@1} 只收字典裡的形容詞
+boiling {@1} slime	沸騰的{1}黏液	沸腾的{1}黏液		evil.lua materials.rain：邪惡天氣雨的物質（rain_adjs＋rain_names）氣態 STATE_NAME_ADJ「boiling 形容詞 slime」（倉儲區自訂設定）；照名稱的派生寫法；{@1} 只收字典裡的形容詞
+frozen {@1} goo	冰凍的{1}稠液	冰冻的{1}稠液		evil.lua materials.rain：邪惡天氣雨的物質（rain_adjs＋rain_names）固態 STATE_NAME_ADJ「frozen 形容詞 goo」（倉儲區自訂設定）；照名稱的派生寫法；{@1} 只收字典裡的形容詞
+boiling {@1} goo	沸騰的{1}稠液	沸腾的{1}稠液		evil.lua materials.rain：邪惡天氣雨的物質（rain_adjs＋rain_names）氣態 STATE_NAME_ADJ「boiling 形容詞 goo」（倉儲區自訂設定）；照名稱的派生寫法；{@1} 只收字典裡的形容詞
+frozen {@1} mucus	冰凍的{1}黏液	冰冻的{1}黏液		evil.lua materials.rain：邪惡天氣雨的物質（rain_adjs＋rain_names）固態 STATE_NAME_ADJ「frozen 形容詞 mucus」（倉儲區自訂設定）；照名稱的派生寫法；{@1} 只收字典裡的形容詞
+boiling {@1} mucus	沸騰的{1}黏液	沸腾的{1}黏液		evil.lua materials.rain：邪惡天氣雨的物質（rain_adjs＋rain_names）氣態 STATE_NAME_ADJ「boiling 形容詞 mucus」（倉儲區自訂設定）；照名稱的派生寫法；{@1} 只收字典裡的形容詞
+frozen {@1} ooze	冰凍的{1}軟泥	冰冻的{1}软泥		evil.lua materials.rain：邪惡天氣雨的物質（rain_adjs＋rain_names）固態 STATE_NAME_ADJ「frozen 形容詞 ooze」（倉儲區自訂設定）；照名稱的派生寫法；{@1} 只收字典裡的形容詞
+boiling {@1} ooze	沸騰的{1}軟泥	沸腾的{1}软泥		evil.lua materials.rain：邪惡天氣雨的物質（rain_adjs＋rain_names）氣態 STATE_NAME_ADJ「boiling 形容詞 ooze」（倉儲區自訂設定）；照名稱的派生寫法；{@1} 只收字典裡的形容詞
+frozen {@1} sludge	冰凍的{1}淤泥	冰冻的{1}淤泥		evil.lua materials.rain：邪惡天氣雨的物質（rain_adjs＋rain_names）固態 STATE_NAME_ADJ「frozen 形容詞 sludge」（倉儲區自訂設定）；照名稱的派生寫法；{@1} 只收字典裡的形容詞
+boiling {@1} sludge	沸騰的{1}淤泥	沸腾的{1}淤泥		evil.lua materials.rain：邪惡天氣雨的物質（rain_adjs＋rain_names）氣態 STATE_NAME_ADJ「boiling 形容詞 sludge」（倉儲區自訂設定）；照名稱的派生寫法；{@1} 只收字典裡的形容詞
+frozen {@1} filth	冰凍的{1}穢物	冰冻的{1}秽物		evil.lua materials.rain：邪惡天氣雨的物質（rain_adjs＋rain_names）固態 STATE_NAME_ADJ「frozen 形容詞 filth」（倉儲區自訂設定）；照名稱的派生寫法；{@1} 只收字典裡的形容詞
+boiling {@1} filth	沸騰的{1}穢物	沸腾的{1}秽物		evil.lua materials.rain：邪惡天氣雨的物質（rain_adjs＋rain_names）氣態 STATE_NAME_ADJ「boiling 形容詞 filth」（倉儲區自訂設定）；照名稱的派生寫法；{@1} 只收字典裡的形容詞
+frozen {@1} muck	冰凍的{1}汙泥	冰冻的{1}污泥		evil.lua materials.rain：邪惡天氣雨的物質（rain_adjs＋rain_names）固態 STATE_NAME_ADJ「frozen 形容詞 muck」（倉儲區自訂設定）；照名稱的派生寫法；{@1} 只收字典裡的形容詞
+boiling {@1} muck	沸騰的{1}汙泥	沸腾的{1}污泥		evil.lua materials.rain：邪惡天氣雨的物質（rain_adjs＋rain_names）氣態 STATE_NAME_ADJ「boiling 形容詞 muck」（倉儲區自訂設定）；照名稱的派生寫法；{@1} 只收字典裡的形容詞
+frozen {@1} slush	冰凍的{1}爛泥	冰冻的{1}烂泥		evil.lua materials.rain：邪惡天氣雨的物質（rain_adjs＋rain_names）固態 STATE_NAME_ADJ「frozen 形容詞 slush」（倉儲區自訂設定）；照名稱的派生寫法；{@1} 只收字典裡的形容詞
+boiling {@1} slush	沸騰的{1}爛泥	沸腾的{1}烂泥		evil.lua materials.rain：邪惡天氣雨的物質（rain_adjs＋rain_names）氣態 STATE_NAME_ADJ「boiling 形容詞 slush」（倉儲區自訂設定）；照名稱的派生寫法；{@1} 只收字典裡的形容詞

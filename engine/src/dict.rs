@@ -160,6 +160,9 @@ pub struct Rule {
     article: bool,
     /// 書名句型（有 `{$n}`、`{&n}`、`{=n}`）：`{$n}` 的片段也可以是別的書名（見 title_of）
     title: bool,
+    /// 台詞句型（align 欄寫 `speech`）：只套以 . ! ? 或 " 結尾的字串。只有名字的講者「Urist: 台詞」和書名「Suitorbasin: My Only Mistake」
+    /// 同一個樣子，書名不會以句末標點結尾
+    speech: bool,
 }
 
 /// 一個佔位：編號、能收的片段、譯文裡的補字（`{3+時}`，原文不能有）。
@@ -334,7 +337,8 @@ impl Rule {
             prefix: lit(pattern.first()),
             suffix: lit(pattern.last()),
             has_cjk: output.iter().any(|o| matches!(o, Out::Text(t) if t.chars().any(|c| c.is_alphabetic() && cp437::byte_of(c).is_none()))),
-            specific: pattern.iter().any(|s| matches!(s, Seg::Lit(l) if l.iter().any(u8::is_ascii_alphabetic))),
+            // 台詞句型（只收句子、講者是 {*n} 名字）當成有錨點：「{*1}: {%2}」不排到「{1} is skirmishing with us.」這類台詞句型後面
+            specific: align == "speech" || pattern.iter().any(|s| matches!(s, Seg::Lit(l) if l.iter().any(u8::is_ascii_alphabetic))),
             list: pattern.iter().all(|s| match s {
                 Seg::Cap(_, kind) => *kind == Kind::Full,
                 Seg::Lit(l) => !l.iter().any(u8::is_ascii_alphabetic),
@@ -344,9 +348,10 @@ impl Rule {
             article: align == "inner"
                 && matches!(pattern.as_slice(), [Seg::Lit(l), Seg::Cap(_, Kind::Full)] if [&b"the "[..], b"The ", b"a ", b"A ", b"an ", b"An "].contains(&l.as_slice())),
             title: pattern.iter().any(|s| matches!(s, Seg::Cap(_, Kind::Title | Kind::Noun | Kind::Adj))),
+            speech: align == "speech",
             pattern,
             output,
-            align: align.to_owned(),
+            align: if align == "speech" { String::new() } else { align.to_owned() },
         })
     }
 
@@ -419,6 +424,18 @@ fn lit_eq(text: &[u8], lit: &[u8], fold: bool) -> bool {
 /// text[pos..] 以固定字 lit 開頭
 fn lit_at(text: &[u8], pos: usize, lit: &[u8], fold: bool) -> bool {
     text.len() >= pos + lit.len() && lit_eq(&text[pos..pos + lit.len()], lit, fold)
+}
+
+/// 首字大寫、第二個字不是大寫字母時（GREED 這種全大寫的不算）首字改小寫的寫法，給 apply_rules 再比一次
+fn lower_first(key: &[u8]) -> Option<Vec<u8>> {
+    let [first, second, ..] = key else { return None };
+    (first.is_ascii_uppercase() && !second.is_ascii_uppercase()).then(|| [&[first.to_ascii_lowercase()][..], &key[1..]].concat())
+}
+
+/// 以介系詞、冠詞、連接詞開頭（小寫）：這種小寫句型多半是句中片段，見 apply_rules
+fn starts_with_function_word(text: &[u8]) -> bool {
+    const WORDS: [&[u8]; 16] = [b"a", b"an", b"the", b"at", b"by", b"in", b"on", b"of", b"for", b"to", b"from", b"with", b"into", b"and", b"or", b"as"];
+    WORDS.contains(&text.split(|&c| c == b' ').next().unwrap_or(text))
 }
 
 fn match_at(segs: &[Seg], text: &[u8], pos: usize, caps: &mut [(usize, usize); 9], fits: &mut dyn FnMut(Kind, &[u8]) -> bool, fold: bool) -> bool {
@@ -609,6 +626,8 @@ pub struct Dict {
     /// 原文 → 句型規則的結果。翻不出來的也要記住（免得每幀重比）。翻不出來或譯文還夾著英文的，另記當時名稱表的版本
     /// （names::generation）：之後登記了新名字（清單先畫、名字後登記），版本不同就重算；全中文的結果不再重算
     cache: Mutex<HashMap<Vec<u8>, (Option<Arc<Entry>>, Option<u64>)>>,
+    /// 截在字中間的字串 → 補完的原文（見 complete_cut）與當時名稱表的版本：名稱表整張掃一次要幾毫秒，每幀畫的同一個截短字串只補一次
+    completions: Mutex<HashMap<Vec<u8>, (Option<Vec<u8>>, u64)>>,
     /// 字 → 字圖編號；字圖 i 的左右半格在 texpos[2i]、texpos[2i+1]。完整字圖集（長度 8n，見 atlas::render）另有：
     /// 字圖 i 往下位移半格的上列左右在 [2n+4i]、[2n+4i+1]，下列左右在 [2n+4i+2]、[2n+4i+3]；錨定貼圖標籤用的小一號字在 [6n+2i]、[6n+2i+1]（見 Dict::tile）。
     pub glyph_of: HashMap<char, u32>,
@@ -892,6 +911,13 @@ impl Dict {
             && self.verbatim_screens.iter().any(|screen| (dfhack || !screen.starts_with("dfhack/")) && on_screen(focus, screen))
     }
 
+    /// 整段是玩家取的名字（names::is_player）就照原文畫。名字剛好和字典的整句同字時（倉儲區取名「Gems」、區域取名「Food Storage」）照翻：
+    /// 同一個字也是遊戲畫的類別名（區域清單裡沒取名的黏土區畫「Clay」，倉儲區也能取名 Clay），分不出是誰的
+    pub fn keeps_player_name(&self, key: &[u8]) -> bool {
+        let key = key.trim_ascii();
+        crate::names::is_player(key) && lookup_name(self, key).is_none()
+    }
+
     /// 句型規則檔，格式同 load_tsv；依檔案順序比對，先寫的優先，但清單句型一律最先，沒有英文字的樣板一律排在有英文字的後面，
     /// 同一類裡開頭就是任意佔位的排在後面。
     pub fn load_rules_tsv(&mut self, content: &str) -> LoadReport {
@@ -929,8 +955,19 @@ impl Dict {
 
     /// 一段原文的譯文（不含對齊）：整句字典優先（含首字大寫的名稱），再套句型規則；最後試只有主題的書名（同 rule_entry）。
     pub fn translate_text(&self, key: &[u8]) -> Option<String> {
-        self.piece(key, 0, &mut Memo::new()).map(|(p, _)| concat(p))
-            .or_else(|| self.title_vocab(key).filter(|_| key.contains(&b' ')).map(str::to_owned))
+        self.piece(key, 0, &mut Memo::new()).map(|(p, _)| concat(p)).or_else(|| self.whole_title(key))
+    }
+
+    /// 只有主題的書名（作品清單）。單字的書名用詞（Peace、Change）單獨畫出時多半是介面字：這個世界真的有這本書時（names::is_title）
+    /// 才查，也查字表的名詞（沒有主題的作品拿隨機名詞當書名：Perishment）
+    fn whole_title(&self, key: &[u8]) -> Option<String> {
+        if key.contains(&b' ') {
+            self.title_vocab(key).map(str::to_owned)
+        } else if crate::names::is_title(key) {
+            self.title_of(key, 0, &mut Memo::new())
+        } else {
+            None
+        }
     }
 
     /// 遊戲拼成一整段的文字：整段查不到時，在句末標點後的兩個以上空白切開逐句查（遊戲拼段落時句間空兩格），句間不留空白。
@@ -1068,13 +1105,16 @@ impl Dict {
         if let Some(zh) = crate::names::get(key) {
             return Some((vec![(zh.to_string(), 0)], true));
         }
-        // 佔位抓到登記過的原名（戰報「with his Sherikdan」的神器原名、樂器名）：名字音譯關著時照原文，也算翻好；
-        // 整句只是一個原名時不算（照原樣畫）
+        // 佔位抓到登記過的原名（戰報「with his Sherikdan」的神器原名、樂器名）、玩家取的名字（字典沒有同字的整句時才走到這裡）：
+        // 照原文，也算翻好；整句只是一個原名時不算（照原樣畫）
         if depth > 0 && crate::names::is_native(key) {
             return Some((vec![(crate::names::native_text(key), 0)], true));
         }
-        // 「the goblin 名字」（傳說頁故事裡不是連結的人物）
-        if let Some(zh) = key.starts_with(b"the ").then(|| self.titled_name(key, false)).flatten() {
+        if depth > 0 && crate::names::is_player(key) {
+            return Some((vec![(cp437::decode(key), 0)], true));
+        }
+        // 「the goblin 名字」（傳說頁故事裡不是連結的人物）、「名字 the 種族」（要塞人物頁、物品頁的擊殺清單）
+        if let Some(zh) = key.starts_with(b"the ").then(|| self.titled_name(key, false)).flatten().or_else(|| self.name_then_title(key)) {
             return Some((vec![(zh, 0)], true));
         }
         if depth > MAX_DEPTH {
@@ -1117,20 +1157,10 @@ impl Dict {
     /// 稱呼加世界生成名稱（`the goblin Snodub Monstrousentry`、連結字 `dwarf Urist`）：名字是遊戲組過的名稱（names.rs），
     /// 稱呼（開頭的 the 去掉）查字典或句型，接成「哥布林＋中文名」。名字一定大寫開頭（含 CP437 的 Ï、Ö 這類，0x80 以上），其他位置不查。
     /// 連結字（link）一定是名字：第一個大寫字起只有一個字、遊戲沒組過英文名的原名（`the forgotten beast Ubbul`）照抄；
-    /// 也收名字在前、小寫稱呼在後的（傳說人物頁擊殺清單的 `Caraca Talonmagic the elf`），同樣接成「精靈＋中文名」。
+    /// 也收名字在前、小寫稱呼在後的（見 name_then_title）。
     pub fn titled_name(&self, text: &[u8], link: bool) -> Option<String> {
-        if link {
-            let mut from = 0;
-            while let Some(i) = text[from..].windows(5).position(|w| w == b" the ") {
-                let at = from + i;
-                let (name, title) = (&text[..at], &text[at + 5..]);
-                if title.first().is_some_and(u8::is_ascii_lowercase) {
-                    if let (Some(zh), Some(t)) = (crate::names::get(name), self.translate_text(title)) {
-                        return Some(t + &zh);
-                    }
-                }
-                from = at + 1;
-            }
+        if let Some(zh) = link.then(|| self.name_then_title(text)).flatten() {
+            return Some(zh);
         }
         let mut loose = link;
         let mut start = 0;
@@ -1151,6 +1181,24 @@ impl Dict {
             let head = &text[..start - 1];
             let head = head.strip_prefix(b"the ").or_else(|| head.strip_prefix(b"The ")).unwrap_or(head);
             return Some(self.translate_text(head)? + &zh);
+        }
+        None
+    }
+
+    /// 名字在前、小寫稱呼在後的「名字 the 稱呼」（傳說人物頁擊殺清單的連結 `Caraca Talonmagic the elf`、要塞擊殺清單的
+    /// `Inod Tombempire the dwarf`），接成「精靈＋中文名」。名字要是遊戲組過的世界生成名稱（names::get），稱呼只有小寫字母、
+    /// 空白與連字號（後面接著句子的「…the dwarf, d. 5」不算，交給句型），一般片語才不會被拆
+    fn name_then_title(&self, text: &[u8]) -> Option<String> {
+        let mut from = 0;
+        while let Some(i) = text[from..].windows(5).position(|w| w == b" the ") {
+            let at = from + i;
+            let (name, title) = (&text[..at], &text[at + 5..]);
+            if title.first().is_some_and(u8::is_ascii_lowercase) && title.iter().all(|&c| c.is_ascii_lowercase() || c == b' ' || c == b'-') {
+                if let (Some(zh), Some(t)) = (crate::names::get(name), self.translate_text(title)) {
+                    return Some(t + &zh);
+                }
+            }
+            from = at + 1;
         }
         None
     }
@@ -1230,6 +1278,61 @@ impl Dict {
         Some(shorten(zh, key.len()))
     }
 
+    /// 截在字中間、最後一段是逗號後的職業或名字的字串（物品頁的「Owner: Mûthkat Oddomlâven, Stonecr...」、傳說人物分頁的
+    /// 「Onsmost Xoxoudu Etog, "Onsmost Y...」）：最後一個「, 」後面的片段補成唯一以它開頭的整句條目（首字大小寫不論；
+    /// 開頭相同、譯文不同的有兩條就不補），引號開頭的補成名稱表裡唯一以它開頭的名字。回傳補完的原文（不含「...」），
+    /// 由 hooks.rs 的 lookup 翻好再截回原來的格數
+    pub fn complete_cut(&self, key: &[u8]) -> Option<Vec<u8>> {
+        let head = key.strip_suffix(b"...")?;
+        let at = head.windows(2).rposition(|w| w == b", ")? + 2;
+        let (before, frag) = head.split_at(at);
+        if frag.len() < 3 {
+            return None;
+        }
+        let generation = crate::names::generation();
+        if let Some((full, seen)) = self.completions.lock().get(key) {
+            if *seen == generation {
+                return full.clone();
+            }
+        }
+        let full = match frag.strip_prefix(b"\"") {
+            Some(name) => crate::names::complete(name).map(|name| [before, b"\"", &name, b"\""].concat()),
+            None => self.complete_entry(frag).map(|word| [before, &word].concat()),
+        };
+        let mut cache = self.completions.lock();
+        if cache.len() >= CACHE_LIMIT {
+            cache.clear();
+        }
+        cache.insert(key.to_vec(), (full.clone(), generation));
+        full
+    }
+
+    /// 整句字典裡唯一以 frag 開頭、比它長的條目（首字大小寫不論，職業名「expedition le」對到「Expedition leader」）；
+    /// 只收字母、空白、連字號組成的短詞，開頭相同、譯文不同的有兩條時 None
+    fn complete_entry(&self, frag: &[u8]) -> Option<Vec<u8>> {
+        if !frag.iter().all(|&c| c.is_ascii_alphabetic() || c == b' ' || c == b'-') {
+            return None;
+        }
+        let mut flipped = frag.to_vec();
+        flipped[0] = if frag[0].is_ascii_uppercase() { frag[0].to_ascii_lowercase() } else { frag[0].to_ascii_uppercase() };
+        let mut found: Option<(&Vec<u8>, &str)> = None;
+        for head in [frag, &flipped[..]] {
+            let start = self.sorted_keys.partition_point(|k| k.as_slice() < head);
+            for k in self.sorted_keys[start..].iter().take_while(|k| k.starts_with(head)) {
+                if k.len() <= frag.len() || k.len() > 32 || !k.iter().all(|&c| c.is_ascii_alphabetic() || c == b' ' || c == b'-') {
+                    continue;
+                }
+                let zh = self.entries[k].text.as_str();
+                match found {
+                    Some((_, f)) if f != zh => return None,
+                    Some(_) => {}
+                    None => found = Some((k, zh)),
+                }
+            }
+        }
+        found.map(|(k, _)| k.clone())
+    }
+
     /// 遊戲截短的字串（`開頭...`）用截短前原文的譯文 zh（見 hooks.rs 的 string_resize）：依截短後的格數截短、接「…」。
     /// 同一個截短的字串可能是不同的原文（清單裡好幾個「the Human baro...」），所以不進快取。
     pub fn cut_entry(&self, key: &[u8], zh: &str) -> Option<Arc<Entry>> {
@@ -1237,8 +1340,19 @@ impl Dict {
         (missing == 0 && entry.shadow().len() <= key.len()).then(|| Arc::new(entry))
     }
 
-    /// 第一條命中的句型：(譯文片段, 句型, 乾淨與否)。
+    /// 第一條命中的句型：(譯文片段, 句型, 乾淨與否)。整段首字大寫、句型只寫了小寫開頭的（倉儲區清單的「Experiment of Ebdi fat」、
+    /// 「Enormous clear glass corkscrew」）照原樣比不到時，整段首字改小寫再比一次，開頭的片段也照小寫查（「experiment of Ebdi」）。
+    /// 只在整段（depth 0）改：首字大寫是遊戲把整段的第一個字改的；佔位裡的片段本來就大寫（書名「The Fire: My Only Mistake」的
+    /// 「My Only Mistake」），改小寫會被只給佔位用的 `my {@1} {2}` 切成「我的僅限Mistake」。介系詞、冠詞開頭的也不改：
+    /// 小寫的 `at {1}`、`by {1}` 是想法原因這類句中片段，介面字「At your location」「By group」會被翻成「因…而」
     fn apply_rules(&self, key: &[u8], depth: usize, memo: &mut Memo) -> Option<(Pieces, &Rule, bool)> {
+        self.first_rule(key, depth, memo).or_else(|| {
+            let lower = lower_first(key).filter(|l| depth == 0 && !starts_with_function_word(l))?;
+            self.first_rule(&lower, depth, memo)
+        })
+    }
+
+    fn first_rule(&self, key: &[u8], depth: usize, memo: &mut Memo) -> Option<(Pieces, &Rule, bool)> {
         // key 以含逗號的條目結尾時不套清單句型（見 comma_keys）；比到清單句型才算
         let mut comma = None;
         let mut ends_with_comma_entry = || {
@@ -1247,10 +1361,12 @@ impl Dict {
             })
         };
         let sentence = key.ends_with(b".") || key.ends_with(b"!");
+        let spoken = matches!(key.last(), Some(b'.' | b'!' | b'?' | b'"'));
         for &i in &self.rule_index.candidates(key) {
             let rule = &self.rules[i as usize];
-            // 清單與冠詞外框只會是句子的一部分：最外層（整句）不套，免得把「人名 likes 甲, 乙」當成一項；冠詞外框也不套整句的片段
-            if (depth == 0 && (rule.list || rule.inner)) || (rule.list && ends_with_comma_entry()) || (rule.article && sentence) {
+            // 清單與冠詞外框只會是句子的一部分：最外層（整句）不套，免得把「人名 likes 甲, 乙」當成一項；冠詞外框也不套整句的片段；
+            // 台詞句型只套句子（書名「Suitorbasin: My Only Mistake」不套）
+            if (depth == 0 && (rule.list || rule.inner)) || (rule.list && ends_with_comma_entry()) || (rule.article && sentence) || (rule.speech && !spoken) {
                 continue;
             }
             if let Some((out, clean)) = self.try_rule(rule, key, depth, memo) {
@@ -1433,8 +1549,7 @@ impl Dict {
             .or_else(|| self.key_text(key).and_then(|t| fits(&t, "").or_else(|| tight(&t))))
             .or_else(|| self.apply_rules(key, 0, &mut Memo::new()).and_then(|(pieces, rule, _)| left_fits(&concat(pieces), &rule.align)))
             .or_else(|| self.bare_creature(key, &mut Memo::new()).and_then(|pieces| fits(&concat(pieces), "")))
-            // 只有主題的書名（作品清單）；單字的書名用詞（Peace、Change）單獨畫出時多半是介面字，不查
-            .or_else(|| self.title_vocab(key).filter(|_| key.contains(&b' ')).and_then(|zh| fits(zh, "")))
+            .or_else(|| self.whole_title(key).and_then(|zh| fits(&zh, "")))
             .or_else(|| self.truncated(key).and_then(|zh| fits(&zh, "")));
         if cache.len() >= CACHE_LIMIT {
             cache.clear();
@@ -1660,7 +1775,6 @@ mod tests {
         assert_eq!(t(b"holy rock").as_deref(), Some("聖岩"));
         assert_eq!(t(b"holy rocks").as_deref(), Some("聖岩"), "複數詞形也收");
         assert_eq!(t(b"holy Rock"), None, "大寫開頭的是書名的隨機字，不收");
-        assert_eq!(t(b"Holy rock"), None, "不是書名句型：固定字照大小寫比");
         assert_eq!(t(b"holy large"), None, "形容詞不收");
     }
 
@@ -1679,6 +1793,10 @@ mod tests {
         assert_eq!(t(b"Anatomy of Eye Explained").as_deref(), Some("眼睛解剖詳解"), "[NO_ART_NAME] 刪掉所有 the");
         assert_eq!(t(b"The Anatomy of the Eye").as_deref(), Some("眼睛解剖"), "只有主題的書名");
         assert_eq!(t(b"Peace"), None, "單字的書名用詞不單獨翻");
+        crate::names::set_titles(b"Rocks");
+        assert_eq!(t(b"Rocks").as_deref(), Some("岩"), "這個世界有只叫 Rocks 的書（拿隨機名詞當書名）：單獨畫出時當書名翻");
+        crate::names::set_titles(b"");
+        assert_eq!(t(b"Rocks"), None, "換世界（書單換掉）後不再當書名");
         assert_eq!(t(b"On Labor"), None, "一般字詞不收");
         assert_eq!(t(b"On Rocks").as_deref(), Some("論岩"), "沒有主題的作品拿隨機名詞當主題");
         assert_eq!(t(b"on the Labor"), None, "原文的小寫不會比到樣板的大寫（介面字串 on fire）");
@@ -1717,6 +1835,19 @@ mod tests {
         assert_eq!(text(b"Civilizations...").as_deref(), Some("文明與其他勢力"), "剛好截在字尾也算");
         assert_eq!(text(b"Civilizat...").as_deref(), Some("文明與其他…"), "放不下就截短接「…」，不超過原文寬度");
         assert_eq!(text(b"Loading...").as_deref(), Some("載入中……"), "本來就有刪節號的整句條目先查");
+    }
+
+    #[test]
+    fn professions_and_nicknames_cut_mid_word_are_completed() {
+        // 物品頁「Owner: 名字, 職業...」、傳說人物分頁「原名, "英文名...」被遊戲截在字中間
+        let mut d = Dict::default();
+        d.load_tsv("Stonecrafter\t石雕匠\nStonecutter\t石匠\nExpedition leader\t遠征隊長\n");
+        let full = |k: &[u8]| d.complete_cut(k).map(|f| String::from_utf8(f).unwrap());
+        assert_eq!(full(b"Owner: Urist, Stonecr...").as_deref(), Some("Owner: Urist, Stonecrafter"));
+        assert_eq!(full(b"Owner: Urist, expedition le...").as_deref(), Some("Owner: Urist, Expedition leader"), "首字大小寫不論");
+        assert_eq!(full(b"With Urist, Stone..."), None, "Stonecrafter、Stonecutter 都對得上，不猜");
+        crate::names::insert(b"Onsmost Youngwill the Bejeweled", "年輕意志·鑲寶");
+        assert_eq!(full(b"Onsmost Xoxoudu Etog, \"Onsmost Youngw...").as_deref(), Some("Onsmost Xoxoudu Etog, \"Onsmost Youngwill the Bejeweled\""));
     }
 
     #[test]
@@ -1785,6 +1916,19 @@ mod tests {
         assert_eq!(d.translate_text(b"Histories of Greed").as_deref(), Some("貪婪的歷史"), "佔位片段與限定佔位也退回小寫");
         assert_eq!(d.translate_text(b"Labor").as_deref(), Some("勞動"), "大寫條目存在時用大寫條目");
         assert_eq!(d.translate_text(b"GREED"), None, "全大寫的字串不退回");
+    }
+
+    #[test]
+    fn capitalized_strings_retry_rules_written_in_lowercase() {
+        // 倉儲區清單把每一項首字大寫：「Experiment of Ebdi fat」的 experiment of {1} 只寫了小寫（實際檔案裡 {%1} fat 排在前面）
+        let mut d = dict("{%1} fat\t{1}脂肪\nexperiment of {1}\t{1}之實驗體\nat {%1}\t因{1}而\n{%1}: {%2}\t{1}：{2}\nmy {@1} {2}\t我的{1}{2}\tinner\n");
+        d.load_tsv("Fire\t火焰\nOnly\t僅限\nyour location\t你的所在地\n");
+        let t = |s: &[u8]| d.translate_text(s);
+        assert_eq!(t(b"Experiment of Ebdi").as_deref(), Some("Ebdi之實驗體"));
+        assert_eq!(t(b"Experiment of Ebdi fat").as_deref(), Some("Ebdi之實驗體脂肪"), "開頭的片段也照小寫查，其他片段照原文");
+        assert_eq!(t(b"EXPERIMENT of Ebdi"), None, "全大寫的不改");
+        assert_eq!(t(b"At your location"), None, "介系詞開頭的介面字不拿句中片段的句型比");
+        assert_eq!(t(b"Fire: My Only Mistake"), None, "佔位裡本來就大寫的片段（書名）不改小寫，不會被 my 句型切成「我的僅限Mistake」");
     }
 
     #[test]
@@ -2156,5 +2300,30 @@ mod tests {
         let link = |s: &[u8]| d.translate_fragment(s);
         assert_eq!(link(b"Rislu Strepuv, \"The Sieges of Scolding\"").as_deref(), Some("Rislu Strepuv「斥之圍城」"), "傳說頁的戰爭連結：原名照抄也算翻好");
         assert_eq!(link(b"he said, \"The Sieges of Scolding\""), None, "小寫的字不是原名，整條不算翻好");
+    }
+
+    #[test]
+    fn fortress_kill_lines_put_the_race_before_a_registered_name() {
+        // 要塞人物頁的擊殺清單（彩色文字框，沒有連結）：「名字 the 種族, d. 年」
+        let mut d = dict("{1}, d. {#2}\t{1}，{2}年歿\n");
+        d.load_tsv("dwarf\t矮人\n");
+        crate::names::insert(b"Inod Tombempire", "伊諾德墓帝");
+        let t = |s: &[u8]| d.translate_text(s);
+        assert_eq!(t(b"Inod Tombempire the dwarf, d. 5").as_deref(), Some("矮人伊諾德墓帝，5年歿"));
+        assert_eq!(t(b"Inod Tombempire the dwarf").as_deref(), Some("矮人伊諾德墓帝"), "單獨畫出也翻");
+        assert_eq!(t(b"Stodir Blowposts the dwarf"), None, "沒登記的名字不拆，一般片語（jumped into the river）同理");
+    }
+
+    #[test]
+    fn player_given_names_stay_english() {
+        // 小隊排程表格裡玩家取的「Dense Training」不能被 dense {1} 翻成「茂密的訓練」；倉儲區取名「Gems」和字典同字，照翻
+        let mut d = dict("dense {1}\t茂密的{1}\n");
+        d.load_tsv("Gems\t寶石\ntraining\t訓練\n");
+        crate::names::set_player_names(b"Dense training\nGems");
+        assert!(d.keeps_player_name(b"Dense training"), "字典沒有同字的整句：照原文");
+        assert!(d.keeps_player_name(b"dense training "), "首字大小寫、頭尾空白不論");
+        assert!(!d.keeps_player_name(b"Gems"), "和字典同字的照翻");
+        crate::names::set_player_names(b"");
+        assert!(!d.keeps_player_name(b"Dense training"), "換一批後舊名字照翻");
     }
 }

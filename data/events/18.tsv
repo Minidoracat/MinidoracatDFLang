@@ -14,40 +14,40 @@ the discovery of {1} in {2} in {3} by {4}	{4}在{3}的{2}發現{1}	{4}在{3}的{
 the discovery of {1} in {2} by {3}	{3}在{2}發現{1}	{3}在{2}发现{1}	inner	FUN_140b8af20 L1701403 神器被發現短語
 the discovery of {1} by {2}	{2}發現{1}	{2}发现{1}	inner	FUN_140b8af20 L1701403 神器被發現短語
 {1} was recovered by {2} from {3} in {4}.	{2}從{4}的{3}取回了{1}。	{2}从{4}的{3}取回了{1}。	inner	FUN_140b8b6b0 L1701697 神器被取回：{3} 建築、{4} 據點；排在 by {2} in {3} 前
-{1} was recovered by {2} and brought to {3}.	{2}取回了{1}，並帶到{3}。	{2}取回了{1}，并带到{3}。	inner	FUN_140b8b080 L1701441 物品被取回（item_stolen 種類 3）沒有來源地點；排在神器 by {2} in {3} 前
+{1} was recovered by {2} during {%3}.	{2}在{3}期間取回了{1}。	{2}在{3}期间取回了{1}。	inner	FUN_140b8b080 L1701441 物品被取回（item_stolen 種類 3）沒有來源地點，{3} 情境 233（FUN_140b5a6c0 的 during＋事件集合名，20.tsv 的名稱句型）；排在神器 by {2} in {3} 前。during 不寫成 tail：during {%n} 會搶走「during mining」，藝術品的「The artwork relates to … during 事件集合.」也會被 tail 改寫。結尾的 and brought to 由 tails.tsv 的 tail 去掉
 {1} was recovered by {2} in {3}.	{2}在{3}取回了{1}。	{2}在{3}取回了{1}。	inner	FUN_140b8b6b0 L1701697 神器被取回：{3} 據點或地區
 the recovery of {1} by {2} from {3} in {4}	{2}從{4}的{3}取回{1}	{2}从{4}的{3}取回{1}	inner	FUN_140b8b830 L1701737 神器被取回短語
 the recovery of {1} by {2} in {3}	{2}在{3}取回{1}	{2}在{3}取回{1}	inner	FUN_140b8b830 L1701737 神器被取回短語
-{1} was stolen from {2} in {3} by {4} and brought to {5}.	{4}從{3}的{2}偷走了{1}，並帶到{5}。	{4}从{3}的{2}偷走了{1}，并带到{5}。	inner	FUN_140b8b080 L1701441 物品被竊（item_stolen） was stolen：{1} 物品或神器、{2} 建築、{3} 據點；專門的在前
+{1} was stolen from {2} in {3} by {4} during {%5}.	{4}在{5}期間從{3}的{2}偷走了{1}。	{4}在{5}期间从{3}的{2}偷走了{1}。	inner	FUN_140b8b080 L1701441 物品被竊（item_stolen） was stolen：{1} 物品或神器、{2} 建築、{3} 據點、{5} 情境 233（during＋事件集合名，見 recovered by … during 那條）
 {1} was stolen from {2} in {3} by {4}.	{4}從{3}的{2}偷走了{1}。	{4}从{3}的{2}偷走了{1}。	inner	FUN_140b8b080 L1701441 物品被竊（item_stolen） was stolen：{1} 物品或神器、{2} 建築、{3} 據點
-{1} was stolen from {2} by {3} and brought to {4}.	{3}從{2}偷走了{1}，並帶到{4}。	{3}从{2}偷走了{1}，并带到{4}。	inner	FUN_140b8b080 L1701441 物品被竊（item_stolen） was stolen：{1} 物品或神器、{2} 據點或地區
+{1} was stolen from {2} by {3} during {%4}.	{3}在{4}期間從{2}偷走了{1}。	{3}在{4}期间从{2}偷走了{1}。	inner	FUN_140b8b080 L1701441 物品被竊（item_stolen） was stolen：{1} 物品或神器、{2} 據點或地區、{4} 情境 233
 {1} was stolen from {2} by {3}.	{3}從{2}偷走了{1}。	{3}从{2}偷走了{1}。	inner	FUN_140b8b080 L1701441 物品被竊（item_stolen） was stolen：{1} 物品或神器、{2} 據點或地區
-{1} was stolen by {2} and brought to {3}.	{2}偷走了{1}，並帶到{3}。	{2}偷走了{1}，并带到{3}。	inner	FUN_140b8b080 L1701441 物品被竊（item_stolen） was stolen：{1} 物品或神器
+{1} was stolen by {2} during {%3}.	{2}在{3}期間偷走了{1}。	{2}在{3}期间偷走了{1}。	inner	FUN_140b8b080 L1701441 物品被竊（item_stolen） was stolen：{1} 物品或神器、{3} 情境 233
 {1} was stolen by {2}.	{2}偷走了{1}。	{2}偷走了{1}。	inner	FUN_140b8b080 L1701441 物品被竊（item_stolen） was stolen：{1} 物品或神器
 the theft of {1} from {2} in {3} by {4}	{4}從{3}的{2}偷走{1}	{4}从{3}的{2}偷走{1}	inner	FUN_140b8b3c0 L1701572 物品被竊短語 the theft of：{1} 物品或神器
 the theft of {1} from {2} by {3}	{3}從{2}偷走{1}	{3}从{2}偷走{1}	inner	FUN_140b8b3c0 L1701572 物品被竊短語 the theft of：{1} 物品或神器
 the theft of {1} by {2}	{2}偷走{1}	{2}偷走{1}	inner	FUN_140b8b3c0 L1701572 物品被竊短語 the theft of：{1} 物品或神器
-{1} was confiscated from {2} in {3} by {4} and brought to {5}.	{4}從{3}的{2}沒收了{1}，並帶到{5}。	{4}从{3}的{2}没收了{1}，并带到{5}。	inner	FUN_140b8b080 L1701441 物品被竊（item_stolen） was confiscated：{1} 物品或神器、{2} 建築、{3} 據點；專門的在前
+{1} was confiscated from {2} in {3} by {4} during {%5}.	{4}在{5}期間從{3}的{2}沒收了{1}。	{4}在{5}期间从{3}的{2}没收了{1}。	inner	FUN_140b8b080 L1701441 物品被竊（item_stolen） was confiscated：{1} 物品或神器、{2} 建築、{3} 據點、{5} 情境 233
 {1} was confiscated from {2} in {3} by {4}.	{4}從{3}的{2}沒收了{1}。	{4}从{3}的{2}没收了{1}。	inner	FUN_140b8b080 L1701441 物品被竊（item_stolen） was confiscated：{1} 物品或神器、{2} 建築、{3} 據點
-{1} was confiscated from {2} by {3} and brought to {4}.	{3}從{2}沒收了{1}，並帶到{4}。	{3}从{2}没收了{1}，并带到{4}。	inner	FUN_140b8b080 L1701441 物品被竊（item_stolen） was confiscated：{1} 物品或神器、{2} 據點或地區
+{1} was confiscated from {2} by {3} during {%4}.	{3}在{4}期間從{2}沒收了{1}。	{3}在{4}期间从{2}没收了{1}。	inner	FUN_140b8b080 L1701441 物品被竊（item_stolen） was confiscated：{1} 物品或神器、{2} 據點或地區、{4} 情境 233
 {1} was confiscated from {2} by {3}.	{3}從{2}沒收了{1}。	{3}从{2}没收了{1}。	inner	FUN_140b8b080 L1701441 物品被竊（item_stolen） was confiscated：{1} 物品或神器、{2} 據點或地區
-{1} was confiscated by {2} and brought to {3}.	{2}沒收了{1}，並帶到{3}。	{2}没收了{1}，并带到{3}。	inner	FUN_140b8b080 L1701441 物品被竊（item_stolen） was confiscated：{1} 物品或神器
+{1} was confiscated by {2} during {%3}.	{2}在{3}期間沒收了{1}。	{2}在{3}期间没收了{1}。	inner	FUN_140b8b080 L1701441 物品被竊（item_stolen） was confiscated：{1} 物品或神器、{3} 情境 233
 {1} was confiscated by {2}.	{2}沒收了{1}。	{2}没收了{1}。	inner	FUN_140b8b080 L1701441 物品被竊（item_stolen） was confiscated：{1} 物品或神器
 the confiscation of {1} from {2} in {3} by {4}	{4}從{3}的{2}沒收{1}	{4}从{3}的{2}没收{1}	inner	FUN_140b8b3c0 L1701572 物品被竊短語 the confiscation of：{1} 物品或神器
 the confiscation of {1} from {2} by {3}	{3}從{2}沒收{1}	{3}从{2}没收{1}	inner	FUN_140b8b3c0 L1701572 物品被竊短語 the confiscation of：{1} 物品或神器
 the confiscation of {1} by {2}	{2}沒收{1}	{2}没收{1}	inner	FUN_140b8b3c0 L1701572 物品被竊短語 the confiscation of：{1} 物品或神器
-{1} was looted from {2} in {3} by {4} and brought to {5}.	{4}從{3}的{2}掠走了{1}，並帶到{5}。	{4}从{3}的{2}掠走了{1}，并带到{5}。	inner	FUN_140b8b080 L1701441 物品被竊（item_stolen） was looted：{1} 物品或神器、{2} 建築、{3} 據點；專門的在前
+{1} was looted from {2} in {3} by {4} during {%5}.	{4}在{5}期間從{3}的{2}掠走了{1}。	{4}在{5}期间从{3}的{2}掠走了{1}。	inner	FUN_140b8b080 L1701441 物品被竊（item_stolen） was looted：{1} 物品或神器、{2} 建築、{3} 據點、{5} 情境 233
 {1} was looted from {2} in {3} by {4}.	{4}從{3}的{2}掠走了{1}。	{4}从{3}的{2}掠走了{1}。	inner	FUN_140b8b080 L1701441 物品被竊（item_stolen） was looted：{1} 物品或神器、{2} 建築、{3} 據點
-{1} was looted from {2} by {3} and brought to {4}.	{3}從{2}掠走了{1}，並帶到{4}。	{3}从{2}掠走了{1}，并带到{4}。	inner	FUN_140b8b080 L1701441 物品被竊（item_stolen） was looted：{1} 物品或神器、{2} 據點或地區
+{1} was looted from {2} by {3} during {%4}.	{3}在{4}期間從{2}掠走了{1}。	{3}在{4}期间从{2}掠走了{1}。	inner	FUN_140b8b080 L1701441 物品被竊（item_stolen） was looted：{1} 物品或神器、{2} 據點或地區、{4} 情境 233
 {1} was looted from {2} by {3}.	{3}從{2}掠走了{1}。	{3}从{2}掠走了{1}。	inner	FUN_140b8b080 L1701441 物品被竊（item_stolen） was looted：{1} 物品或神器、{2} 據點或地區
-{1} was looted by {2} and brought to {3}.	{2}掠走了{1}，並帶到{3}。	{2}掠走了{1}，并带到{3}。	inner	FUN_140b8b080 L1701441 物品被竊（item_stolen） was looted：{1} 物品或神器
+{1} was looted by {2} during {%3}.	{2}在{3}期間掠走了{1}。	{2}在{3}期间掠走了{1}。	inner	FUN_140b8b080 L1701441 物品被竊（item_stolen） was looted：{1} 物品或神器、{3} 情境 233
 {1} was looted by {2}.	{2}掠走了{1}。	{2}掠走了{1}。	inner	FUN_140b8b080 L1701441 物品被竊（item_stolen） was looted：{1} 物品或神器
 the looting of {1} from {2} in {3} by {4}	{4}從{3}的{2}掠走{1}	{4}从{3}的{2}掠走{1}	inner	FUN_140b8b3c0 L1701572 物品被竊短語 the looting of：{1} 物品或神器
 the looting of {1} from {2} by {3}	{3}從{2}掠走{1}	{3}从{2}掠走{1}	inner	FUN_140b8b3c0 L1701572 物品被竊短語 the looting of：{1} 物品或神器
 the looting of {1} by {2}	{2}掠走{1}	{2}掠走{1}	inner	FUN_140b8b3c0 L1701572 物品被竊短語 the looting of：{1} 物品或神器
-{1} was recovered from {2} in {3} by {4} and brought to {5}.	{4}從{3}的{2}取回了{1}，並帶到{5}。	{4}从{3}的{2}取回了{1}，并带到{5}。	inner	FUN_140b8b080 L1701441 物品被竊（item_stolen） was recovered：{1} 物品或神器、{2} 建築、{3} 據點；專門的在前
+{1} was recovered from {2} in {3} by {4} during {%5}.	{4}在{5}期間從{3}的{2}取回了{1}。	{4}在{5}期间从{3}的{2}取回了{1}。	inner	FUN_140b8b080 L1701441 物品被竊（item_stolen） was recovered：{1} 物品或神器、{2} 建築、{3} 據點、{5} 情境 233
 {1} was recovered from {2} in {3} by {4}.	{4}從{3}的{2}取回了{1}。	{4}从{3}的{2}取回了{1}。	inner	FUN_140b8b080 L1701441 物品被竊（item_stolen） was recovered：{1} 物品或神器、{2} 建築、{3} 據點
-{1} was recovered from {2} by {3} and brought to {4}.	{3}從{2}取回了{1}，並帶到{4}。	{3}从{2}取回了{1}，并带到{4}。	inner	FUN_140b8b080 L1701441 物品被竊（item_stolen） was recovered：{1} 物品或神器、{2} 據點或地區
+{1} was recovered from {2} by {3} during {%4}.	{3}在{4}期間從{2}取回了{1}。	{3}在{4}期间从{2}取回了{1}。	inner	FUN_140b8b080 L1701441 物品被竊（item_stolen） was recovered：{1} 物品或神器、{2} 據點或地區、{4} 情境 233
 {1} was recovered from {2} by {3}.	{3}從{2}取回了{1}。	{3}从{2}取回了{1}。	inner	FUN_140b8b080 L1701441 物品被竊（item_stolen） was recovered：{1} 物品或神器、{2} 據點或地區
 {1} was recovered by {2}.	{2}取回了{1}。	{2}取回了{1}。	inner	FUN_140b8b080 L1701441 物品被竊（item_stolen） was recovered：{1} 物品或神器；也是神器被取回（FUN_140b8b6b0）沒有地點的形式
 the recovery of {1} from {2} in {3} by {4}	{4}從{3}的{2}取回{1}	{4}从{3}的{2}取回{1}	inner	FUN_140b8b3c0 L1701572 物品被竊短語 the recovery of：{1} 物品或神器

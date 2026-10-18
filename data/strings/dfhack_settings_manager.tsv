@@ -1,0 +1,9 @@
+en	zh-Hant	zh-Hans	align	note
+You can ensure a number of barrels are reserved, preventing	你可以保留一定數量的桶，避免	你可以保留一定数量的桶，避免		DFHack hack/scripts/gui/settings-manager.lua L469 保留桶輸入框說明（Label 用 NEWLINE 一行一段畫，中文照同樣順序讀得通）
+them from being claimed by stockpiles as container storage.	它們被倉儲區認領去當容器。	它们被储物区认领去当容器。		DFHack hack/scripts/gui/settings-manager.lua L470 同上
+For example, if there are 5 reserved barrels, no stockpile	例如保留 5 個桶時，任何倉儲區都	例如保留 5 个桶时，任何储物区都		DFHack hack/scripts/gui/settings-manager.lua L471 同上
+will claim an empty barrel for storing items until you have	不會認領空桶來存放物品，直到你	不会认领空桶来存放物品，直到你		DFHack hack/scripts/gui/settings-manager.lua L472 同上
+at least 6 barrels lying around.	至少有 6 個閒置的桶為止。	至少有 6 个闲置的桶为止。		DFHack hack/scripts/gui/settings-manager.lua L473 同上
+This feature is most often used to ensure that a fortress has	這個功能最常用來確保要塞有	这个功能最常用来确保要塞有		DFHack hack/scripts/gui/settings-manager.lua L474 同上第二段
+ample empty barrels for the production of alcohol, although	足夠的空桶可以釀酒，不過	足够的空桶可以酿酒，不过		DFHack hack/scripts/gui/settings-manager.lua L475 同上
+empty barrels are also necessary for other jobs.	其他工作也需要空桶。	其他工作也需要空桶。		DFHack hack/scripts/gui/settings-manager.lua L476 同上

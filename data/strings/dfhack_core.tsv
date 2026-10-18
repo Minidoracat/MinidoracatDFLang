@@ -48,7 +48,7 @@ Show full tool help or run custom command	顯示完整工具說明或執行自�
 Launch tool-specific config UI	開啟工具專屬設定介面	打开工具专属设置界面		DFHack hack/scripts/gui/control-panel.lua L395 按鍵提示
 Toggle overlay	切換疊加介面	切换叠加界面		DFHack hack/scripts/gui/control-panel.lua L550 按鍵提示
 Show overlay help	顯示疊加介面說明	显示叠加界面帮助		DFHack hack/scripts/gui/control-panel.lua L557 按鍵提示
-Launch widget position adjustment UI	開啟小工具位置調整介面	打开小部件位置调整界面		DFHack hack/scripts/gui/control-panel.lua L564 按鍵提示（執行 gui/overlay）
+Launch widget position adjustment UI	開啟元件位置調整介面	打开组件位置调整界面		DFHack hack/scripts/gui/control-panel.lua L564 按鍵提示（執行 gui/overlay）
 Toggle/edit setting	切換／編輯設定	切换/编辑设置		DFHack hack/scripts/gui/control-panel.lua L799 偏好設定分頁按鍵提示
 Edit setting	編輯設定	编辑设置	c	DFHack hack/scripts/gui/control-panel.lua L671 偏好設定編輯視窗標題
 Please set a new value for	請為以下項目設定新值：	请为以下项目设置新值：		DFHack hack/scripts/gui/control-panel.lua L681 偏好設定編輯視窗（下一行是設定名稱；原文結尾空白）
