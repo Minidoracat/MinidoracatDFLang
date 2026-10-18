@@ -172,6 +172,9 @@ unsafe fn plain_text(words: &[usize], l: &MtbLayout, palette: Option<&Palette>) 
     let mut prev_link = -1;
     // 目前這個連結最後一個字的尾巴：連結結束時接在記號後面
     let mut tail: &[u8] = b"";
+    // 目前這個連結已經收進名字的雙引號數：名字自己帶引號時（「Rislu Strepuv, "The Sieges of Scolding"」），
+    // 結尾那個引號和名字裡的開頭引號是一對，留在名字裡，不算黏著的標點
+    let mut quotes = 0usize;
     for (i, &w) in words.iter().enumerate() {
         unsafe {
             let flags: u32 = read(w, l.word_flags);
@@ -179,7 +182,19 @@ unsafe fn plain_text(words: &[usize], l: &MtbLayout, palette: Option<&Palette>) 
             let text = str_bytes(w + l.word_str);
             if link != -1 && flags & MARKERS == 0 {
                 // 連結的顏色由遊戲依連結種類決定，不看單字的顏色
-                let (head, t) = link_trim(text);
+                let (head, mut t) = link_trim(text);
+                let first = !(link == prev_link && !links.is_empty());
+                if first {
+                    quotes = 0;
+                }
+                let from = if first { head } else { 0 };
+                let count = |s: &[u8]| s.iter().filter(|&&c| c == b'"').count();
+                if (quotes + count(&text[from..text.len() - t])) % 2 == 1 {
+                    if let Some(p) = text[text.len() - t..].iter().position(|&c| c == b'"') {
+                        t -= p + 1;
+                    }
+                }
+                quotes += count(&text[from..]);
                 match links.last_mut() {
                     Some(span) if link == prev_link => span.words.push(i),
                     _ => {
@@ -973,6 +988,21 @@ mod tests {
             assert_eq!((name[0].entry.text.as_str(), name[0].color, pos(p.words[5])), ("Mangemined", None, (18, 0)));
             let Some(Plan::Draw(row)) = word_plan(p.words[0], &d) else { panic!("第一個單字畫中文") };
             assert_eq!(row.iter().map(|p| (p.dx, p.entry.text.as_str())).collect::<Vec<_>>(), [(0, "1年，"), (12, "定居於"), (28, "。")]);
+        }
+    }
+
+    #[test]
+    fn closing_quote_of_a_quoted_link_name_stays_in_the_name() {
+        let d = Dict::default();
+        unsafe {
+            // 事件集合名「原名, "英文名"」：結尾的引號和名字裡的開頭引號是一對，句號才是黏著的標點
+            let p = Fake::new(&[("In", 7), ("1,", 7), ("Rislu", 7), ("Strepuv,", 7), ("\"The", 7), ("Sieges\".", 7)], 40);
+            for i in 2..6 {
+                set_link(&p, i, 0);
+            }
+            let mut logged = String::new();
+            assert!(!rewrite(p.mtb, &d, |k| logged = cp437::decode(k), || {}));
+            assert_eq!(logged, "In 1, ☺Rislu Strepuv, \"The Sieges\"☻.");
         }
     }
 

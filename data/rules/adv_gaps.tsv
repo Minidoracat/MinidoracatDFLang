@@ -1,0 +1,89 @@
+en	zh-Hant	zh-Hans	align	note
+Ride {%1}, push off toward NW	乘坐{1}，朝西北推動出發	乘坐{1}，朝西北推动出发		FUN_1408403e0 L1183052-1183105 冒險移動選項：Ride＋載具物品名（FUN_140c65450，無效時 item）＋, push off toward＋方位（FUN_14074f220）；方位逐條寫（單獨的 NW 這類方位字典沒有）
+Ride {%1}, push off toward NW/Below	乘坐{1}，朝西北下層推動出發	乘坐{1}，朝西北下层推动出发		FUN_1408403e0 L1183052-1183105 冒險移動選項：Ride＋載具物品名（FUN_140c65450，無效時 item）＋, push off toward＋方位（FUN_14074f220）；方位逐條寫（單獨的 NW 這類方位字典沒有）
+Ride {%1}, push off toward NW/Above	乘坐{1}，朝西北上層推動出發	乘坐{1}，朝西北上层推动出发		FUN_1408403e0 L1183052-1183105 冒險移動選項：Ride＋載具物品名（FUN_140c65450，無效時 item）＋, push off toward＋方位（FUN_14074f220）；方位逐條寫（單獨的 NW 這類方位字典沒有）
+Ride {%1}, push off toward NE	乘坐{1}，朝東北推動出發	乘坐{1}，朝东北推动出发		FUN_1408403e0 L1183052-1183105 冒險移動選項：Ride＋載具物品名（FUN_140c65450，無效時 item）＋, push off toward＋方位（FUN_14074f220）；方位逐條寫（單獨的 NW 這類方位字典沒有）
+Ride {%1}, push off toward NE/Below	乘坐{1}，朝東北下層推動出發	乘坐{1}，朝东北下层推动出发		FUN_1408403e0 L1183052-1183105 冒險移動選項：Ride＋載具物品名（FUN_140c65450，無效時 item）＋, push off toward＋方位（FUN_14074f220）；方位逐條寫（單獨的 NW 這類方位字典沒有）
+Ride {%1}, push off toward NE/Above	乘坐{1}，朝東北上層推動出發	乘坐{1}，朝东北上层推动出发		FUN_1408403e0 L1183052-1183105 冒險移動選項：Ride＋載具物品名（FUN_140c65450，無效時 item）＋, push off toward＋方位（FUN_14074f220）；方位逐條寫（單獨的 NW 這類方位字典沒有）
+Ride {%1}, push off toward SW	乘坐{1}，朝西南推動出發	乘坐{1}，朝西南推动出发		FUN_1408403e0 L1183052-1183105 冒險移動選項：Ride＋載具物品名（FUN_140c65450，無效時 item）＋, push off toward＋方位（FUN_14074f220）；方位逐條寫（單獨的 NW 這類方位字典沒有）
+Ride {%1}, push off toward SW/Below	乘坐{1}，朝西南下層推動出發	乘坐{1}，朝西南下层推动出发		FUN_1408403e0 L1183052-1183105 冒險移動選項：Ride＋載具物品名（FUN_140c65450，無效時 item）＋, push off toward＋方位（FUN_14074f220）；方位逐條寫（單獨的 NW 這類方位字典沒有）
+Ride {%1}, push off toward SW/Above	乘坐{1}，朝西南上層推動出發	乘坐{1}，朝西南上层推动出发		FUN_1408403e0 L1183052-1183105 冒險移動選項：Ride＋載具物品名（FUN_140c65450，無效時 item）＋, push off toward＋方位（FUN_14074f220）；方位逐條寫（單獨的 NW 這類方位字典沒有）
+Ride {%1}, push off toward SE	乘坐{1}，朝東南推動出發	乘坐{1}，朝东南推动出发		FUN_1408403e0 L1183052-1183105 冒險移動選項：Ride＋載具物品名（FUN_140c65450，無效時 item）＋, push off toward＋方位（FUN_14074f220）；方位逐條寫（單獨的 NW 這類方位字典沒有）
+Ride {%1}, push off toward SE/Below	乘坐{1}，朝東南下層推動出發	乘坐{1}，朝东南下层推动出发		FUN_1408403e0 L1183052-1183105 冒險移動選項：Ride＋載具物品名（FUN_140c65450，無效時 item）＋, push off toward＋方位（FUN_14074f220）；方位逐條寫（單獨的 NW 這類方位字典沒有）
+Ride {%1}, push off toward SE/Above	乘坐{1}，朝東南上層推動出發	乘坐{1}，朝东南上层推动出发		FUN_1408403e0 L1183052-1183105 冒險移動選項：Ride＋載具物品名（FUN_140c65450，無效時 item）＋, push off toward＋方位（FUN_14074f220）；方位逐條寫（單獨的 NW 這類方位字典沒有）
+Ride {%1}, push off toward North	乘坐{1}，朝北方推動出發	乘坐{1}，朝北方推动出发		FUN_1408403e0 L1183052-1183105 冒險移動選項：Ride＋載具物品名（FUN_140c65450，無效時 item）＋, push off toward＋方位（FUN_14074f220）；方位逐條寫（單獨的 NW 這類方位字典沒有）
+Ride {%1}, push off toward North/Below	乘坐{1}，朝北方下層推動出發	乘坐{1}，朝北方下层推动出发		FUN_1408403e0 L1183052-1183105 冒險移動選項：Ride＋載具物品名（FUN_140c65450，無效時 item）＋, push off toward＋方位（FUN_14074f220）；方位逐條寫（單獨的 NW 這類方位字典沒有）
+Ride {%1}, push off toward North/Above	乘坐{1}，朝北方上層推動出發	乘坐{1}，朝北方上层推动出发		FUN_1408403e0 L1183052-1183105 冒險移動選項：Ride＋載具物品名（FUN_140c65450，無效時 item）＋, push off toward＋方位（FUN_14074f220）；方位逐條寫（單獨的 NW 這類方位字典沒有）
+Ride {%1}, push off toward South	乘坐{1}，朝南方推動出發	乘坐{1}，朝南方推动出发		FUN_1408403e0 L1183052-1183105 冒險移動選項：Ride＋載具物品名（FUN_140c65450，無效時 item）＋, push off toward＋方位（FUN_14074f220）；方位逐條寫（單獨的 NW 這類方位字典沒有）
+Ride {%1}, push off toward South/Below	乘坐{1}，朝南方下層推動出發	乘坐{1}，朝南方下层推动出发		FUN_1408403e0 L1183052-1183105 冒險移動選項：Ride＋載具物品名（FUN_140c65450，無效時 item）＋, push off toward＋方位（FUN_14074f220）；方位逐條寫（單獨的 NW 這類方位字典沒有）
+Ride {%1}, push off toward South/Above	乘坐{1}，朝南方上層推動出發	乘坐{1}，朝南方上层推动出发		FUN_1408403e0 L1183052-1183105 冒險移動選項：Ride＋載具物品名（FUN_140c65450，無效時 item）＋, push off toward＋方位（FUN_14074f220）；方位逐條寫（單獨的 NW 這類方位字典沒有）
+Ride {%1}, push off toward West	乘坐{1}，朝西方推動出發	乘坐{1}，朝西方推动出发		FUN_1408403e0 L1183052-1183105 冒險移動選項：Ride＋載具物品名（FUN_140c65450，無效時 item）＋, push off toward＋方位（FUN_14074f220）；方位逐條寫（單獨的 NW 這類方位字典沒有）
+Ride {%1}, push off toward West/Below	乘坐{1}，朝西方下層推動出發	乘坐{1}，朝西方下层推动出发		FUN_1408403e0 L1183052-1183105 冒險移動選項：Ride＋載具物品名（FUN_140c65450，無效時 item）＋, push off toward＋方位（FUN_14074f220）；方位逐條寫（單獨的 NW 這類方位字典沒有）
+Ride {%1}, push off toward West/Above	乘坐{1}，朝西方上層推動出發	乘坐{1}，朝西方上层推动出发		FUN_1408403e0 L1183052-1183105 冒險移動選項：Ride＋載具物品名（FUN_140c65450，無效時 item）＋, push off toward＋方位（FUN_14074f220）；方位逐條寫（單獨的 NW 這類方位字典沒有）
+Ride {%1}, push off toward East	乘坐{1}，朝東方推動出發	乘坐{1}，朝东方推动出发		FUN_1408403e0 L1183052-1183105 冒險移動選項：Ride＋載具物品名（FUN_140c65450，無效時 item）＋, push off toward＋方位（FUN_14074f220）；方位逐條寫（單獨的 NW 這類方位字典沒有）
+Ride {%1}, push off toward East/Below	乘坐{1}，朝東方下層推動出發	乘坐{1}，朝东方下层推动出发		FUN_1408403e0 L1183052-1183105 冒險移動選項：Ride＋載具物品名（FUN_140c65450，無效時 item）＋, push off toward＋方位（FUN_14074f220）；方位逐條寫（單獨的 NW 這類方位字典沒有）
+Ride {%1}, push off toward East/Above	乘坐{1}，朝東方上層推動出發	乘坐{1}，朝东方上层推动出发		FUN_1408403e0 L1183052-1183105 冒險移動選項：Ride＋載具物品名（FUN_140c65450，無效時 item）＋, push off toward＋方位（FUN_14074f220）；方位逐條寫（單獨的 NW 這類方位字典沒有）
+Ride {%1}	乘坐{1}	乘坐{1}		FUN_1408403e0 L1183052 冒險移動選項：沒有推動方向時
+Dismount to {%1}	下到{1}	下到{1}		FUN_140842050 L1184268 冒險移動選項：Dismount to＋地格名（FUN_140e7d330），句尾方位括號由 zz_adv_activity 接；同族 Climb to {%1} 在 adv_hud
+Aim carefully and shoot {1}	仔細瞄準後射擊{1}	仔细瞄准后射击{1}		FUN_1408a4890 L1242950-1242965 冒險射擊選項：{1} 目標單位名（FUN_14132e430，可能是人名，用任意佔位）
+Quickly shoot {1}	快速射擊{1}	快速射击{1}		FUN_1408a4890 L1242952 冒險射擊選項：同上
+Aim carefully and throw at {1}	仔細瞄準後投向{1}	仔细瞄准后投向{1}		FUN_1408a5e70 L1244168-1244183 冒險投擲選項：{1} 目標單位名（FUN_14132e430）
+Quickly throw at {1}	快速投向{1}	快速投向{1}		FUN_1408a5e70 L1244170 冒險投擲選項：同上
+Throw at {%1}	投向{1}	投向{1}		FUN_1408a64d0 L1244440-1244453 冒險投擲選項：Throw at＋地格名（FUN_140e7d330）；旗標關時只畫地格名
+Put or place {%1}	放置{1}	放置{1}		FUN_140894730 L1232157-1232167 冒險動作：Put or place＋物品名（FUN_140c65450）
+Heat {%1} near campfire	在營火旁加熱{1}	在营火旁加热{1}		FUN_140835e40 L1176553-1176606 冒險動作：Heat＋物品名＋ near＋熱源（地格 0x43），句尾方位括號由 zz_adv_activity 接
+Heat {%1} near fire	在火旁加熱{1}	在火旁加热{1}		FUN_140835e40 L1176553-1176606 冒險動作：Heat＋物品名＋ near＋熱源（地格 0x46），句尾方位括號由 zz_adv_activity 接
+Heat {%1} near burning trunk	在燃燒的樹幹旁加熱{1}	在燃烧的树干旁加热{1}		FUN_140835e40 L1176553-1176606 冒險動作：Heat＋物品名＋ near＋熱源（地格 0x47），句尾方位括號由 zz_adv_activity 接
+Heat {%1} near burning branches	在燃燒的樹枝旁加熱{1}	在燃烧的树枝旁加热{1}		FUN_140835e40 L1176553-1176606 冒險動作：Heat＋物品名＋ near＋熱源（地格 0x48），句尾方位括號由 zz_adv_activity 接
+Heat {%1} near burning twigs	在燃燒的細枝旁加熱{1}	在燃烧的细枝旁加热{1}		FUN_140835e40 L1176553-1176606 冒險動作：Heat＋物品名＋ near＋熱源（地格 0x49），句尾方位括號由 zz_adv_activity 接
+Heat {%1} near burning cap	在燃燒的菌傘旁加熱{1}	在燃烧的菌伞旁加热{1}		FUN_140835e40 L1176553-1176606 冒險動作：Heat＋物品名＋ near＋熱源（地格 0x4a-0x4c），句尾方位括號由 zz_adv_activity 接
+Heat {%1} near lava	在熔岩旁加熱{1}	在熔岩旁加热{1}		FUN_140835e40 L1176553-1176606 冒險動作：Heat＋物品名＋ near＋熱源（地格 熔岩地格），句尾方位括號由 zz_adv_activity 接
+Heat {%1} near magma	在熔岩旁加熱{1}	在熔岩旁加热{1}		FUN_140835e40 L1176553-1176606 冒險動作：Heat＋物品名＋ near＋熱源（地格 熔岩地格（magma 旗標）），句尾方位括號由 zz_adv_activity 接
+Heat {%1}	加熱{1}	加热{1}		FUN_140835e40 L1176553-1176574 冒險動作：熱源地格不在清單時不接 near；寫在 near 各條後
+Select {%1} ({#2} selected, range {#3}, disturber only)	選擇{1}（已選 {2}，範圍 {3}，僅限打擾者）	选择{1}（已选 {2}，范围 {3}，仅限打扰者）		FUN_1408a8300 L1246181-1246216 冒險互動能力選目標的狀態列：Select＋目標名詞（互動 raws 的 IT_MANUAL_INPUT：creature、target）＋ (＋已選數 selected 或 第幾個 of 上限＋, range 距離／, adjacent only／, own tile only＋[, disturber only]＋)
+Select {%1} ({#2} of {#3}, range {#4}, disturber only)	選擇{1}（{2}/{3}，範圍 {4}，僅限打擾者）	选择{1}（{2}/{3}，范围 {4}，仅限打扰者）		FUN_1408a8300 L1246181-1246216 冒險互動能力選目標的狀態列：Select＋目標名詞（互動 raws 的 IT_MANUAL_INPUT：creature、target）＋ (＋已選數 selected 或 第幾個 of 上限＋, range 距離／, adjacent only／, own tile only＋[, disturber only]＋)；第幾個寫成「{2}/{3}」，不加「第…個」：最短的 ({#2} of {#3}) 加了會比原文寬
+Select {%1} ({#2} selected, range {#3})	選擇{1}（已選 {2}，範圍 {3}）	选择{1}（已选 {2}，范围 {3}）		FUN_1408a8300 L1246181-1246216 冒險互動能力選目標的狀態列：Select＋目標名詞（互動 raws 的 IT_MANUAL_INPUT：creature、target）＋ (＋已選數 selected 或 第幾個 of 上限＋, range 距離／, adjacent only／, own tile only＋[, disturber only]＋)
+Select {%1} ({#2} of {#3}, range {#4})	選擇{1}（{2}/{3}，範圍 {4}）	选择{1}（{2}/{3}，范围 {4}）		同上
+Select {%1} ({#2} selected, adjacent only, disturber only)	選擇{1}（已選 {2}，僅限相鄰，僅限打擾者）	选择{1}（已选 {2}，仅限相邻，仅限打扰者）		FUN_1408a8300 L1246181-1246216 冒險互動能力選目標的狀態列：Select＋目標名詞（互動 raws 的 IT_MANUAL_INPUT：creature、target）＋ (＋已選數 selected 或 第幾個 of 上限＋, range 距離／, adjacent only／, own tile only＋[, disturber only]＋)
+Select {%1} ({#2} of {#3}, adjacent only, disturber only)	選擇{1}（{2}/{3}，僅限相鄰，僅限打擾者）	选择{1}（{2}/{3}，仅限相邻，仅限打扰者）		同上
+Select {%1} ({#2} selected, adjacent only)	選擇{1}（已選 {2}，僅限相鄰）	选择{1}（已选 {2}，仅限相邻）		FUN_1408a8300 L1246181-1246216 冒險互動能力選目標的狀態列：Select＋目標名詞（互動 raws 的 IT_MANUAL_INPUT：creature、target）＋ (＋已選數 selected 或 第幾個 of 上限＋, range 距離／, adjacent only／, own tile only＋[, disturber only]＋)
+Select {%1} ({#2} of {#3}, adjacent only)	選擇{1}（{2}/{3}，僅限相鄰）	选择{1}（{2}/{3}，仅限相邻）		同上
+Select {%1} ({#2} selected, own tile only, disturber only)	選擇{1}（已選 {2}，僅限所在格，僅限打擾者）	选择{1}（已选 {2}，仅限所在格，仅限打扰者）		同上；own tile only 譯「僅限所在格」：「僅限自身所在格」比原文寬
+Select {%1} ({#2} of {#3}, own tile only, disturber only)	選擇{1}（{2}/{3}，僅限所在格，僅限打擾者）	选择{1}（{2}/{3}，仅限所在格，仅限打扰者）		同上
+Select {%1} ({#2} selected, own tile only)	選擇{1}（已選 {2}，僅限所在格）	选择{1}（已选 {2}，仅限所在格）		同上
+Select {%1} ({#2} of {#3}, own tile only)	選擇{1}（{2}/{3}，僅限所在格）	选择{1}（{2}/{3}，仅限所在格）		同上
+Select {%1} ({#2} selected, disturber only)	選擇{1}（已選 {2}，僅限打擾者）	选择{1}（已选 {2}，仅限打扰者）		FUN_1408a8300 L1246181-1246216 冒險互動能力選目標的狀態列：Select＋目標名詞（互動 raws 的 IT_MANUAL_INPUT：creature、target）＋ (＋已選數 selected 或 第幾個 of 上限＋, range 距離／, adjacent only／, own tile only＋[, disturber only]＋)
+Select {%1} ({#2} of {#3}, disturber only)	選擇{1}（{2}/{3}，僅限打擾者）	选择{1}（{2}/{3}，仅限打扰者）		同上
+Select {%1} ({#2} selected)	選擇{1}（已選 {2}）	选择{1}（已选 {2}）		FUN_1408a8300 L1246181-1246216 冒險互動能力選目標的狀態列：Select＋目標名詞（互動 raws 的 IT_MANUAL_INPUT：creature、target）＋ (＋已選數 selected 或 第幾個 of 上限＋, range 距離／, adjacent only／, own tile only＋[, disturber only]＋)
+Select {%1} ({#2} of {#3})	選擇{1}（{2}/{3}）	选择{1}（{2}/{3}）		同上
+specks of {%1}	點點{1}	点点{1}	inner	FUN_140657f90 L877027-877171 沾染物描述：生物材料是「量詞 of 材料」，其他材料是「材料 量詞」（量詞依粉末／液體與量：specks、dusting、coating／spatter、smear、covering）；冒險動作選項 FUN_1408392a0（接 (部位)）與 FUN_140839850／FUN_140839ca0（Eat／Drink 開頭）；inner，只在佔位裡
+{%1} specks	點點{1}	点点{1}	inner	FUN_140657f90 L877027-877171 沾染物描述：生物材料是「量詞 of 材料」，其他材料是「材料 量詞」（量詞依粉末／液體與量：specks、dusting、coating／spatter、smear、covering）；冒險動作選項 FUN_1408392a0（接 (部位)）與 FUN_140839850／FUN_140839ca0（Eat／Drink 開頭）；inner，只在佔位裡
+dusting of {%1}	薄薄一層{1}	薄薄一层{1}	inner	FUN_140657f90 L877027-877171 沾染物描述：生物材料是「量詞 of 材料」，其他材料是「材料 量詞」（量詞依粉末／液體與量：specks、dusting、coating／spatter、smear、covering）；冒險動作選項 FUN_1408392a0（接 (部位)）與 FUN_140839850／FUN_140839ca0（Eat／Drink 開頭）；inner，只在佔位裡
+{%1} dusting	薄薄一層{1}	薄薄一层{1}	inner	FUN_140657f90 L877027-877171 沾染物描述：生物材料是「量詞 of 材料」，其他材料是「材料 量詞」（量詞依粉末／液體與量：specks、dusting、coating／spatter、smear、covering）；冒險動作選項 FUN_1408392a0（接 (部位)）與 FUN_140839850／FUN_140839ca0（Eat／Drink 開頭）；inner，只在佔位裡
+coating of {%1}	一層{1}	一层{1}	inner	FUN_140657f90 L877027-877171 沾染物描述：生物材料是「量詞 of 材料」，其他材料是「材料 量詞」（量詞依粉末／液體與量：specks、dusting、coating／spatter、smear、covering）；冒險動作選項 FUN_1408392a0（接 (部位)）與 FUN_140839850／FUN_140839ca0（Eat／Drink 開頭）；inner，只在佔位裡
+{%1} coating	一層{1}	一层{1}	inner	FUN_140657f90 L877027-877171 沾染物描述：生物材料是「量詞 of 材料」，其他材料是「材料 量詞」（量詞依粉末／液體與量：specks、dusting、coating／spatter、smear、covering）；冒險動作選項 FUN_1408392a0（接 (部位)）與 FUN_140839850／FUN_140839ca0（Eat／Drink 開頭）；inner，只在佔位裡
+spatter of {%1}	{1}汙漬	{1}污渍	inner	FUN_140657f90 L877027-877171 沾染物描述：生物材料是「量詞 of 材料」，其他材料是「材料 量詞」（量詞依粉末／液體與量：specks、dusting、coating／spatter、smear、covering）；冒險動作選項 FUN_1408392a0（接 (部位)）與 FUN_140839850／FUN_140839ca0（Eat／Drink 開頭）；inner，只在佔位裡
+{%1} spatter	{1}汙漬	{1}污渍	inner	FUN_140657f90 L877027-877171 沾染物描述：生物材料是「量詞 of 材料」，其他材料是「材料 量詞」（量詞依粉末／液體與量：specks、dusting、coating／spatter、smear、covering）；冒險動作選項 FUN_1408392a0（接 (部位)）與 FUN_140839850／FUN_140839ca0（Eat／Drink 開頭）；inner，只在佔位裡
+smear of {%1}	一抹{1}	一抹{1}	inner	FUN_140657f90 L877027-877171 沾染物描述：生物材料是「量詞 of 材料」，其他材料是「材料 量詞」（量詞依粉末／液體與量：specks、dusting、coating／spatter、smear、covering）；冒險動作選項 FUN_1408392a0（接 (部位)）與 FUN_140839850／FUN_140839ca0（Eat／Drink 開頭）；inner，只在佔位裡
+{%1} smear	一抹{1}	一抹{1}	inner	FUN_140657f90 L877027-877171 沾染物描述：生物材料是「量詞 of 材料」，其他材料是「材料 量詞」（量詞依粉末／液體與量：specks、dusting、coating／spatter、smear、covering）；冒險動作選項 FUN_1408392a0（接 (部位)）與 FUN_140839850／FUN_140839ca0（Eat／Drink 開頭）；inner，只在佔位裡
+covering of {%1}	覆滿的{1}	覆满的{1}	inner	FUN_140657f90 L877027-877171 沾染物描述：生物材料是「量詞 of 材料」，其他材料是「材料 量詞」（量詞依粉末／液體與量：specks、dusting、coating／spatter、smear、covering）；冒險動作選項 FUN_1408392a0（接 (部位)）與 FUN_140839850／FUN_140839ca0（Eat／Drink 開頭）；inner，只在佔位裡
+{%1} covering	覆滿的{1}	覆满的{1}	inner	FUN_140657f90 L877027-877171 沾染物描述：生物材料是「量詞 of 材料」，其他材料是「材料 量詞」（量詞依粉末／液體與量：specks、dusting、coating／spatter、smear、covering）；冒險動作選項 FUN_1408392a0（接 (部位)）與 FUN_140839850／FUN_140839ca0（Eat／Drink 開頭）；inner，只在佔位裡
+specks of {%1} ({%2})	點點{1}（{2}）	点点{1}（{2}）		FUN_140657f90 L877027-877171 沾染物描述：生物材料是「量詞 of 材料」，其他材料是「材料 量詞」（量詞依粉末／液體與量：specks、dusting、coating／spatter、smear、covering）；冒險動作選項 FUN_1408392a0（接 (部位)）與 FUN_140839850／FUN_140839ca0（Eat／Drink 開頭）：沒有動詞的選項，括號是部位
+{%1} specks ({%2})	點點{1}（{2}）	点点{1}（{2}）		FUN_140657f90 L877027-877171 沾染物描述：生物材料是「量詞 of 材料」，其他材料是「材料 量詞」（量詞依粉末／液體與量：specks、dusting、coating／spatter、smear、covering）；冒險動作選項 FUN_1408392a0（接 (部位)）與 FUN_140839850／FUN_140839ca0（Eat／Drink 開頭）：沒有動詞的選項，括號是部位
+dusting of {%1} ({%2})	薄層{1}（{2}）	薄层{1}（{2}）		FUN_140657f90 L877027-877171 沾染物描述：生物材料是「量詞 of 材料」，其他材料是「材料 量詞」（量詞依粉末／液體與量：specks、dusting、coating／spatter、smear、covering）；冒險動作選項 FUN_1408392a0（接 (部位)）與 FUN_140839850／FUN_140839ca0（Eat／Drink 開頭）：沒有動詞的選項，括號是部位；譯「薄層」：「薄薄一層」在 {%1} dusting ({%2}) 比原文寬
+{%1} dusting ({%2})	薄層{1}（{2}）	薄层{1}（{2}）		同上
+coating of {%1} ({%2})	一層{1}（{2}）	一层{1}（{2}）		FUN_140657f90 L877027-877171 沾染物描述：生物材料是「量詞 of 材料」，其他材料是「材料 量詞」（量詞依粉末／液體與量：specks、dusting、coating／spatter、smear、covering）；冒險動作選項 FUN_1408392a0（接 (部位)）與 FUN_140839850／FUN_140839ca0（Eat／Drink 開頭）：沒有動詞的選項，括號是部位
+{%1} coating ({%2})	一層{1}（{2}）	一层{1}（{2}）		FUN_140657f90 L877027-877171 沾染物描述：生物材料是「量詞 of 材料」，其他材料是「材料 量詞」（量詞依粉末／液體與量：specks、dusting、coating／spatter、smear、covering）；冒險動作選項 FUN_1408392a0（接 (部位)）與 FUN_140839850／FUN_140839ca0（Eat／Drink 開頭）：沒有動詞的選項，括號是部位
+spatter of {%1} ({%2})	{1}汙漬（{2}）	{1}污渍（{2}）		FUN_140657f90 L877027-877171 沾染物描述：生物材料是「量詞 of 材料」，其他材料是「材料 量詞」（量詞依粉末／液體與量：specks、dusting、coating／spatter、smear、covering）；冒險動作選項 FUN_1408392a0（接 (部位)）與 FUN_140839850／FUN_140839ca0（Eat／Drink 開頭）：沒有動詞的選項，括號是部位
+{%1} spatter ({%2})	{1}汙漬（{2}）	{1}污渍（{2}）		FUN_140657f90 L877027-877171 沾染物描述：生物材料是「量詞 of 材料」，其他材料是「材料 量詞」（量詞依粉末／液體與量：specks、dusting、coating／spatter、smear、covering）；冒險動作選項 FUN_1408392a0（接 (部位)）與 FUN_140839850／FUN_140839ca0（Eat／Drink 開頭）：沒有動詞的選項，括號是部位
+smear of {%1} ({%2})	一抹{1}（{2}）	一抹{1}（{2}）		FUN_140657f90 L877027-877171 沾染物描述：生物材料是「量詞 of 材料」，其他材料是「材料 量詞」（量詞依粉末／液體與量：specks、dusting、coating／spatter、smear、covering）；冒險動作選項 FUN_1408392a0（接 (部位)）與 FUN_140839850／FUN_140839ca0（Eat／Drink 開頭）：沒有動詞的選項，括號是部位
+{%1} smear ({%2})	一抹{1}（{2}）	一抹{1}（{2}）		FUN_140657f90 L877027-877171 沾染物描述：生物材料是「量詞 of 材料」，其他材料是「材料 量詞」（量詞依粉末／液體與量：specks、dusting、coating／spatter、smear、covering）；冒險動作選項 FUN_1408392a0（接 (部位)）與 FUN_140839850／FUN_140839ca0（Eat／Drink 開頭）：沒有動詞的選項，括號是部位
+covering of {%1} ({%2})	覆滿的{1}（{2}）	覆满的{1}（{2}）		FUN_140657f90 L877027-877171 沾染物描述：生物材料是「量詞 of 材料」，其他材料是「材料 量詞」（量詞依粉末／液體與量：specks、dusting、coating／spatter、smear、covering）；冒險動作選項 FUN_1408392a0（接 (部位)）與 FUN_140839850／FUN_140839ca0（Eat／Drink 開頭）：沒有動詞的選項，括號是部位
+{%1} covering ({%2})	覆滿的{1}（{2}）	覆满的{1}（{2}）		FUN_140657f90 L877027-877171 沾染物描述：生物材料是「量詞 of 材料」，其他材料是「材料 量詞」（量詞依粉末／液體與量：specks、dusting、coating／spatter、smear、covering）；冒險動作選項 FUN_1408392a0（接 (部位)）與 FUN_140839850／FUN_140839ca0（Eat／Drink 開頭）：沒有動詞的選項，括號是部位
+Eat {%1} ({%2})	吃{1}（{2}）	吃{1}（{2}）		FUN_140839850／FUN_140839ca0 L1178967-1179197 冒險動作：Eat＋沾染物（FUN_140657f90，上面的 inner 量詞句型）＋ (部位)；譯「吃」不譯「吃掉」：原文 Eat 只有 3 格，「吃掉」連括號會比原文寬
+Drink {%1} ({%2})	喝下{1}（{2}）	喝下{1}（{2}）		FUN_140839850／FUN_140839ca0 L1178967-1179197 冒險動作：Drink＋沾染物（FUN_140657f90，上面的 inner 量詞句型）＋ (部位)
+Woe unto any that disturb the resting place of {1} / The {%2} of {3} is with {4} but watches still	驚擾{1}安息之所者必遭禍殃／{3}的{2}雖已與{4}同在，仍在守望	惊扰{1}安息之所者必遭祸殃／{3}的{2}虽已与{4}同在，仍在守望		FUN_140fd9120 L2358290-2358362 墓室石板刻文（世界生成時寫入石板；畫在物品說明）：Woe unto…of＋名字［ / The＋職位（每字大寫）［ of 據點］［ is with＋神名＋ but］ watches still］
+Woe unto any that disturb the resting place of {1} / The {%2} is with {3} but watches still	驚擾{1}安息之所者必遭禍殃／{2}雖已與{3}同在，仍在守望	惊扰{1}安息之所者必遭祸殃／{2}虽已与{3}同在，仍在守望		FUN_140fd9120 L2358290-2358362 墓室石板刻文（世界生成時寫入石板；畫在物品說明）：Woe unto…of＋名字［ / The＋職位（每字大寫）［ of 據點］［ is with＋神名＋ but］ watches still］
+Woe unto any that disturb the resting place of {1} / The {%2} of {3} watches still	驚擾{1}安息之所者必遭禍殃／{3}的{2}仍在守望	惊扰{1}安息之所者必遭祸殃／{3}的{2}仍在守望		FUN_140fd9120 L2358290-2358362 墓室石板刻文（世界生成時寫入石板；畫在物品說明）：Woe unto…of＋名字［ / The＋職位（每字大寫）［ of 據點］［ is with＋神名＋ but］ watches still］
+Woe unto any that disturb the resting place of {1} / The {%2} watches still	驚擾{1}安息之所者必遭禍殃／{2}仍在守望	惊扰{1}安息之所者必遭祸殃／{2}仍在守望		FUN_140fd9120 L2358290-2358362 墓室石板刻文（世界生成時寫入石板；畫在物品說明）：Woe unto…of＋名字［ / The＋職位（每字大寫）［ of 據點］［ is with＋神名＋ but］ watches still］
+Woe unto any that disturb the resting place of {1}	驚擾{1}安息之所者必遭禍殃	惊扰{1}安息之所者必遭祸殃		FUN_140fd9120 L2358290-2358362 墓室石板刻文（世界生成時寫入石板；畫在物品說明）：Woe unto…of＋名字［ / The＋職位（每字大寫）［ of 據點］［ is with＋神名＋ but］ watches still］：找不到職位時只有前半

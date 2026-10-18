@@ -1,2 +1,5 @@
 en	zh-Hant	zh-Hans	align	row	note
 Loaded	已裝填	已装填			FUN_14039ac20 L469946 攻城器械清單（UI6）；全域是 DFHack 的「已載入」
+Still	釀酒	酿酒			FUN_14054fa20 資訊面板「設施」→「工坊」清單：沒有自訂名稱的工坊名（getName）；同建造選單、建築頁的依畫面譯文；全域只有 fort_2 的 inner「釀酒坊」（字串檔不能有兩條不同譯文）
+Loom	織機	织机			同上；全域只有 inner「織布機」
+Fishery	漁獲	渔获			同上；全域只有 inner「漁獲處理」

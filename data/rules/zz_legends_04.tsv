@@ -39,6 +39,18 @@ specter of {%1}	{1}之幽靈	{1}之幽灵		creatures.lua 481-510 惡魔：名詞
 {@1} specter	{1}幽靈	{1}幽灵		creatures.lua 481-510 惡魔：rcp 名／flavor_adj／name_mat＋名詞（490-506）
 wraith of {%1}	{1}之亡靈	{1}之亡灵		creatures.lua 481-510 惡魔：名詞 of name_mat／結尾片語（486、499）
 {@1} wraith	{1}亡靈	{1}亡灵		creatures.lua 481-510 惡魔：rcp 名／flavor_adj／name_mat＋名詞（490-506）
+{@1} Demon	{1}惡魔	{1}恶魔		同上，生物清單、職業欄每個字大寫（Chameleon Demon）：句型的固定字照大小寫比，大寫寫法另寫一份；{@1} 照常退回小寫查
+{@1} Devil	{1}魔鬼	{1}魔鬼		同上
+{@1} Fiend	{1}惡鬼	{1}恶鬼		同上（Weasel Fiend）
+{@1} Brute	{1}蠻獸	{1}蛮兽		同上（Theropod Brute）
+{@1} Monster	{1}怪物	{1}怪物		同上
+{@1} Spirit	{1}靈體	{1}灵体		同上
+{@1} Ghost	{1}鬼魂	{1}鬼魂		同上
+{@1} Banshee	{1}報喪女妖	{1}报丧女妖		同上
+{@1} Haunt	{1}怨靈	{1}怨灵		同上
+{@1} Phantom	{1}魅影	{1}魅影		同上
+{@1} Specter	{1}幽靈	{1}幽灵		同上（Red Specter）
+{@1} Wraith	{1}亡靈	{1}亡灵		同上
 {@1} bone servant	{1}骸骨僕從	{1}骸骨仆从		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
 {@1} dark servant	{1}黑暗僕從	{1}黑暗仆从		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
 {@1} noon servant	{1}正午僕從	{1}正午仆从		FUN_140c2b870 人物頁 種族＋curse 顯示名；mythical.lua 263-286 顯示名（整句條目的種族組合，寫在通用句型前）
@@ -365,6 +377,9 @@ elder of {%1}	{1}長老	{1}长老		mythical.lua 263-286 顯示名：名詞 of �
 {@1} necromancer	{1}死靈法師	{1}死灵法师		interactions/secret.lua 148 CE_DISPLAY_NAME；人物頁 FUN_140c2b870 寫成 種族＋顯示名
 {@1} vampire	{1}吸血鬼	{1}吸血鬼		interactions/curse.lua 91 CE_DISPLAY_NAME；人物頁 FUN_140c2b870 寫成 種族＋顯示名
 {@1} mummy	{1}木乃伊	{1}木乃伊		interactions/disturbance.lua 88 CE_DISPLAY_NAME；人物頁 FUN_140c2b870 寫成 種族＋顯示名
+were{@1} {@2}	{1}獸化人{2}	{1}兽化人{2}		獸化人＋職業（沒有名字的單位「種族 職業」）：排在 were{%1} 前面，免得「werecat crossbowman」被拆成「貓弩手獸化人」；{@1} rcp 名、{@2} 職業
+Were{@1} {@2}	{1}獸化人{2}	{1}兽化人{2}		同上，生物清單每個字大寫（Wereape Crossbowman）
+Were{@1}	{1}獸化人	{1}兽化人		獸化人稱呼首字大寫（Wereape）；{@1} 只收字典裡的 rcp 名，句首的 Were you… 不會被比走
 were{%1}	{1}獸化人	{1}兽化人		creatures.lua 1248 獸化人稱呼＝were＋rcp 名（連寫）；譯名沿用 settings_ann 的 Werebeast 獸化人
 {1}'s Angel	{1}之天使	{1}之天使		creatures.lua 2003-2078 天使：神名／領域名詞's 名詞（2070）
 Angel of {1}	{1}之天使	{1}之天使		creatures.lua 2003-2078 天使：名詞 of 神的稱號／領域名詞（2073）

@@ -63,6 +63,7 @@ type Word = (u8, u8, Box<[u8]>);
 
 /// 遊戲組過的英文名：開頭照原文的原名、綽號（head，不含結尾的空白；沒有原名時是空的）、字表的字，
 /// 以及遊戲是不是只輸出了第一段（複合字，見 compose）。存字的代號不存中文，切換語言後照新的字表組
+#[derive(Clone)]
 struct Name {
     head: Box<[u8]>,
     words: Box<[Word]>,
@@ -111,10 +112,9 @@ pub fn load_words(content: &str) -> usize {
     table.word_count()
 }
 
-/// 書名的隨機字：名詞（單數或複數）或形容詞的英文詞形的中文。遊戲把書名的隨機字每個字改大寫開頭（FUN_14052d3c0），
-/// 小寫開頭的不收（介面字串 `good food`、`new moon` 不會被書名樣板 `{=1} {$2}` 比走），其餘字母不分大小寫。
-pub fn word_form(form: &[u8], adj: bool) -> Option<String> {
-    if form.len() > 64 || form.contains(&b' ') || !form.first().is_some_and(u8::is_ascii_uppercase) {
+/// 字表的英文詞形（名詞單數或複數、形容詞）的中文，字母不分大小寫。
+fn form_zh(form: &[u8], adj: bool) -> Option<String> {
+    if form.len() > 64 || form.contains(&b' ') {
         return None;
     }
     let mut buf = [0u8; 64];
@@ -122,6 +122,18 @@ pub fn word_form(form: &[u8], adj: bool) -> Option<String> {
     lower.copy_from_slice(form);
     lower.make_ascii_lowercase();
     FORMS.read().as_ref()?[usize::from(adj)].get(&*lower).cloned()
+}
+
+/// 書名的隨機字：名詞（單數或複數）或形容詞的英文詞形的中文。遊戲把書名的隨機字每個字改大寫開頭（FUN_14052d3c0），
+/// 小寫開頭的不收（介面字串 `good food`、`new moon` 不會被書名樣板 `{=1} {$2}` 比走）。
+pub fn word_form(form: &[u8], adj: bool) -> Option<String> {
+    form.first().is_some_and(u8::is_ascii_uppercase).then(|| form_zh(form, adj)).flatten()
+}
+
+/// 程序生成的職位名裡的名詞（神殿職位「sacred torch」：FUN_140bd5c30 拿職位名字的 the 名詞，前面隨機接 holy、sacred）：
+/// 字表名詞的英文詞形，小寫開頭才收。
+pub fn lower_noun(form: &[u8]) -> Option<String> {
+    form.first().is_some_and(u8::is_ascii_lowercase).then(|| form_zh(form, false)).flatten()
 }
 
 /// 測試用：只設書名的隨機字（字表 WORDS 給名稱的測試設）。先設的算數，各測試共用。
@@ -439,8 +451,25 @@ pub unsafe fn note(name: usize, out: &[u8]) {
     if WORDS.read().as_deref().is_none_or(|table| chinese(table, &words, first).is_none()) {
         return;
     }
-    let words = words.into_iter().filter(|w| !first || w.0 < 2).collect();
+    let words: Box<[Word]> = words.into_iter().filter(|w| !first || w.0 < 2).collect();
+    // 以 the 片語開頭的名字，有些畫面去掉開頭的 The 才畫（貴族畫面的小隊名「Spears of Obeying」）：去掉的寫法一起登記
+    if head.is_empty() && !first && en.starts_with(b"the ") && out.len() > 4 && out[..4].eq_ignore_ascii_case(b"the ") {
+        register(&out[4..], Name { head: head.into(), words: words.clone(), first });
+    }
     register(out, Name { head: head.into(), words, first });
+}
+
+/// 讀檔時預先登記（Lua 的 note_name，世界裡的名字一次登記）：登記到上限的一半就停，留一半給遊戲之後組的名字
+/// （滿了整張清掉，見 register）。回傳還能不能再登記
+///
+/// # Safety
+/// `name` 要是遊戲裡一個 language_name 的位址（同 note，照 NAME_LAYOUT 讀字號）
+pub unsafe fn preload(name: usize, out: &[u8]) -> bool {
+    if NAMES.lock().len() >= NAMES_LIMIT / 2 {
+        return false;
+    }
+    unsafe { note(name, out) };
+    true
 }
 
 #[cfg(test)]
@@ -531,6 +560,7 @@ mod tests {
             let n = name([-1, -1, -1, -1, -1, 2, 3], [0, 0, 0, 0, 0, 0, 0]);
             note(&raw const n as usize, b"The Planet of Destiny");
             assert_eq!(get(b"The Planet of Destiny").as_deref(), Some("命運之星"));
+            assert_eq!(get(b"Planet of Destiny").as_deref(), Some("命運之星"), "去掉開頭 The 的寫法（貴族畫面的小隊名）也查得到");
             // 人物：原名照原文、空一格接中文
             let n = name([-1, -1, 4, -1, -1, 5, -1], [0, 0, 2, 0, 0, 0, 0]);
             note(&raw const n as usize, b"Urist the Bronze Guild");

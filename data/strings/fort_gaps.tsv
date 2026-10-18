@@ -1,0 +1,24 @@
+en	zh-Hant	zh-Hans	align	note
+ - mine rock underground	 - 到地下開採岩石	 - 到地下开采岩石		FUN_140406170 L520864-520898 放建築時的問題清單：需要的物品（Needs …）下一行單獨推一條取得提示（L520864）
+ - chop down trees	 - 砍伐樹木	 - 砍伐树木		FUN_140406170 L520864-520898 放建築時的問題清單：需要的物品（Needs …）下一行單獨推一條取得提示（L520886）
+ - make at a workshop first	 - 先在工坊製作	 - 先在工坊制作		FUN_140406170 L520864-520898 放建築時的問題清單：需要的物品（Needs …）下一行單獨推一條取得提示（L520892）
+ - mine rock or chop trees	 - 開採岩石或砍伐樹木	 - 开采岩石或砍伐树木		FUN_140406170 L520864-520898 放建築時的問題清單：需要的物品（Needs …）下一行單獨推一條取得提示（L520898）
+(Vehicle moved to next stop if any condition triggered.)	（任一條件成立時，車輛就前往下一站。）	（任一条件满足时，车辆就前往下一站。）		FUN_14041d490 L536146 搬運路線站點條件畫面的說明
+immediately	立即	立即	inner	FUN_14041d490 L536331-536502 搬運路線站點條件（fn_addst）：方式＋方向＋時限＋載貨條件＋ of ＋物品：時限（L536396），接在 rules/fort_gaps.tsv 的條件句型裡
+in 1 day	1 天後	1 天后	inner	FUN_14041d490 L536331-536502 搬運路線站點條件（fn_addst）：方式＋方向＋時限＋載貨條件＋ of ＋物品：時限（L536400）
+desired items	所需物品	所需物品		FUN_14041d490 L536331-536502 搬運路線站點條件（fn_addst）：方式＋方向＋時限＋載貨條件＋ of ＋物品：物品（L536493）；any items 已有「任何物品」
+1 day	1 天	1 天		FUN_14041d490 L536331-536502 搬運路線站點條件（fn_addst）：方式＋方向＋時限＋載貨條件＋ of ＋物品：條件下一行的時間（L536509）；原本由 {#1} {@2} 拼成「1 白晝」（day 在 speech_01 是神祇領域「白晝」），整條寫出
+Deny	拒絕	拒绝		FUN_140418680 L533626 請願畫面按鈕（立即值 0x796e6544，fn_addst）；同畫面 Accept 已譯「接受」；全域條目，焦點未實機確認
+Symbol	標誌	标志		FUN_14043a110 L557549 小隊／活動區／細部的符號選擇視窗分頁（立即值，fn_addst）；同視窗標題 Choose a symbol for … 譯「標誌」；全域條目，焦點未實機確認；術語例外：symbol
+No Ingredients	沒有食材	没有食材		FUN_140431ea0 L550968 勞動＞廚房（立即值，vtable +0x40 設文字）；同函式 You have no appropriate ingredients. 已翻
+Lumber limits	伐木限額	伐木限额		FUN_140ac7950 L1574318＋FUN_1401c17e0 L233798 世界畫面協議清單：協議種類名（首字由 FUN_14052d650 改大寫，單獨 fn_addst）
+Upright Weapon	直立武器	直立武器		FUN_140554270 L708691-708752 直立武器陷阱的建築名（getName，沒有自訂名時）：Upright／Retracted＋武器種類；沒有武器時
+Upright Spikes	直立尖刺	直立尖刺		FUN_140554270 L708731 同上：兩件以上、全是尖刺
+Upright Spears	直立長矛	直立长矛		FUN_140554270 L708739 同上：兩件以上、全是長矛
+Upright Spears/Spikes	直立長矛／尖刺	直立长矛/尖刺		FUN_140554270 L708735 同上：長矛與尖刺混裝；寫法同 ui_10 的 Upright Spear/Spike
+Retracted Weapon	收起的武器	收起的武器		FUN_140554270 L708691 同上：已收起（拉桿收回）
+Retracted Spikes	收起的尖刺	收起的尖刺		FUN_140554270 同上
+Retracted Spears	收起的長矛	收起的长矛		FUN_140554270 同上
+Retracted Spears/Spikes	收起的長矛／尖刺	收起的长矛/尖刺		FUN_140554270 同上
+We respect that this is no mere trade.	我們明白這不是普通的買賣。	我们明白这不是普通的买卖。		FUN_14036a9c0 L433560 交易畫面：交出神器時商人的話（整句在 rules/fort_gaps.tsv；這條給遊戲依 68 字切行後單獨成行的情況）；術語例外：Trade
+Villains!	惡棍！	恶棍！		FUN_14036a9c0 L433574 交易畫面：神器被奪時商人的話（同上）

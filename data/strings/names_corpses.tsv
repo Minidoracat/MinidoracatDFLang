@@ -1,0 +1,13 @@
+en	zh-Hant	zh-Hans	align	note
+skeleton	骨骸	骨骸		FUN_140ca10e0 L1885195-1885306（屍體）／FUN_140ca1aa0 L1885615-1885993（屍塊）：屍體只剩骨頭時的名詞（立即值 0x6e6f74656c656b73）；同 buildings_1 的 skeletons
+partial remains	部分遺骸	部分遗骸		FUN_140ca10e0 L1885195-1885306（屍體）／FUN_140ca1aa0 L1885615-1885993（屍塊）：屍體缺了軀幹（根部位）時的名詞；remains 同 props_01「遺骸」
+partial skeleton	殘缺骨骸	残缺骨骸	inner	FUN_140ca10e0 L1885195-1885306（屍體）／FUN_140ca1aa0 L1885615-1885993（屍塊）：FUN_140ca10e0 缺部位的骨骸（partial ＋ skeleton）；只給句型佔位用（{1}的{2}、損毀{2}）
+mutilated corpse	殘缺屍體	残缺尸体	inner	FUN_140ca10e0 L1885195-1885306（屍體）／FUN_140ca1aa0 L1885615-1885993（屍塊）：缺部位的屍體（mutilated ＋ corpse）；只給句型佔位用
+mutilated corpses	殘缺屍體	残缺尸体	inner	FUN_140ca10e0 L1885195-1885306（屍體）／FUN_140ca1aa0 L1885615-1885993（屍塊）：同上，複數
+your skeleton	你的骨骸	你的骨骸		FUN_140ca10e0 L1885195-1885306（屍體）／FUN_140ca1aa0 L1885615-1885993（屍塊）：冒險者自己的屍塊（FUN_140ca1aa0 L1885615 your ）＋名詞
+your skeletons	你的骨骸	你的骨骸		FUN_140ca10e0 L1885195-1885306（屍體）／FUN_140ca1aa0 L1885615-1885993（屍塊）：冒險者自己的屍塊（FUN_140ca1aa0 L1885615 your ）＋名詞
+your corpse	你的屍體	你的尸体		FUN_140ca10e0 L1885195-1885306（屍體）／FUN_140ca1aa0 L1885615-1885993（屍塊）：冒險者自己的屍塊（FUN_140ca1aa0 L1885615 your ）＋名詞
+your corpses	你的屍體	你的尸体		FUN_140ca10e0 L1885195-1885306（屍體）／FUN_140ca1aa0 L1885615-1885993（屍塊）：冒險者自己的屍塊（FUN_140ca1aa0 L1885615 your ）＋名詞
+your partial remains	你的部分遺骸	你的部分遗骸		FUN_140ca10e0 L1885195-1885306（屍體）／FUN_140ca1aa0 L1885615-1885993（屍塊）：冒險者自己的屍塊（FUN_140ca1aa0 L1885615 your ）＋名詞
+your partial skeleton	你的殘缺骨骸	你的残缺骨骸		FUN_140ca10e0 L1885195-1885306（屍體）／FUN_140ca1aa0 L1885615-1885993（屍塊）：冒險者自己的屍塊（FUN_140ca1aa0 L1885615 your ）＋名詞
+your mutilated corpse	你的殘缺屍體	你的残缺尸体		FUN_140ca10e0 L1885195-1885306（屍體）／FUN_140ca1aa0 L1885615-1885993（屍塊）：冒險者自己的屍塊（FUN_140ca1aa0 L1885615 your ）＋名詞

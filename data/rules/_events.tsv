@@ -7117,8 +7117,20 @@ In a time before time, {1} fled into the area around {2}.	太古之時，{1}逃�
 In {#1}, {2} fled into {3}.	{1}年，{2}逃入{3}。	{1}年，{2}逃入{3}。		自動產生（scripts/gen_events.py）：04.tsv {1} fled into {2}.
 In the {@1} of {#2}, {3} fled into {4}.	{2}年{1}，{3}逃入{4}。	{2}年{1}，{3}逃入{4}。		自動產生（scripts/gen_events.py）：04.tsv {1} fled into {2}.
 In a time before time, {1} fled into {2}.	太古之時，{1}逃入{2}。	太古之时，{1}逃入{2}。		自動產生（scripts/gen_events.py）：04.tsv {1} fled into {2}.
+In {#1}, refugees calling themselves {2} fled from the area just before an army of {3} led by {4} descended upon {5}.	{1}年，自稱{2}的難民在{4}率領的{3}軍隊進犯{5}之前逃離了該地。	{1}年，自称{2}的难民在{4}率领的{3}军队进犯{5}之前逃离了该地。		自動產生（scripts/gen_events.py）：world_sites.tsv refugees calling themselves {1} fled from the area just before an army of {2} led by {3} descended upon {4}.
+In {#1}, refugees calling themselves {2} fled from the area just before an army led by {3} descended upon {4}.	{1}年，自稱{2}的難民在{3}率領的軍隊進犯{4}之前逃離了該地。	{1}年，自称{2}的难民在{3}率领的军队进犯{4}之前逃离了该地。		自動產生（scripts/gen_events.py）：world_sites.tsv refugees calling themselves {1} fled from the area just before an army led by {2} descended upon {3}.
+In {#1}, refugees calling themselves {2} fled from the area just before an army of {3} descended upon {4}.	{1}年，自稱{2}的難民在{3}的軍隊進犯{4}之前逃離了該地。	{1}年，自称{2}的难民在{3}的军队进犯{4}之前逃离了该地。		自動產生（scripts/gen_events.py）：world_sites.tsv refugees calling themselves {1} fled from the area just before an army of {2} descended upon {3}.
+In {#1}, refugees calling themselves {2} fled from the area just before an army descended upon {3}.	{1}年，自稱{2}的難民在一支軍隊進犯{3}之前逃離了該地。	{1}年，自称{2}的难民在一支军队进犯{3}之前逃离了该地。		自動產生（scripts/gen_events.py）：world_sites.tsv refugees calling themselves {1} fled from the area just before an army descended upon {2}.
 In {#1}, {2} fled {3}.	{1}年，{2}逃離了{3}。	{1}年，{2}逃离了{3}。		自動產生（scripts/gen_events.py）：04.tsv {1} fled {2}.
+In the {@1} of {#2}, refugees calling themselves {3} fled from the area just before an army of {4} led by {5} descended upon {6}.	{2}年{1}，自稱{3}的難民在{5}率領的{4}軍隊進犯{6}之前逃離了該地。	{2}年{1}，自称{3}的难民在{5}率领的{4}军队进犯{6}之前逃离了该地。		自動產生（scripts/gen_events.py）：world_sites.tsv refugees calling themselves {1} fled from the area just before an army of {2} led by {3} descended upon {4}.
+In the {@1} of {#2}, refugees calling themselves {3} fled from the area just before an army led by {4} descended upon {5}.	{2}年{1}，自稱{3}的難民在{4}率領的軍隊進犯{5}之前逃離了該地。	{2}年{1}，自称{3}的难民在{4}率领的军队进犯{5}之前逃离了该地。		自動產生（scripts/gen_events.py）：world_sites.tsv refugees calling themselves {1} fled from the area just before an army led by {2} descended upon {3}.
+In the {@1} of {#2}, refugees calling themselves {3} fled from the area just before an army of {4} descended upon {5}.	{2}年{1}，自稱{3}的難民在{4}的軍隊進犯{5}之前逃離了該地。	{2}年{1}，自称{3}的难民在{4}的军队进犯{5}之前逃离了该地。		自動產生（scripts/gen_events.py）：world_sites.tsv refugees calling themselves {1} fled from the area just before an army of {2} descended upon {3}.
+In the {@1} of {#2}, refugees calling themselves {3} fled from the area just before an army descended upon {4}.	{2}年{1}，自稱{3}的難民在一支軍隊進犯{4}之前逃離了該地。	{2}年{1}，自称{3}的难民在一支军队进犯{4}之前逃离了该地。		自動產生（scripts/gen_events.py）：world_sites.tsv refugees calling themselves {1} fled from the area just before an army descended upon {2}.
 In the {@1} of {#2}, {3} fled {4}.	{2}年{1}，{3}逃離了{4}。	{2}年{1}，{3}逃离了{4}。		自動產生（scripts/gen_events.py）：04.tsv {1} fled {2}.
+In a time before time, refugees calling themselves {1} fled from the area just before an army of {2} led by {3} descended upon {4}.	太古之時，自稱{1}的難民在{3}率領的{2}軍隊進犯{4}之前逃離了該地。	太古之时，自称{1}的难民在{3}率领的{2}军队进犯{4}之前逃离了该地。		自動產生（scripts/gen_events.py）：world_sites.tsv refugees calling themselves {1} fled from the area just before an army of {2} led by {3} descended upon {4}.
+In a time before time, refugees calling themselves {1} fled from the area just before an army led by {2} descended upon {3}.	太古之時，自稱{1}的難民在{2}率領的軍隊進犯{3}之前逃離了該地。	太古之时，自称{1}的难民在{2}率领的军队进犯{3}之前逃离了该地。		自動產生（scripts/gen_events.py）：world_sites.tsv refugees calling themselves {1} fled from the area just before an army led by {2} descended upon {3}.
+In a time before time, refugees calling themselves {1} fled from the area just before an army of {2} descended upon {3}.	太古之時，自稱{1}的難民在{2}的軍隊進犯{3}之前逃離了該地。	太古之时，自称{1}的难民在{2}的军队进犯{3}之前逃离了该地。		自動產生（scripts/gen_events.py）：world_sites.tsv refugees calling themselves {1} fled from the area just before an army of {2} descended upon {3}.
+In a time before time, refugees calling themselves {1} fled from the area just before an army descended upon {2}.	太古之時，自稱{1}的難民在一支軍隊進犯{2}之前逃離了該地。	太古之时，自称{1}的难民在一支军队进犯{2}之前逃离了该地。		自動產生（scripts/gen_events.py）：world_sites.tsv refugees calling themselves {1} fled from the area just before an army descended upon {2}.
 In a time before time, {1} fled {2}.	太古之時，{1}逃離了{2}。	太古之时，{1}逃离了{2}。		自動產生（scripts/gen_events.py）：04.tsv {1} fled {2}.
 In {#1}, the forces of {2} searched {3} and found nothing.	{1}年，{2}的部隊搜索了{3}，一無所獲。	{1}年，{2}的部队搜索了{3}，一无所获。		自動產生（scripts/gen_events.py）：04.tsv the forces of {1} searched {2} and found nothing.
 In the {@1} of {#2}, the forces of {3} searched {4} and found nothing.	{2}年{1}，{3}的部隊搜索了{4}，一無所獲。	{2}年{1}，{3}的部队搜索了{4}，一无所获。		自動產生（scripts/gen_events.py）：04.tsv the forces of {1} searched {2} and found nothing.
@@ -7669,8 +7681,11 @@ In a time before time, {1} of {2} founded {3}.	太古之時，{2}的{1}建立了
 In {#1}, {2} founded {3} for {4}.	{1}年，{2}為{4}建立了{3}。	{1}年，{2}为{4}建立了{3}。		自動產生（scripts/gen_events.py）：05.tsv {1} founded {2} for {3}.
 In the {@1} of {#2}, {3} founded {4} for {5}.	{2}年{1}，{3}為{5}建立了{4}。	{2}年{1}，{3}为{5}建立了{4}。		自動產生（scripts/gen_events.py）：05.tsv {1} founded {2} for {3}.
 In a time before time, {1} founded {2} for {3}.	太古之時，{1}為{3}建立了{2}。	太古之时，{1}为{3}建立了{2}。		自動產生（scripts/gen_events.py）：05.tsv {1} founded {2} for {3}.
+In {#1}, a group calling itself {2} founded {3} after a long journey from the lands of {4}.	{1}年，自稱{2}的團體從{4}的領地長途跋涉而來，建立了{3}。	{1}年，自称{2}的团体从{4}的领地长途跋涉而来，建立了{3}。		自動產生（scripts/gen_events.py）：world_sites.tsv a group calling itself {1} founded {2} after a long journey from the lands of {3}.
 In {#1}, {2} founded {3}.	{1}年，{2}建立了{3}。	{1}年，{2}建立了{3}。		自動產生（scripts/gen_events.py）：05.tsv {1} founded {2}.
+In the {@1} of {#2}, a group calling itself {3} founded {4} after a long journey from the lands of {5}.	{2}年{1}，自稱{3}的團體從{5}的領地長途跋涉而來，建立了{4}。	{2}年{1}，自称{3}的团体从{5}的领地长途跋涉而来，建立了{4}。		自動產生（scripts/gen_events.py）：world_sites.tsv a group calling itself {1} founded {2} after a long journey from the lands of {3}.
 In the {@1} of {#2}, {3} founded {4}.	{2}年{1}，{3}建立了{4}。	{2}年{1}，{3}建立了{4}。		自動產生（scripts/gen_events.py）：05.tsv {1} founded {2}.
+In a time before time, a group calling itself {1} founded {2} after a long journey from the lands of {3}.	太古之時，自稱{1}的團體從{3}的領地長途跋涉而來，建立了{2}。	太古之时，自称{1}的团体从{3}的领地长途跋涉而来，建立了{2}。		自動產生（scripts/gen_events.py）：world_sites.tsv a group calling itself {1} founded {2} after a long journey from the lands of {3}.
 In a time before time, {1} founded {2}.	太古之時，{1}建立了{2}。	太古之时，{1}建立了{2}。		自動產生（scripts/gen_events.py）：05.tsv {1} founded {2}.
 In {#1}, {2} of {3} created {4} for {5}.	{1}年，{3}的{2}為{5}創造了{4}。	{1}年，{3}的{2}为{5}创造了{4}。		自動產生（scripts/gen_events.py）：05.tsv {1} of {2} created {3} for {4}.
 In the {@1} of {#2}, {3} of {4} created {5} for {6}.	{2}年{1}，{4}的{3}為{6}創造了{5}。	{2}年{1}，{4}的{3}为{6}创造了{5}。		自動產生（scripts/gen_events.py）：05.tsv {1} of {2} created {3} for {4}.
@@ -7744,8 +7759,11 @@ In a time before time, {1} constructed {2} for {3}.	太古之時，{1}為{3}建�
 In {#1}, {2} constructed {3}.	{1}年，{2}建造了{3}。	{1}年，{2}建造了{3}。		自動產生（scripts/gen_events.py）：05.tsv {1} constructed {2}.
 In the {@1} of {#2}, {3} constructed {4}.	{2}年{1}，{3}建造了{4}。	{2}年{1}，{3}建造了{4}。		自動產生（scripts/gen_events.py）：05.tsv {1} constructed {2}.
 In a time before time, {1} constructed {2}.	太古之時，{1}建造了{2}。	太古之时，{1}建造了{2}。		自動產生（scripts/gen_events.py）：05.tsv {1} constructed {2}.
+In {#1}, an insurrection against {2} began in {3}.	{1}年，{3}爆發了反抗{2}的叛亂。	{1}年，{3}爆发了反抗{2}的叛乱。		自動產生（scripts/gen_events.py）：world_sites.tsv an insurrection against {1} began in {2}.
 In {#1}, an insurrection against{2} began in {3}.	{1}年，{3}爆發了反抗{2}的叛亂。	{1}年，{3}爆发了反抗{2}的叛乱。		自動產生（scripts/gen_events.py）：05.tsv an insurrection against{1} began in {2}.
+In the {@1} of {#2}, an insurrection against {3} began in {4}.	{2}年{1}，{4}爆發了反抗{3}的叛亂。	{2}年{1}，{4}爆发了反抗{3}的叛乱。		自動產生（scripts/gen_events.py）：world_sites.tsv an insurrection against {1} began in {2}.
 In the {@1} of {#2}, an insurrection against{3} began in {4}.	{2}年{1}，{4}爆發了反抗{3}的叛亂。	{2}年{1}，{4}爆发了反抗{3}的叛乱。		自動產生（scripts/gen_events.py）：05.tsv an insurrection against{1} began in {2}.
+In a time before time, an insurrection against {1} began in {2}.	太古之時，{2}爆發了反抗{1}的叛亂。	太古之时，{2}爆发了反抗{1}的叛乱。		自動產生（scripts/gen_events.py）：world_sites.tsv an insurrection against {1} began in {2}.
 In a time before time, an insurrection against{1} began in {2}.	太古之時，{2}爆發了反抗{1}的叛亂。	太古之时，{2}爆发了反抗{1}的叛乱。		自動產生（scripts/gen_events.py）：05.tsv an insurrection against{1} began in {2}.
 In {#1}, an insurrection began in {2}.	{1}年，{2}爆發了叛亂。	{1}年，{2}爆发了叛乱。		自動產生（scripts/gen_events.py）：05.tsv an insurrection began in {1}.
 In the {@1} of {#2}, an insurrection began in {3}.	{2}年{1}，{3}爆發了叛亂。	{2}年{1}，{3}爆发了叛乱。		自動產生（scripts/gen_events.py）：05.tsv an insurrection began in {1}.
@@ -10156,6 +10174,99 @@ In a time before time, {1} was bent toward supernatural vengeance upon {2}.	太�
 In {#1}, {2} recognized {3} as a capable and connected lieutenant with more autonomy to act on plots in the web of intrigue.	{1}年，{2}認可{3}是能幹又有人脈的副將，讓其在陰謀網中有更多自主行事的空間。	{1}年，{2}认可{3}是能干又有人脉的副将，让其在阴谋网中有更多自主行事的空间。		自動產生（scripts/gen_events.py）：21.tsv {1} recognized {2} as a capable and connected lieutenant with more autonomy to act on plots in the web of intrigue.
 In the {@1} of {#2}, {3} recognized {4} as a capable and connected lieutenant with more autonomy to act on plots in the web of intrigue.	{2}年{1}，{3}認可{4}是能幹又有人脈的副將，讓其在陰謀網中有更多自主行事的空間。	{2}年{1}，{3}认可{4}是能干又有人脉的副将，让其在阴谋网中有更多自主行事的空间。		自動產生（scripts/gen_events.py）：21.tsv {1} recognized {2} as a capable and connected lieutenant with more autonomy to act on plots in the web of intrigue.
 In a time before time, {1} recognized {2} as a capable and connected lieutenant with more autonomy to act on plots in the web of intrigue.	太古之時，{1}認可{2}是能幹又有人脈的副將，讓其在陰謀網中有更多自主行事的空間。	太古之时，{1}认可{2}是能干又有人脉的副将，让其在阴谋网中有更多自主行事的空间。		自動產生（scripts/gen_events.py）：21.tsv {1} recognized {2} as a capable and connected lieutenant with more autonomy to act on plots in the web of intrigue.
+In {#1}, the army of {2} marched on {3}.	{1}年，{2}的軍隊進軍{3}。	{1}年，{2}的军队进军{3}。		自動產生（scripts/gen_events.py）：world_sites.tsv the army of {1} marched on {2}.
+In the {@1} of {#2}, the army of {3} marched on {4}.	{2}年{1}，{3}的軍隊進軍{4}。	{2}年{1}，{3}的军队进军{4}。		自動產生（scripts/gen_events.py）：world_sites.tsv the army of {1} marched on {2}.
+In a time before time, the army of {1} marched on {2}.	太古之時，{1}的軍隊進軍{2}。	太古之时，{1}的军队进军{2}。		自動產生（scripts/gen_events.py）：world_sites.tsv the army of {1} marched on {2}.
+In {#1}, {2} was kidnapped from {3} by {4}.	{1}年，{2}從{3}遭到{4}綁架。	{1}年，{2}从{3}遭到{4}绑架。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} was kidnapped from {2} by {3}.
+In the {@1} of {#2}, {3} was kidnapped from {4} by {5}.	{2}年{1}，{3}從{4}遭到{5}綁架。	{2}年{1}，{3}从{4}遭到{5}绑架。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} was kidnapped from {2} by {3}.
+In a time before time, {1} was kidnapped from {2} by {3}.	太古之時，{1}從{2}遭到{3}綁架。	太古之时，{1}从{2}遭到{3}绑架。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} was kidnapped from {2} by {3}.
+In {#1}, {2} was kidnapped from {3}.	{1}年，{2}從{3}遭到綁架。	{1}年，{2}从{3}遭到绑架。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} was kidnapped from {2}.
+In the {@1} of {#2}, {3} was kidnapped from {4}.	{2}年{1}，{3}從{4}遭到綁架。	{2}年{1}，{3}从{4}遭到绑架。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} was kidnapped from {2}.
+In a time before time, {1} was kidnapped from {2}.	太古之時，{1}從{2}遭到綁架。	太古之时，{1}从{2}遭到绑架。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} was kidnapped from {2}.
+In {#1}, {2} was kidnapped by {3}.	{1}年，{2}遭到{3}綁架。	{1}年，{2}遭到{3}绑架。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} was kidnapped by {2}.
+In the {@1} of {#2}, {3} was kidnapped by {4}.	{2}年{1}，{3}遭到{4}綁架。	{2}年{1}，{3}遭到{4}绑架。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} was kidnapped by {2}.
+In a time before time, {1} was kidnapped by {2}.	太古之時，{1}遭到{2}綁架。	太古之时，{1}遭到{2}绑架。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} was kidnapped by {2}.
+In {#1}, {2} was kidnapped.	{1}年，{2}遭到綁架。	{1}年，{2}遭到绑架。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} was kidnapped.
+In the {@1} of {#2}, {3} was kidnapped.	{2}年{1}，{3}遭到綁架。	{2}年{1}，{3}遭到绑架。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} was kidnapped.
+In a time before time, {1} was kidnapped.	太古之時，{1}遭到綁架。	太古之时，{1}遭到绑架。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} was kidnapped.
+In {#1}, {2} was conquered by {3}.	{1}年，{2}遭到{3}征服。	{1}年，{2}被{3}征服。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} was conquered by {2}.
+In the {@1} of {#2}, {3} was conquered by {4}.	{2}年{1}，{3}遭到{4}征服。	{2}年{1}，{3}被{4}征服。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} was conquered by {2}.
+In a time before time, {1} was conquered by {2}.	太古之時，{1}遭到{2}征服。	太古之时，{1}被{2}征服。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} was conquered by {2}.
+In {#1}, {2} was conquered.	{1}年，{2}遭到征服。	{1}年，{2}被征服。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} was conquered.
+In the {@1} of {#2}, {3} was conquered.	{2}年{1}，{3}遭到征服。	{2}年{1}，{3}被征服。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} was conquered.
+In a time before time, {1} was conquered.	太古之時，{1}遭到征服。	太古之时，{1}被征服。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} was conquered.
+In {#1}, a group calling itself {2} moved on in search of a better future after the horrible mismanagement of {3} by {4}.	{1}年，由於{4}把{3}治理得一塌糊塗，自稱{2}的團體離開該地，另尋更好的未來。	{1}年，由于{4}把{3}治理得一塌糊涂，自称{2}的团体离开该地，另寻更好的未来。		自動產生（scripts/gen_events.py）：world_sites.tsv a group calling itself {1} moved on in search of a better future after the horrible mismanagement of {2} by {3}.
+In the {@1} of {#2}, a group calling itself {3} moved on in search of a better future after the horrible mismanagement of {4} by {5}.	{2}年{1}，由於{5}把{4}治理得一塌糊塗，自稱{3}的團體離開該地，另尋更好的未來。	{2}年{1}，由于{5}把{4}治理得一塌糊涂，自称{3}的团体离开该地，另寻更好的未来。		自動產生（scripts/gen_events.py）：world_sites.tsv a group calling itself {1} moved on in search of a better future after the horrible mismanagement of {2} by {3}.
+In a time before time, a group calling itself {1} moved on in search of a better future after the horrible mismanagement of {2} by {3}.	太古之時，由於{3}把{2}治理得一塌糊塗，自稱{1}的團體離開該地，另尋更好的未來。	太古之时，由于{3}把{2}治理得一塌糊涂，自称{1}的团体离开该地，另寻更好的未来。		自動產生（scripts/gen_events.py）：world_sites.tsv a group calling itself {1} moved on in search of a better future after the horrible mismanagement of {2} by {3}.
+In {#1}, a group calling itself {2} reclaimed {3} on behalf of {4}.	{1}年，自稱{2}的團體代表{4}收復了{3}。	{1}年，自称{2}的团体代表{4}收复了{3}。		自動產生（scripts/gen_events.py）：world_sites.tsv a group calling itself {1} reclaimed {2} on behalf of {3}.
+In the {@1} of {#2}, a group calling itself {3} reclaimed {4} on behalf of {5}.	{2}年{1}，自稱{3}的團體代表{5}收復了{4}。	{2}年{1}，自称{3}的团体代表{5}收复了{4}。		自動產生（scripts/gen_events.py）：world_sites.tsv a group calling itself {1} reclaimed {2} on behalf of {3}.
+In a time before time, a group calling itself {1} reclaimed {2} on behalf of {3}.	太古之時，自稱{1}的團體代表{3}收復了{2}。	太古之时，自称{1}的团体代表{3}收复了{2}。		自動產生（scripts/gen_events.py）：world_sites.tsv a group calling itself {1} reclaimed {2} on behalf of {3}.
+In {#1}, {2} gave up on their occupation of {3}.	{1}年，{2}放棄了對{3}的佔領。	{1}年，{2}放弃了对{3}的占领。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} gave up on their occupation of {2}.
+In the {@1} of {#2}, {3} gave up on their occupation of {4}.	{2}年{1}，{3}放棄了對{4}的佔領。	{2}年{1}，{3}放弃了对{4}的占领。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} gave up on their occupation of {2}.
+In a time before time, {1} gave up on their occupation of {2}.	太古之時，{1}放棄了對{2}的佔領。	太古之时，{1}放弃了对{2}的占领。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} gave up on their occupation of {2}.
+In {#1}, {2} was overthrown after an insurrection in {3}.	{1}年，{2}在{3}的叛亂中遭到推翻。	{1}年，{2}在{3}的叛乱中被推翻。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} was overthrown after an insurrection in {2}.
+In the {@1} of {#2}, {3} was overthrown after an insurrection in {4}.	{2}年{1}，{3}在{4}的叛亂中遭到推翻。	{2}年{1}，{3}在{4}的叛乱中被推翻。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} was overthrown after an insurrection in {2}.
+In a time before time, {1} was overthrown after an insurrection in {2}.	太古之時，{1}在{2}的叛亂中遭到推翻。	太古之时，{1}在{2}的叛乱中被推翻。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} was overthrown after an insurrection in {2}.
+In {#1}, {2} waited out an insurrection in {3}.	{1}年，{2}熬過了{3}的叛亂。	{1}年，{2}熬过了{3}的叛乱。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} waited out an insurrection in {2}.
+In the {@1} of {#2}, {3} waited out an insurrection in {4}.	{2}年{1}，{3}熬過了{4}的叛亂。	{2}年{1}，{3}熬过了{4}的叛乱。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} waited out an insurrection in {2}.
+In a time before time, {1} waited out an insurrection in {2}.	太古之時，{1}熬過了{2}的叛亂。	太古之时，{1}熬过了{2}的叛乱。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} waited out an insurrection in {2}.
+In {#1}, {2} crushed an insurrection in {3}.	{1}年，{2}鎮壓了{3}的叛亂。	{1}年，{2}镇压了{3}的叛乱。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} crushed an insurrection in {2}.
+In the {@1} of {#2}, {3} crushed an insurrection in {4}.	{2}年{1}，{3}鎮壓了{4}的叛亂。	{2}年{1}，{3}镇压了{4}的叛乱。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} crushed an insurrection in {2}.
+In a time before time, {1} crushed an insurrection in {2}.	太古之時，{1}鎮壓了{2}的叛亂。	太古之时，{1}镇压了{2}的叛乱。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} crushed an insurrection in {2}.
+In {#1}, {2} became {@3} of {4}, replacing his {@5} {6}.	{1}年，{2}成為{4}的{3}，接替其{5}{6}。	{1}年，{2}成为{4}的{3}，接替其{5}{6}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} became {@2} of {3}, replacing his {@4} {5}.
+In the {@1} of {#2}, {3} became {@4} of {5}, replacing his {@6} {7}.	{2}年{1}，{3}成為{5}的{4}，接替其{6}{7}。	{2}年{1}，{3}成为{5}的{4}，接替其{6}{7}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} became {@2} of {3}, replacing his {@4} {5}.
+In a time before time, {1} became {@2} of {3}, replacing his {@4} {5}.	太古之時，{1}成為{3}的{2}，接替其{4}{5}。	太古之时，{1}成为{3}的{2}，接替其{4}{5}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} became {@2} of {3}, replacing his {@4} {5}.
+In {#1}, {2} became {@3} of {4}, replacing her {@5} {6}.	{1}年，{2}成為{4}的{3}，接替其{5}{6}。	{1}年，{2}成为{4}的{3}，接替其{5}{6}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} became {@2} of {3}, replacing her {@4} {5}.
+In the {@1} of {#2}, {3} became {@4} of {5}, replacing her {@6} {7}.	{2}年{1}，{3}成為{5}的{4}，接替其{6}{7}。	{2}年{1}，{3}成为{5}的{4}，接替其{6}{7}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} became {@2} of {3}, replacing her {@4} {5}.
+In a time before time, {1} became {@2} of {3}, replacing her {@4} {5}.	太古之時，{1}成為{3}的{2}，接替其{4}{5}。	太古之时，{1}成为{3}的{2}，接替其{4}{5}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} became {@2} of {3}, replacing her {@4} {5}.
+In {#1}, {2} became {@3} of {4}, replacing its {@5} {6}.	{1}年，{2}成為{4}的{3}，接替其{5}{6}。	{1}年，{2}成为{4}的{3}，接替其{5}{6}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} became {@2} of {3}, replacing its {@4} {5}.
+In the {@1} of {#2}, {3} became {@4} of {5}, replacing its {@6} {7}.	{2}年{1}，{3}成為{5}的{4}，接替其{6}{7}。	{2}年{1}，{3}成为{5}的{4}，接替其{6}{7}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} became {@2} of {3}, replacing its {@4} {5}.
+In a time before time, {1} became {@2} of {3}, replacing its {@4} {5}.	太古之時，{1}成為{3}的{2}，接替其{4}{5}。	太古之时，{1}成为{3}的{2}，接替其{4}{5}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} became {@2} of {3}, replacing its {@4} {5}.
+In {#1}, {2} became {@3} of {4}, replacing {5}.	{1}年，{2}成為{4}的{3}，接替{5}。	{1}年，{2}成为{4}的{3}，接替{5}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} became {@2} of {3}, replacing {4}.
+In the {@1} of {#2}, {3} became {@4} of {5}, replacing {6}.	{2}年{1}，{3}成為{5}的{4}，接替{6}。	{2}年{1}，{3}成为{5}的{4}，接替{6}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} became {@2} of {3}, replacing {4}.
+In a time before time, {1} became {@2} of {3}, replacing {4}.	太古之時，{1}成為{3}的{2}，接替{4}。	太古之时，{1}成为{3}的{2}，接替{4}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} became {@2} of {3}, replacing {4}.
+In {#1}, {2} became ruler, replacing his {@3} {4}.	{1}年，{2}成為統治者，接替其{3}{4}。	{1}年，{2}成为统治者，接替其{3}{4}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} became ruler, replacing his {@2} {3}.
+In {#1}, {2} became {@3}, replacing his {@4} {5}.	{1}年，{2}成為{3}，接替其{4}{5}。	{1}年，{2}成为{3}，接替其{4}{5}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} became {@2}, replacing his {@3} {4}.
+In the {@1} of {#2}, {3} became ruler, replacing his {@4} {5}.	{2}年{1}，{3}成為統治者，接替其{4}{5}。	{2}年{1}，{3}成为统治者，接替其{4}{5}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} became ruler, replacing his {@2} {3}.
+In the {@1} of {#2}, {3} became {@4}, replacing his {@5} {6}.	{2}年{1}，{3}成為{4}，接替其{5}{6}。	{2}年{1}，{3}成为{4}，接替其{5}{6}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} became {@2}, replacing his {@3} {4}.
+In a time before time, {1} became ruler, replacing his {@2} {3}.	太古之時，{1}成為統治者，接替其{2}{3}。	太古之时，{1}成为统治者，接替其{2}{3}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} became ruler, replacing his {@2} {3}.
+In a time before time, {1} became {@2}, replacing his {@3} {4}.	太古之時，{1}成為{2}，接替其{3}{4}。	太古之时，{1}成为{2}，接替其{3}{4}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} became {@2}, replacing his {@3} {4}.
+In {#1}, {2} became ruler, replacing her {@3} {4}.	{1}年，{2}成為統治者，接替其{3}{4}。	{1}年，{2}成为统治者，接替其{3}{4}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} became ruler, replacing her {@2} {3}.
+In {#1}, {2} became {@3}, replacing her {@4} {5}.	{1}年，{2}成為{3}，接替其{4}{5}。	{1}年，{2}成为{3}，接替其{4}{5}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} became {@2}, replacing her {@3} {4}.
+In the {@1} of {#2}, {3} became ruler, replacing her {@4} {5}.	{2}年{1}，{3}成為統治者，接替其{4}{5}。	{2}年{1}，{3}成为统治者，接替其{4}{5}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} became ruler, replacing her {@2} {3}.
+In the {@1} of {#2}, {3} became {@4}, replacing her {@5} {6}.	{2}年{1}，{3}成為{4}，接替其{5}{6}。	{2}年{1}，{3}成为{4}，接替其{5}{6}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} became {@2}, replacing her {@3} {4}.
+In a time before time, {1} became ruler, replacing her {@2} {3}.	太古之時，{1}成為統治者，接替其{2}{3}。	太古之时，{1}成为统治者，接替其{2}{3}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} became ruler, replacing her {@2} {3}.
+In a time before time, {1} became {@2}, replacing her {@3} {4}.	太古之時，{1}成為{2}，接替其{3}{4}。	太古之时，{1}成为{2}，接替其{3}{4}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} became {@2}, replacing her {@3} {4}.
+In {#1}, {2} became ruler, replacing its {@3} {4}.	{1}年，{2}成為統治者，接替其{3}{4}。	{1}年，{2}成为统治者，接替其{3}{4}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} became ruler, replacing its {@2} {3}.
+In {#1}, {2} became {@3}, replacing its {@4} {5}.	{1}年，{2}成為{3}，接替其{4}{5}。	{1}年，{2}成为{3}，接替其{4}{5}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} became {@2}, replacing its {@3} {4}.
+In the {@1} of {#2}, {3} became ruler, replacing its {@4} {5}.	{2}年{1}，{3}成為統治者，接替其{4}{5}。	{2}年{1}，{3}成为统治者，接替其{4}{5}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} became ruler, replacing its {@2} {3}.
+In the {@1} of {#2}, {3} became {@4}, replacing its {@5} {6}.	{2}年{1}，{3}成為{4}，接替其{5}{6}。	{2}年{1}，{3}成为{4}，接替其{5}{6}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} became {@2}, replacing its {@3} {4}.
+In a time before time, {1} became ruler, replacing its {@2} {3}.	太古之時，{1}成為統治者，接替其{2}{3}。	太古之时，{1}成为统治者，接替其{2}{3}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} became ruler, replacing its {@2} {3}.
+In a time before time, {1} became {@2}, replacing its {@3} {4}.	太古之時，{1}成為{2}，接替其{3}{4}。	太古之时，{1}成为{2}，接替其{3}{4}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} became {@2}, replacing its {@3} {4}.
+In {#1}, {2} became ruler, replacing {3}.	{1}年，{2}成為統治者，接替{3}。	{1}年，{2}成为统治者，接替{3}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} became ruler, replacing {2}.
+In {#1}, {2} became {@3}, replacing {4}.	{1}年，{2}成為{3}，接替{4}。	{1}年，{2}成为{3}，接替{4}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} became {@2}, replacing {3}.
+In the {@1} of {#2}, {3} became ruler, replacing {4}.	{2}年{1}，{3}成為統治者，接替{4}。	{2}年{1}，{3}成为统治者，接替{4}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} became ruler, replacing {2}.
+In the {@1} of {#2}, {3} became {@4}, replacing {5}.	{2}年{1}，{3}成為{4}，接替{5}。	{2}年{1}，{3}成为{4}，接替{5}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} became {@2}, replacing {3}.
+In a time before time, {1} became ruler, replacing {2}.	太古之時，{1}成為統治者，接替{2}。	太古之时，{1}成为统治者，接替{2}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} became ruler, replacing {2}.
+In a time before time, {1} became {@2}, replacing {3}.	太古之時，{1}成為{2}，接替{3}。	太古之时，{1}成为{2}，接替{3}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} became {@2}, replacing {3}.
+In {#1}, {2} became {@3} of {4}.	{1}年，{2}成為{4}的{3}。	{1}年，{2}成为{4}的{3}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} became {@2} of {3}.
+In the {@1} of {#2}, {3} became {@4} of {5}.	{2}年{1}，{3}成為{5}的{4}。	{2}年{1}，{3}成为{5}的{4}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} became {@2} of {3}.
+In a time before time, {1} became {@2} of {3}.	太古之時，{1}成為{3}的{2}。	太古之时，{1}成为{3}的{2}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} became {@2} of {3}.
+In {#1}, {2} became ruler.	{1}年，{2}成為統治者。	{1}年，{2}成为统治者。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} became ruler.
+In {#1}, {2} became {@3}.	{1}年，{2}成為{3}。	{1}年，{2}成为{3}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} became {@2}.
+In the {@1} of {#2}, {3} became ruler.	{2}年{1}，{3}成為統治者。	{2}年{1}，{3}成为统治者。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} became ruler.
+In the {@1} of {#2}, {3} became {@4}.	{2}年{1}，{3}成為{4}。	{2}年{1}，{3}成为{4}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} became {@2}.
+In a time before time, {1} became ruler.	太古之時，{1}成為統治者。	太古之时，{1}成为统治者。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} became ruler.
+In a time before time, {1} became {@2}.	太古之時，{1}成為{2}。	太古之时，{1}成为{2}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} became {@2}.
+In {#1}, {2} claimed {3} in the name of {4}.	{1}年，{2}以{4}之名宣稱擁有{3}。	{1}年，{2}以{4}的名义宣称拥有{3}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} claimed {2} in the name of {3}.
+In the {@1} of {#2}, {3} claimed {4} in the name of {5}.	{2}年{1}，{3}以{5}之名宣稱擁有{4}。	{2}年{1}，{3}以{5}的名义宣称拥有{4}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} claimed {2} in the name of {3}.
+In a time before time, {1} claimed {2} in the name of {3}.	太古之時，{1}以{3}之名宣稱擁有{2}。	太古之时，{1}以{3}的名义宣称拥有{2}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} claimed {2} in the name of {3}.
+In {#1}, {2} was known to be in {3} in {4}.	{1}年，已知{2}位於{4}的{3}。	{1}年，已知{2}位于{4}的{3}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} was known to be in {2} in {3}.
+In the {@1} of {#2}, {3} was known to be in {4} in {5}.	{2}年{1}，已知{3}位於{5}的{4}。	{2}年{1}，已知{3}位于{5}的{4}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} was known to be in {2} in {3}.
+In a time before time, {1} was known to be in {2} in {3}.	太古之時，已知{1}位於{3}的{2}。	太古之时，已知{1}位于{3}的{2}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} was known to be in {2} in {3}.
+In {#1}, {2} was known to be in {3}.	{1}年，已知{2}位於{3}。	{1}年，已知{2}位于{3}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} was known to be in {2}.
+In the {@1} of {#2}, {3} was known to be in {4}.	{2}年{1}，已知{3}位於{4}。	{2}年{1}，已知{3}位于{4}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} was known to be in {2}.
+In a time before time, {1} was known to be in {2}.	太古之時，已知{1}位於{2}。	太古之时，已知{1}位于{2}。		自動產生（scripts/gen_events.py）：world_sites.tsv {1} was known to be in {2}.
 {1}, as {2}, in {#3}	{3}年化身{2}的{1}	{3}年化身{2}的{1}	inner	自動產生（scripts/gen_events.py）：01.tsv {1}, as {2}, 加上結尾的日期
 {1}, as {2}, in the {@3} of {#4}	{4}年{3}化身{2}的{1}	{4}年{3}化身{2}的{1}	inner	自動產生（scripts/gen_events.py）：01.tsv {1}, as {2}, 加上結尾的日期
 {1}, as {2}, in a time before time	太古之時化身{2}的{1}	太古之时化身{2}的{1}	inner	自動產生（scripts/gen_events.py）：01.tsv {1}, as {2}, 加上結尾的日期

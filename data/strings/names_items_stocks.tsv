@@ -1,0 +1,139 @@
+en	zh-Hant	zh-Hans	align	note
+left gloves	左手套	左手套		ITEM_GLOVES:ITEM_GLOVES_GLOVES 左右分開時的複數（物品清單 item2：llama wool left gloves）；同 combat_02 的 left glove
+right gloves	右手套	右手套		同上，右
+left gauntlets	左護手	左护手		ITEM_GLOVES:ITEM_GLOVES_GAUNTLETS 複數（iron left gauntlets）；同 combat_02 的 left gauntlet
+right gauntlets	右護手	右护手		同上，右
+left mittens	左連指手套	左连指手套		ITEM_GLOVES:ITEM_GLOVES_MITTENS 複數（cave spider silk left mittens）；同 combat_02 的 left mitten
+right mittens	右連指手套	右连指手套		同上，右
+goblet	高腳杯	高脚杯		FUN_140a82c10 case 0xc 物品名（copper goblet）；同 names_items_jobs 的 goblets
+mug	杯	杯		ITEM_TOOL:ITEM_TOOL_MUG NAME（pink jade mug）；names_items_jobs 的 mugs 是「馬克杯」，單數接材料時（shale mug 9 格）三個字放不下、句型會照畫英文，所以只寫「杯」
+chests	箱子	箱子		物品名 chest 的複數（dwarf bone chests）
+sarcophagi	棺材	棺材		物品名 sarcophagus 的複數（silver sarcophagi）
+forgotten beasts	遺忘巨獸	遗忘巨兽		遺忘巨獸的複數：藝術品主題（copper figurine of forgotten beasts）
+Bar/Block	錠材／磚塊	锭材/砖块	inner	FUN_140ca3500 L1886744 裝了東西的貨箱「內容物 Bin (材料)」的內容物類別；照倉儲區 Bar/Block Stockpile 的譯名；只給句型用
+bull calf	公小牛	公牛犊		CREATURE:COW CHILDNAME（公牛的幼體）；大要塞實機 stray bull calf hair 等屍塊與物品名的內層；公母照「公X」、幼體照家畜慣用詞「小牛」
+bull calves	公小牛	公牛犊		同上，複數
+dragon hatchling	幼龍	幼龙		CREATURE:DRAGON CHILDNAME；幼體照「幼X」
+dragon hatchlings	幼龍	幼龙		同上，複數
+sea serpent hatchling	幼大海蛇	幼大海蛇		CREATURE:SEA_SERPENT CHILDNAME
+sea serpent hatchlings	幼大海蛇	幼大海蛇		同上，複數
+sea monster hatchling	幼海怪	幼海怪		CREATURE:SEA_MONSTER CHILDNAME
+sea monster hatchlings	幼海怪	幼海怪		同上，複數
+rough sleep	睡不安穩	睡不安稳		FUN_140b58db0 L1674228 想法原因的短標籤 case 0x36（同 sentences_causes_a 的 sleeping uneasily…）；寫成整句，免得 rules/names_items 的 rough {@1}（寶石原石）把它拆成「睡覺原石」
+morions	墨晶	墨晶		INORGANIC:MORION IS_GEM 複數（寶石裝飾句 It is encrusted with point cut indigo tourmalines…、rough turquoises）；譯名同單數
+schorls	黑碧璽	黑碧玺		INORGANIC:SCHORL IS_GEM 複數
+lace agates	蕾絲瑪瑙	蕾丝玛瑙		INORGANIC:LACE AGATE IS_GEM 複數
+blue jades	藍翡翠	蓝翡翠		INORGANIC:BLUE JADE IS_GEM 複數
+lapis lazulis	青金石	青金石		INORGANIC:LAPIS LAZULI IS_GEM 複數
+prases	綠石英	绿石英		INORGANIC:PRASE IS_GEM 複數
+prase opals	蔥綠歐泊	葱绿欧泊		INORGANIC:PRASE OPAL IS_GEM 複數
+bloodstones	血石	血石		INORGANIC:BLOODSTONE IS_GEM 複數
+moss agates	苔蘚瑪瑙	苔藓玛瑙		INORGANIC:MOSS AGATE IS_GEM 複數
+moss opals	苔蘚歐泊	苔藓欧泊		INORGANIC:MOSS OPAL IS_GEM 複數
+variscites	磷鋁石	磷铝石		INORGANIC:VARISCITE IS_GEM 複數
+chrysoprases	綠玉髓	绿玉髓		INORGANIC:CHRYSOPRASE IS_GEM 複數
+chrysocollas	矽孔雀石	硅孔雀石		INORGANIC:CHRYSOCOLLA IS_GEM 複數
+sards	褐玉髓	褐玉髓		INORGANIC:SARD IS_GEM 複數
+carnelians	紅玉髓	红玉髓		INORGANIC:CARNELIAN IS_GEM 複數
+banded agates	條紋瑪瑙	条纹玛瑙		INORGANIC:BANDED AGATE IS_GEM 複數
+cherry opals	櫻桃歐泊	樱桃欧泊		INORGANIC:CHERRY OPAL IS_GEM 複數
+lavender jades	紫翡翠	紫翡翠		INORGANIC:LAVENDER JADE IS_GEM 複數
+pink jades	粉紅翡翠	粉红翡翠		INORGANIC:PINK JADE IS_GEM 複數
+tube agates	管狀瑪瑙	管状玛瑙		INORGANIC:TUBE AGATE IS_GEM 複數
+fire agates	火瑪瑙	火玛瑙		INORGANIC:FIRE AGATE IS_GEM 複數
+plume agates	羽毛瑪瑙	羽毛玛瑙		INORGANIC:PLUME AGATE IS_GEM 複數
+brown jaspers	棕碧玉	棕碧玉		INORGANIC:BROWN JASPER IS_GEM 複數
+picture jaspers	圖畫碧玉	图画碧玉		INORGANIC:PICTURE JASPER IS_GEM 複數
+wax opals	蠟歐泊	蜡欧泊		INORGANIC:WAX OPAL IS_GEM 複數
+wood opals	木歐泊	木欧泊		INORGANIC:WOOD OPAL IS_GEM 複數
+amber opals	琥珀歐泊	琥珀欧泊		INORGANIC:AMBER OPAL IS_GEM 複數
+gold opals	金歐泊	金欧泊		INORGANIC:GOLD OPAL IS_GEM 複數
+citrines	黃水晶	黄水晶		INORGANIC:CITRINE IS_GEM 複數
+yellow jaspers	黃碧玉	黄碧玉		INORGANIC:YELLOW JASPER IS_GEM 複數
+tigereyes	虎眼石	虎眼石		INORGANIC:TIGEREYE IS_GEM 複數
+tiger irons	虎鐵石	虎铁石		INORGANIC:TIGER IRON IS_GEM 複數
+sunstones	太陽石	日光石		INORGANIC:SUNSTONE IS_GEM 複數
+resin opals	樹脂歐泊	树脂欧泊		INORGANIC:RESIN OPAL IS_GEM 複數
+pyrites	黃鐵礦	黄铁矿		INORGANIC:PYRITE IS_GEM 複數
+clear tourmalines	無色碧璽	无色碧玺		INORGANIC:CLEAR TOURMALINE IS_GEM 複數
+dendritic agates	樹枝瑪瑙	树枝玛瑙		INORGANIC:DENDRITIC AGATE IS_GEM 複數
+shell opals	貝殼歐泊	贝壳欧泊		INORGANIC:SHELL OPAL IS_GEM 複數
+bone opals	骨歐泊	骨欧泊		INORGANIC:BONE OPAL IS_GEM 複數
+fortification agates	城堡瑪瑙	城堡玛瑙		INORGANIC:FORTIFICATION AGATE IS_GEM 複數
+moonstones	月光石	月光石		INORGANIC:MOONSTONE IS_GEM 複數
+white jades	白翡翠	白翡翠		INORGANIC:WHITE JADE IS_GEM 複數
+jasper opals	碧玉歐泊	碧玉欧泊		INORGANIC:JASPER OPAL IS_GEM 複數
+pineapple opals	鳳梨歐泊	菠萝欧泊		INORGANIC:PINEAPPLE OPAL IS_GEM 複數
+onyx opals	縞紋歐泊	缟纹欧泊		INORGANIC:ONYX OPAL IS_GEM 複數
+milk opals	乳白歐泊	乳白欧泊		INORGANIC:MILK OPAL IS_GEM 複數
+pipe opals	管狀歐泊	管状欧泊		INORGANIC:PIPE OPAL IS_GEM 複數
+aventurines	東陵石	东陵石		INORGANIC:AVENTURINE IS_GEM 複數
+turquoises	綠松石	绿松石		INORGANIC:TURQUOISE IS_GEM 複數
+rock crystals	白水晶	白水晶		INORGANIC:CRYSTAL_ROCK IS_GEM 複數
+black zircons	黑鋯石	黑锆石		INORGANIC:BLACK ZIRCON IS_GEM 複數
+black pyropes	黑鎂鋁榴石	黑镁铝榴石		INORGANIC:BLACK PYROPE IS_GEM 複數
+melanites	黑榴石	黑榴石		INORGANIC:MELANITE IS_GEM 複數
+indigo tourmalines	靛藍碧璽	靛蓝碧玺		INORGANIC:INDIGO TOURMALINE IS_GEM 複數
+blue garnets	藍石榴石	蓝石榴石		INORGANIC:BLUE GARNET IS_GEM 複數
+tsavorites	沙弗萊石	沙弗莱石		INORGANIC:TSAVORITE IS_GEM 複數
+green tourmalines	綠碧璽	绿碧玺		INORGANIC:GREEN TOURMALINE IS_GEM 複數
+demantoids	翠榴石	翠榴石		INORGANIC:DEMANTOID IS_GEM 複數
+green zircons	綠鋯石	绿锆石		INORGANIC:GREEN ZIRCON IS_GEM 複數
+green jades	綠翡翠	绿翡翠		INORGANIC:GREEN JADE IS_GEM 複數
+heliodors	黃綠柱石	黄绿柱石		INORGANIC:HELIODOR IS_GEM 複數
+peridots	橄欖石	橄榄石		INORGANIC:PERIDOT IS_GEM 複數
+red zircons	紅鋯石	红锆石		INORGANIC:RED ZIRCON IS_GEM 複數
+red tourmalines	紅碧璽	红碧玺		INORGANIC:RED TOURMALINE IS_GEM 複數
+red pyropes	紅鎂鋁榴石	红镁铝榴石		INORGANIC:RED PYROPE IS_GEM 複數
+almandines	鐵鋁榴石	铁铝榴石		INORGANIC:ALMANDINE IS_GEM 複數
+red grossulars	紅鈣鋁榴石	红钙铝榴石		INORGANIC:RED GROSSULAR IS_GEM 複數
+pink tourmalines	粉紅碧璽	粉红碧玺		INORGANIC:PINK TOURMALINE IS_GEM 複數
+red beryls	紅綠柱石	红绿柱石		INORGANIC:RED BERYL IS_GEM 複數
+fire opals	火歐泊	火欧泊		INORGANIC:FIRE OPAL IS_GEM 複數
+rhodolites	玫瑰榴石	玫瑰榴石		INORGANIC:RHODOLITE IS_GEM 複數
+purple spinels	紫尖晶石	紫尖晶石		INORGANIC:SPINEL_PURPLE IS_GEM 複數
+alexandrites	變石	变石		INORGANIC:ALEXANDRITE IS_GEM 複數
+tanzanites	丹泉石	坦桑石		INORGANIC:TANZANITE IS_GEM 複數
+morganites	摩根石	摩根石		INORGANIC:MORGANITE IS_GEM 複數
+violet spessartines	紫錳鋁榴石	紫锰铝榴石		INORGANIC:VIOLET SPESSARTINE IS_GEM 複數
+pink garnets	粉紅石榴石	粉红石榴石		INORGANIC:PINK GARNET IS_GEM 複數
+kunzites	孔賽石	孔赛石		INORGANIC:KUNZITE IS_GEM 複數
+cinnamon grossulars	肉桂鈣鋁榴石	肉桂钙铝榴石		INORGANIC:CINNAMON GROSSULAR IS_GEM 複數
+honey yellow beryls	蜜黃綠柱石	蜜黄绿柱石		INORGANIC:HONEY YELLOW BERYL IS_GEM 複數
+jelly opals	果凍歐泊	果冻欧泊		INORGANIC:JELLY OPAL IS_GEM 複數
+brown zircons	棕鋯石	棕锆石		INORGANIC:BROWN ZIRCON IS_GEM 複數
+yellow zircons	黃鋯石	黄锆石		INORGANIC:YELLOW ZIRCON IS_GEM 複數
+golden beryls	金綠柱石	金绿柱石		INORGANIC:GOLDEN BERYL IS_GEM 複數
+yellow spessartines	黃錳鋁榴石	黄锰铝榴石		INORGANIC:YELLOW SPESSARTINE IS_GEM 複數
+topazolites	黃鈣鐵榴石	黄钙铁榴石		INORGANIC:TOPAZOLITE IS_GEM 複數
+yellow grossulars	黃鈣鋁榴石	黄钙铝榴石		INORGANIC:YELLOW GROSSULAR IS_GEM 複數
+rubicelles	橙尖晶石	橙尖晶石		INORGANIC:RUBICELLE IS_GEM 複數
+clear garnets	無色石榴石	无色石榴石		INORGANIC:CLEAR GARNET IS_GEM 複數
+goshenites	透綠柱石	透绿柱石		INORGANIC:GOSHENITE IS_GEM 複數
+cat's eyes	貓眼石	猫眼石		INORGANIC:CAT'S EYE IS_GEM 複數
+clear zircons	無色鋯石	无色锆石		INORGANIC:CLEAR ZIRCON IS_GEM 複數
+amethysts	紫水晶	紫水晶		INORGANIC:AMETHYST IS_GEM 複數
+aquamarines	海藍寶石	海蓝宝石		INORGANIC:AQUAMARINE IS_GEM 複數
+red spinels	紅尖晶石	红尖晶石		INORGANIC:SPINEL_RED IS_GEM 複數
+chrysoberyls	金綠寶石	金绿宝石		INORGANIC:CHRYSOBERYL IS_GEM 複數
+precious fire opals	貴火歐泊	贵火欧泊		INORGANIC:OPAL_PFIRE IS_GEM 複數
+red flash opals	紅閃歐泊	红闪欧泊		INORGANIC:OPAL_REDFLASH IS_GEM 複數
+black opals	黑歐泊	黑欧泊		INORGANIC:OPAL_BLACK IS_GEM 複數
+white opals	白歐泊	白欧泊		INORGANIC:OPAL_WHITE IS_GEM 複數
+crystal opals	水晶歐泊	水晶欧泊		INORGANIC:OPAL_CRYSTAL IS_GEM 複數
+claro opals	清透歐泊	清透欧泊		INORGANIC:OPAL_CLARO IS_GEM 複數
+levin opals	閃電歐泊	闪电欧泊		INORGANIC:OPAL_LEVIN IS_GEM 複數
+harlequin opals	彩格歐泊	彩格欧泊		INORGANIC:OPAL_HARLEQUIN IS_GEM 複數
+pinfire opals	針火歐泊	针火欧泊		INORGANIC:OPAL_PINFIRE IS_GEM 複數
+bandfire opals	條紋火歐泊	条纹火欧泊		INORGANIC:OPAL_BANDFIRE IS_GEM 複數
+light yellow diamonds	淺黃鑽石	浅黄钻石		INORGANIC:DIAMOND_LY IS_GEM 複數
+faint yellow diamonds	微黃鑽石	微黄钻石		INORGANIC:DIAMOND_FY IS_GEM 複數
+emeralds	祖母綠	祖母绿		INORGANIC:EMERALD IS_GEM 複數
+sapphires	藍寶石	蓝宝石		INORGANIC:SAPPHIRE IS_GEM 複數
+clear diamonds	無色鑽石	无色钻石		INORGANIC:DIAMOND_CLEAR IS_GEM 複數
+red diamonds	紅鑽石	红钻石		INORGANIC:DIAMOND_RED IS_GEM 複數
+green diamonds	綠鑽石	绿钻石		INORGANIC:DIAMOND_GREEN IS_GEM 複數
+blue diamonds	藍鑽石	蓝钻石		INORGANIC:DIAMOND_BLUE IS_GEM 複數
+yellow diamonds	黃鑽石	黄钻石		INORGANIC:DIAMOND_YELLOW IS_GEM 複數
+black diamonds	黑鑽石	黑钻石		INORGANIC:DIAMOND_BLACK IS_GEM 複數
+star sapphires	星光藍寶石	星光蓝宝石		INORGANIC:SAPPHIRE_STAR IS_GEM 複數

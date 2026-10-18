@@ -1,0 +1,375 @@
+en	zh-Hant	zh-Hans	align	note
+{%1} <#{#2}>	{1} <#{2}>	{1} <#{2}>		物品名結尾的件數 <#N>（容器、手推車：chestnut wheelbarrow <#11>）
+{%1} ({#2}%)	{1}({2}%)	{1}({2}%)		物品名結尾的剩餘量百分比（布料、線、肥皂：cave spider silk cloth (60%)）
+◄{1}►	◄{1}►	◄{1}►		物品名外框 ◄►（大要塞實機：◄primordial stardust mace►）
+{{1}}	{{1}}	{{1}}		物品名外框 {}（大要塞實機：{giant cave spider silk bag}）
+{%1} Barrel ({%2})	一桶{1}（{2}製）	一桶{1}（{2}制）		FUN_140ca2b90 物品名：裝了東西的桶「內容物 Barrel (材料)」（Plant Barrel (peach wood)）；整句也用的一份，譯文同 sentences_itemdesc_01 的 inner（verify_mod 只容許譯文相同的兩份）
+{%1} Bag ({%2})	一袋{1}（{2}製）	一袋{1}（{2}制）		物品名：裝了東西的袋子「內容物 Bag (材料)」（cranberry seeds Bag (cave spider silk)）；整句也用的一份，譯文同 sentences_itemdesc_01 的 inner；術語例外：bag；「一袋」是量詞；寬度例外：樣板的「一袋」「（製）」比原文的 Bag ( ) 多 3 格，但內容物與材料的中文都比英文短得多（大要塞的 488 條容器名都放得下），引擎照樣比整句寬度，放不下照英文
+{%1} Bin ({%2})	{1}貨箱({2})	{1}货箱({2})		FUN_140ca3500 物品名：裝了東西的貨箱「內容物 Bin (材料)」（Cloth Bin (pine)）
+{*1}'s upper body	{1}的上半身	{1}的上半身		人名的所有格＋身體部位（Stâsost Ngebzoburu's head）：BODY 部位名逐條寫出（names_body_materials 的 BP），不寫通用的 {1}'s {@2}（會切開「he's excited」「Let's trade」）；名字用 {*1}（每個字大寫開頭），{1} 會吞掉前面的句子（墓碑「… / Lover of X's bone」）；不收 back、front、body 這類常見字；eye 留給 zz_legends_04 的 {1}'s eye
+{*1}'s lower body	{1}的下半身	{1}的下半身		同上
+{*1}'s right upper arm	{1}的右上臂	{1}的右上臂		同上
+{*1}'s left upper arm	{1}的左上臂	{1}的左上臂		同上
+{*1}'s right lower arm	{1}的右前臂	{1}的右前臂		同上
+{*1}'s left lower arm	{1}的左前臂	{1}的左前臂		同上
+{*1}'s right hand	{1}的右手	{1}的右手		同上
+{*1}'s left hand	{1}的左手	{1}的左手		同上
+{*1}'s right upper leg	{1}的右大腿	{1}的右大腿		同上
+{*1}'s left upper leg	{1}的左大腿	{1}的左大腿		同上
+{*1}'s right lower leg	{1}的右小腿	{1}的右小腿		同上
+{*1}'s left lower leg	{1}的左小腿	{1}的左小腿		同上
+{*1}'s right foot	{1}的右腳	{1}的右脚		同上
+{*1}'s right feet	{1}的右腳	{1}的右脚		同上
+{*1}'s left foot	{1}的左腳	{1}的左脚		同上
+{*1}'s left feet	{1}的左腳	{1}的左脚		同上
+{*1}'s right front leg	{1}的右前腿	{1}的右前腿		同上
+{*1}'s left front leg	{1}的左前腿	{1}的左前腿		同上
+{*1}'s right front foot	{1}的右前腳	{1}的右前脚		同上
+{*1}'s right front feet	{1}的右前腳	{1}的右前脚		同上
+{*1}'s left front foot	{1}的左前腳	{1}的左前脚		同上
+{*1}'s left front feet	{1}的左前腳	{1}的左前脚		同上
+{*1}'s right rear leg	{1}的右後腿	{1}的右后腿		同上
+{*1}'s left rear leg	{1}的左後腿	{1}的左后腿		同上
+{*1}'s right rear foot	{1}的右後腳	{1}的右后脚		同上
+{*1}'s right rear feet	{1}的右後腳	{1}的右后脚		同上
+{*1}'s left rear foot	{1}的左後腳	{1}的左后脚		同上
+{*1}'s left rear feet	{1}的左後腳	{1}的左后脚		同上
+{*1}'s first neck	{1}的第一頸部	{1}的第一颈部		同上
+{*1}'s second neck	{1}的第二頸部	{1}的第二颈部		同上
+{*1}'s third neck	{1}的第三頸部	{1}的第三颈部		同上
+{*1}'s fourth neck	{1}的第四頸部	{1}的第四颈部		同上
+{*1}'s fifth neck	{1}的第五頸部	{1}的第五颈部		同上
+{*1}'s sixth neck	{1}的第六頸部	{1}的第六颈部		同上
+{*1}'s seventh neck	{1}的第七頸部	{1}的第七颈部		同上
+{*1}'s first head	{1}的第一頭部	{1}的第一头部		同上
+{*1}'s second head	{1}的第二頭部	{1}的第二头部		同上
+{*1}'s third head	{1}的第三頭部	{1}的第三头部		同上
+{*1}'s fourth head	{1}的第四頭部	{1}的第四头部		同上
+{*1}'s fifth head	{1}的第五頭部	{1}的第五头部		同上
+{*1}'s sixth head	{1}的第六頭部	{1}的第六头部		同上
+{*1}'s seventh head	{1}的第七頭部	{1}的第七头部		同上
+{*1}'s head	{1}的頭部	{1}的头部		同上
+{*1}'s neck	{1}的頸部	{1}的颈部		同上
+{*1}'s right hoof	{1}的右蹄	{1}的右蹄		同上
+{*1}'s right hooves	{1}的右蹄	{1}的右蹄		同上
+{*1}'s left hoof	{1}的左蹄	{1}的左蹄		同上
+{*1}'s left hooves	{1}的左蹄	{1}的左蹄		同上
+{*1}'s right wing	{1}的右翅膀	{1}的右翅膀		同上
+{*1}'s left wing	{1}的左翅膀	{1}的左翅膀		同上
+{*1}'s first right upper arm	{1}的第一右上臂	{1}的第一右上臂		同上
+{*1}'s first left upper arm	{1}的第一左上臂	{1}的第一左上臂		同上
+{*1}'s first right lower arm	{1}的第一右前臂	{1}的第一右前臂		同上
+{*1}'s first left lower arm	{1}的第一左前臂	{1}的第一左前臂		同上
+{*1}'s first right hand	{1}的第一右手	{1}的第一右手		同上
+{*1}'s first left hand	{1}的第一左手	{1}的第一左手		同上
+{*1}'s second right upper arm	{1}的第二右上臂	{1}的第二右上臂		同上
+{*1}'s second left upper arm	{1}的第二左上臂	{1}的第二左上臂		同上
+{*1}'s second right lower arm	{1}的第二右前臂	{1}的第二右前臂		同上
+{*1}'s second left lower arm	{1}的第二左前臂	{1}的第二左前臂		同上
+{*1}'s second right hand	{1}的第二右手	{1}的第二右手		同上
+{*1}'s second left hand	{1}的第二左手	{1}的第二左手		同上
+{*1}'s third right upper arm	{1}的第三右上臂	{1}的第三右上臂		同上
+{*1}'s third left upper arm	{1}的第三左上臂	{1}的第三左上臂		同上
+{*1}'s third right lower arm	{1}的第三右前臂	{1}的第三右前臂		同上
+{*1}'s third left lower arm	{1}的第三左前臂	{1}的第三左前臂		同上
+{*1}'s third right hand	{1}的第三右手	{1}的第三右手		同上
+{*1}'s third left hand	{1}的第三左手	{1}的第三左手		同上
+{*1}'s right head	{1}的右頭	{1}的右头		同上
+{*1}'s left head	{1}的左頭	{1}的左头		同上
+{*1}'s right neck	{1}的右頸	{1}的右颈		同上
+{*1}'s left neck	{1}的左頸	{1}的左颈		同上
+{*1}'s right arm	{1}的右臂	{1}的右臂		同上
+{*1}'s left arm	{1}的左臂	{1}的左臂		同上
+{*1}'s right leg	{1}的右腿	{1}的右腿		同上
+{*1}'s left leg	{1}的左腿	{1}的左腿		同上
+{*1}'s right front hoof	{1}的右前蹄	{1}的右前蹄		同上
+{*1}'s right front hooves	{1}的右前蹄	{1}的右前蹄		同上
+{*1}'s left front hoof	{1}的左前蹄	{1}的左前蹄		同上
+{*1}'s left front hooves	{1}的左前蹄	{1}的左前蹄		同上
+{*1}'s right rear hoof	{1}的右後蹄	{1}的右后蹄		同上
+{*1}'s right rear hooves	{1}的右後蹄	{1}的右后蹄		同上
+{*1}'s left rear hoof	{1}的左後蹄	{1}的左后蹄		同上
+{*1}'s left rear hooves	{1}的左後蹄	{1}的左后蹄		同上
+{*1}'s thorax	{1}的胸部	{1}的胸部		同上
+{*1}'s abdomen	{1}的腹部	{1}的腹部		同上
+{*1}'s right first leg	{1}的右第一腿	{1}的右第一腿		同上
+{*1}'s left first leg	{1}的左第一腿	{1}的左第一腿		同上
+{*1}'s right first foot	{1}的右第一腳	{1}的右第一脚		同上
+{*1}'s right first feet	{1}的右第一腳	{1}的右第一脚		同上
+{*1}'s left first foot	{1}的左第一腳	{1}的左第一脚		同上
+{*1}'s left first feet	{1}的左第一腳	{1}的左第一脚		同上
+{*1}'s right second leg	{1}的右第二腿	{1}的右第二腿		同上
+{*1}'s left second leg	{1}的左第二腿	{1}的左第二腿		同上
+{*1}'s right second foot	{1}的右第二腳	{1}的右第二脚		同上
+{*1}'s right second feet	{1}的右第二腳	{1}的右第二脚		同上
+{*1}'s left second foot	{1}的左第二腳	{1}的左第二脚		同上
+{*1}'s left second feet	{1}的左第二腳	{1}的左第二脚		同上
+{*1}'s right third leg	{1}的右第三腿	{1}的右第三腿		同上
+{*1}'s left third leg	{1}的左第三腿	{1}的左第三腿		同上
+{*1}'s right third foot	{1}的右第三腳	{1}的右第三脚		同上
+{*1}'s right third feet	{1}的右第三腳	{1}的右第三脚		同上
+{*1}'s left third foot	{1}的左第三腳	{1}的左第三脚		同上
+{*1}'s left third feet	{1}的左第三腳	{1}的左第三脚		同上
+{*1}'s right upper foreleg	{1}的右上前肢	{1}的右上前肢		同上
+{*1}'s left upper foreleg	{1}的左上前肢	{1}的左上前肢		同上
+{*1}'s right lower foreleg	{1}的右下前肢	{1}的右下前肢		同上
+{*1}'s left lower foreleg	{1}的左下前肢	{1}的左下前肢		同上
+{*1}'s right forefoot	{1}的右前足	{1}的右前足		同上
+{*1}'s right forefeet	{1}的右前足	{1}的右前足		同上
+{*1}'s left forefoot	{1}的左前足	{1}的左前足		同上
+{*1}'s left forefeet	{1}的左前足	{1}的左前足		同上
+{*1}'s cephalothorax	{1}的頭胸部	{1}的头胸部		同上
+{*1}'s right fourth leg	{1}的右第四腿	{1}的右第四腿		同上
+{*1}'s left fourth leg	{1}的左第四腿	{1}的左第四腿		同上
+{*1}'s right fourth foot	{1}的右第四腳	{1}的右第四脚		同上
+{*1}'s right fourth feet	{1}的右第四腳	{1}的右第四脚		同上
+{*1}'s left fourth foot	{1}的左第四腳	{1}的左第四脚		同上
+{*1}'s left fourth feet	{1}的左第四腳	{1}的左第四脚		同上
+{*1}'s right tentacle	{1}的右觸手	{1}的右触手		同上
+{*1}'s left tentacle	{1}的左觸手	{1}的左触手		同上
+{*1}'s mouth	{1}的嘴巴	{1}的嘴巴		同上
+{*1}'s tooth	{1}的牙齒	{1}的牙齿		同上
+{*1}'s first arm	{1}的第一腕	{1}的第一腕		同上
+{*1}'s second arm	{1}的第二腕	{1}的第二腕		同上
+{*1}'s third arm	{1}的第三腕	{1}的第三腕		同上
+{*1}'s fourth arm	{1}的第四腕	{1}的第四腕		同上
+{*1}'s fifth arm	{1}的第五腕	{1}的第五腕		同上
+{*1}'s sixth arm	{1}的第六腕	{1}的第六腕		同上
+{*1}'s seventh arm	{1}的第七腕	{1}的第七腕		同上
+{*1}'s eighth arm	{1}的第八腕	{1}的第八腕		同上
+{*1}'s right tentacle club	{1}的右觸腕穗	{1}的右触腕穗		同上
+{*1}'s left tentacle club	{1}的左觸腕穗	{1}的左触腕穗		同上
+{*1}'s right upper tentacle	{1}的右上觸手	{1}的右上触手		同上
+{*1}'s left upper tentacle	{1}的左上觸手	{1}的左上触手		同上
+{*1}'s right upper claw	{1}的右上爪	{1}的右上爪		同上
+{*1}'s left upper claw	{1}的左上爪	{1}的左上爪		同上
+{*1}'s right lower tentacle	{1}的右下觸手	{1}的右下触手		同上
+{*1}'s left lower tentacle	{1}的左下觸手	{1}的左下触手		同上
+{*1}'s right lower claw	{1}的右下爪	{1}的右下爪		同上
+{*1}'s left lower claw	{1}的左下爪	{1}的左下爪		同上
+{*1}'s right middle tentacle	{1}的右中觸手	{1}的右中触手		同上
+{*1}'s left middle tentacle	{1}的左中觸手	{1}的左中触手		同上
+{*1}'s right middle claw	{1}的右中爪	{1}的右中爪		同上
+{*1}'s left middle claw	{1}的左中爪	{1}的左中爪		同上
+{*1}'s right front wheel	{1}的右前輪	{1}的右前轮		同上
+{*1}'s left front wheel	{1}的左前輪	{1}的左前轮		同上
+{*1}'s right rear wheel	{1}的右後輪	{1}的右后轮		同上
+{*1}'s left rear wheel	{1}的左後輪	{1}的左后轮		同上
+{*1}'s tail	{1}的尾巴	{1}的尾巴		同上
+{*1}'s upper carapace	{1}的上甲殼	{1}的上甲壳		同上
+{*1}'s lower carapace	{1}的下甲殼	{1}的下甲壳		同上
+{*1}'s stinger	{1}的螫針	{1}的螫针		同上
+{*1}'s right pincer	{1}的右螯	{1}的右螯		同上
+{*1}'s left pincer	{1}的左螯	{1}的左螯		同上
+{*1}'s right frontal appendage	{1}的右前附肢	{1}的右前附肢		同上
+{*1}'s left frontal appendage	{1}的左前附肢	{1}的左前附肢		同上
+{*1}'s right eye	{1}的右眼	{1}的右眼		同上
+{*1}'s left eye	{1}的左眼	{1}的左眼		同上
+{*1}'s center eye	{1}的中眼	{1}的中眼		同上
+{*1}'s first eye	{1}的第一隻眼	{1}的第一只眼		同上
+{*1}'s second eye	{1}的第二隻眼	{1}的第二只眼		同上
+{*1}'s third eye	{1}的第三隻眼	{1}的第三只眼		同上
+{*1}'s fourth eye	{1}的第四隻眼	{1}的第四只眼		同上
+{*1}'s fifth eye	{1}的第五隻眼	{1}的第五只眼		同上
+{*1}'s right eyestalk	{1}的右眼柄	{1}的右眼柄		同上
+{*1}'s left eyestalk	{1}的左眼柄	{1}的左眼柄		同上
+{*1}'s right tusk	{1}的右獠牙	{1}的右獠牙		同上
+{*1}'s left tusk	{1}的左獠牙	{1}的左獠牙		同上
+{*1}'s nose	{1}的鼻子	{1}的鼻子		同上
+{*1}'s snout	{1}的口鼻	{1}的口鼻		同上
+{*1}'s trunk	{1}的象鼻	{1}的象鼻		同上
+{*1}'s right ear	{1}的右耳	{1}的右耳		同上
+{*1}'s left ear	{1}的左耳	{1}的左耳		同上
+{*1}'s right lung	{1}的右肺	{1}的右肺		同上
+{*1}'s left lung	{1}的左肺	{1}的左肺		同上
+{*1}'s proboscis	{1}的口器	{1}的口器		同上
+{*1}'s beak	{1}的鳥喙	{1}的鸟喙		同上
+{*1}'s heart	{1}的心臟	{1}的心脏		同上
+{*1}'s gizzard	{1}的砂囊	{1}的砂囊		同上
+{*1}'s liver	{1}的肝臟	{1}的肝脏		同上
+{*1}'s stomach	{1}的胃	{1}的胃		同上
+{*1}'s pancreas	{1}的胰臟	{1}的胰腺		同上
+{*1}'s spleen	{1}的脾臟	{1}的脾脏		同上
+{*1}'s right kidney	{1}的右腎	{1}的右肾		同上
+{*1}'s left kidney	{1}的左腎	{1}的左肾		同上
+{*1}'s right shoulder	{1}的右肩	{1}的右肩		同上
+{*1}'s left shoulder	{1}的左肩	{1}的左肩		同上
+{*1}'s right elbow	{1}的右手肘	{1}的右肘部		同上
+{*1}'s left elbow	{1}的左手肘	{1}的左肘部		同上
+{*1}'s right wrist	{1}的右手腕	{1}的右手腕		同上
+{*1}'s left wrist	{1}的左手腕	{1}的左手腕		同上
+{*1}'s right hip	{1}的右髖部	{1}的右髋部		同上
+{*1}'s left hip	{1}的左髖部	{1}的左髋部		同上
+{*1}'s right knee	{1}的右膝	{1}的右膝		同上
+{*1}'s left knee	{1}的左膝	{1}的左膝		同上
+{*1}'s right ankle	{1}的右腳踝	{1}的右脚踝		同上
+{*1}'s left ankle	{1}的左腳踝	{1}的左脚踝		同上
+{*1}'s throat	{1}的喉嚨	{1}的喉咙		同上
+{*1}'s upper spine	{1}的上脊椎	{1}的上脊椎		同上
+{*1}'s middle spine	{1}的中脊椎	{1}的中脊椎		同上
+{*1}'s lower spine	{1}的下脊椎	{1}的下脊椎		同上
+{*1}'s brain	{1}的大腦	{1}的大脑		同上
+{*1}'s skull	{1}的頭骨	{1}的头骨		同上
+{*1}'s casque	{1}的盔突	{1}的盔突		同上
+{*1}'s crest	{1}的頭冠	{1}的头冠		同上
+{*1}'s horn	{1}的角	{1}的角		同上
+{*1}'s right horn	{1}的右角	{1}的右角		同上
+{*1}'s left horn	{1}的左角	{1}的左角		同上
+{*1}'s first horn	{1}的第一隻角	{1}的第一只角		同上
+{*1}'s second horn	{1}的第二隻角	{1}的第二只角		同上
+{*1}'s front horn	{1}的前角	{1}的前角		同上
+{*1}'s right upper horn	{1}的右上犄角	{1}的右上犄角		同上
+{*1}'s left upper horn	{1}的左上犄角	{1}的左上犄角		同上
+{*1}'s right lower horn	{1}的右下犄角	{1}的右下犄角		同上
+{*1}'s left lower horn	{1}的左下犄角	{1}的左下犄角		同上
+{*1}'s right antler	{1}的右鹿角	{1}的右鹿角		同上
+{*1}'s left antler	{1}的左鹿角	{1}的左鹿角		同上
+{*1}'s eyelid	{1}的眼瞼	{1}的眼睑		同上
+{*1}'s thumb	{1}的拇指	{1}的拇指		同上
+{*1}'s first finger	{1}的第一手指	{1}的第一手指		同上
+{*1}'s second finger	{1}的第二手指	{1}的第二手指		同上
+{*1}'s third finger	{1}的第三手指	{1}的第三手指		同上
+{*1}'s fourth finger	{1}的第四手指	{1}的第四手指		同上
+{*1}'s finger	{1}的手指	{1}的手指		同上
+{*1}'s first toe	{1}的第一腳趾	{1}的第一脚趾		同上
+{*1}'s second toe	{1}的第二腳趾	{1}的第二脚趾		同上
+{*1}'s third toe	{1}的第三腳趾	{1}的第三脚趾		同上
+{*1}'s fourth toe	{1}的第四腳趾	{1}的第四脚趾		同上
+{*1}'s fifth toe	{1}的第五腳趾	{1}的第五脚趾		同上
+{*1}'s first right front toe	{1}的右前腳第一趾	{1}的右前脚第一趾		同上
+{*1}'s second right front toe	{1}的右前腳第二趾	{1}的右前脚第二趾		同上
+{*1}'s third right front toe	{1}的右前腳第三趾	{1}的右前脚第三趾		同上
+{*1}'s fourth right front toe	{1}的右前腳第四趾	{1}的右前脚第四趾		同上
+{*1}'s fifth right front toe	{1}的右前腳第五趾	{1}的右前脚第五趾		同上
+{*1}'s first left front toe	{1}的左前腳第一趾	{1}的左前脚第一趾		同上
+{*1}'s second left front toe	{1}的左前腳第二趾	{1}的左前脚第二趾		同上
+{*1}'s third left front toe	{1}的左前腳第三趾	{1}的左前脚第三趾		同上
+{*1}'s fourth left front toe	{1}的左前腳第四趾	{1}的左前脚第四趾		同上
+{*1}'s fifth left front toe	{1}的左前腳第五趾	{1}的左前脚第五趾		同上
+{*1}'s first right rear toe	{1}的右後腳第一趾	{1}的右后脚第一趾		同上
+{*1}'s second right rear toe	{1}的右後腳第二趾	{1}的右后脚第二趾		同上
+{*1}'s third right rear toe	{1}的右後腳第三趾	{1}的右后脚第三趾		同上
+{*1}'s fourth right rear toe	{1}的右後腳第四趾	{1}的右后脚第四趾		同上
+{*1}'s fifth right rear toe	{1}的右後腳第五趾	{1}的右后脚第五趾		同上
+{*1}'s first left rear toe	{1}的左後腳第一趾	{1}的左后脚第一趾		同上
+{*1}'s second left rear toe	{1}的左後腳第二趾	{1}的左后脚第二趾		同上
+{*1}'s third left rear toe	{1}的左後腳第三趾	{1}的左后脚第三趾		同上
+{*1}'s fourth left rear toe	{1}的左後腳第四趾	{1}的左后脚第四趾		同上
+{*1}'s fifth left rear toe	{1}的左後腳第五趾	{1}的左后脚第五趾		同上
+{*1}'s first right toe	{1}的右腳第一趾	{1}的右脚第一趾		同上
+{*1}'s second right toe	{1}的右腳第二趾	{1}的右脚第二趾		同上
+{*1}'s third right toe	{1}的右腳第三趾	{1}的右脚第三趾		同上
+{*1}'s fourth right toe	{1}的右腳第四趾	{1}的右脚第四趾		同上
+{*1}'s fifth right toe	{1}的右腳第五趾	{1}的右脚第五趾		同上
+{*1}'s first left toe	{1}的左腳第一趾	{1}的左脚第一趾		同上
+{*1}'s second left toe	{1}的左腳第二趾	{1}的左脚第二趾		同上
+{*1}'s third left toe	{1}的左腳第三趾	{1}的左脚第三趾		同上
+{*1}'s fourth left toe	{1}的左腳第四趾	{1}的左脚第四趾		同上
+{*1}'s fifth left toe	{1}的左腳第五趾	{1}的左脚第五趾		同上
+{*1}'s first right finger	{1}的右手第一指	{1}的右手第一指		同上
+{*1}'s second right finger	{1}的右手第二指	{1}的右手第二指		同上
+{*1}'s third right finger	{1}的右手第三指	{1}的右手第三指		同上
+{*1}'s fourth right finger	{1}的右手第四指	{1}的右手第四指		同上
+{*1}'s fifth right finger	{1}的右手第五指	{1}的右手第五指		同上
+{*1}'s first left finger	{1}的左手第一指	{1}的左手第一指		同上
+{*1}'s second left finger	{1}的左手第二指	{1}的左手第二指		同上
+{*1}'s third left finger	{1}的左手第三指	{1}的左手第三指		同上
+{*1}'s fourth left finger	{1}的左手第四指	{1}的左手第四指		同上
+{*1}'s fifth left finger	{1}的左手第五指	{1}的左手第五指		同上
+{*1}'s right fin	{1}的右鰭	{1}的右鳍		同上
+{*1}'s left fin	{1}的左鰭	{1}的左鳍		同上
+{*1}'s dorsal fin	{1}的背鰭	{1}的背鳍		同上
+{*1}'s right flipper	{1}的右鰭肢	{1}的右鳍肢		同上
+{*1}'s left flipper	{1}的左鰭肢	{1}的左鳍肢		同上
+{*1}'s right front flipper	{1}的右前鰭肢	{1}的右前鳍肢		同上
+{*1}'s left front flipper	{1}的左前鰭肢	{1}的左前鳍肢		同上
+{*1}'s right rear flipper	{1}的右後鰭肢	{1}的右后鳍肢		同上
+{*1}'s left rear flipper	{1}的左後鰭肢	{1}的左后鳍肢		同上
+{*1}'s right front fin	{1}的右前鰭	{1}的右前鳍		同上
+{*1}'s left front fin	{1}的左前鰭	{1}的左前鳍		同上
+{*1}'s right rear fin	{1}的右後鰭	{1}的右后鳍		同上
+{*1}'s left rear fin	{1}的左後鰭	{1}的左后鳍		同上
+{*1}'s hump	{1}的駝峰	{1}的驼峰		同上
+{*1}'s front hump	{1}的前駝峰	{1}的前驼峰		同上
+{*1}'s rear hump	{1}的後駝峰	{1}的后驼峰		同上
+{*1}'s left cheek	{1}的左臉頰	{1}的左脸颊		同上
+{*1}'s right cheek	{1}的右臉頰	{1}的右脸颊		同上
+{*1}'s left eyelid	{1}的左眼瞼	{1}的左眼睑		同上
+{*1}'s right eyelid	{1}的右眼瞼	{1}的右眼睑		同上
+{*1}'s tongue	{1}的舌頭	{1}的舌头		同上
+{*1}'s forked tongue	{1}的分岔舌	{1}的分叉舌		同上
+{*1}'s lower lip	{1}的下唇	{1}的下唇		同上
+{*1}'s upper lip	{1}的上唇	{1}的上唇		同上
+{*1}'s left true rib	{1}的左真肋骨	{1}的左真肋骨		同上
+{*1}'s right true rib	{1}的右真肋骨	{1}的右真肋骨		同上
+{*1}'s left false rib	{1}的左假肋骨	{1}的左假肋骨		同上
+{*1}'s right false rib	{1}的右假肋骨	{1}的右假肋骨		同上
+{*1}'s left floating rib	{1}的左浮肋骨	{1}的左浮肋骨		同上
+{*1}'s right floating rib	{1}的右浮肋骨	{1}的右浮肋骨		同上
+{*1}'s right eye tooth	{1}的右犬齒	{1}的右犬齿		同上
+{*1}'s right eye teeth	{1}的右犬齒	{1}的右犬齿		同上
+{*1}'s left eye tooth	{1}的左犬齒	{1}的左犬齿		同上
+{*1}'s left eye teeth	{1}的左犬齒	{1}的左犬齿		同上
+{*1}'s right fang	{1}的右尖牙	{1}的右尖牙		同上
+{*1}'s left fang	{1}的左尖牙	{1}的左尖牙		同上
+{*1}'s right upper incisor	{1}的右上門齒	{1}的右上门齿		同上
+{*1}'s left upper incisor	{1}的左上門齒	{1}的左上门齿		同上
+{*1}'s right lower incisor	{1}的右下門齒	{1}的右下门齿		同上
+{*1}'s left lower incisor	{1}的左下門齒	{1}的左下门齿		同上
+{*1}'s right tooth	{1}的右牙	{1}的右牙		同上
+{*1}'s left tooth	{1}的左牙	{1}的左牙		同上
+{*1}'s upper front tooth	{1}的上前牙	{1}的上前牙		同上
+{*1}'s upper front teeth	{1}的上前牙	{1}的上前牙		同上
+{*1}'s lower front tooth	{1}的下前牙	{1}的下前牙		同上
+{*1}'s lower front teeth	{1}的下前牙	{1}的下前牙		同上
+{*1}'s upper right back tooth	{1}的右上後牙	{1}的右上后牙		同上
+{*1}'s upper right back teeth	{1}的右上後牙	{1}的右上后牙		同上
+{*1}'s lower right back tooth	{1}的右下後牙	{1}的右下后牙		同上
+{*1}'s lower right back teeth	{1}的右下後牙	{1}的右下后牙		同上
+{*1}'s upper left back tooth	{1}的左上後牙	{1}的左上后牙		同上
+{*1}'s upper left back teeth	{1}的左上後牙	{1}的左上后牙		同上
+{*1}'s lower left back tooth	{1}的左下後牙	{1}的左下后牙		同上
+{*1}'s lower left back teeth	{1}的左下後牙	{1}的左下后牙		同上
+{*1}'s right mandible	{1}的右大顎	{1}的右上颚		同上
+{*1}'s left mandible	{1}的左大顎	{1}的左上颚		同上
+{*1}'s tusk	{1}的獠牙	{1}的獠牙		同上
+{*1}'s right frontal endite	{1}的右前內肢	{1}的右前内肢		同上
+{*1}'s left frontal endite	{1}的左前內肢	{1}的左前内肢		同上
+{*1}'s head sclerite	{1}的頭部骨片	{1}的头部骨片		同上
+{*1}'s tooth whorl	{1}的齒旋	{1}的齿旋		同上
+{*1}'s right antenna	{1}的右觸角	{1}的右触角		同上
+{*1}'s left antenna	{1}的左觸角	{1}的左触角		同上
+{*1}'s thagomizer	{1}的尾刺	{1}的尾刺		同上
+{*1}'s tail club	{1}的尾錘	{1}的尾锤		同上
+{*1}'s sail	{1}的背帆	{1}的背帆		同上
+{*1}'s right shoulder spine	{1}的右肩棘	{1}的右肩棘		同上
+{*1}'s left shoulder spine	{1}的左肩棘	{1}的左肩棘		同上
+{*1}'s right claw	{1}的右爪	{1}的右爪		同上
+{*1}'s left claw	{1}的左爪	{1}的左爪		同上
+{*1}'s right fifth leg	{1}的右第五腿	{1}的右第五腿		同上
+{*1}'s left fifth leg	{1}的左第五腿	{1}的左第五腿		同上
+{*1}'s right fifth foot	{1}的右第五腳	{1}的右第五脚		同上
+{*1}'s right fifth feet	{1}的右第五腳	{1}的右第五脚		同上
+{*1}'s left fifth foot	{1}的左第五腳	{1}的左第五脚		同上
+{*1}'s left fifth feet	{1}的左第五腳	{1}的左第五脚		同上
+{*1}'s left tail	{1}的左尾	{1}的左尾		同上
+{*1}'s right tail	{1}的右尾	{1}的右尾		同上
+{*1}'s center tail	{1}的中尾	{1}的中尾		同上
+{*1}'s third horn	{1}的第三隻角	{1}的第三只角		同上
+{*1}'s fourth horn	{1}的第四隻角	{1}的第四只角		同上
+{*1}'s fifth finger	{1}的第五手指	{1}的第五手指		同上
+{*1}'s center eyelid	{1}的中眼瞼	{1}的中眼睑		同上
+{*1}'s bone	{1}的骨頭	{1}的骨头		人名的所有格＋組織（屍塊、取下的材料：Mori Gisucobi's bone [21]）；同上
+{*1}'s nail	{1}的指甲	{1}的指甲		人名的所有格＋組織（屍塊、取下的材料：Mori Gisucobi's bone [21]）；同上
+{*1}'s hair	{1}的毛髮	{1}的毛发		人名的所有格＋組織（屍塊、取下的材料：Mori Gisucobi's bone [21]）；同上
+{*1}'s cartilage	{1}的軟骨	{1}的软骨		人名的所有格＋組織（屍塊、取下的材料：Mori Gisucobi's bone [21]）；同上
+{*1}'s chitin	{1}的幾丁質	{1}的几丁质		人名的所有格＋組織（屍塊、取下的材料：Mori Gisucobi's bone [21]）；同上
+{*1}'s scale	{1}的鱗片	{1}的鳞片		人名的所有格＋組織（屍塊、取下的材料：Mori Gisucobi's bone [21]）；同上
+{*1}'s feather	{1}的羽毛	{1}的羽毛		人名的所有格＋組織（屍塊、取下的材料：Mori Gisucobi's bone [21]）；同上
+{*1}'s shell	{1}的外殼	{1}的外壳		人名的所有格＋組織（屍塊、取下的材料：Mori Gisucobi's bone [21]）；同上
+{*1}'s skin	{1}的皮膚	{1}的皮肤		人名的所有格＋組織（屍塊、取下的材料：Mori Gisucobi's bone [21]）；同上
+{*1}'s hoof	{1}的蹄	{1}的蹄		人名的所有格＋組織（屍塊、取下的材料：Mori Gisucobi's bone [21]）；同上
+{*1}'s ivory	{1}的象牙	{1}的象牙		人名的所有格＋組織（屍塊、取下的材料：Mori Gisucobi's bone [21]）；同上
+{*1}'s {@2} bone	{1}的{2}骨頭	{1}的{2}骨头		人名的所有格＋部位的骨頭（Ngokang Bosaarur's left lower arm bone）；同上
+{*1}'s {@2} cartilage	{1}的{2}軟骨	{1}的{2}软骨		人名的所有格＋部位的軟骨；同上
+{*1}'s {@2} scale	{1}的{2}鱗片	{1}的{2}鳞片		人名的所有格＋部位的鱗片（Gozru's tongue scale）；同上

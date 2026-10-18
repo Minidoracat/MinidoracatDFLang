@@ -1,0 +1,64 @@
+en	zh-Hant	zh-Hans	align	note
+factor	掌櫃	掌柜		FUN_1405d7f80 L796999-797017 商會（CUSTOM_COMPANY_FACTOR） 駐外代理，譯「掌櫃」（原文 6 格放得下）；執行檔與 raws 沒有別的單獨 factor（只有 XML 標籤 relationship_factor）
+factors	掌櫃	掌柜		FUN_1405d7f80 L796999-797017 商會（CUSTOM_COMPANY_FACTOR） 駐外代理，譯「掌櫃」（原文 6 格放得下）；執行檔與 raws 沒有別的單獨 factor（只有 XML 標籤 relationship_factor）
+agent	代理	代理		FUN_1405d7f80 L796999-797017 商會（CUSTOM_COMPANY_FACTOR）；別處只有整句「in order to have an agent in」，意思相同；「代理人」超過原文 5 格
+agents	代理	代理		FUN_1405d7f80 L796999-797017 商會（CUSTOM_COMPANY_FACTOR）；別處只有整句「in order to have an agent in」，意思相同；「代理人」超過原文 5 格
+governor	總督	总督		FUN_1405d7f80 L796999-797017 商會（CUSTOM_COMPANY_FACTOR）
+governors	總督	总督		FUN_1405d7f80 L796999-797017 商會（CUSTOM_COMPANY_FACTOR）
+masters	首領	首领	inner	FUN_1405d7f80 L797754／FUN_140fab7f0 L2330618 商會、盜匪團首領複數；inner：單數 master 已是 events_01 的 inner「師父」，全域的 Master 是技能等級，單字不設全域；「人名, master」不另寫：傳說頁相關人物的「☺名字☻, master」是師徒關係，要維持「師父」；術語例外：Master
+representative	代表	代表		FUN_1405ef430 L812327 流亡團體（CUSTOM_OUTCAST_FACTOR）；別處只有整句「Speaking as a representative of」
+representatives	代表	代表		FUN_1405ef430 L812327 流亡團體（CUSTOM_OUTCAST_FACTOR）；別處只有整句「Speaking as a representative of」
+treasurer	財務官	财务官		FUN_1409573c0 L1355350 傭兵團、FUN_14096ece0 L1367712 官員、FUN_1409a19d0 L1398783 公會；同 chief treasurer「首席財務官」
+treasurers	財務官	财务官		FUN_1409573c0 L1355350 傭兵團、FUN_14096ece0 L1367712 官員、FUN_1409a19d0 L1398783 公會；同 chief treasurer「首席財務官」
+most high priest	至高祭司	至高祭司		FUN_14095bf90 L1360110 HIGHEST_PRIEST（沒有指定神祇時）；高於 high priest「大祭司」
+most high priests	至高祭司	至高祭司		FUN_14095bf90 L1360110 HIGHEST_PRIEST（沒有指定神祇時）；高於 high priest「大祭司」
+barons	男爵	男爵		FUN_14095bf90 L1362432／FUN_14097e2a0 L1379744 CUSTOM_LAW_MAKER 男爵複數；單數見 professions、adv_speech_c2
+baronesses	女男爵	女男爵		FUN_14095bf90 L1362432／FUN_14097e2a0 L1379744 CUSTOM_LAW_MAKER 男爵複數；單數見 professions、adv_speech_c2
+barons consort	男爵眷侶	男爵眷侣		FUN_14095bf90 L1362432／FUN_14097e2a0 L1379744 CUSTOM_LAW_MAKER 男爵複數；單數見 professions、adv_speech_c2
+baronesses consort	女男爵眷侶	女男爵眷侣		FUN_14095bf90 L1362432／FUN_14097e2a0 L1379744 CUSTOM_LAW_MAKER 男爵複數；單數見 professions、adv_speech_c2
+kings	國王	国王		raws 貴族職位的複數（entity 職位 name[1]／spouse[1]）；實機 perf-fort 勢力職位清單查不到；單數見 professions、adv_speech_c2
+kings consort	國王眷侶	国王眷侣		raws 貴族職位的複數（entity 職位 name[1]／spouse[1]）；實機 perf-fort 勢力職位清單查不到；單數見 professions、adv_speech_c2
+dukes	公爵	公爵		raws 貴族職位的複數（entity 職位 name[1]／spouse[1]）；實機 perf-fort 勢力職位清單查不到；單數見 professions、adv_speech_c2
+duchesses	女公爵	女公爵		raws 貴族職位的複數（entity 職位 name[1]／spouse[1]）；實機 perf-fort 勢力職位清單查不到；單數見 professions、adv_speech_c2
+dukes consort	公爵眷侶	公爵眷侣		raws 貴族職位的複數（entity 職位 name[1]／spouse[1]）；實機 perf-fort 勢力職位清單查不到；單數見 professions、adv_speech_c2
+duchesses consort	女公爵眷侶	女公爵眷侣		raws 貴族職位的複數（entity 職位 name[1]／spouse[1]）；實機 perf-fort 勢力職位清單查不到；單數見 professions、adv_speech_c2
+counts	伯爵	伯爵		raws 貴族職位的複數（entity 職位 name[1]／spouse[1]）；實機 perf-fort 勢力職位清單查不到；單數見 professions、adv_speech_c2
+countesses	女伯爵	女伯爵		raws 貴族職位的複數（entity 職位 name[1]／spouse[1]）；實機 perf-fort 勢力職位清單查不到；單數見 professions、adv_speech_c2
+counts consort	伯爵眷侶	伯爵眷侣		raws 貴族職位的複數（entity 職位 name[1]／spouse[1]）；實機 perf-fort 勢力職位清單查不到；單數見 professions、adv_speech_c2
+countesses consort	女伯爵眷侶	女伯爵眷侣		raws 貴族職位的複數（entity 職位 name[1]／spouse[1]）；實機 perf-fort 勢力職位清單查不到；單數見 professions、adv_speech_c2
+counselor	參議	参议		FUN_14096ece0 L1367688-1367786 CUSTOM_OFFICIAL_ 不加前綴的職位名；加 chief／high／head／royal 的在 adv_titles
+counselors	參議	参议		FUN_14096ece0 L1367688-1367786 CUSTOM_OFFICIAL_ 不加前綴的職位名；加 chief／high／head／royal 的在 adv_titles
+advisor	顧問	顾问		FUN_14096ece0 L1367688-1367786 CUSTOM_OFFICIAL_ 不加前綴的職位名；加 chief／high／head／royal 的在 adv_titles
+advisors	顧問	顾问		FUN_14096ece0 L1367688-1367786 CUSTOM_OFFICIAL_ 不加前綴的職位名；加 chief／high／head／royal 的在 adv_titles
+butler	管家	管家		FUN_14096ece0 L1367688-1367786 CUSTOM_OFFICIAL_ 不加前綴的職位名；加 chief／high／head／royal 的在 adv_titles
+butlers	管家	管家		FUN_14096ece0 L1367688-1367786 CUSTOM_OFFICIAL_ 不加前綴的職位名；加 chief／high／head／royal 的在 adv_titles
+cup-bearer	侍酒官	侍酒官		FUN_14096ece0 L1367688-1367786 CUSTOM_OFFICIAL_ 不加前綴的職位名；加 chief／high／head／royal 的在 adv_titles
+cup-bearers	侍酒官	侍酒官		FUN_14096ece0 L1367688-1367786 CUSTOM_OFFICIAL_ 不加前綴的職位名；加 chief／high／head／royal 的在 adv_titles
+executioner	行刑官	行刑官		FUN_14096ece0 L1367688-1367786 CUSTOM_OFFICIAL_ 不加前綴的職位名；加 chief／high／head／royal 的在 adv_titles
+executioners	行刑官	行刑官		FUN_14096ece0 L1367688-1367786 CUSTOM_OFFICIAL_ 不加前綴的職位名；加 chief／high／head／royal 的在 adv_titles
+chef	主廚	主厨		FUN_14096ece0 L1367688-1367786 CUSTOM_OFFICIAL_ 不加前綴的職位名；加 chief／high／head／royal 的在 adv_titles
+chefs	主廚	主厨		FUN_14096ece0 L1367688-1367786 CUSTOM_OFFICIAL_ 不加前綴的職位名；加 chief／high／head／royal 的在 adv_titles
+housekeeper	總務	总务		FUN_14096ece0 L1367688-1367786 CUSTOM_OFFICIAL_ 不加前綴的職位名；加 chief／high／head／royal 的在 adv_titles
+housekeepers	總務	总务		FUN_14096ece0 L1367688-1367786 CUSTOM_OFFICIAL_ 不加前綴的職位名；加 chief／high／head／royal 的在 adv_titles
+abbot	住持	住持		FUN_14097c5d0 L1374978 CUSTOM_LAW_MAKER（修道院院長；「修道院長」超過原文 5 格，用「住持」）
+abbots	住持	住持		FUN_14097c5d0 L1374978 CUSTOM_LAW_MAKER（修道院院長；「修道院長」超過原文 5 格，用「住持」）
+dean	會長	会长		FUN_1409a19d0 L1398628-1398817 公會職位（CUSTOM_GUILD_LEADER）
+deans	會長	会长		FUN_1409a19d0 L1398628-1398817 公會職位（CUSTOM_GUILD_LEADER）
+doyen	元老	元老		FUN_1409a19d0 L1398628-1398817 公會職位（CUSTOM_GUILD_LEADER）
+doyens	元老	元老		FUN_1409a19d0 L1398628-1398817 公會職位（CUSTOM_GUILD_LEADER）
+doyenne	女元老	女元老		FUN_1409a19d0 L1398628-1398817 公會職位（CUSTOM_GUILD_LEADER）女性
+doyennes	女元老	女元老		FUN_1409a19d0 L1398628-1398817 公會職位（CUSTOM_GUILD_LEADER）女性
+alderperson	理事	理事		FUN_1409a19d0 L1398628-1398817 公會職位（CUSTOM_GUILD_ALDERPERSON；遊戲複數也寫 alderperson）
+steward	總管	总管		FUN_1409a19d0 L1398628-1398817 公會職位（CUSTOM_GUILD_STEWARD）
+stewards	總管	总管		FUN_1409a19d0 L1398628-1398817 公會職位（CUSTOM_GUILD_STEWARD）
+clerks	文書	文员		FUN_1409a19d0 L1398628-1398817 公會職位（CUSTOM_GUILD_CLERK）；同職業 Clerk
+recordkeeper	記錄官	记录官		FUN_1409a19d0 L1398628-1398817 公會職位（CUSTOM_GUILD_CLERK）
+recordkeepers	記錄官	记录官		FUN_1409a19d0 L1398628-1398817 公會職位（CUSTOM_GUILD_CLERK）
+bosses	首腦	头目		FUN_140fab7f0 L2330595-2330666／FUN_141468370 L2761507 盜匪團首領（CUSTOM_BANDIT_LEADER）；同 ui_5 的 Boss
+chief	首領	首领		FUN_140fab7f0 L2330595-2330666／FUN_141468370 L2761507 盜匪團首領（CUSTOM_BANDIT_LEADER）；別處的 chief 都在更長的整句裡（Chief Medical Dwarf、chief chancellor）
+chiefs	首領	首领		FUN_140fab7f0 L2330595-2330666／FUN_141468370 L2761507 盜匪團首領（CUSTOM_BANDIT_LEADER）；別處的 chief 都在更長的整句裡（Chief Medical Dwarf、chief chancellor）
+chieftess	女酋長	女酋长		FUN_140fab7f0 L2330595-2330666／FUN_141468370 L2761507 盜匪團首領（CUSTOM_BANDIT_LEADER）；chief 與 chieftain 的女性都寫 chieftess
+chieftesses	女酋長	女酋长		FUN_140fab7f0 L2330595-2330666／FUN_141468370 L2761507 盜匪團首領（CUSTOM_BANDIT_LEADER）；chief 與 chieftain 的女性都寫 chieftess
+chieftains	酋長	酋长		FUN_140fab7f0 L2330595-2330666／FUN_141468370 L2761507 盜匪團首領（CUSTOM_BANDIT_LEADER）；同 events_14 的 inner
+ringleaders	頭目	头目		FUN_140fab7f0 L2330595-2330666／FUN_141468370 L2761507 盜匪團首領（CUSTOM_BANDIT_LEADER）；同 events_14 的 inner
+soldiers	士兵	士兵		FUN_140fab7f0 L2330595-2330666／FUN_141468370 L2761507 盜匪團首領（CUSTOM_BANDIT_LEADER） 的小隊成員複數；單數見 adv_journal2

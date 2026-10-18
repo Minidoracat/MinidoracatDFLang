@@ -569,6 +569,37 @@ local function apply()
     return config.lang == 'off'
 end
 
+-- 世界裡的名字（勢力、據點、神器、地區、樂曲／詩／舞蹈形式、戰爭與戰役、人物…）讀檔時一次交給引擎登記：書名、清單裡嵌的名字遊戲不會再組，
+-- 沒畫過的原本查不到（著作「Errors In Estrur Plaguesevere」「Question The Chant of Drumming」）。英文照 DFHack 的 translateName，和遊戲組的一樣。
+-- 人物最多、放最後：引擎登記到上限的一半就回傳 false，停在那裡
+local function note_world_names(engine)
+    local w = df.global.world
+    local data = w.world_data
+    local function note(name)
+        return not name.has_name or engine.note_name(select(2, df.sizeof(name)), dfhack.translation.translateName(name, true))
+    end
+    for _, list in ipairs{w.entities.all, data.sites, w.artifacts.all, data.regions, data.underground_regions,
+                          data.landmasses, data.mountain_peaks, data.rivers, w.musical_forms.all, w.poetic_forms.all,
+                          w.dance_forms.all, w.identities.all} do
+        for _, x in ipairs(list) do
+            if not note(x.name) then return end
+        end
+    end
+    for _, site in ipairs(data.sites) do
+        for _, b in ipairs(site.buildings) do
+            if not note(b.name) then return end
+        end
+    end
+    -- 事件集合只有戰爭、戰役有名字（傳說頁的連結「Rislu Strepuv, "The Sieges of Scolding"」）
+    local named = {[df.history_event_collection_type.WAR] = true, [df.history_event_collection_type.BATTLE] = true}
+    for _, ec in ipairs(w.history.event_collections.all) do
+        if named[ec:getType()] and not note(ec.name) then return end
+    end
+    for _, f in ipairs(w.history.figures) do
+        if not note(f.name) then return end
+    end
+end
+
 local function start()
     if dfhack.BASE_G.DFLANG then return end
     local mod = mod_dir(MOD_ID)
@@ -735,6 +766,10 @@ local function start()
                 state.pending = nil
                 fail('%s', err)
             end
+        end
+        if sc == SC_WORLD_LOADED and state.names_ok then
+            local ok, err = pcall(note_world_names, engine)
+            if not ok then fail('登記世界裡的名字時出錯（%s），沒畫過的名字維持英文', err) end
         end
     end
     log('已啟用：%d 條譯文、%d 條句型、%d 個字圖', loaded, rules, utf8.len(chars))

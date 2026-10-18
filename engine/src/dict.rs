@@ -98,6 +98,9 @@ enum Kind {
     /// `{&n}`、`{=n}`：書名的隨機名詞、形容詞（raws 字表的英文詞形，見 names::word_form）
     Noun,
     Adj,
+    /// `{_n}`：raws 字表名詞的小寫英文詞形（見 names::lower_noun）：程序生成的職位名（神殿職位「sacred torch」）。
+    /// 不算書名句型，固定字照大小寫比
+    Word,
     /// `{*n}`：人名：每個字大寫開頭（見 capital），第一個字不是字典裡的詞；不看前一個字。給每個字都大寫的稱呼
     /// （交談畫面頭像下的「The Dwarf Merchant Momuz Kogannog」）：職位與名字都大寫，`{^n}` 分不出來；第一個字查得到就不收，
     /// 「The Goblin Beast Hunter Ala」才不會被切成 Beast＋「Hunter Ala」
@@ -156,7 +159,7 @@ pub struct Rule {
 /// 一個佔位：編號、能收的片段、譯文裡的補字（`{3+時}`，原文不能有）。
 struct Placeholder(usize, Kind, String);
 
-/// 拆出 `{1}`～`{9}`、`{#1}`～`{#9}`、`{@1}`～`{@9}`、`{%1}`～`{%9}`、`{~1}`～`{~9}`、`{^1}`～`{^9}`、`{*n}`、`{?n}`、`{!n}`、書名用的 `{$n}`、`{&n}`、`{=n}`，以及帶補字的 `{1+時}`；
+/// 拆出 `{1}`～`{9}`、`{#1}`～`{#9}`、`{@1}`～`{@9}`、`{%1}`～`{%9}`、`{~1}`～`{~9}`、`{^1}`～`{^9}`、`{*n}`、`{?n}`、`{!n}`、`{_n}`、書名用的 `{$n}`、`{&n}`、`{=n}`，以及帶補字的 `{1+時}`；
 /// 其餘依 `text` 轉換（原文轉 CP437 位元組、譯文保留字串）。
 fn split_placeholders<T>(s: &str, mut text: impl FnMut(&str) -> Option<T>) -> Option<Vec<Result<T, Placeholder>>> {
     let mut parts = Vec::new();
@@ -175,6 +178,7 @@ fn split_placeholders<T>(s: &str, mut text: impl FnMut(&str) -> Option<T>) -> Op
             Some(b'*') => Kind::Proper,
             Some(b'?') => Kind::EnName,
             Some(b'!') => Kind::Native,
+            Some(b'_') => Kind::Word,
             _ => Kind::Any,
         };
         let d = i + 1 + usize::from(kind != Kind::Any);
@@ -471,6 +475,11 @@ fn capital(w: &[u8]) -> bool {
         [b'"', c, ..] | [c, ..] => c.is_ascii_uppercase() || *c >= 0x80,
         [] => false,
     }
+}
+
+/// `{!n}` 照抄時像不像原名：只有字母（CP437 0x80 以上的 è、î 也算）、空白、撇號、連字號，每個字都大寫開頭（見 capital）
+fn native_shape(text: &[u8]) -> bool {
+    text.iter().all(|&c| c.is_ascii_alphabetic() || c >= 0x80 || b" '-".contains(&c)) && text.split(|&c| c == b' ').all(capital)
 }
 
 /// `{^n}` 的名字：每個字都大寫開頭（見 capital），而且前一個字小寫開頭
@@ -1245,6 +1254,7 @@ impl Dict {
             Kind::Full => matches!(self.piece(piece, depth + 1, memo), Some((_, true))),
             Kind::Title => self.title_of(piece, depth, memo).is_some(),
             Kind::Noun | Kind::Adj => crate::names::word_form(piece, kind == Kind::Adj).is_some(),
+            Kind::Word => crate::names::lower_noun(piece).is_some(),
         };
         let caps = rule.matches(key, &mut fits)?;
         let mut out = Pieces::new();
@@ -1264,12 +1274,15 @@ impl Dict {
                     let sub = match kind {
                         Some(Kind::Title) => self.title_of(piece, depth, memo).map(|zh| (vec![(zh, 0)], true)),
                         Some(k @ (Kind::Noun | Kind::Adj)) => crate::names::word_form(piece, k == Kind::Adj).map(|zh| (vec![(zh, 0)], true)),
+                        Some(Kind::Word) => crate::names::lower_noun(piece).map(|zh| (vec![(zh, 0)], true)),
                         // 遊戲組的名字照名稱的字表翻（「The Bloody Desert」是「血腥沙漠」，不是一般字典的「血腥荒漠」），和遊戲內組的一致
                         Some(Kind::EnName) => crate::names::get(piece).map(|zh| zh.to_string()).or_else(|| crate::names::parse(piece))
                             .map(|zh| (vec![(zh, 0)], true)).or_else(|| self.piece(piece, depth + 1, memo)),
-                        // 存檔清單的原名：遊戲這次沒組過（存檔只存組好的字串），名字音譯開著時照拼法音譯
+                        // 存檔清單的原名：遊戲這次沒組過（存檔只存組好的字串），名字音譯開著時照拼法音譯。都沒有時照抄；
+                        // 像原名的（見 native_shape）照抄也算乾淨：名字音譯關著時原名本來就照原文，連結字（傳說頁的戰爭「原名, "英文名"」）才翻得出來
                         Some(Kind::Native) => crate::names::get(piece).map(|zh| zh.to_string()).or_else(|| crate::translit::name(piece))
-                            .map(|zh| (vec![(zh, 0)], true)).or_else(|| self.piece(piece, depth + 1, memo)),
+                            .map(|zh| (vec![(zh, 0)], true)).or_else(|| self.piece(piece, depth + 1, memo))
+                            .or_else(|| native_shape(piece).then(|| (vec![(cp437::decode(piece), 0)], true))),
                         // 任意佔位抓到只有主題的書名（`entitled {2}` 的 The Anatomy of the Eye）
                         _ => self.piece(piece, depth + 1, memo).or_else(|| self.title_vocab(piece).map(|zh| (vec![(zh.to_owned(), 0)], true))),
                     };
@@ -1394,15 +1407,14 @@ impl Dict {
             }
             Some(Arc::new(entry))
         };
-        // 音譯的名字一個音節一個字，中文兩格算常比英文寬：名字音譯開著時，名字與靠左的句型結果（「人名，職業」）
-        // 兩格算放不下就照實際字寬比。名字音譯關著時照舊用兩格算
-        let names_on = crate::translit::table().is_some();
-        let name_fits = |text: &str, align: &str| fits(text, align).or_else(|| (names_on && align.is_empty()).then(|| tight(text)).flatten());
+        // 一個中文字照兩格算放不下時（音譯的名字、「母雞，♀ (馴服)」這類短的「名稱，♀ (馴服)」），名字與靠左的句型結果
+        // 照字型實際字寬再比。一字兩格時 para_entry 同 text_entry，不會放寬
+        let left_fits = |text: &str, align: &str| fits(text, align).or_else(|| align.is_empty().then(|| tight(text)).flatten());
         // 小寫寫法的原文和 key 等長，替身字串與對齊都能照用
         let entry = lookup_name(self, key).map(|e| Arc::new(e.clone()))
-            .or_else(|| crate::names::get(key).and_then(|zh| name_fits(&zh, "")))
+            .or_else(|| crate::names::get(key).and_then(|zh| left_fits(&zh, "")))
             .or_else(|| self.key_text(key).and_then(|t| fits(&t, "").or_else(|| tight(&t))))
-            .or_else(|| self.apply_rules(key, 0, &mut Memo::new()).and_then(|(pieces, rule, _)| name_fits(&concat(pieces), &rule.align)))
+            .or_else(|| self.apply_rules(key, 0, &mut Memo::new()).and_then(|(pieces, rule, _)| left_fits(&concat(pieces), &rule.align)))
             .or_else(|| self.bare_creature(key, &mut Memo::new()).and_then(|pieces| fits(&concat(pieces), "")))
             // 只有主題的書名（作品清單）；單字的書名用詞（Peace、Change）單獨畫出時多半是介面字，不查
             .or_else(|| self.title_vocab(key).filter(|_| key.contains(&b' ')).and_then(|zh| fits(zh, "")))
@@ -1602,6 +1614,37 @@ mod tests {
         assert_eq!(cells(b"Abcdefghij"), Some(10), "放得下照實際字寬");
         assert_eq!(cells(b"Abcdefghi"), Some(9), "壓窄放得下：替身字串不超出原文，字交給整句貼圖壓窄");
         assert_eq!(cells(b"Abcdefgh"), None, "壓到九成還放不下照英文");
+    }
+
+    #[test]
+    fn left_rule_results_too_wide_in_grid_cells_fit_by_font_width() {
+        // 「幽默感不太在意」照一字兩格算 14 格，原文「Abc is calm」11 格；字型實際字寬 9.625 格放得下（名字音譯關著也一樣）
+        let make = || {
+            let mut d = Dict::default();
+            let chars = "他很有幽默感。不太在意";
+            assert!(d.set_glyphs(chars, vec![0; chars.chars().count() * 8 + 1]));
+            d.load_tsv("abc\t幽默感\n");
+            d.load_rules_tsv("{@1} is calm\t{1}不太在意\n{@1} is quiet\t{1}不太在意\tc\n");
+            d
+        };
+        assert!(make().rule_entry(b"Abc is calm").is_none(), "一字兩格（整句貼圖關著）照舊放棄");
+        crate::metrics::test_compact();
+        let d = make();
+        assert_eq!(d.rule_entry(b"Abc is calm").map(|e| e.shadow().len()), Some(10), "靠左的照字型實際字寬放得下");
+        assert!(d.rule_entry(b"Abc is quiet").is_none(), "置中的照舊照兩格算");
+    }
+
+    #[test]
+    fn lowercase_word_placeholder_takes_raws_nouns_only_in_lowercase() {
+        // 和 book_titles_use_their_own_vocabulary 同一份隨機字（先設的算數，各測試共用）
+        crate::names::set_forms(&[("rock", "岩"), ("rocks", "岩")], &[("large", "巨")]);
+        let d = dict("holy {_1}\t聖{1}\n");
+        let t = |s: &[u8]| d.translate_text(s);
+        assert_eq!(t(b"holy rock").as_deref(), Some("聖岩"));
+        assert_eq!(t(b"holy rocks").as_deref(), Some("聖岩"), "複數詞形也收");
+        assert_eq!(t(b"holy Rock"), None, "大寫開頭的是書名的隨機字，不收");
+        assert_eq!(t(b"Holy rock"), None, "不是書名句型：固定字照大小寫比");
+        assert_eq!(t(b"holy large"), None, "形容詞不收");
     }
 
     #[test]
@@ -2061,5 +2104,14 @@ mod tests {
         assert_eq!(t(b"the dwarf is happy"), None, "有句子才有的字（is）就不拆");
         crate::names::insert(b"The Planet of Destiny", "命運之星");
         assert_eq!(t(b"Thadar Tetha, \"The Planet of Destiny\"").as_deref(), Some("Thadar Tetha「命運之星」"), "{{?n}} 先查名稱表");
+    }
+
+    #[test]
+    fn native_names_copied_as_is_still_count_as_translated_links() {
+        let d = dict("{!1}, \"{?2}\"\t{1}「{2}」\n");
+        crate::names::insert(b"The Sieges of Scolding", "斥之圍城");
+        let link = |s: &[u8]| d.translate_fragment(s);
+        assert_eq!(link(b"Rislu Strepuv, \"The Sieges of Scolding\"").as_deref(), Some("Rislu Strepuv「斥之圍城」"), "傳說頁的戰爭連結：原名照抄也算翻好");
+        assert_eq!(link(b"he said, \"The Sieges of Scolding\""), None, "小寫的字不是原名，整條不算翻好");
     }
 }

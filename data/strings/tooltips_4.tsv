@@ -63,3 +63,5 @@ Make metal bars from ore here.  Can also refine coal into usable fuel or make al
 Make metal bars from ore here.  Can also refine coal into usable fuel or make alloys.  All tasks require fuel.	在這裡用礦石製作金屬錠。也能把煤精煉成可用的燃料，或製作合金。所有任務都需要燃料。	在这里用矿石制作金属锭。也能把煤精炼成可用的燃料，或制作合金。所有任务都需要燃料。		
 Make charcoal and ash from wood here.  Does not require fuel.	在這裡用木材製作木炭與灰燼。不需要燃料。	在这里用木材制作木炭和灰烬。不需要燃料。		
 Plant crops at the farmplot.  You will need seeds or spawn and must select crops by season.  Crops can be fertilized with potash.  Soil is richer deeper underground.	在農田種植作物。你需要種子或菌種，並且要依季節選擇作物。作物可以用鉀鹼施肥。地底越深，土壤越肥沃。	在农田种植作物。你需要种子或菌种，并且要按季节选择作物。作物可以用钾碱施肥。地下越深，土壤越肥沃。		
+Use tallow (rendered fat) or oil here with lye to make soap.	在這裡用獸脂（熬煉油脂）或油加上鹼液製作肥皂。	在这里用兽脂（熬炼油脂）或油加上碱液制作肥皂。		raws BUILDING_WORKSHOP:SOAP_MAKER TOOLTIP：建造選單「製皂工坊」的提示框
+A useful workshop for pressing liquids from various sources. Some plants might need to be milled first before they can be used.  Empty jugs are required to store the liquid products.	用來從各種原料壓榨出液體的實用工坊。有些植物要先磨過才能使用。榨出的液體要用空壺裝。	用来从各种原料压榨出液体的实用工坊。有些植物要先磨过才能使用。榨出的液体要用空壶装。		raws BUILDING_WORKSHOP:SCREW_PRESS TOOLTIP：建造選單「螺旋壓榨機」的提示框；原文第一個句號後只有一個空白，照抄

@@ -1,0 +1,22 @@
+en	zh-Hant	zh-Hans	align	note
+I don't want to talk about it.	我不想談這件事。	我不想谈这件事。		FUN_14068c230／FUN_14068c9b0 L909101-909265 交談：問家族祖先／家長的回答：同上的最後一句
+wives	妻子	妻子	inner	FUN_14075a580 L1030128 親屬稱謂（複數）
+no relationship	沒有親屬關係	没有亲属关系	inner	FUN_14075a580 L1030400 親屬稱謂（預設）
+up the stairs	樓上	楼上	inner	FUN_14093ded0 L1339677-1339717 據點建築的房間位置（旅店租房：adv_speech_conv4 的 Your room is {1}. 的 {1}）；up the stairs 譯「樓上」；術語例外：stair
+up the stairs, the door on your right	樓上，右手邊那扇門	楼上，右手边那扇门	inner	FUN_14093ded0 L1339677-1339717 據點建築的房間位置（旅店租房：adv_speech_conv4 的 Your room is {1}. 的 {1}）；up the stairs 譯「樓上」；術語例外：stair
+up the stairs, the door on your left	樓上，左手邊那扇門	楼上，左手边那扇门	inner	FUN_14093ded0 L1339677-1339717 據點建築的房間位置（旅店租房：adv_speech_conv4 的 Your room is {1}. 的 {1}）；up the stairs 譯「樓上」；術語例外：stair
+up the stairs, at the end of the hall	樓上，走廊盡頭	楼上，走廊尽头	inner	FUN_14093ded0 L1339677-1339717 據點建築的房間位置（旅店租房：adv_speech_conv4 的 Your room is {1}. 的 {1}）；up the stairs 譯「樓上」；術語例外：stair
+paved outdoor area	鋪面的戶外區域	铺面的户外区域	inner	FUN_140685d00 L905386-905462 交談 token [CONTEXT:ARCH_ELEMENT]（raws TEXT_SET:ARCH_INFO_JUSTIFICATION）
+uneven pillars	高低不一的柱子	高低不一的柱子	inner	FUN_140685d00 L905386-905462 交談 token [CONTEXT:ARCH_ELEMENT]（raws TEXT_SET:ARCH_INFO_JUSTIFICATION）
+square of pillars	方陣列柱	方阵列柱	inner	FUN_140685d00 L905386-905462 交談 token [CONTEXT:ARCH_ELEMENT]（raws TEXT_SET:ARCH_INFO_JUSTIFICATION）
+pillars on the perimeter	周邊的柱子	周边的柱子	inner	FUN_140685d00 L905386-905462 交談 token [CONTEXT:ARCH_ELEMENT]（raws TEXT_SET:ARCH_INFO_JUSTIFICATION）
+upper floors	樓上各層	楼上各层	inner	FUN_140685d00 L905386-905462 交談 token [CONTEXT:ARCH_ELEMENT]（raws TEXT_SET:ARCH_INFO_JUSTIFICATION）
+lower floors	樓下各層	楼下各层	inner	FUN_140685d00 L905386-905462 交談 token [CONTEXT:ARCH_ELEMENT]（raws TEXT_SET:ARCH_INFO_JUSTIFICATION）
+water pool	水池	水池	inner	FUN_140685d00 L905386-905462 交談 token [CONTEXT:ARCH_ELEMENT]（raws TEXT_SET:ARCH_INFO_JUSTIFICATION）
+lava pool	熔岩池	熔岩池	inner	FUN_140685d00 L905386-905462 交談 token [CONTEXT:ARCH_ELEMENT]（raws TEXT_SET:ARCH_INFO_JUSTIFICATION）
+stagnant pool	死水池	死水池	inner	FUN_140685d00 L905386-905462 交談 token [CONTEXT:ARCH_ELEMENT]（raws TEXT_SET:ARCH_INFO_JUSTIFICATION）
+open structure	開放式結構	开放式结构	inner	FUN_140685d00 L905386-905462 交談 token [CONTEXT:ARCH_ELEMENT]（raws TEXT_SET:ARCH_INFO_JUSTIFICATION）
+paved indoor areas	鋪面的室內區域	铺面的室内区域	inner	FUN_140685d00 L905386-905462 交談 token [CONTEXT:ARCH_ELEMENT]（raws TEXT_SET:ARCH_INFO_JUSTIFICATION）
+detailed surfaces	精雕的表面	精雕的表面	inner	FUN_140685d00 L905386-905462 交談 token [CONTEXT:ARCH_ELEMENT]（raws TEXT_SET:ARCH_INFO_JUSTIFICATION）
+no architectural element	沒有建築元素	没有建筑元素	inner	FUN_140685d00 L905386-905462 交談 token [CONTEXT:ARCH_ELEMENT]（raws TEXT_SET:ARCH_INFO_JUSTIFICATION）
+many died	死了很多人	死了很多人	inner	FUN_140675910 L895037-895528 交談：概述衝突時說出的經過（衝突概述選單在 adv_talk）：相對時間（FUN_140675670，首字大寫，inner 在 adv_talk）＋ I slew 清單／死者清單／A attacked B ＋[ in 地點]＋.：死者超過五個

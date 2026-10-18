@@ -196,6 +196,7 @@ More {@1}	更多{1}	更多{1}		text_book_instruction.txt 書名樣板 More [NO_A
 True {$1}	真實{1}	真实{1}		text_book_instruction.txt 書名樣板 True [NO_ART_NAME]；[NO_ART_NAME] 的去冠詞寫法由引擎自動收；縮短：樣板本身不能比英文寬（單獨畫的作品清單放不下就照英文）
 True {@1}	真實{1}	真实{1}		text_book_instruction.txt 書名樣板 True [NO_ART_NAME]；[NO_ART_NAME] 的去冠詞寫法由引擎自動收；{@1} 版：[NO_ART_NAME] 是「the＋一般字典的字」去掉 the（the Dwarves → Dwarves）時 {$1} 不收單字，改由這條收字典詞；排在 {$1} 版後面；縮短，同 True {$1}
 The {=1} {$2}	{1}之{2}	{1}之{2}		text_book_art.txt 書名樣板 The [ADJ] [NO_ART_NAME]；[NO_ART_NAME] 的去冠詞寫法由引擎自動收
+The {=1} {@2}	{1}之{2}	{1}之{2}		text_book_art.txt 書名樣板 The [ADJ] [NO_ART_NAME]；{@2} 版：[NO_ART_NAME] 是「the＋一般字典的字」去掉 the（the Dwarves → Dwarves）時 {$2} 不收單字，改由這條收字典詞（大要塞實機：The Lovely Dwarves）；排在 {$2} 版後面
 New {$1}	新{1}	新{1}		text_book_instruction.txt 書名樣板 New [NO_ART_NAME]；[NO_ART_NAME] 的去冠詞寫法由引擎自動收
 New {@1}	新{1}	新{1}		text_book_instruction.txt 書名樣板 New [NO_ART_NAME]；[NO_ART_NAME] 的去冠詞寫法由引擎自動收；{@1} 版：[NO_ART_NAME] 是「the＋一般字典的字」去掉 the（the Dwarves → Dwarves）時 {$1} 不收單字，改由這條收字典詞；排在 {$1} 版後面
 Of {$1}	說{1}	说{1}		text_book_instruction.txt 書名樣板 Of [NAME]

@@ -58,6 +58,7 @@ pub unsafe extern "C" fn luaopen_dflang(l: lua::State) -> c_int {
         lua::set_fn(l, c"set_ctb_layout", set_ctb_layout);
         lua::set_fn(l, c"set_name_layout", set_name_layout);
         lua::set_fn(l, c"load_names", load_names);
+        lua::set_fn(l, c"note_name", note_name);
         lua::set_fn(l, c"load_translit", load_translit);
         lua::set_fn(l, c"set_translit", set_translit);
         lua::set_fn(l, c"set_options", set_options);
@@ -336,6 +337,20 @@ unsafe extern "C" fn load_names(l: lua::State) -> c_int {
         names::set_table(table);
         lua::push_int(l, table.word_count() as i64);
         1
+    }
+}
+
+/// note_name(language_name 的位址, 英文名) → 還能不能再登記：讀檔時 Lua 把世界裡的名字一次登記（同遊戲組名字時，見 names::note）。
+/// 書名、清單裡嵌的名字遊戲不會再組，沒畫過的名字原本查不到
+unsafe extern "C" fn note_name(l: lua::State) -> c_int {
+    unsafe {
+        match (lua::arg_int(l, 1), lua::arg_bytes(l, 2)) {
+            (Some(name), Some(english)) if name > 0 => {
+                lua::push_bool(l, names::preload(name as usize, english));
+                1
+            }
+            _ => fail(l, "note_name: expects an address and a string"),
+        }
     }
 }
 

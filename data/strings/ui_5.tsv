@@ -74,6 +74,7 @@ Available as pet	可當寵物	可当宠物		FUN_140370bf0 L439301／FUN_1403731a
 Adopted somebody	已有主人	已有主人		FUN_140370bf0 寵物／牲畜：狀態（寵物已認養主人）
 Being traded	交易中	交易中		FUN_140370bf0 寵物／牲畜：狀態
 Ready for slaughter	待屠宰	待屠宰		FUN_140370bf0 寵物／牲畜：狀態
+Owned	有主	有主		FUN_140370bf0 L439134／FUN_1403731a0 L440776 寵物／牲畜：狀態（寵物已經有主人；字串編成指令裡的常數 0x64656e774f，pseudo-C 看不到字面，前幾輪漏掉）；原文 5 格，和 Adopted somebody「已有主人」分開
 Amount needed: 	所需數量：	所需数量：		FUN_140381630 L452427 建造材料選擇：後接數量（整串見 ui_5 規則）
 Select a merchant group to trade with:	選擇要交易的商隊：	选择要交易的商队：		FUN_140384850 L454494 交易畫面：選商隊
 There are no merchants present with which to trade.	目前沒有可以交易的商人。	目前没有可以交易的商人。		FUN_140384850 L455063 交易畫面

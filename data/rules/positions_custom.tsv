@@ -1,0 +1,17 @@
+en	zh-Hant	zh-Hans	align	note
+{*1}, most high {_2}	{1}，至高之{2}	{1}，至高之{2}		FUN_14095bf90 L1360116 HIGHEST_PRIEST 職位名：前綴＋職位名字的 the 名詞（raws 字表，language_word 單數或複數）；{_n} 只收字表名詞的小寫詞形；寫法同 professions.tsv 的 holy／sacred（人名, 職位；人名用 {*n}：每個字大寫開頭，舞蹈說明的「…of the lead, high leaps」這類逗號清單不會被當成人名＋職位）
+most high {_1}	至高之{1}	至高之{1}		FUN_14095bf90 L1360116 HIGHEST_PRIEST 職位名：前綴＋職位名字的 the 名詞（raws 字表，language_word 單數或複數）；{_n} 只收字表名詞的小寫詞形；寫法同 professions.tsv 的 holy／sacred（單獨畫出：貴族、神殿職位清單）
+{*1}, most exalted {_2}	{1}，至尊之{2}	{1}，至尊之{2}		FUN_14095bf90 L1360128 HIGHEST_PRIEST 職位名：前綴＋職位名字的 the 名詞（raws 字表，language_word 單數或複數）；{_n} 只收字表名詞的小寫詞形；寫法同 professions.tsv 的 holy／sacred（人名, 職位；人名用 {*n}：每個字大寫開頭，舞蹈說明的「…of the lead, high leaps」這類逗號清單不會被當成人名＋職位）
+most exalted {_1}	至尊之{1}	至尊之{1}		FUN_14095bf90 L1360128 HIGHEST_PRIEST 職位名：前綴＋職位名字的 the 名詞（raws 字表，language_word 單數或複數）；{_n} 只收字表名詞的小寫詞形；寫法同 professions.tsv 的 holy／sacred（單獨畫出：貴族、神殿職位清單）
+{*1}, most holy {_2}	{1}，至聖{2}	{1}，至圣{2}		FUN_14095bf90 L1360133 HIGHEST_PRIEST 職位名：前綴＋職位名字的 the 名詞（raws 字表，language_word 單數或複數）；{_n} 只收字表名詞的小寫詞形；寫法同 professions.tsv 的 holy／sacred（人名, 職位；人名用 {*n}：每個字大寫開頭，舞蹈說明的「…of the lead, high leaps」這類逗號清單不會被當成人名＋職位）
+most holy {_1}	至聖{1}	至圣{1}		FUN_14095bf90 L1360133 HIGHEST_PRIEST 職位名：前綴＋職位名字的 the 名詞（raws 字表，language_word 單數或複數）；{_n} 只收字表名詞的小寫詞形；寫法同 professions.tsv 的 holy／sacred（單獨畫出：貴族、神殿職位清單）
+{*1}, most sacred {_2}	{1}，最神聖之{2}	{1}，最神圣之{2}		FUN_14095bf90 L1360138 HIGHEST_PRIEST 職位名：前綴＋職位名字的 the 名詞（raws 字表，language_word 單數或複數）；{_n} 只收字表名詞的小寫詞形；寫法同 professions.tsv 的 holy／sacred（人名, 職位；人名用 {*n}：每個字大寫開頭，舞蹈說明的「…of the lead, high leaps」這類逗號清單不會被當成人名＋職位）
+most sacred {_1}	最神聖之{1}	最神圣之{1}		FUN_14095bf90 L1360138 HIGHEST_PRIEST 職位名：前綴＋職位名字的 the 名詞（raws 字表，language_word 單數或複數）；{_n} 只收字表名詞的小寫詞形；寫法同 professions.tsv 的 holy／sacred（單獨畫出：貴族、神殿職位清單）
+{*1}, absolute {_2}	{1}，無上之{2}	{1}，无上之{2}		FUN_14095bf90 L1360123 HIGHEST_PRIEST 職位名：前綴＋職位名字的 the 名詞（raws 字表，language_word 單數或複數）；{_n} 只收字表名詞的小寫詞形；寫法同 professions.tsv 的 holy／sacred（人名, 職位；人名用 {*n}：每個字大寫開頭，舞蹈說明的「…of the lead, high leaps」這類逗號清單不會被當成人名＋職位）
+absolute {_1}	無上之{1}	无上之{1}		FUN_14095bf90 L1360123 HIGHEST_PRIEST 職位名：前綴＋職位名字的 the 名詞（raws 字表，language_word 單數或複數）；{_n} 只收字表名詞的小寫詞形；寫法同 professions.tsv 的 holy／sacred（單獨畫出：貴族、神殿職位清單）
+{*1}, high {_2}	{1}，崇高{2}	{1}，崇高{2}		FUN_14095bf90 L1359961 HIGH_PRIEST 職位名：前綴＋職位名字的 the 名詞（raws 字表，language_word 單數或複數）；{_n} 只收字表名詞的小寫詞形；寫法同 professions.tsv 的 holy／sacred（人名, 職位；人名用 {*n}：每個字大寫開頭，舞蹈說明的「…of the lead, high leaps」這類逗號清單不會被當成人名＋職位）；譯「崇高」不加「之」：原文 , high 只有 7 格
+{*1}, first {_2}	{1}，首席{2}	{1}，首席{2}		FUN_14095bf90 L1359968 HIGH_PRIEST 職位名：前綴＋職位名字的 the 名詞（raws 字表，language_word 單數或複數）；{_n} 只收字表名詞的小寫詞形；寫法同 professions.tsv 的 holy／sacred（人名, 職位；人名用 {*n}：每個字大寫開頭，舞蹈說明的「…of the lead, high leaps」這類逗號清單不會被當成人名＋職位）
+{*1}, exalted {_2}	{1}，尊貴之{2}	{1}，尊贵之{2}		FUN_14095bf90 L1359973 HIGH_PRIEST 職位名：前綴＋職位名字的 the 名詞（raws 字表，language_word 單數或複數）；{_n} 只收字表名詞的小寫詞形；寫法同 professions.tsv 的 holy／sacred（人名, 職位；人名用 {*n}：每個字大寫開頭，舞蹈說明的「…of the lead, high leaps」這類逗號清單不會被當成人名＋職位）
+exalted {_1}	尊貴之{1}	尊贵之{1}		FUN_14095bf90 L1359973 HIGH_PRIEST 職位名：前綴＋職位名字的 the 名詞（raws 字表，language_word 單數或複數）；{_n} 只收字表名詞的小寫詞形；寫法同 professions.tsv 的 holy／sacred（單獨畫出：貴族、神殿職位清單）
+{*1}, head	{1}，首長	{1}，首长		FUN_1405d7f80 L797761 商會首領（CUSTOM_COMPANY_LEADER）單數 head；全域 head 是身體部位「頭部」，既有的 {*1}, {@2} 會畫成「頭部」，所以「人名, head」寫死在這裡
+{*1}, justice	{1}，審判官	{1}，审判官		FUN_14096ece0 L1367988 市政官員（CUSTOM_MARKET_OFFICIAL_）法官類單數 justice；全域 justice 是神祇領域「正義」，「人名, justice」寫死在這裡

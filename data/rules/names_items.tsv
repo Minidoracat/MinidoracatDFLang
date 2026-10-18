@@ -1,0 +1,48 @@
+en	zh-Hant	zh-Hans	align	note
+«{$1} ({@2}-bound codex)»	«{1}({2}封面書冊)»	«{1}({2}封面书册)»		同下，外面套了裝飾外框 «»（書都有封面裝飾）：整條寫出，不讓 names.tsv 的 «{1}» 把書名交給佔位（佔位裡 articles 的 The {%1}、清單句型會先把書名拆開：The Secret of X 變「祕傳說X」）
+«-{$1} ({@2}-bound codex)-»	«-{1}({2}封面書冊)-»	«-{1}({2}封面书册)-»		同上，裝飾外框裡再套品質記號（做工好）
+«+{$1} ({@2}-bound codex)+»	«+{1}({2}封面書冊)+»	«+{1}({2}封面书册)+»		同上（做工精細）
+«*{$1} ({@2}-bound codex)*»	«*{1}({2}封面書冊)*»	«*{1}({2}封面书册)*»		同上（上等）
+«≡{$1} ({@2}-bound codex)≡»	«≡{1}({2}封面書冊)≡»	«≡{1}({2}封面书册)≡»		同上（卓越）
+«☼{$1} ({@2}-bound codex)☼»	«☼{1}({2}封面書冊)☼»	«☼{1}({2}封面书册)☼»		同上（大師級）
+«{1} ({@2}-bound codex)»	«{1}({2}封面書冊)»	«{1}({2}封面书册)»		同上，書名不是 {$n} 收得到的（種族主題的書名 Better Dwarves 是書名樣板的 {@n} 寫法，{$n} 只收書名句型）：照一般譯文翻，翻不出來整條照英文
+«-{1} ({@2}-bound codex)-»	«-{1}({2}封面書冊)-»	«-{1}({2}封面书册)-»		同上
+«+{1} ({@2}-bound codex)+»	«+{1}({2}封面書冊)+»	«+{1}({2}封面书册)+»		同上
+«*{1} ({@2}-bound codex)*»	«*{1}({2}封面書冊)*»	«*{1}({2}封面书册)*»		同上
+«≡{1} ({@2}-bound codex)≡»	«≡{1}({2}封面書冊)≡»	«≡{1}({2}封面书册)≡»		同上
+«☼{1} ({@2}-bound codex)☼»	«☼{1}({2}封面書冊)☼»	«☼{1}({2}封面书册)☼»		同上
+{$1} ({@2}-bound codex)	{1}({2}封面書冊)	{1}({2}封面书册)		FUN_140a82c10 物品名：有書名的書冊「書名 (材料-bound codex)」；{1} 書名（書名樣板翻得出來時，翻不出來整條照英文）；本檔物品名的括號照 names.tsv 的物品外框用半形、不空格（全形常比原文寬，引擎就照畫英文；桶照 sentences_itemdesc_01 的既有譯法）
+{1} ({@2}-bound codex)	{1}({2}封面書冊)	{1}({2}封面书册)		同上，書名不是 {$n} 收得到的（Better Dwarves）：照一般譯文翻，翻不出來整條照英文
+{@1}-bound codices	{1}封面書冊	{1}封面书册		FUN_140a82c10 物品名：書冊複數（slate-bound codices）；單數見 books.tsv
+{%1} Barrel ({%2}) <#{#3}>	一桶{1}（{2}製） <#{3}>	一桶{1}（{2}制） <#{3}>		FUN_140ca2b90 物品名：裝了東西的桶「內容物 Barrel (材料)」＋件數 <#N>；譯法同 sentences_itemdesc_01 的 {%1} Barrel ({%2})；寫成整條，否則 zz 的 {%1} <#{#2}> 把前半交給佔位，佔位裡 articles 的 {%1}'s {%2} 會先把 yak's milk 拆開
+{%1} Bin ({%2}) <#{#3}>	{1}貨箱({2}) <#{3}>	{1}货箱({2}) <#{3}>		FUN_140ca3500 物品名：裝了東西的貨箱「內容物 Bin (材料)」＋件數 <#N>（Bar/Block Bin (pine) <#21>）
+large short {%1} skirt	大{1}短裙	大{1}短裙		FUN_140a82c10 物品名的尺寸前綴 large（給體型較大的種族穿）＋ short 材料 skirt；照 adv_create「大{1}皮革{2}」用「大」
+large short {%1} skirts	大{1}短裙	大{1}短裙		同上，複數
+large long {%1} skirt	大{1}長裙	大{1}长裙		同上，long 材料 skirt
+large long {%1} skirts	大{1}長裙	大{1}长裙		同上，複數
+large {%1} gem	大{1}寶石	大{1}宝石		FUN_140a82c10 case 0x2c 大寶石：large＋切工＋材料＋gem（large tapered baguette cut green glass gem）；同 large gem「大寶石」
+large {%1} gems	大{1}寶石	大{1}宝石		同上，複數
+large {%1} cabochon	大{1}蛋面	大{1}弧面		同上，蛋面切工（large round green glass cabochon）；蛋面／弧面同 names_inorganic_colors
+large {%1} cabochons	大{1}蛋面	大{1}弧面		同上，複數
+large {%1} {@2}	大{1}{2}	大{1}{2}		FUN_140a82c10 物品名的尺寸前綴 large（給體型較大的種族穿：large iron left gauntlets）；結尾要是字典裡的物品名，不寫通用的 large {%1}（傳說頁說明的 large X 會被拆開）
+{%1} figurine of {2}	描繪{2}的{1}小雕像	描绘{2}的{1}小雕像		物品名：有圖像主題的小雕像「材料 figurine of 主題」；主題是人名、a 生物或生物複數（cheetah bone figurine of Thabi Moltenbegin）
+{%1} figurines of {2}	描繪{2}的{1}小雕像	描绘{2}的{1}小雕像		同上，複數
+{%1} statue of {2}	描繪{2}的{1}雕像	描绘{2}的{1}雕像		同上，雕像（microcline statue of dwarves）
+{%1} statues of {2}	描繪{2}的{1}雕像	描绘{2}的{1}雕像		同上，複數
+{%1} (♀) cage ({%2})	{1}(♀)籠子({2})	{1}(♀)笼子({2})		物品名：關著生物的籠子「生物 (性別) cage (材料)」（goblin (♀) cage (peach wood)）；性別符號照用遊戲的半形括號
+{%1} (♂) cage ({%2})	{1}(♂)籠子({2})	{1}(♂)笼子({2})		同上，雄性
+{%1} (Fertile)	{1}(受精)	{1}(受精)		物品名：受精蛋（hen egg [7] (Fertile)）
+{%1} parchment scroll	{1}羊皮紙捲軸	{1}羊皮纸卷轴		物品名：程序生成生物（惡魔、夜行生物）皮做的羊皮紙捲軸（carmine demon parchment scroll）；生物名是句型翻的，{@1} {@2} 收不到
+{%1} parchment scrolls	{1}羊皮紙捲軸	{1}羊皮纸卷轴		同上，複數
+{%1} silk web	{1}絲蛛網	{1}丝蛛网		物品名：程序生成生物的絲做的蛛網（red diamond devil silk web）
+{%1} silk webs	{1}絲蛛網	{1}丝蛛网		同上，複數
+rough {@1}	{1}原石	{1}原石		FUN_140a82c10 未切割的寶石「rough 材料」（rough turquoise、rough turquoises：寶石複數見 strings/names_items_stocks）；照 raw「原石」、cut「刻面」；排在 {@1} {@2} 前，不用音色字 rough「粗糙」；想法標籤 rough sleep 另有整句
+perfect {@1}	完美{1}	完美{1}		FUN_140a82c10 case 0x2c 大寶石的 perfect 前綴（perfect fortification agate）
+{%1}, ♂ biscuits	{1}(♂)餅乾	{1}(♂)饼干		物品名：拿生物做的餅乾，遊戲把「生物, ♂」接在 biscuits 前（cave fish, ♂ biscuits）；照遊戲寫法翻
+{%1}, ♀ biscuits	{1}(♀)餅乾	{1}(♀)饼干		同上，雌性
+{%1} biscuits	{1}餅乾	{1}饼干		物品名：材料＋ biscuits（prepared loon intestines biscuits）
+{%1} waterskin ({%2})	{1}水袋({2})	{1}水囊({2})		物品名：裝了飲料的水袋「內容物 waterskin (材料)」（dwarven wine waterskin (dog leather)）
+stray {%1} {@2}	流浪{1}{2}	流浪{1}{2}		流浪家畜的身體部位（stray bunny skull）；names.tsv 的 stray {@1} 只收一個字典條目；結尾要是字典裡的部位名
+Horizontal {%1} Axle	{1}水平傳動軸	{1}水平传动轴		FUN_140553720 建築名（沒取名時）：Horizontal＋材料＋ Axle；照建造選單的 Horizontal axle
+Vertical {%1} Axle	{1}垂直傳動軸	{1}垂直传动轴		FUN_140553a50 建築名：Vertical＋材料＋ Axle
+Vertical {%1} Bars	{1}直立柵欄	{1}竖直栅栏		FUN_140550ef0 建築名：Vertical＋材料＋ Bars；照建造選單的 Vertical bars
