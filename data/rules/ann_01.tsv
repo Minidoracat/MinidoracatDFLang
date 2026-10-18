@@ -110,6 +110,8 @@ You and the {1} are indistinguishable!	你和{1}的聲音已難分彼此！	你�
 {1} is giving a creditable sermon.	{1}的講道可圈可點。	{1}的讲道可圈可点。		FUN_1400b1bf0 L108717 講道品質
 {1} artfully delivers a lucid and powerful sermon.	{1}巧妙地發表了一場清晰有力的講道。	{1}巧妙地发表了一场清晰有力的讲道。		FUN_1400b1bf0 L108717 講道品質
 {1} lays forth an awe-inspiring sermon for the ages!	{1}發表了一場令人敬畏、足以流傳千古的講道！	{1}发表了一场令人敬畏、足以流传千古的讲道！		FUN_1400b1bf0 L108717 講道品質
+The {1}, the performance troupe, has arrived.	表演團{1}到了。	表演团{1}到了。		同下，劇團名以 The 開頭時（The Gilded Troupe）：開頭是固定字 The 的句型（titles 的 The {=1} {@2} 這類）先比，下面開頭是佔位的那兩條輪不到；名稱表也登記了去掉 The 的寫法
+The {1}, a performance troupe, is visiting.	表演團{1}前來拜訪。	表演团{1}前来拜访。		同上
 {1}, the performance troupe, has arrived.	表演團{1}到了。	表演团{1}到了。		FUN_14010b150 L169979 表演團抵達；{1} 團名（FUN_140b92900）
 {1}, a performance troupe, is visiting.	表演團{1}前來拜訪。	表演团{1}前来拜访。		FUN_14010b150 L169979 表演團來訪
 {1} has arrived.	{1}到了。	{1}到了。		FUN_14010b150 L169912／169950 訪客抵達；{1}「人名, 職業」（FUN_141330c30，人名照抄，所以不能用 {%1}）

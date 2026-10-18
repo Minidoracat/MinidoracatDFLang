@@ -1,9 +1,4 @@
 en	zh-Hant	zh-Hans	align	note
-The Human {@1} {^2}: Help!	人類{1}{2}：救命！	人类{1}{2}：救命！		FUN_1404988b0 1404d7408 Help!  Save me! 帶講者時切出的第一小句；Help! 全域是介面的「說明！」，講者句型逐一寫出（race 版本對應 zz_adv_speech），本檔排在 zz_adv_speech 前
-The Dwarf {@1} {^2}: Help!	矮人{1}{2}：救命！	矮人{1}{2}：救命！		FUN_1404988b0 1404d7408 Help!  Save me! 帶講者時切出的第一小句；Help! 全域是介面的「說明！」，講者句型逐一寫出（race 版本對應 zz_adv_speech），本檔排在 zz_adv_speech 前
-The Elf {@1} {^2}: Help!	精靈{1}{2}：救命！	精灵{1}{2}：救命！		FUN_1404988b0 1404d7408 Help!  Save me! 帶講者時切出的第一小句；Help! 全域是介面的「說明！」，講者句型逐一寫出（race 版本對應 zz_adv_speech），本檔排在 zz_adv_speech 前
-The Goblin {@1} {^2}: Help!	哥布林{1}{2}：救命！	哥布林{1}{2}：救命！		FUN_1404988b0 1404d7408 Help!  Save me! 帶講者時切出的第一小句；Help! 全域是介面的「說明！」，講者句型逐一寫出（race 版本對應 zz_adv_speech），本檔排在 zz_adv_speech 前
-The {@1} {^2}: Help!	{1}{2}：救命！	{1}{2}：救命！		FUN_1404988b0 1404d7408 Help!  Save me! 帶講者時切出的第一小句；Help! 全域是介面的「說明！」，講者句型逐一寫出（race 版本對應 zz_adv_speech），本檔排在 zz_adv_speech 前
 I do not know!  My instructions come from {1}.	我不知道！我是聽{1}的指示行事。	我不知道！我是听{1}的指示行事。		FUN_1404988b0 1404d7a32-1404d7b17 回答「你效忠誰」：人物或勢力名（FUN_1406b6e80）；整句
 My instructions come from {1}.	我是聽{1}的指示行事。	我是听{1}的指示行事。		FUN_1404988b0 1404d7a32-1404d7b17 回答「你效忠誰」：人物或勢力名（FUN_1406b6e80）；帶講者時切出的第二小句
 I have no master, but {1} sometimes has need for my services.	我沒有主人，不過{1}有時會需要我效勞。	我没有主人，不过{1}有时会需要我效劳。		FUN_1404988b0 1404d7a32-1404d7b17 回答「你效忠誰」：人物或勢力名（FUN_1406b6e80）

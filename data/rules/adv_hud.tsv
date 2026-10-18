@@ -192,6 +192,27 @@ Move to {%1}	移動到{1}	移动到{1}		FUN_140841440 L1183841 冒險移動選�
 Charge {%1}	衝向{1}	冲向{1}		FUN_140841440 L1183839 冒險移動選項：生物或地格
 Climb to {%1}	攀到{1}	攀到{1}		FUN_140841900 L1184004 冒險移動選項
 Hold {%1}	抓住{1}	抓住{1}		FUN_140841bf0 L1184114 冒險移動選項：地格名
+View the {%1}	檢視{1}	查看{1}		FUN_140894190 L1231952 冒險物品互動選單：View＋物品名（FUN_140c65450 第四個參數 1，帶冠詞 the）；同函式的 View engraving 是整句；寫出 the，不寫成 View {%1}：Remove all 這類介面字串會被拼成「脫下全」
+Drop the {%1}	丟下{1}	丢下{1}		FUN_1408943a0 L1231993 冒險物品互動選單：Drop＋物品名（帶冠詞 the）
+Throw the {%1}	投擲{1}	投掷{1}		FUN_140894460 L1232034 冒險物品互動選單：Throw＋物品名（帶冠詞 the；實機 Throw the Filled waterskin (giant sparrow leather)）
+Wear the {%1}	穿戴{1}	穿戴{1}		FUN_140894550 L1232075 冒險物品互動選單：Wear＋物品名（帶冠詞 the）
+Remove the {%1}	脫下{1}	脱下{1}		FUN_140894640 L1232116 冒險物品互動選單：Remove＋物品名（帶冠詞 the）
+Name the {%1}	為{1}命名	为{1}命名		FUN_140835d50 L1176505 冒險物品互動選單：Name the＋物品名（不帶冠詞）；同 ui_4 的 Name the image「為圖像命名」
+Fill {%1} from {%2}	從{2}裝滿{1}	从{2}装满{1}		FUN_140835a60 L1176075 冒險動作：Fill＋容器＋ from＋來源物品；句尾方位括號由 zz_adv_activity 接
+Fill {%1} with {%2}	用{2}裝滿{1}	用{2}装满{1}		FUN_140835b90 L1176185 冒險動作：Fill＋容器＋ with＋液體
+Ignite {%1}	點燃{1}	点燃{1}		FUN_14083a100 L1179362 冒險動作：Ignite＋地格名（FUN_140e7d330）
+Fell {%1}	砍倒{1}	砍倒{1}		FUN_14083a2b0 L1179466 冒險動作：Fell＋樹的地格名；句尾方位括號由 zz_adv_activity 接
+Push {%1}	推動{1}	推动{1}		FUN_140840280 L1182968 冒險動作：Push＋物品名（無效時 item）
+Guide {%1}	牽引{1}	牵引{1}		FUN_1408405a0 L1183136 冒險動作：Guide＋載具物品名（無效時 item）；搬運路線站點的 Guide 是「牽車」，那裡另有整句；術語例外：guide；帶路牽著走，不是指南
+Mount {*1}	騎上{1}	骑上{1}		FUN_140841f00 L1184215 冒險移動選項：Mount＋生物名（FUN_141330c30，寵物有名字時是原名）；{*1} 只收每個字大寫的名字，不會吞掉句尾的方位括號（zz_adv_activity 接）
+Mount {%1}	騎上{1}	骑上{1}		同上，沒有名字的生物
+Release hold on {%1}	放開{1}	放开{1}		FUN_1408421a0 L1184322 冒險移動選項：放開抓住的地格（地格名）
+Claim {1} as pet	收{1}為寵物	收{1}为宠物		FUN_140842430 L1184486 冒險動作：Claim＋生物名＋ as pet；句尾方位括號由 zz_adv_activity 接；術語例外：claim；收養寵物，不是認領遺物
+Lead {*1}	牽引{1}	牵引{1}		FUN_1408425a0 L1184540 冒險動作：Lead＋生物名；同 adv_hud 的 Lead animal「牽引動物」；{*1} 同 Mount，句尾方位括號由 zz_adv_activity 接；不寫 Lead {%1}：會把金屬 lead 拼成「[需要牽引錠]」
+Stop leading {*1}	停止牽引{1}	停止牵引{1}		FUN_140842710 L1184590 冒險動作：Stop leading＋生物名
+Stop leading {%1}	停止牽引{1}	停止牵引{1}		同上，沒有名字的生物
+Shoot {%1}	射擊{1}	射击{1}		FUN_1408a4890 L1243725 冒險射擊選項：Shoot＋地格名（FUN_140e7d330）；射向生物的是 Aim carefully and shoot／Quickly shoot（adv_gaps）
+the Filled {%1} ({%2})	裝滿的{1} ({2})	装满的{1} ({2})		FUN_1408a8300 L1219454 冒險物品互動選單標題「What will you do with ＋物品名＋?」分三段畫，中間這段帶冠詞 the；裝了液體的容器名遊戲寫成大寫的 Filled（adv_journal2 的 Filled {%1} ({%2})），引擎只拿掉全是小寫字的 the 片段
 Hang from {%1}	懸吊在{1}	悬吊在{1}		FUN_140841bf0 L1184112 冒險移動選項
 Climb down from {%1}	從{1}往下爬	从{1}往下爬		FUN_140842940 L1184660 冒險移動選項
 Climb {%1}	攀爬{1}	攀爬{1}		FUN_1408422b0 L1184380 冒險移動選項：物品名（梯子等）

@@ -48,7 +48,7 @@
 - 佔位抓到的片段先查整句字典，再套其他句型（可以一層層遞迴），都沒有就照抄英文。上例的 `Avarice`、`Determination` 在 `data/strings` 裡，畫面就是「貪財與決心的歷史」。
 - 佔位不能相鄰（`{1}{2}`），否則切點不唯一。只有空白、標點夾著佔位的樣板（`{1} {2}`、`{1}, {2}`）會套到幾乎所有字串，`verify_mod.py` 擋下；樣板要有英文字、限定佔位（`{1}, {@2}` 的 `{@2}` 只收字典裡的職業名），或開頭、結尾是固定字（外框 `-{1}-`、後綴 `{1}, ♂`）。前面的佔位取最短的可行片段。佔位不會跨句：句末標點後接兩個空白，或句末標點（可再接收尾的引號 `?"`）後接一個空白再接大寫字母、`[B]` 這類標記或連結（段落框收掉了一個空白），都算句界（見「人物頁與訪客說明」「段落」）。
 - 規則依檔名、再依列的順序比對，先命中的先用：專門的句型寫在通用的前面。兩條句型分在不同檔案時，檔名在前的先比，通用句型（`It concerns {1}.`）會遮住後面檔案裡更專門的（`It concerns the lineage of {1}.`）：專門的那條要搬到通用那條的同一個檔案、寫在它前面，`note` 註明順序。沒有固定英文字的樣板（`{1}, {@2}`、`{@1} {@2}`）不論寫在哪裡，引擎都排在有英文字的樣板後面；清單句型（只有 `{%n}` 和標點，例 `{%1}, {%2}`）只套在佔位抓到的片段裡（整句最外層不套），並且最先比對。開頭就是不限定佔位 `{n}` 的樣板排在同一類其他樣板後面：公告 `{1} flounders in the lava!` 會被戰報的 `{%1} {@2} {%3} in the {%4}!` 先比中（「The giant cave spider」拆成 giant／cave／spider flounders），主詞翻得出來的情況要另寫 `{%1} flounders in the lava!`，放在 `{1}` 那條前面。
-- `align` 欄寫 `inner` 的句型也只套在佔位抓到的片段裡：冠詞外框 `The {%1}`（`data/rules/articles.tsv`）套在整句上，會把「The dwarf is singing well.」去掉 The、拿剩下的半句去比別的句型，比出不相干的譯文。
+- `align` 欄寫 `inner` 的句型也只套在佔位抓到的片段裡：冠詞外框 `The {%1}`（`data/rules/articles.tsv`）套在整句上，會把「The dwarf is singing well.」去掉 The、拿剩下的半句去比別的句型，比出不相干的譯文。佔位抓到的片段本身是一整句（以 . 或 ! 結尾）時，引擎也不套冠詞外框：說話框 `{1} (to {2}): {%3}` 的台詞「The goblin Atu Doomtaken wants …」才不會被去掉 The、連種族一起變成英文。
 - 查整句字典時大小寫不同也找得到（`the woodcutter` 對到職業 `Woodcutter`、`Trade Depot` 對到 `Trade depot`），完全相同的寫法優先；只差大小寫的兩條譯文不同時不猜。
 - 只換標點、不含中文字的外框規則（例：`-{1}-`、`（{1}）`、`{1}，♂`，全形標點不算中文字），至少要有一個佔位翻得出來才算命中，否則照畫英文。
 - 樣板本身的格數由 `verify_mod.py` 檢查；填入片段後如果比原文寬，引擎當場放棄、照畫英文，不會蓋到旁邊。整句貼圖開著時，靠左的句型結果（清單的「名字，種族，♀ (馴服)」）一字兩格算放不下的，改照字型實際字寬再比，壓到九成放得下就畫（`docs/analysis.md` 第 2 點）；置中、靠右的照舊照格數。
@@ -198,7 +198,7 @@ raws 裡的生物、植物、材料、物品、身體部位名稱，以及執行
 uv run scripts/gen_events.py
 ```
 
-它把來源編成 `data/rules/_events.tsv`（排在所有規則檔最前）與 `zz_events.tsv`（最後），`verify_mod.py` 檢查兩者與來源一致。
+它把來源編成 `data/rules/_events.tsv`（排在講者句型 `__speakers.tsv` 之後、其他規則檔之前）與 `zz_events.tsv`（最後），`verify_mod.py` 檢查兩者與來源一致。
 
 - 完整句寫去掉日期的子句，align 寫 `inner`、以句號結尾：`{1} settled in {2}.` →「{1}定居於{2}。」。這條只當樣板，產生器替它產生三種帶日期的整句：`In {#1}, …`（「{1}年，…」）、`In the {@1} of {#2}, …`（「{2}年{1}，…」）、`In a time before time, …`（「太古之時，…」）；陰謀（note 寫 FUN_1402aaf70）另產生審訊紀錄的 `Subject revealed that in …`。
 - 短語寫不含日期的 inner 句型、不加句號：`the founding of {1}` →「{1}的建立」；產生器加上結尾的三種日期（`… in {#2}` →「{2}年{1}的建立」）。沒有佔位的短語是字串，日期版要自己寫。
@@ -227,9 +227,10 @@ uv run scripts/gen_events.py
 - 冒險畫面同字不同義的單字放 `data/screens/dungeonmode.tsv`（合成選單 `Butcher` 是「屠宰」，全域是職業「屠夫」；能力名 `Spit`、`Curse`），交談選單的英文關鍵字靠 `dungeonmode.Conversation.tsv` 的 `*` 列保留（見「一詞多義」）。
 - 人物稱呼「the 職位 名字」靠 `{^n}` 句型；職位名（含程序生成的「fire commissioner」「royal chancellor」，`adv_titles.tsv`）要寫成整句條目，`{@n}` 才查得到。「the 種族 職業 名字」的種族逐一寫出（`the dwarf {@1} {^2}`），不寫成 `the {@1} {@2} {^3}`：後者會把「the attack on Boatmurdered」拆成「攻擊開Boatmurdered」。每個字都大寫的稱呼（交談頭像下的「The Dwarf Merchant X」）用 `{*n}`：`The Dwarf {@1} {*2}`，放在 `adv_talk.tsv`（檔名排在地圖標題的 `The {%1} Of {2}` 前面）。
 - 攻擊選單、確認框單獨畫出的無名生物（`the cave crocodile`、`The cave crocodile`）不用寫句型：整句翻不出來時，引擎把冠詞後面全是小寫字、沒有 is、of 這類句子用字的「the 片段」去掉冠詞再查（只收整段翻成中文的）；全域的 `The {@1}` 句型會搶走書名、地名（`The Attack`），不要寫。
-- 遊戲截成「開頭...」的清單字串（交談選單「Start new conversation with the Human baro...」、開局的「From Stukos òrdir, The Razor of Incinera...」）不用另寫：引擎記下截短前的原文來翻（見 `docs/analysis.md` 第 17 點）。
+- 遊戲截成「開頭...」的清單字串（交談選單「Start new conversation with the Human baro...」、開局的「From Stukos òrdir, The Razor of Incinera...」）不用另寫：引擎記下截短前的原文來翻；記不到原文、又截在字與字之間的（同伴清單「Zebna Histekuthros, Donkey, ♂ ...」），引擎翻前面那段、接「…」（見 `docs/analysis.md` 第 17 點）。
 - 開局畫面的外觀、性格段落和人物頁是同一批句子，引擎逐句查，不用整段寫。
-- 交談紀錄（畫面上方有頭像的框）每一則是「講者: 內容」，遊戲自己切行；引擎整則查、查不到就逐句查，再依中文重新換行（見 `docs/analysis.md` 第 20 點）。所以交談內容一句一條（兩個空白隔開的每一句都要能單獨翻），講者句型已經有，只翻冒號後面的句子；檔名用 `adv_speech_*`，不檢查格數。
+- 交談紀錄（畫面上方有頭像的框、按鍵開的整份通知清單）每一則是「講者: 內容」，遊戲自己切行；引擎整則查、查不到就逐句查，再依中文重新換行（見 `docs/analysis.md` 第 20 點）。所以交談內容一句一條（兩個空白隔開的每一句都要能單獨翻），講者句型已經有，只翻冒號後面的句子；檔名用 `adv_speech_*`，不檢查格數。
+- 講者句型（`The {@1} {^2}: {%3}`、`The {@1} {^2} (to {3}): {%4}` 等）寫在檔名排最前面的 `data/rules/__speakers.tsv`：台詞以 The 開頭時（`The Basic Society is skirmishing with us.`），其他檔案開頭也是固定字 The 的台詞句型會先比，把整個講者吞進佔位（「magistrate Orid Ikislada（對矛手…）：…」）。帶固定台詞的講者句型（`The {@1} {^2}: Help!`）也寫在這個檔，排在通用的講者句型前面。
 
 ## DFHack 視窗
 

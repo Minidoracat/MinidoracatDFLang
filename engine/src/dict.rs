@@ -152,6 +152,9 @@ pub struct Rule {
     /// 只用在佔位裡（align 欄寫 `inner`）：冠詞外框 `The {%1}` 套在整句上，會把「The dwarf is singing well.」去掉 The
     /// 之後拿剩下的半句去比別的句型，比出不相干的譯文；放在佔位裡（「{%1} misses {%2}!」的 The vulture）才安全。
     inner: bool,
+    /// 冠詞外框（inner 的 `the {%1}`、`A {%1}`…）：片段是一整句（句號、驚嘆號結尾）時不套。句子開頭的 The 拿掉後，
+    /// 「The goblin Atu Doomtaken wants …」會照「goblin Atu Doomtaken wants …」去比，主詞的「the 種族 名字」就認不出來
+    article: bool,
     /// 書名句型（有 `{$n}`、`{&n}`、`{=n}`）：`{$n}` 的片段也可以是別的書名（見 title_of）
     title: bool,
 }
@@ -334,6 +337,8 @@ impl Rule {
             }),
             loose: matches!(pattern.first(), Some(Seg::Cap(_, Kind::Any | Kind::Skip | Kind::EnName | Kind::Native))),
             inner: align == "inner",
+            article: align == "inner"
+                && matches!(pattern.as_slice(), [Seg::Lit(l), Seg::Cap(_, Kind::Full)] if [&b"the "[..], b"The ", b"a ", b"A ", b"an ", b"An "].contains(&l.as_slice())),
             title: pattern.iter().any(|s| matches!(s, Seg::Cap(_, Kind::Title | Kind::Noun | Kind::Adj))),
             pattern,
             output,
@@ -1232,10 +1237,11 @@ impl Dict {
                 self.comma_keys.iter().any(|k| key.len() > k.len() && key.ends_with(k) && !key[..key.len() - k.len()].ends_with(b", "))
             })
         };
+        let sentence = key.ends_with(b".") || key.ends_with(b"!");
         for &i in &self.rule_index.candidates(key) {
             let rule = &self.rules[i as usize];
-            // 清單與冠詞外框只會是句子的一部分：最外層（整句）不套，免得把「人名 likes 甲, 乙」當成一項
-            if (depth == 0 && (rule.list || rule.inner)) || (rule.list && ends_with_comma_entry()) {
+            // 清單與冠詞外框只會是句子的一部分：最外層（整句）不套，免得把「人名 likes 甲, 乙」當成一項；冠詞外框也不套整句的片段
+            if (depth == 0 && (rule.list || rule.inner)) || (rule.list && ends_with_comma_entry()) || (rule.article && sentence) {
                 continue;
             }
             if let Some((out, clean)) = self.try_rule(rule, key, depth, memo) {
@@ -1932,6 +1938,15 @@ mod tests {
         d.load_tsv("dwarf\t矮人\nsinging\t歌唱\nwell\t水井\nvulture\t禿鷲\n");
         assert_eq!(d.translate_text(b"The dwarf is singing well."), None, "整句去掉 The 之後不能拿半句去比想法句");
         assert_eq!(d.translate_text(b"The vulture misses the dwarf!").as_deref(), Some("禿鷲沒打中矮人！"));
+    }
+
+    #[test]
+    fn article_wrappers_leave_whole_sentences_in_placeholders_alone() {
+        let mut d = dict("The {%1}\t{1}\tinner\nthe {%1}\t{1}\tinner\n{1} (to {2}): {%3}\t{1}（對{2}）：{3}\n\
+                          The goblin {*1}\t哥布林{1}\n{1} wants {%2} returned.\t{1}希望歸還{2}。\n");
+        d.load_tsv("axe\t斧頭\nyou\t你\n");
+        assert_eq!(d.translate_text(b"Urist (to you): The goblin Atu Doomtaken wants the axe returned.").as_deref(),
+                   Some("Urist（對你）：哥布林Atu Doomtaken希望歸還斧頭。"), "句首的 The 留給主詞的「the 種族 名字」，不被冠詞外框拿掉");
     }
 
     #[test]

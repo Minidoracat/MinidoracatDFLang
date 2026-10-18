@@ -692,6 +692,9 @@ local function start()
     -- 冒險模式上方的訊息框（交談紀錄，遊戲自己切行）；找不到只有這個框維持英文
     ok, err = attach_hooks(engine, {'adv_log', 'adv_talk_log'})
     if not ok then fail('%s；冒險模式的交談紀錄維持英文', err) end
+    -- 冒險模式的通知清單（整份通知，遊戲自己切行）；找不到只有這份清單的多行通知維持英文
+    ok, err = attach_hooks(engine, {'adv_announcements'})
+    if not ok then fail('%s；冒險模式通知清單的多行通知維持英文', err) end
     -- 彩色文字框（人物頁的想法、記憶、性格）；找不到只有這些維持英文
     if ctb_ok then
         ok, err = attach_hooks(engine, {'ctb_add_string'})

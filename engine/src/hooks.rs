@@ -133,14 +133,17 @@ type ScreenFn = unsafe extern "C" fn(*mut u8);
 type LogFn = unsafe extern "C" fn(*mut u8, i32, i32);
 /// (交談畫面, ?, 框左緣, 框右緣)
 type TalkLogFn = unsafe extern "C" fn(*mut u8, u32, i32, i32);
+/// (冒險模式的通知清單, ?, 框左緣, 框右緣)
+type AnnouncementsFn = unsafe extern "C" fn(*mut u8, u64, i32, i32);
 /// render_things()：非同步執行緒每幀把畫面寫進緩衝區（整句貼圖在這裡收一幀的句子，見 overlay.rs）
 type RenderThingsFn = unsafe extern "C" fn();
 
-pub const HOOKS: [&str; 16] = [
+pub const HOOKS: [&str; 17] = [
     "addst", "addst_flag", "top_addst", "addcoloredst", "mtb_set_width", "add_anchored_tile", "wrap_lines", "ctb_add_string",
     "translate_name", "string_resize", "adv_appearance", "adv_personality", "adv_log", "adv_talk_log", "render_things", "native_name",
+    "adv_announcements",
 ];
-static TRAMPOLINES: [AtomicUsize; 16] = [const { AtomicUsize::new(0) }; 16];
+static TRAMPOLINES: [AtomicUsize; 17] = [const { AtomicUsize::new(0) }; 17];
 /// wrap_text 的位址（只登記、不攔；它切行時呼叫 wrap_lines）：enable 時從呼叫它的程式碼找出遊戲啟動時就切好的提示（見 lines.rs）
 pub static WRAP_TEXT: OnceLock<usize> = OnceLock::new();
 
@@ -172,7 +175,8 @@ pub fn attach(name: &str, target: usize) -> Result<(), String> {
         12 => hook_adv_log as *const (),
         13 => hook_adv_talk_log as *const (),
         14 => hook_render_things as *const (),
-        _ => hook_native_name as *const (),
+        15 => hook_native_name as *const (),
+        _ => hook_adv_announcements as *const (),
     };
     let detour = unsafe { RawDetour::new(target as *const (), hook) }.map_err(|e| e.to_string())?;
     TRAMPOLINES[index].store(detour.trampoline() as *const () as usize, Ordering::Release);
@@ -431,7 +435,13 @@ fn lookup<'a>(dict: &'a Dict, key: &[u8], y: i32) -> Option<Found<'a>> {
     if let Some(e) = cut_original(key).and_then(|full| lookup(dict, &full, y)).and_then(|f| dict.cut_entry(key, &f.text)) {
         return Some(Found::Rule(e));
     }
-    dict.rule_entry(key).map(Found::Rule)
+    if let Some(e) = dict.rule_entry(key) {
+        return Some(Found::Rule(e));
+    }
+    // 遊戲直接改長度截短、沒經過 resize 的字串（冒險同伴清單的名字欄寫死 33 格：「Zebna Histekuthros, Donkey, ♂ ...」）：
+    // 截在字與字之間時翻前面完整的那段，接「…」；截在字中間的照英文
+    let head = key.strip_suffix(b" ...").filter(|h| h.iter().any(u8::is_ascii_alphabetic))?;
+    lookup(dict, head, y).and_then(|f| dict.cut_entry(key, &format!("{}…", f.text))).map(Found::Rule)
 }
 
 // ---- 截短前的原文 ----
@@ -1221,11 +1231,20 @@ unsafe extern "C" fn hook_adv_talk_log(ui: *mut u8, a: u32, left: i32, right: i3
     }
 }
 
+/// 冒險模式的通知清單（按鍵 A_ANNOUNCEMENTS 開的整份通知）：同上，行清單在 +8（FUN_140864970 依寬 85 切行）。
+unsafe extern "C" fn hook_adv_announcements(panel: *mut u8, a: u64, left: i32, right: i32) {
+    let orig: AnnouncementsFn = unsafe { std::mem::transmute(TRAMPOLINES[16].load(Ordering::Acquire)) };
+    unsafe {
+        plan_report_lines(panel as usize + 8);
+        orig(panel, a, left, right);
+    }
+}
+
 /// 報告切成的行清單（vector<行*>）：每行開頭是那一行的 std::string，+0x20 指回報告，報告 +8 是整則原文。
 /// 同一則報告的幾行連在一起；只有一行的報告，行字串是空的、畫的是報告本身的全文。整則（「講者: 內容」）查字典，
 /// 查不到就逐句查，中文以這幾行最長的一行為寬重新換行（見 lines.rs）。
-/// ponytail: 位移照 53.16 的 FUN_1408020c0（訊息框 +0x43d0）、FUN_140867e10（交談畫面 +0xb0）寫死；改版時特徵碼對不上就不攔，
-/// 只有這兩個框維持英文。
+/// ponytail: 位移照 53.16 的 FUN_1408020c0（訊息框 +0x43d0）、FUN_140867e10（交談畫面 +0xb0）、FUN_140883f40（通知清單 +8）寫死；
+/// 改版時特徵碼對不上就不攔，只有這幾個框維持英文。
 unsafe fn plan_report_lines(vec: usize) {
     let dict = DICT.load(Ordering::Acquire);
     if dict.is_null() || !ENABLED.load(Ordering::Relaxed) {
@@ -1432,8 +1451,21 @@ fn label_tiles(n: usize, entry: &Entry, dict: &Dict, font: impl Fn(u8) -> i32) -
 
 #[cfg(test)]
 mod tests {
-    use super::{dfhack_place, label_tiles, placed_align, wrap_plan, Columns, MissLog, MISS_BYTES, MISS_LIMIT};
+    use super::{dfhack_place, label_tiles, lookup, placed_align, wrap_plan, Columns, MissLog, MISS_BYTES, MISS_LIMIT};
     use crate::dict::Dict;
+
+    #[test]
+    fn a_string_cut_between_words_translates_the_words_before_the_cut() {
+        // 冒險同伴清單的名字欄寫死 33 格，遊戲直接改長度截短、沒經過 resize（「Zebna Histekuthros, Donkey, ♂ ...」）
+        let mut d = Dict::default();
+        let chars = "斑驢…";
+        assert!(d.set_glyphs(chars, vec![0; chars.chars().count() * 2]));
+        d.load_tsv("Zebna, Donkey\t斑驢\n");
+        let text = |k: &[u8]| lookup(&d, k, 0).map(|f| f.text.clone());
+        assert_eq!(text(b"Zebna, Donkey ...").as_deref(), Some("斑驢…"), "截在字與字之間：翻前面那段，接「…」");
+        assert_eq!(text(b"Zebna, Mule ..."), None, "前面那段翻不出來照英文");
+        assert_eq!(text(b"Zebna, Mu..."), None, "截在字中間不猜");
+    }
 
     #[test]
     fn dfhack_names_narrowed_by_font_width_are_drawn_by_the_overlay() {

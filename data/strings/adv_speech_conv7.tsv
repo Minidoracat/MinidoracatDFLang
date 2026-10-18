@@ -11,6 +11,8 @@ I am compelled to continue!	我身不由己，非繼續不可！	我身不由己
 Maybe you're right.	也許你說得對。	也许你说得对。		FUN_1404988b0 1404d3300 交談：被說服，四選一
 Yes, I can see it clearly now.	是啊，我現在看清楚了。	是啊，我现在看明白了。		FUN_1404988b0 1404d3300 交談：被說服，四選一
 I have been so foolish.  Yes, I agree.	我真是太傻了。對，我同意。	我真是太傻了。对，我同意。		FUN_1404988b0 1404d3300 交談：被說服，四選一
+I have been so foolish.	我真是太傻了。	我真是太傻了。		同上；交談紀錄（冒險模式上方的訊息框）照句間的兩個空白分兩句查，前後兩句各要一條（冒險模式實機：前句被 zz_adv_speech 的 I have {1}. 拼成「been so foolish在我這裡。」）
+Yes, I agree.	對，我同意。	对，我同意。		同上，後句
 You know, I think you're right.	說真的，我覺得你說得對。	说真的，我觉得你说得对。		FUN_1404988b0 1404d3300 交談：被說服，四選一
 Despite some minor reservations...	雖然我還有些小小的保留……	虽然我还有些小小的保留……		FUN_1404988b0 1404d38ba 交談：讓步（奉承型）開頭五選一，接「  」再接一個空白與九句之一；這兩個以「...  」結尾，後句單獨成句
 Ignoring that I don't quite concur...	先不管我其實不太認同……	先不说我其实不太认同……		FUN_1404988b0 1404d38ba 交談：讓步（奉承型）開頭五選一，接「  」再接一個空白與九句之一；這兩個以「...  」結尾，後句單獨成句

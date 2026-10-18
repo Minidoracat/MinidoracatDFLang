@@ -51,7 +51,8 @@ SCREEN_HEADER = ["en", "zh-Hant", "zh-Hans", "align", "row", "note"]
 NAME_HEADER = ["word", "pos", "en", "zh-Hant", "zh-Hans", "note"]
 TRANSLIT_HEADER = ["en", "zh-Hant", "zh-Hans", "note"]
 HOOKS = ("addst", "addst_flag", "top_addst", "addcoloredst", "mtb_set_width", "add_anchored_tile", "wrap_text", "wrap_lines",
-         "ctb_add_string", "translate_name", "native_name", "string_resize", "adv_appearance", "adv_personality", "adv_log", "adv_talk_log")
+         "ctb_add_string", "translate_name", "native_name", "string_resize", "adv_appearance", "adv_personality", "adv_log", "adv_talk_log",
+         "adv_announcements")
 PACKAGE_SUFFIXES = {".txt", ".tsv", ".lua", ".dll", ".otf", ".md", ".png"}
 # {1}～{9}；{#1} 只收數字、{@1} 只收字典裡的字詞、{%1} 只收翻得出來的片段、{~1} 同 {1} 但譯文可省略、{^1} 只收大寫開頭的名字、
 # {*1} 只收每個字大寫、第一個字不在字典裡的人名、{?1} 同 {1} 但遊戲組的英文名拆回中文、{!1} 同 {1} 但原名在名字音譯開著時音譯；
