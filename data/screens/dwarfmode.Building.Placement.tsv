@@ -4,3 +4,4 @@ Auto	自動	自动			DFHack hack/lua/plugins/buildingplan/planneroverlay.lua L76
 Up	上	上			DFHack hack/lua/plugins/buildingplan/planneroverlay.lua L783 樓梯類型（上樓梯）
 Down	下	下			DFHack hack/lua/plugins/buildingplan/planneroverlay.lua L771 樓梯類型（下樓梯）
 empty	空位	空位			DFHack hack/lua/plugins/buildingplan/planneroverlay.lua L609 我的最愛空欄位（全域 empty 是空虛）
+to	至	至			FUN_1403d6950 0x1403e2b99 放置壓力板：礦車觸發的重量範圍「數字Γ／Any」與「數字Γ／Any」之間單獨畫的 to（L0x1403e2a7e、0x1403e2c5a 兩側另畫）；單字不放全域

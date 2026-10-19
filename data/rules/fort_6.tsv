@@ -1,0 +1,20 @@
+en	zh-Hant	zh-Hans	align	note
+Kill {%1}	擊殺{1}	击杀{1}		FUN_1410f2b10 L2513174-2513336 小隊命令說明（squad_order_kill_listst）：Kill＋空白＋一個目標的「名字, 職業」（FUN_141330c30）或同種族的複數名（FUN_140aa3bd0）；FUN_1410f28b0 L2513087 擊殺歷史人物：Kill ＋ the 種族 名字（FUN_140b92f10）；小隊側欄與排程的命令欄
+Kill {*1}	擊殺{1}	击杀{1}		FUN_1410f28b0 L2513087 同上：只有名字的歷史人物（{*1} 只收每字大寫的名字）；排在 Kill {%1} 後面
+Drive {1} from {2}	將{1}逐出{2}	将{1}逐出{2}		FUN_1410f29f0 L2513133-2513136 小隊命令說明：Drive＋勢力名（FUN_140b92900）＋ from ＋據點名（FUN_140b93930）；同組 Drive any members of {1} out of {2} 在 fort_gaps
+Cause trouble for {1}	找{1}的麻煩	找{1}的麻烦		FUN_1410f2a90 L2513157 小隊命令說明：{1} 勢力名；與 adv_journal 的 Cause trouble for（找下列勢力的麻煩）一致
+Defend Burrow {#1} etc.	防守活動區 {1} 等	防守活动区 {1} 等		FUN_1410f2ea0 L2513372-2513393 小隊命令說明：第一個活動區沒有名字時寫 Burrow 編號，有兩個以上活動區時接 etc.
+Defend Burrow {#1}	防守活動區 {1}	防守活动区 {1}		FUN_1410f2ea0 同上，只有一個活動區
+Defend {1} etc.	防守{1}等	防守{1}等		FUN_1410f2ea0 同上：玩家取的活動區名＋ etc.；排在 Burrow 編號兩條後面
+Defend {1}	防守{1}	防守{1}		FUN_1410f2ea0 同上：玩家取的活動區名；排在 etc. 那條後面
+Retrieve {1}	取回{1}	取回{1}		FUN_1410f2fb0 L2513412 小隊命令說明：{1} 神器名（FUN_140b94400）；整句 Retrieve Artifact 另有條目
+Take Over {1}	接管 {1}	接管 {1}		FUN_1410f2ff0 L2513457 派遣的小隊命令說明（大寫 Over，與 world_01 的派遣名稱 Take over {1} 同譯）
+Demand Tribute from {1}	向 {1} 索取貢品	向 {1} 索取贡品		FUN_1410f2ff0 L2513465 同上（大寫 Tribute，與 world_01 的 Demand tribute from {1} 同譯）；Raze／Seize／Explore／Pillage／Raid 大小寫與派遣名稱相同，已有
+Patrol Route {#1}	巡邏路線 {1}	巡逻路线 {1}		FUN_1410f31d0 L2513517-2513522 小隊命令說明：巡邏路線沒有名字時寫 Route 編號
+Patrol {1}	巡邏{1}	巡逻{1}		FUN_1410f31d0 L2513529 同上：玩家取的巡邏路線名；排在 Route 編號那條後面
+{1}, Pos {#2}	{1}，{2} 號	{1}，{2} 号		FUN_1403a9380 L477917-477937（lambda FUN_1403cfe10）小隊名（FUN_140a946e0 或玩家取的名字）＋ , Pos ＋小隊內位置編號；「，位置 3」比原文寬，寫成「3 號」
++{#1} tasks	+{1} 任務	+{1} 任务		FUN_14039ac20 L469733-469744 場所清單（工坊列）：除了第一項工作外還有幾項（DAT_14162bc90 是 +）；「項任務」比原文寬
++{#1} task	+{1} 任務	+{1} 任务		FUN_14039ac20 同上，單數
+{#1} member	{1} 名成員	{1} 名成员		FUN_1403b9270 L489543 場所指派的公會清單：成員數（單數，與 adv_journal 的 {#1} members 同譯；「1 名成員」與原文同為 8 格）
+{#1} worker	{1} 名工人	{1} 名工人		FUN_1403b9270 L489460 場所指派的公會清單：工人數（單數，與 ui_6 的 {#1} workers 同譯；「1 名工人」與原文同為 8 格，不比原文寬）
+{1}, {#2}☼	{1}，{2}☼	{1}，{2}☼		FUN_1403eafc3 L515413-515423 已接受的請願：Current temple location: 下一列「場所名, 價值☼」（0xf 是 ☼）；L515618 公會大廳同

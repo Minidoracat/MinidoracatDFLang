@@ -489,7 +489,8 @@ fn accepts(kind: Kind, text: &[u8], pos: usize, end: usize, fits: &mut dyn FnMut
 
 /// `{*n}` 的名字：每個字都大寫開頭（見 capital），只有字母、引號、連字號（說話的「Urist: Hello.」不算），沒有 Of、The、And
 /// （地圖標題「The Human Hamlet Of Kelral」的 Of Kelral 不是名字）；而且職位已經完了：名字的第一個字（Hunter）、或前面的字接
-/// 名字開頭的幾個字（Fire Commissioner、Master Of Beasts）查得到 `term`（字典詞），就是佔位切太早，把職位的後半當成名字
+/// 名字開頭的幾個字（Fire Commissioner、Master Of Beasts）查得到 `term`（字典詞），就是佔位切太早，把職位的後半當成名字。
+/// 名字在字串開頭、有兩個字以上時第一個字不查：前面沒有職位可切，名剛好是英文字的人（「Song Ogurustba's right foot」）才收得到
 fn is_proper(text: &[u8], pos: usize, end: usize, term: &mut dyn FnMut(&[u8]) -> bool) -> bool {
     let name = &text[pos..end];
     let mut words = name.split(|&c| c == b' ');
@@ -500,7 +501,8 @@ fn is_proper(text: &[u8], pos: usize, end: usize, term: &mut dyn FnMut(&[u8]) ->
     }
     let word_ends: Vec<usize> = name.iter().enumerate().filter(|&(_, &c)| c == b' ').map(|(i, _)| pos + i).chain([end]).collect();
     let starts: Vec<usize> = text[..pos].iter().enumerate().filter(|&(_, &c)| c == b' ').map(|(i, _)| i + 1).chain([0]).filter(|&s| s < pos).collect();
-    !term(&text[pos..word_ends[0]]) && !starts.iter().any(|&s| word_ends.iter().any(|&e| term(&text[s..e])))
+    let first_word_ok = (pos == 0 && word_ends.len() > 1) || !term(&text[pos..word_ends[0]]);
+    first_word_ok && !starts.iter().any(|&s| word_ends.iter().any(|&e| term(&text[s..e])))
 }
 
 /// 名字的一個字：大寫字母、CP437 0x80 以上（Ïtrem、òrdir）或引號加大寫（綽號）開頭
@@ -984,10 +986,11 @@ impl Dict {
     }
 
     /// 整段是玩家取的名字（names::is_player）就照原文畫。名字剛好和字典的整句同字時（倉儲區取名「Gems」、區域取名「Food Storage」）照翻：
-    /// 同一個字也是遊戲畫的類別名（區域清單裡沒取名的黏土區畫「Clay」，倉儲區也能取名 Clay），分不出是誰的
+    /// 同一個字也是遊戲畫的類別名（區域清單裡沒取名的黏土區畫「Clay」，倉儲區也能取名 Clay），分不出是誰的。
+    /// 模組畫面例外（hooks::on_mods_screen）：那時名單裡是第三方模組的名稱、作者、說明，畫面上幾乎只有它們，同字也照原文
     pub fn keeps_player_name(&self, key: &[u8]) -> bool {
         let key = key.trim_ascii();
-        crate::names::is_player(key) && lookup_name(self, key).is_none()
+        crate::names::is_player(key) && (lookup_name(self, key).is_none() || crate::hooks::on_mods_screen())
     }
 
     /// 句型規則檔，格式同 load_tsv；依檔案順序比對，先寫的優先，但清單句型一律最先，沒有英文字的樣板一律排在有英文字的後面，
@@ -1540,8 +1543,10 @@ impl Dict {
                 }
             }
         }
-        for rule in &self.tail_rules {
-            for start in (1..head.len()).filter(|&i| head[i] == b' ' && head[i + 1..].starts_with(&rule.prefix)) {
+        // 片語一段段接在句尾，最後一段最靠右：從右往左找片語的開頭，同一個位置照清單順序試（長的、專門的在前）。
+        // 從左往右的話，前一段片語的任意佔位會把後一段整個吞進去（「in order to glorify X after the death of Y」的 X 收到句尾）
+        for start in (1..head.len()).rev().filter(|&i| head[i] == b' ') {
+            for rule in self.tail_rules.iter().filter(|rule| head[start + 1..].starts_with(&rule.prefix)) {
                 let Some((tail, _)) = self.try_rule(rule, &head[start + 1..], depth, memo) else { continue };
                 let tail = tail.into_iter().map(|(t, at)| (t, at + start + 1)).collect();
                 if let Some(found) = self.with_tail(key, start, end, tail, depth, memo) {
@@ -2375,6 +2380,8 @@ mod tests {
                    Some("Urist前往Boatmurdered，為了叛亂，在遭放逐之後。"), "原因＋情境兩段");
         assert_eq!(zh(b"Urist departed to Boatmurdered in order to sanctify \x010\x02.").as_deref(),
                    Some("Urist前往Boatmurdered，為了將☺0☻奉為聖物。"), "含名字的片語");
+        assert_eq!(zh(b"Urist departed to Boatmurdered in order to sanctify \x010\x02 after the death of \x011\x02.").as_deref(),
+                   Some("Urist前往Boatmurdered，為了將☺0☻奉為聖物，在☺1☻死後。"), "兩段含名字的片語：先去掉最右邊那段，前一段的 {{1}} 不吞後一段");
         assert_eq!(zh(b"The artwork relates to the departure of Urist for an insurrection in 3.").as_deref(),
                    Some("這與3年Urist的離去，為了叛亂有關。"), "短語（結尾是日期）裡的片語跟著短語");
         assert_eq!(zh(b"The artwork relates to the departure of Urist after the death of Bob in 3.").as_deref(),
@@ -2415,6 +2422,16 @@ mod tests {
         assert_eq!(t(b"the dwarf is happy"), None, "有句子才有的字（is）就不拆");
         crate::names::insert(b"The Planet of Destiny", "命運之星");
         assert_eq!(t(b"Thadar Tetha, \"The Planet of Destiny\"").as_deref(), Some("Thadar Tetha「命運之星」"), "{{?n}} 先查名稱表");
+    }
+
+    #[test]
+    fn a_name_at_the_start_may_begin_with_a_dictionary_word() {
+        let mut d = dict("{*1}'s head\t{1}的頭部\nThe Human {@1} {*2}\t人類{1}{2}\n");
+        d.load_tsv("song\t歌謠\nhunter\t獵人\nBeast Hunter\t猛獸獵人\nbeast\t野獸\n");
+        let t = |s: &[u8]| d.translate_text(s);
+        assert_eq!(t(b"Song Ogurustba's head").as_deref(), Some("Song Ogurustba的頭部"), "字串開頭的名字前面沒有職位，名剛好是英文字也收");
+        assert_eq!(t(b"Song's head"), None, "只有一個字、又是字典詞的照舊不收");
+        assert_eq!(t(b"The Human Beast Hunter Ala").as_deref(), Some("人類猛獸獵人Ala"), "前面有職位時照舊查第一個字");
     }
 
     #[test]

@@ -1,0 +1,30 @@
+en	zh-Hant	zh-Hans	align	note
+{*1}, Stray {@2}	{1}，流浪{2}	{1}，流浪{2}		FUN_141330c30 名字, 職業：有名字的流浪動物（The dwarves have given a resident Stray Cat the name … 之後，Fluffy, Stray Cat has adopted …）；Stray 由 FUN_14132f980 L2537555 加在種族名前，{@2} 收字典裡的生物名；名字用 {*1}，同 professions.tsv 的人名＋貴族職位
+The army is commanded by {%1}.	這支軍隊由{1}率領。	这支军队由{1}率领。		FUN_140110460 L173645 圍城公告的指揮官段落單獨一段：彈出框整則（ann_01 的 {%1}[B]… 句型）比不到時，段落框在 [B] 處分段逐段查；三段以上（開頭＋指揮官＋兵種＋隨行）的整則句型的 {%1} 要跨 [B]，佔位不跨句，所以靠這三條逐段翻
+Beware their {%1}!	當心他們的{1}！	当心他们的{1}！		FUN_140110460 L173749 圍城公告兵種段（單獨一段）；{1} 兵種片段（ann_01 的 heavily-armored／elite／mounted {%1}，職業複數在 strings/ann_12）
+With them {%1}!	隨行的還有{1}！	随行的还有{1}！		FUN_140110460 L173788 圍城公告隨行者段（單獨一段）；{1} 同 ann_01 的 come …／comes a … 片段
+baron of {*1}	{1}男爵	{1}男爵		FUN_14132f980 職業名：有轄地的貴族職位（raws MOUNTAIN NAME_*，小寫）由 FUN_1409bdfb0 接「 of 據點英文名」；給 {1} has become a {%2}.（FUN_14133bcf0 L2545181 職業變更）等 {%n} 片段用；{*1} 只收大寫開頭的名字，單獨畫出時不會吞掉後面的句子
+baron consort of {*1}	{1}男爵眷侶	{1}男爵眷侣		FUN_14132f980 職業名：有轄地的貴族職位（raws MOUNTAIN SPOUSE_*，小寫）由 FUN_1409bdfb0 接「 of 據點英文名」；給 {1} has become a {%2}.（FUN_14133bcf0 L2545181 職業變更）等 {%n} 片段用；{*1} 只收大寫開頭的名字，單獨畫出時不會吞掉後面的句子
+baroness of {*1}	{1}女男爵	{1}女男爵		FUN_14132f980 職業名：有轄地的貴族職位（raws MOUNTAIN NAME_*，小寫）由 FUN_1409bdfb0 接「 of 據點英文名」；給 {1} has become a {%2}.（FUN_14133bcf0 L2545181 職業變更）等 {%n} 片段用；{*1} 只收大寫開頭的名字，單獨畫出時不會吞掉後面的句子
+baroness consort of {*1}	{1}女男爵眷侶	{1}女男爵眷侣		FUN_14132f980 職業名：有轄地的貴族職位（raws MOUNTAIN SPOUSE_*，小寫）由 FUN_1409bdfb0 接「 of 據點英文名」；給 {1} has become a {%2}.（FUN_14133bcf0 L2545181 職業變更）等 {%n} 片段用；{*1} 只收大寫開頭的名字，單獨畫出時不會吞掉後面的句子
+count of {*1}	{1}伯爵	{1}伯爵		FUN_14132f980 職業名：有轄地的貴族職位（raws MOUNTAIN NAME_*，小寫）由 FUN_1409bdfb0 接「 of 據點英文名」；給 {1} has become a {%2}.（FUN_14133bcf0 L2545181 職業變更）等 {%n} 片段用；{*1} 只收大寫開頭的名字，單獨畫出時不會吞掉後面的句子
+count consort of {*1}	{1}伯爵眷侶	{1}伯爵眷侣		FUN_14132f980 職業名：有轄地的貴族職位（raws MOUNTAIN SPOUSE_*，小寫）由 FUN_1409bdfb0 接「 of 據點英文名」；給 {1} has become a {%2}.（FUN_14133bcf0 L2545181 職業變更）等 {%n} 片段用；{*1} 只收大寫開頭的名字，單獨畫出時不會吞掉後面的句子
+countess of {*1}	{1}女伯爵	{1}女伯爵		FUN_14132f980 職業名：有轄地的貴族職位（raws MOUNTAIN NAME_*，小寫）由 FUN_1409bdfb0 接「 of 據點英文名」；給 {1} has become a {%2}.（FUN_14133bcf0 L2545181 職業變更）等 {%n} 片段用；{*1} 只收大寫開頭的名字，單獨畫出時不會吞掉後面的句子
+countess consort of {*1}	{1}女伯爵眷侶	{1}女伯爵眷侣		FUN_14132f980 職業名：有轄地的貴族職位（raws MOUNTAIN SPOUSE_*，小寫）由 FUN_1409bdfb0 接「 of 據點英文名」；給 {1} has become a {%2}.（FUN_14133bcf0 L2545181 職業變更）等 {%n} 片段用；{*1} 只收大寫開頭的名字，單獨畫出時不會吞掉後面的句子
+duke of {*1}	{1}公爵	{1}公爵		FUN_14132f980 職業名：有轄地的貴族職位（raws MOUNTAIN NAME_*，小寫）由 FUN_1409bdfb0 接「 of 據點英文名」；給 {1} has become a {%2}.（FUN_14133bcf0 L2545181 職業變更）等 {%n} 片段用；{*1} 只收大寫開頭的名字，單獨畫出時不會吞掉後面的句子
+duke consort of {*1}	{1}公爵眷侶	{1}公爵眷侣		FUN_14132f980 職業名：有轄地的貴族職位（raws MOUNTAIN SPOUSE_*，小寫）由 FUN_1409bdfb0 接「 of 據點英文名」；給 {1} has become a {%2}.（FUN_14133bcf0 L2545181 職業變更）等 {%n} 片段用；{*1} 只收大寫開頭的名字，單獨畫出時不會吞掉後面的句子
+duchess of {*1}	{1}女公爵	{1}女公爵		FUN_14132f980 職業名：有轄地的貴族職位（raws MOUNTAIN NAME_*，小寫）由 FUN_1409bdfb0 接「 of 據點英文名」；給 {1} has become a {%2}.（FUN_14133bcf0 L2545181 職業變更）等 {%n} 片段用；{*1} 只收大寫開頭的名字，單獨畫出時不會吞掉後面的句子
+duchess consort of {*1}	{1}女公爵眷侶	{1}女公爵眷侣		FUN_14132f980 職業名：有轄地的貴族職位（raws MOUNTAIN SPOUSE_*，小寫）由 FUN_1409bdfb0 接「 of 據點英文名」；給 {1} has become a {%2}.（FUN_14133bcf0 L2545181 職業變更）等 {%n} 片段用；{*1} 只收大寫開頭的名字，單獨畫出時不會吞掉後面的句子
+Baron of {*1}	{1}男爵	{1}男爵		同上職位名，首字大寫的寫法（人物頁、清單把職業首字改大寫，如實機的 Expedition leader）
+Baron consort of {*1}	{1}男爵眷侶	{1}男爵眷侣		同上職位名，首字大寫的寫法（人物頁、清單把職業首字改大寫，如實機的 Expedition leader）
+Baroness of {*1}	{1}女男爵	{1}女男爵		同上職位名，首字大寫的寫法（人物頁、清單把職業首字改大寫，如實機的 Expedition leader）
+Baroness consort of {*1}	{1}女男爵眷侶	{1}女男爵眷侣		同上職位名，首字大寫的寫法（人物頁、清單把職業首字改大寫，如實機的 Expedition leader）
+Count of {*1}	{1}伯爵	{1}伯爵		同上職位名，首字大寫的寫法（人物頁、清單把職業首字改大寫，如實機的 Expedition leader）
+Count consort of {*1}	{1}伯爵眷侶	{1}伯爵眷侣		同上職位名，首字大寫的寫法（人物頁、清單把職業首字改大寫，如實機的 Expedition leader）
+Countess of {*1}	{1}女伯爵	{1}女伯爵		同上職位名，首字大寫的寫法（人物頁、清單把職業首字改大寫，如實機的 Expedition leader）
+Countess consort of {*1}	{1}女伯爵眷侶	{1}女伯爵眷侣		同上職位名，首字大寫的寫法（人物頁、清單把職業首字改大寫，如實機的 Expedition leader）
+Duke of {*1}	{1}公爵	{1}公爵		同上職位名，首字大寫的寫法（人物頁、清單把職業首字改大寫，如實機的 Expedition leader）
+Duke consort of {*1}	{1}公爵眷侶	{1}公爵眷侣		同上職位名，首字大寫的寫法（人物頁、清單把職業首字改大寫，如實機的 Expedition leader）
+Duchess of {*1}	{1}女公爵	{1}女公爵		同上職位名，首字大寫的寫法（人物頁、清單把職業首字改大寫，如實機的 Expedition leader）
+Duchess consort of {*1}	{1}女公爵眷侶	{1}女公爵眷侣		同上職位名，首字大寫的寫法（人物頁、清單把職業首字改大寫，如實機的 Expedition leader）
+Mission Report:  (Set out {@1} {#2})	派遣報告（{2} 年{1}出發）	派遣报告（{2} 年{1}出发）		FUN_1409df530 L1433411-1433491 要塞派遣報告標題：派遣種類不在 Raze／Raid／Recover／Rescue／Request workers／外交這幾種時，遊戲不接派遣名稱，留下兩個空白；有派遣名稱的在 ui_13

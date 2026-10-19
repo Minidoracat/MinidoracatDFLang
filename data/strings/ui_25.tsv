@@ -1,0 +1,54 @@
+en	zh-Hant	zh-Hans	align	note
+These are the default Dwarf Fortress bodies for creatures, including randomly generated creatures and tissue templates.	矮人要塞預設的生物身體結構，包括隨機生成生物的身體結構與組織範本。	矮人要塞默认的生物身体结构，包括随机生成生物的身体结构和组织模板。		data/vanilla/vanilla_bodies/info.txt DESCRIPTION：模組清單（標題畫面「模組」FUN_140258c60 L316995、建立世界的模組選擇 FUN_140df8a80）的說明，wrap_text 切行；整條寫，免得 These are {%1}. 拼出「這些是…」
+These are the default Dwarf Fortress buildings.	矮人要塞預設的建築。	矮人要塞默认的建筑。		vanilla_buildings/info.txt DESCRIPTION：同上
+These are the graphics for the default Dwarf Fortress buildings.	矮人要塞預設建築的圖形。	矮人要塞默认建筑的图形。		vanilla_buildings_graphics/info.txt DESCRIPTION：同上
+These are the default Dwarf Fortress creatures.	矮人要塞預設的生物。	矮人要塞默认的生物。		vanilla_creatures/info.txt DESCRIPTION：同上；原本由 These are {%1}. 拼成「這些是預設矮人要塞生物。」
+These are the default Dwarf Fortress extinct creatures.	矮人要塞預設的已滅絕生物。	矮人要塞默认的已灭绝生物。		vanilla_creatures_extinct/info.txt DESCRIPTION：同上
+These are the images of the default Dwarf Fortress extinct creatures.	矮人要塞預設已滅絕生物的圖像。	矮人要塞默认已灭绝生物的图像。		vanilla_creatures_extinct_graphics/info.txt DESCRIPTION：同上；原本拼成半中半英「這些是the default … extinct creatures的畫像」
+These are the images of the default Dwarf Fortress creatures.  Some parts, like the dwarf wielded equipment images, rely on the vanilla items or equivalents being present.	矮人要塞預設生物的圖像。部分內容（例如矮人手持裝備的圖像）需要有原版物品或同等的物品才能正常顯示。	矮人要塞默认生物的图像。部分内容（例如矮人手持装备的图像）需要有原版物品或同等的物品才能正常显示。		vanilla_creatures_graphics/info.txt DESCRIPTION：同上；兩句整條寫（wrap_text 整段先查）
+The object definitions for shapes and colors.	形狀與顏色的物件定義。	形状和颜色的对象定义。		vanilla_descriptors/info.txt DESCRIPTION：同上；術語例外：object；raws 物件定義，不是遊戲裡的物品
+The graphics for shapes and colors.  Includes the palette which is linked to the defined colors.	形狀與顏色的圖形。包含與已定義顏色連結的調色盤。	形状和颜色的图形。包含与已定义颜色关联的调色板。		vanilla_descriptors_graphics/info.txt DESCRIPTION：同上
+These are the default Dwarf Fortress civilizations.	矮人要塞預設的文明。	矮人要塞默认的文明。		vanilla_entities/info.txt DESCRIPTION：同上
+The default Dwarf Fortress graphics for walls, floors, fluids, and other environmental objects.	矮人要塞預設的牆壁、地板、液體與其他環境物件圖形。	矮人要塞默认的墙壁、地板、液体和其他环境物体图形。		vanilla_environment/info.txt DESCRIPTION：同上；術語例外：object；地圖上的環境物件，不是物品
+These are the default Dwarf Fortress interactions, which allow creatures to do some unusual actions.	矮人要塞預設的互動，讓生物能做出一些特殊的行為。	矮人要塞默认的交互，让生物能做出一些特殊的行为。		vanilla_interactions/info.txt DESCRIPTION：同上；用語同模組名「原版互動／原版交互」
+These are the images used by the default Dwarf Fortress interactions.	矮人要塞預設互動所用的圖像。	矮人要塞默认交互所用的图像。		vanilla_interactions_graphics/info.txt DESCRIPTION：同上
+The default Dwarf Fortress graphics for the interface buttons, icons, etc.	矮人要塞預設的介面按鈕、圖示等圖形。	矮人要塞默认的界面按钮、图标等图形。		vanilla_interface/info.txt DESCRIPTION：同上
+These are the default Dwarf Fortress items.	矮人要塞預設的物品。	矮人要塞默认的物品。		vanilla_items/info.txt DESCRIPTION：同上
+These are the graphics for the default Dwarf Fortress items.	矮人要塞預設物品的圖形。	矮人要塞默认物品的图形。		vanilla_items_graphics/info.txt DESCRIPTION：同上
+These are the default Dwarf Fortress words and their translations into the in-game languages.	矮人要塞預設的詞彙，以及它們在遊戲內各種語言中的翻譯。	矮人要塞默认的词汇，以及它们在游戏内各种语言中的翻译。		vanilla_languages/info.txt DESCRIPTION：同上
+These are the default Dwarf Fortress materials.	矮人要塞預設的材料。	矮人要塞默认的材料。		vanilla_materials/info.txt DESCRIPTION：同上
+These are the triggers for the default Dwarf Fortress music and sound effects.	矮人要塞預設音樂與音效的觸發條件。	矮人要塞默认音乐和音效的触发条件。		vanilla_music/info.txt DESCRIPTION：同上
+These are the default Dwarf Fortress plants and fungi.	矮人要塞預設的植物與真菌。	矮人要塞默认的植物和真菌。		vanilla_plants/info.txt DESCRIPTION：同上
+These are the graphics for the default Dwarf Fortress plants and fungi.	矮人要塞預設植物與真菌的圖形。	矮人要塞默认植物和真菌的图形。		vanilla_plants_graphics/info.txt DESCRIPTION：同上
+These are the default Dwarf Fortress generated objects.	矮人要塞預設的程序化生成物件。	矮人要塞默认的程序化生成对象。		vanilla_procedural/info.txt DESCRIPTION：同上；用語同模組名「原版程序化生成物件」；術語例外：object
+These are the default Dwarf Fortress reactions, which are various task-like activities.	矮人要塞預設的反應，也就是各種類似工作的活動。	矮人要塞默认的反应，也就是各种类似工作的活动。		vanilla_reactions/info.txt DESCRIPTION：同上
+Various text strings used by the game.	遊戲使用的各種文字字串。	游戏使用的各种文本字符串。		vanilla_text/info.txt DESCRIPTION：同上
+The default Dwarf Fortress graphics for the world map.	矮人要塞預設的世界地圖圖形。	矮人要塞默认的世界地图图形。		vanilla_world_map/info.txt DESCRIPTION：同上
+Item creation failed: banned.	物品建立失敗：已遭封鎖。	物品创建失败：已被封禁。		FUN_140da2ac0 L2042771 上傳模組到 Steam 工作坊：建立工作坊物品的結果（存進模組 +0x270，標題畫面「模組」頁 FUN_140258c60 L316909 畫出）；Item 是 Steam 工作坊物品
+Item creation failed: timeout.	物品建立失敗：逾時。	物品创建失败：超时。		同上
+Item creation failed: insufficient privilege.	物品建立失敗：權限不足。	物品创建失败：权限不足。		同上
+Item creation failed: invalid param.	物品建立失敗：參數無效。	物品创建失败：参数无效。		同上
+Item creation failed: access denied.	物品建立失敗：拒絕存取。	物品创建失败：拒绝访问。		同上
+Item creation failed: not logged on.	物品建立失敗：未登入。	物品创建失败：未登录。		同上
+Item creation failed: service unavailable.	物品建立失敗：服務無法使用。	物品创建失败：服务不可用。		同上
+Item creation failed: duplicate request.	物品建立失敗：重複的請求。	物品创建失败：重复的请求。		同上
+Item creation failed: duplicate name.	物品建立失敗：名稱重複。	物品创建失败：名称重复。		同上
+Item creation failed: limit exceeded.	物品建立失敗：超過上限。	物品创建失败：超出上限。		同上
+Item creation failed: file not found.	物品建立失敗：找不到檔案。	物品创建失败：找不到文件。		同上
+Item creation failed: service read only.	物品建立失敗：服務目前唯讀。	物品创建失败：服务当前只读。		同上
+Item creation failed: general failure.	物品建立失敗：一般錯誤。	物品创建失败：一般错误。		同上
+Item submission failed: banned.	物品提交失敗：已遭封鎖。	物品提交失败：已被封禁。		FUN_140da30c0 L2042855 上傳模組到 Steam 工作坊：提交更新的結果（同上畫在模組頁）
+Item submission failed: timeout.	物品提交失敗：逾時。	物品提交失败：超时。		同上
+Item submission failed: insufficient privilege.	物品提交失敗：權限不足。	物品提交失败：权限不足。		同上
+Item submission failed: duplicate request.	物品提交失敗：重複的請求。	物品提交失败：重复的请求。		同上
+Item submission failed: duplicate name.	物品提交失敗：名稱重複。	物品提交失败：名称重复。		同上
+Item submission failed: not logged on.	物品提交失敗：未登入。	物品提交失败：未登录。		同上
+Item submission failed: service unavailable.	物品提交失敗：服務無法使用。	物品提交失败：服务不可用。		同上
+Item submission failed: locking failed.	物品提交失敗：鎖定失敗。	物品提交失败：锁定失败。		同上
+Item submission failed: file not found.	物品提交失敗：找不到檔案。	物品提交失败：找不到文件。		同上
+Item submission failed: service read only.	物品提交失敗：服務目前唯讀。	物品提交失败：服务当前只读。		同上
+Item submission failed: limit exceeded.	物品提交失敗：超過上限。	物品提交失败：超出上限。		同上
+Item submission failed: general failure.	物品提交失敗：一般錯誤。	物品提交失败：一般错误。		同上
+Item submission failed: access denied.	物品提交失敗：拒絕存取。	物品提交失败：拒绝访问。		同上
+Item submission failed: invalid parameter.	物品提交失敗：參數無效。	物品提交失败：参数无效。		同上
+OK	好	好		FUN_141410c80 L2680688 存檔、複製失敗等警告視窗的按鈕（DAT_1417857ac，exe 裡只有這裡用）；原文只有 2 格，寫不下「確定」，同 DFHack 訊息框的 Ok

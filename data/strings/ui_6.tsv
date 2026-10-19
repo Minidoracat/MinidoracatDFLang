@@ -138,9 +138,9 @@ A high priest must then be elevated.	接著必須拔擢一名大祭司。	接着
 No temple location currently assigned to a zone.	目前沒有區域被指派為神殿場所。	目前没有区域被分配为神殿场所。		FUN_1403eafc3 L515244 請願／協議（神殿、公會） L515338
 No guildhall location currently assigned to a zone.	目前沒有區域被指派為公會大廳場所。	目前没有区域被分配为公会大厅场所。		FUN_1403eafc3 L515244 請願／協議（神殿、公會） L515559
 Current temple location:	目前的神殿場所：	当前的神殿场所：		FUN_1403eafc3 L515244 請願／協議（神殿、公會） L515403：下一列是場所名, 價值☼
-Current top temple location:	目前最佳的神殿場所：	当前最佳的神殿场所：		FUN_1403eafc3 L515244 請願／協議（神殿、公會） L515408：有兩處以上時
+Current top temple location:	目前價值最高的神殿場所：	当前价值最高的神殿场所：		FUN_1403eafc3 L515244 請願／協議（神殿、公會） L515408：有兩處以上時；L515368 取價值最高的一處，譯「價值最高」不譯「最佳」
 Current guildhall location:	目前的公會大廳場所：	当前的公会大厅场所：		FUN_1403eafc3 L515244 請願／協議（神殿、公會） L515618
-Current top guildhall location:	目前最佳的公會大廳場所：	当前最佳的公会大厅场所：		FUN_1403eafc3 L515244 請願／協議（神殿、公會） L515623
+Current top guildhall location:	目前價值最高的公會大廳場所：	当前价值最高的公会大厅场所：		FUN_1403eafc3 L515244 請願／協議（神殿、公會） L515623；同上取價值最高的一處
 Created Wealth:	創造的財富：	创造的财富：		FUN_1403eafc3 L515733 財富／貿易資訊
 Trade Information:	貿易資訊：	贸易信息：		FUN_1403eafc3 L515733 財富／貿易資訊
 Weapons:	武器：	武器：		FUN_1403eafc3 L515733 財富／貿易資訊

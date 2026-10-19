@@ -5,6 +5,7 @@ There is nothing to catch in the {@1} swamps.	{1}的沼澤裡沒有魚可釣。	
 There is nothing to catch in the {@1} eerie cavern.	{1}的詭異洞穴裡沒有魚可釣。	{1}的诡异洞穴里没有鱼可钓。		FUN_1413435b0 2550801：釣魚，地底層
 There is nothing to catch in the {@1} cavern.	{1}的洞穴裡沒有魚可釣。	{1}的洞穴里没有鱼可钓。		FUN_1413435b0 2550801：同上
 There is nothing to catch in the {@1} magma sea.	{1}的熔岩海裡沒有魚可釣。	{1}的熔岩海里没有鱼可钓。		FUN_1413435b0 2550801：同上
+There is nothing to catch in {%1} deposit.	{1}礦藏裡沒有魚可釣。	{1}矿藏里没有鱼可钓。		FUN_1413435b0 2550877：地圖水域名稱是深層礦藏（FUN_140a4a940：材料名＋ deposit，原版是 raw adamantine）；須排在下一條 {1} 前面
 There is nothing to catch in {1}.	{1}裡沒有魚可釣。	{1}里没有鱼可钓。		FUN_1413435b0 2550877：{1} 地圖水域的名稱（虛擬函式取得）；須排在上面方位句型之後
 {1} is stricken by melancholy!	{1}陷入了憂鬱！	{1}陷入了忧郁！		FUN_141348a40 2553826：精神崩潰；{1} 人名, 職業
 {1} has gone stark raving mad!	{1}徹底瘋了！	{1}彻底疯了！		FUN_141348a40 2553826：同上

@@ -63,6 +63,14 @@ You have located {1}, "{2}", a site.	你找到了{1}「{2}」，一處據點。	
 {1} cancels {%2}: {%3}.	{1}取消了「{2}」：{3}。	{1}取消了“{2}”：{3}。		FUN_141325080 2531358；CANCEL_JOB：{1} 人名, 職業；{2} 工作名稱（加引號）；{3} 原因
 Interrupted by {1}	被{1}打斷	被{1}打断		FUN_141325080 2531372；取消原因；{1} 生物（a vulture）或人名
 Needs {%1} in linked stockpile	連結的倉儲區裡需要{1}	关联的储物区里需要{1}		FUN_141325080 2531473；取消原因；{1} 工作物品條件（FUN_140a2adb0）
+Needs {#1} yarn thread	需要 {1} 捲毛線	需要 {1} 卷毛线		FUN_140a2adb0 1478470-1478496：線（thread）的數量以 15000 為一捲換算後印出；yarn thread 是毛線，不拼成「毛線線」；線、布料的單位句型寫在通用的 Needs {#1} {%2} 前面
+Needs {#1} {%2} yarn thread	需要 {1} 捲{2}毛線	需要 {1} 卷{2}毛线		同上；{2} 其他條件（dyed 等）
+Needs {#1} unused yarn thread	需要 {1} 捲未使用毛線	需要 {1} 卷未使用毛线		同上；unused 單獨翻不出來（只有 unused {%1} 句型），{%2} 收不到，另寫一條，免得落到下面的 {%2} thread 拼成「毛線線」
+Needs {#1} unused {%2} yarn thread	需要 {1} 捲未使用{2}毛線	需要 {1} 卷未使用{2}毛线		同上
+Needs {#1} {%2} thread	需要 {1} 捲{2}線	需要 {1} 卷{2}线		同上；{2} 條件＋材料類（plant、silk、metal、unused …）
+Needs {#1} thread	需要 {1} 捲線	需要 {1} 卷线		同上
+Needs {#1} {%2} cloth	需要 {1} 匹{2}布料	需要 {1} 匹{2}布料		FUN_140a2adb0：布料（cloth）以 10000 為一匹換算
+Needs {#1} cloth	需要 {1} 匹布料	需要 {1} 匹布料		同上
 Needs {#1} {%2}	需要 {1} 個{2}	需要 {1} 个{2}		FUN_140406170 問題清單與取消原因：數量＋工作物品條件（Needs 1 empty food storage barrel）
 Needs {%1}	需要{1}	需要{1}		FUN_141325080 2531470 取消原因；FUN_140406170 520829 問題清單單獨一行；{1} 工作物品條件（FUN_140a2adb0）；第十輪改成整句也套（介面字串前後比對只改到「Needs open space」，由「需求懸空處」變成「需要懸空處」）
 The {@1} suspended the construction of {%2}.	{1}暫停了{2}的建造。	{1}暂停了{2}的建造。		FUN_141325080 2531949；CONSTRUCTION_SUSPENDED；{1} 要塞種族複數（dwarves），{2} 建築名

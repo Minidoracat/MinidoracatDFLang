@@ -12,6 +12,9 @@ static EXTRA: Mutex<Vec<u8>> = Mutex::new(Vec::new());
 static CURRENT: Mutex<Vec<Vec<u8>>> = Mutex::new(Vec::new());
 /// CURRENT 有沒有東西：平常輸入框都是空的，畫字時不必上鎖
 static ANY: AtomicBool = AtomicBool::new(false);
+/// 最後一次打字的輸入框裡的字（遊戲的打字函式改完就記，見 hooks.rs 的 hook_text_input；轉小寫）：搜尋框打字後馬上重新比對清單，
+/// 那時還沒到下一幀，CURRENT 還是舊的
+static LIVE: Mutex<Vec<u8>> = Mutex::new(Vec::new());
 
 pub fn set_fields(addrs: Vec<usize>) {
     *FIELDS.lock() = addrs;
@@ -44,6 +47,21 @@ pub fn is_typed(text: &[u8]) -> bool {
     let text = text.trim_ascii();
     let bare = text.strip_suffix(b"_").unwrap_or(text).trim_ascii_end();
     CURRENT.lock().iter().any(|t| t.as_slice() == text || t.as_slice() == bare)
+}
+
+pub fn set_live(text: &[u8]) {
+    let mut live = LIVE.lock();
+    live.clear();
+    live.extend(text.iter().take(256).map(u8::to_ascii_lowercase));
+}
+
+/// 搜尋框比對清單時要找的字（遊戲已轉小寫）是玩家在輸入框打的字（或其中以空白分開的一段）：拼音比對只對這種（見 pinyin.rs）
+pub fn searching(needle: &[u8]) -> bool {
+    if needle.is_empty() {
+        return false;
+    }
+    let inside = |text: &[u8]| text.len() >= needle.len() && text.windows(needle.len()).any(|w| w.eq_ignore_ascii_case(needle));
+    inside(&LIVE.lock()) || (ANY.load(Ordering::Relaxed) && CURRENT.lock().iter().any(|t| inside(t)))
 }
 
 #[cfg(test)]

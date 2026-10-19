@@ -1,0 +1,7 @@
+en	zh-Hant	zh-Hans	align	note
+Go to {@1} Demonstration	前往{1}示範	前往{1}示范		FUN_1400a4400 L102105-102116 人物頁目前活動（公會技能示範，還沒到場）：{1} 技能名（FUN_140773990，Axe、Carpentry…）
+Lead {@1} Demonstration	主持{1}示範	主持{1}示范		FUN_1400a4400 L102132 同上：示範者，沒有其他參與者時
+Organize {@1} Demonstration	籌辦{1}示範	筹办{1}示范		FUN_1400a4400 L102136 同上：示範者，已有參與者
+Wait for {@1} Demonstration	等候{1}示範	等候{1}示范		FUN_1400a4400 L102143 同上：觀眾，示範還沒開始
+Watch {@1} Demonstration	觀看{1}示範	观看{1}示范		FUN_1400a4400 L102146 同上：觀眾
+Pray to {1}	向{1}祈禱	向{1}祈祷		FUN_1400a2ed0 L101100-101104 人物頁目前活動：祈禱＋神祇名（FUN_140b92f10）；概況頁需求那段是另畫的「Pray to 」（fort_1.tsv）

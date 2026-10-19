@@ -1,2 +1,9 @@
 en	zh-Hant	zh-Hans	align	row	note
 *	*	*			交談選單的搜尋關鍵字（FUN_140697740，每個字單獨畫成「Keywords: greet hello listener」）：搜尋框只收英文，這個畫面上單獨畫出的小寫單字一律照原文，不讓全域字典翻成中文（duty→責任這種）
+Isolated	孤立	孤立			FUN_140867e10 L1206867 交談頭像下「General Mood: 」後的情緒詞（每個詞單獨畫）；全域的 Isolated 是世界生成參數「零星分布」，這裡要用情緒詞
+Anxious	焦慮	焦虑			FUN_140867e10 L1206547 起 交談頭像的整體情緒詞；全域的 Anxious 是概況頁性格標籤「易焦慮」，這裡是當下情緒
+Hateful	憎恨	憎恨			FUN_140867e10 L1206547 起 交談頭像的整體情緒詞；全域是性格標籤「易生恨」
+Hopeful	期盼	期盼			FUN_140867e10 L1206547 起 交談頭像的整體情緒詞；全域是性格標籤「樂觀」，和情緒詞 Optimistic 撞字；原文 7 格，「滿懷希望」放不下
+Lustful	情慾	情欲			FUN_140867e10 L1206547 起 交談頭像的整體情緒詞；全域是性格標籤「慾望強」；原文 7 格，情緒詞「情慾高漲」放不下，寫成名詞（同列的 Affection、Pleasure 也是名詞）
+Vengeful	復仇心切	复仇心切			FUN_140867e10 L1206547 起 交談頭像的整體情緒詞；全域是性格標籤「記仇」，這裡照情緒詞
+Inactive	不活躍	不活跃			FUN_140867e10 L1206256 交談頭像「Toward you: 」列的活躍程度（Sluggish／Inactive／Agitated／Animated）；全域的 Inactive 是建築狀態「未運作」

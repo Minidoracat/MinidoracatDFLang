@@ -62,6 +62,13 @@ pub static HITS: AtomicU64 = AtomicU64::new(0);
 pub static MISSES: AtomicU64 = AtomicU64::new(0);
 /// 目前的 DFHack 焦點字串（多個以換行分隔），Lua 每幀更新；依畫面套用的譯文看它（data/screens）
 pub static FOCUS: Mutex<String> = Mutex::new(String::new());
+
+/// 模組畫面（標題的模組管理員、建立世界與競技場的模組選擇：焦點 title/Mods、new_region/Mods、new_arena/Mods）。
+/// 這些畫面上第三方模組的名稱、作者、說明和字典同字也照原文（見 Dict::keeps_player_name）
+pub fn on_mods_screen() -> bool {
+    FOCUS.lock().split('\n').any(|f| f.split('/').nth(1) == Some("Mods"))
+}
+
 /// 遊戲字型表 init.font.small_font_texpos、large_font_texpos 的位址（各 256 個 texpos，依 CP437 字元排）
 pub static FONTS: OnceLock<[usize; 2]> = OnceLock::new();
 /// 設定換過幾次（lib.rs 的 refresh）：段落、提示、彩色文字框、DFHack 段落登記的畫字計畫記下算的時候是第幾版（見 Stamp）
@@ -141,13 +148,19 @@ type RenderThingsFn = unsafe extern "C" fn();
 type ToolTipFn = unsafe extern "C" fn(*mut u8, *mut u8);
 /// FUN_14036a9c0(交易畫面, 神器, 勢力, 勢力, 交出, 奪取)：交易時交出或被奪神器，商人說的話切成行放進交易畫面 +0x3c0
 type TradeSpeechFn = unsafe extern "C" fn(*mut u8, usize, usize, usize, u8, u8);
+/// std::string::find 的內部實作（原文, 長度, 從第幾個字找, 要找的字, 長度）→ 找到的位置或 -1：遊戲的搜尋框用它比對清單項目
+/// （已轉小寫、去掉重音的英文）和打的字
+type FindFn = unsafe extern "C" fn(*const u8, usize, usize, *const u8, usize) -> usize;
+/// FUN_140c39700(輸入框的字串, 長度上限, 收哪些字元的旗標, 按鍵, SDL 送來的文字) → 有沒有改：遊戲所有輸入框打字的地方
+type TextInputFn = unsafe extern "C" fn(*mut StdString, i32, u64, *mut u8, *const u8) -> u64;
 
-pub const HOOKS: [&str; 21] = [
+pub const HOOKS: [&str; 23] = [
     "addst", "addst_flag", "top_addst", "addcoloredst", "mtb_set_width", "add_anchored_tile", "wrap_lines", "ctb_add_string",
     "translate_name", "string_resize", "adv_appearance", "adv_personality", "adv_log", "adv_talk_log", "render_things", "native_name",
-    "adv_announcements", "tool_tip", "world_site_history", "trade_artifact_speech", "dfhack_mtb_set_width",
+    "adv_announcements", "tool_tip", "world_site_history", "trade_artifact_speech", "dfhack_mtb_set_width", "stock_string_find",
+    "text_input",
 ];
-static TRAMPOLINES: [AtomicUsize; 21] = [const { AtomicUsize::new(0) }; 21];
+static TRAMPOLINES: [AtomicUsize; 23] = [const { AtomicUsize::new(0) }; 23];
 /// wrap_text 的位址（只登記、不攔；它切行時呼叫 wrap_lines）：enable 時從呼叫它的程式碼找出遊戲啟動時就切好的提示（見 lines.rs）
 pub static WRAP_TEXT: OnceLock<usize> = OnceLock::new();
 
@@ -184,7 +197,9 @@ pub fn attach(name: &str, target: usize) -> Result<(), String> {
         17 => hook_tool_tip as *const (),
         18 => hook_world_site_history as *const (),
         19 => hook_trade_artifact_speech as *const (),
-        _ => hook_dfhack_mtb_set_width as *const (),
+        20 => hook_dfhack_mtb_set_width as *const (),
+        21 => hook_string_find as *const (),
+        _ => hook_text_input as *const (),
     };
     let detour = unsafe { RawDetour::new(target as *const (), hook) }.map_err(|e| e.to_string())?;
     TRAMPOLINES[index].store(detour.trampoline() as *const () as usize, Ordering::Release);
@@ -449,7 +464,8 @@ fn lookup_in<'a>(dict: &'a Dict, key: &[u8], y: i32, depth: u8) -> Option<Found<
     }
     let deeper = depth < LOOKUP_DEPTH;
     // 遊戲截短的字串（`Start new conversation with the Human baro...`）：翻截短前的原文再截短
-    if let Some(e) = deeper.then(|| cut_original(key)).flatten().and_then(|full| lookup_in(dict, &full, y, depth + 1))
+    if let Some(e) = deeper.then(|| cut_original(key)).flatten().filter(|full| !dict.keeps_player_name(full))
+        .and_then(|full| lookup_in(dict, &full, y, depth + 1))
         .and_then(|f| dict.cut_entry(key, &f.text))
     {
         return Some(Found::Rule(e));
@@ -1330,6 +1346,34 @@ unsafe extern "C" fn hook_string_resize(s: *mut StdString, n: usize, fill: u8) {
         });
     }
     unsafe { orig(s, n, fill) };
+}
+
+/// 搜尋框比對清單項目（std::string::find）：原函式找不到、要找的字是玩家在遊戲輸入框打的字時，照字典把項目翻成中文再比拼音
+/// （見 pinyin.rs）；比中就回傳 0（遊戲只看找不找得到）。這個函式到處都用（音效路徑、狼人的種族名…），
+/// 所以只比從頭找、要找的字在輸入框裡的，其他照原函式的結果
+unsafe extern "C" fn hook_string_find(hay: *const u8, len: usize, pos: usize, needle: *const u8, nlen: usize) -> usize {
+    let orig: FindFn = unsafe { std::mem::transmute(TRAMPOLINES[21].load(Ordering::Acquire)) };
+    let found = unsafe { orig(hay, len, pos, needle, nlen) };
+    if found != usize::MAX || pos != 0 || len == 0 || nlen == 0 || nlen > 64 {
+        return found;
+    }
+    let needle = unsafe { std::slice::from_raw_parts(needle, nlen) };
+    let dict = DICT.load(Ordering::Acquire);
+    if dict.is_null() || !crate::typed::searching(needle) {
+        return found;
+    }
+    let hay = unsafe { std::slice::from_raw_parts(hay, len) };
+    if crate::pinyin::search(unsafe { &*dict }, hay, needle) { 0 } else { found }
+}
+
+/// 遊戲的輸入框打字（FUN_140c39700）：改完就記下框裡的字，搜尋框接著重新比對清單時認得出是玩家打的字（見 typed::searching）
+unsafe extern "C" fn hook_text_input(s: *mut StdString, max: i32, flags: u64, keys: *mut u8, text: *const u8) -> u64 {
+    let orig: TextInputFn = unsafe { std::mem::transmute(TRAMPOLINES[22].load(Ordering::Acquire)) };
+    let changed = unsafe { orig(s, max, flags, keys, text) };
+    if changed != 0 {
+        crate::typed::set_live(unsafe { (*s).bytes() });
+    }
+    changed
 }
 
 /// 冒險者開局畫面的外觀段落：遊戲把 wrap_lines 的切行寫在自己函式裡（寬 77），切好的行放在冒險者資料的行清單，

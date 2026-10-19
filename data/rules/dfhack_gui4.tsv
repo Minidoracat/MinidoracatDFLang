@@ -1,0 +1,7 @@
+en	zh-Hant	zh-Hans	align	note
+(default: {#1}, at least {#2}, at most {#3})	（預設 {1}，至少 {2}，至多 {3}）	（默认 {1}，至少 {2}，至多 {3}）		DFHack hack/scripts/gui/control-panel.lua L733-741 偏好設定編輯視窗的數值範圍說明（預設、下限、上限）；用語同 dfhack_core.tsv 的「(default: {#1}, at least {#2})」用語
+(default: {#1}, at most {#2})	（預設 {1}，至多 {2}）	（默认 {1}，至多 {2}）		DFHack hack/scripts/gui/control-panel.lua L733-741 偏好設定編輯視窗的數值範圍說明（預設、上限）；用語同 dfhack_core.tsv 的「(default: {#1}, at least {#2})」用語
+(default: {#1})	（預設 {1}）	（默认 {1}）		DFHack hack/scripts/gui/control-panel.lua L733-741 偏好設定編輯視窗的數值範圍說明（只有預設值）；用語同 dfhack_core.tsv 的「(default: {#1}, at least {#2})」用語
+Pull    {1}	拉動    {1}	拉动    {1}		DFHack hack/lua/plugins/buildingplan/unlink_mechanisms.lua L66 機械裝置連結分頁的拉桿按鈕，{1} 是拉桿方向符號（/、\、ò、ó）
+Pulling {1}	拉動中  {1}	拉动中  {1}		DFHack hack/lua/plugins/buildingplan/unlink_mechanisms.lua L68 拉桿按鈕：已有人接手拉桿工作
+Queued  {1}	排隊中  {1}	排队中  {1}		DFHack hack/lua/plugins/buildingplan/unlink_mechanisms.lua L70 拉桿按鈕：拉桿工作排隊中

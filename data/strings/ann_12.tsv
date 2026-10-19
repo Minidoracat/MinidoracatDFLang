@@ -1,0 +1,16 @@
+en	zh-Hant	zh-Hans	align	note
+There is nothing to catch in the volcano.	火山裡沒有魚可釣。	火山里没有鱼可钓。		FUN_1413435b0 2550877 釣魚：地圖水域名稱（feature_init_volcanost 名稱 FUN_140a496a0「the volcano」），其他名稱由 ann_08 的 {1} 句型接；the volcano 單獨不設條目
+yarn thread	毛線	毛线	inner	FUN_140a2adb0 工作物品條件：yarn ＋ thread（取消原因 Needs …、問題清單）；不設時拼成「毛線線」
+lashers	鞭手	鞭手	inner	FUN_14132e0c0 職業複數（小寫原名＋s）：圍城公告 Beware their …（FUN_140110460 L173780，可夾種族 goblin lashers）
+wrestlers	摔角手	摔跤手	inner	同上
+blowgunners	吹箭手	吹箭手	inner	同上
+recruits	新兵	新兵	inner	同上
+Master Lashers	鞭術大師	鞭术大师		同上；精英職業名大寫開頭（Master Lasher＋s）
+Master Blowgunners	吹箭大師	吹箭大师		同上
+Elite Wrestlers	精銳摔角手	精锐摔跤手		同上
+Swordmasters	劍術大師	剑术大师		同上
+Spearmasters	矛術大師	矛术大师		同上
+Pikemasters	長槍大師	长枪大师		同上
+Axe Lords	斧術大師	斧术大师		同上；原本拆成 Axe＋Lords 翻成「斧頭領主」，和單數 Axe Lord 不一致
+Hammer Lords	戰錘大師	战锤大师		同上；原本拆成「錘術領主」
+Mace Lords	釘錘大師	钉锤大师		同上；原本拆成「釘錘領主」

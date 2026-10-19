@@ -1,22 +1,13 @@
 en	zh-Hant	zh-Hans	align	note
-the bodies of {1} and others were {%2} by {3} on behalf of {4} in {5} in {6}.	{1}等人的遺體在{6}的{5}遭{3}奉{4}之命{2}。	{1}等人的遗体在{6}的{5}遭{3}奉{4}之命{2}。	inner	history_event_body_abusedst 完整句 FUN_140b83d10 L1697284：子句（遺體＋處置方式＋執行者／代表文明＋地點）
-the bodies of {1} and others were {%2} by {3} on behalf of {4} in {5}.	{1}等人的遺體在{5}遭{3}奉{4}之命{2}。	{1}等人的遗体在{5}遭{3}奉{4}之命{2}。	inner	history_event_body_abusedst 完整句 FUN_140b83d10 L1697284：子句（遺體＋處置方式＋執行者／代表文明＋地點）
-the bodies of {1} and others were {%2} by {3} on behalf of {4}.	{1}等人的遺體遭{3}奉{4}之命{2}。	{1}等人的遗体遭{3}奉{4}之命{2}。	inner	history_event_body_abusedst 完整句 FUN_140b83d10 L1697284：子句（遺體＋處置方式＋執行者／代表文明＋地點）
-the bodies of {1} and others were {%2} by {3} in {4} in {5}.	{1}等人的遺體在{5}的{4}遭{3}{2}。	{1}等人的遗体在{5}的{4}遭{3}{2}。	inner	history_event_body_abusedst 完整句 FUN_140b83d10 L1697284：子句（遺體＋處置方式＋執行者／代表文明＋地點）
-the bodies of {1} and others were {%2} by {3} in {4}.	{1}等人的遺體在{4}遭{3}{2}。	{1}等人的遗体在{4}遭{3}{2}。	inner	history_event_body_abusedst 完整句 FUN_140b83d10 L1697284：子句（遺體＋處置方式＋執行者／代表文明＋地點）
-the bodies of {1} and others were {%2} by {3}.	{1}等人的遺體遭{3}{2}。	{1}等人的遗体遭{3}{2}。	inner	history_event_body_abusedst 完整句 FUN_140b83d10 L1697284：子句（遺體＋處置方式＋執行者／代表文明＋地點）
-the bodies of {1} and others were {%2} in {3} in {4}.	{1}等人的遺體在{4}的{3}遭{2}。	{1}等人的遗体在{4}的{3}遭{2}。	inner	history_event_body_abusedst 完整句 FUN_140b83d10 L1697284：子句（遺體＋處置方式＋執行者／代表文明＋地點）
-the bodies of {1} and others were {%2} in {3}.	{1}等人的遺體在{3}遭{2}。	{1}等人的遗体在{3}遭{2}。	inner	history_event_body_abusedst 完整句 FUN_140b83d10 L1697284：子句（遺體＋處置方式＋執行者／代表文明＋地點）
-the bodies of {1} and others were {%2}.	{1}等人的遺體遭{2}。	{1}等人的遗体遭{2}。	inner	history_event_body_abusedst 完整句 FUN_140b83d10 L1697284：子句（遺體＋處置方式＋執行者／代表文明＋地點）
-the bodies of {1} and {2} were {%3} by {4} on behalf of {5} in {6} in {7}.	{1}和{2}的遺體在{7}的{6}遭{4}奉{5}之命{3}。	{1}和{2}的遗体在{7}的{6}遭{4}奉{5}之命{3}。	inner	history_event_body_abusedst 完整句 FUN_140b83d10 L1697284：子句（遺體＋處置方式＋執行者／代表文明＋地點）
-the bodies of {1} and {2} were {%3} by {4} on behalf of {5} in {6}.	{1}和{2}的遺體在{6}遭{4}奉{5}之命{3}。	{1}和{2}的遗体在{6}遭{4}奉{5}之命{3}。	inner	history_event_body_abusedst 完整句 FUN_140b83d10 L1697284：子句（遺體＋處置方式＋執行者／代表文明＋地點）
-the bodies of {1} and {2} were {%3} by {4} on behalf of {5}.	{1}和{2}的遺體遭{4}奉{5}之命{3}。	{1}和{2}的遗体遭{4}奉{5}之命{3}。	inner	history_event_body_abusedst 完整句 FUN_140b83d10 L1697284：子句（遺體＋處置方式＋執行者／代表文明＋地點）
-the bodies of {1} and {2} were {%3} by {4} in {5} in {6}.	{1}和{2}的遺體在{6}的{5}遭{4}{3}。	{1}和{2}的遗体在{6}的{5}遭{4}{3}。	inner	history_event_body_abusedst 完整句 FUN_140b83d10 L1697284：子句（遺體＋處置方式＋執行者／代表文明＋地點）
-the bodies of {1} and {2} were {%3} by {4} in {5}.	{1}和{2}的遺體在{5}遭{4}{3}。	{1}和{2}的遗体在{5}遭{4}{3}。	inner	history_event_body_abusedst 完整句 FUN_140b83d10 L1697284：子句（遺體＋處置方式＋執行者／代表文明＋地點）
-the bodies of {1} and {2} were {%3} by {4}.	{1}和{2}的遺體遭{4}{3}。	{1}和{2}的遗体遭{4}{3}。	inner	history_event_body_abusedst 完整句 FUN_140b83d10 L1697284：子句（遺體＋處置方式＋執行者／代表文明＋地點）
-the bodies of {1} and {2} were {%3} in {4} in {5}.	{1}和{2}的遺體在{5}的{4}遭{3}。	{1}和{2}的遗体在{5}的{4}遭{3}。	inner	history_event_body_abusedst 完整句 FUN_140b83d10 L1697284：子句（遺體＋處置方式＋執行者／代表文明＋地點）
-the bodies of {1} and {2} were {%3} in {4}.	{1}和{2}的遺體在{4}遭{3}。	{1}和{2}的遗体在{4}遭{3}。	inner	history_event_body_abusedst 完整句 FUN_140b83d10 L1697284：子句（遺體＋處置方式＋執行者／代表文明＋地點）
-the bodies of {1} and {2} were {%3}.	{1}和{2}的遺體遭{3}。	{1}和{2}的遗体遭{3}。	inner	history_event_body_abusedst 完整句 FUN_140b83d10 L1697284：子句（遺體＋處置方式＋執行者／代表文明＋地點）
+the bodies of {1} were {%2} by {3} on behalf of {4} in {5} in {6}.	{1}的遺體在{6}的{5}遭{3}奉{4}之命{2}。	{1}的遗体在{6}的{5}遭{3}奉{4}之命{2}。	inner	history_event_body_abusedst 完整句 FUN_140b83d10 L1697284：子句（遺體＋處置方式＋執行者／代表文明＋地點）；遺體清單（「A and B」「A, B and C」「A, B and others」）整串進 {1}，由 common.tsv 接成「A、B和C」「A、B等人」：寫成 {1} and {2}、{1} and others 時三人以上的「A, B」照抄英文逗號
+the bodies of {1} were {%2} by {3} on behalf of {4} in {5}.	{1}的遺體在{5}遭{3}奉{4}之命{2}。	{1}的遗体在{5}遭{3}奉{4}之命{2}。	inner	同上
+the bodies of {1} were {%2} by {3} on behalf of {4}.	{1}的遺體遭{3}奉{4}之命{2}。	{1}的遗体遭{3}奉{4}之命{2}。	inner	同上
+the bodies of {1} were {%2} by {3} in {4} in {5}.	{1}的遺體在{5}的{4}遭{3}{2}。	{1}的遗体在{5}的{4}遭{3}{2}。	inner	同上
+the bodies of {1} were {%2} by {3} in {4}.	{1}的遺體在{4}遭{3}{2}。	{1}的遗体在{4}遭{3}{2}。	inner	同上
+the bodies of {1} were {%2} by {3}.	{1}的遺體遭{3}{2}。	{1}的遗体遭{3}{2}。	inner	同上
+the bodies of {1} were {%2} in {3} in {4}.	{1}的遺體在{4}的{3}遭{2}。	{1}的遗体在{4}的{3}遭{2}。	inner	同上
+the bodies of {1} were {%2} in {3}.	{1}的遺體在{3}遭{2}。	{1}的遗体在{3}遭{2}。	inner	同上
+the bodies of {1} were {%2}.	{1}的遺體遭{2}。	{1}的遗体遭{2}。	inner	同上
 the body of {1} was {%2} by {3} on behalf of {4} in {5} in {6}.	{1}的遺體在{6}的{5}遭{3}奉{4}之命{2}。	{1}的遗体在{6}的{5}遭{3}奉{4}之命{2}。	inner	history_event_body_abusedst 完整句 FUN_140b83d10 L1697284：子句（遺體＋處置方式＋執行者／代表文明＋地點）
 the body of {1} was {%2} by {3} on behalf of {4} in {5}.	{1}的遺體在{5}遭{3}奉{4}之命{2}。	{1}的遗体在{5}遭{3}奉{4}之命{2}。	inner	history_event_body_abusedst 完整句 FUN_140b83d10 L1697284：子句（遺體＋處置方式＋執行者／代表文明＋地點）
 the body of {1} was {%2} by {3} on behalf of {4}.	{1}的遺體遭{3}奉{4}之命{2}。	{1}的遗体遭{3}奉{4}之命{2}。	inner	history_event_body_abusedst 完整句 FUN_140b83d10 L1697284：子句（遺體＋處置方式＋執行者／代表文明＋地點）

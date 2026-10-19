@@ -5,7 +5,7 @@ Age of Two {%1}	雙{1}時代	双{1}时代		FUN_140bb7b80 紀元名：兩股勢�
 Age of the {%1}	{1}時代	{1}时代		FUN_140bb7b80 紀元名：單一勢力；{1} 是大寫生物名
 Age of {%1} and {%2}	{1}與{2}時代	{1}与{2}时代		FUN_140bb7b80 紀元名：兩股勢力
 Age of {1}	{1}時代	{1}时代		FUN_140bb7b80 紀元名：單一勢力的人物名或複數生物名；固定紀元名在 strings，整句先查
-{%1} Age	{1}時代	{1}时代		FUN_140bb7b80 紀元名：生物名＋ Age
+{@1} Age	{1}時代	{1}时代		FUN_140bb7b80 紀元名：生物名＋ Age；{@1} 只收字典裡的生物形容詞（draconic、bronze colossus、hill titan…）：{%1} 會把整個書名「Floating Bodies In The Draconic」收進佔位（書名樣板 [NAME] In [ANY_AGE]），序數版見 legends_06
 {1} and the surrounding lands have been made {%2}.	{1}及周邊土地已升格為{2}。	{1}及周边土地已升格为{2}。		FUN_140ac5b30 1573516／1573731 LAND_GAINS_STATUS、LAND_ELEVATED_STATUS；{1} 地點名，{2} 領地名（strings）
 {1} is caught in a burst of {%2}!	{1}被一股{2}噴到！	{1}被一股{2}喷到！		FUN_140abb9a0 1566839；{1} FUN_14132e430 生物稱呼，{2} 材料狀態名（steam 的整句在 ann_08）
 You are caught in a burst of {%1}!	你被一股{1}噴到！	你被一股{1}喷到！		FUN_140abb9a0 1566839 冒險模式
@@ -50,8 +50,8 @@ Your {%1} regrows!	你的{1}再生了！	你的{1}再生了！		FUN_140d7c8e0 �
 {1} looks less nauseated.	{1}看起來沒那麼噁心了。	{1}看起来没那么恶心了。		FUN_140d7f1d0 2019740
 {1} looks less dizzy.	{1}看起來沒那麼暈了。	{1}看起来没那么晕了。		FUN_140d7fe50 2020387
 {1} has become entangled in a hidden web!	{1}被暗藏的蛛網纏住了！	{1}被暗藏的蛛网缠住了！		FUN_140da8080 2047095；{1} 人名, 職業
-Your mason has defaced a {1}!	你的石匠毀損了{1}！	你的石匠毁损了{1}！		FUN_140dac290 2049617 ARTWORK_DEFACED；{1} FUN_140a94030 名稱（雕刻相關的歷史事件對象）
-Your engraver has carved a track through a {1}!	你的雕刻師在{1}上鑿出了軌道！	你的雕刻师在{1}上凿出了轨道！		FUN_140dac290 2055210 ARTWORK_DEFACED；{1} 同上
+Your mason has defaced a {1}!	你的石匠毀損了一件{1}的作品！	你的石匠毁损了一件{1}的作品！		FUN_140dac290 2049617 ARTWORK_DEFACED；{1} FUN_140a94030 名稱（雕刻相關的歷史事件對象，即作品的作者）；譯法同 ann_02、ann_10 的 … has defaced a {1}!
+Your engraver has carved a track through a {1}!	你的雕刻師在一件{1}的作品上鑿出了軌道！	你的雕刻师在一件{1}的作品上凿出了轨道！		FUN_140dac290 2055210 ARTWORK_DEFACED；{1} 同上
 {1} has claimed a {%2}.	{1}佔據了一座{2}。	{1}占据了一座{2}。		FUN_140dac290 2053377 奇異心境佔據工坊；{1} 歷史人物名，{2} 建築名
 {@1}'s Workshop	{1}工坊	{1}工坊		建築名（FUN_140dac290 2053366 vfunc 0x188）：職業名＋'s Workshop（Craftsdwarf's Workshop 工匠工坊）
 {@1}'s Forge	{1}鍛爐	{1}锻炉		建築名：Metalsmith's Forge

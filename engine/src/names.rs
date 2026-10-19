@@ -263,13 +263,14 @@ fn lower_first(word: &[u8]) -> Option<Vec<u8>> {
     word.first().filter(|c| c.is_ascii_uppercase()).map(|c| [&[c.to_ascii_lowercase()][..], &word[1..]].concat())
 }
 
-/// 玩家自己取的名字（倉儲區、區域、小隊、小隊排程、制服、活動區、工作細項；lua/loader.lua 的 track_player_names 讀檔後定時整批送來）：
-/// 照原樣畫、不查字典，「Dense training」不會被地形句型翻成「茂密的訓練」。存首字改小寫的寫法，遊戲把首字改大寫畫也認得
+/// 玩家自己取的名字（倉儲區、區域、小隊、小隊排程、制服、活動區、工作細項；沒有讀進地圖時是第三方模組的名稱、作者、說明。
+/// lua/loader.lua 的 track_player_names 定時整批送來）：照原樣畫、不查字典，「Dense training」不會被地形句型翻成「茂密的訓練」。
+/// 存首字改小寫、去掉頭尾空白的寫法，遊戲把首字改大寫畫也認得
 static PLAYER: LazyLock<Mutex<HashSet<Vec<u8>>>> = LazyLock::new(|| Mutex::new(HashSet::new()));
 
 /// 換成這一批玩家取的名字（`\n` 分隔，CP437）；和上一批相同時不動。回傳有沒有換
 pub fn set_player_names(list: &[u8]) -> bool {
-    let names: HashSet<Vec<u8>> = list.split(|&c| c == b'\n').filter(|n| n.iter().any(u8::is_ascii_alphabetic))
+    let names: HashSet<Vec<u8>> = list.split(|&c| c == b'\n').map(<[u8]>::trim_ascii).filter(|n| n.iter().any(u8::is_ascii_alphabetic))
         .map(|n| lower_first(n).unwrap_or_else(|| n.to_vec())).collect();
     let mut current = PLAYER.lock();
     if *current == names {

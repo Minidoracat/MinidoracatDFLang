@@ -32,9 +32,11 @@
     fonts/ 底下沒有其他東西）、dflang/ 底下除了各語言沒有別的資料夾、沒有雜檔，且每種語言的字典、句型、名字音譯表與 data/ 一致，
     info.txt（版本號）與 workshop.json 一致：改了版本號沒重建就上傳，包裡還是舊版號（沒建置則略過）
 12. 名字音譯表 data/translit/translit.tsv：欄位 en, zh-Hant, zh-Hans, note；音節只有小寫英文字母、不重複，繁簡都有
+13. 拼音搜尋的讀音表 engine/pinyin.tsv（scripts/make_pinyin.py 產生）有譯文用到的每個漢字
 """
 import re
 import sys
+import unicodedata
 from pathlib import Path
 
 from fontTools.ttLib import TTFont
@@ -237,6 +239,15 @@ def main() -> int:
             cmaps = [TTFont(f).getBestCmap() for f in fonts]
             missing = sorted(c for c in used if not any(ord(c) in cmap for cmap in cmaps))
             check(not missing, f"{lang} {weight} 字型涵蓋 {len(used)} 個字（含吉祥物名牌）", missing)
+
+    # 拼音搜尋的讀音表（engine/pinyin.tsv，scripts/make_pinyin.py 從 Unicode Unihan 產生）：譯文用到的漢字都要在表裡，
+    # 不在表裡的字打拼音找不到（表最後一列「# 沒有讀音：」是 Unihan 沒有普通話讀音的字）
+    table = (ROOT / "engine/pinyin.tsv").read_text(encoding="utf-8").splitlines()
+    have = {line.split("\t", 1)[0] for line in table if line and not line.startswith("#")}
+    have |= set("".join(line.split("：", 1)[1] for line in table if line.startswith("# 沒有讀音：")))
+    han = {c for r in [*rows, *names, *translit] for lang in langs for c in r.get(lang) or ""
+           if unicodedata.name(c, "").startswith(("CJK UNIFIED IDEOGRAPH", "CJK COMPATIBILITY IDEOGRAPH"))}
+    check(not han - have, f"拼音讀音表涵蓋譯文用到的 {len(han)} 個漢字（缺的重跑 uv run scripts/make_pinyin.py）", sorted(han - have))
 
     mascot = ROOT / "art/mascot.png"
     with mascot.open("rb") as fh:  # PNG IHDR：寬、高各 4 bytes，再來是 bit depth 與 color type

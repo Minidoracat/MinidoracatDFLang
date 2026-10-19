@@ -1,0 +1,5 @@
+en	zh-Hant	zh-Hans	align	note
+snow	雪	雪		冒險追蹤：足跡所在的地面材料「… imprint in the snow.」（FUN_140af1190 L1605733 FUN_1414d1920）；小寫 snow 是材料名，原本大小寫退回對到設定公告種類 Snow「下雪」
+ash specks	點點灰燼	点点灰烬	inner	FUN_140657f90 L877143-877171 沾染物：灰燼（材料 ash）＋粉末量詞，量詞譯法照 adv_gaps 的 inner 句型；ash 單字全域是樹名「梣樹」，所以整段寫出，只給佔位用（Eat {%1} ({%2}) 等；不接動詞的「ash dusting (部位)」在 adv_gaps）
+ash dusting	薄薄一層灰燼	薄薄一层灰烬	inner	同上
+ash coating	一層灰燼	一层灰烬	inner	同上

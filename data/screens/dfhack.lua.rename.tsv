@@ -2,3 +2,14 @@ en	zh-Hant	zh-Hans	align	row	note
 Random	隨機	随机			DFHack hack/scripts/gui/rename.lua L668 名字部分旁的〔Random〕按鈕（方括號另畫）；通用單字，只在改名視窗套用
 Adjective	形容詞	形容词			DFHack hack/scripts/gui/rename.lua L798 字表詞性欄；通用單字，只在改名視窗套用
 Prefix	字首	前缀			DFHack hack/scripts/gui/rename.lua L799 字表詞性欄；通用單字，只在改名視窗套用
+Figure	人名	人名			DFHack hack/scripts/gui/rename.lua L470 「Name type:」後的名字種類（language_name_type 原名照畫）；通用單字，只在改名視窗套用
+FigureNoFirst	人名（無名）	人名（无名）			DFHack hack/scripts/gui/rename.lua L470 名字種類：沒有名字只有姓氏的人名
+FigureFirstOnly	人名（僅名）	人名（仅名）			DFHack hack/scripts/gui/rename.lua L470 名字種類：只有名字的人名
+LegendaryFigure	傳奇人物	传奇人物			DFHack hack/scripts/gui/rename.lua L470 名字種類
+ArtifactEvil	邪惡神器	邪恶神器			DFHack hack/scripts/gui/rename.lua L60 名字種類：陰森／邪惡心境做出的神器
+EntitySite	勢力據點	势力据点			DFHack hack/scripts/gui/rename.lua L30 名字種類：本要塞所屬政府的據點名
+SiteGovernment	據點政府	据点政府			DFHack hack/scripts/gui/rename.lua L470 名字種類
+FoodStore	食品店	食品店			DFHack hack/scripts/gui/rename.lua L47 名字種類：酒館這類賣吃喝的場所
+Region	地區	地区			DFHack hack/scripts/gui/rename.lua L40 名字種類；通用單字，只在改名視窗套用
+The X	主名	主名			DFHack hack/scripts/gui/rename.lua L648 名字組成清單（language_name_component TheX 拆字）：「the 某某」的核心名詞；原文只有 5 格
+Of X	之名	之名			DFHack hack/scripts/gui/rename.lua L648 名字組成清單（OfX）：「of 某某」的部分；原文只有 4 格

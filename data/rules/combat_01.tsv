@@ -112,3 +112,57 @@ The force bends the {%1}	這股力道彎折了{1}	这股力道弯折了{1}	inner
 {%1} takes the full force of the impact	{1}承受了全部的撞擊力道	{1}承受了全部的撞击力道	inner	同上：撞擊的部位
 {%1} skids along the ground!	{1}在地上擦撞！	{1}在地上擦撞！		同上，沒有傷勢時
 {%1} takes the full force of the impact!	{1}承受了全部的撞擊力道！	{1}承受了全部的撞击力道！		同上，沒有傷勢時
+You claw {%1} in the {%2} from the side with your {%3},	你從側面用{3}爪擊了{1}的{2}，	你从侧面用{3}爪击了{1}的{2}，	inner	FUN_1400e56a0 冒險者攻擊的第二人稱動詞（raws ATTACK_VERB claw／武器 lash）：combat_02 的外框 {%1} {@2} … 把 {@2} 查成單字 claw（組織名「爪子」）、lash（技能名「鞭術」），所以玩家這兩個動詞逐條寫在 combat_02 之前；align 同 combat_02 對應外框
+You claw {%1} in the {%2} from the side with {%3},	你從側面用{3}爪擊了{1}的{2}，	你从侧面用{3}爪击了{1}的{2}，	inner	同上
+You claw {%1} in the {%2} from the side,	你從側面爪擊了{1}的{2}，	你从侧面爪击了{1}的{2}，	inner	同上
+You claw {%1} in the {%2} from behind with your {%3},	你從背後用{3}爪擊了{1}的{2}，	你从背后用{3}爪击了{1}的{2}，	inner	同上
+You claw {%1} in the {%2} from behind with {%3},	你從背後用{3}爪擊了{1}的{2}，	你从背后用{3}爪击了{1}的{2}，	inner	同上
+You claw {%1} in the {%2} from behind,	你從背後爪擊了{1}的{2}，	你从背后爪击了{1}的{2}，	inner	同上
+You claw {%1} in the {%2} with your {%3},	你用{3}爪擊了{1}的{2}，	你用{3}爪击了{1}的{2}，	inner	同上
+You claw {%1} in the {%2} with {%3},	你用{3}爪擊了{1}的{2}，	你用{3}爪击了{1}的{2}，	inner	同上
+You claw {%1} in the {%2},	你爪擊了{1}的{2}，	你爪击了{1}的{2}，	inner	同上
+You claw {%1} in the {%2} from the side with your {%3} and	你從側面用{3}爪擊了{1}的{2}，	你从侧面用{3}爪击了{1}的{2}，	inner	同上
+You claw {%1} in the {%2} from the side with {%3} and	你從側面用{3}爪擊了{1}的{2}，	你从侧面用{3}爪击了{1}的{2}，	inner	同上
+You claw {%1} in the {%2} from the side and	你從側面爪擊了{1}的{2}，	你从侧面爪击了{1}的{2}，	inner	同上
+You claw {%1} in the {%2} from behind with your {%3} and	你從背後用{3}爪擊了{1}的{2}，	你从背后用{3}爪击了{1}的{2}，	inner	同上
+You claw {%1} in the {%2} from behind with {%3} and	你從背後用{3}爪擊了{1}的{2}，	你从背后用{3}爪击了{1}的{2}，	inner	同上
+You claw {%1} in the {%2} from behind and	你從背後爪擊了{1}的{2}，	你从背后爪击了{1}的{2}，	inner	同上
+You claw {%1} in the {%2} with your {%3} and	你用{3}爪擊了{1}的{2}，	你用{3}爪击了{1}的{2}，	inner	同上
+You claw {%1} in the {%2} with {%3} and	你用{3}爪擊了{1}的{2}，	你用{3}爪击了{1}的{2}，	inner	同上
+You claw {%1} in the {%2} and	你爪擊了{1}的{2}，	你爪击了{1}的{2}，	inner	同上
+You claw {%1} in the {%2} from the side with your {%3}!	你從側面用{3}爪擊了{1}的{2}！	你从侧面用{3}爪击了{1}的{2}！		同上
+You claw {%1} in the {%2} from the side with {%3}!	你從側面用{3}爪擊了{1}的{2}！	你从侧面用{3}爪击了{1}的{2}！		同上
+You claw {%1} in the {%2} from the side!	你從側面爪擊了{1}的{2}！	你从侧面爪击了{1}的{2}！		同上
+You claw {%1} in the {%2} from behind with your {%3}!	你從背後用{3}爪擊了{1}的{2}！	你从背后用{3}爪击了{1}的{2}！		同上
+You claw {%1} in the {%2} from behind with {%3}!	你從背後用{3}爪擊了{1}的{2}！	你从背后用{3}爪击了{1}的{2}！		同上
+You claw {%1} in the {%2} from behind!	你從背後爪擊了{1}的{2}！	你从背后爪击了{1}的{2}！		同上
+You claw {%1} in the {%2} with your {%3}!	你用{3}爪擊了{1}的{2}！	你用{3}爪击了{1}的{2}！		同上
+You claw {%1} in the {%2} with {%3}!	你用{3}爪擊了{1}的{2}！	你用{3}爪击了{1}的{2}！		同上
+You claw {%1} in the {%2}!	你爪擊了{1}的{2}！	你爪击了{1}的{2}！		同上
+You lash {%1} in the {%2} from the side with your {%3},	你從側面用{3}鞭打了{1}的{2}，	你从侧面用{3}鞭打了{1}的{2}，	inner	同上
+You lash {%1} in the {%2} from the side with {%3},	你從側面用{3}鞭打了{1}的{2}，	你从侧面用{3}鞭打了{1}的{2}，	inner	同上
+You lash {%1} in the {%2} from the side,	你從側面鞭打了{1}的{2}，	你从侧面鞭打了{1}的{2}，	inner	同上
+You lash {%1} in the {%2} from behind with your {%3},	你從背後用{3}鞭打了{1}的{2}，	你从背后用{3}鞭打了{1}的{2}，	inner	同上
+You lash {%1} in the {%2} from behind with {%3},	你從背後用{3}鞭打了{1}的{2}，	你从背后用{3}鞭打了{1}的{2}，	inner	同上
+You lash {%1} in the {%2} from behind,	你從背後鞭打了{1}的{2}，	你从背后鞭打了{1}的{2}，	inner	同上
+You lash {%1} in the {%2} with your {%3},	你用{3}鞭打了{1}的{2}，	你用{3}鞭打了{1}的{2}，	inner	同上
+You lash {%1} in the {%2} with {%3},	你用{3}鞭打了{1}的{2}，	你用{3}鞭打了{1}的{2}，	inner	同上
+You lash {%1} in the {%2},	你鞭打了{1}的{2}，	你鞭打了{1}的{2}，	inner	同上
+You lash {%1} in the {%2} from the side with your {%3} and	你從側面用{3}鞭打了{1}的{2}，	你从侧面用{3}鞭打了{1}的{2}，	inner	同上
+You lash {%1} in the {%2} from the side with {%3} and	你從側面用{3}鞭打了{1}的{2}，	你从侧面用{3}鞭打了{1}的{2}，	inner	同上
+You lash {%1} in the {%2} from the side and	你從側面鞭打了{1}的{2}，	你从侧面鞭打了{1}的{2}，	inner	同上
+You lash {%1} in the {%2} from behind with your {%3} and	你從背後用{3}鞭打了{1}的{2}，	你从背后用{3}鞭打了{1}的{2}，	inner	同上
+You lash {%1} in the {%2} from behind with {%3} and	你從背後用{3}鞭打了{1}的{2}，	你从背后用{3}鞭打了{1}的{2}，	inner	同上
+You lash {%1} in the {%2} from behind and	你從背後鞭打了{1}的{2}，	你从背后鞭打了{1}的{2}，	inner	同上
+You lash {%1} in the {%2} with your {%3} and	你用{3}鞭打了{1}的{2}，	你用{3}鞭打了{1}的{2}，	inner	同上
+You lash {%1} in the {%2} with {%3} and	你用{3}鞭打了{1}的{2}，	你用{3}鞭打了{1}的{2}，	inner	同上
+You lash {%1} in the {%2} and	你鞭打了{1}的{2}，	你鞭打了{1}的{2}，	inner	同上
+You lash {%1} in the {%2} from the side with your {%3}!	你從側面用{3}鞭打了{1}的{2}！	你从侧面用{3}鞭打了{1}的{2}！		同上
+You lash {%1} in the {%2} from the side with {%3}!	你從側面用{3}鞭打了{1}的{2}！	你从侧面用{3}鞭打了{1}的{2}！		同上
+You lash {%1} in the {%2} from the side!	你從側面鞭打了{1}的{2}！	你从侧面鞭打了{1}的{2}！		同上
+You lash {%1} in the {%2} from behind with your {%3}!	你從背後用{3}鞭打了{1}的{2}！	你从背后用{3}鞭打了{1}的{2}！		同上
+You lash {%1} in the {%2} from behind with {%3}!	你從背後用{3}鞭打了{1}的{2}！	你从背后用{3}鞭打了{1}的{2}！		同上
+You lash {%1} in the {%2} from behind!	你從背後鞭打了{1}的{2}！	你从背后鞭打了{1}的{2}！		同上
+You lash {%1} in the {%2} with your {%3}!	你用{3}鞭打了{1}的{2}！	你用{3}鞭打了{1}的{2}！		同上
+You lash {%1} in the {%2} with {%3}!	你用{3}鞭打了{1}的{2}！	你用{3}鞭打了{1}的{2}！		同上
+You lash {%1} in the {%2}!	你鞭打了{1}的{2}！	你鞭打了{1}的{2}！		同上

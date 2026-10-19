@@ -152,8 +152,8 @@ function set_bold(on)
 end
 
 -- 也翻成中文的選項與預設值（names 原生語言名字音譯、keys 按鍵名、music 配樂曲名、partial 段落缺句時其餘照翻）：
--- 遊戲啟動時與改了以後交給引擎（lua/loader.lua 的 wanted）。按鍵名預設開，其他預設關；dflang.json 只記和預設不同的
-local OPTIONS = {names = false, keys = true, music = false, partial = false}
+-- 遊戲啟動時與改了以後交給引擎（lua/loader.lua 的 wanted）。名字音譯與按鍵名預設開，其他預設關；dflang.json 只記和預設不同的
+local OPTIONS = {names = true, keys = true, music = false, partial = false}
 function option_on(config, name)
     if config[name] == nil then return OPTIONS[name] end
     return config[name] == true

@@ -422,6 +422,24 @@ local function install_read_tile(engine)
     end
 end
 
+-- 拼音搜尋（見 engine/src/pinyin.rs）：DFHack 視窗的搜尋（FilteredList、sort 的清單、控制面板…都經過 utils.search_text）
+-- 英文比不到的詞，照字典把項目翻成中文再比拼音（全拼、首字母）。函式不在就略過，搜尋照舊只比英文
+local function install_search(engine)
+    local utils = require('utils')
+    local orig = utils.search_text
+    if type(orig) ~= 'function' or utils.dflang_search_text then return end
+    utils.dflang_search_text = orig
+    utils.search_text = function(text, search_tokens)
+        if orig(text, search_tokens) then return true end
+        if type(text) ~= 'string' then return false end
+        local tokens = type(search_tokens) == 'table' and search_tokens or tostring(search_tokens or ''):split()
+        for _, token in ipairs(tokens) do
+            if token ~= '' and not orig(text, {token}) and not engine.search_match(text, token) then return false end
+        end
+        return true
+    end
+end
+
 -- 圖形模式的分頁標籤一格一字畫兩列（上列標 top_of_text、下列標 bottom_of_text，字往下位移半格），不經 paintString：
 -- 標籤有譯文時兩列都畫影子字串，上下列各貼一次字圖，引擎依格子的旗標貼字的上半與下半（見 engine/src/hooks.rs paint）。
 -- 分頁寬度照英文標籤算，譯文在標籤寬度裡置中。函式不在就略過，分頁照英文
@@ -837,17 +855,25 @@ local function player_names()
     return table.concat(names, '\n')
 end
 
--- 遊戲沒有改名事件：讀檔後每 100 幀重送一次，內容沒變引擎不動；世界卸載就停（下次讀檔再開）。
--- 換了（讀檔後第一次、玩家改名）就清掉翻好的快取與段落計畫：翻好的整句不會因為名稱表換版本重算（engine.refresh）
-local function track_player_names(engine, state)
-    if state.player_names then return end
-    state.player_names = true
-    local function send()
-        if not dfhack.isMapLoaded() then
-            state.player_names = false
-            return
+-- 第三方模組的名稱、作者、說明（標題的模組管理員、建立世界與競技場的模組選擇）照原文：沒有讀進地圖時代替玩家取的名字送給引擎，
+-- 模組畫面上和字典同字的也照原文（見 engine/src/dict.rs 的 keeps_player_name）。原版模組（flags.vanilla）照翻
+local function mod_texts()
+    local texts = {}
+    for _, m in ipairs(df.global.game.mod_manager.mod_header) do
+        if not m.flags.vanilla then
+            for _, s in ipairs({m.name, m.author, m.description, m.steam_title, m.steam_description}) do
+                if s ~= '' then table.insert(texts, s) end
+            end
         end
-        local ok, list = pcall(player_names)
+    end
+    return table.concat(texts, '\n')
+end
+
+-- 遊戲沒有改名事件：每 100 幀重送一次，內容沒變引擎不動。讀進地圖時送玩家取的名字，其他時候（標題、建立世界）送模組的。
+-- 換了（讀檔後第一次、玩家改名）就清掉翻好的快取與段落計畫：翻好的整句不會因為名稱表換版本重算（engine.refresh）
+local function track_player_names(engine)
+    local function send()
+        local ok, list = pcall(dfhack.isMapLoaded() and player_names or mod_texts)
         if ok and engine.set_player_names(list) then engine.refresh() end
         dfhack.timeout(100, 'frames', send)
     end
@@ -956,6 +982,9 @@ local function start()
     if not ok then fail('%s；世界地圖據點歷史的多行事件維持英文', err) end
     ok, err = attach_hooks(engine, {'trade_artifact_speech'})
     if not ok then fail('%s；交易時神器的商人台詞維持英文', err) end
+    -- 拼音搜尋：遊戲搜尋框比對清單項目的 std::string::find，以及輸入框打字的函式（見 engine/src/pinyin.rs）；找不到只有搜尋照舊只比英文
+    ok, err = attach_hooks(engine, {'stock_string_find', 'text_input'})
+    if not ok then fail('%s；搜尋框只比英文', err) end
     -- DFHack 自己的段落排版（dfhack.gui.showPopupAnnouncement 的彈出視窗不經遊戲的 mtb_set_width）：照 dfhack.dll 的匯出名找
     if mtb then
         local addr = engine.dfhack_export('MTB_set_width@Gui@DFHack')
@@ -995,6 +1024,7 @@ local function start()
     install_label(engine, stamp)
     install_frame()
     install_read_tile(engine)
+    install_search(engine)
     install_typing()
     engine.set_typed_fields(table.concat(typed_fields(), ' '))
     -- 依畫面套用的譯文要知道現在在哪個畫面：每幀把 DFHack 的焦點字串告訴引擎（'frames' 計時器在世界卸載後也繼續）。
@@ -1034,6 +1064,7 @@ local function start()
     state.sync_buttons = function() place_buttons(engine, engine.status().enabled and state.buttons or nil) end
     state.sync_buttons()
     dfhack.BASE_G.DFLANG = state
+    track_player_names(engine)
     dfhack.onStateChange.dflang = function(sc)
         if sc ~= SC_VIEWSCREEN_CHANGED and sc ~= SC_WORLD_LOADED and sc ~= SC_WORLD_UNLOADED then return end
         state.sync_buttons()
@@ -1054,7 +1085,6 @@ local function start()
             local ok, err = pcall(note_world_names, engine)
             if not ok then fail('登記世界裡的名字時出錯（%s），沒畫過的名字維持英文', err) end
         end
-        if sc == SC_WORLD_LOADED then track_player_names(engine, state) end
         -- 上一個世界的玩家取的名字、單字書名不留到標題畫面與下一個世界；照它們翻好的快取一起清掉
         if sc == SC_WORLD_UNLOADED then
             engine.set_player_names('')

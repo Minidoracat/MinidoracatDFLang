@@ -1,0 +1,10 @@
+en	zh-Hant	zh-Hans	align	row	note
+Establish a	建立	建立			DFHack hack/scripts/gui/petitions.lua L56 請願視窗每筆協議的開頭（後接場所種類、for、對方名稱）
+for	給	给			DFHack hack/scripts/gui/petitions.lua L58 請願視窗：場所種類與對方名稱之間（原文 " for "）：「建立神殿給某某」；全域 for 是「為」
+worshiping	崇拜	崇拜			DFHack hack/scripts/gui/petitions.lua L46 請願視窗：神殿協議，後接神祇名
+a	 	 	c		DFHack hack/scripts/gui/petitions.lua L50 請願視窗：公會協議「a 職業 guild」的冠詞，中文不用，畫成一格空白（align 寫 c：譯文只有空白）
+guild	公會	公会			DFHack hack/scripts/gui/petitions.lua L52 請願視窗：接在職業名後面（原文 " guild"）：「礦工公會」
+(outstanding)	（未完成）	（未完成）			DFHack hack/scripts/list-agreements.lua L92 請願視窗：協議狀態
+(satisfied)	（已履行）	（已履行）			DFHack hack/scripts/list-agreements.lua L96 請願視窗：協議狀態（全域是「滿意」）
+(denied)	（遭拒）	（被拒）			DFHack hack/scripts/list-agreements.lua L99 請願視窗：協議狀態
+(expired)	（過期）	（过期）			DFHack hack/scripts/list-agreements.lua L102 請願視窗：協議狀態（原文 9 格，寫不下「已過期」）

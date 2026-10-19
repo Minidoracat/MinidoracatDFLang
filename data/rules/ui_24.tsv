@@ -1,0 +1,3 @@
+en	zh-Hant	zh-Hans	align	note
+{%1}, Make clay {%2}	{1}、製作陶{2}	{1}、制作陶{2}		同下一條（石材用途清單）：第二項是黏土反應時（Make clay hive, Make clay crafts, …），{2} 少了 Make clay，譯文補「製作陶」，和整句 Make clay … 的「陶」一致；排在 {%1}, Make {%2} 前
+{%1}, Make {%2}	{1}、製作{2}	{1}、制作{2}		FUN_140d97510／FUN_140432450 勞動＞石材用途「Economic uses」欄與物品頁用途清單：反應名以 , 接成一串（Make steel bars, Make pig iron bars, Make quicklime）；清單句型只套佔位內，最外層靠固定字 Make 撐住，排在 professions.tsv 的 {1}, {@2} 前（否則兩項時被當成「名字，職業」接成「，」）；{2} 剩下的部分由 lists.tsv 接成「、」

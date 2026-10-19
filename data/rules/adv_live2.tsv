@@ -1,0 +1,47 @@
+en	zh-Hant	zh-Hans	align	note
+Lower {%1} bucket	放下{1}的水桶	放下{1}的水桶		FUN_140840760／FUN_140840940／FUN_140840b20／FUN_140840cf0／FUN_140840ec0／FUN_1408410a0／FUN_140841270 L1183199-1183760 冒險動作選單的建築選項（字首由暫存器傳入，執行檔字串 Lower／Raise／Break in／Pull／Bash down／Pick／Topple）：動詞＋建築名＋[ bucket／ lock]；句尾方位括號由 zz_adv_activity 接；原本被 zz_adv_craft 的 Raise {%1} 拆成「喚起水井水桶」
+Raise {%1} bucket	拉起{1}的水桶	拉起{1}的水桶		同上
+Pick {%1} lock	撬開{1}的鎖	撬开{1}的锁		同上；排在 Pick {%1} 前
+Break in {%1}	撞開{1}	撞开{1}		同上
+Bash down {%1}	砸毀{1}	砸毁{1}		同上
+Topple {%1}	推倒{1}	推倒{1}		同上
+Pick {%1}	撿起{1}	捡起{1}		FUN_140893ef0 L1231796-1231858 冒險互動選單：Pick＋地上的物品名（FUN_140c65450）＋方位；原本被名稱接法拆成「十字鎬銅短劍」（pick 十字鎬）
+Pull {%1}	拉動{1}	拉动{1}		FUN_140893ef0 L1231796 同上，物品種類 0x5b（BRANCH，樹枝）時用 Pull；也會比到冒險動作選單的「Pull lever (方位)」，所以和建築頁的 Pull lever 一樣譯「拉動」
+Suck the {%1}'s {%2}	吸{1}的{2}	吸{1}的{2}		FUN_1408382f0 L1178061-1178183 冒險動作（吸血）：Suck＋對象（FUN_141330c30）＋'s＋[歷史人物's]＋血液材料
+Suck {1}'s {%2}	吸{1}的{2}	吸{1}的{2}		同上，對象是人名
+Eat the {%1}	吃{1}	吃{1}		FUN_140894820 L1232206-1232220 冒險物品互動選單：Eat／Drink＋帶冠詞 the 的物品名（FUN_140c65450 第四個參數 1）；同 View the {%1}，不寫成 Eat {%1}
+Drink the {%1}	喝下{1}	喝下{1}		同上
+{$1} (copy)	{1}(抄本)	{1}(抄本)		FUN_140c65450 L1845202-1845212 物品名：抄本（書名＋ (copy)）；括號照 names_items 用半形；書名先給 {$1}
+{1} (copy)	{1}(抄本)	{1}(抄本)		同上，書名不是 {$n} 收得到的
+Select victim ({#1} selected, range {#2}, disturber only)	選擇受害者（已選 {1}，範圍 {2}，僅限打擾者）	选择受害者（已选 {1}，范围 {2}，仅限打扰者）		FUN_1408a8300 L1246181-1246216 冒險能力選目標的狀態列：互動 raws IT_MANUAL_INPUT 的 victim（18 個互動）、recipient（7 個）不是字典裡的字，adv_gaps 的 Select {%1} (…) 收不到、落到 zz_adv_create 的 Select {1} 半中半英；名詞寫死，不加 victim／recipient 單字條目（常見字會改變別處句型怎麼切）
+Select victim ({#1} of {#2}, range {#3}, disturber only)	選擇受害者（{1}/{2}，範圍 {3}，僅限打擾者）	选择受害者（{1}/{2}，范围 {3}，仅限打扰者）		同上
+Select victim ({#1} selected, range {#2})	選擇受害者（已選 {1}，範圍 {2}）	选择受害者（已选 {1}，范围 {2}）		同上
+Select victim ({#1} of {#2}, range {#3})	選擇受害者（{1}/{2}，範圍 {3}）	选择受害者（{1}/{2}，范围 {3}）		同上
+Select victim ({#1} selected, adjacent only, disturber only)	選擇受害者（已選 {1}，僅限相鄰，僅限打擾者）	选择受害者（已选 {1}，仅限相邻，仅限打扰者）		同上
+Select victim ({#1} of {#2}, adjacent only, disturber only)	選擇受害者（{1}/{2}，僅限相鄰，僅限打擾者）	选择受害者（{1}/{2}，仅限相邻，仅限打扰者）		同上
+Select victim ({#1} selected, adjacent only)	選擇受害者（已選 {1}，僅限相鄰）	选择受害者（已选 {1}，仅限相邻）		同上
+Select victim ({#1} of {#2}, adjacent only)	選擇受害者（{1}/{2}，僅限相鄰）	选择受害者（{1}/{2}，仅限相邻）		同上
+Select victim ({#1} selected, own tile only, disturber only)	選擇受害者（已選 {1}，僅限所在格，僅限打擾者）	选择受害者（已选 {1}，仅限所在格，仅限打扰者）		同上
+Select victim ({#1} of {#2}, own tile only, disturber only)	選擇受害者（{1}/{2}，僅限所在格，僅限打擾者）	选择受害者（{1}/{2}，仅限所在格，仅限打扰者）		同上
+Select victim ({#1} selected, own tile only)	選擇受害者（已選 {1}，僅限所在格）	选择受害者（已选 {1}，仅限所在格）		同上
+Select victim ({#1} of {#2}, own tile only)	選擇受害者（{1}/{2}，僅限所在格）	选择受害者（{1}/{2}，仅限所在格）		同上
+Select victim ({#1} selected, disturber only)	選擇受害者（已選 {1}，僅限打擾者）	选择受害者（已选 {1}，仅限打扰者）		同上
+Select victim ({#1} of {#2}, disturber only)	選擇受害者（{1}/{2}，僅限打擾者）	选择受害者（{1}/{2}，仅限打扰者）		同上
+Select victim ({#1} selected)	選擇受害者（已選 {1}）	选择受害者（已选 {1}）		同上
+Select victim ({#1} of {#2})	選擇受害者（{1}/{2}）	选择受害者（{1}/{2}）		同上
+Select recipient ({#1} selected, range {#2}, disturber only)	選擇接受者（已選 {1}，範圍 {2}，僅限打擾者）	选择接受者（已选 {1}，范围 {2}，仅限打扰者）		同上
+Select recipient ({#1} of {#2}, range {#3}, disturber only)	選擇接受者（{1}/{2}，範圍 {3}，僅限打擾者）	选择接受者（{1}/{2}，范围 {3}，仅限打扰者）		同上
+Select recipient ({#1} selected, range {#2})	選擇接受者（已選 {1}，範圍 {2}）	选择接受者（已选 {1}，范围 {2}）		同上
+Select recipient ({#1} of {#2}, range {#3})	選擇接受者（{1}/{2}，範圍 {3}）	选择接受者（{1}/{2}，范围 {3}）		同上
+Select recipient ({#1} selected, adjacent only, disturber only)	選擇接受者（已選 {1}，僅限相鄰，僅限打擾者）	选择接受者（已选 {1}，仅限相邻，仅限打扰者）		同上
+Select recipient ({#1} of {#2}, adjacent only, disturber only)	選擇接受者（{1}/{2}，僅限相鄰，僅限打擾者）	选择接受者（{1}/{2}，仅限相邻，仅限打扰者）		同上
+Select recipient ({#1} selected, adjacent only)	選擇接受者（已選 {1}，僅限相鄰）	选择接受者（已选 {1}，仅限相邻）		同上
+Select recipient ({#1} of {#2}, adjacent only)	選擇接受者（{1}/{2}，僅限相鄰）	选择接受者（{1}/{2}，仅限相邻）		同上
+Select recipient ({#1} selected, own tile only, disturber only)	選擇接受者（已選 {1}，僅限所在格，僅限打擾者）	选择接受者（已选 {1}，仅限所在格，仅限打扰者）		同上
+Select recipient ({#1} of {#2}, own tile only, disturber only)	選擇接受者（{1}/{2}，僅限所在格，僅限打擾者）	选择接受者（{1}/{2}，仅限所在格，仅限打扰者）		同上
+Select recipient ({#1} selected, own tile only)	選擇接受者（已選 {1}，僅限所在格）	选择接受者（已选 {1}，仅限所在格）		同上
+Select recipient ({#1} of {#2}, own tile only)	選擇接受者（{1}/{2}，僅限所在格）	选择接受者（{1}/{2}，仅限所在格）		同上
+Select recipient ({#1} selected, disturber only)	選擇接受者（已選 {1}，僅限打擾者）	选择接受者（已选 {1}，仅限打扰者）		同上
+Select recipient ({#1} of {#2}, disturber only)	選擇接受者（{1}/{2}，僅限打擾者）	选择接受者（{1}/{2}，仅限打扰者）		同上
+Select recipient ({#1} selected)	選擇接受者（已選 {1}）	选择接受者（已选 {1}）		同上
+Select recipient ({#1} of {#2})	選擇接受者（{1}/{2}）	选择接受者（{1}/{2}）		同上

@@ -1,0 +1,96 @@
+en	zh-Hant	zh-Hans	align	note
+CombatTraining	戰鬥訓練	战斗训练		DFHack hack/lua/plugins/spectate.lua L303 旁觀提示框的活動名（activity_entry_type 原名照畫，綠字）
+SkillDemonstration	技能示範	技能示范		DFHack hack/lua/plugins/spectate.lua L303 旁觀提示框的活動名（activity_entry_type 原名）
+Individual Skill Drill	個人技能練習	个人技能练习		DFHack hack/lua/plugins/spectate.lua L296 旁觀提示框的活動名
+RangedPractice	射擊練習	射击练习		DFHack hack/lua/plugins/spectate.lua L303 旁觀提示框的活動名（activity_entry_type 原名）
+PonderTopic	思索課題	思考课题		DFHack hack/lua/plugins/spectate.lua L303 旁觀提示框的活動名（activity_entry_type 原名）
+DiscussTopic	討論課題	讨论课题		DFHack hack/lua/plugins/spectate.lua L303 旁觀提示框的活動名（activity_entry_type 原名）
+Fill Service Order	處理點單	处理点单		DFHack hack/lua/plugins/spectate.lua L297 旁觀提示框的活動名（酒館替客人送點的東西）
+CopyWrittenContent	抄寫著作	抄写著作		DFHack hack/lua/plugins/spectate.lua L303 旁觀提示框的活動名（activity_entry_type 原名）
+TeachTopic	講授課題	讲授课题		DFHack hack/lua/plugins/spectate.lua L303 旁觀提示框的活動名（activity_entry_type 原名）
+MakeBelieve	扮家家酒	过家家		DFHack hack/lua/plugins/spectate.lua L303 旁觀提示框的活動名（activity_entry_type 原名：孩童的假扮遊戲）
+PlayWithToy	玩玩具	玩玩具		DFHack hack/lua/plugins/spectate.lua L303 旁觀提示框的活動名（activity_entry_type 原名）
+Store Object	存放物品	存放物品		DFHack hack/lua/plugins/spectate.lua L298 旁觀提示框的活動名
+Store item	存放物品	存放物品		DFHack hack/lua/plugins/spectate.lua L35 旁觀提示框把工作「Store item in stockpile」縮寫成這個
+Cannot start spectate mode while the squads panel is open. Spectate	小隊面板開著時無法啟動旁觀模式。	小队面板开着时无法启动旁观模式。		DFHack hack/lua/plugins/spectate.lua L115 訊息框第一段（DFHack 以換行接下一段，句子被切開：後半「automatically disengages…」在下一條）
+automatically disengages when you open the squads panel.	開啟小隊面板時，旁觀模式會自動解除。	打开小队面板时，旁观模式会自动解除。		DFHack hack/lua/plugins/spectate.lua L116 訊息框第二段（接上一條，主詞 Spectate 寫在這裡）
+Please close the squads panel before enabling spectate mode.	請先關閉小隊面板，再啟用旁觀模式。	请先关闭小队面板，再启用旁观模式。		DFHack hack/lua/plugins/spectate.lua L118 訊息框第三段
+An Unknown Deity	未知神祇	未知神祇		DFHack hack/scripts/list-agreements.lua L80 請願視窗：找不到協議的神祇
+An Unknown Entity or Group	未知的組織或團體	未知的组织或团体		DFHack hack/scripts/list-agreements.lua L69 請願視窗：找不到協議的另一方
+DFHack confirm	DFHack 確認	DFHack 确认	c	DFHack hack/scripts/internal/confirm/specs.lua L20 確認對話框的預設標題
+Mint Coins	鑄造錢幣	铸造钱币		DFHack hack/scripts/internal/confirm/specs.lua L444 刪除工作指令確認的指令描述（job_type caption）；原本被 names.tsv「{@1} {@2}」拆成「薄荷錢幣」
+Prepare Meal	烹煮餐點	烹饪餐食		DFHack hack/scripts/internal/confirm/specs.lua L417 刪除工作指令確認的指令描述（原文 prepare meal，capitalizeStringWords 改大寫）
+Construct Door	建造門	建造门		DFHack hack/scripts/internal/confirm/specs.lua L444 刪除工作指令確認的指令描述（job_type caption；材料在前時由 names.tsv「{@1} {@2}」接成「木材建造門」）
+Construct Floodgate	建造水閘	建造水闸		DFHack 同上（job_type caption）
+Construct Bed	建造床	建造床		DFHack 同上（job_type caption）
+Construct Throne	建造王座	建造王座		DFHack 同上（job_type caption）
+Construct Coffin	建造棺材	建造棺材		DFHack 同上（job_type caption）
+Construct Table	建造桌子	建造桌子		DFHack 同上（job_type caption）
+Construct Chest	建造箱子	建造箱子		DFHack 同上（job_type caption）
+Construct Bag	製作袋子	制作袋子		DFHack 同上（job_type caption）
+Construct Bin	建造貨箱	建造货箱		DFHack 同上（job_type caption）
+Construct Armor Stand	建造盔甲架	建造盔甲架		DFHack 同上（job_type caption）
+Construct Weapon Rack	建造武器架	建造武器架		DFHack 同上（job_type caption）
+Construct Cabinet	建造櫥櫃	建造橱柜		DFHack 同上（job_type caption）
+Construct Statue	建造雕像	建造雕像		DFHack 同上（job_type caption）
+Construct Blocks	製作磚塊	制作砖块		DFHack 同上（job_type caption）
+Make Raw Glass	製作生玻璃	制作生玻璃		DFHack 同上（job_type caption）
+Encrust With Gems	鑲嵌寶石	镶嵌宝石		DFHack 同上（job_type caption）
+Encrust With Glass	鑲嵌玻璃	镶嵌玻璃		DFHack 同上（job_type caption）
+Encrust With Stones	鑲嵌石頭	镶嵌石头		DFHack 同上（job_type caption）
+Smelt Ore	冶煉礦石	冶炼矿石		DFHack 同上（job_type caption）
+Forge Weapon	鍛造武器	锻造武器		DFHack 同上（job_type caption）
+Forge Anvil	鍛造砧台	锻造砧台		DFHack 同上（job_type caption）
+Forge Helm	鍛造頭盔	锻造头盔		DFHack 同上（job_type caption）
+Construct Catapult Parts	製作投石機零件	制作投石机零件		DFHack 同上（job_type caption）
+Construct Ballista Parts	製作弩砲零件	制作弩炮零件		DFHack 同上（job_type caption）
+Construct Bolt Thrower Parts	製作弩箭機零件	制作弩箭机零件		DFHack 同上（job_type caption）
+Make Pants	製作褲子	制作裤子		DFHack 同上（job_type caption）
+Weave Cloth	織布	织布		DFHack 同上（job_type caption）
+Decorate With	裝飾	装饰		DFHack 同上（job_type caption）
+Construct Mechanisms	製作機械裝置	制作机械装置		DFHack 同上（job_type caption）
+Sew Image	縫製圖案	缝制图案		DFHack 同上（job_type caption）
+Construct Hatch Cover	建造活蓋	建造活盖		DFHack 同上（job_type caption）
+Construct Grate	建造格柵	建造格栅		DFHack 同上（job_type caption）
+Construct Quern	建造手推磨	建造手推磨		DFHack 同上（job_type caption）
+Construct Millstone	建造石磨	建造石磨		DFHack 同上（job_type caption）
+Construct Splint	製作夾板	制作夹板		DFHack 同上（job_type caption）
+Construct Crutch	製作拐杖	制作拐杖		DFHack 同上（job_type caption）
+Construct Traction Bench	建造牽引床	建造牵引床		DFHack 同上（job_type caption）
+Construct Slab	製作石板	制作石板		DFHack 同上（job_type caption）
+smallgem	切割寶石	切割宝石	inner	DFHack hack/lua/plugins/sort/diplomacy.lua L55 晉封候選清單的物品偏好（item_type SMALLGEM 轉小寫），只給「{#1} preferences: …」清單用
+trapparts	機械裝置	机械装置	inner	DFHack hack/lua/plugins/sort/diplomacy.lua L55 晉封候選清單的物品偏好（item_type TRAPPARTS）
+catapultparts	投石機零件	投石机零件	inner	DFHack hack/lua/plugins/sort/diplomacy.lua L55 晉封候選清單的物品偏好（item_type CATAPULTPARTS）
+ballistaparts	弩砲零件	弩炮零件	inner	DFHack hack/lua/plugins/sort/diplomacy.lua L55 晉封候選清單的物品偏好（item_type BALLISTAPARTS）
+ballistaarrowhead	弩砲箭頭	弩炮箭头	inner	DFHack hack/lua/plugins/sort/diplomacy.lua L55 晉封候選清單的物品偏好（item_type BALLISTAARROWHEAD）
+orthopedic cast	石膏	石膏	inner	DFHack hack/lua/plugins/sort/diplomacy.lua L55 晉封候選清單的物品偏好（item_type ORTHOPEDIC_CAST）
+Click to assign/unassign to pasture/pond/pit.	點選可指派到牧場／池塘／坑，或取消指派。	点击可分配到牧场/池塘/坑，或取消分配。		DFHack hack/lua/plugins/zone.lua L443 動物指派視窗底部說明（沒有 Shift 連選那一句時）
+Baron/Count/Duke	男爵／伯爵／公爵	男爵/伯爵/公爵		DFHack hack/lua/plugins/preserve-rooms.lua L276 房間自動分配：職位與晉升序列（職位代碼轉成每字大寫，以 / 接）
+Expedition Leader/Mayor	遠征隊長／市長	远征队长/市长		DFHack hack/lua/plugins/preserve-rooms.lua L276 房間自動分配：職位與晉升序列
+Sheriff/Captain Of The Guard	治安官／衛隊長	治安官/卫队长		DFHack hack/lua/plugins/preserve-rooms.lua L276 房間自動分配：職位與晉升序列
+landmasses	大陸	大陆		DFHack hack/scripts/exportlegends.lua L419 傳說模式匯出進度條「Exporting … % complete」的項目名
+underground region	地下區域	地下区域		DFHack hack/scripts/exportlegends.lua L467 匯出進度項目名
+river section	河段	河段		DFHack hack/scripts/exportlegends.lua L484 匯出進度項目名
+identities	身分	身份		DFHack hack/scripts/exportlegends.lua L612 匯出進度項目名（假身分）
+entity populations	勢力人口	势力人口		DFHack hack/scripts/exportlegends.lua L633 匯出進度項目名
+entities	勢力	势力		DFHack hack/scripts/exportlegends.lua L646 匯出進度項目名
+historical events	歷史事件	历史事件		DFHack hack/scripts/exportlegends.lua L756 匯出進度項目名
+historical event relationships	歷史事件關係	历史事件关系		DFHack hack/scripts/exportlegends.lua L1172 匯出進度項目名
+historical event relationship supplements	歷史事件關係補充	历史事件关系补充		DFHack hack/scripts/exportlegends.lua L1186 匯出進度項目名
+written contents	著作	著作		DFHack hack/scripts/exportlegends.lua L1201 匯出進度項目名
+poetic forms	詩歌形式	诗歌形式		DFHack hack/scripts/exportlegends.lua L1241 匯出進度項目名
+musical forms	音樂形式	音乐形式		DFHack hack/scripts/exportlegends.lua L1250 匯出進度項目名
+dance forms	舞蹈形式	舞蹈形式		DFHack hack/scripts/exportlegends.lua L1259 匯出進度項目名
+basic info	基本資訊	基本信息		DFHack hack/scripts/exportlegends.lua L1296 匯出進度項目名
+Welcome to gui/journal, the chronicler's tool for Dwarf Fortress!	歡迎使用 gui/journal，矮人要塞的編年史工具！	欢迎使用 gui/journal，矮人要塞的编年史工具！		DFHack hack/scripts/internal/journal/contexts/fortress.lua L4 日誌視窗空白時的歡迎說明（要塞）
+Here, you can carve out notes, sketch your grand designs, or record the history of your fortress.	你可以在這裡刻下筆記、勾勒宏大的藍圖，或記錄要塞的歷史。	你可以在这里刻下笔记、勾勒宏大的蓝图，或记录要塞的历史。		DFHack hack/scripts/internal/journal/contexts/fortress.lua L6 日誌歡迎說明
+The text you write here is saved together with your fort.	你在這裡寫的內容會和要塞一起存檔。	你在这里写的内容会和要塞一起保存。		DFHack hack/scripts/internal/journal/contexts/fortress.lua L7 日誌歡迎說明
+For guidance on navigation and hotkeys, tap the ? button in the upper right corner.	操作方式與快捷鍵說明，請點右上角的 ? 按鈕。	操作方式与快捷键说明，请点击右上角的 ? 按钮。		DFHack hack/scripts/internal/journal/contexts/fortress.lua L9 日誌歡迎說明（冒險版同句）
+Happy digging!	挖礦愉快！	挖矿愉快！		DFHack hack/scripts/internal/journal/contexts/fortress.lua L10 日誌歡迎說明結尾
+Welcome to gui/journal, the adventurer's notebook for Dwarf Fortress!	歡迎使用 gui/journal，矮人要塞的冒險者筆記本！	欢迎使用 gui/journal，矮人要塞的冒险者笔记本！		DFHack hack/scripts/internal/journal/contexts/adventure.lua L4 日誌視窗空白時的歡迎說明（冒險）
+Here, you can jot down your travels, keep track of important places, or note anything worth remembering.	你可以在這裡記下旅程、追蹤重要的地點，或寫下任何值得記住的事。	你可以在这里记下旅程、追踪重要的地点，或写下任何值得记住的事。		DFHack hack/scripts/internal/journal/contexts/adventure.lua L6 日誌歡迎說明
+The text you write here is saved together with your adventurer.	你在這裡寫的內容會和冒險者一起存檔。	你在这里写的内容会和冒险者一起保存。		DFHack hack/scripts/internal/journal/contexts/adventure.lua L7 日誌歡迎說明
+Safe travels!	一路平安！	一路平安！		DFHack hack/scripts/internal/journal/contexts/adventure.lua L10 日誌歡迎說明結尾
+Start a line with # symbols and a space to create a header. For example:	在一行開頭打 # 號再加一個空白，就能建立標題。例如：	在一行开头输入 # 号再加一个空格，就能创建标题。例如：		DFHack hack/scripts/internal/journal/contexts/fortress.lua L14 日誌目錄空白時的說明（冒險版同文）；整段要等範例段「# My section heading」「or」也翻得出來才會換成中文（以 # 開頭的原文寫不成條目，見回報）
+Those headers will appear here, and you can click on them to jump to them in the text.	這些標題會列在這裡，點一下就能跳到內文的位置。	这些标题会列在这里，点击就能跳到正文的位置。		DFHack hack/scripts/internal/journal/contexts/fortress.lua L22 日誌目錄說明；整段要等範例段「# My section heading」「or」也翻得出來才會換成中文（以 # 開頭的原文寫不成條目，見回報）
+Ok	好	好		DFHack hack/lua/gui/dialogs.lua L34 訊息框（showMessage）的確認按鈕；原文只有 2 格，寫不下「確定」

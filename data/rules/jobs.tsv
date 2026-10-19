@@ -9,6 +9,17 @@ Make large, serrated {@1} disc	製作大型{1}鋸齒圓盤	制作大型{1}锯齿
 Forge large, serrated {@1} disc	鍛造大型{1}鋸齒圓盤	锻造大型{1}锯齿圆盘		工作名稱：Forge large, serrated iron disc
 Make menacing {@1} spike	製作猙獰{1}尖刺	制作狰狞{1}尖刺		工作名稱：Make menacing wooden spike
 Forge menacing {@1} spike	鍛造猙獰{1}尖刺	锻造狰狞{1}尖刺		工作名稱：Forge menacing iron spike
+Make twenty-five bone {@1}	製作 25 支骨製{1}	制作 25 支骨制{1}		工作名稱：材料類別 bone（FUN_1414d1920）接物品名（Make bone crafts）；譯「骨製」，和物品名 props_01 的 bone {@1}（bone crafts「骨製工藝品」）一致，不用名稱檔的單字譯名；排在三段名稱前
+Make five bone {@1}	製作 5 支骨製{1}	制作 5 支骨制{1}		同上
+Make three bone {@1}	製作 3 個骨製{1}	制作 3 个骨制{1}		同上
+Make pair of bone {@1}	製作一雙骨製{1}	制作一双骨制{1}		同上
+Make bone {@1}	製作骨製{1}	制作骨制{1}		同上
+Make three shell {@1}	製作 3 個殼製{1}	制作 3 个壳制{1}		工作名稱：材料類別 shell（FUN_1414d1920）接物品名（Make shell crafts）；譯「殼製」，和物品名 props_01 的 shell {@1}（shell crafts「殼製工藝品」）一致，不用名稱檔的單字譯名；排在三段名稱前
+Make pair of shell {@1}	製作一雙殼製{1}	制作一双壳制{1}		同上
+Make shell {@1}	製作殼製{1}	制作壳制{1}		同上
+Make three horn {@1}	製作 3 個角製{1}	制作 3 个角制{1}		工作名稱：材料類別 horn（FUN_1414d1920）接物品名（Make horn crafts）；譯「角製」，和物品名 props_01 的 horn {@1}（horn crafts「角製工藝品」）一致，不用名稱檔的單字譯名；排在三段名稱前
+Make pair of horn {@1}	製作一雙角製{1}	制作一双角制{1}		同上
+Make horn {@1}	製作角製{1}	制作角制{1}		同上
 Make three {@1} {@2} {@3}	製作 3 個{1}{2}{3}	制作 3 个{1}{2}{3}		工作名稱：材料是兩段（yak leather）時
 Make five {@1} {@2} {@3}	製作 5 支{1}{2}{3}	制作 5 支{1}{2}{3}		工作名稱
 Make twenty-five {@1} {@2} {@3}	製作 25 支{1}{2}{3}	制作 25 支{1}{2}{3}		工作名稱

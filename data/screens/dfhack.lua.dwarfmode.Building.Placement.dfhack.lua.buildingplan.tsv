@@ -8,3 +8,4 @@ Artifact	神器	神器			DFHack hack/lua/plugins/buildingplan/filterselection.lu
 Amount	數量	数量			DFHack hack/lua/plugins/buildingplan/itemselection.lua L158 排序選項
 Value	價值	价值			DFHack hack/lua/plugins/buildingplan/itemselection.lua L159 排序選項
 Block	磚塊	砖块			DFHack hack/lua/plugins/buildingplan/itemselection.lua L103 選擇物品視窗第一行的物品類別（全域 Block 是格擋）
+s	 	 	c		DFHack hack/lua/plugins/buildingplan/itemselection.lua L106 選擇物品視窗第一行：物品類別後面另畫的複數 s，中文不分單複數，畫成一格空白（align 寫 c：譯文只有空白）

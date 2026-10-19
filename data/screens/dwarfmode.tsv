@@ -17,6 +17,7 @@ justiciar	司法官	司法官			勢力職位名（entity_position 的 name 單�
 justiciars	司法官	司法官			勢力職位名（entity_position 的 name 單複數；perf-fort 讀檔傾印 temp/round36/dump_positions.tsv 照英文）單獨畫出；data/strings 已有同原文的 inner 條目（只給佔位用），同一原文不能再寫一般條目，所以寫成要塞畫面的依畫面譯文；lady 寫在 strings/names_positions.tsv（比原文寬，整句貼圖照字寬壓窄）
 ladies	女領主	女领主			勢力職位名（entity_position 的 name 單複數；perf-fort 讀檔傾印 temp/round36/dump_positions.tsv 照英文）單獨畫出；data/strings 已有同原文的 inner 條目（只給佔位用），同一原文不能再寫一般條目，所以寫成要塞畫面的依畫面譯文；lady 寫在 strings/names_positions.tsv（比原文寬，整句貼圖照字寬壓窄）
 law-givers	立法者	立法者			勢力職位名（entity_position 的 name 單複數；perf-fort 讀檔傾印 temp/round36/dump_positions.tsv 照英文）單獨畫出；data/strings 已有同原文的 inner 條目（只給佔位用），同一原文不能再寫一般條目，所以寫成要塞畫面的依畫面譯文；lady 寫在 strings/names_positions.tsv（比原文寬，整句貼圖照字寬壓窄）
+law-giver	立法者	立法者			勢力職位名單數（dump 的 profession／人物頁職業：units.getProfessionName 取職位名）；同 law-givers，data/strings/adv_titles 只有 inner 條目
 leaders	領袖	领袖			勢力職位名（entity_position 的 name 單複數；perf-fort 讀檔傾印 temp/round36/dump_positions.tsv 照英文）單獨畫出；data/strings 已有同原文的 inner 條目（只給佔位用），同一原文不能再寫一般條目，所以寫成要塞畫面的依畫面譯文；lady 寫在 strings/names_positions.tsv（比原文寬，整句貼圖照字寬壓窄）
 lord	領主	领主			勢力職位名（entity_position 的 name 單複數；perf-fort 讀檔傾印 temp/round36/dump_positions.tsv 照英文）單獨畫出；data/strings 已有同原文的 inner 條目（只給佔位用），同一原文不能再寫一般條目，所以寫成要塞畫面的依畫面譯文；lady 寫在 strings/names_positions.tsv（比原文寬，整句貼圖照字寬壓窄）
 lords	領主	领主			勢力職位名（entity_position 的 name 單複數；perf-fort 讀檔傾印 temp/round36/dump_positions.tsv 照英文）單獨畫出；data/strings 已有同原文的 inner 條目（只給佔位用），同一原文不能再寫一般條目，所以寫成要塞畫面的依畫面譯文；lady 寫在 strings/names_positions.tsv（比原文寬，整句貼圖照字寬壓窄）

@@ -41,7 +41,18 @@ perfect {@1}	完美{1}	完美{1}		FUN_140a82c10 case 0x2c 大寶石的 perfect �
 {%1}, ♂ biscuits	{1}(♂)餅乾	{1}(♂)饼干		物品名：拿生物做的餅乾，遊戲把「生物, ♂」接在 biscuits 前（cave fish, ♂ biscuits）；照遊戲寫法翻
 {%1}, ♀ biscuits	{1}(♀)餅乾	{1}(♀)饼干		同上，雌性
 {%1} biscuits	{1}餅乾	{1}饼干		物品名：材料＋ biscuits（prepared loon intestines biscuits）
-{%1} waterskin ({%2})	{1}水袋({2})	{1}水囊({2})		物品名：裝了飲料的水袋「內容物 waterskin (材料)」（dwarven wine waterskin (dog leather)）
+{%1} waterskin ({%2})	{1}({2}水袋)	{1}({2}水囊)		物品名：裝了東西的容器「內容物 容器名 (材料)」（dwarven wine waterskin (dog leather)；工具類同 FUN_140ca39f0 L1886991-1887103：內容物＋ 工具名＋ (材料)）；譯成「內容物(材料容器)」，容器與材料寫在括號裡，不寫成「水水袋(豬皮革)」；半形括號，格數不超過原文
+{%1} flask ({%2})	{1}({2}水壺)	{1}({2}水壶)		同 waterskin 的容器名句型
+{%1} vial ({%2})	{1}({2}小瓶)	{1}({2}小瓶)		同 waterskin 的容器名句型
+{%1} bucket ({%2})	{1}({2}水桶)	{1}({2}水桶)		同 waterskin 的容器名句型
+{%1} goblet ({%2})	{1}({2}高腳杯)	{1}({2}高脚杯)		同 waterskin 的容器名句型
+{%1} mug ({%2})	{1}({2}馬克杯)	{1}({2}马克杯)		同 waterskin 的容器名句型；mug 照術語寫馬克杯；寬度例外：樣板比原文多一格，佔位填入液體名與材料名後幾乎都比原文短，填完比原文寬時引擎照英文
+{%1} cup ({%2})	{1}({2}杯子)	{1}({2}杯子)		同 waterskin 的容器名句型
+{%1} jug ({%2})	{1}({2}壺)	{1}({2}壶)		同 waterskin 的容器名句型
+{%1} pot ({%2})	{1}({2}大罐)	{1}({2}大罐)		同 waterskin 的容器名句型
+{%1} pouch ({%2})	{1}({2}小袋)	{1}({2}小袋)		同 waterskin 的容器名句型
+{%1} bowl ({%2})	{1}({2}碗)	{1}({2}碗)		同 waterskin 的容器名句型
+{%1} cauldron ({%2})	{1}({2}大鍋)	{1}({2}大锅)		同 waterskin 的容器名句型
 stray {%1} {@2}	流浪{1}{2}	流浪{1}{2}		流浪家畜的身體部位（stray bunny skull）；names.tsv 的 stray {@1} 只收一個字典條目；結尾要是字典裡的部位名
 Horizontal {%1} Axle	{1}水平傳動軸	{1}水平传动轴		FUN_140553720 建築名（沒取名時）：Horizontal＋材料＋ Axle；照建造選單的 Horizontal axle
 Vertical {%1} Axle	{1}垂直傳動軸	{1}垂直传动轴		FUN_140553a50 建築名：Vertical＋材料＋ Axle

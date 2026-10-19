@@ -140,10 +140,10 @@ It is snowing {%1}!	天上飄起了{1}！	天上飘起了{1}！		FUN_141447440 L
 {1} has been fed to beasts.	{1}被拿去餵野獸了。	{1}被拿去喂野兽了。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
 {1} has been hacked to pieces.	{1}被砍成碎塊了。	{1}被砍成碎块了。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
 {1} has been executed by being left out in the air.	{1}被留在戶外處決了。	{1}被留在户外处决了。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
-{1} has boiled.	{1}沸騰蒸發了。	{1}沸腾蒸发了。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
-{1} has melted.	{1}融化了。	{1}融化了。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
-{1} has condensed.	{1}凝結了。	{1}凝结了。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
-{1} has solidified.	{1}凝固了。	{1}凝固了。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
+{1} has boiled.	{1}沸騰蒸發而死。	{1}沸腾蒸发而死。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）；體溫超過沸點、熔點等的死因，譯文補「而死」才看得出是死亡公告
+{1} has melted.	{1}融化而死。	{1}融化而死。		同上
+{1} has condensed.	{1}凝結而死。	{1}凝结而死。		同上
+{1} has solidified.	{1}凝固而死。	{1}凝固而死。		同上
 {1} has succumbed to infection.	{1}死於感染。	{1}死于感染。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
 {1} has been put to rest.	{1}得到了安息。	{1}得到了安息。		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）
 {1} has been scared to death!	{1}被嚇死了！	{1}被吓死了！		FUN_1413e5b20 L2654713 死亡公告（整句寫出，不用「{1} has ＋片段」外框：外框會把「She has an overbearing personality.」這類句子吞進去）

@@ -1,0 +1,3 @@
+en	zh-Hant	zh-Hans	align	row	note
+Prayer	祈禱	祈祷			DFHack hack/lua/plugins/spectate.lua L303 旁觀提示框（跟隨橫幅、滑鼠懸停）的活動名（activity_entry_type 原名）；單字放依畫面譯文，不改全域字典的切法
+Harassment	騷擾	骚扰			DFHack hack/lua/plugins/spectate.lua L303 旁觀提示框的活動名（activity_entry_type 原名）；單字放依畫面譯文

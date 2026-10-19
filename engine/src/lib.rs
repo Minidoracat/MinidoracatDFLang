@@ -22,6 +22,7 @@ mod mtb;
 mod mouse;
 pub mod names;
 mod overlay;
+mod pinyin;
 mod scan;
 mod translit;
 mod typed;
@@ -91,6 +92,7 @@ pub unsafe extern "C" fn luaopen_dflang(l: lua::State) -> c_int {
         lua::set_fn(l, c"refresh", refresh);
         lua::set_fn(l, c"status", status);
         lua::set_fn(l, c"translate", translate);
+        lua::set_fn(l, c"search_match", search_match);
         lua::set_fn(l, c"log_misses", log_misses);
         lua::set_fn(l, c"update_texpos", update_texpos);
         lua::set_fn(l, c"dh_translate", dh_translate);
@@ -420,7 +422,8 @@ unsafe extern "C" fn set_titles(l: lua::State) -> c_int {
     }
 }
 
-/// set_player_names(名字，以 \n 分隔)：玩家取的名字（倉儲區、區域、小隊、排程、制服…）整批換成這一份，照原樣畫（見 names::set_player_names）。
+/// set_player_names(名字，以 \n 分隔)：玩家取的名字（倉儲區、區域、小隊、排程、制服…；沒有讀進地圖時是第三方模組的名稱、作者、說明）
+/// 整批換成這一份，照原樣畫（見 names::set_player_names）。
 /// 回傳有沒有換
 unsafe extern "C" fn set_player_names(l: lua::State) -> c_int {
     unsafe {
@@ -962,6 +965,21 @@ unsafe extern "C" fn translate(l: lua::State) -> c_int {
             Some(t) => lua::push_str(l, &t),
             None => lua::push_nil(l),
         }
+        1
+    }
+}
+
+/// search_match(英文, 打的字) → bool：DFHack 視窗的搜尋（utils.search_text，見 lua/loader.lua 的 install_search）英文比不到時，
+/// 照字典翻成中文再比拼音（全拼、首字母，見 pinyin.rs）。翻譯關著時畫面是英文，一律 false
+unsafe extern "C" fn search_match(l: lua::State) -> c_int {
+    unsafe {
+        let dict = hooks::DICT.load(Ordering::Acquire);
+        let on = !dict.is_null() && hooks::ENABLED.load(Ordering::Relaxed);
+        let hit = match (lua::arg_bytes(l, 1), lua::arg_bytes(l, 2)) {
+            (Some(text), Some(typed)) if on => pinyin::search(&*dict, &cp437::from_lua(text), typed),
+            _ => false,
+        };
+        lua::push_bool(l, hit);
         1
     }
 }

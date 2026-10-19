@@ -70,6 +70,9 @@ smear of {%1}	一抹{1}	一抹{1}	inner	FUN_140657f90 L877027-877171 沾染物�
 {%1} smear	一抹{1}	一抹{1}	inner	FUN_140657f90 L877027-877171 沾染物描述：生物材料是「量詞 of 材料」，其他材料是「材料 量詞」（量詞依粉末／液體與量：specks、dusting、coating／spatter、smear、covering）；冒險動作選項 FUN_1408392a0（接 (部位)）與 FUN_140839850／FUN_140839ca0（Eat／Drink 開頭）；inner，只在佔位裡
 covering of {%1}	覆滿的{1}	覆满的{1}	inner	FUN_140657f90 L877027-877171 沾染物描述：生物材料是「量詞 of 材料」，其他材料是「材料 量詞」（量詞依粉末／液體與量：specks、dusting、coating／spatter、smear、covering）；冒險動作選項 FUN_1408392a0（接 (部位)）與 FUN_140839850／FUN_140839ca0（Eat／Drink 開頭）；inner，只在佔位裡
 {%1} covering	覆滿的{1}	覆满的{1}	inner	FUN_140657f90 L877027-877171 沾染物描述：生物材料是「量詞 of 材料」，其他材料是「材料 量詞」（量詞依粉末／液體與量：specks、dusting、coating／spatter、smear、covering）；冒險動作選項 FUN_1408392a0（接 (部位)）與 FUN_140839850／FUN_140839ca0（Eat／Drink 開頭）；inner，只在佔位裡
+ash specks ({%1})	點點灰燼（{1}）	点点灰烬（{1}）		同下，材料是灰燼（ash）時整段寫出：ash 單字全域是樹名「梣樹」，排在 {%1} specks ({%2}) 等前面
+ash dusting ({%1})	薄層灰燼（{1}）	薄层灰烬（{1}）		同上
+ash coating ({%1})	一層灰燼（{1}）	一层灰烬（{1}）		同上
 specks of {%1} ({%2})	點點{1}（{2}）	点点{1}（{2}）		FUN_140657f90 L877027-877171 沾染物描述：生物材料是「量詞 of 材料」，其他材料是「材料 量詞」（量詞依粉末／液體與量：specks、dusting、coating／spatter、smear、covering）；冒險動作選項 FUN_1408392a0（接 (部位)）與 FUN_140839850／FUN_140839ca0（Eat／Drink 開頭）：沒有動詞的選項，括號是部位
 {%1} specks ({%2})	點點{1}（{2}）	点点{1}（{2}）		FUN_140657f90 L877027-877171 沾染物描述：生物材料是「量詞 of 材料」，其他材料是「材料 量詞」（量詞依粉末／液體與量：specks、dusting、coating／spatter、smear、covering）；冒險動作選項 FUN_1408392a0（接 (部位)）與 FUN_140839850／FUN_140839ca0（Eat／Drink 開頭）：沒有動詞的選項，括號是部位
 dusting of {%1} ({%2})	薄層{1}（{2}）	薄层{1}（{2}）		FUN_140657f90 L877027-877171 沾染物描述：生物材料是「量詞 of 材料」，其他材料是「材料 量詞」（量詞依粉末／液體與量：specks、dusting、coating／spatter、smear、covering）；冒險動作選項 FUN_1408392a0（接 (部位)）與 FUN_140839850／FUN_140839ca0（Eat／Drink 開頭）：沒有動詞的選項，括號是部位；譯「薄層」：「薄薄一層」在 {%1} dusting ({%2}) 比原文寬

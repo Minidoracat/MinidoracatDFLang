@@ -1,2 +1,6 @@
 en	zh-Hant	zh-Hans	align	row	note
 Cook	烹飪	烹饪			FUN_14042fcc0 L549717 廚房分頁欄名（UI7）；全域是職業「廚師」
+ Veg/Fruit/Leaves	 蔬菜／果實／葉子	 蔬菜/水果/叶子			FUN_140430f30 L550250-550316 廚房分頁上方的篩選鈕（連開頭空白一起畫，空白照原文）；同列的 All 用全域 info.tsv 的「 全」
+ Seeds	 種子	 种子			同上：種子
+ Drinks	 飲料	 饮料			同上：飲料（廚房可釀造的飲料類食材）
+ Meat/Fish/Other	 肉／魚／其他	 肉/鱼/其他			同上：肉、魚與其他

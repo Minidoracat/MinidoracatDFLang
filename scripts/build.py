@@ -107,8 +107,10 @@ def third_party_licenses() -> str:
         for text in found:
             texts.setdefault(text, []).append(crate)
     blocks = [f"=== {'、'.join(crates)} ===\n\n{text}\n" for text, crates in texts.items()]
-    return ("dflang.dll 相依的開源 Rust 套件（cargo metadata 的相依圖，可能多列幾個實際沒連結進去的）。本檔由 scripts/build.py 產生。\n\n"
-            + "\n".join(listing) + "\n\n" + "\n".join(blocks))
+    # 拼音搜尋的讀音表（engine/pinyin.tsv）編進 DLL，來源是 Unicode 的 Unihan 資料庫
+    blocks.append(f"=== 讀音表 engine/pinyin.tsv（Unicode Unihan） ===\n\n{(ROOT / 'engine/LICENSE-unicode.txt').read_text(encoding='utf-8').strip()}\n")
+    return ("dflang.dll 相依的開源 Rust 套件（cargo metadata 的相依圖，可能多列幾個實際沒連結進去的），以及編進 DLL 的 Unicode Unihan 讀音資料。"
+            "本檔由 scripts/build.py 產生。\n\n" + "\n".join(listing) + "\n\n" + "\n".join(blocks))
 
 
 def load_config() -> dict:

@@ -1,0 +1,3 @@
+en	zh-Hant	zh-Hans	align	note
+fierce {@1}	兇猛的{1}	凶猛的{1}		FUN_14132e430 2536973 沒有名字的動物稱呼前綴（the fierce dog；和 stray 同一處，names.tsv 的 stray {@1}）
+fierce {%1}	兇猛的{1}	凶猛的{1}	inner	同上，後面再接外觀前綴（the fierce skinny cat）

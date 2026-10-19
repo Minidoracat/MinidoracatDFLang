@@ -1,0 +1,8 @@
+en	zh-Hant	zh-Hans	align	note
+Failed to copy a file during saving: {1}	存檔時複製檔案失敗：{1}	保存时复制文件失败：{1}		FUN_140ace5b0 L1579396 存檔失敗的警告視窗（FUN_140a513e0 → warning_modal_ok，按鈕 OK）：{1} 是檔案路徑＋「: 」＋系統錯誤訊息；排在下一條通用的 Failed to copy 前面
+Failed to copy {1} to {2}: {3}	無法將 {1} 複製到 {2}：{3}	无法将 {1} 复制到 {2}：{3}		FUN_140a50460 L1504147-1504176 複製存檔檔案失敗的警告視窗：來源路徑、目的路徑、系統錯誤訊息
+Failed to create directory {1}: {2}	無法建立資料夾 {1}：{2}	无法创建文件夹 {1}：{2}		FUN_140a511d0 L1504567-1504585 建立資料夾失敗的警告視窗：路徑、系統錯誤訊息
+Failed to create save directory; game will not continue with saving: {1}	無法建立存檔資料夾，遊戲不會繼續存檔：{1}	无法创建存档文件夹，游戏不会继续保存：{1}		FUN_140ace5b0 L1579086-1579099 存檔失敗的警告視窗：{1} 是系統錯誤訊息
+Failed to create temporary save dir; game will not continue with saving: {1}	無法建立暫存的存檔資料夾，遊戲不會繼續存檔：{1}	无法创建临时存档文件夹，游戏不会继续保存：{1}		FUN_140ace5b0 L1579173-1579186 同上
+Could not remove destination directory when synchronizing save!{1}	同步存檔時無法移除目的資料夾！{1}	同步存档时无法删除目标文件夹！{1}		FUN_140ace5b0 L1580020-1580034 同上；遊戲在驚嘆號後直接接系統錯誤訊息，沒有空白
+Could not rename temp folder when synchronizing save!{1}	同步存檔時無法重新命名暫存資料夾！{1}	同步存档时无法重命名临时文件夹！{1}		FUN_140ace5b0 L1580055-1580065 同上

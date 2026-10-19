@@ -1,0 +1,5 @@
+en	zh-Hant	zh-Hans	align	note
+Get {%1} from {%2}	從{2}拿取{1}	从{2}拿取{1}		FUN_1408932c0／FUN_1408935f0／FUN_140893870／FUN_140893bb0 L1231299-1231748 冒險互動選單：Get＋物品名（FUN_140c65450）＋[ from ＋來源：生物名 FUN_141330c30／建築名（虛擬函式，可能是空字串）／容器物品名]＋方位；放 zz：排在 zz_adv_activity 的句尾方位括號與 adv_speech_conv6 的小販叫賣「Get your {%1} … right here!」之後；from 句型排在 Get {%1} 前
+Get {%1} from 	拿取{1}	拿取{1}		同上，來源名稱是空字串（遊戲照樣接 from 和空白，後面可能再接方位括號）
+Get {%1} from	拿取{1}	拿取{1}		同上，結尾空白被收掉時
+Get {%1}	拿取{1}	拿取{1}		同上，沒有來源

@@ -217,7 +217,7 @@ marshal	元帥	元帅	inner	FUN_140689de0 L908079／908112 職位名：程序生
 field marshal	陸軍元帥	陆军元帅	inner	FUN_140689de0 L908079／908112 職位名：程序生成（FUN_14096ece0 L1366771），只給句型佔位用
 constable	統帥	统帅	inner	FUN_140689de0 L908079／908112 職位名：程序生成的軍事首長（FUN_14096ece0 L1366778），只給句型佔位用
 keeper of the seal	掌璽大臣	掌玺大臣	inner	FUN_140689de0 L908112 職位名：程序生成的官員，只給句型佔位用
-master of beasts	馴獸總管	驯兽总管	inner	FUN_140689de0 L908112 職位名：程序生成（FUN_14096ece0 L1367746），只給句型佔位用
+master of beasts	馴獸總管	驯兽总管		FUN_140689de0 L908112 職位名：程序生成（FUN_14096ece0 L1367746）；一般條目（不寫 inner）：單獨畫出的職位名（人物頁團體、要塞職位清單）整句查不到時，會被 zz_legends_04 的 master of {%1}（神話稱號）切成「幾頭野獸主宰」；術語例外：Master
 my second eldest son	我的次子	我的次子	inner	FUN_14065bfb0 L880766 among them 清單項目：my＋排行親屬；同上
 my third eldest son	我的三子	我的三子	inner	FUN_14065bfb0 L880766 among them 清單項目：my＋排行親屬；同上
 my fourth eldest son	我的四子	我的四子	inner	FUN_14065bfb0 L880766 among them 清單項目：my＋排行親屬；同上

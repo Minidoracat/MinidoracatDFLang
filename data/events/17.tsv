@@ -6,7 +6,7 @@ en	zh-Hant	zh-Hans	align	note
 {1} was made a symbol of {2} by {3}.	{3}將{1}定為{2}的象徵。	{3}将{1}定为{2}的象征。	inner	FUN_140b88500 1699904 artifact_claim_formed 完整句：職位名查不到時的退路；排在上面幾條後面
 {1} was made an official symbol by {2}.	{2}將{1}定為官方象徵。	{2}将{1}定为官方象征。	inner	FUN_140b88500 1699904 artifact_claim_formed 完整句
 {1} was made a family heirloom by {2}.	{2}將{1}定為傳家寶。	{2}将{1}定为传家宝。	inner	FUN_140b88500 1699904 artifact_claim_formed 完整句
-{1} was claimed by {2}.	{2}將{1}據為己有。	{2}将{1}据为己有。	inner	FUN_140b88500 1699904 artifact_claim_formed 完整句
+{1} was claimed by {2}.	{2}宣稱擁有{1}。	{2}宣称拥有{1}。	inner	FUN_140b88500 1699904 artifact_claim_formed 完整句
 {1} was sanctified by {2}.	{2}將{1}奉為聖物。	{2}将{1}奉为圣物。	inner	FUN_140b88500 1699904 artifact_claim_formed 完整句
 {1} was made a symbol of the {@2} of {3}.	{1}被定為{3}{2}的象徵。	{1}被定为{3}{2}的象征。	inner	FUN_140b88500 1699904 artifact_claim_formed 完整句：沒有聲索者
 {1} was made a symbol of a {@2} of {3}.	{1}被定為{3}{2}的象徵。	{1}被定为{3}{2}的象征。	inner	FUN_140b88500 1699904 artifact_claim_formed 完整句：沒有聲索者
@@ -15,7 +15,7 @@ en	zh-Hant	zh-Hans	align	note
 {1} was made a symbol of {2}.	{1}被定為{2}的象徵。	{1}被定为{2}的象征。	inner	FUN_140b88500 1699904 artifact_claim_formed 完整句：沒有聲索者、職位名查不到時的退路；排在 {@2} 各條後面（gen_dates 的帶原因變體排在前面，{2} 寬鬆時會把 the king 拆成 the＋原因）
 {1} was made an official symbol.	{1}被定為官方象徵。	{1}被定为官方象征。	inner	FUN_140b88500 1699904 artifact_claim_formed 完整句：沒有聲索者
 {1} was made a family heirloom.	{1}被定為傳家寶。	{1}被定为传家宝。	inner	FUN_140b88500 1699904 artifact_claim_formed 完整句：沒有聲索者
-{1} was claimed.	{1}被人據為己有。	{1}被人据为己有。	inner	FUN_140b88500 1699904 artifact_claim_formed 完整句：沒有聲索者
+{1} was claimed.	有人宣稱擁有{1}。	有人宣称拥有{1}。	inner	FUN_140b88500 1699904 artifact_claim_formed 完整句：沒有聲索者
 {1} was sanctified.	{1}被奉為聖物。	{1}被奉为圣物。	inner	FUN_140b88500 1699904 artifact_claim_formed 完整句：沒有聲索者
 In {#1}, {2} was created in {3} by {4} and {5} {%6} {%7}.	{1}年，{4}和{5}在{3}創造了{2}，{6}，{7}。	{1}年，{4}和{5}在{3}创造了{2}，{6}，{7}。		FUN_140b89cf0 1700841 artifact_created 完整句：{3} 人物、{4} 勢力；_events_05 的 `{1} created {2}.` 帶日期版本排在 _events_dates 裡較前面，會吞下「X was created by …」，所以日期外框與原因變體照 gen_dates.py 的格式手寫在本檔（排在 _events_dates 前），不寫 inner 子句
 In the {@1} of {#2}, {3} was created in {4} by {5} and {6} {%7} {%8}.	{2}年{1}，{5}和{6}在{4}創造了{3}，{7}，{8}。	{2}年{1}，{5}和{6}在{4}创造了{3}，{7}，{8}。		FUN_140b89cf0 1700841 artifact_created 完整句：{3} 人物、{4} 勢力；_events_05 的 `{1} created {2}.` 帶日期版本排在 _events_dates 裡較前面，會吞下「X was created by …」，所以日期外框與原因變體照 gen_dates.py 的格式手寫在本檔（排在 _events_dates 前），不寫 inner 子句
@@ -125,14 +125,14 @@ the making of {1} into an official symbol by {2}an unknown creature	{2}將{1}定
 the making of {1} into an official symbol by {2}	{2}將{1}定為官方象徵	{2}将{1}定为官方象征	inner	FUN_140b88790 1699990 artifact_claim_formed 短語：聲索者是人物時遊戲把人物名接了兩次（0x140b889d7），{末位} 一起抓住照原樣
 the making of {1} into a family heirloom by {2}an unknown creature	{2}將{1}定為傳家寶	{2}将{1}定为传家宝	inner	FUN_140b88790 1699990 artifact_claim_formed 短語：聲索者是勢力時遊戲多接一次人物名（0x140b889d7，人物 -1 時為 an unknown creature，緊貼在勢力名後），譯文略去；遊戲多接的人物名，譯文略去；術語例外：creature
 the making of {1} into a family heirloom by {2}	{2}將{1}定為傳家寶	{2}将{1}定为传家宝	inner	FUN_140b88790 1699990 artifact_claim_formed 短語：聲索者是人物時遊戲把人物名接了兩次（0x140b889d7），{末位} 一起抓住照原樣
-the claiming of {1} by {2}an unknown creature	{2}將{1}據為己有	{2}将{1}据为己有	inner	FUN_140b88790 1699990 artifact_claim_formed 短語：聲索者是勢力時遊戲多接一次人物名（0x140b889d7，人物 -1 時為 an unknown creature，緊貼在勢力名後），譯文略去；遊戲多接的人物名，譯文略去；術語例外：creature
-the claiming of {1} by {2}	{2}將{1}據為己有	{2}将{1}据为己有	inner	FUN_140b88790 1699990 artifact_claim_formed 短語：聲索者是人物時遊戲把人物名接了兩次（0x140b889d7），{末位} 一起抓住照原樣
+the claiming of {1} by {2}an unknown creature	{2}宣稱擁有{1}	{2}宣称拥有{1}	inner	FUN_140b88790 1699990 artifact_claim_formed 短語：聲索者是勢力時遊戲多接一次人物名（0x140b889d7，人物 -1 時為 an unknown creature，緊貼在勢力名後），譯文略去；遊戲多接的人物名，譯文略去；術語例外：creature
+the claiming of {1} by {2}	{2}宣稱擁有{1}	{2}宣称拥有{1}	inner	FUN_140b88790 1699990 artifact_claim_formed 短語：聲索者是人物時遊戲把人物名接了兩次（0x140b889d7），{末位} 一起抓住照原樣
 the sanctification of {1} by {2}an unknown creature	{2}將{1}奉為聖物	{2}将{1}奉为圣物	inner	FUN_140b88790 1699990 artifact_claim_formed 短語：聲索者是勢力時遊戲多接一次人物名（0x140b889d7，人物 -1 時為 an unknown creature，緊貼在勢力名後），譯文略去；遊戲多接的人物名，譯文略去；術語例外：creature
 the sanctification of {1} by {2}	{2}將{1}奉為聖物	{2}将{1}奉为圣物	inner	FUN_140b88790 1699990 artifact_claim_formed 短語：聲索者是人物時遊戲把人物名接了兩次（0x140b889d7），{末位} 一起抓住照原樣
 the making of {1} into a symbol of {2}an unknown creature	{1}被定為{2}的象徵	{1}被定为{2}的象征	inner	FUN_140b88790 1699990 artifact_claim_formed 短語：沒有聲索者（遊戲多接 an unknown creature，譯文略去）；遊戲多接的人物名，譯文略去；術語例外：creature
 the making of {1} into an official symbolan unknown creature	{1}被定為官方象徵	{1}被定为官方象征	inner	FUN_140b88790 1699990 artifact_claim_formed 短語：沒有聲索者（同上）；遊戲多接的人物名，譯文略去；術語例外：creature
 the making of {1} into a family heirlooman unknown creature	{1}被定為傳家寶	{1}被定为传家宝	inner	FUN_140b88790 1699990 artifact_claim_formed 短語：沒有聲索者（同上）；遊戲多接的人物名，譯文略去；術語例外：creature
-the claiming of {1}an unknown creature	{1}被人據為己有	{1}被人据为己有	inner	FUN_140b88790 1699990 artifact_claim_formed 短語：沒有聲索者（同上）；遊戲多接的人物名，譯文略去；術語例外：creature
+the claiming of {1}an unknown creature	有人宣稱擁有{1}	有人宣称拥有{1}	inner	FUN_140b88790 1699990 artifact_claim_formed 短語：沒有聲索者（同上）；遊戲多接的人物名，譯文略去；術語例外：creature
 the sanctification of {1}an unknown creature	{1}被奉為聖物	{1}被奉为圣物	inner	FUN_140b88790 1699990 artifact_claim_formed 短語：沒有聲索者（同上）；遊戲多接的人物名，譯文略去；術語例外：creature
 the making of {1} from {2} and {3} in {4} by {5}	{5}在{4}以{2}和{3}製成{1}	{5}在{4}以{2}和{3}制成{1}	inner	FUN_140b8a720 1701179 artifact_transformed 短語：排在 claim 短語後面
 the making of {1} from {2} and {3} by {4}	{4}以{2}和{3}製成{1}	{4}以{2}和{3}制成{1}	inner	FUN_140b8a720 1701179 artifact_transformed 短語

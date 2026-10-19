@@ -1,0 +1,13 @@
+en	zh-Hant	zh-Hans	align	note
+Kill various	擊殺多種目標	击杀多种目标		FUN_1410f2b10 L2513331-2513332 小隊命令說明：目標超過一個、種族不同時（Kill＋ various）
+Patrol 	巡邏 	巡逻 		FUN_1410f31d0 L2513517 小隊命令說明：巡邏路線已刪除時只剩 Patrol＋空白
+No chests	沒有箱子	没有箱子		FUN_1404257d0 L544192-544205 貴族與管理者面板的房間需求摘要：已有家具數為 0 時是 No（DAT_141604520）＋空白＋家具名＋s；原本被拼成「否箱子」
+No cabinets	沒有櫥櫃	没有橱柜		FUN_1404257d0 L544257 同上
+No weapon racks	沒有武器架	没有武器架		FUN_1404257d0 L544315 同上
+No armor stands	沒有盔甲架	没有盔甲架		FUN_1404257d0 L544367 同上
+The Dawn	黎明	黎明		FUN_1403b9270 L489021-489025 場所指派的神祇提示框：神祇領域名（FUN_140756500 對這幾個領域加 the，FUN_14052d3c0 每字大寫）；譯名同 speech_01 的領域名
+The Rain	雨水	雨水		FUN_1403b9270 同上
+The Seasons	季節	季节		FUN_1403b9270 同上
+The Sky	天空	天空		FUN_1403b9270 同上
+The Sun	太陽	太阳		FUN_1403b9270 同上
+The Weather	天氣	天气		FUN_1403b9270 同上

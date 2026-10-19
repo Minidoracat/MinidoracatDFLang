@@ -27,7 +27,7 @@
 
 共有整句 55,185 條、句型 27,211 條、依畫面譯文 637 條、名稱字表 3,301 條、音譯表 327 個音節。
 
-照原文的部分：玩家自己輸入的文字、DFHack 的工具名與指令、主控台輸出；矮人語等原生語言的名字、配樂曲名預設照原文，可以在設定視窗改成中文。沒翻到的字維持英文，不影響遊戲。
+照原文的部分：玩家自己輸入的文字、玩家取的名字、第三方模組的名稱與說明、DFHack 的工具名與指令、主控台輸出；配樂曲名預設照原文，可以在設定視窗改成中文。矮人語等原生語言的名字預設音譯成中文，可以在設定視窗改回原文。沒翻到的字維持英文，不影響遊戲。
 
 ## 設定視窗
 
@@ -40,13 +40,20 @@
 | 整句貼圖 | 照字型的實際字寬整行畫字，調整視窗或介面縮放後也清楚；和其他改畫面的 MOD 衝突時可以關掉，改回一字兩格的舊畫法 | 開 |
 | 中文字型大小 | 13～16（格高的十六分之幾），數字越大字越大 | 14 |
 | 粗體字 | 關掉改用一般粗細 | 開 |
-| 原生語言名字音譯 | 矮人語等原名轉成中文（「Rigòth Nildum」→「里戈斯·尼爾杜姆」）；比英文寬一點時稍微壓窄，再放不下照英文 | 關 |
+| 原生語言名字音譯 | 矮人語等原名轉成中文（「Rigòth Nildum」→「里戈斯·尼爾杜姆」）；比英文寬一點時稍微壓窄，再放不下照英文。關掉照原文 | 開 |
 | 按鍵名翻成中文 | 按鍵設定與 DFHack 快捷鍵提示（「小鍵盤 Enter」「[」）；鍵帽上印的 Tab、Esc、F 鍵照英文 | 開 |
 | 配樂曲名翻成中文 | 暫停選單的曲名 | 關 |
 | 段落缺句時其餘照翻 | 一整段有句子沒翻到時，翻得出來的先顯示中文（關著時整段照英文） | 關 |
 | 記錄未翻譯的字 | 見下方「回報問題」 | 關 |
 
 設定改了立即生效，不用重開遊戲，畫面上已經排好的長文（彈出視窗、人物頁的性格、傳說頁）也跟著換。只有在語言選「其他翻譯 MOD」（改用 DFI18n、DFCN）時要重開，視窗會以黃字提示。遊戲正在讀取時，以及打開過「建立新世界」的設定畫面之後，換語言與粗體字可能要等載入或建立世界後才自動切換，其他設定照樣立即生效，視窗同樣以黃字提示。DFHack 主控台的 `dflang` 指令也能改這些設定（`dflang` 不加參數看用法）。快捷鍵只在遊戲執行時註冊，想換鍵用 DFHack 的 `gui/keybinds`；標題畫面的吉祥物與提示可以用 `gui/overlay` 移動或關掉（`dflang_zh_hant.mascot`、`dflang_zh_hant.hint`）。
+
+## 搜尋框打拼音
+
+遊戲的搜尋框（庫存、傳說清單…）與 DFHack 視窗的清單搜尋，除了英文，也可以打中文名稱的拼音：全拼（`tiekuang`）、首字母（`tk`）或混著打（`tiek`）都找得到「鐵礦」，多音字每個讀音都算，ü 打 v 或 u 都可以。繁體、簡體都能用。
+
+- 用英文輸入狀態打：輸入法打出的中文字，遊戲的搜尋框收不到。
+- 傳說模式這種上萬項的清單，第一次打字時拼音只比得到一部分，兩三秒後再打一個字就完整。
 
 ## 和其他翻譯 MOD 一起裝時：本 MOD 優先讓位
 
@@ -94,7 +101,7 @@ data/translit/translit.tsv 原生語言名字的音譯表（音節 → 中文，
 data/screens/*.tsv         依畫面譯文：檔名是 DFHack 焦點字串的開頭，只在該畫面套用
 glossary/terms.tsv         術語表；locale.tsv 兩岸用語規則
 art/mascot.png             標題畫面吉祥物（透明背景 RGBA PNG；名牌文字由引擎在遊戲裡畫）
-engine/                    Rust 引擎（cdylib dflang.dll）與特徵碼 patterns.tsv
+engine/                    Rust 引擎（cdylib dflang.dll）、特徵碼 patterns.tsv、拼音搜尋的讀音表 pinyin.tsv
 lua/                       DFHack 載入器範本、dflang 指令、蓋掉舊簡中項目載入器的空檔（retired_zh_hans.lua）
 scripts/
   build.py                 組出 dist/ 下的工作坊包（繁簡兩種語言各一個資料夾；含編譯引擎、裁字型）
@@ -109,6 +116,7 @@ scripts/
   dev-play.cmd             啟動器（雙擊）：建置、開遊戲，遊戲關掉後自動還原
   publish_workshop.py      上傳工作坊（預設只檢查；標題與說明分繁簡兩種語系）
   make_patterns.py         產生／驗證特徵碼
+  make_pinyin.py           從 Unicode Unihan 產生拼音讀音表 engine/pinyin.tsv（譯文用到新的漢字時重跑）
   df_snapshot.py           遊戲文字盤點與 Ghidra 反編譯快照（產物在 repo 外，不公開）
   workshop.json            工作坊項目的設定、兩種語言與版本號
 docs/                      分析、翻譯指南、工作坊說明與每版的更新說明（steam/）
@@ -123,6 +131,7 @@ dist/                      建置產物（不進 git）
 ```bash
 uv run scripts/build.py --fetch-fonts         # 首次：下載字型與授權到 temp/fonts/
 uv run scripts/gen_events.py                  # 改過 data/events 後重產事件句型
+uv run scripts/make_pinyin.py                 # 譯文用到新的漢字後重產拼音讀音表（verify_mod 會提醒）
 uv run scripts/build.py                       # 建置（遊戲要先關：執行中會鎖住 DLL）
 uv run scripts/verify_mod.py                  # 必須全部 PASS
 uv run scripts/terms.py check                 # 術語與兩岸用語
@@ -156,4 +165,5 @@ git tag -a v0.5.4 -m "0.5.4" && git push origin v0.5.4                         #
 - 吉祥物圖（`art/`）與工作坊封面（`docs/steam/cover-*.gif`）：© Minidoracat，保留所有權利，不在上述授權範圍內。
 - 字型：思源黑體（Noto Sans CJK TC／SC Bold、Regular）與補 ☼ 用的 Noto Sans Symbols 2，SIL Open Font License 1.1，工作坊包內附授權全文。
 - 引擎靜態連結的開源 Rust 套件（skrifa、zeno、png、retour 等）各依原授權，包內 `dflang/THIRD-PARTY-LICENSES.txt` 附授權全文（建置時產生）。
+- 拼音搜尋的讀音表（`engine/pinyin.tsv`）由 Unicode Unihan 資料庫產生，依 Unicode License V3（[engine/LICENSE-unicode.txt](engine/LICENSE-unicode.txt)），全文也附在包內的 `THIRD-PARTY-LICENSES.txt`。
 - 致謝與參考來源見 [CREDITS.md](CREDITS.md)。

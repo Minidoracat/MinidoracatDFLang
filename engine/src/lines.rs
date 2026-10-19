@@ -123,9 +123,16 @@ fn cached(text: &[u8], width: i32, n: usize, dict: &Dict, stamp: Stamp, note_mis
         .clone()
 }
 
-/// 沒有譯文：每一行照畫英文，畫到時才把整句記成未翻譯（啟動時補登記的提示不是每句都會看到）
-fn english(text: &[u8], n: usize) -> Arc<[Plan]> {
-    vec![Plan::Missing(text.into()); n].into()
+/// 一句切成 n 行的計畫與這句有沒有譯文。沒有譯文時每一行照畫英文，畫到時才把整句記成未翻譯（啟動時補登記的提示不是每句都會看到）；
+/// 整句是玩家取的名字或第三方模組的說明（Dict::keeps_player_name）時照畫英文、不記未翻譯
+fn plans_of(text: &[u8], width: i32, n: usize, dict: &Dict, stamp: Stamp, note_miss: &mut impl FnMut(&[u8])) -> (Arc<[Plan]>, bool) {
+    if dict.keeps_player_name(text) {
+        return (vec![Plan::Plain; n].into(), false);
+    }
+    match cached(text, width, n, dict, stamp, note_miss) {
+        Some(plans) => (plans, true),
+        None => (vec![Plan::Missing(text.into()); n].into(), false),
+    }
 }
 
 /// 原文 text 切成的這幾行（字串位址）登記畫字計畫；回傳這句有沒有譯文。
@@ -135,9 +142,7 @@ pub unsafe fn plan(lines: &[usize], text: &[u8], width: i32, dict: &Dict, keep: 
     }
     // 先記版本再算：算到一半玩家改了設定，這份計畫就算舊的，畫到時重算
     let stamp = Stamp::of(dict);
-    let plans = cached(text, width, lines.len(), dict, stamp, &mut note_miss);
-    let translated = plans.is_some();
-    let plans = plans.unwrap_or_else(|| english(text, lines.len()));
+    let (plans, translated) = plans_of(text, width, lines.len(), dict, stamp, &mut note_miss);
     let group = Arc::new(Group { text: text.into(), width, lines: lines.into() });
     let mut table = LINES.lock();
     if table.len() + lines.len() > LINES_LIMIT {
@@ -159,8 +164,7 @@ pub unsafe fn line_plan(s: usize, dict: &Dict) -> Option<Plan> {
         return Some(line.plan.clone());
     }
     let group = line.group.clone();
-    let plans = cached(&group.text, group.width, group.lines.len(), dict, stamp, &mut |_| {})
-        .unwrap_or_else(|| english(&group.text, group.lines.len()));
+    let (plans, _) = plans_of(&group.text, group.width, group.lines.len(), dict, stamp, &mut |_| {});
     for (addr, plan) in group.lines.iter().zip(plans.iter()) {
         if let Some(l) = table.get_mut(addr).filter(|l| Arc::ptr_eq(&l.group, &group)) {
             l.plan = plan.clone();

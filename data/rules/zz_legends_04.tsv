@@ -382,12 +382,12 @@ elder of {%1}	{1}長老	{1}长老		mythical.lua 263-286 顯示名：名詞 of �
 {@1} vapor zombie	{1}蒸氣殭屍	{1}蒸汽僵尸		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names
 {@1} {@2} vapor thrall	{1}{2}蒸氣屍奴	{1}{2}蒸汽尸奴		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names；前接種族
 {@1} vapor thrall	{1}蒸氣屍奴	{1}蒸汽尸奴		evil.lua 43-82 邪惡雲霧活屍 CE_DISPLAY_NAME＝cloud_adjs＋cloud_names＋cloud_zombie_names
+{@1} corpse	{1}屍體	{1}尸体		secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名；排在 {@1} {@2} corpse 前：生物名整句查得到時（giant cave spider corpse）先整段收，否則 giant 被當成「巨人」拆成「巨人洞穴蜘蛛屍體」（冒險屠宰公告、撿起選項）；{@1} 只收整句條目，種族＋不死者種類（dwarf faint corpse）照舊落到下一條
 {@1} {@2} corpse	{1}{2}屍體	{1}{2}尸体		secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名；前接種族
-{@1} corpse	{1}屍體	{1}尸体		secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名
+{@1} ghoul	{1}食屍鬼	{1}食尸鬼		secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名；排在 {@1} {@2} ghoul 前：生物名整句查得到時（giant cave spider ghoul）不讓 {@1} 只收 giant 拆成「巨人洞穴蜘蛛」
 {@1} {@2} ghoul	{1}{2}食屍鬼	{1}{2}食尸鬼		secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名；前接種族
-{@1} ghoul	{1}食屍鬼	{1}食尸鬼		secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名
+{@1} zombie	{1}殭屍	{1}僵尸		secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名；排在 {@1} {@2} zombie 前（同 ghoul）
 {@1} {@2} zombie	{1}{2}殭屍	{1}{2}僵尸		secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名；前接種族
-{@1} zombie	{1}殭屍	{1}僵尸		secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名
 {@1} {@2} stalker	{1}{2}潛獵者	{1}{2}潜猎者		secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名；前接種族
 {@1} stalker	{1}潛獵者	{1}潜猎者		secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名
 {@1} {@2} butcher	{1}{2}屠夫	{1}{2}屠夫		secret.lua 161-168/306-309、disturbance.lua 61-64 不死者顯示名；前接種族
