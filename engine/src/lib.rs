@@ -19,6 +19,7 @@ mod locale;
 mod lua;
 mod metrics;
 mod mtb;
+mod mouse;
 pub mod names;
 mod overlay;
 mod scan;
@@ -68,6 +69,7 @@ pub unsafe extern "C" fn luaopen_dflang(l: lua::State) -> c_int {
         lua::set_fn(l, c"render_buttons", render_buttons);
         lua::set_fn(l, c"set_tile_swaps", set_tile_swaps);
         lua::set_fn(l, c"dfhack_export", dfhack_export);
+        lua::set_fn(l, c"fake_mouse", fake_mouse);
         lua::set_fn(l, c"load_translit", load_translit);
         lua::set_fn(l, c"set_translit", set_translit);
         lua::set_fn(l, c"set_options", set_options);
@@ -483,6 +485,24 @@ unsafe extern "C" fn dfhack_export(l: lua::State) -> c_int {
             None => lua::push_nil(l),
         }
         1
+    }
+}
+
+/// fake_mouse(x, y)：開發用，假裝游標停在遊戲視窗的 (x, y)（像素），不動真游標；不帶參數改回真游標（見 mouse.rs）
+unsafe extern "C" fn fake_mouse(l: lua::State) -> c_int {
+    unsafe {
+        let pos = match (lua::arg_int(l, 1), lua::arg_int(l, 2)) {
+            (Some(x), Some(y)) => Some((x as i32, y as i32)),
+            (None, None) => None,
+            _ => return fail(l, "fake_mouse: expects (x, y) or nothing"),
+        };
+        match mouse::set(pos) {
+            Ok(()) => {
+                lua::push_bool(l, true);
+                1
+            }
+            Err(e) => fail(l, &e),
+        }
     }
 }
 

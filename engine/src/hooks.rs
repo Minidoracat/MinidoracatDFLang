@@ -1381,7 +1381,8 @@ unsafe extern "C" fn hook_adv_announcements(panel: *mut u8, a: u64, left: i32, r
 
 /// 工坊「新增任務」的提示框（FUN_1408c2ca0：「Produces:」產出、「Requires:」需要）：遊戲把需要的每個條件照 29 格自己切行，
 /// 切在空白處時空白留在行尾；前 30 字沒有空白的長條件從字中間切開（「C」「alcite/limestone/chalk/marbl 」「e boulders」）。
-/// 原函式跑完後把「Requires:」底下切開的幾行依字典接回整句（見 tool_tip_groups），替兩行以上的一組登記畫字計畫；單獨一行的照舊由畫字 hook 翻
+/// 原函式跑完後把「Requires:」底下切開的幾行依字典接回整句（見 tool_tip_groups），替兩行以上的一組登記畫字計畫；單獨一行的照舊由畫字 hook 翻。
+/// 中文比原文少用的行（畫空白）移到清單最後，不夾在兩個條件之間（「方解石／石灰岩／白堊／大理石石塊」下面空兩行才是「空的袋子」）
 unsafe extern "C" fn hook_tool_tip(job: *mut u8, out: *mut u8) {
     let orig: ToolTipFn = unsafe { std::mem::transmute(TRAMPOLINES[17].load(Ordering::Acquire)) };
     unsafe { orig(job, out) };
@@ -1400,6 +1401,7 @@ unsafe extern "C" fn hook_tool_tip(job: *mut u8, out: *mut u8) {
             unsafe { crate::lines::plan(group, &text, 29, dict, false, |s| note_miss("wrap", s)) };
         }
     }
+    unsafe { crate::lines::blanks_last(out as usize) };
 }
 
 /// 提示框「需要：」底下的條件行分組（見 hook_tool_tip）：從每一行起往後試接成一句（最多 6 行），行尾是空白的行還沒完、
@@ -1439,9 +1441,10 @@ fn tool_tip_groups(lines: &[&[u8]], found: impl Fn(&[u8]) -> bool) -> Vec<(usize
     out
 }
 
-/// 世界地圖上據點的歷史（FUN_1401c17e0 畫世界畫面）：遊戲把每則事件照 53 格自己切行（內嵌的切行迴圈，wrap_lines 的 hook 攔不到），
-/// 切好的行在畫面 +0x8388、每行的顏色在 +0x83a0（同一則事件同色），一行行用 addst 畫。畫之前把同一則事件的幾行接回整句登記畫字計畫：
-/// 相鄰兩行同色、而且下一行的第一個字放不進上一行（遊戲是被迫換行），才算同一則。
+/// 世界畫面（FUN_1401c17e0）上遊戲自己切行的兩份文字（內嵌的切行迴圈，wrap_lines 的 hook 攔不到），一行行用 addst 畫：
+/// 游標停在據點時的新聞與傳聞（畫面 +0x8310 `rumor_text`，FUN_1401da280 每則照 53 格切行，則與則之間空一行），
+/// 與派遣報告的內文（+0x8388 `mission_text_box`，每行的顏色在 +0x83a0，同一則事件同色）。畫之前把同一則的幾行接回整句登記畫字計畫；
+/// 派遣報告沒有空行分隔：相鄰兩行同色、而且下一行的第一個字放不進上一行（遊戲是被迫換行），才算同一則。
 /// ponytail: 位移照 53.16 寫死；相鄰兩則同色、上一則最後一行又剛好很滿時會接成一句，翻譯照逐句不受影響，只是兩則的分行不見
 unsafe extern "C" fn hook_world_site_history(vs: *mut u8) {
     let orig: ScreenFn = unsafe { std::mem::transmute(TRAMPOLINES[18].load(Ordering::Acquire)) };
@@ -1457,6 +1460,13 @@ unsafe fn plan_site_history(vs: usize) {
         return;
     }
     let dict = unsafe { &*dict };
+    let rumors = unsafe { crate::lines::vec_items(vs + 0x8310) };
+    for group in rumors.split(|&s| unsafe { crate::lines::str_bytes(s) }.is_empty()) {
+        if group.len() > 1 && !unsafe { crate::lines::planned(group) } {
+            unsafe { crate::lines::plan(group, &crate::lines::join(group), 53, dict, false, |s| note_miss("wrap", s)) };
+        }
+    }
+    unsafe { crate::lines::blanks_last(vs + 0x8310) };
     let lines = unsafe { crate::lines::vec_items(vs + 0x8388) };
     let colors: &[i32] = unsafe {
         let (begin, end): (usize, usize) = (read(vs as *const u8, 0x83a0), read(vs as *const u8, 0x83a8));

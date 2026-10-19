@@ -182,6 +182,22 @@ pub unsafe fn planned(lines: &[usize]) -> bool {
     lines.iter().all(|&s| table.get(&s).is_some_and(|l| *l.text == *unsafe { str_bytes(s) }))
 }
 
+/// vector<string*> 裡計畫是不畫的行（整句的中文比原文少用幾行）移到最後，空白不夾在兩則或兩個條件之間。
+/// 只換清單裡的順序：字串照舊由遊戲釋放，計畫依字串位址登記（畫字 hook 照它畫），換了位置照樣畫。
+/// 已經在最後就不動（每幀都畫的框不必每幀重排）。清單另有平行的顏色清單時不能用
+pub unsafe fn blanks_last(v: usize) {
+    let items = unsafe { vec_items(v) };
+    let table = LINES.lock();
+    let skip = |s: &usize| table.get(s).is_some_and(|l| matches!(l.plan, Plan::Skip) && *l.text == *unsafe { str_bytes(*s) });
+    let Some(first) = items.iter().position(skip) else { return };
+    if items[first..].iter().all(skip) {
+        return;
+    }
+    let (blank, mut order): (Vec<usize>, Vec<usize>) = items.iter().copied().partition(skip);
+    order.extend(blank);
+    unsafe { std::ptr::copy_nonoverlapping(order.as_ptr(), read::<*mut usize>(v), order.len()) };
+}
+
 /// 遊戲啟動時就切好的提示：從呼叫 wrap_text 的程式碼找出 (切好的行, 原文, 寬度)，補登記。
 /// 只在切好的行和原文的單字完全相同時才算（找錯字串常數、或同一個 vector 接了好幾句時就略過）。
 /// 回傳有譯文的句數。這時還沒畫到，段落缺句時其餘照翻接上的原文句子不記進未翻譯紀錄。
@@ -293,5 +309,24 @@ mod tests {
     fn joined_lines_restore_sentence_spacing_lost_at_breaks() {
         let en = Strings::new(&["His beard is combed. ", "His hair is ", "auburn.  ", "He is old."]);
         assert_eq!(unsafe { join(&en.addrs()) }, b"His beard is combed.  His hair is auburn.  He is old.", "句末只剩一個空白才補，句中照接");
+    }
+
+    #[test]
+    fn lines_left_blank_by_shorter_chinese_move_to_the_end_of_the_list() {
+        let mut d = Dict::default();
+        assert!(d.set_glyphs("方解石塊", vec![0; 8]));
+        d.load_tsv("Calcite boulders\t方解石塊\n");
+        // 提示框：「C」「alcite boulde」「rs」是同一個條件，中文一行畫完；下一個條件「Empty bag」不該隔著兩行空白
+        let en = Strings::new(&["Requires:", "C", "alcite boulde", "rs", "Empty bag"]);
+        let addrs = en.addrs();
+        assert!(unsafe { plan(&addrs[1..4], b"Calcite boulders", 29, &d, false, |_| {}) });
+        let mut items = addrs.clone();
+        let begin = items.as_mut_ptr();
+        let vector = [begin as u64, unsafe { begin.add(items.len()) } as u64, 0];
+        let moved = [addrs[0], addrs[1], addrs[4], addrs[2], addrs[3]];
+        unsafe { blanks_last(vector.as_ptr() as usize) };
+        assert_eq!(items, moved);
+        unsafe { blanks_last(vector.as_ptr() as usize) };
+        assert_eq!(items, moved, "已經在最後就不動");
     }
 }

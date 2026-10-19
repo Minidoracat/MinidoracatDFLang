@@ -11,7 +11,8 @@
                                                                --save 把 temp/test-world/<名稱> 複製進遊戲的 save/
   uv run scripts/dev_game.py run dflang status                 轉給 dfhack-run
   uv run scripts/dev_game.py click X Y                         以文字格座標模擬滑鼠左鍵（不動真滑鼠、不搶焦點）
-  uv run scripts/dev_game.py mouse PX PY [r]                   以畫面像素座標按住滑鼠三幀再放開（地圖點擊用）
+  uv run scripts/dev_game.py mouse PX PY [r]                   以畫面像素座標按住滑鼠三幀再放開（地圖點擊用；會結束 hover）
+  uv run scripts/dev_game.py hover PX PY | off                 游標停在畫面像素座標、不按鍵（提示框這類要停留才出現的畫面），直到 hover off
   uv run scripts/dev_game.py key A_TRAVEL [LEAVESCREEN ...]    依序送遊戲按鍵（df.interface_key 的名稱），最後印出焦點
   uv run scripts/dev_game.py shot 檔名.png [--crop X Y W H] [--wait 秒]
                                                                遊戲視窗截圖：原解析度，座標和 mouse 一樣是畫面像素；
@@ -21,7 +22,8 @@
   uv run scripts/dev_game.py down                              關遊戲、拆掛載、移除遮蔽，還原 dflang 設定檔，移走 --save 的測試存檔
 
 點擊方式依畫面而異：標題選單、設定用 click（DFHack simulateInput）；世界地圖與出發地圖在遊戲邏輯迴圈裡讀滑鼠，
-要用 mouse 讓按鍵狀態維持幾幀；出發準備畫面的按鈕兩種都不收，改用 computer 對遊戲視窗先移過去再點。
+要用 mouse 讓按鍵狀態維持幾幀；停留才出現的提示框、世界畫面的新聞用 hover。mouse、hover 用引擎的假游標
+（engine/src/mouse.rs），不動真滑鼠。出發準備畫面的按鈕兩種都不收，改用 computer 對遊戲視窗先移過去再點。
 
 遮蔽 DFI18n：在 mods/ 放一個 ID 也是 dfi18n、版本 999、沒有腳本的空 MOD。DFHack 每個 ID 只載入最高版本，
 真的 DFI18n 腳本就不會執行；down 會把它刪掉。掛載位置是 %APPDATA%/Bay 12 Games/Dwarf Fortress/mods
@@ -254,16 +256,34 @@ def remove_saves() -> None:
 
 
 # 先移過去停兩幀（地圖依上一幀的游標位置算出指著哪一格），再按住三幀、放開後位置再留幾幀。
-# 真滑鼠不在遊戲視窗上時 mouse_focus 是 false，遊戲每幀把游標位置清成 -1，所以每幀都要設回去。
-# dfhack.timeout 的回呼在遊戲主執行緒的後續幀執行
+# 遊戲的游標只來自 SDL：主迴圈每圈在 enabler.mouse_focus（游標在視窗裡，SDL 的 ENTER／LEAVE 設）為 true 時呼叫
+# SDL_GetMouseState，和存著的不同就改寫 gps 的游標欄位，否則寫 -1。Lua 寫 gps 會被下一圈蓋掉，所以用引擎的假游標
+# （engine/src/mouse.rs 攔 SDL_GetMouseState），點完改回真游標、mouse_focus 放回原值。dfhack.timeout 的回呼在遊戲主執行緒的後續幀執行
 MOUSE_HOLD = """local px, py, right = {px}, {py}, {right}
-local g, e = df.global.gps, df.global.enabler
+local g, e, engine = df.global.gps, df.global.enabler, dfhack.BASE_G.DFLANG.engine
+local focus = e.mouse_focus
+dfhack.BASE_G.DFLANG_HOVER = nil
+engine.fake_mouse(px, py)
 local function at() e.mouse_focus = true; g.precise_mouse_x, g.precise_mouse_y = px, py; g.mouse_x, g.mouse_y = px // g.tile_pixel_x, py // g.tile_pixel_y end
 local function press(v) if right then e.mouse_rbut, e.mouse_rbut_down = v, v else e.mouse_lbut, e.mouse_lbut_down = v, v end end
 at()
 for i = 1, 8 do dfhack.timeout(i, 'frames', at) end
 dfhack.timeout(2, 'frames', function() press(1) end)
-dfhack.timeout(5, 'frames', function() press(0) end)"""
+dfhack.timeout(5, 'frames', function() press(0) end)
+dfhack.timeout(9, 'frames', function() engine.fake_mouse(); e.mouse_focus = focus end)"""
+
+# 假游標停著（見 MOUSE_HOLD）：每幀把 mouse_focus 設 true，直到 hover off 或下一個 mouse（換掉 DFLANG_HOVER 就停）
+HOVER = """local e, engine = df.global.enabler, dfhack.BASE_G.DFLANG.engine
+local ok, err = engine.fake_mouse({px}, {py})
+if not ok then qerror(err) end
+local id = (dfhack.BASE_G.DFLANG_HOVER or 0) + 1
+dfhack.BASE_G.DFLANG_HOVER = id
+local function keep() if dfhack.BASE_G.DFLANG_HOVER == id then e.mouse_focus = true; dfhack.timeout(1, 'frames', keep) end end
+keep()"""
+# 真游標平常不在遊戲視窗上（視窗放在最底層），mouse_focus 放回 false
+HOVER_OFF = """dfhack.BASE_G.DFLANG_HOVER = nil
+dfhack.BASE_G.DFLANG.engine.fake_mouse()
+df.global.enabler.mouse_focus = false"""
 
 
 def loaded_package() -> str:
@@ -569,6 +589,10 @@ def main() -> int:
     if args[0] == "mouse":
         right = "true" if args[3:4] == ["r"] else "false"
         return dfhack("lua", MOUSE_HOLD.format(px=int(args[1]), py=int(args[2]), right=right)).returncode
+    if args[0] == "hover" and args[1:]:
+        if args[1] == "off":
+            return dfhack("lua", HOVER_OFF).returncode
+        return dfhack("lua", HOVER.format(px=int(args[1]), py=int(args[2]))).returncode
     if args[0] == "key" and args[1:]:
         return key(args[1:])
     if args[0] == "shot":
