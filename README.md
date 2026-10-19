@@ -7,7 +7,7 @@
 玩得再久也不會越吃越多記憶體：引擎的快取都設了上限，滿了就清；整句貼圖畫字用的貼圖最多 2,048 張，用不到的會釋放。遊戲中切換語言或粗體字時，用過的那份會留著直接重用，來回切換也不會一直增加。
 
 - 工作坊：[繁體／簡體中文](https://steamcommunity.com/sharedfiles/filedetails/?id=3820630135)（原本的[簡體中文項目](https://steamcommunity.com/sharedfiles/filedetails/?id=3820630318)已合併進來，停在 0.4.0）
-- 目前版本 0.5.5（Dwarf Fortress 53.16＋DFHack 53.16-r2），各版本的變更見 [CHANGELOG.md](CHANGELOG.md)
+- 目前版本 0.5.5（Dwarf Fortress 53.16＋DFHack 53.16-r3），各版本的變更見 [CHANGELOG.md](CHANGELOG.md)
 
 ## 安裝
 
