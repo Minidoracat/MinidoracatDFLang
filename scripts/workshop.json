@@ -2,8 +2,8 @@
   "app_id": 975370,
   "author": "Minidoracat",
   "version": {
-    "numeric": 9012,
-    "displayed": "0.5.4",
+    "numeric": 9013,
+    "displayed": "0.5.5",
     "earliest_compatible_numeric": 1,
     "earliest_compatible_displayed": "0.1.0"
   },
