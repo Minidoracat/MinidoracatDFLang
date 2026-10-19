@@ -213,10 +213,10 @@ I would...	我嘛……	我嘛……		FUN_140694dc0 L915215 預設回答「I wou
 rather not.	還是算了吧。	还是算了吧。		FUN_140694dc0 L915215 同上第二句（原文小寫開頭）
 Can I help you with something?	有什麼需要幫忙的嗎？	有什么需要帮忙的吗？		FUN_140848580 L1188765 交談開場（說話者主動問候）
 hearthperson	家臣	家臣	inner	FUN_140689de0 L908071 小隊成員稱呼：程序生成的領主職位小隊名（FUN_14096ece0 L1366116），只給 I am a {%1}… 句型的佔位用；譯名照 adv_help 的「家臣團／家臣」
-marshal	元帥	元帅	inner	FUN_140689de0 L908079／908112 職位名：程序生成的軍事首長（FUN_14096ece0 L1366774），只給句型佔位用
-field marshal	陸軍元帥	陆军元帅	inner	FUN_140689de0 L908079／908112 職位名：程序生成（FUN_14096ece0 L1366771），只給句型佔位用
-constable	統帥	统帅	inner	FUN_140689de0 L908079／908112 職位名：程序生成的軍事首長（FUN_14096ece0 L1366778），只給句型佔位用
-keeper of the seal	掌璽大臣	掌玺大臣	inner	FUN_140689de0 L908112 職位名：程序生成的官員，只給句型佔位用
+marshal	元帥	元帅		FUN_140689de0 L908079／908112 職位名：程序生成的軍事首長（FUN_14096ece0 L1366774）；不設 inner：人物頁單獨畫出職位名（冒險模式首字大寫「Marshal」）
+field marshal	陸軍元帥	陆军元帅		FUN_140689de0 L908079／908112 職位名：程序生成（FUN_14096ece0 L1366771）；不設 inner：同上
+constable	統帥	统帅		FUN_140689de0 L908079／908112 職位名：程序生成的軍事首長（FUN_14096ece0 L1366778）；不設 inner：同上
+keeper of the seal	掌璽大臣	掌玺大臣		FUN_140689de0 L908112 職位名：程序生成的官員；不設 inner：同上
 master of beasts	馴獸總管	驯兽总管		FUN_140689de0 L908112 職位名：程序生成（FUN_14096ece0 L1367746）；一般條目（不寫 inner）：單獨畫出的職位名（人物頁團體、要塞職位清單）整句查不到時，會被 zz_legends_04 的 master of {%1}（神話稱號）切成「幾頭野獸主宰」；術語例外：Master
 my second eldest son	我的次子	我的次子	inner	FUN_14065bfb0 L880766 among them 清單項目：my＋排行親屬；同上
 my third eldest son	我的三子	我的三子	inner	FUN_14065bfb0 L880766 among them 清單項目：my＋排行親屬；同上

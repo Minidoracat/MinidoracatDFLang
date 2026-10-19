@@ -1,12 +1,12 @@
 en	zh-Hant	zh-Hans	align	note
-baron consort	男爵眷侶	男爵眷侣	inner	FUN_140660870 885126-885219 職位句（FUN_140beb620 取職位名，沒有轄地時不接 of）：配偶職位名（raws SPOUSE_MALE/SPOUSE_FEMALE），給 {1} is {@2} of {3}. 與職位句用；同 zz_legends_04 的 {@1} consort 譯法
-baroness consort	女男爵眷侶	女男爵眷侣	inner	FUN_140660870 885126-885219 職位句（FUN_140beb620 取職位名，沒有轄地時不接 of）：配偶職位名（raws SPOUSE_MALE/SPOUSE_FEMALE），給 {1} is {@2} of {3}. 與職位句用；同 zz_legends_04 的 {@1} consort 譯法
-count consort	伯爵眷侶	伯爵眷侣	inner	FUN_140660870 885126-885219 職位句（FUN_140beb620 取職位名，沒有轄地時不接 of）：配偶職位名（raws SPOUSE_MALE/SPOUSE_FEMALE），給 {1} is {@2} of {3}. 與職位句用；同 zz_legends_04 的 {@1} consort 譯法
-countess consort	女伯爵眷侶	女伯爵眷侣	inner	FUN_140660870 885126-885219 職位句（FUN_140beb620 取職位名，沒有轄地時不接 of）：配偶職位名（raws SPOUSE_MALE/SPOUSE_FEMALE），給 {1} is {@2} of {3}. 與職位句用；同 zz_legends_04 的 {@1} consort 譯法
-duke consort	公爵眷侶	公爵眷侣	inner	FUN_140660870 885126-885219 職位句（FUN_140beb620 取職位名，沒有轄地時不接 of）：配偶職位名（raws SPOUSE_MALE/SPOUSE_FEMALE），給 {1} is {@2} of {3}. 與職位句用；同 zz_legends_04 的 {@1} consort 譯法
-duchess consort	女公爵眷侶	女公爵眷侣	inner	FUN_140660870 885126-885219 職位句（FUN_140beb620 取職位名，沒有轄地時不接 of）：配偶職位名（raws SPOUSE_MALE/SPOUSE_FEMALE），給 {1} is {@2} of {3}. 與職位句用；同 zz_legends_04 的 {@1} consort 譯法
-king consort	國王眷侶	国王眷侣	inner	FUN_140660870 885126-885219 職位句（FUN_140beb620 取職位名，沒有轄地時不接 of）：配偶職位名（raws SPOUSE_MALE/SPOUSE_FEMALE），給 {1} is {@2} of {3}. 與職位句用；同 zz_legends_04 的 {@1} consort 譯法
-queen consort	女王眷侶	女王眷侣	inner	FUN_140660870 885126-885219 職位句（FUN_140beb620 取職位名，沒有轄地時不接 of）：配偶職位名（raws SPOUSE_MALE/SPOUSE_FEMALE），給 {1} is {@2} of {3}. 與職位句用；同 zz_legends_04 的 {@1} consort 譯法
+baron consort	男爵眷侶	男爵眷侣		FUN_140660870 885126-885219 職位句（FUN_140beb620 取職位名，沒有轄地時不接 of）：配偶職位名（raws SPOUSE_MALE/SPOUSE_FEMALE），給 {1} is {@2} of {3}. 與職位句用；同 zz_legends_04 的 {@1} consort 譯法；不設 inner：人物頁單獨畫出職位名（冒險模式首字大寫「Baron Consort」）
+baroness consort	女男爵眷侶	女男爵眷侣		FUN_140660870 885126-885219 職位句（FUN_140beb620 取職位名，沒有轄地時不接 of）：配偶職位名（raws SPOUSE_MALE/SPOUSE_FEMALE），給 {1} is {@2} of {3}. 與職位句用；同 zz_legends_04 的 {@1} consort 譯法；不設 inner：同上
+count consort	伯爵眷侶	伯爵眷侣		FUN_140660870 885126-885219 職位句（FUN_140beb620 取職位名，沒有轄地時不接 of）：配偶職位名（raws SPOUSE_MALE/SPOUSE_FEMALE），給 {1} is {@2} of {3}. 與職位句用；同 zz_legends_04 的 {@1} consort 譯法；不設 inner：同上
+countess consort	女伯爵眷侶	女伯爵眷侣		FUN_140660870 885126-885219 職位句（FUN_140beb620 取職位名，沒有轄地時不接 of）：配偶職位名（raws SPOUSE_MALE/SPOUSE_FEMALE），給 {1} is {@2} of {3}. 與職位句用；同 zz_legends_04 的 {@1} consort 譯法；不設 inner：同上
+duke consort	公爵眷侶	公爵眷侣		FUN_140660870 885126-885219 職位句（FUN_140beb620 取職位名，沒有轄地時不接 of）：配偶職位名（raws SPOUSE_MALE/SPOUSE_FEMALE），給 {1} is {@2} of {3}. 與職位句用；同 zz_legends_04 的 {@1} consort 譯法；不設 inner：同上
+duchess consort	女公爵眷侶	女公爵眷侣		FUN_140660870 885126-885219 職位句（FUN_140beb620 取職位名，沒有轄地時不接 of）：配偶職位名（raws SPOUSE_MALE/SPOUSE_FEMALE），給 {1} is {@2} of {3}. 與職位句用；同 zz_legends_04 的 {@1} consort 譯法；不設 inner：同上
+king consort	國王眷侶	国王眷侣		FUN_140660870 885126-885219 職位句（FUN_140beb620 取職位名，沒有轄地時不接 of）：配偶職位名（raws SPOUSE_MALE/SPOUSE_FEMALE），給 {1} is {@2} of {3}. 與職位句用；同 zz_legends_04 的 {@1} consort 譯法；不設 inner：同上
+queen consort	女王眷侶	女王眷侣		FUN_140660870 885126-885219 職位句（FUN_140beb620 取職位名，沒有轄地時不接 of）：配偶職位名（raws SPOUSE_MALE/SPOUSE_FEMALE），給 {1} is {@2} of {3}. 與職位句用；同 zz_legends_04 的 {@1} consort 譯法；不設 inner：同上
 You are acolyte.	你是侍僧。	你是侍僧。		FUN_140660870 885126-885219 職位句（FUN_140beb620 取職位名，沒有轄地時不接 of）：對聽者本人說（聽者是配偶時取配偶職位名）
 You are administrator.	你是管理者。	你是管理人员。		FUN_140660870 885126-885219 職位句（FUN_140beb620 取職位名，沒有轄地時不接 of）：對聽者本人說（聽者是配偶時取配偶職位名）
 You are baron.	你是男爵。	你是男爵。		FUN_140660870 885126-885219 職位句（FUN_140beb620 取職位名，沒有轄地時不接 of）：對聽者本人說（聽者是配偶時取配偶職位名）

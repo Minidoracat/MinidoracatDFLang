@@ -34,35 +34,3 @@ More	更多	更多	c		FUN_1408020c0 冒險模式上方訊息框的按鈕：還�
 Stars	星辰	星辰			FUN_140854ec0 L1196214 冒險表演選單「講道：宇宙原理」的神祇領域清單（FUN_140756690 首字大寫）；全域退回小寫會撿到形狀名 stars「星形」，所以只在冒險畫面（dungeonmode/…）套用
 Justice	正義	正义			FUN_140854ec0 L1196214 冒險表演選單「講道：宇宙原理」的神祇領域清單；全域的 Justice 是要塞資訊面板分頁「司法」，所以只在冒險畫面（dungeonmode/…）套用
 Play	劇本	剧本			FUN_140854ec0 L1196465 冒險表演選單「寫作」的著作形式清單（Manual、Novel、Play…）；全域的 Play 是要塞活動「玩耍」，所以只在冒險畫面（dungeonmode/…）套用
-chamberlain	內務官	内务官			勢力職位名單獨畫出（冒險模式人物頁「團體」的現任職位，FUN_1400cea60 L127606-127611 經 FUN_1409bdfb0 取職位名、首字改大寫）；譯文同 dwarfmode.tsv；data/strings 只有 inner 條目，單字放全域會撞別處（master、heads 照英文，見 docs/analysis.md）
-chamberlains	內務官	内务官			勢力職位名單獨畫出（冒險模式人物頁「團體」的現任職位，FUN_1400cea60 L127606-127611 經 FUN_1409bdfb0 取職位名、首字改大寫）；譯文同 dwarfmode.tsv；data/strings 只有 inner 條目，單字放全域會撞別處（master、heads 照英文，見 docs/analysis.md）
-chancellor	宰相	宰相			勢力職位名單獨畫出（冒險模式人物頁「團體」的現任職位，FUN_1400cea60 L127606-127611 經 FUN_1409bdfb0 取職位名、首字改大寫）；譯文同 dwarfmode.tsv；data/strings 只有 inner 條目，單字放全域會撞別處（master、heads 照英文，見 docs/analysis.md）
-chancellors	宰相	宰相			勢力職位名單獨畫出（冒險模式人物頁「團體」的現任職位，FUN_1400cea60 L127606-127611 經 FUN_1409bdfb0 取職位名、首字改大寫）；譯文同 dwarfmode.tsv；data/strings 只有 inner 條目，單字放全域會撞別處（master、heads 照英文，見 docs/analysis.md）
-chieftain	酋長	酋长			勢力職位名單獨畫出（冒險模式人物頁「團體」的現任職位，FUN_1400cea60 L127606-127611 經 FUN_1409bdfb0 取職位名、首字改大寫）；譯文同 dwarfmode.tsv；data/strings 只有 inner 條目，單字放全域會撞別處（master、heads 照英文，見 docs/analysis.md）
-commander	指揮官	指挥官			勢力職位名單獨畫出（冒險模式人物頁「團體」的現任職位，FUN_1400cea60 L127606-127611 經 FUN_1409bdfb0 取職位名、首字改大寫）；譯文同 dwarfmode.tsv；data/strings 只有 inner 條目，單字放全域會撞別處（master、heads 照英文，見 docs/analysis.md）
-commanders	指揮官	指挥官			勢力職位名單獨畫出（冒險模式人物頁「團體」的現任職位，FUN_1400cea60 L127606-127611 經 FUN_1409bdfb0 取職位名、首字改大寫）；譯文同 dwarfmode.tsv；data/strings 只有 inner 條目，單字放全域會撞別處（master、heads 照英文，見 docs/analysis.md）
-constable	統帥	统帅			勢力職位名單獨畫出（冒險模式人物頁「團體」的現任職位，FUN_1400cea60 L127606-127611 經 FUN_1409bdfb0 取職位名、首字改大寫）；譯文同 dwarfmode.tsv；data/strings 只有 inner 條目，單字放全域會撞別處（master、heads 照英文，見 docs/analysis.md）
-constables	統帥	统帅			勢力職位名單獨畫出（冒險模式人物頁「團體」的現任職位，FUN_1400cea60 L127606-127611 經 FUN_1409bdfb0 取職位名、首字改大寫）；譯文同 dwarfmode.tsv；data/strings 只有 inner 條目，單字放全域會撞別處（master、heads 照英文，見 docs/analysis.md）
-judge	法官	法官			勢力職位名單獨畫出（冒險模式人物頁「團體」的現任職位，FUN_1400cea60 L127606-127611 經 FUN_1409bdfb0 取職位名、首字改大寫）；譯文同 dwarfmode.tsv；data/strings 只有 inner 條目，單字放全域會撞別處（master、heads 照英文，見 docs/analysis.md）
-judges	法官	法官			勢力職位名單獨畫出（冒險模式人物頁「團體」的現任職位，FUN_1400cea60 L127606-127611 經 FUN_1409bdfb0 取職位名、首字改大寫）；譯文同 dwarfmode.tsv；data/strings 只有 inner 條目，單字放全域會撞別處（master、heads 照英文，見 docs/analysis.md）
-justices	審判官	审判官			勢力職位名單獨畫出（冒險模式人物頁「團體」的現任職位，FUN_1400cea60 L127606-127611 經 FUN_1409bdfb0 取職位名、首字改大寫）；譯文同 dwarfmode.tsv；data/strings 只有 inner 條目，單字放全域會撞別處（master、heads 照英文，見 docs/analysis.md）
-justiciar	司法官	司法官			勢力職位名單獨畫出（冒險模式人物頁「團體」的現任職位，FUN_1400cea60 L127606-127611 經 FUN_1409bdfb0 取職位名、首字改大寫）；譯文同 dwarfmode.tsv；data/strings 只有 inner 條目，單字放全域會撞別處（master、heads 照英文，見 docs/analysis.md）
-justiciars	司法官	司法官			勢力職位名單獨畫出（冒險模式人物頁「團體」的現任職位，FUN_1400cea60 L127606-127611 經 FUN_1409bdfb0 取職位名、首字改大寫）；譯文同 dwarfmode.tsv；data/strings 只有 inner 條目，單字放全域會撞別處（master、heads 照英文，見 docs/analysis.md）
-ladies	女領主	女领主			勢力職位名單獨畫出（冒險模式人物頁「團體」的現任職位，FUN_1400cea60 L127606-127611 經 FUN_1409bdfb0 取職位名、首字改大寫）；譯文同 dwarfmode.tsv；data/strings 只有 inner 條目，單字放全域會撞別處（master、heads 照英文，見 docs/analysis.md）
-law-givers	立法者	立法者			勢力職位名單獨畫出（冒險模式人物頁「團體」的現任職位，FUN_1400cea60 L127606-127611 經 FUN_1409bdfb0 取職位名、首字改大寫）；譯文同 dwarfmode.tsv；data/strings 只有 inner 條目，單字放全域會撞別處（master、heads 照英文，見 docs/analysis.md）
-law-giver	立法者	立法者			勢力職位名單獨畫出（冒險模式人物頁「團體」的現任職位，FUN_1400cea60 L127606-127611 經 FUN_1409bdfb0 取職位名、首字改大寫）；譯文同 dwarfmode.tsv；data/strings 只有 inner 條目，單字放全域會撞別處（master、heads 照英文，見 docs/analysis.md）
-leaders	領袖	领袖			勢力職位名單獨畫出（冒險模式人物頁「團體」的現任職位，FUN_1400cea60 L127606-127611 經 FUN_1409bdfb0 取職位名、首字改大寫）；譯文同 dwarfmode.tsv；data/strings 只有 inner 條目，單字放全域會撞別處（master、heads 照英文，見 docs/analysis.md）
-lord	領主	领主			勢力職位名單獨畫出（冒險模式人物頁「團體」的現任職位，FUN_1400cea60 L127606-127611 經 FUN_1409bdfb0 取職位名、首字改大寫）；譯文同 dwarfmode.tsv；data/strings 只有 inner 條目，單字放全域會撞別處（master、heads 照英文，見 docs/analysis.md）
-lords	領主	领主			勢力職位名單獨畫出（冒險模式人物頁「團體」的現任職位，FUN_1400cea60 L127606-127611 經 FUN_1409bdfb0 取職位名、首字改大寫）；譯文同 dwarfmode.tsv；data/strings 只有 inner 條目，單字放全域會撞別處（master、heads 照英文，見 docs/analysis.md）
-marshal	元帥	元帅			勢力職位名單獨畫出（冒險模式人物頁「團體」的現任職位，FUN_1400cea60 L127606-127611 經 FUN_1409bdfb0 取職位名、首字改大寫）；譯文同 dwarfmode.tsv；data/strings 只有 inner 條目，單字放全域會撞別處（master、heads 照英文，見 docs/analysis.md）
-marshals	元帥	元帅			勢力職位名單獨畫出（冒險模式人物頁「團體」的現任職位，FUN_1400cea60 L127606-127611 經 FUN_1409bdfb0 取職位名、首字改大寫）；譯文同 dwarfmode.tsv；data/strings 只有 inner 條目，單字放全域會撞別處（master、heads 照英文，見 docs/analysis.md）
-overlord	霸主	霸主			勢力職位名單獨畫出（冒險模式人物頁「團體」的現任職位，FUN_1400cea60 L127606-127611 經 FUN_1409bdfb0 取職位名、首字改大寫）；譯文同 dwarfmode.tsv；data/strings 只有 inner 條目，單字放全域會撞別處（master、heads 照英文，見 docs/analysis.md）
-overlords	霸主	霸主			勢力職位名單獨畫出（冒險模式人物頁「團體」的現任職位，FUN_1400cea60 L127606-127611 經 FUN_1409bdfb0 取職位名、首字改大寫）；譯文同 dwarfmode.tsv；data/strings 只有 inner 條目，單字放全域會撞別處（master、heads 照英文，見 docs/analysis.md）
-ringleader	頭目	头目			勢力職位名單獨畫出（冒險模式人物頁「團體」的現任職位，FUN_1400cea60 L127606-127611 經 FUN_1409bdfb0 取職位名、首字改大寫）；譯文同 dwarfmode.tsv；data/strings 只有 inner 條目，單字放全域會撞別處（master、heads 照英文，見 docs/analysis.md）
-warlord	軍閥	军阀			勢力職位名單獨畫出（冒險模式人物頁「團體」的現任職位，FUN_1400cea60 L127606-127611 經 FUN_1409bdfb0 取職位名、首字改大寫）；譯文同 dwarfmode.tsv；data/strings 只有 inner 條目，單字放全域會撞別處（master、heads 照英文，見 docs/analysis.md）
-warlords	軍閥	军阀			勢力職位名單獨畫出（冒險模式人物頁「團體」的現任職位，FUN_1400cea60 L127606-127611 經 FUN_1409bdfb0 取職位名、首字改大寫）；譯文同 dwarfmode.tsv；data/strings 只有 inner 條目，單字放全域會撞別處（master、heads 照英文，見 docs/analysis.md）
-keeper of the seal	掌璽大臣	掌玺大臣			勢力職位名單獨畫出（冒險模式人物頁「團體」的現任職位，FUN_1400cea60 L127606-127611 經 FUN_1409bdfb0 取職位名、首字改大寫）；譯文同 dwarfmode.tsv；data/strings 只有 inner 條目，單字放全域會撞別處（master、heads 照英文，見 docs/analysis.md）
-keepers of the seal	掌璽大臣	掌玺大臣			勢力職位名單獨畫出（冒險模式人物頁「團體」的現任職位，FUN_1400cea60 L127606-127611 經 FUN_1409bdfb0 取職位名、首字改大寫）；譯文同 dwarfmode.tsv；data/strings 只有 inner 條目，單字放全域會撞別處（master、heads 照英文，見 docs/analysis.md）
-masters of beasts	馴獸總管	驯兽总管			術語例外：Master；勢力職位名單獨畫出（冒險模式人物頁「團體」的現任職位，FUN_1400cea60 L127606-127611 經 FUN_1409bdfb0 取職位名、首字改大寫）；譯文同 dwarfmode.tsv；data/strings 只有 inner 條目，單字放全域會撞別處（master、heads 照英文，見 docs/analysis.md）
-escort commander	護衛指揮官	护卫指挥官			勢力職位名單獨畫出（冒險模式人物頁「團體」的現任職位，FUN_1400cea60 L127606-127611 經 FUN_1409bdfb0 取職位名、首字改大寫）；譯文同 dwarfmode.tsv；data/strings 只有 inner 條目，單字放全域會撞別處（master、heads 照英文，見 docs/analysis.md）
-escorts commanders	護衛指揮官	护卫指挥官			勢力職位名單獨畫出（冒險模式人物頁「團體」的現任職位，FUN_1400cea60 L127606-127611 經 FUN_1409bdfb0 取職位名、首字改大寫）；譯文同 dwarfmode.tsv；data/strings 只有 inner 條目，單字放全域會撞別處（master、heads 照英文，見 docs/analysis.md）

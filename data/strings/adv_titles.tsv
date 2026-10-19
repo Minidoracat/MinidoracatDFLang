@@ -1,18 +1,18 @@
 en	zh-Hant	zh-Hans	align	note
-lords	領主	领主	inner	FUN_14096ece0 L1366025-1366036 程序生成的領主職位（CUSTOM_LAW_MAKER） 複數；單數 lord 在 events_14
-ladies	女領主	女领主	inner	FUN_14096ece0 L1366025-1366036 程序生成的領主職位（CUSTOM_LAW_MAKER） 女性複數；單數 lady 在 events_14
+lords	領主	领主		FUN_14096ece0 L1366025-1366036 程序生成的領主職位（CUSTOM_LAW_MAKER） 複數；單數 lord 在 events_14；不設 inner：人物頁單獨畫出職位名（冒險模式首字大寫）
+ladies	女領主	女领主		FUN_14096ece0 L1366025-1366036 程序生成的領主職位（CUSTOM_LAW_MAKER） 女性複數；單數 lady 在 events_14；不設 inner：人物頁單獨畫出職位名（冒險模式首字大寫）
 lord consort	領主眷侶	领主眷侣		FUN_14096ece0 L1366025-1366036 程序生成的領主職位（CUSTOM_LAW_MAKER） 配偶稱呼（女領主的丈夫）；同 zz_legends_04 的 {@1} consort 譯法
 lords consort	領主眷侶	领主眷侣		FUN_14096ece0 L1366025-1366036 程序生成的領主職位（CUSTOM_LAW_MAKER） 配偶稱呼複數
 lady consort	領主夫人	领主夫人		FUN_14096ece0 L1366025-1366036 程序生成的領主職位（CUSTOM_LAW_MAKER） 配偶稱呼（領主的妻子）
 ladies consort	領主夫人	领主夫人		FUN_14096ece0 L1366025-1366036 程序生成的領主職位（CUSTOM_LAW_MAKER） 配偶稱呼複數
-hearthpeople	家臣	家臣	inner	FUN_14096ece0 L1366117 領主職位的小隊成員稱呼複數；單數 hearthperson 在 adv_speech
-law-giver	立法者	立法者	inner	FUN_14096ece0 L1366307 程序生成的立法者職位（CUSTOM_LAW_MAKER 第二種）
-law-givers	立法者	立法者	inner	FUN_14096ece0 L1366308 同上（複數）
-marshals	元帥	元帅	inner	FUN_14096ece0 L1366763-1366779 程序生成的軍事首長（CUSTOM_MILITARY_STRATEGY）複數；單數在 adv_speech
-field marshals	陸軍元帥	陆军元帅	inner	FUN_14096ece0 L1366763-1366779 程序生成的軍事首長（CUSTOM_MILITARY_STRATEGY）複數；單數在 adv_speech
-constables	統帥	统帅	inner	FUN_14096ece0 L1366763-1366779 程序生成的軍事首長（CUSTOM_MILITARY_STRATEGY）複數；單數在 adv_speech
-chancellor	宰相	宰相	inner	FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 0：不加前綴的職位名（單數）
-chancellors	宰相	宰相	inner	FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 0：不加前綴的職位名（複數）
+hearthpeople	家臣	家臣		FUN_14096ece0 L1366117 領主職位的小隊成員稱呼複數；單數 hearthperson 在 adv_speech；不設 inner：人物頁單獨畫出職位名（冒險模式首字大寫）
+law-giver	立法者	立法者		FUN_14096ece0 L1366307 程序生成的立法者職位（CUSTOM_LAW_MAKER 第二種）；不設 inner：人物頁單獨畫出職位名（冒險模式首字大寫「Law-giver」）
+law-givers	立法者	立法者		FUN_14096ece0 L1366308 同上（複數）
+marshals	元帥	元帅		FUN_14096ece0 L1366763-1366779 程序生成的軍事首長（CUSTOM_MILITARY_STRATEGY）複數；單數在 adv_speech；不設 inner：人物頁單獨畫出職位名（冒險模式首字大寫）
+field marshals	陸軍元帥	陆军元帅		FUN_14096ece0 L1366763-1366779 程序生成的軍事首長（CUSTOM_MILITARY_STRATEGY）複數；單數在 adv_speech；不設 inner：同上
+constables	統帥	统帅		FUN_14096ece0 L1366763-1366779 程序生成的軍事首長（CUSTOM_MILITARY_STRATEGY）複數；單數在 adv_speech；不設 inner：同上
+chancellor	宰相	宰相		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 0：不加前綴的職位名（單數）；不設 inner：人物頁單獨畫出職位名（冒險模式首字大寫「Chancellor」）
+chancellors	宰相	宰相		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 0：不加前綴的職位名（複數）；不設 inner：同上
 chief chancellor	首席宰相	首席宰相		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 0：前綴 chief（L1367652-1367670；royal 只在文明）＋chancellor（單數）
 chief chancellors	首席宰相	首席宰相		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 0：前綴 chief（L1367652-1367670；royal 只在文明）＋chancellor（複數）
 high chancellor	大宰相	大宰相		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 0：前綴 high（L1367652-1367670；royal 只在文明）＋chancellor（單數）
@@ -21,7 +21,7 @@ head chancellor	總宰相	总宰相		FUN_14096ece0 L1367636-1367788 程序生成
 head chancellors	總宰相	总宰相		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 0：前綴 head（L1367652-1367670；royal 只在文明）＋chancellor（複數）
 royal chancellor	王室宰相	王室宰相		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 0：前綴 royal（L1367652-1367670；royal 只在文明）＋chancellor（單數）
 royal chancellors	王室宰相	王室宰相		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 0：前綴 royal（L1367652-1367670；royal 只在文明）＋chancellor（複數）
-keepers of the seal	掌璽大臣	掌玺大臣	inner	FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 0：不加前綴的職位名（複數）
+keepers of the seal	掌璽大臣	掌玺大臣		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 0：不加前綴的職位名（複數）；不設 inner：人物頁單獨畫出職位名（冒險模式首字大寫）
 chief keeper of the seal	首席掌璽大臣	首席掌玺大臣		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 0：前綴 chief（L1367652-1367670；royal 只在文明）＋keeper of the seal（單數）
 chief keepers of the seal	首席掌璽大臣	首席掌玺大臣		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 0：前綴 chief（L1367652-1367670；royal 只在文明）＋keeper of the seal（複數）
 high keeper of the seal	大掌璽大臣	大掌玺大臣		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 0：前綴 high（L1367652-1367670；royal 只在文明）＋keeper of the seal（單數）
@@ -30,8 +30,8 @@ head keeper of the seal	總掌璽大臣	总掌玺大臣		FUN_14096ece0 L1367636-
 head keepers of the seal	總掌璽大臣	总掌玺大臣		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 0：前綴 head（L1367652-1367670；royal 只在文明）＋keeper of the seal（複數）
 royal keeper of the seal	王室掌璽大臣	王室掌玺大臣		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 0：前綴 royal（L1367652-1367670；royal 只在文明）＋keeper of the seal（單數）
 royal keepers of the seal	王室掌璽大臣	王室掌玺大臣		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 0：前綴 royal（L1367652-1367670；royal 只在文明）＋keeper of the seal（複數）
-justiciar	司法官	司法官	inner	FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 1：不加前綴的職位名（單數）
-justiciars	司法官	司法官	inner	FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 1：不加前綴的職位名（複數）
+justiciar	司法官	司法官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 1：不加前綴的職位名（單數）；不設 inner：人物頁單獨畫出職位名（冒險模式首字大寫「Justiciar」）
+justiciars	司法官	司法官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 1：不加前綴的職位名（複數）；不設 inner：同上
 chief justiciar	首席司法官	首席司法官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 1：前綴 chief（L1367652-1367670；royal 只在文明）＋justiciar（單數）
 chief justiciars	首席司法官	首席司法官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 1：前綴 chief（L1367652-1367670；royal 只在文明）＋justiciar（複數）
 high justiciar	大司法官	大司法官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 1：前綴 high（L1367652-1367670；royal 只在文明）＋justiciar（單數）
@@ -64,8 +64,8 @@ head advisor	總顧問	总顾问		FUN_14096ece0 L1367636-1367788 程序生成的
 head advisors	總顧問	总顾问		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 3：前綴 head（L1367652-1367670；royal 只在文明）＋advisor（複數）
 royal advisor	王室顧問	王室顾问		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 3：前綴 royal（L1367652-1367670；royal 只在文明）＋advisor（單數）
 royal advisors	王室顧問	王室顾问		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 3：前綴 royal（L1367652-1367670；royal 只在文明）＋advisor（複數）
-chamberlain	內務官	内务官	inner	FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 4：不加前綴的職位名（單數）
-chamberlains	內務官	内务官	inner	FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 4：不加前綴的職位名（複數）
+chamberlain	內務官	内务官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 4：不加前綴的職位名（單數）；不設 inner：人物頁單獨畫出職位名（冒險模式首字大寫「Chamberlain」）
+chamberlains	內務官	内务官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 4：不加前綴的職位名（複數）；不設 inner：同上
 chief chamberlain	首席內務官	首席内务官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 4：前綴 chief（L1367652-1367670；royal 只在文明）＋chamberlain（單數）
 chief chamberlains	首席內務官	首席内务官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 4：前綴 chief（L1367652-1367670；royal 只在文明）＋chamberlain（複數）
 high chamberlain	大內務官	大内务官		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 4：前綴 high（L1367652-1367670；royal 只在文明）＋chamberlain（單數）
@@ -122,7 +122,7 @@ head housekeeper	總務長	总务长		FUN_14096ece0 L1367636-1367788 程序生�
 head housekeepers	總務長	总务长		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 10：前綴 head（L1367652-1367670；royal 只在文明）＋housekeeper（複數）
 royal housekeeper	王室總務	王室总务		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 10：前綴 royal（L1367652-1367670；royal 只在文明）＋housekeeper（單數）
 royal housekeepers	王室總務	王室总务		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 10：前綴 royal（L1367652-1367670；royal 只在文明）＋housekeeper（複數）
-masters of beasts	馴獸總管	驯兽总管	inner	FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 5 L1367747 複數（不加前綴）；單數在 adv_speech；術語例外：Master
+masters of beasts	馴獸總管	驯兽总管		FUN_14096ece0 L1367636-1367788 程序生成的官員（CUSTOM_OFFICIAL_） case 5 L1367747 複數（不加前綴）；單數在 adv_speech；術語例外：Master；不設 inner：人物頁單獨畫出職位名
 sewer commissioner	下水道專員	下水道专员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 0 sewer＋commissioner（單數）
 sewer commissioners	下水道專員	下水道专员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 0 sewer＋commissioner（複數）
 sewer official	下水道官員	下水道官员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 0 sewer＋official（單數）
@@ -192,11 +192,11 @@ tunnel administrator	隧道管理者	隧道管理人员		FUN_14096ece0 L1367946-
 tunnel administrators	隧道管理者	隧道管理人员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 5 tunnel＋administrator（複數）；術語 administrator
 tunnel caretaker	隧道照管員	隧道照管员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 5 tunnel＋caretaker（單數）
 tunnel caretakers	隧道照管員	隧道照管员		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 5 tunnel＋caretaker（複數）
-judge	法官	法官	inner	FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 3 法官類（不接職稱）
-judges	法官	法官	inner	FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 3 法官類（不接職稱）複數
-justices	審判官	审判官	inner	FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 3 法官類（不接職稱）複數；單數 justice 已是 speech_01 的「正義」，稱呼另寫句型（rules/adv_titles）
-magistrate	地方官	地方官	inner	FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 3 法官類（不接職稱）
-magistrates	地方官	地方官	inner	FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 3 法官類（不接職稱）複數
+judge	法官	法官		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 3 法官類（不接職稱）；不設 inner：人物頁單獨畫出職位名（冒險模式首字大寫）
+judges	法官	法官		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 3 法官類（不接職稱）複數；不設 inner：同上
+justices	審判官	审判官		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 3 法官類（不接職稱）複數；單數 justice 已是 speech_01 的「正義」，稱呼另寫句型（rules/adv_titles）；不設 inner：同上
+magistrate	地方官	地方官		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 3 法官類（不接職稱）；不設 inner：人物頁單獨畫出職位名（冒險模式首字大寫「Magistrate」）
+magistrates	地方官	地方官		FUN_14096ece0 L1367946-1368067 程序生成的市政官員（CUSTOM_MARKET_OFFICIAL_） case 3 法官類（不接職稱）複數；不設 inner：同上
 Retired	退休	退休		FUN_1401e65a0 L251986／L252638 結束畫面標題
 Abandoned	廢棄	废弃		FUN_1401e65a0 L252015 結束畫面標題
 Conquered	被征服	被征服		FUN_1401e65a0 L252020 結束畫面標題
