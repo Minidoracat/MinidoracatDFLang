@@ -299,7 +299,7 @@ pub fn miss_log_state() -> (bool, usize, bool) {
     MISS_LOG.lock().as_ref().map_or((false, 0, false), |l| (true, l.seen.len(), l.full()))
 }
 
-fn note_miss(kind: &str, key: &[u8]) {
+pub(crate) fn note_miss(kind: &str, key: &[u8]) {
     MISSES.fetch_add(1, Ordering::Relaxed);
     if !MISS_LOG_ON.load(Ordering::Relaxed) || !key.iter().any(u8::is_ascii_alphabetic) {
         return;

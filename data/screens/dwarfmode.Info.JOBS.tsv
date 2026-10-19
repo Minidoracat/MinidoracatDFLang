@@ -1,2 +1,3 @@
 en	zh-Hant	zh-Hans	align	row	note
+Fish	魚類	鱼类		0	上方資訊列（第 0 列）的存量標題，同全域；排在下一條不限列的「釣魚」前面（理由見 dwarfmode.Info.CREATURES.tsv）
 Fish	釣魚	钓鱼			工作名稱 Fish（釣魚）；全域的 Fish 是上方資訊列與庫存的「魚類」，所以只在生物清單、任務分頁、人物頁套用（第二十三輪簡中實機）

@@ -99,11 +99,13 @@ pub enum Plan {
 
 /// 段落單字的畫字計畫：字串位址 → 計畫
 struct Word {
+    /// 所屬段落（markup_text_boxst 位址）：計畫過期時照現在的字典重訂（見 word_plan）
+    mtb: usize,
     /// 排版後的座標（單字釋放後位址可能給別的字串用，座標也相同才算，見 word_plan）
     px: i32,
     py: i32,
     plan: Plan,
-    /// 計畫照哪一份字典算的：換了語言，舊計畫的字圖編號就對不上了
+    /// 計畫照哪一份字典、哪一版設定算的：換了語言，舊計畫的字圖編號就對不上了
     stamp: Stamp,
     /// 這個段落的中文照字型實際字寬排（整句貼圖開著時）：整句貼圖關掉後舊計畫畫不出字
     compact: bool,
@@ -580,7 +582,7 @@ pub unsafe fn rewrite(mtb: usize, dict: &Dict, note_miss: impl FnOnce(&[u8]), re
                 write(w, l.word_px, pos[i].0);
                 write(w, l.word_py, pos[i].1);
             }
-            table.insert(w + l.word_str, Word { px: read(w, l.word_px), py: read(w, l.word_py), plan, stamp, compact });
+            table.insert(w + l.word_str, Word { mtb, px: read(w, l.word_px), py: read(w, l.word_py), plan, stamp, compact });
         }
         states.insert(mtb, State { words: words.to_vec(), width, translated, stamp, moved });
         translated
@@ -721,16 +723,24 @@ fn link_name(dict: &Dict, text: &[u8]) -> Option<String> {
 
 /// 畫字 hook 用：這個字串是段落單字時，回傳它的畫字計畫。
 /// 單字釋放後位址可能給別的字串用，所以座標也要和排版時相同才算；讀的位置在原本單字結構的範圍內。
-/// 玩家改了設定、遊戲還沒重排的段落照舊計畫畫；但 dict（現在的字典）換了語言、或整句貼圖關掉而舊計畫照字寬排時，
-/// 舊計畫畫不出來，整段照畫英文。
+/// 玩家換了語言或設定、遊戲還沒重排的段落（遊戲只在寬度變了才重排，彈出視窗開著時一直不會）：沒有連結字的
+/// 當場照現在的字典重訂計畫（遊戲正在畫它，段落還在）；連結字搬過位置的要等遊戲照英文重排（見 rewrite），
+/// 這之間 dict 換了語言、或整句貼圖關掉而舊計畫照字寬排時，舊計畫畫不出來，整段照畫英文。
 pub unsafe fn word_plan(s: usize, dict: &Dict) -> Option<Plan> {
     let l = MTB_LAYOUT.get()?;
-    let table = WORDS.lock();
-    let word = table.get(&s)?;
     let w = s - l.word_str;
-    if unsafe { read::<i32>(w, l.word_px) != word.px || read::<i32>(w, l.word_py) != word.py } {
-        return None;
+    let same_place = |word: &&Word| unsafe { read::<i32>(w, l.word_px) == word.px && read::<i32>(w, l.word_py) == word.py };
+    let stale = {
+        let table = WORDS.lock();
+        let word = table.get(&s).filter(same_place)?;
+        (word.stamp != Stamp::of(dict)).then_some(word.mtb)
+    };
+    // rewrite 先鎖 STATES 再鎖 WORDS：這裡兩個都放開了才呼叫
+    if let Some(mtb) = stale.filter(|mtb| STATES.lock().get(mtb).is_some_and(|state| !state.moved)) {
+        unsafe { rewrite(mtb, dict, |key| crate::hooks::note_miss("mtb", key), || {}) };
     }
+    let table = WORDS.lock();
+    let word = table.get(&s).filter(same_place)?;
     let unusable = !word.stamp.same_dict(dict) || (word.compact && !crate::overlay::ON.load(std::sync::atomic::Ordering::Relaxed));
     Some(if unusable { Plan::Plain } else { word.plan.clone() })
 }
@@ -1039,6 +1049,25 @@ mod tests {
             assert_eq!((plan_of(p.words[0], &d), plan_of(p.words[1], &d)), ("draw", "skip"));
             assert_eq!(str_bytes(p.words[0]), b"All");
             assert_eq!(str_bytes(p.words[1]), b"Fish");
+        }
+    }
+
+    #[test]
+    fn an_open_paragraph_follows_a_language_switch_when_drawn() {
+        let dict = |zh: &str| {
+            let mut d = Dict::default();
+            assert!(d.set_glyphs(zh, vec![0; 4]));
+            d.load_tsv(&format!("All Fish\t{zh}\n"));
+            d
+        };
+        let (hant, hans) = (dict("全魚"), dict("全鱼"));
+        unsafe {
+            let p = Fake::new(&[("All", 7), ("Fish", 7)], 40);
+            assert!(rewrite(p.mtb, &hant, |_| {}, || {}));
+            // 彈出視窗開著時換了語言：遊戲只在寬度變了才重排，畫的時候照新的字典重訂計畫，不整段照英文
+            let Some(Plan::Draw(row)) = word_plan(p.words[0], &hans) else { panic!("換了語言，第一個單字照新字典畫中文") };
+            assert_eq!(row[0].entry.text, "全鱼");
+            assert_eq!(plan_of(p.words[1], &hans), "skip");
         }
     }
 

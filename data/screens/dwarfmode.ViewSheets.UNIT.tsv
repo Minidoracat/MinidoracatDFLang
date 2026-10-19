@@ -3,4 +3,5 @@ Temperate	節制	节制			人物頁概況的性格摘要標籤；同一個字在
 Fellow scholar	學術同儕	学术同行			FUN_14014ef90 140176fb4-140178afd 人際關係分頁：關係種類；放依畫面譯文：全域的大寫條目會經大小寫退回搶走事件句的 inner「fellow artist」（同為藝術家的）
 Fellow artist	藝術同好	艺术同好			FUN_14014ef90 140176fb4-140178afd 人際關係分頁：關係種類；放依畫面譯文：全域的大寫條目會經大小寫退回搶走事件句的 inner「fellow artist」（同為藝術家的）
 Fellow athlete	運動同好	运动同好			FUN_14014ef90 140176fb4-140178afd 人際關係分頁：關係種類；放依畫面譯文：全域的大寫條目會經大小寫退回搶走事件句的 inner「fellow artist」（同為藝術家的）
+Fish	魚類	鱼类		0	上方資訊列（第 0 列）的存量標題，同全域；排在下一條不限列的「釣魚」前面（理由見 dwarfmode.Info.CREATURES.tsv）
 Fish	釣魚	钓鱼			工作名稱 Fish（釣魚）；全域的 Fish 是上方資訊列與庫存的「魚類」，所以只在生物清單、任務分頁、人物頁套用（第二十三輪簡中實機）

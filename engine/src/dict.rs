@@ -1491,8 +1491,11 @@ impl Dict {
                         Some(Kind::EnName) => crate::names::get(piece).map(|zh| zh.to_string()).or_else(|| crate::names::parse(piece))
                             .map(|zh| (vec![(zh, 0)], true)).or_else(|| self.piece(piece, depth + 1, memo)),
                         // 存檔清單的原名：遊戲這次沒組過（存檔只存組好的字串），名字音譯開著時照拼法音譯。都沒有時照抄；
-                        // 像原名的（見 native_shape）照抄也算乾淨：名字音譯關著時原名本來就照原文，連結字（傳說頁的戰爭「原名, "英文名"」）才翻得出來
-                        Some(Kind::Native) => crate::names::get(piece).map(|zh| zh.to_string()).or_else(|| crate::translit::name(piece))
+                        // 像原名的（見 native_shape）照抄也算乾淨：名字音譯關著時原名本來就照原文，連結字（傳說頁的戰爭「原名, "英文名"」）才翻得出來。
+                        // 這個位置偶爾是遊戲組的英文名（抵達說明的文明名「The Fortified Realms」）：The 開頭的先照字表拆，不拿英文去音譯
+                        Some(Kind::Native) => crate::names::get(piece).map(|zh| zh.to_string())
+                            .or_else(|| piece.starts_with(b"The ").then(|| crate::names::parse(piece)).flatten())
+                            .or_else(|| crate::translit::name(piece))
                             .map(|zh| (vec![(zh, 0)], true)).or_else(|| self.piece(piece, depth + 1, memo))
                             .or_else(|| native_shape(piece).then(|| (vec![(cp437::decode(piece), 0)], true))),
                         // 任意佔位抓到只有主題的書名（`entitled {2}` 的 The Anatomy of the Eye）
@@ -2441,6 +2444,14 @@ mod tests {
         let link = |s: &[u8]| d.translate_fragment(s);
         assert_eq!(link(b"Rislu Strepuv, \"The Sieges of Scolding\"").as_deref(), Some("Rislu Strepuv「斥之圍城」"), "傳說頁的戰爭連結：原名照抄也算翻好");
         assert_eq!(link(b"he said, \"The Sieges of Scolding\""), None, "小寫的字不是原名，整條不算翻好");
+    }
+
+    #[test]
+    fn native_name_slots_parse_english_names_that_start_with_the() {
+        // 抵達說明的文明名有時是遊戲組的英文名（「The Fortified Realms」）：照字表拆回中文，名字音譯開著時也不拿英文去音譯
+        crate::names::set_forms(&[("rock", "岩"), ("rocks", "岩")], &[("large", "巨")]);
+        let d = dict("all of {!1}.\t為整個{1}。\n");
+        assert_eq!(d.translate_text(b"all of The Large Rocks.").as_deref(), Some("為整個巨岩。"));
     }
 
     #[test]
