@@ -108,8 +108,8 @@
 - 寫完用離線工具檢查（和引擎同一套程式、讀 data/ 的檔案），一行一句的樣本檔可以直接導入：
 
   ```
-  cargo run --manifest-path engine/Cargo.toml --example t -- zh-Hant "He feels joy while in conflict."
-  cargo run --manifest-path engine/Cargo.toml --example t -- zh-Hans < temp/round6/samples_thoughts.txt
+  cargo run -q --release --manifest-path engine/Cargo.toml --example t -- zh-Hant "He feels joy while in conflict."
+  cargo run -q --release --manifest-path engine/Cargo.toml --example t -- zh-Hans < temp/round6/samples_thoughts.txt
   ```
 
   輸出譯文，或「缺：」加查不到的句子；原文含換色標記時，譯文也標出顏色。遊戲裡用 `dflang t "<原文>"` 查，結果相同。
