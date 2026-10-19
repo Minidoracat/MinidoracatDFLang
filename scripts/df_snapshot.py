@@ -15,6 +15,9 @@ L2（53.16 實測約 40 分鐘，按需）：decompile，Ghidra headless 匯入 
   uv run scripts/df_snapshot.py redecompile [VERSION] [--timeout 秒] [--max-instructions N] [--only FUN…]
                                                      全量匯出時失敗的函式，用較長逾時與指令上限重做並併回（--only 先做指定的）
   uv run scripts/df_snapshot.py status | where
+  uv run scripts/df_snapshot.py find REGEX [--max 50] [--version V]     pseudo-C 逐行搜尋：行號、所在函式、內容
+  uv run scripts/df_snapshot.py fn NAME [--max-lines 3000] [--version V] 印出整個函式（含行號）
+  uv run scripts/df_snapshot.py callers NAME [--version V]              呼叫 NAME( 的位置，依所在函式分組
 路徑：遊戲與 DFHack 由 scripts/dfpaths.py 從 Steam 找（DF_PATH／DFHACK_PATH 可覆寫）；
 Ghidra 用 GHIDRA_HOME，沒設就找 ../df-decompiled-reference/tools/ghidra。
 """
@@ -496,6 +499,95 @@ def cmd_where(_args) -> int:
     return 0
 
 
+FUNC_MARK = "// ============ "
+
+
+def decomp_file(version: str | None) -> Path | None:
+    snap = find_snapshot(version)
+    c = snap / "ghidra/Dwarf Fortress.exe.c" if snap else None
+    if c is None or not c.is_file():
+        print("缺 L2 快照（先跑 decompile）", file=sys.stderr)
+        return None
+    return c
+
+
+def decomp_lines(c: Path):
+    """逐行讀 pseudo-C，產生 (行號, 所在函式, 是否已進函式本體, 行)。
+    函式以匯出時的「// ============ NAME @ 0x… ============」分段；本體從第 0 欄的 { 開始。"""
+    func, body = "-", False
+    with c.open(encoding="utf-8", errors="replace") as f:
+        for n, line in enumerate(f, 1):
+            if line.startswith(FUNC_MARK):
+                func, body = line.split()[2], False
+            elif line.startswith("{"):
+                body = True
+            yield n, func, body, line
+
+
+def cmd_find(args) -> int:
+    c = decomp_file(args.version)
+    if c is None:
+        return 1
+    rx = re.compile(args.pattern)
+    total = 0
+    for n, func, _, line in decomp_lines(c):
+        if rx.search(line):
+            total += 1
+            if total <= args.max:
+                print(f"{n}\t{func}\t{line.strip()[:200]}")
+    print(f"顯示 {min(total, args.max)}／共 {total} 筆")
+    return 0
+
+
+def cmd_fn(args) -> int:
+    c = decomp_file(args.version)
+    if c is None:
+        return 1
+    found = started = False
+    shown = 0
+    for n, func, body, line in decomp_lines(c):
+        if func != args.name:
+            if found:
+                break
+            continue
+        found = True
+        if line.startswith("// DECOMPILE FAILED"):
+            print(f"{n}\t{line.rstrip()}")
+            print(f"{args.name} 反編譯失敗，沒有本體（可用 redecompile --only {args.name} 重做）")
+            return 1
+        # 函式標頭是標記後第一個第 0 欄、非註解的行（參數多時會折行，續行有縮排）
+        started = started or line[:1] not in " \t\r\n/"
+        if not started:
+            continue
+        if shown == args.max_lines:
+            print(f"…超過 {args.max_lines} 行，已截斷（用 --max-lines 調高）")
+            break
+        print(f"{n}\t{line.rstrip()}")
+        shown += 1
+        if body and line.startswith("}"):
+            break
+    if not found:
+        print(f"找不到函式 {args.name}", file=sys.stderr)
+        return 1
+    return 0
+
+
+def cmd_callers(args) -> int:
+    c = decomp_file(args.version)
+    if c is None:
+        return 1
+    rx = re.compile(rf"(?<!\w){re.escape(args.name)}\(")
+    sites: dict[str, list[int]] = {}
+    # 只算函式本體內的；標頭（定義本身）在 { 之前，不會算進來
+    for n, func, body, line in decomp_lines(c):
+        if body and args.name in line and rx.search(line):
+            sites.setdefault(func, []).append(n)
+    for func, ns in sites.items():
+        print(f"{func}: {', '.join(map(str, ns))}")
+    print(f"共 {sum(map(len, sites.values()))} 處呼叫，分布在 {len(sites)} 個函式")
+    return 0
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -524,6 +616,20 @@ def main() -> int:
     p.set_defaults(fn=cmd_redecompile)
     sub.add_parser("status").set_defaults(fn=cmd_status)
     sub.add_parser("where").set_defaults(fn=cmd_where)
+    p = sub.add_parser("find", help="在 pseudo-C 逐行搜尋 regex")
+    p.add_argument("pattern")
+    p.add_argument("--max", type=int, default=50, help="最多顯示幾筆")
+    p.add_argument("--version")
+    p.set_defaults(fn=cmd_find)
+    p = sub.add_parser("fn", help="印出整個函式")
+    p.add_argument("name")
+    p.add_argument("--max-lines", type=int, default=3000)
+    p.add_argument("--version")
+    p.set_defaults(fn=cmd_fn)
+    p = sub.add_parser("callers", help="列出呼叫 NAME( 的位置")
+    p.add_argument("name")
+    p.add_argument("--version")
+    p.set_defaults(fn=cmd_callers)
     args = ap.parse_args()
     return args.fn(args)
 
