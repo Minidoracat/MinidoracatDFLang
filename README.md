@@ -7,7 +7,7 @@
 玩得再久也不會越吃越多記憶體：引擎的快取都設了上限，滿了就清；整句貼圖畫字用的貼圖最多 2,048 張，用不到的會釋放。遊戲中切換語言或粗體字時，用過的那份會留著直接重用，來回切換也不會一直增加。
 
 - 工作坊：[繁體／簡體中文](https://steamcommunity.com/sharedfiles/filedetails/?id=3820630135)（原本的[簡體中文項目](https://steamcommunity.com/sharedfiles/filedetails/?id=3820630318)已合併進來，停在 0.4.0）
-- 目前版本 0.5.5（Dwarf Fortress 53.16＋DFHack 53.16-r3），各版本的變更見 [CHANGELOG.md](CHANGELOG.md)
+- 目前版本 0.5.6（Dwarf Fortress 53.16＋DFHack 53.16-r3），各版本的變更見 [CHANGELOG.md](CHANGELOG.md)
 
 ## 安裝
 
@@ -25,7 +25,7 @@
 - 世界生成的名稱（照遊戲的組字規則組成中文）、神造材料與神話物質。
 - DFHack 的控制面板、launcher、快速入門指南、overlay 與常用工具視窗。
 
-共有整句 55,504 條、句型 27,608 條、依畫面譯文 644 條、名稱字表 3,301 條、音譯表 327 個音節。
+共有整句 55,504 條、句型 27,608 條、依畫面譯文 647 條、名稱字表 3,301 條、音譯表 327 個音節。
 
 照原文的部分：玩家自己輸入的文字、玩家取的名字、第三方模組的名稱與說明、DFHack 的工具名與指令、主控台輸出；配樂曲名預設照原文，可以在設定視窗改成中文。矮人語等原生語言的名字預設音譯成中文，可以在設定視窗改回原文。沒翻到的字維持英文，不影響遊戲。
 
@@ -135,7 +135,7 @@ uv run scripts/make_pinyin.py                 # 譯文用到新的漢字後重�
 uv run scripts/build.py                       # 建置（遊戲要先關：執行中會鎖住 DLL）
 uv run scripts/verify_mod.py                  # 必須全部 PASS
 uv run scripts/terms.py check                 # 術語與兩岸用語
-uv run scripts/regress.py                     # 改句型後：舊樣本的譯文和 HEAD 比（--base v0.5.4 和舊版比）
+uv run scripts/regress.py                     # 改句型後：舊樣本的譯文和 HEAD 比（--base v0.5.5 和舊版比）
 cargo test --manifest-path engine/Cargo.toml --lib   # 引擎的單元測試
 uv run scripts/inventory.py                   # 待翻清單（需要反編譯快照）
 uv run scripts/dev_game.py play               # 啟動器：建置、掛進遊戲並啟動，遊戲關掉後自動還原（scripts/dev-play.cmd 雙擊同）
@@ -155,7 +155,7 @@ uv run scripts/dev_game.py down               # 關遊戲、還原 mods/ 與設�
 uv run scripts/publish_workshop.py [--screenshots] --yes             # 上傳內容、封面、繁簡兩種語系的標題與說明、更新說明
 uv run scripts/publish_workshop.py --description-only [--screenshots] --yes   # 只換說明（加 --screenshots 連截圖一起換），不傳內容、不算發布新版
 uv run scripts/publish_workshop.py --retire --yes                    # 已合併的簡中項目：換成「已合併、請改訂閱」的標題與說明，設成不公開列出
-git tag -a v0.5.5 -m "0.5.5" && git push origin v0.5.5                         # 每次發布都打 tag，版本號照 workshop.json
+git tag -a v0.5.6 -m "0.5.6" && git push origin v0.5.6                         # 每次發布都打 tag，版本號照 workshop.json
 ```
 
 ## 授權

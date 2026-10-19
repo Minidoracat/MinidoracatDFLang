@@ -2,7 +2,7 @@
 
 所有重要的變更都記錄在這裡。格式依 [Keep a Changelog](https://keepachangelog.com/zh-TW/1.1.0/)，版本號照 `scripts/workshop.json`。每一版的工作坊更新說明（`docs/steam/changelog-*.bbcode`）由這裡整理成玩家看得懂的重點。
 
-## [Unreleased]
+## [0.5.6] - 2026-10-20
 
 ### 修正
 
