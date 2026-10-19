@@ -35,7 +35,7 @@
       },
       "mascot_label": "繁體中文",
       "steam_language": "tchinese",
-      "steam_title": "矮人要塞 繁體／簡體中文化 Dwarf Fortress Chinese by Minidoracat",
+      "steam_title": "矮人要塞 繁體／簡體中文化（漢化）Dwarf Fortress Chinese by Minidoracat",
       "steam_description": "docs/steam/zh-Hant.bbcode",
       "steam_changelog": "docs/steam/changelog-zh-Hant.bbcode"
     },
@@ -55,7 +55,7 @@
       },
       "mascot_label": "简体中文",
       "steam_language": "schinese",
-      "steam_title": "矮人要塞 简体／繁体中文化 Dwarf Fortress Chinese by Minidoracat",
+      "steam_title": "矮人要塞 简体／繁体中文汉化 Dwarf Fortress Chinese by Minidoracat",
       "steam_description": "docs/steam/zh-Hans.bbcode",
       "steam_changelog": "docs/steam/changelog-zh-Hans.bbcode"
     }
