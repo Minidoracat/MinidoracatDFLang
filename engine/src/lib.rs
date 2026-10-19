@@ -946,16 +946,17 @@ unsafe extern "C" fn status(l: lua::State) -> c_int {
     }
 }
 
-/// translate(英文原文) → 譯文或 nil（查已啟用的字典：整句、句型，再逐句；可含換色標記，照彩色文字框處理）
+/// translate(英文原文) → 譯文或 nil（查已啟用的字典：整句、句型，再逐句；可含換色標記，照彩色文字框處理）。
+/// 原文是 UTF-8 或遊戲的 CP437 位元組都可以（見 cp437::from_lua）
 unsafe extern "C" fn translate(l: lua::State) -> c_int {
     unsafe {
         let dict = hooks::DICT.load(Ordering::Acquire);
-        let text = lua::arg_str(l, 1)
-            .and_then(|s| Some((s.contains("[C:"), cp437::encode(s)?)))
+        let text = lua::arg_bytes(l, 1)
+            .map(cp437::from_lua)
             .filter(|_| !dict.is_null())
-            .and_then(|(colored, key)| {
+            .and_then(|key| {
                 let zh = ctb::translate(&key, 7, &*dict).0?;
-                Some(if colored { zh } else { ctb::strip_colors(&zh) })
+                Some(if key.windows(3).any(|w| w == b"[C:") { zh } else { ctb::strip_colors(&zh) })
             });
         match text {
             Some(t) => lua::push_str(l, &t),

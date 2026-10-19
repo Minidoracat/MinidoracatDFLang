@@ -6,17 +6,14 @@
 local engine = dfhack.BASE_G.DFLANG and dfhack.BASE_G.DFLANG.engine
 if not engine then qerror('DFLang is not loaded') end
 
--- 遊戲的字串是 CP437 位元組，engine.translate 收 UTF-8：先用 dfhack.df2utf 轉（♂、☼、« 這類字元直接傳會查不到）
 local seen, out, misses, total = {}, {}, 0, 0
 local function record(source, text)
     if type(text) ~= 'string' or text == '' or seen[text] then return end
     seen[text] = true
     total = total + 1
-    local utf = dfhack.df2utf(text)
-    local zh = engine.translate(utf)
-    if not zh then
+    if not engine.translate(text) then
         misses = misses + 1
-        out[#out + 1] = source .. '\t' .. utf .. '\tMISS'
+        out[#out + 1] = source .. '\t' .. dfhack.df2utf(text) .. '\tMISS'
     end
 end
 
