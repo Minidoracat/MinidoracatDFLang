@@ -1617,10 +1617,12 @@ unsafe extern "C" fn hook_translate_name(name: *const u8, out: *mut StdString, c
 }
 
 /// 名字轉原文：原函式照跑、原文照用；記下這個原名（名字音譯關著也記，打開選項就查得到音譯，見 names::note_native）。
+/// 沒有原生語言的名字（language_name +0x6c 是 -1）不記：書冊、卷軸類神器的「原文」就是英文書名，記了以後書名的第一個字
+/// （The、Fortress）也算原名，句型的片段會把它照抄（「哥布林Fortress」，見 lua/loader.lua 的 note_world_names）
 unsafe extern "C" fn hook_native_name(name: *const u8, out: *mut StdString) {
     let orig: NativeNameFn = unsafe { std::mem::transmute(TRAMPOLINES[15].load(Ordering::Acquire)) };
     unsafe { orig(name, out) };
-    if ENABLED.load(Ordering::Relaxed) {
+    if ENABLED.load(Ordering::Relaxed) && unsafe { read::<i32>(name, 0x6c) } >= 0 {
         crate::names::note_native(unsafe { (*out).bytes() });
     }
 }

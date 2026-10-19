@@ -753,9 +753,11 @@ local function note_world_names(engine)
     local function note(name)
         return not name.has_name or engine.note_name(select(2, df.sizeof(name)), dfhack.translation.translateName(name, true))
     end
-    -- 原名：戰報只寫神器的原名（「with his Sherikdan」）；樂器名是世界生成的原生語言字（工坊的「Assemble astesh」「Make bukog hammers」）
+    -- 原名：戰報只寫神器的原名（「with his Sherikdan」）；樂器名是世界生成的原生語言字（工坊的「Assemble astesh」「Make bukog hammers」）。
+    -- 沒有原生語言的名字（language -1）不是原名：書冊、卷軸類神器（九成以上）的名字是英文書名（first_name「Fortress Within Reason」），
+    -- 記了以後書名的第一個字也算原名，句型的片段會把 The、Fortress 照抄（「哥布林Fortress」）
     for _, a in ipairs(w.artifacts.all) do
-        if a.name.has_name then engine.note_native(dfhack.translation.translateName(a.name, false)) end
+        if a.name.has_name and a.name.language >= 0 then engine.note_native(dfhack.translation.translateName(a.name, false)) end
     end
     for _, d in ipairs(w.raws.itemdefs.instruments) do
         engine.note_native(d.name)
