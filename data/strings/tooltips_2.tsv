@@ -89,5 +89,5 @@ Remove the current worker from the task.	移除此任務目前的工人。	移�
 Suspend this task.  This removes the worker.  The task can be unsuspended.	暫停此任務。這會移除工人。任務之後可以恢復。	暂停该任务。这会移除工人。任务之后可以恢复。		任務清單
 Cancel this task.	取消此任務。	取消该任务。		任務清單
 Assign a trainer to this creature.	為此生物指派馴獸師。	为该生物分配驯兽师。		寵物／牲畜
-Assign this creature as a work animal for a specific citizen or resident.	將此生物指派為特定公民或居民的工作動物。	将该生物分配为特定公民或居民的工作动物。		寵物／牲畜；原文區分 citizen／resident
+Assign this creature as a work animal for a specific citizen or resident.	將此生物指派為特定居民或居留者的工作動物。	将该生物分配为特定居民或居留者的工作动物。		寵物／牲畜；原文區分 citizen／resident
 Toggle whether this creature will receive war training.  War animals have more lethal attacks.	切換此生物是否接受戰鬥訓練。戰鬥動物的攻擊更致命。	切换该生物是否接受战斗训练。战斗动物的攻击更致命。		寵物／牲畜；與 Tooltips3 對齊

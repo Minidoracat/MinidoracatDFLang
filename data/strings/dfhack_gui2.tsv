@@ -187,7 +187,7 @@ Mark newly designated	將新標示的	将新标记的		DFHack hack/lua/plugins/d
 tiles for:	地塊標為：	地块标为：		DFHack hack/lua/plugins/dig.lua L44 潮濕／溫熱挖掘設定第二行
 Damp dig	挖濕岩	挖湿岩		DFHack hack/lua/plugins/dig.lua L79 本層已標示地塊改標潮濕挖掘
 Warm dig	挖熱岩	挖热岩		DFHack hack/lua/plugins/dig.lua L84 本層已標示地塊改標溫熱挖掘
-Adds widgets to the dig interface to allow uninterrupted digging through warm and damp tiles.	在挖掘介面加上設定，可以不中斷地挖穿溫熱與潮濕的地塊。	在挖掘界面加上设置，可以不中断地挖穿温热和潮湿的地块。		DFHack hack/lua/plugins/dig.lua L147 overlay 說明（控制面板顯示）
+Adds widgets to the dig interface to allow uninterrupted digging through warm and damp tiles.	在挖掘介面加上元件，可以不中斷地挖穿溫熱與潮濕的地塊。	在挖掘界面加上组件，可以不中断地挖穿温热和潮湿的地块。		DFHack hack/lua/plugins/dig.lua L147 overlay 說明（控制面板顯示）
 Mark for uninterrupted	標記為不中斷地	标记为不中断地		DFHack hack/lua/plugins/dig.lua L181 挖掘工具列按鈕提示第一行（接 digging through damp / or warm tiles.；中文照同樣順序讀得通）
 digging through damp	挖穿潮濕	挖穿潮湿		DFHack hack/lua/plugins/dig.lua L182 挖掘工具列按鈕提示第二行
 or warm tiles.	或溫熱地塊。	或温热地块。		DFHack hack/lua/plugins/dig.lua L183 挖掘工具列按鈕提示第三行

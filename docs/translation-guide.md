@@ -65,7 +65,7 @@
 - 焦點字串在 DFHack 主控台執行 `:lua printall(dfhack.gui.getCurFocus(true))` 查看。
 - 欄位比 `data/strings` 多一欄 `row`（放在 `align` 與 `note` 之間）：空白是任何一列；填數字時只在字串畫在畫面那一列時套用，給同一畫面、同一個字、意思不同的情況。例：`Temperate` 在選出發地點是氣候「溫和」（`choose_start_site.tsv`）；`Drink` 在要塞上方資訊列（第 0 列）是存量「酒類」（`dwarfmode.tsv`，row 填 0），同畫面的工作名稱 `Drink` 是「喝」（`data/strings/jobs.tsv`）。同一個檔可以把同一個原文寫兩列：限定列的寫在前面，不限列的寫在後面（`dwarfmode.Info.CREATURES.tsv` 的 `Cat`：第 10 列的表頭排序鈕是「類」，其他列的動物名照英文）。
 - `en` 欄只寫 `*` 的列（譯文欄也寫 `*`）：這個畫面上單獨畫出、全小寫的字串一律照英文畫，不查字典；遊戲畫的只管單字，DFHack 畫的連以空白隔開的幾個字也算。冒險模式的交談選單（`dungeonmode.Conversation.tsv`）用它：每個選項下面的「關鍵字：」後面是搜尋框比對用的英文關鍵字（`greet hello listener`），翻成中文就搜不到；DFHack 的 launcher、控制面板、快捷鍵選單列的工具名與指令（`reveal`、`spectate toggle`）也要照英文。
-- 玩家取的名字（倉儲區、區域、活動區、小隊與小隊排程、制服、工作細項、公民的自訂職業）不用寫：引擎讀檔後每隔一陣子收一次（`lua/loader.lua` 的 `track_player_names`），照原文畫，不會被句型拆成「茂密的訓練」（小隊排程「Dense Training」）。和整句條目同字的（倉儲區「Gems」）照翻。
+- 玩家取的名字（倉儲區、區域、活動區、小隊與小隊排程、制服、工作細項、居民的自訂職業）不用寫：引擎讀檔後每隔一陣子收一次（`lua/loader.lua` 的 `track_player_names`），照原文畫，不會被句型拆成「茂密的訓練」（小隊排程「Dense Training」）。和整句條目同字的（倉儲區「Gems」）照翻。玩家在遊戲輸入框（庫存搜尋、傳說清單的篩選）打的字也不用管：引擎照原樣畫。
 - 暫停選單的配樂曲名（正在播放、上一首）寫在 `dwarfmode.Options.tsv`、`dungeonmode.Options.tsv`，`align` 填 `music`：設定視窗的「配樂曲名翻成中文」關著時照英文畫（全域條目會擋住大寫退回，石材用途清單的 `Dolomite` 也會變成英文，所以寫在依畫面譯文），開著時用譯文。曲名照字面翻，原生語言的字（`Koganusan`、`Roldeth`）照音譯表音譯；作曲者、插曲代號（`df9`、`stia`）照原文。
 
 ## 段落
@@ -154,7 +154,7 @@ raws 裡的生物、植物、材料、物品、身體部位名稱，以及執行
   | 植物 `X leaf`、`X flower`、`X seed`、`X spawn`（菌類） | X葉、X花、X種子、X菌種 |
 
 - 繁中用台灣通行的名稱，簡中用中國大陸通行的名稱，兩岸不同就各寫各的（酪梨／牛油果）。動植物、礦物有大眾熟悉的通行名時用通行名（奇異鳥、無尾熊、劍齒虎），沒有通行名、或通行名會指到別的物種時用正式中文名（加州鱝）。遊戲自創的生物照字面意思譯。
-- 寬度：名稱檔至少可用 6 格（三個中文字），因為短英文名的通行中文名多半是三個字（ogre 食人魔、kiwi 奇異鳥）；多出的格數可能貼到右邊的文字，實機看到再改。
+- 寬度：名稱檔至少可用 6 格（三個中文字），因為短英文名的通行中文名多半是三個字（ogre 食人魔、kiwi 奇異鳥）。單獨畫出、比原文寬時，整句貼圖開著會照字寬壓窄放進原文寬度（最多壓到九成）；關著時多出的格數可能貼到右邊的文字。別的檔裡只給佔位用（inner）的字，單獨畫出時要翻、又比原文寬，就改放名稱檔（`names_positions.tsv` 的 `lady`）。
 - 神造材料與神話物質（`faceted metal`、`motes of light`、`primal cloudstuff`、`curious jelly`）不在 raws 文字檔，是世界生成時 raws 的 Lua 產生器（`vanilla_procedural/scripts/generators/divine.lua`、`materials.lua`）從固定字表組的：全部組合整條寫進 `names_divine_materials.tsv`。神話遺物「形容詞＋領域名詞」，單字名詞加「之」（「原初之火」「原初雲質」）；療癒物質的 frozen、molten、boiling 照上表。
 
 ## 世界生成的名稱

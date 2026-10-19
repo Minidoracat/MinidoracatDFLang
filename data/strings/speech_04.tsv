@@ -33,12 +33,12 @@ I made a suggestion about work allocations in a meeting.	我在會議上對工�
 I requested that more weapons be produced in a meeting.	我在會議上要求多生產一些武器。	我在会议上要求多生产一些武器。		FUN_14066fe50 case 0x19：會面
 I yelled at somebody in charge.	我對負責人大吼了一頓。	我对负责人大吼了一顿。		FUN_14066fe50 case 0x19：會面
 I cried on somebody in charge.	我向負責人哭訴。	我向负责人哭诉。		FUN_14066fe50 case 0x19：會面
-I asked to become a citizen.	我申請成為公民。	我申请成为公民。		FUN_14066fe50 case 0x19：會面
+I asked to become a citizen.	我申請成為居民。	我申请成为居民。		FUN_14066fe50 case 0x19：會面
 I told somebody that I am being prevented from leaving.	我跟人說我被攔著不准離開。	我跟人说我被拦着不准离开。		FUN_14066fe50 case 0x19：會面
 I complained to my priest.	我向我的祭司抱怨。	我向我的祭司抱怨。		FUN_14066fe50 case 0x19：會面
 I cried on my priest.	我向我的祭司哭訴。	我向我的祭司哭诉。		FUN_14066fe50 case 0x19：會面
-I was yelled at by an unhappy citizen.	一位不滿的公民對我大吼。	一位不满的公民对我大吼。		FUN_14066fe50 case 0x1a：被會面
-I was cried on by an unhappy citizen.	一位不滿的公民向我哭訴。	一位不满的公民向我哭诉。		FUN_14066fe50 case 0x1a：被會面
+I was yelled at by an unhappy citizen.	一位不滿的居民對我大吼。	一位不满的居民对我大吼。		FUN_14066fe50 case 0x1a：被會面
+I was cried on by an unhappy citizen.	一位不滿的居民向我哭訴。	一位不满的居民向我哭诉。		FUN_14066fe50 case 0x1a：被會面
 A visitor complained about being prevented from leaving.	有位訪客抱怨被攔著不准離開。	有位访客抱怨被拦着不准离开。		FUN_14066fe50 case 0x1a：被會面
 I was yelled at by an unhappy worshipper.	一位不滿的信徒對我大吼。	一位不满的信徒对我大吼。		FUN_14066fe50 case 0x1a：被會面
 I was cried on by an unhappy worshipper.	一位不滿的信徒向我哭訴。	一位不满的信徒向我哭诉。		FUN_14066fe50 case 0x1a：被會面

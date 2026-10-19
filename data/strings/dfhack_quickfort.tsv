@@ -24,8 +24,8 @@ Baseline dig priority:	基準挖掘優先順序：	基准挖掘优先级：		DFH
 Add marker:	附加標記：	附加标记：		DFHack hack/scripts/gui/quickfort.lua L350 挖掘標記附加旗標（藍圖／潮濕／溫熱）
 Damp dig:	挖濕岩：	挖湿岩：		DFHack hack/scripts/gui/quickfort.lua L373 標記為可挖潮濕岩石（9 格放不下「潮濕挖掘：」）
 Warm dig:	挖熱岩：	挖热岩：		DFHack hack/scripts/gui/quickfort.lua L380 標記為可挖溫熱岩石（9 格放不下「溫熱挖掘：」）
-Down z-levels	向下各層	向下各层		DFHack hack/scripts/gui/quickfort.lua L394 重複方向選項
-Up z-levels	向上各層	向上各层		DFHack hack/scripts/gui/quickfort.lua L395 重複方向選項
+Down z-levels	向下各 Z 層	向下各 Z 层		DFHack hack/scripts/gui/quickfort.lua L394 重複方向選項
+Up z-levels	向上各 Z 層	向上各 Z 层		DFHack hack/scripts/gui/quickfort.lua L395 重複方向選項
 No transform	未變換	未变换		DFHack hack/scripts/gui/quickfort.lua L446 變換清單（WrappedLabel）沒有變換時
 Generate manager orders	產生工作指令	生成工作订单		DFHack hack/scripts/gui/quickfort.lua L452 按鍵說明；manager orders 即遊戲的工作指令；術語例外：manager
 Preview manager orders	預覽工作指令	预览工作订单		DFHack hack/scripts/gui/quickfort.lua L457 按鍵說明；manager orders 即遊戲的工作指令；術語例外：manager
@@ -60,7 +60,7 @@ When drawing boxes, makes right click cancel selection instead of exiting.	繪�
 gui/design Help	gui/design 說明	gui/design 帮助	c	DFHack hack/scripts/gui/design.lua L189 說明視窗標題
 Building filters	建築篩選條件	建筑筛选条件		DFHack hack/scripts/gui/design.lua L181 說明視窗（WrappedLabel）標題行
 Use the DFHack building planner to configure filters for the desired construction types. This tool will use the current buildingplan filters for a building type.	請用 DFHack 建築規劃器設定所需建築結構類型的篩選條件。本工具會沿用 buildingplan 目前對該建築類型的篩選設定。	请用 DFHack 建筑规划器为所需的建筑结构类型设置筛选条件。本工具会沿用 buildingplan 当前对该建筑类型的筛选设置。		DFHack hack/scripts/gui/design.lua L184 說明視窗（WrappedLabel）內文
-Clear entire z-level	清除整層	清除整层		DFHack hack/scripts/gui/design.lua L482 按鍵說明（移除標記模式）
+Clear entire z-level	清除整個 Z 層	清除整个 Z 层		DFHack hack/scripts/gui/design.lua L482 按鍵說明（移除標記模式）
 Stop placing points	停止放置點	停止放置点		DFHack hack/scripts/gui/design.lua L634 按鍵說明
 Start placing more points	開始放置更多點	开始放置更多点		DFHack hack/scripts/gui/design.lua L634 按鍵說明
 Add: N/A	新增：無	添加：无		DFHack hack/scripts/gui/design.lua L652-657 按鍵說明：沒有可加的額外點

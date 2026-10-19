@@ -27,7 +27,7 @@
 - **DFHack 視窗還有幾處英文**：開啟傳說模式的警告、GM 編輯器、設定管理員、交易時的道德警告（「你選了 3 件交易品」原本多一個「s」）、快速入門、暖濕挖掘設定，以及「所有出發警告都已略過。」這種作者手動斷成幾列的說明，現在是中文。
   > 技術要點：`install_label` 也在 Label 畫之前把每列只有一段字、以句末標點結尾的多列說明接回一段交給 `dh_wrap`，整段有譯文就依中文重新換行，查不到時每列照舊各自查。DFHack 另畫的複數 `s` 寫依畫面譯文、譯文一格空白（`dfhack.lua.caravan.trade.ethics.tsv`，align `c`）。gui/settings-manager 的 init 設定編輯器在 53.16-r2 的腳本第 877 行之後，不會執行，不翻。
 - **玩家自己取的名字被翻成怪中文**：小隊排程的「Dense Training」變成「茂密的訓練」，倉儲區、區域的名字也會被拆開翻。現在玩家取的名字照原樣顯示；和遊戲用語同字的（倉儲區取名「Gems」）照翻。
-  > 技術要點：讀檔後每 100 幀 `lua/loader.lua` 的 `track_player_names` 收倉儲區、區域、活動區、工作細項、警戒狀態、制服、公民自訂職業、小隊與小隊排程每月的名稱，交給新的 `engine.set_player_names`（`names::set_player_names`，內容沒變不動、換了回傳 true 就 `engine.refresh()` 清掉翻好的快取與段落計畫；世界卸載時送空的）；畫字時整段是玩家取的名字、又沒有同字的整句條目就照原文（`Dict::keeps_player_name`），佔位裡的也照抄。
+  > 技術要點：讀檔後每 100 幀 `lua/loader.lua` 的 `track_player_names` 收倉儲區、區域、活動區、工作細項、警戒狀態、制服、居民自訂職業、小隊與小隊排程每月的名稱，交給新的 `engine.set_player_names`（`names::set_player_names`，內容沒變不動、換了回傳 true 就 `engine.refresh()` 清掉翻好的快取與段落計畫；世界卸載時送空的）；畫字時整段是玩家取的名字、又沒有同字的整句條目就照原文（`Dict::keeps_player_name`），佔位裡的也照抄。
 - **擊殺紀錄照英文**：人物頁軍事分頁的「擊殺」清單（「Eléde Spinewood the elf, d. 255」）照英文。現在是「精靈Eléde 脊森林，255年歿」「在貿涉水擊殺三個哥布林（♂）」。
   > 技術要點：`data/rules/sentences_kills_fort.tsv` 的 `{1}, b. {#2} d. {#3}` 這類句型；「名字 the 種族」只在名字登記過時拆開（`Dict::name_then_title`，稱呼只收小寫字母、空白、連字號），沒登記的整段照英文。地點寫 `{^n}`，不會套到「Two dwarves in danger」這類一般句子。
 - **被遊戲截短的職業、綽號照英文**：物品頁「Owner: 名字, Stonecr...」、傳說模式分頁「原名, "英文名...」這種截在字中間的字串照英文。現在找唯一對得上的職業或登記過的名字補回、翻好後照原本的寬度截短；有兩個以上對得上（Stone… 可能是石雕匠或石匠）時照英文。
@@ -40,10 +40,20 @@
   > 技術要點：`Cat` 寫在 `dwarfmode.Info.CREATURES.tsv`、限定第 10 列（表頭），其他列的動物名 Cat 照英文；`verify_mod.py` 允許同一個依畫面譯文檔裡限定列與不限列的同一原文各一條。存檔清單的逗號在 `title.tsv`（存檔清單的焦點是 `title/Default`）。路程的數字是英文數字字（FUN_14052e360），句型 `{%1} days' travel`。職位名寫在 `data/screens/dwarfmode.tsv`；`positions_custom.tsv` 加 `{*1}, {_2}`。材料在 `data/rules/stockpile_materials.tsv`、`data/strings/stockpile_materials.tsv`，零件在 `instruments.tsv`。
 - **遊戲先切成好幾行才畫的長句照英文**：工坊任務提示框裡沒有空白可切的長條件（「Calcite/limestone/chalk/marble boulders」被切成只有「C」的第一行和兩段半個字）、世界地圖上據點的歷史、交易時交出或被奪神器時商人的話，只有一行的翻得到。現在這三種都接回整句再翻、依中文換行。
   > 技術要點：hook 三個切行迴圈（`engine/patterns.tsv` 的 `fn_tool_tip`、`fn_world_site_history`、`fn_trade_artifact_speech`；`hooks.rs` 的 `hook_tool_tip`、`hook_world_site_history`、`hook_trade_artifact_speech`）：提示框只接兩行以上的條件組（`tool_tip_groups`），據點歷史只在遊戲被迫切行的地方接（`plan_site_history`），兩者有單元測試。三者都還沒實機看過：提示框與世界地圖的據點要真滑鼠停留或點擊才出現（`dev_game.py` 的滑鼠做不到），交易神器的台詞沒找到畫字迴圈。
+- **輸入框打的字被翻成中文**：在庫存搜尋、傳說清單的篩選這類遊戲自己的輸入框打字，打出字典裡有的字（「Gems」、這個世界的書名「Gallows」）時，框裡的字變成中文（「寶石」「絞架」）。現在照打的字顯示。
+  > 技術要點：Lua 啟動時找出 `main_interface` 裡名字含 filter、search 或以 `_str` 結尾的字串欄位（遊戲的全域物件，位址整局不變），交給新的 `engine.set_typed_fields`；引擎每幀畫字前讀一次（`typed.rs`），畫到整段和輸入框的字相同的字串（含佔位抓到的片段）照原文。傳說清單的篩選在畫面物件裡，由 Lua 在傳說畫面每幀送內容（`engine.set_typed_text`）。清單裡剛好和打的字同字的那一列也照英文。
+- **工作指令條件的「Type」「Mat」「Adj」按鈕照英文**：這三個按鈕的英文畫在遊戲的圖裡。現在是「類型」「材料」「屬性」（簡中「类型」「材料」「属性」），按鈕的框照原樣。
+  > 技術要點：啟動與換語言時引擎照格子大小畫一張按鈕圖（原版 `interface_bits_work_orders.png` 放大、英文塗回底色、疊上中文，`image::work_order_buttons`）。遊戲畫這三個按鈕用自己記下的原版貼圖編號，改 `texpos_button_main` 或圖頁都沒效果，所以每幀畫完後在條件畫面的畫面緩衝區把原版編號換成本包的（`engine.set_tile_swaps`、`hooks.rs` 的 `swap_tiles`）。只在圖形模式；翻譯關掉時不換。
+- **關掉整句貼圖時名字常整段照英文**：設定裡關掉「整句貼圖」（每個中文字畫成兩格）時，音譯的名字、清單上的「名字，職業」常比英文寬，整段照英文（例「Kib Kolemal, Miner」）。現在放不下時改用壓窄的字，一字一格（「基布·科萊馬爾，礦工」）。
+  > 技術要點：字圖集每字多一張橫向壓窄、放進一格的窄字（`atlas::render`，排在透明記號後面，每字九張），`Dict::narrow` 組一字一格的譯文（字圖編號帶 `NARROW` 位）；只給名字與靠左的句型結果，整句貼圖開著時不用。
+- **單獨畫出的職位名「lady」照英文、三字的名稱蓋到旁邊的字**：「女領主」比原文寬，原本沒寫；名稱檔裡比英文寬的三字名（「食人魔」）會多畫兩格。現在整句貼圖開著時照字寬壓窄，放進原文的寬度。
+  > 技術要點：畫字時整句條目比原文寬、又不是照字寬縮短的，整句貼圖開著就照字寬壓窄（最多到九成，`Dict::squeezed_fixed`，結果依條目位址記下）；放不下或整句貼圖關著時照舊。`lady` 從 `events_14.tsv` 的 inner 移到新的 `data/strings/names_positions.tsv`（名稱檔可多到 6 格）。
 
 ### 變更
 
 - **DFHack 的 widget 統一譯成「元件」**：控制面板、說明文件裡原本「小工具」「元件」混用（簡中「小部件」「组件」），現在一律「元件／组件」。
+- **citizen 統一譯「居民」，resident 改譯「居留者」**：原本「公民」「居民」混用（79 處）；resident（請願留下的外人）原本也叫「居民」，和 citizen 撞字，改成「居留者」（「居民與居留者」「非居民、非居留者」）。citizenship 照舊「公民身分」。
+- **DFHack 說明文件的用語統一**：tick 一律「刻」、z-level「Z 層」、biome「生物群系」、Marker Mode「藍圖模式」；plugin「外掛／插件」、widget「元件／组件」、combat hardened「戰鬥麻木」核准成正式術語。
 
 ## [0.5.3] - 2026-10-18
 

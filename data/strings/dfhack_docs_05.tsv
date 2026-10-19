@@ -121,9 +121,9 @@ Register the specified race as a digging invader.	把指定種族登記為會挖
 Unregisters the specified race as a digging invader.	取消指定種族的挖掘入侵者登記。	取消指定种族的挖掘入侵者登记。		DFHack docs tools/diggingInvaders.txt
 Makes invaders try to dig now (if the plugin is enabled).	讓入侵者立刻試著挖掘（外掛已啟用時）。	让入侵者立即尝试挖掘（插件已启用时）。		DFHack docs tools/diggingInvaders.txt
 Clears the registry of digging invader races.	清空挖掘入侵者種族的登記。	清空挖掘入侵者种族的登记。		DFHack docs tools/diggingInvaders.txt
-Makes the pathfinding algorithm work on at most n edges per tick. Set to 0 or lower to make it unlimited.	讓尋路演算法每個 tick 最多處理 n 條邊。設成 0 或更小就不限制。	让寻路算法每个 tick 最多处理 n 条边。设为 0 或更小则不限制。		DFHack docs tools/diggingInvaders.txt
+Makes the pathfinding algorithm work on at most n edges per tick. Set to 0 or lower to make it unlimited.	讓尋路演算法每刻最多處理 n 條邊。設成 0 或更小就不限制。	让寻路算法每刻最多处理 n 条边。设为 0 或更小则不限制。		DFHack docs tools/diggingInvaders.txt
 Set the pathing cost per tile for a particular action. This determines what invaders consider to be the shortest path to their target.	設定某個動作每格的尋路成本。這決定入侵者認為哪條是通往目標的最短路徑。	设置某个动作每格的寻路成本。这决定入侵者认为哪条是通往目标的最短路径。		DFHack docs tools/diggingInvaders.txt
-Set the time cost (in ticks) for performing a particular action. This determines how long it takes for invaders to get to their target.	設定執行某個動作的時間成本（以 tick 計）。這決定入侵者要花多久才能抵達目標。	设置执行某个动作的时间成本（以 tick 计）。这决定入侵者要花多久才能抵达目标。		DFHack docs tools/diggingInvaders.txt
+Set the time cost (in ticks) for performing a particular action. This determines how long it takes for invaders to get to their target.	設定執行某個動作的時間成本（以刻計）。這決定入侵者要花多久才能抵達目標。	设置执行某个动作的时间成本（以刻计）。这决定入侵者要花多久才能抵达目标。		DFHack docs tools/diggingInvaders.txt
 Note that the race is case-sensitive. You can get a list of races for your world with this command:	注意種族要區分大小寫。用下面的指令可以取得你世界裡的種族清單：	注意种族区分大小写。用下面的命令可以获取你世界中的种族列表：		DFHack docs tools/diggingInvaders.txt；case-sensitive 是大小寫；術語例外：case
 but in general, the race is what you'd expect, just capitalized (e.g. "GOBLIN" or "ELF").	不過一般來說，種族名就是全大寫的英文（例如哥布林是 "GOBLIN"、精靈是 "ELF"）。	不过一般来说，种族名就是全大写的英文（例如哥布林是 "GOBLIN"、精灵是 "ELF"）。		DFHack docs tools/diggingInvaders.txt；in general 是「一般來說」；術語例外：general
 Actions:	動作：	动作：		DFHack docs tools/diggingInvaders.txt

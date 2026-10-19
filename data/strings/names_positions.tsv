@@ -1,0 +1,2 @@
+en	zh-Hant	zh-Hans	align	note
+lady	女領主	女领主		職位名 lord 的女性（entity_position 的 name_female，raws 與執行檔的程序生成職位）；原本只給佔位用（events_14.tsv 的 inner），要塞清單上單獨畫出時照英文。譯名比原文寬：放名稱檔（可用 6 格），整句貼圖開著時照字寬壓窄放進原文 4 格（hooks.rs 的 translate_call），關著時多畫兩格

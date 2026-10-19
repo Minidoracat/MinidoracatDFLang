@@ -60,10 +60,10 @@ Dumps loose items in the selected cage, including any tamed/untamed vermin.	傾�
 Live tame (pets) and untamed vermin are considered items by the game. They are normally excluded from dumping since that risks them escaping or dying from your cats. Use these options to dump them anyway.	遊戲把活著的已馴服（寵物）與未馴服害蟲當成物品。平常不會傾倒牠們，因為牠們可能逃走或被你的貓咬死。用這些選項就能照樣傾倒。	游戏把活着的已驯服（宠物）和未驯服害虫当成物品。平常不会倾倒它们，因为它们可能逃走或被你的猫咬死。用这些选项就能照样倾倒。		DFHack docs tools/stripcaged.txt
 Items to be marked for dumping are unforbidden by default. Use this option to instead only act on unforbidden items, and leave forbidden items forbidden. This allows you to, for example, manually unforbid high-value items from the stocks menu (like steel) and then have "stripcaged" just act on the unforbidden items.	預設會把要標記傾倒的物品解除禁用。用這個選項就只處理未禁用的物品，已禁用的維持禁用。例如你可以先在庫存選單手動解除禁用高價物品（像鋼），再讓 "stripcaged" 只處理未禁用的物品。	默认会把要标记倾倒的物品解除禁用。用这个选项就只处理未禁用的物品，已禁用的保持禁用。例如你可以先在库存菜单手动解除禁用高价值物品（如钢），再让 "stripcaged" 只处理未禁用的物品。		DFHack docs tools/stripcaged.txt
 Select a dwarf in-game and run this tool to make them super fast. They will complete tasks instantly and never need to rest.	在遊戲中選一個矮人再執行這個工具，就能讓他變得超快。他會瞬間完成工作，也永遠不需要休息。	在游戏中选一个矮人再运行这个工具，就能让他变得超快。他会瞬间完成工作，也永远不需要休息。		DFHack docs tools/superdwarf.txt
-Sets each action timer every tick to 1, effectively giving all actions such as work, movement, combat, etc. no cooldown.	每個 tick 把每個動作計時器設為 1，等於讓工作、移動、戰鬥等所有動作都沒有冷卻時間。	每个 tick 把每个动作计时器设为 1，相当于让工作、移动、战斗等所有动作都没有冷却时间。		DFHack docs tools/superdwarf.txt
+Sets each action timer every tick to 1, effectively giving all actions such as work, movement, combat, etc. no cooldown.	每刻把每個動作計時器設為 1，等於讓工作、移動、戰鬥等所有動作都沒有冷卻時間。	每刻把每个动作计时器设为 1，相当于让工作、移动、战斗等所有动作都没有冷却时间。		DFHack docs tools/superdwarf.txt
 Give superspeed to selected creature.	讓所選生物獲得超級速度。	让所选生物获得超级速度。		DFHack docs tools/superdwarf.txt
 Give superspeed to a creature by its unit ID.	依單位 ID 讓生物獲得超級速度。	按单位 ID 让生物获得超级速度。		DFHack docs tools/superdwarf.txt
-Give superspeed to all of your citizens.	讓你的所有公民獲得超級速度。	让你的所有公民获得超级速度。		DFHack docs tools/superdwarf.txt
+Give superspeed to all of your citizens.	讓你的所有居民獲得超級速度。	让你的所有居民获得超级速度。		DFHack docs tools/superdwarf.txt
 Remove superspeed from selected creature.	移除所選生物的超級速度。	移除所选生物的超级速度。		DFHack docs tools/superdwarf.txt
 Remove superspeed to a creature by its unit ID.	依單位 ID 移除生物的超級速度。	按单位 ID 移除生物的超级速度。		DFHack docs tools/superdwarf.txt
 Remove superspeed from all creatures.	移除所有生物的超級速度。	移除所有生物的超级速度。		DFHack docs tools/superdwarf.txt

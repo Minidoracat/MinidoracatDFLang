@@ -66,12 +66,12 @@ Minecarts:	礦車：	矿车：		DFHack hack/scripts/machine-toggle.lua L255 壓�
 Min Weight:	最小重量：	最小重量：		DFHack hack/scripts/machine-toggle.lua L266/L309 壓力板 overlay
 Max Weight:	最大重量：	最大重量：		DFHack hack/scripts/machine-toggle.lua L276/L319 壓力板 overlay
 Creatures:	生物：	生物：		DFHack hack/scripts/machine-toggle.lua L287 壓力板 overlay
-Citizens:	公民：	公民：		DFHack hack/scripts/machine-toggle.lua L298 壓力板 overlay
+Citizens:	居民：	居民：		DFHack hack/scripts/machine-toggle.lua L298 壓力板 overlay
 State:	狀態：	状态：		DFHack hack/scripts/machine-toggle.lua L366 齒輪組 overlay 開關
 Teleport	傳送	传送	c	DFHack hack/scripts/gui/teleport.lua L34 視窗標題（置中，前後兩個空白由引擎照原文補）
 Draw boxes around units to select	框選單位以選取	框住单位来选择		DFHack hack/scripts/gui/teleport.lua L246 說明（WrappedLabel，未選取單位時）
 Teleport units to mouse cursor	將單位傳送到滑鼠游標處	将单位传送到鼠标光标处		DFHack hack/scripts/gui/teleport.lua L63 按鈕
-Include citizen units	包含公民單位	包含公民单位		DFHack hack/scripts/gui/teleport.lua L77 開關（原文 "Include citizen units "）
+Include citizen units	包含居民單位	包含居民单位		DFHack hack/scripts/gui/teleport.lua L77 開關（原文 "Include citizen units "）
 Include friendly units	包含友方單位	包含友方单位		DFHack hack/scripts/gui/teleport.lua L85 開關
 Include hostile units	包含敵對單位	包含敌对单位		DFHack hack/scripts/gui/teleport.lua L93 開關（原文 "Include hostile units "）
 No selected units	未選取單位	未选择单位		DFHack hack/scripts/gui/teleport.lua L106
@@ -112,7 +112,7 @@ Body appearance editor	身體外觀編輯器	身体外观编辑器		DFHack hack/
 : randomise selected	: 隨機化選取項	: 随机化所选项		DFHack hack/scripts/internal/gm-unit/editor_body.lua L172、editor_orientation.lua L61 按鍵提示
 : select feature	: 選擇特徵	: 选择特征		DFHack hack/scripts/internal/gm-unit/editor_body.lua L271 按鍵提示
 Enter new value:	輸入新數值：	输入新数值：		DFHack hack/scripts/internal/gm-unit/editor_body.lua L54、editor_counters.lua L61 輸入框說明
-Stranded citizen warning	受困公民警告	受困公民警告	c	DFHack hack/scripts/warn-stranded.lua L217 視窗標題（置中，前後兩個空白由引擎照原文補）
+Stranded citizen warning	受困居民警告	受困居民警告	c	DFHack hack/scripts/warn-stranded.lua L217 視窗標題（置中，前後兩個空白由引擎照原文補）
 Select to zoom to unit. Double click to toggle unit ignore. Shift double click to toggle a group.	選取以跳到該單位。連按兩下切換是否忽略該單位。按住 Shift 連按兩下切換整個群組。	选择以跳转到该单位。双击切换是否忽略该单位。按住 Shift 双击切换整个群组。		DFHack hack/scripts/warn-stranded.lua L233 WrappedLabel
 Toggle ignore	切換忽略	切换忽略		DFHack hack/scripts/warn-stranded.lua L238 按鈕
 Toggle group	切換群組	切换群组		DFHack hack/scripts/warn-stranded.lua L245 按鈕

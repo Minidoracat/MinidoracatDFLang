@@ -155,10 +155,11 @@ const LABEL_RAISE_PER_CELL: f32 = 2.0 / 16.0;
 
 /// 字圖集：前 2n 張是每字左右兩格；之後每字四張（2n + 4i 起：上列左、上列右、下列左、下列右）是同一個字往下位移半格、
 /// 跨在兩列中間的樣子，遊戲畫半格位移的文字時，上列格子標 TOP_OF_TEXT、下列標 BOTTOM_OF_TEXT（見 hooks.rs paint）；
-/// 再來每字兩張（6n + 2i 起）是錨定貼圖標籤用的小一號字；最後一張（8n）全透明，是整句貼圖排段落時佔位格的記號（見 Dict::marker）。
+/// 再來每字兩張（6n + 2i 起）是錨定貼圖標籤用的小一號字；第 8n 張全透明，是整句貼圖排段落時佔位格的記號（見 Dict::marker）；
+/// 最後每字一張（8n + 1 + i）是橫向壓窄、放進一格的窄字（整句貼圖關著時名字放不下用，見 Dict::narrow）。
 pub fn render(fonts: &[Font], chars: &[char], cell_w: usize, cell_h: usize, out: &Path) -> Result<Report, String> {
     let n = chars.len();
-    let tiles = n * 8 + 1;
+    let tiles = n * 9 + 1;
     let width = TILES_PER_ROW.min(tiles.max(2)) * cell_w;
     let height = tiles.div_ceil(TILES_PER_ROW).max(1) * cell_h;
     let mut rgba = vec![0u8; width * height * 4];
@@ -168,18 +169,19 @@ pub fn render(fonts: &[Font], chars: &[char], cell_w: usize, cell_h: usize, out:
     let box_w = cell_w * 2;
     let dy = -(cell_h as f32 * RAISE_PER_CELL).round();
     let label_dy = -(cell_h as f32 * LABEL_RAISE_PER_CELL).round();
-    // 遮罩 (sx, sy) 起一格大小的區塊寫進第 tile 張貼圖
-    let mut put = |tile: usize, mask: &[u8], sx: usize, sy: usize| {
+    // 遮罩（每列 stride 像素）(sx, sy) 起一格大小的區塊寫進第 tile 張貼圖
+    let mut put = |tile: usize, mask: &[u8], stride: usize, sx: usize, sy: usize| {
         let (tx, ty) = (tile % TILES_PER_ROW * cell_w, tile / TILES_PER_ROW * cell_h);
         for y in 0..cell_h {
             for x in 0..cell_w {
                 let o = ((ty + y) * width + tx + x) * 4;
-                rgba[o..o + 4].copy_from_slice(&[255, 255, 255, alpha[mask[(sy + y) * box_w + sx + x] as usize]]);
+                rgba[o..o + 4].copy_from_slice(&[255, 255, 255, alpha[mask[(sy + y) * stride + sx + x] as usize]]);
             }
         }
     };
 
     let mut mask = vec![0u8; box_w * cell_h * 2];
+    let mut narrow = vec![0u8; cell_w * cell_h];
     let mut missing = Vec::new();
     for (i, &ch) in chars.iter().enumerate() {
         if !glyphs.draw(ch, box_w, cell_h, dy, &mut mask)? {
@@ -187,19 +189,23 @@ pub fn render(fonts: &[Font], chars: &[char], cell_w: usize, cell_h: usize, out:
             continue;
         }
         for half in 0..2 {
-            put(2 * i + half, &mask, half * cell_w, 0);
+            put(2 * i + half, &mask, box_w, half * cell_w, 0);
         }
         // 兩列高的方框置中＝一般位置往下移半格
         glyphs.draw(ch, box_w, cell_h * 2, dy, &mut mask)?;
         for row in 0..2 {
             for half in 0..2 {
-                put(2 * n + 4 * i + 2 * row + half, &mask, half * cell_w, row * cell_h);
+                put(2 * n + 4 * i + 2 * row + half, &mask, box_w, half * cell_w, row * cell_h);
             }
         }
         small.draw(ch, box_w, cell_h, label_dy, &mut mask)?;
         for half in 0..2 {
-            put(6 * n + 2 * i + half, &mask, half * cell_w, 0);
+            put(6 * n + 2 * i + half, &mask, box_w, half * cell_w, 0);
         }
+        // 窄字：字寬壓到一格（左右各留半像素），字高不變
+        let kx = ((cell_w as f32 - 1.0) / glyphs.advance(ch).unwrap_or(cell_h as f32)).min(1.0);
+        glyphs.draw_scaled(ch, kx, cell_w, cell_h, dy, &mut narrow)?;
+        put(8 * n + 1 + i, &narrow, cell_w, 0, 0);
     }
 
     crate::image::write_png(out, width, height, &rgba)?;

@@ -15,15 +15,15 @@ Completely heal the currently selected unit.	完全治癒目前選取的單位�
 Completely heal the unit with the given ID.	完全治癒指定 ID 的單位。	完全治愈指定 ID 的单位。		DFHack docs tools/full-heal.txt
 Heal the unit, raising from the dead if needed. If "--keep_corpse" is specified, don't remove their corpse. The unit can be targeted by selecting its corpse in the UI.	治癒單位，必要時使其起死回生。如果指定 "--keep_corpse"，就不移除屍體。可以在介面上選取屍體來指定這個單位。	治愈单位，必要时使其起死回生。如果指定了 "--keep_corpse"，就不移除尸体。可以在界面中选中尸体来指定该单位。		DFHack docs tools/full-heal.txt
 Heal all units on the map, optionally resurrecting them if dead.	治癒地圖上的所有單位，也可以選擇讓死者復活。	治愈地图上的所有单位，还可以选择让死者复活。		DFHack docs tools/full-heal.txt
-Heal all fortress citizens and residents on the map. Does not include pets.	治癒地圖上所有要塞公民與居民，不含寵物。	治愈地图上所有要塞公民和居民，不包括宠物。		DFHack docs tools/full-heal.txt
+Heal all fortress citizens and residents on the map. Does not include pets.	治癒地圖上所有要塞居民與居留者，不含寵物。	治愈地图上所有要塞居民和居留者，不包括宠物。		DFHack docs tools/full-heal.txt
 Heal all units belonging to your parent civilization, including pets and visitors.	治癒所有屬於你母文明的單位，包括寵物與訪客。	治愈所有属于你母文明的单位，包括宠物和访客。		DFHack docs tools/full-heal.txt
 Fully heal unit 23273. If this unit was dead, it will be resurrected without removing the corpse - creepy!	完全治癒單位 23273。如果這個單位已經死亡，會在不移除屍體的情況下復活——毛骨悚然！	完全治愈单位 23273。如果该单位已经死亡，会在不移除尸体的情况下复活——毛骨悚然！		DFHack docs tools/full-heal.txt
 If you have to repeatedly use full-heal on a dwarf only to have that dwarf's syndrome return seconds later, then it's likely because said dwarf still has a syndrome-causing residue on their body. To deal with this, either use "clean units" to decontaminate the dwarf or let a hospital worker wash the residue off the dwarf and THEN do a full-heal. Syndromes like Beast Sickness and Demon Sickness can by VERY NASTY, causing maladies like tissue necrosis.	如果你對某個矮人一再使用 full-heal，沒幾秒病症又回來，很可能是那個矮人身上還沾著會引發病症的殘留物。要處理這個問題，可以用 "clean units" 幫矮人除汙，或讓醫院的工作人員洗掉矮人身上的殘留物，之後再執行 full-heal。巨獸病和惡魔病這類病症可能非常嚴重，會引起組織壞死等疾患。	如果你对某个矮人反复使用 full-heal，没过几秒病症又回来了，很可能是因为这个矮人身上还沾着会引发病症的残留物。要解决这个问题，可以用 "clean units" 为矮人去污，或者让医院的工作人员洗掉矮人身上的残留物，然后再执行 full-heal。巨兽病和恶魔病这类病症可能非常严重，会引起组织坏死等疾病。		DFHack docs tools/full-heal.txt
 "gaydar" is useful for social engineering or checking the viability of livestock breeding programs.	"gaydar" 可用於社交安排，或檢查牲畜繁殖計畫是否可行。	"gaydar" 可用于社交安排，或检查牲畜繁殖计划是否可行。		DFHack docs tools/gaydar.txt
 Show sexual orientation of the selected unit.	顯示選取單位的性傾向。	显示选中单位的性取向。		DFHack docs tools/gaydar.txt
-Identify asexual citizens and residents.	找出無性戀的公民與居民。	找出无性恋的公民和居民。		DFHack docs tools/gaydar.txt
+Identify asexual citizens and residents.	找出無性戀的居民與居留者。	找出无性恋的居民和居留者。		DFHack docs tools/gaydar.txt
 Selects every creature on the map.	選取地圖上的所有生物。	选择地图上的所有生物。		DFHack docs tools/gaydar.txt
-Selects fort citizens and residents.	選取要塞的公民與居民。	选择要塞的公民和居民。		DFHack docs tools/gaydar.txt
+Selects fort citizens and residents.	選取要塞的居民與居留者。	选择要塞的居民和居留者。		DFHack docs tools/gaydar.txt
 Selects all named units on the map.	選取地圖上所有有名字的單位。	选择地图上所有有名字的单位。		DFHack docs tools/gaydar.txt
 Only creatures who are not strictly straight.	只選並非純異性戀的生物。	只选并非纯异性恋的生物。		DFHack docs tools/gaydar.txt
 Only creatures who are strictly gay.	只選純同性戀的生物。	只选纯同性恋的生物。		DFHack docs tools/gaydar.txt
@@ -144,7 +144,7 @@ The "count" action counts up the items that are matched by the given filter opti
 The (optional) search string will filter by the item description. It will be interpreted as a Lua pattern, so any special regular expression characters (like "-") will need to be escaped with "%" (e.g. "%-") to be interpreted as a literal string. See https://www.lua.org/manual/5.3/manual.html#6.4.1 for details. For example "cave spider silk" will match both "cave spider silk web" and "cave spider silk cloth". Use "^pattern$" to match the entire description.	搜尋字串（可省略）會依物品描述篩選。它會被當成 Lua pattern 解讀，所以任何正規表示式特殊字元（例如 "-"）都要用 "%" 跳脫（例如 "%-"），才會被當成一般字串。詳見 https://www.lua.org/manual/5.3/manual.html#6.4.1。例如 "cave spider silk" 會同時符合 "cave spider silk web" 和 "cave spider silk cloth"。用 "^pattern$" 可以比對整個描述。	搜索字符串（可选）会按物品描述筛选。它会被当作 Lua 模式解释，因此任何正则表达式特殊字符（例如 "-"）都需要用 "%" 转义（例如 "%-"），才会被当作普通字符串。详见 https://www.lua.org/manual/5.3/manual.html#6.4.1。例如 "cave spider silk" 会同时匹配 "cave spider silk web" 和 "cave spider silk cloth"。用 "^pattern$" 可以匹配整个描述。		DFHack docs tools/item.txt；術語例外：silk；搜尋範例字串照原文
 Scan your stocks for (unowned) items that contain the word "steel" and print out the counts for each steel item found.	在庫存中搜尋含有 "steel" 一詞的（無主）物品，並輸出找到的每種鋼製物品的數量。	在库存中搜索包含 "steel" 一词的（无主）物品，并输出找到的每种钢制物品的数量。		DFHack docs tools/item.txt
 Scan your stocks for (unowned) items that contain the word "steel" and print out the descriptions of the matched items and the counts, grouped by item type.	在庫存中搜尋含有 "steel" 一詞的（無主）物品，並輸出符合物品的描述與數量，依物品類型分組。	在库存中搜索包含 "steel" 一词的（无主）物品，并输出匹配物品的描述和数量，按物品类型分组。		DFHack docs tools/item.txt
-Forbid all items that cannot be reached by any of your citizens.	禁用所有你的公民都到不了的物品。	禁用所有你的公民都无法到达的物品。		DFHack docs tools/item.txt
+Forbid all items that cannot be reached by any of your citizens.	禁用所有你的居民都到不了的物品。	禁用所有你的居民都无法到达的物品。		DFHack docs tools/item.txt
 Unforbid/reclaim all logs inside the burrow named "Cavern1" (Hint: use 3D flood-fill to create a burrow covering an entire cavern layer).	解除禁用／取回名為 "Cavern1" 的活動區內所有原木（提示：用 3D 填滿建立涵蓋整個洞穴層的活動區）。	解除禁用/取回名为 "Cavern1" 的活动区内所有原木（提示：用 3D 填充创建覆盖整个洞穴层的活动区）。		DFHack docs tools/item.txt
 Designate all steel weapons whose core quality is at most superior for melting.	把核心品質最高為上等的所有鋼製武器標示為熔化。	将核心品质最高为上等的所有钢制武器标记为熔化。		DFHack docs tools/item.txt
 Hide all scattered boulders, i.e. those that are not in stockpiles.	隱藏所有散落的石塊，也就是不在倉儲區裡的石塊。	隐藏所有散落的石块，即不在储物区里的石块。		DFHack docs tools/item.txt
@@ -155,8 +155,8 @@ Include artifacts in the item list. Regardless of this setting, artifacts are ne
 Include items owned by units (e.g., your dwarves or visitors)	納入單位擁有的物品（例如你的矮人或訪客）	包括单位拥有的物品（例如你的矮人或访客）		DFHack docs tools/item.txt
 Only include items inside the given burrow.	只納入指定活動區內的物品。	只包括指定活动区内的物品。		DFHack docs tools/item.txt
 Only include items outside the given burrow.	只納入指定活動區外的物品。	只包括指定活动区外的物品。		DFHack docs tools/item.txt
-Only include items reachable by one of your citizens.	只納入你的公民到得了的物品。	只包括你的公民能到达的物品。		DFHack docs tools/item.txt
-Only include items not reachable by any of your citizens.	只納入你的公民都到不了的物品。	只包括你的公民都无法到达的物品。		DFHack docs tools/item.txt
+Only include items reachable by one of your citizens.	只納入你的居民到得了的物品。	只包括你的居民能到达的物品。		DFHack docs tools/item.txt
+Only include items not reachable by any of your citizens.	只納入你的居民都到不了的物品。	只包括你的居民都无法到达的物品。		DFHack docs tools/item.txt
 Filter by item type (e.g., BOULDER, CORPSE, ...). Also accepts lower case spelling (e.g. "corpse"). Use ":lua @df.item_type" to get the list of all item types.	依物品類型篩選（例如 BOULDER、CORPSE…）。也接受小寫拼法（例如 "corpse"）。用 ":lua @df.item_type" 取得所有物品類型的清單。	按物品类型筛选（例如 BOULDER、CORPSE…）。也接受小写拼写（例如 "corpse"）。用 ":lua @df.item_type" 获取所有物品类型的列表。		DFHack docs tools/item.txt；術語例外：case、Boulder；lower case 指小寫，BOULDER 是 raw token 照原文
 Filter by material the item is made out of (e.g., "iron").	依物品的材料篩選（例如 "iron"）。	按物品的材料筛选（例如 "iron"）。		DFHack docs tools/item.txt
 Filter by material category of the material item is made out of (e.g., "metal"). Use ":lua @df.dfhack_material_category" to get a list of all material categories.	依物品材料的材料類別篩選（例如 "metal"）。用 ":lua @df.dfhack_material_category" 取得所有材料類別的清單。	按物品材料的材料类别筛选（例如 "metal"）。用 ":lua @df.dfhack_material_category" 获取所有材料类别的列表。		DFHack docs tools/item.txt

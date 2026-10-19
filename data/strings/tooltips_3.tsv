@@ -1,6 +1,6 @@
 en	zh-Hant	zh-Hans	align	note
 Toggle whether this creature will receive hunting training.  Hunting animals can move stealthfully during hunts.	切換此生物是否接受狩獵訓練。狩獵動物在狩獵時能潛行移動。	切换该生物是否接受狩猎训练。狩猎动物在狩猎时能潜行移动。		生物資訊頁：狩獵訓練切換鈕
-Toggle whether this creature is available as a pet for any interested citizen or resident.	切換此生物是否開放給任何有興趣的公民或居民收養為寵物。	切换该生物是否可供任何感兴趣的公民或居民收养为宠物。		同上
+Toggle whether this creature is available as a pet for any interested citizen or resident.	切換此生物是否開放給任何有興趣的居民或居留者收養為寵物。	切换该生物是否可供任何感兴趣的居民或居留者收养为宠物。		同上
 This creature is ecstatic right now.	此生物目前欣喜若狂。	该生物现在欣喜若狂。		生物資訊頁：心情狀態圖示
 This creature is happy right now.	此生物目前很快樂。	该生物现在很快乐。		同上
 This creature is pleased right now.	此生物目前心情愉快。	该生物现在心情愉快。		同上
@@ -30,8 +30,8 @@ This type is allowed to be cooked.	此類型允許用於烹飪。	该类型允�
 Open the announcements screen.	開啟通知畫面。	打开通知界面。		工具列：通知按鈕
 Rename this location.	重新命名此場所。	重命名该场所。		場所資訊：存取權限選項
 This option allows visitors from outside the fortress to enter this location.	此選項允許要塞外的訪客進入此場所。	该选项允许要塞外的访客进入该场所。		同上
-This option allows long-term residents of the fortress to enter this location.	此選項允許要塞的長期居民進入此場所。	该选项允许要塞的长期居民进入该场所。		同上
-This option indicates that the location is only open to fortress citizens.	此選項表示此場所只對要塞公民開放。	该选项表示该场所只对要塞公民开放。		同上
+This option allows long-term residents of the fortress to enter this location.	此選項允許要塞的長期居留者進入此場所。	该选项允许要塞的长期居留者进入该场所。		同上
+This option indicates that the location is only open to fortress citizens.	此選項表示此場所只對要塞居民開放。	该选项表示该场所只对要塞居民开放。		同上
 This option indicates that the location is only open to members.	此選項表示此場所只對成員開放。	该选项表示该场所只对成员开放。		同上
 Remove this worker from this occupation.	解除此工人的這項職業。	解除该工人的这项职业。		同上
 Set the camera to follow this item.	視角跟隨此物品。	镜头跟随该物品。		物品資訊頁

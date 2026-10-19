@@ -126,8 +126,8 @@ Appraiser	估價師	估价师	skill	draft		技能／職業名
 Organizer	組織者	组织者	skill	draft		技能／職業名
 Record Keeper	記錄員	记录员	skill	draft		技能／職業名
 Conversationalist	健談者	健谈者	skill	draft		社交技能職業名
-citizen	公民	公民	title	draft		embark.tsv 的 Citizens／Your Citizens、tutorial 的 Citizens 按鈕和多段說明都譯「居民」
-resident	居民	居民	title	approved		Resident(s) 都指要塞居民；現有條目繁簡全部相符
+citizen	居民	居民	title	approved		遊戲 Info 分頁標題「居民」；2026-10-19 使用者決定 citizen(s) 一律譯「居民」，公民只留給 citizenship 等不同概念
+resident	居留者	居留者	title	approved		居留身分（DFHack 篩選、non-citizen, non-resident 等要和 citizen 分開）；2026-10-19 citizen 改用居民，resident 改譯居留者以免撞字；泛指住民的 residents（指南、教學）在 note 標術語例外
 administrator	管理者	管理人员	title	approved		只有職位一種意思；現有條目繁簡全部相符
 noble	貴族	贵族	title	draft		形容詞：「this noble quest」「such a noble pursuit」是高尚的意思
 manager	經理	经理	title	approved		只有職位一種意思
@@ -334,10 +334,10 @@ Downward Stairway	下行樓梯	下行楼梯	game	approved
 Up/Down Stairway	上下樓梯	上下楼梯	game	approved		
 Upward Slope	上坡	上坡	game	approved		地圖游標（silt Upward Slope 粉砂上坡）
 Downward Slope	下坡	下坡	game	approved		
-plugin	外掛	插件	ui	draft		DFHack 的外掛程式（說明文件、控制面板）；指令名照英文
-tick	刻	刻	game	draft		遊戲時間單位（DFHack 說明文件）；指令參數裡的 tick 照英文
-biome	生物群系	生物群系	game	draft		地區的生態類型（DFHack 說明文件；少數舊譯「生態域」）
-z-level	Z 層	Z 层	game	draft		地圖的高度層（DFHack 說明文件）
-widget	元件	组件	ui	draft		DFHack 的 overlay 元件（控制面板、說明文件）；2026-10-19 從「小工具／小部件」統一
-combat hardened	戰鬥麻木	战斗麻木	game	draft		看慣戰鬥、不再因死亡受壓力的性格狀態（DFHack 說明文件）
-Marker Mode	藍圖模式	蓝图模式	ui	draft		建造標記成藍圖、不派工的模式（DFHack 說明文件、quickfort）
+plugin	外掛	插件	ui	approved		DFHack 的外掛程式（說明文件、控制面板）；指令名照英文
+tick	刻	刻	game	approved		遊戲時間單位（DFHack 說明文件）；指令參數裡的 tick 照英文
+biome	生物群系	生物群系	game	approved		地區的生態類型（DFHack 說明文件；少數舊譯「生態域」）
+z-level	Z 層	Z 层	game	approved		地圖的高度層（DFHack 說明文件）
+widget	元件	组件	ui	approved		DFHack 的 overlay 元件（控制面板、說明文件）；2026-10-19 從「小工具／小部件」統一
+combat hardened	戰鬥麻木	战斗麻木	game	approved		看慣戰鬥、不再因死亡受壓力的性格狀態（DFHack 說明文件）
+Marker Mode	藍圖模式	蓝图模式	ui	approved		建造標記成藍圖、不派工的模式（DFHack 說明文件、quickfort）

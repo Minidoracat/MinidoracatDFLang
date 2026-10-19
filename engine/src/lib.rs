@@ -23,6 +23,7 @@ pub mod names;
 mod overlay;
 mod scan;
 mod translit;
+mod typed;
 
 use std::collections::HashMap;
 use std::ffi::{c_int, CStr};
@@ -62,6 +63,10 @@ pub unsafe extern "C" fn luaopen_dflang(l: lua::State) -> c_int {
         lua::set_fn(l, c"note_native", note_native);
         lua::set_fn(l, c"set_titles", set_titles);
         lua::set_fn(l, c"set_player_names", set_player_names);
+        lua::set_fn(l, c"set_typed_fields", set_typed_fields);
+        lua::set_fn(l, c"set_typed_text", set_typed_text);
+        lua::set_fn(l, c"render_buttons", render_buttons);
+        lua::set_fn(l, c"set_tile_swaps", set_tile_swaps);
         lua::set_fn(l, c"dfhack_export", dfhack_export);
         lua::set_fn(l, c"load_translit", load_translit);
         lua::set_fn(l, c"set_translit", set_translit);
@@ -427,6 +432,48 @@ unsafe extern "C" fn set_player_names(l: lua::State) -> c_int {
     }
 }
 
+/// set_typed_fields(位址，以空白分隔的十進位數字)：遊戲 main_interface 裡輸入框的 std::string 位址，引擎每幀讀裡面的字，
+/// 畫到和它相同的字串就照原樣畫（見 typed.rs）。回傳收下幾個
+unsafe extern "C" fn set_typed_fields(l: lua::State) -> c_int {
+    unsafe {
+        let Some(list) = lua::arg_str(l, 1) else { return fail(l, "set_typed_fields: expects a string") };
+        let addrs: Option<Vec<usize>> = list.split_ascii_whitespace().map(|a| a.parse().ok().filter(|&a| a != 0)).collect();
+        let Some(addrs) = addrs else { return fail(l, "set_typed_fields: addresses must be non-zero integers") };
+        lua::push_int(l, addrs.len() as i64);
+        typed::set_fields(addrs);
+        1
+    }
+}
+
+/// set_typed_text(字)：畫面物件裡的輸入框（傳說清單的篩選）現在的字，空字串是沒有（見 typed.rs）
+unsafe extern "C" fn set_typed_text(l: lua::State) -> c_int {
+    unsafe {
+        match lua::arg_bytes(l, 1) {
+            Some(text) => {
+                typed::set_extra(text);
+                0
+            }
+            None => fail(l, "set_typed_text: expects a string"),
+        }
+    }
+}
+
+/// set_tile_swaps(gps 位址, 焦點開頭, "原版 本包 原版 本包 …")：焦點以它開頭的畫面上，每幀畫完後把畫面緩衝區裡的原版貼圖編號
+/// 換成本包的（工作指令條件的圖形按鈕，見 hooks::swap_tiles）；清單空的是不換。回傳收下幾對
+unsafe extern "C" fn set_tile_swaps(l: lua::State) -> c_int {
+    unsafe {
+        let (Some(gps), Some(focus), Some(list)) = (lua::arg_int(l, 1), lua::arg_str(l, 2), lua::arg_str(l, 3)) else {
+            return fail(l, "set_tile_swaps: expects (gps, focus, pairs)");
+        };
+        let nums: Option<Vec<i32>> = list.split_ascii_whitespace().map(|n| n.parse().ok()).collect();
+        let Some(nums) = nums.filter(|n| n.len() % 2 == 0) else { return fail(l, "set_tile_swaps: pairs must be integers in pairs") };
+        let map: Vec<(i32, i32)> = nums.chunks_exact(2).map(|p| (p[0], p[1])).collect();
+        lua::push_int(l, map.len() as i64);
+        hooks::set_tile_swaps(gps as usize, focus.to_owned(), map);
+        1
+    }
+}
+
 /// dfhack_export(名稱) → dfhack.dll 匯出函式的位址（匯出名，或 C++ 修飾名的開頭，如 `MTB_set_width@Gui@DFHack`）；找不到時 nil。
 /// 給 DFHack 自己的、不經遊戲函式的排版（dfhack.gui.showPopupAnnouncement 的彈出視窗）掛 hook
 unsafe extern "C" fn dfhack_export(l: lua::State) -> c_int {
@@ -597,8 +644,34 @@ unsafe extern "C" fn render_mascot(l: lua::State) -> c_int {
     }
 }
 
-/// set_glyphs(字串, {texpos...})：開始載入一份新字典：字圖集裡依序的字，與每字八張貼圖的 texpos
-/// （左右兩格、半格位移的上下列、錨定標籤用；見 atlas::render）。之前載入到一半的（換語言失敗的）丟掉。
+/// render_buttons(原版按鈕圖 PNG, 輸出 PNG, 格寬, 格高, {三個按鈕的中文}, {字型路徑...}) → true
+/// 工作指令條件的「Type」「Mat」「Adj」圖形按鈕換成中文字的圖（見 image::work_order_buttons）
+unsafe extern "C" fn render_buttons(l: lua::State) -> c_int {
+    unsafe {
+        let (Some(src), Some(out), Some(cell_w), Some(cell_h)) = (lua::arg_str(l, 1), lua::arg_str(l, 2), lua::arg_int(l, 3), lua::arg_int(l, 4))
+        else {
+            return fail(l, "render_buttons: expects (src, out, cell_w, cell_h, labels, fonts)");
+        };
+        if lua::arg_type(l, 5) != lua::TTABLE || lua::arg_type(l, 6) != lua::TTABLE || cell_w < 1 || cell_h < 1 {
+            return fail(l, "render_buttons: bad cell size, label list or font list");
+        }
+        let labels: Option<Vec<String>> = (1..=lua::len(l, 5) as i64).map(|i| lua::index_str(l, 5, i)).collect();
+        let paths: Option<Vec<String>> = (1..=lua::len(l, 6) as i64).map(|i| lua::index_str(l, 6, i)).collect();
+        let (Some(labels), Some(paths)) = (labels, paths) else { return fail(l, "render_buttons: labels and font paths must be strings") };
+        let labels: Vec<&str> = labels.iter().map(String::as_str).collect();
+        let paths: Vec<&str> = paths.iter().map(String::as_str).collect();
+        let result = atlas::load_fonts(&paths).and_then(|fonts| {
+            image::work_order_buttons(std::path::Path::new(src), std::path::Path::new(out), cell_w as usize, cell_h as usize, &labels, &fonts)
+        });
+        match result {
+            Ok(()) => ok(l),
+            Err(e) => fail(l, &e),
+        }
+    }
+}
+
+/// set_glyphs(字串, {texpos...})：開始載入一份新字典：字圖集裡依序的字，與每字九張貼圖的 texpos
+/// （左右兩格、半格位移的上下列、錨定標籤用、透明記號、窄字；見 atlas::render）。之前載入到一半的（換語言失敗的）丟掉。
 unsafe extern "C" fn set_glyphs(l: lua::State) -> c_int {
     unsafe {
         let Some(chars) = lua::arg_str(l, 1) else { return fail(l, "set_glyphs: arg 1 must be a UTF-8 string") };
@@ -616,7 +689,7 @@ unsafe extern "C" fn set_glyphs(l: lua::State) -> c_int {
         let mut staging = STAGING.lock();
         let dict = staging.insert(Dict::default());
         if !dict.set_glyphs(chars, texpos) {
-            return fail(l, "set_glyphs: texpos count must be 8 times the glyph count");
+            return fail(l, "set_glyphs: texpos count must be 9 times the glyph count plus one");
         }
         lua::push_int(l, dict.glyph_of.len() as i64);
         1

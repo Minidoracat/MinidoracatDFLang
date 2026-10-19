@@ -114,7 +114,7 @@ Focused!	專注！	专注！		需求滿足時的專注度
  (Rusty)	 (生疏)	 (生疏)		接在技能等級後；全形括號放不下，用半形
  (V Rusty)	 (很生疏)	 (很生疏)		接在技能等級後；V＝Very
 Haul: 	搬運：	搬运：		[INFERENCE] 後接搬運的物品；6 格剛好等於原文
-Resident	居民	居民		身分標籤
+Resident	居留者	居留者		身分標籤
 Needs 	需要 	需要 		[INFERENCE] 後接所需事物，實機未見；與 Resident、Injured 相鄰
 Injured	受傷	受伤		狀態標籤
 Seriously injured	重傷	重伤		狀態標籤

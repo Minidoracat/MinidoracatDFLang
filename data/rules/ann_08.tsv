@@ -54,7 +54,7 @@ You vomit into the {%1}.	你吐進了{1}裡。	你吐进了{1}里。		FUN_141354
 {1} gives in to pain.	{1}痛得昏了過去。	{1}痛得昏了过去。		FUN_1413547e0 2564758：PAIN_KO
 {1} has reverted to a wild state!	{1}恢復了野性！	{1}恢复了野性！		FUN_1413547e0 2565458：馴養動物野化
 {1} has forgotten {@2} training!	{1}忘了先前的訓練！	{1}忘了先前的训练！		FUN_1413547e0 2565499：{2} his/her/its
-The {%1} have given a resident {%2} the name {3}.	{1}為居民{2}取名為{3}。	{1}为居民{2}取名为{3}。		FUN_1413547e0 2565638：{1} 文明種族複數，{2} 生物名，{3} 名字
+The {%1} have given a resident {%2} the name {3}.	{1}為居民{2}取名為{3}。	{1}为居民{2}取名为{3}。		FUN_1413547e0 2565638：{1} 文明種族複數，{2} 生物名，{3} 名字；術語例外：resident；泛指要塞或當地的住民，不是居留身分
 An animal has grown to become a {%1}.	一隻動物長大成了{1}。	一只动物长大成了{1}。		FUN_1413547e0 2566115：SOMEBODY_GROWS_UP，沒有名字時
 {1} has grown to become a {%2}.	{1}長大成了{2}。	{1}长大成了{2}。		FUN_1413547e0 2566115：有名字的動物
 {1} has left the martial trance.	{1}脫離了戰鬥恍惚狀態。	{1}脱离了战斗恍惚状态。		FUN_1413547e0 2566173：LOSE_EMOTION；{1} 人名, 職業（動物是大寫生物名）

@@ -168,7 +168,7 @@ Hold to show:	按住顯示：	按住显示：		DFHack hack/scripts/gui/spectate.
 Armok's Sandbox	Armok 沙盒	Armok 沙盒	c	DFHack hack/scripts/gui/sandbox.lua L22 視窗標題
 hostile (undead)	敵對（不死）	敌对（亡灵）		DFHack hack/scripts/gui/sandbox.lua L100 生成立場選項
 independent/wild	獨立／野生	独立／野生		DFHack hack/scripts/gui/sandbox.lua L101 生成立場選項
-citizens/pets	公民／寵物	公民／宠物		DFHack hack/scripts/gui/sandbox.lua L106 生成立場選項
+citizens/pets	居民／寵物	居民／宠物		DFHack hack/scripts/gui/sandbox.lua L106 生成立場選項
 Unit group #	單位組 #	单位组 #		DFHack hack/scripts/gui/sandbox.lua L118 標籤（後接組號；下一行 unit+s+in group 拆成多段，不翻）
 Spawn unit	生成單位	生成单位		DFHack hack/scripts/gui/sandbox.lua L131 快捷鍵說明
 Start new group	開始新的一組	开始新的一组		DFHack hack/scripts/gui/sandbox.lua L141 快捷鍵說明
@@ -178,14 +178,14 @@ Create item	建立物品	创建物品		DFHack hack/scripts/gui/sandbox.lua L175 
 Dump to tile under mouse cursor	傾倒到滑鼠下的圖格	倾倒到鼠标下的图格		DFHack hack/scripts/gui/autodump.lua L47 快捷鍵說明
 Destroy items	銷毀物品	销毁物品		DFHack hack/scripts/gui/autodump.lua L55 快捷鍵說明
 Undo destroy items	復原銷毀	撤销销毁		DFHack hack/scripts/gui/autodump.lua L63 快捷鍵說明
-Select all items on this z-level	選取這一層的所有物品	选取这一层的所有物品		DFHack hack/scripts/gui/autodump.lua L71 快捷鍵說明（整句條目，蓋過 Select {1}）
+Select all items on this z-level	選取這個 Z 層的所有物品	选取这个 Z 层的所有物品		DFHack hack/scripts/gui/autodump.lua L71 快捷鍵說明（整句條目，蓋過 Select {1}）
 Clear selected items	清除選取的物品	清除选中的物品		DFHack hack/scripts/gui/autodump.lua L85 快捷鍵說明
 Include forbidden items	包含禁用的物品	包含禁用的物品		DFHack hack/scripts/gui/autodump.lua L95 開關標籤
 Include items claimed by jobs	包含工作佔用的物品	包含工作占用的物品		DFHack hack/scripts/gui/autodump.lua L104 開關標籤
 Include items dropped by traders	包含商人丟下的物品	包含商人丢下的物品		DFHack hack/scripts/gui/autodump.lua L113 開關標籤
 Forbid after teleporting	傳送後設為禁用	传送后设为禁用		DFHack hack/scripts/gui/autodump.lua L122 開關標籤
 Unit Syndromes	單位症候群	单位综合征	c	DFHack hack/scripts/gui/unit-syndromes.lua L357 視窗標題
-Citizens and Residents	公民與居民	公民与居民		DFHack hack/scripts/gui/unit-syndromes.lua L375 分類清單
+Citizens and Residents	居民與居留者	居民与居留者		DFHack hack/scripts/gui/unit-syndromes.lua L375 分類清單
 Livestock	牲畜	牲畜		DFHack hack/scripts/gui/unit-syndromes.lua L376 分類清單
 Wild animals	野生動物	野生动物		DFHack hack/scripts/gui/unit-syndromes.lua L377 分類清單
 All units	所有單位	所有单位		DFHack hack/scripts/gui/unit-syndromes.lua L379 分類清單
@@ -237,8 +237,8 @@ Civilian alert	平民警報	平民警报	c	DFHack hack/scripts/gui/civ-alert.lua
 Activate civilian alert	發布平民警報	发布平民警报		DFHack hack/scripts/gui/civ-alert.lua L83 小隊面板的紅色大按鈕（一格一字畫三列；整句查，譯文平分成三列，見 lua/loader.lua install_button）
 Clear civilian alert	解除平民警報	解除平民警报		DFHack hack/scripts/gui/civ-alert.lua L96 平民警報發布中的大按鈕（同上）
 Choose the burrow(s) where you want your civilians to hide during danger.	選擇危險時平民要躲藏的活動區。	选择危险时平民要躲藏的活动区。		DFHack hack/scripts/gui/civ-alert.lua L217 WrappedLabel
-Sound alarm! Citizens run to safety!	拉響警報！公民快去避難！	拉响警报！公民快去避难！		DFHack hack/scripts/gui/civ-alert.lua L222 快捷鍵說明
-All clear! Citizens return to normal	解除警報！公民恢復正常	解除警报！公民恢复正常		DFHack hack/scripts/gui/civ-alert.lua L229 快捷鍵說明
+Sound alarm! Citizens run to safety!	拉響警報！居民快去避難！	拉响警报！居民快去避难！		DFHack hack/scripts/gui/civ-alert.lua L222 快捷鍵說明
+All clear! Citizens return to normal	解除警報！居民恢復正常	解除警报！居民恢复正常		DFHack hack/scripts/gui/civ-alert.lua L229 快捷鍵說明
 No burrows defined. Please define one to use for the civalert.	尚未定義活動區。請先定義一個供平民警報使用。	尚未定义活动区。请先定义一个供平民警报使用。		DFHack hack/scripts/gui/civ-alert.lua L247 WrappedLabel
 Embark Anywhere	隨處出發	随处出发	c	DFHack hack/scripts/gui/embark-anywhere.lua L6 視窗標題
 Click anywhere on the map to ignore warnings and embark wherever you want.	點選地圖上任何地方，即可忽略警告、在任意位置出發。	点击地图上任何地方，即可忽略警告、在任意位置出发。		DFHack hack/scripts/gui/embark-anywhere.lua L15 WrappedLabel

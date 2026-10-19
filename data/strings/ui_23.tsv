@@ -16,7 +16,7 @@ Underworld	冥界	冥界		FUN_141425c40 L2697940 生物清單（單位清單）�
 Uninvited Guest	不速之客	不速之客		FUN_141425c40 L2697979 生物清單（單位清單）每位單位的狀態欄
 Chained Guest	被鎖住的訪客	被锁住的访客		FUN_141425c40 L2697977 生物清單（單位清單）每位單位的狀態欄；同 Chained Prisoner 被鎖住的囚犯
 Caged Guest	籠中訪客	笼中访客		FUN_141425c40 L2697983 生物清單（單位清單）每位單位的狀態欄；同 Caged Prisoner 籠中囚犯
-Current Resident	常住居民	常住居民		FUN_141425c40 L2697988 生物清單（單位清單）每位單位的狀態欄；術語 resident
+Current Resident	目前居留者	当前居留者		FUN_141425c40 L2697988 生物清單（單位清單）每位單位的狀態欄；術語 resident
 Agitated Chained Creature	被鎖住的躁動生物	被锁住的躁动生物		FUN_141425c40 L2698001 生物清單（單位清單）每位單位的狀態欄；整條寫出：原本被拼成怪譯文
 Agitated Wilderness Creature	躁動的野生生物	躁动的野生生物		FUN_141425c40 L2698003 生物清單（單位清單）每位單位的狀態欄；整條寫出
 Agitated Caged Creature	籠中躁動生物	笼中躁动生物		FUN_141425c40 L2698007 生物清單（單位清單）每位單位的狀態欄；整條寫出：原本被拼成「焦躁被關進籠子生物」

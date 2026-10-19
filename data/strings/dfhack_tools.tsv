@@ -214,7 +214,7 @@ View, add, remove, or modify aquifers.	檢視、新增、移除或修改含水�
 Teleport or destroy items.	傳送或摧毀物品。	传送或摧毁物品。		DFHack 工具簡介（helpdb short_help／控制面板說明框）：gui/autodump (hack/docs/docs/tools/gui/autodump.txt 首句)
 Automatically cut rough gems.	自動切割原石。	自动切割原石。		DFHack 工具簡介（helpdb short_help／控制面板說明框）：gui/autogems (hack/docs/docs/tools/gui/autogems.txt 首句)
 GUI interface for ``autotraining`` This is an in-game configuration interface for autotraining.	autotraining 的 GUI 介面。這是 autotraining 的遊戲內設定介面。	autotraining 的 GUI 界面。这是 autotraining 的游戏内设置界面。		DFHack 工具簡介（helpdb short_help／控制面板說明框）：gui/autotraining (hack/docs/docs/tools/gui/autotraining.txt 首句)
-Visualize and inspect biome regions on the map.	將地圖上的生態區域視覺化並檢查。	将地图上的生物群系区域可视化并检查。		DFHack 工具簡介（helpdb short_help／控制面板說明框）：gui/biomes (hack/docs/docs/tools/gui/biomes.txt 首句)
+Visualize and inspect biome regions on the map.	將地圖上的生物群系區域視覺化並檢查。	将地图上的生物群系区域可视化并检查。		DFHack 工具簡介（helpdb short_help／控制面板說明框）：gui/biomes (hack/docs/docs/tools/gui/biomes.txt 首句)
 Ensure military dwarves choose appropriate weapons.	確保軍事矮人選用合適的武器。	确保军事矮人选用合适的武器。		DFHack 工具簡介（helpdb short_help／控制面板說明框）：gui/choose-weapons (hack/docs/docs/tools/gui/choose-weapons.txt 首句)
 Quickly get your civilians to safety.	快速讓平民前往安全處。	快速让平民前往安全处。		DFHack 工具簡介（helpdb short_help／控制面板說明框）：gui/civ-alert (hack/docs/docs/tools/gui/civ-alert.txt 首句)
 Duplicate an existing military uniform.	複製現有的軍事制服。	复制现有的军事制服。		DFHack 工具簡介（helpdb short_help／控制面板說明框）：gui/clone-uniform (hack/docs/docs/tools/gui/clone-uniform.txt 首句)

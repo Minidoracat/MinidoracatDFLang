@@ -11,7 +11,6 @@ a declaration of war	宣戰	宣战	inner	FUN_140b95020 1707983 議題名（topic
 an alliance	結盟	结盟	inner	FUN_140b95020 1707983 議題名（topicagreement_* 共用，Events15 的 topicagreement_made 也用）
 a strengthening of trade ties	加強貿易往來	加强贸易往来	inner	FUN_140b95020 1707983 議題名（topicagreement_* 共用，Events15 的 topicagreement_made 也用）
 lord	領主	领主	inner	職位名（entity_position name／squad[0]），raws 與執行檔（程序生成職位）裡、尚無條目的；remove/add_hf_entity_link 用
-lady	女領主	女领主	inner	職位名（entity_position name／squad[0]），raws 與執行檔（程序生成職位）裡、尚無條目的；remove/add_hf_entity_link 用
 priest	祭司	祭司	inner	職位名（entity_position name／squad[0]），raws 與執行檔（程序生成職位）裡、尚無條目的；remove/add_hf_entity_link 用
 high priest	大祭司	大祭司		職位名（entity_position name／squad[0]），raws 與執行檔（程序生成職位）裡、尚無條目的；remove/add_hf_entity_link 用；不設 inner：介面上單獨出現的職位名也要翻（設 inner 時整句查詢會被 names.tsv 的 {@1} {@2} 拼成「高祭司」）
 chieftain	酋長	酋长	inner	職位名（entity_position name／squad[0]），raws 與執行檔（程序生成職位）裡、尚無條目的；remove/add_hf_entity_link 用

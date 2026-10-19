@@ -302,12 +302,13 @@ function DFLangWindow:init()
             initial_option = not status or status.enabled,
             enabled = running,
             on_change = function(on)
-                local engine = dfhack.BASE_G.DFLANG.engine
-                local ok, err = (on and engine.enable or engine.disable)()
+                local st = dfhack.BASE_G.DFLANG
+                local ok, err = (on and st.engine.enable or st.engine.disable)()
                 if not ok then
                     self.subviews.enabled:setOption(not on)
                     dialogs.showMessage('DFLang', tostring(err), COLOR_LIGHTRED)
                 end
+                if st.sync_buttons then st.sync_buttons() end
             end,
         },
         widgets.CycleHotkeyLabel{
@@ -506,8 +507,10 @@ if cmd == 'status' or not cmd then
     print(('This session: %d hits, %d misses'):format(s.hits, s.misses))
 elseif cmd == 'on' then
     check(engine.enable())
+    if state.sync_buttons then state.sync_buttons() end
 elseif cmd == 'off' then
     check(engine.disable())
+    if state.sync_buttons then state.sync_buttons() end
 elseif cmd == 't' then
     local text = table.concat(args, ' ', 2)
     print(engine.translate(text) or '(Neither the dictionary nor the patterns have this text.)')

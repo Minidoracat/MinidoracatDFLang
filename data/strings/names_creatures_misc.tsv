@@ -43,14 +43,14 @@ mantis woman	女螳螂人	女螳螂人		CREATURE:MANTIS_MAN CASTE_NAME
 mantis women	女螳螂人	女螳螂人		CREATURE:MANTIS_MAN CASTE_NAME
 giant mantis	巨型螳螂	巨型螳螂		CREATURE:GIANT_MANTIS NAME
 giant mantises	巨型螳螂	巨型螳螂		CREATURE:GIANT_MANTIS NAME
-tick	壁蝨	蜱虫		CREATURE:TICK NAME；台灣通稱壁蝨，大陸用蜱虫
-ticks	壁蝨	蜱虫		CREATURE:TICK NAME
-tick man	壁蝨人	蜱虫人		CREATURE:TICK_MAN CASTE_NAME
-tick men	壁蝨人	蜱虫人		CREATURE:TICK_MAN CASTE_NAME
-tick woman	女壁蝨人	女蜱虫人		CREATURE:TICK_MAN CASTE_NAME
-tick women	女壁蝨人	女蜱虫人		CREATURE:TICK_MAN CASTE_NAME
-giant tick	巨型壁蝨	巨型蜱虫		CREATURE:GIANT_TICK NAME
-giant ticks	巨型壁蝨	巨型蜱虫		CREATURE:GIANT_TICK NAME
+tick	壁蝨	蜱虫		CREATURE:TICK NAME；台灣通稱壁蝨，大陸用蜱虫；術語例外：tick；壁蝨（動物），不是時間單位
+ticks	壁蝨	蜱虫		CREATURE:TICK NAME；術語例外：tick；壁蝨（動物），不是時間單位
+tick man	壁蝨人	蜱虫人		CREATURE:TICK_MAN CASTE_NAME；術語例外：tick；壁蝨（動物），不是時間單位
+tick men	壁蝨人	蜱虫人		CREATURE:TICK_MAN CASTE_NAME；術語例外：tick；壁蝨（動物），不是時間單位
+tick woman	女壁蝨人	女蜱虫人		CREATURE:TICK_MAN CASTE_NAME；術語例外：tick；壁蝨（動物），不是時間單位
+tick women	女壁蝨人	女蜱虫人		CREATURE:TICK_MAN CASTE_NAME；術語例外：tick；壁蝨（動物），不是時間單位
+giant tick	巨型壁蝨	巨型蜱虫		CREATURE:GIANT_TICK NAME；術語例外：tick；壁蝨（動物），不是時間單位
+giant ticks	巨型壁蝨	巨型蜱虫		CREATURE:GIANT_TICK NAME；術語例外：tick；壁蝨（動物），不是時間單位
 louse	蝨子	虱子		CREATURE:LOUSE NAME
 lice	蝨子	虱子		CREATURE:LOUSE NAME
 louse man	蝨子人	虱子人		CREATURE:LOUSE_MAN CASTE_NAME

@@ -119,8 +119,8 @@ It has pincers and a stinging tail which can prove fatal.	有一對螯，尾刺�
 A huge monster in the form of a bark scorpion.	形似樹皮蠍的巨大怪物。	形似树皮蝎的巨大怪物。		CREATURE:GIANT_BARK_SCORPION DESCRIPTION；生物說明，健康分頁描述第一句
 A green person with the head and arms of a mantis.	通體翠綠、長著螳螂頭部與手臂的人。	通体翠绿、长着螳螂头部和手臂的人。		CREATURE:MANTIS_MAN DESCRIPTION；生物說明，健康分頁描述第一句
 A large monster in the shape of a mantis.	形似螳螂的大型怪物。	形似螳螂的大型怪物。		CREATURE:GIANT_MANTIS DESCRIPTION；生物說明，健康分頁描述第一句
-A person with the head and legs of a tick.	長著壁蝨頭部與腿的人。	长着蜱虫头部和腿的人。		CREATURE:TICK_MAN DESCRIPTION；生物說明，健康分頁描述第一句
-A large monster taking the shape of a tick.	形似壁蝨的大型怪物。	形似蜱虫的大型怪物。		CREATURE:GIANT_TICK DESCRIPTION；生物說明，健康分頁描述第一句
+A person with the head and legs of a tick.	長著壁蝨頭部與腿的人。	长着蜱虫头部和腿的人。		CREATURE:TICK_MAN DESCRIPTION；生物說明，健康分頁描述第一句；術語例外：tick；壁蝨（動物），不是時間單位
+A large monster taking the shape of a tick.	形似壁蝨的大型怪物。	形似蜱虫的大型怪物。		CREATURE:GIANT_TICK DESCRIPTION；生物說明，健康分頁描述第一句；術語例外：tick；壁蝨（動物），不是時間單位
 A tiny parasitic insect.	寄生性的小昆蟲。	寄生性的小昆虫。		CREATURE:LOUSE DESCRIPTION；生物說明，健康分頁描述第一句
 It feeds on skin and blood.	以皮膚和血液為食。	以皮肤和血液为食。		CREATURE:LOUSE DESCRIPTION；生物說明，健康分頁描述第一句
 A person with the head and legs of a louse.	長著蝨子頭部與腿的人。	长着虱子头部和腿的人。		CREATURE:LOUSE_MAN DESCRIPTION；生物說明，健康分頁描述第一句

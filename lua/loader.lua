@@ -39,6 +39,13 @@ local MISSES_FILE = 'dfhack-config/dflang-misses.tsv'
 local MASCOT_FILE = 'dfhack-config/dflang-mascot-%s.png'
 local MASCOT_ROWS = 12
 local AUTHOR = '@AUTHOR@'
+-- 工作指令條件的「Type」「Mat」「Adj」：英文畫在原版的按鈕圖裡（data/vanilla/vanilla_interface/graphics/images/interface_bits_work_orders.png
+-- 的 WORK_ORDERS_CHANGE_TYPE／_MAT／_ADJ，圖頁 INTERFACE_BITS_WORK_ORDERS 第 6 列起，各 4×3 格）。
+-- 換成本包畫的中文圖：啟動與換語言時照格子大小畫好，交給引擎在條件畫面把那幾格換掉；關掉翻譯時不換（見 place_buttons）
+local BUTTONS_FILE = 'dfhack-config/dflang-buttons-%s.png'
+local BUTTON_PAGE, BUTTON_ROW = 'INTERFACE_BITS_WORK_ORDERS', 6
+local BUTTON_FOCUS = 'dwarfmode/Info/WORK_ORDERS/Conditions'
+local BUTTON_LABELS = {['zh-Hant'] = {'類型', '材料', '屬性'}, ['zh-Hans'] = {'类型', '材料', '属性'}}
 
 local json = require('json')
 local scriptmanager = require('script-manager')
@@ -192,8 +199,8 @@ local function atlas(engine, lang, dir, chars, weight)
     if not tiles then return nil, missing end
     if missing ~= '' then fail('沒有字型能畫：%s', missing) end
     -- 字圖集最後一列可能沒排滿；每字取八張：左右兩格、半格位移的上下列各左右兩格（分頁標籤這類文字）、錨定貼圖標籤用的小一號字，
-    -- 最後再一張透明記號（整句貼圖排段落時的佔位格，見 engine/src/atlas.rs）
-    local n = utf8.len(chars) * 8 + 1
+    -- 再一張透明記號（整句貼圖排段落時的佔位格），最後每字一張窄字（整句貼圖關著時名字放不下用，見 engine/src/atlas.rs）
+    local n = utf8.len(chars) * 9 + 1
     local handles = table.move(dfhack.textures.loadTileset(png, w, h, true), 1, n, 1, {})
     for i = 1, n do
         if (handles[i] or 0) == 0 then
@@ -313,6 +320,43 @@ local function load_mascot(engine, lang)
         return nil
     end
     return {handles = dfhack.textures.loadTileset(png, w, h, true), cols = cols}
+end
+
+-- 工作指令按鈕的中文圖（見 BUTTONS_FILE）：只在圖形模式、找得到原版圖時畫；畫不出來就照英文。回傳切好的格子貼圖（12×3 格）
+local function load_buttons(engine, lang)
+    local src = dfhack.getDFPath() .. '/data/vanilla/vanilla_interface/graphics/images/interface_bits_work_orders.png'
+    if not BUTTON_LABELS[lang] or not dfhack.screen.inGraphicsMode() or not dfhack.filesystem.isfile(src) then return nil end
+    local w, h = cell_px()
+    local png = BUTTONS_FILE:format(lang)
+    local ok, err = engine.render_buttons(src, png, w, h, BUTTON_LABELS[lang], font_files(lang_dir(lang), 'bold'))
+    if not ok then
+        fail('工作指令按鈕圖產生失敗（照英文）：%s', err)
+        return nil
+    end
+    return dfhack.textures.loadTileset(png, w, h, true)
+end
+
+-- 遊戲畫這三個按鈕用的是自己記下的原版貼圖編號：改 gps.graphical_interface.texpos_button_main 或圖頁的 texpos 都沒用
+-- （2026-10-19 實測，畫面上照樣是原版編號）。所以把「原版編號 → 本包編號」交給引擎，引擎每幀畫完後在畫面緩衝區換掉那幾格
+-- （只在條件畫面，見 engine/src/hooks.rs 的 swap_tiles）。handles 為 nil 是不換（翻譯關著）。兩邊的編號在重載貼圖後都會變，
+-- 畫面切換時都重送一次（見 start 的 onStateChange）；讀不到圖頁（版本改了）就不換，照英文
+local function place_buttons(engine, handles)
+    local swaps = {}
+    if handles then
+        pcall(function()
+            for _, page in ipairs(df.global.texture.page) do
+                if page.token == BUTTON_PAGE then
+                    for b = 0, 2 do for x = 0, 3 do for y = 0, 2 do
+                        table.insert(swaps, page.texpos[(BUTTON_ROW + y) * page.page_dim_x + b * 4 + x])
+                        table.insert(swaps, dfhack.textures.getTexposByHandle(handles[y * 12 + b * 4 + x + 1]))
+                    end end end
+                    return
+                end
+            end
+        end)
+    end
+    local _, gps = df.sizeof(df.global.gps)
+    engine.set_tile_swaps(gps, BUTTON_FOCUS, table.concat(swaps, ' '))
 end
 
 -- 玩家在 DFHack 輸入框打的字（搜尋框、gm-editor 的欄位、gui/journal）照原樣畫：畫輸入框內容與切行時為 true，不查字典（見 install_typing）
@@ -541,6 +585,38 @@ local function install_typing()
     end
 end
 
+-- 遊戲自己的輸入框（篩選、搜尋、命名、數量）：main_interface 裡名字含 filter、search 或以 _str 結尾的字串欄位。
+-- main_interface 是遊戲的全域物件，欄位位址整局不變：啟動時找一次交給引擎，引擎每幀讀裡面的字，畫到相同的字串就照原樣（見 engine/src/typed.rs）。
+-- 向量裡的元素不找（數量會變）；欄位隨版本改名時照 DFHack 的結構定義找，找不到的就少一個
+local function typed_fields()
+    local addrs = {}
+    local function scan(obj, depth)
+        for name, value in pairs(obj) do
+            name = tostring(name)
+            if type(value) == 'string' then
+                if name:find('filter', 1, true) or name:find('search', 1, true) or name:find('_str$') then
+                    local ok, _, addr = pcall(function() return df.sizeof(obj:_field(name)) end)
+                    if ok and addr then table.insert(addrs, addr) end
+                end
+            elseif type(value) == 'userdata' and depth < 4 and not pcall(function() return #value end) then
+                pcall(scan, value, depth + 1)
+            end
+        end
+    end
+    pcall(scan, df.global.game.main_interface, 0)
+    return addrs
+end
+
+-- 傳說清單的篩選在畫面物件裡（畫面關掉後位址無效）：在傳說畫面時每幀把現在的字送給引擎，離開時送空的
+local function legends_filter(focus)
+    if not focus:find('^legends/') then return '' end
+    local ok, text = pcall(function()
+        local vs = dfhack.gui.getDFViewscreen(true)
+        return vs.page[vs.active_page_index].filter_str
+    end)
+    return ok and type(text) == 'string' and text or ''
+end
+
 -- 本 MOD 讓位時在標題畫面跳出說明：主控台的訊息玩家看不到，也不知道怎麼停用別的 MOD。
 -- DFCN、DFI18n（都實測過）：只包住 DFHack 的畫字函式、不掛遊戲的 hook，用本包的字圖把說明畫成中文，讓玩家選要用哪一個；
 -- 選「改用 DFLang」就呼叫 dflang.lua 對應的停用函式，重開遊戲生效。DFI18n 的字畫在 DFHack 視窗之後，
@@ -632,6 +708,8 @@ local function use(state, lang, s, all)
         if state.names_ok then assert(engine.load_names(dir .. 'names.tsv')) end
         assert(engine.load_translit(dir .. 'translit.tsv'))
         state.mascot = load_mascot(engine, lang)
+        state.buttons = load_buttons(engine, lang)
+        if state.sync_buttons then state.sync_buttons() end
     end
     state.lang, state.dir, state.chars = lang, dir, chars
     engine.set_overlay(s.overlay and state.overlay_ok and 1 or 0)
@@ -711,7 +789,7 @@ local function note_world_names(engine)
     end
 end
 
--- 玩家取的名字照原樣畫（見 engine/src/names.rs 的 set_player_names）：倉儲區、區域、活動區、工作細項、警戒狀態、制服、公民的自訂職業、
+-- 玩家取的名字照原樣畫（見 engine/src/names.rs 的 set_player_names）：倉儲區、區域、活動區、工作細項、警戒狀態、制服、居民的自訂職業、
 -- 本要塞的小隊與小隊排程每個月的名稱（「Dense Training」）。讀不到的一類（欄位隨版本改了）略過，其他照收
 local function player_names()
     local names = {}
@@ -908,10 +986,12 @@ local function start()
     install_frame()
     install_read_tile(engine)
     install_typing()
+    engine.set_typed_fields(table.concat(typed_fields(), ' '))
     -- 依畫面套用的譯文要知道現在在哪個畫面：每幀把 DFHack 的焦點字串告訴引擎（'frames' 計時器在世界卸載後也繼續）。
     -- DFHack 的視窗開著時（焦點是 dfhack/…）也加上底下遊戲畫面的焦點：遊戲照樣畫的上方資訊列（「酒類」）才不會換成別的譯法。
-    -- 只在那時才找底下的畫面：dfhack.gui 每呼叫一次約 40 µs，計時器每個模擬幀都跑
+    -- 只在那時才找底下的畫面：dfhack.gui 每呼叫一次約 40 µs，計時器每個模擬幀都跑。傳說畫面另外送篩選框的字（見 legends_filter）
     if screens > 0 then
+        local last_typed = ''
         local function track_focus()
             local focus = dfhack.gui.getCurFocus(true)
             if (focus[1] or ''):find('^dfhack/') then
@@ -919,6 +999,11 @@ local function start()
                 for _, f in ipairs(dfvs and dfhack.gui.getFocusStrings(dfvs) or {}) do table.insert(focus, f) end
             end
             engine.set_focus(table.concat(focus, '\n'))
+            local typed = legends_filter(focus[1] or '')
+            if typed ~= last_typed then
+                last_typed = typed
+                engine.set_typed_text(typed)
+            end
             dfhack.timeout(1, 'frames', track_focus)
         end
         track_focus()
@@ -928,15 +1013,20 @@ local function start()
         if not ok then fail('無法記錄未翻譯字串：%s', err) end
     end
 
-    -- 每字八張，保留範圍（約 8,800 張可用）放不下，後面的落在 DFHack 的動態範圍：遊戲重載貼圖後 texpos 會變，
+    -- 每字九張，保留範圍（約 8,800 張可用）放不下，後面的落在 DFHack 的動態範圍：遊戲重載貼圖後 texpos 會變，
     -- 最後一張一定在動態範圍（或全部都在保留範圍、永遠不變），看它就知道要不要重查。
     -- handles、chars、dir、lang 是目前用的字圖集與語言（遊戲中途換字重、語言時換，見 use）；current 是目前套用的設定
     local state = {engine = engine, lang = lang, version = VERSION, dir = dir, config = CONFIG_FILE, chars = chars,
                    handles = handles, last = dfhack.textures.getTexposByHandle(handles[#handles]),
-                   mascot = load_mascot(engine, lang), current = s, names_ok = names_ok, overlay_ok = overlay_ok, apply = apply}
+                   mascot = load_mascot(engine, lang), buttons = load_buttons(engine, lang),
+                   current = s, names_ok = names_ok, overlay_ok = overlay_ok, apply = apply}
+    -- 工作指令按鈕的中文圖跟著翻譯開關（dflang on|off、設定視窗的「Show translation」也叫它）
+    state.sync_buttons = function() place_buttons(engine, engine.status().enabled and state.buttons or nil) end
+    state.sync_buttons()
     dfhack.BASE_G.DFLANG = state
     dfhack.onStateChange.dflang = function(sc)
         if sc ~= SC_VIEWSCREEN_CHANGED and sc ~= SC_WORLD_LOADED and sc ~= SC_WORLD_UNLOADED then return end
+        state.sync_buttons()
         local now = dfhack.textures.getTexposByHandle(state.handles[#state.handles])
         if now ~= state.last then
             state.last = now

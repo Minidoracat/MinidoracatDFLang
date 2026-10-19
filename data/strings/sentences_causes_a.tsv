@@ -36,8 +36,8 @@ petitioning for citizenship	請願成為公民	请愿成为公民		fn_thought_co
 telling somebody about being trapped here	向人訴說自己被困在這裡	向人诉说自己被困在这里		fn_thought_composer case 0x19/0x35；前接 after
 yelling at a priest	對祭司大吼	对祭司大吼		fn_thought_composer case 0x19/0x5c；前接 while
 crying on a priest	向祭司哭訴	向祭司哭诉		fn_thought_composer case 0x19/0x5d；前接 while
-being yelled at by an unhappy citizen	被不滿的公民大吼	被不满的公民大吼		fn_thought_composer case 0x1a/0x1c；前接 while
-being cried on by an unhappy citizen	聽不滿的公民哭訴	听不满的公民哭诉		fn_thought_composer case 0x1a/0x1d；前接 while
+being yelled at by an unhappy citizen	被不滿的居民大吼	被不满的居民大吼		fn_thought_composer case 0x1a/0x1c；前接 while
+being cried on by an unhappy citizen	聽不滿的居民哭訴	听不满的居民哭诉		fn_thought_composer case 0x1a/0x1d；前接 while
 hearing somebody was being prevented from leaving	聽說有人被阻止離開	听说有人被阻止离开		fn_thought_composer case 0x1a/0x35；前接 after
 being yelled at by an unhappy worshipper	被不滿的信徒大吼	被不满的信徒大吼		fn_thought_composer case 0x1a/0x5c；前接 while
 being cried on by an unhappy worshipper	聽不滿的信徒哭訴	听不满的信徒哭诉		fn_thought_composer case 0x1a/0x5d；前接 while

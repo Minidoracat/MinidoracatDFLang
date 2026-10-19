@@ -18,7 +18,7 @@ use parking_lot::Mutex;
 use retour::RawDetour;
 
 use crate::cp437;
-use crate::dict::{Dict, Entry, Row};
+use crate::dict::{glyph_cells, Dict, Entry, Row};
 use crate::mtb::Plan;
 
 /// screentexpos_flag 位元（DFHack Screen.cpp）：ADDCOLOR 以該格前景色為貼圖上色；
@@ -391,7 +391,7 @@ unsafe fn paint(gps: *mut u8, layer: &Layer, x0: i32, y: i32, p: Paint, dict: &D
         // 整句的列別；同一句混了不同列別就不交給整句貼圖
         let mut kind: Option<Option<Row>> = None;
         for &(offset, glyph) in p.glyphs {
-            for half in 0..2 {
+            for half in 0..glyph_cells(glyph) {
                 let Some(index) = cell(offset + half) else { continue };
                 let row = row_at(index);
                 kind = match kind {
@@ -508,13 +508,21 @@ unsafe fn translate_call(gps: *mut u8, kind: &str, key: &[u8], space: i32, half:
     if !dict.verbatim_screens.is_empty() && dict.keeps_word(key, &FOCUS.lock(), false) {
         return false;
     }
-    // 玩家取的名字（倉儲區、小隊排程…）照原樣畫，不記未翻譯
-    if dict.keeps_player_name(key) {
+    // 玩家取的名字（倉儲區、小隊排程…）、玩家正在遊戲輸入框打的字照原樣畫，不記未翻譯
+    if dict.keeps_player_name(key) || crate::typed::is_typed(key) {
         return false;
     }
     let Some(entry) = lookup(dict, key, y) else {
         note_miss(kind, key);
         return false;
+    };
+    // 字典的整句比原文寬（名稱檔的三字名「食人魔」、職位名「女領主」）：整句貼圖開著時照字寬壓窄放進原文寬度；
+    // 放不下（或整句貼圖關著）照舊多畫幾格
+    let entry = match entry {
+        Found::Fixed(e) if e.compact.is_none() && e.shadow().len() > key.len() => {
+            dict.squeezed_fixed(e, key.len()).map_or(Found::Fixed(e), Found::Rule)
+        }
+        found => found,
     };
     // 照字型實際字寬縮短的譯文（音譯的名字、按鍵名，見 Dict::rule_entry）：遊戲限制的長度放不下就照英文
     if entry.compact.is_some() && space > 0 && entry.shadow().len() > space as usize {
@@ -541,7 +549,7 @@ unsafe fn translate_call(gps: *mut u8, kind: &str, key: &[u8], space: i32, half:
         } else if relayout {
             // 譯文實際佔的格子（字圖格的替身是空白，要算進去；置中的譯文前後補了空白，見 Dict::entry）
             let start = glyphs.iter().map(|g| g.0).chain(shadow.iter().position(|&c| c != b' ')).min().unwrap_or(0);
-            let end = glyphs.iter().map(|g| g.0 + 2).chain(shadow.iter().rposition(|&c| c != b' ').map(|p| p + 1)).max().unwrap_or(0);
+            let end = glyphs.iter().map(|g| g.0 + glyph_cells(g.1)).chain(shadow.iter().rposition(|&c| c != b' ').map(|p| p + 1)).max().unwrap_or(0);
             let body = &shadow[start..end.max(start)];
             let at = match align {
                 b'c' => n.saturating_sub(body.len()) / 2,
@@ -810,7 +818,7 @@ fn dfhack_place(entry: &Entry, text_len: usize, lead: usize, key_len: usize, cen
         Some(n) => (shadow.len() - n, shadow.len()),
         None => (
             glyphs.iter().map(|g| g.0).chain(shadow.iter().position(|&c| c != b' ')).min().unwrap_or(0),
-            glyphs.iter().map(|g| g.0 + 2).chain(shadow.iter().rposition(|&c| c != b' ').map(|p| p + 1)).max().unwrap_or(0),
+            glyphs.iter().map(|g| g.0 + glyph_cells(g.1)).chain(shadow.iter().rposition(|&c| c != b' ').map(|p| p + 1)).max().unwrap_or(0),
         ),
     };
     let body = &shadow[start..end.max(start)];
@@ -1056,12 +1064,60 @@ unsafe extern "C" fn hook_render_things() {
     let orig: RenderThingsFn = unsafe { std::mem::transmute(TRAMPOLINES[14].load(Ordering::Acquire)) };
     let t0 = std::time::Instant::now();
     crate::overlay::frame_begin();
+    crate::typed::refresh();
     ENGLISH.lock().begin();
     unsafe { orig() };
+    unsafe { swap_tiles() };
     ENGLISH.lock().end();
     COLUMNS.lock().next_frame();
     crate::overlay::frame_end();
     crate::overlay::note_render(t0.elapsed());
+}
+
+/// 畫面上要換掉的貼圖：遊戲畫工作指令條件的圖形按鈕（「Type」「Mat」「Adj」的英文畫在圖裡）用自己記下的原版貼圖編號，
+/// 改不到它查的表，所以每幀畫完後在畫面緩衝區（主層與底層）把那幾格換成本包畫的中文圖（見 lua/loader.lua 的 place_buttons）
+struct TileSwaps {
+    gps: usize,
+    /// 只在焦點以它開頭的畫面換
+    focus: String,
+    /// (原版 texpos, 本包 texpos)，依原版排序
+    map: Vec<(i32, i32)>,
+}
+
+static TILE_SWAPS: Mutex<Option<TileSwaps>> = Mutex::new(None);
+
+/// 換上這一批（map 空的是不換）
+pub fn set_tile_swaps(gps: usize, focus: String, mut map: Vec<(i32, i32)>) {
+    map.sort_unstable();
+    *TILE_SWAPS.lock() = (gps != 0 && !map.is_empty()).then_some(TileSwaps { gps, focus, map });
+}
+
+unsafe fn swap_tiles() {
+    let swaps = TILE_SWAPS.lock();
+    let (Some(s), Some(layout)) = (swaps.as_ref(), LAYOUT.get()) else { return };
+    if !ENABLED.load(Ordering::Relaxed) || !FOCUS.lock().split('\n').any(|f| f.starts_with(s.focus.as_str())) {
+        return;
+    }
+    let (lo, hi) = (s.map[0].0, s.map[s.map.len() - 1].0);
+    unsafe {
+        let gps = s.gps as *const u8;
+        let (dimx, dimy): (i32, i32) = (read(gps, layout.dimx), read(gps, layout.dimy));
+        let cells = (dimx.max(0) * dimy.max(0)) as usize;
+        for array in [layout.main.texpos, layout.main.lower] {
+            let tex: *mut i32 = read(gps, array);
+            if tex.is_null() {
+                continue;
+            }
+            for i in 0..cells {
+                let t = *tex.add(i);
+                if (lo..=hi).contains(&t)
+                    && let Ok(k) = s.map.binary_search_by_key(&t, |m| m.0)
+                {
+                    *tex.add(i) = s.map[k].1;
+                }
+            }
+        }
+    }
 }
 
 // ---- 翻譯前的英文字元 ----
@@ -1667,7 +1723,7 @@ fn label_tiles(n: usize, entry: &Entry, dict: &Dict, font: impl Fn(u8) -> i32) -
     let shadow = entry.shadow();
     let pad = n.checked_sub(shadow.len())? / 2;
     let tile = |k: usize| match k.checked_sub(pad).filter(|&r| r < shadow.len()) {
-        Some(r) => match entry.glyphs.iter().find(|&&(off, _)| r == off || r == off + 1) {
+        Some(r) => match entry.glyphs.iter().find(|&&(off, g)| (off..off + glyph_cells(g)).contains(&r)) {
             Some(&(off, g)) => dict.tile(g, r - off, Row::Label).unwrap_or_else(|| font(shadow[r])),
             None => font(shadow[r]),
         },

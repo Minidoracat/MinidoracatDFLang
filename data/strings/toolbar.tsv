@@ -31,7 +31,7 @@ Barracks	營房	营房		區域類型
 Dormitory	宿舍	宿舍		區域類型
 Dungeon	地牢	地牢		區域類型
 Tomb	墓室	墓室		區域類型
-Assigned residents will only	已指派的居民只會在	被分配的居民只会在		活動區面板說明第 1 行，三行連讀
+Assigned residents will only	已指派的居民只會在	被分配的居民只会在		活動區面板說明第 1 行，三行連讀；術語例外：resident；泛指要塞或當地的住民，不是居留身分
 perform tasks in any of their	其任一啟用中的指派	其任意一个已启用的		活動區面板說明第 2 行
 active assigned burrows.	活動區內執行工作。	所属活动区内执行任务。		活動區面板說明第 3 行
 Add new burrow	新增活動區	新建活动区	c	活動區面板按鈕
@@ -134,7 +134,7 @@ Center on fort	移至要塞	定位到要塞	c	世界畫面按鈕：畫面移到�
 Missions	派遣	派遣	c	世界畫面按鈕
 News and rumors	新聞與傳聞	新闻与传闻	c	世界畫面按鈕
 Civilizations	文明	文明	c	世界畫面按鈕
-Missing citizens	失蹤公民	失踪公民	c	世界畫面按鈕
+Missing citizens	失蹤居民	失踪居民	c	世界畫面按鈕
 Reports	報告	报告	c	世界畫面按鈕
 Peace	和平	和平		世界畫面文明清單：外交狀態
 Your site government	你的據點政府	你的据点政府		世界畫面文明清單：與本要塞的關係

@@ -60,17 +60,17 @@ en	zh-Hant	zh-Hans	align	note
 {1} plotted to abduct {2} approached by {3} to handle the matter directly or through another party.	{1}受{3}所託，密謀綁架{2}，將親自或透過他人處理此事。	{1}受{3}所托，密谋绑架{2}，将亲自或通过他人处理此事。	inner	FUN_1402aaf70 case 9 380542-380585
 {1} plotted to steal {2} approached by {3} to handle the matter directly or through another party.	{1}受{3}所託，密謀竊取{2}，將親自或透過他人處理此事。	{1}受{3}所托，密谋窃取{2}，将亲自或通过他人处理此事。	inner	FUN_1402aaf70 case 6 380333-380375
 {1} began accepting bribes in exchange for leniency under the influence of {2} via {3}.	{1}在{2}的影響下，經由{3}開始收受賄賂並從輕發落。	{1}在{2}的影响下，经由{3}开始收受贿赂并从轻发落。	inner	FUN_1402aaf70 380267-380332 case 5（無職位）
-{1} made an agreement with {2}, becoming a resident of {3} to entertain the citizenry.	{1}與{2}達成協議，成為{3}的居民，為居民表演。	{1}与{2}达成协议，成为{3}的居民，为居民表演。	inner	FUN_1402aaf70 380180-380220 case 2
-{1} made an agreement with {2}, becoming a resident of {3} to work as a mercenary.	{1}與{2}達成協議，成為{3}的居民，擔任傭兵。	{1}与{2}达成协议，成为{3}的居民，担任雇佣兵。	inner	FUN_1402aaf70 380180-380220 case 2
-{1} made an agreement with {2}, becoming a resident of {3} to eradicate monsters.	{1}與{2}達成協議，成為{3}的居民，負責剷除怪物。	{1}与{2}达成协议，成为{3}的居民，负责铲除怪物。	inner	FUN_1402aaf70 380180-380220 case 2
+{1} made an agreement with {2}, becoming a resident of {3} to entertain the citizenry.	{1}與{2}達成協議，成為{3}的居留者，為居民表演。	{1}与{2}达成协议，成为{3}的居留者，为居民表演。	inner	FUN_1402aaf70 380180-380220 case 2
+{1} made an agreement with {2}, becoming a resident of {3} to work as a mercenary.	{1}與{2}達成協議，成為{3}的居留者，擔任傭兵。	{1}与{2}达成协议，成为{3}的居留者，担任雇佣兵。	inner	FUN_1402aaf70 380180-380220 case 2
+{1} made an agreement with {2}, becoming a resident of {3} to eradicate monsters.	{1}與{2}達成協議，成為{3}的居留者，負責剷除怪物。	{1}与{2}达成协议，成为{3}的居留者，负责铲除怪物。	inner	FUN_1402aaf70 380180-380220 case 2
 {1} plotted to sabotage the activities of {2} under the influence of {3}.	{1}在{3}的影響下，密謀破壞{2}的活動。	{1}在{3}的影响下，密谋破坏{2}的活动。	inner	FUN_1402aaf70 case 10 380586-380644（對象是人物或勢力，或只有地點）
 {1} began accepting bribes in exchange for leniency as the {%2} of {3}.	{1}以{3}{2}的身分開始收受賄賂並從輕發落。	{1}以{3}{2}的身份开始收受贿赂并从轻发落。	inner	FUN_1402aaf70 380267-380332 case 5（the職位）
 {1} began passing a portion of corruptly-obtained funds to {2} via {3}.	{1}經由{3}開始將部分不法所得轉交給{2}。	{1}经由{3}开始将部分不法所得转交给{2}。	inner	FUN_1402aaf70 380267-380332 case 5 (0xf9)
 {1} began accepting bribes in exchange for leniency as a {%2} of {3}.	{1}以{3}{2}的身分開始收受賄賂並從輕發落。	{1}以{3}{2}的身份开始收受贿赂并从轻发落。	inner	FUN_1402aaf70 380267-380332 case 5（a職位）
-{1} made an agreement with {2}, becoming a resident of {3} to study.	{1}與{2}達成協議，成為{3}的居民，從事研究。	{1}与{2}达成协议，成为{3}的居民，从事研究。	inner	FUN_1402aaf70 380180-380220 case 2
+{1} made an agreement with {2}, becoming a resident of {3} to study.	{1}與{2}達成協議，成為{3}的居留者，從事研究。	{1}与{2}达成协议，成为{3}的居留者，从事研究。	inner	FUN_1402aaf70 380180-380220 case 2
 {1} began embezzling funds under the influence of {2} via {3}.	{1}在{2}的影響下，經由{3}開始盜用公款。	{1}在{2}的影响下，经由{3}开始挪用公款。	inner	FUN_1402aaf70 380267-380332 case 5（無職位）
-{1} made an agreement with {2}, becoming a resident of {3}.	{1}與{2}達成協議，成為{3}的居民。	{1}与{2}达成协议，成为{3}的居民。	inner	FUN_1402aaf70 380180-380220 case 2
-{1} made an agreement with {2}, becoming a citizen of {3}.	{1}與{2}達成協議，成為{3}的公民。	{1}与{2}达成协议，成为{3}的公民。	inner	FUN_1402aaf70 380221-380248 case 3
+{1} made an agreement with {2}, becoming a resident of {3}.	{1}與{2}達成協議，成為{3}的居留者。	{1}与{2}达成协议，成为{3}的居留者。	inner	FUN_1402aaf70 380180-380220 case 2
+{1} made an agreement with {2}, becoming a citizen of {3}.	{1}與{2}達成協議，成為{3}的居民。	{1}与{2}达成协议，成为{3}的居民。	inner	FUN_1402aaf70 380221-380248 case 3
 {1} plotted to assassinate {2} under the influence of {3}.	{1}在{3}的影響下，密謀刺殺{2}。	{1}在{3}的影响下，密谋刺杀{2}。	inner	FUN_1402aaf70 case 8 380498-380541
 {1} plotted to infiltrate {2} under the influence of {3}.	{1}在{3}的影響下，密謀滲透{2}。	{1}在{3}的影响下，密谋渗透{2}。	inner	FUN_1402aaf70 case 0xd 380713-380792／381110-381205
 {1} promised {2} a position under the influence of {3}.	{1}在{3}的影響下，許諾給{2}一個職位。	{1}在{3}的影响下，许诺给{2}一个职位。	inner	FUN_1402aaf70 380376-380497 case 7（via 後是人物清單）
@@ -169,14 +169,14 @@ the request by {1} that {2} retrieve {3} for {4}	{1}要求{2}為{4}取回{3}	{1}
 the embezzlement of{1} as a {%2} of {3} via {4}	{1}以{3}{2}的身分經由{4}盜用公款	{1}以{3}{2}的身份经由{4}挪用公款	inner	FUN_1402ad7f0 381631-381742 case 5（原文 of 後無空白照抄）；短語
 the bribery of{1} as the {%2} of {3} via {4}	{1}以{3}{2}的身分經由{4}收受賄賂	{1}以{3}{2}的身份经由{4}收受贿赂	inner	FUN_1402ad7f0 381631-381742 case 5（原文 of 後無空白照抄）；短語
 the bribery of{1} as a {%2} of {3} via {4}	{1}以{3}{2}的身分經由{4}收受賄賂	{1}以{3}{2}的身份经由{4}收受贿赂	inner	FUN_1402ad7f0 381631-381742 case 5（原文 of 後無空白照抄）；短語
-the agreement between {1} and {2} to entertain the citizenry and become a resident of {3}	{1}與{2}關於為居民表演並成為{3}居民的協議	{1}与{2}关于为居民表演并成为{3}居民的协议	inner	FUN_1402ad7f0 381518-381563 case 2；短語
-the agreement between {1} and {2} to work as a mercenary and become a resident of {3}	{1}與{2}關於擔任傭兵並成為{3}居民的協議	{1}与{2}关于担任雇佣兵并成为{3}居民的协议	inner	FUN_1402ad7f0 381518-381563 case 2；短語
-the agreement between {1} and {2} to eradicate monsters and become a resident of {3}	{1}與{2}關於剷除怪物並成為{3}居民的協議	{1}与{2}关于铲除怪物并成为{3}居民的协议	inner	FUN_1402ad7f0 381518-381563 case 2；短語
+the agreement between {1} and {2} to entertain the citizenry and become a resident of {3}	{1}與{2}關於為居民表演並成為{3}居留者的協議	{1}与{2}关于为居民表演并成为{3}居留者的协议	inner	FUN_1402ad7f0 381518-381563 case 2；短語
+the agreement between {1} and {2} to work as a mercenary and become a resident of {3}	{1}與{2}關於擔任傭兵並成為{3}居留者的協議	{1}与{2}关于担任雇佣兵并成为{3}居留者的协议	inner	FUN_1402ad7f0 381518-381563 case 2；短語
+the agreement between {1} and {2} to eradicate monsters and become a resident of {3}	{1}與{2}關於剷除怪物並成為{3}居留者的協議	{1}与{2}关于铲除怪物并成为{3}居留者的协议	inner	FUN_1402ad7f0 381518-381563 case 2；短語
 the plot of {1} to sabotage the activities of {2} under the influence of {3}	{1}在{3}影響下破壞{2}活動的陰謀	{1}在{3}影响下破坏{2}活动的阴谋	inner	FUN_1402ad7f0 case 10 382128-382224；短語
-the agreement between {1} and {2} to study and become a resident of {3}	{1}與{2}關於從事研究並成為{3}居民的協議	{1}与{2}关于从事研究并成为{3}居民的协议	inner	FUN_1402ad7f0 381518-381563 case 2；短語
+the agreement between {1} and {2} to study and become a resident of {3}	{1}與{2}關於從事研究並成為{3}居留者的協議	{1}与{2}关于从事研究并成为{3}居留者的协议	inner	FUN_1402ad7f0 381518-381563 case 2；短語
 the promise by {1} to {2} of a position under the influence of {3}	{1}在{3}影響下向{2}許諾一個職位	{1}在{3}影响下向{2}许诺一个职位	inner	FUN_1402ad7f0 381824-381961 case 7（via 後是人物清單）；短語
-the agreement between {1} and {2} and become a resident of {3}	{1}與{2}關於成為{3}居民的協議	{1}与{2}关于成为{3}居民的协议	inner	FUN_1402ad7f0 381518-381563 case 2；短語
-the agreement between {1} and {2} and become a citizen of {3}	{1}與{2}關於成為{3}公民的協議	{1}与{2}关于成为{3}公民的协议	inner	FUN_1402ad7f0 381564-381591 case 3；短語
+the agreement between {1} and {2} and become a resident of {3}	{1}與{2}關於成為{3}居留者的協議	{1}与{2}关于成为{3}居留者的协议	inner	FUN_1402ad7f0 381518-381563 case 2；短語
+the agreement between {1} and {2} and become a citizen of {3}	{1}與{2}關於成為{3}居民的協議	{1}与{2}关于成为{3}居民的协议	inner	FUN_1402ad7f0 381564-381591 case 3；短語
 the passing of corruptly-obtained funds by {1} to {2} via {3}	{1}經由{3}將不法所得轉交給{2}	{1}经由{3}将不法所得转交给{2}	inner	FUN_1402ad7f0 381631-381742 case 5 (0xf9)；短語
 the plot of {1} to assassinate {2} under the influence of {3}	{1}在{3}影響下刺殺{2}的陰謀	{1}在{3}影响下刺杀{2}的阴谋	inner	FUN_1402ad7f0 case 8 381962-382044；短語
 the plot of {1} to infiltrate {2} under the influence of {3}	{1}在{3}影響下滲透{2}的陰謀	{1}在{3}影响下渗透{2}的阴谋	inner	FUN_1402ad7f0 case 0xd 382290-382329；短語

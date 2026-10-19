@@ -74,8 +74,8 @@ fn spans(src: usize, dst: usize) -> Vec<Vec<(usize, f32)>> {
         .collect()
 }
 
-/// 讀 8-bit RGBA PNG，以面積平均縮成 dw×dh，回傳預乘像素。
-fn load_scaled(src: &Path, dh: usize) -> Result<(usize, Vec<[f32; 4]>), String> {
+/// 讀 8-bit RGBA PNG：(寬, 高, 像素)
+fn read_png(src: &Path) -> Result<(usize, usize, Vec<u8>), String> {
     let file = File::open(src).map_err(|e| format!("{}: {e}", src.display()))?;
     let mut reader = png::Decoder::new(BufReader::new(file)).read_info().map_err(|e| format!("{}: {e}", src.display()))?;
     let mut buf = vec![0; reader.output_buffer_size().ok_or("png too large")?];
@@ -83,9 +83,16 @@ fn load_scaled(src: &Path, dh: usize) -> Result<(usize, Vec<[f32; 4]>), String> 
     if info.color_type != png::ColorType::Rgba || info.bit_depth != png::BitDepth::Eight {
         return Err(format!("{}: 需要 8-bit RGBA PNG", src.display()));
     }
-    let (sw, sh) = (info.width as usize, info.height as usize);
+    let (w, h) = (info.width as usize, info.height as usize);
+    buf.truncate(w * h * 4);
+    Ok((w, h, buf))
+}
+
+/// 讀 8-bit RGBA PNG，以面積平均縮成 dw×dh，回傳預乘像素。
+fn load_scaled(src: &Path, dh: usize) -> Result<(usize, Vec<[f32; 4]>), String> {
+    let (sw, sh, buf) = read_png(src)?;
     let dw = ((sw * dh) as f32 / sh as f32).round().max(1.0) as usize;
-    let premul: Vec<[f32; 4]> = buf[..sw * sh * 4]
+    let premul: Vec<[f32; 4]> = buf
         .chunks_exact(4)
         .map(|p| {
             let a = p[3] as f32 / 255.0;
@@ -214,4 +221,83 @@ pub fn mascot(src: &Path, out: &Path, cell_w: usize, cell_h: usize, rows: usize,
 
     write_png(out, canvas.w, canvas.h, &canvas.to_rgba())?;
     Ok(cols)
+}
+
+/// 工作指令條件的三個圖形按鈕：原版 interface_bits_work_orders.png 第 6 列起的 WORK_ORDERS_CHANGE_TYPE、_MAT、_ADJ，
+/// 每個 4×3 格（一格 8×12 像素），英文字畫在圖裡。原圖照格子大小放大（最近鄰，保留像素風的框線），英文字的範圍塗回底色，
+/// 正中間畫 labels 的中文（白字）。三個按鈕左右並排輸出（12×3 格），Lua 切成格子貼圖換掉遊戲的貼圖編號。
+pub fn work_order_buttons(src: &Path, out: &Path, cell_w: usize, cell_h: usize, labels: &[&str], fonts: &[Font]) -> Result<(), String> {
+    const TILE: (usize, usize) = (8, 12);
+    const FIRST_ROW: usize = 6;
+    let (sw, sh, px) = read_png(src)?;
+    let (bw, bh) = (4 * TILE.0, 3 * TILE.1);
+    if labels.len() * bw > sw || (FIRST_ROW + 3) * TILE.1 > sh {
+        return Err(format!("{}: 圖太小（{sw}×{sh}），不是原版的工作指令按鈕圖", src.display()));
+    }
+    let (ow, oh) = (4 * cell_w, 3 * cell_h);
+    let longest = labels.iter().map(|l| l.chars().count()).max().unwrap_or(1).max(1);
+    let em = (cell_h as f32 * 0.9).round().min(((ow - 4) / longest) as f32).max(1.0);
+    let glyphs = Glyphs::with_px(fonts, em)?;
+    let pixel = |x: usize, y: usize| -> [u8; 4] {
+        let o = (y * sw + x) * 4;
+        [px[o], px[o + 1], px[o + 2], px[o + 3]]
+    };
+    let bright = |p: [u8; 4]| p[3] > 0 && p[0] > 160 && p[1] > 160 && p[2] > 160;
+    let mut rgba = vec![0u8; labels.len() * ow * oh * 4];
+    let out_w = labels.len() * ow;
+    for (b, label) in labels.iter().enumerate() {
+        let (x0, y0) = (b * bw, FIRST_ROW * TILE.1);
+        // 英文字（白色）的範圍，外擴一像素；底色取範圍裡最多的非白色
+        let (mut l, mut t, mut r, mut d) = (bw, bh, 0, 0);
+        for y in 0..bh {
+            for x in 0..bw {
+                if bright(pixel(x0 + x, y0 + y)) {
+                    (l, t, r, d) = (l.min(x), t.min(y), r.max(x), d.max(y));
+                }
+            }
+        }
+        if l > r {
+            return Err(format!("{}: 第 {} 個按鈕找不到字", src.display(), b + 1));
+        }
+        let (l, t, r, d) = (l.saturating_sub(1), t.saturating_sub(1), (r + 1).min(bw - 1), (d + 1).min(bh - 1));
+        let mut counts: std::collections::HashMap<[u8; 4], usize> = std::collections::HashMap::new();
+        for y in t..=d {
+            for x in l..=r {
+                let p = pixel(x0 + x, y0 + y);
+                if !bright(p) {
+                    *counts.entry(p).or_default() += 1;
+                }
+            }
+        }
+        let bg = counts.into_iter().max_by_key(|&(_, n)| n).map_or([28, 28, 28, 255], |(p, _)| p);
+        for dy in 0..oh {
+            for dx in 0..ow {
+                let (sx, sy) = (dx * bw / ow, dy * bh / oh);
+                let p = if (l..=r).contains(&sx) && (t..=d).contains(&sy) { bg } else { pixel(x0 + sx, y0 + sy) };
+                let o = (dy * out_w + b * ow + dx) * 4;
+                rgba[o..o + 4].copy_from_slice(&p);
+            }
+        }
+        // 中文字：照字寬並排、整組置中；白字疊在底色上
+        let boxes: Vec<(char, usize)> = label.chars().map(|c| (c, glyphs.advance(c).unwrap_or(em).round().max(1.0) as usize)).collect();
+        let total: usize = boxes.iter().map(|b| b.1).sum();
+        let mut x = b * ow + ow.saturating_sub(total) / 2;
+        for (c, w) in boxes {
+            let mut mask = vec![0u8; w * oh];
+            if !glyphs.draw(c, w, oh, 0.0, &mut mask)? {
+                return Err(format!("「{c}」沒有字型能畫"));
+            }
+            for y in 0..oh {
+                for k in 0..w {
+                    let a = mask[y * w + k] as u32;
+                    let o = (y * out_w + x + k) * 4;
+                    for ch in 0..3 {
+                        rgba[o + ch] = ((255 * a + rgba[o + ch] as u32 * (255 - a)) / 255) as u8;
+                    }
+                }
+            }
+            x += w;
+        }
+    }
+    write_png(out, out_w, oh, &rgba)
 }

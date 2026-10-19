@@ -79,9 +79,9 @@ When loaded as a module, this script will export the following functions:	當作
 * "load_default()"        : Load the default color scheme	* "load_default()"        : 載入預設配色方案	* "load_default()"        : 加载默认配色方案		DFHack docs tools/color-schemes.txt
 This tool can make a unit care more/less about seeing corpses.	這個工具可以讓單位更在意或更不在意看到屍體。	这个工具可以让单位更在意或更不在意看到尸体。		DFHack docs tools/combat-harden.txt
 Make the currently selected unit fully combat hardened	讓目前選取的單位完全戰鬥麻木	让当前选中的单位完全战斗麻木		DFHack docs tools/combat-harden.txt
-Make all fort citizens moderately combat hardened.	讓要塞所有公民達到中度戰鬥麻木。	让要塞所有公民达到中度战斗麻木。		DFHack docs tools/combat-harden.txt
+Make all fort citizens moderately combat hardened.	讓要塞所有居民達到中度戰鬥麻木。	让要塞所有居民达到中度战斗麻木。		DFHack docs tools/combat-harden.txt
 All active units will be affected.	所有活動中的單位都會受影響。	所有活动中的单位都会受影响。		DFHack docs tools/combat-harden.txt
-All citizens and residents of your fort will be affected. Will do nothing in adventure mode.	要塞的所有公民與居民都會受影響。在冒險模式中沒有作用。	要塞的所有公民和居民都会受影响。在冒险模式中没有作用。		DFHack docs tools/combat-harden.txt
+All citizens and residents of your fort will be affected. Will do nothing in adventure mode.	要塞的所有居民與居留者都會受影響。在冒險模式中沒有作用。	要塞的所有居民和居留者都会受影响。在冒险模式中没有作用。		DFHack docs tools/combat-harden.txt
 The given unit will be affected.	指定的單位會受影響。	指定的单位会受影响。		DFHack docs tools/combat-harden.txt
 If no option is given or the indicated unit can't be found, the script will use the currently selected unit.	沒有給選項或找不到指定的單位時，腳本會使用目前選取的單位。	没有给出选项或找不到指定的单位时，脚本会使用当前选中的单位。		DFHack docs tools/combat-harden.txt
 A percent value (0 to 100, inclusive) to set combat hardened to.	要設定的戰鬥麻木百分比（0 到 100，含兩端）。	要设置的战斗麻木百分比（0 到 100，含两端）。		DFHack docs tools/combat-harden.txt
@@ -132,7 +132,7 @@ Configures autofarm to become automatically enabled when you start a new fort.	�
 Configures fix/blood-del to run once when you start a new fort.	設定 fix/blood-del 在開始新要塞時執行一次。	设置 fix/blood-del 在开始新要塞时运行一次。		DFHack docs tools/control-panel.txt
 Enable "mortal mode" and hide "armok" tools in the DFHack UIs. Note that this will also remove some entries from the "control-panel list" output. Run "control-panel list" to see all preference options and their descriptions.	啟用「凡人模式」，在 DFHack 介面中隱藏「armok」工具。注意這也會從 "control-panel list" 的輸出移除部分項目。執行 "control-panel list" 可查看所有偏好選項及其說明。	启用“凡人模式”，在 DFHack 界面中隐藏“armok”工具。注意这也会从 "control-panel list" 的输出移除部分条目。运行 "control-panel list" 可查看所有偏好选项及其说明。		DFHack docs tools/control-panel.txt
 Other scripts can query whether a command is set for autostart via the script API:	其他腳本可以透過腳本 API 查詢某個指令是否設為自動啟動：	其他脚本可以通过脚本 API 查询某个命令是否设为自动启动：		DFHack docs tools/control-panel.txt
-You can create new items of any type and made of any material. By default, items created are spawned at the feet of the selected unit. If no unit is selected, the first citizen will be used as the creator unit and the items will be spawned at the location of the keyboard cursor.	你可以建立任何種類、任何材料的新物品。預設情況下，建立的物品會出現在選取單位的腳邊。若沒有選取單位，會以第一位公民作為製作者，物品出現在鍵盤游標的位置。	你可以创建任何种类、任何材料的新物品。默认情况下，创建的物品会出现在选中单位的脚边。若没有选中单位，会以第一位公民作为制作者，物品出现在键盘光标的位置。		DFHack docs tools/createitem.txt；術語例外：location；位置，不是場所
+You can create new items of any type and made of any material. By default, items created are spawned at the feet of the selected unit. If no unit is selected, the first citizen will be used as the creator unit and the items will be spawned at the location of the keyboard cursor.	你可以建立任何種類、任何材料的新物品。預設情況下，建立的物品會出現在選取單位的腳邊。若沒有選取單位，會以第一位居民作為製作者，物品出現在鍵盤游標的位置。	你可以创建任何种类、任何材料的新物品。默认情况下，创建的物品会出现在选中单位的脚边。若没有选中单位，会以第一位居民作为制作者，物品出现在键盘光标的位置。		DFHack docs tools/createitem.txt；術語例外：location；位置，不是場所
 Specify the item and material information as you would indicate them in custom reaction raws, with the following differences:	物品與材料的寫法和自訂反應 raws 相同，但有下列差異：	物品和材料的写法和自定义反应 raws 相同，但有下列差异：		DFHack docs tools/createitem.txt
 * Separate the item and material with a space rather than a colon	* 物品與材料之間用空白分隔，而不是冒號	* 物品和材料之间用空格分隔，而不是冒号		DFHack docs tools/createitem.txt
 * If the item has no subtype, the ":NONE" can be omitted	* 物品沒有子類型時，可以省略 ":NONE"	* 物品没有子类型时，可以省略 ":NONE"		DFHack docs tools/createitem.txt

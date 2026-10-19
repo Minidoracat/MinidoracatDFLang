@@ -6,8 +6,8 @@ Enter desired target for {1}:	輸入{1}的目標數量：	输入{1}的目标数�
 Click on a tile to spawn a {#1}/7 level of {%2}	點選格子以生成深度 {1}/7 的{2}	点击格子以生成深度 {1}/7 的{2}		DFHack hack/scripts/gui/liquids.lua L140 說明，{2} 是 Water／Magma／River
 ore of {%1}	{1}礦石	{1}矿石		DFHack hack/lua/gui/materials.lua L553 物品特性清單，{1} 是金屬名
 Draw boxes around units to select, or double click on a tile to teleport {#1} selected unit(s).	框選單位以選取，或連按兩下某一格，把選取的 {1} 個單位傳送過去。	框住单位来选择，或双击某一格，把选中的 {1} 个单位传送过去。		DFHack hack/scripts/gui/teleport.lua L250 說明（WrappedLabel，已選取單位時）
-{1} (citizen)	{1} (公民)	{1} (公民)		DFHack hack/scripts/gui/teleport.lua L205 已選取單位清單：單位名＋身分
-{1} (resident)	{1} (居民)	{1} (居民)		DFHack hack/scripts/gui/teleport.lua L206 已選取單位清單
+{1} (citizen)	{1} (居民)	{1} (居民)		DFHack hack/scripts/gui/teleport.lua L205 已選取單位清單：單位名＋身分
+{1} (resident)	{1} (居留者)	{1} (居留者)		DFHack hack/scripts/gui/teleport.lua L206 已選取單位清單
 {1} (hostile)	{1} (敵對)	{1} (敌对)		DFHack hack/scripts/gui/teleport.lua L207 已選取單位清單
 {1} (merchant)	{1} (商人)	{1} (商人)		DFHack hack/scripts/gui/teleport.lua L209 已選取單位清單
 {1} (wild)	{1} (野生)	{1} (野生)		DFHack hack/scripts/gui/teleport.lua L213 已選取單位清單

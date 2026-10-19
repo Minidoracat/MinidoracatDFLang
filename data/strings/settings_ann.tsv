@@ -34,7 +34,7 @@ Struck economic mineral	挖到經濟礦物	挖到经济矿物		FUN_140749ee0 L10
 (Combat) Nauseated	（戰鬥）噁心	（战斗）恶心		FUN_140749ee0 L1019005 case 0x30：設定「公告」分頁的公告種類名；戰鬥
 Dig canceled (warm)	挖掘取消（溫熱）	挖掘取消（温热）		FUN_140749ee0 L1019008 case 0x33：設定「公告」分頁的公告種類名；挖到熔岩邊緣的溫熱岩石
 Dig canceled (wet)	挖掘取消（潮濕）	挖掘取消（潮湿）		FUN_140749ee0 L1019011 case 0x34：設定「公告」分頁的公告種類名；挖到含水層邊緣的潮濕岩石
-Ambush (resident)	伏擊（居民）	伏击（居民）		FUN_140749ee0 L1019014 case 0x36：設定「公告」分頁的公告種類名
+Ambush (resident)	伏擊（居民）	伏击（居民）		FUN_140749ee0 L1019014 case 0x36：設定「公告」分頁的公告種類名；術語例外：resident；泛指要塞或當地的住民，不是居留身分
 Ambush (thief)	伏擊（小偷）	伏击（小偷）		FUN_140749ee0 L1019017 case 0x37：設定「公告」分頁的公告種類名
 Ambush (thief, skulking)	伏擊（小偷，潛行）	伏击（小偷，潜行）		FUN_140749ee0 L1019020 case 0x38：設定「公告」分頁的公告種類名；公告「An ambush!  Skulking vermin!」
 Ambush (thief, nature)	伏擊（小偷，自然）	伏击（小偷，自然）		FUN_140749ee0 L1019023 case 0x39：設定「公告」分頁的公告種類名；公告「An ambush!  Curse all friends of nature!」
@@ -118,7 +118,7 @@ Transformation	變形	变形		FUN_140749ee0 L1019290 case 0x93：設定「公告
 Interaction (user)	互動（施用者）	互动（施用者）		FUN_140749ee0 L1019293 case 0x94：設定「公告」分頁的公告種類名；法術、詛咒等互動效果的使用方
 Interaction (target)	互動（目標）	互动（目标）		FUN_140749ee0 L1019296 case 0x95：設定「公告」分頁的公告種類名；互動效果的對象
 Undead attack	亡靈襲擊	亡灵袭击		FUN_140749ee0 L1019299 case 0x96：設定「公告」分頁的公告種類名
-Citizen missing	公民失蹤	公民失踪		FUN_140749ee0 L1019302 case 0x97：設定「公告」分頁的公告種類名；同 Citizen death 公民死亡
+Citizen missing	居民失蹤	居民失踪		FUN_140749ee0 L1019302 case 0x97：設定「公告」分頁的公告種類名；同 Citizen death 居民死亡
 Pet missing	寵物失蹤	宠物失踪		FUN_140749ee0 L1019305 case 0x98：設定「公告」分頁的公告種類名
 Embrace	擁抱	拥抱		FUN_140749ee0 L1019308 case 0x99：設定「公告」分頁的公告種類名
 Weird weather	怪異天氣	怪异天气		FUN_140749ee0 L1019311 case 0x9a：設定「公告」分頁的公告種類名
@@ -146,8 +146,8 @@ Conversation (Conflict)	交談（衝突）	交谈（冲突）		FUN_140749ee0 L10
 Assumed position	就任職位	就任职位		FUN_140749ee0 L1019383 case 0xb2：設定「公告」分頁的公告種類名
 Mechanism sounds	機關聲響	机关声响		FUN_140749ee0 L1019386 case 0xb3：設定「公告」分頁的公告種類名
 Wild animal gave birth	野生動物產子	野生动物产仔		FUN_140749ee0 L1019389 case 0xb4：設定「公告」分頁的公告種類名
-Citizen overwhelmed by stress	公民被壓力壓垮	公民被压力压垮		FUN_140749ee0 L1019392 case 0xb5：設定「公告」分頁的公告種類名
-Citizen lost to stress	公民因壓力崩潰	公民因压力崩溃		FUN_140749ee0 L1019395 case 0xb6：設定「公告」分頁的公告種類名
+Citizen overwhelmed by stress	居民被壓力壓垮	居民被压力压垮		FUN_140749ee0 L1019392 case 0xb5：設定「公告」分頁的公告種類名
+Citizen lost to stress	居民因壓力崩潰	居民因压力崩溃		FUN_140749ee0 L1019395 case 0xb6：設定「公告」分頁的公告種類名
 Tantrum	發脾氣	发脾气		FUN_140749ee0 L1019398 case 0xb7：設定「公告」分頁的公告種類名；公告「大發脾氣」，原文 7 格只放得下三字
 Enemy moved out of range	敵人移出範圍	敌人移出范围		FUN_140749ee0 L1019401 case 0xb8：設定「公告」分頁的公告種類名
 Cannot jump	無法跳躍	无法跳跃		FUN_140749ee0 L1019404 case 0xb9：設定「公告」分頁的公告種類名
@@ -211,7 +211,7 @@ Pet adopts owner	寵物認主	宠物认主		FUN_140749ee0 L1019585 case 0xf8：�
 Vermin bite	小動物咬傷	小动物咬伤		FUN_140749ee0 L1019588 case 0xf9：設定「公告」分頁的公告種類名
 Unable to complete building	無法完成建築	无法完成建筑		FUN_140749ee0 L1019591 case 0xfa：設定「公告」分頁的公告種類名
 Job removed from unpowered building	建築無動力，工作被移除	建筑无动力，工作被移除		FUN_140749ee0 L1019594 case 0xfb：設定「公告」分頁的公告種類名
-Citizen kidnapped	公民遭綁架	公民遭绑架		FUN_140749ee0 L1019597 case 0xfc：設定「公告」分頁的公告種類名
+Citizen kidnapped	居民遭綁架	居民遭绑架		FUN_140749ee0 L1019597 case 0xfc：設定「公告」分頁的公告種類名
 Vermin disturbed	小動物受驚	小动物受惊		FUN_140749ee0 L1019600 case 0xfd：設定「公告」分頁的公告種類名
 Land gains a status	領地升格	领地升格		FUN_140749ee0 L1019603 case 0xfe：設定「公告」分頁的公告種類名；同公告「已升格為」
 Land's status elevated	領地地位提升	领地地位提升		FUN_140749ee0 L1019606 case 0xff：設定「公告」分頁的公告種類名
@@ -234,10 +234,10 @@ No fish to catch	沒有魚可捕	没有鱼可捕		FUN_140749ee0 L1019654 case 0x
 Demand forgotten	要求被遺忘	要求被遗忘		FUN_140749ee0 L1019657 case 0x111：設定「公告」分頁的公告種類名
 New demand	新要求	新要求		FUN_140749ee0 L1019660 case 0x112：設定「公告」分頁的公告種類名
 New mandate	新命令	新命令		FUN_140749ee0 L1019663 case 0x113：設定「公告」分頁的公告種類名
-Local resident creature named	當地居民生物獲得名字	当地居民生物获得名字		FUN_140749ee0 L1019666 case 0x115：設定「公告」分頁的公告種類名
+Local resident creature named	當地居民生物獲得名字	当地居民生物获得名字		FUN_140749ee0 L1019666 case 0x115：設定「公告」分頁的公告種類名；術語例外：resident；泛指要塞或當地的住民，不是居留身分
 Somebody grows up	長大成年	长大成年		FUN_140749ee0 L1019669 case 0x116：設定「公告」分頁的公告種類名
-Citizen becomes soldier	公民成為士兵	公民成为士兵		FUN_140749ee0 L1019672 case 0x11a：設定「公告」分頁的公告種類名
-Citizen becomes civilian	公民成為平民	公民成为平民		FUN_140749ee0 L1019675 case 0x11b：設定「公告」分頁的公告種類名
+Citizen becomes soldier	居民成為士兵	居民成为士兵		FUN_140749ee0 L1019672 case 0x11a：設定「公告」分頁的公告種類名
+Citizen becomes civilian	居民成為平民	居民成为平民		FUN_140749ee0 L1019675 case 0x11b：設定「公告」分頁的公告種類名
 Party organized	舉辦派對	举办派对		FUN_140749ee0 L1019678 case 0x11c：設定「公告」分頁的公告種類名
 Tantrum (possessed by ghost)	發脾氣（鬼魂附身）	发脾气（鬼魂附身）		FUN_140749ee0 L1019681 case 0x11d：設定「公告」分頁的公告種類名；術語 possessed 附身
 Building toppled by ghost	建築被鬼魂推倒	建筑被鬼魂推倒		FUN_140749ee0 L1019684 case 0x11e：設定「公告」分頁的公告種類名
@@ -268,7 +268,7 @@ New apprenticeship	新的師徒關係	新的师徒关系		FUN_140749ee0 L1019774
 Petition ignored	請願遭忽視	请愿被忽视		FUN_140749ee0 L1019777 case 0x13e：設定「公告」分頁的公告種類名；術語 petition 請願
 Tree chopped	砍倒樹木	砍倒树木		FUN_140749ee0 L1019780 case 0x13f：設定「公告」分頁的公告種類名
 You cannot construct here	你無法在此建造	你无法在此建造		FUN_140749ee0 L1019783 case 0x140：設定「公告」分頁的公告種類名
-Rumor spread by citizen	公民散布傳聞	公民散布传闻		FUN_140749ee0 L1019786 case 0x141：設定「公告」分頁的公告種類名
+Rumor spread by citizen	居民散布傳聞	居民散布传闻		FUN_140749ee0 L1019786 case 0x141：設定「公告」分頁的公告種類名
 Thief (villain)	小偷（反派）	小偷（反派）		FUN_140749ee0 L1019789 case 0x142：設定「公告」分頁的公告種類名
 Visitor shared rumor(s)	訪客分享傳聞	访客分享传闻		FUN_140749ee0 L1019792 case 0x143：設定「公告」分頁的公告種類名
 Returning soldiers bring rumor(s)	歸來的士兵帶回傳聞	归来的士兵带回传闻		FUN_140749ee0 L1019795 case 0x144：設定「公告」分頁的公告種類名
@@ -296,7 +296,7 @@ Mountainhome achieved	成為山之家	成为山之家		FUN_140749ee0 L1019864 ca
 Put on item	穿上物品	穿上物品		FUN_140749ee0 L1019870 case 0x15d：設定「公告」分頁的公告種類名
 Take off item	脫下物品	脱下物品		FUN_140749ee0 L1019873 case 0x15e：設定「公告」分頁的公告種類名
 Creature stuck	生物受困	生物受困		FUN_140749ee0 L1019876 case 0x160：設定「公告」分頁的公告種類名
-Citizen stuck	公民受困	公民受困		FUN_140749ee0 L1019879 case 0x161：設定「公告」分頁的公告種類名
+Citizen stuck	居民受困	居民受困		FUN_140749ee0 L1019879 case 0x161：設定「公告」分頁的公告種類名
 Tavern keeper shirking duties	酒館老闆怠忽職守	酒馆老板玩忽职守		FUN_140749ee0 L1019882 case 0x162：設定「公告」分頁的公告種類名；術語 Tavern Keeper 酒館老闆
 Vomit blood	吐血	吐血		FUN_140749ee0 L1019564 case 0xf1：設定「公告」分頁的公告種類名；蓋過片段拼出的「嘔吐物血液」
 Clear weather	天氣放晴	天气放晴		FUN_140749ee0 L1019699 case 0x124：設定「公告」分頁的公告種類名；蓋過片段拼出的「清除天氣」；同公告「天氣放晴了」

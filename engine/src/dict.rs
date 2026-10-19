@@ -54,6 +54,14 @@ pub struct Entry {
     pub compact: Option<usize>,
 }
 
+/// 字圖編號帶這一位的是窄字（一字一格，見 Dict::narrow）：整句貼圖關著、名字照兩格放不下時，字橫向壓窄畫在一格裡
+pub const NARROW: u32 = 1 << 31;
+
+/// 字圖佔幾格：一般兩格，窄字一格
+pub fn glyph_cells(glyph: u32) -> usize {
+    if glyph & NARROW != 0 { 1 } else { 2 }
+}
+
 impl Entry {
     pub fn shadow(&self) -> &[u8] {
         &self.shadow[..self.shadow.len() - 1]
@@ -67,8 +75,8 @@ impl Entry {
         }
         let mut cut = space as usize;
         let mut n = 0;
-        for &(off, _) in &self.glyphs {
-            if off + 2 > cut {
+        for &(off, g) in &self.glyphs {
+            if off + glyph_cells(g) > cut {
                 cut = cut.min(off);
                 break;
             }
@@ -628,6 +636,8 @@ pub struct Dict {
     cache: Mutex<HashMap<Vec<u8>, (Option<Arc<Entry>>, Option<u64>)>>,
     /// 截在字中間的字串 → 補完的原文（見 complete_cut）與當時名稱表的版本：名稱表整張掃一次要幾毫秒，每幀畫的同一個截短字串只補一次
     completions: Mutex<HashMap<Vec<u8>, (Option<Vec<u8>>, u64)>>,
+    /// 比原文寬的整句條目照字寬壓窄的結果（見 squeezed_fixed）
+    squeezed_cache: Mutex<HashMap<(usize, usize, bool), Option<Arc<Entry>>>>,
     /// 字 → 字圖編號；字圖 i 的左右半格在 texpos[2i]、texpos[2i+1]。完整字圖集（長度 8n，見 atlas::render）另有：
     /// 字圖 i 往下位移半格的上列左右在 [2n+4i]、[2n+4i+1]，下列左右在 [2n+4i+2]、[2n+4i+3]；錨定貼圖標籤用的小一號字在 [6n+2i]、[6n+2i+1]（見 Dict::tile）。
     pub glyph_of: HashMap<char, u32>,
@@ -653,11 +663,12 @@ pub enum Row {
 }
 
 impl Dict {
-    /// texpos 是每字左右兩格（2n，測試用），或完整字圖集（8n，見 glyph_of；後面可再接一張透明記號，見 marker）。
+    /// texpos 是每字左右兩格（2n，測試用），或完整字圖集（8n，見 glyph_of；後面可再接一張透明記號，見 marker，
+    /// 再接每字一張窄字，見 narrow）。
     pub fn set_glyphs(&mut self, chars: &str, texpos: Vec<i32>) -> bool {
         let chars: Vec<char> = chars.chars().collect();
         let n = chars.len();
-        if ![2 * n, 8 * n, 8 * n + 1].contains(&texpos.len()) {
+        if ![2 * n, 8 * n, 8 * n + 1, 9 * n + 1].contains(&texpos.len()) {
             return false;
         }
         self.glyph_of = chars.into_iter().enumerate().map(|(i, c)| (c, i as u32)).collect();
@@ -688,11 +699,18 @@ impl Dict {
     /// 清掉句型結果：選項、名字音譯、整句貼圖、字型換了以後，算好的替身字串與譯文都可能不對了
     pub fn clear_cache(&self) {
         self.cache.lock().clear();
+        self.squeezed_cache.lock().clear();
     }
 
     /// 字圖 glyph 的左（half 0）或右半格畫在 row 時的 texpos。只有一般字圖時，上列與標籤畫一般的字、下列不畫（None）。
+    /// 窄字（glyph 帶 NARROW）只有一格（half 0），字圖集沒有窄字時 None
     pub fn tile(&self, glyph: u32, half: usize, row: Row) -> Option<i32> {
-        let (g, n) = (glyph as usize, self.glyph_of.len());
+        let n = self.glyph_of.len();
+        if glyph & NARROW != 0 {
+            let g = (glyph & !NARROW) as usize;
+            return (self.texpos.len() == 9 * n + 1 && half == 0).then(|| self.texpos[8 * n + 1 + g].load(Ordering::Relaxed));
+        }
+        let g = glyph as usize;
         let full = self.texpos.len() >= n * 8;
         let i = match row {
             Row::Top if full => 2 * n + 4 * g,
@@ -704,10 +722,33 @@ impl Dict {
         self.texpos.get(i + half).map(|t| t.load(Ordering::Relaxed))
     }
 
-    /// 透明記號貼圖的 texpos（字圖集最後一張，見 atlas::render）：段落照字寬縮短時（Entry::compact）佔位格貼它
+    /// 透明記號貼圖的 texpos（字圖集第 8n 張，見 atlas::render）：段落照字寬縮短時（Entry::compact）佔位格貼它
     pub fn marker(&self) -> Option<i32> {
         let n = self.glyph_of.len() * 8;
-        (self.texpos.len() == n + 1).then(|| self.texpos[n].load(Ordering::Relaxed))
+        (self.texpos.len() > n).then(|| self.texpos[n].load(Ordering::Relaxed))
+    }
+
+    /// 窄字的譯文：中文一字一格（字圖集的窄字，橫向壓窄的字），CP437 字照舊一格。給整句貼圖關著（一字兩格）時
+    /// 名字放不進原文 cells 格用（音譯的名字常比英文寬）；字圖集沒有窄字、缺字、還是放不下時 None
+    pub fn narrow(&self, cells: usize, text: &str) -> Option<Entry> {
+        if self.texpos.len() != 9 * self.glyph_of.len() + 1 {
+            return None;
+        }
+        let mut shadow = Vec::with_capacity(text.len() + 1);
+        let mut glyphs = Vec::new();
+        for c in text.chars() {
+            if let Some(b) = cp437::byte_of(c) {
+                shadow.push(b);
+            } else {
+                glyphs.push((shadow.len(), *self.glyph_of.get(&c)? | NARROW));
+                shadow.push(b' ');
+            }
+        }
+        if shadow.len() > cells {
+            return None;
+        }
+        shadow.push(0);
+        Some(Entry { shadow, glyphs, text: text.to_owned(), align: b'l', compact: None })
     }
 
     /// 任一段文字的替身字串與字圖（段落換行後的一段，見 mtb.rs）；缺字圖時回傳 None。
@@ -730,6 +771,37 @@ impl Dict {
         let mut shadow = vec![b' '; lead + crate::metrics::cells(crate::metrics::width(body))];
         shadow.push(0);
         Some(Entry { shadow, glyphs: Vec::new(), text: body.to_owned(), align: b'l', compact: Some(lead) })
+    }
+
+    /// 照字型實際字寬（整句貼圖開著時）把譯文放進 cells 格：比 cells 寬、壓到 SQUEEZE 放得下的，替身字串截成 cells 格，
+    /// 整句貼圖把字壓窄畫進去。放不下、或整句貼圖關著（一字兩格，不會比較窄）時 None
+    pub fn squeezed(&self, cells: usize, text: &str) -> Option<Entry> {
+        let mut entry = self.para_entry(text)?;
+        if entry.shadow().len() > cells {
+            let room = cells.checked_sub(entry.compact?)? * crate::metrics::UNIT;
+            if crate::metrics::width(&entry.text) as f32 * SQUEEZE > room as f32 {
+                return None;
+            }
+            entry.shadow.truncate(cells);
+            entry.shadow.push(0);
+        }
+        Some(entry)
+    }
+
+    /// 比原文寬的整句條目（名稱檔的三字名「食人魔」、職位名「女領主」）照字寬壓窄放進原文 cells 格（見 squeezed）：
+    /// 每畫一次就要問，結果記下來；鍵是條目在字典裡的位址（條目不會搬家）、格數與整句貼圖開關
+    pub fn squeezed_fixed(&self, entry: &Entry, cells: usize) -> Option<Arc<Entry>> {
+        let key = (entry as *const Entry as usize, cells, crate::metrics::compact());
+        if let Some(hit) = self.squeezed_cache.lock().get(&key) {
+            return hit.clone();
+        }
+        let made = self.squeezed(cells, &entry.text).map(Arc::new);
+        let mut cache = self.squeezed_cache.lock();
+        if cache.len() >= CACHE_LIMIT {
+            cache.clear();
+        }
+        cache.insert(key, made.clone());
+        made
     }
 
     /// `align` 是呼叫端對原文的對齊方式：遊戲先用原文長度算好起點再寫字，
@@ -1099,6 +1171,10 @@ impl Dict {
 
     /// 一個片段的譯文：整句字典（含大寫退回小寫）、遊戲組過的世界生成名稱（見 names.rs），再套句型。
     fn piece(&self, key: &[u8], depth: usize, memo: &mut Memo) -> Option<Found> {
+        // 佔位抓到玩家正在輸入框打的字（「Search: Gems」）：照原文，比字典優先
+        if depth > 0 && crate::typed::is_typed(key) {
+            return Some((vec![(cp437::decode(key), 0)], true));
+        }
         if let Some(e) = if depth > 0 { lookup_inner(self, key) } else { lookup_name(self, key) } {
             return Some((vec![(e.text.clone(), 0)], true));
         }
@@ -1528,21 +1604,13 @@ impl Dict {
         };
         // 照字型的實際字寬比（整句貼圖開著時；一字兩格時 para_entry 同 text_entry）：靠左、從原文起點緊排畫。
         // 比原文寬、壓窄到 SQUEEZE 放得下的，替身字串截成原文的長度，整句貼圖把字壓窄畫進去
-        let tight = |text: &str| {
-            let mut entry = self.para_entry(text)?;
-            if entry.shadow().len() > key.len() {
-                let room = key.len().checked_sub(entry.compact?)? * crate::metrics::UNIT;
-                if crate::metrics::width(&entry.text) as f32 * SQUEEZE > room as f32 {
-                    return None;
-                }
-                entry.shadow.truncate(key.len());
-                entry.shadow.push(0);
-            }
-            Some(Arc::new(entry))
-        };
-        // 一個中文字照兩格算放不下時（音譯的名字、「母雞，♀ (馴服)」這類短的「名稱，♀ (馴服)」），名字與靠左的句型結果
-        // 照字型實際字寬再比。一字兩格時 para_entry 同 text_entry，不會放寬
-        let left_fits = |text: &str, align: &str| fits(text, align).or_else(|| align.is_empty().then(|| tight(text)).flatten());
+        let tight = |text: &str| self.squeezed(key.len(), text).map(Arc::new);
+        // 整句貼圖關著（一字兩格）時照兩格放不下：中文改用窄字，一字一格（見 narrow）
+        let narrow = |text: &str| (!crate::overlay::ON.load(Ordering::Relaxed)).then(|| self.narrow(key.len(), text)).flatten().map(Arc::new);
+        // 一個中文字照兩格算放不下時（音譯的名字、「母雞，♀ (馴服)」這類短的「名稱，♀ (馴服)」、清單的「名字，職業」），
+        // 名字與靠左的句型結果照字型實際字寬再比（整句貼圖開著），或改用窄字（關著）
+        let left_fits =
+            |text: &str, align: &str| fits(text, align).or_else(|| align.is_empty().then(|| tight(text).or_else(|| narrow(text))).flatten());
         // 小寫寫法的原文和 key 等長，替身字串與對齊都能照用
         let entry = lookup_name(self, key).map(|e| Arc::new(e.clone()))
             .or_else(|| crate::names::get(key).and_then(|zh| left_fits(&zh, "")))
@@ -1746,6 +1814,37 @@ mod tests {
         assert_eq!(cells(b"Abcdefghij"), Some(10), "放得下照實際字寬");
         assert_eq!(cells(b"Abcdefghi"), Some(9), "壓窄放得下：替身字串不超出原文，字交給整句貼圖壓窄");
         assert_eq!(cells(b"Abcdefgh"), None, "壓到九成還放不下照英文");
+    }
+
+    #[test]
+    fn fixed_entries_wider_than_the_source_are_squeezed_into_it() {
+        // 名稱檔的三字名（「女領主」）：照一字兩格 6 格、原文 lady 4 格；字型實際字寬 3 × 1.375 = 4.125 格，壓到九成放得下。
+        // 測試的字寬表只有「他很有幽默感。不太在意」（見 metrics::test_compact），借用其中的字
+        crate::metrics::test_compact();
+        let mut d = Dict::default();
+        let chars = "他很有幽默感。不太在意";
+        assert!(d.set_glyphs(chars, vec![0; chars.chars().count() * 8 + 1]));
+        d.load_tsv("lady\t幽默感\nox\t不太在意\n");
+        let squeezed = |k: &[u8]| d.squeezed_fixed(&d.entries[k], k.len()).map(|e| (e.shadow().len(), e.compact));
+        assert_eq!(squeezed(b"lady"), Some((4, Some(0))), "替身字串不超出原文，字交給整句貼圖壓窄");
+        assert_eq!(squeezed(b"ox"), None, "壓到九成還放不下：照舊多畫幾格");
+    }
+
+    #[test]
+    fn names_too_wide_in_grid_cells_use_one_cell_narrow_glyphs() {
+        // 整句貼圖關著時「翁斯·莫特」照一字兩格要 9 格；窄字一字一格、間隔號照 CP437 一格，共 5 格
+        let mut d = Dict::default();
+        let chars = "翁斯莫特";
+        let n = chars.chars().count();
+        assert!(d.set_glyphs(chars, (0..(9 * n + 1) as i32).collect()));
+        let e = d.narrow(5, "翁斯·莫特").expect("一字一格放得下");
+        assert_eq!(e.shadow().len(), 5);
+        assert_eq!(e.glyphs.iter().map(|&(off, g)| (off, glyph_cells(g))).collect::<Vec<_>>(), [(0, 1), (1, 1), (3, 1), (4, 1)]);
+        assert_eq!(d.tile(e.glyphs[0].1, 0, Row::Whole), Some((8 * n + 1) as i32), "窄字排在透明記號後面");
+        assert_eq!(d.tile(e.glyphs[0].1, 1, Row::Whole), None, "窄字只有一格");
+        assert_eq!(d.marker(), Some((8 * n) as i32), "透明記號的位置不變");
+        assert!(d.narrow(4, "翁斯·莫特").is_none(), "一字一格也放不下就照英文");
+        assert_eq!(e.fit(2), (2, 2), "截斷時窄字照一格算");
     }
 
     #[test]
