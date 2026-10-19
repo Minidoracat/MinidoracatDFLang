@@ -773,13 +773,13 @@ impl Dict {
         Some(Entry { shadow, glyphs: Vec::new(), text: body.to_owned(), align: b'l', compact: Some(lead) })
     }
 
-    /// 照字型實際字寬（整句貼圖開著時）把譯文放進 cells 格：比 cells 寬、壓到 SQUEEZE 放得下的，替身字串截成 cells 格，
-    /// 整句貼圖把字壓窄畫進去。放不下、或整句貼圖關著（一字兩格，不會比較窄）時 None
-    pub fn squeezed(&self, cells: usize, text: &str) -> Option<Entry> {
+    /// 照字型實際字寬（整句貼圖開著時）把譯文放進 cells 格：比 cells 寬、字寬乘上 limit（SQUEEZE；0 是不限，呼叫的一方自己確定放得下）
+    /// 放得下的，替身字串截成 cells 格，整句貼圖把字壓窄畫進去。放不下、或整句貼圖關著（一字兩格，不會比較窄）時 None
+    pub fn squeezed(&self, cells: usize, text: &str, limit: f32) -> Option<Entry> {
         let mut entry = self.para_entry(text)?;
         if entry.shadow().len() > cells {
             let room = cells.checked_sub(entry.compact?)? * crate::metrics::UNIT;
-            if crate::metrics::width(&entry.text) as f32 * SQUEEZE > room as f32 {
+            if crate::metrics::width(&entry.text) as f32 * limit > room as f32 {
                 return None;
             }
             entry.shadow.truncate(cells);
@@ -795,7 +795,7 @@ impl Dict {
         if let Some(hit) = self.squeezed_cache.lock().get(&key) {
             return hit.clone();
         }
-        let made = self.squeezed(cells, &entry.text).map(Arc::new);
+        let made = self.squeezed(cells, &entry.text, SQUEEZE).map(Arc::new);
         let mut cache = self.squeezed_cache.lock();
         if cache.len() >= CACHE_LIMIT {
             cache.clear();
@@ -1604,11 +1604,21 @@ impl Dict {
         };
         // 照字型的實際字寬比（整句貼圖開著時；一字兩格時 para_entry 同 text_entry）：靠左、從原文起點緊排畫。
         // 比原文寬、壓窄到 SQUEEZE 放得下的，替身字串截成原文的長度，整句貼圖把字壓窄畫進去
-        let tight = |text: &str| self.squeezed(key.len(), text).map(Arc::new);
-        // 整句貼圖關著（一字兩格）時照兩格放不下：中文改用窄字，一字一格（見 narrow）
-        let narrow = |text: &str| (!crate::overlay::ON.load(Ordering::Relaxed)).then(|| self.narrow(key.len(), text)).flatten().map(Arc::new);
+        let tight = |text: &str| self.squeezed(key.len(), text, SQUEEZE).map(Arc::new);
+        // 整句貼圖關著（一字兩格）時照兩格放不下：中文改用窄字，一字一格（見 narrow）。開著時壓到 SQUEEZE 還放不下的，
+        // 一字佔一格（和窄字一樣密）放得下也照原文格數交給整句貼圖壓窄：短的音譯名（「伊德」放進「Id」兩格，約壓到七成三）
+        let narrow = |text: &str| {
+            if crate::metrics::compact() {
+                (text.chars().count() <= key.len()).then(|| self.squeezed(key.len(), text, 0.0)).flatten()
+            } else if crate::overlay::ON.load(Ordering::Relaxed) {
+                None
+            } else {
+                self.narrow(key.len(), text)
+            }
+            .map(Arc::new)
+        };
         // 一個中文字照兩格算放不下時（音譯的名字、「母雞，♀ (馴服)」這類短的「名稱，♀ (馴服)」、清單的「名字，職業」），
-        // 名字與靠左的句型結果照字型實際字寬再比（整句貼圖開著），或改用窄字（關著）
+        // 名字與靠左的句型結果照字型實際字寬再比、再一字一格（整句貼圖開著），或改用窄字（關著）
         let left_fits =
             |text: &str, align: &str| fits(text, align).or_else(|| align.is_empty().then(|| tight(text).or_else(|| narrow(text))).flatten());
         // 小寫寫法的原文和 key 等長，替身字串與對齊都能照用
@@ -1863,6 +1873,21 @@ mod tests {
         let d = make();
         assert_eq!(d.rule_entry(b"Abc is calm").map(|e| e.shadow().len()), Some(10), "靠左的照字型實際字寬放得下");
         assert!(d.rule_entry(b"Abc is quiet").is_none(), "置中的照舊照兩格算");
+    }
+
+    #[test]
+    fn left_results_too_wide_for_the_squeeze_condense_to_one_cell_per_char() {
+        // 整句貼圖開著：「幽默感不太在意」7 字照字寬 9.625 格，壓到九成 8.66 格還放不進「Ab is ok」8 格；
+        // 一字一格（和整句貼圖關著時的窄字一樣密）放得下，照原文格數交給整句貼圖壓窄
+        crate::metrics::test_compact();
+        let mut d = Dict::default();
+        let chars = "他很有幽默感。不太在意";
+        assert!(d.set_glyphs(chars, vec![0; chars.chars().count() * 8 + 1]));
+        d.load_tsv("ab\t幽默感\n");
+        d.load_rules_tsv("{@1} is ok\t{1}不太在意\n{@1} ok\t{1}不太在意\n{@1} is OK\t{1}不太在意\tc\n");
+        assert_eq!(d.rule_entry(b"Ab is ok").map(|e| e.shadow().len()), Some(8));
+        assert!(d.rule_entry(b"Ab ok").is_none(), "一字一格也放不下（7 字放進 5 格）照英文");
+        assert!(d.rule_entry(b"Ab is OK").is_none(), "置中的照舊照兩格算");
     }
 
     #[test]

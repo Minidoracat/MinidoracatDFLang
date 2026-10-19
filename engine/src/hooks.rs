@@ -1617,13 +1617,19 @@ unsafe extern "C" fn hook_translate_name(name: *const u8, out: *mut StdString, c
 }
 
 /// 名字轉原文：原函式照跑、原文照用；記下這個原名（名字音譯關著也記，打開選項就查得到音譯，見 names::note_native）。
-/// 沒有原生語言的名字（language_name +0x6c 是 -1）不記：書冊、卷軸類神器的「原文」就是英文書名，記了以後書名的第一個字
-/// （The、Fortress）也算原名，句型的片段會把它照抄（「哥布林Fortress」，見 lua/loader.lua 的 note_world_names）
+/// 沒有原生語言的名字（language_name +0x6c 是 -1）只記單一個字、又不是這個世界書名的（狗頭人的名字「Chrakadogus」）：
+/// 書冊、卷軸類神器也沒有語言，「原文」就是英文書名，記了以後書名的第一個字（The、Fortress）也算原名，句型的片段會照抄
+/// （「哥布林Fortress」，見 lua/loader.lua 的 note_world_names）。
+/// ponytail: 讀檔登記書名（set_titles）之前遊戲就組了單字書名神器的原文時，那個書名會記成原名；目前沒看到這種時序
 unsafe extern "C" fn hook_native_name(name: *const u8, out: *mut StdString) {
     let orig: NativeNameFn = unsafe { std::mem::transmute(TRAMPOLINES[15].load(Ordering::Acquire)) };
     unsafe { orig(name, out) };
-    if ENABLED.load(Ordering::Relaxed) && unsafe { read::<i32>(name, 0x6c) } >= 0 {
-        crate::names::note_native(unsafe { (*out).bytes() });
+    if !ENABLED.load(Ordering::Relaxed) {
+        return;
+    }
+    let native = unsafe { (*out).bytes() };
+    if unsafe { read::<i32>(name, 0x6c) } >= 0 || (!native.contains(&b' ') && !crate::names::is_title(native)) {
+        crate::names::note_native(native);
     }
 }
 

@@ -14,11 +14,8 @@ type GetMouseStateFn = unsafe extern "C" fn(*mut i32, *mut i32) -> u32;
 const NONE: u64 = u64::MAX;
 static FAKE: AtomicU64 = AtomicU64::new(NONE);
 static TRAMPOLINE: AtomicUsize = AtomicUsize::new(0);
-
-struct Detour(RawDetour);
-// 只在持有鎖時由 Lua 指令建立；遊戲的主執行緒只讀 TRAMPOLINE
-unsafe impl Send for Detour {}
-static DETOUR: Mutex<Option<Detour>> = Mutex::new(None);
+/// 掛過 hook 了：整個行程只掛一次、不拆（RawDetour 丟掉時會拆掉 hook，所以掛好就 forget）
+static INSTALLED: Mutex<bool> = Mutex::new(false);
 
 unsafe extern "C" fn hook_get_mouse_state(x: *mut i32, y: *mut i32) -> u32 {
     let fake = FAKE.load(Ordering::Acquire);
@@ -40,13 +37,14 @@ unsafe extern "C" fn hook_get_mouse_state(x: *mut i32, y: *mut i32) -> u32 {
 /// 假裝游標停在 (x, y)（遊戲視窗的像素）；None 改回真游標
 pub fn set(pos: Option<(i32, i32)>) -> Result<(), String> {
     if pos.is_some() {
-        let mut detour = DETOUR.lock();
-        if detour.is_none() {
+        let mut installed = INSTALLED.lock();
+        if !*installed {
             let target = crate::lua::module_export("SDL2.dll", "SDL_GetMouseState").ok_or("SDL2.dll: no SDL_GetMouseState")?;
             let d = unsafe { RawDetour::new(target as *const (), hook_get_mouse_state as *const ()) }.map_err(|e| e.to_string())?;
             TRAMPOLINE.store(d.trampoline() as *const () as usize, Ordering::Release);
             unsafe { d.enable() }.map_err(|e| e.to_string())?;
-            *detour = Some(Detour(d));
+            std::mem::forget(d);
+            *installed = true;
         }
     }
     FAKE.store(pos.map_or(NONE, |(x, y)| (u64::from(x as u32) << 32) | u64::from(y as u32)), Ordering::Release);

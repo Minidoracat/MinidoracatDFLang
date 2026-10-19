@@ -759,6 +759,14 @@ local function note_world_names(engine)
     for _, a in ipairs(w.artifacts.all) do
         if a.name.has_name and a.name.language >= 0 then engine.note_native(dfhack.translation.translateName(a.name, false)) end
     end
+    -- 沒有語言的人物（狗頭人）名字只有一個字，英文名就是原名（「Chrakadogus」）：登記成原名，名字音譯開著時才音譯得出來。
+    -- 人物的英文名在最後一段登記，到名稱表上限的一半會停，所以這裡另外跑一次
+    for _, f in ipairs(w.history.figures) do
+        if f.name.has_name and f.name.language < 0 then
+            local s = dfhack.translation.translateName(f.name, false)
+            if not s:find(' ', 1, true) then engine.note_native(s) end
+        end
+    end
     for _, d in ipairs(w.raws.itemdefs.instruments) do
         engine.note_native(d.name)
         engine.note_native(d.name_plural)
