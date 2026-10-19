@@ -150,6 +150,11 @@ def translit_lines(rows: list[dict], lang: str) -> str:
     return "".join(f"{r['en']}\t{r[lang]}\n" for r in rows if r[lang].strip())
 
 
+def text_counts(texts: dict[str, list[dict]], names: list[dict], lang: str) -> list[int]:
+    """KINDS 各有幾條有譯文的列，最後再加名稱用字數；建置印出的數字和 README 那一行（publish_workshop.py 檢查）都照這個算。"""
+    return [sum(1 for r in rows if r[lang].strip()) for rows in [*(texts[kind] for kind in KINDS), names]]
+
+
 def fetch_fonts(sources: dict[str, str]) -> None:
     """workshop.json 的 font_sources：字型檔名 → 下載網址；已下載的略過。"""
     FONTS.mkdir(parents=True, exist_ok=True)
@@ -267,9 +272,9 @@ def build_language(language: dict, config: dict, texts: dict[str, list[dict]], n
         write_text(data / f"{kind}.tsv", dict_lines(kind, texts[kind], lang))
     write_text(data / "names.tsv", name_lines(names, lang))
     write_text(data / "translit.tsv", translit_lines(translit, lang))
-    counts = "、".join(f"{sum(1 for r in texts[kind] if r[lang].strip())} 條{name}"
-                      for kind, name in zip(KINDS, ("譯文", "句型", "依畫面譯文")))
-    print(f"{lang}: {counts}、{sum(1 for r in names if r[lang].strip())} 個名稱用字、{len(chars)} 個字 -> {data.relative_to(ROOT)}")
+    *kinds, words = text_counts(texts, names, lang)
+    counts = "、".join(f"{n} 條{name}" for n, name in zip(kinds, ("譯文", "句型", "依畫面譯文")))
+    print(f"{lang}: {counts}、{words} 個名稱用字、{len(chars)} 個字 -> {data.relative_to(ROOT)}")
     return 0
 
 

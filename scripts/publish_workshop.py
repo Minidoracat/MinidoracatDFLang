@@ -1,9 +1,12 @@
 # /// script
 # requires-python = ">=3.11"
+# dependencies = ["fonttools>=4.50"]
 # ///
 """把 dist/<folder>/ 這一包（繁、簡兩種語言）上傳到 Steam 工作坊（Steamworks ISteamUGC，ctypes 載入遊戲的 steam_api64.dll）。
 
 預設只檢查並列出會做的事；加 --yes 才真的連 Steam 上傳。上傳是對外發布，執行前要有使用者明確同意。
+檢查（--yes 前也會跑）：verify_mod.py、CHANGELOG.md 與更新說明有這一版、封面大小；README.md 的目前版本、git tag 範例
+與「共有整句…」那行的數字要和 workshop.json、建置算出的一致；Steam 的 RunningAppID 要是 0（沒在跑遊戲或家庭共享）。
 
 用法（repo 根目錄，Steam 用戶端要開著並登入擁有 Dwarf Fortress 的帳號）：
   uv run scripts/publish_workshop.py                            # 檢查
@@ -11,6 +14,7 @@
   uv run scripts/publish_workshop.py --description-only --yes   # 只換各語言的標題與說明（不傳內容、封面，不留更新說明）
   uv run scripts/publish_workshop.py --description-only --screenshots --yes   # 同上，連截圖一起換（兩次發版之間更新相簿用）
   uv run scripts/publish_workshop.py --check-screenshots        # 只查項目上現有幾張截圖（不改任何東西）
+  uv run scripts/publish_workshop.py --verify                   # 只讀：查工作坊上的項目公開、沒被封、大小和 dist 一致
   uv run scripts/publish_workshop.py --retire --yes             # 停用的簡中項目換成「已合併」的標題與說明，設成不公開列出
 
 每次上傳的內容（workshop.json 的 workshop）：dist/<folder>/ 整個資料夾、標籤（tags）、封面（preview，512 動態 GIF）、
@@ -21,6 +25,7 @@
 和 --description-only 一起用時只換說明與截圖，不傳內容，更新說明不會多一筆。
 --retire：停用的項目（retired）只換預設欄位的標題與說明，並設成不公開列出（Unlisted：有連結看得到、搜尋與瀏覽列表找不到，
 已訂閱的人照舊看得到）；它的內容不再上傳。不設成私人：私人只有作者看得到，還沒改訂閱的玩家看不到改訂閱的說明。
+--yes 上傳內容後會自動跑一次 --verify，並要求項目的更新時間不早於開始上傳前 60 秒，沒過就 exit 1。
 """
 import argparse
 import ctypes
@@ -30,8 +35,13 @@ import subprocess
 import sys
 import tempfile
 import time
+import urllib.parse
+import urllib.request
+import winreg
+from datetime import datetime
 from pathlib import Path
 
+from build import KINDS, read_rows, text_counts
 from dfpaths import DF
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -40,6 +50,7 @@ STEAM_API = DF / "steam_api64.dll"
 INVALID_HANDLE = (0, 0xFFFFFFFFFFFFFFFF)
 PREVIEW_TYPE_IMAGE = 0  # k_EItemPreviewType_Image
 VISIBILITY_UNLISTED = 3  # k_ERemoteStoragePublishedFileVisibilityUnlisted
+DETAILS_API = "https://api.steampowered.com/ISteamRemoteStorage/GetPublishedFileDetails/v1/"
 # 大小上限照家族 PZ MOD 的實測（pz-mod-template 的 publish_workshop.py）：封面 1,024,000 bytes；
 # 截圖（AddItemPreviewFile）274 KB 成功、314 KB 回 EResult 25，網頁上傳的 2 MB 上限不適用
 PREVIEW_LIMIT = 1_024_000
@@ -265,15 +276,92 @@ def preflight(config: dict, with_shots: bool) -> list[str]:
         problems.append(f"缺封面 {workshop['preview']}")
     elif cover.stat().st_size > PREVIEW_LIMIT:
         problems.append(f"封面 {cover.stat().st_size:,} bytes，超過 {PREVIEW_LIMIT:,}")
+    problems += readme_problems(config)
+    problems += steam_running_problems()
     if with_shots:
         problems += shot_problems(workshop)
     return problems
+
+
+def readme_problems(config: dict) -> list[str]:
+    """README.md 的目前版本、git tag 範例照 workshop.json；「共有整句…」那行照建置算第一種語言的數字（同 build.py 印的）"""
+    version = config["version"]["displayed"]
+    readme = read("README.md")
+    problems = []
+    if f"- 目前版本 {version}（" not in readme:
+        problems.append(f"README.md「- 目前版本」那行不是 {version}")
+    tag = f'git tag -a v{version} -m "{version}" && git push origin v{version}'
+    if tag not in readme:
+        problems.append(f"README.md 的 git tag 範例要改成：{tag}")
+    texts = {kind: read_rows(kind) for kind in KINDS}
+    a, b, c, d = text_counts(texts, read_rows("names"), config["languages"][0]["lang"])
+    line = f"共有整句 {a:,} 條、句型 {b:,} 條、依畫面譯文 {c:,} 條、名稱字表 {d:,} 條、音譯表 {len(read_rows('translit')):,} 個音節。"
+    if line not in readme.splitlines():
+        old = next((s for s in readme.splitlines() if s.startswith("共有整句")), "（找不到這一行）")
+        problems.append(f"README.md「{old}」要照建置的數字改成「{line}」")
+    return problems
+
+
+def steam_running_problems() -> list[str]:
+    """Steam 正在跑遊戲（含家庭共享借出去的）時上傳會卡住或失敗，登錄檔的 RunningAppID 要是 0"""
+    try:
+        with winreg.OpenKey(winreg.HKEY_CURRENT_USER, r"Software\Valve\Steam") as key:
+            app = winreg.QueryValueEx(key, "RunningAppID")[0]
+    except OSError as e:
+        return [f"讀不到登錄檔 HKCU\\Software\\Valve\\Steam 的 RunningAppID（{e}），Steam 有裝、有開過嗎"]
+    return [f"Steam 正在執行遊戲或家庭共享，RunningAppID={app}，關掉再上傳"] if app else []
+
+
+def screenshot_count(app_id: int, file_id: int, steam: Steam | None) -> str:
+    """同 --check-screenshots；沒給 steam 就自己開一個，Steam 用戶端連不上時回傳原因，不中斷"""
+    own = steam is None
+    try:
+        steam = steam or Steam(app_id)
+        return f"{steam.count_screenshots(file_id)} 張"
+    except (OSError, RuntimeError) as e:
+        return f"查不到（{e}）"
+    finally:
+        if own and steam:
+            steam.close()
+
+
+def verify(config: dict, steam: Steam | None = None, since: float | None = None) -> bool:
+    """只讀：用公開的 Steam Web API 查工作坊上的項目公開、沒被封、file_size 等於 dist/<folder>/ 所有檔案大小總和；
+    since 有給時更新時間（time_updated）不能早於它。印出標題、更新時間、訂閱數與截圖張數"""
+    file_id = int(config["workshop"]["published_file_id"])
+    body = urllib.parse.urlencode({"itemcount": 1, "publishedfileids[0]": file_id}).encode()
+    try:
+        with urllib.request.urlopen(DETAILS_API, body, timeout=30) as resp:
+            item = json.load(resp)["response"]["publishedfiledetails"][0]
+    except (OSError, ValueError, KeyError, IndexError) as e:
+        print(f"FAIL 查不到工作坊項目 {file_id}：{e}")
+        return False
+    if item.get("result") != 1:
+        print(f"FAIL 工作坊項目 {file_id} result={item.get('result')}（1 才是找到）")
+        return False
+    local = sum(p.stat().st_size for p in (ROOT / "dist" / config["folder"]).rglob("*") if p.is_file())
+    updated = int(item["time_updated"])
+    print(f"{file_id}「{item['title']}」  更新於 {datetime.fromtimestamp(updated):%Y-%m-%d %H:%M:%S}  "
+          f"訂閱 {item['subscriptions']:,}  工作坊 {int(item['file_size']):,} bytes / dist {local:,} bytes  "
+          f"截圖 {screenshot_count(config['app_id'], file_id, steam)}")
+    problems = []
+    if int(item["visibility"]) != 0:
+        problems.append(f"項目不是公開的：visibility={item['visibility']}")
+    if int(item["banned"]):
+        problems.append(f"項目被封鎖：{item.get('ban_reason', '')}")
+    if int(item["file_size"]) != local:
+        problems.append(f"工作坊的 file_size {int(item['file_size']):,} 和 dist/{config['folder']} 的 {local:,} bytes 不同")
+    if since is not None and updated < since:
+        problems.append(f"更新時間 {datetime.fromtimestamp(updated):%H:%M:%S} 早於開始上傳前 60 秒，這次上傳可能沒生效")
+    print("\n".join("FAIL " + p for p in problems) if problems else "工作坊項目檢查通過")
+    return not problems
 
 
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--screenshots", action="store_true", help="也換掉截圖：刪掉項目上現有的，再傳 screenshots 資料夾的（可以和 --description-only 一起用）")
     ap.add_argument("--check-screenshots", action="store_true", help="只查項目上現有幾張截圖，不改任何東西")
+    ap.add_argument("--verify", action="store_true", help="只讀：查工作坊上的項目公開、沒被封、大小和 dist 一致，不上傳")
     ap.add_argument("--description-only", action="store_true", help="只換各語言的標題與說明（steam_title、steam_description 檔），不傳內容與封面")
     ap.add_argument("--retire", action="store_true", help="停用的項目（retired）換成「已合併」的標題與說明，設成不公開列出")
     ap.add_argument("--yes", action="store_true", help="真的上傳；沒加只做檢查")
@@ -290,6 +378,9 @@ def main() -> int:
         finally:
             steam.close()
         return 0
+
+    if args.verify:
+        return 0 if verify(config) else 1
 
     if args.retire:
         retired = config["retired"]
@@ -345,6 +436,7 @@ def main() -> int:
         print("檢查通過；加 --yes 才會上傳。")
         return 0
 
+    started = time.time()
     steam = Steam(app_id)
     try:
         notes = "\n\n[hr][/hr]\n\n".join(read(language["steam_changelog"]).strip() for language in languages)
@@ -354,9 +446,9 @@ def main() -> int:
         if args.screenshots:
             replace_screenshots(steam, app_id, file_id, workshop)
         print(f"上傳完成 https://steamcommunity.com/sharedfiles/filedetails/?id={file_id}")
+        return 0 if verify(config, steam, since=started - 60) else 1
     finally:
         steam.close()
-    return 0
 
 
 if __name__ == "__main__":

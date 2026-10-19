@@ -140,7 +140,7 @@ uv run scripts/dev_game.py down               # 關遊戲、還原 mods/ 與設�
 
 遊戲更新後先跑 `uv run scripts/make_patterns.py --check`。特徵碼找不到函式時引擎不啟動、遊戲維持英文，DFHack 主控台顯示 `[DFLang] addst 的特徵碼命中 0 次，這版遊戲可能還不支援`。重新定位的步驟見 [docs/analysis.md](docs/analysis.md) 的「遊戲更新」。
 
-發布（要先取得維護者同意）：改 `scripts/workshop.json` 的版本號，在 [CHANGELOG.md](CHANGELOG.md) 記這一版，再整理成繁簡兩份工作坊更新說明 `docs/steam/changelog-zh-Hant.bbcode`、`changelog-zh-Hans.bbcode`（只放這一版，第一行要有版本號），上傳腳本會檢查兩者都有這一版，上傳時兩份接在一起。
+發布（要先取得維護者同意）：改 `scripts/workshop.json` 的版本號，在 [CHANGELOG.md](CHANGELOG.md) 記這一版，再整理成繁簡兩份工作坊更新說明 `docs/steam/changelog-zh-Hant.bbcode`、`changelog-zh-Hans.bbcode`（只放這一版，第一行要有版本號），上傳時兩份接在一起。上傳腳本先檢查兩者都有這一版、README 的版本與數量和建置一致、Steam 沒在執行遊戲；上傳完用 Steam Web API 確認項目公開、大小和 `dist/` 一致（`--verify` 可以單獨跑）。
 
 ```bash
 uv run scripts/publish_workshop.py [--screenshots] --yes             # 上傳內容、封面、繁簡兩種語系的標題與說明、更新說明
