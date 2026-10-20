@@ -7,7 +7,7 @@
 玩得再久也不會越吃越多記憶體：引擎的快取都設了上限，滿了就清；整句貼圖畫字用的貼圖最多 2,048 張，用不到的會釋放。遊戲中切換語言或粗體字時，用過的那份會留著直接重用，來回切換也不會一直增加。
 
 - 工作坊：[繁體／簡體中文](https://steamcommunity.com/sharedfiles/filedetails/?id=3820630135)（原本的[簡體中文項目](https://steamcommunity.com/sharedfiles/filedetails/?id=3820630318)已合併進來，停在 0.4.0）
-- 目前版本 0.5.6（Dwarf Fortress 53.16＋DFHack 53.16-r3），各版本的變更見 [CHANGELOG.md](CHANGELOG.md)
+- 目前版本 0.5.7（Dwarf Fortress 53.16＋DFHack 53.16-r3），各版本的變更見 [CHANGELOG.md](CHANGELOG.md)
 
 ## 安裝
 
@@ -135,7 +135,7 @@ uv run scripts/make_pinyin.py                 # 譯文用到新的漢字後重�
 uv run scripts/build.py                       # 建置（遊戲要先關：執行中會鎖住 DLL）
 uv run scripts/verify_mod.py                  # 必須全部 PASS
 uv run scripts/terms.py check                 # 術語與兩岸用語
-uv run scripts/regress.py                     # 改句型後：舊樣本的譯文和 HEAD 比（--base v0.5.5 和舊版比）
+uv run scripts/regress.py                     # 改句型後：舊樣本的譯文和 HEAD 比（--base v0.5.6 和舊版比）
 uv run scripts/t.py -s temp/<輪次>/samples_x.s.txt --miss  # 批次跑離線工具：先建置，輸出原文／繁／簡 TSV（--miss 只列缺的）
 cargo test --manifest-path engine/Cargo.toml --lib   # 引擎的單元測試
 uv run scripts/inventory.py                   # 待翻清單（需要反編譯快照）
@@ -156,7 +156,7 @@ uv run scripts/dev_game.py down               # 關遊戲、還原 mods/ 與設�
 uv run scripts/publish_workshop.py [--screenshots] --yes             # 上傳內容、封面、繁簡兩種語系的標題與說明、更新說明
 uv run scripts/publish_workshop.py --description-only [--screenshots] --yes   # 只換說明（加 --screenshots 連截圖一起換），不傳內容、不算發布新版
 uv run scripts/publish_workshop.py --retire --yes                    # 已合併的簡中項目：換成「已合併、請改訂閱」的標題與說明，設成不公開列出
-git tag -a v0.5.6 -m "0.5.6" && git push origin v0.5.6                         # 每次發布都打 tag，版本號照 workshop.json
+git tag -a v0.5.7 -m "0.5.7" && git push origin v0.5.7                         # 每次發布都打 tag，版本號照 workshop.json
 ```
 
 ## 授權
