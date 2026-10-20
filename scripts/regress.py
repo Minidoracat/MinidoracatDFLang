@@ -13,7 +13,8 @@ REF 預設 HEAD（任何 commit、tag 都可以）；N 是每類最多列幾筆�
 base 版本檢出成 temp/regress/<sha 前 12 碼> 的 worktree（t.exe 編譯時寫死讀自己那份 data/，所以要另一份檢出），
 兩邊各建一次 t.exe。只留一個快取 worktree，其他 sha 的會移掉；--clean 全部移掉。
 樣本：temp/round6/corpus.txt（介面字串，-w）與 temp/round*/samples_*.txt
-（檔名 .w.txt／.m.txt／.s.txt 加 -w／-m／-s；*.zh-Hant.txt、*.zh-Hans.txt 是紀錄的輸出，跳過）。繁簡都跑。
+（檔名 .w.txt／.m.txt／.s.txt 加 -w／-m／-s，.d.txt 是預設模式；*.zh-Hant.txt、*.zh-Hans.txt 是紀錄的輸出，跳過）。繁簡都跑。
+其他檔名（例如 samples_x_m.txt）會列出來並 exit 2，不建置。
 分類：fixed 舊的缺、新的有譯文；broke 舊的有、新的缺；其他不同的算 changed（依差異去重）。
 有 broke 或某檔輸出行數和輸入不同時 exit 1；建置失敗 exit 2。
 """
@@ -73,7 +74,7 @@ def build(root: Path) -> Path:
 
 
 def files() -> list[tuple[Path, str | None]]:
-    fs = []
+    fs, bad = [], []
     corpus = ROOT / "temp/round6/corpus.txt"
     if corpus.is_file():
         fs.append((corpus, "-w"))
@@ -82,8 +83,14 @@ def files() -> list[tuple[Path, str | None]]:
     for f in sorted(ROOT.glob("temp/round*/samples_*.txt")):
         if re.search(r"\.zh-Han[st]\.txt$", f.name):
             continue
-        m = re.search(r"\.([wms])\.txt$", f.name)
-        fs.append((f, "-" + m.group(1) if m else None))
+        m = re.search(r"\.([wmsd])\.txt$", f.name)
+        if not m:
+            bad.append(f.relative_to(ROOT).as_posix())
+        else:
+            fs.append((f, None if m.group(1) == "d" else "-" + m.group(1)))
+    if bad:
+        print("樣本檔名要以 .w.txt／.m.txt／.s.txt／.d.txt（預設模式）結尾：\n  " + "\n  ".join(bad), file=sys.stderr)
+        sys.exit(2)
     return fs
 
 
@@ -122,12 +129,13 @@ def main() -> int:
         print("已移掉 temp/regress/ 底下的 worktree")
         return 0
 
+    sample_files = files()
     start = time.perf_counter()
     sha, base_root = worktree(args.base)
     old_exe, new_exe = build(base_root), build(ROOT)
     built = time.perf_counter() - start
 
-    jobs = [(f, mode, lang) for f, mode in files() for lang in LANGS]
+    jobs = [(f, mode, lang) for f, mode in sample_files for lang in LANGS]
     with ThreadPoolExecutor(12) as pool:
         olds = pool.map(lambda j: run(old_exe, *j), jobs)
         news = pool.map(lambda j: run(new_exe, *j), jobs)

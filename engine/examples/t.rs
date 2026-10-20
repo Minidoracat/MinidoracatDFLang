@@ -78,6 +78,28 @@ fn link_tokens(raw: &[u8]) -> (Vec<u8>, Vec<String>) {
     (key, names)
 }
 
+/// 譯文裡的 `☺序號☻` 換回樣本裡的名稱。一次掃過：傳說紀元頁一段有上萬個連結，每個連結各對整段 replace 一次是平方時間
+/// （2 MB 那段光這裡就要將近一分鐘，看起來像引擎卡住）
+fn named(t: &str, names: &[String]) -> String {
+    let mut out = String::with_capacity(t.len());
+    let mut rest = t;
+    while let Some(i) = rest.find('☺') {
+        let after = &rest[i + '☺'.len_utf8()..];
+        let digits = after.bytes().take_while(u8::is_ascii_digit).count();
+        let name = after[..digits].parse::<usize>().ok().and_then(|k| names.get(k)).filter(|_| after[digits..].starts_with('☻'));
+        out.push_str(&rest[..i + '☺'.len_utf8()]);
+        rest = match name {
+            Some(n) => {
+                out.push_str(n);
+                &after[digits..]
+            }
+            None => after,
+        };
+    }
+    out.push_str(rest);
+    out
+}
+
 fn main() {
     let args: Vec<String> = std::env::args().skip(1).collect();
     let Some(lang) = args.first().filter(|l| *l == "zh-Hant" || *l == "zh-Hans").cloned() else {
@@ -108,12 +130,11 @@ fn main() {
         };
         if para {
             let (key, names) = link_tokens(&raw);
-            let named = |t: String| names.iter().enumerate().fold(t, |t, (k, n)| t.replace(&format!("☺{k}☻"), &format!("☺{n}☻")));
-            match dict.translate_paragraph(&key) {
+            match dict.translate_paragraph(&key, None) {
                 (None, _) => println!("缺："),
                 (Some(t), _) if dict::link_order(&t, names.len()).is_none() => println!("缺：連結名稱漏掉或重複：{t}"),
-                (Some(t), false) => println!("缺：有幾段照原文：{}", named(t)),
-                (Some(t), true) => println!("{}", named(t)),
+                (Some(t), false) => println!("缺：有幾段照原文：{}", named(&t, &names)),
+                (Some(t), true) => println!("{}", named(&t, &names)),
             }
             continue;
         }

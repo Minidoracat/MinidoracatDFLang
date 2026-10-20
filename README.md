@@ -136,6 +136,7 @@ uv run scripts/build.py                       # 建置（遊戲要先關：執�
 uv run scripts/verify_mod.py                  # 必須全部 PASS
 uv run scripts/terms.py check                 # 術語與兩岸用語
 uv run scripts/regress.py                     # 改句型後：舊樣本的譯文和 HEAD 比（--base v0.5.5 和舊版比）
+uv run scripts/t.py -s temp/<輪次>/samples_x.s.txt --miss  # 批次跑離線工具：先建置，輸出原文／繁／簡 TSV（--miss 只列缺的）
 cargo test --manifest-path engine/Cargo.toml --lib   # 引擎的單元測試
 uv run scripts/inventory.py                   # 待翻清單（需要反編譯快照）
 uv run scripts/dev_game.py play               # 啟動器：建置、掛進遊戲並啟動，遊戲關掉後自動還原（scripts/dev-play.cmd 雙擊同）

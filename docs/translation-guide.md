@@ -109,11 +109,11 @@
 
   ```
   cargo run -q --release --manifest-path engine/Cargo.toml --example t -- zh-Hant "He feels joy while in conflict."
-  cargo run -q --release --manifest-path engine/Cargo.toml --example t -- zh-Hans < temp/round6/samples_thoughts.txt
+  cargo run -q --release --manifest-path engine/Cargo.toml --example t -- zh-Hans < temp/round6/samples_thoughts.d.txt
   ```
 
-  輸出譯文，或「缺：」加查不到的句子；原文含換色標記時，譯文也標出顏色。遊戲裡用 `dflang t "<原文>"` 查，結果相同。
-- 改了句型或常見單字，跑 `uv run scripts/regress.py`：拿前幾輪的樣本（`temp/round*/samples_*.txt`）與介面字串（`temp/round6/corpus.txt`）比較 HEAD 和目前工作目錄的譯文，分成 fixed（原本缺、現在有）、broke（原本有、現在缺）、changed。broke 要修（結束碼 1）；changed 逐條看是不是新樣板切開了別的句子。發版前加 `--base <上一版的 tag>` 和上一版比。
+  輸出譯文，或「缺：」加查不到的句子；原文含換色標記時，譯文也標出顏色。遊戲裡用 `dflang t "<原文>"` 查，結果相同。整批樣本用 `uv run scripts/t.py [-w|-m|-s] <樣本檔>`：先建置 release 版再分批跑繁簡兩種，輸出「原文、繁、簡」的 TSV，`--miss` 只列翻不出來的；用法見腳本開頭的說明。
+- 改了句型或常見單字，跑 `uv run scripts/regress.py`：拿前幾輪的樣本（`temp/round*/samples_*.txt`）與介面字串（`temp/round6/corpus.txt`）比較 HEAD 和目前工作目錄的譯文，分成 fixed（原本缺、現在有）、broke（原本有、現在缺）、changed。broke 要修（結束碼 1）；changed 逐條看是不是新樣板切開了別的句子。發版前加 `--base <上一版的 tag>` 和上一版比。樣本檔名的結尾決定離線工具的模式：`.w.txt`／`.m.txt`／`.s.txt` 加 `-w`／`-m`／`-s`，`.d.txt` 是預設模式；其他結尾（如 `samples_x_m.txt`）`regress.py` 會列出來並以結束碼 2 停下。
 
 ## 公告與說話句
 

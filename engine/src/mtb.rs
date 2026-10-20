@@ -17,6 +17,7 @@
 
 use std::collections::HashMap;
 use std::sync::{Arc, LazyLock, OnceLock};
+use std::time::{Duration, Instant};
 
 use parking_lot::Mutex;
 
@@ -115,6 +116,10 @@ static WORDS: LazyLock<Mutex<HashMap<usize, Word>>> = LazyLock::new(|| Mutex::ne
 /// ponytail: 段落釋放時沒有通知，舊單字只在同一段落重排時撤掉；超過上限整張清掉，
 /// 當時畫面上的段落要等下次重排才恢復中文。要精確就 hook 段落的解構函式。
 const WORDS_LIMIT: usize = 200_000;
+/// 一個段落排版時查譯文最多花多久，過了的段照英文畫：遊戲在主迴圈裡排版，查譯文的時間就是畫面停住的時間。
+/// 傳說模式的紀元頁一段可到 2 MB、一萬多段，整段查完要好幾秒（實機量到 8.5 秒）；一般段落幾十毫秒內查完，不受影響。
+/// ponytail: 時間到就照英文；要整頁中文就改成背景執行緒翻完再讓畫字時重訂計畫（像 pinyin.rs 的 BURST）。
+const PARA_BUDGET: Duration = Duration::from_millis(300);
 
 unsafe fn read<T: Copy>(base: usize, offset: usize) -> T {
     unsafe { *((base + offset) as *const T) }
@@ -541,7 +546,7 @@ pub unsafe fn rewrite(mtb: usize, dict: &Dict, note_miss: impl FnOnce(&[u8]), re
         // (每個單字的計畫, 有連結時每個單字的新座標)
         let planned = plain_text(words, l, pal.as_ref()).and_then(|(key, links)| {
             // 句型漏掉或重複了名字也算沒翻：連結字沒有位置可放
-            let (t, complete) = dict.translate_paragraph(&key);
+            let (t, complete) = dict.translate_paragraph(&key, Some(Instant::now() + PARA_BUDGET));
             let Some(t) = t.filter(|t| dict::link_order(t, links.len()).is_some()) else {
                 if links.is_empty() {
                     note_miss(&key);

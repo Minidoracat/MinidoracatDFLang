@@ -11,6 +11,7 @@
 use std::collections::HashMap;
 use std::sync::Arc;
 use std::sync::atomic::{AtomicI32, AtomicU8, Ordering};
+use std::time::Instant;
 
 use parking_lot::Mutex;
 
@@ -1114,7 +1115,8 @@ impl Dict {
     /// （和彩色文字框一樣）。一般段落（提示、說明）每段都翻得出來才算，免得半中半英；有連結的段落（傳說頁）是一筆筆紀錄
     /// （頁首說明、事件句、相關人物），翻不出來的段照原文，段落缺句時其餘照翻開著時一般段落也一樣。回傳 (譯文, 每段都翻出來了)。
     /// 有換色標記的段只整段查（逐句時顏色對不回去）；一般段落有標記就整段照英文（照原文的段可以接受時改成逐段處理）。
-    pub fn translate_paragraph(&self, key: &[u8]) -> (Option<String>, bool) {
+    /// 過了 deadline 的段不再查、算翻不出來（實機排版時給，見 mtb::PARA_BUDGET；離線工具給 None，結果才固定）。
+    pub fn translate_paragraph(&self, key: &[u8], deadline: Option<Instant>) -> (Option<String>, bool) {
         if let Some(t) = self.translate_text(key) {
             return (Some(t), true);
         }
@@ -1127,12 +1129,14 @@ impl Dict {
         let (mut out, mut any, mut complete) = (String::new(), false, true);
         let mut rest = key;
         loop {
-            let mark = [b"[B]", b"[R]", b"[P]"].iter()
-                .filter_map(|m| rest.windows(3).position(|w| w == *m).map(|i| (i, *m)))
-                .min_by_key(|&(i, _)| i);
+            // 下一個段界（三種記號裡最早的那個）：一次掃到就停。三種各從頭找的話，沒出現的記號每段都掃到結尾，
+            // 傳說紀元頁那種上萬段的事件清單會變成平方時間
+            let mark = rest.windows(3).position(|w| matches!(w, [b'[', b'B' | b'R' | b'P', b']'])).map(|i| (i, &rest[i..i + 3]));
             let body = mark.map_or(rest, |(i, _)| &rest[..i]).trim_ascii();
             if !body.is_empty() {
-                let found = if colored(body) {
+                let found = if deadline.is_some_and(|d| Instant::now() >= d) {
+                    None
+                } else if colored(body) {
                     self.translate_text(body)
                 } else {
                     // 整段只有外框一對雙引號（神明對天選者說的話）：外框不算引號，裡面照樣還原句界
@@ -2126,7 +2130,7 @@ mod tests {
         assert_eq!(concat(pieces.clone()), "勞動結束。 Greed went home. 勞動結束。", "照原文的句子和前後的中文空一格");
         assert_eq!(pieces[3], (" went".to_owned(), 19), "照原文的句子一個字一片，位置是原文的位置（彩色文字框照它上色）");
         assert_eq!(d.translate_sentences(b"Greed went home.").0, None, "一句都翻不出來時整段照英文");
-        assert_eq!(d.translate_paragraph(b"Labor ends. Greed went home. [B] Nobody knows."),
+        assert_eq!(d.translate_paragraph(b"Labor ends. Greed went home. [B] Nobody knows.", None),
                    (Some("勞動結束。 Greed went home.[B]Nobody knows.".to_owned()), false), "段落框也逐段照原文，整段記為沒翻完");
     }
 
@@ -2306,13 +2310,26 @@ mod tests {
     fn box_paragraphs_fall_back_to_blocks_and_sentences() {
         let mut d = dict("{1} is visiting.\t{1}來訪了。\n");
         d.load_tsv("Labor ends.\t勞動結束。\n");
-        let para = |s: &[u8]| d.translate_paragraph(s);
+        let para = |s: &[u8]| d.translate_paragraph(s, None);
         assert_eq!(para(b"Labor ends. Urist is visiting. [B] Labor ends."), (Some("勞動結束。Urist來訪了。[B]勞動結束。".to_owned()), true),
                    "段落框的單空白句界還原後逐句查，[B] 照原樣接回");
         assert_eq!(para(b"Labor ends. Urist is visiting. [B] Nobody knows."), (None, false), "缺一句就整段照英文");
         assert_eq!(para(b"\x010\x02 is a hydra. [B] \x010\x02 is visiting. [B] [C:3:0:1]Related [B] Labor ends."),
                    (Some("☺0☻ is a hydra.[B]☺0☻來訪了。[B][C:3:0:1]Related[B]勞動結束。".to_owned()), false),
                    "有連結的段落（傳說頁）是一筆筆紀錄：翻不出來的段照原文，其餘照翻");
+    }
+
+    #[test]
+    fn record_paragraph_blocks_are_split_in_linear_time() {
+        // 傳說紀元頁的事件清單一段可到 2 MB、一萬多段，裡面沒有 [R]、[P]。找下一個段界時三種記號各從頭掃一次的話，
+        // 沒出現的記號每段都掃到結尾，是平方時間（實機紀錄的 2 MB 那段要翻 56 秒）
+        let d = dict("{1} is visiting.\t{1}來訪了。\n");
+        let mut key = b"\x010\x02 is visiting. ".to_vec();
+        key.extend(b"[B]".repeat(20_000));
+        let start = std::time::Instant::now();
+        let (t, _) = d.translate_paragraph(&key, None);
+        assert!(t.is_some_and(|t| t.starts_with("☺0☻來訪了。[B][B]")));
+        assert!(start.elapsed() < std::time::Duration::from_secs(1), "{:?}", start.elapsed());
     }
 
     #[test]
@@ -2348,7 +2365,7 @@ mod tests {
         assert_eq!(d.translate_text(b"Histories of \x010\x02"), None, "{{%n}} 不收單獨的連結，和沒有連結的名字一樣");
         assert_eq!(d.translate_text(b"In 1, \x010\x02 settled in \x011\x02.").as_deref(), Some("1年，☺0☻定居於☺1☻。"),
                    "給片語的 {{%3}} 不能吞下單獨的名字，搶走後面專寫的句型");
-        assert_eq!(d.translate_paragraph(b"Labor ends. \x010\x02 is visiting.").0.as_deref(), Some("勞動結束。☺0☻來訪了。"),
+        assert_eq!(d.translate_paragraph(b"Labor ends. \x010\x02 is visiting.", None).0.as_deref(), Some("勞動結束。☺0☻來訪了。"),
                    "連結開頭的句子是新句，{{1}} 不能吞進前一句");
         assert_eq!(link_order("☺1☻與☺0☻", 2), Some(vec![1, 0]));
         assert_eq!(link_order("☺0☻與☺0☻", 2), None, "重複");
@@ -2359,14 +2376,14 @@ mod tests {
     fn quotes_end_sentences_but_text_inside_them_stays_whole() {
         let mut d = dict("It asks, \"{1}\"\t問道：「{1}」\nThe slab reads \"{1}\".\t石板上寫著：「{1}」。\n");
         d.load_tsv("Labor ends.\t勞動結束。\n");
-        assert_eq!(d.translate_paragraph(b"It asks, \"Why?\" Labor ends.").0.as_deref(), Some("問道：「Why?」勞動結束。"),
+        assert_eq!(d.translate_paragraph(b"It asks, \"Why?\" Labor ends.", None).0.as_deref(), Some("問道：「Why?」勞動結束。"),
                    "段落框裡 ?\" 後面一個空白接大寫字母也是句界");
         assert_eq!(d.translate_sentences(b"The slab reads \"I am Urist.  By Labor, I bind.\".  Labor ends.").0.map(concat).as_deref(),
                    Some("石板上寫著：「I am Urist.  By Labor, I bind.」。勞動結束。"), "引號裡的句子不切開");
-        assert_eq!(d.translate_paragraph(b"The slab reads \"I am Urist. By Labor, I bind.\". Labor ends.").0.as_deref(),
+        assert_eq!(d.translate_paragraph(b"The slab reads \"I am Urist. By Labor, I bind.\". Labor ends.", None).0.as_deref(),
                    Some("石板上寫著：「I am Urist. By Labor, I bind.」。勞動結束。"), "段落框也一樣");
         d.load_tsv("Why?\t為什麼？\n");
-        assert_eq!(d.translate_paragraph(b"\"Why? Labor ends.\"").0.as_deref(), Some("\"為什麼？勞動結束。\""),
+        assert_eq!(d.translate_paragraph(b"\"Why? Labor ends.\"", None).0.as_deref(), Some("\"為什麼？勞動結束。\""),
                    "整段只有外框一對引號（神明對天選者說的話）：外框不算引號，裡面照樣切句");
     }
 

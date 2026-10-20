@@ -26,6 +26,8 @@
 --retire：停用的項目（retired）只換預設欄位的標題與說明，並設成不公開列出（Unlisted：有連結看得到、搜尋與瀏覽列表找不到，
 已訂閱的人照舊看得到）；它的內容不再上傳。不設成私人：私人只有作者看得到，還沒改訂閱的玩家看不到改訂閱的說明。
 --yes 上傳內容後會自動跑一次 --verify，並要求項目的更新時間不早於開始上傳前 60 秒，沒過就 exit 1。
+提交回 EResult 16（逾時）時 Steam 那邊可能其實已套用，不盲目重送（內容重送會讓更新說明多一筆）：內容與各語言標題、說明等 10 秒
+用 Web API 查更新時間有沒有過開始提交的時間，有就當成功，沒有才重送一次；截圖重查張數，刪除或那一張已生效就繼續，沒有才重送一次。
 """
 import argparse
 import ctypes
@@ -60,6 +62,10 @@ IMAGE_SUFFIXES = (".jpg", ".jpeg", ".png")
 
 class StringArray(ctypes.Structure):
     _fields_ = [("strings", ctypes.POINTER(ctypes.c_char_p)), ("count", ctypes.c_int32)]
+
+
+class SubmitTimeout(RuntimeError):
+    """SubmitItemUpdate 回 EResult 16（k_EResultTimeout）：Steam 那邊可能已經套用，查過再決定要不要重送"""
 
 
 class Steam:
@@ -148,8 +154,11 @@ class Steam:
     def submit(self, handle: int, note: str) -> None:
         # SubmitItemUpdateResult_t（k_iSteamUGCCallbacks + 4）：EResult@0、需要接受協議@4、PublishedFileId@8
         raw = self.wait(self.dll.SteamAPI_ISteamUGC_SubmitItemUpdate(self.ugc, handle, note.encode("utf-8")), 3404, 16)
-        if int.from_bytes(raw[:4], "little") != 1:
-            raise RuntimeError(f"SubmitItemUpdate EResult={int.from_bytes(raw[:4], 'little')}")
+        result = int.from_bytes(raw[:4], "little")
+        if result == 16:
+            raise SubmitTimeout("SubmitItemUpdate EResult=16（逾時）")
+        if result != 1:
+            raise RuntimeError(f"SubmitItemUpdate EResult={result}")
         if raw[4]:
             raise RuntimeError("需要先到 Steam 網頁接受工作坊法律協議")
 
@@ -226,10 +235,31 @@ def screenshots(workshop: dict) -> list[Path]:
     return sorted(p for p in folder.iterdir() if p.suffix.lower() in IMAGE_SUFFIXES) if folder.is_dir() else []
 
 
+def submit_checked(file_id: int, what: str, action) -> None:
+    """action 提交一次；逾時就等 10 秒查 Web API 的 time_updated，不早於開始提交前 60 秒（和 verify 同一個容許值：本機與 Steam
+    的時鐘差、秒數截斷都不會誤判成沒套用而重送內容，讓更新說明多一筆）就當已套用，否則重送一次"""
+    started = int(time.time()) - 60
+    try:
+        return action()
+    except SubmitTimeout:
+        print(f"{what}：提交回 EResult 16（逾時），等 10 秒查工作坊有沒有套用")
+    time.sleep(10)
+    try:
+        updated = int(item_details(file_id)["time_updated"])
+    except (OSError, ValueError, KeyError, IndexError) as e:
+        raise RuntimeError(f"{what}：逾時後查不到工作坊是否已套用（{e}），先跑 --verify 再決定要不要重傳") from e
+    if updated >= started:
+        print(f"{what}：工作坊更新時間 {datetime.fromtimestamp(updated):%H:%M:%S} 不早於開始提交前 60 秒，當成已套用，不重送")
+        return
+    print(f"{what}：工作坊沒有套用，重送一次")
+    action()
+
+
 def localize(steam: Steam, app_id: int, file_id: int, languages: list[dict]) -> None:
     """每種語言的標題與說明各自提交一次，放進它的 steam_language 在地化欄位"""
     for language in languages:
-        steam.set_text(app_id, file_id, language["steam_title"], read(language["steam_description"]), language["steam_language"])
+        submit_checked(file_id, f"{language['lang']} 標題、說明", lambda: steam.set_text(
+            app_id, file_id, language["steam_title"], read(language["steam_description"]), language["steam_language"]))
         print(f"{language['lang']}（{language['steam_language']}）：標題、說明已更新")
 
 
@@ -244,11 +274,23 @@ def replace_screenshots(steam: Steam, app_id: int, file_id: int, workshop: dict)
     """先刪掉項目上現有的截圖，再照檔名順序一張張上傳 screenshots 資料夾的"""
     old = steam.count_screenshots(file_id)
     if old:
-        steam.remove_screenshots(app_id, file_id, old)
+        try:
+            steam.remove_screenshots(app_id, file_id, old)
+        except SubmitTimeout:
+            left = steam.count_screenshots(file_id)
+            print(f"刪舊截圖回 EResult 16（逾時），重查剩 {left} 張" + ("，再刪一次" if left else "，其實已刪掉"))
+            if left:
+                steam.remove_screenshots(app_id, file_id, left)
     print(f"刪掉舊截圖 {old} 張")
     shots = screenshots(workshop)
     for k, shot in enumerate(shots, 1):
-        steam.add_screenshot(app_id, file_id, shot)  # 中途失敗時前面幾張已生效，剩下的到工作坊頁面補
+        try:
+            steam.add_screenshot(app_id, file_id, shot)  # 中途失敗時前面幾張已生效，剩下的到工作坊頁面補
+        except SubmitTimeout:
+            landed = steam.count_screenshots(file_id) >= k
+            print(f"截圖 {shot.name} 回 EResult 16（逾時），" + ("重查已生效" if landed else "重查沒生效，重送一次"))
+            if not landed:
+                steam.add_screenshot(app_id, file_id, shot)
         print(f"截圖 {k}/{len(shots)} {shot.name}")
 
 
@@ -309,7 +351,15 @@ def steam_running_problems() -> list[str]:
             app = winreg.QueryValueEx(key, "RunningAppID")[0]
     except OSError as e:
         return [f"讀不到登錄檔 HKCU\\Software\\Valve\\Steam 的 RunningAppID（{e}），Steam 有裝、有開過嗎"]
-    return [f"Steam 正在執行遊戲或家庭共享，RunningAppID={app}，關掉再上傳"] if app else []
+    if not app:
+        return []
+    try:
+        with winreg.OpenKey(winreg.HKEY_CURRENT_USER, rf"Software\Valve\Steam\Apps\{app}") as key:
+            name = f"（{winreg.QueryValueEx(key, 'Name')[0]}）"
+    except OSError:
+        name = ""
+    return [f"Steam 正在執行遊戲或家庭共享，RunningAppID={app}{name}，關掉再上傳；"
+            "那個遊戲若已經關了（工作管理員找不到）就是 Steam 旗標沒清掉，重開 Steam"]
 
 
 def screenshot_count(app_id: int, file_id: int, steam: Steam | None) -> str:
@@ -325,14 +375,19 @@ def screenshot_count(app_id: int, file_id: int, steam: Steam | None) -> str:
             steam.close()
 
 
+def item_details(file_id: int) -> dict:
+    """公開的 Steam Web API GetPublishedFileDetails；連不上或格式不對時丟 OSError、ValueError、KeyError、IndexError"""
+    body = urllib.parse.urlencode({"itemcount": 1, "publishedfileids[0]": file_id}).encode()
+    with urllib.request.urlopen(DETAILS_API, body, timeout=30) as resp:
+        return json.load(resp)["response"]["publishedfiledetails"][0]
+
+
 def verify(config: dict, steam: Steam | None = None, since: float | None = None) -> bool:
     """只讀：用公開的 Steam Web API 查工作坊上的項目公開、沒被封、file_size 等於 dist/<folder>/ 所有檔案大小總和；
     since 有給時更新時間（time_updated）不能早於它。印出標題、更新時間、訂閱數與截圖張數"""
     file_id = int(config["workshop"]["published_file_id"])
-    body = urllib.parse.urlencode({"itemcount": 1, "publishedfileids[0]": file_id}).encode()
     try:
-        with urllib.request.urlopen(DETAILS_API, body, timeout=30) as resp:
-            item = json.load(resp)["response"]["publishedfiledetails"][0]
+        item = item_details(file_id)
     except (OSError, ValueError, KeyError, IndexError) as e:
         print(f"FAIL 查不到工作坊項目 {file_id}：{e}")
         return False
@@ -440,7 +495,8 @@ def main() -> int:
     steam = Steam(app_id)
     try:
         notes = "\n\n[hr][/hr]\n\n".join(read(language["steam_changelog"]).strip() for language in languages)
-        steam.update(app_id, file_id, workshop, default, ROOT / "dist" / config["folder"], notes)
+        submit_checked(file_id, "內容上傳", lambda: steam.update(
+            app_id, file_id, workshop, default, ROOT / "dist" / config["folder"], notes))
         print("內容、標籤、封面、更新說明與預設欄位的標題、說明已上傳")
         localize(steam, app_id, file_id, languages)
         if args.screenshots:

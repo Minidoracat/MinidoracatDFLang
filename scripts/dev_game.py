@@ -370,7 +370,9 @@ def win32():
                          (gdi32.CreateDIBSection, wt.HBITMAP, [wt.HDC, ctypes.c_void_p, wt.UINT, ctypes.POINTER(ctypes.c_void_p), wt.HANDLE, wt.DWORD]),
                          (user32.PrintWindow, wt.BOOL, [wt.HWND, wt.HDC, wt.UINT]), (user32.ReleaseDC, ctypes.c_int, [wt.HWND, wt.HDC]),
                          (gdi32.DeleteObject, wt.BOOL, [wt.HGDIOBJ]), (gdi32.DeleteDC, wt.BOOL, [wt.HDC]),
-                         (user32.WindowFromPoint, wt.HWND, [wt.POINT]), (user32.GetAncestor, wt.HWND, [wt.HWND, wt.UINT])):
+                         (user32.WindowFromPoint, wt.HWND, [wt.POINT]), (user32.GetAncestor, wt.HWND, [wt.HWND, wt.UINT]),
+                         (user32.MonitorFromWindow, wt.HMONITOR, [wt.HWND, wt.DWORD]),
+                         (user32.SetWindowPos, wt.BOOL, [wt.HWND, wt.HWND, ctypes.c_int, ctypes.c_int, ctypes.c_int, ctypes.c_int, wt.UINT])):
         f.restype, f.argtypes = res, args
     return user32, gdi32
 
@@ -386,6 +388,16 @@ def cursor_on_game() -> bool:
     return user32.GetAncestor(user32.WindowFromPoint(point), 2) == hwnd  # GA_ROOT
 
 
+def onto_screen(user32, hwnd) -> None:
+    """遊戲視窗不在任何螢幕上時移回 (0,0)、放到最底層（不搶焦點、不蓋住使用者的視窗）：畫面外的視窗 PrintWindow 一直拿到
+    移出去以前的那一幀（2026-10-20 拍相簿，打開人物頁後截到的還是居民清單）"""
+    if user32.MonitorFromWindow(hwnd, 0):  # MONITOR_DEFAULTTONULL：和任何螢幕都不相交才回 NULL
+        return
+    user32.SetWindowPos(hwnd, wt.HWND(1), 0, 0, 0, 0, 0x0011)  # HWND_BOTTOM；SWP_NOSIZE | SWP_NOACTIVATE
+    print("遊戲視窗在畫面外，已移回 (0,0) 放到最底層", file=sys.stderr)
+    time.sleep(1.5)  # 等遊戲畫新的一幀
+
+
 def capture() -> tuple[int, bytes] | None:
     """遊戲視窗客戶區的畫面（原生解析度，每像素 BGRA）：PrintWindow 加 PW_RENDERFULLCONTENT，視窗被蓋住也抓得到"""
     user32, gdi32 = win32()
@@ -393,6 +405,7 @@ def capture() -> tuple[int, bytes] | None:
     rect = wt.RECT()
     if not hwnd or not user32.GetClientRect(hwnd, ctypes.byref(rect)):
         return None
+    onto_screen(user32, hwnd)
     w, h = rect.right, rect.bottom
     header = BitmapInfoHeader(ctypes.sizeof(BitmapInfoHeader), w, -h, 1, 32)  # 高度給負的：由上往下排
     window_dc = user32.GetDC(hwnd)
