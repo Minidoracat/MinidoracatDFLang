@@ -2,6 +2,21 @@
 
 所有重要的變更都記錄在這裡。格式依 [Keep a Changelog](https://keepachangelog.com/zh-TW/1.1.0/)，版本號照 `scripts/workshop.json`。每一版的工作坊更新說明（`docs/steam/changelog-*.bbcode`）由這裡整理成玩家看得懂的重點。
 
+## [Unreleased]
+
+### 修正
+
+- **人物頁的偏好提到夜行生物、惡魔這類世界生成的生物時，整句偏好照英文**：「性格 → 偏好」裡，矮人喜歡的生物是夜行巨魔、夜妖、夢魘、實驗體、惡魔，或世界生成的天使、巨獸時（例：「…bracelets and monsters of night for their unsettling origin.」），整句偏好都是英文。現在照中文顯示（「…手鐲和暗夜之怪物的令人不安的來歷。」）。
+  > 技術要點：這些生物的 PREFSTRING 不在 raws 文字檔，是 `vanilla_procedural` 的 Lua 產生器（`creatures.lua`、`creatures/shared_info.lua`）寫的，11 條補進 `data/strings/sentences_preferences.tsv`；raws 裡的 516 條 PREFSTRING 對過快照都有譯文。回報：GitHub issue #2（簡中要塞模式的未翻譯紀錄）。
+- **傳說模式事件很多的紀元頁，後半段照英文**：0.5.7 起長頁打開時只花 0.3 秒查譯文，來不及查的部分照英文。現在剩下的部分在背景查完，查好就換成中文；打開時停住的時間和 0.5.7 一樣，最大的紀元頁換成中文的那一下會再停約 1 秒。
+  > 技術要點：`mtb::rewrite` 查譯文超過 `PARA_BUDGET` 時，把整段原文交給背景執行緒不設時限查（`Dict::translate_paragraph(key, None)`），段落記下等待中的工作（`State::pending`）。查好以後遊戲下次排版或畫到這段的字時照完整譯文重訂計畫（`word_plan` 只在有段落等待時才去看），連結字直接搬到新位置、不先照英文重排（`plan_links` 重新算連結字與載字單字的座標），新計畫訂不出來時照舊計畫畫；重訂那一幀正在畫的那個字座標搬過的話先不畫。查好的結果以「設定版本（`Stamp`）＋原文雜湊」留 16 段，同一頁關掉再開直接用，設定換過就重查；結果還沒用就被擠掉時，畫到這段就不再等。背景還在查時不記未翻譯紀錄，查完仍有缺段才記。新測試 `a_paragraph_cut_short_by_the_time_budget_switches_to_the_full_translation_when_drawn`、`a_paragraph_whose_background_result_was_dropped_stops_waiting_when_drawn`。perf-fort 實機（9950X3D）：第二個神話時代（33.7 萬個字）打開停 1.2～1.6 秒，頁尾 66 行英文約 7 秒後換成中文，重訂那一下停 0.92 秒；第一個神話時代（5.8 萬個字）打開停 0.45 秒；兩頁都沒有記進未翻譯紀錄。
+- **建立世界、競技場的模組清單裡，原版模組的名稱照英文**：清單每列是「名稱 版本」（「Vanilla Text 50.01」），整列照英文。現在原版模組顯示成「原版文字 50.01」，第三方模組照舊顯示原文。
+  > 技術要點：遊戲把名稱、空白、版本接成一個字串畫（FUN_140df5e90）。`data/rules/worldgen.tsv` 加句型 `{@1} {#2}.{#3}`（名稱要是整句條目）；`lua/loader.lua` 的 `mod_texts` 另把第三方模組的「名稱 版本」送給引擎當成照原文的名字，名稱和字典同字時才不會被這條句型翻掉。
+- **DFHack 改名工具（gui/rename）的語言選項**：「Gen_divine」「Gen_identity」改成「神聖語」「英文原字」。
+  > 技術要點：`data/screens/dfhack.lua.rename.tsv`。
+- **人物頁的想法提到熔爐、陷阱時整句照英文**：近期想法裡欣賞熔爐、陷阱的那幾句（「She felt pleasure near a fine Furnace.」「…remembering a fine Trap.」）整句英文。現在照中文顯示（「她先前在精緻的熔爐附近感到愉悅。」）。
+  > 技術要點：想法句的建築種類名 Furnace、Trap 刻意不放全域單字（會被別的佔位撿走），`a fine {@1}` 這類句型因此對不到；五種品質（fine、very fine、splendid、wonderful、completely sublime）各寫一條整段 inner 條目（`data/strings/sentences_causes_a.tsv`）。實機測 issue #2 時在 perf-fort 的未翻譯紀錄看到。
+
 ## [0.5.7] - 2026-10-20
 
 ### 效能

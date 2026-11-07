@@ -156,6 +156,7 @@ raws 裡的生物、植物、材料、物品、身體部位名稱，以及執行
 - 繁中用台灣通行的名稱，簡中用中國大陸通行的名稱，兩岸不同就各寫各的（酪梨／牛油果）。動植物、礦物有大眾熟悉的通行名時用通行名（奇異鳥、無尾熊、劍齒虎），沒有通行名、或通行名會指到別的物種時用正式中文名（加州鱝）。遊戲自創的生物照字面意思譯。
 - 寬度：名稱檔至少可用 6 格（三個中文字），因為短英文名的通行中文名多半是三個字（ogre 食人魔、kiwi 奇異鳥）。單獨畫出、比原文寬時，整句貼圖開著會照字寬壓窄放進原文寬度（最多壓到九成）；關著時多出的格數可能貼到右邊的文字。別的檔裡只給佔位用（inner）的字，單獨畫出時要翻、又比原文寬，就改放名稱檔（`names_positions.tsv` 的 `lady`）。
 - 神造材料與神話物質（`faceted metal`、`motes of light`、`primal cloudstuff`、`curious jelly`）不在 raws 文字檔，是世界生成時 raws 的 Lua 產生器（`vanilla_procedural/scripts/generators/divine.lua`、`materials.lua`）從固定字表組的：全部組合整條寫進 `names_divine_materials.tsv`。神話遺物「形容詞＋領域名詞」，單字名詞加「之」（「原初之火」「原初雲質」）；療癒物質的 frozen、molten、boiling 照上表。
+- 程序生成生物（夜行生物、實驗體、惡魔、天使、巨獸）的偏好詞（PREFSTRING，人物頁偏好「X for their …」的 …）也是產生器寫的（`creatures.lua` 的 `pref_str`、`fallback_pref_str`，`creatures/shared_info.lua` 的 `options.pref_str`）。`inventory.py` 把它們和其他產生器字串一起排在 todo 第 5 級（`raws-prose`、`LUA`），容易漏：寫進 `sentences_preferences.tsv`，產生器改版時對一次。
 
 ## 世界生成的名稱
 

@@ -496,6 +496,17 @@ silver bark	銀色樹皮	银色树皮		偏好：PLANT:BIRCH PREFSTRING
 flying keys	會飛的翅果	会飞的翅果		偏好：PLANT:ASH PREFSTRING
 sweet-smelling flowers	香甜的花朵	香甜的花朵		偏好：PLANT:MANGO PREFSTRING
 branch shedding	落枝習性	落枝习性		偏好：PLANT:RUBBER PREFSTRING
+horrifying features	恐怖的樣貌	恐怖的样貌		偏好：程序生成生物的 PREFSTRING（vanilla_procedural creatures.lua L334：惡魔沒有別的偏好詞時用）
+macabre ways	陰森的行徑	阴森的行径		偏好：程序生成生物的 PREFSTRING（creatures.lua L637：夜行巨魔）
+terror-inspiring antics	令人膽寒的把戲	令人胆寒的把戏		偏好：程序生成生物的 PREFSTRING（creatures.lua L879：夜妖 bogeyman）
+unfathomably horrifying nature	深不可測的恐怖本性	深不可测的恐怖本性		偏好：程序生成生物的 PREFSTRING（creatures.lua L976：夢魘 nightmare）
+unsettling origin	令人不安的來歷	令人不安的来历		偏好：程序生成生物的 PREFSTRING（creatures.lua L1291：夜行生物的實驗體，例「monsters of night for their unsettling origin」，issue #2）
+disgusting appearance	噁心的外表	恶心的外表		偏好：程序生成生物的 PREFSTRING（creatures/shared_info.lua L4370：嘔吐物構成的生成生物）
+peaceful nature	平和的天性	平和的天性		偏好：程序生成生物的 PREFSTRING（shared_info.lua L5337：和平、智慧、幸福領域的生成生物）
+kind nature	仁慈的天性	仁慈的天性		偏好：程序生成生物的 PREFSTRING（shared_info.lua L5349：慈悲、寬恕、愛等領域的生成生物）
+joyful nature	歡快的天性	欢快的天性		偏好：程序生成生物的 PREFSTRING（shared_info.lua L5358：自由、狂歡領域的生成生物）
+rhythmic undulations	有節奏的扭動	有节奏的扭动		偏好：程序生成生物的 PREFSTRING（shared_info.lua L5388：邪惡生成生物「it undulates rhythmically」）
+bloated appearance	臃腫的外表	臃肿的外表		偏好：程序生成生物的 PREFSTRING（shared_info.lua L5401：邪惡生成生物「it has a bloated body」）
 the color amber	琥珀色	琥珀色		FUN_14047f680 偏好清單：顏色（COLOR:AMBER）
 the color amethyst	紫水晶色	紫水晶色		FUN_14047f680 偏好清單：顏色（COLOR:AMETHYST）
 the color aqua	水藍色	水蓝色		FUN_14047f680 偏好清單：顏色（COLOR:AQUA）

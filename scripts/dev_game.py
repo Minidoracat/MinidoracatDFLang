@@ -156,6 +156,7 @@ def up(lang: str, with_dfi18n: bool = False, saves: list[str] | None = None) -> 
     if lang != "auto":
         data["lang"] = lang
     if data or config.is_file():
+        CONFIG_DIR.mkdir(exist_ok=True)  # 遊戲裝好還沒跑過 DFHack 時沒有這個資料夾
         config.write_text(json.dumps(data), encoding="utf-8")
     install_dev_lua()
     os.startfile("steam://rungameid/975370")

@@ -16,6 +16,9 @@
 //! 還沒重排的段落照舊計畫畫，但字典換了（換語言）或整句貼圖關掉了（舊計畫的字要靠整句貼圖畫）時照畫英文（見 word_plan）。
 
 use std::collections::HashMap;
+use std::hash::{DefaultHasher, Hash, Hasher};
+use std::sync::atomic::{AtomicUsize, Ordering};
+use std::sync::mpsc::{channel, Sender};
 use std::sync::{Arc, LazyLock, OnceLock};
 use std::time::{Duration, Instant};
 
@@ -73,6 +76,8 @@ struct State {
     stamp: Stamp,
     /// 有連結的段落：單字的座標照中文排版搬過（見 plan_links），重訂計畫前要讓遊戲照英文重排
     moved: bool,
+    /// 時間到還沒查完、交給背景查整段的工作（見 Job）：查好以後照完整譯文重訂計畫
+    pending: Option<JobKey>,
 }
 
 static STATES: LazyLock<Mutex<HashMap<usize, State>>> = LazyLock::new(|| Mutex::new(HashMap::new()));
@@ -116,10 +121,80 @@ static WORDS: LazyLock<Mutex<HashMap<usize, Word>>> = LazyLock::new(|| Mutex::ne
 /// ponytail: 段落釋放時沒有通知，舊單字只在同一段落重排時撤掉；超過上限整張清掉，
 /// 當時畫面上的段落要等下次重排才恢復中文。要精確就 hook 段落的解構函式。
 const WORDS_LIMIT: usize = 200_000;
-/// 一個段落排版時查譯文最多花多久，過了的段照英文畫：遊戲在主迴圈裡排版，查譯文的時間就是畫面停住的時間。
+/// 一個段落排版時查譯文最多花多久：遊戲在主迴圈裡排版，查譯文的時間就是畫面停住的時間。
 /// 傳說模式的紀元頁一段可到 2 MB、一萬多段，整段查完要好幾秒（實機量到 8.5 秒）；一般段落幾十毫秒內查完，不受影響。
-/// ponytail: 時間到就照英文；要整頁中文就改成背景執行緒翻完再讓畫字時重訂計畫（像 pinyin.rs 的 BURST）。
+/// 時間到時已查的段照中文、其餘照英文畫，整段交給背景執行緒查完（見 Job），查好以後照完整譯文重訂計畫。
 const PARA_BUDGET: Duration = Duration::from_millis(300);
+
+#[cfg(test)]
+thread_local! {
+    /// 測試用：這個執行緒排版時的時間上限（其他測試照 PARA_BUDGET）
+    static TEST_BUDGET: std::cell::Cell<Option<Duration>> = const { std::cell::Cell::new(None) };
+}
+
+fn budget() -> Duration {
+    #[cfg(test)]
+    if let Some(b) = TEST_BUDGET.get() {
+        return b;
+    }
+    PARA_BUDGET
+}
+
+/// 背景查整段的工作：(查的時候的設定版本與字典, 段落原文的雜湊)。原文裡連結是記號（☺序號☻）、沒有名字，同一段原文
+/// 照同一版設定查，譯文一定相同；設定換過（refresh 換了 Stamp）就是另一個工作，舊結果不再用
+type JobKey = (Stamp, u64);
+
+enum Job {
+    Running,
+    /// translate_paragraph 不設時限的結果：(譯文, 每段都翻出來了)
+    Done(Option<String>, bool),
+}
+
+static JOBS: LazyLock<Mutex<HashMap<JobKey, Job>>> = LazyLock::new(|| Mutex::new(HashMap::new()));
+/// 查好的結果留幾段：同一頁關掉再開直接用，不必再等。超過時查好的整批丟掉（還在等的段落照部分譯文畫）
+const JOBS_LIMIT: usize = 16;
+/// 背景執行緒收的工作：(工作, 字典位址, 段落原文)
+static WORKER: Mutex<Option<Sender<(JobKey, usize, Vec<u8>)>>> = Mutex::new(None);
+/// 有幾個段落在等背景查完（State::pending）：畫字時只在不是 0 時才去看結果（見 word_plan）
+static WAITING: AtomicUsize = AtomicUsize::new(0);
+
+fn job_key(dict: &Dict, key: &[u8]) -> JobKey {
+    let mut h = DefaultHasher::new();
+    key.hash(&mut h);
+    (Stamp::of(dict), h.finish())
+}
+
+/// 背景還在查：查好了（Done）或結果已經丟掉（見 JOBS_LIMIT）都回傳 false，交給 rewrite 處理
+fn job_running(job: JobKey) -> bool {
+    matches!(JOBS.lock().get(&job), Some(Job::Running))
+}
+
+/// 交給背景查整段；送不出去（執行緒不在了）回傳 false
+fn post(job: JobKey, dict: &Dict, key: Vec<u8>) -> bool {
+    let mut worker = WORKER.lock();
+    let tx = worker.get_or_insert_with(|| {
+        let (tx, rx) = channel::<(JobKey, usize, Vec<u8>)>();
+        std::thread::spawn(move || {
+            for (job, dict, key) in rx {
+                // 換下來的字典不釋放（lib.rs 的 LOADED），位址一直有效
+                let (t, complete) = unsafe { &*(dict as *const Dict) }.translate_paragraph(&key, None);
+                let mut jobs = JOBS.lock();
+                if jobs.len() >= JOBS_LIMIT {
+                    jobs.retain(|_, j| matches!(j, Job::Running));
+                }
+                jobs.insert(job, Job::Done(t, complete));
+            }
+        });
+        tx
+    });
+    // 先記成查詢中再送：執行緒查得比這裡快時，查好的結果才不會被蓋回查詢中
+    JOBS.lock().insert(job, Job::Running);
+    if tx.send((job, std::ptr::from_ref(dict) as usize, key)).is_ok() {
+        return true;
+    }
+    JOBS.lock().remove(&job);
+    false
+}
 
 unsafe fn read<T: Copy>(base: usize, offset: usize) -> T {
     unsafe { *((base + offset) as *const T) }
@@ -521,6 +596,9 @@ fn wrap_links(text: &str, width: usize, base: [u8; 3], rgb: impl Fn([u8; 3]) -> 
 
 /// 排版函式跑完後呼叫：依譯文訂好這個段落每個單字的畫字計畫。回傳 true 表示這段有譯文。
 /// relayout 讓遊戲照英文重排一次這個段落（玩家改了設定以後重訂連結段落的計畫用，見 State::moved）。
+/// 查譯文超過 budget() 的段落交給背景查整段（見 Job），這次照已查的部分畫；查好以後再呼叫時照完整譯文重訂。
+/// 那時連結字直接搬到新位置，不必先照英文重排（plan_links 重新算連結字與載字單字的座標，不靠它們搬過的位置）；
+/// 新計畫訂不出來時照舊計畫畫。
 pub unsafe fn rewrite(mtb: usize, dict: &Dict, note_miss: impl FnOnce(&[u8]), relayout: impl FnOnce()) -> bool {
     let Some(l) = MTB_LAYOUT.get() else { return false };
     unsafe {
@@ -533,29 +611,55 @@ pub unsafe fn rewrite(mtb: usize, dict: &Dict, note_miss: impl FnOnce(&[u8]), re
         let width: i32 = read(mtb, l.current_width);
         let stamp = Stamp::of(dict);
         let mut states = STATES.lock();
-        if let Some(s) = states.get(&mtb).filter(|s| s.words == words && s.width == width) {
+        // 背景查好的整段譯文：照它重訂這段的計畫
+        let mut full = None;
+        if let Some(s) = states.get_mut(&mtb).filter(|s| s.words == words && s.width == width) {
             if s.stamp == stamp {
-                return s.translated; // 已排過、寬度沒變、設定也沒換：計畫還有效
-            }
-            // 設定或語言換過：重訂計畫。連結字的座標照中文搬過，先讓遊戲照英文重排
-            if s.moved {
+                // 已排過、寬度沒變、設定也沒換：計畫還有效，除非背景查好了整段
+                let Some(job) = s.pending else { return s.translated };
+                match JOBS.lock().get(&job) {
+                    Some(Job::Done(t, complete)) => full = Some((t.clone(), *complete)),
+                    Some(Job::Running) => return s.translated,
+                    None => {
+                        // 查好的結果已經丟掉（見 JOBS_LIMIT）：照部分譯文畫，不再等
+                        s.pending = None;
+                        WAITING.fetch_sub(1, Ordering::Relaxed);
+                        return s.translated;
+                    }
+                }
+            } else if s.moved {
+                // 設定或語言換過：重訂計畫。連結字的座標照中文搬過，先讓遊戲照英文重排
                 relayout();
             }
         }
+        let upgrade = full.is_some();
         let pal = palette(l);
+        let mut pending = None;
         // (每個單字的計畫, 有連結時每個單字的新座標)
         let planned = plain_text(words, l, pal.as_ref()).and_then(|(key, links)| {
-            // 句型漏掉或重複了名字也算沒翻：連結字沒有位置可放
-            let (t, complete) = dict.translate_paragraph(&key, Some(Instant::now() + PARA_BUDGET));
+            let (t, complete) = full.take().unwrap_or_else(|| {
+                let job = job_key(dict, &key);
+                let running = match JOBS.lock().get(&job) {
+                    // 同一頁關掉再開：背景已經查好
+                    Some(Job::Done(t, complete)) => return (t.clone(), *complete),
+                    Some(Job::Running) => true,
+                    None => false,
+                };
+                let deadline = Instant::now() + budget();
+                let (t, complete) = dict.translate_paragraph(&key, Some(deadline));
+                if !complete && Instant::now() >= deadline && (running || post(job, dict, key.clone())) {
+                    pending = Some(job);
+                }
+                (t, complete)
+            });
+            // 句型漏掉或重複了名字也算沒翻：連結字沒有位置可放。背景還在查時等查好再記
             let Some(t) = t.filter(|t| dict::link_order(t, links.len()).is_some()) else {
-                if links.is_empty() {
-                    note_miss(&key);
-                } else {
-                    note_miss(&readable(&key, words, &links, l));
+                if pending.is_none() {
+                    note_miss(&if links.is_empty() { key } else { readable(&key, words, &links, l) });
                 }
                 return None;
             };
-            if !complete {
+            if !complete && pending.is_none() {
                 // 傳說頁有幾段翻不出來（照原文畫）：整段記下，之後補
                 note_miss(&readable(&key, words, &links, l));
             }
@@ -565,6 +669,13 @@ pub unsafe fn rewrite(mtb: usize, dict: &Dict, note_miss: impl FnOnce(&[u8]), re
                 plan_links(words, width, &t, dict, l, pal.as_ref(), &links).map(|(p, pos)| (p, Some(pos)))
             }
         });
+        if upgrade && planned.is_none() {
+            // 照完整譯文訂不出計畫（缺字圖）：照舊計畫畫，不再等（upgrade 只在舊計畫還在時發生）
+            let Some(s) = states.get_mut(&mtb) else { return false };
+            s.pending = None;
+            WAITING.fetch_sub(1, Ordering::Relaxed);
+            return s.translated;
+        }
         let translated = planned.is_some();
         let moved = matches!(planned, Some((_, Some(_))));
         // 這段的中文照字型實際字寬排（整句貼圖開著時，見 Dict::para_entry）：整句貼圖關掉後舊計畫畫不出字
@@ -573,12 +684,16 @@ pub unsafe fn rewrite(mtb: usize, dict: &Dict, note_miss: impl FnOnce(&[u8]), re
         });
         let mut table = WORDS.lock();
         if let Some(old) = states.remove(&mtb) {
+            if old.pending.is_some() {
+                WAITING.fetch_sub(1, Ordering::Relaxed);
+            }
             for w in old.words {
                 table.remove(&(w + l.word_str));
             }
         }
         if table.len() + words.len() > WORDS_LIMIT {
             table.clear();
+            WAITING.fetch_sub(states.values().filter(|s| s.pending.is_some()).count(), Ordering::Relaxed);
             states.clear();
         }
         for (i, &w) in words.iter().enumerate() {
@@ -589,7 +704,10 @@ pub unsafe fn rewrite(mtb: usize, dict: &Dict, note_miss: impl FnOnce(&[u8]), re
             }
             table.insert(w + l.word_str, Word { mtb, px: read(w, l.word_px), py: read(w, l.word_py), plan, stamp, compact });
         }
-        states.insert(mtb, State { words: words.to_vec(), width, translated, stamp, moved });
+        if pending.is_some() {
+            WAITING.fetch_add(1, Ordering::Relaxed);
+        }
+        states.insert(mtb, State { words: words.to_vec(), width, translated, stamp, moved, pending });
         translated
     }
 }
@@ -731,22 +849,36 @@ fn link_name(dict: &Dict, text: &[u8]) -> Option<String> {
 /// 玩家換了語言或設定、遊戲還沒重排的段落（遊戲只在寬度變了才重排，彈出視窗開著時一直不會）：沒有連結字的
 /// 當場照現在的字典重訂計畫（遊戲正在畫它，段落還在）；連結字搬過位置的要等遊戲照英文重排（見 rewrite），
 /// 這之間 dict 換了語言、或整句貼圖關掉而舊計畫照字寬排時，舊計畫畫不出來，整段照畫英文。
+/// 背景查好整段的段落（見 Job）也在畫到時照完整譯文重訂，不必等遊戲重排。
 pub unsafe fn word_plan(s: usize, dict: &Dict) -> Option<Plan> {
     let l = MTB_LAYOUT.get()?;
     let w = s - l.word_str;
     let same_place = |word: &&Word| unsafe { read::<i32>(w, l.word_px) == word.px && read::<i32>(w, l.word_py) == word.py };
-    let stale = {
+    let (mtb, stale) = {
         let table = WORDS.lock();
         let word = table.get(&s).filter(same_place)?;
-        (word.stamp != Stamp::of(dict)).then_some(word.mtb)
+        (word.mtb, word.stamp != Stamp::of(dict))
     };
-    // rewrite 先鎖 STATES 再鎖 WORDS：這裡兩個都放開了才呼叫
-    if let Some(mtb) = stale.filter(|mtb| STATES.lock().get(mtb).is_some_and(|state| !state.moved)) {
-        unsafe { rewrite(mtb, dict, |key| crate::hooks::note_miss("mtb", key), || {}) };
+    // rewrite 先鎖 STATES，再鎖 JOBS、WORDS：這裡都放開了才呼叫
+    if stale {
+        if STATES.lock().get(&mtb).is_some_and(|state| !state.moved) {
+            unsafe { rewrite(mtb, dict, |key| crate::hooks::note_miss("mtb", key), || {}) };
+        }
+    } else if WAITING.load(Ordering::Relaxed) > 0 {
+        let waiting = STATES.lock().get(&mtb).and_then(|state| state.pending).is_some_and(|job| !job_running(job));
+        if waiting {
+            // 背景查好了（或結果已經丟掉）：照完整譯文重訂。遊戲這一幀照這個字原本的座標畫它，座標搬過的話這一幀先不畫
+            let at = |w: usize| unsafe { (read::<i32>(w, l.word_px), read::<i32>(w, l.word_py)) };
+            let before = at(w);
+            unsafe { rewrite(mtb, dict, |key| crate::hooks::note_miss("mtb", key), || {}) };
+            if at(w) != before {
+                return Some(Plan::Skip);
+            }
+        }
     }
     let table = WORDS.lock();
     let word = table.get(&s).filter(same_place)?;
-    let unusable = !word.stamp.same_dict(dict) || (word.compact && !crate::overlay::ON.load(std::sync::atomic::Ordering::Relaxed));
+    let unusable = !word.stamp.same_dict(dict) || (word.compact && !crate::overlay::ON.load(Ordering::Relaxed));
     Some(if unusable { Plan::Plain } else { word.plan.clone() })
 }
 
@@ -1073,6 +1205,72 @@ mod tests {
             let Some(Plan::Draw(row)) = word_plan(p.words[0], &hans) else { panic!("換了語言，第一個單字照新字典畫中文") };
             assert_eq!(row[0].entry.text, "全鱼");
             assert_eq!(plan_of(p.words[1], &hans), "skip");
+        }
+    }
+
+    /// 背景翻譯測試用的字典：和實機一樣活到程式結束，背景執行緒查到一半時測試失敗，也不會讀到釋放掉的字典
+    static BUDGET_DICT: LazyLock<Dict> = LazyLock::new(|| {
+        let mut d = Dict::default();
+        assert!(d.set_glyphs("勞動結束。", vec![0; 10]));
+        d.load_tsv("Labor ends.\t勞動結束。\n");
+        d
+    });
+
+    /// 這個執行緒排版時一段都來不及查（傳說紀元頁那種要查好幾秒的段落）：第一次排版照英文、交給背景查，等它查好。
+    /// blocks 段「Labor ends.」以 [B] 隔開（各測試用不同段數，背景工作才不會共用）
+    unsafe fn laid_out_past_the_budget(blocks: usize) -> (Fake, JobKey) {
+        let mut texts = vec![("Labor", 7), ("ends.", 7)];
+        for _ in 1..blocks {
+            texts.extend([("", 7), ("Labor", 7), ("ends.", 7)]);
+        }
+        let p = Fake::new(&texts, 40);
+        let mut logged = false;
+        TEST_BUDGET.set(Some(Duration::ZERO));
+        unsafe {
+            for i in (2..texts.len()).step_by(3) {
+                write(p.words[i], 48, BLANK_LINE);
+            }
+            assert!(!rewrite(p.mtb, &BUDGET_DICT, |_| logged = true, || {}));
+        }
+        TEST_BUDGET.set(None);
+        assert!(!logged, "背景還在查：不記未翻譯");
+        // 直接看登記的計畫：用 word_plan 看的話，背景可能已經查好、當場就重訂了
+        assert!(matches!(WORDS.lock().get(&p.words[0]).map(|w| &w.plan), Some(Plan::Plain)), "這一幀照英文");
+        let job = STATES.lock().get(&p.mtb).and_then(|s| s.pending).expect("交給背景查");
+        let start = Instant::now();
+        while job_running(job) {
+            assert!(start.elapsed() < Duration::from_secs(10), "背景查不完");
+            std::thread::sleep(Duration::from_millis(5));
+        }
+        (p, job)
+    }
+
+    #[test]
+    fn a_paragraph_cut_short_by_the_time_budget_switches_to_the_full_translation_when_drawn() {
+        let d = &*BUDGET_DICT;
+        unsafe {
+            let (p, _) = laid_out_past_the_budget(2);
+            // 遊戲沒重排（寬度沒變），畫到這段時照完整譯文重訂；沒有連結字、座標沒搬，這一幀就照新計畫畫
+            assert_eq!((plan_of(p.words[0], d), plan_of(p.words[1], d), plan_of(p.words[4], d)), ("draw", "skip", "draw"));
+            assert!(STATES.lock().get(&p.mtb).is_some_and(|s| s.translated && s.pending.is_none()));
+            // 遊戲再排版（同一段原文）：直接用查好的整段，不必再等
+            write(p.mtb, 48, 30i32);
+            let mut logged = false;
+            assert!(rewrite(p.mtb, d, |_| logged = true, || {}));
+            assert!(!logged, "整段都翻出來了");
+            assert_eq!(plan_of(p.words[0], d), "draw");
+        }
+    }
+
+    #[test]
+    fn a_paragraph_whose_background_result_was_dropped_stops_waiting_when_drawn() {
+        let d = &*BUDGET_DICT;
+        unsafe {
+            let (p, job) = laid_out_past_the_budget(3);
+            // 查好的結果還沒用就被擠掉（JOBS_LIMIT）、遊戲也沒再排版：畫到時不再等，照原本的計畫畫
+            JOBS.lock().remove(&job);
+            assert_ne!(plan_of(p.words[0], d), "none");
+            assert!(STATES.lock().get(&p.mtb).is_some_and(|s| s.pending.is_none()), "不再等背景");
         }
     }
 

@@ -76,6 +76,16 @@ Floor Bars	地板柵欄	地板栅栏		建築種類名（building_type 名稱函�
 Display Furniture	展示家具	展示家具		建築種類名（building_type 名稱函式 FUN_14054d320，首字大寫）；fn_thought_composer case 0x1b-0x1e 欣賞家具時抓成 {1}；通用詞
 Offering Place	供奉處	供奉处		建築種類名（building_type 名稱函式 FUN_14054d320，首字大寫）；fn_thought_composer case 0x1b-0x1e 欣賞家具時抓成 {1}；通用詞
 Archery Target	箭靶	箭靶		建築種類名（building_type 名稱函式 FUN_14054d320，首字大寫）；fn_thought_composer case 0x1b-0x1e 欣賞家具時抓成 {1}；通用詞
+a fine Furnace	精緻的熔爐	精致的熔炉	inner	fn_thought_composer case 0x1b 欣賞建築（前接 near；perf-fort 實機「She felt pleasure near a fine Furnace.」）：Furnace、Trap 不放全域單字（會被別的佔位撿走，見 ui_24 的 Click a tile to place the Furnace.），整段寫出、只給佔位用
+a very fine Furnace	十分精緻的熔爐	十分精致的熔炉	inner	同上
+a splendid Furnace	華麗的熔爐	华丽的熔炉	inner	同上
+a wonderful Furnace	極其出色的熔爐	极其出色的熔炉	inner	同上
+a completely sublime Furnace	美輪美奐的熔爐	美轮美奂的熔炉	inner	同上
+a fine Trap	精緻的陷阱	精致的陷阱	inner	同上；Trap 是陷阱類建築（含拉桿、壓力板）的種類名（perf-fort 實機「She was interested near a fine Trap.」）
+a very fine Trap	十分精緻的陷阱	十分精致的陷阱	inner	同上
+a splendid Trap	華麗的陷阱	华丽的陷阱	inner	同上
+a wonderful Trap	極其出色的陷阱	极其出色的陷阱	inner	同上
+a completely sublime Trap	美輪美奐的陷阱	美轮美奂的陷阱	inner	同上
 mother	母親	母亲		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
 father	父親	父亲		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
 parent	父母	父母		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞

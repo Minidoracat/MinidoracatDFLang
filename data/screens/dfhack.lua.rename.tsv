@@ -13,3 +13,5 @@ FoodStore	食品店	食品店			DFHack hack/scripts/gui/rename.lua L47 名字種
 Region	地區	地区			DFHack hack/scripts/gui/rename.lua L40 名字種類；通用單字，只在改名視窗套用
 The X	主名	主名			DFHack hack/scripts/gui/rename.lua L648 名字組成清單（language_name_component TheX 拆字）：「the 某某」的核心名詞；原文只有 5 格
 Of X	之名	之名			DFHack hack/scripts/gui/rename.lua L648 名字組成清單（OfX）：「of 某某」的部分；原文只有 4 格
+Gen_divine	神聖語	神圣语			DFHack hack/scripts/gui/rename.lua L335 語言選項（翻譯表名稱 GEN_DIVINE 改成首字大寫）：程序生成的神聖生物語言（vanilla_procedural language.lua）
+Gen_identity	英文原字	英文原字			DFHack hack/scripts/gui/rename.lua L335 語言選項（GEN_IDENTITY）：程序生成、每個字的原生寫法就是英文字的語言（language.lua L56）

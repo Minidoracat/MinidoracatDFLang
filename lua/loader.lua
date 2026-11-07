@@ -856,7 +856,9 @@ local function player_names()
 end
 
 -- 第三方模組的名稱、作者、說明（標題的模組管理員、建立世界與競技場的模組選擇）照原文：沒有讀進地圖時代替玩家取的名字送給引擎，
--- 模組畫面上和字典同字的也照原文（見 engine/src/dict.rs 的 keeps_player_name）。原版模組（flags.vanilla）照翻
+-- 模組畫面上和字典同字的也照原文（見 engine/src/dict.rs 的 keeps_player_name）。原版模組（flags.vanilla）照翻。
+-- 建立世界與競技場的模組清單一列是「名稱 版本」（FUN_140df5e90）：原版的由句型 {@1} {#2}.{#3} 翻（data/rules/worldgen.tsv），
+-- 第三方的整列也送，名稱和字典同字時才不會被那條句型翻掉
 local function mod_texts()
     local texts = {}
     for _, m in ipairs(df.global.game.mod_manager.mod_header) do
@@ -864,6 +866,7 @@ local function mod_texts()
             for _, s in ipairs({m.name, m.author, m.description, m.steam_title, m.steam_description}) do
                 if s ~= '' then table.insert(texts, s) end
             end
+            if m.name ~= '' and m.displayed_version ~= '' then table.insert(texts, m.name .. ' ' .. m.displayed_version) end
         end
     end
     return table.concat(texts, '\n')
