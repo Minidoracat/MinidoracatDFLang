@@ -9,6 +9,7 @@
 //! use_dict（或載入另一種語言的字典再 commit）、load_names、load_translit，最後 refresh。dict、ctb 也給 examples/t.rs（離線查譯文）用。
 
 mod atlas;
+mod capture;
 pub mod cp437;
 pub mod ctb;
 pub mod dict;
@@ -71,6 +72,7 @@ pub unsafe extern "C" fn luaopen_dflang(l: lua::State) -> c_int {
         lua::set_fn(l, c"set_tile_swaps", set_tile_swaps);
         lua::set_fn(l, c"dfhack_export", dfhack_export);
         lua::set_fn(l, c"fake_mouse", fake_mouse);
+        lua::set_fn(l, c"capture", capture_frame);
         lua::set_fn(l, c"load_translit", load_translit);
         lua::set_fn(l, c"set_translit", set_translit);
         lua::set_fn(l, c"set_options", set_options);
@@ -500,6 +502,20 @@ unsafe extern "C" fn fake_mouse(l: lua::State) -> c_int {
             _ => return fail(l, "fake_mouse: expects (x, y) or nothing"),
         };
         match mouse::set(pos) {
+            Ok(()) => {
+                lua::push_bool(l, true);
+                1
+            }
+            Err(e) => fail(l, &e),
+        }
+    }
+}
+
+/// capture(路徑)：開發用，下一幀送出前把畫面存成寬、高（u32 LE）加 BGRA 的原始檔，失敗時寫 <路徑>.err（見 capture.rs）
+unsafe extern "C" fn capture_frame(l: lua::State) -> c_int {
+    unsafe {
+        let Some(path) = lua::arg_str(l, 1) else { return fail(l, "capture: expects a path") };
+        match capture::request(path) {
             Ok(()) => {
                 lua::push_bool(l, true);
                 1

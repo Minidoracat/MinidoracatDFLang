@@ -8,7 +8,8 @@
   uv run scripts/dev_game.py up [--lang zh-Hant|zh-Hans|auto] [--with-dfi18n] [--save 名稱]...
                                                                掛包、遮蔽 DFI18n（--with-dfi18n 不遮蔽）、啟動，等到 DFHack 回應；
                                                                要測的語言寫進測試用的 dflang.json（auto 不寫，照系統判斷），載入的不是 dist 的包就失敗；
-                                                               --save 把 temp/test-world/<名稱> 複製進遊戲的 save/
+                                                               --save 把 temp/test-world/<名稱> 複製進遊戲的 save/；同一台的 PZ 有效能輪（計時、獨佔）
+                                                               放行或排隊時不開，開好後跑 dflang-dev-pzyield：效能輪一放行就關遊戲
   uv run scripts/dev_game.py run dflang status                 轉給 dfhack-run
   uv run scripts/dev_game.py click X Y                         以文字格座標模擬滑鼠左鍵（不動真滑鼠、不搶焦點）
   uv run scripts/dev_game.py mouse PX PY [r]                   以畫面像素座標按住滑鼠三幀再放開（地圖點擊用；會結束 hover）
@@ -74,6 +75,7 @@ SAVE_KEEP = ROOT / "temp/saves"
 DEV_LUA = ROOT / "scripts/dev_lua"
 DEV_SCRIPTS = CONFIG_DIR / "scripts"  # DFHack 的腳本路徑之一
 DUMPS_ARCHIVE = ROOT / "temp/dumps"
+PZ_LEASE = Path(os.environ.get("LOCALAPPDATA", "")) / "pz-family-e2e-lease.json"  # 同一台機器上 PZ 家族 E2E 的排隊與放行
 
 
 def dfhack(*args: str, quiet: bool = False) -> subprocess.CompletedProcess:
@@ -91,7 +93,23 @@ def game_running() -> bool:
 
 def kill_game() -> None:
     subprocess.run(["taskkill", "/IM", "Dwarf Fortress.exe", "/F"], capture_output=True)
+    # DFHack 的 Steam 啟動器：DF 超過 60 秒沒開起來就跳出對話框等人按，沒人按會一直掛著，Steam 一直算 DFHack 在執行
+    # （2026-11-08 9950X3D：Steam 的安裝腳本等 UAC 卡了 2 分鐘，launchdf 掛了 7 小時）
+    subprocess.run(["taskkill", "/IM", "launchdf.exe", "/F"], capture_output=True)
     time.sleep(3)
+
+
+def pz_perf_runs() -> list[str]:
+    """同一台機器上 PZ 的效能輪（lease 裡標了 timing／exclusive），放行中與排隊中的都算；沒有 lease 檔是空的。
+    效能量測要整台安靜，實機測試讓位（使用者 2026-11-08）"""
+    try:
+        lease = json.loads(PZ_LEASE.read_text(encoding="utf-8"))
+    except FileNotFoundError:
+        return []
+    except (OSError, ValueError) as e:
+        return [f"lease 檔讀不到：{e}"]
+    return [f"{where} {e.get('run')}" for where, key in (("放行", "granted"), ("排隊", "queue"))
+            for e in lease.get(key, []) if e.get("timing") or e.get("exclusive")]
 
 
 def play(lang: str | None) -> int:
@@ -159,8 +177,13 @@ def up(lang: str, with_dfi18n: bool = False, saves: list[str] | None = None) -> 
         CONFIG_DIR.mkdir(exist_ok=True)  # 遊戲裝好還沒跑過 DFHack 時沒有這個資料夾
         config.write_text(json.dumps(data), encoding="utf-8")
     install_dev_lua()
-    os.startfile("steam://rungameid/975370")
-    deadline = time.time() + 180
+    # 直接開 DF，不經 Steam 的啟動流程：Steam 開遊戲前會先跑還沒成功過的安裝腳本，要 UAC 的沒人按就等 2 分鐘才取消
+    # （2026-11-08 9950X3D 的 VC++ 2022，使用者在那台按過才好）。DF 沒有呼叫 SteamAPI_RestartAppIfNecessary，
+    # SteamAPI_Init 從環境變數 SteamAppId 拿 AppID（Steam 開遊戲時也是這樣給），照樣連上 Steam
+    subprocess.Popen([str(DF / "Dwarf Fortress.exe")], cwd=DF, env={**os.environ, "SteamAppId": "975370"},
+                     stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL,
+                     creationflags=subprocess.CREATE_NEW_PROCESS_GROUP)
+    deadline = time.time() + 300
     while time.time() < deadline:
         time.sleep(3)
         if "ready" in dfhack("lua", "print('ready')", quiet=True).stdout:
@@ -355,33 +378,21 @@ CLOSE_HELP = "pcall(function() df.global.game.main_interface.help.open = false e
 MAX_CLICKS = 400
 
 
-class BitmapInfoHeader(ctypes.Structure):
-    _fields_ = [("size", wt.DWORD), ("width", wt.LONG), ("height", wt.LONG), ("planes", wt.WORD), ("bit_count", wt.WORD),
-                ("compression", wt.DWORD), ("size_image", wt.DWORD), ("x_per_meter", wt.LONG), ("y_per_meter", wt.LONG),
-                ("colors_used", wt.DWORD), ("colors_important", wt.DWORD)]
-
-
 @functools.cache
 def win32():
-    """user32、gdi32，回傳值是指標的函式設好型別（預設的 int 會截斷 64 位元的 handle）"""
-    user32, gdi32 = ctypes.windll.user32, ctypes.windll.gdi32
+    """user32，回傳值是指標的函式設好型別（預設的 int 會截斷 64 位元的 handle）"""
+    user32 = ctypes.windll.user32
     user32.SetProcessDpiAwarenessContext(ctypes.c_void_p(-4))  # 依螢幕 DPI：視窗大小、游標位置都是實際像素
-    for f, res, args in ((user32.FindWindowW, wt.HWND, [wt.LPCWSTR, wt.LPCWSTR]), (user32.GetDC, wt.HDC, [wt.HWND]),
-                         (gdi32.CreateCompatibleDC, wt.HDC, [wt.HDC]), (gdi32.SelectObject, wt.HGDIOBJ, [wt.HDC, wt.HGDIOBJ]),
-                         (gdi32.CreateDIBSection, wt.HBITMAP, [wt.HDC, ctypes.c_void_p, wt.UINT, ctypes.POINTER(ctypes.c_void_p), wt.HANDLE, wt.DWORD]),
-                         (user32.PrintWindow, wt.BOOL, [wt.HWND, wt.HDC, wt.UINT]), (user32.ReleaseDC, ctypes.c_int, [wt.HWND, wt.HDC]),
-                         (gdi32.DeleteObject, wt.BOOL, [wt.HGDIOBJ]), (gdi32.DeleteDC, wt.BOOL, [wt.HDC]),
-                         (user32.WindowFromPoint, wt.HWND, [wt.POINT]), (user32.GetAncestor, wt.HWND, [wt.HWND, wt.UINT]),
-                         (user32.MonitorFromWindow, wt.HMONITOR, [wt.HWND, wt.DWORD]),
-                         (user32.SetWindowPos, wt.BOOL, [wt.HWND, wt.HWND, ctypes.c_int, ctypes.c_int, ctypes.c_int, ctypes.c_int, wt.UINT])):
+    for f, res, args in ((user32.FindWindowW, wt.HWND, [wt.LPCWSTR, wt.LPCWSTR]),
+                         (user32.WindowFromPoint, wt.HWND, [wt.POINT]), (user32.GetAncestor, wt.HWND, [wt.HWND, wt.UINT])):
         f.restype, f.argtypes = res, args
-    return user32, gdi32
+    return user32
 
 
 def cursor_on_game() -> bool:
     """真游標停在遊戲視窗上（游標底下最上層的視窗是遊戲；被別的視窗蓋住的部分不算）：遊戲讀作業系統的游標位置，
     模擬的點擊會被它蓋掉、點到別的地方"""
-    user32, _ = win32()
+    user32 = win32()
     hwnd = user32.FindWindowW("SDL_app", "Dwarf Fortress")
     point = wt.POINT()
     if not hwnd or not user32.GetCursorPos(ctypes.byref(point)):
@@ -389,38 +400,28 @@ def cursor_on_game() -> bool:
     return user32.GetAncestor(user32.WindowFromPoint(point), 2) == hwnd  # GA_ROOT
 
 
-def onto_screen(user32, hwnd) -> None:
-    """遊戲視窗不在任何螢幕上時移回 (0,0)、放到最底層（不搶焦點、不蓋住使用者的視窗）：畫面外的視窗 PrintWindow 一直拿到
-    移出去以前的那一幀（2026-10-20 拍相簿，打開人物頁後截到的還是居民清單）"""
-    if user32.MonitorFromWindow(hwnd, 0):  # MONITOR_DEFAULTTONULL：和任何螢幕都不相交才回 NULL
-        return
-    user32.SetWindowPos(hwnd, wt.HWND(1), 0, 0, 0, 0, 0x0011)  # HWND_BOTTOM；SWP_NOSIZE | SWP_NOACTIVATE
-    print("遊戲視窗在畫面外，已移回 (0,0) 放到最底層", file=sys.stderr)
-    time.sleep(1.5)  # 等遊戲畫新的一幀
-
-
 def capture() -> tuple[int, bytes] | None:
-    """遊戲視窗客戶區的畫面（原生解析度，每像素 BGRA）：PrintWindow 加 PW_RENDERFULLCONTENT，視窗被蓋住也抓得到"""
-    user32, gdi32 = win32()
-    hwnd = user32.FindWindowW("SDL_app", "Dwarf Fortress")
-    rect = wt.RECT()
-    if not hwnd or not user32.GetClientRect(hwnd, ctypes.byref(rect)):
+    """遊戲畫面（原生解析度，每像素 BGRA）：引擎在下一幀送出前讀回（engine/src/capture.rs），螢幕關著也拍得到。
+    原本用 PrintWindow，螢幕關著時拍到整張黑（2026-11-08 9950X3D：沒人連線時主控台的螢幕是關的，送滑鼠輸入也叫不醒）"""
+    raw = ROOT / "temp/dev-shot.raw"
+    err = raw.with_name(raw.name + ".err")
+    raw.unlink(missing_ok=True)
+    err.unlink(missing_ok=True)
+    if dfhack("lua", f"dfhack.BASE_G.DFLANG.engine.capture([[{raw}]])", quiet=True).returncode:
         return None
-    onto_screen(user32, hwnd)
-    w, h = rect.right, rect.bottom
-    header = BitmapInfoHeader(ctypes.sizeof(BitmapInfoHeader), w, -h, 1, 32)  # 高度給負的：由上往下排
-    window_dc = user32.GetDC(hwnd)
-    dc = gdi32.CreateCompatibleDC(window_dc)
-    bits = ctypes.c_void_p()
-    bitmap = gdi32.CreateDIBSection(dc, ctypes.byref(header), 0, ctypes.byref(bits), None, 0)
-    old = gdi32.SelectObject(dc, bitmap)
-    ok = user32.PrintWindow(hwnd, dc, 3)  # PW_CLIENTONLY | PW_RENDERFULLCONTENT
-    data = ctypes.string_at(bits, w * h * 4) if ok else None
-    gdi32.SelectObject(dc, old)
-    gdi32.DeleteObject(bitmap)
-    gdi32.DeleteDC(dc)
-    user32.ReleaseDC(hwnd, window_dc)
-    return (w, data) if data else None
+    deadline = time.time() + 5
+    while time.time() < deadline:
+        if raw.exists():
+            data = raw.read_bytes()
+            raw.unlink()
+            return struct.unpack("<I", data[:4])[0], data[8:]
+        if err.exists():
+            print(f"引擎截圖失敗：{err.read_text(encoding='utf-8', errors='replace')}", file=sys.stderr)
+            err.unlink()
+            return None
+        time.sleep(0.05)
+    print("遊戲 5 秒內沒有畫新的一幀", file=sys.stderr)
+    return None
 
 
 def png(img: bytes, w: int, box: tuple[int, int, int, int]) -> bytes:
@@ -444,9 +445,12 @@ def shot(path: str, crop: tuple[int, int, int, int] | None, wait: float) -> int:
     time.sleep(wait)
     got = capture()
     if not got:
-        print("截不到遊戲視窗（遊戲沒開？）", file=sys.stderr)
+        print("截不到遊戲畫面（遊戲沒開、DFHack 沒回應？）", file=sys.stderr)
         return 1
     w, img = got
+    if not any(img[c::4].strip(b"\0") for c in range(3)):  # RGB 全是 0
+        print("截到整張黑：讀回的畫面全是 0", file=sys.stderr)
+        return 1
     h = len(img) // (w * 4)
     x, y, cw, ch = crop or (0, 0, w, h)
     x, y = max(0, x), max(0, y)
@@ -593,7 +597,13 @@ def main() -> int:
     if args[0] in ("play", "up"):
         lang = (option(args, "--lang") or [None])[0]
         saves = [args[i + 1] for i, a in enumerate(args[:-1]) if a == "--save"]
-        return play(lang) if args[0] == "play" else up(lang or "zh-Hant", "--with-dfi18n" in args, saves)
+        if args[0] == "play":
+            return play(lang)
+        perf = pz_perf_runs()
+        if perf:
+            print("PZ 的效能量測在跑或在排隊，實機測試讓位，跑完再 up：\n  " + "\n  ".join(perf), file=sys.stderr)
+            return 1
+        return up(lang or "zh-Hant", "--with-dfi18n" in args, saves) or dfhack("dflang-dev-pzyield").returncode
     if args[0] == "run":
         return dfhack(*args[1:]).returncode
     if args[0] == "click":
