@@ -57,3 +57,4 @@ stray {%1} {@2}	流浪{1}{2}	流浪{1}{2}		流浪家畜的身體部位（stray b
 Horizontal {%1} Axle	{1}水平傳動軸	{1}水平传动轴		FUN_140553720 建築名（沒取名時）：Horizontal＋材料＋ Axle；照建造選單的 Horizontal axle
 Vertical {%1} Axle	{1}垂直傳動軸	{1}垂直传动轴		FUN_140553a50 建築名：Vertical＋材料＋ Axle
 Vertical {%1} Bars	{1}直立柵欄	{1}竖直栅栏		FUN_140550ef0 建築名：Vertical＋材料＋ Bars；照建造選單的 Vertical bars
+raw {@1}	生{1}	生{1}		物品名：還沒在漁場處理的魚貝＝ raw ＋生物名（raw mussel、rotten raw mussel [3]；rotten、數量、「This is a stack of …」由現有句型接）；{@1} 只收字典裡的生物名，raw umber、raw adamantine、raw green glass 是整句條目，不經這條

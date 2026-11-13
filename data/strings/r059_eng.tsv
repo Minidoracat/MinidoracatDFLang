@@ -1,0 +1,3 @@
+en	zh-Hant	zh-Hans	align	note
+I don't know very much about the outside world.	我對外面的世界所知不多。	我对外面的世界所知不多。		FUN_14041b5a0 L534849 外交會談對話框「講者: I don't know very much about the outside world.  I wish I had more to tell you.」第一句；講者句型最後的 {%n} 跨句收整段時逐句查，單句沒有條目會被 speech_03 的 I don't know {1}. 翻成「我不認識very much…」（同 __speakers 的 {*1}: I don't know…、sentences_ui7 的 {1}: I don't know…）
+Charcoal	木炭	木炭		物品 charcoal（燒炭爐的燃料）首字大寫：庫存畫面上方的合計列「Charcoal [8]」（實機 53.17，dwarfmode/Stocks）、教學段落「make [C:6:0:1]Charcoal」。沒有這條時 {%1} [{#2}] 的 {%1} 退回小寫的顏色 charcoal，畫成「炭灰色 [8]」；同 names_items_exe 的 Ash

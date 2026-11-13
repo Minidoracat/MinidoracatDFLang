@@ -2,6 +2,44 @@
 
 所有重要的變更都記錄在這裡。格式依 [Keep a Changelog](https://keepachangelog.com/zh-TW/1.1.0/)，版本號照 `scripts/workshop.json`。每一版的工作坊更新說明（`docs/steam/changelog-*.bbcode`）由這裡整理成玩家看得懂的重點。
 
+## [Unreleased]
+
+## [0.5.9] - 2026-11-14
+
+### 新增
+
+- **其他模組可以自帶中文字典**：模組新增的生物、物品、材料原本照英文。現在模組作者或玩家在那個模組裡放 `dflang/zh-Hant/strings.tsv`（簡中是 `zh-Hans`），裝了本中文化的玩家就會看到中文；寫法見 [docs/mod-dictionaries.md](docs/mod-dictionaries.md)。同一句原文本中文化也有譯文時用本中文化的。
+  > 技術要點：`lua/loader.lua` 的 `mod_dicts` 用 DFHack `script-manager.get_mod_paths('dflang')` 找已安裝模組的字典檔，在本包的 `strings.tsv` 之前載入（後載入的蓋過去）。字典用到字圖集沒有的字時加進字圖集用字，字型清單尾端接 Windows 的微軟正黑體／微軟雅黑補字（`atlas::load_fonts` 改用 `FontRef::from_index` 才讀得了 `.ttc`）；沒有模組字典時字型與字圖集和原來相同。
+- **搜尋框可以直接打中文字**：遊戲的搜尋框（庫存、倉儲設定、傳說清單…）與 DFHack 視窗的清單搜尋，原本只能在英文輸入狀態打拼音，輸入法打出的中文字收不到。現在用輸入法打「鐵礦」，框裡就顯示「鐵礦」，清單照中文名稱篩選，退格一次刪一個字；拼音照舊能用。語言選繁體時打繁體字、選簡體時打簡體字。取名用的輸入框（倉儲區、小隊、存檔名）照舊只收英數字。
+  > 技術要點：遊戲的打字函式（FUN_140c39700）對搜尋框給的旗標是 0xb，只收字母、數字、空白，0x80 以上的位元組全丟。`hook_text_input` 把輸入法送來的 UTF-8 拆開：ASCII 照舊交給原函式，完整的漢字由 hook 接到字串後面（`StdString::append`，放不下的字整個不收），退格時連半個字一起刪；框是不是搜尋框照位址判斷（`main_interface` 裡名字含 filter／search 的欄位、`widgets::textbox` 的 `textbox_type == FILTER`、傳說清單的篩選），其他框只收 ASCII，中文位元組不會進存檔。比對時中文直接找譯文（`pinyin::Query`）；字圖集沒有的字在框裡畫成「?」。DFHack 的輸入框只把文字事件的第一個位元組當按鍵，`install_ime` 改從 `enabler.last_text_input` 取完整的字。引擎第一次收到打字時設 `SDL_IME_SHOW_UI=1`（遊戲附的 SDL 是 2.26.2）。
+
+### 修正
+
+- **還沒處理的生魚貝照英文**：從河裡撈上來、還沒在漁場處理的魚貝（「raw mussel」），名稱和物品說明都是英文（「這是a stack of 3 rotten raw mussel。」）。現在顯示「腐爛的生貽貝 [3]」「這是一堆腐爛的生貽貝，共 3 份。」。
+  > 技術要點：物品名是 `raw ＋生物名`，`data/rules/names_items.tsv` 加句型 `raw {@1}`；rotten、數量、說明句由現有句型接。
+- **遊戲 53.17 新增的介面音量與曲目**：音訊設定的「UI Volume」兩列與暫停選單的新曲目「Myth & Magic」照英文。現在是「介面音量（要塞）」「介面音量（冒險）」「神話與魔法」。
+  > 技術要點：53.16 → 53.17 的執行檔文字只多這三條玩家看得到的字（`df_snapshot.py diff`，其餘是 FMOD 音訊引擎的紀錄訊息與事件路徑），raws 文字沒有變；`engine/patterns.tsv` 的特徵碼在 53.17 全部命中。
+- **遊戲 53.17 冒險模式「選擇你的命運」的「平凡」說明照英文**：天選者、英雄兩框是中文，平凡那框是「For the most freedom.  All features are…」。現在是「最自由的玩法。所有功能都能使用，但不會有任何指引。」。
+  > 技術要點：53.17 的編譯器把這一框的 `wrap_text` 連同 `wrap_lines` 內嵌進畫面的建構函式（Steam 版 0x14064e922 起，寬 16 寫死），`wrap_lines` 的 hook 攔不到。新 hook `adv_fate` 掛建構函式，原函式跑完後把 `destiny_desc`（+0x1c8 起三個）與 `difficulty_desc`（+0x210）裡還沒登記的行接回整句登記（`lines::plan_list`）。比對 53.16 反編譯與 53.17 執行檔，`wrap_lines` 的切行迴圈新多出的內嵌只有這一處。
+- **DFHack 53.17-r1 的自動耕作（autofarm）**：農田頁新增的自動耕作控件、新視窗 `gui/autofarm` 與它的說明照英文。現在是中文。
+  > 技術要點：比對 DFHack 53.16-r3 與 53.17-r1 的原始碼，畫在畫面上的新字只有 autofarm：`data/strings/dfhack_5317.tsv` 36 條、`data/rules/dfhack_5317.tsv` 5 條句型、`data/screens/dfhack.lua.autofarm.tsv` 與 `dwarfmode.ViewSheets.BUILDING.tsv` 5 條依畫面譯文；控制面板搜尋沒有結果時的「No matches」補進 `dfhack_core.tsv`。
+- **資訊面板「任務」分頁的工坊名與被截短的名字照英文**：每列右邊的工坊「Loom」「Still」「Fishery」，以及名字太長被遊戲截成「…, Stonecu...」的那一列照英文。現在工坊名是中文，截短的列照完整的名字與職業翻。
+  > 技術要點：工坊名加進 `data/screens/dwarfmode.Info.JOBS.tsv`。截短的列：遊戲截字多半直接改字串長度、不經 `string_resize`，記不到截短前的原文；`Dict::complete_cut` 補完逗號後的片段時，同一個詞的單複數算一個（Stonecutter／Stonecutters），截在名字中間的改補成名稱表或原名裡唯一以它開頭的名字（`names::complete`），不唯一照舊不猜。
+- **ASCII 模式關掉整句貼圖時，中文整片空白**：設定裡開了「Use Classic ASCII glyphs」又把整句貼圖關掉時，所有中文的位置都是空的。現在 ASCII 模式一律用整句貼圖，設定視窗的開關鎖在開。
+  > 技術要點：ASCII 模式遊戲不讀 `screentexpos`，一字兩格的字圖畫不出來（53.17 實機）。`lua/loader.lua` 的 `wanted` 在 `dfhack.screen.inGraphicsMode()` 為 false 時把 overlay 當成開；`dflang overlay off` 印說明、不改設定。
+- **冒險模式交談、日誌與說故事選單的漏翻**：帶講者的多句台詞有幾類半中半英（「矮人Urist：幾年前、我的兒子Kib Domas was kidnapped…」「啊，你好。I'm .」），「說故事」選單的事件標題整排英文（太長被遊戲截掉的也翻錯），存檔清單的冒險者名字與交談裡叫對方名字時沒有音譯，日誌人物頁的宗教職位（「This person is sacred web of…」）照英文。現在都是中文。日誌與任務側欄太長被截斷的標題、蛇人與爬蟲人說的話（s 拉長成 sss）也改了，這兩項只有單元測試與離線樣本，還沒在遊戲裡看到。
+  > 技術要點：講者句型最後接在「: 」後面的 `{%n}` 可以跨句（`Rule::spans`、`Dict::spoken`：先整段查、再逐句查）；日誌標題（遊戲截成 58 位元組）與說故事標題（80 位元組）沒有「...」，`hooks.rs` 的 `untruncated` 從同一個物件讀回截短前的原文，先翻原文再截回原格數；說故事標題先改小寫、套帶日期的事件短語（`Rule::dated`）；嘶聲台詞（caste 有 [LISP]）把連續的 s 還原後再查（`unhissed`）；`lua/loader.lua` 的 `note_save_names`、`note_adventurers` 登記存檔標頭的冒險者名、冒險者與同伴的原名，沒有語言的文明名（狗頭人）也登記。資料：`data/strings/r059_adv.tsv`、`adv_speech_r059.tsv`、`data/rules/r059_adv.tsv`、`r059_eng.tsv`、`adv_journal2.tsv`。
+- **冒險模式抓住、懸吊在樹枝的選項**：「Hold thick oak branches (North)」顯示成「抓住厚厚的橡樹樹枝(北方)」。現在是「抓住橡樹粗枝(北方)」，覆雪、泥濘、長苔、枯死的樹枝也一樣。
+  > 技術要點：`Hold {%1}` 把樹枝連方位收進佔位，佔位裡人物外觀的 `thick {%1}` 先比中；新增 `data/rules/adv_activity_dirs.tsv`（方位外框的 inner 副本，216 條）先剝方位，`desc_01.tsv` 在 `thick {%1}` 前加 `thick {@1} branches`。
+- **要塞的工作名稱、人物頁與公告**：有名字的動物的工作（「Milk Bessie，流浪牛」）、人物頁的目前活動（「冥想開火焰」「演奏with Toy」）、悲痛狀態（「悲痛得她自己 難以自持！」）、想法句「…near a fine Shop.」、外交官或表演團名稱是空的時的公告，原本半中半英或不通順。現在是「擠流浪牛Bessie的奶」「冥想火焰」「玩玩具」「悲痛欲絕 難以自持！」等。DFHack 的人名「原名 "綽號", 職業」放進句子時，逗號不再變成頓號。
+  > 技術要點：`data/rules/jobs.tsv`、`ann_12.tsv`（有名字的動物，流浪版寫在 `{*1}, Stray {@2}` 前）、`r059_forta.tsv`、`data/strings/fort_1.tsv` 與 `data/screens/*.ViewSheets.UNIT.tsv`（悲痛狀態三段）、`sentences_causes_a.tsv`（Shop 五種品質）；`Dict::name_then_profession` 讓「名字, 職業」不套清單句型。
+- **和物品、樹木同名的顏色與材料**：染料任務把顏色當成物品（「將布調成桃子」「調製北美紅雀染料」），制服的顏色選單出現「染柳橙色」「黑暗染棕色」，帶數量的木灰、木炭顯示成「5 梣樹」「炭灰色 [5]」，單獨的磚塊顯示成「格擋」，競技場的樹種清單把栗樹寫成栗子。現在是「將布調成桃子色」「調主教紅染料」「染橙色」「染深棕色」「5木灰」「木炭 [5]」「磚塊」「栗樹」。
+  > 技術要點：`data/rules/ui_4.tsv` 的 Dye／Tint／Mix 顏色佔位改 `{n+色}`、cardinal 逐條寫；`data/strings/ui_7.tsv` 的「X (Dye)」整句（dark 開頭的顏色先被 `ann_01.tsv` 的 `dark {%1}` 比中）；`data/rules/names.tsv` 的 `{#1} ash` 等四條；依畫面譯文 `dwarfmode.Squads.Equipment.Customizing.Color.tsv`、`dwarfmode.DWARF_ARENA.ConfigureTree.tsv`、`dwarfmode.Stocks.tsv` 等；`data/strings/r059_fortb.tsv` 的 `block`。已知限制：染料任務句裡 orange、peach、plum、eggplant、chestnut、lime、mahogany 仍讀成「柳橙色」「桃子色」這類，和制服選單的「橙色」「桃色」不一致。
+- **其他漏翻**：競技場的編號生物名（「Cat 3」→「貓 3」）、生物清單的「存活」分頁、歷史人物材料的沾染物與工作名、閹割過的動物的性別符號、活的小動物（「live」）、DFHack 觀戰面板的開關、自動訓練視窗的小隊名與「將軍」、世界與傳說畫面的 36 條整句與 24 條句型、信件署名列（「-」加空白開頭的句子）。
+  > 技術要點：`data/rules/zz_ui_5.tsv` 的 `{@1} {#2}`（副作用：存檔清單的「autosave 1」顯示成「自動存檔 1」，資料夾名不變）；`data/strings/r059_world.tsv`、`r059_fortb.tsv`、`data/rules/r059_world.tsv`、`r059_fortb.tsv`；`lua/loader.lua` 的 `note_world_names` 登記本要塞小隊名；`Dict::dashed`；`scripts/build.py` 原本把只有一格空白的依畫面譯文丟掉（三條英文複數的 s 一直沒生效），改成照收。已知限制：工坊材料選單裡單獨畫的歷史人物材料名（「Urist McTest's dwarf leather」）、取了別名的小隊在自動訓練視窗，仍照英文。
+- **官網免費版（Classic）可以用**：免費版 53.17 加手動安裝的 DFHack 53.17-r1 實機確認：引擎啟用、照 Windows 語言選繁簡、標題是中文。安裝方式寫進 README，每版另外在 GitHub Releases 放 zip。
+  > 技術要點：`engine/patterns.tsv` 35 條特徵碼在免費版執行檔全部命中（`make_patterns.py --check`）；沒有 `steam_api64.dll` 時 `locale.rs` 改看 Windows。ASCII 畫面下分頁標籤的置中判斷（靠 `screentexpos_lower` 認按鈕）不作用、吉祥物不畫，留待之後處理。
+
 ## [0.5.8] - 2026-11-08
 
 ### 修正

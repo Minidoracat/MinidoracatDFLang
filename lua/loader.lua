@@ -154,6 +154,38 @@ local function cell_px()
     return cell[1], cell[2]
 end
 
+-- 其他模組自帶的字典（docs/mod-dictionaries.md）：已安裝的模組底下有 dflang/<語言>/strings.tsv 就一起載入。
+-- dir 是本包那種語言的資料夾；回傳 {files = 字典檔, chars = 這些檔用到、本包字圖集沒有的字}，每種語言只掃一次（裝了新模組要重開遊戲）
+local mod_dict_cache = {}
+local function mod_dicts(dir)
+    if mod_dict_cache[dir] then return mod_dict_cache[dir] end
+    local own = (read_file(dir .. 'glyphs.txt') or ''):match('^([^\n]*)') or ''
+    local have, extra, files = {}, {}, {}
+    pcall(function() for _, c in utf8.codes(own) do have[c] = true end end)
+    for _, m in ipairs(scriptmanager.get_mod_paths('dflang')) do
+        local file = m.path:gsub('\\', '/') .. '/' .. dir:match('([^/]+)/$') .. '/strings.tsv'
+        -- 本包與停用的舊簡中包（ID 都是 cat_df_lang_ 開頭）不算
+        local text = not m.id:find('^cat_df_lang_') and read_file(file)
+        if text then
+            -- 檔案不是 UTF-8 時 utf8.codes 會丟錯：整個檔不載入
+            local ok = pcall(function()
+                for _, c in utf8.codes(text) do
+                    if c >= 0x80 and not have[c] then
+                        have[c] = true
+                        table.insert(extra, utf8.char(c))
+                    end
+                end
+            end)
+            if ok then table.insert(files, {id = m.id, file = file}) else fail('%s 不是 UTF-8，沒有載入', file) end
+        end
+    end
+    mod_dict_cache[dir] = {files = files, chars = table.concat(extra)}
+    return mod_dict_cache[dir]
+end
+
+-- 模組字典用到本包字型沒有的字時，接在後面補字的系統字型（Windows 內建的微軟正黑體、微軟雅黑）
+local SYSTEM_FONTS = {['zh-Hant'] = {bold = 'msjhbd.ttc', regular = 'msjh.ttc'}, ['zh-Hans'] = {bold = 'msyhbd.ttc', regular = 'msyh.ttc'}}
+
 -- 一種語言（資料夾 dir）某個字重（bold、regular，見 scripts/build.py 的 WEIGHTS）的字型檔，檔名開頭的序號就是補字順序
 local function font_files(dir, weight)
     local fonts, sub = {}, dir .. 'fonts/' .. weight .. '/'
@@ -161,13 +193,16 @@ local function font_files(dir, weight)
         if name:match('%.[ot]tf$') then table.insert(fonts, sub .. name) end
     end
     table.sort(fonts)
+    local system = SYSTEM_FONTS[dir:match('([^/]+)/$')]
+    local path = system and mod_dicts(dir).chars ~= '' and (os.getenv('WINDIR') or 'C:/Windows') .. '/Fonts/' .. system[weight]
+    if path and dfhack.filesystem.isfile(path) then table.insert(fonts, path) end
     return fonts
 end
 
--- 一種語言的字圖集用字（glyphs.txt 第一行）
+-- 一種語言的字圖集用字（glyphs.txt 第一行，加上模組字典多用到的字）
 local function glyph_chars(dir)
     local chars = (read_file(dir .. 'glyphs.txt') or ''):match('^([^\n]*)')
-    if chars and chars ~= '' then return chars end
+    if chars and chars ~= '' then return chars .. mod_dicts(dir).chars end
 end
 
 -- 畫好、註冊過的字圖集：「語言-字重」→ 貼圖 handle；切回之前用過的語言、字重直接用這份
@@ -213,10 +248,12 @@ local function atlas(engine, lang, dir, chars, weight)
     return handles
 end
 
--- 設定視窗的選項（dflang.json，預設值見 dflang.lua）：遊戲啟動時、玩家改了設定以後照這份套用（見 apply）
+-- 設定視窗的選項（dflang.json，預設值見 dflang.lua）：遊戲啟動時、玩家改了設定以後照這份套用（見 apply）。
+-- ASCII 模式（init.txt 的 USE_CLASSIC_ASCII、官網免費版）遊戲不畫字圖，一字兩格的畫法整片空白（53.17 實機）：一律用整句貼圖
 local function wanted(config)
     local function on(name) return dflang().option_on(config, name) end
-    return {overlay = config.overlay ~= false, overlay_size = config.overlay_size or 14, bold = config.bold ~= false,
+    return {overlay = config.overlay ~= false or not dfhack.screen.inGraphicsMode(),
+            overlay_size = config.overlay_size or 14, bold = config.bold ~= false,
             names = on('names'), keys = on('keys'), music = on('music'), partial = on('partial')}
 end
 
@@ -238,8 +275,20 @@ local function load_dict(engine, dir, chars, handles, s)
     local ok
     ok, err = engine.set_options(options(s))
     if not ok then return nil, err end
+    -- 模組字典先載入：同一句原文本包也有時，後載入的本包譯文蓋過去
+    local mods = 0
+    for _, m in ipairs(mod_dicts(dir).files) do
+        local n, bad, missing = engine.load(m.file)
+        if not n then
+            fail('模組 %s 的字典沒有載入：%s', m.id, bad)
+        else
+            mods = mods + n
+            log('模組 %s 的字典：%d 條（%d 條原文無法比對、%d 個字沒有字圖）', m.id, n, bad, missing)
+        end
+    end
     local loaded, bad, missing_glyphs = engine.load(dir .. 'strings.tsv')
     if not loaded then return nil, bad end
+    loaded = loaded + mods
     if bad > 0 or missing_glyphs > 0 then
         fail('字典有 %d 條原文無法比對、%d 個字沒有字圖', bad, missing_glyphs)
     end
@@ -382,7 +431,13 @@ local function install_paint_string(engine, stamp)
     local function plain(x, y, text) engine.dh_plain(gps_addr, x, y, gps.top_in_use and 1 or 0, text) end
     screen.paintString = function(pen, x, y, text, map)
         if map or type(text) ~= 'string' then return orig(pen, x, y, text, map) end
-        local shadow = not typing and engine.dh_translate(text, y, centered and 1)
+        -- 輸入框裡照原樣畫；輸入法打的中文（UTF-8，見 install_ime）照中文畫
+        local shadow
+        if typing then
+            shadow = text:find('[\128-\255]') and engine.dh_typed(text)
+        else
+            shadow = engine.dh_translate(text, y, centered and 1)
+        end
         if not shadow then
             local ok = orig(pen, x, y, text, map)
             plain(x, y, text)
@@ -437,6 +492,71 @@ local function install_search(engine)
             if token ~= '' and not orig(text, {token}) and not engine.search_match(text, token) then return false end
         end
         return true
+    end
+end
+
+-- 輸入法打的中文（見 engine/src/typed.rs）：DFHack 只把 SDL 送來的文字的第一個位元組變成按鍵（Screen::normalize_text_keys），
+-- 中文字會變成一個亂碼。搜尋框（FilteredList 的、view_id 或標籤有 search、filter 的 EditField）改收 enabler.last_text_input
+-- 裡完整的字，退格一次刪一個字，游標不停在字的中間；其他輸入框（gui/journal、改名，字會進存檔）照舊。函式不在就略過
+local function ime_text()
+    local ok, buf = pcall(function() return df.global.enabler.last_text_input end)
+    if not ok or not buf then return nil end
+    local bytes = {}
+    for i = 0, 31 do
+        local c = buf[i]
+        if not c or c == 0 then break end
+        bytes[#bytes + 1] = c
+    end
+    local text = string.char(table.unpack(bytes))
+    return text:find('[\128-\255]') and utf8.len(text) and text or nil
+end
+
+local function is_search_field(field)
+    local function named(s)
+        s = type(s) == 'string' and s:lower() or ''
+        return s:find('search', 1, true) or s:find('filter', 1, true)
+    end
+    local parent = field.parent_view
+    return named(field.view_id) or named(field.label_text)
+        or (type(parent) == 'table' and parent.edit == field and type(parent.setFilter) == 'function')
+end
+
+local function install_ime()
+    local ok, EditField = pcall(require, 'gui.widgets.edit_field')
+    if not ok or type(EditField) ~= 'table' or type(EditField.onInput) ~= 'function' or EditField.dflang_on_input then return end
+    local orig = EditField.onInput
+    EditField.dflang_on_input = orig
+    local function cont(b) return b and b >= 0x80 and b < 0xC0 end
+    EditField.onInput = function(self, keys)
+        local content = self.text_area and self.text_area.text_area
+        if not self.focus or type(content) ~= 'table' or type(content.insert) ~= 'function' or not is_search_field(self) then
+            return orig(self, keys)
+        end
+        local code, text, cursor = keys._STRING, content.text, content.cursor
+        if code and code >= 128 then
+            local typed = ime_text()
+            if typed then
+                content:insert(typed)
+                return true
+            end
+        elseif code == 0 and cursor > 1 and not content:hasSelection() then
+            local start = cursor - 1
+            while start > 1 and cont(text:byte(start)) do start = start - 1 end
+            if start < cursor - 1 and utf8.len(text:sub(start, cursor - 1)) == 1 then
+                content:setSelection(start, cursor - 1)
+                content:eraseSelection()
+                return true
+            end
+        end
+        local handled = orig(self, keys)
+        -- 左右鍵、滑鼠把游標放進中文字中間時，往移動的方向移到字的邊界（整段是合法 UTF-8 才算：CP437 的重音字也在 0x80～0xBF）
+        local c, now = content.cursor, content.text
+        if c ~= cursor and cont(now:byte(c)) and now:find('[\128-\255]') and utf8.len(now) then
+            local step = c < cursor and -1 or 1
+            while cont(now:byte(c)) do c = c + step end
+            content:setCursor(c)
+        end
+        return handled
     end
 end
 
@@ -605,34 +725,66 @@ end
 
 -- 遊戲自己的輸入框（篩選、搜尋、命名、數量）：main_interface 裡名字含 filter、search 或以 _str 結尾的字串欄位。
 -- main_interface 是遊戲的全域物件，欄位位址整局不變：啟動時找一次交給引擎，引擎每幀讀裡面的字，畫到相同的字串就照原樣（見 engine/src/typed.rs）。
--- 向量裡的元素不找（數量會變）；欄位隨版本改名時照 DFHack 的結構定義找，找不到的就少一個
+-- 第二個回傳值是其中的搜尋／篩選框（名字含 filter、search，不含 name）：輸入法打的中文只收進這些框，命名框（_str）的字會進存檔。
+-- 向量裡的元素不找（數量會變）；只有名字含 filter 的字串陣列（交易畫面左右兩邊的 item_filter[2]）放進搜尋框清單：引擎只拿來比位址，不讀。
+-- 欄位隨版本改名時照 DFHack 的結構定義找，找不到的就少一個
 local function typed_fields()
-    local addrs = {}
+    local addrs, search = {}, {}
     local function scan(obj, depth)
         for name, value in pairs(obj) do
             name = tostring(name)
+            local filter = (name:find('filter', 1, true) or name:find('search', 1, true)) and not name:find('name', 1, true)
             if type(value) == 'string' then
                 if name:find('filter', 1, true) or name:find('search', 1, true) or name:find('_str$') then
                     local ok, _, addr = pcall(function() return df.sizeof(obj:_field(name)) end)
-                    if ok and addr then table.insert(addrs, addr) end
+                    if ok and addr then
+                        table.insert(addrs, addr)
+                        if filter then table.insert(search, addr) end
+                    end
                 end
-            elseif type(value) == 'userdata' and depth < 4 and not pcall(function() return #value end) then
-                pcall(scan, value, depth + 1)
+            elseif type(value) == 'userdata' then
+                local ok, n = pcall(function() return #value end)
+                if not ok then
+                    if depth < 4 then pcall(scan, value, depth + 1) end
+                elseif filter and n <= 8 then
+                    for i = 0, n - 1 do
+                        local got, _, addr = pcall(function()
+                            if type(value[i]) ~= 'string' then error('not a string') end
+                            return df.sizeof(value:_field(i))
+                        end)
+                        if got and addr then table.insert(search, addr) end
+                    end
+                end
             end
         end
     end
     pcall(scan, df.global.game.main_interface, 0)
-    return addrs
+    return addrs, search
 end
 
--- 傳說清單的篩選在畫面物件裡（畫面關掉後位址無效）：在傳說畫面時每幀把現在的字送給引擎，離開時送空的
-local function legends_filter(focus)
-    if not focus:find('^legends/') then return '' end
-    local ok, text = pcall(function()
-        local vs = dfhack.gui.getDFViewscreen(true)
-        return vs.page[vs.active_page_index].filter_str
+-- 遊戲的 widgets::textbox（新式介面的輸入框）：interfacest.cur_textbox 是有鍵盤焦點的那個框，textbox_type 是 FILTER 的才是篩選框。
+-- 回傳 cur_textbox 指標的位址、框裡 str 與 textbox_type 的位移；結構定義沒有這些欄位時三個 0（新式介面的篩選框就不收中文）
+local function textbox_fields()
+    local ok, ptr, str_at, type_at = pcall(function()
+        local _, addr = df.sizeof(df.global.gview:_field('cur_textbox'))
+        local fields = df.widget_textbox._fields
+        return addr, fields.str.offset, fields.textbox_type.offset
     end)
-    return ok and type(text) == 'string' and text or ''
+    if not ok then return 0, 0, 0 end
+    return ptr or 0, str_at or 0, type_at or 0
+end
+
+-- 傳說清單的篩選在畫面物件裡（畫面關掉後位址無效）：在傳說畫面時每幀把現在的字與它的位址送給引擎，離開時送空的與 0
+local function legends_filter(focus)
+    if not focus:find('^legends/') then return '', 0 end
+    local ok, text, addr = pcall(function()
+        local vs = dfhack.gui.getDFViewscreen(true)
+        local page = vs.page[vs.active_page_index]
+        local _, a = df.sizeof(page:_field('filter_str'))
+        return page.filter_str, a
+    end)
+    if not ok or type(text) ~= 'string' then return '', 0 end
+    return text, addr or 0
 end
 
 -- 本 MOD 讓位時在標題畫面跳出說明：主控台的訊息玩家看不到，也不知道怎麼停用別的 MOD。
@@ -762,8 +914,31 @@ local function apply()
     return config.lang == 'off'
 end
 
--- 世界裡的名字（勢力、據點、神器、地區、樂曲／詩／舞蹈形式、戰爭與戰役、人物…）讀檔時一次交給引擎登記：書名、清單裡嵌的名字遊戲不會再組，
--- 沒畫過的原本查不到（著作「Errors In Estrur Plaguesevere」「Question The Chant of Drumming」）。英文照 DFHack 的 translateName，和遊戲組的一樣。
+-- 冒險者與隊伍成員的原名：問候句（FUN_14067d390 L900567-900580「Hello, Dolil.」）直接拿 first_name、不經組原名的函式，
+-- 只有碰巧組過整個原名時才認得。note_native 同時登記整個原名與第一個字（engine/src/names.rs），所以單獨的「Dolil」也查得到。
+-- 沒有語言的名字照上面人物的做法，只收單一個字的。讀檔（世界載入）時冒險者的單位可能還沒載入，讀進地圖時再跑一次（見 start 的 onStateChange）
+local function note_adventurers(engine)
+    local names = {}
+    local adv = dfhack.world.getAdventurer()
+    if adv then table.insert(names, adv.name) end
+    local party = df.global.adventure.interactions
+    for _, list in ipairs{party.party_core_members, party.party_extra_members} do
+        for _, id in ipairs(list) do
+            local f = df.historical_figure.find(id)
+            if f then table.insert(names, f.name) end
+        end
+    end
+    for _, name in ipairs(names) do
+        if name.has_name then
+            local s = dfhack.translation.translateName(name, false)
+            if name.language >= 0 or not s:find(' ', 1, true) then engine.note_native(s) end
+        end
+    end
+end
+
+-- 世界裡的名字（勢力、據點、神器、地區、樂曲／詩／舞蹈形式、戰爭與戰役、小隊、人物…）讀檔時一次交給引擎登記：書名、清單裡嵌的名字遊戲不會再組，
+-- 沒畫過的原本查不到（著作「Errors In Estrur Plaguesevere」「Question The Chant of Drumming」；DFHack gui/autotraining 的小隊名
+-- 用 translateName 組、沒開過小隊畫面時遊戲沒組過）。英文照 DFHack 的 translateName，和遊戲組的一樣。小隊的別名（alias）是玩家取的，不登記（見 player_names）。
 -- 人物最多、放最後：引擎登記到上限的一半就回傳 false，停在那裡
 local function note_world_names(engine)
     local w = df.global.world
@@ -777,18 +952,23 @@ local function note_world_names(engine)
     for _, a in ipairs(w.artifacts.all) do
         if a.name.has_name and a.name.language >= 0 then engine.note_native(dfhack.translation.translateName(a.name, false)) end
     end
-    -- 沒有語言的人物（狗頭人）名字只有一個字，英文名就是原名（「Chrakadogus」）：登記成原名，名字音譯開著時才音譯得出來。
+    -- 沒有語言的人物與文明（狗頭人）名字只有一個字，英文名就是原名（「Chrakadogus」「Krukudufirsnus」）：登記成原名，名字音譯開著時才音譯得出來。
     -- 人物的英文名在最後一段登記，到名稱表上限的一半會停，所以這裡另外跑一次
-    for _, f in ipairs(w.history.figures) do
-        if f.name.has_name and f.name.language < 0 then
-            local s = dfhack.translation.translateName(f.name, false)
-            if not s:find(' ', 1, true) then engine.note_native(s) end
+    for _, list in ipairs{w.history.figures, w.entities.all} do
+        for _, f in ipairs(list) do
+            if f.name.has_name and f.name.language < 0 then
+                local s = dfhack.translation.translateName(f.name, false)
+                if not s:find(' ', 1, true) then engine.note_native(s) end
+            end
         end
     end
     for _, d in ipairs(w.raws.itemdefs.instruments) do
         engine.note_native(d.name)
         engine.note_native(d.name_plural)
     end
+    -- 原名放在其他原名後面登記：原名表滿了會整批清掉，最後登記的冒險者才留得住。欄位改版讀不到時只略過這一項
+    local adv_ok, adv_err = pcall(note_adventurers, engine)
+    if not adv_ok then fail('登記冒險者的名字時出錯（%s），問候句裡的名字照原文', adv_err) end
     -- 只有一個字的書名（「Perishment」）：單獨畫出的單字是這個世界的書名時才當書名翻，整批換掉上一個世界的（見 engine/src/names.rs 的 set_titles）
     local titles = {}
     for _, wc in ipairs(w.written_contents.all) do
@@ -797,7 +977,7 @@ local function note_world_names(engine)
     engine.set_titles(table.concat(titles, '\n'))
     for _, list in ipairs{w.entities.all, data.sites, w.artifacts.all, data.regions, data.underground_regions,
                           data.landmasses, data.mountain_peaks, data.rivers, w.musical_forms.all, w.poetic_forms.all,
-                          w.dance_forms.all, w.identities.all} do
+                          w.dance_forms.all, w.identities.all, w.squads.all} do
         for _, x in ipairs(list) do
             if not note(x.name) then return end
         end
@@ -872,12 +1052,33 @@ local function mod_texts()
     return table.concat(texts, '\n')
 end
 
+-- 標題畫面讀檔清單的冒險者名字：存檔清單（FUN_140258c60）畫存檔標頭的 fort_name，冒險存檔是冒險者的整個原名（「Dolil Bistkashurde」，
+-- 沒有英文名部分，句型收不到）。讀檔前世界還沒載入、遊戲也沒組過這個原名，登記成原名，名字音譯開著時才音譯得出來。
+-- 列舉在函式裡取：DFHack 改版少了哪一項時只有這裡出錯（pcall），不會讓整個載入器失敗
+local function note_save_names(engine)
+    local title = dfhack.gui.getDFViewscreen(true)
+    if not df.viewscreen_titlest:is_instance(title) then return end
+    local adventure = {[df.game_type.ADVENTURE_MAIN] = true, [df.game_type.ADVENTURE_WORLD_DEBUG] = true}
+    for _, list in ipairs{title.savegame_header, title.savegame_header_world, title.savegame_header_game} do
+        for _, h in ipairs(list) do
+            if adventure[h.gametype] and h.fort_name ~= '' then engine.note_native(h.fort_name) end
+        end
+    end
+end
+
 -- 遊戲沒有改名事件：每 100 幀重送一次，內容沒變引擎不動。讀進地圖時送玩家取的名字，其他時候（標題、建立世界）送模組的。
--- 換了（讀檔後第一次、玩家改名）就清掉翻好的快取與段落計畫：翻好的整句不會因為名稱表換版本重算（engine.refresh）
+-- 換了（讀檔後第一次、玩家改名）就清掉翻好的快取與段落計畫：翻好的整句不會因為名稱表換版本重算（engine.refresh）。
+-- 沒有載入世界時順便登記存檔清單的冒險者名字（見 note_save_names；同一個名字只換一次名稱表版本）
 local function track_player_names(engine)
+    local saves_ok = true
     local function send()
         local ok, list = pcall(dfhack.isMapLoaded() and player_names or mod_texts)
         if ok and engine.set_player_names(list) then engine.refresh() end
+        if saves_ok and not dfhack.isWorldLoaded() then
+            local err
+            saves_ok, err = pcall(note_save_names, engine)
+            if not saves_ok then fail('登記存檔清單的冒險者名字時出錯（%s），存檔清單的冒險者名字照原文', err) end
+        end
         dfhack.timeout(100, 'frames', send)
     end
     send()
@@ -972,6 +1173,9 @@ local function start()
     -- 冒險者開局畫面的外觀、性格段落（遊戲自己切行）；找不到只有這幾段維持英文
     ok, err = attach_hooks(engine, {'adv_appearance', 'adv_personality'})
     if not ok then fail('%s；冒險者開局畫面的外觀與性格維持英文', err) end
+    -- 冒險模式選擇命運畫面的說明框（53.17 起「平凡」那框的切行被編譯器內嵌）；找不到只有那框維持英文
+    ok, err = attach_hooks(engine, {'adv_fate'})
+    if not ok then fail('%s；選擇命運畫面「平凡」的說明維持英文', err) end
     -- 冒險模式上方的訊息框（交談紀錄，遊戲自己切行）；找不到只有這個框維持英文
     ok, err = attach_hooks(engine, {'adv_log', 'adv_talk_log'})
     if not ok then fail('%s；冒險模式的交談紀錄維持英文', err) end
@@ -1028,13 +1232,16 @@ local function start()
     install_frame()
     install_read_tile(engine)
     install_search(engine)
+    install_ime()
     install_typing()
-    engine.set_typed_fields(table.concat(typed_fields(), ' '))
+    local fields, search = typed_fields()
+    engine.set_typed_fields(table.concat(fields, ' '))
+    engine.set_search_fields(table.concat(search, ' '), textbox_fields())
     -- 依畫面套用的譯文要知道現在在哪個畫面：每幀把 DFHack 的焦點字串告訴引擎（'frames' 計時器在世界卸載後也繼續）。
     -- DFHack 的視窗開著時（焦點是 dfhack/…）也加上底下遊戲畫面的焦點：遊戲照樣畫的上方資訊列（「酒類」）才不會換成別的譯法。
     -- 只在那時才找底下的畫面：dfhack.gui 每呼叫一次約 40 µs，計時器每個模擬幀都跑。傳說畫面另外送篩選框的字（見 legends_filter）
     if screens > 0 then
-        local last_typed = ''
+        local last_typed, last_addr = '', 0
         local function track_focus()
             local focus = dfhack.gui.getCurFocus(true)
             if (focus[1] or ''):find('^dfhack/') then
@@ -1042,10 +1249,10 @@ local function start()
                 for _, f in ipairs(dfvs and dfhack.gui.getFocusStrings(dfvs) or {}) do table.insert(focus, f) end
             end
             engine.set_focus(table.concat(focus, '\n'))
-            local typed = legends_filter(focus[1] or '')
-            if typed ~= last_typed then
-                last_typed = typed
-                engine.set_typed_text(typed)
+            local typed, addr = legends_filter(focus[1] or '')
+            if typed ~= last_typed or addr ~= last_addr then
+                last_typed, last_addr = typed, addr
+                engine.set_typed_text(typed, addr)
             end
             dfhack.timeout(1, 'frames', track_focus)
         end
@@ -1069,6 +1276,12 @@ local function start()
     dfhack.BASE_G.DFLANG = state
     track_player_names(engine)
     dfhack.onStateChange.dflang = function(sc)
+        -- 冒險者的單位在讀進地圖時才有（世界載入時可能還沒有），再登記一次（見 note_adventurers）
+        if sc == SC_MAP_LOADED and state.names_ok then
+            local ok, err = pcall(note_adventurers, engine)
+            if not ok then fail('登記冒險者的名字時出錯（%s），問候句裡的名字照原文', err) end
+            return
+        end
         if sc ~= SC_VIEWSCREEN_CHANGED and sc ~= SC_WORLD_LOADED and sc ~= SC_WORLD_UNLOADED then return end
         state.sync_buttons()
         local now = dfhack.textures.getTexposByHandle(state.handles[#state.handles])

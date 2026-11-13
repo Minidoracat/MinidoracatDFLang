@@ -214,3 +214,4 @@ Enter name:	輸入名稱：	输入名称：		DFHack hack/scripts/gui/quickcmd.lu
 Never	從不	从不		通用介面字（各批共用，core 批維護）；stockflow 觸發條件等
 No results	沒有結果	没有结果		通用介面字（各批共用，core 批維護）；FilteredList not_found_label
 Suspended	已暫停	已暂停		通用介面字（各批共用，core 批維護）；工作狀態
+No matches	沒有結果	没有结果		通用介面字；gui/control-panel 搜尋沒有結果時（53.17-r1 實機未翻譯紀錄）

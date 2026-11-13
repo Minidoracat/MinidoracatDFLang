@@ -8,8 +8,8 @@
   uv run scripts/dev_game.py up [--lang zh-Hant|zh-Hans|auto] [--with-dfi18n] [--save 名稱]...
                                                                掛包、遮蔽 DFI18n（--with-dfi18n 不遮蔽）、啟動，等到 DFHack 回應；
                                                                要測的語言寫進測試用的 dflang.json（auto 不寫，照系統判斷），載入的不是 dist 的包就失敗；
-                                                               --save 把 temp/test-world/<名稱> 複製進遊戲的 save/；同一台的 PZ 有效能輪（計時、獨佔）
-                                                               放行或排隊時不開，開好後跑 dflang-dev-pzyield：效能輪一放行就關遊戲
+                                                               --save 把 temp/test-world/<名稱> 複製進遊戲的 save/；同一台的 PZ 效能輪（計時、獨佔）
+                                                               正在跑、或可用記憶體不到 8 GiB 時不開，開好後跑 dflang-dev-pzyield：效能輪一放行就關遊戲
   uv run scripts/dev_game.py run dflang status                 轉給 dfhack-run
   uv run scripts/dev_game.py click X Y                         以文字格座標模擬滑鼠左鍵（不動真滑鼠、不搶焦點）
   uv run scripts/dev_game.py mouse PX PY [r]                   以畫面像素座標按住滑鼠三幀再放開（地圖點擊用；會結束 hover）
@@ -100,16 +100,26 @@ def kill_game() -> None:
 
 
 def pz_perf_runs() -> list[str]:
-    """同一台機器上 PZ 的效能輪（lease 裡標了 timing／exclusive），放行中與排隊中的都算；沒有 lease 檔是空的。
-    效能量測要整台安靜，實機測試讓位（使用者 2026-11-08）"""
+    """同一台機器上 PZ 正在跑的效能輪（lease 的 granted 裡標了 timing／exclusive）；沒有 lease 檔是空的。
+    效能量測要整台安靜，實機測試讓位（使用者 2026-11-08）；只排隊、還沒放行的不擋，可用記憶體夠就開
+    （使用者 2026-11-14），放行的那一刻由 dflang-dev-pzyield 關遊戲"""
     try:
         lease = json.loads(PZ_LEASE.read_text(encoding="utf-8"))
     except FileNotFoundError:
         return []
     except (OSError, ValueError) as e:
         return [f"lease 檔讀不到：{e}"]
-    return [f"{where} {e.get('run')}" for where, key in (("放行", "granted"), ("排隊", "queue"))
-            for e in lease.get(key, []) if e.get("timing") or e.get("exclusive")]
+    return [f"放行 {e.get('run')}" for e in lease.get("granted", []) if e.get("timing") or e.get("exclusive")]
+
+
+def free_memory_gib() -> float:
+    """可用的實體記憶體（GiB）"""
+    class Status(ctypes.Structure):
+        _fields_ = [("length", ctypes.c_ulong), ("load", ctypes.c_ulong)] + [(n, ctypes.c_ulonglong) for n in (
+            "total", "avail", "total_page", "avail_page", "total_virtual", "avail_virtual", "avail_extended")]
+    status = Status(length=ctypes.sizeof(Status))
+    ctypes.windll.kernel32.GlobalMemoryStatusEx(ctypes.byref(status))
+    return status.avail / 2**30
 
 
 def play(lang: str | None) -> int:
@@ -601,7 +611,10 @@ def main() -> int:
             return play(lang)
         perf = pz_perf_runs()
         if perf:
-            print("PZ 的效能量測在跑或在排隊，實機測試讓位，跑完再 up：\n  " + "\n  ".join(perf), file=sys.stderr)
+            print("PZ 的效能量測在跑，實機測試讓位，跑完再 up：\n  " + "\n  ".join(perf), file=sys.stderr)
+            return 1
+        if free_memory_gib() < 8:
+            print(f"可用記憶體只剩 {free_memory_gib():.1f} GiB（要 8 GiB），等 PZ 的 E2E 跑完再 up", file=sys.stderr)
             return 1
         return up(lang or "zh-Hant", "--with-dfi18n" in args, saves) or dfhack("dflang-dev-pzyield").returncode
     if args[0] == "run":

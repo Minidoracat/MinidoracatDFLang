@@ -86,6 +86,11 @@ a very fine Trap	十分精緻的陷阱	十分精致的陷阱	inner	同上
 a splendid Trap	華麗的陷阱	华丽的陷阱	inner	同上
 a wonderful Trap	極其出色的陷阱	极其出色的陷阱	inner	同上
 a completely sublime Trap	美輪美奐的陷阱	美轮美奂的陷阱	inner	同上
+a fine Shop	精緻的工坊	精致的工坊	inner	同上；Shop 是建築種類名（FUN_14054d320 case 7，舊式商店建築 building_shopst；譯名同 data/screens/dwarfmode.ViewSheets.BUILDING 的 Shop 工坊）；舊樣本 round43「She felt pleasure near a fine Shop.」；同 Furnace、Trap 不放全域單字
+a very fine Shop	十分精緻的工坊	十分精致的工坊	inner	同上
+a splendid Shop	華麗的工坊	华丽的工坊	inner	同上
+a wonderful Shop	極其出色的工坊	极其出色的工坊	inner	同上
+a completely sublime Shop	美輪美奐的工坊	美轮美奂的工坊	inner	同上
 mother	母親	母亲		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
 father	父親	父亲		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞
 parent	父母	父母		親屬稱謂（FUN_14075a580）；fn_thought_composer case 0x27/0x28/0x86 的 his own dead {1}；通用詞

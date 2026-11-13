@@ -44,6 +44,8 @@ This person is one of the {@1} of {2} alongside you.	此人和你同為{2}的{1}
 This person is one of the {@1} of {2}.	此人是{2}的{1}之一。	此人是{2}的{1}之一。		FUN_1400d1ef0 L129713-129727 人物說明：小隊成員（{1} 小隊稱呼單數，raws SQUAD 第一個名稱）
 This person is {@1} of {2} and your military commander.	此人是{2}的{1}，也是你的軍事指揮官。	此人是{2}的{1}，也是你的军事指挥官。		FUN_1400d1ef0 L129664-129676 人物說明：職位＋ of 文明／據點（FUN_1409bdfb0 接 of 據點）；{1} 職位名（字典）、{2} 名稱；寫在沒有後綴的那條前面
 This person is {@1} of {2}.	此人是{2}的{1}。	此人是{2}的{1}。		FUN_1400d1ef0 L129664-129676 人物說明：職位＋ of 文明／據點（FUN_1409bdfb0 接 of 據點）；{1} 職位名（字典）、{2} 名稱
+This person is {%1} of {2} and your military commander.	此人是{2}的{1}，也是你的軍事指揮官。	此人是{2}的{1}，也是你的军事指挥官。		同上；{%1} 收句型拼出的職位名（宗教團體的程序生成職位 sacred web、sacred spurt，53.17 實機）；{%1} 要翻得出來才中，排在字典版後面
+This person is {%1} of {2}.	此人是{2}的{1}。	此人是{2}的{1}。		同上
 This is your {@1}	這是你的{1}	这是你的{1}		FUN_1400d1ef0 L129922-129937 人物說明：親屬關係（FUN_14075a580 關係名；原文先切行才補句號，所以畫出來沒有句號）
 You have killed {%1} of these creatures.	你已擊殺這種生物{1}次。	你已击杀这种生物{1}次。		FUN_1400d41a0 L130875-130909 生物圖鑑：擊殺數（FUN_14052e360 英文數字字，sentences_forms_poetry／sentences_instruments 的 inner 條目）
 This creature can be found in {1}, {2} and {3}.	可以在{1}、{2}和{3}找到這種生物。	可以在{1}、{2}和{3}找到这种生物。		FUN_1400d41a0 L130961-131093 生物圖鑑：出沒的據點／地區清單（第 n-3 項後接「, 」、第 n-2 項後接「 and 」；四項以上前面幾項直接相連，原文如此）；三項寫在兩項前面

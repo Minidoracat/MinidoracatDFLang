@@ -1,7 +1,7 @@
 en	zh-Hant	zh-Hans	align	note
 This is {1}.	這是{1}。	这是{1}。		FUN_14067d390 L901032 場所主人：This is ＋場所名＋.  What can I do for you?；逐句查時場所名單獨成句，只有名字可抓、寫不出錨點，放 zz 讓既有的 This is a … 物品說明先比；譯文用中性的「這是」
 I have {1}.	{1}在我這裡。	{1}在我这里。		FUN_140680970 L903617 case 0x1c 神器在說話者身上：{1} 神器名；只有 I have 錨點，放 zz 讓 speech_04 的 I have … 句型先比
-my {@1} {2}	我的{1}{2}	我的{1}{2}	inner	FUN_140680970 L902141-903455 傳聞句的人物前加 my＋親屬稱謂（FUN_14075a580）＋人物；{1} 只收字典裡的稱謂
+my {@1} {^2}	我的{1}{2}	我的{1}{2}	inner	FUN_140680970 L902141-903455 傳聞句的人物前加 my＋親屬稱謂（FUN_14075a580）＋人物；{1} 只收字典裡的稱謂；人物用 {^2}（大寫開頭）：{2} 會把後面整句吞進去（「my son Kib Domas was kidnapped from…」），帶講者的傳聞就半中半英
 my {@1}	我的{1}	我的{1}	inner	FUN_140680970 L902141 case 1 被綁者只有 my＋親屬稱謂、沒有名字
 {%1} of my {%2}s	我的{1}個{2}	我的{1}个{2}	inner	FUN_14065bfb0 L880758-880773 among them 清單項目：數字英文＋of my＋複數稱謂（+s）；錨點 of my；只給句型用
 {%1} of my {%2}ren	我的{1}個{2}	我的{1}个{2}	inner	FUN_14065bfb0 同上，children 類（+ren）

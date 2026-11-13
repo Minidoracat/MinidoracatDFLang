@@ -186,6 +186,15 @@ pub unsafe fn planned(lines: &[usize]) -> bool {
     lines.iter().all(|&s| table.get(&s).is_some_and(|l| *l.text == *unsafe { str_bytes(s) }))
 }
 
+/// vector<string*> v 是遊戲用 wrap_lines 同一套程式切好的一整句（編譯器把 wrap_text 內嵌進呼叫處，wrap_lines 的 hook 攔不到）：
+/// 還沒登記過就把行接回整句（見 join）登記畫字計畫。已經由 wrap_lines 的 hook 登記過的不重做
+pub unsafe fn plan_list(v: usize, width: i32, dict: &Dict, note_miss: impl FnMut(&[u8])) {
+    let lines = unsafe { vec_items(v) };
+    if !lines.is_empty() && !unsafe { planned(lines) } {
+        unsafe { plan(lines, &join(lines), width, dict, false, note_miss) };
+    }
+}
+
 /// vector<string*> 裡計畫是不畫的行（整句的中文比原文少用幾行）移到最後，空白不夾在兩則或兩個條件之間。
 /// 只換清單裡的順序：字串照舊由遊戲釋放，計畫依字串位址登記（畫字 hook 照它畫），換了位置照樣畫。
 /// 已經在最後就不動（每幀都畫的框不必每幀重排）。清單另有平行的顏色清單時不能用
@@ -332,5 +341,36 @@ mod tests {
         assert_eq!(items, moved);
         unsafe { blanks_last(vector.as_ptr() as usize) };
         assert_eq!(items, moved, "已經在最後就不動");
+    }
+
+    #[test]
+    fn a_list_wrapped_by_inlined_game_code_is_joined_back_and_planned_once() {
+        let en = "For the most freedom.  All features are accessible but you'll receive no direction.";
+        let zh = "最自由的玩法。所有功能都能使用，但不會有任何指引。";
+        let mut d = Dict::default();
+        assert!(d.set_glyphs(zh, vec![0; 2 * zh.chars().count()]));
+        d.load_tsv(&format!("{en}\t{zh}\n"));
+        let vector_of = |items: &mut Vec<usize>| {
+            let begin = items.as_mut_ptr();
+            [begin as u64, unsafe { begin.add(items.len()) } as u64, 0]
+        };
+        // 53.17「平凡」說明框：遊戲內嵌的 wrap_lines 照寬 16 切，斷在空白處時行尾留一個空白、句間第二個空白跳過
+        let fate = Strings::new(&["For the most ", "freedom.  All ", "features are ", "accessible but ", "you'll receive ", "no direction."]);
+        let mut items = fate.addrs();
+        let vector = vector_of(&mut items);
+        unsafe { plan_list(vector.as_ptr() as usize, 16, &d, |_| {}) };
+        let got = kinds(&items, &d);
+        assert_eq!(got[0], "0,0", "接回整句查得到：{got:?}");
+        assert_eq!(got[5], "skip", "中文用不到 6 行：{got:?}");
+        assert!(got.iter().all(|k| k == "skip" || k == "0,0"), "{got:?}");
+        // wrap_lines 的 hook 已經照輸入原文登記過的框不重做（寬 40 的計畫不被寬 16 蓋掉）
+        let hero = Strings::new(&["For the most ", "freedom.  All ", "features are ", "accessible but ", "you'll receive ", "no direction."]);
+        let mut items = hero.addrs();
+        assert!(unsafe { plan(&items, en.as_bytes(), 40, &d, false, |_| {}) });
+        let before = kinds(&items, &d);
+        let vector = vector_of(&mut items);
+        unsafe { plan_list(vector.as_ptr() as usize, 16, &d, |_| {}) };
+        assert_eq!(kinds(&items, &d), before);
+        assert_ne!(before, got, "寬 40 與寬 16 的計畫不同，上面的比對才有意義");
     }
 }

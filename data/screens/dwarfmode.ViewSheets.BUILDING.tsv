@@ -13,3 +13,7 @@ Construction	建造物	建造物			FUN_14054d320 建築名稱單獨畫在建築�
 Still	釀酒	酿酒			FUN_14054d320 建築名稱單獨畫在建築頁標題（UI10）；全域只有 inner（fort_2），單字不放全域
 Loom	織機	织机			FUN_14054d320 建築名稱單獨畫在建築頁標題（UI10）；全域只有 inner（fort_2），單字不放全域
 Fishery	漁獲	渔获			FUN_14054d320 建築名稱單獨畫在建築頁標題（UI10）；全域只有 inner（fort_2），單字不放全域
+configure	設定	设置			DFHack hack/lua/plugins/autofarm.lua L62 農田頁的 autofarm 按鈕（53.17-r1 新增）
+fallow	休耕	休耕			DFHack hack/lua/plugins/autofarm.lua L88 農田頁「目前種植：」後面，沒種東西時畫這個字
+ash	木灰	木灰			建築頁「物品」分頁裡的物品：同 dwarfmode.Info.WORK_ORDERS 的 ash；寬度例外：原文 3 格、譯文 4 格，和改前的全域譯文「梣樹」同寬，尚待實機確認右邊有空位
+charcoal	木炭	木炭			建築頁「物品」分頁裡的物品：同 dwarfmode.Info.WORK_ORDERS 的 charcoal

@@ -1,0 +1,6 @@
+en	zh-Hant	zh-Hans	align	note
+Set default threshold (currently {#1})	設定預設門檻（目前 {1}）	设置默认阈值（当前 {1}）		DFHack hack/scripts/gui/autofarm.lua L258 按鈕，{1} 是目前的預設門檻
+{#1} farm(s) excluded from autofarm management	{1} 塊農田不受自動耕作管理	{1} 块农田不受自动耕作管理		DFHack hack/scripts/gui/autofarm.lua L261 頁尾第一行，{1} 是排除的農田數
+{#1} (def)	{1}(預設)	{1}(默认)	r	DFHack hack/scripts/gui/autofarm.lua L276 作物清單門檻欄（rjustify 靠右），沒有自訂門檻、用預設值的列；括號用半形，全形會比原文寬
+{#1} (pool)	{1}(合計)	{1}(合计)	r	DFHack hack/scripts/gui/autofarm.lua L303 作物清單門檻欄（rjustify 靠右），產物沒有自己的門檻、計入作物合計的列；括號用半形，全形會比原文寬
+Enter desired threshold for {1}:	輸入{1}的門檻：	输入{1}的阈值：		DFHack hack/scripts/gui/autofarm.lua L356 輸入框說明，{1} 是作物或產物名（同 seedwatch 的 Enter desired target for {1}:）

@@ -1,0 +1,37 @@
+en	zh-Hant	zh-Hans	align	note
+one fort	一座要塞	一座要塞	r	FUN_140258c60 L319075-319111 標題畫面世界清單第二行：這個世界的要塞數（FUN_14052e360 英文數字字＋fort＋DAT_1415e9298 複數 s）；只有一座時是 one fort，多座的見 rules/r059_world.tsv
+one adventurer	一名冒險者	一名冒险者	r	FUN_140258c60 L319090-319106 同上：冒險者數（數字字＋adventurer＋複數 s）
+one fort, one adventurer	一座要塞、一名冒險者	一座要塞、一名冒险者	r	FUN_140258c60 L319075-319111 同上：兩者都有時以 ", " 相接
+died of dehydration	脫水而死	脱水而死	inner	DFHack hack/scripts/gui/unit-info-viewer.lua L116 DEATH_TYPES（deathcause.lua L27 去掉開頭空白後接進死因句，見 rules/r059_world.tsv）；譯法同 rules/zz_dfhack_gui3.tsv
+didn't survive a collision	死於碰撞	死于碰撞	inner	同上 L123 COLLISION
+took a magma bath	泡了熔岩浴	泡了熔岩浴	inner	同上 L124 MAGMA
+took a magma shower	淋了一場熔岩雨	淋了一场熔岩雨	inner	同上 L125 MAGMA_MIST
+was incinerated by dragon fire	被龍焰燒成灰燼	被龙焰烧成灰烬	inner	同上 L126 DRAGONFIRE
+was killed by fire	被火燒死	被火烧死	inner	同上 L127 FIRE
+experienced death by SCALD	被燙死	被烫死	inner	同上 L128 SCALD
+was crushed by cavein	被坍方壓死	被塌方压死	inner	同上 L129 CAVEIN
+was smashed by a drawbridge	被吊橋壓扁	被吊桥压扁	inner	同上 L130 DRAWBRIDGE
+experienced death by CHASM	墜入深淵而死	坠入深渊而死	inner	同上 L132 CHASM
+experienced death by CAGE	死在籠子裡	死在笼子里	inner	同上 L133 CAGE
+experienced death by QUIT	因結束遊戲而死	因结束游戏而死	inner	同上 L137 QUIT；術語例外：quit；玩家結束遊戲，不是「退出」選單，譯法同 rules/zz_dfhack_gui3.tsv
+experienced death by ABANDON	因放棄要塞而死	因放弃要塞而死	inner	同上 L138 ABANDON
+suffered heat stroke	中暑而死	中暑而死	inner	同上 L139 HEAT
+died of hypothermia	失溫而死	失温而死	inner	同上 L140 COLD
+experienced death by SPIKE	被尖刺刺死	被尖刺刺死	inner	同上 L141 SPIKE
+experienced death by ENCASE_LAVA	被熔岩封住而死	被熔岩封住而死	inner	同上 L142 ENCASE_LAVA
+experienced death by ENCASE_MAGMA	被熔岩封住而死	被熔岩封住而死	inner	同上 L143 ENCASE_MAGMA
+was preserved in ice	被封存在冰中	被封存在冰中	inner	同上 L144 ENCASE_ICE
+became headless	身首異處	身首异处	inner	同上 L145 BEHEAD
+experienced death by BURY_ALIVE	被活埋	被活埋	inner	同上 L147 BURY_ALIVE
+experienced death by DROWN_ALT	淹死	淹死	inner	同上 L148 DROWN_ALT
+experienced death by BURN_ALIVE	被活活燒死	被活活烧死	inner	同上 L149 BURN_ALIVE
+experienced death by FEED_TO_BEASTS	被拿去餵野獸	被拿去喂野兽	inner	同上 L150 FEED_TO_BEASTS
+experienced death by HACK_TO_PIECES	被亂刀砍死	被乱刀砍死	inner	同上 L151 HACK_TO_PIECES
+choked on air	被空氣嗆死	被空气呛死	inner	同上 L152 LEAVE_OUT_IN_AIR
+experienced death by BOIL	被煮沸而死	被煮沸而死	inner	同上 L153 BOIL
+experienced death by CONDENSE	凝結而死	凝结而死	inner	同上 L155 CONDENSE
+experienced death by SOLIDIFY	凝固而死	凝固而死	inner	同上 L156 SOLIDIFY
+experienced death by DARKNESS	死於黑暗	死于黑暗	inner	同上 L160 DARKNESS
+experienced death by COLLAPSE	因崩塌而死	因坍塌而死	inner	同上 L161 COLLAPSE
+became roadkill	被車輾死	被车碾死	inner	同上 L164 VEHICLE
+killed by a falling object	被墜落物砸死	被坠落物砸死	inner	同上 L165 FALLING_OBJECT；術語例外：object；墜落的東西，譯法同 rules/zz_dfhack_gui3.tsv

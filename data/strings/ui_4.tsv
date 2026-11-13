@@ -85,3 +85,10 @@ Set origin	設定出身	设置出身		FUN_14027a3f0 L335155 冒險模式假身�
 Set profession	設定職業	设置职业		FUN_14027a3f0 L335155 冒險模式假身分按鈕
 Set worship	設定崇拜	设置崇拜		FUN_14027a3f0 L335155 冒險模式假身分按鈕
 Assume identity	使用假身分	使用假身份		FUN_14027a3f0 L335155 冒險模式假身分按鈕；同 Assume an identity
+Dye cloth cardinal	將布染成主教紅	将布染成主教红		FUN_1402143b0 L279216 染色工作清單：顏色 cardinal 寫死。全域 cardinal 是鳥名「北美紅雀」，rules/ui_4 的 Dye cloth {%1} 會畫成「北美紅雀色」；色名同制服顏色選單（data/screens/dwarfmode.Squads.Equipment.Customizing.Color）的主教紅
+Dye thread cardinal	將線染成主教紅	将线染成主教红		同上（線）
+Dye leather cardinal	將皮革染成主教紅	将皮革染成主教红		同上（皮革）
+Tint cloth cardinal (opens menu)	將布調成主教紅（開啟選單）	将布调成主教红（打开菜单）		FUN_1402143b0 L279250 同上，要混色的顏色
+Tint thread cardinal (opens menu)	將線調成主教紅（開啟選單）	将线调成主教红（打开菜单）		同上（線）
+Tint leather cardinal (opens menu)	將皮革調成主教紅（開啟選單）	将皮革调成主教红（打开菜单）		同上（皮革）
+Mix cardinal dye (opens menu)	調主教紅染料（開啟選單）	调主教红染料（打开菜单）		FUN_1402143b0 L279774 同上，混色清單；「調」同 rules/ui_4 的 Mix {%1} dye (opens menu)

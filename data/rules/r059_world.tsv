@@ -1,0 +1,25 @@
+en	zh-Hant	zh-Hans	align	note
+{%1} forts, {%2} adventurers	{1}座要塞、{2}名冒險者	{1}座要塞、{2}名冒险者	r	FUN_140258c60 L319075-319111 標題畫面世界清單第二行：要塞數與冒險者數；{1}、{2} 是 FUN_14052e360 的英文小寫數字字（two、twenty-one，sentences_forms_poetry.tsv 的 inner 數字字）；只有一座、一名的寫在 strings/r059_world.tsv
+{%1} forts, one adventurer	{1}座要塞、一名冒險者	{1}座要塞、一名冒险者	r	同上
+one fort, {%1} adventurers	一座要塞、{1}名冒險者	一座要塞、{1}名冒险者	r	同上
+{%1} forts	{1}座要塞	{1}座要塞	r	同上：只有要塞
+{%1} adventurers	{1}名冒險者	{1}名冒险者	r	同上：只有冒險者
+The {@1} {2} {@3} in year {#4}, killed by the {@5} {6}, using a {%7}.	{1}{2}於 {4} 年{3}，兇手是{5}{6}，兇器為{7}。	{1}{2}于 {4} 年{3}，凶手是{5}{6}，凶器为{7}。		DFHack hack/scripts/deathcause.lua L69-92 歷史人物死因（plugins/lua/sort/deathcause_button.lua L68 死因訊息視窗）：{1} 種族、{2} 原名、{3} 死因片語（gui/unit-info-viewer.lua L114-165 DEATH_TYPES 去掉開頭空白；缺的片語在 strings/r059_world.tsv）、{4} 年、{5}{6} 兇手種族與原名、{7} 武器（物品說明或武器名）
+The {@1} {2} {@3} in year {#4}, killed by the {@5} {6}, shot by a {%7}.	{1}{2}於 {4} 年{3}，兇手是{5}{6}，以{7}射擊。	{1}{2}于 {4} 年{3}，凶手是{5}{6}，以{7}射击。		同上：遠程武器（{7} 是發射器）
+The {@1} {2} {@3} in year {#4}, killed by the {@5} {6}.	{1}{2}於 {4} 年{3}，兇手是{5}{6}。	{1}{2}于 {4} 年{3}，凶手是{5}{6}。		同上：沒有武器
+The {@1} {2} {@3} in year {#4}, using a {%5}.	{1}{2}於 {4} 年{3}，兇器為{5}。	{1}{2}于 {4} 年{3}，凶器为{5}。		同上：沒有兇手
+The {@1} {2} {@3} in year {#4}, shot by a {%5}.	{1}{2}於 {4} 年{3}，以{5}射擊。	{1}{2}于 {4} 年{3}，以{5}射击。		同上：沒有兇手、遠程武器
+The {@1} {2} {@3} in year {#4}.	{1}{2}於 {4} 年{3}。	{1}{2}于 {4} 年{3}。		同上：只有死因
+The {@1} {2} died in year {#3}, killed by the {@4} {5}.	{1}{2}於 {3} 年死亡，兇手是{4}{5}。	{1}{2}于 {3} 年死亡，凶手是{4}{5}。		同上：死因不明時寫 died（deathcause.lua L23）
+The {@1} {2} died in year {#3}.	{1}{2}於 {3} 年死亡。	{1}{2}于 {3} 年死亡。		同上
+The {@1} {2} 's ghost was put to rest with a memorial in year {#3}.	{1}{2}的鬼魂於 {3} 年經紀念碑得以安息。	{1}{2}的鬼魂于 {3} 年经纪念碑得以安息。		同上：MEMORIALIZE（片語開頭是 's，前面多一個空白）
+{1} 's ghost was put to rest with a memorial in year {#2}.	{1}的鬼魂於 {2} 年經紀念碑得以安息。	{1}的鬼魂于 {2} 年经纪念碑得以安息。		DFHack hack/scripts/deathcause.lua L31-55 單位死因：MEMORIALIZE
+{1} died in year {#2}, killed by the {@3} {4}.	{1}於 {2} 年死亡，兇手是{3}{4}。	{1}于 {2} 年死亡，凶手是{3}{4}。		DFHack hack/scripts/deathcause.lua L31-55 單位死因（死因訊息視窗）：{1} 單位名（getReadableName，沒有名字時前面加 The）；死因不明時寫 died
+{1} died in year {#2}, killed by the {@3}.	{1}於 {2} 年死亡，兇手是{3}。	{1}于 {2} 年死亡，凶手是{3}。		同上：兇手沒有名字
+{1} died in year {#2}.	{1}於 {2} 年死亡。	{1}于 {2} 年死亡。		同上
+{1} {@2} in year {#3}, killed by the {@4} {5}.	{1}於 {3} 年{2}，兇手是{4}{5}。	{1}于 {3} 年{2}，凶手是{4}{5}。		DFHack hack/scripts/deathcause.lua L31-55 單位死因：{2} 死因片語（同上）、{4}{5} 兇手種族與原名
+{1} {@2} in year {#3}, killed by the {@4}.	{1}於 {3} 年{2}，兇手是{4}。	{1}于 {3} 年{2}，凶手是{4}。		同上：兇手沒有名字
+{1} {@2} in year {#3}.	{1}於 {3} 年{2}。	{1}于 {3} 年{2}。		同上：沒有兇手
+{1} is not dead yet!	{1}還沒死！	{1}还没死！		DFHack hack/scripts/deathcause.lua L35、L115 死因訊息視窗：選的單位還活著
+{'1}, {?2} ({@3})	{1}「{2}」（{3}）	{1}“{2}”（{3}）		DFHack library/modules/Items.cpp L750-757 getReadableDescription 的神器：原名, 英文名 (物品種類，每字大寫)；搬運貨物進出貿易站（scripts/internal/caravan/movegoods.lua L519）等 DFHack 清單；原名只收讀檔時登記的神器原名；寬度例外：同 names_lists.tsv，樣板的全形標點比英文多 3 格，但中文名比英文名短得多，畫的時候引擎照樣比整句寬度，超過就照英文
+{%1} [{2} (hostile)]	{1} [{2} (敵對)]	{1} [{2} (敌对)]		DFHack library/modules/Items.cpp L764-770 getReadableDescription：籠子、捕獸籠裡的敵對生物；括號照 rules/dfhack_gui1.tsv 的 {1} (hostile)

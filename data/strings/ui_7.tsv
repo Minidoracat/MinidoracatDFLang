@@ -180,3 +180,24 @@ Unknown convict.	罪犯不明。	罪犯不明。		FUN_14046db60 L591530 司法�
 Sort units by how involved they are in the crime.	依各單位涉入罪行的程度排序。	按各单位涉入罪行的程度排序。		FUN_14046e5a0 L592040 司法畫面：單位清單排序欄 L592231 欄名提示
 No witnesses	沒有目擊者	没有目击者		FUN_14046eb60 L592342 司法畫面：目擊者數 L592415
 1 witness	目擊 1 人	目击 1 人		FUN_14046eb60 L592342 司法畫面：目擊者數 L592426
+cardinal (Dye)	染主教紅	染主教红		FUN_140450140 L573092-573106 制服顏色選單（焦點 dwarfmode/Squads/Equipment/Customizing/Color）：有染料庫存的顏色畫「顏色名 (Dye)」整串，沒有的只畫顏色名（data/screens 的同名檔）。rules/ui_7 的 {@1} (Dye) 走全域字典，和物品同名的顏色會畫成名詞＋色（染北美紅雀色、染柳橙色），dark 開頭的會先被 ann_01 的 dark {%1}（據點前綴）切成「黑暗染棕色」，這幾條整串寫死；色名同 data/screens 的制服顏色選單
+orange (Dye)	染橙色	染橙色		同上；全域 orange 是水果「柳橙／橙子」
+peach (Dye)	染桃色	染桃色		同上；全域是「桃子」
+plum (Dye)	染梅紫色	染梅紫色		同上；全域是「李子」
+eggplant (Dye)	染茄紫色	染茄紫色		同上；全域是「茄子」
+chestnut (Dye)	染栗色	染栗色		同上；全域是「栗子」
+lime (Dye)	染萊姆綠	染青柠绿		同上；全域是「萊姆／青柠」
+mahogany (Dye)	染紅木色	染红木色		同上；全域是「桃花心木」
+dark blue (Dye)	染深藍色	染深蓝色		同上；dark 開頭的被 ann_01 的 dark {%1} 先比中，色名照全域 dark blue
+dark brown (Dye)	染深棕色	染深棕色		同上
+dark chestnut (Dye)	染深栗色	染深栗色		同上
+dark green (Dye)	染深綠色	染深绿色		同上
+dark indigo (Dye)	染深靛藍色	染深靛蓝色		同上
+dark olive (Dye)	染深橄欖色	染深橄榄色		同上
+dark peach (Dye)	染深桃色	染深桃色		同上
+dark pink (Dye)	染深粉紅色	染深粉红色		同上
+dark scarlet (Dye)	染深猩紅色	染深猩红色		同上
+dark tan (Dye)	染深黃褐色	染深黄褐色		同上
+dark violet (Dye)	染深紫羅蘭色	染深紫罗兰色		同上
+dark taupe (Dye)	染深灰褐色	染深灰褐色		同上
+dark azure (Dye)	染深天藍色	染深天蓝色		同上

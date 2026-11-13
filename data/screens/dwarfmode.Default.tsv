@@ -1,3 +1,5 @@
 en	zh-Hant	zh-Hans	align	row	note
 Prayer	祈禱	祈祷			DFHack hack/lua/plugins/spectate.lua L303 旁觀提示框（跟隨橫幅、滑鼠懸停）的活動名（activity_entry_type 原名）；單字放依畫面譯文，不改全域字典的切法
 Harassment	騷擾	骚扰			DFHack hack/lua/plugins/spectate.lua L303 旁觀提示框的活動名（activity_entry_type 原名）；單字放依畫面譯文
+ on 	 開 	 开 			DFHack hack/lua/plugins/spectate.lua L658（53.17-r1）跟隨面板 overlay（FollowPanelOverlay，viewscreens＝dwarfmode/Default）「 spectate:」後面的開關狀態，綠字；工具名 spectate 照英文；前後空白照原文，4 格；單字放依畫面譯文，不改全域
+off 	關  	关  			同上，關閉時的紅字；4 格（中文 2 格＋兩個空白）

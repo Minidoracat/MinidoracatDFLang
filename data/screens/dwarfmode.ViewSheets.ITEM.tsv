@@ -1,2 +1,4 @@
 en	zh-Hant	zh-Hans	align	row	note
 Uses	用途	用途			物品頁：可以用這件物品的工作（Make … strings 等）的分類標題；寫在這裡不寫在 strings：全域的 Uses 會被大小寫退回套到樂曲說明的「uses grace notes」
+ash	木灰	木灰			物品頁的物品名：同 dwarfmode.Info.WORK_ORDERS 的 ash；寬度例外：原文 3 格、譯文 4 格，和改前的全域譯文「梣樹」同寬，尚待實機確認右邊有空位
+charcoal	木炭	木炭			物品頁的物品名：同 dwarfmode.Info.WORK_ORDERS 的 charcoal

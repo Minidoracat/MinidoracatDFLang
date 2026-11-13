@@ -1,0 +1,37 @@
+en	zh-Hant	zh-Hans	align	note
+Adds autofarm controls to the farm plot info sheet.	在農田資訊頁加上 autofarm 的控制項。	在农田信息页加上 autofarm 的控件。		DFHack hack/lua/plugins/autofarm.lua L28 overlay 說明（控制面板 overlay 分頁），工具名照原文
+Covers the crop list of farm plots managed by autofarm.	遮住由 autofarm 管理的農田的作物清單。	遮住由 autofarm 管理的农田的作物列表。		DFHack hack/lua/plugins/autofarm.lua L94 overlay 說明（控制面板 overlay 分頁），工具名照原文
+autofarm is	自動耕作：	自动耕作：		DFHack hack/lua/plugins/autofarm.lua L42 農田資訊頁 overlay 的開關標籤，後接 enabled／disabled（同 Autochop is → 自動伐木：）
+this farm is	這塊農田：	这块农田：		DFHack hack/lua/plugins/autofarm.lua L51 農田資訊頁 overlay 的開關標籤，後接 managed by autofarm／managed manually
+managed by autofarm	由自動耕作管理	由自动耕作管理		DFHack hack/lua/plugins/autofarm.lua L54 農田資訊頁 overlay 開關選項（綠字）
+managed manually	手動管理	手动管理		DFHack hack/lua/plugins/autofarm.lua L55 農田資訊頁 overlay 開關選項（黃字）
+This farm is managed by autofarm	這塊農田由自動耕作管理	这块农田由自动耕作管理		DFHack hack/lua/plugins/autofarm.lua L110 蓋在作物清單上的面板第一行
+Now planting: ?	目前種植：?	当前种植：?		DFHack hack/lua/plugins/autofarm.lua L116 作物面板第二行的初始字（畫面更新前）
+Now planting:	目前種植：	当前种植：		DFHack hack/lua/plugins/autofarm.lua L154 作物面板第二行，後接作物名（原文 "Now planting: "）
+Crops are chosen automatically based on your configured stock thresholds. Manual crop selection will be overridden.	作物會依你設定的庫存門檻自動選擇；手動選的作物會被覆蓋。	作物会根据你设置的库存阈值自动选择；手动选择的作物会被覆盖。		DFHack hack/lua/plugins/autofarm.lua L120-122 作物面板說明（WrappedLabel 整段一條）
+All seasons are fallow: no plantable seeds available, or all crops are above their thresholds.	所有季節都休耕：沒有可種的種子，或所有作物都已高於門檻。	所有季节都休耕：没有可种的种子，或所有作物都已高于阈值。		DFHack hack/lua/plugins/autofarm.lua L161-162 作物面板黃字提示（WrappedLabel 整段一條）
+configure autofarm	設定自動耕作	设置自动耕作		DFHack hack/lua/plugins/autofarm.lua L133 作物面板按鈕
+manage this farm manually	手動管理這塊農田	手动管理这块农田		DFHack hack/lua/plugins/autofarm.lua L140 作物面板按鈕
+Stock▼	庫存▼	库存▼		DFHack hack/scripts/gui/autofarm.lua L70/L107 排序選項（CH_DN）
+Stock▲	庫存▲	库存▲		DFHack hack/scripts/gui/autofarm.lua L71/L108 排序選項（CH_UP）
+Threshold▼	門檻▼	阈值▼		DFHack hack/scripts/gui/autofarm.lua L72/L118 排序選項（CH_DN）
+Threshold▲	門檻▲	阈值▲		DFHack hack/scripts/gui/autofarm.lua L73/L119 排序選項（CH_UP）
+Show below threshold:	只顯示低於門檻的：	只显示低于阈值的：		DFHack hack/scripts/gui/autofarm.lua L82 開關標籤，後接 On／Off（同 seedwatch 的 Show only in stock:）
+Please enable autofarm to change settings	請先啟用自動耕作才能變更設定	请先启用自动耕作才能更改设置		DFHack hack/scripts/gui/autofarm.lua L129 未啟用時的提示
+to set the threshold.	設定門檻。	设置阈值。		DFHack hack/scripts/gui/autofarm.lua L153 頁尾提示後半（接在 Enter 後，原文 " to set the threshold."；前半 Double click on a row or hit 已在 dfhack_gui1.tsv）
+Autofarm is	自動耕作：	自动耕作：		DFHack hack/scripts/gui/autofarm.lua L159 啟用切換，後接 Enabled／Disabled（同 Autochop is）
+Set all	全設定	全设置		DFHack hack/scripts/gui/autofarm.lua L170 按鈕：一次設定所有作物的門檻（原文 7 格）
+Reset selected to default	選取列恢復預設	所选行恢复默认		DFHack hack/scripts/gui/autofarm.lua L184 按鈕：清單選取的那一列（作物或產物）門檻恢復預設
+Set threshold	設定門檻	设置阈值	c	DFHack hack/scripts/gui/autofarm.lua L355 輸入框視窗標題（置中，同 seedwatch 的 Set target）
+Set all thresholds	設定全部門檻	设置全部阈值	c	DFHack hack/scripts/gui/autofarm.lua L376 輸入框視窗標題
+Set default threshold	設定預設門檻	设置默认阈值	c	DFHack hack/scripts/gui/autofarm.lua L397 輸入框視窗標題
+Enter desired threshold for all crop types	輸入所有作物種類的門檻	输入所有作物种类的阈值		DFHack hack/scripts/gui/autofarm.lua L377 輸入框說明
+Enter desired default threshold for crops	輸入作物的預設門檻	输入作物的默认阈值		DFHack hack/scripts/gui/autofarm.lua L398 輸入框說明
+Farms that span multiple biomes are handled correctly: any crop that can grow in any of the biomes covered by the farm's tiles may be assigned to that farm.	跨越多個生物群系的農田也能正確處理：只要作物能在農田圖格涵蓋的任一生物群系生長，就可能被分配到這塊農田。	跨越多个生物群系的农田也能正确处理：只要作物能在农田图块覆盖的任一生物群系生长，就可能被分配到这块农田。		DFHack docs tools/autofarm.txt
+Individual farm plots can be excluded from autofarm management via the controls that appear on the farm plot information sheet. That sheet also provides a shortcut to gui/autofarm, a convenient UI for setting crop thresholds and enabling or disabling autofarm.	可以用農田資訊頁上出現的控制項，把個別農田排除在 autofarm 的管理之外。該頁也提供 gui/autofarm 的捷徑；那是方便的介面，可以設定作物門檻、啟用或停用 autofarm。	可以用农田信息页上出现的控件，把个别农田排除在 autofarm 的管理之外。该页也提供 gui/autofarm 的快捷入口；那是方便的界面，可以设置作物阈值、启用或禁用 autofarm。		DFHack docs tools/autofarm.txt
+Some plants produce usable growth items (such as fruits, leaves, or bulbs) when processed or gathered. These products normally count toward the plant's threshold together with the plant items themselves, but you can also assign a threshold to a specific growth product with the "<plant>:<growth>" syntax. A plant is grown while either its pooled stock or any of its assigned growth products is below the corresponding threshold.	有些植物在加工或採集時會產出可用的產物（例如果實、葉子或球莖）。這些產物通常和植物本身一起計入該植物的門檻，但你也可以用 "<plant>:<growth>" 語法替特定產物指定門檻。只要植物的合計庫存，或任何一個指定了門檻的產物低於對應的門檻，就會種植該植物。	有些植物在加工或采集时会产出可用的产物（例如果实、叶子或球茎）。这些产物通常和植物本身一起计入该植物的阈值，但你也可以用 "<plant>:<growth>" 语法为特定产物指定阈值。只要植物的合计库存，或任何一个指定了阈值的产物低于对应的阈值，就会种植该植物。		DFHack docs tools/autofarm.txt
+Keep at least 30 Quarry Bush Leaves in stock, growing Quarry Bushes until you have enough of them to process	庫存至少保持 30 份採石灌木葉；採石灌木會一直種，直到數量足夠加工	库存至少保持 30 份采石灌木叶；采石灌木会一直种，直到数量足够加工		DFHack docs tools/autofarm.txt
+Manage autofarm crop thresholds.	管理 autofarm 的作物門檻。	管理 autofarm 的作物阈值。		DFHack 工具簡介（helpdb short_help／控制面板說明框）：gui/autofarm (hack/docs/docs/tools/gui/autofarm.txt 首句)
+This is the configuration interface for the autofarm plugin. It lists all farmable crops along with their current stock counts and their assigned thresholds, and allows you to set individual thresholds, reset them to the default, set the default threshold, or set the threshold for all crops at once. Autofarm itself can also be enabled or disabled from this interface.	這是 autofarm 外掛的設定介面。它列出所有可種植的作物，以及各自目前的庫存數量與門檻；你可以個別設定門檻、把門檻恢復為預設、設定預設門檻，或一次設定所有作物的門檻。也可以在這個介面啟用或停用 autofarm 本身。	这是 autofarm 插件的设置界面。它列出所有可种植的作物，以及各自当前的库存数量和阈值；你可以单独设置阈值、把阈值恢复为默认、设置默认阈值，或一次设置所有作物的阈值。也可以在这个界面启用或禁用 autofarm 本身。		DFHack docs tools/gui/autofarm.txt
+Crops that produce usable growth items (such as fruits, leaves, or bulbs) list those products indented beneath the crop. A growth product counts toward its crop's pooled threshold unless you assign it a threshold of its own, in which case the crop is grown until both the pool and that product's stock meet their thresholds.	會產出可用產物（例如果實、葉子或球莖）的作物，會在作物下方縮排列出這些產物。產物會計入所屬作物的合計門檻，除非你替它另外指定門檻；這時作物會一直種植，直到合計庫存與該產物的庫存都達到各自的門檻。	会产出可用产物（例如果实、叶子或球茎）的作物，会在作物下方缩进列出这些产物。产物会计入所属作物的合计阈值，除非你为它另外指定阈值；这时作物会一直种植，直到合计库存和该产物的库存都达到各自的阈值。		DFHack docs tools/gui/autofarm.txt；術語例外：case；in which case 是連接詞，不是案件
+The bottom of the window shows how many farm plots are currently excluded from autofarm management. Individual farm plots can be excluded (or re-included) via the controls that appear on the farm plot information sheet.	視窗底部顯示目前有幾塊農田排除在 autofarm 的管理之外。可以用農田資訊頁上出現的控制項，排除個別農田（或重新納入）。	窗口底部显示当前有几块农田被排除在 autofarm 的管理之外。可以用农田信息页上出现的控件，排除个别农田（或重新纳入）。		DFHack docs tools/gui/autofarm.txt

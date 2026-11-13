@@ -1,3 +1,6 @@
 en	zh-Hant	zh-Hans	align	row	note
 Fish	魚類	鱼类		0	上方資訊列（第 0 列）的存量標題，同全域；排在下一條不限列的「釣魚」前面（理由見 dwarfmode.Info.CREATURES.tsv）
 Fish	釣魚	钓鱼			工作名稱 Fish（釣魚）；全域的 Fish 是上方資訊列與庫存的「魚類」，所以只在生物清單、任務分頁、人物頁套用（第二十三輪簡中實機）
+Loom	織機	织机			任務分頁每列右邊的工坊名（FUN_14054d320 建築名稱單獨畫）；全域只有 inner（fort_2），同 dwarfmode.ViewSheets.BUILDING.tsv（53.17 實機未翻譯紀錄）
+Still	釀酒	酿酒			同上
+Fishery	漁獲	渔获			同上

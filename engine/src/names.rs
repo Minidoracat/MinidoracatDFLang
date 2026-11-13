@@ -149,18 +149,29 @@ pub fn get(english: &[u8]) -> Option<Arc<str>> {
     get_with(crate::translit::table().as_deref(), english)
 }
 
-/// 名稱表裡唯一以 prefix 開頭、比它長的英文名（傳說人物分頁截短的「名字, "綽號…」補回完整的綽號，見 Dict::complete_cut）；
-/// 有兩個以上時 None。名稱表最多 20 萬筆，整張掃過：呼叫端要記住結果
+/// 名稱表登記過的英文名（遊戲組過的世界生成名稱，見 note）：句型的佔位不在這種名字中間的「 of 」切開（見 dict.rs 的 match_at）
+pub fn is_registered(english: &[u8]) -> bool {
+    #[cfg(test)]
+    if FIXED.lock().contains_key(english) {
+        return true;
+    }
+    NAMES.lock().contains_key(english)
+}
+
+/// 名稱表與原名裡唯一以 prefix 開頭、比它長的名字（傳說人物分頁截短的「名字, "綽號…」補回完整的綽號、任務分頁截在名字中間的
+/// 「Oddom Rilbetk…」補回原名，見 Dict::complete_cut）；有兩個以上時 None。各最多 20 萬筆，整張掃過：呼叫端要記住結果
 pub fn complete(prefix: &[u8]) -> Option<Vec<u8>> {
     let names = NAMES.lock();
-    let keys = names.keys();
+    let natives = NATIVES.lock();
+    let keys = names.keys().chain(natives.iter());
     #[cfg(test)]
     let fixed = FIXED.lock();
     #[cfg(test)]
     let keys = keys.chain(fixed.keys());
     let mut found = keys.filter(|k| k.len() > prefix.len() && k.starts_with(prefix));
     let first = found.next()?.clone();
-    found.next().is_none().then_some(first)
+    // 同一個名字可能同時在名稱表與原名裡
+    found.all(|k| *k == first).then_some(first)
 }
 
 /// 同 get，音譯表由呼叫端給（None 是名字音譯關著；測試用，免得動到全域的開關）

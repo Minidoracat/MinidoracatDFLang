@@ -1,0 +1,14 @@
+en	zh-Hant	zh-Hans	align	note
+We yield!	我們投降！	我们投降！		FUN_1404988b0 1404cfaec 交談：一群人投降「We yield!  We yield!」的小句（同上）
+Fine.	好吧。	好吧。		FUN_1404988b0 1404d5742 交談：「Fine.  Let's drop the argument.」的小句（同上）
+Okay!	好啦！	好吧！		FUN_1404988b0 1404d0511 交談：「Okay!  I'll do it.」的小句；有講者時原本退到介面的 Okay 變成「確定！」
+I'll do it.	我照做就是了。	我照做就是了。		同上第二句
+Stop!	住手！	住手！		FUN_1404988b0 1404cf777 交談：「Stop!  This isn't happening!」的小句；有講者時原本退到介面的 Stop 變成「停止！」
+Help!	救命！	救命！		FUN_1404988b0 1404d7408 交談中求救「Help!  Save me!」的小句；有講者（to you）時原本退到介面的 Help 變成「說明！」
+This!	這個！	这个！		FUN_140673bc0 case 0x15 表演評論「This!  Amazing ability.」的小句（表演種類不在清單時主詞只有 This）；交談紀錄有講者時逐句查
+This?	這個？	这个？		FUN_140673bc0 case 0x15／0x19 表演評論「This?  Unbelievable talent!」「This?  Awful.」的小句（同上）
+This.	這……	这……		FUN_140673bc0 case 0x15 表演評論「This.  How can I even describe the skill?」的小句（同上）
+Awful.	真糟糕。	真糟糕。		FUN_140673bc0 case 0x19 表演評論「{主詞}?  Awful.」第二句（同上）
+I'm .	我是……	我是……		FUN_14067d390 L901884 TEXT_SET GREET_REPLY「Ah, hello.  I'm [SPEAKER:TRANS_NAME].」第二句，說話者沒有名字時；原本被 I'm {1}. 拆成半中半英
+I am .	我是……	我是……		FUN_14067d390 L901922／L901978 TEXT_SET GREET_REPLY_DIFF_LANGUAGE、GREET_REPLY_AFTER_HERO「I am [SPEAKER:TRANS_NAME].」，說話者沒有名字時
+This is .	就是這裡。	就是这里。		FUN_14067d390 L901032 場所主人「This is ＋場所名＋.  What can I do for you?」，場所名為空時

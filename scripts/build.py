@@ -139,7 +139,8 @@ def dict_lines(kind: str, rows: list[dict], lang: str) -> str:
         if kind == "screens":
             return f"{screen_of(r['file'])}\t{r['en']}\t{r[lang]}\t{r['align']}\t{r['row']}\n"
         return f"{r['en']}\t{r[lang]}\t{r['align']}\n"
-    return "".join(line(r) for r in rows if r[lang].strip() or (kind == "screens" and r["en"] == "*"))
+    # 依畫面譯文可以只有空白（英文複數的 s 換成一格空白）：只有完全空的才算沒譯文
+    return "".join(line(r) for r in rows if r[lang].strip() or (kind == "screens" and (r["en"] == "*" or r[lang])))
 
 
 def name_lines(rows: list[dict], lang: str) -> str:

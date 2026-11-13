@@ -29,6 +29,7 @@ Logging untranslated text to dfhack-config/dflang-misses.tsv, also after restart
 Stopped logging untranslated text.	已停止記錄未翻譯的字。	已停止记录未翻译的文字。		lua/dflang.lua dflang misses off
 Full-line text rendering: on.	整句貼圖：開。	整句贴图：开。		lua/dflang.lua dflang overlay on
 Full-line text rendering: off, back to two-cell glyphs.	整句貼圖：關，改回一字兩格的字圖。	整句贴图：关，改回一字两格的字图。		lua/dflang.lua dflang overlay off
+Full-line text rendering stays on in ASCII mode.	ASCII 模式下整句貼圖一律開著。	ASCII 模式下整句贴图始终开启。		lua/dflang.lua dflang overlay off：ASCII 模式遊戲不畫字圖，一字兩格的畫法整片空白
 Bold text: on.	粗體字：開。	粗体字：开。		lua/dflang.lua dflang bold on
 Bold text: off, using the regular weight.	粗體字：關，改用一般粗細。	粗体字：关，改用常规粗细。		lua/dflang.lua dflang bold off
 DFLang Settings	DFLang 設定	DFLang 设置	c	lua/dflang.lua 設定視窗（dflang ui、Ctrl-Shift-L）的視窗標題

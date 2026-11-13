@@ -1,0 +1,4 @@
+en	zh-Hant	zh-Hans	align	note
+{1}.  Does that mean something?	{1}，這名字有什麼含意嗎？	{1}，这名字有什么含义吗？		FUN_14067d390 L901913 TEXT_SET GREET_REPLY_UNUSUAL_FIRST「[AUDIENCE:FIRST_NAME].  Does that mean something?」；{1} 對方的名。帶講者時由講者句型最後的 {%n} 整段收（跨句），名字單獨一句「Kib.」翻不出來，所以兩句寫成一條；譯法同 adv_speech_c1 的 Ah, hello.  I'm {1}.  {2}.  Does that mean something?
+{1}.  I can't say I've heard that before.	{1}？這名字我還真沒聽過。	{1}？这名字我还真没听过。		同上，GREET_REPLY_UNUSUAL_FIRST 第二種
+{1}...  your parents must have been interesting!	{1}……你爸媽想必很有個性！	{1}……你爸妈想必很有个性！		同上，GREET_REPLY_UNUSUAL_FIRST 第三種

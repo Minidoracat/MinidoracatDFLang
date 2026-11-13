@@ -326,7 +326,9 @@ function DFLangWindow:init()
             key = 'CUSTOM_O',
             label = 'Full-line text rendering:',
             label_width = LABEL_WIDTH,
-            initial_option = config.overlay ~= false,
+            -- ASCII 模式只能用整句貼圖（見 loader.lua 的 wanted）：開關鎖在開
+            initial_option = config.overlay ~= false or not dfhack.screen.inGraphicsMode(),
+            enabled = dfhack.screen.inGraphicsMode,
             on_change = function(on) set_overlay(on) self:changed() end,
         },
         widgets.CycleHotkeyLabel{
@@ -522,6 +524,10 @@ elseif cmd == 'misses' and (args[2] == 'on' or args[2] == 'off') then
 -- 外觀的設定改了立即套用；要重開遊戲才生效時（引擎太舊不能即時套用、套用失敗）另外提示
 elseif cmd == 'overlay' and (args[2] == 'on' or args[2] == 'off') then
     local on = args[2] == 'on'
+    if not on and not dfhack.screen.inGraphicsMode() then
+        print('Full-line text rendering stays on in ASCII mode.')
+        return
+    end
     set_overlay(on)
     print(on and 'Full-line text rendering: on.' or 'Full-line text rendering: off, back to two-cell glyphs.')
     if apply_now() then print('Restart the game to apply these changes.') end

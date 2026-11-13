@@ -1,0 +1,4 @@
+en	zh-Hant	zh-Hans	align	row	note
+Autofarm	自動耕作	自动耕作	c		DFHack hack/scripts/gui/autofarm.lua L13 視窗標題（與指令名同字，限定畫面；53.17-r1 新增）
+Stock	庫存	库存			DFHack hack/scripts/gui/autofarm.lua L106 清單欄名（欄寬 6 格）
+Threshold	門檻	阈值			DFHack hack/scripts/gui/autofarm.lua L117 清單欄名（欄寬 9 格）

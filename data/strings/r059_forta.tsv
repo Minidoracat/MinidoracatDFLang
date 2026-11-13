@@ -1,0 +1,7 @@
+en	zh-Hant	zh-Hans	align	note
+, the performance troupe, has arrived.	表演團到了。	表演团到了。		FUN_14010b150 L169961-169979 表演團抵達：團名（FUN_140b92900）是空字串時，同 ann_01 的 {1}, the performance troupe, has arrived.
+, a performance troupe, is visiting.	表演團前來拜訪。	表演团前来拜访。		同上，表演團來訪
+ have returned.	 隊伍回來了。	 队伍回来了。		FUN_14010b150 L170563-170576 部隊歸來：部隊沒有自訂名、名字（FUN_140a946e0）也是空字串時，同 ann_01 的 {1} have returned.；開頭空白照原文
+ and others have returned.	 幾支隊伍回來了。	 几支队伍回来了。		FUN_14010b150 L170603-170616 多支部隊歸來、第一支沒有名字時，同 ann_01 的 {1} and others have returned.
+Subject has used a nameless identity as an alias in the past.	受審者過去曾以無名無姓的身分作為化名。	受审者过去曾以无名无姓的身份作为化名。		FUN_1402c0c20 L394784-394800 審訊報告：用過的化名沒有名字時；同 sentences_justice_01 的 Subject has used "{1}" as an alias in the past.；無名無姓同 being nameless
+Play Make Believe	玩扮家家酒	玩过家家		FUN_1400a3270 L101249 人物頁目前活動：孩童扮家家酒（同 ann_01 的 playing make believe）；不寫這條會被拆成「演奏製作相信」

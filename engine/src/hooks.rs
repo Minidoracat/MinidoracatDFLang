@@ -6,9 +6,9 @@
 //! 也攔錨定貼圖函式（add_anchored_tile），翻譯逐字畫成貼圖的分頁標籤（見 hook_add_anchored_tile）；
 //! 以及 std::string::resize，記下遊戲截成「開頭...」之前的原文（見 lookup）。
 
-use std::cell::RefCell;
+use std::cell::{Cell, RefCell};
 use std::collections::{HashMap, HashSet, VecDeque};
-use std::ffi::CStr;
+use std::ffi::{CStr, c_void};
 use std::fs::File;
 use std::io::{Read, Write};
 use std::sync::atomic::{AtomicBool, AtomicPtr, AtomicU64, AtomicUsize, Ordering};
@@ -110,6 +110,42 @@ impl StdString {
         unsafe { std::slice::from_raw_parts(p, self.size) }
     }
 
+    fn data(&mut self) -> *mut u8 {
+        if self.cap > 15 { unsafe { *(self.buf.as_ptr() as *const *mut u8) } } else { self.buf.as_mut_ptr() }
+    }
+
+    /// 縮短到 n 個位元組（和遊戲自己的退格一樣：改長度、補結尾的 0）
+    unsafe fn truncate(&mut self, n: usize) {
+        if n < self.size {
+            unsafe { *self.data().add(n) = 0 };
+            self.size = n;
+        }
+    }
+
+    /// 接在後面。容量放得下就直接寫；放不下時用遊戲自己的 std::string::resize（string_resize 的原函式，遊戲的配置器）加長，
+    /// 沒掛上 string_resize 時不接，回傳 false
+    unsafe fn append(&mut self, bytes: &[u8]) -> bool {
+        let old = self.size;
+        if self.cap - old < bytes.len() {
+            let resize = TRAMPOLINES[9].load(Ordering::Acquire);
+            if resize == 0 {
+                return false;
+            }
+            let resize: ResizeFn = unsafe { std::mem::transmute(resize) };
+            unsafe { resize(self, old + bytes.len(), 0) };
+            if self.size != old + bytes.len() {
+                return false;
+            }
+        }
+        unsafe {
+            let p = self.data();
+            std::ptr::copy_nonoverlapping(bytes.as_ptr(), p.add(old), bytes.len());
+            *p.add(old + bytes.len()) = 0;
+        }
+        self.size = old + bytes.len();
+        true
+    }
+
     /// 指向既有緩衝區的長字串模式；被呼叫端只讀（const std::string&），不會釋放它。
     fn borrowed(bytes: &[u8]) -> StdString {
         let mut s = StdString { buf: [0; 16], size: bytes.len(), cap: bytes.len().max(16) };
@@ -153,14 +189,16 @@ type TradeSpeechFn = unsafe extern "C" fn(*mut u8, usize, usize, usize, u8, u8);
 type FindFn = unsafe extern "C" fn(*const u8, usize, usize, *const u8, usize) -> usize;
 /// FUN_140c39700(輸入框的字串, 長度上限, 收哪些字元的旗標, 按鍵, SDL 送來的文字) → 有沒有改：遊戲所有輸入框打字的地方
 type TextInputFn = unsafe extern "C" fn(*mut StdString, i32, u64, *mut u8, *const u8) -> u64;
+/// viewscreen_setupadventurest 的建構函式（53.16 FUN_1406350b0）(畫面) → 同一個畫面
+type CtorFn = unsafe extern "C" fn(*mut u8) -> *mut u8;
 
-pub const HOOKS: [&str; 23] = [
+pub const HOOKS: [&str; 24] = [
     "addst", "addst_flag", "top_addst", "addcoloredst", "mtb_set_width", "add_anchored_tile", "wrap_lines", "ctb_add_string",
     "translate_name", "string_resize", "adv_appearance", "adv_personality", "adv_log", "adv_talk_log", "render_things", "native_name",
     "adv_announcements", "tool_tip", "world_site_history", "trade_artifact_speech", "dfhack_mtb_set_width", "stock_string_find",
-    "text_input",
+    "text_input", "adv_fate",
 ];
-static TRAMPOLINES: [AtomicUsize; 23] = [const { AtomicUsize::new(0) }; 23];
+static TRAMPOLINES: [AtomicUsize; 24] = [const { AtomicUsize::new(0) }; 24];
 /// wrap_text 的位址（只登記、不攔；它切行時呼叫 wrap_lines）：enable 時從呼叫它的程式碼找出遊戲啟動時就切好的提示（見 lines.rs）
 pub static WRAP_TEXT: OnceLock<usize> = OnceLock::new();
 
@@ -199,7 +237,8 @@ pub fn attach(name: &str, target: usize) -> Result<(), String> {
         19 => hook_trade_artifact_speech as *const (),
         20 => hook_dfhack_mtb_set_width as *const (),
         21 => hook_string_find as *const (),
-        _ => hook_text_input as *const (),
+        22 => hook_text_input as *const (),
+        _ => hook_adv_fate as *const (),
     };
     let detour = unsafe { RawDetour::new(target as *const (), hook) }.map_err(|e| e.to_string())?;
     TRAMPOLINES[index].store(detour.trampoline() as *const () as usize, Ordering::Release);
@@ -458,11 +497,17 @@ fn lookup<'a>(dict: &'a Dict, key: &[u8], y: i32) -> Option<Found<'a>> {
 const LOOKUP_DEPTH: u8 = 3;
 
 fn lookup_in<'a>(dict: &'a Dict, key: &[u8], y: i32, depth: u8) -> Option<Found<'a>> {
+    let deeper = depth < LOOKUP_DEPTH;
+    // 遊戲直接改短、沒接「...」的標題（見 untruncated）：讀得到截短前的原文就翻原文再截回原來的格數，原文翻不出來才照截短的字串查。
+    // 要先查：截短的字串本身常也比得中通用句型（「The abduction of the human X from Y by the goblin Zol」被 `The abduction of {1}`
+    // 整段收下）。只有長度剛好是 58、80 時才讀記憶體
+    if let Some(e) = deeper.then(|| untruncated(key)).flatten().and_then(|full| lookup_in(dict, &full, y, depth + 1)).and_then(|f| dict.cut_entry(key, &f.text)) {
+        return Some(Found::Rule(e));
+    }
     let screen = if dict.screens.is_empty() { None } else { dict.screen_entry(key, &FOCUS.lock(), y) };
     if let Some(entry) = screen.or_else(|| dict.entries.get(key)) {
         return Some(Found::Fixed(entry));
     }
-    let deeper = depth < LOOKUP_DEPTH;
     // 遊戲截短的字串（`Start new conversation with the Human baro...`）：翻截短前的原文再截短
     if let Some(e) = deeper.then(|| cut_original(key)).flatten().filter(|full| !dict.keeps_player_name(full))
         .and_then(|full| lookup_in(dict, &full, y, depth + 1))
@@ -481,8 +526,8 @@ fn lookup_in<'a>(dict: &'a Dict, key: &[u8], y: i32, depth: u8) -> Option<Found<
     if let Some(line) = key.strip_suffix(b" ").filter(|l| !l.ends_with(b" ") && l.iter().any(u8::is_ascii_alphabetic)) {
         return lookup_in(dict, line, y, depth + 1);
     }
-    // 截在字中間、最後一段是逗號後的職業或名字（物品頁「Owner: X, Stonecr...」、傳說人物分頁「名字, "綽號片...」，見 Dict::complete_cut）：
-    // 補完整再翻、截回原來的格數
+    // 截在字中間、最後一段是逗號後的職業或名字，或整段是截在中間的名字（物品頁「Owner: X, Stonecr...」、任務分頁「名字, Stonecu...」、
+    // 傳說人物分頁「名字, "綽號片...」，見 Dict::complete_cut）：截短前的原文沒記到（遊戲直接改長度）時，補完整再翻、截回原來的格數
     if let Some(e) = dict.complete_cut(key).and_then(|full| lookup_in(dict, &full, y, depth + 1)).and_then(|f| dict.cut_entry(key, &f.text)) {
         return Some(Found::Rule(e));
     }
@@ -509,6 +554,52 @@ fn cut_original(key: &[u8]) -> Option<Vec<u8>> {
     CUTS.with_borrow(|cuts| cuts.iter().rev().find(|f| f.len() > key.len() && f.starts_with(head)).cloned())
 }
 
+thread_local! {
+    /// hook_addst 正在畫的 std::string 的位址（見 untruncated）；不在 hook_addst 裡時是 0
+    static DRAWING: Cell<usize> = const { Cell::new(0) };
+}
+
+/// 遊戲直接改短、不接「...」的字串：(截短後的長度, 截短前的原文相對畫的那個字串的位移)。
+/// - 冒險日誌與任務側欄的標題：FUN_1400cdf30（53.16）把物件 +0x20 的原文複製到 +0x60，再把長度改成 58，畫的是 +0x60
+/// - 說故事選單的事件標題：FUN_140854ec0 把 performance_menu_choicest 的 list_name（+0x28）複製到 print_name（+0x08），
+///   長度超過 80 就截成 80（FUN_1400e1230），畫的是 print_name（FUN_140870260）
+const UNCUT: [(usize, isize); 2] = [(58, -0x40), (80, 0x20)];
+
+#[link(name = "kernel32")]
+unsafe extern "system" {
+    fn GetCurrentProcess() -> *mut c_void;
+    fn ReadProcessMemory(process: *mut c_void, base: *const c_void, buf: *mut c_void, size: usize, read: *mut usize) -> i32;
+}
+
+/// 讀自己行程的記憶體：位址沒有對應（猜錯位移）時回傳 None，不會當掉
+fn peek(addr: usize, buf: &mut [u8]) -> Option<()> {
+    let mut read = 0;
+    let ok = unsafe { ReadProcessMemory(GetCurrentProcess(), addr as *const c_void, buf.as_mut_ptr().cast(), buf.len(), &mut read) };
+    (ok != 0 && read == buf.len()).then_some(())
+}
+
+/// 正在畫的字串（hook_addst）長度是 UNCUT 的一種時，到同一個物件的原文欄位讀截短前的原文：要是比它長、開頭完全相同的 std::string 才算
+/// （畫的不是這兩種標題時，那個位置不是字串或內容不同，讀不到或對不上就照英文）。這兩種標題是句型拼的（事件短語＋名字），
+/// 整句字典補不完整（Dict::complete_cut），所以讀原文
+fn untruncated(key: &[u8]) -> Option<Vec<u8>> {
+    let &(_, offset) = UNCUT.iter().find(|(n, _)| *n == key.len())?;
+    let s = DRAWING.get();
+    if s == 0 {
+        return None;
+    }
+    let mut head = [0u8; size_of::<StdString>()];
+    peek(s.checked_add_signed(offset)?, &mut head)?;
+    let word = |i: usize| usize::from_le_bytes(head[i..i + 8].try_into().unwrap_or_default());
+    let (size, cap) = (word(16), word(24));
+    // 比 key 長就一定是配置在堆積的長字串（key 至少 58 位元組，短字串模式最多 15）
+    if size <= key.len() || size > 4096 || cap < size || cap <= 15 {
+        return None;
+    }
+    let mut full = vec![0u8; size];
+    peek(word(0), &mut full)?;
+    full.starts_with(key).then_some(full)
+}
+
 /// 共用流程：查字典（整句、再句型規則），命中就讓 `write` 寫替身字串，再貼字圖。回傳 false 表示要照原樣呼叫原函式。
 /// half：遊戲畫成半格位移的兩列（分頁標籤，addst_flag 的 TOP_OF_TEXT／BOTTOM_OF_TEXT）。
 unsafe fn translate_call(gps: *mut u8, kind: &str, key: &[u8], space: i32, half: bool, layer: fn(&Layout) -> Layer,
@@ -524,13 +615,22 @@ unsafe fn translate_call(gps: *mut u8, kind: &str, key: &[u8], space: i32, half:
     if !dict.verbatim_screens.is_empty() && dict.keeps_word(key, &FOCUS.lock(), false) {
         return false;
     }
-    // 玩家取的名字（倉儲區、小隊排程…）、玩家正在遊戲輸入框打的字照原樣畫，不記未翻譯
-    if dict.keeps_player_name(key) || crate::typed::is_typed(key) {
+    // 玩家取的名字（倉儲區、小隊排程…）、玩家正在遊戲輸入框打的字照原樣畫，不記未翻譯；輸入法打的中文（UTF-8）照打的字畫成中文
+    if dict.keeps_player_name(key) {
         return false;
     }
-    let Some(entry) = lookup(dict, key, y) else {
-        note_miss(kind, key);
-        return false;
+    let entry = if crate::typed::is_typed(key) {
+        // 字圖集沒有的字（繁中模式打簡體字）畫成「?」，其餘照畫
+        match crate::typed::chinese(key).and_then(|zh| dict.para_entry(&dict.drawable(zh))) {
+            Some(e) => Found::Rule(Arc::new(e)),
+            None => return false,
+        }
+    } else {
+        let Some(entry) = lookup(dict, key, y) else {
+            note_miss(kind, key);
+            return false;
+        };
+        entry
     };
     // 字典的整句比原文寬（名稱檔的三字名「食人魔」、職位名「女領主」）：整句貼圖開著時照字寬壓窄放進原文寬度；
     // 放不下（或整句貼圖關著）照舊多畫幾格
@@ -786,6 +886,23 @@ pub fn dfhack_translate(text: &[u8], y: i32, center: bool) -> Option<Vec<u8>> {
     };
     let pending = dfhack_place(&entry, text.len(), lead, key.len(), center)?;
     HITS.fetch_add(1, Ordering::Relaxed);
+    let out = pending.shadow.clone();
+    *DH_PENDING.lock() = Some(pending);
+    Some(out)
+}
+
+/// DFHack 輸入框裡的一行字有輸入法打的中文（UTF-8，見 lua/loader.lua 的 install_ime）時，回傳畫中文的影子字串（字圖留給 dfhack_stamp）；
+/// 不是中文、缺字圖或放不進原本的格數時 None，照原樣畫
+pub fn dfhack_typed(text: &[u8]) -> Option<Vec<u8>> {
+    let dict = DICT.load(Ordering::Acquire);
+    if dict.is_null() || !ENABLED.load(Ordering::Relaxed) {
+        return None;
+    }
+    let dict = unsafe { &*dict };
+    let zh = dict.drawable(crate::typed::chinese(text)?);
+    let lead = zh.len() - zh.trim_start_matches(' ').len();
+    let entry = dict.para_entry(&zh[lead..])?;
+    let pending = dfhack_place(&entry, text.len(), lead, text.len() - lead, false)?;
     let out = pending.shadow.clone();
     *DH_PENDING.lock() = Some(pending);
     Some(out)
@@ -1188,10 +1305,12 @@ impl English {
 unsafe extern "C" fn hook_addst(gps: *mut u8, s: *const StdString, just: i32, space: i32) {
     let orig: AddstFn = unsafe { std::mem::transmute(TRAMPOLINES[0].load(Ordering::Acquire)) };
     let key = unsafe { (*s).bytes() };
+    DRAWING.set(s as usize);
     let done = unsafe {
         paragraph_word(gps, s, main_layer, |st| orig(gps, st, just, space))
             || translate_call(gps, "addst", key, space, false, main_layer, |b| orig(gps, &StdString::borrowed(b), just, space))
     };
+    DRAWING.set(0);
     if !done {
         let (x0, y) = unsafe { cursor(gps) };
         unsafe { orig(gps, s, just, space) };
@@ -1348,8 +1467,8 @@ unsafe extern "C" fn hook_string_resize(s: *mut StdString, n: usize, fill: u8) {
     unsafe { orig(s, n, fill) };
 }
 
-/// 搜尋框比對清單項目（std::string::find）：原函式找不到、要找的字是玩家在遊戲輸入框打的字時，照字典把項目翻成中文再比拼音
-/// （見 pinyin.rs）；比中就回傳 0（遊戲只看找不找得到）。這個函式到處都用（音效路徑、狼人的種族名…），
+/// 搜尋框比對清單項目（std::string::find）：原函式找不到、要找的字是玩家在遊戲輸入框打的字時，照字典把項目翻成中文再比拼音，
+/// 或比輸入法打的中文字（見 pinyin.rs）；比中就回傳 0（遊戲只看找不找得到）。這個函式到處都用（音效路徑、狼人的種族名…），
 /// 所以只比從頭找、要找的字在輸入框裡的，其他照原函式的結果
 unsafe extern "C" fn hook_string_find(hay: *const u8, len: usize, pos: usize, needle: *const u8, nlen: usize) -> usize {
     let orig: FindFn = unsafe { std::mem::transmute(TRAMPOLINES[21].load(Ordering::Acquire)) };
@@ -1359,19 +1478,57 @@ unsafe extern "C" fn hook_string_find(hay: *const u8, len: usize, pos: usize, ne
     }
     let needle = unsafe { std::slice::from_raw_parts(needle, nlen) };
     let dict = DICT.load(Ordering::Acquire);
-    if dict.is_null() || !crate::typed::searching(needle) {
+    if dict.is_null() {
         return found;
     }
+    // 遊戲比對前轉過小寫、去過重音（中文的 UTF-8 位元組也被換掉一部分），拿玩家打的原字比
+    let Some(typed) = crate::typed::typed_part(needle) else { return found };
     let hay = unsafe { std::slice::from_raw_parts(hay, len) };
-    if crate::pinyin::search(unsafe { &*dict }, hay, needle) { 0 } else { found }
+    if crate::pinyin::search(unsafe { &*dict }, hay, &typed) { 0 } else { found }
 }
 
-/// 遊戲的輸入框打字（FUN_140c39700）：改完就記下框裡的字，搜尋框接著重新比對清單時認得出是玩家打的字（見 typed::searching）
+/// 遊戲的輸入框打字（FUN_140c39700）：改完就記下框裡的字，搜尋框接著重新比對清單時認得出是玩家打的字（見 typed::typed_part）。
+/// 輸入法打的中文（SDL 送來的 UTF-8）：原函式只在旗標有 0x10 時收 0x80 以上的位元組（庫存的搜尋框是 0xb，一個都不收），
+/// 所以只把 ASCII 交給原函式，搜尋框的中文由這裡整個字接到後面（放不下的字不收），退格把半個字一起刪；命名框（會進存檔）只收 ASCII（見 typed.rs）
 unsafe extern "C" fn hook_text_input(s: *mut StdString, max: i32, flags: u64, keys: *mut u8, text: *const u8) -> u64 {
+    static IME_UI: std::sync::Once = std::sync::Once::new();
+    IME_UI.call_once(crate::typed::show_ime_ui);
     let orig: TextInputFn = unsafe { std::mem::transmute(TRAMPOLINES[22].load(Ordering::Acquire)) };
-    let changed = unsafe { orig(s, max, flags, keys, text) };
+    // SDL_TextInputEvent.text：char[32]，以 0 結尾（遊戲原樣複製到 enabler.last_text_input）
+    let typed: &[u8] = if text.is_null() {
+        &[]
+    } else {
+        let all = unsafe { std::slice::from_raw_parts(text, 32) };
+        &all[..all.iter().position(|&c| c == 0).unwrap_or(32)]
+    };
+    if typed.is_ascii() {
+        let changed = unsafe { orig(s, max, flags, keys, text) };
+        if changed != 0 {
+            let s = unsafe { &mut *s };
+            // 遊戲的退格一次刪一個位元組：搜尋框裡中文字剩下的半個一起刪
+            if crate::typed::is_search_box(s as *mut StdString as usize) {
+                let n = crate::typed::broken_tail(unsafe { s.bytes() });
+                unsafe { s.truncate(s.size - n) };
+            }
+            crate::typed::set_live(unsafe { s.bytes() });
+        }
+        return changed;
+    }
+    let mut buf = [0u8; 33];
+    let ascii = crate::typed::ascii_part(typed);
+    buf[..ascii.len()].copy_from_slice(&ascii);
+    let mut changed = unsafe { orig(s, max, flags, keys, buf.as_ptr()) };
+    let s = unsafe { &mut *s };
+    let search = crate::typed::is_search_box(s as *mut StdString as usize);
+    let room = (max.max(0) as usize).saturating_sub(s.size);
+    let wide = if search { crate::typed::wide_part(typed, room) } else { Vec::new() };
+    let appended = !wide.is_empty() && unsafe { s.append(&wide) };
+    if appended {
+        changed = 1;
+    }
+    crate::typed::note_ime(s as *mut StdString as usize, max, flags, typed.len(), search, room, wide.len(), appended);
     if changed != 0 {
-        crate::typed::set_live(unsafe { (*s).bytes() });
+        crate::typed::set_live(unsafe { s.bytes() });
     }
     changed
 }
@@ -1393,6 +1550,21 @@ unsafe extern "C" fn hook_adv_personality(vs: *mut u8) {
         orig(vs);
         plan_adventurer(vs, &[(0x1398, 78), (0x13b0, 78), (0x13c8, 78)]);
     }
+}
+
+/// 冒險模式「選擇你的命運」畫面（viewscreen_setupadventurest 的建構函式）：天選者、英雄、平凡三框與難度說明，各用 wrap_text 寬 16
+/// 切好放在 +0x1c8、+0x1e0、+0x1f8、+0x210（53.16 FUN_1406350b0 L855783–855850）。53.17 起「平凡」那框的 wrap_text 連同 wrap_lines
+/// 被編譯器內嵌（官網版 0x14064c122 起），wrap_lines 的 hook 攔不到；原函式跑完後替還沒登記的框補登記。位移照 53.16 寫死
+unsafe extern "C" fn hook_adv_fate(vs: *mut u8) -> *mut u8 {
+    let orig: CtorFn = unsafe { std::mem::transmute(TRAMPOLINES[23].load(Ordering::Acquire)) };
+    let vs = unsafe { orig(vs) };
+    let dict = DICT.load(Ordering::Acquire);
+    if !dict.is_null() && ENABLED.load(Ordering::Relaxed) {
+        for offset in [0x1c8, 0x1e0, 0x1f8, 0x210] {
+            unsafe { crate::lines::plan_list(vs as usize + offset, 16, &*dict, |s| note_miss("wrap", s)) };
+        }
+    }
+    vs
 }
 
 /// 冒險模式上方的訊息框（公告與交談紀錄）：遊戲先把每則報告依框寬切成幾行，再一行行用 addst 畫，整句比對只看得到片段，
@@ -1796,7 +1968,7 @@ fn label_tiles(n: usize, entry: &Entry, dict: &Dict, font: impl Fn(u8) -> i32) -
 
 #[cfg(test)]
 mod tests {
-    use super::{button_row, dfhack_place, history_events, label_tiles, lookup, placed_align, tool_tip_groups, wrap_plan, Columns, MissLog, CUTS, MISS_BYTES, MISS_LIMIT};
+    use super::{button_row, dfhack_place, history_events, label_tiles, lookup, placed_align, tool_tip_groups, untruncated, wrap_plan, Columns, MissLog, StdString, CUTS, DRAWING, MISS_BYTES, MISS_LIMIT};
     use crate::dict::Dict;
 
     #[test]
@@ -1810,6 +1982,74 @@ mod tests {
         assert_eq!(text(b"Zebna, Donkey ...").as_deref(), Some("斑驢…"), "截在字與字之間：翻前面那段，接「…」");
         assert_eq!(text(b"Zebna, Mule ..."), None, "前面那段翻不出來照英文");
         assert_eq!(text(b"Zebna, Mu..."), None, "截在字中間不猜");
+    }
+
+    #[test]
+    fn titles_cut_without_dots_read_the_original_from_the_same_object() {
+        // 冒險日誌的標題：+0x20 是原文、+0x60 是截成 58 位元組的副本（FUN_1400cdf30），畫的是副本
+        #[repr(C)]
+        struct Title {
+            pad: [u8; 0x20],
+            full: StdString,
+            pad2: [u8; 0x20],
+            short: StdString,
+        }
+        let full = b"The passing of Urist McTest in Kelral in the early spring of 125".to_vec();
+        let key = &full[..58];
+        let title = Title { pad: [0; 0x20], full: StdString::borrowed(&full), pad2: [0; 0x20], short: StdString::borrowed(key) };
+        let mut d = Dict::default();
+        let chars = "初春壽終正寢年在";
+        assert!(d.set_glyphs(chars, vec![0; chars.chars().count() * 2]));
+        d.load_tsv(&format!("{}\t125年初春Urist McTest在Kelral壽終正寢\n", String::from_utf8_lossy(&full)));
+        DRAWING.set(&title.short as *const StdString as usize);
+        assert_eq!(untruncated(key), Some(full.clone()), "原文開頭和畫的字串相同才算");
+        assert_eq!(lookup(&d, key, 0).map(|f| f.text.clone()).as_deref(), Some("125年初春Urist McTest在Kelral壽終正寢"), "翻原文，放得下就不截");
+        assert_eq!(untruncated(&full[1..59]), None, "開頭不同不算");
+        assert_eq!(untruncated(&full[..57]), None, "只認這兩種截短長度");
+        DRAWING.set(0x10);
+        assert_eq!(untruncated(key), None, "位址沒有對應的記憶體時讀不到、不會當掉");
+        DRAWING.set(0);
+        assert_eq!(untruncated(key), None, "不在 addst 裡不讀");
+    }
+
+    #[test]
+    fn the_original_wins_over_a_rule_that_also_matches_the_cut_string() {
+        // 說故事選單：performance_menu_choicest 的 print_name（+0x08）截成 80 位元組，list_name（+0x28）是原文
+        #[repr(C)]
+        struct Choice {
+            kind: u64,
+            print: StdString,
+            list: StdString,
+        }
+        let full = b"The abduction of the human Dacap Voiceraces from Actedprairies by the goblin Zolak Gemwheels in 125".to_vec();
+        let key = &full[..80];
+        let choice = Choice { kind: 12, print: StdString::borrowed(key), list: StdString::borrowed(&full) };
+        let mut d = Dict::default();
+        let chars = "年綁架遭被從";
+        assert!(d.set_glyphs(chars, vec![0; chars.chars().count() * 2]));
+        d.load_rules_tsv("The abduction of {1} from {2} by {3} in {#4}\t{4}年{1}被{3}從{2}綁架\nThe abduction of {1}\t{1}遭綁架\n");
+        let text = |k: &[u8]| lookup(&d, k, 0).map(|f| f.text.clone());
+        assert_eq!(text(key).as_deref(), Some("the human Dacap Voiceraces from Actedprairies by the goblin Zol遭綁架"), "讀不到原文時照截短的字串比");
+        DRAWING.set(&choice.print as *const StdString as usize);
+        assert!(choice.kind == 12 && untruncated(key) == Some(full.clone()));
+        assert_eq!(text(key).as_deref(), Some("125年the human Dacap Voiceraces被the goblin Zolak Gemwheels從Actedprairies綁架"),
+                   "截短的字串也比得中 The abduction of {{1}}，但讀得到原文就先翻原文");
+        DRAWING.set(0);
+    }
+
+    #[test]
+    fn a_name_and_profession_cut_mid_word_without_the_original_translates() {
+        // 任務分頁「名字, 職業」寫死寬度、遊戲直接截短（截短前的原文沒經過 string_resize，CUTS 裡沒有）：
+        // 職業補成唯一的整句條目（單數、大小寫照打的優先），翻好再截回原來的格數
+        let mut d = Dict::default();
+        let chars = "斑驢石工雕匠鑿切，…";
+        assert!(d.set_glyphs(chars, vec![0; chars.chars().count() * 2]));
+        d.load_tsv("Zebna\t斑驢\nStonecutter\t石工\nStonecutters\t鑿石工\nstonecutting\t切石\nStonecrafter\t石雕匠\n");
+        d.load_rules_tsv("{1}, {@2}\t{1}，{2}\n");
+        let text = |k: &[u8]| lookup(&d, k, 0).map(|f| f.text.clone());
+        assert_eq!(text(b"Zebna, Stonecutter").as_deref(), Some("斑驢，石工"), "沒截短的照句型");
+        assert_eq!(text(b"Zebna, Stonecu...").as_deref(), Some("斑驢，石工"), "Stonecu 補成 Stonecutter（複數、小寫的技能名不算）");
+        assert_eq!(text(b"Zebna, Stonec..."), None, "Stonecutter、Stonecrafter 都對得上，不猜");
     }
 
     #[test]

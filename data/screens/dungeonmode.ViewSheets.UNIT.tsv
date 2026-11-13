@@ -1,0 +1,4 @@
+en	zh-Hant	zh-Hans	align	row	note
+herself	欲絕	欲绝			冒險模式人物頁（同一個 FUN_14014ef90，焦點 dungeonmode/ViewSheets/UNIT）狀態「Beside herself with grief!」的中間段：前後兩段是 fort_1 的「悲痛」與「 難以自持！」，這裡不畫代名詞、譯成「欲絕」，拼成「悲痛欲絕 難以自持！」；全域的 herself（她自己）給 sentences_mannerisms 的 {@n} 用，不能改
+himself	欲絕	欲绝			同上（男性）
+itself	欲絕	欲绝			同上（沒有性別的生物）

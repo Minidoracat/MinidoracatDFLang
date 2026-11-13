@@ -39,7 +39,8 @@ pub fn load_fonts(paths: &[&str]) -> Result<Vec<Font>, String> {
         .iter()
         .map(|p| {
             let data = std::fs::read(p).map_err(|e| format!("{p}: {e}"))?;
-            FontRef::new(&data).map_err(|e| format!("{p}: {e}"))?;
+            // from_index：.ttc 字型集取第一套（模組字典補字用的系統字型），單一字型檔也收
+            FontRef::from_index(&data, 0).map_err(|e| format!("{p}: {e}"))?;
             Ok(Font(data))
         })
         .collect()
@@ -102,7 +103,7 @@ impl<'a> Glyphs<'a> {
     /// 指定字身像素（吉祥物標籤的作者名用較小的字）。
     pub fn with_px(fonts: &'a [Font], px: f32) -> Result<Self, String> {
         let size = Size::new(px);
-        let refs: Vec<FontRef> = fonts.iter().map(|f| FontRef::new(&f.0).map_err(|e| e.to_string())).collect::<Result<_, _>>()?;
+        let refs: Vec<FontRef> = fonts.iter().map(|f| FontRef::from_index(&f.0, 0).map_err(|e| e.to_string())).collect::<Result<_, _>>()?;
         let outlines: Vec<_> = refs.iter().map(|f| f.outline_glyphs()).collect();
         let hinting = outlines
             .iter()

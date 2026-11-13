@@ -1,4 +1,12 @@
 en	zh-Hant	zh-Hans	align	note
+Milk {1}, Stray {%2}	擠流浪{2}{1}的奶	挤流浪{2}{1}的奶		FUN_140d032b0 L1954215-1954225 工作名稱＋有名字的流浪動物（Milk Bessie, Stray Cow）：要排在下一條 {*1}, Stray {@2} 前面（否則「Milk Bessie」被當成名字，畫成「Milk Bessie，流浪牛」），所以和其他工作名稱（jobs.tsv 的 Milk {1}, {%2} 等）分開寫在這裡
+Shear {1}, Stray {%2}	剪流浪{2}{1}的毛	剪流浪{2}{1}的毛		同上，剪毛（FUN_140d032b0 L1955624-1955634）
+Train {1}, Stray {@2}	訓練{1}，流浪{2}	训练{1}，流浪{2}		同上，訓練（FUN_140d032b0 L1955788-1955798）；用 {@2} 只收生物名：{%2} 會收「Dog for war」譯成「狗為戰爭」，Train … to hunt／for war 要留給 jobs.tsv 的 Train {1} for war
+Tame {1}, Stray {%2}	馴服{1}，流浪{2}	驯服{1}，流浪{2}		同上，馴服（FUN_140d032b0 L1955038-1955048）
+Unchain {1}, Stray {%2}	為{1}，流浪{2}鬆綁	给{1}，流浪{2}松绑		同上，鬆綁（FUN_140d032b0 L1955080-1955091）
+Release {1}, Stray {%2}	放出{1}，流浪{2}	放出{1}，流浪{2}		同上，放出（FUN_140d032b0 L1955104-1955114）
+Handle {1}, Stray {%2}	搬運{1}，流浪{2}	搬运{1}，流浪{2}		同上，搬運（FUN_140d032b0 L1955136-1955146）
+Cage {1}, Stray {%2}	{1}，流浪{2}入籠	{1}，流浪{2}入笼		同上，關進籠子（FUN_140d032b0 L1955156-1955166）；術語例外：cage；動詞「關進籠子」，不是物品籠子
 {*1}, Stray {@2}	{1}，流浪{2}	{1}，流浪{2}		FUN_141330c30 名字, 職業：有名字的流浪動物（The dwarves have given a resident Stray Cat the name … 之後，Fluffy, Stray Cat has adopted …）；Stray 由 FUN_14132f980 L2537555 加在種族名前，{@2} 收字典裡的生物名；名字用 {*1}，同 professions.tsv 的人名＋貴族職位
 The army is commanded by {%1}.	這支軍隊由{1}率領。	这支军队由{1}率领。		FUN_140110460 L173645 圍城公告的指揮官段落單獨一段：彈出框整則（ann_01 的 {%1}[B]… 句型）比不到時，段落框在 [B] 處分段逐段查；三段以上（開頭＋指揮官＋兵種＋隨行）的整則句型的 {%1} 要跨 [B]，佔位不跨句，所以靠這三條逐段翻
 Beware their {%1}!	當心他們的{1}！	当心他们的{1}！		FUN_140110460 L173749 圍城公告兵種段（單獨一段）；{1} 兵種片段（ann_01 的 heavily-armored／elite／mounted {%1}，職業複數在 strings/ann_12）

@@ -1,0 +1,7 @@
+en	zh-Hant	zh-Hans	align	note
+block	磚塊	砖块		exe 物品名 0x01756384（單數，複數 blocks 在 names_items_exe.tsv）；建造材料清單、物品清單裡只有一塊時畫成「granite block」。沒有這條時大小寫退回查到戰鬥通知的 Block（格擋），變成「花崗岩格擋」
+A dusting of ash	零星散落的木灰	零星散落的木灰		FUN_140406860 L521571 地圖懸停清單：地上的沾染物；ash 是燒炭爐產的灰（FUN_140d684e0 內建材料 ASH），句型 A dusting of {%1} 會把 ash 查成樹種「梣樹」，整句寫出
+A small pile of ash	一小堆木灰	一小堆木灰		FUN_140406860 L521575 同上
+A pile of ash	一堆木灰	一堆木灰		FUN_140406860 L521580 同上
+It is spattered with ash.	表面濺有木灰。	表面溅有木灰。		FUN_140c75000 L1860227 物品說明的沾染物（數量少於 100）；同上，句型 It is spattered with {%1}. 會查成「梣樹」
+It is coated with ash.	表面覆有一層木灰。	表面覆有一层木灰。		FUN_140c75000 L1860227 物品說明的沾染物（數量 100 以上）；同上

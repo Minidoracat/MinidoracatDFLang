@@ -1,0 +1,30 @@
+en	zh-Hant	zh-Hans	align	note
+Rough {@1} Block {@2}	粗糙{1}磚{2}	粗糙{1}砖{2}		FUN_140e7d330 L2174464 地圖游標地形名稱：用石塊（boulder）蓋的建造物，FUN_140a46f20 L1496904 在材料前加 rough、後接 block，再把每個字改大寫（實機紀錄：Rough Lignite Block Wall）；ui_19.tsv 的 {@1} Block {@2} 收不到 Rough Lignite
+{1}, x♂x	{1}，x♂x	{1}，x♂x		FUN_141330c30 L2538259-2538276 地圖懸停清單、單位清單的「名字, 性別」：閹割過的雄性（unit+0x118 旗標 0x10000000）性別符號前後加 x；同 names.tsv 的 {1}, ♂
+{1}, x♀x	{1}，x♀x	{1}，x♀x		同上，雌性
+live {@1}	活{1}	活{1}		FUN_140a82c10 L1533161 物品類型名：活的小動物（VERMIN）＝ live ＋生物名（工作指令條件、倉儲區、物品清單）；沒有生物時是 small live animal（已有整句）；{@1} 只收字典裡的生物名，免得套到 live 開頭的句子
+Make {*1}'s {%2}	製作{1}的{2}	制作{1}的{2}		FUN_140d032b0 工作名稱：材料是歷史人物身上的生物材料（Make Urist McTest's dwarf bone crafts）；jobs 的 Make {@1} {@2} 收不到人名開頭的材料，沒有這條時下一條的 {*1} 會把 Make 一起吞進人名
+{*1}'s {@2} blood	{1}的{2}血液	{1}的{2}血液	inner	FUN_1414d1920 L2832103-2832112 材料名：歷史人物身上的生物材料前面接「人物名's 」（Urist McTest's dwarf blood），用在地上的沾染物（A pool of {%1}）、物品說明（It is spattered with {%1}.）、蒸氣（{%1} vapor）；{@2} 是生物名（材料前綴），尾字逐一寫出。只套在佔位裡（inner）：整句套會搶走實驗體名「Dusnu's eye fat」（zz_legends_04 的 {1}'s eye，應為「Dusnu之眼脂肪」）；所以工坊材料選單單獨畫出的「Urist McTest's dwarf leather」仍照英文。骨頭、軟骨、鱗片在 zz_names_items.tsv
+{*1}'s {@2} frozen blood	{1}的{2}冰凍的血液	{1}的{2}冰冻的血液	inner	同上
+{*1}'s {@2} boiling blood	{1}的{2}沸騰的血液	{1}的{2}沸腾的血液	inner	同上
+{*1}'s {@2} ichor	{1}的{2}體液	{1}的{2}体液	inner	同上
+{*1}'s {@2} goo	{1}的{2}稠液	{1}的{2}稠液	inner	同上
+{*1}'s {@2} pus	{1}的{2}膿液	{1}的{2}脓液	inner	同上
+{*1}'s {@2} slime	{1}的{2}黏液	{1}的{2}黏液	inner	同上
+{*1}'s {@2} sweat	{1}的{2}汗水	{1}的{2}汗水	inner	同上
+{*1}'s {@2} tears	{1}的{2}眼淚	{1}的{2}眼泪	inner	同上
+{*1}'s {@2} fat	{1}的{2}脂肪	{1}的{2}脂肪	inner	同上
+{*1}'s {@2} grease	{1}的{2}油脂	{1}的{2}油脂	inner	同上
+{*1}'s {@2} tallow	{1}的{2}獸脂	{1}的{2}兽脂	inner	同上
+{*1}'s {@2} melted tallow	{1}的{2}融化獸脂	{1}的{2}融化兽脂	inner	同上
+{*1}'s {@2} leather	{1}的{2}皮革	{1}的{2}皮革	inner	同上
+{*1}'s {@2} hair	{1}的{2}毛髮	{1}的{2}毛发	inner	同上
+{*1}'s {@2} chitin	{1}的{2}幾丁質	{1}的{2}几丁质	inner	同上
+{*1}'s {@2} shell	{1}的{2}外殼	{1}的{2}外壳	inner	同上
+{*1}'s {@2} horn	{1}的{2}角	{1}的{2}角	inner	同上
+{*1}'s {@2} hoof	{1}的{2}蹄	{1}的{2}蹄	inner	同上
+{*1}'s {@2} tooth	{1}的{2}牙齒	{1}的{2}牙齿	inner	同上
+{*1}'s {@2} silk	{1}的{2}絲	{1}的{2}丝	inner	同上
+{*1}'s {@2} skin	{1}的{2}皮膚	{1}的{2}皮肤	inner	同上
+{*1}'s {@2} sinew	{1}的{2}肌腱	{1}的{2}肌腱	inner	同上
+{*1}'s {@2} feather	{1}的{2}羽毛	{1}的{2}羽毛	inner	同上

@@ -1,0 +1,3 @@
+en	zh-Hant	zh-Hans	align	row	note
+ash	木灰	木灰			庫存畫面（焦點 dwarfmode/Stocks，DFHack Gui.cpp L698）的物品名：同 dwarfmode.Info.WORK_ORDERS 的 ash；寬度例外：原文 3 格、譯文 4 格，和改前的全域譯文「梣樹」同寬，尚待實機確認右邊有空位
+charcoal	木炭	木炭			庫存畫面的物品名：同 dwarfmode.Info.WORK_ORDERS 的 charcoal

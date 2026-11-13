@@ -1,6 +1,7 @@
 //! 拼音搜尋：遊戲與 DFHack 視窗的搜尋框打拼音也找得到顯示成中文的項目（「鐵礦」打 tiekuang、tk、tiek、tkuang 都中）。
 //! 讀音表 engine/pinyin.tsv 由 scripts/make_pinyin.py 從 Unicode Unihan 產生（多音字收全部讀音），編進 DLL。
 //! 搜尋框比對的是英文（遊戲先轉小寫、去掉重音），所以先照字典把清單項目翻成中文再比讀音；譯文記在快取裡。
+//! 用輸入法打的中文字（見 typed.rs）不比讀音，直接找譯文裡有沒有這幾個字（繁中模式比繁中譯文，簡中比簡中）。
 
 use std::collections::HashMap;
 use std::sync::mpsc::{channel, Sender};
@@ -95,6 +96,30 @@ pub fn matches(zh: &str, typed: &[u8]) -> bool {
     false
 }
 
+/// 玩家打的字怎麼比：輸入法打的中文（合法 UTF-8、有非 ASCII 的字）找譯文裡有沒有這段字（英文字母大小寫不論），其他當拼音比讀音
+enum Query {
+    Text(Vec<u8>),
+    Pinyin(Vec<u8>),
+}
+
+impl Query {
+    fn of(typed: &[u8]) -> Option<Query> {
+        let typed = typed.trim_ascii();
+        match crate::typed::chinese(typed) {
+            Some(_) => Some(Query::Text(typed.to_vec())),
+            None if typed.is_ascii() => normalize(typed).map(Query::Pinyin),
+            None => None,
+        }
+    }
+
+    fn hits(&self, zh: &str) -> bool {
+        match self {
+            Query::Pinyin(t) => matches(zh, t),
+            Query::Text(t) => zh.as_bytes().windows(t.len()).any(|w| w.eq_ignore_ascii_case(t)),
+        }
+    }
+}
+
 /// 清單項目的譯文：翻好了（翻不出來是 None），或交給背景執行緒還沒翻好
 enum Cached {
     Done(Option<Box<str>>),
@@ -143,9 +168,10 @@ fn spawn_worker() -> Sender<(usize, Vec<u8>)> {
     tx
 }
 
-/// 清單項目的英文 english 照字典翻成中文後，讀音合不合玩家打的字 typed。第一次比一個項目要翻譯，之後查快取
+/// 清單項目的英文 english 照字典翻成中文後，合不合玩家打的字 typed（拼音比讀音、輸入法打的中文比字，見 Query）。
+/// 第一次比一個項目要翻譯，之後查快取
 pub fn search(dict: &Dict, english: &[u8], typed: &[u8]) -> bool {
-    let Some(typed) = normalize(typed) else { return false };
+    let Some(query) = Query::of(typed) else { return false };
     let key = english.trim_ascii();
     if key.is_empty() || key.len() > 512 || !key.iter().any(u8::is_ascii_alphabetic) {
         return false;
@@ -157,7 +183,7 @@ pub fn search(dict: &Dict, english: &[u8], typed: &[u8]) -> bool {
         cache.dict = id;
     }
     match cache.map.get(key) {
-        Some(Cached::Done(zh)) => return zh.as_deref().is_some_and(|zh| matches(zh, &typed)),
+        Some(Cached::Done(zh)) => return zh.as_deref().is_some_and(|zh| query.hits(zh)),
         Some(Cached::Pending) => return false,
         None => {}
     }
@@ -176,7 +202,7 @@ pub fn search(dict: &Dict, english: &[u8], typed: &[u8]) -> bool {
         return false;
     }
     let zh = translated(dict, key);
-    let hit = zh.as_deref().is_some_and(|zh| matches(zh, &typed));
+    let hit = zh.as_deref().is_some_and(|zh| query.hits(zh));
     cache.map.insert(key.to_vec(), Cached::Done(zh));
     cache.last = Instant::now();
     hit
@@ -200,5 +226,18 @@ mod tests {
         assert!(!matches("鐵 礦", &t("tk")), "不跨過中文以外的字元");
         assert_eq!(normalize(b"Tie-kuang"), Some(b"tiekuang".to_vec()), "大小寫、連字號不論");
         assert_eq!(normalize(b"tk2"), None, "有數字就不是拼音");
+    }
+
+    #[test]
+    fn chinese_typed_with_an_ime_matches_the_translation_text() {
+        let q = |s: &str| Query::of(s.as_bytes()).unwrap();
+        assert!(q("鐵礦").hits("巨型鐵礦石"), "譯文含打的字");
+        assert!(!q("鐵礦").hits("铁矿"), "繁中模式打繁體比繁中譯文，不混簡體");
+        assert!(q("铁矿").hits("铁矿"), "簡中同理");
+        assert!(!q("礦鐵").hits("鐵礦"), "字序要對");
+        assert!(q(" 鐵 ").hits("鐵礦"), "頭尾空白不論");
+        assert!(q("ab鐵").hits("AB鐵礦"), "混打英文字母大小寫不論");
+        assert!(q("tk").hits("鐵礦"), "英文照舊比拼音");
+        assert!(Query::of(&[0xe9, 0x90]).is_none(), "不完整的 UTF-8 不比");
     }
 }

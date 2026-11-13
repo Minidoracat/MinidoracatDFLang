@@ -7,13 +7,21 @@
 玩得再久也不會越吃越多記憶體：引擎的快取都設了上限，滿了就清；整句貼圖畫字用的貼圖最多 2,048 張，用不到的會釋放。遊戲中切換語言或粗體字時，用過的那份會留著直接重用，來回切換也不會一直增加。
 
 - 工作坊：[繁體／簡體中文](https://steamcommunity.com/sharedfiles/filedetails/?id=3820630135)（原本的[簡體中文項目](https://steamcommunity.com/sharedfiles/filedetails/?id=3820630318)已合併進來，停在 0.4.0）
-- 目前版本 0.5.8（Dwarf Fortress 53.16＋DFHack 53.16-r3），各版本的變更見 [CHANGELOG.md](CHANGELOG.md)
+- 目前版本 0.5.9（Dwarf Fortress 53.17＋DFHack 53.17-r1），各版本的變更見 [CHANGELOG.md](CHANGELOG.md)
 
 ## 安裝
 
 1. Steam 安裝 [DFHack](https://store.steampowered.com/app/2346660/)（免費）。
 2. 訂閱本 MOD，正常啟動遊戲，標題畫面就是中文。建立新世界時不用勾選本 MOD。
 3. 第一次啟動時照 Steam 的介面語言選繁中或簡中（Steam 不是中文時看 Windows 的顯示語言與地區格式，都不是中文時用繁中）；想換就在設定視窗切換，之後會記住。
+
+官網免費版（Classic）與 Itch 版沒有工作坊，改成手動安裝：
+
+1. 從 [DFHack 的 GitHub Releases](https://github.com/DFHack/dfhack/releases) 下載和遊戲版本相同的 `dfhack-<版本>-Windows-64bit.zip`，在檔案內容勾「解除封鎖」，把裡面所有檔案解到遊戲資料夾（`hack` 和 `data` 同一層）。
+2. 從[本專案的 Releases](https://github.com/Minidoracat/MinidoracatDFLang/releases) 下載 `MinidoracatDFLang-<版本>.zip`，解開後把 `MinidoracatDFLang` 資料夾放進 `%APPDATA%\Bay 12 Games\Dwarf Fortress\mods\`；遊戲資料夾裡有 `prefs\portable.txt`（可攜模式）時放進遊戲資料夾的 `mods\`。不確定是哪一個時，在 DFHack 主控台打 `:lua print(dfhack.filesystem.getBaseDir())`，放進印出位置底下的 `mods\`。
+3. 啟動遊戲，標題畫面就是中文。語言照 Windows 的顯示語言與地區格式選。更新時刪掉舊資料夾、放新的。
+
+免費版預設是 ASCII 畫面（Steam 版在設定開「Use Classic ASCII glyphs」也一樣）：中文照常顯示，但部分分頁標籤上的字會略偏左，標題畫面沒有吉祥物，「整句貼圖」不能關。
 
 ## 翻譯範圍
 
@@ -25,7 +33,7 @@
 - 世界生成的名稱（照遊戲的組字規則組成中文）、神造材料與神話物質。
 - DFHack 的控制面板、launcher、快速入門指南、overlay 與常用工具視窗。
 
-共有整句 55,525 條、句型 27,609 條、依畫面譯文 649 條、名稱字表 3,301 條、音譯表 327 個音節。
+共有整句 55,732 條、句型 28,073 條、依畫面譯文 701 條、名稱字表 3,301 條、音譯表 327 個音節。
 
 照原文的部分：玩家自己輸入的文字、玩家取的名字、第三方模組的名稱與說明、DFHack 的工具名與指令、主控台輸出；配樂曲名預設照原文，可以在設定視窗改成中文。矮人語等原生語言的名字預設音譯成中文，可以在設定視窗改回原文。沒翻到的字維持英文，不影響遊戲。
 
@@ -48,12 +56,20 @@
 
 設定改了立即生效，不用重開遊戲，畫面上已經排好的長文（彈出視窗、人物頁的性格、傳說頁）也跟著換。只有在語言選「其他翻譯 MOD」（改用 DFI18n、DFCN）時要重開，視窗會以黃字提示。遊戲正在讀取時，以及打開過「建立新世界」的設定畫面之後，換語言與粗體字可能要等載入或建立世界後才自動切換，其他設定照樣立即生效，視窗同樣以黃字提示。DFHack 主控台的 `dflang` 指令也能改這些設定（`dflang` 不加參數看用法）。快捷鍵只在遊戲執行時註冊，想換鍵用 DFHack 的 `gui/keybinds`；標題畫面的吉祥物與提示可以用 `gui/overlay` 移動或關掉（`dflang_zh_hant.mascot`、`dflang_zh_hant.hint`）。
 
-## 搜尋框打拼音
+## 搜尋框打拼音或中文
 
 遊戲的搜尋框（庫存、傳說清單…）與 DFHack 視窗的清單搜尋，除了英文，也可以打中文名稱的拼音：全拼（`tiekuang`）、首字母（`tk`）或混著打（`tiek`）都找得到「鐵礦」，多音字每個讀音都算，ü 打 v 或 u 都可以。繁體、簡體都能用。
 
-- 用英文輸入狀態打：輸入法打出的中文字，遊戲的搜尋框收不到。
-- 傳說模式這種上萬項的清單，第一次打字時拼音只比得到一部分，兩三秒後再打一個字就完整。
+也可以直接用輸入法（注音、拼音…）打中文字：搜尋框裡顯示你打的字，打「鐵礦」就找得到名稱裡有「鐵礦」的項目，按一次退格刪一個字。
+
+- 語言選繁體中文時打繁體字，選簡體中文時打簡體字；打另一種字找不到。
+- 只有搜尋框收中文字。倉儲區、小隊、暱稱、存檔名這些取名的框照舊只收英文：名字會存進存檔，沒裝本 MOD 時中文會變成亂碼。
+- 傳說模式這種上萬項的清單，第一次打字時只比得到一部分，兩三秒後再打一個字就完整。
+- DFHack 控制面板的工具清單只比英文的工具名（DFHack 自己的篩選只看指令名稱），打中文或拼音找不到；它的「偏好設定」分頁可以。
+
+## 其他模組的中文
+
+其他模組新增的生物、物品、材料，字典裡沒有，畫面上照英文。模組作者或玩家可以在那個模組裡放一份字典（`dflang/zh-Hant/strings.tsv`、`dflang/zh-Hans/strings.tsv`，一行一條「原文、Tab、譯文」），裝了本 MOD 的玩家就會看到中文。寫法與檢查方式見 [docs/mod-dictionaries.md](docs/mod-dictionaries.md)。
 
 ## 和其他翻譯 MOD 一起裝時：本 MOD 優先讓位
 
@@ -156,7 +172,8 @@ uv run scripts/dev_game.py down               # 關遊戲、還原 mods/ 與設�
 uv run scripts/publish_workshop.py [--screenshots] --yes             # 上傳內容、封面、繁簡兩種語系的標題與說明、更新說明
 uv run scripts/publish_workshop.py --description-only [--screenshots] --yes   # 只換說明（加 --screenshots 連截圖一起換），不傳內容、不算發布新版
 uv run scripts/publish_workshop.py --retire --yes                    # 已合併的簡中項目：換成「已合併、請改訂閱」的標題與說明，設成不公開列出
-git tag -a v0.5.8 -m "0.5.8" && git push origin v0.5.8                         # 每次發布都打 tag，版本號照 workshop.json
+git tag -a v0.5.9 -m "0.5.9" && git push origin v0.5.9                         # 每次發布都打 tag，版本號照 workshop.json
+cd dist && zip -r MinidoracatDFLang-0.5.9.zip MinidoracatDFLang && gh release create v0.5.9 MinidoracatDFLang-0.5.9.zip --title 0.5.9 --notes-file <更新說明>   # 官網免費版與 Itch 版的下載管道
 ```
 
 ## 授權

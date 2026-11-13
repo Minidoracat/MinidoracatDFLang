@@ -67,6 +67,7 @@ pub unsafe extern "C" fn luaopen_dflang(l: lua::State) -> c_int {
         lua::set_fn(l, c"set_titles", set_titles);
         lua::set_fn(l, c"set_player_names", set_player_names);
         lua::set_fn(l, c"set_typed_fields", set_typed_fields);
+        lua::set_fn(l, c"set_search_fields", set_search_fields);
         lua::set_fn(l, c"set_typed_text", set_typed_text);
         lua::set_fn(l, c"render_buttons", render_buttons);
         lua::set_fn(l, c"set_tile_swaps", set_tile_swaps);
@@ -98,6 +99,7 @@ pub unsafe extern "C" fn luaopen_dflang(l: lua::State) -> c_int {
         lua::set_fn(l, c"log_misses", log_misses);
         lua::set_fn(l, c"update_texpos", update_texpos);
         lua::set_fn(l, c"dh_translate", dh_translate);
+        lua::set_fn(l, c"dh_typed", dh_typed);
         lua::set_fn(l, c"dh_stamp", dh_stamp);
         lua::set_fn(l, c"dh_wrap", dh_wrap);
         lua::set_fn(l, c"dh_button", dh_button);
@@ -107,6 +109,7 @@ pub unsafe extern "C" fn luaopen_dflang(l: lua::State) -> c_int {
         lua::set_fn(l, c"screen_text", screen_text);
         lua::set_fn(l, c"dh_plain", dh_plain);
         lua::set_fn(l, c"english_at", english_at);
+        lua::set_fn(l, c"ime_dump", ime_dump);
         lua::set_fn(l, c"system_lang", system_lang);
     }
     1
@@ -125,6 +128,12 @@ unsafe extern "C" fn system_lang(l: lua::State) -> c_int {
 /// overlay_dump()：除錯，整句貼圖的耗時與本幀記下的字（見 overlay::dump）
 unsafe extern "C" fn overlay_dump(l: lua::State) -> c_int {
     unsafe { lua::push_str(l, &overlay::dump()) };
+    1
+}
+
+/// ime_dump()：除錯，最後一次收到輸入法的字時打字函式的參數與處理結果、搜尋框的位址（見 typed::ime_dump）
+unsafe extern "C" fn ime_dump(l: lua::State) -> c_int {
+    unsafe { lua::push_str(l, &typed::ime_dump()) };
     1
 }
 
@@ -201,6 +210,17 @@ unsafe extern "C" fn dh_translate(l: lua::State) -> c_int {
         let y = lua::arg_int(l, 2).unwrap_or(-1) as i32;
         let center = lua::arg_int(l, 3).is_some_and(|c| c != 0);
         match lua::arg_bytes(l, 1).and_then(|text| hooks::dfhack_translate(text, y, center)) {
+            Some(shadow) => lua::push_bytes(l, &shadow),
+            None => lua::push_nil(l),
+        }
+        1
+    }
+}
+
+/// dh_typed(text)：DFHack 輸入框的一行字有輸入法打的中文時回傳畫中文的影子字串，否則 nil（見 hooks::dfhack_typed）。
+unsafe extern "C" fn dh_typed(l: lua::State) -> c_int {
+    unsafe {
+        match lua::arg_bytes(l, 1).and_then(hooks::dfhack_typed) {
             Some(shadow) => lua::push_bytes(l, &shadow),
             None => lua::push_nil(l),
         }
@@ -452,12 +472,27 @@ unsafe extern "C" fn set_typed_fields(l: lua::State) -> c_int {
     }
 }
 
-/// set_typed_text(字)：畫面物件裡的輸入框（傳說清單的篩選）現在的字，空字串是沒有（見 typed.rs）
+/// set_search_fields(位址, cur_textbox 指標的位址, textbox 的 str 位移, textbox_type 位移)：搜尋／篩選框（輸入法打的中文只收進這些框，見 typed.rs）。
+/// 位址是以空白分隔的十進位數字（main_interface 裡名字含 filter、search 的欄位）；後三個找不到時給 0。回傳收下幾個
+unsafe extern "C" fn set_search_fields(l: lua::State) -> c_int {
+    unsafe {
+        let Some(list) = lua::arg_str(l, 1) else { return fail(l, "set_search_fields: expects a string") };
+        let addrs: Option<Vec<usize>> = list.split_ascii_whitespace().map(|a| a.parse().ok().filter(|&a| a != 0)).collect();
+        let Some(addrs) = addrs else { return fail(l, "set_search_fields: addresses must be non-zero integers") };
+        let textbox = [2, 3, 4].map(|i| lua::arg_int(l, i).filter(|&v| v > 0).unwrap_or(0) as usize);
+        lua::push_int(l, addrs.len() as i64);
+        typed::set_search_fields(addrs, textbox);
+        1
+    }
+}
+
+/// set_typed_text(字[, 位址])：畫面物件裡的輸入框（傳說清單的篩選）現在的字，空字串是沒有；位址是它的 std::string，不在傳說畫面時 0（見 typed.rs）
 unsafe extern "C" fn set_typed_text(l: lua::State) -> c_int {
     unsafe {
         match lua::arg_bytes(l, 1) {
             Some(text) => {
                 typed::set_extra(text);
+                typed::set_legends_field(lua::arg_int(l, 2).filter(|&v| v > 0).unwrap_or(0) as usize);
                 0
             }
             None => fail(l, "set_typed_text: expects a string"),

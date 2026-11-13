@@ -37,8 +37,8 @@ Wallowing in misery!	深陷苦楚！	深陷苦楚！		FUN_14014ef90 14015cc26-14
 Truly mortified!	羞愧到無地自容！	羞愧到无地自容！		FUN_14014ef90 14015cc26-14015d217 人物頁名字下方的狀態：情緒崩潰；與 Anguished!、Distressed!、In existential crisis! 同一組
 Shaken to the core!	內心大受動搖！	内心大受动摇！		FUN_14014ef90 14015cc26-14015d217 人物頁名字下方的狀態：情緒崩潰；與 Anguished!、Distressed!、In existential crisis! 同一組
 Emotionally overloaded!	情緒不堪負荷！	情绪不堪负荷！		FUN_14014ef90 14015cc26-14015d217 人物頁名字下方的狀態：情緒崩潰；與 Anguished!、Distressed!、In existential crisis! 同一組
-Beside 	悲痛得	悲痛得		FUN_14014ef90 14015cd52 人物頁狀態「Beside herself with grief!」分三段畫：本段＋herself/himself/itself（sentences_mannerisms：她自己）＋ with grief!；拼成「悲痛得她自己 難以自持！」
- with grief!	 難以自持！	 难以自持！		FUN_14014ef90 14015ce7c 同上第三段；開頭空白照原文；拼成「悲痛得她自己 難以自持！」
+Beside 	悲痛	悲痛		FUN_14014ef90 14015cd52 人物頁狀態「Beside herself with grief!」分三段畫：本段＋herself/himself/itself＋ with grief!；人物頁（data/screens 的 dwarfmode.ViewSheets.UNIT、dungeonmode.ViewSheets.UNIT）把中間的代名詞譯成「欲絕」，拼成「悲痛欲絕 難以自持！」；「悲痛欲絕」8 格放不下本段 7 格，所以拆在兩段
+ with grief!	 難以自持！	 难以自持！		FUN_14014ef90 14015ce7c 同上第三段；開頭空白照原文（verify_mod 要求，寫不成「悲痛得不能自已」），所以前兩段寫成四字詞「悲痛欲絕」，空白當成兩個四字詞之間的停頓
 Pet of 	飼主：	主人：		FUN_14014ef90 14015d2ac 人物頁：寵物的主人，後面另畫主人名字或 Somebody；7 格放不下「寵物主人：」，寫成「飼主：」；術語例外：pet
 Creator of 	打造神器：	打造神器：		FUN_14014ef90 14015d3b0 人物頁：曾有奇異心境（flags1 had_mood），後面另畫神器名
 Cannot expel or send away:	無法驅逐或送走：	无法驱逐或送走：		FUN_14014ef90 14015d78a 人物頁驅逐：不能驅逐時的標題，下面列原因
