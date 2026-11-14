@@ -44,23 +44,23 @@ def latest() -> dict[str, str]:
     return {"df": f"{major}.{minor}", "steam_build": str(steam), "dfhack": json.loads(fetch(DFHACK))["tag_name"]}
 
 
-def check_patterns(version: str) -> str:
-    """下載官網免費版，回傳 make_patterns.py --check 的輸出。"""
+def check_patterns(version: str) -> tuple[bool, str]:
+    """下載官網免費版，回傳 make_patterns.py --check 是否通過與它的輸出。"""
     url = f"{BAY12}df_{version.replace('.', '_')}_win.zip"
     with tempfile.TemporaryDirectory() as tmp:
         with zipfile.ZipFile(io.BytesIO(fetch(url))) as z:
             z.extract("Dwarf Fortress.exe", tmp)
         r = subprocess.run(["uv", "run", "scripts/make_patterns.py", "--check"], cwd=ROOT, capture_output=True,
                            text=True, encoding="utf-8", env={**os.environ, "DF_PATH": tmp})
-    return (r.stdout + r.stderr).strip() or f"make_patterns.py 沒有輸出（結束碼 {r.returncode}）"
+    return r.returncode == 0, (r.stdout + r.stderr).strip()  # uv 的安裝訊息在 stderr，通過與否只看結束碼
 
 
 def issues(known: dict[str, str], now: dict[str, str]) -> list[tuple[str, str]]:
     out = []
     if now["df"] != known["df"]:
-        result = check_patterns(now["df"])
-        verdict = ("特徵碼全部命中：引擎大概還能用，要補的是新文字。" if result.endswith("patterns OK")
-                   else "**有特徵碼沒命中：玩家更新遊戲後中文化可能失效，要優先處理。**")
+        ok, result = check_patterns(now["df"])
+        verdict = ("特徵碼全部命中：引擎大概還能用，要補的是新文字。" if ok
+                   else "**檢查沒通過：有特徵碼沒命中（玩家更新遊戲後中文化會失效，要優先處理），或檢查本身出錯，看上面的輸出。**")
         out.append((f"遊戲更新：Dwarf Fortress {now['df']}",
                     f"官網免費版從 {known['df']} 更新到 {now['df']}（{BAY12}）。\n\n"
                     f"用免費版的執行檔驗引擎的特徵碼（Steam 版是另一個執行檔，還要另外驗）：\n\n"
