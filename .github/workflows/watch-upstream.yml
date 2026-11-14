@@ -1,0 +1,20 @@
+name: 追蹤遊戲與 DFHack 更新
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv run scripts/watch_upstream.py --open
+        env:
+          GH_TOKEN: ${{ github.token }}

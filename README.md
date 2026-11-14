@@ -132,6 +132,7 @@ scripts/
   dev-play.cmd             啟動器（雙擊）：建置、開遊戲，遊戲關掉後自動還原
   publish_workshop.py      上傳工作坊（預設只檢查；標題與說明分繁簡兩種語系）
   make_patterns.py         產生／驗證特徵碼
+  watch_upstream.py        查遊戲與 DFHack 有沒有新版本，有就開 Issue（GitHub Actions 每 6 小時跑；已適配的版本記在 upstream.json）
   make_pinyin.py           從 Unicode Unihan 產生拼音讀音表 engine/pinyin.tsv（譯文用到新的漢字時重跑）
   df_snapshot.py           遊戲文字盤點與 Ghidra 反編譯快照（產物在 repo 外，不公開）
   workshop.json            工作坊項目的設定、兩種語言與版本號
@@ -165,6 +166,8 @@ uv run scripts/dev_game.py down               # 關遊戲、還原 mods/ 與設�
 ```
 
 遊戲更新後先跑 `uv run scripts/make_patterns.py --check`。特徵碼找不到函式時引擎不啟動、遊戲維持英文，DFHack 主控台顯示 `[DFLang] addst 的特徵碼命中 0 次，這版遊戲可能還不支援`。重新定位的步驟見 [docs/analysis.md](docs/analysis.md) 的「遊戲更新」。
+
+遊戲（官網版本、Steam build）或 DFHack 有新版本時，`.github/workflows/watch-upstream.yml` 會開一個帶 `upstream` 標籤的 Issue；遊戲有新版本時 Issue 裡附官網免費版執行檔的特徵碼檢查結果。適配完把 `scripts/upstream.json` 改成新版本，否則下一個版本的 Issue 會從舊版本算起。
 
 發布（要先取得維護者同意）：改 `scripts/workshop.json` 的版本號，在 [CHANGELOG.md](CHANGELOG.md) 記這一版，再整理成繁簡兩份工作坊更新說明 `docs/steam/changelog-zh-Hant.bbcode`、`changelog-zh-Hans.bbcode`（只放這一版，第一行要有版本號），上傳時兩份接在一起。上傳腳本先檢查兩者都有這一版、README 的版本與數量和建置一致、Steam 沒在執行遊戲；上傳完用 Steam Web API 確認項目公開、大小和 `dist/` 一致（`--verify` 可以單獨跑）。
 
